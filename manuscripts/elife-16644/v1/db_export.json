@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "caf78b65-ad27-41db-9bc3-e314700aa26d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:20:51.950450Z",
+    "updated_at": "2025-11-30T20:20:51.950450Z"
+  },
+  "content": [
+    {
+      "id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "submission_id": "caf78b65-ad27-41db-9bc3-e314700aa26d",
+      "content_type": "manuscript",
+      "content_text": "# Impact of HIV co-infection on the evolution and transmission of multidrug-resistant tuberculosis\n\n## Authors\n\n- Vegard Eldholm<sup>1</sup> ([ORCID: 0000-0001-6721-3375](https://orcid.org/0000-0001-6721-3375)) \u2020\n- Adrien Rieux<sup>2</sup>\n- Johana Monteserin<sup>3</sup>\n- Julia Montana Lopez<sup>2</sup>\n- Domingo Palmero<sup>5</sup>\n- Beatriz Lopez<sup>3</sup>\n- Viviana Ritacco<sup>3</sup>\n- Xavier Didelot<sup>6</sup> ([ORCID: 0000-0003-1885-500X](https://orcid.org/0000-0003-1885-500X)) \u2020\n- Francois Balloux<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Division of Infectious Disease Control Norwegian Institute of Public Health Oslo Norway\n2. UCL Genetics Institute University College London London United Kingdom\n3. Instituto Nacional de Enfermedades Infecciosas ANLIS Carlos Malbr\u00e1n Buenos Aires Argentina\n4. Consejo Nacional de Investigaciones Cient\u00edficas y T\u00e9cnicas (CONICET) Buenos Aires Argentina\n5. Divisi\u00f3n Tisioneumonolog\u00eda Hospital Mu\u00f1iz Buenos Aires Argentina\n6. Department of Infectious Disease Epidemiology Imperial College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe tuberculosis (TB) epidemic is fueled by a parallel Human Immunodeficiency Virus (HIV) epidemic, but it remains unclear to what extent the HIV epidemic has been a driver for drug resistance in Mycobacterium tuberculosis (Mtb). Here we assess the impact of HIV co-infection on the emergence of resistance and transmission of Mtb in the largest outbreak of multidrug-resistant TB in South America to date. By combining Bayesian evolutionary analyses and the reconstruction of transmission networks utilizing a new model optimized for TB, we find that HIV co-infection does not significantly affect the transmissibility or the mutation rate of Mtb within patients and was not associated with increased emergence of resistance within patients. Our results indicate that the HIV epidemic serves as an amplifier of TB outbreaks by providing a reservoir of susceptible hosts, but that HIV co-infection is not a direct driver for the emergence and transmission of resistant strains.\n\n## Introduction\n\nAmong the estimated 1.5 million people who died from TB in 2013, 360,000 were HIV co-infected and 200,000 cases were caused by multidrug-resistant TB (MDR-TB) (World Health Organization,\u00a02015). Until the late 1980s, reports of MDR-TB were rare, and transmission of such strains was even less frequent (Reves et al., 1981; Small et al., 1993; Wells et al., 2007). The MDR-TB burden surged concurrently with the human immunodeficiency virus (HIV) pandemic and most reported early MDR-TB outbreaks mainly affected HIV co-infected individuals in hospitals and prisons\u00a0(Small et al., 1993; Wells et al., 2007; Ritacco et al., 1997).\n\nThere are good epidemiological reasons to suspect that the HIV and MDR-TB pandemics are fueling each other. Not only does HIV infection render people more susceptible to develop active TB by weakening their immune system, but anti-TB drugs can also directly interfere with antiretroviral treatment. Rifampicin (RIF), one of the cornerstones in anti-TB therapy, has been shown to significantly lower serum concentrations of HIV protease and reverse transcriptase inhibitors\u00a0(Burman et al., 1999; Centers for Disease Control and Prevention, 1998). To make matters worse, HIV co-infection is also associated with malabsorption of anti-TB drugs. This pattern is particularly pronounced for RIF, but seems to hold true for most anti-TB drugs (Patel et al., 1995; Peloquin et al., 1993).\n\nHIV co-infection might also directly contribute to the accumulation of resistance in Mtb. First, as resistance mutations generally entail a fitness cost to the bacterium (at least initially), some resistant strains might be more successful in HIV+ hosts with weakened immunity leading to a reduced selective pressure on the bacillus. Second, some antiretroviral drugs used to treat HIV might have a mutagenic effect on mycobacterial genomes, but this has yet to be investigated (McGrath et al., 2014).\n\nHIV co-infection and very low CD4 lymphocyte counts (<100 cells/mm3), a hallmark of advanced HIV infection, have been shown to be risk factors for developing resistance to RIF and to a lesser degree isoniazid (INH)\u00a0(Bradford et al., 1996; Burman et al., 2006; Li et al., 2005; Porco et al., 2013). However, a systematic review of 32 studies assessing MDR-TB prevalence by HIV status did not demonstrate an overall association between acquired MDR-TB and HIV, but suggested that HIV co-infection is a risk factor for contracting primary MDR-TB (Suchindran et al., 2009). In summary, the association between HIV co-infection and Mtb drug resistance remains unclear, with a number of studies yielding conflicting results (Small et al., 1993; Chum et al., 1996; Lukoye et al., 2011; Meyssonnier et al., 2012; Robert et al., 2003). Attempts have also been made to model the impact of HIV on TB incidence and resistance (Sergeev et al., 2012), but in lieu of empirical data, such studies relied on a number of assumptions on both host and pathogen biology as well as the interactions between them.\n\nIt is beyond doubt that HIV has been a driver of increased TB incidence globally, but a recent review of the subject actually found HIV co-infection to be associated with decreased rates of TB transmission within households and between close contacts (Kwan and Ernst, 2011). This observation is possibly explained by differing manifestation of TB in HIV positives, namely less frequent cavitation and lower pulmonary bacillary load (Kwan and Ernst, 2011). External factors such as social isolation or HIV infected patients being followed up more closely than HIV negatives may also contribute to this pattern (Kwan and Ernst, 2011). Indeed, in a low-incidence setting of close follow-up, HIV co-infection was associated with reduced TB transmission (inferred by clustering) and TB among HIV co-infected was at least partly due to transmission from HIV-negative patients (Fenner et al., 2012).\n\nIn the current work we aimed to directly investigate the impact of HIV co-infection on the evolution of antibiotic resistance emergence and on transmission dynamics. We analyzed the genomes of 252 isolates belonging to the largest reported outbreak of MDR-TB in South America, caused by the M strain (Ritacco et al., 1997; Eldholm et al., 2015). The isolates were collected from patients with known HIV status from the mid-90s until 2009, providing important temporal information. To assess the impact of HIV co-infection on Mtb evolutionary rates, we estimated mutation rates in the terminal branches of a time-labelled phylogenetic tree, roughly corresponding to the evolutionary history of individual clinical Mtb isolates within sampled patients. We also inferred transmission networks by implementing a novel epidemiological model accounting for the long latency of TB. Finally, we estimated the length of the latent period by combining the results of the phylogenetic reconstruction and inferred transmission networks.\n\nWe found that HIV status of the host does not affect the mutation rate of Mtb, and that drug resistance is not more likely to evolve in HIV positive than HIV negative patients. Together these findings suggest that HIV co-infection is not a direct driver of Mtb drug resistance, which fits well with the distribution of the global burden of TB, MDR-TB and HIV. Reconstructed transmission networks did not reveal a significant impact of HIV co-infection on the ability of patients to transmit TB. However, our estimates of TB latency confirm that HIV co-infection accelerates progression to active TB.\n\n## Results\n\n### Impact of HIV co-infection on Mtb mutation rates and resistance development\n\nAfter filtering out positions with low mapping quality and removal of single nucleotide polymorphisms (SNPs) in problematic regions, a total of 509 SNPs separating the 252 isolates were used to construct a Bayesian phylogeny (Figure 1) (Eldholm et al., 2015). The majority of the isolates in the study shared the same six mutations yielding resistance to INH, RIF, streptomycin, kanamycin, pyrazinamide and ethambutol (Eldholm et al., 2015). The bulk of resistance mutations evolving within the outbreak were thus made up of ethionamide (ETH) and fluoroquinolone (FLQ) resistance mutations. The HIV status was known for all patients in the study, of which 60.7% were HIV positive.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig1-v1.jpg)\n\n**Figure 1.:** The peripheral color strips indicate the HIV status of patients from which the clinical isolates were collected and the resistance burden of the isolate. The scale bar is given in years since the most recent common ancestor of the outbreak.\n\nBased on the available data we considered that the sequenced outbreak isolates represented about one third of the total number of individuals belonging to the outbreak. Based on available RFLP data and estimates of the proportion of MDR-cases in Argentina belonging to the M strain, the outbreak is believed to have caused about 550 cases between 1992 and 2002, of which 109 genomes were available for study (20%). A large fraction of isolates from before 2001, which includes the peak of the outbreak, were lost in a freezer accident. From 2003 to 2009, the M strain caused 228 cases in Argentina, of which 143 genomes were available (63%), 116 isolates were sequenced from HIV positive patients and 85 from negatives. Lost isolates amounted to 40 positives and 25 negatives. For these years there are hence no reason to suspect any bias in the HIV status of the sampled patients (\u03c72; p\u00a0=\u00a00.53). Lost samples can potentially inflate the length of the terminal branches as they can result in missing internal nodes, but any inflation in branch length is thus expected to apply equally to branches leading to isolates sampled from HIV positive and negative patients.\n\nTo investigate the impact of HIV-TB coinfection on the accumulation of mutations in Mtb genomes we directly counted the mutations occurring on terminal branches by performing an ancestral reconstruction analysis in PAML (Table 1, Figure 2\u2014figure supplement 1) (Yang, 2007). We observed no significant differences in the rate at which substitutions accumulate in the genomes of strains evolving in HIV positive and negative patients (Figure 2a). However, terminal branches were significantly longer and contained significantly higher numbers of mutations in HIV negative patients than in positives (Table 1 and Figure 2\u2014figure supplement 1), possibly reflecting a slower progression of TB in HIV negatives relative to positives.\n\n**Table 1.**\n Number of SNPs accumulated in clinical isolates.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Host HIV status</th>\n      <th>n</th>\n      <th>Mutations total</th>\n      <th>Mean number per isolate</th>\n      <th>\u03c72 p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Negative</td>\n      <td>99</td>\n      <td>262</td>\n      <td>2.646</td>\n      <td rowspan=\"2\">&lt; 0.001</td>\n    </tr>\n    <tr>\n      <td>Positive</td>\n      <td>153</td>\n      <td>277</td>\n      <td>1.810</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig2-v1.jpg)\n\n**Figure 2.:** Left: Rate of evolution (substitutions/site/year) on terminal branches (p\u00a0=\u00a00.1920). Right: resistance load (number of antimicrobials to which resistance-conferring mutations were found in clinical Mtb isolates, stratified by HIV status of the host.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** From top to bottom: Rate of evolution (substitutions/site/year) (p=0.1920). Terminal branch lengths (p=0.0006). Number of SNPs on terminal branches (p=0.0009). *** denotes p<0.001.\n\nHypothesizing that HIV-coinfection could either be a direct driver of resistance emergence or increase the susceptibility to contract additionally resistant isolates, we tested whether patient HIV status was associated with resistance load, by counting the number of resistance determinants present in each Mtbisolate (Supplementary file 1: Sample information) and stratifying the data by HIV status. We found that the resistance load was near identical between Mtb isolates from HIV positive and negative patients (mean = 5.99 and 6.04 respectively) (Figures 1 and 2b). These results are in line with those from a very recent study of drug resistant TB in Kwazulu-Natal (Cohen et al., 2015).\n\nThe analysis above does not distinguish between mutations that emerged in the patients included in our sample (acquired resistance) and those acquired earlier in unsampled patients and subsequently transmitted to the patients in our sample (primary resistance). To investigate the impact of HIV co-infection on evolution of new resistance, we collected available treatment history for patients from whom isolates with terminal branch resistance mutations had been sampled (Supplementary file 2: Treatment histories). We excluded secondary mutations in resistance genes, namely katG and rpoB mutations, in isolates already harboring high-level resistance mutations in these genes. These mutations could either be random events or be involved in fitness compensation, but not resistance per se. We then excluded isolates collected from patients who had not been treated with drugs relevant for the terminal branch resistance mutation, as these most likely represent mutations that evolved in unsampled cases and subsequently transmitted to a sampled secondary case. This left 13 resistance mutations that evolved with high probability during therapy in 11 patients (Table 2). Nine events of acquired resistance occurred in seven HIV negatives and four in HIV positives. Based on the frequency of HIV co-infection among the sampled patients, HIV negative patients were overrepresented among cases of acquired resistance, but the difference was not significant (p=\u00a00.24, Fisher\u2019s exa\u00a0ct test). While the sample size is arguably small, this finding does also not implicate HIV as a driver of Mtb drug resistance within the outbreak.\n\n**Table 2.**\n Identified events of within-patient acquired resistance.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Isolate ID</th>\n      <th>HIV</th>\n      <th>Treatment history</th>\n      <th>Mutation</th>\n      <th>Acquired resistance</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>107</td>\n      <td>-</td>\n      <td>follow-up (ETH* treated)</td>\n      <td>ethA L225fs</td>\n      <td>ETH</td>\n    </tr>\n    <tr>\n      <td>108</td>\n      <td>-</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>ethA S208P</td>\n      <td>ETH</td>\n    </tr>\n    <tr>\n      <td>516</td>\n      <td>-</td>\n      <td>follow-up (unknown treatment)</td>\n      <td>pncA D129G</td>\n      <td>PZA</td>\n    </tr>\n    <tr>\n      <td>1757</td>\n      <td>-</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>ethA H22P</td>\n      <td>ETH</td>\n    </tr>\n    <tr>\n      <td>2098</td>\n      <td>-</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>ethA F302S + gyrB D461V</td>\n      <td>ETH + FLQ</td>\n    </tr>\n    <tr>\n      <td>2485</td>\n      <td>-</td>\n      <td>follow-up (unknown treatment)</td>\n      <td>ethA G437fs</td>\n      <td>ETH</td>\n    </tr>\n    <tr>\n      <td>POGU</td>\n      <td>-</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>ethA R259fs + gyrB R292G</td>\n      <td>ETH + FLQ</td>\n    </tr>\n    <tr>\n      <td>110</td>\n      <td>+</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>gyrB R446S</td>\n      <td>FLQ</td>\n    </tr>\n    <tr>\n      <td>257</td>\n      <td>+</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>inhA -15 C&gt;T</td>\n      <td>ETH</td>\n    </tr>\n    <tr>\n      <td>1298</td>\n      <td>+</td>\n      <td>follow-up (ETH and FLQ treated)</td>\n      <td>gyrA D94N</td>\n      <td>FLQ</td>\n    </tr>\n    <tr>\n      <td>2569</td>\n      <td>+</td>\n      <td>follow-up (ETH treated)</td>\n      <td>ethA S251fs</td>\n      <td>ETH</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Patient received the ETH analogue prothionamide_\n\n### Effect of HIV co-infection on TB transmission\n\nTo investigate the impact of HIV co-infection on transmission of Mtb, we implemented a new method to infer transmission events based on the timed phylogenetic tree (Figure 1). This was needed because a phylogeny is not directly informative about transmission events as a result of within-host diversity and evolution (Didelot et al., 2016; Pybus and Rambaut, 2009). Our methodology is briefly outlined below and explained in more details in the materials\u00a0and\u00a0methods section. A coalescent within-host model (Didelot et al., 2014) was combined with a Susceptible-Exposed-Infectious-Removed (SEIR) epidemiological model (Lekone and Finkenst\u00e4dt, 2006). The likelihood of transmission from one host to another can be computed under this combined model, and this calculation was performed for all pairs of individuals with one acting as potential infector and the other as potential infectee. The likelihood calculation relies solely on the dates at which the two individuals were sampled, their relative position on the phylogeny, and whether the putative infector was smear positive or negative. It does not incorporate other information such as HIV status, so that these effects can be tested separately.\n\nThe SEIR model was set up with parameters for latency (mean of 5 years with 95% CI 46 days \u2013 18.5 years) and infectious period (mean of 120 days with 95% CI 3\u2013443 days). The infectious period includes time from symptom onset to infection clearance. A standard method for diagnosing TB is direct microscopy of sputum smears. If bacteria are visible under the microscope, the case is denoted smear positive. If no bacteria are observed, but Mtb can be cultured from the sputum, the case is culture positive but smear negative. Smear positive cases transmit TB far more efficiently on average than smear negative cases. We thus applied a so-called smear-correction, penalizing transmission event likelihoods involving a smear negative transmitter by multiplying likelihood values with 0.05.\n\nThe resulting matrix contains likelihoods of all possible transmission events (Figure 3\u2014source data 1). For each of the 252 sampled cases in the outbreak, we extracted the most likely transmitter, resulting in 251 identified transmission pairs. Examples of transmission graphs and transmission events mapped on the phylogeny are shown in Figure 3 whereas full transmission graphs are presented as figure supplements (Figure 3\u2014figure supplements 1 and 2). Figure 3\u2014source data 2 provides the links between transmission graph nodes and sample IDs. We performed a simulation analysis to test the accuracy of our transmission analysis method, and sensitivity analyses to ensure that our results were robust to parameter choice (see\u00a0Materials\u00a0and methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig3-v1.jpg)\n\n**Figure 3.:** (A) Graphs representing two selected high-likelihood transmission chains. The colors of the edges indicate the probabilities of each transmission event from high (red) to lower (orange). Patient HIV-status is indicated by grey (negative) and blue (positive). (B) The corresponding transmission chains annotated in the timed phylogenetic tree. Red color highlights isolates linked by transmission events from a single source. Branches in magenta indicate subsequent transmission from a secondary case to additional cases (blue).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig3-figsupp1-v1.jpg)\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Top 45% likely transmissions. (B) Top 35% likely transmissions. (C) Top 25% likely transmissions.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Red coloring is used to highlight isolates linked by transmission events from a single source. Branches in magenta indicate isolates transmitted further from one of the secondary cases to other cases (blue).\n\nNext, we analyzed transmission events as a function of the HIV status of the transmitter of transmitter-receiver pairs. We found no significant effect of HIV status on the ability of patients to cause secondary TB cases (Table 3). Due to incomplete sampling, a proportion of identified transmission pairs are expected to be spurious, as unsampled intermediary hosts go undetected. To account for this, the analyses were repeated including only the most likely transmission events using three thresholds of increasing stringency (top 45%, 35% or 25% most likely transmissions). These subsets are expected to be increasingly enriched for true transmission pairs, but subsampling did not affect the original findings (Table 3). We also explicitly investigated the distribution of the number of transmissions per transmitter to test whether this could be affected by HIV status, but detected no significant differences between HIV-status of transmitters (Table 4). The 25% most likely infection events were mapped onto the time-labelled phylogeny for a visual integration of the modelled transmission links (Figure 3\u2014figure supplement 3).\n\n**Table 3.**\n Number of reconstructed transmission events.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Transmission event cut-off</th>\n      <th>Donor HIV status</th>\n      <th>Observed</th>\n      <th>Expected</th>\n      <th>Obs/Exp</th>\n      <th>\u03c72 p value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">All transmissions</td>\n      <td>Negative</td>\n      <td>80</td>\n      <td>98.61</td>\n      <td>0.81</td>\n      <td rowspan=\"2\">0.3185</td>\n    </tr>\n    <tr>\n      <td>Positive</td>\n      <td>171</td>\n      <td>152.39</td>\n      <td>1.12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Top 25% events</td>\n      <td>Negative</td>\n      <td>20</td>\n      <td>24.75</td>\n      <td>0.81</td>\n      <td rowspan=\"2\">0.2205</td>\n    </tr>\n    <tr>\n      <td>Positive</td>\n      <td>43</td>\n      <td>38.25</td>\n      <td>1.12</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Top 35% events</td>\n      <td>Negative</td>\n      <td>30</td>\n      <td>34.57</td>\n      <td>0.87</td>\n      <td rowspan=\"2\">0.3185</td>\n    </tr>\n    <tr>\n      <td>Positive</td>\n      <td>58</td>\n      <td>53.43</td>\n      <td>1.09</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Top 45% events</td>\n      <td>Negative</td>\n      <td>36</td>\n      <td>44.39</td>\n      <td>0.81</td>\n      <td rowspan=\"2\">0.1060</td>\n    </tr>\n    <tr>\n      <td>Positive</td>\n      <td>77</td>\n      <td>68.61</td>\n      <td>1.12</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 4.**\n Distribution of transmissions as a function of HIV status of transmitter.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td colspan=\"14\">All transmission events</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"12\">Transmissions per transmitter:</td>\n      <td>Kruskal-Wallis p value</td>\n    </tr>\n    <tr>\n      <td>HIV status</td>\n      <td>none</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>4</td>\n      <td>5</td>\n      <td>6</td>\n      <td>7</td>\n      <td>8</td>\n      <td>9</td>\n      <td>10</td>\n      <td>11</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>neg</td>\n      <td>50</td>\n      <td>37</td>\n      <td>4</td>\n      <td>2</td>\n      <td>1</td>\n      <td>5</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td rowspan=\"2\">0.075</td>\n    </tr>\n    <tr>\n      <td>pos</td>\n      <td>63</td>\n      <td>58</td>\n      <td>11</td>\n      <td>10</td>\n      <td>5</td>\n      <td>2</td>\n      <td>2</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Top 25% likely transmission events</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"12\">Transmissions per transmitter:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HIV status</td>\n      <td>none</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>4</td>\n      <td>5</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>neg</td>\n      <td>83</td>\n      <td>15</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td rowspan=\"2\">0.304</td>\n    </tr>\n    <tr>\n      <td>pos</td>\n      <td>121</td>\n      <td>25</td>\n      <td>3</td>\n      <td>4</td>\n      <td>0</td>\n      <td>0</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\"></td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Top 35% likely transmission events</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"12\">Transmissions per transmitter:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HIV status</td>\n      <td>none</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>4</td>\n      <td>5</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>neg</td>\n      <td>75</td>\n      <td>21</td>\n      <td>2</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td rowspan=\"2\">0.505</td>\n    </tr>\n    <tr>\n      <td>pos</td>\n      <td>111</td>\n      <td>33</td>\n      <td>4</td>\n      <td>4</td>\n      <td>0</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"14\">Top 45% likely transmission events</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"12\">Transmissions per transmitter:</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>HIV status</td>\n      <td>none</td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>4</td>\n      <td>5</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>neg</td>\n      <td>69</td>\n      <td>27</td>\n      <td>2</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td rowspan=\"2\">0.324</td>\n    </tr>\n    <tr>\n      <td>pos</td>\n      <td>100</td>\n      <td>39</td>\n      <td>7</td>\n      <td>5</td>\n      <td>1</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nTo further assess performance of the epidemiological modelling, we investigated whether six pairs of isolates with known epidemiological links (epi-pairs) had been identified by the transmission analysis. Four pairs of household contacts were identified as likely transmission pairs by the genomic analysis. All four were among the 35% most likely transmission events, and two among the top 25%. The SNP differences between these epi-pairs ranged from one to three SNPs (Supplementary file 3: SNP distances between epi-pairs). The remaining two epi-pairs were not identified as likely transmission events. These included one pair of household contacts and one pair of isolates from the same patient taken 4.5 years apart. The genomic differences were nine and five SNPs respectively, which explains why the model did not identify these as likely transmission pairs. Interestingly, drug resistance had evolved in one of the epidemiologically linked isolates in both of these pairs, but in none of the four other pairs. We previously showed that a large number of mutations can hitchhike in the genetic background of resistance mutations sweeping to fixation and hypothesized that such selective sweeps could potentially confuse the reconstruction of transmission events (Eldholm et al., 2014). These two cases might well exemplify such a situation. However, it cannot be ruled out that the epi-links actually represent independent sources of infection (re-infection in the serially sampled patient).\n\n### Effect of HIV on progression of Mtb infection to active TB\n\nWe then set out to estimate the effect of HIV co-infection on the length of TB latency. For pairs of samples connected by a transmission event, transmission of Mtb from host A to B must happen after the date of the node connecting the two isolates in the Bayesian phylogeny (Figure 1) (Didelot et al., 2012, 2013). The date of transition from silent infection to active TB is unknown, but must happen before sampling time, when the active status is known. An upward biased estimate for the length of latency period of individual j is therefore given by the difference between the date of the MRCA of the transmitter i and the receiver j (when j was not yet infected) and the date of sampling of j (by which time j had developed active TB). Although this estimator clearly overestimates the latency period, there is no a priori reason to suspect that the bias should be different between HIV negatives and positives. Any significant difference is therefore likely to reflect a difference in length of the actual latency period. Accordingly, we extracted the length (in years) of the branches separating the MRCA and recipient of the transmission pairs and stratified the data by HIV status of the recipient.\n\nAs we did not have an exhaustive sampling of all isolates in the outbreak, not all individuals would have donors present in the phylogenetic tree. To account for this, we analyzed branch lengths of the receiver for all 251 inferred transmissions, and separately for the 45%, 35% and 25% best supported transmission events, respectively. Again, we expected the proportion of genuine transmissions to increase in frequency as we restricted the analysis to a smaller subset of the best-supported transmissions. The length of the branches leading to HIV negative hosts was significantly longer than for HIV positive hosts when including all 251 estimated transmission events (p<0.001), and this difference remained significant for all three subsampling regimes (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig4-v1.jpg)\n\n**Figure 4.:** (A) For pairs of samples connected by a transmission event from i to j, transmission of Mtb is expected to have occurred on the terminal branch above j. Even though we do not know exactly when j went from latent TB to active TB, the latent period is included in the length of the terminal branch leading to j (see main text). We therefore use this branch length as an upwardly biased estimate for latency time. (B) For transmission pairs in the calculated transmission networks, the length (in years) of terminal branches leading to the recipient of the pairs (overestimated latency period) was extracted and stratified by HIV status of the recipient. To account for incomplete sampling, the analyses were performed on all 251 calculated transmission events as well as subsets including only the most likely transmission pairs (top 45, 35 and 25%). ***denotes p<0.001, *denotes p<0.05 as determined by unpaired t-test.\n\nWhen including only the top 25% of transmission events, the average branch lengths were 5.56 versus 4.65 years for HIV negative and positive receivers, respectively. A comprehensive review of 52 studies found that the average time from TB symptom onset to diagnosis (diagnostic delay) is approximately two months, with no significant difference between high and low income countries (Sreeramareddy et al., 2009). Another meta-study found that HIV positive status was associated with both increased and decreased diagnostic delay, depending on study setting (Storla and Yimer, 2008). The study most relevant to the current setting was conducted in 2005 in Buenos Aires and other Argentinean provinces and found a delay of about three months, with no significant effect of HIV status (Zerbini et al., 2008). As the difference in TB activation time we infer between HIV- and HIV+ is several times higher than the diagnostic delay reported in any setting, we feel confident that it reflects faster progression to active TB in HIV+ patients.\n\nThe fact that HIV co-infection significantly increases the rate of reactivation of latent TB is well documented. A comprehensive study from the United States found the rate of reactivation to be 25-fold higher in HIV co-infected individuals relative to their HIV-free peers (1.82 vs 0.072 per 100 person-year) (Shea et al., 2014). However, our outbreak analysis is necessarily restricted to people who develop active TB, and in this subset of cases, HIV co-infection seems to be associated with a relatively modest acceleration of TB progression, speeding up the process by about 11 months. We do not know when individual patients contracted TB and HIV respectively. Hypothetically, the accelerating effect of HIV co-infection on TB progression is likely to be underestimated in patients who were infected with HIV significantly later than TB. Conversely, patients who were infected with TB late in the study period might be enriched for HIV co-infection as these patients were more likely to develop TB in time for inclusion in the study. However, as the study period was relatively long, we do not believe this potential bias to have significantly affected our results.\n\n## Discussion\n\nThe single most important impact of HIV infection in this large multi-decade outbreak of MDR-TB seems to be an increase in the proportion of patients who develop active TB. The HIV prevalence in Argentina is approximately 0.4% (in 2001 and 2014) (World Health Organization,\u00a02013), whereas the proportion of HIV co-infected individuals is 60.7% within the M outbreak. These numbers demonstrate that HIV infection is a massive risk factor for developing TB with the MDR M strain. We found that HIV co-infection is associated with a moderately faster, yet statistically significant, progression to active TB. As this subtle effect of HIV status on time to active TB cannot explain the far higher incidence of the M strain in HIV positives, this suggests that the main effect of HIV co-infection is to increase the absolute risk of developing active TB. In other words, we surmise that a large proportion of HIV negatives infected by the M strain will not progress to active TB but for those that do, the latency period is only slightly longer than for HIV positives.\n\nThis study encompasses an outbreak within which resistance to six common anti-TB drugs evolved early on, and our results are thus mainly restricted to the evolution of resistance to second-line drugs such as ETH and FLQ in individual isolates. Extrapolation of these findings to evolution of resistance to first-line drugs thus requires caution. However, the physiological and societal impact of HIV on TB patients as well as the fitness constraints associated with new Mtb resistance mutations should be fundamentally similar regardless of drug class.\n\nIt should be noted that free access to highly active antiretroviral therapy in Argentina from 1997 is likely to have mitigated the accelerating effect of HIV on TB progression (Waisman, 2001; Gupta et al., 2015). Clinical data on HIV progression was not available and we were thus unable to quantify the effect of anti-retroviral treatment by stratifying our analyses by CD4 counts. We predict CD4 counts would correlate negatively with TB progression. However, we do not expect that antiviral therapy (and increased CD4 counts) would nullify the effect of HIV on TB progression. Indeed, it has been shown that TB incidence during highly active anti-retroviral treatment is significantly higher than background levels even though a number of possible confounders makes the exact quantification of the effect of antiretroviral therapy challenging (Gupta et al., 2015; Girardi et al.,\u00a02005; Lawn et al., 2005; Lawn and Wood, 2005).\n\nAccurate reconstruction of transmission chains of bacteria with extended periods of within-host evolution remains challenging (see Materials\u00a0and\u00a0methods). But even though some artefactual transmissions are bound to be included among the reconstructed high-confidence events, we are confident that the overall pattern of transmission is shaped by actual events and is hence robust. Restricting the transmission network analyses to the most likely transmission events did not affect our finding that HIV status does not significantly impact the transmissibility of Mtb (Table 3 and Table 4). We also found that HIV co-infection does not affect the rate of Mtb evolution within patients. In fact, Mtb was found to accumulate more mutations in HIV negatives. This likely reflects the slower progression to active disease in this group, with these patients harboring Mtb for a more extended period relative to HIV positives. This pattern holds true also for antimicrobial resistance mutations, which were found to evolve significantly more often in HIV negatives than in HIV positives.\n\nWe previously showed that the largest clade in the M outbreak had evolved resistance to six antimicrobials by 1979, well before the HIV epidemic reached Argentina (Eldholm et al., 2015), a finding which has been replicated for another highly resistant Mtb lineage in South Africa (Cohen et al., 2015). To put our results in a global context, we retrieved data on the burden of TB, MDR-TB and HIV globally from the World Health Organization (WHO) Global Health Observatory Data Repository (http://apps.who.int/gho/data/node.main). We observed a strong correlation between TB and MDR-TB prevalence (Figure 5a) as well as a correlation between HIV and TB burden between countries (Figure 5b). We also recovered a highly significant correlation between HIV and MDR-TB (Figure 5c). However, when correcting the MDR-TB burden for total TB burden, the correlation vanished (Figure 5d). This is in line with our results on the M outbreak that HIV is a driver of TB in general, but does not disproportionately contribute to the rise of MDR-TB lineages.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig5-v1.jpg)\n\n**Figure 5.:** Clockwise: Per country prevalence of MDR-TB as a function of TB prevalence (p=2.2\u00a0\u00d7\u00a010\u221216); TB prevalence as a function of HIV prevalence (p=5.9 \u00d7\u00a010\u22126); MDR-TB prevalence as a function of HIV prevalence (p=1.6\u00a0\u00d7 10\u22124); Proportion of MDR-TB cases among TB patients as a function of HIV prevalence (p=0.8). All values are log-transformed. The depth of shading of individual dots reflect the TB prevalence in individual countries.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Clockwise: Per country prevalence of MDR-TB as a function of TB prevalence (p=1.5 \u00d7\u00a010\u221215); TB prevalence as a function of HIV prevalence (p=5.3\u00a0\u00d7\u00a010\u22125); MDR-TB prevalence as a function of HIV prevalence (p=5.1\u00a0\u00d7\u00a010\u22125); Proportion of MDR-TB cases among TB patients as a function of HIV prevalence (p=0.11). All values are log-transformed. The depth of shading of individual dots reflect the TB prevalence in individual countries.\n\nBy combining Bayesian evolutionary analyses and the reconstruction of transmission networks based on a new epidemiological model, we were able to directly assess the impact of HIV on the evolution and transmission of the single most widespread MDR-TB strain reported to date in South America. The main pre-extensively resistant (pre-XDR) clade within the outbreak evolved before the HIV epidemic in Argentina, but HIV patients at a major hospital in Buenos Aires played a central role in fueling the epidemic in the early 1990s (Ritacco et al., 1997; Eldholm et al., 2015), by providing the strain with a large and spatially restricted reservoir of individuals susceptible to develop active TB. Once the outbreak erupted, we find that HIV co-infection did not play a role in accelerating Mtb mutation rates; neither did HIV co-infected patients cause secondary TB cases at significantly higher rates than their HIV negative peers did. Our findings confirm that HIV co-infected patients have increased susceptibility to contract TB, but strongly suggest that they do not drive the evolution of Mtb resistance within an outbreak, nor do they act as super-spreaders of MDR-TB.\n\n## Materials and methods\n\n### Isolate collection\n\nAll available isolates belonging to the M outbreak as assessed by IS6110 RFLP were included in the study (see (Eldholm et al., 2015) for additional information on samples). The exact number of lost isolates is not known. No IS6110 RFLP data are available for isolates from before 1992; a freezer accident also contributed significantly to sample loss.\n\n### Genomic analyses and phylogenetic evolutionary inferences\n\nThe protocols used for DNA isolation, preparation of sequencing libraries and SNP calling are described in (Eldholm et al., 2015), as are the methods for phylogenetic evolutionary inferences, testing of tip-based calibrations and molecular dating. Sequence reads from the study can be found under European Nucleotide Archive accession PRJEB7669. Briefly, BEAST 1.7.4 (Drummond and Rambaut, 2007) was used to infer a phylogeny, branch lengths and evolutionary rates using a general time reversible substitution model with variation among sites simulated using a discrete gamma distribution with four rate categories. We assumed a lognormal relaxed clock to allow variation in rates among branches in the trees. Trees were calibrated using tip dates only with sample time span ranging from October 1996 to December 2009. Following appropriate testing, we applied an exponential demographic model. Posterior distributions of parameters, including branch lengths and substitution rates were estimated by Markov chain Monte Carlo (MCMC) sampling.\n\n### Analyzing differences in number of accumulated mutations between Mtb strains evolving in HIV-positive and negative patients\n\nIn this study, we aimed to test for evolutionary differences between strains evolving in HIV positive and negative patients. Because we can only be confident about the HIV status from which the samples were collected from, we restricted these analyses to terminal branches in the tree. We estimated the rates of evolution on terminal branches and compared those leading to HIV- and HIV+ hosts using two sample unpaired t-tests. We used the baseml model implemented in PAML program to perform the empirical Bayesian reconstruction of ancestral sequences. High-likelihood resistance mutations in the genes embB, ethA, gidB, gyrA, gyrB, katG, ndh, mshA, pncA, rpoB, rpsL and rrs were identified as described previously (Eldholm et al., 2015).\n\n### Reconstruction of transmission chains and assessment of the impact of HIV co-infection\n\nThe code used to reconstruct transmission events is available at https://github.com/xavierdidelot/TransPairs. We wanted to reconstruct likely transmission events between sampled individuals, with the added difficulty that we knew a significant proportion of infected individuals were not sampled, so that some of the sampled individuals would have been infected by unsampled individuals. To avoid this difficulty, we developed the following inferential framework in which the likelihood of direct transmission from any sampled host to any other can be calculated. We consider a Susceptible-Exposed-Infectious-Removed (SEIR) model where individuals move from E to I at rate \u03b31 and from I to R at rate \u03b32. We also assume that within-host coalescence happens at a constant rate \u03b1 as in previous work (Didelot et al., 2014). We want to calculate the likelihood Li\u2192j of transmission from host i to host j (Figure 4). Let ti and tjdenote the known times at which the two hosts are sampled. Let ti,j denote the time at which the samples from i and j last shared a common ancestor, which is known from the timed phylogeny (Figure 1). Let s denote the unknown time at which i transmitted to j, assuming that this is indeed what happened. s is unknown but is greater than ti,j and smaller than both ti\u00a0and tj. With these notations:\n\n$$\nL_{i\u27f6j}=p(t_{i},t_{j},t_{i,j}\u2223i\u27f6j)=\\intp(t_{i},t_{j},t_{i,j}\u2223s)p(s)ds\u221d\\int_{s=t_{i,j}}^{min(t_{i},t_{j})}p(t_{i}\u2223s)p(t_{j}\u2223s)p(t_{i,j})\u2223s)ds\n$$\n\nThe first term in the integral is the probability of host i being removed at time ti given that he was infectious at time s and is exponentially distributed with rate \u03b32:\n\n$$\np(t_{i}\u2223s)=\\gamma_{2}e^{\u2212\\gamma_{2}(t_{i}\u2212s)}\n$$\n\nThe second term in the integral is the probability of host j being removed at time tj given that he was exposed at time s and so is a convolution of the exponentials with rates \u03b31 and \u03b32:\n\n$$\np(t_{j}\u2223s)=\\frac{\\gamma_{1}\\gamma_{2}(e^{\u2212\\gamma_{2}(t_{j}\u2212s)}\u2212e^{\u2212\\gamma_{1}(t_{j}\u2212s)})}{\\gamma_{1}\u2212\\gamma_{2}}\n$$\n\nThe third term in the integral is the probability that coalescence of the two lines present in host i at time s happens at time ti,j and also that either i was infectious at time ti,j and stayed so until s or that host i was latent at time ti,j and became infectious (but not removed) by time s, leading to:\n\n$$\np(t_{i,j}\u2223s)=\\alphae^{\u2212\\alpha(s\u2212t_{i,j})}\\frac{2\\gamma_{1}e^{\u2212\\gamma_{2}(s\u2212t_{i,j})}\u2212\\gamma_{2}e^{\u2212\\gamma_{2}(s\u2212t_{i,j})}\u2212\\gamma_{1}e^{\u2212\\gamma_{1}(s\u2212t_{i,j})}}{\\gamma_{1}\u2212\\gamma_{2}}\n$$\n\nBy injecting the last three equations into the first we get the likelihood of transmission from i to j. These calculations were made for all putative infector-infectee pairs using \u03b31\u00a0=\u00a00.2 per year and \u03b32\u00a0=\u00a03 per year and the previously estimated within-host coalescent rate \u03b1\u00a0=\u00a00.83 per year (Didelot et al., 2014). The likelihoods of transmission from smear negative individuals was multiplied by 0.05 to reflect the lower infectiousness of these individuals. The SEIR epidemiological model assumed in the calculations above implies that there is random mixing between the individuals, with every infectious individual being a priori equally likely to infect any susceptible individual. Although the assumption of random mixing is appealing in theory, in practice human population are well known to behave differently, with for example a strong effect of the household structure in the transmission patterns of many pathogens (Cauchemez et al., 2004; Whittles and Didelot, 2016). Here we did not have information on the structure of the population and so could not integrate it in our model. Application of our methodology in a setting where such information is available could be performed simply by multiplying the likelihood values with the a priori probabilities of transmission caused by the host population structure.\n\nFrom the full matrix of transmission likelihoods between all pair of strains, we aimed to reconstruct disease transmission as accurately as possible. For each pair [i,j] of the transmission matrix, we started by removing the lowest likelihood value (i infecting j or j infecting i). From the remaining transmission events, we used Edmonds algorithm implemented in the RBGL R package (Carey et al.,\u00a02016) to find the spanning arborescence of minimum weight (sometimes called an optimum branching). An optimum branching is a graph defined as a set of directed edges that contain no cycles and such that no two edges are directed towards the same node. In our reconstruction, such a graph contains n nodes, n being the number of isolates and n-1 directed edges representing the transmission events. As our sampling of the outbreak was not exhaustive, we know that a proportion of direct transmission events did not happen. To deal with that situation, we used various thresholds of inferred transmission events with the highest associated likelihoods to plot the transmission graphs and analyze the distribution of transmission events.\n\n### Simulations and sensitivity analyses\n\nIn order to test the accuracy of the above method of reconstruction of transmission chains, we simulated an SEIR model for a population of N\u00a0=\u00a03000 individuals, with a transmission rate of \u03b2\u00a0=\u00a00.001 per year, a rate of becoming infectious when exposed \u03b31\u00a0=\u00a00.2 per year, and a rate of being removed when infectious \u03b32\u00a0=\u00a03 per year. These values of N and \u03b2 were selected to produce simulated outbreaks of roughly the same size as in the real data, and these values are not used for inference. The transmission tree generated by this simulation was recorded. A timed phylogeny was then constructed from the transmission tree, using a coalescent within-host evolutionary model with coalescent rate \u03b1\u00a0=\u00a00.83 per year, and leaves were randomly removed from this tree to simulate incomplete sampling of cases, keeping two thirds of the leaves in the second half of the outbreak to emulate the sampling frame in our study. The resulting phylogeny (Figure 6) was then analyzed in exactly the same way as the real data: the likelihood of transmission was computed for every pair of leaves, a transmission tree was deduced using Edmonds algorithm, and only the 25%, 35% or 45% most likely transmission links were retained to account for incomplete sampling. When applying these three thresholds to the simulated data, we found that the proportion of correctly inferred links were 74%, 69% and 63%, respectively. These results conform with our expectation given that there is significant uncertainty about who infected whom based on genomic data alone when accounting for extended periods of within-host evolution (Didelot et al., 2016; Biek et al., 2015; Didelot et al., 2014; Worby et al., 2014).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16644/elife-16644-fig6-v1.jpg)\n\nThe results of our transmission analysis are based on three parameter values, namely a mean latent period of 5 years, a mean infectious period of 120 days and a smear correction of 0.05 by which the likelihood of transmission from smear negative individuals is multiplied. These parameters were selected based on the literature and clinical experience. The latent period can vary extensively between people. Approximately two months of diagnostic delay (Sreeramareddy et al., 2009) plus two months from treatment onset to clearance of the MDR infection (Brust et al., 2013) suggests that 120 days is a reasonable estimate of infectious period. Finally, A 20-fold decreased transmissibility of smear-negative cases was chosen as a reasonable parameter (Ma et al., 2015). We performed a sensitivity analysis to test how reliable our results would be if any of these parameters were inaccurate. For each of the three parameters, we ran the analysis again considering double and half of their specified values above, and compared the reconstructed transmission links with those of the main analysis. In each case, the proportion of links identical with the main analysis was between 91% and 99%. We also performed an analysis in which no smear correction was applied and recovered 90.5% of the links in the main analysis.\n\n### Collection of data on global HIV, TB and MDR-TB burden\n\nHIV prevalence expressed as% population between the age of of 15 and 49 was downloaded form the World Bank Data website (http://data.worldbank.org/indicator/SH.DYN.AIDS.ZS).\n\nTB and MDR-TB prevalence data was obtained from the World Health Organization (http://www.who.int/tb/country/data/download/en/). For TB prevalence, data was available for all countries for the year 2013 and point estimates of prevalence by 100\u00a0k individuals were retrieved (e_prev_100\u00a0k).\n\nFor MDR-TB prevalence, the data was collected less systematically, and relies on a mix of surveillance, surveys and models. We used the estimated number of MDR-TB cases among all notified pulmonary TB cases (e_mdr_num), expressed as prevalence per 100\u00a0k individuals by dividing by country population size estimates from the same source. We calculated the proportion of MDR-TB cases by dividing the prevalence of MDR-TB by the prevalence of TB. All four variables (HIV-, TB-, MDR-TB- prevalence and the ratio of MDR-TB/TB prevalence were transformed as log(x+1) prior to analyses. Pearson correlation coefficients were used to test for significant associations between the prevalence of TB and MDR-TB, HIV and TB, HIV and MDR-TB and finally HIV and of the MDR-TB/TB ratio.\n\nThe robustness of the prevalence estimates likely vary between countries due to difference in methodology and surveillance effort, which may lead to some biases in the correlations reported in Figure 5. We reasoned that more robust estimates should be obtained in countries with more developed economies and public health institutions.\n\nThus, we additionally retrieved estimates for 2013 GDP per capita (http://data.worldbank.org/indicator/NY.GDP.PCAP.CD) and health expenditure (%) http://data.worldbank.org/indicator/SH.XPD.TOTL.ZS.\n\nFor all countries. Health expenditure was transformed into absolute health expenditure per capita, by multiplying by GDP and dividing by population size of the countries. The source data used in these analyses is provided in Figure 5\u2014source data 1.\n\nWe then recomputed the correlations reported in Figure 5 on different fractions (25%, 50% and 75%) of the countries with highest GDP or health expenditure per capita. Prevalence estimates from countries with lower GDP are indeed likely to be less robust as the coefficients between the significant correlations in Figure 5 (panels A, B and C) were substantially higher for the countries with high GDP. However, importantly, we never recovered a significant correlation between the prevalence of HIV and the proportion of TB that were MDR-TB. In Figure\u00a05\u2014figure supplement 1, we report the correlations between the same variables than in Figure 5 for the 50% countries with highest GDP.\n",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ddddb7c1-ce2b-438a-a9d2-f926572d17cf",
+      "submission_id": "caf78b65-ad27-41db-9bc3-e314700aa26d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16644.026](https://doi.org/10.7554/eLife.16644.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Impact of HIV co-infection on the evolution and transmission of multidrug-resistant tuberculosis\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers and Reviewing Editor were satisfied with the general direction of the analysis and found the work to be sophisticated and to hold an important public health message. However, there were a number of issues around the model and its parameterisation that we felt were inadequate, and which would need to be addressed for the manuscript to be considered further.\n\nEssential revisions:\n\n1) In the first paragraph of the subsection \u201cEffect of HIV co-infection on TB transmission\u201d, you appear to describe a new method for inferring transmission pairs (i.e. person A infected person B), which you have developed. You use a simple SEIR transmission model in determining who infected whom and use an SEIR simulation to help validate the method.\n\nIt is important that you further explain this method so that readers can better understand it and researchers will be better able to apply it judiciously in their own work. For example, you conducted a sensitivity analysis on the values used for the latent period and the removal rate but you did not include HIV status in the model, and HIV status could affect each of these parameters. Furthermore, you do not state what mixing assumption you used and likely assumed random mixing. It would be useful if you could explore how the method would perform in the context of non-random mixing (e.g. discuss what the expected effects would be and not necessarily conduct new simulations). You also reported that keeping two-thirds of cases in the second half of the simulated outbreak corresponded to the sampling frame used for the actual genomic data analyses but you need to explain where this number came from (subsection \u201cSimulations and Sensitivity analyses\u201d). If necessary, you should also test the impact of different sampling fractions.\n\nYou state \"These results conform with our expectation given that there is significant uncertainty about who infected whom based on genomic data alone when accounting for extended periods of within-host evolution\" but this high degree of uncertainty does not appear in the conclusions in the main text.\n\n2) In the third paragraph of the subsection \u201cEffect of HIV co-infection on TB transmission\u201d, you tested whether HIV-positive or HIV-negative individuals transmit TB more often conditional on having TB disease. As you suggest, the analysis including all transmissions seems like it would not be very informative since it likely includes many pairs who did not actually transmit between them. While the top X% analyses are affected by the same issue to a lesser extent, there could be another bias in these analyses since enriching for actual transmission pairs would seem to condition on there being at least 1 transmission from the putative source case and thereby eliminates (many of) the instances in which no TB transmission occurred. This would skew the distribution of onward transmissions which could make HIV-positives and negatives appear more similar in terms of their transmission potential than is actually the case.\n\nTo provide a simple numerical example of the potential issue, suppose that out of 100 HIV-negative people with active TB 60 of them transmit to 1 other person, while 80 out of 100 TB-HIV coinfected people each transmit TB to 1 person. In this scenario, TB would appear to have the same transmissibility among those who transmitted (i.e. 1 TB transmission per TB transmitter in each HIV group). However, this would give a misleading picture of the actual TB transmission potential of HIV-positive vs. HIV-negative individuals since coinfected people had an 80% probability of transmitting whereas HIV-negative people had a 60% chance of transmitting.\n\n3) In the last paragraph of the subsection \u201cEffect of HIV on progression of Mtb infection to active TB\u201d, you correlate cross-sectional data on HIV and TB prevalences and HIV and MDR-TB prevalences across countries in an effort to determine whether HIV increases TB in general or if it specifically drives the spread of MDR-TB. However, you should explain why this analysis is appropriate in light of the findings of Sergeev et al. (Sci Trans Med 2013, reference 20) who find that the \"individual-level association between HIV and drug-resistant forms of TB is dynamic, and therefore, cross-sectional studies that do not report a positive individual-level association will not provide assurance that HIV does not exacerbate the burden of resistant TB in the community.\"\n\nAlso, while the analysis includes HIV and TB/MDR-TB, it's not clear on how it specifically fits in with the rest of paper or if it could be cut without loss of any key information.\n\nYou report in Figure 5, the correlation between global patterns of MDR-TB, TB and HIV prevalence. In the Methods you refer to the World Health Organization for the underlying data. This reference should be extended as it now only states \"World Health Organization\". Data from several countries are known to have limitations in the sense that the prevalence of HIV or TB may not always been known or collected in a rigorous manner. The prevalence of a particular disease can also vary within a single country. Use of these data can therefore also result in biased estimates, as estimates for HIV and TB may be derived from different sites in a single country.\n\nThis entire analysis needs to be either strengthened or simply removed from the paper.\n\n4) More explanation is required for key numbers reported in their paper.\n\nIn particular, in the Results, you state: \"Based on the available data we considered that the sequenced outbreak isolates represented about 35% of the total number of individuals belonging to the outbreak.\" You should explain how you came up with the figure of 35%. What are you assuming about the fraction of TB cases that are diagnosed and recorded? How, and over what time scale, are you defining the \"outbreak\" since reactivation TB cases may have been infected decades prior to disease onset?\n\nAgain, in the Results, you state: \"This left 13 resistance mutations that evolved with high probability during therapy in 11 patients (Table 2). Seven of the patients were HIV negative and four were positive. A \u03c72 analysis revealed a statistically significant overrepresentation of acquired resistance in HIV-negative cases relative to positives (p = 0.027). This finding strongly suggests that HIV was not a driver of Mtb drug resistance within the outbreak.\" Given that you indicate that these results strongly back up a key part of your findings, it is important that more information be provided. Specifically, it is unclear exactly which numbers were being compared in the test (e.g. was the null hypothesis that there should be a 50:50 split between HIV-positives and negatives, or was it directly comparing the fraction of mutations found in HIV-infected vs. uninfected individuals [though this would not seem to give the p-value reported]). Also, a Fisher's exact test, not a chi-squared test, would likely be required given that apparently some of the cell sizes were very small.\n",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8774f58f-6c40-43ea-9b91-0264f44f72b2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C1",
+      "claim": "Among the estimated 1.5 million people who died from TB in 2013, 360,000 were HIV co-infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the estimated 1.5 million people who died from TB in 2013, 360,000 were HIV co-infected and 200,000 cases were caused by multidrug-resistant TB (MDR-TB) (World Health Organization, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "648d247e-a6e4-4662-84f5-3def75e6c24a",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C2",
+      "claim": "Among the estimated 1.5 million people who died from TB in 2013, 200,000 cases were caused by multidrug-resistant TB (MDR-TB).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the estimated 1.5 million people who died from TB in 2013, 360,000 were HIV co-infected and 200,000 cases were caused by multidrug-resistant TB (MDR-TB) (World Health Organization, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "6c50e211-e7e0-4a87-a295-762eb5179c58",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C3",
+      "claim": "Until the late 1980s, reports of MDR-TB were rare.",
+      "claim_type": "EXPLICIT",
+      "source": "Until the late 1980s, reports of MDR-TB were rare, and transmission of such strains was even less frequent (Reves et al., 1981; Small et al., 1993; Wells et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reves et al., 1981; Small et al., 1993; Wells et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "e6eb339b-8fe4-477a-86d5-0eb26f523492",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C4",
+      "claim": "Until the late 1980s, transmission of MDR-TB strains was even less frequent than reports of MDR-TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Until the late 1980s, reports of MDR-TB were rare, and transmission of such strains was even less frequent (Reves et al., 1981; Small et al., 1993; Wells et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Reves et al., 1981; Small et al., 1993; Wells et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b3fa665c-c55d-460f-8a10-c97f6822edc2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C5",
+      "claim": "The MDR-TB burden surged concurrently with the human immunodeficiency virus (HIV) pandemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The MDR-TB burden surged concurrently with the human immunodeficiency virus (HIV) pandemic and most reported early MDR-TB outbreaks mainly affected HIV co-infected individuals in hospitals and prisons (Small et al., 1993; Wells et al., 2007; Ritacco et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Small et al., 1993; Wells et al., 2007; Ritacco et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "2da8f444-b7c7-4b91-847d-1a3c090d29a2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C6",
+      "claim": "Most reported early MDR-TB outbreaks mainly affected HIV co-infected individuals in hospitals and prisons.",
+      "claim_type": "EXPLICIT",
+      "source": "The MDR-TB burden surged concurrently with the human immunodeficiency virus (HIV) pandemic and most reported early MDR-TB outbreaks mainly affected HIV co-infected individuals in hospitals and prisons (Small et al., 1993; Wells et al., 2007; Ritacco et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Small et al., 1993; Wells et al., 2007; Ritacco et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "78f37c2f-06a0-436e-859f-075d4c7fc58d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C7",
+      "claim": "HIV infection renders people more susceptible to develop active TB by weakening their immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does HIV infection render people more susceptible to develop active TB by weakening their immune system, but anti-TB drugs can also directly interfere with antiretroviral treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "112f9d29-d515-4ff2-8e40-3538f4cf0e0f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C8",
+      "claim": "Anti-TB drugs can directly interfere with antiretroviral treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only does HIV infection render people more susceptible to develop active TB by weakening their immune system, but anti-TB drugs can also directly interfere with antiretroviral treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "20890bfb-f6fa-4669-a3cd-a7eec0259e7b",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C9",
+      "claim": "Rifampicin (RIF) significantly lowers serum concentrations of HIV protease and reverse transcriptase inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Rifampicin (RIF), one of the cornerstones in anti-TB therapy, has been shown to significantly lower serum concentrations of HIV protease and reverse transcriptase inhibitors (Burman et al., 1999; Centers for Disease Control and Prevention, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burman et al., 1999; Centers for Disease Control and Prevention, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "e2329f3c-c7c6-45e8-9c12-bc2b1545b4d9",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C10",
+      "claim": "HIV co-infection is associated with malabsorption of anti-TB drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "To make matters worse, HIV co-infection is also associated with malabsorption of anti-TB drugs. This pattern is particularly pronounced for RIF, but seems to hold true for most anti-TB drugs (Patel et al., 1995; Peloquin et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Patel et al., 1995; Peloquin et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c75099f7-c5d1-48e1-991a-027a6407265d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C11",
+      "claim": "The pattern of malabsorption of anti-TB drugs in HIV co-infection is particularly pronounced for RIF.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern is particularly pronounced for RIF, but seems to hold true for most anti-TB drugs (Patel et al., 1995; Peloquin et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Patel et al., 1995; Peloquin et al., 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "aedf8ebf-d5f3-4167-962f-189bb58b2893",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C12",
+      "claim": "Resistance mutations generally entail a fitness cost to the bacterium, at least initially.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as resistance mutations generally entail a fitness cost to the bacterium (at least initially), some resistant strains might be more successful in HIV+ hosts with weakened immunity leading to a reduced selective pressure on the bacillus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "5c5524ab-75c9-4b05-9710-0dd3307affe2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C13",
+      "claim": "Some resistant strains might be more successful in HIV+ hosts with weakened immunity leading to a reduced selective pressure on the bacillus.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as resistance mutations generally entail a fitness cost to the bacterium (at least initially), some resistant strains might be more successful in HIV+ hosts with weakened immunity leading to a reduced selective pressure on the bacillus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about potential mechanism",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "39a618f9-e080-45fb-89cd-0496d6d407a0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C14",
+      "claim": "Some antiretroviral drugs used to treat HIV might have a mutagenic effect on mycobacterial genomes, but this has yet to be investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, some antiretroviral drugs used to treat HIV might have a mutagenic effect on mycobacterial genomes, but this has yet to be investigated (McGrath et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement with citation to McGrath et al., 2014",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ccfb7e09-b748-4537-9551-31d360da22a4",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C15",
+      "claim": "HIV co-infection and very low CD4 lymphocyte counts (<100 cells/mm3) have been shown to be risk factors for developing resistance to RIF.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV co-infection and very low CD4 lymphocyte counts (<100 cells/mm3), a hallmark of advanced HIV infection, have been shown to be risk factors for developing resistance to RIF and to a lesser degree isoniazid (INH) (Bradford et al., 1996; Burman et al., 2006; Li et al., 2005; Porco et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bradford et al., 1996; Burman et al., 2006; Li et al., 2005; Porco et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "80d85e93-508d-49e1-a50c-43dacfb59124",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C16",
+      "claim": "HIV co-infection and very low CD4 lymphocyte counts (<100 cells/mm3) have been shown to be risk factors for developing resistance to isoniazid (INH) to a lesser degree than RIF.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV co-infection and very low CD4 lymphocyte counts (<100 cells/mm3), a hallmark of advanced HIV infection, have been shown to be risk factors for developing resistance to RIF and to a lesser degree isoniazid (INH) (Bradford et al., 1996; Burman et al., 2006; Li et al., 2005; Porco et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bradford et al., 1996; Burman et al., 2006; Li et al., 2005; Porco et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b0a597af-82d0-47b3-a5c2-6e5ea528219a",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C17",
+      "claim": "A systematic review of 32 studies assessing MDR-TB prevalence by HIV status did not demonstrate an overall association between acquired MDR-TB and HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a systematic review of 32 studies assessing MDR-TB prevalence by HIV status did not demonstrate an overall association between acquired MDR-TB and HIV, but suggested that HIV co-infection is a risk factor for contracting primary MDR-TB (Suchindran et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Suchindran et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "821a15d1-4ea7-484e-a5e0-d0201cd8db46",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C18",
+      "claim": "A systematic review of 32 studies suggested that HIV co-infection is a risk factor for contracting primary MDR-TB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a systematic review of 32 studies assessing MDR-TB prevalence by HIV status did not demonstrate an overall association between acquired MDR-TB and HIV, but suggested that HIV co-infection is a risk factor for contracting primary MDR-TB (Suchindran et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Suchindran et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "fd9d950d-3252-421f-a2c4-bef345550e85",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C19",
+      "claim": "HIV has been a driver of increased TB incidence globally.",
+      "claim_type": "EXPLICIT",
+      "source": "It is beyond doubt that HIV has been a driver of increased TB incidence globally, but a recent review of the subject actually found HIV co-infection to be associated with decreased rates of TB transmission within households and between close contacts (Kwan and Ernst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established fact with citation to Kwan and Ernst, 2011",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "93a1cf95-5439-450b-ad7a-95008b1dd79e",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C20",
+      "claim": "A recent review found HIV co-infection to be associated with decreased rates of TB transmission within households and between close contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is beyond doubt that HIV has been a driver of increased TB incidence globally, but a recent review of the subject actually found HIV co-infection to be associated with decreased rates of TB transmission within households and between close contacts (Kwan and Ernst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kwan and Ernst, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "366b3861-33f3-41fc-99f7-f2b94799a8f8",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C21",
+      "claim": "Decreased TB transmission in HIV positives is possibly explained by differing manifestation of TB in HIV positives, namely less frequent cavitation and lower pulmonary bacillary load.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is possibly explained by differing manifestation of TB in HIV positives, namely less frequent cavitation and lower pulmonary bacillary load (Kwan and Ernst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kwan and Ernst, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "28c9df34-4770-4318-98d3-be1bf616c05f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C22",
+      "claim": "External factors such as social isolation or HIV infected patients being followed up more closely than HIV negatives may contribute to decreased TB transmission in HIV positives.",
+      "claim_type": "EXPLICIT",
+      "source": "External factors such as social isolation or HIV infected patients being followed up more closely than HIV negatives may also contribute to this pattern (Kwan and Ernst, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kwan and Ernst, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "7a78a7a8-4bd5-478d-a2c9-ac82ab35c354",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C23",
+      "claim": "In a low-incidence setting of close follow-up, HIV co-infection was associated with reduced TB transmission (inferred by clustering).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in a low-incidence setting of close follow-up, HIV co-infection was associated with reduced TB transmission (inferred by clustering) and TB among HIV co-infected was at least partly due to transmission from HIV-negative patients (Fenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fenner et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ab9deac7-61ae-4274-b33b-b9b0f4baf0e3",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C24",
+      "claim": "In a low-incidence setting of close follow-up, TB among HIV co-infected was at least partly due to transmission from HIV-negative patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in a low-incidence setting of close follow-up, HIV co-infection was associated with reduced TB transmission (inferred by clustering) and TB among HIV co-infected was at least partly due to transmission from HIV-negative patients (Fenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fenner et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b525678a-13b9-4972-bd70-b73d2ad7cb63",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C25",
+      "claim": "The study analyzed the genomes of 252 isolates belonging to the largest reported outbreak of MDR-TB in South America, caused by the M strain.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the genomes of 252 isolates belonging to the largest reported outbreak of MDR-TB in South America, caused by the M strain (Ritacco et al., 1997; Eldholm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study and citations to Ritacco et al., 1997; Eldholm et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "022a6d87-4e16-4eee-8dd2-35760ffc6896",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C26",
+      "claim": "The isolates were collected from patients with known HIV status from the mid-90s until 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "The isolates were collected from patients with known HIV status from the mid-90s until 2009, providing important temporal information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "01eadd43-571e-4012-ac58-da6e91584821",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C27",
+      "claim": "HIV status of the host does not affect the mutation rate of Mtb.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HIV status of the host does not affect the mutation rate of Mtb, and that drug resistance is not more likely to evolve in HIV positive than HIV negative patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "33222970-c42f-4888-823a-cf5b4f960a25",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C28",
+      "claim": "Drug resistance is not more likely to evolve in HIV positive than HIV negative patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that HIV status of the host does not affect the mutation rate of Mtb, and that drug resistance is not more likely to evolve in HIV positive than HIV negative patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis presented in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ed7e9998-2b95-4e37-8145-181e640da2c0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C29",
+      "claim": "HIV co-infection is not a direct driver of Mtb drug resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these findings suggest that HIV co-infection is not a direct driver of Mtb drug resistance, which fits well with the distribution of the global burden of TB, MDR-TB and HIV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis and global burden distribution",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "96f3edf4-b439-45bc-b7c5-f6186dfba405",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C30",
+      "claim": "Reconstructed transmission networks did not reveal a significant impact of HIV co-infection on the ability of patients to transmit TB.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstructed transmission networks did not reveal a significant impact of HIV co-infection on the ability of patients to transmit TB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transmission network analysis in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "654f8bd0-3d61-48e5-8eee-ec137c140e0f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C31",
+      "claim": "HIV co-infection accelerates progression to active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our estimates of TB latency confirm that HIV co-infection accelerates progression to active TB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by latency analysis in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "cd5a0685-5bac-4c81-8e92-5fd4a119d88a",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C32",
+      "claim": "After filtering, a total of 509 SNPs separating the 252 isolates were used to construct a Bayesian phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering out positions with low mapping quality and removal of single nucleotide polymorphisms (SNPs) in problematic regions, a total of 509 SNPs separating the 252 isolates were used to construct a Bayesian phylogeny (Figure 1) (Eldholm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis with citation to Eldholm et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "45b659f5-bf4a-43cb-9bc5-7fb5f6fe8892",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C33",
+      "claim": "The majority of the isolates in the study shared the same six mutations yielding resistance to INH, RIF, streptomycin, kanamycin, pyrazinamide and ethambutol.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the isolates in the study shared the same six mutations yielding resistance to INH, RIF, streptomycin, kanamycin, pyrazinamide and ethambutol (Eldholm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis with citation to Eldholm et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "26de3ec3-6bef-491f-8d6c-4b25146a68f1",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C34",
+      "claim": "60.7% of patients in the study were HIV positive.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV status was known for all patients in the study, of which 60.7% were HIV positive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b8a8358e-2a2b-4392-8822-1b1c772326ed",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C35",
+      "claim": "The sequenced outbreak isolates represented about one third of the total number of individuals belonging to the outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the available data we considered that the sequenced outbreak isolates represented about one third of the total number of individuals belonging to the outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on available data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "71cb08df-30fb-4b47-8c9c-5fdf7b411b52",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C36",
+      "claim": "The outbreak is believed to have caused about 550 cases between 1992 and 2002, of which 109 genomes were available for study (20%).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on available RFLP data and estimates of the proportion of MDR-cases in Argentina belonging to the M strain, the outbreak is believed to have caused about 550 cases between 1992 and 2002, of which 109 genomes were available for study (20%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on RFLP data and estimates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "0475ef7b-309e-4b14-acb2-591b8f68db54",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C37",
+      "claim": "From 2003 to 2009, the M strain caused 228 cases in Argentina, of which 143 genomes were available (63%).",
+      "claim_type": "EXPLICIT",
+      "source": "From 2003 to 2009, the M strain caused 228 cases in Argentina, of which 143 genomes were available (63%), 116 isolates were sequenced from HIV positive patients and 85 from negatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "36eaa2fc-32c0-4d52-9064-ff6d8a7e13cd",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C38",
+      "claim": "116 isolates were sequenced from HIV positive patients and 85 from negatives from 2003 to 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "From 2003 to 2009, the M strain caused 228 cases in Argentina, of which 143 genomes were available (63%), 116 isolates were sequenced from HIV positive patients and 85 from negatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "7abf65bc-53f0-4e1f-8999-7c0b3dadead0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C39",
+      "claim": "There is no reason to suspect any bias in the HIV status of the sampled patients from 2003 to 2009 (\u03c72; p = 0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "For these years there are hence no reason to suspect any bias in the HIV status of the sampled patients (\u03c72; p = 0.53).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "6782a33b-19fb-4aac-bdc7-652f9552f413",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C40",
+      "claim": "No significant differences were observed in the rate at which substitutions accumulate in the genomes of strains evolving in HIV positive and negative patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed no significant differences in the rate at which substitutions accumulate in the genomes of strains evolving in HIV positive and negative patients (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "1bc46f0c-aa8d-46ab-b59c-8fe2e52aa0a6",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C41",
+      "claim": "Terminal branches were significantly longer in HIV negative patients than in positives.",
+      "claim_type": "EXPLICIT",
+      "source": "However, terminal branches were significantly longer and contained significantly higher numbers of mutations in HIV negative patients than in positives (Table 1 and Figure 2\u2014figure supplement 1), possibly reflecting a slower progression of TB in HIV negatives relative to positives.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Table 1 and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "72e78211-e63c-4950-9305-8007fbb202f1",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C42",
+      "claim": "Terminal branches contained significantly higher numbers of mutations in HIV negative patients than in positives.",
+      "claim_type": "EXPLICIT",
+      "source": "However, terminal branches were significantly longer and contained significantly higher numbers of mutations in HIV negative patients than in positives (Table 1 and Figure 2\u2014figure supplement 1), possibly reflecting a slower progression of TB in HIV negatives relative to positives.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data in Table 1 and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "cd90ef8e-9928-4575-9178-0b2d9c320e46",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C43",
+      "claim": "Longer terminal branches and higher numbers of mutations in HIV negative patients possibly reflect a slower progression of TB in HIV negatives relative to positives.",
+      "claim_type": "EXPLICIT",
+      "source": "However, terminal branches were significantly longer and contained significantly higher numbers of mutations in HIV negative patients than in positives (Table 1 and Figure 2\u2014figure supplement 1), possibly reflecting a slower progression of TB in HIV negatives relative to positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "d5d6931e-2295-4318-9c7c-794ab326cadb",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C44",
+      "claim": "The resistance load was near identical between Mtb isolates from HIV positive and negative patients (mean = 5.99 and 6.04 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the resistance load was near identical between Mtb isolates from HIV positive and negative patients (mean = 5.99 and 6.04 respectively) (Figures 1 and 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figures 1 and 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "7d40ace0-621b-4eee-bce1-578969f50e98",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C45",
+      "claim": "The findings on resistance load are in line with those from a very recent study of drug resistant TB in Kwazulu-Natal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with those from a very recent study of drug resistant TB in Kwazulu-Natal (Cohen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "1bd7e45b-1125-4f4b-abc8-264b02721d02",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C46",
+      "claim": "13 resistance mutations evolved with high probability during therapy in 11 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This left 13 resistance mutations that evolved with high probability during therapy in 11 patients (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "bf20a758-4504-4afb-bf07-24f35cc8a602",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C47",
+      "claim": "Nine events of acquired resistance occurred in seven HIV negatives and four in HIV positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine events of acquired resistance occurred in seven HIV negatives and four in HIV positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "21443ffb-c2e4-40ab-b3a0-99ac2ca8923c",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C48",
+      "claim": "HIV negative patients were overrepresented among cases of acquired resistance, but the difference was not significant (p= 0.24, Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the frequency of HIV co-infection among the sampled patients, HIV negative patients were overrepresented among cases of acquired resistance, but the difference was not significant (p= 0.24, Fisher's exa ct test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical test",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "56363a6d-b9a2-4f73-9f4e-0a6900da931c",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C49",
+      "claim": "The SEIR model was set up with parameters for latency (mean of 5 years with 95% CI 46 days \u2013 18.5 years).",
+      "claim_type": "EXPLICIT",
+      "source": "The SEIR model was set up with parameters for latency (mean of 5 years with 95% CI 46 days \u2013 18.5 years) and infectious period (mean of 120 days with 95% CI 3\u2013443 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameters used in the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "bb288269-460a-411c-b1f8-cdf06fe60903",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C50",
+      "claim": "The SEIR model was set up with parameters for infectious period (mean of 120 days with 95% CI 3\u2013443 days).",
+      "claim_type": "EXPLICIT",
+      "source": "The SEIR model was set up with parameters for latency (mean of 5 years with 95% CI 46 days \u2013 18.5 years) and infectious period (mean of 120 days with 95% CI 3\u2013443 days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameters used in the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "fc5ea5ad-795c-4ec0-8569-ccfd2c5bc68c",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C51",
+      "claim": "Smear positive cases transmit TB far more efficiently on average than smear negative cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Smear positive cases transmit TB far more efficiently on average than smear negative cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "46652c6f-4616-444a-b536-2bd6e6b9d083",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C52",
+      "claim": "A smear-correction was applied, penalizing transmission event likelihoods involving a smear negative transmitter by multiplying likelihood values with 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus applied a so-called smear-correction, penalizing transmission event likelihoods involving a smear negative transmitter by multiplying likelihood values with 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Method used in the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c2fb9ecf-dc00-4ecd-8961-6dbe51d51d37",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C53",
+      "claim": "For each of the 252 sampled cases in the outbreak, the most likely transmitter was extracted, resulting in 251 identified transmission pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the 252 sampled cases in the outbreak, we extracted the most likely transmitter, resulting in 251 identified transmission pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transmission analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "fdbb5642-3fbe-417c-9c4a-2fd6f6cc0d72",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C54",
+      "claim": "No significant effect of HIV status on the ability of patients to cause secondary TB cases was found.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant effect of HIV status on the ability of patients to cause secondary TB cases (Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "eaea314c-872d-4f9b-885f-6613e33d349b",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C55",
+      "claim": "No significant differences were detected between HIV-status of transmitters in the distribution of the number of transmissions per transmitter.",
+      "claim_type": "EXPLICIT",
+      "source": "We also explicitly investigated the distribution of the number of transmissions per transmitter to test whether this could be affected by HIV status, but detected no significant differences between HIV-status of transmitters (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Table 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "0745198f-86dc-435a-bbef-16daa5f62dbd",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C56",
+      "claim": "Four pairs of household contacts were identified as likely transmission pairs by the genomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Four pairs of household contacts were identified as likely transmission pairs by the genomic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transmission analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c5f04ad1-0314-4eee-a6af-d0729d538d6f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C57",
+      "claim": "All four household contact pairs identified as transmission pairs were among the 35% most likely transmission events, and two among the top 25%.",
+      "claim_type": "EXPLICIT",
+      "source": "All four were among the 35% most likely transmission events, and two among the top 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by transmission analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "65be2287-e55f-46b8-800a-ac216230c4e7",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C58",
+      "claim": "The SNP differences between the four identified household contact epi-pairs ranged from one to three SNPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The SNP differences between these epi-pairs ranged from one to three SNPs (Supplementary file 3: SNP distances between epi-pairs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genomic data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "2c02505c-5ac3-48e9-ad05-46cfbf985f8c",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C59",
+      "claim": "The length of the branches separating the MRCA and recipient of the transmission pairs was significantly longer for HIV negative hosts than for HIV positive hosts when including all 251 estimated transmission events (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The length of the branches leading to HIV negative hosts was significantly longer than for HIV positive hosts when including all 251 estimated transmission events (p<0.001), and this difference remained significant for all three subsampling regimes (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "a5f70869-7634-4ad3-aba3-055d70fdc80e",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C60",
+      "claim": "When including only the top 25% of transmission events, the average branch lengths were 5.56 versus 4.65 years for HIV negative and positive receivers, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When including only the top 25% of transmission events, the average branch lengths were 5.56 versus 4.65 years for HIV negative and positive receivers, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "e25f81e1-fe41-487f-8c26-f4e0cbf7f138",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C61",
+      "claim": "A comprehensive review of 52 studies found that the average time from TB symptom onset to diagnosis (diagnostic delay) is approximately two months, with no significant difference between high and low income countries.",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive review of 52 studies found that the average time from TB symptom onset to diagnosis (diagnostic delay) is approximately two months, with no significant difference between high and low income countries (Sreeramareddy et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sreeramareddy et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "23ee77ad-f9eb-43c7-9fc4-11c6522b5e71",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C62",
+      "claim": "A meta-study found that HIV positive status was associated with both increased and decreased diagnostic delay, depending on study setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Another meta-study found that HIV positive status was associated with both increased and decreased diagnostic delay, depending on study setting (Storla and Yimer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Storla and Yimer, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b1c7c4cb-ccca-42e6-affb-db474cc0bb0b",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C63",
+      "claim": "A study conducted in 2005 in Buenos Aires and other Argentinean provinces found a diagnostic delay of about three months, with no significant effect of HIV status.",
+      "claim_type": "EXPLICIT",
+      "source": "The study most relevant to the current setting was conducted in 2005 in Buenos Aires and other Argentinean provinces and found a delay of about three months, with no significant effect of HIV status (Zerbini et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zerbini et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "f1a61ed8-c151-43f1-afef-5159deba37c3",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C64",
+      "claim": "The difference in TB activation time inferred between HIV- and HIV+ is several times higher than the diagnostic delay reported in any setting.",
+      "claim_type": "EXPLICIT",
+      "source": "As the difference in TB activation time we infer between HIV- and HIV+ is several times higher than the diagnostic delay reported in any setting, we feel confident that it reflects faster progression to active TB in HIV+ patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis and comparison with literature",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "635042a4-222e-42e0-b885-f9e7a4e89121",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C65",
+      "claim": "HIV co-infection significantly increases the rate of reactivation of latent TB.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that HIV co-infection significantly increases the rate of reactivation of latent TB is well documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "6a7e9031-86e1-4a51-838f-becb148e2af2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C66",
+      "claim": "A comprehensive study from the United States found the rate of reactivation to be 25-fold higher in HIV co-infected individuals relative to their HIV-free peers (1.82 vs 0.072 per 100 person-year).",
+      "claim_type": "EXPLICIT",
+      "source": "A comprehensive study from the United States found the rate of reactivation to be 25-fold higher in HIV co-infected individuals relative to their HIV-free peers (1.82 vs 0.072 per 100 person-year) (Shea et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shea et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "5a7f83b0-ae30-43f6-89c9-989986e1ee8d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C67",
+      "claim": "In the subset of cases who develop active TB, HIV co-infection seems to be associated with a relatively modest acceleration of TB progression, speeding up the process by about 11 months.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our outbreak analysis is necessarily restricted to people who develop active TB, and in this subset of cases, HIV co-infection seems to be associated with a relatively modest acceleration of TB progression, speeding up the process by about 11 months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "b74abd73-50a3-466d-894d-da6f6765bace",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C68",
+      "claim": "The HIV prevalence in Argentina is approximately 0.4% (in 2001 and 2014).",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV prevalence in Argentina is approximately 0.4% (in 2001 and 2014) (World Health Organization, 2013), whereas the proportion of HIV co-infected individuals is 60.7% within the M outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to World Health Organization, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "473560c3-d7fe-405c-9c92-8302f22120a2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C69",
+      "claim": "The proportion of HIV co-infected individuals is 60.7% within the M outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The HIV prevalence in Argentina is approximately 0.4% (in 2001 and 2014) (World Health Organization, 2013), whereas the proportion of HIV co-infected individuals is 60.7% within the M outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "03b308f2-b8f5-4ef5-9c59-f6cef6c1e72d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C70",
+      "claim": "HIV infection is a massive risk factor for developing TB with the MDR M strain.",
+      "claim_type": "EXPLICIT",
+      "source": "These numbers demonstrate that HIV infection is a massive risk factor for developing TB with the MDR M strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of HIV prevalence in Argentina vs. the outbreak",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "5e3783dd-a73e-46b5-a523-22199679e7fe",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C71",
+      "claim": "The main effect of HIV co-infection is to increase the absolute risk of developing active TB.",
+      "claim_type": "EXPLICIT",
+      "source": "As this subtle effect of HIV status on time to active TB cannot explain the far higher incidence of the M strain in HIV positives, this suggests that the main effect of HIV co-infection is to increase the absolute risk of developing active TB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ba30718c-4748-41c1-9264-ef7dcf46d4fc",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C72",
+      "claim": "A large proportion of HIV negatives infected by the M strain will not progress to active TB but for those that do, the latency period is only slightly longer than for HIV positives.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, we surmise that a large proportion of HIV negatives infected by the M strain will not progress to active TB but for those that do, the latency period is only slightly longer than for HIV positives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c884caee-1b39-4959-8611-8581dcf6356d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C73",
+      "claim": "Free access to highly active antiretroviral therapy in Argentina from 1997 is likely to have mitigated the accelerating effect of HIV on TB progression.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that free access to highly active antiretroviral therapy in Argentina from 1997 is likely to have mitigated the accelerating effect of HIV on TB progression (Waisman, 2001; Gupta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference with citations to Waisman, 2001; Gupta et al., 2015",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "40975256-8198-406f-ada3-c90cdeb2a4e2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C74",
+      "claim": "TB incidence during highly active anti-retroviral treatment is significantly higher than background levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that TB incidence during highly active anti-retroviral treatment is significantly higher than background levels even though a number of possible confounders makes the exact quantification of the effect of antiretroviral therapy challenging (Gupta et al., 2015; Girardi et al., 2005; Lawn et al., 2005; Lawn and Wood, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gupta et al., 2015; Girardi et al., 2005; Lawn et al., 2005; Lawn and Wood, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "86e8eb3c-406c-4f6e-9e7d-a0baef294a29",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C75",
+      "claim": "The largest clade in the M outbreak had evolved resistance to six antimicrobials by 1979, well before the HIV epidemic reached Argentina.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the largest clade in the M outbreak had evolved resistance to six antimicrobials by 1979, well before the HIV epidemic reached Argentina (Eldholm et al., 2015), a finding which has been replicated for another highly resistant Mtb lineage in South Africa (Cohen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Eldholm et al., 2015 and Cohen et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "cc70d283-3928-46c6-9051-ee7346f87178",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C76",
+      "claim": "A strong correlation was observed between TB and MDR-TB prevalence globally.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong correlation between TB and MDR-TB prevalence (Figure 5a) as well as a correlation between HIV and TB burden between countries (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 5a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "be62f563-a970-40f8-a983-6ab8a37287c0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C77",
+      "claim": "A correlation was observed between HIV and TB burden between countries.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a strong correlation between TB and MDR-TB prevalence (Figure 5a) as well as a correlation between HIV and TB burden between countries (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 5b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "0d070793-2568-4bb5-914e-b9d8331349bd",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C78",
+      "claim": "A highly significant correlation was recovered between HIV and MDR-TB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recovered a highly significant correlation between HIV and MDR-TB (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 5c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "86f92d46-bff6-448d-ad6d-41735c625592",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C79",
+      "claim": "When correcting the MDR-TB burden for total TB burden, the correlation between HIV and MDR-TB vanished.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when correcting the MDR-TB burden for total TB burden, the correlation vanished (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 5d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "8c3b0ca9-8985-4296-b50c-367fa91459f3",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C80",
+      "claim": "The finding that the correlation between HIV and MDR-TB vanishes when correcting for total TB burden is in line with results on the M outbreak that HIV is a driver of TB in general, but does not disproportionately contribute to the rise of MDR-TB lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in line with our results on the M outbreak that HIV is a driver of TB in general, but does not disproportionately contribute to the rise of MDR-TB lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "a1e5f577-04b7-4b47-b777-0347cb9486f1",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C81",
+      "claim": "HIV co-infection does not significantly affect the transmissibility of Mtb within patients.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining Bayesian evolutionary analyses and the reconstruction of transmission networks utilizing a new model optimized for TB, we find that HIV co-infection does not significantly affect the transmissibility or the mutation rate of Mtb within patients and was not associated with increased emergence of resistance within patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c38ca06a-fdaf-48cf-ba9a-0306f95ac969",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C82",
+      "claim": "HIV co-infection was not associated with increased emergence of resistance within patients.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining Bayesian evolutionary analyses and the reconstruction of transmission networks utilizing a new model optimized for TB, we find that HIV co-infection does not significantly affect the transmissibility or the mutation rate of Mtb within patients and was not associated with increased emergence of resistance within patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data analysis in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "2b9455b5-8df7-49f6-9e35-42c7ee4c0091",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C83",
+      "claim": "The HIV epidemic serves as an amplifier of TB outbreaks by providing a reservoir of susceptible hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the HIV epidemic serves as an amplifier of TB outbreaks by providing a reservoir of susceptible hosts, but that HIV co-infection is not a direct driver for the emergence and transmission of resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "437bcd37-dd93-4eb6-8e7b-005112f572aa",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C84",
+      "claim": "HIV co-infection is not a direct driver for the emergence and transmission of resistant strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the HIV epidemic serves as an amplifier of TB outbreaks by providing a reservoir of susceptible hosts, but that HIV co-infection is not a direct driver for the emergence and transmission of resistant strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "757e6e84-16dd-4488-bfce-d6efb635e3cf",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C85",
+      "claim": "The proportion of correctly inferred transmission links were 74%, 69% and 63% for the 25%, 35% and 45% thresholds, respectively, in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "When applying these three thresholds to the simulated data, we found that the proportion of correctly inferred links were 74%, 69% and 63%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by simulation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "187d97e7-40e7-441f-a04e-1ca617a253ea",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C86",
+      "claim": "A 20-fold decreased transmissibility of smear-negative cases was chosen as a reasonable parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, A 20-fold decreased transmissibility of smear-negative cases was chosen as a reasonable parameter (Ma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Model parameter choice with citation to Ma et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "218bd8b2-33ba-4482-a315-d0bfc1624b56",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C87",
+      "claim": "For each of the three parameters tested in sensitivity analysis, the proportion of links identical with the main analysis was between 91% and 99%.",
+      "claim_type": "EXPLICIT",
+      "source": "For each of the three parameters, we ran the analysis again considering double and half of their specified values above, and compared the reconstructed transmission links with those of the main analysis. In each case, the proportion of links identical with the main analysis was between 91% and 99%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "29eca6e7-b911-4666-93e1-cf0c95e673f8",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "claim_id": "C88",
+      "claim": "An analysis in which no smear correction was applied recovered 90.5% of the links in the main analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed an analysis in which no smear correction was applied and recovered 90.5% of the links in the main analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sensitivity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides epidemiological context showing that MDR-TB emerged concurrently with the HIV pandemic, with early outbreaks primarily affecting HIV co-infected individuals in institutional settings. These claims establish the historical relationship between HIV and MDR-TB epidemics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are well-supported by citations to authoritative sources (WHO, peer-reviewed literature). These claims establish the epidemiological context and are consistent with established knowledge about the TB/HIV syndemic. The claims appropriately cite primary sources for specific statistics and historical patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "HIV infection increases susceptibility to active TB through immune system weakening, and anti-TB drugs (particularly rifampicin) interfere with antiretroviral therapy. Additionally, HIV co-infection is associated with malabsorption of anti-TB drugs, especially rifampicin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 are supported by established knowledge and appropriate citations. The mechanisms described (immune suppression, drug interactions, malabsorption) are well-documented in the literature. The citations provided (Burman et al., Patel et al., Peloquin et al.) are appropriate for these established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "f61c0e97-c0ff-4c4d-9493-dbe73359440f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript discusses potential mechanisms by which HIV might directly contribute to drug resistance evolution in Mtb, including reduced selective pressure in immunocompromised hosts and possible mutagenic effects of antiretroviral drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12-C14 are speculative hypotheses rather than findings. C12 is established knowledge, but C13 is explicitly speculative ('might be'), and C14 acknowledges the hypothesis 'has yet to be investigated.' These represent potential mechanisms that motivate the study but are not tested or validated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "227e7e16-8d98-48e8-9a5e-bc5c175fbaaf",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior literature shows conflicting evidence regarding HIV as a risk factor for drug resistance, with some studies showing HIV and low CD4 counts as risk factors for RIF/INH resistance, while a systematic review found no overall association with acquired MDR-TB but suggested HIV is a risk factor for primary MDR-TB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 accurately summarize prior literature with appropriate citations. The apparent contradiction between individual studies and the systematic review is appropriately presented, establishing the ambiguity in the literature that motivates the current study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "While HIV drives increased TB incidence globally, prior research found HIV co-infection associated with decreased TB transmission in households and close contacts, possibly due to different TB manifestations (less cavitation, lower bacillary load) and external factors like social isolation or closer medical follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 are well-supported by citations to Kwan and Ernst (2011) and Fenner et al. (2012). These claims establish an important paradox: HIV increases TB incidence but may decrease transmission, providing context for the current study's transmission analysis. The proposed mechanisms are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "8952f87c-33b1-43c7-aac8-08b046be42f0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study analyzed 252 Mtb isolates from the M strain outbreak in Argentina (largest MDR-TB outbreak in South America), collected from patients with known HIV status from mid-1990s to 2009. After filtering, 509 SNPs were used for phylogenetic analysis. The majority of isolates shared six resistance mutations, and 60.7% of patients were HIV positive. Sampling was incomplete but unbiased for HIV status in 2003-2009.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C39 describe the study dataset and are supported by the data presented. The statistical test (C39, p=0.53) appropriately demonstrates no sampling bias by HIV status for 2003-2009. The acknowledgment of incomplete sampling (C35-C36) is appropriate. The methods for SNP filtering and phylogenetic reconstruction are cited to prior work (Eldholm et al., 2015).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "92af5823-9747-48b5-b942-bc9c4e8273ec",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "HIV status does not affect the mutation rate of Mtb. While no significant differences were observed in substitution rates between HIV+ and HIV- patients, terminal branches were significantly longer and contained more mutations in HIV- patients, possibly reflecting slower TB progression in HIV- individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C40-C43 are supported by the data in Table 1 and Figure 2. The statistical analysis appropriately shows no difference in mutation rates (C40) but significant differences in terminal branch lengths and mutation counts (C41-C42, p<0.001). The interpretation (C43) that this reflects slower progression is reasonable but appropriately qualified as 'possibly.' This is a key negative finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "c552e961-a467-47b5-8361-3713591325c3",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Drug resistance is not more likely to evolve in HIV+ patients. Resistance load was nearly identical between HIV+ and HIV- patients (mean 5.99 vs 6.04). Among 13 resistance mutations that evolved during therapy in 11 patients, HIV- patients were overrepresented but not significantly (p=0.24).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C44-C48 are supported by the data in Figures 1-2 and Table 2. The resistance load analysis (C44) shows no meaningful difference. The acquired resistance analysis (C46-C48) appropriately uses treatment history to distinguish acquired from transmitted resistance, though the sample size is small (n=11 patients). The non-significant overrepresentation in HIV- patients (C48) is appropriately reported with statistical test. This is a major finding contradicting some prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "acabf82b-d407-49bb-a32a-298ab731503e",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "HIV co-infection is not a direct driver of Mtb drug resistance or for the emergence and transmission of resistant strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C84 represent the main conclusion regarding resistance evolution. These are supported by the convergent evidence from mutation rate analysis (C27, C40), resistance load analysis (C44), and acquired resistance analysis (C46-C48). The conclusion is appropriately qualified as 'not a direct driver,' acknowledging HIV's role in amplifying outbreaks while not driving resistance evolution per se.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A novel SEIR-based transmission reconstruction method was developed and validated through simulation, showing 63-74% accuracy depending on threshold. The method uses epidemiological parameters (5-year mean latency, 120-day infectious period) and applies smear correction (0.05 penalty for smear-negative transmitters). Sensitivity analyses showed 91-99% consistency across parameter variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 and C85-C88 describe the transmission reconstruction methodology. The simulation validation (C85) demonstrates reasonable accuracy given the challenges of incomplete sampling and within-host evolution. The sensitivity analyses (C87-C88) appropriately demonstrate robustness to parameter choices. The parameters chosen (C49-C50, C86) are justified by citations and clinical experience. This represents a methodological advance for TB transmission inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Reconstructed transmission networks showed no significant effect of HIV status on ability to cause secondary TB cases or on the distribution of transmissions per transmitter. Four of six known epidemiological pairs were identified among top 35% likely transmissions, with 1-3 SNP differences. HIV co-infection does not significantly affect Mtb transmissibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C54-C55, and C81 are supported by data in Tables 3-4. The lack of significant association between HIV status and transmission is demonstrated across multiple thresholds. The validation with known epi-pairs (C56-C58) provides external support for the method, though only 4/6 pairs were identified. The two unidentified pairs had higher SNP differences and resistance evolution, which the authors appropriately discuss. This is a major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "HIV co-infection accelerates progression to active TB. Branch lengths leading to HIV- hosts were significantly longer than HIV+ hosts (p<0.001), with a difference of approximately 11 months (5.56 vs 4.65 years for top 25% transmissions). This difference is several times larger than diagnostic delay, confirming faster progression in HIV+ patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C59-C60, C64, and C67 are supported by data in Figure 4. The statistical significance is strong (p<0.001) and consistent across subsampling regimes. The comparison with diagnostic delay literature (C61-C63) appropriately validates that the observed difference reflects true biological acceleration rather than healthcare system factors. The ~11-month difference is modest but significant. This is a major confirmatory finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "23e61af5-41b5-4f29-a891-224707eae8df",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Literature on diagnostic delay shows approximately 2-3 months from symptom onset to diagnosis, with inconsistent effects of HIV status depending on setting. A 2005 study in Argentina found ~3 months delay with no HIV effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 appropriately cite literature on diagnostic delay to contextualize the latency findings. The citations (Sreeramareddy et al., Storla and Yimer, Zerbini et al.) are appropriate and the Argentina-specific study (C63) is particularly relevant for interpreting the current results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "45cfc2c4-4c64-4ac8-891e-ed121c64e612",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "HIV co-infection significantly increases the rate of reactivation of latent TB, with one US study finding a 25-fold higher rate in HIV+ individuals (1.82 vs 0.072 per 100 person-years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 cite established knowledge with appropriate reference (Shea et al., 2014). This provides important context for interpreting the study's findings on progression time, distinguishing between absolute risk of developing active TB versus time to progression among those who do develop active disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "401c320a-905e-4194-aabf-e196446b342f",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "HIV prevalence in Argentina is ~0.4%, but 60.7% of M outbreak patients were HIV+, demonstrating HIV is a massive risk factor for developing TB with this MDR strain. The main effect of HIV is increasing absolute risk of active TB rather than accelerating progression time, suggesting many HIV- individuals infected with M strain do not progress to active TB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 integrate the study's findings with population-level data. The dramatic overrepresentation of HIV+ individuals in the outbreak (C69-C70) compared to population prevalence (C68) is compelling evidence for HIV as a risk factor. The inference (C71-C72) that HIV primarily affects absolute risk rather than progression time is logical given the modest acceleration observed. This represents an important mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "ec3e18f7-c5da-424d-8e21-1b3b28600679",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Free access to antiretroviral therapy in Argentina from 1997 likely mitigated HIV's accelerating effect on TB progression. TB incidence during antiretroviral treatment remains significantly higher than background despite treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 appropriately acknowledge an important limitation/context. The availability of antiretroviral therapy (C73) may have reduced the observed effect of HIV on TB progression, meaning the true effect in untreated HIV could be larger. The citations (Waisman, Gupta et al., Girardi et al., Lawn et al.) appropriately support these contextual points.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "a2b21631-4ee7-4385-9ca4-14dc4e2c96f2",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The largest clade in the M outbreak evolved resistance to six antimicrobials by 1979, before the HIV epidemic reached Argentina, a pattern replicated in another highly resistant Mtb lineage in South Africa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is supported by citations to prior work (Eldholm et al., 2015; Cohen et al., 2015). This temporal evidence that major resistance evolution preceded the HIV epidemic provides important support for the conclusion that HIV is not a driver of resistance emergence. This is a key piece of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Global analysis shows strong correlation between TB and MDR-TB prevalence, and between HIV and TB burden. While HIV and MDR-TB are significantly correlated, this correlation vanishes when correcting MDR-TB burden for total TB burden, supporting the conclusion that HIV drives TB generally but not disproportionately MDR-TB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 are supported by data in Figure 5. The global analysis provides important external validation of the outbreak-specific findings. The key insight (C79-C80) that the HIV-MDR-TB correlation disappears when controlling for total TB burden is compelling evidence that HIV's effect is on TB incidence generally, not specifically on drug-resistant strains. The statistical analyses appear appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "d9f1236a-0150-4d8f-82ba-a05effdda6b5",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The HIV epidemic serves as an amplifier of TB outbreaks by providing a reservoir of susceptible hosts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 represents a major conclusion supported by the convergent evidence: HIV dramatically increases outbreak participation (C68-C70), modestly accelerates progression (C31, C59-C60), but does not affect mutation rates (C27, C40), resistance evolution (C28, C44-C48), or transmissibility (C30, C54-C55, C81). The 'amplifier' metaphor appropriately captures HIV's role in expanding the susceptible population without driving resistance evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    },
+    {
+      "id": "4900c4b4-3354-400b-8728-e6521ee5dba3",
+      "content_id": "7cb20216-e8bf-4fd5-87c6-f4abc68dae5c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "HIV co-infection was not associated with increased emergence of resistance within patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 is supported by the acquired resistance analysis (C46-C48) showing no significant association (p=0.24) and actually a trend toward more resistance in HIV- patients. Combined with the resistance load analysis (C44) and mutation rate analysis (C27, C40), this represents strong evidence against HIV as a driver of within-patient resistance evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:20:51.950450Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8774f58f-6c40-43ea-9b91-0264f44f72b2",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "648d247e-a6e4-4662-84f5-3def75e6c24a",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "6c50e211-e7e0-4a87-a295-762eb5179c58",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "e6eb339b-8fe4-477a-86d5-0eb26f523492",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "b3fa665c-c55d-460f-8a10-c97f6822edc2",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "2da8f444-b7c7-4b91-847d-1a3c090d29a2",
+      "result_id": "89ce4a46-4cf4-4a8c-aa15-cc520ee775a7"
+    },
+    {
+      "claim_id": "78f37c2f-06a0-436e-859f-075d4c7fc58d",
+      "result_id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc"
+    },
+    {
+      "claim_id": "112f9d29-d515-4ff2-8e40-3538f4cf0e0f",
+      "result_id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc"
+    },
+    {
+      "claim_id": "20890bfb-f6fa-4669-a3cd-a7eec0259e7b",
+      "result_id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc"
+    },
+    {
+      "claim_id": "e2329f3c-c7c6-45e8-9c12-bc2b1545b4d9",
+      "result_id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc"
+    },
+    {
+      "claim_id": "c75099f7-c5d1-48e1-991a-027a6407265d",
+      "result_id": "0ac90a19-4a9f-4490-a8db-0bdb4cf77acc"
+    },
+    {
+      "claim_id": "aedf8ebf-d5f3-4167-962f-189bb58b2893",
+      "result_id": "f61c0e97-c0ff-4c4d-9493-dbe73359440f"
+    },
+    {
+      "claim_id": "5c5524ab-75c9-4b05-9710-0dd3307affe2",
+      "result_id": "f61c0e97-c0ff-4c4d-9493-dbe73359440f"
+    },
+    {
+      "claim_id": "39a618f9-e080-45fb-89cd-0496d6d407a0",
+      "result_id": "f61c0e97-c0ff-4c4d-9493-dbe73359440f"
+    },
+    {
+      "claim_id": "ccfb7e09-b748-4537-9551-31d360da22a4",
+      "result_id": "227e7e16-8d98-48e8-9a5e-bc5c175fbaaf"
+    },
+    {
+      "claim_id": "80d85e93-508d-49e1-a50c-43dacfb59124",
+      "result_id": "227e7e16-8d98-48e8-9a5e-bc5c175fbaaf"
+    },
+    {
+      "claim_id": "b0a597af-82d0-47b3-a5c2-6e5ea528219a",
+      "result_id": "227e7e16-8d98-48e8-9a5e-bc5c175fbaaf"
+    },
+    {
+      "claim_id": "821a15d1-4ea7-484e-a5e0-d0201cd8db46",
+      "result_id": "227e7e16-8d98-48e8-9a5e-bc5c175fbaaf"
+    },
+    {
+      "claim_id": "fd9d950d-3252-421f-a2c4-bef345550e85",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "93a1cf95-5439-450b-ad7a-95008b1dd79e",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "366b3861-33f3-41fc-99f7-f2b94799a8f8",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "28c9df34-4770-4318-98d3-be1bf616c05f",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "7a78a7a8-4bd5-478d-a2c9-ac82ab35c354",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "ab9deac7-61ae-4274-b33b-b9b0f4baf0e3",
+      "result_id": "6806e2e4-0b6b-4c4e-a965-fe45d8e2a30c"
+    },
+    {
+      "claim_id": "b525678a-13b9-4972-bd70-b73d2ad7cb63",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "022a6d87-4e16-4eee-8dd2-35760ffc6896",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "cd5a0685-5bac-4c81-8e92-5fd4a119d88a",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "45b659f5-bf4a-43cb-9bc5-7fb5f6fe8892",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "26de3ec3-6bef-491f-8d6c-4b25146a68f1",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "b8a8358e-2a2b-4392-8822-1b1c772326ed",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "71cb08df-30fb-4b47-8c9c-5fdf7b411b52",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "0475ef7b-309e-4b14-acb2-591b8f68db54",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "36eaa2fc-32c0-4d52-9064-ff6d8a7e13cd",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "7abf65bc-53f0-4e1f-8999-7c0b3dadead0",
+      "result_id": "8952f87c-33b1-43c7-aac8-08b046be42f0"
+    },
+    {
+      "claim_id": "01eadd43-571e-4012-ac58-da6e91584821",
+      "result_id": "92af5823-9747-48b5-b942-bc9c4e8273ec"
+    },
+    {
+      "claim_id": "6782a33b-19fb-4aac-bdc7-652f9552f413",
+      "result_id": "92af5823-9747-48b5-b942-bc9c4e8273ec"
+    },
+    {
+      "claim_id": "1bc46f0c-aa8d-46ab-b59c-8fe2e52aa0a6",
+      "result_id": "92af5823-9747-48b5-b942-bc9c4e8273ec"
+    },
+    {
+      "claim_id": "72e78211-e63c-4950-9305-8007fbb202f1",
+      "result_id": "92af5823-9747-48b5-b942-bc9c4e8273ec"
+    },
+    {
+      "claim_id": "cd90ef8e-9928-4575-9178-0b2d9c320e46",
+      "result_id": "92af5823-9747-48b5-b942-bc9c4e8273ec"
+    },
+    {
+      "claim_id": "33222970-c42f-4888-823a-cf5b4f960a25",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "d5d6931e-2295-4318-9c7c-794ab326cadb",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "7d40ace0-621b-4eee-bce1-578969f50e98",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "1bd7e45b-1125-4f4b-abc8-264b02721d02",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "bf20a758-4504-4afb-bf07-24f35cc8a602",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "21443ffb-c2e4-40ab-b3a0-99ac2ca8923c",
+      "result_id": "c552e961-a467-47b5-8361-3713591325c3"
+    },
+    {
+      "claim_id": "ed7e9998-2b95-4e37-8145-181e640da2c0",
+      "result_id": "acabf82b-d407-49bb-a32a-298ab731503e"
+    },
+    {
+      "claim_id": "437bcd37-dd93-4eb6-8e7b-005112f572aa",
+      "result_id": "acabf82b-d407-49bb-a32a-298ab731503e"
+    },
+    {
+      "claim_id": "56363a6d-b9a2-4f73-9f4e-0a6900da931c",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "bb288269-460a-411c-b1f8-cdf06fe60903",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "fc5ea5ad-795c-4ec0-8569-ccfd2c5bc68c",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "46652c6f-4616-444a-b536-2bd6e6b9d083",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "c2fb9ecf-dc00-4ecd-8961-6dbe51d51d37",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "757e6e84-16dd-4488-bfce-d6efb635e3cf",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "187d97e7-40e7-441f-a04e-1ca617a253ea",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "218bd8b2-33ba-4482-a315-d0bfc1624b56",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "29eca6e7-b911-4666-93e1-cf0c95e673f8",
+      "result_id": "98e9b852-41f9-467b-80cc-48cc3e21ea2d"
+    },
+    {
+      "claim_id": "96f3edf4-b439-45bc-b7c5-f6186dfba405",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "fdbb5642-3fbe-417c-9c4a-2fd6f6cc0d72",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "eaea314c-872d-4f9b-885f-6613e33d349b",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "0745198f-86dc-435a-bbef-16daa5f62dbd",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "c5f04ad1-0314-4eee-a6af-d0729d538d6f",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "65be2287-e55f-46b8-800a-ac216230c4e7",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "a1e5f577-04b7-4b47-b777-0347cb9486f1",
+      "result_id": "7bd39a2c-a1ba-4408-a5a2-4bf0098f2d28"
+    },
+    {
+      "claim_id": "654f8bd0-3d61-48e5-8eee-ec137c140e0f",
+      "result_id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b"
+    },
+    {
+      "claim_id": "2c02505c-5ac3-48e9-ad05-46cfbf985f8c",
+      "result_id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b"
+    },
+    {
+      "claim_id": "a5f70869-7634-4ad3-aba3-055d70fdc80e",
+      "result_id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b"
+    },
+    {
+      "claim_id": "f1a61ed8-c151-43f1-afef-5159deba37c3",
+      "result_id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b"
+    },
+    {
+      "claim_id": "5a7f83b0-ae30-43f6-89c9-989986e1ee8d",
+      "result_id": "22eb3c05-48b8-48a9-9ee7-33d5ef0e605b"
+    },
+    {
+      "claim_id": "e25f81e1-fe41-487f-8c26-f4e0cbf7f138",
+      "result_id": "23e61af5-41b5-4f29-a891-224707eae8df"
+    },
+    {
+      "claim_id": "23ee77ad-f9eb-43c7-9fc4-11c6522b5e71",
+      "result_id": "23e61af5-41b5-4f29-a891-224707eae8df"
+    },
+    {
+      "claim_id": "b1c7c4cb-ccca-42e6-affb-db474cc0bb0b",
+      "result_id": "23e61af5-41b5-4f29-a891-224707eae8df"
+    },
+    {
+      "claim_id": "635042a4-222e-42e0-b885-f9e7a4e89121",
+      "result_id": "45cfc2c4-4c64-4ac8-891e-ed121c64e612"
+    },
+    {
+      "claim_id": "6a7e9031-86e1-4a51-838f-becb148e2af2",
+      "result_id": "45cfc2c4-4c64-4ac8-891e-ed121c64e612"
+    },
+    {
+      "claim_id": "b74abd73-50a3-466d-894d-da6f6765bace",
+      "result_id": "401c320a-905e-4194-aabf-e196446b342f"
+    },
+    {
+      "claim_id": "473560c3-d7fe-405c-9c92-8302f22120a2",
+      "result_id": "401c320a-905e-4194-aabf-e196446b342f"
+    },
+    {
+      "claim_id": "03b308f2-b8f5-4ef5-9c59-f6cef6c1e72d",
+      "result_id": "401c320a-905e-4194-aabf-e196446b342f"
+    },
+    {
+      "claim_id": "5e3783dd-a73e-46b5-a523-22199679e7fe",
+      "result_id": "401c320a-905e-4194-aabf-e196446b342f"
+    },
+    {
+      "claim_id": "ba30718c-4748-41c1-9264-ef7dcf46d4fc",
+      "result_id": "401c320a-905e-4194-aabf-e196446b342f"
+    },
+    {
+      "claim_id": "c884caee-1b39-4959-8611-8581dcf6356d",
+      "result_id": "ec3e18f7-c5da-424d-8e21-1b3b28600679"
+    },
+    {
+      "claim_id": "40975256-8198-406f-ada3-c90cdeb2a4e2",
+      "result_id": "ec3e18f7-c5da-424d-8e21-1b3b28600679"
+    },
+    {
+      "claim_id": "86e8eb3c-406c-4f6e-9e7d-a0baef294a29",
+      "result_id": "a2b21631-4ee7-4385-9ca4-14dc4e2c96f2"
+    },
+    {
+      "claim_id": "cc70d283-3928-46c6-9051-ee7346f87178",
+      "result_id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0"
+    },
+    {
+      "claim_id": "be62f563-a970-40f8-a983-6ab8a37287c0",
+      "result_id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0"
+    },
+    {
+      "claim_id": "0d070793-2568-4bb5-914e-b9d8331349bd",
+      "result_id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0"
+    },
+    {
+      "claim_id": "86f92d46-bff6-448d-ad6d-41735c625592",
+      "result_id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0"
+    },
+    {
+      "claim_id": "8c3b0ca9-8985-4296-b50c-367fa91459f3",
+      "result_id": "f8a140ca-a5ce-46fe-af04-b6744f7c17c0"
+    },
+    {
+      "claim_id": "2b9455b5-8df7-49f6-9e35-42c7ee4c0091",
+      "result_id": "d9f1236a-0150-4d8f-82ba-a05effdda6b5"
+    },
+    {
+      "claim_id": "c38ca06a-fdaf-48cf-ba9a-0306f95ac969",
+      "result_id": "4900c4b4-3354-400b-8728-e6521ee5dba3"
+    }
+  ],
+  "comparisons": []
+}

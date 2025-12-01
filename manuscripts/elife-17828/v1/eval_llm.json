@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "ACP1 is essential for cell viability in multiple yeast strain backgrounds and other eukaryotes, while genes for lipoic acid biosynthesis are not essential. S. cerevisiae lacks Complex I, suggesting ACP has an unknown essential function beyond its known roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the essentiality of ACP1 through genetic deletion experiments (C1, Figure 1A) and cite prior work in other organisms (C3-C4). The non-essentiality of lipoic acid genes (C2) and absence of Complex I in yeast (C5) are well-documented, supporting the rationale for investigating alternative ACP functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Acp1 physically interacts with the ISU complex subunits Nfs1, Isd11, and Isu1, forming a stable complex. This interaction is evolutionarily conserved from yeast to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C11-C13 are supported by co-purification and co-immunoprecipitation experiments (Figure 1B), with BN-PAGE demonstrating intact complex formation. The weaker Isu1 interaction (C12) is noted. Conservation in mammals (C14) is supported by proteomics data. C15 appropriately synthesizes these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Depletion of Acp1 causes growth defects, loss of FeS-containing respiratory complex subunits (Sdh2, Rip1), accumulation of Complex III assembly intermediates, reduced aconitase activity, and induction of iron regulon genes, demonstrating that Acp1 is essential for FeS biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C36 present a comprehensive phenotypic characterization of Acp1 depletion supported by multiple experimental approaches (Figures 2A-C, supplements). The specific stalling of Complex III assembly at Rip1 incorporation (C24-C25) and normal mitochondrial translation (C26-C27) provide mechanistic insight. Effects on both mitochondrial and cytosolic FeS enzymes (C28, C33-C35) support the conclusion (C36).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "In the absence of Acp1, the Nfs1-Isd11 complex is destabilized and the remaining Nfs1 and Isd11 proteins form insoluble aggregates, likely causing loss of cysteine desulfurase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by BN-PAGE and solubility fractionation experiments (Figures 3A-B). The inference about loss of desulfurase activity (C40) is reasonable given the aggregation and destabilization, though direct enzyme activity was not measured. The conclusion is appropriately qualified as \"most likely.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ACP depletion in mammalian C2C12 cells destabilizes the mammalian FeS biogenesis machinery (NFS1, ISD11, ISCU2), demonstrating an evolutionarily conserved role for ACP in stabilizing the ISU complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 extend the yeast findings to mammals using siRNA knockdown (Figure 3C). While BN-PAGE could not detect the mammalian complex, SDS-PAGE shows clear destabilization of individual subunits. C42 correctly identifies ISCU2 as the mammalian Isu1 ortholog. The evolutionary conservation conclusion (C43) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Overexpression of the iron transporter Mrs3 or the scaffold protein Isu1 partially rescues FeS biogenesis defects in Acp1-depleted cells without restoring lipoic acid biosynthesis. Frataxin (Yfh1) overexpression has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 describe genetic suppression experiments (Figures 3D, supplements). Mrs3 overexpression robustly stabilizes the complex and restores FeS enzyme activities (C44, C46-C47), while Isu1 has modest effects (C48-C49) and Yfh1 none (C50). The lack of lipoic acid restoration (C45) is important for mechanistic interpretation. The speculation about Fe(II) occupancy (C51) is reasonable but unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The PPT2 gene encoding 4-PP transferase is not essential, but ppt2\u0394 cells show no growth on glycerol and impaired growth on glucose, potentially relating to FeS biogenesis defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by growth assays (Figures 1\u2014figure supplement 2C, 4\u2014figure supplement 1A). The speculation that glucose growth defects relate to FeS biogenesis (C56) is reasonable given subsequent experiments but remains speculative at this point in the narrative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The Acp1S82A mutant, which cannot be modified with 4-PP, only modestly restores Nfs1-Isd11 complex levels but is sufficient for viability with impaired growth and partial aconitase activity recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 test the role of the 4-PP modification using a serine-to-alanine mutation (Figure 4A-B). The modest rescue of complex stability (C59) contrasts with maintained viability (C60), leading to the reasonable inference (C62) that the complex is severely destabilized but not completely absent. The data support that 4-PP is important but not absolutely required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In ppt2\u0394 cells lacking 4-PP transferase, the Nfs1-Isd11 complex is severely depleted, FeS enzyme activities are reduced, and Acp1-Nfs1 interaction is impaired, demonstrating that 4-PP plays an important role in complex interaction and FeS biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by biochemical analyses of ppt2\u0394 cells (Figures 4C-E, supplement 1C). The complex depletion (C63), reduced enzyme activities (C64), maintained Acp1 levels (C65), and impaired Acp1-Nfs1 interaction (C66) collectively support the conclusions about 4-PP's role (C67-C68). The inference is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "lip5\u0394 cells, which cannot synthesize lipoic acid but retain Acp1-dependent fatty acid synthesis, maintain normal Nfs1-Isd11 complex levels and FeS enzyme activities, demonstrating that FeS biogenesis defects in apo-Acp1 cells are not due to lipoic acid deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 present a critical control experiment (Figures 4C-E) showing that lipoic acid deficiency alone does not cause FeS biogenesis defects. This strongly supports the conclusion (C73) that the acyl chain itself, not its lipoic acid product, is important for FeS biogenesis. The logic is sound and the control is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C96"
+    ],
+    "result": "ACP functions as a stable ISU complex subunit that stabilizes the complex using its 4-PP-conjugated acyl chain. While the acyl chain is not absolutely required, ACP may provide additional regulatory functions and coordinate mitochondrial fatty acid synthesis with FeS biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C96 synthesize the major findings. C74 is well-supported by the interaction and stabilization data. C75 is supported by the viability of Acp1S82A-expressing cells. C76-C77 and C96 are appropriately speculative about regulatory coordination, representing reasonable hypotheses for future investigation rather than proven conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C16",
+      "C17",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C42",
+      "C52",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Background claims establish the known functions of the ISU complex in FeS biogenesis, ACP in fatty acid synthesis, and the biochemical properties of these pathways based on prior literature and established knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C7-C10, C16-C17, C29-C32, C42, C52, C78-C92) provide essential background information supported by citations or established knowledge. They are appropriately used to contextualize the novel findings. The claims about prior work appear accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Similar destabilization of respiratory complexes occurs in cells depleted for Nfs1 and Isu1, as reported in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 cites prior work showing similar phenotypes in Nfs1/Isu1-depleted cells, providing important context that the Acp1 depletion phenotype resembles loss of other ISU complex components. The citations support this comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Summary claims state that ACP is a stable, essential ISU complex subunit whose absence destabilizes the complex and depletes cellular FeS, with the 4-PP-conjugated acyl chain supporting maximal cysteine desulfurase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are summary statements in the abstract that accurately reflect the experimental findings presented in the manuscript. They are well-supported by the collective data from interaction studies, depletion experiments, and 4-PP modification analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C56",
+      "C76",
+      "C77"
+    ],
+    "result": "Speculative claims propose that elevated Mrs3 may increase Fe(II) occupancy of Isu1, glucose growth defects in ppt2\u0394 may relate to FeS biogenesis, and ACP may provide regulatory functions coordinating fatty acid synthesis with FeS biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51, C56, C76-C77 are explicitly speculative hypotheses for future investigation. While reasonable based on the data, they lack direct experimental support. The authors appropriately qualify these as speculation (\"may,\" \"intriguing possibility\"), but they remain unproven.",
+    "result_type": "MINOR"
+  }
+]

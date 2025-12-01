@@ -1,0 +1,2316 @@
+{
+  "submission": {
+    "id": "8fbb76e5-8c98-4109-8779-597811f6f4e7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:38:46.888803Z",
+    "updated_at": "2025-11-30T23:38:46.888803Z"
+  },
+  "content": [
+    {
+      "id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "submission_id": "8fbb76e5-8c98-4109-8779-597811f6f4e7",
+      "content_type": "manuscript",
+      "content_text": "# Role of D-aminoacyl-tRNA deacylase beyond chiral proofreading as a cellular defense against glycine mischarging by AlaRS\n\n## Authors\n\n- Komal Ishwar Pawar<sup>1</sup> ([ORCID: 0000-0002-1968-9851](https://orcid.org/0000-0002-1968-9851))\n- Katta Suma<sup>1</sup>\n- Ayshwarya Seenivasan<sup>1</sup>\n- Santosh Kumar Kuncha<sup>1</sup>\n- Satya Brata Routh<sup>1</sup>\n- Shobha P Kruparani<sup>1</sup>\n- Rajan Sankaranarayanan<sup>1</sup> ([ORCID: 0000-0003-4524-9953](https://orcid.org/0000-0003-4524-9953)) \u2020\n\n### Affiliations\n\n1. CSIR\u2013Centre for Cellular and Molecular Biology Hyderabad India\n\n\u2020 Corresponding author\n\n## Abstract\n\nStrict L-chiral rejection through Gly-cisPro motif during chiral proofreading underlies the inability of D-aminoacyl-tRNA deacylase (DTD) to discriminate between D-amino acids and achiral glycine. The consequent Gly-tRNAGly \u2018misediting paradox\u2019 is resolved by EF-Tu in the cell. Here, we show that DTD\u2019s active site architecture can efficiently edit mischarged Gly-tRNAAla species four orders of magnitude more efficiently than even AlaRS, the only ubiquitous cellular checkpoint known for clearing the error. Also, DTD knockout in AlaRS editing-defective background causes pronounced toxicity in Escherichia coli even at low-glycine levels which is alleviated by alanine supplementation. We further demonstrate that DTD positively selects the universally invariant tRNAAla-specific G3\u2022U70. Moreover, DTD\u2019s activity on non-cognate Gly-tRNAAla is conserved across all bacteria and eukaryotes, suggesting DTD\u2019s key cellular role as a glycine deacylator. Our study thus reveals a hitherto unknown function of DTD in cracking the universal mechanistic dilemma encountered by AlaRS, and its physiological importance.\n\n## Introduction\n\nD-aminoacyl-tRNA deacylase (DTD) is a key factor that keeps chiral errors away from the translational machinery by allowing only L-amino acids to form proteins and has therefore been implicated in perpetuation of homochirality in the protein world (Calendar and Berg, 1967; Soutourina et al., 1999, 2000). The design principle by which this remarkable configurational specificity is achieved by DTD involves only strict L-chiral rejection, rather than D-chiral selection. An invariant cross-subunit Gly-cisPro motif forms the structural and mechanistic basis for DTD\u2019s enantioselection (Ahmad et al., 2013). Thus, the architecture of DTD\u2019s chiral proofreading site is such that it cannot prevent misediting of achiral glycine charged on tRNAGly and seems to have an inherent flaw. The glycine \u2018misediting paradox\u2019 is, however, effectively resolved through protection of the cognate achiral substrate by elongation factor thermo unstable (EF-Tu) (Routh et al., 2016).\n\nWhile occasional chiral errors that occur during aminoacylation are cleared by DTD to ensure the accuracy of aminoacyl-tRNAs present in the cellular pool, a major role is played by editing functions associated with about half of the 20 aminoacyl-tRNA synthetases (aaRSs) to rectify the incorrect pairing of a similar non-cognate L-amino acid with a tRNA (Guo and Schimmel, 2012; Ibba and Soll, 2000). These aaRSs can edit the non-cognate amino acid at the aminoacylation site itself after the amino acid has been activated (i.e. formation of aminoacyl-AMP using ATP as a substrate) but prior to its transfer to the tRNA (pre-transfer editing). Alternatively, proofreading can happen at a distinct editing site after the activated non-cognate amino acid has been esterified with the tRNA (post-transfer editing). These proofreading processes are so crucial that even mild defects can lead to adverse cellular outcomes like cell growth retardation, neurodegeneration, cardiomyopathy and cell death (Bacher et al., 2005; Bullwinkle et al., 2014; Karkhanis et al., 2007; Korencic et al., 2004; Lee et al., 2006; Liu et al., 2014; Lu et al., 2014; Moghal et al., 2016; Nangle et al., 2002; Roy et al., 2004), although a compromise in editing can also be beneficial as it helps the organism to tide over stress conditions (Moghal et al., 2014).\n\nBeing comparatively small and similar to the cognate alanine, glycine and serine are misactivated by alanyl-tRNA synthetase (AlaRS) at significantly high frequencies of 1/240 and 1/500, respectively, relative to alanine (Tsui and Fersht, 1981) (Figure 1). However, these misactivation rates are much higher than the overall error rates of ~10\u22124\u201310\u22123 observed during protein biosynthesis (Ogle and Ramakrishnan, 2005). Once (mis)activated, these non-cognate amino acids are mischarged on tRNAAla by AlaRS. This creates a unique mechanistic challenge for the editing domain of AlaRS, which has to specifically remove two non-cognate amino acids\u2014the larger serine and the smaller glycine\u2014attached to tRNAAla without acting on the cognate alanine, which is intermediate in size between serine and glycine. This 3.5-billion-year-old double-discrimination problem is shown to be unavoidable for AlaRS in all forms of life (Guo et al., 2009). It has also been shown that serine mischarging on tRNAAla is detrimental to the cell and even a mild deficiency in the proofreading activity of AlaRS leads to cell death and severe neuropathologies in mouse (Lee et al., 2006; Liu et al., 2014). The problem is so severe that several standalone trans-editing modules (collectively called AlaXs), which are homologous to AlaRS cis-editing domain, have come into being. However, these trans-editing factors are not ubiquitously present; their distribution is more in archaea than in eukaryotes and bacteria (Guo and Schimmel, 2012). Surprisingly, only archaeal AlaXs are known to clear both Ser-tRNAAla and Gly-tRNAAla (Ahel et al., 2003); eukaryotic AlaXs have been shown to act as cellular redundancies to edit only Ser-tRNAAla (Guo et al., 2009), whereas biochemical activity of bacterial AlaXs is yet to be probed (Figure 1). These findings corroborated the notion that only serine mischarging by AlaRS poses the major threat to the cell (Guo et al., 2009; Lee et al., 2006; Liu et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig1-v2.jpg)\n\n**Figure 1.:** AlaRS activates and charges alanine (A) to form cognate Ala-tRNAAla which is routed for protein synthesis. In this process, AlaRS also misactivates glycine (G) and serine (S) at frequencies of 1 per 240 alanine and 1 per 500 alanine, respectively (Tsui and Fersht, 1981). The two non-cognate amino acids are then charged on tRNAAla to produce Gly-tRNAAla and Ser-tRNAAla species, with glycine mischarging being nearly twice that of serine. Since AlaRS does not distinguish much between Gly-tRNAAla and Ser-tRNAAla while clearing the two, higher levels of Gly-tRNAAla might accumulate in the cell. However, there are additional free-standing trans-editing factors called AlaX (found in all domains of life but not in all organisms), which are known to edit mainly Ser-tRNAAla. This leads to a fundamental question as to how the problem of Gly-tRNAAla editing is solved in the cellular context.\n\nIn the current study, we show that there is significant glycine mischarging by AlaRS in the presence of EF-Tu which can be equally pernicious as serine mischarging. We demonstrate that DTD plays an active and crucial role in preventing the accumulation of mischarged Gly-tRNAAla species. A cell lacking DTD in AlaRS editing-defective background displays pronounced toxicity toward even low levels of glycine which is, nevertheless, alleviated by alanine supplementation. Our data also indicate that DTD has selectivity for the G3\u2022U70 wobble base pair that is unique to tRNAAla, suggesting that in the primordial scenario, DTD could have been recruited primarily as a glycine-removing factor. Our study thus brings to the fore three important aspects of translational fidelity, which were underappreciated or unknown so far. Firstly, glycine, like serine, can be toxic and deleterious to the cell under conditions wherein the cell is deficient in disposing of the mischarged Gly-tRNAAla species. Secondly, how the design of the active site of DTD, notwithstanding its unwarranted activity on Gly-tRNAGly, is used to efficiently decouple glycine mischarged on tRNAAla despite the presence of EF-Tu, thereby fortifying translational fidelity. Thirdly, there is a positive selection of the element(s) of tRNAAla by DTD, indicating for the first time the role of tRNA elements in modulating DTD\u2019s activity.\n\n## Results\n\n### Mischarging by AlaRS leads to significant accumulation of Gly-tRNAAla\n\nTo test whether Gly-tRNAAla is accumulated due to mischarging of glycine on tRNAAla by AlaRS, we performed aminoacylation assays in the presence of EF-Tu. In comparison to alanine charging, significant glycine mischarging was observed. Furthermore, the level of glycine mischarging was about twice that of serine mischarging (Figure 2a). This clearly indicated that even with full AlaRS editing potential, there can be significant accumulation of Gly-tRNAAla species in the cell. Moreover, this is in accordance with the twofold higher misactivation rate of glycine by AlaRS when compared to that of serine (Tsui and Fersht, 1981). We then checked the accumulation of Gly-tRNAAla when AlaRS editing was compromised, and it was found to be significantly high, almost equal to the level of Ala-tRNAAla formation (Figure 2\u2014figure supplement 1). To accomplish a compromise in the proofreading activity of AlaRS, a known editing site mutation (viz., C666A) in AlaRS from Escherichia coli was used (Beebe et al., 2003). The above data lead to a couple of fundamental questions: (a) why\u00a0does a defect in the same editing domain that edits both serine and glycine from tRNAAla cause toxicity only due to serine? and (b) how does the cell tackle the problem of glycine mischarging? Furthermore, based on structural considerations and evolutionary substitution patterns of alanine, where it is replaced more by serine than by glycine (Betts et al., 2003), it is to be expected that substitution of glycine for alanine is more detrimental than substitution of serine.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig2-v2.jpg)\n\n**Figure 2.:** (a) Aminoacylation of tRNAAla by EcAlaRS in the presence of activated EF-Tu: L-alanine (green square), L-alanine and 10 pM EcDTD (green triangle), glycine (pink square), glycine and 10 pM EcDTD (pink triangle), L-serine (purple square), L-serine and 10 pM EcDTD (purple triangle). No enzyme control (blue diamonds) reaction had all the components of the reaction (with L-alanine) except for EcAlaRS. (b) Deacylation of Gly-tRNAAla in the presence of unactivated EF-Tu (green diamond), activated EF-Tu (blue diamond), 5 pM EcDTD and unactivated EF-Tu (purple square), 5 pM EcDTD and activated EF-Tu (orange square). Error bars indicate one standard deviation from the mean of triplicate readings.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Aminoacylation of tRNAAla by EcAlaRS C666A in the presence of activated EF-Tu: L-alanine (green square), glycine (pink square), L-serine (purple square).\n\n### DTD effectively decouples glycine mischarged on tRNAAla\n\nThe leads for the solution to this puzzle came when, surprisingly, we found that the activity of DTD on Gly-tRNAAla was\u00a0~1000-fold more than that on Gly-tRNAGly (as discussed later). Moreover, although the ratio of activated EF-Tu to DTD in our assays (viz.,\u00a0~200 nM to 5 or 10 pM) was much higher than the cellular ratio (viz.,\u00a0~200:1) (Li et al., 2014), DTD could easily edit Gly-tRNAAla in the presence of EF-Tu (Figure 2b). This was unlike the case of Gly-tRNAGly, wherein EF-Tu showed significant protection of the cognate achiral substrate from DTD (Routh et al., 2016). The deacylation of Gly-tRNAAla by DTD was so striking that\u00a0~20,000 times more AlaRS (which is the only universally occurring editing factor for Gly-tRNAAla) as compared to DTD was required for similar kind of deacylation under identical conditions (Figures 2b and 3b). In addition, unlike DTD, AlaRS showed a significant decrease in deacylation activity on Gly-tRNAAla when tested in the presence of EF-Tu (Figure 3a,b). Moreover, our assays demonstrated that DTD is not only efficient in eliminating Gly-tRNAAla despite the presence of EF-Tu (Figure 2b) but can also very effectively prevent the accumulation of Gly-tRNAAla during aminoacylation by AlaRS in the presence of EF-Tu (Figure 2a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig3-v2.jpg)\n\n**Figure 3.:** (a) Deacylation of Gly-tRNAAla in the presence of unactivated EF-Tu: buffer (blue diamond), 10 nM EcAlaRS (red circle), 50 nM EcAlaRS (green circle), 100 nM EcAlaRS (purple circle), 500 nM EcAlaRS (pink circle). (b) Deacylation of Gly-tRNAAla in the presence of activated EF-Tu: buffer (blue diamond), 10 nM EcAlaRS (red square), 50 nM EcAlaRS (green square), 100 nM EcAlaRS (purple square), 500 nM EcAlaRS (pink square). (c) Deacylation of Gly-tRNAAla by EcDTD and increasing concentration of EcAlaRS: buffer (blue diamond), 10 pM EcDTD (orange diamond), 10 pM EcDTD and 10 nM EcAlaRS (red triangle), 10 pM EcDTD and 50 nM EcAlaRS (green triangle), 10 pM EcDTD and 100 nM EcAlaRS (purple triangle), 10 pM EcDTD and 500 nM EcAlaRS (pink triangle). Error bars indicate one standard deviation from the mean of triplicate readings.\n\n### DTD has significantly higher activity than AlaRS for clearing mischarged Gly-tRNAAla\n\nConsidering the high activity of DTD on Gly-tRNAAla, we probed the relative efficiencies of DTD and AlaRS in editing Gly-tRNAAla. To this end, we performed competition assays involving AlaRS, DTD and EF-Tu. In both aminoacylation and deacylation conditions, we found that DTD deacylated Gly-tRNAAla even in the presence of EF-Tu and AlaRS at just 10 pM concentration of DTD (Figures 2a and 3c). Considering the cellular ratio of DTD to AlaRS (viz,\u00a0~1:5) (Li et al., 2014) and their relative activities on Gly-tRNAAla, it is evident that when DTD is present, it will eliminate Gly-tRNAAla more efficiently than AlaRS if the non-cognate achiral substrate is released in solution from the synthetase. In this context, it is important to note that compared to Class I synthetases, enzymes belonging to Class II, which include AlaRS, have been shown to have faster product release rates (Zhang et al., 2006). Hence, Class II aaRSs require resampling of the released mischarged product to edit the cytosolic pool of mischarged tRNAs (Ling et al., 2009). This makes even more sense as regards AlaRS, since our structural analysis of AlaRS in complex with tRNAAla (PDB id: 3WQY) suggests that it would be very difficult for the CCA-arm at the 3\u2032 end of tRNAAla harboring the non-cognate amino acid to flip from the aminoacylation site to the editing site without undergoing major conformational changes (Naganuma et al., 2014). Such a dynamics would naturally facilitate a faster release of the misacylated product in solution, implying that a significant fraction of Gly-tRNAAla and Ser-tRNAAla is released from AlaRS prior to their recapture for proofreading by the cis-editing domain. Moreover, our own data, in which we observed significant accumulation of Gly-tRNAAla in the presence of EF-Tu (Figure 2a), corroborate the aforementioned aspects of Class II synthetases in general and AlaRS in particular. Overall, the above data suggest that the problem of glycine mischarging by AlaRS would have been so detrimental that a highly efficient factor like DTD was required to be employed for this function in addition to AlaRS editing domain.\n\n### Editing-defective AlaRS and DTD knockout in E. coli\n\nEarlier in\u00a0vivo studies had shown that AlaRS editing defect causes glycine toxicity only at very high levels of glycine supplementation (80 mM) as opposed to serine which causes toxicity at significantly lower levels (2.5 mM) (Beebe et al., 2003). It is worth noting that these studies were carried out in strains harboring DTD, hence explaining the need for supplementation with more glycine to show toxicity. To check if the absence of DTD makes E. coli susceptible to glycine, we generated an E. coli strain in which dtd (the gene encoding DTD) was knocked out in the background of editing-defective AlaRS. To create a strain that was completely devoid of AlaRS editing activity, the genomic copy of AlaRS gene (alaS) was knocked out and a triple-mutant AlaRS (viz., T567F/S587W/C666F) was expressed from a plasmid. The editing site mutations were designed on the basis of a structural (homology) model of E. coli AlaRS cis-editing domain that was generated using the structure of Archaeoglobus fulgidus AlaRS (PDB id: 2ZTG) as a template. This model was then superimposed on Pyrococcus horikoshii AlaX complexed with serine (PDB id: 1WNU) (the best substrate-mimicking complex for AlaRS and AlaX available so far) (Sokabe et al., 2005). Three residues in the proposed editing site (Beebe et al., 2003; Sokabe et al., 2005) were supplanted by bulkier residues to occlude the pocket and prevent substrate binding (Figure 4a,b). The triple-mutant was found to be inactive on both Ser-tRNAAla and Gly-tRNAAla even when the protein concentration was increased to 1500-fold that of wild-type AlaRS (Figure 4c,d). It is worth mentioning here that the previously known editing-defective mutants of AlaRS (C666A and C666A/Q584H) (Beebe et al., 2003), when checked for deacylation activity on both Ser-tRNAAla and Gly-tRNAAla, were found to show significant activity at just 10-fold higher concentration of the enzyme (Figure 4c,d). Thus, to completely abrogate AlaRS editing activity and to see the effect of editing from only DTD, we chose to use AlaRS triple-mutant for our cell-based toxicity studies.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig4-v2.jpg)\n\n**Figure 4.:** Homology model of E. coli AlaRS depicting serine (green sticks/spheres) in the editing site. E. coli AlaRS cis-editing domain was modeled using A. fulgidus AlaRS (PDB id: 2ZTG) as a template, whereas the position and orientation of serine in the model corresponds to that observed in serine-bound P. horikoshii AlaX structure (PDB id: 1WNU). (a) In the wild-type enzyme, residues selected for mutagenesis are represented as megenta sticks/spheres, showing an open pocket for substrate binding. (b) In AlaRS T567F/S587W/C666F, the mutated bulkier residues are depicted as blue sticks/spheres, showing occlusion of the pocket to prevent substrate binding. (c) Deacylation of Ser-tRNAAla by buffer (blue diamond), 50 nM EcAlaRS (pink circle), 500 nM EcAlaRS C666A (green circle), 500 nM EcAlaRS C666A/Q584H (purple circle), 75 \u00b5M EcAlaRS T567F/S587W/C666F (orange circle). (d) Deacylation of Gly-tRNAAla by buffer (blue diamond), 50 nM EcAlaRS (pink square), 500 nM EcAlaRS C666A (green square), 500 nM EcAlaRS C666A/Q584H (purple square), 75 \u00b5M EcAlaRS T567F/S587W/C666F (orange square).\n\n### DTD prevents glycine toxicity in E. coli\n\nCellular toxicity studies using spot dilution assays and growth curve analysis with the DTD knockout strain in the background of AlaRS editing defect showed some toxicity even without any amino acid supplementation, and the toxicity increased with glycine supplementation as low as 3 mM. At 10 mM of glycine supplementation, the cells showed severe growth defect (Figure 5a). To check whether this was specifically due to mischarging caused by AlaRS, toxicity experiments were carried out in the presence of alanine, since the latter is expected to compete for the AlaRS aminoacylation site during charging of tRNAAla. It was observed that alanine supplementation completely recovered the toxicity caused by glycine and rescued the growth completely (Figure 5b,c,d). Moreover, to rule out any non-specific effects due to amino acid supplementation, histidine was used as a negative control, and it was found that it failed to rescue the cells from glycine toxicity (Figure 5c,d). Furthermore, DTD was found to be totally inactive on Ser-tRNAAla in our biochemical assays which confirmed that the toxicity observed in the DTD-lacking cells in the background of AlaRS editing defect was not due to serine mischarging on tRNAAla by AlaRS (Figure 5\u2014figure supplement 1). The above observation is expected since it has been shown earlier that DTD\u2019s chiral proofreading site rejects even L-alanine, the smallest L-chiral substrate (Routh et al., 2016). Taken together, these experiments established that DTD acts as a key cellular factor that edits glycine mischarged on tRNAAla by AlaRS. However, no toxicity of glycine supplementation was observed in E. coli MG1655 \u2206dtd strain in the background of wild-type AlaRS (Figure 5\u2014figure supplement 2). This indicates that under normal growth conditions, AlaRS editing is sufficient for the cell to survive. The errors produced because of the absence of DTD are possibly tolerated by E. coli under laboratory conditions, as has been noted in several other cases of editing function of aaRSs (Reynolds et al., 2010a, 2010b). The real implications of editing defects are only recently being appreciated in some specific growth conditions like oxidative stress, oxygen deprivation, starvation/nutrient limiting conditions etc. (Bullwinkle et al., 2014; Cvetesic et al., 2014; Kermgard et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig5-v2.jpg)\n\n**Figure 5.:** Spot dilution assay of E. coli MG1655 \u2206alaS/para: : alaS-T567F, S587W, C666F compared with that of E. coli MG1655 \u2206dtd, \u2206alaS/para:: alaS-T567F, S587W, C666F (a) in the presence of no amino acid, 3 mM glycine, or 10 mM glycine, and (b) in the presence of 1 mM L-alanine, or 10 mM glycine and 1 mM L-alanine. (c) Growth curve of E. coli MG1655 \u2206alaS/para: : alaS-T567F, S587W, C666F supplemented with no amino acid (blue diamond), 3 mM glycine (orange triangle), 10 mM glycine (red triangle), 30 mM glycine (black triangle), 30 mM glycine and 10 mM L-alanine (green triangle), 30 mM glycine and 10 mM L-histidine (cyan triangle) (d) Growth curve of E. coli MG1655 \u2206dtd, \u2206alaS/para: : alaS-T567F, S587W, C666F supplemented with no amino acid (blue diamond), 3 mM glycine (orange circle), 10 mM glycine (red circle), 30 mM glycine (black circle), 30 mM glycine and 10 mM L-alanine (green circle), 30 mM glycine and 10 mM L-histidine (cyan circle).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Deacylation of Ser-tRNAAla by buffer (blue diamond), 50 nM EcDTD (pink circle), 500 nM EcDTD (purple circle), 5 \u00b5M EcDTD (orange circle).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig5-figsupp2-v2.jpg)\n\n### tRNAAla-specific G3\u2022U70 wobble base pair acts as a positive determinant for DTD\n\nSignificantly high (~1000-fold higher) activity of DTD on Gly-tRNAAla when compared to that on Gly-tRNAGly\u00a0(Figure 6d, Figure 6\u2014figure supplement 1) indicated that tRNAAla must have some positive determinants for DTD. Since G3\u2022U70 is unique to and one of the major identity elements of tRNAAla across all life forms (Hou and Schimmel, 1988; 1989; McClain and Foss, 1988; Ripmaster et al., 1995; Shiba et al., 1995), we envisaged that DTD could be positively selecting tRNAAla using the wobble base pair. To test this hypothesis, we transplanted G3\u2022U70 at the same position in tRNAGly. We found that DTD had more than 10-fold increased activity on Gly-tRNAGly harboring G3\u2022U70 as compared to the wild-type achiral cognate substrate (Figure 6a,c). To strengthen this hypothesis, we substituted the G3\u2022C70 in the wild-type Gly-tRNAGly with the other Watson-Crick base pair, that\u00a0is A3\u2022U70. This substitution did not cause any increase in the activity of DTD (Figure 6b). This clearly suggests that the G3\u2022U70 wobble base pair, which is a universally conserved feature of tRNAAla, acts as a positive determinant for DTD. It also suggests the existence of other features in tRNAAla distinct from tRNAGly that accounts for the higher activity of DTD on tRNAAla when compared to tRNAGly, and this aspect requires further exploration. Since DTD is expected to act on all D-aminoacyl-tRNAs, it was assumed that there is no specificity code for its action on tRNAs. The identity determinant\u2013switching experiment resulting in higher activity suggests for the first time an underlying tRNA-based code for DTD action.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig6-v2.jpg)\n\n**Figure 6.:** (a) Deacylation of Gly-tRNAGly by buffer (blue diamond), 5 nM EcDTD (purple square), 50 nM EcDTD (pink circle). (b) Deacylation of Gly-tRNAGly A3\u2022U70 by buffer (blue diamond), 5 nM EcDTD (purple square), 50 nM EcDTD (pink circle). (c) Deacylation of Gly-tRNAGly G3\u2022U70 by buffer (blue diamond), 500 pM EcDTD (green triangle), 5 nM EcDTD (purple square), 50 nM EcDTD (pink circle). (d) Deacylation of Gly-tRNAAla by buffer (blue diamond), 5 pM EcDTD (orange diamond). Error bars indicate one standard deviation from the mean of triplicate readings.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Deacylation of Gly-tRNAGly by buffer (blue diamond), 5 nM EcDTD (brown diamond). Error bars indicate one standard deviation from the mean of triplicate readings.\n\n### DTD is recruited throughout bacteria and eukaryotes for Gly-tRNAAla removal\n\nDTD\u2019s ubiquitous presence in bacteria and eukaryotes prompted us to test whether its role in clearing mischarged Gly-tRNAAla, in addition to its role in proofreading D-aminoacyl-tRNAs, is conserved in these two domains of life. It is important to investigate this aspect because we found significant differences in residues\u2014which are believed to interact with the acceptor stem of tRNA\u2014around the chiral proofreading site of DTD. To this end, we first superimposed crystal structures of DTD from various organisms and manually docked tRNAAla (tRNAAla was taken from PDB id: 3WQY) on the superposed structures. Since DTD is not expected to establish contacts beyond the acceptor stem of tRNA, we took into consideration only those residues of DTD that were within 6 \u00c5 from the 3\u2032-terminal CCA-arm of tRNA (Figure 7\u2014figure supplement 1b), and looked for their conservation/variation using structure-based multiple sequence alignment (Figure 7\u2014figure supplement 1a). Notably, only 7 out of 20 residues in the selected region are invariant across bacterial and eukaryotic DTDs (Figure 7\u2014figure supplement 1).\n\nGiven the significant differences observed in a region around the active site of DTD which is likely to interact with tRNA, it is not unreasonable to anticipate that they may affect DTD\u2019s activity on Gly-tRNAAla. To ascertain this, we tested DTDs from different eukaryotes\u2014Leishmania major (LmDTD), Drosophila melanogaster (DmDTD) and Danio rerio (DrDTD)\u2014spanning the entire spectrum of unicellular, invertebrate and vertebrate species, in addition to DTDs from Plasmodium falciparum (PfDTD) and E. coli (EcDTD). These DTDs were tested on glycine mischarged on both E. coli tRNAAla and D. melanogaster tRNAAla (Figure 7). All these DTDs were found to act effectively on both bacterial and eukaryotic tRNAs at 10 pM of DTD concentration. This indicates that in spite of the cross-species differences in DTD and tRNAAla, DTD\u2019s activity on Gly-tRNAAla is most likely conserved throughout bacteria and eukaryotes.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig7-v2.jpg)\n\n**Figure 7.:** (a) Deacylation of E. coli Gly-tRNAAla by buffer (blue diamond), 10 pM EcDTD (red square), 10 pM PfDTD (green triangle), 10 pM LmDTD (purple cross), 10 pM DmDTD (cyan star), 10 pM DrDTD (orange circle). (b) Deacylation of D. melanogaster Gly-tRNAAla by buffer (blue diamond), 10 pM EcDTD (red square), 10 pM PfDTD (green triangle), 10 pM LmDTD (purple cross), 10 pM DmDTD (cyan star), 10 pM DrDTD (orange circle). Error bars indicate one standard deviation from the mean of triplicate readings.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Structure-based multiple sequence alignment of DTD from different organisms. The residues which are within a distance of 6 \u00c5 from the 3\u2032-terminal CCA-arm of tRNA are marked by green stars, and among these, the residues showing variations are enclosed in green box. Black arrowheads indicate the organisms from which DTDs have been tested biochemically in the current study. (b) Surface model of E. coli DTD (PDB id: 1JKE) with 3\u2032-terminal CCA-arm of tRNA placed in the active site on the basis of D-Tyr3AA from the structure of P. falciparum DTD (PDB id: 4NBI). The residues colored in green show the positions showing variations among different organisms.\n\n## Discussion\n\nThis study provides an unprecedented solution to a fundamental and long-standing puzzle by elucidating a hitherto unknown and physiologically important function of DTD, which was till now implicated only in enforcing homochirality during translation of the genetic code. The discovery of DTD as a key cellular factor for the elimination of Gly-tRNAAla provides an elegant explanation as to why glycine mischarging by AlaRS was not encountered or considered as a cellular hazard in all the previous studies. So far, only serine mischarging on tRNAAla by AlaRS was believed to be the major threat to the cell, since cells harboring editing-defective AlaRS would show toxicity only to low levels of serine but not glycine (Beebe et al., 2003; Lee et al., 2006). However, this observation seemed puzzling for two reasons. Firstly, glycine misactivation by AlaRS is known to occur at about twice the rate of serine misactivation (Tsui and Fersht, 1981). Secondly and more importantly, it is unlikely that a defect in the proofreading domain that edits both serine and glycine would cause toxicity only due to serine but not glycine. Moreover, for a protein\u2019s structure and function, the substitution of glycine for alanine is expectedly more subversive than the substitution of serine for alanine (Betts et al., 2003). Our study thus brings forth the criticality of glycine mischarging problem, which was largely overlooked and underappreciated prior to this work. It also reveals that nature was forced to devise and retain throughout evolution a key checkpoint in the form of DTD that is more efficient than even AlaRS\u2019s proofreading function to tackle this problem (Figure 8).\u00a0However, for E. coli under laboratory conditions, knockout of DTD in AlaRS editing-proficient background did not cause toxicity on glycine supplementation. Very likely, errors caused due to defect in proofreading by DTD knockout are tolerated by E. coli, as noted in several cases of other proofreading deficiencies in E. coli (Reynolds et al ., 2010a, 2010b). Moreover, defects in error correction are known to manifest in toxic effects only in special growth conditions like oxidative stress, oxygen deprivation, starvation etc. (Bullwinkle et al., 2014; Cvetesic et al., 2014; Kermgard et al., 2017).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/24001/elife-24001-fig8-v2.jpg)\n\n**Figure 8.:** In the cell, aminoacylation by aaRSs leads to the formation of different aa-tRNAs, of which L-aa-tRNAs (left extreme) are not acted upon by DTD, while D-aa-tRNAs (right extreme) are effectively decoupled in the presence or absence of EF-Tu, thereby enforcing homochirality. Glycylated tRNAs are acted upon by DTD (centre) but EF-Tu offers protection to the cognate Gly-tRNAGly to prevent its misediting, while the mischarged/non-cognate Gly-tRNAAla is efficiently cleared even in the presence of EF-Tu. Thick connecting arrows indicate the cellular scenario, wherein both DTD and EF-Tu are present.\n\nThe study also highlights the necessity of keeping DTD\u2019s active site design intact during the course of evolution, probably because removal of the mischarged Gly-tRNAAla species from the cellular pool took precedence over DTD\u2019s unwarranted activity on Gly-tRNAGly. Nevertheless, the glycine \u2018misediting paradox\u2019 was effectively resolved by safeguarding the cognate achiral substrate using EF-Tu as well as keeping the cellular levels of DTD low and tightly regulated (Routh et al., 2016). Thus, what seemed to be an apparent flaw in the architecture of DTD\u2019s active site proved to be a necessity. Moreover, the dual activity of DTD on both achiral and D-chiral substrates depicts it as a plausible \u2018connecting link\u2019 or \u2018bridging factor\u2019 between D-chirality\u2013based and the canonical L-chirality\u2013based proofreading during protein biosynthesis (Figure 8). This view gains support from the fact that a DTD-like fold appended to archaeal threonyl-tRNA synthetase (ThrRS) as the N-terminal editing domain (NTD) is specific for editing L-serine mischarged on tRNAThr\u00a0(Ahmad et al., 2015; Dwivedi et al., 2005; Hussain et al., 2006, 2010). It is also worth noting here that the DTD-like fold present in two functional contexts\u2014as NTD in archaea, and as DTD in bacteria and eukaryotes\u2014operates majorly through main chain-mediated contacts for substrate recognition and performs catalysis through RNA, suggesting its primordial origins (Ahmad et al., 2013, 2015; Routh et al., 2016).\n\nGlycine mischarging by AlaRS is inevitable and is a classic case of error made by the aminoacylation site of aaRS, whereas serine mischarging is an offshoot of amino group selection for alanine (Guo et al., 2009). DTD\u2019s significantly higher activity on Gly-tRNAAla as compared to AlaRS suggests that wherever and whenever present, DTD plays the major role in clearing the non-cognate achiral substrate from the cellular pool. This probably helps the cell to overcome the double-discrimination problem that is encountered by AlaRS in all extant organisms. In the primordial scenario, DTD could have been primarily employed as a glycine-removing factor. This activity of DTD could have aided the formation of relatively rigid and stable peptide/protein scaffolds by precluding glycine misincorporation, since the latter would have been detrimental to their stability.\n\nAnother interesting facet of DTD that has emerged from this study is its ability to specifically recognize G3\u2022U70 in the acceptor arm of tRNAAla. This wobble base pair is a unique and major identity determinant of tRNAAla which marks it for both aminoacylation and deacylation by AlaRS from bacteria to humans (Beebe et al., 2008; Hou and Schimmel, 1988; McClain and Foss, 1988). The specificity of AlaRS for G3\u2022U70 is so robust that incorporation of this base pair into other tRNAs or minihelices converts non-alanine-accepting tRNAs to be recognized and charged by AlaRS (Musier-Forsyth and Schimmel, 1999). This primordial mode of recognition was proposed to be an acceptor stem-based genetic code that could have been operational since the pre-tRNA era. The G3\u2022U70-based selection of tRNAAla by DTD clearly indicates towards the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains, which have primarily evolved to remove serine mischarged on tRNAAla (Novoa et al., 2015). Furthermore, modulation of DTD\u2019s activity depending on tRNA elements is counter-intuitive as DTD is expected to act on multiple tRNAs with comparable efficiencies. Hence, the present work has unveiled a completely new aspect of DTD\u2019s aminoacyl-tRNA recognition code in which the role of the amino acid as well as the tRNA component needs to be looked at separately. Interestingly, a recognition code exists for EF-Tu, wherein three successive base pairs in the T-stem of tRNA thermodynamically compensate for the differential binding affinity of EF-Tu toward different amino acids (LaRiviere et al., 2001; Roy et al., 2007; Sanderson and Uhlenbeck, 2007b; Schrader et al., 2009). Thus, it becomes important to understand how DTD treats multiple aminoacyl-tRNAs using its own recognition code.\n\nIt is interesting to note that in certain cellular contexts, glycine as well as some D-amino acids can be present in relatively high concentrations, wherein these amino acids play important physiological roles. For example, in neuronal tissues, D-serine and D-aspartate along with glycine are abundant and act as neurotransmitters/neuromodulators (Hashimoto and Oka, 1997; Snyder and Kim, 2000). In such instances, especially in neuronal tissues, DTD\u2019s function and its corresponding up-regulation (Zheng et al., 2009) suggest an all-pervasive requirement of this protein from a primordial domain involved in perpetuation of homochirality to current-day proofreader in physiological context. It has been established that even a mild compromise in AlaRS editing for Ser-tRNAAla causes severe pathological conditions, such as neurodegeneration and cardiomyopathy in mouse (Lee et al., 2006; Liu et al., 2014). In this regard, the role and regulation of DTD in various cellular contexts, and more importantly in higher eukaryotes, will be an important aspect which needs to be probed to gain newer insights into DTD\u2019s physiological significance.\n\n## Materials and methods\n\n### Cloning, expression and protein purification\n\nDTD genes from the genome of E. coli and cDNAs of P. falciparum, L. major, D. melanogaster (fruit fly) and D. rerio (zebrafish) were cloned, and the proteins were expressed and purified as described previously (Ahmad et al., 2013; Routh et al., 2016). The gene (alaS) encoding E. coli AlaRS (EcAlaRS) cloned in pET-26b vector was a gift from Prof. William H. McClain (University of Wisconsin-Madison, USA). An N-terminal 6X His-tagged (N-His) construct was made for EcAlaRS in pET-28b using restriction-free cloning method (van den Ent and L\u00f6we, 2006). The plasmid containing EcAlaRS gene was transformed in E. coli BL21(DE3) cells for protein overexpression. The N-His-tagged EcAlaRS protein was purified by a two-step protocol involving Ni-NTA affinity chromatography and size exclusion chromatography (SEC). The cells were lysed in lysis buffer containing 50 mM Tris\u2013HCl pH 8.0, 150 mM NaCl, 5 mM 2-Mercaptoethanol (\u03b2-ME), and 10 mM imidazole. The same buffer was used to pre-equilibrate Ni-NTA column on which the cell lysate was loaded. After loading, the column was first washed with lysis buffer followed by wash buffer containing 50 mM Tris\u2013HCl pH 8.0, 150 mM NaCl, 5 mM \u03b2-ME, and 30 mM imidazole. Protein was eluted with elution buffer containing 50 mM Tris\u2013HCl pH 8.0, 150 mM NaCl, 5 mM \u03b2-ME, and 250 mM imidazole. The fractions containing protein of interest were pooled, concentrated and subjected to SEC purification using Superdex-200 in a buffer containing 100 mM Tris\u2013HCl pH 8.0, 300 mM NaCl, and 10 mM \u03b2-ME. Finally, the fractions containing purified protein were pooled, concentrated and mixed with equal volume of 100% glycerol before storing as aliquots at \u221230\u00b0C for further use.\n\nThe gene (tufA) encoding EF-Tu was PCR-amplified from the genomic DNA of Thermus thermophilus, and cloned in pET-28b using restriction-free cloning method (van den Ent and L\u00f6we, 2006). The N-His-tagged EF-Tu protein from T. thermophilus was was then overexpressed in E. coli BL21(DE3) cells and purified by a two-step method involving Ni-NTA affinity chromatography and SEC. The overall purification protocol remained very similar to the one described above except for changes in the buffer composition used in both steps. For Ni-NTA affinity chromatography, all the buffers contained 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) titrated with potassium hydroxide (KOH), that\u00a0is, HEPES-KOH, pH 7.5, 500 mM NaCl, 10 mM magnesium chloride (MgCl2), 5% glycerol, 5 mM \u03b2-ME, and 100 \u00b5M guanosine-5\u2032-diphosphate (GDP). Additionally, lysis, wash and elution buffers contained 10 mM, 30 mM and 250 mM imidazole, respectively. Following affinity chromatography, SEC was carried out using Sephadex G-200 and a buffer containing 50 mM HEPES-KOH pH 7.5, 500 mM ammonium chloride (NH4Cl), 20 mM MgCl2, 10% glycerol, 5 mM dithiothreitol (DTT), and 100 \u00b5M GDP. Finally, the purified protein was processed and stored at \u221230\u00b0C as described above. All protein purification steps from cell lysis onwards were carried out on ice or at 4\u00b0C.\n\nThe mutants were generated using QuickChange XL Site-directed kit (Stratagene, La Jolla, CA).\n\n### Biochemical assays\n\nE. coli tRNAAla was charged with alanine, serine and glycine by EcAlaRS C666A mutant as described by Pasman et al. (2011). The same protocol was followed to charge D. melanogaster tRNAAla with glycine. E. coli tRNAGly was charged with glycine by T. thermophilus GlyRS as described by Routh et al. (2016). Deacylation assays with AlaRS and DTD were carried out as described by Pasman et al. (2011) and Ahmad et al. (2013). EF-Tu activation was carried out as described by Routh et al. (2016). It is to be noted that considering only 10\u201315% efficiency of EF-Tu activation reaction (Cvetesic et al., 2013; Sanderson and Uhlenbeck, 2007a), the effective (activated) EF-Tu concentration in our assay conditions was in the range of 200\u2013300 nM when the total EF-Tu concentration used was 2 \u00b5M. Aminoacylation competition assays were performed in a solution of 100 mM HEPES pH 7.2, 2.5 mM DTT, 2 mM adenosine-5\u2032-triphosphate (ATP), and 200 mM amino acid (alanine/serine/glycine) with 2 \u03bcM (total concentration) EF-Tu, 100 nM tRNAAla, 100 nM EcAlaRS and 10 pM EcDTD. These assays were performed at 37\u00b0C and were tracked for 15 min. Deacylation competition assays were also carried out in a solution of 100 mM HEPES pH 7.2, and 2.5 mM DTT with 2 \u03bcM (total concentration) EF-Tu, 200 nM aa-tRNAAla and varying concentrations of EcAlaRS and EcDTD. Unless otherwise stated, the tRNAs used in the assays were from E. coli. Every data point denotes the mean of three independent readings. Error bars represent one standard deviation from the mean.\n\n### Strain constructions\n\n#### Construction of \u0394alaS deletion mutant\n\nWild-type E. coli alaS (WT) gene and editing-defective alaS triple-mutant T567F/S587W/C666F (TM) were cloned into SacI/HindIII sites of pBAD33 vector (CamR, pACYC origin) under the control of an arabinose-inducible promoter. E. coli MG1655 strain (RRID: SCR_002804) was transformed with pBAD33 WT-AlaRS and TM-AlaRS, and the transformants were selected on LB-agar plate containing chloramphenicol (20 \u00b5g ml\u22121 final concentration) at 37\u00b0C. These strains were used for making \u0394alaS::Kan deletion using P1 phage-mediated transductions (Miller, 1992). P1 phage for alaS knockout was prepared from a Keio collection deletion mutant JW 2667, which had a duplication of alaS (Baba et al., 2006). The presence of the deletion was confirmed by PCR amplification and sequencing the junctions of the deletion\u2013insertion.\n\n#### Construction of \u0394dtd\u2206alaS deletion mutant\n\nMG1655 \u0394dtd::Kan was generated using P1 lysate from Keio collection (JW 3858\u20132). Marker-less \u0394dtd was generated by flipping out the antibiotic resistance (Kan) marker by transforming with plasmid pCP20 (Datsenko and Wanner, 2000). This mutant strain was transformed with pBAD33 WT-AlaRS and TM-AlaRS. \u0394alaS::Kan was introduced into these strains to generate \u0394dtd\u2206alaS. Deletion mutants were selected on LB-agar plate containing kanamycin (25 \u00b5g ml\u22121 final concentration), chloramphenicol (20 \u00b5g ml\u22121 final concentration) and 0.4% (w/v) L-arabinose.\n\n### Viability assays\n\nViability assays were performed with deletion mutant strains of \u0394alaS and \u0394dtd\u2206alaS in minimal medium (Miller, 1992). Relevant cultures were grown until OD600 reached 0.6 and were 10-fold serially diluted (10\u22122, 10\u22123, 10\u22124, 10\u22125 and 10\u22126). Of each serially diluted sample,\u00a03\u00a0\u03bcl was spotted on minimal agar plates containing 0.002% L-arabinose, 0.2% maltose as carbon source, glycine (3 mM or 10 mM) and/or L-alanine (1 mM). The plates were incubated at 37\u00b0C for 20\u201336 hr.\n\nFor growth curves, primary cultures were grown in LB medium containing 0.0002% L-arabinose, Kanamycin and Chloramphenicol at 37\u00b0C until OD600 reached 1.0. Subsequently, 2% inoculum was used to initiate 15 ml secondary culture in 1X minimal medium containing 0.2% maltose as carbon source and 0.0002% L-arabinose. The secondary culture was grown at 37\u00b0C to obtain a cell density (OD600) of\u00a0~0.6. These cultures were again grown in 1X minimal medium with/without amino acids (glycine, L-alanine and L-histidine) of the indicated concentrations. The growth was monitored at every 2-hr interval. All the experiments were done in triplicates.\n",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "79f34c35-de9e-4ea2-9160-d0479810e5e9",
+      "submission_id": "8fbb76e5-8c98-4109-8779-597811f6f4e7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan P Staley, University of Chicago , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24001.024](https://doi.org/10.7554/eLife.24001.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"DTD's role beyond chiral proofreading as a cellular defense against glycine mischarging by AlaRS\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Jonathan P Staley (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by and Michael Marletta as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Michael Ibba (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\ntRNA charging fidelity is a fundamental issue in promoting protein synthesis and cellular fitness. In this manuscript, the authors define a novel mechanism for editing Gly-tRNA(Ala) by the universal factor DTD, previously known to function only in discrimination against tRNAs mischarged with D-amino acids. While editing Ser-tRNA(Ala) has been shown to be physiologically important, evidence that editing of Gly-tRNA(Ala) has not, even though tRNA(Ala) is as efficiently mischarged with Gly as with Ser, as the authors show. The authors further show that the canonical editing activity of AlaRS is inefficient in cleaving Gly-tRNA(Ala) but that DTD does cleave efficiently \u2013 many orders of magnitude more efficiently. While EF-Tu protects Gly-tRNA(Gly) from DTD, EF-Tu does not protect Gly-tRNA(Ala), and DTD acts orders of magnitude more efficiently on Gly-tRNA(Ala) than Gly-tRNA(Gly), highlighting the specificity of DTD for Gly-mischarged tRNA. Strikingly, the authors show that a knockout of DTD in E. coli (in an editing-deficient AlaRS background) renders concentrations of glycine toxic that can be rescued by alanine, establishing both the physiological challenge of glycine mischarging and the role of DTD in editing. The authors further show that this activity is conserved across all branches of life and unexpectedly appears to require recognition of the tRNA body. Overall, this elegant and clever manuscript resolves a long-standing question in the field of translation quality control.\n\nEssential revisions:\n\n1) A main question is whether the role of DTD in editing Gly-tRNA(Ala) is greater than the role of AlaRS. The physiological role for DTD was determined in a background deficient for editing by AlaRS. If the role of DTD is critical, it's role should remain important in a wild-type AlaRS background, which the authors should test. Either possible outcome will be informative.\n\n2) Table 1: kcat/Km values are much higher than the typical diffusion-limited, macromolecular reaction at ~100 uM-1/s-1 (table 1 values are >10,000 uM-1/s-1). This does not seem to be possible. How can these values be justified? There may be some fundamental issues in these measurements.\n\n3) Subsection \u201cDTD effectively decouples glycine mischarged on tRNAAla\u201d and Figure 3: It's unclear how the conclusion that ~20,000 times more AlaRS than DTD is needed for Gly-tRNAAla deacylation is derived from Figure 3 data. I assume that the authors are comparing Figure 3A and C without an active EF-Tu? Or is it a comparison of 3B with 2B? In order to make this strong statement, one needs to at least take earlier time points than 2 min, and not in mixed AlaRS/DTD experiment where these two proteins may interact; indeed, because one cannot be sure which protein is responsible for the activity in 3C and because 3C is somewhat redundant with Figure 2 and Figure 3A and B, the panel 3C should be removed. In addition, why does the DTD only deacylate ~75% of misacylated tRNA (3C), whereas AlaRS deacylates almost all tRNA (3A)?\n\n4) Figure 6: the requirement of G3U70 for DTD deacylation is a major conclusion of the paper. Yet, this conclusion is based entirely on one single mutation in tRNAGly. This figure is so poorly presented that one cannot even see what the sequence differences are between the E. coli tRNAGly and Ala used. More mutation data, e.g. from other tRNAGly isoacceptors are needed. It is also crucial to mutate tRNAAla G3U70 to show a severe reduction of the deacylation activity. To bypass the difficulty of making sufficient amount of Gly-tRNAAla G3U70 mutant by AlaRS, one could use flexizyme to make these substrates. Without such experiments, the authors would need to dramatically tone down the significance and implications of this result concerning a single mutation of a single tRNA.\n\n5) The conclusions are overstated for the experiments to determine how applicable this mechanism is across different domains (subsection \u201cDTD is recruited throughout bacteria and eukaryotes for Gly-tRNAAla removal\u201d). While the results shown are certainly interesting, the authors should be a little more circumspect.\n",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ba21d16b-4557-46d8-988a-5c519f91d319",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C1",
+      "claim": "DTD's active site architecture is unable to discriminate between D-amino acids and achiral glycine due to strict L-chiral rejection through Gly-cisPro motif during chiral proofreading.",
+      "claim_type": "EXPLICIT",
+      "source": "Strict L-chiral rejection through Gly-cisPro motif during chiral proofreading underlies the inability of D-aminoacyl-tRNA deacylase (DTD) to discriminate between D-amino acids and achiral glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citation to previous work on DTD's mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "341b840b-b3bb-4e8f-add2-1178967c3cd6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C2",
+      "claim": "The Gly-tRNAGly 'misediting paradox' is resolved by EF-Tu in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The consequent Gly-tRNAGly 'misediting paradox' is resolved by EF-Tu in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and references prior work (Routh et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "85a7b7bb-1240-4def-8c21-6e0f0e6d70bc",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C3",
+      "claim": "DTD can edit mischarged Gly-tRNAAla species four orders of magnitude more efficiently than AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that DTD's active site architecture can efficiently edit mischarged Gly-tRNAAla species four orders of magnitude more efficiently than even AlaRS, the only ubiquitous cellular checkpoint known for clearing the error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "929b5ce8-97c7-4aeb-9996-142514867d01",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C4",
+      "claim": "DTD knockout in AlaRS editing-defective background causes pronounced toxicity in Escherichia coli even at low-glycine levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, DTD knockout in AlaRS editing-defective background causes pronounced toxicity in Escherichia coli even at low-glycine levels which is alleviated by alanine supplementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "cde87628-5893-4d0f-984b-665af5f0df65",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C5",
+      "claim": "Alanine supplementation alleviates the toxicity caused by DTD knockout in AlaRS editing-defective background at low-glycine levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, DTD knockout in AlaRS editing-defective background causes pronounced toxicity in Escherichia coli even at low-glycine levels which is alleviated by alanine supplementation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fa3e4d26-98ec-4747-9bd0-256da741ff4c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C6",
+      "claim": "DTD positively selects the universally invariant tRNAAla-specific G3\u2022U70 wobble base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that DTD positively selects the universally invariant tRNAAla-specific G3\u2022U70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9f3ce1ee-6e58-46f0-bec8-171987d813fe",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C7",
+      "claim": "DTD's activity on non-cognate Gly-tRNAAla is conserved across all bacteria and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, DTD's activity on non-cognate Gly-tRNAAla is conserved across all bacteria and eukaryotes, suggesting DTD's key cellular role as a glycine deacylator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "6ae52ac2-640c-4283-a788-6fb000d55d99",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C8",
+      "claim": "DTD has a key cellular role as a glycine deacylator.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, DTD's activity on non-cognate Gly-tRNAAla is conserved across all bacteria and eukaryotes, suggesting DTD's key cellular role as a glycine deacylator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the conservation of DTD's activity on Gly-tRNAAla across bacteria and eukaryotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9ca3dab9-f8b1-4864-8baa-19b706af8171",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C9",
+      "claim": "DTD is a key factor that keeps chiral errors away from the translational machinery by allowing only L-amino acids to form proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "D-aminoacyl-tRNA deacylase (DTD) is a key factor that keeps chiral errors away from the translational machinery by allowing only L-amino acids to form proteins and has therefore been implicated in perpetuation of homochirality in the protein world (Calendar and Berg, 1967; Soutourina et al., 1999, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "6e7185b1-9502-4741-adcf-179b8ca5507b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C10",
+      "claim": "DTD has been implicated in perpetuation of homochirality in the protein world.",
+      "claim_type": "EXPLICIT",
+      "source": "D-aminoacyl-tRNA deacylase (DTD) is a key factor that keeps chiral errors away from the translational machinery by allowing only L-amino acids to form proteins and has therefore been implicated in perpetuation of homochirality in the protein world (Calendar and Berg, 1967; Soutourina et al., 1999, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e46104e3-e090-4b64-924d-da9a5c0d92f5",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C11",
+      "claim": "DTD's enantioselection involves only strict L-chiral rejection, rather than D-chiral selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The design principle by which this remarkable configurational specificity is achieved by DTD involves only strict L-chiral rejection, rather than D-chiral selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work (Ahmad et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e0b68525-a526-4abc-acde-6caf4ab6ca70",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C12",
+      "claim": "An invariant cross-subunit Gly-cisPro motif forms the structural and mechanistic basis for DTD's enantioselection.",
+      "claim_type": "EXPLICIT",
+      "source": "An invariant cross-subunit Gly-cisPro motif forms the structural and mechanistic basis for DTD's enantioselection (Ahmad et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "8090064c-d64f-4185-9963-8e02c16c59d8",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C13",
+      "claim": "The architecture of DTD's chiral proofreading site cannot prevent misediting of achiral glycine charged on tRNAGly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the architecture of DTD's chiral proofreading site is such that it cannot prevent misediting of achiral glycine charged on tRNAGly and seems to have an inherent flaw.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work (Routh et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "42e6ef46-704d-4558-ac67-67bfc77fad85",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C14",
+      "claim": "The glycine 'misediting paradox' is effectively resolved through protection of the cognate achiral substrate by elongation factor thermo unstable (EF-Tu).",
+      "claim_type": "EXPLICIT",
+      "source": "The glycine 'misediting paradox' is, however, effectively resolved through protection of the cognate achiral substrate by elongation factor thermo unstable (EF-Tu) (Routh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "f9b2db9e-b48e-4d00-83c6-695871a655d6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C15",
+      "claim": "About half of the 20 aminoacyl-tRNA synthetases have editing functions to rectify incorrect pairing of a similar non-cognate L-amino acid with a tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While occasional chiral errors that occur during aminoacylation are cleared by DTD to ensure the accuracy of aminoacyl-tRNAs present in the cellular pool, a major role is played by editing functions associated with about half of the 20 aminoacyl-tRNA synthetases (aaRSs) to rectify the incorrect pairing of a similar non-cognate L-amino acid with a tRNA (Guo and Schimmel, 2012; Ibba and Soll, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "bb79c8a7-b1bf-4026-b11f-19c5e8343e08",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C16",
+      "claim": "AaRSs can edit the non-cognate amino acid at the aminoacylation site itself after the amino acid has been activated but prior to its transfer to the tRNA (pre-transfer editing).",
+      "claim_type": "EXPLICIT",
+      "source": "These aaRSs can edit the non-cognate amino acid at the aminoacylation site itself after the amino acid has been activated (i.e. formation of aminoacyl-AMP using ATP as a substrate) but prior to its transfer to the tRNA (pre-transfer editing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge about aaRS editing mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "63106a37-28f9-4021-a8b0-004815da959a",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C17",
+      "claim": "Proofreading can happen at a distinct editing site after the activated non-cognate amino acid has been esterified with the tRNA (post-transfer editing).",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, proofreading can happen at a distinct editing site after the activated non-cognate amino acid has been esterified with the tRNA (post-transfer editing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge about aaRS editing mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "7647591e-4c2a-4323-a4ac-b38c3f019af4",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C18",
+      "claim": "Even mild defects in proofreading can lead to adverse cellular outcomes like cell growth retardation, neurodegeneration, cardiomyopathy and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "These proofreading processes are so crucial that even mild defects can lead to adverse cellular outcomes like cell growth retardation, neurodegeneration, cardiomyopathy and cell death (Bacher et al., 2005; Bullwinkle et al., 2014; Karkhanis et al., 2007; Korencic et al., 2004; Lee et al., 2006; Liu et al., 2014; Lu et al., 2014; Moghal et al., 2016; Nangle et al., 2002; Roy et al., 2004), although a compromise in editing can also be beneficial as it helps the organism to tide over stress conditions (Moghal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "1f84e095-60b5-4dcc-af47-1a3be9d8e82b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C19",
+      "claim": "A compromise in editing can be beneficial as it helps the organism to tide over stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These proofreading processes are so crucial that even mild defects can lead to adverse cellular outcomes like cell growth retardation, neurodegeneration, cardiomyopathy and cell death (Bacher et al., 2005; Bullwinkle et al., 2014; Karkhanis et al., 2007; Korencic et al., 2004; Lee et al., 2006; Liu et al., 2014; Lu et al., 2014; Moghal et al., 2016; Nangle et al., 2002; Roy et al., 2004), although a compromise in editing can also be beneficial as it helps the organism to tide over stress conditions (Moghal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "d33aef57-ec79-45f1-886c-e714f7f57f28",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C20",
+      "claim": "Glycine is misactivated by alanyl-tRNA synthetase (AlaRS) at a frequency of 1/240 relative to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Being comparatively small and similar to the cognate alanine, glycine and serine are misactivated by alanyl-tRNA synthetase (AlaRS) at significantly high frequencies of 1/240 and 1/500, respectively, relative to alanine (Tsui and Fersht, 1981) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b3359003-9dce-45ee-a6e7-766005c87dea",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C21",
+      "claim": "Serine is misactivated by alanyl-tRNA synthetase (AlaRS) at a frequency of 1/500 relative to alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Being comparatively small and similar to the cognate alanine, glycine and serine are misactivated by alanyl-tRNA synthetase (AlaRS) at significantly high frequencies of 1/240 and 1/500, respectively, relative to alanine (Tsui and Fersht, 1981) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b5be4a18-aa7a-4170-8b22-928ce7154b94",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C22",
+      "claim": "The misactivation rates of glycine and serine by AlaRS are much higher than the overall error rates of ~10\u22124\u201310\u22123 observed during protein biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these misactivation rates are much higher than the overall error rates of ~10\u22124\u201310\u22123 observed during protein biosynthesis (Ogle and Ramakrishnan, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "da5fc318-f6da-4422-be35-3ed35b51e67c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C23",
+      "claim": "Once misactivated, non-cognate amino acids are mischarged on tRNAAla by AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Once (mis)activated, these non-cognate amino acids are mischarged on tRNAAla by AlaRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents a logical consequence of misactivation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4a40700e-a575-4653-8b3d-0491a207ccc2",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C24",
+      "claim": "The editing domain of AlaRS has to specifically remove two non-cognate amino acids\u2014the larger serine and the smaller glycine\u2014attached to tRNAAla without acting on the cognate alanine, which is intermediate in size between serine and glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "This creates a unique mechanistic challenge for the editing domain of AlaRS, which has to specifically remove two non-cognate amino acids\u2014the larger serine and the smaller glycine\u2014attached to tRNAAla without acting on the cognate alanine, which is intermediate in size between serine and glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents a logical analysis of the editing challenge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "cea6fca4-6317-40b3-8a8a-7e19bd74eb98",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C25",
+      "claim": "The double-discrimination problem of AlaRS is 3.5-billion-year-old and unavoidable for AlaRS in all forms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "This 3.5-billion-year-old double-discrimination problem is shown to be unavoidable for AlaRS in all forms of life (Guo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "6695cfcc-d945-4e1e-bfe1-5b72dbcaf45d",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C26",
+      "claim": "Serine mischarging on tRNAAla is detrimental to the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that serine mischarging on tRNAAla is detrimental to the cell and even a mild deficiency in the proofreading activity of AlaRS leads to cell death and severe neuropathologies in mouse (Lee et al., 2006; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "a3782791-d825-49b5-97e1-14d5682cfbf3",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C27",
+      "claim": "Even a mild deficiency in the proofreading activity of AlaRS leads to cell death and severe neuropathologies in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that serine mischarging on tRNAAla is detrimental to the cell and even a mild deficiency in the proofreading activity of AlaRS leads to cell death and severe neuropathologies in mouse (Lee et al., 2006; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "834a7da1-bba8-4dfc-891e-a8de8c58eb53",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C28",
+      "claim": "Several standalone trans-editing modules (collectively called AlaXs), which are homologous to AlaRS cis-editing domain, have come into being.",
+      "claim_type": "EXPLICIT",
+      "source": "The problem is so severe that several standalone trans-editing modules (collectively called AlaXs), which are homologous to AlaRS cis-editing domain, have come into being.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and represents established knowledge about AlaX proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "03eb54d2-ce52-4577-81f0-a703a75933ff",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C29",
+      "claim": "Trans-editing factors AlaXs are not ubiquitously present; their distribution is more in archaea than in eukaryotes and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these trans-editing factors are not ubiquitously present; their distribution is more in archaea than in eukaryotes and bacteria (Guo and Schimmel, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3b38078e-dfb7-43ff-b243-1558c9bfa6bf",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C30",
+      "claim": "Only archaeal AlaXs are known to clear both Ser-tRNAAla and Gly-tRNAAla.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only archaeal AlaXs are known to clear both Ser-tRNAAla and Gly-tRNAAla (Ahel et al., 2003); eukaryotic AlaXs have been shown to act as cellular redundancies to edit only Ser-tRNAAla (Guo et al., 2009), whereas biochemical activity of bacterial AlaXs is yet to be probed (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "dc1d383d-68d7-4a56-93ef-8d1af49858b8",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C31",
+      "claim": "Eukaryotic AlaXs have been shown to act as cellular redundancies to edit only Ser-tRNAAla.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only archaeal AlaXs are known to clear both Ser-tRNAAla and Gly-tRNAAla (Ahel et al., 2003); eukaryotic AlaXs have been shown to act as cellular redundancies to edit only Ser-tRNAAla (Guo et al., 2009), whereas biochemical activity of bacterial AlaXs is yet to be probed (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and supported by citation to previous work, and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "bd008ad8-6276-46ab-9ba5-97e0678ef02b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C32",
+      "claim": "Biochemical activity of bacterial AlaXs is yet to be probed.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only archaeal AlaXs are known to clear both Ser-tRNAAla and Gly-tRNAAla (Ahel et al., 2003); eukaryotic AlaXs have been shown to act as cellular redundancies to edit only Ser-tRNAAla (Guo et al., 2009), whereas biochemical activity of bacterial AlaXs is yet to be probed (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and represents a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "004d291b-478f-474e-8ea4-5ed79e3dfe34",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C33",
+      "claim": "Only serine mischarging by AlaRS was believed to pose the major threat to the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings corroborated the notion that only serine mischarging by AlaRS poses the major threat to the cell (Guo et al., 2009; Lee et al., 2006; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "32c693cd-d935-46b6-a65a-2c50685cd29d",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C34",
+      "claim": "There is significant glycine mischarging by AlaRS in the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we show that there is significant glycine mischarging by AlaRS in the presence of EF-Tu which can be equally pernicious as serine mischarging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "40b62f2f-6d12-4cd7-8949-b3814076bb55",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C35",
+      "claim": "Glycine mischarging by AlaRS can be equally pernicious as serine mischarging.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we show that there is significant glycine mischarging by AlaRS in the presence of EF-Tu which can be equally pernicious as serine mischarging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the introduction and supported by experimental data shown in Figures 2 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "7cba1994-15f7-42a4-a955-8628df232750",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C36",
+      "claim": "In comparison to alanine charging, significant glycine mischarging was observed in aminoacylation assays in the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether Gly-tRNAAla is accumulated due to mischarging of glycine on tRNAAla by AlaRS, we performed aminoacylation assays in the presence of EF-Tu. In comparison to alanine charging, significant glycine mischarging was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3d747e13-fadd-4917-9d39-5710c7e94bee",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C37",
+      "claim": "The level of glycine mischarging was about twice that of serine mischarging in aminoacylation assays in the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the level of glycine mischarging was about twice that of serine mischarging (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4afe44ff-a392-4764-8614-05b007713c8b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C38",
+      "claim": "Even with full AlaRS editing potential, there can be significant accumulation of Gly-tRNAAla species in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly indicated that even with full AlaRS editing potential, there can be significant accumulation of Gly-tRNAAla species in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "a827acaf-7d71-40aa-ae47-f81d944b0706",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C39",
+      "claim": "The twofold higher level of glycine mischarging compared to serine is in accordance with the twofold higher misactivation rate of glycine by AlaRS when compared to that of serine.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this is in accordance with the twofold higher misactivation rate of glycine by AlaRS when compared to that of serine (Tsui and Fersht, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3152c1e9-732b-47d9-85ff-432a28be5e20",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C40",
+      "claim": "When AlaRS editing was compromised, the accumulation of Gly-tRNAAla was significantly high, almost equal to the level of Ala-tRNAAla formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We then checked the accumulation of Gly-tRNAAla when AlaRS editing was compromised, and it was found to be significantly high, almost equal to the level of Ala-tRNAAla formation (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "79e2284f-2822-4422-9cde-afd0b1e35c2c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C41",
+      "claim": "A known editing site mutation (C666A) in AlaRS from Escherichia coli was used to accomplish a compromise in the proofreading activity of AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "To accomplish a compromise in the proofreading activity of AlaRS, a known editing site mutation (viz., C666A) in AlaRS from Escherichia coli was used (Beebe et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "5e00920e-0e56-447e-8f25-d5c2815041a6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C42",
+      "claim": "Based on structural considerations and evolutionary substitution patterns of alanine, substitution of glycine for alanine is more detrimental than substitution of serine.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, based on structural considerations and evolutionary substitution patterns of alanine, where it is replaced more by serine than by glycine (Betts et al., 2003), it is to be expected that substitution of glycine for alanine is more detrimental than substitution of serine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4b671781-519e-4b9d-8d94-05bc564541f3",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C43",
+      "claim": "The activity of DTD on Gly-tRNAAla was ~1000-fold more than that on Gly-tRNAGly.",
+      "claim_type": "EXPLICIT",
+      "source": "The leads for the solution to this puzzle came when, surprisingly, we found that the activity of DTD on Gly-tRNAAla was ~1000-fold more than that on Gly-tRNAGly (as discussed later).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "c5b12432-cff2-4718-83f5-bc61c2ab8073",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C44",
+      "claim": "DTD could easily edit Gly-tRNAAla in the presence of EF-Tu even though the ratio of activated EF-Tu to DTD in the assays was much higher than the cellular ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, although the ratio of activated EF-Tu to DTD in our assays (viz., ~200 nM to 5 or 10 pM) was much higher than the cellular ratio (viz., ~200:1) (Li et al., 2014), DTD could easily edit Gly-tRNAAla in the presence of EF-Tu (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "40e31c92-45b5-4a61-b32a-517bf70b2648",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C45",
+      "claim": "EF-Tu showed significant protection of the cognate Gly-tRNAGly from DTD.",
+      "claim_type": "EXPLICIT",
+      "source": "This was unlike the case of Gly-tRNAGly, wherein EF-Tu showed significant protection of the cognate achiral substrate from DTD (Routh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b749f1da-f006-487d-bef5-e99737ac48dd",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C46",
+      "claim": "~20,000 times more AlaRS as compared to DTD was required for similar kind of deacylation of Gly-tRNAAla under identical conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The deacylation of Gly-tRNAAla by DTD was so striking that ~20,000 times more AlaRS (which is the only universally occurring editing factor for Gly-tRNAAla) as compared to DTD was required for similar kind of deacylation under identical conditions (Figures 2b and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figures 2b and 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4f12c61f-9845-4048-bc39-376d989fd00c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C47",
+      "claim": "AlaRS is the only universally occurring editing factor for Gly-tRNAAla.",
+      "claim_type": "EXPLICIT",
+      "source": "The deacylation of Gly-tRNAAla by DTD was so striking that ~20,000 times more AlaRS (which is the only universally occurring editing factor for Gly-tRNAAla) as compared to DTD was required for similar kind of deacylation under identical conditions (Figures 2b and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3f205465-b186-4a5f-82ed-614e3f9e7053",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C48",
+      "claim": "AlaRS showed a significant decrease in deacylation activity on Gly-tRNAAla when tested in the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, unlike DTD, AlaRS showed a significant decrease in deacylation activity on Gly-tRNAAla when tested in the presence of EF-Tu (Figure 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e35e095a-e9ef-4b3a-97f7-1cdd81edfd94",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C49",
+      "claim": "DTD is efficient in eliminating Gly-tRNAAla despite the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our assays demonstrated that DTD is not only efficient in eliminating Gly-tRNAAla despite the presence of EF-Tu (Figure 2b) but can also very effectively prevent the accumulation of Gly-tRNAAla during aminoacylation by AlaRS in the presence of EF-Tu (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "2840fddb-fc60-4f0f-9330-a30e77a1464c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C50",
+      "claim": "DTD can very effectively prevent the accumulation of Gly-tRNAAla during aminoacylation by AlaRS in the presence of EF-Tu.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our assays demonstrated that DTD is not only efficient in eliminating Gly-tRNAAla despite the presence of EF-Tu (Figure 2b) but can also very effectively prevent the accumulation of Gly-tRNAAla during aminoacylation by AlaRS in the presence of EF-Tu (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b05435f0-8be8-4069-b38c-abdd065e1724",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C51",
+      "claim": "DTD deacylated Gly-tRNAAla even in the presence of EF-Tu and AlaRS at just 10 pM concentration of DTD in both aminoacylation and deacylation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we performed competition assays involving AlaRS, DTD and EF-Tu. In both aminoacylation and deacylation conditions, we found that DTD deacylated Gly-tRNAAla even in the presence of EF-Tu and AlaRS at just 10 pM concentration of DTD (Figures 2a and 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figures 2a and 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b1c4a549-97af-4add-8a57-c2faf2c83797",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C52",
+      "claim": "The cellular ratio of DTD to AlaRS is ~1:5.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the cellular ratio of DTD to AlaRS (viz, ~1:5) (Li et al., 2014) and their relative activities on Gly-tRNAAla, it is evident that when DTD is present, it will eliminate Gly-tRNAAla more efficiently than AlaRS if the non-cognate achiral substrate is released in solution from the synthetase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b06cee57-182e-4de4-afb9-cce415e5219f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C53",
+      "claim": "When DTD is present, it will eliminate Gly-tRNAAla more efficiently than AlaRS if the non-cognate achiral substrate is released in solution from the synthetase.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the cellular ratio of DTD to AlaRS (viz, ~1:5) (Li et al., 2014) and their relative activities on Gly-tRNAAla, it is evident that when DTD is present, it will eliminate Gly-tRNAAla more efficiently than AlaRS if the non-cognate achiral substrate is released in solution from the synthetase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data and cellular ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fc5b8827-b2a4-4de0-a935-3ca7187dbd6c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C54",
+      "claim": "Compared to Class I synthetases, enzymes belonging to Class II have been shown to have faster product release rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is important to note that compared to Class I synthetases, enzymes belonging to Class II, which include AlaRS, have been shown to have faster product release rates (Zhang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "d9e2efad-615a-47b5-80a4-b1e6d63973cb",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C55",
+      "claim": "Class II aaRSs require resampling of the released mischarged product to edit the cytosolic pool of mischarged tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Class II aaRSs require resampling of the released mischarged product to edit the cytosolic pool of mischarged tRNAs (Ling et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "1a444db0-023c-47f5-8c5d-c9dd1575119e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C56",
+      "claim": "It would be very difficult for the CCA-arm at the 3\u2032 end of tRNAAla harboring the non-cognate amino acid to flip from the aminoacylation site to the editing site without undergoing major conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes even more sense as regards AlaRS, since our structural analysis of AlaRS in complex with tRNAAla (PDB id: 3WQY) suggests that it would be very difficult for the CCA-arm at the 3\u2032 end of tRNAAla harboring the non-cognate amino acid to flip from the aminoacylation site to the editing site without undergoing major conformational changes (Naganuma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and based on structural analysis and citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "dc905bf4-e569-492b-a840-13a8d291477a",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C57",
+      "claim": "A significant fraction of Gly-tRNAAla and Ser-tRNAAla is released from AlaRS prior to their recapture for proofreading by the cis-editing domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a dynamics would naturally facilitate a faster release of the misacylated product in solution, implying that a significant fraction of Gly-tRNAAla and Ser-tRNAAla is released from AlaRS prior to their recapture for proofreading by the cis-editing domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from structural and kinetic considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "afe060bc-1677-4272-8c4b-42ec7e8a2104",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C58",
+      "claim": "The problem of glycine mischarging by AlaRS would have been so detrimental that a highly efficient factor like DTD was required to be employed for this function in addition to AlaRS editing domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the above data suggest that the problem of glycine mischarging by AlaRS would have been so detrimental that a highly efficient factor like DTD was required to be employed for this function in addition to AlaRS editing domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fc77d874-839b-4530-8cac-03cd01b00b77",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C59",
+      "claim": "Earlier in vivo studies had shown that AlaRS editing defect causes glycine toxicity only at very high levels of glycine supplementation (80 mM) as opposed to serine which causes toxicity at significantly lower levels (2.5 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier in vivo studies had shown that AlaRS editing defect causes glycine toxicity only at very high levels of glycine supplementation (80 mM) as opposed to serine which causes toxicity at significantly lower levels (2.5 mM) (Beebe et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "629dd222-4ba8-40a0-8772-657d8da39fce",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C60",
+      "claim": "Previous studies showing glycine toxicity only at high levels were carried out in strains harboring DTD, explaining the need for supplementation with more glycine to show toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that these studies were carried out in strains harboring DTD, hence explaining the need for supplementation with more glycine to show toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the experimental design of previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "96eab846-b5e7-4acc-b678-b79983049415",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C61",
+      "claim": "An E. coli strain was generated in which dtd (the gene encoding DTD) was knocked out in the background of editing-defective AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "To check if the absence of DTD makes E. coli susceptible to glycine, we generated an E. coli strain in which dtd (the gene encoding DTD) was knocked out in the background of editing-defective AlaRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "cfc52a57-a79a-49ce-8d76-9e1fd523ffcb",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C62",
+      "claim": "To create a strain that was completely devoid of AlaRS editing activity, the genomic copy of AlaRS gene (alaS) was knocked out and a triple-mutant AlaRS (viz., T567F/S587W/C666F) was expressed from a plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "To create a strain that was completely devoid of AlaRS editing activity, the genomic copy of AlaRS gene (alaS) was knocked out and a triple-mutant AlaRS (viz., T567F/S587W/C666F) was expressed from a plasmid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "7b796e87-2fab-4514-b97b-53ac87455091",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C63",
+      "claim": "The editing site mutations in AlaRS were designed on the basis of a structural (homology) model of E. coli AlaRS cis-editing domain that was generated using the structure of Archaeoglobus fulgidus AlaRS (PDB id: 2ZTG) as a template.",
+      "claim_type": "EXPLICIT",
+      "source": "The editing site mutations were designed on the basis of a structural (homology) model of E. coli AlaRS cis-editing domain that was generated using the structure of Archaeoglobus fulgidus AlaRS (PDB id: 2ZTG) as a template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "894a421d-0449-4967-a9d1-81a0ea91f6f7",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C64",
+      "claim": "Three residues in the proposed editing site were supplanted by bulkier residues to occlude the pocket and prevent substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Three residues in the proposed editing site (Beebe et al., 2003; Sokabe et al., 2005) were supplanted by bulkier residues to occlude the pocket and prevent substrate binding (Figure 4a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and illustrated in Figure 4a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "5bf953ed-bcaf-4cff-bf7b-ffb2051e156e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C65",
+      "claim": "The triple-mutant AlaRS was found to be inactive on both Ser-tRNAAla and Gly-tRNAAla even when the protein concentration was increased to 1500-fold that of wild-type AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "The triple-mutant was found to be inactive on both Ser-tRNAAla and Gly-tRNAAla even when the protein concentration was increased to 1500-fold that of wild-type AlaRS (Figure 4c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "67a0a35a-b3f8-45ae-907d-c403fd1b83f6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C66",
+      "claim": "Previously known editing-defective mutants of AlaRS (C666A and C666A/Q584H) showed significant activity at just 10-fold higher concentration of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth mentioning here that the previously known editing-defective mutants of AlaRS (C666A and C666A/Q584H) (Beebe et al., 2003), when checked for deacylation activity on both Ser-tRNAAla and Gly-tRNAAla, were found to show significant activity at just 10-fold higher concentration of the enzyme (Figure 4c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "a0afd36c-5422-428e-a114-3cae3cc5bad7",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C67",
+      "claim": "The DTD knockout strain in the background of AlaRS editing defect showed some toxicity even without any amino acid supplementation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular toxicity studies using spot dilution assays and growth curve analysis with the DTD knockout strain in the background of AlaRS editing defect showed some toxicity even without any amino acid supplementation, and the toxicity increased with glycine supplementation as low as 3 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "1adfc127-8ef0-4a5b-916b-aa7d796e121c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C68",
+      "claim": "The toxicity in the DTD knockout strain in the background of AlaRS editing defect increased with glycine supplementation as low as 3 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular toxicity studies using spot dilution assays and growth curve analysis with the DTD knockout strain in the background of AlaRS editing defect showed some toxicity even without any amino acid supplementation, and the toxicity increased with glycine supplementation as low as 3 mM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e7fc20b3-a79e-48c3-9269-c3c4f3b99581",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C69",
+      "claim": "At 10 mM of glycine supplementation, the cells showed severe growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "At 10 mM of glycine supplementation, the cells showed severe growth defect (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9773b8b8-d2b7-4121-b2a1-0f25ac9690fe",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C70",
+      "claim": "Alanine supplementation completely recovered the toxicity caused by glycine and rescued the growth completely.",
+      "claim_type": "EXPLICIT",
+      "source": "To check whether this was specifically due to mischarging caused by AlaRS, toxicity experiments were carried out in the presence of alanine, since the latter is expected to compete for the AlaRS aminoacylation site during charging of tRNAAla. It was observed that alanine supplementation completely recovered the toxicity caused by glycine and rescued the growth completely (Figure 5b,c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5b,c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "b0020003-7285-4c87-8711-85e2cda53207",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C71",
+      "claim": "Histidine failed to rescue the cells from glycine toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to rule out any non-specific effects due to amino acid supplementation, histidine was used as a negative control, and it was found that it failed to rescue the cells from glycine toxicity (Figure 5c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "a9b6c450-6c77-409f-b93d-16a6e3361f16",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C72",
+      "claim": "DTD was found to be totally inactive on Ser-tRNAAla in biochemical assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DTD was found to be totally inactive on Ser-tRNAAla in our biochemical assays which confirmed that the toxicity observed in the DTD-lacking cells in the background of AlaRS editing defect was not due to serine mischarging on tRNAAla by AlaRS (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "0d3719f2-f431-4aa1-8235-039efd5698e3",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C73",
+      "claim": "The toxicity observed in the DTD-lacking cells in the background of AlaRS editing defect was not due to serine mischarging on tRNAAla by AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DTD was found to be totally inactive on Ser-tRNAAla in our biochemical assays which confirmed that the toxicity observed in the DTD-lacking cells in the background of AlaRS editing defect was not due to serine mischarging on tRNAAla by AlaRS (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "90a80670-80d2-4b18-ae90-fb0dd90d9104",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C74",
+      "claim": "DTD's chiral proofreading site rejects even L-alanine, the smallest L-chiral substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The above observation is expected since it has been shown earlier that DTD's chiral proofreading site rejects even L-alanine, the smallest L-chiral substrate (Routh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "83e0617b-e62d-4bc0-87d5-9274e21b1c9e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C75",
+      "claim": "DTD acts as a key cellular factor that edits glycine mischarged on tRNAAla by AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these experiments established that DTD acts as a key cellular factor that edits glycine mischarged on tRNAAla by AlaRS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "10371053-bef1-4f34-a134-8c2d956f4754",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C76",
+      "claim": "No toxicity of glycine supplementation was observed in E. coli MG1655 \u2206dtd strain in the background of wild-type AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no toxicity of glycine supplementation was observed in E. coli MG1655 \u2206dtd strain in the background of wild-type AlaRS (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e6275a4d-d0cb-4c61-8d9e-cbe84974bf13",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C77",
+      "claim": "Under normal growth conditions, AlaRS editing is sufficient for the cell to survive.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that under normal growth conditions, AlaRS editing is sufficient for the cell to survive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "dc52e996-4797-48db-ba81-8382e5f2c6f6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C78",
+      "claim": "The errors produced because of the absence of DTD are possibly tolerated by E. coli under laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The errors produced because of the absence of DTD are possibly tolerated by E. coli under laboratory conditions, as has been noted in several other cases of editing function of aaRSs (Reynolds et al., 2010a, 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "d6fc89d2-1eb8-4377-85ca-05d789d2d4cc",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C79",
+      "claim": "Defects in error correction are known to manifest in toxic effects only in special growth conditions like oxidative stress, oxygen deprivation, starvation/nutrient limiting conditions etc.",
+      "claim_type": "EXPLICIT",
+      "source": "The real implications of editing defects are only recently being appreciated in some specific growth conditions like oxidative stress, oxygen deprivation, starvation/nutrient limiting conditions etc. (Bullwinkle et al., 2014; Cvetesic et al., 2014; Kermgard et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "eb4250ea-6128-4efc-a77a-f17995d9af86",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C80",
+      "claim": "DTD had more than 10-fold increased activity on Gly-tRNAGly harboring G3\u2022U70 as compared to the wild-type achiral cognate substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we transplanted G3\u2022U70 at the same position in tRNAGly. We found that DTD had more than 10-fold increased activity on Gly-tRNAGly harboring G3\u2022U70 as compared to the wild-type achiral cognate substrate (Figure 6a,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 6a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "6fcb0746-65c3-49df-a870-a95a2cae3f6e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C81",
+      "claim": "Substitution of the G3\u2022C70 in the wild-type Gly-tRNAGly with A3\u2022U70 did not cause any increase in the activity of DTD.",
+      "claim_type": "EXPLICIT",
+      "source": "To strengthen this hypothesis, we substituted the G3\u2022C70 in the wild-type Gly-tRNAGly with the other Watson-Crick base pair, that is A3\u2022U70. This substitution did not cause any increase in the activity of DTD (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "cbedc8eb-74c7-49e9-b4e2-aba12e2eb6c3",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C82",
+      "claim": "The G3\u2022U70 wobble base pair, which is a universally conserved feature of tRNAAla, acts as a positive determinant for DTD.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly suggests that the G3\u2022U70 wobble base pair, which is a universally conserved feature of tRNAAla, acts as a positive determinant for DTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "6ac00c39-e8e9-4f03-baca-d1bc4f5d76eb",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C83",
+      "claim": "There are other features in tRNAAla distinct from tRNAGly that account for the higher activity of DTD on tRNAAla when compared to tRNAGly.",
+      "claim_type": "EXPLICIT",
+      "source": "It also suggests the existence of other features in tRNAAla distinct from tRNAGly that accounts for the higher activity of DTD on tRNAAla when compared to tRNAGly, and this aspect requires further exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "14311491-b3fe-4bcb-ac5b-b777c4b90ed4",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C84",
+      "claim": "G3\u2022U70 is unique to and one of the major identity elements of tRNAAla across all life forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Since G3\u2022U70 is unique to and one of the major identity elements of tRNAAla across all life forms (Hou and Schimmel, 1988; 1989; McClain and Foss, 1988; Ripmaster et al., 1995; Shiba et al., 1995), we envisaged that DTD could be positively selecting tRNAAla using the wobble base pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4871f8aa-f35b-42d3-93c7-290e6a429149",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C85",
+      "claim": "The specificity of AlaRS for G3\u2022U70 is so robust that incorporation of this base pair into other tRNAs or minihelices converts non-alanine-accepting tRNAs to be recognized and charged by AlaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of AlaRS for G3\u2022U70 is so robust that incorporation of this base pair into other tRNAs or minihelices converts non-alanine-accepting tRNAs to be recognized and charged by AlaRS (Musier-Forsyth and Schimmel, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "0c4153d4-3cb3-4906-bc84-a2c60cc4cdb6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C86",
+      "claim": "The G3\u2022U70-based selection of tRNAAla by DTD indicates towards the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The G3\u2022U70-based selection of tRNAAla by DTD clearly indicates towards the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains, which have primarily evolved to remove serine mischarged on tRNAAla (Novoa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data and evolutionary considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9051ed97-dace-4e33-bc7f-639117f6ec49",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C87",
+      "claim": "AlaRS editing domains have primarily evolved to remove serine mischarged on tRNAAla.",
+      "claim_type": "EXPLICIT",
+      "source": "The G3\u2022U70-based selection of tRNAAla by DTD clearly indicates towards the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains, which have primarily evolved to remove serine mischarged on tRNAAla (Novoa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "97a576a0-cb8c-4413-8d3b-01ccc3378139",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C88",
+      "claim": "Modulation of DTD's activity depending on tRNA elements is counter-intuitive as DTD is expected to act on multiple tRNAs with comparable efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modulation of DTD's activity depending on tRNA elements is counter-intuitive as DTD is expected to act on multiple tRNAs with comparable efficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and represents a logical consideration.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "39542d6d-abb8-4a8b-9d25-bf39c84b5368",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C89",
+      "claim": "The present work has unveiled a completely new aspect of DTD's aminoacyl-tRNA recognition code in which the role of the amino acid as well as the tRNA component needs to be looked at separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the present work has unveiled a completely new aspect of DTD's aminoacyl-tRNA recognition code in which the role of the amino acid as well as the tRNA component needs to be looked at separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e032df27-4197-494a-abf3-27621e41014f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C90",
+      "claim": "A recognition code exists for EF-Tu, wherein three successive base pairs in the T-stem of tRNA thermodynamically compensate for the differential binding affinity of EF-Tu toward different amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recognition code exists for EF-Tu, wherein three successive base pairs in the T-stem of tRNA thermodynamically compensate for the differential binding affinity of EF-Tu toward different amino acids (LaRiviere et al., 2001; Roy et al., 2007; Sanderson and Uhlenbeck, 2007b; Schrader et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "feacd3f2-7579-464a-b1c0-6b3891b56e36",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C91",
+      "claim": "Significant differences were found in residues around the chiral proofreading site of DTD which are believed to interact with the acceptor stem of tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "DTD's ubiquitous presence in bacteria and eukaryotes prompted us to test whether its role in clearing mischarged Gly-tRNAAla, in addition to its role in proofreading D-aminoacyl-tRNAs, is conserved in these two domains of life. It is important to investigate this aspect because we found significant differences in residues\u2014which are believed to interact with the acceptor stem of tRNA\u2014around the chiral proofreading site of DTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and based on structural analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "026e328c-ad76-4a04-b5c1-84027937b703",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C92",
+      "claim": "Only 7 out of 20 residues in the selected region around DTD's active site are invariant across bacterial and eukaryotic DTDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, only 7 out of 20 residues in the selected region are invariant across bacterial and eukaryotic DTDs (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by structural analysis shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "2d21c4bb-602c-4a3a-b67b-fc962b5ce2f7",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C93",
+      "claim": "DTDs from different eukaryotes (Leishmania major, Drosophila melanogaster, Danio rerio, Plasmodium falciparum) and E. coli were found to act effectively on both bacterial and eukaryotic tRNAs at 10 pM of DTD concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "To ascertain this, we tested DTDs from different eukaryotes\u2014Leishmania major (LmDTD), Drosophila melanogaster (DmDTD) and Danio rerio (DrDTD)\u2014spanning the entire spectrum of unicellular, invertebrate and vertebrate species, in addition to DTDs from Plasmodium falciparum (PfDTD) and E. coli (EcDTD). These DTDs were tested on glycine mischarged on both E. coli tRNAAla and D. melanogaster tRNAAla (Figure 7). All these DTDs were found to act effectively on both bacterial and eukaryotic tRNAs at 10 pM of DTD concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3295c499-0447-4d67-ae9e-b85638f98cf8",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C94",
+      "claim": "In spite of the cross-species differences in DTD and tRNAAla, DTD's activity on Gly-tRNAAla is most likely conserved throughout bacteria and eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that in spite of the cross-species differences in DTD and tRNAAla, DTD's activity on Gly-tRNAAla is most likely conserved throughout bacteria and eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and inferred from experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "aebf4cfd-eef1-4f1f-9319-7ff517e170bb",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C95",
+      "claim": "This study provides an unprecedented solution to a fundamental and long-standing puzzle by elucidating a hitherto unknown and physiologically important function of DTD.",
+      "claim_type": "EXPLICIT",
+      "source": "This study provides an unprecedented solution to a fundamental and long-standing puzzle by elucidating a hitherto unknown and physiologically important function of DTD, which was till now implicated only in enforcing homochirality during translation of the genetic code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and summarizes the main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "bf9907e4-02b4-47c3-8ad7-42168bc8f75f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C96",
+      "claim": "The discovery of DTD as a key cellular factor for the elimination of Gly-tRNAAla provides an elegant explanation as to why glycine mischarging by AlaRS was not encountered or considered as a cellular hazard in all the previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of DTD as a key cellular factor for the elimination of Gly-tRNAAla provides an elegant explanation as to why glycine mischarging by AlaRS was not encountered or considered as a cellular hazard in all the previous studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "0c256399-7528-4a6c-96d4-4b77e922574f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C97",
+      "claim": "Nature was forced to devise and retain throughout evolution a key checkpoint in the form of DTD that is more efficient than even AlaRS's proofreading function to tackle the glycine mischarging problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study thus brings forth the criticality of glycine mischarging problem, which was largely overlooked and underappreciated prior to this work. It also reveals that nature was forced to devise and retain throughout evolution a key checkpoint in the form of DTD that is more efficient than even AlaRS's proofreading function to tackle this problem (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "1c8714b6-4c96-4e4a-a4ad-be411e3c2d18",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C98",
+      "claim": "The necessity of keeping DTD's active site design intact during the course of evolution was probably because removal of the mischarged Gly-tRNAAla species from the cellular pool took precedence over DTD's unwarranted activity on Gly-tRNAGly.",
+      "claim_type": "EXPLICIT",
+      "source": "The study also highlights the necessity of keeping DTD's active site design intact during the course of evolution, probably because removal of the mischarged Gly-tRNAAla species from the cellular pool took precedence over DTD's unwarranted activity on Gly-tRNAGly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9a45b50a-401e-46c2-910d-8347cb3053cc",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C99",
+      "claim": "The glycine 'misediting paradox' was effectively resolved by safeguarding the cognate achiral substrate using EF-Tu as well as keeping the cellular levels of DTD low and tightly regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the glycine 'misediting paradox' was effectively resolved by safeguarding the cognate achiral substrate using EF-Tu as well as keeping the cellular levels of DTD low and tightly regulated (Routh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "8171a321-13bf-413d-8d95-ef4eb6980ba8",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C100",
+      "claim": "What seemed to be an apparent flaw in the architecture of DTD's active site proved to be a necessity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, what seemed to be an apparent flaw in the architecture of DTD's active site proved to be a necessity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "83028a0a-8268-47c8-a1f2-62eac23bc2c0",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C101",
+      "claim": "The dual activity of DTD on both achiral and D-chiral substrates depicts it as a plausible 'connecting link' or 'bridging factor' between D-chirality\u2013based and the canonical L-chirality\u2013based proofreading during protein biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the dual activity of DTD on both achiral and D-chiral substrates depicts it as a plausible 'connecting link' or 'bridging factor' between D-chirality\u2013based and the canonical L-chirality\u2013based proofreading during protein biosynthesis (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section and represents a speculative interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "dde4ae0c-17c3-420d-a117-07ceb828b8f8",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C102",
+      "claim": "A DTD-like fold appended to archaeal threonyl-tRNA synthetase (ThrRS) as the N-terminal editing domain (NTD) is specific for editing L-serine mischarged on tRNAThr.",
+      "claim_type": "EXPLICIT",
+      "source": "This view gains support from the fact that a DTD-like fold appended to archaeal threonyl-tRNA synthetase (ThrRS) as the N-terminal editing domain (NTD) is specific for editing L-serine mischarged on tRNAThr (Ahmad et al., 2015; Dwivedi et al., 2005; Hussain et al., 2006, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "10f7e565-825e-46f3-9b39-2ef69917c2d9",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C103",
+      "claim": "The DTD-like fold present in two functional contexts\u2014as NTD in archaea, and as DTD in bacteria and eukaryotes\u2014operates majorly through main chain-mediated contacts for substrate recognition and performs catalysis through RNA, suggesting its primordial origins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting here that the DTD-like fold present in two functional contexts\u2014as NTD in archaea, and as DTD in bacteria and eukaryotes\u2014operates majorly through main chain-mediated contacts for substrate recognition and performs catalysis through RNA, suggesting its primordial origins (Ahmad et al., 2013, 2015; Routh et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "9ae586cf-235a-4aaa-90ec-10e6c1981dc0",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C104",
+      "claim": "Glycine mischarging by AlaRS is inevitable and is a classic case of error made by the aminoacylation site of aaRS.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine mischarging by AlaRS is inevitable and is a classic case of error made by the aminoacylation site of aaRS, whereas serine mischarging is an offshoot of amino group selection for alanine (Guo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "f1a0a7e7-b567-4b01-b6c0-d61addf96690",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C105",
+      "claim": "Serine mischarging is an offshoot of amino group selection for alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Glycine mischarging by AlaRS is inevitable and is a classic case of error made by the aminoacylation site of aaRS, whereas serine mischarging is an offshoot of amino group selection for alanine (Guo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "93d6b89e-bcb1-400d-bb8a-67f10fdb1589",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C106",
+      "claim": "Wherever and whenever present, DTD plays the major role in clearing the non-cognate achiral substrate from the cellular pool.",
+      "claim_type": "EXPLICIT",
+      "source": "DTD's significantly higher activity on Gly-tRNAAla as compared to AlaRS suggests that wherever and whenever present, DTD plays the major role in clearing the non-cognate achiral substrate from the cellular pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "38019b56-e641-48d8-ac36-a59c283287ad",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C107",
+      "claim": "DTD helps the cell to overcome the double-discrimination problem that is encountered by AlaRS in all extant organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This probably helps the cell to overcome the double-discrimination problem that is encountered by AlaRS in all extant organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "e6a03358-175d-4293-9677-76417b69dba3",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C108",
+      "claim": "In the primordial scenario, DTD could have been primarily employed as a glycine-removing factor.",
+      "claim_type": "EXPLICIT",
+      "source": "In the primordial scenario, DTD could have been primarily employed as a glycine-removing factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and represents a speculative interpretation of the findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "f4d2ec46-b962-4b05-b3c1-4bb2a59a34d6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C109",
+      "claim": "DTD's activity could have aided the formation of relatively rigid and stable peptide/protein scaffolds by precluding glycine misincorporation, since the latter would have been detrimental to their stability.",
+      "claim_type": "EXPLICIT",
+      "source": "This activity of DTD could have aided the formation of relatively rigid and stable peptide/protein scaffolds by precluding glycine misincorporation, since the latter would have been detrimental to their stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and represents a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "38d8df53-515c-49da-8813-fe4846e7e83a",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C110",
+      "claim": "The G3\u2022U70-based selection of tRNAAla by DTD indicates the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The G3\u2022U70-based selection of tRNAAla by DTD clearly indicates towards the role of DTD in editing Gly-tRNAAla even before the recruitment of AlaRS editing domains, which have primarily evolved to remove serine mischarged on tRNAAla (Novoa et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from experimental data and evolutionary considerations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fbe569b7-b887-460b-b733-f56ed41da856",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C111",
+      "claim": "The present work has unveiled a completely new aspect of DTD's aminoacyl-tRNA recognition code in which the role of the amino acid as well as the tRNA component needs to be looked at separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modulation of DTD's activity depending on tRNA elements is counter-intuitive as DTD is expected to act on multiple tRNAs with comparable efficiencies. Hence, the present work has unveiled a completely new aspect of DTD's aminoacyl-tRNA recognition code in which the role of the amino acid as well as the tRNA component needs to be looked at separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and inferred from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "c6643acd-9f0a-4a0e-bce9-eecb9583a017",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C112",
+      "claim": "In certain cellular contexts, glycine as well as some D-amino acids can be present in relatively high concentrations, wherein these amino acids play important physiological roles.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that in certain cellular contexts, glycine as well as some D-amino acids can be present in relatively high concentrations, wherein these amino acids play important physiological roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "790be60d-6ecd-4dce-b525-73596214092c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C113",
+      "claim": "In neuronal tissues, D-serine and D-aspartate along with glycine are abundant and act as neurotransmitters/neuromodulators.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in neuronal tissues, D-serine and D-aspartate along with glycine are abundant and act as neurotransmitters/neuromodulators (Hashimoto and Oka, 1997; Snyder and Kim, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "05c9fbdb-a3dc-41a6-8af5-0a030a69e7c1",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "claim_id": "C114",
+      "claim": "DTD's function and its corresponding up-regulation in neuronal tissues suggest an all-pervasive requirement of this protein from a primordial domain involved in perpetuation of homochirality to current-day proofreader in physiological context.",
+      "claim_type": "EXPLICIT",
+      "source": "In such instances, especially in neuronal tissues, DTD's function and its corresponding up-regulation (Zheng et al., 2009) suggest an all-pervasive requirement of this protein from a primordial domain involved in perpetuation of homochirality to current-day proofreader in physiological context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section and supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "23f83af8-beec-4c56-b9ab-4b8d608f4f7f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DTD's active site architecture employs strict L-chiral rejection through a Gly-cisPro motif, which prevents discrimination between D-amino acids and achiral glycine, creating an inherent flaw that allows misediting of Gly-tRNAGly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C13 describe established prior work on DTD's mechanism, supported by citations (Ahmad et al., 2013; Routh et al., 2016). These claims provide necessary background context for understanding the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "370dd3b5-f89f-4086-bcc6-2fcecd282c0c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Gly-tRNAGly 'misediting paradox' is resolved by EF-Tu protecting the cognate achiral substrate from DTD activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14, and C45 consistently describe prior work (Routh et al., 2016) showing EF-Tu protection of Gly-tRNAGly. This is established background knowledge that contextualizes the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "31fc554c-e3fa-4630-a9ab-2851b5070e28",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AlaRS misactivates glycine and serine at high frequencies (1/240 and 1/500 respectively), creating a unique double-discrimination problem where the editing domain must remove both larger serine and smaller glycine without acting on intermediate-sized alanine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 describe well-established prior work (Tsui and Fersht, 1981; Guo et al., 2009) on AlaRS misactivation rates and the mechanistic challenge. These provide essential background for understanding the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "c08a2717-1276-46b9-8f9e-58e961c6edef",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Significant glycine mischarging by AlaRS occurs in the presence of EF-Tu, with glycine mischarging approximately twice that of serine mischarging, leading to substantial accumulation of Gly-tRNAAla even with full AlaRS editing potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39 are supported by experimental data in Figure 2a showing glycine mischarging levels. The twofold difference is consistent with known misactivation rates (C39, Tsui and Fersht, 1981). The data directly demonstrate the accumulation problem.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "acf80854-08c2-445f-9ad9-15dc9967ff61",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "When AlaRS editing is compromised using the C666A mutation, Gly-tRNAAla accumulation reaches levels nearly equal to cognate Ala-tRNAAla formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by experimental data in Figure 2\u2014figure supplement 1. The use of the C666A mutation is validated by citation (Beebe et al., 2003), and the data clearly show high accumulation of Gly-tRNAAla.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "68412e2f-8afc-43cd-8402-9b481bf9bae6",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DTD edits mischarged Gly-tRNAAla approximately 10,000-fold (four orders of magnitude) more efficiently than AlaRS, with DTD activity maintained even in the presence of EF-Tu at concentrations exceeding cellular ratios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43-C44, C46, C49-C51 are supported by experimental data in Figures 2 and 3. The ~20,000-fold difference in enzyme concentration required for similar deacylation (C46) supports the four orders of magnitude claim. Competition assays (Figures 2a, 3c) demonstrate DTD activity despite EF-Tu presence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "98225b85-b589-473c-9c4d-8face0b0281a",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AlaRS shows significantly decreased deacylation activity on Gly-tRNAAla when tested in the presence of EF-Tu, unlike DTD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is directly supported by experimental data shown in Figure 3a,b, which demonstrates the differential effect of EF-Tu on AlaRS versus DTD activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Given the cellular DTD:AlaRS ratio (~1:5), their relative activities, and the faster product release rates of Class II synthetases like AlaRS, DTD eliminates Gly-tRNAAla more efficiently than AlaRS when the substrate is released into solution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C58 integrate experimental data with cited literature (Li et al., 2014; Zhang et al., 2006; Ling et al., 2009; Naganuma et al., 2014). The reasoning is logical: cellular ratios (C52), Class II kinetics (C54-C55), and structural constraints (C56) support the conclusion that DTD is the primary editor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "fd3b3753-86ad-451a-9d73-d501e79a4b56",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DTD knockout in AlaRS editing-defective background causes pronounced toxicity in E. coli at glycine levels as low as 3 mM, with severe growth defects at 10 mM, which is specifically alleviated by alanine supplementation but not histidine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C61-C65, C67-C71 are supported by experimental data in Figures 4 and 5. The triple-mutant AlaRS (C62-C65) shows complete loss of editing activity (Figure 4c,d). Toxicity assays (Figure 5) demonstrate glycine-specific toxicity rescued by alanine but not histidine, confirming the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "279661c2-6d6c-4546-9331-6612f2688460",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previously known editing-defective AlaRS mutants (C666A and C666A/Q584H) retain significant activity at 10-fold higher enzyme concentrations, unlike the triple mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by experimental data in Figure 4c,d, which directly compares the activity of different mutants and validates the need for the triple mutant to completely abolish editing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3d96719b-d156-4919-917e-49d42dd72f5b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "DTD is completely inactive on Ser-tRNAAla, confirming that the observed toxicity in DTD knockout cells is specifically due to glycine mischarging, not serine mischarging, establishing DTD as a key cellular factor for editing Gly-tRNAAla.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by experimental data in Figure 5\u2014figure supplement 1 showing DTD inactivity on Ser-tRNAAla. This is consistent with prior work (C74, Routh et al., 2016) on L-chiral rejection. The conclusion (C75) logically follows from the combined toxicity and biochemical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "edfd537f-bdab-4398-8c25-f1b1d433e07c",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DTD knockout in wild-type AlaRS background shows no glycine toxicity under normal laboratory conditions, indicating that AlaRS editing alone is sufficient under standard growth conditions, though errors may manifest under stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 are supported by experimental data in Figure 5\u2014figure supplement 2 and citations to prior work (Reynolds et al., 2010a, 2010b; Bullwinkle et al., 2014; Cvetesic et al., 2014; Kermgard et al., 2017). The interpretation is reasonable and acknowledges limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DTD positively selects the G3\u2022U70 wobble base pair specific to tRNAAla, showing >10-fold increased activity on Gly-tRNAGly when G3\u2022U70 is transplanted, but no increase with A3\u2022U70 substitution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C80-C84 are supported by experimental data in Figure 6. The transplantation experiment (C80) and control with A3\u2022U70 (C81) provide strong evidence for specific G3\u2022U70 recognition. The claim is consistent with G3\u2022U70 being a universal tRNAAla identity element (C84, multiple citations).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "7fc0cf7a-cbea-4356-9d12-58866d26b13e",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The G3\u2022U70-based selection by DTD indicates DTD's role in editing Gly-tRNAAla predates the recruitment of AlaRS editing domains, which evolved primarily to remove serine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 integrate experimental findings with evolutionary reasoning. The robustness of G3\u2022U70 recognition by AlaRS (C85, Musier-Forsyth and Schimmel, 1999) and the evolutionary origin of AlaRS editing domains (C87, Novoa et al., 2015) support the inference about DTD's primordial role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "5dcf4842-b47f-4e23-9311-a2ec3ba33197",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DTD's activity modulation by tRNA elements reveals a new recognition code where amino acid and tRNA components must be considered separately, analogous to EF-Tu's recognition code.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 present a conceptual advance supported by the experimental data on G3\u2022U70 recognition. The comparison to EF-Tu (C90, multiple citations) provides a precedent for tRNA-based recognition codes. The conclusion is logical given the unexpected tRNA specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "d541308c-1f73-4795-a05d-46f7559c5406",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DTD's activity on Gly-tRNAAla is conserved across bacteria and eukaryotes, with DTDs from diverse species (E. coli, P. falciparum, L. major, D. melanogaster, D. rerio) all effectively deacylating both bacterial and eukaryotic Gly-tRNAAla at 10 pM concentration, despite significant sequence variation in the tRNA-interacting region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C91-C94 are supported by experimental data in Figure 7 and structural analysis in Figure 7\u2014figure supplement 1. The conservation is demonstrated across a broad phylogenetic range, and the activity is maintained despite sequence differences (C92), supporting functional conservation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "DTD has a key cellular role as a glycine deacylator, providing an unprecedented solution to the long-standing puzzle of why glycine mischarging was not considered a cellular hazard, revealing that nature evolved DTD as a highly efficient checkpoint more effective than AlaRS editing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C95-C97, C100, C106-C107 represent the major conclusions of the study, supported by the combined biochemical, cellular, and evolutionary data. The efficiency difference (four orders of magnitude), toxicity data, and conservation all support DTD's key role as a glycine deacylator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "f3020837-e0df-4124-95d7-1da8353ce30f",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Glycine mischarging can be equally pernicious as serine mischarging, with previous studies showing toxicity only at high glycine levels (80 mM) because they were conducted in DTD-containing strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C42, C59-C60 are supported by the toxicity data (Figure 5) showing low-level glycine toxicity in DTD knockout strains, and by evolutionary/structural reasoning (C42, Betts et al., 2003). The reinterpretation of prior work (C59-C60) is logical given the new findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "c7fe45ac-21ed-448a-b3f9-2a58abac657b",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The necessity of maintaining DTD's active site architecture reflects that removing Gly-tRNAAla took precedence over avoiding Gly-tRNAGly misediting, with the paradox resolved by EF-Tu protection and tight DTD regulation, positioning DTD as a 'bridging factor' between D-chiral and L-chiral proofreading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C99, C101 involve evolutionary speculation (C98, C101) mixed with established findings (C99, Routh et al., 2016). While the evolutionary interpretation is plausible given the data, it remains speculative. The 'bridging factor' concept (C101) is an interesting hypothesis but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "4a1f5af5-d866-4db6-9b22-ebeb5c461989",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "A DTD-like fold in archaeal ThrRS edits L-serine on tRNAThr, and this fold operates through main chain-mediated contacts and RNA-catalyzed chemistry, suggesting primordial origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 describe established prior work (Ahmad et al., 2015; Dwivedi et al., 2005; Hussain et al., 2006, 2010; Ahmad et al., 2013, 2015; Routh et al., 2016) that provides evolutionary context for DTD's function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "2186bec4-1f04-4311-8303-3d6e393b3d87",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Glycine mischarging by AlaRS is inevitable and represents a classic aminoacylation site error, whereas serine mischarging is an offshoot of amino group selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 describe established mechanistic understanding (Guo et al., 2009) that contextualizes the significance of the current findings regarding glycine versus serine mischarging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "3faf8e39-2384-4112-976e-8e60e04621eb",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "In the primordial scenario, DTD could have been primarily employed as a glycine-removing factor to aid formation of rigid protein scaffolds by preventing glycine misincorporation, with G3\u2022U70 recognition indicating this role predated AlaRS editing domain recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108-C110 present evolutionary speculation based on the experimental findings. While the G3\u2022U70 recognition data (C110) support an ancient role, the primordial function (C108-C109) remains speculative without direct evidence from ancestral reconstruction or other evolutionary analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "cccbc464-7009-4372-be11-a9bab33b04a0",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "In neuronal tissues where glycine and D-amino acids are abundant as neurotransmitters, DTD's function and up-regulation suggest an all-pervasive requirement from primordial homochirality maintenance to current-day physiological proofreading.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C114 integrate established knowledge about neuronal amino acids (C113, Hashimoto and Oka, 1997; Snyder and Kim, 2000) with DTD up-regulation data (C114, Zheng et al., 2009). The interpretation is reasonable given the study's findings about DTD's dual role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    },
+    {
+      "id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad",
+      "content_id": "61fd7b1a-bf6d-475a-a0c6-371b0f1c278c",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Background on aminoacyl-tRNA synthetase editing mechanisms, DTD's role in homochirality, and the distribution and specificity of AlaRS and AlaX editing factors across domains of life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C15-C19, C26-C33 provide essential background from prior work, supported by numerous citations. These establish the context for understanding the significance of the current findings but do not represent new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:46.888803Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ba21d16b-4557-46d8-988a-5c519f91d319",
+      "result_id": "23f83af8-beec-4c56-b9ab-4b8d608f4f7f"
+    },
+    {
+      "claim_id": "e46104e3-e090-4b64-924d-da9a5c0d92f5",
+      "result_id": "23f83af8-beec-4c56-b9ab-4b8d608f4f7f"
+    },
+    {
+      "claim_id": "e0b68525-a526-4abc-acde-6caf4ab6ca70",
+      "result_id": "23f83af8-beec-4c56-b9ab-4b8d608f4f7f"
+    },
+    {
+      "claim_id": "8090064c-d64f-4185-9963-8e02c16c59d8",
+      "result_id": "23f83af8-beec-4c56-b9ab-4b8d608f4f7f"
+    },
+    {
+      "claim_id": "341b840b-b3bb-4e8f-add2-1178967c3cd6",
+      "result_id": "370dd3b5-f89f-4086-bcc6-2fcecd282c0c"
+    },
+    {
+      "claim_id": "42e6ef46-704d-4558-ac67-67bfc77fad85",
+      "result_id": "370dd3b5-f89f-4086-bcc6-2fcecd282c0c"
+    },
+    {
+      "claim_id": "40e31c92-45b5-4a61-b32a-517bf70b2648",
+      "result_id": "370dd3b5-f89f-4086-bcc6-2fcecd282c0c"
+    },
+    {
+      "claim_id": "d33aef57-ec79-45f1-886c-e714f7f57f28",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "b3359003-9dce-45ee-a6e7-766005c87dea",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "b5be4a18-aa7a-4170-8b22-928ce7154b94",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "da5fc318-f6da-4422-be35-3ed35b51e67c",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "4a40700e-a575-4653-8b3d-0491a207ccc2",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "cea6fca4-6317-40b3-8a8a-7e19bd74eb98",
+      "result_id": "31fc554c-e3fa-4630-a9ab-2851b5070e28"
+    },
+    {
+      "claim_id": "32c693cd-d935-46b6-a65a-2c50685cd29d",
+      "result_id": "c08a2717-1276-46b9-8f9e-58e961c6edef"
+    },
+    {
+      "claim_id": "7cba1994-15f7-42a4-a955-8628df232750",
+      "result_id": "c08a2717-1276-46b9-8f9e-58e961c6edef"
+    },
+    {
+      "claim_id": "3d747e13-fadd-4917-9d39-5710c7e94bee",
+      "result_id": "c08a2717-1276-46b9-8f9e-58e961c6edef"
+    },
+    {
+      "claim_id": "4afe44ff-a392-4764-8614-05b007713c8b",
+      "result_id": "c08a2717-1276-46b9-8f9e-58e961c6edef"
+    },
+    {
+      "claim_id": "a827acaf-7d71-40aa-ae47-f81d944b0706",
+      "result_id": "c08a2717-1276-46b9-8f9e-58e961c6edef"
+    },
+    {
+      "claim_id": "3152c1e9-732b-47d9-85ff-432a28be5e20",
+      "result_id": "acf80854-08c2-445f-9ad9-15dc9967ff61"
+    },
+    {
+      "claim_id": "79e2284f-2822-4422-9cde-afd0b1e35c2c",
+      "result_id": "acf80854-08c2-445f-9ad9-15dc9967ff61"
+    },
+    {
+      "claim_id": "85a7b7bb-1240-4def-8c21-6e0f0e6d70bc",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "4b671781-519e-4b9d-8d94-05bc564541f3",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "c5b12432-cff2-4718-83f5-bc61c2ab8073",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "b749f1da-f006-487d-bef5-e99737ac48dd",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "e35e095a-e9ef-4b3a-97f7-1cdd81edfd94",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "2840fddb-fc60-4f0f-9330-a30e77a1464c",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "b05435f0-8be8-4069-b38c-abdd065e1724",
+      "result_id": "68412e2f-8afc-43cd-8402-9b481bf9bae6"
+    },
+    {
+      "claim_id": "3f205465-b186-4a5f-82ed-614e3f9e7053",
+      "result_id": "98225b85-b589-473c-9c4d-8face0b0281a"
+    },
+    {
+      "claim_id": "b1c4a549-97af-4add-8a57-c2faf2c83797",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "b06cee57-182e-4de4-afb9-cce415e5219f",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "fc5b8827-b2a4-4de0-a935-3ca7187dbd6c",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "d9e2efad-615a-47b5-80a4-b1e6d63973cb",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "1a444db0-023c-47f5-8c5d-c9dd1575119e",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "dc905bf4-e569-492b-a840-13a8d291477a",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "afe060bc-1677-4272-8c4b-42ec7e8a2104",
+      "result_id": "fea6a8b3-eea5-4b61-ad98-ab37f69b7d7a"
+    },
+    {
+      "claim_id": "929b5ce8-97c7-4aeb-9996-142514867d01",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "cde87628-5893-4d0f-984b-665af5f0df65",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "96eab846-b5e7-4acc-b678-b79983049415",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "cfc52a57-a79a-49ce-8d76-9e1fd523ffcb",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "7b796e87-2fab-4514-b97b-53ac87455091",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "894a421d-0449-4967-a9d1-81a0ea91f6f7",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "5bf953ed-bcaf-4cff-bf7b-ffb2051e156e",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "a0afd36c-5422-428e-a114-3cae3cc5bad7",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "1adfc127-8ef0-4a5b-916b-aa7d796e121c",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "e7fc20b3-a79e-48c3-9269-c3c4f3b99581",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "9773b8b8-d2b7-4121-b2a1-0f25ac9690fe",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "b0020003-7285-4c87-8711-85e2cda53207",
+      "result_id": "fd3b3753-86ad-451a-9d73-d501e79a4b56"
+    },
+    {
+      "claim_id": "67a0a35a-b3f8-45ae-907d-c403fd1b83f6",
+      "result_id": "279661c2-6d6c-4546-9331-6612f2688460"
+    },
+    {
+      "claim_id": "a9b6c450-6c77-409f-b93d-16a6e3361f16",
+      "result_id": "3d96719b-d156-4919-917e-49d42dd72f5b"
+    },
+    {
+      "claim_id": "0d3719f2-f431-4aa1-8235-039efd5698e3",
+      "result_id": "3d96719b-d156-4919-917e-49d42dd72f5b"
+    },
+    {
+      "claim_id": "90a80670-80d2-4b18-ae90-fb0dd90d9104",
+      "result_id": "3d96719b-d156-4919-917e-49d42dd72f5b"
+    },
+    {
+      "claim_id": "83e0617b-e62d-4bc0-87d5-9274e21b1c9e",
+      "result_id": "3d96719b-d156-4919-917e-49d42dd72f5b"
+    },
+    {
+      "claim_id": "10371053-bef1-4f34-a134-8c2d956f4754",
+      "result_id": "edfd537f-bdab-4398-8c25-f1b1d433e07c"
+    },
+    {
+      "claim_id": "e6275a4d-d0cb-4c61-8d9e-cbe84974bf13",
+      "result_id": "edfd537f-bdab-4398-8c25-f1b1d433e07c"
+    },
+    {
+      "claim_id": "dc52e996-4797-48db-ba81-8382e5f2c6f6",
+      "result_id": "edfd537f-bdab-4398-8c25-f1b1d433e07c"
+    },
+    {
+      "claim_id": "d6fc89d2-1eb8-4377-85ca-05d789d2d4cc",
+      "result_id": "edfd537f-bdab-4398-8c25-f1b1d433e07c"
+    },
+    {
+      "claim_id": "fa3e4d26-98ec-4747-9bd0-256da741ff4c",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "eb4250ea-6128-4efc-a77a-f17995d9af86",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "6fcb0746-65c3-49df-a870-a95a2cae3f6e",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "cbedc8eb-74c7-49e9-b4e2-aba12e2eb6c3",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "6ac00c39-e8e9-4f03-baca-d1bc4f5d76eb",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "14311491-b3fe-4bcb-ac5b-b777c4b90ed4",
+      "result_id": "15c5db28-4a80-4fb7-8479-5607b75f7b1e"
+    },
+    {
+      "claim_id": "4871f8aa-f35b-42d3-93c7-290e6a429149",
+      "result_id": "7fc0cf7a-cbea-4356-9d12-58866d26b13e"
+    },
+    {
+      "claim_id": "0c4153d4-3cb3-4906-bc84-a2c60cc4cdb6",
+      "result_id": "7fc0cf7a-cbea-4356-9d12-58866d26b13e"
+    },
+    {
+      "claim_id": "9051ed97-dace-4e33-bc7f-639117f6ec49",
+      "result_id": "7fc0cf7a-cbea-4356-9d12-58866d26b13e"
+    },
+    {
+      "claim_id": "97a576a0-cb8c-4413-8d3b-01ccc3378139",
+      "result_id": "5dcf4842-b47f-4e23-9311-a2ec3ba33197"
+    },
+    {
+      "claim_id": "39542d6d-abb8-4a8b-9d25-bf39c84b5368",
+      "result_id": "5dcf4842-b47f-4e23-9311-a2ec3ba33197"
+    },
+    {
+      "claim_id": "e032df27-4197-494a-abf3-27621e41014f",
+      "result_id": "5dcf4842-b47f-4e23-9311-a2ec3ba33197"
+    },
+    {
+      "claim_id": "9f3ce1ee-6e58-46f0-bec8-171987d813fe",
+      "result_id": "d541308c-1f73-4795-a05d-46f7559c5406"
+    },
+    {
+      "claim_id": "feacd3f2-7579-464a-b1c0-6b3891b56e36",
+      "result_id": "d541308c-1f73-4795-a05d-46f7559c5406"
+    },
+    {
+      "claim_id": "026e328c-ad76-4a04-b5c1-84027937b703",
+      "result_id": "d541308c-1f73-4795-a05d-46f7559c5406"
+    },
+    {
+      "claim_id": "2d21c4bb-602c-4a3a-b67b-fc962b5ce2f7",
+      "result_id": "d541308c-1f73-4795-a05d-46f7559c5406"
+    },
+    {
+      "claim_id": "3295c499-0447-4d67-ae9e-b85638f98cf8",
+      "result_id": "d541308c-1f73-4795-a05d-46f7559c5406"
+    },
+    {
+      "claim_id": "6ae52ac2-640c-4283-a788-6fb000d55d99",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "aebf4cfd-eef1-4f1f-9319-7ff517e170bb",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "bf9907e4-02b4-47c3-8ad7-42168bc8f75f",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "0c256399-7528-4a6c-96d4-4b77e922574f",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "8171a321-13bf-413d-8d95-ef4eb6980ba8",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "93d6b89e-bcb1-400d-bb8a-67f10fdb1589",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "38019b56-e641-48d8-ac36-a59c283287ad",
+      "result_id": "3065fd8e-d4c5-4a5f-9778-be025eb75f64"
+    },
+    {
+      "claim_id": "40b62f2f-6d12-4cd7-8949-b3814076bb55",
+      "result_id": "f3020837-e0df-4124-95d7-1da8353ce30f"
+    },
+    {
+      "claim_id": "5e00920e-0e56-447e-8f25-d5c2815041a6",
+      "result_id": "f3020837-e0df-4124-95d7-1da8353ce30f"
+    },
+    {
+      "claim_id": "fc77d874-839b-4530-8cac-03cd01b00b77",
+      "result_id": "f3020837-e0df-4124-95d7-1da8353ce30f"
+    },
+    {
+      "claim_id": "629dd222-4ba8-40a0-8772-657d8da39fce",
+      "result_id": "f3020837-e0df-4124-95d7-1da8353ce30f"
+    },
+    {
+      "claim_id": "1c8714b6-4c96-4e4a-a4ad-be411e3c2d18",
+      "result_id": "c7fe45ac-21ed-448a-b3f9-2a58abac657b"
+    },
+    {
+      "claim_id": "9a45b50a-401e-46c2-910d-8347cb3053cc",
+      "result_id": "c7fe45ac-21ed-448a-b3f9-2a58abac657b"
+    },
+    {
+      "claim_id": "83028a0a-8268-47c8-a1f2-62eac23bc2c0",
+      "result_id": "c7fe45ac-21ed-448a-b3f9-2a58abac657b"
+    },
+    {
+      "claim_id": "dde4ae0c-17c3-420d-a117-07ceb828b8f8",
+      "result_id": "4a1f5af5-d866-4db6-9b22-ebeb5c461989"
+    },
+    {
+      "claim_id": "10f7e565-825e-46f3-9b39-2ef69917c2d9",
+      "result_id": "4a1f5af5-d866-4db6-9b22-ebeb5c461989"
+    },
+    {
+      "claim_id": "9ae586cf-235a-4aaa-90ec-10e6c1981dc0",
+      "result_id": "2186bec4-1f04-4311-8303-3d6e393b3d87"
+    },
+    {
+      "claim_id": "f1a0a7e7-b567-4b01-b6c0-d61addf96690",
+      "result_id": "2186bec4-1f04-4311-8303-3d6e393b3d87"
+    },
+    {
+      "claim_id": "e6a03358-175d-4293-9677-76417b69dba3",
+      "result_id": "3faf8e39-2384-4112-976e-8e60e04621eb"
+    },
+    {
+      "claim_id": "f4d2ec46-b962-4b05-b3c1-4bb2a59a34d6",
+      "result_id": "3faf8e39-2384-4112-976e-8e60e04621eb"
+    },
+    {
+      "claim_id": "38d8df53-515c-49da-8813-fe4846e7e83a",
+      "result_id": "3faf8e39-2384-4112-976e-8e60e04621eb"
+    },
+    {
+      "claim_id": "c6643acd-9f0a-4a0e-bce9-eecb9583a017",
+      "result_id": "cccbc464-7009-4372-be11-a9bab33b04a0"
+    },
+    {
+      "claim_id": "790be60d-6ecd-4dce-b525-73596214092c",
+      "result_id": "cccbc464-7009-4372-be11-a9bab33b04a0"
+    },
+    {
+      "claim_id": "05c9fbdb-a3dc-41a6-8af5-0a030a69e7c1",
+      "result_id": "cccbc464-7009-4372-be11-a9bab33b04a0"
+    },
+    {
+      "claim_id": "9ca3dab9-f8b1-4864-8baa-19b706af8171",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "6e7185b1-9502-4741-adcf-179b8ca5507b",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "f9b2db9e-b48e-4d00-83c6-695871a655d6",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "bb79c8a7-b1bf-4026-b11f-19c5e8343e08",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "63106a37-28f9-4021-a8b0-004815da959a",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "7647591e-4c2a-4323-a4ac-b38c3f019af4",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "1f84e095-60b5-4dcc-af47-1a3be9d8e82b",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "6695cfcc-d945-4e1e-bfe1-5b72dbcaf45d",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "a3782791-d825-49b5-97e1-14d5682cfbf3",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "834a7da1-bba8-4dfc-891e-a8de8c58eb53",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "03eb54d2-ce52-4577-81f0-a703a75933ff",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "3b38078e-dfb7-43ff-b243-1558c9bfa6bf",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "dc1d383d-68d7-4a56-93ef-8d1af49858b8",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "bd008ad8-6276-46ab-9ba5-97e0678ef02b",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    },
+    {
+      "claim_id": "004d291b-478f-474e-8ea4-5ed79e3dfe34",
+      "result_id": "f59f7c18-e223-4e17-a23f-e5b9cfe41dad"
+    }
+  ],
+  "comparisons": []
+}

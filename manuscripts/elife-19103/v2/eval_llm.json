@@ -1,0 +1,471 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Prior knowledge establishes that the striatum has three traditional functional domains (sensorimotor, associative, limbic) corresponding approximately to dorsolateral, dorsomedial, and ventral regions, but precise boundaries and potential additional subdivisions remain unclear, particularly along the anterior-posterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established knowledge in the field about striatal organization and identify specific gaps in understanding. The claims are supported by appropriate citations and represent the state of knowledge that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C49",
+      "C52",
+      "C57",
+      "C128",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study presents a comprehensive excitatory input map of the mouse striatum by integrating 127 cortical injections from AIBS (covering 15 cortical subregions) with 218 thalamic injections covering >93% of thalamic volume, representing the first integration of two large mesoscopic imaging datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific numbers of injections, coverage percentages, and clear descriptions of data sources. The integration approach is novel and the comprehensiveness claim is justified by the systematic coverage of cortical and thalamic regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Fasciculated traveling axons in the striatum were identified based on distinct morphological features, confirmed not to form synaptic connections via optogenetic experiments, and removed using supervised machine learning algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim that fasciculated axons do not form synapses is directly validated by optogenetic experiments (Figure 1\u2014figure supplement 1b\u2013d). The morphological distinction and machine learning approach for removal are clearly documented, providing a rigorous method for data cleaning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Corticostriatal projections were classified into three density levels (dense >20%, moderate >5%, diffuse >0.5%), with each cortical subregion producing distinct projection patterns: motor/somatosensory regions (FrA, M1/2, S1/2) show dense overlapping projections in lateral striatum, while frontal regions (LO/VO, IL, MO/PrL) show smaller non-overlapping dense projections in anterior medial striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The density classification thresholds are clearly defined and the distinct projection patterns are documented in Figure 2. The characterization of different cortical subregion projection patterns is supported by the imaging data and represents a systematic quantification of corticostriatal organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Grouping cortical injections by anterior-posterior or medial-lateral position revealed moderate topographic organization for dense projections but not diffuse projections, with dense projections often forming discrete non-contiguous fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is supported by Figure 2\u2014figure supplement 2 and represents an important observation about the limits of simple topographic organization. The distinction between dense and diffuse projection organization patterns is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Diffuse projections show higher convergence than dense projections, but specific cortical areas (Ptl, Rsp, IL, Sub) show minimal overlap with motor areas (M1/2, FrA), while motor and select sensory areas (FrA, M1/2, S1/2, AI/GI/DI) show high convergence for both projection types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence analysis is quantified in Figure 2d and reveals important patterns of information segregation and integration. The specific examples of low and high convergence are clearly documented and represent meaningful functional organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Thalamic confidence maps were generated by categorizing overlapping injections based on projection to specific striatal volumes, achieving resolution finer than individual injection size. All thalamic nuclei except AV, RT, VPM, and VPL project to striatum, with overlapping yet distinct thalamic subregions converging with each cortical subregion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confidence map methodology is well-described and validated by prior work (Hunnicutt et al., 2014). The comprehensive coverage of thalamic nuclei and their convergence patterns with cortical inputs is documented in Figure 4, representing a major advance in understanding thalamostriatal organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Nearly all striatal voxels receive diffuse projections from at least 5 cortical subregions (average 8.3). A large subdivision (~63% of striatum) receives high cortical convergence (10.7\u00b11.1 inputs/voxel) and inputs from all striatum-projecting thalamic nuclei, while a second subdivision receives low convergence (6.6\u00b10.84 inputs/voxel) and no anterior thalamic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis of input convergence is clearly documented with specific numbers and statistical measures. The correlation between cortical and thalamic input patterns (Figure 5\u2014figure supplement 1) provides strong evidence for functionally distinct striatal subdivisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Unbiased hierarchical clustering of striatal voxels (150\u03bcm\u00b3) based on cortical input density patterns revealed largely contiguous volumes despite no positional information being used. Different dendrogram thresholds identified 2-4 major subdivisions, with the 3-cluster solution resembling traditional domains and the 4-cluster solution separating a distinct posterior subdivision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering methodology is rigorous and the emergence of spatially contiguous clusters without using positional information strongly validates the functional relevance of the subdivisions. The analysis is well-documented in Figure 5 and represents a major finding about striatal organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The input pattern analysis revealed clear boundaries between three traditional striatal domains (dorsomedial, dorsolateral, ventral) and uncovered a fourth subdivision in the posterior striatum that may represent a previously unappreciated functional domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of four subdivisions through unbiased clustering (C129, Figure 5) combined with their distinct input patterns (C42, C43) provides strong evidence for this organizational scheme. The posterior subdivision is particularly well-supported by multiple lines of evidence including distinct cortical and thalamic inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C95",
+      "C135",
+      "C136"
+    ],
+    "result": "The posterior striatal subdivision receives strong inputs from auditory, visual, and rhinal cortices plus amygdala, suggesting it may process multi-modality sensory inputs in the context of emotional information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the anatomical connectivity pattern is well-documented (C95, C135, Figure 5b), the functional interpretation (C136) is speculative. The claim about processing multi-modality sensory inputs in emotional context is a reasonable inference but lacks direct functional validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C44",
+      "C45",
+      "C96",
+      "C137"
+    ],
+    "result": "The dorsomedial striatum exhibits the highest degree of cortical input heterogeneity, receiving extremely heterogeneous inputs and potentially serving as an information hub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high input heterogeneity is clearly demonstrated by the clustering analysis showing the dorsomedial subdivision dividing into many smaller clusters at lower thresholds (C96, Figure 5d). The quantitative evidence (C44) supports the characterization, though the 'information hub' interpretation (C45) is somewhat speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The lateral subdivision (likely corresponding to the sensorimotor domain) remained as a single large cluster even at low clustering thresholds generating 15 clusters, suggesting highly homogeneous functional role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is clearly demonstrated in Figure 5d and represents an important contrast to the dorsomedial subdivision's heterogeneity. The persistence as a single cluster across threshold levels provides strong evidence for functional homogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Each cluster-defined striatal subdivision receives inputs from distinct thalamic subregions that align with known thalamic nuclear groups. For the 4-cluster solution: dorsomedial receives anterior group input, ventral receives midline/medial input, lateral receives ventral/intralaminar/posterior/medial input, and posterior receives only weak LP input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thalamic input patterns to each subdivision are well-documented in Figure 5e-f and Figure 5\u2014figure supplement 3. The alignment with canonical thalamic nuclear groups (C100) provides important validation of the functional relevance of the striatal subdivisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "Retrograde tracing validation confirmed that all cortical and thalamic subregions labeled by retrograde bead injections in dorsomedial and posterior subdivisions were predicted by the anterograde dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This validation experiment (Figure 5\u2014figure supplement 4) provides important independent confirmation of the accuracy of the anterograde tracing-based connectivity maps. The complete agreement between methods strongly supports the reliability of the dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis of the complete thalamo-cortico-striatal loop reveals that thalamic nuclei receiving basal ganglia output preferentially interconnect with motor-related cortical areas, with M1/2 directly interconnecting with all basal ganglia output-receiving thalamic nuclei, while other cortical areas show more selective connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The circuit analysis is comprehensive and well-documented in Figure 6. The preferential motor connectivity (C109, C110) is clearly demonstrated, and the contrasting patterns for different cortical areas (C111, C112) provide important insights into circuit organization. However, the functional interpretation about 'importance of cortical motor information' (C110) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C46",
+      "C146",
+      "C147"
+    ],
+    "result": "Thalamic subregions innervated by basal ganglia have strong ties with motor cortical subregions and converge in the same striatal subdivisions with corticostriatal projections from those motor areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is well-supported by the circuit analysis (Figure 6) and represents an important organizational principle of the cortico-thalamo-basal ganglia loop. The convergence of motor-related cortical and thalamic inputs in specific striatal regions is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Network analysis reveals that cortical areas associated with the dorsolateral striatal subdivision are most recurrently connected, nearly all thalamic nuclei targeting a striatal subdivision also project to at least one primary cortical input to that subdivision, but corticothalamic feedback only partially overlaps with thalamocortical/thalamostriatal projecting nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network analysis (Figure 7) provides important insights into the organization of subdivision-specific circuits. The high recurrent connectivity of dorsolateral inputs (C113) and the strong thalamo-cortical-striatal alignment (C116) are clearly demonstrated, while the partial overlap of feedback (C117) suggests complex circuit organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C47",
+      "C118",
+      "C162"
+    ],
+    "result": "Optogenetic experiments confirmed that all anatomically described corticostriatal and thalamostriatal projections tested are functional, with photostimulation of channelrhodopsin-positive axons triggering EPSCs in MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic validation (Figure 8) provides crucial functional confirmation of the anatomical connectivity maps. The systematic testing of multiple pathways and consistent demonstration of functional synapses strongly supports the validity of using anatomical projections to infer functional connectivity after removing fasciculated axons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C165",
+      "C166"
+    ],
+    "result": "Striatal inputs from different cortical or thalamic subregions form synapses with distinct plasticity properties. Thal1 shows facilitation while Thal2 shows depression; Vis shows strong depression while d/vACC does not. These subregion-specific differences may explain previous controversies about cortico- vs. thalamo-striatal properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The optogenetic experiments (Figure 8) clearly demonstrate subregion-specific heterogeneity in synaptic properties with appropriate statistical analysis. The paired-pulse ratio and repetitive stimulation experiments provide robust evidence for distinct plasticity properties. The explanation for previous controversies (C126, C166) is a reasonable inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Dense and diffuse projection convergence exhibit different distribution patterns, with higher diffuse convergence in dorsal striatum and dense convergence biased toward ventral striatum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is documented in Figure 5\u2014figure supplement 1a and represents an important distinction between projection types. The differential spatial distribution suggests distinct functional roles for dense versus diffuse projections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The striatal subdivision with high cortical convergence receives input from multiple cortical classes (not a single class), and thalamostriatal inputs converging with each cortical class do not mimic inputs converging with high/low convergence subdivisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analysis (Figure 5\u2014figure supplement 2) demonstrates that simple cortical class-based organization does not explain striatal subdivision patterns. The finding that high-convergence areas receive multimodal input is important for understanding striatal function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The study's corticostriatal results are largely consistent with prior literature in rat and primate. The mouse brain's small size enabled systematic coverage of all cortical subregions and >93% of thalamus, achieving unprecedented completeness, though accurate cortical subregion assignment can be challenging and required stringent selection criteria (only <10% of AIBS injections included).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature and discussion of methodological advantages and limitations is balanced and well-supported. The acknowledgment of challenges (C151) and stringent selection criteria (C152) demonstrates appropriate rigor. The claim of unprecedented completeness (C150) is justified by the systematic coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior work established that the striatum has stereotypic excitatory input patterns, with some primate and initial mouse studies of corticostriatal topography, but precise projection patterns from most cortical subregions to entire striatum and organization of thalamostriatal inputs (providing ~1/3 of glutamatergic synapses) remain to be systematically characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior knowledge and identify specific gaps that motivate the current study. The citations are appropriate and the characterization of what was known versus unknown is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C163",
+      "C164"
+    ],
+    "result": "Prior studies suggested corticostriatal and thalamostriatal axons differ in release probability and plasticity, but precise differences have been controversial, raising the possibility of heterogeneity within axons from different subregions. Little was known about whether different cortical or thalamic subregions form functionally unique synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately characterizes the state of prior knowledge and controversy in the field, providing appropriate motivation for the functional experiments in the current study. The citations support the claims about prior work and controversy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Recent evidence suggests the posterior striatum receives inputs from distinct dopamine neuron populations, has unique MSN subpopulation composition, and mediates specific behavioral functions in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior work are appropriately cited and provide important context for the identification of the posterior subdivision as a distinct functional domain in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The study examined convergence of thalamic and cortical projections in striatum and thalamic interconnections with cortex and basal ganglia. The thalamic dataset does not include MGN and LGN, though prior rat studies suggest MGN (but not LGN) projects to posterior striatum. The study is complementary to Hintiryan et al., including additional ventral striatal, thalamostriatal, and thalamocortical connectivity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scope of the circuit analysis is clearly described and the limitations (missing MGN/LGN) are appropriately acknowledged with reference to prior work. The comparison with Hintiryan et al. accurately characterizes the complementary nature of the studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C157"
+    ],
+    "result": "There might be circuit differences at mesoscopic resolution across species due to parallel evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation about potential species differences. While reasonable, it is not tested in the current study and represents a suggestion for future work rather than a finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "Anatomical axonal projection maps suggest but do not guarantee synaptic connections, especially in striatum where many fasciculated axons pass through without forming synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This important caveat is well-supported by citations and represents appropriate caution about interpreting anatomical data. The study addresses this limitation through optogenetic validation and removal of fasciculated axons.",
+    "result_type": "MINOR"
+  }
+]

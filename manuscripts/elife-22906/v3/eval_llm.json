@@ -1,0 +1,342 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Cdx2-eGFP is a faithful reporter of endogenous Cdx2 expression and Hippo signaling activity. The eGFP signal correlates with endogenous Cdx2 from the 16-cell stage onward, shows position-dependent expression that segregates by the late 32-cell stage, and correlates with nuclear/cytoplasmic Yap ratios starting at the early 16-cell stage. Cdx2-eGFP expression is downstream of polarity-induced Hippo inactivation rather than position per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C44 provide converging evidence from immunofluorescence correlation analysis (C28, C30), quantitative measurements across developmental stages (C31, C32), and correlation with Yap localization (C35, C36) that Cdx2-eGFP faithfully reports Hippo signaling activity. The data in Figure 1 support these claims with appropriate statistical tests and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C97"
+    ],
+    "result": "Single-cell RNA sequencing reveals temporal dynamics of lineage segregation. The study generated 262 high-quality single-cell transcriptomes spanning the 16- to 64-cell stages. PCA analysis shows developmental time as the primary factor segregating cells, with lineage markers (Cdx2 mRNA) associated with PC2. Cell diversity increased drastically between late 16- and early 32-cell stages, with some cells at 16-cell stage already showing transcriptional lineage divergence into ICM, TE, and co-expressing populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C53 and C97 describe the RNA-seq dataset and initial analyses. The quality control metrics (C45), PCA results (C46-C48), correlation between mRNA and protein (C49), and clustering analyses (C50-C53) are well-documented with appropriate statistical methods. The dataset represents a significant advance over prior work (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Early TE-specific gene expression is activated at the 16-cell stage and includes novel Yap/Tead4 targets. At the 16-cell stage, 55 DEGs distinguish ICM and TE, with 42 genes more highly expressed in TE including known markers (Cdx2, Id2, Krt8, Krt18) and novel genes (Lrp2, Dab2, Bmyc, Dusp4). Many TE-specific genes associate with Tead4 binding sites, and Krt8, Krt18, Lrp2, and Dab2 are lost in Tead4 mutants, identifying them as likely direct Yap/Tead4 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by SCDE analysis (C54), expression data (C55-C56), ChIP-seq comparison with appropriate statistical testing (C58), and genetic validation in Tead4 mutants (C59). The convergence of expression profiling, ChIP-seq association, and genetic loss-of-function provides strong evidence for direct regulation (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C100",
+      "C112"
+    ],
+    "result": "TE transcriptional profile stabilizes early while ICM profile undergoes prolonged maturation. The largest transcriptional changes in both lineages occur at the 16- to early 32-cell transition when co-expressing cells resolve into ICM or TE. The TE lineage shows mild subsequent changes (21, 13, 43 DEGs across stages), while ICM shows extensive maturation (177, 112, 22 DEGs across stages) continuing until the 64-cell stage when EPI/PE segregation begins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C100, and C112 are supported by systematic SCDE analysis across developmental stages shown in Figure 3B. The differential dynamics between TE stabilization and ICM maturation are clearly documented with specific gene numbers and are consistent with the biological interpretation that TE commits earlier than ICM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Morula aggregation assay reveals progressive lineage specification from 8- to late 32-cell stages. Donor cells from 8-cell embryos contribute to both lineages. Starting at early 16-cell stage, a bias emerges with Cdx2-eGFP high cells preferentially contributing to TE and low cells to ICM, progressively increasing with developmental stage. The ability to form both lineages sharply decreases at the 16- to 32-cell transition. Cdx2-eGFP low cells exclusively form ICM by early 32-cell stage, while high cells exclusively form TE by late 32-cell stage, revealing asynchronous fate restriction. Cell behavior in this assay correlates with transcriptional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 describe results from the morula aggregation assay with appropriate sample sizes and statistical tests (Mann-Whitney). The progressive restriction of lineage potential is well-documented across developmental stages, and the correlation with RNA-seq profiles (C70) provides validation. The asynchronous timing of ICM vs TE restriction is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Live imaging of chimera formation reveals cell behavior dynamics and interpretation of aggregation assay. Cdx2-eGFP low cells (n=5) internalized within 8-10 hours and divided only after reaching ICM position. Most Cdx2-eGFP high cells (4/6) remained outside and maintained TE identity, while some (2/6) internalized while downregulating Cdx2. Division is not required for internalization, and complete Cdx2 downregulation is not a prerequisite for internalization. The assay reads out specification state rather than full developmental potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by live imaging data with appropriate sample sizes (n=5-6 per condition). The observations about division timing (C74) and Cdx2 downregulation (C75) are directly documented in the videos. The interpretation that the assay measures specification (C77) is reasonable given the correlation with transcriptional profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Embryo reconstruction assay reveals extended developmental plasticity and asynchronous commitment. Cells from late 16-cell and early 32-cell stages form both lineages regardless of Cdx2-eGFP level. Cdx2-eGFP high cells lose ICM-forming ability by late 32-cell stage, while Cdx2-eGFP low cells retain TE-forming potential until the 64-cell stage. This reveals a different timeline than the aggregation assay, with ICM cells maintaining plasticity longer when not in competition with host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 describe the reconstruction assay results with appropriate documentation of sample sizes and outcomes. The key finding of asynchronous commitment (C84-C86) is well-supported by the data showing TE commitment at late 32-cell stage vs ICM commitment at 64-cell stage. The comparison to aggregation assay timing is explicitly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "ROCKi treatment reveals temporal window of TE sensitivity to Hippo activation. ROCKi treatment starting at 16-cell stage significantly reduced Cdx2+ cells (35% vs 64% control), confirmed by ectopic Hippo activation (loss of nuclear Yap, increased phospho-Yap). Embryos showed gradual resistance when treatment began at later stages, with no effect by late 32-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by quantitative data with appropriate statistical tests (t-test) and immunofluorescence validation of Hippo activation (C89). The progressive loss of sensitivity correlates with the timing of TE commitment observed in other assays. Sample sizes are adequate (n=9-10 per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "DN Lats2 induction reveals temporal window of ICM sensitivity to Hippo inactivation. Up to early 32-cell stage, DN Lats2 expression in inner cells induced fate change to Cdx2+ TE. At late 32-cell stage, 80% of cells still converted but 14% co-expressed markers. By 64-cell stage, most cells maintained ICM identity with only 1% converting to TE. All cells at >64-cell stage were committed to ICM. Loss of lineage plasticity corresponds to when cells become refractory to Hippo signaling changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by the DN Lats2 induction experiments with appropriate controls (mCherry-only, C95) and statistical analysis (Chi-squared test). The progressive loss of ICM responsiveness to Hippo inactivation by 64-cell stage matches the timing from reconstruction assays (C96), providing mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Different assays measure distinct aspects of cell fate: specification vs. potential. The morula aggregation assay measures cell fate specification as cells act according to intrinsic lineage identity in a competitive host environment. The reconstruction assay reveals full developmental potential as cells are forced into different positions without host competition. Transcriptional profiles predict fate in intact embryos and aggregation assays, while reconstruction and Hippo manipulation reveal full potential to respond to positional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 provide a coherent interpretation reconciling the different timelines observed in aggregation vs reconstruction assays. This interpretation is well-supported by the experimental data showing earlier fate restriction in aggregation (early 32-cell) vs reconstruction (64-cell for ICM). The distinction between specification and potential is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "TE and ICM show asynchronous lineage commitment with different timelines across assays. TE progenitors show similar timing of fate restriction in all assays, with majority of Cdx2-eGFP high cells at early 32-cell stage producing only TE. ICM progenitors show fate restriction earlier in aggregation (early 32-cell) than in reconstruction and Hippo-inactivation assays (64-cell), revealing a time window between specification and commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 synthesize results across multiple experimental approaches. The asynchronous commitment is well-documented: TE commits by early 32-cell stage in all assays, while ICM shows specification at early 32-cell (aggregation) but commitment only at 64-cell (reconstruction, Hippo manipulation). This is a major conceptual finding supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Functional significance of asynchronous commitment. The timely commitment of TE cells between late 16- and early 32-cell stages may drive cell sorting by generating a differentiated polarized epithelial layer that stabilizes the inside compartment. ICM commitment may not be needed until spatial perturbations cease. ICM loses TE-forming ability when EPI/PE segregation begins, suggesting a possible functional relationship. Asynchronous commitment may contribute to embryo regulative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C120 are largely speculative interpretations (marked as SPECULATION in evidence_type) about the functional significance of the observed timing. While the proposals are reasonable and consistent with the data, they lack direct experimental validation. C117 has some support from timing correlations, but C115, C116, C119, and C120 are explicitly proposed hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C33",
+      "C34",
+      "C38"
+    ],
+    "result": "Background on Hippo signaling in lineage segregation. Position-dependent Hippo signaling determines ICM-TE segregation. Polarity differences result in differential Hippo activation: active Hippo in apolar cells sequesters Yap to cytoplasm, while inactive Hippo in polar cells allows nuclear Yap/Tead4. Nuclear Yap/Tead4 is required for TE formation and regulates Cdx2, which leads to downregulation of Oct4/Nanog in TE and upregulation of Sox2 in ICM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C21, C33-C34, C38 summarize established knowledge from prior work, supported by appropriate citations. These provide necessary background context for the study but are not novel findings. The claims accurately represent the current understanding of Hippo signaling's role in early embryo development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on early embryo development and cell positioning. The TE gives rise to placental lineages while ICM forms EPI and PE. Inside/outside populations form at 8-16 cell stage with dynamic rearrangements during 16-32 cell divisions. From 32-cell stage onward, position generally indicates lineage fate. Cells inherit varying amounts of apical proteins, with inside cells being apolar and outside cells either apolar or polar. Polarity differences are key to fate assignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 provide essential background on early embryo development, supported by appropriate citations to prior work. These establish the developmental context and known biology that motivates the current study. While not novel findings, they accurately represent established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior conflicting reports on timing of fate restriction. The exact timing when Hippo signaling is instructive for fate is unknown. Previous studies reported conflicting timelines for when inner cells lose TE-forming potential (32-cell, 64-cell, or late blastocyst) and when outside cells lose ICM potential (32-cell stage or at cavitation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 accurately summarize the conflicting literature on fate restriction timing, supported by appropriate citations. This establishes the knowledge gap that the current study addresses. The discrepancies in prior work motivate the need for the systematic approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background on cell polarity and Hippo signaling at 16-cell stage. Most outside cells are polarized with nuclear Yap (inactive Hippo), but a population of apolar outside cells with cytoplasmic Yap (active Hippo) exists. These apolar outside cells are ICM progenitors that will contribute to the inside compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe established knowledge about cell populations at the 16-cell stage, supported by citations to prior work. This provides important context for interpreting the Cdx2-eGFP expression patterns observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Summary of transcriptional lineage separation. There is gradual separation of ICM and TE lineages starting at 16-cell stage, with first transcriptional changes being activation of TE-specific genes including Cdx2. Cdx2 is the only known downstream target of nuclear Yap/Tead4 in the embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 summarize key findings from the RNA-seq analysis. C98 is well-supported by the data, while C99 cites prior work. However, the current study identifies additional Yap/Tead4 targets (Krt8, Krt18, Lrp2, Dab2), which somewhat contradicts C99's claim that Cdx2 is the 'only known' target, though this may refer specifically to prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C118"
+    ],
+    "result": "Background on cell movements and prior ICM plasticity studies. During 16-32 cell divisions, outside cells are internalized due to cleavage plane orientation, but daughter cells often sort back to the surface. Prior work showed outer cells of isolated early blastocyst ICMs formed trophoblast outgrowths, while later stage ICMs formed PE-like outgrowths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 and C118 cite prior work on cell movements and ICM behavior. These provide context for interpreting the functional significance of the timing of commitment observed in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Abstract summary of main findings. The TE transcriptional profile stabilizes earlier than ICM and prior to blastocyst formation. TE specification and commitment coincide at transcriptional stabilization, while ICM retains TE-regenerating ability until early blastocyst. Plasticity of both lineages is coincident with their window of Hippo signaling sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 from the abstract accurately summarize the main findings that are detailed and supported in the results sections. These high-level conclusions are well-supported by the comprehensive experimental evidence from RNA-seq, aggregation assays, reconstruction assays, and Hippo manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Background on ROCKi treatment effects. Treatment of embryos from 2-cell stage with ROCKi enhances ICM and suppresses TE characteristics through Hippo activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 cites prior work establishing that ROCKi activates Hippo signaling. This provides the rationale for using ROCKi in the current study to test temporal sensitivity to Hippo activation.",
+    "result_type": "MINOR"
+  }
+]

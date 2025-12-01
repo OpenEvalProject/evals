@@ -1,0 +1,1618 @@
+{
+  "submission": {
+    "id": "160b4c12-0209-4d57-8046-20519c975e14",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:32:06.656758Z",
+    "updated_at": "2025-11-30T20:32:06.656758Z"
+  },
+  "content": [
+    {
+      "id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "submission_id": "160b4c12-0209-4d57-8046-20519c975e14",
+      "content_type": "manuscript",
+      "content_text": "# Synergistic plasticity of intrinsic conductance and electrical coupling restores synchrony in an intact motor network\n\n## Authors\n\n- Brian J Lane<sup>1</sup>\n- Pranit Samarth<sup>2</sup>\n- Joseph L Ransdell<sup>1</sup>\n- Satish S Nair<sup>2</sup>\n- David J Schulz<sup>1</sup> ([ORCID: 0000-0003-4532-5362](https://orcid.org/0000-0003-4532-5362)) \u2020\n\n### Affiliations\n\n1. Division of Biological Sciences University of Missouri-Columbia Columbia United States\n2. Department of Electrical and Computer Engineering University of Missouri-Columbia Columbia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMotor neurons of the crustacean cardiac ganglion generate virtually identical, synchronized output despite the fact that each neuron uses distinct conductance magnitudes. As a result of this variability, manipulations that target ionic conductances have distinct effects on neurons within the same ganglion, disrupting synchronized motor neuron output that is necessary for proper cardiac function. We hypothesized that robustness in network output is accomplished via plasticity that counters such destabilizing influences. By blocking high-threshold K+ conductances in motor neurons within the ongoing cardiac network, we discovered that compensation both resynchronized the network and helped restore excitability. Using model findings to guide experimentation, we determined that compensatory increases of both GA and electrical coupling restored function in the network. This is one of the first direct demonstrations of the physiological regulation of coupling conductance in a compensatory context, and of synergistic plasticity across cell- and network-level mechanisms in the restoration of output.\n\n## Introduction\n\nThe hallmarks of robust central pattern generator (CPG) output are appropriately tuned excitability of individual neurons combined with circuit-level interactions that maintain appropriate temporal coordination (i.e., phasing) of these neurons. Through both developmental and ongoing tuning processes, CPGs can maintain reliable network output for decades across the lifespan of an individual, despite constant feedback from the changing nature of both the organismal and natural environment. Yet underlying this constant reliability of network output exists a surprising amount of variability in the individual parameters necessary for producing activity. For instance, despite having nearly identical output across animals, networks can exhibit a five-fold or more range in intrinsic and synaptic conductance values (Marder and Goaillard, 2006; Schulz et al., 2006; Marder, 2011; Roffman et al., 2012). Such variability in intrinsic conductances is not limited to CPGs, but has been documented in several cell types of the mammalian brain, including cerebellar Purkinje cells (Swensen and Bean, 2005), and globus pallidus neurons (G\u00fcnay et al., 2008). Additionally, the\u00a0synaptic strengths between mammalian central neurons have been shown to vary in several brain regions (Nelson and Turrigiano, 2008; Turrigiano, 2008; Maffei et al., 2012).\n\nThe origins and implications of this variability are still an intense area of investigation (Krubitzer and Kahn, 2003; Turrigiano and Nelson, 2004; Ciarleglio et al., 2015). We hypothesize that this variability might be a result of ongoing compensatory changes required to maintain reliable output over time. This compensation, termed homeostatic plasticity, has been well documented both for plasticity of intrinsic excitability via changing ionic conductances (Turrigiano et al., 1994), as well as for changes in chemical synaptic strength (Desai, 2004; Turrigiano, 2012). Variability in conductances may also be an adaptive trait in and of itself: variable solutions that produce convergent circuit output may provide a selective advantage, or perhaps be a substrate for adaptation and evolution (Marder and Goaillard, 2006; Grashow et al., 2009).\n\nRegardless of whether such variability is the result of homeostatic compensation, differential tuning across networks, or a combination of these and other heretofore undiscovered causes, a potential cost to such variability has recently been identified. In the cardiac ganglion (CG) of the Jonah crab (Cancer borealis), five Large Cell motor neurons (LCs) generate completely synchronous output, as a result of pacemaker inputs within the network, to drive simultaneous heart muscle contraction in the crab (Tazaki, 1972). Despite completely uniform and synchronous activity within the network, LCs show highly variable underlying maximal conductances (Ransdell et al., 2012). These variable conductances render the neurons susceptible to perturbations that target a subset of ionic conductances: when high-threshold K+ currents were blocked with tetraethylammonium (TEA), the motor neurons lost coordinated output and became divergent in their patterns of firing (Ransdell et al., 2013a). These CG neurons compensate for this change in excitability, presumably to homeostatically maintain a target level of excitability (Ransdell et al., 2012). However, none of the network level impacts of this perturbation and plasticity have been investigated. Indeed, it is difficult to study homeostatic plasticity in intact networks and to simultaneously take into account both properties of individual cells as well as their network interactions. In the present study, we discovered that LC variability makes the network vulnerable to desynchronization as a result of TEA exposure, but that compensation resynchronizes the network within 30\u201360 min via both intrinsic cellular and circuit-level physiological mechanisms. To examine the underlying mechanisms, we developed a biophysical computational model of the entire cardiac network. The network model enabled a comprehensive search of the conductance space for potential compensatory mechanisms that preserved network synchrony, and we used these findings to guide further experimentation. Our study revealed cooperative homeostatic plasticity among intrinsic conductances and electrical coupling across multiple cells in the cardiac network. We interpret this as a novel homeostatic compensatory mechanism contributing to the overall robustness of CPG output.\n\n## Results\n\n### Exposure to TEA desynchronizes LC burst waveforms and increases excitability\n\nRansdell et al. (2013a) were able to repeatably reduce the magnitude of high-threshold K+ currents (IKd + IBKKCA) by ~92% in isolated LCs with 25 mM TEA. We used this experimental manipulation on the 3 anterior LCs in intact CGs (Figure 1A) causing LCs in the same ganglion to change from identical (Figure 1B) to divergent, asynchronous output (Figure 2A,I,II) after exposure to TEA. After application of TEA, motor neurons became noticeably more depolarized during burst potentials and LC spiking seen on the extracellular recordings increased substantially (Figure 2A). Additionally, comparison of intracellular voltage waveforms revealed a loss of conserved output (Figure 2A). These results are consistent with the hypothesis that variable underlying conductances of the LCs makes them vulnerable to a uniform perturbation of a subset of conductances such as the TEA blockade that targets high-threshold K+ conductances. Because our previous results demonstrated that the change in excitability that accompanies TEA exposure in LCs is accompanied by an increase in A-type K+ current, we hypothesized that compensation may also occur at the network level to restore synchrony among LCs subsequent to the TEA block.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig1-v2.jpg)\n\n**Figure 1.:** (A) Petroleum jelly wells (gray) allow the posterior LC1 and LC2 as well as the pacemaker small cells (SCs) to be pharmacologically isolated from the anterior large cells (LC3, LC4, LC5). Pacemaker cells can be maintained in physiological saline, or the network can be temporarily shut down by replacing saline with 750 mM sucrose. Extracellular recordings are performed with stainless steel pin electrodes from the 'trunk' nerve that contains the axons of all 5 LCs and the pacemaker cells. Intracellular recordings are taken from the anterior LCs. The area outside the petroleum jelly wells is superfused with pharmacological agents to target only the anterior large cells. (B) Simultaneous intracellular recordings from the three anterior LCs and extracellular recording of the network output via the trunk nerve, demonstrating synchrony among LCs in the control ongoing rhythm. Scale bars = 10 mV, recording duration = 9 s.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative recordings of LC3 and LC5 and of network activity over one hour of TEA exposure. Roman numerals (I, II, III, IV) designate time points of reference throughout the remainder of the figure, as follows: I \u2013 control saline, II \u2013 acute TEA exposure identified as the maximum effect on loss of synchrony across LCs (i.e. lowest R2 value), III \u2013 30 min of TEA exposure, IV \u2013 60 min of TEA exposure. (B) Scatterplots show pairwise correlation of time-matched voltages (sampled at 10 kHz) of the waveforms shown in the representative traces. R2 values are calculated from Pearson\u2019s correlation tests for these two cells. Loss and restoration of conserved output is demonstrated by changes in coherence in the scatterplot as well as in R2 value. (C) Synchrony of waveforms of the two cells seen in panels A and B plotted as R2 values over the entire time course of the experiment. Roman numerals and large gray circles represent the values that were obtained from the scatterplots as each time point shown in panel B. TEA perfusion persists from time zero through 60 min. Box plots show distributions of R2 values from cross-correlation analyses of LC voltage waveforms for pairs of LCs from N = 11 preparations. Lines within boxes mark the median, box boundaries represent 25th and 75th percentiles, whiskers represent 5th and 95th percentiles, and points represent outlying observations. Groups with significant differences in median synchrony (p<0.05; Wilcoxon signed rank tests) are denoted with different letters. (D) Excitability of LCs was quantified by five measurements (mean \u00b1 SD). Analysis of each preparation used the average of 10 consecutive bursts at each time point (N = 8 preparations). Number of spikes per burst, spike frequency within each burst, and the latency between pacemaker firing and first motor neuron spike (SC-LC Phase Delay) were calculated from extracellular traces. Total depolarization and amplitude of each burst are based on intracellular recordings. Significant differences across groups (p<0.05; paired t-tests) are denoted with different letters, such that any two bars with a letter in common are not significantly different.\n\n### Compensation restores both excitability and synchrony following TEA exposure\n\nTo determine whether compensatory responses can restore both excitability and synchrony of LC output following TEA block, anterior LCs were superfused with TEA for at least 1 hr while the\u00a0activity of the individual LCs and the network were continuously recorded. Our data demonstrate that both synchrony and excitability are restored towards baseline levels over a period of 30\u201360 min following TEA exposure. Figure 2A and B illustrate a typical progression through the loss and subsequent restoration of synchrony among LCs during one hour of continuous exposure to TEA. Acutely after application of TEA, we saw a significant reduction in synchrony as measured by R2 (see Materials\u00a0and\u00a0methods; Ransdell et al., 2013a) across LC voltage waveforms (Figure 2B,C, time point II). Following this reduction, waveform synchrony values consistently recovered towards baseline levels, often by 30 min, and were no longer statistically different from baseline by 1 hr of treatment with TEA (Figure 2C, right). To monitor compensatory changes in excitability, five different measures of excitability were calculated using both extracellular and intracellular recordings (Figure 2D; see Experimental Methods). The spikes per burst, average spike frequency, total burst depolarization and burst amplitude all were significantly increased immediately after exposure to TEA ('acute'), while the small cell pacemaker (SC)-to-LC phase delay was significantly decreased (Figure 2D). All 5 measures also then showed a significant change back towards their baseline levels between the 30 min and 60 min time points. While all measures showed clear shifts towards restoration of baseline excitability, the number of spikes per burst, spike frequency within each burst, burst amplitude, and total burst depolarization were not completely restored to control levels; the exception was the SC-LC phase delay which was fully restored (Figure 2D). Preparations exposed to TEA for 2\u20133 hr showed no further change in excitability (data not shown). For this reason, time scales longer than 1 hr were not included in our analyses.\n\n### Modelling predicts compensation based on intrinsic conductances\n\nTEA exposure reduces LC synchrony and induces hyperexcitability. Our model development and selection criteria resulted in a population of 27 model CG networks with variable underlying conductances of the constituent neurons that successfully recapitulated the biological data observed in TEA (see Methods, Supplemental Information). Our previous results identified an approximate 2.2 \u00b1 0.8-fold change in IA in LCs as a result of 60 min of TEA exposure (Ransdell et al., 2012). Therefore, we used the model networks to explore potential mechanisms of compensation by first increasing and decreasing each individual maximal membrane conductance by a similar factor of 2. We searched for changes that would increase LC spike synchrony while countering the hyperexcitability induced by TEA. To easily visualize the trends, each network was normalized to its initial value for spike synchrony. These data are shown for all conductances in Figure 3.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of model network organization and connectivity. Five large cell (LC) motor neurons are innervated via excitatory synapses from a common small cell pacemaker input (SCs). LC model neurons consist of two compartments - soma and axon - of which only the somata are pictured. Somata contain 9 conductances: GCaS, GCaT, GLEAK, GCAN, GA, GBKKCa, GSKKCa, GKd, and GNaP. Paired LCs (1+2, 4+5) have stronger local coupling (black resistor symbols), and all 5 LCs are reciprocally electrically coupled via weaker gap junctions (gray resistor symbols). An example of LC3 and LC4 model output within a network burst activity is shown in the red and blue traces under both control and TEA (90% reduction in both GKd and GBKKCa) conditions. Graphical representations of spike synchrony (raster plots) and waveform synchrony (scatterplots; as in Figure 2) are shown for the model neurons, demonstrating that both measures reflect the loss of LC synchrony as a result of TEA. (B) Measurements of both output variables (# of spikes and spike synchrony) were made under three model conditions: control, TEA, and TEA + either a 2x increase (G\u2191) or 2x decrease (G\u2193) in a given conductance. N = 27 distinct model networks. All output measurements are normalized to their initial (control) conditions. Red lines represent the mean for a given group. Dashed line represents the 1.0 value (baseline) for a given measure. Compensatory responses that restore excitability and synchrony will tend to move the mean towards baseline.\n\nOur initial goal with the model was to determine whether changes in single conductances were sufficient to elicit compensatory changes in output that help restore both excitability and synchrony. While it is not difficult to conceive of a change in multiple aspects of the parameter set that could achieve restoration of output, it is perhaps not as intuitive \u2013 but presumably the most parsimonious solution \u2013 for a single conductance to have such an impact. True to this expectation, while various manipulations of Gmax values improved either excitability or synchrony, very few conductance changes improved both. The optimal solution of significantly improving spike synchrony and also significantly decreasing the total number of action potentials was achieved in only one case: two-fold increase in GA resulted in a mean synchrony score that was significantly different from the TEA case (p<0.05, paired t-test) but not significantly different from control (p=0.157). No other change in a given conductance resulted in this combination of statistical outcomes. Not every model cell or networked improved uniformly with this conductance change. Therefore, while these results do not rule out a contribution for other conductances, they do suggest that an increase in GA, as seen in previous experimental studies on isolated LCs (Ransdell et al., 2012), may be the most likely candidate for a change in intrinsic conductance promoting synchrony at the network level. These data suggest that while a single conductance change (increased GA) can help restore both excitability and synchrony, variations in a single voltage-dependent conductance may not be sufficient to account for the full compensation response. In addition to perturbing only individual conductances, we also varied current kinetics and activation parameters (half-activation voltage V1/2, \u00b1 10 mV, and slope factor k, by 0.5x and 2x (Ballo et al., 2010) and time constant by \u00b1 10 ms) for all the cell currents individually, and found that no changes in parameters for a single current could simultaneously restore excitability at the single cell level, and synchrony at the network level (data not shown). While the analysis has focused only on the parameters of a single current, simultaneous changes in parameters of multiple currents could also potentially provide similar compensation, and that remains to be explored. However, our analysis does reveal the substantial contribution of changing a single parameter \u2013 GA \u2013 on multiple aspects of network compensation, to an extent that is beyond simple intuition. Importantly, the model also extends the biological data by demonstrating that waveform synchrony can translate into spike synchrony. Because of the electrotonic distance between the somata and axons of LCs, we cannot measure spike synchrony directly in this preparation. The model allows us to infer that waveform synchrony (and loss of synchrony) can indeed translate to the level of the most proximal cellular output \u2013 spiking.\n\n### Intrinsic compensation contributes to restoration of synchrony\n\nModel runs predicted that increases in IA help restore LC excitability and synchrony. To test this experimentally, we silenced pacemaker activity with isotonic sucrose solution (see Methods, Supplemental; Figure 1A), and tested the similarity of responses of each individual LC to a biologically realistic current stimulus (Ransdell et al., 2013a). We compared LC3 and LC5 to the same current injection at three time points: control, 5 min post-TEA, and 1 hr post-TEA. Between current injections, pacemaker activity was restarted by removal of the sucrose block. This allows us to test each cell in isolation, but compensation occurs in the intact network. The initial voltage responses to our stimulation protocol in LC3 and LC5 in control conditions are highly similar to one another, and their level of waveform synchrony was not significantly different from the synchronous activity across these LCs during intact control network activity (Figure 4A,B). Immediately following TEA application, LC3 and LC5 show disparate output when driven with a common stimulus protocol (Figure 4A). Finally, our data show significant increases in R2 of voltage activity within 1 hr across isolated LCs (Figure 4B), demonstrating that intrinsic compensation does improve network synchrony. However, after 1 hr the synchrony values were significantly lower than control values (Figure 4B,C), suggesting that intrinsic compensation alone is insufficient to restore synchrony. To determine whether compensatory changes in IA occur in the intact network, we measured IA with two-electrode voltage clamp in LCs before and after 1 hr of TEA exposure. Measurements were made while the network activity was temporarily halted with sucrose block, and compensation occurred with ongoing network activity. In all cases peak IA current increased (Figure 4D), with a mean increase of 56% (p<0.05, n\u00a0=\u00a06, Wilcoxon signed rank test). These data are consistent with the hypothesis that a compensatory increase in IA can help promote synchrony in these networks.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig4-v2.jpg)\n\n**Figure 4.:** A reversible sucrose block was used to temporarily stop network activity and a current stimulus protocol was delivered to individual LCs at three time points: control, after 5 min of TEA perfusion (acute), and after 1 hr of TEA perfusion (after compensation). (A) Representative traces from 2 different preparations compare the responses of LC3 (orange) and LC5 (blue) to the same current injection (Stimulus Protocol) at each of the three time points. (B) R2 values for N = 6 preparations at each time point are plotted with the same preparation connected across time points. All 3 conditions were significantly different from one another (p<0.01; paired t-tests). (C) When isolated cell output was compared with the\u00a0output in the network, there was no difference in R2 at the control state, but following 1 hr of compensation in the network, there was a significant (p<0.002 \u2013 t-test) difference in synchrony scores (mean \u00b1 SD) between cells when isolated vs. when they are in the intact network. (D) IA was measured by two-electrode voltage clamp before and after compensation in N = 6 LCs in the intact CG. Voltage clamp data were obtained by temporarily silencing network activity with 750 mM sucrose. There was a significant increase in IA after 1 hr in TEA (mean 56 \u00b1 65% increase, p<0.05 \u2013Wilcoxon signed rank test). (E) Similarity of waveform in the same neurons before and after 1 hr TEA exposure. R2 values were calculated for the output of the same cells before and after TEA exposure, and are shown as before-and-after values in the same cell connected by a line. Box plots show distributions of R2 values from cross-correlation analysis of LC voltage waveforms N = 8 cells. Lines within boxes mark the median, box boundaries represent 25th and 75th percentiles. 'Control' is the comparison of voltage waveforms to 2 separate rounds of current injection in the absence of TEA. Although there was improvement in similarity of waveforms after 1 hr in TEA (panel A), the newly compensated output after 1 hr of TEA exposure does not recapitulate the original response to the stimulus protocol (significantly different from control; p<0.01 \u2013 Wilcoxon signed rank test).\n\nAlthough the waveforms of LC3 and LC5 were not different from one another after 1 hr of compensation, anterior LC burst potentials did not reproduce their original waveform after compensation (see Figure 2; Panels I and IV). We also used the LCs from data shown in Figure 4A to compare the voltage responses of individual LCs to a fixed stimulus before and after compensation. Repeatable voltage responses under control conditions indicate that trial-to-trial variability is negligible (mean R2 = 0.997; Figure 4E, control). However, the voltage response after compensation was significantly different from the control voltage response (p<0.01, n\u00a0=\u00a08, Wilcoxon signed rank test), indicating that intrinsic compensation does not restore the original cellular output (Figure 4E; control vs. TEA\u00a0[1\u00a0Hour]).\n\n### Increased model electrical coupling conductance helps restore synchrony\n\nIf intrinsic compensation does not fully restore synchrony, another mechanism must be present to explain the results observed during network compensation. LCs receive common excitatory inputs from the pacemakers and one hypothesis is that changing the strength of these chemical synapses might help to restore LC firing to appropriate levels. LCs in the network are also electrically coupled to one another via gap junctions which presumably promotes synchrony, although clearly the native coupling is not able to maintain LC synchrony in TEA (Hagiwara et al., 1959; Tazaki and Cooke, 1983; Cooke, 2002). A second hypothesis is that increased electrotonic coupling between LCs could buffer against disparate output and help to restore synchrony.\n\nUsing our set of model networks, we increased and decreased the strength of chemical synapses in 10% increments to test the effects on excitability and synchrony. We then did the same with model electrical coupling conductance. We found that increasing the strength of either chemical synapses or electrical coupling increased both synchrony and excitability (Figure 5 left). However, increasing the chemical synaptic conductance in conjunction with TEA blockade also increases spiking of the LCs ~25\u201330% in contrast to the biological decrease in excitability relative to the acute TEA exposure seen with compensation. Conversely, only a small change in LC spiking occurs with an increase in electrical coupling (~9%, Figure 5 left). Reducing the strength of either chemical synapses or electrical coupling decreased overall spike synchrony (Figure 5 right), violating the assumptions of compensation based on the biological data. Reducing chemical synaptic strength eventually ceased LC firing altogether (data not shown).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig5-v2.jpg)\n\n**Figure 5.:** Measurements of two output variables (# of spikes and synchrony) were made under three model conditions: control, TEA (90% reduction in both GKd and GBKKCa), and TEA + an incremental increase or decrease (up to 100% by 10% increments) for both chemical (pacemaker to LC) or electrical (LC to LC) connections. N = 27 distinct model networks. All output measurements are normalized to their initial (control) conditions to visualize trends. Dashed line represents the 1.0 value (baseline) for a given measure. Red lines represent the mean for each group. Each different colour and shape for points corresponds to one model network, and the same networks are shown across conductance levels. P-values in each plot refer to the results of a one-way ANOVA across all groups. Asterisks (*) denote groups in each plot that were significantly different from the TEA group via Holm-Sidak post-hoc tests.\n\n### Increased electrical coupling helps restore synchrony across LCs in experiments\n\nIncreased electrical coupling restored synchrony in model LCs with only a modest effect on excitability. To investigate this relationship in experiments, we isolated LCs and used a\u00a0dynamic clamp to add an artificial coupling conductance. Pairs of LCs from the same network were physically isolated by thread ligature, exposed to TEA, and simultaneously received the same stimulus protocol, while the\u00a0dynamic clamp added a non-rectifying artificial coupling conductance (from 0 to 0.2 \u03bcS) between the cells. The driving force was equivalent to the voltage difference in membrane potential between the coupled cells. Increasing the artificial coupling conductance significantly increased the correlation coefficient of the waveform between the two cells (Figure 6A), with a synaptic conductance value of 0.2 \u03bcS able to rescue synchrony of LCs to levels observed in intact networks (Figure 6A). These results provided proof of principle that increasing electrical coupling could be responsible for resynchronization in the network.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig6-v2.jpg)\n\n**Figure 6.:** (A) Artificial electrical coupling restores synchrony in isolated LCs. With acute exposure to TEA, isolated LCs produce disparate output in response to an identical stimulus. The stimulus protocol consists of current injections that mimic biological synaptic currents and back propagating action potentials (see Ransdell et al., 2013a) from four consecutive bursts of network activity. The\u00a0current was injected simultaneously into isolated cells, while the\u00a0dynamic clamp was used to provide an artificial coupling conductance. Representative traces of the same two cells shown in TEA with different levels of synaptic current applied. Only the final burst of the four-burst input stimulus is shown for clarity. N = 7 different preparations (bottom panel) show an increase in synchrony with increasing coupling conductance. (B) Biological coupling increases during network compensation. Hyperpolarizing current injections were used to measure coupling coefficients between LC3 and LC5 during control conditions, with acute TEA exposure (5 min) and after 1 hr compensation in TEA. The\u00a0input resistance of LCs was measured and showed no significant change at any time point. No significant differences were observed for coupling coefficient or coupling conductance between control and acute TEA conditions. Coupling coefficient significantly increased after 1 hr in TEA (Mean increase 85 \u00b1 82% from control, N\u00a0=\u00a011, p<0.01, Wilcoxon signed rank test). Measurements from LC4 and LC5 show that coupling conductance increased significantly as a result of 1 hr TEA exposure (mean increase 49.5 \u00b1 36% from control, N\u00a0=\u00a013, p<0.001, Wilcoxon signed rank test). Significant differences across groups are denoted by different letters. Plots show mean \u00b1 SD. (C) Representative traces from two different preparations of changes in coupling observed before (Control) and after 1 hr of TEA exposure. Top traces are between LC3-LC5 and the bottom traces are between LC4-LC5. Measurements were made in two-electrode current clamp, and the\u00a0current was injected into LC5. Because current injections were manually timed to occur between bursts of network activity, slightly different durations of current pulses occurred in the two recordings in the top recordings. Recordings from LC4-LC5 were used for coupling conductance measurements seen in panel B, as their close proximity allows for much less influence of electrotonic distance on calculations of conductance.\n\nWe then measured coupling coefficients between LCs during compensation in the intact network. Coupling coefficients between cells increased significantly after 1 hr in TEA (mean increase 85%, p<0.01; Figure 6B,C). The coupling coefficient is a useful description of the functional relationship in coupling, but does not identify the electrophysiological mechanism. Plasticity of coupling properties can ultimately be influenced by two fundamentally different mechanisms: altered resistance of the non-junctional membrane of the coupled cells, or modification of gap junctional conductance. Using two-electrode current clamp, we saw no significant differences in the apparent input resistance of LCs in control physiological saline, after acute TEA exposure, or after compensation (1 hr TEA exposure; Figure 6B,C). These results indicate that changes in passive membrane conductance (GLeak) are not responsible for increased coupling coefficients.\n\nTo directly test whether coupling conductance between LCs increases as a result of TEA-induced compensation, we focused on LC4 and LC5 pairs within the same network. In the crab CG, anterior LCs exhibit strong local electrical and dye coupling (Tazaki and Cooke, 1979, 1983). The branch containing LC4 and LC5 somata can be separated and electrotonically 'sealed' from the network by thread ligature to create ideal conditions for measuring coupling conductance. With two electrodes in each cell, we used hyperpolarizing current injections to measure resistance and calculate junctional conductance independent of membrane resistance (as in Bennett, 1966; see Materials and methods). Coupling conductance (GC) between LC4 and LC5 significantly increased during 1 hr of TEA exposure (mean increase 49.5%, p<0.01, N = 8; Figure 6B,C).\n\n### Interaction of intrinsic and electrical synaptic compensation\n\nTaken together, our experimental and modelling results suggest that an increase in GA is able to counter the increase in excitability of LCs in TEA in a compensatory fashion, as well as promote restoration of synchrony, but was insufficient to restore synchrony fully. Additionally, our results suggest that an increase in coupling among LCs can greatly promote synchrony with only a modest effect on excitability. Therefore, we next used our model networks to investigate how GA and GC might interact to promote synchrony by calculating synchrony scores as conductances of all 27 model networks were adjusted. First, we increased GA alone in 10% increments up to a 100% increase (Figure 7). Increasing GA up to +40% promoted greater synchrony after TEA blockade, but was unable to fully restore synchrony even with increasing conductance levels, consistent with our biological data (Figure 4). Increasing GA beyond +40% did not further improve synchrony (Figure 7), and ultimately caused LCs to cease firing altogether. We also increased model GC incrementally (from +10% to +150%), and found that electrical coupling alone was capable of restoring synchrony fully, but this required a 140% increase in its value (Figure 7). Finally, we increased both GA and GC together in 10% increments, revealing a potentially synergistic relationship: a smaller increase of 70% in each conductance was able to produce spike synchrony that was indistinguishable from control (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16879/elife-16879-fig7-v2.jpg)\n\n**Figure 7.:** (A) Voltage response of a typical network LC3 (gray) and LC4 (black) cells under three model conditions: control, TEA (90% reduction in both GKd and GBKKCa), TEA + 70% increase in GA, and TEA + 70% increase in GA and GC. (B) Effects of increasing GA alone, GC alone, or both GA and GC on synchrony in model networks. Dashed lines represent simple linear regression fits to the points for each condition. Black line represents the change in synchrony from control to TEA. Points shown are the average values for N = 27 networks. (C) Summary of Synchrony Score shown for all 27 model networks. Stepwise changes are shown from Control, TEA, TEA + increasing GA by 70%, and TEA + increasing both GA and GC by 70% (the point at which maximal synchrony is restored as per the analysis in panel B). Individual points correspond to those used to generate averages in panel A at the 70% level to give an idea of the\u00a0variability in the data set. Individual preparations are connected with lines to show trends across networks.\n\n## Discussion\n\nHomeostatic or compensatory plasticity in the nervous system has been the subject of intense interrogation, with studies focusing on both homeostatic synaptic scaling (Turrigiano, 2012; Lee et al., 2014) and tuning of ionic conductance relationships to maintain a target level of excitability (Turrigiano et al., 1994; Desai et al., 1999). However, few studies have sought to integrate multiple mechanisms to directly address emergent network stability from compensatory processes acting at the level of single neurons. Moreover, only recently has there been an appreciation that variability in underlying cellular parameters such as conductance magnitudes (Schulz et al., 2006; Pratt and Aizenman, 2007; Wilhelm et al., 2009), activation properties of channels (Olypher et al., 2006; Amendola et al., 2012), and synaptic strengths (Olypher and Calabrese, 2007; Wilhelm et al., 2009; Grashow et al., 2010) may form part of the repertoire of compensatory mechanisms that endow networks with remarkable robustness characteristics. Homeostatic plasticity has been reported in single isolated neurons (Swensen and Bean, 2005; Ransdell et al., 2012), in artificial networks formed in culture (Desai et al., 1999; Ibata et al., 2008), or in thin sections of the CNS (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013).\n\nCortical slice preparations have demonstrated homeostatic plasticity of intrinsic conductances coordinated with chemical synaptic plasticity (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013), and Mauthner cells in fish have been shown to exhibit coordinated activity-dependent changes in both the chemical and electrical components of its mixed synapses (Yang et al., 1990; Pereda and Faber, 1996). While membrane conductances and properties of electrical coupling are known to interact in critically important ways to promote synchrony (Curti et al., 2012; Gutierrez and Marder, 2013), to our knowledge the present study is the first demonstration of coordinated homeostatic plasticity of intrinsic and electrical synaptic conductances in a comprehensive network-level example of homeostatic compensation.\n\nWe hypothesized that plasticity distributed throughout the network might provide robustness of network output. Using a combination of pharmacology, electrophysiology, and modelling approaches in intact neural networks, we first uncovered a striking vulnerability of neural networks to underlying cellular variability. We then demonstrated that an intact network has mechanisms that allow for robustness in the\u00a0output via synergistic compensatory changes across the\u00a0individual cell (ionic conductance) as well as trans-cellular (electrical coupling) properties. The interplay of intrinsic and synaptic parameters, and distributed plasticity in determining network output, is difficult, if not impossible, to unravel experimentally. This makes investigations via biophysical models an attractive alternative to narrow possibilities, and complement experiments, as we have demonstrated.\n\n### Multi-component compensation can synergistically restore network output\n\nPrevious modelling studies found that K+ currents can increase or help restore synchrony between electrically coupled neurons (Pfeuty et al., 2003), so we first hypothesized that a compensatory increase in A-Type K+ membrane conductance could be a mechanism underlying both restored excitability and resynchronization. Over the course of 30\u201360 min, increased IA was associated with decreasing cellular excitability [see also (Golowasch et al., 1999)] and improvement of coordinated motor neuron firing. However, intrinsic compensation alone was insufficient to fully restore synchrony across LCs. A concomitant increase in electrotonic coupling ensured virtually complete resynchronization. Our modelling results suggest that although a sufficient increase in electrical coupling alone could restore full synchrony (140% increase), it could not simultaneously restore the original level of excitability. Only a 70% increase was necessary when accompanied by a concomitant increase in GA. Therefore, we conclude that multi-component mechanisms are not only necessary for full compensation, but also that their synergistic action is potentially more efficient than either mechanism operating in isolation.\n\n### Comparison of our results in the context of behavioural/motor plasticity\n\nWhile our results occurred in a compensatory context, the underlying mechanisms bear striking similarity to motor output plasticity induced by operant conditioning in Aplysia. In a series of elegant experiments, it has been shown that chaotic exploratory and consummatory radula biting movements of Aplysia during food searching behaviour can be stably modified by operant conditioning, leading to prolonged bouts of radula movements with increased frequency and more stereotyped rhythmic organization (Nargeot et al., 2007; Nargeot and Simmers, 2011). Chaotic biting patterns result from inherently variable and unsynchronized bursting of CPG neurons that are each randomly capable of triggering bites (Nargeot et al., 2009). Following operant conditioning, induction of regular and synchronized bursting of pattern-initiating cells can be attributed to changes in both intrinsic excitability and electrical coupling strength. Specifically, changes in intrinsic excitability attributed to changes in leak conductance underlie the increase in frequency of motor output, while increases in coupling strength allow for the synchronization and regularization of bursting (Nargeot et al., 2009; Sieling et al., 2014). The full shift in behavioural and circuit output is therefore the additive influence of both intrinsic and electrical synaptic conductances. The striking similarity in these underlying mechanisms suggests that these kinds of circuit-level mechanisms may be a conserved strategy for stabilization of synchrony within network output, be it compensatory or in the context of behavioural plasticity.\n\n### Physiological regulation of coupling conductance\n\nThe speed (within 30 min) and magnitude (up to a doubling of effective coupling) of physiological changes seen in electrical coupling was remarkable. Although electrical coupling has long been known to promote synchrony in many systems, including the CG (Tazaki, 1972; Bennett and Zukin, 2004), the physiological interaction of electrical coupling with intrinsic conductances to affect a compensatory output has not been examined. Previous work in the crustacean STG has demonstrated how the\u00a0synchronized activity of pacemaker cells is dependent on an interaction of intrinsic conductances and electrical coupling (Sz\u00fccs et al., 2000, 2001; Soto-Trevi\u00f1o et al., 2005), and that distinct circuits can be brought into synchrony via manipulations of electrical and chemical synapses (Elson et al., 1998; Sz\u00fccs et al., 2000, 2009). But none of these studies have addressed the interaction of membrane conductance and electrical coupling in a compensatory context. Similarly, plasticity of electrical synapses has drawn considerable attention after being discovered in the mammalian central nervous system, including the thalamic reticular nucleus (Landisman and Connors, 2005; Haas et al., 2011), inferior olive (Lefler et al., 2014; Mathy et al., 2014), and retina (Kothmann et al., 2009; V\u00f6lgyi et al., 2013). Studies in the thalamic reticular nucleus have suggested that potentially compensatory changes in coupling are important to maintain network stability as large changes in intrinsic excitability occur across development (Parker et al., 2009). These discoveries increased awareness of the complex functional roles and plasticity of coupling (Pereda et al., 2013; O\u2019Brien, 2014; Haas, 2015), and also spurred research to identify molecular mechanisms that underlie plasticity and maintenance of these structures (Flores et al., 2012; Li et al., 2012; Turecek et al., 2014). Our study adds to this growing appreciation for plasticity of electrical synaptic connections in the context of homeostatic plasticity.\n\n### Variability, plasticity, and network output \u2013 the bigger picture\n\nStable levels of intrinsic neuronal excitability and temporal coordination within networks are critical features across all nervous systems. Underlying both neuronal and network outputs are complex, and often highly variable intrinsic and synaptic properties of constituent neurons (Marder, 2011; Norris et al., 2011). Our data demonstrate that the\u00a0intrinsic variability between cells of the same type can make networks vulnerable to loss of temporal coordination, in this case desynchronization of motor neuron output. Although LC activity was fully resynchronized within 1 hr, recovered LCs never recapitulated their original voltage waveforms. While the intrinsic conductances involved in our manipulation and compensation (GKd, GBKKCa, GA) have overlapping functions and characteristics (Ransdell et al., 2012), our findings demonstrate that individual conductances are not truly redundant. Degeneracy of ion channel properties leading to this type of relationship has been put forth as a mechanism underlying robustness and adaptability in neural networks (Tononi et al., 1999; Marder and Goaillard, 2006), but our study suggests physiological limits to neural network compensation and robustness. These limits may themselves be a contributing factor to the nature and progression of pathology in neurodegenerative diseases (Trasande and Ramirez, 2007; Beck and Yaari, 2008; Small, 2008).\n\nWe induce desynchronization and compensation in our studies through pharmacological block of a subset of K+ conductances with TEA. However, the precise role these mechanisms play in fully intact biological networks is unclear. Intrinsic conductances can be differentially affected by ubiquitous natural mechanisms such as neuromodulation (Marder, 2011, 2012) or temperature changes (Tang et al., 2012; Marder et al., 2015). Further, the effectiveness of electrical coupling can be affected by the\u00a0modulation of intrinsic cellular conductances (Szabo et al., 2010). Maintaining reliable synchronization of the\u00a0output under changing conditions is not trivial, and understanding the robustness and the\u00a0constraints of homeostatic systems that cope with such perturbations remains an important area for future investigation (Marder et al., 2014).\n\n## Materials and methods\n\n### Animals\n\nAdult male Jonah crabs, Cancer borealis, were shipped overnight from The Fresh Lobster Company (Gloucester, MA). Crabs were maintained in artificial seawater at 12\u00b0C until used. Crabs were anaesthetized by keeping them on ice for 30 min prior to dissection. The complete CG was dissected from the animal and pinned out in a Sylgard-lined petri dish in chilled physiological saline (440\u00a0mM NaCl, 26\u00a0mM MgCl2, 13\u00a0mM CaCl2, 11\u00a0mM KCl, and 10\u00a0mM HEPES, pH 7.4\u20137.5, 12\u00b0C). Chemicals were obtained from Fisher Scientific unless otherwise noted.\n\n### Biological methods: Electrophysiology\n\nThe CG network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give simultaneous excitatory input to 5 Large Cell (LC) motor neurons. Superfusate of SCs can be separated from the anterior LC somata using petroleum jelly wells (Figure 1A). Intact network activity was monitored with intracellular recordings from anterior LCs along with extracellular recording of the network output. For most experiments, the posterior end of the ganglion was maintained in normal physiological saline and protected from TEA superfusate with a barrier of petroleum jelly. The anterior end of the preparation was superfused at a rate of approximately 2 ml/min. A schematic of this experimental setup is shown in Figure 1A. All experiments were performed at 12\u00b0C.\n\nExtracellular recordings using a Model 1700 Differential AC Amplifier (A-M Systems, Carlsborg, WA) were taken with stainless steel pin electrodes from a petroleum jelly well on the ganglionic trunk containing axons of all 9 neurons in the CG. LC spikes on the extracellular traces are easily distinguishable by their large amplitude. The LC somata were desheathed for sharp electrode recordings. Intracellular recordings were made using glass electrodes containing 3\u00a0M KCl (8\u201325 M\u03a9) and AxoClamp 900A and AxoClamp 2B amplifiers (Molecular Devices, Sunnyvale, CA). Two-electrode voltage clamp (TEVC) and two-electrode current clamp (TECC) protocols were created and run using Clampex 10.3 software (Molecular Devices).\n\nSomata were isolated for dynamic clamp experiments by tightening a thread ligature past the anterior branch point on the nerve containing the LC soma. Isolated cells were simultaneously driven with the same current stimulus, described previously (Ransdell et al., 2013a). Briefly, a stimulus protocol was generated by recording the voltage waveform from a LC somata during intact network activity. This consisted of a 20 s recording from a LC3 soma which included four burst potentials with both pacemaker cell EPSPs and LC back-propagating APs present. In addition to the stimulus current, dynamic clamp artificial coupling current was applied with NetClamp software (developed in the Fishberg Department of Neuroscience of the Mount Sinai School of Medicine and available at http://gothamsci.com/NetClamp/) at a sampling rate of 50 kHz according to the equation: Igap = g*(Vm1 - Vm2) where g is a non-rectifying coupling conductance under experimental control, and the voltage difference between the cells (Vm1 - Vm2) determines the driving force.\n\nIA was measured before and after compensation using voltage clamp protocols as described previously (Ransdell et al., 2012). Briefly, outward currents were measured from a holding potential of \u221230 mV and stepped from \u221250\u00a0mV to +5 mV in 5\u00a0mV increments in order to measure the high threshold K+ current IHTK which is blocked by TEA. In LCs, IHTK is predominantly a mix of BKKCa and delayed rectifier currents (Ransdell et al., 2012). A-Type K+ current (IA) was measured by performing an identical voltage clamp steps from a holding potential of -80mV and subtracting IHTK. P/N leak subtraction was used for all TEVC. Coupling in the intact network was measured using TECC in both cells during the sucrose block. Negative current steps ranging from 1\u20136 nA were injected into one cell at a time while measuring voltage changes in both cells. Coupling coefficients were calculated as the ratio: (\u0394Vcoupled cell / \u0394V Injected Cell).\n\n### Biological methods: Measurements of intrinsic compensation\n\nTo determine whether intrinsic compensation may be contributing to restoration of synchrony in the biological network, we used a current stimulus protocol simulating realistic network inputs to LCs in order to deliver the same biologically relevant stimulus at 3 time points (Ransdell et al., 2013a). Using this reversible sucrose block to suspend pacemaking activity, we were able to compare the similarity of responses of LC3 and LC5 to the same current injection at three time points. This allows us to test each cell in isolation with respect to its output waveform, but compensation occurs with full network activity after removal of the sucrose over the course of 1 hr. We measured individual LC responses to current injection in control saline, repeated after 5 min of TEA exposure (acute), and again after 1 hr of TEA exposure.\n\nOur modelling results suggested that an increase in IA may act in a manner to accomplish both the decrease in excitability and the restoration of synchrony seen in our biological data. In order to determine whether compensatory changes in IA occur in the intact network, we performed two-electrode voltage clamp in the same LC before and after 1 hr of TEA exposure. In order to track changes in IA in individual LCs we again used reversible sucrose block to perform voltage clamp immediately after acute TEA application and again after 1 hr of TEA perfusion. After voltage clamping anterior LCs, the sucrose was washed out and replaced with physiological saline, allowing the network to resume normal activity. This process was repeated after 1 hr of compensation.\n\n### Biological\u00a0methods: Data analysis\n\nIntracellular burst waveforms were considered to begin with the first EPSP from pacemaker activity and ended upon return of the waveform to resting membrane potential. Recordings were analyzed using Clampfit 10.3 (Molecular Devices) and Spike 2 version 7 (CED, Cambridge, UK) software. Statistical analyses were performed using SigmaPlot 11.0. Correlation coefficients (R-values) were obtained by a Pearson correlation, and squared to calculate the coefficient of determination (R2). Most data are 'before and after' effects within the same ganglion or cell, and therefore any two groups were compared with paired t-tests when the data were normally distributed, or Wilcoxon signed rank tests in the case of non-normality. The sample sizes for comparison of waveform synchrony were calculated with power analyses based on projected means and standard deviations from data reported in our previous study with very similar experimental manipulations of TEA exposure of LCs (Ransdell et al., 2013a), which yielded target sample size of N=6\u201310 to yield a power of 0.8 to 0.97. Sample sizes for changes in network output and changes in IA after TEA exposure were based on similar data in our previous work (Ransdell et al., 2012), and yielded target sample sizes of N=5 to achieve a power of 0.909. Power analyses were conducted based on the use of paired t-tests to analyze the data. However, when data were not normally distributed we ended up using a Wilcoxon signed rank test, which was not utilized in our initial power analyses. All sample sizes used in our studies are reported in Figure Legends and/or in the Results section when significance values are reported.\n\nTo quantify synchrony of LC voltage waveforms, we performed a cross-correlation of the digitized voltage signal from LC pairs, as shown in Figure 2B. The first pacemaker spike was used to define the start of each LC burst, and bursts were considered to have terminated upon return to VRest in the LCs. The coefficient of determination from this cross-correlation (R2) was used to examine how accurately one burst waveform could predict the waveform in another LC (see Ransdell et al., 2013a). This cross-correlation was performed for every burst across the full time-course of the experiment (Figure 2C, left). A decrease in R2 therefore indicates a loss or reduction in waveform synchrony. R2 values from 10 consecutive bursts were averaged for all data points presented as waveform synchrony data, save for the individual points found in Figure 2B and C.\n\nFive different measures of excitability of LCs were calculated using both extracellular and intracellular recordings (Figure 2D). Extracellular recordings from the ganglionic trunk were used to calculate the number of spikes per burst and spike frequency. Because our hypothesis predicts both increased LC excitability and desynchronization with TEA exposure, it should be noted that there is a potential confound in distinguishing these effects based on extracellular analysis alone. Axons of all LCs run through the ganglionic trunk, thus the increased spike count observed could result from an increase in the total number of action potentials, desynchronization of action potentials across LCs, or both. We therefore included three additional measures of excitability that helped clarify the effect. We measured the latency between the onset of SC pacemaker bursting to the first LC spike in each burst (Figure 2D; SC-LC phase delay). Two other measures of excitability were calculated from intracellular voltage changes: burst amplitude and total burst depolarization. Burst amplitude was defined as the maximal voltage change from VRest to the highest peak of the burst, and total depolarization is the area under the curve above VRest, measured in mV*sec. For all measures of excitability, values from 10 consecutive bursts were averaged at each time-point in each preparation (N=8).\n\n### Model\u00a0methods: Single cell models\n\nA detailed model was created with eight voltage-dependent conductances (GA, GKd, GNaP, GCaS, GCaT, GCAN, GSK(Ca), GBK(Ca)) and passive leak channels. These conductances are defined as: A-type potassium (GA), delayed rectifier (GKd), persistent sodium (GNaP), transient calcium (GCaT), slow persistent calcium (GCaS), calcium-dependent non-selective cation (GCAN), two calcium-dependent potassium currents (GSKKCa and GBKKCa), and leak (GLeak). A single compartment model with biological dimensions for soma (Ransdell et al., 2010, 2013b) was created in NEURON and its capacitance (Cm) and leak conductance (Gleak) were tuned to match the observed biological membrane time constant (\u03c4) and input resistance (Rin). This resulted in a soma with a length of 284.87 \u00b5m and a diameter of 125 \u00b5m, with a capacitance of 2.719 \u00b5F/cm2. Channels were then added and their maximal conductances were tuned to match three biological properties observed, i.e., a) Total outward current b) Response to synaptic drive and c) Response to synaptic drive in the presence of TEA. These results were obtained from experiments performed on ligatured somata of C. borealis LCs (Ransdell et al., 2012, 2013a, 2013b). For the network studies another compartment termed Spike Initiation Zone (SIZ) was added to the model. This compartment was modelled as a cylinder with a\u00a0capacitance of 1 \u00b5F/cm2, a length of 400 \u00b5m, and a diameter of 8 \u00b5m, and contained only sodium, potassium and passive leak channels. This compartment allowed us to obtain spiking activity in the model cells for spike synchrony analysis. The resulting model equations were as follows:\n\n$$\nC\\frac{dV}{dt}=\u2212I_{A}\u2212I_{Kd}\u2212I_{NaP}\u2212I_{CaS}\u2212I_{CaT}\u2212I_{CAN}\u2212I_{SKKCa}\u2212I_{BKKCa}\u2212I_{Leak}(Soma)C\\frac{dV}{dt}=\u2212I_{Na}\u2212I_{Kdr}\u2212I_{Leak}(SIZ)\n$$\n\nThe individual currents were modelled as\u00a0$\u00a0I_{c}=g_{max,c}m^{p}h^{q}(V\u2212E_{c})$, where $g_{max,c}$ is its maximal conductance, m its activation variable (with exponent p), h its inactivation variable (with exponent q), and $E_{c}$ its reversal potential (a similar equation is used for the synaptic current but without m and h). The kinetic equation for each of the gating functions x (m or h) takes the form\n\n$$\n\\frac{dx}{dt}=\\frac{x_{\u221e}(V,[Ca^{2+}]_{i})\u2212x}{\\tau_{x}(V,[Ca^{2+}]_{i})}\n$$\n\nwhere $x_{\u221e}$ is the steady state gating voltage- and/or $Ca^{2+}$- dependent gating variable and $\\tau_{x}\u00a0$\u00a0is the voltage- and/or $Ca^{2+}$- dependent time constant. The equations for the active channels in the soma compartment were fit using biological recordings for these currents from the cardiac ganglion of Cancer borealis. These currents were fit as follows: Voltage clamp data obtained with Clampfit were imported into MATLAB (Mathworks, Natick, MA) and fit using the MATLAB curve-fitting toolbox. Current data were converted to conductance data by dividing by (Vm \u2013 ERev), where ERev was as follows: ENa = +55 mV, EK = \u221280 mV, ECa = +45 mV, ELeak = \u221250 mV, and ECAN = \u221230 mV. The time axis was adjusted to start from 0 for the beginning of the clamp. The following parameterization was used:\n\n$$\ng(t)=\\sumi=1nA_{i}(1\u2212exp(\\frac{\u2212t}{\\tau_{m,i}}))(h_{i}\u2212(h_{i}\u22121)exp(\\frac{\u2212t}{\\tau_{h,i}}))\n$$\n\nIn this equation, $A_{i}=G_{i,max}\\timesm_{i}$ was the maximal conductance of the current i multiplied by its voltage-dependent steady-state activation ($m_{i}$), $h_{i}$ was the steady-state inactivation value, and $\\tau_{m,i}$ and $\\tau_{h,i}$ were the time constants with which activation and inactivation reached steady-state, respectively. This fitting procedure assumed that ionic currents were completely deactivated (m = 0) and de-inactivated (h = 1) prior to the onset of the voltage clamp. This was fit to each trace in a voltage clamp experiment, giving the\u00a0values of each of the four parameters for each test clamp voltage ($V_{c}$). These values were then fit for each current as functions of $V_{c}$ using the general forms as stated below. This procedure yielded equations for the currents recorded in voltage clamp that could be used in simulations according to the Hodgkin-Huxley mathematical formalism.\n\n$$\nA(V_{c})=G_{max}\\timesm(V_{c})=G_{max}\\times(1+exp((V_{c}\u2212V_{m,1/2})/k_{m}))^{\u22121}h(V_{c})=(1+exp((V_{c}\u2212V_{h,1/2})\u00a0/k_{h}))^{\u22121}\\tau_{m}(V_{c})=\\tau_{base,m}+\\tau_{amp,m}(exp((V_{c}\u2212V_{\\tau1,m})\u00a0/k_{\\tau1,m})+exp((V_{c}\u2212V_{\\tau2,m})\u00a0/k_{\\tau2,m}))^{\u22121}\\tau_{h}(V_{c})=\\tau_{base,h}+\\tau_{amp,h}(exp((V_{c}\u2212V_{\\tau1,h})\u00a0/k_{\\tau1,h})+exp((V_{c}\u2212V_{\\tau2,h})\u00a0/k_{\\tau2,h}))^{\u22121}\n$$\n\nAll the maximal conductances ($G_{i,max}$) were in $\\muS$, time constants in ms and voltages in $mV$.\n\n### Model methods: Calcium dynamics\n\nIntracellular calcium modulates the conductance of the calcium-activated potassium currents (BKKCa and SKKCa), calcium-activated nonselective cation current (CAN), and influences the magnitude of the inward calcium current in the LC (Tazaki and Cooke, 1990). A calcium pool was modelled in the LC with its concentration governed by the first-order dynamics (Prinz et al., 2003; Soto-Trevi\u00f1o et al., 2005) below:\n\n$$\n\\tau_{Ca}\\frac{d[Ca^{2+}]}{dt}=\u00a0\u2212F\u00a0\\timesI_{Ca}\u2212([Ca^{2+}]\u2212\u00a0[Ca^{2+}]_{rest})\n$$\n\nwhere $F=0.256\u00a0\\muM/nA$ is the constant specifying the amount of calcium influx that results per unit (nanoampere) inward calcium current; $\\tau_{Ca}$ represents the calcium removal rate from the pool; and $[Ca^{2+}]_{rest}=0.5\u00a0\\muM$. Voltage-clamp experiments of the calcium current (Ransdell et al., 2013b) showed the calcium buffering time constant to be around 690 ms ($\\tau_{Ca}$).\n\n### Model methods: Searching for LC neurons within the model parameter space\n\nAfter creating a nominal LC model (Tables 1,2), we wanted to search the conductance space for other possible conductance combinations that might exhibit appropriate LC output. The properties that had to be maintained were; a) Input Resistance (Rin) and Resting Membrane Potential, b) Pre-TEA and Post TEA response to current injection c) Response to Synaptic drive obtained from biological cell.\n\n**Table 1.**\n Nominal model conductance values:\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Conductance</th>\n      <th>Value (S/cm2)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Leak</td>\n      <td>2e-4</td>\n    </tr>\n    <tr>\n      <td>A</td>\n      <td>6e-4</td>\n    </tr>\n    <tr>\n      <td>BKKCa</td>\n      <td>7.3e-3</td>\n    </tr>\n    <tr>\n      <td>g1_Kd</td>\n      <td>3e-4</td>\n    </tr>\n    <tr>\n      <td>g2_Kd</td>\n      <td>3.5e-5</td>\n    </tr>\n    <tr>\n      <td>CaS</td>\n      <td>1.7e-4</td>\n    </tr>\n    <tr>\n      <td>CAN</td>\n      <td>1.06e-4</td>\n    </tr>\n    <tr>\n      <td>SKKCa</td>\n      <td>8.79e-5</td>\n    </tr>\n    <tr>\n      <td>CaT</td>\n      <td>1.5e-4</td>\n    </tr>\n    <tr>\n      <td>NaP</td>\n      <td>3.06 e-4</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Model current parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Iion</th>\n      <th>xp</th>\n      <th>x\u221e</th>\n      <th>\u03c4x (msec)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">IA</td>\n      <td>m3</td>\n      <td>11+exp((V+21.46)/\u221217.96)</td>\n      <td>3.002+4.0731+exp((V+24.18)/2.592)</td>\n    </tr>\n    <tr>\n      <td>h</td>\n      <td>11+exp((V+21.14)/25.99)</td>\n      <td>9.434+11.71+exp((V+1)/5.317)</td>\n    </tr>\n    <tr>\n      <td>ICaS</td>\n      <td>m2</td>\n      <td>11+exp((V+24.75)/\u22125)</td>\n      <td>20+50.2exp((V+20.25)/1)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>h</td>\n      <td>4540+[Ca2+]</td>\n      <td>10.02</td>\n    </tr>\n    <tr>\n      <td>ICaT</td>\n      <td>m</td>\n      <td>11+exp((V+20)/\u22121.898)</td>\n      <td>18.51\u22123.388exp((V\u22126.53)/9.736)+exp((V+12.39)/\u22122.525)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>h</td>\n      <td>11+exp((V+55.27)/6.11)</td>\n      <td>20.23+40exp((V+23.48)/\u22129.976)+exp((V+5.196)/10.84)</td>\n    </tr>\n    <tr>\n      <td>Ikd</td>\n      <td>m14</td>\n      <td>11+exp((V+24.19)/\u221210.77)</td>\n      <td>25.049+251+exp((V+25.84)/6.252)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>h1</td>\n      <td>0.3+1\u22120.31+exp((V+15.87)/5.916)</td>\n      <td>550+954.9exp((V+10.8)/\u221215)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>m24</td>\n      <td>11+exp((V+23.32)/\u221210)</td>\n      <td>100+550exp((V+15)/12.46)</td>\n    </tr>\n    <tr>\n      <td>INaP</td>\n      <td>m3</td>\n      <td>11+exp((V+32.7)/\u221218.81))</td>\n      <td>3.15+0.8464exp((V+0.8703)/\u22126.106))</td>\n    </tr>\n    <tr>\n      <td>ICAN</td>\n      <td>w</td>\n      <td>(0.0002\u2217[Ca2+]\u2227\u00a02 / (0.0002\u2217[Ca2+]\u22272+0.05))</td>\n      <td>(40/ (0.0002\u2217[Ca2+]\u22272+0.05))</td>\n    </tr>\n    <tr>\n      <td>ISKKCa</td>\n      <td>w</td>\n      <td>(0.0001\u2217[Ca2+]\u22272 / (0.0001\u2217[Ca2+]\u22272+0.1))</td>\n      <td>(4/ (0.0001\u2217[Ca2+]\u22272+0.1))</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">IBKKCa</td>\n      <td>a</td>\n      <td>[Ca2+]1+exp((V\u221215+0.08\u2217[Ca2+])/\u221215)\u2217(1+exp((V+5+0.08\u2217[Ca2+])/\u22129)\u2217(2+[Ca2+]</td>\n      <td>10.4</td>\n    </tr>\n    <tr>\n      <td>b</td>\n      <td>75+[Ca2+]</td>\n      <td>10.2</td>\n    </tr>\n  </tbody>\n</table>\n\n_F = Faradays constantR = Gas constantV = Membrane voltage[Ca2+] = Calcium concentration_\n\nThe rules used to select the potential parameters were as follows (based on biological recordings): Synaptic Drive response should have an R2 value of at least 0.8 or higher when compared to biological Synaptic Drive response. The duration of the pre-TEA response to a 6 nA, 50 ms current injection should be less than 120 ms. Also the peak should be less than \u221222 mV. The duration of the post-TEA (GBKKCa and GKd reduced by 90%) response should be between 255\u2013667 ms and its peak should be greater than \u221215 mV. A 9-D max conductance parameter space (5-fold variation over each conductance except GLeak) was searched randomly for sets that satisfied the constraints above. We searched 20,000 different combinations of parameter sets with these criteria, and most of those which passed did not have a proper termination of activity following current injection (i.e., did not return to Vrest). We concluded this was due to an inappropriate relationship between ICAN and ISKKCa. Subsequent trials revealed that a given ratio range (~1:0.83 respectively) of these two currents was necessary for proper termination of the\u00a0activity. Larger ratios cause Vrest to be higher due to the reversal potential (\u221230 mV) of CAN current. A higher fraction of ISKKCa (reversal potential \u221280mV) caused a large AHP after termination and reduced the duration of the post-TEA response. Using the updated selection criteria with a ratio ICAN to ISKKCa, we found 180 parameter sets that passed. Of these 180 potential model sets, we selected only the ones that had Synaptic Drive response R2 value > 0.9 compared to the biological Synaptic Drive response. This resulted in 49 potential parameter sets.\n\nBiological data showed that IA and IBKKCa had a negative correlation in their magnitudes in LCs (Ransdell et al., 2012). We added this to our criteria for screening potential parameter sets for the network studies. We converted biological IA-IBKKCa current data into factor data by dividing IA and IBKKCa by their respective factor average. GA and GBKKCa values of passed parameters were similarly divided by its average to get its factor data. The biological data were fitted using a linear polynomial from 95% to 70% confidence intervals, in steps of 10%. For network studies we used a 70% confidence interval, which left us with 14 potential parameter sets that represented LC model neurons for use in modeling studies.\n\n### Model methods: Development and validation of a population of conductance-based model networks for studying mechanisms restoring network synchrony\n\nOur results demonstrate that intact cardiac ganglia are able to compensate for the loss of high-threshold K+ currents and restore both excitability and synchrony within one hour of TEA blockade. We next set out to explore the mechanisms by which excitability and synchrony could be restored in this network. To maximize our ability to interrogate multiple parameters that may be responsible for compensation in this system, we constructed a population of conductance-based biophysical models of the CG network. This allowed us to simulate the TEA conductance blockade and then manipulate individual conductances, both voltage-gated and synaptic, to examine their effects on network excitability and synchrony.\n\nOur 14 parameter sets for LCs were used to create 50 random 5-cell networks of LCs, ensuring that the same model LC never appeared twice in the same network. The five cells within a network were then electrically coupled using conductance values tuned to reflect experimental observations of coupling coefficients. Small cell (SC) pacemaker drive was simulated as excitatory synapses via the NetStim function in NEURON. Parameters for the model of the synaptic drive onto LCs were tuned to get 6 to 9 spikes in the nominal LC model. It was observed biologically that frequency of SC firing increases within the slow wave oscillation cycle of LCs. Based on these recordings, the model SC burst initially fired at 18 Hz for first 440 ms and then increased to 25 Hz for 560 ms, with the burst terminating at 1000 ms.\n\nOur experimental TEA block was simulated in these networks by reducing GBKKCa and GKd conductances by 90% in the 3 anterior LCs based on biological data in LCs (Ransdell et al., 2013a). We imposed a final set of selection criteria on the randomly generated model networks, rejecting networks that increased synchrony or decreased the total number of spikes after the simulated TEA block, as this was never observed in biological networks. This left 27 networks that reproduced the biological trends and these were used in subsequent analyses to explore potential conductance changes that could restore network synchrony.\n\nSomatic burst potentials drive action potentials in LC axons, so divergent burst waveforms would be expected to cause desynchronized spiking. Our biological data qualitatively agreed with this, but a precise quantification of synchrony for all spikes within a burst is subject to many ambiguities. Our model networks easily provided precise spike times for each cell in the network, so we chose to examine actual spike synchrony in the model to complement the burst waveform analysis in the biological preparation. Our analysis considered synchrony for paired anterior LCs with a nominal coupling conductance of 0.0182 S using a 25 ms bin width for spike-times (Wang and Buzs\u00e1ki, 1996). Spikes occurring in both cells during the same bin were considered synchronized, while spikes that did not bin together were tallied as desynchronized. Using the definition of synchrony listed in the next section, these randomly generated model networks exhibited 'control' synchrony scores ranging from 0.642 to 1.0 with a median value of 0.915 (matching data in biology), where 1.0 represents perfect spike synchrony.\n\n### Model methods: Data analysis\n\nIn the models, spike synchrony between two cells was calculated based on spike times (Wang and Buzs\u00e1ki, 1996). Spike times were recorded from each LC\u2019s Spike Initiation Zone (SIZ). The simulation time was divided into 25 ms bins. After initializing all bins to zero, each cell spike was added to the corresponding bin. Synchrony (SY) between two cells A and B was calculated using the\u00a0following equation:\n\n$$\nSY_{AB}=\u00a0\\frac{\\sum_{l=1}^{k}A(l)*B(l)}{\\sqrt{\\sum_{l=1}^{k}A(l)*\u00a0\\sum_{l=1}^{k}B(l)}}\n$$\n\nwhere $l$ is the current bin and $k$ is the maximum number of bins. Spikes occurring in both cells during the same bin were considered synchronized, while spikes that did not bin together were tallied as desynchronized.\n\nTo compare the measures of spike and waveform synchrony in model networks, model waveform synchrony measures (Figure 3) were performed as described above on filtered voltage traces (Gaussian lowpass filter, 15 Hz cutoff frequency; Clampfit 10.3) that remove the influence of the axonal spikes on the voltage waveforms. Statistical analyses were performed in SigmaPlot v11.0. The effects of changing Gmax on the number of spikes and synchrony among TEA-'treated' model neurons were tested with paired t-tests. Analyses changes in spike number and spike synchrony with changing coupling and synaptic strengths (Figure 5) were analyzed with One-Way ANOVAs with post-hoc pairwise comparisons between a given percent change and the TEA case conducted via Holm-Sidak tests.\n",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "365bc1d7-5772-442d-afc6-85116ecba89a",
+      "submission_id": "160b4c12-0209-4d57-8046-20519c975e14",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16879.012](https://doi.org/10.7554/eLife.16879.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Synergistic Plasticity of Intrinsic Conductances and Electrical Synapses Restores Synchrony in an Intact Motor Network\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Ronald L Calabrese, is a member of our Board of Reviewing Editors and the evaluation has been overseen by a Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Carlos D Aizenman (Reviewer #2) and Farzan Nadim (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this innovative study, the authors use a combination of pharmacology, electrophysiology, and modeling approaches in an intact neuronal network (crab cardiac ganglion, CG, in vitro) to uncover a synergistic plasticity of an intrinsic conductance and electrical coupling in the recovery normal synchronous activity following pharmacological challenge.\n\nIn the intact CG network, blocking a subset of K conductances in normally synchronous motor neurons (LCs) with TEA resulted in both hyperexcitability and loss of synchronized activity. Over the course of 30-60 minutes synchronization returns and hyperexcitability moderates: compensation. Using an ensemble modeling approach to guide experimentation, the authors identified two distinct and potentially synergistic mechanisms by which motor neurons could compensate and recover synchronous activity: plasticity of an intrinsic voltage-gated conductance (A-type K+ current, IA) and plasticity of LC electrical coupling. Intrinsic compensation alone in the models was insufficient to fully restore synchrony across motor neurons, but a concomitant increase in electrical coupling ensured nearly complete resynchronization. Modeling also suggests that although a sufficient increase in electrical coupling alone could restore full synchrony, it could not simultaneously restore the original level of excitability. Direct measurements verify both an increase in IA and an increase in electrical coupling conductance associate with re-synchronization in the TEA challenged intact CG over the course of 30-60 minutes. The authors conclude that multi-component mechanisms are likely necessary for full compensation, and that their synergistic action is potentially more efficient than either mechanism operating in isolation.\n\nEssential revisions:\n\n1) The models are not adequately described so their 'predictions' seem less compelling. What exactly does this model look like? Is it really representative of these neurons in any reasonable way? Please show traces of the voltage time series (potentially also the ongoing IA and the gap-junctional current) for a representative example. The fact that IA compensates for other K currents is not too surprising and rather intuitive. So is the fact that an increase in electrical coupling can increase synchrony. So what is the model saying that is not intuitively obvious? The model needs to be properly analyzed and described or removed. Is the point to show that other currents cannot account for the compensation; if so does the models really show this or does it show that in isolation their modulation cannot do both a decrease in excitability and an increase in synchrony? More analysis and explanation of the modeling is needed.\n\n2) Although the findings in this study are extremely interesting, the premise on which the study is introduced does not provide the accurate context for these results. The authors have insisted on equating neuromodulation with destabilizing perturbations. Yet modulators, under biological conditions, do not destabilize insomuch as they define a new stable state for the network and, as such, they fit better into the framework of flexibility. Although there are examples in which long-term modulation leads to compensatory feedback (such as in the work of the Baro lab on tonic dopamine modulation), more often modulators simply modify the network output. It would be best if the authors modify the Introduction to simply reflect how cellular and network level compensatory mechanisms can provide robustness in response to extrinsic perturbations (such as injury perhaps), and remove the description of how neuromodulators may act in face of ionic current variability. In the same vein, the results presented on the effect of serotonin on the LCs seem to be preliminary and the effects are not properly described or analyzed (e.g. no raw traces, no dose-response analysis to establish physiological concentrations). It is unclear if the selective application site is appropriate, if there is a cellular level compensation mechanism at play, or if it is related to the TEA results. As such, it would be best if the authors remove the serotonin figure and data. If the serotonin results can be developed further and properly contextualized they could be submitted in future as an Advance at eLife.\n\n3) The really novel aspect of the study is that gap-junctional conductance can participate in homeostatic regulation on network activity. This point could be better emphasized while the relevance to neuromodulation is deemphasized/removed.\n",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "748c0e08-bfef-47ec-974f-d6b573a681e4",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C1",
+      "claim": "Motor neurons of the crustacean cardiac ganglion generate virtually identical, synchronized output despite the fact that each neuron uses distinct conductance magnitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor neurons of the crustacean cardiac ganglion generate virtually identical, synchronized output despite the fact that each neuron uses distinct conductance magnitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a foundational observation about the cardiac ganglion system.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "9a5f50bc-a073-4c66-8757-a11f4b284872",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C2",
+      "claim": "Manipulations that target ionic conductances have distinct effects on neurons within the same ganglion, disrupting synchronized motor neuron output.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this variability, manipulations that target ionic conductances have distinct effects on neurons within the same ganglion, disrupting synchronized motor neuron output that is necessary for proper cardiac function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations described in the abstract and demonstrated in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b012c9d4-33df-4ed9-9158-021c15a148b4",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C3",
+      "claim": "Blocking high-threshold K+ conductances in motor neurons within the ongoing cardiac network results in compensation that both resynchronizes the network and helps restore excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "By blocking high-threshold K+ conductances in motor neurons within the ongoing cardiac network, we discovered that compensation both resynchronized the network and helped restore excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "0f9063dc-4add-400d-a4d4-f5b7aa2c793e",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C4",
+      "claim": "Compensatory increases of both GA and electrical coupling restored function in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Using model findings to guide experimentation, we determined that compensatory increases of both GA and electrical coupling restored function in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by both modeling results (Figure 7) and experimental validation (Figures 4 and 6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "a58495f1-ba64-4f60-b279-0fe3822cf382",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C5",
+      "claim": "This is one of the first direct demonstrations of the physiological regulation of coupling conductance in a compensatory context.",
+      "claim_type": "EXPLICIT",
+      "source": "This is one of the first direct demonstrations of the physiological regulation of coupling conductance in a compensatory context, and of synergistic plasticity across cell- and network-level mechanisms in the restoration of output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings, based on comparison with existing literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "767c8e74-3c44-49c9-aa03-0709a7734595",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C6",
+      "claim": "Networks can exhibit a five-fold or more range in intrinsic and synaptic conductance values despite having nearly identical output across animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, despite having nearly identical output across animals, networks can exhibit a five-fold or more range in intrinsic and synaptic conductance values (Marder and Goaillard, 2006; Schulz et al., 2006; Marder, 2011; Roffman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "5cf6e637-46e2-4f5b-8875-84a32457b401",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C7",
+      "claim": "Variability in intrinsic conductances has been documented in cerebellar Purkinje cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variability in intrinsic conductances is not limited to CPGs, but has been documented in several cell types of the mammalian brain, including cerebellar Purkinje cells (Swensen and Bean, 2005), and globus pallidus neurons (G\u00fcnay et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Swensen and Bean, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "018f3ddd-abe0-4f9d-8e87-fd0557447bc7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C8",
+      "claim": "Variability in intrinsic conductances has been documented in globus pallidus neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variability in intrinsic conductances is not limited to CPGs, but has been documented in several cell types of the mammalian brain, including cerebellar Purkinje cells (Swensen and Bean, 2005), and globus pallidus neurons (G\u00fcnay et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to G\u00fcnay et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "1aed3952-4911-4b8e-bc7b-fe0b90b41e94",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C9",
+      "claim": "Synaptic strengths between mammalian central neurons vary in several brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the synaptic strengths between mammalian central neurons have been shown to vary in several brain regions (Nelson and Turrigiano, 2008; Turrigiano, 2008; Maffei et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "90b098f0-0aee-4801-af19-d858d56ef3c7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C10",
+      "claim": "Five Large Cell motor neurons (LCs) in the cardiac ganglion of Cancer borealis generate completely synchronous output.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cardiac ganglion (CG) of the Jonah crab (Cancer borealis), five Large Cell motor neurons (LCs) generate completely synchronous output, as a result of pacemaker inputs within the network, to drive simultaneous heart muscle contraction in the crab (Tazaki, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tazaki, 1972.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "c00ecfb3-ecb6-4d2c-bb6c-24578d174c17",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C11",
+      "claim": "LCs show highly variable underlying maximal conductances despite completely uniform and synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite completely uniform and synchronous activity within the network, LCs show highly variable underlying maximal conductances (Ransdell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ransdell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "32b640a4-fcda-4a48-937c-7541a09a7f4f",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C12",
+      "claim": "When high-threshold K+ currents were blocked with TEA, motor neurons lost coordinated output and became divergent in their patterns of firing.",
+      "claim_type": "EXPLICIT",
+      "source": "These variable conductances render the neurons susceptible to perturbations that target a subset of ionic conductances: when high-threshold K+ currents were blocked with tetraethylammonium (TEA), the motor neurons lost coordinated output and became divergent in their patterns of firing (Ransdell et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ransdell et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "07078c8e-3729-4aa7-8d9b-ddf3ba8aea55",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C13",
+      "claim": "25 mM TEA reduces the magnitude of high-threshold K+ currents (IKd + IBKKCA) by ~92% in isolated LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Ransdell et al. (2013a) were able to repeatably reduce the magnitude of high-threshold K+ currents (IKd + IBKKCA) by ~92% in isolated LCs with 25 mM TEA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ransdell et al., 2013a and describes a specific experimental result.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b09d6afc-dbc1-4724-93b3-e20f4965b28f",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C14",
+      "claim": "After application of TEA, motor neurons became noticeably more depolarized during burst potentials and LC spiking increased substantially.",
+      "claim_type": "EXPLICIT",
+      "source": "After application of TEA, motor neurons became noticeably more depolarized during burst potentials and LC spiking seen on the extracellular recordings increased substantially (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b4ddcf70-8afb-4cfd-8ad3-e1226b4e6b3d",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C15",
+      "claim": "Comparison of intracellular voltage waveforms revealed a loss of conserved output after TEA exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, comparison of intracellular voltage waveforms revealed a loss of conserved output (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "5d0babdb-f9bf-404a-a716-2102bfd71425",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C16",
+      "claim": "Acutely after application of TEA, there was a significant reduction in synchrony as measured by R2 across LC voltage waveforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Acutely after application of TEA, we saw a significant reduction in synchrony as measured by R2 (see Materials and methods; Ransdell et al., 2013a) across LC voltage waveforms (Figure 2B,C, time point II).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "5c158c6a-b343-4134-90cb-39a2e22cf7cd",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C17",
+      "claim": "Waveform synchrony values consistently recovered towards baseline levels, often by 30 min, and were no longer statistically different from baseline by 1 hr of treatment with TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this reduction, waveform synchrony values consistently recovered towards baseline levels, often by 30 min, and were no longer statistically different from baseline by 1 hr of treatment with TEA (Figure 2C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "9791beb7-ba56-4af0-b4be-be8a37b15ec5",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C18",
+      "claim": "Spikes per burst, average spike frequency, total burst depolarization and burst amplitude all were significantly increased immediately after exposure to TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "The spikes per burst, average spike frequency, total burst depolarization and burst amplitude all were significantly increased immediately after exposure to TEA ('acute'), while the small cell pacemaker (SC)-to-LC phase delay was significantly decreased (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "5d379988-3619-483c-a08a-a25494e10046",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C19",
+      "claim": "The SC-to-LC phase delay was significantly decreased immediately after exposure to TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "The spikes per burst, average spike frequency, total burst depolarization and burst amplitude all were significantly increased immediately after exposure to TEA ('acute'), while the small cell pacemaker (SC)-to-LC phase delay was significantly decreased (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "683f3a34-5f12-49a1-877a-afc6c2c3be54",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C20",
+      "claim": "All 5 measures of excitability showed a significant change back towards their baseline levels between the 30 min and 60 min time points.",
+      "claim_type": "EXPLICIT",
+      "source": "All 5 measures also then showed a significant change back towards their baseline levels between the 30 min and 60 min time points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "7d6e8982-476a-421c-b7a3-bba8209fa1a4",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C21",
+      "claim": "The SC-LC phase delay was fully restored after 60 minutes of TEA exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "While all measures showed clear shifts towards restoration of baseline excitability, the number of spikes per burst, spike frequency within each burst, burst amplitude, and total burst depolarization were not completely restored to control levels; the exception was the SC-LC phase delay which was fully restored (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b377638a-1fc5-472e-bc4a-f41284eb8bf6",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C22",
+      "claim": "A population of 27 model CG networks with variable underlying conductances successfully recapitulated the biological data observed in TEA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model development and selection criteria resulted in a population of 27 model CG networks with variable underlying conductances of the constituent neurons that successfully recapitulated the biological data observed in TEA (see Methods, Supplemental Information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the modeling methodology described in the Methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "e109de7e-9d8c-48b4-8820-66e3cc8faf49",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C23",
+      "claim": "Previous results identified an approximate 2.2 \u00b1 0.8-fold change in IA in LCs as a result of 60 min of TEA exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous results identified an approximate 2.2 \u00b1 0.8-fold change in IA in LCs as a result of 60 min of TEA exposure (Ransdell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ransdell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "200610b0-2c0c-4572-bd45-7a85b027dfd9",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C24",
+      "claim": "Two-fold increase in GA resulted in a mean synchrony score that was significantly different from the TEA case but not significantly different from control.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal solution of significantly improving spike synchrony and also significantly decreasing the total number of action potentials was achieved in only one case: two-fold increase in GA resulted in a mean synchrony score that was significantly different from the TEA case (p<0.05, paired t-test) but not significantly different from control (p=0.157).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling data and statistical analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "91f84db6-92ba-4bab-9c22-83738ccb10a3",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C25",
+      "claim": "No other change in a given conductance resulted in the combination of improved synchrony and decreased action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "No other change in a given conductance resulted in this combination of statistical outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "f41ad3ed-b758-40f5-b74c-1e22fb40f499",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C26",
+      "claim": "A given ratio range (~1:0.83 respectively) of ICAN to ISKKCa was necessary for proper termination of the activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent trials revealed that a given ratio range (~1:0.83 respectively) of these two currents was necessary for proper termination of the activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results described in the Methods section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b614184f-223a-446d-a16f-5f0972560726",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C27",
+      "claim": "The model demonstrates that waveform synchrony can translate into spike synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the model also extends the biological data by demonstrating that waveform synchrony can translate into spike synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "c0722eed-37d2-48dc-b545-497470e4a410",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C28",
+      "claim": "The initial voltage responses to stimulation protocol in LC3 and LC5 in control conditions are highly similar to one another.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial voltage responses to our stimulation protocol in LC3 and LC5 in control conditions are highly similar to one another, and their level of waveform synchrony was not significantly different from the synchronous activity across these LCs during intact control network activity (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "ef6e98e1-8020-42ea-85dd-05fc8f5f8844",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C29",
+      "claim": "Immediately following TEA application, LC3 and LC5 show disparate output when driven with a common stimulus protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately following TEA application, LC3 and LC5 show disparate output when driven with a common stimulus protocol (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "3cce55e5-2b2e-4e73-8e54-1ecd0a58a391",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C30",
+      "claim": "There were significant increases in R2 of voltage activity within 1 hr across isolated LCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our data show significant increases in R2 of voltage activity within 1 hr across isolated LCs (Figure 4B), demonstrating that intrinsic compensation does improve network synchrony.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "a41403d1-fc53-486c-b507-c8e3f1fbf9f9",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C31",
+      "claim": "After 1 hr the synchrony values were significantly lower than control values, suggesting that intrinsic compensation alone is insufficient to restore synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after 1 hr the synchrony values were significantly lower than control values (Figure 4B,C), suggesting that intrinsic compensation alone is insufficient to restore synchrony.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B,C and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "044a17d0-691f-47f9-a8dc-e7d292b8c96e",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C32",
+      "claim": "In all cases peak IA current increased after 1 hr of TEA exposure, with a mean increase of 56%.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases peak IA current increased (Figure 4D), with a mean increase of 56% (p<0.05, n = 6, Wilcoxon signed rank test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental voltage clamp data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "337c1d18-46a2-424b-9b39-9ba3110f7f73",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C33",
+      "claim": "The voltage response after compensation was significantly different from the control voltage response, indicating that intrinsic compensation does not restore the original cellular output.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the voltage response after compensation was significantly different from the control voltage response (p<0.01, n = 8, Wilcoxon signed rank test), indicating that intrinsic compensation does not restore the original cellular output (Figure 4E; control vs. TEA [1 Hour]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4E and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "69632be0-9b03-46bf-9581-35e17d204534",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C34",
+      "claim": "Increasing the strength of either chemical synapses or electrical coupling increased both synchrony and excitability in model networks.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that increasing the strength of either chemical synapses or electrical coupling increased both synchrony and excitability (Figure 5 left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "bf109420-a19a-4411-a3f6-f636c883f5a7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C35",
+      "claim": "Increasing the chemical synaptic conductance in conjunction with TEA blockade increases spiking of the LCs ~25\u201330% in contrast to the biological decrease in excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "However, increasing the chemical synaptic conductance in conjunction with TEA blockade also increases spiking of the LCs ~25\u201330% in contrast to the biological decrease in excitability relative to the acute TEA exposure seen with compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "17c38ffb-051d-4fd8-a3f5-231b381b9780",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C36",
+      "claim": "Only a small change in LC spiking occurs with an increase in electrical coupling (~9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, only a small change in LC spiking occurs with an increase in electrical coupling (~9%, Figure 5 left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "c50d8e70-5ded-4858-acc9-802d8c623761",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C37",
+      "claim": "Reducing the strength of either chemical synapses or electrical coupling decreased overall spike synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing the strength of either chemical synapses or electrical coupling decreased overall spike synchrony (Figure 5 right), violating the assumptions of compensation based on the biological data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "20d9893e-575e-4a76-bd9c-d6a6d85e32cb",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C38",
+      "claim": "Increasing the artificial coupling conductance significantly increased the correlation coefficient of the waveform between two cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the artificial coupling conductance significantly increased the correlation coefficient of the waveform between the two cells (Figure 6A), with a synaptic conductance value of 0.2 \u03bcS able to rescue synchrony of LCs to levels observed in intact networks (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data using dynamic clamp shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "3cc5bf91-60c0-44c1-9ef2-984bb13c8ee2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C39",
+      "claim": "Coupling coefficient between LCs increased significantly after 1 hr in TEA (mean increase 85%).",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling coefficients between cells increased significantly after 1 hr in TEA (mean increase 85%, p<0.01; Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "84866388-0793-40f9-8d2d-7d9cc01019ce",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C40",
+      "claim": "No significant differences were observed in the apparent input resistance of LCs in control physiological saline, after acute TEA exposure, or after compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two-electrode current clamp, we saw no significant differences in the apparent input resistance of LCs in control physiological saline, after acute TEA exposure, or after compensation (1 hr TEA exposure; Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "91540963-4c9f-4dcf-b8d2-741fb6b33025",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C41",
+      "claim": "Changes in passive membrane conductance (GLeak) are not responsible for increased coupling coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that changes in passive membrane conductance (GLeak) are not responsible for increased coupling coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation that input resistance did not change.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "2ce9914f-fde4-45d4-8b5d-8947f72f7cf1",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C42",
+      "claim": "Coupling conductance (GC) between LC4 and LC5 significantly increased during 1 hr of TEA exposure (mean increase 49.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Coupling conductance (GC) between LC4 and LC5 significantly increased during 1 hr of TEA exposure (mean increase 49.5%, p<0.01, N = 8; Figure 6B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "1ef2c0da-863e-4842-800b-41340e66b1b7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C43",
+      "claim": "Increasing GA up to +40% promoted greater synchrony after TEA blockade, but was unable to fully restore synchrony even with increasing conductance levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing GA up to +40% promoted greater synchrony after TEA blockade, but was unable to fully restore synchrony even with increasing conductance levels, consistent with our biological data (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "e79d24d4-b44c-4ece-a2f2-b9be863c9a8d",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C44",
+      "claim": "Electrical coupling alone was capable of restoring synchrony fully, but this required a 140% increase in its value.",
+      "claim_type": "EXPLICIT",
+      "source": "We also increased model GC incrementally (from +10% to +150%), and found that electrical coupling alone was capable of restoring synchrony fully, but this required a 140% increase in its value (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "6b3ef3b9-cd8d-49ab-975b-ca3e3edb7e9e",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C45",
+      "claim": "A smaller increase of 70% in each conductance (GA and GC) was able to produce spike synchrony that was indistinguishable from control.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we increased both GA and GC together in 10% increments, revealing a potentially synergistic relationship: a smaller increase of 70% in each conductance was able to produce spike synchrony that was indistinguishable from control (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by modeling data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "e2dda5d5-9b53-42fe-bf60-07307a10d527",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C46",
+      "claim": "This is the first demonstration of coordinated homeostatic plasticity of intrinsic and electrical synaptic conductances in a comprehensive network-level example of homeostatic compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "While membrane conductances and properties of electrical coupling are known to interact in critically important ways to promote synchrony (Curti et al., 2012; Gutierrez and Marder, 2013), to our knowledge the present study is the first demonstration of coordinated homeostatic plasticity of intrinsic and electrical synaptic conductances in a comprehensive network-level example of homeostatic compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings, based on comparison with existing literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "76d3d090-7c5a-47b5-9427-6b11930e3ebd",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C47",
+      "claim": "K+ currents can increase or help restore synchrony between electrically coupled neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous modelling studies found that K+ currents can increase or help restore synchrony between electrically coupled neurons (Pfeuty et al., 2003), so we first hypothesized that a compensatory increase in A-Type K+ membrane conductance could be a mechanism underlying both restored excitability and resynchronization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pfeuty et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "7249973f-8862-42eb-8ca8-3c6a28759bcb",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C48",
+      "claim": "Multi-component mechanisms are necessary for full compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that multi-component mechanisms are not only necessary for full compensation, but also that their synergistic action is potentially more efficient than either mechanism operating in isolation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the modeling and experimental results showing that combined changes in GA and GC are more effective than either alone.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "2e16f13a-5d64-4f49-b620-8998a6fb7d25",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C49",
+      "claim": "Chaotic exploratory and consummatory radula biting movements of Aplysia during food searching behaviour can be stably modified by operant conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In a series of elegant experiments, it has been shown that chaotic exploratory and consummatory radula biting movements of Aplysia during food searching behaviour can be stably modified by operant conditioning, leading to prolonged bouts of radula movements with increased frequency and more stereotyped rhythmic organization (Nargeot et al., 2007; Nargeot and Simmers, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nargeot et al., 2007 and Nargeot and Simmers, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "6e0a0b72-e9f2-4a6d-bd21-078be3b9a5b5",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C50",
+      "claim": "In Aplysia, changes in intrinsic excitability attributed to changes in leak conductance underlie the increase in frequency of motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, changes in intrinsic excitability attributed to changes in leak conductance underlie the increase in frequency of motor output, while increases in coupling strength allow for the synchronization and regularization of bursting (Nargeot et al., 2009; Sieling et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nargeot et al., 2009 and Sieling et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "f8c74bac-b240-4361-ba6d-e69c664c15af",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C51",
+      "claim": "In Aplysia, increases in coupling strength allow for the synchronization and regularization of bursting.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, changes in intrinsic excitability attributed to changes in leak conductance underlie the increase in frequency of motor output, while increases in coupling strength allow for the synchronization and regularization of bursting (Nargeot et al., 2009; Sieling et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nargeot et al., 2009 and Sieling et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "029768fd-3a1e-4054-a9d2-81e653a2a68d",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C52",
+      "claim": "Electrical coupling has long been known to promote synchrony in many systems, including the CG.",
+      "claim_type": "EXPLICIT",
+      "source": "Although electrical coupling has long been known to promote synchrony in many systems, including the CG (Tazaki, 1972; Bennett and Zukin, 2004), the physiological interaction of electrical coupling with intrinsic conductances to affect a compensatory output has not been examined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tazaki, 1972 and Bennett and Zukin, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "e625fa8e-8efc-4982-b351-45468fe315a7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C53",
+      "claim": "The synchronized activity of pacemaker cells in the crustacean STG is dependent on an interaction of intrinsic conductances and electrical coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in the crustacean STG has demonstrated how the synchronized activity of pacemaker cells is dependent on an interaction of intrinsic conductances and electrical coupling (Sz\u00fccs et al., 2000, 2001; Soto-Trevi\u00f1o et al., 2005), and that distinct circuits can be brought into synchrony via manipulations of electrical and chemical synapses (Elson et al., 1998; Sz\u00fccs et al., 2000, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies on the STG.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "70a0504a-b6db-45db-b2df-0b8ad5edae3c",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C54",
+      "claim": "Plasticity of electrical synapses has been discovered in the mammalian central nervous system, including the thalamic reticular nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, plasticity of electrical synapses has drawn considerable attention after being discovered in the mammalian central nervous system, including the thalamic reticular nucleus (Landisman and Connors, 2005; Haas et al., 2011), inferior olive (Lefler et al., 2014; Mathy et al., 2014), and retina (Kothmann et al., 2009; V\u00f6lgyi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Landisman and Connors, 2005 and Haas et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "34fb043c-46be-430f-842b-67e78baf65d5",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C55",
+      "claim": "Plasticity of electrical synapses has been discovered in the mammalian inferior olive.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, plasticity of electrical synapses has drawn considerable attention after being discovered in the mammalian central nervous system, including the thalamic reticular nucleus (Landisman and Connors, 2005; Haas et al., 2011), inferior olive (Lefler et al., 2014; Mathy et al., 2014), and retina (Kothmann et al., 2009; V\u00f6lgyi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Lefler et al., 2014 and Mathy et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "a1b122a6-ee4e-43af-a163-1ac9af950f0d",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C56",
+      "claim": "Plasticity of electrical synapses has been discovered in the mammalian retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, plasticity of electrical synapses has drawn considerable attention after being discovered in the mammalian central nervous system, including the thalamic reticular nucleus (Landisman and Connors, 2005; Haas et al., 2011), inferior olive (Lefler et al., 2014; Mathy et al., 2014), and retina (Kothmann et al., 2009; V\u00f6lgyi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kothmann et al., 2009 and V\u00f6lgyi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "64776230-d19a-49d0-9466-4ea81a9dc747",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C57",
+      "claim": "Studies in the thalamic reticular nucleus have suggested that potentially compensatory changes in coupling are important to maintain network stability as large changes in intrinsic excitability occur across development.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in the thalamic reticular nucleus have suggested that potentially compensatory changes in coupling are important to maintain network stability as large changes in intrinsic excitability occur across development (Parker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Parker et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "388136c7-f2c7-4cb2-81aa-d09b37919442",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C58",
+      "claim": "Intrinsic conductances can be differentially affected by neuromodulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic conductances can be differentially affected by ubiquitous natural mechanisms such as neuromodulation (Marder, 2011, 2012) or temperature changes (Tang et al., 2012; Marder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Marder, 2011, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "30fb22d1-fa22-4786-acbe-1e0d36cff47b",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C59",
+      "claim": "Intrinsic conductances can be differentially affected by temperature changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic conductances can be differentially affected by ubiquitous natural mechanisms such as neuromodulation (Marder, 2011, 2012) or temperature changes (Tang et al., 2012; Marder et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tang et al., 2012 and Marder et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "f10da739-2858-4291-aab2-e572aba70043",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C60",
+      "claim": "The effectiveness of electrical coupling can be affected by the modulation of intrinsic cellular conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the effectiveness of electrical coupling can be affected by the modulation of intrinsic cellular conductances (Szabo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Szabo et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "023105a3-62a3-4fda-b2c7-4eae615c9211",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C61",
+      "claim": "The cardiac ganglion network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give simultaneous excitatory input to 5 Large Cell (LC) motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The CG network is comprised of 9 cells: 4 Small Cell (SC) pacemaker interneurons which give simultaneous excitatory input to 5 Large Cell (LC) motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the network architecture based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "2b4e7cb7-1cbc-425b-985e-a71fd2984024",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C62",
+      "claim": "Anterior LCs exhibit strong local electrical and dye coupling in the crab CG.",
+      "claim_type": "EXPLICIT",
+      "source": "In the crab CG, anterior LCs exhibit strong local electrical and dye coupling (Tazaki and Cooke, 1979, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tazaki and Cooke, 1979, 1983.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "d1ce0c1b-3e02-4e8b-a31b-d0c02d1c1e73",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C63",
+      "claim": "The model LC neurons consist of two compartments - soma and axon.",
+      "claim_type": "EXPLICIT",
+      "source": "LC model neurons consist of two compartments - soma and axon - of which only the somata are pictured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model architecture shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "9d23ac15-bd62-4114-b182-e6b88a4cc11e",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C64",
+      "claim": "Somata in the model contain 9 conductances: GCaS, GCaT, GLEAK, GCAN, GA, GBKKCa, GSKKCa, GKd, and GNaP.",
+      "claim_type": "EXPLICIT",
+      "source": "Somata contain 9 conductances: GCaS, GCaT, GLEAK, GCAN, GA, GBKKCa, GSKKCa, GKd, and GNaP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model architecture shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "7bc71f20-82d8-43cc-8057-6b4ad1c5f8c2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C65",
+      "claim": "Paired LCs (1+2, 4+5) have stronger local coupling in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired LCs (1+2, 4+5) have stronger local coupling (black resistor symbols), and all 5 LCs are reciprocally electrically coupled via weaker gap junctions (gray resistor symbols).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model architecture shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "9a2233fa-7438-4d84-9c03-2853c080cfc2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C66",
+      "claim": "All 5 LCs are reciprocally electrically coupled via weaker gap junctions in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired LCs (1+2, 4+5) have stronger local coupling (black resistor symbols), and all 5 LCs are reciprocally electrically coupled via weaker gap junctions (gray resistor symbols).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model architecture shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "231e4b30-627f-410f-b2b2-ea621079a232",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C67",
+      "claim": "Model networks exhibited 'control' synchrony scores ranging from 0.642 to 1.0 with a median value of 0.915.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the definition of synchrony listed in the next section, these randomly generated model networks exhibited 'control' synchrony scores ranging from 0.642 to 1.0 with a median value of 0.915 (matching data in biology), where 1.0 represents perfect spike synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model validation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "2b713265-a42e-4ee1-aed1-f7f356ffb5be",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C68",
+      "claim": "Because of the electrotonic distance between the somata and axons of LCs, spike synchrony cannot be measured directly in this preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the electrotonic distance between the somata and axons of LCs, we cannot measure spike synchrony directly in this preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a technical limitation of the biological preparation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "9f542989-f156-4e69-9f42-2d6f60b099d7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C69",
+      "claim": "The model allows inference that waveform synchrony (and loss of synchrony) can translate to the level of the most proximal cellular output \u2013 spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "The model allows us to infer that waveform synchrony (and loss of synchrony) can indeed translate to the level of the most proximal cellular output \u2013 spiking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "665f85ac-1a5d-431b-aee5-bb8173d52393",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C70",
+      "claim": "Homeostatic plasticity has been reported in single isolated neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic plasticity has been reported in single isolated neurons (Swensen and Bean, 2005; Ransdell et al., 2012), in artificial networks formed in culture (Desai et al., 1999; Ibata et al., 2008), or in thin sections of the CNS (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "dba6c7f1-d685-427c-933a-51a833cce5f7",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C71",
+      "claim": "Homeostatic plasticity has been reported in artificial networks formed in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic plasticity has been reported in single isolated neurons (Swensen and Bean, 2005; Ransdell et al., 2012), in artificial networks formed in culture (Desai et al., 1999; Ibata et al., 2008), or in thin sections of the CNS (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Desai et al., 1999 and Ibata et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "fdf7628e-bd23-43df-806b-556097c49acb",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C72",
+      "claim": "Homeostatic plasticity has been reported in thin sections of the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Homeostatic plasticity has been reported in single isolated neurons (Swensen and Bean, 2005; Ransdell et al., 2012), in artificial networks formed in culture (Desai et al., 1999; Ibata et al., 2008), or in thin sections of the CNS (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Karmarkar and Buonomano, 2006 and Lambo and Turrigiano, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "aa08f285-19a6-486f-be7f-f2e056896779",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C73",
+      "claim": "Cortical slice preparations have demonstrated homeostatic plasticity of intrinsic conductances coordinated with chemical synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical slice preparations have demonstrated homeostatic plasticity of intrinsic conductances coordinated with chemical synaptic plasticity (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013), and Mauthner cells in fish have been shown to exhibit coordinated activity-dependent changes in both the chemical and electrical components of its mixed synapses (Yang et al., 1990; Pereda and Faber, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Karmarkar and Buonomano, 2006 and Lambo and Turrigiano, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "eb584bf1-a1c8-4d7b-884b-61a932dffd5b",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C74",
+      "claim": "Mauthner cells in fish have been shown to exhibit coordinated activity-dependent changes in both the chemical and electrical components of its mixed synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical slice preparations have demonstrated homeostatic plasticity of intrinsic conductances coordinated with chemical synaptic plasticity (Karmarkar and Buonomano, 2006; Lambo and Turrigiano, 2013), and Mauthner cells in fish have been shown to exhibit coordinated activity-dependent changes in both the chemical and electrical components of its mixed synapses (Yang et al., 1990; Pereda and Faber, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yang et al., 1990 and Pereda and Faber, 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "728ffb2d-34c2-459e-9ce3-b2a77e50296f",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C75",
+      "claim": "Variability in underlying cellular parameters may form part of the repertoire of compensatory mechanisms that endow networks with remarkable robustness characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, only recently has there been an appreciation that variability in underlying cellular parameters such as conductance magnitudes (Schulz et al., 2006; Pratt and Aizenman, 2007; Wilhelm et al., 2009), activation properties of channels (Olypher et al., 2006; Amendola et al., 2012), and synaptic strengths (Olypher and Calabrese, 2007; Wilhelm et al., 2009; Grashow et al., 2010) may form part of the repertoire of compensatory mechanisms that endow networks with remarkable robustness characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple studies and represents an interpretation of the literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "1ca9ebc7-65ad-468e-bace-c216875835d6",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C76",
+      "claim": "Degeneracy of ion channel properties has been put forth as a mechanism underlying robustness and adaptability in neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Degeneracy of ion channel properties leading to this type of relationship has been put forth as a mechanism underlying robustness and adaptability in neural networks (Tononi et al., 1999; Marder and Goaillard, 2006), but our study suggests physiological limits to neural network compensation and robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tononi et al., 1999 and Marder and Goaillard, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "052d2616-462b-424d-bdff-c42b93b03a75",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C77",
+      "claim": "The study suggests physiological limits to neural network compensation and robustness.",
+      "claim_type": "EXPLICIT",
+      "source": "Degeneracy of ion channel properties leading to this type of relationship has been put forth as a mechanism underlying robustness and adaptability in neural networks (Tononi et al., 1999; Marder and Goaillard, 2006), but our study suggests physiological limits to neural network compensation and robustness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the finding that compensated LCs never recapitulated their original voltage waveforms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "d70db8a1-eba8-4df9-a1d1-01ceeb0f3b58",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "claim_id": "C78",
+      "claim": "These limits may themselves be a contributing factor to the nature and progression of pathology in neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "These limits may themselves be a contributing factor to the nature and progression of pathology in neurodegenerative diseases (Trasande and Ramirez, 2007; Beck and Yaari, 2008; Small, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citations to studies on neurodegenerative diseases.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5c80254b-0674-4978-807a-1bbe9293a166",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The cardiac ganglion motor neurons (LCs) in Cancer borealis generate synchronous output despite having variable underlying conductances. This variability renders them vulnerable to perturbations: blocking high-threshold K+ currents with 25 mM TEA (~92% reduction) causes motor neurons to lose coordinated output and become divergent in their firing patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C13 establish the foundational observation that LCs exhibit synchronous output despite conductance variability, and that TEA blockade disrupts this synchrony. These claims are well-supported by prior work (citations to Tazaki 1972, Ransdell et al. 2012, 2013a) and form the basis for the current study's experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "80b40d08-1700-41f0-b921-b34afb369aba",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TEA exposure acutely desynchronizes LC output and increases excitability, but both synchrony and excitability recover toward baseline within 30-60 minutes. Waveform synchrony (R\u00b2) significantly decreased acutely after TEA but recovered to statistically indistinguishable from baseline by 1 hour. Multiple excitability measures (spikes per burst, spike frequency, burst depolarization, burst amplitude, SC-LC phase delay) showed significant acute increases followed by significant recovery toward baseline between 30-60 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C21 are strongly supported by experimental data in Figure 2, including intracellular recordings, extracellular recordings, and statistical analyses (paired t-tests, Wilcoxon signed rank tests). The time course of desynchronization and recovery is well-documented with appropriate controls and multiple measures of network function. Sample sizes (N=8-11) appear adequate based on power analyses reported in methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "5f7a3fd0-b9ef-48e8-9f13-5ee472aade8e",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Blocking high-threshold K+ conductances triggers compensatory mechanisms that resynchronize the network and restore excitability through coordinated increases in both GA (A-type K+ conductance) and electrical coupling. Multi-component mechanisms are necessary for full compensation and act synergistically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C48 represent the central findings of the manuscript and are supported by converging evidence from modeling (C22-C27, C43-C45) and experiments (C30-C33, C38-C42). The synergistic interaction is demonstrated in Figure 7, showing that 70% increases in both GA and GC restore synchrony, whereas larger increases in either alone are less effective. This represents a novel mechanistic insight into network homeostasis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A population of 27 model networks with variable conductances successfully recapitulated biological TEA responses. Modeling predicted that a two-fold increase in GA was the only single conductance change that significantly improved both spike synchrony and decreased action potentials. The model demonstrates that waveform synchrony translates to spike synchrony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C27 describe the computational modeling approach and key predictions. The model development is detailed in Methods with appropriate selection criteria (R\u00b2 > 0.9 for synaptic drive response, proper activity termination requiring ICAN:ISKKCa ratio ~1:0.83). The prediction that GA increase is optimal among single conductance changes (C24-C25) is supported by systematic testing shown in Figure 3. However, the model's ability to truly recapitulate all aspects of biological compensation could benefit from more quantitative validation metrics beyond the qualitative matching described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Intrinsic compensation contributes to but is insufficient for full restoration of synchrony. When LCs are isolated and driven with identical stimuli, synchrony improves significantly within 1 hour of TEA exposure but remains significantly lower than control. Peak IA current increased by mean 56% after 1 hour TEA exposure, but compensated voltage responses differ significantly from original control responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 are well-supported by experiments using sucrose block to isolate cells while allowing network compensation (Figure 4). The experimental design cleverly separates intrinsic from network-level mechanisms. Voltage clamp data (C32) confirms IA increase with appropriate statistics (p<0.05, n=6, Wilcoxon signed rank test). The finding that intrinsic compensation is insufficient (C31, C33) is critical for establishing the need for network-level mechanisms and is supported by statistical comparisons showing significant differences from control even after compensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "efc23375-c52a-4138-ba20-e3bcec986464",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model simulations show that increasing either chemical synapses or electrical coupling increases both synchrony and excitability. However, increasing chemical synaptic conductance increases LC spiking by ~25-30% (contrary to biological decrease in excitability), while increasing electrical coupling causes only ~9% change in spiking. Reducing either synaptic type decreased synchrony.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by systematic modeling experiments shown in Figure 5, testing incremental changes in synaptic strengths. The differential effects on excitability vs. synchrony provide important constraints that guide the interpretation toward electrical coupling as the primary network-level compensatory mechanism. Statistical analyses (One-Way ANOVA with Holm-Sidak post-hoc tests) are appropriate for the comparisons made.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "7dc7a32a-c599-4c3f-9958-411ca4033825",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Electrical coupling between LCs increases during compensation. Dynamic clamp experiments show that artificial coupling conductance of 0.2 \u03bcS rescues synchrony to control levels. In intact networks, coupling coefficients increased 85% and coupling conductance (GC) between LC4-LC5 increased 49.5% after 1 hour TEA exposure, while input resistance remained unchanged, indicating that increased gap junctional conductance rather than changes in membrane leak underlies the increased coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 provide strong experimental evidence for increased electrical coupling as a compensatory mechanism. The dynamic clamp proof-of-principle (C38, Figure 6A) is followed by direct measurements of coupling changes in intact networks (C39, C42, Figure 6B-C). The control experiment showing no change in input resistance (C40) is critical for ruling out passive membrane changes as an alternative explanation (C41). Sample sizes (N=8-13) and statistics (p<0.01, Wilcoxon signed rank test) are appropriate. The measurement of coupling conductance between LC4-LC5 is particularly rigorous as these cells are close together, minimizing electrotonic distance artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "ebbc96ee-a4a3-403f-b671-5b15115a78a2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Model simulations reveal synergistic interactions between GA and electrical coupling in restoring synchrony. Increasing GA alone up to +40% improved but could not fully restore synchrony. Electrical coupling alone required a 140% increase for full restoration. However, simultaneous 70% increases in both GA and GC produced spike synchrony indistinguishable from control, demonstrating synergistic efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 are supported by systematic modeling experiments shown in Figure 7, testing incremental changes in GA and GC both separately and together. The finding of synergistic interaction (C45) is quantitatively demonstrated: 70% increase in both conductances achieves what would require 140% increase in GC alone or is unachievable with GA alone. This represents a key mechanistic insight. However, the claim would be strengthened by experimental validation of the specific quantitative predictions (e.g., testing whether 70% increases in both parameters in biology produces the predicted restoration).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "41853da0-5757-49c8-954a-5a293cc0a1fe",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study represents one of the first direct demonstrations of physiological regulation of coupling conductance in a compensatory context and the first demonstration of coordinated homeostatic plasticity of intrinsic and electrical synaptic conductances in a comprehensive network-level example.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C46 assert the novelty of the findings. These claims are supported by appropriate citations to prior literature (C52-C57, C70-C74) that establish what was previously known about electrical coupling plasticity and homeostatic compensation. The authors correctly distinguish their work as examining coordinated plasticity across intrinsic and electrical synaptic mechanisms in an intact, functioning network with physiologically relevant compensation. The novelty claims appear justified based on the literature cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "823fabf2-cd28-4548-b249-95e8689c39d3",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The computational model consists of two-compartment LC neurons (soma and axon) with 9 conductances in the soma. Model networks with variable conductances exhibited control synchrony scores (median 0.915) matching biological data. The model allows inference that waveform synchrony translates to spike synchrony, which cannot be directly measured in the biological preparation due to electrotonic distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 describe the model architecture and validation. The model structure is detailed in Methods with appropriate biophysical parameters (Tables 1-2). The validation showing model synchrony scores match biology (C67) provides confidence in the model's relevance. The inference about waveform-to-spike synchrony translation (C69) is reasonable given the model's biophysical basis, though this remains an inference that cannot be directly validated experimentally in this preparation (C68). The model development process appears rigorous with appropriate selection criteria.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Variability in intrinsic and synaptic conductances (up to five-fold range) is widespread across neural systems including CPGs, cerebellar Purkinje cells, globus pallidus neurons, and various mammalian brain regions. This variability may form part of compensatory mechanisms that endow networks with robustness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9, C11, and C75 establish the broader context of conductance variability across neural systems. These are well-supported by appropriate citations to established literature (Marder and Goaillard 2006, Schulz et al. 2006, Swensen and Bean 2005, G\u00fcnay et al. 2008, Nelson and Turrigiano 2008, Ransdell et al. 2012, and others). These claims provide important background but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "e2aae4b8-d88f-4187-bd73-64a09b8a28cc",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work in other systems shows that K+ currents can restore synchrony between electrically coupled neurons, and that operant conditioning in Aplysia involves coordinated changes in intrinsic excitability (via leak conductance) and coupling strength to modify motor output frequency and synchronization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C49-C51 describe relevant prior work that provides context for the current findings. These are appropriately cited (Pfeuty et al. 2003, Nargeot et al. 2007, 2009, Nargeot and Simmers 2011, Sieling et al. 2014) and help establish the conceptual framework. The comparison to Aplysia work is particularly relevant as it shows similar mechanisms operating in a different behavioral context (learning vs. homeostatic compensation).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "61d3a002-b927-418f-b8cb-9cc3979c4126",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Electrical coupling promotes synchrony across many systems and plasticity of electrical synapses has been discovered in multiple mammalian brain regions (thalamic reticular nucleus, inferior olive, retina). In the thalamic reticular nucleus, compensatory changes in coupling may maintain network stability during developmental changes in excitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 review prior literature on electrical coupling and its plasticity. These are well-supported by appropriate citations (Tazaki 1972, Bennett and Zukin 2004, Sz\u00fccs et al. 2000-2009, Landisman and Connors 2005, Haas et al. 2011, Lefler et al. 2014, Mathy et al. 2014, Kothmann et al. 2009, V\u00f6lgyi et al. 2013, Parker et al. 2009). This background establishes that electrical coupling plasticity is a known phenomenon, making the current study's contribution the demonstration of its role in acute homeostatic compensation in an intact network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "b8dd0e97-fb1c-4481-917c-b6f056378530",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Intrinsic conductances can be differentially affected by neuromodulation and temperature changes, and the effectiveness of electrical coupling can be affected by modulation of intrinsic cellular conductances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 describe how natural mechanisms can perturb conductances, providing physiological context for why compensatory mechanisms would be important. These are supported by appropriate citations (Marder 2011, 2012, Tang et al. 2012, Marder et al. 2015, Szabo et al. 2010). This contextualizes the TEA manipulation as a model for naturally occurring perturbations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "fe6f6b6b-8747-4cbf-887e-33b2630f57d2",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The cardiac ganglion network consists of 4 small cell pacemaker interneurons providing excitatory input to 5 large cell motor neurons. Anterior LCs exhibit strong local electrical and dye coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 describe the basic anatomy and connectivity of the cardiac ganglion system. These are established facts supported by citations (Tazaki and Cooke 1979, 1983) and provide necessary background for understanding the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Homeostatic plasticity has been reported in isolated neurons, cultured networks, and CNS slices. Cortical slices show coordinated plasticity of intrinsic conductances and chemical synapses, and Mauthner cells show coordinated changes in chemical and electrical components of mixed synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 review prior work on homeostatic plasticity in various preparations. These are well-supported by appropriate citations (Swensen and Bean 2005, Ransdell et al. 2012, Desai et al. 1999, Ibata et al. 2008, Karmarkar and Buonomano 2006, Lambo and Turrigiano 2013, Yang et al. 1990, Pereda and Faber 1996). This establishes that coordinated plasticity across mechanisms has been observed before, but not in the specific context of intrinsic + electrical coupling in an intact functional network.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    },
+    {
+      "id": "a0d327f4-edf0-4a41-a20d-71f3034aeb74",
+      "content_id": "d1a75127-c246-4275-968e-a2ab557e2068",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Degeneracy of ion channel properties has been proposed as a mechanism for network robustness, but this study suggests physiological limits to compensation. Compensated LCs never recapitulated their original voltage waveforms, and these limits may contribute to neurodegenerative disease pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C76 is well-supported by citations (Tononi et al. 1999, Marder and Goaillard 2006). Claim C77 is supported by the experimental observation that compensated waveforms differ from control (C33, Figure 4E), though the broader implications for 'physiological limits' require more extensive investigation. Claim C78 is speculative and appropriately hedged ('may'), but the connection to neurodegenerative diseases is not directly tested and relies only on citations to other work. The limits observed here are in the context of a specific perturbation (TEA blockade) and may not generalize to all forms of network stress.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:32:06.656758Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "748c0e08-bfef-47ec-974f-d6b573a681e4",
+      "result_id": "5c80254b-0674-4978-807a-1bbe9293a166"
+    },
+    {
+      "claim_id": "90b098f0-0aee-4801-af19-d858d56ef3c7",
+      "result_id": "5c80254b-0674-4978-807a-1bbe9293a166"
+    },
+    {
+      "claim_id": "c00ecfb3-ecb6-4d2c-bb6c-24578d174c17",
+      "result_id": "5c80254b-0674-4978-807a-1bbe9293a166"
+    },
+    {
+      "claim_id": "32b640a4-fcda-4a48-937c-7541a09a7f4f",
+      "result_id": "5c80254b-0674-4978-807a-1bbe9293a166"
+    },
+    {
+      "claim_id": "07078c8e-3729-4aa7-8d9b-ddf3ba8aea55",
+      "result_id": "5c80254b-0674-4978-807a-1bbe9293a166"
+    },
+    {
+      "claim_id": "9a5f50bc-a073-4c66-8757-a11f4b284872",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "b09d6afc-dbc1-4724-93b3-e20f4965b28f",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "b4ddcf70-8afb-4cfd-8ad3-e1226b4e6b3d",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "5d0babdb-f9bf-404a-a716-2102bfd71425",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "5c158c6a-b343-4134-90cb-39a2e22cf7cd",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "9791beb7-ba56-4af0-b4be-be8a37b15ec5",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "5d379988-3619-483c-a08a-a25494e10046",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "683f3a34-5f12-49a1-877a-afc6c2c3be54",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "7d6e8982-476a-421c-b7a3-bba8209fa1a4",
+      "result_id": "80b40d08-1700-41f0-b921-b34afb369aba"
+    },
+    {
+      "claim_id": "b012c9d4-33df-4ed9-9158-021c15a148b4",
+      "result_id": "5f7a3fd0-b9ef-48e8-9f13-5ee472aade8e"
+    },
+    {
+      "claim_id": "0f9063dc-4add-400d-a4d4-f5b7aa2c793e",
+      "result_id": "5f7a3fd0-b9ef-48e8-9f13-5ee472aade8e"
+    },
+    {
+      "claim_id": "7249973f-8862-42eb-8ca8-3c6a28759bcb",
+      "result_id": "5f7a3fd0-b9ef-48e8-9f13-5ee472aade8e"
+    },
+    {
+      "claim_id": "b377638a-1fc5-472e-bc4a-f41284eb8bf6",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "e109de7e-9d8c-48b4-8820-66e3cc8faf49",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "200610b0-2c0c-4572-bd45-7a85b027dfd9",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "91f84db6-92ba-4bab-9c22-83738ccb10a3",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "f41ad3ed-b758-40f5-b74c-1e22fb40f499",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "b614184f-223a-446d-a16f-5f0972560726",
+      "result_id": "7a0c23da-45ec-4b8f-991c-45b92c1bb84c"
+    },
+    {
+      "claim_id": "c0722eed-37d2-48dc-b545-497470e4a410",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "ef6e98e1-8020-42ea-85dd-05fc8f5f8844",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "3cce55e5-2b2e-4e73-8e54-1ecd0a58a391",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "a41403d1-fc53-486c-b507-c8e3f1fbf9f9",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "044a17d0-691f-47f9-a8dc-e7d292b8c96e",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "337c1d18-46a2-424b-9b39-9ba3110f7f73",
+      "result_id": "edd2c51b-fbd4-4ef5-99b6-fcf42c666c00"
+    },
+    {
+      "claim_id": "69632be0-9b03-46bf-9581-35e17d204534",
+      "result_id": "efc23375-c52a-4138-ba20-e3bcec986464"
+    },
+    {
+      "claim_id": "bf109420-a19a-4411-a3f6-f636c883f5a7",
+      "result_id": "efc23375-c52a-4138-ba20-e3bcec986464"
+    },
+    {
+      "claim_id": "17c38ffb-051d-4fd8-a3f5-231b381b9780",
+      "result_id": "efc23375-c52a-4138-ba20-e3bcec986464"
+    },
+    {
+      "claim_id": "c50d8e70-5ded-4858-acc9-802d8c623761",
+      "result_id": "efc23375-c52a-4138-ba20-e3bcec986464"
+    },
+    {
+      "claim_id": "20d9893e-575e-4a76-bd9c-d6a6d85e32cb",
+      "result_id": "7dc7a32a-c599-4c3f-9958-411ca4033825"
+    },
+    {
+      "claim_id": "3cc5bf91-60c0-44c1-9ef2-984bb13c8ee2",
+      "result_id": "7dc7a32a-c599-4c3f-9958-411ca4033825"
+    },
+    {
+      "claim_id": "84866388-0793-40f9-8d2d-7d9cc01019ce",
+      "result_id": "7dc7a32a-c599-4c3f-9958-411ca4033825"
+    },
+    {
+      "claim_id": "91540963-4c9f-4dcf-b8d2-741fb6b33025",
+      "result_id": "7dc7a32a-c599-4c3f-9958-411ca4033825"
+    },
+    {
+      "claim_id": "2ce9914f-fde4-45d4-8b5d-8947f72f7cf1",
+      "result_id": "7dc7a32a-c599-4c3f-9958-411ca4033825"
+    },
+    {
+      "claim_id": "1ef2c0da-863e-4842-800b-41340e66b1b7",
+      "result_id": "ebbc96ee-a4a3-403f-b671-5b15115a78a2"
+    },
+    {
+      "claim_id": "e79d24d4-b44c-4ece-a2f2-b9be863c9a8d",
+      "result_id": "ebbc96ee-a4a3-403f-b671-5b15115a78a2"
+    },
+    {
+      "claim_id": "6b3ef3b9-cd8d-49ab-975b-ca3e3edb7e9e",
+      "result_id": "ebbc96ee-a4a3-403f-b671-5b15115a78a2"
+    },
+    {
+      "claim_id": "a58495f1-ba64-4f60-b279-0fe3822cf382",
+      "result_id": "41853da0-5757-49c8-954a-5a293cc0a1fe"
+    },
+    {
+      "claim_id": "e2dda5d5-9b53-42fe-bf60-07307a10d527",
+      "result_id": "41853da0-5757-49c8-954a-5a293cc0a1fe"
+    },
+    {
+      "claim_id": "d1ce0c1b-3e02-4e8b-a31b-d0c02d1c1e73",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "9d23ac15-bd62-4114-b182-e6b88a4cc11e",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "7bc71f20-82d8-43cc-8057-6b4ad1c5f8c2",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "9a2233fa-7438-4d84-9c03-2853c080cfc2",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "231e4b30-627f-410f-b2b2-ea621079a232",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "2b713265-a42e-4ee1-aed1-f7f356ffb5be",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "9f542989-f156-4e69-9f42-2d6f60b099d7",
+      "result_id": "823fabf2-cd28-4548-b249-95e8689c39d3"
+    },
+    {
+      "claim_id": "767c8e74-3c44-49c9-aa03-0709a7734595",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "5cf6e637-46e2-4f5b-8875-84a32457b401",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "018f3ddd-abe0-4f9d-8e87-fd0557447bc7",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "1aed3952-4911-4b8e-bc7b-fe0b90b41e94",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "c00ecfb3-ecb6-4d2c-bb6c-24578d174c17",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "728ffb2d-34c2-459e-9ce3-b2a77e50296f",
+      "result_id": "4bb41501-2d2f-47ac-9d88-b3c59c25cdc2"
+    },
+    {
+      "claim_id": "76d3d090-7c5a-47b5-9427-6b11930e3ebd",
+      "result_id": "e2aae4b8-d88f-4187-bd73-64a09b8a28cc"
+    },
+    {
+      "claim_id": "2e16f13a-5d64-4f49-b620-8998a6fb7d25",
+      "result_id": "e2aae4b8-d88f-4187-bd73-64a09b8a28cc"
+    },
+    {
+      "claim_id": "6e0a0b72-e9f2-4a6d-bd21-078be3b9a5b5",
+      "result_id": "e2aae4b8-d88f-4187-bd73-64a09b8a28cc"
+    },
+    {
+      "claim_id": "f8c74bac-b240-4361-ba6d-e69c664c15af",
+      "result_id": "e2aae4b8-d88f-4187-bd73-64a09b8a28cc"
+    },
+    {
+      "claim_id": "029768fd-3a1e-4054-a9d2-81e653a2a68d",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "e625fa8e-8efc-4982-b351-45468fe315a7",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "70a0504a-b6db-45db-b2df-0b8ad5edae3c",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "34fb043c-46be-430f-842b-67e78baf65d5",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "a1b122a6-ee4e-43af-a163-1ac9af950f0d",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "64776230-d19a-49d0-9466-4ea81a9dc747",
+      "result_id": "61d3a002-b927-418f-b8cb-9cc3979c4126"
+    },
+    {
+      "claim_id": "388136c7-f2c7-4cb2-81aa-d09b37919442",
+      "result_id": "b8dd0e97-fb1c-4481-917c-b6f056378530"
+    },
+    {
+      "claim_id": "30fb22d1-fa22-4786-acbe-1e0d36cff47b",
+      "result_id": "b8dd0e97-fb1c-4481-917c-b6f056378530"
+    },
+    {
+      "claim_id": "f10da739-2858-4291-aab2-e572aba70043",
+      "result_id": "b8dd0e97-fb1c-4481-917c-b6f056378530"
+    },
+    {
+      "claim_id": "023105a3-62a3-4fda-b2c7-4eae615c9211",
+      "result_id": "fe6f6b6b-8747-4cbf-887e-33b2630f57d2"
+    },
+    {
+      "claim_id": "2b4e7cb7-1cbc-425b-985e-a71fd2984024",
+      "result_id": "fe6f6b6b-8747-4cbf-887e-33b2630f57d2"
+    },
+    {
+      "claim_id": "665f85ac-1a5d-431b-aee5-bb8173d52393",
+      "result_id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4"
+    },
+    {
+      "claim_id": "dba6c7f1-d685-427c-933a-51a833cce5f7",
+      "result_id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4"
+    },
+    {
+      "claim_id": "fdf7628e-bd23-43df-806b-556097c49acb",
+      "result_id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4"
+    },
+    {
+      "claim_id": "aa08f285-19a6-486f-be7f-f2e056896779",
+      "result_id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4"
+    },
+    {
+      "claim_id": "eb584bf1-a1c8-4d7b-884b-61a932dffd5b",
+      "result_id": "26aefe9c-5552-4f5c-90e4-35e3d3a2efb4"
+    },
+    {
+      "claim_id": "1ca9ebc7-65ad-468e-bace-c216875835d6",
+      "result_id": "a0d327f4-edf0-4a41-a20d-71f3034aeb74"
+    },
+    {
+      "claim_id": "052d2616-462b-424d-bdff-c42b93b03a75",
+      "result_id": "a0d327f4-edf0-4a41-a20d-71f3034aeb74"
+    },
+    {
+      "claim_id": "d70db8a1-eba8-4df9-a1d1-01ceeb0f3b58",
+      "result_id": "a0d327f4-edf0-4a41-a20d-71f3034aeb74"
+    }
+  ],
+  "comparisons": []
+}

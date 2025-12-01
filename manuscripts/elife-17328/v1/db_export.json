@@ -1,0 +1,1470 @@
+{
+  "submission": {
+    "id": "964b8a63-0e2b-4a4c-b4be-4b873eef2fe7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:17:28.532619Z",
+    "updated_at": "2025-11-30T21:17:28.532619Z"
+  },
+  "content": [
+    {
+      "id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "submission_id": "964b8a63-0e2b-4a4c-b4be-4b873eef2fe7",
+      "content_type": "manuscript",
+      "content_text": "# Midbrain dopamine neurons signal aversion in a reward-context-dependent manner\n\n## Authors\n\n- Hideyuki Matsumoto<sup>1</sup>\n- Ju Tian<sup>1</sup>\n- Naoshige Uchida<sup>1</sup> ([ORCID: 0000-0002-5755-9409](https://orcid.org/0000-0002-5755-9409))\n- Mitsuko Watabe-Uchida<sup>1</sup> ([ORCID: 0000-0001-7864-754X](https://orcid.org/0000-0001-7864-754X)) \u2020\n\n### Affiliations\n\n1. Center for Brain Science Harvard University Cambridge United States\n2. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDopamine is thought to regulate learning from appetitive and aversive events. Here we examined how optogenetically-identified dopamine neurons in the lateral ventral tegmental area of mice respond to aversive events in different conditions. In low reward contexts, most dopamine neurons were exclusively inhibited by aversive events, and expectation reduced dopamine neurons\u2019 responses to reward and punishment. When a single odor predicted both reward and punishment, dopamine neurons\u2019 responses to that odor reflected the integrated value of both outcomes. Thus, in low reward contexts, dopamine neurons signal value prediction errors (VPEs) integrating information about both reward and aversion in a common currency. In contrast, in high reward contexts, dopamine neurons acquired a short-latency excitation to aversive events that masked their VPE signaling. Our results demonstrate the importance of considering the contexts to examine the representation in dopamine neurons and uncover different modes of dopamine signaling, each of which may be adaptive for different environments.\n\n## Introduction\n\nDopamine is thought to be a key regulator of learning from appetitive as well as aversive events (Schultz et al., 1997; Wenzel et al., 2015). It has been proposed that dopamine neurons act as a teaching signal in the brain by signaling the discrepancy between the values of actual and predicted rewards, that is, reward prediction error (RPE) (Bayer and Glimcher, 2005; Cohen et al., 2012; Hart et al., 2014; Roesch et al., 2007; Schultz, 2010; Schultz et al., 1997). Although accumulating evidence supports this idea with respect to rewarding and reward-predicting events (Bayer and Glimcher, 2005; Cohen et al., 2012; Eshel et al., 2015; Hart et al., 2014; Roesch et al., 2007; Schultz, 2010; Schultz et al., 1997), how dopamine neurons integrate information about aversive events remains highly controversial.\n\nPioneering work by Wolfram Schultz and colleagues introduced the idea that dopamine neurons signal RPE. This work demonstrated that dopamine neurons in the midbrain of monkeys exhibit a highly specific set of responses to reward (Mirenowicz and Schultz, 1994). When the animal receives reward unexpectedly, dopamine neurons fire a burst of action potentials. If a sensory cue reliably predicts reward, however, dopamine neurons decrease their response to reward, and instead burst to the cue. Finally, if an expected reward is omitted, dopamine neurons pause their firing at the time they usually receive reward (Hollerman and Schultz, 1998; Schultz et al., 1997). Subsequently, the idea of RPE coding by dopamine neurons has been substantiated by further experiments in a variety of species including monkeys (Bayer and Glimcher, 2005; Hollerman and Schultz, 1998; Waelti et al., 2001), rats (Flagel et al., 2011; Pan et al., 2005; Roesch et al., 2007), mice (Cohen et al., 2012; Eshel et al., 2015) and humans (D'Ardenne et al., 2008). This signal is proposed to underlie associative learning (Rescorla and Wagner, 1972), and bears a striking resemblance to machine learning algorithms (Sutton and Barto, 1998).\n\nMany of the previous studies that characterized dopamine responses used rewarded outcomes with varying degrees of predictability. Comparatively fewer studies have used aversive stimuli in the context of prediction errors. Among studies that have used aversive stimuli, these provide differing reports as to how dopamine neurons respond to aversive stimuli (Fiorillo, 2013; Schultz, 2015; Wenzel et al., 2015).\n\nIt is thought that the majority of dopamine neurons are inhibited by aversive stimuli (Mileykovskiy and Morales, 2011; Mirenowicz and Schultz, 1996; Tan et al., 2012; Ungless et al., 2004). However, a number of electrophysiological recording studies have reported that dopamine neurons are activated by aversive stimuli both in anesthetized (Brischoux et al., 2009; Coizet et al., 2006; Schultz and Romo, 1987) and awake animals (Guarraci and Kapp, 1999; Joshua et al., 2008; Matsumoto and Hikosaka, 2009), although the proportions and locations of aversion-activated neurons differed among these studies. The differences in the results between these studies could be due to the heterogeneity of dopamine neurons or to differences in experimental conditions (e.g. type of aversive stimuli; type of anesthesia). Furthermore, another study using fast-scan cyclic voltammetry found that dopamine neurons are excited during successful avoidance of aversive stimuli (Oleson et al., 2012), which could be 'rewarding'. Therefore, some of the excitatory responses to aversive stimuli may not be due to aversiveness alone.\n\nSome of these discrepancies could correspond to differences in dopamine signaling depending on the\u00a0projection target. Roitman et al. (2008) monitored dopamine dynamics in the nucleus accumbens using cyclic voltammetry while the animal received intra-oral administrations of a sucrose or quinine solution (Roitman et al., 2008). This study found that these stimuli caused opposite responses: dopamine release was increased by sucrose and decreased by quinine (McCutcheon et al., 2012), suggesting that at least the majority of dopamine neurons projecting to the nucleus accumbens are inhibited by aversive stimuli. Matsumoto and Hikosaka (2009) examined the diversity of dopamine neurons in context of prediction error. They showed that dopamine neurons that are activated by the prediction of aversive stimuli are located in the lateral part of the substantia nigra pars compacta (SNc), supporting the notion that dopamine subpopulations are spatially segregated (Matsumoto and Hikosaka, 2009). Consistent with this finding, Lerner et al. (2015) showed, using calcium imaging with fiber photometry, that SNc neurons projecting to the dorsolateral striatum are activated by aversive stimuli (electric shock) whereas those projecting to the dorsomedial striatum are inhibited (Lerner et al., 2015). Lammel et al. (2011) provided further evidence for spatial heterogeneity by showing that dopamine neurons projecting to the medial prefrontal cortex, located in the\u00a0medial ventral tegmental area (VTA) exhibited a form of synaptic plasticity (AMPA/NMDA ratio) in response to aversive stimuli (formalin injection) whereas dopamine neurons projecting to the dorsolateral striatum did not (Lammel et al., 2011) although how these neurons change their firing patterns in response to aversive stimuli remains unknown.\n\nIn contrast to the above findings suggesting that dopamine neurons are heterogeneous with respect to signaling aversive events, Schultz, Fiorillo and colleagues have argued that dopamine neurons largely ignore aversiveness (Fiorillo, 2013; Schultz, 2015; Stauffer et al., 2016). One argument is that the\u00a0excitation of dopamine neurons caused by aversive stimuli may be due to a 'generalization' or 'spill-over' effect of rewarding stimuli. Specifically, Mirenowicz and Schultz (1996) showed that when rewarding and aversive stimuli are predicted by similar cues (e.g. in a same sensory modality), aversion-predicting cues increase their tendency to activate dopamine neurons ('generalization') (Mirenowicz and Schultz, 1996). Kobayashi and Schultz (2014) showed that in a high-reward context, cues that predict a neutral outcome (e.g. a salient picture) increased their tendency to activate dopamine neurons compared to the neutral cues in a low reward context (Kobayashi and Schultz, 2014). Based on these and other observations (Fiorillo et al., 2013; Nomoto et al., 2010), they proposed that the early response reflects attributes such as stimulus generalization and intensity, and the later response reflects the\u00a0subjective reward value and utility (Schultz, 2016; Stauffer et al., 2016).\n\nOne influential paper by Fiorillo (2013) concluded that dopamine neurons represent prediction errors with respect to reward but not aversiveness (Fiorillo, 2013). That is, dopamine neurons ignore aversive events. Recording from non-human primates, Fiorillo used three pieces of evidence to support this claim: First, dopamine neurons\u2019 responses to aversive outcomes (air puff) were indistinguishable from their responses to neutral outcomes. Second, although most dopamine neurons reduced their reward responses when the\u00a0reward was predicted, their response to aversive events was unaffected by prediction. Third, dopamine neurons did not integrate the value of aversive events when combined with rewarding events. From these results, the author proposed that the brain represents reward and aversiveness independently along two dimensions (Fiorillo, 2013). As a result, the author proposed that different molecules regulate different types of reinforcement learning: dopamine for reward and a different molecule for aversiveness. If proven true, these ideas are fundamental in understanding how the brain learns from reward and aversion. However, it remains to be clarified whether these observations can be generalized.\n\nThe conclusions in many of the studies cited above relied upon indirect methods such as spike waveforms and firing properties (Ungless and Grace, 2012) in order to identify dopamine neurons. These identification methods differed among studies and have recently been called into question (Lammel et al., 2008; Margolis et al., 2006; Ungless and Grace, 2012). The ambiguity of cell-type identification criteria across studies makes it difficult to consolidate data on dopamine signaling. For example, Ungless et al. showed that some neurons in the VTA that were excited by aversive events and identified as dopaminergic using standard electrophysiological criteria were revealed not to be dopaminergic when they were examined with juxtacellular labeling (Ungless et al., 2004). Furthermore, Schultz has argued that some previous recording studies may not have targeted areas rich in dopamine neurons (Schultz, 2016).\n\nTo circumvent this problem, we tagged dopamine neurons with a light-gated cation channel, channelrhodopsin-2 (ChR2) and unambiguously identified dopamine neurons based on their responses to light (Cohen et al., 2012). In the present study, we monitored the activity of identified dopamine neurons using a series of behavioral tasks designed to determine how dopamine neurons encode prediction of aversive events in addition to reward. Our results demonstrate that, in contrast to the proposal by Fiorillo (2013), dopamine neurons in VTA indeed are able to encode complete VPE, integrating information about both appetitive and aversive events in a common currency. Importantly, the ability of dopamine neurons to encode VPE depends on both reward contexts and the animal\u2019s trial-by-trial behavioral state.\n\n## Results\n\n### Identification of dopamine neurons and task designs\n\nWe recorded the spiking activity of total 176 neurons in the VTA using tetrodes while mice performed classical conditioning tasks (Table 1). To identify neurons as dopaminergic, we optogenetically tagged dopamine neurons (Cohen et al., 2012). We then used a method developed previously (Stimulus-Associated spike Latency Test [SALT]) (Eshel et al., 2015; Kvitsiani et al., 2013; Tian and Uchida, 2015) to determine whether light pulses significantly changed a neuron\u2019s spike timing (p<0.001, Figure 1). To ensure that spike sorting was not contaminated by light artifacts, we compared the waveforms between spontaneous and light-evoked spikes, as described previously (Cohen et al., 2012). Dopamine neurons were mostly recorded from the central and posterior part of the lateral VTA including the parabrachial pigmented nucleus (PBP), parainterfascicular nucleus (PIF) and paranigral nucleus (PN) (Figure 1G,K,O). We obtained 72 optogenetically-identified dopamine neurons in total (5 \u00b1 4 neurons per mouse; mean \u00b1 S.D.; n = 14 mice).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig1-v1.jpg)\n\n**Figure 1.:** (A) Voltage trace from 10 pulses of 10 Hz light stimulation (cyan bars, top) of a representative dopamine neuron. A spontaneous spike and a light-triggered spike were magnified at the bottom. (B) Responses from this neuron to 10 Hz (left) and 50 Hz (right) stimulation. (C) Isolation of an identified dopamine neuron from noise and other units. (D) Histogram of p values testing whether light-activation induced significant changes in spike timing (n = 62 neurons) in the mixed prediction task. The p values were derived from SALT (Stimulus-Associated spike Latency Test; see Materials and methods). Neurons with p values < 0.001 and waveform correlations > 0.9 were considered identified (grey). P values and waveform correlations were calculated using light stimulation with all the frequencies (1\u201350 Hz). (E) Probability of light-evoked spike as a function of stimulation frequency for each dopamine neuron (grey) and the average across dopamine neurons (blue circles and bars, median and interquartile range). (F) Histograms of the mean (left) and S.D. (right) spike latency to light stimulation with all the frequencies (1\u201350 Hz) for 26 identified dopamine neurons. (G) Reconstruction of the positions of individual dopamine neurons recorded in the mixed prediction task. Each circle represents a lesion site from individual animals used in the mixed prediction task. Each horizontal line on the track (indicated by a vertical line over the lesion site) indicates estimated recording positions of individual dopamine neurons. Labeled structures: parabrachial pigmented nucleus of the VTA (PBP), parainterfascicular nucleus of the VTA (PIF), paranigral nucleus of the VTA (PN), red nucleus (RN), substantia nigra pars compacta (SNc), and substantia nigra pars reticulata (SNr). Scale bar, 1 mm. (H\u2013J) Optogenetic identification of dopamine neurons recorded in high and low reward probability tasks (29 dopamine neurons identified out of 73 neurons). Conventions are the same as in D\u2013F. (K) Reconstruction of the positions of individual dopamine neurons recorded in high (red) and low (cyan) reward probability tasks. Conventions are the same as in G. (L\u2013N) Optogenetic identification of dopamine neurons recorded in high reward probability task 2 (17 dopamine neurons identified out of 41 neurons). (O) Reconstruction of the positions of individual dopamine neurons recorded in high reward probability task 2 (magenta).\n\n**Table 1.**\n Summary of task conditions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Task</th>\n      <th colspan=\"5\">CS (% outcome)</th>\n      <th rowspan=\"2\">Reward trials (%)</th>\n      <th rowspan=\"2\">Free reward (%)</th>\n    </tr>\n    <tr>\n      <th>Outcome</th>\n      <th>Odor A (Reward CS)</th>\n      <th>Odor B (Nothing CS)</th>\n      <th>Odor C (Air puff CS)</th>\n      <th>Odor D (Reward and air puff CS)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Mixed prediction task</td>\n      <td>Water</td>\n      <td>25</td>\n      <td>0</td>\n      <td>0</td>\n      <td>25</td>\n      <td rowspan=\"2\">13</td>\n      <td rowspan=\"2\">2</td>\n    </tr>\n    <tr>\n      <td>Air puff</td>\n      <td>0</td>\n      <td>0</td>\n      <td>75</td>\n      <td>75</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Low reward probability task</td>\n      <td>Water</td>\n      <td>20</td>\n      <td>0</td>\n      <td>0</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">7</td>\n      <td rowspan=\"2\">6</td>\n    </tr>\n    <tr>\n      <td>Air puff</td>\n      <td>0</td>\n      <td>0</td>\n      <td>90</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">High reward probability task</td>\n      <td>Water</td>\n      <td>90</td>\n      <td>0</td>\n      <td>0</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">30</td>\n      <td rowspan=\"2\">6</td>\n    </tr>\n    <tr>\n      <td>Air puff</td>\n      <td>0</td>\n      <td>0</td>\n      <td>90</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">High reward probability task 2</td>\n      <td>Water</td>\n      <td>90</td>\n      <td>0</td>\n      <td>0</td>\n      <td rowspan=\"2\"></td>\n      <td rowspan=\"2\">30</td>\n      <td rowspan=\"2\">7</td>\n    </tr>\n    <tr>\n      <td>Air puff</td>\n      <td>0</td>\n      <td>0</td>\n      <td>80</td>\n    </tr>\n  </tbody>\n</table>\n\nWe devised several different tasks to characterize dopamine activities in response to mild aversive air puff (Table 1). 'Mixed prediction task' (low reward context) was designed to examine interaction between the\u00a0prediction of reward and the\u00a0prediction of aversiveness. 'Low reward probability task' (low reward context) and 'high reward probability task' (high reward context) were specifically designed to test the effects of reward probability on dopamine responses: two task conditions differed only with respect to reward probabilities. 'High reward probability task 2' (high reward context) was originally conducted to replicate the diverse responses to aversive stimuli in dopamine neurons, which were reported in multiple previous studies. The effects of reward contexts were also examined with the mixed prediction task and the high reward probability task 2.\n\nIn the present study, we first focused on the characterization of dopamine activities in low reward contexts (Figures 2\u20134). Then, we compared dopamine activities between low and high reward contexts (Figure 5). Finally, we examined dopamine activities in relation to behaviors in different contexts (Figure 6).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig2-v1.jpg)\n\n**Figure 2.:** (A) Task design in the mixed prediction task. (B) Mean \u00b1 S.E.M. of firing rates of optogenetically-identified dopamine neurons during all four trial conditions; reward (blue), nothing (black), punishment (red), and both reward and punishment (magenta). (C) Scatter plot of the mean responses during the CS epoch (0\u20131 s, indicated by a solid black line in B) for reward versus nothing. The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. Black filled circles indicate neurons with significant difference between responses to the CS predicting reward and that predicting nothing (unpaired t test, p<0.05). (D) Scatter plot of the mean responses during the CS epoch for nothing versus punishment. Black filled circles indicate neurons with significant difference between responses to the CS predicting nothing and that predicting punishment. (E) Comparison of the responses of individual neurons (n = 26) during CS (0\u20131 s) predicting reward (blue), nothing (black) and punishment (red). For all box plots, the central mark is the median, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted individually as plus symbols. **t(25) = 3.7, p=0.001, paired t test. One outlier >5 Hz in response to Odor A is not represented. (F) Scatter plot of the mean responses during the CS epoch for reward versus reward and punishment. Black filled circles indicate neurons with significant difference between responses to the CS predicting reward and that predicting reward and punishment. (G) Scatter plot of the mean responses during the CS epoch for reward and\u00a0punishment versus punishment. Black filled circles indicate neurons with significant difference between responses to the CS predicting punishment and that predicting reward and\u00a0punishment. (H) Comparison of the responses during CS predicting reward (blue), both reward and punishment (magenta), and punishment (red). 1t(25) = 2.5, p=0.02; ***t(25) = 4.4, p=2.0 \u00d7 10\u22124, paired t test. One outlier >5 Hz in response to Odor A is not represented.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Comparison of the responses of individual dopamine neurons (A, n = 18; B, n = 18; and C, n = 16 from two mice) during CS (0\u20131 s) predicting reward (blue), nothing (black) and punishment (red). For all box plots, the central mark is the median, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted individually as plus symbols. One outlier >5 Hz in response to Odor A is not represented in A and B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig3-v1.jpg)\n\n**Figure 3.:** (A) Mean \u00b1 S.E.M. of firing rate of dopamine neurons in response to predicted (red) and unpredicted air puff (purple). (B) Scatter plot of the responses to predicted and unpredicted air puff (0\u2013600 ms after air puff, indicated by a black solid line in A). Each data point represents an individual dopamine neuron. The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. Black filled circles indicate neurons with significant difference between responses to unpredicted and predicted air puff (unpaired t test, p<0.05). (C) Comparison of the responses to predicted and unpredicted air puff (n = 38). For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. *t(37) = 2.4, p=0.02, paired t test. (D) Histogram of changes in firing rate during the US epoch (0\u2013600 ms) of predicted versus unpredicted air puff. The population average of the auROC curve was significantly different from 0.5 (n = 38, *t(37) = 2.5, p=0.015, one-sample t test). Red arrow indicates mean auROC value. (E) Mean \u00b1 S.E.M. of firing rate around the outcome period in air puff omission (red) and nothing (black) trials. (F) A\u00a0scatter plot of the firing rate during the outcome period in air puff omission trials and nothing trials (0\u20131000 ms after US onset, indicated by a black solid line in E) subtracted by the baseline firing rate (\u22121\u20130 s from odor onset) for each neuron. Black filled circles indicate neurons with significant difference between firing rates during the outcome period in air puff omitted and nothing trials. (G) Comparison of the responses during air puff omission trial and nothing trial conditions. **t(37) = 2.8, p=0.008, paired t test. (H) Histogram of changes in firing rate during the US epoch (0\u20131000 ms) of air puff omission versus nothing trials. The population average of auROC curve was significantly different from 0.5 (n = 38, *t(37) = 2.7, p=0.011, one-sample t test).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mean \u00b1 S.E.M. of firing rate of dopamine neurons in response to predicted (blue) and unpredicted water (cyan). Data were collected from two different low reward probability tasks\u2014the mixed prediction task and the low reward probability task. (B) Scatter plot of the responses to predicted and unpredicted water (0\u2013600 ms after water, indicated by a black solid line in A). Each data point represents an individual dopamine neuron (n = 37). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. Black filled circles indicate neurons with significant difference between response to unpredicted water and that to predicted water (unpaired t test, p<0.05). (C) Comparison of the responses to predicted and unpredicted water (n = 37 dopamine neurons). Central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. ***t(36) = 4.5, p=7.6 \u00d7 10\u22125, paired t test. (D) Histogram of changes in firing rate during the US epoch (0\u2013600 ms) of predicted versus unpredicted water. The population average of auROC curve was significantly different from 0.5 (n = 37, ***t(36) = 4.4, p=8.1 \u00d7 10\u22125, one-sample t test). Red arrow indicates mean auROC value.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scatter plot of the responses to unpredicted air puff (0\u2013600 ms from air puff onset) and the effects of prediction on the responses to air puff US (subtraction of responses to unpredicted air puff from responses to predicted air puff, 0\u2013600 ms from air puff onset) in dopamine neurons. Each data point represents an individual dopamine neuron (n = 38). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. Solid line, best-fit linear regression. Pearson\u2019s correlation, r = 0.69, p=1.9 \u00d7 10\u22126. (B) Scatter plot of the responses to CS predicting air puff (0\u20131000 ms from odor onset) and the effects of prediction on the responses to air puff in dopamine neurons (n = 38). Pearson\u2019s correlation, r = 0.39, p=0.016. (C) Scatter plot of the responses of individual dopamine neurons (n = 37) to unpredicted water and air puff (0\u2013600 ms from water and air puff onsets, respectively). No correlation between these two responses (Pearson\u2019s correlation, r = -0.04, p=0.834).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Scatter plot of the firing rate during the outcome period in air puff omission trials (0\u20131 s after air puff onset) subtracted by the baseline firing rate (\u22121\u20130 s from odor onset) and the effects of prediction on the responses to air puff (subtraction of responses to unpredicted air puff from responses to predicted air puff, 0\u2013600 ms from air puff onset). Each data point represents an individual dopamine neuron (n = 38). Pearson\u2019s correlation, r = -0.38, p=0.02. Solid line, best-fit linear regression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig5-v1.jpg)\n\n**Figure 5.:** (A) Task design in the high reward probability task. (B) Mean \u00b1 S.E.M. of firing rate of optogenetically-identified dopamine neurons during two trial conditions; nothing (black) and punishment (red). (C) Scatter plot of the mean responses during the CS epoch (0\u20131 s, indicated by a solid black line in B) for punishment versus nothing. The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. Filled grey circles (11 out of 17 circles), dopamine neurons showing significant inhibition to punishment CS than the\u00a0average baseline firing rate (n = 80 trials, p<0.05, one-sample t test). (D) Comparison of the responses of individual neurons during CS (0\u20131 s) predicting nothing (black) and punishment (red). For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. t(16) = 2.1, p>0.05, paired t test. n.s., not significant. (E) Histogram of changes in firing rate during the CS epoch (0\u20131 s) of nothing versus punishment. The population average of the area under the receiver-operating characteristic (auROC) curve was not significantly different from 0.5 (n = 17, t(16) = 1.9, p>0.05, one-sample t test). Red arrow indicates mean auROC value. (F) Task design in the low reward probability task. (G) Mean \u00b1 S.E.M. of firing rate of optogenetically-identified dopamine neurons during two trial conditions; nothing (black) and punishment (red). (H) Scatter plot of the mean responses during the CS epoch (0\u20131 s, indicated by a solid black line in G) for punishment versus nothing. Filled grey circles (12 out of 12 circles), dopamine neurons showing significant inhibition to punishment CS than the\u00a0average baseline firing rate (n = 80 trials, p<0.05, one-sample t test). (I) Comparison of the responses of individual neurons during CS (0\u20131 s) predicting nothing (black) and punishment (red). **t(11) = 3.8, p=0.003, paired t test. (J) Histogram of changes in firing rate during the CS epoch (0\u20131 s) of nothing versus punishment. The population average of the auROC curve was significantly different from 0.5 (n = 12, **t(11) = 4.2, p=0.002, one-sample t test). (K) Comparison of the percentage of dopamine neurons showing significant inhibition to punishment CS than baseline (Air puff CS < Baseline) between high and low reward probability tasks. *chi(1) = 5.34, p=0.02, chi-square test. Error bar, S.E.M.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013F) Comparisons of responses of individual dopamine neurons during CS (0\u20131 s) predicting nothing (black) and punishment (red) in high reward probability task 2 (A, n = 17, t(16) = 0.35, p=0.73, paired t test), high reward probability task (B, n = 17, t(16) = 2.1, p=0.05), high reward contexts (data collected from two high reward probability tasks; C, n = 34, t(33) = 1.5, p=0.14), mixed prediction task (D, n = 26, **t(25) = 3.7, p=1.2 \u00d7 10\u22123), low reward probability task (E, n = 12, **t(11) = 3.8, p=2.8 \u00d7 10\u22123), and low reward contexts (data pooled from mixed prediction task and low reward probability task; F, n = 38, ***t(37) = 5.0, p=1.5 \u00d7 10\u22125). For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. n.s., not significant. (G) Comparison of the percentage of dopamine neurons showing significant inhibition to punishment CS than baseline (Air puff CS < Baseline) between high and low reward contexts (n = 34 and 38, respectively). **chi(1) = 7.25, p=7.1 \u00d7 10\u22123, chi-square test. Error bar, S.E.M. (H) Comparison of the percentage of dopamine neurons showing significant inhibition to punishment CS than nothing CS (Air puff CS < Nothing CS) between high and low reward contexts (n = 34 and 38, respectively). *chi(1) = 4.57, p=0.03, chi-square test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A\u2013B) Comparison of the later responses (200\u20131000 ms after odor onset) of individual neurons to CSs predicting nothing (black) and punishment (red) in different reward probability tasks (A, n = 12 dopamine neurons in the low reward probability task; B, n = 17 in the high reward probability task). For all box plots, the central mark is the median, the edges of the box are the 25th and 75th percentiles, and the whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted individually as plus symbols. **t(11) = 4.0, p=2.0 \u00d7 10\u22123; and t(16) = 2.0, p=0.07, paired t test. n.s., not significant. (C) Comparison of the percentage of dopamine neurons showing significant inhibition to punishment CS than nothing CS (Air puff CS < Nothing CS) between high and low reward probability tasks. *chi(1) = 4.44, p=0.04, chi-square test. Error bar, S.E.M.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Scatter plot of the responses to air puff-predicting CS (0\u20131 s from odor onset) and unpredicted air puff US (0\u2013600 ms from air puff onset). Each data point represents an individual dopamine neuron (n = 34). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig6-v1.jpg)\n\n**Figure 6.:** (A) Eye blinking behavior during all three trial conditions in an example session in the high reward probability task. Red color indicates small eye area. (B) Average eye area during all three trial conditions in the example session; reward (blue), nothing (black) and punishment (air puff, red). (C) Comparison of the eye area during baseline (\u22121\u20130 s from odor onset, black) and delay period (1\u20132 s, red) in punishment trial condition from an example animal (n = 21 sessions). For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. ***t(20) = 14.7, p=3.4 \u00d7 10\u221212, paired t test. (D) Comparison of the responses of individual dopamine neurons (n = 23) during punishment CS (0\u20131 s) between blink (dark red) and no-blink trials (magenta). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. **t(22) = 3.0, p=0.007, paired t test. (E) Comparison of the responses of individual dopamine neurons during punishment CS (0\u20131 s) in blink and no-blink trials in high and low reward probability tasks (n = 13 and 10 neurons from these two tasks, respectively). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. ***t(9) = 7.4, p=4.3 \u00d7 10\u22125, one-sample t test;*t(9) = 3.0, p=0.016; and t(12) = 1.3, p=0.207, paired t test. n.s., not significant. (F) Comparison of the responses of individual dopamine neurons during reward-predicting CS (0\u20131 s) between trials with anticipatory and no anticipatory licks (\u22653 and <3 licks s\u22121 during delay period, respectively). In 90% water trials (left), only 9 out of 34 dopamine neurons were collected, as the number of trials in which the animal did not show anticipatory licking was small. In 20\u201325% water trials (right), 33 out of 38 dopamine neurons were collected. The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. 1t(8) = 2.322, p=0.0488, paired t test; 2t(8) = 3.141, p=0.0138, one-sample t test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) A histogram showing the distribution of pixels with different intensity (0\u2013255 levels, bottom) in an example frame of the\u00a0right eye region (top). A threshold 234 pixel intensity was used to separate eye area from the background. (B) Pixels with intensity smaller than the eye threshold was set to 1 (white) and others were set to 0 (black). (C) White small patches outside of the eye on the binary image in B were removed. (D) Smoothing the eye patch. (E) The averaged pixel intensities of example video frames were plotted. Troughs of the value indicate short infrared light source off (<25 ms) delivered 2 s after every US onset.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013H) Comparison of the eye area during baseline (\u22121\u20130 s from odor onset, black) and delay period (1\u20132 s from odor onset, red) in punishment (air puff) trial condition. For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. Each boxplot represents data from each animal (5 from the high reward probability task, and 3 from the low reward probability task). ***t(21) = 3.9, p=8.5 \u00d7 10\u22124 (n = 22 sessions), paired t test in A; ***t(17) = 6.3, p=8.4 \u00d7 10\u22126 (n = 18 sessions), paired t test in B; *U = 342, p=0.02 (n = 32 sessions), Mann-Whitney U test in C; ***t(20) = 14.7, p=3.4 \u00d7 10\u221212 (n = 21 sessions), paired t test in D; *t(16) = 2.9, p=0.01(n = 17 sessions), paired t test in E; ***t(15) = 4.2, p=7.0 \u00d7 10\u22124 (n = 16 sessions), paired t test in F; ***t(25) = 8.2, p=1.4 \u00d7 10\u22128 (n = 26 sessions), paired t test in G; and ***t(18) = 5.2, p=5.6 \u00d7 10\u22125 (n = 19 sessions), paired t test in H. (I) Comparison of the eye area during delay period (1\u20132 s after odor onset) in all three trial conditions; reward (blue), nothing (black) and punishment (red). Data were from 8 mice. *1t(7) = 3.6, p=0.009; and *2t(7) = 3.2, p=0.01, paired t test.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Comparison of the responses of individual dopamine neurons during late period of punishment CS (200\u20131000 ms) in the high and low reward probability tasks (n = 13 and 10 neurons from these two tasks, respectively). The baseline firing rate (\u22121\u20130 s from odor onset) was subtracted for each neuron. For all box plots, central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and outliers are plotted as plus symbols. ***t(9) = 7.0, p=6.4 \u00d7 10\u22125, one-sample t test; *t(9) = 3.0, p=0.016; and t(12) = 0.22, p=0.83, paired t test. n.s., not significant.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17328/elife-17328-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Histograms of the lick rate during the\u00a0delay period (1\u20132 s from odor onset) during 90% water trials (blue) and nothing trials (black) from all the sessions in which dopamine neurons were identified. (B) Comparison of the lick rates during the\u00a0delay period between 90% water trials and 20\u201325% water trials (n = 34 and 38 sessions, respectively). Central mark is the median, box edges are 25th and 75th percentiles, whiskers extend to the most extreme data points not considered outliers (points 1.5 \u00d7 interquartile range away from the 25th or 75th percentile), and an outlier is plotted as plus symbols. ***t(70) = 8.8, p=5.3 \u00d7 10\u221213, unpaired t test.\n\n### Dopamine neurons integrate values of both valences, appetitive and aversive\n\nA previous study reported that dopamine neurons do not integrate information about aversiveness along with reward-related information when rewarding liquid and an air puff are delivered to a monkey at the same time (Fiorillo, 2013). However, this method may produce complex interactions between the two different outcomes. To test how reward and aversion interact and affect dopamine responses, we devised a 'mixed prediction' paradigm (Figure 2) in which a single odor (Odor D in Figure 2A, conditioned stimulus, CS) predicted both a rewarding and a mildly aversive event in a complementary and probabilistic manner: a reward (water) was delivered in 25% of the trials and an aversive event (air puff) was delivered in the remaining 75% of the trials. For comparison, we included the following trial types: Odor A predicted water in 25% of trials (nothing in 75%), Odor C predicted air puff in 75% of trials (nothing in 25%), and Odor B predicted no outcome. Each behavioral trial began with the odor CS (1\u2009s), followed by a 1-s delay and an unconditioned stimulus (US). We chose higher probability for air puff than water in order to balance the strength of positive and negative values in the task; we suspect that the magnitude of the negative value of mild air puff is much smaller than the magnitude of the positive value of water, which could cause us to overlook a small effect of predicted air puff on the CS response.\n\nWe first asked whether the recorded dopamine neurons were inhibited or excited by odor cues (CSs) that predicted different outcomes. We found that the vast majority of the neurons were inhibited by the air puff-predicting CS while excited by the reward-predicting CS (Figure 2B\u2013D). On average, the firing rate during the CS period was significantly lower for the air puff-predicting CS than for the CS predicting nothing, while it was higher for the reward-predicting CS than for the CS that predicted nothing (Figure 2E). A similar tendency was observed using data from two animals instead of three (i.e. leaving one animal out of three) (Figure 2\u2014figure supplement 1).\u00a0Among 26 identified dopamine neurons, 85% (22 neurons) were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 59% (13 of 22 significant neurons) showed the\u00a0monotonic CS value coding (water > nothing > air puff). These results suggest that the firing of identified dopamine neurons was negatively modulated by the stimulus predicting aversive events.\n\nWe next examined whether prediction of aversion in addition to reward changed the response of dopamine neurons. In contrast to the previous study (Fiorillo, 2013), we found that the majority of neurons showed an intermediate response to the CS predicting both water and air puff (Odor D) compared to the CSs predicting water only (Odor A) or air puff only (Odor C) (Figure 2B,F,G). As a population, the net response to these CSs increased monotonically according to the values of both water and air puff, with the CS response to Odor D falling in between that of Odor A and Odor C (Figure 2H). 89% (23 of 26 neurons) of identified dopamine neurons were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 65% (15 of 23 significant neurons) showed the\u00a0monotonic CS value coding (water > water and air puff > air puff). These results indicate that VTA dopamine neurons combine values for both reward and punishment along a one-dimensional value axis.\n\n### Dopamine neurons signal prediction errors for aversion\n\nIt has been shown that dopamine neurons\u2019 responses to reward are greatly reduced when the reward is predicted, a signature of prediction error coding (Schultz et al., 1997). We replicated these findings here even in low reward probability conditions (20\u201325%, Figure 3\u2014figure supplement 1;\u00a0see Materials and methods). We next examined whether these dopamine neurons show prediction error coding for aversive events. To address this question, we occasionally delivered air puff during inter-trial intervals without any predicting cues. These responses to unpredicted air puff were compared to the responses to air puff in trials when air puff was predicted by an odor cue. We found that the inhibitory response to an air puff was significantly reduced when the air puff was predicted by an odor cue (Figure 3A\u2013D). To further examine whether dopamine neurons showed prediction error coding for aversive events, we compared the firing rate during the outcome period in air puff omission trials with that in trials that predict nothing. We found that the omission of a predicted air puff slightly but significantly increased firing rates, compared to no change in nothing trials (Figure 3E\u2013H) although we observed variability in air puff omission responses. Together, these results demonstrate that dopamine neurons signal prediction errors for aversive events in addition to rewarding events. These results indicate that dopamine neurons have the ability to signal VPEs for both appetitive and aversive events, supporting previous work by Matsumoto and Hikosaka (Matsumoto and Hikosaka, 2009) and contrasting with previous work by Fiorillo (Fiorillo, 2013).\n\n### Homogeneous response function of dopamine neurons\n\nAlthough we found that most dopamine neurons were inhibited by air puff (mildly aversive event), there was a considerable variability in the extent to which individual dopamine neurons were inhibited. Does this diversity support a functional diversity across dopamine neurons in the lateral VTA?\n\nIn a previous study, dopamine neurons in the lateral VTA exhibited neuron-to-neuron variability in the magnitude of response to a given size of reward (Eshel et al., 2016). Despite this variability in responsivity, the response functions of individual dopamine neurons were scaled versions of each other, indicating a remarkable homogeneity. One consequence of this scaled relationship is that neurons that responded strongly to a given size of reward were more greatly suppressed by reward expectation. In other words, reward expectation suppressed a neuron\u2019s reward response in proportion to the size of its response to unexpected reward.\n\nDoes the same relationship hold for inhibitory responses to air puff? To address this question, we examined the correlation between aversion-related responses in dopamine neurons (Figure 4, Figure 4\u2014figure supplement 1). We indeed found a similar relationship: dopamine neurons that were strongly inhibited by air puff also exhibited a larger prediction-dependent reduction of their responses to air puff (Figure 4A, Pearson\u2019s r = 0.69, p=1.9 \u00d7 10\u22126). In other words, the ratio between individual dopamine neurons\u2019 responses to unpredicted versus predicted air puff was preserved across neurons. In addition, similar to reward responses (Eshel et al., 2016), inhibitory responses to the air puff-predicting CS were correlated with prediction-dependent reduction of responses to air puff US (Figure 4B, Pearson\u2019s r = 0.39, p=0.016). These results indicate that the response function was preserved across dopamine neurons in the case of aversive stimuli.\n\nWe next examined the relationship between responses of dopamine neurons to reward and to aversion. We compared responses of dopamine neurons to unpredicted water and unpredicted air puff (Figure 4C). We observed no obvious unique clusters across neurons, supporting the notion that there was no clear subpopulation of dopamine neurons specialized in signaling reward versus aversion in the lateral VTA. Rather, we found that most of dopamine neurons were inhibited by unpredicted aversive stimuli and excited by unpredicted rewarding stimuli. Interestingly, we did not find any negative or positive correlation of neurons\u2019 responses to water and air puff; the proportion of the response magnitudes in response to reward versus aversion was diverse across neurons. These results indicate that although the response function either for reward prediction error or for aversion prediction error was homogeneous across dopamine neurons, these two functions were relatively independent, suggesting that different mechanisms may produce dopamine responses to reward and aversion.\n\n### Reward-context dependent representation of aversion in dopamine neurons\n\nAlthough the above results suggested that most of the dopamine neurons that we recorded from the lateral VTA were inhibited by aversive events, contrasting results were obtained in some previous studies. In monkeys, it was found that, on average, the responses to aversive stimuli were indistinguishable from responses evoked by neutral stimuli (Fiorillo, 2013). In addition, previous studies in mice (Cohen et al., 2012; Tian and Uchida, 2015) mirrored these contrasting results in VTA dopamine neurons. These results suggest that the difference between studies is not due to a species difference, raising the possibility that our task parameters altered the dopamine response.\n\nMultiple studies found that even non-rewarding stimuli can excite dopamine neurons with short latency. A recent study reported that whether a neutral stimulus elicits these short-latency excitations depends on reward context, and that excitation is larger in a high versus a low reward context (Kobayashi and Schultz, 2014). We noted that the reward probability used in the task described above (mixed prediction task) was much lower (15% rewarded trials overall) than in previous studies (e.g. 50% rewarded trials overall in Cohen et al., 2012). This raises the possibility that in a high reward context, short-latency excitations to aversive stimuli masked inhibitory responses to aversive stimuli, and thus clear inhibition by aversive stimuli has not been observed in previous studies because these studies typically used relatively high reward probabilities.\n\nTo directly test whether reward probability affected dopamine neurons\u2019 responses to aversive events, we recorded the activity of dopamine neurons in two task conditions that differed only with respect to reward probabilities (Figure 5). In the high reward probability condition, the probability of water in Odor A trials was 90% (36% reward trials overall) (Figure 5A) while in the low reward probability condition, the reward probability in Odor A trials was 20% (13% reward trials overall) (Figure 5F). Consistent with the previous study (Kobayashi and Schultz, 2014), nothing-predicting CS (neutral cue) elicited short-latency excitation more prominently in the high reward compared to the low reward probability condition (Figure 5B,G). Next we examined the response to the air puff-predicting CS. In the low reward context, the difference between the responses to air puff- and nothing-predicting CSs remained significantly different (Figure 5H\u2013J), consistent with the above experiment (Figure 2). In contrast, we found that in the high reward probability condition, dopamine neurons exhibited biphasic responses to the air puff-predicting CS: short-latency excitation followed by later inhibition. Furthermore, dopamine neurons\u2019 net responses to the air puff-predicting CS and nothing-predicting CS were no longer significantly different (Figure 5C\u2013E). This result, obtained in a high reward probability condition, is similar to those obtained in previous studies (Cohen et al., 2012; Fiorillo, 2013; Tian and Uchida, 2015). In the low reward context, all the dopamine neurons (12 of 12 dopamine neurons; p<0.05, one-sample t test; filled grey circles in Figure 5H) were inhibited by the air puff-predicting CS whereas in the high reward context, a large fraction of dopamine neurons (6 of 17 dopamine neurons; p>0.05, one-sample t test; filled white circles in Figure 5C) did not show consistent inhibition by air puff CS. That is, in the high reward context, a little fraction of neurons showed a stronger inhibition to the air puff CS compared to the nothing CS (100% and 65%, low and high reward context, respectively; p=0.02, chi-square test; Figure 5K).\n\nWe obtained additional data using a task condition similar to the high reward context (high reward probability task 2; see Materials and methods, and Table 1) (n = 17 identified dopamine neurons). Furthermore, the mixed prediction task (Figure 2) provides additional data for a low reward context (n = 26 identified dopamine neurons). Similar results were obtained by using dopamine neurons in each of these experiments or by pooling neurons from these experiments separately for high and low reward contexts (n = 34 and 38 identified dopamine neurons, respectively) (Figure 5\u2014figure supplement 1).\n\nThe above analyses used a relatively large time window that contains the entire response period (0\u20131,000 ms). Because dopamine responses in high reward contexts exhibited biphasic responses (early excitation followed by later inhibition), we further analyzed the data by separating these time windows into smaller bins. Because there is no known mechanism by which downstream neurons can read out these windows separately, analysis using a large window can be considered more conservative. However, previous studies have proposed that different information may be conveyed in these time windows (Schultz, 2016; Stauffer et al., 2016).\n\nWe obtained similar results even if we compared only later time bins (200\u20131,000 ms), excluding the early excitation phase (Figure 5\u2014figure supplement 2). By excluding the early excitation period (0\u2013200 ms), many dopamine neurons showed inhibition to air puff-predicting CS in both low and high reward contexts compared to the baseline firing (92% and 82%, respectively). However, during this inhibition phase, most dopamine neurons (65%) did not distinguish the air puff CS from the nothing CS in the high reward context while most dopamine neurons (75%) showed more inhibition to the air puff CS than to the nothing CS in the low reward context (i.e. 35% and 75% of neurons distinguished air puff CS from nothing CS in high and low reward contexts, respectively; p=0.04, chi-square test; Figure 5\u2014figure supplement 2C). This suggests that although many dopamine neurons exhibit inhibitory responses during the later response window in high reward contexts, the information that this inhibition conveys may be different from that in low reward contexts; the inhibition in the high reward context largely reflected 'no reward' rather than the negative value of an air puff (Fiorillo, 2013). Neurons that showed a large excitation to the air puff CS were not necessarily the same group of neurons which showed excitation to the air puff itself, consistent with a previous study (Matsumoto and Hikosaka, 2009) (Figure 5\u2014figure supplement 3).\n\nThese results demonstrate that dopamine neurons\u2019 responses to aversion-predicting cues are greatly affected by reward contexts, and suggest that dopamine neurons\u2019 ability to faithfully represent negative values of aversive cues are undermined in high reward contexts.\n\n### Trial-to-trial variability in dopamine responses to aversive stimuli\n\nIn order to examine dopamine responses to aversive stimuli more carefully in relation to behavior, we characterized dopamine activities and anticipatory eye-blinking on a trial-by-trial basis. We quantified the area of the right eye (including both sclera and pupil) concurrently with neuronal recording in high and low reward probability contexts (Figure 6; Figure 6\u2014figure supplement 1; see also Materials and methods). We observed that the eye area became smaller after the onset of a CS predicting air puff and became larger after a CS predicting reward (Figure 6A,B). In air puff trials, the eye area during the delay period was significantly smaller than before CS presentation (\u22121\u20130\u2009s from CS onset), indicating anticipatory eye-blinking (Figure 6C, n = 21 sessions, p=3.4 \u00d7 10\u221212, paired t test). We confirmed that in both low and high reward probability conditions, all of the animals showed significant anticipatory eye-blinking (Figure 6\u2014figure supplement 2). The eye area during the delay period was significantly smaller in air puff trials than in nothing trials (Figure 6\u2014figure supplement 2I). These results indicate that our air puff conditions were aversive enough to cause anticipatory eye-blinking during the recording experiments, although we noticed that the amount of eye-blinking differed across trials.\n\nBecause the level of anticipatory eye-blinking varied across trials, we next divided air puff trials in each session into two groups, 'blink' (small eye size) and 'no-blink' (big eye size) trials (see Materials and methods), and then examined the correlation between blinking and the responses of dopamine neurons to the air puff CS. We found that the firing rates of dopamine neurons to air puff CS in blink trials were significantly smaller than that in no-blink trials (Figure 6D). In other words, inhibition of dopamine neurons during the CS period, but not excitation, predicted aversion-related behavior.\n\nThe correlation between trial-by-trial dopamine activity and anticipatory blinking was even clearer if we consider reward contexts (Figure 6E). In the low reward probability condition, the inhibitory response of dopamine neurons in blink trials was significantly greater than in no-blink trials (p=0.02, paired t test). Of note, in the high reward probability condition, the inhibitory response of dopamine neurons was greatly reduced even when the animals showed anticipatory eye-blinking (Figure 6E, p=0.009, unpaired t test). This result suggests that dopamine responses may not directly trigger eye-blinking behavior. Rather, the results are consistent with the idea that dopamine neurons\u2019 inhibitory responses to aversive cues signal negative values of the outcome, but not the action itself. Importantly, dopamine neurons showed significant inhibition only when animals showed anticipatory eye-blinking in the low reward context (Figure 6E, p=4.3 \u00d7 10\u22125, one-sample t test). The results do not change even when we only used a later window of dopamine CS responses, excluding the early excitation period (0\u2013200 ms) (Figure 6\u2014figure supplement 3).\n\nWhereas mice showed anticipatory blinking in 48% of air puff trials (90% air puff trials), they showed more consistent anticipatory licking in water trials (98% in 90% water trials) (see Materials and methods). This could be due to the fact that we used only a mildly aversive air puff (to prevent the animal from being discouraged to perform the task altogether), whereas water is highly rewarding. Although the number of trials in which the animal did not show anticipatory licking was small, we observed a similar relationship between dopamine responses and behavior: dopamine neurons were consistently excited by the 90% reward cue when they showed anticipatory licking, but not when they did not show anticipatory licking (Figure 6F). These results indicate the importance of both reward contexts and behavioral outcomes to understand how dopamine neurons represent reward and aversion. Without monitoring behaviors, investigators may easily miss weak inhibitory responses to mildly aversive stimuli in dopamine neurons.\n\n## Discussion\n\nThere have been divergent and inconsistent results with respect to how dopamine neurons encode aversive events. In the present study, we aimed to specifically examine how dopamine neurons integrate aversiveness and reward by carefully controlling various experimental parameters. The following three points are particularly notable. First, we used an optogenetic tagging method to unambiguously identify dopamine neurons while recording spiking activity in behaving mice. Second, we used a series of behavioral paradigms with probabilistic outcomes that are designed to test specific hypotheses regarding the integration of different outcomes and the effect of reward contexts. Third, we monitored aversion-related behaviors (eye blinking) to examine the trial-by-trial relationship to dopamine responses. By harnessing these controlled experimental conditions, our results indicate that dopamine neurons have different modes of signaling. In low reward contexts (the mixed prediction task and the low reward probability task), dopamine neurons were inhibited by aversive events more strongly than by neutral events, tracking the aversiveness of stimuli on a trial-by-trial basis. Furthermore, dopamine neurons signaled VPEs by faithfully combining information about both appetitive and aversive events into a common currency of value. Thus, dopamine can function as a precise teaching signal for updating integrated values for both reward and aversion. However, in high reward contexts (the high reward probability task and the high reward probability task 2), dopamine neurons exhibited early excitations, which undermined their ability to produce negative responses for aversive events.\n\n### Integration of aversiveness and reward in dopamine neurons\n\nDopamine has long been thought to be a key regulator of reinforcement learning. One dominant theory posits that dopamine acts as a teaching signal that broadcasts an RPE signal to the rest of the brain. Recent studies using optogenetics have established that activation of dopamine neurons alone is sufficient for appetitive conditioning (Steinberg et al., 2013; Tsai et al., 2009; Witten et al., 2011) whereas suppression is sufficient for aversive conditioning (Chang et al., 2016; Danjo et al., 2014; Ilango et al., 2014; Tan et al., 2012; van Zessen et al., 2012), although activation of dopamine neurons that project to the cortex or dopamine neurons in the dorsal raphe has potential to induce aversion and/or other functions (Lammel et al., 2014; Matthews et al., 2016; Popescu et al., 2016). Furthermore, pharmacological studies have suggested that normal dopamine signaling is required for appetitive as well as aversive conditioning (Cooper et al., 1974; Flagel et al., 2011; Wenzel et al., 2015). These results have provided convergent evidence supporting the role of dopamine in learning. However, whether dopamine neurons signal prediction errors with respect to aversive events remained controversial, and remained an obstacle towards establishing the role of dopamine as the teaching signal proposed in reinforcement learning theories.\n\nComparatively fewer experiments have used combinations of aversive stimuli and rewarding stimuli to characterize the dopamine response. Fiorillo (2013) proposed that reward and aversion are processed separately in the brain, based on the observation that dopamine neurons signaled information about reward but largely ignored aversive events (Fiorillo, 2013). This result contradicts some previous studies that showed consistent inhibition of dopamine neurons by aversive stimuli or the cues that predict them (Matsumoto and Hikosaka, 2009; McCutcheon et al., 2012; Roitman et al., 2008). Our results suggest that there are different modes of dopamine signaling: in one mode, dopamine neurons indeed integrate the information about reward and aversion and signal VPE. This is an ideal teaching signal for reinforcement learning to maximize future values. Further, we found that the response function to aversive stimuli was preserved across dopamine neurons, suggesting that each dopamine neuron has the potential to contribute a prediction error of aversiveness, as well as of reward (Eshel et al., 2016).\n\nHowever, in a high reward context, dopamine neurons largely lose their ability to signal integrated VPEs. Our results in high reward contexts are consistent with those observed previously (Fiorillo, 2013), and we also showed that similar results were obtained in previous recordings of optogenetically-identified dopamine neurons (Cohen et al., 2012; Tian and Uchida, 2015). This raises the possibility that one of the apparent differences observed between previous electrophysiological studies is due to different experimental parameters with respect to reward contexts. It should be noted that many physiological experiments tend to include highly rewarding training sessions in order to motivate animals. In natural environments in which wild animals forage, rewards might not be as abundant as in these experimental conditions. Our results indicate that dopamine neurons signal VPE with high fidelity in low reward contexts.\n\nIn examining the temporal dynamics of dopamine responses, we realized that on average, the peak of excitation for reward cues occurred earlier than the trough of inhibition for aversive cues. Interestingly, dopamine responses to the cue predicting both rewarding and aversive outcomes in our mixed prediction tasks first showed excitation and then inhibition, different from the flatter responses to nothing cues. This clear temporal difference raises the possibility that information about values from rewarding and aversive outcomes are not yet integrated in presynaptic neurons and arise from different sources of inputs to dopamine neurons. A recent electrophysiological recording study from monosynaptic inputs to dopamine neurons also suggested that different presynaptic neurons may convey values for rewarding versus aversive stimuli (Tian et al., 2016). Consistent with this idea, we did not observe a correlation between the magnitude of single dopamine neurons\u2019 responses to reward and aversiveness (Figure 4C), in contrast to correlations within reward-related responses (Eshel et al., 2016) and within aversiveness-related responses (Figure 4A,B). Of note, a previous study (Eshel et al., 2016) showed that, in high reward context, neurons that were highly responsive to unexpected rewards tended to also be highly responsive to aversive events: they showed greater levels of suppression below baseline. The results in the previous study are reminiscent of Fiorillo\u2019s study, which found that the inhibitory phase in biphasic responses of dopamine neurons did not encode negative values of aversive stimulus, but rather encode 'no reward' (Fiorillo, 2013). The results in the previous study (Eshel et al., 2016) could be consistent with the present results if the inhibition represents 'no reward' but not the negative value of aversive stimulus, and this no-reward response is correlated with other reward-related responses of dopamine neurons.\n\n### Reward-context dependent representation in dopamine neurons\n\nOur results indicate that dopamine neurons represent aversive information in a reward context dependent manner. Our results are consistent with a previous study which proposed that dopamine neurons change their response patterns depending on reward context (Kobayashi and Schultz, 2014). The authors found that neutral stimuli excited dopamine neurons more strongly in high- compared to low-reward contexts (Kobayashi and Schultz, 2014). The present study extends this finding to aversive stimuli. Short latency excitations of dopamine neurons have been observed in various experiments and have been attributed to generalization (Kobayashi and Schultz, 2014; Mirenowicz and Schultz, 1996), stimulus intensities (Fiorillo et al., 2013), motivational salience (Bromberg-Martin et al., 2010; Matsumoto and Hikosaka, 2009), trial starts (Bromberg-Martin et al., 2010) or stimulus detection (Nomoto et al., 2010). Our data do not distinguish these possibilities and the short latency excitation in the high reward context is likely to comprise a combination of these. Importantly, however, our data in the high reward context showed that the short-latency excitations compromised the monotonic value coding of dopamine neurons, and the difference between responses to air puff-predicting CS and nothing-predicting CS was diminished. This means that dopamine neurons did not simply add a constant amount of spikes (the same amount of excitation) on top of the monotonic value coding. Thus, our observations suggest that the combination of these factors and/or additional factors distorted normal value coding in dopamine neurons in high reward context.\n\nIn our experiments, high- and low-reward contexts differed with respect to the probability of rewarded trials. This suggests that dopamine responses to aversion depend on the frequency of reward, which may in turn change the animal\u2019s state. It remains to be examined how the frequency of rewards changes dopamine responses and whether dopamine responses could be modulated by other manipulations of the environment such as the amount of reward or the strength or frequency of aversive events.\n\nIn addition to overall reward contexts, we found that the inhibitory responses of dopamine neurons changed on a finer time-scale; the inhibition of dopamine neurons by air puff-predicting cues was correlated with trial-by-trial variability of aversion-related behaviors in low reward contexts. A similar correlation was observed between excitation of dopamine neurons by reward-predicting cues and reward-related behaviors. These results suggest that dopamine neurons track the\u00a0predictions of values (reward and aversiveness) which may reflect animals\u2019 states over various time-scales.\n\nA previous study also examined dopamine responses to aversive stimuli in relation to behaviors. Using cyclic voltammetry, the authors showed that, in response to electrical shock-predicting cues, the dopamine concentration in the ventral striatum increased when the rats exhibited an active avoidance behavior while it decreased when the rats showed freezing behavior (Oleson et al., 2012). It is therefore proposed that dopamine responses depend on whether the animal exhibits active avoidance or passive reaction (Oleson et al., 2012; Wenzel et al., 2015). In the present study, we found that the degree of inhibition, not excitation, of dopamine neurons in response to the air puff-predicting CS was positively correlated with anticipatory eye-blinking behaviors (Figure 6D). According to the above idea (Oleson et al., 2012; Wenzel et al., 2015), the anticipatory eye-blinking that we observed may be categorized as a passive avoidance behavior, which could be the reason as to why we observed inhibition, but not excitation of dopamine neurons correlated with anticipatory eye-blinking behaviors.\n\n### Diversity of dopamine neurons\n\nWhereas dopamine neurons displayed a relatively uniform response function to aversion in low reward contexts, we observed diverse responses in high reward contexts, including some inhibitory and some excitatory responses to aversive events. What caused diverse responses to aversion in high reward contexts? Increasing evidence supports the diversity of dopamine neurons depending on the location of the cell body and projection targets (Lammel et al., 2014; Roeper, 2013). For example, it was reported that neurons in the lateral SNc signal salience (Lerner et al., 2015; Matsumoto and Hikosaka, 2009) or 'stable value' as opposed to 'flexible value' in the medial SNc (Kim et al., 2015). Another study showed that dopamine neurons in the ventromedial VTA exhibited excitation to an aversive stimulus (Brischoux et al., 2009). Previous studies showed that responses to aversive stimuli are diverse across dopamine neurons with different projection targets (Lammel et al., 2011; Lerner et al., 2015). Although the majority of dopamine neurons in the lateral VTA, our main recording site, project to the ventral and anterior dorsal striatum (Lammel et al., 2008; Menegas et al., 2015), our study did not distinguish the exact projection targets of dopamine neurons. It remains to be determined which subpopulations of dopamine neurons switch signaling modes depending on low versus high reward contexts.\n\nOur results demonstrated the importance of considering global contexts and behaviors and of unambiguously identifying dopamine neuron. It remains to be examined in future studies how reward frequency changes both the animal\u2019s state and dopamine responses to punishment, and how these changes relate to our normal and abnormal behaviors. Further, there are complex temporal dynamics and diversity of dopamine activities. Considering these factors together is challenging but represents a firm step towards fully understanding the nature and function of dopamine signals.\n\n## Materials and methods\n\n### Animals\n\nWe used 15 adult male mice heterozygous for Cre recombinase under control of the <Slc6a3> gene that encodes the dopamine transporter (DAT) (B6.SJL-Slc6a3tm1.1(cre)Bkmn/J, Jackson Laboratory; RRID:IMSR_JAX:006660) (B\u00e4ckman et al., 2006). All mice were backcrossed with C57/BL6 mice. Eleven out of 15 mice were further crossed with tdTomato-reporter mice (Gt(ROSA)26Sortm9(CAG-tdTomato)Hze, Jackson Laboratory) to express tdTomato in dopamine neurons. Electrophysiological data were collected from 14 mice, and video data were from 8 mice. Animals were singly housed on a 12\u00a0hr dark/12\u00a0hr light cycle (dark from 06:00 to 18:00) and each performed the conditioning task at the same time of day, between 08:00 and 16:00. All procedures were approved by Harvard University Institutional Animal Care and Use Committee.\n\n### Surgery and viral injections\n\nTotal 1 \u00b5l of adeno-associated virus (AAV), serotype 5, carrying an inverted ChR2 (H134R)-EYFP flanked by double loxP sites (Atasoy et al., 2008) [AAV5-DIO-ChR2-EYFP (Tsai et al., 2009)] was injected stereotactically into the VTA (3.1\u2009mm posterior to bregma, 0.5\u2009mm lateral, 3.9\u2009mm deep from dura and 3.5\u2009mm posterior to bregma, 0.5\u2009mm lateral, 4.2\u2009mm deep from dura). We previously showed that expression of this virus in dopamine neurons is highly selective and efficient (Cohen et al., 2012).\n\nAfter > 1 week from virus injection, a custom-made metal plate (a head plate) was implanted. A microdrive containing electrodes and an optical fiber was implanted in the VTA stereotactically in the same surgery. All the surgeries were performed under aseptic conditions under isoflurane inhalation anesthesia (1\u20132% at 0.8\u20131.0\u2009L min\u22121). The animals were given analgesics (ketoprofen, 1.3 mg kg\u22121 intraperitoneal, and buprenorphine, 0.1\u00a0mg kg\u22121 intraperitoneal) postoperatively.\n\n### Behavioral task\n\nAfter >1 week of recovery, mice were water-deprived in their home cage. Animals were habituated for 1\u20132 days with the head restrained by a head plate before training on the task. Odors were delivered with a custom-designed olfactometer (Uchida and Mainen, 2003). Each odor was dissolved in mineral oil at 1:10 dilution. 30 \u00b5l of diluted odor was placed inside a filter-paper housing (Thomas Scientific, Swedesboro, NJ). Odors were selected pseudorandomly from isoamyl acetate, eugenol, 1-hexanol, citral, and 4-heptanone for each animal. Odorized air was further diluted with filtered air by 1:8 to produce a 900\u2009ml min\u22121 total flow rate.\n\nWe delivered an odor for 1\u2009s, followed by 1\u2009s of delay and an outcome. Trials were pseudorandomly interleaved. In the mixed prediction task, during initial training period (1\u20133 days), an odor (not used for Odors A\u2013D) preceded a drop of water (4\u2009\u03bcl) and Odor B preceded no outcome. After the initial training, Odors A\u2013D were paired with water with 25% probability, no outcome (100% nothing), air puff with 75% probability, and water with 25% probability and air puff with remaining 75% probability. In high and low reward probability tasks, 2 odors (not used for Odors A\u2013C) preceded a drop of water and no outcome, respectively, during initial training period. Later, Odor A was paired with water with 90% probability in the high reward probability task, and 20% probability in the low reward probability task. The probabilities of no outcome in Odor B trials and air puff in Odor C trials were 100% and 90%, respectively, in both reward probability tasks. In high reward probability task 2, 2 odors (Odor A and Odor B) preceded a drop of water and no outcome, respectively, during initial training period. Later, Odor A was paired with water with 90% probability and Odor C was paired with air puff with 80% probability. Air puff was delivered to the animal's right eye. The strength of air puff was enough to cause anticipated eye-blinking behavior. In order to control any sounds caused by air puff accumulation, the air was accumulated at the offset of odor delivery in all the trial types and released at 2.3\u2009s after the offset of odor delivery outside of a hemi-soundproof behavioral box except for air puff trials. Licks were detected by breaks of an infrared beam placed in front of the water tube.\n\nTo quantify eye-blinking behavior trial-by-trial, animal\u2019s face including right eye was recorded by a\u00a0CCD camera (Point Grey). The sampling rate was 60\u2009Hz. To monitor animal\u2019s eye under dark conditions, we put infrared light sources inside the behavior box. To synchronize the video frames with event time stamps for further analysis, the infrared light source was turned off briefly (<25 ms) 2\u2009s after the onset of US.\n\nWe also added no-odor trials (4% of the trials in the mixed prediction task, 12% in high and low reward probability tasks, and 13% in the high reward probability task 2) in which either water reward or air puff was presented unpredictably. Inter-trial intervals (ITIs) were drawn from an exponential distribution, resulting in a flat ITI hazard function truncated at 15\u2009s such that expectation about the start of the next trial did not increase over time. Data in the mixed prediction task were obtained from 63 sessions (19\u201325 sessions per animal, 21 \u00b1 3 sessions; mean \u00b1 S.D., n = 3 mice); data in the high reward probability task were obtained from 38 sessions (2\u201319 sessions per animal, 10 \u00b1 8 sessions, n = 4 mice); data in the low reward probability task were obtained from 20 sessions (2\u201310 sessions per animal, 7 \u00b1 4 sessions, n = 3 mice); data in the high reward probability task 2 were obtained from 39 sessions (1\u201322 sessions per animal, 10 \u00b1 9 sessions, n = 4 mice). The\u00a0animals performed between 208 and 476 trials per day (371 \u00b1 81 trials; mean \u00b1 S.D.) in the mixed prediction task, 272 trials per day in both high and low reward probability tasks, and between 182 and 454 trials per day (322 \u00b1 42 trials; mean \u00b1 S.D.) in the high reward probability task 2.\n\n### Electrophysiology\n\nWe recorded extracellularly from multiple neurons simultaneously using a custom-built 200-\u03bcm-fiberoptic-coupled screw-driven microdrive with six or eight implanted tetrodes (four wires wound together). Tetrodes were glued to the fiber optic (Thorlabs) with epoxy (Devcon). The ends of the tetrodes were 350\u2013500\u2009\u03bcm from the end of the fiber optic. Neural signals and time stamps for behavior were recorded using a DigiLynx recording system (Neuralynx). Broadband signals from each wire filtered between 0.1 and 9000\u2009Hz were recorded continuously at 32 kHz. To extract the timing of spikes, signals were band-pass-filtered between 300 and 6000\u2009Hz. Spikes were sorted offline using MClust-3.5 software (David Redish). At the end of each session, the fiber and tetrodes were lowered by 20\u201380\u2009\u03bcm to record new neurons. Sessions of recordings were continued until the tetrodes reached the bottom of the brain where no units were recorded and large fluctuations of voltage traces were recorded from tetrodes. After the completion of the\u00a0recording sessions, tetrodes were moved up to the depth where units were recorded or the depth where light-identified dopamine neurons were recorded to ensure that the following electrolytic lesions were in the brain.\n\nTo verify that our recordings targeted dopamine neurons, we used ChR2 to observe stimulation-locked spikes (Cohen et al., 2012). The optical fiber was coupled with a diode-pumped solid-state laser with analogue amplitude modulation (Laserglow Technologies). Before and after each behavioral session, we delivered trains of 10 light pulses, each 5-ms long, at 1, 2, 5, 10, 20 and 50\u2009Hz at 473 nm at 5\u201320 mW mm\u22122. Spike shape was measured using a broadband signal (0.1\u20139000\u2009Hz) sampled at 30 kHz. This ensured that particular features of the spike waveform were not missed.\n\nWe used two criteria to include a neuron in our data set. First, the neuron must have been well isolated [L-ratio < 0.05 (Schmitzer-Torbert and Redish, 2004), except for two units with L-ratio = 0.055 and 0.057]. Second, the neuron must have been recorded in or between the sessions when dopamine neurons were identified on the same tetrode to ensure that all neurons came from VTA. Recording sites were further verified histologically with electrolytic lesions using 5\u201320\u2009s of 30 \u03bcA direct current and from the optical fiber track. Recording sites of individual dopamine neurons were reconstructed on the Franklin and Paxinos brain atlas (Franklin and Paxinos, 2008). The depths were estimated from the lesion site in each animal.\n\n### Data analysis\n\nTo measure firing rates, peristimulus time histograms (PSTHs) were constructed using 1-ms bins. To calculate spike density functions, PSTHs were smoothed using a box filter (100 ms duration, t \u00b1 50 ms). Average firing rates of responses to conditioned stimulus (CS) were calculated using a time window of 0\u20131000 or 200\u20131000 ms after odor onset. To obtain responses to the\u00a0unconditioned stimulus (US), we used a time window of 0\u2013600 ms after the onset of US except that responses to air puff omission and nothing (no outcome) were calculated using a time window 0\u20131000 ms. Slightly different window sizes were also tested and gave qualitatively the same results. The baseline firing rates were obtained based on the activity in a time window during inter-trial-interval immediately preceding odor onset (-1000 to 0 ms before odor onset). The baseline firing rates were computed by using data from all trial types.\n\nWe calculated the area under the receiver-operating characteristic (auROC) value of each neuron using the trial-by-trial responses to CS, unpredicted and predicted outcomes in time windows previously described.\n\nThe area of the\u00a0right eye region was calculated as follows (see also Figure 6\u2014figure supplement 1): (1) Eye threshold: Since in our recording settings, most of the face background area was saturated (close to 255 pixel intensity), a threshold around 234 pixel intensity was used to separate eye area from the background. Pixels with intensity smaller than the threshold were set to 1 (white) and others were set to 0 (black). (2) Remove dark patches outside of the eye: To remove the occasional dark patches outside of eye area in the raw image (e.g., top panel in Figure 6\u2014figure supplement 1A), connected areas smaller than 500 pixels were deleted. (3) Smooth the eye patch: We performed morphological opening to remove spiky edges. Then we filled all black spots on the binary image (e.g., in Figure 6\u2014figure supplement 1C) smaller than 500 pixels to remove the bright spots inside of the eye area due to reflection. (4) Compute eye area: We found the largest connected regions on the binary image in Figure 6\u2014figure supplement 1D and computed the area of this region in pixels and also computed the eccentricity by fitting the area to an eclipse (MATLAB regionprops function). These codes for extracting eye areas from video files are available at https://github.com/hide-matsumoto/prog_hide_matsumoto_2016.\n\nTo analyze the eye-blinking behavior trial-by-trial, we synchronized video frames with Neuralynx timestamps as follows: (1) Detect frames when infrared light was off. When infrared light source was briefly turned off (<25 ms), average pixel intensity of the frame steeply decreased. Thus, when the average pixel intensity of each frame in the session was plotted over time, the light-off frames were detected as troughs of the value (Figure 6\u2014figure supplement 1E). (2) We then matched these frames that have troughs of average pixel intensity with time stamps of infrared light source-off saved in Neuralynx. (3) Interpolate time of other frames: The timing of a video frame was interpolated using the time stamps of the two closest light-off frames. The eye areas extracted from video frames were further analyzed using event time stamps saved in Neuralynx.\n\nTo compare eye areas across sessions, the computed eye areas were normalized by the maximum eye area (99th percentile of all the eye areas) in every session. Trials were categorized into two groups, blink and no-blink trials, using the criteria that the averaged eye area during delay period in each air puff trial was larger (no-blink trials) or smaller (blink trials) than 0.5.\n\nTo check the percentage of trials that the\u00a0animals showed anticipatory licking during the\u00a0delay period (1\u20132\u2009s from odor onset), trials were categorized into two groups, lick and no-lick trials, using the criteria that the lick rate during the\u00a0delay period was larger (lick trials) or smaller (no-lick trials) than 3. The threshold (3 licks s\u22121) was determined by comparing the\u00a0distributions of the lick rates during the\u00a0delay period in rewarded trials and those in nothing trials (Figure 6\u2014figure supplement 4A).\n\nFor each statistical analysis provided in the manuscript, the Kolmogorov\u2013Smirnov normality test was first performed on the data to determine whether parametric or non-parametric tests were required. Data were analyzed in MATLAB (MathWorks) and were shown as mean \u00b1 S.E.M., unless otherwise stated. For unpaired t test, the equality of variance between two groups was first validated statistically. For paired and unpaired comparisons, two-sided tests were used. Bonferroni correction was applied for significance tests with multiple comparisons. To test monotonicity of CS responses, we chose neurons showing that (1) their CS responses were significantly modulated by odors (examined by one-way ANOVA), (2) the response to reward-predicting CS was significantly larger than that to air puff-predicting CS (p<0.05, unpaired t test), and (3) the averaged response to CS predicting nothing (or CS predicting both reward and air puff) was intermediate between that to reward-predicting CS and that to air puff-predicting CS. Sample sizes in this study were based on previous literature in the field (Cohen et al., 2012; Eshel et al., 2015, 2016; Tian and Uchida, 2015) and were not pre-determined by a sample size calculation. Randomization and blinding were not employed.\n\n### Immunohistochemistry\n\nAfter recording, mice were transcardially perfused with saline and then with 4% paraformaldehyde under anesthesia. Brains were cut in 100\u2009\u03bcm coronal sections. Brain sections from DAT-cre mice were immunostained with antibodies to tyrosine hydroxylase (AB152, 1:400, Millipore; RRID:AB_390204) and secondary antibodies labeled with Alexa594 (1:200, Invitrogen) to visualize dopamine neurons. Sections were further stained with 4\u2032,6-diamidino-2-phenylindole (DAPI, Vector Laboratories) to visualize nuclei. Recording sites were further verified to be amid EYFP- and tdTomato-positive or tyrosine hydroxylase-positive neurons in VTA.\n",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "673519b8-555f-498e-9aaa-a19e6ff8ff89",
+      "submission_id": "964b8a63-0e2b-4a4c-b4be-4b873eef2fe7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rui M Costa, Funda\u00e7\u00e3o Champalimaud , Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17328.020](https://doi.org/10.7554/eLife.17328.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Midbrain dopamine neurons signal aversion in a reward-context-dependent manner\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers appreciated the new data evaluating the relationship between aversive and appetitive coding in dopamine neurons of the VTA in this study, and also the effort in doing these analyses with carefully identified dopamine. However, the overall opinion was that the authors have to more carefully analyze their existing data, and to ensure the data clearly support the conclusions they make. Below is a summary of the 3 main types of concern that should be addressed:\n\n1) A general comment brought up by all reviewers is that the authors should analyze the phasic neuronal responses with better temporal specificity, i.e., not just averaging over one larger time bin. The reviewers felt that it is not justified to ignore temporal dynamics in the aversive CS response, and that the conclusions (for example regarding stimulus generalization) will be changed/tempered if this is done.\n\n2) The reviewers felt that the relationship between the behavior and the neural activity was not being fully fleshed out, and so new analyses are important to substantiate some of the claims. Namely relationship between CS and US in different predicted and unpredicted conditions, meaning of control tasks, and analyses of anticipatory licking, etc.\n\n3) Another concern was the small n for many conclusions and the need for some additional statistical analyses. Although new experiments may be beyond the scope of this review, some conclusions may be biased by a low n (no significance in some cases vs. significance in other cases). Also, ANOVA and multiple comparison correction may be needed in some cases.\n\nAlso below are the detailed points of each reviewer to help in your revised submission.\n\nReviewer #1:\n\nMatsumoto and colleagues describe the responses of identified dopamine (DA) neurons recorded from the lateral VTA of mice during multiple variations of an odor discrimination task. The methodology, including the DA neuron identification and recording, is similar to prior work from this group, and reflects a careful and sophisticated approach towards investigating the responses of individual identified neurons to outcomes and the cues that predict them. The authors' aim is to investigate the encoding by DA neurons of aversive stimuli, given the mixed findings in the literature. The approach taken here is to compare the neuronal responses to cues in a discrimination procedure in which reward-predictive and airpuff-predictive cues, as well as cues predicting both, or nothing, are presented pseudorandomly. The authors find that the encoding of aversive-predicting cues varies with the relative probability of other cues being reinforced by reward, such that DA response to airpuff-paired cues are decreases in spiking in low density reward sessions, and DA responses to airpuff-paired cues are increases in spiking in high density reward sessions (although decreases are also clearly visible in the neural response \u2013 see below). These are interesting findings. The results do add substantially to our understanding of DA neural responses by providing careful parametric comparisons in, very critically, identified DA neurons, using opto-tagging. Importantly, the notion that overall reward density may alter responses to cues \u2013 reward paired, or not \u2013 was shown previously by Schultz and colleagues, and this is acknowledged by the authors. The present data add to our understanding of the regulation of DA neuron responses to reward- and punishment-paired cues and will be of strong interest to scientists studying dopamine systems, as well as more generally, reward, addiction, and learning. The paper would benefit from more careful consideration of the specific attributes and limitations of these studies in forming their interpretations.\n\nIn addition, an explanation of how the differing signals in response to the negative cue in high and low reward contexts might be expected to impact current or future behavior differentially is missing, given that the behavioral data presented indicate that anticipatory eye blinking is similar in both contexts \u2013 however their conclusion on this point may be a function of their analysis approach. Specifics follow.\n\n1) The authors conclude that \"In low reward contexts, dopamine neurons were inhibited by aversive events more strongly than by neutral events, tracking aversiveness of stimuli on a trial-by-trial basis [\u2026] However, in high reward contexts, dopamine neurons exhibited early excitations, which undermined their ability to produce negative responses for aversive events.\" While their data as currently analyzed support this statement, it begs the question of what these different \"modes\" mean for learning and behavior since they presumably would communicate different information to downstream structures. The authors show that mice tend to show anticipatory blinking for airpuff in response to the cue whether it is a low or high reward context, but the relationship between the suppression of firing in response to the airpuff-predictive cue only holds for the low reward context, because consistent suppression in the DA neuron response is not seen in response to this cue in the high reward context. Yet this does not take the biphasic nature of the neural response to the aversive stimulus in the high reward context into account. In light of this (as well as the comment that follows), the pupillary/blink response appears to occur on a timescale parallel to that of the late component of the neural response, which in the case of the aversive cue, is an inhibition. Thus, it appears to me that there may indeed by a correlation with behavior and the neural signal. Can the authors investigate this issue more deeply?\n\n2) The authors further state that: \"[\u2026]dopamine neurons signaled VPEs by faithfully combining information about both appetitive and aversive events into a common currency of value.\" Their evidence for this is that the average firing rate of DA neurons following a cue that predicts either an airpuff or reward is between that of a reward-predicting and an airpuff-predicting cue \u2013 however, this conclusion may depend overmuch on the averaging of the signal over the first second of cue presentation. Examination of the population histograms clearly show that this signal is dynamic, and that averaging the response over the full first second of cue presentation may obscure a multiphasic response to the aversive cues \u2013 there looks to be an excitation followed by an inhibition in the high reward context. Again, this is a response pattern described by Schultz and colleagues, who suggests that the early response reflects attributes such as stimulus generalization and intensity, and it is the later response that reflects the prediction error/value signal. This interpretation should receive deeper treatment in the current manuscript. Maybe the averaging across the full second is the most direct statistical approach, but the biphasic nature of the signal should be acknowledged.\n\n3) It has been proposed that excitatory responses to cues that do not predict reward in multi-cue procedures (wherein some cues do predict reward) reflect stimulus generalization, among other factors. This seems to be one possible explanation for the finding that increases in response to the airpuff cue are more often seen in a high reward context than a low reward context. In addition, the authors data further support this notion since the cue that predicts no reward also shows an initial excitation in the high reward, but not low reward, context. Have the authors thought to use cues of differing modalities to reduce the sensory similarity? If not, the authors should consider that their data do not contradict a generalization and/or salience notion, although they appear to say they do.\n\n4) The authors conclude that \"dopamine neurons do not encode aversion in a conventional classical conditioning task\". Given the clear evidence provided by the authors that reward context impacts the response of VTA dopamine neurons provided by the authors, the authors have not provided an appropriate test of this hypothesis. To conclude this, the authors would need to conduct their recordings in a procedure without interleaved rewarded trials.\n\n5) I am curious what the potential differences in the responses to the conditioned stimuli and the unconditioned stimuli for a given neuron might be. Indeed, it would be useful if the authors reported the extent to which the encoding observed during the cue is similar to encoding during the outcome, i.e., if a neuron is inhibited by an airpuff-predicting cue, is it also inhibited by unexpected air puff. This is especially interesting given the points above, that the high reward context increase in firing at the outset of the odor cues seems parsimoniously explained as generalization, while the neural responses to the respective outcomes could still be increases and decreases for sucrose and airpuffs, respectively. In other words, do DA neuron responses to presentation of airpuff itself change in different reward contexts, or is this strictly a feature of the conditioned stimuli.\n\nReviewer #2:\n\nIn this manuscript, Matsumoto et al. investigated the response of midbrain dopaminergic neurons to an aversive stimulus in a variety of contexts. Although dopamine is thought to be important for learning from both reward and punishment, there has been disagreement about how dopaminergic neurons integrate aversive and rewarding stimuli. The authors show that dopaminergic activity is inhibited by an air puff and an air puff-predicting odor in low reward contexts. The air puff response is modulated by expectation and individual dopaminergic neurons are able to integrate the value of reward and punishment. Finally, they show that manipulating reward context affects dopaminergic responses to punishment, such that in high reward contexts there is actually an excitatory response to punishments. The latter condition appears to replicate various previous studies. The data provides a valuable contribution to the debate over how dopaminergic neurons respond to aversive stimuli. The use of optogenetic tagging allows for compelling identification of dopaminergic neurons and the authors tested several task structures in order to reconcile discrepancies in the field.\n\nThere are several ways in which the analysis and presentation should be improved:\n\n1) In Figure 2 the authors conclude that in a high reward context, dopaminergic neurons respond to aversive stimuli with short-latency excitation \"masked inhibitory responses\" such that there is no longer a significant difference between responses to odor B and odor C. The importance of reward context is a major conclusion of the paper but its complete disruption of aversive signaling is confusing (and not entirely convincing) as presented. Why not analyze the different temporal phases of the response separately? It appears that if the responses were compared during the late inhibitory phase of the response (evident in Figure 2B), then there would indeed be a difference in the response to odor B and odor C in both the high reward and low reward contexts. In other words, the simplest explanation of the effect of \"high reward context\" is to create a short-latency excitatory response to the aversive stimulus. The authors argue this response is different from the short-latency 'generalization' response described by Schultz and colleagues, but not clear what that means. Specifically, in the Discussion it is noted that a high reward context \"compromised the monotonic value coding of dopamine neurons,\" but this was not clearly explained or analyzed. Additionally, the argument that the excitatory response to punishment in a high reward context is not due to generalization is unclear. The authors write that \"dopamine neurons did not simply add the same amount of excitation on top of the monotonic value coding.\" In fact, in Figure 2, it seems like there is an excitatory \"generalization\" response that is being added to the pause in firing to the CS-.\n\n2) Although there is a clear increase in the amplitude of the response to air puff when it is unpredicted, there is large variability in the response to an omitted air puff. Although on average there is a very small increase in firing rate, a very large number of neurons decrease their activity in response to air puff omission (Figure 3F). The authors should discuss the heterogeneity of this response, which appears to complicate their conclusions.\n\n3) It seems surprising that there is no correlation between the response to unpredicted air puff and unpredicted water delivery (Figure 5C). In Eshel et al. (2016) there is a correlation between predicted air puff and unpredicted water responses as well as between the air puff cue and the unpredicted water responses. So why wouldn't there be a correlation between unpredicted air puff and reward? Doesn't this mean that predicted and unpredicted air puff responses are themselves uncorrelated, which would contradict the earlier panels in Figure 5?\n\n4) The protocol for the classical conditioning experiment conducted for Figure 2\u2014figure supplement 1 is unclear. It appears that the only difference from the high reward task is the probability of punishment following odor C which is 80% instead of 90%, yet the excitatory component of the response to the punishment-predicting CS appears considerably larger than in Figure 2.\n\n5) Not clear exactly what the eye blink response analysis achieves in the paper, nor why eye blinks were analyzed but not anticipatory licking.\n\n6) There is no reported method for the correction for multiple comparisons in multiple instances when more than 2 groups are being analyzed in the same panel. Additionally, a two-way ANOVA should be used to analyze the effect of reward probability and anticipatory blinking in Figure 4F.\n\nReviewer #3:\n\nIn this manuscript Matsumoto and colleagues present a series of experiments that address the issue of how dopamine neurons respond to aversive events. They make a number of important and interesting observations. On the whole I thought the manuscript was well-written. I have a few concerns that I list below:\n\n1) I feel that the Introduction would benefit from some elaboration in a few places.\n\nIntroduction, fourth paragraph: should make it clear that Oleson et al. (2012) measured dopamine release using FSCV.\n\nIntroduction, fifth paragraph: I am not clear how Roitman et al. (2008) resolved the issue and this was published several years earlier, so the wording is confusing in my view.\n\nIntroduction, fifth paragraph: should make it clear that Lerner et al. (2015) measured calcium activity, not action potential firing.\n\nIntroduction, last paragraph: this paragraph alludes to the issue of neurochemical identity in a way that I think should be more explicit since it is of particular relevance to this study. For example, Ungless et al. (2004) showed that some VTA neurons that are excited by aversive events are in fact not dopaminergic. It is noted, for example by Schultz (2016) in a recent review, that Matsumoto & Hikosaka (2009) recorded many neurons in areas where dopamine neurons were rare. This more strongly justifies the use of the opto-tagging approach that the authors have taken.\n\n2) One general concern I had was the low numbers of mice in several of the experimental groups (e.g., Figure 1, n=3).\n\n3) How do the authors know that the mice can tell the difference between the low and high reward situations?\n\n4) In the subsection \u201cIntegration of aversiveness and reward in dopamine neurons\u201d, first paragraph: add the caveat that activation of meso-cortical dopamine neurons and dorsal raphe dopamine neurons can induce conditioned-place aversion (Lammel et al. 2014 & Matthews et al. 2016).\n\n4) In the subsection \u201cDiversity of dopamine neurons\u201d: note also that Brischoux et al. (2009) reported that ventromedial dopamine neurons exhibited aversive activations.\n\n5) I found some of the red/purple colour schemes difficult to tell apart. I would suggest some different colour schemes (particularly for Figure 1).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Midbrain dopamine neurons signal aversion in a reward-context-dependent manner\" for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues regarding its readability that need to be addressed before acceptance, as outlined below by Reviewer 2. After consultation between the reviewers, both thought that increased readability and explanation of why each experiment was performed would greatly enhance the clarity and impact of the study.\n\nReviewer #2:\n\nI felt that the reviewers were responsive to our comments and that this study provides a valuable contribution to the discussion regarding the integration of rewarding and aversive cues in dopamine neurons.\n\nMy only remaining comment is that I find the text in the Results and Discussion a bit difficult to follow. There are a number of experiments/analyses, and as it currently stands, the motivation for each experiment/analysis, as well as the relevant conclusions, is not always completely transparent. Therefore, the authors could consider editing the Results/Discussion for improved readability.\n\nReviewer #3:\n\nThis new version addresses the previous concerns that I raised.\n",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cd4a996a-3255-4585-b8fb-e90737083e8f",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C1",
+      "claim": "Dopamine is thought to regulate learning from appetitive and aversive events.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine is thought to regulate learning from appetitive and aversive events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about dopamine's role in learning, supported by citations in the introduction section.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "36befaa4-dc31-4fb1-9310-ef99c79ba9a4",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C2",
+      "claim": "In low reward contexts, most dopamine neurons were exclusively inhibited by aversive events.",
+      "claim_type": "EXPLICIT",
+      "source": "In low reward contexts, most dopamine neurons were exclusively inhibited by aversive events, and expectation reduced dopamine neurons' responses to reward and punishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by experimental data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "00c474b8-b8c3-4d51-82ec-27e39438fe8c",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C3",
+      "claim": "Expectation reduced dopamine neurons' responses to reward and punishment.",
+      "claim_type": "EXPLICIT",
+      "source": "In low reward contexts, most dopamine neurons were exclusively inhibited by aversive events, and expectation reduced dopamine neurons' responses to reward and punishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through experimental comparisons of predicted vs unpredicted outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "eccbf0e0-324e-4df2-8c34-847911e19c38",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C4",
+      "claim": "When a single odor predicted both reward and punishment, dopamine neurons' responses to that odor reflected the integrated value of both outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When a single odor predicted both reward and punishment, dopamine neurons' responses to that odor reflected the integrated value of both outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by data from the mixed prediction task shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "45538706-7bf7-43f9-b623-35c23b4bdd18",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C5",
+      "claim": "In low reward contexts, dopamine neurons signal value prediction errors (VPEs) integrating information about both reward and aversion in a common currency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in low reward contexts, dopamine neurons signal value prediction errors (VPEs) integrating information about both reward and aversion in a common currency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion stated in the abstract based on the experimental findings from low reward context tasks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "d63b74ec-7a78-4100-ba3a-99150b97c18a",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C6",
+      "claim": "In high reward contexts, dopamine neurons acquired a short-latency excitation to aversive events that masked their VPE signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in high reward contexts, dopamine neurons acquired a short-latency excitation to aversive events that masked their VPE signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the abstract and supported by experimental data comparing high and low reward contexts in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "bceaf6fe-e5fa-42b2-b9dd-19b9fb816e11",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C7",
+      "claim": "Dopamine neurons act as a teaching signal in the brain by signaling the discrepancy between the values of actual and predicted rewards (reward prediction error, RPE).",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that dopamine neurons act as a teaching signal in the brain by signaling the discrepancy between the values of actual and predicted rewards, that is, reward prediction error (RPE) (Bayer and Glimcher, 2005; Cohen et al., 2012; Hart et al., 2014; Roesch et al., 2007; Schultz, 2010; Schultz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established theory in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "01bdb8b8-8b30-4cce-adb2-1ece815e420a",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C8",
+      "claim": "When the animal receives reward unexpectedly, dopamine neurons fire a burst of action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animal receives reward unexpectedly, dopamine neurons fire a burst of action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classic finding from Schultz's work, cited in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "fd77c72f-8474-48fd-b7c0-1878440c81f1",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C9",
+      "claim": "If a sensory cue reliably predicts reward, dopamine neurons decrease their response to reward, and instead burst to the cue.",
+      "claim_type": "EXPLICIT",
+      "source": "If a sensory cue reliably predicts reward, however, dopamine neurons decrease their response to reward, and instead burst to the cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classic finding from Schultz's work on reward prediction error.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "0531b8d4-b236-4406-9b29-b90fa44eb52e",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C10",
+      "claim": "If an expected reward is omitted, dopamine neurons pause their firing at the time they usually receive reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, if an expected reward is omitted, dopamine neurons pause their firing at the time they usually receive reward (Hollerman and Schultz, 1998; Schultz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a classic finding from Schultz's work on reward prediction error.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "8f612937-c659-4d35-b1e3-5b47f995dbe2",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C11",
+      "claim": "It is thought that the majority of dopamine neurons are inhibited by aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thought that the majority of dopamine neurons are inhibited by aversive stimuli (Mileykovskiy and Morales, 2011; Mirenowicz and Schultz, 1996; Tan et al., 2012; Ungless et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about dopamine neuron responses to aversive stimuli, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "1ca7d167-2ef1-4efb-aa85-bf32c5ec4063",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C12",
+      "claim": "A number of electrophysiological recording studies have reported that dopamine neurons are activated by aversive stimuli both in anesthetized and awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a number of electrophysiological recording studies have reported that dopamine neurons are activated by aversive stimuli both in anesthetized (Brischoux et al., 2009; Coizet et al., 2006; Schultz and Romo, 1987) and awake animals (Guarraci and Kapp, 1999; Joshua et al., 2008; Matsumoto and Hikosaka, 2009), although the proportions and locations of aversion-activated neurons differed among these studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from multiple cited studies showing activation of dopamine neurons by aversive stimuli.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "ab32e52a-790b-4209-b38c-4afce3f80bc7",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C13",
+      "claim": "Roitman et al. (2008) found that dopamine release was increased by sucrose and decreased by quinine.",
+      "claim_type": "EXPLICIT",
+      "source": "This study found that these stimuli caused opposite responses: dopamine release was increased by sucrose and decreased by quinine (McCutcheon et al., 2012), suggesting that at least the majority of dopamine neurons projecting to the nucleus accumbens are inhibited by aversive stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study using cyclic voltammetry.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "2f831d83-920d-4155-8dcd-e8e1d4a8eb98",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C14",
+      "claim": "Matsumoto and Hikosaka (2009) showed that dopamine neurons that are activated by the prediction of aversive stimuli are located in the lateral part of the substantia nigra pars compacta (SNc).",
+      "claim_type": "EXPLICIT",
+      "source": "They showed that dopamine neurons that are activated by the prediction of aversive stimuli are located in the lateral part of the substantia nigra pars compacta (SNc), supporting the notion that dopamine subpopulations are spatially segregated (Matsumoto and Hikosaka, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study about spatial organization of dopamine neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "bd4b0f6b-2c6c-4c2d-9de8-43ac8cf3bdf3",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C15",
+      "claim": "Lerner et al. (2015) showed that SNc neurons projecting to the dorsolateral striatum are activated by aversive stimuli (electric shock) whereas those projecting to the dorsomedial striatum are inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this finding, Lerner et al. (2015) showed, using calcium imaging with fiber photometry, that SNc neurons projecting to the dorsolateral striatum are activated by aversive stimuli (electric shock) whereas those projecting to the dorsomedial striatum are inhibited (Lerner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from a cited study using calcium imaging.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "34453a63-759b-4004-b62a-24c84511926f",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C16",
+      "claim": "Fiorillo (2013) concluded that dopamine neurons represent prediction errors with respect to reward but not aversiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "One influential paper by Fiorillo (2013) concluded that dopamine neurons represent prediction errors with respect to reward but not aversiveness (Fiorillo, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from a cited study that the current manuscript aims to test.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "bccae12d-4c99-4830-a2dd-e6fbe620986e",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C17",
+      "claim": "Fiorillo (2013) found that dopamine neurons' responses to aversive outcomes (air puff) were indistinguishable from their responses to neutral outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recording from non-human primates, Fiorillo used three pieces of evidence to support this claim: First, dopamine neurons' responses to aversive outcomes (air puff) were indistinguishable from their responses to neutral outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from Fiorillo's cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "7e66f18f-062c-438d-95ed-1a157d670bdb",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C18",
+      "claim": "Fiorillo (2013) found that although most dopamine neurons reduced their reward responses when the reward was predicted, their response to aversive events was unaffected by prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although most dopamine neurons reduced their reward responses when the reward was predicted, their response to aversive events was unaffected by prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from Fiorillo's cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "baf5b84a-e923-4744-87fd-aac5cda13462",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C19",
+      "claim": "Fiorillo (2013) found that dopamine neurons did not integrate the value of aversive events when combined with rewarding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, dopamine neurons did not integrate the value of aversive events when combined with rewarding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from Fiorillo's cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "bd453dcf-e581-49a5-9ce2-9939b40480ca",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C20",
+      "claim": "The study used 15 adult male mice heterozygous for Cre recombinase under control of the Slc6a3 gene that encodes the dopamine transporter (DAT).",
+      "claim_type": "EXPLICIT",
+      "source": "We used 15 adult male mice heterozygous for Cre recombinase under control of the <Slc6a3> gene that encodes the dopamine transporter (DAT) (B6.SJL-Slc6a3tm1.1(cre)Bkmn/J, Jackson Laboratory; RRID:IMSR_JAX:006660) (B\u00e4ckman et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "846e356c-c4f5-4639-890a-bd98b7feb967",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C21",
+      "claim": "The study recorded the spiking activity of total 176 neurons in the VTA using tetrodes while mice performed classical conditioning tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the spiking activity of total 176 neurons in the VTA using tetrodes while mice performed classical conditioning tasks (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and sample size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "67fddee7-e3f9-4ff5-a09e-c3ce46f79acf",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C22",
+      "claim": "The study obtained 72 optogenetically-identified dopamine neurons in total (5 \u00b1 4 neurons per mouse; mean \u00b1 S.D.; n = 14 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained 72 optogenetically-identified dopamine neurons in total (5 \u00b1 4 neurons per mouse; mean \u00b1 S.D.; n = 14 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the sample size of identified dopamine neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "de41c916-764a-43a5-8ecc-3612051a3a40",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C23",
+      "claim": "Dopamine neurons were mostly recorded from the central and posterior part of the lateral VTA including the parabrachial pigmented nucleus (PBP), parainterfascicular nucleus (PIF) and paranigral nucleus (PN).",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine neurons were mostly recorded from the central and posterior part of the lateral VTA including the parabrachial pigmented nucleus (PBP), parainterfascicular nucleus (PIF) and paranigral nucleus (PN) (Figure 1G,K,O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the anatomical location of recorded neurons, supported by histological reconstruction shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "606392b3-492d-41f0-aa5e-c621f0a33f69",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C24",
+      "claim": "The vast majority of dopamine neurons were inhibited by the air puff-predicting CS while excited by the reward-predicting CS.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the vast majority of the neurons were inhibited by the air puff-predicting CS while excited by the reward-predicting CS (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the mixed prediction task, shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "5d49176f-e98a-4ad2-b1ad-9e5a27ebd03a",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C25",
+      "claim": "The firing rate during the CS period was significantly lower for the air puff-predicting CS than for the CS predicting nothing.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the firing rate during the CS period was significantly lower for the air puff-predicting CS than for the CS predicting nothing, while it was higher for the reward-predicting CS than for the CS that predicted nothing (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the mixed prediction task, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "35944a61-b2f6-4072-9b38-b87a1c28d469",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C26",
+      "claim": "Among 26 identified dopamine neurons, 85% (22 neurons) were significantly modulated by the three odors (water, nothing, air puff).",
+      "claim_type": "EXPLICIT",
+      "source": "Among 26 identified dopamine neurons, 85% (22 neurons) were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 59% (13 of 22 significant neurons) showed the monotonic CS value coding (water > nothing > air puff).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical summary of the neural responses in the mixed prediction task.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "43dfdbd5-6580-418e-8fad-2db5ab444b51",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C27",
+      "claim": "59% of significantly modulated dopamine neurons showed monotonic CS value coding (water > nothing > air puff).",
+      "claim_type": "EXPLICIT",
+      "source": "Among 26 identified dopamine neurons, 85% (22 neurons) were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 59% (13 of 22 significant neurons) showed the monotonic CS value coding (water > nothing > air puff).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical summary of the neural responses showing value coding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "f32d6de4-29c6-43ea-9ed8-a49d94b302e1",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C28",
+      "claim": "The majority of dopamine neurons showed an intermediate response to the CS predicting both water and air puff compared to the CSs predicting water only or air puff only.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the previous study (Fiorillo, 2013), we found that the majority of neurons showed an intermediate response to the CS predicting both water and air puff (Odor D) compared to the CSs predicting water only (Odor A) or air puff only (Odor C) (Figure 2B,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding from the mixed prediction task, contrasting with Fiorillo's results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "8c1ca9a2-2f05-4cc5-a475-62c540dd1859",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C29",
+      "claim": "89% (23 of 26 neurons) of identified dopamine neurons were significantly modulated by the three odors (water, water+air puff, air puff).",
+      "claim_type": "EXPLICIT",
+      "source": "89% (23 of 26 neurons) of identified dopamine neurons were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 65% (15 of 23 significant neurons) showed the monotonic CS value coding (water > water and air puff > air puff).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical summary of neural responses to mixed outcome cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "6a09c590-d03a-456f-bf61-c1948d689c27",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C30",
+      "claim": "65% of significantly modulated dopamine neurons showed monotonic CS value coding (water > water and air puff > air puff).",
+      "claim_type": "EXPLICIT",
+      "source": "89% (23 of 26 neurons) of identified dopamine neurons were significantly modulated by these three odors (p<0.05, one-way ANOVA), and 65% (15 of 23 significant neurons) showed the monotonic CS value coding (water > water and air puff > air puff).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical summary showing value integration across reward and punishment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "5dfa390d-2fa8-4e30-89cd-d15d92d8eda5",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C31",
+      "claim": "VTA dopamine neurons combine values for both reward and punishment along a one-dimensional value axis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that VTA dopamine neurons combine values for both reward and punishment along a one-dimensional value axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the mixed prediction task data showing intermediate responses to mixed outcome cues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "d16cd3de-ace5-4d20-90d1-49409e0d0e9d",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C32",
+      "claim": "The inhibitory response to an air puff was significantly reduced when the air puff was predicted by an odor cue.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the inhibitory response to an air puff was significantly reduced when the air puff was predicted by an odor cue (Figure 3A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates prediction error coding for aversive events, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "33e36145-90fe-4a97-b10a-7bfee415a796",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C33",
+      "claim": "The omission of a predicted air puff slightly but significantly increased firing rates, compared to no change in nothing trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the omission of a predicted air puff slightly but significantly increased firing rates, compared to no change in nothing trials (Figure 3E\u2013H) although we observed variability in air puff omission responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates prediction error coding for aversive events, shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "dcc8f95a-782e-4cbc-8637-c27baeaa36b4",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C34",
+      "claim": "Dopamine neurons signal prediction errors for aversive events in addition to rewarding events.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that dopamine neurons signal prediction errors for aversive events in addition to rewarding events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data showing reduced responses to predicted aversive events and increased responses to omitted aversive events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "31724ee7-6434-4d81-82ad-c5100ce99432",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C35",
+      "claim": "Dopamine neurons that were strongly inhibited by air puff also exhibited a larger prediction-dependent reduction of their responses to air puff.",
+      "claim_type": "EXPLICIT",
+      "source": "We indeed found a similar relationship: dopamine neurons that were strongly inhibited by air puff also exhibited a larger prediction-dependent reduction of their responses to air puff (Figure 4A, Pearson's r = 0.69, p=1.9 \u00d7 10\u22126).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates homogeneity in response function across dopamine neurons, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "1d4ff4cc-aecc-4ce6-a225-60ae37816cb9",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C36",
+      "claim": "Inhibitory responses to the air puff-predicting CS were correlated with prediction-dependent reduction of responses to air puff US (Pearson's r = 0.39, p=0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, similar to reward responses (Eshel et al., 2016), inhibitory responses to the air puff-predicting CS were correlated with prediction-dependent reduction of responses to air puff US (Figure 4B, Pearson's r = 0.39, p=0.016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates consistency in response function across dopamine neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "510ccd51-64a2-400d-92af-14657ac850de",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C37",
+      "claim": "There was no correlation between dopamine neurons' responses to unpredicted water and unpredicted air puff.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared responses of dopamine neurons to unpredicted water and unpredicted air puff (Figure 4C). We observed no obvious unique clusters across neurons, supporting the notion that there was no clear subpopulation of dopamine neurons specialized in signaling reward versus aversion in the lateral VTA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This finding suggests independence of reward and aversion response magnitudes, shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "164d49ff-2b38-4945-9534-1e44a06c3705",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C38",
+      "claim": "In the low reward context, all the dopamine neurons (12 of 12 dopamine neurons) were inhibited by the air puff-predicting CS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low reward context, all the dopamine neurons (12 of 12 dopamine neurons; p<0.05, one-sample t test; filled grey circles in Figure 5H) were inhibited by the air puff-predicting CS whereas in the high reward context, a large fraction of dopamine neurons (6 of 17 dopamine neurons; p>0.05, one-sample t test; filled white circles in Figure 5C) did not show consistent inhibition by air puff CS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates context-dependent responses to aversive cues, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "c22e89fb-8bf1-4763-9b84-b1118e002f92",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C39",
+      "claim": "In the high reward context, a large fraction of dopamine neurons (6 of 17 dopamine neurons) did not show consistent inhibition by air puff CS.",
+      "claim_type": "EXPLICIT",
+      "source": "In the low reward context, all the dopamine neurons (12 of 12 dopamine neurons; p<0.05, one-sample t test; filled grey circles in Figure 5H) were inhibited by the air puff-predicting CS whereas in the high reward context, a large fraction of dopamine neurons (6 of 17 dopamine neurons; p>0.05, one-sample t test; filled white circles in Figure 5C) did not show consistent inhibition by air puff CS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates context-dependent responses to aversive cues, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "14951d2c-96d0-4302-a71d-accf5525e15f",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C40",
+      "claim": "In the high reward context, a smaller fraction of neurons showed stronger inhibition to the air puff CS compared to the nothing CS (65%) than in the low reward context (100%) (p=0.02, chi-square test).",
+      "claim_type": "EXPLICIT",
+      "source": "That is, in the high reward context, a little fraction of neurons showed a stronger inhibition to the air puff CS compared to the nothing CS (100% and 65%, low and high reward context, respectively; p=0.02, chi-square test; Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical comparison of neural responses between reward contexts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "8d3d5327-4136-4a0a-b012-ca1e1ffc6e02",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C41",
+      "claim": "In the high reward probability condition, dopamine neurons exhibited biphasic responses to the air puff-predicting CS: short-latency excitation followed by later inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that in the high reward probability condition, dopamine neurons exhibited biphasic responses to the air puff-predicting CS: short-latency excitation followed by later inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal dynamics of dopamine responses in high reward contexts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "b1973c07-19d8-4a52-b53a-a17b7418f370",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C42",
+      "claim": "Dopamine neurons' net responses to the air puff-predicting CS and nothing-predicting CS were no longer significantly different in the high reward probability condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, dopamine neurons' net responses to the air puff-predicting CS and nothing-predicting CS were no longer significantly different (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates that reward context affects the ability of dopamine neurons to distinguish aversive from neutral cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "d92e3d66-a9a8-44d9-a197-020a322efe16",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C43",
+      "claim": "The eye area during the delay period was significantly smaller than before CS presentation in air puff trials, indicating anticipatory eye-blinking.",
+      "claim_type": "EXPLICIT",
+      "source": "In air puff trials, the eye area during the delay period was significantly smaller than before CS presentation (\u22121\u20130 s from CS onset), indicating anticipatory eye-blinking (Figure 6C, n = 21 sessions, p=3.4 \u00d7 10\u221212, paired t test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates that the air puff was aversive enough to elicit anticipatory behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "c32e0b18-fb41-4bd8-b880-e59f8ab7ab2d",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C44",
+      "claim": "The firing rates of dopamine neurons to air puff CS in blink trials were significantly smaller than that in no-blink trials.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the firing rates of dopamine neurons to air puff CS in blink trials were significantly smaller than that in no-blink trials (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates a correlation between dopamine activity and aversion-related behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "a1427d16-872a-48f0-bd77-8d97380f3157",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C45",
+      "claim": "In the low reward probability condition, the inhibitory response of dopamine neurons in blink trials was significantly greater than in no-blink trials (p=0.02, paired t test).",
+      "claim_type": "EXPLICIT",
+      "source": "In the low reward probability condition, the inhibitory response of dopamine neurons in blink trials was significantly greater than in no-blink trials (p=0.02, paired t test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This demonstrates context-dependent correlation between dopamine activity and behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "cf3e7acb-379c-44fe-9331-f53935b28332",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C46",
+      "claim": "In the high reward probability condition, the inhibitory response of dopamine neurons was greatly reduced even when the animals showed anticipatory eye-blinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, in the high reward probability condition, the inhibitory response of dopamine neurons was greatly reduced even when the animals showed anticipatory eye-blinking (Figure 6E, p=0.009, unpaired t test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This suggests that dopamine responses may not directly trigger behavior but rather signal value.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "e84c962f-5f74-43c3-b925-5d37bd32ced3",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C47",
+      "claim": "Dopamine neurons showed significant inhibition only when animals showed anticipatory eye-blinking in the low reward context (p=4.3 \u00d7 10\u22125, one-sample t test).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, dopamine neurons showed significant inhibition only when animals showed anticipatory eye-blinking in the low reward context (Figure 6E, p=4.3 \u00d7 10\u22125, one-sample t test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates the relationship between dopamine activity and behavioral state in low reward contexts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "d70b74a8-847b-4e3b-aad9-dd57b4cc5b64",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C48",
+      "claim": "Mice showed anticipatory blinking in 48% of air puff trials (90% air puff trials).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas mice showed anticipatory blinking in 48% of air puff trials (90% air puff trials), they showed more consistent anticipatory licking in water trials (98% in 90% water trials) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the behavioral responses to aversive and rewarding cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "f6d1cd3a-c742-4a77-a3c1-a9fb080022bd",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C49",
+      "claim": "Mice showed anticipatory licking in 98% of 90% water trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas mice showed anticipatory blinking in 48% of air puff trials (90% air puff trials), they showed more consistent anticipatory licking in water trials (98% in 90% water trials) (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the behavioral responses to rewarding cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "76b592b3-5e9d-427d-b4b6-e37f0b77cf51",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C50",
+      "claim": "Dopamine neurons were consistently excited by the 90% reward cue when they showed anticipatory licking, but not when they did not show anticipatory licking.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the number of trials in which the animal did not show anticipatory licking was small, we observed a similar relationship between dopamine responses and behavior: dopamine neurons were consistently excited by the 90% reward cue when they showed anticipatory licking, but not when they did not show anticipatory licking (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This demonstrates a correlation between dopamine activity and reward-related behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "85ad1a4c-6abb-4610-99ab-a3856c28795d",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C51",
+      "claim": "Activation of dopamine neurons alone is sufficient for appetitive conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies using optogenetics have established that activation of dopamine neurons alone is sufficient for appetitive conditioning (Steinberg et al., 2013; Tsai et al., 2009; Witten et al., 2011) whereas suppression is sufficient for aversive conditioning (Chang et al., 2016; Danjo et al., 2014; Ilango et al., 2014; Tan et al., 2012; van Zessen et al., 2012), although activation of dopamine neurons that project to the cortex or dopamine neurons in the dorsal raphe has potential to induce aversion and/or other functions (Lammel et al., 2014; Matthews et al., 2016; Popescu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple optogenetic studies cited in the discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "2ae5d36e-46aa-4447-9a00-c6c613b1157d",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C52",
+      "claim": "Suppression of dopamine neurons is sufficient for aversive conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies using optogenetics have established that activation of dopamine neurons alone is sufficient for appetitive conditioning (Steinberg et al., 2013; Tsai et al., 2009; Witten et al., 2011) whereas suppression is sufficient for aversive conditioning (Chang et al., 2016; Danjo et al., 2014; Ilango et al., 2014; Tan et al., 2012; van Zessen et al., 2012), although activation of dopamine neurons that project to the cortex or dopamine neurons in the dorsal raphe has potential to induce aversion and/or other functions (Lammel et al., 2014; Matthews et al., 2016; Popescu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple optogenetic studies cited in the discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "c347fcec-b28c-4f09-9e9d-31ec710a6231",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C53",
+      "claim": "The response function to aversive stimuli was preserved across dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found that the response function to aversive stimuli was preserved across dopamine neurons, suggesting that each dopamine neuron has the potential to contribute a prediction error of aversiveness, as well as of reward (Eshel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the correlation analyses shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "87f03f19-bc2f-4cef-ac34-625c0511defe",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C54",
+      "claim": "The peak of excitation for reward cues occurred earlier than the trough of inhibition for aversive cues.",
+      "claim_type": "EXPLICIT",
+      "source": "In examining the temporal dynamics of dopamine responses, we realized that on average, the peak of excitation for reward cues occurred earlier than the trough of inhibition for aversive cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the temporal dynamics of dopamine responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "e0c62828-a41e-45a6-b8b3-21f8a64f36b2",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C55",
+      "claim": "Dopamine responses to the cue predicting both rewarding and aversive outcomes first showed excitation and then inhibition, different from the flatter responses to nothing cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dopamine responses to the cue predicting both rewarding and aversive outcomes in our mixed prediction tasks first showed excitation and then inhibition, different from the flatter responses to nothing cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the temporal dynamics of dopamine responses to mixed outcome cues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "3a71e6bb-f296-42fb-b5b0-1863bd3b7c2b",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C56",
+      "claim": "Different presynaptic neurons may convey values for rewarding versus aversive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This clear temporal difference raises the possibility that information about values from rewarding and aversive outcomes are not yet integrated in presynaptic neurons and arise from different sources of inputs to dopamine neurons. A recent electrophysiological recording study from monosynaptic inputs to dopamine neurons also suggested that different presynaptic neurons may convey values for rewarding versus aversive stimuli (Tian et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on temporal dynamics and supported by a cited study.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "9016e60d-e8d2-439d-be02-ae6ed312a362",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C57",
+      "claim": "Neutral stimuli excited dopamine neurons more strongly in high- compared to low-reward contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are consistent with a previous study which proposed that dopamine neurons change their response patterns depending on reward context (Kobayashi and Schultz, 2014). The authors found that neutral stimuli excited dopamine neurons more strongly in high- compared to low-reward contexts (Kobayashi and Schultz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study that is consistent with the current results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "17b86c4b-0a26-45fa-83b3-f6456b8111a3",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C58",
+      "claim": "Short-latency excitations compromised the monotonic value coding of dopamine neurons in the high reward context.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, our data in the high reward context showed that the short-latency excitations compromised the monotonic value coding of dopamine neurons, and the difference between responses to air puff-predicting CS and nothing-predicting CS was diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data comparing high and low reward contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "e3355e8f-2756-44eb-a87a-766644096530",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C59",
+      "claim": "Dopamine neurons did not simply add a constant amount of spikes on top of the monotonic value coding in high reward contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that dopamine neurons did not simply add a constant amount of spikes (the same amount of excitation) on top of the monotonic value coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that value coding was compromised in high reward contexts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "7fbee63f-24dd-4750-8198-cb3e433e133e",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C60",
+      "claim": "The inhibition of dopamine neurons by air puff-predicting cues was correlated with trial-by-trial variability of aversion-related behaviors in low reward contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to overall reward contexts, we found that the inhibitory responses of dopamine neurons changed on a finer time-scale; the inhibition of dopamine neurons by air puff-predicting cues was correlated with trial-by-trial variability of aversion-related behaviors in low reward contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the behavioral analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "40017bbd-7dca-4a50-a56c-d5a5ef132a3e",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C61",
+      "claim": "A similar correlation was observed between excitation of dopamine neurons by reward-predicting cues and reward-related behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar correlation was observed between excitation of dopamine neurons by reward-predicting cues and reward-related behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the behavioral analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "f23bee82-4d55-4b8a-96bf-c7c6868491c7",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C62",
+      "claim": "Oleson et al. (2012) showed that dopamine concentration in the ventral striatum increased when rats exhibited active avoidance behavior while it decreased when rats showed freezing behavior in response to electrical shock-predicting cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cyclic voltammetry, the authors showed that, in response to electrical shock-predicting cues, the dopamine concentration in the ventral striatum increased when the rats exhibited an active avoidance behavior while it decreased when the rats showed freezing behavior (Oleson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study relating dopamine responses to behavioral strategies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "8f51b050-6edf-4663-ac0a-83ed8b77a8c3",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C63",
+      "claim": "The degree of inhibition, not excitation, of dopamine neurons in response to the air puff-predicting CS was positively correlated with anticipatory eye-blinking behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we found that the degree of inhibition, not excitation, of dopamine neurons in response to the air puff-predicting CS was positively correlated with anticipatory eye-blinking behaviors (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the behavioral analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "f2defb67-27d2-4d0c-917d-00ec29241442",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C64",
+      "claim": "Neurons in the lateral SNc signal salience or 'stable value' as opposed to 'flexible value' in the medial SNc.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it was reported that neurons in the lateral SNc signal salience (Lerner et al., 2015; Matsumoto and Hikosaka, 2009) or 'stable value' as opposed to 'flexible value' in the medial SNc (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from cited studies about dopamine neuron heterogeneity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "22e9cbdf-b6a3-4e49-9f9c-e629345cd1c2",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C65",
+      "claim": "Dopamine neurons in the ventromedial VTA exhibited excitation to an aversive stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study showed that dopamine neurons in the ventromedial VTA exhibited excitation to an aversive stimulus (Brischoux et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study about dopamine neuron heterogeneity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "54edf5b9-65e4-43a0-baf1-9c70ca3089bf",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "claim_id": "C66",
+      "claim": "The majority of dopamine neurons in the lateral VTA project to the ventral and anterior dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of dopamine neurons in the lateral VTA, our main recording site, project to the ventral and anterior dorsal striatum (Lammel et al., 2008; Menegas et al., 2015), our study did not distinguish the exact projection targets of dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the projection patterns of dopamine neurons, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e0a8ac3e-d322-46ab-a90e-21e7cace7937",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used optogenetic tagging to identify dopamine neurons in the lateral VTA of DAT-Cre mice. A total of 72 optogenetically-identified dopamine neurons were recorded from 176 total VTA neurons across 14 mice, primarily from the parabrachial pigmented nucleus (PBP), parainterfascicular nucleus (PIF), and paranigral nucleus (PN).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 describe the experimental subjects, recording approach, and anatomical localization. The optogenetic identification method is well-established (Cohen et al., 2012), sample sizes are clearly stated, and anatomical reconstruction is provided in figures. This methodological foundation is appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "9f2526c9-b010-46d6-9205-efef7a43ac55",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the mixed prediction task (low reward context), dopamine neurons showed differential responses to cues predicting different outcomes: excitation to reward-predicting cues and inhibition to aversive-predicting cues. 85% of neurons were significantly modulated by the three odors (water, nothing, air puff), with 59% showing monotonic value coding (water > nothing > air puff).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by data from Figure 2 showing clear differential responses with appropriate statistical tests (one-way ANOVA, p<0.05). The sample size (n=26 neurons) is adequate, and the monotonic coding pattern is quantified. The results are replicated across individual animals (Figure 2\u2014figure supplement 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "9e00237a-0ef1-42f3-ab8b-a3f8218debca",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When a single odor predicted both reward and punishment, dopamine neurons showed intermediate responses compared to cues predicting only reward or only punishment. 89% of neurons were significantly modulated, with 65% showing monotonic value coding (water > water+air puff > air puff), indicating that dopamine neurons integrate values along a one-dimensional axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate value integration using the mixed prediction task. The intermediate response to mixed outcome cues (Figure 2F-H) with appropriate statistics (one-way ANOVA, paired t-tests) supports the conclusion. This directly contradicts Fiorillo (2013) and provides strong evidence for integrated value coding. Sample size (n=26) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "5c49b456-c3cc-41e4-8cee-caaaf1cdf093",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dopamine neurons signal prediction errors for aversive events: inhibitory responses to air puff were significantly reduced when predicted versus unpredicted, and omission of predicted air puff slightly but significantly increased firing rates compared to nothing trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 demonstrate aversive prediction error coding with data from Figure 3. Both key signatures of prediction error (reduced response to predicted outcomes and increased response to omitted outcomes) are shown with appropriate statistics (paired t-tests, auROC analysis). The authors acknowledge variability in omission responses, which is appropriately cautious. Sample size (n=38) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "b78dfa0f-f6a1-4e18-aea3-3f814ff5ee98",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The response function to aversive stimuli was preserved across dopamine neurons: neurons strongly inhibited by air puff showed larger prediction-dependent reduction (r=0.69, p=1.9\u00d710\u207b\u2076), and inhibitory CS responses correlated with prediction-dependent US reduction (r=0.39, p=0.016).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C53 demonstrate homogeneity in aversion response function using correlation analyses (Figure 4A-B). The strong correlation (r=0.69) with highly significant p-value indicates preserved response function across neurons, similar to previous findings for reward (Eshel et al., 2016). This suggests functional homogeneity rather than specialized subpopulations for aversion coding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "c8cd5d07-c093-4152-9a05-282c80509755",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There was no correlation between dopamine neurons' responses to unpredicted water and unpredicted air puff, and no clear subpopulations specialized for reward versus aversion were observed in the lateral VTA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by Figure 4C showing lack of correlation between reward and aversion responses. The scatter plot shows no obvious clustering, and the text states no correlation was found. This suggests independence of reward and aversion response magnitudes, though both can be encoded by the same neurons. Sample size (n=37) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "a4d61e00-0982-47ea-8a67-75489be50faf",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Reward context dramatically affected dopamine responses to aversive cues. In low reward context, all dopamine neurons (12/12) were inhibited by air puff CS, while in high reward context, only 65% showed stronger inhibition to air puff CS than nothing CS (p=0.02). High reward context induced biphasic responses (early excitation, later inhibition), and net responses to air puff CS and nothing CS were no longer significantly different.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 demonstrate context-dependent aversion coding with direct comparison between high and low reward probability tasks (Figure 5). The chi-square test (p=0.02) appropriately compares proportions of neurons showing inhibition. The biphasic response pattern in high reward context is clearly shown. Sample sizes are adequate (n=12 low, n=17 high). This is a key finding explaining discrepancies in prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "f0b87251-6888-4285-9c6f-934a6bab9668",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Trial-by-trial dopamine activity correlated with anticipatory eye-blinking behavior in a context-dependent manner. In low reward context, dopamine inhibition was significantly greater in blink trials (p=0.02) and only showed significant inhibition when animals blinked (p=4.3\u00d710\u207b\u2075). In high reward context, inhibition was greatly reduced even during blinking (p=0.009).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 link neural activity to behavior using concurrent eye-tracking (Figure 6). The correlation between dopamine inhibition and blinking specifically in low reward context is well-documented with appropriate statistics. The dissociation in high reward context (reduced inhibition despite blinking) suggests dopamine signals value rather than directly triggering behavior. Sample sizes and statistical tests are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "099e6693-7e15-411c-ac9d-166153717977",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mice showed anticipatory blinking in 48% of air puff trials but more consistent anticipatory licking in 98% of water trials. Dopamine neurons were excited by reward cues when animals showed anticipatory licking but not when they didn't.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 quantify behavioral responses and their relationship to dopamine activity. The asymmetry between blinking (48%) and licking (98%) is noted, likely reflecting the mild aversiveness of air puff versus high reward value of water. The correlation with licking behavior (Figure 6F) parallels the blinking results, though the authors acknowledge small sample size for no-lick trials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "a38407c3-c994-4350-8198-6f179c532ee3",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In low reward contexts, dopamine neurons were exclusively inhibited by aversive events, expectation reduced responses to both reward and punishment, and dopamine neurons signal value prediction errors (VPEs) integrating reward and aversion in a common currency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, and C5 summarize the main findings in low reward contexts. These are well-supported by the data showing: (1) consistent inhibition by aversive cues (C24-C27), (2) prediction error coding for both reward and aversion (C32-C34), and (3) value integration (C28-C31). The convergent evidence from multiple experiments strongly supports this integrated VPE model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "abab878b-2185-4ff3-9120-f34a64d53659",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In high reward contexts, dopamine neurons acquired short-latency excitation to aversive events that masked VPE signaling. This excitation compromised monotonic value coding and was not simply a constant offset added to value signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C58, and C59 describe the disruption of value coding in high reward contexts. The biphasic response pattern (C41-C42) and loss of discrimination between aversive and neutral cues (C40) support this conclusion. The observation that this is not a simple additive effect is important for understanding the mechanism. Data from Figure 5 and supplementary analyses support these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "0a7eb638-21c0-4e47-8fa4-d05465d56b58",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dopamine inhibition by aversive cues correlated with trial-by-trial variability in aversion-related behaviors in low reward contexts, and similar correlations were observed for reward-related behaviors. Specifically, the degree of inhibition (not excitation) positively correlated with anticipatory eye-blinking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60, C61, and C63 establish the behavioral relevance of dopamine signals. The trial-by-trial correlation between inhibition and blinking (Figure 6D) with appropriate statistics supports this. The specificity to inhibition (not excitation) and context-dependence strengthen the interpretation that dopamine signals value rather than motor commands.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "492e7599-ab01-42fd-946d-58283a120d89",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims about dopamine's role in learning and reward prediction error (RPE) theory are established in the field, including that dopamine neurons burst to unexpected rewards, shift responses to predictive cues, and pause when expected rewards are omitted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C10 summarize well-established prior work on dopamine and RPE, appropriately cited (Schultz et al., 1997; Bayer and Glimcher, 2005; etc.). These provide necessary context for the current study's focus on aversive events. The citations are appropriate and accurate representations of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "12cadad6-6915-4058-bc26-74651705ae7f",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature shows conflicting results regarding dopamine responses to aversive stimuli: some studies report inhibition while others report activation, with differences potentially related to anatomical location, projection targets, and experimental conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C15 accurately summarize the conflicting prior literature on dopamine and aversion. The citations are appropriate (Mileykovskiy and Morales, 2011; Matsumoto and Hikosaka, 2009; Lerner et al., 2015; etc.). This establishes the motivation for the current study and highlights the importance of optogenetic identification and controlled experimental conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "7f38a1e7-7b7a-4975-aa8f-6f6fd86183fa",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Fiorillo (2013) concluded that dopamine neurons represent prediction errors for reward but not aversiveness, based on findings that: (1) responses to aversive outcomes were indistinguishable from neutral outcomes, (2) aversive responses were unaffected by prediction, and (3) dopamine neurons did not integrate aversive values with rewards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 accurately represent Fiorillo's (2013) conclusions, which the current study directly challenges. The citation is appropriate and the summary is fair. This sets up the key contrast with the current findings, particularly regarding value integration (C28-C31) and prediction error coding for aversion (C32-C34).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "b10409e0-d13e-44fd-892c-a82b329b2315",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Optogenetic studies have established that dopamine neuron activation is sufficient for appetitive conditioning while suppression is sufficient for aversive conditioning, though some dopamine subpopulations may have different functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 accurately summarize optogenetic manipulation studies (Tsai et al., 2009; Witten et al., 2011; Tan et al., 2012; etc.) that establish causal roles for dopamine in learning. The caveat about cortical-projecting neurons is appropriate. These citations support the functional interpretation of the recording data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "51d86d1f-730d-4d9f-8265-a32b49d0a507",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Temporal dynamics analysis revealed that excitation peaks for reward cues occurred earlier than inhibition troughs for aversive cues, and mixed outcome cues showed sequential excitation then inhibition. This suggests different presynaptic sources may convey reward versus aversion information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 describe temporal dynamics and speculate about circuit mechanisms. While the temporal observations are data-based, the inference about different presynaptic sources (C56) is speculative, though supported by a cited study (Tian et al., 2016). The temporal dynamics are interesting but the mechanistic interpretation requires further validation. The lack of correlation between reward and aversion response magnitudes (C37) provides some support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "5afeca85-ed6f-4ebd-8dcf-0998ca85ccd8",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Previous work by Kobayashi and Schultz (2014) found that neutral stimuli excited dopamine neurons more strongly in high- compared to low-reward contexts, consistent with the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 accurately cites prior work showing context-dependent responses to neutral stimuli. This provides important precedent for the current findings about context-dependent responses to aversive stimuli (C38-C42). The citation is appropriate and the connection to current results is valid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "75f7704c-3a05-40d8-81a1-7c0e86de12f0",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Oleson et al. (2012) showed that dopamine concentration in ventral striatum increased during active avoidance but decreased during freezing in response to shock-predicting cues, suggesting dopamine responses depend on behavioral strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 accurately represents prior work relating dopamine to behavioral strategies. This is cited in the discussion to contextualize the current findings about dopamine-behavior correlations (C60-C63). The citation is appropriate and provides an alternative framework for interpreting dopamine responses to aversive stimuli.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "846af768-1bab-42bc-ba48-fe2957c69acb",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior studies suggest dopamine neuron diversity based on anatomical location and projection targets, including lateral SNc neurons signaling salience or stable value, ventromedial VTA neurons showing excitation to aversive stimuli, and lateral VTA neurons projecting primarily to ventral and anterior dorsal striatum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 summarize prior work on dopamine heterogeneity with appropriate citations (Lerner et al., 2015; Matsumoto and Hikosaka, 2009; Brischoux et al., 2009; Lammel et al., 2008). This contextualizes the current findings and acknowledges that projection targets were not distinguished in this study, which is an appropriate limitation to note.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    },
+    {
+      "id": "e3480f7c-f6bc-4a10-8173-a8ec24af6929",
+      "content_id": "e07953d5-4efc-4f42-b60a-eac03472982d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Dopamine neurons integrate reward and punishment values along a one-dimensional axis, as demonstrated by intermediate responses to cues predicting both outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C31 state the same key finding about value integration. This is strongly supported by the mixed prediction task data (C28-C30) showing monotonic coding across reward-only, mixed, and punishment-only cues. The statistical evidence (89% modulated, 65% monotonic) with appropriate tests supports this conclusion. This directly contradicts Fiorillo (2013) and is a major contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:17:28.532619Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bd453dcf-e581-49a5-9ce2-9939b40480ca",
+      "result_id": "e0a8ac3e-d322-46ab-a90e-21e7cace7937"
+    },
+    {
+      "claim_id": "846e356c-c4f5-4639-890a-bd98b7feb967",
+      "result_id": "e0a8ac3e-d322-46ab-a90e-21e7cace7937"
+    },
+    {
+      "claim_id": "67fddee7-e3f9-4ff5-a09e-c3ce46f79acf",
+      "result_id": "e0a8ac3e-d322-46ab-a90e-21e7cace7937"
+    },
+    {
+      "claim_id": "de41c916-764a-43a5-8ecc-3612051a3a40",
+      "result_id": "e0a8ac3e-d322-46ab-a90e-21e7cace7937"
+    },
+    {
+      "claim_id": "606392b3-492d-41f0-aa5e-c621f0a33f69",
+      "result_id": "9f2526c9-b010-46d6-9205-efef7a43ac55"
+    },
+    {
+      "claim_id": "5d49176f-e98a-4ad2-b1ad-9e5a27ebd03a",
+      "result_id": "9f2526c9-b010-46d6-9205-efef7a43ac55"
+    },
+    {
+      "claim_id": "35944a61-b2f6-4072-9b38-b87a1c28d469",
+      "result_id": "9f2526c9-b010-46d6-9205-efef7a43ac55"
+    },
+    {
+      "claim_id": "43dfdbd5-6580-418e-8fad-2db5ab444b51",
+      "result_id": "9f2526c9-b010-46d6-9205-efef7a43ac55"
+    },
+    {
+      "claim_id": "f32d6de4-29c6-43ea-9ed8-a49d94b302e1",
+      "result_id": "9e00237a-0ef1-42f3-ab8b-a3f8218debca"
+    },
+    {
+      "claim_id": "8c1ca9a2-2f05-4cc5-a475-62c540dd1859",
+      "result_id": "9e00237a-0ef1-42f3-ab8b-a3f8218debca"
+    },
+    {
+      "claim_id": "6a09c590-d03a-456f-bf61-c1948d689c27",
+      "result_id": "9e00237a-0ef1-42f3-ab8b-a3f8218debca"
+    },
+    {
+      "claim_id": "5dfa390d-2fa8-4e30-89cd-d15d92d8eda5",
+      "result_id": "9e00237a-0ef1-42f3-ab8b-a3f8218debca"
+    },
+    {
+      "claim_id": "d16cd3de-ace5-4d20-90d1-49409e0d0e9d",
+      "result_id": "5c49b456-c3cc-41e4-8cee-caaaf1cdf093"
+    },
+    {
+      "claim_id": "33e36145-90fe-4a97-b10a-7bfee415a796",
+      "result_id": "5c49b456-c3cc-41e4-8cee-caaaf1cdf093"
+    },
+    {
+      "claim_id": "dcc8f95a-782e-4cbc-8637-c27baeaa36b4",
+      "result_id": "5c49b456-c3cc-41e4-8cee-caaaf1cdf093"
+    },
+    {
+      "claim_id": "31724ee7-6434-4d81-82ad-c5100ce99432",
+      "result_id": "b78dfa0f-f6a1-4e18-aea3-3f814ff5ee98"
+    },
+    {
+      "claim_id": "1d4ff4cc-aecc-4ce6-a225-60ae37816cb9",
+      "result_id": "b78dfa0f-f6a1-4e18-aea3-3f814ff5ee98"
+    },
+    {
+      "claim_id": "c347fcec-b28c-4f09-9e9d-31ec710a6231",
+      "result_id": "b78dfa0f-f6a1-4e18-aea3-3f814ff5ee98"
+    },
+    {
+      "claim_id": "510ccd51-64a2-400d-92af-14657ac850de",
+      "result_id": "c8cd5d07-c093-4152-9a05-282c80509755"
+    },
+    {
+      "claim_id": "164d49ff-2b38-4945-9534-1e44a06c3705",
+      "result_id": "a4d61e00-0982-47ea-8a67-75489be50faf"
+    },
+    {
+      "claim_id": "c22e89fb-8bf1-4763-9b84-b1118e002f92",
+      "result_id": "a4d61e00-0982-47ea-8a67-75489be50faf"
+    },
+    {
+      "claim_id": "14951d2c-96d0-4302-a71d-accf5525e15f",
+      "result_id": "a4d61e00-0982-47ea-8a67-75489be50faf"
+    },
+    {
+      "claim_id": "8d3d5327-4136-4a0a-b012-ca1e1ffc6e02",
+      "result_id": "a4d61e00-0982-47ea-8a67-75489be50faf"
+    },
+    {
+      "claim_id": "b1973c07-19d8-4a52-b53a-a17b7418f370",
+      "result_id": "a4d61e00-0982-47ea-8a67-75489be50faf"
+    },
+    {
+      "claim_id": "d92e3d66-a9a8-44d9-a197-020a322efe16",
+      "result_id": "f0b87251-6888-4285-9c6f-934a6bab9668"
+    },
+    {
+      "claim_id": "c32e0b18-fb41-4bd8-b880-e59f8ab7ab2d",
+      "result_id": "f0b87251-6888-4285-9c6f-934a6bab9668"
+    },
+    {
+      "claim_id": "a1427d16-872a-48f0-bd77-8d97380f3157",
+      "result_id": "f0b87251-6888-4285-9c6f-934a6bab9668"
+    },
+    {
+      "claim_id": "cf3e7acb-379c-44fe-9331-f53935b28332",
+      "result_id": "f0b87251-6888-4285-9c6f-934a6bab9668"
+    },
+    {
+      "claim_id": "e84c962f-5f74-43c3-b925-5d37bd32ced3",
+      "result_id": "f0b87251-6888-4285-9c6f-934a6bab9668"
+    },
+    {
+      "claim_id": "d70b74a8-847b-4e3b-aad9-dd57b4cc5b64",
+      "result_id": "099e6693-7e15-411c-ac9d-166153717977"
+    },
+    {
+      "claim_id": "f6d1cd3a-c742-4a77-a3c1-a9fb080022bd",
+      "result_id": "099e6693-7e15-411c-ac9d-166153717977"
+    },
+    {
+      "claim_id": "76b592b3-5e9d-427d-b4b6-e37f0b77cf51",
+      "result_id": "099e6693-7e15-411c-ac9d-166153717977"
+    },
+    {
+      "claim_id": "36befaa4-dc31-4fb1-9310-ef99c79ba9a4",
+      "result_id": "a38407c3-c994-4350-8198-6f179c532ee3"
+    },
+    {
+      "claim_id": "00c474b8-b8c3-4d51-82ec-27e39438fe8c",
+      "result_id": "a38407c3-c994-4350-8198-6f179c532ee3"
+    },
+    {
+      "claim_id": "45538706-7bf7-43f9-b623-35c23b4bdd18",
+      "result_id": "a38407c3-c994-4350-8198-6f179c532ee3"
+    },
+    {
+      "claim_id": "d63b74ec-7a78-4100-ba3a-99150b97c18a",
+      "result_id": "abab878b-2185-4ff3-9120-f34a64d53659"
+    },
+    {
+      "claim_id": "17b86c4b-0a26-45fa-83b3-f6456b8111a3",
+      "result_id": "abab878b-2185-4ff3-9120-f34a64d53659"
+    },
+    {
+      "claim_id": "e3355e8f-2756-44eb-a87a-766644096530",
+      "result_id": "abab878b-2185-4ff3-9120-f34a64d53659"
+    },
+    {
+      "claim_id": "7fbee63f-24dd-4750-8198-cb3e433e133e",
+      "result_id": "0a7eb638-21c0-4e47-8fa4-d05465d56b58"
+    },
+    {
+      "claim_id": "40017bbd-7dca-4a50-a56c-d5a5ef132a3e",
+      "result_id": "0a7eb638-21c0-4e47-8fa4-d05465d56b58"
+    },
+    {
+      "claim_id": "8f51b050-6edf-4663-ac0a-83ed8b77a8c3",
+      "result_id": "0a7eb638-21c0-4e47-8fa4-d05465d56b58"
+    },
+    {
+      "claim_id": "cd4a996a-3255-4585-b8fb-e90737083e8f",
+      "result_id": "492e7599-ab01-42fd-946d-58283a120d89"
+    },
+    {
+      "claim_id": "bceaf6fe-e5fa-42b2-b9dd-19b9fb816e11",
+      "result_id": "492e7599-ab01-42fd-946d-58283a120d89"
+    },
+    {
+      "claim_id": "01bdb8b8-8b30-4cce-adb2-1ece815e420a",
+      "result_id": "492e7599-ab01-42fd-946d-58283a120d89"
+    },
+    {
+      "claim_id": "fd77c72f-8474-48fd-b7c0-1878440c81f1",
+      "result_id": "492e7599-ab01-42fd-946d-58283a120d89"
+    },
+    {
+      "claim_id": "0531b8d4-b236-4406-9b29-b90fa44eb52e",
+      "result_id": "492e7599-ab01-42fd-946d-58283a120d89"
+    },
+    {
+      "claim_id": "8f612937-c659-4d35-b1e3-5b47f995dbe2",
+      "result_id": "12cadad6-6915-4058-bc26-74651705ae7f"
+    },
+    {
+      "claim_id": "1ca7d167-2ef1-4efb-aa85-bf32c5ec4063",
+      "result_id": "12cadad6-6915-4058-bc26-74651705ae7f"
+    },
+    {
+      "claim_id": "ab32e52a-790b-4209-b38c-4afce3f80bc7",
+      "result_id": "12cadad6-6915-4058-bc26-74651705ae7f"
+    },
+    {
+      "claim_id": "2f831d83-920d-4155-8dcd-e8e1d4a8eb98",
+      "result_id": "12cadad6-6915-4058-bc26-74651705ae7f"
+    },
+    {
+      "claim_id": "bd4b0f6b-2c6c-4c2d-9de8-43ac8cf3bdf3",
+      "result_id": "12cadad6-6915-4058-bc26-74651705ae7f"
+    },
+    {
+      "claim_id": "34453a63-759b-4004-b62a-24c84511926f",
+      "result_id": "7f38a1e7-7b7a-4975-aa8f-6f6fd86183fa"
+    },
+    {
+      "claim_id": "bccae12d-4c99-4830-a2dd-e6fbe620986e",
+      "result_id": "7f38a1e7-7b7a-4975-aa8f-6f6fd86183fa"
+    },
+    {
+      "claim_id": "7e66f18f-062c-438d-95ed-1a157d670bdb",
+      "result_id": "7f38a1e7-7b7a-4975-aa8f-6f6fd86183fa"
+    },
+    {
+      "claim_id": "baf5b84a-e923-4744-87fd-aac5cda13462",
+      "result_id": "7f38a1e7-7b7a-4975-aa8f-6f6fd86183fa"
+    },
+    {
+      "claim_id": "85ad1a4c-6abb-4610-99ab-a3856c28795d",
+      "result_id": "b10409e0-d13e-44fd-892c-a82b329b2315"
+    },
+    {
+      "claim_id": "2ae5d36e-46aa-4447-9a00-c6c613b1157d",
+      "result_id": "b10409e0-d13e-44fd-892c-a82b329b2315"
+    },
+    {
+      "claim_id": "87f03f19-bc2f-4cef-ac34-625c0511defe",
+      "result_id": "51d86d1f-730d-4d9f-8265-a32b49d0a507"
+    },
+    {
+      "claim_id": "e0c62828-a41e-45a6-b8b3-21f8a64f36b2",
+      "result_id": "51d86d1f-730d-4d9f-8265-a32b49d0a507"
+    },
+    {
+      "claim_id": "3a71e6bb-f296-42fb-b5b0-1863bd3b7c2b",
+      "result_id": "51d86d1f-730d-4d9f-8265-a32b49d0a507"
+    },
+    {
+      "claim_id": "9016e60d-e8d2-439d-be02-ae6ed312a362",
+      "result_id": "5afeca85-ed6f-4ebd-8dcf-0998ca85ccd8"
+    },
+    {
+      "claim_id": "f23bee82-4d55-4b8a-96bf-c7c6868491c7",
+      "result_id": "75f7704c-3a05-40d8-81a1-7c0e86de12f0"
+    },
+    {
+      "claim_id": "f2defb67-27d2-4d0c-917d-00ec29241442",
+      "result_id": "846af768-1bab-42bc-ba48-fe2957c69acb"
+    },
+    {
+      "claim_id": "22e9cbdf-b6a3-4e49-9f9c-e629345cd1c2",
+      "result_id": "846af768-1bab-42bc-ba48-fe2957c69acb"
+    },
+    {
+      "claim_id": "54edf5b9-65e4-43a0-baf1-9c70ca3089bf",
+      "result_id": "846af768-1bab-42bc-ba48-fe2957c69acb"
+    },
+    {
+      "claim_id": "eccbf0e0-324e-4df2-8c34-847911e19c38",
+      "result_id": "e3480f7c-f6bc-4a10-8173-a8ec24af6929"
+    },
+    {
+      "claim_id": "5dfa390d-2fa8-4e30-89cd-d15d92d8eda5",
+      "result_id": "e3480f7c-f6bc-4a10-8173-a8ec24af6929"
+    }
+  ],
+  "comparisons": []
+}

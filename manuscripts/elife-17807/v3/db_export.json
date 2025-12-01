@@ -1,0 +1,1841 @@
+{
+  "submission": {
+    "id": "2aeb8292-d723-46f2-b322-129482501863",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:11:42.148256Z",
+    "updated_at": "2025-11-30T21:11:42.148256Z"
+  },
+  "content": [
+    {
+      "id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "submission_id": "2aeb8292-d723-46f2-b322-129482501863",
+      "content_type": "manuscript",
+      "content_text": "# Cortical flow aligns actin filaments to form a furrow\n\n## Authors\n\n- Anne-Cecile Reymann<sup>1</sup> ([ORCID: 0000-0002-0517-5083](https://orcid.org/0000-0002-0517-5083))\n- Fabio Staniscia<sup>3</sup>\n- Anna Erzberger<sup>3</sup>\n- Guillaume Salbreux<sup>3</sup> \u2020\n- Stephan W Grill<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Biotechnology Center Technische Universit\u00e4t Dresden Dresden Germany\n2. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n3. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n4. The Francis Crick Institute London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCytokinesis in eukaryotic cells is often accompanied by actomyosin cortical flow. Over 30 years ago, Borisy and White proposed that cortical flow converging upon the cell equator compresses the actomyosin network to mechanically align actin filaments. However, actin filaments also align via search-and-capture, and to what extent compression by flow or active alignment drive furrow formation remains unclear. Here, we quantify the dynamical organization of actin filaments at the onset of ring assembly in the C. elegans zygote, and provide a framework for determining emergent actomyosin material parameters by the use of active nematic gel theory. We characterize flow-alignment coupling, and verify at a quantitative level that compression by flow drives ring formation. Finally, we find that active alignment enhances but is not required for ring formation. Our work characterizes the physical mechanisms of actomyosin ring formation and highlights the role of flow as a central organizer of actomyosin network architecture.\n\n## Introduction\n\nCytokinesis begins in late anaphase, triggered by regulatory pathways with feedback from the mitotic spindle that ensure appropriate positioning of the molecular machinery (reviewed in Fededa and Gerlich, 2012; Green et al., 2012). As a consequence, the small regulatory GTPase RhoA (Piekny et al., 2005; Tse et al., 2012) and the molecular motor myosin (Shelton et al., 1999; Werner and Glotzer, 2008) are enriched in an equatorial band (Piekny et al., 2005; Werner and Glotzer, 2008). Myosin can directly organize the actin network (Miller et al., 2012; Soares e Silva et al., 2011; Vavylonis et al., 2008), and if myosin-based active alignment (e.g. via search-and-capture [Vavylonis et al., 2008]) or flow-based compression as proposed by White and Borisy (White and Borisy, 1983; Rappaport, 1996) drive furrow formation and cytokinesis in eukaryotes remains unclear (Green et al., 2012; Bray and White, 1988; Levayer and Lecuit, 2012; Mendes Pinto et al., 2013; Cao and Wang, 1990; Murthy and Wadsworth, 2005; Zhou and Wang, 2008).\n\n## Results and discussion\n\nWe set out to address this question in the one cell embryo of the nematode C. elegans which forms two constricting ingressions, first a pseudocleavage furrow during polarity establishment, and then a cytokinetic furrow during cytokinesis (Figure 1\u2014figure supplement 1a, Video 1) (Munro and Bowerman, 2009; Rose et al., 1995). Notably, the pseudocleavage furrow is linked to cortical flow (Mayer et al., 2010; Munro et al., 2004) and lacks regulatory control from the mitotic spindle (Werner and Glotzer, 2008). We first characterized the actomyosin cortical network during pseudocleavage and cytokinesis. For this, we generated a Lifeact::mKate2 fluorescent line of C. elegans by coupling the Lifeact peptide to the far-red fluorophore mKate2 that was codon optimized for C. elegans (Redemann et al., 2011) (see Materials\u00a0and\u00a0methods and Video 2). This allows us to quantify cortical actin filament orientation in space and time, as well as cortical flow velocity fields by Particle Image Velocimetry (PIV, Figures 1 and 2, Figure 2\u2014figure supplement 1) (Mayer et al., 2010). We find that actin filaments change from a randomly oriented and isotropic gel before cortical flows initiate, into a more circumferentially aligned organization at the future site of furrow ingression during both pseudocleavage and cytokinesis (Figure 1b, Figure 1\u2014figure supplement 1 and Videos 1 and 3). We studied how pseudocleavage and cytokinesis differ in the spatial distribution of molecular regulation and contractility within the equatorial region (Figure 1). Non-muscle myosin II (NMY-2) is the essential molecular motor that drives both cortical flow and cytokinesis (Shelton et al., 1999; Guo and Kemphues, 1996), whereas the small GTPase RhoA (Piekny et al., 2005; Tse et al., 2012), when active, is responsible for its local activation. At the onset of cytokinesis, active RhoA and NMY-2 locally increase at the position of the contractile ring, while for pseudocleavage we observed no such increase (Figure 1). Instead, the equatorial region in pseudocleavage corresponds to a transition zone with a gradual decrease of RhoA and myosin between the anterior region of high and the posterior region of low contractility (Figure 1) (Mayer et al., 2010). The actin nucleator formin CYK-1 is downstream of RhoA (Piekny et al., 2005) and follows a similar pattern of localization, and actin bundling via anillin (Piekny and Glotzer, 2008) or plastin also does not appear to be increased in the equatorial region during pseudocleavage (Figure 2\u2014figure supplement 5e\u2013f). To conclude, the pseudocleavage furrow ingresses with a circumferential alignment of filaments in the gel, but without a local zone of RhoA activation and the corresponding local increase in myosin and formin density. Since search-and-capture like mechanisms require a localized band of myosin and actin nucleators at the equator to drive myosin-based active alignment (Vavylonis et al., 2008), this suggests that actin filaments in pseudocleavage align via flow-based compression and not via active alignment.\n\n![Video 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-media1.mp4.jpg)\n\n**Video 1.:** Cortical and medial planes of an embryo expressing both Lifeact::mKate2 and endogenous NMY-2::GFP. Left panel, medial plane Lifeact:mKate2, center, cortical NMY-2::GFP, right panel, cortical Lifeact:mKate2 (min:s).\n\n![Video 2.](https://cdn.elifesciences.org/articles/17807/elife-17807-media2.mp4.jpg)\n\n**Video 2.:** The back of the embryo is dimmer due to imaging.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig1-v3.jpg)\n\n**Figure 1.:** (a) Average active RhoA biosensor intensity profiles along the AP axis (0 represents the embryo center; N\u00a0=\u00a014 embryos for pseudocleavage and N\u00a0=\u00a07 for cytokinesis; errors represent the standard error of the mean). (b) Actomyosin cortical organization at the onset of pseudocleavage and cytokinesis in embryos expressing both Lifeact::mKate2 and NMY-2::GFP. (c\u2013d) Average actin, myosin and ingression profiles as a function of position along the AP axis (N\u00a0=\u00a010 embryos for pseudocleavage and N\u00a0=\u00a022 for cytokinesis; errors represent the standard error of the mean). Scale bars, 10 \u03bcm. The following figure supplement is available for Figure 1:\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Actomyosin gel dynamics in the C. elegans zygote. Single cortical and medial planes from a timelapse sequence of a representative embryo expressing both Lifeact::mKate2 and NMY-2::GFP. Anterior is to the left, posterior to the right. White arrows indicate the position of pseudocleavage and cytokinesis ingressions. Red arrows indicate flow directions. (b) Close up look at the filaments dynamics near the site of flow initiation. Cortical plane from a timelapse sequence of an embryo expressing both Lifeact::mKate2 and NMY-2::GFP. (c) Top: Actin network organization from an embryos expressing Lifeact::mKate2. Times rescaled to 0 at flow initiation. Green arcs indicate the smooth cleared zone during the polarization process. Red lines schematize filaments maximum vertical alignment positions. White arrows underlie pseudocleavage ingression. Bottom: color-coded representation of the orientation of filaments. (d) Example from an embryo for which the polarization process starts off centered from the physical pole of the embryo due to a mispositioning of the sperm pronucleus (dashed circle on medial plane). Alignment direction is observed to follow perpendicularly to the direction of the flow as it reorients along the long axis of the embryo (also see Appendix). Red arrows represent flow direction, red lines filaments main orientation. Scale bars, 10 \u03bcm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-v3.jpg)\n\n**Figure 2.:** (a) Filament orientation is quantified by a nematic order parameter; flow fields are obtained from Particle Image Velocimetry (PIV) analysis. (b) Gel flow, compression rate, filament orientation and cell ingression fields. Top row, schematic representations. Middle row, kymographs of the time evolution of the profiles along the AP axis of flow velocity, compression rate, nematic order parameter and outer ingression distance for pseudocleavage (N\u00a0=\u00a010). Bottom row, cytokinesis (N\u00a0=\u00a012). Orange dashed lines indicate the times where all four fields are stationary. Flow, compression and nematic order were determined from bottom-section and ingression from mid-section views of Lifeact::mKate2 labelled embryos (see Materials and methods and Appendix).\u00a0(c) Spatial\u00a0correlation between compression, alignment and ingression (see Materials\u00a0and\u00a0methods). Peak value positions (estimated by a Gaussian fitting of the 1D correlation curve) are indicated. See Figure 2\u2014figure supplement 2 for spatiotemporal correlation functions. (d) Table of the temporal delays obtained from the correlation peak value positions using the mean values of the velocity in the 10 \u03bcm central region (mean values for pseudocleavage:\u00a0$v$\u00a0=\u00a06.16 \u00b11.23 \u03bcm/min; for cytokinesis:\u00a0$v$\u00a0=\u00a04.01\u00b11.92 \u03bcm/min; mean \u00b1 SD).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Example of the filaments alignment quantification (red lines) and the flow velocity field (yellow arrows), as well as nematic order parameters conventions. (b) Time evolution of flow (light green) and compression rate (dark green) as well as ingression (grey) measured at a fixed position along the AP axis (\u221220 \u03bcm for velocity, 0 \u03bcm or central position of the embryo for compression and 3 \u03bcm for ingression, measured from the center). Error bars represent the standard error of the mean. Bottom, fit using the error function (red line) of the time evolution of the velocity from a single embryo (blue dots) used to determine the reference time point (Time\u00a0=\u00a00). (c) Time evolution of the mean velocity and compression rate along the AP axis and nematic order parameter, all taken at fixed positions along the AP axis. Error bars represent the standard error of the mean. In orange is represented the period chosen as stationary flow phase. (d) Mean profiles along the AP axis of the velocities (vx light green and vy yellow), compression rate and nematic order parameters (Q\u00a0= \u2212Qxx in dark blue and Qxy in cyan) during the stationary flow phase. (See Appendix for further explanations.)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Plots of the spatiotemporal correlations between the compression, alignment and ingression data sets taken during the pseudocleavage stationary phase (a) and cytokinesis onset stationary phase (b). Data is restricted to the 30 \u03bcm central region of the embryo.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Example of a simulated isotropic actin meshwork (see Appendix for details). (b) Example of a simulated actin meshwork for which the angle of the starting direction is biased toward vertical (see Appendix). (c) Cumulative distribution function (CDF) used and example of an image and its nematic order map (red lines indicate the preferential orientation inside a template or orientation vector) obtained for different values of the starting parameter B that controls the bias of the filaments orientation. B\u00a0=\u00a00 leads to an isotropic orientation. (d) Variation of the average nematic order parameter obtained for several synthetic meshworks while increasing the vertical bias of the filaments orientation. The saturation is caused by the fact that we here bias only the initial direction of growth.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) An artificial filamentous network is obtained by a random iteration process with controllable parameters in Matlab (see Appendix for more details). (b-d) We chose to maintain a vertical bias in the orientation of the filaments in all the following cases (B\u00a0=\u00a01). Red lines indicate the preferential orientation inside a template or orientation vector. A profile of the mean nematic order parameter along the x-axis as well as the angular distribution are shown in all cases. Note that as we do not measure the directionality of filaments thus we obtain values modulo \u03c0. (b) Impact of the filament density (ranging from 60 to 120 filaments per image) on the nematic order parameter quantification. The profile of nematic order is to first order independent of network density. (c) Impact of the signal to noise ratio. High signal to noise ratio leads to higher values of the nematic order parameter, low signal to noise ratio leads to a poor detection of the direction of the filaments and artificially small values of the nematic order parameter.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (a\u2013c) Average AP profiles of flow velocity (light green) and nematic order parameter (blue) at the time of stationary flow during pseudocleavage of respectively 22 embryos expressing Lifeact:GFP, NMY:RFP, 9 embryos expressing Lifeact:RFP, NMY-2:GFP and 16 embryos expressing Lifeact:mKate2, NMY-2:GFP. Overlaid in red is the velocity profile of worms expressing only labeled NMY-2 (N\u00a0=\u00a05). Error bars represent the standard error of the mean. (d) Images of NMY-2:GFP in the early zygote. Left strain without Lifeact, right strain expressing Lifeact:mKate2. The density, size and dynamics are similar in both strains. Right panel, the average radial autocorrelation coefficient of the myosin intensity over a minute in early embryos gives an average myosin foci size. (e) Localization of the actin bundling protein plastin during pseudocleavage and cytokinesis. Plastin localizes in dense bundles of actin filaments and is particularly abundant in the cytokenetic ring and could act to stabilize actin bundles in these regions. (f) Localization of the actin nucleating agent formin during pseudocleavage and cytokinesis. CYK-1 is present throughout the cell cortex during pseudocleavage, with higher densities in foci regions. It is recruited to the cell equator during cytokinetic ring formation and ingression. Scale bars, 10 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/17807/elife-17807-media3.mp4.jpg)\n\n**Video 3.:** Left panel, cortical NMY-2::GFP, center cortical Lifeact:mKate2 and a zoom is shown in the right panel (min:s).\n\nWe next sought to test if flow-based compression drives actin filament alignment. To this end, we developed tools for the spatiotemporal quantification of compression by flow, of filament orientation, and of cortex ingression distance within the gel both at the onset of pseudocleavage and cytokinesis (see Appendix as well as Figure 2a and Figure 2\u2014figure supplement 1). We find that the flow compression rate along the antero-posterior direction (AP axis or x axis), given by the spatial gradient of the velocity field \u2212\u2202xv\u00a0\u00a0(Figure 2b), increases with time during the very early stages of pseudocleavage. The compression rate peaks in the central region of the embryo, with a maximum of\u00a0~0.4 min\u22121. Notably, this peak is stable for several minutes until pseudocleavage flows cease entirely (Figure 2b). For cytokinesis, we find that the early flow also proceeds in a unidirectional manner from the posterior toward the anterior (Figure 2b). Similar to pseudocleavage, the compression rate increases with time over the very early stages of cytokinesis, with the compression profile peaking at the center of the embryo with a maximum rate of\u00a0~0.7 min\u22121 (Figure 2b). We characterized the average actin filaments orientation by a nematic order tensor Q (Figure 2\u2014figure supplement 1a). This analysis relies on the fact that the intensity of the Fourier transformed image encodes geometric characteristics such as its main orientation pattern (see Appendix). We find that vertical (orthogonal to the direction of flow) alignment appears coincidental in space and time with the local increase of the compression rate (Figure 2b, compare column 2 and 3). Notably, changing the direction of flow also changes the direction of alignment: off-site sperm entry leads to flows along the short axis of the egg (Goldstein et al., 1993) and actin filaments still align in the direction determined by compression (Figure 1\u2014figure supplement 1d, Video 4 and Appendix). Finally, the ingressing furrow forms in the region where filaments are aligned (Figure 2b, column 4). Our quantifications reveal remarkable similarities between the compression rate fields, the pattern of alignment, and the ingression distance between pseudocleavage and cytokinesis (Figure 2b), suggesting common mechanisms. To conclude, actin filament alignment arises at locations of significant compression by flow.\n\n![Video 4.](https://cdn.elifesciences.org/articles/17807/elife-17807-media4.mp4.jpg)\n\n**Video 4.:** Actin filament alignment follows flow and compression, thus transitions from a horizontal to a vertical direction (min:s).\n\nIf flow-based compression aligns actin filaments for forming an ingression, we would expect compression to precede or to be concomitant with alignment and ingression. The 1D crosscorrelations between compression, filament alignment and ingression distance, calculated for the time that flows are essentially stationary (Figure 2b and Figure 2\u2014figure supplement 1), show that for pseudocleavage both compression rate and alignment peak at about the same location, while the ingression field peaks\u00a0~\u00a03 \u00b5m further to the anterior (Figure 2c and Figure 2\u2014figure supplement 2 for the spatiotemporal crosscorrelations). The situation is similar at cytokinesis, except that the compression field peaks furthest to the posterior. We next translated the characteristic distances between peaks in stationary flow to temporal delays between events (see Materials\u00a0and\u00a0methods for further explanation). We find that for pseudocleavage, filament alignment is essentially concomitant with compression, while for cytokinesis compression precedes alignment by 0.40\u00a0\u00b1\u00a00.16 min (Figure 2d). Furthermore, ingression arises approximately 0.5 min after compression for pseudocleavage and 0.9 min after compression for cytokinesis. To conclude, filament alignment appears to rapidly follow compression while ingression arises with a delay.\n\nWe next sought to provide a physical explanation for flow-based alignment (Salbreux et al., 2009). The cell cortex in this and other systems can be thought of as a gel that forms a thin layer underneath the plasma membrane. Recent advances in physical theory show that this gel is active and generates the forces that drive cell shape changes (Salbreux et al., 2009; Gowrishankar, 2012; Kruse et al., 2005; Turlier et al., 2014). We describe the actin cortical layer as a thin film of a nematic gel under shear and compression by flow (Salbreux et al., 2009; Kruse et al., 2005; Prost et al., 2015). In the x-direction, the time evolution of the local nematic order Q depends on advection (first term on the right hand side in Equation 1), compression in gel flow (second term), a process of relaxation to an isotropic configuration possibly\u00a0via turnover (third term), and a tendency of filaments to align with each other over space (last term, see also Figure 3a)(1)\u2202tQ=\u2212v\u2202xQ\u2212\u03b22\u2202xv\u22121\u03c4Q+\u21132\u03c4\u2202x2Q.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig3-v3.jpg)\n\n**Figure 3.:** (a) Schematic representation of flow-based alignment. For full theory refer to Appendix. (b) Average AP profiles of gel flow (light green, smoothened), compression rates (dark green) and nematic order parameter (blue) at the time of stationary flow (Figure 2C) during pseudocleavage (left, N\u00a0=\u00a016) and cytokinesis onset (right, N\u00a0=\u00a032). Error bars represent the standard error of the mean. Dashed red line indicates the respective best-fit theory predictions for the nematic order parameter (blue). (c) Table of the material parameters. See also Figure 3\u2014figure supplement 1 and Table 1, Table 2. (d) Illustration of the cortical tension related to the ingression distance. (e) Outer ingression profiles at the onset of pseudocleavage (brown) and cytokinesis (yellow). The theoretical profiles (thick dashed red lines: active tension depends on alignment and can be anisotropic; thin dashed lines: active tension is isotropic) are determined by simultaneous fitting of both the pseudocleavage and cytokinesis datasets with a single fit parameter (see Appendix) using the myosin density, flow velocity and nematic order parameter fields.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Nematic order parameter profiles obtained when varying independently each of the fitting parameters $\\tau$, $\\beta\\tau$, $\u2113$ away from their the best fit values obtained for cytokinesis. Dashed red line, best fit result ($\\tau$\u00a0=\u00a02.34 min, $\\beta\\tau$\u00a0=\u00a00.654 min, $\u2113$\u00a0=1.69 \u03bcm). For each set of parameters $\\tau$, $\\beta\\tau,\u00a0\u2113$, a fit is performed for the fitting parameters C1 and C2 only (see Appendix). (b) Nematic order parameter profiles obtained when varying the fitting parameter $\\tau\u00a0$\u00a0while keeping $\\beta\\tau$, $\u2113$ fixed and equal to their best-fit values. Appropriate fits to experimental curve are obtained for all values of $\\tau$\u00a0<\u00a00.5 min. For each value of $\\tau$, a fit is performed for the fitting parameters C1 and C2 only.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a)\u00a0Average AP profiles of gel flow (light green), compression rates (dashed dark green), nematic order parameter (blue) and myosin fluorescence (magenta) at the time of stationary flow during pseudocleavage (left, N\u00a0=\u00a016) and cytokinesis onset (right, N\u00a0=\u00a032). Error bars represent the standard error of the mean. Dashed red lines indicate the best-fit theory predictions for the nematic order parameter in absence of active alignment, dashed black lines are the fits obtained while including the myosin-based active alignment, with $\\lambda^{\u2032}\\tau=4.1\u00a010^{\u22128}\\pm0.54$ for pseudocleavage and $\\lambda^{\u2032}\\tau=0.34\\pm\u00a00.45$ for cytokinesis. (b) Contribution of the individual terms from Equation 3 in the main text (red: $\u2212\\frac{\\beta}{2}\\tau\u2202_{x}v$, green: $\u2212\\tauv\u2202_{x}Q$, blue: $\u2113^{2}\u00a0\\partial_{x}^{2}Q$, magenta: $\\lambda^{\u2032}\\tau\u00a0c(x)/c_{0}Q$). Note that myosin-based active alignment (magenta) is insignificant for pseudocleavage and is low for cytokinesis compared to compression-based alignment (red). The theoretical alignment profile (sum of all the terms shown in black) overlays the experimental data points (dots).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Top, a representative embryo is used to visualize the time course of ingression. Bottom, Kymograph obtained from the region specified by the dashed white box in the upper pannel. The pseudocleavage and cytokinesis ingressions are visible. Yellow arrow indicates the inner ingression distance during polarizing flow phase, magenta dashed line indicates the ingressing membrane and blue arrow indicates the outer ingression. Red doted lines represent the position of the eggshell. Scale bar 10 \u03bcm. (b) Top, illustration of the cortical tension during ingression. Bottom, outer ingression profiles (grey) averaged over the time periods indicated by the thin horizontal white lines in (a, bottom) during pseudocleavage (left) and cytokinesis (right). The theoretical profiles (dashed red lines) are determined by simultaneous fitting of both the pseudocleavage and cytokinesis datasets with a single fit parameter (see Appendix) using the myosin density (magenta), flow velocity (green) and nematic order parameter (blue) fields. (c) and (d) Illustration of the coordinate and reference systems used for this theoretical description. (e) Comparison of the theoretically obtained profile of the outer ingression without the anisotropic stress induced by nematic order (dashed red, obtained by imposing p3\u00a0=\u00a00) during pseudocleavage and cytokinesis phases with the experimental data (black).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig3-figsupp4-v3.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Left column, plots of the cell shape (mean radius for all embryos during the stationary flow phase and eggshell reference) for pseudocleavage (a) and cytokinesis (b). Error bars, the standard error of the mean. Right column, ingression distance for several embryos and mean value (cyan) during the stationary phase of pseudocleavage and cytokinesis.\n\nThe characteristic time for relaxation to an isotropic state via turnover is determined by $\\tau$, while $\\beta$ is a dimensionless coefficient that describes how local compression $\u2212\\partial_{x}v$ impacts nematic ordering. Finally, $\u2113$ is a length scale that determines the distance over which actin filaments tend to point in the same direction (Salbreux et al., 2009). In our experiments, we observe a stationary phase (Figure 2b), and the profile of nematic order Q at steady-state is given by\n\n$$\nQ=\u2212\\tauv\u2202_{x}Q\u2212\\frac{\\beta}{2}\\tau\u2202_{x}v+\u2113^{2}\u00a0\u2202_{x}^{2}Q.\n$$\n\nWe next determined the theoretical alignment field from the experimental flow field v and compression field \u2202xv. We used nonlinear least-square fitting to evaluate parameter values for which the theoretical alignment profile best matched the experimental one. There are five unknowns (three parameters that characterize emergent material properties, \u03c4, \u2113, and \u03b2\u00a0\u03c4, as well as two boundary values of nematic order) but three spatial fields, hence the fitting procedure is significantly constrained and the best fit parameters are uniquely defined in most cases (see Appendix and Figure 3\u2014figure supplement 1). For cytokinesis the calculated alignment profile (dashed red lines in Figure 3b) best matches the experimentally measured one for\u00a0\u03b2\u00a0\u03c4\u00a0=0.64 (0.548, 0.713) min (unless otherwise noted we indicate the median value together with the standard 68% confidence interval of the distribution of the bootstrap data, see Appendix),\u00a0\u00a0\u03c4\u00a0=\u00a02.3 (1.89, 2.71) min and\u00a0\u2113\u00a0=\u00a01.7 (1.37, 2.44) \u03bcm (Table 1 and Table 2). For pseudocleavage, \u03b2\u00a0\u03c4\u00a0\u00a0was similar (0.6 (0.577, 0.7) min), \u03c4 was determined to be smaller than 0.5 min, and\u00a0\u2113\u00a0=\u00a04.7 (3.12, 6.09) \u03bcm larger (Table 1 and Table 2). We note that in both cases, we obtain good agreement between the theoretical and experimental alignment field, allowing us to conclude that compressive gel flow can account for alignment. Further, we observe a small \u03c4 for pseudocleavage and a larger \u03c4 for cytokinesis, which is consistent with the observation that alignment appears concomitant with compression in pseudocleavage but arises with a short delay during cytokinesis (Figure 2d). We speculate that the changes in physical parameters of the actomyosin cortical layer between pseudocleavage and cytokinesis (higher \u03c4 and smaller \u2113) reflect the fact that the cell forms a strong and more pronounced ring of aligned filaments during cytokinesis. To conclude, our results are consistent with a scenario in which actin filament alignment arises in a disordered network through compression by flow (White and Borisy, 1983; Salbreux et al., 2009; Turlier et al., 2014).\n\n**Table 1.**\n Best fit gel material parameters, bootstrapping. The median values together with the standard 68% confidence bounds of the distribution of the bootstrap data are given.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Pseudocleavage</th>\n      <th>Cytokinesis</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>non RNAi</td>\n      <td>non RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n      <td>2.26 (1.89, 2.71)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>0.626 (0.577, 0.7)</td>\n      <td>0.646 (0.548, 0.713)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>4.72 (3.12, 6.09)</td>\n      <td>1.74 (1.37, 2.44)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>nop-1 RNAi</td>\n      <td>nop-1 RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>0.771 (0.694, 2.75)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>n.d. *</td>\n      <td>2.67 (1.7, 11.5)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ani-1 RNAi</td>\n      <td>ani-1 RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n      <td>0.989 (0.555, 1.79)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>1.45 (0.969, 18) \u2021</td>\n      <td>0.724 (0.636, 0.929)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>12.3 (6.39, 58.4) \u2021</td>\n      <td>3.38 (2.97, 6.16)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>mlc-4  (5\u20137 hr) RNAi</td>\n      <td>mlc-4 (5\u20137 hr) RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n      <td>4.76 (3.67, 6.6)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>0.467 (0.451, 0.503)</td>\n      <td>0.637 (0.567, 0.768)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>2.75 (2.38, 4.1)</td>\n      <td>6.58 (5.31, 6.85)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>mlc-4 (7\u20139 hr) RNAi</td>\n      <td>mlc-4 (7\u20139 hr) RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>0.916 (0.82, 1.04)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>n.d. *</td>\n      <td>3.12 (2.49, 4.18)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*n.d. denotes parameters which could not be determined,\u2020<\u00a00.5\u00a0(n.d.) denotes parameters which could not be determined, but could be determined to be below 0.5 (see Figure 3\u2014figure supplement 1b),\u2021denotes values that could be determined but that were not well constrained._\n\n**Table 2.**\n Best fit gel material parameters, no bootstrapping. The mean values together with its 95% confidence bounds are given.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Pseudocleavage</th>\n      <th>Cytokinesis</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>non RNAi</td>\n      <td>non RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n      <td>2.34 (1.74, 3.14)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>0.59 (0.513, 0.806)</td>\n      <td>0.652 (0.541, 0.764)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>5.38 (3.27, 8.85)</td>\n      <td>1.69 (1.04, 2.75)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>nop-1 RNAi</td>\n      <td>nop-1 RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>0.738 (0.0.614, 0.862)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>n.d. *</td>\n      <td>1.79 (0.64, 5.03)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>ani-1 RNAi</td>\n      <td>ani-1 RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n      <td>1.01 (0.989, 1.03)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>1.31 (0.428, 2.19)</td>\n      <td>0.74 (0.588, 0.892)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>10.4 (4.91, 21.9) \u2021</td>\n      <td>4.08 (2.68, 6.2)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>mlc-4  (5\u20137 hr) RNAi</td>\n      <td>mlc-4 (5\u20137 hr) RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>&lt; 0.5 (n.d.) \u2020**</td>\n      <td>4.37 (3.08, 6.21)</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>0.454 (0.437, 0.47)</td>\n      <td>0.614 (0.501, 0.727)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>2.24 (1.87, 2.67)</td>\n      <td>5.81 (5.02, 6.72)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>mlc-4 (7\u20139 hr) RNAi</td>\n      <td>mlc-4  (7\u20139 hr) RNAi</td>\n    </tr>\n    <tr>\n      <td>\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>&lt; 0.5 (n.d.) \u2020</td>\n    </tr>\n    <tr>\n      <td>\u03b2\u00a0\u03c4, min</td>\n      <td>n.d. *</td>\n      <td>0.97 (0.931, 1.01)</td>\n    </tr>\n    <tr>\n      <td>\u2113, \u03bcm</td>\n      <td>n.d. *</td>\n      <td>2.98 (2.88, 3.08)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*n.d. denotes parameters which could not be determined,\u2020<\u00a00.5(n.d.) denotes parameters which could not be determined, but could be determined to be below 0.5 (see Figure 3\u2014figure supplement 1b),\u2021denotes values that could be determined but that were not well constrained. Caption for Videos 1Videos 1 to 7_\n\nUntil now, we have not considered processes of myosin-based active alignment in our theory (Vavylonis et al., 2008). This simplification is probably appropriate for pseudocleavage, but this is less clear for cytokinesis given that there is a clear band of myosin enrichment at the equator when the cell divides (Figure 1c,d). We next consider active alignment by myosin, and describe the cortical layer as a thin film of an active nematic gel. For stationary flows the profile of nematic order $Q$ is now given by\n\n$$\nQ=\u2212\\tauv\u2202_{x}Q\u2212\\frac{\\beta}{2}\\tau\u2202_{x}v+\u2113^{2}\u00a0\u2202_{x}^{2}Q+\\lambdaQ,\n$$\n\nwhere the right-most term describes active alignment by myosin molecular motors, with $\\lambda$ an alignment parameter dependent on the local myosin concentration. In our modified fitting procedure, we now evaluate the respective contributions of myosin-based active and flow-based passive alignment to the stationary Q profile, under the assumption that $\\lambda$ is proportional to local myosin concentration. We find that considering active alignment does not increase the overall agreement between calculated and measured alignment profiles for both pseudocleavage and cytokinesis (Figure 3\u2014figure supplement 2). Notably, the contribution of active alignment to pseudocleavage is insignificant, while active alignment contributes to enhancing compression-induced alignment during cytokinesis (Figure 3\u2014figure supplement 2b; see Appendix), albeit to a small degree. We conclude that compression by flow and not myosin-based active alignment is the driving force of ring formation in both pseudocleavage and cytokinesis.\n\nA key prediction from our model is that reducing flow speeds and compression rates should give rise to less filament alignment and a possible inhibition of pseudocleavage furrow formation. To test this prediction, we performed weak-perturbation RNAi experiments (Naganathan et al., 2014) of the regulatory myosin light chain of non-muscle myosin (mlc-4(RNAi) (Craig et al., 1983) to mildly reduce actomyosin flow speeds without significant changes in overall actomyosin organization (Figure 4\u2014figure supplement 1). Short feeding times (5\u20137 hr) lead to a small reduction in gel flow and compression rates (Figure 4a), but actin filaments still aligned in the central region and the pseudocleavage furrow still formed and ingressed. Consistent with our hypothesis, longer feeding times (7\u20139 hr) lead to a complete abolishment of cortical flow and a loss of both actin alignment and pseudocleavage furrow (Figure 4b). Actomyosin foci are not required for compression-based alignment since anillin- depleted embryos (ani-1(RNAi), 24 hr) still show significant alignment under compression in the absence of these dense foci (Figure 4c) (Maddox et al., 2005; Piekny and Maddox, 2010; Tse et al., 2011). Reduced flow speeds and compression rates can also account for the absence of alignment and pseudocleavage in nop-1(RNAi) embryos, in which RhoA-dependent processes are affected and pseudocleavage formation abrogated (Figure 4d, Figure 4\u2014figure supplement 1 and 2) (Tse et al., 2012; Rose et al., 1995; Zhang and Glotzer, 2015). Overall, these experiments lead us to conclude that reducing gel flow and compression rates affects alignment in a manner that is consistent with Equation 2. Finally, a complete loss of flow and compression abolishes pseudocleavage entirely (Figure 4b;d and Figure 4\u2014figure supplement 1). Taken together, our results suggest that the pseudocleavage furrow arises as a by-product of compressive flows, mechanically aligning actin filaments into a ring even in the absence of localized RhoA activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig4-v3.jpg)\n\n**Figure 4.:** (a-d) Average AP profiles of gel flow (light green, smoothened), compression rates (dark green) and nematic order parameter (blue) at the time of stationary flow during pseudocleavage onset for mlc-4 5\u20137 hr and 7\u20139 hr, nop-1 and ani-1 RNAi. Error bars represent the standard error of the mean (N\u00a0=\u00a017, 14, 10, 22 for a-d,\u00a0respectively). Dashed red line indicate the respective best-fit theory predictions for the nematic order parameter (blue). For ani-1 and mlc-4 (5\u20137 hr), $\\tau$ is small and is determined to be smaller than 0.5 min. For nop-1 and mlc-4 (7\u20139 hr), theory profiles were generated using the parameters obtained for the unperturbed non-RNAi pseudocleavage, since insufficient compression rates did not constrain the physical parameters. Scale bar, 10 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a-d) Actin organization and myosin distribution under nop-1(RNAi), ani-1(RNAi) and mlc-4(RNAi). Inserts with fluorescence intensity profiles during pseudocleavage and cytokinesis onset are overlaid next to the corresponding images (actin in blue, myosin in magenta). Note that ANI-1 depleted embryos had more elongated and thin anterior halves, with no localized dense actin ring like structure and no clear and stable central furrow with membrane overlapping. Also note that the asymmetry in the distribution of actin (usually denser in the anterior half of the embryo) during cytokinesis was reduced for both nop-1 and long mlc-4(RNAi). Right, combined images and zoom (green Lifeact, red NMY-2). Scale bar, 10 \u03bcm (full images); 5 \u03bcm (zoom).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a-d) Results of nop-1(RNAi), ani-1(RNAi) and mlc-4(RNAi). Average AP profiles of gel flow (light green, smoothened), compression rates (dark green) and nematic order parameter (blue) at the time of stationary flow during cytokinesis onset. Error bars represent the standard error of the mean (for nop-1, ani-1, mlc-4 5\u20137 hr and 7\u20139 hr, N\u00a0=\u00a09, 18, 9, 13, respectively). Dashed red line indicates the respective best-fit theory predictions for the nematic order parameter (blue). For cytokinesis mlc-4 (7\u20139 hr) tau is small and is determined to be smaller than 0.5 min. (e-f) Overlay of the different profiles at pseudocleavage and cytokinesis onset, non-RNAi is shown in blue and compression rates in dashed lines. Note that the level of outer ingression was similar to the non-RNAi case for ani-1(RNAi) pseudocleavage, but with improper location and no membrane overlapping, thus no full pseudocleavage furrowing was obtained but a remaining initial anterior ingression was achieved in the presence of some filaments alignment.\n\nIn this context we wondered if the cortex is specifically modified to favor ring formation in cytokinesis. We used our fitting procedure to determine the parameters that characterize emergent material properties of the cortex under mlc-4(RNAi). Notably, we observe that 7\u20139 hr of mlc-4(RNAi) leads to a reduction of the alignment relaxation time scale $\\tau$ during cytokinesis. The value obtained is similar to the alignment relaxation time scale during pseudocleavage under non-RNAi conditions (Table 1 and Table 2), leading us to speculate that an increase in myosin activity via Rho signaling is responsible for the observed increase of the characteristic relaxation time $\\tau$ in cytokinesis. Importantly, increasing $\\tau$ allows the cell to form a pronounced ring of aligned filaments by compressive cortical flow during cytokinesis, as predicted by theory (Figure 3\u2014figure supplement 1).\n\nFinally, we sought to find support from theory that aligned filaments in the equatorial region drive anisotropic stress generation (Mayer et al., 2010) to form an ingression (White and Borisy, 1983; Salbreux et al., 2009; Turlier et al., 2014). By use of a theory that connects anisotropic active stress generation in the active nematic gel to changes in cell shape (see Appendix and Figure 3d) we show that we cannot appropriately account for the observed ingression profiles unless we consider anisotropic active stress generation in an aligned gel (Figure 3e, Figure 3\u2014figure supplement 3). This suggests that anisotropic active stress generation in a network of aligned actin filaments is important for forming an ingression.\n\nTo conclude, we find that compression by flow drives actomyosin ring formation in both pseudocleavage and cytokinesis, as originally proposed by White and Borisy (White and Borisy, 1983) (Figure 5). For this, we provide a general framework for determining emergent material parameters of the actomyosin gel. This characterizes flow-alignment coupling and allows for capturing essential aspects of the mechanics of furrow generation. Our analysis of the pseudocleavage ingression in C. elegans demonstrates that constricting rings can form in the absence of equatorial RhoA activation. This reveals that cortical flow functions as a central organizer of network architecture, mechanically aligning filaments to form a constricting furrow in the equatorial region without a localized increase of actin nucleation (Figure 2\u2014figure supplement 5,f) and myosin contractility (Figure 1b-d). Finally, it will be interesting to investigate if a cortex that is aligned by compressive flow favors the recruitment of specific actin binding proteins such as bundling or motor proteins (Robinson et al., 2002), comprising an interesting mechanism of positive feedback for stabilizing and enhancing the ring during cytokinesis. Our work highlights that determining emergent material properties of actomyosin is important for understanding cytokinesis, and a challenge for the future is to link emergent material properties at the larger scale with molecular mechanisms (Mendes Pinto et al., 2013; Eggert et al., 2006).\n\n## Materials\u00a0and\u00a0methods\n\n### C. elegans strains\n\nExisting reagents did not allow for detailed and long-term imaging of actin filaments in embryos, which is critical for reliably quantifying their orientation. Hence, we generated a new Lifeact transgenetic line with enhanced actin filament labeling (SWG001). A codon optimized for C. elegans far-red fluorophore, mKate2 kindly shared by Henrik Bringman (Redemann et al., 2011) (26 kDa, 588/633 nm) was added to the actin probe with a linker (66 bp) and cloned into MOSCI vector containing unc119 rescue gene (Hyman Lab) under the control of the mex-5 promoter. Stable integration was obtained by bombardment of this plasmid in DP38 strain. This strain was then backcrossed with N2. In this line, we observed within the cortical plane bright actin filament labeling with a high signal-to-noise ratio and little photobleaching. Importantly, overall cortical organization and flow dynamics appeared to not be affected by this reagent, foci lifetime, spacing, cortical flow velocities were similar to previous measurement with other fluorescent lines. A dual colored transgenic line was obtained in order to image simultaneously actin and myosin dynamics by crossing Lifeact::mKate2 strain with LP133 (NMY-2::GFP obtained by CRISPR (Dickinson et al., 2013), SWG007). The RhoA biosensor used for Figure 1 was developed by the Glotzer lab (GFP::AHPH, C. elegans strain MG617, Tse et al., 2012). This sensor consists of GFP fused to the C-terminal portion of C. elegans anillin, which contain its conserved region (AH) and pleckstrin homology (PH) domain. It lacks the N-terminal myosin and actin-binding domains but retains its RhoA-binding domain. The strains expressing CYK-1:GFP (SWG004) and PLST-1:GFP (SWG005) were obtained by the insertion of a GFP tag at the endogenous locus in their C-terminal region using CRISPR according to Dickinson et al (Dickinson et al., 2013). C. elegans worms were cultured on OP50-seeeded NGM agar plates as described (Brenner, 1974).\n\n### Microscopy\n\nL4 mothers were maintained overnight at 20\u00b0C before dissection in M9 buffer. For imaging, one-cell embryos were mounted on 2% agar pads, thereby slightly compressed to increase the cortical surface visible in a confocal plane. Images were acquired with spinning disk confocal microscope (Zeiss C-Apochromat, 63X/1.2 NA or 100X/1.42 NA, Yokogawa CSU-X1 scan head and Hamamatsu Orca-Flash4.0 camera) every 2 s on two or three different planes (one or two at the bottom for a cortical section, and one 12 \u00b5m above for a medial section of the embryo) . For 3D acquisitions, Z-stacks were acquired every 0.2 \u03bcm. We assume the shape to be rotationally symmetrical to the longer axis, thus the outline of one medial section of the embryo reflects faithfully cell shape changes and ingression distance.\n\n### Gene silencing by RNA interference\n\nRNAi experiments were performed by feeding (Timmons et al., 2001). L4 worms were grown at 20\u00b0C on feeding plate (NGM agar containing 1 mM isopropyl-\u03b2-D-thiogalactoside and 50 \u03bcg ml\u22121 ampicillin) for the required number of hours before imaging.\n\n### Correlation\n\nSpatiotemporal correlation functions were calculated for all time points during the stationary period, in the 30 \u03bcm central region of the embryo. The plot of the spatial correlation only (1D correlation function) is shown in Figure 2c between the compression, alignment and ingression data sets. Peak value positions are obtained by a Gaussian fitting procedure and allow the calculation of positional differences between the different data sets. Because the flow field appears stationary, we expect this distance between peaks of compression, alignment and ingression to arise due to temporal delays between these events in the reference frame co-moving with the cortical flows. We thus translated the characteristic distances between stationary peaks to temporal delays using the average flow velocity in the \u221210 \u03bcm to 0 central region (6.16\u00a0\u00b1\u00a01.23 \u00b5m/min for pseudocleavage and 4.01\u00a0\u00b1\u00a01.92 \u00b5m/min for cytokinesis) (Figure 2d).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17807/elife-17807-fig5-v3.jpg)\n\n**Figure 5.:** Schematic illustration of flows, cytoskeletal organization and cell shape changes during pseudocleavage and at the onset of cytokinesis.\n\n![Video 5.](https://cdn.elifesciences.org/articles/17807/elife-17807-media5.mp4.jpg)\n\n**Video 5.:** Cortical and medial planes of an embryo expressing both Lifeact::mKate2 and endogenous NMY-2::GFP. Left panel, medial plane Lifeact:mKate2, center, cortical NMY-2::GFP, right panel, cortical Lifeact:mKate2 (min:s).\n\n![Video 6.](https://cdn.elifesciences.org/articles/17807/elife-17807-media6.mp4.jpg)\n\n**Video 6.:** Cortical and medial planes of an embryo expressing both Lifeact::mKate2 and endogenous NMY-2::GFP. Left panel, medial plane Lifeact:mKate2, center, cortical NMY-2::GFP, right panel, cortical Lifeact:mKate2 (min:s).\n\n![Video 7.](https://cdn.elifesciences.org/articles/17807/elife-17807-media7.mp4.jpg)\n\n**Video 7.:** Cortical and medial planes of an embryo expressing both Lifeact::mKate2 and endogenous NMY-2::GFP. Left panel, medial plane Lifeact:mKate2, center, cortical NMY-2::GFP, right panel, cortical Lifeact:mKate2 (min:s).\n",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a4408816-c62d-4061-8fea-427dfdab92b4",
+      "submission_id": "2aeb8292-d723-46f2-b322-129482501863",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pekka Lappalainen, University of Helsinki , Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17807.030](https://doi.org/10.7554/eLife.17807.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Cortical Flow Aligns Actin Filaments to Form a Cytokinetic Ingression\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom, Pekka Lappalainen, is a member of our Board of Reviewing Editors. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAll three reviewers found the topic of the study highly interesting, and stated that combining experiments and theory is certainly valuable for understanding the mechanisms underlying the formation of pseudocleavage furrow during interphase and a cytokinetic furrow during cell division.\n\nHowever, as you will see from their comments below, the reviewers felt that the main conclusions of the study are not strongly supported by the experimental data presented in the manuscript. Especially reviewer #2 listed a number of weaknesses in the experimental design and interpretations of the data from RNAi and cell biological analyses. This, together with a lack of considering alternative theories, weakens the overall conclusions of the study. Therefore, an extensive amount of additional work (such as additional, more specific RNAi experiments and studying the possible contribution of a local zone of RhoA activation in this process) would be required to convincingly demonstrate that aligning actin filaments through cortical flow indeed drives the formation of contractile ring.\n\nReviewer #1:\n\nThe mechanism by which contractile actomyosin ring is formed for cytokinesis in metazoan cells is not fully understood, and for example whether the ring is generated through converging flows at the equatorial region or through a 'search-and-capture' mechanism is unknown. Here, Reymann et al. approached this question by studying the one cell embryo of C. elegans, where two constricting ingressions, a pseudocleavage furrow during interphase and cytokinetic furrow during cell division, are formed. Studies using experiments and theory provide evidence that aligning actin filament bundles through cortical flow drives the formation of ingression during both pseudocleavage and cytokinesis.\n\nThis work provides interesting new information concerning the mechanisms of cytokinesis in metazoan cells, and majority of the experiments are of good technical quality. However, there are some points that should be addressed to further strengthen the study. Furthermore, this manuscript was not particularly reader friendly and thus the authors should rewrite the text and figure legends to make the manuscript more accessible for a general reader.\n\n1) My biggest concern is the rationale of the RNAi studies presented in Figure 4. The authors conclude form the phenotypes of nop1, ani1 and mlc-4 knockdown cells that decreased compression rates (but not the modification of the actomyosin gel organization) are responsible for the lack of pseudocleavage in nop1 RNAi cells. However, because NOP-1 is an activator of RhoA, and is thus likely to affect myosin II activity through myosin light chain phosphorylation, both nop1 and mlc-4 depletions should have a similar effect on myosin II activity and organization of the 'acomyosin gel', which does not seem to be the case. This should be examined/clarified by additional experiments or the rationale of the experiment should be more clearly explained in the text.\n\n2) The main difference between nop1 and mlc-4 RNAi cells (based on Figure 4) is the lack of intense actin filament bundles in the absence of NOP-1. Because NOP-1 is an activator of RhoA it is likely that, in addition to defects in myosin II light chain phosphorylation, the dynamics of actin filaments in nop1 RNAi cells are more rapid as compared to control or mlc-4 RNAi cells (due to effects of RhoA on cofilin activity). Would it thus be possible that the lack of proper actin bundles and myosin foci in nop1 RNAi cells is due to rapid actin filament turnover and consequent defects in actin filament cross-linking?\n\n3) From Figure 1A and Video 2 it seems that myosin II forms much larger foci before pseudocleavage furrow formation than before the cleavage furrow formation. Is this indeed the case in all cells? What is the reason for this, and can this phenomenon contribute to differences between these two ingressions?\n\nReviewer #2:\n\nThis manuscript combines experimental and computational approaches to investigate the mechanism of cleavage furrow ingression. In particular it seeks to evaluate the contribution that cortical flow based alignment contributes to cleavage furrow ingression. The authors conclude that filament alignment through flow is a highly generalized mechanism for cortical reorganization (Abstract) that is sufficient to account for furrow ingression. This strong conclusion is not well supported experimentally.\n\nThe authors examine whether cortical flow driven alignment or whether the SCPR model developed in S. pombe is responsible for cytokinetic ingression. However, they do not examine whether these are the only two possible mechanisms nor do they provide a rationale for focusing exclusively on these two mechanisms. Notably, they do not examine whether local RhoA activation could provide an alternative mechanism, despite the fact that there is copious evidence that RhoA can be activated locally. This local activation could provide an additional mechanism, indeed it appears to be the evolutionarily conserved mechanism in metazoa.\n\nOverall, the manuscript is based predominantly on theory that is substantiated \u2013 in part \u2013 by experimental data. There are several major weaknesses. First, the theory is not described in a manner that is accessible to scientists outside of the biophysical modeling field. Second, the experimental perturbations are not exhaustive nor diagnostic. Thus, at least for a cell biological audience, the basis for the strong conclusions are not clearly articulated. Third, the authors fail to properly account for the knowledge concerning the perturbations used (see points 2, 3 below) thus weakening the overall conclusions. Fourth, the authors do not consider all reasonable alternative theories. To reiterate, the authors appear explore whether cortical flow induced filaments explain all furrowing behavior in the C. elegans embryo. There is extensive prior evidence that cortical flows exist in the early embryo (8509454, 15363415) and previous evidence demonstrating that these flows can contribute to filament alignment (8509454, 22918944). Thus it is not a novel insight that cortical flows can contribute to alignment and furrowing. However, the stronger statement, that furrowing is inextricably linked to cortical flows \u2013 which would be novel \u2013 is not convincingly tested.\n\nDue to the role of myosin in promoting cell polarization, the C. elegans embryo cortex has extensive networks of cortical myosin during cytokinesis. For example, NOP-1 directed RhoA activation induces abundant cortical myosin during anaphase (as well as during polarization). In addition, CDC-42-dependent myosin accumulation results in cortical myosin that persists into anaphase and temporally overlaps with cytokinesis (PMID 19923324). However, furrows can form in the absence of such pools of actin and myosin. For example, in embryos with posteriorly localized spindles a posterior furrow forms in the absence of a broad zone of actomyosin (the cortical actomyosin is largely concentrated in the anterior). Moreover, local, centralspindlin-dependent induction of RhoA (PMID 22918944) can generate furrow directed flows of these populations of actomyosin. Thus, the authors have limited their analysis to situations with extensive cortical myosin and that would be expected to flow towards a local zone of RhoA activation. However, the authors do not explore the contribution that a local zone of RhoA activation would make to furrowing. If embryos do furrow in the absence of such flows, then the conclusion that flows are critical for furrow formation would be incorrect.\n\nReviewer #3:\n\nActomyosin cortex is reorganized during cytokinesis to form a contractile cytokinetic furrow. Using a combination of high-end imaging and modeling, Reymann et al. explore cortical actomyosin dynamics during furrow formation in a single-celled C. elegans embryo. They make use of two consecutive events occurring post-fertilization, pseudocleavage and cytokinesis proper. The authors propose that active cortical flows align actin filaments to help form cortical ingression. This work is related to a previous theoretical study by one of the co-authors that suggested that the flow could be sufficient to reorient actin filaments tangentially. The authors further propose that material properties of the actomyosin cortex are different during pseudocleavage and cytokinesis. The imaging data is generally of high quality and the theory is interesting. The story is really about pseudocleavage rather than cytokinesis but I don't think that this makes it potentially less interesting. With the caveat that actin biophysics is not my area of research I do not have issues with the central premise of the work. Having said that, I feel that the authors occasionally hype-up the novelty of the story and also sometimes over-interpret their results. I will give a few examples below. It is possible that some of the issues could be addressed with re-writing, but others need additional experiments.\n\nFrom the graphs and images shown in Figure 4, it looks like flow velocity, compression rate and even the overall architecture of the cortical actomyosin are comparable in nop-1 and ani-1 embryos. Yet filaments align in ani-1 cells. Why is that? I wonder if probing cortical tension with laser ablation might give insights into differences in cortical properties between these conditions.\n\nRelated to the previous point, it is now clear why the authors summarize their data differently in Figure 4E for the two RNAi conditions \u2013 e.g. why polarizing flow is represented as normal in anillin mutant but defective in nop-1? The graphs in Figure 4A and 4B show similar values. Similarly, why pseudocleavage ingression is shown as partially flawed in ani-1, while there is nothing obviously wrong with ingression in Figure 4B? This entire panel in Figure 4 needs a wild type control to make comparisons easier.\n\nIt would be useful if the authors extended their analyses to other abnormal situations, in particular looking into conditions that directly affect actin filaments rather than myosin function (e.g. actin RNAi embryos that fail pseudocleavage but not cytokinesis, or cofilin).\n\nIt is not clear to me why the proposed model does not consider active filament alignment through motor activity. There is indeed no myosin enrichment at the site of furrowing in pseudocleavage but the myosin is still present there and presumably its activity could be regulated.\n\nThe cortical actomyosin is clearly different in nop-1 or ani-1 embryos \u2013 but what does this more homogeneous network mean in terms of cortical properties? Is tension more evenly distributed?\n\nDo filaments align during initial cortical contractions prior to pseudocleavage?\n\nNow, a few examples of what I mean by somewhat misleading statements:\n\nThe Abstract states that it is \"unknown\" how cortex \"reorganizes itself to generate the contractile ring\" but surely there is a lot of knowledge in the field about this process.\n\nIn Introduction, the authors posit that two distinct mechanisms can explain metazoan ring formation and propose to sort out which one is correct. Yet, one of these hypotheses was suggested for fission yeast, and even then it remains a hypothesis, with other groups demonstrating that rings can be assembled in the absence of cortical nodes required for search-and-capture mechanism to function. On the other hand, there is a lot of evidence of converging cortical flows during cytokinesis and actin filament alignment in metazoan furrows.\n\nRelated to Figure 4B, the title is misleading \u2013 anillin is not the only bundler and so the authors can't say \"Actin bundling is dispensable for actin alignment\". Related to Figure 4A, perhaps the authors could think of a better heading for nop-1 chapter \u2013 that fact that nop-1 is required for pseudocleavage has been known for 20 years.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Cortical flow aligns actin filaments to form a furrow\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom, Pekka Lappalainen (Reviewer #1), is a member of our Board of Reviewing Editors. Because two of the original reviewers declined to review the new submission, your manuscript was evaluated by the Reviewing Editor and two new external reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThrough the decades of research, many different models have been proposed to explain the formation of contractile forces at the cell division site. Here, Reymann et al. approached this question by studying the pseudocleavage furrow and cytokinetic furrow formation in the one cell embryo of C. elegans. This work provides evidence that cortical actin flows converging on the cell equator may compress and mechanically align the filaments to drive furrow formation. The authors developed an actin marker that allows imaging of actin bundles at unprecedented resolution, and applied sophisticated image analysis methods combined with theoretical model to test the contributions of possible mechanisms. Experimental data are well described by the theoretical model, and the predictions of the model were tested by mutants affecting flow patterns.\n\nIn general, this manuscript makes an important advance into our understanding of cytokinesis, and provides strong evidence that actin flows are critical in aligning the filaments at the division plane. However, there are few issues that should be thoroughly addressed to further strengthen the study.\n\nEssential revisions:\n\n1) The images of cortical actin filaments are striking, and were taken by a new LifeAct-Kate marker for F-actin. There is, however, some concern that the LifeAct probe may be stabilizing filaments/bundles, which can occur upon high levels of expression (Courtemanche et al., 2016 NCB); in the worst case scenario, the over-stabilization of filaments could bias the formation of the ring from pre-assembled filament bundles. The authors state in the methods that \"overall cortical organization and flow dynamics appeared to not be affected by this reagent, foci lifetime, spacing, cortical flow velocities were similar to previous measurement with other fluorescent lines.\" These data should be shown as 'Supplemental information'. What are these other fluorescent markers? Assays that examine the dynamic turnover of filaments should be included. The dynamic behavior of actin should not only be compared with other LifeAct strains, but with other markers that do not directly affect actin dynamics.\n\n2) In Figure 1, the authors used an 'active RhoA biosensor' to examine RhoA activity during pseudocleavage and cytokinesis. Which RhoA biosensor was used here? The details of this experiment should be described in 'Results' and 'Methods' sections. Furthermore, the active RhoA and myosin II appear to display very similar punctuate distributions with each other during pseudocleavage (Figure 1A and B). The authors should thus examine whether the active RhoA and myosin II co-localize in these cells. Furthermore, they should confirm that the 'active RhoA biosensor' does not just simply detect phosphorylated myosin II in these cells.\n\n3) One fairly important point that should be discussed in more detail, is connected to the method used to extract the nematic order parameter of the actin filaments within the cortex. Are the authors sure that they are measuring meaningful order parameters? It seems to me that once the filament concentration becomes too high (the filaments are then closer the optical resolution) the anisotropy in the local Fourier transform will start to wash away, leading to measurements that do not indicate the true orientational order within the cellular cortex. Because of the quantitative nature of the study, it is essential that their measurements of nematic order are quantitative. Therefore, this method needs to be justified, perhaps by applying it to a simpler system with a known order parameter.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Cortical flow aligns actin filaments to form a furrow\" for further consideration at eLife. Your article has been favorably evaluated by Naama Barkai (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors..\n\nThe manuscript has been improved but there are some minor issues concerning one supplemental figure (see comments by reviewer #1 below) that need to be addressed before acceptance.\n\nReviewer #1:\n\nThe authors have now satisfactorily addressed the main concerns. However, the new data presented in Figure 2\u2014figure supplement 5 should be properly discussed in the 'Results' and the constructs/strains used in these experiments (e.g. the worms expressing the PLST-1:GFP) should be described in the 'Methods' section.\n\nReviewer #2:\n\nThe reviewers have done a very good job addressing the major concerns on the manuscript. As described in their letter, they have added important data to the manuscript and clarifications in the text. I think that the manuscript is now acceptable for publication.\n\nReviewer #3:\n\nThe authors have thoroughly addressed all my concerns regarding the method used to measure the nematic order parameter. I believe that this interesting manuscript is suitable for publication in its current form.\n",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83978c67-b1c1-4682-80b8-d210e5a5f3c5",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C1",
+      "claim": "Cytokinesis in eukaryotic cells is often accompanied by actomyosin cortical flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokinesis in eukaryotic cells is often accompanied by actomyosin cortical flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about cytokinesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "bf2f1a4c-e98f-4c82-a613-2bb7d79a1245",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C2",
+      "claim": "Over 30 years ago, Borisy and White proposed that cortical flow converging upon the cell equator compresses the actomyosin network to mechanically align actin filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 30 years ago, Borisy and White proposed that cortical flow converging upon the cell equator compresses the actomyosin network to mechanically align actin filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a historical proposal by Borisy and White, citing their work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "2518b093-6b8c-43a9-887d-39cb962f4a1c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C3",
+      "claim": "Actin filaments also align via search-and-capture.",
+      "claim_type": "EXPLICIT",
+      "source": "However, actin filaments also align via search-and-capture, and to what extent compression by flow or active alignment drive furrow formation remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an alternative mechanism for actin filament alignment, drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "1abe7da0-b6d1-45d8-943a-47cd413c16e1",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C4",
+      "claim": "To what extent compression by flow or active alignment drive furrow formation remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, actin filaments also align via search-and-capture, and to what extent compression by flow or active alignment drive furrow formation remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in scientific understanding that the study aims to address.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "d9d5bf02-68f6-4a92-8420-5cf74445a034",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C5",
+      "claim": "The authors quantify the dynamical organization of actin filaments at the onset of ring assembly in the C. elegans zygote.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we quantify the dynamical organization of actin filaments at the onset of ring assembly in the C. elegans zygote, and provide a framework for determining emergent actomyosin material parameters by the use of active nematic gel theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental work performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "3eca3d00-a4ba-4931-8afc-1ecc72de61f9",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C6",
+      "claim": "The authors provide a framework for determining emergent actomyosin material parameters by the use of active nematic gel theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we quantify the dynamical organization of actin filaments at the onset of ring assembly in the C. elegans zygote, and provide a framework for determining emergent actomyosin material parameters by the use of active nematic gel theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical framework developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "548e9e0f-b1b8-45a9-bcf1-00240b7f9989",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C7",
+      "claim": "The authors characterize flow-alignment coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterize flow-alignment coupling, and verify at a quantitative level that compression by flow drives ring formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "b97b3037-320b-465a-802f-f70ad146047a",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C8",
+      "claim": "Compression by flow drives ring formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We characterize flow-alignment coupling, and verify at a quantitative level that compression by flow drives ring formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion verified quantitatively in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "2628854f-7318-4929-be5e-e60f9a904bc1",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C9",
+      "claim": "Active alignment enhances but is not required for ring formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find that active alignment enhances but is not required for ring formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "da452bb7-989f-40d0-b113-052d0afe672c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C10",
+      "claim": "Flow functions as a central organizer of actomyosin network architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work characterizes the physical mechanisms of actomyosin ring formation and highlights the role of flow as a central organizer of actomyosin network architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "bacec4f0-943e-474e-bf68-958edd1da3b2",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C11",
+      "claim": "Cytokinesis begins in late anaphase, triggered by regulatory pathways with feedback from the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytokinesis begins in late anaphase, triggered by regulatory pathways with feedback from the mitotic spindle that ensure appropriate positioning of the molecular machinery (reviewed in Fededa and Gerlich, 2012; Green et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to review articles.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "df11d3c1-7532-435d-a315-78d54494a3dd",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C12",
+      "claim": "The small regulatory GTPase RhoA is enriched in an equatorial band during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the small regulatory GTPase RhoA (Piekny et al., 2005; Tse et al., 2012) and the molecular motor myosin (Shelton et al., 1999; Werner and Glotzer, 2008) are enriched in an equatorial band (Piekny et al., 2005; Werner and Glotzer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "f7312a85-d58e-49ec-a499-a172579ca132",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C13",
+      "claim": "The molecular motor myosin is enriched in an equatorial band during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the small regulatory GTPase RhoA (Piekny et al., 2005; Tse et al., 2012) and the molecular motor myosin (Shelton et al., 1999; Werner and Glotzer, 2008) are enriched in an equatorial band (Piekny et al., 2005; Werner and Glotzer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "e9530036-c724-430e-a2a4-eabdda0741b0",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C14",
+      "claim": "Myosin can directly organize the actin network.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin can directly organize the actin network (Miller et al., 2012; Soares e Silva et al., 2011; Vavylonis et al., 2008), and if myosin-based active alignment (e.g. via search-and-capture [Vavylonis et al., 2008]) or flow-based compression as proposed by White and Borisy (White and Borisy, 1983; Rappaport, 1996) drive furrow formation and cytokinesis in eukaryotes remains unclear (Green et al., 2012; Bray and White, 1988; Levayer and Lecuit, 2012; Mendes Pinto et al., 2013; Cao and Wang, 1990; Murthy and Wadsworth, 2005; Zhou and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "9083342e-e61b-4909-951c-059b028b6184",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C15",
+      "claim": "Whether myosin-based active alignment or flow-based compression drive furrow formation and cytokinesis in eukaryotes remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Myosin can directly organize the actin network (Miller et al., 2012; Soares e Silva et al., 2011; Vavylonis et al., 2008), and if myosin-based active alignment (e.g. via search-and-capture [Vavylonis et al., 2008]) or flow-based compression as proposed by White and Borisy (White and Borisy, 1983; Rappaport, 1996) drive furrow formation and cytokinesis in eukaryotes remains unclear (Green et al., 2012; Bray and White, 1988; Levayer and Lecuit, 2012; Mendes Pinto et al., 2013; Cao and Wang, 1990; Murthy and Wadsworth, 2005; Zhou and Wang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies an unresolved question in the field, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "e8c0ec76-e276-49a8-8822-4dbd815f2cf7",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C16",
+      "claim": "The one cell embryo of C. elegans forms two constricting ingressions: first a pseudocleavage furrow during polarity establishment, and then a cytokinetic furrow during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We set out to address this question in the one cell embryo of the nematode C. elegans which forms two constricting ingressions, first a pseudocleavage furrow during polarity establishment, and then a cytokinetic furrow during cytokinesis (Figure 1\u2014figure supplement 1a, Video 1) (Munro and Bowerman, 2009; Rose et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and reference to Figure 1\u2014figure supplement 1a and Video 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "44387f32-6b14-4923-861d-250b1541bee2",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C17",
+      "claim": "The pseudocleavage furrow is linked to cortical flow.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the pseudocleavage furrow is linked to cortical flow (Mayer et al., 2010; Munro et al., 2004) and lacks regulatory control from the mitotic spindle (Werner and Glotzer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "5df396bb-132c-4ad4-bfb7-74274eaedc36",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C18",
+      "claim": "The pseudocleavage furrow lacks regulatory control from the mitotic spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the pseudocleavage furrow is linked to cortical flow (Mayer et al., 2010; Munro et al., 2004) and lacks regulatory control from the mitotic spindle (Werner and Glotzer, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a7927871-841b-4668-ab61-a02e1ec0849d",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C19",
+      "claim": "The authors generated a Lifeact::mKate2 fluorescent line of C. elegans by coupling the Lifeact peptide to the far-red fluorophore mKate2 that was codon optimized for C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we generated a Lifeact::mKate2 fluorescent line of C. elegans by coupling the Lifeact peptide to the far-red fluorophore mKate2 that was codon optimized for C. elegans (Redemann et al., 2011) (see Materials and methods and Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental reagent created for the study, with a citation for the codon optimization.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c6018fa3-1a20-4ba0-989a-89aa9c04d651",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C20",
+      "claim": "The Lifeact::mKate2 line allows quantification of cortical actin filament orientation in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows us to quantify cortical actin filament orientation in space and time, as well as cortical flow velocity fields by Particle Image Velocimetry (PIV, Figures 1 and 2, Figure 2\u2014figure supplement 1) (Mayer et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the capability of the reagent, with reference to figures and a citation for the PIV method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "b011c1d4-bfa8-49d0-9193-d98eb7a61d59",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C21",
+      "claim": "The Lifeact::mKate2 line allows quantification of cortical flow velocity fields by Particle Image Velocimetry (PIV).",
+      "claim_type": "EXPLICIT",
+      "source": "This allows us to quantify cortical actin filament orientation in space and time, as well as cortical flow velocity fields by Particle Image Velocimetry (PIV, Figures 1 and 2, Figure 2\u2014figure supplement 1) (Mayer et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the capability of the reagent, with reference to figures and a citation for the PIV method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "422dc518-37cd-4dff-9840-4805cef36045",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C22",
+      "claim": "Actin filaments change from a randomly oriented and isotropic gel before cortical flows initiate, into a more circumferentially aligned organization at the future site of furrow ingression during both pseudocleavage and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that actin filaments change from a randomly oriented and isotropic gel before cortical flows initiate, into a more circumferentially aligned organization at the future site of furrow ingression during both pseudocleavage and cytokinesis (Figure 1b, Figure 1\u2014figure supplement 1 and Videos 1 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key observation from the study, supported by figures and videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "921eaf6a-33a7-43f5-998c-ed8b3a5c729d",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C23",
+      "claim": "Non-muscle myosin II (NMY-2) is the essential molecular motor that drives both cortical flow and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-muscle myosin II (NMY-2) is the essential molecular motor that drives both cortical flow and cytokinesis (Shelton et al., 1999; Guo and Kemphues, 1996), whereas the small GTPase RhoA (Piekny et al., 2005; Tse et al., 2012), when active, is responsible for its local activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "df5dd0b9-29b3-47eb-808a-7dfe4f79e214",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C24",
+      "claim": "The small GTPase RhoA, when active, is responsible for local activation of NMY-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-muscle myosin II (NMY-2) is the essential molecular motor that drives both cortical flow and cytokinesis (Shelton et al., 1999; Guo and Kemphues, 1996), whereas the small GTPase RhoA (Piekny et al., 2005; Tse et al., 2012), when active, is responsible for its local activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "ab3b4d10-b9ba-4a98-80a1-9e5233fe7bc6",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C25",
+      "claim": "At the onset of cytokinesis, active RhoA and NMY-2 locally increase at the position of the contractile ring.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of cytokinesis, active RhoA and NMY-2 locally increase at the position of the contractile ring, while for pseudocleavage we observed no such increase (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a8ff5076-8457-4c1b-b667-65d10cc5bbbf",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C26",
+      "claim": "For pseudocleavage, no local increase of active RhoA and NMY-2 is observed at the equatorial region.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of cytokinesis, active RhoA and NMY-2 locally increase at the position of the contractile ring, while for pseudocleavage we observed no such increase (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "6dd5028d-41bd-4599-be12-06168ab0ba57",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C27",
+      "claim": "The equatorial region in pseudocleavage corresponds to a transition zone with a gradual decrease of RhoA and myosin between the anterior region of high and the posterior region of low contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the equatorial region in pseudocleavage corresponds to a transition zone with a gradual decrease of RhoA and myosin between the anterior region of high and the posterior region of low contractility (Figure 1) (Mayer et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 1 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "94e97793-44d1-40f6-bec7-388beed37667",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C28",
+      "claim": "The actin nucleator formin CYK-1 is downstream of RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin nucleator formin CYK-1 is downstream of RhoA (Piekny et al., 2005) and follows a similar pattern of localization, and actin bundling via anillin (Piekny and Glotzer, 2008) or plastin also does not appear to be increased in the equatorial region during pseudocleavage (Figure 2\u2014figure supplement 5e\u2013f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "cbd04ae2-c5dc-44eb-a01d-a99eef3231cd",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C29",
+      "claim": "Formin CYK-1 follows a similar pattern of localization to RhoA.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin nucleator formin CYK-1 is downstream of RhoA (Piekny et al., 2005) and follows a similar pattern of localization, and actin bundling via anillin (Piekny and Glotzer, 2008) or plastin also does not appear to be increased in the equatorial region during pseudocleavage (Figure 2\u2014figure supplement 5e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2\u2014figure supplement 5e\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "558bda59-be6a-4006-b7ef-477a99d48927",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C30",
+      "claim": "Actin bundling via anillin or plastin does not appear to be increased in the equatorial region during pseudocleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin nucleator formin CYK-1 is downstream of RhoA (Piekny et al., 2005) and follows a similar pattern of localization, and actin bundling via anillin (Piekny and Glotzer, 2008) or plastin also does not appear to be increased in the equatorial region during pseudocleavage (Figure 2\u2014figure supplement 5e\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2\u2014figure supplement 5e\u2013f and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "74459704-13c7-4c1b-98f8-580a2da020bb",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C31",
+      "claim": "The pseudocleavage furrow ingresses with a circumferential alignment of filaments in the gel, but without a local zone of RhoA activation and the corresponding local increase in myosin and formin density.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, the pseudocleavage furrow ingresses with a circumferential alignment of filaments in the gel, but without a local zone of RhoA activation and the corresponding local increase in myosin and formin density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "de07efe4-28b8-43f6-9678-9564c98d564e",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C32",
+      "claim": "Search-and-capture like mechanisms require a localized band of myosin and actin nucleators at the equator to drive myosin-based active alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since search-and-capture like mechanisms require a localized band of myosin and actin nucleators at the equator to drive myosin-based active alignment (Vavylonis et al., 2008), this suggests that actin filaments in pseudocleavage align via flow-based compression and not via active alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited (Vavylonis et al., 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "3df6e9da-a825-4e90-b548-202f9ea876b5",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C33",
+      "claim": "Actin filaments in pseudocleavage align via flow-based compression and not via active alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since search-and-capture like mechanisms require a localized band of myosin and actin nucleators at the equator to drive myosin-based active alignment (Vavylonis et al., 2008), this suggests that actin filaments in pseudocleavage align via flow-based compression and not via active alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the observations and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a4218275-1726-4bd9-b3e0-3a75b976b658",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C34",
+      "claim": "The flow compression rate along the antero-posterior direction increases with time during the very early stages of pseudocleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the flow compression rate along the antero-posterior direction (AP axis or x axis), given by the spatial gradient of the velocity field \u2212\u2202xv  (Figure 2b), increases with time during the very early stages of pseudocleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "de06b4b0-b3c2-4864-9714-c96cede3105a",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C35",
+      "claim": "The compression rate peaks in the central region of the embryo during pseudocleavage, with a maximum of ~0.4 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The compression rate peaks in the central region of the embryo, with a maximum of ~0.4 min\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "8730292e-782c-4da1-8d72-d7e10421892b",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C36",
+      "claim": "The peak compression rate is stable for several minutes until pseudocleavage flows cease entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this peak is stable for several minutes until pseudocleavage flows cease entirely (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "080b0d97-560f-42db-b2bf-a886dc826571",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C37",
+      "claim": "For cytokinesis, the early flow proceeds in a unidirectional manner from the posterior toward the anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "For cytokinesis, we find that the early flow also proceeds in a unidirectional manner from the posterior toward the anterior (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "ff2de727-cb64-4d46-925e-c46cb3c0f2f9",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C38",
+      "claim": "The compression rate increases with time over the very early stages of cytokinesis, with the compression profile peaking at the center of the embryo with a maximum rate of ~0.7 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to pseudocleavage, the compression rate increases with time over the very early stages of cytokinesis, with the compression profile peaking at the center of the embryo with a maximum rate of ~0.7 min\u22121 (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "fbfbb694-1556-402f-8399-cebd86c5c251",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C39",
+      "claim": "Vertical alignment appears coincidental in space and time with the local increase of the compression rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that vertical (orthogonal to the direction of flow) alignment appears coincidental in space and time with the local increase of the compression rate (Figure 2b, compare column 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "85c3d95a-7560-4819-a19d-74a21924c8e5",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C40",
+      "claim": "Changing the direction of flow also changes the direction of alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, changing the direction of flow also changes the direction of alignment: off-site sperm entry leads to flows along the short axis of the egg (Goldstein et al., 1993) and actin filaments still align in the direction determined by compression (Figure 1\u2014figure supplement 1d, Video 4 and Appendix).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 1\u2014figure supplement 1d, Video 4, and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "28dc3f0d-25e0-4e2c-a5dc-53b7efe0485b",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C41",
+      "claim": "The ingressing furrow forms in the region where filaments are aligned.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the ingressing furrow forms in the region where filaments are aligned (Figure 2b, column 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "4f7e8039-af8e-4591-8ef9-03fbe96998c7",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C42",
+      "claim": "There are remarkable similarities between the compression rate fields, the pattern of alignment, and the ingression distance between pseudocleavage and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our quantifications reveal remarkable similarities between the compression rate fields, the pattern of alignment, and the ingression distance between pseudocleavage and cytokinesis (Figure 2b), suggesting common mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the quantifications in the study, supported by Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "be06a0b8-e7e8-4353-a780-6f1be4325fc7",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C43",
+      "claim": "Actin filament alignment arises at locations of significant compression by flow.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, actin filament alignment arises at locations of significant compression by flow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "4c809606-fd8e-45cf-9c58-9dcc32d9cfa8",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C44",
+      "claim": "For pseudocleavage, both compression rate and alignment peak at about the same location.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1D crosscorrelations between compression, filament alignment and ingression distance, calculated for the time that flows are essentially stationary (Figure 2b and Figure 2\u2014figure supplement 1), show that for pseudocleavage both compression rate and alignment peak at about the same location, while the ingression field peaks ~ 3 \u00b5m further to the anterior (Figure 2c and Figure 2\u2014figure supplement 2 for the spatiotemporal crosscorrelations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figures 2b, 2c, and Figure 2\u2014figure supplement 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "d135bcd4-4b79-4cfc-8dcb-3093c3738ef0",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C45",
+      "claim": "For pseudocleavage, the ingression field peaks ~ 3 \u00b5m further to the anterior than compression and alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1D crosscorrelations between compression, filament alignment and ingression distance, calculated for the time that flows are essentially stationary (Figure 2b and Figure 2\u2014figure supplement 1), show that for pseudocleavage both compression rate and alignment peak at about the same location, while the ingression field peaks ~ 3 \u00b5m further to the anterior (Figure 2c and Figure 2\u2014figure supplement 2 for the spatiotemporal crosscorrelations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the study, supported by Figures 2b, 2c, and Figure 2\u2014figure supplement 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "0ca725f0-969e-4150-b1c3-2289310f8e2c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C46",
+      "claim": "For cytokinesis, the compression field peaks furthest to the posterior.",
+      "claim_type": "EXPLICIT",
+      "source": "The situation is similar at cytokinesis, except that the compression field peaks furthest to the posterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "de0b9374-c7cb-440d-b904-f724359f424c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C47",
+      "claim": "For pseudocleavage, filament alignment is essentially concomitant with compression.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for pseudocleavage, filament alignment is essentially concomitant with compression, while for cytokinesis compression precedes alignment by 0.40 \u00b1 0.16 min (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the temporal analysis in the study, supported by Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "daf1a0d4-0b3b-4e99-ba47-f18d680e2d6f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C48",
+      "claim": "For cytokinesis, compression precedes alignment by 0.40 \u00b1 0.16 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that for pseudocleavage, filament alignment is essentially concomitant with compression, while for cytokinesis compression precedes alignment by 0.40 \u00b1 0.16 min (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the study, supported by Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "2f8d9851-b95b-4122-9bda-046ef229d4d5",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C49",
+      "claim": "Ingression arises approximately 0.5 min after compression for pseudocleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ingression arises approximately 0.5 min after compression for pseudocleavage and 0.9 min after compression for cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a3fccd2f-9643-4cca-bca2-5d014eab2a31",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C50",
+      "claim": "Ingression arises approximately 0.9 min after compression for cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ingression arises approximately 0.5 min after compression for pseudocleavage and 0.9 min after compression for cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "005c9650-51f0-4737-b138-e89b1c583c0b",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C51",
+      "claim": "Filament alignment rapidly follows compression while ingression arises with a delay.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, filament alignment appears to rapidly follow compression while ingression arises with a delay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the temporal analysis in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "edc4dabd-4e2c-4f91-9175-bbaf955d40ac",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C52",
+      "claim": "The cell cortex can be thought of as a gel that forms a thin layer underneath the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell cortex in this and other systems can be thought of as a gel that forms a thin layer underneath the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual framework based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "0ccd70f1-b4fb-461c-afe7-2c58b0f5ce5f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C53",
+      "claim": "The cortical gel is active and generates the forces that drive cell shape changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in physical theory show that this gel is active and generates the forces that drive cell shape changes (Salbreux et al., 2009; Gowrishankar, 2012; Kruse et al., 2005; Turlier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "9a71c403-4bad-49b2-bfd6-e62ad8625af9",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C54",
+      "claim": "The authors describe the actin cortical layer as a thin film of a nematic gel under shear and compression by flow.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe the actin cortical layer as a thin film of a nematic gel under shear and compression by flow (Salbreux et al., 2009; Kruse et al., 2005; Prost et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical model used in the study, with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "af407db6-2be3-4597-a6c1-94b1ab37598f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C55",
+      "claim": "The time evolution of the local nematic order Q depends on advection, compression in gel flow, relaxation to an isotropic configuration, and a tendency of filaments to align with each other over space.",
+      "claim_type": "EXPLICIT",
+      "source": "In the x-direction, the time evolution of the local nematic order Q depends on advection (first term on the right hand side in Equation 1), compression in gel flow (second term), a process of relaxation to an isotropic configuration possibly via turnover (third term), and a tendency of filaments to align with each other over space (last term, see also Figure 3a)(1)\u2202tQ=\u2212v\u2202xQ\u2212\u03b22\u2202xv\u22121\u03c4Q+\u21132\u03c4\u2202x2Q.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the theoretical equation used in the study, with reference to Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "5ead205e-d489-445e-9f17-a26522d88c80",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C56",
+      "claim": "For cytokinesis, the calculated alignment profile best matches the experimentally measured one for \u03b2 \u03c4 =0.64 (0.548, 0.713) min, \u03c4 = 2.3 (1.89, 2.71) min and \u2113 = 1.7 (1.37, 2.44) \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "For cytokinesis the calculated alignment profile (dashed red lines in Figure 3b) best matches the experimentally measured one for \u03b2 \u03c4 =0.64 (0.548, 0.713) min (unless otherwise noted we indicate the median value together with the standard 68% confidence interval of the distribution of the bootstrap data, see Appendix),  \u03c4 = 2.3 (1.89, 2.71) min and \u2113 = 1.7 (1.37, 2.44) \u03bcm (Table 1 and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from fitting the theoretical model to experimental data, supported by Figure 3b and Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "29abb9a8-2893-4cfb-91d8-294175e8a6fb",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C57",
+      "claim": "For pseudocleavage, \u03b2 \u03c4 was similar to cytokinesis (0.6 (0.577, 0.7) min), \u03c4 was determined to be smaller than 0.5 min, and \u2113 = 4.7 (3.12, 6.09) \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "For pseudocleavage, \u03b2 \u03c4  was similar (0.6 (0.577, 0.7) min), \u03c4 was determined to be smaller than 0.5 min, and \u2113 = 4.7 (3.12, 6.09) \u03bcm larger (Table 1 and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from fitting the theoretical model to experimental data, supported by Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "32fa1943-205e-4edf-aeae-0c449bc369a0",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C58",
+      "claim": "Good agreement is obtained between the theoretical and experimental alignment field.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in both cases, we obtain good agreement between the theoretical and experimental alignment field, allowing us to conclude that compressive gel flow can account for alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of theoretical and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "35d9d236-6b66-46a4-9bca-4ae2a30ebfe7",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C59",
+      "claim": "Compressive gel flow can account for alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that in both cases, we obtain good agreement between the theoretical and experimental alignment field, allowing us to conclude that compressive gel flow can account for alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of theoretical and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "25f23c98-6141-4b43-8669-9c99fe413102",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C60",
+      "claim": "A small \u03c4 for pseudocleavage and a larger \u03c4 for cytokinesis is consistent with the observation that alignment appears concomitant with compression in pseudocleavage but arises with a short delay during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we observe a small \u03c4 for pseudocleavage and a larger \u03c4 for cytokinesis, which is consistent with the observation that alignment appears concomitant with compression in pseudocleavage but arises with a short delay during cytokinesis (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the fitted parameters to the observed temporal relationships, supported by Figure 2d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "814cd27b-4a3d-49cb-8a42-6458f8b7a782",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C61",
+      "claim": "The changes in physical parameters of the actomyosin cortical layer between pseudocleavage and cytokinesis (higher \u03c4 and smaller \u2113) reflect the fact that the cell forms a strong and more pronounced ring of aligned filaments during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the changes in physical parameters of the actomyosin cortical layer between pseudocleavage and cytokinesis (higher \u03c4 and smaller \u2113) reflect the fact that the cell forms a strong and more pronounced ring of aligned filaments during cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the fitted parameters.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "95788cfe-a751-4f41-8bf7-6de9c6ac244a",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C62",
+      "claim": "The results are consistent with a scenario in which actin filament alignment arises in a disordered network through compression by flow.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, our results are consistent with a scenario in which actin filament alignment arises in a disordered network through compression by flow (White and Borisy, 1983; Salbreux et al., 2009; Turlier et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "33a905fe-84b8-47ae-acac-3c76577139db",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C63",
+      "claim": "Weak-perturbation RNAi of mlc-4 was performed to mildly reduce actomyosin flow speeds without significant changes in overall actomyosin organization.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this prediction, we performed weak-perturbation RNAi experiments (Naganathan et al., 2014) of the regulatory myosin light chain of non-muscle myosin (mlc-4(RNAi) (Craig et al., 1983) to mildly reduce actomyosin flow speeds without significant changes in overall actomyosin organization (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an experimental perturbation performed in the study, with citations and reference to Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "1aaf8021-c5a3-4141-9ac7-698f739fabc5",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C64",
+      "claim": "Short feeding times (5\u20137 hr) of mlc-4 RNAi lead to a small reduction in gel flow and compression rates, but actin filaments still aligned in the central region and the pseudocleavage furrow still formed and ingressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Short feeding times (5\u20137 hr) lead to a small reduction in gel flow and compression rates (Figure 4a), but actin filaments still aligned in the central region and the pseudocleavage furrow still formed and ingressed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RNAi experiment, supported by Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c4c8a13e-3d20-4f4c-b3d2-7afa6b362d7f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C65",
+      "claim": "Longer feeding times (7\u20139 hr) of mlc-4 RNAi lead to a complete abolishment of cortical flow and a loss of both actin alignment and pseudocleavage furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, longer feeding times (7\u20139 hr) lead to a complete abolishment of cortical flow and a loss of both actin alignment and pseudocleavage furrow (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RNAi experiment, supported by Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "6012ca45-10ac-48d1-8aa5-7199cd21dbc8",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C66",
+      "claim": "Actomyosin foci are not required for compression-based alignment since anillin-depleted embryos still show significant alignment under compression in the absence of these dense foci.",
+      "claim_type": "EXPLICIT",
+      "source": "Actomyosin foci are not required for compression-based alignment since anillin- depleted embryos (ani-1(RNAi), 24 hr) still show significant alignment under compression in the absence of these dense foci (Figure 4c) (Maddox et al., 2005; Piekny and Maddox, 2010; Tse et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the ani-1 RNAi experiment, supported by Figure 4c and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "9910a9b4-7abe-40dd-aa22-d41714788150",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C67",
+      "claim": "Reduced flow speeds and compression rates can account for the absence of alignment and pseudocleavage in nop-1(RNAi) embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced flow speeds and compression rates can also account for the absence of alignment and pseudocleavage in nop-1(RNAi) embryos, in which RhoA-dependent processes are affected and pseudocleavage formation abrogated (Figure 4d, Figure 4\u2014figure supplement 1 and 2) (Tse et al., 2012; Rose et al., 1995; Zhang and Glotzer, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the nop-1 RNAi experiment, supported by Figure 4d and Figure 4\u2014figure supplements 1 and 2, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "dbd78de3-a09e-4bc4-bf7f-ca80faeb4435",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C68",
+      "claim": "Reducing gel flow and compression rates affects alignment in a manner that is consistent with Equation 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these experiments lead us to conclude that reducing gel flow and compression rates affects alignment in a manner that is consistent with Equation 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the RNAi experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "4d6f8fd4-10a3-45b7-8294-2cead4d4bf5a",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C69",
+      "claim": "A complete loss of flow and compression abolishes pseudocleavage entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a complete loss of flow and compression abolishes pseudocleavage entirely (Figure 4b;d and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the RNAi experiments, supported by Figure 4b, 4d, and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "d240f1c5-eb37-4b88-b037-60a5f7f25af1",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C70",
+      "claim": "The pseudocleavage furrow arises as a by-product of compressive flows, mechanically aligning actin filaments into a ring even in the absence of localized RhoA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that the pseudocleavage furrow arises as a by-product of compressive flows, mechanically aligning actin filaments into a ring even in the absence of localized RhoA activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "305c9124-46e6-44a1-9b1d-eefb84b64d84",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C75",
+      "claim": "The observed ingression profiles cannot be appropriately accounted for unless anisotropic active stress generation in an aligned gel is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "By use of a theory that connects anisotropic active stress generation in the active nematic gel to changes in cell shape (see Appendix and Figure 3d) we show that we cannot appropriately account for the observed ingression profiles unless we consider anisotropic active stress generation in an aligned gel (Figure 3e, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the theoretical modeling, supported by Figures 3d, 3e, and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "89917d78-58fe-4d2d-824c-d06b2023e0b6",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C76",
+      "claim": "Anisotropic active stress generation in a network of aligned actin filaments is important for forming an ingression.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that anisotropic active stress generation in a network of aligned actin filaments is important for forming an ingression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "f88b79f8-3ab7-478c-8ef6-a01d60e21808",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C77",
+      "claim": "Compression by flow drives actomyosin ring formation in both pseudocleavage and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To conclude, we find that compression by flow drives actomyosin ring formation in both pseudocleavage and cytokinesis, as originally proposed by White and Borisy (White and Borisy, 1983) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the study, with a citation to the original proposal and reference to Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "622fc927-bbc7-40b6-abef-4176f305d32f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C78",
+      "claim": "The study provides a general framework for determining emergent material parameters of the actomyosin gel.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we provide a general framework for determining emergent material parameters of the actomyosin gel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a contribution of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "6df05e5c-d2a6-4024-84f2-1df20cec0de6",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C79",
+      "claim": "The framework characterizes flow-alignment coupling and allows for capturing essential aspects of the mechanics of furrow generation.",
+      "claim_type": "EXPLICIT",
+      "source": "This characterizes flow-alignment coupling and allows for capturing essential aspects of the mechanics of furrow generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the utility of the framework developed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "68240972-c820-41d8-99a0-96fbe6778d12",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C80",
+      "claim": "The analysis of the pseudocleavage ingression in C. elegans demonstrates that constricting rings can form in the absence of equatorial RhoA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of the pseudocleavage ingression in C. elegans demonstrates that constricting rings can form in the absence of equatorial RhoA activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "695804f1-07da-48f4-806f-2544f7e4f51c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C81",
+      "claim": "Cortical flow functions as a central organizer of network architecture, mechanically aligning filaments to form a constricting furrow in the equatorial region without a localized increase of actin nucleation and myosin contractility.",
+      "claim_type": "EXPLICIT",
+      "source": "This reveals that cortical flow functions as a central organizer of network architecture, mechanically aligning filaments to form a constricting furrow in the equatorial region without a localized increase of actin nucleation (Figure 2\u2014figure supplement 5,f) and myosin contractility (Figure 1b-d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the study's findings, supported by figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "2ba18055-fac0-4e4b-a4a9-d90490fcaabb",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C82",
+      "claim": "A cortex that is aligned by compressive flow may favor the recruitment of specific actin binding proteins such as bundling or motor proteins, comprising an interesting mechanism of positive feedback for stabilizing and enhancing the ring during cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, it will be interesting to investigate if a cortex that is aligned by compressive flow favors the recruitment of specific actin binding proteins such as bundling or motor proteins (Robinson et al., 2002), comprising an interesting mechanism of positive feedback for stabilizing and enhancing the ring during cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future research, with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "91f49782-dc7c-4a0c-b61a-39c13b386e09",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C83",
+      "claim": "Determining emergent material properties of actomyosin is important for understanding cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work highlights that determining emergent material properties of actomyosin is important for understanding cytokinesis, and a challenge for the future is to link emergent material properties at the larger scale with molecular mechanisms (Mendes Pinto et al., 2013; Eggert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the importance of the study's approach, with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "6eb4be7a-a034-4c99-8310-71a9e55baa85",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C84",
+      "claim": "A challenge for the future is to link emergent material properties at the larger scale with molecular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work highlights that determining emergent material properties of actomyosin is important for understanding cytokinesis, and a challenge for the future is to link emergent material properties at the larger scale with molecular mechanisms (Mendes Pinto et al., 2013; Eggert et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a future research direction, with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "d85cd5d1-6a4a-4cc8-b83d-935f08d075a3",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C85",
+      "claim": "The Lifeact::mKate2 line provides bright actin filament labeling with a high signal-to-noise ratio and little photobleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "In this line, we observed within the cortical plane bright actin filament labeling with a high signal-to-noise ratio and little photobleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the quality of the reagent created for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "5457ee94-0f6b-49c8-aaf3-c28cd860d4a3",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C86",
+      "claim": "Overall cortical organization and flow dynamics appeared to not be affected by the Lifeact::mKate2 reagent.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, overall cortical organization and flow dynamics appeared to not be affected by this reagent, foci lifetime, spacing, cortical flow velocities were similar to previous measurement with other fluorescent lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a control observation validating the reagent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "1d059bef-0645-48b8-b08b-065889425f91",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C87",
+      "claim": "Foci lifetime, spacing, and cortical flow velocities in the Lifeact::mKate2 line were similar to previous measurements with other fluorescent lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, overall cortical organization and flow dynamics appeared to not be affected by this reagent, foci lifetime, spacing, cortical flow velocities were similar to previous measurement with other fluorescent lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a control observation validating the reagent.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c7264b57-083d-41a6-9294-0df08c458377",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C88",
+      "claim": "Considering active alignment does not increase the overall agreement between calculated and measured alignment profiles for both pseudocleavage and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that considering active alignment does not increase the overall agreement between calculated and measured alignment profiles for both pseudocleavage and cytokinesis (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the theoretical modeling, supported by Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "338a2fce-284c-444b-bbc2-3d4990e2d899",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C89",
+      "claim": "The contribution of active alignment to pseudocleavage is insignificant.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the contribution of active alignment to pseudocleavage is insignificant, while active alignment contributes to enhancing compression-induced alignment during cytokinesis (Figure 3\u2014figure supplement 2b; see Appendix), albeit to a small degree.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the theoretical modeling, supported by Figure 3\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "1904d131-c287-4e98-ae6a-a028a47037e6",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C90",
+      "claim": "Active alignment contributes to enhancing compression-induced alignment during cytokinesis, albeit to a small degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the contribution of active alignment to pseudocleavage is insignificant, while active alignment contributes to enhancing compression-induced alignment during cytokinesis (Figure 3\u2014figure supplement 2b; see Appendix), albeit to a small degree.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion from the theoretical modeling, supported by Figure 3\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "22e4926c-2f66-4a8c-bf60-096e38cf35e4",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C91",
+      "claim": "Compression by flow and not myosin-based active alignment is the driving force of ring formation in both pseudocleavage and cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that compression by flow and not myosin-based active alignment is the driving force of ring formation in both pseudocleavage and cytokinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "bcfd5a9c-f349-4d39-bea8-2e24ca2ef960",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C92",
+      "claim": "The RhoA biosensor used consists of GFP fused to the C-terminal portion of C. elegans anillin, which contains its conserved region (AH) and pleckstrin homology (PH) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The RhoA biosensor used for Figure 1 was developed by the Glotzer lab (GFP::AHPH, C. elegans strain MG617, Tse et al., 2012). This sensor consists of GFP fused to the C-terminal portion of C. elegans anillin, which contain its conserved region (AH) and pleckstrin homology (PH) domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reagent used in the study, with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "f6857c0f-81f3-4b3c-a025-4d8d5fd9d30f",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C93",
+      "claim": "The RhoA biosensor lacks the N-terminal myosin and actin-binding domains but retains its RhoA-binding domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It lacks the N-terminal myosin and actin-binding domains but retains its RhoA-binding domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the RhoA biosensor used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "676f1ded-6c05-4d98-9b60-97d0745cc66c",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C94",
+      "claim": "Spatiotemporal correlation functions were calculated for all time points during the stationary period, in the 30 \u03bcm central region of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatiotemporal correlation functions were calculated for all time points during the stationary period, in the 30 \u03bcm central region of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "343ccb2e-de48-490c-a9ad-48810d0202ce",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C95",
+      "claim": "Peak value positions in the spatial correlation are obtained by a Gaussian fitting procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak value positions are obtained by a Gaussian fitting procedure and allow the calculation of positional differences between the different data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "2b8e4194-8327-4cfa-a176-9e8884e588db",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C96",
+      "claim": "The distance between peaks of compression, alignment and ingression arises due to temporal delays between these events in the reference frame co-moving with the cortical flows.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the flow field appears stationary, we expect this distance between peaks of compression, alignment and ingression to arise due to temporal delays between these events in the reference frame co-moving with the cortical flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the interpretation of the spatial correlation analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "0a6a9474-8929-45e2-8001-2a5781271465",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "claim_id": "C97",
+      "claim": "The characteristic distances between stationary peaks were translated to temporal delays using the average flow velocity in the \u221210 \u03bcm to 0 central region (6.16 \u00b1 1.23 \u00b5m/min for pseudocleavage and 4.01 \u00b1 1.92 \u00b5m/min for cytokinesis).",
+      "claim_type": "EXPLICIT",
+      "source": "We thus translated the characteristic distances between stationary peaks to temporal delays using the average flow velocity in the \u221210 \u03bcm to 0 central region (6.16 \u00b1 1.23 \u00b5m/min for pseudocleavage and 4.01 \u00b1 1.92 \u00b5m/min for cytokinesis) (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the method for converting spatial to temporal information, with quantitative measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "473a482b-95c7-490a-b6bf-7d7af43c4639",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated a Lifeact::mKate2 fluorescent line of C. elegans that allows quantification of cortical actin filament orientation and cortical flow velocity fields. The reagent provides bright labeling with high signal-to-noise ratio and does not affect cortical organization or flow dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 and C85-C87 describe the creation and validation of the Lifeact::mKate2 reagent. The validation includes comparison with previous measurements and control observations showing no perturbation of cortical dynamics. This is a well-supported methodological result with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "During pseudocleavage, actin filaments align circumferentially at the future furrow site without local enrichment of RhoA, myosin (NMY-2), formin (CYK-1), or actin bundling proteins (anillin, plastin) at the equatorial region. In contrast, during cytokinesis, active RhoA and NMY-2 locally increase at the contractile ring position.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C25-C27, C29-C31 collectively demonstrate a key difference between pseudocleavage and cytokinesis. The observations are supported by imaging data (Figure 1, Figure 2\u2014figure supplement 5) and citations to prior work. This establishes that pseudocleavage lacks the molecular hallmarks of active alignment mechanisms, supporting the flow-compression hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "0bafe335-7fba-4574-a01a-1f183ca5afa9",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Compression by flow spatially and temporally correlates with actin filament alignment during both pseudocleavage and cytokinesis. The compression rate peaks in the central region (~0.4 min\u207b\u00b9 for pseudocleavage, ~0.7 min\u207b\u00b9 for cytokinesis), and vertical alignment appears coincidental with local compression. Changing flow direction changes alignment direction, and furrow ingression occurs where filaments are aligned.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C43 describe detailed spatiotemporal quantifications supported by Figure 2 and supplementary figures. The correlation analysis, PIV measurements, and off-center sperm entry experiment (C40) provide converging evidence. The quantitative measurements and multiple lines of evidence strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Temporal analysis reveals that for pseudocleavage, compression and alignment are essentially concomitant, while for cytokinesis, compression precedes alignment by 0.40 \u00b1 0.16 min. Ingression arises approximately 0.5 min after compression for pseudocleavage and 0.9 min for cytokinesis. These temporal relationships were determined using spatial correlation analysis and conversion to temporal delays using measured flow velocities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 and C94-C97 describe the temporal analysis methodology and results. The approach of converting spatial offsets to temporal delays using flow velocity is reasonable given the stationary flow assumption (C96). The quantitative measurements with error estimates and supporting figures (Figure 2c-d, Figure 2\u2014figure supplements 1-2) provide solid support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "40effb93-b3b4-47b9-a80c-d6431d143453",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors developed a theoretical framework describing the actin cortical layer as a thin film of nematic gel under compression by flow. The model (Equation 1) accounts for advection, compression, relaxation, and spatial alignment interactions. Fitting experimental data yields material parameters: for cytokinesis, \u03b2 \u03c4 = 0.64 min, \u03c4 = 2.3 min, \u2113 = 1.7 \u03bcm; for pseudocleavage, \u03b2 \u03c4 = 0.6 min, \u03c4 < 0.5 min, \u2113 = 4.7 \u03bcm. Good agreement between theoretical and experimental alignment profiles demonstrates that compressive gel flow can account for alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60 and C62 describe the theoretical model and parameter fitting. The model is grounded in established active gel theory (C53-C54 with citations). The fitting procedure is constrained (five unknowns, three spatial fields) and yields unique parameters with confidence intervals (Tables 1-2, Figure 3, Figure 3\u2014figure supplement 1). The consistency between fitted parameters and observed temporal relationships (C60) strengthens the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "6196e6be-7ff6-4d9d-ab25-11cc568f8c76",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Incorporating myosin-based active alignment into the theoretical model does not increase agreement with experimental data. Active alignment contributes insignificantly to pseudocleavage and only enhances compression-induced alignment to a small degree during cytokinesis. The authors conclude that compression by flow, not myosin-based active alignment, is the driving force of ring formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 address the role of active alignment through extended modeling (Equation 3, Figure 3\u2014figure supplement 2). The analysis shows that including active alignment does not improve fits and contributes minimally even during cytokinesis when myosin is enriched. This is a strong result because it directly tests the alternative hypothesis and finds it unnecessary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "111a7e5b-f9e5-4714-a235-2aebcac05970",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNAi perturbation experiments validate the flow-compression mechanism. Mild mlc-4 RNAi (5-7 hr) reduces flow and compression but maintains alignment and furrow formation, while strong mlc-4 RNAi (7-9 hr) abolishes flow, alignment, and pseudocleavage. Anillin depletion (ani-1 RNAi) shows alignment persists without actomyosin foci. Reduced flow in nop-1 RNAi accounts for loss of alignment and pseudocleavage. These results are consistent with the theoretical model (Equation 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 describe systematic perturbation experiments testing model predictions. The dose-dependent effects of mlc-4 RNAi (C64-C65), the ani-1 control (C66), and nop-1 results (C67) provide converging experimental validation. The consistency with theoretical predictions (C68) and supporting figures (Figure 4, Figure 4\u2014figure supplements 1-2) strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "85a247cd-5ad2-4b92-b932-f5ae1dbae8cd",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Theoretical modeling of cell shape changes demonstrates that anisotropic active stress generation in an aligned actin gel is necessary to account for observed ingression profiles. Isotropic active tension alone cannot explain the ingression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C76 describe theoretical analysis connecting alignment to ingression mechanics. The comparison between models with and without anisotropic stress (Figure 3e, Figure 3\u2014figure supplement 3) provides clear evidence. However, this result relies heavily on theoretical modeling assumptions that are not independently validated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates that compression by flow drives actomyosin ring formation in both pseudocleavage and cytokinesis, as originally proposed by White and Borisy. The framework for determining emergent material parameters characterizes flow-alignment coupling and captures essential mechanics of furrow generation. Pseudocleavage analysis shows that constricting rings can form without equatorial RhoA activation, with cortical flow functioning as a central organizer of network architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 synthesize the main conclusions. These are well-supported by the combination of experimental observations (C22-C51), theoretical modeling (C52-C62), active alignment analysis (C88-C91), and perturbation experiments (C63-C70). The convergence of multiple independent lines of evidence provides strong support for these major conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "a02f6da1-e842-48d5-ba6b-e1a746e1dd62",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that changes in physical parameters between pseudocleavage and cytokinesis (higher \u03c4 and smaller \u2113) reflect the formation of a stronger, more pronounced ring of aligned filaments during cytokinesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C61 is explicitly speculative. While the parameter differences are measured (C56-C57), the mechanistic interpretation linking these to ring strength is not directly tested. This represents a reasonable hypothesis but lacks experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "57543e27-20a1-4429-ab93-3095465aabe9",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors suggest future investigations into whether flow-aligned cortex favors recruitment of specific actin binding proteins, potentially creating positive feedback for ring stabilization. They highlight the importance of determining emergent material properties for understanding cytokinesis and identify linking these properties to molecular mechanisms as a future challenge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 describe future research directions and are explicitly speculative (C82 states 'it will be interesting to investigate'). These represent reasonable hypotheses and research priorities but are not tested in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "3c2bcd32-6a88-4443-9807-41d25fc0abba",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and prior knowledge about cytokinesis, including the role of actomyosin cortical flow, the historical White and Borisy proposal, alternative search-and-capture mechanisms, the C. elegans system with pseudocleavage and cytokinetic furrows, and the molecular players (RhoA, myosin, formin). The central question is whether compression by flow or active alignment drives furrow formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C11-C18, C23-C24, C28, and C32 establish background knowledge supported by extensive citations to prior literature. These accurately represent the state of the field and frame the research question. This is well-supported contextual information.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "18b39ea9-9259-42dc-8665-cab82276a0e6",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study quantifies dynamical organization of actin filaments at ring assembly onset in C. elegans, provides a framework for determining emergent actomyosin material parameters using active nematic gel theory, characterizes flow-alignment coupling, verifies quantitatively that compression by flow drives ring formation, finds that active alignment enhances but is not required for ring formation, and characterizes flow as a central organizer of actomyosin network architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 summarize the main findings from the abstract. These are supported by the detailed results described in other claim groups (experimental observations, theoretical modeling, perturbation experiments). This represents an accurate high-level summary of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "63f932d9-c739-47f0-8547-737d3fc0eb0b",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Based on the absence of localized myosin and actin nucleators at the equator during pseudocleavage, and the requirement for such localization in search-and-capture mechanisms, the authors infer that actin filaments in pseudocleavage align via flow-based compression rather than active alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 represents a logical inference from observations (C26-C31) and prior knowledge about search-and-capture requirements (C32). The inference is reasonable and is later validated by theoretical modeling (C88-C91) and perturbation experiments (C63-C70). This inference is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    },
+    {
+      "id": "c00df148-2dea-4eb9-a8e4-fd42db79a0aa",
+      "content_id": "02652f92-998d-466e-9761-1d7b22480c46",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The RhoA biosensor used in the study consists of GFP fused to the C-terminal portion of C. elegans anillin (containing AH and PH domains), lacking N-terminal myosin and actin-binding domains but retaining the RhoA-binding domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe a reagent from prior work (Tse et al., 2012) used in Figure 1. The description is supported by citation and is a straightforward methodological detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:11:42.148256Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7927871-841b-4668-ab61-a02e1ec0849d",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "c6018fa3-1a20-4ba0-989a-89aa9c04d651",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "b011c1d4-bfa8-49d0-9193-d98eb7a61d59",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "d85cd5d1-6a4a-4cc8-b83d-935f08d075a3",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "5457ee94-0f6b-49c8-aaf3-c28cd860d4a3",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "1d059bef-0645-48b8-b08b-065889425f91",
+      "result_id": "473a482b-95c7-490a-b6bf-7d7af43c4639"
+    },
+    {
+      "claim_id": "422dc518-37cd-4dff-9840-4805cef36045",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "ab3b4d10-b9ba-4a98-80a1-9e5233fe7bc6",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "a8ff5076-8457-4c1b-b667-65d10cc5bbbf",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "6dd5028d-41bd-4599-be12-06168ab0ba57",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "cbd04ae2-c5dc-44eb-a01d-a99eef3231cd",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "558bda59-be6a-4006-b7ef-477a99d48927",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "74459704-13c7-4c1b-98f8-580a2da020bb",
+      "result_id": "c0b753d0-ce33-4595-8ffe-4cb05fd0c731"
+    },
+    {
+      "claim_id": "a4218275-1726-4bd9-b3e0-3a75b976b658",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "de06b4b0-b3c2-4864-9714-c96cede3105a",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "8730292e-782c-4da1-8d72-d7e10421892b",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "080b0d97-560f-42db-b2bf-a886dc826571",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "ff2de727-cb64-4d46-925e-c46cb3c0f2f9",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "fbfbb694-1556-402f-8399-cebd86c5c251",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "85c3d95a-7560-4819-a19d-74a21924c8e5",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "28dc3f0d-25e0-4e2c-a5dc-53b7efe0485b",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "4f7e8039-af8e-4591-8ef9-03fbe96998c7",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "be06a0b8-e7e8-4353-a780-6f1be4325fc7",
+      "result_id": "0bafe335-7fba-4574-a01a-1f183ca5afa9"
+    },
+    {
+      "claim_id": "4c809606-fd8e-45cf-9c58-9dcc32d9cfa8",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "d135bcd4-4b79-4cfc-8dcb-3093c3738ef0",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "0ca725f0-969e-4150-b1c3-2289310f8e2c",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "de0b9374-c7cb-440d-b904-f724359f424c",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "daf1a0d4-0b3b-4e99-ba47-f18d680e2d6f",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "2f8d9851-b95b-4122-9bda-046ef229d4d5",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "a3fccd2f-9643-4cca-bca2-5d014eab2a31",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "005c9650-51f0-4737-b138-e89b1c583c0b",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "676f1ded-6c05-4d98-9b60-97d0745cc66c",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "343ccb2e-de48-490c-a9ad-48810d0202ce",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "2b8e4194-8327-4cfa-a176-9e8884e588db",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "0a6a9474-8929-45e2-8001-2a5781271465",
+      "result_id": "1476267b-6cd6-4f32-b0b9-48bf2fd529d4"
+    },
+    {
+      "claim_id": "edc4dabd-4e2c-4f91-9175-bbaf955d40ac",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "0ccd70f1-b4fb-461c-afe7-2c58b0f5ce5f",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "9a71c403-4bad-49b2-bfd6-e62ad8625af9",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "af407db6-2be3-4597-a6c1-94b1ab37598f",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "5ead205e-d489-445e-9f17-a26522d88c80",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "29abb9a8-2893-4cfb-91d8-294175e8a6fb",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "32fa1943-205e-4edf-aeae-0c449bc369a0",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "35d9d236-6b66-46a4-9bca-4ae2a30ebfe7",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "25f23c98-6141-4b43-8669-9c99fe413102",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "95788cfe-a751-4f41-8bf7-6de9c6ac244a",
+      "result_id": "40effb93-b3b4-47b9-a80c-d6431d143453"
+    },
+    {
+      "claim_id": "c7264b57-083d-41a6-9294-0df08c458377",
+      "result_id": "6196e6be-7ff6-4d9d-ab25-11cc568f8c76"
+    },
+    {
+      "claim_id": "338a2fce-284c-444b-bbc2-3d4990e2d899",
+      "result_id": "6196e6be-7ff6-4d9d-ab25-11cc568f8c76"
+    },
+    {
+      "claim_id": "1904d131-c287-4e98-ae6a-a028a47037e6",
+      "result_id": "6196e6be-7ff6-4d9d-ab25-11cc568f8c76"
+    },
+    {
+      "claim_id": "22e4926c-2f66-4a8c-bf60-096e38cf35e4",
+      "result_id": "6196e6be-7ff6-4d9d-ab25-11cc568f8c76"
+    },
+    {
+      "claim_id": "33a905fe-84b8-47ae-acac-3c76577139db",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "1aaf8021-c5a3-4141-9ac7-698f739fabc5",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "c4c8a13e-3d20-4f4c-b3d2-7afa6b362d7f",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "6012ca45-10ac-48d1-8aa5-7199cd21dbc8",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "9910a9b4-7abe-40dd-aa22-d41714788150",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "dbd78de3-a09e-4bc4-bf7f-ca80faeb4435",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "4d6f8fd4-10a3-45b7-8294-2cead4d4bf5a",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "d240f1c5-eb37-4b88-b037-60a5f7f25af1",
+      "result_id": "111a7e5b-f9e5-4714-a235-2aebcac05970"
+    },
+    {
+      "claim_id": "305c9124-46e6-44a1-9b1d-eefb84b64d84",
+      "result_id": "85a247cd-5ad2-4b92-b932-f5ae1dbae8cd"
+    },
+    {
+      "claim_id": "89917d78-58fe-4d2d-824c-d06b2023e0b6",
+      "result_id": "85a247cd-5ad2-4b92-b932-f5ae1dbae8cd"
+    },
+    {
+      "claim_id": "f88b79f8-3ab7-478c-8ef6-a01d60e21808",
+      "result_id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d"
+    },
+    {
+      "claim_id": "622fc927-bbc7-40b6-abef-4176f305d32f",
+      "result_id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d"
+    },
+    {
+      "claim_id": "6df05e5c-d2a6-4024-84f2-1df20cec0de6",
+      "result_id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d"
+    },
+    {
+      "claim_id": "68240972-c820-41d8-99a0-96fbe6778d12",
+      "result_id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d"
+    },
+    {
+      "claim_id": "695804f1-07da-48f4-806f-2544f7e4f51c",
+      "result_id": "c068b064-1f5d-4e0e-a1ec-5664d0f7ab5d"
+    },
+    {
+      "claim_id": "814cd27b-4a3d-49cb-8a42-6458f8b7a782",
+      "result_id": "a02f6da1-e842-48d5-ba6b-e1a746e1dd62"
+    },
+    {
+      "claim_id": "2ba18055-fac0-4e4b-a4a9-d90490fcaabb",
+      "result_id": "57543e27-20a1-4429-ab93-3095465aabe9"
+    },
+    {
+      "claim_id": "91f49782-dc7c-4a0c-b61a-39c13b386e09",
+      "result_id": "57543e27-20a1-4429-ab93-3095465aabe9"
+    },
+    {
+      "claim_id": "6eb4be7a-a034-4c99-8310-71a9e55baa85",
+      "result_id": "57543e27-20a1-4429-ab93-3095465aabe9"
+    },
+    {
+      "claim_id": "83978c67-b1c1-4682-80b8-d210e5a5f3c5",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "bf2f1a4c-e98f-4c82-a613-2bb7d79a1245",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "2518b093-6b8c-43a9-887d-39cb962f4a1c",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "1abe7da0-b6d1-45d8-943a-47cd413c16e1",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "bacec4f0-943e-474e-bf68-958edd1da3b2",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "df11d3c1-7532-435d-a315-78d54494a3dd",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "f7312a85-d58e-49ec-a499-a172579ca132",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "e9530036-c724-430e-a2a4-eabdda0741b0",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "9083342e-e61b-4909-951c-059b028b6184",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "e8c0ec76-e276-49a8-8822-4dbd815f2cf7",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "44387f32-6b14-4923-861d-250b1541bee2",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "5df396bb-132c-4ad4-bfb7-74274eaedc36",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "921eaf6a-33a7-43f5-998c-ed8b3a5c729d",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "df5dd0b9-29b3-47eb-808a-7dfe4f79e214",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "94e97793-44d1-40f6-bec7-388beed37667",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "de07efe4-28b8-43f6-9678-9564c98d564e",
+      "result_id": "3c2bcd32-6a88-4443-9807-41d25fc0abba"
+    },
+    {
+      "claim_id": "d9d5bf02-68f6-4a92-8420-5cf74445a034",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "3eca3d00-a4ba-4931-8afc-1ecc72de61f9",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "548e9e0f-b1b8-45a9-bcf1-00240b7f9989",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "b97b3037-320b-465a-802f-f70ad146047a",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "2628854f-7318-4929-be5e-e60f9a904bc1",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "da452bb7-989f-40d0-b113-052d0afe672c",
+      "result_id": "18b39ea9-9259-42dc-8665-cab82276a0e6"
+    },
+    {
+      "claim_id": "3df6e9da-a825-4e90-b548-202f9ea876b5",
+      "result_id": "63f932d9-c739-47f0-8547-737d3fc0eb0b"
+    },
+    {
+      "claim_id": "bcfd5a9c-f349-4d39-bea8-2e24ca2ef960",
+      "result_id": "c00df148-2dea-4eb9-a8e4-fd42db79a0aa"
+    },
+    {
+      "claim_id": "f6857c0f-81f3-4b3c-a025-4d8d5fd9d30f",
+      "result_id": "c00df148-2dea-4eb9-a8e4-fd42db79a0aa"
+    }
+  ],
+  "comparisons": []
+}

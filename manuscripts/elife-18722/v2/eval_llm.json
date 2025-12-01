@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C39",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C70"
+    ],
+    "result": "RELION-2 implements GPU acceleration using CUDA for the most computationally intensive steps of cryo-EM structure determination, achieving more than an order-of-magnitude speedup for image classification and high-resolution refinement, and over two orders-of-magnitude speedup for template-based particle selection. The implementation exposes low-level parallelism by treating multiple reference maps, orientations, translations, and individual pixels as parallel tasks, uses GPU textures for efficient slice extraction, and employs a hybrid precision approach with single precision on GPU for the E-step and double precision on CPU for the M-step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C33-C39, C50-C52, C55-C56, and C70 collectively describe the GPU implementation and demonstrate substantial performance improvements shown in Figures 4, 7, and 8. The technical implementation details are clearly described, the performance benchmarks are provided with specific hardware configurations, and the hybrid precision approach is validated in Figure 5. The claims are mutually consistent and supported by both methodological descriptions and empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C55",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C133",
+      "C134"
+    ],
+    "result": "Single precision arithmetic in the GPU-accelerated E-step does not adversely affect the quality of cryo-EM reconstructions. Comparison of single-precision GPU and double-precision CPU refinements shows that 82% of images have orientation assignments within 1\u00b0 tolerance, which is comparable to the 81% agreement between two CPU runs with different random seeds, and the final reconstruction quality (gold-standard FSC) is indistinguishable between methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C55, C65-C68, C133-C134 provide converging evidence that single precision does not compromise results. The comparison methodology is sound (using both different random seeds and CPU vs GPU), the quantitative metrics are appropriate (angular differences and FSC), and Figure 5 provides visual confirmation. The finding that random seed variation equals or exceeds CPU-GPU variation is a strong control. However, the M-step deviation (C69) led to the hybrid approach (C70), which is a reasonable design decision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C130",
+      "C131"
+    ],
+    "result": "GPU-accelerated RELION-2 on a workstation with modern GPUs can exceed the performance of hundreds of CPU cores, with the greatest gains observed for calculations involving many classes and fine orientational sampling. A quad-GPU workstation outperforms a 280-core CPU cluster for 3D classification, though CPU-based operations still dominate execution time even in the GPU version, indicating new bottlenecks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64, C130-C131 are supported by detailed benchmarking in Figure 4 comparing specific hardware configurations (4-GPU workstation vs 280 CPU cores). The performance scaling with number of classes is demonstrated (C63), and the identification of remaining CPU bottlenecks (C64) is shown in Figure 4E. The benchmarking methodology appears rigorous with controlled parameters (C123), though the specific CPU cluster configuration could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C139",
+      "C140"
+    ],
+    "result": "RELION-2 includes an improved GPU-accelerated algorithm for semi-automated particle selection that incorporates low-pass filtering of micrographs. Filtering to the resolution of search templates provides ~20-fold speedup on any hardware with no loss in picking quality, and when combined with GPU acceleration, achieves over 200-fold speedup (120x for single GPU, 500x for quad-GPU) compared to the CPU-only version without filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C80-C83, C88-C91, C139-C140 describe the particle picking improvements with supporting data in Figure 7 and Table 1. The low-pass filtering innovation (C81-C82) is validated on a benchmark dataset (C88) showing maintained or slightly improved recall/FDR (C89). The performance gains are substantial and well-documented. The combination of algorithmic improvement (filtering) and hardware acceleration (GPU) is clearly separated in the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C135",
+      "C136"
+    ],
+    "result": "Memory requirements on GPUs in RELION-2 have been reduced to fit widely available consumer hardware. At most 6 GB of GPU memory is needed for refinement to Nyquist frequency with image sizes up to 400\u00b2 pixels. GPU memory scales linearly with the number of classes, and 3D classification typically requires much less memory as it is performed at lower resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C71-C76, C135-C136 address memory requirements with supporting data in Figure 6. The practical memory usage is documented (C75), the scaling behavior is characterized (C135), and the distinction between refinement and classification is noted (C76). The calculation example (C74) is straightforward. However, the claim that memory has been \"reduced\" (C8) is not directly demonstrated by comparison to previous versions\u2014rather, the current requirements are shown to fit consumer hardware.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C93",
+      "C94",
+      "C95",
+      "C114",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C141",
+      "C142"
+    ],
+    "result": "RELION-2 enables high-resolution cryo-EM structure determination in a matter of days on a single workstation. A complete workflow for the \u03b2-galactosidase dataset (EMPIAR-10061, the largest available in EMPIAR) produced a 2.2 \u00c5 resolution map in a few days on a workstation with four GTX 1080 GPUs, with total processing time less than data download time and comparable to data acquisition time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C93-C95, C114, C126-C129, C141-C142 describe the complete workflow demonstration with the \u03b2-galactosidase dataset. The workflow is well-documented with specific parameters (C126-C128), the resolution is validated using appropriate methods (C129), and the timing is clearly presented in Figure 8B. The map quality is stated to be excellent (C141). This represents a strong practical validation of the entire system, though the rigid nature of \u03b2-galactosidase (C98) means this may not fully represent typical heterogeneous cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C92",
+      "C96",
+      "C97",
+      "C110",
+      "C111"
+    ],
+    "result": "The GPU acceleration in RELION-2 has exposed new computational bottlenecks. Multiple tasks have become limited by disk I/O, making it beneficial to cache data on SSDs. The previously accelerated steps no longer dominate execution, and in some cases, data I/O and the reconstruction step now collectively account for roughly 50% of total execution time, with steps involving large movie files being particularly problematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C92, C96-C97, C110-C111 identify new bottlenecks exposed by the acceleration. This is a logical consequence of successful acceleration (Amdahl's law) and is supported by the workflow analysis in Figure 8B and performance profiling in Figure 4E. The SSD caching solution (C78-C79) is a practical response. The 50% figure (C111) is stated as occurring \"in some cases,\" appropriately qualifying the claim. This represents honest reporting of limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C20",
+      "C21",
+      "C22",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Cryo-EM structure determination faces a computational bottleneck due to the large computational costs of necessary calculations, which limits throughput and method development. The regularised likelihood optimisation algorithm in RELION is particularly demanding, with a recent 3.7 \u00c5 spliceosomal structure estimated to require over 500,000 CPU hours. RELION-2 addresses this by lowering the threshold for iterative method improvement and enabling any group to perform reconstructions without supercomputers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C14-C15, C20-C22, C101-C103 establish the motivation and impact of the work. The computational bottleneck is well-established in the field (C2-C3, C14-C15), the specific example (C21) provides concrete context though it is an estimate, and the stated benefits (C101-C103) follow logically from the demonstrated speedups. This represents appropriate framing of the problem and solution, though the estimate in C21 lacks detailed methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The regularised likelihood optimisation in RELION uses an Expectation-Maximization algorithm with two fundamental steps: the E-step calculates probability distributions for particle orientations, and the M-step updates the 3D map estimate. The E-step requires four major computational stages (projection, difference calculation, probability conversion, and back-projection), with operations (i), (ii), and (iv) dominating execution time in previous versions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide methodological background on the RELION algorithm. These are well-established descriptions of the algorithm with appropriate citations (C41) and are illustrated in Figure 1 (C45). The identification of computationally dominant operations (C46) provides justification for the acceleration targets. This is standard background material that accurately describes the algorithm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "RELION implements a template-based particle selection procedure that calculates R-values for each pixel considering all template rotations. In the GPU version, execution time for non-FFT operations becomes negligible, and 72 inverse FFTs are performed concurrently on the GPU when using 5-degree angular sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe the particle selection algorithm and its GPU implementation. The description is clear and supported by Figure 3. The concurrent FFT execution (C60) is a specific implementation detail that demonstrates the parallelization approach. The identification of FFTs as the bottleneck (C59) motivates both the GPU acceleration and the filtering approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GPU acceleration has transformed other scientific fields facing computational bottlenecks, including molecular dynamics, quantum chemistry, and machine learning. In cryo-EM, GPU acceleration has been attempted with varying success, with some achieving improvements through partial acceleration and others achieving more substantial benefits through fundamental reformulation for specific hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 provide context about GPU acceleration in science and cryo-EM. These are supported by appropriate citations (C25-C27, C29-C30) and represent accurate characterization of the field. This contextualizes the current work within the broader landscape of GPU acceleration efforts. The distinction between partial and comprehensive acceleration approaches (C29-C30) is relevant to understanding the design philosophy of RELION-2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C38",
+      "C119",
+      "C120"
+    ],
+    "result": "RELION-2 was implemented in CUDA, which dominates the GPU computing market and provides a stable programming environment. The acceleration works with any NVIDIA GPU of compute-capability 3.5 or higher (covering models from the last three years) and requires CUDA toolkit version 7.0. Consumer hardware supporting CUDA provides outstanding value for research groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35, C38, C119-C120 describe the implementation platform and hardware requirements. These are factual statements about the software and hardware used. The choice of CUDA is justified (C35, C38), and the hardware requirements are clearly specified (C119-C120). This represents appropriate technical documentation, though the CUDA-specific implementation may limit portability to non-NVIDIA hardware.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Modern GPUs achieve high floating-point performance by incorporating thousands of simple functional units instead of a handful of advanced CPU cores. Previous RELION versions scaled over CPU cores using separate processes for independent particle images, but GPUs require much broader low-level parallelism to increase performance substantially.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide technical background on GPU architecture and parallelism requirements. These are accurate general characterizations of GPU vs CPU architecture and explain why algorithmic reformulation was necessary. This background appropriately motivates the implementation approach described in subsequent claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The CPU version of RELION has historically used double precision, and merely recompiling in single precision does not improve CPU performance. However, all GPUs provide higher performance for single precision, and GPU texture units typically only perform reduced-precision operations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe precision considerations for CPU and GPU implementations. These are accurate characterizations of hardware capabilities and explain the motivation for exploring single precision on GPUs. This provides context for the precision validation experiments (C65-C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The \u03b2-galactosidase complex used for benchmarking is rigid in nature, requiring only a single 3D classification, which is not representative of typical use cases where 3D classification is repeated multiple times to identify structural heterogeneity. In scenarios with multiple 3D classifications, the impact of GPU acceleration would be even larger.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 acknowledge a limitation of the benchmark and extrapolate to typical use cases. This is appropriate scientific reasoning\u2014the rigid nature of \u03b2-galactosidase (C98) is a known characteristic, the typical practice (C99) is accurately described, and the inference about greater impact (C100) follows logically from the performance characteristics shown in Figure 4. This represents honest assessment of the benchmark's representativeness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C112",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "Future developments in cryo-EM will involve larger datasets and new methods requiring expedient processing. The computational cost reduction in RELION-2 enables more ambitious analyses, such as using many more classes for better descriptions of conformational diversity, and may eventually enable on-the-fly structure determination during data acquisition. Future work will focus on further generalizing parallelism, reducing GPU memory requirements, and potentially porting to other platforms like OpenCL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108, C112-C113, C115-C116 describe future expectations and planned work. These are speculative statements (appropriately qualified with terms like \"expected,\" \"might,\" \"will strive\") about future developments. While the expectations are reasonable given current trends (C104) and the planned improvements are logical (C112-C113, C116), these cannot be evaluated as supported or unsupported since they are prospective statements. The claim about enabling more classes (C106-C107) is a reasonable inference from the scaling results but remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Single-particle cryo-EM is transforming structural biology by reaching near-atomic resolution for a wide range of specimens, enabled by direct-electron detectors and advanced image processing methods. Access to high-end microscopes is limited due to increased demand, though this is being addressed through equipment acquisition and shared infrastructures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C13 provide general context about the cryo-EM field. These are supported by appropriate citations (C11, C13) and represent accurate characterization of the state of the field at the time of publication. This is standard introductory material that frames the importance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A typical cryo-EM dataset consists of hundreds or thousands of micrographs containing multiple individual particles. Radiation damage imposes strict limitations on electron exposure, making micrographs extremely noisy, requiring averaging over multiple images of identical complexes to extract fine structural details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe fundamental principles of cryo-EM. These are well-established facts in the field and provide necessary background for understanding the computational challenges. This is accurate basic methodology description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "RELION has historically scaled to large resources using higher-level parallelism by dividing computational tasks into subsets of particle images in each refinement step. However, lower-level core computations on individual particle images have remained serialized since its introduction more than four years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 describe the previous implementation of RELION. These are factual statements about the software's history and provide context for why the current work was necessary. This accurately characterizes the limitation that the current work addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "RELION-2 implements a pipelined approach for automated execution of pre-determined image processing workflows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 describes an additional feature of RELION-2 with a supporting citation. This is a factual statement about implemented functionality that is documented in the cited reference. While not central to the GPU acceleration theme, it represents relevant functionality for automated processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "RELION 2 is open source and free software distributed under the GPLv2 licence and is publicly available for download.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 state facts about software licensing and availability. These are verifiable factual statements about the software distribution. This is important information for reproducibility and accessibility but is not a scientific result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Benchmarking methodology used hyperthreading for all CPU benchmarks, identical refinement parameters including random seeds for comparisons, and acknowledged that GPU nondeterministic scheduling can introduce minor noise in results, though all runs achieve convergence with variations well within estimated errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C123-C125 describe methodological details and quality control measures. These demonstrate appropriate experimental design (controlled parameters, C123) and honest reporting of GPU nondeterminism (C124) with validation that it doesn't affect conclusions (C125). This represents good scientific practice in benchmarking.",
+    "result_type": "MINOR"
+  }
+]

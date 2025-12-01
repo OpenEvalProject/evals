@@ -1,0 +1,2283 @@
+{
+  "submission": {
+    "id": "c63c3349-6bfb-499f-a891-06d5dc019fb3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:45:18.303819Z",
+    "updated_at": "2025-11-30T21:45:18.303819Z"
+  },
+  "content": [
+    {
+      "id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "submission_id": "c63c3349-6bfb-499f-a891-06d5dc019fb3",
+      "content_type": "manuscript",
+      "content_text": "# A Herpesviral induction of RAE-1 NKG2D ligand expression occurs through release of HDAC mediated repression\n\n## Authors\n\n- Trever T Greene<sup>1</sup>\n- Maria Tokuyama<sup>1</sup>\n- Giselle M Knudsen<sup>2</sup>\n- Michele Kunz<sup>1</sup>\n- James Lin<sup>1</sup>\n- Alexander L Greninger<sup>2</sup>\n- Victor R DeFilippis<sup>3</sup>\n- Joseph L DeRisi<sup>2</sup>\n- David H Raulet<sup>1</sup>\n- Laurent Coscoy<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California Berkeley United States\n2. Department of Biochemistry and Biophysics University of California San Francisco United States\n3. Vaccine and Gene Therapy Institute Oregon Health and Science University Beaverton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nNatural Killer (NK) cells are essential for control of viral infection and cancer. NK cells express NKG2D, an activating receptor that directly recognizes NKG2D ligands. These are expressed at low level on healthy cells, but are induced by stresses like infection and transformation. The physiological events that drive NKG2D ligand expression during infection are still poorly understood. We observed that the mouse cytomegalovirus encoded protein m18 is necessary and sufficient to drive expression of the RAE-1 family of NKG2D ligands. We demonstrate that RAE-1 is transcriptionally repressed by histone deacetylase inhibitor 3 (HDAC3) in healthy cells, and m18 relieves this repression by directly interacting with Casein Kinase II and preventing it from activating HDAC3. Accordingly, we found that HDAC inhibiting proteins from human herpesviruses induce human NKG2D ligand ULBP-1. Thus our findings indicate that virally mediated HDAC inhibition can act as a signal for the host to activate NK-cell recognition.\n\n## Introduction\n\nNatural Killer (NK) cells are an important part of the immune system, particularly to control viral infections and cancers (Raulet and Guerra, 2009; Lodoen and Lanier, 2006). NK cells recognize and lyse cells undergoing infection or transformation as well as secrete pro-inflammatory molecules that activate the adaptive immune system (Smyth et al., 2005a).\n\nThe activating receptor NKG2D is expressed on NK cells and provides one mechanism by which NK cells (as well as NK T cells, \u03b3\u03b4T cells, and CD8 and CD4 T cells) recognize their targets (Raulet, 2003). Ligands for NKG2D are absent or expressed at low levels on normal cells, but their expression is increased in response to infection or transformation, enabling NKG2D recognition (Raulet and Guerra, 2009; Lodoen and Lanier, 2006). NKG2D surveillance protects mice from several models of induced or spontaneous cancer (Smyth et al., 2005b; Guerra et al., 2008). In humans, a polymorphism predicted to reduce NKG2D signaling is linked to both increased cancer risk (Roszak et al., 2012) and susceptibility to viral infections (Taniguchi et al., 2015).\n\nThe ligands for NKG2D are diverse, and include two families in humans (ULBP1-6 and MICA-B). In mice, the MICA-B family is not represented and the ULBP family is subdivided into RAE-1\u03b1-\u03b5, MULT-1, and H60a-c subfamilies (Raulet et al., 2013). Each of these ligands binds NKG2D with a different affinity, but expression of a single family member is sufficient to stimulate killing by NK cells (Champsaur and Lanier, 2010). Thus, expression of these ligands are tightly controlled and nearly absent on healthy cells. It is still not well understood how the majority of NKG2D ligands are silenced in healthy tissue, but work by L\u00f3pez-Soto and colleagues have shown that silencing by histone deacetylases (HDACs) is involved, at least for ULBP-1\u00a0(L\u00f3pez-Soto et al., 2009). Most work on NKG2D ligand regulation has focused on their induction in cancer models. In this regard, several stimuli leading to ligand expression have been identified, these include: DNA damage (Gasser et al., 2005), hyper-proliferation (though the transcription factor E2F) (Jung et al., 2012), and PI3K/Ras signaling (Tokuyama et al., 2011; Liu et al., 2012). Understanding the exact mechanism of NKG2D ligand induction in various contexts remains an active area of research.\n\nNKG2D activation and evasion play particularly important roles during herpesvirus infection. Over 90% of the population is infected with one or more of these double stranded DNA viruses (Wald and Corey, 2007; Staras et al., 2006), which include cytomegalovirus (CMV), herpes simplex viruses (HSV), and Epstein Barr Virus (EBV). Co-evolution between herpesviruses and their hosts has resulted in a complex network of host-virus interactions that allows the host to sustain a life-long infection; the majority of infections are asymptomatic in immunocompetent individuals (Taniguchi et al., 2015; Biron et al., 1989). Herpesvirus infection causes a transcriptional upregulation of NKG2D ligand expression (Lodoen et al., 2003), yet these viruses apply multiple strategies to avoid NKG2D recognition by reducing NKG2D ligand expression at the surface of infected cells (Reviewed in Jonji\u0107 et al., 2008). This creates a balance between NK cell activation and viral evasion, and disruption of this balance can impact the outcome of infection. Hosts deficient in NK cell responses, including those with mutations that are predicted to specifically reduce NKG2D signaling, are especially prone to pathogenic herpesvirus infection (Taniguchi et al., 2015; Biron et al., 1989). Conversely, growth of herpesviruses with a defect NKG2D ligand evasion are attenuated in vivo (Jonji\u0107 et al., 2008).\n\nThe mechanisms governing NKG2D ligand regulation appear to be conserved between viral and non-viral stresses. For example, Phosphoinositide 3-kinase (PI3K) signaling is required for NKG2D ligand expression in transformed cells as well as during mouse cytomegalovirus (MCMV) infection (Tokuyama et al., 2011). Furthermore, DNA damage signaling can mediate NKG2D ligand induction in both cancer development (Gasser et al., 2005) and Kaposi\u2019s sarcoma herpesvirus (KSHV) infection (Bekerman et al., 2013). Understanding how cells regulate NKG2D ligands in the context of herpesvirus infection should therefore provide insight into ligand regulation and NK cell activation in systems beyond herpesvirus infection.\n\nHere, we show that in healthy cells, the expression of the RAE-1 family is repressed by the action of HDAC3 and describe a novel mechanism of ligand regulation during viral infection. We identified a single MCMV protein, m18, which is necessary and sufficient to induce expression of the RAE-1 family of mouse NKG2D ligands, and to induce NKG2D-dependent NK-cell killing in vitro. We found that m18 is a virally encoded HDAC inhibitor, and that it de-represses transcription of the Raet1 gene. The m18 protein directly interacts with Casein Kinase II (CK2) and prevents it from activating HDAC3. Notably, we also demonstrated that other viral HDAC inhibitors encoded by human herpesviruses similarly drive NKG2D ligand expression. Thus we propose a model in which constitutive HDAC activity suppresses NKG2D ligand expression in healthy tissue. During infection herpesviruses express proteins that inhibit HDAC activity, directly or indirectly, and this drives NKG2D ligand expression.\n\n## Results\n\n### RAE-1 induction during MCMV infection requires the m18 ORF\n\nMouse fibroblasts normally express low levels of Raet1 mRNA and protein, but RAE-1 expression is upregulated in response to cell stress, including viral infection (Lodoen et al., 2003). Previously, we showed that MCMV gene expression was necessary to induce RAE-1 expression during infection (Tokuyama et al., 2011). To identify the MCMV gene(s) responsible for this phenotype, we screened a panel of MCMV mutants (provided by Dr. Hidde Ploegh, Whitehead Institute) lacking genomic regions not essential for viral replication in vitro. We infected mouse fibroblasts with wild type (WT) or mutant MCMV and measured Raet1 mRNA expression by RT-qPCR 24 hr post-infection (h.p.i). In contrast to WT MCMV or other mutant viruses, the MCMV mutant virus deleted for open reading frames (ORFs) m01 through m22 (\u2206m1-22) failed to induce Raet1 expression (Figure 1A). We assessed whether this was the result of decreased infection or replication in our samples by measuring expression of MCMV immediate early gene 1 (ie1). Levels of MCMV ie1 were comparable to WT virus (Figure 1B). These results indicate that a viral gene or a combination of genes in this region is required to induce Raet1 expression.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig1-v2.jpg)\n\n**Figure 1.:** (A) RT-qPCR analysis of Raet1 expression during WT and \u2206m1-m22 MCMV infection. Data are normalized to uninfected fibroblasts (NI). *p<0.05 n.s., not significant (1-way ANOVA with Bonferroni\u2019s multiple comparison post-test). (B) RT-qPCR analysis of MCMV ie1 expression during WT and \u2206m1-m22 infection. n.s., not significant (student\u2019s t-test). (C, D) RT-qPCR analysis of Raet1 expression during infection with WT or mutant MCMV lacking the indicated ORFs. Data are normalized to uninfected fibroblasts (NI). (E, F) RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with mutant MCMV lacking the indicated ORFs and subsequently transfected with m18, m19, or empty vector control. Data are normalized to uninfected fibroblasts (NI). All data were obstained by RT-qPCR and are represented as mean\u00b1SEM. All data are representative of at least three independent experiments.\n\nThe region deleted in \u2206m1-22 MCMV contains 22 genes and several miRNAs (Juranic Lisnic et al., 2013). To narrow the list of candidates we generated additional MCMV mutants using bacterial artificial chromosome (BAC) recombination. We again infected mouse fibroblasts with WT and mutant viruses and measured Raet1 expression by RT-qPCR 24 h.p.i. Viruses lacking ORFs m12 to m18 (\u220612\u201318) and m18 to m22 (\u220618\u201322) failed to induce Raet1 expression in contrast to WT MCMV (Figure 1C). No known miRNAs are expressed from these deleted regions (Juranic Lisnic et al., 2013). To identify individual genes required for Raet1 induction, we made individual deletions for each of the genes from m12 to m22 and again infected mouse fibroblasts with these viruses 24 hr before measuring Raet1 expression by RT-qPCR. Only MCMV lacking ORF m18 or ORF m19 failed to induce Raet1 expression (Figure 1D), indicating that one or both of these ORFs are required to induce Raet1 expression.\n\nTo determine if expression of m18 or m19 in trans could rescue Raet1 expression, mouse fibroblasts were first infected with WT MCMV, \u2206m1-m22, and \u220618 or \u220619 MCMV, and then transfected with a plasmid encoding m18, m19, or an empty control plasmid. Expression of m18, but not m19 or vector control, rescued Raet1 expression in all cases Figure 1E,F) indicating that m18 is required for MCMV mediated Raet1 induction.\n\n### m18 expression is sufficient to induce RAE-1 expression and NK-cell killing\n\nTo assess if m18 expression is sufficient to induce Raet1 expression we transfected mouse fibroblasts with mammalian expression plasmids encoding m18, m19, or vector control and analyzed Raet1 mRNA by RT-qPCR (Figure 2A) and protein expression by flow cytometry (Figure 2B). Expression of m18 but not m19 was sufficient to induce Raet1 transcript and RAE-1 protein expression. Thus, our data indicate that m18 is the both necessary and sufficient to drive RAE-1 expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mouse fibroblasts were transfected with m18, m19, or vector control and analyzed for Raet1 expression by RT-qPCR Data are normalized to non-transfected fibroblasts (NT) and represented as mean\u00b1SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni\u2019s multiple comparison post-test). (B) Mouse fibroblasts transfected with m18, m19, or vector control plasmid were analyzed for RAE-1 surface expression by flow cytometry. Data are representative of three independent experiments. (C) Chromium release assay was performed on fibroblasts transduced with m18 or empty vector control and IL-2 activated NK cells from WT or NKG2D KO b6 littermates. Data are represented as mean \u00b1SEM. Data are representative of three independent experiments. (D)\u00a0Semi quantitative PCR analysis of m18 expression in fibroblasts infected with MCMV at the indicated times. (E) NIH3T3 or mouse fibroblasts were transfected with an expression plasmid encoding an m18-HA fusion protein, and lysates were analyzed for m18-HA expression by western blot. (F)\u00a0NIH 3T3 transfected with an expression plasmid encoding an m18-GFP fusion protein, and analyzed for localization of m18-GFP fusion protein by confocal microscopy.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A,B) Lysates from mouse fibroblasts transfected with a mammalian expression construct encoding m18 C-terminally fused to 3xFlag epitope tag (A), mammalian expression construct encoding m18 C terminally fused to GFP (B) or vector control. (C\u2013F) Mouse fibroblasts were transfected with the indicated constructs and analyzed for RAE-1 expression by flow cytomotry. (G) Mouse fibroblasts were transfected with a mammalian expression construct encoding m18 C-terminally fused to GFP, and analyzed for RAE-1 expression. From these data gates of GFP low, GFP medium, and GFP high (Left) were analyzed for RAE-1 expression (Right).\n\nA recent study suggests that the m19 ORF is unlikely to encode any viral mRNA or protein (Juranic Lisnic et al., 2013). As m19 is immediately adjacent to the transcriptional start site of m18 it is likely that \u220619 MCMV disrupts production of m18. This idea is bolstered by our data showing m18, but not m19, expression vector rescues RAE-1 expression in cells infected with \u2206m19 virus (Figure 1F). Thus we focused the rest of our study on the functional role of m18.\n\nWe next measured the ability of m18 to trigger NK-mediated killing using a chromium release assay. Fibroblasts transduced with m18 or an empty vector control were labeled with 51Cr, then incubated with IL-2 activated NK cells derived from WT or NKG2D knockout (KO) littermates at varying effector to target ratios. We observed that WT NK cells lysed m18-expressing fibroblasts in an NKG2D dependent manner (Figure 2C).\n\nPrevious studies have identified a CTL epitope produced from the m18 ORF (Holtappels et al., 2002), and peptides that correspond to this ORF have been identified in mass spectrometric analysis of MCMV virions (Kattenhorn et al., 2004). Otherwise little is known about m18 or its function. To characterize m18 we assessed the expression of m18 over the course of infection by harvesting RNA of MCMV infected fibroblasts at 2,4,8,12, and 24 hr post infection and amplifying the full length (3 kB) m18 mRNA by reverse transcription followed by semi quantitative PCR. In accordance with previous studies we observed this was mRNA produced as early as 2 hr post-infection (Figure 2D) (Lacaze et al., 2011). To characterize the m18 polypeptide we expressed a C-terminal hemagglutanin (HA)-tagged m18 protein in mouse fibroblasts and NIH 3T3s and analyzed cell lysates by western blot (Figure 2E). We observed a band at a size of\u00a0~180 KDa, well above the predicted size of 110 KDa, suggesting m18 is post-translationally modified. To evaluate m18 localization we expressed a C-terminal GFP m18 fusion protein in NIH 3T3s and analyzed localization of GFP by fluorescent microscopy. We found that the m18-GFP fusion protein localized mostly to the nucleus (Figure 2F). Importantly both m18-HA and m18-GFP constructs still induced expression of RAE-1 similarly to other m18 constructs (Figure 2\u2014figure supplement 1).\n\n### The Raet1e promoter is activated by m18 through an sp transcription factor binding site\n\nTo dissect the mechanism by which m18 induces RAE-1 expression, we measured m18\u2019s effect on Raet1e promoter activity. An expression vector encoding Firefly luciferase (FLuc) under the control of Raet1e promoter (Jung et al., 2012) was co-transfected into mouse fibroblasts with a vector encoding m18 or an empty control plasmid. Co-expression of m18 increased the activity of the Raet1e promoter relative to vector control (Figure 3B). Although E2F sites in the Raet1e promoter have been shown to drive RAE-1 expression during proliferation (Jung et al., 2012), these sites were dispensable for activation of the Raet1e promoter by m18 (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-v2.jpg)\n\n**Figure 3.:** (A) A graphic representation of Raet1e promoter luciferase constructs used in (B). (B) Raet1e promoter activity was measured by quantifying luminescence in lysates of cells transfected with the indicated luciferase promoter constructs in combination with m18 or vector control. Data are represented as fold increase in luminescence over vector control. Data are represented as mean\u00b1SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni\u2019s multiple comparison post-test). (C) Alignment of the WT m18RE (top), Sp consensus binding sequence (middle) and mutant m18RE (bottom). (D) Raet1e promoter activity was measured in cells co-transfected with a luciferase construct containing WT Raet1e promoter or Raet1e promoter containing a mutation in the Sp-binding site (m18RE*) and either m18 or vector control. Data shows fold increase in luminescence over vector control. Data are represented as mean (\u00b1SEM). Data are representative of three independent experiments. *p<0.05 (Student\u2019s T-test). (E) EMSA was performed on mouse fibroblast nuclear extracts incubated with radio-labeled m18RE (left panel) or radio-labeled Sp consensus sequence (right panel). The indicated non-radiolabeled oligos were added in 1000-fold excess before separation by non-denaturing PAGE. Data is representative of three experiments. (F) ChIP was performed on MCA-205 cells using the indicated antibodies and enrichment of the Raet1e promoter was assayed by qPCR. Values were normalized to input chromatin. Data are representative of three independent experiments. (G) Mouse fibroblasts were co-transfected with m18-RFP and DN-Sp1 GFP or GFP vector control and cells expressing both GFP and RFP were analyzed for RAE-1 expression by flow cytometry. Data is representative of three experiments. (H) Mouse fibroblasts were transfected with m18-GFP and treated with Mithramycin or vehicle control were analyzed for expression of RAE-1 by flow cytometry. Data is representative of three experiments.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Mouse fibroblasts were transfected with m18 or vector control plasmids along with with luciferase reporter constructs containing the RAE-1 promoter (WT Rae-1) or a Rae-1 promoter with both E2F binding elements mutated (E2F DKO). Data are represented as fold difference between promoter construct transfected with m18 over promoter construct transfected with vector control. Values are shown as mean\u00b1SEM. Data are representative of three independent experiments. n.s.: Not significant (1-way ANOVA with Bonferroni\u2019s multiple comparison post-test).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) MCA-205 cells stably tranduced with either vector control or m18 and analyzed for RAE-1 expression by flow cytometry. Data are representative of three independent experiments.\n\nTo identify the promoter elements required for m18 to drive expression from the Raet1e promoter, we generated a panel of serial 5\u2019 truncation mutants of the Raet1e promoter driving FLuc (Figure 3A) and co-transfected these with m18 expression vector or control vector. Promoters lacking 15 nucleotides at the 5\u2019 end of the promoter retained WT levels of induction in the presence of m18, but promoter activation by m18 was eliminated when 25 nucleotides were deleted (Figure 3B). These data indicate that the Raet1e promoter contains an m18 response element (m18RE) between \u221295 and \u221285 bp from the transcription start site.\n\nAnalysis of the m18RE for transcription factor (TF) binding sites using the JASPAR TF binding database (Mathelier et al., 2014) indicated a Specificity factor transcription factor family (Sp TF) binding site (Figure 3C) within the m18RE. To determine whether this site was required for m18 to drive expression from the Raet1e promoter we mutated this site (m18RE*) (Figure 3C) in the context of the rest of the Raet1e promoter. Promoter containing m18RE* showed significantly less promoter activity in the presence of m18 than the WT Raet1e promoter (Figure 3D), suggesting a role for Sp TFs in RAE-1 induction by m18.\n\nWe next assessed the ability of Sp TFs to bind the m18RE using an EMSA competition assay. Radiolabeled dsDNA oligonucleotides (oligos) of the m18RE or a Sp consensus binding motif (Sp) were incubated with nuclear lysates in the presence or absence of excess non-radiolabeled oligos of m18RE, m18RE*, Sp, or mutant Sp (that lacks Sp factor binding ie. Sp*). These were then separated on a non-denaturing PAGE by electrophoresis, and the location of the radiolabeled oligo in the gel was measured. Incubation of m18RE or Sp without competing oligo showed high weight shifted bands indicating that these oligos bound factors in the nuclear lysate. The Sp oligo, but not Sp* eliminated the shift of 32P-m18RE (Figure 3E, left panel) indicating that Sp but not Sp* can compete for binding with m18RE. Conversely, the m18RE oligo, but not m18RE*, competed with 32P-Sp (Figure 3E, right panel). Thus, the Sp consensus and m18RE oligos bind the same factors in nuclear lysate, suggesting that Sp TFs regulate Raet1 transcription.\n\nTo assess Sp TF binding to the Raet1e promoter, we performed a chromatin immunoprecipitation (ChIP) analysis of Sp TF binding in MCA-205 cells. These cells encode only the Raet1e and Raet1d isoforms of Raet1 genes allowing us to circumvent possible complications introduced by the presence of multiple highly homologous isoforms (Cerwenka et al., 2000). We first confirmed that MCA-205 cells have low basal RAE-1 expression and that RAE-1 expression is inducible by m18 (Figure 3\u2014figure supplement 2). We used Sp1, Sp3, or control IgG antibodies to IP sheared chromatin/DNA complexes from these cells, and quantified the level of Raet1e promoter enrichment by qPCR. Samples immunoprecipitated using an antibody against Sp3 but not Sp1 showed significant enrichment of the Raet1e promoter over the IgG control, indicating that Sp3 occupies the Raet1e promoter. Interestingly, m18 expression did not alter the amount of Sp3 bound to the Raet1e promoter (Figure 3G). This indicates that Sp3 constitutively occupies the Raet1e promoter.\n\nTo determine whether Sp3 binding is required for m18 induction of RAE-1 expression, we co-transfected mouse fibroblasts with expression vectors encoding m18 and a dominant negative Sp TF (DN-Sp) and measured RAE-1 surface expression levels by flow cytometry. DN-Sp consists of an Sp1 protein DNA binding domain lacking the transactivation domain. DN-Sp binds to Sp1/3 binding sites and acts as a competitive inhibitor of promoter activation (Won et al., 2002). Co-expression of DN-Sp and m18 resulted in a decreased percentage of RAE-1 expressing cells (Figure 3G) suggesting that Sp factors are important for m18 to drive RAE-1 expression. To further test this hypothesis we transfected mouse fibroblasts with an expression vector encoding m18 and treated these cells with mithramycin, an inhibitor of Sp factor binding to DNA (Blume et al., 1991). Mithramycin treatment reduced RAE-1 induction by m18 (Figure 3H) further indicating that Sp TF activity is required for RAE-1 induction by m18.\n\n### The Raet1e promoter is repressed by HDAC3 in an Sp-dependent manner\n\nThe human NKG2D ligand ULBP-1 is repressed by histone deacetylase 3 (HDAC3) in the absence of stress. HDAC3 is recruited to the ULBP1 promoter by Sp3 (L\u00f3pez-Soto et al., 2009). Additionally, HDAC inhibition induces RAE-1 expression (Gasser et al., 2005). Consistent with these findings, we observed that the chemical HDAC inhibitor butyrate activated the WT Raet1e promoter (Figure 4A). Interestingly, butyrate treatment failed to drive expression from the m18RE* mutant Raet1e promoter (Figure 4A). To assess whether chemical HDAC inhibition also requires Sp TFs to drive RAE-1 expression we treated mouse fibroblasts with butyrate in combination with mithramycin. Mithramycin treatment reduced RAE-1 expression in response to butyrate treatment (Figure 4B), indicating that Sp TFs are also required to drive RAE-1 expression in response to HDAC inhibition.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig4-v2.jpg)\n\n**Figure 4.:** (A) Raet1e promoter activity was measured in lysates from mouse fibroblasts transfected with either WT Raet1e promoter or the m18RE* promoter treated with sodium butyrate (NaB) (1 mM). Data are expressed as fold change between butyrate treated and untreated promoter. Data are represented as mean\u00b1SEM. Data are representative of three independent experiments. **p<0.005 (Student\u2019s T-test). (B) Cells treated with NaB (1 mM) with or without Mithramycin (1.5 \u03bcM) were analyzed for RAE-1 expression by flow cytometry. Data are representative of five independent experiments. (C) Cells were treated with HDAC inhibitors TSA (1 nM) (pan-HDACi), NaB (0.1 mM) (Class I and IIa), MS-275 (800 nM) (HDAC1,3), RGFP966 (640 nM) (HDAC3) 4-(dimethylamino)-N-[6-(hydroxyamino)\u22126-oxohexyl]-benzamide (HDAC1i) (1 \u03bcM) (HDAC1), or Droxinostat (3 \u03bcM) (HDAC6,8) and analyzed for RAE-1 expression by flow cytometry. Data are represented as mean fluorescent intensity\u00b1SEM. Data are representative of three independent experiments. ****p<0.00005 (1 way ANOVA with Bonferroni\u2019s multiple comparison post-test).\n\nGiven that histone deacetylase inhibitors induce the expression of RAE-1 we wanted to identify which HDAC family member(s) must be inhibited to drive RAE-1 expression. To identify specific HDAC inhibitors that induce RAE-1 expression, cells were treated with a panel of HDAC inhibitors and analyzed for RAE-1 expression by flow cytometry. The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression, as did the HDAC1/3 inhibitor MS-275 and the HDAC3 inhibitor RGFP966. In contrast, an HDAC1 inhibitor (4-(dimethylamino)-N-[6-(hydroxyamino)\u22126-oxohexyl]-benzamide), and an HDAC6,8 inhibitor (droxinostat) did not (Figure 4C). These results indicate that HDAC3 is involved in RAE-1 repression, likely through recruitment to the promoter by Sp3 (L\u00f3pez-Soto et al., 2009) though additional HDACs may be involved.\n\n### m18 expression increases histone acetylation\n\nAs m18 and chemical HDAC inhibitors drive expression through the same promoter element in the Raet1 promoter, we hypothesized that m18 acts as an HDAC inhibitor. HDACs modulate gene expression by deacetylating histones to maintain closed chromatin and repress gene expression. Thus one major prediction of this hypothesis is that histone acetylation should be increased in cells expressing m18.\n\nTo test the hypothesis that m18 expression increases histone acetylation we analyzed lysates of mouse fibroblasts transduced with m18 or vector control for acetylated histone 3 (AcH3) as well as bulk histone 3 (H3) by western blot. AcH3 levels were increased in m18 expressing mouse fibroblasts, as compared to those expressing vector control. H3 levels were unchanged (Figure 5A). To determine whether this effect was taking place as a direct result of m18 expression we transfected mouse fibroblasts with a construct encoding m18 C-terminally fused to red fluorescent protein (RFP), and assessed AcH3 levels by immunofluorescence assay (Figure 5B). We compared the fluorescent intensity of AcH3 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of AcH3 in m18 expressing cells. AcH3 level was unchanged in cells transfected with RFP alone (Figure 5C). Expression of m18-RFP or RFP alone did not affect H3 levels (Figure 5\u2014figure supplement 1). Finally, we assessed whether m18 expression increased acetylation at the Raet1e promoter by performing ChIP against AcH3 or H3 out of lysates from MCA-205 cells transduced with m18 or vector control. Analysis of Raet1e promoter enrichment showed an increase in AcH3 levels associated with the Raet1e promoter in m18 expressing cells while H3 levels were unchanged (Figure 5D). Together, these results indicate that m18 increases histone acetylation in cells, including at the Raet1e promoter.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mouse fibroblasts stably expressing m18 or vector control were analyzed for H3 and AcH3 expression by western blot. Data are representative of three independent experiments. (B) Representative image of cells transiently transfected with vector encoding m18 with a C-terminal fusion to RFP (m18-RFP) and stained for AcH3. (C) Quantification of AcH3 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean\u00b1SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student\u2019s T-test). (D) ChIP was performed for AcH3 and H3 in MCA-205 mouse carcinoma cells stably expressing m18 or vector control. Data are normalized to input chromatin and represented as mean\u00b1SEM. Data are representative of three independent experiments. *p<0.05, n.s., not significant (Student\u2019s t-test).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative picture of H3 staining in m18-RFP transfected cells. (B) Nuclear staining of H3 was quantified in FIJI. Red bars are representative of mean\u00b1SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).\n\n### CK2 inhibition connects m18 to HDAC3 regulation\n\nTo investigate the mechanism by which m18 increases histone acetylation, we analyzed m18 binding to host proteins by immunoprecipitation (IP) followed by mass spectrometry. N- or C-terminally Strep-tagged m18 was transiently expressed in HEK293T cells, and native m18 complexes were captured by streptactin-affinity capture. Proteins were identified with peptide sequencing by LC-MS/MS, and the results are reported in Supplementary files 1 and 2. We used HEK293T for these assays as they allowed for direct comparison with similar virus-host AP-MS samples, and enabled us to identify high frequency background proteins found in this system (Supplementary file 2) (previously reported in 30). To rank the specificity of the remaining candidate protein-protein interactions, a Z-score was calculated with three affinity experiments and 598 unrelated virus-host APMS experiments (Supplementary file 3). This allowed identification of the most specific interaction as casein kinase II beta (CSNK2B) in APMS samples from human HEK293T cells. Peptide sequencing data from LC-MS/MS analysis covered 48\u201355% of the annotated m18 ORF protein sequence overall, and included phosphorylations at several S/T sites as well as peptides from the Strep-tag (Supplementary file 4). We confirmed the interaction with CK2 in NIH-3T3 by IP-Western blot (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunoprecipitation (IP) of m18 was performed in lysates of cells expressing m18-3xFlag or empty 3xFlag vector, and the products were analyzed for FLAG and CK2\u03b2 by western blot. Data are representative of three independent experiments. (B) Mouse fibroblasts were treated with CK2 inhibitor TBBt in conjunction with zVAD or zVAD alone and analyzed for RAE-1 expression by flow cytometry. Data is representative of three independent experiments. (C) Representative image of fibroblasts expressing m18-RFP and stained for HDAC3 pS424. (D) Quantification of HDAC3 pS424 levels in cells expressing m18-RFP or RFP control vector from compared to non-transfected controls in same field of view. Red bars are representative of mean\u00b1SEM. Data are representative of three independent experiments. ****p<0.00005. n.s., not significant. (Student\u2019s T-test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Representative picture of HDAC3 staining in m18-RFP transfected cells. (B) Nuclear staining of HDAC3 was quantified in FIJI. Data are representative of mean\u00b1SEM. Data are representative of three independent experiments. n.s., Not significant (Students T-test).\n\nCK2 is involved in many biological processes, including DNA damage signaling (Ghavidel and Schultz, 2001), apoptosis (Hellwig et al., 2010), and cell cycle progression (Homma and Homma, 2008). CK2 is a constitutively active kinase that phosphorylates HDAC3 at serine 424 (S424) activating it (Zhang et al., 2005). The activation of HDAC3 by CK2 has previously been demonstrated to help drive chromatin condensation during mitosis (Patil et al., 2016) and has been shown to repress expression of genes during beige fat thermogenesis (Shinoda et al., 2015) indicating that this interaction can functionally regulate both chromatin structure and gene expression. Thus, we hypothesized that CK2 activation of HDAC3 represses Raet1 transcription in healthy cells, while inhibition of CK2 by m18 would result in less HDAC3 activity and thus induce Raet1 transcription.\n\nTo test this hypothesis we investigated the ability of CK2 specific inhibitors to induce the expression of RAE-1. As CK2 acts as an anti-apoptotic factor (Hellwig et al., 2010) long-term inhibition of CK2 leads to apoptosis (Ruzzene et al., 2002). To circumvent this technical challenge, mouse fibroblasts were treated with zVAD caspase inhibitor in combination with the chemical inhibitor of CK2, TBBt, and cell surface RAE-1 expression was analyzed by flow cytometry. TBBt treatment induced RAE-1 expression in excess of zVAD alone (Figure 6D), indicating CK2 is a negative regulator of RAE-1 expression.\n\nCK2 activates HDAC3 by phosphorylating HDAC3 at S424, thus CK2 inhibition by m18 should reduce levels of HDAC3 S424. To test this prediction we analyzed the HDAC3 S424 phosphorylation status in mouse fibroblasts expressing m18. We transfected mouse fibroblasts with a construct encoding m18 C-terminally fused to RFP or a control vector only expressing RFP, and assessed HDAC3 S424 levels by IFA (Figure 6E). We compared the fluorescent intensity of HDAC3 S424 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of HDAC3 S424 in m18 expressing cells (Figure 6F). By the same measure overall levels of HDAC3 were unaffected by m18 transfection (Figure 6\u2014figure supplement 1). This decrease was not observed in mouse fibroblasts transfected with control RFP vector. Together, these results indicate that m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation.\n\n### m18 is not required for MCMV growth in vitro or acutely in vivo\n\nThe fact that m18 ORF is highly conserved across strains of MCMV (Khairallah et al., 2015) suggests that m18 exert an essential function in MCMV life cycle. Such function is unlikely to be ligand upregulation as their expression would be detrimental for viral fitness (and accordingly the virus actively evades them). To assess whether m18 was required for growth in vitro we infected NIH 3T3 cells with WT or \u220618 MCMV and assessed viral output by plaque assay 2,3,4,5 and six days post infection. \u220618 MCMV did not grow significantly different from WT MCMV in this assay (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig7-v2.jpg)\n\n**Figure 7.:** (A)\u00a0MCMV titers in supernatents of NIH-3T3 cells infected with either WT or \u220618 MCMV. (B) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of BALB/c mice infected with 500,000 p.f.u. of WT or MCMVm18stop. (C) qPCR analysis of MCMV genome copy number from spleen, lung, and liver tissues of RAG-/-\u03b3C-/- Mice infected with 50,000 p.f.u. of WT or MCMVm18stop.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A)\u00a0RT-qPCR analysis of Raet1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. (B) RT-qPCR analysis of MCMV IE-1 expression in mouse fibroblasts infected with WTMCMV or MCMVm18stop. **p<0.05. n.s., Not significant (Students T-test).\n\nWe then sought to determine whether m18 is critical for viral growth in vivo. As the \u220618 MCMV includes a large (3 kB) genome deletion we generated an additional mutant MCMV to eliminate m18 expression with minimal alteration to the rest of the genome. This virus mutant (MCMVm18stop) includes a set of two stop codons early in the m18 coding sequence preventing the production of the m18 protein. Like \u220618 MCMV, MCMVm18stop fails to induce RAE-1 expression in mouse fibroblasts, but has no defect in IE-1 expression (Figure 7\u2014figure supplement 1) and growth was similar to wild type virus.\n\nTo assess the roll of m18 in vivo we infected BALB/c mice by intraperitoneal (i.p.) injection with WT MCMV or MCMVm18stop, and assessed the levels MCMV five days later in the spleen, liver and lungs of these mice by qPCR (Smith et al., 2008). Mice infected with WT or MCMVm18stop had identical levels of MCMV in all organs assayed at this time (Figure 7B). This indicates that m18 elimination has no impact on viral growth in WT mice.\n\nIt is possible that a deleterious effect of losing m18 was masked in WT mice by immune surveillance. To assess viral fitness in the absence of immune surveillance, we assessed the growth of WT MCMV and MCMVm18stop in RAG-/- yC-/- mice. These mice lack T cells, B cells, and NK cells. Interestingly, these mice also showed identical levels of MCMV between the WT and mutant viruses in spleen, lung, and liver (Figure 7C). Indicating that m18 is dispensable for viral growth at this early time point.\n\n### Model for m18 induced RAE-1 expression in MCMV infection\n\nTogether our results suggest a model for RAE-1 regulation in which HDAC3, constitutively activated by CK2, maintains Raet1 in a repressed state. During MCMV infection m18 protein interacts with CK2 and prevents the activation of HDAC3, reducing its repressive activity. The Raet1 promoter becomes unrepressed and constitutively bound Sp3 can recruit transcriptional machinery to transcribe Raet1. To circumvent this induction that would target infected cells for elimination by NK-Cells, MCMV encodes a number of highly efficient evasins that prevent NKG2D from recognizing RAE-1 during viral infection (Figure 8).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig8-v2.jpg)\n\n**Figure 8.:** In the absence of stimulus CK2 phosphoylates and activates HDAC3, which represses the Raet1 promoter. During MCMV infection m18 directly interacts with CK2 preventing activation of HDAC3 and allowing the Raet1 promoter to become de-repressed, and permiting the expression of Raet1. MCMV also encodes a variety of evasins that prevent the cell surface expression of RAE-1 in order to evade recognition and killing by NK cells. Together these systems allow the virus to inhibit HDAC3 activity, while evading the deleterious effects of inducing NKG2D ligands.\n\n### HDAC inhibitors of other herpesviruses induce expression of NKG2D ligands\n\nSome other herpesviruses also encode viral HDAC inhibitors. Two prominent examples of HDAC inhibiting viral proteins are IE1 from HCMV (Nevels et al., 2004) and ICP0 from HSV-1 (Gu et al., 2005). We sought to determine whether expression of these proteins would be sufficient to induce expression of human NKG2D ligands. We transfected human foreskin fibroblasts (HFFs) with plasmids expressing IE1 or ICP0 or empty vector and measured expression of human NKG2D-ligands by RT-qPCR compared to vector control. Both ICP0 and IE1 induced expression of human ULBP1 (Figure 9A,\u00a0B). These results suggest that viral inhibition of HDACs is a common mechanism driving NKG2D ligand induction in humans and mice.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/14749/elife-14749-fig9-v2.jpg)\n\n**Figure 9.:** (A, B) RT-qPCR analysis of ULBP1 expression in Human foreskin fibroblasts (HFFs) transfected with empty vector or IE-1 (HCMV), or ICP0 (HSV-1). Data are normalized to vector control and represented as mean\u00b1SEM. Data are representative of three independent experiments.\n\n## Discussion\n\nOur results suggest a model in which RAE-1 expression is repressed in the absence of stress signals due to closed chromatin around the Raet1 locus. This repression is maintained by constitutive phosphorylation and activation of HDAC3 by CK2. However, during MCMV infection, m18 reduces phosphorylation of HDAC3 by directly interacting with CK2 an activator of HDAC3. As a result, HDAC3 becomes less activated and the chromatin around the Raet1 locus becomes acetylated and accessible. Sp3 is then able to recruit the general transcriptional machinery to transcribe Raet1 (Figure 8). These findings reveal how the chromatin environment contributes to silencing of Raet1 in unstressed cells, as well as how a single viral protein relieves this repression.\n\nIt is notable that HDAC inhibition is a feature common to a number of herpesviruses. Many of the known HDAC inhibiting proteins from herpesviruses are crucial to viral fitness (Nevels et al., 2004; Gu et al., 2005). Our work demonstrated that for viruses, encoding HDAC inhibiting proteins comes at the cost of inducing NKG2D ligand transcription. It is thus tempting to speculate that viruses being unable to replicate efficiently without inhibiting HDACs have had to evolve a plethora of proteins that reduce NKG2D ligand expression at the protein level (Jonji\u0107 et al., 2008).\n\nWhile it is appreciated that viral HDAC inhibitors can improve viral fitness, the precise significance of virally encoded HDAC inhibitors in herpesvirus pathogenesis is still not well understood. Cellular HDAC enzymes have been shown to repress viral gene expression and, in some cases replication. In the context of lytic infection herpes viruses must overcome this repression using viral HDAC inhibitors (Nevels et al., 2004), in fact chemical HDAC inhibition can rescue a defect in viral replication caused by HCMV IE1 deficiency (Nevels et al., 2004). Additionally, viral gene repression by HDACs also promotes viral latency. HDACs have been shown to occupy the promoters of the immediate early genes that drive reactivation in HCMV and MCMV (Murphy et al., 2002; Liu et al., 2010), and have been shown to repress KSHV reactivation (Shin et al., 2014). In fact, inhibition of HDACs is sufficient to drive reactivation in latently infected KSHV cell lines (Miller et al., 1997). In these cases viral HDAC inhibitors may provide a way for the virus to promote its own reactivation from latency. Importantly, these proteins have been described in human viruses and their function in vivo has not been well established. We do not observe a role for m18 early in MCMV infection in vivo but it is possible that m18 inhibits HDACs in order to benefit the virus during later stages of infection such as during establishment of MCMV latency or reactivation from latency similar to KSHV. Thus, it will be interesting in the future to determine if m18 has alternative functions that contribute to viral fitness during later stages of infection.\n\nOur data provide the first evidence for the role of CK2 in NKG2D regulation. Given that CK2 activity can be modulated by many stress pathways, it will be of interest to assess whether CK2 contributes to NKG2D ligand regulation in situations such as DNA damage. Furthermore, CK2 is broadly involved in many cellular processes. Thus m18 inhibition of CK2 is likely to have additional effects on the cell. Chemical CK2 inhibitors enhance the anti-viral effect of Type I interferon signaling during HSV-1 infection (Smith et al., 2011), implicating CK2 as a key factor in host response to viral infection. It will be interesting in the future to elucidate how manipulation of CK2 by m18 impacts the host during viral infection.\n\nIn addition to their role in viral infection, HDACs are also important for the control of cancer. Expression of Class I HDAC enzymes (including HDAC3) is increased in cancers (Glozak and Seto, 2007). Increased HDAC expression promotes carcinogenesis through down regulation of tumor suppressors such as p21 in an Sp1/Sp3 dependent manner (Wilson et al., 2010). As NKG2D ligand ULBP-1 is suppressed by HDAC3, it has been proposed that increased HDAC expression also contributes cancer\u2019s ability to evade NKG2D recognition (L\u00f3pez-Soto et al., 2009). Several chemical HDAC inhibitors, including some used in this study, are being developed as anti-cancer drugs (West and Johnstone, 2014). While these drugs act in multiple ways, one effect may be to induce expression of NKG2D ligands leading to increased NK cell recognition and NK cell activation (L\u00f3pez-Soto et al., 2009; West and Johnstone, 2014). Our study suggests that HDAC3-specific inhibitors may be particularly adept at leveraging this aspect of anti-cancer activity. CK2 is also highly upregulated in cancers (Gonz\u00e1lez et al., 2008), and one intriguing possibility is that this may contribute to NKG2D ligand repression and NK cell evasion.\n\nThe regulation of NKG2D ligands is an important pivot point in immune regulation. Active repression of NKG2D ligand transcription by HDACs provides a way for the host to repress NKG2D ligand expression in the absence of stress while allowing for the possibility of expression when experiencing stress. Our study suggests that this system may also provide a strategy for hosts to recognize and respond to viral infection.\n\n## Materials and methods\n\n### Cell lines and reagents\n\nAll cells cultured in DMEM with 10% FBS (Invitrogen,\u00a0Carlsbad\u00a0CA) and 100 \u03bc/mL Penicillin/Streptomycin (Invitrogen) unless otherwise noted. NIH 3T3 cells (ATC#CRL-1658) were obtained from the ATTC. HFF-1 cells (ATCC#SCRC-1041) were obtained from the ATTC. Mouse fibroblasts were generated as described (Gasser et al., 2005) and provided by Pr D Raulet. MCA-205 were received from Pr. L. Linear (UCSF). All cell lines tested negative for mycoplasma as described by Young et al. (2010). Mithramycin A and Butyrate were purchased from Sigma\u00a0(St.\u00a0Louis,\u00a0MO). RGFP966 was purchased from Seleckchem\u00a0(Houston,\u00a0TX). Antibodies recognizing Sp1 (product # 07\u2013645), Acetylated Histone 3 (product # 06\u2013599) were purchased from Millipore\u00a0(Billerica,\u00a0MA). Antibodies against histone 3 (clone D1H2), HDAC3 (Clone 7G685), and antibody recognizing CKII substrate (#8738) were purchased from Cell Signaling Technologies\u00a0(Danvers\u00a0MA). Antibody recognizing CK2\u03b2 (Product PA5-27416) was purchased from Thermo Fisher\u00a0(Waltham,\u00a0MA). Antibody against Sp3 (D-20) was purchased from Santa Cruz Biotechnology. Plasmid encoding HSV-1 ICP0 was provided by the Knipe Lab (Harvard). Plasmid encoding HCMV IE1 was provided by the Weinberger Lab (UCSF).\n\n### Transfection\n\nCells were transfected using FuGENE HD reagent (Promega,\u00a0Madison\u00a0WI) according to manufacturer\u2019s instructions.\n\n### RT-qPCR and qPCR\n\nRNA from mouse fibroblasts or human foreskin fibroblasts was extracted in Trizol (Invitrogen). DNA was removed through treatment with RQ1 DNase (Promega), RNA abundance and quality was measured using a nanodrop ND-1000 to analyze 260/230 ratios. and 1 \u03bcg of RNA was reverse transcribed for 45 min at 42\u00b0C using oligo(dT) primer (IDT) and SuperScript II (Invitrogen) in 20 \u03bcl total volume. cDNA was analyzed using an ABI7300 RT-qPCR System and cycled using a 95\u00b0C dissociation step for 15 s and a 60\u00b0C amplification step for 1 min for 40 cycles. Samples were prepared as 1 \u03bcl of prepared cDNA with 10 \u03bcl of iTAQ universal Syber Green supermix (Invitrogen) with primers at a concentration of 300 nM in a total reaction volume of 20 \u03bcl. Cq values were determined using the Applied Biosystems 7300 SDS software. All samples were run as triplicates from the same pool of cDNA and the results averaged. Average Cq values were then normalized by \u2206\u2206CT against the indicated reference gene. Biological replicates were then used to calculate mean and standard deviation of values. Between 3 and 5 biological replicates were used in each experiment. Samples without RT were included to control for DNA contamination. RAE-1 primers were described previously (Tokuyama et al., 2011), ULBP-1 primers can be found in Table 1.\n\n**Table 1.**\n qPCR primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene symbol</th>\n      <th>Accession number</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n      <th>Amplicon length</th>\n      <th>Location</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ULBP1</td>\n      <td>Q9BZM6</td>\n      <td>gccaggatgtcttgtgagcatgaa</td>\n      <td>ttcttggctccaggatgaagtgct</td>\n      <td>134</td>\n      <td>Exon 3</td>\n    </tr>\n    <tr>\n      <td>HPRT</td>\n      <td>P00492</td>\n      <td>ggtgaaaaggaccccacgaag</td>\n      <td>ggactccagatgtttccaaac</td>\n      <td>205</td>\n      <td>Exon Spanning(7\u20139)</td>\n    </tr>\n  </tbody>\n</table>\n\nFor DNA qPCR DNA was extracted from single cell suspensions of mouse tissue using Quiagen DNeasy Blood and Tissue Kit (Qiagen). DNA abundance and quality was measured using a nanodrop ND-100 to analyze 260/290 ratios. Samples for use in qPCR were prepared as 2 \u03bcL of isolated DNA with 10 \u03bcL of iTAQ universal Syber Green supermix (Invitrogen) with primers at a concentration of 300 nM, and cycled as described above with Cq values calculated as detailed above. Between 5\u20137 biological replicates were used in each experiment, tissues from uninfected mice were included to control for viral DNA contamination, and buffer processed without tissues were included to control for non-viral DNA contamination. MCMV gB primers were described previously by Khairallah and collegues. Standard curve for the calculation of absolute genome number was done using known quantity of purified MCMV BAC. Genome copy per gram tissue was calculated from weight of starting material and genome copies in each sample. Limit of detection was defined for each experiment and tissue as the copy number calculated from the average Cq from uninfected tissue.\n\n### Virus production, propagation, and infection\n\nMutant MCMV lacking genes m01 through m22 (MCMV\u22061\u201322) was a gift from Dr. Hidde Ploegh (Whitehead Institute, MIT, MA). E. coli strain DH10B were transformed with MCMV BAC pSM3fr and a plasmid encoding the arabinose-inducible Red recombination genes, pkD46, were obtained from Dr. Martin Messerle (Hannover Medical School, Germany). Kanamycin cassette was amplified from pACYC177 (NEB,\u00a0Ipswitch\u00a0MA) containing 50 bp sequences on both ends homologous to the region of interest (Table 2). Transformation and induction of recombination was performed as described (Young et al., 2010). E. coli strain GS1783 containing MCMV pSM3fr was provided by Dr. Caroline Kulesza (Fort Lewis College) and used to perform scarless BAC recombination as described by Tischer and colleagues (Borst et al., 2007). The resulting BAC products were analyzed for anticipated mutation by PCR and EcoRI digestion. NIH 3T3 cells were transfected with BAC DNA, and supernatant was collected a week later. Supernatants were passaged twice in NIH 3T3 cells before use. All tissue culture infection experiments were performed at an MOI of 1.\n\n**Table 2.**\n BAC mutagenesis primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer pair</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Kanamycin*</td>\n      <td>CGATTTATTCAACAAAGCCACGTTGTGTCT</td>\n      <td>GCCAGTGTTACAACCAATTAACCAATTCTGA</td>\n    </tr>\n    <tr>\n      <td>\u03941-6</td>\n      <td>gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgag</td>\n      <td>atttacatactcaggacaggtgtgggcggttccaggtgtacgtaagcaga</td>\n    </tr>\n    <tr>\n      <td>\u03946-12</td>\n      <td>acacgcccaaaatcacgcaatcatatataaatggacaatgaagccaatct</td>\n      <td>gttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaa</td>\n    </tr>\n    <tr>\n      <td>\u039412-18</td>\n      <td>caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttc</td>\n      <td>gaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgc</td>\n    </tr>\n    <tr>\n      <td>\u039418-22</td>\n      <td>ttgaatacgattgtttttattggcagcactgagcacacgtcccccccacc</td>\n      <td>atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>\n    </tr>\n    <tr>\n      <td>\u03941-22</td>\n      <td>gtgtcacgcgcacgtgttagcataggaatccagacgcgcgctcgcctgag</td>\n      <td>atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>\n    </tr>\n    <tr>\n      <td>\u039412</td>\n      <td>caacaaataaaaattgtacgctcattttatcgcgtctctgtcatgtgttc</td>\n      <td>gttctaagtaaaaggggatacgggcgggcgatacagatgtacgaacccaa</td>\n    </tr>\n    <tr>\n      <td>\u039413</td>\n      <td>tagaacaatatgtaaaccatctctcattcagctacatacagacaagggac</td>\n      <td>Tgataagaattatactttaatgggggacacgttctagaacacgataaact</td>\n    </tr>\n    <tr>\n      <td>\u039414</td>\n      <td>Agtataattcttatcaattataccagagtttggtatttttttaatctgag</td>\n      <td>Cgagtgtgaaatggggaaactggcgcgtcttttcattcgtgctccacagc</td>\n    </tr>\n    <tr>\n      <td>\u039415/16</td>\n      <td>cactcgctatccttcgaccacactttcgagtcttttaccgtatcaagaag</td>\n      <td>Acaataaagatttcagacaaaaagtatggattgtgtgataatttattaaa</td>\n    </tr>\n    <tr>\n      <td>\u039417</td>\n      <td>catactttttgtctgaaatctttattgtacgccatcgaaataaggggagc</td>\n      <td>gtctgctttctttgaaatcggacgaccgatcagaacgtccgccttcgaga</td>\n    </tr>\n    <tr>\n      <td>\u220618</td>\n      <td>ttgaatacgattgtttttattggcagcactgagcacacgtcccccccacc</td>\n      <td>Gaggggttggtacggttcgagcgattttggtagtccgagacgtccgccgc</td>\n    </tr>\n    <tr>\n      <td>\u220619</td>\n      <td>ccaagacgctcgtcttataacaccgactgacgtttactccgactcaggat</td>\n      <td>Tcgaggcgagtcttcggagctgtacgctagggcgatcgccatcaccctct</td>\n    </tr>\n    <tr>\n      <td>\u220620/21</td>\n      <td>Cggcgacgacggcgatcacggcgagggtgaagagggtgatggcgatcgcc</td>\n      <td>Gctgtcatgtaaatggacggttattaaaagatgaggtcgtgtgacctctg</td>\n    </tr>\n    <tr>\n      <td>\u220622</td>\n      <td>Gggtagcgcctcgatcgacgagcgtcggacaaagaaaccgggagaagaag</td>\n      <td>Atccgctcgaggccatgctcaccaagaagaccgagtgtcccaacaacttc</td>\n    </tr>\n    <tr>\n      <td>MCMVm18stop</td>\n      <td>gcagcggttccgccgtccccatcgcgacgatgggcgctccgaattcctaataaaccgactcccgtccccaccaaggatgacgacgataagtaggg</td>\n      <td>ggagcgcccatcgtcgcgatttattaggaattccgcgctgctggcgatgagcgtggtggggacgggagtcggtaaccaattaaccaattctgattag</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Kanamycin specific oligos were added to the 3 the 3ggaattccgcgctgctggcgatgagcgtggtgggga._\n\n### Mice\n\nBALB/cJ were purchased from The Jackson Laboratory. All mice were maintained under specific pathogen free conditions in the UC-Berkeley Animal Facilities. Mice used in experiments were between 3 and 8 weeks of age. All experimental procedures were conducted in accordance with the institution guidelines for care and use. Mice were infected with the indicated amount of virus. Liver, lung, and spleen homogenates were prepared at day five post infection, and viral titer was determined by qPCR specific for MCMV gB as described previously (Smith et al., 2008).\n\n### Luciferase assay\n\nMouse fibroblasts were transfected with indicated constructs. Six separate transfections were averaged for each condition. At 24 hr post transfection passive lysis buffer (Promega #E1941) was used to lyse the cells. Lysates were transferred to an opaque assay plate (Corning,\u00a0Corning\u00a0NY) and D-Luciferin reagent was added to the plate. Luminescence was assessed over 10 s using an LMAX-II luminometer.\n\n### RAE-1 staining\n\nMouse fibroblasts were harvested in 2 mM EDTA in PBS and stained with monoclonal rat anti panRAE-1or Rat IgG2A isotype control (R&D systems, Minneapolis MN) followed by APC-conjugated goat anti-rat IgG (Jackson ImmunoResearch, West Grove PA). All samples were co-stained with 7-AAD (BD Biosciences, San Jose CA) to exclude dead cells. Cells were analyzed by Flow cytometry using an LSR-Fortessa flow cytometer (BD\u00a0Biosciences).\n\n### Electrophoretic mobility shift assay (EMSA)\n\nNuclear lysates were prepared as described by Jianping Ye (Pennington Biomedical Research Center, Louisiana State University). Oligonucleotides for m18RE and Sp1 consensus sites can be found in Table 3. Oligonucleotides were labeled with 32P-y-ATP using T4 kinase (NEB). Probes were purified on a G-50 column (G&E health care, Little Chalfont UK), and incorporated radioactivity was measured using a Beckman LS60001C scintillation counter. 4000cpm of labeled probe were added to nuclear lysates. Where indicated, competing unlabeled DNA probes were included in the reaction at a 1000:1 ratio. For super-shift assay 1ug of indicated Ab was added. Samples were run on a 5% native acrylamide gel. Gels were dried before being exposed in phosphofluor cassettes and analyzed using a Typhoon imager.\n\n**Table 3.**\n EMSA Oligos.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer pair</th>\n      <th>Forward</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>m18RE</td>\n      <td>ggctcgcaggtccacgccccttggcaccggag</td>\n    </tr>\n    <tr>\n      <td>m18RE*</td>\n      <td>ggctcgcaggtccaaaccccttggcaccggag</td>\n    </tr>\n    <tr>\n      <td>Sp Consensus</td>\n      <td>attcgatcggggcggggcgagc</td>\n    </tr>\n    <tr>\n      <td>Sp* Consensus</td>\n      <td>attcgatcggttcggggcgagc</td>\n    </tr>\n  </tbody>\n</table>\n\n### Affinity purification and peptide sequencing by LC-MS/MS\n\nAffinity-purification mass spectrometry (APMS) was used to identify candidate host-virus protein-protein interactions for the m18 protein. To this end, the annotated m18 orf was cloned into the pcDNA4TO expression vector encoding either an N-terminal or C-terminal 2X-StrepTag (m18-NS or m18-CS) for affinity purification and peptide sequencing by tandem liquid chromatography-mass spectrometry (LC-MS/MS) using methods identical to those previously reported (Greninger et al., 2012) Briefly, 10 \u03bcg of vector were transfected into 15 cm cultures of HEK293T cells using a Transit-LT1 reagent (Mirus Bio, Madison, WI) at a 3:1 vol to mg plasmid, and the cells were grown for 48 hr. Lysates were prepared in 0.1% NP40, 50 mM Tris HCl pH 8.0, 150 mM NaCl, 1 mM EDTA. The M18 protein was captured on StrepTactin Sepharose, and then eluted with 1X desthiobiotin (IBA Technology, Gottingen Germany) as reported. To identify captured proteins by proteomic analysis, the protein samples were reduced with DTT, alkylated with iodoacetamide, and digested in solution with sequencing grade porcine trypsin (Promega) following an identical protocol to that reported (Greninger et al., 2012). The resulting peptides were subjected to LC-MS/MS on an LTQ-FT mass spectrometer (Thermo Scientific) equipped with a Nano-Acquity ultraperformance liquid chromatography system (Waters) for reversed-phase chromatography with a C18 column (BEH130; 1.7 \u03bcm bead size, 100 \u03bcm by 100 \u03bcm), using identical acquisition parameters as reported (Greninger et al., 2012). MS data were searched using Protein Prospector software v. 5.10.17 (54) against the sequence of the m18 protein constructs and the NCBI Refseq human + virus database (downloaded Jan. 14, 2012) containing 131,459 sequences, concatenated with 131,459 additional randomized decoy sequences (Chalkley et al., 2008). A false discovery rate of\u00a0<1% was obtained using protein score of 22, peptide score 15, protein expectation value 0.05 and a peptide expectation value of 0.001. Modifications allowed in the protein identification search were: fixed carbamidomethylation of Cys and the following variable modifications: oxidation of Met, start-Met cleavage, oxidation of the N-terminus, acetylation of the N-terminus, and pyroglutamate formation from Gln. HEK293T cells were chosen for these experiments to allow for identification of frequent background proteins and for specificity scoring, by comparison with a background dataset of unrelated picornavirus-host APMS experiments assayed in the same experimental system (Greninger et al., 2012, PMC4332878). Specificity scoring by Z-score was calculated using N\u00a0=\u00a03 m18 APMS experiments, which included one m18-NS and two biological replicate m18-CS experiments, and a background dataset of 598 unrelated picornavirus-host APMS experiments. Additional peptides for the m18 protein constructs were identified by allowing additional missed cleavages and Ser/Thr phosphorylation. Phosphorylation sites are reported with a site localization (SLIP) score, where SLIP\u00a0\u22656 corresponds to\u00a0>95% confident site assignment (PMC3134073).\n\n### Western blotting\n\nNuclear and cytoplasmic lysates were separated as above for EMSA analysis. Protein amounts were quantified using BCA assay (Thermo). Cell lysates were run on a 4\u201312% SDS-PAGE gradient gel and transferred to Immobilon-fl PVDF membranes (Millipore). Membranes were blocked with 5% Milk in PBS with 0.05%, or 1% BSA Tween before being probed with the indicated antibodies. Where phosphor-epitopes were being assayed, 1% BSA was used in place of 5% milk. Membranes were probed with Li-COR secondary antibodies and imaged on an Odyssey Li-COR imager.\n\n### CHiP\n\nChIP was performed essentially as previously described (Elias and Gygi, 2007) with the exception being the use of a Fisher Scientific Sonic Dismembrator Model 100 to shear chromatin. Raet1e Promoter DNA was quantified by qPCR using previously described primers (Tokuyama et al., 2011). All samples were analyzed in triplicate.\n\n### Gene cloning\n\nPrimers to genes of interest were designed using cDNA sequences available in the Uniprot database. Primers can be found Table 4.\n\n**Table 4.**\n Cloning and Mutagenesis primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer pair</th>\n      <th>Forward</th>\n      <th>Reverse</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>m18RE mutant Quickchange</td>\n      <td>ggaggctcgcaggtccaaaccccttggcaccggag</td>\n      <td>ctccggtgccaaggggtttggacctgcgagcctcc</td>\n    </tr>\n    <tr>\n      <td>m18</td>\n      <td>atggctgacactgggc</td>\n      <td>tcaatcatcccaccagagag</td>\n    </tr>\n    <tr>\n      <td>m19</td>\n      <td>gatcgaattcATGAGTATCATCGCCACACCCATCC</td>\n      <td>gatcgcggccgcTCACCCTCGCCGTGATCG</td>\n    </tr>\n    <tr>\n      <td>EBNA-1</td>\n      <td>ATCGGAATTCGCCACCATGTCTGACGAGGGGCCAG</td>\n      <td>AATTCTCGAGCTCCTGCCCTTCCTCACC</td>\n    </tr>\n  </tbody>\n</table>\n\n### Site directed mutagenesis\n\nSite directed mutagenesis was carried out using the Quick-change site directed mutagenesis protocol (Stratagene, La Jolla CA). Primers used can be found below.\n\n### Plaque assay\n\nPlaque assays were performed as previously described (Tokuyama et al., 2011).\n\n### Immunofluorescence assay\n\nMouse fibroblasts were plated onto glass slides before transfection with m18-RFP as described above. IFA was performed essentially as previously described using the following staining buffers (1%BSA in PBS for pHDAC1/3 and HDAC1/3, 1% Goat serum in PBS for AcH3 or H3) (Bekerman et al., 2013). Fluorescent signal intensity in the nucleus was quantified using FIJI software (Karijolich et al., 2014).\n",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "ae23ae8c-7978-4d41-b47a-da62daaf12be",
+      "submission_id": "c63c3349-6bfb-499f-a891-06d5dc019fb3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Wayne M Yokoyama, Howard Hughes Medical Institute, Washington University School of Medicine , United States\n\n## Review text\n\nDOI: [10.7554/eLife.14749.025](https://doi.org/10.7554/eLife.14749.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Herpesviral induction of RAE-1 NKG2D ligand expression occurs through release of HDAC mediated repression\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a well written and scholarly study describing that the RAE-1 family of NKG2D ligands expression pattern is repressed by phosphorylation and activation of HDAC3. The kinase has been identified as Casein Kinase 2. The study extends the known role of HDAC inhibiting virally encoded molecules. HDAC3 has been previously identified as a deacetylase target of DNA virus genes. Parts of this story have been previously described by the authors and other kinases have been known to modify the activity of deacetylases. The authors correctly refer to previous studies that document similar elements of the theme of regulation of enzymes that control expression of NK type ligands. However, they should cite and comment on a recent study {Mitotic Activation of a Novel Histone Deacetylase 3-Linker Histone H1.3 Protein Complex by Protein Kinase CK2. Patil H, et al. J Biol Chem. 2016 Feb 12;291(7):3158-72. doi: 10.1074/jbc.M115.643874. Epub 2015 Dec 9} which identified CK as a modifier of HDAC3 function and which affects chromatin structure similar to that proposed in this work.\n\nThere was some overall concern that the paper is too specialized for eLife because many of the elements (HDAC inhibitors in viruses, HDAC in regulation of NKG2D ligands, etc.) have been previously described, albeit in different contexts. However, the discovery of a specific inhibitor encoded by a DNA virus that affects NKG2D ligand expression through the specific mechanism described appears to be novel enough to sway the reviewers and editors positively at this point. That said, the reviewers had some major concerns.\n\nEssential revisions:\n\nMajor concerns dealt with the in vivo relevance of the finding, the characterization of m18 protein and the mass spec data.\n\n1) The authors should infect mice with the \u03b4-m18 virus to examine if the absence of m18 affects viral virulence in an NKG2D-dependent manner. They should discuss such findings with respect to previous studies regarding NKG2D, NKG2D ligands, inhibitors, and MCMV virulence.\n\n2) Insufficient characterization of m18 protein. The authors did not show the presence of the m18 protein in WB in spite of the fact that they have made numerous m18 constructs (m18-RFP, m18-GFP, m18-FLAG, m18-strep tag) and transfectants. Here are some examples: why were mouse fibroblasts, which are stably expressing m18 (Figure 5A), analysed for the H3 and AcH3 protein expression and not for m18 in the same WB analysis? The same applies to the mouse carcinoma cells MCA-205 expressing m18. In addition, the authors used FLAG pull down from the lysates of cells expressing 3xFlag-m18 and tested for the presence of CK2\u03b2 by WB, but again the m18 protein was not included in the analysis (Figure 6A). The only example where m18 protein has been shown is the m18-RFP signal (Figure 5B). There is no information about the m18 construct used for the m18 IF in Figure 6C. Based on the nuclear localization and the term 'RFP-tagged', I assume that the construct was generated to produce a RFP/m18 fusion protein. Also, it would be important to address which of the fusion partners were positioned N terminally.\n\n3) The mass spec analysis was not sufficiently elaborated. There was no information about the samples being analysed in the Results section. Also, as stated in the sentence: 'All reported m18 peptides were manually validated' it is unclear whether they were able to validate all predicted m18 peptides. When it comes to the native, virally derived, m18 protein so far only the m18 peptides have been confirmed (Holtappels et al., J Gen Virol, 2001; Kattenhorn et al., J. Virol, 2004).\n",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ef958b1-64d6-41a0-8c60-85746d73ed94",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C1",
+      "claim": "Natural Killer (NK) cells are essential for control of viral infection and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural Killer (NK) cells are essential for control of viral infection and cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations in the manuscript (Raulet and Guerra, 2009; Lodoen and Lanier, 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a4625339-ea18-4b0c-8706-abcf8dc4d19b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C2",
+      "claim": "NK cells express NKG2D, an activating receptor that directly recognizes NKG2D ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells express NKG2D, an activating receptor that directly recognizes NKG2D ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about NK cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "da3e4901-1598-4130-98a0-89a1755a3707",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C3",
+      "claim": "NKG2D ligands are expressed at low level on healthy cells, but are induced by stresses like infection and transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These are expressed at low level on healthy cells, but are induced by stresses like infection and transformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NKG2D ligand expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b05e3c53-a229-4d66-b9e7-7c6fa6d39ca0",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C4",
+      "claim": "The mouse cytomegalovirus encoded protein m18 is necessary and sufficient to drive expression of the RAE-1 family of NKG2D ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the mouse cytomegalovirus encoded protein m18 is necessary and sufficient to drive expression of the RAE-1 family of NKG2D ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "525b511b-e87b-4154-b2c2-c01157dbb221",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C5",
+      "claim": "RAE-1 is transcriptionally repressed by histone deacetylase inhibitor 3 (HDAC3) in healthy cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that RAE-1 is transcriptionally repressed by histone deacetylase inhibitor 3 (HDAC3) in healthy cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 4 showing HDAC3-specific inhibitors induce RAE-1 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c98d5151-27a3-4ce0-93ef-ac5254cce7ba",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C6",
+      "claim": "m18 relieves HDAC3-mediated repression by directly interacting with Casein Kinase II and preventing it from activating HDAC3.",
+      "claim_type": "EXPLICIT",
+      "source": "m18 relieves this repression by directly interacting with Casein Kinase II and preventing it from activating HDAC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data showing m18-CK2 interaction and immunofluorescence data showing reduced HDAC3 phosphorylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "afcedaa3-400e-4a91-ac18-4a25ce0efa2b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C7",
+      "claim": "HDAC inhibiting proteins from human herpesviruses induce human NKG2D ligand ULBP-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that HDAC inhibiting proteins from human herpesviruses induce human NKG2D ligand ULBP-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data in Figure 9 showing IE1 and ICP0 induce ULBP-1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9937860a-7131-46f9-9cf9-23237f1bcae0",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C8",
+      "claim": "Virally mediated HDAC inhibition can act as a signal for the host to activate NK-cell recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus our findings indicate that virally mediated HDAC inhibition can act as a signal for the host to activate NK-cell recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings showing viral HDAC inhibitors induce NKG2D ligands.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "fe34963f-63f7-4b98-841c-9db2b7677050",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C9",
+      "claim": "NK cells recognize and lyse cells undergoing infection or transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "NK cells recognize and lyse cells undergoing infection or transformation as well as secrete pro-inflammatory molecules that activate the adaptive immune system (Smyth et al., 2005a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8fef2483-5b15-4107-bbc6-afa16151f6fd",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C10",
+      "claim": "NKG2D is expressed on NK cells, NK T cells, \u03b3\u03b4T cells, and CD8 and CD4 T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The activating receptor NKG2D is expressed on NK cells and provides one mechanism by which NK cells (as well as NK T cells, \u03b3\u03b4T cells, and CD8 and CD4 T cells) recognize their targets (Raulet, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "f8cc1687-1546-4209-8490-fe5bb09bcbe5",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C11",
+      "claim": "NKG2D surveillance protects mice from several models of induced or spontaneous cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "NKG2D surveillance protects mice from several models of induced or spontaneous cancer (Smyth et al., 2005b; Guerra et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9f64c4f9-22b7-4a53-be8c-80872d5e7143",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C12",
+      "claim": "A polymorphism predicted to reduce NKG2D signaling is linked to both increased cancer risk and susceptibility to viral infections in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, a polymorphism predicted to reduce NKG2D signaling is linked to both increased cancer risk (Roszak et al., 2012) and susceptibility to viral infections (Taniguchi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to human genetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "61f3342d-b8e9-49b0-b4b8-ea97958796fd",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C13",
+      "claim": "In humans, NKG2D ligands include two families: ULBP1-6 and MICA-B.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligands for NKG2D are diverse, and include two families in humans (ULBP1-6 and MICA-B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human NKG2D ligands.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "66258c4a-fccc-41a6-b276-67270a0b173a",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C14",
+      "claim": "In mice, the ULBP family is subdivided into RAE-1\u03b1-\u03b5, MULT-1, and H60a-c subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, the MICA-B family is not represented and the ULBP family is subdivided into RAE-1\u03b1-\u03b5, MULT-1, and H60a-c subfamilies (Raulet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "09c16d0e-a4e0-4923-9e8e-f381664a3f56",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C15",
+      "claim": "Expression of a single NKG2D ligand family member is sufficient to stimulate killing by NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these ligands binds NKG2D with a different affinity, but expression of a single family member is sufficient to stimulate killing by NK cells (Champsaur and Lanier, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8162cec8-d502-425d-9e96-8f424cfaad90",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C16",
+      "claim": "Silencing of ULBP-1 by histone deacetylases (HDACs) has been shown by L\u00f3pez-Soto and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still not well understood how the majority of NKG2D ligands are silenced in healthy tissue, but work by L\u00f3pez-Soto and colleagues have shown that silencing by histone deacetylases (HDACs) is involved, at least for ULBP-1 (L\u00f3pez-Soto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d459f919-0ef1-45c0-9489-b53f83174d0b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C17",
+      "claim": "DNA damage leads to NKG2D ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, several stimuli leading to ligand expression have been identified, these include: DNA damage (Gasser et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "6fe80735-ae71-4da0-9997-ddc88bcb2dee",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C18",
+      "claim": "Hyper-proliferation through the transcription factor E2F leads to NKG2D ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "hyper-proliferation (though the transcription factor E2F) (Jung et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "1a7b4374-7794-46f6-8149-b4307b36791d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C19",
+      "claim": "PI3K/Ras signaling leads to NKG2D ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "and PI3K/Ras signaling (Tokuyama et al., 2011; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9d6e1fb2-c7d2-46d7-abd1-5437aebf2167",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C20",
+      "claim": "Over 90% of the population is infected with one or more herpesviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 90% of the population is infected with one or more of these double stranded DNA viruses (Wald and Corey, 2007; Staras et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to epidemiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "1017d98f-ada9-4a9c-b110-eacf9ecbb1d3",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C21",
+      "claim": "Herpesvirus infection causes a transcriptional upregulation of NKG2D ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Herpesvirus infection causes a transcriptional upregulation of NKG2D ligand expression (Lodoen et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "2f2c40f6-ef32-4ea7-b328-7428f70b6a08",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C22",
+      "claim": "Herpesviruses apply multiple strategies to avoid NKG2D recognition by reducing NKG2D ligand expression at the surface of infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "yet these viruses apply multiple strategies to avoid NKG2D recognition by reducing NKG2D ligand expression at the surface of infected cells (Reviewed in Jonji\u0107 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "f88986a0-e9d2-46f8-9a4e-ecd38fe3745b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C23",
+      "claim": "Hosts deficient in NK cell responses are especially prone to pathogenic herpesvirus infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Hosts deficient in NK cell responses, including those with mutations that are predicted to specifically reduce NKG2D signaling, are especially prone to pathogenic herpesvirus infection (Taniguchi et al., 2015; Biron et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "573f947f-452f-4e8d-8d13-172b0910c1be",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C24",
+      "claim": "Growth of herpesviruses with a defect in NKG2D ligand evasion are attenuated in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, growth of herpesviruses with a defect NKG2D ligand evasion are attenuated in vivo (Jonji\u0107 et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d951bcf5-63a7-4128-8c23-fa3c8c76d359",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C25",
+      "claim": "PI3K signaling is required for NKG2D ligand expression in transformed cells as well as during MCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Phosphoinositide 3-kinase (PI3K) signaling is required for NKG2D ligand expression in transformed cells as well as during mouse cytomegalovirus (MCMV) infection (Tokuyama et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "6d1b8390-8002-4aff-bdd2-51d0c7704747",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C26",
+      "claim": "DNA damage signaling can mediate NKG2D ligand induction in both cancer development and KSHV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DNA damage signaling can mediate NKG2D ligand induction in both cancer development (Gasser et al., 2005) and Kaposi's sarcoma herpesvirus (KSHV) infection (Bekerman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "6171b428-eb93-4792-9de7-d39dfbdcd4cf",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C27",
+      "claim": "MCMV gene expression is necessary to induce RAE-1 expression during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that MCMV gene expression was necessary to induce RAE-1 expression during infection (Tokuyama et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "7f5e3d92-aefd-4fa9-be3a-dc51785d69f5",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C28",
+      "claim": "MCMV mutant virus deleted for ORFs m01 through m22 (\u2206m1-22) failed to induce Raet1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to WT MCMV or other mutant viruses, the MCMV mutant virus deleted for open reading frames (ORFs) m01 through m22 (\u2206m1-22) failed to induce Raet1 expression (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "91e41b88-2ce8-44d7-9c96-c15dee3d97f6",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C29",
+      "claim": "Levels of MCMV ie1 were comparable to WT virus in \u2206m1-22 infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of MCMV ie1 were comparable to WT virus (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "52ec73d2-d597-4ddc-b3a4-8c23d32939ff",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C30",
+      "claim": "A viral gene or combination of genes in the m01-m22 region is required to induce Raet1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that a viral gene or a combination of genes in this region is required to induce Raet1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental data showing \u2206m1-22 fails to induce Raet1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8d69494b-2b6e-4528-9f72-af8ee36fd0a3",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C31",
+      "claim": "Viruses lacking ORFs m12 to m18 (\u220612\u201318) failed to induce Raet1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses lacking ORFs m12 to m18 (\u220612\u201318) and m18 to m22 (\u220618\u201322) failed to induce Raet1 expression in contrast to WT MCMV (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9a86ad0f-27e5-43f3-8c91-143fac1b64bc",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C32",
+      "claim": "Viruses lacking ORFs m18 to m22 (\u220618\u201322) failed to induce Raet1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Viruses lacking ORFs m12 to m18 (\u220612\u201318) and m18 to m22 (\u220618\u201322) failed to induce Raet1 expression in contrast to WT MCMV (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "629c0dec-72af-4e16-bbc7-b9efeebe79c1",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C33",
+      "claim": "Only MCMV lacking ORF m18 or ORF m19 failed to induce Raet1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Only MCMV lacking ORF m18 or ORF m19 failed to induce Raet1 expression (Figure 1D), indicating that one or both of these ORFs are required to induce Raet1 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8077cbe7-2237-4964-96ad-0567b41ec877",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C34",
+      "claim": "Expression of m18, but not m19 or vector control, rescued Raet1 expression in cells infected with mutant MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of m18, but not m19 or vector control, rescued Raet1 expression in all cases Figure 1E,F) indicating that m18 is required for MCMV mediated Raet1 induction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data shown in Figures 1E and 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b40d6bbb-115f-4b88-8b8c-4fb7bc1e45ff",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C35",
+      "claim": "Expression of m18 but not m19 was sufficient to induce Raet1 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of m18 but not m19 was sufficient to induce Raet1 transcript and RAE-1 protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RT-qPCR data in Figure 2A and flow cytometry data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "0274c073-391e-4c66-a99a-68a709c8d88f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C36",
+      "claim": "Expression of m18 but not m19 was sufficient to induce RAE-1 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of m18 but not m19 was sufficient to induce Raet1 transcript and RAE-1 protein expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "e1b00fa7-7383-4128-bb4e-99a9ec9eef2e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C37",
+      "claim": "m18 is both necessary and sufficient to drive RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data indicate that m18 is the both necessary and sufficient to drive RAE-1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figures 1 and 2.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "5ec0122d-8849-4166-bc23-e80020b08b7e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C38",
+      "claim": "WT NK cells lysed m18-expressing fibroblasts in an NKG2D dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that WT NK cells lysed m18-expressing fibroblasts in an NKG2D dependent manner (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by chromium release assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "12e06ffd-a22d-4801-bcb4-d52c3608cfb3",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C39",
+      "claim": "A CTL epitope is produced from the m18 ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have identified a CTL epitope produced from the m18 ORF (Holtappels et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "1b6aa59a-9adf-4803-8464-fd6c47245aca",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C40",
+      "claim": "Peptides that correspond to the m18 ORF have been identified in mass spectrometric analysis of MCMV virions.",
+      "claim_type": "EXPLICIT",
+      "source": "and peptides that correspond to this ORF have been identified in mass spectrometric analysis of MCMV virions (Kattenhorn et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a4f6689e-1776-47cc-b7b1-82572e456990",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C41",
+      "claim": "m18 mRNA is produced as early as 2 hr post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous studies we observed this was mRNA produced as early as 2 hr post-infection (Figure 2D) (Lacaze et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by semi-quantitative PCR data in Figure 2D and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "942e2c68-ed1b-40bd-ae6d-c2f2407aac50",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C42",
+      "claim": "m18 protein appears at a size of ~180 KDa on western blot, well above the predicted size of 110 KDa.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a band at a size of ~180 KDa, well above the predicted size of 110 KDa, suggesting m18 is post-translationally modified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "2d72d1c5-bcd0-4e9b-9fa6-75acb025afbd",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C43",
+      "claim": "m18 is post-translationally modified.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a band at a size of ~180 KDa, well above the predicted size of 110 KDa, suggesting m18 is post-translationally modified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between predicted and observed molecular weight.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "67c964ce-7301-4ffd-b12b-9d7f81092b2f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C44",
+      "claim": "The m18-GFP fusion protein localized mostly to the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the m18-GFP fusion protein localized mostly to the nucleus (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal microscopy data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c818de51-f41b-40f5-948e-bcb9f42c3b5c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C45",
+      "claim": "Both m18-HA and m18-GFP constructs induced expression of RAE-1 similarly to other m18 constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly both m18-HA and m18-GFP constructs still induced expression of RAE-1 similarly to other m18 constructs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "51615794-82b2-4a20-be50-4fbbc21d9504",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C46",
+      "claim": "Co-expression of m18 increased the activity of the Raet1e promoter relative to vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of m18 increased the activity of the Raet1e promoter relative to vector control (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "125c0bc1-025f-4ceb-a965-0f61dbfadb19",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C47",
+      "claim": "E2F sites in the Raet1e promoter are dispensable for activation of the Raet1e promoter by m18.",
+      "claim_type": "EXPLICIT",
+      "source": "Although E2F sites in the Raet1e promoter have been shown to drive RAE-1 expression during proliferation (Jung et al., 2012), these sites were dispensable for activation of the Raet1e promoter by m18 (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d7960fee-df80-415a-8255-90dedf201d4f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C48",
+      "claim": "Promoter activation by m18 was eliminated when 25 nucleotides were deleted from the 5' end of the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoters lacking 15 nucleotides at the 5' end of the promoter retained WT levels of induction in the presence of m18, but promoter activation by m18 was eliminated when 25 nucleotides were deleted (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "408cd9f8-2875-4c1c-a84d-488df2d2100b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C49",
+      "claim": "The Raet1e promoter contains an m18 response element (m18RE) between \u221295 and \u221285 bp from the transcription start site.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the Raet1e promoter contains an m18 response element (m18RE) between \u221295 and \u221285 bp from the transcription start site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the deletion mapping data in Figure 3B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "0439a7c7-40eb-48d1-85e1-508e8148e9a7",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C50",
+      "claim": "The m18RE contains a Specificity factor transcription factor family (Sp TF) binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the m18RE for transcription factor (TF) binding sites using the JASPAR TF binding database (Mathelier et al., 2014) indicated a Specificity factor transcription factor family (Sp TF) binding site (Figure 3C) within the m18RE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on computational analysis using the JASPAR database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "195ed17e-ff7e-48bc-b291-dad902bdf9ca",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C51",
+      "claim": "Promoter containing m18RE* showed significantly less promoter activity in the presence of m18 than the WT Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Promoter containing m18RE* showed significantly less promoter activity in the presence of m18 than the WT Raet1e promoter (Figure 3D), suggesting a role for Sp TFs in RAE-1 induction by m18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "5bc75e5f-6da5-4566-8c6d-f0d10b390cb8",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C52",
+      "claim": "Sp transcription factors bind to the m18RE.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Sp consensus and m18RE oligos bind the same factors in nuclear lysate, suggesting that Sp TFs regulate Raet1 transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from EMSA competition assay data in Figure 3E.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "fbb16414-50b7-4738-b749-3603600f861b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C53",
+      "claim": "Sp3 occupies the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Samples immunoprecipitated using an antibody against Sp3 but not Sp1 showed significant enrichment of the Raet1e promoter over the IgG control, indicating that Sp3 occupies the Raet1e promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP data in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "ea1d6e3e-42f3-457c-84ce-b77e012fbd5c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C54",
+      "claim": "m18 expression did not alter the amount of Sp3 bound to the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, m18 expression did not alter the amount of Sp3 bound to the Raet1e promoter (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 3F (note: text says 3G but likely refers to 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "f79f7d67-e62d-4cc5-9e52-5bf316d11d4f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C55",
+      "claim": "Sp3 constitutively occupies the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Sp3 constitutively occupies the Raet1e promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ChIP data showing Sp3 binding regardless of m18 expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "86d5bd9d-58db-4b96-835f-428e3bf05cf2",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C56",
+      "claim": "Co-expression of DN-Sp and m18 resulted in a decreased percentage of RAE-1 expressing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of DN-Sp and m18 resulted in a decreased percentage of RAE-1 expressing cells (Figure 3G) suggesting that Sp factors are important for m18 to drive RAE-1 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "65e03b02-c6c5-43e6-87f7-f967e73cf204",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C57",
+      "claim": "Mithramycin treatment reduced RAE-1 induction by m18.",
+      "claim_type": "EXPLICIT",
+      "source": "Mithramycin treatment reduced RAE-1 induction by m18 (Figure 3H) further indicating that Sp TF activity is required for RAE-1 induction by m18.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "defa369c-ea91-459f-b32f-310124945dba",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C58",
+      "claim": "The human NKG2D ligand ULBP-1 is repressed by HDAC3 in the absence of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The human NKG2D ligand ULBP-1 is repressed by histone deacetylase 3 (HDAC3) in the absence of stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous work by L\u00f3pez-Soto et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "914b25ba-5465-4163-a0b7-a8e970bb67a1",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C59",
+      "claim": "HDAC3 is recruited to the ULBP1 promoter by Sp3.",
+      "claim_type": "EXPLICIT",
+      "source": "HDAC3 is recruited to the ULBP1 promoter by Sp3 (L\u00f3pez-Soto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "805802df-60ac-462c-a0d7-2f7a1f1b7d39",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C60",
+      "claim": "HDAC inhibition induces RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, HDAC inhibition induces RAE-1 expression (Gasser et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b881aa24-dc81-4920-8043-c49097ce0273",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C61",
+      "claim": "The chemical HDAC inhibitor butyrate activated the WT Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these findings, we observed that the chemical HDAC inhibitor butyrate activated the WT Raet1e promoter (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "ec908b53-a3b2-414e-8407-8ea7b9954b99",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C62",
+      "claim": "Butyrate treatment failed to drive expression from the m18RE* mutant Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, butyrate treatment failed to drive expression from the m18RE* mutant Raet1e promoter (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "22402c52-f1d1-4678-b105-02d53696341a",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C63",
+      "claim": "Mithramycin treatment reduced RAE-1 expression in response to butyrate treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mithramycin treatment reduced RAE-1 expression in response to butyrate treatment (Figure 4B), indicating that Sp TFs are also required to drive RAE-1 expression in response to HDAC inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "be757857-6dac-4494-96da-e87813b20dd5",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C64",
+      "claim": "The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression, as did the HDAC1/3 inhibitor MS-275 and the HDAC3 inhibitor RGFP966.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "47e74f54-3ddf-4305-a8db-41d9b2dafc3d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C65",
+      "claim": "The HDAC1/3 inhibitor MS-275 induced RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression, as did the HDAC1/3 inhibitor MS-275 and the HDAC3 inhibitor RGFP966.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c82c68b9-e6e3-49a6-ad66-1b11a5efde89",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C66",
+      "claim": "The HDAC3 inhibitor RGFP966 induced RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The pan-HDAC inhibitors TSA and NaB induced RAE-1 expression, as did the HDAC1/3 inhibitor MS-275 and the HDAC3 inhibitor RGFP966.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b5098fe0-8048-42c5-845e-1ad38cf2228f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C67",
+      "claim": "An HDAC1 inhibitor did not induce RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an HDAC1 inhibitor (4-(dimethylamino)-N-[6-(hydroxyamino)\u22126-oxohexyl]-benzamide), and an HDAC6,8 inhibitor (droxinostat) did not (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "497d7ae7-27f1-4d9c-87eb-7dc44e8ddd33",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C68",
+      "claim": "An HDAC6,8 inhibitor (droxinostat) did not induce RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an HDAC1 inhibitor (4-(dimethylamino)-N-[6-(hydroxyamino)\u22126-oxohexyl]-benzamide), and an HDAC6,8 inhibitor (droxinostat) did not (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c73bc423-2c78-4d91-8c49-e53f349c6a15",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C69",
+      "claim": "HDAC3 is involved in RAE-1 repression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that HDAC3 is involved in RAE-1 repression, likely through recruitment to the promoter by Sp3 (L\u00f3pez-Soto et al., 2009) though additional HDACs may be involved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the HDAC inhibitor data and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8f72770f-0169-4947-bbb3-3443f7ba2461",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C70",
+      "claim": "AcH3 levels were increased in m18 expressing mouse fibroblasts, as compared to those expressing vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "AcH3 levels were increased in m18 expressing mouse fibroblasts, as compared to those expressing vector control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "e2ca785e-a645-4311-b479-33a8209da70a",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C71",
+      "claim": "H3 levels were unchanged in m18 expressing mouse fibroblasts compared to vector control.",
+      "claim_type": "EXPLICIT",
+      "source": "H3 levels were unchanged (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by western blot data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "f520d618-ef4e-4b39-ac9f-636d65f2799b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C72",
+      "claim": "m18 expressing cells have significantly higher levels of AcH3 compared to non-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the fluorescent intensity of AcH3 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of AcH3 in m18 expressing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figures 5B and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "51c0e1fc-af4d-492f-87f1-34394acc983e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C73",
+      "claim": "AcH3 level was unchanged in cells transfected with RFP alone.",
+      "claim_type": "EXPLICIT",
+      "source": "AcH3 level was unchanged in cells transfected with RFP alone (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "933fb0d8-cc18-4b9d-a93e-93c60d44e377",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C74",
+      "claim": "Expression of m18-RFP or RFP alone did not affect H3 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of m18-RFP or RFP alone did not affect H3 levels (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8cfa6734-406c-42e2-b7f4-4d3ab1fa9b36",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C75",
+      "claim": "m18 expression increased acetylation at the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Raet1e promoter enrichment showed an increase in AcH3 levels associated with the Raet1e promoter in m18 expressing cells while H3 levels were unchanged (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ChIP data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "01cab9ba-29b5-40e9-9b03-8ec6117990e2",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C76",
+      "claim": "m18 increases histone acetylation in cells, including at the Raet1e promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that m18 increases histone acetylation in cells, including at the Raet1e promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 5.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "56d495c6-13b2-48bf-a707-495d2ae36128",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C77",
+      "claim": "The most specific interaction identified by APMS was casein kinase II beta (CSNK2B).",
+      "claim_type": "EXPLICIT",
+      "source": "This allowed identification of the most specific interaction as casein kinase II beta (CSNK2B) in APMS samples from human HEK293T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data and Z-score analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9603c627-cb31-4d54-8aee-914dd3696ddb",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C78",
+      "claim": "The interaction between m18 and CK2 was confirmed in NIH-3T3 by IP-Western blot.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed the interaction with CK2 in NIH-3T3 by IP-Western blot (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IP-Western blot data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "6ab878d5-832c-45bd-9260-8eb5814878de",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C79",
+      "claim": "CK2 is involved in DNA damage signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "CK2 is involved in many biological processes, including DNA damage signaling (Ghavidel and Schultz, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a509a1a3-5f58-4ff6-aa92-a3de1ceed220",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C80",
+      "claim": "CK2 is involved in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "apoptosis (Hellwig et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "99c5f69d-67f1-4094-9d9c-fcd1a846d35a",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C81",
+      "claim": "CK2 is involved in cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "and cell cycle progression (Homma and Homma, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "15398ceb-fa7d-4c0a-85b0-72808d2fd3d5",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C82",
+      "claim": "CK2 is a constitutively active kinase that phosphorylates HDAC3 at serine 424 (S424) activating it.",
+      "claim_type": "EXPLICIT",
+      "source": "CK2 is a constitutively active kinase that phosphorylates HDAC3 at serine 424 (S424) activating it (Zhang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a67a48e1-70a5-4c08-b0ce-b9a11d4c3e9f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C83",
+      "claim": "The activation of HDAC3 by CK2 has been demonstrated to help drive chromatin condensation during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of HDAC3 by CK2 has previously been demonstrated to help drive chromatin condensation during mitosis (Patil et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "622d3c74-cc24-42e8-8803-945bef1fae1e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C84",
+      "claim": "CK2 activation of HDAC3 has been shown to repress expression of genes during beige fat thermogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been shown to repress expression of genes during beige fat thermogenesis (Shinoda et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "65772073-e0ab-463a-bed8-f9978fd8af01",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C85",
+      "claim": "TBBt treatment induced RAE-1 expression in excess of zVAD alone.",
+      "claim_type": "EXPLICIT",
+      "source": "TBBt treatment induced RAE-1 expression in excess of zVAD alone (Figure 6D), indicating CK2 is a negative regulator of RAE-1 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 6B (note: text says 6D but likely refers to 6B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "bc8d89b8-4c7c-4c49-81b4-07a4e135cb56",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C86",
+      "claim": "CK2 is a negative regulator of RAE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "TBBt treatment induced RAE-1 expression in excess of zVAD alone (Figure 6D), indicating CK2 is a negative regulator of RAE-1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CK2 inhibitor data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a278875c-7ae9-402f-bb55-9faa2910cf40",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C87",
+      "claim": "m18 expressing cells have significantly lower levels of HDAC3 S424 phosphorylation compared to non-transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the fluorescent intensity of HDAC3 S424 staining in the nucleus of m18 expressing cells, to non-transfected cells in the same field of view, and found significantly higher levels of HDAC3 S424 in m18 expressing cells (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figures 6C and 6D (note: text says 6F but likely refers to 6D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "e12c296d-354a-445d-aa9e-452b381adab8",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C88",
+      "claim": "Overall levels of HDAC3 were unaffected by m18 transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "By the same measure overall levels of HDAC3 were unaffected by m18 transfection (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "bded86ab-751a-496a-a39b-9e5887618d9f",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C89",
+      "claim": "The decrease in HDAC3 S424 phosphorylation was not observed in mouse fibroblasts transfected with control RFP vector.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was not observed in mouse fibroblasts transfected with control RFP vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "4faf38b0-ec48-4771-a6cc-38a3cd368467",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C90",
+      "claim": "m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 6.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b75704c6-2189-4d8b-9479-cce4dd5de194",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C91",
+      "claim": "The m18 ORF is highly conserved across strains of MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that m18 ORF is highly conserved across strains of MCMV (Khairallah et al., 2015) suggests that m18 exert an essential function in MCMV life cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "a5d37daa-a397-49c1-bf93-79ccb58f79f7",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C92",
+      "claim": "\u220618 MCMV did not grow significantly different from WT MCMV in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "\u220618 MCMV did not grow significantly different from WT MCMV in this assay (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by plaque assay data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "3e25bb3e-9a66-49ee-b886-1c27ead3fe5b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C93",
+      "claim": "MCMVm18stop fails to induce RAE-1 expression in mouse fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Like \u220618 MCMV, MCMVm18stop fails to induce RAE-1 expression in mouse fibroblasts, but has no defect in IE-1 expression (Figure 7\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d07af9a6-4da2-4893-a6a1-11b455f3a4d3",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C94",
+      "claim": "MCMVm18stop has no defect in IE-1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Like \u220618 MCMV, MCMVm18stop fails to induce RAE-1 expression in mouse fibroblasts, but has no defect in IE-1 expression (Figure 7\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "cd262423-9801-40cb-a40a-5ee912471b8c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C95",
+      "claim": "Mice infected with WT or MCMVm18stop had identical levels of MCMV in all organs assayed at five days post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice infected with WT or MCMVm18stop had identical levels of MCMV in all organs assayed at this time (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "e5bfb028-f836-41b5-9118-86ffc2d195e4",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C96",
+      "claim": "m18 elimination has no impact on viral growth in WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that m18 elimination has no impact on viral growth in WT mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vivo data in Figure 7B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8c4acaf7-3ea4-4151-8a75-03818b3bd6c8",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C97",
+      "claim": "RAG-/- yC-/- mice showed identical levels of MCMV between the WT and mutant viruses in spleen, lung, and liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these mice also showed identical levels of MCMV between the WT and mutant viruses in spleen, lung, and liver (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "2208d065-8d80-499d-a047-b62d575cc2a2",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C98",
+      "claim": "m18 is dispensable for viral growth at early time points in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Indicating that m18 is dispensable for viral growth at this early time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the in vivo data in Figure 7C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "5002ace8-e686-40c2-b8bb-f4c48ca92822",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C99",
+      "claim": "IE1 from HCMV is an HDAC inhibiting viral protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Two prominent examples of HDAC inhibiting viral proteins are IE1 from HCMV (Nevels et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "554102a1-aa61-45a7-8b78-e8af3903e9ce",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C100",
+      "claim": "ICP0 from HSV-1 is an HDAC inhibiting viral protein.",
+      "claim_type": "EXPLICIT",
+      "source": "and ICP0 from HSV-1 (Gu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "46e37573-1b69-451f-8018-22530f8a6e6d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C101",
+      "claim": "Both ICP0 and IE1 induced expression of human ULBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ICP0 and IE1 induced expression of human ULBP1 (Figure 9A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-qPCR data in Figures 9A and 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "dd266a4e-eecf-4a3b-9ede-1a32c4459b8c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C102",
+      "claim": "Viral inhibition of HDACs is a common mechanism driving NKG2D ligand induction in humans and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that viral inhibition of HDACs is a common mechanism driving NKG2D ligand induction in humans and mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing multiple viral HDAC inhibitors induce NKG2D ligands.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "730db63b-e2d1-41f8-b35a-e3dd64c9c0ff",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C103",
+      "claim": "RAE-1 expression is repressed in the absence of stress signals due to closed chromatin around the Raet1 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest a model in which RAE-1 expression is repressed in the absence of stress signals due to closed chromatin around the Raet1 locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "ee37c25e-beda-4adc-b4f7-4d30787cc2c2",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C104",
+      "claim": "Repression of RAE-1 is maintained by constitutive phosphorylation and activation of HDAC3 by CK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This repression is maintained by constitutive phosphorylation and activation of HDAC3 by CK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "59293207-4b85-488d-9e15-1b53db7e887d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C105",
+      "claim": "During MCMV infection, m18 reduces phosphorylation of HDAC3 by directly interacting with CK2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during MCMV infection, m18 reduces phosphorylation of HDAC3 by directly interacting with CK2 an activator of HDAC3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "25ad7436-fb78-4fc4-b0af-39115cbf4906",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C106",
+      "claim": "Many of the known HDAC inhibiting proteins from herpesviruses are crucial to viral fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the known HDAC inhibiting proteins from herpesviruses are crucial to viral fitness (Nevels et al., 2004; Gu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "5e07cd39-cbdc-4af6-bb93-301a84ffcd23",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C107",
+      "claim": "Cellular HDAC enzymes have been shown to repress viral gene expression and, in some cases replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular HDAC enzymes have been shown to repress viral gene expression and, in some cases replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HDAC function in viral infection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8b60e524-483c-4f59-994a-83e66c5e9406",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C108",
+      "claim": "Chemical HDAC inhibition can rescue a defect in viral replication caused by HCMV IE1 deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of lytic infection herpes viruses must overcome this repression using viral HDAC inhibitors (Nevels et al., 2004), in fact chemical HDAC inhibition can rescue a defect in viral replication caused by HCMV IE1 deficiency (Nevels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "4f5c7f56-a073-4fb0-a956-1f1929a6a74b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C109",
+      "claim": "HDACs have been shown to occupy the promoters of the immediate early genes that drive reactivation in HCMV and MCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs have been shown to occupy the promoters of the immediate early genes that drive reactivation in HCMV and MCMV (Murphy et al., 2002; Liu et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "3abb2210-735d-4006-aafa-e4a40177dd7d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C110",
+      "claim": "HDACs have been shown to repress KSHV reactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "and have been shown to repress KSHV reactivation (Shin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "f7b2ad11-11cf-4259-af99-67cc78b72e59",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C111",
+      "claim": "Inhibition of HDACs is sufficient to drive reactivation in latently infected KSHV cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, inhibition of HDACs is sufficient to drive reactivation in latently infected KSHV cell lines (Miller et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c04216c7-976c-49cd-a9d2-c1bf8661fd8c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C112",
+      "claim": "Chemical CK2 inhibitors enhance the anti-viral effect of Type I interferon signaling during HSV-1 infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical CK2 inhibitors enhance the anti-viral effect of Type I interferon signaling during HSV-1 infection (Smith et al., 2011), implicating CK2 as a key factor in host response to viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "28c9a478-0c5f-41c9-8093-11022a2da675",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C113",
+      "claim": "Expression of Class I HDAC enzymes (including HDAC3) is increased in cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Class I HDAC enzymes (including HDAC3) is increased in cancers (Glozak and Seto, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "3ca490f3-9195-4453-b722-4423a16504a5",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C114",
+      "claim": "Increased HDAC expression promotes carcinogenesis through down regulation of tumor suppressors such as p21 in an Sp1/Sp3 dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased HDAC expression promotes carcinogenesis through down regulation of tumor suppressors such as p21 in an Sp1/Sp3 dependent manner (Wilson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "87783a07-6103-4cdd-ad09-a44659cff6af",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C115",
+      "claim": "It has been proposed that increased HDAC expression contributes to cancer's ability to evade NKG2D recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "As NKG2D ligand ULBP-1 is suppressed by HDAC3, it has been proposed that increased HDAC expression also contributes cancer's ability to evade NKG2D recognition (L\u00f3pez-Soto et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "c4e5a871-d158-4cb1-b923-a7a12594f82d",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C116",
+      "claim": "Several chemical HDAC inhibitors are being developed as anti-cancer drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "Several chemical HDAC inhibitors, including some used in this study, are being developed as anti-cancer drugs (West and Johnstone, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b388f95d-10b1-4ab8-804b-38709e39faf7",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C117",
+      "claim": "CK2 is highly upregulated in cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "CK2 is also highly upregulated in cancers (Gonz\u00e1lez et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "11734327-2aaf-4abb-b38d-bd32fe2900ed",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C118",
+      "claim": "CK2 upregulation in cancers may contribute to NKG2D ligand repression and NK cell evasion.",
+      "claim_type": "EXPLICIT",
+      "source": "and one intriguing possibility is that this may contribute to NKG2D ligand repression and NK cell evasion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d11e6992-f1bf-469a-a01d-6ca3218825a4",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "claim_id": "C119",
+      "claim": "Active repression of NKG2D ligand transcription by HDACs provides a way for the host to repress NKG2D ligand expression in the absence of stress while allowing for the possibility of expression when experiencing stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Active repression of NKG2D ligand transcription by HDACs provides a way for the host to repress NKG2D ligand expression in the absence of stress while allowing for the possibility of expression when experiencing stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the overall findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4cd344c-91fa-4770-9336-291568342a06",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The MCMV protein m18 is necessary for RAE-1 induction during infection. Deletion mapping identified m18 (and possibly m19) within the m01-m22 region as required for Raet1 expression, and m18 expression in trans rescued Raet1 induction in cells infected with mutant viruses lacking m18.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C34 provide systematic deletion mapping data (Figures 1A-F) demonstrating that m18 is necessary for RAE-1 induction. The data show progressive narrowing from the m1-22 region to individual ORFs, with rescue experiments confirming m18 specificity. The experimental design includes appropriate controls (IE-1 expression) to rule out general infection defects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "d3122a65-4bed-4656-a35c-2d8f2da05224",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The MCMV protein m18 is sufficient to induce RAE-1 expression and trigger NKG2D-dependent NK cell killing. Transfection of m18 alone induces both Raet1 mRNA and RAE-1 protein, and m18-expressing cells are lysed by NK cells in an NKG2D-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 and C45 demonstrate sufficiency through transfection experiments (Figure 2A-C) showing m18 expression alone induces RAE-1 at both transcript and protein levels, and functional NK killing assays confirm NKG2D-dependence. Tagged m18 constructs retain activity, validating the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "aacac063-6209-44ea-85a1-f38880b0e544",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The m18 protein is expressed early during infection (2 hours post-infection), appears at ~180 kDa (suggesting post-translational modification), and localizes primarily to the nucleus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 characterize m18 expression and localization using semi-quantitative PCR (Figure 2D), western blot (Figure 2E), and confocal microscopy (Figure 2F). The discrepancy between predicted (110 kDa) and observed (180 kDa) molecular weight reasonably suggests post-translational modification, though the specific modifications are not identified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b256878d-07b6-46f0-9b12-06a8338ce71e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "m18 activates the Raet1e promoter through a specific response element (m18RE) located between -95 and -85 bp from the transcription start site, which contains an Sp transcription factor binding site. E2F sites are dispensable for m18-mediated activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 use luciferase reporter assays with serial deletions and site-directed mutagenesis (Figures 3A-D) to map the m18RE. The data systematically narrow the critical region and identify the Sp binding site through computational analysis and functional validation. The E2F independence distinguishes this from proliferation-induced RAE-1 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sp3 transcription factor constitutively occupies the Raet1e promoter and is required for m18-mediated RAE-1 induction. m18 does not alter Sp3 binding levels, but Sp3 activity is necessary for m18 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 combine EMSA competition assays (Figure 3E), ChIP (Figure 3F), dominant-negative experiments (Figure 3G), and pharmacological inhibition with mithramycin (Figure 3H) to demonstrate Sp3's constitutive binding and functional requirement. The data converge to show Sp3 is necessary but not sufficient, and m18 acts through a mechanism other than recruiting Sp3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "cee83c1a-775d-4c43-af05-b817624bcd46",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "HDAC3 represses RAE-1 expression in healthy cells through Sp3-mediated recruitment to the promoter. Chemical HDAC inhibitors, particularly HDAC3-specific inhibitors, induce RAE-1 expression in an Sp-dependent manner through the same m18RE element.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C69 establish HDAC3's role using chemical inhibitor profiling (Figure 4C), promoter assays (Figure 4A), and mithramycin treatment (Figure 4B). The specificity for HDAC3 (and HDAC1/3) inhibitors over HDAC1 or HDAC6/8 inhibitors, combined with the requirement for the Sp binding site, provides strong evidence. The connection to prior work on ULBP-1 (C58-C59) strengthens the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "9123e635-2682-4861-9528-d7dc2cf40f9b",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "m18 expression increases histone H3 acetylation globally and specifically at the Raet1e promoter, without affecting total H3 levels. This effect is specific to m18 and not due to transfection or fluorescent protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76 demonstrate increased acetylation using western blot (Figure 5A), immunofluorescence with single-cell analysis (Figures 5B-C), and ChIP (Figure 5D). Appropriate controls (RFP alone, H3 levels) rule out artifacts. The data directly support the hypothesis that m18 functions as an HDAC inhibitor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "8aec00a5-801b-4964-9177-215e6b6e65d2",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "m18 directly interacts with casein kinase II (CK2), a constitutively active kinase that phosphorylates and activates HDAC3 at serine 424. CK2 is involved in multiple cellular processes including DNA damage signaling, apoptosis, and cell cycle progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 identify the m18-CK2 interaction through affinity purification mass spectrometry with Z-score analysis and confirm it by IP-Western blot (Figure 6A). Claims C79-C84 establish CK2's role in HDAC3 activation through citations to prior work. The interaction is specific (highest Z-score) and provides a mechanistic link between m18 and HDAC3 inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation at serine 424. Chemical CK2 inhibition induces RAE-1 expression, and m18 expression reduces HDAC3 S424 phosphorylation without affecting total HDAC3 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C90 complete the mechanistic model using CK2 inhibitor TBBt (Figure 6B), immunofluorescence quantification of HDAC3 pS424 (Figures 6C-D), and appropriate controls. The data show m18 reduces activating phosphorylation of HDAC3 without affecting HDAC3 protein levels, consistent with CK2 inhibition. The use of zVAD to prevent apoptosis during CK2 inhibition is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Despite high conservation of m18 across MCMV strains, m18 is dispensable for viral growth in vitro and in vivo at early time points (5 days post-infection) in both wild-type and immunodeficient mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C98 assess m18's role in viral fitness using plaque assays (Figure 7A) and in vivo infections in BALB/c and RAG-/-\u03b3C-/- mice (Figures 7B-C). The MCMVm18stop mutant controls for potential artifacts from large deletions. The lack of growth defect at early time points is surprising given m18's conservation, suggesting alternative functions at later stages or in different contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "bb57beb4-dc59-45fc-a113-db0289b89cd9",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HDAC-inhibiting proteins from human herpesviruses (IE1 from HCMV and ICP0 from HSV-1) also induce expression of the human NKG2D ligand ULBP-1, suggesting viral HDAC inhibition is a conserved mechanism for NKG2D ligand induction across herpesviruses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 extend the findings to human viruses using RT-qPCR (Figures 9A-B) showing IE1 and ICP0 induce ULBP-1. This cross-species validation strengthens the model's generalizability. However, the mechanism by which IE1 and ICP0 induce ULBP-1 is not directly demonstrated to involve HDAC3/CK2, only inferred from their known HDAC-inhibiting activities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "25966782-d64e-4e0f-a29f-4716e65257ec",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a model where RAE-1 is repressed by CK2-activated HDAC3 in healthy cells, and during MCMV infection, m18 inhibits CK2, reducing HDAC3 activity and de-repressing RAE-1 transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 synthesize the experimental findings into a coherent model (Figure 8). The model is well-supported by the data showing: (1) HDAC3 represses RAE-1, (2) CK2 activates HDAC3, (3) m18 binds CK2, (4) m18 reduces HDAC3 phosphorylation, and (5) m18 increases histone acetylation and RAE-1 expression. The model logically integrates all major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "73320510-15c5-48ed-9f07-f333ba1455bf",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on NK cells and NKG2D: NK cells are essential for controlling viral infection and cancer, express the activating receptor NKG2D that recognizes stress-induced ligands, and NKG2D surveillance protects against cancer and viral infections in mice and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C9-C15 provide established background knowledge supported by appropriate citations. These claims contextualize the study but do not represent novel findings. The information is accurate and well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "be438350-e00b-4b24-8102-10b356a2083c",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on NKG2D ligand regulation and herpesvirus interactions: NKG2D ligands are induced by various stresses (DNA damage, proliferation, PI3K/Ras signaling), herpesviruses induce but also evade NKG2D recognition, and these mechanisms are conserved between cancer and viral infection contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C27 provide relevant background on NKG2D ligand regulation and herpesvirus biology, all supported by appropriate citations. These establish the rationale for the study and connect to prior work by the authors (C27). The information accurately represents the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of viral HDAC inhibitors: Many herpesvirus HDAC inhibitors are crucial for viral fitness, as HDACs repress viral gene expression and replication. HDAC inhibition can rescue replication defects and drive reactivation from latency. CK2 inhibitors enhance antiviral responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C112 discuss the broader context of viral HDAC inhibitors and their roles in viral life cycles, all supported by citations. This contextualizes why viruses might encode HDAC inhibitors despite the cost of inducing NKG2D ligands. The discussion is speculative regarding m18's potential role in latency/reactivation but appropriately framed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "b051b96a-2112-4205-ab0f-4b14a635db98",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of cancer relevance: HDAC3 and CK2 are upregulated in cancers, contributing to tumor suppressor repression and potentially NKG2D ligand evasion. HDAC inhibitors are being developed as anti-cancer drugs, potentially acting through NKG2D ligand induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117 discuss cancer relevance supported by citations, while C118 is appropriately framed as speculation. The connection between the viral findings and cancer biology is reasonable given the shared mechanisms of NKG2D ligand regulation. The therapeutic implications are appropriately cautious.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    },
+    {
+      "id": "49c1817c-1217-4005-b0ed-ecbc2acdc845",
+      "content_id": "02fcf9d7-a28b-4d7c-acf5-3d842e45f1bd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors conclude that active HDAC-mediated repression provides a mechanism for hosts to maintain NKG2D ligand silencing in healthy cells while allowing stress-induced expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C119 represents the overarching conclusion drawn from the study's findings. This is well-supported by the data showing constitutive repression by HDAC3 that can be relieved by stress signals (viral HDAC inhibitors, chemical inhibitors). The conclusion appropriately synthesizes the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:45:18.303819Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7f5e3d92-aefd-4fa9-be3a-dc51785d69f5",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "91e41b88-2ce8-44d7-9c96-c15dee3d97f6",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "52ec73d2-d597-4ddc-b3a4-8c23d32939ff",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "8d69494b-2b6e-4528-9f72-af8ee36fd0a3",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "9a86ad0f-27e5-43f3-8c91-143fac1b64bc",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "629c0dec-72af-4e16-bbc7-b9efeebe79c1",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "8077cbe7-2237-4964-96ad-0567b41ec877",
+      "result_id": "d4cd344c-91fa-4770-9336-291568342a06"
+    },
+    {
+      "claim_id": "b40d6bbb-115f-4b88-8b8c-4fb7bc1e45ff",
+      "result_id": "d3122a65-4bed-4656-a35c-2d8f2da05224"
+    },
+    {
+      "claim_id": "0274c073-391e-4c66-a99a-68a709c8d88f",
+      "result_id": "d3122a65-4bed-4656-a35c-2d8f2da05224"
+    },
+    {
+      "claim_id": "e1b00fa7-7383-4128-bb4e-99a9ec9eef2e",
+      "result_id": "d3122a65-4bed-4656-a35c-2d8f2da05224"
+    },
+    {
+      "claim_id": "5ec0122d-8849-4166-bc23-e80020b08b7e",
+      "result_id": "d3122a65-4bed-4656-a35c-2d8f2da05224"
+    },
+    {
+      "claim_id": "c818de51-f41b-40f5-948e-bcb9f42c3b5c",
+      "result_id": "d3122a65-4bed-4656-a35c-2d8f2da05224"
+    },
+    {
+      "claim_id": "a4f6689e-1776-47cc-b7b1-82572e456990",
+      "result_id": "aacac063-6209-44ea-85a1-f38880b0e544"
+    },
+    {
+      "claim_id": "942e2c68-ed1b-40bd-ae6d-c2f2407aac50",
+      "result_id": "aacac063-6209-44ea-85a1-f38880b0e544"
+    },
+    {
+      "claim_id": "2d72d1c5-bcd0-4e9b-9fa6-75acb025afbd",
+      "result_id": "aacac063-6209-44ea-85a1-f38880b0e544"
+    },
+    {
+      "claim_id": "67c964ce-7301-4ffd-b12b-9d7f81092b2f",
+      "result_id": "aacac063-6209-44ea-85a1-f38880b0e544"
+    },
+    {
+      "claim_id": "51615794-82b2-4a20-be50-4fbbc21d9504",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "125c0bc1-025f-4ceb-a965-0f61dbfadb19",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "d7960fee-df80-415a-8255-90dedf201d4f",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "408cd9f8-2875-4c1c-a84d-488df2d2100b",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "0439a7c7-40eb-48d1-85e1-508e8148e9a7",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "195ed17e-ff7e-48bc-b291-dad902bdf9ca",
+      "result_id": "b256878d-07b6-46f0-9b12-06a8338ce71e"
+    },
+    {
+      "claim_id": "5bc75e5f-6da5-4566-8c6d-f0d10b390cb8",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "fbb16414-50b7-4738-b749-3603600f861b",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "ea1d6e3e-42f3-457c-84ce-b77e012fbd5c",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "f79f7d67-e62d-4cc5-9e52-5bf316d11d4f",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "86d5bd9d-58db-4b96-835f-428e3bf05cf2",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "65e03b02-c6c5-43e6-87f7-f967e73cf204",
+      "result_id": "9a6fc496-ce5b-4e0e-8a8c-3a4d39bd1c7a"
+    },
+    {
+      "claim_id": "defa369c-ea91-459f-b32f-310124945dba",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "914b25ba-5465-4163-a0b7-a8e970bb67a1",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "805802df-60ac-462c-a0d7-2f7a1f1b7d39",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "b881aa24-dc81-4920-8043-c49097ce0273",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "ec908b53-a3b2-414e-8407-8ea7b9954b99",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "22402c52-f1d1-4678-b105-02d53696341a",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "be757857-6dac-4494-96da-e87813b20dd5",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "47e74f54-3ddf-4305-a8db-41d9b2dafc3d",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "c82c68b9-e6e3-49a6-ad66-1b11a5efde89",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "b5098fe0-8048-42c5-845e-1ad38cf2228f",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "497d7ae7-27f1-4d9c-87eb-7dc44e8ddd33",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "c73bc423-2c78-4d91-8c49-e53f349c6a15",
+      "result_id": "cee83c1a-775d-4c43-af05-b817624bcd46"
+    },
+    {
+      "claim_id": "8f72770f-0169-4947-bbb3-3443f7ba2461",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "e2ca785e-a645-4311-b479-33a8209da70a",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "f520d618-ef4e-4b39-ac9f-636d65f2799b",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "51c0e1fc-af4d-492f-87f1-34394acc983e",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "933fb0d8-cc18-4b9d-a93e-93c60d44e377",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "8cfa6734-406c-42e2-b7f4-4d3ab1fa9b36",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "01cab9ba-29b5-40e9-9b03-8ec6117990e2",
+      "result_id": "9123e635-2682-4861-9528-d7dc2cf40f9b"
+    },
+    {
+      "claim_id": "56d495c6-13b2-48bf-a707-495d2ae36128",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "9603c627-cb31-4d54-8aee-914dd3696ddb",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "6ab878d5-832c-45bd-9260-8eb5814878de",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "a509a1a3-5f58-4ff6-aa92-a3de1ceed220",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "99c5f69d-67f1-4094-9d9c-fcd1a846d35a",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "15398ceb-fa7d-4c0a-85b0-72808d2fd3d5",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "a67a48e1-70a5-4c08-b0ce-b9a11d4c3e9f",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "622d3c74-cc24-42e8-8803-945bef1fae1e",
+      "result_id": "8aec00a5-801b-4964-9177-215e6b6e65d2"
+    },
+    {
+      "claim_id": "65772073-e0ab-463a-bed8-f9978fd8af01",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "bc8d89b8-4c7c-4c49-81b4-07a4e135cb56",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "a278875c-7ae9-402f-bb55-9faa2910cf40",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "e12c296d-354a-445d-aa9e-452b381adab8",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "bded86ab-751a-496a-a39b-9e5887618d9f",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "4faf38b0-ec48-4771-a6cc-38a3cd368467",
+      "result_id": "1e1a2d8a-880b-4170-91ab-0e5c8457a8f0"
+    },
+    {
+      "claim_id": "b75704c6-2189-4d8b-9479-cce4dd5de194",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "a5d37daa-a397-49c1-bf93-79ccb58f79f7",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "3e25bb3e-9a66-49ee-b886-1c27ead3fe5b",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "d07af9a6-4da2-4893-a6a1-11b455f3a4d3",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "cd262423-9801-40cb-a40a-5ee912471b8c",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "e5bfb028-f836-41b5-9118-86ffc2d195e4",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "8c4acaf7-3ea4-4151-8a75-03818b3bd6c8",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "2208d065-8d80-499d-a047-b62d575cc2a2",
+      "result_id": "b9aa46ba-96f5-45d4-9e2a-03c2df5339d6"
+    },
+    {
+      "claim_id": "5002ace8-e686-40c2-b8bb-f4c48ca92822",
+      "result_id": "bb57beb4-dc59-45fc-a113-db0289b89cd9"
+    },
+    {
+      "claim_id": "554102a1-aa61-45a7-8b78-e8af3903e9ce",
+      "result_id": "bb57beb4-dc59-45fc-a113-db0289b89cd9"
+    },
+    {
+      "claim_id": "46e37573-1b69-451f-8018-22530f8a6e6d",
+      "result_id": "bb57beb4-dc59-45fc-a113-db0289b89cd9"
+    },
+    {
+      "claim_id": "dd266a4e-eecf-4a3b-9ede-1a32c4459b8c",
+      "result_id": "bb57beb4-dc59-45fc-a113-db0289b89cd9"
+    },
+    {
+      "claim_id": "730db63b-e2d1-41f8-b35a-e3dd64c9c0ff",
+      "result_id": "25966782-d64e-4e0f-a29f-4716e65257ec"
+    },
+    {
+      "claim_id": "ee37c25e-beda-4adc-b4f7-4d30787cc2c2",
+      "result_id": "25966782-d64e-4e0f-a29f-4716e65257ec"
+    },
+    {
+      "claim_id": "59293207-4b85-488d-9e15-1b53db7e887d",
+      "result_id": "25966782-d64e-4e0f-a29f-4716e65257ec"
+    },
+    {
+      "claim_id": "0ef958b1-64d6-41a0-8c60-85746d73ed94",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "a4625339-ea18-4b0c-8706-abcf8dc4d19b",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "da3e4901-1598-4130-98a0-89a1755a3707",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "fe34963f-63f7-4b98-841c-9db2b7677050",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "8fef2483-5b15-4107-bbc6-afa16151f6fd",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "f8cc1687-1546-4209-8490-fe5bb09bcbe5",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "9f64c4f9-22b7-4a53-be8c-80872d5e7143",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "61f3342d-b8e9-49b0-b4b8-ea97958796fd",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "66258c4a-fccc-41a6-b276-67270a0b173a",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "09c16d0e-a4e0-4923-9e8e-f381664a3f56",
+      "result_id": "73320510-15c5-48ed-9f07-f333ba1455bf"
+    },
+    {
+      "claim_id": "8162cec8-d502-425d-9e96-8f424cfaad90",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "d459f919-0ef1-45c0-9489-b53f83174d0b",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "6fe80735-ae71-4da0-9997-ddc88bcb2dee",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "1a7b4374-7794-46f6-8149-b4307b36791d",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "9d6e1fb2-c7d2-46d7-abd1-5437aebf2167",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "1017d98f-ada9-4a9c-b110-eacf9ecbb1d3",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "2f2c40f6-ef32-4ea7-b328-7428f70b6a08",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "f88986a0-e9d2-46f8-9a4e-ecd38fe3745b",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "573f947f-452f-4e8d-8d13-172b0910c1be",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "d951bcf5-63a7-4128-8c23-fa3c8c76d359",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "6d1b8390-8002-4aff-bdd2-51d0c7704747",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "6171b428-eb93-4792-9de7-d39dfbdcd4cf",
+      "result_id": "be438350-e00b-4b24-8102-10b356a2083c"
+    },
+    {
+      "claim_id": "25ad7436-fb78-4fc4-b0af-39115cbf4906",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "5e07cd39-cbdc-4af6-bb93-301a84ffcd23",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "8b60e524-483c-4f59-994a-83e66c5e9406",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "4f5c7f56-a073-4fb0-a956-1f1929a6a74b",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "3abb2210-735d-4006-aafa-e4a40177dd7d",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "f7b2ad11-11cf-4259-af99-67cc78b72e59",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "c04216c7-976c-49cd-a9d2-c1bf8661fd8c",
+      "result_id": "08b5341e-c0d7-4fe5-8c09-d3ca6215c01e"
+    },
+    {
+      "claim_id": "28c9a478-0c5f-41c9-8093-11022a2da675",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "3ca490f3-9195-4453-b722-4423a16504a5",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "87783a07-6103-4cdd-ad09-a44659cff6af",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "c4e5a871-d158-4cb1-b923-a7a12594f82d",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "b388f95d-10b1-4ab8-804b-38709e39faf7",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "11734327-2aaf-4abb-b38d-bd32fe2900ed",
+      "result_id": "b051b96a-2112-4205-ab0f-4b14a635db98"
+    },
+    {
+      "claim_id": "d11e6992-f1bf-469a-a01d-6ca3218825a4",
+      "result_id": "49c1817c-1217-4005-b0ed-ecbc2acdc845"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,494 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Principal component analysis reveals that Stella M/Z KO embryos are transcriptionally distinct from WT embryos, with the most pronounced differences at the 2-cell stage, and these differences are not due to developmental delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide converging evidence from PCA analysis showing separation between WT and KO samples along PC2 and PC3, with the strongest separation at the 2-cell stage. The clustering of KO 1-cell and 2-cell embryos separately from each other (C44) supports the inference that differences are not simply due to developmental delay (C45). The data presentation in Figure 1B provides clear visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Stella M/Z KO embryos exhibit partial impairment in maternal-to-zygotic transition, characterized by enrichment of maternal transcripts and depletion of zygotic transcripts specifically at the 2-cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 collectively demonstrate MZT impairment through multiple lines of evidence: differential expression analysis (C46-C47), DBTMEE database comparison (C48-C49), time-series clustering (C53-C54), and temporal specificity (C51-C52). The statistical significance (adjusted p-value<0.05) and quantitative data (37.7% and 39.5% of genes affected) provide strong support. The conclusion of partial impairment (C55) is appropriately cautious given that most genes show normal MZT changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Stella M/Z KO 2-cell embryos show upregulation of chromatin modifiers and DNA damage response genes, and downregulation of genes involved in RNA processing and ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by both RNA-seq GO analysis (C56-C59) and independent qRT-PCR validation (C60-C61). The consistency between computational analysis and experimental validation strengthens the findings. The connection to previous observations of \u03b3H2AX enrichment (C57) provides additional biological context. Statistical significance is demonstrated through appropriate tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C69"
+    ],
+    "result": "Co-expression network analysis reveals that Dppa3 expression correlates with genes involved in RNA processing and splicing, suggesting Stella plays a role in upregulating essential genes during zygotic genome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 provide quantitative co-expression data (910 genes with correlation >|0.9|, with 710 positively correlated) and functional enrichment for RNA processing/splicing. The hypothesis in C69 is appropriately framed as inference based on the combined evidence. The high correlation threshold (>0.9) and specific examples (Snrpd1, Snrpb2) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Most genes undergo appropriate MZT changes in Stella M/Z KO embryos, arguing against a general developmental delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide an important control observation that distinguishes specific transcriptional defects from general developmental delay. This is supported by the PCA clustering data (C44-C45) and the fact that only subsets of genes are affected (C53-C54 show 37.7% and 39.5% respectively). The logic is sound and the conclusion appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Widespread activation of transposable elements, particularly LTR-ERVL and ERVL-MaLR families, occurs at the 2-cell stage coincident with MZT, and TE expression differs between WT and KO samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 demonstrate TE activation patterns through multiple analyses: ratio of TE-mapped reads (C72), family-level analysis (C74-C75), and PCA (C76-C77). The data are presented in Figures 3A-C with appropriate statistical support. The inference of widespread TE activation coincident with MZT (C73) is well-supported by the temporal pattern. The separation of WT and KO samples in PCA (C77-C78) provides evidence for differential TE regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Stella M/Z KO 2-cell embryos show dysregulated TE expression, with maternal TEs enriched among upregulated TEs and zygotic TEs enriched among downregulated TEs, particularly affecting LTR-ERVL family activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide clear evidence of TE dysregulation with appropriate statistical significance (p-values stated in Figure 3D-E). The classification of TEs as maternal vs. zygotic and the enrichment analysis provide mechanistic insight. The specific effect on LTR-ERVL (C81) is supported by data in Figure 3E and Figure 3\u2014figure supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MuERV-L transcript and protein levels are significantly reduced in Stella M/Z KO 2-cell embryos, with loss of perinuclear localization of MuERV-L Gag protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide converging evidence from transcript analysis (C84-C85, Figure 3F) and protein immunofluorescence (C86-C87, Figure 3G). The validation of the antibody (Figure 3\u2014figure supplement 1C) strengthens confidence in the protein data. The inference that Stella influences both transcript and protein levels (C88) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Stella does not efficiently bind DNA in ESCs and manipulation of Dppa3 expression in ESCs does not affect MuERV-L expression, suggesting Stella-mediated control is specific to the early embryo context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide negative results from ChIP-seq (C89, minimal peaks n=56) and perturbation experiments in ESCs (C91, Figure 3\u2014figure supplement 2). The inference that Stella function is context-specific (C92) is appropriately cautious and well-supported by the contrast between ESC and embryo data. However, the limitation that ESCs may not fully recapitulate 2-cell embryo chromatin context should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Stella plays a key role in regulating a subset of TEs specifically in 2-cell embryos, including promoting strong activation of MuERV-L elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 represent appropriate summary conclusions based on the combined evidence from C72-C88. The specificity to 2-cell embryos is supported by temporal analysis, and the focus on MuERV-L is justified by the magnitude of the effect. The conclusion is appropriately framed as affecting a 'subset' of TEs rather than all TEs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "There is significant spatial association between misregulated TEs and differentially expressed genes in Stella M/Z KO embryos, with TEs downregulated in KO enriched near zygotically activated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 provide strong statistical evidence for spatial relationships: 12% overlap with p=3.19\u00d710\u207b\u2078\u2077 (C96) and enrichment within 10kb of ZAG TSS with p<10\u207b\u2074 (C97). The inference of linkage between TE and gene expression (C98) is appropriately cautious. The statistical tests appear appropriate for the genomic distance analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "A subset of TEs show strong positive (n=387) or negative (n=224) correlation with their nearest gene expression (Spearman's correlation >|0.7|).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 provide quantitative correlation data with appropriate statistical thresholds (Spearman's >0.7 or <-0.7). The data are shown in Figure 4\u2014figure supplement 1A. The conclusion (C101) appropriately notes this applies to a 'subset' of TEs. The exclusion of TEs overlapping exons is a good control to avoid confounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C109"
+    ],
+    "result": "Chimeric transcripts involving TEs are expressed at lower levels in Stella M/Z KO embryos, and TEs directly regulate gene expression through formation of chimeric transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 provide evidence from RNA-seq analysis (C104-C105, Figure 4\u2014figure supplement 1B) and qRT-PCR validation (C106, Figure 4E). The validation of chimeric junctions by PCR and Sanger sequencing (Figure 4D) provides strong evidence for their existence. The inference that TEs regulate genes through chimeric transcripts (C109) is well-supported, though the mechanism could involve multiple pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Treatment with 20 \u03bcM MuERV-L siRNA causes modest reduction in MuERV-L transcript and significant reduction in protein, resulting in mild developmental delay and reduced blastocyst formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 provide comprehensive characterization of the 20 \u03bcM siRNA treatment: computational target analysis (C113-C115), molecular effects (C116-C117, Figure 5C-D), and developmental consequences (C118-C120, Figure 5E). The inference of functional importance (C121) is appropriately cautious ('modest reduction' with 'notable effect'). Statistical tests are performed and the data are consistent across multiple readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Treatment with 80 \u03bcM MuERV-L siRNA causes stronger repression of MuERV-L and results in >90% embryonic arrest at the 2-cell stage, with repression of chimeric transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C125 show dose-dependent effects of siRNA, but C124 explicitly acknowledges that 'some indirect effects at higher concentrations of siRNA may contribute to the embryonic arrest.' This caveat is critical because high siRNA concentrations can have off-target effects and general toxicity. While the data show correlation between MuERV-L knockdown and arrest, causality is uncertain at this concentration. The repression of chimeric transcripts (C125) provides supporting evidence but doesn't resolve the specificity concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C126",
+      "C132",
+      "C133"
+    ],
+    "result": "MuERV-L has a functional role in embryonic development, and its knockdown likely contributes to the phenotype observed following loss of Stella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C132-C133 represent appropriate conclusions based on the combined siRNA data (C116-C125). The 20 \u03bcM data provide clearer evidence for functional importance with fewer concerns about off-target effects. The inference that MuERV-L knockdown 'likely contributes' to the Stella phenotype (C133) is appropriately cautious, acknowledging that MuERV-L is one of multiple factors affected by Stella loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C38"
+    ],
+    "result": "MuERV-L plays a functionally important role during pre-implantation development and is amongst the critical factors affected by Stella in early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C38 represent summary conclusions based on the combined evidence from expression analysis (C84-C88) and functional perturbation (C116-C126). The siRNA knockdown data (C38) provide direct evidence for developmental impact. The conclusion is appropriately framed as MuERV-L being 'amongst' critical factors rather than the sole factor, acknowledging the complexity of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Stella M/Z KO 2-cell embryos fail to upregulate key zygotic genes involved in ribosome and RNA processing, show widespread misregulation of TEs and chimeric transcripts, and exhibit general failure to upregulate MuERV-L.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 represent high-level summary statements of the main findings, which are supported by the detailed analyses in other claim groups. C26 is supported by C56-C61, C27 by C72-C82 and C104-C109, and C28 by C84-C88. These are appropriate summary statements of the study's major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Loss of maternal Stella results in widespread transcriptional misregulation and partial failure of MZT, with impaired ERV activation leading to failure to upregulate chimeric transcripts and accumulation of maternal transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C127-C131 represent summary statements of the study's main conclusions. These are well-supported by the detailed analyses in other claim groups: MZT failure by C48-C55, ERV impairment by C79-C88, chimeric transcript failure by C104-C109, and maternal transcript accumulation by C48-C54. The proposed coupling between altered LTR promoter activity and gene expression changes (C131) is supported by the correlation and chimeric transcript data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C166",
+      "C167"
+    ],
+    "result": "Stella is involved in ensuring activation of ERVs, which play a potentially key role during early development either directly or through influencing embryonic gene expression, and appropriate expression of LTR-ERV driven genes and MuERV-L contributes to normal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C166-C167 represent the study's main conclusions and proposed model. These are well-supported by the combined evidence from expression analysis, correlation studies, chimeric transcript validation, and functional perturbation. The language is appropriately cautious ('potentially key role', 'either directly or through') acknowledging that mechanisms remain to be fully elucidated. The functional importance is supported by the siRNA data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Stella is a maternally inherited factor with specific protein domains and expression patterns, required for normal pre-implantation development with key roles during earliest developmental events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide background information about Stella from prior literature, supported by appropriate citations (Bortvin et al., 2004; Payer et al., 2003; Nakamura et al., 2007; Hayashi et al., 2008). These claims establish the foundation for the current study and are well-documented in the literature. The protein domain information is illustrated in Figure 1\u2014figure supplement 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Previous work suggested Stella protects maternal pronuclei from TET3-mediated demethylation and affects DNA methylation at imprinted genes and TEs, but the mechanism impairing pre-implantation development in Stella absence remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 summarize prior work and identify the knowledge gap addressed by the current study. The claims are supported by appropriate citations (Nakamura et al., 2007, 2012; Wossidlo et al., 2011; Nakatani et al., 2015; Denomme and Mann, 2013; Amouroux et al., 2016; Peat et al., 2014; Shen et al., 2014; Tsukada et al., 2015). The logic leading to the knowledge gap (C17) is sound, noting that TET3 and imprinting defects don't fully explain the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Transposable elements, particularly ERVs, are activated during early development and can regulate gene expression through multiple mechanisms including acting as regulatory elements and forming chimeric transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 provide background on TE biology and function from prior literature, supported by appropriate citations (Gifford et al., 2013; Macfarlan et al., 2012; Rowe and Trono, 2011; Kigami et al., 2003; Ribet et al., 2008; Beraldi et al., 2006; B\u00f6hne et al., 2008; Rebollo et al., 2012; Peaston et al., 2004). These establish the biological context for investigating TE regulation by Stella.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The major wave of ZGA occurs at the late 2-cell stage in mice, with early zygotic genes enriched for transcription, RNA metabolism, and ribosome biogenesis, accompanied by DNA methylation erasure and histone modification changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 provide established background on MZT in mice from prior literature, supported by appropriate citations (Golbus et al., 1973; Hamatani et al., 2004; Xue et al., 2013; Cantone and Fisher, 2013). This contextualizes the timing and molecular events relevant to the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Stella KO oocytes are transcriptionally distinct from WT but do not exhibit overt abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 combines current data (Figure 1B showing transcriptional differences) with prior literature (Bortvin et al., 2004; Payer et al., 2003 showing no overt abnormalities). This is important for interpreting the 2-cell phenotype as not being inherited from oocyte defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C102",
+      "C103",
+      "C111",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Discussion of prior work on Stella function in different contexts, TE regulation mechanisms, and comparison with other maternal factors and mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C102-C103, C111, C134-C158 provide context from prior literature and discussion points. These are appropriately cited and help interpret the current findings. Notable points include: Stella affects TE methylation in germ cells (C70-C71, C153), MuERV-L forms chimeric transcripts (C103), comparison with Kdm1a mutants (C149-C150), and Setdb1 suppresses ERVs (C154-C155). These contextual claims are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C83",
+      "C107",
+      "C66"
+    ],
+    "result": "Structural and functional annotations of MuERV-L and spliceosome components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C107, and C66 provide structural/functional information about MuERV-L (C83: encodes Gag and Pol, flanked by LTRs), Snrpc (C107: spliceosome component), and Snrpd1/Snrpb2 (C66: core spliceosome components). These are factual statements supported by citations and general knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C108",
+      "C110"
+    ],
+    "result": "Proposed link between TE activation and gene expression network, with dysregulation potentially contributing to developmental phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C110 represent interpretive statements linking the observed correlations to potential functional consequences. C108 is supported by the correlation and chimeric transcript data (C96-C109). C110 is appropriately framed as a proposal ('might directly contribute') and represents a reasonable hypothesis based on the combined data, though direct causality is not definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Stella has the potential to bind both RNA and DNA and could affect TEs through multiple modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is a reasonable inference based on known properties of Stella (C2-C3) and the lack of strong DNA binding in ESCs (C89-C90). The statement is appropriately speculative ('could affect') and acknowledges multiple possible mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Speculation about potential mechanisms for MuERV-L function, including possible role of Gag protein and effects of siRNA knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C165 are explicitly speculative ('could suggest', 'it is also possible'). C162 proposes MuERV-L Gag protein may have functional role, drawing analogy to human viral-like particles (C163). C164-C165 propose alternative mechanisms for siRNA effects. These are reasonable hypotheses but lack direct experimental support in the current study. They appropriately identify areas for future investigation.",
+    "result_type": "MINOR"
+  }
+]

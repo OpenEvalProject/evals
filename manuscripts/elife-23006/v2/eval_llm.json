@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The Volta phase plate (VPP) is a device that enables in-focus phase contrast in transmission electron microscopy and is the first phase-plate-type device to reach near-atomic resolutions in single particle cryo-EM. The VPP improves image contrast and could help with solving structures of difficult samples such as small, heterogeneous, and/or flexible molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, C6, and C7 are well-supported by multiple citations to prior work (Danev et al., 2014; Chua et al., 2016; Danev and Baumeister, 2016; Khoshouei et al., 2016a, 2016b; Cheng et al., 2015). These claims establish the background and context for the VPP technology based on established literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The in-focus method with VPP has practical limitations: it requires very accurate focusing which complicates and slows down data acquisition, and the achievable resolution is limited by spherical aberration to ~3 \u00c5. Software support for VPP phase shift in CTF was not available initially but was later implemented, enabling the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by the authors' prior experience (C8, C10, C11) and theoretical understanding of electron optics (C9). The 3.2 \u00c5 resolution achieved in the previous in-focus dataset (C59) provides empirical support for the ~3 \u00c5 resolution limit claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C2",
+      "C3",
+      "C70"
+    ],
+    "result": "The hybrid approach combining VPP with a small amount of defocus simplifies data acquisition, increases acquisition speed, and removes the resolution limit of the in-focus method by enabling CTF fitting and correction, allowing 3D reconstructions with resolutions better than 3 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C2 claims increased data acquisition speed, C80-C81 show that the actual throughput was ~27 images/hour, comparable to the previous in-focus dataset, with no improvement due to super-resolution mode overhead. The claim of increased speed is contradicted by the experimental data. However, the resolution improvement (C3, C13) is well-supported by achieving 2.4 \u00c5 vs. 3.2 \u00c5 previously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C76"
+    ],
+    "result": "Thermoplasma acidophilum 20S proteasome was used as the test sample in both the previous in-focus cryo-EM report and this study for consistency and continuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C76 are supported by citations to prior work and describe the experimental design choice. This is a straightforward methodological statement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C26",
+      "C71",
+      "C72"
+    ],
+    "result": "Acquiring images with defocus is easier and faster because defocus and astigmatism can be fitted and corrected a posteriori. The VPP provides low frequency contrast allowing the use of smaller defocus values than typically used in DPC. The evolving phase shift of the VPP allows the use of a constant, low target defocus (500 nm is recommended as a practical value).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C26, C71, and C72 are supported by the authors' practical experience, visual evidence in Figures 1A-B, and the experimental approach. The power spectrum in Figure 1B clearly shows CTF rings confirming the presence of defocus, and the recommendation of 500 nm defocus is based on empirical observations (C37-C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Fitting the CTFs of VPP data requires an additional phase shift parameter, which provides a quantitative measure of VPP behavior. The VPP was advanced every 1.5 hr, after which the phase shift drops to <0.2 \u03c0 and gradually builds up again. The phase shift distribution has a maximum at ~0.6 \u03c0, and the evolving phase shift is advantageous for single particle analysis because it moves the positions of CTF zeros.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 are well-supported by data in Figures 1C-D showing the phase shift history and distribution. The citation to Rohou and Grigorieff (2015) supports the CTF fitting methodology (C20). The advantage of evolving phase shift (C25) is based on sound theoretical understanding of CTF behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The VPP used in this work exhibited more phase shift and variation between different areas compared to the original VPP paper, possibly due to differences between production versions and the prototype. Despite these factors, high quality data can still be collected, though there is room for improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by comparison of data across studies (Figure 1C) and the high-resolution results (2.4 \u00c5) obtained in this study. The speculation about equipment differences (C30-C32) is reasonable but acknowledged as speculative. The overall conclusion (C33) is validated by the achieved results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The target defocus was changed from 500 nm to 300 nm halfway through data acquisition to evaluate performance. The measured defocus showed periodic oscillations, and the 300 nm defocus had practical disadvantages in CTF fitting, making 500 nm more robust and easier to process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by data in Figures 1E-F showing defocus history and distributions. The practical comparison between 300 nm and 500 nm defocus is based on the authors' direct experience with data processing and is a reasonable empirical observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C92",
+      "C93"
+    ],
+    "result": "High phase shift (>0.8 \u03c0) is undesirable because it causes CTF artifacts. Images with low phase shift (0.1 \u03c0) have lower contrast, images at optimal phase shift (0.5 \u03c0) have the best appearance, and images with high phase shift (0.9 \u03c0) look blurry due to an extra CTF maximum at very low spatial frequencies. The central spot of the VPP was approximated with a Gaussian function, and the deviation between practical and theoretical CTFs means high phase shift images are not handled optimally during processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47, C92, and C93 are well-supported by visual evidence in Figure 2A-B and theoretical analysis of CTF behavior. The Gaussian approximation (C46-C47) is acknowledged as a simplification but is reasonable for practical purposes. The theoretical analysis in Figure 2B clearly demonstrates the CTF artifacts at high phase shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C73"
+    ],
+    "result": "Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) phase shifts were predominantly rejected during 3D classification, with no correlation between defocus and particle retention. The first few images after moving the VPP have low phase shift that quickly develops. Future improvements should include on-the-fly CTF fitting, phase shift monitoring, and VPP pre-irradiation to avoid collecting low and high phase shift images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 2C showing particle retention as a function of phase shift. Claims C50-C51 are supported by citation to prior work. Claims C53-C55 and C73 are speculative suggestions for future improvement but are reasonable based on the observed data quality issues at extreme phase shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The reconstruction reached a resolution of 2.4 \u00c5 according to the gold-standard FSC 0.143 criterion, with local resolution varying between 2.2 \u00c5 and 2.6 \u00c5. This represents significant improvement compared to the previous in-focus dataset at 3.2 \u00c5, confirming the effectiveness of CTF correction. The improvement is also attributed to smaller pixel size (1.054 \u00c5 vs 1.35 \u00c5) and super-resolution mode. The B-factor was calculated as 103 \u00c5\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are well-supported by data in Figure 3A-C, E-F. The FSC plot (Figure 3C) validates the 2.4 \u00c5 resolution, visual evidence in Figure 3B confirms the visibility of atomic details, and the local resolution map (Figure 3A) supports the 2.2-2.6 \u00c5 range. The comparison to prior work (3.2 \u00c5) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C74",
+      "C75"
+    ],
+    "result": "The VPP is not limited in resolution and matches the state of the art of DPC for 'easy' samples such as the 20S proteasome. However, the real performance advantage of the VPP needs further exploration using 'difficult' samples such as small, flexible, and/or heterogeneous samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C74 are supported by the 2.4 \u00c5 resolution achieved in this study, demonstrating that VPP can reach near-atomic resolution. Claim C64 is speculative but reasonable given the nature of the sample. Claim C75 appropriately identifies the limitation that the study used an 'easy' sample and that further work is needed to demonstrate advantages with difficult samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MotionCor2 performs movie frame alignment with local motion tracking and dose-weighting, providing similar performance gains to particle polishing in Relion but with greater efficiency. The MotionCor2 workflow produced virtually identical results to particle polishing in terms of resolution (2.42 \u00c5 vs 2.36 \u00c5) and B-factor (85 \u00c5\u00b2 vs 74 \u00c5\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by the comparison of two processing workflows described in the methods and results. The resolution and B-factor values are explicitly stated and show very similar performance. The efficiency advantage (C66) is reasonable given the described computational and storage benefits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Data was collected on an FEI Titan Krios at 300 kV with a Gatan GIF Quantum energy filter and K2 Summit camera using SerialEM software. The dataset consisted of 468 micrographs (427 after quality control) with data acquisition speed of ~27 images/hour. Processing through Relion particle polishing workflow yielded a final reconstruction from 93,596 particles at 2.4 \u00c5 resolution with B-factor of 74 \u00c5\u00b2. The MotionCor2 workflow yielded similar results from 83,127 particles. Data was deposited to EMDataBank and EMPIAR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C91 describe the experimental methods, data processing, and data deposition. These are straightforward factual statements about the procedures used and are internally consistent. The data deposition information (C89-C90) provides accession codes for verification.",
+    "result_type": "MINOR"
+  }
+]

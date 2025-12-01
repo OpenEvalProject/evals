@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C97"
+    ],
+    "result": "The authors determined a 4.0 \u00c5 resolution cryo-EM structure of the human TAP/ICP47 complex, with the transmembrane region better resolved than the nucleotide-binding domains. The model contains 12 core TM-helices of TAP and the N-terminal 55 residues of ICP47.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C32, and C97 collectively demonstrate successful structure determination at 4.0 \u00c5 resolution with appropriate validation metrics (FSC curves). The regional resolution variation is documented (C29-C31), and the model content is clearly specified (C32). The FSC validation at 4.3 \u00c5 (C97) is consistent with the reported 4.0 \u00c5 average resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C95",
+      "C96"
+    ],
+    "result": "Methodological improvements included higher magnification (reducing pixel size from 1.35 \u00c5 to 1.04 \u00c5), optimized movement correction combining whole frame alignment with individual particle tracking, and use of all 502,000 automatically extracted particles for reconstruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C95-C96 describe specific methodological choices that are well-documented and justified. The comparison of different movement correction approaches (C27, C95) provides empirical support for the chosen method. The pixel size reduction and its impact on detector efficiency (C26) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "ICP47 traps TAP in an inactive inward-facing conformation with separated NBDs and a domain-swapped architecture. The structure shows unique features including an ER luminal gate cracked open to ~4 \u00c5 and a lateral membrane opening, both likely induced by ICP47 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C33-C42 describe the overall TAP/ICP47 structure and its conformational state. The structural observations (C33-C40) are directly supported by the cryo-EM data shown in Figure 2. The inference that openings are ICP47-induced (C41) is reasonable given comparison to other ABC transporters and the alternating access model (C42), though this remains an interpretation of the inhibited state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C36",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "ICP47 forms a helical hairpin that inserts into TAP's translocation pathway, with the N-terminal 34 residues buried inside and forming a helical bundle with TAP2 TM helices 3 and 6. This interaction prevents substrate binding and traps TAP in an NBD-separated conformation unable to progress to ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C36, C56-C59, and C73-C75 describe the ICP47 binding mode and its inhibitory mechanism. The structural observations (C22, C36, C56, C58-C59) are directly supported by the cryo-EM density shown in Figures 3-4. The functional interpretation (C57, C73-C75) is supported by cited functional studies and consistent with the structural data showing ICP47 occupying the substrate binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The specificity and potency of ICP47 inhibition result from an extensive interface (2360 \u00c5\u00b2) with critical contacts at the tip of the helical hairpin (residues 18-25) interacting with the apex of the TM cavity. Species-specific susceptibility to ICP47 maps to residues in this same region, with mutations like T425N in mouse/rat and S421R in rabbit explaining resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52-C55, C60-C61, C63-C68 integrate structural data with functional mutagenesis and species specificity. The buried surface area calculation (C53-C55) is quantitative and appropriately compared to literature values. The convergence of mutagenesis data (C60-C61, C66), species specificity analysis (C62-C67), and structural observations (C63-C65) provides strong support for the identified critical interface (C68). The structural rationalization of species-specific resistance is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The substrate-binding pocket is located in the large internal TM cavity with appropriate electrostatic properties for peptide binding. Biochemically identified substrate-binding residues and proposed C-terminal anchor residues (Y408 of TAP1 and M218 of TAP2) are buried by ICP47, though substrates likely interact with TAP through a different mode than ICP47.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 map functional data onto the structure to identify the substrate binding site. The integration of biochemical studies (C44, cited), mutagenesis data (C47, cited), and structural observations (C45-C46, C48, C50) is appropriate. The inference that substrates bind differently than ICP47 (C51) is reasonable given that ICP47 is an inhibitor rather than a transported substrate, though direct structural evidence of substrate binding is lacking (acknowledged in C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76"
+    ],
+    "result": "The authors propose a transport mechanism where TAP cycles between inward-facing (NBDs separated) and outward-facing (NBDs closed) conformations powered by ATP binding and hydrolysis. ICP47 blocks this cycle by trapping TAP in the inward-facing state, thereby suppressing MHC-I antigen presentation and enabling HSV immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 and C76 describe the proposed transport mechanism and immune evasion strategy. While the transport cycle (C69-C72) is inferred from knowledge of homologous ABC transporters rather than directly demonstrated, this is a reasonable mechanistic model. The immune evasion conclusion (C76) logically follows from the structural and functional data showing ICP47 blocks peptide transport. The mechanism is consistent with the structural observations and cited functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Structural comparison of TAP with prokaryotic peptide transporters McjD and PCAT1 reveals a conserved core fold despite functional differences. TAP shows the largest NBD separation, with TM4-5 appearing pushed outward and bent, possibly due to ICP47 binding. The structural similarity suggests common evolutionary origin and transport mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 compare TAP to related transporters. The structural similarities (C83, C88-C89) are documented in Figure 6. The differences noted (C84, C86) are appropriately qualified as possibly ICP47-induced (C85, C87), acknowledging uncertainty. The evolutionary inference (C90) is reasonable given structural conservation. The comparison appropriately cites published structures (C77-C78) and notes functional differences (C79-C82).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on TAP function and immune evasion: TAP is an ABC transporter essential for cellular immunity that transports cytosolic peptides into the ER for MHC-I loading. TAP has broad substrate specificity to serve six different MHC-I molecules. HSV encodes ICP47, which inhibits TAP and enables immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C20 provide established background knowledge about TAP function, substrate specificity, and viral inhibition. All claims are appropriately supported by citations to established literature. This background contextualizes the structural study but does not represent new findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors previously determined a 6.5 \u00c5 structure of TAP/ICP47 showing ICP47 forms a helical hairpin. The complex has a molecular mass of 130 kDa and exhibits pseudo-twofold symmetry, factors that limited the previous resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 reference the authors' prior work and describe characteristics of the complex relevant to the current study. These are appropriately cited (C21) and the molecular properties (C23-C24) are factual descriptions that contextualize the resolution improvement achieved in the current work.",
+    "result_type": "MINOR"
+  }
+]

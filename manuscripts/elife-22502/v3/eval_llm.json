@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C43",
+      "C44",
+      "C45",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "GWAS identified multiple functional alleles at the DOG1 locus that jointly explain 57% of seed dormancy variation in Swedish Arabidopsis. Multi-locus modeling revealed that the most significant GWAS peak (SNP1) is a synthetic association, while three SNPs (SNP2, SNP3, SNP4) in or near DOG1 represent distinct functional alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-locus GWAS analysis is methodologically sound, using stepwise regression and comparing models starting from different SNPs (C57, C61, C62). The identification of synthetic associations is well-supported by LD analysis (C52, C53) and the demonstration that SNP2+SNP3 eliminate the SNP1 signal (C63). The 57% variance explained is quantitatively reported and supported by variance-components analysis (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Experimental validation through F2 linkage mapping and transgenic complementation confirmed that three distinct dormant DOG1 alleles (D2, D3, D4) are functional and can produce dormant phenotypes independently of the synthetic association signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental validation is rigorous, using both genetic crosses (C69, C70, C73) and transgenic complementation (C71, C72). The transgenic experiments specifically demonstrate that alleles carrying SNP2 or SNP3 produce dormancy without SNP1, directly testing the synthetic association hypothesis. Statistical significance is reported for transgenic experiments (p=0.0147 and p=0.0046).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Seed dormancy shows strong geographic structure in Sweden, with 46% of lines dormant and 35% non-dormant. GR21 correlates strongly with latitude (r=0.62), with northern lines predominantly non-dormant and southern lines more diverse. The geographic distribution of DOG1 haplotypes mirrors the dormancy phenotype distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phenotypic characterization is quantitative and well-documented (C36, C37). The correlation with latitude is statistically significant (C38, r=0.62) and supported by climate correlations (C41). The geographic distribution patterns are clearly demonstrated through mapping (C86-C90) and match the phenotypic patterns, providing strong evidence for local adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Field experiments in southern Sweden demonstrated that DOG1 haplotypes have major effects on germination timing and survival under natural conditions. Dormant alleles increased in frequency over time, with relative viability of non-dormant genotypes at 50-60%, indicating strong selection on DOG1 that likely drives local adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The field experiments are well-designed with replication (C93) and track allele frequencies across multiple time points (C95-C104). The quantitative fitness estimates (C107, 50-60% relative viability) are substantial and biologically meaningful. However, the authors appropriately acknowledge limitations - the experiments are single-year, don't measure total fitness, and soil sampling covered only 3% of the area. Despite these limitations, the results provide strong evidence for selection on DOG1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C49",
+      "C50",
+      "C51",
+      "C64"
+    ],
+    "result": "Allelic heterogeneity at DOG1 creates synthetic (ghost) associations in GWAS that seriously mislead standard single-locus analysis. The most significant GWAS signal (SNP1) is 21 kb from DOG1 and serves as a proxy for multiple functional alleles unless properly modeled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The demonstration of synthetic associations is well-supported by multiple lines of evidence: (1) multi-locus modeling showing SNP1 signal disappears when SNP2+SNP3 are included (C63), (2) LD analysis showing unusual long-range LD (C53), (3) experimental validation showing SNP2/SNP3 alleles function without SNP1 (C70, C72), and (4) comparison to known examples in A. thaliana and rice (C51). This represents an important methodological finding about GWAS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "While the identified DOG1 haplotypes likely account for most variation at this locus (51% by variance-components analysis), complete causal resolution is limited by perfect LD between some variants, potential undetected rare alleles, and uncertainty about molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge multiple limitations: SNP3 is in perfect LD with other variants (C65), the identified SNPs might themselves tag rarer alleles (C76), establishing complete causality would require extensive engineering (C77), and the molecular mechanism is unknown (C78, C79). The variance-components analysis (C81, 51%) provides quantitative support that most DOG1 variation is captured, but the authors correctly note that additional rare or small-effect alleles may exist (C80).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Four distinct loss-of-function alleles at DOG18/RDO5/IBO segregate in the Swedish population but were not detected by GWAS because they appear to be singletons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by the observation that no GWAS signal was detected at DOG18/RDO5/IBO despite known loss-of-function alleles (C84), and the explanation that singleton alleles cannot be detected by GWAS is methodologically sound (C85). This illustrates an important limitation of GWAS for detecting rare variants.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Germination timing appears to be a major fitness component in Arabidopsis, with evidence for local-scale adaptation driven by microenvironmental variation. Different dormancy levels may be adaptive in different contexts, with deep dormancy avoiding summer stress in the south and shallow dormancy maximizing growth window in the north.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the field experiments demonstrate strong selection on germination timing (C110), the broader claims about local adaptation patterns (C114-C119) are largely inferential. The authors acknowledge that multi-generational experiments are needed to fully understand selection (C111), and the adaptive explanations for geographic patterns (C115, C116) are reasonable but not directly tested. The observation of local-scale variation (C117, C118) is supported by data, but the causal role of microenvironmental variation is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Analysis of tDNA insertion mutants suggests CIPK20 could potentially affect dormancy, though this effect might result from direct regulation of DOG1 rather than an independent role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The tDNA insertion analysis (C47) provides preliminary evidence for CIPK20 involvement, but the authors appropriately note the alternative explanation that the insertion affects DOG1 regulation (C48). Without additional experiments (e.g., complementation, expression analysis), it's unclear whether CIPK20 has an independent role in dormancy. This represents an interesting observation requiring follow-up work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "DOG1 may function as an evolutionary 'master switch' for life history variation, potentially affecting both dormancy and flowering time, with regulatory mechanisms similar to FLC involving chromatin remodeling and antisense transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result is highly speculative. The association between DOG1 and flowering time in global GWAS (C123) is acknowledged as potentially spurious (C124), and the authors present two alternative explanations (C125, C126) without resolving which is correct. While one study suggests DOG1 affects both traits (C127), and regulatory similarities to FLC exist (C128), the broader claim about DOG1 as a 'master switch' (C126, C129) requires substantial additional evidence. This represents an interesting hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

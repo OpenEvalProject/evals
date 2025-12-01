@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Immobilization of chick embryos via DMB or PB treatment reduces the PAX7+ muscle progenitor pool by 58% (DMB) or 29% (PB) and increases myogenic differentiation markers (MYOD, MYOG), with larger multinucleated muscle fibers observed in paralyzed muscles. These effects are specific to in vivo conditions and not observed in cultured myoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from multiple experimental approaches (immunohistochemistry, RT-qPCR, in situ hybridization) showing consistent effects of immobilization on muscle progenitors. The inclusion of two different paralytic agents (DMB and PB) and control experiments in cell culture (C7) strengthen the conclusion that mechanical forces regulate the progenitor pool in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Immobilization decreases NOTCH signaling activity in muscles, as evidenced by reduced expression of the NOTCH ligand JAG2 in muscle fibers and decreased expression of NOTCH target genes (HES5, HEYL) in paralyzed muscles. This phenotype mimics NOTCH loss-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C16 demonstrate reduced NOTCH activity through multiple readouts (ligand expression, target gene expression) using complementary techniques (in situ hybridization, RT-qPCR). The muscle-specific loss (C12) and the phenotypic similarity to known NOTCH loss-of-function (C16) provide strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Immobilization does not affect PAX7+ cell proliferation (EdU incorporation unchanged) or apoptosis (no TUNEL+ PAX7+ cells), though overall apoptosis increases in non-myogenic cells. This indicates the progenitor pool reduction occurs through differentiation rather than altered proliferation or cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide clear evidence from EdU incorporation and TUNEL assays that PAX7+ cells maintain normal proliferation and survival rates. The observation that apoptosis occurs in non-myogenic cells (C18-C19) strengthens the conclusion that progenitor loss is due to differentiation, consistent with NOTCH loss-of-function phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Ligand-dependent NOTCH activation via DLL1 overexpression rescues the immobilization phenotype, increasing PAX7+ cell numbers by 216% in paralyzed muscles and preventing inappropriate differentiation. This rescue represents approximately 93% recovery of the progenitor pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 demonstrate functional rescue through gain-of-function experiments. The quantitative data (C22) and calculation of rescue efficiency (C23) provide strong evidence that NOTCH acts downstream of mechanical signals. However, the calculation in C23 assumes additive effects and could benefit from more detailed statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Blocking NOTCH ligand activity specifically in differentiated muscle fibers (using dominant-negative DELTA1 in ~45% of MF20+ cells) is sufficient to reduce PAX7+ progenitor numbers by 32%, demonstrating that NOTCH ligand activity in muscle fibers is required to maintain the progenitor pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide critical evidence for non-cell autonomous regulation through cell-type-specific manipulation. The use of MLC promoter-driven dominant-negative construct ensures fiber-specific expression, and the quantitative reduction in progenitors demonstrates sufficiency of fiber-derived signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "YAP protein is predominantly nuclear in 89.6% of post-mitotic muscle fiber myonuclei under normal conditions, and YAP target genes (ANKRD1, CTGF, CYR61) are expressed in muscle fibers. Immobilization dramatically reduces nuclear YAP in fibers (to 15.9%) and decreases YAP target gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 establish YAP activity in muscle fibers through nuclear localization (C27, C28, C34) and target gene expression (C29-C33). The quantitative data showing dramatic reduction upon immobilization (C34) is compelling. However, the unexpected finding of high YAP activity in post-mitotic cells (C27) contrasts with typical YAP function and warrants additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Constitutively active YAP (YapS112A) in cultured fetal myoblasts activates YAP target genes (CTGF, CYR61), increases PAX7 and MYF5 expression while reducing MYOD and MYOG, and importantly activates JAG2 expression in both mixed cultures and FACS-sorted differentiated muscle cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 demonstrate YAP regulation of JAG2 in cell culture using gain-of-function approaches. The use of FACS-sorted differentiated cells (C39) specifically demonstrates YAP-JAG2 regulation in the relevant cell type. The gene expression changes (C37) are consistent with cited literature, strengthening the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "YAP forced-activity (YapS112A) in differentiated muscle fibers of immobilized embryos rescues ANKRD1 and JAG2 expression in paralyzed muscles and increases PAX7+ cell numbers by 55% compared to contralateral limbs, preventing the loss of muscle progenitors under immobilization conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 provide in vivo rescue experiments demonstrating YAP acts upstream of JAG2 in muscle fibers to regulate progenitors. The use of MLC promoter ensures fiber-specific expression, and the rescue of both YAP targets (C40) and JAG2 (C41) with concomitant progenitor rescue (C42) provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "YAP is recruited to a regulatory region (-629 to -1023 bp) containing an MCAT element in the JAG2 promoter in control limbs, and this occupancy is decreased in immobilized fetuses, providing direct evidence for YAP-mediated transcriptional regulation of JAG2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 provide direct molecular evidence through ChIP assays that YAP binds to the JAG2 promoter and that this binding is mechanosensitive. The identification of MCAT elements (TEAD binding sites) is consistent with known YAP-TEAD interactions. However, the ChIP data would be strengthened by additional replicates and validation of other potential regulatory regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The study establishes a novel mechanotransduction pathway where muscle contraction maintains the PAX7+ progenitor pool through a YAP-JAG2-NOTCH signaling axis. YAP in muscle fibers activates JAG2 expression, which in turn activates NOTCH in adjacent progenitors in a non-cell autonomous manner, preventing premature differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 represent the main conclusions integrating all experimental findings. The evidence from immobilization (reduced YAP and NOTCH), NOTCH rescue (C21-C24), fiber-specific NOTCH ligand requirement (C25-C26), YAP-JAG2 regulation (C36-C45), and YAP rescue (C40-C43) collectively support this mechanistic model. The non-cell autonomous mechanism is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The manuscript establishes context by citing literature on NOTCH function in muscle development and adult myogenesis, YAP as a mechanosensor and regulator of muscle cells, and the importance of mechanical forces in musculoskeletal development, while identifying a knowledge gap regarding upstream regulators of NOTCH during developmental myogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C67 accurately represent established knowledge from cited literature and appropriately identify the knowledge gap (C60, C67) that motivates the study. These contextual claims are well-supported by appropriate citations and provide necessary background for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on YAP-NOTCH interactions, mechanical regulation of NOTCH, and effects of mechanical loading on muscle stem cells across development, homeostasis, and aging, drawing parallels to other systems and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C87 appropriately cite relevant literature to contextualize the findings. The comparisons to other systems (C77, C78, C91) and the synthesis of literature on mechanical forces and muscle stem cells (C84-C87) strengthen the interpretation. However, some claims (C76) represent current views that the present study challenges, which could be more explicitly addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The discussion draws broader conclusions about mechanical regulation of progenitor cells across the musculoskeletal system and compares the findings to mechanical regulation in other contexts (plants, cancer, adult muscle), suggesting conserved mechanisms of mechanical force sensing in stem cell maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 appropriately place the findings in broader biological context through literature citations. The comparison to plant stem cells (C91) and the discussion of YAP in cancer (C93) and adult muscle (C94) provide valuable perspective. The synthesis regarding musculoskeletal progenitor sensitivity to mechanical signals (C90) is well-supported by cited literature.",
+    "result_type": "MINOR"
+  }
+]

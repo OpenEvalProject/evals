@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C104"
+    ],
+    "result": "FRAP experiments in VGLUT1Venus knock-in mice demonstrate that 75% of VGLUT1-containing vesicles in cerebellar mossy fiber terminals (MFTs) are highly mobile, with fluorescence recovery of 77% within 10 s and t1/2 of 0.8 s. This vesicle mobility is comparable to that observed at ribbon synapses. The VGLUT1Venus mice show normal synaptic physiology compared to wild-type mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C31, and C104 are directly supported by FRAP experimental data (C27 validates the mouse model, C28 validates the Venus tag). The comparison to ribbon synapses (C4) is supported by both the FRAP data and literature comparisons (C48). The experimental design is appropriate with adequate controls and the measurements are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Pharmacological manipulations confirm that vesicle mobility in MFTs is mediated by passive diffusion rather than active transport. Temperature reduction (Q10=1.5), actin disruption/stabilization, okadaic acid treatment, and fixed tissue controls all support diffusion-based mobility. Roscovitine had no effect, suggesting minimal synapsin-based clustering in MFT centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological experiments (C32-C41) provide converging evidence for diffusion-mediated mobility. The Q10 value (C33) is consistent with passive diffusion, actin manipulations (C34-C36) show modest effects, okadaic acid dramatically increases mobility (C37-C38), and fixed tissue shows minimal recovery (C41). The lack of roscovitine effect (C39-C40) is appropriately interpreted. Controls are adequate and interpretations are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The long-time self-diffusion coefficient (Dlong) of vesicles in MFTs is 0.025 \u00b1 0.003 \u03bcm\u00b2/s after drift correction, determined by fitting FRAP data to analytical diffusion models. This Dlong is higher than at other conventional central synapses and the neuromuscular junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 report Dlong values calculated from fitting experimental FRAP data to established analytical models (Axelrod equation). The drift correction (C46) is appropriately applied. The comparison with other synapses (C48) is supported by literature values. The model fitting approach is validated by finite-difference simulations showing close agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Quantitative electron microscopy reveals that the central region of MFTs is highly crowded, with vesicle density of 3930 \u00b1 262 per \u03bcm\u00b3, mean vesicle diameter of 41.1 \u00b1 0.2 nm (44 nm including membrane proteins), vesicle volume fraction of 0.17 \u00b1 0.01, and mitochondrial volume fraction of 0.28 \u00b1 0.04. Together, vesicles and mitochondria occupy 40% of the MFT volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are directly supported by serial-section EM and electron tomography measurements. The vesicle density and diameter measurements are consistent with prior literature. The volume fraction calculations appropriately account for membrane proteins (C51) and the cubic relationship between radius and volume. Sample sizes are adequate (n=3 volumes, 256 vesicles) and measurements are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Monte Carlo simulations constrained by experimental measurements identify Dshort = 0.060 \u03bcm\u00b2/s and 25% immobile vesicle fraction as best-match parameters. Vesicle collisions reduce mobility by a factor of 2.4 over long timescales (Dlong/Dshort = 0.42). For MFT conditions, collisions between mobile vesicles reduce mobility by 30%, collisions with immobile vesicles by 13%, and collisions with mitochondria by 32%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are supported by Monte Carlo simulations with experimentally constrained parameters. The parameter search methodology (chi-square minimization) is appropriate, and confidence intervals are provided (C55). The time-dependent diffusion coefficient analysis (C56) and decomposition of collision effects (C58-C60) are logically derived from the simulation results. The conclusion that collisions are major determinants (C61) is justified by the magnitude of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Analytical calculations of hydrodynamic interactions show that for MFT vesicle volume fractions, Dshort/Dcyto = 0.47, indicating a two-fold reduction in mobility. Combined hydrodynamic and steric interactions result in an 80% reduction (Dlong/Dcyto = 0.19), suggesting Dcyto = 0.127 \u03bcm\u00b2/s for dilute vesicles in cytoplasm, only 3.5-fold lower than beads in cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by analytical calculations using established theoretical frameworks (Tokuyama and Oppenheim, Freed and Muthukumar). The calculations appropriately account for vesicle volume fractions and immobile vesicle effects. The comparison with bead diffusion (C66) uses appropriate literature values. The speculative explanation (C67) is appropriately qualified as 'likely' and represents reasonable interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "3D reconstructions of 14 active zones reveal small AZ areas (mean 0.017 \u00b1 0.002 \u03bcm\u00b2, diameter 145 \u00b1 8 nm) surrounded by vesicle clouds with elevated density near the AZ (5652 \u00b1 377 per \u03bcm\u00b3 at 30 nm, volume fraction 0.25). Vesicle accumulation extends ~2 vesicle diameters from the AZ, with few docked vesicles but hundreds nearby. Mitochondria are located within 270 \u00b1 20 nm of AZs, creating restricted diffusible space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 are supported by quantitative analysis of 3D EM reconstructions (n=14 AZs). The measurements of AZ area, vesicle density gradients, and mitochondrial proximity are directly obtained from the reconstructions. The inferences about vesicle accumulation (C74), restricted diffusible space (C77, C79), and diffusional barriers (C77) are reasonable interpretations of the density measurements and irregular cloud shapes. Sample size is adequate for the variability observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Monte Carlo simulations of vesicle diffusion at reconstructed AZs show that at early times (0-2 ms), vesicle supply rates (~1000 s\u207b\u00b9) are well above experimental reloading rates (40-80 s\u207b\u00b9), declining to ~200 s\u207b\u00b9 by 10 ms. This indicates that vesicle diffusion does not limit reloading at early times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are supported by Monte Carlo simulations using experimentally constrained 3D AZ geometries. The comparison of simulated supply rates with published experimental reloading rates (C83) is appropriate. The inference that diffusion is not limiting at early times (C84) is logically justified by the substantial excess of supply over demand. The simulations appropriately incorporate measured vesicle densities, geometries, and mobility parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "At late times (50-100 s) during sustained release, simulated vesicle supply rates reach 7 \u00b1 1 s\u207b\u00b9, remarkably matching experimental release rates at MFTs (8 s\u207b\u00b9) and vestibular synapses (7 s\u207b\u00b9). Back-extrapolation estimates a pool size of 237 \u00b1 40 vesicles, similar to experimental values (200-300). Vesicle density near the AZ falls dramatically during sustained release, but increased mobility due to reduced crowding maintains constant supply.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 show strong agreement between simulation predictions and experimental measurements. The simulated supply rate (C85) matches published release rates (C86), and the predicted pool size (C87) matches experimental estimates (C88). The inference that release becomes diffusion-limited at late times (C89) is well-supported by this quantitative agreement. The mechanistic explanation involving vesicle depletion and increased mobility (C90-C91) is supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Simulations removing hydrodynamic interactions or vesicle collisions demonstrate that both physical interactions limit vesicle supply. Removing hydrodynamic interactions increases supply at all times, while removing collisions increases late-time supply by a factor of 2. These crowding effects limit maximal vesicle supply to the AZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by systematic manipulation of simulation parameters. The comparison of simulations with and without specific physical interactions provides clear evidence for their roles. The inferences about the importance of hydrodynamic interactions (C92) and collisions (C93) are justified by the magnitude of effects observed. The conclusion about crowding limiting supply (C94) logically follows from these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Simulations with 'open' geometries (removing diffusional barriers) show that while early supply rates are unchanged, late-time rates increase seven-fold to 55 s\u207b\u00b9, with pool size estimates of only 16 \u00b1 3 vesicles. This demonstrates that the geometry of diffusible space near the AZ, created by membrane invaginations and organelles, limits vesicle supply and determines the functionally defined releasable pool size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by comparison of control and open-geometry simulations. The dramatic difference in late-time supply rates (C96) and pool size estimates (C97) between conditions demonstrates the importance of geometry. The inference that diffusional barriers limit supply (C98) and determine RP size (C99) is well-supported by the >100-fold difference in pool estimates. This provides a structural basis for functional pool definitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "More realistic simulations incorporating docking/priming delays (16.7 ms) and stochastic release during 100 Hz trains show that release rates converge with instantaneous release conditions at late times (>1 s), confirming diffusion-limited release during sustained signaling. Back-extrapolation analysis yields similar RP estimates regardless of release site number. The >100-fold reduction in RP estimates for open geometries confirms that diffusible space geometry is a major determinant of RP size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by simulations that incorporate realistic kinetic constraints. The convergence of release rates at late times (C100) and similarity of back-extrapolation estimates (C101) strengthen the conclusion that release becomes diffusion-limited (C102). The comparison with open geometries (C103) reinforces the importance of geometry. These simulations address potential concerns about the instantaneous release assumption in earlier simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C108",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study identifies hydrodynamic interactions and vesicle collisions as major physical determinants of vesicle mobility in crowded presynaptic terminals. These interactions produce time-dependent diffusion coefficients that depend on vesicle density. Accounting for these crowding effects explains much of the discrepancy between vesicle and bead mobility in cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C108-C115 represent summary statements of the major findings. These are well-supported by the combined experimental and modeling results (C3-C104). The identification of hydrodynamic interactions as a major determinant (C114) is novel and well-supported by the analytical calculations and simulations. The explanation of vesicle vs. bead mobility differences (C115) is a logical consequence of the crowding analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Models incorporating 3D AZ reconstructions predict both the releasable pool size (~237 vesicles) and replenishment rate from the reserve pool (7-8 s\u207b\u00b9), matching experimental measurements. While vesicle reloading is not diffusion-limited at the onset of release, diffusion limits reloading during sustained high-frequency signaling. This provides a structural basis for the functionally defined ~300 vesicle RP at MFT AZs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 and C105-C111 represent the main conclusions about vesicle supply and pool dynamics. These are strongly supported by the quantitative agreement between simulation predictions and experimental measurements (C85-C88). The temporal distinction between early (not diffusion-limited, C9, C84) and late (diffusion-limited, C10, C89) phases is well-supported by the simulation results. The structural-functional link (C111) is a major contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The quantitative model of vesicle mobility predicts diffusion coefficients across different synaptic regions and synapse types. For MFTs, Dlong decreases from 0.025 \u03bcm\u00b2/s in the interior to 0.012 \u03bcm\u00b2/s near the AZ. Model predictions match measured values for ribbon synapses (0.014 vs 0.015 \u03bcm\u00b2/s) and NMJ (0.006 vs 0.005 \u03bcm\u00b2/s), and predict low mobility in small boutons (0.002 \u03bcm\u00b2/s). Physical interactions from crowding are major determinants even without tethers/connectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 and C123-C125 demonstrate the predictive power of the model across different conditions. The predictions for ribbon synapses (C118) and NMJ (C119) match published experimental values well, validating the model. The prediction for small boutons (C120) is reasonable given the high vesicle density. The conclusions about physical interactions (C123) and the conditional role of tethers (C124) are appropriately qualified. The call for accounting for crowding effects (C125) is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The introduction establishes the biological context and knowledge gaps. Sustained synaptic signaling requires rapid vesicle supply, achieved at ribbon synapses via mobile vesicles and ribbon structures. Conventional central synapses like MFTs sustain high-frequency signaling despite lacking ribbons and being thought to contain mostly immobile vesicles. The role of hydrodynamic interactions in vesicle mobility within terminals was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C11-C26 provide background context supported by appropriate citations to established literature. The statements about ribbon synapses (C11-C13), MFT properties (C14-C17), vesicle transport (C19-C20), terminal crowding (C21-C23), and hydrodynamic interactions (C24-C25) are all supported by cited references. The identification of the knowledge gap (C26) appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C121",
+      "C122"
+    ],
+    "result": "The study offers speculative explanations for some observations, including that vesicle-cytomatrix protein interactions may explain lower vesicle mobility compared to beads, and notes that synapsin-based immobilization and rapid axonal exchange occur in small boutons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is appropriately qualified as speculative ('likely explanation'). Claims C121-C122 are supported by citations to published literature and provide context for interpreting the model predictions for small boutons. These speculative elements are appropriately distinguished from the main findings and do not undermine the core conclusions.",
+    "result_type": "MINOR"
+  }
+]

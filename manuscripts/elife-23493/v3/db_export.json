@@ -1,0 +1,1898 @@
+{
+  "submission": {
+    "id": "ef2ffdfe-970e-4067-9ebe-1dc3ef916c75",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:17:13.274290Z",
+    "updated_at": "2025-11-30T23:17:13.274290Z"
+  },
+  "content": [
+    {
+      "id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "submission_id": "ef2ffdfe-970e-4067-9ebe-1dc3ef916c75",
+      "content_type": "manuscript",
+      "content_text": "# Mating and male pheromone kill Caenorhabditis males through distinct mechanisms\n\n## Authors\n\n- Cheng Shi<sup>1</sup> ([ORCID: 0000-0003-0365-8273](https://orcid.org/0000-0003-0365-8273))\n- Alexi M Runnels<sup>1</sup> ([ORCID: 0000-0002-8592-1444](https://orcid.org/0000-0002-8592-1444))\n- Coleen T Murphy<sup>1</sup> ([ORCID: 0000-0002-8257-984X](https://orcid.org/0000-0002-8257-984X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and LSI Genomics Princeton University Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifferences in longevity between sexes is a mysterious yet general phenomenon across great evolutionary distances. To test the roles of responses to environmental cues and sexual behaviors in longevity regulation, we examined Caenorhabditis male lifespan under solitary, grouped, and mated conditions. We find that neurons and the germline are required for male pheromone-dependent male death. Hermaphrodites with a masculinized nervous system secrete male pheromone and are susceptible to male pheromone killing. Male pheromone-mediated killing is unique to androdioecious Caenorhabditis, and may reduce the number of males in hermaphroditic populations; neither males nor females of gonochoristic species are susceptible to male pheromone killing. By contrast, mating-induced death, which is characterized by germline-dependent shrinking, glycogen loss, and ectopic vitellogenin expression, utilizes distinct molecular pathways and is shared between the sexes and across species. The study of sex- and species-specific regulation of aging reveals deeply conserved mechanisms of longevity and population structure regulation.\n\n## Introduction\n\nMales and females differ in many aspects of biology, including longevity. Sex differences in lifespan are common in animals across great evolutionary distances (Austad and Fischer, 2016). For example, women live longer than men in almost every country (WHO, 2016). Moreover, interventions in longevity also display sex-specific patterns in mice (Austad and Fischer, 2016). However, the underlying mechanisms of sex differences in longevity and responses to aging interventions, and the degree of evolutionary conservation of these mechanisms, are still largely unknown.\n\nInteractions between the sexes influence an individual\u2019s longevity (Fowler and Partridge, 1989; Gems and Riddle, 1996; Partridge and Farquhar, 1981; Van Voorhies, 1992). Sex-specific longevity patterns also exist in Caenorhabditis elegans: males live significantly shorter when maintained in groups, whereas the longevity of hermaphrodites is not influenced by population density (Gems and Riddle, 2000). What causes this sex-specific longevity pattern remains mysterious. Although worm studies have contributed significantly to our general understanding of longevity mechanisms, how C. elegans male lifespan is regulated is poorly understood, because nearly all lifespan experiments are performed using only hermaphrodites. Analysis of Caenorhabditis males\u2019 longevity not only allows us to test whether known longevity mechanisms are conserved between the sexes, but also provides an opportunity to reveal novel longevity mechanisms. The lifespan of Caenorhabditis females is shortened after mating through receipt of male sperm and seminal fluid (Shi and Murphy, 2014), and separately by exposure to male pheromone (Maures et al., 2014). However, previous studies reported contradictory results on the influence of mating on male lifespan (Gems and Riddle, 1996; Van Voorhies, 1992). Thus, whether and how male lifespan is affected by prolonged exposure and interactions with females, as well as the effect of pheromone on male lifespan, is unknown.\n\nIn their natural environments, animals must not only find food, but also avoid competitors, identify appropriate partners, and mate; the effects of these behaviors on lifespan are not well understood. Some of these behaviors are mediated by ascaroside-based pheromones (Ludewig and Schroeder, 2013). Caenorhabditis females secrete pheromones that attract males (Chasnov et al., 2007), while C. elegans hermaphrodites modify their pheromone profile according to their sperm status, becoming more attractive to males once they have used up their own sperm (Garcia et al., 2007; Kleemann and Basolo, 2007; Morsci et al., 2011). Male ascaroside pheromones can directly affect the reproductive system of hermaphrodites, aiding recovery from heat stress and delaying the loss of hermaphrodite germline stem cells (Aprison and Ruvinsky, 2015, 2016).\n\nThe diversity of Caenorhabditis species allows us to evaluate male lifespan regulation from an evolutionary perspective. The Caenorhabditis genus consists of both androdioecious (male and hermaphrodite) and gonochoristic (male and female) species. In androdioecious species such as C. elegans, the population is dominated by hermaphrodites, which reproduce by self-fertilization. Males are usually very rare (less than 0.2% for the standard lab strain N2) and are produced through spontaneous X chromosome nondisjunction (Chasnov and Chow, 2002; Hodgkin, 1983). Under stressful conditions, more oocytes undergo chromosome non-disjunction; thus androdioecious species may periodically experience male population explosions (Chasnov and Chow, 2002; Hodgkin, 1983). The existence of males in androdioecious species reduces inbreeding and facilitates adaptation to changing environments (Anderson et al., 2010). By contrast, gonochoristic species such as C. remanei (50% male, 50% female) require mating for reproduction. How males in androdioecious and gonochoristic species cope with these different mating situations remains poorly understood. Moreover, the utility of killing females by exposure to male pheromone in gonochoristic populations (Maures et al., 2014) is not obvious.\n\nHere we have found that male-specific population density-dependent death in C. elegans is due to the perception of male pheromone as a toxin; that is, while male pheromone itself is not a general poison to all worms, its perception by C. elegans males leads to death and to male-specific reproductive decline. C. elegans hermaphrodites, while still susceptible, are less sensitive to this toxic aspect of male pheromone. Masculinization of the hermaphrodite nervous system not only increases their sensitivity to male pheromone, but also is sufficient to induce male density-dependent death in these hermaphrodites, suggesting that neurons are key for the male pheromone killing mechanism. We found that the germline of the recipient male is also required for male pheromone-mediated death. This phenomenon is also present in two other independently-evolved androdioecious Caenorhabditis species, suggesting a role for male pheromone killing of males in otherwise hermaphroditic species; by contrast, neither males nor females of three gonochoristic Caenorhabditis species succumb to male pheromone killing. Mating-dependent death and germline-dependent shrinking, by contrast, are shared between all sexes and Caenorhabditis species, suggesting deep conservation. Our work highlights the importance of understanding the shared vs. sex- and species-specific mechanisms that regulate lifespan.\n\n## Results\n\n### Male-specific density-dependent lifespan decrease is largely due to male pheromone\n\nWhen C. elegans males are housed together, they live shorter than solitary males, and the death rate increases with the number of males in a dose-dependent manner (Gems and Riddle, 2000). C. elegans male lifespan is very sensitive to male density: just two males together significantly reduced each individual\u2019s lifespan, and grouping eight males decreases lifespan by more than 35%, whereas the lifespan of C. elegans hermaphrodites is not affected by population density (Figure 1A,B). It was shown previously that C. elegans hermaphrodites can be killed by pheromone secreted by grouped C. elegans males (Maures et al., 2014). We wondered whether the population density-dependent lifespan decrease of grouped C. elegans males is also due to male pheromone toxicity. To study the role of pheromone, we tested the survival of grouped daf-22 (ascaroside pheromone-production deficient [Golden and Riddle, 1985]) males. Eight grouped daf-22(m130) males lived almost as long as solitary wild-type males, suggesting that male pheromone kills grouped wild-type males (Figure 1C; Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig1-v3.jpg)\n\n**Figure 1.:** (A) Lifespans of grouped fog-2(q71) males. We used fog-2(q71) mutants, as fog-2 males are equivalent to wild-type (N2) males (Schedl and Kimble, 1988). Solitary males: 12.0\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040; two males: 10.6\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040, p=0.0397; four males: 9.9\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a060, p=0.0012; eight males: 7.7\u00a0\u00b1\u00a00.2 days, n\u00a0=\u00a080, p<0.0001. For all the lifespan assays performed in this study, Kaplan-Meier analysis with log-rank (Mantel-Cox) test was used to determine statistical significance. All the lifespan results are included in Supplementary file 1. (B) Lifespans of solitary N2 hermaphrodites: 12.3\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040; grouped N2 hermaphrodites: 12.0\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a058, p=0.6436. (C) Grouped daf-22(m130) males have a similar lifespan to solitary wild-type fog-2 males. (daf-22(m130) mutants are ascaroside pheromone-production deficient.) Solitary fog-2 males: 13.8\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a035; eight fog-2 males: 9.8\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a048, p<0.0001; eight daf-22(m130) males: 14.7\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a048, p=0.4039. Details about male-conditioned plates lifespan assays are included in Materials\u00a0and\u00a0methods and Figure 1\u2014figure supplement 1B. (D) Lifespans of solitary C. elegans daf-22(m130) hermaphrodites on plates conditioned by eight fog-2 males. Solitary daf-22 hermaphrodites on control plates: 14.2\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a035; solitary daf-22 hermaphrodites on male-conditioned plates: 14.8\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a035, p=0.4356. (E) Lifespans of solitary C. elegans daf-22(m130) males on plates conditioned by eight fog-2 males. daf-22(m130) mutants are ascaroside pheromone-production deficient. Therefore, the effect of male pheromone is due to the male pheromone secreted by wild-type males when conditioning the plates. Solitary daf-22 males on control plates: 19.7\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a034; solitary daf-22 males on male-conditioned plates: 13.1\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a033, p<0.0001. (F) daf-22(m130) male lifespans on plates conditioned by wild-type fog-2 males. Solitary daf-22(m130): 23.0\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a030; daf-22(m130) on plates conditioned by one fog-2 male: 17.3\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a029, p<0.0001; daf-22(m130) on plates conditioned by eight fog-2 male: 16.1\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a030, p<0.0001. (G) Male\u00a0pheromone-induced shorter lifespan of grouped daf-22(m130) males is inhibited in the presence of 50 \u00b5M FUdR. Grouped daf-22 males on NGM: 12.7\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a0150; grouped daf-22 males on male-conditioned\u00a0plates\u00a0(MCP): 11.0\u00a0\u00b1\u00a00.2 days, n\u00a0=\u00a0150, p<0.0001; grouped daf-22 males on NGM with FUdR: 14.9\u00a0\u00b1\u00a00.2 days, n\u00a0=\u00a0150, grouped daf-22 males on MCP with FUdR: 15.3\u00a0\u00b1\u00a00.2 days, n\u00a0=\u00a0150 p=0.2964. (H) Lifespans of grouped glp-1(e2141) males. Solitary males: 12.7\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a044; eight males: 13.3\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a056, p=0.699.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Grouped daf-22(m130) males live slightly shorter than the solitary control (left). Solitary daf-22 males: 21.7\u00a0\u00b1\u00a01.2 days, n\u00a0=\u00a032; eight daf-22 males: 18.8\u00a0\u00b1\u00a01.0 days, n\u00a0=\u00a038, p=0.0394. Lifespans are not different between solitary and grouped daf-22(m130) in the presence of FUdR (right). Solitary daf-22(m130): 15.3\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a035; eight daf-22(m130): 14.7\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a048, p=0.2117. (B) Schematic illustration of how lifespan assays on male-conditioned plates were performed. Detailed description is included in Materials\u00a0and\u00a0methods. (C) SAM plot of daf-22(m130) males \u00b1 MCP(30m) for 6 days in the presence of 50 \u00b5M FUdR. Only 10 genes\u2019 expression significantly changed, even at high FDR (17%). (D) SAM plot of glp-1(e2141) hermaphrodites \u00b1 MCP(60m) for 6 days in the presence of 50 \u00b5M FUdR. Only three genes had significant changes in expression, even at high FDR (14%). (E) Lifespans of grouped N2 and glp-1 hermaphrodites on plates conditioned by 60 wild-type fog-2 males. Grouped N2 control: 14.7\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a0107; grouped N2 hermaphrodites on MCP: 10.6\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a098, p<0.0001; Grouped glp-1(e2141) control: 16.9\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a096; grouped glp-1(e2141) on MCP: 15.9\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a097, p=0.8933. Lifespan assay of glp-1 hermaphrodites was performed at 25\u00b0C in the first week of adulthood and at room temperature afterwards. (F) Germline also affects the production of male pheromone. Lifespans of solitary daf-22(m130) males control: 15.8\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a025; solitary daf-22(m130) males on plates conditioned by eight wild-type males: 11.8\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a025, p=0.0002; solitary daf-22(m130) males on plates conditioned by eight germline-less glp-1 males: 13.4\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a025, p=0.0339 (compared to the control), p=0.0472 (compared to MCP(8 wt m)).\n\n### Males are more sensitive to male pheromone toxicity than are hermaphrodites\n\nThe fact that adding just one other male significantly decreases male lifespan (Figure 1A) suggests that C. elegans males are very sensitive to male pheromone. To compare the sensitivity to male pheromone between the sexes, we decreased the number of males from 30\u2013150 as was previously used in male-conditioned plates (Maures et al., 2014) to only eight per plate (Figure 1\u2014figure supplement 1B), and examined the lifespans of daf-22 males and hermaphrodites. This low dosage of male pheromone had no effect on hermaphrodites, but significantly reduced C. elegans male lifespan (Figure 1D,E), suggesting that males are more sensitive than hermaphrodites to male pheromone toxicity. In fact, we found that exposure to pheromone secreted by just one male was sufficient to significantly reduce the lifespan of C. elegans males (Figure 1F).\n\n### Male pheromone toxicity requires the germline\n\nTo identify the transcriptional effects of male pheromone treatment on males, we performed expression analysis of daf-22 (pheromone-less) males exposed to male pheromone for six days of adulthood. To avoid any germline-dependent effects of male interactions, we added the DNA replication inhibitor 5-fluorodeoxyruridine (FUdR) (Figure 1G) to the plates, which inhibits germline proliferation (Shi and Murphy, 2014). (Adult treatment with the DNA replication inhibitor 5-fluorodeoxyruridine (FUdR) has little effect on lifespan and meiosis at low dosage (50 \u00b5M [Luo et al., 2009]), but rapidly blocks germline proliferation in mated hermaphrodites (Shi and Murphy, 2014); FUdR and other germline-blocking approaches are commonly used in expression analyses to avoid confounds [Reinke et al., 2000; Shaw et al., 2007; Maures et al., 2014]. To our surprise, this comparison revealed no differences in gene expression (Figure 1\u2014figure supplement 1C), even at a high % False Discovery Rate (FDR), suggesting that blocking male germline proliferation prevents male pheromone\u2019s effects on gene expression. Indeed, we found that there was no lifespan difference when daf-22(m130) males were subjected to a high level of exogenous wild-type male pheromone (30 males per plate for conditioning) in the presence of FUdR, mimicking the microarray conditions (Figure 1G). Furthermore, no population density-dependent lifespan decrease was observed when germline-deficient glp-1(e2141) males were grouped (Figure 1H). Similarly, exposing grouped glp-1 hermaphrodites to very high levels of male pheromone (60 wild-type males per plate for conditioning) also failed to shorten lifespan or to induce significant transcriptional changes (Figure 1\u2014figure supplement 1D,E). Therefore, our results suggest that germline activity in the recipient is required for male pheromone-mediated death in both sexes.\n\nInterestingly, we also found that the loss of the germline itself also affects the production of male pheromone: males on plates conditioned by germline-less glp-1 males lived longer than those on plates conditioned by wild-type males (Figure 1\u2014figure supplement 1F), suggesting that there is communication between the status of germline and the production of male pheromone. However, males on plates conditioned by germline-less males still live shorter than the controls, suggesting that the germline cannot be the site of pheromone production, but rather may modulate pheromone levels or quality.\n\n### Neuronal masculinization of hermaphrodites is sufficient to induce male-like pheromone production and sensitivity in hermaphrodites\n\nThe worm perceives environmental cues through its nervous system (Bargmann, 2006). To test whether the nervous system influences worms\u2019 sensitivity to male pheromone, we utilized a strain of C. elegans hermaphrodite in which the neurons have been masculinized (EG4389: him-5(e1490) V; lin-15(n765ts)X; oxEx860[P(rab-3)::fem-3(wt)::mCherry(worm)::unc-54, pkd-2::gfp(S65C), lin-15(+)], a gift from the Jorgensen Lab [White et al., 2007]). Solitary neuronally-masculinized hermaphrodites died earlier when exposed to a low level of male pheromone (eight males per plate for conditioning; Figure 2A), whereas normal hermaphrodites were insensitive to male pheromone at this concentration (Figure 1D), suggesting that sex-specific neuronal properties are responsible for male and hermaphrodite\u2019s different sensitivities to male pheromone\u2019s toxicity.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig2-v3.jpg)\n\n**Figure 2.:** (A) Neuronal masculinization of C. elegans hermaphrodites increases their sensitivity to male pheromone toxicity. Lifespans of solitary masculinized hermaphrodites: 12.3\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a096; solitary masculinized hermaphrodites on plates conditioned by eight males: 9.6\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a056, p<0.0001. (B) Supernatant solutions from Day 5 C. elegans hermaphrodites and masculinized hermaphrodites and Day one fog-2 males were used to do the chemotaxis assay. See Materials\u00a0and\u00a0methods for detailed description. Chemotaxis Index (C.I.) of wild-type hermaphrodites\u2019 supernatant: 0.65\u00a0\u00b1\u00a00.10, C.I. of masculinized hermaphrodites\u2019 supernatant: 0.03\u00a0\u00b1\u00a00.03; p=0.0261, unpaired t-test. (C) Neuronal masculinization is sufficient to induce male-like population-density-dependent lifespan decrease in hermaphrodites. Lifespans of solitary N2 hermaphrodites: 12.3\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040; grouped N2 hermaphrodites (about 30 worms per 35 mm plate): 12.0\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a058, p=0.6436. Solitary masculinized hermaphrodites: 12.4\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a040; grouped masculinized hermaphrodites (30 per plate): 10.4\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a060, p=0.0015. (D) FUdR rescue the lifespans of grouped masculinized hermaphrodites. Lifespans of grouped masculinized hermaphrodites: 9.8\u00a0\u00b1\u00a00.2 days, n\u00a0=\u00a0111, grouped masculinized hermaphrodites (30 per plate) in the presence of 50 \u00b5M FUdR: 12.2\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a0119, p<0.0001.\n\nNeuronal masculinization also changed the composition of pheromone secreted by the hermaphrodites: C. elegans males are normally attracted to pheromones secreted by old (self sperm-depleted) hermaphrodites (Morsci et al., 2011; Leighton et al., 2014; Kleemann and Basolo, 2007), but males were not attracted to pheromones secreted by aged neuronally-masculinized hermaphrodites (Figure 2B). More surprisingly, when these masculinized hermaphrodites were grouped, they lived shorter than the solitary controls (Figure 2C), suggesting that neuronal masculinization of the hermaphrodites is sufficient to induce the production of male-like pheromone in these hermaphrodites, and that neurons are key for male pheromone-mediated death. Inhibiting germline proliferation in these grouped masculinized hermaphrodites by FUdR rescued lifespan (Figure 2D), which again supports the conclusion that the germline, whether male or female, is required for male pheromone-mediated killing.\n\n### C. elegans males shrink and die after mating\n\nWe previously found that mating greatly shortens hermaphrodite lifespan (Shi and Murphy, 2014), but the effect of mating on male lifespan is not yet known. To distinguish mating effects from the toxic effect of male pheromone, we measured the lifespans of solitary males and single males paired with a single hermaphrodite for 6 days from Day 1 to Day 6 of adulthood. (We used fog-2(q71) mutants, as fog-2 males are equivalent to wild-type (N2) males, while fog-2 hermaphrodites are self-spermless (Schedl and Kimble, 1988), enabling identification of successful mating.) Mating decreased male lifespan\u00a0~35% compared with unmated solitary males (Figure 3A, Supplementary file 1), similar to the decrease in hermaphrodite lifespan caused by mating (Shi and Murphy, 2014). Males die faster when paired with a hermaphrodite for a longer period: mating with a hermaphrodite for one day did not significantly affect the lifespan of the male, while 2\u20133 days\u2019 mating shortened male lifespan by 15%, 4\u20135 days\u2019 mating reduced their lifespan by 25%, and mating for 6 days reduced lifespan more than 35% (Figure 3B). By contrast, the number of hermaphrodites paired with the single male during mating had little effect (Figure 3C). The time at which mating occurs within the reproductive period is also not critical for males\u2019 post-mating lifespan decrease; given the same mating duration, males mated with hermaphrodites for the first three days of adulthood had a similar lifespan decrease as those mated with hermaphrodites during days 6\u20138 of adulthood (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig3-v3.jpg)\n\n**Figure 3.:** (A) Lifespans of unmated solitary and mated fog-2(q71) males. Solitary males: 13.1\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a050; mated males: 8.3\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a034, p<0.0001. Each male was paired with a fog-2(q71) hermaphrodite on a single 35 mm plate during Day 1\u20136 of adulthood. Unless noted, all the hermaphrodites used are fog-2(q71). (B) Male post-mating lifespan decrease is mating duration-dependent: Unmated solitary males: 10.9\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a035; one male and one hermaphrodite mating on Day 1 of adulthood: 11.4\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a031, p=0.3697; mating from Day 1\u20132: 9.0\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a030, p=0.0325; mating from Day 1\u20133: 9.1\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a034, p=0.0452; mating from Day 1\u20134: 7.9\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a032, p=0.0002; mating from Day 1\u20135: 8.3\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a034, p=0.0006; mating from Day 1\u20136: 6.8\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a033, p<0.0001. (C) Lifespans of one male paired with different number of hermaphrodites during Day 1\u20133 of adulthood: solitary unmated males: 13.8\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a035; one male with one hermaphrodite: 10.8\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a032, p=0.0175; one male with two hermaphrodites: 11.6\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a033, p=0.1435; one male with three hermaphrodites: 10.6\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a034, p=0.0147. (D) Lifespans of one male paired with three hermaphrodites for 3 days but at different time of adulthood. Solitary unmated males: 13.8\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a035; mating during Day 1\u20133 of adulthood: 10.6\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a034, p=0.0147; mating during Day 6\u20138 of adulthood: 10.8\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a037, p=0.0022. (E) Length of unmated and mated fog-2 males: t-test, **p<0.01, ***p<0.001. (F) Representative pictures of the same unmated solitary male and male paired with one hermaphrodite from Day 1-Day 6 of adulthood. (G) Male pheromone does not induce body shrinking. Length of solitary fog-2 males on plates conditioned by eight wild-type males.\n\nAs we previously observed in hermaphrodites (Shi and Murphy, 2014), males shrank after 6 days of mating; by Day 7, the mated males were 10% smaller than the unmated solitary males control (Figure 3E,F, Supplementary file 2). No such shrinking was apparent when males were treated with male pheromone (Figure 3G), suggesting that mating and male pheromone act through different pathways.\n\n### Male post-mating shrinking and death depend on the germline\n\nWe wondered whether pheromone is required for mating-induced death in males; however, wild-type males still died early post-mating when paired with a daf-22 hermaphrodite for 6 days (Figure 4A). Likewise, daf-22 mutant males lived shorter after 6 days\u2019 mating with fog-2 hermaphrodites (Figure 4B), indicating that the post-mating lifespan decrease in our single-worm pair lifespan assay is due to mating itself rather than to the presence of pheromone from either sex.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig4-v3.jpg)\n\n**Figure 4.:** (A) Lifespans of fog-2 males mated with daf-22(m130) hermaphrodites. Unmated solitary fog-2 males: 12.1\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a032; mated males: 9.0\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a029, p=0.0001. In the mated group, one fog-2(q71) male was paired with one daf-22(m130) hermaphrodite from Day 1- Day 6 of adulthood. (B) Lifespans of unmated and mated daf-22(m130) males. Unmated solitary daf-22(m130) males: 13.8\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a040; mated daf-22(m130) males: 7.4\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a034, p<0.0001. In the mated group, one daf-22(m130) male was paired with one fog-2(q71) hermaphrodite from Day 1- Day 6 of adulthood. (C) FUdR can rescue male post-mating early death. Unmated solitary males: 10.5\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a035; one male with three hermaphrodites for three days: 6.4\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a031, p<0.0001; one male with three hermaphrodites for three days but in the presence of 50 \u00b5M FUdR during the three days\u2019 mating: 10.2\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a036, p=0.7086 (compared with unmated solitary group). (D) Lifespans of unmated and mated glp-1(e2141) males: unmated solitary glp-1 males: 8.0\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040; mated glp-1 males: 7.2\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040, p=0.3178. The assay was performed at 26\u00b0C, in mated group, one glp-1 male was paired with one fog-2 hermaphrodite from Day 1\u20136. (E) Length of mated and unmated glp-1(e2141) males. (The same population as in Figure 4D.). (F) Expression heatmap of genes whose expression is significantly changed in mated males based on SAM analysis. (G) Ectopic expression of VIT-2::GFP in mated males is germline-dependent. 5 days\u2019 mating, pictures were taken on Day 6 of adulthood. Representative images are shown above the quantification of VIT-2::GFP expression [maximum \u00b1 SE (error bars)], a.u., arbitrary units. ***p<0.001, t-test. (H) unc-62 RNAi suppresses male post-mating early death. Unmated solitary male on L4440: 12.6\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a025; mated males on L4440: 8.8\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a033, p=0.0001. Unmated males on unc-62 RNAi: 11.9\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a025; mated males on unc-62 RNAi: 10.6\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a034, p=0.1249 (compared to unmated males on unc-62 RNAi). (I) pqm-1(ok485) mated males have similar lifespans as unmated controls. Unmated solitary pqm-1(ok485) males: 11.9\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a025; mated pqm-1(ok485) males: 11.0\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a029, p=0.2782. In the mated group, one pqm-1(ok485) male was paired with one fog-2(q71) hermaphrodite from Day 1- Day 6 of adulthood.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Germline proliferation blocking with FUdR can rescue male post-mating early death. Unmated solitary males: 13.8\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a035; one male with one hermaphrodite for six days: 10.3\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a031, p=0.0006; solitary male in the presence of 50 \u00b5M FUdR: 13.9\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a035, p=0.4079 (compared to unmated solitary group). One male mated with one hermaphrodites for 6 days in the presence of FUdR: 13.6\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a034, p=0.3992 compared to unmated solitary group. (B) Lifespans of unmated and mated glp-1(e2141) males: unmated solitary glp-1 males: 11.1\u00a0\u00b1\u00a01.0 days, n\u00a0=\u00a027; mated glp-1 males: 11.1\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a043, p=0.9149. The assay was performed at 25\u00b0C; in mated group, one glp-1 male was paired with one fog-2 hermaphrodite from Day 1\u20136.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Clustered heat map of whole transcriptome expression comparison of mated vs unmated males. Individual males were paired with one hermaphrodite for 3.5 days and collected on Day four for microarrays. (B) Enriched GO terms for significantly up- and down-regulated genes in mated males. (C) Enriched motifs in promoter region (1 kb upstream of TSS) of significantly up- and down-regulated genes using (RSAT) Regulatory Sequence Analysis Tools (www.rsat.eu). (D) VIT-2::GFP expression in males increases significantly after mating. Upper: DIC and GFP images; Lower: GFP intensity quantitation, left: max \u00b1 SE (error bars); right: mean \u00b1 SE (error bars), a.u., arbitrary units. **p<0.01, t-test.\n\nElevated germline proliferation is one of the major causes of hermaphrodites\u2019 early death after mating (Shi and Murphy, 2014). This killing mechanism appears to be conserved in males: when treated with 50 \u00b5M FUdR during the three-day mating period, males no longer died earlier (Figure 4C). FUdR treatment also eliminated male post-mating lifespan decrease in our 6 day mating regime (Figure 4\u2014figure supplement 1A). The absence of the germline also prevented mating-induced shrinking: germline-less glp-1(e2141) males experienced neither shrinking nor lifespan decrease after mating (Figure 4D,E, Figure 4\u2014figure supplement 1B). These results suggest that germline-mediated post-mating death and shrinking is conserved between C. elegans sexes.\n\n### Ectopic expression of vitellogenin contributes to male post-mating death\n\nTo identify molecular mechanisms that contribute to post-mating death in males, we performed genome-wide transcriptional analyses of mated and unmated males: we paired a single male with a hermaphrodite for 3.5 days of mating (150 pairs per biological replicate), then picked the males individually from the hermaphrodites on Day four for microarray analysis (Figure 4\u2014figure supplement 2A). As a control, we collected the same number of age-matched solitary males. Only 14 genes were significantly up-regulated and 41 were significantly down-regulated (FDR\u00a0=\u00a00%; Figure 4F; Supplementary file 3). Genes whose expression decreased in mated males include extracellular proteins (scl-11, scl-12, zig-4) and predicted lipase-related hydrolases (lips-11, lips-12, lips-13) that may participate in fat metabolism. As we previously found in hermaphrodites (Shi and Murphy, 2014), mating decreases fat storage in males (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig5-v3.jpg)\n\n**Figure 5.:** (A) Transcriptional profiles of mated males and MCP-treated males are different. Heatmap cluster of mated males (left) and MCP-treated vs untreated grouped daf-22 males (right); Pearson correlation\u00a0=\u00a0\u22120.27. The cluster only contains genes with significant changes in mated males by SAM, 0% FDR. (B) Mating induces significant fat loss in males. Representative pictures of Oil red O staining are shown above the quantitation. Males lost about 20% of their fat after mating on Day 4, p<0.001. Error bars represent SE. (C) Male pheromone exposure fails to induce fat loss in males. Four days\u2019 MCP treatment. Representative pictures of Oil red O staining are shown above the quantitation. Unconditioned control males are framed by black lines, and MCP-treated males are framed by green lines. (D) Glycogen staining of mated and unmated males. Left: mated fog-2 (wt) males lost over 30% glycogen after 5 days\u2019 mating; ***p<0.001. Right: mated glp-1 males did not lose glycogen after mating. The staining intensity was normalized to unmated males of each genotype. Representative pictures are shown above the quantitation. Unmated males are framed by dashed lines, and mated males are framed by solid lines. (E) No glycogen loss after male pheromone exposure. Four days\u2019 MCP treatment. Representative pictures of iodine staining are shown above the quantitation. Unconditioned control males are framed by black lines, and MCP-treated males are framed by green lines. (In D\u2013E, error bars represent SD.). (F) Loss of the DAE-dependent transcription factor PQM-1 suppresses male pheromone-induced death. Lifespans of control solitary pqm-1(ok485) males: 15.6\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a025; solitary pqm-1(ok485) males on plates conditioned by eight males: 14.4\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a025, p=0.1627. (G) DAPI staining of Day six males\u2019 germlines (left). Right: categorical quantification of germline morphology: mating causes more obvious change in male germline morphology than male pheromone does. TZ: transition zone; U: U-shaped turn of male germline. See Figure 5\u2014figure supplement 4 for details.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Heatmap of (1) mated males (genes with significant changes by SAM, 0% FDR) and (2) MCP treated vs untreated grouped daf-22 males. Top: Pearson correlation. (B) Heatmap of (1) mated males and (2) MCP treated vs untreated grouped daf-22 males (genes with significant changes by SAM, 1% FDR). Top: Pearson correlation. (C) Vit genes are not up-regulated in males exposed to male pheromone.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Left: representative pictures of iodine staining of worms. Unmated worms are framed by dashed lines, whereas mated worms are framed by solid lines. In the first picture, mated and unmated fog-2 hermaphrodites were mixed together, with red arrows pointing to mated fog-2 hermaphrodites. Worms were mated from Day 1 \u2013 Day 5 and were imaged on Day 5. Right: quantitation of iodine staining. The intensity of mated worms was normalized to unmated control of the same genotype. Mated fog-2 hermaphrodites have only 30% of the glycogen levels of unmated fog-2 hermaphrodites of the same age (p<0.0001). Mated glp-1 hermaphrodites have 99% glycogen compared to unmated glp-1 hermaphrodites control (p=0.6070). Mated fog-2 males have 64% of the glycogen level of unmated fog-2 males of the same age (p<0.0001). Mated glp-1 males have 101% glycogen compared to unmated glp-1 males control (p=0.7107). Error bars represent SD. ***p<0.0001, t-test.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Enriched motifs associated with significantly up- and down-regulated genes predicted by RSAT (Regulatory Sequence Analysis Tools) in grouped vs. single neuronal masculinized hermaphrodites (left) and MCP treated vs untreated grouped daf-22 males.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig5-figsupp4-v3.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (A) Representative micrographs of each category: left: male germline with clear transition zone (yellow arrow indicates transition zone marked by crescent shaped nuclei); middle: male germline with no apparent transition zone; right: male germline with mature sperm appearing before U shaped turn. (B) Mating (one male one hermaphrodites for 4 days) or treating solitary males with male pheromone (4 days on MCP(8m)) does not change the number of proliferating nuclei in the male germline. The number of nuclei in mitotic proliferating zone (only counting germlines with clear transition zone) is similar in all three conditions.\n\nSurprisingly, vitellogenins (vit-4, vit-3, vit-5, vit-6, vit-2), which encode yolk protein precursors made in the female/hermaphrodite intestine for transport into developing oocytes (Kimble and Sharrock, 1983) and as such are not normally expressed in males (Figure 4G, left), were the top up-regulated genes in mated males, expressed on average 19 times higher in mated males than in solitary unmated males (Supplementary file 3). Overproduction of vitellogenins has been shown to be deleterious for hermaphrodites: vitellogenins accumulate in the head and body of older hermaphrodites (Garigan et al., 2002); long-lived insulin signaling mutants repress vit gene expression (Murphy et al., 2003; Seah et al., 2016); overexpression of vitellogenin reduces the lifespan of long-lived mutants (Seah et al., 2016); and knockdown of the vit genes in wild-type hermaphrodites extends lifespan (Murphy et al., 2003; Seah et al., 2016). Mating induced ectopic expression of VIT-2::GFP in the anterior intestine of males, confirming our gene expression data. Such expression induction was germline function-dependent, as FUdR treatment of males blocked VIT-2::GFP expression in mated males (Figure 4G, Figure 4\u2014figure supplement 2D).\n\nIn addition to the increase in vit gene expression, the binding motif for UNC-62, a master transcriptional regulator of vit genes in hermaphrodites (Van Nostrand et al., 2013), emerged from unbiased motif analysis of the up-regulated gene set (Figure 4\u2014figure supplement 2C). Using RNAi, we found that knocking down unc-62 was sufficient to rescue the lifespan decrease in mated males (Figure 4H). Thus, the mis-expression of vitellogenins upon mating contributes to post-mating death in males. The DAE (DAF-16 Associated Element) motif is present in most vit gene promoters, which are also Class 2 DAF-16 genes (Murphy et al., 2003). The DAE is bound by PQM-1, a transcription factor that is involved in the regulation of multiple processes, including development, stress response, metabolism, and longevity (Tepper et al., 2013; Dowen et al., 2016). We found that mated pqm-1(ok485) deletion males lived as long as unmated controls (Figure 4I), suggesting that PQM-1 is also required for post-mating male death.\n\n### Mating-induced death and pheromone-induced killing use distinct molecular mechanisms\n\nTo determine whether pheromone-dependent killing, which like mating-induced death requires the germline, utilizes the same downstream mechanisms to kill males, we performed genome-wide transcriptional analysis of worms under conditions where they are exposed to high levels of male pheromone and have short lifespans (Figures 1G and 2C): (1) grouped daf-22 males on plates conditioned by wild-type males vs. grouped daf-22 males on control plates, and (2) grouped vs. solitary neuronally-masculinized hermaphrodites (Supplementary file 4). Three main Gene Ontology groups emerged from these comparisons: innate immunity and defense responses, metal ion/cadmium response, and glycoprotein metabolism. Notably, this pattern of gene expression was very different from that of mated males (Figure 5A, Figure 5\u2014figure supplement 1; Pearson correlation = \u22120.0594 for the whole transcriptome). Specifically, upregulation of vitellogenin genes was not a signature of male pheromone-treated animals (Figure 5\u2014figure supplement 1C), also supporting the notion that the two pathways act through distinct molecular mechanisms. While fat is reduced in males after mating (Figure 5B), MCP treatment caused no significant changes in fat metabolism gene expression (Figure 5\u2014figure supplement 1A) or Oil Red O staining (Figure 5C). We showed previously that osmotic stress resistance correlates well with shrinking in mated hermaphrodites, whereas fat loss does not account for such shrinking (Shi and Murphy, 2014). Likewise, we found that mated wild-type worms lost about 30% of their glycogen stores post-mating in a germline-dependent manner (Figure 5D). The mating-induced glycogen storage decrease and subsequent shrinking is conserved between sexes (Figure 5\u2014figure supplement 2), while glycogen stores are not affected by male pheromone (Figure 5E).\n\nPreviously identified gene expression patterns of longevity pathways did not appear in our analysis (Tepper et al., 2013; Lakhina et al., 2015), suggesting a novel pathway for lifespan shortening in the presence of male pheromone. However, comparison of the list of genes significantly up-regulated upon MCP treatment of daf-22 males (Supplementary file 5) to previously published arrays of male pheromone-treated hermaphrodites (Maures et al., 2014) yielded a significant overlap (p-value=3.05E-06), including ins-11; ins-11 mutants are partially resistant to death by male pheromone (Maures et al., 2014). These results suggest that some mechanisms of male-pheromone-induced death are shared between the sexes, but may act independently of known longevity pathways.\n\nUnbiased motif analysis revealed that DAE (DAF-16 Associated Element) motif was also enriched in these male pheromone-treated conditions (Figure 5\u2014figure supplement 3). We found that pqm-1(ok485) null mutant males were not short-lived when treated with male pheromone (eight males per plate for conditioning; Figure 5F), suggesting that male pheromone killing, like mating-induced death, is mediated at least in part by PQM-1.\n\nBoth male pheromone-induced killing and mating-induced death require the germline; to examine possible mechanisms of germline effects, we performed DAPI staining of males in pheromone-treated and mated conditions. In a fraction of Day four unmated solitary males, the transition zone (marked by crescent shaped nuclei) disappeared (Figure 5G, Figure 5\u2014figure supplement 4), and the meiotic region expanded to the distal arm, evidenced by the presence of sperm before U-shaped turn (see Figure 5\u2014figure supplement 4), indicating the loss of mitotic proliferating cells in the germline. Shrinking of the transition zone was observed significantly less in mated animals, but no significant differences were apparent in MCP-treated males (Figure 5G). Therefore, our results suggest that mating causes an increase in the number of mitotically proliferating cells, whereas an unknown signal from the germline, rather than an obvious morphological change, may be responsible for the lifespan shortening effects of male pheromone.\n\n### Mating-induced male death is evolutionarily conserved and unavoidable\n\nPreviously, we found that C. remanei females, like C. elegans hermaphrodites, shrink and die faster after mating (Shi and Murphy, 2014), suggesting that these mechanisms are evolutionarily conserved in females. We found that C. remanei males also lived significantly shorter after mating with a female C. remanei for 6 days (Figure 6A). While female death requires successful cross-progeny production (Shi and Murphy, 2014), C. elegans males died early when mated with a C. remanei female for 6 days (Figure 6B), even though no cross-progeny result from this mating. This result, together with the germline dependence of mating-induced death, suggests the process of mating and up-regulation of male germline activity is sufficient to induce death, regardless of the species of the recipient female.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig6-v3.jpg)\n\n**Figure 6.:** (A) Mated C. remanei males also live shorter. Unmated solitary C. remanei males: 31.4\u00a0\u00b1\u00a01.7 days, n\u00a0=\u00a072; mated C. remanei males: 15.7\u00a0\u00b1\u00a01.2 days, n\u00a0=\u00a028, p<0.0001. In mated group: one C. remanei male was paired with one C. remanei female from Day 1-Day 6 of adulthood. (B) Lifespans of C. elegans males mated with C. elegans hermaphrodites and C. remanei females. Unmated solitary C. elegans males: 10.2\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a035; C. elegans males mated with C. elegans hermaphrodites: 7.4\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a035, p=0.0001; C. elegans males mated with C. remanei females: 7.4\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a035, p=0.0003. In mated groups, one C. elegans male was paired with either one C. elegans hermaphrodite or one C. remanei female from Day 1\u20136 of adulthood. (C) Lifespans of solitary C. remanei males on plates conditioned by eight C. remanei males. Solitary C. remanei males on control plates: 35.8\u00a0\u00b1\u00a02.0 days, n\u00a0=\u00a034; solitary C. remanei males on male-conditioned plates: 37.8\u00a0\u00b1\u00a01.2 days, n\u00a0=\u00a034, p=0.8501. (D) Lifespans of solitary C. remanei females on plates conditioned by eight C. remanei males. Solitary C. remanei females on control plates: 27.6\u00a0\u00b1\u00a02.2 days, n\u00a0=\u00a024; solitary C. remanei females on male-conditioned plates: 27.0\u00a0\u00b1\u00a02.5 days, n\u00a0=\u00a030, p=0.8306. (E) Lifespans of grouped C. remanei females on plates conditioned by 30 males. C. remanei females on control plates: 15.8\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a060; C. remanei females on plates conditioned by C. remanei males: 19.5\u00a0\u00b1\u00a01.3 days, n\u00a0=\u00a030, p=0.0636; C. remanei females on plates conditioned by C. elegans fog-2 males: 18.5\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a060, p=0.1770. (F) Lifespans of solitary C. remanei males on plates conditioned by eight C. elegans males. Solitary C. remanei males on control plates: 37.2\u00a0\u00b1\u00a01.7 days, n\u00a0=\u00a040; solitary C. remanei males on C. elegans male-conditioned plates: 36.7\u00a0\u00b1\u00a01.4 days, n\u00a0=\u00a038, p=0.7774. (G) Lifespans of grouped C. elegans fog-2 hermaphrodites on plates conditioned with 30 males. fog-2 hermaphrodites control: 14.4\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a090. fog-2 hermaphrodites on plates conditioned by fog-2 males: 10.9\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a060, p=0.0004; fog-2 hermaphrodites on plates conditioned by C. remanei males: 11.9\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a090, p=0.0042. (H) Chemotaxis of C. elegans (left, blue) and C. remanei (right, red) to supernatants from C. elegans males, C. remanei males, C. elegans N2 hermaphrodites, and C. remanei females. See Materials\u00a0and\u00a0methods for detailed description. C. e. males to supernatant of C. r. females: Chemotaxis Index (CI) is 0.46\u00a0\u00b1\u00a00.11 (mean \u00b1 SEM, n\u00a0=\u00a012 [plates]); C. e. males to supernatant of C. e. hermaphrodites: CI\u00a0=\u00a00.14\u00a0\u00b1\u00a00.13 (n\u00a0=\u00a010); C. e. males to supernatant of C. e. males: CI\u00a0=\u00a00.17\u00a0\u00b1\u00a00.17 (n\u00a0=\u00a012); C. e. males to supernatant of C. r. males: CI\u00a0=\u00a00.11\u00a0\u00b1\u00a00.12 (n\u00a0=\u00a011); C. r. males to supernatant of C. r. females: CI\u00a0=\u00a00.85\u00a0\u00b1\u00a00.04 (n\u00a0=\u00a012); C. r. males to supernatant of C. e. hermaphrodites: CI\u00a0=\u00a00.04\u00a0\u00b1\u00a00.08 (n\u00a0=\u00a012); C. r. males to supernatant of C. e. males: CI\u00a0=\u00a00.04\u00a0\u00b1\u00a00.15 (n\u00a0=\u00a012); C. r. males to supernatant of C. r. males: CI\u00a0=\u00a0\u22120.09\u00a0\u00b1\u00a00.16 (n\u00a0=\u00a012). (I) Sensitivity to male pheromone-induced lifespan reduction. C. elegans males are the most sensitive to male pheromone-induced killing, whereas both C. remanei sexes are immune to this effect.\n\n### Gonochoristic species are immune to male pheromone toxicity\n\nBecause C. elegans is an androdioecious (males and hermaphrodites) species, we wondered whether male pheromone-mediated killing also occurs in a true 50/50 male/female (gonochoristic) species, where one would expect the level of male pheromone to be high under normal conditions. When exposed to low levels of C. remanei male pheromone (eight males per plate for conditioning), neither C. remanei males nor females were short-lived (Figure 6C,D). At a higher concentration (30 males per plate for conditioning), multiple trials of C. remanei females and males on male-conditioned plates failed to reveal any sensitivity to either C. remanei or C. elegans male pheromone (Figure 6E,F), in contrast to previous reports in which males and females were grouped (Maures et al., 2014); this result suggests that the lifespan shortening in the latter study was caused by mating rather than by male pheromone.\n\nInterestingly, we found that male pheromone toxicity can act across species: C. elegans hermaphrodites died early when exposed to C. remanei male pheromone (Figure 6G), suggesting that the difference in sensitivity to male pheromone might stem from the perception of pheromone as a toxin, rather than from toxicity of the pheromone itself. C. remanei can sense pheromone, but uses it to distinguish potential partners and competitors (Figure 6H), rather than to kill males. The differential sensitivity to male-pheromone-induced killing between C. elegans males and hermaphrodites also suggests that the latter might only be experienced as an off-target effect under extremely high male pheromone conditions (Figure 6I).\n\nTo determine whether the differences in male-pheromone-induced killing are a more general phenomenon, we examined the effect of male pheromone on other androdioecious and gonochoristic species. Like C. remanei males, two other gonochoristic species, C. brenneri and C. nigoni, are also immune to male pheromone killing (Figure 7A,B). By contrast, males from two evolutionarily distant androdioecious species, C. briggsae and C. tropicalis, died significantly earlier when exposed to male pheromone (Figure 7C,D), just as C. elegans males do. These results strongly indicate that male pheromone-dependent killing is shared by males of androdioecious species.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig7-v3.jpg)\n\n**Figure 7.:** (A) Lifespans of solitary C. brenneri males on plates conditioned by 8 C. brenneri males. Solitary C. brenneri males control: 18.1\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a033; solitary C. brenneri males on MCP: 17.8\u00a0\u00b1\u00a01.1 days, n\u00a0=\u00a032, p=0.9915. (B) Lifespans of solitary C. nigoni males on plates conditioned by 8 C. nigoni males. Solitary C. nigoni males control: 15.3\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a032; solitary C. nigoni males on MCP: 15.2\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a040, p=0.7443. (C) Lifespans of solitary C. briggsae males on plates conditioned by 8 C. briggsae males. Solitary C. briggsae males control: 13.7\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a038; solitary C. briggsae males on MCP: 10.3\u00a0\u00b1\u00a00.3 days, n\u00a0=\u00a054, p=0.0192. (D) Lifespans of solitary C. tropicalis males on plates conditioned by 8 C. tropicalis males. Solitary C. tropicalis males control: 17.7\u00a0\u00b1\u00a00.8 days, n\u00a0=\u00a040; solitary C. tropicalis males on MCP: 12.2\u00a0\u00b1\u00a01.0 days, n\u00a0=\u00a060, p=0.0002. (E) Model of the effects of mating and male pheromone on androdioecious and gonochoristic female and males. C. elegans hermaphrodites (upper left); C. remanei females (upper right); C. elegans males (lower left); C. remanei males (lower right).\n\n### Male pheromone reduces male offspring\n\nThe fact that male pheromone selectively kills males of multiple, independently-evolved androdioecious species suggests a role for male pheromone killing in these populations, but the lifespan effects we observed to this point are largely post-reproductive, arguing against any reproductive selection under these conditions. However, those experiments were designed specifically to probe adult phenotypes rather than development or mating, by only applying pheromone to adult worms. In order to better mimic conditions in which worms would be exposed to male pheromone their entire lives, we placed fog-2 eggs on male pheromone conditioned plates, and measured developmental rates, lifespan, mating rates, and brood size. Other than a slight difference at 42 hr that disappeared by 48 hr, we observed no significant effects of MCP on the developmental rates of either males or hermaphrodites (Figure 8\u2014figure supplement 1). By contrast, male pheromone conditioning from egg onward caused a severe (36%) shortening of lifespan (Figure 8A, Figure 8\u2014figure supplement 2A). Moreover, male pheromone significantly decreased male fertility (Figure 8B, Figure 8\u2014figure supplement 2B). (Note that male pheromone-induced male fertility decrease is distinct from defects in male mating that arise with age (Chatterjee et al., 2013); we observed similar male fertility decline with age in control animals, but the males treated with male pheromone from egg onward exhibited an additional fertility decline compared with age-matched control males.) Finally, male pheromone treatment decreases the number of progeny produced by those animals who do successfully mate (Figure 8C). By contrast, male pheromone treatment did not affect the brood size of self-fertilized hermaphrodites (Figure 8D). These results suggest that exposure to male pheromone during early life specifically reduces male fertility.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig8-v3.jpg)\n\n**Figure 8.:** (A) Male pheromone conditioning from egg onward causes a more severe lifespan shortening. (Pooled results from two independent assays. See Figure 8\u2014figure supplement 2 for results of separate lifespan assays, which were also significant.) Solitary C. elegans fog-2 males control: 18.5\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a075; solitary C. elegans fog-2 males on MCP from early adulthood onward (aMCP): 13.9\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a079, p<0.0001 (compared to the control); solitary C. elegans fog-2 males on MCP from egg onward (eMCP): 11.4\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a080, p<0.0001 (compared to the control), p<0.0001 (compared to aMCP). (B) Male pheromone decreases fog-2 male fertility on Day 6. Male treatment started from egg onward. Each male was paired with one virgin fog-2 hermaphrodite at indicated time for 24 hr. On Day 4 of adulthood, the percent of males who were able to fertilize Day 1 virgin fog-2 hermaphrodites: three biological replicates: ctrl: 82 \u00b1 2%; MCP: 69 \u00b1 6%, p=0.12, unpaired t-test. By Day 6 of adulthood, the percent of males who were able to fertilize Day one virgin fog-2 hermaphrodites (three biological replicates) had significantly decreased: ctrl: 69 \u00b1 4%; MCP: 29 \u00b1 4%, p=0.0019. (C) Male pheromone treatment decreases the number of progeny produced by those animals who do successfully mate. The difference appears by Day 5. See Figure 8\u2014figure supplement 3 for detailed numbers. *p<0.05, unpaired t-test. (D) Brood size of self-fertilized N2 hermaphrodites is not affected by male pheromone. Ctrl: 238.2\u00a0\u00b1\u00a05, n\u00a0=\u00a019; MCP-treated: 240.5\u00a0\u00b1\u00a05, n\u00a0=\u00a018, p=0.7571, unpaired t-test. (E) Theoretical calculation of male pheromone\u2019s effect on male population control (not considering any other contributing factors). See Discussion and Figure 8\u2014figure supplement 3 for more details.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig8-figsupp1-v3.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Eggs from fog-2 worms were bleached onto control (n\u00a0=\u00a0359) or MCP (n\u00a0=\u00a0257) plates. The number of eggs, L1, L2, L3, and L4 worms was counted at 18, 24, 42, and 48 hr post-bleach. We observed a slight deceleration in development at L3 and no difference by L4, resulting in no significant change in total developmental rate upon treatment with MCP.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig8-figsupp2-v3.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) Male pheromone conditioning from egg onward causes a severe lifespan shortening (replicate 1). Solitary C. elegans fog-2 males control: 17.4\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a034; solitary C. elegans fog-2 males on MCP from early adulthood onward (aMCP): 13.9\u00a0\u00b1\u00a00.7 days, n\u00a0=\u00a039, p<0.0001 (compared to the control); solitary C. elegans fog-2 males on MCP from egg onward (eMCP): 11.1\u00a0\u00b1\u00a00.6 days, n\u00a0=\u00a040, p<0.0001 (compared to the control), p=0.0021 (compared to aMCP). (B) Male pheromone conditioning from egg onward causes a severe lifespan shortening (replicate 2). Solitary C. elegans fog-2 males control: 19.5\u00a0\u00b1\u00a00.9 days, n\u00a0=\u00a041; solitary C. elegans fog-2 males on MCP from early adulthood onward (aMCP): 13.4\u00a0\u00b1\u00a00.5 days, n\u00a0=\u00a040, p<0.0001 (compared to the control); solitary C. elegans fog-2 males on MCP from egg onward (eMCP): 11.8\u00a0\u00b1\u00a00.4 days, n\u00a0=\u00a040, p<0.0001 (compared to the control), p=0.024 (compared to aMCP). (C) Percentages of fog-2 males who are able to successfully fertilize virgin fog-2 hermaphrodites in the presence and absence of MCP treatment. See Figure 8\u2014figure supplement 3 for details. (D) Male pheromone treatment does not selectively kill one sex in offspring. The male ratio is always\u00a0~50% (checked from the progeny produced by fog-2 hermaphrodites successfully fertilized by males in C).\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23493/elife-23493-fig8-figsupp3-v3.jpg)\n\n**Figure 8\u2014figure supplement 3.:** (A) Percentage of fog-2 males who were able to successfully fertilize virgin fog-2 hermaphrodites in the presence and absence of MCP treatment. (B) Progeny produced by those animals who do successfully mate. (C) Example of theoretical calculation of how male pheromone affects cross progeny production in the next generation (simplified modeling, not considering any other factors). In both control and eMCP conditions, the population starts with 60 males. Assuming they have equal chance of mating from Day 1 \u2013 Day 6 of adulthood, the data of percent fertile and number of progeny produced in A and B were used at each time points, in the end, the males in eMCP group produce about 76.8% of the total progeny produced by males in control group. This number was used when plotting the curve in Figure 8E, for generation X, percent males of control group is 50%, percent males of eMCP group is 50%*(76.8%)X.\n\n## Discussion\n\n### Caenorhabditis males die early from two independent phenomena: male pheromone-mediated killing and mating-induced death\n\nHere we found that male pheromone killing is the major cause of population density-dependent lifespan decrease in C. elegans males, and is only utilized by androdioecious Caenorhabditis males. By contrast, all sexes of Caenorhabditis species succumb to mating-induced death, while both sexes of gonochoristic Caenorhabditis species are immune to male pheromone toxicity. The toxicity of male pheromone may explain the contradictory results from previous publications in which grouped males were used as the control in testing whether mating affects the lifespan of Caenorhabditis males (Gems and Riddle, 1996; Van Voorhies, 1992). Masculinization of neurons in hermaphrodites not only increases their sensitivity to male pheromone, but also is sufficient to induce the production of male-like toxic pheromone, suggesting that neurons play two major and distinct roles in this type of killing. The germline and the DAE-dependent transcription factor PQM-1 are required for both mating-induced and male pheromone-mediated death, but the downstream expression changes upon mating and pheromone treatment are distinct; only mating induces vitellogenin gene expression in males and causes shrinking. Thus, we have discovered two distinct mechanisms that accelerate aging in Caenorhabditis males.\n\n### Germline activation induces deleterious changes that kill all sexes in Caenorhabditis species\n\nC. elegans males and hermaphrodites share many post-mating changes. As we found previously for mated females and hermaphrodites (Shi and Murphy, 2014), Caenorhabditis males also experience germline-dependent shrinking, glycogen loss, and death after mating. Germline up-regulation also leads to ectopic expression of vitellogenins, which contributes to the post-mating lifespan decrease in males. Previously, these yolk protein precursors were only reported to be expressed in hermaphrodites, where vitellogenin proteins are taken up by oocytes; vitellogenin production in males does not have an obvious purpose. Mating also induces significant overexpression of vit genes in hermaphrodites (DePina et al., 2011), indicating that vitellogenin expression is closely coupled with mating-induced germline up-regulation in both sexes. Such coupling may be strong enough to overcome the normal repression of male vitellogenin expression. Germline-dependent body shrinking, glycogen loss, and ectopic vitellogenin expression contribute to male post-mating death, which is conserved between the sexes. The striking similarity of germline-dependent post-mating changes in Caenorhabditis males and females suggests that this mechanism is largely conserved between sexes, and may represent an unavoidable cost of reproduction as a result of mating.\n\nGermline-dependent lifespan shortening appears to be conserved across species over large evolutionary distances, as it occurs in all Caenorhabditis species we tested. Male post-mating death is also conserved beyond the Caenorhabditis genus, as Drosophila males die earlier after mating, as well (Partridge and Farquhar, 1981). It was previously noted that the lifespan of Korean eunuchs was significantly longer than the lifespan of non-castrated men with similar socio-economic status (Min et al., 2012), analogous to the long lifespan of germline-less C. elegans (Hsin and Kenyon, 1999) and Drosophila (Flatt et al., 2008), while the significantly (35%) shortened lifespan of Chinese emperors who were noted to be particularly promiscuous might be an example of the opposite effect on the germline (Shi et al., 2015), suggesting that some aspects of germline-dependent male post-mating death may be conserved across great evolutionary distances.\n\n### Male pheromone-induced killing may be a strategy to selectively reduce the male population\n\nC. elegans are subject to killing by male pheromone, while C. remanei are not. Our cross-species results suggest that C. remanei male pheromone is perceived as a toxin by C. elegans, but C. remanei are immune to both elegans and remanei pheromone (Figure 6C\u2013F). The preponderance of males in a 50:50 population, as in the case of C. remanei, makes the use of pheromone as a toxin less likely, as it would cause too much off-target death to be useful for sperm competition purposes. The toxic effect of pheromone may not be due to the pheromone itself, but rather to a perception of pheromone as a toxin, with a greater effect in males than in hermaphrodites. Hermaphrodite death at high male pheromone concentration (Maures et al., 2014)\u2014which might happen rarely in nature \u2013 might simply be collateral damage, as hermaphrodites are far less sensitive than males to male pheromone (Figure 6I) toxin. The lack of significant changes observed in the developmental rates of either males or hermaphrodites, or on the brood size of hermaphrodites, indicates that the primary effect of male pheromone might be on male reproductive capacity.\n\nCaenorhabditis species might utilize pheromones in such different ways due to their different modes of reproduction. Androdioecious species males do not appear to use pheromones efficiently as chemical messengers to facilitate mating, since they are less able to distinguish hermaphrodites\u2019 pheromone from other species\u2019 female or male pheromone; in fact, C. elegans males are slightly attracted to their own male pheromone, in part explaining their clumping (Chasnov et al., 2007) (Figure 6H), despite the fact that male pheromone is very toxic to C. elegans males. In the androdioecious species such as C. elegans, males are normally rare (0.2%), so the chance that any worm he encounters will be an appropriate mating partner is very high; thus, there may be less selection pressure to evolve pheromones as chemical messengers to identify mates. By contrast, C. remanei uses pheromone to distinguish males from females, an important requirement for mating in 50:50 mixed populations. C.remanei males are slightly repelled by male pheromone (Chasnov et al., 2007) (Figure 6H), but are extremely attracted to C. remanei female pheromone, while C. remanei, as well as both males and females from other gonochoristic species, are immune to male pheromone toxicity (Figure 6C,D). Thus, gonochoristic species use pheromones primarily as chemical cues to identify mates, rather than to kill males.\n\nThe fact that male pheromone toxicity is present in three distantly-related and separately evolved hermaphroditic Caenorhabditis species (Cho et al., 2004; Kiontke et al., 2004; Kiontke et al., 2011) suggests an important role for male pheromone killing. Periodic explosions of male populations in androdioecious species (e.g., under stressful conditions) allow outcrossing and ensure genetic diversity (Anderson et al., 2010). After this beneficial period, however, males are more costly to maintain, and there may be pressure to return to a primarily hermaphroditic population (Figure 8E). It is notable that because C. elegans males are XO, rather than XY, males may have no selfish drive to maintain their own chromosomes. Using male pheromone as a dose-dependent toxin may be an effective way to cull the male population and ensure that the species returns to the self-reproduction mode when the stressful condition has passed, aiding the return to hermaphroditism. Because a high fraction of males can only be produced by mating (mating produces 50% males, while male production rates from hermaphroditic selfing is 0.2% [Chasnov and Chow, 2002; Hodgkin, 1983]), the combination of decreased mating efficacy and decreased progeny production might be expected to specifically affect the number of males produced each generation (Figure 8\u2014figure supplement 3). Male pheromone alone could effectively drive the population back to a primarily hermaphroditic state after several generations (Figure 8E). Previous experiments showed that the average time for males to disappear in N2 strain is 12\u201320 days (i.e. 4\u20137 generations) (Wegewitz et al., 2008). The discrepancy between our modeling (~15 generations) and the previous experimental result may indicate that multiple factors, including increased hermaphroditic progeny production and decreased mating rates (Wegewitz et al., 2008), decreased copulation performance in aging males (Chatterjee et al., 2013), and hermaphrodites\u2019 response to males [Garcia et al., 2007; Kleemann and Basolo, 2007; Morsci et al., 2011]) could act in tandem with pheromone-dependent killing of males to cull the male population and thus promote a return to hermaphroditism. Male-specific culling occurs in species such as Drosophila bifasciata, in which Wolbachia infection leads to the killing of male embryos, suggesting that sex ratio can be controlled through male-killing (Stevens et al., 2001). Mathematical modeling shows that selection in C. elegans favors low populations of males (Stewart and Phillips, 2002), and our model provides a mechanism for how this might be achieved.\n\nIn summary, germline-dependent early death after mating is conserved between sexes and perhaps even across great evolutionarily distances, and is likely due to an unavoidable cost of mating, the result of mated animals ramping up germline proliferation and subsequently exhausting their own resources as quickly as possible to produce the next generation of progeny. The differential use of pheromones as toxins or chemical messengers by males in androdioecious and gonochoristic species, respectively, demonstrates that they adopt different strategies to compete, mate, and maintain optimal sex ratios.\n\n## Materials and methods\n\n### Strains\n\nN2 (wild type)\n\nCB4108: fog-2(q71) V\n\nCB4037: glp-1(e2141) III\n\nDR476: daf-22(m130) II\n\nRB711: pqm-1(ok485) II\n\nRT130: pwIs23 [vit-2::GFP]\n\nPB4641: Caenorhabditis remanei\n\nPB2801: Caenorhabditis brenneri\n\nAF16: Caenorhabditis briggsae\n\nJU1422: Caenorhabditis nigoni\n\nJU1373: Caenorhabditis tropicalis\n\n6699 EG4389: him-5(e1490) V; lin-15(n765ts)X; oxEx860[P(rab-3)::fem-3(wt)::mCherry(worm)::unc-54, pkd-2::gfp(S65C), lin-15(+)] (gift from the Jorgensen Lab)\n\n### Individual male mating lifespan assays\n\nAll lifespan assays were performed at room temperature (~20\u201321\u00b0C), except for glp-1 male lifespan assays (performed at 25\u201326\u00b0C). 35 mm NGM plates were used for all the experiments in this study. 20 \u00b5l of OP50 was dropped onto each plate to make a bacterial lawn of\u00a0~10 mm diameter. The next day, one synchronized late L4 male and one late L4 hermaphrodite/female were transferred onto each 35 mm NGM plate. For experiments in Figures 3C, D and 4C, multiple L4 hermaphrodites were transferred together with one male. One late L4 male of the same age and genotype was transferred onto the control plates. Except for Figure 4A, fog-2(q71) hermaphrodites were used as the C. elegans hermaphrodites in the mating assay, because fog-2 hermaphrodites do not have self sperm, thus allowing us to easily detect successful mating (i.e. eggs and progeny on the plates). In mated groups, we only included males that were able to produce progeny in our analysis. However, for the experiments regarding glp-1 males, mating on FUdR, and the inter-species cross between C. elegans males and C. remanei females, we included all the males in the analysis. Worms were transferred onto new plates every other day. If the hermaphrodites were lost or bagged, new unmated Day one fog-2 hermaphrodites were added as replacements. Males and hermaphrodites/females were kept together for 6 days (unless noted otherwise in the text); afterwards only males were transferred on to newly seeded plates every 2\u20133 days. For RNAi experiments in Figure 4H, synchronized eggs were transferred onto NGM plates with RNAi bacteria, late L4 males were transferred and paired with fog-2 L4 hermaphrodites onto NGM plates seeded with OP50 (to eliminate the possible effect on mating efficiency for different RNAi treatments). Two days later, males and hermaphrodites were transferred onto fresh plates seeded with corresponding RNAi bacteria and males were maintained on RNAi bacteria thereafter. 30\u201350 worms were included in each group of individual worm lifespan assays. The sample size was similar to previous published study of individual hermaphrodite lifespan assays. When lifespan assays were completed, Kaplan-Meier analysis with log-rank (Mantel-Cox) method was performed to compare the lifespans of different groups. The summary of all lifespan experiments is included in Supplementary file 1.\n\n### Grouped males\n\n35 mm NGM plates were used for all the experiments in this study. 20 \u00b5l of OP50 was dropped onto each plate to make a bacterial lawn of\u00a0~10 mm diameter. The next day, eight synchronized late L4 males were transferred onto each plate. (Two or four males per plate for experiment in Figure 1A.) One late L4 male of the same age and genotype was transferred onto the control plates. Males were transferred onto fresh plates every two days, when the males were lost or dead, males from other plates were transferred together to make the size of the group stable.\n\n### Male-conditioned plates (MCP) setup\n\nMale-conditioned plates for lifespan assays were prepared similar to the previous description (Maures et al., 2014). Briefly, 60 \u00b5l of OP50 was dropped onto each 35 mm NGM plate to make a bacterial lawn of\u00a0~25 mm diameter. Young Day 1 wild-type males (fog-2 males) were transferred onto each plate. Two days later, they were removed and worms for lifespan assays were immediately transferred onto these male-conditioned plates (MCP). These male-conditioned plates were prepared throughout the course of the lifespan assays (Figure 1\u2014figure supplement 1B) to ensure fresh MCP plates were available. The number of wild-type males used for conditioning is stated in the text and labeled in the figures. In Figure 1\u2014figure supplement 1F, glp-1 mutant males as well as the wild-type males were used for conditioning at 25\u00b0C for 2 days. For MCP treatment from egg onward, 30 Day 1 wild-type males were used to condition plates for 2\u20133 days. Males were removed and about 15 Day 1 mated fog-2 hermaphrodites were picked onto these MCP plates for 4\u20135 hr, allowing them to lay 60\u201380 eggs. Two days later, L4 males were individually transferred onto MCP plates (conditioned by 8 males, as previously described) for the lifespan assays.\n\n### Body size measurement\n\nImages of live males on 35 mm plates were taken daily for the first week of adulthood with a Nikon SMZ1500 microscope. Image J was used to analyze the body size of the worms. The middle line of each worm was delineated using the segmented line tool and the total length was documented as the body length of the worm. T-test was performed to compare the body size differences between groups of males in the same day. See Supplementary file 2 for summary.\n\n### FUdR experiment\n\nFUdR was added to the NGM media to the final concentration of 50 \u00b5M. Late L4 males and hermaphrodites were transferred onto NGM+FUdR plates seeded with OP50. Worms were transferred every two days, and were kept on FUdR plates for different period of time (3 days, 6 days or lifetime as indicated by text).\n\n### DAPI staining and analysis of male germline\n\nWorms were stained according to Bio-protocol (http://www.bio-protocol.org/wenzhang.aspx?id=77) using VECTASHIELD HardSet Mounting Medium with DAPI from Vector Laboratories\u00a0(Burlingame, CA). Images were taken with a Nikon Ti. The mitotically proliferating germline region was determined by the crescent shape of DAPI-stained nuclei in the transition zone. Z-series of pictures were taken and the numbers of cells in the mitotically proliferating germline region were counted manually. We scored the germline morphology as \u20181\u2019 (clear transition zone marked by crescent shaped nuclei and sperm after U turn of the germline), \u20182\u2019 (no clear transition zone), and \u20183\u2019 (sperm appear before U turn of the germline). Nonparametric comparison between each treatment group was performed using Prism Graphpad. Mann Whitney test was used to determine the statistical significance.\n\n### Oil Red O staining and quantification\n\nOil Red O staining was adapted from the published protocol for staining of a small number of worms (W\u00e4hlby et al., 2014). About 20 worms per treatment were imaged with Nikon Ti. Oil Red O quantification was also performed as published (O'Rourke et al., 2009). In brief, the color images were split into RGB monochromatic images in Image J. The Oil-Red-O staining arbitrary unit (a.u.) was determined by mean gray value within the worm region by Image J (Intensity in the Green channel was used as the signal, adjusted by the intensity in the Red channel as the background). T-test analysis was performed to compare the fat staining of different groups of worms.\n\n### Glycogen staining\n\nGlycogen staining was performed according to the published protocol (Frazier and Roth, 2009). Mating of males was set up as previously described. Right before staining, live males of the same group were picked into an M9 droplet with 1M sodium azide on a 3% agarose pad. Immediately after the liquid was dry, the pad was inverted over the opening of a 50g bottle of iodine crystal chips (Sigma,\u00a0St.\u00a0Louis,\u00a0MO) for 1 min. After the color stained by iodine vapor on the pad disappeared (non-specific staining), the worms (about 20 worms per treatment) were immediately imaged by a Nikon microscope. Due to uncontrollable differences, it is hard to compare the staining performed at different times. Thus, worms from the groups of comparison were mounted onto the same pad (using a separate M9 droplet if there is no visible difference). Image J was used to compare the mean intensity of iodine staining after the background was subtracted. T-test was performed to compare the staining between different groups (on the same pad).\n\n### GFP intensity quantification\n\n10\u201320 worms of each group were imaged by Nikon Ti. Image J was used to measure the mean and the maximum GFP intensity of the whole body area. T-test analysis was performed to compare the GFP intensity of different groups of worms.\n\n### Mated males microarrays\n\nWe paired a single male with a fog-2 hermaphrodite for about 3.5 days of mating, then picked the males individually on Day four for microarray analysis. As a control, solitary males were collected at the same time. About 150 males (on 150 individual 35 mm plates) were collected for each condition and replicate. Three biological replicates were performed. RNA was extracted by the heat-vortexing method. Two-color Agilent microarrays were used for expression analysis; detailed steps and analysis were performed as we previously reported (Luo et al., 2010).\n\n### daf-22 grouped males microarrays\n\nSynchronized late L4 daf-22 males were picked on to 35 mm plates (control and MCP). 30 males per plate, 150 males in total were used for each biological replicate. Males were transferred on to freshly seeded plates or MCP plates every two days, and collected on Day six for RNA extraction. Four biological replicates were performed.\n\n### 6699 EG4389 masculinized hermaphrodites grouped vs single microarrays\n\nSynchronized late L4 worms were picked onto 35 mm plates. In the \u2018grouped\u2019 condition, 30 hermaphrodites were picked onto one plate, and\u00a0~120 worms were used for each replicate. Worms were transferred every two days to exclude progeny, and were collected on Day six for RNA extraction. Four biological replicates were performed.\n\n### Microarray data accession links\n\nMicroarray data can be found in PUMAdb (http://puma.princeton.edu).\n\nhttps://puma.princeton.edu/cgi-bin/publication/viewPublication.pl?pub_no=576\n\nIncluding\u00a0mated males microarrays (three biological replicates);\n\ndaf-22 grouped males microarrays (four biological replicates);\n\nglp-1 hermaphrodites treated with MCP microarrays (four biological replicates);\n\nEG4389 masculinized hermaphrodites grouped vs single microarrays (four biological replicates).\n\n### Analyses of microarray data\n\nSignificant differentially-expressed gene sets were identified using SAM (Tusher et al., 2001). Previously reported microarray results exploring the effect of males on hermaphrodites (Maures et al., 2014) were downloaded from NCBI and compared to our differentially expressed gene lists. Enriched motifs were found using RSAT (van Helden, 2003).\n\n### Pheromone chemotaxis assay\n\nThis assay (Figure 6H) was modified from a previous assay (Chasnov et al., 2007). 10 Day 1 virgin C. remanei or C. elegans hermaphrodites were placed in 100 \u00b5l of M9 buffer at room temperature overnight with shaking. 100 males of either C. elegans or C. remanei were placed in 100 \u00b5l of M9. The supernatant solutions were then used for the pheromone chemotaxis assay. 60 mm NGM plates (no food) were used for the chemotaxis assay. Two destination spots (supernatant and M9 control) were separated by about 45 mm; the distance from the origin spot to either destination spot is 30 mm. Two 1 \u00b5l drops of 1M sodium azide were first applied to the destination spots. When dry, a drop of 1 \u00b5l M9 or supernatant was separately added onto the destination spots. Then, over 10 young adult (Day 2) males were placed at the origin spot, transferring as little bacteria as possible. After 60 min, the paralyzed male worms were scored based on their location. The chemotaxis index was calculated as: (#worms at supernatant destination - #worms at control destination)/(#total worms - #worms at origin). The chemotaxis assay in Figure 2B was also modified from established protocol (Chasnov et al., 2007). 10 Day 5 hermaphrodites of either N2 or 6699 EG4389 were put in 100 \u00b5l of M9 buffer at room temperature overnight with shaking. Two destination spots were 3 mm apart. The origin spot was in the middle. 20 Day 1 fog-2 males were used in each assay; two replicates were performed.\n\n### Male fertility assay\n\nMales from the control plates and MCP plates were individually paired with one virgin Day 1 fog-2 hermaprhodite at various time points on a seeded 35 mm NGM plate for 24 hr. About 20 pairs were set up for each group in each biological replicate. The percent fertile was calculated from the number of plates with eggs/progeny divided by the total number of plates set up for this group. Each mated hermaphrodite was numbered and was transferred individually onto a new seeded NGM plate every day to count the total progeny/male number.\n",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "1e02c0d2-24f0-4561-b640-da938a03c4b6",
+      "submission_id": "ef2ffdfe-970e-4067-9ebe-1dc3ef916c75",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew Dillin, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23493.026](https://doi.org/10.7554/eLife.23493.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mating and Male pheromone kill Caenorhabditis males through distinct mechanisms\" for consideration by eLife. Your article has been favorably evaluated by Marianne Bronner (Senior Editor) and three reviewers, one of whom, Andrew Dillin (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: L Ren\u00e9 Garc\u00eda (Reviewer #2); Maureen M Barr (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe article \"Mating and male pheromone kill Caenorhabditis males through distinct mechanisms\" explores how male secretions and copulation shortens a C. elegans male's lifespan relative to a male that is reared in isolation. We find the research topic very interesting and especially novel, since so very few C. elegans labs study male C. elegans development, behavior and physiology. The authors incorporate life span quantification along with gene profiling analyses, which they have used extensively in their past studies involving hermaphrodites, to describe anatomical and physiological changes that occur in aging adult Caenorhabditis sp. Males. The authors investigate life history traits in males that are chronically exposed to male secretions (which includes but is not limited to ascaroside blends) and to hermaphrodite/female mates.\n\nWhile all reviewers are in favor of publication of this body of work, we all think that the discussion and use of the term \"toxin\" to describe male pheromone needs to be tempered and explained better.\n\nIn the last paragraph of the Introduction, the authors immediately introduce the male secretions as a toxin. Throughout the article, the authors convincingly show that chronic exposure to male conditioned media has toxic properties, but immediately calling the male secretions a toxin requires the concept to be developed further. The connotation of a \"toxin\" is that it has a deterministic role to induce deleterious physiological effects that ultimately aids in the fitness of the organism. The experiments presented in this paper do not directly address any organismal fitness benefits for the conditioned media's toxic properties. Although in the Discussion (subsection \u201cMale pheromone-induced killing may be a strategy to selectively reduce the male population\u201d), the authors speculate that the N2 male secretions would cull males from the population, details of how this scenario would occur needs to be explained further.\n\nFinally, the authors should also incorporate into their Discussion how copulatory behaviors rapidly decline in early adulthood and how this could affect reproduction of males in their prime.\n\nMale copulation performance declines between day 2 to day 5, and this behavioral decline does not change whether the male is reared in isolation or in large groups (i.e. the male secretions has no obvious deleterious effect on the young male's copulatory motor execution or fecundity). Thus, if male secretions are made to cull out males, then its role is to cull out males past their reproductive prime, but this scenario should not change the generation of new males from cross-fertilization, if male pheromone started killing off young virile males. The reduction of new males in hermaphroditic population over time is more likely due to inefficient male copulatory motor execution, relative to hermaphroditic selfing.\n",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d4cb782f-e94f-4483-b80f-773e24dd2fc2",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C1",
+      "claim": "C. elegans males live significantly shorter when maintained in groups, whereas the longevity of hermaphrodites is not influenced by population density.",
+      "claim_type": "EXPLICIT",
+      "source": "Sex-specific longevity patterns also exist in Caenorhabditis elegans: males live significantly shorter when maintained in groups, whereas the longevity of hermaphrodites is not influenced by population density (Gems and Riddle, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gems and Riddle, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "f47882d2-45de-4727-b562-487e0c687070",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C2",
+      "claim": "The lifespan of Caenorhabditis females is shortened after mating through receipt of male sperm and seminal fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifespan of Caenorhabditis females is shortened after mating through receipt of male sperm and seminal fluid (Shi and Murphy, 2014), and separately by exposure to male pheromone (Maures et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Shi and Murphy, 2014 and Maures et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "3ff31db4-70e9-465e-977c-d1d54828da50",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C3",
+      "claim": "Caenorhabditis females' lifespan is shortened by exposure to male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "The lifespan of Caenorhabditis females is shortened after mating through receipt of male sperm and seminal fluid (Shi and Murphy, 2014), and separately by exposure to male pheromone (Maures et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maures et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "6d84c6af-ed13-4c2a-a93e-6a6e008b0427",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C4",
+      "claim": "Just two C. elegans males together significantly reduced each individual's lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans male lifespan is very sensitive to male density: just two males together significantly reduced each individual's lifespan, and grouping eight males decreases lifespan by more than 35%, whereas the lifespan of C. elegans hermaphrodites is not affected by population density (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "27b7ba31-38c2-4993-b1f1-c5a91f4e7e4d",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C5",
+      "claim": "Grouping eight C. elegans males decreases lifespan by more than 35%.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans male lifespan is very sensitive to male density: just two males together significantly reduced each individual's lifespan, and grouping eight males decreases lifespan by more than 35%, whereas the lifespan of C. elegans hermaphrodites is not affected by population density (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "b7df213e-a16e-48e6-a61b-98ffcb61fe47",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C6",
+      "claim": "The lifespan of C. elegans hermaphrodites is not affected by population density.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans male lifespan is very sensitive to male density: just two males together significantly reduced each individual's lifespan, and grouping eight males decreases lifespan by more than 35%, whereas the lifespan of C. elegans hermaphrodites is not affected by population density (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "de4cb810-053d-4ee2-8a87-075379d9ab1c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C7",
+      "claim": "Eight grouped daf-22(m130) males lived almost as long as solitary wild-type males.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight grouped daf-22(m130) males lived almost as long as solitary wild-type males, suggesting that male pheromone kills grouped wild-type males (Figure 1C; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1C and Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "30f9ecc1-7da5-40f1-9823-b10c75c41b7e",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C8",
+      "claim": "Male pheromone kills grouped wild-type males.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight grouped daf-22(m130) males lived almost as long as solitary wild-type males, suggesting that male pheromone kills grouped wild-type males (Figure 1C; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that daf-22 males (pheromone-deficient) live as long as solitary wild-type males when grouped",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fe6eeea6-ef85-48d1-a486-b31beed9e166",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C9",
+      "claim": "C. elegans males are more sensitive to male pheromone toxicity than hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "This low dosage of male pheromone had no effect on hermaphrodites, but significantly reduced C. elegans male lifespan (Figure 1D,E), suggesting that males are more sensitive than hermaphrodites to male pheromone toxicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing differential effects on males vs hermaphrodites in Figure 1D,E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "753d295b-84ec-4966-a0ed-a9b5914e6108",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C10",
+      "claim": "Exposure to pheromone secreted by just one male was sufficient to significantly reduce the lifespan of C. elegans males.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we found that exposure to pheromone secreted by just one male was sufficient to significantly reduce the lifespan of C. elegans males (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "f86ed774-09b2-416f-ac0a-e870d0f626b7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C11",
+      "claim": "Blocking male germline proliferation prevents male pheromone's effects on gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, this comparison revealed no differences in gene expression (Figure 1\u2014figure supplement 1C), even at a high % False Discovery Rate (FDR), suggesting that blocking male germline proliferation prevents male pheromone's effects on gene expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray data showing no gene expression changes when FUdR is present, shown in Figure 1\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "b7ceea9c-84fc-49f7-b2f9-85b674b48b04",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C12",
+      "claim": "There was no lifespan difference when daf-22(m130) males were subjected to a high level of exogenous wild-type male pheromone in the presence of FUdR.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that there was no lifespan difference when daf-22(m130) males were subjected to a high level of exogenous wild-type male pheromone (30 males per plate for conditioning) in the presence of FUdR, mimicking the microarray conditions (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "dd77e065-08ae-48f2-95ea-fdcab751f1c8",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C13",
+      "claim": "No population density-dependent lifespan decrease was observed when germline-deficient glp-1(e2141) males were grouped.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, no population density-dependent lifespan decrease was observed when germline-deficient glp-1(e2141) males were grouped (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "d046e00d-75f7-47e7-98f9-087e43246980",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C14",
+      "claim": "Germline activity in the recipient is required for male pheromone-mediated death in both sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results suggest that germline activity in the recipient is required for male pheromone-mediated death in both sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing FUdR and glp-1 mutations prevent pheromone-mediated death",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "f009aff8-d455-40d1-8810-28e78d17cf7f",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C15",
+      "claim": "The germline cannot be the site of pheromone production, but rather may modulate pheromone levels or quality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, males on plates conditioned by germline-less males still live shorter than the controls, suggesting that the germline cannot be the site of pheromone production, but rather may modulate pheromone levels or quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observation that germline-less males still produce some pheromone effect, shown in Figure 1\u2014figure supplement 1F",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4f2c15eb-9bdd-48c0-a7c4-1d87b7fb9498",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C16",
+      "claim": "Solitary neuronally-masculinized hermaphrodites died earlier when exposed to a low level of male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "Solitary neuronally-masculinized hermaphrodites died earlier when exposed to a low level of male pheromone (eight males per plate for conditioning; Figure 2A), whereas normal hermaphrodites were insensitive to male pheromone at this concentration (Figure 1D), suggesting that sex-specific neuronal properties are responsible for male and hermaphrodite's different sensitivities to male pheromone's toxicity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "0daece3a-054e-4d12-b357-db594c8342c1",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C17",
+      "claim": "Sex-specific neuronal properties are responsible for male and hermaphrodite's different sensitivities to male pheromone's toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Solitary neuronally-masculinized hermaphrodites died earlier when exposed to a low level of male pheromone (eight males per plate for conditioning; Figure 2A), whereas normal hermaphrodites were insensitive to male pheromone at this concentration (Figure 1D), suggesting that sex-specific neuronal properties are responsible for male and hermaphrodite's different sensitivities to male pheromone's toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that masculinizing neurons increases hermaphrodite sensitivity to male pheromone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "e28375ad-3751-49ae-861d-94fcea0b2c3c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C18",
+      "claim": "C. elegans males are normally attracted to pheromones secreted by old (self sperm-depleted) hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans males are normally attracted to pheromones secreted by old (self sperm-depleted) hermaphrodites (Morsci et al., 2011; Leighton et al., 2014; Kleemann and Basolo, 2007), but males were not attracted to pheromones secreted by aged neuronally-masculinized hermaphrodites (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Morsci et al., 2011; Leighton et al., 2014; Kleemann and Basolo, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "57607485-e28c-4809-a8da-ba69f9b41dc5",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C19",
+      "claim": "Males were not attracted to pheromones secreted by aged neuronally-masculinized hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans males are normally attracted to pheromones secreted by old (self sperm-depleted) hermaphrodites (Morsci et al., 2011; Leighton et al., 2014; Kleemann and Basolo, 2007), but males were not attracted to pheromones secreted by aged neuronally-masculinized hermaphrodites (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "27f9595c-b717-47bd-9e70-7b4905ea3bb1",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C20",
+      "claim": "When masculinized hermaphrodites were grouped, they lived shorter than the solitary controls.",
+      "claim_type": "EXPLICIT",
+      "source": "More surprisingly, when these masculinized hermaphrodites were grouped, they lived shorter than the solitary controls (Figure 2C), suggesting that neuronal masculinization of the hermaphrodites is sufficient to induce the production of male-like pheromone in these hermaphrodites, and that neurons are key for male pheromone-mediated death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "3a29582e-339e-474a-8664-f0cd04b0a41f",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C21",
+      "claim": "Neuronal masculinization of the hermaphrodites is sufficient to induce the production of male-like pheromone in these hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "More surprisingly, when these masculinized hermaphrodites were grouped, they lived shorter than the solitary controls (Figure 2C), suggesting that neuronal masculinization of the hermaphrodites is sufficient to induce the production of male-like pheromone in these hermaphrodites, and that neurons are key for male pheromone-mediated death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that grouped masculinized hermaphrodites die early like males",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "430be405-d9b1-4b4e-b208-7f95afd83879",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C22",
+      "claim": "Neurons are key for male pheromone-mediated death.",
+      "claim_type": "EXPLICIT",
+      "source": "More surprisingly, when these masculinized hermaphrodites were grouped, they lived shorter than the solitary controls (Figure 2C), suggesting that neuronal masculinization of the hermaphrodites is sufficient to induce the production of male-like pheromone in these hermaphrodites, and that neurons are key for male pheromone-mediated death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing neuronal masculinization affects both pheromone production and sensitivity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "04177fe6-c879-4659-89f2-b59a3a1aafa7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C23",
+      "claim": "Inhibiting germline proliferation in grouped masculinized hermaphrodites by FUdR rescued lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting germline proliferation in these grouped masculinized hermaphrodites by FUdR rescued lifespan (Figure 2D), which again supports the conclusion that the germline, whether male or female, is required for male pheromone-mediated killing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "be6f3aea-47b9-47c4-85b6-241eeb84d4c6",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C24",
+      "claim": "The germline, whether male or female, is required for male pheromone-mediated killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting germline proliferation in these grouped masculinized hermaphrodites by FUdR rescued lifespan (Figure 2D), which again supports the conclusion that the germline, whether male or female, is required for male pheromone-mediated killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing FUdR rescues lifespan in both males and masculinized hermaphrodites",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "43d8e8df-4c1e-4142-a8b1-ce5a151ecfbd",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C25",
+      "claim": "Mating decreased male lifespan ~35% compared with unmated solitary males.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating decreased male lifespan ~35% compared with unmated solitary males (Figure 3A, Supplementary file 1), similar to the decrease in hermaphrodite lifespan caused by mating (Shi and Murphy, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A and Supplementary file 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "17f51a7c-3eaf-48b5-9bf5-f0d2ca4189e8",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C26",
+      "claim": "Males die faster when paired with a hermaphrodite for a longer period.",
+      "claim_type": "EXPLICIT",
+      "source": "Males die faster when paired with a hermaphrodite for a longer period: mating with a hermaphrodite for one day did not significantly affect the lifespan of the male, while 2\u20133 days' mating shortened male lifespan by 15%, 4\u20135 days' mating reduced their lifespan by 25%, and mating for 6 days reduced lifespan more than 35% (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "6373f224-929a-4c4c-98c8-c4070e8904eb",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C27",
+      "claim": "The number of hermaphrodites paired with the single male during mating had little effect on male lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the number of hermaphrodites paired with the single male during mating had little effect (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "37bcbd69-d2d4-4187-a5d6-5876a9e91154",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C28",
+      "claim": "The time at which mating occurs within the reproductive period is not critical for males' post-mating lifespan decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "The time at which mating occurs within the reproductive period is also not critical for males' post-mating lifespan decrease; given the same mating duration, males mated with hermaphrodites for the first three days of adulthood had a similar lifespan decrease as those mated with hermaphrodites during days 6\u20138 of adulthood (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "276feac5-28a9-4f6b-bbf8-385359649c39",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C29",
+      "claim": "Males shrank after 6 days of mating; by Day 7, the mated males were 10% smaller than the unmated solitary males control.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously observed in hermaphrodites (Shi and Murphy, 2014), males shrank after 6 days of mating; by Day 7, the mated males were 10% smaller than the unmated solitary males control (Figure 3E,F, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E,F and Supplementary file 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "ad2e661e-a4d6-4cf7-ba5f-ade4b58cafb0",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C30",
+      "claim": "Male pheromone does not induce body shrinking.",
+      "claim_type": "EXPLICIT",
+      "source": "No such shrinking was apparent when males were treated with male pheromone (Figure 3G), suggesting that mating and male pheromone act through different pathways.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "32fcb1c2-9b8d-4f0e-9116-4202259b222c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C31",
+      "claim": "Mating and male pheromone act through different pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "No such shrinking was apparent when males were treated with male pheromone (Figure 3G), suggesting that mating and male pheromone act through different pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that mating causes shrinking but pheromone does not",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "7c535941-e735-4a6e-9404-3ffcad9c93cc",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C32",
+      "claim": "Wild-type males still died early post-mating when paired with a daf-22 hermaphrodite for 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We wondered whether pheromone is required for mating-induced death in males; however, wild-type males still died early post-mating when paired with a daf-22 hermaphrodite for 6 days (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "5c11de99-3ab0-42ad-a3a4-3adcffaa7a73",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C33",
+      "claim": "daf-22 mutant males lived shorter after 6 days' mating with fog-2 hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, daf-22 mutant males lived shorter after 6 days' mating with fog-2 hermaphrodites (Figure 4B), indicating that the post-mating lifespan decrease in our single-worm pair lifespan assay is due to mating itself rather than to the presence of pheromone from either sex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4fb95f7e-50af-484b-aad9-b4a8830a39eb",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C34",
+      "claim": "The post-mating lifespan decrease in single-worm pair lifespan assay is due to mating itself rather than to the presence of pheromone from either sex.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, daf-22 mutant males lived shorter after 6 days' mating with fog-2 hermaphrodites (Figure 4B), indicating that the post-mating lifespan decrease in our single-worm pair lifespan assay is due to mating itself rather than to the presence of pheromone from either sex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing mating effects persist in pheromone-deficient mutants",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "6931dd3c-f0d3-4571-9612-f965725a7de4",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C35",
+      "claim": "When treated with 50 \u00b5M FUdR during the three-day mating period, males no longer died earlier.",
+      "claim_type": "EXPLICIT",
+      "source": "This killing mechanism appears to be conserved in males: when treated with 50 \u00b5M FUdR during the three-day mating period, males no longer died earlier (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "6b718b65-5867-40a5-9493-87233a242188",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C36",
+      "claim": "Germline-less glp-1(e2141) males experienced neither shrinking nor lifespan decrease after mating.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of the germline also prevented mating-induced shrinking: germline-less glp-1(e2141) males experienced neither shrinking nor lifespan decrease after mating (Figure 4D,E, Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4D,E and Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fa2048e6-4745-4981-ba20-eb996ae64bc6",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C37",
+      "claim": "Germline-mediated post-mating death and shrinking is conserved between C. elegans sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that germline-mediated post-mating death and shrinking is conserved between C. elegans sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations in both males and hermaphrodites showing similar germline-dependent effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "e3b2d5e8-6d6b-40a9-9a69-99612c1c650e",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C38",
+      "claim": "Only 14 genes were significantly up-regulated and 41 were significantly down-regulated in mated males compared to unmated males.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 14 genes were significantly up-regulated and 41 were significantly down-regulated (FDR = 0%; Figure 4F; Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray data shown in Figure 4F and Supplementary file 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "08ca85a9-10b7-42f7-929d-f0e15d8f0e06",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C39",
+      "claim": "Mating decreases fat storage in males.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously found in hermaphrodites (Shi and Murphy, 2014), mating decreases fat storage in males (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "d8c17c72-5403-4732-88e7-c9d3f68f254c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C40",
+      "claim": "Vitellogenins were the top up-regulated genes in mated males, expressed on average 19 times higher in mated males than in solitary unmated males.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, vitellogenins (vit-4, vit-3, vit-5, vit-6, vit-2), which encode yolk protein precursors made in the female/hermaphrodite intestine for transport into developing oocytes (Kimble and Sharrock, 1983) and as such are not normally expressed in males (Figure 4G, left), were the top up-regulated genes in mated males, expressed on average 19 times higher in mated males than in solitary unmated males (Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray data in Supplementary file 3 and Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "853c197c-6138-4858-813f-b9aaca59a81e",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C41",
+      "claim": "Vitellogenins are not normally expressed in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, vitellogenins (vit-4, vit-3, vit-5, vit-6, vit-2), which encode yolk protein precursors made in the female/hermaphrodite intestine for transport into developing oocytes (Kimble and Sharrock, 1983) and as such are not normally expressed in males (Figure 4G, left), were the top up-regulated genes in mated males, expressed on average 19 times higher in mated males than in solitary unmated males (Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G and established knowledge from Kimble and Sharrock, 1983",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "5070af0c-8343-405e-b557-34a5bd5b7063",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C42",
+      "claim": "Mating induced ectopic expression of VIT-2::GFP in the anterior intestine of males.",
+      "claim_type": "EXPLICIT",
+      "source": "Mating induced ectopic expression of VIT-2::GFP in the anterior intestine of males, confirming our gene expression data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "54cfc248-c77a-4df7-bc13-f6f86fc98c89",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C43",
+      "claim": "VIT-2::GFP expression induction in mated males was germline function-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Such expression induction was germline function-dependent, as FUdR treatment of males blocked VIT-2::GFP expression in mated males (Figure 4G, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4G and Figure 4\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "53ca32bb-e9c5-4125-89e8-854f3a596f6c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C44",
+      "claim": "Knocking down unc-62 was sufficient to rescue the lifespan decrease in mated males.",
+      "claim_type": "EXPLICIT",
+      "source": "Using RNAi, we found that knocking down unc-62 was sufficient to rescue the lifespan decrease in mated males (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "ee30384f-dfd1-44e5-94dc-fe1dca122ac9",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C45",
+      "claim": "The mis-expression of vitellogenins upon mating contributes to post-mating death in males.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mis-expression of vitellogenins upon mating contributes to post-mating death in males.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from unc-62 RNAi rescue experiments and vitellogenin expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "8812d7a5-4710-4cae-91d4-dba11056b6f1",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C46",
+      "claim": "Mated pqm-1(ok485) deletion males lived as long as unmated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mated pqm-1(ok485) deletion males lived as long as unmated controls (Figure 4I), suggesting that PQM-1 is also required for post-mating male death.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "e467d785-0a8b-4c44-8774-56f99ac95eef",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C47",
+      "claim": "PQM-1 is required for post-mating male death.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mated pqm-1(ok485) deletion males lived as long as unmated controls (Figure 4I), suggesting that PQM-1 is also required for post-mating male death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that pqm-1 mutants do not die early after mating",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "d7478ad3-2fc4-4bc0-bcc0-7e9cf21b2a4f",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C48",
+      "claim": "The pattern of gene expression in male pheromone-treated animals was very different from that of mated males.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, this pattern of gene expression was very different from that of mated males (Figure 5A, Figure 5\u2014figure supplement 1; Pearson correlation = \u22120.0594 for the whole transcriptome).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray comparison data shown in Figure 5A and Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fb2d0866-e102-4d25-a5a5-56fe4d0ba12e",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C49",
+      "claim": "Upregulation of vitellogenin genes was not a signature of male pheromone-treated animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, upregulation of vitellogenin genes was not a signature of male pheromone-treated animals (Figure 5\u2014figure supplement 1C), also supporting the notion that the two pathways act through distinct molecular mechanisms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray data shown in Figure 5\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "107fdc41-6c98-4ff7-8109-f54aacdc297c",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C50",
+      "claim": "MCP treatment caused no significant changes in fat metabolism gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While fat is reduced in males after mating (Figure 5B), MCP treatment caused no significant changes in fat metabolism gene expression (Figure 5\u2014figure supplement 1A) or Oil Red O staining (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microarray and Oil Red O staining data shown in Figure 5\u2014figure supplement 1A and Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "ef06575e-b997-4f43-951a-f7b75012d34a",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C51",
+      "claim": "Mated wild-type worms lost about 30% of their glycogen stores post-mating in a germline-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we found that mated wild-type worms lost about 30% of their glycogen stores post-mating in a germline-dependent manner (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "674fbda6-17c3-4d1a-8947-5a73812780f7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C52",
+      "claim": "The mating-induced glycogen storage decrease and subsequent shrinking is conserved between sexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mating-induced glycogen storage decrease and subsequent shrinking is conserved between sexes (Figure 5\u2014figure supplement 2), while glycogen stores are not affected by male pheromone (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5\u2014figure supplement 2 and Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "0c07569a-b60e-48ac-9c70-35fb53e1de52",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C53",
+      "claim": "Glycogen stores are not affected by male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "The mating-induced glycogen storage decrease and subsequent shrinking is conserved between sexes (Figure 5\u2014figure supplement 2), while glycogen stores are not affected by male pheromone (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "33d85dcf-e4e3-4b90-a47d-dc35dedfcad7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C54",
+      "claim": "pqm-1(ok485) null mutant males were not short-lived when treated with male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pqm-1(ok485) null mutant males were not short-lived when treated with male pheromone (eight males per plate for conditioning; Figure 5F), suggesting that male pheromone killing, like mating-induced death, is mediated at least in part by PQM-1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "f03485de-45f6-4cd9-b6a9-593da17d7074",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C55",
+      "claim": "Male pheromone killing is mediated at least in part by PQM-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that pqm-1(ok485) null mutant males were not short-lived when treated with male pheromone (eight males per plate for conditioning; Figure 5F), suggesting that male pheromone killing, like mating-induced death, is mediated at least in part by PQM-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that pqm-1 mutants are resistant to male pheromone killing",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "c8a5ddce-fdaa-4374-b0fb-94c7fdff1768",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C56",
+      "claim": "C. remanei males also lived significantly shorter after mating with a female C. remanei for 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that C. remanei males also lived significantly shorter after mating with a female C. remanei for 6 days (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "f2699641-a32a-42b2-8c55-8997b97430bd",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C57",
+      "claim": "C. elegans males died early when mated with a C. remanei female for 6 days, even though no cross-progeny result from this mating.",
+      "claim_type": "EXPLICIT",
+      "source": "While female death requires successful cross-progeny production (Shi and Murphy, 2014), C. elegans males died early when mated with a C. remanei female for 6 days (Figure 6B), even though no cross-progeny result from this mating.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "5644b6fe-d4a9-4762-8142-a71717c553ee",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C58",
+      "claim": "The process of mating and up-regulation of male germline activity is sufficient to induce death, regardless of the species of the recipient female.",
+      "claim_type": "EXPLICIT",
+      "source": "This result, together with the germline dependence of mating-induced death, suggests the process of mating and up-regulation of male germline activity is sufficient to induce death, regardless of the species of the recipient female.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that C. elegans males die after mating with C. remanei females despite no progeny production",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "3927a752-fa7d-4237-be69-9b07e410befc",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C59",
+      "claim": "Neither C. remanei males nor females were short-lived when exposed to low levels of C. remanei male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to low levels of C. remanei male pheromone (eight males per plate for conditioning), neither C. remanei males nor females were short-lived (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "46ada5b8-2aef-4815-b572-06c15322f081",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C60",
+      "claim": "At a higher concentration of male pheromone, multiple trials of C. remanei females and males on male-conditioned plates failed to reveal any sensitivity to either C. remanei or C. elegans male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "At a higher concentration (30 males per plate for conditioning), multiple trials of C. remanei females and males on male-conditioned plates failed to reveal any sensitivity to either C. remanei or C. elegans male pheromone (Figure 6E,F), in contrast to previous reports in which males and females were grouped (Maures et al., 2014); this result suggests that the lifespan shortening in the latter study was caused by mating rather than by male pheromone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6E,F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4c63abe8-01c4-4cef-bd35-97880419f219",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C61",
+      "claim": "C. elegans hermaphrodites died early when exposed to C. remanei male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that male pheromone toxicity can act across species: C. elegans hermaphrodites died early when exposed to C. remanei male pheromone (Figure 6G), suggesting that the difference in sensitivity to male pheromone might stem from the perception of pheromone as a toxin, rather than from toxicity of the pheromone itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "7d3f7523-3b6c-4e6c-bb61-fc10fc647cf5",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C62",
+      "claim": "The difference in sensitivity to male pheromone might stem from the perception of pheromone as a toxin, rather than from toxicity of the pheromone itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that male pheromone toxicity can act across species: C. elegans hermaphrodites died early when exposed to C. remanei male pheromone (Figure 6G), suggesting that the difference in sensitivity to male pheromone might stem from the perception of pheromone as a toxin, rather than from toxicity of the pheromone itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cross-species pheromone experiments showing C. elegans are sensitive to C. remanei pheromone but C. remanei are not",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "e399c5b9-a420-444f-943e-dfd437d61ad4",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C63",
+      "claim": "C. brenneri males are immune to male pheromone killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Like C. remanei males, two other gonochoristic species, C. brenneri and C. nigoni, are also immune to male pheromone killing (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "da8f7643-a243-4b12-b66f-9a23e043a21b",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C64",
+      "claim": "C. nigoni males are immune to male pheromone killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Like C. remanei males, two other gonochoristic species, C. brenneri and C. nigoni, are also immune to male pheromone killing (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "d8deab06-ced8-4a55-83a7-6d183e42fd21",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C65",
+      "claim": "Males from C. briggsae died significantly earlier when exposed to male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, males from two evolutionarily distant androdioecious species, C. briggsae and C. tropicalis, died significantly earlier when exposed to male pheromone (Figure 7C,D), just as C. elegans males do.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "103977ec-0f19-4e22-8a9a-580345e62873",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C66",
+      "claim": "Males from C. tropicalis died significantly earlier when exposed to male pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, males from two evolutionarily distant androdioecious species, C. briggsae and C. tropicalis, died significantly earlier when exposed to male pheromone (Figure 7C,D), just as C. elegans males do.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 7D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "d147cc12-3681-4791-968c-8870c22fb458",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C67",
+      "claim": "Male pheromone-dependent killing is shared by males of androdioecious species.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly indicate that male pheromone-dependent killing is shared by males of androdioecious species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations across three androdioecious species (C. elegans, C. briggsae, C. tropicalis) showing male pheromone killing",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "cba5d316-9d16-4bd1-8279-36451b4b598b",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C68",
+      "claim": "Male pheromone significantly decreased male fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, male pheromone significantly decreased male fertility (Figure 8B, Figure 8\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8B and Figure 8\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "72547b6a-590c-4e16-aeab-0e52e44c33fd",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C69",
+      "claim": "Male pheromone treatment decreases the number of progeny produced by those animals who do successfully mate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, male pheromone treatment decreases the number of progeny produced by those animals who do successfully mate (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "0e8ef347-ef46-4373-8486-a6588ab29bb6",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C70",
+      "claim": "Male pheromone treatment did not affect the brood size of self-fertilized hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, male pheromone treatment did not affect the brood size of self-fertilized hermaphrodites (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 8D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "9f1852f3-2e2c-42ac-99ff-1036143e45b6",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C71",
+      "claim": "Exposure to male pheromone during early life specifically reduces male fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that exposure to male pheromone during early life specifically reduces male fertility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing male pheromone affects male fertility but not hermaphrodite brood size",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4b5177ac-6815-4e15-a370-526f2d762836",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C72",
+      "claim": "Male pheromone alone could effectively drive the population back to a primarily hermaphroditic state after several generations.",
+      "claim_type": "EXPLICIT",
+      "source": "Male pheromone alone could effectively drive the population back to a primarily hermaphroditic state after several generations (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on theoretical modeling shown in Figure 8E",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "595c7a34-03a2-413b-8e90-80681e0b4db4",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C73",
+      "claim": "Germline-dependent early death after mating is conserved between sexes and perhaps even across great evolutionarily distances.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, germline-dependent early death after mating is conserved between sexes and perhaps even across great evolutionarily distances, and is likely due to an unavoidable cost of mating, the result of mated animals ramping up germline proliferation and subsequently exhausting their own resources as quickly as possible to produce the next generation of progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations across multiple species and both sexes showing similar germline-dependent mating effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "7cf451fe-189b-4829-a0a0-937fffe72327",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C74",
+      "claim": "Mated animals ramp up germline proliferation and subsequently exhaust their own resources as quickly as possible to produce the next generation of progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, germline-dependent early death after mating is conserved between sexes and perhaps even across great evolutionarily distances, and is likely due to an unavoidable cost of mating, the result of mated animals ramping up germline proliferation and subsequently exhausting their own resources as quickly as possible to produce the next generation of progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations of germline-dependent resource depletion (glycogen, fat) and death after mating",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "5e8e3390-1286-4961-8649-be718ee2f838",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C75",
+      "claim": "Androdioecious and gonochoristic species adopt different strategies to compete, mate, and maintain optimal sex ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential use of pheromones as toxins or chemical messengers by males in androdioecious and gonochoristic species, respectively, demonstrates that they adopt different strategies to compete, mate, and maintain optimal sex ratios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparative studies showing different pheromone effects in androdioecious vs gonochoristic species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "183f07b0-b62e-4061-901f-1737feeb403b",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C76",
+      "claim": "Women live longer than men in almost every country.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, women live longer than men in almost every country (WHO, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to WHO, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "deaf4b12-a86d-48ef-bfbe-c35dcdd464ec",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C77",
+      "claim": "Interventions in longevity display sex-specific patterns in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, interventions in longevity also display sex-specific patterns in mice (Austad and Fischer, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Austad and Fischer, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "c4572541-34a7-4f13-9bad-8e0b4408bc91",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C78",
+      "claim": "Males are usually very rare (less than 0.2% for the standard lab strain N2) in androdioecious species such as C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "In androdioecious species such as C. elegans, the population is dominated by hermaphrodites, which reproduce by self-fertilization. Males are usually very rare (less than 0.2% for the standard lab strain N2) and are produced through spontaneous X chromosome nondisjunction (Chasnov and Chow, 2002; Hodgkin, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chasnov and Chow, 2002; Hodgkin, 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4ab2bb62-34f5-473b-a389-fdbb106a545a",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C79",
+      "claim": "Under stressful conditions, more oocytes undergo chromosome non-disjunction in androdioecious species.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stressful conditions, more oocytes undergo chromosome non-disjunction; thus androdioecious species may periodically experience male population explosions (Chasnov and Chow, 2002; Hodgkin, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chasnov and Chow, 2002; Hodgkin, 1983",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "71b4ecf8-3b5b-490b-9c0b-31cbb0a9ade6",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C80",
+      "claim": "The existence of males in androdioecious species reduces inbreeding and facilitates adaptation to changing environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of males in androdioecious species reduces inbreeding and facilitates adaptation to changing environments (Anderson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anderson et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "db03f375-78c0-4f3b-87bb-efbe341b3040",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C81",
+      "claim": "Neurons and the germline are required for male pheromone-dependent male death.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that neurons and the germline are required for male pheromone-dependent male death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data throughout the manuscript showing neuronal masculinization and germline requirements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fcf0200f-c497-48ee-9d18-a363179dd7f5",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C82",
+      "claim": "Hermaphrodites with a masculinized nervous system secrete male pheromone and are susceptible to male pheromone killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hermaphrodites with a masculinized nervous system secrete male pheromone and are susceptible to male pheromone killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "368d199f-87b5-432d-9693-1f0acd42f5d9",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C83",
+      "claim": "Male pheromone-mediated killing is unique to androdioecious Caenorhabditis.",
+      "claim_type": "EXPLICIT",
+      "source": "Male pheromone-mediated killing is unique to androdioecious Caenorhabditis, and may reduce the number of males in hermaphroditic populations; neither males nor females of gonochoristic species are susceptible to male pheromone killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing androdioecious and gonochoristic species shown in Figures 6 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "b21e1526-c235-46ad-9ce0-96d5dfa4dc31",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C84",
+      "claim": "Neither males nor females of gonochoristic species are susceptible to male pheromone killing.",
+      "claim_type": "EXPLICIT",
+      "source": "Male pheromone-mediated killing is unique to androdioecious Caenorhabditis, and may reduce the number of males in hermaphroditic populations; neither males nor females of gonochoristic species are susceptible to male pheromone killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 6 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "623645c9-6e7b-4bb0-ac1f-50d585c9e2cd",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C85",
+      "claim": "Mating-induced death is characterized by germline-dependent shrinking, glycogen loss, and ectopic vitellogenin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mating-induced death, which is characterized by germline-dependent shrinking, glycogen loss, and ectopic vitellogenin expression, utilizes distinct molecular pathways and is shared between the sexes and across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 3, 4, and 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "398720db-1095-404c-9651-767e01e716b7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C86",
+      "claim": "Mating-induced death utilizes distinct molecular pathways from male pheromone-mediated killing and is shared between the sexes and across species.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mating-induced death, which is characterized by germline-dependent shrinking, glycogen loss, and ectopic vitellogenin expression, utilizes distinct molecular pathways and is shared between the sexes and across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing mating and pheromone effects across species shown throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "c6b5979f-bb27-4cce-a185-c95c8d6d96d3",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C87",
+      "claim": "Male pheromone-dependent male death in C. elegans is due to the perception of male pheromone as a toxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have found that male-specific population density-dependent death in C. elegans is due to the perception of male pheromone as a toxin; that is, while male pheromone itself is not a general poison to all worms, its perception by C. elegans males leads to death and to male-specific reproductive decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from cross-species experiments showing differential sensitivity to pheromone",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "15fd06bb-4d47-46a9-99df-faadfc855daa",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C88",
+      "claim": "Male pheromone itself is not a general poison to all worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have found that male-specific population density-dependent death in C. elegans is due to the perception of male pheromone as a toxin; that is, while male pheromone itself is not a general poison to all worms, its perception by C. elegans males leads to death and to male-specific reproductive decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations that gonochoristic species are immune to pheromone effects",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4acd46a3-1c09-41b4-908c-5a26d0bd4513",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C89",
+      "claim": "C. elegans hermaphrodites are less sensitive to the toxic aspect of male pheromone than males.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans hermaphrodites, while still susceptible, are less sensitive to this toxic aspect of male pheromone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 1D,E comparing male and hermaphrodite sensitivity",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "365355c2-e267-4e1c-abf1-a898c8d1ead8",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "claim_id": "C90",
+      "claim": "Male pheromone killing may reduce the number of males in hermaphroditic populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Male pheromone-mediated killing is unique to androdioecious Caenorhabditis, and may reduce the number of males in hermaphroditic populations; neither males nor females of gonochoristic species are susceptible to male pheromone killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation based on theoretical modeling and experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans males exhibit density-dependent lifespan reduction, with grouped males living significantly shorter than solitary males (>35% reduction with 8 males), while hermaphrodite lifespan is unaffected by density. This effect is mediated by male pheromone, as pheromone-deficient daf-22 males do not show reduced lifespan when grouped.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C8 provide converging evidence from multiple experimental conditions (Figure 1A-C) showing dose-dependent male lifespan reduction with increasing density and rescue in pheromone-deficient mutants. The data demonstrate both the phenomenon and its mechanism through appropriate genetic controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "16797c72-e178-42bb-9bc2-ad2c66c57ea4",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "C. elegans males are more sensitive to male pheromone toxicity than hermaphrodites, with males showing significant lifespan reduction at low pheromone concentrations (even from a single male) that do not affect hermaphrodites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C89 are supported by dose-response experiments (Figures 1D-F) showing differential sensitivity between sexes. The data demonstrate that males respond to pheromone concentrations that leave hermaphrodites unaffected, establishing sex-specific sensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Germline activity in the recipient is required for male pheromone-mediated death in both sexes. FUdR treatment (blocking germline proliferation) prevents both gene expression changes and lifespan reduction from male pheromone exposure, and germline-deficient glp-1 mutants show no density-dependent death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14, C23-C24 provide multiple lines of evidence (Figures 1G-H, 2D) using both pharmacological (FUdR) and genetic (glp-1) approaches to block germline function. The convergence of microarray, lifespan, and genetic data strongly supports germline requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fa475c93-7587-4d85-8671-2bbe73b1dff0",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neuronal masculinization of hermaphrodites is sufficient to induce both male pheromone production and sensitivity to male pheromone killing. Masculinized hermaphrodites die early when exposed to low-level male pheromone and exhibit density-dependent death when grouped.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C20-C22, C82 are supported by experiments with neuronally-masculinized hermaphrodites (Figure 2A-C) showing both increased sensitivity to pheromone and production of male-like pheromone. The data establish neurons as key regulators of both pheromone production and perception.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "c169c176-66df-4c37-bf3e-4946254b155f",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mating decreases C. elegans male lifespan by approximately 35% in a duration-dependent manner. Lifespan reduction depends on mating duration (1-6 days) but not on the number of hermaphrodite partners or timing within the reproductive period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by systematic mating experiments (Figure 3A-D) testing multiple variables. The data show clear dose-response with mating duration while controlling for partner number and timing, establishing mating duration as the critical variable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "cdbf960f-f4fb-4617-b432-c1a840763885",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mating causes body shrinking in males (10% reduction by day 7), while male pheromone exposure does not induce shrinking, indicating that mating and male pheromone act through distinct pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 are supported by body size measurements (Figure 3E-G) comparing mated males, unmated males, and pheromone-treated males. The differential phenotype (shrinking only in mated males) provides evidence for distinct mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "7cf77b75-f8c1-4d2d-8567-6f78dc3f4116",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Post-mating lifespan decrease is independent of pheromone, as wild-type males mated with pheromone-deficient daf-22 hermaphrodites and daf-22 males mated with wild-type hermaphrodites both show reduced lifespan.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by reciprocal crosses with pheromone-deficient mutants (Figure 4A-B). The persistence of mating effects in the absence of pheromone from either partner establishes pheromone-independence of mating-induced death.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "ef3748fb-8b90-40b8-bee3-fbdebb684667",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Germline activity is required for mating-induced death and shrinking in males. FUdR treatment during mating prevents lifespan reduction, and germline-deficient glp-1 males show neither shrinking nor lifespan decrease after mating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by both pharmacological (FUdR) and genetic (glp-1) experiments (Figure 4C-E). The convergence of approaches blocking germline function and preventing mating phenotypes establishes germline requirement and conservation between sexes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mating induces ectopic expression of vitellogenins in males (normally female-specific genes, 19-fold upregulation), which is germline-dependent and contributes to post-mating death. RNAi knockdown of unc-62, a vitellogenin regulator, rescues mating-induced lifespan reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C40-C45 are supported by microarray data (Figure 4F, Supplementary file 3), GFP reporter expression (Figure 4G), and RNAi rescue experiments (Figure 4H). The combination of expression profiling, reporter validation, FUdR blocking, and functional rescue provides strong mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "af202b76-de6f-4582-8fd3-540e3e53093d",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The transcription factor PQM-1 is required for both mating-induced death and male pheromone-mediated killing. pqm-1 mutant males show no lifespan reduction after mating or pheromone exposure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C54-C55 are supported by lifespan assays with pqm-1 deletion mutants (Figures 4I, 5F) showing resistance to both mating and pheromone effects. The shared requirement suggests PQM-1 as a convergence point, though the pathways remain distinct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "03d33c8b-825b-43a2-91fd-250900d953c7",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mating-induced death and male pheromone-mediated killing utilize distinct molecular mechanisms. Gene expression patterns differ dramatically between conditions (Pearson correlation = -0.06), with vitellogenin upregulation and fat metabolism changes specific to mating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by comparative transcriptome analysis (Figure 5A, Figure 5\u2014figure supplement 1) and metabolic assays (Figures 5B-C). The low correlation and distinct expression signatures provide strong evidence for separate pathways despite shared germline and PQM-1 requirements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "62584fb6-cbe2-4b0c-9dc8-89e1e8509765",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mating causes germline-dependent depletion of both fat (~20%) and glycogen (~30%) stores in males, conserved between sexes. Male pheromone exposure does not affect fat or glycogen levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39, C51-C53 are supported by Oil Red O staining (Figure 5B-C) and glycogen staining (Figure 5D-E, Figure 5\u2014figure supplement 2) comparing mated, unmated, and pheromone-treated animals. The data establish metabolic depletion as mating-specific and conserved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "b239cb34-9d5c-4ed2-962e-fb623edc9277",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mating-induced death is conserved across Caenorhabditis species and does not require progeny production. C. remanei males die early after mating, and C. elegans males die after mating with C. remanei females despite no cross-progeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by cross-species mating experiments (Figure 6A-B). The interspecies mating without progeny production demonstrates that mating itself, not progeny, causes death, supporting the germline activation hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "83206745-25ab-4815-912c-2e8bb5956b8a",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Males and females of gonochoristic Caenorhabditis species (C. remanei, C. brenneri, C. nigoni) are immune to male pheromone killing at both low and high concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60, C63-C64, C84 are supported by systematic testing across three gonochoristic species (Figures 6C-F, 7A-B) at multiple pheromone concentrations. The consistent lack of response across species establishes immunity as a general feature of gonochoristic species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "4de383c0-c4eb-401e-95b6-6946b639a427",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Male pheromone toxicity acts across species based on perception rather than inherent toxicity. C. elegans hermaphrodites die when exposed to C. remanei male pheromone, while C. remanei are immune to both species' pheromones, indicating differential perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62, C87-C88 are supported by cross-species pheromone experiments (Figure 6G) showing C. elegans sensitivity to C. remanei pheromone while C. remanei remain unaffected. This asymmetry supports perception-based rather than toxin-based mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "703fedbc-d8bb-4429-bf77-2b8a5170110a",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Male pheromone-mediated killing is unique to androdioecious Caenorhabditis species. Males from two other androdioecious species (C. briggsae, C. tropicalis) die when exposed to male pheromone, while gonochoristic species are immune.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67, C83 are supported by systematic comparison across five Caenorhabditis species (Figures 7C-D, 6C-F) showing consistent correlation between reproductive mode (androdioecious vs. gonochoristic) and pheromone sensitivity. The pattern across independently-evolved androdioecious species suggests adaptive significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "7ac756b8-027e-4e12-9054-611b1e04882e",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Male pheromone exposure from egg onward specifically reduces male fertility (decreased mating success by day 6 and reduced progeny per successful mating) without affecting hermaphrodite brood size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 are supported by fertility assays (Figure 8B-D, Figure 8\u2014figure supplement 2) showing age-dependent decline in male fertility with pheromone treatment while hermaphrodite reproduction remains unaffected. The sex-specificity supports male-targeted effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "6a18bea3-f329-459f-8f26-91a7835b60dd",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Male pheromone could drive androdioecious populations back to hermaphroditism through male culling. Theoretical modeling suggests male pheromone effects on fertility and lifespan could reduce male frequency over several generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72 and C90 are based on theoretical modeling (Figure 8E) that makes simplified assumptions and does not account for multiple factors acknowledged by the authors. While the model is consistent with experimental observations, it lacks empirical validation of population dynamics and the ~15 generation prediction conflicts with prior experimental observations (~4-7 generations). Additional population-level experiments would be needed to validate this hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "99517884-f110-4e25-ac3d-6956f75d9a65",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Germline-dependent mating-induced death, characterized by shrinking, glycogen loss, and ectopic vitellogenin expression, is conserved between sexes and across species, representing an unavoidable cost of reproduction through germline activation and resource exhaustion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74, C85-C86 synthesize observations across multiple experiments showing conservation of mating phenotypes in both C. elegans sexes and C. remanei. The mechanistic data (germline dependence, metabolic changes, vitellogenin expression) support the resource exhaustion model, though the evolutionary interpretation remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "420735e3-cd83-461f-a58b-b701af20d843",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The germline modulates pheromone levels or quality but is not the site of pheromone production, as germline-less males still produce pheromone with reduced potency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C15 is supported by experiments showing intermediate pheromone effects from germline-less males (Figure 1\u2014figure supplement 1F). The partial effect indicates germline modulation rather than production, though the mechanism remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "e94f3032-fa0d-49b3-9b13-8b604bb2f416",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Males are not attracted to pheromones from neuronally-masculinized hermaphrodites, unlike their normal attraction to aged hermaphrodites, indicating altered pheromone composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by chemotaxis assays (Figure 2B) and prior literature. The differential attraction provides evidence for neuronal control of pheromone composition, supporting the masculinization phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Background claims establishing sex differences in longevity across species, prior work on C. elegans male density-dependent death and female pheromone sensitivity, and the biology of androdioecious species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C76-C80 are background information supported by appropriate citations to prior literature. These establish context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    },
+    {
+      "id": "a392bb92-0719-48ee-9501-53972c0085ed",
+      "content_id": "5c2e1b9a-a977-4dec-a0be-636ed5f43c6d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Androdioecious and gonochoristic species adopt different strategies for competition, mating, and sex ratio maintenance, with differential use of pheromones as toxins versus chemical messengers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is a synthesis of the comparative species data showing different pheromone functions. While supported by the experimental observations, this represents an interpretive conclusion rather than a direct experimental result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:17:13.274290Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6d84c6af-ed13-4c2a-a93e-6a6e008b0427",
+      "result_id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b"
+    },
+    {
+      "claim_id": "27b7ba31-38c2-4993-b1f1-c5a91f4e7e4d",
+      "result_id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b"
+    },
+    {
+      "claim_id": "b7df213e-a16e-48e6-a61b-98ffcb61fe47",
+      "result_id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b"
+    },
+    {
+      "claim_id": "de4cb810-053d-4ee2-8a87-075379d9ab1c",
+      "result_id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b"
+    },
+    {
+      "claim_id": "30f9ecc1-7da5-40f1-9823-b10c75c41b7e",
+      "result_id": "ef4018cb-b75e-466e-ba71-2d2e1698c66b"
+    },
+    {
+      "claim_id": "fe6eeea6-ef85-48d1-a486-b31beed9e166",
+      "result_id": "16797c72-e178-42bb-9bc2-ad2c66c57ea4"
+    },
+    {
+      "claim_id": "753d295b-84ec-4966-a0ed-a9b5914e6108",
+      "result_id": "16797c72-e178-42bb-9bc2-ad2c66c57ea4"
+    },
+    {
+      "claim_id": "4acd46a3-1c09-41b4-908c-5a26d0bd4513",
+      "result_id": "16797c72-e178-42bb-9bc2-ad2c66c57ea4"
+    },
+    {
+      "claim_id": "f86ed774-09b2-416f-ac0a-e870d0f626b7",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "b7ceea9c-84fc-49f7-b2f9-85b674b48b04",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "dd77e065-08ae-48f2-95ea-fdcab751f1c8",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "d046e00d-75f7-47e7-98f9-087e43246980",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "04177fe6-c879-4659-89f2-b59a3a1aafa7",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "be6f3aea-47b9-47c4-85b6-241eeb84d4c6",
+      "result_id": "8195b29c-f1fb-497d-9ab6-f27d269b2e10"
+    },
+    {
+      "claim_id": "4f2c15eb-9bdd-48c0-a7c4-1d87b7fb9498",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "0daece3a-054e-4d12-b357-db594c8342c1",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "27f9595c-b717-47bd-9e70-7b4905ea3bb1",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "3a29582e-339e-474a-8664-f0cd04b0a41f",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "430be405-d9b1-4b4e-b208-7f95afd83879",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "fcf0200f-c497-48ee-9d18-a363179dd7f5",
+      "result_id": "fa475c93-7587-4d85-8671-2bbe73b1dff0"
+    },
+    {
+      "claim_id": "43d8e8df-4c1e-4142-a8b1-ce5a151ecfbd",
+      "result_id": "c169c176-66df-4c37-bf3e-4946254b155f"
+    },
+    {
+      "claim_id": "17f51a7c-3eaf-48b5-9bf5-f0d2ca4189e8",
+      "result_id": "c169c176-66df-4c37-bf3e-4946254b155f"
+    },
+    {
+      "claim_id": "6373f224-929a-4c4c-98c8-c4070e8904eb",
+      "result_id": "c169c176-66df-4c37-bf3e-4946254b155f"
+    },
+    {
+      "claim_id": "37bcbd69-d2d4-4187-a5d6-5876a9e91154",
+      "result_id": "c169c176-66df-4c37-bf3e-4946254b155f"
+    },
+    {
+      "claim_id": "276feac5-28a9-4f6b-bbf8-385359649c39",
+      "result_id": "cdbf960f-f4fb-4617-b432-c1a840763885"
+    },
+    {
+      "claim_id": "ad2e661e-a4d6-4cf7-ba5f-ade4b58cafb0",
+      "result_id": "cdbf960f-f4fb-4617-b432-c1a840763885"
+    },
+    {
+      "claim_id": "32fcb1c2-9b8d-4f0e-9116-4202259b222c",
+      "result_id": "cdbf960f-f4fb-4617-b432-c1a840763885"
+    },
+    {
+      "claim_id": "7c535941-e735-4a6e-9404-3ffcad9c93cc",
+      "result_id": "7cf77b75-f8c1-4d2d-8567-6f78dc3f4116"
+    },
+    {
+      "claim_id": "5c11de99-3ab0-42ad-a3a4-3adcffaa7a73",
+      "result_id": "7cf77b75-f8c1-4d2d-8567-6f78dc3f4116"
+    },
+    {
+      "claim_id": "4fb95f7e-50af-484b-aad9-b4a8830a39eb",
+      "result_id": "7cf77b75-f8c1-4d2d-8567-6f78dc3f4116"
+    },
+    {
+      "claim_id": "6931dd3c-f0d3-4571-9612-f965725a7de4",
+      "result_id": "ef3748fb-8b90-40b8-bee3-fbdebb684667"
+    },
+    {
+      "claim_id": "6b718b65-5867-40a5-9493-87233a242188",
+      "result_id": "ef3748fb-8b90-40b8-bee3-fbdebb684667"
+    },
+    {
+      "claim_id": "fa2048e6-4745-4981-ba20-eb996ae64bc6",
+      "result_id": "ef3748fb-8b90-40b8-bee3-fbdebb684667"
+    },
+    {
+      "claim_id": "e3b2d5e8-6d6b-40a9-9a69-99612c1c650e",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "d8c17c72-5403-4732-88e7-c9d3f68f254c",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "853c197c-6138-4858-813f-b9aaca59a81e",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "5070af0c-8343-405e-b557-34a5bd5b7063",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "54cfc248-c77a-4df7-bc13-f6f86fc98c89",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "53ca32bb-e9c5-4125-89e8-854f3a596f6c",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "ee30384f-dfd1-44e5-94dc-fe1dca122ac9",
+      "result_id": "fd378585-4f18-4f70-abcd-d7f546ca9dd9"
+    },
+    {
+      "claim_id": "8812d7a5-4710-4cae-91d4-dba11056b6f1",
+      "result_id": "af202b76-de6f-4582-8fd3-540e3e53093d"
+    },
+    {
+      "claim_id": "e467d785-0a8b-4c44-8774-56f99ac95eef",
+      "result_id": "af202b76-de6f-4582-8fd3-540e3e53093d"
+    },
+    {
+      "claim_id": "33d85dcf-e4e3-4b90-a47d-dc35dedfcad7",
+      "result_id": "af202b76-de6f-4582-8fd3-540e3e53093d"
+    },
+    {
+      "claim_id": "f03485de-45f6-4cd9-b6a9-593da17d7074",
+      "result_id": "af202b76-de6f-4582-8fd3-540e3e53093d"
+    },
+    {
+      "claim_id": "d7478ad3-2fc4-4bc0-bcc0-7e9cf21b2a4f",
+      "result_id": "03d33c8b-825b-43a2-91fd-250900d953c7"
+    },
+    {
+      "claim_id": "fb2d0866-e102-4d25-a5a5-56fe4d0ba12e",
+      "result_id": "03d33c8b-825b-43a2-91fd-250900d953c7"
+    },
+    {
+      "claim_id": "107fdc41-6c98-4ff7-8109-f54aacdc297c",
+      "result_id": "03d33c8b-825b-43a2-91fd-250900d953c7"
+    },
+    {
+      "claim_id": "08ca85a9-10b7-42f7-929d-f0e15d8f0e06",
+      "result_id": "62584fb6-cbe2-4b0c-9dc8-89e1e8509765"
+    },
+    {
+      "claim_id": "ef06575e-b997-4f43-951a-f7b75012d34a",
+      "result_id": "62584fb6-cbe2-4b0c-9dc8-89e1e8509765"
+    },
+    {
+      "claim_id": "674fbda6-17c3-4d1a-8947-5a73812780f7",
+      "result_id": "62584fb6-cbe2-4b0c-9dc8-89e1e8509765"
+    },
+    {
+      "claim_id": "0c07569a-b60e-48ac-9c70-35fb53e1de52",
+      "result_id": "62584fb6-cbe2-4b0c-9dc8-89e1e8509765"
+    },
+    {
+      "claim_id": "c8a5ddce-fdaa-4374-b0fb-94c7fdff1768",
+      "result_id": "b239cb34-9d5c-4ed2-962e-fb623edc9277"
+    },
+    {
+      "claim_id": "f2699641-a32a-42b2-8c55-8997b97430bd",
+      "result_id": "b239cb34-9d5c-4ed2-962e-fb623edc9277"
+    },
+    {
+      "claim_id": "5644b6fe-d4a9-4762-8142-a71717c553ee",
+      "result_id": "b239cb34-9d5c-4ed2-962e-fb623edc9277"
+    },
+    {
+      "claim_id": "3927a752-fa7d-4237-be69-9b07e410befc",
+      "result_id": "83206745-25ab-4815-912c-2e8bb5956b8a"
+    },
+    {
+      "claim_id": "46ada5b8-2aef-4815-b572-06c15322f081",
+      "result_id": "83206745-25ab-4815-912c-2e8bb5956b8a"
+    },
+    {
+      "claim_id": "e399c5b9-a420-444f-943e-dfd437d61ad4",
+      "result_id": "83206745-25ab-4815-912c-2e8bb5956b8a"
+    },
+    {
+      "claim_id": "da8f7643-a243-4b12-b66f-9a23e043a21b",
+      "result_id": "83206745-25ab-4815-912c-2e8bb5956b8a"
+    },
+    {
+      "claim_id": "b21e1526-c235-46ad-9ce0-96d5dfa4dc31",
+      "result_id": "83206745-25ab-4815-912c-2e8bb5956b8a"
+    },
+    {
+      "claim_id": "4c63abe8-01c4-4cef-bd35-97880419f219",
+      "result_id": "4de383c0-c4eb-401e-95b6-6946b639a427"
+    },
+    {
+      "claim_id": "7d3f7523-3b6c-4e6c-bb61-fc10fc647cf5",
+      "result_id": "4de383c0-c4eb-401e-95b6-6946b639a427"
+    },
+    {
+      "claim_id": "c6b5979f-bb27-4cce-a185-c95c8d6d96d3",
+      "result_id": "4de383c0-c4eb-401e-95b6-6946b639a427"
+    },
+    {
+      "claim_id": "15fd06bb-4d47-46a9-99df-faadfc855daa",
+      "result_id": "4de383c0-c4eb-401e-95b6-6946b639a427"
+    },
+    {
+      "claim_id": "d8deab06-ced8-4a55-83a7-6d183e42fd21",
+      "result_id": "703fedbc-d8bb-4429-bf77-2b8a5170110a"
+    },
+    {
+      "claim_id": "103977ec-0f19-4e22-8a9a-580345e62873",
+      "result_id": "703fedbc-d8bb-4429-bf77-2b8a5170110a"
+    },
+    {
+      "claim_id": "d147cc12-3681-4791-968c-8870c22fb458",
+      "result_id": "703fedbc-d8bb-4429-bf77-2b8a5170110a"
+    },
+    {
+      "claim_id": "368d199f-87b5-432d-9693-1f0acd42f5d9",
+      "result_id": "703fedbc-d8bb-4429-bf77-2b8a5170110a"
+    },
+    {
+      "claim_id": "cba5d316-9d16-4bd1-8279-36451b4b598b",
+      "result_id": "7ac756b8-027e-4e12-9054-611b1e04882e"
+    },
+    {
+      "claim_id": "72547b6a-590c-4e16-aeab-0e52e44c33fd",
+      "result_id": "7ac756b8-027e-4e12-9054-611b1e04882e"
+    },
+    {
+      "claim_id": "0e8ef347-ef46-4373-8486-a6588ab29bb6",
+      "result_id": "7ac756b8-027e-4e12-9054-611b1e04882e"
+    },
+    {
+      "claim_id": "9f1852f3-2e2c-42ac-99ff-1036143e45b6",
+      "result_id": "7ac756b8-027e-4e12-9054-611b1e04882e"
+    },
+    {
+      "claim_id": "4b5177ac-6815-4e15-a370-526f2d762836",
+      "result_id": "6a18bea3-f329-459f-8f26-91a7835b60dd"
+    },
+    {
+      "claim_id": "365355c2-e267-4e1c-abf1-a898c8d1ead8",
+      "result_id": "6a18bea3-f329-459f-8f26-91a7835b60dd"
+    },
+    {
+      "claim_id": "595c7a34-03a2-413b-8e90-80681e0b4db4",
+      "result_id": "99517884-f110-4e25-ac3d-6956f75d9a65"
+    },
+    {
+      "claim_id": "7cf451fe-189b-4829-a0a0-937fffe72327",
+      "result_id": "99517884-f110-4e25-ac3d-6956f75d9a65"
+    },
+    {
+      "claim_id": "623645c9-6e7b-4bb0-ac1f-50d585c9e2cd",
+      "result_id": "99517884-f110-4e25-ac3d-6956f75d9a65"
+    },
+    {
+      "claim_id": "398720db-1095-404c-9651-767e01e716b7",
+      "result_id": "99517884-f110-4e25-ac3d-6956f75d9a65"
+    },
+    {
+      "claim_id": "f009aff8-d455-40d1-8810-28e78d17cf7f",
+      "result_id": "420735e3-cd83-461f-a58b-b701af20d843"
+    },
+    {
+      "claim_id": "e28375ad-3751-49ae-861d-94fcea0b2c3c",
+      "result_id": "e94f3032-fa0d-49b3-9b13-8b604bb2f416"
+    },
+    {
+      "claim_id": "57607485-e28c-4809-a8da-ba69f9b41dc5",
+      "result_id": "e94f3032-fa0d-49b3-9b13-8b604bb2f416"
+    },
+    {
+      "claim_id": "d4cb782f-e94f-4483-b80f-773e24dd2fc2",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "f47882d2-45de-4727-b562-487e0c687070",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "3ff31db4-70e9-465e-977c-d1d54828da50",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "183f07b0-b62e-4061-901f-1737feeb403b",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "deaf4b12-a86d-48ef-bfbe-c35dcdd464ec",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "c4572541-34a7-4f13-9bad-8e0b4408bc91",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "4ab2bb62-34f5-473b-a389-fdbb106a545a",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "71b4ecf8-3b5b-490b-9c0b-31cbb0a9ade6",
+      "result_id": "ac07644f-af5f-4d4c-b707-f70a4d745b0a"
+    },
+    {
+      "claim_id": "5e8e3390-1286-4961-8649-be718ee2f838",
+      "result_id": "a392bb92-0719-48ee-9501-53972c0085ed"
+    }
+  ],
+  "comparisons": []
+}

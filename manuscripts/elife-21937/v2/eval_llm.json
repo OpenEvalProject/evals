@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Bacterial infection of Drosophila females reduces oviposition in a dose-dependent and transient manner. Septic injury with E. coli induces a strong egg-laying drop within 6 hours that is reversible by 24 hours in wild-type flies, with stronger and longer-lasting effects in PGRP-LB mutants. The effect is specific to bacterial presence in the body cavity, not cuticle wounding, and is observed with both septic injury and oral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C25 provide converging evidence from multiple experimental approaches (septic injury, oral infection, dose-response, time course, controls) demonstrating that bacterial infection reduces oviposition. The data include appropriate controls (sterile wound, water injection) and show the effect is specific, dose-dependent, and transient. The phenotype is consistently observed across different infection routes and genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Peptidoglycan (PGN) is the bacterial elicitor that triggers oviposition reduction through NF-\u03baB pathway activation. Injection of purified E. coli PGN phenocopies bacterial infection effects, and mutants for NF-\u03baB pathway components (Relish, Dredd) do not show egg-laying drop. Epistatic analysis demonstrates that PGRP-LE-dependent PGN detection, but not PGRP-LC, is required for the behavioral response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C30 establish PGN as the elicitor through direct injection experiments and genetic epistasis. The use of purified PGN that phenocopies infection, combined with loss-of-function analysis of pathway components, provides strong mechanistic evidence. The differential requirement for PGRP-LE versus PGRP-LC is particularly informative about the intracellular nature of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Bacterial infection causes transient retention of mature oocytes in ovaries rather than preventing oocyte maturation or inducing apoptosis. Six hours post-infection, ovaries contain three-times more mature stage 14 oocytes and fewer immature stage 10 oocytes, with no increase in apoptosis. Feeding behavior is not impaired, indicating the effect is specific to egg release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 characterize the cellular mechanism underlying reduced oviposition through ovary dissection, oocyte staging, apoptosis assays, and feeding behavior controls. The data demonstrate that the phenotype results from blocked egg release rather than reduced oocyte production, apoptosis, or general sickness. The reversibility by 24 hours supports the transient retention model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The PGRP-LB locus generates three isoforms with distinct functions: PGRP-LBPD specifically controls egg-laying behavior while PGRP-LBPC regulates immune responses. Only the PGRP-LBPD isoform, which lacks a signal peptide and likely acts intracellularly in pLB1 cells, can rescue the egg-laying defect. CRISPR-generated PGRP-LBPD-specific mutants phenocopy PGRP-LB null mutants for oviposition but not immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C47 demonstrate isoform-specific functions through rescue experiments, gut immune assays, and CRISPR-generated alleles. The specificity of PGRP-LBPD for behavioral regulation versus PGRP-LBPC for immunity is well-supported by multiple complementary approaches. The genetic separation of these functions is a key finding, though the intracellular localization of PGRP-LBPD remains inferential based on lack of signal peptide.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "IMD pathway activation via PGRP-LE in pLB1 cells is necessary and sufficient for infection-induced oviposition reduction. RNAi-mediated inactivation of Relish, PGRP-LE, or Fadd specifically in pLB1 cells blocks the bacterial effect on egg-laying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 use cell-type-specific RNAi to demonstrate that IMD pathway activity in pLB1 cells is required for the behavioral response. The experiments are well-controlled and the specificity of the pLB1 driver is validated by comparison with other drivers. This establishes the cellular locus of the behavioral regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "pLB1 cells are neurons that control oviposition, and NF-\u03baB pathway activity in these neurons regulates egg-laying behavior. The pLB1 reporter labels neuronal-like fibers in oviducts and projections in the ventral nerve cord and brain. Pan-neuronal expression of PGRP-LBPD or RNAi against IMD components rescues/prevents the oviposition phenotype. Functional manipulation of pLB1 cells with TTX or TRPA1 modulates oviposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 establish the neuronal identity of pLB1 cells through anatomical characterization, pan-neuronal rescue experiments, and functional manipulation with TTX and TRPA1. The convergence of anatomical, genetic, and functional evidence strongly supports that these are neurons controlling egg-laying. The specificity controls (pLB2, pLB3, entero-endocrine drivers) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C85"
+    ],
+    "result": "Bacterial infection modulates egg-laying through NF-\u03baB pathway activation in octopaminergic neurons. The phenotype occurs in both mated and virgin females. Inactivation of pLB1 cells phenocopies octopamine pathway mutants (swollen ovaries with mature oocytes). RNAi against NF-\u03baB components in T\u03b2H-positive cells prevents infection-induced oviposition drop, and PGRP-LBPD expression in octopaminergic neurons rescues the phenotype. Overexpression of T\u03b2H in pLB1 cells rescues PGRP-LB mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C63-C70, C73, C85 identify octopaminergic neurons as the specific neuronal population mediating the behavioral response through multiple complementary approaches: phenotypic similarity to octopamine mutants, cell-type-specific RNAi, isoform-specific rescue in octopaminergic neurons, and T\u03b2H overexpression rescue. The convergence of genetic, anatomical, and functional evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Different PGRP-LB isoforms fine-tune immune and behavioral responses to infection. The secreted PGRP-LBPC isoform dampens immune activation by degrading extracellular PGN, while the putatively intracellular PGRP-LBPD isoform controls PGN effects on oviposition behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C74, C92-C94 synthesize the isoform-specific findings into a model of differential regulation. The evidence from rescue experiments, CRISPR mutants, and functional assays supports the conclusion that distinct isoforms regulate different physiological responses. The model is well-supported though the intracellular localization of PGRP-LBPD remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C91",
+      "C97",
+      "C98"
+    ],
+    "result": "PGN entry into the fly body cavity has dual physiological consequences: activating immune responses in fat body cells and blocking egg delivery in oviducts. The authors propose that flies adapt egg-laying behavior to environmental PGN levels, with PGRP-LB ensuring low PGN levels don't affect egg-laying, while threshold PGN concentrations trigger NF-\u03baB-dependent egg release blockage. This represents a specific behavioral immune response rather than a side effect of energetically expensive immunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79, C91, C97-C98 present an integrative model supported by the experimental findings. The dual activation of immune and behavioral responses by PGN is well-documented. The threshold model and adaptive significance are reasonable interpretations of the data, though some aspects (e.g., the specific threshold, ecological relevance) remain speculative. The distinction from metabolic side effects is supported by the genetic separability of responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The behavioral response to infection is transmitted via the intracytoplasmic PGRP-LE receptor rather than the transmembrane PGRP-LC receptor. PGRP-LE also regulates bacterial responses in some parts of the gut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by the epistasis experiments showing PGRP-LE but not PGRP-LC is required for the behavioral response (Figure 1G). The gut regulation by PGRP-LE is cited from prior work. This differential receptor requirement is a key mechanistic finding distinguishing the behavioral response from canonical immune signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "ILP7-positive and ppk-positive neurons are not required for the infection-induced egg-laying response. Fadd RNAi in these neurons does not prevent egg-laying drop, and SPR overexpression in pLB1 cells does not rescue SPR mutant phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide negative results that help define the specificity of the neuronal populations involved. These controls strengthen the conclusion that octopaminergic neurons, rather than other egg-laying regulatory neurons, mediate the response. The data are clearly presented in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors discuss potential adaptive significance and compare their findings to wasp-induced oviposition depression. They suggest blocking egg production could mobilize resources for immune defense. Unlike wasp-induced long-term oviposition decline with early oocyte apoptosis, PGN effects are transient with late-stage oocyte accumulation, suggesting different mechanisms despite similar outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 present speculative interpretations and comparisons to prior work. The comparison to wasp-induced effects (C81-C82) is appropriately cited and the mechanistic differences are supported by the data (C83). However, the resource mobilization hypothesis (C80) is speculative without direct evidence of metabolic trade-offs or fitness consequences. These remain plausible interpretations requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background on Drosophila innate immunity: Two NF-\u03baB pathways (IMD and Toll) control immune responses, both activated by bacterial peptidoglycan. PGN from Gram-negative bacteria activates IMD via PGRP-LC (transmembrane) and PGRP-LE (intracellular), while Gram-positive PGN activates Toll via PGRP-SA. Drosophila Toll cannot directly bind microbial motifs unlike mammalian TLRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 present established background knowledge appropriately cited from prior literature. These provide necessary context for the current work and are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on behavioral immunity in Drosophila: Flies avoid contaminated food via Geosmin detection, bacterial exposure affects sleep and grooming, and parasite infection increases recombinant offspring production. These represent prior examples of microbe-induced behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 summarize prior work on behavioral immunity in Drosophila, appropriately cited. These provide context for the novelty of the current findings but are not results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Discussion of mechanisms: PGN sensing acts on egg-laying via neuronal modulation through NF-\u03baB in octopaminergic neurons. The authors note that octopaminergic neurons innervate multiple brain regions and reproductive structures. They discuss that NF-\u03baB is required and T\u03b2H overexpression rescues the phenotype, suggesting transcriptional consequences, though alternative post-transcriptional mechanisms are possible based on prior work with Dorsal and PGRP-LC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 synthesize the findings and discuss mechanistic possibilities. The core conclusions (C84-C85, C87-C88) are well-supported by the data. The discussion of anatomical complexity (C86) and alternative mechanisms (C89-C90) appropriately acknowledges limitations and cites relevant prior work. These represent reasonable interpretations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Discussion of PGN effects in mammals: PGN-derived muropeptides have somnogenic effects in rabbits, microbiota-derived PGN can reach distant organs like bones, and bacterial PGN traverses the placenta to affect fetal brain development in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 cite prior mammalian studies to provide comparative context. These are appropriately referenced and suggest potential conservation of PGN-mediated neuromodulation, though they are not findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

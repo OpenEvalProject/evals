@@ -1,0 +1,1331 @@
+{
+  "submission": {
+    "id": "d69e0b0e-b7c3-4d10-9561-a6eab130c1ed",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:35:01.825971Z",
+    "updated_at": "2025-11-30T20:35:01.825971Z"
+  },
+  "content": [
+    {
+      "id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "submission_id": "d69e0b0e-b7c3-4d10-9561-a6eab130c1ed",
+      "content_type": "manuscript",
+      "content_text": "# Serotonin signaling mediates protein valuation and aging\n\n## Authors\n\n- Jennifer Ro<sup>1</sup>\n- Gloria Pak<sup>2</sup>\n- Paige A Malec<sup>3</sup>\n- Yang Lyu<sup>4</sup>\n- David B Allison<sup>6</sup>\n- Robert T Kennedy<sup>3</sup>\n- Scott D Pletcher<sup>1</sup> ([ORCID: 0000-0002-4812-3785](https://orcid.org/0000-0002-4812-3785)) \u2020\n\n### Affiliations\n\n1. Program in Cellular and Molecular Biology University of Michigan Ann Arbor United States\n2. College of Arts and Science University of Michigan Ann Arbor United States\n3. Department of Chemistry University of Michigan Ann Arbor United States\n4. Department of Molecular and Integrative Physiology University of Michigan Ann Arbor United States\n5. Geriatrics Center University of Michigan Ann Arbor United States\n6. Nutrition Obesity Research Center University of Alabama at Birmingham Birmingham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nResearch into how protein restriction improves organismal health and lengthens lifespan has largely focused on cell-autonomous processes. In certain instances, however, nutrient effects on lifespan are independent of consumption, leading us to test the hypothesis that central, cell non-autonomous processes are important protein restriction regulators. We characterized a transient feeding preference for dietary protein after modest starvation in the fruit fly, Drosophila melanogaster, and identified tryptophan hydroxylase (Trh), serotonin receptor 2a (5HT2a), and the solute carrier 7-family amino acid transporter, JhI-21, as required for this preference through their role in establishing protein value. Disruption of any one of these genes increased lifespan up to 90% independent of food intake suggesting the perceived value of dietary protein is a critical determinant of its effect on lifespan. Evolutionarily conserved neuromodulatory systems that define neural states of nutrient demand and reward are therefore sufficient to control aging and physiology independent of food consumption.\n\n## Introduction\n\nThe availability of dietary protein elicits rapid and significant effects on behavior and lifespan across taxa. Availability of specific nutrients, rather than overall caloric value, may be the driving force for this effect under some circumstances, and dietary protein is particularly important (Kamata et al., 2014; Mair et al., 2005; Mayntz et al., 2005). Protein restriction extends lifespan in crickets (Reddiex et al., 2013), flies (Mair et al., 2005), mice (Solon-Biet et al., 2014), and probably humans (Levine et al., 2014). Nearly all research into the mechanisms of this phenomenon has focused on the consequences of amino acid imbalance within cells, mostly through investigation of the TOR pathway and its effectors (Efeyan et al., 2015). Remarkably, however, many of the effects of diet manifest independently of food consumption, likely through global integration of nutrient signals and cell non-autonomous responses to those signals directed by the nervous systems (Linford et al., 2011; Mair et al., 2005; Taylor et al., 2014). Indeed, sensory neurons in Drosophila melanogaster and Caenorhabditis elegans can promote or limit lifespan depending on the specific neurons involved (Alcedo and Kenyon, 2004; Apfeld and Kenyon, 1999; Libert et al., 2007), and the first instance of sensory modulation of lifespan in mice was recently reported (Riera et al., 2014).\n\nInstances in which animals adjust their behavior to emphasize intake of specific nutrients are well-known both in the wild and in the laboratory settings. For example, predatory spiders are known to select their prey depending on predicted\u00a0nutrient composition (Mayntz et al., 2005), spider monkeys tightly regulate daily protein intake in the wild (Felton et al., 2009), and laboratory mice balance their macronutrient intake differently under influence of a drug (Shor-Posner et al., 1986). Changes in behavior of this sort require a dynamic process of context-dependent valuation of nutrients, which almost surely includes an integration of sensory perception of ecological availability and an internal assessment of nutrient demand. State-dependent valuation and how it drives behavior have been studied\u00a0in both invertebrates and vertebrates (Pompilio et al., 2006; Tindell et al., 2006). Context-dependent value of sugars has been established for oviposition preference in Drosophila (Yang et al., 2008), and it is likely that food preference behavior also includes a similar context-dependent signaling process (Ribeiro and Dickson, 2010).\n\nUnfortunately, the molecular mechanisms underlying how animals determine the value of certain nutrients in a context-dependent manner are not well understood. Previous studies have sought an understanding of the neural bases for assessing\u00a0protein and carbohydrate availability (Thibault and Booth, 1999) because, phenotypically, these two macronutrients influence many biological activities, including fat accumulation, reproductive behavior, and lifespan (Lee et al., 2008; Skorupa et al., 2008; Tatar et al., 2014). For a small fraction of these phenotypes, we have some understanding of mechanism. Genetic and neuronal manipulations have identified the biogenic amine, dopamine, as important for oviposition preference for dietary sugars in Drosophila (Yang et al., 2015) and for recognition of the nutritive quality of sugar in mice (de Araujo et al., 2008). A second biogenic amine, serotonin, has been implicated as an indicator of carbohydrate satiety and, less clearly, for influencing protein or lipid feeding. However, these studies are less well-defined and pharmacological approaches have been used. (Johnston, 1992; LeBlanc and Thibault, 2003; Leibowitz and Alexander, 1998; Leibowitz et al., 1993; Magalh\u00e3es et al., 2010). Unlike other biogenic amines serotonin is produced in the brain as well as in peripheral tissues. In many organisms the majority of serotonin is produced in the gastrointestinal track (Gershon et al., 1965), using a distinct synthetic pathway (Neckameyer et al., 2007). Pharmacologic manipulation is, therefore, not sufficient to distinguish peripheral effects from those on central processing, such as satiety, reward, and overall nutrient value.\n\nWe postulated that central mechanisms in the brain that drive cell non-autonomous responses to protein valuation might be important determinants of aging. As described above, there is evidence that organisms forage to balance their intake of specific nutrients rather than merely to meet energetic requirements, and even humans are known to make feeding decisions based on dietary protein (Griffioen-Roose et al., 2011). Although the molecular mechanisms for such choices are not well understood, important components of the process must include the ability to sense protein, to assess the value of protein relative to demand, and to execute behavioral and physiological responses that maintain protein homeostasis. We therefore initially sought insight into mechanisms of short-term behavioral choice in response to protein manipulations, with the expectation that targeting specific components of this mechanism might influence aging through valuation itself, independent of feeding or total nutrient intake. Here, we establish that serotonin signaling in the CNS through one serotonin receptor, receptor 2a, is required for protein preference by determining the\u00a0value of protein at the time of physiological demand. We also provide the first documented functional connection between amino acid transporter, JhI-21, and serotonin signaling in the context of macronutrient selection. We further demonstrate that modulators of protein value also mediate diet-dependent lifespan when animals are exposed to a complex nutrient environment where they are presumably required to continuously evaluate internal nutritional state relative to the availability of individual nutrients in the environment. These results highlight how the macronutrient valuation process itself, in the context of perceived availability and demand, can influence the aging process independent of food consumption.\n\n## Results\n\n### Drosophila develop a preference for protein under mild starvation\n\nWe hypothesized that mechanisms underlying behavioral responses to protein availability would also be important determinants of lifespan and therefore sought first to identify central mechanisms involved in protein-dependent feeding decisions. We characterized a dynamic and transient protein-seeking behavior in Drosophila in response to nutrient demand. Using a new real-time feeding monitoring system called FLIC, which quantifies all contact interactions an individual fly has with food (Ro et al., 2014; http://www.wikiflic.com), we found that after mild starvation both male and female flies preferred a sugar diet supplemented with autolyzed yeast (the major protein source in the fly diet) over a diet composed exclusively of sugar (Figure 1A, 24\u00a0hr starvation). This preference persisted for just over one day, with longer food deprivation increasing protein preference (Figure 1A; Figure 1\u2014figure supplement 1A). On the other hand, fully-fed animals consumed a sugar-only diet more often throughout the experiment (Figure 1A, fully-fed). Food choice was not based on caloric content because starved flies also chose a 1% protein diet over an isocaloric 1% sugar diet and an increase in protein concentration to a hypercaloric 5% did not affect this preference (Figure 1B; Figure 1\u2014figure supplement 1B). The FLIC system identifies every interaction with each food type and quantifies when this occurs and for how long. Using this information we found that total feeding time was a much stronger predictor of total protein feeding time than it was of sugar feeding time (Figure 1\u2014figure supplement 1C). Moreover, flies with more total feeding time were more likely to choose a protein containing food as their first meal and to have a stronger protein preference over the course of the experiment (Figure 1C). These results indicate that individual flies are affected differently by 24\u00a0hr starvation and that those under high nutrient demand (identified by large total feeding time) tend to choose protein as their first meal. These flies also consume greater amounts of protein over the course of the experiment, presumably to ameliorate their deficit. Following mild starvation, flies preferred autolyzed yeast, which is primarily composed of short peptide/single amino acids (Figure 1\u2014figure supplement 1D), to the same extent as a pure complex protein such as bovine serum albumin (BSA) (Figure 1D) over a wide range of concentrations, suggesting that behavioral preference for yeast is driven in whole or in part by its protein content. Twenty-four hour starvation had no detectable effect on internal protein levels (Figure 1E), suggesting that preference was independent of gross protein stores. Protein preference is, therefore, not limited to reproductively active female flies (Ribeiro and Dickson, 2010; Vargas et al., 2010) and is more dynamic than previously suspected.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig1-v1.jpg)\n\n**Figure 1.:** (A) Male and female Canton-S flies' real-time feeding preference over 24\u00a0hr. The choice was given as 2% autolyzed yeast (w/v) +1% sucrose (w/v) vs. 1% sucrose (w/v). Gray shades on the graphs indicate \"light-off\" periods. The size of the symbols is proportional to the number of flies that were feeding during the given time period (fully-fed female flies N=17; fully-fed male flies N=21; starved female flies N=10; starved male flies N=11). A Preference Index (PI) = 1 indicates complete preference for the yeast-containing food. (B) Time-dependent PI plot from flies given a choice between 1% sucrose vs. 1% autolyzed yeast or 1% sucrose vs. 5% autolyzed yeast. Similar yeast preference is observed in both experiments, and in the first experiment the diets are isocaloric. (C) Flies that had increased total food consumption during the choice assay were likely to eat more protein meal. From the continuous FLIC data, we identified, for each fly, its first meal choice (sugar or protein chooser), time spent on protein feeding, and total feeding time at the end of a 30\u00a0min choice experiment. Flies were given a choice between isocaloric 1% sucrose vs 1% autolyzed yeast. Linear regression analysis revealed that total feeding time positively correlated with the protein feeding time (F(1,32)= 173.7, P<1.8E\u221214). (D) 24\u00a0hr-starved female flies' BSA preference was dose-dependent. Bars indicate the mean and the standard error of the mean (SEM). (N= 8\u201314 per each concentration treatment. Letters differentiate groups that are significantly different from one another as determined by Tukey's multiple-comparison at \u03b1=0.05) (E) Quantification of stored nutrient levels in fully-fed or 24\u00a0hr-starved female flies. Flies lost a significant amount of carbohydrate reserves after 24\u00a0hr of starvation. (P values determined by two-way ANOVA, followed by Tukey's multiple-comparison test. ***P\u22640.0001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Protein choice is energy state-dependent. Canton S. females starved for longer periods of time (e.g., 24\u00a0hr vs. 70\u00a0hr) had stronger protein preference (Student\u2019s t-test, **P\u22640.01). (B) Feeding bout PI plot using the same data set shown in Figure 1B. There is no difference in preference when choice is given as 1% sucrose vs. 1% autolyzed yeast or 1% sucrose vs. 5% autolyzed yeast. (C) When given a choice between isocaloric 1% autolyzed yeast vs 1% sucrose choice, 24\u00a0hr-starved Canton S. female flies show modest positive correlation between total feeding time during the choice test and time spent consuming the sugar meal (F(1,32)=17.2, P<2.4E-4). Individual flies' first meal choice did not affect relationship between these correlates. (D) Starved female flies preferred wide concentrations of autolyzed yeast. The choice was given to 24\u00a0hr starved Canton S. female as 1% sucrose vs. 1% sucrose with different concentrations of autolyzed yeast. Bars indicate mean and standard error of mean (SEM). (N=6 per each concentration treatment; one-way ANOVA).\n\n### Serotonin signaling through 5HT2a mediates protein preference\n\nTo identify mechanisms underlying protein-feeding preference, we performed a candidate screen designed to disrupt putative nutrient sensing pathways, sensory systems, and reward circuits (Figure 2A; Supplementary file 1). Among all manipulations, disruption in serotonin signaling repeatedly reduced protein preference in starved flies (Figure 2A blue bars; Supplementary file 1 candidates 63, 65, 67, and 68). Silencing of serotonergic neurons and treatment of flies with a serotonin receptor 2a (5HT2a) antagonist, ketanserin (Colas et al., 1995), eliminated preference entirely, such that starved animals exhibited an aversion to dietary protein that mimicked what we routinely observed from fully-fed, control animals.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig2-v1.jpg)\n\n**Figure 2.:** (A) Summary results from a candidate reverse genetic screen. We found that disruption of serotonin signaling consistently abrogates protein preference (See Supplementary file 1 for listed candidates). We used BSA as the protein source. Blue bars indicate manipulations of serotonin signaling that strongly disrupted protein preference. (B-C) Time-dependent PI plot from 24\u00a0hr-starved Trh mutant and control flies given a choice between sucrose-only or sucrose plus autolyzed yeast or BSA. When the protein source was autolyzed yeast, the cumulative preference index for Canton S files was 0.43 \u00b1 0.1 (Mean \u00b1 SEM) whereas Trh mutant flies was \u22120.18 \u00b1 0.06 (Student's t-test; P\u22640.001). When the protein source was BSA, cumulative PI for Canton S. files was 0 \u00b1 0.1 whereas Trh mutant flies was \u22120.43 \u00b1 0.2 (Student's t-test; P\u22640.05). (D) Time-dependent PI plot from 24\u00a0hr-starved flies with 5HT2aPL00052\u00a0mutant allele and Canton S., control flies given a choice between sucrose-only or sucrose plus BSA. Cumulative PI for the control was 0.2 \u00b1 0.2 and for the mutant was \u22120.21 \u00b1 0.2 (Student's t-test).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A-B) Replicate experiments that serve as companions to Figure 2B. Time-dependent PI plot of control and Trh mutant flies on 1% sucrose vs. 1% sucrose + 2% autolyzed yeast. (C) A replicate experiment that serves as a companion to Figure 2D. Time-dependent PI plot of control and 5HT2aPL00052\u00a0mutant flies on 1% sucrose vs 1% sucrose + BSA. (D) Time-dependent preference plot of flies carrying another mutant allele of 5HT2a (5HT2aMI3299). The preference was abrogated as seen in the other 5HT2a mutant. The choice was given as 1% sucrose vs. 1% sucrose + BSA. (E) Time-dependent PI plot showing protein preference of starved flies heterozygous for 5HT2aPL00052\u00a0and trans-heterozygous for 5HT2aPL00052/ 5HT2aMI3299. The choice was given as 1% sucrose vs 1% sucrose + 2% autolyzed yeast. The protein preference is abrogated in the trans-heterozygote mutants. (F) We genetically knocked-down 5HT2a transcript level in the 5HT2a-positive neurons using 5HT2aMi00459-GAL4> UAS-5HT2a RNAi and tested protein preference of female flies. The choice was given as 2% autolyzed yeast +1% sucrose vs. 1% sucrose. Genotype effect was tested with one-way ANOVA followed by Tukey's multiple comparison (*P\u22640.05).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** We present feeding bout PIs for the same data sets represented in Figure 2B and D into (A) and (B), respectively. Mutation in (A) Trh and (B) 5HT2a suppresses protein preference in early feeding bouts.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Protein preference of three serotonin receptor mutants. We tested 2 mutant alleles for 5HT1a and 5HT1b mutation. We used BSA as a protein source. Individual symbols indicate average PI from three female flies. The choice experiments were conducted using the CAF\u00c9 assay. Boxes denote mean and SEM among biological replicates. Statistical significance for the genotype effect was determined using one-way ANOVA. (B) When given a choice between sweet vs. bitter food, Trh and 5HT2a mutant flies correctly distinguish foods and choose the sweet food like Canton S., control animals. (C) Protein preference of fully-fed Trh and 5HT2a mutant flies is not different than control flies. (N= 9\u201310 per genotype; one-way ANOVA, P>0.05).\n\nWe verified a role for serotonin signaling in protein feeding decisions using additional genetic manipulations. Flies with significantly reduced tryptophan hydroxylase (Trh), a rate-limiting enzyme for neuronal serotonin synthesis (Neckameyer et al., 2007) that is the Drosophila homologue of TPH2, exhibited a reduction in preference for both autolyzed yeast and BSA compared with control animals (Figure 2B,C; Figure 2\u2014figure supplement 1A,B; Figure 2\u2014figure supplement 2A). In Drosophila, there are five known serotonin receptors, each of which is evolutionarily conserved: 5HT1a, 5HT1b, 5HT2a, 5HT2b, and 5HT7 (D. E. Nichols and C. D. Nichols, 2008). We verified a role for 5HT2a by examining flies that carried two independent 5HT2a mutant alleles (Figure 2D, Figure 2\u2014figure supplement 1C,D; Figure 2\u2014figure supplement 2B), flies transheterozygous for each allele (Figure 2\u2014figure supplement 1E), as well as flies with RNAi-mediated knock-down of 5HT2a transcript (Figure 2\u2014figure supplement 1F). All of the 5HT2a manipulations abrogated the preference for protein following mild starvation, effectively recapitulating Trh mutation. Loss of function in three other serotonin receptors (5HT1a, 5HT1b, and 5HT2b; 5HT7 mutant animals were not viable) had no effect on the preference phenotype (Figure 2\u2014figure supplement 3A). Disruption of serotonin signaling did not disrupt other feeding preferences because Trh and 5HT2a mutant flies exhibited expected choice behaviors when presented with sweet vs bitter tastes or sweet vs sweeter food (Figure 2\u2014figure supplement 3B). Furthermore, when fully fed, the feeding behaviors of Trh and 5HT2a mutant flies are not different from control animals (Figure 2\u2014figure supplement 3C).\n\nWe next sought to better understand the temporal dynamics through which serotonin regulates protein preference. To determine whether serotonin signaling is required during starvation and/or during food choice, we selectively inactivated serotonergic neurons (Trh-GAL4>UAS-shits) during specific periods of the experiment. We found that flies retained their preference for dietary protein when serotonergic neurons were inactivated only during the starvation phase. Inactivation only during the choice phase, however, was sufficient to abolish preference and phenocopy the Trh mutant, implying that serotonin may be involved specifically in protein reward after starvation (Figure 3A). Inhibition of serotonin signaling did not alter total food intake during the choice test, demonstrating that the lack of protein preference seen in transgenic flies is not an artifact of reduced feeding (Figure 3\u2014figure supplement 1A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig3-v1.jpg)\n\n**Figure 3.:** (A) Serotonin signaling is required during the choice test to develop protein preference. Flies were placed in either 23\u00b0C or 29\u00b0C during starvation or choice test as noted in the diagram above each plot. The box plots indicate mean and SEM. Statistical significance for genotype effect within each temperature-shift experiment was determined using one-way ANOVA followed by Fisher\u2019s multiple-comparison, N=8\u201311/genotype (*P\u22640.05). (B) Serotonin abundance in the heads of flies following specified diet treatment. Serotonin significantly increased when animals were allowed to refeed on autolyzed yeast or BSA for three hours after 24\u2009hr starvation. Individual symbols represent measures based on 5 female fly heads, and lines denote the mean. Statistical significance for diet effect was determined using one-way ANOVA followed by Tukey\u2019s multiple-comparison; N=7\u201310/treatment (**P\u22640.01, ****P\u22640.0001). (C) Neuronal mRNA abundance of five serotonin receptors. Abundance of 5HT2a transcript acutely increased during 3\u2009hr protein refeeding after starvation. Statistical significance for the treatment effect was determined using one-way ANOVA followed by Tukey\u2019s multiple-comparison (**P\u22640.01). (D) Hyper-activation of serotonergic neurons is sufficient to suppress feeding behavior (left) and induce protein preference even in the absence of starvation (right). We observed feeding behaviors in 7 out of 14 flies during the choice test. Individual symbols indicate measures from single flies, and lines denote the mean value among biological replicates. Flies were fed standard 10% sugar/yeast medium prior to testing. Statistical significance for the genotype effect was determined using one-way ANOVA followed by Tukey's multiple-comparison (*P\u22640.05, ****P\u22640.0001).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) To determine whether silencing serotonergic neurons disrupts normal feeding activity, we calculated the total time that flies spent interacting with the food during putative feeding bouts during the choice test and found no difference between control and test genotypes. Symbols indicate individual flies, and bars indicate mean among biological replicates (one-way ANOVA). (B) Hyperactivation of serotonergic neurons converts sugar-liking flies to protein-likers. A representative time-dependent PI plot of a single fully-fed Trh-GAL4>UAS-dTrpA1 female fly is shown. The choice was given as 2% autolyzed yeast +1% sucrose vs. 1% sucrose. The choice behavior was recorded for approximately 4\u2009hr at 23\u00b0C then temperature was shift to 29\u00b0C (blue and red shades indicate respective temperatures). Mean PI and SEM of 13 individual flies' protein preference before and after serotonin activation is represented in the inset (Student's t-test, *P\u22640.05).\n\nIf serotonin is involved in post-ingestive reward, then protein intake, but not starvation, would be expected to increase serotonin levels in the CNS. Indeed, we observed that serotonin levels in the head were unchanged after starvation but increased 100\u2013200% after flies consumed protein compared with the fully-fed condition (Figure 3B). Because transcriptional regulation of serotonin receptors can directly affect behavioral output (Albert and Fran\u00e7ois, 2010), we examined whether mRNA levels of serotonin receptors were altered in the head of the fly following protein ingestion. Much like the temporal profile of serotonin concentration, we observed an acute increase in the abundance of 5HT2a mRNA, but not transcript from other serotonin receptors, in the heads of flies that were starved of all nutrients and refed with protein for 3\u00a0hr (Figure 3C). 5HT2a mRNA abundance was not affected by starvation alone, and it returned to the level of fully-fed animals after 24\u00a0hr of protein feeding, which is coincident with their loss of feeding preference (e.g., Figure 1A). Together, these results suggest that protein reward and preference are established in a relatively short time (<3\u00a0hr) and regulated by serotonin signaling through 5HT2a.\n\n### Serotonin signaling through 5HT2a establishes the value of dietary protein\n\nWe envisioned at least two ways that serotonin might influence protein reward. First, it may be involved in transducing sensory perception of protein. Second, it may be important for higher-order processing of the value of ingested protein. To distinguish these hypotheses, we hyper-activated serotonergic neurons in fully-fed flies using targeted expression of a heat-sensitive Trp channel (Trh-GAL4>UAS-dTrpA1). If serotonin acts in protein sensing, both foods would be interpreted equally as containing protein, and thus we would expect flies to lack preference in our choice test regardless of their starvation state. In contrast, if serotonin acts to increase the value of consumed protein, we would predict that hyper-activation of serotonergic signaling would add value to protein meals and reinforce protein feeding in the absence of starvation. Although activation of serotonergic neurons suppressed feeding as we expected (Gasque et al., 2013) (Figure 3D left), when fully-fed flies did eat, they showed a near absolute preference for protein-containing food (Figure 3D right; Figure 3\u2014figure supplement 1B). These results support the notion that serotonergic signaling increases the value of dietary protein in an energy-state dependent manner.\n\n### The perceived value of dietary protein modulates lifespan via serotonin signaling\n\nWe hypothesized that serotonin's role in ascribing value to ingested protein may be important for lifespan, given the noted importance of this nutrient in aging (Gallinetti et al., 2012; Mair et al., 2005). Laboratory protocols that are standard in the aging field employ fly diets that consist of sugar and brewer\u2019s yeast, the sole source of dietary protein, combined in an agar medium in fixed ratios. On a standard laboratory diet of low or intermediate yeast content, Trh mutants were long-lived, and loss of 5HT2a did not affect lifespan (Figure 4\u2014figure supplement 1A,B). If serotonin influences aging primarily through the physiological changes in response to the amount of protein consumed, then loss of Trh or 5HT2a would be expected to reduce or eliminate diet-dependent changes in lifespan in fixed-diet conditions (Skorupa et al., 2008). We found that Trh mutant flies responded similarly to control animals, while 5HT2a mutants showed a reduced response, when diet was manipulated in this traditional manner (Figure 4\u2014figure supplement 1A,B).\n\nWhile conventional fixed diets have been used effectively to examine physiology in response to total nutrient availability, we reasoned they would obfuscate serotonin's regulatory effects on aging because the animals would not be able to respond to nutrients individually. Flies on a fixed diet can regulate meal size but not individual nutrient intake, resulting in the possibility that feeding behaviors may be dominated by one nutrient at\u00a0the expense of the other. For example, if the fixed mixture contains a high concentration of a certain nutrient, flies may cease feeding prematurely to prevent overeating that nutrient even if the demand for another is yet to be met. We therefore aged flies in more complex dietary environments where they can freely choose between two distinct food sources. In three control diets flies were provided with either a 10% sucrose-only, 10% yeast-only, or a fixed 10% sucrose/10% yeast diet on both sides of a divider. For the choice environment, flies were provided with 10% sucrose on one side of the divider and 10% yeast on the other, allowing them to freely interact with individual macronutrients (Figure 4\u2014figure supplement 2A).\n\nWe observed striking effects of the choice environment on lifespan and physiology. As expected, control flies were shortest-lived in a sucrose-only diet (Lee et al., 2008; Skorupa et al., 2008). On the other hand, we were surprised to observe that control animals in the choice environment lived substantially shorter than animals maintained in an isocaloric fixed diet or in one consisting of yeast-only (Figure 4A) despite exhibiting equivalent health metrics when young (e.g., Figure 4\u2014figure supplement 2B). Consistent with our observations using standard protocols, Trh mutant flies lived modestly longer than control flies on all control diets (Figure 4A; Sucrose-only, Yeast-only, and Fixed diet), while 5HT2a mutants did not. However, when the flies were aged in the choice environment we observed a near doubling (90% increase) of mean lifespan of both Trh and 5HT2a mutant animals (Figure 4A, Choice diet).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig4-v1.jpg)\n\n**Figure 4.:** (A) Trh mutants live significantly longer than control flies when aged on the fixed diet (log-rank test), as well as on the choice diet (long-rank test). 5HT2a mutants live significantly longer than control flies on the choice diet (log-rank test). Trh mutants also live significantly longer in the sucrose-only and yeast-only diets. (***P\u22640.001, ****P\u22640.0001) (B) The amounts of total food (both fixed and choice diets) and individual nutrients (choice diet only) consumed by Trh and 5HT2a mutant flies were statistically indistinguishable from control flies regardless of the diet environment (two-way ANOVA, all P>0.05).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Trh and 5HT2a mutants showed a modest, but statistically significant, life extension under protein restriction. (B) For mean lifespan, statistical significance was determined by one-way ANOVA followed by Tukey\u2019s multiple-comparison(***P\u22640.001). For diet-dependent survival, significance was determined using log-rank test. Based on cox-regression analysis, we found significant interaction between genotype and diet effect for Trh mutant (P<0.01) and 5HT2a mutant (P<0.05).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) We printed plastic vial dividers using a Form 1+ 3-D printer to retrofit standard 12-well cell culture plates. These were then placed underneath acrylic chambers to create conditions in which aging flies were able to choose from two different feeding wells throughout their lifespan. These wells were then filled with identical (control) or nutrient-specific diets. (B) Analysis of total time taken to reach the top of the chamber in the negative geotaxis assay of Canton S. female flies kept on fixed or choice diets (Mann-Whitney U-test, P>0.05). (C) The high sucrose diet significantly reduces lifespan of control (w1118) flies and flies with mutation in Trh and 5HT2a (log-rank test). (D) Mean lifespan of flies exposed to either sugar-rich or -restricted diets. For mean lifespan, statistical significance was determined by one-way ANOVA followed by Tukey\u2019s multiple-comparison (***P\u22640.001, ****P\u22640.0001). Based on cox-regression analysis, we found significant interaction between genotype and diet effect for Trh mutant (P=1.1E-1) and 5HT2a mutant (P=3.1E-2).\n\nThe dietary choice paradigm influences feeding behaviors but does so equivalently for control and mutant animals. Using an indigestible dye mixed in both food wells we found that all flies consumed more food in the choice environment compared with an isocaloric fixed diet (Figure 4B, left two bar groups). By labeling foods in individual wells we found that most of that increased consumption was due to a boost in sugar feeding (Figure 4B, right two bar groups). The increase in total feeding was unexpected, but the compositional intake is consistent with previous reports (Lee et al., 2008; Maklakov et al., 2008) and with our data (Figure 1A) showing that fed flies, similar to other insects, choose to consume proportionally more carbohydrate than protein. Fixed diets of this composition are associated with high reproductive output and a reduced lifespan (de Araujo et al., 2008; Skorupa et al., 2008).\n\nOne possible explanation for the exceptional longevity of Trh and 5HT2a mutant flies in the complex nutrient environment is behavioral protein restriction or reduction in total food consumption. However, if mutant animals were simply eating less, we would expect to observe a similar degree of life extension in all diets, which we did not (e.g., Figure 4A). More importantly, we found no differences among genotypes in total food consumption in any condition, and in the choice environment, where lifespan extension was greatest, mutant flies consumed a sugar:protein ratio that was statistically indistinguishable from control animals (Figure 4B right two bar groups). We therefore find no evidence that serotonergic modulation of lifespan is due to self-induced diet-restriction.\n\nA second possible explanation is that increased carbohydrate consumption alone causes shorter lifespan and that disruption of serotonin signaling protects animals from this effect. Several lines of evidence make it clear that this is not the case. First, mutant flies show the same extent of increased sugar consumption as control animals in the choice environment (Figure 4B, third bar group). Second, the lifespans of Trh and 5HT2a mutant flies are reduced to a similar extent as control animals when the carbohydrate content of a fixed diet is increased (Figure 4\u2014figure supplement 2C,D), showing that their lifespan is equally or more sensitive to dietary carbohydrate. Third, gross metabolites that are known to be influenced by food intake, including total protein, fat, and carbohydrate abundances (Lee et al., 2008; Skorupa et al., 2008), are strongly increased in the choice environment, and mutant and control animals are similarly affected (Figure 5). It appears, therefore, that Trh and 5HT2a mutant flies are eating the same amount of the same food, and they are processing nutrients similarly to control animals, in both the fixed- and choice-diet regimes. Yet lifespan of the mutant flies is dramatically longer in the complex dietary environment. Based on the roles of serotonin and 5HT2a in the valuation of dietary protein, we propose that the macronutrient valuation process itself is a potent factor that modulates organismal aging independent of food consumption.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig5-v1.jpg)\n\n**Figure 5.:** Box indicates median and 1 SEM with whiskers showing 10\u201390% quantile. Significance of the diet effect within the genotype per metabolite was determined by Tukey's multiple-comparison after two-way ANOVA (*P\u22640.05, ***P\u22640.001, ****P\u22640.0001).\n\n### An amino acid transporter, JhI-21, is required for serotonergic valuation of protein\n\nThe cellular and metabolic processes upstream of serotonin that are required for protein valuation remain to be determined. Sensory perception is likely to be important, but at present, specific amino acid taste receptors have not been identified in Drosophila, although this is an active area of research. Our examination of chemosensory receptors known to affect lifespan failed to reveal effects on protein choice behavior (Supplementary file 1). Furthermore, manipulation of canonical intracellular amino acid sensing, such as RNAi-mediated knocked-down of GCN2 in starved animals (Figure 2A, Supplementary file 1 #23) or suppression of TOR signaling through rapamycin or overexpression of dominant negative RagA in fully-fed animals, had no effect on protein preference (Figure 6\u2014figure supplement 1A,B).\n\nSurprised by the inability of canonical TOR regulators to impact protein preference, we turned our attention to amino acid transporters as possible upstream modulators of serotonin signaling in the context of protein reward. Amino acid transporters may act as general sensors, as well as carriers, of nutrients (Hyde et al., 2003; Nicklin et al., 2009). Solute carrier 7 protein family members are candidates for such a role, and the leucine transporter SLC7A5 is required to initiate amino acid dependent activation of TOR signaling (Taylor, 2014; Verrey et al., 2004). A BLAST analysis comparing vertebrate SLC7A5 to the fly protein database revealed the gene juvenile hormone inducible 21 (JhI-21) as the most likely homolog (see also, Piyankarage et al., 2010). Interestingly, we found that mutation in JhI-21 abolished protein preference in starved flies (Figure 6A; Figure 6\u2014figure supplement 1C,D). We also discovered evidence that JhI-21 acts upstream of serotonin signaling; JhI-21 mutant animals failed to increase neuronal serotonin after 3\u00a0hr of yeast feeding, establishing that it is required for protein-dependent serotonin production (Figure 6B). JhI-21 mutant females exhibited a normal increase in egg production with dietary protein concentration (Figure 6C), and they showed normal feeding in both fixed and choice environments (Figure 6D). Nevertheless, mutation in JhI-21 recapitulated the extended lifespan pattern observed in Trh and 5HT2a mutant flies with a modest (13%) increase in mean lifespan in a fixed-diet condition (Figure 6\u2014figure supplement 1E) and a greater (32%) mean lifespan extension in a choice-diet environment (Figure 6E). These data suggest that the JhI-21 amino acid transporter, and possibly SLC7 protein family members in general, are conserved regulators of protein-dependent behavior and physiology and that they may function together with serotonin signaling to modulate aging independently of mechanisms that regulate reproduction and total food intake.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig6-v1.jpg)\n\n**Figure 6.:** (A)\u00a0Time-dependent protein preference of flies with mutation in one of the Drosophila SLC7A5 proteins, JhI-21. Mutation in JhI-21, abolished protein preference. The choice was given as 1% sucrose vs 1% sucrose+ 2% autolyzed yeast. Cumulative preference index for Canton S files was 0.6 \u00b1 0.08 whereas JhI-21 mutant flies was \u22120.02 \u00b1 0.1 (Student's t-test; P\u22640.001). (B) Serotonin abundance in the heads of JhI-21 mutant flies after specified diet treatments. There was no change in serotonin abundance following 24\u00a0hr starvation or 3\u00a0hr of autolyzed yeast refeeding after starvation. Individual symbols represent measures based on 10 female fly heads, and lines denote the mean (one-way ANOVA; N=5 biological replicates/treatment). (C) JhI-21 mutant flies increase reproductive output normally as concentration of dietary protein increases. (D) JhI-21 mutant flies consume the same amount of sucrose and yeast as control flies regardless of the diet environment (two-way ANOVA). (E) Survivorship of JhI-21 mutants aged on the choice diet. Mutants live significantly longer in these conditions compared with the control flies (log-rank test).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16843/elife-16843-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** We tested the effect of down-regulation of TOR signaling on protein preference in fully-fed flies in the FLIC assay by (A) treating flies with Rapamycin, or (B) overexpressing a dominant negative form of RagA. We used autolyzed yeast as the protein source in these experiments. Down-regulation of TOR signaling using either manipulation was not sufficient to mimic starvation and induce protein preference in fully-fed animals. A replicate experiment to Figure 6A. Time-dependent PI plot of control and JhI-21 mutants in 1% sucrose vs 1% sucrose + 2% autolyzed yeast. (D) Feeding bout PI plot using the same data set shown in Figure 6D. JhI-21 mutants do not show any preference to the protein food throughout of their feeding bouts. (E) JhI-21 mutants live significantly (13% ) longer than control flies when aged on a fixed 10% sugar and yeast (w/v) diet (log-rank test).\n\n## Discussion\n\nWe used a newly designed continuous feeding monitor (FLIC) and a novel dietary paradigm to show that in the fruit fly, Drosophila melanogaster, serotonin signaling is part of a reward circuit that is important during meal choice for assessing the value of ingested protein and inducing changes in behavior and aging. We used genetic tools that are specific to serotonergic synthesis in the CNS (Trh-GAL4; Daubert et al., 2010) and loss-of-function mutants for Trh itself (Neckameyer et al., 2007) and 5HT2a (Nichols, 2007) to reveal significant spatial specificity of serotonin signaling in the brain for these effects. Based on immunostaining of adult Drosophila, Trh is found in 83 neurons per hemisphere of the brain (Bao et al., 2010), and 5HT2a is concentrated in small groups of glomeruli such as the ellipsoid body, large field R-neurons, antennal lobe, and a subset of gustatory neurons in the suboesophageal ganglion (Nichols, 2007). Moreover, by combining temporal neuronal manipulations with continuous feeding measures we were able to provide, for the first time, evidence that serotonin is acting acutely during the post-ingestive phase to drive behavioral and health outcomes. Mammalian studies have implicated some component of serotonin signaling in feeding regulation and nutrient balance, but these studies have been limited by the lack of spatial and temporal resolution inherent in pharmacological treatments and the technical difficulties of manipulating individual neurons or serotonin receptors. (Anonymous, 1992; Johnston, 1992; LeBlanc and Thibault, 2003; Leibowitz et al., 1993; Leibowitz and Alexander, 1998; Leibowitz et al., 1989; Magalh\u00e3es et al., 2010; Vargas et al., 2010).\n\nOur results implicate nutrient valuation as another component of a central homeostatic system that perceives and evaluations nutrient availability to drive behavior and aging. Nutrient homeostasis includes a dynamic process of context-dependent valuation of nutrients, which entails an integration of sensory perception of ecological availability and an internal assessment of nutrient demand. Among such cell non-autonomous mechanisms, sensory perception of nutrients, independent of feeding, is known to modulate aging in several species (Libert et al., 2007; Smith et al., 2008). This hypothesis begs the questions of whether and how sensory perception influences general serotonin signaling and the specific behavioral and aging effects that we describe. Our discoveries that the SLC7A5 homolog, JhI-21, is required for normal serotonin release following protein feeding and that loss of function in this gene increases lifespan suggest that peripherally expressed amino acid transporters play important roles in a putative central nutrient homeostatic system. In mice, a lysosomal amino acid transporter has been shown to communicate luminal amino acid levels to the canonical cellular amino acid sensor, TOR (Attardo et al., 2006; Wang et al., 2015). In Drosophila, an insect glycine transporter, Slimfast, together with certain solute carrier 6 family members are critical for organismal growth (Colombani et al., 2003; Goberdhan et al., 2005), and several orphan Drosophila amino acid transporters in adipocytes regulate ovarian stem cell number (Armstrong et al., 2014). In light of these studies, it is compelling to consider a potential amino acid sensing function of JhI-21 and to investigate its temporal and special expression. This may serve as a model to understand how information on nutrient availability and demand is relayed from key peripheral tissues to the CNS to stimulate appropriate behavioral and physiological responses.\n\nWhile mutations in Trh or 5HT2a lead to altered dietary choice following short-term starvation, we find no evidence that they influence long-term, ad libitum feeding patterns in which flies are long-lived. We believe that these seemingly contradictory results instead indicate complex dynamics of nutrient demand and reward that may be occurring continuously in natural conditions. Despite plentiful food, it is likely that at any given time individual flies comprise a spectrum of protein demand states based on their recent history of feeding. Indeed, there is some indication of this in our long-term FLIC data (Figure 1A), which suggest the possibility of a cycling between protein and sugar preference throughout a 24\u2009hr period. This is what might be expected were flies to be switching between foods to balance intake of protein and carbohydrate over time. Our mild starvation treatment would be expected to both enhance protein demand and synchronize this demand among flies, leading to a sensitized assay for protein preference at the population level. Tracer methods are unable to capture such dynamics and thus make it currently a technical challenge to understand these subtle differences in long-term ad libitum feeding patterns under conditions used for aging assays. Nonetheless, it is noteworthy that the beneficial effects of reduced serotonin signaling for lifespan become magnified when animals are asked to actively balance their nutrients in choice-diet conditions.\n\nThe choice diet presents an interesting environment in which to study mechanisms of aging in Drosophila. That the decision-making processes involved in nutrient balance have long-term effects on health and aging is, perhaps, not surprising when considering that such decisions reach beyond immediate fulfillment of nutritional demand. Studies of choice behavior have revealed interesting insights into the effect of dietary self-selection and different life history traits (Jensen et al., 2015; Maklakov et al., 2008). However, incorporating such natural behaviors into aging studies is rare, and our work provides the first mechanistic insight into their influence. In our experiments, we presented the two macronutrients (carbohydrate and protein) as a choice, expecting this to ameliorate a situation where the animals are forced to ingest excess of a certain nutrient to obtain minimal levels of another (Simpson and Raubenheimer, 2007) or where the animals prematurely cease feeding to prevent such excess ingestion at the expense of remaining deficient. Interestingly, young flies appear healthier in the choice diet, with greater protein and TAG abundances and more robust behavioral abilities, including negative geotaxis. These functions deteriorate more rapidly in the choice diet, however, which is consistent with more rapid aging. While the subtleties of the choice environment remain to be elucidated, it is remarkable to note that not only nutrient availability but also nutrient presentation is important, independent of how much of each are consumed. If one accepts this premise, then it is reasonable to consider this environment as a more appropriate husbandry paradigm that better mimics conditions in nature or in human societies where individuals often seek out specific nutrients to satisfy short-term cravings.\n\nFinally, our findings suggest that, even in simple organisms, the brain continuously evaluates key biological states, including nutrient demand and reward, and actively employs simple decision-making processes to affect behavior and physiology and to modulate survival. This is consistent with reports showing that specific genetic and environmental manipulations, such as dietary restriction (Good and Tatar, 2001; Mair et al., 2003; Smith et al., 2008), insulin signaling (Giannakou et al., 2007) and mate availability (Gendron et al., 2014; Maures et al., 2014) rapidly and reversibly affect mortality rates, often within hours or days. It is also notable that the same neural circuits that evaluate internal and external nutritional status to determine what and when to eat also interact with major hormone axes known to influence aging, such as insulin-like and TGF\u03b2 signaling (Domingos et al., 2011; You et al., 2008). Aging therefore has\u00a0characteristics that resemble a complex behavior that is acutely malleable, susceptible to sensory influences, and strictly controlled by coordinated sets of neurons.\n\n## Materials and methods\n\n### Fly stocks\n\nThe following stocks were obtained from Bloomington Stock center; Canton S. (RRID:FlyBase_FBst1000081), w1118, Trhc1440 (Neckameyer et al., 2007; RRID:BDSC_10531), 5HT2aPL00052 (Nichols, 2007; RRID:BDSC_19367), JhI-21GE15185 (Jin et al., 2008; RRID:BDSC_26889), CCKLR-17D1MB02688\u00a0(RRID:BDSC_23482), Ir64aMB05283 (RRID:BDSC_24610), S6KIIG1845 (RRID:BDSC_32601), P{TRiP.GL00267}attP2 (RRID:BDSC_35355), Gr64fMB12243 (RRID:BDSC_27883), Gr66a\u220683 (RRID:BDSC_35528), Gr93a3 (RRID:BDSC_27592), DopR1attp. For RNAi-mediated knock-down of 5HT2a we used P{KK110704}VIE-260B from Vienna Drosophila Resource Center. UAS-dTrpA1\u00a0(Hamada et al., 2008), UAS-shits1 (Kitamoto, 2001; RRID:BDSC_44222), Trh-GAL4 (Daubert et al., 2010), S6KII ign-\u220658\u20131, 4EBP\u2206, ppk28\u2206, Chico, dFoxO\u220694 (RRID:BDSC_42220), NPFRc01896 (RRID:BDSC_10747), Orco2 (RRID:BDSC_23130), Gr5a\u22065, Gr32a were gift from P. Garrity (Brandeis University, Waltham, MA), T.\u00a0Kitamoto (U of Iowa, Iowa city, IA), B.G. Condron (U of Virginia, Charlottville, VA), R. Jackson (Tufts University, Boston, MA), R.J. Wessells (Wayne State University, Detroit, MI), K. Scott (U of California Berkeley, Berkeley, CA), L. Partridge (U college of London, London, UK), S. Waddell (U of Oxford, Oxford, UK), L. Vosshall (The Rockefeller University, New York city, NY), J. Carlson (Yale University, New Haven, NJ), and H. Amrein (Texas A&M, College Station, TX), respectively. All 5HT receptor mutants (5HT1aMB9812, 5HT1aMB9978 (RRID:BDSC_27820), 5HT1bMB5181 (RRID:BDSC_24240), 5HT1bMB5999, 5HT2bMB0650 (RRID:BDSC_40810), 5HT2aMi3299 (RRID:BDSC_37177), 5HT2aMI00459-GAL4)were gifts from H. Dierick (Baylor College of Medicine, Houston, TX). G.W. Roman shared Tdc2-GAL4 (RRID:BDSC_9313) and Th-GAL4 as gifts. A novel Ast-C deletion alleles was created using a FLP-FRT recombination mediated strategy described previously (Parks et al., 2004) using d00174 and f00146 (Harvard-Exelixis stock center). Trhc1440, 5HT2aPL00052, and JhI-21GE15185\u00a0mutants were backcrossed at least 8 generations to w1118 prior to any followed up experiments after the candidate screens.\n\n### Husbandry\n\nAll fly stocks were maintained on a standard cornmeal-based larval growth medium and in a controlled environment (25\u00b0C, 60% humidity) with a 12 Light: 12 dark cycles. If flies contained temperature-sensitive transgenes, they were reared in 23\u00b0C and maintained at this temperature as adults until the experiments. We controlled the developmental larval density by manually aliquoting 32\u03bcL of collected eggs into individual bottles containing 25\u00a0ml of food. (Linford et al., 2013) Following eclosion, mixed sex flies were kept on SY10% medium for 4\u201310 days until they were used for experiments. Unless otherwise noted, we used mated female flies that were between 5\u201314 days old for the choice experiments. When starvation was required for the feeding assay, we used 1% agar medium to deprive food but prevent dehydration.\n\n### Food intake and choice measurements using the CAFE assay\n\nWe used a modified CAFE assay (Ja et al., 2007) to measure food intake or food choice as described previously (Ro et al., 2014). All choice experiments using the CAFE assay lasted 3\u00a0hr in 25\u00b0C, 60% relative humidity, and uniform lighting. The Preference Index (PI) was calculated as \u2018\u2018[(Volume of protein+sugar consumed/fly)-(Volume of sugar consumed/fly)]/ [Total volume of food consumed/fly]\u2019\u2019. We used either 45\u00a0mg/ml bovine albumin serum (BSA; Fisher Scientific) or autolyzed yeast (Bacto yeast extract, BD) as protein sources and 1% sucrose as sugar in the choice experiments. The candidate screen was done using the CAFE assay and BSA as a protein source. For the screen, we added 10\u20135.5\u00a0\u00b5M of denatonium benzoate (Sigma-Aldrich) in the protein-supplemented food to reduce the frequency of false positives.\n\n### Food Choice measurement using the FLIC assay\n\nDetails of the feeding experiments using the Fly Liquid-food Interaction Counter (FLIC) system can be found in (Ro et al., 2014) and wikiflic.com. Briefly, we filled one side of the food trough with a 1% sucrose+ protein solution and the other trough with a solution of 1% sucrose-only. To avoid positional bias, we alternated the side of each food type across different Drosophila feeding monitors (DFMs). After loading the foods, we introduced an individual fly into each behavioral arena using an aspirator. We began the FLIC monitor software (V. 2.0\u20132.1) before flies were loaded to ensure that no feeding signals were lost during the fly-loading time. Unless otherwise noted, choice experiments lasted 3\u00a0hr. A Cumulative PI of an individual was calculated as \u2018\u2018[(Total feeding interaction time on protein+sucrose) - (Total feeding interaction time on sucrose)]/Total feeding interaction time\u2019\u2019. We computed a time-dependent feeding PI from an individual fly by calculating fixed feeding PI within a 30\u00a0min time-window every 10\u2009min. Flies that did not generate any feeding signals in a given 30\u00a0min window were treated as missing data for that period. Average time-dependent PI values and their SEM across biological replicates were therefore calculated based only on flies that exhibited at least one feeding event during the period in question. Initial characterization of the protein feeding behavior when starved and fully-fed were determined by the FLIC system as well as all subsequent follow-up experiments after the candidate screen.\n\nFeeding bout preference index (PI) was used to calculate the PI over a defined number of feeding bouts (contrary to a defined time interval as reflected in the time-dependent PI). This measure permits comparing the food preference within the same number of feeding bouts across different genotypes or treatment groups regardless of when the feeding occurred, hence removing variability in feeding times across individuals (e.g., have removing differences between \u2018slow-eaters\u2019 and \u2018fast-eaters\u2019). We calculated the Feeding bout PI as\u2019 [(Feeding interaction time on protein+sucrose during x number of feeding bouts) - (Feeding interaction time on sucrose during x number of feeding bouts)]/Total feeding interaction time during x number of feeding bouts\u201d. Feeding bout PI were calculated for every subsequent 5 or 10 feeding bouts as noted in the relevant figures.\n\n### Total food intake measurement using tracer dye\n\nFifteen day old, age-matched female flies were kept on SY10% food, then transferred to test foods mixed with 0.5% blue dye (FD&C Blue no. 1; Spectrum Chemical). We let flies feed on dyed food between 4pm till 1\u00a0am the next day (8\u00a0hr), capturing one period of 'light-off' when flies normally consuming more than half of their daily food intake (Ro et al., 2014). We then froze flies at \u221220\u00b0C to stop the feeding experiment and homogenized flies in 150\u2009\u03bcL PBS + 0.1% Triton X-100 (IBI Scientific). Homogenates were centrifuged at 3,750 \u00d7 g for 10\u2009min to settle debris, filtered through a 0.4\u00a0\u00b5m filter, and read absorbance at 630 \u03bb, with 670 \u03bb as a reference wavelength. Absorbance values from 670 \u03bb readings were subtracted from 630 \u03bb readings to correct for background from fly homogenate. For measuring flies' proportional food intake within a choice environment, we had three diet groups where we dyed either 10% sucrose only, or 10% yeast only, or both. We used 10 female flies per sample and 8 biological replicates per genotype and treatment group.\n\n### Quantification of protein, fat, and carbohydrate from fly homogenates\n\nFor quantifying total protein, fat, and carbohydrates from fly homogenates, we froze flies after experimental treatment at \u221220\u00b0C, then homogenized in groups of five in 500\u2009\u03bcL PBS + 0.1% Triton X-100 (IBI Scientific). Samples were centrifuged at 3,750 \u00d7 g for 1\u2009min to settle debris. All measurements were based on colorimetric assays that were carried out using a Synergy2 plate reader (BioTek). For triacylglyceride (TAG) measurement, 5\u2009\u03bcL homogenate was mixed with 150\u2009\u03bcL of 37\u00b0C Infinity Triglycerides reagent (Thermo Scientific) and incubated at 37\u00b0C for 10\u00a0min. Absorbance was measured at 520 \u03bb. A serial dilution of 2\u00a0mg/mL glycerol was used as a standard. For glucose+trehelose measurement, we mixed 10\u2009\u03bcL of homogenate with 100\u2009\u03bcL of 37\u00b0C Infinity Glucose reagent (Thermo Scientific), followed by 30\u2009min incubation at 37\u00b0C. Absorbance was measured at 340 \u03bb. We created a calibration curve from 2\u00a0mg/mL glucose standard. For glycogen measurement, we followed the same protocol as the glucose+trehelose measurement, except that we used 10\u2009\u03bcL of homogenates that were treated with 0.5\u2009\u03bcL of amyloglucosidase (0.1U/\u03bcL), an enzyme that breaks glycogen down to glucose, for 30\u00a0min at 37\u00b0C. We then subtracted total free-glucose concentrations that were obtained from the initial glucose measurements to compute concentrations of glycogen. For protein measurement, 2\u2009\u03bcL of fly homogenate was incubated with 200\u2009\u03bcL of (1:50) 4% (w/v) cupric sulfate/BCA Solution (Novagen) at room temperature for 30\u00a0min. Absorbance was measured at 562\u03bb. A serial dilution of 2\u00a0mg/mL BSA standard were used to construct the calibration curve. For assessing nutrient stores in fully-fed or starved flies we used 10 female files per sample and 10 biological replicates. For assessing metabolites in flies between fixed and choice-diet conditions, we aged 8-day-old female flies in respective diet conditions for 8 days (6 biological replicates).\n\n### Quantification of serotonin using UPLC-MS\n\n#### Sample preparation for the UPLC-MS\n\nTo extract serotonin and its related metabolites, female flies were snap frozen in liquid nitrogen and then vigorously vortexted to remove heads. The heads were then homogenized with ice-cold 3x volume of acetonitrile (we assumed a single head is equal to 1\u00a0\u00b5L) using a pestle grinder. We centrifuged the homogenates at 18,000 x g for 5\u2009min and collected the organic phase as a tissue extract. To derivatize our samples prior to the UPLC-MS analysis, 12 \u00b5L of each tissue extract sample were benzoylated by the sequential addition of 6 \u00b5L of carbonate buffer (sodium carbonate, 100\u2009mM), 6 \u00b5L of benzoyl chloride (2% in acetonitrile, v/v), and 6 \u00b5L of an internal standard solution (1% H2SO4 in 20% acetonitrile, v/v) (Song et al., 2012). Internal standards contained analytes that had been labeled with C13-benzoyl chloride.\n\n#### Liquid chromatography\n\nTo separate analytes, we used a Waters nanoAcquity UPLC system fitted with an Acquity HSS T3 C18 column (1\u2009\u00d7 100\u2009mm, 1.8 \u00b5m, 100\u2009\u00c5 pore size). Mobile phase A was 10\u2009mM ammonium formate with 0.15% (v/v) formic acid in water. Mobile phase B was acetonitrile. The gradient used was: initial, 0% B; 0.01\u2009min, 17% B; 0.5\u2009min, 17% B; 3\u2009min, 25% B; 3.3\u2009min, 56% B; 4.99\u2009min, 70% B; 5\u2009min, 100% B; 6.5\u2009min; 100% B; 6.51\u2009min, 0% B; 8.5\u2009min, 0% B. We used a total flow rate of 100 \u00b5L/min and 5 \u00b5L of sample injection in partial loop injection mode. The auto-sampler was kept at ambient temperature whereas the column was held at 27\u00b0C.\n\n#### Mass spectrometry\n\nAn Agilent 6410 triple quadrupole mass spectrometer was used for analyte detection. We used electrospray ionization in positive mode at 4 kV. The gas temperature was 350\u00b0C, gas flow was 11\u2009L/min, and the nebulizer was at 15 psi. Benzoylated 5HT was detected by tandem mass spectrometry at a precursor mass to charge ratio (m/z) of 385 and product m/z of 264 using a fragmenter voltage of 140, collision energy of 20 V, and accelerator voltage of 4 CAV. C13-labeled internal standard was detected the same except percusor m/z was 397 and product m/z was 270. After the MS analysis, we performed automated peak integration Agilent MassHunter Workstation Quantitative Analysis for QQQ, version B.05.00. All peaks were visually inspected to ensure proper integration. We used 0.5\u2013100 nM synthetic serotonin (5HT; Sigma) diluted in water as a standard to construct a calibration curve. The standard curve was prepared based on the peak area ratio of the standard to the internal standard by linear regression. Below is the detail setting and retention time (RT) for analytes.\n\n### RNA extraction and quantitative PCR\n\nFor serotonin receptor mRNA expression analysis, the heads of flies were removed following diet treatments and then frozen at \u221280\u00b0C. We then extracted RNA using TRIzol reagent (Invitrogen) following the manufacturer\u2019s protocol. We diluted extracted RNA samples with RNase-free water to an equal concentration and then performed RT-PCR using SuperScript III First Strand cDNA Synthesis (Invitrogen) to generate cDNA. Real-time PCR analysis used Power SYBR Green PCR Master Mix and a StepOne Plus Real-time PCR system (Applied Biosystems). We pulled heads from 50 females per sample and had 3 biological replicates per treatment group.\n\nWe used following primers:\n\n5HT1a_F: AATAATCAGCCGGACGGAGG\n\n5HT1a_R: GGTGTTGACCGTGTTCGTTG\n\n5HT1b_F: CAGCGATGCGGATGATTA\n\n5HT1b_R: CGAGGCTATCAGATGGTGCT\n\n5HT2a_F: GGCTCGAGGCATCGATCTAC\n\n5HT2a_R: ACGCATATGTTAGGCTCGGG\n\n5HT2b_F: ACTCCAAGAATCACGCCTCG\n\n5HT2b_R: TCGGACGGTCAGGCAATATG\n\n5HT7_F: TTTTGTGCGACACTTGCCAC\n\n5HT7_R: TTCAGCGCGTTTACTGGGT\n\nRP49_F: ACTCAATGGATACTGCCAG\n\nRP49_R: CAAGGTGTCCCACTAATGCAT\n\n### Negative geotaxis assay\n\nAdult female Canton S. female flies prepared and collected as previously described (Linford et al., 2013) and then subsequently maintained on either on fixed or choice diets for 10 days. Flies were then transferred to the negative geotaxis apparatus using brief CO2 anesthesia, after which they were allowed to recover for 30\u00a0min. We used an automated process in which flies were automatically dropped from 24\u201d. After freefall, which effectively knocked the flies to the bottom of the chamber, a video camera was triggered and individual fly movements were tracked for 10\u00a0sec using the DDrop software developed in our laboratory. From the tracking data we were able to calculate, for each female, the total distance traveled as well as the time required to reach the top of the chamber. We present the time (in seconds) required to reach the top of the chamber, which is highly correlated with total distance traveled.\n\n### Survival analysis\n\nFlies were prepared for survival experiments as previously described (Linford et al., 2013), with a slight modification. Briefly, 2\u20133 day old adult female flies were transferred onto test food medium. For each genotype per treatment, we put 25 flies per vial with 8\u201310 vial replicates. Flies were transferred to new food three times per week at which time survival was recorded and dead flies removed. For the protein-restriction experiment, we used a fixed mixture of 5% sucrose + 5% yeast as the protein-restricted diet, and a fixed mixture of 5% sucrose +15% yeast as the high protein diet. For the lifespan experiments comparing 'Fixed food' vs 'Choice food' environments, we created inserts that fit into individual vials. These inserts allowed us to expose the flies to two separate sources of food simultaneously. For these experiments we either loaded the same foods on both sides (no choice diets) or a different food on each side (choice diet). Specifically, the no choice diets contained either 10% sucrose in each well, 10% yeast in each well, or a fixed mixture of 10% yeast and 10% sucrose in each well. The choice diet entailed 10% sucrose on one side of the insert and 10% yeast on the other side of the insert. To test effects of a sugar-rich diet on longevity, we provided flies a fixed mixture of 30% sucrose + 5% yeast as the sugar-rich food, or a fixed mixture of 5% sucrose + 5% yeast as the sugar-restricted food.\n\n### Egg laying assay\n\nSeven day old female and male flies that were kept on SY10% food since eclosion and were transferred to five different egg laying media: 10% sucrose mixed with either 1%, 2.5%, 5%, 10%, or 20% yeast. We provided fresh medium every 24\u00a0hr for 4 days and counted the number of eggs laid each day. We reported the eggs laid on 4th day when control flies' reproductive output was fully equilibrated to the concentration of dietary protein. We measured 8 biological replicate per genotype and treatment group.\n\n### Statistics\n\nFor Cumulative PIs between two genotypes, we used Student's t-test. For comparison involving food preference, gene expression, metabolite amount, serotonin amount, and food consumption with more than two genotypes or treatment groups, we performed one-way ANOVA followed by post-hoc significance test. We took linear regression approach to model the relationship between time spent feeding on either protein or sugar as dependent variable of total feeding time. To test the effects of diet and genotype in flies' food intake of the fixed vs choice diets, we used Two-way ANOVA. Unless otherwise indicated, pairwise comparisons between different treatment survivorship curves were carried out using the statistical package R with DLife, a survival analysis package developed in the Pletcher Laboratory (Linford et al., 2013). P\u2010values for survivorship comparisons were obtained using log\u2010rank test. For testing interaction between genotypes and diets, we used cox-regression analysis to report P-value for the interaction term. In all cases, two\u2010tailed P\u2010values are reported. We also calculated P-values for aging experiments using a mixed effects modeling approach where standard linear models were applied using survival time as an outcome and vial within genotype as a random effect. In all cases, the P-values for the genotype effect on mean lifespan was significantly lower than we obtained using non-parametric log-rank statistics. Therefore, for all analyses, we report the P-values from the log-rank analyses because they are more conservative. To test for a diet effect on negative geotaxis, we used Mann-Whitney U-test.\n",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7b100c6c-5976-4893-a123-f09e06c18735",
+      "submission_id": "d69e0b0e-b7c3-4d10-9561-a6eab130c1ed",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew Dillin, Howard Hughes Medical Institute, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16843.019](https://doi.org/10.7554/eLife.16843.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Serotonin signaling mediates protein valuation and aging\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Andrew Dillin, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individuals involved in the review of your submission have agreed to reveal their identity: Andrew Dillin (Reviewing Editor and Reviewer #1), William Mair (Reviewer #2) and Michael Petrascheck (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this body of work the authors investigate whether there is an intersection between food choice (sugar vs. protein) and aging. Using a novel assay developed in the lab that monitors contact of flies with food they can accurately measure how long and how much a fly \"chooses\" a certain type of food. Using this assay, after a brief starvation, the group finds that protein rich diets are preferred. Asking how this is perceived, the group goes through a battery of sensory-type mutants and find that serotonin synthesis is essential for this process. They go on to find that only 1 of the 5 serotonin receptors is required (which is very, very interesting) and can recreate the mutant phenotypes with drug inhibitors. Although not entirely clear to the non-fly person, they find that a juvenile hormone receptor mutant also blocks this response and appears to act upstream of serotonin (at least transcriptionally). The group goes onto to ask the temporal ordering of serotonin in the response and also find a key link to longevity.\n\nIn summary, the work is very well presented and extremely novel. However, all three reviewers feel that the introduction to the juvenile hormone part needs more background and reasoning. All three reviewers are concerned about sample size and given that this is an automated system, more analysis should be performed to bring up the n.\n\nReviewer #1:\n\nIn this body of work the authors whether there is an intersection between food choice (sugar vs. protein) and aging. Using a novel assay developed in the lab that monitors contact of flies with food they can accurately measure how long and how much a fly \"chooses\" a certain type of food. Using this assay, after a brief starvation, the group finds that protein rich diets are preferred. Asking how this is perceived, the group goes through a battery of sensory-type mutants and find that serotonin synthesis is essential for this process. They go on to find that only 1 of the 5 serotonin receptors is required (which is very, very interesting) and can recreate the mutant phenotypes with drug inhibitors. Although not entirely clear to the non-fly person, they find that a juvenile hormone receptor mutant also blocks this response and appears to act upstream of serotonin (at least transcriptionally). The group goes onto to ask the temporal ordering of serotonin in the response and also find a key link to longevity.\n\nIn summary, the work is very well presented and extremely novel. I do not think further experiments will improve the paper and its finding and fully support publication.\n\nReviewer #2:\n\nThe author outline their interesting findings on the links between dietary composition and lifespan in fruit flies via the effects on reward of food rather than nutritional value per se. They show short term starvation induces specific food preferences upon re-feeding using their elegant FLIC food choice assay. Fed flies prefer sugar only food where as previously starved flies show preference for a sugar/protein mix independent of calorific content. They performed a candidate genetic screen to identify the underlying mechanism and defined a clear role for serotonin signaling as flies lacking Trh showed reduced protein preference, and this effect is specifically while the food choice is being made and not prior. Interestingly, hyper activating serotonin signaling drove preference for protein containing food suggesting the value of protein was increased rather than serotonin mimics protein sensing. Trh mutants themselves are long lived but most intriguingly, flies given nutritional choice in their diet live very short compared to those on a fixed ratio media. Strikingly however, mutants in Trh or 5HT2 lived 90% longer in these conditions despite eating as much. Finally, mutation to the animal acid transporter jhI-21 increases lifespan and dampens serotonin signaling in response to protein. Experiments are well thought out and executed and overall I think it\u2019s a worthy and interesting contribution to eLife.\n\nThe key point of this paper is that protein valuation/reward itself ages flies which is very novel and fits well with data from this lab previously on the effects of food odor as a suppressor of dietary restriction. However, in fixed food ratios, increasing protein suppresses lifespan in Trh mutants despite their lack of protein 'reward'. The authors explain away this effect by the concomitant changes in sugar intake. The manuscript would benefit from further discussion on this point and ideally some experimental support \u2013 i.e., if one were to increase protein in a fixed diet while decreasing sugar (i.e., removing its toxicity) would the authors predict that wild type animals would show decreased lifespan due to increased serotonin reward while now trh mutant would be refractory?\n\nAn additional concern is how well the jhI-21 data integrate with the rest. The data would predict that the effects of jhI-21 loss would be repressed by the activated serotonin signaling lines.\n\nReviewer #3:\n\nIn the provided paper the authors present the very interesting finding that protein value of a meal is mediated by serotonergic signalling via the receptors 5HT2a. The authors show that starvation induces flies to prefer protein rich food over sugar rich food and that this preference is mediated by serotonerigic signaling, requires tryptophan hydroxylase, the 5HT2a receptor and the solute carrier JhI-21. Temporal control over serotonin signaling using the shibiri system establishes that the serotonergic signal to be active during the re-feeding stage after starvation. This is further confirmed by qPCR or for the 5HT2a receptor. Interestingly, animals that are allowed to choose their food components show a shorter lifespan but only in animals with intact serotonin signaling. Animals with reduced serotonin signaling live dramatically longer in the choice paradigm even though the serotonin mutants also have a higher protein and triacylclycerol level and are not calorically restricted. Overall, an interesting and convincing study.\n\nBehavior experiments generally result in noisy readouts. The current graphs provide limited insights into how consistent the behaviors are.\n\nPlease address the following points for the behavior graphs by adding to the actual graph or by providing an second supplementary version:\n\nSome kind of a confidence interval/standard deviation in Figures 1B, 2B\u2013D are necessary to judge how robust the behavior is.\n\nWhen calculating the PI, are there genotypes/interventions that cause more \"missing\" flies than others? In 2B Trh seems to very robust, all circles about the same size suggesting that there are hardly any \"missing\" flies that did not produce a feeding signal during the 3 h. For the 5TH2A in 2D it seems that most flies don't eat between 60 and 120 min, suggesting that most of the negative PI is caused by very few flies.\n\nDo some mutants show differences in mobility that could influence the preference index?\n",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b5591cd5-39f6-4033-90e7-1cac5a8fec3f",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C1",
+      "claim": "After 24 hours of starvation, both male and female Drosophila melanogaster flies preferred a sugar diet supplemented with autolyzed yeast over a diet composed exclusively of sugar.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a new real-time feeding monitoring system called FLIC, which quantifies all contact interactions an individual fly has with food (Ro et al., 2014; http://www.wikiflic.com), we found that after mild starvation both male and female flies preferred a sugar diet supplemented with autolyzed yeast (the major protein source in the fly diet) over a diet composed exclusively of sugar (Figure 1A, 24 hr starvation).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from FLIC feeding monitoring system shown in Figure 1A, demonstrating preference behavior after 24hr starvation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "c94e1cb9-980b-4be1-b30a-c192614c4dc2",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C2",
+      "claim": "Protein preference after starvation persisted for just over one day, with longer food deprivation increasing protein preference.",
+      "claim_type": "EXPLICIT",
+      "source": "This preference persisted for just over one day, with longer food deprivation increasing protein preference (Figure 1A; Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-course data in Figure 1A and Figure 1\u2014figure supplement 1A showing temporal dynamics and starvation duration effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "caca41d4-09e1-4dfe-91ff-1f6a59329dc1",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C3",
+      "claim": "Fully-fed animals consumed a sugar-only diet more often throughout the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, fully-fed animals consumed a sugar-only diet more often throughout the experiment (Figure 1A, fully-fed).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1A for fully-fed condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "cf807dec-ccc5-4def-99fe-8e6245788092",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C4",
+      "claim": "Food choice was not based on caloric content because starved flies chose a 1% protein diet over an isocaloric 1% sugar diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Food choice was not based on caloric content because starved flies also chose a 1% protein diet over an isocaloric 1% sugar diet and an increase in protein concentration to a hypercaloric 5% did not affect this preference (Figure 1B; Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing isocaloric diets shown in Figure 1B and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "97e050a1-e51c-4c5d-9bfc-8712de79f350",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C5",
+      "claim": "Total feeding time was a much stronger predictor of total protein feeding time than it was of sugar feeding time.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this information we found that total feeding time was a much stronger predictor of total protein feeding time than it was of sugar feeding time (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "b32e6d6e-f076-451c-90dc-b6e894a72bee",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C6",
+      "claim": "Flies with more total feeding time were more likely to choose a protein containing food as their first meal and to have a stronger protein preference over the course of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, flies with more total feeding time were more likely to choose a protein containing food as their first meal and to have a stronger protein preference over the course of the experiment (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing correlation between total feeding time and protein preference in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7b78964a-6335-4837-a674-bcdb66f7d3f8",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C7",
+      "claim": "Following mild starvation, flies preferred autolyzed yeast to the same extent as a pure complex protein such as bovine serum albumin (BSA) over a wide range of concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Following mild starvation, flies preferred autolyzed yeast, which is primarily composed of short peptide/single amino acids (Figure 1\u2014figure supplement 1D), to the same extent as a pure complex protein such as bovine serum albumin (BSA) (Figure 1D) over a wide range of concentrations, suggesting that behavioral preference for yeast is driven in whole or in part by its protein content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by dose-response data comparing autolyzed yeast and BSA preferences shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7199ab38-c9a1-4601-a83a-48f6b1cbe025",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C8",
+      "claim": "Twenty-four hour starvation had no detectable effect on internal protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four hour starvation had no detectable effect on internal protein levels (Figure 1E), suggesting that preference was independent of gross protein stores.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by metabolite quantification data shown in Figure 1E comparing fully-fed and 24hr-starved flies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "25524a3d-b399-480c-bcf3-1abe18287658",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C9",
+      "claim": "Protein preference is not limited to reproductively active female flies and is more dynamic than previously suspected.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein preference is, therefore, not limited to reproductively active female flies (Ribeiro and Dickson, 2010; Vargas et al., 2010) and is more dynamic than previously suspected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that both males and females show protein preference after starvation, and supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "fdae2946-ecaa-43cd-a5f1-13d343b0306c",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C10",
+      "claim": "Disruption of serotonin signaling repeatedly reduced protein preference in starved flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all manipulations, disruption in serotonin signaling repeatedly reduced protein preference in starved flies (Figure 2A blue bars; Supplementary file 1 candidates 63, 65, 67, and 68).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by candidate screen results shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "cb74a4c9-7fe2-4362-9af3-4d73172cc528",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C11",
+      "claim": "Silencing of serotonergic neurons and treatment of flies with a serotonin receptor 2a (5HT2a) antagonist, ketanserin, eliminated protein preference entirely.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of serotonergic neurons and treatment of flies with a serotonin receptor 2a (5HT2a) antagonist, ketanserin (Colas et al., 1995), eliminated preference entirely, such that starved animals exhibited an aversion to dietary protein that mimicked what we routinely observed from fully-fed, control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental manipulations described in the text and referenced in Figure 2A, with citation to ketanserin's specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "aac3956e-c392-42e9-adc1-93e6f6d38786",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C12",
+      "claim": "Flies with significantly reduced tryptophan hydroxylase (Trh) exhibited a reduction in preference for both autolyzed yeast and BSA compared with control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with significantly reduced tryptophan hydroxylase (Trh), a rate-limiting enzyme for neuronal serotonin synthesis (Neckameyer et al., 2007) that is the Drosophila homologue of TPH2, exhibited a reduction in preference for both autolyzed yeast and BSA compared with control animals (Figure 2B,C; Figure 2\u2014figure supplement 1A,B; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from Trh mutants shown in Figure 2B,C and supplementary figures, with citation to Trh function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "c727355e-03cf-4848-a492-5e37e95e9365",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C13",
+      "claim": "All of the 5HT2a manipulations abrogated the preference for protein following mild starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified a role for 5HT2a by examining flies that carried two independent 5HT2a mutant alleles (Figure 2D, Figure 2\u2014figure supplement 1C,D; Figure 2\u2014figure supplement 2B), flies transheterozygous for each allele (Figure 2\u2014figure supplement 1E), as well as flies with RNAi-mediated knock-down of 5HT2a transcript (Figure 2\u2014figure supplement 1F). All of the 5HT2a manipulations abrogated the preference for protein following mild starvation, effectively recapitulating Trh mutation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple genetic manipulations of 5HT2a shown in Figure 2D and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "8fa5a23b-680c-4442-b13b-4e2655d72087",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C14",
+      "claim": "Loss of function in three other serotonin receptors (5HT1a, 5HT1b, and 5HT2b) had no effect on the preference phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of function in three other serotonin receptors (5HT1a, 5HT1b, and 5HT2b; 5HT7 mutant animals were not viable) had no effect on the preference phenotype (Figure 2\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from other serotonin receptor mutants shown in Figure 2\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "9569be92-3699-4bc0-ae7d-fb652d1e6658",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C15",
+      "claim": "Disruption of serotonin signaling did not disrupt other feeding preferences because Trh and 5HT2a mutant flies exhibited expected choice behaviors when presented with sweet vs bitter tastes or sweet vs sweeter food.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of serotonin signaling did not disrupt other feeding preferences because Trh and 5HT2a mutant flies exhibited expected choice behaviors when presented with sweet vs bitter tastes or sweet vs sweeter food (Figure 2\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by control experiments shown in Figure 2\u2014figure supplement 3B testing other taste preferences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "2b5ad0b1-1091-46b6-a3de-16a371136a75",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C16",
+      "claim": "When fully fed, the feeding behaviors of Trh and 5HT2a mutant flies are not different from control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when fully fed, the feeding behaviors of Trh and 5HT2a mutant flies are not different from control animals (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing fully-fed mutant and control flies shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "2f657b24-477d-48fb-bd54-65382cba1362",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C17",
+      "claim": "Flies retained their preference for dietary protein when serotonergic neurons were inactivated only during the starvation phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that flies retained their preference for dietary protein when serotonergic neurons were inactivated only during the starvation phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by temporal manipulation experiments described in the text and shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "024ee56d-67d2-42d7-b032-f8f3448615ad",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C18",
+      "claim": "Inactivation of serotonergic neurons only during the choice phase was sufficient to abolish preference and phenocopy the Trh mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation only during the choice phase, however, was sufficient to abolish preference and phenocopy the Trh mutant, implying that serotonin may be involved specifically in protein reward after starvation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by temporal manipulation experiments shown in Figure 3A, with inference about serotonin's role in reward.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "65b52a4c-acc3-447c-bb71-59cb5c2135bc",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C19",
+      "claim": "Inhibition of serotonin signaling did not alter total food intake during the choice test.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of serotonin signaling did not alter total food intake during the choice test, demonstrating that the lack of protein preference seen in transgenic flies is not an artifact of reduced feeding (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food intake measurements shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "d8ed9db0-108e-4418-a995-0b359843b000",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C20",
+      "claim": "Serotonin levels in the head were unchanged after starvation but increased 100\u2013200% after flies consumed protein compared with the fully-fed condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that serotonin levels in the head were unchanged after starvation but increased 100\u2013200% after flies consumed protein compared with the fully-fed condition (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by UPLC-MS measurements of serotonin shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "f5b27259-5c9f-4e31-8d17-1dccc4c90dcd",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C21",
+      "claim": "There was an acute increase in the abundance of 5HT2a mRNA, but not transcript from other serotonin receptors, in the heads of flies that were starved of all nutrients and refed with protein for 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Much like the temporal profile of serotonin concentration, we observed an acute increase in the abundance of 5HT2a mRNA, but not transcript from other serotonin receptors, in the heads of flies that were starved of all nutrients and refed with protein for 3 hr (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR measurements of serotonin receptor mRNA shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "64745a81-c6d5-4e39-bbed-176cd3d66c4a",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C22",
+      "claim": "5HT2a mRNA abundance was not affected by starvation alone, and it returned to the level of fully-fed animals after 24 hr of protein feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "5HT2a mRNA abundance was not affected by starvation alone, and it returned to the level of fully-fed animals after 24 hr of protein feeding, which is coincident with their loss of feeding preference (e.g., Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qPCR data in Figure 3C and correlation with behavioral data from Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7043ce50-e38f-4295-9433-6fcf059ea0d2",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C23",
+      "claim": "Activation of serotonergic neurons suppressed feeding in fully-fed flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although activation of serotonergic neurons suppressed feeding as we expected (Gasque et al., 2013) (Figure 3D left), when fully-fed flies did eat, they showed a near absolute preference for protein-containing food (Figure 3D right; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from dTrpA1 activation shown in Figure 3D, with citation to previous work on feeding suppression.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "48b7f4ce-67d1-4142-baaa-db2b91004db7",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C24",
+      "claim": "When fully-fed flies with activated serotonergic neurons did eat, they showed a near absolute preference for protein-containing food.",
+      "claim_type": "EXPLICIT",
+      "source": "Although activation of serotonergic neurons suppressed feeding as we expected (Gasque et al., 2013) (Figure 3D left), when fully-fed flies did eat, they showed a near absolute preference for protein-containing food (Figure 3D right; Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from dTrpA1 activation shown in Figure 3D right and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "bfaae572-1525-413f-8a13-18ac95d94700",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C25",
+      "claim": "Serotonergic signaling increases the value of dietary protein in an energy-state dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support the notion that serotonergic signaling increases the value of dietary protein in an energy-state dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the hyperactivation experiments showing that serotonin activation induces protein preference even in fully-fed flies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "d5e9156b-373f-4e6b-8f8b-2346a4239b4c",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C26",
+      "claim": "On a standard laboratory diet of low or intermediate yeast content, Trh mutants were long-lived, and loss of 5HT2a did not affect lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "On a standard laboratory diet of low or intermediate yeast content, Trh mutants were long-lived, and loss of 5HT2a did not affect lifespan (Figure 4\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data on fixed diets shown in Figure 4\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "f9724af5-ca80-400b-bda9-6f3f2f2dd471",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C27",
+      "claim": "Trh mutant flies responded similarly to control animals when diet was manipulated in a traditional fixed-diet manner, while 5HT2a mutants showed a reduced response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Trh mutant flies responded similarly to control animals, while 5HT2a mutants showed a reduced response, when diet was manipulated in this traditional manner (Figure 4\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by diet manipulation experiments shown in Figure 4\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "91e5eb39-d28f-46b0-b8df-abe52f2c1871",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C28",
+      "claim": "Control flies were shortest-lived in a sucrose-only diet.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, control flies were shortest-lived in a sucrose-only diet (Lee et al., 2008; Skorupa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by lifespan data and citations to previous work on dietary effects on lifespan.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7d5b5feb-e463-49c6-8341-0a89643b4372",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C29",
+      "claim": "Control animals in the choice environment lived substantially shorter than animals maintained in an isocaloric fixed diet or in one consisting of yeast-only.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we were surprised to observe that control animals in the choice environment lived substantially shorter than animals maintained in an isocaloric fixed diet or in one consisting of yeast-only (Figure 4A) despite exhibiting equivalent health metrics when young (e.g., Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data comparing different dietary conditions shown in Figure 4A and health metrics in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7897c0d2-47f7-47b5-ac5b-c59fc9095905",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C30",
+      "claim": "Trh mutant flies lived modestly longer than control flies on all control diets (Sucrose-only, Yeast-only, and Fixed diet), while 5HT2a mutants did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our observations using standard protocols, Trh mutant flies lived modestly longer than control flies on all control diets (Figure 4A; Sucrose-only, Yeast-only, and Fixed diet), while 5HT2a mutants did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data shown in Figure 4A comparing genotypes across different diets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "e9474350-b480-43ba-9265-700a48d14e87",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C31",
+      "claim": "When flies were aged in the choice environment, there was a near doubling (90% increase) of mean lifespan of both Trh and 5HT2a mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the flies were aged in the choice environment we observed a near doubling (90% increase) of mean lifespan of both Trh and 5HT2a mutant animals (Figure 4A, Choice diet).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data in the choice diet condition shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "285b8c19-14c4-4ba0-8896-9f5b4a8cfc0d",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C32",
+      "claim": "All flies consumed more food in the choice environment compared with an isocaloric fixed diet.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an indigestible dye mixed in both food wells we found that all flies consumed more food in the choice environment compared with an isocaloric fixed diet (Figure 4B, left two bar groups).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food intake measurements using tracer dye shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "1ad85045-ef07-4e22-b830-7b1515664a83",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C33",
+      "claim": "Most of the increased consumption in the choice environment was due to a boost in sugar feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "By labeling foods in individual wells we found that most of that increased consumption was due to a boost in sugar feeding (Figure 4B, right two bar groups).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nutrient-specific food intake measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "38e764fc-0b19-4a2f-add4-a7e32afc7512",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C34",
+      "claim": "There were no differences among genotypes in total food consumption in any condition.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, we found no differences among genotypes in total food consumption in any condition, and in the choice environment, where lifespan extension was greatest, mutant flies consumed a sugar:protein ratio that was statistically indistinguishable from control animals (Figure 4B right two bar groups).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food intake measurements shown in Figure 4B comparing genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7674deea-e59b-47f3-bc3e-c075734fa7dd",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C35",
+      "claim": "In the choice environment, mutant flies consumed a sugar:protein ratio that was statistically indistinguishable from control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, we found no differences among genotypes in total food consumption in any condition, and in the choice environment, where lifespan extension was greatest, mutant flies consumed a sugar:protein ratio that was statistically indistinguishable from control animals (Figure 4B right two bar groups).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by nutrient-specific food intake measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "9fdbcaea-1804-43be-bfc5-47be798163a6",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C36",
+      "claim": "Mutant flies show the same extent of increased sugar consumption as control animals in the choice environment.",
+      "claim_type": "EXPLICIT",
+      "source": "First, mutant flies show the same extent of increased sugar consumption as control animals in the choice environment (Figure 4B, third bar group).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sugar consumption measurements shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "749c8c6f-63ee-463b-b221-4a15c3834b23",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C37",
+      "claim": "The lifespans of Trh and 5HT2a mutant flies are reduced to a similar extent as control animals when the carbohydrate content of a fixed diet is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the lifespans of Trh and 5HT2a mutant flies are reduced to a similar extent as control animals when the carbohydrate content of a fixed diet is increased (Figure 4\u2014figure supplement 2C,D), showing that their lifespan is equally or more sensitive to dietary carbohydrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data on high sugar diets shown in Figure 4\u2014figure supplement 2C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "14c73b88-f52b-428b-b3ff-22eb2fcf2e62",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C38",
+      "claim": "Gross metabolites including total protein, fat, and carbohydrate abundances are strongly increased in the choice environment, and mutant and control animals are similarly affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, gross metabolites that are known to be influenced by food intake, including total protein, fat, and carbohydrate abundances (Lee et al., 2008; Skorupa et al., 2008), are strongly increased in the choice environment, and mutant and control animals are similarly affected (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by metabolite measurements shown in Figure 5, with citations to previous work on metabolite-diet relationships.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "5d8856be-dddb-4372-81e8-0dde5955f561",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C39",
+      "claim": "Trh and 5HT2a mutant flies are eating the same amount of the same food, and they are processing nutrients similarly to control animals, in both the fixed- and choice-diet regimes.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears, therefore, that Trh and 5HT2a mutant flies are eating the same amount of the same food, and they are processing nutrients similarly to control animals, in both the fixed- and choice-diet regimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined food intake and metabolite data presented in Figures 4B and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "90d22f56-8d21-4960-879f-718503f38475",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C40",
+      "claim": "The macronutrient valuation process itself is a potent factor that modulates organismal aging independent of food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the roles of serotonin and 5HT2a in the valuation of dietary protein, we propose that the macronutrient valuation process itself is a potent factor that modulates organismal aging independent of food consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation based on the combined findings that mutants have extended lifespan in choice conditions despite equivalent food intake and nutrient processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "59b95406-b7d6-417a-8610-3480487af958",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C41",
+      "claim": "Mutation in JhI-21 abolished protein preference in starved flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that mutation in JhI-21 abolished protein preference in starved flies (Figure 6A; Figure 6\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from JhI-21 mutants shown in Figure 6A and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "1a757843-f624-4e78-a088-14b556c9c1c7",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C42",
+      "claim": "JhI-21 mutant animals failed to increase neuronal serotonin after 3 hr of yeast feeding, establishing that it is required for protein-dependent serotonin production.",
+      "claim_type": "EXPLICIT",
+      "source": "We also discovered evidence that JhI-21 acts upstream of serotonin signaling; JhI-21 mutant animals failed to increase neuronal serotonin after 3 hr of yeast feeding, establishing that it is required for protein-dependent serotonin production (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by serotonin measurements in JhI-21 mutants shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "616bb7b9-73d4-4045-8abd-6c13aa0cb10f",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C43",
+      "claim": "JhI-21 mutant females exhibited a normal increase in egg production with dietary protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "JhI-21 mutant females exhibited a normal increase in egg production with dietary protein concentration (Figure 6C), and they showed normal feeding in both fixed and choice environments (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by egg laying assay data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "77f32501-80e9-4eb3-b38a-3d291cb3cccf",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C44",
+      "claim": "JhI-21 mutant flies showed normal feeding in both fixed and choice environments.",
+      "claim_type": "EXPLICIT",
+      "source": "JhI-21 mutant females exhibited a normal increase in egg production with dietary protein concentration (Figure 6C), and they showed normal feeding in both fixed and choice environments (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by food intake measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "c28a98fa-0905-4964-a860-67cedf1d619d",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C45",
+      "claim": "Mutation in JhI-21 resulted in a modest (13%) increase in mean lifespan in a fixed-diet condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, mutation in JhI-21 recapitulated the extended lifespan pattern observed in Trh and 5HT2a mutant flies with a modest (13%) increase in mean lifespan in a fixed-diet condition (Figure 6\u2014figure supplement 1E) and a greater (32%) mean lifespan extension in a choice-diet environment (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data on fixed diet shown in Figure 6\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "2ce99ea9-f066-47c8-80b9-76af02ef4296",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C46",
+      "claim": "Mutation in JhI-21 resulted in a greater (32%) mean lifespan extension in a choice-diet environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, mutation in JhI-21 recapitulated the extended lifespan pattern observed in Trh and 5HT2a mutant flies with a modest (13%) increase in mean lifespan in a fixed-diet condition (Figure 6\u2014figure supplement 1E) and a greater (32%) mean lifespan extension in a choice-diet environment (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by lifespan data on choice diet shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "e7e7cb97-1215-4a02-b99e-d92f6a295e2f",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C47",
+      "claim": "The JhI-21 amino acid transporter and possibly SLC7 protein family members in general are conserved regulators of protein-dependent behavior and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the JhI-21 amino acid transporter, and possibly SLC7 protein family members in general, are conserved regulators of protein-dependent behavior and physiology and that they may function together with serotonin signaling to modulate aging independently of mechanisms that regulate reproduction and total food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation based on the JhI-21 mutant phenotypes and its homology to SLC7A5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "c2710f98-70e8-431d-a611-a8614e60c0cc",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C48",
+      "claim": "JhI-21 may function together with serotonin signaling to modulate aging independently of mechanisms that regulate reproduction and total food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the JhI-21 amino acid transporter, and possibly SLC7 protein family members in general, are conserved regulators of protein-dependent behavior and physiology and that they may function together with serotonin signaling to modulate aging independently of mechanisms that regulate reproduction and total food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed interpretation based on the combined findings that JhI-21 mutants show extended lifespan without changes in reproduction or food intake.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "6cc9f63d-44bb-4ed1-a9e0-34ac866080c1",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C49",
+      "claim": "Protein restriction extends lifespan in crickets, flies, mice, and probably humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein restriction extends lifespan in crickets (Reddiex et al., 2013), flies (Mair et al., 2005), mice (Solon-Biet et al., 2014), and probably humans (Levine et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies in multiple species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "91654159-e333-477a-9dba-8405181980b9",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C50",
+      "claim": "Many of the effects of diet manifest independently of food consumption, likely through global integration of nutrient signals and cell non-autonomous responses to those signals directed by the nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, however, many of the effects of diet manifest independently of food consumption, likely through global integration of nutrient signals and cell non-autonomous responses to those signals directed by the nervous systems (Linford et al., 2011; Mair et al., 2005; Taylor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work demonstrating diet effects independent of consumption.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "6f261f0f-a36f-4f59-9059-f32750dcccc4",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C51",
+      "claim": "Sensory neurons in Drosophila melanogaster and Caenorhabditis elegans can promote or limit lifespan depending on the specific neurons involved.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sensory neurons in Drosophila melanogaster and Caenorhabditis elegans can promote or limit lifespan depending on the specific neurons involved (Alcedo and Kenyon, 2004; Apfeld and Kenyon, 1999; Libert et al., 2007), and the first instance of sensory modulation of lifespan in mice was recently reported (Riera et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies on sensory modulation of lifespan.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "d20b2314-c3c5-48ea-ba09-d4f0039d0d7c",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C52",
+      "claim": "Tryptophan hydroxylase (Trh) is a rate-limiting enzyme for neuronal serotonin synthesis and is the Drosophila homologue of TPH2.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies with significantly reduced tryptophan hydroxylase (Trh), a rate-limiting enzyme for neuronal serotonin synthesis (Neckameyer et al., 2007) that is the Drosophila homologue of TPH2, exhibited a reduction in preference for both autolyzed yeast and BSA compared with control animals (Figure 2B,C; Figure 2\u2014figure supplement 1A,B; Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work characterizing Trh function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "ba65a275-4bd6-44ff-b63d-32801bd291a1",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C53",
+      "claim": "In Drosophila, there are five known serotonin receptors, each of which is evolutionarily conserved: 5HT1a, 5HT1b, 5HT2a, 5HT2b, and 5HT7.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, there are five known serotonin receptors, each of which is evolutionarily conserved: 5HT1a, 5HT1b, 5HT2a, 5HT2b, and 5HT7 (D. E. Nichols and C. D. Nichols, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work cataloging Drosophila serotonin receptors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "1210bccc-d198-45a5-b80a-457fdcf3feba",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C54",
+      "claim": "Ketanserin is a serotonin receptor 2a (5HT2a) antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing of serotonergic neurons and treatment of flies with a serotonin receptor 2a (5HT2a) antagonist, ketanserin (Colas et al., 1995), eliminated preference entirely, such that starved animals exhibited an aversion to dietary protein that mimicked what we routinely observed from fully-fed, control animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work characterizing ketanserin.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "98e66151-18dd-4b31-9c19-05237e4f394c",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C55",
+      "claim": "A BLAST analysis comparing vertebrate SLC7A5 to the fly protein database revealed the gene juvenile hormone inducible 21 (JhI-21) as the most likely homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "A BLAST analysis comparing vertebrate SLC7A5 to the fly protein database revealed the gene juvenile hormone inducible 21 (JhI-21) as the most likely homolog (see also, Piyankarage et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by BLAST analysis and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "c5b016f0-6a77-4ab1-8453-a8361b986970",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C56",
+      "claim": "In mice, a lysosomal amino acid transporter has been shown to communicate luminal amino acid levels to the canonical cellular amino acid sensor, TOR.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, a lysosomal amino acid transporter has been shown to communicate luminal amino acid levels to the canonical cellular amino acid sensor, TOR (Attardo et al., 2006; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work in mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "a6b454f3-b71a-4f13-861d-de91e883ea7a",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C57",
+      "claim": "In Drosophila, an insect glycine transporter, Slimfast, together with certain solute carrier 6 family members are critical for organismal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, an insect glycine transporter, Slimfast, together with certain solute carrier 6 family members are critical for organismal growth (Colombani et al., 2003; Goberdhan et al., 2005), and several orphan Drosophila amino acid transporters in adipocytes regulate ovarian stem cell number (Armstrong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work on amino acid transporters in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "31e460ec-bbc8-4fb9-b63a-ecd7b1bba911",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C58",
+      "claim": "Several orphan Drosophila amino acid transporters in adipocytes regulate ovarian stem cell number.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, an insect glycine transporter, Slimfast, together with certain solute carrier 6 family members are critical for organismal growth (Colombani et al., 2003; Goberdhan et al., 2005), and several orphan Drosophila amino acid transporters in adipocytes regulate ovarian stem cell number (Armstrong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "1260e947-c955-42a7-bdb3-b13674295f50",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C59",
+      "claim": "Trh is found in 83 neurons per hemisphere of the brain based on immunostaining of adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on immunostaining of adult Drosophila, Trh is found in 83 neurons per hemisphere of the brain (Bao et al., 2010), and 5HT2a is concentrated in small groups of glomeruli such as the ellipsoid body, large field R-neurons, antennal lobe, and a subset of gustatory neurons in the suboesophageal ganglion (Nichols, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous immunostaining work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "a7345b9c-185a-4e1e-b81d-e17458e2a161",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C60",
+      "claim": "5HT2a is concentrated in small groups of glomeruli such as the ellipsoid body, large field R-neurons, antennal lobe, and a subset of gustatory neurons in the suboesophageal ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on immunostaining of adult Drosophila, Trh is found in 83 neurons per hemisphere of the brain (Bao et al., 2010), and 5HT2a is concentrated in small groups of glomeruli such as the ellipsoid body, large field R-neurons, antennal lobe, and a subset of gustatory neurons in the suboesophageal ganglion (Nichols, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous work on 5HT2a localization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "f4ca91e0-1e41-4f72-90d2-cbbd58445660",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C61",
+      "claim": "Serotonin is acting acutely during the post-ingestive phase to drive behavioral and health outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, by combining temporal neuronal manipulations with continuous feeding measures we were able to provide, for the first time, evidence that serotonin is acting acutely during the post-ingestive phase to drive behavioral and health outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the temporal manipulation experiments showing serotonin is required during choice phase but not starvation phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "48d1d20e-d752-404d-a1fd-2f499c4b0c20",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C62",
+      "claim": "Specific genetic and environmental manipulations, such as dietary restriction, insulin signaling and mate availability rapidly and reversibly affect mortality rates, often within hours or days.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with reports showing that specific genetic and environmental manipulations, such as dietary restriction (Good and Tatar, 2001; Mair et al., 2003; Smith et al., 2008), insulin signaling (Giannakou et al., 2007) and mate availability (Gendron et al., 2014; Maures et al., 2014) rapidly and reversibly affect mortality rates, often within hours or days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work demonstrating rapid effects on mortality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "02bb450b-0124-43c0-9b31-27024f13b4c2",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "claim_id": "C63",
+      "claim": "The same neural circuits that evaluate internal and external nutritional status to determine what and when to eat also interact with major hormone axes known to influence aging, such as insulin-like and TGF\u03b2 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also notable that the same neural circuits that evaluate internal and external nutritional status to determine what and when to eat also interact with major hormone axes known to influence aging, such as insulin-like and TGF\u03b2 signaling (Domingos et al., 2011; You et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous work on neural circuit interactions with hormone signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f656c43-4858-4e8e-bb19-8dd111c01242",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Drosophila melanogaster exhibit a dynamic, starvation-dependent protein preference that is independent of caloric content and gross protein stores. After 24 hours of starvation, both male and female flies prefer protein-supplemented diets over sugar-only diets, with preference persisting for just over one day and increasing with longer starvation. This preference is driven by protein content rather than calories, as flies choose isocaloric protein diets over sugar diets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide converging evidence from FLIC feeding monitoring, dose-response experiments, metabolite measurements, and correlation analyses. The data demonstrate protein preference is starvation-dependent, not calorie-dependent, and occurs in both sexes. The claim that preference is independent of gross protein stores (C8) is well-supported by metabolite data showing no change in internal protein after 24hr starvation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "cf184a54-8152-472d-b405-bc507af93908",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Serotonin signaling through the 5HT2a receptor is specifically required for protein preference in starved flies. Disruption of serotonin synthesis (Trh mutants), pharmacological blockade (ketanserin), or genetic manipulation of 5HT2a eliminates protein preference, while other serotonin receptors (5HT1a, 5HT1b, 5HT2b) are not involved. This effect is specific to protein preference and does not disrupt other feeding behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C16 provide strong genetic, pharmacological, and behavioral evidence for serotonin/5HT2a specificity. Multiple independent manipulations (Trh mutants, 5HT2a mutants, RNAi, pharmacological antagonism) converge on the same phenotype. Control experiments (C14-C16) demonstrate specificity by showing other serotonin receptors are not involved and other taste preferences remain intact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Serotonin acts during the post-ingestive choice phase rather than during starvation to mediate protein preference. Temporal inactivation experiments show serotonin is required during food choice but not starvation. Protein consumption increases serotonin levels 100-200% and acutely upregulates 5HT2a mRNA within 3 hours, returning to baseline after 24 hours coincident with loss of preference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 provide temporal resolution through conditional neuronal inactivation (C17-C18), biochemical measurements (C20), and gene expression analysis (C21-C22). The temporal correlation between serotonin/5HT2a dynamics and behavioral preference is compelling. However, the mechanistic link between mRNA upregulation and behavior could be strengthened with protein-level measurements or functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "ebfa3b5f-0727-4ef0-b356-0afbd5bb2f36",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hyperactivation of serotonergic neurons is sufficient to induce protein preference in fully-fed flies, demonstrating that serotonin increases the value of dietary protein in an energy-state dependent manner rather than acting as a protein sensor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 provide gain-of-function evidence complementing the loss-of-function studies. The observation that serotonin activation induces protein preference even in fed flies (C24) supports the valuation hypothesis over a sensory detection model. The feeding suppression (C23) is consistent with prior work and does not confound the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "55f9bdee-0871-4966-81ac-e56cde154c49",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In a choice diet environment where flies can select between separate sugar and protein sources, Trh and 5HT2a mutants show dramatic lifespan extension (90% increase in mean lifespan) compared to modest or no effects on fixed diets. Control flies in the choice environment lived substantially shorter than on isocaloric fixed diets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 demonstrate a striking diet-environment interaction effect on lifespan. The data show that disrupting serotonin signaling has minimal effects on fixed diets but dramatic effects in choice conditions. The observation that control flies are shorter-lived in choice conditions (C29) is unexpected but well-documented. Statistical analyses (log-rank tests) support the significance of these effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "a707e4fa-a33c-46b5-960a-8beb540e4488",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The dramatic lifespan extension of serotonin signaling mutants in choice conditions occurs despite equivalent total food consumption, macronutrient ratios, and metabolite processing compared to controls. Mutants show similar sensitivity to high carbohydrate diets and similar metabolic profiles, ruling out dietary restriction or carbohydrate protection as mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 provide comprehensive evidence that the lifespan effect is independent of food intake or nutrient processing. Tracer dye measurements (C32-C36), metabolite quantification (C38), and dietary manipulation experiments (C37) converge to exclude alternative explanations. The inference that mutants process nutrients similarly (C39) is well-supported by the metabolite data in Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "f2dd24ea-17ea-4043-8fbd-b3676f9f3b6f",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The macronutrient valuation process itself is proposed as a potent factor modulating organismal aging independent of food consumption, based on the role of serotonin and 5HT2a in dietary protein valuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C40 is a speculative interpretation of the combined findings. While the data strongly support that serotonin/5HT2a mutants live longer in choice conditions without changes in food intake, the mechanistic link between 'valuation' as a cognitive/neural process and aging remains unclear. The claim conflates correlation with causation and requires additional experiments to establish that valuation per se (rather than downstream physiological consequences) drives aging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The amino acid transporter JhI-21 (Drosophila SLC7A5 homolog) is required for protein preference and acts upstream of serotonin signaling. JhI-21 mutants abolish protein preference, fail to increase serotonin after protein feeding, but maintain normal reproduction and feeding. These mutants show modest lifespan extension on fixed diets (13%) and greater extension in choice conditions (32%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 establish JhI-21 as an upstream regulator of the serotonin-mediated protein valuation pathway. The genetic epistasis (C42), behavioral specificity (C41, C43-C44), and lifespan phenocopy (C45-C46) provide strong support. However, the mechanism by which JhI-21 regulates serotonin production remains unclear and would benefit from tissue-specific expression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "ad635d86-573f-4a04-91c7-ff0ead36bb3c",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "JhI-21 and possibly SLC7 family members are proposed as conserved regulators of protein-dependent behavior and physiology that function with serotonin signaling to modulate aging independently of reproduction and food intake mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 are speculative extrapolations from the JhI-21 data. While JhI-21 is the Drosophila SLC7A5 homolog (C55), the claim of conservation across SLC7 family members lacks direct evidence. The proposal that JhI-21 and serotonin modulate aging independently of reproduction/intake is supported by C43-C44 but requires additional mechanistic validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "68a9c3b9-a1ef-4bef-9299-6b2bd5036323",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that protein restriction extends lifespan across species, that dietary effects can manifest independently of food consumption through nervous system-directed mechanisms, and that sensory neurons can modulate lifespan in invertebrates and mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 accurately summarize prior literature with appropriate citations. These claims provide context for the current work and are supported by the cited references. The authors correctly attribute these findings to previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "2c21d42c-3c6c-49a2-8922-3487e31020b1",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background knowledge claims establish that Trh is the rate-limiting enzyme for neuronal serotonin synthesis and Drosophila TPH2 homolog, that Drosophila has five conserved serotonin receptors, that ketanserin is a 5HT2a antagonist, and that JhI-21 is the Drosophila SLC7A5 homolog based on BLAST analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 provide accurate background information supported by appropriate citations and computational analysis (BLAST for C55). These knowledge claims are well-established in the literature and correctly applied to the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "7b23a28d-8e1e-45c0-91e2-725817113cad",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work in mice and Drosophila has established roles for amino acid transporters in nutrient sensing and physiological regulation, including lysosomal transporters communicating with TOR in mice and Slimfast/SLC6 family members regulating growth and stem cell number in flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 accurately cite relevant prior work on amino acid transporters with appropriate references. These claims provide important context for understanding JhI-21's potential role in nutrient sensing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "06de4cfa-fe51-41e3-9277-16f31556cba0",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Anatomical localization studies show Trh is expressed in 83 neurons per brain hemisphere and 5HT2a is concentrated in specific brain regions including the ellipsoid body, R-neurons, antennal lobe, and suboesophageal ganglion gustatory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 cite prior anatomical studies appropriately. This information provides spatial context for where serotonin signaling occurs but does not directly contribute to the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "64adc86b-2191-4dd8-a822-3f6f87613089",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors claim to provide first-time evidence that serotonin acts acutely during the post-ingestive phase to drive behavioral and health outcomes, based on temporal neuronal manipulations combined with continuous feeding measures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by the temporal manipulation experiments (C17-C18) showing serotonin is required during choice but not starvation. The combination of conditional genetics with FLIC monitoring does provide novel temporal resolution. However, the claim of 'first-time evidence' should be evaluated against prior literature more carefully.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    },
+    {
+      "id": "f274e7b8-1720-4767-8b72-827f957bec5a",
+      "content_id": "93656cc1-4b76-4c2b-afdb-470de1c7e82e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior work has shown that dietary restriction, insulin signaling, and mate availability can rapidly affect mortality rates (hours to days), and that neural circuits evaluating nutritional status interact with insulin-like and TGF\u03b2 signaling pathways known to influence aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 accurately cite relevant prior work with appropriate references. These claims provide important context for understanding how neural valuation processes might rapidly influence aging through hormone signaling pathways.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:01.825971Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b5591cd5-39f6-4033-90e7-1cac5a8fec3f",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "c94e1cb9-980b-4be1-b30a-c192614c4dc2",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "caca41d4-09e1-4dfe-91ff-1f6a59329dc1",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "cf807dec-ccc5-4def-99fe-8e6245788092",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "97e050a1-e51c-4c5d-9bfc-8712de79f350",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "b32e6d6e-f076-451c-90dc-b6e894a72bee",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "7b78964a-6335-4837-a674-bcdb66f7d3f8",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "7199ab38-c9a1-4601-a83a-48f6b1cbe025",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "25524a3d-b399-480c-bcf3-1abe18287658",
+      "result_id": "3f656c43-4858-4e8e-bb19-8dd111c01242"
+    },
+    {
+      "claim_id": "fdae2946-ecaa-43cd-a5f1-13d343b0306c",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "cb74a4c9-7fe2-4362-9af3-4d73172cc528",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "aac3956e-c392-42e9-adc1-93e6f6d38786",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "c727355e-03cf-4848-a492-5e37e95e9365",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "8fa5a23b-680c-4442-b13b-4e2655d72087",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "9569be92-3699-4bc0-ae7d-fb652d1e6658",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "2b5ad0b1-1091-46b6-a3de-16a371136a75",
+      "result_id": "cf184a54-8152-472d-b405-bc507af93908"
+    },
+    {
+      "claim_id": "2f657b24-477d-48fb-bd54-65382cba1362",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "024ee56d-67d2-42d7-b032-f8f3448615ad",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "65b52a4c-acc3-447c-bb71-59cb5c2135bc",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "d8ed9db0-108e-4418-a995-0b359843b000",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "f5b27259-5c9f-4e31-8d17-1dccc4c90dcd",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "64745a81-c6d5-4e39-bbed-176cd3d66c4a",
+      "result_id": "294a6fd8-91ca-4b62-b19d-87351d5ecf54"
+    },
+    {
+      "claim_id": "7043ce50-e38f-4295-9433-6fcf059ea0d2",
+      "result_id": "ebfa3b5f-0727-4ef0-b356-0afbd5bb2f36"
+    },
+    {
+      "claim_id": "48b7f4ce-67d1-4142-baaa-db2b91004db7",
+      "result_id": "ebfa3b5f-0727-4ef0-b356-0afbd5bb2f36"
+    },
+    {
+      "claim_id": "bfaae572-1525-413f-8a13-18ac95d94700",
+      "result_id": "ebfa3b5f-0727-4ef0-b356-0afbd5bb2f36"
+    },
+    {
+      "claim_id": "d5e9156b-373f-4e6b-8f8b-2346a4239b4c",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "f9724af5-ca80-400b-bda9-6f3f2f2dd471",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "91e5eb39-d28f-46b0-b8df-abe52f2c1871",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "7d5b5feb-e463-49c6-8341-0a89643b4372",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "7897c0d2-47f7-47b5-ac5b-c59fc9095905",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "e9474350-b480-43ba-9265-700a48d14e87",
+      "result_id": "55f9bdee-0871-4966-81ac-e56cde154c49"
+    },
+    {
+      "claim_id": "285b8c19-14c4-4ba0-8896-9f5b4a8cfc0d",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "1ad85045-ef07-4e22-b830-7b1515664a83",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "38e764fc-0b19-4a2f-add4-a7e32afc7512",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "7674deea-e59b-47f3-bc3e-c075734fa7dd",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "9fdbcaea-1804-43be-bfc5-47be798163a6",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "749c8c6f-63ee-463b-b221-4a15c3834b23",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "14c73b88-f52b-428b-b3ff-22eb2fcf2e62",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "5d8856be-dddb-4372-81e8-0dde5955f561",
+      "result_id": "a707e4fa-a33c-46b5-960a-8beb540e4488"
+    },
+    {
+      "claim_id": "90d22f56-8d21-4960-879f-718503f38475",
+      "result_id": "f2dd24ea-17ea-4043-8fbd-b3676f9f3b6f"
+    },
+    {
+      "claim_id": "59b95406-b7d6-417a-8610-3480487af958",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "1a757843-f624-4e78-a088-14b556c9c1c7",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "616bb7b9-73d4-4045-8abd-6c13aa0cb10f",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "77f32501-80e9-4eb3-b38a-3d291cb3cccf",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "c28a98fa-0905-4964-a860-67cedf1d619d",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "2ce99ea9-f066-47c8-80b9-76af02ef4296",
+      "result_id": "ab0888ad-2b70-4a56-8da5-f5ee6492a0c4"
+    },
+    {
+      "claim_id": "e7e7cb97-1215-4a02-b99e-d92f6a295e2f",
+      "result_id": "ad635d86-573f-4a04-91c7-ff0ead36bb3c"
+    },
+    {
+      "claim_id": "c2710f98-70e8-431d-a611-a8614e60c0cc",
+      "result_id": "ad635d86-573f-4a04-91c7-ff0ead36bb3c"
+    },
+    {
+      "claim_id": "6cc9f63d-44bb-4ed1-a9e0-34ac866080c1",
+      "result_id": "68a9c3b9-a1ef-4bef-9299-6b2bd5036323"
+    },
+    {
+      "claim_id": "91654159-e333-477a-9dba-8405181980b9",
+      "result_id": "68a9c3b9-a1ef-4bef-9299-6b2bd5036323"
+    },
+    {
+      "claim_id": "6f261f0f-a36f-4f59-9059-f32750dcccc4",
+      "result_id": "68a9c3b9-a1ef-4bef-9299-6b2bd5036323"
+    },
+    {
+      "claim_id": "d20b2314-c3c5-48ea-ba09-d4f0039d0d7c",
+      "result_id": "2c21d42c-3c6c-49a2-8922-3487e31020b1"
+    },
+    {
+      "claim_id": "ba65a275-4bd6-44ff-b63d-32801bd291a1",
+      "result_id": "2c21d42c-3c6c-49a2-8922-3487e31020b1"
+    },
+    {
+      "claim_id": "1210bccc-d198-45a5-b80a-457fdcf3feba",
+      "result_id": "2c21d42c-3c6c-49a2-8922-3487e31020b1"
+    },
+    {
+      "claim_id": "98e66151-18dd-4b31-9c19-05237e4f394c",
+      "result_id": "2c21d42c-3c6c-49a2-8922-3487e31020b1"
+    },
+    {
+      "claim_id": "c5b016f0-6a77-4ab1-8453-a8361b986970",
+      "result_id": "7b23a28d-8e1e-45c0-91e2-725817113cad"
+    },
+    {
+      "claim_id": "a6b454f3-b71a-4f13-861d-de91e883ea7a",
+      "result_id": "7b23a28d-8e1e-45c0-91e2-725817113cad"
+    },
+    {
+      "claim_id": "31e460ec-bbc8-4fb9-b63a-ecd7b1bba911",
+      "result_id": "7b23a28d-8e1e-45c0-91e2-725817113cad"
+    },
+    {
+      "claim_id": "1260e947-c955-42a7-bdb3-b13674295f50",
+      "result_id": "06de4cfa-fe51-41e3-9277-16f31556cba0"
+    },
+    {
+      "claim_id": "a7345b9c-185a-4e1e-b81d-e17458e2a161",
+      "result_id": "06de4cfa-fe51-41e3-9277-16f31556cba0"
+    },
+    {
+      "claim_id": "f4ca91e0-1e41-4f72-90d2-cbbd58445660",
+      "result_id": "64adc86b-2191-4dd8-a822-3f6f87613089"
+    },
+    {
+      "claim_id": "48d1d20e-d752-404d-a1fd-2f499c4b0c20",
+      "result_id": "f274e7b8-1720-4767-8b72-827f957bec5a"
+    },
+    {
+      "claim_id": "02bb450b-0124-43c0-9b31-27024f13b4c2",
+      "result_id": "f274e7b8-1720-4767-8b72-827f957bec5a"
+    }
+  ],
+  "comparisons": []
+}

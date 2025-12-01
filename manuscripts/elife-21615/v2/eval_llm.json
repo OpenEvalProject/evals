@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "An shRNA screen identified genes essential for CD44+/CD24\u2212 cell survival. The screen used a library of 28,000 shRNAs targeting ~9,000 genes and identified 135 shRNAs with reduced representation in H1650-M3 (CD44+/CD24\u2212) cells, including shRNAs targeting IL-6 and DNA repair/replication genes (BRCA1, ORC5L, RFC3, POLS, ERCC8, RPA2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 describe the screen methodology and primary findings with explicit reference to data (Figure 1A) and appropriate citations. The identification of IL-6 is consistent with prior work (C7), providing internal validation. The screen design and statistical threshold (p<0.5) are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Validation experiments confirmed that CD44+/CD24\u2212 cells are selectively vulnerable to knockdown of screen hits. Cell lines with high CD44+/CD24\u2212 content, FACS-sorted CD44+/CD24\u2212 cells, and isogenic clones all showed increased lethality (not decreased proliferation or state conversion) upon knockdown of IL-6, BRCA1, ORC5L, RFC3, POLS, ERCC8, and RPA2, as evidenced by increased cleaved caspase-3 and reduced colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 provide convergent evidence from multiple experimental systems (cell lines, FACS-sorted cells, isogenic clones) and assays (viability, apoptosis markers, clonogenic assays) all pointing to the same conclusion. The use of isogenic clones (C11) effectively controls for genetic background, and mechanistic data (C12-C15) distinguish lethality from other explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The selective vulnerability of CD44+/CD24\u2212 cells to screen hits is not due to mutations or differential expression/knockdown efficiency of the targeted genes. Mutation analysis showed no mutations in BRCA1, ORC5L, RFC3, POLS, ERCC8, or RPA2, and mRNA expression levels and knockdown efficiencies were similar across cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide important negative controls that rule out trivial explanations for the observed phenotype. The mutation analysis (C16) and expression/knockdown measurements (C17-C18) are explicitly stated with reference to supplementary data, strengthening the conclusion that the vulnerability is state-dependent rather than genotype-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "CD44+/CD24\u2212 cells exhibit decreased expression of homology-directed repair (HDR) genes. Genes including BLM, BRCA2, FANCF, NBN, PMS1, RAD50, RDM1, WRN, ATM, and ATR showed reduced mRNA expression in H1650-M3 cells, cell lines with high CD44+/CD24\u2212 content, FACS-sorted CD44+/CD24\u2212 cells, and primary tumors, with protein-level validation for BRCA2, RDM1, and WRN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 demonstrate consistent downregulation of HDR genes across multiple experimental systems (cell lines, sorted cells, primary tumors) using both mRNA and protein measurements. The consistency across diverse samples and the protein-level validation (C21) provide strong support for this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Combined knockdown of HDR genes and screen hits produces synthetic lethality in A549 cells. Partial knockdown of BRCA2 or RAD50 combined with knockdown of BRCA1 or ORC5L significantly decreased cell viability, while individual knockdowns had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides direct experimental evidence for synthetic lethal interactions between the genes identified in the screen and the downregulated HDR genes. The experimental design appropriately mimics the low HDR gene expression in CD44+/CD24\u2212 cells and demonstrates the mechanistic basis for selective vulnerability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "TGF-\u03b2 signaling is sufficient to induce CD44+/CD24\u2212 state transition and decrease HDR gene expression. Exogenous TGF-\u03b2 treatment induced mesenchymal features, CD44+/CD24\u2212 transition, and decreased expression of BLM, BRCA2, FANCF, NBN, PMS1, RAD50, RDM1, WRN, ATM, and ATR at both mRNA and protein levels across multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 establish TGF-\u03b2 sufficiency through gain-of-function experiments with consistent results across multiple cell lines and both mRNA and protein measurements. The data are explicitly referenced (Figures 3C, 3D, supplementary figures) and supported by prior literature (C23-C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "TGF-\u03b2 signaling is necessary for decreased HDR gene expression in CD44+/CD24\u2212 cells. Treatment with TGF-\u03b2 receptor I inhibitors (LY2157299 and LY364947) increased expression of HDR genes (ATR, BLM, BRCA2, FANCF, NBN, PMS1, RAD50) and decreased TGF-\u03b2 target genes in H1650-M3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 establish TGF-\u03b2 necessity through loss-of-function experiments using two independent inhibitors. The bidirectional effects on HDR genes (increased) and TGF-\u03b2 targets (decreased) provide internal validation of inhibitor specificity. The conclusion (C32) is well-supported by the combined gain- and loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "TCGA data analysis shows inverse correlation between TGF-\u03b2 signaling and HDR gene expression in human breast tumors. Both TGFB1 and TGF-\u03b2 signature genes were inversely correlated with expression of BLM, BRCA2, FANCF, NBN, PMS1, RAD50, RDM1, WRN, ATM, and ATR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 provides independent validation of the TGF-\u03b2-HDR relationship in human tumors using a large public dataset. The correlation analysis is explicitly stated and referenced (Figure 3F), extending the findings beyond cell line models to clinical samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "TGF-\u03b2-mediated HDR gene downregulation is independent of cell cycle effects. TGF-\u03b2 reduced HDR gene expression within 9 hours without inducing significant changes in G1/S/G2 distribution in H1650 and U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 addresses an important alternative explanation by showing that HDR gene downregulation occurs without cell cycle arrest. The temporal analysis (9 hours) and explicit cell cycle measurements provide strong evidence that the effect is not simply due to cell cycle redistribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CD44+/CD24\u2212 cells and TGF-\u03b2-treated cells accumulate DNA double-strand breaks. CD44+/CD24\u2212 cells showed increased \u03b3-H2AX and 53BP1/\u03b3-H2AX double-positive foci and increased comet tail movement compared to CD44\u2212/CD24+ cells. TGF-\u03b2 treatment was sufficient to increase these markers in multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 demonstrate increased DSBs using two independent assays (immunofluorescence and comet assay) in both naturally occurring CD44+/CD24\u2212 cells and TGF-\u03b2-treated cells. The use of 53BP1/\u03b3-H2AX double staining (C35) distinguishes repair defects from DNA shredding, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "TGF-\u03b2 treatment reduces homology-directed repair efficiency. The DR-GFP reporter assay showed significantly reduced GFP-positive cells in U2OS and TGF-\u03b2-treated H1650 cells upon I-SceI-induced DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 provides direct functional evidence for impaired HDR using a well-established reporter system. The use of RAD50 and BRCA2 knockdown as positive controls (mentioned in text) validates the assay, and results are shown in two cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "CD44+/CD24\u2212 cells exhibit increased DNA copy number alterations and saw-tooth profiles. Whole-genome CNA analysis of FACS-sorted cells from three NSCLC tumors and one cell line showed CD44+/CD24\u2212 cells had more DNA joint points and saw-tooth profiles. Analysis of isogenic H1650 cells demonstrated this is an intrinsic property of the CD44+/CD24\u2212 state, not due to pre-existing mutations or clonal expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 provide genomic evidence for increased genetic instability using single-cell sequencing. The use of isogenic cell lines (C43) effectively controls for genetic background, and analysis across multiple tumors and cell lines demonstrates generalizability. The saw-tooth profile is a recognized signature of NHEJ/MMBIR repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The authors conclude that decreased HDR gene expression and reduced DNA repair proficiency result in a hyper-mutable phenotype and increased genetic diversity in CD44+/CD24\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 represents a logical synthesis of the preceding findings (decreased HDR genes, increased DSBs, impaired HDR, increased CNAs). While stated as a conclusion, it is well-supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "TGF-\u03b2 treatment is sufficient to increase DNA joint points and genetic heterogeneity. Six-week TGF-\u03b2 treatment of H1650-Isg-D6 cells increased DNA joint points and genetic heterogeneity as measured by single-cell CNA analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate that TGF-\u03b2 exposure alone can drive genomic instability in isogenic cells. The use of isogenic cells and analysis after TGF-\u03b2 withdrawal (to exclude direct signaling effects) strengthens the conclusion that genetic changes are stable consequences of TGF-\u03b2 exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Transient TGF-\u03b2 exposure induces reversible CD44+/CD24\u2212 transition but persistent genetic diversity. A549 cells treated with TGF-\u03b2 transitioned to CD44+/CD24\u2212 state with decreased HDR gene expression, but returned to epithelial state upon TGF-\u03b2 withdrawal. However, transient TGF-\u03b2 exposure resulted in increased genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 establish a critical experimental system showing that while the CD44+/CD24\u2212 state is reversible, the genetic consequences persist. This design allows separation of acute TGF-\u03b2 signaling effects from stable genetic changes, strengthening subsequent drug resistance experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Transient TGF-\u03b2 exposure increases adaptability to high-dose drug treatment. A549 cells transiently exposed to TGF-\u03b2 (A549-3w\u25b3 and A549-6w\u25b3) had similar IC50 values to na\u00efve cells but showed significantly more surviving colonies at very high drug concentrations (tunicamycin, epitaxol, cisplatin). Resistant clones showed drug-specific resistance patterns, indicating diverse resistance mechanisms rather than selection of a single clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate that TGF-\u03b2-induced genetic diversity confers adaptability to extreme selective pressure. The similar IC50s (C50) rule out general drug resistance, while increased survival at high doses (C51) and drug-specific resistance patterns (C52) support the diversity-based adaptation model. The experimental design effectively tests the functional consequences of genetic heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Summary of main findings: CD44+/CD24\u2212 cancer cells are genetically unstable due to TGF-\u03b2-mediated reduction in HDR gene expression, resulting in increased CNAs, genetic diversity, drug adaptability, and potential to promote tumor evolution and fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 represent the authors' summary of their main findings as stated in the abstract. These conclusions are well-supported by the comprehensive experimental evidence presented in the manuscript, including mechanistic studies (TGF-\u03b2\u2192HDR genes), functional assays (DSBs, HDR efficiency), genomic analysis (CNAs), and phenotypic outcomes (drug adaptability).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "H1650-M3 cells are a validated model for CD44+/CD24\u2212 cells. These cells are derived from H1650 cells and possess both phenotypic (EMT, metastasis, motility, invasion, drug resistance) and molecular (CD44+/CD24\u2212, TGF-\u03b2 activation, IL-6 secretion) characteristics of CD44+/CD24\u2212 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the cell line model used throughout the study. The characterization is explicitly stated and supported by citation to prior work (Yao et al., 2010) and referenced figures. This provides appropriate context for interpreting subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "CD44+/CD24\u2212 cells exhibit phenotypic plasticity, returning to equilibrium proportions after FACS sorting in uniform culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 cites established literature (Gupta et al., 2011) to provide important context for the experimental design. This plasticity motivated the use of isogenic clones and multiple validation approaches to distinguish state-dependent from genotype-dependent effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Background on CD44+/CD24\u2212 cells: These cells are found across multiple tumor types, are more tumorigenic, chemoresistant, and metastatic, and are characterized by mesenchymal features and upregulation of stem cell and anti-apoptotic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 provide literature-based background on CD44+/CD24\u2212 cells with appropriate citations. These claims establish the biological and clinical significance of the cell population under study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Summary of key findings from the introduction: CD44+/CD24\u2212 cells have intrinsic DNA repair defects due to TGF-\u03b2-mediated downregulation of HDR genes, leading to decreased DSB repair capacity, increased genetic diversity, and enhanced response to drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 represent the authors' summary of their findings as presented in the introduction. These are well-supported by the detailed experimental evidence presented in the results section and represent an accurate synthesis of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Discussion of TGF-\u03b2's role in drug resistance: Prior work showed TGF-\u03b2 induces drug resistance via anti-apoptotic pathways; the current findings suggest TGF-\u03b2 may also provide a survival niche by accelerating evolution and allowing development of stable genetic traits and increased malignancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is supported by citation (Yao et al., 2010), but C74 is explicitly speculative (\"could possibly provide\"). While the speculation is reasonable given the data, it represents a hypothesis for future testing rather than a demonstrated result. The distinction between demonstrated mechanisms (anti-apoptotic) and proposed mechanisms (evolutionary) should be maintained.",
+    "result_type": "MINOR"
+  }
+]

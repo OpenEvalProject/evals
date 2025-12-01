@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "H3K36R mutants exhibit severe developmental defects including reduced pupation frequency and complete failure to eclose into adults, without obvious cell proliferation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 are all supported by citation to McKay et al., 2015, representing prior published work. These phenotypic observations establish the biological context for the current study and are appropriately attributed to previous research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "H3K36R mutation causes widespread transcriptome dysregulation where genes with high H3K36me3 density decrease expression while genes with low H3K36me3 density increase expression, with the strongest effects in highly expressed and lowly expressed genes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 are well-supported by poly-A RNA-seq data shown in Figures 2A-C. The anticorrelation between H3K36me3 density and gene expression changes is demonstrated across multiple analyses. The global nature of effects argues against an exclusively local, cis-acting mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C80"
+    ],
+    "result": "H3K36R mutants exhibit robustly increased H4 acetylation levels, particularly in transcriptionally active regions, while H3K27me3 levels are slightly reduced but polycomb target genes remain largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 and C80 are supported by western blot data (Figure 3A), immunofluorescence on polytene chromosomes (Figure 3\u2014figure supplement 1C), and gene expression analysis. The H4 hyperacetylation confirms the previously identified link between H3K36me and H4ac, while the minimal effect on polycomb targets is appropriately documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C18"
+    ],
+    "result": "Global chromatin accessibility at promoters is minimally changed between HWT and H3K36R animals, indicating that chromatin remodeling at promoters is not a major contributor to observed gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C18 are supported by ATAC-seq data (Figure 3B) showing high correlation between HWT and K36R at transcription start sites, and by the lack of correlation between ATAC-seq changes and differential expression (Figure 3C). This argues against a promoter-centric mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C75",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "Contrary to expectations from yeast studies, H3K36 methylation does not suppress cryptic transcription in Drosophila gene bodies. Instead, pervasive initiation is widespread throughout the genome even in wild-type animals, and exonic/antisense transcription does not increase in K36R mutants despite H4 hyperacetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27, C75, C79, C81-C82 are well-supported by extensive Start-seq analysis (>200M reads, Figure 4). The identification of thousands of nuTSSs in wild-type, the lack of increased cryptic transcription in K36R mutants, and the uncoupling of H4 acetylation from cryptic initiation represent major findings that challenge the prevailing model from yeast. The depth of sequencing provides strong statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C78"
+    ],
+    "result": "H3K36 mutation has minimal effects on alternative splicing, with very few differential splicing events detected and no changes in global splice junction usage, indicating that H3K36 is not a significant contributor to splicing regulation in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C78 are supported by comprehensive MISO analysis (Figure 5A-B) and global splice junction analysis (Figure 5C). The findings contradict previous reports based on SETD2 depletion, suggesting those effects may be due to non-histone functions of SETD2. The statistical criteria for significance are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C84"
+    ],
+    "result": "A subset of highly expressed genes shows reduced transcript levels in poly-A RNA but not nuclear RNA in K36R mutants. This defect is rescued by RNAi depletion of the exonuclease pacman and deadenylases twin and Pop2, but not by Dcp2 depletion, indicating H3K36 contributes to post-transcriptional mRNA maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 and C84 are supported by comparison of poly-A and nuclear RNA-seq (Figure 6A-B), RT-PCR fractionation experiments (Figure 6\u2014figure supplement 1A), and RT-qPCR rescue experiments (Figure 6C). The selective rescue by specific RNA degradation factors provides mechanistic insight. However, the Dcp2 result is acknowledged as inconclusive due to known redundancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C85"
+    ],
+    "result": "H3K36R mutants exhibit reduced poly-A tail length that is independent of deadenylation activity, indicating a defect in polyadenylation rather than subsequent deadenylation. Poly-A site specification remains largely unaffected, suggesting H3K36 has a post-transcriptional role in mRNA maturation linked to 3' end formation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C85 are supported by LM-PAT assay data (Figure 6D) showing reduced poly-A tail length in K36R that persists even with deadenylase depletion, and DaPars analysis (Figure 6\u2014figure supplement 1E) showing no change in poly-A site usage. The YFP reporter provides a controlled system, though transcriptome-wide validation is noted as needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Very low levels of H3K36me3 signal remain in H3K36R mutants, indicating that the histone variant H3.3 is at best a minor contributor to total H3K36me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by western blot data (Figure 3A) and citation to immunofluorescence data from McKay et al., 2015. This observation is important for interpreting the results, as it suggests the phenotypes observed are primarily due to loss of canonical H3K36 methylation rather than H3.3K36 methylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Start-seq signal maps faithfully to annotated transcription start sites with base-pair resolution and correlates with nuclear RNA-seq signal. ATAC-seq signal accumulates in a defined window around TSSs, with exonic nuTSSs depleted of open chromatin signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by validation data in Figure 3\u2014figure supplement 2 and Figure 4\u2014figure supplement 1A. These technical validation results establish the quality and reliability of the sequencing methods used, which is essential for interpreting the biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C76",
+      "C77",
+      "C90"
+    ],
+    "result": "Background claims establishing prior knowledge about chromatin structure, H3K36 methylation distribution and functions, SETD2 properties, and related mechanisms from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C68, C76-C77, and C90 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the current findings. The citations appear appropriate and accurately represent the cited work based on the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Speculative discussion of potential mechanisms by which H3K36 might affect gene expression, including effects on transcription elongation rate, recruitment of RNA modifying enzymes, contributions across multiple processing steps, and roles in 3D genome organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C86-C89, and C91 are explicitly speculative, representing potential mechanisms and future directions rather than demonstrated findings. These are appropriately presented as possibilities requiring further investigation. While speculation is valuable for discussion, these claims cannot be evaluated as supported or unsupported by the current data.",
+    "result_type": "MINOR"
+  }
+]

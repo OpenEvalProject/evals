@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C83"
+    ],
+    "result": "The regenerating spinal cord initially grows slowly (0.45 \u00b1 0.04 mm at day 4) then accelerates, reaching 2.26 \u00b1 0.07 mm by day 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, and C83 are directly supported by experimental measurements shown in Figure 1B with n=8 axolotls. The biphasic growth pattern is clearly documented with quantitative data and error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C45"
+    ],
+    "result": "Neural stem cell density remains constant along the AP axis during regeneration (2.3 \u00b1 0.6 cells/\u03bcm), excluding convergence-extension and cell shape changes as drivers of outgrowth and indicating proliferation-based mechanisms drive expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 and C45 are well-supported by quantitative analysis of SOX2+ cell counts (Figure 2B-C, Figure 2\u2014figure supplement 1) using multiple statistical tests. The constant density observation logically excludes certain mechanisms and supports proliferation-based expansion. The analysis includes appropriate statistical validation (ANOVA, p=0.08).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C4",
+      "C62",
+      "C63",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A high-proliferation zone emerges at day 4, initially located 800 \u00b1 100 \u03bcm anterior to the amputation plane, and shifts posteriorly as regeneration proceeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C4, C62-C63, and C84-C86 are supported by Bayesian model fitting to spatial proliferation data (Figure 2D-F'', Figure 2\u2014figure supplement 3-4). The two-zone model shows significant differences in growth fraction and mitotic index from day 4 onward with appropriate statistical analysis and credibility intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C82"
+    ],
+    "result": "The proliferation rate increases from 0.06 \u00b1 0.02 per day (cell cycle ~10 days) in uninjured spinal cord to ~0.15 per day (cell cycle ~5 days) at day 4, remaining elevated through day 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C82 are supported by calculations combining mitotic index measurements with BrdU labeling data reanalyzed using bootstrapping (Figure 2G, Figure 2\u2014figure supplement 5). The methodology is clearly described and the cell cycle length estimates are consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C46"
+    ],
+    "result": "Quiescent SOX2+ cells (SOX2+/PCNA-) decrease from 180 \u00b1 30 at day 0 to 23 \u00b1 13 at day 6, indicating activation and cell cycle re-entry, with numbers increasing again at day 8 when neurogenesis resumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C46 are supported by quantitative measurements shown in Figure 2H and Figure 2D-H. The decrease in quiescent cell numbers provides direct evidence for activation, though the inference about re-entry is reasonable given the data. The day 8 increase is supported by citation to prior work on neurogenesis resumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Clone tracking reveals cells preserve spatial order during regeneration, with cells near the amputation plane moving fastest (cells at 800 \u03bcm move at 20 \u00b1 9 \u03bcm/day), while anterior cells barely move.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C70-C72 are supported by sparse labeling and clone tracking experiments (Figure 2I-K). The velocity measurements are quantified with error estimates and show a clear spatial gradient. The findings are consistent with prior work (Mchedlishvili et al., 2007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C89"
+    ],
+    "result": "A mathematical model incorporating cell cycle acceleration, quiescent cell activation (k = 0.2 \u00b1 0.1 day\u207b\u00b9), and cell influx quantitatively predicts the observed spinal cord outgrowth time-course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C89 are supported by the model fitting to growth fraction data (Figure 3B) and fit-free prediction of outgrowth (Figure 3C). The model successfully recapitulates experimental data with appropriate confidence intervals calculated via bootstrapping (100,000 iterations). The single fitted parameter (k) is well-constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C54",
+      "C64",
+      "C65",
+      "C81",
+      "C90"
+    ],
+    "result": "In silico experiments demonstrate that cell cycle acceleration is the major driver of spinal cord outgrowth; switching it off reduces predicted outgrowth to 1.7 mm (p=0.003), 0.6 mm shorter than observed, while removing cell influx or activation has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C50, C54, C64-C65, C81, and C90 are supported by systematic in silico perturbation experiments (Figure 3D-G). The model predictions with mechanisms switched off show clear quantitative differences, with statistical significance reported for cell cycle acceleration. The logic is sound: only removing acceleration significantly affects outgrowth prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Cell influx and quiescent neural stem cell activation play minor roles in regenerative spinal cord outgrowth, as switching them off in the model has minimal effect on predicted outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C51-C53 are supported by in silico modeling (Figure 3E-F). The model predictions show that removing these mechanisms individually or together (Figure 3G) does not significantly alter outgrowth predictions, providing strong evidence for their minor contribution relative to cell cycle acceleration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C87"
+    ],
+    "result": "The model successfully predicts reduced outgrowth in Sox2-knockout conditions when cell cycle acceleration is switched off, consistent with independent experimental data showing Sox2-knockout prevents cell cycle acceleration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C66-C69, and C87 are supported by model validation against independent data from Fei et al., 2014 (Figure 3\u2014figure supplement 2). The model recapitulates the Sox2-knockout phenotype when acceleration is removed, though the authors appropriately note assumptions about compensatory mechanisms and the need for density correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C78",
+      "C88"
+    ],
+    "result": "Cells may be passively displaced by anterior dividing cells, with posterior cells experiencing stronger push forces, and the tube-like neural stem cell structure might serve as a scaffold for tissue architecture rebuilding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74, C76, C78, and C88 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While consistent with observed velocity gradients, these mechanistic explanations lack direct experimental validation. The authors appropriately present these as plausible models rather than demonstrated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C60"
+    ],
+    "result": "Axolotls uniquely mobilize neural stem cells efficiently to resolve spinal cord injuries, unlike other vertebrates that possess neural stem cells but lack comparable regenerative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10, and C60 are supported by citations to established literature (Becker and Becker, 2015; Tanaka and Ferretti, 2009; Holtzer, 1956; Mchedlishvili et al., 2007) and represent well-established knowledge in the field. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C61",
+      "C79"
+    ],
+    "result": "Prior work by the authors showed regenerating neural stem cells revert to an embryonic-like state involving PCP signaling, downregulation of pro-neural genes, upregulation of proliferation genes, cell cycle acceleration, and switch to proliferative divisions, with PCP directing division orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C11-C18, C61, and C79 appropriately cite prior work by Rodrigo Albors et al., 2015. These claims provide essential context for the current study and are properly attributed. The current manuscript builds on this foundation with quantitative modeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C75"
+    ],
+    "result": "Increased SOX2+ cell proliferation upon spinal cord injury is common across vertebrates (zebrafish, Xenopus, mouse, axolotl), with injury triggering long-range proliferation waves extending beyond the regeneration source zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C75 are supported by citations to multiple studies across species (Hui et al., 2010, 2015; Gaete et al., 2012; Lacroix et al., 2014; Mchedlishvili et al., 2007) and data from this work. This comparative context appropriately frames the axolotl findings within broader vertebrate biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C80"
+    ],
+    "result": "Cell number increase during regeneration is tightly regulated to maintain constant density and tube structure, highlighting the importance of orderly neural stem cell pool expansion for efficient regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C80 are supported by the constant density observations (Figure 2B-C) and represent reasonable interpretations of the data. The tight regulation is evidenced by the maintained density despite rapid outgrowth, though the mechanistic basis for this regulation is not explored.",
+    "result_type": "MINOR"
+  }
+]

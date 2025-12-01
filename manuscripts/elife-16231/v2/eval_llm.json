@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The cisternal maturation model describes how the Golgi apparatus functions through three key processes: creation of new cis-cisternae by homotypic fusion of COPII vesicles, dissipation of old trans-cisternae by vesiculation, and recycling of Golgi-resident proteins via retrograde vesicles. Similar maturation processes occur in endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by multiple citations to established literature describing the cisternal maturation model and its features. These are background claims establishing the biological context for the study, not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The evolutionary paradox of cisternal maturation is that it enables large cargo secretion, but large cargo would be impossible without the mechanism already in place. Exaptation\u2014where complex traits arise through neutral processes before being co-opted for function\u2014can resolve this paradox.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish the evolutionary motivation for the study through citations to established literature on exaptation and complex trait evolution. The logical paradox (C7) is clearly stated and the proposed resolution mechanism (C8-C9) is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C60",
+      "C61"
+    ],
+    "result": "The central hypothesis is that cisternal maturation emerges spontaneously from basic vesicle traffic and homeostasis requirements, prior to selection for function. This would allow the Golgi architecture to arise non-adaptively, with form preceding function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C60, and C61 articulate the main hypothesis and evolutionary conclusion of the paper. These are supported by the computational analysis presented throughout (C10 explicitly references DATA and INFERENCE evidence), though C61 is appropriately marked as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Vesicle traffic is mediated by specific molecular interactions: coats and adaptors drive budding, tethers and SNAREs regulate fusion, and Arf/Rab GTPases coordinate these events through regulatory cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 provide established background on vesicle traffic molecular machinery, all supported by appropriate citations to the literature. These are not novel findings but necessary context for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors develop a Boolean modeling approach for vesicle traffic, which has not been previously applied to this system. The approach focuses on qualitative molecular specificity rather than quantitative kinetics and produces results qualitatively similar to more detailed stochastic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe the methodological innovation. C17 is supported by prior work citation, C18-C19 establish novelty, and C20 provides validation through comparison with stochastic models (Figure 1G,H). The validation is qualitative but appropriate for establishing the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C32"
+    ],
+    "result": "Statistical sampling of homeostatic vesicle traffic networks reveals that over 80% require minimal homotypic fusion (\u22642 vesicle types), and nearly half (4024/8614) contain maturation chains with creation, compositional maturation, and dissipation coupled by retrograde vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C32 present key quantitative findings from the computational analysis. The specific numbers and fractions are clearly stated and represent direct outputs from the sampling procedure described in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Generated networks show characteristic compositional properties: 90% have \u22648 compartments and \u226411 vesicle types, compartments show bimodal compositional complexity, vesicles are compositionally simple, and larger networks require more molecular component types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe statistical properties of the generated networks, all supported by data in Figure 2 supplements. These are descriptive statistics directly computed from the simulation outputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "A significant fraction of homeostatic networks resemble real eukaryotic vesicle traffic networks. The real eukaryotic network appears typical in terms of compartment numbers, chain numbers, and chain lengths compared to generated networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 compare model outputs to biological reality (Figure 2). The comparison is qualitative but supported by the statistical distributions shown. This validates that the model generates biologically plausible structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cell-like networks with maturation chains occur most frequently at low-to-moderate homotypic fusion rates. At very low rates, only transport-balanced networks form; at very high rates, networks fragment into disconnected vesiculating subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe how network topology depends on homotypic fusion rates, supported by Figure 2E and examples in Figure 2A-C. This reveals a parameter regime where maturation emerges, which is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Maturation chain lengths follow a geometric distribution, suggesting that each maturation step is random and independent, similar to random processes like coin flips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 identify an unexpected statistical pattern (Figure 3C) and provide a probabilistic interpretation. The geometric distribution is clearly shown in the data, and C34 correctly describes the general property of such distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Motif analysis reveals that the three most frequent three-compartment motifs are sub-graphs of maturation chains, and 8 of the top 10 motifs contain maturation chains. Networks without maturation chains show no clear pattern, characterized by ~50 different motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 present results from unbiased motif analysis (Figure 3A, Figure 3 supplement 1). The quantitative findings demonstrate that maturation chain motifs dominate the network topology space, supporting the main thesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Maturation cycles (where compartment composition oscillates) occur in about a quarter of all homeostatic networks (2407/8614). Even without homotypic fusion, over a third of networks (1053/3173) contain cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 quantify the occurrence of cyclic maturation, an alternative to linear chains. The specific counts are provided and represent direct analysis outputs. This shows maturation can take multiple forms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Most maturation chains (72%) terminate at fixed compartments rather than cycles. Of these fixed terminal compartments, 61% (2820/4588) dissipate by giving up all cargo as vesicles at the next timepoint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C68-C71 provide detailed quantitative analysis of maturation chain termination (Figure 4B). The numbers are internally consistent and represent direct counts from the dataset. This characterizes the fate of maturing compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C72",
+      "C73"
+    ],
+    "result": "Younger compartments in maturation chains disproportionately receive retrograde vesicles from their immediate older successors (median 0.75 vs 0.09 expected by chance, >8-fold enrichment). This drives molecular treadmilling where molecules hop backward via retrograde vesicles, converting younger compartments to older compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 and C72-C73 present the key mechanistic finding about retrograde vesicle flow (Figure 4C). The quantitative enrichment is clearly demonstrated and the treadmilling mechanism (C44-C45) is a logical inference from the observed vesicle flow pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Across 8614 non-trivial homeostatic networks, 3111 maturation chains precisely match all three diagnostic features of the cisternal maturation model: creation by homotypic fusion, maturation through compositional changes, and dissipation by vesiculation with retrograde recycling. This demonstrates that basic vesicle traffic dynamics are sufficient to generate Golgi-like structures without fine-tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 present the central quantitative result and main conclusion. The specific count (3111/8614 = 36%) of networks matching all three criteria is substantial, supporting the claim that maturation emerges spontaneously. This directly addresses the evolutionary hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The results apply broadly to cell-wide vesicle traffic, not just the Golgi, with implications for other secretory and endocytic systems. Maturation chains and stable compartments with balanced transport co-exist in networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 discuss the scope and generality of findings. C49 is supported by citation and the broad nature of the model, while C50 is an observation from the data that the two mechanisms are not mutually exclusive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Unlike previous models that either focus on stable compartments or introduce maturation by hand, this framework allows maturation to emerge spontaneously. Earlier analyses assumed maturation required retrograde vesicles between spatially neighboring compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 contrast this work with prior modeling approaches, all supported by appropriate citations. C53 emphasizes the key novelty that maturation emerges rather than being imposed, which is validated by the computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Un-stacked Golgi are widespread and have retrograde vesicles, consistent with the model's prediction that spatial organization is not a prerequisite for maturation. This supports the well-mixed cytoplasm assumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 connect model predictions to biological observations through citations. The inference (C57) that spatial organization is not required is consistent with both the model assumptions and the cited biological evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C74",
+      "C75"
+    ],
+    "result": "When compartment positions are optimized to minimize vesicle travel distance while maintaining uniform distribution, maturation chains spontaneously organize into spatially contiguous stacks. In optimized networks, 42% have mean distances <1.5\u00d7 nearest neighbor distance, while no random networks do.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C74-C75 present results from spatial optimization analysis (Figure 4 supplement 1). The quantitative comparison between optimized and random networks is clear. However, the optimization is post-hoc and the biological relevance of the specific energy function is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "In simulations for N=7 molecular labels, 98% of initial conditions reached an orbit within 1024 steps, of which 72% were homeostatic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 provides convergence statistics for the simulation procedure. These are straightforward computational results that validate the sampling approach was effective at finding homeostatic states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "There are 43,700 possible ways to connect three compartments to form a motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a combinatorial calculation for the motif space. This is a straightforward mathematical result that establishes the size of the search space for motif analysis.",
+    "result_type": "MINOR"
+  }
+]

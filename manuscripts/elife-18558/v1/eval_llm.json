@@ -1,0 +1,150 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Pharmacological inactivation of face patch ML caused a significant reduction in face-detection performance of approximately 11-15% across visibility levels (p<0.001), with significant decrements at 9 out of 10 visibility levels tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide converging statistical evidence from multiple analyses (paired t-tests, linear regression) showing consistent performance deficits. The effect size is substantial given that only 1 of 12 face patches was inactivated unilaterally. Statistical tests are appropriate with FDR correction for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C51"
+    ],
+    "result": "ML inactivation showed categorical specificity, impairing face detection while sparing body and shoe detection, with only the face-inactivated condition showing significant deficits that were pairwise different from all other category/condition combinations (p<0.05, Tukey's test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C51 demonstrate categorical specificity through appropriate statistical comparisons (ANCOVA, ANOVA with post-hoc tests). The use of body and shoe categories as controls is well-justified, though the authors acknowledge possible weak non-specific effects that did not reach significance even with increased statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The behavioral impairment was anatomically specific to ML, as demonstrated by recovery to baseline performance 1-2 days post-injection and minimal effects from off-target injections that had only 9.6% overlap with ML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide strong evidence for anatomical specificity through temporal (recovery) and spatial (off-target) controls. The transience of effects (C48) supports muscimol as the causative agent. However, the off-target control design (injecting outside ML rather than saline into ML) is a minor limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58"
+    ],
+    "result": "ML inactivation caused a rightward shift (\u03b1 increased, p<0.001) and elevated lapse rate (\u03bb increased, p=0.016) in the psychometric function, while slope (\u03b2) remained unchanged, resulting in increased detection threshold from 0.37\u00b10.02 to 0.45\u00b10.03.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide detailed psychometric characterization with appropriate statistical tests. The preserved slope but shifted threshold and increased lapse rate suggest ML affects both sensitivity and maximum performance. The goodness-of-fit (R\u00b2>0.9, C83) supports the validity of the psychometric modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "fMRI-guided muscimol injections achieved 44% volumetric coverage of ML on average, with 76% of injection volume contained within ML, as validated by co-infused gadolinium contrast agent that tracks muscimol diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 describe a rigorous injection validation method. The use of gadolinium as a surrogate tracer (C23-C24) is supported by prior literature. The volumetric analysis provides quantitative assessment of targeting accuracy. However, 44% coverage (C28) vs. 63.8% theoretical maximum (C27) indicates incomplete inactivation, which the authors acknowledge may underestimate effect sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Muscimol-induced performance deficits decreased by approximately 1% per session with repeated exposure (F(1,752)=15.33; p<0.0001), suggesting development of compensatory behavioral strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 identify a significant learning effect using appropriate ANCOVA analysis. This finding is important for interpreting variability in the data and suggests neural plasticity or strategic adaptation. However, the interpretation as 'compensatory strategies' (C55) is somewhat speculative without direct evidence of what strategies were employed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The magnitude of face-detection performance deficit was not significantly correlated with ML-injection overlap (Spearman's \u03c1=0.42, p=0.1; ANCOVA F(1,102)=1.35, p=0.25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C53 report lack of correlation between injection overlap and deficit magnitude. While the authors interpret this as evidence that targeting the central ML was sufficient, the lack of correlation could also reflect insufficient statistical power (n=11 on-target injections) or non-linear relationships. The Spearman's \u03c1=0.42 suggests a moderate positive trend that failed to reach significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "A naturalistic touchscreen-based object detection task was developed with 24 objects at 10 visibility levels, using random scaling, rotation, and textured backgrounds to discourage reliance on low-level features and require pooling across ML neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C74-C80 describe a well-designed behavioral paradigm. The task manipulations (random scaling/rotation C19, textured background C79, time constraint C80) are appropriately justified to emphasize face detection over memorization of specific exemplars or low-level features. The free-viewing design is ecologically valid though it introduces variability acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C39"
+    ],
+    "result": "ML function is crucial for detection of faces in natural scenes, performing a critical first step on which other face processing operations can build, as demonstrated by significant impairment from inactivating just 1 of 12 temporal lobe face patches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C39 represent the main conclusion of the study. This is well-supported by the convergence of evidence from the primary results (significant deficits, categorical specificity, anatomical specificity). However, the claim that ML performs a 'critical first step' is somewhat inferential, as the study demonstrates necessity but not sufficiency, and unilateral inactivation with free viewing may underestimate the full role of ML.",
+    "result_type": "MAJOR"
+  }
+]

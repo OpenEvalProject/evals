@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The HR activity of BRCA1 requires intact RING, CC, and BRCT domains. Mutations disrupting BARD1 binding (C61G, C64R) reduced HR by ~5-fold, PALB2-binding mutations (L1407P, M1411T) reduced HR by ~4.5-fold, and BRCT mutations abrogated HR activity. Variants neutral for protein-protein interactions showed >85% HR activity with a calculated cutoff threshold of 54.3-54.7%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 demonstrate protein-protein interaction defects confirmed by co-IP (Figure 1B), and claims C32-C35 show corresponding HR defects measured by the DR-GFP reporter assay (Figure 1D). The cutoff threshold (C36) was calculated using ROC analysis with appropriate controls. The data are internally consistent and supported by multiple independent experiments with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The BRCA1-PALB2 interaction dictates the choice between HR and SSA pathways. PALB2-binding mutants of BRCA1 (L1407P, M1411T) elevated SSA by ~2.5-fold while reducing HR. Depletion of BRCA2 or PALB2 increased SSA by 1.8-7.2 fold in a RAD52-dependent manner. PALB2 mutants defective for BRCA1 or BRCA2 binding failed to suppress SSA, establishing that PALB2 controls HR/SSA pathway choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple complementary experiments: SSA reporter assays (Figure 2B-F), siRNA knockdowns with multiple independent siRNAs (C46-C47), RAD52 dependency experiments (C50-C51), and PALB2 mutant rescue experiments (C52-C54). The conclusion (C55-C56) is well-supported by converging evidence from different experimental approaches. Statistical significance is demonstrated (p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "HR activity, but not SSA activity, correlates with drug resistance to cisplatin and olaparib. RING, CC, and BRCT domain mutants showed hypersensitivity to both drugs, while variants neutral for protein-protein interactions conferred >90% resistance. Notably, M1400V with 73% HR activity failed to confer PARPi resistance, demonstrating the importance of these domains for therapeutic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by colony formation assays in MDA-MB-436 cells (Figure 3C) with appropriate controls and multiple replicates. The correlation between HR and drug resistance (C62) is clearly demonstrated, though the non-linear relationship for some variants (e.g., M1400V in C60) suggests complexity. The conclusion (C63) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "BRCT missense mutants exhibit cytoplasmic localization defects that can be rescued by BARD1 co-expression but not their HR defects. The localization defect cannot be rescued by Leptomycin B, suggesting the BRCT domain may bind an unidentified factor promoting nuclear entry. The lack of HR activity is due to both localization defects and inability to interact with binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by immunofluorescence data (Figure 4A-E) showing localization patterns and rescue experiments. C68 is supported by protein expression data (Figure 1-supplement 2). However, C69 is speculative (marked as SPECULATION in evidence_type), and C71 is an inference. Despite the speculative element, the core findings about localization defects and partial rescue by BARD1 are well-documented. The HR rescue experiments (C70, Figure 4F) provide critical negative data supporting the dual mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C106",
+      "C107"
+    ],
+    "result": "The I26A mutation, previously thought to specifically abrogate E3 ligase activity without affecting BARD1 binding, actually reduces BARD1 binding by ~3-fold and causes significant HR defects (~30% reduction) and drug sensitivity (67% reduction for cisplatin, complete loss for olaparib). This challenges previous interpretations from mouse studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by new experimental data (Figure 5A-C) showing reduced BARD1 binding and functional defects. Claims C72-C74 cite prior literature, while C106-C107 cite supporting evidence from other systems. The discrepancy with mouse studies (C73-C74) is acknowledged and discussed. The data clearly demonstrate that I26A is a complex mutation affecting multiple properties (C76), which is an important correction to the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The K119R mutation, which abolishes BRCA1 sumoylation, had no effect on HR or cisplatin resistance but reduced olaparib resistance by ~30%, suggesting a possible HR-independent role for BRCA1 sumoylation in PARPi resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 are supported by experimental data (Figure 5B-C), but C85 is explicitly marked as SPECULATION. The differential effect on olaparib versus cisplatin is intriguing but the mechanism is unclear. The result suggests an interesting phenomenon but requires additional validation and mechanistic studies to be fully supported. The speculation about HR-independent mechanisms is reasonable but not proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Systematic deletion analysis reveals that BRCA1 HR function requires the RING, CC, and BRCT domains, with a positive but non-linear correlation between HR activity and drug resistance. BD7 deletion (residues 1056-1307) reduced HR/SSA by ~50% despite retaining all known functional domains, suggesting a novel regulatory element. BD6 showed differential effects on olaparib versus cisplatin resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C103 are supported by comprehensive deletion analysis with protein-protein interaction assays (Figure 6B), HR/SSA assays (Figure 6C), and drug resistance assays (Figure 6D). The non-linear correlation (C100) is clearly demonstrated by comparing BD1, BD4, BD7, and BD9 data (C98-C99). The speculation about a novel element in BD7 (C96) is reasonable given the data but requires follow-up. The differential drug effects (C101-C102) are interesting but mechanistically unclear. Overall, the systematic approach and consistent results across multiple assays support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C113",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Relatively common VUSs outside the RING, CC, and BRCT domains do not significantly affect HDR activity. Four variants (P871L, E1038G, K1183R, S1613G) found in 'wild-type' cDNAs are benign. Except for C61G and A1708E, all other top 22 missense variants are fully or mostly functional in HR and drug resistance, suggesting they are unlikely to be pathogenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 establish the benign nature of common variants through sequencing and database classification. Claims C113, C117-C118 are conclusions drawn from the comprehensive functional analysis of 32 variants (Figures 1D, 3C). The data consistently show that variants outside key domains retain >85% HR activity and drug resistance. C119 is speculative but reasonable given the BD7 data. This result has important clinical implications for VUS interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on BRCA1 structure, function, and clinical significance. BRCA1 plays a critical role in HDR of DSBs, contains RING and BRCT domains with specific binding partners (BARD1, PALB2, Abraxas, BRIP1, CtIP), and germline mutations confer high cancer risk. The repair defect is targeted therapeutically with platinum drugs and PARP inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C21) provide established background knowledge supported by extensive citations to prior literature. They are not novel findings of this study but provide necessary context. All claims are either well-established facts (C10-C11) or supported by appropriate citations (C4-C9, C12-C21). This background is accurate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The BIC database contains 15,311 BRCA1 sequence alterations, including 6,133 (40%) frameshift/truncating mutations and 4,577 (30%) missense variants, most of uncertain clinical significance. VUS interpretation remains a challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are factual statements about database content that can be verified. C25 is supported by citation to Couch et al., 2014 and represents the motivation for the study. These claims accurately describe the clinical problem being addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "Prior literature establishes that loss of BRCA2 increases SSA in mouse cells and some PALB2 heterozygous human cell lines show increased SSA. RAD52 possesses strand annealing activity in vitro and promotes SSA in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C48-C49 are supported by appropriate citations to prior literature (Stark et al., 2004; Tutt et al., 2001; Obermeier et al., 2016; Mortensen et al., 1996). These provide important context for the current study's findings on SSA regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Clinical context and therapeutic predictions. MDA-MB-436 cells are BRCA1-deficient triple-negative breast cancer cells. Olaparib is approved for BRCA1/2 mutant ovarian cancer. Platinum drugs and PARPi generate lesions requiring HR for repair. Patients with mutations in RING, CC, or BRCT domains are predicted to respond to these therapies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C57 is supported by citation (Elstrodt et al., 2006). C114-C115 are factual statements about clinical approvals and drug mechanisms supported by citation (Lord and Ashworth, 2016). C116 is a clinical prediction (INFERENCE) based on the experimental data from this study, which is reasonable but represents extrapolation from cell culture to clinical outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C108"
+    ],
+    "result": "Prior mouse studies show that conditional knockout of Brca1 or Bard1 leads to indistinguishable mammary carcinomas, and C61G mutant failed to suppress tumor development. CtIP binding to BRCA1 is dispensable for CtIP-mediated resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by citations to Shakya et al., 2008 and Drost et al., 2011. C108 is supported by citations to Polato et al., 2014 and Reczek et al., 2013. These provide important context from prior work, though they are not findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Synthesis of findings: BARD1 can rescue nuclear localization but not HR defects of BRCT mutants, supporting a direct role for BRCT in DNA repair. BRCA1 plays a key role in resection. PALB2 is the key partner for BRCA1 HR function and the primary switch point for HDR pathways following resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C109 is supported by experimental data (Figure 4F). C110 is an inference consistent with prior work (Bunting et al., 2010) and the current data. C111-C112 are major conclusions drawn from the comprehensive PALB2 experiments (Figures 2B-F). These synthetic conclusions integrate multiple lines of evidence and are well-supported.",
+    "result_type": "MAJOR"
+  }
+]

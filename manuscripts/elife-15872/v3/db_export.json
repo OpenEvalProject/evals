@@ -1,0 +1,1811 @@
+{
+  "submission": {
+    "id": "fcc843b7-d9a3-4ddb-8a06-407eeca031f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:50:33.017810Z",
+    "updated_at": "2025-11-30T20:50:33.017810Z"
+  },
+  "content": [
+    {
+      "id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "submission_id": "fcc843b7-d9a3-4ddb-8a06-407eeca031f5",
+      "content_type": "manuscript",
+      "content_text": "# Mechanisms and functional roles of glutamatergic synapse diversity in a cerebellar circuit\n\n## Authors\n\n- Valeria Zampini<sup>1</sup>\n- Jian K Liu<sup>4</sup>\n- Marco A Diana<sup>1</sup>\n- Paloma P Maldonado<sup>1</sup>\n- Nicolas Brunel<sup>4</sup> ([ORCID: 0000-0002-2272-3248](https://orcid.org/0000-0002-2272-3248)) \u2020\n- St\u00e9phane Dieudonn\u00e9<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institut de Biologie de l'ENS Ecole Normale Sup\u00e9rieure Paris France\n2. Inserm, U1024 Paris France\n3. CNRS, UMR 8197 Paris France\n4. Neurosciences Federation Universit\u00e9 Paris Descartes Paris France\n5. Department of Ophthalmology University Medical Center Goettingen Goettingen Germany\n6. Bernstein Center for Computational Neuroscience G\u00f6ttingen Germany\n7. Department of Statistics and Neurobiology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynaptic currents display a large degree of heterogeneity of their temporal characteristics, but the functional role of such heterogeneities remains unknown. We investigated in rat cerebellar slices synaptic currents in Unipolar Brush Cells (UBCs), which generate intrinsic mossy fibers relaying vestibular inputs to the cerebellar cortex. We show that UBCs respond to sinusoidal modulations of their sensory input with heterogeneous amplitudes and phase shifts. Experiments and modeling indicate that this variability results both from the kinetics of synaptic glutamate transients and from the diversity of postsynaptic receptors. While phase inversion is produced by an mGluR2-activated outward conductance in OFF-UBCs, the phase delay of ON UBCs is caused by a late rebound current resulting from AMPAR recovery from desensitization. Granular layer network modeling indicates that phase dispersion of UBC responses generates diverse phase coding in the granule cell population, allowing climbing-fiber-driven Purkinje cell learning at arbitrary phases of the vestibular input.\n\n## Introduction\n\nSensory stimuli are encoded by populations of neurons with a diversity of spatio-temporal selectivity properties, which allow sensory systems to obtain accurate representations of such stimuli over the whole range of ecological spatial and temporal time scales. In the vestibular system, primary vestibular neurons primarily encode the rotational velocity (semicircular canals) and linear acceleration (gravitational or inertial, in the otholitic organs) of the head (Arenz et al., 2008; Fernandez and Goldberg, 1971; Goldberg, 2000; Goldberg and Fernandez, 1971a, 1971b; Green and Angelaki, 2010; Sadeghi et al., 2007). These vestibular inputs are in turn used to adapt body posture, generate compensatory and orienting eye movements, and modify vasomotor autonomic functions.\n\nThe vestibulo-cerebellum, which is innervated by primary vestibular afferents in the vermal part (Barmack et al., 1993; Chabrol et al., 2015; Gerrits et al., 1989; Korte and Mugnaini, 1979) and by secondary vestibular afferents in all its subsections (Barmack et al., 1992; Magras and Voogd, 1985; Thunnissen et al., 1989), is well known to perform the sensory-motor integration required to orient the body in space and to generate accurate eye movements. Computational models have suggested that, in order to perform such functions, vestibular inputs should be pre-processed by filters with a wide diversity of temporal scales so that learning can take place at synapses onto Purkinje cells (Dean et al., 2010; Fujita, 1982). A similar idea was proposed for suppression of the self-generated sensory signal in the electric fish (Kennedy et al., 2014; Roberts and Bell, 2000). Despite the central importance of this filtering process for vestibulo-cerebellar function, it remains unclearat which stage and through which underlying mechanisms this pre-processing takes place. In vivo electrophysiological recordings during passive head rotation indicate that primary vestibular mossy fibers activity displays a high level of stereotypy with mostly in-phase firing during sinusoidal velocity modulations (Arenz et al., 2008). Filtering may nevertheless occur upstream of granule cells, as the available in vivo recordings of granule cells show a large diversity of phase shifts in response to head rotations (Barmack and Yakhnitsa, 2008). This suggests that pre-processing occurs in the granular layer, as recently suggested in the electric fish electrosensory lobe (Kennedy et al., 2014).\n\nExtrinsic vestibular extrinsic mossy fibers (eMFs) project to granule cells but also to another cell type, the unipolar brush cells (UBCs). Each UBC receives a single mossy fiber input, and projects onto granule cells by forming several intrinsic mossy fiber terminals (iMFs). The single mossy fiber contacting the dendritic brush of UBCs forms a giant synapse of unique morphology (Mugnaini et al., 1994) at which various types of glutamate receptors are expressed (Jaarsma et al., 1995). Entrapment of glutamate in the synaptic cleft can lead to responses on slow time scales (Kinney et al., 1997; van Dorp and De Zeeuw, 2014). UBCs have been divided into different subtypes by a number of studies (Borges-Merjane and Trussell, 2015; Dino et al., 1999; Mugnaini et al., 1997; Nunzi et al., 2002). In particular, Borges-Merjane and Trussell (2015) showed recently that dorsal cochlear nucleus UBCs can be divided into ON UBCs, which have an excitatory response to their mossy fiber inputs mediated by both AMPA and mGluR1 receptors, and into OFF UBCs, the response of which is inhibitory and is produced by mGluR2 receptor activation.\n\nThese studies still leave unanswered the question whether and how UBC pre-processing generates the diversity of tuning properties of granule cells. To answer this question, we first set out to characterize the input/output relationship of UBCs in the presence of sinusoidal MF stimulation. Our experiments show that UBCs have a wide diversity of tuning properties, due to the diversity of their synaptic responses. We then investigated the functional consequences of this diversity on the computational properties of the vestibulocerebellar circuit, using a network model. We demonstrate that UBCs, through the generation of diverse response profiles, greatly enhance the ability of Purkinje cells to learn arbitrary input/output mappings.\n\n## Results\n\n### Responses to steady MF stimulations defines OFF and ON UBCs\n\nIn vivo, afferent vestibular inputs fire steadily at mean rates of 10\u201350\u2009Hz at rest (Arenz et al., 2008; Barmack and Yakhnitsa, 2008; Dickman et al., 1991; Fernandez and Goldberg, 1971; Goldberg, 2000; Goldberg and Fernandez, 1971a, 1971b; Green and Angelaki, 2010; Loe et al., 1973; Sadeghi et al., 2007; Tomko et al., 1981). We first examined the impact of a continuous MF input on the discharge rate of UBCs in acute brain slices using a typical firing rate of 26\u2009Hz. GABAergic and glycinergic components were blocked during the experiments by perfusion of SR95531 (2\u2009\u03bcM), CGP 55,845 (0.5\u2009mM), and strychnine (1\u2009\u03bcM). This simple protocol evoked three types of behavior. In a first group of cells (OFF-UBCs, n= 25, Figure 1A), the glutamatergic MF input evoked a hyperpolarization (\u22129.5 \u00b1 4.2 mV at steady-state). In 5 cells the hyperpolarization was preceded by a transient period of action potential firing (4 \u00b1 2 spikes at 26.3 \u00b1 15.2\u2009Hz, duration 0.12 \u00b1 0.06\u2009s). Out of 25 OFF-UBCs, 6 fired spontaneously (12.8 \u00b1 8.1\u2009Hz) at rest. MF stimulation silenced 5 of these UBCs and decreased firing rate by 28% in the last one.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig1-v3.jpg)\n\n**Figure 1.:** (A) Current-clamp response of a OFF-UBC to a prolonged stimulation of its afferent MF at 26 Hz showing the OFF hyperpolarizing behavior. Steady stimulation is followed by a 1 Hz sinusoidal modulation of the MF stimulation rate. (B) Enlargement of the selected region in (A) showing the phase of UBC spiking relative to the MF stimulation modulation. (C) Fit of the OFF-UBC instantaneous firing rate vs phase relationship, obtained with the ten stimulation cycles shown in (A), using an exponentiated cosine function (see Materials\u00a0and\u00a0methods) Here and in the next figures the MF stimulation frequency is depicted in black and peaks at 90\u00b0. The blue arrow represents the UBC phase shift relative to the MF stimulation. (D) Polar plot of the phase shift and firing frequency modulation of OFF-UBCs (n = 20) obtained with 1 Hz sinusoidal modulations of the MF stimulation rate. The cell in (A) is plotted in red. (E) Distribution of the concentration factor k1/2 yielded by the exponentiated cosine fit of OFF-UBC responses in (C) (n = 20). (F\u2013J) Same as (A\u2013E) for ON-UBCs. (K) Typical UBC current-clamp responses to the current injections displayed on top traces, where a sinusoidal current modulation of constant amplitude is superimposed on a variable holding current. (L) Phase shift of the UBC responses to sinusoidal current injections shown in (K) as a function of the injected holding current. (M) k1/2 values of the UBC responses to sinusoidal current injections shown in (K) as a function of the injected holding current.\n\nIn a second group of cells (ON-UBCs, n= 22, Figure 1F) MF synaptic inputs depolarized the neuron, as expected from a glutamatergic fiber. At steady-state ON-UBCs were depolarized by 10.4 \u00b1 5.9 mV from a resting membrane potential of \u221260.7 \u00b1 3.7 mV and fired at 11.7 \u00b1 9.2\u2009Hz with an interspike interval $CV_{2}$ of 0.435 \u00b1 0.239 (see Experimental Procedures). Overall, ON-UBCs covered a range of frequencies (1 \u2013 29.9\u2009Hz) similar to that found in vivo under anesthesia (Barmack and Yakhnitsa, 2008; Ruigrok et al., 2011; Simpson et al., 2005). Only 1 of 22 ON UBCs fired at rest (1.7\u2009Hz) in the cell-attached configuration.\n\nFinally, a group of complex UBCs (n = 10) displayed delayed or gradual depolarization which did not reach steady-state at the end of the MF stimulation protocol (Figure 1\u2014source data 1A,E). Similarly to OFF-UBCs, 8 of these 10 UBCs first hyperpolarized and then resumed firing at 10.9 \u00b1 10.5\u2009Hz with a delay from stimulation onset of 1.2 \u00b1 1.3\u2009s (from 0.44 to 4.16\u2009s). The slow inward current underlying the depolarization (Figure 1\u2014source data 1B) was blocked by the group I mGluR antagonist JNJ16259685 (Figure 1\u2014source data 1C). In some cells the slow depolarization persisted after MF stimulation was stopped, leading to several seconds (min 2\u2009s, max >10\u00a0s) of firing (5.6 \u00b1 3.7\u2009Hz, min 3.3; max 10.9). These complex UBCs behave as the very low frequency integrators predicted by vestibular psychophysics (Green and Angelaki, 2010). They could nonetheless not be studied here within the timescale of our stimulation protocols and were discarded from further experiments.\n\n### OFF-UBCs and ON-UBCs respond to sinusoidal modulation with different phase shifts and bursting profiles\n\nOFF-UBCs and ON-UBCs were further exposed to 1\u2009Hz modulations of their MF input rate (Figures 1A and F) (see Experimental Procedures), as seen for vestibular MFs during sinusoidal head rotations in vivo (Arenz et al., 2008; Fernandez and Goldberg, 1971). OFF- and ON-UBCs responded to MF rate modulation with phase-locked firing (Figures 1B and G), as assessed by fitting the phase distribution of firing rates with a circular normal function, $f(\\theta)=r_{min}+(r_{max}\u2212r_{min})(e^{k^{2}cos(\\theta\u2212\u03d5)}\u2212e^{\u2212k^{2}})/(e^{k^{2}}\u2212e^{\u2212k^{2}}),$\n\n(see Experimental Procedures), where $r_{max}$ ($r_{min}$) is the maximal (minimal) firing rate, $\u03d5$ is the preferred phase shift and $k$ is a measure of concentration of the spike phases (n\u00a0= 47) (Figures 1C and H). A striking feature of the UBC responses was the broad diversity of their phase shift (Figures 1D and I) relative to the peak of the MF stimulation (Figures 1B and G, blue arrow). The phase shift of ON-UBCs was broadly distributed (SD of 105\u00b0; Figure 1I) and covered essentially all possible phase shifts, with a sum of phase preferences weighted by the firing modulation strength of 140\u00b0. OFF-UBCs fired within a narrower range of phases (274 \u00b1 28\u00b0; Figure 1D) and had a significantly higher phase lag than ON-UBCs (p<0.001; Figure 1J). During 1\u2009Hz modulation 4 OFF-UBCs were silenced at all phases.\n\nThe firing modulation amplitude of OFF and ON cells was similar (12 \u00b1 8 and 12 \u00b1 23\u2009Hz; respectively p=0.353) but the dispersion of action potentials along the modulation cycle differed between these two populations. We obtained the spike phase concentration factor $k$ from the fit to the phase histogram. OFF-UBCs fired in short bouts (Figure 1E; $k$ = 2.2 \u00b1 1.2; 16 out of 18 cells with $k$>1). In contrast most ON-UBCs displayed a near-sinusoidal behavior (Figure 1J; $k$\u00a0= 0.9 \u00b1 1.5; 15 out of 22 cells with $k$<1; p=0.0006), with only 7 cells displaying somewhat clustered responses ($\\sqrt{k}$>1; mean 2.2). Thus, OFF and ON UBCs respond to time-modulated MF inputs with different phase-modulated firing behaviors and non-linearity.\n\nUBCs are endowed with a complex set of active membrane conductances which may influence their phase response (Afshari et al., 2004; Diana et al., 2007; Locatelli et al., 2013; Russo et al., 2007). To quantify the effects of these intrinsic conductances we recorded the response of UBCs to sinusoidal current injections at 1\u2009Hz (\u00b1 30\u2009pA) (Figure 1K), while a holding current bias was varied to mimic the tonic drive occurring in ON and OFF UBCs. We found that all UBCs (n = 21) responded with a modest phase advance of 9.9 \u00b1 4.1\u00b0 (Figure 1L), independently of the holding current bias, up to the sodium spike inactivation threshold (200 \u00b1 85\u2009pA). The sharpness of the UBC response was strongly regulated by the holding current, with hyperpolarized cells firing spikes concentrated at the peak of the sinusoidal current injection (Figure 1M). This effect is likely to account for the difference of clustering factor between ON and OFF UBCs (Figures 1E and J). Hence, the strong heterogeneity in UBC phase shifts in response to MF stimulation is not due to intrinsic conductances. We therefore turned our attention to synaptic conductances to explain this heterogeneity.\n\n### mGluR2 mediated hyperpolarization of OFF-UBCs implements phase reversion\n\nA subpopulation of UBCs is known to express group II mGluRs (mGluR2) (Borges-Merjane and Trussell, 2015; Jaarsma et al., 1998; Rousseau et al., 2012) which are positively coupled to a GIRK2 containing inward rectifying potassium channel (Knoflach and Kemp, 1998; Rousseau et al., 2012; Russo et al., 2007). Synaptic currents evoked by trains of MF stimulations were recorded from OFF-UBCs at a holding voltage of \u221260 mV (n = 25; Figure 2). All OFF-UBCs displayed a slow outward post synaptic current (PSC). This current was blocked by the mGluR2 selective blocker LY341495 (1\u2009\u03bcM, n = 25, residual amplitude after block \u22125.3 \u00b1 10.1\u2009pA; Figure 2A). mGluR2 block revealed a NBQX-sensitive inward current in 48% of OFF-UBCs (n = 12) (peak 35.2 \u00b1 28.7\u2009pA; NBQX block of the total charge 95 \u00b1 9%; Figure 2B). These AMPA currents did often show a sharp peak at the onset of stimulation, which could result in a net inward current, but the steady-state current was always largely dominated by the outward mGluR2 components. The steady-state amplitude of mGluR2 PSC increased with the stimulation frequency from 10\u2009Hz (41.5 \u00b1 26.9\u2009pA) to 100\u2009Hz (129.9 \u00b1 43.4\u2009pA; n = 14 cells, p<0.001) (Figures 2C and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig2-v3.jpg)\n\n**Figure 2.:** (A) Synaptic currents evoked by a train of MF stimulations (500 ms at 50 Hz) in an OFF-UBC in control conditions (ctr; black), after mGluR2 block by LY341495 (0.5 \u00b5M, gray), and after block of AMPAR by NBQX (1 \u03bcM, light gray). Stimulation train is shown on top. (B) Quantification of the isolated AMPA component in OFF-UBCs after mGluR2 block. (C) Steady-state mGluR2 currents evoked by 2s stimulations at 10, 20, 50, and 100 Hz display saturation. (D) Frequency dependence of steady-state mGlur2 synaptic currents. Average is in black. (E) The decay time constant of the EPSC at the offset of 500 ms trains of stimulation at 50 Hz correlates with the phase shift recorded in response to a sinusoidal MF stimulation modulation modulated at 1 Hz rate (Figure 1). The black line represents the linear regression. (F) The rise time constant of the outward currents evoked by 500 ms stimulations at 50 Hz correlates with the spikes concentration factor k1/2 obtained in Figure 1. (G) OFF-UBC responses to sinusoidal MF stimulation rate modulations at 0.3, 1, and 3 Hz. Stimulation protocols are shown on top and one period of recording below. (H) Fits of the instantaneous firing rate vs phase relationship of the cell shown in (G). (I) Firing frequency amplitude modulation and phase shifts of 25 OFF-UBCs in response to sinusoidal MF stimulation rate modulations at 0.3, 1, and 3 Hz. The cell displayed in (G) and (H) is plotted in red. Average \u00b1 SD are indicated for each modulation frequency.\n\nmGluR2 currents displayed highly variable activation and decay kinetics (20% to 80% rise time: 259 \u00b1 95 ms; weighted decay time constant 306 \u00b1 149 ms). OFF-UBC fired at the end of the period of low MF activity during 1\u2009Hz modulations and their phase shift was positively correlated with the decay time constant of the mGluR2 current recorded in voltage-clamp (r = 0.621, n = 15, p<0.05) (Figure 2E). The total number of spikes per cycle was positively correlated with the amplitude of mGluR2 hyperpolarization (r = 0.627, n = 18, p<0.01), suggesting that rebound-promoting intrinsic conductances like IH or IT (Diana et al., 2007; Russo et al., 2007), amplify OFF-UBC responses. The spike burst was interrupted by the rise of the mGluR2 current (see Figure 2A), as shown by the negative correlation of the 20 to 80% mGluR2 rise time and concentration factor $k$ (0.668, n = 18, p<0.01).\n\nTo characterize the filtering properties of OFF-UBCs, we applied sinusoidal modulations of the MF stimulation rate at frequencies of 0.3\u2009Hz, 1\u2009Hz and 3\u2009Hz to the same cells (Figure 2G). Peak and trough firing frequencies of MF stimulations were adjusted to mimic constant amplitude rotations at variable angular frequencies (see Experimental Procedures). As a result, the peak MF firing frequency increased from ~40\u2009Hz at 0.3\u2009Hz modulation to ~156\u2009Hz at 3\u2009Hz modulation. The amplitude of OFF-UBC responses increased significantly from 0.3\u2009Hz to 1\u2009Hz and dropped at 3\u2009Hz (p=0.0003; Friedman\u2019s test; Figure 2H and I). Consistently with the increase of PSC amplitude at higher MF firing frequencies (Figure 2D), 20% and 68% of the OFF-UBCs were completely silenced during 1\u2009Hz and 3\u2009Hz modulationsrespectively (Figure 2H and 2I). Phase shifts increased significantly with the modulation frequency (193 \u00b1 46\u00b0 at 0.3\u2009Hz; 274 \u00b1 28\u00b0 at 1\u2009Hz; 367 \u00b1 29\u00b0 at 3\u2009Hz; p<0.0003; Friedman\u2019s test; Figure 2I). These results suggest that OFF-UBCs, signal the end of a movement in the non-preferred direction of their input MF by a brief high-frequency burst of spikes.\n\n### ON-UBCs are driven by phasic and buildup AMPA currents\n\nMF EPSCs mediated by AMPARs have previously been recorded from UBCs (Kinney et al., 1997; Rossi et al., 1995; van Dorp and De Zeeuw, 2014). These AMPA EPSCs are characterized by a prominent slow component produced by the entrapment of glutamate in the cleft of the giant MF synapse onto UBCs (Kinney et al., 1997; van Dorp and De Zeeuw, 2014). These slow EPSCs are likely to mediate the ON behavior and have been proposed to perform some kind of integrative operation on MF activity (Kinney et al., 1997; van Dorp and De Zeeuw, 2014).\n\nSynaptic currents were evoked by trains of MF stimulations (0.5\u2009s at 50\u2009Hz) to approximate the peak rate and duration of 1\u2009Hz sinusoidal modulation. In all ON-UBCs tested EPSCs were blocked by the competitive AMPAR/kainate antagonist NBQX (1 or 5\u2009\u03bcM; block 92.6 \u00b1 8.8% of the charge; n = 10; Figure 3A). The time course of the compound AMPA EPSC evoked by MF stimulation trains varied widely between cells (n = 31; Figures 3A,D), displaying classical transient currents (Figure 3B) as well as slow sustained components. The amplitude of the fast EPSC evoked by the first stimulation ranged from 5 to 210\u2009pA (71 \u00b1 66\u2009pA; n = 21) and was inversely correlated to its decay time course (2.1 \u00b1 1.5 ms) (r = 0.737; p<0.001; n = 21; Figure 2\u2014source data 1A). Presynaptic MFs are able to sustain release at 50\u2009Hz without depression (Saviane and Silver, 2006). Nevertheless the amplitude of fast EPSCs decreased dramatically (by 67.4 \u00b1 35.8% of the first peak at steady-state, n = 21; Figure 3B), in a way which was inversely correlated to the decay time course of the first fast EPSC (r = 0.823; p<0.001; n = 21; Figure 3C). Transient EPSCs were always accompanied by a low level of sustained steady AMPAR current (\u221215.9 \u00b1 8.4\u2009pA before the 4th stimulation; Figures 3A and B), indicative of the prolonged presence of glutamate in the synaptic cleft (Nielsen et al., 2004).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig3-v3.jpg)\n\n**Figure 3.:** (A) Synaptic currents evoked by a train of MF stimulations of 500 ms at 50 Hz in an ON-UBC before and after perfusion of NBQX (1 \u03bcM). Note the transient early EPSC, followed by a slow buildup, and the rebound current at stimulation offset. The stimulation train is shown on top. (B) A sustained steady component persists after desensitization of the phasic response during a train of stimuli. The inset shows a superimposition of the fast EPSCs triggered by the first (pink) and the last (gray) stimulations. The exponential fit of the first EPSCs decay is displayed in purple. (C) Desensitization of the transient EPSCs at the end of a 500 ms stimulation at 50 Hz correlates to the \u03c4decay of the transient EPSCs after the first stimulation (r = 0.823; p<0.001; n = 21). (D) Examples of slow EPSC buildup in two ON-UBCs. (E) The slow EPSCs buildup is not correlated to the first transient EPSC amplitude (n = 20). (F) Analysis of the anomalous rebound at the end of the stimulation. The last 20% of amplitude decay (red arrowheads) are fitted by an exponential function forced at the last point of stimulation (red curve). The isolated rebound current obtained by subtraction of the exponential fit function is displayed in green in the inset. Gray area: charge of rebound current. (G) Correlation of the rebound current amplitude with its rise time (r = 0.583, p =, n = 23). (H) Correlation of the rebound current amplitude with the amplitude of the transient EPSC (r = 0.611, n = 21) (I) Correlation of the rebound current amplitude with the amplitude of the slow EPSCs buildup (r = 0.763, n = 25). Voltage-clamp stimulation protocol in c, d, f, g, h: 500 ms at 50 Hz. (J) AMPA EPSCs before (Ctr, black) and after 10 \u00b5M cyclothiazide (Ctz, gray) perfusion. Left bottom inset: isolated rebound current obtained as in (F) in Ctr and Ctz. Right inset: transient EPSCs at the first stimulation in Ctr and Ctz conditions. MF stimulations are shown on top. Voltage-clamp stimulation protocol: 200 ms at 50 Hz. (K) EPSCs charge and rebound amplitude in control condition (Ctr, black) and after 10 \u00b5M cyclothiazide perfusion (Ctz, gray; n = 11). Voltage-clamp stimulation protocol in (C), (D), (F), (G), (H), (I): 500 ms at 50 Hz.\n\nIn 67% of UBCs, an additional slow component developed during the train, a further element suggesting glutamate concentration buildup in the synaptic cleft (Kinney et al., 1997). This slow EPSC buildup reached a steady-state (64 \u00b1 35\u2009pA; Figure 3D) with variable time course (\u03c4\u00a0= 0.347 \u00b1 0.244\u2009s at 50\u2009Hz). The amplitude of the transient currents and of the buildup currents were not correlated (p=0.12; Figure 3E). The presence of two independent excitatory components suggests that glutamate buildup recruits independent AMPA receptor populations in the two phases (fast and slow) of the synaptic responses. Overall, these data are consistent with the idea that AMPA receptors present at MF to UBC synapses are exposed to glutamate concentration transients of highly variable amplitude and duration which spatio-temporal profiles shape MF EPSCs kinetics through transient activation, steady-state activation and desensitization.\n\n### ON-UBCs EPSCs display a characteristic anomalous rebound at the offset of MF train stimulations\n\nIn 87% of all AMPAR expressing UBCs (n = 27 out of 31 cells), an anomalous rebound current developed at the end of the stimulation (Figure 3A and B). The 4 remaining cells only displayed slow buildup EPSCs which decayed exponentially with a time constant of 604 \u00b1 361 ms (Figure 3D, cell1). Rebound and decay are temporally overlapping processes. The anomalous rebound current was thus isolated by subtraction of the interpolated fitted exponential decay at the offset of the compound EPSC (see Experimental Procedures; Figure 3F). The amplitude of the rebound current (27.7 \u00b1 16.7\u2009pA) was correlated to its rise time constant (r = 0.583, p<0.01, n = 23; Figure 3G), which varied widely from cell to cell (54 \u00b1 24 ms; min = 25; max = 99; n = 23). The amplitude of the rebound current was also correlated with both the amplitude of the transient EPSC integral (r = 0.611, p<0.01, n = 20; Figure 3H) and with the amplitude of the slow buildup EPSC (r = 0.763, p<0.001, n = 25; Figure 3I), suggesting that both fast and buildup components of transmission contribute to the genesis of the rebound. Cyclothiazide (10\u201320 \u00b5M), a modulator of AMPARs known to suppress desensitization, potentiated the charge during stimulation (201 \u00b1 54% of control; n = 11) and suppressed the rebound current (27 \u00b1 18% of control; n = 11) (Figures 3J and K). These results support the idea that rebound is generated by AMPAR recovery from steady-state desensitization (Kinney et al., 1997) during slow glutamate clearance from the giant MF synapse onto UBCs (Billups et al., 2002; Rossi et al., 1995).\n\n### AMPA rebound generates phase dispersion in ON-UBCs\n\nWe investigated the link between EPSC time-course and ON-UBC phase shift during sinusoidal MF stimulation. We reasoned that fast and slow synaptic charge occurring during MF trains would favor phase-advanced firing, while rebound charge would favor phase-delayed firing (Figure 4A,C). Indeed, the response phase of ON-UBCs at 1\u2009Hz was linearly correlated with the ratio between the rebound charge and the synaptic charge during the 50\u2009Hz trains (see Experimental Procedures) (slope = 0.1 per 100\u00b0; r = 0.734, p<0.001, n = 22; Figure 4D). Neither the charge during the train alone (p>0.1; r = 0.213; n = 16; Figure 2\u2014source data 1B), nor the onset time course of the buildup component did correlate with the phase (p>0.1; r = 0.036; n = 14; Figure 2\u2014source data 1C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig4-v3.jpg)\n\n**Figure 4.:** (A) AMPA EPSCs of an ON-UBC with early phase shift. (B) Voltage response of the same UBC shown in A. (C) Circular Gaussian fit of the firing rate distributions of the cell shown in (B). (D) Correlation of the response phase at 1 Hz to the ratio charge at the offset of stimulation / total synaptic charge (r = 0.734, p<0.001, n = 22). (E) Correlation of the time delay to maximal firing to \u03c4rise of the rebound current (r = 0.87, p<0.001, n= 16). (F) Example of an ON-UBC\u2019s voltage response to 1 Hz sinusoidal modulations of MF stimulation (4 cycles shown out of 10) before (Ctr) and after 10 \u00b5M cyclothiazide (Ctz) perfusion. Stimulations are shown on top. (G) Phase shift in control condition (black) and in 10 \u00b5M cyclothiazide perfusion (gray, n = 7). (H) ON-UBC responses to sinusoidal MF stimulation rate modulations at 0.3, 1, and 3 Hz. Stimulation protocols are shown on top and one period of recording below. Circular Gaussian fits of the firing rate distributions of the same cell. (I) Modulated firing amplitudes and phase shifts of 25 ON-UBCs in response to sinusoidal MF stimulation rate modulations at 0.3, 1, and 3 Hz. The cell displayed in (H) is plotted in red. Average \u00b1 SD are indicated for each modulation frequency. Voltage-clamp stimulation protocol in (D), (E): 500 ms at 50 Hz.\n\nIn all delayed cells (positive phase shift), the phase of UBC firing was strongly correlated with the charge of the rebound EPSC (r = 0.75, p<0.001, n = 16; Figure 2\u2014source data 1D). A mechanistic explanation for this result could be that larger rebounds have slower time to peak (Figure 3g). Indeed we found that the onset time constant of the rebound was strongly correlated to the phase of UBC firing (r = 0.87, p<0.001, n= 16). When phase was converted to a time delay to maximal firing (2.78 ms deg\u22121) the regression slope was close to 0.33 (r = 0.87, p<0.001, n= 16 Figure 4E) indicating that maximum firing occurs near the peak of the rebound current (3 onset time constants). Cyclothiazide (Figure 4F), at a concentration which suppresses the rebound current, shifted the phase of UBC firing (143 \u00b1 44\u00b0 in control; \u221259 \u00b1 36\u00b0 in cyclothiazide; n = 7; p=0.01; Figure 4G) towards values similar to control cells displaying small rebound (p=0.9, n = 6 cells with little rebound current, n = 7 cells in cyclothiazide). Hence anomalous rebound mediates phase inversion in the response to modulated MF inputs.\n\nThe frequency dependence of the UBC response was then tested by implementing sinusoidal modulations of the MF stimulation rate at frequencies of 0.3\u2009Hz, 1\u2009Hz and 3\u2009Hz (Figure 4H). In contrast to OFF-UBCs the average amplitude of firing modulation increased at higher MF modulation frequencies (5.1 \u00b1 5.9\u2009Hz at 0.3\u2009Hz, 11.0 \u00b1 8.1\u2009Hz at 1\u2009Hz, and 14.0 \u00b1 9.7\u2009Hz at 3\u2009Hz; p=0.0009; Friedman\u2019s test). Interestingly, the frequency of maximal modulation varied from cell to cell. The population response of UBCs also showed significant frequency-dependent increase of phase lag (45.9\u00b0 at 0.3\u2009Hz, 108.9\u00b0 at 1\u2009Hz and 191.6\u00b0 at 3\u2009Hz; p<0.0001; Friedman\u2019s test). and remained broadly distributed at all frequencies (SD: 76.3\u00b0, 73.9\u00b0 and 92.7\u00b0 at 0.3\u2009Hz, 1\u2009Hz and 3\u2009Hz respectively; Figure 4I). Phase dispersion of the ON-UBC responses is therefore a property preserved over a wide range of movement dynamics.\n\n### Diverse synaptic glutamate time course shapes synaptic currents and explains phase dispersion in ON UBCs\n\nModeling of glutamate concentration profiles in the MF to UBC synaptic cleft has shown that the average frequency dependent behavior of the peak and steady-state conductance can be accounted for by a detailed Markov model of the AMPA receptor (van Dorp and De Zeeuw, 2014). To further investigate the role of synaptic glutamate profiles in the cell to cell variability of UBC responses we built a simplified model with reduced parameter space. First, we designed the minimal Markov scheme which can account for a bell-shaped steady-state concentration-response curve with non-zero saturating steady-state current, as recorded in UBCs (Kinney et al., 1997). This model includes one close state, two open states and one desensitized state (Figure 5A) (See Experimental Procedures). The on-rate of desensitization was adjusted to account for the depression of the fast receptor current during MF trains and the recovery rate was adjusted to yield a steady-state activation curve with a peak of 16% of the total conductance at 25 \u00b5M (Figure 5B) (Experimental Procedures) and a fractional steady state conductance at saturating glutamate concentration of 2.5%. This simple Markov model was compared to a three state model with similar affinity and maximal steady-state current, but displaying a monotonic steady-state concentration response curve (Figures 5A and B). When submitted to slow synaptic glutamate buildup (Figure 5C) at increasing firing modulation frequencies, for which stable glutamate modulation amplitudes are reached (Figure 5D, blue), the three state model saturated above 0.7\u2009Hz due to basal glutamate buildup (Figure 5D, green) while the four state model showed a resonance above 1\u2009Hz and greatly increased modulation bandwidth (Figure 5D, red). This resonance was directly linked to the steady-state rebound, as attested by a 180\u00b0 phase shift of the response compared to glutamate, as opposed to the three state model situation (Figure 5E). Hence, the bell-shaped steady-state response of the AMPARs at UBC synapses plays a central role to encode the time integral of modulated inputs over a wide frequency bandwidth.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig5-v3.jpg)\n\n**Figure 5.:** (A) Simple Markov models for desensitizing AMPARs with bell-shaped steady-state activation curve (red) and monotonous steady-state activation (green). (B) Peak and steady-state dose-response curves for the red and green models in (A). (C) Simulated glutamate concentration (blue) and AMPAR activation (red and green) during a 3 Hz sinusoidal stimulation of the presynaptic mossy fiber (same parameters as for the experimental data). Each presynaptic action potential was set to produce a glutamate transient of 2 \u03bcM which rose in 15 ms and decayed exponentially with a t of 600 ms. (D) Peak to peak modulation amplitude of the glutamate concentration and fractional AMPAR activation (colors as in C) as a function of the MF firing rate modulation frequency. (E) Phase of the glutamate concentration and AMPAR response relative to the MF modulation. Note the phase inversion of the bell-shaped model. (F) Schematic depiction of glutamate concentration profiles (in blue) at the giant MF-UBC synapse upon multivesicular release. Simulated responses (glutamate in blue, bell-shaped AMPAR Markov model in red) to a train of 5 stimulation at 20 Hz are shown for the following parameters (peak, \u03c4rise, \u03c4decay) of action-potential evoked glutamate transients: top inset (4 \u03bcM, 20 ms, 250 ms), middle inset (500 \u03bcM, 1 ms, 250 ms), lower inset (500 \u03bcM, 0 ms, 1.5 ms). (G) Example of the response of 4 ON-UBCs to a 500 ms train of MF stimulation at 50 Hz and of their fit (red curve) by the summed activation of three AMPAR populations submitted to different glutamate transients, as in (F). (H) Response of an ON-UBC to a sinusoidal modulation of its afferent MF firing rate at 1 Hz (black trace) and simulated EPSC obtained with the parameters obtained through fitting in (G) (middle red trace). The response of a simulated integrate and fire neuron to this EPSC is shown in the bottom trace. Purple trace, exponentiated cosine fit of the EPSC used in (J). (I) Correlation between the simulated phase-dependent EPSC and the experimental phase-dependent firing response of UBCs (n = 22). Significant correlations (p=0.05) are displayed in black bars. (J) Correlation between the phase shift of the simulated EPSC and the measured phase shift of the UBC response in current clamp. Line represents equality. Hollow circle: cell displayed in (H).\n\nTo explain the phase diversity of UBCs we reasoned that AMPARs at distinct locations in the giant MF to UBC synaptic articulation will face diverse synaptic glutamate transients, thus imparting varied response dynamics. If located at the center of the synaptic area AMPARs will sense a large and prolonged glutamate transient that will build up during the train (Figure 5F, middle trace). Receptors located at the periphery of the synaptic cleft will either sense low amplitude and slow glutamate buildup (Figure 5F, upper trace) or a fast glutamate transient if they are located in front of a synaptic release site (Figure 5F, lower trace) (see Experimental Procedures for detailed model descriptions). We were able to fit accurately the complex time course of synaptic currents in all UBCs (see a few examples in Figure 5G). The SD of the residual error was on average 2.55 \u00b1 0.28\u2009pA (mean \u00b1 SEM; median = 2.25), which was much smaller than the amplitude of the currents (18.82 \u00b1 4.25\u2009pA; median = 13.54), and of the same order as the fluctuations in the current traces as measured in the 50 ms before stimulation (0.71 \u00b1 0.08\u2009pA; median = 0.63). Thus, while AMPAR properties explain the presence of an anomalous rebound, the time course of synaptic glutamate transients can fully account for the diversity of synaptic responses at MF to UBC synapses.\n\nWe then used the parameters obtained by fitting the EPSCs to compute the expected AMPA response to sinusoidal MF modulations (Figure 5H). In most cells (14 out of 22) phase histograms of the simulated EPSCs and of the experimentally recorded UBC firing rate were significantly correlated (p<0.05; t-test; Figure 5I). Fitting the simulated EPSC by a sinusoidal function yielded a simulated phase shift. Simulated and experimental phase shifts were linearly correlated (R = 0.89 and p=2e-5; t-test and slope = 1.04 for cells with correlated phase histograms) (Figure 5J). In the cells displaying significant correlation between the EPSCs and firing rate, the phase difference between modeled and experimental data was approximated by a Gaussian distribution (\u221224.6 \u00b1 64.3) and experimental firing could be approximately reproduced using a simple integrate and fire model (Figure 5H). These data confirm that the dynamics of glutamate accumulation at the MF to UBC synapse during time-modulated MF firing is the major determinant of firing phase in UBCs.\n\n### UBCs increase the phase diversity of GCs responses\n\nWe next investigated the computational consequences of the diversity of phase shifts in the UBCs responses. We thus simulated a granular layer network with 4500 Granule Cells (GCs) receiving inputs from 500 MFs, that were either extrinsic (eMFs) or from UBCs. The network structure is illustrated in Figure 6A. We compared the response of GCs to sinusoidal eMF stimulation, in the presence and absence of UBCs. In the model network, each GC receives 4 inputs (Palay and Chan-Palay, 1974). In the network without UBCs, all 4 inputs are eMFs (Figure 6A, left). In the network with UBCs, each input is randomly and independently set (Figure 6A, right) to be from either an eMF or a UBC with equal probability (0.5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig6-v3.jpg)\n\n**Figure 6.:** (A) Illustration of the Granular network. Granular cells receive inputs from only eMFs without UBCs (left) and both eMFs and UBCs (right),. UBCs have different phase shifts. (B) Firing rate vs phase curves of simulated eMFs (blue) and all recorded UBCs (red) at 0.3\u00a0Hz (left), 1\u00a0Hz (middle) and 3\u00a0Hz (right) modulations. (Ci) Sample Granular cell outputs without UBCs in the network. (left, upper) Raster plots of 30 random selected GCs in one input period, and (left, bottom) their averaged firing rate curve; (right) polar plots of GC phase shifts. (Cii) Same as (Ci), but for sample Granular cell outputs with UBCs in the network.\n\nWe simulated the dynamics of the granular layer model in response to sinusoidal vestibular inputs. We used the same stimulation protocols as in our experiments, with three different frequencies (Figure 6B, blue). All eMFs inputs were either in phase or in anti-phase with modeled sinusoidal movements (Arenz et al., 2008). Parameters of model UBCs were chosen by randomly sampling parameters fitted from recorded UBCs (Figure 6B, red). This led to a large diversity of phase shifts. As a consequence, a subset of UBCs fired at any phase of the oscillatory cycle. Spike trains from eMFs and iMFs were then injected into the GCs (see Experimental Procedures for stimulation details). The mean conductance from eMFs/UBCs to GCs was adjusted to match the EPSC amplitudes reported in the literature (Arenz et al., 2008; Schwartz et al., 2012). To introduce heterogeneity in the network, all synaptic conductances were drawn randomly from a Gaussian distribution (see Experimental Procedures), whereas, for the sake of simplicity, the inhibition from Golgi cells was replaced by a constant inhibitory conductance (Billings et al., 2014) (see Discussion). The responses of simulated GCs are shown in Figure 6C. Without UBCs, GCs fire in phase with eMFs inputs, as shown in Figure 6Ci. The spike trains of 30 randomly selected GCs in a single trial with 1\u00a0Hz stimulation and their average firing rate over trials are shown in Figure 6Ci (left). The amplitude of modulation and phase shift from the fitted GC firing rate curves were plotted in a polar plot (Figure 6Ci (right)). We found that the preferred firing phases were in phase with the extrinsic vestibular mossy fibers, i.e. in phase or antiphase with simulated movement. When UBCs are included in the network, the response of GCs shows much more heterogeneous phase shifts. The distribution of phases in the network comprising UBCs is significantly closer to a uniform distribution compared to the network without UBCs (KS distance between network with UBCs and uniform: 0.1673; between network without UBCs and uniform: 0.4134; both distributions are significantly different, KS test, p<1e-10 (Figure 6Cii), similar to experimental in vivo data (Barmack and Yakhnitsa, 2008). Therefore, the heterogeneity of UBCs phase shifts leads to a diversity of GCs phase shifts.\n\n### Purkinje cell learning of arbitrary input-output relationships depends on the presence of UBCs\n\nWe then investigated the functional consequences of this GC phase shift variability on downstream Purkinje cells (PCs). In particular, we asked to which degree the heterogeneity of GC phase relationships has an impact on the ability of a PC to learn arbitrary input-output relationships. We consider a single PC that receives inputs from all simulated GCs of the network. The parallel fiber to Purkinje cells synapses are endowed with a standard climber fiber (CF)-dependent learning rule (see Experimental Procedures), such that synapses are depressed upon coincidence of presynaptic GC and CF activity, while they are potentiated when presynaptic GCs are active during CF silence (Dean et al., 2010). We tested the ability of the PC to learn to fire preferentially at arbitrary phases of the sinusoidal eMF drive, by implementing an \u201cerror signal\u201d in the CFs, proportional to the difference between actual and desired PC outputs. Figure 7 shows that in a network with UBCs, the PC can learn to fire at arbitrary target phases, even though eMF inputs peak only at two possible phases (Figure 7A, top and Figure 7B). This ability breaks down in a network without UBCs, in which PCs can only learn to fire in phase with eMF inputs (Figure 7A, bottom and Figure 7B). This is consistent with experiments showing that the response of PCs, similarly to GCs, has a large degree of heterogeneity (Barmack and Yakhnitsa, 2008).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15872/elife-15872-fig7-v3.jpg)\n\n**Figure 7.:** (A) The responses of the Purkinje cell are tuned to the given target phase in the network with UBCs. Each target phase is indicated by each color. (B) The mean square error (MSE) between the target and the response of Purkinje cell is systematically smaller in the network with UBC (blue) than those without UBC (black). Each color point indicates the PC\u2019s response shown in (A).\n\n## Discussion\n\nWe have provided here a detailed characterization of the filtering properties of UBCs in the presence of sinusoidal MF inputs. We have shown that UBCs encode these inputs with a surprising degree of heterogeneity, their responses spanning all the possible range of phase shifts, at all the frequencies tested here (from 0.3 to 3\u00a0Hz). Our study reveals that populations of UBCs in the vestibular cerebellum behave as a bank of diverse temporal filters. By virtue of this temporal diversity, it is possible to find GCs that fire at any phase of a sinusoidal head movement, as hypothesized by adaptive filter models (Dean et al., 2010; Fujita, 1982; Gao et al., 2012; Roberts and Bell, 2000), and consistent with in vivo data (Barmack and Yakhnitsa, 2008). The UBC therefore extends the combinatorial notions of pattern separation (Marr, 1969) and expansion recoding (Albus, 1971) into the temporal domain. In turn, this diversity of temporal representations allows PCs to learn arbitrary phase response functions, as shown here by implementing a classical climbing fiber-driven learning rule that modifies the weights of parallel fiber to PC synapses. Our results are consistent with a recent study in electric fish, which showed that delayed responses necessary for predicting sensory consequences of motor commands are generated by UBCs in the eminentia granularis posterior (EGp) of the mormyrid electric fish, a structure similar to the granular layer of the mammalian cerebellum (Kennedy et al., 2014). An interesting question for future research is whether the properties of UBCs in mammals are set to optimize performance of the cerebellar circuit, given the natural statistics of vestibular inputs. The differential distribution of calretinin-expressing (type I) and mGluR1-expressing (Type II) UBCs in vestibular lobules and parasagittal band within these lobules (Consalez and Hawkes, 2012; Mugnaini et al., 2011) support the idea of some functional specialization. Additionally, the presence of UBCs in the dorsal vermis and cerebellar hemispheres of higher mammals (Dino et al., 1999) suggests that the temporal filter properties described in this work may also be useful outside the context of vestibular sensory processing.\n\nWe have established that the diversity of UBC responses is due to a combination of two factors: (1) the heterogeneous expression of ionotropic and metabotropic glutamate receptors (see also Borges-Merjane and Trussell, 2015) and (2) the variability of AMPAR-mediated responses, due to cell-specific combinations of transient, build-up and rebound synaptic components. The heterogeneity of UBCs has already been recognized (Mugnaini et al., 2011), particularly in relation to the expression of metabotropic glutamate receptors (Borges-Merjane and Trussell, 2015; Kim et al., 2012; Nunzi et al., 2002; Rousseau et al., 2012; Russo et al., 2008). However, their contribution to MF synaptic transmission for dynamic inputs was unknown. The paucity of ionotropic receptors at some mGluR2-expressing MF-UBC synapses is also surprising, given the size of the synaptic articulation and the number of synaptic release sites (Mugnaini et al., 1994). As a consequence, cells expressing mGluR2 receptors (OFF UBCs) fire in antiphase, or in advance of the inputs. Adding further complexity to this temporal diversity, our data (Figure 1\u2014source data 1) suggest that the relevant subpopulation of mGluR1-expressing UBCs (Borges-Merjane and Trussell, 2015; Mugnaini et al., 2011), not studied here, participate to the very slow integration of the MF inputs. The predominance of mGluR transmission at the MF synapse is not directly linked to the giant synaptic articulation, as mGluRs are exclusively found at extrasynaptic sites on the dendritic appendages of the UBC brush (Jaarsma et al., 1998). mGluR activation, which occurs at standard synaptic articulations on spines or dendritic shafts upon repetitive stimulations, may thus implement temporal integration of population activity in many other neuronal types throughout the CNS.\n\nCells expressing AMPARs (ON UBCs) fire with a large diversity of phase shifts. We show that the diversity of phase shifts in AMPAR-mediated responses could be well described by exposing AMPARs to various types of synaptic glutamate transients. To account for late-phase responses and for the wide bandwidth of UBC modulations, the AMPAR must present a bell-shaped steady-state response curve, as described experimentally (Kinney et al., 1997). The combination of these properties and of spillover-induced desensitization at the UBC synapse generates strong rebound currents following a train of MF action potential (see also van Dorp and de Zeeuw, 2014). These properties differ dramatically from the fast reliable transmission observed at other giant synapses like the calyx of Held, where low release probability and fenestration of the apposition limit glutamate spillover and AMPAR desensitization (Taschenberger et al., 2002). We hypothesize that a combination of factors, including the complex geometry of MF-UBCs synapse, the variety of AMPARs and auxiliary subunits (Jackson and Nicoll, 2011), and the localization of AMPARs with respect to release sites (Jaarsma et al., 1995), could explain the variety of AMPA EPSCs profiles at MF to UBC synapses. Our results strongly support the importance of the desensitized states for the functional properties of ionotropic glutamate receptors.\n\nOther sources of differential phase responses in the vestibular system have been described in the literature. Primary sensory cells have been shown to display different levels of non-linearity in response to sinusoidal movements which appear related to cellular excitability (Pfanzelt et al., 2008). In the vestibular nuclei, diversity of single cell properties (Sekirnjak and du Lac, 2002) and synaptic dynamics of primary afferences (Broussard, 2009) could in principle generate a diversity of secondary mossy fiber inputs to the vestibulo-cerebellum, though the range of phase shifts shown in those reports is fairly modest and much smaller than the one shown here. Indeed, Arenz et al. (2008) showed highly stereotyped rate modulation of mossy fiber inputs to vestibulo-cerebellar GCs during head rotation with little phase shift. In GCs, a diversity of afferent mossy fibers synaptic properties could lead to a diversity of delays (Chabrol et al., 2015) in the range of tens of milliseconds, much smaller than needed to cover the phase spectrum during head movements. In the cerebellar models of delayed eyelid conditioning (Kalmbach et al., 2010), intrinsic dynamics of the granular layer circuit involving feed-forward and feed-back inhibitory interactions have been proposed to produce delay-specific granule cell activity patterns (Kalmbach et al., 2011; Medina et al., 2000; R\u00f6ssert et al., 2015; Yamazaki and Tanaka, 2007). These other sources of diversity in phase responses might allow the cerebellar circuitry to learn input-output associations with significant delays even in circuits that lack UBCs. However, we showed here that UBCs can generate much larger delays, as well as OFF-responses, within a wide range of stimulation frequencies. The variable tuning frequency of UBCs could explain the frequency-specific learning of the VOR gain modulation (Lisberger et al., 1983), because different populations of UBCs and hence of granule cells would be optimally modulated for different rotation frequencies. Finally UBCs have the capability to generate high-frequency rebound bursts (Diana et al., 2007; Locatelli et al., 2013), as shown here for some of the OFF-UBCs, which may provide useful timing information, as suggested in the electro-sensory lobe of the electric fish (Kennedy et al., 2014; Sawtell, 2010). Golgi cell inhibitory inputs to UBCs (Dugue et al., 2005), which were pharmacologically blocked in this study, may enhance this rebound behavior (Kennedy et al., 2014), providing for richer interactions between the granular layer dynamics and UBC intrinsic excitability. Our data support a preferential role of UBCs in tasks in which non trivial associations between inputs and outputs at different phases need to be learned, like phase-shifted VOR or high-velocity compensatory eye movements during which non-linear inverse eye dynamics have to be computed (Green et al., 2007; Lisberger, 2009). Optogenetic suppression of vestibular UBC activity should lead to significant impairment in these motor tasks. Furthermore the higher prevalence of UBCs in the hemispheric lobules in higher mammals (Dino et al., 1999) argues for the involvement of this cell-type in complex motor and cognitive tasks involving the cerebellum.\n\nOur results fit well with a growing number of studies that have emphasized the benefits of heterogeneity for coding in neural circuits. Shamir and Sompolinsky, (2006) found that neuronal heterogeneities allow networks to overcome the drastic limits imposed by neuronal correlations on the accuracy of population codes (see also Ecker et al., 2011). The benefits of neuronal heterogeneities have also been pointed out in several specific sensory systems. Padmanabhan and Urban, (2010) showed that the diversity of intrinsic properties of mitral cells of the olfactory bulb allows a population of such cells to double the information contained in their responses, compared with a homogeneous population. Gjorgjieva et al., (2014)\u00a0examined the benefits of `pathway splitting' in sensory systems, focusing on the emergence of ON and OFF pathways in the retina. A recent further showed the benefit of two types of OFF-cell thresholds for maximizing information transmission (Kastner et al., 2015). Most of these studies focused on heterogeneities in static single neuron properties. Here, we have shown that the benefits of heterogeneities extend into the temporal domain, and can be exploited by a read-out that can learn arbitrary temporal input-output relationships.\n\n## Materials and methods\n\n### Slice preparation\n\nAll experiments were performed according to the ethics rules of the Centre National de la Recherche Scientifique and protocols were approved under number 02235.02 of the general agreement C750520. Wistar rats (22 to 30 days old) were deeply anesthetized with isoflurane and the vermal part of the cerebellum was isolated in a cold bicarbonate based solution (BBS) containing (in mM): 125 NaCl, 3.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 20 glucose, 1.6 CaCl2, 1 MgCl2, and 0.00005 minocycline, (oxygenated with 95% O2, 5% CO2). Parasagittal slices (290\u2009mm) were immediately obtained with a vibratome (HM 650\u00a0V; Microm) while preparation was kept in an ice-cold cutting solution composed of (in mM): 130\u2009K-gluconate, 15 KCl, 2 EGTA, 20 HEPES, 25 glucose, 0.05 D-(-)-2-Amino-5-phosphonovaleric acid (D-AP5; Tocris), and 0.00005 minocycline (pH adjusted to 7.4 with NaOH). Slices recovered initially at 33\u00b0C for 30\u2009s in a modified BBS solution (in mM): 225 D-mannitol, 2.34 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 Glucose, 0.513 CaCl2, 7.671 MgCl2, 0.05 D-AP5, and 0.00005 minocycline (oxygenated with 95% O2, 5% CO2). Then slices were incubated in oxygenated BBS at 33\u00b0C for up to 6\u2009hr.\n\n### Electrophysiology\n\nSlices were placed in a recording chamber mounted on an upright microscope (BX51W, Olympus), visualized with deep red light (750 \u00b1 25 nm) and a CoolSnap SF CCD camera (Photometrics). The preparation was elevated on a nylon grid to promote continuous perfusion of a bubbled BBS solution (3\u2009ml/min) under the slice. Electrophysiological recordings were obtained at 34\u201336\u00b0C from UBCs in the lobule X of the cerebellar vermis. Voltage- and current-clamp recordings were performed in the whole-cell configuration. Data were sampled at 40\u201350 kHz and filtered at 5 kHz acquired using an EPC10 amplifier and the Patchmaster software (HEKA). Patch pipettes (3.5\u20134 M\u03a9) were pulled from borosilicate glass capillaries (Hilgenberg) with a vertical puller and filled with an intracellular solution containing (in mM): 135 KMeSO4, 3 NaCl, 1MgCl2, 0.1 EGTA, 10 phosphocreatine-K2, 10 HEPES, 4 ATP-Mg, and 0.4 GTP-Na2 (pH adjusted to 7.35 with KOH; osmolarity adjusted to 295 mOsm). EGTA was replaced with 10\u2009mM BAPTA and KMeSO4 concentration was decreased to 114\u2009mM in a first set of experiments (n=25) aimed at recording the synaptic currents only. Alexa Fluor-488 (20\u2009\u03bcM; Invitrogen) was added to the pipette solution to visualize the cell morphology and easily identify UBCs. Cell membrane capacitance ranged from 7 to 20 pF. Step current injections (5 to 50\u2009pA) from a membrane potential of \u221280 mV were used to test the capability of UBCs to generate high frequency bursting activity. Pipette for mossy fiber stimulation was filled with HEPES-buffered solution and it was placed in the granule cell layer at more than 100\u2009\u03bcm from the cell body. The stimulation protocols were obtained by modeling eMF activity as $r_{eMF}[1+Asin(2\\pift)]_{+}$ with $r_{eMF}$=26\u2009Hz, and the modulation $A=\\frac{5}{3}f$ is obtained from in vivodata at frequency$\u00a0f=0.3$ (Arenz et al., 2008). The stimulation consists in a constant fire rate 26\u00a0Hz for 10\u2009s, and then a modulated rate for another 10\u2009s at three different frequencies 0.3, 1 and 3\u2009Hz, respectively. GABAergic and glycinergic components were blocked during the experiments by perfusion of 6-imino-3-(4-methoxyphenyl)-1(6H)-pyridazinebutanoic acid hydrobromide (SR95531; 2\u2009\u03bcM; Abcam Biochemicals), (2S)-3-[[(1S)-1-(3,4-dichlorophenyl)ethyl] amino-2-hydroxypropyl] (phenylmethyl) phosphinic acid hydrochloride (CGP 55845; 0.5\u2009mM; Tocris), and strychnine (1\u2009\u03bcM). Synaptic currents were identified by bath application of antagonists. mGluR1 component was blocked with (3,4-Dihydro-2H-pyrano[2,3-b]quinolin-7-yl)-(cis-4-methoxycyclohexyl)-methanone (JNJ 16259685; 1\u2009mM; Tocris). mGluR2 component was blocked with (2S)-2-amino-2-[(1S,2S)-2-carboxycycloprop-1-yl]-3-(xanth-9-yl) propanoic acid (LY 341495; 0.5\u2009\u03bcM; Tocris). AMPA component was blocked with 2,3-Dioxo-6-nitro-1,2,3,4-tetrahydr obenzo[f]quinoxaline-7-sulfonamide disodium salt (NBQX; 1\u2009mM; Abcam Biochemicals). AMPA receptor desensitization was modified by the allosteric modulator 6-Chloro-3,4-dihydro-3-(5-norbornen-2-yl)-2H-1,2,4-benzothiazidiazine-7-sulfonamide-1,1-dioxide (cyclothiazide; Abcam Biochemicals) at the specified concentrations.\n\n### Data analysis\n\nData were analyzed with Igor PRO (WaveMetrics) and spikes detection was performed with the custom-made threshold-detection algorithm SpAcAn (Dugu\u00e9 et al., 2005; http://www.spacan.net/). Duration of the membrane potential depolarization after the end of sinusoidal MF modulation in complex cells was calculated as the time between the last stimulation and the time at which the membrane potential decays at the resting membrane potential value. The phase shift of UBC firing rate modulation was obtained by fitting single spikes phase distribution over one period with a circular normal function (von Mises function) $f(\\theta)=r_{min}+(r_{max}\u2212r_{min})(e^{k^{2}cos(\\theta\u2212\u03d5)}\u2212e^{\u2212k^{2}})/(e^{k^{2}}\u2212e^{\u2212k^{2}}),$ where $r_{max}$ ($r_{min}$) is the maximal (minimal) firing rate, $\u03d5$ is the preferred phase shift of the cell and $k$ is a parameter measuring the concentration of spikes around the preferred phase ($k$ =\u00a00 indicates no modulation by phase, while a large $k$ indicates highly concentrated spikes). The phase shift was relative to the maximum MF stimulation at each cycle, and it could be positive, consistent with a delay of UBC maximum firing rate, or negative, consistent with a strong delay or an anticipation of phase. $CV_{2}$ is the mean of $2|ISI_{1}\u2212ISI_{2}|/|ISI_{1}+ISI_{2}|$, where $ISI_{1}$ and $ISI_{2}$ are successive inter-spikes intervals (Ruigrok et al., 2011). Average ratio of depolarization / hyperpolarization and the steady-state firing rate in current-clamp protocols were estimated in the last second of 26\u2009Hz steady stimulation. The peak of fast AMPA EPSC was obtained by fitting their decay with an exponential function and is given as the amplitude of the exponential decay. This measure avoids contamination by slow/buildup components of the response. For the same reason the charge of fast EPSCs is given as the product of the amplitude and of the decay time constant of the exponential fit. The buildup component of EPSC developed in the majority of the case with a delay of a few stimulations (3rd or 5th stimulation). We therefore distinguished the slow/steady-state component which follows fast EPSCs from the buildup component. The amplitude of the steady-state components was estimated as the amplitude of the base current of the exponential fit of the first EPSC. For comparison with other components its charge was obtained by multiplying this amplitude by the duration of the stimulation (500 ms) and subtracted from the charge of the current envelope to yield the buildup charge.\n\nFinally the rebound EPSC at the end of the stimulations was estimated by subtraction of an extrapolated exponential decay on which it superposes. The timecourse of this exponential decay was obtained by fitting the last 20% of the decay (amplitude wise), after the rebound, with an exponential function forced in amplitude and origin to the steady amplitude at the time when stimulation was stopped. Peak and \u03c4ON (rise time) were obtained from the exponential fit of the onset of the subtracted slow rebound EPSC. Statistical analysis was performed with Rstudio using Mann-Whitney U test, Friedman\u2019s test and Shapiro-Wilk test for normality of data. Results are quoted as mean \u00b1 SD unless stated otherwise.\u00a0p<0.05 indicates statistical significance.\n\n### Model of AMPAR-mediated synaptic currents in UBCs\n\nUBC AMPAR-mediated synaptic currents exhibit complex dynamics including fast transients, slow buildup and post-stimulation slow rebound. We could quantitatively describe this synaptic dynamics with a linear combination of three types of AMPARs: \u2018close\u2019 receptors close to a release site, with instantaneous rise and exponential decay of the glutamate for the fast transients;; \u2018intermediate\u2019 receptors with a non-zero rise time for the rising of the rebound; \u2018far\u2019 receptors to give rise to the buildup and associated rebound.\n\nAMPAR were modeled by a 4-state Markov model\n\n$$\nC\u21cc_{\\beta_{2}}^{\\alpha_{2}[x]}O_{2}\u21cc_{\\beta_{1}}^{\\alpha_{1}[x]}O_{1}\u21cc_{\\beta_{D}}^{\\alpha_{D}}D,\n$$\n\nwith one closed state $C$, two open states $O_{1}$and $O_{2}$, and a desensitized state $D$. Transitions between states were described by rate constants $\\alpha$ and $\\beta$. The transition rates from the close to the open state $O_{1}$, and from $O_{1}$ to $O_{2}$, were proportional to the glutamate concentration $x$. The fractions of receptors in each state ($r_{2}$ in $O_{2}$, $r_{1}$ in $O_{1}$, and $d$ in $D$) obey the following dynamics:\n\n$$\nr_{2}^{\u2032}=\\alpha_{2}x(1\u2212r_{1}\u2212r_{2}\u2212d)\u2212(\\beta_{2}+\\alpha_{1}x)r_{2}+\\beta_{1}r_{1}r_{1}^{\u2032}=\\alpha_{1}xr_{2}\u2212(\\beta_{1}\\alpha_{D})r_{1}+\\beta_{D}dd^{\u2032}=\\alpha_{D}r_{1}\u2212\\beta_{D}d\n$$\n\nEach type of receptor is subjected to its own glutamate concentration dynamics$\u00a0x$. The \u2018close\u2019 glutamate has the following dynamics:\n\n$$\ndx/dt=x/[\\tau_{decay}(1+x/u)]+s\\sumk\\delta(t\u2212t_{k}),\n$$\n\nAt the spike time $t_{k}$, the glutamate concentrations increase by a step $s$, then decay with a concentration-dependent time constant $\\tau_{decay}$ ($u=30\u00a0\\muM$). The concentration-dependence of the glutamate decay accounts for the non-exponential concentration decay found at proximity of the glutamate release sites, as a consequence of 2D or 3D diffusion (Barbour, 2001). Both \u2018intermediate\u2019 and \u2018far\u2019 glutamates with additional rise time to buildup have the following dynamics:\n\n$$\ndx/dt=(y\u2212x)/\\tau_{decay}(1+x/u),\n$$\n\n\n\n$$\ndy/dt=\u2212y/\\tau_{rise}+s\\sumk\\delta(t\u2212t_{k}),\n$$\n\nwhere the rise variable $y$ increases by a step $s$ when a spike occurs, and decays with a time constant $\\tau_{rise}$.\n\nThe total synaptic current is\n\n$$\nI_{AMPA}=[g_{close}(x_{close,1}+rx_{close,2}\u00a0)+g_{int}(x_{int,1}+x_{int,2}\u00a0)+g_{far}(x_{far,1}+x_{far,2}\u00a0)]V_{hold},\n$$\n\nwith $V_{hold}=\u221260$ mV, and $g$s are conductance strengths for each receptor.\n\nWe fitted the recorded UBC synaptic traces with the model above. To reduce the number of parameters, we used the following values for the rate constants:\u00a0$\u00a0\\alpha_{1}=0.03\u00a0\\muM^{\u22121}\u00a0ms^{\u22121}\u00a0$, $\\alpha_{2}=0.15\u00a0\\muM^{\u22121}\u00a0ms^{\u22121}\u00a0$, $\\alpha_{D}=2\u00a0\u00a0ms^{\u22121}\u00a0$, $\\beta_{1}=\\beta_{2}=10\u00a0\u00a0ms^{\u22121}\u00a0,$\u00a0and fit other 11 parameters: $g,\u00a0\\tau_{decay}$, $s$, for all three types of receptors and $\\tau_{rise}$ for both \u2018intermediate\u2019 and \u2018far\u2019 receptors.\n\nThe model was used to fit UBC synaptic currents triggered by a train of stimulation of 0.5\u2009s at 50\u2009Hz, close to the 1\u2009Hz modulation parameters. After fitting, we fixed the parameters of each UBC, and then use these parameters to produce a simulated response to the modulated stimulation at 1\u2009Hz used in the experiments for each UBC, as in Figure 5. We first calculated the correlation coefficients of the histograms of simulated EPSCs and experimental spike rate responses, and verified that most cells have a positive correlation, which implies that we emulated synaptic currents well enough to explain the spiking dynamics of most UBCs. We used the p-values to define well correlated cells in Figure 5I. We then fitted simulated EPSCs with a circular normal function to obtain the predicted phase shift of UBC spiking.\n\n### Granule Cell Model\n\n#### Granule cells excitability and integration\n\nGranule cells (GCs) were modeled as integrate-and-fire neurons, in which the membrane potential $V$ obeys the equation (when $V<V_{T}$)\n\n$$\nCdV/dt=\u2212g_{L}(V\u2212E_{K})exp(\u2212(V\u2212E_{L})/5)\u2212g\u00af_{AHP}\u00a0z_{AHP}(V\u2212E_{K})\u2212I_{noise}\u2212I_{inh}\u2212g_{control}I_{syn}(t)\n$$\n\nwhere C = 4.9 pF, $g_{L}$ = 1.5 nS is the conductance of an inward rectifier potassium ($K_{IR}$) current, which is prominent in granule cells (Rossi et al., 2006). The activation curve of the $K_{IR}$ current was approximated by an exponential function, since the membrane potential of granule cells never visited potentials lower than the half $E_{L}$ = \u221290 mV. When the membrane potential reaches the threshold $V_{T}$ = \u221250 mV at the spike time $t_{spk}$, V is set to 40 mV for a duration of the spike as $\\tau_{dur}$ = 0.6 ms. The firing threshold $V_{T}$ is drawn randomly for each cell using a Gaussian distribution (\u221250 \u00b1 2.5 mV; mean \u00b1 SD). After the spike, at $t=t_{spk}+\\tau_{dur}$, the repolarizing potential is set to $V_{reset}$ =\u00a0\u221265 mV, and an afterhyperpolarization (AHP) conductance ($g\u00af_{AHP}$ = 1 nS, $E_{K}$ = \u221290 mV) is activated. The gating variable $z_{AHP}$ follows the dynamics $dz_{AHP}/dt=x_{AHP}(1\u2212z_{AHP})\u2212z_{AHP}/\\tau_{AHP}$ where $\\tau_{AHP}$=3 ms. The source variable $x_{AHP}$ obeyed the dynamics $dx_{AHP}/dt=\u2212x_{AHP}/\\tau_{AHP,x}+\\delta(t\u2212t_{spk}\u2212\\tau_{dur})$\u00a0where $\\tau_{AHP,x}$=1 ms. The refractory period is set as $\\tau_{ref}$=2 ms. Finally, a tonic inhibition current is added as $I_{inh}=g_{inh}(V\u2212E_{CI})$\u00a0where $g_{inh}$ = 0.9nS, and $E_{CI}$ = \u221275mV. (Mitchell and Silver, 2003). In order to reproduce the low-frequency fluctuations of the cell membrane potential in the experimental data, a noise current $I_{noise}=g_{N}(V\u2212V_{E})$ with $V_{E}$=0 mV and a slowly fluctuating conductance $g_{N}$ is also taken into account. The conductance $g_{N}$ is described by an Ornstein-Uhlenbeck process $\\tau_{N}dg_{N}/dt=\u2212g_{N}+\\sigma_{N}\\sqrt{\\tau_{N}}b(t)$, where $\\sigma_{N}$=0.12 nS and $\\tau_{N}$=1\u2009s. $b(t)$ is a white-noise with unit variance density.\n\nFor a fair comparison between networks with or without UBCs, we control each GC's firing rate to be 5\u2009Hz by multiplying a scaling factor $g_{control}$ to all incoming synapses, where $g_{control}$ was continually adjusted through the whole stimulation such that the mean firing rate to the desired value.\n\n#### GC excitatory synaptic currents\n\nIt has been shown that synaptic currents triggered by MF inputs onto GCs have three components: fast AMPA, slow AMPA and NMDA. All these synaptic currents were modeled using standard two-state kinetics. In addition, MF-GC synaptic dynamics are frequency-dependent (Saviane and Silver, 2006) and can be modeled with short-term dynamics, showing depression for the fast component and facilitation for the slow component.\n\nWe modeled the synaptic current as $I_{x}=g_{x}r(t)Y(V\u2212E_{x})$, where the scaling factor $Y$ is a voltage-dependent function for NMDA: $Y=1/(1+exp(\u2212(V\u221284)/38)/$ $(exp((V+119)/38)$ $+exp(\u2212(V+45)/28)))$, (Schwartz et al., 2012) and $Y$ =1 for other receptors. $x$ indicates the receptor type ($AMPA_{fast}$, $AMPA_{slow}$ and NMDA). The gating variable $r$ is described by $r'=\u2212r/\\tau_{decay}\u2212\\alpha\u2219s(1\u2212r)$, with the rising variable $s$ as $s^{\u2032}=\u2212s/\\tau_{rise}+Ru\\sum\u00a0k\\delta(t\u2212t_{spk})$, where $Ru$ is the synaptic efficacy following the short-term plasticity modeled (Izhikevich et al., 2003; Markram et al., 1998) with the short-term depression variable $R$ recovering with time constant $\\tau_{rec}$. $R^{\u2032}=(1\u2212R)/\\tau_{rec}\u2212uR\\delta(t\u2212t_{n})$, and the short-term facilitation variable $s$ recorvering with time constant $\\tau_{fac}\u00a0u^{\u2032}=(U\u2212u)/\\tau_{fac}+U(1\u2212u)\\delta(t\u2212t_{n})$.\n\nAll synaptic parameters are listed in Table 1, in which the values are chosen to match experimental recorded EPSCs for both single stimulations and train stimulations (Saviane and Silver, 2006; Schwartz et al., 2012). The synaptic conductance gpeak of eMF-GC and iMF(UBC)-GC is drawn randomly using a Gaussian distribution of SD 30% of the mean in Table 1.\n\n**Table 1.**\n Parameters of synapses\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Synapse</th>\n      <th>Strength</th>\n      <th colspan=\"3\">EPSC kinetics</th>\n      <th colspan=\"3\">Short-term plasticity</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Pre-Post</td>\n      <td>type</td>\n      <td>gpeak(nS)</td>\n      <td>a(1/ms)</td>\n      <td>\u03c4rise(ms)</td>\n      <td>\u03c4decay(ms)</td>\n      <td>U</td>\n      <td>\u03c4rec(ms)</td>\n      <td>\u03c4fac(ms)</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">eMF-GC</td>\n      <td>AMPAfast</td>\n      <td>0.4</td>\n      <td>3</td>\n      <td>0.3</td>\n      <td>0.8</td>\n      <td>0.5</td>\n      <td>600</td>\n      <td>600</td>\n    </tr>\n    <tr>\n      <td>AMPAslow</td>\n      <td>0.8</td>\n      <td>0.3</td>\n      <td>0.5</td>\n      <td>5</td>\n      <td>0.5</td>\n      <td>600</td>\n      <td>600</td>\n    </tr>\n    <tr>\n      <td>NMDA</td>\n      <td>0.96</td>\n      <td>0.35</td>\n      <td>8</td>\n      <td>30</td>\n      <td>0.05</td>\n      <td>n.a.</td>\n      <td>n.a.</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">UBC-GC</td>\n      <td>AMPAfast</td>\n      <td>1.6</td>\n      <td>3</td>\n      <td>0.3</td>\n      <td>0.8</td>\n      <td>0.5</td>\n      <td>12</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>AMPAslow</td>\n      <td>3.2</td>\n      <td>0.3</td>\n      <td>0.5</td>\n      <td>5</td>\n      <td>0.5</td>\n      <td>12</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>NMDA</td>\n      <td>3.84</td>\n      <td>0.35</td>\n      <td>8</td>\n      <td>30</td>\n      <td>0.05</td>\n      <td>n.a.</td>\n      <td>n.a.</td>\n    </tr>\n  </tbody>\n</table>\n\n### Granular layer network\n\nWe set up a simple network model to study the effects of neuronal and network mechanisms on the information transfer from the input, represented by the eMF activity, to the output, represented by the GC activity. The network includes 4500 GCs with 500 eMFs and 500 UBCs. Each GC receives 4 inputs, which are all eMF in the network with no UBCs, and eMFs and UBC in the network with UBCs. In networks with UBCs included, each synaptic input to GC could be either eMF or UBC with equal probability of 50%, as observed experimentally in organotypic cultures (Nunzi and Mugnaini, 2000) and as expected from the number (Dugue et al., 2005) and divergence of UBCs (Berthie and Axelrad, 1994).\n\nPrevious experimental studies have shown that the angular velocity of the rat head rotation is encoded linearly by the mossy fiber's firing rate (Arenz et al., 2008). Here we consider two types of eMFs, one that is in phase, the other in anti-phase with the velocity (Arenz et al., 2008). Therefore, we modeled the input velocity information as a sinusoid function of the eMF firing rate $\u03bd_{eMF}=r_{eMF}[1+Asin(2\\pift)]_{+}$, where $[.]_{+}$ rectifies the firing rate to be non-negative, $r_{eMF}$=26\u2009Hz and the modulation $A=\\frac{5}{3}fk$ obtained from in vivo\u00a0data with movements at f=0.3\u2009Hz (Arenz et al., 2008), and k is drawn uniformly within (0,1).\n\nSimilarly, we modeled the dynamics of UBC with a circular normal function with parameters $r_{max}$, $r_{min}$, $\u03d5$ and $k$ were obtained from the fitting of all 47 recorded UBCs in Figure 6. Half of the UBCs were modeled by sampling randomly from 47 recorded UBCs, and the other half was also sampled from recorded UBCs, but phase reversed (i.e. adding a phase shift of 180degrees), since eMFs can display phase and anti-phase behavior in vivo (Arenz et al., 2008). We also performed simulations where the parameters of all modeled UBCs were randomly chosen from the range of values of fitting parameters, to get more heterogeneous phase shifts in the firing rate curves. Results were indistinguishable from the results presented here.\n\nWith the given firing rate $\u03bd_{eMF}$ and $\u03bd_{UBC}$, we generated the spike trains by the time-rescaling method (Brown et al., 2002), then fed these input spike trains to GCs.\n\n### Purkinje cell model\n\nWe modeled the Purkinje cell (PC) as a firing rate unit, whose firing rate was an instantaneous linear function of the weighted inputs from all GCs, i.e. $r_{PC}(t)=\\sum\u00a0iw_{i}r_{i}^{GC}(t),$ where $r_{i}^{GC}(t)$, is the average GCs firing rate at a given phase within an oscillatory cycle. We defined a 'target' firing rate of the PC, $r_{PC,target}(t)=r\u00af(1+cos\u2061(2\\pift\u2212\u03d5))$, where $\u03d5$ is the preferred target phase to learn, and $r\u00af$ is the average rate of 32\u00a0Hz (typical rate of PCs in vivo). To achieve this target firing rate, the synaptic weights of the Purkinje cell evolved according to the following learning rule: $\u0394w_{i}=\u03b7\u00a0r_{i}^{GC}(t)E$, where $E=(r_{PC,target}(t)\u2212r_{PC}(t))$ is the 'error signal', which could be implemented by climbing fibers. Weights $w_{i}$ were initialized as 0.5, and updated by $\u0394w_{i}$, and are set to zero if they become negative. The learning rate was $\u00a0\u03b7=0.001$. The learning process was simulated until convergence of both the weights and the error signal after 10000 cycles.\n\nCodes for all numerical simulations are available on https://sites.google.com/site/jiankliu.\n",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "be15bdcb-af11-4381-b87a-969033155b6e",
+      "submission_id": "fcc843b7-d9a3-4ddb-8a06-407eeca031f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Indira M Raman, Northwestern University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15872.015](https://doi.org/10.7554/eLife.15872.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mechanisms and functional roles of glutamatergic synapse diversity in a cerebellar circuit\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nLongstanding models of vestibulo-ocular reflex adaptation have relied on a diversity of phases in granule cell responses to head velocity inputs, but it is not known whether such diversity actually exists or how it could arise. The present study examines the cellular mechanisms and the functional significance of signal transformation by unipolar brush cells (UBCs) in the vestibulocerebellum. The work shows that UBCs transform sinusoidally modulated (mossy fiber) synaptic inputs into diverse patterns of output firing and that differences in glutamate receptor expression and responses across UBCs accounts for the variation in temporal dynamics. A network simulation demonstrates that UBCs enable granule cells to fire at diverse phases in response to phase-restricted vestibular inputs. The work provides evidence that unipolar brush cells are plausible candidates for generating a diversity of granule cell responses in the vestibulocerebellum and the results are relevant to studies of the cerebellum and motor learning and also more generally, regarding in biophysical mechanisms for transforming stereotyped inputs into diverse outputs.\n\nEssential revisions:\n\nThe reviewers were enthusiastic about the work and characterized it as \"a very nice study\" and said that it \"provides several valuable insights to both synaptic physiologists and systems neuroscientists.\" They also said that the points were demonstrated \"convincingly, with high quality recordings and clear figures.\" The questions that they had were fairly limited, and had to do with:\n\n1) The extent of granule cell innervation by UBCs and, by extension, the accuracy of the model, and 2) the necessity of UBCs for cerebellar cortical processing. These points can probably be addressed with some additional modeling and rewriting.\n\nSpecifically:\n\n1) In the network model is the assumption that GCs get half their inputs from UBCs realistic? If so, please provide references. If not, perhaps this ratio should be varied in the model. This seems an important point for constraining and interpreting the model results.\n\n2) The final section of the Results, entitled \"Purkinje cell learning of arbitrary input-output relationships depends on the presence of UBCs\" overstates the role of UBCs in cerebellar signal processing, especially given that cerebellar circuits devoid of UBCs can \"learn\" arbitrary input-output relationships, e.g. for eyelid conditioning). Given this difference, please edit as appropriate the descriptions of the possible roles of UBCs and speculate on (or otherwise help readers think about) why UBCs might be highly expressed in vestibulo-cerebellum but not present in most parts of the cerebellum.\n\n3) Regarding accessibility of the title and Abstract, please note that the phrase \"private line transcoders\" in the Abstract is unlikely to be readily understood by most readers. Please consider editing to a clearer phrasing. Likewise, \"variegation\" is not quite colloquial and usually refers to coloring (e.g. of leaves of plants). Possibly \"variety\" or \"variable properties\" can be substituted effectively.\n",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "111efa20-2979-43b3-a8b9-a7df134ef16c",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C1",
+      "claim": "Synaptic currents display a large degree of heterogeneity of their temporal characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic currents display a large degree of heterogeneity of their temporal characteristics, but the functional role of such heterogeneities remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise in the abstract and is supported by the experimental data presented throughout the manuscript showing diverse temporal characteristics of UBC responses.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "d3ae2c25-763d-4841-90ab-7054d47d908b",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C2",
+      "claim": "UBCs respond to sinusoidal modulations of their sensory input with heterogeneous amplitudes and phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that UBCs respond to sinusoidal modulations of their sensory input with heterogeneous amplitudes and phase shifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental data shown in Figures 1, 2, and 4, demonstrating diverse phase shifts and amplitude responses across UBC populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "4cb81acc-cb1e-441c-ab6a-519311a0af09",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C3",
+      "claim": "Phase inversion is produced by an mGluR2-activated outward conductance in OFF-UBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "While phase inversion is produced by an mGluR2-activated outward conductance in OFF-UBCs, the phase delay of ON UBCs is caused by a late rebound current resulting from AMPAR recovery from desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 2 showing mGluR2-mediated currents and their correlation with phase shifts in OFF-UBCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "53f8cb7a-86b8-4ee1-b25c-fb9a66238094",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C4",
+      "claim": "The phase delay of ON UBCs is caused by a late rebound current resulting from AMPAR recovery from desensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "While phase inversion is produced by an mGluR2-activated outward conductance in OFF-UBCs, the phase delay of ON UBCs is caused by a late rebound current resulting from AMPAR recovery from desensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 3 and 4 showing rebound currents and their correlation with phase delays, as well as cyclothiazide experiments blocking desensitization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "6da39f55-1e31-4905-8932-5b27a84b5d7e",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C5",
+      "claim": "Phase dispersion of UBC responses generates diverse phase coding in the granule cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "Granular layer network modeling indicates that phase dispersion of UBC responses generates diverse phase coding in the granule cell population, allowing climbing-fiber-driven Purkinje cell learning at arbitrary phases of the vestibular input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational modeling results shown in Figure 6, demonstrating that networks with UBCs produce more diverse GC phase shifts than networks without UBCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "79efe0ff-9871-4be4-b2f0-b4c3a87bcd55",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C6",
+      "claim": "UBC phase diversity allows climbing-fiber-driven Purkinje cell learning at arbitrary phases of the vestibular input.",
+      "claim_type": "EXPLICIT",
+      "source": "Granular layer network modeling indicates that phase dispersion of UBC responses generates diverse phase coding in the granule cell population, allowing climbing-fiber-driven Purkinje cell learning at arbitrary phases of the vestibular input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by computational modeling results in Figure 7 showing that PCs can learn arbitrary phase relationships only in networks with UBCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "2ffb4566-9bf4-4858-a794-e4b48d3af012",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C7",
+      "claim": "Primary vestibular neurons primarily encode the rotational velocity and linear acceleration of the head.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vestibular system, primary vestibular neurons primarily encode the rotational velocity (semicircular canals) and linear acceleration (gravitational or inertial, in the otholitic organs) of the head (Arenz et al., 2008; Fernandez and Goldberg, 1971; Goldberg, 2000; Goldberg and Fernandez, 1971a, 1971b; Green and Angelaki, 2010; Sadeghi et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "a3051f80-ea7b-492a-af64-98813d00d263",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C8",
+      "claim": "The vestibulo-cerebellum is innervated by primary vestibular afferents in the vermal part.",
+      "claim_type": "EXPLICIT",
+      "source": "The vestibulo-cerebellum, which is innervated by primary vestibular afferents in the vermal part (Barmack et al., 1993; Chabrol et al., 2015; Gerrits et al., 1989; Korte and Mugnaini, 1979) and by secondary vestibular afferents in all its subsections (Barmack et al., 1992; Magras and Voogd, 1985; Thunnissen et al., 1989), is well known to perform the sensory-motor integration required to orient the body in space and to generate accurate eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "74a9bfa2-b953-4126-b6f1-4a40929b52fa",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C9",
+      "claim": "The vestibulo-cerebellum is innervated by secondary vestibular afferents in all its subsections.",
+      "claim_type": "EXPLICIT",
+      "source": "The vestibulo-cerebellum, which is innervated by primary vestibular afferents in the vermal part (Barmack et al., 1993; Chabrol et al., 2015; Gerrits et al., 1989; Korte and Mugnaini, 1979) and by secondary vestibular afferents in all its subsections (Barmack et al., 1992; Magras and Voogd, 1985; Thunnissen et al., 1989), is well known to perform the sensory-motor integration required to orient the body in space and to generate accurate eye movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "a2ee064c-f3d0-42fb-8de6-5d6a37ff4f06",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C10",
+      "claim": "Primary vestibular mossy fibers activity displays a high level of stereotypy with mostly in-phase firing during sinusoidal velocity modulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo electrophysiological recordings during passive head rotation indicate that primary vestibular mossy fibers activity displays a high level of stereotypy with mostly in-phase firing during sinusoidal velocity modulations (Arenz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior in vivo electrophysiological work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "e41ce4c8-2125-4139-9ff5-3609239e5fac",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C11",
+      "claim": "Granule cells show a large diversity of phase shifts in response to head rotations in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Filtering may nevertheless occur upstream of granule cells, as the available in vivo recordings of granule cells show a large diversity of phase shifts in response to head rotations (Barmack and Yakhnitsa, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior in vivo recording studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "6924d07b-9ce0-4fb2-aeae-7fc6402373f1",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C12",
+      "claim": "Each UBC receives a single mossy fiber input.",
+      "claim_type": "EXPLICIT",
+      "source": "Each UBC receives a single mossy fiber input, and projects onto granule cells by forming several intrinsic mossy fiber terminals (iMFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about UBC connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "07b6fd39-c15c-47e5-a304-e2011e8b89a1",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C13",
+      "claim": "UBCs project onto granule cells by forming several intrinsic mossy fiber terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Each UBC receives a single mossy fiber input, and projects onto granule cells by forming several intrinsic mossy fiber terminals (iMFs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about UBC connectivity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "307a5207-d7d5-47a8-978c-37149d7177bf",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C14",
+      "claim": "The single mossy fiber contacting the dendritic brush of UBCs forms a giant synapse of unique morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mossy fiber contacting the dendritic brush of UBCs forms a giant synapse of unique morphology (Mugnaini et al., 1994) at which various types of glutamate receptors are expressed (Jaarsma et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "10d86ec1-c120-49d6-8100-07e9d92acf61",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C15",
+      "claim": "Various types of glutamate receptors are expressed at the MF-UBC synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "The single mossy fiber contacting the dendritic brush of UBCs forms a giant synapse of unique morphology (Mugnaini et al., 1994) at which various types of glutamate receptors are expressed (Jaarsma et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior molecular studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "34fdb629-8b6f-46e6-8d07-c3ab90b2a7d7",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C16",
+      "claim": "Dorsal cochlear nucleus UBCs can be divided into ON UBCs and OFF UBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Borges-Merjane and Trussell (2015) showed recently that dorsal cochlear nucleus UBCs can be divided into ON UBCs, which have an excitatory response to their mossy fiber inputs mediated by both AMPA and mGluR1 receptors, and into OFF UBCs, the response of which is inhibitory and is produced by mGluR2 receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study by Borges-Merjane and Trussell (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "c0e6b75d-2f7c-42d7-8dcf-a4c2c5095f04",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C17",
+      "claim": "ON UBCs have an excitatory response to their mossy fiber inputs mediated by both AMPA and mGluR1 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Borges-Merjane and Trussell (2015) showed recently that dorsal cochlear nucleus UBCs can be divided into ON UBCs, which have an excitatory response to their mossy fiber inputs mediated by both AMPA and mGluR1 receptors, and into OFF UBCs, the response of which is inhibitory and is produced by mGluR2 receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Borges-Merjane and Trussell (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "3a3478a4-3f9e-4ab9-a4c8-a098c2198972",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C18",
+      "claim": "OFF UBCs have an inhibitory response produced by mGluR2 receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Borges-Merjane and Trussell (2015) showed recently that dorsal cochlear nucleus UBCs can be divided into ON UBCs, which have an excitatory response to their mossy fiber inputs mediated by both AMPA and mGluR1 receptors, and into OFF UBCs, the response of which is inhibitory and is produced by mGluR2 receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Borges-Merjane and Trussell (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "a17b39c7-581a-4426-9778-5234a283556a",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C19",
+      "claim": "Afferent vestibular inputs fire steadily at mean rates of 10\u201350 Hz at rest in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, afferent vestibular inputs fire steadily at mean rates of 10\u201350 Hz at rest (Arenz et al., 2008; Barmack and Yakhnitsa, 2008; Dickman et al., 1991; Fernandez and Goldberg, 1971; Goldberg, 2000; Goldberg and Fernandez, 1971a, 1971b; Green and Angelaki, 2010; Loe et al., 1973; Sadeghi et al., 2007; Tomko et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior in vivo recording studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "3b56fbbc-31dc-4b55-9440-71cf647538e8",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C20",
+      "claim": "OFF-UBCs (n=25) were hyperpolarized by MF input at 26 Hz (\u22129.5 \u00b1 4.2 mV at steady-state).",
+      "claim_type": "EXPLICIT",
+      "source": "In a first group of cells (OFF-UBCs, n= 25, Figure 1A), the glutamatergic MF input evoked a hyperpolarization (\u22129.5 \u00b1 4.2 mV at steady-state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements reported in the text and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "144b9fb0-f29e-4505-a43a-760a53f8fa39",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C21",
+      "claim": "In 5 OFF-UBCs, the hyperpolarization was preceded by a transient period of action potential firing (4 \u00b1 2 spikes at 26.3 \u00b1 15.2 Hz, duration 0.12 \u00b1 0.06 s).",
+      "claim_type": "EXPLICIT",
+      "source": "In 5 cells the hyperpolarization was preceded by a transient period of action potential firing (4 \u00b1 2 spikes at 26.3 \u00b1 15.2 Hz, duration 0.12 \u00b1 0.06 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "7d2c1be0-4201-43a7-9857-515588a958e2",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C22",
+      "claim": "Out of 25 OFF-UBCs, 6 fired spontaneously (12.8 \u00b1 8.1 Hz) at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 25 OFF-UBCs, 6 fired spontaneously (12.8 \u00b1 8.1 Hz) at rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "1db3846b-1e72-4074-8525-a81545a97627",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C23",
+      "claim": "MF stimulation silenced 5 of 6 spontaneously firing OFF-UBCs and decreased firing rate by 28% in the last one.",
+      "claim_type": "EXPLICIT",
+      "source": "MF stimulation silenced 5 of these UBCs and decreased firing rate by 28% in the last one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "f7d219e6-acf7-40b6-92c9-8211f44cdf38",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C26",
+      "claim": "ON-UBCs covered a range of frequencies (1 \u2013 29.9 Hz) similar to that found in vivo under anesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, ON-UBCs covered a range of frequencies (1 \u2013 29.9 Hz) similar to that found in vivo under anesthesia (Barmack and Yakhnitsa, 2008; Ruigrok et al., 2011; Simpson et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from this study and comparison to cited in vivo studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "e8fc271b-fb50-44bc-af7a-22a9f1ebadb2",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C27",
+      "claim": "Only 1 of 22 ON UBCs fired at rest (1.7 Hz) in the cell-attached configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 1 of 22 ON UBCs fired at rest (1.7 Hz) in the cell-attached configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "02acc2d1-6f6f-4315-9aec-f61bde1a340b",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C28",
+      "claim": "A group of complex UBCs (n = 10) displayed delayed or gradual depolarization which did not reach steady-state at the end of the MF stimulation protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a group of complex UBCs (n = 10) displayed delayed or gradual depolarization which did not reach steady-state at the end of the MF stimulation protocol (Figure 1\u2014source data 1A,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "7d227927-7fbd-4af7-aea2-8e2f51be4ee2",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C29",
+      "claim": "8 of 10 complex UBCs first hyperpolarized and then resumed firing at 10.9 \u00b1 10.5 Hz with a delay from stimulation onset of 1.2 \u00b1 1.3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to OFF-UBCs, 8 of these 10 UBCs first hyperpolarized and then resumed firing at 10.9 \u00b1 10.5 Hz with a delay from stimulation onset of 1.2 \u00b1 1.3 s (from 0.44 to 4.16 s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "c7b799e6-a194-4707-ab93-b0c79a9b937d",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C30",
+      "claim": "The slow inward current underlying the depolarization in complex UBCs was blocked by the group I mGluR antagonist JNJ16259685.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow inward current underlying the depolarization (Figure 1\u2014source data 1B) was blocked by the group I mGluR antagonist JNJ16259685 (Figure 1\u2014source data 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "41e38251-b401-4f4f-be99-bcac11cfe880",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C31",
+      "claim": "The phase shift of ON-UBCs was broadly distributed (SD of 105\u00b0) and covered essentially all possible phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "The phase shift of ON-UBCs was broadly distributed (SD of 105\u00b0; Figure 1I) and covered essentially all possible phase shifts, with a sum of phase preferences weighted by the firing modulation strength of 140\u00b0.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "c8a7bf83-46ad-4764-854c-6c6a5d72c6b8",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C32",
+      "claim": "OFF-UBCs fired within a narrower range of phases (274 \u00b1 28\u00b0) and had a significantly higher phase lag than ON-UBCs (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "OFF-UBCs fired within a narrower range of phases (274 \u00b1 28\u00b0; Figure 1D) and had a significantly higher phase lag than ON-UBCs (p<0.001; Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data and statistical analysis shown in Figures 1D and 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "2df26628-b2be-437b-8ae5-7adcf8bdd327",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C33",
+      "claim": "The firing modulation amplitude of OFF and ON cells was similar (12 \u00b1 8 and 12 \u00b1 23 Hz; respectively p=0.353).",
+      "claim_type": "EXPLICIT",
+      "source": "The firing modulation amplitude of OFF and ON cells was similar (12 \u00b1 8 and 12 \u00b1 23 Hz; respectively p=0.353) but the dispersion of action potentials along the modulation cycle differed between these two populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "6e6c74dd-e3cc-4974-9bce-959486a6a664",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C36",
+      "claim": "All UBCs (n = 21) responded to sinusoidal current injections at 1 Hz with a modest phase advance of 9.9 \u00b1 4.1\u00b0, independently of the holding current bias.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all UBCs (n = 21) responded with a modest phase advance of 9.9 \u00b1 4.1\u00b0 (Figure 1L), independently of the holding current bias, up to the sodium spike inactivation threshold (200 \u00b1 85 pA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements shown in Figure 1L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "3ac16de2-1637-406b-ab0e-4d64256fd889",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C37",
+      "claim": "The sharpness of the UBC response to sinusoidal current injection was strongly regulated by the holding current, with hyperpolarized cells firing spikes concentrated at the peak of the sinusoidal current injection.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharpness of the UBC response was strongly regulated by the holding current, with hyperpolarized cells firing spikes concentrated at the peak of the sinusoidal current injection (Figure 1M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data shown in Figure 1M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "4a8329e2-72e6-4415-adc0-f3e5b7bedf1d",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C38",
+      "claim": "The strong heterogeneity in UBC phase shifts in response to MF stimulation is not due to intrinsic conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the strong heterogeneity in UBC phase shifts in response to MF stimulation is not due to intrinsic conductances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing minimal phase shifts with current injection compared to large phase shifts with synaptic stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "f78bac76-9cba-4915-9216-e3afe8ff07a5",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C39",
+      "claim": "All OFF-UBCs displayed a slow outward post synaptic current that was blocked by the mGluR2 selective blocker LY341495.",
+      "claim_type": "EXPLICIT",
+      "source": "All OFF-UBCs displayed a slow outward post synaptic current (PSC). This current was blocked by the mGluR2 selective blocker LY341495 (1 \u03bcM, n = 25, residual amplitude after block \u22125.3 \u00b1 10.1 pA; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "85a825e0-eb55-4f17-8b33-a08a1ada75a6",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C40",
+      "claim": "mGluR2 block revealed a NBQX-sensitive inward current in 48% of OFF-UBCs (n = 12) with peak 35.2 \u00b1 28.7 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "mGluR2 block revealed a NBQX-sensitive inward current in 48% of OFF-UBCs (n = 12) (peak 35.2 \u00b1 28.7 pA; NBQX block of the total charge 95 \u00b1 9%; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "7d5cba06-7b53-49fc-b57f-825de653e90f",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C41",
+      "claim": "The steady-state amplitude of mGluR2 PSC increased with the stimulation frequency from 10 Hz (41.5 \u00b1 26.9 pA) to 100 Hz (129.9 \u00b1 43.4 pA; n = 14 cells, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state amplitude of mGluR2 PSC increased with the stimulation frequency from 10 Hz (41.5 \u00b1 26.9 pA) to 100 Hz (129.9 \u00b1 43.4 pA; n = 14 cells, p<0.001) (Figures 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements and statistical analysis shown in Figures 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "dbfabb12-0839-4c69-b019-881cba499889",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C42",
+      "claim": "The decay time constant of the mGluR2 EPSC was positively correlated with OFF-UBC phase shift (r = 0.621, n = 15, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "OFF-UBC fired at the end of the period of low MF activity during 1 Hz modulations and their phase shift was positively correlated with the decay time constant of the mGluR2 current recorded in voltage-clamp (r = 0.621, n = 15, p<0.05) (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by correlation analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "9446d6b3-c0df-4e0b-a19b-307df10ab595",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C43",
+      "claim": "The total number of spikes per cycle in OFF-UBCs was positively correlated with the amplitude of mGluR2 hyperpolarization (r = 0.627, n = 18, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "The total number of spikes per cycle was positively correlated with the amplitude of mGluR2 hyperpolarization (r = 0.627, n = 18, p<0.01), suggesting that rebound-promoting intrinsic conductances like IH or IT (Diana et al., 2007; Russo et al., 2007), amplify OFF-UBC responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by correlation analysis and inference about underlying mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "793dea40-8e0a-4dae-b1af-fde433a811d5",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C45",
+      "claim": "The amplitude of OFF-UBC responses increased significantly from 0.3 Hz to 1 Hz and dropped at 3 Hz (p=0.0003; Friedman's test).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of OFF-UBC responses increased significantly from 0.3 Hz to 1 Hz and dropped at 3 Hz (p=0.0003; Friedman's test; Figure 2H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data and statistical analysis shown in Figures 2H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "bdb1ffda-7566-4e2e-a33f-4d50415f3640",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C46",
+      "claim": "20% and 68% of the OFF-UBCs were completely silenced during 1 Hz and 3 Hz modulations respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently with the increase of PSC amplitude at higher MF firing frequencies (Figure 2D), 20% and 68% of the OFF-UBCs were completely silenced during 1 Hz and 3 Hz modulationsrespectively (Figure 2H and 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental observations shown in Figures 2H and 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "2427f63d-6504-4868-9131-3c84ece82bf1",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C47",
+      "claim": "OFF-UBC phase shifts increased significantly with the modulation frequency (193 \u00b1 46\u00b0 at 0.3 Hz; 274 \u00b1 28\u00b0 at 1 Hz; 367 \u00b1 29\u00b0 at 3 Hz; p<0.0003; Friedman's test).",
+      "claim_type": "EXPLICIT",
+      "source": "Phase shifts increased significantly with the modulation frequency (193 \u00b1 46\u00b0 at 0.3 Hz; 274 \u00b1 28\u00b0 at 1 Hz; 367 \u00b1 29\u00b0 at 3 Hz; p<0.0003; Friedman's test; Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data and statistical analysis shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "2b0cc59b-8377-42df-8f79-a29c31b95339",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C48",
+      "claim": "In all ON-UBCs tested, EPSCs were blocked by the competitive AMPAR/kainate antagonist NBQX (block 92.6 \u00b1 8.8% of the charge; n = 10).",
+      "claim_type": "EXPLICIT",
+      "source": "In all ON-UBCs tested EPSCs were blocked by the competitive AMPAR/kainate antagonist NBQX (1 or 5 \u03bcM; block 92.6 \u00b1 8.8% of the charge; n = 10; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "5ad04604-6044-483c-88d5-b96ed11a5eb6",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C49",
+      "claim": "The amplitude of the fast EPSC evoked by the first stimulation ranged from 5 to 210 pA (71 \u00b1 66 pA; n = 21) and was inversely correlated to its decay time course (2.1 \u00b1 1.5 ms) (r = 0.737; p<0.001; n = 21).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the fast EPSC evoked by the first stimulation ranged from 5 to 210 pA (71 \u00b1 66 pA; n = 21) and was inversely correlated to its decay time course (2.1 \u00b1 1.5 ms) (r = 0.737; p<0.001; n = 21; Figure 2\u2014source data 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental measurements and correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "94360232-db37-4018-8887-dcd95aebde40",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C50",
+      "claim": "The amplitude of fast EPSCs decreased dramatically (by 67.4 \u00b1 35.8% of the first peak at steady-state, n = 21) during 50 Hz trains.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless the amplitude of fast EPSCs decreased dramatically (by 67.4 \u00b1 35.8% of the first peak at steady-state, n = 21; Figure 3B), in a way which was inversely correlated to the decay time course of the first fast EPSC (r = 0.823; p<0.001; n = 21; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "85f3f7b1-23ee-422a-a586-9e206a74f9ef",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C51",
+      "claim": "The decrease in fast EPSC amplitude during trains was inversely correlated to the decay time course of the first fast EPSC (r = 0.823; p<0.001; n = 21).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless the amplitude of fast EPSCs decreased dramatically (by 67.4 \u00b1 35.8% of the first peak at steady-state, n = 21; Figure 3B), in a way which was inversely correlated to the decay time course of the first fast EPSC (r = 0.823; p<0.001; n = 21; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by correlation analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "ace42ca6-aa43-4cd8-b83c-525ac4637c4f",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C52",
+      "claim": "Transient EPSCs were always accompanied by a low level of sustained steady AMPAR current (\u221215.9 \u00b1 8.4 pA before the 4th stimulation).",
+      "claim_type": "EXPLICIT",
+      "source": "Transient EPSCs were always accompanied by a low level of sustained steady AMPAR current (\u221215.9 \u00b1 8.4 pA before the 4th stimulation; Figures 3A and B), indicative of the prolonged presence of glutamate in the synaptic cleft (Nielsen et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "81828c29-50e9-44c2-abe8-e4c468f49e84",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C53",
+      "claim": "In 67% of UBCs, an additional slow component developed during the train that reached a steady-state (64 \u00b1 35 pA) with variable time course (\u03c4 = 0.347 \u00b1 0.244 s at 50 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "In 67% of UBCs, an additional slow component developed during the train, a further element suggesting glutamate concentration buildup in the synaptic cleft (Kinney et al., 1997). This slow EPSC buildup reached a steady-state (64 \u00b1 35 pA; Figure 3D) with variable time course (\u03c4 = 0.347 \u00b1 0.244 s at 50 Hz).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental measurements shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "a1c21d83-61fb-4734-8efd-6f358e5232d7",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C54",
+      "claim": "The amplitude of the transient currents and of the buildup currents were not correlated (p=0.12).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the transient currents and of the buildup currents were not correlated (p=0.12; Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by statistical analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "585e2670-13bd-4da5-8807-533efc3b1125",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C55",
+      "claim": "In 87% of all AMPAR expressing UBCs (n = 27 out of 31 cells), an anomalous rebound current developed at the end of the stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In 87% of all AMPAR expressing UBCs (n = 27 out of 31 cells), an anomalous rebound current developed at the end of the stimulation (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental observations shown in Figures 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "37a22534-959c-4013-9b25-c50fa55f441f",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C56",
+      "claim": "The amplitude of the rebound current (27.7 \u00b1 16.7 pA) was correlated to its rise time constant (r = 0.583, p<0.01, n = 23).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the rebound current (27.7 \u00b1 16.7 pA) was correlated to its rise time constant (r = 0.583, p<0.01, n = 23; Figure 3G), which varied widely from cell to cell (54 \u00b1 24 ms; min = 25; max = 99; n = 23).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by correlation analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "82bf69be-d1b9-450b-b317-f3a3e8ef1d85",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C57",
+      "claim": "The amplitude of the rebound current was correlated with both the amplitude of the transient EPSC integral (r = 0.611, p<0.01, n = 20) and with the amplitude of the slow buildup EPSC (r = 0.763, p<0.001, n = 25).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the rebound current was also correlated with both the amplitude of the transient EPSC integral (r = 0.611, p<0.01, n = 20; Figure 3H) and with the amplitude of the slow buildup EPSC (r = 0.763, p<0.001, n = 25; Figure 3I), suggesting that both fast and buildup components of transmission contribute to the genesis of the rebound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by correlation analyses shown in Figures 3H and 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "d8325b7a-1a15-4de4-a52c-e9f78dcc7057",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C58",
+      "claim": "Cyclothiazide (10\u201320 \u00b5M) potentiated the charge during stimulation (201 \u00b1 54% of control; n = 11) and suppressed the rebound current (27 \u00b1 18% of control; n = 11).",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclothiazide (10\u201320 \u00b5M), a modulator of AMPARs known to suppress desensitization, potentiated the charge during stimulation (201 \u00b1 54% of control; n = 11) and suppressed the rebound current (27 \u00b1 18% of control; n = 11) (Figures 3J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments shown in Figures 3J and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "cf08b97b-f99b-441d-b4ce-fb2c1c4d90a6",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C59",
+      "claim": "The response phase of ON-UBCs at 1 Hz was linearly correlated with the ratio between the rebound charge and the synaptic charge during the 50 Hz trains (slope = 0.1 per 100\u00b0; r = 0.734, p<0.001, n = 22).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the response phase of ON-UBCs at 1 Hz was linearly correlated with the ratio between the rebound charge and the synaptic charge during the 50 Hz trains (see Experimental Procedures) (slope = 0.1 per 100\u00b0; r = 0.734, p<0.001, n = 22; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by correlation analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "1265b71e-8642-47c4-8482-938179ec10da",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C60",
+      "claim": "In all delayed cells (positive phase shift), the phase of UBC firing was strongly correlated with the charge of the rebound EPSC (r = 0.75, p<0.001, n = 16).",
+      "claim_type": "EXPLICIT",
+      "source": "In all delayed cells (positive phase shift), the phase of UBC firing was strongly correlated with the charge of the rebound EPSC (r = 0.75, p<0.001, n = 16; Figure 2\u2014source data 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "cfd42edd-43da-4189-bac1-780e158e35f0",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C61",
+      "claim": "The onset time constant of the rebound was strongly correlated to the phase of UBC firing (r = 0.87, p<0.001, n= 16).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed we found that the onset time constant of the rebound was strongly correlated to the phase of UBC firing (r = 0.87, p<0.001, n= 16).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "b9ebc3ec-2087-4ad9-847a-77433d5c2574",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C62",
+      "claim": "Cyclothiazide shifted the phase of UBC firing (143 \u00b1 44\u00b0 in control; \u221259 \u00b1 36\u00b0 in cyclothiazide; n = 7; p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Cyclothiazide (Figure 4F), at a concentration which suppresses the rebound current, shifted the phase of UBC firing (143 \u00b1 44\u00b0 in control; \u221259 \u00b1 36\u00b0 in cyclothiazide; n = 7; p=0.01; Figure 4G) towards values similar to control cells displaying small rebound (p=0.9, n = 6 cells with little rebound current, n = 7 cells in cyclothiazide).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by pharmacological experiments and statistical analysis shown in Figures 4F and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "5d1f7e12-649b-4ccf-87d9-1346d3002b67",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C63",
+      "claim": "The average amplitude of ON-UBC firing modulation increased at higher MF modulation frequencies (5.1 \u00b1 5.9 Hz at 0.3 Hz, 11.0 \u00b1 8.1 Hz at 1 Hz, and 14.0 \u00b1 9.7 Hz at 3 Hz; p=0.0009; Friedman's test).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to OFF-UBCs the average amplitude of firing modulation increased at higher MF modulation frequencies (5.1 \u00b1 5.9 Hz at 0.3 Hz, 11.0 \u00b1 8.1 Hz at 1 Hz, and 14.0 \u00b1 9.7 Hz at 3 Hz; p=0.0009; Friedman's test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "8e51d29c-e849-4db0-9ca4-4cff9e106734",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C64",
+      "claim": "The population response of ON-UBCs showed significant frequency-dependent increase of phase lag (45.9\u00b0 at 0.3 Hz, 108.9\u00b0 at 1 Hz and 191.6\u00b0 at 3 Hz; p<0.0001; Friedman's test).",
+      "claim_type": "EXPLICIT",
+      "source": "The population response of UBCs also showed significant frequency-dependent increase of phase lag (45.9\u00b0 at 0.3 Hz, 108.9\u00b0 at 1 Hz and 191.6\u00b0 at 3 Hz; p<0.0001; Friedman's test). and remained broadly distributed at all frequencies (SD: 76.3\u00b0, 73.9\u00b0 and 92.7\u00b0 at 0.3 Hz, 1 Hz and 3 Hz respectively; Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by experimental data and statistical analysis shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "fd479f34-aa97-4b62-84ce-64f07bfcaee5",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C65",
+      "claim": "Phase dispersion of the ON-UBC responses is a property preserved over a wide range of movement dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Phase dispersion of the ON-UBC responses is therefore a property preserved over a wide range of movement dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing broad phase distributions at all tested frequencies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "cff272c4-6d8d-4c4a-8906-0fd073b4a885",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C66",
+      "claim": "In most cells (14 out of 22) phase histograms of the simulated EPSCs and of the experimentally recorded UBC firing rate were significantly correlated (p<0.05; t-test).",
+      "claim_type": "EXPLICIT",
+      "source": "In most cells (14 out of 22) phase histograms of the simulated EPSCs and of the experimentally recorded UBC firing rate were significantly correlated (p<0.05; t-test; Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by statistical analysis of model predictions versus experimental data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "4d832a44-d42e-4f9b-8caa-d6dbddea386e",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C67",
+      "claim": "Simulated and experimental phase shifts were linearly correlated (R = 0.89 and p=2e-5; t-test and slope = 1.04 for cells with correlated phase histograms).",
+      "claim_type": "EXPLICIT",
+      "source": "Simulated and experimental phase shifts were linearly correlated (R = 0.89 and p=2e-5; t-test and slope = 1.04 for cells with correlated phase histograms) (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by statistical analysis of model predictions versus experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "dbd5830e-87ff-49e9-a12f-0a7736e15ae1",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C68",
+      "claim": "The dynamics of glutamate accumulation at the MF to UBC synapse during time-modulated MF firing is the major determinant of firing phase in UBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that the dynamics of glutamate accumulation at the MF to UBC synapse during time-modulated MF firing is the major determinant of firing phase in UBCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the strong correlation between model predictions based on glutamate dynamics and experimental phase shifts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "836adb3f-7638-4953-ac9f-690872826ef2",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C69",
+      "claim": "The distribution of phases in the network comprising UBCs is significantly closer to a uniform distribution compared to the network without UBCs (KS distance between network with UBCs and uniform: 0.1673; between network without UBCs and uniform: 0.4134; both distributions are significantly different, KS test, p<1e-10).",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of phases in the network comprising UBCs is significantly closer to a uniform distribution compared to the network without UBCs (KS distance between network with UBCs and uniform: 0.1673; between network without UBCs and uniform: 0.4134; both distributions are significantly different, KS test, p<1e-10 (Figure 6Cii), similar to experimental in vivo data (Barmack and Yakhnitsa, 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by statistical analysis of model simulations shown in Figure 6Cii.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "9bd29406-db7e-4ca8-a7a6-cead31f6cdeb",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C70",
+      "claim": "The heterogeneity of UBCs phase shifts leads to a diversity of GCs phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the heterogeneity of UBCs phase shifts leads to a diversity of GCs phase shifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the modeling results showing that networks with UBCs produce more diverse GC phase shifts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "38bfb848-00aa-4986-bd76-bcb22f59544c",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C71",
+      "claim": "In a network with UBCs, the PC can learn to fire at arbitrary target phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 7 shows that in a network with UBCs, the PC can learn to fire at arbitrary target phases, even though eMF inputs peak only at two possible phases (Figure 7A, top and Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by modeling results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "dec0bcab-de8f-4afb-a971-54f5ac987955",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C72",
+      "claim": "In a network without UBCs, PCs can only learn to fire in phase with eMF inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "This ability breaks down in a network without UBCs, in which PCs can only learn to fire in phase with eMF inputs (Figure 7A, bottom and Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is directly supported by modeling results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "1cdc4155-79e3-48d6-8b5b-2031321061e2",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C73",
+      "claim": "UBCs in the vestibular cerebellum behave as a bank of diverse temporal filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that populations of UBCs in the vestibular cerebellum behave as a bank of diverse temporal filters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing diverse temporal response properties across the UBC population.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "b2c5110c-908e-4187-bd48-0df43563d373",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C74",
+      "claim": "The UBC extends the combinatorial notions of pattern separation and expansion recoding into the temporal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The UBC therefore extends the combinatorial notions of pattern separation (Marr, 1969) and expansion recoding (Albus, 1971) into the temporal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental and modeling results, drawing on established theoretical concepts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "405af865-9d2a-42df-9dfe-fe782be0cb9c",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C75",
+      "claim": "The diversity of UBC responses is due to a combination of heterogeneous expression of ionotropic and metabotropic glutamate receptors and the variability of AMPAR-mediated responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We have established that the diversity of UBC responses is due to a combination of two factors: (1) the heterogeneous expression of ionotropic and metabotropic glutamate receptors (see also Borges-Merjane and Trussell, 2015) and (2) the variability of AMPAR-mediated responses, due to cell-specific combinations of transient, build-up and rebound synaptic components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing different receptor types and synaptic response profiles across UBCs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "d94a2723-c7a4-498c-b3b5-4c1e6358afb0",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C76",
+      "claim": "The paucity of ionotropic receptors at some mGluR2-expressing MF-UBC synapses is surprising, given the size of the synaptic articulation and the number of synaptic release sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The paucity of ionotropic receptors at some mGluR2-expressing MF-UBC synapses is also surprising, given the size of the synaptic articulation and the number of synaptic release sites (Mugnaini et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of OFF-UBCs with dominant mGluR2 responses and minimal AMPAR currents.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "20ac575e-0cc4-4a2a-af25-dea3d647db5c",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C77",
+      "claim": "The predominance of mGluR transmission at the MF synapse is not directly linked to the giant synaptic articulation, as mGluRs are exclusively found at extrasynaptic sites on the dendritic appendages of the UBC brush.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominance of mGluR transmission at the MF synapse is not directly linked to the giant synaptic articulation, as mGluRs are exclusively found at extrasynaptic sites on the dendritic appendages of the UBC brush (Jaarsma et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "60951f39-a6a7-40f7-af5b-d2c7ae229125",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C78",
+      "claim": "To account for late-phase responses and for the wide bandwidth of UBC modulations, the AMPAR must present a bell-shaped steady-state response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for late-phase responses and for the wide bandwidth of UBC modulations, the AMPAR must present a bell-shaped steady-state response curve, as described experimentally (Kinney et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from modeling results and supported by citation to prior experimental work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "243be0e5-1dd9-4539-958c-948e8eb02cae",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C79",
+      "claim": "The combination of bell-shaped steady-state AMPAR response and spillover-induced desensitization at the UBC synapse generates strong rebound currents following a train of MF action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of these properties and of spillover-induced desensitization at the UBC synapse generates strong rebound currents following a train of MF action potential (see also van Dorp and de Zeeuw, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from experimental observations and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "e952cf4e-28f5-4b4e-9588-3a07426464f4",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C80",
+      "claim": "A combination of factors, including the complex geometry of MF-UBCs synapse, the variety of AMPARs and auxiliary subunits, and the localization of AMPARs with respect to release sites, could explain the variety of AMPA EPSCs profiles at MF to UBC synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that a combination of factors, including the complex geometry of MF-UBCs synapse, the variety of AMPARs and auxiliary subunits (Jackson and Nicoll, 2011), and the localization of AMPARs with respect to release sites (Jaarsma et al., 1995), could explain the variety of AMPA EPSCs profiles at MF to UBC synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on inference from experimental data and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "201a9ec4-57bd-4a05-9910-a8c2f2e37ba7",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C81",
+      "claim": "The desensitized states are important for the functional properties of ionotropic glutamate receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results strongly support the importance of the desensitized states for the functional properties of ionotropic glutamate receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing the role of desensitization in generating rebound currents and phase delays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "b4a4500f-01ca-43f9-96f1-14e50b2cbde6",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C82",
+      "claim": "UBCs can generate much larger delays than other sources of diversity in phase responses, as well as OFF-responses, within a wide range of stimulation frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we showed here that UBCs can generate much larger delays, as well as OFF-responses, within a wide range of stimulation frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing large phase shifts in UBCs compared to other reported mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "8cfb2364-114b-4bb4-a443-9dc2f59c8046",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C83",
+      "claim": "The variable tuning frequency of UBCs could explain the frequency-specific learning of the VOR gain modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The variable tuning frequency of UBCs could explain the frequency-specific learning of the VOR gain modulation (Lisberger et al., 1983), because different populations of UBCs and hence of granule cells would be optimally modulated for different rotation frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on inference from experimental data and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "233a81d4-cc68-4290-9a4b-832f5b756191",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C84",
+      "claim": "UBCs have the capability to generate high-frequency rebound bursts, which may provide useful timing information.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally UBCs have the capability to generate high-frequency rebound bursts (Diana et al., 2007; Locatelli et al., 2013), as shown here for some of the OFF-UBCs, which may provide useful timing information, as suggested in the electro-sensory lobe of the electric fish (Kennedy et al., 2014; Sawtell, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from this study and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "77ac0ba0-3610-4459-b665-47a6bb91b151",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C85",
+      "claim": "Golgi cell inhibitory inputs to UBCs may enhance rebound behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Golgi cell inhibitory inputs to UBCs (Dugue et al., 2005), which were pharmacologically blocked in this study, may enhance this rebound behavior (Kennedy et al., 2014), providing for richer interactions between the granular layer dynamics and UBC intrinsic excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on inference and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "5a4f0254-4f7c-46c7-a068-9ed8bc0e3881",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C86",
+      "claim": "UBCs play a preferential role in tasks in which non trivial associations between inputs and outputs at different phases need to be learned.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a preferential role of UBCs in tasks in which non trivial associations between inputs and outputs at different phases need to be learned, like phase-shifted VOR or high-velocity compensatory eye movements during which non-linear inverse eye dynamics have to be computed (Green et al., 2007; Lisberger, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental and modeling results, supported by citations to relevant motor control literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "dc5b8d87-87e6-4ee3-ad5d-30f412b298c9",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C87",
+      "claim": "Optogenetic suppression of vestibular UBC activity should lead to significant impairment in motor tasks requiring phase-specific learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic suppression of vestibular UBC activity should lead to significant impairment in these motor tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative prediction based on inference from the experimental and modeling results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "0bf3b62e-fecf-470f-8c9d-c31b9eee0c9b",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "claim_id": "C88",
+      "claim": "The higher prevalence of UBCs in the hemispheric lobules in higher mammals argues for the involvement of this cell-type in complex motor and cognitive tasks involving the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore the higher prevalence of UBCs in the hemispheric lobules in higher mammals (Dino et al., 1999) argues for the involvement of this cell-type in complex motor and cognitive tasks involving the cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from anatomical observations cited from prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "507bfb43-2105-4741-9bf8-2686303478ec",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "OFF-UBCs (n=25) are hyperpolarized by mossy fiber input at 26 Hz (\u22129.5 \u00b1 4.2 mV at steady-state), with some cells showing transient firing before hyperpolarization. OFF-UBCs fire within a narrower range of phases (274 \u00b1 28\u00b0) compared to ON-UBCs and have significantly higher phase lag (p<0.001), though firing modulation amplitudes are similar between the two populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23, C32-C33 provide converging experimental evidence from current-clamp recordings showing OFF-UBC hyperpolarization, spontaneous firing patterns, and phase response characteristics. The data include appropriate sample sizes (n=25), statistical comparisons (p<0.001), and are supported by Figure 1 showing representative traces and population analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "OFF-UBCs display mGluR2-mediated outward currents that are blocked by LY341495, with 48% also showing NBQX-sensitive AMPAR currents. The mGluR2 current amplitude increases with stimulation frequency (41.5 \u00b1 26.9 pA at 10 Hz to 129.9 \u00b1 43.4 pA at 100 Hz, p<0.001), and the decay time constant correlates with OFF-UBC phase shift (r=0.621, p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by voltage-clamp pharmacological experiments with appropriate receptor antagonists (LY341495, NBQX) and statistical analyses. The correlations between mGluR2 kinetics and phase shifts are significant and mechanistically link receptor properties to functional output, as shown in Figure 2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "ba5b6a22-7921-459e-8e95-0e40326613de",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "OFF-UBC responses show frequency-dependent modulation, with amplitude increasing from 0.3 Hz to 1 Hz then dropping at 3 Hz (p=0.0003). At higher frequencies, more cells are silenced (20% at 1 Hz, 68% at 3 Hz), and phase shifts increase significantly with frequency (193 \u00b1 46\u00b0 at 0.3 Hz to 367 \u00b1 29\u00b0 at 3 Hz, p<0.0003).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 demonstrate frequency-dependent filtering properties of OFF-UBCs with appropriate statistical tests (Friedman's test) and clear trends across multiple frequencies. The data are consistent with the mGluR2 saturation properties shown in C41 and provide functional context for OFF-UBC temporal filtering.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "03000f76-9337-4088-9069-8b1b77cbb9e3",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ON-UBCs display AMPAR-mediated EPSCs that are blocked by NBQX (92.6 \u00b1 8.8% block, n=10). Fast EPSCs show dramatic amplitude reduction during 50 Hz trains (67.4 \u00b1 35.8% depression), inversely correlated with decay time constant (r=0.823, p<0.001). A sustained steady AMPAR current (\u221215.9 \u00b1 8.4 pA) accompanies transient EPSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 provide detailed voltage-clamp characterization of AMPAR-mediated transmission with pharmacological validation and correlation analyses. The inverse correlation between decay kinetics and depression is mechanistically informative and well-supported by Figure 3 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "57e7d555-0e27-43e3-9418-56ff3ec80825",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In 67% of ON-UBCs, a slow EPSC buildup component develops during trains, reaching steady-state (64 \u00b1 35 pA) with variable time course (\u03c4 = 0.347 \u00b1 0.244 s at 50 Hz). The amplitude of transient and buildup currents are not correlated (p=0.12).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 identify a distinct slow synaptic component with appropriate statistical analysis showing independence from fast components. The lack of correlation (p=0.12) suggests distinct receptor populations or mechanisms, supported by Figure 3D-E.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "6990092a-c76c-4b65-a924-086604490620",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "An anomalous rebound current develops at stimulation offset in 87% of AMPAR-expressing UBCs (27.7 \u00b1 16.7 pA), correlating with rise time constant (r=0.583, p<0.01), transient EPSC integral (r=0.611, p<0.01), and slow buildup amplitude (r=0.763, p<0.001). Cyclothiazide suppresses the rebound (27 \u00b1 18% of control) while potentiating charge during stimulation (201 \u00b1 54% of control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 provide strong evidence for AMPAR desensitization-mediated rebound currents through multiple correlations and pharmacological manipulation with cyclothiazide. The cyclothiazide experiments directly test the desensitization hypothesis and are well-controlled, as shown in Figure 3J-K.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "ee26737f-5f07-4997-b016-5b824f08a6b6",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ON-UBC phase shifts at 1 Hz correlate linearly with the ratio of rebound to synaptic charge (r=0.734, p<0.001, n=22). In delayed cells, phase correlates strongly with rebound charge (r=0.75, p<0.001) and rebound onset time constant (r=0.87, p<0.001). Cyclothiazide shifts phase from 143 \u00b1 44\u00b0 to \u221259 \u00b1 36\u00b0 (p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 establish a causal link between rebound currents and phase delays through strong correlations and pharmacological manipulation. The cyclothiazide experiment provides critical validation that desensitization-mediated rebound drives phase shifts, as shown in Figure 4D-G.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "00ab4194-e07b-4beb-94f5-52b595011aa3",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ON-UBC firing modulation amplitude increases with frequency (5.1 \u00b1 5.9 Hz at 0.3 Hz to 14.0 \u00b1 9.7 Hz at 3 Hz, p=0.0009), contrasting with OFF-UBCs. Phase lag increases significantly with frequency (45.9\u00b0 at 0.3 Hz to 191.6\u00b0 at 3 Hz, p<0.0001) while remaining broadly distributed at all frequencies (SD: 76.3\u00b0, 73.9\u00b0, 92.7\u00b0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 demonstrate frequency-dependent properties of ON-UBCs with appropriate statistical tests (Friedman's test) and show preservation of phase diversity across frequencies. The contrast with OFF-UBCs highlights distinct filtering properties, supported by Figure 4H-I.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "631b28af-540c-47f4-a439-7bae7b65fa1b",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A computational model based on glutamate dynamics at the MF-UBC synapse accurately predicts UBC firing phases. In 14 of 22 cells, simulated EPSC and experimental firing rate phase histograms are significantly correlated (p<0.05). Simulated and experimental phase shifts are linearly correlated (R=0.89, p=2e-5, slope=1.04).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 demonstrate strong predictive power of the glutamate dynamics model with high correlation (R=0.89) and near-unity slope (1.04), indicating accurate quantitative prediction. The model validation in most cells (14/22) and statistical significance support the mechanistic interpretation, as shown in Figure 5I-J.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "da15512e-7bf9-4338-8d07-f24550f738c8",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Network modeling shows that granule cell phase distributions are significantly closer to uniform with UBCs (KS distance 0.1673) than without UBCs (KS distance 0.4134, p<1e-10). The heterogeneity of UBC phase shifts leads to diversity of GC phase shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 are supported by computational modeling with appropriate statistical tests (KS test) showing significant differences between network configurations. The result is consistent with in vivo data (Barmack and Yakhnitsa, 2008) and demonstrates functional consequences of UBC diversity, as shown in Figure 6C.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "160ddaf8-4d9d-46e2-8840-c7e142bc908d",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In networks with UBCs, Purkinje cells can learn to fire at arbitrary target phases through climbing fiber-driven plasticity, even though eMF inputs peak at only two phases. This ability breaks down in networks without UBCs, where PCs can only learn to fire in phase with eMF inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 demonstrate functional consequences of UBC phase diversity for cerebellar learning through computational modeling. The contrast between networks with and without UBCs is clear and mechanistically linked to phase diversity in the GC population, as shown in Figure 7.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "9926b8e4-1f7b-44b6-8836-6f0d34d941cf",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "UBCs respond to sinusoidal modulations with heterogeneous phase shifts covering essentially all possible phases (ON-UBC SD of 105\u00b0), functioning as a bank of diverse temporal filters that extend pattern separation and expansion recoding into the temporal domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C31, C73-C74 synthesize the main finding that UBCs provide temporal diversity. The broad phase distribution (SD 105\u00b0) is well-documented experimentally (Figures 1, 4) and the conceptual framework linking to pattern separation is appropriately grounded in established theory (Marr, 1969; Albus, 1971).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "9c4a39b2-a9c4-48c8-aad5-dc6521ea2c70",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The diversity of UBC responses results from heterogeneous expression of ionotropic and metabotropic glutamate receptors and variability of AMPAR-mediated responses. Phase inversion in OFF-UBCs is produced by mGluR2-activated outward conductance, while phase delay in ON-UBCs is caused by rebound current from AMPAR recovery from desensitization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C75 synthesize the mechanistic basis for UBC diversity, supported by pharmacological experiments (Figures 2-4) showing distinct receptor contributions. The mechanisms are validated through antagonist experiments and cyclothiazide manipulation, providing strong causal evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "9ac12ac0-ba5c-4849-aebc-916e5c669c30",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Phase dispersion of UBC responses generates diverse phase coding in the granule cell population, allowing climbing-fiber-driven Purkinje cell learning at arbitrary phases of vestibular input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 are supported by network modeling (Figures 6-7) showing that UBC phase diversity enables uniform GC phase distributions and arbitrary PC learning. The computational results are mechanistically linked to experimental UBC properties and demonstrate functional significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "23102cd3-bc24-47be-b60e-037893aeabd3",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "UBCs respond to sinusoidal current injections with modest phase advance (9.9 \u00b1 4.1\u00b0) independent of holding current, while sharpness is regulated by holding current. The strong heterogeneity in UBC phase shifts to MF stimulation is not due to intrinsic conductances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 use appropriate control experiments to rule out intrinsic conductances as the source of phase diversity. The minimal phase shifts with current injection (9.9\u00b0) contrast sharply with large synaptic-driven phase shifts (>100\u00b0), supporting the conclusion that synaptic mechanisms dominate, as shown in Figure 1K-M.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "3ffce123-ca1d-4597-80ff-2a4ffc4ea6f4",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "AMPAR at UBC synapses must present a bell-shaped steady-state response curve to account for late-phase responses and wide bandwidth. The combination of this property and spillover-induced desensitization generates strong rebound currents. Multiple factors including synapse geometry, AMPAR variety, and receptor localization could explain EPSC profile diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C81 provide mechanistic interpretation supported by modeling (Figure 5) and experimental data (Figure 3). The bell-shaped response curve is necessary for the observed rebound behavior and is consistent with prior work (Kinney et al., 1997). C80 is appropriately presented as a hypothesis rather than established fact.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "e4ae4269-bc18-4780-ae61-aa6b6becde00",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "A subset of complex UBCs (n=10) displayed delayed or gradual depolarization not reaching steady-state, with 8 of 10 first hyperpolarizing then resuming firing after 1.2 \u00b1 1.3 s delay. The slow inward current was blocked by mGluR1 antagonist JNJ16259685.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 identify a distinct UBC subtype with very slow dynamics, supported by pharmacological identification of mGluR1 involvement. However, these cells were excluded from further analysis, limiting interpretation of their functional role. The characterization is adequate but incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "97a9d67b-f3e8-4a7e-bb35-8412e7f47898",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "ON-UBCs covered a frequency range (1-29.9 Hz) similar to in vivo recordings under anesthesia, with only 1 of 22 cells firing spontaneously at rest (1.7 Hz).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 provide basic characterization of ON-UBC firing properties with appropriate comparison to in vivo data. The low spontaneous firing rate is consistent with the experimental conditions (slice preparation) and validates the preparation's physiological relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Primary vestibular neurons encode rotational velocity and linear acceleration, projecting to vestibulo-cerebellum. Primary vestibular mossy fibers show stereotyped in-phase firing during sinusoidal modulations, while granule cells show diverse phase shifts in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 establish the physiological context through citations to prior work. These are well-established facts in the field and provide appropriate background for the study's motivation. The claims are properly attributed to prior studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "da34c64d-c484-40ed-8ffc-64b5c407d6b0",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Each UBC receives a single mossy fiber input forming a giant synapse of unique morphology and projects to granule cells via multiple intrinsic mossy fiber terminals. Various glutamate receptor types are expressed at the MF-UBC synapse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 describe established anatomical features of UBCs with appropriate citations. These provide essential background for interpreting the functional data but represent prior knowledge rather than new findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "62b2018c-0862-4ff5-87df-9ae4b057b3c0",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Dorsal cochlear nucleus UBCs can be divided into ON UBCs (excitatory response via AMPA and mGluR1) and OFF UBCs (inhibitory response via mGluR2). Afferent vestibular inputs fire at 10-50 Hz at rest in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 cite prior work (Borges-Merjane and Trussell, 2015) establishing UBC subtypes and provide physiological context. These are appropriately used as background to motivate the current study's experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "b8f36d3f-0d15-44bc-9b53-d3dee0ddb42d",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The paucity of ionotropic receptors at some mGluR2-expressing synapses is surprising given synapse size. The predominance of mGluR transmission is not directly linked to the giant synapse, as mGluRs are found at extrasynaptic sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 provide interpretation of the OFF-UBC data in light of anatomical knowledge. The observation of minimal AMPAR currents in some OFF-UBCs (C40) is surprising and appropriately contextualized with anatomical citations (Mugnaini et al., 1994; Jaarsma et al., 1998).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "2155e00a-1203-4871-a337-b8dafbf8ca92",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "UBCs generate larger delays and OFF-responses than other sources of phase diversity across wide frequency ranges. Variable UBC tuning could explain frequency-specific VOR learning. UBCs can generate high-frequency rebound bursts providing timing information, potentially enhanced by Golgi cell inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C85 make comparative statements and predictions that extend beyond the direct experimental evidence. While C82 is supported by the data, C83 and C85 are speculative hypotheses appropriately qualified with 'could' and 'may.' C84 is supported by citations but the functional interpretation requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "80a79b31-c300-45df-a5c2-b6eb66dd5f42",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "UBCs play a preferential role in tasks requiring non-trivial phase-specific associations like phase-shifted VOR. Optogenetic suppression of UBC activity should impair these motor tasks. Higher UBC prevalence in hemispheric lobules of higher mammals suggests involvement in complex motor and cognitive tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C88 are speculative predictions and inferences extending beyond the experimental and modeling data. While C86 is reasonably supported by the modeling results, C87 is an untested prediction, and C88 is an inference from anatomical observations. These represent appropriate future directions but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    },
+    {
+      "id": "89f1bf48-505e-4348-a784-56d85ca0a6a9",
+      "content_id": "34a42077-aa80-4572-93bf-dbd914996eb7",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Synaptic currents display a large degree of heterogeneity of their temporal characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is the overarching premise supported by all experimental data showing diverse temporal characteristics across UBC populations. This is well-documented throughout the manuscript with extensive experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:50:33.017810Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3b56fbbc-31dc-4b55-9440-71cf647538e8",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "144b9fb0-f29e-4505-a43a-760a53f8fa39",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "7d2c1be0-4201-43a7-9857-515588a958e2",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "1db3846b-1e72-4074-8525-a81545a97627",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "c8a7bf83-46ad-4764-854c-6c6a5d72c6b8",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "2df26628-b2be-437b-8ae5-7adcf8bdd327",
+      "result_id": "507bfb43-2105-4741-9bf8-2686303478ec"
+    },
+    {
+      "claim_id": "f78bac76-9cba-4915-9216-e3afe8ff07a5",
+      "result_id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9"
+    },
+    {
+      "claim_id": "85a825e0-eb55-4f17-8b33-a08a1ada75a6",
+      "result_id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9"
+    },
+    {
+      "claim_id": "7d5cba06-7b53-49fc-b57f-825de653e90f",
+      "result_id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9"
+    },
+    {
+      "claim_id": "dbfabb12-0839-4c69-b019-881cba499889",
+      "result_id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9"
+    },
+    {
+      "claim_id": "9446d6b3-c0df-4e0b-a19b-307df10ab595",
+      "result_id": "e694825c-19d9-477e-a5ec-74ea7ce27ea9"
+    },
+    {
+      "claim_id": "793dea40-8e0a-4dae-b1af-fde433a811d5",
+      "result_id": "ba5b6a22-7921-459e-8e95-0e40326613de"
+    },
+    {
+      "claim_id": "bdb1ffda-7566-4e2e-a33f-4d50415f3640",
+      "result_id": "ba5b6a22-7921-459e-8e95-0e40326613de"
+    },
+    {
+      "claim_id": "2427f63d-6504-4868-9131-3c84ece82bf1",
+      "result_id": "ba5b6a22-7921-459e-8e95-0e40326613de"
+    },
+    {
+      "claim_id": "2b0cc59b-8377-42df-8f79-a29c31b95339",
+      "result_id": "03000f76-9337-4088-9069-8b1b77cbb9e3"
+    },
+    {
+      "claim_id": "5ad04604-6044-483c-88d5-b96ed11a5eb6",
+      "result_id": "03000f76-9337-4088-9069-8b1b77cbb9e3"
+    },
+    {
+      "claim_id": "94360232-db37-4018-8887-dcd95aebde40",
+      "result_id": "03000f76-9337-4088-9069-8b1b77cbb9e3"
+    },
+    {
+      "claim_id": "85f3f7b1-23ee-422a-a586-9e206a74f9ef",
+      "result_id": "03000f76-9337-4088-9069-8b1b77cbb9e3"
+    },
+    {
+      "claim_id": "ace42ca6-aa43-4cd8-b83c-525ac4637c4f",
+      "result_id": "03000f76-9337-4088-9069-8b1b77cbb9e3"
+    },
+    {
+      "claim_id": "81828c29-50e9-44c2-abe8-e4c468f49e84",
+      "result_id": "57e7d555-0e27-43e3-9418-56ff3ec80825"
+    },
+    {
+      "claim_id": "a1c21d83-61fb-4734-8efd-6f358e5232d7",
+      "result_id": "57e7d555-0e27-43e3-9418-56ff3ec80825"
+    },
+    {
+      "claim_id": "585e2670-13bd-4da5-8807-533efc3b1125",
+      "result_id": "6990092a-c76c-4b65-a924-086604490620"
+    },
+    {
+      "claim_id": "37a22534-959c-4013-9b25-c50fa55f441f",
+      "result_id": "6990092a-c76c-4b65-a924-086604490620"
+    },
+    {
+      "claim_id": "82bf69be-d1b9-450b-b317-f3a3e8ef1d85",
+      "result_id": "6990092a-c76c-4b65-a924-086604490620"
+    },
+    {
+      "claim_id": "d8325b7a-1a15-4de4-a52c-e9f78dcc7057",
+      "result_id": "6990092a-c76c-4b65-a924-086604490620"
+    },
+    {
+      "claim_id": "cf08b97b-f99b-441d-b4ce-fb2c1c4d90a6",
+      "result_id": "ee26737f-5f07-4997-b016-5b824f08a6b6"
+    },
+    {
+      "claim_id": "1265b71e-8642-47c4-8482-938179ec10da",
+      "result_id": "ee26737f-5f07-4997-b016-5b824f08a6b6"
+    },
+    {
+      "claim_id": "cfd42edd-43da-4189-bac1-780e158e35f0",
+      "result_id": "ee26737f-5f07-4997-b016-5b824f08a6b6"
+    },
+    {
+      "claim_id": "b9ebc3ec-2087-4ad9-847a-77433d5c2574",
+      "result_id": "ee26737f-5f07-4997-b016-5b824f08a6b6"
+    },
+    {
+      "claim_id": "5d1f7e12-649b-4ccf-87d9-1346d3002b67",
+      "result_id": "00ab4194-e07b-4beb-94f5-52b595011aa3"
+    },
+    {
+      "claim_id": "8e51d29c-e849-4db0-9ca4-4cff9e106734",
+      "result_id": "00ab4194-e07b-4beb-94f5-52b595011aa3"
+    },
+    {
+      "claim_id": "fd479f34-aa97-4b62-84ce-64f07bfcaee5",
+      "result_id": "00ab4194-e07b-4beb-94f5-52b595011aa3"
+    },
+    {
+      "claim_id": "cff272c4-6d8d-4c4a-8906-0fd073b4a885",
+      "result_id": "631b28af-540c-47f4-a439-7bae7b65fa1b"
+    },
+    {
+      "claim_id": "4d832a44-d42e-4f9b-8caa-d6dbddea386e",
+      "result_id": "631b28af-540c-47f4-a439-7bae7b65fa1b"
+    },
+    {
+      "claim_id": "dbd5830e-87ff-49e9-a12f-0a7736e15ae1",
+      "result_id": "631b28af-540c-47f4-a439-7bae7b65fa1b"
+    },
+    {
+      "claim_id": "836adb3f-7638-4953-ac9f-690872826ef2",
+      "result_id": "da15512e-7bf9-4338-8d07-f24550f738c8"
+    },
+    {
+      "claim_id": "9bd29406-db7e-4ca8-a7a6-cead31f6cdeb",
+      "result_id": "da15512e-7bf9-4338-8d07-f24550f738c8"
+    },
+    {
+      "claim_id": "38bfb848-00aa-4986-bd76-bcb22f59544c",
+      "result_id": "160ddaf8-4d9d-46e2-8840-c7e142bc908d"
+    },
+    {
+      "claim_id": "dec0bcab-de8f-4afb-a971-54f5ac987955",
+      "result_id": "160ddaf8-4d9d-46e2-8840-c7e142bc908d"
+    },
+    {
+      "claim_id": "d3ae2c25-763d-4841-90ab-7054d47d908b",
+      "result_id": "9926b8e4-1f7b-44b6-8836-6f0d34d941cf"
+    },
+    {
+      "claim_id": "41e38251-b401-4f4f-be99-bcac11cfe880",
+      "result_id": "9926b8e4-1f7b-44b6-8836-6f0d34d941cf"
+    },
+    {
+      "claim_id": "1cdc4155-79e3-48d6-8b5b-2031321061e2",
+      "result_id": "9926b8e4-1f7b-44b6-8836-6f0d34d941cf"
+    },
+    {
+      "claim_id": "b2c5110c-908e-4187-bd48-0df43563d373",
+      "result_id": "9926b8e4-1f7b-44b6-8836-6f0d34d941cf"
+    },
+    {
+      "claim_id": "4cb81acc-cb1e-441c-ab6a-519311a0af09",
+      "result_id": "9c4a39b2-a9c4-48c8-aad5-dc6521ea2c70"
+    },
+    {
+      "claim_id": "53f8cb7a-86b8-4ee1-b25c-fb9a66238094",
+      "result_id": "9c4a39b2-a9c4-48c8-aad5-dc6521ea2c70"
+    },
+    {
+      "claim_id": "405af865-9d2a-42df-9dfe-fe782be0cb9c",
+      "result_id": "9c4a39b2-a9c4-48c8-aad5-dc6521ea2c70"
+    },
+    {
+      "claim_id": "6da39f55-1e31-4905-8932-5b27a84b5d7e",
+      "result_id": "9ac12ac0-ba5c-4849-aebc-916e5c669c30"
+    },
+    {
+      "claim_id": "79efe0ff-9871-4be4-b2f0-b4c3a87bcd55",
+      "result_id": "9ac12ac0-ba5c-4849-aebc-916e5c669c30"
+    },
+    {
+      "claim_id": "6e6c74dd-e3cc-4974-9bce-959486a6a664",
+      "result_id": "23102cd3-bc24-47be-b60e-037893aeabd3"
+    },
+    {
+      "claim_id": "3ac16de2-1637-406b-ab0e-4d64256fd889",
+      "result_id": "23102cd3-bc24-47be-b60e-037893aeabd3"
+    },
+    {
+      "claim_id": "4a8329e2-72e6-4415-adc0-f3e5b7bedf1d",
+      "result_id": "23102cd3-bc24-47be-b60e-037893aeabd3"
+    },
+    {
+      "claim_id": "60951f39-a6a7-40f7-af5b-d2c7ae229125",
+      "result_id": "3ffce123-ca1d-4597-80ff-2a4ffc4ea6f4"
+    },
+    {
+      "claim_id": "243be0e5-1dd9-4539-958c-948e8eb02cae",
+      "result_id": "3ffce123-ca1d-4597-80ff-2a4ffc4ea6f4"
+    },
+    {
+      "claim_id": "e952cf4e-28f5-4b4e-9588-3a07426464f4",
+      "result_id": "3ffce123-ca1d-4597-80ff-2a4ffc4ea6f4"
+    },
+    {
+      "claim_id": "201a9ec4-57bd-4a05-9910-a8c2f2e37ba7",
+      "result_id": "3ffce123-ca1d-4597-80ff-2a4ffc4ea6f4"
+    },
+    {
+      "claim_id": "02acc2d1-6f6f-4315-9aec-f61bde1a340b",
+      "result_id": "e4ae4269-bc18-4780-ae61-aa6b6becde00"
+    },
+    {
+      "claim_id": "7d227927-7fbd-4af7-aea2-8e2f51be4ee2",
+      "result_id": "e4ae4269-bc18-4780-ae61-aa6b6becde00"
+    },
+    {
+      "claim_id": "c7b799e6-a194-4707-ab93-b0c79a9b937d",
+      "result_id": "e4ae4269-bc18-4780-ae61-aa6b6becde00"
+    },
+    {
+      "claim_id": "f7d219e6-acf7-40b6-92c9-8211f44cdf38",
+      "result_id": "97a9d67b-f3e8-4a7e-bb35-8412e7f47898"
+    },
+    {
+      "claim_id": "e8fc271b-fb50-44bc-af7a-22a9f1ebadb2",
+      "result_id": "97a9d67b-f3e8-4a7e-bb35-8412e7f47898"
+    },
+    {
+      "claim_id": "2ffb4566-9bf4-4858-a794-e4b48d3af012",
+      "result_id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5"
+    },
+    {
+      "claim_id": "a3051f80-ea7b-492a-af64-98813d00d263",
+      "result_id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5"
+    },
+    {
+      "claim_id": "74a9bfa2-b953-4126-b6f1-4a40929b52fa",
+      "result_id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5"
+    },
+    {
+      "claim_id": "a2ee064c-f3d0-42fb-8de6-5d6a37ff4f06",
+      "result_id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5"
+    },
+    {
+      "claim_id": "e41ce4c8-2125-4139-9ff5-3609239e5fac",
+      "result_id": "f0245469-3e28-45fa-a2d3-8f91f8ee61b5"
+    },
+    {
+      "claim_id": "6924d07b-9ce0-4fb2-aeae-7fc6402373f1",
+      "result_id": "da34c64d-c484-40ed-8ffc-64b5c407d6b0"
+    },
+    {
+      "claim_id": "07b6fd39-c15c-47e5-a304-e2011e8b89a1",
+      "result_id": "da34c64d-c484-40ed-8ffc-64b5c407d6b0"
+    },
+    {
+      "claim_id": "307a5207-d7d5-47a8-978c-37149d7177bf",
+      "result_id": "da34c64d-c484-40ed-8ffc-64b5c407d6b0"
+    },
+    {
+      "claim_id": "10d86ec1-c120-49d6-8100-07e9d92acf61",
+      "result_id": "da34c64d-c484-40ed-8ffc-64b5c407d6b0"
+    },
+    {
+      "claim_id": "34fdb629-8b6f-46e6-8d07-c3ab90b2a7d7",
+      "result_id": "62b2018c-0862-4ff5-87df-9ae4b057b3c0"
+    },
+    {
+      "claim_id": "c0e6b75d-2f7c-42d7-8dcf-a4c2c5095f04",
+      "result_id": "62b2018c-0862-4ff5-87df-9ae4b057b3c0"
+    },
+    {
+      "claim_id": "3a3478a4-3f9e-4ab9-a4c8-a098c2198972",
+      "result_id": "62b2018c-0862-4ff5-87df-9ae4b057b3c0"
+    },
+    {
+      "claim_id": "a17b39c7-581a-4426-9778-5234a283556a",
+      "result_id": "62b2018c-0862-4ff5-87df-9ae4b057b3c0"
+    },
+    {
+      "claim_id": "d94a2723-c7a4-498c-b3b5-4c1e6358afb0",
+      "result_id": "b8f36d3f-0d15-44bc-9b53-d3dee0ddb42d"
+    },
+    {
+      "claim_id": "20ac575e-0cc4-4a2a-af25-dea3d647db5c",
+      "result_id": "b8f36d3f-0d15-44bc-9b53-d3dee0ddb42d"
+    },
+    {
+      "claim_id": "b4a4500f-01ca-43f9-96f1-14e50b2cbde6",
+      "result_id": "2155e00a-1203-4871-a337-b8dafbf8ca92"
+    },
+    {
+      "claim_id": "8cfb2364-114b-4bb4-a443-9dc2f59c8046",
+      "result_id": "2155e00a-1203-4871-a337-b8dafbf8ca92"
+    },
+    {
+      "claim_id": "233a81d4-cc68-4290-9a4b-832f5b756191",
+      "result_id": "2155e00a-1203-4871-a337-b8dafbf8ca92"
+    },
+    {
+      "claim_id": "77ac0ba0-3610-4459-b665-47a6bb91b151",
+      "result_id": "2155e00a-1203-4871-a337-b8dafbf8ca92"
+    },
+    {
+      "claim_id": "5a4f0254-4f7c-46c7-a068-9ed8bc0e3881",
+      "result_id": "80a79b31-c300-45df-a5c2-b6eb66dd5f42"
+    },
+    {
+      "claim_id": "dc5b8d87-87e6-4ee3-ad5d-30f412b298c9",
+      "result_id": "80a79b31-c300-45df-a5c2-b6eb66dd5f42"
+    },
+    {
+      "claim_id": "0bf3b62e-fecf-470f-8c9d-c31b9eee0c9b",
+      "result_id": "80a79b31-c300-45df-a5c2-b6eb66dd5f42"
+    },
+    {
+      "claim_id": "111efa20-2979-43b3-a8b9-a7df134ef16c",
+      "result_id": "89f1bf48-505e-4348-a784-56d85ca0a6a9"
+    }
+  ],
+  "comparisons": []
+}

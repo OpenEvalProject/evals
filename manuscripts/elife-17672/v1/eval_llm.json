@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "High-fat diet (HFD) consumption in mice causes widespread changes in both gene expression (4941 genes) and alternative pre-mRNA splicing (1631 exons corresponding to 1249 genes) in adipocytes, with limited overlap between these two regulatory mechanisms (only 6.4% of differentially expressed genes are alternatively spliced, while 25% of alternatively spliced genes are differentially expressed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are supported by RNA-seq data with appropriate statistical thresholds (q<0.05 for gene expression, FDR<0.05 for splicing) and referenced to Figure 1A-B. The quantitative findings are internally consistent and demonstrate that gene expression and alternative splicing represent largely independent regulatory responses to HFD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "HFD-induced alternative splicing in adipocytes predominantly involves exon skipping (1052 exons), with additional events including mutually exclusive exon inclusions (144), retained introns (160), alternative 5' splice sites (123), and alternative 3' splice sites (152).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 are supported by RNA-seq analysis with consistent statistical thresholds (FDR<0.05, absolute \u0394Inc level >0.1) and referenced to Figure 1C,D. The categorization of splicing event types is standard and the numbers are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C28"
+    ],
+    "result": "Alternative splicing changes in response to HFD are tissue-specific, with extensive changes in adipocytes but minimal changes in liver (only 17 total splicing events), suggesting this is a selective adipocyte response rather than a general obesity response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C28 are supported by comparative RNA-seq analysis between adipocytes and liver. The stark contrast (1631 vs 17 splicing events) provides strong evidence for tissue specificity. The correlation with NOVA expression patterns (C28) strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Bioinformatics analysis identifies NOVA splicing factors as regulators of HFD-induced alternative splicing, with NOVA CLIP-seq tags showing significant enrichment (p<2.2\u00d710\u207b\u00b9\u2076) and intersecting with 56% of HFD-induced alternatively spliced exons, consistent with NOVA's known context-dependent role in both exon inclusion and exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by motif enrichment analysis and CLIP-seq data overlap with highly significant p-values. The bidirectional effects (53% inclusion, 62% exclusion) are consistent with known NOVA biology (C20, cited to Ule et al., 2006). However, the CLIP-seq data is from brain tissue, not adipocytes, which introduces some uncertainty about direct applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C90"
+    ],
+    "result": "NOVA1 and NOVA2 proteins are expressed in white adipocytes but not in liver, and NOVA expression is reduced in adipocytes of obese humans and mice, as well as in HFD-fed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C90 are supported by immunoblot analysis (Figure 1F) and quantitative RT-PCR data (Figures 1G, 1H, Figure 1\u2014figure supplement 5). The tissue-specific expression pattern is clearly demonstrated, and the reduction in obesity is statistically significant (*p<0.05, ***p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Compound NOVA1/2 deficiency in adipocytes causes minimal changes in gene expression (55 genes) but extensive changes in alternative splicing (1169 exons), with exon skipping being the most common event (768 exons), demonstrating that NOVA proteins primarily regulate splicing rather than transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by RNA-seq analysis of FWT vs F\u2206N1,2 mice with appropriate statistical thresholds and referenced to Figure 2A, D, E. The dramatic difference between gene expression and splicing changes (55 vs 1169) provides strong evidence for NOVA's primary role in splicing regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Single gene ablations of Nova1 or Nova2 cause fewer splicing changes than compound deficiency, indicating both isoform-specific functions and functional redundancy between NOVA1 and NOVA2 in adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by RNA-seq comparison of single vs double knockouts. The much smaller number of splicing changes in single knockouts (10-16 events) compared to double knockout (1169 events) provides strong evidence for functional redundancy, though some isoform-specific effects are observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C98",
+      "C99"
+    ],
+    "result": "NOVA proteins contribute to alternative splicing of 26% (323 genes) of HFD-regulated genes, indicating that NOVA-dependent mechanisms account for a substantial but not complete portion of obesity-induced splicing changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C98-C99 are supported by Venn diagram analysis (Figure 2B) showing overlap between HFD-regulated and NOVA-regulated genes. The calculations are internally consistent (323/1249 = 26%, 323/950 = 34%). This appropriately acknowledges that 74% of HFD-regulated splicing is NOVA-independent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "NOVA proteins regulate alternative splicing of JNK isoforms (Mapk8 and Mapk9) in adipocytes, promoting expression of Mapk8\u03b2 and Mapk9\u03b1 isoforms, with tissue-specific differences in JNK isoform expression correlating with NOVA expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C52 are supported by Taqman assays (Figure 3\u2014figure supplement 1C), NOVA overexpression experiments (Figure 3B), and NOVA deficiency experiments (Figure 3C). The bidirectional manipulation (gain and loss of function) provides strong evidence for NOVA's role in JNK splicing. However, C44 appropriately notes that NOVA-independent mechanisms also contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The \u03b1 and \u03b2 isoforms of JNK1 and JNK2 differ in their substrate binding sites and exhibit different kinase activities, with JNK1\u03b1 and JNK2\u03b2 representing low activity forms and JNK1\u03b2 and JNK2\u03b1 representing high activity forms, predicting that NOVA deficiency would promote expression of low activity JNK isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by sequence alignment (Figure 3D), in vitro kinase assays (Figure 3\u2014figure supplement 2), and in vivo data (Figure 3E). The functional characterization of isoform activities is experimentally demonstrated, and the prediction about NOVA deficiency (C57) logically follows from the splicing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "NOVA deficiency in adipocytes does not affect JNK expression or activating phosphorylation but markedly suppresses stress-induced phosphorylation of the JNK substrate cJun, demonstrating that NOVA proteins regulate JNK signaling through altered substrate specificity rather than kinase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by immunoblot analysis (Figure 3F) showing equivalent JNK expression and phosphorylation but reduced cJun phosphorylation in NOVA-deficient cells. This provides strong evidence that NOVA regulates JNK function through splicing-mediated changes in substrate specificity rather than expression or activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "HFD-fed NOVA-deficient mice (F\u2206N1,2) gain significantly less body mass than control mice due to reduced fat mass, with decreased liver and adipose tissue mass, reduced adipocyte hypertrophy, reduced hepatic steatosis, and reduced pancreatic islet hypertrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by body mass measurements (Figure 4A), MRI data (Figure 4B), organ mass measurements (Figure 4\u2014figure supplement 1B), and histological analysis (Figure 4\u2014figure supplement 2). The phenotype is robust with appropriate statistical significance and multiple complementary measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "NOVA-deficient mice exhibit improved metabolic parameters including reduced hyperinsulinemia, hyperleptinemia, and hyperglycemia, along with improved glucose tolerance compared to control HFD-fed mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by blood measurements (Figure 4C) and glucose tolerance tests (Figure 4D) with appropriate statistical significance. The metabolic improvements are consistent with the reduced obesity phenotype and represent a coherent metabolic profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "NOVA-deficient mice exhibit greatly increased energy expenditure without changes in food/water consumption or physical activity, suggesting that increased energy expenditure accounts for the suppression of HFD-induced obesity and that NOVA proteins suppress energy expenditure and promote obesity-associated metabolic syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by metabolic cage data (Figures 4E, 4\u2014figure supplements 4-5). The lack of differences in food intake and activity (C71) combined with increased energy expenditure (C72) provides strong evidence that energy expenditure is the primary mechanism. However, C73 and C74 are inferential conclusions that, while well-supported, represent interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "NOVA-deficient mice exhibit significantly higher core body temperature during cold challenge and increased expression of browning/thermogenesis genes (Cidea, Dio2, Ppargc1a, Ppargc1b, Ucp1) in subcutaneous adipocytes, indicating that NOVA proteins suppress adipose tissue thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by telemetry data (Figure 5A) and RT-PCR analysis (Figure 5B) with appropriate statistical significance. The increased body temperature and thermogenic gene expression provide convergent evidence for enhanced thermogenesis in NOVA-deficient mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "At thermoneutrality (30\u00b0C), NOVA-deficient and control mice show no differences in body mass gain, glucose tolerance, adipocyte hypertrophy, or thermogenic gene expression, demonstrating that the metabolic benefits of NOVA deficiency are dependent on thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 are supported by body mass measurements (Figure 5C), glucose tolerance tests (Figure 5D), histology (Figure 5E), and gene expression analysis (Figure 5F) at thermoneutrality. The loss of phenotype at 30\u00b0C provides strong evidence that thermogenesis is required for the metabolic improvements, supporting a causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Forskolin treatment of primary adipocytes increases expression of thermogenic genes (Adrb3, Dio2, Fgf21, Ppargc1a, Ucp1) and decreases Nova expression while promoting Mapk9\u03b2 expression, and NOVA-deficient adipocytes show increased expression of thermogenic genes (Adrb3, Ucp1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by RT-PCR data from forskolin-treated adipocytes (Figure 5\u2014figure supplement 1A) and NOVA-deficient primary adipocytes (Figure 5\u2014figure supplement 1B). These cell-autonomous effects support the in vivo findings and demonstrate direct effects of NOVA on thermogenic gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In 3T3L1 adipocytes, Nova1 knockdown or combined Mapk8\u03b2/Mapk9\u03b1 knockdown increases expression of browning genes (Prdm16, Ucp1), confirming that NOVA-mediated alternative splicing contributes to adipose tissue thermogenesis through a cell-autonomous mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by RT-PCR data from shRNA knockdown experiments (Figure 5\u2014figure supplement 2A,B). The use of 3T3L1 cells, which normally resist browning, and the similar effects of Nova1 and JNK isoform knockdown provide strong evidence for a cell-autonomous mechanism linking NOVA-mediated splicing to thermogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The increased adipose tissue browning in NOVA-deficient mice likely reflects changes in mature adipocyte function rather than altered differentiation from progenitor cells, and may involve activation of inactive beige/brite adipocytes based on the temperature-dependent phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C89 are partially supported by the use of Adipoq-Cre (expressed in mature adipocytes) and the loss of browning at thermoneutrality. However, C87 and C89 are speculative inferences. While the Adipoq-Cre system supports C87, it doesn't definitively exclude effects on progenitors that express Adipoq. C89 is explicitly speculative about the mechanism of beige adipocyte activation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Compound NOVA deficiency in adipocytes causes increased thermogenesis and improved glycemia in HFD-fed mice, while partial NOVA deficiency causes only modest changes, establishing that NOVA proteins function to suppress adipose tissue thermogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by phenotypic analysis of double knockout mice (Figure 4) and single knockout mice (Figure 4\u2014figure supplement 3). The dose-dependent effect (compound > single knockout) strengthens the conclusion about NOVA's role, though the modest effects of single knockouts raise questions about the physiological relevance of the partial reduction in NOVA expression observed with HFD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "NOVA proteins suppress thermogenesis through NOVA-regulated changes in pre-mRNA splicing that affect adipocyte thermogenic gene expression, with splicing changes including both increased and decreased exon inclusion consistent with NOVA's context-dependent role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 are supported by RNA-seq data (Figure 2), gene expression analysis (Figure 5), and consistency with known NOVA biology (cited to Ule et al., 2006). However, C94 appropriately acknowledges that other NOVA functions (polyadenylation, microRNA regulation) cannot be excluded, indicating appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Increased inclusion of Fyn exon 7b in response to HFD is predicted to increase FYN tyrosine kinase activity, leading to suppression of fatty acid oxidation and promotion of insulin resistance, suggesting that alternative splicing contributes to the adipocyte response to obesity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C15 are based on RNA-seq data showing differential Fyn splicing and citations to prior work on FYN function (Brignatz et al., 2009; Bastie et al., 2007). However, no functional validation of FYN activity or its metabolic effects is provided in this study. The claims are reasonable predictions based on prior literature but remain speculative without experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "The decrease in NOVA expression in obesity may be relevant to obesity-regulated changes in alternative pre-mRNA splicing in adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C27 is explicitly speculative, as indicated by the use of \"may be relevant.\" While the correlation between decreased NOVA expression and splicing changes is observed, causality is not established. The modest effects of single NOVA knockouts (C92) raise questions about whether the partial reduction in NOVA expression with HFD is sufficient to drive significant splicing changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C97",
+      "C100",
+      "C103",
+      "C106"
+    ],
+    "result": "NOVA proteins may act combinatorially with other splicing factors, thermogenesis regulation may involve UCP1-independent mechanisms, and alternative splicing represents a potential therapeutic target for increasing adipose thermogenesis and improving metabolic syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97, C100, C103, and C106 are explicitly speculative statements about mechanisms and therapeutic potential. C97 cites Zhang et al., 2010 but notes these factors haven't been established in adipocytes. C100 acknowledges alternative thermogenic mechanisms. C103 and C106 discuss potential therapeutic applications without experimental validation. These are reasonable speculations but lack direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

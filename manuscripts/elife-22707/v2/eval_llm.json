@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Ribosome profiling libraries from L. pneumophila-infected macrophages are of high quality, with ~90% infection efficiency, ribosome footprints mapping preferentially to exonic regions, and characteristic 27-28 nucleotide fragment lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide quality control data for the ribosome profiling experiments. The high infection rate (C14) addresses concerns about uninfected bystander cells, while the mapping patterns (C15) and fragment sizes (C16) are consistent with established ribosome profiling methodology and validate the technical quality of the libraries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "T4SS-dependent induction of inflammatory cytokines in L. pneumophila-infected macrophages is controlled primarily at the level of mRNA superinduction rather than selective ribosome loading, with a near-perfect linear correlation between mRNA levels and ribosome footprints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C24 collectively demonstrate that T4SS-dependent gene induction correlates linearly between mRNA and ribosome footprints (Figure 2A), and this correlation extends to protein levels in lysates (Figure 2B). The data support the conclusion that mRNA superinduction, not selective translation, drives the immune response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The correlation between mRNA and protein levels in cell supernatants is less robust than in lysates, potentially due to differences in secretion rates, accumulation, receptor binding, and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C23 offers a speculative explanation for weaker correlation in supernatants (Figure 2C) compared to lysates. While the observation is data-supported, the proposed mechanisms are not experimentally tested and remain hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Seven bacterial effector-dependent induction of inflammatory cytokines occurs through mRNA induction rather than selective ribosome loading of mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 demonstrate that effector-dependent gene induction (comparing \u0394flaA to \u03947\u0394flaA strains) shows linear correlation between ribosome footprints and mRNA levels (Figure 3A), supporting the conclusion that mRNA induction, not selective translation, mediates this response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C79"
+    ],
+    "result": "MyD88-dependent induction of inflammatory cytokines, including Il1a and Il1b, is controlled primarily at the level of mRNA induction rather than selective ribosome loading or translational regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C79 show linear correlation between ribosome footprints and mRNA levels for MyD88-induced genes (Figure 3B), contradicting prior proposals of MyD88-mediated selective translation (C32). The data support transcriptional rather than translational control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ribosome occupancy varies widely across transcripts but is constitutive and not markedly affected by L. pneumophila infection, with housekeeping genes showing high occupancy and specific genes like Ftl1 and Atf4 showing low occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C46 demonstrate that while ribosome occupancy varies across transcripts (Figure 4, Table 1), the patterns are largely consistent across infection conditions, indicating constitutive rather than infection-induced regulation. This supports the conclusion that infection does not selectively alter ribosome loading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Metagene ribosome profiles show characteristic three-nucleotide periodicity and are grossly similar across infection conditions, with slight accumulation at start sites in \u03947\u0394flaA-infected cells and at stop codons in all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 describe metagene analysis (Figure 5) showing expected periodicity and similar profiles across conditions. The slight start site accumulation in \u03947\u0394flaA (C51) is interpreted as potential initiation block (C52, speculative), while stop codon accumulation (C53) suggests termination may be limiting (C54, speculative). The core observations are well-supported, though mechanistic interpretations are tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C86",
+      "C87",
+      "C94"
+    ],
+    "result": "L. pneumophila blocks host protein synthesis at two distinct levels: translation elongation (requiring seven bacterial effectors) and translation initiation (independent of the seven effectors), as demonstrated by harringtonine run-off experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64, C86-C87, and C94 present harringtonine run-off data (Figure 6) showing clear ribosome run-off in uninfected, \u0394dotA\u0394flaA, and \u03947\u0394flaA conditions but not in \u0394flaA-infected cells. This dissociates elongation block (effector-dependent) from initiation block (effector-independent). The high infection rate (C62-C63) addresses concerns about uninfected cell contamination. This is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C78"
+    ],
+    "result": "Global analysis of ribosome run-off shows that cytokine transcripts are not preferentially translated during infection but instead fall within or below the average ribosome retention, confirming control at the mRNA induction level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 and C78 analyze per-transcript run-off (Figure 7) and demonstrate that cytokine mRNAs do not escape the translation block but rather show typical or reduced run-off. This directly contradicts selective translation models and supports the mRNA superinduction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C80",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "mRNA superinduction (>1000-fold for some genes) is the primary mechanism by which host cells produce inflammatory cytokines despite pathogen-mediated translation inhibition (~95% block), rather than selective mRNA translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C76-C77, C80, and C95-C97 synthesize the study's main conclusion. The magnitude of mRNA induction (>1000-fold, C97) exceeds the translation block (~20-fold, C97), making superinduction sufficient to overcome the block (C96). Multiple lines of evidence (ribosome profiling, run-off assays) support this over selective translation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that mRNA superinduction may be advantageous because it does not require specific translation factors and cannot be defeated by elongation blocks, and may provide general insights into immune responses to pathogens that inhibit translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 and C98-C100 are explicitly speculative statements about mechanisms not tested (uORFs, post-translational regulation) and potential advantages of the superinduction strategy. While logically reasoned, these remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C93"
+    ],
+    "result": "The study provides nucleotide-level analysis of translation in infected cells and represents a methodological advance over prior studies by analyzing all endogenous transcripts simultaneously rather than single reporter mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C93 accurately describe the methodological contributions of the study. Ribosome profiling does provide genome-wide, nucleotide-resolution data on endogenous transcripts, which is indeed an advance over reporter-based approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The residual translation initiation block by \u03947\u0394flaA L. pneumophila may result from host stress responses rather than a novel bacterial effector, potentially involving mTOR pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 present a hypothesis about the mechanism of residual translation inhibition, supported by citations to prior work but not directly tested in this study. The authors favor this explanation but acknowledge alternatives, making this an uncertain conclusion requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Experimental design considerations: \u0394flaA strains were used to avoid inflammasome-mediated cytotoxicity without affecting translation blockade or cytokine induction, and infections were performed without thymidine at an early 6-hour timepoint to minimize bacterial replication differences and viability loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 describe methodological choices that are well-justified by prior work (C101) and logical experimental design considerations (C102-C103). These are appropriate controls for the experimental system.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C62"
+    ],
+    "result": "A machine learning algorithm incorporating chromatin, position, and sequence features accurately predicts highly effective sgRNAs for CRISPRi. The model was trained on 18,380 sgRNAs from 30 CRISPRi screens using elastic net linear regression with support vector regression for positioning features, achieving ROC-AUC of 0.80 in cross-validation and 0.91 on an independent ricin tiling dataset. Position relative to TSS (including nucleosome positioning) and sequence features were the most influential predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C11, C18-C24, C53-C56, and C62 collectively demonstrate robust machine learning methodology with appropriate cross-validation (C19-C20), clear feature engineering (C53-C56), and strong predictive performance (C62). The use of both training/test splits and independent validation datasets (C20) provides convincing evidence for model generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C46",
+      "C47",
+      "C59",
+      "C60",
+      "C63"
+    ],
+    "result": "A separate machine learning model for CRISPRa was developed using 2,898 sgRNAs from 9 screens, achieving ROC-AUC of 0.70. The model shared features with CRISPRi but showed less pronounced periodic relationship between TSS distance and activity, attributed to reduced dynamic range in nucleosome-depleted regions and smaller training dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C46-C47, C59-C60, and C63 describe a parallel CRISPRa model with appropriate acknowledgment of limitations (smaller dataset, C46). The lower ROC-AUC (0.70 vs 0.80) is reasonable given the smaller training set, and the mechanistic explanation for differences (C60) is plausible though speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C14",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C86",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The hCRISPRi-v2 library is greatly enriched for highly active sgRNAs compared to previous versions. Validation against the Evers et al. library showed predicted activity correlated well with empirical phenotypes (Pearson R = -0.58), with 87% of sgRNAs scoring <0.4 being inactive and 77% scoring \u22650.6 being active. The top 5 sgRNA/gene library contained 80% active sgRNAs at 5% false positives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C14, C28-C32, C86, C90-C92 provide strong validation evidence including independent library testing (Evers et al.), correlation analysis with appropriate statistics, and ROC analysis. The improvement is attributed to algorithm and annotation changes rather than intrinsic CRISPRi limitations (C86, C88), which is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C33",
+      "C34",
+      "C68",
+      "C69",
+      "C70",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "The hCRISPRi-v2 library demonstrates superior performance in essential gene detection, recalling 91.2% of gold standard essential genes at 95% precision (vs 81.5% for v1). The library identified 2,150 essential genes with ~2% false discovery rate, and the compact 5 sgRNA/gene library performed essentially identically to the full 10 sgRNA/gene library.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C13, C33-C34, C68-C70, C77-C85 demonstrate rigorous statistical validation using gold standard gene sets, precision-recall analysis, and appropriate controls. The use of negative control genes to estimate FDR (C78-C79) and comparison to other published screens (C68, C85) strengthens the conclusions. The equivalence of 5 vs 10 sgRNA/gene libraries (C34) is particularly valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "CRISPRi does not exhibit non-specific toxicity at amplified genomic loci, unlike CRISPR nuclease. At the BCR amplicon in K562 cells, only BCR-targeting sgRNAs showed depletion with CRISPRi, while CRISPR nuclease showed general depletion of non-essential gene-targeting sgRNAs, indicating toxicity from on-target double-strand breaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C40, C71-C74 provide compelling comparative evidence between CRISPRi and CRISPR nuclease at a well-characterized amplified locus. The use of appropriate controls (chromosome Y-targeting sgRNAs in female K562 cells, C38, C72) and standardization to negative controls strengthens the conclusion. However, the mechanism (C39) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C41",
+      "C42",
+      "C43",
+      "C75",
+      "C76"
+    ],
+    "result": "The hCRISPRa-v2 screen identified 540 genes modifying growth upon overexpression, 257 more than v1, with 3-fold greater enrichment for transcription factor categories. Among shared hits, 69.3% of sgRNAs were highly active in v2 versus 45.1% in v1. Several newly identified genes were attributed to improved FANTOM TSS annotations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C41-C43, C75-C76 demonstrate improved CRISPRa library performance with appropriate validation through gene ontology analysis (C42) and comparison of sgRNA activity rates (C43). The attribution of some improvements to TSS annotation changes (C76) is supported by genome browser evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C87"
+    ],
+    "result": "FANTOM TSS annotations are more accurate than Ensembl/GENCODE annotations for CRISPRi/a sgRNA design. The transition from Ensembl to FANTOM TSS annotations contributed to improved sgRNA phenotypes, as exemplified by the VCP gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C87 are supported by genome browser visualization (Figure 3\u2014figure supplement 1C) showing discrepancies between annotation sources and corresponding sgRNA performance differences. The claim is also supported by independent validation (Radzisheuskaya et al., 2016, C45).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C29"
+    ],
+    "result": "The sgRNA prediction algorithm generalizes to independently designed libraries and different cell types. Predicted activity correlated well (Pearson R = -0.58) with sgRNA phenotypes in the Evers et al. screen performed in RT-112 cells with a different sgRNA design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C29 demonstrate important generalizability of the algorithm to an independent library in a different cell type. The correlation (R = -0.58) is statistically significant and biologically meaningful, though the different sgRNA constant region used by Evers et al. may have reduced correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "CRISPRi and CRISPRa identify non-overlapping sets of genes that modify robust growth, highlighting their complementary nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by direct comparison of screen results (Figure 4\u2014figure supplement 1F) and is consistent with the different mechanisms of action (repression vs activation). This validates the complementary utility of both approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "The hCRISPRi-v2 and hCRISPRa-v2 libraries were designed with separate pools for top 5 and next-best 5 sgRNAs per gene, and divided into thematic sublibraries based on gene function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C61 describe straightforward library design features that are clearly documented in the manuscript and figures. The sublibrary organization facilitates focused screens on specific biological processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Nucleosomes directly block Cas9 access to DNA, and nucleosome occupancy is predictive of Cas9 activity independent of sequence features. Strong nucleosome-dependent phasing is observed downstream of FANTOM-annotated TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C8 are supported by multiple citations to prior work (Horlbeck et al., 2016; Hinz et al., 2015; Isaac et al., 2016) and form the biological foundation for incorporating chromatin features into the prediction algorithm. These are established findings from prior work rather than new results from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C49",
+      "C89"
+    ],
+    "result": "CRISPRi enables inducible, reversible, and homogeneous gene expression manipulation, and combined with improved sgRNA prediction and lack of non-specific toxicity, represents a state-of-the-art approach for loss-of-function studies. CRISPRi/a are also effective for non-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C49, and C89 synthesize prior findings (C16, C49 supported by citations) with current work to make a broader claim about CRISPRi as a premier tool. While somewhat promotional, the claim is reasonably supported by the combination of advantages demonstrated in this and prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C51",
+      "C52",
+      "C84",
+      "C94"
+    ],
+    "result": "The v2 libraries and algorithms have broad potential applications including targeting non-coding genes, multiplexed gene control, and enhancing various CRISPR technologies. The compact 5 sgRNA/gene library is particularly suited for cell sorting and in vivo screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C50-C52, C84, and C94 are largely speculative about future applications (C50-C52 explicitly marked as speculation). While C84 is supported by citations to relevant applications, the actual utility for these applications has not been demonstrated in this manuscript. These represent reasonable extrapolations but lack direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "sgRNA activity generally correlates across different CRISPR activation strategies, suggesting the CRISPRa-v2 libraries will be broadly useful.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by citation to Chavez et al., 2016, which compared multiple activation strategies. This provides reasonable justification for the broad utility of the CRISPRa-v2 library design, though direct testing with other activation systems was not performed in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The lower fraction of effective sgRNAs in previous CRISPRi libraries was due to the algorithm and TSS annotation used rather than any intrinsic limitation of CRISPRi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is a reasonable inference from the dramatic improvement in sgRNA activity with the v2 algorithm and FANTOM annotations (C86-C87). The claim is supported by the data showing that improved predictions led to improved empirical performance, though alternative explanations (e.g., improvements in other aspects of library construction) cannot be completely ruled out.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C38",
+      "C39",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study demonstrates prominent beta (15-35 Hz) and theta (4-8 Hz) oscillations in both the ACC and DLPFC during REM sleep in humans. All DLPFC electrodes (15/15) showed significant theta activity (median 5.2 Hz) and ~87% (13/15) showed significant beta activity (median 20.9 Hz). All ACC electrodes (22/22) showed significant beta activity (median 19.7 Hz) and ~86% (19/22) showed significant theta activity (median 4.6 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C38-C39, C59-C62, and C64-C67 collectively provide strong evidence for prominent beta and theta oscillations in ACC and DLPFC during REM sleep. The statistical analysis with Bonferroni correction (C59, C60, C64, C65) and specific frequency measurements support the main claims. The methodology is rigorous with appropriate controls for epileptic activity and proper electrode localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C73",
+      "C74"
+    ],
+    "result": "Beta and theta activities in the ACC and DLPFC are coherent during REM sleep. Approximately 74% (23/31) of ACC-DLPFC electrode pairs showed significant coherence in the beta band and 76% (26/34) showed significant coherence in the theta band.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C43, C73, and C74 demonstrate coherent oscillatory activity between ACC and DLPFC. The coherence analysis was validated using two independent methods (Chronux confidence level and Monte Carlo simulations with 2000 shuffles, C161-C162), both identifying the same electrode pairs as significant. Statistical corrections were appropriately applied (Bonferroni correction for multiple comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Temporal analysis of theta and beta activity shows that theta activity tends to occur first in the DLPFC (peak at ~22 ms), while beta activity occurs nearly simultaneously in both regions (peak at ~2 ms). However, there is substantial variability in timing across electrode pairs, with 69% showing DLPFC-first theta and 65% showing DLPFC-first beta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 provide cross-covariance analysis of power between ACC and DLPFC. The methodology is sound (C163-C167), using Hilbert transform for instantaneous amplitude and restricting analysis to high-power windows and coherent electrode pairs. The small temporal differences (2-22 ms) are within the resolution of the method, and the acknowledged variability (C79) appropriately tempers strong directional claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The DLPFC is active during REM sleep and likely interacting with other areas, contrary to current thinking based on imaging studies that suggest the DLPFC is relatively quiet during REM sleep. This finding challenges the hypothesis that DLPFC quiescence underlies the bizarre nature of dreams.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C40-C42 present a major reinterpretation of DLPFC function during REM sleep. The evidence from oscillatory activity (C1-C4, C59-C62) and coherence with ACC (C5-C6, C73-C74) supports DLPFC activity. The authors appropriately cite prior imaging studies (C41-C42) and provide plausible explanations for the discrepancy (C85-C88), including temporal resolution differences in PET imaging and potential inhibited conditions during oscillatory activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Beta and theta activity during REM sleep shows regional specificity. The inferior frontal gyrus shows significant activity in both bands, while the medial temporal gyrus shows predominantly theta activity (~58%, 11/19 electrodes) with minimal beta activity (~16%, 3/19 electrodes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 demonstrate regional differences in oscillatory patterns. The statistical analysis is appropriate with Bonferroni correction (C69-C70). The finding that temporal regions show primarily theta while frontal regions show both theta and beta is consistent with known functional neuroanatomy and supports the specificity of the frontal beta-theta network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C48",
+      "C49",
+      "C50",
+      "C95",
+      "C101",
+      "C104",
+      "C106",
+      "C107",
+      "C113"
+    ],
+    "result": "The study hypothesizes that the dialogue between DLPFC and ACC via beta-theta oscillations could play a role in emotional regulation, procedural motor memory consolidation, and emotional memory consolidation during REM sleep. Specific mechanisms are proposed: beta activity may relate to motor plan evaluation triggered by PGO waves, while theta may convey spatial/contextual information from hippocampus and emotional content from amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16-C18, C48-C50, C95, C101, C104, C106-C107, and C113 are explicitly speculative (marked as SPECULATION in evidence_type). While the hypotheses are plausible and grounded in known functional roles of these regions (C10-C15, C44-C47, C102-C103, C105), they lack direct experimental validation. The authors appropriately use cautionary language ('could play a role,' 'may be') and acknowledge uncertainty (C108-C109). These remain hypotheses requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The study examined five patients (4 females, 1 male, ages 42-55, mean 48.0\u00b15.6 years) with intractable epilepsy undergoing invasive monitoring with intracranial depth electrodes targeting medial temporal and frontal regions. Sleep was scored using standard criteria (EEG, EMG, EOG) with appropriate ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C114-C119 describe the study population and basic methodology. The methods are standard for intracranial epilepsy studies, with appropriate ethical oversight (C118-C119). However, the small sample size (n=5) and specific patient population (epilepsy patients) limit generalizability. The study appropriately excluded epileptic foci and seizure nights (C136, C148-C149).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Electrode localization was performed using preoperative MRI and postoperative CT scans with FreeSurfer parcellation and neurologist verification. Bipolar derivations (10mm spacing, ~100\u03a9 impedance) were used to ensure local activity. After exclusion criteria (epileptic activity, anatomical requirements), 15 DLPFC, 22 ACC, 12 inferior frontal gyrus, and 19 medial temporal gyrus bipolar derivations were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C137 describe rigorous electrode localization and data selection methodology. The use of both automated (FreeSurfer) and expert (neurologist) localization is appropriate, with acknowledgment of discrepancies for midline contacts (C131-C132). Bipolar derivations ensure local signal source (C133). The exclusion of 36 bipolar derivations due to epileptic activity (C136) demonstrates appropriate quality control. The final sample sizes are adequate for the analyses performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Sleep staging used standard AASM criteria with custom software, verified by experienced scorers and video recordings. Subjects spent 73.18\u00b16.82% in NREM, 16.23\u00b12.85% in REM, 10.59\u00b11.78% awake after sleep onset, with total sleep time 378.13\u00b122.67 min. Conservative REM period selection (>5 min, uninterrupted, clean boundaries) ensured results were not contaminated by other sleep stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C147 describe rigorous sleep staging methodology. The use of standard AASM criteria (C138), expert verification (C139), and video confirmation (C140) ensures accurate sleep stage identification. The conservative REM selection criteria (C145-C146) strengthen confidence that observed oscillations are specific to REM sleep. Sleep architecture parameters (C141-C144) are within normal ranges, suggesting the epilepsy patients had relatively normal sleep despite their condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Power spectrum analysis used 10-second REM windows, comparing spectrum estimates to 1/f^b fitted curves using t-tests with Bonferroni correction. This approach was chosen over comparison with awake activity because awake spectra depend on cognitive state and task. All subjects had >21 min REM sleep, providing >125 windows per electrode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C156 describe the power spectrum analysis methodology. The comparison to fitted 1/f curves rather than awake activity is justified (C155) and is a standard approach for identifying oscillatory peaks above background. The sample size (>125 windows per electrode, C156) is adequate for spectral estimation. Bonferroni correction for multiple comparisons (C154) is appropriate. The exclusion of epileptic activity (C148-C149) is critical for validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Coherence analysis used the Chronux toolbox with 2-second windows. Significance was assessed using both Chronux confidence levels and Monte Carlo simulations (2000 shuffles), with both methods identifying the same electrode pairs as significant. Analysis included 34 ACC-DLPFC pairs for theta and 31 for beta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C162 describe coherence analysis methodology. The use of two independent significance testing methods (Chronux and Monte Carlo) that converge on the same results (C162) strengthens confidence in the findings. The 2-second window size (C160) is appropriate for the frequency bands analyzed. The sample sizes (31-34 electrode pairs) are adequate for coherence analysis. Bonferroni correction was applied (C161).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Cross-covariance analysis used Hilbert transform to calculate instantaneous amplitude after band-pass filtering. Analysis was restricted to windows where both electrodes had power in the top quartile and to electrode pairs showing significant coherence. This resulted in 23 beta and 26 theta ACC-DLPFC pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 describe cross-covariance methodology. The use of Hilbert transform for instantaneous amplitude is standard (C163). Restricting analysis to high-power windows (top quartile, C164) and coherent pairs (C165) is appropriate for examining temporal relationships, though it may introduce selection bias toward stronger coupling. The sample sizes (23-26 pairs) are adequate for the analysis performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The frequency range of beta activity during REM sleep can be clearly distinguished from spindling activity during NREM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by Figure 3\u2014figure supplement 1 showing distinct spectral peaks for REM beta (~20 Hz) versus NREM spindles (11-16 Hz). This distinction is important for validating that the observed beta activity is not contamination from NREM sleep or misclassified spindles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Frontal electrodes showed marked spectral changes at REM sleep onset, with prominent beta bursts appearing and occurring throughout REM episodes. Beta bursts occurred in frontal but not temporal electrodes and appeared to occur in close temporal proximity across frontal electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe initial observations of beta bursts. The qualitative observations (C55-C56) are supported by quantitative analysis (C57) shown in Figure 2b. The inference about temporal proximity (C58) is supported by visual inspection but would benefit from quantitative cross-correlation analysis, which is provided later (C75-C79).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C100"
+    ],
+    "result": "The study proposes potential explanations for the discrepancy between PET imaging (showing quiet DLPFC) and electrophysiological findings (showing active DLPFC). Possibilities include: (1) PET averaging over long periods may miss brief oscillatory events, (2) DLPFC oscillations may occur under relatively inhibited conditions with increased ACC inhibition during REM, and (3) beta activity may originate from subcortical sources given near-simultaneous occurrence in ACC and DLPFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81, C85-C88, and C100 are speculative explanations for methodological discrepancies. While plausible, these hypotheses lack direct experimental validation. The temporal resolution argument (C85-C86) is reasonable given PET's minute-scale averaging. The inhibition hypothesis (C87-C88) is based on cited connectivity studies but remains untested. The subcortical origin hypothesis (C100) is inferred from timing data but alternative explanations (direct ACC-DLPFC communication) are equally plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The introduction reviews established knowledge about sleep architecture, NREM memory consolidation mechanisms, REM sleep characteristics, known REM oscillations (hippocampal theta, neocortical gamma, PGO waves), imaging findings on frontal cortex activity during REM, and conflicting evidence regarding REM sleep's role in memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C34 and C89-C94 summarize prior literature with appropriate citations. These background claims are well-supported by the cited references and represent accurate summaries of the field's current understanding. The acknowledgment of conflicting evidence regarding REM and memory (C90-C94) appropriately frames the uncertainty in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C35",
+      "C36",
+      "C37",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C82",
+      "C83",
+      "C84",
+      "C96",
+      "C98",
+      "C99",
+      "C102",
+      "C103",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The manuscript cites established anatomical and functional knowledge about ACC and DLPFC (reciprocal connectivity, roles in memory and emotional regulation, ACC motor connections and error detection), prior findings on PET-electrophysiology discrepancies, beta activity following PGO waves in basal ganglia, hippocampal theta conveying spatial information, and recent intracranial REM sleep studies focusing on medial temporal lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C10-C15, C35-C37, C44-C47, C82-C84, C96, C98-C99, C102-C103, C105, and C108-C112 cite established neuroanatomical and neurophysiological knowledge with appropriate references. These claims provide the foundation for the study's hypotheses and interpretations. The citations appear accurate and relevant, though independent verification of each cited claim is beyond the scope of this review.",
+    "result_type": "MINOR"
+  }
+]

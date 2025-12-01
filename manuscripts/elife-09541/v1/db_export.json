@@ -1,0 +1,1371 @@
+{
+  "submission": {
+    "id": "2f29ad5c-7edb-49a2-beac-ffbf57fba346",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:35:49.544070Z",
+    "updated_at": "2025-11-30T20:35:49.544070Z"
+  },
+  "content": [
+    {
+      "id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "submission_id": "2f29ad5c-7edb-49a2-beac-ffbf57fba346",
+      "content_type": "manuscript",
+      "content_text": "# Overall energy conversion efficiency of a photosynthetic vesicle\n\n## Authors\n\n- Melih Sener<sup>1</sup> \u2020\n- Johan Strumpfer<sup>1</sup>\n- Abhishek Singharoy<sup>1</sup>\n- C Neil Hunter<sup>4</sup>\n- Klaus Schulten<sup>1</sup> ([ORCID: 0000-0001-7192-9632](https://orcid.org/0000-0001-7192-9632)) \u2020\n\n### Affiliations\n\n1. Beckman Institute for Advanced Science and Technology University of Illinois at Urbana-Champaign Urbana United States\n2. Department of Physics University of Illinois at Urbana-Champaign Urbana United States\n3. Center for Biophysics and Computational Biology University of Illinois at Urbana-Champaign Urbana United States\n4. Department of Molecular Biology and Biotechnology University of Sheffield Sheffield United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe chromatophore of purple bacteria is an intracellular spherical vesicle that exists in numerous copies in the cell and that efficiently converts sunlight into ATP synthesis, operating typically under low light conditions. Building on an atomic-level structural model of a low-light-adapted chromatophore vesicle from Rhodobacter sphaeroides, we investigate the cooperation between more than a hundred protein complexes in the vesicle. The steady-state ATP production rate as a function of incident light intensity is determined after identifying quinol turnover at the cytochrome bc1 complex (cytb\u2062c1) as rate limiting and assuming that the quinone/quinol pool of about 900 molecules acts in a quasi-stationary state. For an illumination condition equivalent to 1% of full sunlight, the vesicle exhibits an ATP production rate of 82 ATP molecules/s. The energy conversion efficiency of ATP synthesis at illuminations corresponding to 1%\u20135% of full sunlight is calculated to be 0.12\u20130.04, respectively. The vesicle stoichiometry, evolutionarily adapted to the low light intensities in the habitat of purple bacteria, is suboptimal for steady-state ATP turnover for the benefit of protection against over-illumination.\n\n## Introduction\n\nEnergy for most life on Earth is provided by sunlight harvested by photosynthetic organisms, which have evolved a wide variety of mechanisms for utilizing light energy to drive cellular processes (Blankenship, 2014). These organisms absorb sunlight and subsequently utilize the F\u00f6rster mechanism (Sener et al., 2011) and quantum coherence (Str\u00fcmpfer et al., 2012; Panitchayangkoon et al., 2010; Scholes, 2010) for efficient excitation energy transfer, followed by conversion of light energy into chemical energy (Feniouk and Junge, 2009). The light harvesting system of purple bacteria (Hu et al., 2002; Cartron et al., 2014) is claimed to be the earliest of the current photosynthetic lineages (Xiong et al., 2000) and exhibits, at the supra-molecular level as well as at the level of individual proteins, less complexity than the thylakoid membranes of the more ubiquitous cyanobacteria and plants (Kirchhoff et al., 2002).\n\nIn the purple bacterium Rhodobacter (Rba.) sphaeroides the basic photosynthetic unit is the chromatophore (Cogdell et al., 2006; Str\u00fcmpfer et al., 2011; Cartron et al., 2014), a 50\u201370 nm diameter vesicle, as shown in Figure 1, formed through invagination of the intracytoplasmic membrane (Tucker et al., 2010; Gubellini et al., 2007) and comprising over a hundred protein complexes (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013). The proteins that constitute the chromatophore are primarily the light harvesting (LH) complexes, photosynthetic reaction centers (RCs), cytb\u2062c1 complexes, and ATP synthases, which cooperate to harvest light energy for photophosphorylation. The architecture of the chromatophore, reported in (\u015eener et al., 2007, 2010; Cartron et al., 2014), has been determined by combining atomic force microscopy (AFM) (Bahatyrova et al., 2004; Olsen et al., 2008), cryo-electron microscopy (cryo-EM) (Qian et al., 2005; Cartron et al., 2014), crystallography (Koepke et al., 1996; McDermott et al., 1995; Papiz et al., 2003; Jamieson et al., 2002), optical spectroscopy (Hunter et al., 1985; Sener et al., 2010), mass spectroscopy (Cartron et al., 2014), and proteomics (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013) data. The composition of the chromatophore depends on growth conditions such as light intensity (Adams and Hunter, 2012; Woronowicz et al., 2011b, 2011a) and can also be influenced by mutations (Siebert et al., 2004; Hsin et al., 2010b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09541/elife-09541-fig1-v1.jpg)\n\n**Figure 1.:** The model is based on AFM, EM, crystallography, mass spectroscopy, proteomics, and optical spectroscopy data (Cartron et al., 2014). The inner diameter of the vesicle is 50 nm. The model considered in this study is a variant of the one reported in (Cartron et al., 2014) , which features 63 LH2 complexes (green), 11 dimeric and 2 monomeric RC-LH1-PufX complexes (LH1:red; RC:blue; PufX:lime), 4 cyt$b\u2062c_{1}$ (magenta), and 2 ATP synthases (orange), as well as 2469 BChls and 1542 carotenoids. Proteins are shown in surface representation. (A) Proteins and BChls of the chromatophore. Some of the light harvesting proteins are rendered transparent to reveal their BChl pigments. BChls are represented by their porphyrin rings only. See Video 1 presenting the vesicle. (B) Close-up of chromatophore showing its lipid membrane (transparent) along with its proteins colored as in (A). The membrane of 16,000 lipids contains the quinone/quinol pool of about 900 molecules. Energy conversion in the chromatophore proceeds in three stages: (I) light harvesting and electron transfer reducing the quinone pool; (II) quinone/quinol diffusion and exchange of quinols for quinones at cyt$b\u2062c_{1}$ (thereby generating a proton gradient across the vesicle membrane) as well as diffusive motion of cytochrome $c_{2}$ inside the chromatophore shuttling single electrons from cyt$b\u2062c_{1}$ to RC; (III) utilization of the proton gradient for ATP synthesis.\n\n![Video 1.](https://cdn.elifesciences.org/articles/09541/elife-09541-media1.mp4.jpg)\n\n**Video 1.:** A movie that shows a detailed structural model for the low-light adapted chromatophore vesicle as displayed in Figure 1 (Cartron et al., 2014). Presented is a rotating view of the vesicle comprising LH2 complexes (green), dimeric RC-LH1-PufX complexes (red-blue-lime green), dimeric cyt$b\u2062c_{1}$ complexes (magenta), and ATP synthases (orange). For half of the model, proteins are shown in solid surface representation, and for the other half, proteins are shown as transparent surfaces with bacteriochlorophylls (BChls), represented by their porphyrin rings, shown as solid surfaces.\n\nThe chromatophore displays organizational principles for the integration of multiple processes (Sener et al., 2010). Evolutionary competition at the organism level has driven photosynthetic subsystems toward optimal and robust function (Noy et al., 2006; Noy, 2008; Scholes et al., 2011) that can guide the design of artificial light harvesting devices such as biohybrid antennas (Harris et al., 2013) and nanopatterned light harvesting (LH) complex arrays (Reynolds et al., 2007; Vasilev et al., 2014; Patole et al., 2015). The development and improvement of such artificial, biological, or biohybrid light harvesting systems may alleviate mankind\u2019s future energy demand (Blankenship et al., 2011).\n\nThe functional principles displayed by the chromatophore and prevalent also in other photosynthetic systems include efficient excitonic coupling between components (Hu et al., 1997, 1998; van Grondelle and Novoderezhkin, 2006b; Olaya-Castro et al., 2008; Sener et al., 2011), the utilization of quantum coherence (Ishizaki and Fleming, 2009a; Str\u00fcmpfer et al., 2012), photoprotection by carotenoids (Damjanovi\u0107 et al., 1999), accommodation of thermal fluctuations, studied through experimental (Visscher et al., 1989; van Grondelle et al., 1994; Pullerits et al., 1994; Gobets et al., 2001; Janusonis et al., 2008; Freiberg et al., 2009) as well as theoretical (Damjanovi\u0107 et al., 2002; \u015eener and Schulten, 2002; Ishizaki and Fleming, 2009b; van Grondelle and Novoderezhkin, 2006b; Str\u00fcmpfer and Schulten, 2011, 2012a) methods. The chromatophore exhibits also the features of modularity, repair, and assembly of components (Hsin et al., 2010a), high quantum yield of organelle-scale pigment networks (\u015eener et al., 2007, 2010; Cartron et al., 2014), isolation of the electron transfer chains (\u015eener and Schulten, 2008), co-accommodation of competing functions such as efficient energy transfer and diffusion in the quinone/quinol pool (Lavergne et al., 2009; Sener et al., 2010), as well as adaptation to changing external conditions (Adams and Hunter, 2012; Woronowicz et al., 2011a; Niederman, 2013; Woronowicz et al., 2013).\n\nEnergy conversion in the chromatophore proceeds in three stages as discussed below: (i) light harvesting and charge separation, converting quinone into quinol at a RC; (ii) diffusion of quinone/quinol in the chromatophore membrane and cytochrome $c_{2}$ diffusion inside the chromatophore vesicle, resulting, at cyt$b\u2062c_{1}$, in the generation of a proton gradient as well as a transmembrane electrochemical gradient across the chromatophore membrane (henceforth referred to collectively as proton gradient); (iii) utilization of the proton gradient, culminating in ADP binding and ATP release at ATP synthase. The quinone/quinol as well as the generated proton-motive force function as energy buffers between light harvesting and ATP synthesis stages. The proton gradient along with the redox states of the quinone/quinol pool are influenced by the enzymes succinate dehydrogenase, NADH dehydrogenase, cytochrome $c$ oxidase, and ubiquinol oxidase (Bowyer et al., 1985; Klamt et al., 2008). A summary for the energy conversion processes in the chromatophore can be found in (Klamt et al., 2008; Sener et al., 2014).\n\nIn addition to ATP synthesis, the chromatophore utilizes the generated proton motive force also for NADH production via NADH dehydrogenase (Klamt et al., 2008) and, thereby, for control of the quinone/quinol pool redox state. Other channels for proton gradient depletion are flagellar motility (Kojadinovic et al., 2013) and proton leak across the vesicle membrane. In the present study, we focus on the overall energy conversion characteristics of the molecular components identified in the current structural model (Cartron et al., 2014), namely LH2, RC-LH1, cyt$b\u2062c_{1}$, and ATP synthase, where NADH dehydrogenase plays an indirect role.\n\nEfficient energy conversion requires some degree of robustness with respect to supramolecular organization, since no two chromatophores are likely to be identical. Though chromatophore vesicles share structural motifs (Bahatyrova et al., 2004; Cartron et al., 2014) that vary gradually with growth conditions, inevitable irregularities in the distribution of their constituent proteins and their quinone/quinol pools render chromatophores heterogeneous, requiring energy conversion processes to be insensitive to structural inhomogeneity. Robustness in photosynthetic systems had been demonstrated computationally for the excitation transfer step of light harvesting at the single protein level with respect to loss or rearrangement of pigments (\u015eener et al., 2002) as well as against fluctuations of pigment site-energies (Damjanovic et al., 2002) and at the vesicle level against deformations of the pigment network (Sener et al., 2010).\n\nEfficiency of energy conversion in a photosynthetic system is not straightforward to define, since it involves multiple interrelated subprocesses spanning both quantum mechanical and classical domains over timescales ranging from picoseconds to milliseconds (Blankenship, 2014; van Amerongen et al., 2000). A simple measure of conversion efficiency at the light harvesting stage is provided by the quantum yield, q, defined as the probability, upon the absorption of a photon by any pigment of the chromatophore, of charge separation at any RC ready for excitation-induced electron transfer to quinone. The quantum yield is solely a function of pigment network geometry, is independent of incident light intensity, and is found to be close to unity (Str\u00fcmpfer et al., 2012; Sener et al., 2011) for initial chlorophyll light absorption; in case of carotenoid light absorption the quantum yield can be lower due to so-called covalent electronic excitation as argued in (Ritz et al., 2000b). Since excitation transfer does not constitute a rate-limiting step of photosynthetic energy conversion, the quantum yield is not a major limiting factor for the overall efficiency of the chromatophore. A comprehensive measure of chromatophore efficiency that also permits a limited comparison with photovoltaic systems is the conversion efficiency of captured solar energy to the chemical energy of the final photoproduct, namely ATP.\n\nEarlier studies of photosynthetic membrane systems include percolation theory-based models of quinone diffusion in Rhodospirillum (Rsp.) photometricum membranes (Scheuring et al., 2006), plastoquinone diffusion in thylakoid membranes (Kirchhoff et al., 2002), models of dissipative photoprotective behavior in Rsp. photometricum membranes (Caycedo-Soler et al., 2010), and stoichiometry-based rate kinetics (Geyer et al., 2007, 2010). In fact, long before any structural information of the light harvesting apparatus of purple bacteria was available, Vredenberg and Duysens (Vredenberg and Duysens, 1963) postulated that the total fluorescence yield can be expressed in terms of the ratio of closed and open RCs, after which random-walk models of excitation transfer were developed using a master equation formalism (Den Hollander et al., 1983). Prior to the availability of AFM imaging data (Bahatyrova et al., 2004), the supramolecular organization of chromatophores was suggested to feature RCs partially surrounded by LH-complexes facilitating efficient shuttling of quinones (Joliot et al., 1990, 1996; Jungas et al., 1999).\n\nThe aim of the present study is to determine, based on a supramolecular structural model (Cartron et al., 2014), for the chromatophore of Rba. sphaeroides the ATP production rate as a function of illumination and vesicle stoichiometry along with the corresponding energy conversion efficiency. A low-light adapted chromatophore vesicle model is considered (Cartron et al., 2014), since low-light illumination, namely $\u227210$% of full sunlight, is typical for the habitat of purple bacteria (Woronowicz and Niederman, 2010; Blankenship, 2014). The quantum yield of excitation transfer for the pigment network geometry shown in Figure 1 is determined in terms of an effective Hamiltonian formulation. The processes subsequent to charge separation and the corresponding rate kinetics of ATP production are described in terms of chromatophore vesicle stoichiometry, instead of at atomic detail, by identifying rate-limiting steps. The organizational optimization of the chromatophore is considered in terms of the dependence of energy conversion on vesicle composition and illumination conditions.\n\n## Results\n\nBased on the theoretical framework discussed in the Materials and methods section below, one can quantify how well the chromatophore performs in converting light energy into ATP synthesis and compare its performance characteristics, such as energy conversion efficiency, to the characteristics of other biological and artificial energy conversion systems. In particular, we examine below ATP turnover of the chromatophore as a function of light intensity and vesicle composition. The reader is urged to read the Materials and methods (Section 4) before proceeding further with the present section.\n\n### ATP turnover rate as a function of illumination\n\nPrevious studies showed that the quantum yield of excitation transfer, $q$, computed through Equation 8 below and discussed in greater detail in Supplementary Materials, is very high, namely, 85\u201394%, varying gradually with LH2:RC stoichiometry (\u015eener et al., 2007, 2010, 2011). For the vesicle presented in Figure 1 the quantum yield, $q$, has a value of 0.91, consistent with earlier studies (\u015eener et al., 2007, 2010; Cartron et al., 2014). Such high value for the quantum yield, close to the ideal limit of 1, is achieved because loss due to internal conversion and fluorescence arises much more slowly (rates about (1 ns)\u22121) than excitation transfer or charge separation at RC (rates about (10 ps)\u22121). Clearly, the quantum yield does not constitute a limiting factor for the overall energy conversion efficiency in the chromatophore.\n\nAt very low light intensity, nearly all electronic excitation delivered to RCs contribute to the generation of a proton gradient across the membrane and to eventual ATP synthesis. With increasing light intensity, the cycling time of quinones at the RC, $\\tau_{R\u2062C}\u2062(I)$ as given by Equation 19, increases; fewer RCs are found in a state available to receive photoexcitation, described by the probability, $p_{RC}\u2062(I)$, given by Equation 13, and resulting in a corresponding loss of electronic excitation. The time-scale with which the quinone/quinol pool redox state adapts to a change in light conditions is reported to be about 0.5\u2009s (Woronowicz et al., 2011a).\n\nThe ATP turnover rate, kATP, calculated according to Equation (20), and the energy conversion efficiency, \u03b7ATP, calculated according to Equation (21), for a low-light adapted chromatophore vesicle (Figure 1) under steady-state illumination are presented in Figure 2. At light intensities equivalent to 1% and 3% of full sunlight, the vesicle is found to produce ATP molecules at a rate of 82\u2009s\u22121 and 118\u2009s\u22121, respectively. At the high-light limit, the ATP synthesis rate approaches 158 molecules s\u22121. These rates are consistent with experimental observations for continuous light-induced photophosphorylation, reported to be in the range of 0.017 molecules per BChl per second (Saphon et al., 1975) and 0.05 ATP molecules per BChl per second (Clark et al., 1983), corresponding to ~43 ATP molecules s\u22121 and ~130 ATP molecules s\u22121, respectively, for the vesicle shown in Figure 1. We note that the Clark estimate was reported for Rhodopseudomonas capsulata. The corresponding energy conversion efficiency, \u03b7A\u2062T\u2062P, at the stated low-light intensities of 1% and 3% of full sunlight, calculated in the present study, are 12% and 7%, respectively. Notably, an upper-limit of 30% was estimated in (Hellingwerf et al., 1993) for the conversion efficiency of photosynthesis in Rba. sphaeroides. In comparison, the efficiency value, \u03b7A\u2062T\u2062P, computed for the recently established model (Cartron et al., 2014) of the chromatophore (Figure 2) ranges between 0%\u201317%.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09541/elife-09541-fig2-v1.jpg)\n\n**Figure 2.:** (A) Steady-state ATP production rate, $k_{ATP}$, calculated according to Equation (20), and (B) energy conversion efficiency, $\u03b7_{ATP}$, calculated according to Equation (21), of a chromatophore vesicle as a function of incident light intensity $\u03a6$. Solid curves correspond to the vesicle shown in Figure 1; dashed curves represent a similar vesicle with only a single cyt$b\u2062c_{1}$. The vertical lines denote the light intensities corresponding to (I) 3% of full sunlight (30 W/m2), a typical growth condition for purple bacteria, and (II) full sunlight (1 kW/m2), respectively. Thus, for light intensities typical for the habitat of purple bacteria (1\u20135% of full sunlight; shaded area) the energy conversion efficiency $\u03b7_{ATP}$ of a chromatophore vesicle is between 0.12\u20130.04.\n\nThe lower efficiency values, $\u03b7_{A\u2062T\u2062P}$, for the chromatophore at higher light intensities (Figure 2B) does not indicate a failing, since the chromatophore does actually produce slightly more ATP in high-light than in low-light illumination (Figure 2A), but rather reflects the optimization of purple bacteria for a low-light intensity habitat.\n\nThe saturation of ATP synthesis with increasing light intensity seen in Figure 2 arises because quinol turnover capacity at the cyt$b\u2062c_{1}$ complex becomes rate limiting at higher light intensities. The rate limiting property of cyt$b\u2062c_{1}$ complexes was suggested by earlier studies (Lavergne et al., 2009; Geyer et al., 2010) and is discussed below in connection with Equation (14) in Materials and methods. The maximal electron processing capacity of all cyt$b\u2062c_{1}$ complexes is estimated (see Equation (14) in Materials and methods) to be $2\\timesn_{B}\u2062\\tauB-1=320\u2062s^{-1}$, where $n_{B}=4$ is the number of cyt$b\u2062c_{1}$ dimers and $\\tau_{B}$ = 25 ms is the quinol turnover time at cyt$b\u2062c_{1}$\u00a0(Crofts, 2004) and the prefactor 2 accounts for every quinol transferring two electrons. The electron processing capacity at cyt$b\u2062c_{1}$ becomes equal to the total RC electron turnover rate, $I\u2062q$, at a light intensity of 9 W/m2, i.e., at approximately 1% of full sunlight. As illumination exceeds this low-light value, RC electron turnover is limited by the electron processing capacity of cyt$b\u2062c_{1}$, leading to a gradual saturation of proton gradient formation and ATP turnover, as seen in Figure 2A, thereby reducing the efficiency of ATP synthesis (Figure 2B).\n\nRate limitation of ATP synthesis by the cyt$b\u2062c_{1}$ turnover capacity can be related also to the availability of quinones at the RC. In the absence of bound quinone, excitations delivered to a RC are wasted, except if the excitation escapes from the RC and reaches another RC ready for quinone reduction, especially within the same RC-LH1 dimer. However, with increasing illumination the likelihood of nearby RCs having quinones available also diminishes, excitation energy is lost, and energy conversion efficiency is reduced. The probability of a RC being ready for quinone reduction, $p_{RC}\u2062(I)$, is given by Equation (13) in the Materials and methods section. With increasing illumination, $p_{RC}\u2062(I)$ decreases, thereby reducing the overall conversion efficiency, $\u03b7_{ATP}$. At 1% of full sunlight, $p_{RC}\u2062(I)$ assumess the value of 0.73, which, according to Equation (13), drops to 0.23 at 5% of full sunlight. Remarkably, the role of closed and open RCs in determining the overall efficiency of the photosynthesic apparatus had been already pointed out long before any structural details were known (Vredenberg and Duysens, 1963).\n\nThe rate limiting effect of cyt$b\u2062c_{1}$ can be further illustrated considering the efficiency of chromatophores with fewer cyt$b\u2062c_{1}$ complexes compared to the ones shown in Figure 1. As indicated by the dotted lines in Figure 2A,B, describing ATP synthesis in a chromatophore with a single cyt$b\u2062c_{1}$ dimer, a lower number of cyt$b\u2062c_{1}$ dimers results in a reduction of the ATP production rate, $k_{ATP}$, and, accordingly, in a lower conversion efficiency, $\u03b7_{ATP}$.\n\nA comparison with plant light harvesting efficiencies is not straightforward: efficiency for biomass production is significantly lower than the aforementioned thermodynamic efficiency; in fact, only as little as 1% of total incident solar energy is stored by crop plants as biomass (Blankenship et al., 2011).\n\nOne might wonder how the chromatophore compares to engineered photovoltaic devices. At peak solar intensity photovoltaic-driven electrolysis is reported to have an energy conversion efficiency of 5\u201315% (Blankenship et al., 2011). However, comparison of efficiency alone overlooks issues such as stability and reclaimability of the energy stored in the final products. More refined measures of efficiency need to include total integrated cost of components, life expectancy, repair and maintenance.\n\n### Optimality of vesicle composition for ATP production\n\nEvolutionary pressure toward greater fitness at the organism level results in the composition and architecture of photosynthetic systems to display adaptation toward optimal function (Xiong et al., 2000; \u015eener and Schulten, 2008; Blankenship, 2014). Such adaptation has been reported for the individual protein level; it is not as well understood at the system integration level. For instance, pigment networks of individual light harvesting proteins were reported to display optimality and robustness in their quantum yield with respect to the spatial organization of pigments and the site energy distribution (\u015eener et al., 2002; Noy et al., 2006; Damjanovic et al., 2002); a similar robustness was reported with respect to size-scaling deformations of an entire vesicle (Sener et al., 2010). Prior studies did not take into account optimization of the complete energy conversion process, including ATP synthesis, the effects of vesicle composition influenced by growth conditions such as light intensity (Niederman, 2013; Woronowicz et al., 2013), the regulation of the redox state of the quinone/quinol pool (Klamt et al., 2008), or the effects of cell-scale concentration and connectivity of chromatophores also influenced by light intensity at growth (Tucker et al., 2010).\n\nIn the following, the effect of vesicle composition on the ATP turnover rate is examined in order to determine the degree of optimality of the vesicle composition for ATP production. The vesicle shown in Figure 1 is used as a reference point for comparison with chromatophores of alternate composition, As composition variables, the number of dimeric cyt$b\u2062c_{1}$ complexes, $n_{B}$, and the number of dimeric RC-LH1-PufX complexes, $n_{L}$, are considered for a two-parameter $(n_{B},n_{L})$ family of vesicles with the same surface area as the reference vesicle (Figure 1). The dependence of the steady-state ATP turnover rate, $k_{ATP}\u2062(n_{B},n_{L};I)$, on $n_{B}$ and $n_{L}$ is determined according to Equations 17,19,20, where $n_{L}=2\\timesn_{RC}$. In order to avoid massive computation, vesicles are not constructed explicitly. Instead, the corresponding quantum yield $q$ is estimated by a linear interpolation on the LH2:RC stoichiometry based on earlier reported values (\u015eener et al., 2007, 2010, 2011) as described in Materials and methods (Equation 10). Since $q$ varies very little with vesicle composition, the dependence of $k_{ATP}$ on composition is dominated primarily by the explicit $n_{B}$ and $n_{RC}$ dependence in Equations 19,20.\n\nThe rate kATP\u2062(nB,nL;I) is shown in Figure 3 for light intensities equal to 1% and 3% of full sunlight. The respective ATP synthesis rates for the reference vesicle in Figure 1 under these two illumination conditions are 82 and 118 ATP molecules/s, respectively, (marked by circles in Figure 3) which corresponds to 79% and 50% of the maximum possible rate (marked by crosses in Figure 3) among all possible (nB,nL) values at that illumination. Clearly, steady state ATP synthesis is not optimized by the vesicle composition shown in Figure 1. The turnover rate, kATP, would be improved by an nB:nL ratio that is greater than the native value of 1:3\u00a0(Crofts, 2004; Cartron et al., 2014), as suggested also by a comparison of the turnover times at cytb\u2062c1 and RC (\u03c4B/\u03c4L\u22438).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09541/elife-09541-fig3-v1.jpg)\n\n**Figure 3.:** Vesicle composition is given in terms of the number of cyt$b\u2062c_{1}$ dimers ($n_{B}$) and of RC-LH1-PufX dimers ($n_{L}$) for vesicles featuring identical surface area; LH2 composition of the vesicle is determined by considering the vesicle shown in Figure 1 as a reference point and adjusting the number of LH2 complexes to compensate for the changes in the number of cyt$b\u2062c_{1}$ and RC-LH1-PufX dimers to cover the vesicle surface. ATP production rate, $k_{ATP}$, is shown for (A) 1% of full sunlight (10 W/m2) and (B) 3% of full sunlight (30 W/m2), determined according to Equation (20). The two RC-LH1-PufX monomers of the vesicle in Figure 1 were counted as a single dimer for the purposes of this plot. The reference vesicle (Figure 1) is represented by a circle, corresponding to an ATP production rate of 82 s\u22121 (118 s\u22121), i.e. 79% (51%) of the maximum possible rate among all stoichiometries, for 1% (3%) of full sun light. The optimal vesicle composition for each illumination is represented by a cross; the corresponding LH2 count for optimal composition is 93 (74) at 1% (3%) of full sunlight as compared with 63 for the reference vesicle (circle). The ATP production rate is marginally greater for vesicles that contain more cyt$b\u2062c_{1}$ and LH2 complexes at the expense of fewer RC-LH1-PufX complexes as compared with the reference vesicle. This increase in ATP production rate results from cyt$b\u2062c_{1}$ being the rate-limiting component in the energy conversion process.\n\nA reason for the aforementioned suboptimal $(n_{B},n_{L})$ values in native low-light adapted vesicles might be protection against light-induced damage that can arise at high illumination via destruction of the vesicle membrane through overacidification. Though typical illumination levels in habitats of purple bacteria are low, occasional surges in light intensity are inevitable. During sustained (>1 s) high illumination intervals, a proton turnover unhindered by a low ($n_{B}=4$) cyt$b\u2062c_{1}$ stoichiometry can exceed the turnover capacity of the ATP synthases, resulting in overacidification of the vesicle interior, harming the integrity of the chromatophore membrane and its proteins. The observed $n_{B}$ value of 4, apparently suboptimal for most light intensities (Figure 3), ensures that during sustained over-illumination proton turnover is limited by cyt$b\u2062c_{1}$ to a rate below the synthesis capacity of ATP synthase (Lavergne et al., 2009; Geyer et al., 2010), thus preventing overacidification.\n\nThe $(n_{B},n_{L})$ value also has an effect on the size of the quinone/quinol pool relevant for intermittent energy storage under fluctuating light conditions, since the number of quinones in the system correlates with the number of RCs (Comayras et al., 2005; Woronowicz et al., 2011a; Cartron et al., 2014). Energy conversion through the quinone/quinol pool also involves electron exchange processes from outside the chromatophore as furnished, for example, through the enzymes NADH dehydrogenase and succinate dehydrogenase (Klamt et al., 2008).\n\nThe turnover capacities of cyt$b\u2062c_{1}$ and ATP synthase are compared in Materials and methods in relation to the rate limitation of energy conversion by the cyt$b\u2062c_{1}$. A single ATP synthase is sufficient to take advantage of proton turnover of an entire chromatophore (Etzold et al., 1997). Additional ATP synthases reported in chromatophore vesicles (Cartron et al., 2014) appear to provide necessary redundancy, since an isolated chromatophore without ATP synthase is non-functional. In this regard, it is of interest that vesicles have been found to occasionally fuse through formation of membrane tubes (Tucker et al., 2010) permitting passage of protons between neighboring chromatophore vesicles, thereby sharing their proton gradients with the ATP synthases of multiple vesicles, reducing the need for back-up ATP synthases and even permitting less than one ATP synthase per vesicle.\n\nRobustness requirements for protecting the vesicle against damage under environmental strain apparently supersede optimality constraints for steady state conditions. A photosynthetic vesicle adapted for steady-state illumination at higher light intensities than considered in this study would require a larger number of cyt$b\u2062c_{1}$ to maximize ATP production, along with more than the 1\u20132 ATP synthases observed per vesicle (Cartron et al., 2014).\n\n## Discussion\n\nThe combined structural and functional model of a low-light adapted chromatophore (Cartron et al., 2014) permits a quantitative description of ATP synthesis at different light intensities. The energy conversion efficiency, $\u03b7_{ATP}$, is determined to be ~12%\u20134% at the low-light conditions typical for purple bacterial habitats (1%\u20135% of full sunlight), dropping rapidly to $\u22720.1$% beyond full sunlight conditions. Moderate levels of illumination saturate the bacterial light harvesting apparatus lowering its efficiency, whereas plants and photovoltaic devices function efficiently at high light intensities. The efficiency curve determined in the present study for the purple bacterial chromatophore (Figure 2B) indicates specialization for low-light intensities.\n\nThe primary rate-limiting component among the energy conversion steps in the chromatophore appears to be quinol turnover at cyt$b\u2062c_{1}$, as discussed in Section 4.2. The rate limitation at cyt$b\u2062c_{1}$, as compared with the ATP synthase turnover capacity, prevents the generation of an overly strong proton gradient at sustained high-light conditions, thereby protecting the chromatophore against overacidification of its interior and assuring vesicle integrity. As the light intensity $I$ increases, photoexcitations are more likely to be dissipated as the probability for a RC to have a quinone or semiquinone ready to accept an electron, $p_{R\u2062C}\u2062(I)$, decreases.\n\nThe chromatophore composition appears to be suboptimal for ATP production under steady-state illumination. The chromatophore is apparently a highly specialized device that performs its energy conversion function robustly for low average light intensity, while featuring protective measures that dissipate energy at higher light intensity. Robustness against damage, such as overacidification of the membrane due to sustained overillumination, appears to supersede optimality under idealized conditions, such as steady state illumination.\n\nThe present study focuses on steady state energy harvesting in the chromatophore without explicitly modeling the spatial dynamics of the charge carriers (quinone/quinol and cytochrome $c_{2}$), the redox states of the proteins (RC and cyt$b\u2062c_{1}$), proton leakage through the membrane, or the coupling of NADH dehydrogenase to the proton-motive force. A more complete description of chromatophore function requires placement of NADH dehydrogenase, along with possibly succinate dehydrogenase, cytochrome $c$ oxidase, and ubiquinol oxidase in the chromatophore membrane, the presence of which would also affect the energy conversion efficiency determined in this study. The added enzymes need to be described along with their reactions with redox partners located in the cell\u2019s cytoplasm. In particular, a non-steady state formulation is necessary to account for spatial heterogeneity and light intensity dependence of the redox states of the proteins and the charge carriers in the chromatophore.\n\nThe present study differs from earlier studies in functional modeling of the chromatophore (Geyer et al., 2007, 2010) in several respects: first, it is based on an explicit atomic-detail structural model; second, instead of employing many (over 30) adjustable parameters, few experimentally determined rate constants are employed to describe the rate determining steps; third, a steady-state description is chosen such that energy conversion steps that are not rate-limiting can be left out of the kinetic model. Nonetheless, earlier and present studies give similar results for the overall ATP synthesis rate at saturation, since this rate is determined largely by the total turnover capacity of cyt$b\u2062c_{1}$ complexes as a rate-limiting component.\n\nA key role in chromatophore energy conversion involves proton translocation, generating and using proton motive force. The present treatment does not resolve individual translocation steps, but rather assumes that the individual steps taking place at the overall RC, cyt$b\u2062c_{1}$, and ATP synthase proton reactions can be treated as a single reaction event. Primary conclusions reached presently would not be affected by a more detailed description, i.e., the model is robust with respect to the neglect of explicit modeling of individual proton translocation steps and proton motive force conversion.\n\nIntegrative models of organelle function such as the one presented here provide a bridge between experimental methods that do not resolve temporal and spatial detail needed for establishing physical mechanisms and microscopic simulations that span the multiple length and time scales relevant for the function of living cells.\n\n## Materials and methods\n\nIn the following, structural organization and energy conversion in the chromatophore are described in terms of a kinetic model. It is highly recommended that the text below is read before Sections 2 and 3. First, the supramolecular organization of a low light-adapted chromatophore vesicle is introduced. Next, the energy conversion processes are characterized: excitation transfer, diffusion of quinones/quinol and of cytochrome $c_{2}$, and ATP synthesis. The description is based on steady state kinetics. Inhomogeneities of the quinone/quinol and cytochrome $c_{2}$ pools and of the membrane proton gradient are not modeled; instead, the three attributes are assumed to function as homogeneous buffers of energy storage. The framework outlined is used to define three different measures of efficiency for the chromatophore: (i) quantum yield, $q$, (ii) quinol conversion ($Q\u2192Q\u2062H_{2}$) probability, $\u03b7_{Q}$, i.e., the probability that an absorbed photon is successfully utilized for quinol formation at a RC, and (iii) energy conversion efficiency, $\u03b7_{ATP}$, i.e., the ratio of the energy stored in the conversion ADP$\u2192$ATP to incident solar energy absorbed.\n\n### Supramolecular organization of a chromatophore vesicle adapted to low-light illumination\n\nAs already stated, the structural model of the chromatophore considered in the present study is a\u00a0variation\u00a0of the model reported in (Cartron et al., 2014). The primary components of chromatophore vesicles in purple bacteria, as depicted in Figure 1, are, in order of energy utililization (Cogdell et al., 2006,Cartron et al., 2014): (i) light harvesting complex 2 (LH2) (Koepke et al., 1996; Papiz et al., 2003); (ii) light harvesting complex 1 (LH1 [Qian et al., 2008; Sener et al., 2009]); (iii) RC (Jamieson et al., 2002; Str\u00fcmpfer and Schulten, 2012a); (iv) cytb\u2062c1(Crofts, 2004; Crofts et al., 2006); and (v) ATP synthase (Feniouk and Junge, 2009; Hakobyan et al., 2012). RC-LH1 complexes typically form dimeric RC-LH1-PufX complexes facilitated by the polypeptide PufX (Qian et al., 2013; Sener et al., 2009), although monomeric complexes are also found in membranes from photosynthetically grown cells at a ratio of approximately 10% (Olsen et al., 2008). The chromatophore in Figure 1 exhibits for the LH2:RC complexes a stoichiometry of 2.6:1 and corresponds to a low-light-adapted vesicle as described in (Sener et al., 2010; Cartron et al., 2014). In a typical vesicle, about a hundred protein complexes, LH2 and RC-LH1-PufX, form an efficient light harvesting network (\u015eener et al., 2007, 2010) supplying electronic excitation energy for the conversion of quinones to quinols. The quinols produced at the RC are converted back to quinones by cytb\u2062c1 to generate a proton gradient across the chromatophore vesicle membrane, which, in turn, is consumed by the ATP synthase for the synthesis of ATP from ADP and phosphate. The electrons from quinol-to-quinone conversion are shuttled back to the RC by cytochrome c2 acting inside the vesicle. These energy conversion processes are illustrated in Figure 4. We note that the experimental data (Saphon et al., 1975; Clark et al., 1983) used to test the present energy conversion model based on (Cartron et al., 2014) were not obtained with chromatophores in vivo, but for a suspension of chromatophores in a pH-buffer; the energy conversion processes as coupled to the entire bacterium are inevitably more complex than portrayed here.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09541/elife-09541-fig4-v1.jpg)\n\n**Figure 4.:** (A) Energy conversion processes starting after initial light absorption are divided into three stages: (1) quinol production at RC as a result of excitation transfer; (2) diffusion between RC and cyt$bc_{1}$ of quinone/quinol and cytochrome $c_{2}$, together with quinol-to-quinone conversion resulting in a proton gradient across the vesicle membrane; (3) utilization of proton gradient for ATP synthesis. (B) Chromatophore components, in which stages (1\u20133) take place, include LH2 (green), LH1(red)-RC(blue), cyt$bc_{1}$(purple), and ATP synthase (brown) complexes as well as the lipid phase (olive; see also Figure 1B).\n\nAtomic level structural models of chromatophores have been presented earlier (\u015eener et al., 2007, 2010; Hsin et al., 2010b; Sener et al., 2011; Chandler et al., 2014) for Rba. sphaeroides and Rsp. photometricum and their mutants. The supramolecular organization of the vesicles in Rba. sphaeroides was determined primarily by AFM and EM images of intact membrane domains (Bahatyrova et al., 2004; Frese et al., 2004; Scheuring et al., 2007; Olsen et al., 2008; Qian et al., 2008; Scheuring and Sturgis, 2009), whereas the stoichiometry of light harvesting proteins was determined by optical spectroscopy (Sener et al., 2010) and mass spectrometry (Cartron et al., 2014). Vesicle models were subsequently constructed by mapping planar membrane patches viewed through AFM imaging back onto the parent spherical domains (\u015eener et al., 2007), adjusting for the observed packing density (Olsen et al., 2008) and the spatial arrangement patterns (Hsin et al., 2009; Qian et al., 2008) of the constituting proteins.\n\nThe chromatophore model shown in Figure 1 comprises, in addition to the aforementioned constituent proteins, 16,000 lipids and 900 quinones, corresponding to a system containing 100 million atoms, including solvent. This system has been equilibrated through a 100 ns MD simulation to test the viability of the model employed. However, molecular dynamics simulations of the chromatophore describing energy conversion processes are not considered in the current study, because the large system size combined with timescales of energy conversion reaching milliseconds render a straightforward simulation prohibitive. Instead, the current study aims to describe key rate limiting components of energy conversion processes, such as quinone diffusion and turnover at cyt$b\u2062c_{1}$ as discussed below, to guide future simulation efforts. The atomic detail model is used below for the computation of the quantum yield, but rate kinetics subsequent to charge separation is described in terms vesicle stoichiometry only, with key rate constants taken from experimental studies.\n\nEarly chromatophore models prior to (Cartron et al., 2014) account only for LH proteins, whereas in proteomics studies, hundreds of different types of non-LH peptides are actually identified, including ATP synthase, cyt$b\u2062c_{1}$, membrane assembly factors, as well as proteins of unknown function (Jackson et al., 2012; Woronowicz and Niederman, 2010). Most of these components are notably unresolved in AFM images. Assignment of cyt$b\u2062c_{1}$ was recently achieved through EM and AFM studies using gold nanoparticle labeling, revealing separated regions containing one or more cyt$b\u2062c_{1}$, suggested to be located within lipid- and quinone-enriched membrane domains (Cartron et al., 2014). It is plausible that cyt$b\u2062c_{1}$ induces different curvature profiles in membrane domains compared to the LH-rich constant-curvature regions predominant in AFM images. Such a curvature-induced separation of protein domains is also supported by experimental (Frese et al., 2004; Sturgis and Niederman, 1996) and computational (Frese et al., 2008; Chandler et al., 2009; Hsin et al., 2009, 2010a) studies that established the role of LH2 and RC-LH1-PufX domains in determining membrane shape. Induced curvature profiles are known to exert a segregating force between different types of proteins in the membrane (Frese et al., 2008). Mass spectrometry showed that the RC:cyt$b\u2062c_{1}$ stoichiometry is 3:1 (Cartron et al., 2014), consistent with earlier observations (Crofts, 2004; Crofts et al., 2006), corresponding to approximately 4 cyt$b\u2062c_{1}$ dimeric complexes per vesicle.\n\nChromatophore vesicles typically contain 1\u20132 ATP synthases (Feniouk et al., 2002; Cartron et al., 2014). Proteomics studies suggest preferential co-location of ATP synthase with LH2 subunits (Woronowicz and Niederman, 2010). Consequently, ATP synthase locations were assigned to LH2-rich regions of the membrane (Cartron et al., 2014).\n\nThe low-light adapted vesicle studied here contains 63 LH2 complexes, 11 dimeric and 2 monomeric RC-LH1-PufX complexes, 4 dimeric cyt$b\u2062c_{1}$ complexes, and 2 ATP synthases, in a spherical vesicle of 50 nm inner diameter based on a variation of the model reported in (Cartron et al., 2014) and shown in Figure 1 (see also Video 1).\n\nTransmembrane proteins beyond those of the light harvesting-cytb\u2062c1-ATP synthase model shown in Figure 4, namely NADH dehydrogenase, succinate dehydrogenase, cytochrome c oxidase, and ubiquinol oxidase, are associated with controlling the redox state of the quinone/quinol pool in the chromatophore (Klamt et al., 2008). These proteins, presented schematically in Figure 5, indirectly couple the chromatophore proton gradient to metabolic reactions in the cytoplasmic part of the bacterial cell. Indeed, the chromatophore structure shown in Figure 1 may accommodate, by removal of LH2 complexes near cytb\u2062c1 complexes (the latter referred to as complex III in the respirasome of mitochondria [Dudkina et al., 2011]), the placement of adjacent NADH dehydrogenase complexes (referred to as complex I) in an arrangement similar to that in respirasomes as reported in (Dudkina et al., 2011). First simulations, employing the complex I structure reported in (Baradaran et al., 2013), have demonstrated that the chromatophore can adapt to the necessary local shape change.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09541/elife-09541-fig5-v1.jpg)\n\n**Figure 5.:** Regulation of the quinone/quinol-pool redox state in the chromatophore involves transmembrane proteins beyond those included in the light harvesting-RC-cyt$b\u2062c_{1}$-ATP synthase system described in (Cartron et al., 2014) and shown in Figure 4.Succinate dehydrogenase and NADH dehydrogenase regulate the quinone/quinol redox state in the chromatophore membrane. This regulation influences the light intensity dependence of the ATP production rate in the chromatophore by changing the likelihood of finding available quinones at the RC. Two further proteins involved in redox kinetics are cytochrome $c$ oxidase and ubiquinol oxidase, which are not shown.\n\n### Description of energy conversion in the chromatophore\n\nThe overall aim of the present study is to determine the ATP synthesis rate as a function of chromatophore vesicle illumination and composition establishing, thereby, the energy conversion efficiency. The three stages of energy conversion in the chromatophore introduced above are summarized in Figure 4. These stages span time scales ranging from femto- and picoseconds (transfer of excitations) to milliseconds (diffusion of quinols, quinones, and cytochrome c2; ATP synthesis), involving both classical and quantum dynamics.\n\nThe absorbed light power $I$ is given in units of photons absorbed per second for the entire vesicle, i.e., it holds approximately, $I=F\u2062\\sigma_{t\u2062o\u2062t\u2062a\u2062l}$ where $F$ is the flux of useable photons and $\\sigma_{t\u2062o\u2062t\u2062a\u2062l}$ is the total absorption cross-section of the chromatophore determined via the functional absorption cross-section reported in (Woronowicz et al., 2011a).\n\nKey quantities describing energy conversion are the quinone-to-quinol formation rate $k_{Q\u2192QH_{2}}\u2062(I)$, the quinol-to-quinone use rate $k_{QH_{2}\u2192Q}\u2062(I)$ and the ATP synthesis rate, $k_{ATP}\u2062(I)$, all functions of the absorbed light power $I$. For stationary illumination, assumed here, the chromatophore kinetics becomes stationary and, as a result, the rates $k_{Q\u2192QH_{2}}\u2062(I)$, $k_{QH_{2}\u2192Q}\u2062(I)$, and $k_{ATP}\u2062(I)$ must be identical,\n\n$$\nk_{Q\u2192QH_{2}}(I)=k_{QH_{2}\u2192Q}(I)=k_{ATP}(I).\n$$\n\nWe note here that every net quinol$\u2192$quinone conversion event at cyt$b\u2062c_{1}$, due to the so-called Q-cycle (Crofts, 2004), results in the release of four protons into the vesicle interior (two at cyt$b\u2062c_{1}$ and two at RC, for each quinol passage), which coincidentally happens to be, in the present system, the same number of protons as the ones that have to move back over the membrane to produce one ATP molecule at ATP synthase (based on the assuption of a 12-subunit c-ring of the ATP synthase). Under steady state conditions, the rate, $k_{ATP}$($I$), is then equal to $k_{QH_{2}\u2192Q}\u2062(I)$ and $k_{Q\u2192QH_{2}}\u2062(I)$.\n\nThe quinone/quinol pool in the lipid phase of the vesicle and the proton gradient across the vesicle membrane act as temporary energy buffers between light harvesting and ATP synthesis (Feniouk and Junge, 2009; Clark et al., 1983). Under the steady-state conditions assumed here, quinone-quinol pool and redox states of RC/cyt$b\u2062c_{1}$ are assumed to feature spatially homogeneous distributions. As a result, individual diffusive processes of quinone/quinol, cytochrome $c_{2}$, and protons do not need to be modeled, and the aforementioned energy buffers are determined solely by incident light intensity and quinol$\u2192$quinone turnover capacity of cyt$b\u2062c_{1}$, the latter constituting the rate limiting conversion process as discussed below. Typical proton diffusion timescales are on the order of microseconds (Agmon, 1995), i.e., not rate limiting compared to turnover at cyt$b\u2062c_{1}$ and, therefore, do not affect significantly overall conversion rates.\n\nIn going beyond steady-state conditions, a simulation of quinone mobility in a lamellar chromatophore membrane has recently been achieved for a 20 million atom, 150 ns simulation (Chandler et al., 2014); however, the time scale covered is not long enough to observe long-range positional relaxation of the quinone/quinol pool. This non-stationary behavior needs to be addressed by a coarser description like the ones employed for cell-scale modeling (Roberts et al., 2013).\n\nIn purple bacteria there are proton gradient consumption channels other than ATP synthesis. These channels include: flagellar motility (Kojadinovic et al., 2013); NADH/NADPH synthesis (Klamt et al., 2008; Blankenship, 2014) involving respiratory protein complexes in the chromatophore vesicle; leakage across the membrane. These channels are not included in the chromatophore kinetics described below, though the influence of NADH dehydrogenase is implicitly accounted\u00a0for as explained below.\n\n### Stage I: Light absorption, excitation energy transfer, and quinol formation\n\nThe first stage of energy conversion in the chromatophore begins with light absorption by carotenoid and BChl pigments in the light harvesting complexes LH1 and LH2 leading to electronic excitation of individual pigments. Carotenoids transfer excitation within less than a picosecond to a nearby BChl (Damjanovi\u0107 et al., 1999; Berera et al., 2009) and also play a role in quenching triplet states of BChls through reverse excitation transfer (Ritz et al., 2000a). The electronic excitations of BChls embedded in LH1 and LH2 are reviewed in (Hu et al., 1998, 2002; Cogdell et al., 2006; van Grondelle and Novoderezhkin, 2006b; Kosztin and Schulten, 2014). These excitations form so-called exciton states, excitations shared among LH1 or LH2 BChls (Ma et al., 1997; Bradforth et al., 1995) coherently (Str\u00fcmpfer et al., 2012; Ishizaki and Fleming, 2009b; Rebentrost et al., 2009). Electronic excitation is transferred efficiently in the form of excitons between light harvesting complexes (Hu et al., 1997; Ritz et al., 1998; Janusonis et al., 2008; Ishizaki and Fleming, 2009b).\n\nExciton-based excitation transfer in the chromatophore proceeds within 10\u2013100 ps (Sener et al., 2011), first among the LH2s, then from LH2 to LH1, and finally from LH1 to the four BChls of the RC (Visscher et al., 1989; Beekman et al., 1994; Str\u00fcmpfer and Schulten, 2012a; Sener et al., 2009). In the RC, the excitation quickly settles onto the so-called special pair BChls (Small, 1995; Damjanovi\u0107 et al., 2000), where it induces the transfer of an electron (Pawlowicz et al., 2008; Jordanides et al., 2004). This transfer proceeds stepwise to reach a quinone molecule, $Q$, attracted into the RC from the quinone/quinol pool of about 900 molecules (Cartron et al., 2014). The quinol and quinone molecules of the pool are inter-converted at RC and cyt$b\u2062c_{1}$\u00a0(Crofts, 2004) (see Figure 4). The electron transferred in the RC is joined on the quinone by a proton, turning $Q$ into semi-quinone, $Q\u2062H$. Repeating the reaction turns $Q\u2062H$ into quinol, $Q\u2062H_{2}$. In converting $Q$ to $Q\u2062H_{2}$ two electron charges move from near the inside of the chromatophore (where the special pair BChls are located and the electron potential is low) to near the cytoplasmic exterior of the chromatophore (where the quinone is bound and the electron potential is high), i.e., to the cytoplasmic side; the protons are attracted from the exterior of the chromatophore vesicle. Freshly formed quinol is released by the RC into the lipid phase of the chromatophore rejoining the quinone/quinol pool.\n\nThe efficiency of the 10\u2013100 ps light harvesting step is measured by the so-called quantum yield, $q$, namely the probability that light absorption leads to electron transfer in a RC with a $Q$ or $Q\u2062H$ bound to receive the electron. The quantum yield can be calculated as reported in (Sener et al., 2011, 2010). Electronic excitation energy absorbed directly or indirectly (through carotenoids) by a BChl is rapidly shared between BChls within individual LH1 and LH2 light harvesting complexes (Cory et al., 1998), forming, within about a ps, thermally equilibrated exciton states as established experimentally (Visser et al., 1996; Jimenez et al., 1997; Valkunas et al., 2007) as well as computationally (Str\u00fcmpfer and Schulten, 2009; Str\u00fcmpfer et al., 2012).\n\nThe exciton states of the BChls of each complex are determined as eigenstates of the effective Hamiltonian $H^{I}$, accounting for the $Q_{y}$ excitations and their coupling inside LH1, LH2 and RC as described in (Str\u00fcmpfer et al., 2012),\n\n$$\nH^{I}=\\sumi=1N_{I}E_{i}^{I}\u2223i\u27e9\u27e8i\u2223+\\sumi>j>0N_{1}V_{ij}^{I}(\u2223i\u27e9\u27e8j\u2223+\u2223j\u27e9\u27e8i\u2223).\n$$\n\nHere, the index $I$ is employed to label one of the pigment-protein complexes, namely one of 63 LH2s, 24 LH1s, and 24 RC complexes for the vesicle shown in Figure 1, with $N_{I}$ BChls; $|i\u27e9$ corresponds to the $Q_{y}$ excitation of BChl $i$ with excited state energy $E_{i}^{I};V_{ij}^{I}$ accounts for the respective $Q_{y}$-$Q_{y}$ coupling among BChls $i$ and $j$. Tables S2 and S3 in Supplementary Materials list the BChl coordinates as well as the constants employed in this study and discuss the computation of the quantum yield in greater detail.\n\nThe coupling $V_{i\u2062j}^{I}$ in Equation (2) can be computed for well separated pigments ($r_{i\u2062j}>1$ nm) using the point-dipole approximation (Ritz et al., 2001; Sener et al., 2011), employing,\n\n$$\nV_{i\u2062j}=C\u2062(\\frac{\ud835\udc1d^_{i}\u22c5\ud835\udc1d^_{j}}{r_{i\u2062j}^{3}}-3\u2062\\frac{(\ud835\udc1d^_{i}\u22c5\ud835\udc2b_{i\u2062j})\u2062(\ud835\udc1d^_{j}\u22c5\ud835\udc2b_{i\u2062j})}{r_{i\u2062j}^{5}}),\n$$\n\nwhere $\ud835\udc1d^_{i}$ is the transition dipole moment unit vector of pigment $i$, $\ud835\udc2b_{i\u2062j}$ is the vector joining pigments $i$ and $j$; the coupling constant $C$ has the value $C=348,000\u2062\u00c5^{3}$ cm$^{-1}$ (using wavenumbers as unit of energy) (\u015eener et al., 2007, 2010). Couplings between closely spaced pigments ($r_{i\u2062j}<1$ nm) require quantum chemical calculations as described in (Damjanovi\u0107 et al., 1999; Tretiak et al., 2000).\n\nThe exciton states $|\\alpha)=\\sum_{i}c_{i\u2062\\alpha}|i\u27e9$ and the associated energies $\u03f5_{\\alpha}$ correspond to the eigenstates defined through $H^{\u2110}|\\alpha)=\u03f5_{\\alpha}|\\alpha)$. As electronic excitations settle within about 1 ps into the Boltzmann-populated excitons (Str\u00fcmpfer et al., 2012; Str\u00fcmpfer and Schulten, 2009), excitation transfer among LH2 and LH1 involves the excitons, not individual chlorophyll or carotenoid excitations. The rate of excitation transfer between a donor complex $I$ and an acceptor complex $J$ is given by (Ritz et al., 2001; \u015eener et al., 2007, 2011)\n\n$$\nk_{IJ}=\\frac{2\\pi}{\u210f}\\sum\\mu\\inI\\sum\u03bd\\inJp_{\\mu}^{I}|(\\mu|H_{IJ}|\u03bd)|^{2}J_{\\mu\u03bd},\n$$\n\nwhere $H_{I\u2062J}$ is the matrix of interactions between the excited states of pigments in complexes $I$ and $J$, and\n\n$$\nJ_{\\mu\u2062\u03bd}=\\intd\u2062E\u2062S_{\\mu}^{D}\u2062(E)\u2062S_{\u03bd}^{A}\u2062(E),\n$$\n\nis the spectral overlap between donor exciton state $|\\mu)$ and acceptor exciton state $|\u03bd)$ in units of (1/energy) (Sener et al., 2011); $S_{\\mu}^{I}\u2062(E)$ and $S_{\u03bd}^{J}\u2062(E)$ are the normalized ($\\intd\u2062E\u2062S\u2062(E)=\u20091$) spectra for emission of the donor ($D$) and absorption of the acceptor ($A$), respectively; $p_{\\mu}^{I}$ in Equation (S6) are the populations of donor exciton states, which, as stated, become very rapidly (~1 ps) (Str\u00fcmpfer and Schulten, 2009) Boltzmann-distributed such that $p_{\\mu}^{I}$ are given by\n\n$$\np_{\\mu}^{I}=\\frac{e^{-\\beta\u2062\u03f5_{\\mu}}}{\\sum_{\\gamma\\inI}e^{-\\beta\u2062\u03f5_{\\gamma}}}.\n$$\n\nThe above description is known as the generalized F\u00f6rster theory (F\u00f6rster, 1948; Novoderezhkin and Razjivin, 1996; Hu et al., 1997; Sumi, 1999; Scholes et al., 2001). For reviews see (van Grondelle and Novoderezhkin, 2006a; Sener et al., 2011; Str\u00fcmpfer et al., 2012). Excitation transfer kinetics in the chromatophore was reported experimentally in (Woodbury and Parson, 1984; Visscher et al., 1989; Crielaard et al., 1994; Hess et al., 1994, 1995).\n\nExciton migration across the network of light harvesting complexes in the chromatophore can be described by a rate matrix $\ud835\udca6$ which is constructed from inter-complex exciton transfer rates $k_{I\u2062J}$, the latter given by Equation (S6), as follows (Sener et al., 2010, 2007)\n\n$$\n(\ud835\udca6)_{I\u2062J}=k_{J\u2062I}-\\delta_{I\u2062J}\u2062(\\sumMk_{I\u2062M}+k_{diss}+k_{CS}\u2062\\delta_{I,RC}),\n$$\n\nwhere $I,J$ are defined as in Equation (S6); $k_{diss}=1/$ns is the rate of excitation loss due to internal conversion; $k_{CS}=1/(3ps)$ is the rate of charge separation at the RC (Ritz et al., 2001); $\\delta_{I,RC}$ assumes the value 1 if complex $I$ is a RC and the value 0 otherwise.\n\nThe quantum yield, $q$, is the probability for an absorbed photon to initiate charge transfer at a RC ready for electron transfer; $q$ is given for an initial state vector $\ud835\udc0f\u2062(0)$ by (Sener et al., 2011, 2007; Ritz et al., 2001)\n\n$$\nq=-k_{CS}\u2062(\ud835\udfcf_{\ud835\udc11\ud835\udc02})^{T}\u22c5\ud835\udca6^{-1}\u22c5\ud835\udc0f\u2062(0)\n$$\n\nwhere the components of the vector $(\ud835\udfcf_{\ud835\udc11\ud835\udc02})$ are $(\ud835\udfcf_{\ud835\udc11\ud835\udc02})_{I}=\\delta_{I,RC}$; the initial state, $\ud835\udc0f\u2062(0)$, corresponds to every BChl in the system being equally likely to be excited by photon absorption and accordingly is given by\n\n$$\n(\ud835\udc0f\u2062(0))_{I}=N_{I}/(\\sumJN_{J}),\n$$\n\nwhere $N_{I}$ is the number of BChls in complex $I$ as indicated above. The effect of the initial state, $\ud835\udc0f\u2062(0)$, on the quantum yield, $q$, arising, for example, due to wavelength-dependent absorption, is considered in (\u015eener et al., 2007), with the result that $q$ is altered by less than 3%. Therefore, wavelength dependence of $q$, through corresponding changes in $\ud835\udc0f\u2062(0)$, is not considered further in the present study. The quantum yield given by Equation (8) for the vesicle shown in Figure 1 is 0.91.\n\nFor alternate vesicle compositions considered in Figure 3, the quantum yield $q$ is not computed by an explicit construction of vesicles to avoid massive computation; instead, $q$ is approximated as a linear interpolation between the values reported earlier for high LH2:RC and low LH2:RC chromatophore vesicles (\u015eener et al., 2007, 2010, 2011), namely between $q=0.85$ and $q=0.95$. For a vesicle containing $n_{B}$ cyt$b\u2062c_{1}$ dimers and $n_{L}$ LH1-RC dimers, the corresponding number of LH2 complexes $n_{LH2}\u2062(n_{B},n_{L})$ is estimated by the excluded surface resulting from changes in $n_{B}$ and $n_{L}$ with respect to the reference vesicle in Figure 1. The corresponding quantum yield is estimated according to\n\n$$\nq=0.91+0.0152\u2062(s_{0}-s)\n$$\n\nchosen to reproduce the correct value of $q$ for the reference vesicle (Figure 1) as well as for the low LH2 limit (Sener et al., 2011); here $s=n_{LH2}/(2\u2062n_{L})$ is the LH2:RC stoichiometry, which for the reference vesicle equals $s_{0}=2.625$; a lower limit of $q=0.85$ is imposed to account for high LH2:RC vesicles (\u015eener et al., 2007), where the linear interpolation breaks down.\n\nValidity of the generalized F\u00f6rster formulation, thus outlined, has been demonstrated by excitation transfer calculations employing the so-called hierarchy equation of motion formalism of stochastic quantum mechanics (Ishizaki and Fleming, 2009b; Str\u00fcmpfer and Schulten, 2012b); the calculations show that photoexcitation of chromatophore BChls relaxes into a Boltzmann occupancy of exciton states within approximately 1 ps, i.e., faster than inter-complex transfer that takes 3\u20135 ps (Hess et al., 1995; Str\u00fcmpfer and Schulten, 2012b). Accordingly, the assumption underlying generalized F\u00f6rster theory, namely that transfer occurs from a thermally relaxed distribution of exciton states, holds in good approximation.\n\nThe final step in stage I of energy conversion is the formation of quinol from quinone at the RC. The respective formation rate can be expressed\n\n$$\nk_{Q\u2192QH_{2}}\u2062(I)=\\frac{1}{2}\u2062I\u2062q\u2062p_{RC}\u2062(I),\n$$\n\nwhere the prefactor $\\frac{1}{2}$ accounts for every quinol requiring two electron transfer events at the RC. Here $q$ is the quantum yield given by Equation (8) and $p_{RC}\u2062(I)$ is the probability for the RC to hold a quinone Q or a semiquinone QH, in either case the RC being ready to accept and convert an electronic excitation. The probability $p_{RC}\u2062(I)$ decreases with increasing $I$, since the quinone/quinol pool becomes quinol rich/quinone poor at increasing light intensities, due in part to coupling (Figure 5) to chromatophore redox factors, succinate dehydrogenase, NADPH dehydrogenase, and cytochrome $c$ oxidase (Klamt et al., 2008). As the quinone/quinol ratio decreases, it becomes less likely for RC to have a quinone/semiquinone available for electron transfer. The stated change in the quinone/quinol pool is crucial for energy conversion control of the chromatophore and comes about through the proton motive force, generated through light harvesting, inducing in the redox factors redox generation of products along with quinone/quinol conversion. The light-condition dependency of the quinone/quinol pool is described in the present model heuristically as explained below in Equation (15\u201319).\n\nUnder the assumed steady state conditions, the rate $k_{Q\u2192QH_{2}}\u2062(I)$, i.e., the rate at which RCs release QH$_{2}$ as given by Equation (11), is equal to the rate at which RCs bind fresh quinones. Accordingly holds\n\n$$\n\\frac{1}{2}Iqp_{RC}(I)=[n_{RC}(1\u2212p_{RC}(I))]/\\tau_{RC}(I),\n$$\n\nwhere $n_{RC}=2\u2062n_{L}$ is the number of RCs in the chromatophore (24 for the vesicle shown in Figure 1), $1-p_{RC}\u2062(I)$ is the fraction of RCs ready to bind a fresh Q, $\\tau_{RC}\u2062(I)$ is the mean time needed for a RC to become available for binding a new Q after it had just accepted a Q (Remy and Gerwert, 2003). Below, we refer to $\\tau_{RC}\u2062(I)$ as the cycling time.\n\nThe probability $p_{RC}\u2062(I)$ is assumed, for convenience, to be uniform across all RCs rather than to vary between RCs due to inhomogeneities in the redox state of the quinone/quinol pool. This assumption is strictly valid only when the mixing time of quinols and quinones in the vesicle lipid phase is shorter than the time scales associated with the rates in Equation (1). The spatial inhomogeneity of $p_{RC}\u2062(I)$ can be determined only through the simulation of the diffusive processes in the chromatophore, which is currently prohibitive.\n\nIt had been suggested in (Geyer and Helms, 2006) that the primary rate-limiting step in the chromatophore is quinol turnover at cyt$b\u2062c_{1}$ rather than cytochrome $c_{2}$ diffusion; in (Geyer and Helms, 2006) it had been estimated that each cytochrome $c_{2}$ is capable of approximately 80 electron transfers per second and that three cytochrome $c_{2}$\u2019s per vesicle are sufficient to saturate the turnover capacity of an ATP synthase. A chromatophore vesicle is expected to feature 10\u201320 cytochrome $c_{2}$ molecules (Geyer and Helms, 2006; Cartron et al., 2014), safely exceeding the necessary number needed for saturation. Therefore, cytochrome $c_{2}$ kinetics should not be rate limiting for energy conversion in the chromatophore.\n\nUsing Equation (12), $p_{RC}\u2062(I)$ can be expressed in terms of $\\tau_{RC}\u2062(I)$, namely,\n\n$$\np_{RC}\u2062(I)=(1+\\frac{1}{2}\u2062I\u2062q\u2062\\tau_{RC}\u2062(I)\u2062\\frac{1}{n_{RC}})^{-1}.\n$$\n\nAccording to Equations (11) and (13), $\\tau_{RC}\u2062(I)$ needs to be determined in order to compute the rate $k_{Q\u2192QH_{2}}\u2062(I)$ or, equivalently, $k_{ATP}\u2062(I)$.\n\n### Stage II: Diffusion of charge carriers and estimate of cycling time \u03c4RC\u2062(I)\n\nThe cycling time, $\\tau_{RC}\u2062(I)$, arising in Equations (12,13), depends on light intensity. The cycling time is related to the quinone/quinol stoichiometry, i.e., the redox state of the quinone/quinol pool: the fewer quinones are present, the longer is the cycling time. The redox state is affected by not only RC and cyt$b\u2062c_{1}$ reactions, but also by transmembrane enzymes succinate dehydrogenase and NADH dehydrogenase (Figure 5). The low-light and high-light limits for the cycling time, $\\tau_{RC}$, employed below are based on experimental observation (Woronowicz et al., 2011b, 2011a; Crofts, 2004) instead of direct computation; the reported values of $\\tau_{RC}$ implicitly combine the redox reactions of all enzymes interacting with the quinone/quinol pool, including NADH dehydrogenase.\n\nIn a stationary state, the rate $k_{ATP}\u2062(I)$ of ATP synthesis is equal to the rate $k_{Q\u2192QH_{2}}\u2062(I)$ as stated in Equation (1), which according to Equations (11) and (13) can be expressed through the cycling time, $\\tau_{RC}\u2062(I)$. The condition of equilibrium assumed here might not be valid for rapidly fluctuating light intensities, where spatial inhomogeneities of the vesicle and the quinone/quinol pool are expected to play a nontrivial role on the cycling time.\n\nThe low-light limit, $\\tau_{L}$, of the cycling time, $\\tau_{RC}\u2062(I)$, is observed to range from 0.7 ms for the membrane of an LH2-minus mutant to about 3 ms for the LH2-rich chromatophores adapted to low-light growth conditions (Woronowicz et al., 2011b, 2011a). In the following, we assume $\\tau_{L}=3ms$ for the low-light growth vesicle shown in Figure 1.\n\nAt the high-light limit, the immediate vicinity of a RC contains mostly quinols and the replacement of the converted quinones at the RC becomes rate limited by the turnover at cyt$b\u2062c_{1}$(Woronowicz et al., 2011b, 2011a). The high-light limit, $\\tau_{H}$, of the cycling time, $\\tau_{R\u2062C}\u2062(I)$, can be estimated by considering the total turn-over rate at all RCs, namely $n_{RC}\u2062\\tau_{H}^{-1}$. In the stationary high $I$ regime, this rate must be equal to the quinol turnover rate at all cyt$b\u2062c_{1}$, namely $n_{B}\u2062\\tau_{B}^{-1}$, i.e., it holds\n\n$$\nn_{B}\u2062\\tau_{B}^{-1}=n_{RC}\u2062\\tau_{H}^{-1},\n$$\n\nwhere $n_{B}$ is the number of cyt$b\u2062c_{1}$ dimers (4 for the vesicle shown in Figure 1) and $\\tau_{B}=25$ ms is the quinol turnover time at a cyt$b\u2062c_{1}$\u00a0(Crofts, 2004).\n\n#### Rate limitation of energy conversion by cytb\u2062c1\n\nThe estimate of the cycling time, $\\tau_{R\u2062C}\u2062(I)$, given below is based on the observation that energy conversion in the chromatophore is rate limited by quinol turnover at cyt$b\u2062c_{1}$\u00a0(Lavergne et al., 2009; Geyer et al., 2010). This rate limitation follows directly from a comparison of turnover capacities, i.e., maximal turnover rates, at each key protein. The turnover rates of proteins are, in general, a function of the chromatophore conditions such as light intensity and redox states. The rate limiting components of the chromatophore can be identified by comparing the maximal values of the turnover rates, i.e., the turnover capacities, at each key protein, namely the quinol turnover capacity at cyt$b\u2062c_{1}$, the quinol generation capacity at RC and the proton utilization capacity at ATP synthase.\n\nAs an illustration of the cyt$b\u2062c_{1}$-limited kinetics, we first compare quinol turnover capacities at the cyt$b\u2062c_{1}$ and the RC. At a light intensity equivalent to 5% of full sunlight, i.e., 50 W/m2, a chromatophore vesicle absorbs $I$=1860 photons/s (estimated from the functional absortion cross-section of a chromatophore given in [Woronowicz et al., 2011a]), corresponding to a quinol turnover capacity at the RCs of $\\frac{1}{2}\u2062I\u2062q=$846\u2009s$^{-1}$. In contrast, the quinol turnover capacity at all cyt$b\u2062c_{1}$s, given by Equation (14), is equal to $n_{B}\\tau_{B}^{\u22121}=160s^{\u22121}$. Hence, already at 5% of full sunlight the quinol production capacity at the RCs exceeds the total quinol turnover capacity at cyt$b\u2062c_{1}$ by more than five-fold. Consequently, under steady-state conditions the quinol production at the RCs at this illumination becomes limited by quinol turnover at cyt$b\u2062c_{1}$. The onset of saturation of the energy conversion rate arising from rate limititation due to cyt$b\u2062c_{1}$ at low light intensities is evident in Figure 2A.\n\nNext, we compare the proton turnover capacities at the cyt$b\u2062c_{1}$ and the ATP synthase. The maximal proton turnover capacity at cyt$b\u2062c_{1}$ for the vesicle shown in Figure 1 is $4\\timesn_{B}\u2062\\tau_{B}^{-1}=640$ s$^{-1}$. In comparison, total proton utilization capacity of ATP synthases is $4\\times2\\times270=2160$ s$^{-1}$, estimated based on the reported ATP synthase turnover capacity of 270 ATP molecules/s (Etzold et al., 1997) with four protons utilized per ATP and 2 ATP synthases present in the vesicle shown in Figure 1. Thus, the proton utilization capacity at ATP synthases exceeds the proton turnover capacity at cyt$b\u2062c_{1}$s by more than threefold. In summary, of the three potential kinetic bottlenecks in the chromatophore, cyt$b\u2062c_{1}$, RC, and ATP synthase, the lowest total turnover capacity is displayed by cyt$b\u2062c_{1}$.\n\n#### Light intensity dependence of the cycling time at RC\n\nThe $I$-dependence of the cycling time, $\\tau_{R\u2062C}\u2062(I)$, needed to evaluate Equation (13), is approximated in terms of the relative populations of a two state system, the two states corresponding to the low-light and high-light limits\n\n$$\n\\tau_{R\u2062C}\u2062(I)=c_{L}\u2062(I)\u2062\\tau_{L}+c_{H}\u2062(I)\u2062\\tau_{H},\n$$\n\nwhere $c_{L}\u2062(I)$ and $c_{H}\u2062(I)$ are the probabilities that quinol turnover follows the low-light (limited to RC vicinity) or high-light (cyt$b\u2062c_{1}$-limited) kinetics, respectively; it holds\n\n$$\nc_{L}\u2062(I)+c_{H}\u2062(I)=1.\n$$\n\nThe high-light limit of the cycling time, $\\tau_{H}$, can be expressed using Equation (14),\n\n$$\n\\tau_{H}=\\frac{n_{RC}}{n_{B}}\u2062\\tau_{B}.\n$$\n\nSince low-light and high-light limits are actually the extremes of a gradual behavior, the assumption of a two-state system appears rather drastic. However, at low light levels $\\tau_{L}$ is diffusion controlled and amounts to the first passage time of the quinone to the RC, while $\\tau_{H}$ is determined by cyt$b\u2062c_{1}$ turnover, not diffusion. As a result one expects a distinct transition between $\\tau_{L}$ and $\\tau_{H}$ at some light intensity $I$ corresponding to the saturation of the rate-limiting process in the chromatophore. From Equation (15,16) follows\n\n$$\n\\tau_{R\u2062C}\u2062(I)=\\tau_{L}+(\\tau_{H}-\\tau_{L})\u2062(1-c_{L}\u2062(I)).\n$$\n\nThe description of the cycling time according to Equation (18) is heuristic only. Future studies need to account for the time-dependent spatial inhomegeneity of the quinone/quinol pool by explicitly modeling the diffusion processes and redox states in the chromatophore.\n\nThe population of photosynthetic states with respect to light intensity is typically governed by a Poisson distribution in terms of the utilization rate of excitations (Mauzerall, 1986; Peterson et al., 1987). In order to express the relative population of the low-light state, $c_{L}\u2062(I)$, we observe that charge separated states are created at the RCs with the rate $I\u2062q$ and that the characteristic time for electron turnover at all cyt$b\u2062c_{1}$s is given by $1/(2\\timesn_{B}\u2062\\tau_{B}^{-1})$. The probability that no charge separation events occur during this time, i.e., the probability that the system remains in the low-light state, is given by the zero-event Poisson distribution, employed typically in describing the light intensity-dependence of photoproduct yield (Mauzerall, 1986; Peterson et al., 1987). According to this description holds, $c_{L}\u2062(I)=exp\u2061(-\\frac{1}{2}\u2062I\u2062q/B)$, where $B=2\\timesn_{B}\u2062\\tau_{B}^{-1}$ is the total turnover capacity of cyt$b\u2062c_{1}$s, which along with Equation (18) permits an estimate of the cycling time $\\tau_{R\u2062C}\u2062(I)$, namely,\n\n$$\n\\tau_{R\u2062C}\u2062(I)=\\tau_{L}+(\\tau_{H}-\\tau_{L})\u2062(1-e^{\\frac{1}{2}\u2062I\u2062q\u2062B^{-1}}).\n$$\n\nEquation (19), when substituted into Equations (11) and (13), permits an estimate of the quinol turnover rate $k_{Q\u2192QH_{2}}\u2062(I)$, employed below for the computation of the ATP synthesis rate.\n\n### Stage III: ATP synthesis\n\nAs the last step of energy conversion, the proton gradient, generated at cyt$b\u2062c_{1}$ through quinol $\u2192$ quinone conversion, is utilized by ATP synthase for the production of ATP. The ATP turnover rate of the vesicle, $k_{ATP}\u2062(I)$, under stationary conditions is equal to $k_{Q\u2192QH_{2}}\u2062(I)$ given by Equation (11). This equality is based on the assumption that ATP synthase of Rba. sphaeroides has an Fo of 12 c-subunits such that four H$^{+}$ conducted through the Fo-ring of ATP synthase lead to a 120\u00b0 rotation of the stalk in the F$_{1}$ part and, thereby, to synthesis of one ATP. Currently, the structure of the ATP synthase of Rba. sphaeroides and the corresponding number of c-subunits is not known experimentally. If the F$_{o}$ oligomer were to feature, e.g., 11 or 10 subunits instead, this structural detail would proportionally affect the number of protons required for the rotation of the stalk and subsequent synthesis of each ATP and, therefore, directly influence the estimated energy conversion efficiency of the chromatophore, by 11% or 20%, respectively.\n\nCombining Equation (1),(11),(13), the ATP turnover rate can be expressed\n\n$$\nk_{ATP}\u2062(I)=\\frac{1}{2}\u2062I\u2062q\u2062(1+\\frac{1}{2}\u2062I\u2062q\u2062\\tau_{RC}\u2062(I)\u2062\\frac{1}{n_{RC}})^{-1},\n$$\n\nwhere the cycling time at the RC, $\\tau_{RC}\u2062(I)$, is given by Equation (19).\n\nThe overall energy conversion efficiency of the chromatophore, $\u03b7_{ATP}\u2062(I)$, can be defined as the ratio of formation rate of energy in the form of ADP$\u2192$ATP synthesis to the total absorption rate of photon energy\n\n$$\n\u03b7_{ATP}\u2062(I)=\\frac{E_{ATP}\u2062k_{ATP}\u2062(I)}{E_{\\gamma}\u2062I},\n$$\n\nwhere $E_{ATP}=4197\u2062cm^{-1}$ is the ATP hydrolysis energy in the cell (Berg et al., 2011) and $E_{\\gamma}$ is the average energy of an absorbed photon, taken to be the photon energy at 850 nm (11765 cm$^{-1}$). Not all the energy of an absorbed photon, $E_{\\gamma}$, is available for energy harvesting. The fraction of $E_{\\gamma}$ available for conversion into chemical energy is the so-called Carnot yield (Lavergne, 2009) described by comparing photochemical energy conversion to the function of a heat engine. This limitation in photochemical energy conversion establishes a theoretical upper limit for photosynthetic energy conversion at broad daylight of approximately 0.7 (Lavergne, 2009).\n\nThe determination of the energy conversion efficiency, $\u03b7_{ATP}\u2062(I)$, computed through Equation (21), has the shortcoming that the ATP hydrolysis energy, $E_{ATP}$, depends, in principle, on the ADP, ATP, and H$^{+}$ concentrations in the cytoplasm, which are not modeled explicitly. Nevertheless, Equation (21) permits a comparison with similar measures of efficiency reported for other photosynthetic or photovoltaic systems (Blankenship et al., 2011).\n\n### Supplementary material\n\n#### Computation of quantum yield and table of BChl properties\n\nIn the following, we describe the computation of the quantum yield, q, given by Equation (8), in section 2.2 of the main text. The quantum yield is central to the overall efficiency of the chromatophore as it accounts for the efficiency of the primary subsystem, the light harvesting apparatus. The constants employed in the computation of the quantum yield are listed below in Table 1. We adopt the same values as in similar computations reported by us in (Sener et al., 2010, 2007). For the sake of clarity, this section repeats some information in the main text, as indicated.\n\n**Table 1.**\n Constants employed in the computation of the quantum yield.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Value*</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u03f51LH2\u03f52LH2</td>\n      <td>12,459 cm\u22121 12,625 cm\u22121</td>\n      <td>BChl site energies for alternating LH2 B850 BChls, used in Equation (S2)</td>\n    </tr>\n    <tr>\n      <td>\u03f5LH1</td>\n      <td>12,344 cm\u22121</td>\n      <td>BChl site energies for LH1 B875 BChls, used in Equation (S2)</td>\n    </tr>\n    <tr>\n      <td>\u03f51RC\u03f52RC</td>\n      <td>12,092 cm\u22121 12,581 cm\u22121</td>\n      <td>BChl site energies for RC special pair and accessory BChls, used in Equation (S2)</td>\n    </tr>\n    <tr>\n      <td>V1LH2</td>\n      <td>363 cm\u22121</td>\n      <td>nearest neighbor BChl-BChl coupling for LH2 B850 BChls within the same \u03b1\u03b2 dimer, used for VijI values in Equation (S3)</td>\n    </tr>\n    <tr>\n      <td>V2LH2</td>\n      <td>320 cm\u22121</td>\n      <td>nearest neighbor BChl-BChl coupling for LH2 B850 BChls across neighboring \u03b1\u03b2 dimers, used for VijI values in Equation (S3)</td>\n    </tr>\n    <tr>\n      <td>V1LH1</td>\n      <td>806 cm\u22121</td>\n      <td>nearest neighbor BChl-BChl coupling for LH1 B875 BChls within the same \u03b1\u03b2 dimer, used for VijI values in Equation (S3)</td>\n    </tr>\n    <tr>\n      <td>V2LH1</td>\n      <td>377 cm\u22121</td>\n      <td>nearest neighbor BChl-BChl coupling for LH1 B875 BChls across neighboring \u03b1\u03b2 dimers, used for VijI values in Equation (S3)</td>\n    </tr>\n    <tr>\n      <td>VRC</td>\n      <td>500 cm\u22121</td>\n      <td>Coupling between RC special pair BChls, used in Equation (S3)</td>\n    </tr>\n    <tr>\n      <td>C</td>\n      <td>348,000\u2009\u00c53 cm\u22121</td>\n      <td>coupling constant for transition dipole interactions between non-nearest neighbor LH2\u00a0BChls, used in Equation (S4)</td>\n    </tr>\n    <tr>\n      <td>\u03c3LH1</td>\n      <td>235 cm\u22121</td>\n      <td>linewidth of LH1 exciton states, assumed uniform, used for \u03c3A in Equation (S8)</td>\n    </tr>\n    <tr>\n      <td>\u03c3L\u2062H\u20622</td>\n      <td>188 cm\u22121</td>\n      <td>linewidth of LH2 exciton states, assumed uniform, used for \u03c3A in Equation (S8)</td>\n    </tr>\n    <tr>\n      <td>kLH1,RC</td>\n      <td>(35 ps)\u22121</td>\n      <td>excitation transfer rate from LH1 B875 BChls to RC, used for corresponding kIJ values in in Equation (S10)</td>\n    </tr>\n    <tr>\n      <td>kRC,LH1</td>\n      <td>(8 ps)\u22121</td>\n      <td>excitation transfer rate from RC to LH1 B875 BChls, used for corresponding kIJ values in in Equation (S10)</td>\n    </tr>\n    <tr>\n      <td>kdiss</td>\n      <td>(1 ns)\u22121</td>\n      <td>excitation decay rate due to internal conversion, used in Equation (S10)</td>\n    </tr>\n    <tr>\n      <td>kCS</td>\n      <td>(3 ps)\u22121</td>\n      <td>charge separation rate at reaction center, used in Equation (S10)</td>\n    </tr>\n  </tbody>\n</table>\n\n_*: energy units given in wavenumbers (1 eV = 8066 cm\u22121)._\n\nIn order to describe the electronic excitation transfer in the chromatophore and determine the quantum yield, $q$, the matrix of transfer rates, $k_{IJ}$, between BChl clusters, $I,J$, needs to be constructed, which in turn depends on the effective Hamiltonian, $H_{I}$, for each BChl cluster, $I$. In the following, the indices, $I,J$, label the BChl clusters listed in the previous section: for the vesicle shown in Figure 1, based on\u00a0(Cartron et al., 2014), there are 63 LH2 B850 BChl clusters, 24 LH1 B875 BChl clusters, and 24 RC BChl clusters. As mentioned in the previous section, LH2 B800 BChls do not form excitonically coupled states, transferring excitation energy, after light absorption, immediately to LH2 B850 BChls.\n\nThe effective Hamiltonian $H^{I}$ of each BChl cluster $I$ is given, according to (Str\u00fcmpfer et al., 2012), by Equation (2) in the main text, namely\n\n$$\nH^{I}=\\sumi=1N_{I}E_{i}^{I}|i\u27e9\u27e8i|+\\sumi>j>0N_{I}V_{ij}^{I}(|i\u27e9\u27e8j|+|j\u27e9\u27e8i|),\n$$\n\nwhere $N_{I}$ is the number of BChls in cluster $I$. The site energies $E_{i}^{I}$ in Equation (S1) are\n\n$$\nE_{i}^{I}={\u03f5_{1,2}^{LH2},I:LH2B850,\u03f5^{LH1},I:LH1B875,\u03f5_{1,2}^{RC},I:RC,\n$$\n\nwith energy constants as listed in Table 1 for corresponding BChl groups, chosen to reproduce corresponding absorption peaks. The couplings $V_{i\u2062j}^{I}$ in Equation (S1) are determined through the point-dipole approximation as described below with the exception of nearest neighbor couplings of the LH2 B850 and LH1 B875 BChl clusters and the RC special pair coupling,\n\n$$\nV_{i}^{I}={V_{1,2}^{LH2},I:LH2B850,nearest\u00a0\u00a0neighbor,V_{1,2}^{LH1},I:LH1B875,nearest\u00a0\u00a0neighbor,V^{RC},I:RC,special\u00a0\u00a0pair,\n$$\n\nwhich are instead taken from (Damjanovi\u0107 et al., 2000; \u015eener and Schulten, 2002) following quantum chemistry computations reported in (Tretiak et al., 2000) and listed in Table 1.\n\nFor non-nearest neighbor BChls, the coupling $V_{i\u2062j}^{I}$ in Equation (S1) is computed according to the point-dipole approximation (Ritz et al., 2001; Sener et al., 2011) (Equation (3) in the main text)\n\n$$\nV_{i\u2062j}=C\u2062(\\frac{\ud835\udc1d^_{i}\u22c5\ud835\udc1d^_{j}}{r_{i\u2062j}^{3}}-3\u2062\\frac{(\ud835\udc1d^_{i}\u22c5\ud835\udc2b_{i\u2062j})\u2062(\ud835\udc1d^_{j}\u22c5\ud835\udc2b_{i\u2062j})}{r_{i\u2062j}^{5}}),\n$$\n\nwhere $\ud835\udc1d^_{i}$ is the transition dipole moment unit vector of pigment $i$, $\ud835\udc2b_{i\u2062j}$ is the vector joining pigments $i$ and $j$, in BChl cluster $I$; the coupling constant $C$\u00a0(\u015eener and Schulten, 2002) is listed in Table 1. The transition dipole moment unit vector $\ud835\udc1d^_{k}$ for BChl $k$ is determined from the coordinates listed in the previous section according to\n\n$$\n\ud835\udc1d^_{k}=\\frac{(\ud835\udc2b_{k}^{D}-\ud835\udc2b_{k}^{B})}{|\ud835\udc2b_{k}^{D}-\ud835\udc2b_{k}^{B}|},\n$$\n\nwhere $r_{k}^{B}$ and $r_{k}^{D}$ are the positions of atoms NB and ND of BChl $k$; the transition dipole moment is centered at the position, $r_{k}^{M}$, of the MG atom of BChl $k$, as labeled in the PDB files.\n\nBased on the effective Hamiltonians, Equation (S1), thus constructed, the rate of excitation transfer between a donor complex $I$ and an acceptor complex $J$, $k_{I\u2062J}$, can be calculated according to the so-called modified F\u00f6rster theory (Ritz et al., 2001; \u015eener et al., 2007, 2011) given by Equation (4) in the main text, namely through\n\n$$\nk_{IJ}=\\frac{2\\pi}{\u210f}\\sum\\mu\\inI\\sum\u03bd\\inJp_{\\mu}^{I}|(\\mu|H_{IJ}|\u03bd)|^{2}J_{\\mu\u03bd},\n$$\n\nwhere $(H_{I\u2062J})_{i\u2062j}$ is the matrix of interactions between the excited states of pigments $i$ and $j$ in complexes $I$ and $J$, computed according to Equation (S4) and $(\\mu\u2062|H_{I\u2062J}|\u2062\u03bd)$ are the couplings ($H_{I\u2062J}$)$_{i\u2062j}$ in the basis of the eigenstates $|\\mu)$ and $|\u03bd)$ of Hamiltonians $H_{I}$ and $H_{J}$, respectively; $p_{\\mu}^{I}=e^{-\\beta\u2062\u03f5_{\\mu}}/\\sum_{\\gamma\\inI}e^{-\\beta\u2062\u03f5_{\\gamma}}$ are Boltzman weights for the eigenstates $H_{I}|\\mu)=\u03f5_{\\mu}|\\mu)$, where $\u03f5_{\\mu}$ are the exciton energies defined as the eigenvalues of the Hamiltonian, $H_{I}$, given in Equation (S1). The overlap integrals $J_{\\mu\u2062\u03bd}$ are described according to Equation (5) in the main text)\n\n$$\nJ_{\\mu\u03bd}=\\intdES_{\\mu}^{D}(E)S_{\u03bd}^{A}(E).\n$$\n\n$J_{\\mu\u2062\u03bd}$ is the spectral overlap between donor exciton state $|\\mu)$ and acceptor exciton state $|\u03bd)$. The donor and acceptor lineshapes, $S_{\\mu}^{D}\u2062(E)$ and $S_{\u03bd}^{A}\u2062(E)$, used in the calculation of $J_{\\mu\u2062\u03bd}$, are approximated by normalized Gaussians\n\n$$\nS_{\\mu}^{A}(E)=\\frac{1}{\\sqrt{2\\pi}\\sigma_{A}}exp\u2061[\u2212(\\frac{E\u2212\u03f5_{\\mu}}{\\sigma_{A}})^{2}],\n$$\n\n\n\n$$\nS_{\\mu}^{D}(E)=S_{\\mu}^{A}(E\u2212S),\n$$\n\n$\\sigma_{A}$ is the linewidth of excitons assumed to be uniform across all states (Jimenez et al., 1997) and is given in Table 1 as $\\sigma^{L\u2062H\u20621}$ and $\\sigma^{L\u2062H\u20622}$; $S$\u00a0denotes the spectral shift between donor and acceptor spectra (Small, 1995; Damjanovi\u0107 et al., 2000).\n\nThe transfer rates, $k_{I\u2062J}$, in Equation (S6) are negligible for any non-neighboring BChl clusters, $I,J$, and are taken to be zero in those cases. The transfer rates between the B875 and the RC BChls of a LH1-RC complex needs to be determined only once, since the relative pigment geometry is identical within each LH1-RC complex. Accordingly, for the LH1$\u2192$RC and RC$\u2192$LH1 transfer rates, the values (35 ps)$^{-1}$ and (8 ps)\u00a0$^{-1}$ are assumed, respectively (Sener et al., 2010, 2009), in Table 1; the LH1$\u2192$RC value was chosen in (Sener et al., 2010) to match the observed excitation lifetime in the RC-LH1 complex of 50 ps; the value of the LH1$\u2192$RC transition rate, computed according to Equation (S6), was reported to result in an overestimate of the excitation lifetime (Sener et al., 2009). The remaining transfer rates, $k_{I\u2062J}$, namely between neighboring LH2 B850 and LH1 B875 BChl clusters are determined according to Equation (S6).\n\nExciton migration in the chromatophore is governed by the rate matrix for inter-complex exciton transfers, $\ud835\udca6_{I\u2062J}$\u00a0(Sener et al., 2010, 2007) Equation (7) in the main text)\n\n$$\n(\ud835\udca6)_{IJ}=k_{JI}\u2212\\delta_{IJ}(\\sumMk_{IM}+k_{diss}+k_{CS}\\delta_{I,RC}),\n$$\n\nwhere the dissipation rate $k_{diss}$ and the charge separation rate $k_{CS}$ are listed in Table 1. The quantum yield, $q$, is finally expressed in terms of $\ud835\udca6_{I\u2062J}$\u00a0(\u015eener et al., 2007, 2011) according to Equation (8) in the main text, namely through\n\n$$\nq=\u2212k_{CS}(1_{RC})^{T}\u22c5\ud835\udca6^{\u22121}\u22c5P(0),\n$$\n\nwhere $(\ud835\udc0f\u2062(0))_{I}=N_{I}/(\\sum_{J}N_{J})$, corresponds to a uniform probablity for initial excitation. The quantum yield is not strongly dependent on the choice of the initial state $(\ud835\udc0f\u2062(0))$\u00a0(\u015eener et al., 2007).\n\nThe quantum yield, $q$, is computed by substituting the BChl atom coordinates, as listed in the caption of Supplementary file 1, into Equations (S4 and S5) to determine the couplings, $V_{i\u2062j}$, and subsequently the matrices $k_{I\u2062J}$ and $\ud835\udca6_{I\u2062J}$ according to Equations (S6 and S10), substituted finally into Equation (S11). The quantum yield of the chromatophore shown in Figure 1, thus computed, is 0.91.\n",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "107a476c-887b-41d3-97e9-dc83128edddd",
+      "submission_id": "2f29ad5c-7edb-49a2-beac-ffbf57fba346",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gerhard Hummer, The Max Planck Institute of Biophysics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09541.013](https://doi.org/10.7554/eLife.09541.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Overall energy conversion efficiency of a photosynthetic vesicle\" for peer review at eLife. Your submission has been favorably evaluated by Michael Marletta (Senior editor), a Reviewing editor, and three reviewers. We apologize for the delay in rendering a decision, but it was necessary to find multiple independent reviews on this manuscript.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present a model of the Rhodobacter sphaeroides chromatophore. The model employs a detailed quantum mechanical description for the light harvesting and charge separation processes, and a kinetic description for the subsequent reactions. With this model, the solar energy capture efficiency is determined, as measured in terms of ATP production. Efficiencies are estimated to be on the order of 10%. The authors conclude that the vesicle stoichiometry is sub-optimal for steady-state ATP production and instead appears to be adapted to \"robustness of function\".\n\nEssential revisions:\n\nAll three reviewers are overall positive, but raise a number of issues concerning the model, its limitations, and its interpretation. I find the issues raised by the referees to be relevant. Addressing them in a revision should result in a stronger paper. Following is a brief summary of their reports that emphasizes the main points as seen from my perspective.\n\nReviewer #1 challenges the conclusion that suboptimality of ATP production is associated with robustness of function. First, the reviewer points out that the build-up of a QH2 pool would only work if an equal amount of cytochrome c2 were present (in essence because the electron cycle with the chromatophore is closed). Since the number of cyt c is much smaller, something seems to be amiss, either in the model or its interpretation. Second, the reviewer argues that evolution acts on the survival of the organism, not at the level of its chromatophores.\n\nReviewer #1 is also concerned about the absence of leak reactions in the model, in particular for electrons between quinol and the Rieske protein, and for protons through the chromatophore membrane.\n\nReviewer #2 is concerned that the model lacks physiological relevance, despite overall being positive and recognizing the value of a reduced model. In particular, the Reviewer notes that chromatophore operation is connected to NADH production. If this link were included, the reviewer argues that the buildup of the ubiquinol pool would not occur. At the least, the authors should discuss the more complex situation of chromatophore function in phototropic bacteria.\n\nConcerning the model it is assumed that the Fo part of the ATP synthase has a c-ring with 12 subunits, but to the best of knowledge, this is only a guess. If so, it should be stated as such.\n\nAdditional major points are the precise definitions of efficiency metrics (Reviewer #1) and a discussion as to what the atomistic description of the chromatophore really adds. Moreover, all reviewers point to the need for a more thorough discussion of the relevant literature.\n\nAfter the reviews were returned, the editors discussed your work in relation to the broader audience of eLife. We urge you to include language in the Discussion section that expands the scope of your presentation to include a description of how your finding may relate to other systems.\n\nIn light of the reviewers comments, changes will be necessary before the paper can be considered for publication. Following are their full reports. These should be consulted and addressed point by point.\n\nReviewer #1:\n\nIn this work the authors calculate the solar energy capture efficiency of a bacterial photosynthetic vesicle based on an explicit model for the structure of the photosynthetic apparatus. While a detailed quantum mechanical model is used for the light harvesting and charge separation process, for all the other subsequent reactions kinetic models are utilized. At solar intensities of 1-5% of full sunlight the energy conversion efficiency is calculated to range from 0.12 to 0.04. The vesicle stoichiometry appears to be sub-optimal for steady-state ATP production and appears to be adapted to \"robustness of function\".\n\nIn general this is a well-written paper, however there are some serious problems in the interpretation that the authors must account for.\n\n1) The authors suggest that the suboptimality of the ATP-production of the Rba. Sphaeroides vesicle might play a role in the robustness of its function. According to their interpretation reduction of the Q-pool might play a role in storing the redox energy accumulated during short periods of exposure to high light. This would only work if there is an equal amount of cytochrome c present. However, there is one to two orders of magnitude more quinone than cytochrome c so where do the electrons come from that reduce the Q-pool?\n\n2) Evolution did not act at the level of individual chromatophores but on the survival fitness of the intact organism.\n\n3) The authors use efficiency values without specifying exactly what they mean. I presume that they have had a certain numerical value for \"delta-Gp\" in mind (i.e. the standard free energy of hydrolysis of ATP), and then calculate efficiency as the ratio of the caloric value of the photons over the free energy of the corresponding ATP hydrolysis. This should however be made explicit. Furthermore, they now and then shift back and forth from oxygenic to anoxygenic photosynthesis (e.g. Discussion, first paragraph), which is not proper because in oxygenic photosynthesis the majority of the energy conservation goes into redox energy (i.e. NADPH). Estimates that anoxygenic photosynthesis has a free-energy efficiency in the order of 10% have already been available for a long time (Hellingwerf, K. J., Crielaard, W., & Westerhoff, H. V. (1993). Comparison of retinal-based and chlorophyll-based photosynthesis: A biothermokinetic description of photochemical reaction centers. Modern trends in biothermokinetics (pp. 45-52) Springer).\n\n4) Beyond the LH/RC itself, nowhere in the modelling has any leak-reaction taken into account. Two examples that would have been very relevant to take into account are: (a) the short-cut in electron transfer in the cytochrome bc1 complex that may occur if the second electron of quinol is also directly transferred to the Rieske protein and (b) passive proton leakage through the chromatophore membrane (which may be very much dependent of the protein composition of the vesicles, due to curvature effects). Related to this is the fact that the authors seem to suggest that proton transport merely leads to a pH change (see discussion on acidification), whereas presumably the energetic coupling between the proton pumping system and the ATP synthase is through a transmembrane electrical potential gradient.\n\n5) What precisely does the atomistic description of the light harvesting and trapping process contribute to the calculation of the efficiency? Could the energy transfer and trapping process not be captured by a single effective rate constant that is a function of the fraction of open and closed traps and the ratio of LH2 to RC-LH1. See many earlier papers on the subject: Vredenberg and Duysens, Duysens CIBA foundation, Den Hollander et al., Trissl et al., Joliot cs etc.\n\nReviewer #2:\n\nThe manuscript by Sener and co-workers presents a model of a Rhodobacter sphaeroides chromatophore. The model describes how the illumination of a chromatophore suspension results in ATP production. The ultimate goal of the modeling is to understand how the ATP yield is coupled with the intensity of light. The main virtue of the model is that it couples the quantum physics of light absorption/procession with the chemistry of ATP synthesis. The model gives reasonable values of ATP yield in response to low light, which is physiological for these bacteria. Development of such a global model, which covers events over a time span of 14 orders of magnitude, required certain simplifications, which is understandable. Unfortunately, from the opinion of this reviewer, the simplifications preclude from making physiologically relevant conclusions from the modeling, at least, at the given stage.\n\nStill the model itself is a great achievement and the manuscript deserves publication albeit after certain amendments.\n\n1) Since the physiological relevance of the results obtained is questionable, the main result of this study seems to be the model itself. Therefore, the description of the model should be moved from the Materials and methods into the Results. Otherwise the manuscript is incomprehensive, taking into account that the format of eLife implies Materials and methods after Results. The Materials and methods section should then contain only technical/purely methodical points; supplementary materials, at least partly, could be also moved into Materials and methods.\n\n2) The current simplified model lacks two important modules, which, hopefully, would be added in the future. These are the protonmotive force and reversible NADH dehydrogenase. The authors admit the absence of these modules, but did not consider the consequences of their absence in full extent. This should be done in the Discussion.\n\n3) In the absence of these two modules, the authors conclude that \"energy conversion in the chromatophore appears to be rate-limited primarily by cytbc1\" and that \"cytbc1-limited kinetics prevents an overproduction of protons at sustained high-light conditions,\u2026thereby protecting the chromatophore against overacidification of its interior and assuring vesicle integrity at high-light conditions\".\n\nIn real phototropic bacteria, the situation is more complex. Obviously, the function of a photosynthetic apparatus, such as bacterial chromatophore or a chloroplast thylakoid, is to produce ATP and NAD(P)H. In thylakoids, NAD(P)H molecules are produced via direct reduction of NAD(P)+ by the Photosystem I. In Rb. sphaerides, the redox potential of the RC is too high for NAD(P)H generation. Therefore, NAD(P)H is produced via reversing the NAD(P)H dehydrogenase. The reversion requires (1) high protonmotive force and (2) reduced ubiquinol pool. Therefore, the overreduction of the ubiquinol pool in Rb. sphaeroides is a precondition for the NAD(P)H production; it should increase the overall efficiency of the system. Furthermore, the overacidification of the interior is prevented not by the overreduction of the ubiquinone pool, but by the high sensitivity of the cytbc1 to the membrane potential. High voltage, needed to drive the NAD(P)+ reduction (see above), slows the turnover of the cytbc1 dramatically, essentially blocking its turnover at voltages above 150 mV. Hence at high, physiological values of protonmotive force the turnover of the cytbc1 is essentially limited by the proton discharge, specifically via the ATP synthase and the reverse NAD(P)H dehydrogenase. The operation of the cytbc1 close to equilibrium additionally increases the efficiency of energy conversion.\n\nThe reviewer admits that the data on synthesis of NAD(P)H in Rb. sphaeroides are too scarce to be used for verification of the model. The authors, accordingly, have tested their model by using more abundant data that were obtained with chromatophore suspensions in the absence of NAD(P)+, in experiments where the function of the RC, cytbc1 and/or ATP synthase were studied. And still, the discussion of physiological consequences from the given model should be truncated dramatically as misleading. The physiology could be discussed in further publications, after the membrane potential and NAD(P)H synthesis would be explicitly included in the model.\n\nInstead, the Discussion section should include comparison of the given model with the earlier models of chromatophore systems (e.g. from the group of Helms) and the approaches used.\n\nReviewer #3:\n\nThe authors present an important theoretical investigation of the performance and limitations of the photosynthetic chromatophore complex of purple bacteria. This light-harvesting system is of great interest as a model system that contains numerous characteristic properties inherent to all natural light-harvesting systems. This work is a continuation of a long line of first-rate papers published by the authors on this topic, is extremely well written, and merits publication in its current form.\n\nThere appears to be a minor inconsistency in the units of intensity employed. In the second paragraph of section 4.2 the authors define light intensity, I, in units of [photons absorbed per second], whereas light intensity is often defined in units of [photons absorbed per meter squared per second]. As defined, this intensity is in fact a power, which is also called a 'radiant flux' in radiometry. This in contrast with the more conventional definition of intensity, in the caption of Figure 2, where units of [Watts per meter squared] are used. Clarification of these different definitions would be useful.\n\nIn the third paragraph of section 4.2, the authors switch to defining 'I' as 'illumination,' which may further confuse the reader. Ideally 'radiant flux' or 'absorbed light power' or similar terminology would be employed throughout, or alternatively 'illumination' would be defined.\n\nThe explanation provided in the fourth and fifth paragraphs of section 2.2 for the suboptimal (nB, nRC) values in low-light adapted vesicles is appealing, but it does not appear to be supported by calculations. Despite the fact that the model only applies in steady-state, is it possible to perform a simple simulation to support this interpretation, even qualitatively?\n\nThe choice of initial condition assumed in Equation 9 may possibly be over-simplifying because each complex (LH2, LH1 and RC) does not necessarily have the same absorption spectrum, since at a given wavelength, the probability of absorption of a photon is not the same for each complex. In this scenario, the initial condition should then be wavelength dependent. While the authors state that the quantum yield is not strongly dependent on the choice of P(0), a specific example to demonstrate this would be helpful.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Overall energy conversion efficiency of a photosynthetic vesicle\" for further consideration at eLife. Your revised article has been favorably evaluated by Michael Marletta (Senior editor), a Reviewing editor, and two reviewers.\n\nOn the basis of the referee reports on the revised manuscript, only relatively minor additional changes are required. Reviewer #2 is concerned that some issues have not been fully addressed in the revision. In the following I list the main points.\n\n1) The reviewer maintains that \"the model does not consider the production of NADH at all.\" Therefore, \"no statements on the energy conversion efficiency could be done with the current model.\" The reviewer is concerned that the issue of NADH production and its impact on the model and its assessment are not discussed adequately, and advises \"to read the primary literature on the mechanism of NADH production and provide references to this literature (currently they refer only to the paper of Klamt et al. where bacterial photosynthesis was modeled by using several dozen parameters that were more or less freely variable). The primary literature describes how the NADH-dehydrogenase makes NADH by driving the reverse (uphill) electron transfer from the ubiquinone pool to NAD+ with the help of membrane potential. This mechanism differs from the NAD(P)H production in green plants where NAD(P)+ is directly reduced by photoexcitated electrons in a reaction that is independent of membrane potential. The dependence of the light-driven NADH production on membrane potential, specific for Rhodobacter and other purple phototrophic bacteria, should have shaped the properties of their energy-converting machinery.\"\n\nRecommended action: Whereas I do not see the lack of NADH production as a fundamental flaw in the model (after all, all models are incomplete), this point should be made clearer to the reader. Conclusions drawn from the model should be qualified accordingly. In particular, in the discussion of the energy conversion efficiency, relevant limitations of the model should be stated.\n\n2) The reviewer also asks to point out clearly that \"the experimental data that were used for testing the model were not obtained with chromatophores in vivo,\" but for \"an artificial system \u2013 a suspension of chromatophores in a pH-buffer, in the presence of electron donors and redox mediators, but in the absence of physiological compounds such as NAD+/NADH (a Dutton/Crofts system).\"\n\nRecommended action: Point out the distinction between the in-vitro experiments and the more complex in-vivo situation.\n\n3) The reviewer also argues that the effect of a transmembrane proton gradient, which is not included explicitly in the model, should be discussed. The reviewer emphasizes that the issue is not \"proton migration from the bc1 complex to ATP synthase\" but protonmotive force.\n\nRecommended action: Discuss the issue of protonmotive force. Examine which conclusions would likely be impacted by the explicit treatment of PMF in the model, and qualify them accordingly. If none of the conclusions would be affected, state that the model is robust with respect to the neglect of explicit modeling of PMF.\n\n4) The reviewer suggests adding a description of the model to the Results section.\n",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "508e4966-486a-4143-8eb7-5fbdf519805f",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C1",
+      "claim": "The chromatophore of purple bacteria is an intracellular spherical vesicle that exists in numerous copies in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore of purple bacteria is an intracellular spherical vesicle that exists in numerous copies in the cell and that efficiently converts sunlight into ATP synthesis, operating typically under low light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the chromatophore structure and abundance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "cfe31481-2242-4510-bc93-94758c2f9ba8",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C2",
+      "claim": "The chromatophore efficiently converts sunlight into ATP synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore of purple bacteria is an intracellular spherical vesicle that exists in numerous copies in the cell and that efficiently converts sunlight into ATP synthesis, operating typically under low light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a functional characteristic of the chromatophore.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "5b3d8f93-9e86-4061-8667-bc65efe8d5b3",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C3",
+      "claim": "The chromatophore operates typically under low light conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore of purple bacteria is an intracellular spherical vesicle that exists in numerous copies in the cell and that efficiently converts sunlight into ATP synthesis, operating typically under low light conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a characteristic of chromatophore operation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "1ed7a9ea-73f2-483c-8f59-1d1aaf9153f6",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C4",
+      "claim": "Quinol turnover at the cytochrome bc1 complex is rate limiting in the chromatophore.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state ATP production rate as a function of incident light intensity is determined after identifying quinol turnover at the cytochrome bc1 complex (cytb\u2062c1) as rate limiting and assuming that the quinone/quinol pool of about 900 molecules acts in a quasi-stationary state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the abstract as a finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "76c2cde3-f820-4bd2-ba80-dbe27ff34ba3",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C5",
+      "claim": "The quinone/quinol pool of about 900 molecules acts in a quasi-stationary state.",
+      "claim_type": "EXPLICIT",
+      "source": "The steady-state ATP production rate as a function of incident light intensity is determined after identifying quinol turnover at the cytochrome bc1 complex (cytb\u2062c1) as rate limiting and assuming that the quinone/quinol pool of about 900 molecules acts in a quasi-stationary state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption in the abstract for the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "5c38d336-6b26-4bc2-b480-dc449fdfbe4e",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C6",
+      "claim": "For an illumination condition equivalent to 1% of full sunlight, the vesicle exhibits an ATP production rate of 82 ATP molecules/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For an illumination condition equivalent to 1% of full sunlight, the vesicle exhibits an ATP production rate of 82 ATP molecules/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quantitative result stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "caf00f4c-da53-4c3b-ab70-85fe692b7e96",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C7",
+      "claim": "The energy conversion efficiency of ATP synthesis at illuminations corresponding to 1%\u20135% of full sunlight is calculated to be 0.12\u20130.04, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy conversion efficiency of ATP synthesis at illuminations corresponding to 1%\u20135% of full sunlight is calculated to be 0.12\u20130.04, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quantitative result stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "5b71baba-41f7-4037-a770-1bfe536de61b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C8",
+      "claim": "The vesicle stoichiometry is evolutionarily adapted to the low light intensities in the habitat of purple bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicle stoichiometry, evolutionarily adapted to the low light intensities in the habitat of purple bacteria, is suboptimal for steady-state ATP turnover for the benefit of protection against over-illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "8baeb593-7714-4aad-a795-62c2dc07de54",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C9",
+      "claim": "The vesicle stoichiometry is suboptimal for steady-state ATP turnover for the benefit of protection against over-illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "The vesicle stoichiometry, evolutionarily adapted to the low light intensities in the habitat of purple bacteria, is suboptimal for steady-state ATP turnover for the benefit of protection against over-illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a key finding of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "b95de596-acd4-4a62-8237-2bc4b646718e",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C10",
+      "claim": "Photosynthetic organisms absorb sunlight and utilize the F\u00f6rster mechanism for efficient excitation energy transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms absorb sunlight and subsequently utilize the F\u00f6rster mechanism (Sener et al., 2011) and quantum coherence (Str\u00fcmpfer et al., 2012; Panitchayangkoon et al., 2010; Scholes, 2010) for efficient excitation energy transfer, followed by conversion of light energy into chemical energy (Feniouk and Junge, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "57b5fe53-fa17-48c1-9acb-d6ec01b02202",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C11",
+      "claim": "Photosynthetic organisms utilize quantum coherence for efficient excitation energy transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms absorb sunlight and subsequently utilize the F\u00f6rster mechanism (Sener et al., 2011) and quantum coherence (Str\u00fcmpfer et al., 2012; Panitchayangkoon et al., 2010; Scholes, 2010) for efficient excitation energy transfer, followed by conversion of light energy into chemical energy (Feniouk and Junge, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "e22dec8d-e7ec-4fab-8a0a-a8bbc529511b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C12",
+      "claim": "The light harvesting system of purple bacteria is claimed to be the earliest of the current photosynthetic lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The light harvesting system of purple bacteria (Hu et al., 2002; Cartron et al., 2014) is claimed to be the earliest of the current photosynthetic lineages (Xiong et al., 2000) and exhibits, at the supra-molecular level as well as at the level of individual proteins, less complexity than the thylakoid membranes of the more ubiquitous cyanobacteria and plants (Kirchhoff et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "9ec183f2-90cf-4ccd-816c-663810fecda4",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C13",
+      "claim": "The light harvesting system of purple bacteria exhibits less complexity than the thylakoid membranes of cyanobacteria and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "The light harvesting system of purple bacteria (Hu et al., 2002; Cartron et al., 2014) is claimed to be the earliest of the current photosynthetic lineages (Xiong et al., 2000) and exhibits, at the supra-molecular level as well as at the level of individual proteins, less complexity than the thylakoid membranes of the more ubiquitous cyanobacteria and plants (Kirchhoff et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "6b7136f8-fcc1-4c9e-a0b8-3f7a2b4ff0f4",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C14",
+      "claim": "In Rhodobacter sphaeroides the basic photosynthetic unit is the chromatophore.",
+      "claim_type": "EXPLICIT",
+      "source": "In the purple bacterium Rhodobacter (Rba.) sphaeroides the basic photosynthetic unit is the chromatophore (Cogdell et al., 2006; Str\u00fcmpfer et al., 2011; Cartron et al., 2014), a 50\u201370 nm diameter vesicle, as shown in Figure 1, formed through invagination of the intracytoplasmic membrane (Tucker et al., 2010; Gubellini et al., 2007) and comprising over a hundred protein complexes (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "a91f1447-db34-4874-965e-e04a485e409e",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C15",
+      "claim": "The chromatophore is a 50\u201370 nm diameter vesicle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the purple bacterium Rhodobacter (Rba.) sphaeroides the basic photosynthetic unit is the chromatophore (Cogdell et al., 2006; Str\u00fcmpfer et al., 2011; Cartron et al., 2014), a 50\u201370 nm diameter vesicle, as shown in Figure 1, formed through invagination of the intracytoplasmic membrane (Tucker et al., 2010; Gubellini et al., 2007) and comprising over a hundred protein complexes (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction with supporting citations and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "cbf7de91-b3d3-4066-8e62-47ecd617d220",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C16",
+      "claim": "The chromatophore is formed through invagination of the intracytoplasmic membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In the purple bacterium Rhodobacter (Rba.) sphaeroides the basic photosynthetic unit is the chromatophore (Cogdell et al., 2006; Str\u00fcmpfer et al., 2011; Cartron et al., 2014), a 50\u201370 nm diameter vesicle, as shown in Figure 1, formed through invagination of the intracytoplasmic membrane (Tucker et al., 2010; Gubellini et al., 2007) and comprising over a hundred protein complexes (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "01896856-4e22-4d30-8b6d-e516c1fdd10d",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C17",
+      "claim": "The chromatophore comprises over a hundred protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the purple bacterium Rhodobacter (Rba.) sphaeroides the basic photosynthetic unit is the chromatophore (Cogdell et al., 2006; Str\u00fcmpfer et al., 2011; Cartron et al., 2014), a 50\u201370 nm diameter vesicle, as shown in Figure 1, formed through invagination of the intracytoplasmic membrane (Tucker et al., 2010; Gubellini et al., 2007) and comprising over a hundred protein complexes (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "98c003af-463c-4631-bbcd-392794981e28",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C18",
+      "claim": "The proteins that constitute the chromatophore are primarily the light harvesting complexes, photosynthetic reaction centers, cytb\u2062c1 complexes, and ATP synthases.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteins that constitute the chromatophore are primarily the light harvesting (LH) complexes, photosynthetic reaction centers (RCs), cytb\u2062c1 complexes, and ATP synthases, which cooperate to harvest light energy for photophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as a description of chromatophore composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "86be969c-1db5-4e48-a378-298c933667b7",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C19",
+      "claim": "The architecture of the chromatophore has been determined by combining atomic force microscopy, cryo-electron microscopy, crystallography, optical spectroscopy, mass spectroscopy, and proteomics data.",
+      "claim_type": "EXPLICIT",
+      "source": "The architecture of the chromatophore, reported in (\u015eener et al., 2007, 2010; Cartron et al., 2014), has been determined by combining atomic force microscopy (AFM) (Bahatyrova et al., 2004; Olsen et al., 2008), cryo-electron microscopy (cryo-EM) (Qian et al., 2005; Cartron et al., 2014), crystallography (Koepke et al., 1996; McDermott et al., 1995; Papiz et al., 2003; Jamieson et al., 2002), optical spectroscopy (Hunter et al., 1985; Sener et al., 2010), mass spectroscopy (Cartron et al., 2014), and proteomics (Jackson et al., 2012; Woronowicz and Niederman, 2010; Woronowicz et al., 2013) data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "32d0e099-4c6b-46be-9941-56d7a1f3b86a",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C20",
+      "claim": "The composition of the chromatophore depends on growth conditions such as light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The composition of the chromatophore depends on growth conditions such as light intensity (Adams and Hunter, 2012; Woronowicz et al., 2011b, 2011a) and can also be influenced by mutations (Siebert et al., 2004; Hsin et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "a166cb92-9e4b-4ee8-a545-4b0d4fc3d29d",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C21",
+      "claim": "The composition of the chromatophore can be influenced by mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The composition of the chromatophore depends on growth conditions such as light intensity (Adams and Hunter, 2012; Woronowicz et al., 2011b, 2011a) and can also be influenced by mutations (Siebert et al., 2004; Hsin et al., 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "47869a88-5d92-479f-aa04-b5c6aa065f9e",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C24",
+      "claim": "The membrane of 16,000 lipids contains the quinone/quinol pool of about 900 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane of 16,000 lipids contains the quinone/quinol pool of about 900 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption describing the model composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "4846433c-7a7f-4ecd-bebe-95e1a86fd7e0",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C26",
+      "claim": "The chromatophore displays organizational principles for the integration of multiple processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore displays organizational principles for the integration of multiple processes (Sener et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "73634bd0-0435-45f8-a840-be2596314135",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C27",
+      "claim": "Evolutionary competition at the organism level has driven photosynthetic subsystems toward optimal and robust function.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary competition at the organism level has driven photosynthetic subsystems toward optimal and robust function (Noy et al., 2006; Noy, 2008; Scholes et al., 2011) that can guide the design of artificial light harvesting devices such as biohybrid antennas (Harris et al., 2013) and nanopatterned light harvesting (LH) complex arrays (Reynolds et al., 2007; Vasilev et al., 2014; Patole et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "fee18cec-4d81-4ef5-a5a4-bab4d44b441b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C29",
+      "claim": "The quantum yield does not constitute a limiting factor for the overall energy conversion efficiency in the chromatophore.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the quantum yield does not constitute a limiting factor for the overall energy conversion efficiency in the chromatophore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the quantum yield value.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "ea5437a1-af3b-4543-b783-3f4d57dae789",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C30",
+      "claim": "At light intensities equivalent to 1% and 3% of full sunlight, the vesicle is found to produce ATP molecules at a rate of 82 s\u22121 and 118 s\u22121, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "At light intensities equivalent to 1% and 3% of full sunlight, the vesicle is found to produce ATP molecules at a rate of 82 s\u22121 and 118 s\u22121, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quantitative result stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "a4beae9c-7a11-4e4f-84e8-e12e2a2b7606",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C31",
+      "claim": "At the high-light limit, the ATP synthesis rate approaches 158 molecules s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "At the high-light limit, the ATP synthesis rate approaches 158 molecules s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quantitative result stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "99acaf9c-2f4f-4fc8-91c3-5ae7fcc2b0d3",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C32",
+      "claim": "The ATP synthesis rates are consistent with experimental observations for continuous light-induced photophosphorylation, reported to be in the range of 0.017 molecules per BChl per second and 0.05 ATP molecules per BChl per second.",
+      "claim_type": "EXPLICIT",
+      "source": "These rates are consistent with experimental observations for continuous light-induced photophosphorylation, reported to be in the range of 0.017 molecules per BChl per second (Saphon et al., 1975) and 0.05 ATP molecules per BChl per second (Clark et al., 1983), corresponding to ~43 ATP molecules s\u22121 and ~130 ATP molecules s\u22121, respectively, for the vesicle shown in Figure 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "1523897f-a2ea-4ae1-90ef-4252fc0ee3bb",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C33",
+      "claim": "The energy conversion efficiency at 1% and 3% of full sunlight is 12% and 7%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding energy conversion efficiency, \u03b7A\u2062T\u2062P, at the stated low-light intensities of 1% and 3% of full sunlight, calculated in the present study, are 12% and 7%, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quantitative result stated in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "1399b2e9-8e91-4e0b-9c7a-5c42b84ad8cc",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C34",
+      "claim": "An upper-limit of 30% was estimated for the conversion efficiency of photosynthesis in Rba. sphaeroides.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, an upper-limit of 30% was estimated in (Hellingwerf et al., 1993) for the conversion efficiency of photosynthesis in Rba. sphaeroides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "962bd104-6e42-4506-a43b-6885f8d43966",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C35",
+      "claim": "The efficiency value computed for the recently established model of the chromatophore ranges between 0%\u201317%.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, the efficiency value, \u03b7A\u2062T\u2062P, computed for the recently established model (Cartron et al., 2014) of the chromatophore (Figure 2) ranges between 0%\u201317%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "21e32c19-67f2-4641-a4b8-3d49826be813",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C43",
+      "claim": "The role of closed and open RCs in determining the overall efficiency of the photosynthesic apparatus had been already pointed out long before any structural details were known.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the role of closed and open RCs in determining the overall efficiency of the photosynthesic apparatus had been already pointed out long before any structural details were known (Vredenberg and Duysens, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "8c53a25c-49ae-4059-9285-54911e1e8df6",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C45",
+      "claim": "At peak solar intensity photovoltaic-driven electrolysis is reported to have an energy conversion efficiency of 5\u201315%.",
+      "claim_type": "EXPLICIT",
+      "source": "At peak solar intensity photovoltaic-driven electrolysis is reported to have an energy conversion efficiency of 5\u201315% (Blankenship et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "c3bab98b-44be-4ec1-ac3b-7a37393749ff",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C46",
+      "claim": "Pigment networks of individual light harvesting proteins were reported to display optimality and robustness in their quantum yield with respect to the spatial organization of pigments and the site energy distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, pigment networks of individual light harvesting proteins were reported to display optimality and robustness in their quantum yield with respect to the spatial organization of pigments and the site energy distribution (\u015eener et al., 2002; Noy et al., 2006; Damjanovic et al., 2002); a similar robustness was reported with respect to size-scaling deformations of an entire vesicle (Sener et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "ca4a3f65-aebc-40d7-b588-913fb743f22b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C47",
+      "claim": "The steady state ATP synthesis is not optimized by the vesicle composition shown in Figure 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, steady state ATP synthesis is not optimized by the vesicle composition shown in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "cfdc004a-71e4-419e-b3c6-d3f480f254e8",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C48",
+      "claim": "The turnover rate would be improved by an nB:nL ratio that is greater than the native value of 1:3.",
+      "claim_type": "EXPLICIT",
+      "source": "The turnover rate, kATP, would be improved by an nB:nL ratio that is greater than the native value of 1:3 (Crofts, 2004; Cartron et al., 2014), as suggested also by a comparison of the turnover times at cytb\u2062c1 and RC (\u03c4B/\u03c4L\u22438).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "148bdd7c-4a86-4c21-83e7-7a0dcf50b9b4",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C51",
+      "claim": "A single ATP synthase is sufficient to take advantage of proton turnover of an entire chromatophore.",
+      "claim_type": "EXPLICIT",
+      "source": "A single ATP synthase is sufficient to take advantage of proton turnover of an entire chromatophore (Etzold et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "58679d2f-494f-467c-bf94-affcc99d61e9",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C52",
+      "claim": "Vesicles have been found to occasionally fuse through formation of membrane tubes permitting passage of protons between neighboring chromatophore vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, it is of interest that vesicles have been found to occasionally fuse through formation of membrane tubes (Tucker et al., 2010) permitting passage of protons between neighboring chromatophore vesicles, thereby sharing their proton gradients with the ATP synthases of multiple vesicles, reducing the need for back-up ATP synthases and even permitting less than one ATP synthase per vesicle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "d95ea92a-ba2a-4257-b2a7-5106db0f4f97",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C55",
+      "claim": "The efficiency curve determined for the purple bacterial chromatophore indicates specialization for low-light intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency curve determined in the present study for the purple bacterial chromatophore (Figure 2B) indicates specialization for low-light intensities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "2bf77bfb-8e62-4c7a-a2a2-7b93b0b82324",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C58",
+      "claim": "The chromatophore composition appears to be suboptimal for ATP production under steady-state illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore composition appears to be suboptimal for ATP production under steady-state illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary of findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "9976fcf5-d497-4bb6-9d5b-76d47a3fe4d6",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C59",
+      "claim": "The chromatophore is a highly specialized device that performs its energy conversion function robustly for low average light intensity, while featuring protective measures that dissipate energy at higher light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore is apparently a highly specialized device that performs its energy conversion function robustly for low average light intensity, while featuring protective measures that dissipate energy at higher light intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a summary interpretation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "46973e1b-0b6c-4064-88a9-7f04377aace8",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C60",
+      "claim": "Robustness against damage appears to supersede optimality under idealized conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Robustness against damage, such as overacidification of the membrane due to sustained overillumination, appears to supersede optimality under idealized conditions, such as steady state illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "2789eb00-0731-4531-aeca-4df2f6a301d1",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C61",
+      "claim": "The inner diameter of the vesicle is 50 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner diameter of the vesicle is 50 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "43edcc2d-d8b6-4762-8b42-5ae59a4a60ca",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C62",
+      "claim": "The model is based on AFM, EM, crystallography, mass spectroscopy, proteomics, and optical spectroscopy data.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is based on AFM, EM, crystallography, mass spectroscopy, proteomics, and optical spectroscopy data (Cartron et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 1 caption with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "62d8d383-c1d3-4ee1-b41e-829dcd94cb26",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C63",
+      "claim": "At 1% of full sunlight, the ATP production rate is 82 s\u22121, which is 79% of the maximum possible rate among all stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference vesicle (Figure 1) is represented by a circle, corresponding to an ATP production rate of 82 s\u22121 (118 s\u22121), i.e. 79% (51%) of the maximum possible rate among all stoichiometries, for 1% (3%) of full sun light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 3 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "06c53245-472a-425e-8d48-32561a0d1fb1",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C64",
+      "claim": "At 3% of full sunlight, the ATP production rate is 118 s\u22121, which is 51% of the maximum possible rate among all stoichiometries.",
+      "claim_type": "EXPLICIT",
+      "source": "The reference vesicle (Figure 1) is represented by a circle, corresponding to an ATP production rate of 82 s\u22121 (118 s\u22121), i.e. 79% (51%) of the maximum possible rate among all stoichiometries, for 1% (3%) of full sun light.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 3 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "100ecbd4-63e4-4fa4-8e00-14895e7ad2ff",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C67",
+      "claim": "The chromatophore model comprises 16,000 lipids and 900 quinones, corresponding to a system containing 100 million atoms, including solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "The chromatophore model shown in Figure 1 comprises, in addition to the aforementioned constituent proteins, 16,000 lipids and 900 quinones, corresponding to a system containing 100 million atoms, including solvent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Materials and methods section describing the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "455f8a60-0cae-44e1-84eb-fa6794f6f484",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C68",
+      "claim": "This system has been equilibrated through a 100 ns MD simulation to test the viability of the model employed.",
+      "claim_type": "EXPLICIT",
+      "source": "This system has been equilibrated through a 100 ns MD simulation to test the viability of the model employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the model validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "0f1224bd-a7bf-4a6d-b3bc-e46f8f6e0671",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C70",
+      "claim": "Chromatophore vesicles typically contain 1\u20132 ATP synthases.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatophore vesicles typically contain 1\u20132 ATP synthases (Feniouk et al., 2002; Cartron et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "b90a95e4-5cda-4a97-81d6-2aacea0bbc40",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C71",
+      "claim": "Proteomics studies suggest preferential co-location of ATP synthase with LH2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteomics studies suggest preferential co-location of ATP synthase with LH2 subunits (Woronowicz and Niederman, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "040e427a-3a74-4738-bac0-5f7ccf761876",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C73",
+      "claim": "The quinone/quinol pool and the proton gradient function as energy buffers between light harvesting and ATP synthesis stages.",
+      "claim_type": "EXPLICIT",
+      "source": "The quinone/quinol as well as the generated proton-motive force function as energy buffers between light harvesting and ATP synthesis stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section describing the energy conversion process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "9c7dbf96-1ef3-4bee-985c-9adfe1ec999b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C74",
+      "claim": "The chromatophore utilizes the generated proton motive force for NADH production via NADH dehydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to ATP synthesis, the chromatophore utilizes the generated proton motive force also for NADH production via NADH dehydrogenase (Klamt et al., 2008) and, thereby, for control of the quinone/quinol pool redox state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "0d9f83b4-227b-4bcd-89ab-77eecbd1d3f1",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C75",
+      "claim": "Efficient energy conversion requires some degree of robustness with respect to supramolecular organization, since no two chromatophores are likely to be identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient energy conversion requires some degree of robustness with respect to supramolecular organization, since no two chromatophores are likely to be identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section as a general principle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "d3d71f87-598c-4e3e-b2fa-3f57a5638d83",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C76",
+      "claim": "Robustness in photosynthetic systems had been demonstrated computationally for the excitation transfer step of light harvesting at the single protein level with respect to loss or rearrangement of pigments.",
+      "claim_type": "EXPLICIT",
+      "source": "Robustness in photosynthetic systems had been demonstrated computationally for the excitation transfer step of light harvesting at the single protein level with respect to loss or rearrangement of pigments (\u015eener et al., 2002) as well as against fluctuations of pigment site-energies (Damjanovic et al., 2002) and at the vesicle level against deformations of the pigment network (Sener et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "0967299c-7878-458a-b342-d33f19b524eb",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C77",
+      "claim": "The quantum yield is solely a function of pigment network geometry and is independent of incident light intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum yield is solely a function of pigment network geometry, is independent of incident light intensity, and is found to be close to unity (Str\u00fcmpfer et al., 2012; Sener et al., 2011) for initial chlorophyll light absorption; in case of carotenoid light absorption the quantum yield can be lower due to so-called covalent electronic excitation as argued in (Ritz et al., 2000b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "93356762-f241-4246-bf5c-f458afb44a14",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C78",
+      "claim": "The quantum yield is found to be close to unity for initial chlorophyll light absorption.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum yield is solely a function of pigment network geometry, is independent of incident light intensity, and is found to be close to unity (Str\u00fcmpfer et al., 2012; Sener et al., 2011) for initial chlorophyll light absorption; in case of carotenoid light absorption the quantum yield can be lower due to so-called covalent electronic excitation as argued in (Ritz et al., 2000b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "8293fc24-f741-43bd-adbf-ce6ab4a88b09",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C79",
+      "claim": "In case of carotenoid light absorption the quantum yield can be lower due to so-called covalent electronic excitation.",
+      "claim_type": "EXPLICIT",
+      "source": "The quantum yield is solely a function of pigment network geometry, is independent of incident light intensity, and is found to be close to unity (Str\u00fcmpfer et al., 2012; Sener et al., 2011) for initial chlorophyll light absorption; in case of carotenoid light absorption the quantum yield can be lower due to so-called covalent electronic excitation as argued in (Ritz et al., 2000b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "39017b48-dc1c-45d1-b308-d80ae3791368",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C80",
+      "claim": "Carotenoids transfer excitation within less than a picosecond to a nearby BChl.",
+      "claim_type": "EXPLICIT",
+      "source": "Carotenoids transfer excitation within less than a picosecond to a nearby BChl (Damjanovi\u0107 et al., 1999; Berera et al., 2009) and also play a role in quenching triplet states of BChls through reverse excitation transfer (Ritz et al., 2000a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "b4c8b7b8-0048-4900-8997-37fbe920a66a",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C81",
+      "claim": "Carotenoids play a role in quenching triplet states of BChls through reverse excitation transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Carotenoids transfer excitation within less than a picosecond to a nearby BChl (Damjanovi\u0107 et al., 1999; Berera et al., 2009) and also play a role in quenching triplet states of BChls through reverse excitation transfer (Ritz et al., 2000a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "e102bc4f-86e2-4477-ad57-1a9477e3db57",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C82",
+      "claim": "Exciton-based excitation transfer in the chromatophore proceeds within 10\u2013100 ps.",
+      "claim_type": "EXPLICIT",
+      "source": "Exciton-based excitation transfer in the chromatophore proceeds within 10\u2013100 ps (Sener et al., 2011), first among the LH2s, then from LH2 to LH1, and finally from LH1 to the four BChls of the RC (Visscher et al., 1989; Beekman et al., 1994; Str\u00fcmpfer and Schulten, 2012a; Sener et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "adef88aa-fa33-4d8a-8123-cfff07265332",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C83",
+      "claim": "Electronic excitation energy absorbed directly or indirectly by a BChl is rapidly shared between BChls within individual LH1 and LH2 light harvesting complexes, forming, within about a ps, thermally equilibrated exciton states.",
+      "claim_type": "EXPLICIT",
+      "source": "Electronic excitation energy absorbed directly or indirectly (through carotenoids) by a BChl is rapidly shared between BChls within individual LH1 and LH2 light harvesting complexes (Cory et al., 1998), forming, within about a ps, thermally equilibrated exciton states as established experimentally (Visser et al., 1996; Jimenez et al., 1997; Valkunas et al., 2007) as well as computationally (Str\u00fcmpfer and Schulten, 2009; Str\u00fcmpfer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "8af85907-b27d-4aea-ab10-f7936fed11ff",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C84",
+      "claim": "The high quantum yield is achieved because loss due to internal conversion and fluorescence arises much more slowly (rates about (1 ns)\u22121) than excitation transfer or charge separation at RC (rates about (10 ps)\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "Such high value for the quantum yield, close to the ideal limit of 1, is achieved because loss due to internal conversion and fluorescence arises much more slowly (rates about (1 ns)\u22121) than excitation transfer or charge separation at RC (rates about (10 ps)\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as an explanation for the high quantum yield.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "11611a9f-4ee2-4355-805e-d706ee0a5124",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C85",
+      "claim": "The time-scale with which the quinone/quinol pool redox state adapts to a change in light conditions is reported to be about 0.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The time-scale with which the quinone/quinol pool redox state adapts to a change in light conditions is reported to be about 0.5 s (Woronowicz et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "aed0efcf-69c9-493f-8a31-7d211c58742d",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C98",
+      "claim": "The present study differs from earlier studies in functional modeling of the chromatophore in that it is based on an explicit atomic-detail structural model.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study differs from earlier studies in functional modeling of the chromatophore (Geyer et al., 2007, 2010) in several respects: first, it is based on an explicit atomic-detail structural model; second, instead of employing many (over 30) adjustable parameters, few experimentally determined rate constants are employed to describe the rate determining steps; third, a steady-state description is chosen such that energy conversion steps that are not rate-limiting can be left out of the kinetic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "33d63db7-a370-43b3-9406-39512684899b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C99",
+      "claim": "The present study employs few experimentally determined rate constants to describe the rate determining steps instead of many adjustable parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study differs from earlier studies in functional modeling of the chromatophore (Geyer et al., 2007, 2010) in several respects: first, it is based on an explicit atomic-detail structural model; second, instead of employing many (over 30) adjustable parameters, few experimentally determined rate constants are employed to describe the rate determining steps; third, a steady-state description is chosen such that energy conversion steps that are not rate-limiting can be left out of the kinetic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "c2b3d49e-212f-483f-be11-cb2d10ee0b47",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C102",
+      "claim": "Primary conclusions reached presently would not be affected by a more detailed description of individual proton translocation steps and proton motive force conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Primary conclusions reached presently would not be affected by a more detailed description, i.e., the model is robust with respect to the neglect of explicit modeling of individual proton translocation steps and proton motive force conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as an assessment of model robustness.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "1f53fe27-250c-41f8-abbe-2e0febf3fcb6",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "claim_id": "C104",
+      "claim": "Integrative models of organelle function such as the one presented here provide a bridge between experimental methods that do not resolve temporal and spatial detail needed for establishing physical mechanisms and microscopic simulations that span the multiple length and time scales relevant for the function of living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrative models of organelle function such as the one presented here provide a bridge between experimental methods that do not resolve temporal and spatial detail needed for establishing physical mechanisms and microscopic simulations that span the multiple length and time scales relevant for the function of living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion section as a broader perspective on the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "38f7a864-6102-437b-a5b8-43e0d7a99a53",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The chromatophore of purple bacteria (specifically Rhodobacter sphaeroides) is characterized as an intracellular spherical vesicle of 50-70 nm diameter, formed through invagination of the intracytoplasmic membrane, comprising over a hundred protein complexes (primarily LH2, RC-LH1, cytbc1, and ATP synthases), 16,000 lipids, and ~900 quinone/quinol molecules, totaling ~100 million atoms including solvent. The chromatophore exists in numerous copies per cell and operates typically under low light conditions to efficiently convert sunlight into ATP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C14-C18, C24, C61, and C67 collectively describe the structural and functional characteristics of the chromatophore based on prior experimental work (AFM, EM, crystallography, mass spectroscopy, proteomics) cited throughout. The structural model is well-documented with specific quantitative details (size, composition, stoichiometry) and validated through a 100 ns MD simulation (C68). These are primarily descriptive claims about the system under study, well-supported by cited literature and the authors' prior modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "7e1db6eb-a9ee-43d4-844a-d61baa300781",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identifies quinol turnover at cytochrome bc1 complex as the rate-limiting step in chromatophore energy conversion, with the quinone/quinol pool of ~900 molecules acting in a quasi-stationary state. The quantum yield (~0.91) does not constitute a limiting factor for overall energy conversion efficiency because excitation transfer and charge separation (rates ~(10 ps)\u207b\u00b9) occur much faster than internal conversion and fluorescence losses (rates ~(1 ns)\u207b\u00b9). The quinone/quinol pool redox state adapts to light changes on a ~0.5 s timescale.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 state key modeling assumptions that are justified through comparison of turnover capacities at different components (detailed in Materials and Methods). The identification of cytbc1 as rate-limiting is supported by quantitative comparison showing cytbc1 turnover capacity (160 s\u207b\u00b9) is exceeded by RC quinol production capacity (846 s\u207b\u00b9) at just 5% sunlight. The high quantum yield (C29, C84) is explained mechanistically by the timescale separation between productive and loss processes. The quasi-stationary assumption (C5) and adaptation timescale (C85) are supported by cited experimental work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "5fa94863-481d-47ec-82a4-f540caec6e27",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At light intensities equivalent to 1% and 3% of full sunlight, the chromatophore vesicle produces ATP at rates of 82 s\u207b\u00b9 and 118 s\u207b\u00b9, respectively, representing 79% and 51% of the maximum possible rates among all stoichiometries. At the high-light limit, ATP synthesis approaches 158 s\u207b\u00b9. These rates are consistent with experimental observations of 0.017-0.05 ATP molecules per BChl per second (corresponding to ~43-130 ATP s\u207b\u00b9 for the modeled vesicle).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C30-C32, C63-C64 present the primary quantitative results for ATP production rates calculated from the kinetic model (Equations 11-20). The calculated rates show reasonable agreement with experimental measurements from two independent studies (Saphon et al., 1975; Clark et al., 1983), providing validation. The model predictions fall within the experimental range, though the comparison involves some uncertainty as one experimental value was from a different species (Rhodopseudomonas capsulata). The consistency between model and experiment supports the validity of the rate-limiting assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "0d58838e-39da-4f8f-92a2-61f77f3d2b0b",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The energy conversion efficiency of ATP synthesis at illuminations corresponding to 1%-5% of full sunlight is calculated to be 12%-4%, respectively. The efficiency computed for the chromatophore model ranges between 0%-17% across all light intensities. These values are below the previously estimated upper limit of 30% for photosynthesis in Rba. sphaeroides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C33-C35 present calculated energy conversion efficiencies based on Equation 21, which compares ATP synthesis energy to absorbed photon energy. The efficiency values are internally consistent with the ATP production rates (C6, C30-C31) and show the expected decrease with increasing light intensity due to saturation effects. The comparison with the 30% upper limit estimate (C34) provides context, though this prior estimate may have different assumptions. The efficiency calculation depends on the assumed ATP hydrolysis energy and number of c-subunits in ATP synthase (acknowledged as uncertain in Discussion), but the relative trends are robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "407bded0-7c83-469d-b5b8-b434507b2355",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The vesicle stoichiometry is evolutionarily adapted to low light intensities but is suboptimal for steady-state ATP turnover. The native cytbc1:RC ratio of 1:3 could be improved for ATP production, but the observed composition provides protection against over-illumination by limiting proton gradient generation and preventing overacidification. The chromatophore is a specialized device that performs robustly at low light intensity while featuring protective measures that dissipate energy at higher intensities, with robustness against damage superseding optimality under idealized steady-state conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C47-C48, C58-C60 present the key biological interpretation of the modeling results. The suboptimality for steady-state ATP production is demonstrated quantitatively in Figure 3, showing the native composition achieves only 79% (1% sunlight) or 51% (3% sunlight) of maximum possible rates. The protective function interpretation is well-reasoned: the low cytbc1 count limits proton turnover to below ATP synthase capacity, preventing overacidification during sustained high illumination. This trade-off between optimality and robustness is a biologically plausible evolutionary strategy, though direct experimental evidence for the protective mechanism is not provided. The interpretation is consistent with the quantitative results but represents an inference about evolutionary adaptation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "9be4ae15-55aa-47c9-a22e-ec1de30fae06",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The efficiency curve determined for the purple bacterial chromatophore indicates specialization for low-light intensities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 summarizes the interpretation of Figure 2B, which shows efficiency declining from ~12% at 1% sunlight to <0.1% beyond full sunlight. This pattern is consistent with the known ecology of purple bacteria (low-light habitats) and follows logically from the rate-limiting behavior of cytbc1. The specialization interpretation is well-supported by both the quantitative results and biological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "6e57ef43-01db-4957-8a34-65151006bae7",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chromatophore vesicles typically contain 1-2 ATP synthases, with proteomics suggesting preferential co-location with LH2 subunits. A single ATP synthase is sufficient to utilize the proton turnover of an entire chromatophore. Vesicles occasionally fuse through membrane tubes, permitting proton sharing between neighboring chromatophores and reducing the need for redundant ATP synthases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C70-C71 describe ATP synthase stoichiometry and organization based on cited experimental work. The sufficiency of a single ATP synthase (C51) is supported by comparison of turnover capacities: ATP synthase capacity (2160 s\u207b\u00b9 for 2 synthases) exceeds cytbc1 capacity (640 s\u207b\u00b9), so one synthase would be adequate. The vesicle fusion observation (C52) provides an interesting biological context for the low ATP synthase count. These claims are well-supported by cited literature and quantitative analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims about photosynthetic organisms, purple bacteria, and prior work on photosynthetic optimization and robustness, including the use of F\u00f6rster mechanism and quantum coherence for excitation transfer, the evolutionary age and relative simplicity of purple bacterial systems, the role of open/closed RCs in efficiency, and prior demonstrations of robustness in pigment networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13, C19-C21, C26-C27, C43, C45-C46, C76 are background statements about prior work, all supported by appropriate citations. These provide context for the current study but do not represent new findings. The citations appear appropriate and the statements are consistent with the photosynthesis literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "9be98e24-14b4-421d-af71-3ba98b581845",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The chromatophore model is based on integration of AFM, EM, crystallography, mass spectroscopy, proteomics, and optical spectroscopy data, and has been validated through a 100 ns MD simulation to test model viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62 and C68 describe the model construction and validation methodology. The multi-technique integration approach is well-documented in the cited work (Cartron et al., 2014) and represents state-of-the-art structural modeling. The 100 ns MD simulation provides computational validation of the structural model's stability, though this timescale is short relative to the millisecond processes being modeled kinetically.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "b00fbf46-d129-4467-8681-8cd18bce937d",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The quinone/quinol pool and proton gradient function as energy buffers between light harvesting and ATP synthesis stages. The chromatophore utilizes the proton motive force for NADH production via NADH dehydrogenase, thereby controlling the quinone/quinol pool redox state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 describe the energy buffering function and the role of NADH dehydrogenase in redox control, both supported by cited work (Klamt et al., 2008). These are established aspects of chromatophore function that provide context for the modeling approach, though NADH dehydrogenase is not explicitly included in the structural model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Efficient energy conversion requires robustness with respect to supramolecular organization since chromatophores are heterogeneous. The quantum yield is solely a function of pigment network geometry, independent of light intensity, and is close to unity (~0.91) for chlorophyll absorption. Carotenoids transfer excitation within <1 ps to nearby BChls and quench triplet states. Exciton-based excitation transfer proceeds within 10-100 ps, with BChls rapidly forming thermally equilibrated exciton states within ~1 ps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75, C77-C83 describe the quantum mechanical aspects of light harvesting and excitation transfer, all well-supported by the authors' prior computational work and cited experimental studies. The quantum yield calculation (q=0.91) is based on established generalized F\u00f6rster theory (Equations 2-10) with parameters validated against experimental timescales. The timescale hierarchy (ps for transfer vs ns for losses) is well-established experimentally and computationally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "3d611a40-24df-424f-9cbe-33ee64cac371",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The present study differs from earlier chromatophore modeling by using an explicit atomic-detail structural model and few experimentally determined rate constants rather than many adjustable parameters. A steady-state description is employed such that non-rate-limiting steps can be omitted. The primary conclusions would not be affected by more detailed description of individual proton translocation steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99, C102 describe the methodological approach and its advantages over prior work (Geyer et al., 2007, 2010). The use of an atomic-detail structural model and experimentally determined rate constants (rather than fitted parameters) is a clear strength. The steady-state assumption and focus on rate-limiting steps is justified for the timescales considered. The robustness claim (C102) is reasonable given that the rate-limiting step (cytbc1 turnover) is well-established experimentally, though more detailed modeling could reveal additional complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    },
+    {
+      "id": "42ae77b5-4a6b-43f9-af3f-1748ad18e931",
+      "content_id": "771dcae1-11c4-4f75-974c-439564ae482f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Integrative models of organelle function provide a bridge between experimental methods lacking temporal/spatial detail and microscopic simulations spanning multiple scales relevant for cellular function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is a general statement about the value of integrative modeling approaches, which is well-illustrated by the present study. The chromatophore model successfully bridges atomic-detail structure with millisecond-scale function, demonstrating the utility of multi-scale modeling. This is a reasonable perspective statement supported by the work presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:49.544070Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "508e4966-486a-4143-8eb7-5fbdf519805f",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "cfe31481-2242-4510-bc93-94758c2f9ba8",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "5b3d8f93-9e86-4061-8667-bc65efe8d5b3",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "6b7136f8-fcc1-4c9e-a0b8-3f7a2b4ff0f4",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "a91f1447-db34-4874-965e-e04a485e409e",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "cbf7de91-b3d3-4066-8e62-47ecd617d220",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "01896856-4e22-4d30-8b6d-e516c1fdd10d",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "98c003af-463c-4631-bbcd-392794981e28",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "47869a88-5d92-479f-aa04-b5c6aa065f9e",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "2789eb00-0731-4531-aeca-4df2f6a301d1",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "100ecbd4-63e4-4fa4-8e00-14895e7ad2ff",
+      "result_id": "38f7a864-6102-437b-a5b8-43e0d7a99a53"
+    },
+    {
+      "claim_id": "1ed7a9ea-73f2-483c-8f59-1d1aaf9153f6",
+      "result_id": "7e1db6eb-a9ee-43d4-844a-d61baa300781"
+    },
+    {
+      "claim_id": "76c2cde3-f820-4bd2-ba80-dbe27ff34ba3",
+      "result_id": "7e1db6eb-a9ee-43d4-844a-d61baa300781"
+    },
+    {
+      "claim_id": "fee18cec-4d81-4ef5-a5a4-bab4d44b441b",
+      "result_id": "7e1db6eb-a9ee-43d4-844a-d61baa300781"
+    },
+    {
+      "claim_id": "8af85907-b27d-4aea-ab10-f7936fed11ff",
+      "result_id": "7e1db6eb-a9ee-43d4-844a-d61baa300781"
+    },
+    {
+      "claim_id": "11611a9f-4ee2-4355-805e-d706ee0a5124",
+      "result_id": "7e1db6eb-a9ee-43d4-844a-d61baa300781"
+    },
+    {
+      "claim_id": "5c38d336-6b26-4bc2-b480-dc449fdfbe4e",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "ea5437a1-af3b-4543-b783-3f4d57dae789",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "a4beae9c-7a11-4e4f-84e8-e12e2a2b7606",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "99acaf9c-2f4f-4fc8-91c3-5ae7fcc2b0d3",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "62d8d383-c1d3-4ee1-b41e-829dcd94cb26",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "06c53245-472a-425e-8d48-32561a0d1fb1",
+      "result_id": "5fa94863-481d-47ec-82a4-f540caec6e27"
+    },
+    {
+      "claim_id": "caf00f4c-da53-4c3b-ab70-85fe692b7e96",
+      "result_id": "0d58838e-39da-4f8f-92a2-61f77f3d2b0b"
+    },
+    {
+      "claim_id": "1523897f-a2ea-4ae1-90ef-4252fc0ee3bb",
+      "result_id": "0d58838e-39da-4f8f-92a2-61f77f3d2b0b"
+    },
+    {
+      "claim_id": "1399b2e9-8e91-4e0b-9c7a-5c42b84ad8cc",
+      "result_id": "0d58838e-39da-4f8f-92a2-61f77f3d2b0b"
+    },
+    {
+      "claim_id": "962bd104-6e42-4506-a43b-6885f8d43966",
+      "result_id": "0d58838e-39da-4f8f-92a2-61f77f3d2b0b"
+    },
+    {
+      "claim_id": "5b71baba-41f7-4037-a770-1bfe536de61b",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "8baeb593-7714-4aad-a795-62c2dc07de54",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "ca4a3f65-aebc-40d7-b588-913fb743f22b",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "cfdc004a-71e4-419e-b3c6-d3f480f254e8",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "2bf77bfb-8e62-4c7a-a2a2-7b93b0b82324",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "9976fcf5-d497-4bb6-9d5b-76d47a3fe4d6",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "46973e1b-0b6c-4064-88a9-7f04377aace8",
+      "result_id": "407bded0-7c83-469d-b5b8-b434507b2355"
+    },
+    {
+      "claim_id": "d95ea92a-ba2a-4257-b2a7-5106db0f4f97",
+      "result_id": "9be4ae15-55aa-47c9-a22e-ec1de30fae06"
+    },
+    {
+      "claim_id": "148bdd7c-4a86-4c21-83e7-7a0dcf50b9b4",
+      "result_id": "6e57ef43-01db-4957-8a34-65151006bae7"
+    },
+    {
+      "claim_id": "58679d2f-494f-467c-bf94-affcc99d61e9",
+      "result_id": "6e57ef43-01db-4957-8a34-65151006bae7"
+    },
+    {
+      "claim_id": "0f1224bd-a7bf-4a6d-b3bc-e46f8f6e0671",
+      "result_id": "6e57ef43-01db-4957-8a34-65151006bae7"
+    },
+    {
+      "claim_id": "b90a95e4-5cda-4a97-81d6-2aacea0bbc40",
+      "result_id": "6e57ef43-01db-4957-8a34-65151006bae7"
+    },
+    {
+      "claim_id": "b95de596-acd4-4a62-8237-2bc4b646718e",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "57b5fe53-fa17-48c1-9acb-d6ec01b02202",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "e22dec8d-e7ec-4fab-8a0a-a8bbc529511b",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "9ec183f2-90cf-4ccd-816c-663810fecda4",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "86be969c-1db5-4e48-a378-298c933667b7",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "32d0e099-4c6b-46be-9941-56d7a1f3b86a",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "a166cb92-9e4b-4ee8-a545-4b0d4fc3d29d",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "4846433c-7a7f-4ecd-bebe-95e1a86fd7e0",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "73634bd0-0435-45f8-a840-be2596314135",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "21e32c19-67f2-4641-a4b8-3d49826be813",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "8c53a25c-49ae-4059-9285-54911e1e8df6",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "c3bab98b-44be-4ec1-ac3b-7a37393749ff",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "d3d71f87-598c-4e3e-b2fa-3f57a5638d83",
+      "result_id": "2cf58d28-c0f1-4671-8ff1-f3d3eda13e6e"
+    },
+    {
+      "claim_id": "43edcc2d-d8b6-4762-8b42-5ae59a4a60ca",
+      "result_id": "9be98e24-14b4-421d-af71-3ba98b581845"
+    },
+    {
+      "claim_id": "455f8a60-0cae-44e1-84eb-fa6794f6f484",
+      "result_id": "9be98e24-14b4-421d-af71-3ba98b581845"
+    },
+    {
+      "claim_id": "040e427a-3a74-4738-bac0-5f7ccf761876",
+      "result_id": "b00fbf46-d129-4467-8681-8cd18bce937d"
+    },
+    {
+      "claim_id": "9c7dbf96-1ef3-4bee-985c-9adfe1ec999b",
+      "result_id": "b00fbf46-d129-4467-8681-8cd18bce937d"
+    },
+    {
+      "claim_id": "0d9f83b4-227b-4bcd-89ab-77eecbd1d3f1",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "0967299c-7878-458a-b342-d33f19b524eb",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "93356762-f241-4246-bf5c-f458afb44a14",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "8293fc24-f741-43bd-adbf-ce6ab4a88b09",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "39017b48-dc1c-45d1-b308-d80ae3791368",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "b4c8b7b8-0048-4900-8997-37fbe920a66a",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "e102bc4f-86e2-4477-ad57-1a9477e3db57",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "adef88aa-fa33-4d8a-8123-cfff07265332",
+      "result_id": "a0dad878-838a-46e1-8ed0-c9fb7f90ea96"
+    },
+    {
+      "claim_id": "aed0efcf-69c9-493f-8a31-7d211c58742d",
+      "result_id": "3d611a40-24df-424f-9cbe-33ee64cac371"
+    },
+    {
+      "claim_id": "33d63db7-a370-43b3-9406-39512684899b",
+      "result_id": "3d611a40-24df-424f-9cbe-33ee64cac371"
+    },
+    {
+      "claim_id": "c2b3d49e-212f-483f-be11-cb2d10ee0b47",
+      "result_id": "3d611a40-24df-424f-9cbe-33ee64cac371"
+    },
+    {
+      "claim_id": "1f53fe27-250c-41f8-abbe-2e0febf3fcb6",
+      "result_id": "42ae77b5-4a6b-43f9-af3f-1748ad18e931"
+    }
+  ],
+  "comparisons": []
+}

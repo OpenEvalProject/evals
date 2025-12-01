@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mass spectrometry identified 27 high-confidence Sec24 phosphorylation sites in vivo, many conserved in the paralog Iss1. Two conserved sites (S730/S735) map to the A-site cargo-binding region that packages Sed5, a SNARE needed for both ER-Golgi traffic and autophagy. Phosphomimetic mutations at these sites (S730D/S735D) reduced Sed5 packaging, modestly impaired vesicle fusion with the Golgi, and reduced autophagic activity, while alanine mutations had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 are well-supported by mass spectrometry data (C28), structural analysis (C30), in vitro budding and fusion assays (C32-C33), and autophagy activity assays (C34-C35). The conclusion that these sites are unlikely to specify pathway choice (C36) is a reasonable inference from the dual effects on both ER-Golgi traffic and autophagy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Among conserved Sec24 phosphosites tested, only combinations of T324A, T325A, and T328A were defective in autophagy. These three sites form a patch on the membrane distal surface of Sec24, making them unlikely to regulate cargo packaging. Single and double mutant combinations showed a range of autophagy defects, with the triple alanine mutant (Sec24-3A) showing the most dramatic defect. None of the viable phosphomimetic mutants showed autophagy defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by Pho8\u039460 activity assays (C38, C41-C43) and structural analysis (C39). The inference that the membrane distal location makes these sites unlikely to regulate cargo packaging (C40) is reasonable based on structural considerations. The data consistently show that alanine mutations impair autophagy while phosphomimetic mutations do not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Translocation of GFP-Atg8 to the vacuole following nitrogen starvation was significantly reduced in Sec24-3A cells, confirmed by western blot analysis of GFP-Atg8 cleavage. The defect was less severe in the presence of Iss1, suggesting functional complementation. Phosphorylation of the membrane distal sites on Sec24 is specifically required for autophagy and not ER-Golgi traffic, as CPY processing in Sec24-3A cells is kinetically indistinguishable from wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are well-supported by fluorescence microscopy (C44, C46), western blot analysis (C45), and CPY pulse-chase assays (C49). The data clearly demonstrate that Sec24-3A specifically affects autophagy without disrupting ER-Golgi traffic, establishing a novel autophagy-specific function for these phosphorylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ER to Golgi traffic was delayed, but not blocked, during starvation, supporting the model that a subpopulation of COPII vesicles is diverted from the secretory pathway during autophagy. Expression of Sec24-3A did not rescue this delay even in an iss1\u0394 strain background, suggesting that additional sites and/or factors also participate in reprogramming COPII vesicles during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by CPY pulse-chase assay data. The observation that ER-Golgi traffic is delayed during starvation (C50) supports the model of vesicle diversion (C51). The failure of Sec24-3A to rescue the delay (C52) reasonably suggests additional regulatory mechanisms (C53), though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mutation of Sec23 sites T146/S147/S149 caused no defects in growth, Pho8\u039460 activity, or translocation of GFP-Atg8 to the vacuole, suggesting the effects observed on autophagy are specific to Sec24 and its paralog, Iss1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by growth assays, Pho8\u039460 activity assays, and fluorescence microscopy. The lack of effect of Sec23 mutations provides a good control demonstrating specificity to Sec24, though the inference of specificity (C57) could be strengthened by testing additional Sec23 sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "GFP-Atg8 puncta in nutrient rich medium were smaller, less numerous, and dependent on Atg11, consistent with Cvt vesicles. Cells expressing Sec24-3A were not defective in GFP-Atg8 puncta formation in nutrient rich medium but showed fewer puncta in rapamycin-treated cells. Sec24-3A significantly reduced the number of puncta formed but did not significantly affect their size. Processing of Ape1 was unaffected in sec24 alanine mutants, and blocking COPII vesicle budding in the sec12-4 mutant reduced GFP-Atg8 puncta number but not size. COPII vesicles are not needed on the Cvt pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 are well-supported by structured illumination microscopy (C61-C67), western blot analysis (C68), and fluorescence microscopy (C69). The data consistently show that Sec24-3A specifically affects starvation-induced autophagy (autophagosome number) but not the Cvt pathway, and does not affect autophagosome size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Fewer autophagic bodies accumulated in cells expressing Sec24-3A compared to WT Sec24 after starvation, but autophagic body size was not affected. Together these findings indicate that phosphorylation of the Sec24 membrane distal sites regulates autophagosome number, while autophagosome size or expansion is largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 are supported by transmission electron microscopy data. The quantification of autophagic body number and size provides strong evidence that Sec24 phosphorylation specifically regulates autophagosome number without affecting size, a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "T324 and T328 of Sec24 are conserved in mSec24A, suggesting the role of Sec24 in autophagy is likely to be conserved in mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is supported by structural analysis showing conservation of key residues. However, C75 is an inference based solely on sequence conservation without functional validation in mammalian cells. While the conservation is suggestive, experimental evidence in mammalian systems would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Sec24 co-immunoprecipitates with Atg9-13myc, and approximately 2.5-fold more Atg9-13myc co-immunoprecipitated with Sec24 from lysates prepared from nitrogen starved cells compared to nutrient rich conditions, demonstrating that this interaction is upregulated during starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are well-supported by co-immunoprecipitation data. The quantification shows a clear increase in the Sec24-Atg9 interaction during starvation, providing strong evidence for starvation-dependent regulation of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The C-terminus of Atg9 bound to Sec23/Sec24, while the N-terminal and middle hydrophilic Atg9 domains did not. Binding of Sec23/Sec24 to the C-terminus increased with increasing concentrations of the Sec23/Sec24 complex and appeared to be saturable. The Atg9-Sec24 interaction is dependent on Sec24, as Sec23 alone did not interact with GST-Atg9C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are well-supported by in vitro binding assay data. The experiments clearly demonstrate that the C-terminus of Atg9 specifically binds to Sec24 in a saturable manner, and that Sec23 alone is insufficient for binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Both Sec24-T325E and Sec24-T324E/T328E increased the interaction of Sec24 with GST-Atg9C in vitro, consistent with the notion that phosphorylation enhances the Sec24-Atg9 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by in vitro binding assay data. The phosphomimetic mutations clearly enhance binding to Atg9C, providing strong evidence that phosphorylation regulates this interaction. However, the use of phosphomimetic mutations is an approximation of actual phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Sec24-T324A/T325A disrupted the interaction of Sec24 with Atg9-13myc in vivo, but Sec24-T324E/T325E did not. The defect in Sec24-Atg9 interaction was more pronounced in Sec24-3A, where Sec24-T328 is also mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are well-supported by co-immunoprecipitation data. The data clearly show that alanine mutations disrupt the interaction while phosphomimetic mutations do not, and that the triple mutant has a more severe defect than the double mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Sec24-3A did not impair the trafficking of Atg9 to the PAS, indicating that Sec24 does not regulate Atg9 traffic. Together these findings imply that the C-terminus of Atg9 interacts with phosphorylated Sec24 via its membrane distal surface after Atg9 has been recruited to the PAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by fluorescence microscopy data (C89) and are reasonable inferences from the combined experimental findings (C90-C91). The data clearly show that Sec24 phosphorylation does not affect Atg9 trafficking but does affect the Sec24-Atg9 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "ERES localization of Sec13-GFP was not affected by Sec24-3A in nutrient rich or starvation conditions, suggesting Sec24-3A does not disrupt ERES formation. Thus, the major function of the Sec24 membrane distal surface is to regulate the interaction of COPII vesicles with the Atg machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by fluorescence microscopy data. Claim C93 is a reasonable inference from the combined experimental findings, though it is somewhat speculative to claim this is the \"major\" function without ruling out other potential functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Sec24-T328 fits the CK1 consensus motif and was found with low confidence to be phosphorylated by Hrr25 in vitro. Consistent with a role for Hrr25 in phosphorylating the Sec24 membrane distal patch, less Atg9 co-immunoprecipitated with Sec24 from an hrr25-5 mutant lysate. The hrr25-5 mutant showed a reduction in autophagic body number, but not size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by sequence analysis (C98), experimental data (C99), co-immunoprecipitation data (C100), and transmission electron microscopy (C101). The data consistently support a role for Hrr25 in phosphorylating Sec24 and regulating autophagosome number, though the in vitro phosphorylation was of low confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Sec24 T325E/T328E significantly rescued the Sec24-Atg9 interaction, vacuolar localization of GFP-Atg8, and GFP cleavage defect in hrr25-5, whereas Sec24 T325A/T328A did not. Therefore, phosphorylation of Sec24 is a primary function of Hrr25 during starvation induced autophagy, and the Sec24-Atg9 interaction is needed for autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 are well-supported by co-immunoprecipitation (C102-C103), fluorescence microscopy (C104-C105), and western blot data (C106-C107). The rescue experiments with phosphomimetic mutations provide strong evidence that Hrr25 functions through Sec24 phosphorylation (C108) and that the Sec24-Atg9 interaction is required for autophagy (C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Neither Hrr25 expression nor activity was altered upon nitrogen starvation. However, as CK1 kinases act preferentially on substrates that are already phosphorylated at the N-3 position, during autophagy Hrr25 may work with other kinases that create additional Sec24 phosphosites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is supported by western blot and kinase activity assay data. Claim C111 is speculation based on known properties of CK1 kinases, but is a reasonable hypothesis that could explain how Hrr25 activity is regulated during autophagy without changes in expression or activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "hrr25-5 and Sec24-3A had no effect on the PAS recruitment of Atg2, Atg5, Atg9, Atg13 or Atg14. Blocking COPII vesicle formation in the sec12-4 mutant also had no effect on the PAS localization of Atg2 and Atg14. Thus, while COPII vesicles are needed for autophagy, they are dispensable for the assembly of the Atg hierarchy. Sec24 phosphorylation does not indirectly affect autophagy by disrupting the trafficking of Atg proteins to the PAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are well-supported by fluorescence microscopy data. The data clearly demonstrate that Sec24 phosphorylation and COPII vesicle formation are not required for Atg protein recruitment to the PAS, establishing that COPII vesicles function downstream of Atg hierarchy assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "Consistent with the proposal that autophagosome formation requires the fusion of COPII vesicles with Atg9 vesicles, COPII coated structures accumulate at the PAS in the atg9\u0394 mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by fluorescence microscopy data showing accumulation of COPII structures at the PAS in the atg9\u0394 mutant. This observation is consistent with the proposed model of COPII-Atg9 vesicle fusion, though it does not directly prove fusion occurs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The finding that phosphorylation of a novel conserved regulatory surface of Sec24 is specifically required for autophagy and not ER-Golgi transport conclusively demonstrates that COPII vesicles play a direct role in autophagy, rather than an indirect role in maintaining the trafficking of autophagy machinery through the secretory pathway. Additionally, COPII vesicles have an autophagy-specific role in enhancing autophagosome number during nutrient deprivation, which is likely to be conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are well-supported by the combined experimental findings showing that Sec24 phosphorylation specifically affects autophagy without disrupting ER-Golgi traffic. The conclusion that COPII vesicles play a direct role in autophagy is strongly supported. The claim of conservation (C123) is based on sequence conservation but lacks functional validation in other organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "In higher eukaryotes, the COPII vesicles used in autophagy are spatially separated from those that traffic to the Golgi. The findings could explain how spatially segregated COPII vesicles engage the Atg machinery in higher eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129 are inferences based on observations from prior research in mammalian cells. While the speculation is reasonable, these claims are not directly tested in this study and remain hypothetical. Experimental validation in mammalian systems would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The findings ascribe a new role for Sec24 and the COPII coat, and provide a possible explanation for why the coat is retained on the vesicle subsequent to vesicle scission. Identification of a cellular mechanism that redirects the flow of membrane during autophagy makes it possible to study how complex membrane rearrangement events culminate in the formation of a distinct organelle, the autophagosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are reasonable conclusions and implications based on the experimental findings. The identification of a phosphorylation-dependent mechanism for COPII vesicle reprogramming is a significant advance, though the explanation for coat retention (C133) remains speculative.",
+    "result_type": "MAJOR"
+  }
+]

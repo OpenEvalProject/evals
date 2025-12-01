@@ -1,0 +1,1407 @@
+{
+  "submission": {
+    "id": "5dddde1c-3fa9-4155-be26-6fe17729044d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:42:32.682285Z",
+    "updated_at": "2025-11-30T20:42:32.682285Z"
+  },
+  "content": [
+    {
+      "id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "submission_id": "5dddde1c-3fa9-4155-be26-6fe17729044d",
+      "content_type": "manuscript",
+      "content_text": "# A computational approach to map nucleosome positions and alternative chromatin states with base pair resolution\n\n## Authors\n\n- Xu Zhou<sup>1</sup> ([ORCID: 0000-0002-1692-6823](https://orcid.org/0000-0002-1692-6823))\n- Alexander W Blocker<sup>4</sup>\n- Edoardo M Airoldi<sup>4</sup> \u2020\n- Erin K O'Shea<sup>1</sup> ([ORCID: 0000-0002-2649-1018](https://orcid.org/0000-0002-2649-1018)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n2. Faculty of Arts and Sciences Center for Systems Biology Harvard University Cambridge USA\n3. Howard Hughes Medical Institute, Harvard University Cambridge United States\n4. Department of Statistics Harvard University Cambridge United States\n5. The Broad Institute of MIT and Harvard Cambridge United States\n6. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUnderstanding chromatin function requires knowing the precise location of nucleosomes. MNase-seq methods have been widely applied to characterize nucleosome organization in vivo, but generally lack the accuracy to determine the precise nucleosome positions. Here we develop a computational approach leveraging digestion variability to determine nucleosome positions at a base-pair resolution from MNase-seq data. We generate a variability template as a simple error model for how MNase digestion affects the mapping of individual nucleosomes. Applied to both yeast and human cells, this analysis reveals that alternatively positioned nucleosomes are prevalent and create significant heterogeneity in a cell population. We show that the periodic occurrences of dinucleotide sequences relative to nucleosome dyads can be directly determined from genome-wide nucleosome positions from MNase-seq. Alternatively positioned nucleosomes near transcription start sites likely represent different states of promoter nucleosomes during transcription initiation. Our method can be applied to map nucleosome positions in diverse organisms at base-pair resolution.\n\n## Introduction\n\nThe eukaryotic genome is compacted into chromatin (Kornberg, 1974) which is comprised of nucleosomes, each consisting of approximately 147 base pairs (bp) of DNA wound around a histone protein octamer (Kornberg and Lorch, 1999). The helical DNA makes direct contact with the histones every 10 base pairs, with the major groove of DNA alternating between facing towards and away from the histone core (Luger et al., 1997). Shifting the histones relative to the DNA sequence by a few base pairs can change the accessibility of sequence elements to DNA binding proteins if they are located in the linker sequences between nucleosomes, or may switch these elements between facing towards and away from nucleosomes if they are located within nucleosomal DNA (Jiang and Pugh, 2009b; Segal and Widom, 2009b; Zhang and Pugh, 2011).\n\nThe location of nucleosomes with respect to DNA sequences influences many biological processes. Nucleosomes restrict the accessibility of DNA sequences to protein factors, such as transcriptional regulators and the transcription machinery (John et al., 2011; Li et al., 2007; Liu et al., 2006; Zhou and O'Shea, 2011). The positions and occupancy of nucleosomes can influence the interplay between transcription factors (Mirny, 2010) and the level (Carey et al., 2013; Kim and O'Shea, 2008), dynamics (Lam et al., 2008), and differences in gene expression between cells (Dadiani et al., 2013; Raser and O'Shea, 2004; Tirosh and Barkai, 2008). Recently, nucleosome organization has also been suggested to affect how gene promoters interpret dynamic signaling information at the single cell level (Hansen and O'Shea, 2013; Hao and O'Shea, 2012), and heterogeneity in promoter nucleosome positions has been linked to differences in gene expression (Small et al., 2014). Knowing the precise location that nucleosomes occupy with respect to DNA sequence is crucial for understanding how these biological processes are influenced by eukaryotic chromatin.\n\nGenome-wide nucleosome positions are commonly mapped with micrococcal nuclease digestion based high-throughput sequencing (MNase-seq) (Hughes and Rando, 2014). In this method, histone-DNA interactions protect DNA from MNase digestion and the protected DNA fragments are sequenced and aligned to genome sequences to infer the location of nucleosomes (Clark, 2010; Kaplan et al., 2009; Rando, 2010; Zhang and Pugh, 2011). Although MNase exhibits sequence preference when digesting DNA devoid of histones (Horz and Altenburger, 1981), genome-wide analyses of nucleosomes with MNase-based methods are generally consistent with studies using MNase-independent methods (Hughes and Rando, 2014), such as DNase I chromatin digestion (Hesselberth et al., 2009) and chemical cleavage (Brogaard et al., 2012).\n\nStudies that apply MNase-based methods typically report the position of a nucleosome as the average of the bulk nucleosome population (referred to as the 'consensus center', Figure 1A) (Struhl and Segal, 2013; Zhang and Pugh, 2011). However, if nucleosomes have overlapping positions in a significant portion of the population, the effect of averaging over heterogeneous nucleosome positions can lead to discrepancy between the consensus center of nucleosomes and the most representative nucleosome positions (Figure 1A). A variety of methods have been developed to improve the precision of nucleosome mapping from MNase-seq data, such as peak finding of nucleosome occupancy (Zhang and Pugh, 2011) and filtering of single-end digestion patterns (Weiner et al., 2010), but determining the precise locations of individual nucleosomes within a cell population remains a challenge due to substantial variability in the mapped locations of digested nucleosomes \u2013 the midpoints of paired-end sequenced nucleosomes or the endpoints of single-end sequenced nucleosomes (Figure 1B). This variability may arise from a cluster of overlapping and stably positioned nucleosomes, as well as from effects causing different degrees of digestion of the same nucleosome by MNase, such as nucleosome breathing and nuclease trimming \u2013 all of which influence the distribution of the aligned reads and are difficult to disentangle (Clark, 2010). Recently, a chemical cleavage approach that uses a genetically engineered histone H4 to chemically cleave DNA sequences in contact with the nucleosome dyad allowed direct measurement of nucleosome positions with unprecedented resolution (Brogaard et al., 2012; Moyle-Heyrman et al., 2013). However, the requirement for genetic engineering of essential histones limits its current application to genetically tractable organisms. Therefore, novel experimental or analytical approaches that are generally applicable in eukaryotes are still needed to determine the accurate positions of nucleosomes in vivo. Here, we report a computational approach to determine in vivo nucleosome positions from paired-end MNase-sequencing data.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig1-v2.jpg)\n\n**Figure 1.:** (A) Diagram illustrating the heterogeneous nucleosome positions and the consensus centers of nucleosomes along a genomic region in a population of cells. Blue ovals illustrate individual nucleosomes and dotted lines mark all nucleosome positions. (B) Example of digested nucleosome reads, their nucleosome positions and the overall occupancy. (C) Illustration of the computational pipeline of the TBB approach. Occupancy of sequencing read midpoints indicates the number of midpoints at every base pair for yeast Chr 8, 204,\u00a0500\u2013206,500 bp. Blue ovals illustrate overlapping TBB nucleosome positions and are colored according to the magnitude of their coefficients \u03b2. Two common presentations of nucleosome sequencing data are shown for comparison: the light gray area represents the nucleosome occupancy generated by smoothing sequencing read midpoints with a Parzen window approach (band size of 20 bp) (Albert et al., 2007; Tsankov et al., 2010); the dark gray area (Fragment extension) represents the nucleosome occupancy generated by extending 73 bp on both ends from the sequencing read midpoints. (D) Histogram showing the distance between adjacent TBB nucleosome positions in a combination of the T1 and T2 experiments.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Diagrams illustrating the estimation of the nucleosome digestion variability template from the length distribution of paired-end sequencing reads. The length of a sequenced DNA fragment is decomposed into the sum of the length of the nucleosome core (147 bp) and the digestion errors (\u03b51, \u03b52) on both ends. Assuming that \u03b51 and \u03b52 are sampled randomly from a distribution of the digestion error (\u03b5), the digestion error \u03b5 can be then estimated from the length distribution extracted from paired-end sequencing data, and is used to infer the nucleosome digestion variability template around a true nucleosome center.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Plots showing the length distribution of paired-end sequencing reads within gene coding regions and non-coding regions (left), and in the promoters of genes and non-promoter regions (right).\n\nApplying template-based deconvolution to experimental data has many applications in biology. For example, in super-resolution fluorescence microscopy, the locations of individual fluorophores within the diffraction limit of light can be identified by deconvoluting light intensity information with a function describing the distribution of light intensity from individual light spots (Betzig et al., 2006; Huang et al., 2009; Rust et al., 2006). Inspired by this, we use the size distribution of MNase digested nucleosome fragments to infer a digestion variability template for nucleosomes, and report a Bayesian method that makes use of these templates to identify the individual positions of nucleosomes at a base-pair resolution, hereafter referred to as the template-based Bayesian (TBB) approach. This approach can be applied to data generated through both paired-end and single-end sequencing to map chromatin structure in diverse organisms. Here we demonstrate the template-based Bayesian approach with paired-end sequencing of MNase digested nucleosomes in yeast and human cells. We show that the periodic occurrences of dinucleotide sequence motifs relative to the nucleosome dyad can be directly determined from MNase based nucleosome positions and are conserved in vivo\u00a0in both yeast and human cells. Leveraging this method, we find that alternative configurations of nucleosomes are a common feature in both yeast and human chromatin. The alternatively positioned nucleosomes around gene transcription start sites represent configurations that differ in their compatibility with the assembly of the pre-initiation complex. A 3-step model for transcription initiation can reconcile the competition between nucleosomes and the transcriptional machinery observed from genomic analysis.\n\n## Results\n\n### A Bayesian approach based on digestion variability templates can identify positions of nucleosomes at base-pair resolution\n\nWe reasoned that it might be possible to resolve the positions of multiple overlapping nucleosomes if we could estimate the degree to which MNase digestion contributes to the deviation of the midpoints from a true nucleosome center. Since the overall digestion of nucleosomes is reflected in the length of nucleosomal DNA fragments, we tested the idea that we might be able to estimate the variation in the midpoints from the length of digested nucleosomes (Figure 1\u2014figure supplement 1), and use this information to infer the positions of individual nucleosomes through deconvolution. The variability of digested nucleosomes could come from two sources: the technical variation that is associated with nuclease cleavage, such as variable trimming at nucleosome ends, and biological variation that directly influences the length of DNA wound around histones, such as nucleosome breathing and remodeling (Polach and Widom, 1995). While the technical effects are likely to affect both ends of nucleosomal DNA equally, the biological effects may create bias for specific nucleosomes and/or a specific side of the nucleosomes. However, the biological effects are generally believed to be transient and rare at a given genomic location within a population of cells (Andrews and Luger, 2011); we thus assumed that the digestion variation was equivalent at both ends of the nucleosome when averaged over the genome and population. The biological variation at individual nucleosomes could generate large shifts in read midpoints due to length differences in nucleosomes (likely by multiples of 10 bp due to the unwrapping of each helical turn of DNA), and could be identified as alternative nucleosome positions if they were present in a significant fraction of the bulk nucleosome population. Nucleosomes with substantially smaller size, such as sub-nucleosomes (Rhee et al., 2014), can be identified based on the sequenced fragment size (<100 bp) and were excluded from our analysis.\n\nThe template-based Bayesian approach includes four major steps (Figure 1C, see Materials and methods). First, we estimated the distribution of MNase digestion variability from the length distribution of DNA sequencing reads, assuming that MNase digestion is not biased towards either end of the\u00a0nucleosome on average. This produced a digestion variability template, describing the overall deviations in read midpoints relative to the true nucleosome center (Figure 1\u2014figure supplement 1). Second, each chromosome was segmented into regions with similar sequencing coverage to increase detection sensitivity, with a requirement to maintain sufficient segment length for estimating statistical properties of nucleosome positions. Third, within each segment, the occupancy of read midpoints (the number of paired-end read midpoints at each base pair, Figure 1C, gray trace) was deconvoluted with the digestion variability template to estimate the expected read occupancy at every base pair if digestion errors had not occurred (coefficient \u03b2, Figure 1C, black trace). Finally, the locations of nucleosomes were summarized based on this expected read occupancy and statistical thresholds. To control for falsely identified nucleosome positions arising from the sequence preference of MNase, we set the statistical thresholds using a false discovery rate (FDR\u22640.05) estimated based on a simulated MNase digestion dataset that matches the experimentally observed digestion sequence distribution. In our study, the length distribution of paired-end sequencing reads from the gene coding and promoter regions was indistinguishable from the rest of the genome (Figure 1\u2014figure supplement 1\u20132). Therefore, a single digestion variability template was applied across the yeast genome.\n\nWe represented the locations of nucleosomes using two metrics: the consensus centers of nucleosomes and the TBB positions of nucleosomes (Supplementary file 1). The consensus centers of nucleosomes were defined to represent non-overlapping nucleosomes with a minimum size of 147 bp (Figure 1C, blue bars), by applying a Gaussian window smoothing method to the expected read occupancy (coefficient \u03b2) from our model \u2013 they are equivalent to the nucleosome positions commonly described in the literature (Albert et al., 2008; Jiang and Pugh, 2009b; Struhl and Segal, 2013) (hereafter termed \u2018consensus centers\u2019). The TBB nucleosome positions describe the center locations of individual nucleosomes across the genome without limitation on minimum spacing (Figure 1C, red dots and blue ovals) (hereafter termed \u2018TBB nucleosome positions\u2019), which represent individual stably positioned nucleosomes over a statistical threshold.\n\n### Accurate estimation of nucleosome positions at base-pair resolution\n\nWe titrated MNase to digest yeast chromatin and selected for analysis two nucleosome samples that were digested to different sizes (\u2018T1\u2019 and \u2018T2\u2019, Figure 2\u2014figure supplement 1). Both samples were digested to primarily mono-nucleosomes without generating over-represented sub-nucleosome fragments. We generated paired-end data sets of 'T1' and 'T2', each with a coverage of ~2.8 read midpoints per base pair; as an average between these two data sets, we identified ~61,800 consensus centers of nucleosomes and ~125,000 TBB nucleosome positions, covering at least 75.5% of the S. cerevisiae genome. The spacing between adjacent TBB nucleosome positions peaked at 11 and 21 bp (Figure 1D), consistent with the rotation of DNA sequence by one or two helical turns around histone cores (Albert et al., 2007; Brogaard et al., 2012), and suggesting that the same nucleosome commonly occupies overlapping configurations in different cells.\n\nThe consensus centers of nucleosomes identified by the template-based Bayesian approach were consistent with the published methods employing Gaussian smoothing algorithms (often referred to as 'Parzen window') (Albert et al., 2007, 2008; Clark, 2010; Tsankov et al., 2010) (Figure 2A), with more than 90% of the nucleosomes matching within a single base pair (Figure 2\u2014figure supplement 2). These consensus centers also showed general agreement with the published nucleosome reference maps (Jiang and Pugh, 2009a) (Figure 2B and Figure 2\u2014figure supplement 3), validating the overall biological relevance of our data sets. We then evaluated the accuracy of our identified TBB nucleosome positions by comparing them to individual nucleosome positions mapped through a recently reported chemical approach (Brogaard et al., 2012), which provides a reference that is independent of MNase cleavage specificity. The nucleosome positions identified by these two approaches were consistent (Figure 2C and Figure 2\u2014figure supplement 4), demonstrating that the TBB approach can precisely map the positions of individual nucleosomes. Further, we assessed the absolute precision of the TBB approach by using it to map nucleosome positions from in silico generated MNase-seq data sets where the simulated nucleosome positions are known. We systematically tested the precision of the\u00a0TBB approach with varying sequencing coverages, relative nucleosome population abundance and spacing among overlapping nucleosomes (Figure 3 and Material and Methods). The majority of the TBB nucleosome positions identified in these simulated data sets were within 2\u20133 bp of the originally simulated nucleosome positions, even for the cases where nucleosome positions were separated by only 10\u201315 bp or differ by more than 3-fold in their relative occupancy (Supplementary file 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-v2.jpg)\n\n**Figure 2.:** Histogram of the nearest distance: (A) between the consensus centers of nucleosomes determined by the TBB approach and by the Parzen window approach; (B) between the consensus centers determined by the TBB approach and the reference MNase nucleosome positions (Jiang and Pugh, 2009a); (C) between the TBB nucleosome positions and the nucleosome positions mapped by the chemical approach (Brogaard et al., 2012); (D,E) between the consensus centers of nucleosomes (D) and the TBB nucleosome positions (E) mapped in two independent experiments. The median of the distance between matched consensus centers or TBB nucleosome positions is reported for each comparison. (F) Example of stable TBB positions that are tolerant to MNase digestion, chr 8, 341651 \u2013 341771. Randomly selected reads fragments are shown to represent the locations of sequenced tags.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) Titration of MNase digestion for obtaining mononucleosomes. T0, T1, T2 and T3 correspond to MNase digestion with 0.5U, 1U, 2U and 4U MNase. (A) Bioanalyzer analysis of purified nucleosomal DNA after MNase digestion. The mononucleosome fractions of the second and third samples were isolated for paired-end sequencing, termed 'T1' and 'T2', respectively. (B) Quantification of the molar fraction of mono-, di- and tri-nucleosomal DNA for the samples in (A). (C) Read length distribution of all digested samples with fragment length over 100 bp.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Cumulative distribution of the nearest distance between the consensus centers of nucleosomes determined by the TBB approach and by the Parzen window approach. Circles mark the distance that matches 50% and 75% in the cumulative probability distribution.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Red traces and gray traces show the cumulative distribution of the nearest distance between the consensus centers determined by the TBB approach (red) or randomly generated consensus centers (gray) and the reference MNase nucleosome positions (Jiang and Pugh, 2009a). Circles mark the distance that matches 50% and 75% in the cumulative probability distribution.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Magenta traces and gray traces show the cumulative distribution of the nearest distance between the TBB nucleosome positions (magenta) or randomly generated nucleosome positions (gray) and the nucleosome positions mapped by the chemical approach (Brogaard et al., 2012). Circles mark the distance that matches 50% and 75% in the cumulative probability distribution.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Green traces and gray traces show the cumulative distribution of the nearest distance between between the TBB consensus centers (green) or randomly generated consensus centers (gray) mapped in two independent experiments. Circles mark the distance that matches 50% and 75% in the cumulative probability distribution.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** Blue traces and gray traces show the cumulative distribution of the nearest distance between between the TBB nucleosome positions (Blue) or randomly generated nucleosome positions (gray) mapped in two independent experiments. Circles mark the distance that matches 50% and 75% in the cumulative probability distribution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig3-v2.jpg)\n\n**Figure 3.:** (A) Plots summarizing the distance between the detected TBB nucleosome positions in the in silico datasets and the nearest simulated primary and alternative nucleosome positions. ('C', total sequencing coverage of all overlapping nucleosomes; 'E', the effective magnitude (relative occupancy of neighboring nucleosomes); and 'O', the offset (spacing between nearby nucleosome positions). (B) Examples of nucleosome detection in the simulation at different coverage, effective magnitude and offset (different values are highlighted in red). Sequencing read midpoints (gray) were distributed randomly around the simulated nucleosome positions (blue dots) according to the digestion variability template. The coefficients (blue trace) and nucleosome positions (red dots) determined by the TBB approach are shown for comparison.\n\nThe accuracy and reproducibility of MNase-based mapping of nucleosomes may be limited by MNase digestion variability. The degree to which chromatin is digested by MNase depends on the DNA sequence and the preparation of nucleosomal DNA samples (Dingwall et al., 1981; Horz and Altenburger, 1981), and may differ significantly between experiments even when experimental protocols have been carefully followed. To evaluate the tolerance of the TBB nucleosome positions to different levels of MNase digestion, we compared the consensus centers and TBB nucleosome positions in the \u2018T1\u2019 and \u2018T2\u2019 data sets that represent digestion to different fragment sizes (Figure 2\u2014figure supplement 1). Both the consensus centers and the TBB nucleosome positions were in agreement between these two experiments (Figure 2D\u2013E, Figure 2\u2014figure\u00a0supplements 5\u20136), with a median difference of 2 bp across the genome; in comparison, randomly generated consensus centers and nucleosome positions gave rise to a median difference of 49 bp and 36 bp, respectively. Individual nucleosome positions can be reliably detected regardless of the differences in MNase digestion (Figure 2F), demonstrating the robustness of the determined nucleosome positions to digestion variability. Overall, these results demonstrate that the positions of nucleosomes can be reliably and accurately detected at base-pair resolution with paired-end MNase-seq coupled with the template-based Bayesian approach.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013C) Normalized frequency of AA/AT/TA/TT and CC/CG/GC/GG dinucleotides of DNA sequences aligned at the centers of nucleosomes, for all TBB nucleosome positions in yeast, both before (A) and after (C) correction for MNase digestion bias, and for all TBB nucleosome positions on human chromosome 12, position 38,000,000 bp to 48,000,000 bp, a 10\u00a0Mbp region randomly chosen in the human genome (B). (D) The frequency of AA/AT/TA/TT for 62,035 randomly selected TBB nucleosome positions (blue trace), and for genome locations with an average distance of either 2 bp (orange trace) or 5 bp (black trace) from these selected TBB nucleosome positions. The distance was randomly perturbed by between 0\u20134 bp or 0\u201310 bp for each nucleosome positions, respectively.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (left) Dinucleotide frequency for all 62,035 consensus centers of nucleosomes identified in experiment T1. (right) Dinucleotide frequency for all consensus centers of nucleosomes identified on human chromosome 12, position 38,000,000 bp to 48,000,000 bp.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (left) Dinucleotide frequency for 62,035 randomly selected sequence fragments that are exactly 147 bp in length in experiment T1. (right) Dinucleotide frequency for all human nucleosome reads that are exactly 147 bp in length.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Dinucleotide frequency for 62,035 (the same number as consensus centers) randomly selected TBB nucleosome positions from experiment T1.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Dinucleotide frequency for TBB positions from experiment T1(blue, pink) and the nucleosome positions determined from the simulated MNase digestion data set (gray).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig5-v2.jpg)\n\n**Figure 5.:** (A,B) Examples of a uniquely positioned nucleosome (A), and alternatively positioned nucleosomes at the TSS (B). Blue and magenta traces show the sequencing read midpoint occupancy and fitted coefficient \u03b2 from experiments \u2018T1\u2019 and \u2018T2\u2019, respectively. Ovals indicate the TBB nucleosome positions and are colored based on coefficients \u03b2. (C) Heat map showing the TBB nucleosome positions ('Positions'), the occupancy of read midpoints from two experiments (T1 and T2), and the occupancy of read midpoints from the two MNase bias simulations ('T1 DG control' and 'T2 DG control'). All data are aligned by the centers of selected unique or alternative nucleosome positions (essentially the consensus center of +1 nucleosomes) that overlap with the transcription start site (TSS) (4672 open reading frame in total). The order of transcripts is ranked by the maximum space between TBB nucleosome positions within each group, as illustrated by the diagrams on the left. The positive direction of the x-axis indicates 5\u2019 to 3\u2019 for all transcripts. (D) Correlation coefficient of the sequencing read midpoint occupancy (un-smoothed) in experiment T1 and T2 for each gene in panel C. (E) Graph showing the end location of paired-end sequencing reads of the upstream and downstream nucleosomes in panel C (later defined as the proximal and distal nucleosomes, respectively). The ends are aligned at the position of upstream nucleosomes (proximal nucleosomes). (F) Length distribution of paired-end sequencing reads in the unique, proximal and distal nucleosomes at gene promoters. In both (E) and (F), if the midpoint of a sequencing read is within 5 bp of the position of a nucleosome, it is counted as a read of this nucleosome.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Bar graphs showing the ratios of the reads corresponding to alternatively positioned nucleosomes. The genes are the same as the panels in Figure 5C from the top to the bottom. Numbers on top of each panel indicate their ranks in Figure 5C. The ratios of the reads were calculated by dividing the total number of sequencing read midpoints 60 bp to the left of the group center by the total number of sequencing read midpoints 60 bp to the right of the group center, and were binned on a log2 scale. The standard deviation of the read ratios on a log2 scale (std) is labeled in the top right corner for each graph.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Heatmaps are the same as Figure 5C, except that the position clusters with more than 2 positions are excluded. (B) Plots show the average midpoint occupancy of genes in groups of 1000. (C) Bar graphs are the same as Figure 5\u2014figure supplement 1, except that the clusters with more than 2 positions are excluded.\n\nSeveral methods have been developed to determine the genome-wide locations of nucleosomes, each of which addresses different experimental and computational issues (Albert et al., 2007a; Brogaard et al., 2012; Polishko et al., 2012; Schep et al., 2015; Tirosh, 2012; Tsankov et al., 2010; Valouev et al., 2011; Weiner et al., 2010; Zhong et al., 2016). We briefly summarized the approaches, performance and limitations of these methods for reference (Supplementary file 3).\n\n### Dinucleotide periodicity is a conserved determinant of in vivo nucleosome positioning\n\nNucleosomes in vivo are thought to be enriched for genome sequences that show a pattern of periodic AA/AT/TA/TT or CC/CG/GC/GG motifs that oscillate every 10 bp with opposite phases (Albert et al., 2007a; Brogaard et al., 2012; Gaffney et al., 2012; Kaplan et al., 2009; Mavrich et al., 2008; Satchwell et al., 1986; Segal et al., 2006). This dinucleotide sequence pattern matches the bending property of preferred nucleosomal DNA sequences, as the double stranded DNA is twisted and bent to maintain contact with the histone cores (Drew and Travers, 1985). However, this periodic pattern was not observed around the consensus centers of nucleosomes determined using MNase based mapping methods (Valouev et al., 2011) (Figure 4\u2014figure supplement 1) and only emerged from nucleosome fragments selected to be exactly 147 bp (Figure 4\u2014figure supplement 2) (Albert et al., 2007a; Gaffney et al., 2012; Kaplan et al., 2009), perhaps due to the imprecision of the determined nucleosome centers.\n\nIn contrast, when we aligned DNA sequences at the TBB nucleosome positions in yeast, the dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displayed 10 bp periodicity across almost the full length of the nucleosome core (Figure 4A and Figure 4\u2014figure supplement 3), illustrating the power of the TBB approach to precisely map nucleosome positions from MNase-based methods. To control for the influence of MNase digestion bias, we simulated MNase digestion based on its observed sequence preference (Gaffney et al., 2012), and identified nucleosome positions from the in silico MNase digestion data set. We used these in silico nucleosome positions to normalize the bias that was merely a result of MNase digestion (Figure 4\u2014figure supplement 4). After these corrections, we observed dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displaying 10 bp periodicity (Figure 4C), consistent with the dinucleotide frequency around the chemically determined nucleosome positions in yeast (Brogaard et al., 2012). Randomly shifting the determined TBB nucleosome positions by an average of 2 bp greatly reduced the observed dinucleotide periodicity and shifting the positions by an average of 5 bp completely eliminated the periodic pattern (Figure 4D), demonstrating the importance of precisely mapping nucleosome positions in vivo.\n\nPaired-end nucleosome sequencing has been used to map chromatin structure in higher eukaryotes (Gaffney et al., 2012), but a base-pair resolution nucleosome map has been lacking for organisms other than yeast. We applied the TBB approach to determine the positions of human nucleosomes from a recent paired-end MNase-seq study (Gaffney et al., 2012). The frequency of AA/AT/TA/TT and CC/CG/GC/GG motifs displayed clear 10 bp periodicity relative to human TBB nucleosome positions, which was comparable to the motif periodicity observed in yeast (Figure 4A and B, Figure 4\u2014figure supplement 2). In contrast, when DNA sequences were aligned at the consensus centers of human nucleosomes, the frequency of these dinucleotide motifs did not exhibit a clear periodicity with respect to the consensus centers (Figure 4\u2014figure supplement 1). With the template-based Bayesian approach, we demonstrated that nucleosome positions determined from MNase-based methods indeed present periodic dinucleotide frequency globally, and that this feature may be a conserved signal for nucleosome positioning in vivo.\n\n### Heterogeneous nucleosome positions at the TSS\n\nPositioning of nucleosomes over yeast transcription start sites (TSSs) is influenced by promoter sequence signals and trans acting factors (Jiang and Pugh, 2009b; Radman-Livaja and Rando, 2010; Segal and Widom, 2009b). This observation, together with our finding that overlapping positions are commonly observed in yeast and human chromatin, motivated us to examine the relationship between TSSs and overlapping nucleosome positions (resulting from alternative positions). We identified all TBB nucleosome positions that were closely associated with TSSs (Jiang and Pugh, 2009a) and organized them into groups consisting of either unique or overlapping TBB nucleosome positions for each gene (Figure 5A and B). If a group contained several overlapping TBB nucleosome positions, the center of this group was defined as the numeric average of these positions. All groups were aligned at their centers and ranked by the spacing between TBB nucleosome positions within the groups (Figure 5C). The TBB nucleosome positions exhibited a bimodal shape for at least three quarters of the genes with nucleosome-covered TSSs (Figure 5C, \u2018positions\u2019), suggesting that alternative positioning is a common feature of nucleosomes near TSSs. The number of sequenced read midpoints showed the same bi-furcating shape and was highly consistent between two experiments (Figure 5C, \u2018T1 midpoints\u2019 and \u2018T2 midpoints\u2019). The occupancy of nucleosome midpoints at each gene correlated well between two experiments (T1 and T2), indicating alternative nucleosomes can be reliably observed (Figure 5D). The distribution of read midpoints was symmetric along the direction of gene transcription (Figure 5\u2014figure supplement 1), and could\u00a0not be explained by the sequence bias of MNase digestion (Figure 5C). When we examined the midpoints attributed to each nucleosome position within each group (Figure 5\u2014figure supplements 1\u20132), we found that most groups showed less than 2-fold variation in the read occupancy between alternative TBB nucleosome positions, suggesting that the different positions are significantly represented in the cell population and therefore are likely of biological relevance. These alternative positions were not a consequence of differential digestion at nucleosome edges (Weiner et al., 2010), as both ends of paired-end sequencing reads showed two peaks that match the edges of alternatively positioned nucleosomes (Figure 5E). Differential digestion at nucleosome edges would produce two peaks of read ends on one side and just one peak on the other read end (Weiner et al., 2010). Of the genes with their TSSs covered by nucleosomes, approximately one quarter contain more than two TBB nucleosome positions at TSSs, suggesting that chromatin structure at the transcription initiation site is complex and heterogeneous.\n\n### Alternative chromatin states and transcription initiation\n\nAlternative positions of nucleosomes around the TSS may allow the transcription start site of a gene to be exchanged between accessible and inaccessible states. To determine if this is the case, we analyzed the location of transcription start sites with respect to the alternative TBB nucleosome positions. We defined the nucleosome with its center position closer to the TSS as the 'proximal' nucleosome, and the nucleosome with its center position further away from the TSS as the 'distal' nucleosome (Figure 6A). The unique, proximal and distal nucleosomes were digested by MNase to similar sizes, further suggesting that the alternative nucleosome positions are not a result of MNase digestion bias (Figure 5F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig6-v2.jpg)\n\n**Figure 6.:** (A) Plots (left) showing the locations of TSSs relative to the average centers of all overlapping TBB nucleosome positions shown in Figure 3C ('All', black) to uniquely positioned nucleosomes (magenta) and to the distally (red) and proximally (cyan) positioned nucleosomes. The gray area marks the region covered by the nucleosome core. The cartoon diagrams on the right illustrate the location of the TSS relative to the nucleosome dyad. (B) Area showing the average occupancy of subunits of the pre-initiation complex (TBP, TFIIA, TFIIB, TFIID, TFIIE, TFIIF, TFIIH, TFIIK and RNA polymerase II (Pol II); determined by ChIP-exo) (Rhee and Pugh, 2012) aligned at the center of the proximal (cyan) and the distal nucleosomes (red), determined by the TBB approach. (C) Bar graph showing the distribution of TATA box and TATA-like sequences of all genes (Rhee and Pugh, 2012) aligned at the dyad of the proximal nucleosomes. (D) Illustration of the 3-step model for transcription initiation mediated by alternatively positioned nucleosomes.\n\nAmong uniquely positioned nucleosomes, TSSs weree enriched ~10 bp inside the boundary of the nucleosome core (Figure 6A, magenta curve). Among the alternatively positioned nucleosomes, the proximal nucleosomes were located much closer to the TSS where the nucleosome core restricts the accessibility of these factors and therefore competes for active transcription (Figure 6A, cyan curve). For the distal nucleosomes, TSSs were aligned near the edge of the nucleosome core (Figure 6A, red curve), making these sites and the upstream regulatory elements accessible to other DNA binding factors. Alternatively positioned nucleosomes at TSSs gave rise to different accessibilities of the promoter elements within a population of cells, which may reflect the\u00a0different activities in gene transcription. If one focused only on the average centers of these nucleosomes (essentially the consensus centers of the +1 nucleosomes), one would draw the conclusion that nucleosomes occlude the TSSs of most genes (Figure 6A, black line).\n\nTo explore how alternative TBB nucleosome positions might influence transcription, we focused on the initial steps of this process: the assembly of the transcription pre-initiation complex (PIC), which generally requires binding of TBP (TATA-binding protein); and the subsequent recruitment of general transcription factors and RNA polymerase II (Pol II) (Buratowski et al., 1989; Green, 2000; Orphanides et al., 1996; Roeder, 1996). Recently, it was suggested that the +1 nucleosome downstream of the TSS assists in the assembly of the PIC (Rhee and Pugh, 2012). However, the binding of the PIC extends into the boundary of the +1 nucleosomes (Rhee and Pugh, 2012), presenting a physical conflict between PIC binding and nucleosomes. To test if the resolution of alternatively positioned nucleosomes would provide a better understanding of the interplay between nucleosomes and the assembly of the PIC, we analyzed the occupancy of the PIC (determined with the ChIP-exo method (chromatin immunoprecipitation with lambda exonuclease digestion) by Rhee and Pugh [Rhee and Pugh, 2012]) around the identified distal and proximal nucleosomes, respectively. Most subunits of the PIC, including TBP, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH and TFIIK, showed peak enrichment at the edge of the distally positioned nucleosome (Figure 6B, cyan), suggesting that the +1 nucleosome in the distal position marks a boundary for the assembly of the PIC. This boundary may be provided by the positioned nucleosomes or by binding of one or more components of the transcription complex. In contrast, the proximally positioned nucleosome covered most of the regions enriched for PIC binding (Figure 6B, red), suggesting that the +1 nucleosome in the proximal position is not compatible with the binding of transcription machinery. Intriguingly, TATA-box and TATA-like sequences were enriched in front of the proximal nucleosomes (Figure 6C), suggesting that proximal nucleosomes do not block recognition of most TATA elements. Thus, the proximal nucleosome may represent a promoter state that\u00a0is\u00a0not associated with active transcription and is populated prior to the assembly of the PIC (Figure 6D, Proximal state). The distal nucleosome may represent a promoter state in the process of transcription initiation (Figure 6D, Distal state). Once transcription begins, the barrier of nucleosomes no longer hinders Pol II as its occupancy extends through the region covered by the +1 nucleosome (Figure 6B).\n\nThe location of uniquely positioned nucleosomes relative to TSSs was similar to that of the distal nucleosomes (Figure 6A, magenta and red curves), suggesting that the binding and assembly of PIC may encounter less competition from chromatin at these genes. We found that genes with uniquely positioned nucleosomes at their TSSs were enriched in highly expressed genes (Newman et al., 2006) (top 500 genes, p\u00a0=\u00a00.001, Fisher\u2019s exact test). More strikingly, we found that 73% of the genes encoding ribosomal proteins had TSSs with uniquely positioned nucleosomes (p<0.00001, Fisher\u2019s exact test), highlighting a connection between the configuration of nucleosomes (unique vs alternative) and gene expression.\n\n### Sequence determinants of unique and alternative chromatin states\n\nDNA sequence features, such as periodic occurrence of dinucleotides (AA/AT/TA/TT or CC/CG/GC/GG) and consecutive dA or dT sequences (poly(dA:dT)), can influence nucleosome positions (Struhl and Segal, 2013). We therefore tested the possibility that DNA sequence determinants may underlie the difference between uniquely, proximally, and distally positioned nucleosomes around TSSs. The frequency of dinucleotides occurred periodically ~10 bp from the positions of either proximal or distal nucleosomes and resembled the periodic feature of nucleosomes in yeast genome (R2 = 0.75, Figure 7A). This periodicity was less pronounced in the uniquely positioned nucleosomes (R2 = 0.40 between dinucleotide frequency in uniquely positioned nucleosomes and all nucleosomes in yeast genome; Figure 7A). Autocorrelation analysis of the dinucleotide frequency revealed a lack of periodicity in DNA sequences around the uniquely positioned nucleosomes, further highlighting the difference between uniquely and alternatively positioned nucleosomes (Figure 7B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16970/elife-16970-fig7-v2.jpg)\n\n**Figure 7.:** (A) Plots showing the frequency of AA/AT/TA/TT and CC/CG/GC/GG dinucleotides of DNA sequences aligned at the TBB nucleosome positions of either unique, proximal or distal nucleosomes at gene promoters (illustrated by the diagrams). (B) Plots showing the normalized dinucleotide frequency (smoothed with a 3 bp window) of DNA sequences aligned at unique nucleosomes, alternative nucleosomes (proximal + distal) at gene promoters or all TBB nucleosome positions, and the autocorrelation analysis (performed in MATLAB) of the dinucleotide frequency within nucleosome core (\u221273\u201373 bp). (C,D) Plots showing the frequency of poly(dA:dT)6 sequences aligned at unique nucleosomes or the average centers of alternatively positioned nucleosomes. The positive direction of the x-axis indicates 5\u2019 to 3\u2019 for all transcripts. Black arrows mark the enriched poly(dA:dT)6 signals. Overall, 1172 genes contain unique nucleosomes and 3469 genes contain proximal and distal nucleosomes at their promoters. Gray traces present the analysis for a random permutation control of selected promoters and the location of nucleosome positions (A,C,D). The number of these random locations matches the number of nucleosomes in each plot.\n\nPoly(dA:dT) tracks are important for nucleosome depletion and correlate with transcriptional activity (Hughes et al., 2012; Iyer and Struhl, 1995; Raveh-Sadka et al., 2012; Segal and Widom, 2009a; Struhl, 1985). When we examined the occurrences of poly(dA:dT) sequences at least 6 nucleotides in length, we found that the uniquely positioned nucleosomes were flanked by a strong enrichment of poly(dA:dT)6 sequences (Figure 7C). A similar but weaker enrichment of poly(dA:dT)6 sequences was also observed flanking both the proximally and the distally positioned nucleosomes (Figure 7D). In comparison, no enrichment of poly(dA:dT)6 sequences was observed in randomly selected DNA sequences (Figure 7C and D, gray curve). Overall, uniquely positioned nucleosomes and alternatively positioned nucleosomes presented different DNA sequence features, suggesting that these sequence determinants may contribute to the different configurations of chromatin states at gene promoters.\n\n## Discussion\n\nKnowing the precise location of nucleosomes in vivo is key to understanding how diverse biological processes are regulated (Jiang and Pugh, 2009b). Although MNase-seq methods have been widely used for mapping nucleosomes in many organisms, the commonly reported consensus centers of nucleosomes do not precisely reflect the location of nucleosomes with respect to DNA sequence. We developed a new computational method to accurately determine the positions of nucleosomes at base pair resolution based on paired-end sequencing data, providing a general and accessible approach to accurately map the basic chromatin structure in eukaryotes.\n\nThe periodicity in the frequency of dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs has been observed in vivo in several organisms, including unicellular fungi (Albert et al., 2007a; Brogaard et al., 2012), insects (Mavrich et al., 2008), chicken (Satchwell et al., 1986) and human (Gaffney et al., 2012), and was thought to strongly influence the positioning of nucleosomes (Kaplan et al., 2009; Struhl and Segal, 2013). However, this feature was only obvious when the sequences of nucleosomal DNA fragments exactly 147 bp in length were selected for analysis (Albert et al., 2007a; Gaffney et al., 2012; Mavrich et al., 2008; Segal et al., 2006), and was much weaker or even disappeared around the consensus centers of nucleosomes that were determined with an entire data set (Brogaard et al., 2012; Valouev et al., 2011). Thus, differences in the\u00a0selection and analysis of MNase-seq data may result in different conclusions about nucleosome positioning in vivo\u00a0(Gaffney et al., 2012; Valouev et al., 2011). With the high-precision nucleosome position maps generated by TBB, we directly demonstrated that the DNA sequences around the mapped nucleosome positions exhibited 10 bp periodicity in the frequency of dinucleotide motifs in both yeast and human cells, arguing that this sequence feature is a universal signal for positioning nucleosomes in vivo at the whole genome level.\n\nPositioning of nucleosomes is dynamic and linked to many biological processes. Identifying overlapping nucleosome positions that cannot co-exist on the same DNA molecule at the same time provides a snapshot of possible chromatin states in dynamic processes. We observed at least two states of chromatin where gene transcription is initiated: a state where a nucleosome covers the transcription start site and competes with transcription machinery, but leaves the core promoter sequences mostly accessible ('proximal state'); and another state where a nucleosome barely covers the transcription start site and seems poised for the assembly of the pre-initiation complex ('distal state'). We propose a 3-step model (Figure 6D) to describe the transcription initiation steps influenced by nucleosomes, including a state where RNA polymerase transcribes through the nucleosome covered sequence ('open state'). The transition from the 'proximal state' to the 'distal state' and to the 'open state' could be actively driven by the assembly of the PIC; in this case, different nucleosome states may reflect rate-limiting steps during transcription initiation. Alternatively, this transition could be controlled by transcription factors, chromatin modulators and even the preference of DNA sequences as a means to regulate and assist gene transcription. Interestingly, we found that TSSs of highly expressed genes are enriched with uniquely positioned nucleosomes, which resemble nucleosomes in their 'distal state'. It is possible that the +1 nucleosomes of these most highly expressed genes are oriented in a way that allows constitutive assembly of the PIC and therefore frequent transcription activity. Further genomic analysis and mechanistic studies will shed light on the generalization and the underlying principles of this model.\n\nDNA sequences may play a role in determining whether nucleosomes have unique or alternative positions. Unique nucleosome positions may result from the combination of the strong nucleosome boundary signal from poly(dA:dT) sequences and the lack of a rotational positioning signal from periodic dinucleotide motifs. Conversely, alternatively positioned nucleosomes may be a consequence of a weak boundary signal and a strong rotational positioning signal that allows nucleosomes to interconvert between multiple equivalent positions. The exact positions of these nucleosomes and how alternative nucleosomes are positioned relative to each other may be further controlled by other factors associated with promoters, such as chromatin modifiers, remodelers and transcription factors. The configurations of nucleosomes (unique vs. alternative) may influence the transcription of a gene; if promoter DNA sequences contain information that helps to specify the nucleosome configurations, eukaryotic genome could use nucleosome configurations as\u00a0a means to encode transcriptional programs.\n\nIt is worth noting that the template-based Bayesian approach does not capture all possible positions of nucleosomes within the cell population \u2013 it identifies the nucleosome positions that are represented with strong statistical confidence (Materials and methods), reflecting the different configurations of nucleosomes that are likely to be relevant in biological processes. Revealing these heterogeneous configurations of nucleosomes in cells will provide new insights into how chromatin regulates or is influenced by biological processes. Furthermore, mutually exclusive positions of protein-DNA complexes can imply dynamic information. As an example, the alternatively positioned nucleosomes at TSSs suggest a change in chromatin structure during transcription initiation. Similar analytic approaches can be applied to other systems to reconstruct dynamic processes.\n\n## Materials and methods\n\n### Nucleosomal DNA preparation\n\nDetailed conditions of cell culture, chromatin isolation, MNase digestion and DNA extraction have been previously described (Zhou and O'Shea, 2011). Briefly, 100 OD600 units of yeast cells (EY57; genotype K699, ade2-1 trp1-1 can1-100 leu2-3,112 his3-11,15 ura3 GAL+) growing in synthetic complete medium at 30\u00b0C with shaking were harvested at OD600 ~0.5 for each experiment. Cells were crosslinked with 1% formaldehyde for 15 min at room temperature and quenched with 125\u2009mM glycine for 5 min. Collected cells were lysed mechanically with glass beads at 4\u00b0C with Mini-Beadbeater-24 (Biospec) in lysis buffer (50\u2009mM HEPES, pH 7.5, 150\u2009mM NaCl, 2\u2009mM EDTA, 1% Triton X-100, 0.1% Sodium-Deoxycholate) and the chromatin pellet fraction was digested with either 0.5, 1, 2 or 4 U MNase (Worthington Biochemical) at 37\u00b0C for 30 min. DNA fragments corresponding to mono-nucleosomes were extracted from an agarose gel after electrophoretic separation.\n\n### Sequencing library preparation and read mapping\n\nFor each experiment, 0.5\u2009\u03bcg of mono-nucleosomal DNA (~5 pmol) was used for sequencing library construction according to the Illumina Truseq paired-end protocol. ~1 pmol of paired-end ligated library was recovered from the agarose gel for each experiment before PCR amplification. Since the amount of ligated library was sufficient for sequencing, we only performed 4 cycles of PCR amplification with the Illumina primer cocktail to obtain a double stranded sequencing library. The number of sequencing clusters generated on the flow-cell represented at most 1/10,000 of the amplified library, such that the chance was very small to have more than one copy of duplicated library molecules clustered on the flow-cell (p<1.8\u00a0\u00d7\u00a010\u20135, binomial distribution). Therefore, we treated each paired-end read as an individual nucleosome from a single cell. Libraries were sequenced with an Illumina Hiseq 2000 and the paired-end sequencing reads were aligned to the S. cerevisiae genome Scer02 with bowtie 2.0 (Langmead et al., 2009). We mapped reads with two or fewer mismatches, and insert lengths were restricted to sizes between 100 bp and 300 bp. Reads with multiple reportable alignments were randomly assigned to one such alignment. The midpoints of all sequenced DNA fragments were randomly rounded to an integer genomic coordinate and used to generate sequencing read midpoint occupancy maps.\n\nWe obtained 33.7 million and 34.3 million mappable paired-end reads for the T1 and T2 experiments, respectively. All analyses presented in this work were done with the T1 dataset unless specified.\n\n### Detection of consensus centers and TBB nucleosome positions\n\nThe consensus centers of nucleosomes were determined based on the fitted coefficient \u03b2 with a standard Parzen window peak calling method (Tsankov et al., 2010). TBB nucleosome positions were determined at FDR \u2264 0.05, where the null distributions of nucleosome positions were estimated from randomly sampled nucleosome reads distributed based on the local read density. We developed two different null distributions: a random null distribution where simulated sequencing reads were assumed to be uniformly distributed within each region, and an MNase digestion-aware null where the simulated sequencing reads were sampled to match the observed dinucleotide end frequency of the paired-end reads. We applied the digestion-aware null to identify TBB nucleosome positions with a threshold of FDR \u2264 0.05, resulting in 62,035 consensus centers and 120,347 TBB nucleosome positions in the T1 experiment, and 61,532 consensus centers and 129,505 TBB nucleosome positions in the T2 experiment. When we attempted to identify possible nucleosome positions that were entirely due to the sequence bias of MNase digestion, we analyzed the simulated MNase digestion data though our TBB pipeline and applied the random null distribution with a threshold of FDR \u2264 0.05. This allowed us to identify 49,739 and 50,076 positions to analyze and correct for influence of MNase digestion bias.\n\n### Human nucleosome analysis\n\nAnalyses on human nucleosomes were performed using paired-end sequencing reads with length between 126 bp and 184 bp (Gaffney et al., 2012). We randomly selected a 10 Mbp region on human chromosome 12, position 38,000,000 bp to 48,000,000 bp, to test the TBB approach. In total, we identified 43,991 consensus centers of nucleosomes and 251,948 TBB nucleosome positions in this selected region. All the identified positions were used in our analysis.\n\n### Dinucleotide frequency analysis\n\nAll TBB nucleosome positions determined in T1 were used for the dinucleotide frequency analysis unless specified. DNA sequences from 100 bp upstream to 100 bp downstream of each TBB nucleosome position were aligned and the frequency of AA/AT/TA/TT and CC/CG/GC/GG dinucleotides was calculated for every base pair. This calculated di-nucleotide frequency was then normalized to the average dinucleotide frequency and presented in the plots.\n\nFor the permutation of TBB nucleosome positions, we first randomly selected 62,035 TBB nucleosome positions (the same number as consensus centers of nucleosomes). For each of these positions, we randomly shifted the genome coordinate of the position by 0\u20134 bp with an overall average of 2 bp, or by 0\u201310 bp with an overall average of 5 bp. The frequency of AA/AT/TA/TT dinucleotides with respect to these permutated positions is presented in the plot Figure 4D, in comparison to that of the original TBB nucleosome positions.\n\n### Identification of overlapping nucleosomes around TSSs\n\nTo determine if the observed overlapping TBB nucleosome positions are biologically meaningful, we excluded TBB nucleosome positions whose occupancy is less than 4.8 reads (about half of the median sequencing read occupancy of all TBB nucleosome positions), which account for ~5% of the detected TBB nucleosome positions. The position occupancy was calculated as the average read count within a 3 bp window centered at TBB nucleosome positions. We then combined individual TBB nucleosome positions that are separated by less than 80 bp into groups of overlapping nucleosomes (overlap by ~ half of a nucleosome). In total, 57,643 groups containing either unique or overlapping TBB nucleosome positions were identified in the yeast genome. Groups that contain more than 9 nucleosome positions (139 groups, 0.24%) were further excluded from this analysis because they likely reside in regions with delocalized nucleosomes. The remaining groups were compared to the positions of TSSs of all ORFs in yeast genome (Jiang and Pugh, 2009a), and 4641 were identified to overlap with TSSs (TSSs within 73 bp distance of any TBB nucleosome position in the group). All 4641 were analyzed and presented in Figure 5C. 3307 of these groups contain no more than 2 TBB nucleosome positions and their analyses are shown in Figure 5\u2014figure supplement 2.\n\n### PIC binding and TATA-box/TATA-like sequences\n\nThe occupancy data for the subunits of the PIC was generated from the supplementary data of the work of Rhee and Pugh (Rhee and Pugh, 2012). The genome coordinates for PIC occupancy were calculated based on the positions of the +1 nucleosomes kindly provided by Ho Sung Rhee.\n\nBoth TATA-box sequences and TATA-like sequences identified by Rhee and Pugh (Rhee and Pugh, 2012) were analyzed in this study and presented in Figure 6C. However, a substantial fraction of the TATA-like sequences are located next to or even after the annotated transcription start site \u2013 TATA-like sequences of ~600 genes are within 5 bp of TSSs. If we exclude these genes from our analysis, the majority of the TATA-box/TATA-like sequences are located outside the boundary of the proximal nu\ufeffcleosomes.\n\n### Nucleosome digestion variability template estimation\n\nWe estimated the digestion variability template from the distribution of sequencing read lengths. This digestion variability reflects a combination of factors that influences the size of protected nucleosomal DNA, such as over- or under- digestion of intact nucleosomes. This estimation was based on a simple, symmetric model of MNase digestion for each sequenced fragment. Using this model, we obtained a nonparametric maximum likelihood estimator of the distribution of digestion variability (e) at each end of a sequenced fragment (e1j, e2j). Therefore, we can infer the digestion variability template as the distribution of the variability in paired-end read midpoints due to digestion. We denoted the length of each paired-end read $j$ as $\u2113_{j}$ and assumed\n\n$$\n\u2113_{j}=\u2113_{0}+e_{1j}+e_{2j},e_{1j},e_{2j}\u223cIID.\n$$\n\n$\u2113_{0}$ is defined as the length of DNA covering the histone core octamer (147 bp) (Kornberg and Lorch, 1999) and the $e_{1j}$ and $e_{2j}$ terms are the digestion errors at each end of the read $j$. We assumed MNase has the same propensity towards over-or under-digestion at each end on average; therefore, we modeled these errors as bounded and symmetric between the ends of sequencing reads. Along the genome, the distributions of digestion errors at the ends of each read are mirror images of each other, but the two errors of the same read were independent. So positive values of $e_{1j}$ or $e_{2j}$ imply that DNA sequence not covered by the histone core octamer was left at the ends after MNase digestion, and negative values imply that MNase over-digested the nucleosomes.\n\nUnder this model, each sequencing read\u2019s midpoint varies around its nucleosome\u2019s center according to the distribution of $d_{j}\u2261\\frac{1}{2}(e_{1j}\u2212e_{2j})$. The template $t\u2192$ specifies this distribution, expressed in vector form and transformed to account for the random rounding of fragment centers to integer positions. Hence,\n\n$$\nt_{k}=P(d_{j}=k)+\\frac{1}{2}(P(d_{j}=k\u2212\\frac{1}{2})+P(d_{j}=k+\\frac{1}{2}))\n$$\n\nFor $k=\u2212w,\u2026,w$, yielding a vector $t\u2192$ of length $2w+1$. To setup the estimation task, we defined two probability distributions,\n\n$$\np(i)=Pr(l_{j}=i),q(i)=Pr(e_{1,j}=1).\n$$\n\nIt is known that $l_{j}\\geq0$, which implies $e_{1,j},e_{2,j}\\geq\u2212\u230a\\frac{l_{0}}{2}\u230b$. If the longest observed fragment length is $l_{max}$, we also have $Pr(l_{j}\u00a0>l_{max})=0$. The non-parametric Maximum Likelihood Estimation (MLE) also enforces $l_{j}\\leql_{max}$, which implies $e_{1,j},\u00a0e_{2,j}\\leql_{max}\u2212l_{0}+\u230a\\frac{l_{0}}{2}\u230b$. We could then write\n\n$$\np(i)=\\sumk=\u2212\u230a\\frac{l_{0}}{2}\u230bl_{max}\u2212l_{0}+\u230a\\frac{l_{0}}{2}\u230bq(k)q(i\u2212l_{0}\u2212k).\n$$\n\nThe resulting log-likelihood for the observed fragment lengths is\n\n$$\n\u2113(q)=\\sumj=1Mlog\u00a0p(l_{j}).\n$$\n\nWe maximized\u00a0$l(q)$\u00a0numerically, using a multivariate logit transformation on the values\u00a0$q(k)$\u00a0to avoid bounded optimization. Using the L-BFGS algorithm (Zhu et al., 1997) on a laptop with a Core i5 processor and 8GB of RAM, this maximization requires ~40 s for a typical experiment. The complexity of this computation depends only on the number of distinct read lengths observed (i.e., 151 bp, 152 bp, etc).\n\nWe obtained the template distribution $t\u2192$ from $q$ via a convolution sum and linear transformation. We first obtained the distribution of $e_{1}\u2212e_{2}$ via\n\n$$\nu(i)=P(e_{1}\u2212e_{2}=i)=\\sumk=\u2212\u230a\\frac{l_{0}}{2}\u230bl_{max}\u2212l_{0}+\u230a\\frac{l_{0}}{2}\u230bq(k)q(k\u2212i)\u00a0.\n$$\n\nWe finally transformed the distribution\u00a0$u(i)$ to the desired template $t(i)$ by accounting for random rounding, as\n\n$$\nt(k)=\\frac{1}{2}u(2k\u22121)+u(2k)+\\frac{1}{2}u(2k+1)\u00a0.\n$$\n\nThe resulting digestion variability template accurately reflects both variation from enzymatic digestion and the details of the preprocessing.\n\n### Segmentation of chromosome for nucleosome position estimation\n\nEach chromosome was segmented into disjoint, contiguous regions with similar statistical properties (sequencing coverage). This was done to control for local variation in sequencing coverage and nucleosome occupancy, allowing for efficient estimation of local structure with minimal sensitivity to distant observations. To accomplish this, we started from ORFs and refined these natural demarcations into a statistically useful segmentation. We first enumerated all open reading frames (ORFs) and intergenic regions on each given chromosome. Merging overlapping ORFs into single segments yielded a starting set of contiguous, non-overlapping segments. We then iteratively merged the most similar short segments until all segments exceed a minimal length (800 bp). The similarity was defined based on sequencing read midpoints per base pair within each segment. This yielded a segmentation for which each segment has sufficient length to estimate local properties of the nucleosome position distribution. For the S. cerevisiae genome, we obtained a total of 5135 segments for our T1 experiment with a mean segment length of 2351 bp (minimum length of 800 bp and maximum length of 14,499 bp). The results on the T2 experiment were extremely similar with 5118 segments and a mean length of 2359 bp. This segmentation was fixed and used in all subsequent computation. The region of human chromosome 12, position 38,000,000 bp to 48,000,000 bp was segmented based on the annotated introns and exons of human genome hg18 (Roche, NimbleGen). Other segmentation techniques based on the biological structure of each chromosome can be used and may be more appropriate for mammalian genomes.\n\n### Computational model and notation\n\nOur probabilistic model for the observed read midpoints captures the variation due to nuclease digestion as well as the variation from biological sources (for example, biological heterogeneity among cells, stochastic fluctuation in the selection of fragments for sequencing, and other factors in sample preparation and analysis). To accomplish this, we extended discrete convolution models from signal processing to account for the particular types of structure and variation found in MNase-seq data. For each chromosome, we defined $y_{k}$ as the number of sequencing read midpoints aligned to position $k$, where $k$ ranges from 1 to $N$ (the length of the chromosome). Given the segment $s:{1...N}\u27f6{1...S}$, which maps the $N$ base pair locations to S segments on this chromosome, we posited\n\n$$\ny_{k}\u2223\\lambda_{k}\u00a0~\u00a0Poisson(\\lambda_{k})\n$$\n\n\n\n$$\n\\lambda\u2192_{(N\\times1)}\u2261X_{(N\\times(N\u22122\u230a\u2113_{0}/2\u230b))}\u2009\\beta\u2192_{((N\u22122\u230a\u2113_{0}/2\u230b)\\times1)}\n$$\n\n\n\n$$\n\\beta_{k}>0\u00a0\u00a0for\u00a0\u00a0k=\u230a\u2113_{0}/2\u230b+1\u2026N\u2212\u230a\u2113_{0}/2\u230b\n$$\n\n\n\n$$\nlog\\beta_{k}\u223cNormal(\\mu_{s_{k}},\\sigma_{s_{k}}^{2})\n$$\n\nwhere $X$ specifies the contribution of a nucleosome positioned at $k$to the expected number of reads at position $m$ due to digestion variability, and $s_{k}$ is the region corresponding to position $k$. $X$ was defined as the matrix generated by the convolution of $t\u2192$ with a sequence of length N. $\u2113_{0}$ stands for 147 bp as mentioned before.\n\nTo complete the model specifications, we placed priors on $\\mu_{s}$ and $\\sigma_{s}^{2}$. We use independent conjugate priors for $\\sigma_{s}^{2}$, assuming $\\frac{1}{\\sigma_{s}^{2}}\u223cGamma(\\alpha_{0},\\gamma_{0})$. Our priors for $\\mu_{s}$ are fully conjugate and independent across segments; we assumed $p(\\mu_{s}\u2223\\sigma_{s}^{2})\u223cN(\\mu_{0},\\frac{\\sigma_{s}^{2}}{n_{s}\\tau_{0}})$ where $n_{s}$ is the length of segment s.\n\n### Estimation of nucleosome position signal\n\nTo estimate $\\beta$ and detect individual nucleosome positions, we sampled from the posterior distribution of $\\beta\u2192$ using a Markov chain Monte Carlo (MCMC) sampler. By iterating through a carefully engineered sequence of random draws, this sampler obtains approximate samples from the given posterior. These draws of $\\beta\u2192$ form the basis for all of our subsequent summaries, particularly the detection of nucleosomes positions (using selected posterior probabilities) and the estimation of consensus positions (using selected posterior expectations). This sampler consisted of two alternating updates. At each iteration r, our algorithm\n\nThe first is a standard conjugate normal update, given the log-normal model for $\\beta\u2192$, and operates independently across segments. Full details can be found in Blocker and Airoldi (2016).\n\nThe conditional posterior of $\\beta\u2192^{(t)}\u2223(\\mu\u2192^{(t)},\\sigma\u2192^{2\u00a0(t)})$ is not part of any standard family, so we turned to Hamiltonian Monte Carlo (HMC). The dimensionality of $\\beta\u2192$ makes a single HMC update for the entire vector both computationally infeasible and numerically unstable. For efficient computation, we leveraged the conditional independence structure of this conditional posterior. Subvectors of $\\beta\u2192$ separated by at least 2w entries are conditionally independent given $(\\mu\u2192^{(t)},\\sigma\u2192^{2\u00a0(t)})$ and the entries of $\\beta\u2192$ between them. Consider the subvectors $\\beta\u2192_{[j_{1}:j_{2}]}$ and $\\beta\u2192_{[k_{1}:k_{2}]}$, with $j_{1}<j_{2}<k_{1}<k_{2}$. The elements of $\\beta\u2192_{[j_{1}:j_{2}]}$ only affect $j_{1}<j_{2}<k_{1}<k_{2}$, and the elements of $\\beta\u2192_{[k_{1}:k_{2}]}$ only affect $\\lambda\u2192_{[j_{1}\u2212w:j_{2}+w]}$. Hence, if $\\beta\u2192_{[k_{1}:k_{2}]}$, then $\\beta\u2192_{[j_{1}:j_{2}]}$ and $\\beta\u2192_{[k_{1}:k_{2}]}$ are conditionally independent given $\\mu\u2192$ and $\\sigma\u2192^{2}$.\n\nWe first fixed the length of each subvector that will be updated via a single HMC step to $B>4w$. Next, considered two partitions of $\\beta\u2192$ into subvectors:\n\n$$\n\\beta\u2192_{[1:B]},\\beta\u2192_{[B+2w+1:2B+2w]},\u2026,\\beta\u2192_{[n_{b}(B+2w)+1:N]},\\beta\u2192_{[B/2+1:3B/2]},\\beta\u2192_{[3B/2+2w+1:5B/2+2w]},\u2026,\\beta\u2192_{[n_{b}(B+2w)B/2+1:N]}.\n$$\n\nWithin each partition, the subvectors are conditionally independent, and the union of these partitions includes all entries of $\\beta\u2192$.\n\nFor each iteration of our sampler, we cycled through each of these partitions, updating each subvector of $\\beta\u2192$ with an HMC step. As each subvector within each partition is conditionally independent, we can execute all HMC steps in parallel for each partition. This allows us to distribute the computational burden over hundreds of CPUs. Each of these distributed HMC steps is computationally efficient, as the log-conditional posterior\u2019s value and gradient can be computed via a convolution, lowering the computational cost to $o(BlogB)$ with the fast Fourier transform. A Python implementation of the sampler is available on GitHub, http://www.github.com/airoldilab/cplate.\n\n### Estimation of consensus centers of nucleosomes\n\nWe defined consensus centers of nucleosomes as the average centers of possible overlapping nucleosomes within a small region. Each such position represents a cluster of nearby nucleosome positions and is similar to a 'nucleosome' obtained by standard methods (Albert et al., 2007; Shivaswamy et al., 2008; Tirosh, 2012; Tsankov et al., 2010). Based on the nucleosome position distribution $\\beta\u2192$, we determined the consensus centers of nucleosomes as the centers obtained from a standard Parzen window peak calling method (Tirosh, 2012). We smoothed each draw of $\\beta\u2192$ obtained from our sampler with a Gaussian window with a standard deviation of 20 bp. We then averaged these smoothed maps across draws and performed a greedy search for local maxima, enforcing a minimal spacing constraint of 147 bp. The comparisons presented in the main article are based on the standard practice of applying the same smoothing and search procedure directly to the midpoint counts (Albert et al., 2007; Shivaswamy et al., 2008; Tsankov et al., 2010).\n\n### Detection of nucleosome positions\n\nWe defined nucleosome positions as a position along the genome with a greater chance observing a nucleosome than expected under a locally uniform distribution of sequencing read midpoints. With this definition in hand, we used carefully selected posterior probabilities (estimated using the above algorithm) to find those positions with strong support from the observed data. Formally, to detect individual nucleosome positions, we first defined\n\n$$\nC_{p,l}(k)=\\frac{\\sum_{i=\u2212p}^{p}\\beta_{k+i}}{\\sum_{i=\u2212l}^{l}\\beta_{l+i}}\n$$\n\nfor each position $k$. We then estimated $C_{p,l}(k)=\\frac{\\sum_{i=\u2212p}^{p}\\beta_{k+i}}{\\sum_{i=\u2212l}^{l}\\beta_{l+i}}$ for each $k$ using the MCMC sampler described previously. We then calibrated these Bayesian summaries against those implied by a null distribution of nucleosome positions within each region, constraining the number of reads within each segment to match the number observed and using information on the digestion variation in the form of the estimated template. We approximated this null distribution by repeatedly randomly permuting the observed reads within each segment.\n\nIn order to generate the Bayesian summaries implied by the null distribution described above, we then ran the proposed MCMC sampler on paired end sequencing reads drawn from the null, using the template and segmentation estimated from the observed data. From the sampler\u2019s output, we obtained an estimate of the distribution of $P(C_{p,l}(k)>(2p+1)/(2l+1)\u2223y\u2192)$ over positions $k$ under the null. We compared this to the distribution of posterior probabilities for the observed data and set a detection threshold to control the FDR using the method of Storey and Tibshirani (Storey and Tibshirani, 2003). For the datasets analyzed in this work, a threshold of 0.8 on $P(C_{p,l}(k)>(2p+1)/(2l+1)\u2223y\u2192)$ typically yields an FDR of 5% or less for the experimental data.\n\nWe have considered two null distributions in this work, both of which preserve the sequencing coverage within the identified regions as the experimental dataset. The first is a random null distribution, where simulated sequencing reads are assumed to be uniformly distributed within each region. The second is a MNase digestion-aware null, where simulated sequencing reads are assumed to be uniformly distributed subject to the observed distribution of the dinucleotide ends. These two null distributions are applied to identify TBB positions in two scenarios. The MNase digestion-aware null is used to identify experimental TBB positions that are statistically significant over the sequence bias of MNase digestion. The random null is used to set the threshold for determining possible nucleosome positions that result from MNase digestion bias over a uniform background. In all cases, the false discovery rate is controlled to be less than 5%, allowing a fair comparison between different data sets.\n\n### In silico simulation of MNase digestion\n\nFor each region of the genome, we tabulated the full table of dinucleotide counts from all aligned paired-end reads. For each pair of cut dinucleotides, we enumerated all potential paired-end reads with matching cut dinucleotides with centers falling in the given region. We then sampled uniformly from this set of potential reads with replacement to match the observed number of reads with the given cut dinucleotides. This yields a sample of reads exactly matching the observed cut dinucleotide distribution with fragment centers random within each region conditional on cut dinucleotides. These simulated controls were then passed through the same pipeline as the observed reads and used to set thresholds based on the stated FDR-controlling procedure.\n\n### Comparison between datasets and replicates\n\nAll comparisons are based on matched distances, as in (Brogaard et al., 2012). For example, when we compared our identified consensus centers of nucleosomes to those identified from a\u00a0previous study (Jiang and Pugh, 2009a), we calculated the distance between every center in our dataset to its nearest center in the published study and summarized them into distance probability (Figure 2B\u2013E) and cumulative (Figure 2\u2014figure supplement 3\u20136) plots. Similarly, when we evaluated the performance of the TBB method on an in silico MNase-seq dataset, we computed the distance between every identified TBB position from the in silico dataset and its nearest simulated nucleosome position. When we evaluated reproducibility between replicates, we considered the set of all best-match distances obtained by matching each replicate against the other to ensure symmetry.\n\n### Random nucleosome positions and consensus centers\n\nWe used two methods to generate random nucleosome positions and consensus centers as controls to estimate the detection accuracy of the TBB approach. In the first method, we randomly generated the genomic coordinates of nucleosome positions on each chromosome to match the number of experimentally detected TBB nucleosome positions or consensus centers. In the second method, we took into account the spacing features between TBB nucleosome positions or consensus centers. In this way, the randomly generated genomic coordinates and the experimental determined data have the same distribution of spacing between adjacent positions. The random nucleosome positions or consensus centers maps generated by these two methods yielded similar results and only the result of the second method is shown in the plots (Gray trace, Figure 2\u2014figure supplements 3\u20135). The median distance between the random nucleosome positions and the chemical positions is 18 bp, and is 36 bp for the spacing between the random nucleosome positions and the TBB positions determined here. The median distance between the random consensus centers and either the reference centers or the consensus centers determined here is 49 bp in both cases. The median distance between the random nucleosome positions and the chemical positions is much smaller than the rest of the comparisons because the number of chemical positions was three times larger than the number of TBB nucleosome positions and 5 times larger than the number of consensus centers determined in this study.\n\n### In silico validation of detection accuracy\n\nThe true positions of nucleosomes in vivo are generally not available with the current experimental and computational approaches. We thus performed a set of in silico experiments to evaluate the performance of the TBB method in a setting where ground truth of nucleosome positions is available. We first simulated the true positions of nucleosomes: we generated the primary nucleosome positions to represent the most frequent (strongest) positions among a set of overlapping nucleosomes, and then added alternative positions around the primary positions to account for the other overlapping nucleosomes (Figure 3A). In each set of in silico experiments, we systematically varied the occupancy (coverage), spacing (offset), and relative strength of primary and alternative nucleosome positions (effective magnitude) according to a factorial design that spans the 5th to 95th percentiles of the corresponding properties observed in our yeast experiments (Figure 3A; Supplementary file 2). At each of the simulated nucleosome positions, we randomly generated sequencing reads based on the digestion variability template estimated from T1, and constructed 10 artificial chromosomes to represent the in silico MNase-seq data sets. The occupancy of sequencing read midpoints in these simulated data sets resembles that determined from our biological samples. We then applied the TBB approach to identify nucleosome positions in these in silico data sets and compared them with the simulated nucleosome positions (both simulated primary and alternative positions). We found that the TBB approach can reliably identify primary nucleosome positions (50% and 85% of the primary positions within 2 bp and 4 bp, respectively) across all settings. Detection of the alternative positions is similarly reliable (50% and 75% within ~3 bp and ~7 bp, respectively) if the alternative positions are populated at least 1/3 as frequently as the nearest primary positions (effective magnitude smaller than 0.6) (Supplementary file 1). Detailed methods and discussion about the in silico validation can be found in Extended Experimental Procedures.\n\n### Procedures for in silico estimation of TBB performance\n\nTo estimate the precision of the TBB approach in identifying nucleosome positions, we simulated nucleosome positions on a set of artificial chromosomes, generated in silico MNase-seq sequencing read midpoint datasets based on the experimental digestion variation, estimated the in silico TBB nucleosome positions with these in silico datasets, and compared them to the original simulated nucleosome positions. The differences between these identified TBB in silico positions and the original simulated positions reflect the precision of the TBB approach.\n\nTo mimic the organization of nucleosomes in the genome, we simulated nucleosome positions based on observed in vivo organization around genes and constructed simulated artificial chromosomes with units of genes. Each artificial chromosome contains 1100 genes, and each gene was 3501 bp in length, consisting of a 1000 bp promoter region before its transcription start site (TSS) and 2500 bp following the TSS. The in vivo organization of nucleosomes around genes was determined from the identified consensus centers from the T1 experiment and averaged across all ORFs. As traditionally annotated, the nucleosomes after the TSS were numbered incrementally from +1, and the nucleosomes before TSS were numbered decrementally from \u22121. The average positions of these nucleosomes relative to TSSs were used in the construction the simulated nucleosome positions. Meanwhile, the number of sequencing reads within each consensus position was used to simulate the in silico MNase-seq datasets.\n\nTo test the ability of the proposed model to identify overlapping nucleosomes, we built overlapping nucleosome positions into our simulation. We first generated nucleosome positions downstream of the TSS (corresponding to the positions of the +1, +2, +3, \u2026 nucleosomes) and upstream of the TSS (corresponding to the positions of the \u22121, \u22122, \u22123, \u2026 nucleosomes) to represent the most frequent (strongest) positions among a set of overlapping nucleosomes (termed 'primary positions'). Then we added positions around the primary positions (termed 'alternative positions') to represent overlapping nucleosomes. In the simulation, we varied the relationships between the primary positions and the alternative positions to explore the performance of the TBB model. For simplicity, we assumed the alternative positions are symmetric to the primary positions.\n\nWe designed a simulation with three factors, varied at the gene level: coverage (the expected number of reads per gene), the spacing between primary nucleosome positions and alternative positions (which we refer to as offset), and the relative magnitudes of primary and alternative positions (which we refer to as effective magnitude and is defined as the percentage of reads attributed to the primary positions) (Figure 3A). Coverage had 10 levels, spanning the 5th to 95th percentile observed gene-level coverages in increments of 10%. Alternative position spacing had 10 levels, spanning from 0 bp (no alternative positions) to 45 bp in increments of 5 bp. We tested 11 levels for the relative magnitude between alternative positions and primary positions, spanning from 0 (no alternative positions) to 1 (alternative positions of the same magnitude as primary positions) in increments of 0.1, where the effective magnitude ranged from 1 to 1/3. We used a full factorial design on these three factors, yielding 1100 distinct relationships between the primary and alternative positions for each of 10 simulated chromosomes.\n\nTo generate our in silico MNase-seq dataset, we followed a modified version of the generative process described above. For each gene, we first drew coefficients for its subset of $\\beta\u2192$\u00a0from an upper-truncated log-normal distributed with parameters estimated from those regions in T1 with similar coverage. These corresponded to 'background' positions and introduce a realistic level of variation into the simulations; biologically, such background could originate from a combination of low-occupancy nucleosome positions and naked DNA obtained during the MNase-seq process. Then, we set the entries of $\\beta\u2192$ corresponding to the gene\u2019s primary and alternative positions deterministically. The sum of the coefficients for these positions was fixed to the total occupancy of the gene minus the sum of the background positions. The relative magnitudes were determined by the design described above, with two alternative positions placed symmetrically around each primary position at the designated spacings. Thus, for a given level of coverage, the expected number of reads within each cluster was fixed, but its distribution across primary and alternative positions varies.\n\nWe convolved these $\\beta\u2192$ vectors with the template estimated from the experimental data to obtain vectors of expected read counts $\\lambda\u2192$. Finally, we generated $y\u2192\u223ciid\u00a0Poisson(\\lambda\u2192)$ to obtain simulated read counts. This entire procedure was repeated for each replicate, yielding 10 artificial chromosomes of length 3,851,100\u00a0bp each. The simulated read midpoint occupancy was similar to the midpoint occupancy observed in vivo around (Figure 3B).\n\nBased on our in silico results, the TBB method appears extremely accurate for calling primary nucleosome positions. It can estimate 50% of such positions within 2\u20133 bp and 95% within 4\u20135 bp for all simulated conditions, as shown in Supplementary file 1 Its performance remains strong for the estimation of alternative positions. As the data in Supplementary file 1 hows, more than 50% of the simulated alternative positions were mapped within 2 bp when the effective magnitude is less than 0.71 (alternative positions populated at least as much as 20% of their corresponding primary positions). When the effective magnitude reaches 0.56 or less (populated as much as 40% of their corresponding primary positions), we mapped over 50% of alternative positions within a single base pair. With the spacing between the alternative and primary positions ranging from 5\u201345 bp, the median error for estimating alternative positions is no more than 2 bp. We observed stronger dependence of the TBB method\u2019s performance on the spacing between alternative and primary positions: we generally attained higher reliability for the larger offsets, with over 85% of alternative positions estimated within 8 bp when the offset is 10 bp, and within 6 bp when the offset is 40 bp\u00a0(http://www.github.com/airoldilab/cplate).\n\n### Software availability\n\nAll sequencing data are deposited in the NCBI SRA database under accession number SRP023122. All software for the template-based Bayesian model and\u00a0in silico MNase-seq experiments\u00a0used in this paper are available at http://www.github.com/airoldilab/cplate.\n",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "bfc5b138-c618-4a25-b162-bab41f9b2205",
+      "submission_id": "5dddde1c-3fa9-4155-be26-6fe17729044d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Asifa Akhtar, Max Planck Institute for Immunobiology and Epigenetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16970.038](https://doi.org/10.7554/eLife.16970.038)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Nucleosome positions and alternative chromatin states revealed by computation approach leveraging digestion variability\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai as the Senior Editor, Asifa Akhtar as Reviewing Editor, and two reviewers, including Juan Vaquerizas (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this study, Zhou et al. introduce a computational method to determine nucleosome positioning from MNase-seq data at a base-pair resolution. Due to digestion variability, it has been a problem comparing nucleosome positioning maps between samples from different MNase-seq experiments. It is also impossible to separate biological variations in nucleosome positioning from technical variations in MNase digestion. The computational method proposed by the authors looks quite promising to solve these problems.\n\nOverall the study is interesting and the method will be of use to the genomics community, since it is currently not straightforward to determine nucleosome positioning with high accuracy.\n\n1) There are currently a number of other methods to determine nucleosome positioning. The manuscript will greatly benefit from performing a comparison with those, so the readers can easily assess the performance of the method.\n\n2) The method describing how to use the software to generate the digestion variability template is too simplified, and the GitHub site is also poorly organized with no documentations, making it very hard to apply the authors' method to other MNase-seq experiments. It limits the usefulness of the authors' approach for the wide audience of eLife. This aspect should be improved upon revision.\n\n3) The authors propose there are alternative positioning of nucleosomes near TSSs. Why are these alternative positioning nucleosomes not apparent in the chemical approach (Brogaard et al. 2012)? What will be the overlap between author's approach and the Brogaard approach if you only consider the alternative positioned nucleosomes?\n\n4) The authors suggest that distal nucleosomes might work by providing a boundary for the assembly of the PIC (subsection \u201cAlternative chromatin states and transcription initiation\u201d, third paragraph). However, the authors do not provide enough evidence to be able to make this statement since the distal positioning of the nucleosomes might just reflect the binding of the PIC, and therefore might just be a consequence of the transcriptional process, rather than the provision of a boundary.\n\n5) The authors report a link between the presence of uniquely positioned nucleosomes in highly expressed genes. It would be interesting to stratify genes according to gene expression (for examples using quintiles) and to evaluate whether there are specific enrichments of unique vs alternative nucleosomes across the stratified dataset. This would allow the authors to discern whether the unique vs. alternative nucleosome observation could be explained by the overall level of gene expression or whether the two groups have functional implications. This is important in the context of the subsequent sequence analysis since the authors argue that unique nucleosomes have specific sequence features, which suggest functional implications.\n\n6) In order to assess the functional implications, the manuscript will improve considerably if the unique vs. alternative classification analysis and subsequent gene expression and sequence analyses would be repeated using the human dataset in Figure 4.\n",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "76fe754d-bd26-4ebe-b4ec-f92a7fde823f",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C1",
+      "claim": "The eukaryotic genome is compacted into chromatin which is comprised of nucleosomes, each consisting of approximately 147 base pairs (bp) of DNA wound around a histone protein octamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic genome is compacted into chromatin (Kornberg, 1974) which is comprised of nucleosomes, each consisting of approximately 147 base pairs (bp) of DNA wound around a histone protein octamer (Kornberg and Lorch, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established scientific literature (Kornberg, 1974; Kornberg and Lorch, 1999), representing established scientific knowledge about chromatin structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "4e0e07d8-453f-4eca-a6fe-96920c98e798",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C2",
+      "claim": "The helical DNA makes direct contact with the histones every 10 base pairs, with the major groove of DNA alternating between facing towards and away from the histone core.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical DNA makes direct contact with the histones every 10 base pairs, with the major groove of DNA alternating between facing towards and away from the histone core (Luger et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Luger et al., 1997, which describes the structural features of nucleosomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "ac78bf15-7e78-4198-9112-9a78014f716d",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C3",
+      "claim": "Shifting the histones relative to the DNA sequence by a few base pairs can change the accessibility of sequence elements to DNA binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Shifting the histones relative to the DNA sequence by a few base pairs can change the accessibility of sequence elements to DNA binding proteins if they are located in the linker sequences between nucleosomes, or may switch these elements between facing towards and away from nucleosomes if they are located within nucleosomal DNA (Jiang and Pugh, 2009b; Segal and Widom, 2009b; Zhang and Pugh, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations (Jiang and Pugh, 2009b; Segal and Widom, 2009b; Zhang and Pugh, 2011) describing the functional consequences of nucleosome positioning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "70e489c4-7062-45f2-8b1d-f9893d50b123",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C4",
+      "claim": "Nucleosomes restrict the accessibility of DNA sequences to protein factors, such as transcriptional regulators and the transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes restrict the accessibility of DNA sequences to protein factors, such as transcriptional regulators and the transcription machinery (John et al., 2011; Li et al., 2007; Liu et al., 2006; Zhou and O'Shea, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing the role of nucleosomes in regulating DNA accessibility.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "c1d6ed48-b317-411b-870c-0a54a7e6d9ed",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C5",
+      "claim": "The positions and occupancy of nucleosomes can influence the interplay between transcription factors and the level, dynamics, and differences in gene expression between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The positions and occupancy of nucleosomes can influence the interplay between transcription factors (Mirny, 2010) and the level (Carey et al., 2013; Kim and O'Shea, 2008), dynamics (Lam et al., 2008), and differences in gene expression between cells (Dadiani et al., 2013; Raser and O'Shea, 2004; Tirosh and Barkai, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations describing various aspects of how nucleosome positioning affects gene expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "311abf79-c53e-4047-855f-b963baa04514",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C6",
+      "claim": "Nucleosome organization has been suggested to affect how gene promoters interpret dynamic signaling information at the single cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, nucleosome organization has also been suggested to affect how gene promoters interpret dynamic signaling information at the single cell level (Hansen and O'Shea, 2013; Hao and O'Shea, 2012), and heterogeneity in promoter nucleosome positions has been linked to differences in gene expression (Small et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent studies (Hansen and O'Shea, 2013; Hao and O'Shea, 2012; Small et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "bf0b30b9-ae97-4625-82f0-33867d0d30bb",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C7",
+      "claim": "Genome-wide nucleosome positions are commonly mapped with micrococcal nuclease digestion based high-throughput sequencing (MNase-seq).",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide nucleosome positions are commonly mapped with micrococcal nuclease digestion based high-throughput sequencing (MNase-seq) (Hughes and Rando, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation describing the common methodology for nucleosome mapping.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "84ee3884-0259-4cbf-b00f-08c616c3d8ba",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C8",
+      "claim": "MNase exhibits sequence preference when digesting DNA devoid of histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MNase exhibits sequence preference when digesting DNA devoid of histones (Horz and Altenburger, 1981), genome-wide analyses of nucleosomes with MNase-based methods are generally consistent with studies using MNase-independent methods (Hughes and Rando, 2014), such as DNase I chromatin digestion (Hesselberth et al., 2009) and chemical cleavage (Brogaard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Horz and Altenburger, 1981, describing MNase sequence preference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "ea52a1a1-a0ad-442b-9f2f-4a93beedf51f",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C9",
+      "claim": "Genome-wide analyses of nucleosomes with MNase-based methods are generally consistent with studies using MNase-independent methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Although MNase exhibits sequence preference when digesting DNA devoid of histones (Horz and Altenburger, 1981), genome-wide analyses of nucleosomes with MNase-based methods are generally consistent with studies using MNase-independent methods (Hughes and Rando, 2014), such as DNase I chromatin digestion (Hesselberth et al., 2009) and chemical cleavage (Brogaard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations comparing MNase-based and MNase-independent methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "bf344d61-36e5-4384-95a6-56e0615d46db",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C10",
+      "claim": "Studies that apply MNase-based methods typically report the position of a nucleosome as the average of the bulk nucleosome population (referred to as the 'consensus center').",
+      "claim_type": "EXPLICIT",
+      "source": "Studies that apply MNase-based methods typically report the position of a nucleosome as the average of the bulk nucleosome population (referred to as the 'consensus center', Figure 1A) (Struhl and Segal, 2013; Zhang and Pugh, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations describing common practice in nucleosome mapping and is illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "cff25417-1b66-4cb1-91af-b24f4e894772",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C11",
+      "claim": "If nucleosomes have overlapping positions in a significant portion of the population, the effect of averaging over heterogeneous nucleosome positions can lead to discrepancy between the consensus center of nucleosomes and the most representative nucleosome positions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if nucleosomes have overlapping positions in a significant portion of the population, the effect of averaging over heterogeneous nucleosome positions can lead to discrepancy between the consensus center of nucleosomes and the most representative nucleosome positions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on logical inference about the consequences of averaging heterogeneous positions, illustrated in Figure 1A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "ea52eb79-60d6-42be-a1a6-13f10e959f70",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C12",
+      "claim": "Determining the precise locations of individual nucleosomes within a cell population remains a challenge due to substantial variability in the mapped locations of digested nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of methods have been developed to improve the precision of nucleosome mapping from MNase-seq data, such as peak finding of nucleosome occupancy (Zhang and Pugh, 2011) and filtering of single-end digestion patterns (Weiner et al., 2010), but determining the precise locations of individual nucleosomes within a cell population remains a challenge due to substantial variability in the mapped locations of digested nucleosomes \u2013 the midpoints of paired-end sequenced nucleosomes or the endpoints of single-end sequenced nucleosomes (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to existing methods and is illustrated in Figure 1B showing the variability challenge.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "142b3bff-6b22-4198-931f-2339e33fc45d",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C13",
+      "claim": "Variability in mapped nucleosome locations may arise from a cluster of overlapping and stably positioned nucleosomes, as well as from effects causing different degrees of digestion of the same nucleosome by MNase, such as nucleosome breathing and nuclease trimming.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability may arise from a cluster of overlapping and stably positioned nucleosomes, as well as from effects causing different degrees of digestion of the same nucleosome by MNase, such as nucleosome breathing and nuclease trimming \u2013 all of which influence the distribution of the aligned reads and are difficult to disentangle (Clark, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents inference about the sources of variability in MNase-seq data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1402521d-3a62-4398-9168-09e8fd0ed4c0",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C14",
+      "claim": "A chemical cleavage approach that uses a genetically engineered histone H4 to chemically cleave DNA sequences in contact with the nucleosome dyad allowed direct measurement of nucleosome positions with unprecedented resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a chemical cleavage approach that uses a genetically engineered histone H4 to chemically cleave DNA sequences in contact with the nucleosome dyad allowed direct measurement of nucleosome positions with unprecedented resolution (Brogaard et al., 2012; Moyle-Heyrman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies describing the chemical cleavage method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "7568ff02-af0a-4291-b8b4-347bfd2f6997",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C15",
+      "claim": "The requirement for genetic engineering of essential histones limits the current application of the chemical cleavage approach to genetically tractable organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the requirement for genetic engineering of essential histones limits its current application to genetically tractable organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the limitations of the chemical cleavage method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1319e42b-c91e-4e7b-881f-5f0983b2e7e7",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C16",
+      "claim": "The authors developed a computational approach to determine in vivo nucleosome positions from paired-end MNase-sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report a computational approach to determine in vivo nucleosome positions from paired-end MNase-sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the manuscript describing the authors' methodological contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "9fa66307-a99e-4bfa-9f42-545c1f867a93",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C17",
+      "claim": "The authors use the size distribution of MNase digested nucleosome fragments to infer a digestion variability template for nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by this, we use the size distribution of MNase digested nucleosome fragments to infer a digestion variability template for nucleosomes, and report a Bayesian method that makes use of these templates to identify the individual positions of nucleosomes at a base-pair resolution, hereafter referred to as the template-based Bayesian (TBB) approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "2978e739-9a99-4171-b96c-bc4b8ea54b03",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C18",
+      "claim": "The template-based Bayesian (TBB) approach can identify the individual positions of nucleosomes at a base-pair resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by this, we use the size distribution of MNase digested nucleosome fragments to infer a digestion variability template for nucleosomes, and report a Bayesian method that makes use of these templates to identify the individual positions of nucleosomes at a base-pair resolution, hereafter referred to as the template-based Bayesian (TBB) approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim about the capability of the TBB method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "fa02485c-f7da-4267-a259-181c4c87b701",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C19",
+      "claim": "The TBB approach can be applied to data generated through both paired-end and single-end sequencing to map chromatin structure in diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach can be applied to data generated through both paired-end and single-end sequencing to map chromatin structure in diverse organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the applicability of the method based on the authors' analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "705e5ec0-6111-4285-87bc-fb5ad74f28a3",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C20",
+      "claim": "The periodic occurrences of dinucleotide sequence motifs relative to the nucleosome dyad can be directly determined from MNase based nucleosome positions and are conserved in vivo in both yeast and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the periodic occurrences of dinucleotide sequence motifs relative to the nucleosome dyad can be directly determined from MNase based nucleosome positions and are conserved in vivo in both yeast and human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "771e04eb-08ce-4df4-9abe-eb0db43c33d1",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C21",
+      "claim": "Alternative configurations of nucleosomes are a common feature in both yeast and human chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Leveraging this method, we find that alternative configurations of nucleosomes are a common feature in both yeast and human chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis using the TBB method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1073117a-00ca-4993-b52d-ca9ea055b6f9",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C22",
+      "claim": "Alternatively positioned nucleosomes around gene transcription start sites represent configurations that differ in their compatibility with the assembly of the pre-initiation complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternatively positioned nucleosomes around gene transcription start sites represent configurations that differ in their compatibility with the assembly of the pre-initiation complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on data analysis and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "2ecbaac7-1a94-47f5-8014-b7ec9d4c4268",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C23",
+      "claim": "A 3-step model for transcription initiation can reconcile the competition between nucleosomes and the transcriptional machinery observed from genomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A 3-step model for transcription initiation can reconcile the competition between nucleosomes and the transcriptional machinery observed from genomic analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed by the authors based on their data analysis and inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "7dfffd91-6fa8-4f55-9607-02e5c0e7976e",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C24",
+      "claim": "The authors generated paired-end data sets of 'T1' and 'T2', each with a coverage of ~2.8 read midpoints per base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated paired-end data sets of 'T1' and 'T2', each with a coverage of ~2.8 read midpoints per base pair; as an average between these two data sets, we identified ~61,800 consensus centers of nucleosomes and ~125,000 TBB nucleosome positions, covering at least 75.5% of the S. cerevisiae genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data generated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "62350adc-2c0e-42d4-ac60-5ca7ff985073",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C25",
+      "claim": "As an average between the T1 and T2 data sets, the authors identified ~61,800 consensus centers of nucleosomes and ~125,000 TBB nucleosome positions, covering at least 75.5% of the S. cerevisiae genome.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated paired-end data sets of 'T1' and 'T2', each with a coverage of ~2.8 read midpoints per base pair; as an average between these two data sets, we identified ~61,800 consensus centers of nucleosomes and ~125,000 TBB nucleosome positions, covering at least 75.5% of the S. cerevisiae genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of applying the TBB method to the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "d5b44542-60ac-4340-a426-8ca0ba8fe779",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C26",
+      "claim": "The spacing between adjacent TBB nucleosome positions peaked at 11 and 21 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacing between adjacent TBB nucleosome positions peaked at 11 and 21 bp (Figure 1D), consistent with the rotation of DNA sequence by one or two helical turns around histone cores (Albert et al., 2007; Brogaard et al., 2012), and suggesting that the same nucleosome commonly occupies overlapping configurations in different cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based finding shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1e0121f3-3b20-46c3-9366-a91d8b6f778b",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C27",
+      "claim": "The spacing between adjacent TBB nucleosome positions is consistent with the rotation of DNA sequence by one or two helical turns around histone cores.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacing between adjacent TBB nucleosome positions peaked at 11 and 21 bp (Figure 1D), consistent with the rotation of DNA sequence by one or two helical turns around histone cores (Albert et al., 2007; Brogaard et al., 2012), and suggesting that the same nucleosome commonly occupies overlapping configurations in different cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data (Figure 1D) and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "69a57e35-5cb3-4b8a-bfdd-1888ac05c39b",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C28",
+      "claim": "The same nucleosome commonly occupies overlapping configurations in different cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The spacing between adjacent TBB nucleosome positions peaked at 11 and 21 bp (Figure 1D), consistent with the rotation of DNA sequence by one or two helical turns around histone cores (Albert et al., 2007; Brogaard et al., 2012), and suggesting that the same nucleosome commonly occupies overlapping configurations in different cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed spacing data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "236cc906-b63e-4b16-aabd-a39fcf6d36e9",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C29",
+      "claim": "The consensus centers of nucleosomes identified by the template-based Bayesian approach were consistent with published methods employing Gaussian smoothing algorithms.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus centers of nucleosomes identified by the template-based Bayesian approach were consistent with the published methods employing Gaussian smoothing algorithms (often referred to as 'Parzen window') (Albert et al., 2007, 2008; Clark, 2010; Tsankov et al., 2010) (Figure 2A), with more than 90% of the nucleosomes matching within a single base pair (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation of the method based on comparison with existing methods, supported by data shown in Figure 2A and Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "d5168086-b074-4a5d-9b3d-e820a119e4d8",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C30",
+      "claim": "More than 90% of the nucleosomes identified by the TBB approach match within a single base pair with those identified by Parzen window methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus centers of nucleosomes identified by the template-based Bayesian approach were consistent with the published methods employing Gaussian smoothing algorithms (often referred to as 'Parzen window') (Albert et al., 2007, 2008; Clark, 2010; Tsankov et al., 2010) (Figure 2A), with more than 90% of the nucleosomes matching within a single base pair (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding based on data comparison shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "42f33d51-55f4-4598-aef0-292297be2cee",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C31",
+      "claim": "The consensus centers identified by the TBB approach showed general agreement with published nucleosome reference maps.",
+      "claim_type": "EXPLICIT",
+      "source": "These consensus centers also showed general agreement with the published nucleosome reference maps (Jiang and Pugh, 2009a) (Figure 2B and Figure 2\u2014figure supplement 3), validating the overall biological relevance of our data sets.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation based on comparison with published reference maps, shown in Figure 2B and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "31678119-7156-4d80-a71c-4507edb613f7",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C32",
+      "claim": "The nucleosome positions identified by the TBB approach and the chemical approach were consistent.",
+      "claim_type": "EXPLICIT",
+      "source": "We then evaluated the accuracy of our identified TBB nucleosome positions by comparing them to individual nucleosome positions mapped through a recently reported chemical approach (Brogaard et al., 2012), which provides a reference that is independent of MNase cleavage specificity. The nucleosome positions identified by these two approaches were consistent (Figure 2C and Figure 2\u2014figure supplement 4), demonstrating that the TBB approach can precisely map the positions of individual nucleosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation based on comparison with an independent method, shown in Figure 2C and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "9ba6b156-55a4-4260-be90-c3d0e2a1bdd0",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C33",
+      "claim": "The TBB approach can precisely map the positions of individual nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleosome positions identified by these two approaches were consistent (Figure 2C and Figure 2\u2014figure supplement 4), demonstrating that the TBB approach can precisely map the positions of individual nucleosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on the validation data shown in Figure 2C and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "3c745824-8bfb-4b67-8081-4871cb261dcd",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C34",
+      "claim": "The majority of the TBB nucleosome positions identified in simulated data sets were within 2\u20133 bp of the originally simulated nucleosome positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the TBB nucleosome positions identified in these simulated data sets were within 2\u20133 bp of the originally simulated nucleosome positions, even for the cases where nucleosome positions were separated by only 10\u201315 bp or differ by more than 3-fold in their relative occupancy (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from in silico validation experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "3a8b6b97-5a86-42c0-9add-8313b9b63f6f",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C35",
+      "claim": "Both the consensus centers and the TBB nucleosome positions were in agreement between the T1 and T2 experiments, with a median difference of 2 bp across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the consensus centers and the TBB nucleosome positions were in agreement between these two experiments (Figure 2D\u2013E, Figure 2\u2014figure supplements 5\u20136), with a median difference of 2 bp across the genome; in comparison, randomly generated consensus centers and nucleosome positions gave rise to a median difference of 49 bp and 36 bp, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a reproducibility finding based on comparison between two independent experiments, shown in Figure 2D-E and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "24e8ff1c-1df6-4c41-87d5-b766e501f283",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C36",
+      "claim": "Individual nucleosome positions can be reliably detected regardless of the differences in MNase digestion.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual nucleosome positions can be reliably detected regardless of the differences in MNase digestion (Figure 2F), demonstrating the robustness of the determined nucleosome positions to digestion variability.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "d6c312a0-78df-4c3d-b61a-40fc5b8aba25",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C37",
+      "claim": "When DNA sequences were aligned at the TBB nucleosome positions in yeast, the dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displayed 10 bp periodicity across almost the full length of the nucleosome core.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we aligned DNA sequences at the TBB nucleosome positions in yeast, the dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displayed 10 bp periodicity across almost the full length of the nucleosome core (Figure 4A and Figure 4\u2014figure supplement 3), illustrating the power of the TBB approach to precisely map nucleosome positions from MNase-based methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding based on sequence analysis of TBB-identified positions, shown in Figure 4A and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "b6d4559f-51dc-41a6-8808-0de33a88c1b4",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C38",
+      "claim": "After corrections for MNase digestion bias, dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displayed 10 bp periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "After these corrections, we observed dinucleotide AA/AT/TA/TT and CC/CG/GC/GG motifs displaying 10 bp periodicity (Figure 4C), consistent with the dinucleotide frequency around the chemically determined nucleosome positions in yeast (Brogaard et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding after correction for MNase bias, shown in Figure 4C and validated by comparison with chemical mapping data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "673aeb2c-29f6-4a4f-b9c8-3e95b3850bc0",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C39",
+      "claim": "Randomly shifting the determined TBB nucleosome positions by an average of 2 bp greatly reduced the observed dinucleotide periodicity and shifting the positions by an average of 5 bp completely eliminated the periodic pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomly shifting the determined TBB nucleosome positions by an average of 2 bp greatly reduced the observed dinucleotide periodicity and shifting the positions by an average of 5 bp completely eliminated the periodic pattern (Figure 4D), demonstrating the importance of precisely mapping nucleosome positions in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from a control experiment shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "139c7841-5d69-4b37-9f75-d49f30a56050",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C40",
+      "claim": "The frequency of AA/AT/TA/TT and CC/CG/GC/GG motifs displayed clear 10 bp periodicity relative to human TBB nucleosome positions, which was comparable to the motif periodicity observed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of AA/AT/TA/TT and CC/CG/GC/GG motifs displayed clear 10 bp periodicity relative to human TBB nucleosome positions, which was comparable to the motif periodicity observed in yeast (Figure 4A and B, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of human nucleosome data, shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "7fe81bd3-e32f-476d-9443-faf36164d3d1",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C41",
+      "claim": "When DNA sequences were aligned at the consensus centers of human nucleosomes, the frequency of these dinucleotide motifs did not exhibit a clear periodicity with respect to the consensus centers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when DNA sequences were aligned at the consensus centers of human nucleosomes, the frequency of these dinucleotide motifs did not exhibit a clear periodicity with respect to the consensus centers (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of consensus centers shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "60dcb693-9679-414a-9ad9-cc64a277fac5",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C42",
+      "claim": "The TBB nucleosome positions exhibited a bimodal shape for at least three quarters of the genes with nucleosome-covered TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "The TBB nucleosome positions exhibited a bimodal shape for at least three quarters of the genes with nucleosome-covered TSSs (Figure 5C, 'positions'), suggesting that alternative positioning is a common feature of nucleosomes near TSSs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of nucleosome positions at TSSs, shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "da5bcf4b-494c-4211-9738-c723fc51204b",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C43",
+      "claim": "Alternative positioning is a common feature of nucleosomes near TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "The TBB nucleosome positions exhibited a bimodal shape for at least three quarters of the genes with nucleosome-covered TSSs (Figure 5C, 'positions'), suggesting that alternative positioning is a common feature of nucleosomes near TSSs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the bimodal distribution observed in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "3e09207f-a64d-442b-9b5e-5b63ef1deeb0",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C44",
+      "claim": "The occupancy of nucleosome midpoints at each gene correlated well between two experiments (T1 and T2).",
+      "claim_type": "EXPLICIT",
+      "source": "The occupancy of nucleosome midpoints at each gene correlated well between two experiments (T1 and T2), indicating alternative nucleosomes can be reliably observed (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a reproducibility finding shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "ec2144aa-876c-4449-8775-fc14e50ffa46",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C45",
+      "claim": "Most groups of overlapping nucleosomes showed less than 2-fold variation in the read occupancy between alternative TBB nucleosome positions.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the midpoints attributed to each nucleosome position within each group (Figure 5\u2014figure supplements 1\u20132), we found that most groups showed less than 2-fold variation in the read occupancy between alternative TBB nucleosome positions, suggesting that the different positions are significantly represented in the cell population and therefore are likely of biological relevance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 5\u2014figure supplements 1\u20132.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "89a7670e-6691-4f8c-804c-5e88e95690eb",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C46",
+      "claim": "The different alternative nucleosome positions are significantly represented in the cell population and therefore are likely of biological relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the midpoints attributed to each nucleosome position within each group (Figure 5\u2014figure supplements 1\u20132), we found that most groups showed less than 2-fold variation in the read occupancy between alternative TBB nucleosome positions, suggesting that the different positions are significantly represented in the cell population and therefore are likely of biological relevance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the occupancy data shown in Figure 5\u2014figure supplements 1\u20132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "50676117-ee56-4454-b11c-4c483793889c",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C47",
+      "claim": "Alternative nucleosome positions were not a consequence of differential digestion at nucleosome edges.",
+      "claim_type": "EXPLICIT",
+      "source": "These alternative positions were not a consequence of differential digestion at nucleosome edges (Weiner et al., 2010), as both ends of paired-end sequencing reads showed two peaks that match the edges of alternatively positioned nucleosomes (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on analysis of read ends shown in Figure 5E, with citation to Weiner et al., 2010 for context.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "3889d690-814c-4415-beaf-af2052c8553b",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C48",
+      "claim": "Approximately one quarter of genes with their TSSs covered by nucleosomes contain more than two TBB nucleosome positions at TSSs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes with their TSSs covered by nucleosomes, approximately one quarter contain more than two TBB nucleosome positions at TSSs, suggesting that chromatin structure at the transcription initiation site is complex and heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "f227cd34-bd59-496d-ae43-cfdd0cccb1bb",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C49",
+      "claim": "Chromatin structure at the transcription initiation site is complex and heterogeneous.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the genes with their TSSs covered by nucleosomes, approximately one quarter contain more than two TBB nucleosome positions at TSSs, suggesting that chromatin structure at the transcription initiation site is complex and heterogeneous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that many genes have multiple nucleosome positions at TSSs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "235ddc31-ad42-4226-a3a4-53fa80e6bd12",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C50",
+      "claim": "The unique, proximal and distal nucleosomes were digested by MNase to similar sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique, proximal and distal nucleosomes were digested by MNase to similar sizes, further suggesting that the alternative nucleosome positions are not a result of MNase digestion bias (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "973fcf3a-1d66-4542-adec-e835c679bee2",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C51",
+      "claim": "Among uniquely positioned nucleosomes, TSSs were enriched ~10 bp inside the boundary of the nucleosome core.",
+      "claim_type": "EXPLICIT",
+      "source": "Among uniquely positioned nucleosomes, TSSs weree enriched ~10 bp inside the boundary of the nucleosome core (Figure 6A, magenta curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "520f1f83-8fbf-4578-a1bb-2d375568f049",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C52",
+      "claim": "Among the alternatively positioned nucleosomes, the proximal nucleosomes were located much closer to the TSS where the nucleosome core restricts the accessibility of these factors and therefore competes for active transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the alternatively positioned nucleosomes, the proximal nucleosomes were located much closer to the TSS where the nucleosome core restricts the accessibility of these factors and therefore competes for active transcription (Figure 6A, cyan curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 6A with inference about functional consequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "0a26ba8b-b15b-4194-be4f-9c13effb9977",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C53",
+      "claim": "For the distal nucleosomes, TSSs were aligned near the edge of the nucleosome core, making these sites and the upstream regulatory elements accessible to other DNA binding factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For the distal nucleosomes, TSSs were aligned near the edge of the nucleosome core (Figure 6A, red curve), making these sites and the upstream regulatory elements accessible to other DNA binding factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 6A with inference about accessibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "808618c3-06d4-4da7-a097-b9be0ff23b17",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C54",
+      "claim": "Most subunits of the PIC, including TBP, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH and TFIIK, showed peak enrichment at the edge of the distally positioned nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Most subunits of the PIC, including TBP, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH and TFIIK, showed peak enrichment at the edge of the distally positioned nucleosome (Figure 6B, cyan), suggesting that the +1 nucleosome in the distal position marks a boundary for the assembly of the PIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of PIC occupancy data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "583ef88c-a800-4e28-863d-ba671f333ff3",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C55",
+      "claim": "The +1 nucleosome in the distal position marks a boundary for the assembly of the PIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Most subunits of the PIC, including TBP, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH and TFIIK, showed peak enrichment at the edge of the distally positioned nucleosome (Figure 6B, cyan), suggesting that the +1 nucleosome in the distal position marks a boundary for the assembly of the PIC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the PIC occupancy data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1eacfb85-1719-4f35-9841-2e8cfb5c3b8a",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C56",
+      "claim": "The proximally positioned nucleosome covered most of the regions enriched for PIC binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proximally positioned nucleosome covered most of the regions enriched for PIC binding (Figure 6B, red), suggesting that the +1 nucleosome in the proximal position is not compatible with the binding of transcription machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "ee34595a-b65e-4eeb-90d0-7586f1507f73",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C57",
+      "claim": "The +1 nucleosome in the proximal position is not compatible with the binding of transcription machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the proximally positioned nucleosome covered most of the regions enriched for PIC binding (Figure 6B, red), suggesting that the +1 nucleosome in the proximal position is not compatible with the binding of transcription machinery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the overlap between proximal nucleosomes and PIC binding regions shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "0f2f2ee8-2b59-4ba3-899d-93377dfea61f",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C58",
+      "claim": "TATA-box and TATA-like sequences were enriched in front of the proximal nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, TATA-box and TATA-like sequences were enriched in front of the proximal nucleosomes (Figure 6C), suggesting that proximal nucleosomes do not block recognition of most TATA elements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "8298e6f7-588a-4171-a7c3-c5eaafff3b8d",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C59",
+      "claim": "Proximal nucleosomes do not block recognition of most TATA elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, TATA-box and TATA-like sequences were enriched in front of the proximal nucleosomes (Figure 6C), suggesting that proximal nucleosomes do not block recognition of most TATA elements.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the location of TATA sequences relative to proximal nucleosomes shown in Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "4309bd1f-ba3f-4396-b44c-025fddfc1de2",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C60",
+      "claim": "The proximal nucleosome may represent a promoter state that is not associated with active transcription and is populated prior to the assembly of the PIC.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the proximal nucleosome may represent a promoter state that is not associated with active transcription and is populated prior to the assembly of the PIC (Figure 6D, Proximal state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the data, illustrated in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1ecf1c77-3284-4fea-9ff4-08a0242d15e3",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C61",
+      "claim": "The distal nucleosome may represent a promoter state in the process of transcription initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The distal nucleosome may represent a promoter state in the process of transcription initiation (Figure 6D, Distal state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation based on the data, illustrated in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "bc74f219-d417-48c5-8285-e043bf96dafd",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C62",
+      "claim": "Genes with uniquely positioned nucleosomes at their TSSs were enriched in highly expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that genes with uniquely positioned nucleosomes at their TSSs were enriched in highly expressed genes (Newman et al., 2006) (top 500 genes, p = 0.001, Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from statistical analysis comparing nucleosome configurations with gene expression data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "328c44cb-0274-45a2-b6bb-2139190d050f",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C63",
+      "claim": "73% of the genes encoding ribosomal proteins had TSSs with uniquely positioned nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "More strikingly, we found that 73% of the genes encoding ribosomal proteins had TSSs with uniquely positioned nucleosomes (p<0.00001, Fisher's exact test), highlighting a connection between the configuration of nucleosomes (unique vs alternative) and gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "aeb0bcfd-1906-4592-a8d4-86799b592f91",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C64",
+      "claim": "There is a connection between the configuration of nucleosomes (unique vs alternative) and gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "More strikingly, we found that 73% of the genes encoding ribosomal proteins had TSSs with uniquely positioned nucleosomes (p<0.00001, Fisher's exact test), highlighting a connection between the configuration of nucleosomes (unique vs alternative) and gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the enrichment of unique nucleosomes at highly expressed genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "38cd593e-6cb6-468c-b194-86fdc7e45fc5",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C65",
+      "claim": "The frequency of dinucleotides occurred periodically ~10 bp from the positions of either proximal or distal nucleosomes and resembled the periodic feature of nucleosomes in yeast genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of dinucleotides occurred periodically ~10 bp from the positions of either proximal or distal nucleosomes and resembled the periodic feature of nucleosomes in yeast genome (R2 = 0.75, Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from sequence analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1574d0f2-0a33-4de1-a20c-56279acf72b3",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C66",
+      "claim": "Dinucleotide periodicity was less pronounced in the uniquely positioned nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This periodicity was less pronounced in the uniquely positioned nucleosomes (R2 = 0.40 between dinucleotide frequency in uniquely positioned nucleosomes and all nucleosomes in yeast genome; Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from sequence analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "53f1a6fb-0145-4d91-b3ff-6235df864cc8",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C67",
+      "claim": "Autocorrelation analysis of the dinucleotide frequency revealed a lack of periodicity in DNA sequences around the uniquely positioned nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocorrelation analysis of the dinucleotide frequency revealed a lack of periodicity in DNA sequences around the uniquely positioned nucleosomes, further highlighting the difference between uniquely and alternatively positioned nucleosomes (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from autocorrelation analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "d9715244-031a-450a-be29-64ff3b9b6d7c",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C68",
+      "claim": "The uniquely positioned nucleosomes were flanked by a strong enrichment of poly(dA:dT)6 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the occurrences of poly(dA:dT) sequences at least 6 nucleotides in length, we found that the uniquely positioned nucleosomes were flanked by a strong enrichment of poly(dA:dT)6 sequences (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from sequence analysis shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "0f7825d9-c150-4bc5-a8bd-a1ee17b4f375",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C69",
+      "claim": "A similar but weaker enrichment of poly(dA:dT)6 sequences was observed flanking both the proximally and the distally positioned nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar but weaker enrichment of poly(dA:dT)6 sequences was also observed flanking both the proximally and the distally positioned nucleosomes (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from sequence analysis shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "b90ba62c-4a11-4eed-88b7-4c0988ad7398",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C70",
+      "claim": "Uniquely positioned nucleosomes and alternatively positioned nucleosomes presented different DNA sequence features.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, uniquely positioned nucleosomes and alternatively positioned nucleosomes presented different DNA sequence features, suggesting that these sequence determinants may contribute to the different configurations of chromatin states at gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary inference based on the sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "3fe2fde8-a317-4d82-9d7c-a34f37a0071a",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "claim_id": "C71",
+      "claim": "DNA sequence determinants may contribute to the different configurations of chromatin states at gene promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, uniquely positioned nucleosomes and alternatively positioned nucleosomes presented different DNA sequence features, suggesting that these sequence determinants may contribute to the different configurations of chromatin states at gene promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the observed sequence differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cc47b5df-0019-4345-9b28-f909953ae619",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a template-based Bayesian (TBB) computational approach that uses the size distribution of MNase-digested nucleosome fragments to infer a digestion variability template, enabling identification of individual nucleosome positions at base-pair resolution from both paired-end and single-end MNase-seq data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 describe the core methodological contribution. The approach is validated through multiple independent comparisons (C29-C36) showing consistency with existing methods and chemical cleavage approaches, with >90% agreement within 1 bp. In silico validation (C34) demonstrates 2-3 bp accuracy even for closely spaced nucleosomes. The method's robustness across different digestion conditions (C35-C36) further supports its validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The TBB approach accurately identifies nucleosome positions, with >90% of consensus centers matching Parzen window methods within 1 bp, general agreement with published reference maps, and consistency with chemical cleavage approaches that are independent of MNase bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 provide multiple independent validations of the TBB method against established approaches. The quantitative agreement (>90% within 1 bp, C30) and consistency with MNase-independent chemical methods (C32) provide strong evidence for accuracy. Figures 2A-C and supplements support these comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "1d128872-ed03-4880-bba6-a1b953ac42ef",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The TBB approach demonstrates high precision (2-3 bp) in in silico validation and high reproducibility between independent experiments (median 2 bp difference), with reliable detection regardless of MNase digestion differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 establish precision and reproducibility through controlled simulations and biological replicates. The in silico validation (C34) provides ground truth comparison, while replicate agreement (C35) demonstrates experimental reproducibility. Figure 2D-F and Supplementary file 2 support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "33a0ecd4-30af-43c2-a871-9e2854d5480c",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Application of TBB to yeast MNase-seq data (T1 and T2 experiments with ~2.8 read midpoints/bp coverage) identified ~61,800 consensus centers and ~125,000 TBB nucleosome positions covering \u226575.5% of the S. cerevisiae genome, with adjacent positions peaking at 11 and 21 bp spacing consistent with DNA helical turns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C28 describe the experimental application and key observations. The 11 and 21 bp spacing (C26) is consistent with known nucleosome structure (one or two helical turns, C27) and supported by citations. Figure 1D shows this spacing distribution. The inference about overlapping configurations (C28) is reasonable given the structural constraints.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TBB-identified nucleosome positions reveal clear 10 bp periodicity of AA/AT/TA/TT and CC/CG/GC/GG dinucleotide motifs across the nucleosome core in both yeast and human cells, which is conserved in vivo and not observable at consensus centers. This periodicity is eliminated by shifting positions by 5 bp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C37-C41 demonstrate a key biological finding enabled by precise positioning. The 10 bp periodicity is shown in Figures 4A-C for both yeast and human, with MNase bias correction (C38). The control experiment (C39, Figure 4D) demonstrates the importance of precise positioning. The contrast with consensus centers (C41) validates the method's advantage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "7c07bb70-329d-4a97-a025-4348c359e7bd",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Alternative nucleosome configurations are common in yeast and human chromatin, with bimodal positioning observed at \u226575% of genes with nucleosome-covered TSSs. Alternative positions show <2-fold occupancy variation, are reproducible between experiments, and are not artifacts of differential MNase digestion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C42-C50 establish alternative positioning as a widespread phenomenon. The bimodal distribution (C42, Figure 5C) is reproducible (C44, Figure 5D) and not explained by digestion artifacts (C47, C50, Figures 5E-F). The similar occupancy levels (C45) support biological relevance (C46). Multiple controls and replicates strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "61b48748-ebc1-4b80-adfa-33314f4abd95",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Alternatively positioned nucleosomes at TSSs represent functionally distinct configurations: proximal nucleosomes restrict TSS accessibility and are incompatible with PIC binding, while distal nucleosomes position TSSs near the nucleosome edge with PIC enrichment at the nucleosome boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 integrate TBB positioning data with ChIP-exo data for PIC components (Figure 6A-B). The spatial relationships between nucleosome positions and PIC occupancy support the functional interpretations. However, the causal claims about compatibility (C57) are inferences from correlative data rather than direct mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "c207c385-5bf9-47c3-800a-0c6243666475",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A 3-step model for transcription initiation proposes that proximal nucleosomes represent a pre-PIC state (with accessible TATA elements), distal nucleosomes represent an initiation-competent state, and an open state allows transcription through nucleosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C61 and C23 propose a mechanistic model based on correlative genomic data. While TATA enrichment upstream of proximal nucleosomes (C58, Figure 6C) supports accessibility (C59), the model (C60-C61, C23) involves substantial speculation about temporal ordering and causality. The model is plausible and consistent with the data but lacks direct evidence for the proposed transitions or their functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "390fcd4f-3489-439a-bea0-f9e4650de713",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Genes with uniquely positioned nucleosomes at TSSs are enriched in highly expressed genes (p=0.001), with 73% of ribosomal protein genes showing unique positioning (p<0.00001), suggesting a connection between nucleosome configuration and gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 establish a statistical association between nucleosome configuration and expression. The enrichment is significant (Fisher's exact test) and particularly strong for ribosomal protein genes (C63). However, the causal direction and mechanism of this connection (C64) remain inferential. The correlation is well-supported but mechanistic understanding requires additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Uniquely and alternatively positioned nucleosomes show distinct DNA sequence features: alternative nucleosomes display 10 bp dinucleotide periodicity (R\u00b2=0.75) and weaker poly(dA:dT)6 flanking, while unique nucleosomes lack periodicity (R\u00b2=0.40) but show strong poly(dA:dT)6 enrichment, suggesting sequence determinants contribute to chromatin configuration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C71 identify sequence differences between nucleosome classes using multiple analyses (dinucleotide frequency, autocorrelation, poly(dA:dT) enrichment) shown in Figure 7. The quantitative differences (R\u00b2 values) are substantial. However, the causal claim (C71) that sequences 'contribute to' configurations is speculative\u2014the data show correlation but not causation. Sequence features could be consequence rather than cause of positioning.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    },
+    {
+      "id": "e6543655-74b5-451f-baee-0c7b04c4dcb2",
+      "content_id": "908c903f-b0cf-425d-98a6-3b60d1002760",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on chromatin structure, nucleosome positioning, and existing mapping methods establishes the context and challenges that motivate the TBB approach, including limitations of consensus center methods and MNase-based approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background knowledge supported by appropriate citations. These claims accurately represent prior work and identify the gap (precise individual nucleosome positioning) that the TBB method addresses. The characterization of existing methods' limitations (C10-C13) is supported by citations and logical reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:32.682285Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1319e42b-c91e-4e7b-881f-5f0983b2e7e7",
+      "result_id": "cc47b5df-0019-4345-9b28-f909953ae619"
+    },
+    {
+      "claim_id": "9fa66307-a99e-4bfa-9f42-545c1f867a93",
+      "result_id": "cc47b5df-0019-4345-9b28-f909953ae619"
+    },
+    {
+      "claim_id": "2978e739-9a99-4171-b96c-bc4b8ea54b03",
+      "result_id": "cc47b5df-0019-4345-9b28-f909953ae619"
+    },
+    {
+      "claim_id": "fa02485c-f7da-4267-a259-181c4c87b701",
+      "result_id": "cc47b5df-0019-4345-9b28-f909953ae619"
+    },
+    {
+      "claim_id": "236cc906-b63e-4b16-aabd-a39fcf6d36e9",
+      "result_id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7"
+    },
+    {
+      "claim_id": "d5168086-b074-4a5d-9b3d-e820a119e4d8",
+      "result_id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7"
+    },
+    {
+      "claim_id": "42f33d51-55f4-4598-aef0-292297be2cee",
+      "result_id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7"
+    },
+    {
+      "claim_id": "31678119-7156-4d80-a71c-4507edb613f7",
+      "result_id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7"
+    },
+    {
+      "claim_id": "9ba6b156-55a4-4260-be90-c3d0e2a1bdd0",
+      "result_id": "b3783ca6-2319-48ea-b6a6-c87cff8650e7"
+    },
+    {
+      "claim_id": "3c745824-8bfb-4b67-8081-4871cb261dcd",
+      "result_id": "1d128872-ed03-4880-bba6-a1b953ac42ef"
+    },
+    {
+      "claim_id": "3a8b6b97-5a86-42c0-9add-8313b9b63f6f",
+      "result_id": "1d128872-ed03-4880-bba6-a1b953ac42ef"
+    },
+    {
+      "claim_id": "24e8ff1c-1df6-4c41-87d5-b766e501f283",
+      "result_id": "1d128872-ed03-4880-bba6-a1b953ac42ef"
+    },
+    {
+      "claim_id": "7dfffd91-6fa8-4f55-9607-02e5c0e7976e",
+      "result_id": "33a0ecd4-30af-43c2-a871-9e2854d5480c"
+    },
+    {
+      "claim_id": "62350adc-2c0e-42d4-ac60-5ca7ff985073",
+      "result_id": "33a0ecd4-30af-43c2-a871-9e2854d5480c"
+    },
+    {
+      "claim_id": "d5b44542-60ac-4340-a426-8ca0ba8fe779",
+      "result_id": "33a0ecd4-30af-43c2-a871-9e2854d5480c"
+    },
+    {
+      "claim_id": "1e0121f3-3b20-46c3-9366-a91d8b6f778b",
+      "result_id": "33a0ecd4-30af-43c2-a871-9e2854d5480c"
+    },
+    {
+      "claim_id": "69a57e35-5cb3-4b8a-bfdd-1888ac05c39b",
+      "result_id": "33a0ecd4-30af-43c2-a871-9e2854d5480c"
+    },
+    {
+      "claim_id": "705e5ec0-6111-4285-87bc-fb5ad74f28a3",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "d6c312a0-78df-4c3d-b61a-40fc5b8aba25",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "b6d4559f-51dc-41a6-8808-0de33a88c1b4",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "673aeb2c-29f6-4a4f-b9c8-3e95b3850bc0",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "139c7841-5d69-4b37-9f75-d49f30a56050",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "7fe81bd3-e32f-476d-9443-faf36164d3d1",
+      "result_id": "0267c8d3-9edf-457e-b99b-1e1284ca7a89"
+    },
+    {
+      "claim_id": "771e04eb-08ce-4df4-9abe-eb0db43c33d1",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "60dcb693-9679-414a-9ad9-cc64a277fac5",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "da5bcf4b-494c-4211-9738-c723fc51204b",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "3e09207f-a64d-442b-9b5e-5b63ef1deeb0",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "ec2144aa-876c-4449-8775-fc14e50ffa46",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "89a7670e-6691-4f8c-804c-5e88e95690eb",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "50676117-ee56-4454-b11c-4c483793889c",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "3889d690-814c-4415-beaf-af2052c8553b",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "f227cd34-bd59-496d-ae43-cfdd0cccb1bb",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "235ddc31-ad42-4226-a3a4-53fa80e6bd12",
+      "result_id": "7c07bb70-329d-4a97-a025-4348c359e7bd"
+    },
+    {
+      "claim_id": "973fcf3a-1d66-4542-adec-e835c679bee2",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "520f1f83-8fbf-4578-a1bb-2d375568f049",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "0a26ba8b-b15b-4194-be4f-9c13effb9977",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "808618c3-06d4-4da7-a097-b9be0ff23b17",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "583ef88c-a800-4e28-863d-ba671f333ff3",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "1eacfb85-1719-4f35-9841-2e8cfb5c3b8a",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "ee34595a-b65e-4eeb-90d0-7586f1507f73",
+      "result_id": "61b48748-ebc1-4b80-adfa-33314f4abd95"
+    },
+    {
+      "claim_id": "0f2f2ee8-2b59-4ba3-899d-93377dfea61f",
+      "result_id": "c207c385-5bf9-47c3-800a-0c6243666475"
+    },
+    {
+      "claim_id": "8298e6f7-588a-4171-a7c3-c5eaafff3b8d",
+      "result_id": "c207c385-5bf9-47c3-800a-0c6243666475"
+    },
+    {
+      "claim_id": "4309bd1f-ba3f-4396-b44c-025fddfc1de2",
+      "result_id": "c207c385-5bf9-47c3-800a-0c6243666475"
+    },
+    {
+      "claim_id": "1ecf1c77-3284-4fea-9ff4-08a0242d15e3",
+      "result_id": "c207c385-5bf9-47c3-800a-0c6243666475"
+    },
+    {
+      "claim_id": "2ecbaac7-1a94-47f5-8014-b7ec9d4c4268",
+      "result_id": "c207c385-5bf9-47c3-800a-0c6243666475"
+    },
+    {
+      "claim_id": "bc74f219-d417-48c5-8285-e043bf96dafd",
+      "result_id": "390fcd4f-3489-439a-bea0-f9e4650de713"
+    },
+    {
+      "claim_id": "328c44cb-0274-45a2-b6bb-2139190d050f",
+      "result_id": "390fcd4f-3489-439a-bea0-f9e4650de713"
+    },
+    {
+      "claim_id": "aeb0bcfd-1906-4592-a8d4-86799b592f91",
+      "result_id": "390fcd4f-3489-439a-bea0-f9e4650de713"
+    },
+    {
+      "claim_id": "38cd593e-6cb6-468c-b194-86fdc7e45fc5",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "1574d0f2-0a33-4de1-a20c-56279acf72b3",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "53f1a6fb-0145-4d91-b3ff-6235df864cc8",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "d9715244-031a-450a-be29-64ff3b9b6d7c",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "0f7825d9-c150-4bc5-a8bd-a1ee17b4f375",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "b90ba62c-4a11-4eed-88b7-4c0988ad7398",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "3fe2fde8-a317-4d82-9d7c-a34f37a0071a",
+      "result_id": "4d5bdcab-727e-4490-b93b-b45901b1f1c3"
+    },
+    {
+      "claim_id": "76fe754d-bd26-4ebe-b4ec-f92a7fde823f",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "4e0e07d8-453f-4eca-a6fe-96920c98e798",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "ac78bf15-7e78-4198-9112-9a78014f716d",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "70e489c4-7062-45f2-8b1d-f9893d50b123",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "c1d6ed48-b317-411b-870c-0a54a7e6d9ed",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "311abf79-c53e-4047-855f-b963baa04514",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "bf0b30b9-ae97-4625-82f0-33867d0d30bb",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "84ee3884-0259-4cbf-b00f-08c616c3d8ba",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "ea52a1a1-a0ad-442b-9f2f-4a93beedf51f",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "bf344d61-36e5-4384-95a6-56e0615d46db",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "cff25417-1b66-4cb1-91af-b24f4e894772",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "ea52eb79-60d6-42be-a1a6-13f10e959f70",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "142b3bff-6b22-4198-931f-2339e33fc45d",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "1402521d-3a62-4398-9168-09e8fd0ed4c0",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    },
+    {
+      "claim_id": "7568ff02-af0a-4291-b8b4-347bfd2f6997",
+      "result_id": "e6543655-74b5-451f-baee-0c7b04c4dcb2"
+    }
+  ],
+  "comparisons": []
+}

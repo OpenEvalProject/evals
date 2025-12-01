@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C98",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Optogenetic activation of DRN 5-HT neurons causes rapid, transient suppression of locomotion in the open field. This effect manifests as decreased walking and rearing, increased resting state, with rapid onset (<1 s) and offset (3-5 s), while sparing non-locomotor behaviors like grooming and digging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C43, C98, C102-C107 provide converging evidence from ethological analysis (Figure 1E), automated tracking (Figure 2B-C), and statistical tests showing highly significant effects (p<10^-5) in SERT-Cre mice but not WT controls. The rapid kinetics, dose-dependence, and behavioral specificity are well-documented with appropriate controls and sample sizes (N=15 SERT-Cre, N=9 WT).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C108",
+      "C109"
+    ],
+    "result": "DRN 5-HT activation does not impair motor coordination or detailed locomotor kinematics. No effects were observed in rotarod performance or linear track crossing, including detailed gait parameters such as swing velocity, base of support, and step cycle phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58, C108-C109 demonstrate absence of motor impairment through multiple assays with appropriate statistical tests (all p>0.3). The linear track analysis (LocoMouse) provides detailed kinematic measurements showing no effects on motor execution, supporting the interpretation that locomotor suppression is not due to motor dysfunction. Sample sizes are adequate (N=7 SERT-Cre).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C59",
+      "C99",
+      "C110",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The locomotor suppression effect is highly context-dependent and can be overcome by strong motivational drive. Effects are absent in contexts with strong motivational factors (water rewards, avoiding bright light, avoiding falling), suggesting modulation of motivational factors rather than direct motor effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C59, C99, C110, C114-C116 are supported by the contrast between strong effects in open field versus no effects in rotarod and linear track (Figures 3-4). The interpretation that 5-HT modulates motivational factors is reasonable given the context-dependence, though alternative explanations (e.g., habituation in trained tasks) are not fully excluded. The inference is logical but could benefit from additional experiments manipulating motivation systematically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C127"
+    ],
+    "result": "DRN 5-HT activation suppresses locomotion independent of anxiety-related spatial biases. No effects were observed on thigmotaxis measures including center occupancy, distance from center, or ratio of central vs. peripheral movement, despite robust effects on speed across all spatial locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C61-C67, C127 are well-supported by multiple measures of thigmotaxis (Figure 5) with appropriate statistical tests showing no significant effects (all p>0.1) while speed effects remain significant across all spatial zones (p<10^-17). The dissociation between locomotor and anxiety effects is convincing, though the authors acknowledge that specific 5-HT subpopulations might have different effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C156"
+    ],
+    "result": "Spatially-contingent DRN 5-HT activation does not produce place preference or aversion learning. Increased ROI occupancy can be fully explained by decreased movement speed within the ROI, with no change in entry rate and return to baseline after stimulation cessation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68-C76, C145-C150, C156 provide strong evidence against reinforcement learning through multiple measures (Figure 6). The key observation that entry rate is unchanged (p=0.937) while exit rate decreases and occupancy increases is consistent with a purely locomotor explanation. The return to baseline post-stimulation (p>0.05) further supports the absence of learning. Sample size is small (N=4 SERT-Cre) but effects are clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C101",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Repeated daily DRN 5-HT stimulation (15 min/day for 24 days) produces a progressive, persistent increase in spontaneous locomotion opposite to the acute effect. This long-term effect is comparable in magnitude to the transient suppression, manifests in both stimulated and non-stimulated epochs, and is not observed in control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27, C79-C87, C91-C93, C101, C175-C177 demonstrate a robust long-term effect with appropriate controls (Figure 7). Statistical support is strong (p=0.00210 for G1, p=0.736 for G2, regression interaction p=1.43\u00d710^-5). However, sample size is very small (N=3 per group), which is a significant limitation. The effect persists in the first non-stimulated block (p=0.0252), supporting true long-term plasticity rather than rebound effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C96"
+    ],
+    "result": "The transient and long-term effects of DRN 5-HT activation are independent and interact additively. The magnitude of the transient effect remains constant over time, and no correlation was found between session-by-session fluctuations in short-term and long-term effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C96 are supported by data showing constant transient effect magnitude (p=0.212) and no difference between groups in transient effects after long-term changes develop (p=0.0991). The lack of correlation between short and long-term effects (Figure 7\u2014supplement 1, p=0.270 and p=0.080) suggests independence, though the small sample size limits power to detect correlations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "The long-term increase in locomotion is not secondary to changes in anxiety, as measured by center occupancy in the open field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 show no change in center occupancy after long-term stimulation (G1 p=0.201, G2 p=0.384), supporting the interpretation that long-term effects are not anxiety-related. However, the small sample size (N=3) and reliance on a single anxiety measure limit the strength of this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The locomotor suppression effect is present across all pre-stimulation speeds but is larger when animals are moving faster prior to stimulation onset, indicating effects on both movement initiation and ongoing locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by speed-conditioned analysis (Figure 2K) with significant 2-way ANOVA (stimulation p=1.18\u00d710^-4, interaction p=1.02\u00d710^-9). The analysis appropriately controls for regression to the mean by comparing stimulated to non-stimulated blocks. This demonstrates that 5-HT activation can stop ongoing movement, not just prevent initiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C197"
+    ],
+    "result": "ChR2-YFP expression was specifically localized to DRN 5-HT neurons in SERT-Cre mice with high selectivity (94% serotonergic based on prior studies), with no expression in WT controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C197 confirm appropriate targeting with histological verification (Figure 1B) and citation to prior validation study. The 94% selectivity from Dugu\u00e9 et al. 2014 provides confidence in genetic targeting, though the authors acknowledge that SERT-Cre may have a different expression profile than ePet1-Cre lines used in other studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "The study used 31 adult C57BL/6 mice (19 SERT-Cre, 12 WT littermates) with appropriate ethical approval and animal care procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C196 document appropriate experimental subjects and ethical compliance. Sample sizes vary across experiments (N=15 for main open field, N=7 for rotarod/linear track, N=3-4 for long-term studies), with the long-term experiments being notably underpowered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C97",
+      "C159"
+    ],
+    "result": "DRN 5-HT transients have opposing short-term and long-term effects on motor behavior that appear to arise from effects on motivational factors rather than reward/punishment signals or anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C97, C159 represent the main interpretive conclusion synthesizing multiple experimental findings. The conclusion is well-supported by the data showing context-dependence, absence of anxiety effects, absence of reinforcement learning, and opposing temporal effects. However, the mechanistic interpretation regarding motivational factors remains somewhat speculative and would benefit from more direct tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The observed effects are consistent with theories that 5-HT modulates behavioral inhibition and goal-directed (but not habitual) actions, with selectivity for voluntary (Type I) over involuntary (Type II) behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C112, C117-C124 relate experimental findings to theoretical frameworks from prior literature. While the data are consistent with these theories (e.g., selective effects on locomotion vs. grooming), the study does not directly test goal-directed vs. habitual action distinctions or provide mechanistic evidence for these interpretations. The speculation about habituation in rotarod/linear track (C120) is plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The current findings are consistent with some prior optogenetic studies but differ from others, potentially due to differences in genetic targeting (SERT-Cre vs. ePet1-Cre) or stimulation kinetics (optogenetic vs. pharmacogenetic).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 appropriately contextualize findings relative to prior work. The discussion of methodological differences (genetic lines, stimulation methods) is reasonable, though some explanations remain speculative (C130, C133). The authors correctly note consistency with Ohmura et al. 2014 and differences from Warden et al. 2012 and pharmacogenetic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Differences in reinforcement effects between studies may be explained by differences in neuronal populations targeted, with ePet1-Cre lines expressing in glutamatergic neurons that project to VTA, which are absent in SERT-Cre lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 provide a mechanistic explanation for discrepancies with Liu et al. 2014, supported by citations showing that Pet-1 lines have broader expression including glutamatergic populations and that reinforcing effects depend on glutamatergic VTA input. This is a reasonable interpretation though not directly tested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The long-term effects are interpreted as a form of plasticity, consistent with 5-HT's known role in cortical plasticity and the delayed therapeutic effects of SSRIs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C186-C190 propose a plasticity mechanism for long-term effects, supported by the gradual accumulation and persistence of effects. The analogy to SSRI therapeutic delays is interesting but indirect. The interpretation is plausible but lacks direct mechanistic evidence (e.g., molecular markers of plasticity, circuit changes). The small sample size (N=3) also limits confidence in the robustness of the long-term effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The optogenetic stimulation protocol likely mimics primarily phasic rather than tonic 5-HT signaling based on rapid kinetics, though tonic effects cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C172 address an important methodological consideration. The inference that rapid effects indicate phasic signaling is reasonable but not definitive, as the authors acknowledge (C171). The speculation about discrepancies with pharmacological studies (C172) is plausible but unproven. Direct measurements of 5-HT release kinetics would strengthen this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "The long-term effects might be ethologically or therapeutically relevant despite the artificial stimulation protocol, as the stimulation parameters are within physiological range and produce only modest increases in total 5-HT activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C179, C182-C185 speculate about the relevance of findings. The calculation that stimulation produces <10% increase in daily spikes (C183) is reasonable but makes assumptions about baseline firing rates. The speculation about therapeutic relevance (C184-C185) is interesting but highly preliminary given the small sample size and lack of disease model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Multiple theoretical frameworks could explain the observed effects, including value biasing, action cost modulation, or uncertainty signaling. The data are consistent with opponent effects of 5-HT and dopamine on action vigor but not reinforcement learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C168 discuss theoretical interpretations without definitively distinguishing between them. The conclusion about opponent effects with dopamine (C167) is reasonable given the data but indirect. The call for simultaneous recordings from multiple neuromodulator systems (C168) is appropriate. These remain open questions requiring additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The absence of anxiety effects may be due to insufficient activation of 5-HT1a receptors by the optogenetic protocol, while 5-HT2a/2c receptors may mediate the locomotor effects. Specific 5-HT subpopulations may have distinct effects on anxiety.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C142 are largely speculative about receptor mechanisms and circuit heterogeneity. The speculation about receptor activation (C135, C137) and pathway-specific effects (C138-C141) is reasonable but untested. The discussion appropriately acknowledges uncertainty and the need for additional experiments (C142).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Diversity in DRN 5-HT neuron firing patterns may reflect functional heterogeneity not captured by global stimulation. Future studies with refined targeting strategies could identify specific pathways and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C174, C191-C193 appropriately acknowledge limitations of global DRN stimulation and propose future directions. The observation of firing pattern diversity (C173) is well-supported by citations. The suggestions for pathway-specific approaches (C192) are reasonable next steps, though these remain speculative proposals rather than tested hypotheses.",
+    "result_type": "MINOR"
+  }
+]

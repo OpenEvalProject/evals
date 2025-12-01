@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Macrophage death frequency depends on the number of Mtb internalized, with a threshold of approximately 30-50 Mtb required for significant death induction. Phagocytosis of <10 Mtb did not significantly increase death relative to bystanders, 10-30 Mtb showed non-significant trends, and >30 Mtb (especially >50) caused highly significant increases in death frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 provide comprehensive dose-response data with appropriate statistical analysis (bootstrap with Bonferroni correction, Figure 1 and supplements). The threshold identification is supported by both visual inspection and statistical significance testing, with clear p-values and proper controls (bystander cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Aggregation state of Mtb affects macrophage cytotoxicity: single large aggregates (mean ~50 Mtb) caused 71% death versus 47% death for multiple small aggregates with similar total bacterial numbers (p=5\u00d710\u207b\u2074). Time to death inversely correlated with aggregate size (R\u00b2=0.45, p=2\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C34-C38 demonstrate that aggregation state, not just total bacterial number, determines cytotoxicity. The comparison controls for total Mtb number (~50 bacilli), uses appropriate statistics (bootstrap), and shows both frequency and kinetic differences. Figure 2 and Figure 3B provide supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Mtb-induced macrophage death occurs via non-apoptotic mechanisms with immediate loss of membrane integrity, similar to nigericin-induced pyroptosis and distinct from cisplatin-induced apoptosis where membrane loss is delayed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by DRAQ7 uptake kinetics (Figure 4, Videos 2-4) comparing three death inducers. The temporal relationship between cessation of movement and membrane permeabilization clearly distinguishes death modes. Statistical significance is shown (p<0.001, Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Mtb survives and rapidly replicates in dead macrophages with a median doubling time of 24.7 hr (IQR 19-34 hr), significantly faster than extracellular growth (36.1 hr, p=7\u00d710\u207b\u2078). Bacteria remain associated with dead cells as growing clumps rather than dispersing. 90/92 dead cells showed positive Mtb growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C42-C50 provide comprehensive evidence from both fluorescence microscopy (Figure 5A-B, Video 5) and CFU validation (Figure 5 supplement 1B). Statistical analysis is appropriate (Wilcoxon rank sum test), sample size is adequate (n=92 dead cells), and the ~10-fold CFU difference confirms the microscopy findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mtb growth is controlled in live macrophages (median growth constant 0.0012 hr\u207b\u00b9, doubling time >100 hr, not significantly different from zero, p=0.3) but robust in dead cells (median 0.033 hr\u207b\u00b9, doubling time 21.2 hr, p=5\u00d710\u207b\u00b2\u00b3), with dead cell growth significantly faster than live cell growth (p=8\u00d710\u207b\u00b9\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C51-C55 demonstrate differential growth with appropriate statistical tests (Sign Test, Wilcoxon rank sum). The 10-hour tracking window methodology controls for new internalization events. Sample sizes are adequate (n=101 live, n=92 dead cells), and highly significant p-values support the conclusions (Figure 6A-B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Live macrophages sequester Mtb in acidified phagosomal compartments (pHrodo positive), but acidification is rapidly lost upon cell death, suggesting loss of compartmentalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by pHrodo labeling experiments (Video 6, Figure 6C-D) showing pH changes before and after death (p<0.0001, paired t-test, n=74 cells). The inference about compartmentalization (C58-C59) is reasonable given the pH data, though direct compartment visualization is not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mtb growth in dead cells is relatively independent of macrophage activation state or tissue source: IFN\u03b3-treated MDM (doubling time 25.8 hr), alveolar macrophages (24.6 hr), and untreated MDM showed no statistically significant differences (p=0.45 and p=0.16 respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C60-C65 test physiologically relevant conditions with appropriate statistics (Kruskal-Wallis with correction for multiple hypotheses). While trends toward slower growth exist, lack of statistical significance is properly reported. Sample sizes appear adequate (n=49 IFN\u03b3, n=220 alveolar). The conclusion of relative independence is justified (Figure 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Internalization of dead infected cells leads to a cell death cascade: 89% of macrophages that internalized dead infected cells died with a median time of 3.2 hr (IQR 1.5-6.0 hr, R\u00b2=0.93, p=8\u00d710\u207b\u00b2\u00b3). The cytotoxicity is primarily explained by high bacterial numbers (median 114 Mtb in dead cells vs 125 in comparable cell-free aggregates, death frequencies 89% vs 81%, p=0.16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C66-C73 demonstrate serial killing with strong correlation data and appropriate controls comparing dead cell pickups to cell-free aggregates with similar bacterial loads. The high death frequency (89%), strong temporal correlation (R\u00b2=0.93), and lack of significant difference from cell-free aggregates support the mechanistic interpretation (Figure 8, Video 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Computational simulations demonstrate that one-day doubling time in dead cells enables high Mtb growth through positive feedback (21% of simulations reach >1000 Mtb in 60 days), while two-day doubling time does not (0.03% reach threshold). Growth is highly sensitive to doubling time and depends on positive feedback rather than just faster replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present simulation results that illustrate positive feedback dynamics. The model makes explicit, reasonable assumptions based on experimental data (no growth in live cells, death probability depends on bacterial number). The dramatic difference between one and two-day doubling times (700-fold) demonstrates sensitivity. However, this is a simplified model and the authors appropriately note they are illustrating trends rather than exact in vivo dynamics (Figure 9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Mtb fluorescence measurements correlate tightly with CFU counts, validating fluorescence as a measure of bacterial number and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide essential methodological validation (Figure 1 supplement 2). The tight correspondence between fluorescence and CFU over 3 days supports using fluorescence for quantification. This is critical for interpreting all other results, though the exact R\u00b2 value is not reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose a serial killing model where Mtb aggregate internalization causes macrophage death, rapid bacterial growth in the dead cell, internalization by another macrophage leading to its death, creating a positive feedback loop that locally stabilizes active Mtb replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 synthesize the experimental findings into a coherent model. This is supported by the aggregate cytotoxicity data (C3-C4), growth in dead cells (C42-C55), dead cell internalization causing death (C66-C73), and simulation results (C74-C77). The model integrates multiple lines of evidence, though it represents an in vitro system that may not fully capture in vivo complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on tuberculosis granuloma biology: granulomas are macrophage-rich structures that may restrict or support Mtb growth, can progress to necrosis and cavitation, and Mtb proliferation occurs in environments with dead cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C15 provide established background knowledge supported by appropriate citations. These contextual claims are well-supported by the literature and provide necessary background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior literature on macrophage death modes: apoptosis is protective through efferocytosis-mediated bacterial elimination, while necrotic death does not kill Mtb. Mtb induces necrosis through multiple mechanisms including mitochondrial damage, membrane repair inhibition, and toxin secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 accurately summarize prior literature with appropriate citations. These provide context for the current findings on non-apoptotic death and bacterial survival/growth after macrophage death.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background on adaptive immunity: Mtb infection is controlled by adaptive immune responses (effective weeks after exposure) through macrophage activation and cytotoxic T cells, though T cell function in granulomas may be limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide relevant immunological background with appropriate citations, including a contrasting finding (C24) about limited T cell function. This contextualizes why the in vitro macrophage system is relevant despite the absence of adaptive immunity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In vivo relevance: high Mtb concentrations and clumped bacteria are found at cavity surfaces in human, rabbit, and mouse TB granulomas. Mtb naturally aggregates without detergent treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide important context linking the in vitro findings to in vivo pathology. The citations support the presence of bacterial clumps and high concentrations in necrotic areas, validating the relevance of studying aggregated Mtb.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Speculation that efferocytosis protection may require apoptotic death, low bacterial numbers, and abundant uninfected macrophages to divide the bacterial load.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 is explicitly speculative reasoning about conditions for efferocytosis protection. While logical, it is not directly tested and represents a hypothesis to reconcile conflicting literature. The speculation is reasonable but unsupported by direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Literature context on phagosomal acidification: Mtb can inhibit phagosome-lysosome fusion and acidification, but GM-CSF activation may restore acidification, potentially impairing Mtb growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 provide relevant background on phagosomal biology with appropriate citations. This contextualizes the pHrodo findings (C56-C59) and the use of GM-CSF-differentiated MDM in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Discussion of T cell mechanisms and limitations: T cells control Mtb through IFN\u03b3 and granulysin, but effectiveness may be limited by rapid macrophage death, limited granuloma T cell function, T cell exclusion from inner granuloma layers, and impaired cytotoxic molecule expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe T cell mechanisms with appropriate citations. Claims C88-C90 discuss limitations, with C88 being partly speculative inference and C89-C90 supported by citations. This provides important context for why the macrophage-centric in vitro findings are relevant despite the absence of T cells in the experimental system.",
+    "result_type": "MINOR"
+  }
+]

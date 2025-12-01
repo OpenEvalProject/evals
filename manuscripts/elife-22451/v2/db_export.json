@@ -1,0 +1,1971 @@
+{
+  "submission": {
+    "id": "ecf9279b-4a32-481d-b131-b28bd371c575",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:32:05.542544Z",
+    "updated_at": "2025-11-30T23:32:05.542544Z"
+  },
+  "content": [
+    {
+      "id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "submission_id": "ecf9279b-4a32-481d-b131-b28bd371c575",
+      "content_type": "manuscript",
+      "content_text": "# Oncometabolite D-2-Hydroxyglutarate enhances gene silencing through inhibition of specific H3K36 histone demethylases\n\n## Authors\n\n- Ryan Janke<sup>1</sup> ([ORCID: 0000-0002-5755-8019](https://orcid.org/0000-0002-5755-8019))\n- Anthony T Iavarone<sup>2</sup>\n- Jasper Rine<sup>1</sup> ([ORCID: 0000-0003-2297-9814](https://orcid.org/0000-0003-2297-9814)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCertain mutations affecting central metabolism cause accumulation of the oncometabolite D-2-hydroxyglutarate which promotes progression of certain tumors. High levels of D-2-hydroxyglutarate inhibit the TET family of DNA demethylases and Jumonji family of histone demethylases and cause epigenetic changes that lead to altered gene expression. The link between inhibition of DNA demethylation and changes in expression is strong in some cancers, but not in others. To determine whether D-2-hydroxyglutarate can affect gene expression through inhibiting histone demethylases, orthologous mutations to those known to cause accumulation of D-2-hydroxyglutarate in tumors were generated in Saccharomyces cerevisiae, which has histone demethylases but not DNA methylases or demethylases. Accumulation of D-2-hydroxyglutarate caused inhibition of several histone demethylases. Inhibition of two of the demethylases that act specifically on histone H3K36me2,3 led to enhanced gene silencing. These observations pinpointed a new mechanism by which this oncometabolite can alter gene expression, perhaps repressing critical inhibitors of proliferation.\n\n## Introduction\n\nAmong the biggest surprises from cancer genome sequencing has been the extent to which mutations affecting metabolic enzymes appear as drivers of specific types of cancers. Isocitrate dehydrogenases (IDH), enzymes that convert isocitrate to \u03b1-ketoglutarate, are prime examples. Specific IDH mutations are highly prevalent features of certain subsets of cancers, including 60\u201390% of gliomas and secondary glioblastomas, 20% of late-stage acute myelogenous leukemia,\u00a0~50% of central and periosteal cartilagenous tumors, and 10\u201320% of interhepatic cholangiocarcinoma (Parsons et al., 2008; Molenaar et al., 2014). The high frequency and patterns of IDH mutations suggest that\u00a0they are important in early tumor development. In the case of acute myelogenous leukemia, IDH mutations also contribute to progression of these tumors (Molenaar et al., 2014; Reitman and Yan, 2010). With rare exception, IDH mutations in tumors occur exclusively as heterozygous missense mutations. The most frequently documented IDH mutations occur as substitutions of arginine 132 in IDH1 or the equivalent arginine (172) in IDH2. The specific amino acid substitution varies across and within tumor subtypes.\n\nTumor-associated IDH mutations appear to abolish the conversion of isocitrate to \u03b1-ketoglutarate, and instead promote a partial reverse reaction in which \u03b1-ketoglutarate is reduced to form D-2-hydroxyglutarate (D2-HG) (Dang et al., 2009; Rendina et al., 2013). D2-HG is a metabolite that is typically maintained at low levels in human cells through the activity of the enzyme D-2-hydroxyglutarate dehydrogenase (D2HGDH) (Achouri et al., 2004). Cellular D2-HG levels are commonly elevated in IDH-mutant tumor cells, sometimes to millimolar levels (Gross et al., 2010; Dang et al., 2009).\n\nThe structural similarity between D2-HG and \u03b1-ketoglutarate inspire models for D2-HG\u2019s role in tumor formation centered on antagonism of \u03b1-ketoglutarate-dependent enzymes. Indeed, the \u03b1-ketoglutarate-dependent TET family of DNA demethylases and Jumonji histone demethylases are inhibited by high levels of D2-HG in vitro and in cell culture, resulting in DNA and histone hypermethylation and accompanied by changes in gene expression (Figueroa et al., 2010; Xu et al., 2011; Chowdhury et al., 2011; Lu et al., 2012). There is strong circumstantial evidence from acute myeloid leukemias (AMLs) that DNA demethylases are the targets of the D2-HG produced by the IDH mutations: AMLs tend to have either the mutations in IDH or mutations in the genes encoding TET enzymes, but not both (Figueroa et al., 2010; Gaidzik et al., 2012). In the case of gliomas and other types of tumors, there is no such simple dichotomy, suggesting the possibility of other important targets of D2-HG in these tumors such as histone demethylases. Indeed elevated bulk histone methylation has been reported for some tumors producing D2-HG, but whether critical changes in gene expression result from inhibition of DNA demethylation or inhibition of histone demethylation in these tumors is an important and unresolved question (Chowdhury et al., 2011; Gaidzik et al., 2012; Lu et al., 2012). Further, tumors with elevated D2-HG levels show bulk increases in histone methyl marks typically associated with both transcriptional activation (H3K4, H3K36) and repression (H3K9, H3K27) (Turcan et al., 2012; Lu et al., 2012). The increase of global histone methylation marks could conceivably lead to architectural changes in chromatin that alter heterochromatin/euchromatin states, or change the capacity to initiate and undergo transcription, or some combination of both. Which processes underlie the critical transcriptional changes that promote development and progression in D2-HG-accumulating tumors is unknown. Here, the causality of transcriptional changes due to elevated D2-HG was tested in Saccharomyces cerevisiae. Elevated D2-HG levels led to increased gene repression at a heterochromatic locus. The mechanism behind this effect on transcription was pinpointed to elevated H3K36 methylation as a result of D2-HG inhibition of Jumonji-domain-containing demethylases Rph1 and Gis1.\n\n## Results\n\nTo study the impact of IDH mutations on gene expression, an analogous tumor-associated IDH mutation was made in Saccharomyces cerevisiae (IDP2-R132H) at the IDP2 locus. The yeast and human proteins share 61% amino acid identity (Figure 1\u2014figure supplement 1). This mutation is analogous to the most common mutation found in low-grade gliomas and secondary glioblastomas in the human ortholog IDH1 (reviewed in Waitkus et al., 2016). Heterochromatic gene silencing at the HML locus was used as the assay for detecting changes in gene expression of a locus for which the transcriptional state is epigenetically inherited using the Cre-Reported Altered States of Heterochromatin (CRASH) assay. In this assay, loss of silencing allows for transient expression of a cre-recombinase gene inserted within HML, leading to a permanent and heritable switch from RFP expression to GFP expression (Figure 1A) (Dodson and Rine, 2015). The frequency of switches from RFP to GFP expression within a colony serves as the readout of the strength/stability of gene silencing in heterochromatin at HML. A decrease in gene silencing leads to more cells switching from RFP to GFP. Enhanced gene silencing leads to a reduction in switches from RFP to GFP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig1-v2.jpg)\n\n**Figure 1.:** (A) Illustration of the CRASH (Cre reported altered states of heterochromatin) assay used to measure the strength of heterochromatic gene silencing at the HML locus. (B) Images of colonies with the CRASH reporter assay that were wild type (JRY10791), idp2\u0394 (JRY10732), or IDP2-R132H (JRY10731). (C) Box plots of the average frequency of loss-of-silencing events from mutants in panel B calculated using MORPHE (Liu et al., 2016). (D) Representative colony images of CRASH reporter strains with wild type (JRY10790) or mutant dld2\u0394 (JRY10733), dld2\u0394 idp2\u0394 (JRY10735), or dld2\u0394 IDP2-R132H (JRY10734). (E) The frequency of silencing loss from mutants in panel D. (F) Representative colony images of CRASH reporter strains with wild type (JRY10790) or mutant dld3\u0394 (JRY10752) and dld2\u0394 (JRY10733). (G) Plots of the frequency of silencing loss from mutants in panel F. (H) Images of colonies with the CRASH reporter assay that were wild type (JRY10790), dld2\u2206 (JRY10733), or dld3\u2206 (JRY10752). Colonies were grown on CSM-Trp-glucose agar plates for 7 days at 30\u00b0C. Representative images show the merged and separate GFP and RFP channels. (I) Plots of the frequency of silencing loss from mutants in panel H.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Alignment of S. cerevisiae Idp1 (CAA98631.1), Idp2 (NP_013275.1), Idp3 (NP_014389.3) and H. sapiens IDH1 (CAG38738.1) and IDH2 (AAH71828.1) was generated using T-Coffee Multiple Sequence Alignment Tool\u00a0(Notredame et al., 2000). Color shading indicates the reliability of the alignment from high reliability (Red) to low reliability (green/blue). Asterisk (*) indicates conserved amino acid in all sequences, colon (:) indicates a position with amino acids sharing physiochemical properties, and a dot (.) indicates semi-conserved substitutions occur in a given position of the alignment. Arginine 132 (or its equivalent residue) is noted by red text.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Cells were plated on CSM-Trp glucose agar plates and grown for 7 days at 30\u00b0C. Tops of colonies were imaged in GFP and RFP channels. The RFP and GFP channels for a single representative image of each strain are shown separately and as a merged image.\n\n### Mutations expected to produce D2-HG resulted in enhanced gene silencing\n\nBecause IDP2 is expressed only on non-fermentable carbon sources (Haselbeck and McAlister-Henn, 1993), cells were plated on solid medium containing glycerol as the sole carbon source to induce IDP2 expression. The frequency of loss-of-silencing events, detected as green spots or sectors within a colony, was quantified using MORPHE (Liu et al., 2016). The IDP2-R132H mutation increased the stability of heterochromatin (p<0.0001; Student\u2019s t test) compared to wild-type IDP2, resulting in fewer switches from RFP to GFP expression (Figure 1B). This effect was dependent on IDP2 expression, as no effect was observed when cells were plated on medium containing glucose, which represses IDP2 expression (Figure 1\u2014figure supplement 2). Deletion of IDP2 did not affect the stability of heterochromatin suggesting that IDP2-R132H results in a gain-of-function. These results demonstrate that tumor-associated IDH mutations led to increased stability of gene silencing in a heterochromatic domain in Saccharomyces.\n\nIf IDP2-R132H stabilized heterochromatin through increased D2-HG levels, then other genetic changes that independently increase D2-HG levels should do the same. In human cells, D2-HG is metabolized by D2HGDH (Achouri et al., 2004). Loss of D2HGDH causes D2-HG to accumulate to high levels. The high degree of amino acid sequence similarity between human D2HGDH and yeast Dld2 and Dld3 suggested that both were potential yeast orthologs of human D2HGDH, as recently confirmed (Becker-Kettern et al., 2016). Indeed, on medium with glycerol as the sole carbon source, when oxidative phosphorylation is the primary means of ATP production, the dld2\u2206 mutant phenocopied the effect of the IDP2-R132H mutant and increased gene silencing compared to wild type (p<0.0001; Student\u2019s t test) (Figure 1D,E). Moreover, the IDP2-R132H dld2\u2206 double mutant resulted in a further increase in heterochromatin stability compared to wild type (p<0.0001; Student\u2019s t test) and dld2\u0394 alone (p<0.05; Student\u2019s t test) (Figure 1D,E). The stabilizing effect of a dld2\u0394 mutation was slightly diminished in combination with an idp2\u0394 deletion, suggesting that even wild-type Idp2 may contribute to the formation of D2-HG, either by directly producing D2-HG or indirectly by producing \u03b1-ketoglutarate as a substrate used by other enzymes for D2-HG formation. A dld3\u2206 mutation did not increase heterochromatin stability when cells were grown on glycerol medium (Figure 1F,G). However, when cells were grown on glucose, where ATP is primarily generated through sugar fermentation, both dld2\u2206 and dld3\u2206 mutations led to increased heterochromatin stability (Figure 1H,I). The increase in heterochromatin stability in the dld2\u2206 and dld3\u2206 mutants implied that D2-HG is normally produced in yeast under these and other conditions (see also Becker-Kettern et al., 2016).\n\nIf the increased gene silencing in the IDP2-R132H mutant were due to increased D2-HG levels, then the phenotype of the mutant should be dominant to wild-type IDP2. Conversely, if the effects on gene silencing were due to a reduced ability to convert isocitrate into \u03b1-ketoglutarate, the IDP2-R132H allele would likely be recessive to wild type. In an IPD2-R132H/IDP2 heterozygous diploid strain, gene silencing was increased compared to the equivalent strain with two copies of wild-type IDP2 (Figure 2A,B), demonstrating that the yeast mutation, analogous to the cancer-driver mutation in human IDH1, was dominant to wild-type IDP2. Dominance of the IDP2-R132H allele was observed both in wild-type DLD2 and dld2\u0394 mutant backgrounds. Interestingly, a strain homozygous for IDP2-R132H had less stable gene silencing than the heterozygous strain, suggesting that the effect of IDP2-R132H on silencing was synergistic with a wild-type copy of IDP2. These results echoed the observation in IDH1R132H/WT tumor cell\u00a0lines that knockout of the wild-type copy of IDH1\u00a0(IDH1R132H/-)\u00a0 results in decreased D2-HG formation\u00a0relative\u00a0to\u00a0IDH1R132H/WT\u00a0cells (Jin et al., 2013).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig2-v2.jpg)\n\n**Figure 2.:** (A) Images of diploid colonies with the CRASH reporter assay. The diploid strains have CRE inserted at both copies of HML and two copies of the CRASH RFP-GFP reporter cassette and were wild type (JRY10750), dld2\u0394/dld2\u0394 (JRY10749), dld2\u0394/dld2\u0394 IDP2/IDP2-R132H (JRY10751), or dld2\u0394/dld2\u0394 IDP2-R132H/IDP2-R132H (JRY10748). Cells were plated on CSM-Trp\u00a0glycerol agar plates and imaged after 7 days. (B) Plots of the frequency of silencing loss from mutants in panel A were calculated using MORPHE.\n\n### Elevated D2-HG caused enhanced gene silencing\n\nTo establish whether both IDP2-R132H and dld-mutant strains accumulate D2-HG, metabolite extracts were prepared from cells harboring these mutations and analyzed by quantitative liquid chromatography-mass spectrometry (LC-MS). D2-HG levels in wild-type strains ranged between 10\u00a0and\u00a060 \u00b5M, in agreement with previous levels measured in yeast (Becker-Kettern et al., 2016). Consistent with a role in metabolizing D2-HG, a dld2\u2206 mutation led to a\u00a0~50 fold increase in cellular D2-HG levels in cells grown on glycerol (Figure 3A) and a fivefold increase in cells grown on glucose (Figure 3D). A dld3\u0394 mutation also led to a sevenfold increase in cellular D2-HG, but this increase was observed only in cells grown on glucose (Figure 3C,D). Thus, D2-HG is a normal feature of the S. cerevisiae metabolome and is efficiently metabolized by Dld2 and Dld3, as noted (Becker-Kettern et al., 2016). However, Dld3 activity toward D2-HG was limited to cells grown on fermentable carbon sources like glucose. Although the increased D2-HG level in the Idp2-R132H mutant inferred from the silencing phenotype was not detected in the LC-MS analysis of cells that were able to metabolize it (Figure 3A), the Idp2-R132H mutation clearly contributed to D2-HG production when measured in combination with dld2\u2206 and wild-type Idp2 protein (Figure 3B). Tumors with the equivalent isocitrate dehydrogenase mutation (IDH1-R132H) are exclusively heterozygous, retaining a wild-type copy of IDH1, and knock-down of wild-type IDH1 reduces D2-HG produced by IDH1-R132H (Ward et al., 2013). Because IDH is typically a homodimer, presumably the wild-type enzyme provides a local source of \u03b1-ketoglutarate for the mutant enzyme to convert to D2-HG (Ward et al., 2013; Jin et al., 2013). To test whether D2-HG production by yeast Idp2-R132H was likewise enhanced by the presence of wild-type Idp2, cells were transformed with a plasmid containing a copy of the wild-type IDP2 gene expressed from its native promoter. The presence of an extra copy of wild-type IDP2 had no effect on D2-HG levels in wild-type IDP2 cells (Figure 3B, bar 3 versus bar 4). However, D2-HG levels significantly increased (p<0.05) in mutant IDP2-R132H cells when an extra copy of wild-type IDP2 was present (Figure 3B, bar 5 versus bar 4). In the same strains, the increased levels of D2-HG corresponded to an increase in silencing (Figure 3\u2014figure supplement 1). An extra copy of wild-type IDP2 had no effect on silencing in wild-type IDP2 cells. In parallel to the results measuring D2-HG levels, an extra copy of wild-type IDP2 enhanced silencing in mutant IDP2-R132H cells compared to strains with only wild-type IDP2 (p<0.0001; Student\u2019s t test). These results demonstrated a strong correlation between D2-HG levels and increased silencing at a heterochromatic locus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig3-v2.jpg)\n\n**Figure 3.:** (A) Plot of the average fold change from wild type (JRY10790) in levels of D-2-hydroxyglutarate from metabolite extracts of dld2\u0394 (JRY10733), idp2\u0394 (JRY10732), IDP2-R132H (JRY10731), and dld2\u0394 IDP2-R132H (JRY10734) mutant strains measured by LC-mass spectrometry. (B) Plot of the average fold change from wild type in levels of D-2-hydroxyglutarate from metabolite extracts from wild type (JRY10790), dld2\u0394 (JRY10733) and dld2\u0394 IDP2-R132H (JRY10734) cells transformed with the empty vector pRS315 (denoted as -) or plasmid pJR3399 containing a wild-type copy of IDP2 (denoted as +IDP2). (C) The average D-2-hydroxyglutarate levels from wild type (JRY10790) and dld3\u2206 (JRY10752) strains were measured and plotted as in part A. (D) The average D-2-hydroxyglutarate levels from wild type (JRY10790), dld2\u2206 (JRY10733), dld3\u2206 (JRY10752), and dld2\u0394 dld3\u0394 (JRY10753) mutants grown in minimal medium with 2% glucose were measured as in part A. For all panels, statistical analysis was performed using an unpaired, two-tailed (Student\u2019s) t test. Error bars show the standard error of the mean. Bars marked by an asterisk (*) were statistically significantly different (p<0.05) from wild type.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Images of colonies with the CRASH reporter assay from wild type (JRY10790), dld2\u0394 (JRY10733) and dld2\u0394 IDP2-R132H (JRY10734) cells transformed with the empty vector pRS315 (denoted as \u2018-') or plasmid pJR3399 containing a copy of wild-type IDP2 (denoted as +IDP2). (B) Plots of the frequency of loss-of-silencing events from mutants in panel A calculated using MORPHE.\n\nAs a direct test of whether increased levels of D2-HG were responsible for the increase in gene silencing, cells were grown in the presence or absence of cell membrane-permeable octyl-D2-HG. Treatment with octyl-D2-HG had no impact on silencing in wild-type cells that readily metabolized D2-HG (Figure 4A). However, treatment of dld2\u0394 mutant cells with octyl-D2-HG resulted in increased gene silencing compared to the untreated cells (p<0.05) (Figure 4B) establishing that increases in D2-HG were causal for stabilizing gene silencing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig4-v2.jpg)\n\n**Figure 4.:** (A) Images of wild type (JRY10790) CRASH assay reporter colonies that were grown on CSM-Trp 3% Glycerol (untreated) or with 100 \u00b5M octyl-D2-HG added to the medium (Left Panel). Plots of the frequency of silencing loss calculated using MORPHE (Right Panel). (B) Images of dld2\u0394 (JRY10733) CRASH assay reporter colonies that were grown on CSM-Trp 3% Glycerol (untreated) or with 100 \u00b5M octyl-D2-HG added to the medium (Left Panel). Plots of the frequency of silencing loss from colonies calculated using MORPHE. The data in Figure 4A and B were from independent experiments conducted on different days with different batches of media. MORPHE-based comparisons should be restricted to experiments performed in parallel at the same time (Liu et al., 2016).\n\n### D2-HG did not enhance a locus-specific gene repression mechanism\n\nIn principle, D2-HG accumulation could impact other forms of gene repression. The GAL1 promoter is repressed in media containing glucose. By placing the cre gene under control of the GAL1 promoter, it was possible to measure the impact of D2-HG on another type of transcriptional repression. When dld2\u2206 mutations were introduced into the pGAL1::cre strain, repression of cre was maintained to the same degree as in wild type, indicating that the impact of D2-HG did not extend to all forms of repression (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig5-v2.jpg)\n\n**Figure 5.:** (A) Images of colonies of CRASH reporter strains with wild-type HML (JRY10757) and either a pRS413 empty vector (left panels) or a vector with cre expressed from the GAL1 promoter (pSH62) (right panels). Cells were plated on CSM-His-Trp with the indicated carbon source and grown for 7 days at 30\u00b0C. Representative images show the merged and separate GFP and RFP channels. (B) The same experiment as in part A was performed in a strain containing a dld2 deletion (JRY10758).\n\n### D2-HG inhibited multiple histone demethylases\n\nD2-HG can inhibit 2-oxoglutarate/Fe(II)-dependent dioxygenases. This class of enzymes includes TET DNA demethylases and Jumonji-C class of histone demethylases, which are both important epigenetic regulators previously implicated in progression of certain cancers. Since both families of demethylase are inhibited by D2-HG (Xu et al., 2011; Figueroa et al., 2010; Chowdhury et al., 2011; Lu et al., 2012), we tested whether the enhanced gene silencing caused by D2-HG in yeast was due to inhibition of a demethylase activity. DNA methylation does not occur in S. cerevisiae, but histone methylation impacts heterochromatin at HML (Osborne et al., 2009; van Leeuwen et al., 2002). To determine if increased D2-HG lead to increased bulk histone methylation, or whether the effects were localized to particular methylated species, histone methylation levels were analyzed from yeast extracts prepared from either wild type or dld2\u2206 IDP2-R132H mutant cells using antibodies against specific histone methyl marks. Bulk levels of H3K36-mono and -trimethyl and H3K4-trimethyl marks were significantly higher (p<0.01) in dld2\u2206 IDP2-R132H strains compared to wild type (Figure 6A and B, Figure 6\u2014figure supplement 1). The antibody for the H3K36 dimethyl species exhibited too much background to determine the statistical significance of the apparent increase in the mutant cells. Thus, bulk levels of all three methylated species of H3K36 methylation and H3K4 methylation increased in strains that accumulated high levels of D2-HG, consistent with D2-HG inhibition of histone demethylase enzymes. The lack of change in H3K79 methylation levels was consistent with this model as there is no known H3K79 demethylase in S. cerevisiae.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immuno-blot analysis of H3 histone methylation states from wild type (JRY10790), set2\u2206 (JRY10746), and dld2\u2206 IDP2-R132H (JRY10734) mutants. The upper panel of each set shows immuno-blot signals generated from antibodies against mono-, di-, or trimethyl H3K36, and total H3. The lower panel of each set shows a loading control immuno-blot signal generated from an antibody against Pgk1 from the same membrane as the panel above it. (B) Fluorescent immuno-blot signals from panel A and from Figure 6\u2014figure supplement 1 were imaged and quantified using LI-COR Odyssey. The value of each methylation mark normalized to total H3 was calculated and the average of measurements from three independent clones, which serve as biological replicates, was plotted. The error bars represent standard error of the mean. Indicated p-values were generated by an unpaired, two-tailed (Student\u2019s) t test (*p\u22640.01, **p\u22640.005).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The upper panel of each set shows immunoblot signals generated from antibodies against trimethyl H3K4, H3K79, and total H3, as imaged on a LI-COR Odyssey. The lower panel of each set shows a loading control immuno-blot signal generated from an antibody against Pgk1 from the same membrane as the panel above it.\n\n### Enhanced gene silencing resulted from specific inhibition of two H3K36me demethylases\n\nThere are five known Jumonji-domain proteins in S. cerevisiae and among them Rph1, Gis1, and Jhd1 demethylate various species of methylated H3K36 (Tu et al., 2007; Kim and Buratowski, 2007) and Jhd2 demethylates mono-, di-, and trimethylated H3K4 (Seward et al., 2007). Because both H3K4 and H3K36 methylation increased, inhibition of multiple histone demethylases could potentially contribute to the increase in gene silencing. To identify the relevant histone demethylase(s) whose inhibition led to enhanced gene silencing, all five Jumonji-domain genes were deleted individually and in combinations and the resulting mutants assessed for a potential role in heterochromatin stability. The strong prediction was that deletion of the relevant histone demethylase(s) would phenocopy the effect of increased D2-HG levels if D2-HG caused increased gene silencing by inhibiting a histone demethylase. Indeed, both gis1\u2206 and rph1\u2206 single mutants enhanced gene silencing compared to wild type (p<0.0001; Student\u2019s t test), and the rph1\u2206 gis1\u2206 double mutants resulted in even further enhancement compared to wild type (p<0.0001; Student\u2019s t test) (Figure 7A,B). The jhd1\u2206 mutant had no statistically significant effect on its own or in combination with either rph1\u2206 or gis1\u2206 mutations, nor did ecm5\u2206 and jhd2\u2206 mutations (Figure 7\u2014figure supplement 1). Therefore, elevated H3K36 methylation was the determinant for increasing heterochromatin stability, and Rph1 and Gis1 were implicated as the primary demethylases inhibited by D2-HG accumulation that led to enhanced heterochromatic gene silencing. In further support, GIS1 and RPH1 overexpressed from a galactose-inducible plasmid led to destabilization of heterochromatin (Figure 7C); in contrast, overexpression of JHD1 had no effect (Figure 7C).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig7-v2.jpg)\n\n**Figure 7.:** (A) Images of CRASH assay reporter colonies that are wild type (JRY10790) or contain mutations in H3K36 demethylases. (B) Plots of the frequency of loss-of-silencing events from mutants in panel A calculated using MORPHE. (C) Images of CRASH assay reporter colonies (JRY10790) transformed with plasmids encoding Jumonji-domain demethylases overexpressed from a galactose-inducible promoter. The colonies were grown on agar plates containing 2% galactose. (D) Images of CRASH reporter strains with set2\u2206, gis1\u2206, and rph1\u2206 mutations. (E) Plots of the frequency of loss-of-silencing events from mutants in panel D calculated using MORPHE.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Wild-type strains (JRY10790) and strains deleted for ecm5\u2206 (JRY10754) (A), jhd2\u2206 (JRY10755) (B), or set1\u0394 (JRY10756) (C) were grown on CSM-Trp-glycerol agar plates for 7 days at 30\u00b0C. Representative images show the merged and separate GFP and RFP channels. Plots of the frequency of silencing loss from mutants in each panel were calculated using MORPHE. For all panels, statistical analysis comparing wild type to the indicated mutant was performed using an unpaired, two-tailed (Student\u2019s) t test. No statistically significant (p<0.05) differences were observed.\n\nIn principle, the enhanced gene silencing in the gis1\u2206 rph1\u2206 double mutant could result from a failure to demethylate H3K36 methylated species, or from a failure to demethylate a here-to-fore unrecognized methylated species of any histone or non-histone protein. These possibilities were distinguished by the triple mutant combination set2\u2206 gis1\u2206 rph1\u2206. Methylation of H3K36 is exclusively dependent on the methyltransferase Set2 (Strahl et al., 2002). The loss of Set2 completely abrogated the effect of gis1\u2206 rph1\u2206 on gene silencing. The extent of gene silencing in the triple mutant was no different from either wild type or set2\u2206 single mutants (Figure 7D,E). Because set2\u2206 suppressed gis1\u2206 and rph1\u2206, the enhanced gene silencing in gis1\u2206 and rph1\u2206 mutants was due exclusively to H3K36 hypermethylation.\n\nThese results strongly predicted that set2\u0394 mutations would also suppress the phenotypes of dld2\u0394 and IDP2-R132H mutations. Indeed, gene silencing in set2\u0394 dld2\u0394 double mutants and set2\u0394 dld2\u0394 IDP2-R132H triple mutants was no different from set2\u0394 single mutants (Figure 8A,B). If D2-HG affects gene silencing by inhibition of H3K36 demethylases, then gis1\u0394 rph1\u0394 mutants should be epistatic to dld2\u0394 and IDP2-R132H mutations. This prediction was confirmed by analysis of gis1\u0394 rph1\u0394 dld2\u0394 and gis1\u0394 rph1\u0394 dld2\u0394 IDP2-R132H mutants, which displayed identical levels of silencing to the gis1\u0394 rph1\u0394 double mutant (Figure 8C,D). These results provided the functional confirmation that the elevated gene silencing observed in cells that accumulate D2-HG was due to Set2-dependent methylation of H3K36, and its subsequent hypermethylation due to inhibition of the Gis1 and Rph1 demethylases.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/22451/elife-22451-fig8-v2.jpg)\n\n**Figure 8.:** (A) Images of CRASH assay reporter colonies that are wild type (JRY10790) or mutant dld2\u0394 (JRY10733), dld2\u0394 IDP2-R132H (JRY10734), set2\u2206 (JRY10746), dld2\u0394 set2\u2206 (JRY10794), or dld2\u0394 IDP2-R132H set2\u2206 (JRY10795). (B) Plots of the frequency of loss-of-silencing events from mutants in panel A calculated using MORPHE. (C) Images of CRASH assay reporter colonies. The same strains as in panel A were used with the addition of gis1\u0394 rph1\u0394 (JRY10742), gis1\u0394 rph1\u0394 dld2\u0394 (JRY10792), and gis1\u0394 rph1\u0394 dld2\u0394 IDP2-R132H (JRY10793). (D) Plots of the frequency of loss-of-silencing events from mutants in panel C calculated using MORPHE. The experiments in panel A and panel C were performed together, and the same batches of colony images were used in MORPHE analysis for wild type, dld2\u0394, and dld2\u0394 IDP2-R132H (panels B and D).\n\n## Discussion\n\nWe have recapitulated cancer-associated IDH mutations in S. cerevisiae and demonstrated that the IDH mutants accumulated D2-HG in vivo and increased heterochromatin stability as reflected by enhanced gene silencing within heterochromatin. While DNA methylation is clearly impacted by D2-HG accumulation and leads to transcriptional changes in certain IDH-mutant tumors, it has been difficult to parse which cellular changes are attributable to inhibition of DNA demethylation, histone demethylation, or other unexplored targets of demethylases. Here, we demonstrated unequivocally that enhanced gene silencing was due to histone H3K36 hypermethylation in response to the oncometabolite D2-HG inhibiting two specific histone demethylases. As S. cerevisiae lacks DNA methylation, there were no confounding effects of DNA methylation in our study.\n\nD2-HG has only been\u00a0recently reported in S. cerevisiae (Becker-Kettern et al., 2016), and several new aspects of its metabolism are established here. D2-HG was detected in metabolite extracts even from wild-type cells, suggesting it is a normal component of the yeast metabolome. Wild-type cells maintained D2-HG at low levels through the activity of D2-HG dehydrogenases. Both Dld2 and Dld3 are capable of metabolizing D2-HG in vitro, and loss of either enzyme leads to accumulation of D2-HG in cells grown on glucose, with Dld3 having a stronger effect than Dld2 (Becker-Kettern et al., 2016). However, only Dld2 had a role in metabolizing D2-HG in vivo in cells grown on glycerol, suggesting that Dld3 and Dld2 are differentially regulated in response to the mode of energy production in the cell.\n\nIDP2-R132H mutants alone, and in combination with dld2\u2206, led to enhanced gene silencing. Multiple lines of evidence linked enhanced gene silencing to the production of D2-HG and inhibition of H3K36 histone demethylases Gis1 and Rph1. First, mutants that led to D2-HG accumulation phenocopied gis1\u0394 rph1\u0394 double mutants. Next, gis1\u0394 rph1\u0394 double mutants were epistatic to IDP2-R132H and dld2\u0394 mutations, indicating that the increase in gene silencing in IDP2-R132H and dld2\u0394 mutants was due to inhibition of these H3K36 demethylases. Additionally, the silencing phenotypes of H3K36 demethylase mutants, IDP2-R132H, and dld2\u0394 all depended on the H3K36 methyltransferase activity of Set2. Finally, external application of a cell-permeant form of D2-HG recapitulated enhanced silencing, demonstrating the causality of this phenotype. D2-HG acts as a competitive inhibitor of human Jumonji histone demethylase enzymes. Whether yeast Jumonji-domain histone demethylases are biochemically inhibited by D2-HG has not explicitly been tested, although the genetic and molecular evidence strongly implied such a mechanism.\n\nD2-HG levels increased approximately 50-fold in dld2\u0394 mutants, and IDP2-R132H mutations also contribute to the pool of D2-HG, although this contribution was detectable only when a copy of wild-type IDP2 was also present in IDP2-R132H mutant cells. This result was consistent with our genetic analysis of diploid cells in which silencing was greatest in IDP2/IDP2-R132H heterozygotes, and was also consistent with previous studies using human cell lines and tumors where the equivalent human mutation (IDH1-R132H) also partially depended on the presence an intact copy of wild-type IDH1 for D2-HG production (Jin et al., 2013; Ward et al., 2013). Increases in D2-HG were readily measured in dld2-mutants, but not in cells capable of degrading D2-HG. This differs from tumor cells where IDH mutations lead to measurable increases in D2-HG despite intact D2-HG dehydrogenase activity (Krell et al., 2011). This discrepancy could either be due to a higher capacity of S. cerevisiae to metabolize D2-HG, a higher capacity for the human equivalent to the IDP2-R132H mutation to generate D2-HG, or some combination of both. We were able to detect a silencing phenotype in IDP2-R132H mutants even in cells capable of metabolizing D2-HG due to the highly sensitive nature of the CRASH assay, which converts transient lapses of silencing in individual cells into permanent and heritable effects. In contrast, physical measurements of metabolites reveal only steady-state levels averaged over millions of cells. Given that D2-HG is actively degraded when Dld2 is present, it is evident that our genetic assay was able to detect change caused by changes in D2-HG that were below our present level of physical detection.\n\nAccumulation of D2-HG led to hypermethylation of histone H3 at lysine 4 and lysine 36. Importantly, it was the loss of histone demethylases that act on H3K36 that was solely responsible for increased stabilization of heterochromatin. Inhibition of H3K4 demethylation and the resulting elevation of bulk H3K4me had no effect on gene silencing. A role of H3K36 methylation in heterochromatin stability was surprising as other described roles for this modification involve co-transcriptional methylation of H3K36 to enhance transcriptional elongation (Kizer et al., 2005; Tu et al., 2007). Methylation of H3K36 at transcribed genes prevents aberrant transcription from initiating from within the open-reading frames of actively transcribed genes (Carrozza et al., 2005; Keogh\u00a0et\u00a0al., 2005; Joshi and Struhl, 2005), although this process appears to be incompatible with silencing at HML for reasons detailed below. Nevertheless, other aspects of histone methylation have had unexpected impacts on heterochromatic gene silencing. For example, H3K4 methylation occurs at the 5\u2019 ends of actively transcribed genes and is important for maintaining a local chromatin landscape conducive to transcription, and yet it also plays a role in the establishment of silencing at HML (Osborne et al., 2009). Whether methylation of H3K4 is directly involved in the establishment and H3K36 in maintenance of SIR-dependent silencing remain important unresolved questions. Precedence for a direct role of histone methylation in silencing is evident in other species in which methylation of H3K9 and H3K27 directly recruit proteins that establish heterochromatin. Although budding yeasts lack the enzymes necessary to methylate H3K9 and K27, methylation of other histone lysines directly impact silencing. The site at which Sir3 interacts with histone H3 includes H3K79, and methylation of H3K79 by Dot1 inhibits Sir3-H3 interaction (Armache et al., 2011). The majority of euchromatic nucleosomes are methylated at H3K79, thus preventing Sir protein binding, while at heterochromatic loci Sir3 binds to H3 and sterically occludes Dot1 from accessing H3K79 for methylation. The results of this study are compatible with a model in which H3K36 methylation directly enhances the maintenance of silent chromatin, perhaps by recruitment of a pro-silencing factor to silent loci.\n\nAlternatively, global increases in H3K36 methylation could recruit factors antagonistic to silencing away from heterochromatin. For example, the Rpd3 complex antagonizes silencing at heterochromatic loci HML and HMR by limiting Sir3 and Sir4 occupancy at flanking silencer regions (Thurtle-Schmidt et al., 2016). Importantly, the deacetylase activity of Rpd3(S) is directed toward nucleosomes at actively transcribed genes in part through an interaction between the Eaf3 subunit of the Rpd3(S) complex and histones methylated at H3K36 (Carrozza et al., 2005; Keogh, 2005; Joshi and Struhl, 2005). It is possible that elevated H3K36 methylation in euchromatin recruits Rpd3(S) away from HML and HMR, and partially alleviates its antagonistic effect on silencing. Because recruitment of Rpd3 to heterochromatin appears to be independent of Eaf3 and thus H3K36 methylation (Thurtle-Schmidt et al., 2016), a global increase of H3K36 methylation could lead to relocalization of a limited pool of Rpd3 away from HML and HMR to sites with increased H3K36 methylation. Finally, H3K36 methylation prevents binding of Sir proteins to heterochromatin-adjacent and telomere-adjacent regions (Tompa and Madhani, 2007). Increased global H3K36 methylation due to D2-HG accumulation could, in principle, prevent binding of Sir proteins to non-heterochromatic regions, making more Sir protein available to bind at heterochromatic loci.\n\nIncreased silencing of tumor suppressor genes is a feature of many tumors. This study pinpointed specific histone demethylase enzymes whose inhibition by D2-HG resulted in increased gene silencing. Further, this study demonstrated that D2-HG enhanced gene silencing through stabilization of heterochromatic DNA. Similar mechanisms could promote tumor formation by silencing genes encoding tumor suppressors.\n\n## Materials and methods\n\n### Yeast strains and plasmids\n\nThe strains used in this study are derived from the W303 background and listed in Supplementary file 1. Components of the CRASH assay were generated as described previously\u00a0(Dodson and Rine, 2015). Gene deletions were made by one-step integration of disruption cassettes (Goldstein and McCusker, 1999; Goldstein et al., 1999; Wach et al., 1994) and confirmed by PCR. The IDP2-R132H point mutation was generated by adaptamer-mediated PCR\u00a0(Erdeniz et al., 1997). A PCR fragment of IDP2 was amplified using genomic DNA template and IDP2-R132H Ad-A Mut Forward primer with IDP2-835-814 Ad-B Reverse primer (Fragment 1). Truncated, overlapping fragments of URA3 K. lactis were amplified using Adaptamer b URA3kl Forward with K. lactis 3' internal reverse primer (Fragment 2) and K. lactis 5' internal forward primer with Adaptamer a URA3kl reverse primer (Fragment 3). PCR fragments 1 and 2 were mixed in a PCR reaction and fused together using primers IDP2-R132H MutA Forward and K. lactis 3' internal reverse, resulting in Fragment L. PCR fragments 1 and 3 were mixed in a PCR reaction and fused together using primers K. lactis 5' internal forward and IDP2-835-814 Ad-B Reverse, resulting in Fragment R. Allele replacement of IDP2 was performed by co-transforming fragments L and R into JRY10790 and selection on CSM-URA to generate a direct repeat of IDP2-R132H separated by URA3K.lactis. The resulting transformants were streaked on 5-FOA to select for recombination events resulting in a single copy of IDP2-R132H at the native IDP2 locus and loss of the second copy of IPD2-R132H and URA3K.lactis. The presence of a single copy of IPD2-R132H was confirmed by PCR and sequencing of the entire ORF. The CEN-ARS-LEU2 plasmid (pRS315) (Sikorski and Hieter, 1989) was used to generate pJR3399. A PCR fragment containing the IDP2 open reading frame and 319 bases of the IDP2 5\u2019UTR and 292 bases of the IDP2 3\u2019UTR was amplified from S. cerevisiae genomic DNA template using the Gibson Assembly-compatible forward primer 5\u2019-AATTAACCCTCACTAAAGGCTCCGGGATGTCATTGCCGG-3\u2019 and reverse primer 5\u2019-TAATACGACTCACTATAGGGTCCTCTGTGTAGGTTGTAACGA-3\u2019 and was inserted into the multiple cloning site of pRS315 by Gibson Assembly (New England Biolabs, Ipswich, MA). In Figure 5, the indicated strains were transformed with either an empty vector CEN-ARS-HIS3 plasmid (pRS413) (Sikorski and Hieter, 1989) or a plasmid with cre expressed from the GAL1 promoter (pSH62) (Gueldener et al., 2002).\n\n### Yeast metabolite extractions\n\nCells were grown to mid-log phase in minimal medium with glycerol as the sole carbon source. Prior to harvesting, 1 \u00d7 108 cells were mixed with 40 ml of 60% methanol chilled to \u221220\u00b0C. Cells were pelleted by centrifugation at 4\u00b0C at 1540 x g for 5 min and pellets were frozen in liquid nitrogen. Pellets were resuspended in 2.5 ml of 100% methanol (\u221220\u00b0C), refrozen in liquid nitrogen, and immediately thawed in an ice bath. The suspension was pelleted by centrifugation at 770 x g for 20 min at 4\u00b0C. The resulting supernatant was collected and stored at \u221220\u00b0C. An additional round of extraction was performed by resuspending the pellet in 2.5 ml of methanol and vortexing for 30 s at 4\u00b0C. Insoluble material was pelleted by centrifugation as before and the resulting supernatant was pooled with the first extraction. A 0.5 ml aliquot of the extract was transferred to a new tube and the methanol was evaporated by vacuum concentrator (Savant SpeedVac, Thermo Scientific, Waltham, MA) for 1 hr without heating. The resulting residue was resuspended in 100 \u00b5l of water immediately prior to liquid chromatography-mass spectrometry.\n\n### Liquid chromatography-mass spectrometry\n\nMetabolite extract samples were analyzed using an Agilent 1200 liquid chromatograph (LC; Santa Clara, CA) that was connected to an LTQ-Orbitrap-XL mass spectrometer equipped with an electrospray ionization (ESI) source (Thermo Fisher Scientific, Waltham, MA). The LC was equipped with an in-line filter (KrudKatcher Classic, Phenomenex, Torrance, CA), a C18 analytical column (Atlantis T3, 150 mm length\u00a0\u00d71.0 mm inner diameter, 3 \u00b5m particles, Waters, Milford, MA) and a 100-\u00b5L sample loop. Acetonitrile, formic acid, and methanol (Fisher Optima grade, 99.9%), and water purified to a resistivity of 18.2 M\u03a9\u00b7cm (at 25\u00b0C) using a Milli-Q Gradient ultrapure water purification system (Millipore, Billerica, MA) were used to prepare mobile phase solvents. Solvent A was 99.9% water/0.1% formic acid and solvent B was 50% acetonitrile/50% methanol (v/v). The elution program consisted of isocratic conditions at 1% B for 2 min, a linear gradient to 85% B over 2 min, isocratic conditions at 85% B for 2 min, a linear gradient to 1% B over 1 min, and isocratic conditions at 1% B for 20 min, at a flow rate of 50 \u00b5L/min. The column and sample compartments were maintained at 30\u00b0C and 4\u00b0C, respectively. The column exit was connected to the ESI probe of the mass spectrometer using PEEK tubing (0.005\u2019 inner diameter\u00a0\u00d71/16'\u2019 outer diameter, Agilent). Mass spectra were acquired in the negative ion mode over the range m/z\u00a0=\u00a0100 to 1000 using the Orbitrap mass analyzer, in profile format, with a resolution setting of 100,000 (measured at m/z\u00a0=\u00a0400, full width at half-maximum peak height). Mass spectrometry data acquisition and analysis were performed using Xcalibur software (version 2.0.7, Thermo) and quantitative analysis calculations were performed using Excel (Office Professional Plus 2013, Microsoft, Redmond, WA). Averages for each strain were determined from three independent clones which serve as biological replicates and divided by the average calculated for wild type. Unpaired two-sided (Student\u2019s) t tests were used to determine whether differences in metabolite levels were statistically significant.\n\n### Colony growth and imaging\n\nCells were diluted and plated onto 1.5% agar plates containing complete supplement mixture (CSM) \u2013 Trp (Sunrise Science Products, San Diego, CA), CSM \u2013 Trp \u2013 His (Sunrise Science Products, San Diego, CA), or, as indicated, yeast nitrogen base (YNB) without amino acids (Difco-Beckton Dickinson, Franklin Lakes, NJ) and either 3% glycerol, 2% glucose, 2% raffinose, or 2% galactose as indicated. Strains transformed with plasmids pRS315 and pJR3399 were grown using media exactly as described above but with the dropout mixture CSM \u2013 Trp \u2013 Leu (Sunrise Science Products, San Diego, CA). Strains transformed with plasmids pRS413 and pSH62 were grown exactly as described above but with the dropout mixture CSM \u2013 Trp \u2013 His (Sunrise Science Products, San Diego, CA). Colonies were grown for 10 days at 30\u00b0C unless otherwise noted. All colonies were imaged using a Zeiss Axio Zoom.V16 microscope equipped with ZEN software (Zeiss, Jena, Germany), a Zeiss AxioCam MRm camera and a PlanApo Z 0.5\u00d7 objective. The tops of colonies were imaged in RFP and GFP channels. The RFP and GFP channels are shown separately and merged for a representative colony image for each strain.\n\n### Immuno-blotting\n\nCells were grown in liquid cultures of CSM-Trp-3% glycerol shaking at 30\u00b0C until mid-log phase. 10 OD units of cells were harvested from each culture, pelleted, frozen with liquid nitrogen, and stored at \u221280\u00b0C. Pellets were resuspended in 200 \u03bcl of 20% w/v trichloroacetic acid and transferred to 2-ml screw cap tubes. Cell extracts were prepared by addition of an equal volume of 0.5 mm zirconium ceramic beads (BioSpec Products, Bartlesville, OK) followed by bead beating using a Millipore MP-20 FastPrep (EMD Millipore, Billerica, MA) on setting 5.5 with 20 s cycle duration. A total of five cycles were performed with 2-min incubations on ice between each run to prevent overheating of sample. Recovered precipitate was dissolved in 200 \u03bcl of 2X Laemmli buffer and the pH adjusted by adding 30 \u03bcl of 1.5 M Tris pH\u00a0=\u00a08.8. Samples were heated at 65\u00b0C for 10 min and insoluble material was pelleted by centrifugation. An equal amount of the soluble portion of each sample was run on SDS-polyacrylamide gels and transferred to nitrocellulose membranes. Membranes were blocked in Li-Cor Odyssey Blocking Buffer (LI-CORE Biosciences, Lincoln, NE) and the following primary antibodies were used for immunodetection: anti-histone H3 mono methyl K36 (Ab9048), anti-histone H3 di methyl K36 (Ab9049), anti-histone H3 tri methyl K36 (Ab9050), anti-histone H3 tri methyl K4 (Ab12209), and \u03b1-H3 (Abcam Ab1791) were from Abcam, Cambridge, U.K., anti-histone H3 tri methyl K79 (pAB-068\u2013050) from Diagenode, Denville, NJ, and anti-phosphoglycerate kinase antibody (22C5D8) from ThermoFisher, Rockford, IL. The specificity of each histone methyl antibody was confirmed by competition experiments with purified peptides. Membranes were incubated with infrared dye-conjugated secondary antibodies, IRDye800CW goat anti-mouse and IRDye680RD goat anti-rabbit antibodies (LI-CORE Biosciences, Lincoln, NE) and imaged on a LI-CORE Odyssey imager in the 700 nm and 800 nm channels. All washing steps were performed with Tris-buffered saline \u2013 0.05% Tween-20. Quantitative analysis of immunoblots was performed using LI-CORE Image Studio software (LI-CORE Biosciences, Lincoln, NE). Unpaired two-sided (Student\u2019s) t tests were used to determine whether differences in histone methylation were statistically significant.\n\n### MORPHE quantification of loss of silencing events\n\nQuantification of loss of silencing events was performed using MORPHE software as described (Liu et al., 2016). To avoid possible effects of batch-to-batch variation, quantitative comparisons between strains were limited to experimental batches defined as those plated on the same day using the same batch of media. The batches were grown and imaged as a group on the same days. Microscope settings and software parameters were kept uniform within batches. For plotting, the average frequency of silencing loss within individual colonies was calculated. All the values obtained for each colony were then used to generate box plots. The red line represents the median value calculated from at least eight colonies. The blue boxes represent the 25th and 75th percentile. Whiskers represent the range of values within 1.5-times the interquartile range. Values extending beyond 1.5-times the interquartile range are marked as outliers (Red +). Unpaired two-sided (Student\u2019s) t tests were used to determine whether differences in frequency of silencing loss were statistically significant.\n",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "be3030d5-8166-4962-b01b-06bc91a29f3f",
+      "submission_id": "ecf9279b-4a32-481d-b131-b28bd371c575",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alan G Hinnebusch, National Institutes of Health , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22451.016](https://doi.org/10.7554/eLife.22451.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Oncometabolite D-2-Hydroxyglutarate enhances gene silencing through inhibition of specific H3K36 histone demethylases\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Alan Hinnebusch (Reviewer #1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Kevin Struhl as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study shows that The IDP2-R132H mutation in isocitrate dehydrogenase (IDH; encoded by IDP2 in yeast) provokes formation of the metabolite 2-HG, associated with tumor formation or progression in humans. The results show that IDP2-R132H enhances silencing within the HML locus, whereas deleting IDP2 does not; and that eliminating the gene product of DLD2, one of two possible yeast orthologs of the human enzyme D2HGDH that metabolizes 2-HG, also reduces silencing, even in cells containing WT IDP2 but in a manner exacerbated by the IDP2-R132H mutation, thus indicating that 2-HG production in yeast doesn't require, but is enhanced by the IDP2 tumor-associated mutation. This conclusion is supported by measuring 2-HG production in extracts, which is very high in the dld2 mutant, and somewhat higher in the double mutant also containing the IDP2-R132H mutation; but the latter mutation alone does not suffice to increase 2-HG levels by a detectable amount. They further show that addition of exogenous octyl-D2-HG increases HML silencing in the dld2 mutant background. Thus, they establish significant correlations between 2-HG levels and increased HML silencing in the dld2 mutant, which is defective for 2-HG metabolism. They go on to show that H3-K36 and H3K4 methylation is elevated in the dld2 IDP2-R132H double mutant, and that HML silencing is increased in two mutants lacking histone demethylases specific for methylated H3-K36, Rph1 and Gis1, but not in three other histone demethylase mutants; however, the specific involvement of these two demethylases is not explained at the level of increased H3-K36 methylation in the rph1 and gis1 mutants versus the other three demethylase mutants. They conclude by demonstrating that deleting RPH1 and GIS1 suppresses the effects on silencing associated with increased 2-HG production conferred by the dld2 mutation, in the manner expected if 2-HG enhances silencing by inhibiting these two demethylases. Finally, they show that eliminating Set2 suppresses the effect of elevated 2-HG in dld2 cells, as would be expected if elevated methylated H3-K36 is responsible for the increased silencing. Based on these results they conclude that 2-HG accumulation in cells enhances HML silencing by inhibiting two specific H3-K36 demethylases with attendant accumulation of methylated H3-K36.\n\nEssential revisions:\n\nIt is necessary to extend the CRASH assay and demonstrate a difference in silencing between the two dld2 strains harboring WT IDP2 or IDP2-R132H that were analyzed in Figure 3B. It is necessary quantify the immunoblot data in Figure 6 using normalization to H3. It is necessary to explain fully what statistical tests have been applied, supply error bars to Figure 3, and histograms summarizing the results in Figure 7\u2014figure supplement 1.\n\nThe authors are advised to draw the distinction between a biochemical demonstration that 2-HG inhibits histone demethylases in vitro and genetic evidence supporting this possibility for the yeast demethylases Rph1 and Gis1. While not essential for acceptance, it was considered that the scientific quality of the work would be increased by comparing the effects of each of the demethylase mutants on bulk H3-K36 methylation by Western analysis in an effort to explain why only the RPH1 and GIS1 deletions affect HML silencing, or cite the appropriate published data; and also examining whether accumulation of D2-HG in human cells results in histone hypermethylation.\n\nReviewer #1:\n\nThis study shows that The IDP2-R132H mutation in isocitrate dehydrogenase (IDH; encoded by IDP2 in yeast) provokes formation of the metabolite 2-HG, associated with tumor formation or progression in humans. The results show that IDP2-R132H enhances silencing within the HML locus, whereas deleting IDP2 does not; and that eliminating the gene product of DLD2, one of two possible yeast orthologs of the human enzyme D2HGDH that metabolizes 2-HG, also reduces silencing, even in cells containing WT IDP2 but in a manner exacerbated by the IDP2-R132H mutation, thus indicating that 2-HG production in yeast doesn't require, but is enhanced by the IDP2 tumor-associated mutation. This conclusion is supported by measuring 2-HG production in extracts, which is very high in the dld2 mutant, and somewhat higher in the double mutant also containing the IDP2-R132H mutation; but the latter mutation alone does not suffice to increase 2-HG levels by a detectable amount. They further show that addition of exogenous octyl-D2-HG increases HML silencing in the dld2 mutant background. Thus, they establish significant correlations between 2-HG levels and increased HML silencing in the dld2 mutant, which is defective for 2-HG metabolism. They go on to show that H3-K36 and H3K4 methylation is elevated in the dld2 IDP2-R132H double mutant, and that HML silencing is increased in two mutants lacking histone demethylases specific for methylated H3-K36, Rph1 and Gis1, but not in three other histone demethylase mutants; however, the specific involvement of these two demethylases is not explained at the level of increased H3-K36 methylation in the rph1 and gis1 mutants versus the other three demethylase mutants. They conclude by demonstrating that deleting RPH1 and GIS1 suppresses the effects on silencing associated with increased 2-HG production conferred by the dld2 mutation, in the manner expected if 2-HG enhances silencing by inhibiting these two demethylases. Finally, they show that eliminating Set2 suppresses the effect of elevated 2-HG in dld2 cells, as would be expected if elevated methylated H3-K36 is responsible for the increased silencing. Based on these results they conclude that 2-HG accumulation in cells enhances HML silencing by inhibiting two specific H3-K36 demethylases with attendant accumulation of methylated H3-K36.\n\nGeneral critique:\n\nOverall, the results justify the conclusions of the paper, which are significant in providing strong evidence that inhibition of certain H3-K36 demethylases is a consequence of the accumulation of 2-HG in cells. This is important because it is currently unclear whether inhibition of these enzymes, or rather of DNA methylases (lacking in yeast) is involved in the oncogenic properties of this metabolite in human cells. Others have shown that 2-HG can inhibit mammalian Jumonji histone demethylases in vitro. While this study does not establish this point directly for the yeast demethylases Rph1 and Gis1, it provides compelling genetic evidence that they are likely inhibited by 2-HG in vivo. It seems advisable that the authors draw this distinction between biochemical demonstration and strong inference from genetic data. Apart from this, the authors need to provide better documentation of the statistical tests that were conducted for certain experiments, as detailed below. In addition, it seems important that they analyze the effects of each of the five demethylase mutants on bulk H3-K36 methylation by Western analysis to provide insights into why only the RPH1 and GIS1 deletions affect HML silencing. Is it the case that only these two deletions provoke a strong increase in methylated H3-K36 species, or is something more complicated involved, such as locus-specific effects of the enzymes with only RPH1 or GIS1 functioning at HML (see specific comment below for more on this request.)\n\nMajor comments:\n\n\u2013 Subsection \u201cMutations expected to produce D2-HG results in enhanced gene silencing\u201d: the statistical test employed and the specific comparisons to which the p values were calculated need to be indicated in text, figure or legend. (This also applies to the statements about Figure 7A in subsection \u201cEnhanced gene silencing resulted from specific inhibition of two H3K36me 211 demethylases\u201d) It would be easy to indicate this in the figure with a bracket connecting the data being compared with the p-value, as done in Figure 3B. Notched box plots could also be used instead in Figures 1\u20132 and 7.\n\n\u2013 Figure 3: error bars need to be added to these histograms.\n\n\u2013 Figure 7\u2014figure supplement 1: histograms summarizing the results of replicate measurements and statistical analysis should be presented here, as in other similar figures.\n\n\u2013 As only the gis1 and rph1 mutants enhanced silencing, and the other three demethylase mutants did not, the question arises about whether the gis1 and rph1 mutations have a relatively greater effect on bulk H3-K36 demethylation. This is to be expected for Jhd2, which was cited as being specific for methylated H3-K4, but is apparently unknown for Ecm5, and the relative efficacies of Gis1, Rph1, and Jhd1 for demethylating H3-K36 species in vivo was not addressed. Unless it is known from the literature, the effects of each demethylase mutant on bulk H3-K36 methylated species should be tested using the Western assay in Figure 6, and the results discussed appropriately. Observing some change in methylation in the other 3 mutants would also provide confidence that the strains not only lack the relevant demethylase gene product but also have not acquired a suppressor mutation that increases the expression/activity of one of the other demethylases still present. In fact, paragraph five of the Discussion section implies that this experiment has already been done for the jhd2 mutant.\n\n\u2013 Discussion section, paragraph five: More pertinent to silencing is the known role of H3-K36 methylation by Set2 in suppressing cryptic promoters in coding sequences.\n\nReviewer #2:\n\nIn this paper, the authors explore the relationship between the accumulation of D-2-hydroxyglutarate (D-2 HG) and gene silencing, emphasizing the role of D-2 HG in inhibition of several H3K36 histone demethylases. As levels of the metabolite D-2 HG are normally low in human cells but become elevated in tumor cells (in which isocitrate dehydrogenases are mutated), the authors focus on the impact of loss or mutation of the S. cerevisiae ortholog IDP2, as well as loss of DLD2, a D-2 HG dehydrogenase. Using the CRASH assay to detect changes in gene expression at a reporter locus, the authors focus on inhibition of histone demethylation without the confounding influence of DNA methylation/demethylation. The authors conclude that the demethylases Rph1 and Gis1 are inhibited by D2-HG, leading to increased H3K36 methylation and gene repression at this locus.\n\nWhile these results are of interest, they do not appear to unveil new biological insights regarding histone demethylation and/or silencing to merit inclusion in eLife. Unfortunately the authors do not revisit the IDP2 mutation in human tissue culture and thus, in its current form, this work does not significantly advance our understanding of histone demethylation, D-2 HG regulation in yeast, gene silencing or how this mechanism functions to inhibit histone demethylation in the context of human disease. While the work itself is interesting, these studies do not establish a direct link between inhibition of demethylation and repression of gene silencing, leaving open the possibility of an indirect mechanism. The authors may want to consider addressing additional key questions such as when in the yeast life cycle or under what stress conditions might up-regulation of D-2 HG result in a meaningful biological outcome with respect to histone methylation or gene silencing.\n\nIn addition, there are several major and minor concerns to address:\n\n1) One significant problem is that the D-2 HG levels do not increase for the IDP2-R132H mutant when compared to wild type using LC-MS in Figure 3, contrasting with the CRASH results in Figure 1C. The authors attempt to address this apparent discrepancy by transforming with a plasmid with native promoter-driven IDP2 (Figure 3B), but they do not then revisit the CRASH assay with plasmid-based IDP2 overexpression. Furthermore, Figure 3 lacks error bars. Since the Materials and methods section does not describe any plasmids used in the paper, plasmid copy number is not addressed.\n\n2) The immunoblot quantifications in Figure 6 should be normalized to H3 in some manner \u2013 preferably using LI-COR to probe for H3 methyl marks and H3 on the same membrane.\n\n3) The authors state that there is no H3K79 demethylase in S. cerevisiae, which is a much stronger statement than that none has been identified.\n\n4) The 2007 Genetics paper by Tompa & Madhani should be referenced.\n\n5) All instances of the term \"Li-Core\" should reflect the true name \"LI-COR.\"\n\nReviewer #3:\n\nRine and colleagues use elegant yeast genetics to uncover a novel connection between metabolism and chromatin regulation through the use of specific cancer mutations and in the process gain a deeper understanding about cancer biology. Specifically, the authors introduce into the model organism S. cerevisiae mutations in the IDH homolog IDP2, which is highly conserved, and measure their effects on gene silencing. They observed a drastic increased stability on gene silencing though stabilization of heterochromatin, an effect that was dominant when compared to WT. Mutants (dld2 and dld3) that were predicted to increase levels of D2-HG also mediated the same effect. These metabolic effects were confirmed using MS and an enhanced effect was observed when the dld2 mutant was combined with the IDH mutation. Finally, exogenous D2-HG was added and in dld2 mutants, significant stabilization of gene silencing was observed. Collectively this provides strong evidence that there is indeed a functional connection between D2-HG levels and chromatin regulation. Further mechanistic insight is revealed as increase of H3K36 and H3K4 (but not K79) methylation is observed in the mutant backgrounds and a strong connection is uncovered through the jumonji demethylases.\n\nThe paper is well written and beautifully demonstrates the value of pivoting back and forth between human genomic datasets and work in more genetically tractable systems to uncover important mechanistic understanding behind cancer biology. There are several major novel themes in the paper including: 1) connecting key IDH cancer mutations to chromatin silencing through histone methylation/demethylation; 2) linking more tightly metabolism and chromatin function; 3) uncovering rare, interesting phenotypes for jumoji demethylases, and 4) demonstration of the power of yeast genetics to functionally characterize cancer mutations. It is because of this collection of novelty I strongly feel that this paper will be of great interest to the wide readership of eLife, and therefore I support publication.\n",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c4b91fee-e00c-4117-80d3-dfd4cc69e558",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C1",
+      "claim": "Certain mutations affecting central metabolism cause accumulation of the oncometabolite D-2-hydroxyglutarate.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain mutations affecting central metabolism cause accumulation of the oncometabolite D-2-hydroxyglutarate which promotes progression of certain tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about D-2-hydroxyglutarate and is supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "0a753b4b-f95c-4ee1-bdd9-276ba6d6c9e3",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C2",
+      "claim": "D-2-hydroxyglutarate promotes progression of certain tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Certain mutations affecting central metabolism cause accumulation of the oncometabolite D-2-hydroxyglutarate which promotes progression of certain tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is consistent with established knowledge about oncometabolites.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "17a22666-f4cd-435b-a602-5cfea817d0a4",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C3",
+      "claim": "High levels of D-2-hydroxyglutarate inhibit the TET family of DNA demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of D-2-hydroxyglutarate inhibit the TET family of DNA demethylases and Jumonji family of histone demethylases and cause epigenetic changes that lead to altered gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "4058a54d-332d-4ab3-a761-c7ed6bac59e5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C4",
+      "claim": "High levels of D-2-hydroxyglutarate inhibit the Jumonji family of histone demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of D-2-hydroxyglutarate inhibit the TET family of DNA demethylases and Jumonji family of histone demethylases and cause epigenetic changes that lead to altered gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "abf8c392-691b-4813-96b0-deccc78afa81",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C5",
+      "claim": "High levels of D-2-hydroxyglutarate cause epigenetic changes that lead to altered gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "High levels of D-2-hydroxyglutarate inhibit the TET family of DNA demethylases and Jumonji family of histone demethylases and cause epigenetic changes that lead to altered gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "47b31184-bb56-4aed-bb73-6174fc726e21",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C6",
+      "claim": "Saccharomyces cerevisiae has histone demethylases but not DNA methylases or demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether D-2-hydroxyglutarate can affect gene expression through inhibiting histone demethylases, orthologous mutations to those known to cause accumulation of D-2-hydroxyglutarate in tumors were generated in Saccharomyces cerevisiae, which has histone demethylases but not DNA methylases or demethylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge about yeast biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "1a607f48-1e0c-45b5-b271-a0b51a4d2975",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C7",
+      "claim": "Accumulation of D-2-hydroxyglutarate caused inhibition of several histone demethylases in Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of D-2-hydroxyglutarate caused inhibition of several histone demethylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing increased histone methylation in mutants that accumulate D2-HG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "52eea660-9a77-47d1-ab19-cc6706feb557",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C8",
+      "claim": "Inhibition of two demethylases that act specifically on histone H3K36me2,3 led to enhanced gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of two of the demethylases that act specifically on histone H3K36me2,3 led to enhanced gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing that gis1\u0394 and rph1\u0394 mutants phenocopy the silencing effects of D2-HG accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "75b4456e-875f-449d-8790-aa102a825861",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C9",
+      "claim": "Specific IDH mutations are highly prevalent in 60\u201390% of gliomas and secondary glioblastomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific IDH mutations are highly prevalent features of certain subsets of cancers, including 60\u201390% of gliomas and secondary glioblastomas, 20% of late-stage acute myelogenous leukemia, ~50% of central and periosteal cartilagenous tumors, and 10\u201320% of interhepatic cholangiocarcinoma (Parsons et al., 2008; Molenaar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the prevalence data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "be7b4958-636c-454f-b14f-5c1872ce41c8",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C10",
+      "claim": "Specific IDH mutations are highly prevalent in 20% of late-stage acute myelogenous leukemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific IDH mutations are highly prevalent features of certain subsets of cancers, including 60\u201390% of gliomas and secondary glioblastomas, 20% of late-stage acute myelogenous leukemia, ~50% of central and periosteal cartilagenous tumors, and 10\u201320% of interhepatic cholangiocarcinoma (Parsons et al., 2008; Molenaar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the prevalence data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "d60c8d9a-7f93-40ee-9ead-3ad295105604",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C11",
+      "claim": "Specific IDH mutations are highly prevalent in ~50% of central and periosteal cartilagenous tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific IDH mutations are highly prevalent features of certain subsets of cancers, including 60\u201390% of gliomas and secondary glioblastomas, 20% of late-stage acute myelogenous leukemia, ~50% of central and periosteal cartilagenous tumors, and 10\u201320% of interhepatic cholangiocarcinoma (Parsons et al., 2008; Molenaar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the prevalence data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "43eb3d68-3bed-4a0d-a4f4-d76f81521b32",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C12",
+      "claim": "Specific IDH mutations are highly prevalent in 10\u201320% of interhepatic cholangiocarcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Specific IDH mutations are highly prevalent features of certain subsets of cancers, including 60\u201390% of gliomas and secondary glioblastomas, 20% of late-stage acute myelogenous leukemia, ~50% of central and periosteal cartilagenous tumors, and 10\u201320% of interhepatic cholangiocarcinoma (Parsons et al., 2008; Molenaar et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the prevalence data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "99d3a185-ca76-4c7d-842b-a84642755647",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C13",
+      "claim": "The high frequency and patterns of IDH mutations suggest that they are important in early tumor development.",
+      "claim_type": "EXPLICIT",
+      "source": "The high frequency and patterns of IDH mutations suggest that they are important in early tumor development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed patterns of IDH mutations in cancers.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "7ef86040-3679-460e-b0af-ccc0eaa3d6f2",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C14",
+      "claim": "IDH mutations contribute to progression of acute myelogenous leukemia tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of acute myelogenous leukemia, IDH mutations also contribute to progression of these tumors (Molenaar et al., 2014; Reitman and Yan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "c507f9b2-9e1e-4dee-8189-5e76df40b6b9",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C15",
+      "claim": "IDH mutations in tumors occur exclusively as heterozygous missense mutations with rare exception.",
+      "claim_type": "EXPLICIT",
+      "source": "With rare exception, IDH mutations in tumors occur exclusively as heterozygous missense mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is supported by the broader cancer genomics literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "a4b7d13d-fc9f-46ac-8df1-4a4a81923a51",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C16",
+      "claim": "The most frequently documented IDH mutations occur as substitutions of arginine 132 in IDH1 or the equivalent arginine (172) in IDH2.",
+      "claim_type": "EXPLICIT",
+      "source": "The most frequently documented IDH mutations occur as substitutions of arginine 132 in IDH1 or the equivalent arginine (172) in IDH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction and is established knowledge about IDH mutations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f6fb7f52-3730-4e7b-b28d-f92c813071fe",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C17",
+      "claim": "Tumor-associated IDH mutations abolish the conversion of isocitrate to \u03b1-ketoglutarate.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor-associated IDH mutations appear to abolish the conversion of isocitrate to \u03b1-ketoglutarate, and instead promote a partial reverse reaction in which \u03b1-ketoglutarate is reduced to form D-2-hydroxyglutarate (D2-HG) (Dang et al., 2009; Rendina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "1056db3f-4844-4cd6-8f0f-d5f22e44cc01",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C18",
+      "claim": "Tumor-associated IDH mutations promote a partial reverse reaction in which \u03b1-ketoglutarate is reduced to form D-2-hydroxyglutarate.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor-associated IDH mutations appear to abolish the conversion of isocitrate to \u03b1-ketoglutarate, and instead promote a partial reverse reaction in which \u03b1-ketoglutarate is reduced to form D-2-hydroxyglutarate (D2-HG) (Dang et al., 2009; Rendina et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3caac595-0cc9-4f6b-b0c0-0cc5b10d097f",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C19",
+      "claim": "D2-HG is typically maintained at low levels in human cells through the activity of the enzyme D-2-hydroxyglutarate dehydrogenase (D2HGDH).",
+      "claim_type": "EXPLICIT",
+      "source": "D2-HG is a metabolite that is typically maintained at low levels in human cells through the activity of the enzyme D-2-hydroxyglutarate dehydrogenase (D2HGDH) (Achouri et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "b7294938-3d64-43ca-8136-f7aa0354723b",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C20",
+      "claim": "Cellular D2-HG levels are commonly elevated in IDH-mutant tumor cells, sometimes to millimolar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular D2-HG levels are commonly elevated in IDH-mutant tumor cells, sometimes to millimolar levels (Gross et al., 2010; Dang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f4950470-9331-4a18-8b82-1a02dc2545e4",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C21",
+      "claim": "The \u03b1-ketoglutarate-dependent TET family of DNA demethylases are inhibited by high levels of D2-HG in vitro and in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u03b1-ketoglutarate-dependent TET family of DNA demethylases and Jumonji histone demethylases are inhibited by high levels of D2-HG in vitro and in cell culture, resulting in DNA and histone hypermethylation and accompanied by changes in gene expression (Figueroa et al., 2010; Xu et al., 2011; Chowdhury et al., 2011; Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "2740c3f2-1bd5-495d-ab1b-bfeb3ac2aeaa",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C22",
+      "claim": "Jumonji histone demethylases are inhibited by high levels of D2-HG in vitro and in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u03b1-ketoglutarate-dependent TET family of DNA demethylases and Jumonji histone demethylases are inhibited by high levels of D2-HG in vitro and in cell culture, resulting in DNA and histone hypermethylation and accompanied by changes in gene expression (Figueroa et al., 2010; Xu et al., 2011; Chowdhury et al., 2011; Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3ac822ec-5714-4653-a6bd-dfdd54745949",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C23",
+      "claim": "Inhibition of TET and Jumonji demethylases by D2-HG results in DNA and histone hypermethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the \u03b1-ketoglutarate-dependent TET family of DNA demethylases and Jumonji histone demethylases are inhibited by high levels of D2-HG in vitro and in cell culture, resulting in DNA and histone hypermethylation and accompanied by changes in gene expression (Figueroa et al., 2010; Xu et al., 2011; Chowdhury et al., 2011; Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "8b41f286-c42b-473b-840c-eee8039ac296",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C24",
+      "claim": "AMLs tend to have either mutations in IDH or mutations in the genes encoding TET enzymes, but not both.",
+      "claim_type": "EXPLICIT",
+      "source": "There is strong circumstantial evidence from acute myeloid leukemias (AMLs) that DNA demethylases are the targets of the D2-HG produced by the IDH mutations: AMLs tend to have either the mutations in IDH or mutations in the genes encoding TET enzymes, but not both (Figueroa et al., 2010; Gaidzik et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "d89c8a6a-7231-4bb0-9d17-593b86492d2a",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C25",
+      "claim": "Elevated bulk histone methylation has been reported for some tumors producing D2-HG.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed elevated bulk histone methylation has been reported for some tumors producing D2-HG, but whether critical changes in gene expression result from inhibition of DNA demethylation or inhibition of histone demethylation in these tumors is an important and unresolved question (Chowdhury et al., 2011; Gaidzik et al., 2012; Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "9a537295-dc6d-4021-a9e1-12ebcd3800da",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C26",
+      "claim": "Tumors with elevated D2-HG levels show bulk increases in histone methyl marks associated with both transcriptional activation (H3K4, H3K36) and repression (H3K9, H3K27).",
+      "claim_type": "EXPLICIT",
+      "source": "Further, tumors with elevated D2-HG levels show bulk increases in histone methyl marks typically associated with both transcriptional activation (H3K4, H3K36) and repression (H3K9, H3K27) (Turcan et al., 2012; Lu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "ddc03c8d-27f5-4097-800f-be270a3d73d6",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C27",
+      "claim": "The yeast and human IDH proteins share 61% amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast and human proteins share 61% amino acid identity (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the alignment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "df013f24-305f-48f8-9c9e-df207c7a3300",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C28",
+      "claim": "The IDP2-R132H mutation is analogous to the most common mutation found in low-grade gliomas and secondary glioblastomas in the human ortholog IDH1.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation is analogous to the most common mutation found in low-grade gliomas and secondary glioblastomas in the human ortholog IDH1 (reviewed in Waitkus et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "eff47b9d-fdca-4721-8015-eb599c9e3b39",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C29",
+      "claim": "The IDP2-R132H mutation increased the stability of heterochromatin compared to wild-type IDP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The IDP2-R132H mutation increased the stability of heterochromatin (p<0.0001; Student's t test) compared to wild-type IDP2, resulting in fewer switches from RFP to GFP expression (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "885628c8-59a0-4f5b-b9fc-1fb2056e6a21",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C30",
+      "claim": "The effect of IDP2-R132H on heterochromatin stability was dependent on IDP2 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was dependent on IDP2 expression, as no effect was observed when cells were plated on medium containing glucose, which represses IDP2 expression (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "27bab3b5-c842-4563-8cde-e8dd7230b222",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C31",
+      "claim": "Deletion of IDP2 did not affect the stability of heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of IDP2 did not affect the stability of heterochromatin suggesting that IDP2-R132H results in a gain-of-function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the data in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e256fe94-7e59-4e7b-a46f-84d1daaaffd0",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C32",
+      "claim": "IDP2-R132H results in a gain-of-function.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of IDP2 did not affect the stability of heterochromatin suggesting that IDP2-R132H results in a gain-of-function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deletion of IDP2 has no effect while the R132H mutation does.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3c42b2e0-756e-4fdc-8f76-1871de11fad0",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C33",
+      "claim": "The dld2\u2206 mutant phenocopied the effect of the IDP2-R132H mutant and increased gene silencing compared to wild type on medium with glycerol as the sole carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, on medium with glycerol as the sole carbon source, when oxidative phosphorylation is the primary means of ATP production, the dld2\u2206 mutant phenocopied the effect of the IDP2-R132H mutant and increased gene silencing compared to wild type (p<0.0001; Student's t test) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "ddf5ed4f-23f0-4704-b9ff-4c55c2ff5573",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C34",
+      "claim": "The IDP2-R132H dld2\u2206 double mutant resulted in a further increase in heterochromatin stability compared to wild type and dld2\u0394 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the IDP2-R132H dld2\u2206 double mutant resulted in a further increase in heterochromatin stability compared to wild type (p<0.0001; Student's t test) and dld2\u0394 alone (p<0.05; Student's t test) (Figure 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "040c6eb6-68cd-4396-a1d0-f135cce39742",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C35",
+      "claim": "A dld3\u2206 mutation did not increase heterochromatin stability when cells were grown on glycerol medium.",
+      "claim_type": "EXPLICIT",
+      "source": "A dld3\u2206 mutation did not increase heterochromatin stability when cells were grown on glycerol medium (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "47059c77-d732-4cfa-82bf-99071c719c30",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C36",
+      "claim": "Both dld2\u2206 and dld3\u2206 mutations led to increased heterochromatin stability when cells were grown on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when cells were grown on glucose, where ATP is primarily generated through sugar fermentation, both dld2\u2206 and dld3\u2206 mutations led to increased heterochromatin stability (Figure 1H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 1H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "17dc7d0b-86f8-46c2-83e7-6fb61459f6dd",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C37",
+      "claim": "D2-HG is normally produced in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in heterochromatin stability in the dld2\u2206 and dld3\u2206 mutants implied that D2-HG is normally produced in yeast under these and other conditions (see also Becker-Kettern et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deletion of D2-HG dehydrogenases leads to increased silencing, implying that D2-HG is normally present and metabolized.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "c8124693-5932-4963-b78f-e3279e70e532",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C38",
+      "claim": "The IDP2-R132H allele is dominant to wild-type IDP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In an IPD2-R132H/IDP2 heterozygous diploid strain, gene silencing was increased compared to the equivalent strain with two copies of wild-type IDP2 (Figure 2A,B), demonstrating that the yeast mutation, analogous to the cancer-driver mutation in human IDH1, was dominant to wild-type IDP2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "fee933d7-15ec-46b9-866f-c37856a0484b",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C39",
+      "claim": "A strain homozygous for IDP2-R132H had less stable gene silencing than the heterozygous strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a strain homozygous for IDP2-R132H had less stable gene silencing than the heterozygous strain, suggesting that the effect of IDP2-R132H on silencing was synergistic with a wild-type copy of IDP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e924a92d-ed2d-41b3-bb27-ace66bc47485",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C40",
+      "claim": "The effect of IDP2-R132H on silencing was synergistic with a wild-type copy of IDP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a strain homozygous for IDP2-R132H had less stable gene silencing than the heterozygous strain, suggesting that the effect of IDP2-R132H on silencing was synergistic with a wild-type copy of IDP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that heterozygotes have stronger silencing than homozygotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "7570bf6c-6aaf-420e-8029-7a0ace6525f7",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C41",
+      "claim": "Knockout of the wild-type copy of IDH1 in IDH1R132H/WT tumor cell lines results in decreased D2-HG formation relative to IDH1R132H/WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results echoed the observation in IDH1R132H/WT tumor cell lines that knockout of the wild-type copy of IDH1 (IDH1R132H/-)  results in decreased D2-HG formation relative to IDH1R132H/WT cells (Jin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "ad281dbc-41df-4745-922f-ed9671aaaeeb",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C42",
+      "claim": "D2-HG levels in wild-type strains ranged between 10 and 60 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "D2-HG levels in wild-type strains ranged between 10 and 60 \u00b5M, in agreement with previous levels measured in yeast (Becker-Kettern et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by LC-MS data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "1bdf0221-31b3-40a5-8f9f-33dcbfeeda06",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C43",
+      "claim": "A dld2\u2206 mutation led to a ~50 fold increase in cellular D2-HG levels in cells grown on glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role in metabolizing D2-HG, a dld2\u2206 mutation led to a ~50 fold increase in cellular D2-HG levels in cells grown on glycerol (Figure 3A) and a fivefold increase in cells grown on glucose (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "891bab4e-21e3-46a9-b5fe-6dde9245fc39",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C44",
+      "claim": "A dld2\u2206 mutation led to a fivefold increase in cellular D2-HG levels in cells grown on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role in metabolizing D2-HG, a dld2\u2206 mutation led to a ~50 fold increase in cellular D2-HG levels in cells grown on glycerol (Figure 3A) and a fivefold increase in cells grown on glucose (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "67b4ab4f-39cb-4b82-a00f-b87619baabd9",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C45",
+      "claim": "A dld3\u0394 mutation led to a sevenfold increase in cellular D2-HG in cells grown on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "A dld3\u0394 mutation also led to a sevenfold increase in cellular D2-HG, but this increase was observed only in cells grown on glucose (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "88625dff-2a8f-42b4-816f-bd3f2d08410c",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C46",
+      "claim": "D2-HG is efficiently metabolized by Dld2 and Dld3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, D2-HG is a normal feature of the S. cerevisiae metabolome and is efficiently metabolized by Dld2 and Dld3, as noted (Becker-Kettern et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deletion of these enzymes leads to D2-HG accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e2e1dafd-26b1-407e-a4ae-e4a6b79028f7",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C47",
+      "claim": "Dld3 activity toward D2-HG was limited to cells grown on fermentable carbon sources like glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Dld3 activity toward D2-HG was limited to cells grown on fermentable carbon sources like glucose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the differential effects of dld3\u0394 on D2-HG levels in glucose vs. glycerol media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "19f57939-9d1d-4bf7-aa0d-1287418f2183",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C48",
+      "claim": "The Idp2-R132H mutation contributed to D2-HG production when measured in combination with dld2\u2206 and wild-type Idp2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the increased D2-HG level in the Idp2-R132h mutant inferred from the silencing phenotype was not detected in the LC-MS analysis of cells that were able to metabolize it (Figure 3A), the Idp2-R132H mutation clearly contributed to D2-HG production when measured in combination with dld2\u2206 and wild-type Idp2 protein (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "cbc395a8-24f0-4949-9b18-043588e02671",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C49",
+      "claim": "D2-HG production by yeast Idp2-R132H was enhanced by the presence of wild-type Idp2.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether D2-HG production by yeast Idp2-R132H was likewise enhanced by the presence of wild-type Idp2, cells were transformed with a plasmid containing a copy of the wild-type IDP2 gene expressed from its native promoter. The presence of an extra copy of wild-type IDP2 had no effect on D2-HG levels in wild-type IDP2 cells (Figure 3B, bar 3 versus bar 4). However, D2-HG levels significantly increased (p<0.05) in mutant IDP2-R132H cells when an extra copy of wild-type IDP2 was present (Figure 3B, bar 5 versus bar 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "b6ccbaa5-ce26-44d6-8bf0-28d6ba65ed48",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C50",
+      "claim": "An extra copy of wild-type IDP2 enhanced silencing in mutant IDP2-R132H cells compared to strains with only wild-type IDP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel to the results measuring D2-HG levels, an extra copy of wild-type IDP2 enhanced silencing in mutant IDP2-R132H cells compared to strains with only wild-type IDP2 (p<0.0001; Student's t test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e32b87ba-22ad-431f-84e1-4581a81b802f",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C51",
+      "claim": "There is a strong correlation between D2-HG levels and increased silencing at a heterochromatic locus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated a strong correlation between D2-HG levels and increased silencing at a heterochromatic locus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the combined data from D2-HG measurements and silencing assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "c9d02b5a-ccd9-4ef3-9a3f-0af51817a49f",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C52",
+      "claim": "Treatment of dld2\u0394 mutant cells with octyl-D2-HG resulted in increased gene silencing compared to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment of dld2\u0394 mutant cells with octyl-D2-HG resulted in increased gene silencing compared to the untreated cells (p<0.05) (Figure 4B) establishing that increases in D2-HG were causal for stabilizing gene silencing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "061d545a-309b-485e-a2e9-7b444af7c3e5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C53",
+      "claim": "Increases in D2-HG were causal for stabilizing gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, treatment of dld2\u0394 mutant cells with octyl-D2-HG resulted in increased gene silencing compared to the untreated cells (p<0.05) (Figure 4B) establishing that increases in D2-HG were causal for stabilizing gene silencing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by the experimental manipulation of D2-HG levels using octyl-D2-HG.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "cdb238ec-f8c0-4709-a8b5-2062db6a68b7",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C54",
+      "claim": "The impact of D2-HG did not extend to all forms of repression.",
+      "claim_type": "EXPLICIT",
+      "source": "When dld2\u2206 mutations were introduced into the pGAL1::cre strain, repression of cre was maintained to the same degree as in wild type, indicating that the impact of D2-HG did not extend to all forms of repression (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f957f66b-ed16-4a35-ace0-b8c3dc132851",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C55",
+      "claim": "Bulk levels of H3K36-mono and -trimethyl marks were significantly higher in dld2\u2206 IDP2-R132H strains compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk levels of H3K36-mono and -trimethyl and H3K4-trimethyl marks were significantly higher (p<0.01) in dld2\u2206 IDP2-R132H strains compared to wild type (Figure 6A and B, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by immunoblot data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "1aaf0004-8a87-4fef-9f2e-e0f7c87aae1b",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C56",
+      "claim": "Bulk levels of H3K4-trimethyl marks were significantly higher in dld2\u2206 IDP2-R132H strains compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk levels of H3K36-mono and -trimethyl and H3K4-trimethyl marks were significantly higher (p<0.01) in dld2\u2206 IDP2-R132H strains compared to wild type (Figure 6A and B, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by immunoblot data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "51350ff4-921a-468f-addb-ecaa20f5ba2f",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C57",
+      "claim": "There is no known H3K79 demethylase in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of change in H3K79 methylation levels was consistent with this model as there is no known H3K79 demethylase in S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is established knowledge about yeast biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "a0e59c98-b5b3-4c63-8adc-86e7abaab022",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C58",
+      "claim": "Both gis1\u2206 and rph1\u2206 single mutants enhanced gene silencing compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both gis1\u2206 and rph1\u2206 single mutants enhanced gene silencing compared to wild type (p<0.0001; Student's t test), and the rph1\u2206 gis1\u2206 double mutants resulted in even further enhancement compared to wild type (p<0.0001; Student's t test) (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f444c0b5-3f88-4b14-ad5a-df69ae8f1909",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C59",
+      "claim": "The rph1\u2206 gis1\u2206 double mutants resulted in even further enhancement of gene silencing compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, both gis1\u2206 and rph1\u2206 single mutants enhanced gene silencing compared to wild type (p<0.0001; Student's t test), and the rph1\u2206 gis1\u2206 double mutants resulted in even further enhancement compared to wild type (p<0.0001; Student's t test) (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "03e773c4-73ca-4fec-b72e-1cfe821fd41c",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C60",
+      "claim": "The jhd1\u2206 mutant had no statistically significant effect on gene silencing on its own or in combination with either rph1\u2206 or gis1\u2206 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The jhd1\u2206 mutant had no statistically significant effect on its own or in combination with either rph1\u2206 or gis1\u2206 mutations, nor did ecm5\u2206 and jhd2\u2206 mutations (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "43a32e1f-1312-400e-8b65-4035e117aa27",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C61",
+      "claim": "Elevated H3K36 methylation was the determinant for increasing heterochromatin stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, elevated H3K36 methylation was the determinant for increasing heterochromatin stability, and Rph1 and Gis1 were implicated as the primary demethylases inhibited by D2-HG accumulation that led to enhanced heterochromatic gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only H3K36 demethylase mutants phenocopy the D2-HG accumulation effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "acbcb3e9-91f3-438f-8e79-6fa265aef5f5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C62",
+      "claim": "Rph1 and Gis1 were implicated as the primary demethylases inhibited by D2-HG accumulation that led to enhanced heterochromatic gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, elevated H3K36 methylation was the determinant for increasing heterochromatin stability, and Rph1 and Gis1 were implicated as the primary demethylases inhibited by D2-HG accumulation that led to enhanced heterochromatic gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic analysis showing that gis1\u0394 and rph1\u0394 mutants phenocopy D2-HG accumulation effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "a1485b5b-cfd8-4327-8cd3-c2c25d0721d4",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C63",
+      "claim": "GIS1 and RPH1 overexpressed from a galactose-inducible plasmid led to destabilization of heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In further support, GIS1 and RPH1 overexpressed from a galactose-inducible plasmid led to destabilization of heterochromatin (Figure 7C); in contrast, overexpression of JHD1 had no effect (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f89080b4-888f-4267-affe-f8ba1efdf525",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C64",
+      "claim": "Overexpression of JHD1 had no effect on heterochromatin stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In further support, GIS1 and RPH1 overexpressed from a galactose-inducible plasmid led to destabilization of heterochromatin (Figure 7C); in contrast, overexpression of JHD1 had no effect (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "c8685e32-7d83-499c-b69a-44e73e0be80a",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C65",
+      "claim": "Methylation of H3K36 is exclusively dependent on the methyltransferase Set2.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of H3K36 is exclusively dependent on the methyltransferase Set2 (Strahl et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "199e791d-8830-41cc-bd22-beb96eee9509",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C66",
+      "claim": "The loss of Set2 completely abrogated the effect of gis1\u2206 rph1\u2206 on gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of Set2 completely abrogated the effect of gis1\u2206 rph1\u2206 on gene silencing. The extent of gene silencing in the triple mutant was no different from either wild type or set2\u2206 single mutants (Figure 7D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 7D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "a7cec400-9977-496d-96c4-af8f8328c3b1",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C67",
+      "claim": "The enhanced gene silencing in gis1\u2206 and rph1\u2206 mutants was due exclusively to H3K36 hypermethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because set2\u2206 suppressed gis1\u2206 and rph1\u2206, the enhanced gene silencing in gis1\u2206 and rph1\u2206 mutants was due exclusively to H3K36 hypermethylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that set2\u0394 suppresses the silencing phenotype of gis1\u0394 rph1\u0394 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "53ae00e1-d734-465a-9566-7a4de35c6433",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C68",
+      "claim": "Gene silencing in set2\u0394 dld2\u0394 double mutants and set2\u0394 dld2\u0394 IDP2-R132H triple mutants was no different from set2\u0394 single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, gene silencing in set2\u0394 dld2\u0394 double mutants and set2\u0394 dld2\u0394 IDP2-R132H triple mutants was no different from set2\u0394 single mutants (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 8A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "7124e542-4337-4159-8d82-4da4b60edfc5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C69",
+      "claim": "gis1\u0394 rph1\u0394 dld2\u0394 and gis1\u0394 rph1\u0394 dld2\u0394 IDP2-R132H mutants displayed identical levels of silencing to the gis1\u0394 rph1\u0394 double mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction was confirmed by analysis of gis1\u0394 rph1\u0394 dld2\u0394 and gis1\u0394 rph1\u0394 dld2\u0394 IDP2-R132H mutants, which displayed identical levels of silencing to the gis1\u0394 rph1\u0394 double mutant (Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and supported by data shown in Figure 8C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "a859140f-2c28-408c-b1b8-3feaa3ed75f8",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C70",
+      "claim": "The elevated gene silencing observed in cells that accumulate D2-HG was due to Set2-dependent methylation of H3K36, and its subsequent hypermethylation due to inhibition of the Gis1 and Rph1 demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "These results provided the functional confirmation that the elevated gene silencing observed in cells that accumulate D2-HG was due to Set2-dependent methylation of H3K36, and its subsequent hypermethylation due to inhibition of the Gis1 and Rph1 demethylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by the combined genetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "7251c466-e1ce-4b82-a24b-9381aca26059",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C71",
+      "claim": "Enhanced gene silencing was due to histone H3K36 hypermethylation in response to the oncometabolite D2-HG inhibiting two specific histone demethylases.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated unequivocally that enhanced gene silencing was due to histone H3K36 hypermethylation in response to the oncometabolite D2-HG inhibiting two specific histone demethylases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "8b431c15-77bc-4a92-8582-b1bd84868571",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C72",
+      "claim": "D2-HG was detected in metabolite extracts even from wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "D2-HG was detected in metabolite extracts even from wild-type cells, suggesting it is a normal component of the yeast metabolome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the LC-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "68c0ad5f-a8dd-4be0-a2d5-e927ffa03b4c",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C73",
+      "claim": "Wild-type cells maintained D2-HG at low levels through the activity of D2-HG dehydrogenases.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type cells maintained D2-HG at low levels through the activity of D2-HG dehydrogenases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that deletion of D2-HG dehydrogenases leads to D2-HG accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "da575278-4cc2-464a-9a55-64d86762a369",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C74",
+      "claim": "Only Dld2 had a role in metabolizing D2-HG in vivo in cells grown on glycerol.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only Dld2 had a role in metabolizing D2-HG in vivo in cells grown on glycerol, suggesting that Dld3 and Dld2 are differentially regulated in response to the mode of energy production in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the differential effects of dld2\u0394 and dld3\u0394 on D2-HG levels in different growth conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "d26fa137-d7f2-4573-bf11-9824d88e48e0",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C75",
+      "claim": "Dld3 and Dld2 are differentially regulated in response to the mode of energy production in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only Dld2 had a role in metabolizing D2-HG in vivo in cells grown on glycerol, suggesting that Dld3 and Dld2 are differentially regulated in response to the mode of energy production in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Dld2 and Dld3 have different effects on D2-HG metabolism depending on the carbon source.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "b6fb3af7-bbc4-4904-ac3c-7d0cd17a0743",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C76",
+      "claim": "D2-HG acts as a competitive inhibitor of human Jumonji histone demethylase enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "D2-HG acts as a competitive inhibitor of human Jumonji histone demethylase enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is supported by the broader literature on D2-HG biochemistry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "b8845463-d7c7-44a8-8f5d-7c98f0e7bc2c",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C77",
+      "claim": "The genetic and molecular evidence strongly implied that yeast Jumonji-domain histone demethylases are biochemically inhibited by D2-HG.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether yeast Jumonji-domain histone demethylases are biochemically inhibited by D2-HG has not explicitly been tested, although the genetic and molecular evidence strongly implied such a mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is inferred from the genetic and molecular data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3c8fb8d0-ebc6-4e3d-9e10-ae604538a1c8",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C78",
+      "claim": "Increases in D2-HG were readily measured in dld2-mutants, but not in cells capable of degrading D2-HG.",
+      "claim_type": "EXPLICIT",
+      "source": "Increases in D2-HG were readily measured in dld2-mutants, but not in cells capable of degrading D2-HG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the LC-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "4be088b0-7c73-4fa5-9b66-26b9f4a12998",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C79",
+      "claim": "Accumulation of D2-HG led to hypermethylation of histone H3 at lysine 4 and lysine 36.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of D2-HG led to hypermethylation of histone H3 at lysine 4 and lysine 36.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the immunoblot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "44df9477-89e0-492b-bdab-bc1917639fb1",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C80",
+      "claim": "It was the loss of histone demethylases that act on H3K36 that was solely responsible for increased stabilization of heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it was the loss of histone demethylases that act on H3K36 that was solely responsible for increased stabilization of heterochromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the genetic analysis showing that only H3K36 demethylase mutants affect silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "60fa964a-336e-4032-8188-0d60f2759927",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C81",
+      "claim": "Inhibition of H3K4 demethylation and the resulting elevation of bulk H3K4me had no effect on gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of H3K4 demethylation and the resulting elevation of bulk H3K4me had no effect on gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the observation that jhd2\u0394 mutants do not affect silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3e7211ac-5079-46f0-8e39-831fd4819d32",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C82",
+      "claim": "Methylation of H3K36 at transcribed genes prevents aberrant transcription from initiating from within the open-reading frames of actively transcribed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of H3K36 at transcribed genes prevents aberrant transcription from initiating from within the open-reading frames of actively transcribed genes (Carrozza et al., 2005; Keogh et al., 2005; Joshi and Struhl, 2005), although this process appears to be incompatible with silencing at HML for reasons detailed below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "18aae1fa-bb26-4286-92c2-e8b39a5e0348",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C83",
+      "claim": "H3K4 methylation plays a role in the establishment of silencing at HML.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, H3K4 methylation occurs at the 5' ends of actively transcribed genes and is important for maintaining a local chromatin landscape conducive to transcription, and yet it also plays a role in the establishment of silencing at HML (Osborne et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "c65c81a8-d3d4-44c9-aed6-3aee1c6dce9a",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C84",
+      "claim": "Methylation of H3K79 by Dot1 inhibits Sir3-H3 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The site at which Sir3 interacts with histone H3 includes H3K79, and methylation of H3K79 by Dot1 inhibits Sir3-H3 interaction (Armache et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6189dc9f-3abe-4ae8-9fef-e23e12029af5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C85",
+      "claim": "The Rpd3 complex antagonizes silencing at heterochromatic loci HML and HMR by limiting Sir3 and Sir4 occupancy at flanking silencer regions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Rpd3 complex antagonizes silencing at heterochromatic loci HML and HMR by limiting Sir3 and Sir4 occupancy at flanking silencer regions (Thurtle-Schmidt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "2e8475c5-5f07-4522-a170-c91c15f7c500",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C86",
+      "claim": "The deacetylase activity of Rpd3(S) is directed toward nucleosomes at actively transcribed genes in part through an interaction between the Eaf3 subunit of the Rpd3(S) complex and histones methylated at H3K36.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the deacetylase activity of Rpd3(S) is directed toward nucleosomes at actively transcribed genes in part through an interaction between the Eaf3 subunit of the Rpd3(S) complex and histones methylated at H3K36 (Carrozza et al., 2005; Keogh, 2005; Joshi and Struhl, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "78cd6c05-93bb-4f71-8193-e3b26c976045",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C87",
+      "claim": "H3K36 methylation prevents binding of Sir proteins to heterochromatin-adjacent and telomere-adjacent regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, H3K36 methylation prevents binding of Sir proteins to heterochromatin-adjacent and telomere-adjacent regions (Tompa and Madhani, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "09072c08-f557-4106-ba33-225be74529d8",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C88",
+      "claim": "Increased silencing of tumor suppressor genes is a feature of many tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased silencing of tumor suppressor genes is a feature of many tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and is established knowledge about cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "dadbd074-4613-4163-8025-cd2af20c392f",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C89",
+      "claim": "This study pinpointed specific histone demethylase enzymes whose inhibition by D2-HG resulted in increased gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "This study pinpointed specific histone demethylase enzymes whose inhibition by D2-HG resulted in increased gene silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "25ad551a-c589-4ee9-9b0c-2d01cb9bba90",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C90",
+      "claim": "This study demonstrated that D2-HG enhanced gene silencing through stabilization of heterochromatic DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, this study demonstrated that D2-HG enhanced gene silencing through stabilization of heterochromatic DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion and supported by the experimental results using the CRASH assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "edf83b57-ed71-4d6c-a294-b0d51b23ca97",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C91",
+      "claim": "IDP2 is expressed only on non-fermentable carbon sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Because IDP2 is expressed only on non-fermentable carbon sources (Haselbeck and McAlister-Henn, 1993), cells were plated on solid medium containing glycerol as the sole carbon source to induce IDP2 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "3aa7ea96-a2be-4781-a6ef-a92497192757",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C92",
+      "claim": "Tumors with the equivalent isocitrate dehydrogenase mutation (IDH1-R132H) are exclusively heterozygous, retaining a wild-type copy of IDH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with the equivalent isocitrate dehydrogenase mutation (IDH1-R132H) are exclusively heterozygous, retaining a wild-type copy of IDH1, and knock-down of wild-type IDH1 reduces D2-HG produced by IDH1-R132H (Ward et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "144f0af9-0487-4047-8191-8132eb58b06c",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C93",
+      "claim": "Knock-down of wild-type IDH1 reduces D2-HG produced by IDH1-R132H.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with the equivalent isocitrate dehydrogenase mutation (IDH1-R132H) are exclusively heterozygous, retaining a wild-type copy of IDH1, and knock-down of wild-type IDH1 reduces D2-HG produced by IDH1-R132H (Ward et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e8fa4e59-e2c4-472e-93ad-7c37b5407320",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C94",
+      "claim": "IDH is typically a homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Because IDH is typically a homodimer, presumably the wild-type enzyme provides a local source of \u03b1-ketoglutarate for the mutant enzyme to convert to D2-HG (Ward et al., 2013; Jin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and is established knowledge about IDH structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "72268be7-7d5c-44df-8d01-6df3bdfb4607",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C95",
+      "claim": "The wild-type IDH enzyme provides a local source of \u03b1-ketoglutarate for the mutant enzyme to convert to D2-HG.",
+      "claim_type": "EXPLICIT",
+      "source": "Because IDH is typically a homodimer, presumably the wild-type enzyme provides a local source of \u03b1-ketoglutarate for the mutant enzyme to convert to D2-HG (Ward et al., 2013; Jin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e3f3e998-a458-4a38-a903-a2418cecde93",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C96",
+      "claim": "Rph1, Gis1, and Jhd1 demethylate various species of methylated H3K36.",
+      "claim_type": "EXPLICIT",
+      "source": "There are five known Jumonji-domain proteins in S. cerevisiae and among them Rph1, Gis1, and Jhd1 demethylate various species of methylated H3K36 (Tu et al., 2007; Kim and Buratowski, 2007) and Jhd2 demethylates mono-, di-, and trimethylated H3K4 (Seward et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6c399b11-03de-40cd-8930-e6f6f34429f5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "claim_id": "C97",
+      "claim": "Jhd2 demethylates mono-, di-, and trimethylated H3K4.",
+      "claim_type": "EXPLICIT",
+      "source": "There are five known Jumonji-domain proteins in S. cerevisiae and among them Rph1, Gis1, and Jhd1 demethylate various species of methylated H3K36 (Tu et al., 2007; Kim and Buratowski, 2007) and Jhd2 demethylates mono-, di-, and trimethylated H3K4 (Seward et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IDH mutations are prevalent in specific cancer types and are important in tumor development. The claims establish that specific IDH mutations occur at high frequencies in gliomas (60-90%), acute myelogenous leukemia (20%), cartilaginous tumors (~50%), and cholangiocarcinoma (10-20%), and that these mutations are heterozygous missense mutations primarily affecting arginine 132 in IDH1 or arginine 172 in IDH2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C9-C16) are well-supported by citations to the cancer genomics literature and represent established knowledge about IDH mutations in cancer. The prevalence data and mutation patterns are documented in peer-reviewed studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "8bc87534-539a-45a4-8678-c5324baef202",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Tumor-associated IDH mutations abolish normal isocitrate to \u03b1-ketoglutarate conversion and instead promote a reverse reaction producing D-2-hydroxyglutarate (D2-HG), which accumulates to millimolar levels in IDH-mutant tumor cells despite being normally maintained at low levels by D2HGDH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 are supported by multiple citations to the biochemical literature on IDH mutations and D2-HG metabolism. This represents established knowledge about the enzymatic consequences of IDH mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "67a511f6-467c-471f-89a9-b397c03135eb",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "High levels of D2-HG inhibit TET DNA demethylases and Jumonji histone demethylases, resulting in DNA and histone hypermethylation and altered gene expression. In AMLs, IDH and TET mutations are mutually exclusive, suggesting DNA demethylases are key targets. Tumors with elevated D2-HG show increases in both activating (H3K4, H3K36) and repressive (H3K9, H3K27) histone marks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 and C21-C26 are supported by multiple citations to prior work demonstrating D2-HG inhibition of demethylases and the resulting epigenetic changes. The mutual exclusivity of IDH and TET mutations in AML provides strong circumstantial evidence for this mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "b0e5a4df-abca-4f33-854b-40904e74e8bd",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "S. cerevisiae was chosen as a model system because it has histone demethylases but lacks DNA methylases/demethylases. The yeast IDP2 gene shares 61% amino acid identity with human IDH proteins, and the IDP2-R132H mutation is analogous to the most common IDH1 mutation in gliomas. IDP2 is expressed only on non-fermentable carbon sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C27, C28, and C91 are supported by established knowledge about yeast biology, sequence alignment data (Figure 1\u2014figure supplement 1), and citations. The rationale for using yeast as a model system is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6848d84c-1968-4f97-bb34-815c64bf429e",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The IDP2-R132H mutation increased heterochromatin stability compared to wild-type IDP2 in a manner dependent on IDP2 expression. Deletion of IDP2 had no effect on heterochromatin stability, suggesting IDP2-R132H is a gain-of-function mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by the CRASH assay data in Figure 1B and Figure 1\u2014figure supplement 2, with appropriate statistical testing (p<0.0001). The gain-of-function interpretation is a reasonable inference from the observation that deletion has no effect while the mutation does.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Deletion of D2-HG dehydrogenases (dld2\u0394 or dld3\u0394) phenocopied the IDP2-R132H silencing effect, with carbon source-dependent differences. The dld2\u0394 mutation increased silencing on glycerol, while both dld2\u0394 and dld3\u0394 increased silencing on glucose. The IDP2-R132H dld2\u0394 double mutant showed additive effects. These results imply D2-HG is normally produced in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by CRASH assay data in Figures 1D-I with appropriate statistical testing. The inference that D2-HG is normally produced in yeast (C37) is reasonable given that deletion of its metabolizing enzymes affects silencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The IDP2-R132H allele is dominant to wild-type IDP2 in diploid cells, but homozygous IDP2-R132H/IDP2-R132H strains showed less silencing than heterozygotes, suggesting synergy with wild-type IDP2. This parallels observations in human tumor cells where wild-type IDH1 enhances D2-HG production by mutant IDH1, likely because IDH functions as a homodimer and wild-type enzyme provides \u03b1-ketoglutarate substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C92-C95 are supported by diploid CRASH assay data (Figure 2A,B) and citations to human tumor cell studies. The mechanistic explanation involving homodimer formation and substrate provision is well-supported by the literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6ad5690c-0e00-440e-ad04-af6072487cd8",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "D2-HG is a normal component of the yeast metabolome at 10-60 \u00b5M in wild-type cells. Deletion of dld2 led to ~50-fold increase in D2-HG on glycerol and 5-fold on glucose, while dld3\u0394 led to 7-fold increase only on glucose. D2-HG is efficiently metabolized by Dld2 and Dld3, with differential regulation based on carbon source. Increases in D2-HG were readily measured in dld2 mutants but not in cells capable of degrading it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47, C72-C75, and C78 are supported by LC-MS data in Figure 3A,C,D with appropriate statistical testing. The differential effects of dld2\u0394 and dld3\u0394 on different carbon sources are clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6586cc82-e44a-4c82-94d4-ee70ee9c9829",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The Idp2-R132H mutation contributed to D2-HG production when measured in combination with dld2\u0394 and wild-type Idp2. An extra copy of wild-type IDP2 significantly increased D2-HG levels (p<0.05) and enhanced silencing (p<0.0001) in IDP2-R132H cells. These results demonstrate a strong correlation between D2-HG levels and increased silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by LC-MS data (Figure 3B) and CRASH assay data (Figure 3\u2014figure supplement 1) with appropriate statistical testing. The correlation between D2-HG levels and silencing is well-established by the combined data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "d5cddb95-c8df-4bd5-81a1-70d33a21cab5",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Treatment of dld2\u0394 mutant cells with cell-permeable octyl-D2-HG resulted in increased gene silencing compared to untreated cells (p<0.05), establishing that increases in D2-HG are causal for stabilizing gene silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by CRASH assay data in Figure 4B with appropriate statistical testing. This experiment provides direct causal evidence by exogenously manipulating D2-HG levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "6a478639-c14a-4122-a170-8d5350eaa434",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The impact of D2-HG on gene repression is specific to heterochromatin and does not extend to all forms of repression, as shown by the lack of effect on GAL1 promoter repression in dld2\u0394 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by data in Figure 5 showing that dld2\u0394 mutations do not affect GAL1 promoter repression. This control experiment demonstrates specificity of the D2-HG effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f30ad7ff-7471-4e14-9a0b-cb120afb8402",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Bulk levels of H3K36-mono, -di, and -trimethyl marks and H3K4-trimethyl marks were significantly higher (p<0.01) in dld2\u0394 IDP2-R132H strains compared to wild type. H3K79 methylation levels did not change, consistent with the absence of an H3K79 demethylase in S. cerevisiae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 and C79 are supported by immunoblot data in Figure 6A,B and Figure 6\u2014figure supplement 1 with appropriate quantification and statistical testing. The lack of H3K79 change is consistent with known yeast biology (C57).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "27c2cd5e-5682-4041-bd45-9840dc244f2d",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Deletion of H3K36 demethylases gis1\u0394 and rph1\u0394 enhanced gene silencing (p<0.0001), with the double mutant showing even greater enhancement. Deletion of H3K4 demethylase jhd2\u0394 or other H3K36 demethylase jhd1\u0394 had no effect. This identifies Rph1 and Gis1 as the primary demethylases inhibited by D2-HG that lead to enhanced silencing, and establishes that elevated H3K36 methylation is the determinant for increased heterochromatin stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 and C96-C97 are supported by CRASH assay data in Figure 7A,B and Figure 7\u2014figure supplement 1 with appropriate statistical testing. The genetic specificity strongly implicates Rph1 and Gis1 as the relevant targets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e51727b9-60fe-48a1-9733-21627759298a",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Overexpression of GIS1 and RPH1 from a galactose-inducible promoter led to destabilization of heterochromatin, while overexpression of JHD1 had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by CRASH assay data in Figure 7C. This gain-of-function experiment complements the loss-of-function data and further supports the role of Gis1 and Rph1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "f892697e-6ca5-4610-9fc0-625b38c2918a",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methylation of H3K36 is exclusively dependent on the methyltransferase Set2. Loss of Set2 completely abrogated the silencing effect of gis1\u0394 rph1\u0394 mutations, demonstrating that enhanced silencing in these mutants is due exclusively to H3K36 hypermethylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by CRASH assay data in Figure 7D,E and citation to established knowledge about Set2. The epistasis analysis provides strong evidence that H3K36 methylation is the critical modification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "2059b831-dc51-44dd-bf50-cb68ba64ac31",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Gene silencing in set2\u0394 dld2\u0394 and set2\u0394 dld2\u0394 IDP2-R132H mutants was no different from set2\u0394 alone. Similarly, gis1\u0394 rph1\u0394 dld2\u0394 and gis1\u0394 rph1\u0394 dld2\u0394 IDP2-R132H mutants showed identical silencing to gis1\u0394 rph1\u0394. These epistasis results confirm that elevated silencing in D2-HG-accumulating cells is due to Set2-dependent H3K36 methylation and its hypermethylation due to inhibition of Gis1 and Rph1 demethylases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by CRASH assay data in Figure 8A-D. The epistasis analysis provides definitive genetic evidence for the pathway: D2-HG \u2192 inhibition of Gis1/Rph1 \u2192 H3K36 hypermethylation (Set2-dependent) \u2192 enhanced silencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "This study demonstrated unequivocally that enhanced gene silencing was due to histone H3K36 hypermethylation resulting from D2-HG inhibition of two specific histone demethylases (Rph1 and Gis1). Loss of H3K36 demethylases was solely responsible for increased heterochromatin stabilization, while inhibition of H3K4 demethylation had no effect on silencing. The study pinpointed specific enzymes and demonstrated D2-HG enhances silencing through heterochromatin stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C80, C81, C89, and C90 represent the main conclusions of the study and are well-supported by the comprehensive genetic, biochemical, and functional data presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "151cc0fa-032d-4584-be97-dbac42c51142",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "D2-HG acts as a competitive inhibitor of human Jumonji histone demethylase enzymes. While not explicitly tested in yeast, genetic and molecular evidence strongly implies that yeast Jumonji-domain histone demethylases are biochemically inhibited by D2-HG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by established knowledge about D2-HG biochemistry. Claim C77 is a reasonable inference from the genetic and molecular data, though the authors acknowledge direct biochemical testing in yeast has not been performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "e94695ff-8615-4dee-963c-209a52aff028",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings within known roles of histone methylation in yeast. H3K36 methylation prevents aberrant transcription at active genes, H3K4 methylation plays a role in silencing establishment at HML, H3K79 methylation by Dot1 inhibits Sir3-H3 interaction, the Rpd3 complex antagonizes silencing through H3K36-dependent recruitment, and H3K36 methylation prevents Sir protein binding to heterochromatin-adjacent regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 are supported by citations to the yeast chromatin literature and represent established knowledge used to interpret the current findings. These provide important context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    },
+    {
+      "id": "bbc07629-96ed-4512-98bf-9eb0e5eb1248",
+      "content_id": "3c932683-23be-4aa1-b2fe-6f41ecc554bc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Increased silencing of tumor suppressor genes is a feature of many tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 represents established knowledge about cancer biology and provides context for the potential relevance of the findings to human disease.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:32:05.542544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c4b91fee-e00c-4117-80d3-dfd4cc69e558",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "0a753b4b-f95c-4ee1-bdd9-276ba6d6c9e3",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "75b4456e-875f-449d-8790-aa102a825861",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "be7b4958-636c-454f-b14f-5c1872ce41c8",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "d60c8d9a-7f93-40ee-9ead-3ad295105604",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "43eb3d68-3bed-4a0d-a4f4-d76f81521b32",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "99d3a185-ca76-4c7d-842b-a84642755647",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "7ef86040-3679-460e-b0af-ccc0eaa3d6f2",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "c507f9b2-9e1e-4dee-8189-5e76df40b6b9",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "a4b7d13d-fc9f-46ac-8df1-4a4a81923a51",
+      "result_id": "0ed60e8b-dbf5-4562-86b2-2741d4322ccd"
+    },
+    {
+      "claim_id": "f6fb7f52-3730-4e7b-b28d-f92c813071fe",
+      "result_id": "8bc87534-539a-45a4-8678-c5324baef202"
+    },
+    {
+      "claim_id": "1056db3f-4844-4cd6-8f0f-d5f22e44cc01",
+      "result_id": "8bc87534-539a-45a4-8678-c5324baef202"
+    },
+    {
+      "claim_id": "3caac595-0cc9-4f6b-b0c0-0cc5b10d097f",
+      "result_id": "8bc87534-539a-45a4-8678-c5324baef202"
+    },
+    {
+      "claim_id": "b7294938-3d64-43ca-8136-f7aa0354723b",
+      "result_id": "8bc87534-539a-45a4-8678-c5324baef202"
+    },
+    {
+      "claim_id": "17a22666-f4cd-435b-a602-5cfea817d0a4",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "4058a54d-332d-4ab3-a761-c7ed6bac59e5",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "abf8c392-691b-4813-96b0-deccc78afa81",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "f4950470-9331-4a18-8b82-1a02dc2545e4",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "2740c3f2-1bd5-495d-ab1b-bfeb3ac2aeaa",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "3ac822ec-5714-4653-a6bd-dfdd54745949",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "8b41f286-c42b-473b-840c-eee8039ac296",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "d89c8a6a-7231-4bb0-9d17-593b86492d2a",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "9a537295-dc6d-4021-a9e1-12ebcd3800da",
+      "result_id": "67a511f6-467c-471f-89a9-b397c03135eb"
+    },
+    {
+      "claim_id": "47b31184-bb56-4aed-bb73-6174fc726e21",
+      "result_id": "b0e5a4df-abca-4f33-854b-40904e74e8bd"
+    },
+    {
+      "claim_id": "ddc03c8d-27f5-4097-800f-be270a3d73d6",
+      "result_id": "b0e5a4df-abca-4f33-854b-40904e74e8bd"
+    },
+    {
+      "claim_id": "df013f24-305f-48f8-9c9e-df207c7a3300",
+      "result_id": "b0e5a4df-abca-4f33-854b-40904e74e8bd"
+    },
+    {
+      "claim_id": "edf83b57-ed71-4d6c-a294-b0d51b23ca97",
+      "result_id": "b0e5a4df-abca-4f33-854b-40904e74e8bd"
+    },
+    {
+      "claim_id": "eff47b9d-fdca-4721-8015-eb599c9e3b39",
+      "result_id": "6848d84c-1968-4f97-bb34-815c64bf429e"
+    },
+    {
+      "claim_id": "885628c8-59a0-4f5b-b9fc-1fb2056e6a21",
+      "result_id": "6848d84c-1968-4f97-bb34-815c64bf429e"
+    },
+    {
+      "claim_id": "27bab3b5-c842-4563-8cde-e8dd7230b222",
+      "result_id": "6848d84c-1968-4f97-bb34-815c64bf429e"
+    },
+    {
+      "claim_id": "e256fe94-7e59-4e7b-a46f-84d1daaaffd0",
+      "result_id": "6848d84c-1968-4f97-bb34-815c64bf429e"
+    },
+    {
+      "claim_id": "3c42b2e0-756e-4fdc-8f76-1871de11fad0",
+      "result_id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e"
+    },
+    {
+      "claim_id": "ddf5ed4f-23f0-4704-b9ff-4c55c2ff5573",
+      "result_id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e"
+    },
+    {
+      "claim_id": "040c6eb6-68cd-4396-a1d0-f135cce39742",
+      "result_id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e"
+    },
+    {
+      "claim_id": "47059c77-d732-4cfa-82bf-99071c719c30",
+      "result_id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e"
+    },
+    {
+      "claim_id": "17dc7d0b-86f8-46c2-83e7-6fb61459f6dd",
+      "result_id": "2e7ec55d-7f55-4372-b91c-11ee31d1ff2e"
+    },
+    {
+      "claim_id": "c8124693-5932-4963-b78f-e3279e70e532",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "fee933d7-15ec-46b9-866f-c37856a0484b",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "e924a92d-ed2d-41b3-bb27-ace66bc47485",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "7570bf6c-6aaf-420e-8029-7a0ace6525f7",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "3aa7ea96-a2be-4781-a6ef-a92497192757",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "144f0af9-0487-4047-8191-8132eb58b06c",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "e8fa4e59-e2c4-472e-93ad-7c37b5407320",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "72268be7-7d5c-44df-8d01-6df3bdfb4607",
+      "result_id": "6f6af1cd-c84f-42b0-8b7c-c23088ae63be"
+    },
+    {
+      "claim_id": "ad281dbc-41df-4745-922f-ed9671aaaeeb",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "1bdf0221-31b3-40a5-8f9f-33dcbfeeda06",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "891bab4e-21e3-46a9-b5fe-6dde9245fc39",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "67b4ab4f-39cb-4b82-a00f-b87619baabd9",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "88625dff-2a8f-42b4-816f-bd3f2d08410c",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "e2e1dafd-26b1-407e-a4ae-e4a6b79028f7",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "8b431c15-77bc-4a92-8582-b1bd84868571",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "68c0ad5f-a8dd-4be0-a2d5-e927ffa03b4c",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "da575278-4cc2-464a-9a55-64d86762a369",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "d26fa137-d7f2-4573-bf11-9824d88e48e0",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "3c8fb8d0-ebc6-4e3d-9e10-ae604538a1c8",
+      "result_id": "6ad5690c-0e00-440e-ad04-af6072487cd8"
+    },
+    {
+      "claim_id": "19f57939-9d1d-4bf7-aa0d-1287418f2183",
+      "result_id": "6586cc82-e44a-4c82-94d4-ee70ee9c9829"
+    },
+    {
+      "claim_id": "cbc395a8-24f0-4949-9b18-043588e02671",
+      "result_id": "6586cc82-e44a-4c82-94d4-ee70ee9c9829"
+    },
+    {
+      "claim_id": "b6ccbaa5-ce26-44d6-8bf0-28d6ba65ed48",
+      "result_id": "6586cc82-e44a-4c82-94d4-ee70ee9c9829"
+    },
+    {
+      "claim_id": "e32b87ba-22ad-431f-84e1-4581a81b802f",
+      "result_id": "6586cc82-e44a-4c82-94d4-ee70ee9c9829"
+    },
+    {
+      "claim_id": "c9d02b5a-ccd9-4ef3-9a3f-0af51817a49f",
+      "result_id": "d5cddb95-c8df-4bd5-81a1-70d33a21cab5"
+    },
+    {
+      "claim_id": "061d545a-309b-485e-a2e9-7b444af7c3e5",
+      "result_id": "d5cddb95-c8df-4bd5-81a1-70d33a21cab5"
+    },
+    {
+      "claim_id": "cdb238ec-f8c0-4709-a8b5-2062db6a68b7",
+      "result_id": "6a478639-c14a-4122-a170-8d5350eaa434"
+    },
+    {
+      "claim_id": "f957f66b-ed16-4a35-ace0-b8c3dc132851",
+      "result_id": "f30ad7ff-7471-4e14-9a0b-cb120afb8402"
+    },
+    {
+      "claim_id": "1aaf0004-8a87-4fef-9f2e-e0f7c87aae1b",
+      "result_id": "f30ad7ff-7471-4e14-9a0b-cb120afb8402"
+    },
+    {
+      "claim_id": "51350ff4-921a-468f-addb-ecaa20f5ba2f",
+      "result_id": "f30ad7ff-7471-4e14-9a0b-cb120afb8402"
+    },
+    {
+      "claim_id": "4be088b0-7c73-4fa5-9b66-26b9f4a12998",
+      "result_id": "f30ad7ff-7471-4e14-9a0b-cb120afb8402"
+    },
+    {
+      "claim_id": "a0e59c98-b5b3-4c63-8adc-86e7abaab022",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "f444c0b5-3f88-4b14-ad5a-df69ae8f1909",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "03e773c4-73ca-4fec-b72e-1cfe821fd41c",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "43a32e1f-1312-400e-8b65-4035e117aa27",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "acbcb3e9-91f3-438f-8e79-6fa265aef5f5",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "e3f3e998-a458-4a38-a903-a2418cecde93",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "6c399b11-03de-40cd-8930-e6f6f34429f5",
+      "result_id": "27c2cd5e-5682-4041-bd45-9840dc244f2d"
+    },
+    {
+      "claim_id": "a1485b5b-cfd8-4327-8cd3-c2c25d0721d4",
+      "result_id": "e51727b9-60fe-48a1-9733-21627759298a"
+    },
+    {
+      "claim_id": "f89080b4-888f-4267-affe-f8ba1efdf525",
+      "result_id": "e51727b9-60fe-48a1-9733-21627759298a"
+    },
+    {
+      "claim_id": "c8685e32-7d83-499c-b69a-44e73e0be80a",
+      "result_id": "f892697e-6ca5-4610-9fc0-625b38c2918a"
+    },
+    {
+      "claim_id": "199e791d-8830-41cc-bd22-beb96eee9509",
+      "result_id": "f892697e-6ca5-4610-9fc0-625b38c2918a"
+    },
+    {
+      "claim_id": "a7cec400-9977-496d-96c4-af8f8328c3b1",
+      "result_id": "f892697e-6ca5-4610-9fc0-625b38c2918a"
+    },
+    {
+      "claim_id": "53ae00e1-d734-465a-9566-7a4de35c6433",
+      "result_id": "2059b831-dc51-44dd-bf50-cb68ba64ac31"
+    },
+    {
+      "claim_id": "7124e542-4337-4159-8d82-4da4b60edfc5",
+      "result_id": "2059b831-dc51-44dd-bf50-cb68ba64ac31"
+    },
+    {
+      "claim_id": "a859140f-2c28-408c-b1b8-3feaa3ed75f8",
+      "result_id": "2059b831-dc51-44dd-bf50-cb68ba64ac31"
+    },
+    {
+      "claim_id": "7251c466-e1ce-4b82-a24b-9381aca26059",
+      "result_id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9"
+    },
+    {
+      "claim_id": "44df9477-89e0-492b-bdab-bc1917639fb1",
+      "result_id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9"
+    },
+    {
+      "claim_id": "60fa964a-336e-4032-8188-0d60f2759927",
+      "result_id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9"
+    },
+    {
+      "claim_id": "dadbd074-4613-4163-8025-cd2af20c392f",
+      "result_id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9"
+    },
+    {
+      "claim_id": "25ad551a-c589-4ee9-9b0c-2d01cb9bba90",
+      "result_id": "7096edc7-0c1b-41ad-84fa-378be6dbc6e9"
+    },
+    {
+      "claim_id": "b6fb3af7-bbc4-4904-ac3c-7d0cd17a0743",
+      "result_id": "151cc0fa-032d-4584-be97-dbac42c51142"
+    },
+    {
+      "claim_id": "b8845463-d7c7-44a8-8f5d-7c98f0e7bc2c",
+      "result_id": "151cc0fa-032d-4584-be97-dbac42c51142"
+    },
+    {
+      "claim_id": "3e7211ac-5079-46f0-8e39-831fd4819d32",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "18aae1fa-bb26-4286-92c2-e8b39a5e0348",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "c65c81a8-d3d4-44c9-aed6-3aee1c6dce9a",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "6189dc9f-3abe-4ae8-9fef-e23e12029af5",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "2e8475c5-5f07-4522-a170-c91c15f7c500",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "78cd6c05-93bb-4f71-8193-e3b26c976045",
+      "result_id": "e94695ff-8615-4dee-963c-209a52aff028"
+    },
+    {
+      "claim_id": "09072c08-f557-4106-ba33-225be74529d8",
+      "result_id": "bbc07629-96ed-4512-98bf-9eb0e5eb1248"
+    }
+  ],
+  "comparisons": []
+}

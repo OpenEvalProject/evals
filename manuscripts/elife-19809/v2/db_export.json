@@ -1,0 +1,1365 @@
+{
+  "submission": {
+    "id": "03bc2926-cc8f-4b4c-92b7-202ddf21e51f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:21:25.789285Z",
+    "updated_at": "2025-11-30T21:21:25.789285Z"
+  },
+  "content": [
+    {
+      "id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "submission_id": "03bc2926-cc8f-4b4c-92b7-202ddf21e51f",
+      "content_type": "manuscript",
+      "content_text": "# TRIM28 regulates the nuclear accumulation and toxicity of both alpha-synuclein and tau\n\n## Authors\n\n- Maxime WC Rousseaux<sup>1</sup>\n- Maria de Haro<sup>1</sup>\n- Cristian A Lasagna-Reeves<sup>1</sup>\n- Antonia De Maio<sup>2</sup>\n- Jeehye Park<sup>1</sup>\n- Paymaan Jafar-Nejad<sup>1</sup>\n- Ismael Al-Ramahi<sup>1</sup>\n- Ajay Sharma<sup>1</sup>\n- Lauren See<sup>1</sup>\n- Nan Lu<sup>1</sup>\n- Luis Vilanova-Velez<sup>1</sup>\n- Tiemo J Klisch<sup>1</sup>\n- Thomas F Westbrook<sup>1</sup>\n- Juan C Troncoso<sup>5</sup>\n- Juan Botas<sup>1</sup>\n- Huda Y Zoghbi<sup>1</sup> ([ORCID: 0000-0002-0700-3349](https://orcid.org/0000-0002-0700-3349)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Human Genetics Baylor College of Medicine Houston United States\n2. Jan and Dan Duncan Neurological Research Institute Texas Children\u2019s Hospital Houston United States\n3. Program in Developmental Biology Baylor College of Medicine Houston Canada\n4. The Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n5. Division of Neuropathology, Department of Pathology Johns Hopkins University School of Medicine Baltimore United States\n6. Howard Hughes Medical Institute Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSeveral neurodegenerative diseases are driven by the toxic gain-of-function of specific proteins within the brain. Elevated levels of alpha-synuclein (\u03b1-Syn) appear to drive neurotoxicity in Parkinson's disease (PD); neuronal accumulation of tau is a hallmark of Alzheimer's disease (AD); and their increased levels cause neurodegeneration in humans and model organisms. Despite the clinical differences between AD and PD, several lines of evidence suggest that \u03b1-Syn and tau overlap pathologically. The connections between \u03b1-Syn and tau led us to ask whether these proteins might be regulated through a shared pathway. We therefore screened for genes that affect post-translational levels of \u03b1-Syn and tau. We found that TRIM28 regulates \u03b1-Syn and tau levels and that its reduction rescues toxicity in animal models of tau- and \u03b1-Syn-mediated degeneration. TRIM28 stabilizes and promotes the nuclear accumulation and toxicity of both proteins. Intersecting screens across comorbid proteinopathies thus reveal shared mechanisms and therapeutic entry points.\n\n## Introduction\n\nA number of neurodegenerative diseases are caused by the gradual accumulation of specific proteins within neurons. As research on these \u2018proteinopathies\u2019 has progressed, certain unexpected commonalities have arisen. For example, alpha-synuclein (\u03b1-Syn, SNCA) is now thought to mediate neurotoxicity not only in Parkinson\u2019s disease (PD), but also in Parkinson\u2019s Disease Dementia (PDD) and Lewy Body Dementia (LBD) where it accumulates in Lewy bodies (Spillantini et al., 1997). Similarly, the microtubule associated protein tau (MAPT) accumulates not only in neurons affected by Alzheimer\u2019s disease (AD), but in PD and PDD, while mutations that increase the stability of tau result in frontotemporal dementia with parkinsonism (FTDP-17 (or FTD) [Spillantini and Goedert, 2013]). Coding region mutations in SNCA are by no means necessary for PD to develop given that duplication or triplication of the SNCA locus is sufficient to result in forms of PD whose onset and severity correlate with gene dosage (Chartier-Harlin et al., 2004; Ibanez et al., 2004; Singleton, 2003). Supporting these clinical findings are studies that show that overexpression of wild-type forms of either SNCA or MAPT elicit neurodegeneration in model organisms, whereas suppressing their levels appears to be neuroprotective (Dauer et al., 2002; Ishihara et al., 1999; Jackson et al., 2002; Rapoport et al., 2002; Rockenstein et al., 2002; Wittmann, 2001). Given the brain\u2019s sensitivity to the dosage of either of these proteins, one would expect elevated levels of multiple proteins to be even more problematic, and this proves to be the case (Moussaud et al., 2014).\n\nPathogenic proteins involved in different proteionopathies often interact with each other and cause cellular toxicity, either due to their additive effects on downstream activities or further compromise of protein homeostasis (Clinton et al., 2010). Abnormally aggregated \u03b1-Syn and tau are often found together in postmortem cases of PD and LBD (Arima et al., 1999; Colom-Cadena et al., 2013; Iseki et al., 2002; Ishizawa et al., 2003), and genetic interaction studies in Drosophila demonstrate that \u03b1-Syn and tau synergize in promoting toxicity (Roy and Jackson, 2014). Biochemical evidence even suggests that \u03b1-Syn may act as an amyloidogenic \u2018seed\u2019 for the accumulation of tau, and vice versa (Guo et al., 2013; Lasagna-Reeves et al., 2010; Sengupta et al., 2015). Even more, several genome-wide association studies have reported genetic interaction between tau and alpha-synuclein in PD pathogenesis (Sim\u00f3n-S\u00e1nchez et al., 2009). Thus, the interaction between tau and \u03b1-synuclein is gaining increased attention for its possible pathogenic role in synucleinopathies and tauopathies. The mechanisms governing the dual accumulation of \u03b1-Syn and tau remain elusive, but it seems plausible that decreasing levels of either or both of these proteins could prove an effective therapeutic strategy for this family of diseases.\n\nInspired by the extensive overlap between \u03b1-Syn and tau pathology and their corresponding clinical phenotypes (Galpern and Lang, 2006), we reasoned that they may be regulated through shared pathways and that dysfunction of these regulatory pathways may lead to their pathogenic accumulation. Therefore, convergent screens to find common modulators for \u03b1-Syn and tau levels would yield the most insight into these disease processes and possibly open up new avenues for therapeutic intervention. Importantly, targeting the root cause of the disease \u2013 protein accumulation \u2013 in an unbiased manner makes neither assumption about the mechanism of toxicity nor which cellular process is affected. Through convergent RNAi screens targeting the steady-state levels of \u03b1-Syn and tau, we found that TRIM28 regulates their levels and toxicity through their toxic nuclear accumulation.\n\n## Results\n\n### TRIM28 is a key regulator of \u03b1-Syn and tau levels\n\nWe employed a screening strategy similar to one recently used to identify key modulators of ATXN1 stability (Park et al., 2013; Westbrook et al., 2008), using high-throughput flow cytometry to monitor the steady-state levels of \u03b1-Syn and tau in a fluorescent bicistronic reporter system (Figure 1A). We ran parallel screens interrogating 2607 siRNAs targeting 869 potentially druggable \u2013 i.e. potentially can be targeted pharmacologically \u2013 genes to identify genes that modify the levels of both \u03b1-Syn and tau (Figure 1\u2014figure supplement 1A\u2013C\u00a0and Figure 1\u2014source data 1). Applying stringent criteria and validation steps to narrow down the list of putative modifiers of \u03b1-Syn and tau levels, we uncovered Tripartite motif-containing 28 (TRIM28) as the most robust common modulator (Figure 1B; Figure 1\u2014figure supplement 2\u00a0and Figure 1\u2014source data 1). We confirmed this effect of TRIM28 knock-down on \u03b1-Syn and tau stability using three independent siRNAs on our \u03b1-Syn and tau reporter cell lines along with a negative control cell line (DsRed-IRES-EGFP) to ensure that TRIM28 was not affecting the stability of EGFP (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of screen approach (see also Figure 1\u2014figure supplement 1). The ratio of either \u03b1-Syn:EGFP/DsRed or tau:EGFP/DsRed was measured using an arrayed siRNA library covering 2607 siRNAs in biological triplicates. Venn diagram shows significant overlapping hits from both screens. (B) Representative traces for \u03b1-Syn:EGFP/DsRed and tau:EGFP/DsRed ratios: the black curve represents a control condition (siScramble), while the red and blue curves represent siTRIM28 in the \u03b1-Syn and tau cell lines, respectively. Quantified ratiometric scores for three independent siRNAs against TRIM28 (siTRIM28-1,-2 and -3) is presented on the right. (C) Effects of different shRNAs targeting TRIM28 on endogenous \u03b1-Syn and tau in HEK293T cells (left panel, shTRIM28-1 and shTRIM28-2), primary mouse neurons (middle panel, shTrim28-1,1,-2, and -3) and in adult mouse hippocampus (right panel, where \u2018I\u2019 denotes the injection side [ipsilateral] and \u2018C\u2019 denotes the uninjected side [contralateral, an internal control]). Rightmost panel depicts the\u00a0effect of the loss of one allele of Trim28 in the\u00a0mouse brain. Data are presented as mean \u00b1 s.e.m. for each group. In A, p=9.5\u00a0\u00d7\u00a010\u20134, hypergeometric test; in B, n\u00a0=\u00a03 per cell line, *** denotes p<0.001, One-Way ANOVA followed by Dunnet\u2019s multiple comparison test; in c, n\u00a0=\u00a04\u201313 condition, *, **, *** and ns denote p<0.05, p<0.01, p<0.001 and p>0.05, respectively, One-way ANOVA followed by Holm-Sidak post-hoc test in two leftmost panels and Student\u2019s t-test in two rightmost panels. Full statistical analyses for all figures are presented as Supplementary file 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) siRNA library composition as determined using Panther gene ontology analysis \u2013 Protein function (http://www.pantherdb.org/). A full list of the genes tested is presented in Figure 1\u2014source data 1. (B) Screen workflow delineating steps used to narrow down hit lists and find top shared modifiers of \u03b1-Syn and tau levels. (C) Raw distribution of all hits in both ratiometric screens (% Change denotes change in EGFP:DsRed ratio compared to scramble siRNAs from each plate).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** 40 shared modifiers from both \u03b1-Syn- and tau-based screens were tested using three new siRNAs directed against each target ('si #1, 2, 3'). Changes in EGFP:DsRed levels are presented as a percentage (%) change in relation to Scrambled siRNAs. For each histogram, DsRed-IRES-\u03b1-Syn:EGFP, DsRed-IRES-tau:EGFP and DsRed-IRES-EGFP cell lines are represented as red, blue and white bars, respectively. % Change denotes change in EGFP:DsRed ratio compared to scramble siRNAs. Data are presented as mean \u00b1 s.e.m. Three independent biological replicates are presented for three independent siRNAs (siRNA codes are listed in Supplementary file 1 for statistical comparison). *, ** and *** denote p<0.05, p<0.01 and p<0.001, respectively, One-Way ANOVA followed by Dunnett\u2019s multiple comparison test. Bars without asterisks denote non-significant differences.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** ( A) Confirmation of viral expression was performed in the hippocampus of 12-week-old mice, 14 days after stereotaxic delivery of lentivirus. Cryosections were stained for turbo GFP (tGFP) and DAPI. Note top panels denote side injected with the virus (\u2018Ipsi\u2019, ipsilateral) and bottom panels, the uninjected side (\u2018Contra\u2019, contralateral). (B) Confirmation of Trim28 knockdown was performed as in A, but using an antibody directed against Trim28. (C) The effect of Trim28 knockdown on \u03b1-Syn and tau in primary neurons can be rescued by overexpressing an shRNA-resistant cDNA of TRIM28, (D) TRIM28 knockdown in human cells does not alter MAPT transcript levels and only mildly affects SNCA expression as assayed by qRT-PCR. Trim28 heterozygous (Trim28+/-) mice have normal levels of Snca and Mapt in their brain. (E) TRIM28 knockdown does not alter protein levels of several other neurodegenerative disease-causing genes. HEK293T cells were infected with virus targeting TRIM28 (shTRIM28-1) or control (non-silencing, shScram) and levels of neurodegenerative disease-causing genes were measured by Western blot and quantified below. Data are presented as mean + s.e.m. In C, n\u00a0=\u00a03\u20134 replicates, *, ** and *** denote p<0.05, p<0.01 and p<0.001, respectively, One-Way ANOVA followed Holm-Sidak post-hoc test; in D, n\u00a0=\u00a03 replicates per group, top panel: *** and ns denote p<0.001 and p>0.05, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test, bottom panel: * and ns denote p<0.05 and p>0.05, respectively, Student\u2019s t-test; in e, n\u00a0=\u00a03 replicates per group, ns denotes p>0.05, Student\u2019s t-test.\n\nWe next used species-specific shRNA lentiviral vectors to suppress TRIM28 expression in human cells, in mouse primary cerebellar neurons, and in mouse hippocampus (Figure 1C and Figure 1\u2014figure supplement 3A,B). In each case, partial reduction of TRIM28 led to a decrease of both \u03b1-Syn and tau, and virally reintroducing a human shRNA-resistant TRIM28 cDNA reversed this effect (Figure 1\u2014figure supplement 3C). In addition, we found that deleting one allele of Trim28 in mice led to a modest but significant decrease of \u03b1-Syn and tau levels in mouse brain (Figure 1C). Importantly, we observed little to no changes in SNCA nor MAPT transcript levels under conditions of TRIM28 downregulation (Figure 1\u2014figure supplement 3D). Nor did reduction of TRIM28 affect other neurodegeneration-causing proteins we tested (Figure 1\u2014figure supplement 3E). TRIM28 thus appears to be a key post-translational regulator of the steady state levels of \u03b1-Syn and tau.\n\n### TRIM28 suppression blocks tau- and \u03b1-Syn-mediated toxicity in vivo\n\nBased on studies showing that reducing disease protein levels can rescue neurodegeneration in other proteinopathy models (Moreno et al., 2012; Park et al., 2013), we tested whether decreasing TRIM28 would mitigate the phenotypes resulting from overexpression of either \u03b1-Syn or tau. For a tauopathy model, we generated transgenic Drosophila that express wild-type human tau in the eye and develop a visible degenerative phenotype. Knockdown of the Drosophila TRIM28 homolog (bonus) significantly reduced tau levels and mitigated eye degeneration (Figure 2A; Figure 2\u2014figure supplement 2C). Similarly, expression of wild-type tau in the Drosophila nervous system led to motor deficits in the climbing assay, but two independent partial loss-of-function alleles of TRIM28 improved this behavioral phenotype without reducing the transgene expression (Figure 2B; Figure 2\u2014figure supplement 1; Figure 2\u2014figure supplement 2\u00a0and Video 1). To ensure that this effect was mediated through tau levels, we tested the effect of TRIM28 loss of function on transgenic tau levels and found indeed that reduction of TRIM28 could effectively decrease tau levels in this heterologous system (Figure 2C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig2-v2.jpg)\n\n**Figure 2.:** (A) tau overexpression in the Drosophila eye produces a rough eye phenotype (third panel) compared to negative controls (first panel). Decreasing the levels of Trim28 (dsTrim28) ameliorates this defect (fourth panel). Decreasing Trim28 alone does not result in any overt degenerative phenotypes (second panel). (B) Expression of tau in the Drosophila nervous system (solid blue lines) leads to motor performance deficits that can be quantified in a climbing assay when compared with control flies (black lines). This phenotype is mitigated by partial TRIM28 loss of function (hatched blue lines). Two independent cohorts (15 animals per replicate) are shown per genotype. (C) Western blot images and quantification showing decreased tau levels in the adult Drosophila retina, upon Trim28 knockdown. This reduction of tau protein levels is concordant with the suppression of tau phenotypes shown in A and B. Data are presented as mean \u00b1 s.e.m. for each group. In B, n\u00a0=\u00a015 flies per replicate and 2 replicas per genotype *** denotes p<0.001, Two-Way ANOVA followed by Tukey-Kramer post-hoc test; in C, n\u00a0=\u00a06 replicates per group, *** denotes p<0.001, Student\u2019s t-test. Scale bars in A: 100 \u00b5m (inset 10 \u00b5m).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) expression of a Trim28 loss of function allele in the CNS (Trim28LOF-1, yellow line) does not induce motor performance deficits when compared to control flies (black line). (B) tau-mediated motor phenotypes (solid blue lines) are suppressed by a second loss of function TRIM28 allele (Trim28LOF-2, hatched blue lines). (C) Quantification of ommatidial phenotypes from Figure 2A. Data are presented as mean \u00b1 s.e.m. In A, n\u00a0=\u00a015 flies per group, **, *** and ns denote p<0.01, p<0.001 and p>0.05, respectively, Two-Way ANOVA followed by Tukey-Kramer post-hoc test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Levels of Gal4 expression were assayed using qPCR from the three different driver lines: elav-Gal4 (A), GMR-Gal4 (B) and Rh1-Gal4 (C). No significant decreases in expression were observed in the\u00a0driver expression that could account for the suppression of phenotypes observed in Figure 2 *** and ns denote p<0.001 and p>0.05, respectively, Student\u2019s t-test.\n\n![Video 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-media1.mp4.jpg)\n\n**Video 1.:** Partial loss of TRIM28 function in fruit flies overexpressing tau rescues motor behavior in the climbing assay. Video recording shows the three groups of animals tested in Figure 2B. The number of fruit flies climbing up 9 cm (dotted line) in 15 s was recorded.\n\nTo test whether Trim28 mediates neurodegeneration in a synucleinopathy, we turned into a mouse model of \u03b1-Syn-overexpression-induced Parkinsonism (Burr\u00e9 et al., 2012), since the degenerative phenotypes of \u03b1-Syn-overexpressing flies are generally very mild. We co-injected lentiviral vectors expressing \u03b1-Syn together with a lentiviral vector expressing an shRNA against mouse Trim28 into the Substantia Nigra pars compacta(SNc) of mice and evaluated dopaminergic cell integrity eight weeks afterward. Mice infected with viruses overexpressing \u03b1-Syn and a control shRNA suffered a 50% reduction in tyrosine hydroxylase (TH)-positive dopaminergic neurons (Figure 3A,B-top panels and Figure 3\u2014figure supplement 1C). Remarkably, mice that received the shTrim28 virus together with \u03b1-Syn overexpression maintained their dopaminergic cells in the SNc and the corresponding fibers in the striatum (Figure 3A,B-bottom panels). We confirmed that Trim28 was expressed (and effectively knocked down in the case of shTrim28 treatment) in these nigral neurons and that this rescue was due to a decrease in \u03b1-Syn levels and not the silencing of the \u03b1-Syn expression vector (measured by IRES-driven GFP expression, Figure 3\u2014figure supplement 1A,B). Lastly, to test whether this phenotypic rescue would hold true in a non-acute paradigm, we tested whether loss of one copy of Trim28 in mice could rescue some of the pathology observed in \u03b1-Syn-overexpressing mice (Rockenstein et al., 2002). These mice possess a transgene driving wildtype \u03b1-Syn under the control of the mThy1 promoter and demonstrate age-dependent accumulation and aggregation of \u03b1-Syn that is demarked by its S129 phosphorylated form. We found that a 50% reduction in Trim28 significantly reduced pathological, phosphorylated \u03b1-Syn accumulation in the hippocampus where it is highly expressed (Figure 3C,D) (Chesselet et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representative photomicrographs of midbrain sections stained for tyrosine hydroxylase (TH) at the level of the Substantia Nigra pars compacta (SNc, top panels) or in the striatum (bottom panels) on the ipsilateral side to the virus injection. (B) Stereological quantification of TH+ cells (top) in the SNc and quantification of optical density of TH+ fibers (bottom) is presented on the right. (C) Western blot analysis of 3.5 month old \u03b1-Syn transgenic (TG) mice carrying two (no mark, Trim28+/+) or one (Trim28+/-) copies of Trim28. (D) phosphorylation of \u03b1-Syn at serine 129 (pS129) staining at the level of the CA1 in these mice and quantification of positive cell numbers is presented on the right. Data are presented as mean + s.e.m. for each group. In B, n\u00a0=\u00a05\u201311 per group, * and ** denote p<0.05 and p<0.01, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test; in B\u2013D, n\u00a0=\u00a03\u20137 mice per group, * and ** denote p<0.05 and p<0.01, respectively, Student\u2019s t-test. Scale bars in A: 400 \u00b5m (top panels) 150 \u00b5m (bottom panels), C: 50 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0On the left, representative immunofluorescence photomicrographs depicting uniform expression of Trim28 (Red) in the Substantia Nigra pars compacta (SNc, stained by TH, Green). Knockdown of Trim28 was confirmed on the side of the injection (Ipsi, top panel) compared to the non-injected side (Contra, bottom panel). (B) Representative western blot of tissue punches from the SNc two weeks following stereotaxic injection showing that Trim28 knockdown downregulates exogenous \u03b1-Syn (Myc tagged) but has no effect on the transcription of the viral vector (GFP, expressed under the same promoter as Myc-\u03b1-Syn separated by IRES). (C) Nissl staining quantification pertaining to Figure 3B. Nissl positive (Nissl+) cells in the medial terminal nucleus (MTN) region of the SNc were quantified to assess SNc viability. Data are presented as mean \u00b1 s.e.m. In B and C, n\u00a0=\u00a04 animals per condition; in D, n\u00a0=\u00a06\u20137 animals per condition, ** and ns denote p<0.01 and p>0.05, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test. Scale bars in B: 20 \u00b5m.\n\n### TRIM28 stabilizes \u03b1-Syn and tau and drives their pathology\n\nSince loss of TRIM28 rescued the neurodegenerative phenotypes, we surmised that increasing TRIM28 might exacerbate pathology. We performed bilateral lentiviral overexpression of TRIM28 in pre-symptomatic mouse models of synucleinopathy (Rockenstein et al., 2002) and tauopathy (Yoshiyama et al., 2007) and found that injection with TRIM28, but not control lentivirus, worsened each aspect of neuropathology tested in both models (Figure 4A,B; and Figure 4\u2014figure supplement 1A,B). We were particularly intrigued to find pathological, phosphorylated, forms of \u03b1-Syn (S129) and tau (S396) accumulating at this earlier stage. Given the efficacy of TRIM28 at tightly regulating the levels of \u03b1-Syn and tau in a post-translational manner, we reasoned that TRIM28 was likely stabilizing these proteins therefore promoting their toxic accumulation. To test this, we generated doxycycline-inducible cell lines where we could carefully assess the half-lives of \u03b1-Syn and tau without altering global protein homeostasis (Figure 5A)\u00a0(Meerbrey et al., 2011). Specifically, we cloned wild-type \u03b1-Syn and tau into doxycycline-inducible lentiviral vectors (pINDUCER system), infected SH-SY5Y cells and selected for clones that stably express either \u03b1-Syn or tau upon induction. We found that the half-lives of \u03b1-Syn and tau (measured following a 48 hr pulse of doxycycline) in this system resembled those previously observed by others (23.3 hr for \u03b1-Syn and 28.1 hr for tau [Li, 2004; Min et al., 2010]). Importantly, we found that TRIM28 lentiviral overexpression could significantly increase the half-life of each protein by approximately 50% (LV-TRIM28 vs. LV-Ctrl, Figure 5B,C), without affecting their RNA stability (Figure 5\u2014figure supplement 1). Together, these studies suggest that TRIM28 promotes the accumulation of the amyloidogenic proteins \u03b1-Syn and tau.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig4-v2.jpg)\n\n**Figure 4.:** Transgenic mice overexpressing \u03b1-Syn (A, mThy-Syn 'Line 61') or P301S tau (B, PS19) were injected at a presymptomatic stage in the hippocampus with lentiviruses expressing TRIM28. Pathological evaluation of phosphorylation of \u03b1-Syn at serine 129 (pS129, top panels); Glial Fibrillary Acidic Protein (GFAP, middle panels) as well as Nissl staining (bottom panels) in the CA1 region of \u03b1-Syn transgenic (TG) mice (solid bars) and their wild-type littermates (hatched bars) was performed (quantification on the right of each panel sets). Similar pathological evaluation of phosphorylation of tau at serine 396 (pS396 tau); GFAP; as well as Nissl staining in the CA1 region of P301S tau Transgenic mice. Data are represented as mean + s.e.m. In A and B, n\u00a0=\u00a03 for each genotype and treatment for each experiment, *, ** and *** denote p<0.05, p<0.01 and p<0.001, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test. Scale bars in A and B: 25 \u00b5m (top panels), 100 \u00b5m (middle panels) and 50 \u00b5m (bottom panels).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative photomicrographs of mCherry staining in the hippocampus of a mouse injected with a control lentivirus expressing mCherry (left panel) or TRIM28 fused to mCherry (right panel). (B) Representative western blot of hippocampal punches from \u03b1-Syn Transgenic and littermate mice (left panel) and tau P301S transgenic and littermate mice (right panel) injected with lentiviruses overexpressing TRIM28 (or control lentiviruses). Levels of pS129 or total \u03b1-Syn (in the case of \u03b1-Syn TG mice) or pS396 or total tau (in the case of tau TG mice) are quantified to the right of the blots. Data are represented as mean + s.e.m. In B, n\u00a0=\u00a03\u20136 for each genotype and treatment for each experiment, * and ** denote p<0.05 and p<0.01, respectively. Scale bars in A: 100 \u00b5m (top panels) and 20 \u00b5m (bottom panels).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig5-v2.jpg)\n\n**Figure 5.:** (A) Schematic of viral vector used to generate stable cell lines (adapted from [Meerbrey et al., 2011]) and assay design. (B) Representative western blots of transgenic \u03b1-Syn (top) and tau (bottom) cell lines following different times of doxycycline (DOX) removal; NT denotes non-DOX treated cells; * denotes detection of endogenous tau (not quantified). (C) Quantification of \u03b1-Syn and tau stability are presented as a % of baseline and fit to a logarithmic (log2) scale. Dashed lines denote control groups whereas solid lines denote TRIM28 overexpression. Data are presented as mean \u00b1 s.e.m. for each group. In C, n\u00a0=\u00a06 per group, per time point. Protein levels follow a one-phase exponential decay with both curves being significantly different from one another (Comparison of fits, p=0.0111, \u03b1-Syn;LV-Ctrl vs. \u03b1-Syn;LV-TRIM28; p=0.0003, tau;\u00a0LV-Ctrl vs. tau;LV-TRIM28).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Quantification of SNCA and MAPT levels following indicated doxycycline withdrawal time points reveals expected RNA decay over time, one-phase exponential decay fit to a logarithmic (log2) scale. No significant changes were observed following TRIM28 overexpression (Comparison of fits, ns denotes p>0.05, SNCA;LV-Ctrl vs. SNCA;LV-TRIM28 or MAPT;LV-Ctrl vs. MAPT;LV-TRIM28).\n\n### TRIM28 binds to and promotes the nuclear accumulation of \u03b1-Syn and tau\n\nGiven that TRIM28 regulates the stability of these two proteins, we next sought the consequence of TRIM28-mediated regulation of \u03b1-Syn and tau. We asked whether TRIM28 modulates \u03b1-Syn and tau by forming a complex with them and found that they did indeed interact, albeit weakly, in human cells (Figure 6A). We also used an alternative approach to confirm our findings: Bimolecular Fluorescence Complementation (BiFC; Figure 6B). We generated stable cell lines expressing N-terminal YFP tagged versions of \u03b1-Syn and tau (nYFP-\u03b1-Syn and nYFP-tau). By themselves, the cell lines did not generate any fluorescence (data not shown) but when a known interactor of each (in this case, tau) was co-transfected as a prey, we could elicit a strong fluorescent signal (tested by flow cytometry). We found that using TRIM28 as a prey could elicit a signal roughly eight times lower than that of tau thus confirming the transiency of the interaction. Intriguingly, TRIM28:\u03b1-Syn and TRIM28:tau complexes accumulated in nuclei after some time. To confirm that this effect was not an artifact of the BiFC approach, we overexpressed a mCherry-fused TRIM28 lentiviral construct in primary cerebellar granule neurons and looked at the endogenous localization of \u03b1-Syn and tau. Again, both by immunofluorescence and by biochemical fractionation, we found that viral expression of TRIM28 dramatically promoted the nuclear accumulation of these two proteins (Figure 6C and Figure 6\u2014figure supplement 1). Given our previous data suggesting that the effects of TRIM28 on \u03b1-Syn and tau are posttranslational, we explored whether the RING domain of TRIM28 might play a role in its modulatory effect. To this end, we focused on the known E3-ligase catalytic activity of TRIM28. We overexpressed an inactive TRIM28 E3 ligase mutant ([C65A/C68A], \u2018TRIM28-Mut\u2019) (Doyle et al., 2010) and found that this mutant could no longer promote the toxic nuclear accumulation of these proteins (Figure 6C and Figure 6\u2014figure supplement 1). Importantly, we found that the TRIM28 E3 ligase mutant, while less stable, could still bind \u03b1-Syn and tau (Figure 6\u2014figure supplement 2), suggesting that its effect on \u03b1-Syn and tau nuclear accumulation is functionally, rather than structurally, driven. Taken together, TRIM28 governs the nuclear accumulation of \u03b1-Syn and tau through its E3-ligase domain, and its persistent expression aggravates the neuropathology of both proteins.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig6-v2.jpg)\n\n**Figure 6.:** (A) Immunoprecipitation for endogenous \u03b1-Syn (top panel) and tau (bottom panel) from HEK293T cells showing the interaction between the former proteins and TRIM28. (B) Bimolecular Fluorescence Complementation studies using stable cell lines expressing either \u03b1-Syn or tau fused to an n-Terminal moiety of YFP (\u03b1-Syn:nYFP or tau:nYFP, respectively) and TRIM28 (solid), tau (positive control, hatched) or MSK1 (negative control, white) fused to a c-terminal moiety of YFP (TRIM28:cYFP, tau:cYFP and MSK1:cYFP, respectively). Visualization of the epifluorescence generated through protein-protein interaction is depicted in the photomicrographs and quantified by flow cytometry on the right. Note the nuclear accumulation of the interacting proteins 72 hr following transfection. (C) Primary mouse neurons infected with lentiviruses harboring TRIM28, TRIM28 E3 ligase mutant and control were stained for endogenous \u03b1-Syn (left panel), and tau in (middle panel) and the relative nuclear fraction of each was quantified (right panel). Arrows point to endogenous \u03b1-Syn and tau in the nucleus. Data are represented as mean + s.e.m. In B, n\u00a0=\u00a03 per group and *** denotes p<0.001, One-Way ANOVA followed by Holm-Sidak post-hoc test; in C, n\u00a0=\u00a03 per group and *, ** and ns denote p<0.05, p<0.01 and p>0.05, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Primary mouse neurons infected with lentiviruses harboring TRIM28, TRIM28-Mut or a control mCherry fluorophore were biochemically fractionated into cytoplasmic (\u2018Cyto.\u2019) and nuclear (\u2018Nuc.\u2019) components. Relative \u03b1-Syn and tau were measured both in the cytoplasm and nucleus in each condition. Notably, the TRIM28-E3 mutant construct consistently exhibited diminished levels. Data are presented as mean + s.e.m. n\u00a0=\u00a03\u20134 replicates per condition. *, ** and ns denote p<0.05, p<0.01 and p>0.05, respectively, One-Way ANOVA followed by Holm-Sidak post-hoc test.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) \u03b1-Syn and tau were immunoprecipitated from HEK293T cells transfected with HA-tagged wild-type TRIM28 or its E3 ligase mutant (C65A/C68A) counterpart. * denotes IgG heavy chain immunoreactivity. (B) Quantification of the relative amount of HA-TRIM28 (or its mutant) bound to \u03b1-Syn and tau reveals a decrease in binding affinity in the catalytic mutant. * and ns denote p<0.05 and p>0.05, respectively, Student\u2019s t-test.\n\n### Aberrant TRIM28 levels are linked to nuclear accumulation of \u03b1-Syn and tau in human synucleinopathies and tauopathies\n\nIf TRIM28 is indeed promoting accumulation of \u03b1-Syn and tau in a disease context, levels of TRIM28 could also be deregulated. We therefore obtained post-mortem tissue from individuals who had had PDD, AD, or progressive supranuclear palsy (PSP), along with age-matched controls, and examined the biochemical distribution of TRIM28. In all cases of synucleinopathy and tauopathy, a greater proportion of TRIM28 accumulated in an insoluble form (Formic Acid fraction) than the more soluble form (RIPA fraction) (Figure 7\u2014figure supplement 1A\u2013D). Subcellular fractionation on these post-mortem tissues revealed that \u03b1-Syn and tau accumulated in the nucleus in most cases of synucleinopathy and tauopathy (Figure 7\u2014figure supplement 2A,B). Then, we looked at \u03b1-Syn and tau subcellular localization in relation to TRIM28 in the context of PD and AD, respectively. We found that \u03b1-Syn and tau nuclear co-localization with TRIM28 was greater in PD and AD than in age-matched controls (Figure 7A,B). Taken together, our findings suggest that TRIM28 is aberrantly increased in cases of synucleinopathy and tauopathy and is pathologically associated with the nuclear accumulation of \u03b1-Syn and tau in a diseased state.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig7-v2.jpg)\n\n**Figure 7.:** (A) Representative photomicrographs of the\u00a0medial frontal gyrus of cases of PDD and age-matched controls stained for \u03b1-Syn, TRIM28 and DAPI. The relative proportion of DAPI positive cells were quantified and are presented as the fraction of total nuclei counted. (B) Representative photomicrographs as in A but for cases of AD and respective age-matched controls, quantification on the right. Data are represented as a fraction of total. In A, n\u00a0=\u00a04 per post-mortem group, ** and ns denote p<0.01 and p>0.05, respectively, Student\u2019s t-test; in B, n\u00a0=\u00a05 per post-mortem group, * and ns denote p<0.05 and p>0.05, respectively, Student\u2019s t-test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Medial frontal gyrus (MFG) samples from post-mortem Parkinson\u2019s disease with dementia (PDD) or age-matched control cases sequentially lysed in RIPA buffer (left panel) followed by Formic Acid (right panel). (B) Pons samples from Progressive supranuclear palsy (PSP) and control cases prepared as in A. (C) MFG samples from Alzheimer\u2019s disease (AD) and Control cases prepared as in A. (D) Quantification of the relative amount of insoluble \u2013 FA enriched \u2013 TRIM28 relative to RIPA-soluble TRIM28. Left, middle and right panels denote quantification of PDD, AD and PSP cases, respectively. Data are presented as mean \u00b1 s.e.m. In D, n\u00a0=\u00a05\u201310 cases per group, * and ** denote p<0.05 and p<0.01, respectively, Student\u2019s t-test with Welch\u2019s correction.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19809/elife-19809-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Quantitative assessment of nuclear and cytoplasmic localization of \u03b1-Syn and tau in the pons of post-mortem cases of PDD (top panel), PSP (middle panel) and AD (bottom panel) compared to age-matched/tissue-matched controls. (B) Quantification of relative nuclear enrichment of \u03b1-Syn (top) and tau (bottom). (C) Model: In normal conditions, TRIM28 resides primarily in the nucleus, whereas \u03b1-Syn and tau perform their respective physiological functions in the cytoplasm and their levels are tightly controlled by cytosolic quality control mechanisms; in disease conditions the levels of \u03b1-Syn and tau as well as TRIM28 are abnormally high. TRIM28 mediates the nuclear accumulation, potentially via SUMOylation (denoted by the \u2018S\u2019) of \u03b1-Syn and tau where they become toxic. Data are presented as mean \u00b1 s.e.m. In B, n\u00a0=\u00a010 cases per condition. * and ns denote p<0.05 and p>0.05, respectively, Student\u2019s t-test with Welch\u2019s correction.\n\n## Discussion\n\nThe mechanism(s) underlying the neurotoxicity of \u03b1-Syn and tau have been difficult to pin down (Cookson and van der Brug, 2008; Ward et al., 2012). Although accumulating evidence suggests that \u03b1-Syn and tau pathology propagate from cell to cell, the exact mechanism driving their initial accumulation and toxicity remains unclear. Given that both \u03b1-Syn and tau accumulate in Parkinson Disease Dementia and Lewy Body Dementia (Moussaud et al., 2014; Sengupta et al., 2015), we rationalized that there must be some proteins that regulate both of them. Thus, when screening for posttranslational regulators that modulate the levels of each protein, we were most interested in regulators that can modify the levels of both \u03b1-Syn and tau. Through such convergent screens, we found that TRIM28 regulates the levels of both disease-driving proteins. Our finding that TRIM28 regulates \u03b1-Syn and tau by promoting their nuclear localization and accumulation dovetails nicely with studies indicating that altered cellular distribution of \u03b1-Syn and tau contributes to neurodegeneration (Fares et al., 2014; Fern\u00e1ndez-Nogales et al., 2014; Kontopoulos et al., 2006). Indeed, several lines of evidence suggest that mislocalization or missorting of \u03b1-Syn and tau as a result of mutations, post-translational modification or overexpression, rather than their respective aggregation in the form of Lewy bodies and NFTs, are what promotes neurodegeneration (Frandemiche et al., 2014; Wilson et al., 2004). For instance, \u03b1-Syn is much more toxic in a fly model of synucleinopathy when it is tagged with a nuclear localization sequence (NLS) (Kontopoulos et al., 2006). Further, PD-causing mutations in \u03b1-Syn increase its nuclear accumulation (Fares et al., 2014; Kontopoulos et al., 2006). Moreover, postmortem studies of tissue from AD and Huntington disease patients indicate that misfolded tau accumulates in the nucleus of neurons in the form of rod-like deposits (Fern\u00e1ndez-Nogales et al., 2014; Vuono et al., 2015). Our finding that TRIM28 drives the nuclear accumulation of \u03b1-Syn and tau provides new mechanistic insight into the steps that lead to the pathogenicity of these proteins and highlights a shared pathway for therapeutic targeting.\n\nThe molecular mechanism through which TRIM28 stabilizes and mediates the nuclear localization of \u03b1-Syn and tau is not elucidated at this point. Indeed, it is possible that TRIM28 mediates its effects on \u03b1-Syn and tau indirectly through a yet undiscovered mediator, through epigenetic remodeling or indirect binding and/or modification of an intermediate (Cheng, 2014). However, the evidence we present suggests that this less likely of a mechanism. For instance, we show that TRIM28 does not affect the RNA of \u03b1-Syn and tau but rather their protein stability. Moreover, we show that TRIM28 can form a complex with the two proteins and that its effect on nuclear accumulation is mediated via its E3-ligase domain. This would therefore suggest that TRIM28 may mediate this effect through SUMOylation or ubiquitination. Since SUMOylation has previously been suggested to mediate the nuclear localization of certain proteins, we hypothesize that TRIM28 acting as a SUMO ligase for \u03b1-Syn and tau. Future studies will dissect such a mechanism through the use of genetically engineered mice that permit monitoring of either modification in vivo.\n\nIn the present study, we found that TRIM28 has important post-transcriptional functions in the brain. While the Trim28 null mice are embryonic lethal (Cammas et al., 2000), we found that the Trim28+/- mice looked and behaved normally and that 50% loss of Trim28 was sufficient to reduce \u03b1-Syn and tau and ameliorate toxicity. This finding is particularly encouraging when it comes to therapeutics as it suggests that only partially inhibiting TRIM28 function may be effective at blocking neurotoxicity. Moreover, having discovered that mutating the E3 ligase catalytic activity of TRIM28 effectively is sufficient to regulate \u03b1-Syn and tau levels and for this specific effect behaves like a null allele, narrows down a target domain within TRIM28 for inhibition. This finding sets the stage for future studies to dissect the native function of the E3 ligase domain of TRIM28 versus its other essential domains and provides a potential opportunity for targeting TRIM28 as a source of therapy for these debilitating disorders.\n\nThe unusual accumulation of TRIM28 in cases of synucleinopathy and tauopathy was a curious finding, though it remains solely an observation of correlative nature at this point. While we found that both \u03b1-Syn and tau co-localized with TRIM28 in the nucleus in cases of PD and AD, respectively, it was also interesting to find that TRIM28 accumulated in the insoluble biochemical fractions from post-mortem tissue. Moreover, though TRIM28 accumulation occurs in both diseases, irrespective of the driving pathological protein, \u03b1-Syn and tau appeared to more selectively accumulate in the nucleus in the context of their respective disease. Teasing out the precise mechanisms that affect TRIM28 accumulation as well as \u03b1-Syn and tau nuclear localization in human tissue will provide additional context for the understanding of disease pathogenesis.\n\nWe posit two potential mechanisms through which deregulated TRIM28 activity could promote neurodegeneration. By driving \u03b1-Syn and tau to the nucleus, TRIM28 could: (1) prevent their degradation by native quality control mechanisms, thereby enhancing their overall bioavailability and toxicity (a passive mechanism); or (2) allow for a toxic gain of function in the nucleus (an active mechanism) (model, Figure 7\u2014figure supplement 2). Though some studies have suggested various roles for \u03b1-Syn and tau in the nucleus (Fern\u00e1ndez-Nogales et al., 2014; Kontopoulos et al., 2006; Sultan et al., 2011), careful studies testing the kinetics and the outcome of this nuclear build-up will surely shed light on disease pathogenesis.\n\nAs the sensitivity of the brain to protein levels becomes clearer, and more neurodegenerative diseases are found to involve elevated levels of more than one protein (Moussaud et al., 2014; Ramanan and Saykin, 2013), it will become more important to identify shared modifiers and regulatory mechanisms of the steady-state levels of disease proteins, both to understand pathogenesis and to find the best candidate targets for therapeutic interventions.\n\n## Materials and methods\n\n### Abbreviations\n\n\u03b1-Syn, alpha-synuclein; AD, Alzheimer disease; BCA, bicinchoninic acid; BiFC, bimolecular fluorescence complementation; CA1, Cornu Ammonis 1; \u2018C\u2019 or CONTRA, contralateral; cDNA, complementary DNA; DsRed, Discosoma red fluorescent protein; DMEM, dulbecco\u2019s modified eagle medium; DOX, Doxycycline; EGFP, enhanced green fluorescent protein; FACS, fluorescent activated cell sorting; FBS, fetal bovine serum; FTD, Frontal Temporal Dementia; GFAP, Glial Fibrillary Acidic Protein; HEK, human embryonic kidney; HTS, high throughput sampler; \u2018I\u2019 or IPSI, ipsilateral; IP, immunoprecipitation; IRES, internal ribosomal entry site; LBD, Lewy Body Demetia; LV, Lentivirus; Mut, mutant; PD, Parkinson disease; PDD, Parkinson disease with dementia; PFA, paraformaldehyde; RNAi, ribonucleic acid interference; PSP, Progressive Supranuclear Palsy; RIPA, Radioimmunoprecipitation assay (buffer); RRE, Rev response element; siRNA, small interfering ribonucleic acid; shRNA, short hairpin ribonucleic acid; SNc, substantia nigra pars compacta; SUMO, Small Ubiquitin-Like Modifier; TH, tyrosine hydroxylase; TU, Transducing units; TRIM28, Tripartite Motif Containing 28; UBC9, Ubiquitin carrier protein 9; and VSVG, vesicular stomatitis virus-G.\n\n### Antibodies, shRNAs, plasmids and primers\n\nThe collection of antibodies (and their concentrations), shRNAs (and their sequences), Plasmids (and their construction) as well as qRT-PCR primers used are presented in Supplementary file 2.\n\n### Virus generation, concentration and infection\n\nLentiviral vectors (pHAGE, L302, LV-mCherry, pGIPz or pZip) and their respective packaging vectors (VSVG, Rev and RRE for L302; psPAX2 and pMD2G for LV-mCherry, pGIPz and pZip) were cotransfected into HEK293T cells in a 1:1:1:1 or 4:3:1 molar ratio, respectively. Media was changed 16 hr following transfection to low volume media (5 mL for a 10 cm dish). Media was collected at 48 hr following transfection, replaced with fresh media (5 mL) and collected again at 72 hr. Viral supernatant was cleared from cell debris via centrifugation (10 min at 4000 rpm) as well as filtration through a 0.45 \u00b5M polyethersulfone membrane (VWR). Cleared supernatants were concentrated using Lenti-X concentrator (Clontec) to 1/50\u20131/100 of the original volume. Viruses were titered using the Open Biosystems (Thermoscientific, Waltham, MA) method (counting either fluorescence-positive colonies or puromycin-resistant colonies).\n\n### Generation of stable cell lines\n\nDsRed-IRES-\u03b1-Syn:EGFP, DsRed-IRES-tau:EGFP, DsRed-IRES-EGFP, \u03b1-Syn:nYFP and tau:nYFP cell lines were generated as previously described\u00a0(Park et al., 2013). Briefly, each construct was cloned into a pHAGE vector, packaged into lentiviruses and infected into Daoy cells at low multiplicity of infection (0.3) to promote single copy integration. Cells were then selected by puromycin (1 \u00b5g/mL) and single clonal populations were obtained using fluorescence activated cell sorting (FACS) using an Aria II cell sorter (BD Biosciences) and sorting a single double-positive (DsRed and EGFP) cell per well. Clones were expanded and the ones with the best qualities for screening (i.e., low transgene expression, low variation, homogenous population) were expanded for screening purposes.\n\n### Flow cytometry analysis and cell-based RNAi screen\n\nFlow cytometry was carried out on a LSRII Fortessa coupled with an HTS module (BD Biosciences). Gates for analysis were set using single-positive and double-positive cells as well as negative cells. For the RNAi Screens, DsRed-IRES-\u03b1-Syn:GFP or DsRed-IRES-tau:EGFP cells were plated onto 96-well round bottom plates. For each RNAi plate, cells were plated in triplicate to assay for technical variance. The following day, individual siRNAs were transfected as previously reported\u00a0(Park et al., 2013) and incubated for 72 hr for downstream flow cytometry analysis. For each plate tested, Z-Scores were calculated by comparing each sample to the plate mean. A cut-off Z-Score of 1.5 was set in either direction for a first pass of hits. Next, individual t-tests were performed on hits by comparing them to the average of three scrambled siRNA sequences (with Low-, Medium-, and High GC content) to control for variability between triplicates. Hits meeting a p-value cut-off of\u00a0<0.05 were kept for downstream analysis. Top hits from each screen met the Z-score and p-value cut-off and had more than two siRNAs with a significant effect (regardless of the directionality of said effect)\u00a0(Birmingham et al., 2009). Validation of top hits was performed by ordering new siRNAs against most robust hits and revalidating in the same platform but this time including a DsRed-IRES-GFP cell line as a negative control (see Figure 1\u2014figure supplement 2 and Figure 1\u2014source data 1). Hits that significantly altered the DsRed-IRES-GFP cell line in the same direction were excluded. Further downstream analysis consisted of generating viral shRNAs against the top hits (using the human pGIPz collection, ThermoScientific) and testing for their effect on endogenous \u03b1-Syn and tau levels in HEK293T cells as shown in Figure 1C.\n\n### Cell culture, lysate preparation and western blot analysis\n\nDaoy, HeLa or HEK293T cells (obtained and certified from ATCC) were cultured in DMEM (Invitrogen) containing 10% FBS and antibiotics (Penicillin/Streptomycin). These lines are not misidentified as per ICLAC and are free from mycoplasma contamination. siRNAs were transfected using DharmaFECT (Dharmacon) and incubated for 72 hr prior to analysis by flow cytometry or western blot. shRNA viruses were generated as described below, infected into cells, and left for 9 days prior to analysis. Plasmids were transfected using Lipofectamine 2000 (Invitrogen) and left to express from 30 to 72 hr, depending on the downstream application. Unless otherwise mentioned, cells were lysed with RIPA buffer (50 mM Tris-HCl [pH 8.0], 150 mM NaCl, 1 % NP-40, 0.5% sodium deoxycholate, 0.1% SDS) supplemented with protease inhibitors (Roche) on ice for 20 min with vortexing. Lysates were cleared by centrifugation (20 min, 15,000 r.p.m, 4\u00b0C) followed by protein quantification via BCA assay (Pierce). Sample buffer with reducing agent was added to each lysate followed by a 10 min incubation at 95\u00b0C. Samples were spun down and run on a 4\u201312% Bis-Tris gel, transferred to a nitrocellulose membrane and blocked for one hour with 5% non-fat milk prior to primary antibody incubation.\n\n### Primary neuron culture\n\nPrimary cerebellar granule precursors were generated as previously described\u00a0(Aleyasin et al., 2007) with slight modifications. Briefly, cerebella from P5-P9 mice were dissected and dissociated with trypsin. Granule neurons were specifically isolated using a Percoll gradient following which single cell suspensions were plated onto 12-well plates previously coated with poly-L-lysine. Cells were left to recover for 24 hr prior to infection with 4 \u00b5L of concentrated virus (~1E7 Transducing units [TU] / \u00b5L). Cerebellar granule neurons were used as opposed to cortical and hippocampal cultures due to their ease in infectivity (>80% infected, data not shown) and their homogeneity thus allowing for clean biochemical experiments.\n\n### Stereotaxic injections\n\nStereotaxic injections were performed as previously described\u00a0(Lasagna-Reeves et al., 2015b). Briefly, 8\u201312 week-old mice were deeply anesthetized with a ketamine/xylazine cocktail; their heads were shaven and cleaned using aseptic solution. A midline incision was performed to reveal Bregma and a burr hole was drilled at the appropriate coordinates. Mice were injected with concentrated lentiviral solution (1E7 TU / \u00b5L; 1 \u00b5L unilateral, left hemisphere for SNc injections, 3 \u00b5L of 2.5E7 TU / \u00b5L bilaterally for hippocampal injections) at a flow rate of 0.125 \u00b5L/min. For the hippocampal injections, coordinates relative to Bregma were: 2.1 mm posterior, 1.3 mm lateral and 1.5 mm ventral. For SNc injections, coordinates relative to Bregma were 3.2 mm posterior, 1 mm lateral and 4.2 mm ventral. Incisions were glued together using VetBond (3\u00a0M). Mice were followed for proper recovery following injection and received daily fluids (0.5 mL subcutaneous saline) and analgesics (100 \u00b5L IP Ketoprofen) for 72 hr following the injection.\n\n### Immunofluorescence staining\n\nFree floating or slide-mounted sections were stained as before\u00a0(Lasagna-Reeves et al., 2015a; Rousseaux et al., 2012). Briefly, sections were permeabilized and blocked in PBS containing 0.3% Triton X-100 and 5% normal goat serum. Samples were incubated with primary antibody overnight in blocking buffer and were washed three times the next day prior to adding fluorescent-conjugated secondary antibody (either Alexa 488 or Alexa 568, 1:700 concentration) and incubating an additional hour at room temperature. Tissue was then washed three more times during and DAPI was added during one of the washes to permit nuclear visualization. Slides were coverslipped using fluoromount and imaged using a Zeiss LSM710 confocal microscope.\n\n### Mouse breeding and colony management\n\nmThy1-\u03b1-Syn (Line 61\u00a0[Rockenstein et al., 2002]) mice were a gift from Marie-Francoise Chesselet and were bred and maintained on a C57Bl/6J background. Note that in our hands, these mice exhibited stronger pathological phenotypes than those originally reported; this may be due to their background (data not shown). tau transgenic mice, overexpressing human tau with a P301S mutation (PS19\u00a0[Yoshiyama et al., 2007]), were obtained from the Jackson Laboratory were maintained on a C57Bl/6J background. Trim28+/- mice were generated by crossing Trim28flox/+(Cammas et al., 2000)\u00a0(B6.129S2[SJL]-Trim28tm1.1Ipc/J, Jackson Laboratory) mice with CMV-Cre mice\u00a0(Schwenk et al., 1995)\u00a0(B6.C-Tg[CMV-cre]1Cgn/J, Jackson Laboratory). Genotyping for Trim28+/- mice was performed using standard methods and the following primers to detect the recombined allele: 5\u2019-TTGTTTATTTGGGAATGGTTGTTC-3\u2019 and 5\u2019-GCGAGCACGAATCAAGGTC-3\u2019. Mapt-/- mice were a generous gift from J. Noebels (BCM) and Snca-/- mice were obtained from the Jackson Laboratory (B6;129\u00a0X\u00a01-Sncatm1Rosl/J). C57Bl/6J mice used for stereotaxic surgery in this study were aged 8\u201312 weeks. For all studies, mice of both sexes were used, unless specified. Up to five mice were housed per cage and kept on a 12 hr light; 12 hr dark cycle and were given water and standard rodent chow ad libitum. All procedures carried out in mice were approved by the Institutional Animal Care and Use Committee for Baylor College of Medicine and Affiliates.\n\n### Stability assay\n\nSH-SY5Y cell lines stably expressing \u03b1-Syn or tau were generated using the pINDUCER system\u00a0(Meerbrey et al., 2011). Briefly, myc-tagged \u03b1-Syn or tau was inserted into the pINDUCER20 (ORF-UN) cassette. Lentivirus was generated as above and na\u00efve SH-SY5Y cells were infected and selected for more than a week in geneticin-containing medium (G418, 150 \u00b5g/mL). Cells were then split into a 24 well plate and treated with doxycycline (DOX, 100 ng/mL) for 48 hr. DOX-containing media was replaced with regular media (containing no tetracycline) at indicated time points. All cells were harvested at the same time as described above for downstream western-blot testing. Half-lives were calculated from normalized densitometric values obtained by Image J and solving x when y\u00a0=\u00a050% for the following equation: y = f(e\u2212kx) as previously described\u00a0(Li, 2004). Alternatively, RNA was isolated from the indicated time points qPCR was performed using the primers presented in Supplementary file 2.\n\n### RNA extraction and quantitative real-time PCR (qPCR)\n\nHEK293T cells were infected with lentiviral constructs harboring shRNAs to TRIM28 or scrambled controls. Eight days following infection and puromycin selection, cells were spun down and RNA was extracted using the miRNeasy kit (Qiagen) according to the manufacturer\u2019s instructions. For the in vivo quantification of genes expression RNA was extracted from whole mouse brain tissue.\n\nRNA was quantified using the NanoDrop 1000 (Thermo Fisher) and quality assessed by gel electrophoresis. cDNA was synthesized using a\u00a0Quantitect Reverse Transcription kit (Qiagen) starting from 1 \u03bcg of RNA. Quantitative RT-polymerase chain reaction (qRT-PCR) experiments were performed using the CFX96 Touch Real-Time PCR Detection System (Bio-Rad Laboratories) with PerfeCTa SYBR Green FastMix, ROX (Quanta Biosciences). Real-time PCR results were analyzed using the comparative Ct method and normalized against the housekeeping gene Hs-GAPDH or mm-Hprt. The range of expression levels was determined by calculating the standard deviation of the \u0394Ct\u00a0(Pfaffl, 2001). Primers used to amplify specific exons of the target genes have been designed across introns to distinguish spliced cDNA from genomic contamination. Primers sequences are presented in Supplementary file 2.\n\n### Drosophila methods\n\nDrosophila lines were obtained from the\u00a0Bloomington Stock Center (Indiana) and VDRC (Vienna). Human tau transgenic flies were generated by cloning human wild-type 4 repeat tau under the control of a UAS promoter, and injected in w- embryos following standard transgenesis procedures. For eye assays, expression of wild-type 4 repeat human tau was driven to the eye using GMR-Gal4 and fruit flies, cultured at 28\u00b0C, were processed for scanning electron microscopy analysis as previously described\u00a0(Park et al., 2013). tau levels were analyzed in Drosophila expressing tau in the adult eye under the control of Rh1-Gal4 at 28.5\u00b0C. Animals were aged for ten days, heads were collected, homogenized in LDS Buffer (Invitrogen), 10% \u03b2-mercaptoethanol and loaded in 4\u201312% Bis-Tris gel, transferred to a nitrocellulose membrane, blocked for one hour with 5% non-fat milk and incubated overnight with primary antibody. For motor performance analysis, expression of tau was driven specifically in neurons with elav-Gal4, and crosses were performed at 26\u00b0C. Motor performance was assessed in a climbing assay as previously described\u00a0(Park et al., 2013). Briefly, % motor performance was calculated as the percentage of flies that managed to climb up 9 cm in 15 s (averaged over 10 trials per time point).\n\nFor a list of all Drosophila strains used in this study, please see Supplementary file 2, tab 'Fly lines'. Trim28LOF-1 corresponds to the allele P{EPg}bonHP32434, which is a mobile activating P element inserted in the 5\u2019UTR of bonus (the Drosophila homologue of Trim28). These P elements can cause loss of function when inserted in the orientation of the negative strand of the inserted gene. Trim28LOF-2 carries a loss of function allele [21B], previously characterized as missing all but 12 bp of exon 1 and the first 324 bp of intron 1. We confirmed that Trim28LOF-1 is a loss of function allele of bonus because it failed to complement Trim28LOF-2, which has already been described as a bonus LOF allele\u00a0(Beckstead et al., 2001).\n\n### Quantification of dopaminergic cell survival\n\nEight weeks after virus injection, mice were deeply anesthetized and transcardially perfused with 0.9% saline followed by 4% PFA. Brains were removed, placed in 4% PFA overnight for post-fixation and dehydrated using 10% Sucrose in PBS (twice a day for 3 days). Brains were frozen in O.C.T. compound (Tissue-Tek) and 30 \u00b5m free-floating sections were cut from the striatum and Substantia Nigra pars compacta (SNc). Tyrosine hydroxylase and Nissl staining in both the SNc and Striatum was performed as previously described\u00a0(Rousseaux et al., 2012). Unbiased stereology using the optical fractionation method was used to estimate total dopaminergic cell counts in the SNc of each treatment group (StereoInvestigator 11, MBF Bioscience). Samples missing multiple sections or with staining artifacts were excluded from stereological analysis prior to unblinding. For striatal TH optical density quantification, images were captured using a 10x objective (both Ipsi- and Contralateral sides). Pictures were processes using an in house automated Adobe Photoshop CS5 workflow (Automator, Mac OSX) to convert the image to gray scale, invert (so that the intensity of staining is a positive value) and saved as a new file. Five regions were sampled per picture in the TH-positive striatum and these were normalized to negative stained background (corpus callosum). Normalized values across three independent sections were used to compare the\u00a0relative TH optic density between groups.\n\n### Pathology assessment in mouse models of synucleinopathy and tauopathy\n\nAn experimenter blind to the treatment or mouse genotype injected 6\u20138 week old \u03b1-Syn and tau transgenic mice (mThy1-\u03b1-Syn and P301S tau) and their respective wild-type littermate controls bilaterally with virus harboring TRIM28-mCherry or mCherry as a control into the CA1 region of the hippocampus (Dhungel et al., 2015). One month following injection, mice were euthanized by isofluorane inhalation followed by cervical dislocation and decapitation. Brains were dissected, split down the midline and either post-fixed for 48 hr in 4% PFA or collected for downstream biochemical analysis. Post-fixed brains were dehydrated in 10% sucrose (as above) and sectioned directly on slides at a thickness of 20 \u00b5m. Alternatively, sections were paraffin embedded and sectioned at 5 \u00b5m for IHC analysis. Slides were then stained for pS129 \u03b1-Syn, pS396 tau and GFAP and visualization was performed using the ABC detection method (Vectastain, Vector Labs) as previously described (Lasagna-Reeves et al., 2015b). Nissl staining was performed as described previously (Rousseaux et al., 2012). Quantification of each pathological parameter was performed at an area surrounding the injection site (though not directly beside the needle tract to avoid staining artifacts) on three independent sections per animal with at least three animals for each tested condition. Counts were performed in a defined area (i.e. 1000\u00a0\u00d7\u00a01000 pixels) using ImageJ 1.47v.\n\n### Immunoprecipitation\n\nImmunoprecipitation of protein complexes was performed as previously described (Burr\u00e9 et al., 2010). Briefly, cell lysis was performed on ice for 20 min with brief vortexing using lysis buffer (1% Triton X-100, 150 mM NaCl, 10 mM Tris pH 8.0, 10% glycerol, 20 mM N-ethyl maleimide and protease inhibitors [Roche]). Cell debris were removed by centrifugation (20 min at 15,000 r.p.m, 4\u00b0C) and pre-cleared with un-conjugated beads. In parallel, 2 \u00b5g of antibody was conjugated to Dynabeads for one hour at 4\u00b0C with rocking. Lysate was then added to the conjugated beads for 2 hr. Beads were then washed 5\u00a0\u00d7\u00a0500 \u00b5L of lysis buffer before being eluted in Laemmli buffer at 85\u00b0C for ten minutes.\n\n### Bimolecular fluorescence complementation assay\n\nBimolecular fluorescence complementation (Split-YFP assay) was performed as previously described with some modifications\u00a0(Lee et al., 2011). N-terminal or C-terminally tagged \u03b1-Syn and tau pBABE retroviral constructs were generated containing either the N-terminal or C-terminal portion of YFP. Viruses were generated from these constructs and stable cell lines (using HeLa cells, infected with constructs and selected with G418 for over a week) were created for both \u03b1-Syn and tau using the N-terminal portion of YFP, termed \u2018Bait\u2019. Once generated, these cell lines (5\u00a0\u00d7\u00a0104 cells) were transfected with 250 ng of \u2018Prey\u2019 plasmid (tau, MSK1 and TRIM28 containing the C-terminal portion of YFP). Cells were monitored for fluorescence for 48\u201372 hr (fluorescence begins around 24\u201330 hr) and cells were either collected for flow cytometry analysis (at 48 hr, using a BD LSR Fortessa with HTS [high throughput sampler] module) or fixed for fluorescence microscopy. Cells visualized for fluorescence microscopy were permeabilized and stained for DAPI to visualize nuclei and epifluorescence from the complementation was monitored.\n\n### Quantification of nuclear translocation (IF)\n\nThe relative amount of nuclear versus cytoplasmic stained protein (\u03b1-Syn or tau) was performed in primary granule neurons previously infected (for 7 days) with lentiviral constructs overexpressing mCherry, TRIM28:mCherry or TRIM28-Mut:mCherry on coverslips. The nucleus was outlined using DAPI and the cytoplasmic outline was determined by DIC (not shown). For each biological replicate, at least 15 cells were sampled and the nuclear fraction of each cell was calculated as the intensity of the nuclear localized fluorophore divided by the intensity of the fluorophore spanning the cytoplasm and the nucleus (total intensity) and multiplied by 100. Three independent coverslips per condition were tested and statistics were based on these three biological replicates. Alternatively, postmortem medial frontal gyrus tissue was stained for \u03b1-Syn or tau together with TRIM28 and nuclei were visualized using DAPI. Positive nuclear co-localization was set as a threshold of staining co-localizing with DAPI. At least 150 cells over the span of 5 fields (at 40x magnification) were counted per human case.\n\n### Subcellular fractionation assay\n\nNuclear/Cytoplasmic fractionation was carried out in freshly spun down cells 7 days following infection (or alternatively in frozen pre-weighed post-mortem samples). Briefly, the NE-PER Nuclear and Cytoplasmic Extraction Kit (Thermo Scientific, Product #78835) was used to isolate nuclear and cytoplasmic fractions of primary neurons or tissue. Of note, the protocol of the NE-PER kit was modified to incorporate an additional PBS-wash of the nuclear pellet following the cytosolic extraction as we found it increased purity of the preparation. Probing with antibodies specific to each compartment (i.e. Lamin A and histone H3 for the nuclear fraction and Vinculin and GAPDH for the cytoplasmic fraction) was used as a measure of extraction purity and for normalization.\n\n### Post-mortem tissue from human cases\n\nTissue from patients with PD, AD, PSP and control subjects were obtained from the Neuropathology Core at the Johns Hopkins Udall Centre. Tissue was obtained from consenting donors and use conformed to JHMI Institutional Review Board approved protocols. Neuropathological assessment conformed to the\u00a0National Institute on Aging-Reagan consensus criteria and similar post-mortem intervals were used between samples. For this study, tissues from the frontal cortex (for PD, AD and their respective controls) or pons (for PSP and their respective controls) was utilized. Please see Supplementary file 3\u00a0for full demographics and pathological analysis. Frozen tissue was either fractionated as per the protocol above or was alternatively processed for biochemical fractionation. In the latter case, each sample was homogenized in RIPA buffer containing protease inhibitors using a dilution of brain: RIPA of 1:10 (w/v). Samples were then centrifuged at 10,000 rpm for 20 min at 4\u00b0C. The supernatants were portioned into aliquots, snap-frozen, and stored at \u201380\u00b0C. The pellets were then resuspended in 88% formic acid to solubilize aggregate/insoluble protein for one hour at room temperature. Samples were then diluted to 22% in PBS and lyophilized overnight using a Savant automatic environmental speedvac system (Aes1010). Pellets were then solubilized in the same volume as the original RIPA volume and subsequently sonicated at output 2 for 30 cycles on a Branson sonicator. Independent blocks of frozen tissue were cut from PD, AD and control subjects for immunofluorescence analysis (10 \u00b5m sections).\n\n### Statistical analyses\n\nExperimental analysis and data collection were performed in a blinded fashion whenever possible. The\u00a0sample size was chosen based on previous studies using the models described in the study in order to ensure adequate statistical power. Pre-determined exclusion criteria were used in the nuclear/cytoplasmic biochemical fractionation by determining purity of the prep. If the fractionation was not adequate (as per Lamin A, Histone H3, GAPDH and Vinculin levels), sample was re-fractionated or omitted from the study. Tissue sections with high background staining/staining artifacts were removed and/or re-stained for the analysis. Randomization together with blinding was used for histological quantification as well as human case studies. Randomization was done using Microsoft Excel and blinding was performed by assigning new non-descript codes to cases. Unblinding was only done following analysis. Outliers for histology were removed if there was a\u00a0lack of detectable viral expression in the animal and if the sample met the Grubb\u2019s outlier test p-value. p values were determined using the appropriate statistical method via GraphPad Prism, as described throughout the manuscript. For simple comparisons, two-tailed Student\u2019s t-test was used whereas for multiple comparisons, ANOVA followed by the appropriate post hoc analysis were utilized. The summary of all statistical analysis is presented in Supplementary file 1. All data presented are of mean + (or \u00b1) s.e.m. *, ** and *** denote p<0.05, p<0.01 and p<0.001, respectively. ns denotes p>0.05.\n",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "b69df5df-8d75-4df6-8e67-f2f0212ae015",
+      "submission_id": "03bc2926-cc8f-4b4c-92b7-202ddf21e51f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Susan L Ackerman, Howard Hughes Medical Institute, University of California, San Diego , United States\n\n## Review text\n\nDOI: [10.7554/eLife.19809.027](https://doi.org/10.7554/eLife.19809.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"TRIM28 regulates the nuclear accumulation and toxicity of both \u03b1-synuclein and tau\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn a shRNA screen, Rousseaux et al. identify TRIM28 as a regulator of \u03b1-synuclein and tau, two proteins involved in neurodegeneration. The authors' data suggests that deceasing levels of TRIM28 decreases levels of these two proteins and their toxicity, and conversely increasing levels has the opposite consequences. The authors go on to further investigate the role of TRIM28 on the intracellular localization of synuclein and tau, potential physical interactions, and potential effects of TRIM28 on the half-lives of these proteins. Overall the manuscript presents interesting and novel data.\n\nEssential revisions:\n\n1) In several places the addition of experimental details would greatly enhance the readability of the manuscript. Several places where details would help are listed in individual reviews.\n\n2) The authors show data that TRIM28 acts on synuclein and tau stabilization. However, there is much literature on other functions of TRIM28 in gene regulation and epigenetic control. Data from experiments described in this manuscript could be consistent with an indirect function of TRIM28 on synuclein and tau. This should be acknowledged and commented on.\n\n3) The half-life experiment examining TRIM28's effect on synuclein and tau should examine transcript levels of these genes in this experiment (and in experiments utilizing primary neurons or transgenic mouse brains). Since vinculin is used as a control, it's half-life should also be described. Also how do the author's rule out that translational changes (that do not have to do with protein half-life) are not affected by TRIM28.\n\n4) In terms of determining whether the ligase activity of TRIM28 is necessary for nuclear localization of tau and synuclein the authors examine mutant TRIM28. These results need to be interpreted in light of whether the mutant protein still interacts with tau and synuclein.\n\n5) Finally, the authors suggest that changes in TRIM28 levels and localization may be a \"driving force\" in nuclear accumulation of synuclein and tau. However, the reviewers suggest that this data does not suggest causality. Additional important questions regarding this experiments (see Reviewer 2 comments) should be addressed and the conclusions from TRIM28 localization changes in diseased human brain need to be reinterpreted in light of reviewer's comments.\n\nReviewer #1:\n\nIn a shRNA screen Rousseaux et al. found that TRIM28 regulate the localization of \u03b1-synuclein and tau. Further, the authors demonstrated that TRIM28 regulates the toxicity of these proteins in both the fly eye and mouse brain. Although the manuscript fails to elucidate mechanism, given that \u03b1-synuclein and tau are associated with neurodegenerative disorders, these findings are of interest to the neurodegeneration field. However additional data would strengthen the authors' findings. For example, the authors have obtained a conditional allele of Trim 28, what is the effect of complete deletion on the pathology associated with \u03b1-synuclein or tau expression. Does deletion of Trim28 have additional actions on the transcriptional profile that could secondarily affect stability of \u03b1-synuclein and tau?\n\nUsing a Dox inducible cell line of \u03b1-synuclein and tau, the authors suggest that Trim 28 changes the stability of these proteins. Do the transcript levels change with Trim28 changes? What is the effect of Trim28 on endogenous levels of \u03b1-synuclein and tau. Is there a change in localization of these proteins in these cells which could explain the difference in protein decay?\n\nOther points:\n\nOverall the manuscript would benefit with more description of experiments within the text (this reviewer had to look in legends and in methods often). Examples are given below.\n\nFigure 1. What primary neurons were used? Do the dots in Figure 1C (and other bar graphs) represent individual experiments?\n\nFigure 2. In the right 2 panels is a tau/GFP transgene expressed (versus just tau)? The reference for the tau-transgenic Drosophila should be included in the text of the results. In panel B, were an n=15 used for each experiment and were there two experiments performed? What tissue is used in panel C? How much of a \"partial\" loss of function are the two Trim28 alleles i.e., how much wild type Trim28 remains?\n\nFigure 3. A sentence explaining the \u03b1-Syn overexpressing mice and an explanation on why serine 129-phosphorylated \u03b1-Syn and hippocampus (instead of SN) was would be helpful for the reader.\n\nFigure 4. CA1 thickness was measured and shown to decrease in when Trim28 was overexpressed in \u03b1-Syn and tau transgenic mice. Does the neuron number change? Are dying neurons observed?\n\nFigure 5. An explanation of the pINDUCER20 cell lines would be helpful for the reader. What cells were these experiments performed in?\n\nFigure 6. The authors perform IP and BiFC to ask whether Trim28 directly binds \u03b1-Syn and tau. However, these approaches do not test direct interactions. Do bacterial recombinant proteins interact? Does the C65A/C68A mutant Trim28 still form a complex with \u03b1-Syn and tau?\n\nReviewer #2:\n\nThe current study by Rousseaux et al. identifies a novel regulator of both \u03b1-Synuclein and Tau protein levels, TRIM28. Using a number of in vitro and in vivo models the authors convincingly show that knock-down of TRIM28 is sufficient to reduce \u03b1-Synuclein and Tau levels and their associated neurotoxicity. Conversely, overexpression of TRIM28 increases \u03b1-Synuclein and Tau half-lives, and accordingly further exacerbates their neurotoxicity in vivo. Overall the authors are commended for very nicely executed, elegant experiments particularly in vitro and in the animal models and this work is of sufficient novelty and interest for a broad audience in the neurodegenerative disease field.\n\nThat being said, we have reservations regarding the interpretation of the patient data presented in Figures 7, Figure 7\u2014figure supplements 1 and 2, where the authors conclude that aberrant TRIM28 underlie disease pathologies. Overall, looking at the biochemical data we do not see a clear increase in overall TRIM28 levels under disease conditions. The authors indeed find a statistically significant shift of TRIM28 to the insoluble form in these conditions, but we wonder how TRIM28 could participate in actively bringing \u03b1-Synuclein/Tau into the nucleus if it's bound up in aggregates, presumable inactive. By staining (Figure 7), the nuclear localization of TRIM28 in both control and disease patient brain also makes us wonder how TRIM28 would access these cytosolic proteins to bring them into the nucleus. Moreover, when looking at individual human samples in the biochemistry provided in Figure 7\u2014figure supplement 1, there is no clear correlation between TRIM28 levels and \u03b1-Synuclein/Tau levels; For example, in Figure 7\u2014figure supplement 1, Panel C, right, the up/down levels of TRIM28 in the insoluble fraction does not correlate with the increase/decrease of phospho-Tau levels of the same patient. Perhaps in an earlier disease stage the data would make more sense. Overall it seems the human data is not as black-and-white as the more conclusive animal model data presented in Figures 1\u20136 and the manuscript should be modified to make the conclusions more modest.\n\nReviewer #3:\n\nIn this manuscript the authors report the results of a focused genetic screen looking for genes that co-regulate levels of tau and synuclein, proteins that contribute to multiple neurodegenerative diseases, and the identification of TRIM28. Decreasing levels of TRIM28 decreases tau and synuclein levels and toxicity, while overexpression has the opposite effect. The focus is on possible direct physical interactions that might mediate localization of tau and synuclein to the nucleus. Overall the findings are interesting and novel.\n\n1) The authors tested changes in levels of other degeneration-causing proteins and did not see any change. They conclude that TRIM28 is likely to be a key postranslational regulator of tau and synuclein. However, the list of proteins tested is small. There is a rather large literature on TRIM28 and its roles in multiple cellular processes. TRIM28 has also been shown to be a global regulator of many aspects of gene regulation and epigenitic control. I would encourage the authors to consider and comment on these activities and the possibility that effects on tau and synuclein might have an indirect component.\n\n2) The authors may want to define the term \"druggable\", as the definition may be different depending on the investigator.\n\n3) For the fly experiments involving tau overexpression in the eye, it would be useful to know that there are no effects on other GMR promoter-dependent phenotypes. This would act as a stand in for changes in transcriptional regulation. The climbing assay has similar issues in that a specific promoter is being used and TRIM28 is known to have effects on transcriptional regulation.\n\n4) Next, they moved to mice overexpressing synuclein in dopaminergic neurons. This experiment has a nice control in that there is a GFP included as an IRES element. This figure (3) shows that while GFP levels remain constant, synuclein levels decrease. Importantly, the number of TH positive neurons decreases in the presence of synuclein, and this is reversed following RNAi of TRIM28. These observations also are consistent with a direct mode of action, but probably do not exclude indirect modes of action through intermediate proteins. Again, I think the authors should acknowledge this possibility.\n\n5) Finally, the authors used a TRIM28 heterozygote to look for dose-dependent effects on phosphorylated synuclein. Can they comment on why this assay was used as opposed to that in the above panels? Is this simply more sensitive? Does it reflect a particular pathology? If so, can they provide a reference for this biology?\n\n6) The authors did a half-life experiment suggesting that TRIM28 expression stabilizes synuclein and tau. It would be important to show that other proteins are not stabilized, and to know what Vinculin's half-life is in order for it to be a useful control. For example, if its half-life is very long, its levels would not change much even if it was being affected. Can the authors rule out effects on translation from existing transcripts? I just point this out because if translation is not inhibited (there is no evidence that cyclohexamide was used to block translation in the half life experiments), there could be effects on protein abundance over time that are translational, and would otherwise be scored as alterations in protein half-life.\n\n7) The authors asked if TRIM28's ligase activity is required for nuclear localization of tau and synuclein. They did this by expressing a mutant version of TRIM28 that has two cysteine mutations in the ring domain. As these cysteines play a structural role in the ring domain, these mutations could disrupt the overall folding/conformation of this domain. It is important to determine if mutant versions of TRIM28 still interacts with tau and synuclein. This would be an important experiment to distinguish between ligase-dependent mechanisms of regulation versus physical binding and recruitment to the nuclear compartment. If binding is lost it would be difficult to conclude more than that interactions are important.\n\n8) The authors saw increased levels of TRIM28 in an insoluble fraction in human disease brains and that tau and synuclein were enriched in nuclei. From this they suggested that \"The aberrant change in TRIM28 levels and distribution could therefore be a driving force in the nuclear accumulation of \u03b1-Syn and tau. \" To test this they look for colocalization of TRIM28 in nuclei of disease brains and see significantly more cells that have colocalization of synuclein, tau and TRIM28 than in controls. This result is interesting. But could it just be that TRIM28 becomes trapped in insoluble nuclear complexes with synuclein and tau in disease brains? I am not sure I see a link that is necessarily causal. Can the authors discuss why an increase in number of nuclei with TRIM28, synuclein and tau should be taken to indicate that TRIM28 is driving the process rather than being carried along for the ride as an interacting protein?\n",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9285b886-2f55-4b12-97f0-89d16c65d169",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C1",
+      "claim": "Elevated levels of alpha-synuclein (\u03b1-Syn) appear to drive neurotoxicity in Parkinson's disease (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated levels of alpha-synuclein (\u03b1-Syn) appear to drive neurotoxicity in Parkinson's disease (PD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that represents established understanding in the field, supported by the broader scientific literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "e02137e2-52c6-4382-9519-cab1dfc1466d",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C2",
+      "claim": "Neuronal accumulation of tau is a hallmark of Alzheimer's disease (AD).",
+      "claim_type": "EXPLICIT",
+      "source": "neuronal accumulation of tau is a hallmark of Alzheimer's disease (AD)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in the field of neurodegenerative disease research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "090277d9-9ece-4101-837f-5af04dcac281",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C3",
+      "claim": "Increased levels of \u03b1-Syn and tau cause neurodegeneration in humans and model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "their increased levels cause neurodegeneration in humans and model organisms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by references to established scientific knowledge about proteinopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "d773898b-5c09-45df-a552-70276e0e6150",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C4",
+      "claim": "\u03b1-Syn and tau overlap pathologically despite clinical differences between AD and PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the clinical differences between AD and PD, several lines of evidence suggest that \u03b1-Syn and tau overlap pathologically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by inference from multiple lines of evidence mentioned in the introduction.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "94f30b74-17aa-4880-90f4-6ec08ce48963",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C5",
+      "claim": "TRIM28 regulates \u03b1-Syn and tau levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TRIM28 regulates \u03b1-Syn and tau levels",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the screens and validation experiments shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "68195018-7559-43eb-985f-d1693a4c65dd",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C6",
+      "claim": "Reduction of TRIM28 rescues toxicity in animal models of tau- and \u03b1-Syn-mediated degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "its reduction rescues toxicity in animal models of tau- and \u03b1-Syn-mediated degeneration",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Drosophila and mouse models shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "79dc48c9-ea88-4e46-bd8f-f0e4f0fc3a5b",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C7",
+      "claim": "TRIM28 stabilizes and promotes the nuclear accumulation and toxicity of both \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM28 stabilizes and promotes the nuclear accumulation and toxicity of both proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by protein stability assays (Figure 5), nuclear localization studies (Figure 6), and toxicity experiments (Figures 2-4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "7c61dafd-8e16-4775-97fb-2973e974cba4",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C8",
+      "claim": "\u03b1-Syn mediates neurotoxicity in Parkinson's Disease Dementia (PDD) and Lewy Body Dementia (LBD) where it accumulates in Lewy bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "alpha-synuclein (\u03b1-Syn, SNCA) is now thought to mediate neurotoxicity not only in Parkinson's disease (PD), but also in Parkinson's Disease Dementia (PDD) and Lewy Body Dementia (LBD) where it accumulates in Lewy bodies (Spillantini et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Spillantini et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "c9aa7cb8-e6e4-4d83-94dd-647c7124d4eb",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C9",
+      "claim": "Tau accumulates in neurons affected by Alzheimer's disease (AD), PD, and PDD.",
+      "claim_type": "EXPLICIT",
+      "source": "the microtubule associated protein tau (MAPT) accumulates not only in neurons affected by Alzheimer's disease (AD), but in PD and PDD",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge in the field of neurodegenerative diseases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "c83268aa-7fc5-4295-80cd-2073df8c2d6a",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C10",
+      "claim": "Mutations that increase the stability of tau result in frontotemporal dementia with parkinsonism (FTDP-17 or FTD).",
+      "claim_type": "EXPLICIT",
+      "source": "while mutations that increase the stability of tau result in frontotemporal dementia with parkinsonism (FTDP-17 (or FTD) [Spillantini and Goedert, 2013])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Spillantini and Goedert, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "62141282-5755-487f-a66c-41040040549d",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C11",
+      "claim": "Duplication or triplication of the SNCA locus is sufficient to result in forms of PD whose onset and severity correlate with gene dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "duplication or triplication of the SNCA locus is sufficient to result in forms of PD whose onset and severity correlate with gene dosage (Chartier-Harlin et al., 2004; Ibanez et al., 2004; Singleton, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies: Chartier-Harlin et al., 2004; Ibanez et al., 2004; Singleton, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "4eca0e8f-22cc-4f68-b684-28ccbdfb8646",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C12",
+      "claim": "Overexpression of wild-type forms of either SNCA or MAPT elicit neurodegeneration in model organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "studies that show that overexpression of wild-type forms of either SNCA or MAPT elicit neurodegeneration in model organisms, whereas suppressing their levels appears to be neuroprotective (Dauer et al., 2002; Ishihara et al., 1999; Jackson et al., 2002; Rapoport et al., 2002; Rockenstein et al., 2002; Wittmann, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Dauer et al., 2002; Ishihara et al., 1999; Jackson et al., 2002; Rapoport et al., 2002; Rockenstein et al., 2002; Wittmann, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "de57d4f1-8112-452c-9352-25a439f62633",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C13",
+      "claim": "Suppressing levels of SNCA or MAPT appears to be neuroprotective.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas suppressing their levels appears to be neuroprotective (Dauer et al., 2002; Ishihara et al., 1999; Jackson et al., 2002; Rapoport et al., 2002; Rockenstein et al., 2002; Wittmann, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Dauer et al., 2002; Ishihara et al., 1999; Jackson et al., 2002; Rapoport et al., 2002; Rockenstein et al., 2002; Wittmann, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "fdad421a-6db9-41e6-ad59-4f533fe922d4",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C14",
+      "claim": "Elevated levels of multiple proteins (\u03b1-Syn and tau) are more problematic than elevated levels of a single protein.",
+      "claim_type": "EXPLICIT",
+      "source": "one would expect elevated levels of multiple proteins to be even more problematic, and this proves to be the case (Moussaud et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Moussaud et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2b92ee41-ddca-492d-bc48-248251bad158",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C15",
+      "claim": "Pathogenic proteins involved in different proteinopathies often interact with each other and cause cellular toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogenic proteins involved in different proteionopathies often interact with each other and cause cellular toxicity, either due to their additive effects on downstream activities or further compromise of protein homeostasis (Clinton et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Clinton et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "393ae681-b91d-4fe7-9ea1-93e7785bc787",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C16",
+      "claim": "Abnormally aggregated \u03b1-Syn and tau are often found together in postmortem cases of PD and LBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Abnormally aggregated \u03b1-Syn and tau are often found together in postmortem cases of PD and LBD (Arima et al., 1999; Colom-Cadena et al., 2013; Iseki et al., 2002; Ishizawa et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to four studies: Arima et al., 1999; Colom-Cadena et al., 2013; Iseki et al., 2002; Ishizawa et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "381df8b4-6a67-4a0f-a554-8f94da84808c",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C17",
+      "claim": "\u03b1-Syn and tau synergize in promoting toxicity in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "genetic interaction studies in Drosophila demonstrate that \u03b1-Syn and tau synergize in promoting toxicity (Roy and Jackson, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Roy and Jackson, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2491a964-9043-4595-b20b-d672fe60647b",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C18",
+      "claim": "\u03b1-Syn may act as an amyloidogenic 'seed' for the accumulation of tau, and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical evidence even suggests that \u03b1-Syn may act as an amyloidogenic 'seed' for the accumulation of tau, and vice versa (Guo et al., 2013; Lasagna-Reeves et al., 2010; Sengupta et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to three studies: Guo et al., 2013; Lasagna-Reeves et al., 2010; Sengupta et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "bc1dcca2-4e07-48e0-91ea-bab4158b743e",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C19",
+      "claim": "Several genome-wide association studies have reported genetic interaction between tau and alpha-synuclein in PD pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "several genome-wide association studies have reported genetic interaction between tau and alpha-synuclein in PD pathogenesis (Sim\u00f3n-S\u00e1nchez et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sim\u00f3n-S\u00e1nchez et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "f47c1d44-23bf-4015-9fae-bb7b0a24c1e3",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C20",
+      "claim": "The mechanisms governing the dual accumulation of \u03b1-Syn and tau remain elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms governing the dual accumulation of \u03b1-Syn and tau remain elusive",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2dffe89b-bfc9-4d7f-8ca7-166fa39068b9",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C21",
+      "claim": "Decreasing levels of either or both \u03b1-Syn and tau could prove an effective therapeutic strategy for proteinopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "it seems plausible that decreasing levels of either or both of these proteins could prove an effective therapeutic strategy for this family of diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the evidence presented about protein accumulation and toxicity.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "30a4f800-d597-48ea-9feb-8d909323aef6",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C22",
+      "claim": "The screening strategy employed was similar to one recently used to identify key modulators of ATXN1 stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We employed a screening strategy similar to one recently used to identify key modulators of ATXN1 stability (Park et al., 2013; Westbrook et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Park et al., 2013 and Westbrook et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "4944acfc-135f-4579-8e3e-b2af41b39f97",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C23",
+      "claim": "The screen interrogated 2607 siRNAs targeting 869 potentially druggable genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We ran parallel screens interrogating 2607 siRNAs targeting 869 potentially druggable \u2013 i.e. potentially can be targeted pharmacologically \u2013 genes to identify genes that modify the levels of both \u03b1-Syn and tau (Figure 1\u2014figure supplement 1A\u2013C and Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design described in the text and shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "7f4edc57-5a50-4b1c-a642-b7584df58b87",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C24",
+      "claim": "TRIM28 was identified as the most robust common modulator of \u03b1-Syn and tau levels.",
+      "claim_type": "EXPLICIT",
+      "source": "we uncovered Tripartite motif-containing 28 (TRIM28) as the most robust common modulator (Figure 1B; Figure 1\u2014figure supplement 2 and Figure 1\u2014source data 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the screening data shown in Figure 1B and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "aa7d732a-0e0e-4681-87f5-ce897e1a92ce",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C25",
+      "claim": "Three independent siRNAs against TRIM28 confirmed its effect on \u03b1-Syn and tau stability.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed this effect of TRIM28 knock-down on \u03b1-Syn and tau stability using three independent siRNAs on our \u03b1-Syn and tau reporter cell lines along with a negative control cell line (DsRed-IRES-EGFP) to ensure that TRIM28 was not affecting the stability of EGFP (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "6ca3866d-3ca0-4fa5-9faa-acc5f55c6fb7",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C26",
+      "claim": "Partial reduction of TRIM28 led to a decrease of both \u03b1-Syn and tau in human cells, mouse primary cerebellar neurons, and mouse hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, partial reduction of TRIM28 led to a decrease of both \u03b1-Syn and tau",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "aeb5e107-de7a-437b-b68c-5871fb97a59e",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C27",
+      "claim": "Virally reintroducing a human shRNA-resistant TRIM28 cDNA reversed the effect of TRIM28 knockdown on \u03b1-Syn and tau levels.",
+      "claim_type": "EXPLICIT",
+      "source": "virally reintroducing a human shRNA-resistant TRIM28 cDNA reversed this effect (Figure 1\u2014figure supplement 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2b4e57e1-a71c-44d7-a3e0-dac69a02fd15",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C28",
+      "claim": "Deleting one allele of Trim28 in mice led to a modest but significant decrease of \u03b1-Syn and tau levels in mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that deleting one allele of Trim28 in mice led to a modest but significant decrease of \u03b1-Syn and tau levels in mouse brain (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "aec24952-990d-4f76-bbaf-a67fa3d96f2f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C29",
+      "claim": "TRIM28 downregulation resulted in little to no changes in SNCA nor MAPT transcript levels.",
+      "claim_type": "EXPLICIT",
+      "source": "we observed little to no changes in SNCA nor MAPT transcript levels under conditions of TRIM28 downregulation (Figure 1\u2014figure supplement 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "5c2e8005-6ac0-4575-a909-18ba62a49145",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C30",
+      "claim": "Reduction of TRIM28 did not affect other neurodegeneration-causing proteins tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor did reduction of TRIM28 affect other neurodegeneration-causing proteins we tested (Figure 1\u2014figure supplement 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "5bafde22-684a-4eb9-95bb-f38f99d147a2",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C31",
+      "claim": "TRIM28 is a key post-translational regulator of the steady state levels of \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM28 thus appears to be a key post-translational regulator of the steady state levels of \u03b1-Syn and tau",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing TRIM28 affects protein but not RNA levels.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "1215fe4d-68a4-49bd-85ca-82b11b5a510f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C32",
+      "claim": "Knockdown of the Drosophila TRIM28 homolog (bonus) significantly reduced tau levels and mitigated eye degeneration in tau-expressing flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of the Drosophila TRIM28 homolog (bonus) significantly reduced tau levels and mitigated eye degeneration (Figure 2A; Figure 2\u2014figure supplement 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A and Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "09bf4f85-4dcb-4bce-b816-c2a5101e0151",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C33",
+      "claim": "Two independent partial loss-of-function alleles of TRIM28 improved motor deficits in tau-expressing Drosophila without reducing transgene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "two independent partial loss-of-function alleles of TRIM28 improved this behavioral phenotype without reducing the transgene expression (Figure 2B; Figure 2\u2014figure supplement 1; Figure 2\u2014figure supplement 2 and Video 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "aa3800a7-ec93-47a0-aaef-0a3366505486",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C34",
+      "claim": "Reduction of TRIM28 effectively decreased tau levels in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "we tested the effect of TRIM28 loss of function on transgenic tau levels and found indeed that reduction of TRIM28 could effectively decrease tau levels in this heterologous system (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "83df865e-c457-4365-a069-3913695ec8ae",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C35",
+      "claim": "Mice infected with viruses overexpressing \u03b1-Syn and a control shRNA suffered a 50% reduction in tyrosine hydroxylase (TH)-positive dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice infected with viruses overexpressing \u03b1-Syn and a control shRNA suffered a 50% reduction in tyrosine hydroxylase (TH)-positive dopaminergic neurons (Figure 3A,B-top panels and Figure 3\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A, B and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "44790252-a075-4ac6-855e-17078c399fcc",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C36",
+      "claim": "Mice that received the shTrim28 virus together with \u03b1-Syn overexpression maintained their dopaminergic cells in the SNc and the corresponding fibers in the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "mice that received the shTrim28 virus together with \u03b1-Syn overexpression maintained their dopaminergic cells in the SNc and the corresponding fibers in the striatum (Figure 3A,B-bottom panels)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "762dc170-f7bd-4694-8497-9ecaaeade990",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C37",
+      "claim": "A 50% reduction in Trim28 significantly reduced pathological, phosphorylated \u03b1-Syn accumulation in the hippocampus of \u03b1-Syn-overexpressing mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a 50% reduction in Trim28 significantly reduced pathological, phosphorylated \u03b1-Syn accumulation in the hippocampus where it is highly expressed (Figure 3C,D) (Chesselet et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and D, with a citation to Chesselet et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "8528e229-2491-46d0-ba69-f5d72291a653",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C38",
+      "claim": "Bilateral lentiviral overexpression of TRIM28 in pre-symptomatic mouse models of synucleinopathy and tauopathy worsened each aspect of neuropathology tested.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed bilateral lentiviral overexpression of TRIM28 in pre-symptomatic mouse models of synucleinopathy (Rockenstein et al., 2002) and tauopathy (Yoshiyama et al., 2007) and found that injection with TRIM28, but not control lentivirus, worsened each aspect of neuropathology tested in both models (Figure 4A,B; and Figure 4\u2014figure supplement 1A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A, B and Figure 4\u2014figure supplement 1A, B, with citations to Rockenstein et al., 2002 and Yoshiyama et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "a54eb2f5-75ad-4c9f-b617-66ffef4e5d6f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C39",
+      "claim": "TRIM28 lentiviral overexpression significantly increased the half-life of \u03b1-Syn and tau by approximately 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that TRIM28 lentiviral overexpression could significantly increase the half-life of each protein by approximately 50% (LV-TRIM28 vs. LV-Ctrl, Figure 5B,C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "e962f48a-49d0-4329-a00b-9f8bdaf454cd",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C40",
+      "claim": "TRIM28 overexpression did not affect the RNA stability of \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "without affecting their RNA stability (Figure 5\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "b402b5ca-a183-45cc-bba9-4bad8ea8679f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C41",
+      "claim": "TRIM28 promotes the accumulation of the amyloidogenic proteins \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "these studies suggest that TRIM28 promotes the accumulation of the amyloidogenic proteins \u03b1-Syn and tau",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the stability and overexpression data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "d0628346-f40f-4ab0-addb-78936b45d091",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C42",
+      "claim": "TRIM28 interacts with \u03b1-Syn and tau, albeit weakly, in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked whether TRIM28 modulates \u03b1-Syn and tau by forming a complex with them and found that they did indeed interact, albeit weakly, in human cells (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoprecipitation data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "36c5b55d-89fc-44c9-b5df-0d258e9a27ee",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C43",
+      "claim": "TRIM28:\u03b1-Syn and TRIM28:tau complexes accumulated in nuclei after some time as shown by BiFC assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, TRIM28:\u03b1-Syn and TRIM28:tau complexes accumulated in nuclei after some time",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by BiFC data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "16894672-a4d9-4d6e-b395-4364def706ff",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C44",
+      "claim": "Viral expression of TRIM28 dramatically promoted the nuclear accumulation of \u03b1-Syn and tau in primary cerebellar granule neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that viral expression of TRIM28 dramatically promoted the nuclear accumulation of these two proteins (Figure 6C and Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence and biochemical fractionation data shown in Figure 6C and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "72f1bc99-fdb3-4e38-babb-6a6539b78b0d",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C45",
+      "claim": "An inactive TRIM28 E3 ligase mutant (C65A/C68A) could no longer promote the toxic nuclear accumulation of \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "We overexpressed an inactive TRIM28 E3 ligase mutant ([C65A/C68A], 'TRIM28-Mut') (Doyle et al., 2010) and found that this mutant could no longer promote the toxic nuclear accumulation of these proteins (Figure 6C and Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C and Figure 6\u2014figure supplement 1, with a citation to Doyle et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "c2522d1f-1908-4932-9b17-21583fc76527",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C46",
+      "claim": "The TRIM28 E3 ligase mutant could still bind \u03b1-Syn and tau, though less stably.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that the TRIM28 E3 ligase mutant, while less stable, could still bind \u03b1-Syn and tau (Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "779cec62-a3f2-4bc6-9f8c-bf179bbbf04f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C47",
+      "claim": "TRIM28 governs the nuclear accumulation of \u03b1-Syn and tau through its E3-ligase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TRIM28 governs the nuclear accumulation of \u03b1-Syn and tau through its E3-ligase domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutant data showing that the E3 ligase activity is required for nuclear accumulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "46aebb39-b697-419e-bf00-19bb947c2233",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C48",
+      "claim": "Persistent expression of TRIM28 aggravates the neuropathology of both \u03b1-Syn and tau.",
+      "claim_type": "EXPLICIT",
+      "source": "its persistent expression aggravates the neuropathology of both proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the overexpression data in mouse models shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "6bbd545a-cc35-4964-8340-92c30072e5b1",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C49",
+      "claim": "In all cases of synucleinopathy and tauopathy, a greater proportion of TRIM28 accumulated in an insoluble form (Formic Acid fraction) than the more soluble form (RIPA fraction).",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases of synucleinopathy and tauopathy, a greater proportion of TRIM28 accumulated in an insoluble form (Formic Acid fraction) than the more soluble form (RIPA fraction) (Figure 7\u2014figure supplement 1A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by biochemical fractionation data from human postmortem tissue shown in Figure 7\u2014figure supplement 1A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "bcb927c0-924a-417e-8acc-dd643d82ef84",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C50",
+      "claim": "\u03b1-Syn and tau accumulated in the nucleus in most cases of synucleinopathy and tauopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "Subcellular fractionation on these post-mortem tissues revealed that \u03b1-Syn and tau accumulated in the nucleus in most cases of synucleinopathy and tauopathy (Figure 7\u2014figure supplement 2A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by subcellular fractionation data from human postmortem tissue shown in Figure 7\u2014figure supplement 2A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "128d2faf-5253-4265-ac71-07d11f2001be",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C51",
+      "claim": "\u03b1-Syn and tau nuclear co-localization with TRIM28 was greater in PD and AD than in age-matched controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u03b1-Syn and tau nuclear co-localization with TRIM28 was greater in PD and AD than in age-matched controls (Figure 7A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data from human postmortem tissue shown in Figure 7A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "72fd105f-a53a-4a6e-842e-3d2094bf5770",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C52",
+      "claim": "TRIM28 is aberrantly increased in cases of synucleinopathy and tauopathy.",
+      "claim_type": "EXPLICIT",
+      "source": "our findings suggest that TRIM28 is aberrantly increased in cases of synucleinopathy and tauopathy",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biochemical fractionation data showing increased insoluble TRIM28 in disease cases.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "5fb46f2f-f602-4e4f-bb39-4294eaea62e2",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C54",
+      "claim": "Altered cellular distribution of \u03b1-Syn and tau contributes to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that TRIM28 regulates \u03b1-Syn and tau by promoting their nuclear localization and accumulation dovetails nicely with studies indicating that altered cellular distribution of \u03b1-Syn and tau contributes to neurodegeneration (Fares et al., 2014; Fern\u00e1ndez-Nogales et al., 2014; Kontopoulos et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fares et al., 2014; Fern\u00e1ndez-Nogales et al., 2014; Kontopoulos et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2188de47-bed7-43d9-93a2-1eeaf447aa8e",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C55",
+      "claim": "Mislocalization or missorting of \u03b1-Syn and tau, rather than their respective aggregation in the form of Lewy bodies and NFTs, promotes neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "several lines of evidence suggest that mislocalization or missorting of \u03b1-Syn and tau as a result of mutations, post-translational modification or overexpression, rather than their respective aggregation in the form of Lewy bodies and NFTs, are what promotes neurodegeneration (Frandemiche et al., 2014; Wilson et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Frandemiche et al., 2014 and Wilson et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "fae1efe7-c458-4f62-bc71-c625bac52b79",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C56",
+      "claim": "\u03b1-Syn is much more toxic in a fly model of synucleinopathy when it is tagged with a nuclear localization sequence (NLS).",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1-Syn is much more toxic in a fly model of synucleinopathy when it is tagged with a nuclear localization sequence (NLS) (Kontopoulos et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kontopoulos et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "de41127c-fbd1-4874-8d82-0cf11ff9e7a2",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C57",
+      "claim": "PD-causing mutations in \u03b1-Syn increase its nuclear accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "PD-causing mutations in \u03b1-Syn increase its nuclear accumulation (Fares et al., 2014; Kontopoulos et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fares et al., 2014 and Kontopoulos et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "97a3e8a3-12e9-46db-b8e6-6b328ef64129",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C58",
+      "claim": "Postmortem studies of tissue from AD and Huntington disease patients indicate that misfolded tau accumulates in the nucleus of neurons in the form of rod-like deposits.",
+      "claim_type": "EXPLICIT",
+      "source": "postmortem studies of tissue from AD and Huntington disease patients indicate that misfolded tau accumulates in the nucleus of neurons in the form of rod-like deposits (Fern\u00e1ndez-Nogales et al., 2014; Vuono et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Fern\u00e1ndez-Nogales et al., 2014 and Vuono et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "5eed4adc-4b7f-4eee-b016-c013b9046a0e",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C59",
+      "claim": "TRIM28 drives the nuclear accumulation of \u03b1-Syn and tau, providing new mechanistic insight into the steps that lead to the pathogenicity of these proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that TRIM28 drives the nuclear accumulation of \u03b1-Syn and tau provides new mechanistic insight into the steps that lead to the pathogenicity of these proteins",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing TRIM28's role in nuclear accumulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "d26cf4ea-71be-4920-98e3-943da48f90e1",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C60",
+      "claim": "The Trim28 null mice are embryonic lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Trim28 null mice are embryonic lethal (Cammas et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Cammas et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "842e535a-316b-4dda-8c22-0b0d5d824216",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C61",
+      "claim": "Trim28+/- mice looked and behaved normally.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that the Trim28+/- mice looked and behaved normally",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "25091bbe-7d8b-466e-be19-9e46584a25cb",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C62",
+      "claim": "50% loss of Trim28 was sufficient to reduce \u03b1-Syn and tau and ameliorate toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "50% loss of Trim28 was sufficient to reduce \u03b1-Syn and tau and ameliorate toxicity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Trim28+/- mice shown in Figure 1C and Figure 3C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "d6a6b82c-ed5f-4273-af08-780be51b851e",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C63",
+      "claim": "Mutating the E3 ligase catalytic activity of TRIM28 is sufficient to regulate \u03b1-Syn and tau levels and behaves like a null allele for this specific effect.",
+      "claim_type": "EXPLICIT",
+      "source": "having discovered that mutating the E3 ligase catalytic activity of TRIM28 effectively is sufficient to regulate \u03b1-Syn and tau levels and for this specific effect behaves like a null allele",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing the E3 ligase mutant cannot promote nuclear accumulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "d69908d5-2a1e-40ce-8d6c-c27759a80655",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C64",
+      "claim": "The overlap of 41 genes between \u03b1-Syn and tau screens is statistically significant (p=9.5 \u00d7 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "In A, p=9.5 \u00d7 10\u20134, hypergeometric test",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the screen overlap shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "2aa365e2-d38d-4408-939a-95eb745cd13f",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C65",
+      "claim": "The half-life of \u03b1-Syn in the doxycycline-inducible system is 23.3 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the half-lives of \u03b1-Syn and tau (measured following a 48 hr pulse of doxycycline) in this system resembled those previously observed by others (23.3 hr for \u03b1-Syn and 28.1 hr for tau [Li, 2004; Min et al., 2010])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the stability assay, with citations to Li, 2004 and Min et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "cfdd76b8-857b-4848-ad51-bb031d40ced3",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "claim_id": "C66",
+      "claim": "The half-life of tau in the doxycycline-inducible system is 28.1 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the half-lives of \u03b1-Syn and tau (measured following a 48 hr pulse of doxycycline) in this system resembled those previously observed by others (23.3 hr for \u03b1-Syn and 28.1 hr for tau [Li, 2004; Min et al., 2010])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from the stability assay, with citations to Li, 2004 and Min et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a84945fa-e0db-4283-af72-b5c06cd28ceb",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A high-throughput siRNA screen of 2607 siRNAs targeting 869 druggable genes identified TRIM28 as the most robust common modulator of \u03b1-Syn and tau levels, with statistically significant overlap (p=9.5\u00d710\u207b\u2074) between the two screens and validation using three independent siRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C64 provide converging evidence from the screen design, hit identification, validation with independent siRNAs, and statistical significance testing. The hypergeometric test confirms the overlap is not due to chance, and the use of three independent siRNAs and a negative control cell line (DsRed-IRES-EGFP) strengthens the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "f4607b1f-479d-44be-aee4-d49005be4ce6",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TRIM28 regulates \u03b1-Syn and tau protein levels post-translationally across multiple systems (human cells, mouse primary neurons, mouse hippocampus, and Trim28+/- mice), without affecting SNCA or MAPT transcript levels or other neurodegenerative proteins tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C26-C31 demonstrate consistent effects across multiple experimental systems and species. The rescue experiment (C27) and lack of transcript changes (C29) support post-translational regulation. The specificity is demonstrated by testing other neurodegenerative proteins (C30). However, the magnitude of effect in heterozygous mice is modest, which may limit therapeutic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "20006203-813c-4d6a-a1a2-e38da3d3b90d",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Knockdown of the Drosophila TRIM28 homolog (bonus) reduced tau levels and rescued both eye degeneration and motor deficits in tau-expressing flies, with two independent loss-of-function alleles showing phenotypic improvement without reducing transgene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide complementary evidence from morphological (eye), behavioral (climbing), and biochemical (tau levels) assays. The use of two independent alleles and confirmation that transgene expression is unchanged strengthens the conclusion that the rescue is mediated through tau protein levels rather than transcriptional effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "ce219924-4332-4b4e-ac42-dcd30aa65336",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In a mouse model of \u03b1-Syn-induced Parkinsonism, co-injection of shTrim28 with \u03b1-Syn overexpression prevented the 50% loss of dopaminergic neurons and striatal fibers observed in control shRNA-treated mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 demonstrate a robust neuroprotective effect in an acute mouse model. The stereological quantification and assessment of both cell bodies and fibers provide strong evidence. However, this is an acute overexpression model, and the relevance to chronic neurodegenerative disease progression remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "7107eaf1-6882-48b3-85c4-e066bc820a84",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Genetic reduction of Trim28 (heterozygous deletion) significantly reduced pathological phosphorylated \u03b1-Syn accumulation in the hippocampus of \u03b1-Syn transgenic mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 demonstrates that genetic reduction of Trim28 can ameliorate pathology in a chronic transgenic model, complementing the acute viral knockdown results. The focus on phosphorylated \u03b1-Syn (pS129), a pathological marker, strengthens the disease relevance. However, only one brain region was examined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "621b9b40-019b-4fcb-9caf-ff0f1f9feea5",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lentiviral overexpression of TRIM28 in pre-symptomatic mouse models of synucleinopathy and tauopathy worsened multiple aspects of neuropathology including phosphorylated protein accumulation, astrogliosis, and neuronal loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C48 demonstrate bidirectional effects of TRIM28 manipulation, strengthening the causal relationship. The assessment of multiple pathological markers (pS129 \u03b1-Syn, pS396 tau, GFAP, Nissl) provides comprehensive evidence. However, the use of lentiviral overexpression may not fully recapitulate endogenous TRIM28 dysregulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "TRIM28 overexpression increased the half-life of \u03b1-Syn (from 23.3 to 34.0 hours) and tau (from 28.1 to 41.4 hours) by approximately 50% without affecting RNA stability, indicating TRIM28 promotes protein accumulation through post-translational stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41, C65-C66 provide direct mechanistic evidence using a doxycycline-inducible system that allows careful measurement of protein half-lives. The baseline half-lives match published values, validating the system. The lack of effect on RNA stability (C40) confirms post-translational regulation. The statistical analysis (comparison of fits) is appropriate for decay curves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "3a452dd8-c30f-47fc-a387-64e7d415deb9",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRIM28 interacts with \u03b1-Syn and tau and promotes their nuclear accumulation through its E3 ligase domain, as demonstrated by immunoprecipitation, BiFC assays, and the inability of an E3 ligase-inactive mutant (C65A/C68A) to promote nuclear accumulation despite retaining binding capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 provide multiple lines of evidence for TRIM28-mediated nuclear accumulation: weak interaction by IP (C42), nuclear localization by BiFC (C43), dramatic nuclear accumulation in primary neurons (C44), and functional requirement for E3 ligase activity (C45). The mutant analysis (C45-C46) distinguishes binding from functional activity, though the mutant's reduced stability complicates interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "f094e4f2-aed7-49cc-a4aa-e9ece39cc1e4",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In postmortem human tissue from synucleinopathy and tauopathy cases, TRIM28 accumulated in insoluble fractions, \u03b1-Syn and tau showed increased nuclear localization, and nuclear co-localization of these proteins with TRIM28 was greater in disease cases compared to age-matched controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 provide human disease relevance through biochemical fractionation and immunofluorescence analyses. The consistency across multiple disease types (PDD, AD, PSP) strengthens the findings. However, the correlative nature of postmortem studies cannot establish causality, and the number of cases examined is relatively small (n=4-10 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "dbdad26f-c40b-405a-af8f-c6b7e17bb8c3",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TRIM28 reduction rescues toxicity in animal models of tau- and \u03b1-Syn-mediated degeneration, and TRIM28 stabilizes and promotes the nuclear accumulation and toxicity of both proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 represent the overarching conclusions supported by the collective experimental evidence from Drosophila (C32-C34), mouse models (C35-C37), stability assays (C39-C41), and nuclear localization studies (C42-C47). The convergence of evidence across multiple model systems and experimental approaches strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "16b945fa-820c-4cc5-b806-2513c964a527",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes that \u03b1-Syn and tau are key drivers of neurodegeneration in multiple diseases, their levels correlate with disease severity, they overlap pathologically despite clinical differences, and the mechanisms governing their dual accumulation remain elusive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 provide comprehensive background supported by appropriate citations to establish the rationale for the study. These are well-established facts in the field and provide the scientific context for investigating shared regulatory mechanisms of \u03b1-Syn and tau.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "0a900254-1b8c-4de5-aab8-d9f47606d284",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings within existing literature showing that altered cellular distribution and nuclear accumulation of \u03b1-Syn and tau contribute to neurodegeneration, and that TRIM28-mediated nuclear accumulation provides new mechanistic insight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 appropriately cite relevant literature to contextualize the study's findings. The citations support the interpretation that nuclear mislocalization is pathogenic, though the authors acknowledge that the precise mechanism (passive vs. active toxicity) remains to be determined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "7724cdf6-aeef-454a-811f-dd90c16023d9",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Trim28 heterozygous mice are viable and phenotypically normal, 50% reduction is sufficient for therapeutic benefit, and the E3 ligase domain is critical for TRIM28's effects on \u03b1-Syn and tau, suggesting a targetable therapeutic approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63 provide important translational implications. The viability of Trim28+/- mice (C60-C61) and efficacy of 50% reduction (C62) suggest therapeutic feasibility. The identification of the E3 ligase domain as critical (C63) provides a specific target, though this is inferred from the mutant data rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "e764e001-cbbc-42ac-8e27-f0e616164650",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Decreasing levels of either or both \u03b1-Syn and tau could prove an effective therapeutic strategy for proteinopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 is a reasonable inference based on the evidence presented about protein accumulation driving toxicity and the therapeutic benefits of reduction in model systems. However, this remains speculative regarding human therapeutic application and would require extensive additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    },
+    {
+      "id": "b6f6aded-cdd7-4274-9037-979f3155ca4a",
+      "content_id": "a5e6a74a-dc3e-4d6e-b463-810c62b204c8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The screening strategy was similar to one used to identify modulators of ATXN1 stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by appropriate citations and describes the methodological approach. This is a minor methodological detail that provides context for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:25.789285Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4944acfc-135f-4579-8e3e-b2af41b39f97",
+      "result_id": "a84945fa-e0db-4283-af72-b5c06cd28ceb"
+    },
+    {
+      "claim_id": "7f4edc57-5a50-4b1c-a642-b7584df58b87",
+      "result_id": "a84945fa-e0db-4283-af72-b5c06cd28ceb"
+    },
+    {
+      "claim_id": "aa7d732a-0e0e-4681-87f5-ce897e1a92ce",
+      "result_id": "a84945fa-e0db-4283-af72-b5c06cd28ceb"
+    },
+    {
+      "claim_id": "d69908d5-2a1e-40ce-8d6c-c27759a80655",
+      "result_id": "a84945fa-e0db-4283-af72-b5c06cd28ceb"
+    },
+    {
+      "claim_id": "94f30b74-17aa-4880-90f4-6ec08ce48963",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "6ca3866d-3ca0-4fa5-9faa-acc5f55c6fb7",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "aeb5e107-de7a-437b-b68c-5871fb97a59e",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "2b4e57e1-a71c-44d7-a3e0-dac69a02fd15",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "aec24952-990d-4f76-bbaf-a67fa3d96f2f",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "5c2e8005-6ac0-4575-a909-18ba62a49145",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "5bafde22-684a-4eb9-95bb-f38f99d147a2",
+      "result_id": "f4607b1f-479d-44be-aee4-d49005be4ce6"
+    },
+    {
+      "claim_id": "1215fe4d-68a4-49bd-85ca-82b11b5a510f",
+      "result_id": "20006203-813c-4d6a-a1a2-e38da3d3b90d"
+    },
+    {
+      "claim_id": "09bf4f85-4dcb-4bce-b816-c2a5101e0151",
+      "result_id": "20006203-813c-4d6a-a1a2-e38da3d3b90d"
+    },
+    {
+      "claim_id": "aa3800a7-ec93-47a0-aaef-0a3366505486",
+      "result_id": "20006203-813c-4d6a-a1a2-e38da3d3b90d"
+    },
+    {
+      "claim_id": "83df865e-c457-4365-a069-3913695ec8ae",
+      "result_id": "ce219924-4332-4b4e-ac42-dcd30aa65336"
+    },
+    {
+      "claim_id": "44790252-a075-4ac6-855e-17078c399fcc",
+      "result_id": "ce219924-4332-4b4e-ac42-dcd30aa65336"
+    },
+    {
+      "claim_id": "762dc170-f7bd-4694-8497-9ecaaeade990",
+      "result_id": "7107eaf1-6882-48b3-85c4-e066bc820a84"
+    },
+    {
+      "claim_id": "8528e229-2491-46d0-ba69-f5d72291a653",
+      "result_id": "621b9b40-019b-4fcb-9caf-ff0f1f9feea5"
+    },
+    {
+      "claim_id": "46aebb39-b697-419e-bf00-19bb947c2233",
+      "result_id": "621b9b40-019b-4fcb-9caf-ff0f1f9feea5"
+    },
+    {
+      "claim_id": "a54eb2f5-75ad-4c9f-b617-66ffef4e5d6f",
+      "result_id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787"
+    },
+    {
+      "claim_id": "e962f48a-49d0-4329-a00b-9f8bdaf454cd",
+      "result_id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787"
+    },
+    {
+      "claim_id": "b402b5ca-a183-45cc-bba9-4bad8ea8679f",
+      "result_id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787"
+    },
+    {
+      "claim_id": "2aa365e2-d38d-4408-939a-95eb745cd13f",
+      "result_id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787"
+    },
+    {
+      "claim_id": "cfdd76b8-857b-4848-ad51-bb031d40ced3",
+      "result_id": "4ee66dd7-a3ab-4a26-88a4-8ee4b1e3a787"
+    },
+    {
+      "claim_id": "d0628346-f40f-4ab0-addb-78936b45d091",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "36c5b55d-89fc-44c9-b5df-0d258e9a27ee",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "16894672-a4d9-4d6e-b395-4364def706ff",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "72f1bc99-fdb3-4e38-babb-6a6539b78b0d",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "c2522d1f-1908-4932-9b17-21583fc76527",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "779cec62-a3f2-4bc6-9f8c-bf179bbbf04f",
+      "result_id": "3a452dd8-c30f-47fc-a387-64e7d415deb9"
+    },
+    {
+      "claim_id": "6bbd545a-cc35-4964-8340-92c30072e5b1",
+      "result_id": "f094e4f2-aed7-49cc-a4aa-e9ece39cc1e4"
+    },
+    {
+      "claim_id": "bcb927c0-924a-417e-8acc-dd643d82ef84",
+      "result_id": "f094e4f2-aed7-49cc-a4aa-e9ece39cc1e4"
+    },
+    {
+      "claim_id": "128d2faf-5253-4265-ac71-07d11f2001be",
+      "result_id": "f094e4f2-aed7-49cc-a4aa-e9ece39cc1e4"
+    },
+    {
+      "claim_id": "72fd105f-a53a-4a6e-842e-3d2094bf5770",
+      "result_id": "f094e4f2-aed7-49cc-a4aa-e9ece39cc1e4"
+    },
+    {
+      "claim_id": "68195018-7559-43eb-985f-d1693a4c65dd",
+      "result_id": "dbdad26f-c40b-405a-af8f-c6b7e17bb8c3"
+    },
+    {
+      "claim_id": "79dc48c9-ea88-4e46-bd8f-f0e4f0fc3a5b",
+      "result_id": "dbdad26f-c40b-405a-af8f-c6b7e17bb8c3"
+    },
+    {
+      "claim_id": "9285b886-2f55-4b12-97f0-89d16c65d169",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "e02137e2-52c6-4382-9519-cab1dfc1466d",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "090277d9-9ece-4101-837f-5af04dcac281",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "d773898b-5c09-45df-a552-70276e0e6150",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "7c61dafd-8e16-4775-97fb-2973e974cba4",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "c9aa7cb8-e6e4-4d83-94dd-647c7124d4eb",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "c83268aa-7fc5-4295-80cd-2073df8c2d6a",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "62141282-5755-487f-a66c-41040040549d",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "4eca0e8f-22cc-4f68-b684-28ccbdfb8646",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "de57d4f1-8112-452c-9352-25a439f62633",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "fdad421a-6db9-41e6-ad59-4f533fe922d4",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "2b92ee41-ddca-492d-bc48-248251bad158",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "393ae681-b91d-4fe7-9ea1-93e7785bc787",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "381df8b4-6a67-4a0f-a554-8f94da84808c",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "2491a964-9043-4595-b20b-d672fe60647b",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "bc1dcca2-4e07-48e0-91ea-bab4158b743e",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "f47c1d44-23bf-4015-9fae-bb7b0a24c1e3",
+      "result_id": "16b945fa-820c-4cc5-b806-2513c964a527"
+    },
+    {
+      "claim_id": "5fb46f2f-f602-4e4f-bb39-4294eaea62e2",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "2188de47-bed7-43d9-93a2-1eeaf447aa8e",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "fae1efe7-c458-4f62-bc71-c625bac52b79",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "de41127c-fbd1-4874-8d82-0cf11ff9e7a2",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "97a3e8a3-12e9-46db-b8e6-6b328ef64129",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "5eed4adc-4b7f-4eee-b016-c013b9046a0e",
+      "result_id": "0a900254-1b8c-4de5-aab8-d9f47606d284"
+    },
+    {
+      "claim_id": "d26cf4ea-71be-4920-98e3-943da48f90e1",
+      "result_id": "7724cdf6-aeef-454a-811f-dd90c16023d9"
+    },
+    {
+      "claim_id": "842e535a-316b-4dda-8c22-0b0d5d824216",
+      "result_id": "7724cdf6-aeef-454a-811f-dd90c16023d9"
+    },
+    {
+      "claim_id": "25091bbe-7d8b-466e-be19-9e46584a25cb",
+      "result_id": "7724cdf6-aeef-454a-811f-dd90c16023d9"
+    },
+    {
+      "claim_id": "d6a6b82c-ed5f-4273-af08-780be51b851e",
+      "result_id": "7724cdf6-aeef-454a-811f-dd90c16023d9"
+    },
+    {
+      "claim_id": "2dffe89b-bfc9-4d7f-8ca7-166fa39068b9",
+      "result_id": "e764e001-cbbc-42ac-8e27-f0e616164650"
+    },
+    {
+      "claim_id": "30a4f800-d597-48ea-9feb-8d909323aef6",
+      "result_id": "b6f6aded-cdd7-4274-9037-979f3155ca4a"
+    }
+  ],
+  "comparisons": []
+}

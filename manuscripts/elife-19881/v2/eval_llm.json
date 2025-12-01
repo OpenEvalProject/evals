@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53",
+      "C55",
+      "C60",
+      "C61"
+    ],
+    "result": "EJC proteins (eIF4AIII, Y14, and MAGO) bind nascent transcripts on polytene chromosomes independently of splicing. eIF4AIII binds at all Pol II transcription sites, while Y14 and MAGO show differential binding patterns. This association is observed at both intron-containing and intronless genes, including heat shock genes and transgenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary lines of evidence support splicing-independent binding: immunolocalization on polytene chromosomes (C1, C2, C39, C41, C42), RNase sensitivity experiments (C42), heat shock gene analysis (C55), and transgene experiments with intronless constructs (C60). The differential binding patterns of eIF4AIII versus Y14/MAGO are consistently demonstrated across multiple experimental approaches (C45-C47, C52-C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Y14 ChIP-seq in S2 cells demonstrates splicing-independent association with transcribed genes. Y14 enrichment is detected at transcription start sites (TSS) and occurs selectively at expressed genes, with only slightly higher enrichment at intron-containing genes compared to intronless genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (C62, C63, C67) provide genome-wide evidence supporting the polytene chromosome observations. The enrichment at both intron-containing and intronless genes (C67, C68) is consistent with splicing-independent binding. The correlation between Y14 binding and intron number when including unexpressed genes (C69) is appropriately interpreted as reflecting differential expression of intronless genes (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C112",
+      "C113"
+    ],
+    "result": "EJC protein association with nascent transcripts does not require CWC22, the spliceosome component predicted to recruit eIF4AIII in the canonical EJC assembly model. Despite CWC22 depletion causing severe developmental defects, eIF4AIII and Y14 remain associated with chromosome interbands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show EJC proteins remain at chromosomes in CWC22-depleted cells (C75-C77), the authors acknowledge residual CWC22 protein cannot be ruled out due to lack of antibody (C74). The severe growth phenotype (C74, C78) suggests efficient depletion, but without direct protein quantification, complete CWC22 depletion cannot be confirmed. This is a critical limitation for definitively concluding CWC22 independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Y14 and MAGO associate with nascent transcripts independently of eIF4AIII, and eIF4AIII associates independently of Y14 and MAGO. Y14 remains at chromosomes in eIF4AIII-depleted cells, and eIF4AIII remains at chromosomes in Y14 or MAGO-depleted cells. The RNAi phenotypes differ dramatically, with eIF4AIII depletion impairing salivary gland development while Y14/MAGO depletion shows no visual phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple RNAi experiments with appropriate controls demonstrate mutual independence (C82, C84-C86). Western blot confirmation of efficient depletion (C83) strengthens the conclusions. The differential phenotypes (C90) provide functional evidence for independent roles. The reciprocal dependence of Y14 and MAGO on each other (C84, C85) while both are independent of eIF4AIII (C86) is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "eIF4AIII associates with both polysomal and monosomal RNA and is not removed by translation, while Y14 and MAGO fractionate separately in the top of sucrose gradients, indicating they do not form a stable complex with eIF4AIII on translating mRNA in S2 cells. RNase and EDTA treatments shift eIF4AIII to lighter fractions, and a portion co-fractionates with ribosomal subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sucrose gradient fractionation data (C91-C95) clearly demonstrate differential sedimentation of eIF4AIII versus Y14/MAGO. Multiple treatments (RNase, EDTA, puromycin) provide converging evidence that eIF4AIII associates with actively translated mRNA (C96-C101). The interpretation that Y14/MAGO are not bound to cytoplasmic mRNA (C118) is well-supported by their sedimentation in top fractions (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Y14 and MAGO heterodimerization is essential for their stability in cells, independent of eIF4AIII. Y14 knockdown drastically reduces MAGO protein levels and vice versa, without affecting mRNA levels, while eIF4AIII knockdown does not affect Y14 or MAGO levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C103, C104) demonstrate reciprocal protein-level dependence, while RT-PCR data (C108, C109) show mRNA levels are unaffected, supporting a post-transcriptional stability mechanism (C107). The independence from eIF4AIII (C105, C106, C111) is consistent with the chromosome localization data. This result is well-supported by complementary approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C125",
+      "C135"
+    ],
+    "result": "eIF4AIII has a global role in gene expression independent of Y14, MAGO, splicing, and the canonical EJC model. The authors speculate this may reflect a global requirement in translation rather than specific mRNA localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a broad interpretive claim (C9-C11) based on inference from multiple observations. While the data support splicing-independent and Y14/MAGO-independent functions of eIF4AIII, the claim of a 'global role in gene expression' is speculative (C125, C135). The severe developmental phenotype upon eIF4AIII depletion (C81) supports an essential function, but the specific molecular mechanism remains unclear. Additional functional studies would be needed to definitively establish the nature of this global role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "EJC proteins are present in both nuclear and cytoplasmic fractions with comparable absolute amounts, but are more concentrated in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C36, C37) and immunostaining data (C38) provide complementary evidence for subcellular distribution. The distinction between absolute amounts and concentration is appropriately made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Tagged Y14 and eIF4AIII show chromosomal banding patterns similar to endogenous proteins. Y14 and MAGO show complete colocalization, suggesting they form a stable heterodimer at transcription sites, while Y14 is absent or weak at many sites with strong eIF4AIII signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunostaining data with tagged proteins (C48, C49, C51) validate the antibody-based observations. The complete colocalization of Y14 and MAGO (C49) supports heterodimerization (C50), consistent with prior in vitro studies. The differential localization relative to eIF4AIII (C51) is consistent with the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "None of the three EJC proteins make a stable interaction with Pol II detectable by immunoprecipitation, while the positive control Spt6 is readily detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunoprecipitation experiment (C71) with appropriate positive control provides clear negative evidence. However, this does not rule out transient or weak interactions. The result appropriately qualifies the conclusion as referring to 'stable enough to be detected by IP.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C124",
+      "C130"
+    ],
+    "result": "The authors speculate that eIF4AIII may primarily bind mRNA UTRs (particularly 3'UTRs) rather than coding regions in Drosophila, and may dynamically bind mRNA in an ATP-driven reaction. Y14-MAGO may dissociate from mRNA before translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C120, C124, C130) based on indirect evidence from fractionation patterns and comparisons with mammalian studies. The speculation about Y14-MAGO dissociation before translation (C121) is supported by the fractionation data but lacks direct evidence. These hypotheses require additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

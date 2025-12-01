@@ -1,0 +1,1933 @@
+{
+  "submission": {
+    "id": "5da97744-970d-4734-b623-451e69c9b9af",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:24:43.951229Z",
+    "updated_at": "2025-11-30T22:24:43.951229Z"
+  },
+  "content": [
+    {
+      "id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "submission_id": "5da97744-970d-4734-b623-451e69c9b9af",
+      "content_type": "manuscript",
+      "content_text": "# Analyzing native membrane protein assembly in nanodiscs by combined non-covalent mass spectrometry and synthetic biology\n\n## Authors\n\n- Erik Henrich<sup>1</sup>\n- Oliver Peetz<sup>2</sup>\n- Christopher Hein<sup>1</sup>\n- Aisha Laguerre<sup>1</sup>\n- Beate Hoffmann<sup>1</sup>\n- Jan Hoffmann<sup>2</sup>\n- Volker D\u00f6tsch<sup>1</sup> ([ORCID: 0000-0001-5720-212X](https://orcid.org/0000-0001-5720-212X))\n- Frank Bernhard<sup>1</sup>\n- Nina Morgner<sup>2</sup> ([ORCID: 0000-0002-1872-490X](https://orcid.org/0000-0002-1872-490X)) \u2020\n\n### Affiliations\n\n1. Institute of Biophysical Chemistry, Centre for Biomolecular Magnetic Resonance J W Goethe-University Frankfurt am Main Germany\n2. Institute of Physical and Theoretical Chemistry J W Goethe-University Frankfurt am Main Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nMembrane proteins frequently assemble into higher order homo- or hetero-oligomers within their natural lipid environment. This complex formation can modulate their folding, activity as well as substrate selectivity. Non-disruptive methods avoiding critical steps, such as membrane disintegration, transfer into artificial environments or chemical modifications are therefore essential to analyze molecular mechanisms of native membrane protein assemblies. The combination of cell-free synthetic biology, nanodisc-technology and non-covalent mass spectrometry provides excellent synergies for the analysis of membrane protein oligomerization within defined membranes. We exemplify our strategy by oligomeric state characterization of various membrane proteins including ion channels, transporters and membrane-integrated enzymes assembling up to hexameric complexes. We further indicate a lipid-dependent dimer formation of MraY translocase correlating with the enzymatic activity. The detergent-free synthesis of membrane protein/nanodisc samples and the analysis by LILBID mass spectrometry provide a versatile platform for the analysis of membrane proteins in a native environment.\n\n## Introduction\n\nCrucial cellular processes depend on membrane proteins and their interactions. The majority of membrane proteins is organized in higher order complexes and oligomeric assembly is frequently used to modulate protein function or it is even essential for activity. Unfortunately, the analysis of membrane protein oligomerization in vivo is challenging due to the high complexity of natural membranes. Furthermore, classical in vitro studies need to implement disruption of membranes and subsequent solubilization of the membrane proteins into detergents (Seddon et al., 2004). This relatively harsh treatment can irreversibly modify the stoichiometry or even disrupt and unfold native membrane protein complexes. In addition, the presence and composition of the lipid environment can influence folding, proper adoption of quaternary structures and the assembly of heteromeric complexes. Lipids can even be components of membrane protein structures and act as modulators of membrane protein function (van Dalen et al., 2002; Hunte and Richers, 2008; Laganowsky et al., 2014). In this respect, the recently developed nanodisc technology, based on well-defined disc-shaped bilayer patches stabilized by two copies of a membrane scaffold protein, provides excellent and well-defined alternative lipid environments for membrane proteins (Bayburt and Sligar, 2010) (Figure 1). The utilization of nanodiscs is extremely beneficial as they are completely soluble, enabling the application of numerous biophysical and biochemical techniques for the characterization of membrane proteins in a native bilayer environment (Denisov and Sligar, 2016). Furthermore, in order to avoid potentially critical detergent contacts of membrane proteins, we have developed a detergent-free strategy for the co-translational insertion of membrane proteins into preformed empty nanodiscs by cell-free (CF) expression (Roos et al., 2014). For example, in the case of the extremely detergent-sensitive E. coli MraY translocase, a membrane-integrated enzyme essential for lipid I biosynthesis, this lipid-based CF expression (L-CF) was the only way to obtain functionally folded protein (Ma et al., 2011; Henrich et al., 2016). In addition, CF expression enables the production of toxic or otherwise difficult membrane proteins and provides numerous options for their efficient labeling (Reckel et al., 2010; Henrich et al., 2015b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig1-v2.jpg)\n\n**Figure 1.:** (a and b) Workflows implementing cellular expression and detergent solubilization of membrane proteins. (a) Membrane protein analysis with non-MS-related methods. (b) Membrane protein analysis with ESI-MS. (c) Proposed method combining cell-free co-translational membrane insertion with LILBID-MS analysis. Detergents and lipids are highlighted in orange and grey, respectively. The membrane scaffold protein is represented by blue helices and membrane proteins with red helices. The critical membrane extraction step is emphasized by the red box.\n\nMost techniques employed to analyze protein complexes such as cross-linking, fluorescence spectroscopy or electron paramagnetic resonance spectroscopy frequently involve extensive protein modifications. However, oligomeric states of proteins can be extremely sensitive toward covalent modifications or environmental parameters (Politi et al., 2009; Maciejko et al., 2015). Recently developed non-covalent mass spectrometry (MS) using mild ionization techniques such as electrospray-ionization (ESI) or laser-induced-liquid-bead-ion-desorption (LILBID) thus became key technologies for the analysis of soluble proteins as well as of detergent solubilized membrane proteins (Barrera and Robinson, 2011). Sample transfer from solution to gas phase is most critical for non-covalent MS and requires carefully adjusted settings to maintain intact membrane protein complexes (Barrera et al., 2008). LILBID-MS as a technique complementary to ESI-MS emerged as new tool to investigate membrane proteins in native-like environments, especially based on its wide tolerance to additives needed for membrane protein solubilization (Morgner et al., 2007; Vonck et al., 2009; Maciejko et al., 2015).\n\nThe approach to employ ESI-MS in combination with nanodiscs has recently been successful to investigate membrane proteins in a native-like lipid environment (Hopper et al., 2013; Marty et al., 2016) (Figure 1b). However, this procedure still includes the risk of complex disintegration by the classical detergent treatment of the protein samples (Figure 1b). By combining cell-free synthetic biology (Hodgman and Jewett, 2012; Smith et al., 2014), nanodiscs and LILBID-MS, we have established a new platform avoiding any detergent contacts and enabling the analysis of non-modified membrane proteins in their initial expression environment (Figure 1c). In addition, the created synergies streamline the process of membrane protein complex analysis by reducing the workflow to three basic steps (Figure 1c). The platform is suitable for a wide range of applications as it extends the analysis of challenging membrane proteins (i) that cannot be synthesized in vivo, (ii) that are sensitive to detergents, (iii) that do not tolerate covalent modifications or (iv) that require stable isotope labeling for better resolution.\n\nWe demonstrate the versatility of our approach by analyzing oligomeric states of six different membrane proteins from different functional classes and by gaining first insights indicating a lipid-dependent dimerization of E. coli MraY translocase.\n\n## Results\n\n### LILBID-MS analysis of empty nanodiscs\n\nInitially, we investigated empty nanodiscs consisting only of the scaffold protein and lipids to define the individual particle behavior. When the LILBID laser, desorbing the sample droplets, was tuned to a low laser power of 10 mJ, signals were revealed corresponding to intact nanodiscs comprising two copies of the scaffold protein and roughly 200 DPPC lipids (Figure 2a). However, spectra remain broad and not well resolved and are not suitable for detailed assignments. Nevertheless, single lipids could be resolved by tuning the laser power to 23 mJ causing the disintegration of the nanodiscs. Detected signals correspond to scaffold proteins with a few remaining lipid molecules. A complete overview of all analyzed empty nanodiscs is shown in Table 1. The homogeneity of the analyzed nanodiscs was controlled by size exclusion chromatography (Figure 2\u2014figure supplements 1b, 2b and 3b and Figure 3b) and exemplarily by negative stain electron microscopy (Figure 2\u2014figure supplement 1b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig2-v2.jpg)\n\n**Figure 2.:** Pictograms illustrate complexes of the corresponding peaks and are labeled with the particle charge in the gas-phase. (a) The different laser intensities are indicated. The monomer region of MSP1E3D1 with lipid attachments is enlarged in the inset. (b) Structure of the lipid DPPC used for nanodisc formation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Pictograms illustrate particles of the corresponding peaks. The different laser intensities are indicated. (a) LILBID-MS spectra of nanodiscs (DMPG) assembled with MSP1E3D1, MSP1 or MSP1D1\u0394H5. (b) Size exclusion profiles of nanodiscs (DMPC) with three different scaffold proteins on a Superdex 200 3.2/30 increase column with a flow rate of 0.075 ml/min. The inset illustrates final MSP1E3D1 (DMPC) nanodisc homogeneity as analyzed by negative stain electron microscopy.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Pictograms illustrate the detected particles. The different laser intensities are indicated. (a) LILBID-MS spectra of nanodiscs containing the indicated lipids. (b) Corresponding size exclusion profiles of the nanodiscs on a Superdex 200 3.2/30 column with a flow rate of 0.050 \u00b5l/min. (c) Structures of the lipids used for nanodisc formation.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Pictograms illustrate the detected particles. The different laser intensities are indicated. (a) LILBID-MS spectra of nanodiscs containing the indicated lipids. The monomer region of MSP1E3D1 with lipid attachments is enlarged in the inset. In the case of DOPE, the scaffold protein trimer and tetramer complexes indicate inhomogeneous nanodiscs or possibly aggregation further supported by the corresponding size exclusion profile. (b) Corresponding size exclusion profiles of the nanodiscs on a Superdex 200 3.2/30 increase column with a flow rate of 0.075 \u00b5l/min. (c) Structures of the lipids used for nanodisc formation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig3-v2.jpg)\n\n**Figure 3.:** Pictograms illustrate the detected particles. The applied laser intensity is indicated. (a) LILBID-MS spectra of nanodiscs containing the indicated lipid mixtures as well as single lipid types. (b) Corresponding size exclusion profiles of the nanodiscs on a Superdex 200 3.2/30 increase column with a flow rate of 0.075 \u00b5l/min. (c) LILBID-MS spectra of MSP1E3D1 (DMPG) (top) and MSP1E3D1 (DMPG/cardiolipin) nanodiscs (bottom). Circles and squares highlight peaks generated by DMPG or cardiolipin molecules attached to MSP1E3D1 monomers. (d) Structures of lipids used for nanodisc formation.\n\n**Table 1.**\n Characteristics of nanodiscs and contained bilayer for used combinations of different scaffold proteins with various lipids.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Scaffold</th>\n      <th rowspan=\"2\">Nanodisc diameter [nm]</th>\n      <th rowspan=\"2\">Lipid</th>\n      <th rowspan=\"2\">Protein:lipid ratio in nanodisc reaction mix</th>\n      <th rowspan=\"2\">Attached lipids (LILBID)</th>\n      <th rowspan=\"2\">Transition tempature [\u00b0C]</th>\n      <th rowspan=\"2\">Headgroup charge \u03a3 charges</th>\n      <th colspan=\"2\">Hydrophobic tail</th>\n    </tr>\n    <tr>\n      <th>Double bonds</th>\n      <th>Length</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">MSP1D1\u0394H5</td>\n      <td rowspan=\"2\">8</td>\n      <td>DMPC</td>\n      <td>1:50</td>\n      <td>15</td>\n      <td>24</td>\n      <td>0</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>DMPG</td>\n      <td>1:45</td>\n      <td>6</td>\n      <td>23</td>\n      <td>\u22121</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">MSP1</td>\n      <td rowspan=\"2\">10</td>\n      <td>DMPC</td>\n      <td>1:80</td>\n      <td>17</td>\n      <td>24</td>\n      <td>0</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>DMPG</td>\n      <td>1:70</td>\n      <td>9</td>\n      <td>23</td>\n      <td>\u22121</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td rowspan=\"14\">MSP1E3D1</td>\n      <td rowspan=\"14\">12</td>\n      <td>DMPC</td>\n      <td>1:115</td>\n      <td>19</td>\n      <td>24</td>\n      <td>0</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>DMPG</td>\n      <td>1:110</td>\n      <td>11</td>\n      <td>23</td>\n      <td>\u22121</td>\n      <td>0</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td>DPPC</td>\n      <td>1:100</td>\n      <td>18</td>\n      <td>41</td>\n      <td>0</td>\n      <td>0</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>POPG</td>\n      <td>1:90</td>\n      <td>15</td>\n      <td>\u22122</td>\n      <td>\u22121</td>\n      <td>0/1</td>\n      <td>16/18</td>\n    </tr>\n    <tr>\n      <td>DOPC</td>\n      <td>1:80</td>\n      <td>21</td>\n      <td>\u221217</td>\n      <td>0</td>\n      <td>2</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>DOPG</td>\n      <td>1:80</td>\n      <td>20</td>\n      <td>\u221218</td>\n      <td>\u22121</td>\n      <td>2</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>DOPS</td>\n      <td>1:90</td>\n      <td>20</td>\n      <td>\u221211</td>\n      <td>\u22121</td>\n      <td>2</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>DOPE</td>\n      <td>1:80</td>\n      <td>8</td>\n      <td>\u221216</td>\n      <td>0</td>\n      <td>2</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Mixtures</td>\n      <td></td>\n      <td></td>\n      <td>Lipid ratio</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DMPG/DMPC</td>\n      <td>1:115</td>\n      <td>11</td>\n      <td>50/50</td>\n      <td>\u22121/0</td>\n      <td>0/0</td>\n      <td>14/14</td>\n    </tr>\n    <tr>\n      <td>DMPG/Cardiolipin</td>\n      <td>1:120</td>\n      <td>12</td>\n      <td>90/10</td>\n      <td>\u22121/\u20132</td>\n      <td>0/0</td>\n      <td>14/14</td>\n    </tr>\n    <tr>\n      <td>DMPG/Inositol</td>\n      <td>1:110</td>\n      <td>15</td>\n      <td>50/50</td>\n      <td>\u22121/\u20131</td>\n      <td>0/0;1</td>\n      <td>14/16;18</td>\n    </tr>\n    <tr>\n      <td>DMPC/Cholesterol</td>\n      <td>1:115</td>\n      <td>23</td>\n      <td>90/10</td>\n      <td>0/0</td>\n      <td>0/ n.d.</td>\n      <td>14/ n.d.</td>\n    </tr>\n    <tr>\n      <td>E. coli total lipids</td>\n      <td>1:50</td>\n      <td>n.i.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n    </tr>\n  </tbody>\n</table>\n\n_n.d. = not defined.n.i. = not investigated._\n\nIn contrast to previous ESI-MS-studies (Marty et al., 2012), intact nanodiscs were hardly detected at the refined LILBID settings necessary to achieve resolved signals (Figure 2\u2014figure supplement 1\u20133). To investigate the influence of different nanodisc features on the obtained mass spectra, we scanned various scaffold proteins and lipids. Switching from MSP1D1\u0394H5 over MSP1 to the larger MSP1E3D1 scaffold protein coincides with an increase from six to up to eleven attached DMPG molecules (Figure 2\u2014figure supplement 1a, Table 1). Elongation of the alkyl chain with unsaturated alkyl groups led to further increased numbers of attached lipids with 15 or 20 for POPG and DOPG, respectively (Figure 2\u2014figure supplement 2a, Table 1). In contrast to the chain length, the variation of the lipid head groups (from DOPG to DOPS or DOPC) did not modulate lipid attachments drastically (Figure 2\u2014figure supplement 3a, Table 1). Notably, the utilization of DOPE lipids leads to the formation of highly heterogeneous nanodiscs (Figure 2\u2014figure supplement 3a,b). This could be caused by the intrinsic tendency of PE lipids to form non-bilayer phases with higher curvature (Gruner, 1985), which possibly prevents the formation of proper nanodiscs. Moreover, as shown for the multi-drug transporter EmrE, non-bilayer lipids can significantly decrease reconstitution and activity of membrane proteins in liposomes (Curnow et al., 2004). Due to these possible negative effects on disc stability, nanodiscs reconstituted with DOPE were excluded from further studies.\n\nMore complex lipid compositions as present in native membranes were mimicked by mixtures including lipids such as cholesterol or cardiolipin (Figure 3). In case of DMPG:cardiolipin mixtures, the mass difference between the two lipids was sufficient to clearly distinguish and count the scaffold-bound cardiolipin and DMPG molecules (Figure 3c). It appears therefore feasible to tune the complexity of resulting mass spectra via specific nanodisc selection as well as to identify lipids staying attached to proteins within the sample. In general, spectra of nanodiscs composed out of lipids with shorter chain length lead to better resolved spectra due to the decreased number of attached lipid molecules. This will be especially important the more complicated the spectra of membrane protein/nanodiscs complexes are. Therefore, nanodiscs containing the short-chain lipids DMPG and DMPC were chosen for the following studies of membrane protein/nanodiscs complexes.\n\n### Oligomeric state analysis of membrane proteins in nanodiscs\n\nTo establish the reliability of the method for analyzing membrane proteins from nanodiscs, we started with well-studied model systems with known subunit stoichiometry (Table 2). The potassium channel KcsA (Cortes and Perozo, 1997; van Dalen et al., 2002), the small multidrug transporter EmrE (Ubarretxena-Belandia et al., 2003; Morrison et al., 2012) (Figure 4a) and the signal peptidase LspA (Vogeley et al., 2016) are known to be tetramer, dimer and monomer, respectively. The complexes were co-translationally inserted into nanodiscs assembled with the scaffold protein MSP1E3D1 and either DMPG or DMPC lipids. The big nanodiscs containing MSP1E3D1 were chosen as they performed best in previous studies regarding membrane protein solubilization (Roos et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig4-v2.jpg)\n\n**Figure 4.:** Pictograms in mass spectra illustrate the assigned complex for every peaks. Charge states are indicated if they differ from 1-. The different laser intensities are indicated. (a) 3D structures and mass of KcsA (PDB: 3EFF) and EmrE (PDB: 2I68) (b) Mass spectrum of EmrE MSP1E3D1 (DMPG) complexes. Free monomer and dimer can be dissociated from the scaffold proteins. (c) KcsA MSP1E3D1 (DMPG) complexes analyzed at different laser conditions. Under soft conditions, (i) the KcsA tetramer with two scaffold proteins appears with one to four charges. Higher desorption laser energy (ii) leads to dissociation of scaffold or KcsA proteins. Monomer and dimer of KcsA without scaffold proteins are visible, but free tri- and tetramer cannot yet be unambiguously assigned due to overlap with other species. (d) SDS-PAGE analysis of the KcsA MSP1E3D1 (DMPG) sample allowed verifying the formation of SDS stable tetramer.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Pictograms illustrate the detected particles. The different laser intensities are indicated. EmrE was co-translationally inserted into nanodiscs of two different sizes. (a) Anionic mode. (b) Cationic mode. The dashed lines highlight signals of the EmrE dimer.\n\n**Table 2.**\n Construct list combining full name, size and expression system with the abbreviation. The theoretical masses of the different constructs are calculated by the Expasy tool protparam according to the primary sequence. Based on that the theoretical molecular weights of labeled proteins are calculated by the addition of masses of the single amino acids subtracted by the number of water molecules corresponding to the number of peptide bonds.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Protein</th>\n      <th colspan=\"2\">Molecular weight [kDa]</th>\n      <th rowspan=\"2\">Full name</th>\n      <th rowspan=\"2\">Reference</th>\n    </tr>\n    <tr>\n      <th>Theoretical</th>\n      <th>Experimental</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PR</td>\n      <td>27.09*</td>\n      <td>27.19*</td>\n      <td>Proteorhodopsin (green variant)</td>\n      <td>(Reckel et al., 2011)</td>\n    </tr>\n    <tr>\n      <td>KcsA</td>\n      <td>21.33/22.70\u2020</td>\n      <td>21.38/22.77\u2020</td>\n      <td>pH-gated potassium channel KcsA</td>\n      <td>-</td>\n    </tr>\n    <tr>\n      <td>Emre</td>\n      <td>13.00</td>\n      <td>13.09</td>\n      <td>Multidrug transporter EmrE</td>\n      <td>(Roos et al., 2012)</td>\n    </tr>\n    <tr>\n      <td>LspA</td>\n      <td>21.52/22.83\u2020</td>\n      <td>21.63/22.84\u2020</td>\n      <td>Lipoprotein signal peptidase</td>\n      <td>(Laguerre et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>hHv1-VSD</td>\n      <td>20.80/22.28\u2020</td>\n      <td>20.89/22.20\u2020</td>\n      <td>Human proton channel - voltage sensing domain</td>\n      <td>(Li et al., 2015)</td>\n    </tr>\n    <tr>\n      <td>Bs-MraY</td>\n      <td>37.88</td>\n      <td>37.93</td>\n      <td>Phospho-N-acetylmuramyl-pentapeptide-transferase B.subtilis</td>\n      <td>(Henrich et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>Ec-MraY</td>\n      <td>42.22</td>\n      <td>42.29</td>\n      <td>Phospho-N-acetylmuramyl-pentapeptide-transferase\u00a0E.coli</td>\n      <td>(Henrich et al., 2016)</td>\n    </tr>\n    <tr>\n      <td>MSP1</td>\n      <td>25.3</td>\n      <td>25.40</td>\n      <td>Membrane scaffold protein</td>\n      <td>(Denisov et al., 2004)</td>\n    </tr>\n    <tr>\n      <td>MSP1E3D1</td>\n      <td>31.96</td>\n      <td>32.08</td>\n      <td>Membrane scaffold protein</td>\n      <td>(Denisov et al., 2004)</td>\n    </tr>\n    <tr>\n      <td>MSP1D1\u0394H5</td>\n      <td>19.49\u2021/21.46</td>\n      <td>19.53\u2021/21.50</td>\n      <td>Membrane scaffold protein</td>\n      <td>(Hagn et al., 2013)</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Molecular mass according to covalent coupling of all trans-retinal.\u2020 Molecular mass according to heavy isotope labeling.\u2021 Molecular mass according to cleavage of the His6-tag._\n\nFor all proteins, clear MS signals were detected corresponding to the expected oligomeric states in combination with the two membrane scaffold proteins (MSPs) (Figures 4b,c and 5a). Elevated laser energies revealed additional signals assigned to the respective complexes after loss of MSPs or target complex subunits. Figure 4b clearly shows signals consistent with EmrE monomer and dimer without any attached scaffold proteins, indicating that within LILBID-MS analysis the EmrE complex can be dissociated from the nanodiscs without losing its integrity. Similar signals for KcsA tri- and tetramer without scaffold proteins cannot yet be unambiguously assigned due to higher complexity of the sample causing overlap with other species (Figure 4c\u00a0(ii)). Further modifications that allow successful assignment will be explained in the next section. However, the tetrameric stoichiometry deduced from the low-laser intensity spectra could be confirmed by SDS-PAGE (Cortes and Perozo, 1997) (Figure 4d). Comparison of EmrE spectra taken in LILBID anionic as well as in cationic mode revealed similar complexes (Figure 4\u2014figure supplement 1). As spectra appeared to be better resolved in the anionic mode, this type was chosen for all further measurements.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig5-v2.jpg)\n\n**Figure 5.:** Relevant mass shifts reducing the peak overlap are highlighted in the insets. Pictograms illustrate the corresponding complex of detected peaks and asterix highlight heavy isotope-labeled protein as indicated. The different laser intensities are indicated. (a and c) Spectra of labeled and non-labeled samples are shown by a black and a red line, respectively. (a) hHv1-VSD in nanodiscs using MSP1D1\u0394H5 scaffold proteins (19.49 kDa). Labeling shifts the hHv1-VSD monomer about 2 kDa. (b) KcsA MSP1E3D1 (DMPG) complexes. Mass shift for the free KcsA tri- and tetramer (3.63 and 4.48 kDa, respectively) are sufficient to stop overlap with other species. (c) Spectra of LspA MSP1D1\u0394H5 (DMPC) complexes in black and of LspA MSP1E3D1 (DMPG) complexes in red. 15N, 2H labeled LspA (22.57 kDa) could not be sufficiently separated from MSP1D1\u0394H5 (21.46 kDa). However, spectra of unlabeled LspA (21.52 kDa) inserted into MSP1E3D1 discs show no overlap.\n\nBesides these two well-characterized model systems, we further analyzed nanodiscs containing the voltage-sensing domain of the human proton channel Hv1 (hHv1-VSD). In this case, the nanodiscs were assembled using the smaller MSP version MSP1D1\u0394H5 as the preparation of cell-free produced\u00a0VSD samples has already been optimized for NMR investigations (Laguerre et al., 2016). We could reveal a dimeric state (Figure 5b), despite the lack of the intracellular domain being proposed as the main dimerization interface. Thus, our strategy supports recent findings that this domain is not essential for hHv1 dimerization (Li et al., 2015).\n\n### Refinement of LILBID-MS signal resolution by isotope labeling\n\nAs expected, signal overlap of different fragments upon increased sample complexity can limit the evaluation and assignment of our spectra. In Figure 4c, the signals of the free KcsA tri- and tetramer fragments without attached scaffold proteins are ambiguous as they are too close in mass to other potential species. As an example, the 85.32 kDa KcsA tetramer differs only by 0.07 kDa from a complex of two MSP1E3D1 scaffold proteins with one KcsA monomer. An efficient approach for minimizing such overlap is labeling of the membrane proteins with stable isotopes such as 15N, 13C and/or 2H, which is a key advantage of the implemented cell-free expression technique (Sobhanifar et al., 2010).\n\nAs expected, the 15N and 2H isotope labeling of KcsA in MSP1E3D1 nanodiscs improved spectral resolution and revealed signals for the free tetramer at 91.08 kDa, now separated by 4.14 kDa from the KcsA monomer with two attached MSPs detected at 86.93 kDa (Figure 5c).\n\nSimilarly, ambiguity is also present in the spectra of hHv-1-VSD (Figure 5b). The scaffold protein MSP1D1\u0394H5 without the implemented His6-tag has a molecular mass of 19.49 kDa and is therefore close to the hHv1-VSD monomer (20.80 kDa). Again, 15N and 2H labeling of hHv1-VSD separates both signals clearly by increasing the mass of hHv1-VSD to 22.20 kDa, now resulting into a mass difference of 2.71 kDa. For KcsA and hHv1-VSD, the separation of signals by heavy isotope labeling was sufficient to reveal the different oligomeric states despite the attachments of lipids. Unfortunately, similar lipid attachments prevented the clear separation of the signals of uncleaved MSP1D1\u0394H5 at 21.46 kDa from that of a signal peptidase monomer LspA at 22.84 kDa by the 15N, 2H labeling approach (Figure 5a). However, signal overlap can alternatively be addressed by using different scaffold protein derivatives for nanodiscs assembly. Translation of unlabeled LspA (21.52 kDa) into MSP1E3D1 nanodiscs instead of MSP1D1\u0394H5 nanodiscs sufficiently separated the signals now revealing the expected monomeric state of LspA.\n\n### Oligomer formation of proteorhodopsin (PR) in nanodiscs\n\nIn order to explore the limits of our strategy, we analyzed the seven transmembrane helix green-light absorbing PR, a light-driven retinal containing proton pump. PR forms up to hexameric complexes in its natural membrane environment but is also stable and active as a monomer (Klyszejko et al., 2008; Reckel et al., 2011; Maciejko et al., 2015). Single-molecule force microscopy with cell-free synthesized PR/nanodisc samples already suggested multimeric conformations of PR co-translationally inserted into MSP1E3D1 nanodiscs (Roos et al., 2012).\n\nMonomeric PR occupies a surface of around\u00a0~6 nm2. A pentameric or hexameric complex of PR would thus potentially require a membrane space of at least 25\u201330 nm2 and 33\u201336 nm2, respectively (Klyszejko et al., 2008). It should therefore be possible that even such rather large complexes can assemble within nanodiscs composed of MSP1E3D1 having a calculated membrane area of 113 nm2 (Denisov et al., 2004). As proposed and in agreement with previous findings obtained with complementary techniques, the MS analysis under mild laser conditions of cell-free generated PR/nanodiscs complexes composed of MSP1E3D1 and DMPG revealed multimeric states of PR. The spectra show a distribution of complexes containing two scaffold proteins and up to six PR. Elevated laser conditions revealed various additional signals of PR with or without scaffold proteins indicating the formation of stable PR complexes up to penta- and hexamers (Figure 6a). In accordance to the results obtained with KcsA and EmrE, this data further confirms the capability of the implemented cell-free expression approach to generate native higher oligomers of diverse membrane proteins by co-translational insertion into nanodiscs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig6-v2.jpg)\n\n**Figure 6.:** LILBID-MS spectra of cell-free expressed PR with increasing laser power (a) and corresponding statistical analysis of the abundance of different complex species (b). The different laser intensities are indicated and pictograms illustrate the corresponding complex of the detected peaks. (a) PR in nanodiscs composed of MSP1E3D1 and DMPG shows up to hexameric complexes with two attached scaffold molecules. With elevated laser powers, these complexes get more and more disrupted and plain PR complexes without scaffold attachments can be detected. This is nicely illustrated by the statistical analysis (b) of the spectra shown in (a). Using low-laser intensities mainly PR complexes associated to scaffold proteins can be detected. The values of the bars correspond to the means of 2\u20133 measurements and the error bars display the standard deviation.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** PR synthesized in the presence of DH7PC and GDN and purified with 0.1% of the lipid-like detergent DH7PC (chemical formula in the inlet) exhibits mainly a monomeric state with a small fraction of dimer (a). In (b) spectra of PR expressed in the presence of nanodiscs with different lipids (DMPG, DMPC, DOPC) are shown. The detected complexes seem to be unaltered, whereas the peak width increases as seen for empty nanodiscs. The different laser intensities are indicated and pictograms illustrate the corresponding complex of detected peaks.\n\nBut what is the significance of the different observed species? To interpret these it is helpful to compare KcsA and PR. Mild laser conditions revealed only tetrameric complexes for KcsA (Figure 4c), but a variety of oligomeric states for other proteins such as PR (Figure 6a). A possible explanation could be laser-induced dissociation of protein complexes, with the degree of dissociation depending on the particular complex stability. Detection of several oligomeric forms could also reflect a natural variation in complex formation. PR is folded and active under numerous conditions such as pentamers or hexamers, and its characteristic photocycle is observed even in monomeric conformation (Reckel et al., 2011). However, we have seen that, if laser dissociation occurs, the scaffold proteins are among the first proteins to leave the disc (Figure 6), giving rise to\u00a0signals representing complexes with only one or no scaffold proteins. As the dominating species of the heterogeneous distribution of PR oligomerization states under mild laser conditions all include both scaffold proteins we can conclude that the detected species represent complexes in solution, meaning that PR is present in different oligomeric states. Under high laser intensities PR oligomers without scaffold proteins are released and can be detected as well up to hexamers, indicating that the PR proteins indeed form complexes and are not present as individual entities in the nanodiscs.\n\nThe potential importance of the lipid environment for protein oligomerization is further demonstrated by the comparison of cell-free expressed PR either in the presence of nanodiscs or detergents. Protein synthesized in the presence of the detergents DH7PC and GDN, previously identified to support the folding and stability of PR, was mostly present in monomeric conformation (Figure 6\u2014figure supplement 1a). This observation is in agreement with previous structural studies with solution NMR by using identical sample preparations and showing monomeric PR (Reckel et al., 2011). In contrast to the utilization of different detergents that results in different oligomer distributions (Reckel et al., 2011; Maciejko et al., 2015), the variation of the lipid within the nanodiscs bilayer does not change the oligomerization behavior of cell-free produced PR (Figure 6\u2014figure supplement 1b). In the case of PR lipids seem to support the formation of higher oligomer complexes but PR does not discriminate between different lipid species. Due to the increased number of attached lipids for other lipid species as discussed before for empty nanodiscs the peaks get broader and less resolved, but the overall peak pattern stays the same indicating a comparable oligomeric composition (Figure 6\u2014figure supplement 1b).\n\n### Structure-function relationship of MraY\n\nThe membrane-integrated enzyme MraY is essential for the bacterial peptidoglycan biosynthesis by linking cytoplasmic precursors to membrane-bound lipid carrier molecules resulting in lipid I formation. Like LspA, MraY is a potential target for drug design to tackle multiple-resistant bacteria (Bugg et al., 2016). In contrast to PR which\u2019s oligomer formation is not discriminated by the bilayer environment, the activity of MraY homologues is remarkably dependent on specific lipid requirements (Roos et al., 2012; Henrich et al., 2016). While B. subtilis MraY activity is not lipid selective, the activity of MraY homologues from Gram-negative bacteria such as E. coli requires anionic lipids like DMPG (Henrich et al., 2016). In respect to the formation of oligomers of MraY two-hybrid studies (White et al., 2010), crosslinking experiments and the crystal structures of MraY (Chung et al., 2013, 2016) indicate a dimeric state, but correlations of the oligomeric state and catalytic activity within different lipid environments have not yet been studied.\n\nWe have analyzed the oligomeric states of B. subtilis MraY and of E. coli MraY in MSP1E3D1 nanodiscs assembled with either anionic or non-charged zwitterionic lipids. B. subtilis MraY always revealed a dimeric state within both lipid environments (Figure 7a). In contrast, E. coli MraY shows dimer formation only if inserted into membranes composed out of the anionic lipid DMPG, but it remains monomeric in DMPC (Figure 7b). Interestingly, a signal for the dimeric state of E.coli MraY could be restored by using nanodiscs containing an equimolar mixture of DMPC and DMPG (Figure 7b). The observed dimer formation exactly correlates with the previously reported enzymatic activity in the different membranes (Figure 7c) (Henrich et al., 2016), suggesting for the first time that the active conformation of MraY could be a dimer and that this conformation is triggered by the composition of the bilayer. A lipid-like electron density in the crystal structure of Aquifex aeolicus MraY located in a hydrophobic tunnel within the dimer interface (Chung et al., 2013) (Figure 7d) further supports a potential role of lipids for MraYs structural and functional integrity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20954/elife-20954-fig7-v2.jpg)\n\n**Figure 7.:** LILBID-MS spectra of B. subtilis MraY (a) and E. coli MraY (b) in MSP1E3D1 nanodiscs with different lipids. Pictograms illustrate the composition of detected signals and lipids for each sample are indicated. Grey boxes in spectra highlight MraY dimer signals with and without scaffold protein. The different laser intensities are indicated. The inset shows a close-up of the MraY dimer region with scaffold measured under high-mass conditions. (c) Enzymatic activity of B. subtilis and E. coli MraY in nanodiscs with corresponding lipids (Henrich et al., 2016). (d) 3D crystal structure of A. aeolicus MraY (PDB: 4 J72). Electron density maps of top and side views indicate a hydrophobic tunnel within the dimer interface potentially filled with lipid molecules as highlighted by a red ellipse (Chung et al., 2013).\n\n## Discussion\n\nWhile detergents are well-established environments for the analysis of membrane proteins and their non-covalent interactions, they can drastically affect conformation and stoichiometry of membrane protein complexes. The presented strategy is therefore complementary to established techniques as it allows a completely detergent-free process suitable also for detergent-sensitive membrane proteins. Moreover, our platform provides valuable synergies by combining (i) fast and efficient production of even toxic or specifically labeled membrane proteins enabled by cell-free expression, (ii) defined, stable membrane environments contributed by nanodiscs and (iii) sensitive and tunable particle detection facilitated by LILBID-MS. This strategy is, furthermore, a fast and straightforward process and does not depend on chemical protein modifications.\n\nThe complexity of MS spectra of membrane protein/nanodiscs complexes is increased by the presence of the scaffold protein that can impede the clear identification of membrane protein signals. Labeling of the target protein with stable isotopes can address this problem as demonstrated for KcsA or hHv1-VSD. The sample production by cell-free expression is here highly advantageous, as the complete control over low-molecular-weight compounds in cell-free systems allows efficient labeling of synthesized proteins in any amino acid combination (Reckel et al., 2010; Sobhanifar et al., 2010; LaGuerre et al., 2015). Switching to a different scaffold protein upon nanodiscs preparation could be an alternative option to improve spectral resolution as demonstrated for LspA. In general, even complicated LILBID-MS spectra are comparably straight forward to analyze. Despite the complexity caused by numerous oligomeric states of the target protein in addition to its combinations with different numbers of the scaffold protein, within LILBID-spectra every species is only present with a few charge states (Morgner et al., 2006). In our nanodiscs spectra mainly the singly charged species are observed.\n\nAn important tool to probe complex stability as well as interactions between membrane proteins and/or lipids is the laser intensity of LILBID-MS. Elevated laser intensity modulates the LILBID process resulting into partly disintegrated nanodisc structures. This is presumably caused during the explosive expansion of the sample droplet after laser irradiation. Lipids are lost most likely due to deformation and subsequent rupture of the flat disc-shaped membrane. However, the mild ionization conditions of LILBID-MS are capable of preserving at least partly the initial membrane protein complex. The absence of scaffold proteins and lipids, furthermore, improves spectral resolution and helps to identify the intact as well as partly dissociated protein complexes. This is especially effective if the scaffold size is largely compared to the protein complexes (Figure 5a).\n\nThe presented platform appears to be well suited to address challenging biological questions. Complexes indicating an artificial stoichiometry different from the expected oligomeric state could never be found for any tested protein. The highest detected oligomeric state always corresponded to the previously determined native state of the target. The results, furthermore, indicate that the implemented L-CF expression of membrane proteins results into the assembly of native complexes. Therefore, the strategy allows to rapidly determine the oligomeric state of a protein within the nanodiscs in context of a membrane with defined lipid composition, giving important insights for the understanding of functional dynamics. Lipid-dependent oligomerization is a so far rarely observed regulatory mechanism of membrane proteins. The reported study on the E.coli MraY translocase is one of the first examples showing such a lipid-triggered dimerization. Notably, even close homologues such as B.\u00a0subtilis can significantly differ in their oligomeric assembly mechanism and the LILBID-MS observations nicely match with previous reports on MraYs functional activity (Henrich et al., 2016).\n\nInstrumental improvements will continuously contribute to higher resolution and will open the method to extended applications. One further direction could be the identification of specific and tightly bound lipids, which could affect structural and functional features of a membrane protein. According to the identification of lipid-protein interactions in mixed micelles (Gault et al., 2016) or tightly bound lipids by a delipidation strategy (Bechara et al., 2015), individual lipid types selectively interacting with a protein might be identified out of a provided mixture in nanodiscs membranes.\n\n## Materials and methods\n\n### Detergents and lipids\n\nPolyethylene glycol P-1,1,3,3-tetramethyl-butylphenyl-ether (Triton X-100), sodium cholate, 1,2 diheptanoyl-sn-glycero-3-phosphocholine (DHPC), dodecyl phosphocholine (DPC), glyco-diosgenin (GDN), 1,2-Dimyristoyl-sn-glycero-3-phosphocholine (DMPC), 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1\u2032-racglycerol) (POPG), 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 1,2-dimyristoyl-sn-glycero-3-phospho-(1\u2032-racglycerol) (DMPG), 1,2-dioleoyl-sn-glycero-3-phospho-(1\u2032-rac-glycerol) (DOPG), 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine (DOPE), 1,2-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS), 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC), 1',3'-bis[1,2-dimyristoyl-sn-glycero-3-phospho]-sn-glycerol (Cardiolipin), cholesterol.\n\nDetergent stock solutions of DHPC, DPC and GDN were prepared with a concentration of 10% (w/v) and water as solvent. Lipid stock solutions were prepared with 50 mM of lipid and 100\u2013300 mM of sodium cholate dissolved in water supported by vortexing and sonication in an ultrasonic bath at 37\u00b0C.\n\n### DNA techniques\n\nIntroduction of a C-terminal StrepII-tag in the hHv1-VSD (75-223) construct in pET15b, described elsewhere (Li et al., 2015), was achieved by using QuickChange mutagenesis.\n\n### Nanodisc preparation\n\nThe different membrane scaffold proteins were expressed and purified as mentioned elsewhere (Denisov et al., 2004; Hagn et al., 2013; Henrich et al., 2015a). Nanodiscs were formed by the dialysis of a mixture of MSPs and lipids in a defined protein to lipid ratio as described previously (Roos et al., 2012; Henrich et al., 2016). These ratios are critical for the reconstitution of homogenous nanodiscs. Furthermore, the transition temperature of the applied lipid species (Table 1) needs to be considered as disc formation below these temperatures can be affected. In brief, purified MSP and the desired lipids were mixed at the defined ratios, combined with 0.1% DPC and incubated for 1 hr at room temperature. For the nanodiscs formation, these mixtures were applied to dialysis bags with a MWCO of 12\u201314 kDa or Slide-A-Lyzer devices with a MWCO of 10 kDa and dialyzed against 5 l DF-buffer (40 mM Tris-HCl pH 8.0, 100 mM NaCl) for\u00a0~16 hr at room temperature. The buffer was exchanged two times, and dialysis was carried out for additional 16 hr each. Before concentration, nanodiscs solutions were centrifuged (22,000 xg, 20 min) to remove aggregates. Nanodiscs were concentrated to concentrations of 0.5\u20131.0 mM by multiple centrifugation steps (2000 xg, 15 min) using Centriprep concentrator devices (10 kDa MWCO). Concentrated nanodiscs were flash frozen using liquid nitrogen and stored at \u221280\u00b0 C until usage. Buffer exchange of nanodiscs to MS-buffer (50 mM ammonium acetate pH 6.8) was achieved by dialysis against 5 l MS-buffer. The final concentration of empty discs samples was 30\u201350 \u00b5M.\n\n### Cell-free protein production\n\nThe membrane protein production is based on a continuous exchange cell-free system (CECF) utilizing lysates from E.coli A19 cells and on T7-RNA polymerase transcription. T7-polymerase expression and purification, lysate preparation and CECF expression were performed as described previously (Schwarz et al., 2007; Henrich et al., 2015a). Heavy isotope labeling was achieved by exchanging solutions of unlabeled amino acids to amino acids including 15N and 2H nuclei. This solution is made of algal amino acid mixture 15N, d (15N, 2H uniformly labeled) with a final concentration of 1.5 mg/ml containing 16 amino acids. For these 16 amino acids only non-exchanging protons are substituted to 2H. The residual four amino acids namely asparagine (15N labeled), cysteine (unlabeled), glutamine (15N labeled) and tryptophan (15N labeled), which are not included in the algal mixture, were added to this mix to a final concentration of 1.5 mg/ml. 55 \u00b5l of reaction mixture was applied to Mini-CECF containers that were placed in the cavities of a 24-well cell-culture plate holding 825 \u00b5l of feeding mixture. Reaction and feeding mix were separated by a semipermeable membrane with a cut-off of 12\u201314 kDa. Plates were incubated at 30\u00b0C for 14\u201320 hr on a shaker at 200 rpm. For membrane protein solubilization, 10\u2013100 \u00b5M of nanodiscs of different sizes assembled with the scaffolds MSP1D1\u0394H5 or MSP1E3D1 were added to the reaction mixture. Nanodisc concentrations in the CF reaction mixtures were 20 \u00b5M (EmrE, LspA, KcsA), 60 \u00b5M (hHv1-VSD) and 80\u2013100 \u00b5M for MraYs. For PR expressions, 10 \u00b5M of MSP1E3D1 nanodiscs were supplemented. The big scaffold protein MSP1E3D1 was chosen for most samples as it offers the most membrane space and was previously shown to exhibit the best protein solubilization (Roos et al., 2012). Exceptions were made in the case of LspA and hHv1-VSD as for these proteins the solubilization using nanodiscs containing MSP1D1\u0394H5 as scaffold was already shown to be successful (Laguerre et al., 2016). Concentrations were chosen to achieve a high but not totally complete degree of membrane protein solubilization (Roos et al., 2012; Henrich et al., 2016). The reaction mixtures of PR expressions were supplemented with 600 \u00b5M all trans-retinal dissolved in DMSO. For detergent mode (D-CF) production of PR (Reckel et al., 2011), the reaction mix and the feeding mix contained 0.4% GDN and 0.04% DHPC. Volumes of reaction mixtures of samples dedicated for MS measurements ranged from 400 \u00b5l up to 1 ml.\n\n### Purification of cell-free expressed membrane proteins\n\nUnless stated otherwise, protein samples dedicated for mass spectrometry analysis were purified via the C-terminal StrepII-tag of the different membrane proteins. After expression, the reaction mix was centrifuged (22,000 xg for 10 min at 4\u00b0 C) to remove residual aggregates and the supernatant was diluted with buffer A (100 mM Tris-HCl pH 8.0, 100 mM NaCl) in the ratio 1:3. Subsequently, the solution was applied on equilibrated Streptactin resin with a bed volume corresponding to the reaction mix volume. The flow trough was re-applied three to five times to ensure maximum binding. After washing the material with six column volumes of buffer A, the proteins were eluted with 2\u20134 column volumes of buffer B (100 mM Tris-HCl pH 8.0, 100 mM NaCl, 20 mM desthiobiotin). For mass spectrometry analysis, the elution fractions were concentrated using Amicon Ultra centrifugal filters with 10 kDa MWCO to a final volume of 40\u201380 \u00b5l. Purification buffers for KcsA and MraY samples contained 20 mM KCl and 2 mM \u03b2-mercapotethanol, respectively. D-CF expressed PR was purified using the described protocol with the addition of 0.1% DHPC to all used buffers.\n\nhHv1-VSD and LspA were purified with a tandem purification (Laguerre et al., 2016). Ni2+-loaded sepharose resin was equilibrated with buffer C (100 mM Tris-HCl pH 8.0, 150 mM NaCl, 10 mM imidazole) and incubated in batch mode for 30 min at 4\u00b0C with the supernatant from the reaction mixture. After two washing steps with each 10 column volumes buffer C, followed by buffer C with 30 mM imidazole, the hHv1-VSD as well as LspA in nanodiscs were eluted with 250 mM imidazole in buffer C. The elution fraction was directly loaded onto the Strep-tactin resin and purified using the manual instructions from iba. All column steps were performed in gravity flow mode for hHv1-VSD and with an \u00c4kta-Purifier system for LspA. The combined elution fractions were dialyzed against 20 mM Hepes pH 7.0, 20 mM NaCl over night with three buffer exchanges in case of hHv1-VSD. Buffer exchange for LspA into the MS-buffer was achieved in centrifugal concentration devices (10 kDa MWCO, Amicon). Protein solutions were concentrated as mentioned above.\n\nThe protein concentration was determined by A280 measurements using a Nanodrop (Roos et al., 2012). As the sample consist of the target protein as well as of scaffold protein and the ratio per discs is not known so far, the discrete concentrations of scaffold and membrane protein could not be determined. Total protein concentrations for all measurements were in between 1.5 mg/ml and 5 mg/ml. Only in the case of PR, the concentration of the inserted membrane protein could be determined by the specific absorbance of green-light absorbing PR at 530 nm with an extinction coefficient of 44,000 M\u22121cm\u22121.\n\n### SDS-PAGE\n\nProtein samples were prepared by addition of SDS loading buffer (100 mM Tris-HCl pH 6.8, 8 M Urea, 0.12% (w/v) bromphenoleblue, 20% (w/v) SDS, 15% (v/v) glycerol, 20% (v/v) \u03b2-mercaptoethanol) and separated by Tris-Tricine SDS-PAGE (Sch\u00e4gger, 2006). Therefore, 11% Tris-Tricine gels were run for 15 min at 80 V and for 45\u201355 min at 150 V. For protein staining, gels were incubated for 20 min with a solution of 50% (v/v) ethanol and 10% (v/v) acetic acid, washed with 200 ml of ddH2O and incubated with a colloidal staining solution (0.02% (w/v) Commassie Brilliant Blue G250, 5% (w/v) aluminium sulphate-(14-18)-hydrate, 10% (v/v) ethanol and 2% (v/v) ortho-phosphoric acid).\n\n### Size-exclusion chromatography\n\nAnalytical size-exclusion chromatography was performed on an \u00c4kta Purifier FPLC system using a Superdex 200 3.2/30 or a Superdex 200 3.2/30 Increase column as described elsewhere (Roos et al., 2012) with SEC-buffer (40 mM Tris-HCl pH 8.0, 100 mM NaCl) and a flow rate of 0.05 or 0.075 ml/min, respectively.\n\n### LILBID-MS\n\nNanodisc-samples were buffer exchanged into 50 mM ammonium acetate at pH 6.8 directly before measurement with LILBID-MS. Zeba Micro Spin Desalting Columns (article number 89887) from Thermo Scientific were used to exchange the buffer, operating with a 7 kDa cut-off filter. To equilibrate the desalting column, it was washed five times with the buffer at 1500 rpm for 1 min and the final sample buffer exchange was done for 2 min at 1500 rpm. Sample concentration was within a range between 10\u00a0and\u00a0100 \u00b5M. 3 \u00b5L of buffer exchanged sample was used for MS.\n\nA piezo-driven droplet generator (MD-K-130 from Microdrop Technologies GmbH, Norderstedt, Germany) was used to produce droplets of 30 \u00b5m diameter with a frequency of 10 Hz at 100 mbar. The droplets are transferred to high vacuum and irradiated by an IR laser operating at 2.94 \u00b5m, a vibrational absorption wavelength of water. The laser is a pulsed Nd:YAG laser, pumping an optical parametric oscillator, converting the wavelength to 2.94 \u00b5m. Laser pulse length is 6 ns, and the pulse energy output is between 9.5\u00a0and\u00a023 mJ. LILBID settings have previously been published in detail (Morgner et al., 2006). Laser irradiation leads to an explosive expansion of the sample droplet and ions are released which were accelerated by a pulsed electric field and analyzed by a homebuilt reflectron-time-of-flight (TOF) setup. Ion acceleration is based on a Wiley-McLaren type ion source with a delayed acceleration pulse of 370 \u00b5s and an overall acceleration of 6.6 kV, working at 10\u22125 mbar.\n\nData detection and processing was done with the software Massign (Morgner and Robinson, 2012) available at http://massign.chem.ox.ac.uk/. MS spectra show averaged signals between 1000 and 1500 droplets. The spectra were normalized with the software OriginPro 2016.\n\nTo calculate the number of attached lipids on the scaffold protein from empty nanodiscs, the full peak width at half maximum height (FWHM) of the scaffold protein was subtracted from the FWHM monomeric scaffold protein attached with lipids and divided by the lipid mass. For the statistical analysis of the distribution of different species within the spectra of PR, the integrals of the single peaks were normalized to the overall peak area. Mean values and standard deviation of 2\u20133 measurements were calculated. This was done separately for every of the three spectra with different laser intensities.\n",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "1648652e-2304-40e6-895e-0ab087845ca9",
+      "submission_id": "5da97744-970d-4734-b623-451e69c9b9af",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Olga Boudker, Weill Cornell Medical College , United States\n\n## Review text\n\nDOI: [10.7554/eLife.20954.016](https://doi.org/10.7554/eLife.20954.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Analyzing native membrane protein assembly in nanodiscs by combined non-covalent mass spectrometry and synthetic biology\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMorgner et al. present novel and interesting data on the use of LILBID MS to investigate transmembrane protein (complexes) in nanodiscs. There is a considerable number of different proteins, lipids and scaffold proteins shown and a relatively clear picture of the performance of \"AMPLE-MS\" for the characterization of these reconstituted particles emerges. The reviewers were positive in their evaluation of the work, but significant concerns were voiced.\n\nThe key shared concern was the use of LILBID MS as a bundled \"novel\" approach with protein production into nanodiscs. The production part has been described elsewhere and is not novel. Furthermore, it is unclear whether in vitro protein production in the context of LILBID MS provides any advantages over other ways of producing nanodisc-incorporated protein samples. Introduction of a new term \"AMPLE-MS\" seems unnecessary. Additionally, the experimental description is insufficient. There should be a much more detailed description of how the experiments are performed and analyzed. More specific concerns are:\n\nEssential revisions:\n\n1) While results are significant and their novelty warrants publication, the key findings are somewhat misrepresented. In particular, the use of cell-free expression (which facilitates direct transfer of lipid-bound protein into nanodiscs) is mixed with the novel MS approach (at least for this type of application) in a way, which may confuse the reader and blur the line between what is novel and what is not. Cell-free expression has been described before, and so has the production of lipid nanodiscs. Protein expression and purification in detergent is recently used to form protein-lipid nanodiscs, so how does the use of LILBID MS rely on cell-free expression? What is its performance with lipid nanodiscs, which were prepared differently, i.e. the \"classic\" way? How does LILBID compare with nano-ESI (see literature)? The innovation presented in this paper lies in the use of LILBID, but it is unclear how this is linked with the alternative origins and preparation methods of lipid nanodiscs. If the authors believe this to be the case, they should show the evidence.\n\n2) If the nanodisc-based production were retained in the manuscript, then more details would be required. How does one select lipoproteins for the formation of the nanodiscs? Are there experimental advantages/disadvantages of distinct proteins in view of the proposed methodologies? What are checkpoints in the process; i.e. how does one know that the proteins have been properly expressed and folded in the nanodiscs? In general, the description of the cell-free expression into nanodiscs is only cursory.\n\n3) How would one determine whether the observed species reflect heterogeneity of the sample following cell-free expression or disruption of the complex during gas phase formation? Could multiple copies of monomeric proteins be inserted into the same nanondiscs in the absence of protein:protein interactions? How would one know? Finally, it is unclear form the manuscript how common is LILBID instrumentation setup. If it is not common, how easy is it to establish based on more commonly accessible instruments. What are the advantages (current or potential) of LILBID compared to more common ESI?\n\n4) The term \"synthetic biology\" is uncommon for cell-free expression. Statements are also made about the use of detergents (e.g. bacteriorhodopsin), which while true are somewhat misleading. In order to natively reconstitute a transmembrane protein, a suitable environment needs to be provided, i.e. the correct lipid or lipid mixture, or the correct detergent (which is obviously meant to mimic the lipid). Just comparing some lipids with some detergents is not sufficient to conclude which method is better.\n\n5) The laser power required to resolve individual masses of nanodiscs is too high to keep them intact. All the investigations described in Figure 2 and supplements seem to be of the remaining few lipid molecules, not reflecting intact nanodiscs. It is not explained in sufficient detail what is the value of these experiments. The use of shorter lipids is based on these controls, but it is not clear how critical is this selection.\n\n6) In all experiments, attention is given to resolving partially dissociated species. How is that information used to infer biologically relevant conclusions?\n\n7) Subsection \u201cOligomeric state analysis of membrane proteins in nanodiscs\u201d, second paragraph: if that was true, then switching to diff. scaffold proteins or isotopes should show such species, but I don't think that they are actually released intact from the nanodiscs! This is too important to brush over with a \"cannot yet be assigned\" comment. Please elaborate this point in the paper.\n\n8) Subsection \u201cRefinement of LILBID-MS signal resolution by isotope labeling\u201d, first paragraph: what type of deuterium labeling is used (during expression or later?) and how stable do the authors think that such labels will be?\n\n9) A reviewer is not fully convinced by data on MraY from B. subtilis and E. coli. It seems clear that there is dimer of B. subtilis MraY in both DMPG and DMPC, but the amount of a monomer/nanodisc complex is much greater in DMPC. In contrast, the amount of dimer is very small, barely out of the noise. This does not correlate with comparable activity observed in these two lipids. Overall, it is not clear whether similar amounts of proteins were produced and analyzed. SDS gels showing the protein assembled into different lipids would have been helpful. In contrast, inclusion of previously published data in the figure seems unnecessary.\n\n10) The conclusion needs to be rewritten as it mixes and confuses issues of protein production, nanodisc preparation and MS characterization.\n\n11) Discussion, third paragraph and elsewhere: I disagree that the spectra are straightforward to analyze. The authors use specialized, home-written software and peak shapes are often ambiguous (see above). More importantly, while I agree that the largest complex is here always matching the expected species, there are plenty of smaller subcomplexes visible. Are they due to fragmentation? What mechanism (asymmetric CID?) Often the intact protein complex cannot be released from the nanodisc or only forms a minor species among many in the spectra.\n",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0d982c33-db10-4bac-912e-548393b0c2d8",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C1",
+      "claim": "Membrane proteins frequently assemble into higher order homo- or hetero-oligomers within their natural lipid environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Membrane proteins frequently assemble into higher order homo- or hetero-oligomers within their natural lipid environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about membrane protein behavior presented in the abstract without specific experimental data in this sentence, but is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "6eaee2cc-0ca2-400d-bd7c-e17f763f21ed",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C2",
+      "claim": "Complex formation can modulate membrane protein folding, activity as well as substrate selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex formation can modulate their folding, activity as well as substrate selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established understanding of membrane protein oligomerization effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "be13facc-aedf-4dd9-9362-a1831a3e3c3f",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C3",
+      "claim": "The combination of cell-free synthetic biology, nanodisc-technology and non-covalent mass spectrometry provides excellent synergies for the analysis of membrane protein oligomerization within defined membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of cell-free synthetic biology, nanodisc-technology and non-covalent mass spectrometry provides excellent synergies for the analysis of membrane protein oligomerization within defined membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental demonstrations throughout the manuscript showing successful oligomeric state characterization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5c25a5c6-f2b1-4724-b0db-fb3f6d5bad8a",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C4",
+      "claim": "The platform can characterize membrane proteins assembling up to hexameric complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We exemplify our strategy by oligomeric state characterization of various membrane proteins including ion channels, transporters and membrane-integrated enzymes assembling up to hexameric complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the proteorhodopsin data showing hexameric complexes in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "dea8d823-5032-4ccd-97e7-dced791428b2",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C5",
+      "claim": "MraY translocase exhibits lipid-dependent dimer formation that correlates with enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We further indicate a lipid-dependent dimer formation of MraY translocase correlating with the enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data in Figure 7 showing E. coli MraY dimerization in DMPG but not DMPC, correlating with activity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "b958624b-1eab-46c0-858f-b7d025c9ea90",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C6",
+      "claim": "The majority of membrane proteins is organized in higher order complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of membrane proteins is organized in higher order complexes and oligomeric assembly is frequently used to modulate protein function or it is even essential for activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established scientific knowledge about membrane protein organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "6bf46e5c-91c1-4622-99a6-0aad6c5fee43",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C7",
+      "claim": "Classical in vitro studies need to implement disruption of membranes and subsequent solubilization of the membrane proteins into detergents.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, classical in vitro studies need to implement disruption of membranes and subsequent solubilization of the membrane proteins into detergents (Seddon et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seddon et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "255c922a-6bbb-4f21-9752-c0477960d9ca",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C8",
+      "claim": "Detergent treatment can irreversibly modify the stoichiometry or even disrupt and unfold native membrane protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This relatively harsh treatment can irreversibly modify the stoichiometry or even disrupt and unfold native membrane protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the effects of detergent treatment on membrane proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "2d0efa4a-bfc5-4cd4-b8ca-4778389d40ab",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C9",
+      "claim": "The presence and composition of the lipid environment can influence folding, proper adoption of quaternary structures and the assembly of heteromeric complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the presence and composition of the lipid environment can influence folding, proper adoption of quaternary structures and the assembly of heteromeric complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and the experimental data on MraY in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5f825e56-ed3c-46bc-9607-637a9fbe169c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C10",
+      "claim": "Lipids can be components of membrane protein structures and act as modulators of membrane protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipids can even be components of membrane protein structures and act as modulators of membrane protein function (van Dalen et al., 2002; Hunte and Richers, 2008; Laganowsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to van Dalen et al., 2002; Hunte and Richers, 2008; Laganowsky et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5dfdee23-f7f2-4726-ad95-96e1450a0f27",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C11",
+      "claim": "Nanodiscs are disc-shaped bilayer patches stabilized by two copies of a membrane scaffold protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect, the recently developed nanodisc technology, based on well-defined disc-shaped bilayer patches stabilized by two copies of a membrane scaffold protein, provides excellent and well-defined alternative lipid environments for membrane proteins (Bayburt and Sligar, 2010) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Bayburt and Sligar, 2010 and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "e7a64737-72e5-41e9-b1fd-da5dffbf8004",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C12",
+      "claim": "Nanodiscs are completely soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "The utilization of nanodiscs is extremely beneficial as they are completely soluble, enabling the application of numerous biophysical and biochemical techniques for the characterization of membrane proteins in a native bilayer environment (Denisov and Sligar, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Denisov and Sligar, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d7594771-3ac0-48dc-a6a9-ba492b5132e9",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C13",
+      "claim": "A detergent-free strategy for co-translational insertion of membrane proteins into preformed empty nanodiscs by cell-free expression has been developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in order to avoid potentially critical detergent contacts of membrane proteins, we have developed a detergent-free strategy for the co-translational insertion of membrane proteins into preformed empty nanodiscs by cell-free (CF) expression (Roos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roos et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "80318e0a-a159-4634-8793-1579b8697d2f",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C14",
+      "claim": "Lipid-based cell-free expression was the only way to obtain functionally folded E. coli MraY translocase.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the case of the extremely detergent-sensitive E. coli MraY translocase, a membrane-integrated enzyme essential for lipid I biosynthesis, this lipid-based CF expression (L-CF) was the only way to obtain functionally folded protein (Ma et al., 2011; Henrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ma et al., 2011 and Henrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "31e1aedb-0bf9-44dd-80b8-1a37ab620b0d",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C15",
+      "claim": "Cell-free expression enables the production of toxic or otherwise difficult membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, CF expression enables the production of toxic or otherwise difficult membrane proteins and provides numerous options for their efficient labeling (Reckel et al., 2010; Henrich et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Reckel et al., 2010 and Henrich et al., 2015b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "36de36e8-97ae-43a7-b162-ef4525d21193",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C16",
+      "claim": "Oligomeric states of proteins can be extremely sensitive toward covalent modifications or environmental parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, oligomeric states of proteins can be extremely sensitive toward covalent modifications or environmental parameters (Politi et al., 2009; Maciejko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Politi et al., 2009 and Maciejko et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "be1181f5-1111-4d45-9c2d-1f3158c15f82",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C17",
+      "claim": "Non-covalent mass spectrometry using mild ionization techniques such as ESI or LILBID became key technologies for the analysis of soluble proteins as well as of detergent solubilized membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently developed non-covalent mass spectrometry (MS) using mild ionization techniques such as electrospray-ionization (ESI) or laser-induced-liquid-bead-ion-desorption (LILBID) thus became key technologies for the analysis of soluble proteins as well as of detergent solubilized membrane proteins (Barrera and Robinson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barrera and Robinson, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d5657769-dadc-41fc-a8d0-cd71fe682b0c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C18",
+      "claim": "Sample transfer from solution to gas phase is most critical for non-covalent MS and requires carefully adjusted settings to maintain intact membrane protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample transfer from solution to gas phase is most critical for non-covalent MS and requires carefully adjusted settings to maintain intact membrane protein complexes (Barrera et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barrera et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "2004a867-f159-4c33-835b-4d47b298b239",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C19",
+      "claim": "LILBID-MS emerged as a new tool to investigate membrane proteins in native-like environments, especially based on its wide tolerance to additives needed for membrane protein solubilization.",
+      "claim_type": "EXPLICIT",
+      "source": "LILBID-MS as a technique complementary to ESI-MS emerged as new tool to investigate membrane proteins in native-like environments, especially based on its wide tolerance to additives needed for membrane protein solubilization (Morgner et al., 2007; Vonck et al., 2009; Maciejko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Morgner et al., 2007; Vonck et al., 2009; Maciejko et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "121cf8e5-71e7-4cc3-9603-5dd18cf1cdde",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C20",
+      "claim": "ESI-MS in combination with nanodiscs has been successful to investigate membrane proteins in a native-like lipid environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach to employ ESI-MS in combination with nanodiscs has recently been successful to investigate membrane proteins in a native-like lipid environment (Hopper et al., 2013; Marty et al., 2016) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Hopper et al., 2013 and Marty et al., 2016, and illustrated in Figure 1b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "00130085-609e-4007-ad1a-23c895d32c02",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C21",
+      "claim": "The ESI-MS approach with nanodiscs still includes the risk of complex disintegration by the classical detergent treatment of the protein samples.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this procedure still includes the risk of complex disintegration by the classical detergent treatment of the protein samples (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the workflow shown in Figure 1b and the known effects of detergent treatment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "4f9eeeec-c297-4066-a986-cde9d85b17a0",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C22",
+      "claim": "Empty nanodiscs consisting of MSP1E3D1 and DPPC contain roughly 200 DPPC lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "When the LILBID laser, desorbing the sample droplets, was tuned to a low laser power of 10 mJ, signals were revealed corresponding to intact nanodiscs comprising two copies of the scaffold protein and roughly 200 DPPC lipids (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ca49627b-2fed-427e-87df-7c369d8218e3",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C23",
+      "claim": "At low laser power (10 mJ), intact nanodiscs comprising two copies of the scaffold protein were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "When the LILBID laser, desorbing the sample droplets, was tuned to a low laser power of 10 mJ, signals were revealed corresponding to intact nanodiscs comprising two copies of the scaffold protein and roughly 200 DPPC lipids (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "3b289496-ebd8-4290-b153-641531fa5a7e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C24",
+      "claim": "At 23 mJ laser power, nanodiscs disintegrate and scaffold proteins with a few remaining lipid molecules are detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, spectra remain broad and not well resolved and are not suitable for detailed assignments. Nevertheless, single lipids could be resolved by tuning the laser power to 23 mJ causing the disintegration of the nanodiscs. Detected signals correspond to scaffold proteins with a few remaining lipid molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "92493a1d-9e43-4f2a-8b03-ff5789461252",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C25",
+      "claim": "Switching from MSP1D1\u0394H5 over MSP1 to the larger MSP1E3D1 scaffold protein coincides with an increase from six to up to eleven attached DMPG molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching from MSP1D1\u0394H5 over MSP1 to the larger MSP1E3D1 scaffold protein coincides with an increase from six to up to eleven attached DMPG molecules (Figure 2\u2014figure supplement 1a, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2\u2014figure supplement 1a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d7ae3a36-98fd-4ee5-896b-d96f39d8b0fb",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C26",
+      "claim": "Elongation of the alkyl chain with unsaturated alkyl groups led to increased numbers of attached lipids with 15 or 20 for POPG and DOPG, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation of the alkyl chain with unsaturated alkyl groups led to further increased numbers of attached lipids with 15 or 20 for POPG and DOPG, respectively (Figure 2\u2014figure supplement 2a, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2\u2014figure supplement 2a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "8f042546-019f-4adf-a4ab-55400276fcd0",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C27",
+      "claim": "Variation of the lipid head groups (from DOPG to DOPS or DOPC) did not modulate lipid attachments drastically.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the chain length, the variation of the lipid head groups (from DOPG to DOPS or DOPC) did not modulate lipid attachments drastically (Figure 2\u2014figure supplement 3a, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 2\u2014figure supplement 3a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "e776e99c-08e5-450d-a08f-c6bbc955302c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C28",
+      "claim": "The utilization of DOPE lipids leads to the formation of highly heterogeneous nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the utilization of DOPE lipids leads to the formation of highly heterogeneous nanodiscs (Figure 2\u2014figure supplement 3a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS and size exclusion chromatography data shown in Figure 2\u2014figure supplement 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "b38d57d7-a690-40e9-a525-288261240a7c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C29",
+      "claim": "PE lipids have an intrinsic tendency to form non-bilayer phases with higher curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be caused by the intrinsic tendency of PE lipids to form non-bilayer phases with higher curvature (Gruner, 1985), which possibly prevents the formation of proper nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gruner, 1985.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "a6b2e1fc-ed7a-483a-9813-78cebb243735",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C30",
+      "claim": "Non-bilayer lipids can significantly decrease reconstitution and activity of EmrE in liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as shown for the multi-drug transporter EmrE, non-bilayer lipids can significantly decrease reconstitution and activity of membrane proteins in liposomes (Curnow et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Curnow et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d0fdf6a0-b40f-4100-842c-082ca92ab967",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C31",
+      "claim": "In DMPG:cardiolipin mixtures, the mass difference between the two lipids was sufficient to clearly distinguish and count the scaffold-bound cardiolipin and DMPG molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of DMPG:cardiolipin mixtures, the mass difference between the two lipids was sufficient to clearly distinguish and count the scaffold-bound cardiolipin and DMPG molecules (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "89d364a1-385c-43e0-bee4-4097c39daaa1",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C32",
+      "claim": "KcsA is known to be a tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "The potassium channel KcsA (Cortes and Perozo, 1997; van Dalen et al., 2002), the small multidrug transporter EmrE (Ubarretxena-Belandia et al., 2003; Morrison et al., 2012) (Figure 4a) and the signal peptidase LspA (Vogeley et al., 2016) are known to be tetramer, dimer and monomer, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cortes and Perozo, 1997 and van Dalen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "a2fd0aa9-ae1e-47a0-8f5b-92050e937c35",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C33",
+      "claim": "EmrE is known to be a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The potassium channel KcsA (Cortes and Perozo, 1997; van Dalen et al., 2002), the small multidrug transporter EmrE (Ubarretxena-Belandia et al., 2003; Morrison et al., 2012) (Figure 4a) and the signal peptidase LspA (Vogeley et al., 2016) are known to be tetramer, dimer and monomer, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ubarretxena-Belandia et al., 2003 and Morrison et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ede35700-f885-4a60-96a5-dc6fda448b6a",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C34",
+      "claim": "LspA is known to be a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The potassium channel KcsA (Cortes and Perozo, 1997; van Dalen et al., 2002), the small multidrug transporter EmrE (Ubarretxena-Belandia et al., 2003; Morrison et al., 2012) (Figure 4a) and the signal peptidase LspA (Vogeley et al., 2016) are known to be tetramer, dimer and monomer, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vogeley et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "dfa6abd4-2abb-4cf0-afca-38f549974b96",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C35",
+      "claim": "LILBID-MS detected signals corresponding to the expected oligomeric states of KcsA, EmrE, and LspA in combination with two membrane scaffold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For all proteins, clear MS signals were detected corresponding to the expected oligomeric states in combination with the two membrane scaffold proteins (MSPs) (Figures 4b,c and 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figures 4b,c and 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "c8cfa564-321f-47a8-a1cf-f372148d0e2a",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C36",
+      "claim": "Elevated laser energies revealed additional signals assigned to the respective complexes after loss of MSPs or target complex subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated laser energies revealed additional signals assigned to the respective complexes after loss of MSPs or target complex subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "1d00a7f2-329d-4ed0-9d6f-72bbc1dd2ef3",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C37",
+      "claim": "EmrE monomer and dimer without any attached scaffold proteins can be detected, indicating that the EmrE complex can be dissociated from the nanodiscs without losing its integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4b clearly shows signals consistent with EmrE monomer and dimer without any attached scaffold proteins, indicating that within LILBID-MS analysis the EmrE complex can be dissociated from the nanodiscs without losing its integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "43aebe8e-35f4-45e8-8bdc-dc74c34b634b",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C38",
+      "claim": "The tetrameric stoichiometry of KcsA deduced from low-laser intensity spectra could be confirmed by SDS-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the tetrameric stoichiometry deduced from the low-laser intensity spectra could be confirmed by SDS-PAGE (Cortes and Perozo, 1997) (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the SDS-PAGE data shown in Figure 4d and citation to Cortes and Perozo, 1997.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "be099a33-96cd-4dbf-a7e5-2f04e3667c75",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C39",
+      "claim": "The voltage-sensing domain of the human proton channel Hv1 (hHv1-VSD) exhibits a dimeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides these two well-characterized model systems, we further analyzed nanodiscs containing the voltage-sensing domain of the human proton channel Hv1 (hHv1-VSD). In this case, the nanodiscs were assembled using the smaller MSP version MSP1D1\u0394H5 as the preparation of cell-free produced VSD samples has already been optimized for NMR investigations (Laguerre et al., 2016). We could reveal a dimeric state (Figure 5b), despite the lack of the intracellular domain being proposed as the main dimerization interface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0fd50cd9-8d54-45c1-b073-14f4c52d9725",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C40",
+      "claim": "The intracellular domain is not essential for hHv1 dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our strategy supports recent findings that this domain is not essential for hHv1 dimerization (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing hHv1-VSD dimerization without the intracellular domain and citation to Li et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "a5c01e2e-a969-42a2-bd23-363c9712d65f",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C41",
+      "claim": "The 85.32 kDa KcsA tetramer differs only by 0.07 kDa from a complex of two MSP1E3D1 scaffold proteins with one KcsA monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "As an example, the 85.32 kDa KcsA tetramer differs only by 0.07 kDa from a complex of two MSP1E3D1 scaffold proteins with one KcsA monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculation from the known molecular weights of the components.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "4213bbe2-196e-469a-8b43-8bb7209e98c2",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C42",
+      "claim": "15N and 2H isotope labeling of KcsA in MSP1E3D1 nanodiscs improved spectral resolution and revealed signals for the free tetramer at 91.08 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the 15N and 2H isotope labeling of KcsA in MSP1E3D1 nanodiscs improved spectral resolution and revealed signals for the free tetramer at 91.08 kDa, now separated by 4.14 kDa from the KcsA monomer with two attached MSPs detected at 86.93 kDa (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "c4b05a84-5d99-44e9-aaf4-e1456477ac8f",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C43",
+      "claim": "The scaffold protein MSP1D1\u0394H5 without the His6-tag has a molecular mass of 19.49 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "The scaffold protein MSP1D1\u0394H5 without the implemented His6-tag has a molecular mass of 19.49 kDa and is therefore close to the hHv1-VSD monomer (20.80 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the calculated molecular weight shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "689e8772-6f56-4516-85d8-14ca49ec2d0e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C44",
+      "claim": "15N and 2H labeling of hHv1-VSD increases its mass to 22.20 kDa, resulting in a mass difference of 2.71 kDa from MSP1D1\u0394H5.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, 15N and 2H labeling of hHv1-VSD separates both signals clearly by increasing the mass of hHv1-VSD to 22.20 kDa, now resulting into a mass difference of 2.71 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the calculated molecular weight shown in Table 2 and the LILBID-MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "11e5d936-5d76-4d35-83cf-f79e5b6c575b",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C45",
+      "claim": "Translation of unlabeled LspA into MSP1E3D1 nanodiscs instead of MSP1D1\u0394H5 nanodiscs sufficiently separated the signals revealing the expected monomeric state of LspA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, signal overlap can alternatively be addressed by using different scaffold protein derivatives for nanodiscs assembly. Translation of unlabeled LspA (21.52 kDa) into MSP1E3D1 nanodiscs instead of MSP1D1\u0394H5 nanodiscs sufficiently separated the signals now revealing the expected monomeric state of LspA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "121841ee-72fa-40f1-81a1-f2b6e01ec576",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C46",
+      "claim": "PR forms up to hexameric complexes in its natural membrane environment but is also stable and active as a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "PR forms up to hexameric complexes in its natural membrane environment but is also stable and active as a monomer (Klyszejko et al., 2008; Reckel et al., 2011; Maciejko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Klyszejko et al., 2008; Reckel et al., 2011; Maciejko et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "74440c1d-c1f8-4c23-b1ee-6f0a775ff58b",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C47",
+      "claim": "Single-molecule force microscopy with cell-free synthesized PR/nanodisc samples suggested multimeric conformations of PR co-translationally inserted into MSP1E3D1 nanodiscs.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule force microscopy with cell-free synthesized PR/nanodisc samples already suggested multimeric conformations of PR co-translationally inserted into MSP1E3D1 nanodiscs (Roos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roos et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0273939b-e27d-44cc-9aad-3275ec43d310",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C48",
+      "claim": "Monomeric PR occupies a surface of around ~6 nm2.",
+      "claim_type": "EXPLICIT",
+      "source": "Monomeric PR occupies a surface of around ~6 nm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Klyszejko et al., 2008 in the context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "6038e386-6c22-4082-b5fc-618f701e9fd7",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C49",
+      "claim": "A pentameric or hexameric complex of PR would require a membrane space of at least 25\u201330 nm2 and 33\u201336 nm2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "A pentameric or hexameric complex of PR would thus potentially require a membrane space of at least 25\u201330 nm2 and 33\u201336 nm2, respectively (Klyszejko et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculation from the monomeric PR surface area and citation to Klyszejko et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "52ccc879-9639-4b97-b515-a93d8aeb0c38",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C50",
+      "claim": "Nanodiscs composed of MSP1E3D1 have a calculated membrane area of 113 nm2.",
+      "claim_type": "EXPLICIT",
+      "source": "It should therefore be possible that even such rather large complexes can assemble within nanodiscs composed of MSP1E3D1 having a calculated membrane area of 113 nm2 (Denisov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Denisov et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "2f84aee0-b98e-4b2e-9509-0af9a9f88495",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C51",
+      "claim": "LILBID-MS analysis of cell-free generated PR/nanodiscs complexes composed of MSP1E3D1 and DMPG revealed multimeric states of PR.",
+      "claim_type": "EXPLICIT",
+      "source": "As proposed and in agreement with previous findings obtained with complementary techniques, the MS analysis under mild laser conditions of cell-free generated PR/nanodiscs complexes composed of MSP1E3D1 and DMPG revealed multimeric states of PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d095b63c-c708-48c0-8aa2-d638193ee5e3",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C52",
+      "claim": "PR/nanodisc spectra show a distribution of complexes containing two scaffold proteins and up to six PR.",
+      "claim_type": "EXPLICIT",
+      "source": "The spectra show a distribution of complexes containing two scaffold proteins and up to six PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "6f795c69-4af5-46d9-b4d8-4086cded3ac9",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C53",
+      "claim": "Elevated laser conditions revealed various additional signals of PR with or without scaffold proteins indicating the formation of stable PR complexes up to penta- and hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated laser conditions revealed various additional signals of PR with or without scaffold proteins indicating the formation of stable PR complexes up to penta- and hexamers (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "30cec162-1478-4a00-a4f9-9bc466db8f8c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C54",
+      "claim": "PR synthesized in the presence of the detergents DH7PC and GDN was mostly present in monomeric conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein synthesized in the presence of the detergents DH7PC and GDN, previously identified to support the folding and stability of PR, was mostly present in monomeric conformation (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "a82b0f90-a420-41b6-9003-39980cb2ddb2",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C55",
+      "claim": "Previous structural studies with solution NMR using identical sample preparations showed monomeric PR.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is in agreement with previous structural studies with solution NMR by using identical sample preparations and showing monomeric PR (Reckel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Reckel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "996afe8d-e0da-46dc-a9f4-5bf5fa11e0e0",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C56",
+      "claim": "The variation of the lipid within the nanodiscs bilayer does not change the oligomerization behavior of cell-free produced PR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the utilization of different detergents that results in different oligomer distributions (Reckel et al., 2011; Maciejko et al., 2015), the variation of the lipid within the nanodiscs bilayer does not change the oligomerization behavior of cell-free produced PR (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6\u2014figure supplement 1b and citations to Reckel et al., 2011 and Maciejko et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5efad2cc-250f-4291-8571-5ce6c8b2d58d",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C57",
+      "claim": "MraY is essential for the bacterial peptidoglycan biosynthesis by linking cytoplasmic precursors to membrane-bound lipid carrier molecules resulting in lipid I formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-integrated enzyme MraY is essential for the bacterial peptidoglycan biosynthesis by linking cytoplasmic precursors to membrane-bound lipid carrier molecules resulting in lipid I formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about MraY function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "82b7937d-a0b5-4a6c-8ca4-72c4b4fd9bc4",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C58",
+      "claim": "MraY is a potential target for drug design to tackle multiple-resistant bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Like LspA, MraY is a potential target for drug design to tackle multiple-resistant bacteria (Bugg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bugg et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "acc90145-7e33-45c9-aaa4-ebb2f92f8335",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C59",
+      "claim": "The activity of MraY homologues is remarkably dependent on specific lipid requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to PR which's oligomer formation is not discriminated by the bilayer environment, the activity of MraY homologues is remarkably dependent on specific lipid requirements (Roos et al., 2012; Henrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Roos et al., 2012 and Henrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0408d93d-202c-4b16-9a3a-64ed88bb23b2",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C60",
+      "claim": "B. subtilis MraY activity is not lipid selective.",
+      "claim_type": "EXPLICIT",
+      "source": "While B. subtilis MraY activity is not lipid selective, the activity of MraY homologues from Gram-negative bacteria such as E. coli requires anionic lipids like DMPG (Henrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Henrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "af0075de-5a4c-4af6-a0d4-686f485ba2ed",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C61",
+      "claim": "The activity of E. coli MraY requires anionic lipids like DMPG.",
+      "claim_type": "EXPLICIT",
+      "source": "While B. subtilis MraY activity is not lipid selective, the activity of MraY homologues from Gram-negative bacteria such as E. coli requires anionic lipids like DMPG (Henrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Henrich et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "01666b92-1acf-47e4-9c25-34c2071d54df",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C62",
+      "claim": "Two-hybrid studies, crosslinking experiments and the crystal structures of MraY indicate a dimeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "In respect to the formation of oligomers of MraY two-hybrid studies (White et al., 2010), crosslinking experiments and the crystal structures of MraY (Chung et al., 2013, 2016) indicate a dimeric state, but correlations of the oligomeric state and catalytic activity within different lipid environments have not yet been studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to White et al., 2010 and Chung et al., 2013, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ab3f810e-3771-48a5-9b1e-0a525bd2b0ad",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C63",
+      "claim": "B. subtilis MraY always revealed a dimeric state within both DMPG and DMPC lipid environments.",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis MraY always revealed a dimeric state within both lipid environments (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 7a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "610e00eb-3ffd-43e8-b818-908c49be7640",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C64",
+      "claim": "E. coli MraY shows dimer formation only if inserted into membranes composed out of the anionic lipid DMPG, but it remains monomeric in DMPC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, E. coli MraY shows dimer formation only if inserted into membranes composed out of the anionic lipid DMPG, but it remains monomeric in DMPC (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "4396d5f6-ccd9-4d3c-a940-e3770aaa38ed",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C65",
+      "claim": "A signal for the dimeric state of E. coli MraY could be restored by using nanodiscs containing an equimolar mixture of DMPC and DMPG.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a signal for the dimeric state of E.coli MraY could be restored by using nanodiscs containing an equimolar mixture of DMPC and DMPG (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "f111618d-4363-4e64-ba31-2abb4c86f0bd",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C66",
+      "claim": "The observed dimer formation of E. coli MraY exactly correlates with the previously reported enzymatic activity in the different membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed dimer formation exactly correlates with the previously reported enzymatic activity in the different membranes (Figure 7c) (Henrich et al., 2016), suggesting for the first time that the active conformation of MraY could be a dimer and that this conformation is triggered by the composition of the bilayer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LILBID-MS data in Figure 7b and the activity data in Figure 7c, with citation to Henrich et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0daac7d0-805d-4490-8521-94d26e0edaaf",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C67",
+      "claim": "The active conformation of MraY could be a dimer triggered by the composition of the bilayer.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed dimer formation exactly correlates with the previously reported enzymatic activity in the different membranes (Figure 7c) (Henrich et al., 2016), suggesting for the first time that the active conformation of MraY could be a dimer and that this conformation is triggered by the composition of the bilayer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between dimerization and activity data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "23b7ee1d-4599-4d79-9da0-2d9c6a0c6feb",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C68",
+      "claim": "A lipid-like electron density in the crystal structure of Aquifex aeolicus MraY is located in a hydrophobic tunnel within the dimer interface.",
+      "claim_type": "EXPLICIT",
+      "source": "A lipid-like electron density in the crystal structure of Aquifex aeolicus MraY located in a hydrophobic tunnel within the dimer interface (Chung et al., 2013) (Figure 7d) further supports a potential role of lipids for MraYs structural and functional integrity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Chung et al., 2013 and the crystal structure shown in Figure 7d.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "b43c964d-edb1-4f6a-9625-c0235c52ae19",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C69",
+      "claim": "Detergents can drastically affect conformation and stoichiometry of membrane protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "While detergents are well-established environments for the analysis of membrane proteins and their non-covalent interactions, they can drastically affect conformation and stoichiometry of membrane protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about detergent effects on membrane proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5606a147-f83c-4603-a831-88395f732f85",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C70",
+      "claim": "The presented strategy is complementary to established techniques as it allows a completely detergent-free process suitable also for detergent-sensitive membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented strategy is therefore complementary to established techniques as it allows a completely detergent-free process suitable also for detergent-sensitive membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the workflow described in the manuscript avoiding detergent contact.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "dfbfdeaf-63ea-4548-b224-5b3753122056",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C71",
+      "claim": "The platform provides synergies by combining fast and efficient production of membrane proteins by cell-free expression, defined membrane environments by nanodiscs, and sensitive particle detection by LILBID-MS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our platform provides valuable synergies by combining (i) fast and efficient production of even toxic or specifically labeled membrane proteins enabled by cell-free expression, (ii) defined, stable membrane environments contributed by nanodiscs and (iii) sensitive and tunable particle detection facilitated by LILBID-MS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the integration of the three technologies demonstrated in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "1cb3e010-c619-4118-9c9e-433a633349f7",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C72",
+      "claim": "The strategy is a fast and straightforward process and does not depend on chemical protein modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy is, furthermore, a fast and straightforward process and does not depend on chemical protein modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the workflow described in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d4edfc0a-1515-4662-9dae-4b2d6cfb664e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C73",
+      "claim": "Labeling of the target protein with stable isotopes can address the problem of signal overlap in MS spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The complexity of MS spectra of membrane protein/nanodiscs complexes is increased by the presence of the scaffold protein that can impede the clear identification of membrane protein signals. Labeling of the target protein with stable isotopes can address this problem as demonstrated for KcsA or hHv1-VSD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "2ff1356a-34d2-46c1-89fd-bd8a15daeb0b",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C74",
+      "claim": "Cell-free expression allows efficient labeling of synthesized proteins in any amino acid combination.",
+      "claim_type": "EXPLICIT",
+      "source": "The sample production by cell-free expression is here highly advantageous, as the complete control over low-molecular-weight compounds in cell-free systems allows efficient labeling of synthesized proteins in any amino acid combination (Reckel et al., 2010; Sobhanifar et al., 2010; LaGuerre et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Reckel et al., 2010; Sobhanifar et al., 2010; LaGuerre et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ae67b51e-5ecb-4ec0-a532-ec15c761d6c1",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C75",
+      "claim": "Within LILBID-spectra every species is only present with a few charge states.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, even complicated LILBID-MS spectra are comparably straight forward to analyze. Despite the complexity caused by numerous oligomeric states of the target protein in addition to its combinations with different numbers of the scaffold protein, within LILBID-spectra every species is only present with a few charge states (Morgner et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Morgner et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "9f75b0c0-41e0-4795-8043-3054b0984bed",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C76",
+      "claim": "In the nanodisc spectra mainly the singly charged species are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In our nanodiscs spectra mainly the singly charged species are observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the LILBID-MS data shown throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "55ee3582-203a-47c2-9db6-479e0a93ae61",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C77",
+      "claim": "Elevated laser intensity modulates the LILBID process resulting into partly disintegrated nanodisc structures.",
+      "claim_type": "EXPLICIT",
+      "source": "An important tool to probe complex stability as well as interactions between membrane proteins and/or lipids is the laser intensity of LILBID-MS. Elevated laser intensity modulates the LILBID process resulting into partly disintegrated nanodisc structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown throughout the manuscript at different laser powers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "9fc035ab-f2fd-400f-ad5e-6a3c2688f7cf",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C78",
+      "claim": "Lipids are lost most likely due to deformation and subsequent rupture of the flat disc-shaped membrane during the explosive expansion of the sample droplet after laser irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is presumably caused during the explosive expansion of the sample droplet after laser irradiation. Lipids are lost most likely due to deformation and subsequent rupture of the flat disc-shaped membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the observed lipid loss at higher laser powers.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "efaa8161-f1b2-4be0-b999-4550702ba772",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C79",
+      "claim": "The mild ionization conditions of LILBID-MS are capable of preserving at least partly the initial membrane protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mild ionization conditions of LILBID-MS are capable of preserving at least partly the initial membrane protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the detection of intact oligomeric complexes in the LILBID-MS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "910d8182-c6c0-4e7b-a67c-c3a913cd1f3b",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C80",
+      "claim": "The absence of scaffold proteins and lipids improves spectral resolution and helps to identify the intact as well as partly dissociated protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of scaffold proteins and lipids, furthermore, improves spectral resolution and helps to identify the intact as well as partly dissociated protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data at elevated laser powers showing better resolved protein signals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "9f95d27d-6c41-4625-a4de-627a677692f9",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C81",
+      "claim": "Complexes indicating an artificial stoichiometry different from the expected oligomeric state could never be found for any tested protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The presented platform appears to be well suited to address challenging biological questions. Complexes indicating an artificial stoichiometry different from the expected oligomeric state could never be found for any tested protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comprehensive analysis of all tested proteins in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ee44894d-9179-4440-af92-f0fe7e939f68",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C82",
+      "claim": "The highest detected oligomeric state always corresponded to the previously determined native state of the target.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest detected oligomeric state always corresponded to the previously determined native state of the target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of LILBID-MS results with known oligomeric states from literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0517f284-ae06-4a65-92b9-63f522e12091",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C83",
+      "claim": "The implemented L-CF expression of membrane proteins results into the assembly of native complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The results, furthermore, indicate that the implemented L-CF expression of membrane proteins results into the assembly of native complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that detected oligomeric states match known native states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "80b8fd19-7613-4ec9-9db8-92fa0ef97bdf",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C84",
+      "claim": "The strategy allows to rapidly determine the oligomeric state of a protein within the nanodiscs in context of a membrane with defined lipid composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the strategy allows to rapidly determine the oligomeric state of a protein within the nanodiscs in context of a membrane with defined lipid composition, giving important insights for the understanding of functional dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the demonstrated workflow and results throughout the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "61845b40-e188-4f4a-af0a-7354b61bd377",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C85",
+      "claim": "Lipid-dependent oligomerization is a rarely observed regulatory mechanism of membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid-dependent oligomerization is a so far rarely observed regulatory mechanism of membrane proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge of membrane protein regulation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "bb2f3d46-15dc-4a8f-b9a8-82bff11e859a",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C86",
+      "claim": "The study on E. coli MraY translocase is one of the first examples showing lipid-triggered dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The reported study on the E.coli MraY translocase is one of the first examples showing such a lipid-triggered dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the novelty of the finding in the context of known membrane protein regulatory mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "f71437b4-b338-4b0a-a5d9-765d02171e5c",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C87",
+      "claim": "Close homologues such as B. subtilis MraY can significantly differ in their oligomeric assembly mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, even close homologues such as B. subtilis can significantly differ in their oligomeric assembly mechanism and the LILBID-MS observations nicely match with previous reports on MraYs functional activity (Henrich et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison of B. subtilis and E. coli MraY data in Figure 7 and citation to Henrich et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "a8a45045-abf0-40ae-8019-d5a3ce246413",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C88",
+      "claim": "Individual lipid types selectively interacting with a protein might be identified out of a provided mixture in nanodiscs membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "One further direction could be the identification of specific and tightly bound lipids, which could affect structural and functional features of a membrane protein. According to the identification of lipid-protein interactions in mixed micelles (Gault et al., 2016) or tightly bound lipids by a delipidation strategy (Bechara et al., 2015), individual lipid types selectively interacting with a protein might be identified out of a provided mixture in nanodiscs membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications, supported by citations to Gault et al., 2016 and Bechara et al., 2015.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d987dd51-e426-44f8-9eaf-3d5be93a8d78",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C89",
+      "claim": "Nanodiscs containing MSP1E3D1 and DPPC were detected at low laser power (10 mJ) as intact particles.",
+      "claim_type": "IMPLICIT",
+      "source": "When the LILBID laser, desorbing the sample droplets, was tuned to a low laser power of 10 mJ, signals were revealed corresponding to intact nanodiscs comprising two copies of the scaffold protein and roughly 200 DPPC lipids (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in the LILBID-MS data in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "95e1c79a-d49c-469f-84e7-da49a92ec7ed",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C90",
+      "claim": "The homogeneity of the analyzed nanodiscs was controlled by size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The homogeneity of the analyzed nanodiscs was controlled by size exclusion chromatography (Figure 2\u2014figure supplements 1b, 2b and 3b and Figure 3b) and exemplarily by negative stain electron microscopy (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the size exclusion chromatography data shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "635fdbbd-63ac-42b0-8e63-f86c8e742f80",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C91",
+      "claim": "Intact nanodiscs were hardly detected at the refined LILBID settings necessary to achieve resolved signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous ESI-MS-studies (Marty et al., 2012), intact nanodiscs were hardly detected at the refined LILBID settings necessary to achieve resolved signals (Figure 2\u2014figure supplement 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the LILBID-MS data shown in Figure 2\u2014figure supplements 1\u20133 and comparison with ESI-MS studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "b6733705-ff8c-4745-8da5-0a14f044efe5",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C92",
+      "claim": "Nanodiscs composed out of lipids with shorter chain length lead to better resolved spectra due to the decreased number of attached lipid molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, spectra of nanodiscs composed out of lipids with shorter chain length lead to better resolved spectra due to the decreased number of attached lipid molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of LILBID-MS data for different lipid chain lengths shown in the figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0a5119a4-6597-4a18-950f-28442078210e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C93",
+      "claim": "Nanodiscs containing the short-chain lipids DMPG and DMPC were chosen for studies of membrane protein/nanodiscs complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, nanodiscs containing the short-chain lipids DMPG and DMPC were chosen for the following studies of membrane protein/nanodiscs complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice based on the spectral resolution observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "5cfd8cb8-38b2-4d37-b2e2-567bb9522358",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C94",
+      "claim": "Big nanodiscs containing MSP1E3D1 performed best in previous studies regarding membrane protein solubilization.",
+      "claim_type": "EXPLICIT",
+      "source": "The big nanodiscs containing MSP1E3D1 were chosen as they performed best in previous studies regarding membrane protein solubilization (Roos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roos et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "4dabc025-60c7-45a6-8836-2b06eae16300",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C95",
+      "claim": "Under mild laser conditions, the dominating species of PR oligomerization states all include both scaffold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have seen that, if laser dissociation occurs, the scaffold proteins are among the first proteins to leave the disc (Figure 6), giving rise to signals representing complexes with only one or no scaffold proteins. As the dominating species of the heterogeneous distribution of PR oligomerization states under mild laser conditions all include both scaffold proteins we can conclude that the detected species represent complexes in solution, meaning that PR is present in different oligomeric states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the LILBID-MS data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "b1509b80-8f96-40ed-952e-e0a5178f7313",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C96",
+      "claim": "Under high laser intensities PR oligomers without scaffold proteins are released and can be detected up to hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Under high laser intensities PR oligomers without scaffold proteins are released and can be detected as well up to hexamers, indicating that the PR proteins indeed form complexes and are not present as individual entities in the nanodiscs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LILBID-MS data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "99e68d7d-2074-40fe-9c71-0070c4828b6e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C97",
+      "claim": "Lipids seem to support the formation of higher oligomer complexes of PR but PR does not discriminate between different lipid species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of PR lipids seem to support the formation of higher oligomer complexes but PR does not discriminate between different lipid species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the comparison of PR in detergents versus nanodiscs and in different lipid types shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "6c0f7154-2899-4233-8cad-20c5d05492f0",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C98",
+      "claim": "The characteristic photocycle of PR is observed even in monomeric conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "PR is folded and active under numerous conditions such as pentamers or hexamers, and its characteristic photocycle is observed even in monomeric conformation (Reckel et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Reckel et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "728f1af1-9d5f-4c14-a618-70c77d0fe3cb",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "claim_id": "C99",
+      "claim": "If laser dissociation occurs, the scaffold proteins are among the first proteins to leave the disc.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have seen that, if laser dissociation occurs, the scaffold proteins are among the first proteins to leave the disc (Figure 6), giving rise to signals representing complexes with only one or no scaffold proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the observation of species with reduced scaffold protein content at elevated laser powers shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "69d04500-3f8b-4096-b29c-dd5fd560fd89",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a detergent-free platform combining cell-free expression, nanodisc technology, and LILBID-MS for analyzing membrane protein oligomerization in defined lipid environments. This platform successfully characterized membrane proteins assembling up to hexameric complexes and allows rapid determination of oligomeric states without chemical modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C70-C72, and C84 collectively demonstrate the successful integration of three technologies (cell-free expression, nanodiscs, LILBID-MS) into a functional platform. The experimental data throughout the manuscript (Figures 4-7) show successful oligomeric state determination for multiple proteins including hexameric PR complexes (C4), validating the platform's capabilities. The detergent-free workflow is clearly demonstrated and the rapid, modification-free nature is supported by the methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "547f6ecd-a56c-4735-bd81-91858c540d95",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LILBID-MS analysis of empty nanodiscs at varying laser powers reveals intact nanodiscs at low power (10 mJ) containing two scaffold proteins and ~200 DPPC lipids, while higher power (23 mJ) causes disintegration leaving scaffold proteins with few attached lipids. Nanodisc homogeneity was confirmed by size exclusion chromatography.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C89-C90 are directly supported by the LILBID-MS data in Figure 2a showing the laser power-dependent behavior of nanodiscs. The size exclusion chromatography data in figure supplements confirms sample homogeneity. The experimental observations are clear and reproducible across multiple nanodisc compositions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "3d307d6b-cb24-4370-a212-79edba541885",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The number of lipids remaining attached to scaffold proteins after nanodisc disintegration depends on lipid chain length and scaffold protein size, but not significantly on headgroup composition. Shorter chain lipids produce better resolved spectra due to fewer attached lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C92 are supported by systematic LILBID-MS data shown in Figure 2 supplements and Table 1, demonstrating clear trends: scaffold size correlates with lipid attachment (6-11 DMPG molecules), chain length increases attachment (15-20 for POPG/DOPG), while headgroup variation shows minimal effect. The inference about spectral resolution (C92) is logical and supported by the data comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ccb23360-65b7-4d28-94e0-2874e67e00d7",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DOPE lipids lead to highly heterogeneous nanodisc formation, likely due to PE lipids' intrinsic tendency to form non-bilayer phases with higher curvature, which can negatively affect membrane protein reconstitution and activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 is directly supported by LILBID-MS and size exclusion data in Figure 2\u2014figure supplement 3a,b showing heterogeneous DOPE nanodiscs. The mechanistic explanation (C29) is supported by citation to Gruner, 1985, and the functional consequence (C30) is supported by citation to Curnow et al., 2004. The inference connecting these observations is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "36f4b357-c1bc-478e-a77f-83a34a010681",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In mixed lipid nanodiscs containing DMPG and cardiolipin, the mass difference between lipid species is sufficient to distinguish and count individual scaffold-bound lipids by LILBID-MS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is directly supported by the LILBID-MS data in Figure 3c, which clearly shows resolved peaks corresponding to different numbers of DMPG and cardiolipin molecules attached to the scaffold protein. This demonstrates the technique's capability to analyze mixed lipid systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "029d792b-e56c-40aa-89dc-ffd5b979cb10",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LILBID-MS successfully detected the expected oligomeric states of well-characterized membrane proteins (KcsA tetramer, EmrE dimer, LspA monomer) in nanodiscs. The highest detected oligomeric states always corresponded to known native states, with no artificial stoichiometries observed, indicating that cell-free expression produces native complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 establish known oligomeric states from literature and show LILBID-MS detection matches these states (Figures 4-5). Claims C81-C83 generalize this finding across all tested proteins. The data consistently show expected oligomeric states with appropriate controls (SDS-PAGE for KcsA, C38). The conclusion that L-CF expression produces native complexes (C83) is a reasonable inference from the consistent agreement with literature values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "d4960d44-91e4-4919-8c99-11d8321fb184",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The voltage-sensing domain of human Hv1 (hHv1-VSD) forms dimers in nanodiscs despite lacking the intracellular domain previously proposed as the main dimerization interface, supporting recent findings that this domain is not essential for dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is directly supported by LILBID-MS data in Figure 5b showing dimeric hHv1-VSD. Claim C40 is supported by this experimental observation combined with citation to Li et al., 2015. The inference is logical: if the VSD domain alone forms dimers without the intracellular domain, then the intracellular domain is not essential for dimerization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "0c673a33-1aeb-42af-bff3-62a9c5c09977",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Isotope labeling (15N, 2H) of membrane proteins via cell-free expression resolves signal overlap in LILBID-MS spectra by creating sufficient mass differences between labeled proteins and scaffold proteins. Alternatively, using different scaffold protein sizes can achieve similar resolution improvements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 demonstrate the signal overlap problem and its solution through isotope labeling or scaffold switching, supported by data in Figure 5. Claims C73-C74 generalize this approach. The experimental data clearly show improved resolution for KcsA (C42), hHv1-VSD (C44), and LspA (C45). The advantage of cell-free expression for efficient labeling (C74) is supported by appropriate citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Proteorhodopsin (PR) forms oligomeric complexes up to hexamers when co-translationally inserted into MSP1E3D1 nanodiscs. LILBID-MS at mild laser conditions shows a distribution of oligomeric states (monomer through hexamer) all containing both scaffold proteins, indicating these represent solution-phase complexes rather than laser-induced artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53 and C95-C96 are supported by comprehensive LILBID-MS data in Figure 6. The size calculations (C48-C50) establish that hexamers can fit in MSP1E3D1 nanodiscs. The key evidence that oligomers are native (not artifacts) comes from C95: at mild laser power, dominant species contain both scaffold proteins, which would be lost first during dissociation (C96, C99). The detection of free PR oligomers at high laser power (C96) confirms complex formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "1ae2a498-e55a-474b-96ab-18b3a6b88f0e",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PR oligomerization is influenced by the membrane environment: detergent-solubilized PR is predominantly monomeric, while lipid-based nanodiscs support higher oligomers. However, PR does not discriminate between different lipid species within nanodiscs, with oligomer distributions remaining similar across different lipid compositions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 and C97 are supported by LILBID-MS data in Figure 6\u2014figure supplement 1 comparing PR in detergents versus different lipid nanodiscs. The monomeric state in detergents (C54) agrees with prior NMR studies (C55, citation to Reckel et al., 2011). The lack of lipid discrimination (C56, C97) is clearly shown by similar peak patterns across DMPG, DMPC, and DOPC nanodiscs, though with varying peak widths due to different lipid attachments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "E. coli MraY exhibits lipid-dependent dimerization, forming dimers only in anionic lipid (DMPG) membranes but remaining monomeric in zwitterionic (DMPC) membranes. This dimerization correlates exactly with enzymatic activity, suggesting the dimer is the active conformation. In contrast, B. subtilis MraY forms dimers regardless of lipid composition, demonstrating that close homologues can differ significantly in oligomeric assembly mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C68 and C87 present a major finding supported by LILBID-MS data in Figure 7. The lipid-dependent dimerization of E. coli MraY (C64-C65) is clearly shown, and the correlation with activity (C66) is supported by data in Figure 7c citing Henrich et al., 2016. The contrast with B. subtilis MraY (C63, C87) strengthens the conclusion. The inference that the dimer is the active form (C67) is reasonable given the perfect correlation, though appropriately stated as speculative. The structural support from A. aeolicus MraY (C68) adds credibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LILBID-MS produces relatively simple spectra with few charge states per species (mainly singly charged for nanodiscs). Elevated laser intensity causes controlled nanodisc disintegration, with scaffold proteins and lipids lost first, while preserving at least partially the membrane protein complexes. This improves spectral resolution and enables identification of intact and dissociated protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C80 and C99 describe the technical characteristics and advantages of LILBID-MS for this application. The low charge state distribution (C75-C76) is supported by citation to Morgner et al., 2006 and observed throughout the manuscript. The laser power effects (C77-C80, C99) are consistently demonstrated across all protein samples (Figures 2-7), showing scaffold proteins leave first while protein complexes remain detectable. The mechanistic explanation (C78) is appropriately stated as speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context: membrane proteins frequently form oligomers that modulate function, lipid environment influences protein folding and assembly, detergents can disrupt native complexes, and lipid-dependent oligomerization is a rarely observed regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6, C8-C10, C69, and C85 provide established background knowledge supported by general scientific understanding and appropriate citations. These contextual claims are well-established in the field and provide necessary background for the study's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims on existing methods: classical approaches require detergent solubilization, nanodiscs provide native-like lipid environments, cell-free expression enables production of difficult proteins, and non-covalent MS techniques (ESI, LILBID) are established for protein complex analysis, though ESI-MS with nanodiscs still involves detergent treatment risks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C11-C21 describe established methodologies and their limitations, all supported by appropriate citations. These claims accurately represent prior work and establish the rationale for the current study's approach. The limitation of ESI-MS approaches (C21) is a reasonable inference based on the workflow comparison in Figure 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "17f7a107-8f48-4553-acf9-280f28cff422",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future application: Individual lipid types selectively interacting with proteins might be identified from lipid mixtures in nanodisc membranes, analogous to approaches used with mixed micelles or delipidation strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is explicitly speculative about future applications ('could be'), supported only by analogy to other techniques (citations to Gault et al., 2016 and Bechara et al., 2015). While the suggestion is reasonable given the demonstrated ability to distinguish lipids in mixtures (C31), no experimental validation of this specific application is provided in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    },
+    {
+      "id": "ee684b93-1fd2-492d-b442-5cca2f112425",
+      "content_id": "6a32a585-fc85-4fa3-b82e-9246ea43adf1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological choices: Intact nanodiscs were rarely detected at LILBID settings optimized for resolution (contrasting with ESI-MS studies), leading to selection of short-chain lipids (DMPG, DMPC) for better spectral resolution and MSP1E3D1 scaffold based on prior solubilization performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91, C93-C94 describe methodological decisions supported by the data and appropriate citations. The observation about intact nanodisc detection (C91) is supported by comparison with ESI-MS literature (Marty et al., 2012) and data in figure supplements. The choices of lipids (C93) and scaffold (C94) are logical based on the spectral resolution observations and prior work (Roos et al., 2012).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:24:43.951229Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be13facc-aedf-4dd9-9362-a1831a3e3c3f",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "5c25a5c6-f2b1-4724-b0db-fb3f6d5bad8a",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "5606a147-f83c-4603-a831-88395f732f85",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "dfbfdeaf-63ea-4548-b224-5b3753122056",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "1cb3e010-c619-4118-9c9e-433a633349f7",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "80b8fd19-7613-4ec9-9db8-92fa0ef97bdf",
+      "result_id": "69d04500-3f8b-4096-b29c-dd5fd560fd89"
+    },
+    {
+      "claim_id": "4f9eeeec-c297-4066-a986-cde9d85b17a0",
+      "result_id": "547f6ecd-a56c-4735-bd81-91858c540d95"
+    },
+    {
+      "claim_id": "ca49627b-2fed-427e-87df-7c369d8218e3",
+      "result_id": "547f6ecd-a56c-4735-bd81-91858c540d95"
+    },
+    {
+      "claim_id": "3b289496-ebd8-4290-b153-641531fa5a7e",
+      "result_id": "547f6ecd-a56c-4735-bd81-91858c540d95"
+    },
+    {
+      "claim_id": "d987dd51-e426-44f8-9eaf-3d5be93a8d78",
+      "result_id": "547f6ecd-a56c-4735-bd81-91858c540d95"
+    },
+    {
+      "claim_id": "95e1c79a-d49c-469f-84e7-da49a92ec7ed",
+      "result_id": "547f6ecd-a56c-4735-bd81-91858c540d95"
+    },
+    {
+      "claim_id": "92493a1d-9e43-4f2a-8b03-ff5789461252",
+      "result_id": "3d307d6b-cb24-4370-a212-79edba541885"
+    },
+    {
+      "claim_id": "d7ae3a36-98fd-4ee5-896b-d96f39d8b0fb",
+      "result_id": "3d307d6b-cb24-4370-a212-79edba541885"
+    },
+    {
+      "claim_id": "8f042546-019f-4adf-a4ab-55400276fcd0",
+      "result_id": "3d307d6b-cb24-4370-a212-79edba541885"
+    },
+    {
+      "claim_id": "b6733705-ff8c-4745-8da5-0a14f044efe5",
+      "result_id": "3d307d6b-cb24-4370-a212-79edba541885"
+    },
+    {
+      "claim_id": "e776e99c-08e5-450d-a08f-c6bbc955302c",
+      "result_id": "ccb23360-65b7-4d28-94e0-2874e67e00d7"
+    },
+    {
+      "claim_id": "b38d57d7-a690-40e9-a525-288261240a7c",
+      "result_id": "ccb23360-65b7-4d28-94e0-2874e67e00d7"
+    },
+    {
+      "claim_id": "a6b2e1fc-ed7a-483a-9813-78cebb243735",
+      "result_id": "ccb23360-65b7-4d28-94e0-2874e67e00d7"
+    },
+    {
+      "claim_id": "d0fdf6a0-b40f-4100-842c-082ca92ab967",
+      "result_id": "36f4b357-c1bc-478e-a77f-83a34a010681"
+    },
+    {
+      "claim_id": "89d364a1-385c-43e0-bee4-4097c39daaa1",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "a2fd0aa9-ae1e-47a0-8f5b-92050e937c35",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "ede35700-f885-4a60-96a5-dc6fda448b6a",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "dfa6abd4-2abb-4cf0-afca-38f549974b96",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "c8cfa564-321f-47a8-a1cf-f372148d0e2a",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "1d00a7f2-329d-4ed0-9d6f-72bbc1dd2ef3",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "43aebe8e-35f4-45e8-8bdc-dc74c34b634b",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "9f95d27d-6c41-4625-a4de-627a677692f9",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "ee44894d-9179-4440-af92-f0fe7e939f68",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "0517f284-ae06-4a65-92b9-63f522e12091",
+      "result_id": "029d792b-e56c-40aa-89dc-ffd5b979cb10"
+    },
+    {
+      "claim_id": "be099a33-96cd-4dbf-a7e5-2f04e3667c75",
+      "result_id": "d4960d44-91e4-4919-8c99-11d8321fb184"
+    },
+    {
+      "claim_id": "0fd50cd9-8d54-45c1-b073-14f4c52d9725",
+      "result_id": "d4960d44-91e4-4919-8c99-11d8321fb184"
+    },
+    {
+      "claim_id": "a5c01e2e-a969-42a2-bd23-363c9712d65f",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "4213bbe2-196e-469a-8b43-8bb7209e98c2",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "c4b05a84-5d99-44e9-aaf4-e1456477ac8f",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "689e8772-6f56-4516-85d8-14ca49ec2d0e",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "11e5d936-5d76-4d35-83cf-f79e5b6c575b",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "d4edfc0a-1515-4662-9dae-4b2d6cfb664e",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "2ff1356a-34d2-46c1-89fd-bd8a15daeb0b",
+      "result_id": "0c673a33-1aeb-42af-bff3-62a9c5c09977"
+    },
+    {
+      "claim_id": "121841ee-72fa-40f1-81a1-f2b6e01ec576",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "74440c1d-c1f8-4c23-b1ee-6f0a775ff58b",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "0273939b-e27d-44cc-9aad-3275ec43d310",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "6038e386-6c22-4082-b5fc-618f701e9fd7",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "52ccc879-9639-4b97-b515-a93d8aeb0c38",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "2f84aee0-b98e-4b2e-9509-0af9a9f88495",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "d095b63c-c708-48c0-8aa2-d638193ee5e3",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "6f795c69-4af5-46d9-b4d8-4086cded3ac9",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "4dabc025-60c7-45a6-8836-2b06eae16300",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "b1509b80-8f96-40ed-952e-e0a5178f7313",
+      "result_id": "f4ffd18e-bbfa-4c4a-b9c1-38c59b6da1c6"
+    },
+    {
+      "claim_id": "30cec162-1478-4a00-a4f9-9bc466db8f8c",
+      "result_id": "1ae2a498-e55a-474b-96ab-18b3a6b88f0e"
+    },
+    {
+      "claim_id": "a82b0f90-a420-41b6-9003-39980cb2ddb2",
+      "result_id": "1ae2a498-e55a-474b-96ab-18b3a6b88f0e"
+    },
+    {
+      "claim_id": "996afe8d-e0da-46dc-a9f4-5bf5fa11e0e0",
+      "result_id": "1ae2a498-e55a-474b-96ab-18b3a6b88f0e"
+    },
+    {
+      "claim_id": "99e68d7d-2074-40fe-9c71-0070c4828b6e",
+      "result_id": "1ae2a498-e55a-474b-96ab-18b3a6b88f0e"
+    },
+    {
+      "claim_id": "0408d93d-202c-4b16-9a3a-64ed88bb23b2",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "af0075de-5a4c-4af6-a0d4-686f485ba2ed",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "01666b92-1acf-47e4-9c25-34c2071d54df",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "ab3f810e-3771-48a5-9b1e-0a525bd2b0ad",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "610e00eb-3ffd-43e8-b818-908c49be7640",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "4396d5f6-ccd9-4d3c-a940-e3770aaa38ed",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "f111618d-4363-4e64-ba31-2abb4c86f0bd",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "0daac7d0-805d-4490-8521-94d26e0edaaf",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "23b7ee1d-4599-4d79-9da0-2d9c6a0c6feb",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "f71437b4-b338-4b0a-a5d9-765d02171e5c",
+      "result_id": "002c103d-ecf9-4a82-8f47-5f8caf07ff44"
+    },
+    {
+      "claim_id": "ae67b51e-5ecb-4ec0-a532-ec15c761d6c1",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "9f75b0c0-41e0-4795-8043-3054b0984bed",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "55ee3582-203a-47c2-9db6-479e0a93ae61",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "9fc035ab-f2fd-400f-ad5e-6a3c2688f7cf",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "efaa8161-f1b2-4be0-b999-4550702ba772",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "910d8182-c6c0-4e7b-a67c-c3a913cd1f3b",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "728f1af1-9d5f-4c14-a618-70c77d0fe3cb",
+      "result_id": "e72c8008-d823-461c-83f7-ef37b9c2ad2f"
+    },
+    {
+      "claim_id": "0d982c33-db10-4bac-912e-548393b0c2d8",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "6eaee2cc-0ca2-400d-bd7c-e17f763f21ed",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "b958624b-1eab-46c0-858f-b7d025c9ea90",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "255c922a-6bbb-4f21-9752-c0477960d9ca",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "2d0efa4a-bfc5-4cd4-b8ca-4778389d40ab",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "5f825e56-ed3c-46bc-9607-637a9fbe169c",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "b43c964d-edb1-4f6a-9625-c0235c52ae19",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "61845b40-e188-4f4a-af0a-7354b61bd377",
+      "result_id": "49f6fb10-05ba-4763-b6d9-ec99b7a011de"
+    },
+    {
+      "claim_id": "6bf46e5c-91c1-4622-99a6-0aad6c5fee43",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "5dfdee23-f7f2-4726-ad95-96e1450a0f27",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "e7a64737-72e5-41e9-b1fd-da5dffbf8004",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "d7594771-3ac0-48dc-a6a9-ba492b5132e9",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "80318e0a-a159-4634-8793-1579b8697d2f",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "31e1aedb-0bf9-44dd-80b8-1a37ab620b0d",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "36de36e8-97ae-43a7-b162-ef4525d21193",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "be1181f5-1111-4d45-9c2d-1f3158c15f82",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "d5657769-dadc-41fc-a8d0-cd71fe682b0c",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "2004a867-f159-4c33-835b-4d47b298b239",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "121cf8e5-71e7-4cc3-9603-5dd18cf1cdde",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "00130085-609e-4007-ad1a-23c895d32c02",
+      "result_id": "1d320668-5be2-4184-b14a-e6dc7c9dcc67"
+    },
+    {
+      "claim_id": "a8a45045-abf0-40ae-8019-d5a3ce246413",
+      "result_id": "17f7a107-8f48-4553-acf9-280f28cff422"
+    },
+    {
+      "claim_id": "635fdbbd-63ac-42b0-8e63-f86c8e742f80",
+      "result_id": "ee684b93-1fd2-492d-b442-5cca2f112425"
+    },
+    {
+      "claim_id": "0a5119a4-6597-4a18-950f-28442078210e",
+      "result_id": "ee684b93-1fd2-492d-b442-5cca2f112425"
+    },
+    {
+      "claim_id": "5cfd8cb8-38b2-4d37-b2e2-567bb9522358",
+      "result_id": "ee684b93-1fd2-492d-b442-5cca2f112425"
+    }
+  ],
+  "comparisons": []
+}

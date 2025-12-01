@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C38",
+      "C68",
+      "C78",
+      "C79"
+    ],
+    "result": "At 2 mA transcranial stimulation, maximal cortical electric fields reach approximately 0.8 V/m, with fields of 0.4 V/m at 1 mA. These values are derived from calibrated computational models validated against intracranial recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, C38, C68, C78, and C79 consistently report electric field magnitudes based on validated computational models and measurements. The linear scaling from 1 mA (0.4 V/m) to 2 mA (0.8 V/m) is physically justified and supported by the linearity demonstrated in C24.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C34",
+      "C35",
+      "C72",
+      "C73",
+      "C121",
+      "C122"
+    ],
+    "result": "Individualized computational models predict electric field spatial distributions with high accuracy: r = 0.86 for cortical electrodes and r = 0.88 for depth electrodes when pooling data across all subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple claims (C4, C5, C34, C35, C72, C73, C121, C122) consistently report these correlation values with appropriate statistical significance (p < 10^-50). The consistency across individual and pooled analyses strengthens confidence in model accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C103"
+    ],
+    "result": "Literature conductivity values provide reasonable estimates but require calibration for optimal accuracy. Optimized median conductivities are: bone 0.03\u00b10.01 S/m, skin 0.29\u00b10.10 S/m, white matter 0.38\u00b10.05 S/m, and gray matter 0.82 S/m, differing from literature values but maintaining similar proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C57, and C103 describe a systematic conductivity optimization procedure with clear methodology. The finding that optimized values improve spatial distribution prediction (C57: t(12)=2.36, p=0.04) while maintaining reasonable magnitude estimates supports the calibration approach. However, C51 notes the fitting is under-constrained, and C142-C147 caution against interpreting these as true tissue values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C67",
+      "C117",
+      "C120"
+    ],
+    "result": "Incorporating white matter anisotropy derived from DTI does not improve model accuracy for predicting electric field distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C67, C117, and C120 report no benefit from DTI inclusion, but C67 explicitly states only three subjects had DTI data, which is insufficient for statistical comparison. The conclusion is consistent with prior work (C117) but lacks adequate statistical power in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C66",
+      "C116"
+    ],
+    "result": "Modeling multiple skull compartments (spongiosa and compacta) does not reliably improve magnitude predictions and may worsen spatial distribution predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65, C66, and C116 report that multi-compartment skull modeling shows no significant improvement in magnitude (t(12)=1.72, p=0.11) and significantly worse spatial distribution (t(12)=2.35, p=0.04). This is supported by appropriate statistical tests, though C115 notes the labor-intensive nature of manual segmentation may introduce errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C108"
+    ],
+    "result": "Modeling individual anatomy is important for accurate prediction of electric field distributions, with predictions using incorrect individual models showing significantly worse correlation (t(89)=5.60, p=10^-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, and C108 demonstrate the importance of individualized modeling through systematic comparison of predictions using correct versus incorrect individual head models across 90 comparisons. The statistical significance is strong and the experimental design is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C75",
+      "C110"
+    ],
+    "result": "Extending the field of view to include the entire head and neck significantly improves model prediction accuracy for both electric field magnitudes (t(10)=6.17, p=10^-4) and distributions (t(10)=2.63, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C62, C75, and C110 consistently report significant improvements from FOV extension with appropriate statistical tests. The methodology is clearly described and the results are statistically robust, though only 8 of 10 subjects could be tested (C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C113"
+    ],
+    "result": "Including CSF in computational models is important for predicting electric field magnitude but does not significantly affect spatial distribution predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C113 report that removing CSF does not affect distribution (t(12)=1.78, p=0.10) but significantly deteriorates magnitude prediction (t(12)=4.39, p=10^-4). The statistical tests are appropriate and the distinction between magnitude and distribution effects is clearly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Measured voltages increase linearly with current intensity up to amplifier saturation, and tissue behaves as a purely resistive medium in the 1-100 Hz frequency range, with observed frequency-dependent voltage drops attributed to measurement equipment rather than tissue properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe systematic characterization of the measurement system. The linearity (C24) is demonstrated in Figure 3A, and the attribution of frequency effects to equipment (C26) is validated by control measurements in saline. The inference of purely resistive tissue (C27) is logically sound given the control data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C157",
+      "C158"
+    ],
+    "result": "Repeated voltage measurements show variability of \u00b10.11 mV for 1 mA stimulation, likely due to subject movement, setting a lower limit on measurement precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C157, and C158 report measurement variability based on repeated measurements shown in Figure 3C. The attribution to subject movement (C158) is reasonable given supporting evidence from C159-C160 about position-dependent effects. This establishes important error bounds for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C46",
+      "C70",
+      "C71",
+      "C81"
+    ],
+    "result": "Electric fields in depth electrodes are nearly as strong as in cortical electrodes, with deep brain areas (e.g., anterior cingulate, peri-ventricular white matter) experiencing fields comparable to cortical surface, particularly with mid-line electrode configurations where CSF shunts current to deeper structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C46, C70, C71, and C81 describe electric field distributions in deep structures based on validated models and measurements. C36 provides quantitative comparison (SD: 0.059 V/m cortical vs 0.065 V/m depth), and C46 reports 0.21\u00b10.04 V/m at normalized distance 0.25. The CSF shunting mechanism (C44-C45) provides physical explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C21",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The measured electric field intensity of 0.8 V/m at 2 mA is at the lower limit of effectiveness reported in animal studies, with in vitro studies showing effects ranging from 0.2 V/m (gamma oscillation entrainment) to 5-20 V/m (up/down state transitions and plasticity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C21, C83, C84, and C85 consistently reference prior animal and in vitro studies to contextualize the measured field intensities. The citations support the range of effective field strengths, though C86-C87 appropriately note that in vivo human effects may differ due to network effects and neuron size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C15",
+      "C88",
+      "C89",
+      "C90",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "This is the first study to validate and calibrate current-flow models with in vivo intracranial recordings in humans. Prior validation efforts used ex vivo measurements, animal models, or scalp recordings, with recent work by Opitz et al. (2016) reporting similar field magnitudes (0.5 V/m at 1 mA) but not providing model validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C15, C88-C102 establish the novelty of the study through systematic review of prior validation approaches. The comparison with Opitz et al. (C89-C90) shows agreement in field magnitude estimates while distinguishing the current study's focus on model validation. The historical context (C97-C99) and limitations of prior approaches (C100) support the novelty claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C104",
+      "C105"
+    ],
+    "result": "High correlation between measured and predicted voltages (r=0.94\u00b10.04) across all subjects, with electric field correlations of r=0.81\u00b10.09 for individually optimized models and r=0.78\u00b10.10 for median conductivity values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C104-C105 report consistent correlation values across different analysis approaches. The observation that electric field correlations are lower than voltage correlations (C32) is appropriately explained by noise propagation in the difference calculation. The similar performance with median values (C105) supports generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C80"
+    ],
+    "result": "For the mid-line electrode configuration at 1 mA, maximal field intensities are 0.28\u00b10.06 V/m across ten subjects, with 95th percentile of 0.14\u00b10.02 V/m. Other configurations show maximum intensities of 0.38\u00b10.09 V/m, with 95th percentile of 0.28 V/m at 2 mA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C42, and C80 provide detailed quantification of field intensities for different electrode configurations based on calibrated models. The use of both maximum and 95th percentile values (C42) provides appropriate characterization of spatial extent. Values are consistent with the overall 0.8 V/m maximum at 2 mA reported elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C76",
+      "C77"
+    ],
+    "result": "Prediction error for maximal field intensities is estimated at approximately 0.10 V/m, with direct measurement of maximal intensities limited by clinical electrode placement and the tangential orientation of subdural electrodes relative to the strongest (orthogonal) field components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C76, and C77 acknowledge important limitations in directly measuring maximal field intensities. The error estimate (C43) is derived from reasonable scaling assumptions based on measured variability. The geometric constraints (C77) are physically accurate and appropriately recognized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Despite achieving r=0.86-0.88 correlations, model inaccuracies remain due to uniform conductivity assumptions, uncertain electrode placement, segmentation errors for thin structures below 1 mm\u00b3 resolution, and unmodeled anatomical details like eye socket openings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 provide honest assessment of model limitations. Each source of error is plausible and well-explained. C129 appropriately suggests future improvements while acknowledging current limitations. This transparent discussion of uncertainty strengthens rather than weakens the overall findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C165",
+      "C166",
+      "C167",
+      "C169"
+    ],
+    "result": "The study recorded from 1380 intracranial electrodes in 10 epilepsy patients (enrolled 12, excluded 2) undergoing surgical evaluation at NYU Medical Center with IRB approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23, C165-C167, and C169 describe the study population and ethical approvals. The numbers are internally consistent and the exclusion criteria are stated. The large number of electrodes (1380) across 10 patients provides substantial data for validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Literature conductivity values have never been directly evaluated in vivo in humans. The study's phenomenological optimization approach yields 'optimal' conductivities that calibrate field magnitudes but should not be interpreted as true tissue values, as they compensate for all modeling simplifications and errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C148 provide important context and caveats about conductivity optimization. The distinction between calibration values and true tissue properties (C142-C143) is critical and appropriately emphasized. The explanation of why values differ across subjects (C144-C147) and the recommendation to use median values (C148) are well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Electric field magnitude is inversely proportional to conductivity values, while spatial distribution is much less affected by conductivity choices. For targeting applications, spatial distribution is more important than absolute magnitude, allowing median conductivity values to provide reasonable accuracy (r=0.78\u00b10.10) despite order-of-magnitude variation across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C155 explain the differential sensitivity of magnitude versus distribution to conductivity values, which is physically sound. The practical implication for targeting (C154-C155) is well-supported by the data showing similar distribution accuracy with median values (C105, C153). This addresses an important clinical application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Voltage measurements are sensitive to subject position and blood pulse due to CSF shunting effects, with estimated variability likely underestimating true variability in practice. Despite this, the achieved correlation (r=0.78\u00b10.10) suggests computational models provide meaningful predictions of spatial distribution and focality for electrode configuration selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C164 provide realistic assessment of measurement variability and its implications. The acknowledgment that measured variability underestimates real-world variability (C161) is appropriate. The conclusion that models are still useful for targeting (C162-C164) is well-supported given the correlation values and the primary goal of comparing electrode configurations rather than absolute prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C22",
+      "C133"
+    ],
+    "result": "All measurement data and MRIs have been made publicly available at http://dx.doi.org/10.6080/K0XW4GQ1 to facilitate validation of new modeling approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C133 state data availability with a specific DOI. This is verifiable and represents good scientific practice, enabling independent validation and method development by other researchers.",
+    "result_type": "MINOR"
+  }
+]

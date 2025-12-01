@@ -1,0 +1,1405 @@
+{
+  "submission": {
+    "id": "157bb22e-5615-407a-a31b-151564405421",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:09:02.116083Z",
+    "updated_at": "2025-11-30T21:09:02.116083Z"
+  },
+  "content": [
+    {
+      "id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "submission_id": "157bb22e-5615-407a-a31b-151564405421",
+      "content_type": "manuscript",
+      "content_text": "# Asymmetric effects of activating and inactivating cortical interneurons\n\n## Authors\n\n- Elizabeth AK Phillips<sup>1</sup>\n- Andrea R Hasenstaub<sup>1</sup> ([ORCID: 0000-0003-3998-5073](https://orcid.org/0000-0003-3998-5073)) \u2020\n\n### Affiliations\n\n1. Neuroscience Graduate Program University of California, San Francisco San Francisco United States\n2. Center for Integrative Neuroscience University of California San Francisco San Francisco United States\n3. Coleman Memorial Laboratory University of California, San Francisco San Francisco United States\n4. Department of Otolaryngology-Head and Neck Surgery University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nBidirectional manipulations \u2013 activation and inactivation \u2013 are widely used to identify the functions supported by specific cortical interneuron types. Implicit in much of this work is the notion that tonic activation and inactivation will both produce valid, internally consistent insights into interneurons\u2019 computational roles. Here, using single-unit recordings in auditory cortex of awake mice, we show that this may not generally hold true. Optogenetically manipulating somatostatin-positive (Sst+) or parvalbumin-positive (Pvalb+) interneurons while recording tone-responses showed that Sst+ inactivation increased response gain, while Pvalb+ inactivation weakened tuning and decreased information transfer, implying that these neurons support delineable computational functions. But activating Sst+ and Pvalb+ interneurons revealed no such differences. We used a simple network model to understand this asymmetry, and showed how relatively small changes in key parameters, such as spontaneous activity or strength of the light manipulation, determined whether activation and inactivation would produce consistent or paradoxical conclusions regarding interneurons\u2019 computational functions.\n\n## Introduction\n\nThroughout the neocortex, inhibition shapes the gain and tuning of sensory responses (Kyriazi et al., 1996; Tsumoto and Sato, 1985; Wang et al., 2000), controls the precise timing of evoked action potentials (Akiyama et al., 2004; Gabernet et al., 2005; Hasenstaub et al., 2005; Poo and Isaacson, 2009; Wehr and Zador, 2003), and can coordinate rhythmic activity, which gates sensory responses and modulates information processing (Cardin et al., 2009; Deans et al., 2001; Hasenstaub et al., 2005; Sohal et al., 2009). Although they comprise a minority of cells in the cortex, the GABAergic interneurons that provide this inhibition are strikingly diverse (rev. [Petilla Interneuron Nomenclature et al., 2008]): unique combinations of gene expression, electrophysiological properties, morphology, and connectivity define multiple interneuron types, and likely allow each interneuron type to exert a unique mode of control over cortical function.\n\nA longstanding goal in sensory neuroscience has been to establish how, if at all, interneuron types differ in their contributions to normal cortical function. However, isolating each subtype to causally determine its contributions to cortical processing has been hindered by the limited repertoire of techniques available. Recent advances in molecular techniques, such as optogenetics (Boyden et al., 2005; Zhang et al., 2011), chemogenetics (Armbruster et al., 2007), and more recently magnetogenetics (Wheeler et al., 2016), have transcended traditional methods of probing cell function, enabling reversible and selective activation or inactivation of interneuron firing in vivo. These tools have been used extensively to identify the particular functions each interneuron subtype serves within the cortex (Adesnik et al., 2012; Aizenberg et al., 2015; Atallah et al., 2012; Cardin et al., 2009; Cottam et al., 2013; Lee et al., 2012; Natan et al., 2015; Seybold et al., 2015; Sohal et al., 2009; Wilson et al., 2012; Xu et al., 2013). An implicit assumption underlying much of this work is that one can directly read out a cell type\u2019s function, and infer its specialized operations, by tonically modulating its firing down or up: in other words, that the response features or computations weakened by inactivating a cell population are specifically those that the cell population normally supports, that these features will be strengthened when the same population is activated, and that the natural differences in cortical function between cell populations may be read out, and interpreted, using these same strategies.\n\nCan the abundance of recent causal data be interpreted in such a straightforward way? Here, in line with the broader goal of establishing the ways in which we can use causal strategies to gain insight into interneuron function, we tested this assumption by manipulating either of the two main families of cortical interneurons \u2013 somatostatin-positive (Sst+) or parvalbumin-positive (Pvalb+) interneurons \u2013 while recording neural responses to tones in the auditory cortex of awake mice. We found that inactivation of Sst+ interneurons increased response gain, while inactivation of Pvalb+ interneurons weakened tuning and decreased information transfer, implying that these two neuron types support specific, separable functions in the auditory cortex. Yet activating Sst+ and Pvalb+ interneurons revealed no such differences. We used a simple feedforward model to understand this asymmetry, and found that relatively small changes in key parameters, such as baseline activity, neural thresholds, or the strength of the light manipulation, determined whether activation and inactivation would produce internally consistent conclusions regarding interneurons\u2019 computational functions. This implies that seemingly minor experimental details can qualitatively change the readout of a neural population\u2019s role in computation, and that the conclusions we draw regarding neuronal function can be influenced, even distorted, by the precise way in which the neuronal populations are manipulated.\n\n## Results\n\n### Optogenetic inactivation of Sst+ or Pvalb+ interneurons\n\nTo produce mice in which we could inactivate Sst+ or Pvalb+ interneurons, we crossed mouse strains that express Cre-recombinase under control of the Sst or Pvalb promoter (Taniguchi et al., 2011) with the Ai35 strain, in which expression of Arch-GFP is Cre-dependent (Madisen et al., 2012) (referred to as Arch/Sst and Arch/Pvalb mice, respectively). In Arch/Sst mice, the percentage of GFP labeled neurons that showed Sst fluorescence (i.e., specificity) was 89 \u00b1 4%, and the percentage of Sst labeled neurons that were GFP-labeled (i.e., efficiency) was 91 \u00b1 2%, and in Arch/Pvalb mice the specificity was 93 \u00b1 2% and the efficiency was 89 \u00b1 7%, consistent with previous reports (Adesnik et al., 2012; Cardin et al., 2009; Kerlin et al., 2010; Kvitsiani et al., 2013; Pfeffer et al., 2013; Sohal et al., 2009; Taniguchi et al., 2011) (Figure 1\u2014figure supplement 1).\n\nWe placed these transgenic mice on a spherical treadmill and used a 16-channel linear probe to record from single units in auditory cortex while the animals were awake, head-fixed, and passively listening to pure-tone acoustic stimuli. On randomly interleaved trials the tone was paired with green (532 nm) light, delivered through a fiber optic placed just above the surface of the cortex, to reduce interneuron activity during the pre-stimulus and response periods (Figure 1a,b,e,f). For each recorded unit we generated iso-intensity frequency tuning curves (FTCs) in both the light-off and light-on conditions by measuring the firing rates (FRs) in the 50 ms period after tone-response onset as a function of frequency (Figure 1c,g). In these mice, illumination of the cortical surface with green light had a range of effects on sound-evoked FRs, spontaneous FRs, and the signal-to-noise ratio (SNR: defined 6as the ratio between sound-evoked FR and spontaneous FR) (Figure 1b,f; Figure 1\u2014figure supplement 2). Of the units with frequency-tuned responses (see Materials\u00a0and\u00a0methods; Arch/Sst: n = 70 of 96 units; Arch/Pvalb: n = 59 of 76 units), the majority had sound-evoked FRs that were significantly increased by light (Arch/Sst: n = 44 of 70 units; Arch/Pvalb: n = 41 of 59 units); a minority had responses that were significantly suppressed by light (Arch/Sst: n = 11 of 70 units; Arch/Pvalb: n = 5 of 59 units); and the remainder had responses with no significant change (Arch/Sst: n = 15 of 70 units; Arch/Pvalb: n = 13 of 59 units) (Figure 1d,h). A small fraction of units with no significant change to their tone responses nonetheless showed significant changes to their baseline activity (Arch/Sst: n = 6 of 15; Arch/Pvalb: n = 4 of 13).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig1-v2.jpg)\n\n**Figure 1.:** (a)\u00a0Schematic of optogenetic manipulation in Arch/Sst mice in which green light directly hyperpolarizes Sst+ cells (green cells). (b)\u00a0Rasters of tone-evoked action potentials for a representative indirectly activated unit without (top) and with (bottom) inactivation of Sst+ cells. The black sine wave represents the duration of the sound, the green bar represents the duration and power of the light, and the yellow bar indicates the response period used to construct frequency tuning curves (FTCs). (c)\u00a0FTCs (mean \u00b1 SEMs) derived from tone-evoked firing rates (FRs) without (black) and with (pink) inactivation of Sst+ cells for the representative unit in (b). Inset shows unit waveforms on trials without (black) and with (pink) inactivation of Sst+ cells. (d)\u00a0Distribution of the light-on to light-off tone-evoked FR ratios during the response period for frequency-tuned units. Green bars with pink outline indicate units with significantly suppressed FRs (n = 11 of 70 units), grayish pink bars indicate units with no significant change in FR (n = 15 of 70 units), and pink bars with black outline indicate units with significantly increased FRs (n = 44 of 70 units). (e\u2013h)\u00a0As (a\u2013b), but in Arch/Pvalb mice, in which green light directly hyperpolarizes Pvalb+ cells (e). (f,g) show the rasters and FTCs of a representative, indirectly-activated unit with and without inactivation of Pvalb+ cells. In (h), green bars with light blue outline indicate units with significantly suppressed FRs (n = 5 of 59 units), grayish blue bars indicate units with no significant change in FR (n = 13 of 59 units), and light blue bars with black outline indicate units with significantly increased FRs (n = 41 of 59 units).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a)\u00a0Immunostaining of a brain slice from an Arch/Sst mouse. (Left) Grayscale image of GFP stain. (Middle) Grayscale image of somatostatin stain. (Right) Merged image of GFP (green) and somatostatin (red) stains. Magenta arrows indicate three examples of putative Sst+ cells. Note that red and green somata mostly overlap. Scale bars are 50 microns. (b)\u00a0Immunostaining of a brain slice from an Arch/Pvalb mouse. (Left) Grayscale image of GFP stain. (Middle) Grayscale image of Pvalb stain. (Right) Merged image of GFP (green) and Pvalb (red) stains. Magenta arrows indicate three examples of putative Pvalb+ cells. Note that red and green somata mostly overlap. Scale bars are 50 microns.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a)\u00a0An example unit\u2019s mean firing rate (FR) \u00b1 SEMs relative to sound onset, without (black) and with (pink) inactivation of Sst+ interneurons. The black sine wave represents the duration of the sound, the green bar represents the duration and power of the light, the orange bar indicates the 50 ms time period used to calculate spontaneous FR, and the yellow bar indicates the 50 ms response period used to calculate tone-evoked FR. (b)\u00a0Same as (a), for an example unit recorded from an Arch/Pvalb mouse without (black) and with (light blue) inactivation of Pvalb+ interneurons. (c)\u00a0The spontaneous FR with versus without light for each tuned unit whose sound-evoked FR was increased by light. Left: Arch/Sst, n = 44 units; right: Arch/Pvalb, n = 41 units. (d)\u00a0Spontaneous rate ratio (defined as light-on FR divided by light-off FR) for the units in (c). Inactivation of Sst+ interneurons increases the spontaneous rate ratio (signrank p=7.6\u00a0\u00d7\u00a010\u22129), as does inactivation of Pvalb+ interneurons (signrank p=2.4\u00a0\u00d7 10\u22128), but these ratios are not different from each other (ranksum p=0.054). (e)\u00a0Same as (c), but for sound-evoked FRs (calculated as average spikes/second in the 50 ms after response onset). (f)\u00a0Sound-evoked rate ratio for the units in (e). Inactivation of Sst+ interneurons increases the sound-evoked rate ratio (signrank p=7.5\u00a0\u00d7\u00a010\u22129), as does inactivation of Pvalb+ interneurons (signrank p=2.2\u00a0\u00d7\u00a010\u22128), but these ratios are not different from each other (ranksum p=0.26). (g)\u00a0Same as (c), but for baseline-subtracted sound-evoked FRs (defined as evoked FR minus spontaneous FR). (h)\u00a0Baseline-subtracted sound-evoked ratio for the units in (g). Inactivation of Sst+ interneurons increases the baseline-subtracted sound-evoked ratio (signrank p=8.0\u00a0\u00d7\u00a010\u22127), as does inactivation of Pvalb+ interneurons (signrank p=5.2\u00a0\u00d7\u00a010\u22126), but these ratios are not different from each other (ranksum p=0.77). (i)\u00a0Same as (c), but for signal to noise ratio (SNR: defined as sound-evoked FR divided by spontaneous FR). (j)\u00a0SNR ratio for the units in (i). Inactivation of Sst+ interneurons decreases SNR ratio (signrank p=2.6\u00a0\u00d7\u00a010\u221210), as does inactivation of Pvalb+ interneurons (signrank p=1.9\u00a0\u00d7\u00a010\u22128), but these ratios are not different from each other (ranksum p=0.081).\n\n### Interpreting optogenetic manipulations in a linear framework\n\nTo characterize how optogenetically altering inhibition affects a neuron\u2019s tuning curve, we employed a common framework that models the effect as a linear transformation, comprised of scaling (multiplicative/divisive) and shifting (additive/subtractive) components. We calculated these components by fitting a straight line to the average firing rates on trials with (green) versus without (black) altered inhibition (Figure 2a). In the context of optogenetically manipulating interneurons in the auditory cortex, comparing a neuron\u2019s FTC in the light-on versus light-off conditions would be expected to reveal whether the change in firing in that neuron is well fit by such a model, and, if so, whether and to what extent the transformation is multiplicative/divisive (Figure 2b), additive/subtractive (Figure 2c), or a combination (Figure 2d). The slope of the best-fit line, if significantly different from unity, reveals the magnitude of the multiplicative/divisive component of the transformation (Figure 2b), while the y-intercept of the best-fit line, if significantly different from zero, reveals the magnitude and significance of the additive/subtractive component (Figure 2c). Within this framework, a neuron\u2019s FTC may undergo eight possible types of linear transformations (e.g. significantly divisive but not significantly additive/subtractive, significantly divisive and significantly subtractive, significantly subtractive but not significantly multiplicative/divisive, and so on; Figure 2d); alternatively, neither the scaling nor shifting components may be significant at all.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig2-v2.jpg)\n\n**Figure 2.:** (a)\u00a0(Left) Schematic of a neuron\u2019s FTC in the light-off (black) and light-on (green) conditions. (Right) Linear regression of light-off versus light-on firing rates (FRs) (measurements: black; fit: green; unity line: dashed gray). (b)\u00a0Multiplicative/divisive changes produce significant slopes (\u2260 1). (c)\u00a0Additive/subtractive changes produce significant intercepts (\u2260 0). (d)\u00a0Table showing all combinations of linear transformations of frequency tuning curves and their associated linear fits.\n\n### Optogenetic inactivation produces cell type specific effects on gain and tuning\n\nWhat does inactivating Sst+ and Pvalb+ cells lead us to conclude about their specific contributions to the gain (multiplication/division) or tuning (addition/subtraction) of tone responses? We applied the linear regression described above to the 44 units recorded from Arch/Sst and 41 units from Arch/Pvalb mice whose responses were tuned for frequency and significantly increased by light (see Materials\u00a0and\u00a0methods). This included both narrow-spiking and broad-spiking units (defined by a trough-to-peak duration of less than or greater than 450 \u03bcs, respectively; see Materials\u00a0and\u00a0methods). Most units showed predominantly linear changes in their FTC with decreased inhibition (Arch/Sst: median R2 = 0.81; Arch/Pvalb: median R2 = 0.78; Figure 3\u2014figure supplement 1). Inactivation of Sst+ cells produced a variety of linear transformations (Figure 3a, pink examples), as did inactivation of Pvalb+ cells (Figure 3a, light blue examples). However, the proportions of linear transformation types produced by inactivation of Sst+ cells were significantly different from those produced by inactivation of Pvalb+ cells (Fisher\u2019s exact test p=0.0015; Figure 3b). To quantitatively compare the effects of inactivating Sst+ or Pvalb+ cells on response gain (i.e., the magnitude of the multiplicative component), we compared the distributions of the slope values obtained from the linear regression analyses (Figure 3c) and found that inactivating Sst+ cells had a significantly larger effect on the response gain than inactivating Pvalb+ cells (rank-sum p=0.01). Furthermore, inactivating Pvalb+ cells had a significantly larger effect on the magnitude of the additive component compared to inactivating Sst+ cells (rank-sum p=1.5\u00a0\u00d7\u00a010\u22124; Figure 3d). These differences between the effects of inactivating Sst+ versus Pvalb+ cells were more prominent among broad-spiking units than narrow-spiking units (Figure 3\u2014figure supplement 2). Interestingly, this larger additive effect produced by inactivating Pvalb+ cells was not entirely due to increases in spontaneous activity, as performing linear regression on baseline-subtracted responses (defined as sound-evoked FR minus spontaneous FR; Figure 3\u2014figure supplement 3a,b) revealed similar differences in both the slopes and y-intercepts (Figure 3\u2014figure supplement 3c,d), implying that the additive effect produced by inactivation of Pvalb+ cells must include a substantial contribution from sound-evoked responses that are not frequency selective.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-v2.jpg)\n\n**Figure 3.:** (a)\u00a0FTCs (mean \u00b1 SEMs) of representative units demonstrating all the combinations of linear transformations observed with inactivation of either Sst+ cells (pink) or Pvalb+ cells (light blue). (b)\u00a0Fraction of units that showed each kind of linear transformation with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue). These proportions are significantly different between groups (Arch/Sst: n = 44 units from 12 mice; Arch/Pvalb: n = 41 units from 11 mice; Fisher\u2019s exact test p=1.5\u00a0\u00d7\u00a010\u22123). (c)\u00a0Population best-fit slope coefficients with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue). Slopes were significantly different between groups (rank-sum p=0.01). Dark/light squares indicate units for which the slope was/was not significantly different from 1, respectively. Lines indicate population medians and lower/upper quartiles. (d)\u00a0Population best-fit y-intercepts, normalized by maximum firing rate, with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue). Y-intercepts were significantly different between groups (rank-sum p=1.5\u00a0\u00d7\u00a010\u22124). Dark/light squares indicate units for which the y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a)\u00a0Distribution of the R2 values from the linear regression analysis from units with activation of Sst+ cells (pink) and activation of Pvalb+ cells (light blue). High median R2 values demonstrate that in most units the effects of decreased inhibition are fit well by a linear framework (ChR2/Sst: median R2 = 0.81; ChR2/Pvalb: median R2 = 0.80).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a)\u00a0Best-fit slope coefficients for each unit as a function of action potential (AP) duration (trough-to-peak duration). Among the units with narrow-spiking waveforms (\u2264450 \u03bcs) whose activity was increased by light (Arch/Sst: n = 15; Arch/Pvalb: n = 15), Sst+ cell inactivation (pink) and Pvalb+ cell inactivation (light blue) produced slopes that were not significantly different (ranksum p=0.12). However, among the units with broad-spiking waveforms (>450 \u03bcs) whose activity was increased by light (Arch/Sst: n = 29; Arch/Pvalb: n = 26), Sst+ cell inactivation produced significantly larger slopes (rank-sum p=0.046) than Pvalb+ cell inactivation. Darker squares represent units for which the slope was significant. (b)\u00a0Normalized best-fit y-intercepts for each unit as a function of change in sound-evoked firing rate. Among the units with narrow-spiking waveforms (\u2264450 \u03bcs) whose activity was increased by light (Arch/Sst: n =15; Arch/Pvalb: n = 15), Sst+ cell inactivation (pink) and Pvalb+ cell inactivation (light blue) produced y-intercepts that were not significantly different (rank-sum p=0.23). However, among the units with broad-spiking waveforms (>450 \u03bcs) whose activity was increased by light (Arch/Sst: n = 29; Arch/Pvalb: n = 26), Pvalb+ cell inactivation produced larger y-intercepts (rank-sum p=0.00012) than Sst+ cell inactivation. Darker squares represent units for which the normalized y-intercept was significant.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a)\u00a0An example unit\u2019s FTC (mean \u00b1 SEMs) with (light blue) and without (black) inactivation of Pvalb+ cells. Inset shows the linear regression for light-off versus light-on firing rates (FRs) (measured FRs: black dots; fit: light blue line; confidence intervals: light blue shading; unity line: dashed gray line). (b)\u00a0Baseline-subtracted FTCs from the same unit in (a). Note that the additive component (y-intercept) is still significant after baseline-subtraction, albeit smaller. (c) Best-fit slope coefficients from baseline-subtracted units with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue) were significantly different from each other (rank-sum p=0.0032). Dark/light squares indicate units for which the slope was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles. (d) Normalized best-fit y-intercepts from baseline-subtracted units with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue) were significantly different from each other (rank-sum, p=0.00052). Dark/light squares indicate units for which the y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (a)\u00a0Best-fit slope coefficients for each unit as a function of change in sound-evoked firing rate between the light-on and light-off conditions. Among the half of the units that were more weakly affected by interneuron inactivation (Arch/Sst: n = 25, pink; Arch/Pvalb: n = 18, light blue), Pvalb+ cell inactivation produced smaller slopes than Sst+ cell inactivation (rank-sum p=0.0087). Among the half of the units that were more strongly affected by interneuron inactivation (Arch/Sst: n = 19; Arch/Pvalb: n = 23), Pvalb+ cell inactivation produced smaller slopes than Sst+ cell inactivation (rank-sum p=0.025). Darker squares represent units for which the slope was significant. (b)\u00a0Normalized best-fit y-intercepts for each unit as a function of change in sound-evoked firing rate. Among the half of the units that were more weakly affected by interneuron inactivation (Arch/Sst: n = 25, pink; Arch/Pvalb: n = 18, light blue), Pvalb+ cell inactivation produced larger y-intercepts than Sst+ cell inactivation (rank-sum p=0. 029). Among the half of the units that were more strongly affected by interneuron inactivation (Arch/Sst: n = 19; Arch/Pvalb: n = 23), Pvalb+ cell inactivation produced larger y-intercepts than Sst+ cell inactivation (rank-sum p=0.005). Darker squares represent units for which the y-intercept was significant.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (a)\u00a0The linear regression analysis is limited to units from Arch/Sst mice and Arch/Pvalb mice that have similar sound-evoked firing rate ratios (Arch/Sst: n = 37 units from 12 mice; Arch/Pvalb: n = 37 units from 11 mice). (b)\u00a0Distribution of the R2 values from the linear regression analysis from ratio-matched units with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue). High median R2 values demonstrate that most ratio-matched units are fit well by a linear framework (Arch/Sst: median R2 = 0.78; Arch/Pvalb: median R2 = 0.87) (c)\u00a0Fraction of units that showed each kind of linear transformation with inactivation of Sst+ cells (pink) or inactivation of Pvalb+ cells (light blue) were significantly different from each other (Arch/Sst: n = 37 units; Arch/Pvalb: n = 37 units; Fisher\u2019s exact test p=0.0058). (d)\u00a0Best-fit slope coefficients from ratio-matched units with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue) were significantly different from each other (rank-sum p=0.0064). Dark/light squares indicate units for which the slope was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles. (e)\u00a0Normalized best-fit y-intercepts from ratio-matched units with inactivation of Sst+ cells (pink) and inactivation of Pvalb+ cells (light blue) were significantly different from each other (rank-sum, p=0.0048). Dark/light squares indicate units for which the y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\nNote that, all other factors being equal, both the slope and y-intercept of the linear regression (i.e., the degree to which a linear transformation registers as multiplicative or additive), and the chances that either of these coefficients will be statistically significant, will be greater in units whose firing rates are more strongly affected by the light (Figure 3\u2014figure supplement 4). Although we observed that even weakly affected unit populations showed significant differences in both slopes and intercepts (Figure 3\u2014figure supplement 4), we wondered whether these differences might still be explained by an overall greater increase in firing rates when inactivating one interneuron type versus the other. We addressed this potential confound by limiting our population analyses to units with similar increases in firing rates (see Materials\u00a0and\u00a0methods; Figure 3\u2014figure supplement 5a). In these matched populations, we again found that the proportions of linear transformations produced by inactivating Sst+ or Pvalb+ cells differed (Fisher\u2019s exact test, p=0.0058; Figure 3\u2014figure supplement 5c), as did the magnitudes of both the multiplicative and additive effects (slopes: rank-sum p=0.0064; Figure 3\u2014figure supplement 5d; y-intercepts: rank-sum p=0.0048; Figure 3\u2014figure supplement 5e).\n\n### Optogenetic activation does not produce cell type specific effects on gain and tuning\n\nTo perform the complementary experiment, we produced mice in which we could activate Sst+ or Pvalb+ interneurons by crossing Sst- and Pvalb-Cre mouse strains (Taniguchi et al., 2011) with the Ai32 strain, in which expression of ChR2-eYFP is Cre-dependent (Madisen et al., 2012) (hereafter referred to as ChR2/Sst and ChR2/Pvalb mice, respectively; Figure 4\u2014figure supplement 1). In ChR2/Sst mice, somatostatin mostly co-localized with GFP, and in ChR2/Pvalb mice, parvalbumin mostly co-localized with GFP (Figure 4\u2014figure supplement 1). In these mice, blue light had a range of effects on both sound-evoked FRs, spontaneous FRs, and SNRs (Figure 4b,f; Figure 4\u2014figure supplement 2). Of the frequency-tuned units (ChR2/Sst: n = 97 of 163 units; ChR2/Pvalb: n = 103 of 160 units; see Materials\u00a0and\u00a0methods), the majority had responses to tones that were significantly reduced by light (ChR2/Sst: n = 64 of 97 units; ChR2/Pvalb: n = 62 of 103 units), a minority had responses that were significantly increased by light (ChR2/Sst: n = 19 of 97 units; ChR2/Pvalb: n = 21 of 103 units), and the remainder of units\u2019 responses showed no significant change (ChR2/Sst: n = 14 of 97 units; ChR2/Pvalb: n = 20 of 103 units). A small fraction of units with no significant change to their tone responses nonetheless showed significant changes to their spontaneous activity (ChR2/Sst: n = 4 of 14; ChR2/Pvalb: n = 3 of 20).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Schematic of optogenetic manipulation in ChR2/Sst mice in which blue light directly activates Sst+ cells (cyan cells). (b)\u00a0Rasters of tone-evoked action potentials for a representative suppressed unit without (top) and with (bottom) activation of Sst+ cells. The black sine wave represents the duration of the sound, the cyan bar represents the duration and power of the light, and the yellow bar indicates the response period used to construct FTCs. (c)\u00a0FTCs (mean \u00b1 SEMs) derived from tone-evoked firing rates (FRs) without (black) and with (red) activation of Sst+ cells for the representative unit in (b). Inset shows unit waveforms on trials without (black) and with (red) activation of Sst+ cells. (d)\u00a0Distribution of the ratio of light-on to light-off FRs during the response period in ChR2/Sst mice for frequency tuned units. Red bars indicate units with significantly suppressed FRs (n = 64 of 97 units), grayish red bars indicate units with no significant change in FR (n = 19 of 97 units), and cyan bars with red outline indicate units with significantly increased FRs (n = 14 of 97 units). (e\u2013h)\u00a0As (a\u2013b), but in ChR2/Pvalb mice, in which blue light directly activates Pvalb+ cells (e). (f,g) show the rasters and FTCs of a representative suppressed unit with and without activation of Pvalb+ cells. In (h), blue bars indicate units with significantly suppressed FRs (n = 62 of 103 units), grayish blue bars indicate units with no significant change in FR (n = 20 of 103 units), and cyan bars with blue outline indicate units with significantly increased FRs (n = 19 of 103 units).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a)\u00a0Immunostaining of a brain slice from a ChR2/Sst mouse. (Left) Grayscale image of GFP stain. (Middle) Grayscale image of somatostatin stain. (Right) Merged image of GFP (green) and somatostatin (red) stains. Magenta arrows indicate three examples of putative Sst+ cells. Note that red and green somata mostly overlap. Scale bars are 50 microns. (b)\u00a0Immunostaining of a brain slice from a ChR2/Pvalb mouse. (Left) Grayscale image of GFP stain. (Middle) Grayscale image of parvalbumin stain. (Right) Merged image of GFP (green) and parvalbumin (red) stains. Magenta arrows indicate three examples of putative Pvalb+ cells. Note that red and green somata mostly overlap. Scale bars are 50 microns.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a)\u00a0An example unit\u2019s mean firing rate (FR) \u00b1 SEMs relative to sound onset, without (black) and with (red) activation of Sst+ interneurons. The black sine wave represents the duration of the sound, the green bar represents the duration and power of the light, the orange bar indicates the 50 ms time period used to calculate spontaneous FR, and the yellow bar indicates the 50 ms response period used to calculate tone-evoked FR. (b)\u00a0Same as (a), but of an example unit recorded from a ChR2/Pvalb mouse without (black) and with (blue) activation of Pvalb+ interneurons. (c)\u00a0The spontaneous firing rate (FR) (calculated as average spikes/second in the 50 ms before the stimulus) with versus without light for each tuned unit whose sound-evoked FR was increased by light. Left: ChR2/Sst, n = 64 units; right: ChR2/Pvalb, n = 62 units. (d) Spontaneous rate ratio (defined as light-on FR divided by light-off FR) for the units in (a). Activation of Sst+ interneurons decreases the spontaneous rate ratio (signrank p=1.1\u00a0\u00d7\u00a010\u221211), as does activation of Pvalb+ interneurons (signrank p=5.1\u00a0\u00d7\u00a010\u221211), but these ratios are not different from each other (ranksum p=0.56). (e)\u00a0Same as (c), but for sound-evoked FRs (calculated as average spikes/second in the 50 ms after response onset). (f)\u00a0Sound-evoked rate ratio for the units in (e). Activation of Sst+ interneurons decreases the sound-evoked rate ratio (signrank p=3.5\u00a0\u00d7\u00a010\u221212), as does activation of Pvalb+ interneurons (signrank p=7.6\u00a0\u00d7\u00a010\u221212), but these ratios are not different from each other (ranksum p=0.76). (g)\u00a0Same as (c), but for baseline-subtracted sound-evoked FRs (defined as evoked FR minus spontaneous FR). (h)\u00a0Baseline-subtracted sound-evoked ratio for the units in (g). Activation of Sst+ interneurons decreases the baseline-subtracted sound-evoked ratio (signrank p=2.2\u00a0\u00d7\u00a010\u221210), as does activation of Pvalb+ interneurons (signrank p=7.6\u00a0\u00d7\u00a010\u221212), but these ratios are not different from each other (ranksum p=0.31). (i)\u00a0Same as (c), but for signal to noise ratio (SNR: defined as sound-evoked FR divided by spontaneous FR). (j)\u00a0SNR ratio for the units in (i). Activation of Sst+ interneurons increases SNR ratio (signrank p=5.2\u00a0\u00d7\u00a010\u221212), as does activation of Pvalb+ interneurons (signrank p=1.6\u00a0\u00d7\u00a010\u221211), but these ratios are not different from each other (ranksum p=0.20).\n\nTo evaluate how interneuron activation suppresses auditory cortical responses, we applied the same linear framework to the FTCs of the 59 units from ChR2/Sst and 57 units from ChR2/Pvalb mice whose responses were both tuned for frequency and significantly suppressed by activation of interneurons (Figure 4d,h; Figure 4\u2014figure supplement 2), excluding units that were suppressed by more than 80% (to avoid floor effects), and including both narrow-spiking and broad-spiking units. Among these units, this linear framework explained the effects of light-driven inhibition from Sst+ and Pvalb+ cells well, as evidenced by median R2 values around 0.8 (ChR2/Sst: median R2 = 0.81; ChR2/Pvalb: median R2 = 0.80; Figure 5\u2014figure supplement 1). Activating Sst+ cells, and activating Pvalb+ cells, both produced a variety of types of linear transformation (Figure 5a, red and blue examples, respectively).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0FTCs (mean \u00b1 SEMs) of representative units demonstrating all the combinations of linear transformations observed with activation of either Sst+ cells (red) or Pvalb+ cells (blue). (b)\u00a0Fraction of units that showed each kind of linear transformation with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). Distribution of proportions is not significantly different between groups (ChR2/Sst: n = 59 units from 25 mice; ChR2/Pvalb: n = 57 units from 26 mice; Fisher\u2019s exact test p=0.51). (c) Best-fit slope coefficients for activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). Slopes were not significantly different between groups (rank-sum p=0.68). Dark/light squares indicate units for which slope was/was not significantly different from 1, respectively. Lines indicate population medians and lower/upper quartiles. (d)\u00a0Best-fit y-intercepts, normalized by maximum firing rate, for activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). Y-intercepts were not significantly different between groups (rank-sum, p=0.77). Dark/light squares indicate units for which y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a)\u00a0Distribution of the R2 values from the linear regression analysis from units with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). High median R2 values demonstrate that response changes in most units are fit well by a linear framework (ChR2/Sst: median R2 = 0.81; ChR2/Pvalb: median R2 = 0.80).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Best-fit slope coefficients for each unit as a function of action potential (AP) duration (trough-to-peak duration). Among the units with narrow-spiking waveforms (\u2264450 \u03bcs) whose activity was suppressed by light (ChR2/Sst: n =29; ChR2/Pvalb: n = 12), Sst+ cell activation (red) and Pvalb+ cell activation (blue) produced similar slopes (ranksum p=0.85). Likewise, among the units with broad-spiking waveforms (>450 \u03bcs) whose activity was suppressed by light (ChR2/Sst: n = 30; ChR2/Pvalb: n = 45), Sst+ activation and Pvalb+ cell activation produced similar slopes (rank-sum p=0.51). Darker squares represent units for which the slope was significant. (b) Normalized best-fit y-intercepts for each unit as a function of change in sound-evoked firing rate. Among the units with narrow-spiking waveforms (\u2264450 \u03bcs) whose activity was suppressed by light (ChR2/Sst: n = 29; ChR2/Pvalb: n = 12), Sst+ cell activation (red) and Pvalb+ cell activation (blue) produced similar y-intercepts (rank-sum p=0.22). Likewise, among the units with broad-spiking waveforms (>450 \u03bcs) whose activity was suppressed by light (ChR2/Sst: n = 30; ChR2/Pvalb: n = 45), Sst+ activation and Pvalb+ cell activation produced similar y-intercepts (rank-sum p=0.58). Darker squares represent units for which the normalized y-intercept was significant.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a) An example unit\u2019s FTC (mean \u00b1 SEMs) with (blue) and without (black) activation of Pvalb+ cells. Inset shows the linear regression for light-off versus light-on firing rates (FRs) (measured FRs: black dots; fit: blue line; confidence intervals: blue shading; unity line: dashed gray line). (b) Baseline-subtracted FTCs from the same unit in (a). Note that the subtractive component (y-intercept) is no longer significant after baseline-subtraction. (c) Best-fit slope coefficients from baseline-subtracted units with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue) were similar to each other (rank-sum p=0.70). Dark/light squares indicate units for which slope was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles. (d)\u00a0Normalized best-fit y-intercepts from baseline-subtracted units with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue) were similar to each other (rank-sum, p=0.19). Dark/light squares indicate units for which y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp4-v2.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (a) Slope coefficients for each unit as a function of change in sound-evoked firing rate between the light-on and light-off conditions. Among the half of the units that were more weakly affected by interneuron activation (ChR2/Sst: n = 28, red; ChR2/Pvalb: n = 30, blue), Pvalb+ cell activation produced similar slopes to Sst+ cell activation (rank-sum p=0.66). Among the half of the units that were more strongly affected by interneuron activation (ChR2/Sst: n = 31; ChR2/Pvalb: n = 27), Pvalb+ cell activation produced similar slopes to Sst+ cell activation (rank-sum p=0.43). Darker squares represent units for which the slope was significant. (b) Normalized y-intercepts for each unit as a function of change in FR. Among the half of the units that were more weakly affected by interneuron activation (ChR2/Sst: n = 28, red; ChR2/Pvalb: n = 30, blue), Pvalb+ cell activation produced similar y-intercepts to Sst+ cell activation (rank-sum p=0.57). Among the half of the units that were more strongly affected by interneuron activation (ChR2/Sst: n = 31; ChR2/Pvalb: n = 27), Pvalb+ cell activation produced similar y-intercepts to Sst+ cell activation (rank-sum p=0.37). Darker squares represent units for which the y-intercept was significant.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp5-v2.jpg)\n\n**Figure 5\u2014figure supplement 5.:** (a) Only units from both populations that have similar firing rate suppression ratios are kept for the analysis (ChR2/Sst: n = 52 units from 24 mice; ChR2/Pvalb: n = 52 units from 25 mice). (b) Distribution of the R2 values from the linear regression analysis from ratio-matched units with activation of Sst+ cells (red) and activation of Pvalb cells (blue). High median R2 values demonstrate that most ratio-matched units are fit well by a linear framework (ChR2/Sst: median R2 = 0.84; ChR2/Pvalb: median R2 = 0.80). (c) Fraction of units that showed each kind of linear transformation with activation of Sst+ cells (red) or activation of Pvalb+ cells (blue). These proportions are not significantly different between groups (ChR2/Sst: n = 52 units; ChR2/Pvalb: n = 52 units; Fisher\u2019s exact test p=0.42). (d) Best-fit slope coefficients from ratio-matched units with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). Slopes were not significantly different between groups (rank-sum p=0.58). Dark/light squares indicate units for which slope was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles. (e) Normalized best-fit y-intercepts from ratio-matched units with activation of Sst+ cells (red) and activation of Pvalb+ cells (blue). Y-intercepts were not significantly different between groups (rank-sum, p=0.70). Dark/light squares indicate units for which y-intercept was/was not significantly different from 0, respectively. Lines indicate population medians and lower/upper quartiles.\n\n![Figure 5\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig5-figsupp6-v2.jpg)\n\n**Figure 5\u2014figure supplement 6.:** (a) Left: Waveforms (mean \u00b1 SD) from a putative Sst+ interneuron without (black) and with (red line, cyan outline) optogenetic activation. Middle: Peri-stimulus time histogram (mean \u00b1 SE) of the putative Sst+ interneuron without (black) and with (red line, cyan outline) optogenetic activation. Time zero indicates sound onset. Right: Frequency tuning curves (mean \u00b1 SE) without (black) and with (red line, cyan outline) optogenetic activation. Dotted lines indicate baseline firing rate without (black) and with (red) optogenetic activation. (b,c) Same as (a) for two other putative interneurons. In (c), note that the putative Sst+ interneuron barely increases firing to the stimulus without optogenetic activation; but with optogenetic activation, its firing rate is often above 60 Hz. (d\u2013f) Same as (a\u2013c) for three putative Pvalb+ interneurons.\n\nCounterintuitively, given the observation that inactivation of Sst+ versus Pvalb+ interneurons caused different effects on the gain and tuning of tone responses, the proportions of significant linear transformations observed when activating Sst+ cells and activating Pvalb+ cells were similar to one another (Fisher\u2019s exact test p=0.51; Figure 5b). Furthermore, the distributions of the slope values and the distributions of the y-intercept values obtained from the linear regression analyses were similar (slopes: rank-sum p=0.68; Figure 5c; y-intercepts: rank-sum p=0.77; Figure 5d), consistent with our previous work (Seybold et al., 2015). These similarities were present among broad-spiking units as well as narrow-spiking units (Figure 5\u2014figure supplement 2). Performing linear regression on baseline-subtracted responses (Figure 5\u2014figure supplement 3a,b) also revealed no differences (Figure 5\u2014figure supplement 3c,d). Even among the units with the most suppressed sound-evoked FRs, the effects of Sst+ and Pvalb+ activation were not significantly different from one another (Figure 5\u2014figure supplement 4), suggesting that these similarities were not due to insufficient activation of interneurons. To account for potential differences in the distributions of FR suppression produced by activation of each interneuron population, we again matched the two unit populations by their FR ratios. The proportions of linear transformations produced by interneuron activation remained similar (Fisher\u2019s exact test p=0.42; Figure 5\u2014figure supplement 5c), as did the magnitudes of both the subtractive and divisive effects (slopes: rank-sum p=0.58; Figure 5\u2014figure supplement 5d; y-intercepts: rank-sum p=0.70; Figure 5\u2014figure supplement 5e). In sum, the results of our inactivation experiments would imply that Sst+ and Pvalb+ cells normally support different computations; yet these activation experiments would lead to the conclusion that these neurons do not support different functions.\n\nThis may relate to the effects of activation on the interneurons themselves. We identified putative Sst+ (n = 24) and Pvalb+ (n = 27) units by their increased sound-evoked firing rates with light activation (seeMaterials\u00a0and methods; example putative interneurons: Figure 5\u2014figure supplement 6). These units had median spike trough-to-peak durations of 348 \u00b1 61 \u03bcs and 287 \u00b1 41 \u03bcs, respectively, were generally spontaneously active before the tone (putative Sst+: FR = 6.3 \u00b1 2.5\u2009Hz; putative Pvalb+: FR = 8.6 \u00b1 4.2\u2009Hz), and increased their firing during the tone (putative Sst+: FR = 12.2 \u00b1 8.5\u2009Hz; putative Pvalb+: FR = 24.8 \u00b1 12.7\u2009Hz). Interestingly, optogenetic activation of putative Sst+ and Pvalb+ interneurons had a larger effect on spontaneous FRs (putative Sst+: FR ratio = 3.9 \u00b1 2.9; putative Pvalb+: FR ratio = 2.5 \u00b1 0.8), than sound-evoked FRs (putative Sst+: FR ratio = 2.9 \u00b1 1.5; putative Pvalb+: FR ratio = 1.5 \u00b1 0.2). Moreover, even putative interneurons that were not generally active without light (sound-evoked rate of less than 5\u2009Hz; putative Sst+: n = 7 units; putative Pvalb+: n = 1 unit) often showed FRs well above 30\u2009Hz during the light (putative Sst+: evoked rate = 35.04 \u00b1 28.3\u2009Hz; putative Pvalb+: evoked rate = 54.5\u2009Hz). Together, these results suggest that activation increases the number of stimulus-independent spikes generated by both interneuron populations, potentially masking normal stimulus-driven function.\n\n### Optogenetic activation and inactivation produce asymmetric effects on information content\n\nThis apparent incongruity between the effects of inactivation and activation of interneurons on the gain and tuning of frequency tuning curves prompted us to ask whether we would observe a similar discrepancy in other aspects of sensory processing. Synaptic inhibition can enhance the transfer of information regarding stimulus identity in multiple ways: for instance, rapidly fluctuating inhibition might improve information transfer by linearizing responses (Hasenstaub et al., 2005; Sohal et al., 2009), slower feedforward inhibition might optimize information transfer by adapting the dynamic range of the neuron to the dynamic range of its inputs (Tan et al., 2008), while changes in tonic inhibition might selectively delete irrelevant spikes or change the number of spikes available to represent information (Duguid et al., 2012). These inhibitory dynamics and computational features have been differentially linked to Sst+ or Pvalb+ interneurons (Cardin et al., 2009; Hasenstaub et al., 2005; Sohal et al., 2009; Tan et al., 2008; Wehr and Zador, 2003). To test whether optogenetically inactivating and activating these interneurons also produced discrepant effects on information transfer through cortical neurons, we calculated the per-trial mutual information (in bits/trial; see Materials\u00a0and\u00a0methods) between the stimulus and firing rate output, in both the light-off and light-on conditions, for each unit analyzed previously (Figure 6a,f, example units). The effects of inactivating Sst+ cells on information-per-trial were significantly different from the effects of inactivating Pvalb+ cells (rank-sum p=7.1\u00a0\u00d7\u00a010\u22126; Figure 6b,c): inactivating Sst+ cells significantly increased information-per-trial (sign-rank p=0.022), while inactivating Pvalb+ cells significantly decreased it (sign-rank p=1.3\u00a0\u00d7\u00a010\u22124). Are these different effects on information transfer produced by inactivation of Sst+ versus Pvalb+ cells simply related to overall changes in the number of spikes available to represent information? To address this, we calculated firing-rate-normalized mutual information (i.e., the information about the stimulus carried by each spike). The effects on information-per-spike of inactivating Sst+ cells versus Pvalb+ cells were significantly different (rank-sum p=1.2\u00a0\u00d7\u00a010\u22125), inconsistent with the notion that the observed differences in information transfer were due to differences in firing rate modulation (Figure 6d,e).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig6-v2.jpg)\n\n**Figure 6.:** (a) Responses of a representative unit recorded in an Arch/Pvalb mouse to tones of different frequencies on trials without (top) and with (bottom) inactivation of Pvalb+ cells (orange heat map: trial counts; line: mean spikes-per-trial). In this unit, information-per-trial between the stimulus and response decreased when Pvalb+ cells were inactivated. (b) Information-per-trial with versus without inactivation of Sst+ cells (pink) or Pvalb+ cells (light blue). Darker circles represent units for which the change in information-per-trial was significant (Arch/Sst: n = 44 units from 17 mice; Arch/Pvalb: n = 41 units from 24 mice). (c) Box-and-whisker plots of the change in information-per-trial with inactivation of Sst+ cells or Pvalb+ cells. Inactivating Sst+ cells significantly increased information-per-trial (sign-rank p=0.022), inactivating Pvalb+ cells significantly decreased information-per-trial (sign-rank p=1.3\u00a0\u00d7\u00a010\u22124), and these effects were significantly different from each other (rank-sum p=7.1\u00a0\u00d7\u00a010\u22126). (d)\u00a0As (b) but for information-per-spike, to account for possible differences in the number of spikes available to represent information. (e)\u00a0As (c) but for information-per-spike. Inactivating Sst+ cells (sign-rank p=3.5\u00a0\u00d7\u00a010\u22123) and inactivating Pvalb+ cells (sign-rank p=4.1\u00a0\u00d7\u00a010\u22128) both significantly decreased information-per-spike, but these effects were significantly different from each other (rank-sum p=1.2\u00a0\u00d7\u00a010\u22125), indicating that differences in information-per-trial were not due to differences in the number of spikes available to represent information. (f)\u00a0As (a) but from a unit recorded in a ChR2/Pvalb mouse. In this unit, information-per-trial between the stimulus and response increased when Pvalb+ cells were activated. (g)\u00a0Information-per-trial with versus without activation of Sst+ cells (red) or Pvalb+ cells (blue). Darker circles represent units for which the change in information-per-trial was significant (ChR2/Sst: n = 59 units from 25 mice; ChR2/Pvalb: n = 57 units from 27 mice). (h) Box-and-whisker plots of the change in information-per-trial with activation of Sst+ cells (red) or Pvalb+ cells (blue). Neither activation of Sst+ cells (sign-rank p=0.53) nor activation of Pvalb+ cells (sign-rank p=0.63) changed information-per-trial, and their activation did not produce significantly different effects on information-per-trial (rank-sum p=0.85). (i) As (g) but for information-per-spike. (j) As (h) but for information-per-spike. Activating Sst+ cells (sign-rank p=3.9\u00a0\u00d7\u00a010\u22129) and activating Pvalb+ cells (sign-rank p =1.5\u00a0\u00d7\u00a010\u22128) both significantly increased the information-per-spike, but these effects were not significantly different from each other (rank-sum p=0.20).\n\nIn contrast, activating Sst+ cells and activating Pvalb+ cells did not differentially impact information-per-trial (rank-sum p=0.85): indeed, neither activation of Sst+ cells nor activation of Pvalb+ cells significantly changed information-per-trial (ChR2/Sst: sign-rank p=0.53; ChR2/Pvalb: sign-rank p=0.63; Figure 6g,h). This lack of differential impact on information-per-trial was likely not due to insufficient activation of interneurons because even the most strongly suppressed units did not exhibit significant differences (ChR2/Sst and ChR2/Pvalb: rank-sum p=0.50). These results are consistent with our previous work, which found no differences between activation of Sst+ or Pvalb+ interneurons on tuning bandwidths (Seybold et al., 2015). Additionally, the incongruity between inactivation and activation (specifically, that inactivation does reveal significant differences in interneuron regulation of information transfer, whereas activation does not) was apparent even after matching units based on the amount that they their firing rates were suppressed or enhanced (Arch/Sst and Arch/Pvalb: rank-sum p=1.7\u00a0\u00d7\u00a010-\u22125; ChR2/Sst and ChR2/Pvalb: rank-sum p=0.65).\n\n### Inactivation and activation produce asymmetric effects in a convergent network\n\nThe ostensible functional equivalencies between Sst+ and Pvalb+ interneurons we observed with optogenetic activation, yet functional differences produced by their inactivation, is paradoxical: how can these supposedly complementary manipulations produce such inconsistent effects? We modeled the effects of inactivating and activating interneuron populations in a densely connected network. We reasoned that not only will optogenetic manipulations of interneurons exert first-order effects on a given neuron, through direct inhibition or removal of inhibition, but they will also yield second-order effects, by altering the network-wide activity of the neuron\u2019s inputs. Consider an example in which one downstream neuron receives inputs from several upstream ('input-layer') neurons (Figure 7a,h). Each input neuron shows evoked responses that are tuned to particular frequencies, superimposed on a modest baseline level of activity, as is often the case in awake states (rev. [Haider and McCormick, 2009]). Neurons with more similar tuning to that of the downstream neuron are more strongly connected to it. The net drive to the downstream neuron is the sum of these weighted inputs. How will multiplicative, additive, divisive, or subtractive modulation propagate through this simple layered network?\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig7-v2.jpg)\n\n**Figure 7.:** (a) A population of neurons tuned to different frequencies (light colored cells) provides input to a downstream neuron (large black neuron) in a weighted fashion, such that neurons with more similar tuning to that of the downstream neuron are more strongly connected to it (indicated by color and axon thickness). Interneurons that inhibit these input neurons (green cells) are inactivated, which increases the activity of the input neurons. Number of input neurons: 101; maximum connection weight: 0.2; connection weight falloff: Gaussian with 2SD; input neuron threshold: 0. (b) The frequency tuning curve (FTC) of a single neuron in the input layer (light-off: purple curve) is multiplicatively increased by interneuron inactivation (light-on: light purple shading). Inset shows the change in firing. Scaling factor: 1.5. (c) As (b), but with many weighted inputs. (d) The net input to the downstream neuron (i.e., the sum of the weighted inputs) without (black curve) and with (light gray shading) multiplicative scaling of the inputs shows multiplicative scaling. Inset shows the change in net input to the downstream neuron. (e\u2013g) As (b\u2013d), but demonstrating additive increases in the FTC of a single input (e), many weighted inputs (f), and the net input to the downstream neuron (g). Note that when inactivating interneurons, the linear effects of multiplication and addition at the single-input level are preserved in the net input of the downstream neuron. Shifting factor: 0.15. (h) As (a), but with activation of interneurons (blue cells), which suppresses the activity of the input neurons (dark colored cells). (i\u2013k) As (b\u2013d), but demonstrating the effects of division in a single input (i), many weighted inputs (j), and the net input to the downstream neuron (k). Scaling factor: 0.5. (l\u2013n) As (b\u2013d), but demonstrating the effects of subtraction in the FTC of a single input (l), many weighted inputs (m), and the net input to the downstream neuron (n). Note that the change in net input in the downstream neuron caused by subtraction of inputs appears similar to the change caused by division of inputs. This is due to responses of single input neurons that are suppressed below threshold with subtractive inhibition, causing smaller changes in firing at the edges of the tuning curve than at the center. Shifting factor: -0.15.\n\nMultiplicatively modulating the firing of the upstream layer (Figure 7b) linearly increases the firing rate of each of the weighted inputs (Figure 7c), which sum in the downstream neuron to produce multiplication of its net drive (Figure 7d). Thus multiplication of the input neurons\u2019 responses produces the strongest increase in firing near the center of the downstream neuron\u2019s tuning curve, where stimuli evoke the strongest responses (Figure 7d). Similarly, additively modulating a single input (Figure 7e) produces a constant increase in the firing rate of each weighted input (Figure 7f), which, summed in the downstream neuron, leads to a constant (additive) increase in its net drive across all stimulus frequencies (Figure 7g). Thus, inactivation of interneurons preserves the single-cell effects of multiplication and addition at the network level in this simple model.\n\nThis contrasts with the effect of interneuron activation. As we have previously demonstrated (Seybold et al., 2015) divisive suppression acts purely linearly on the weighted inputs (Figure 7i,j); from the perspective of a downstream neuron, the largest suppressive effect occurs near the center of its tuning curve. In contrast, subtractive suppression does not linearly suppress the firing of the input neurons because the weakest responses are suppressed below the nonlinear spiking threshold, creating a 'floor effect' at the edges of the tuning curve. In the downstream neuron, these nonlinear floor effects at the edges sum to produce the strongest suppression at the center of the tuning curve (Figure 7n), and thus, downstream, appear division-like (Figure 7k,n). Importantly, aspects of the network state such as its baseline firing rate determine the regime wherein such asymmetric effects between activation and inactivation will be observed (Figure 8). For example, in a network with high spontaneous activity (Figure 8j), interneurons must be activated more strongly in order to suppress their targets\u2019 firing rates below the spiking threshold; thus the range of interneuron manipulation levels over which the neural circuit behaves linearly is relatively large (Figure 8l). On the other hand, in a network with low spontaneous activity, in which the edges of the tuning curves already lie below threshold (Figure 8p), even small additive increases in firing rates are impacted by threshold nonlinearities; thus the linear operating range of the network becomes relatively small (Figure 8r). These results highlight that the qualitative conclusions drawn from optogenetic manipulations are sensitive to both the details of the manipulation and the state of the circuit in which the manipulation is performed.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/18383/elife-18383-fig8-v2.jpg)\n\n**Figure 8.:** (a) Top row: In a network with moderate baseline activity (threshold = 0), the frequency tuning curve (FTC) of a single input (light-off: medium purple curve) undergoes multiplication (light-purple shading) or division (dark-purple shading). Middle row: The FTCs of many inputs (light-off: medium colored curves), weighted by a Gaussian connectivity function, undergo multiplication (light colored shading) or division (dark colored shading). Bottom row: These weighted inputs sum to produce the downstream neuron\u2019s net input. (b) The net input to the downstream neuron without light versus with light (multiplication: light gray line; division: black line). The best-fit slopes and y-intercepts of these measurements represent the magnitudes of the multiplicative/divisive and additive/subtractive effects, respectively, on the downstream neuron\u2019s net input. (c) The best-fit slopes and y-intercepts from regressions on the measurements in (b) as a function of the strength of (in)activation (i.e., the magnitudes of the linear effects on the downstream neuron\u2019s net input as a function of the magnitudes of the linear effects on the input neurons\u2019 FTCs). Arrows indicate the strengths of interneuron (in)activation represented in (a). Under these conditions, interneuron inactivation and activation result in multiplication and division, respectively, of the downstream neuron\u2019s net input. (d\u2013f) Same as (a\u2013c), except the FTCs of the inputs undergo either addition (light-purple shading) or subtraction (dark-purple shading). Yellow highlighted area in (f) indicates the range of interneuron manipulation that interacts with threshold nonlinearities. Interneuron activation interacts with threshold nonlinearities to transform subtraction of the inputs\u2019 FTCs into division of the downstream neuron\u2019s net input, resulting in asymmetric results between activation and inactivation. (g\u2013l) Same as (a\u2013f), after changing one model parameter: increasing the baseline activity level of the model neurons (threshold = -0.1). Increased baseline activity levels require stronger interneuron activation to cause subtraction of the inputs to appear division-like in the downstream neuron\u2019s net input. This increases the range over which activation/inactivation will produce internally consistent conclusions. (m\u2013r) Same as (a\u2013f), after changing one model parameter: decreasing the baseline activity level of the model neurons (threshold = 0.1). The weaker responses in (m,p) now lie below spiking threshold; this decreases the strength of interneuron activation required for subtraction of the inputs to appear division-like in the downstream neuron\u2019s net input (p\u2013r). This decreases the range over which activation/inactivation will produce consistent conclusions.\n\n## Discussion\n\nResolving mechanisms of sensory processing at the level of cortical microcircuits will involve dissecting the operations performed by each interneuron subtype. The field cannot achieve this goal with correlative studies alone; causal manipulations are essential tools for conclusively linking interneuron subtypes to their respective cortical functions. Nonetheless, the assumptions and simplifications generally made when using these causal manipulations must be scrutinized. Given the surge in the use of molecular genetic tools to causally probe interneuron function, we tested whether one of the main assumptions underlying much of this work is true. Specifically, we tested the idea that differences in normal function between interneuron populations may be directly read out, and straightforwardly interpreted, by simply dialing interneuron activity up or down. In three different aspects of sensory processing within auditory cortex \u2013 the regulation of the gain, tuning, and information content of tone responses \u2013 we found that this intuitive assumption was not correct. Activation of Sst+ and Pvalb+ interneurons produced no significant differences in any of the three domains of sensory processing that we tested, even in cases where activation of interneurons caused equivalent and strong suppression, implying that Sst+ and Pvalb+ interneurons function equivalently in these aspects of sensory processing. In stark contrast, inactivation of Sst+ and Pvalb+ interneurons produced significant differences in all three domains: Pvalb+ cells appeared to increase information transfer through subtractive inhibition, whereas Sst+ cells appeared to provide divisive inhibition. That optogenetic activation and inactivation of interneurons did not produce symmetric results contradicts the intuitive notion that optogenetically increasing and decreasing interneuron activity necessarily strengthens and weakens, respectively, the functions these interneurons normally serve. How could optogenetic activation and inactivation of interneurons lead to these seemingly contradictory outcomes?\n\nOne reason could be that activation and inactivation of interneurons may differentially affect how the features of interneuron-specific inhibition are propagated through a network like the cortex. To help the reader reason through this phenomenon, we used a simple multilayered model to show that, when activating interneurons, network structure and threshold nonlinearities can convert either subtractive or divisive inhibition of a neuron\u2019s local inputs into divisive inhibition of a network (Seybold et al., 2015); yet when inactivating interneurons, multiplication and addition of local inputs may bypass these threshold nonlinearities and preserve their linear effects at the network level (Figure 7). Whether such asymmetric effects will occur depends on both the level of interneuron manipulation and the baseline activity of the input neurons. At high baseline activity, when cells spend much of their time above threshold, moderate changes in firing do not interact with threshold nonlinearities and, thus, the range of manipulation levels that produces symmetric effects expands. On the other hand, at low baseline levels, cells spend much of their time below threshold, and even small changes in firing will interact with threshold nonlinearities; thus the range of symmetric effects decreases (Figure 8). Importantly, this work suggests that optogenetic manipulations (both activation and inactivation) can be used as tools to reveal the operating range over which the network behaves linearly versus nonlinearly, with regards to any neuronal computation. This work goes beyond the previous work of our and other groups (Douglas et al., 1995; Litwin-Kumar et al., 2016; Murphy and Miller, 2003; Seybold et al., 2015; Tsodyks et al., 1997) that identify discrepancies between the single-cell and network-level consequences of inhibition. Here our goal is different: to understand the interactions between increasing or decreasing inhibition and the innate properties of the network, as part of a larger program of clarifying the ways in which we can \u2013 and cannot \u2013 use optogenetic and other causal strategies to establish the functions of specific cell types.\n\nAnother confound that could contribute to the asymmetric results from our experiments is that bidirectional manipulations may target a single population of interneurons that is genetically homogeneous, yet contains functionally heterogeneous subpopulations that respond to sensory stimuli in distinct ways. This consideration goes beyond the widely appreciated one that existing genetic targets may encompass several genetically distinct cell types (Hu et al., 2013; Ma et al., 2006; Tasic et al., 2016). For example, from the viewpoint of a cortical pyramidal cell that receives inputs from several genetically similar interneurons, inactivation of these interneurons only suppresses neurons that are active during the stimulus. On the other hand, activation of these interneurons recruits most, if not all, of the interneurons \u2013 even those that are not normally activated by the stimulus. In this study, for example, a small population of the putative Sst+ and Pvalb+ interneurons fired weakly during the auditory stimulus (with a mean firing rate of less than 5\u2009Hz), but dramatically increased their firing, often well above 30\u2009Hz, with light stimulation. Moreover, recent work suggests that cortical Sst+ and Pvalb+ populations may contain subgroups that are differentially driven by patterns of cortical activity (Kwan and Dan, 2012), stimulus features (Runyan et al., 2010), and task-related behaviors (Kvitsiani et al., 2013; Lagler et al., 2016), suggesting that genetically-targeted activation of these cells may recruit more than one functional population. Thus, activation of these heterogeneous populations may strengthen different sets of functions than those weakened by their inactivation, leading to inconsistent conclusions regarding their normal function.\n\nOther issues related to the normal pattern of interneuron activity may also contribute to these contradictory findings. Firstly, both the temporal organization of interneuron activity \u2013 for instance response delays (Gabernet et al., 2005; Tan et al., 2008; Wehr and Zador, 2003) or synchrony (Cardin et al., 2009; Hasenstaub et al., 2016; Hasenstaub et al., 2005; Hu and Agmon, 2015; Otte et al., 2010; Sohal et al., 2009; Stevens and Zador, 1998) \u2013 and the stimulus preferences of the interneurons themselves (Atencio and Schreiner, 2010; Kerlin et al., 2010; Li et al., 2015; Moore and Wehr, 2013) are important for determining output. For example, in auditory cortex, Pvalb+ cells have been reported to be activated rapidly and by a broad set of tones, while Sst+ interneurons respond relatively slowly to a narrower range of tones (Li et al., 2015). These features, however, will not be replicated in studies in which interneuron firing is indiscriminately and tonically increased or decreased. Additionally, activating or inactivating interneurons beyond a certain threshold may drive the cortical network beyond its natural operating regime (for instance, by breaking inhibitory-excitatory balance [Ozeki et al., 2009; van Vreeswijk and Sompolinsky, 1998], pushing the cortex towards epileptic states [Chagnac-Amitai and Connors, 1989], or close to silence [Hess and Murata, 1974]); in other words, a given change in interneuron activity may have a different effect in a normally active circuit compared to an over- or underactive circuit. Given these potential confounds, the results of this study further support the notion that the precise way in which we use causal tools, and the brain states in which the manipulations are performed, will govern the conclusions drawn about neural function.\n\nThese findings provide context for recent and future investigations of interneuron function. For example, recent studies in visual cortex in which interneurons were activated with ChR2 have produced diverse and even opposing findings regarding interneuron subtypes\u2019 contributions to the gain and tuning of sensory responses (Atallah et al., 2012; Lee et al., 2012; Wilson et al., 2012). The findings from our model suggest that, in any of these studies, including our own, activation of Sst+ or Pvalb+ interneurons may have suppressed input cell firing below nonlinear spiking threshold, transforming, or obfuscating, the computational properties of interneuron-specific inhibition. Our inactivation experiments, on the other hand, mostly agree with (Lee et al., 2012), and support the idea that Pvalb+ cells subtractively suppress responses and increase information content by suppressing irrelevant spikes, whereas Sst+ cells divisively suppress responses to modulate dynamic range. However, we stress the caveat that both cell types may perform these operations in cooperation with other cell types (Karnani et al., 2016; Lee et al., 2013; Pfeffer et al., 2013; Pi et al., 2013; Xu et al., 2013) and through complex network dynamics that we have not identified here (Litwin-Kumar et al., 2016). Moreover, although it is often proposed that activation and inactivation of neuronal populations test their necessity and sufficiency, respectively, to support certain computations or drive specific behaviors, our results, along with previous work (rev. [Allen et al., 2015]), suggest that this interpretation may suffer from the same second- and higher-order network effects as described here.\n\nThat we should be cautious in interpreting the effects of causal manipulations is not a novel idea. Recently, it has been shown that transient inactivations may not replicate the results of permanent lesion studies (Otchy et al., 2015). This can occur because brief manipulations in one brain region may transiently perturb the computations of downstream circuits and, thus, may not reveal circuit function within a steady-state. Our finding that opposing optogenetic manipulations can produce apparently paradoxical conclusions regarding cell-type function adds to the growing sentiment that the ease with which manipulation experiments can be performed belies the difficulty of their interpretation. We propose that activation may be particularly likely to mask normal interneuron function because it targets interneurons that are not normally active during a stimulus response, and it is likely to obscure distinctions between linear transformations within a nonlinear network; conversely, inactivation targets only the normally active subset of interneurons and is more likely to preserve distinctions between linear transformation types within a nonlinear network.To dissect how interneurons act cooperatively or individually to control cortical function, even modern causal manipulations must be carefully designed and interpreted.\n\n## Materials\u00a0and\u00a0methods\n\n### Animals\n\nAll experiments were approved by the Institutional Animal Care and Use Committee at the University of California, San Francisco. To target our opsins to either Sst+ or Pvalb+ cells, we used Sst-Cre and Pvalb-Cre knock-in lines (JAX strains 013044/RRID:IMSR_JAX:013044 and 008069/RRID:IMSR_JAX:008069, with mixed C57BL/6;129S4 and C57BL/6;129P2 backgrounds, respectively). These strains drive expression of Cre in Sst+ and Pvalb+ interneurons of the cortex and hippocampus with minimal (<10%) leak (Taniguchi et al., 2011). To produce mice in which we could either inactivate or activate interneurons, we crossed these Cre lines to either the Ai35 or Ai32 lines (JAX strains 012735/RRID:IMSR_JAX:012735 and 012569/RRID:IMSR_JAX:012569 with C57BL/6 backgrounds), which, respectively, encode the light-gated hyperpolarizing proton pump Archaerhodopsin-3 (Arch) conjugated to GFP, or the light-gated depolarizing cation channel channelrhodopsin-2 (ChR2) conjugated to eYFP, after a floxed stop cassette under the CAG promoter. For all experiments, we used adult male or female mice that were 6 to 12 weeks old. All adult mice were housed in groups of 2\u20135 under a 12\u2009hr/12\u2009hr light/dark cycle.\n\n### Histology\n\nAdult mice were deeply anesthetized with ketamine/xylazine and perfused transcardially with 4% paraformaldehyde (PFA) in PBS (0.1\u2009M, pH 7.4). After removal, brains were post-fixed overnight in the same PFA/PBS solution and then transferred to a solution of 30% sucrose 0.1\u2009M PBS until they sank to the bottom of the tube. Coronal sections (40\u2009\u03bcm thick) were cut using a freezing microtome and placed into a cryo-protective solution (30% ethylene glycol, 30% glycerol, in 0.1\u2009M PBS). Slices were rinsed in PBS solution three times for 10\u2009min, and then in 0.25% Triton X-100/0.1\u2009M PBS three times for 10\u2009min. After rinsing, slices were incubated in blocking solution (0.25% Triton X-100 and 10% normal donkey serum in 0.1\u2009M PBS) for 2\u2009hr, and then overnight at 4\u00b0C in the primary antibodies: chicken-anti-GFP (1:500, GFP-1020 Aves Lab RRID:AB_10000240), and either rabbit anti-parvalbumin (1:1000, RRID:AB_10013386 Swant, Switzerland) or goat anti-somatostatin (1:300, SC-7819 RRID:AB_2302603 Santa Cruz Biotechnology, Inc., Dallas, TX) diluted in 0.25% Triton X-100, 10% normal donkey serum, in 0.1\u2009M PBS. Sections were then rinsed in blocking solution of 5% normal donkey serum, 0.25% Triton in 0.1\u2009M PBS three times for 10\u2009min and incubated in the same blocking buffer for 2\u2009hr, with secondary antibodies: donkey-anti-chicken-Alexa 488 (1:200, 703-545-155 RRID:AB_2340375 Jackson ImmunoResearch, West Grove, PA), and either donkey anti-rabbit-Alexa 594 (1:200, 711-585-152 RRID:AB_2340621 Jackson ImmunoResearch) or donkey anti-goat-Alexa 594 (1:200, 705-586-147 RRID:AB_2340434 Jackson ImmunoResearch). The sections were then rinsed in 0.1\u2009M PBS three times for 10\u2009min, mounted on gelatin-subbed slides, and allowed to dry. Then they were dehydrated and defatted with 50% ethanol for 2\u2009min, 70% ethanol for 2\u2009min, 95% ethanol for 5\u2009min, 100% ethanol for 10\u2009min, 100% ethanol for 10\u2009min, xylenes for 10\u2009min, and xylenes for 10\u2009min. The sections were immediately coverslipped using Krystalon mounting medium (EMD Millipore,\u00a0Gibbstown,\u00a0NJ) and dried overnight. Digitized images were obtained with a Nikon DS-Fi1 digital camera (Nikon Instruments,\u00a0Melville,\u00a0NY) on a Nikon ECLIPSE 90i microscope (Nikon Instruments) using a 10\u00d7 or 20\u00d7 objective.\n\n### In vivo awake recordings\n\nAn initial surgery was performed 1\u20135 days prior to recording to affix a custom metal headplate over the temporal skull with dental cement. On the day of recording, a second surgery was performed to expose the auditory cortex. For both surgeries, mice were anesthetized with isoflurane and a subcutaneous injection of lidocaine under the incision site. As a post-operative analgesic, mice were given a subcutaneous injection of carprofen. An opening in the skull (\u223c2\u2009mm) centered over auditory cortex was drilled and then filled with silicone elastomer to protect the brain. Animals were allowed to recover from the anesthesia for 1\u20133\u2009hr, after which they were placed in a head holder on a free-spinning spherical treadmill (modified from [Niell and Stryker, 2008]), after which the silicone plug was removed. Recordings were made using a 16 site linear probe (50\u2009\u03bcm spacing, Neuronexus), inserted perpendicular to the cortical surface. Stimuli consisted of randomly ordered 20 or 50 ms tones of various frequencies (4 kHz to 64 kHz, 0.2 octave spacing, 1\u2009s interstimulus interval, with the intensity level chosen as 10\u201315 dB above threshold at BF) presented through a free-field high-frequency speaker (ES1, Tucker-Davis Technologies,\u00a0Alachua,\u00a0FL). In most experiments a second tone was played either 50 or 70 ms after the onset of the first tone for a different set of analyses. Thus only the first 50 ms of the first tone response was analyzed.\n\nOn randomly interleaved trials, the cortical surface just above the probe was illuminated with blue light (in ChR2 mice) or green light (in Arch mice) through a 400-\u03bcm-diameter fiber optic connected to a 470 nm LED (Mightex,\u00a0Pleasanton,\u00a0CA) or a 532 nm laser (IkeCool,\u00a0Anaheim,\u00a0CA), respectively. Recordings with blue light were performed with a light power near 15 \u03bcW (range 1 to 25 \u03bcW), which typically suppressed firing to about 50% of the light-off condition. Recordings with green light were performed with a light power near 10 mW (range 10 to 15 mW), which typically increased firing to about 150% of the light-off condition. The light began at least 50 ms (up to 250 ms) before the tone onset, linearly ramped up to full power for 50 ms, and remained on until 100 ms after the end of the stimulus. Each stimulus was presented 10\u201350 times with and without light. Responses were amplified and digitized continuously with a 16-channel recording system (Tucker-Davis Technologies) at 24,414\u2009Hz. Events in the recordings that crossed a threshold of 4 SD were collected and sorted using custom software in MATLAB (KFMMAutosorter, written by Matthew Fellows) to identify single units.\n\n### Data analysis\n\nData were analyzed in MATLAB (MathWorks,\u00a0Natick,\u00a0MA). Spike waveforms were characterized by trough-to-peak duration. The distribution of trough-to-peak durations was bimodal (Figure 3\u2014figure supplement 2 and Figure 5\u2014figure supplement 2), allowing us to group unit waveforms into narrow-spiking (\u2264450 \u03bcs) or broad-spiking (>450 \u03bcs) categories. Event rasters for each unit were constructed around each tone and used to produce frequency tuning curves. The response onset was calculated as the time a unit\u2019s response reached \u00bc of the maximum response, and the frequency tuning curve for each unit was defined to be the firing rate during the period between this calculated response onset and 50 ms after it, as a function of frequency. A unit was defined as tuned if the frequency tuning curve was significantly (\u03b1 = 0.05) modulated by frequency, calculated using a 1-way ANOVA, and if at least three responses in both the light-off and light-on conditions were significantly (\u03b1 = 0.05) above zero. The firing rate suppression or enhancement ratio for each unit was calculated as the percent change in spikes-per-trial during the response period, averaged over all stimuli. A unit was considered significantly suppressed or enhanced by the light if the number of tone-evoked spikes during the 50 ms response period across all stimulus conditions with light was significantly (\u03b1 < 0.05) different from that without light. For Figure 3\u2014figure supplement 3 and Figure 5\u2014figure supplement 3, we calculated baseline-subtracted tone-evoked firing by subtracting the average spontaneous firing rate, measured from 0 to 50 ms before stimulus onset, from the tone-evoked rates. For Figure 3\u2014figure supplement 5 and Figure 5\u2014figure supplement 5, units from either ChR2/Sst and ChR2/Pvalb mice, or Arch/Sst and Arch/Pvalb mice were matched based on their firing rate ratios by selecting pairs of units between the two groups that were within a distance of a tenth of the range of all firing rate ratios. If a unit in one group did not have a matching unit in the other group within this distance, it was discarded. We analyzed linear transformations using standardized major axis regression, which is necessary to account for the measurement variance on both the x and y axis, which ordinary least-squares regression does not (Sokal and Rohlf, 2012). Only stimuli that elicited a firing rate significantly above zero in both light-off and light-on conditions were included in the analysis to avoid floor effects on spiking activity which could bias the regression and cause a subtractive effect to appear divisive. Units were deemed to show significant divisive or multiplicative transformations if the regression slope was significantly (\u03b1 = 0.05) less than one or greater than one, respectively. Units were deemed to show significant subtractive or additive transformations if the regression y-intercept was significantly (\u03b1 = 0.05) less than zero or greater than zero, respectively.\n\nPer-trial mutual information (MI) for each unit was calculated using the formula:\n\n$$\nI(X;Y)=\u00a0\\sumy\\inY\\sumx\\inXp(x,y)*log(\\frac{p(x,y)}{p(x)*p(y)})\n$$\n\nwhere $x$ represents possible values for the first variable (e.g., the frequency of the tonal stimulus), y represents possible values for the second variable (e.g., the number of output spikes), $p(x)$ is the probability of observing $x$, $p(y)$ is the probability of observing y, and $p(x,y)$\u00a0is the joint probability of the two variables (i.e., the probability of observing $x$stimulus and $y$ spikes). Because we have a limited number of trials from which to sample the stimulus and response probability distributions, MI might be upwardly biased. To account for this bias, we repeatedly (500 times) shuffled stimulus-response pairs, such that each response was associated with a randomly chosen stimulus, thus eliminating information due to a real relationship between the stimulus and response, but retaining information due to a bias. We then subtracted the average of the shuffled MI values from the originally measured MI to obtain the bias-corrected MI. We applied this method to both light-off and light-on conditions separately. To calculate information-per-spike for each unit, we divided the information-per-trial by the average firing rate (spikes-per-trial).\n\n### Statistics\n\nUnless otherwise stated, all statistical values were calculated in MATLAB. Unless otherwise noted, distributions were plotted with boxplots, where the box represents the first quartile, the second quartile (median) and the third quartile of the data, the whiskers represent 1.5*interquartile range (third-first quartiles), and the dots represents outliers lying beyond the whiskers. Statistical descriptions of distributions for the putative interneurons were reported as the median \u00b1 median absolute deviation.\n\nSignificance of regression parameters for each unit was determined based on whether they exceeded the 95% confidence bounds, as in (Sokal and Rohlf, 2012). To determine whether changes in MI were significant for each unit, we performed a bootstrap analysis: we repeatedly (500 times) randomly reassigned trials to the light-off and light-on conditions and recalculated the response metric for each reassignment. Effects were deemed significant if the observed effects were less than 2.5% or greater than 97.5% of the bootstrap-calculated distribution of effects. We used Wilcoxon sign-rank test to determine whether light significantly affected a population of units, Wilcoxon rank-sum test to determine whether continuous parameters were differentially distributed between groups, and a Fisher\u2019s exact test (calculated in R) to determine if the distributions of all linear transformation types were significantly different between groups. All tests were two-sided.\n\n### Model\n\nWe assumed a population of\u00a0N frequency-tuned input neurons $I_{n}$, each with a Gaussian tuning curve, systematically varying in their center frequency:\n\n$$\nI_{n}(f)=e^{\u2212(\\frac{(f\u2212n)^{2}}{2*\\sigma_{I}^{2}})}\n$$\n\nThese input neurons are connected to the target neuron by a center-weighted (Gaussian) connectivity function $W$:\n\n$$\nW(x)=e^{\u2212(\\frac{x^{2}}{2\\sigma_{W}^{2}})}\n$$\n\nThe target neuron\u2019s total drive $I_{net}$, as a function of frequency, is then\n\n$$\nI_{net}(f)=\\sumnI_{n}(f)W(n)\n$$\n\nThe target neuron was assumed to be threshold-linear (i.e., its firing rate is proportional to its input, except that subthreshold inputs produce a firing rate of zero). Its output $O$ is calculated by thresholding its total input against a threshold $T$:\n\n$$\nO_{T}(f)=max(0,I_{net}(f)\u2212T)\n$$\n\nWhen input neurons are partially suppressed or enhanced, each input neuron\u2019s activity is calculated as:\n\n$$\nI_{n}^{lion}(f)=max(0,m\u00a0I_{n}^{lioff}(f)\u2212b)\n$$\n\nHere $m$ and $b$ represent the strengths of divisive/multiplicative and subtractive/additive inhibition, respectively. The target neuron\u2019s net drive, output, and change in responsiveness are then calculated as:\n\n$$\nI_{net}^{lion}(f)=\\sumnI_{n}^{lion}(f)W(n)\n$$\n\n\n\n$$\nO_{T}^{lion}(f)=max(0,I_{net}^{lion}(f)\u2212T)\n$$\n\n\n\n$$\n\u0394O(f)=O_{T}^{lioff}(f)\u2212O_{T}^{lion}(f)\n$$\n\nFor all conditions (division, multiplication, subtraction, and addition), 101 neurons provided input to the downstream neuron, whose tuning curves had center frequencies linearly spaced from \u22125 to 5, relative to that of the downstream neuron, and with standard deviation of 1. Unless otherwise stated, spiking threshold was set to 0. The connection weights of these inputs onto the downstream neuron decreased from a maximum of 0.2, at the best frequency of the downstream neuron, according to a Gaussian connectivity function with a standard deviation of 2. Divisive inhibition was then modeled by multiplying the input tuning curves by 0.5, while multiplication was modeled by multiplying the input tuning curves by 1.5. We modeled subtractive and additive changes in firing by subtracting and adding, respectively, 0.15 from the entire tuning curve of each input neuron. In Figure 8, the baseline firing of the input neurons was varied by changing the spiking threshold (i.e., by adding or subtracting a constant to each Gaussian input curve). For moderate baseline firing, threshold remained at 0, for low baseline firing threshold was set to 0.1 and for high baseline firing the threshold was set to \u22120.1.\n\n### Data reporting\n\nThe sample size of units was chosen to be consistent with similar studies in the field. The experimenter was not blinded to the genotype of the animal during recordings but was blinded to the genotype of the animal during the spike sorting process.\n",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "b44b2d5b-474d-4eb9-bd44-968c2e2739b7",
+      "submission_id": "157bb22e-5615-407a-a31b-151564405421",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naoshige Uchida, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18383.026](https://doi.org/10.7554/eLife.18383.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Asymmetric Effects of Activating and Inactivating Cortical Interneurons\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens (Senior Editor) and three reviewers, one of whom, Naoshige Uchida (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Maria Neimark Geffen (Reviewer #2); Andrea Benucci (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors examined how activation and inactivation of specific types of interneurons in the auditory cortex affect gain, frequency tuning, or information content of tone-evoked responses in excitatory neurons. The authors found that activation of interneurons did not produce cell-type specific effects, but inactivation caused cell-type specific effect in all three measures. The authors also include a simple multilayered network model to show how subtraction and addition could produce these asymmetrical effects.\n\nAll the referees found that this is a timely and important study demonstrating some caveats in interpretations of experiments involving transient inactivation. The manuscript is well-written and the authors make careful discussions.\n\nWhile all the referees were enthusiastic, there are some issues to which we would like to see your response. We therefore would like to invite you to revise the manuscript.\n\nEssential points:\n\n1) One main issue that was common in the reviewers' comments is considering the normal operating regime of neural circuit to design and interpret experiments. First, can the authors mention how PV and SST interneurons fire in a normal condition (reviewer #1, point #1)? If the authors have relevant data or if there are some literature on these, it would be great to describe them more clearly. Second, it seems that the authors have conducted a number of analyses to control for varying effects of optogenetic stimulation on different neurons during the tone responses. How do the effects of optogenetic stimulation on spontaneous activity compare to effects on tone-evoked responses? Would it be possible to quantify tone response magnitude rather than firing rate, which may be the more relevant quantity used by the brain to make behavioral decisions (reviewer #2, point #2)? Related to this issue, have the authors looked at the effect of varying intensity of laser stimulations? Third, it appears that one way to look at the experiments is that they are testing the dynamic range at which the neural circuits operate in a linear regime with regard to gain, frequency tuning, or information content of tone-evoked responses (reviewer #3, point #2). More detailed comments on each of these points can be found in the individual referees' comments appended below. Based on these, please make coherent discussions on the dynamics of neural circuits, model, and the experimental results.\n\n2) Please quantify the specificity of Arch/ChR2 expression in SSTs (reviewer #2, point #1).\n\n3) Please clarify how the authors selected neurons for analysis. Can the authors select putatively pyramidal or wide-spiking neurons for analysis (reviewer #1, point #1)?\n\nReviewer #1:\n\nThis study compared the effects of optogenetically inactivating versus activating specific types of inhibitory interneurons, pervalbumin (PV)- or somatostatin (SST)-expressing interneurons, on the tuning curve of neurons in the primary auditory cortex in mice. To quantify whether these manipulations caused divisive or subtractive changes in tuning curves, responses in light-on trials were regressed by responses in light-off trials. Divisive changes were detected as a significant change in slope whereas subtractive changes were detected as a significant change in intercept. Furthermore, the authors compared the ability of each neuron to transmit stimulus information using mutual information between the two conditions (activation versus inactivation). The authors' results showed that activating and inactivating specific interneurons often caused inconsistent results across these two conditions. The authors further explored potential mechanisms underlying these discrepancies using a simple network model, suggesting that some nonlinearity such as flooring of firing rates may explain these discrepancies. The authors discuss other potential caveats of their and other experiments in Discussion.\n\nAlthough optogenetic as well as other manipulations such as pharmacological, pharmaco- and magneto-genetic manipulations plays critical roles in elucidating the role of specific neuronal populations, various caveats in interpreting these results have not been fully appreciated. This study adds a timely and important warning to the neuroscience community. The results are interesting and presented clearly. Although there are some points that need to be clarified, I believe this study warrants publication at eLife.\n\n1) How do PV and SST neurons respond to different stimuli with or without optogenetic manipulations? What are the time courses and what are their tuning curves of these interneurons during auditory stimulation? These types of information are very important in designing optogenetic stimulation parameters (such as the timing and magnitude of manipulations, as the authors discuss). Also, one important assumption of these experiments appears to be that each neuronal population shows homogeneous (or similar) responses across stimuli and neurons (as neurons were homogeneously manipulated by optogenetics). Is this true to begin with?\n\n2) It is important to know how the authors selected neurons for their analysis (beyond focusing on those that changed their firing). Ideally, the analyses should be separately performed for putative pyramidal and interneurons, and further, PV and SST neurons. Even though the classification might not be perfect, can the authors analyze subsets of their data that belong putatively to specific neuron types?\n\nReviewer #2:\n\nIn this important, timely, and elegant study, the authors demonstrate that activating and inactivating two different interneuron subtypes in the auditory cortex has asymmetrical effects on gain, frequency tuning, and information content of neural responses. Specifically, that optogenetic activation of interneurons did not produce cell-type specific effects on gain, frequency tuning, or information content of tone-evoked responses in excitatory neurons, but optogenetic inactivation of interneurons caused cell-type specific effect in all three measures. The effects on putative excitatory neuronal responses to tones were multiplicative with inactivation of SOMs and additive with inactivation of PVs, whereas activation of either PVs or SOMs led to a mix of subtractive and divisive effects. The latter result is consistent with a recent paper by the authors (Seybold et al., Neuron, 2015), whereas the former is novel to this manuscript. The authors also include a simple multilayered network model to show how subtraction and addition could produce these asymmetrical effects.\n\nI have the following suggestions:\n\n1) The evidence for Arch/ChR2 expression in SSTs seems to be missing. While Arch/ChR2 does not co-localize with PV, that does not necessarily mean that it is expressed in SSTs, and exclusively in SSTs. Quantifying this is essential to interpreting the results from the paper, which rely on the comparison between the effects of activating SSTs and PVs. Please provide a picture of the stain for somatostatin and demonstrate co-localization of Arch and ChR2 expression and som. Please provide quantitative data for co-localization (specificity and efficiency).\n\n2) It seems that the authors have conducted a number of analyses to control for varying effects of optogenetic stimulation on different neurons during the tone responses. How do the effects of optogenetic stimulation on spontaneous activity compare to effects on tone-evoked responses? Would it be possible to quantify tone response magnitude rather than firing rate, which may be the more relevant quantity used by the brain to make behavioral decisions?\n\n3) The model is intuitive and easy to understand. However, it seems to be an oversimplification to exclude excitatory/inhibitory dynamics, and it would be beneficial to make the model more biologically relevant by examining rate dynamics for excitatory and inhibitory populations. Optogenetic manipulation of PVs and SSTs is represented as a multiplicative or divisive shift in the input units. It would be interesting whether this effect can be modeled through rate equations in which the optogenetic inputs would be represented as enhanced drive to inhibitory neuronal populations. This would also be interesting to examine w/r varying light intensity or varying magnitude of the effect of laser on spontaneous activity.\n\nReviewer #3:\n\nThe paper \"Asymmetric Effects of Activating and Inactivating Cortical Interneurons\" by Elizabeth Phillips and Andrea Hasenstaub emphasizes how the results of optogenetic activation and inactivation of interneurons are difficult to relate to the \"natural\" computations implemented by the population they belong to. In my view this is a fair warning worth disseminating among the optogenetic community. The manuscript is easy to read, and the data nicely presented. However, I have three concerns:\n\n1) The main motivating argument of the study, that optogenetic activation is commonly believed to strengthen computation and inactivation to weaken it, is questionable. I think there is a widespread understanding that inactivation at most can probe the 'necessity' of a population in a given information-processing context, while activation can probe the 'sufficiency'. In my view, a preferable motivation would be the one presented in the Discussion (last paragraph) about the use of optogenetics to characterize linear regimes of information processing within non-linear networks.\n\n2) The demonstration of \"separable effects\" or \"asymmetric results\" following activation or inactivation of interneurons, if taken literally in its generality, is a fairly well-understood concept. Instead, I believe the authors wanted to focus on the role of interneurons within physiological dynamical ranges (e.g. away from epileptic states, when completely silencing PV+ interneurons, or from an unresponsive network, when strongly driving PV+ interneurons), and on how optogenetic perturbations can shed light onto the linearity (or lack of thereof) of gain changes, tuning, and information content of the network. I would make this point more explicit.\n\n3) A significant amount of (similar) data and analyses shown here have already been presented in their Neuron 2015 Viewpoint paper. Figures 1\u20138 in that paper cover most of the results shown here for optogenetic activation of SST+ and PV+. Similarly, a key point presented here regarding the subtractive suppression and its flooring effect (Figure 7M) was already made in Figure 8K in the 2015 paper. The novelty of this work is about the inactivation experiments, and I think this should be more explicit.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Asymmetric Effects of Activating and Inactivating Cortical Interneurons\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens (Senior Editor) and three reviewers, one of whom, Naoshige Uchida (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Maria Neimark Geffen (Reviewer #2); Andrea Benucci (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have been responsive to the referees' comments, and overall the manuscript has been improved significantly.\n\nThere are some issues that need to be revised or clarified. Please respond the comments appended below. These issues are relatively minor.\n\nReviewer #1:\n\nThe authors have performed new analyses and modified the manuscript. These changes have improved the manuscript significantly, and addressed most of my concerns.\n\nReviewer #2:\n\nThe authors did a good job addressing the concerns of the reviewers and the manuscript is much improved.\n\nReviewer #3:\n\nThe authors have addressed my concerns and overall the manuscript has significantly improved. The concern on the linear/non-linear operating range has been nicely addressed with the new Figure 8, describing \"consistent or paradoxical\" effects depending on baseline activity. Although I could grasp the general idea behind this model simulation, it was not easy to find the exact details. Apologies if I missed it, but for example I could not find the difference between moderate-high-low activities (e.g. a fractional change?). A few more details to allow for reproducibility of this simulations would be helpful.\n",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcf1ffa9-1e47-4f30-971d-e8996c0f52f1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C1",
+      "claim": "Sst-Cre and Pvalb-Cre mouse strains express Cre-recombinase under control of the Sst or Pvalb promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "To target our opsins to either Sst+ or Pvalb+ cells, we used Sst-Cre and Pvalb-Cre knock-in lines (JAX strains 013044/RRID:IMSR_JAX:013044 and 008069/RRID:IMSR_JAX:008069, with mixed C57BL/6;129S4 and C57BL/6;129P2 backgrounds, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established mouse strain information with specific JAX strain numbers",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "0018f606-a1de-43d4-8737-844a041f852d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C2",
+      "claim": "Sst-Cre and Pvalb-Cre strains drive expression of Cre in Sst+ and Pvalb+ interneurons of the cortex and hippocampus with minimal (<10%) leak.",
+      "claim_type": "EXPLICIT",
+      "source": "These strains drive expression of Cre in Sst+ and Pvalb+ interneurons of the cortex and hippocampus with minimal (<10%) leak (Taniguchi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Taniguchi et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "08a5fc0f-40ee-409b-9d3f-3e8d01a180e0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C3",
+      "claim": "In Arch/Sst mice, the specificity of GFP labeling for Sst+ neurons was 89 \u00b1 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arch/Sst mice, the percentage of GFP labeled neurons that showed Sst fluorescence (i.e., specificity) was 89 \u00b1 4%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from immunostaining data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "84ad5fae-527f-4734-af3f-131c4f3a32ce",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C4",
+      "claim": "In Arch/Sst mice, the efficiency of GFP labeling for Sst+ neurons was 91 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "and the percentage of Sst labeled neurons that were GFP-labeled (i.e., efficiency) was 91 \u00b1 2%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from immunostaining data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "c75eb1a4-bd3b-444e-a879-dd1911ec6ba9",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C5",
+      "claim": "In Arch/Pvalb mice, the specificity of GFP labeling for Pvalb+ neurons was 93 \u00b1 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "and in Arch/Pvalb mice the specificity was 93 \u00b1 2%",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from immunostaining data in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "b99d9781-6d34-41a9-9d9b-9e51b9babd45",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C6",
+      "claim": "In Arch/Pvalb mice, the efficiency of GFP labeling for Pvalb+ neurons was 89 \u00b1 7%.",
+      "claim_type": "EXPLICIT",
+      "source": "and the efficiency was 89 \u00b1 7%, consistent with previous reports (Adesnik et al., 2012; Cardin et al., 2009; Kerlin et al., 2010; Kvitsiani et al., 2013; Pfeffer et al., 2013; Sohal et al., 2009; Taniguchi et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from immunostaining data in the study and consistent with cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "803b1046-5c97-44ae-97e1-35969304ebb7",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C7",
+      "claim": "Of the frequency-tuned units in Arch/Sst mice, 44 of 70 units had sound-evoked firing rates that were significantly increased by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the units with frequency-tuned responses (see Materials and methods; Arch/Sst: n = 70 of 96 units; Arch/Pvalb: n = 59 of 76 units), the majority had sound-evoked FRs that were significantly increased by light (Arch/Sst: n = 44 of 70 units; Arch/Pvalb: n = 41 of 59 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "6d0b7a95-ba0c-423b-8284-c31e629189d0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C8",
+      "claim": "Of the frequency-tuned units in Arch/Pvalb mice, 41 of 59 units had sound-evoked firing rates that were significantly increased by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the units with frequency-tuned responses (see Materials and methods; Arch/Sst: n = 70 of 96 units; Arch/Pvalb: n = 59 of 76 units), the majority had sound-evoked FRs that were significantly increased by light (Arch/Sst: n = 44 of 70 units; Arch/Pvalb: n = 41 of 59 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "1b3bbe1c-346b-4e71-83fe-9271c5f548f9",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C9",
+      "claim": "In Arch/Sst mice, 11 of 70 frequency-tuned units had responses that were significantly suppressed by light.",
+      "claim_type": "EXPLICIT",
+      "source": "a minority had responses that were significantly suppressed by light (Arch/Sst: n = 11 of 70 units; Arch/Pvalb: n = 5 of 59 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "3c16ac88-046a-460f-97fb-97975395a680",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C10",
+      "claim": "In Arch/Pvalb mice, 5 of 59 frequency-tuned units had responses that were significantly suppressed by light.",
+      "claim_type": "EXPLICIT",
+      "source": "a minority had responses that were significantly suppressed by light (Arch/Sst: n = 11 of 70 units; Arch/Pvalb: n = 5 of 59 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "7f485851-93ab-43d4-a9ad-008759d992d1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C11",
+      "claim": "The proportions of linear transformation types produced by inactivation of Sst+ cells were significantly different from those produced by inactivation of Pvalb+ cells (Fisher's exact test p=0.0015).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the proportions of linear transformation types produced by inactivation of Sst+ cells were significantly different from those produced by inactivation of Pvalb+ cells (Fisher's exact test p=0.0015; Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test performed on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "5d510ccb-36a5-4582-824c-c1abe8ae62f0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C12",
+      "claim": "Inactivating Sst+ cells had a significantly larger effect on the response gain than inactivating Pvalb+ cells (rank-sum p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "To quantitatively compare the effects of inactivating Sst+ or Pvalb+ cells on response gain (i.e., the magnitude of the multiplicative component), we compared the distributions of the slope values obtained from the linear regression analyses (Figure 3c) and found that inactivating Sst+ cells had a significantly larger effect on the response gain than inactivating Pvalb+ cells (rank-sum p=0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of slope coefficients from linear regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "f07e9734-76e1-4404-b52e-6bb54b018593",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C13",
+      "claim": "Inactivating Pvalb+ cells had a significantly larger effect on the magnitude of the additive component compared to inactivating Sst+ cells (rank-sum p=1.5 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inactivating Pvalb+ cells had a significantly larger effect on the magnitude of the additive component compared to inactivating Sst+ cells (rank-sum p=1.5 \u00d7 10\u22124; Figure 3d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of y-intercepts from linear regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "4589f60d-188b-4a9e-9bda-ff9f359ac89b",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C14",
+      "claim": "The differences between the effects of inactivating Sst+ versus Pvalb+ cells were more prominent among broad-spiking units than narrow-spiking units.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences between the effects of inactivating Sst+ versus Pvalb+ cells were more prominent among broad-spiking units than narrow-spiking units (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of effects across different unit types shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "b47eda3e-a3a3-4d16-8418-66b6673c4d3c",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C15",
+      "claim": "The larger additive effect produced by inactivating Pvalb+ cells was not entirely due to increases in spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this larger additive effect produced by inactivating Pvalb+ cells was not entirely due to increases in spontaneous activity, as performing linear regression on baseline-subtracted responses (defined as sound-evoked FR minus spontaneous FR; Figure 3\u2014figure supplement 3a,b) revealed similar differences in both the slopes and y-intercepts (Figure 3\u2014figure supplement 3c,d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of baseline-subtracted responses shown in supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "847256a2-cc05-400a-891f-14f7d9adaf62",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C16",
+      "claim": "The additive effect produced by inactivation of Pvalb+ cells includes a substantial contribution from sound-evoked responses that are not frequency selective.",
+      "claim_type": "EXPLICIT",
+      "source": "implying that the additive effect produced by inactivation of Pvalb+ cells must include a substantial contribution from sound-evoked responses that are not frequency selective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from baseline-subtracted analysis showing persistent additive effects",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "1e7e4ec9-13df-4eb1-84d3-0bcb3581b90e",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C17",
+      "claim": "In ChR2/Sst mice, 64 of 97 frequency-tuned units had responses to tones that were significantly reduced by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the frequency-tuned units (ChR2/Sst: n = 97 of 163 units; ChR2/Pvalb: n = 103 of 160 units; see Materials and methods), the majority had responses to tones that were significantly reduced by light (ChR2/Sst: n = 64 of 97 units; ChR2/Pvalb: n = 62 of 103 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "c5ccf5e8-dd36-4ff2-95f5-f9909887572b",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C18",
+      "claim": "In ChR2/Pvalb mice, 62 of 103 frequency-tuned units had responses to tones that were significantly reduced by light.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the frequency-tuned units (ChR2/Sst: n = 97 of 163 units; ChR2/Pvalb: n = 103 of 160 units; see Materials and methods), the majority had responses to tones that were significantly reduced by light (ChR2/Sst: n = 64 of 97 units; ChR2/Pvalb: n = 62 of 103 units)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly measured from electrophysiological recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "fa33a70a-cc12-46ff-af15-14d2bb959ee3",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C19",
+      "claim": "The proportions of significant linear transformations observed when activating Sst+ cells and activating Pvalb+ cells were similar to one another (Fisher's exact test p=0.51).",
+      "claim_type": "EXPLICIT",
+      "source": "Counterintuitively, given the observation that inactivation of Sst+ versus Pvalb+ interneurons caused different effects on the gain and tuning of tone responses, the proportions of significant linear transformations observed when activating Sst+ cells and activating Pvalb+ cells were similar to one another (Fisher's exact test p=0.51; Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test performed on experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "7dc8a0ef-283f-42d8-8a94-b62140cd1f26",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C20",
+      "claim": "The distributions of the slope values obtained from the linear regression analyses were similar for activation of Sst+ and Pvalb+ cells (slopes: rank-sum p=0.68).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distributions of the slope values and the distributions of the y-intercept values obtained from the linear regression analyses were similar (slopes: rank-sum p=0.68; Figure 5c; y-intercepts: rank-sum p=0.77; Figure 5d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of slope coefficients from linear regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "4e52c3fb-0d8e-477e-8a44-1e0213d9afb0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C21",
+      "claim": "The distributions of the y-intercept values obtained from the linear regression analyses were similar for activation of Sst+ and Pvalb+ cells (y-intercepts: rank-sum p=0.77).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distributions of the slope values and the distributions of the y-intercept values obtained from the linear regression analyses were similar (slopes: rank-sum p=0.68; Figure 5c; y-intercepts: rank-sum p=0.77; Figure 5d)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of y-intercepts from linear regression analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "5e36ce7a-9cb8-4a51-ab12-ab9c09b9c5e7",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C22",
+      "claim": "Optogenetic activation of putative Sst+ and Pvalb+ interneurons had a larger effect on spontaneous firing rates than sound-evoked firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, optogenetic activation of putative Sst+ and Pvalb+ interneurons had a larger effect on spontaneous FRs (putative Sst+: FR ratio = 3.9 \u00b1 2.9; putative Pvalb+: FR ratio = 2.5 \u00b1 0.8), than sound-evoked FRs (putative Sst+: FR ratio = 2.9 \u00b1 1.5; putative Pvalb+: FR ratio = 1.5 \u00b1 0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of firing rate ratios from putative interneuron recordings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "e48c8d08-1ee2-4757-a00d-ad5b10e1d51b",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C23",
+      "claim": "Putative interneurons that were not generally active without light often showed firing rates well above 30 Hz during the light.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, even putative interneurons that were not generally active without light (sound-evoked rate of less than 5 Hz; putative Sst+: n = 7 units; putative Pvalb+: n = 1 unit) often showed FRs well above 30 Hz during the light (putative Sst+: evoked rate = 35.04 \u00b1 28.3 Hz; putative Pvalb+: evoked rate = 54.5 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured firing rates from putative interneurons during optogenetic activation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "694bbd06-6c95-4399-8fa6-1c47b156a816",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C24",
+      "claim": "Activation increases the number of stimulus-independent spikes generated by both interneuron populations, potentially masking normal stimulus-driven function.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that activation increases the number of stimulus-independent spikes generated by both interneuron populations, potentially masking normal stimulus-driven function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the observation that activation affects spontaneous rates more than evoked rates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d7f5012f-2007-4b31-843d-174356849498",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C25",
+      "claim": "Inactivating Sst+ cells significantly increased information-per-trial (sign-rank p=0.022).",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of inactivating Sst+ cells on information-per-trial were significantly different from the effects of inactivating Pvalb+ cells (rank-sum p=7.1 \u00d7 10\u22126; Figure 6b,c): inactivating Sst+ cells significantly increased information-per-trial (sign-rank p=0.022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test on mutual information calculations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "6698f5d4-7170-421a-95da-3b7d8b05de67",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C26",
+      "claim": "Inactivating Pvalb+ cells significantly decreased information-per-trial (sign-rank p=1.3 \u00d7 10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "while inactivating Pvalb+ cells significantly decreased it (sign-rank p=1.3 \u00d7 10\u22124).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test on mutual information calculations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8a52cf75-edaa-4e59-bab5-b11052af7092",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C27",
+      "claim": "The effects of inactivating Sst+ cells on information-per-trial were significantly different from the effects of inactivating Pvalb+ cells (rank-sum p=7.1 \u00d7 10\u22126).",
+      "claim_type": "EXPLICIT",
+      "source": "The effects of inactivating Sst+ cells on information-per-trial were significantly different from the effects of inactivating Pvalb+ cells (rank-sum p=7.1 \u00d7 10\u22126; Figure 6b,c)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of information-per-trial changes between groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "6fcc1080-5d0b-4249-9eab-a6e82c48e8d3",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C28",
+      "claim": "The effects on information-per-spike of inactivating Sst+ cells versus Pvalb+ cells were significantly different (rank-sum p=1.2 \u00d7 10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "The effects on information-per-spike of inactivating Sst+ cells versus Pvalb+ cells were significantly different (rank-sum p=1.2 \u00d7 10\u22125), inconsistent with the notion that the observed differences in information transfer were due to differences in firing rate modulation (Figure 6d,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of information-per-spike changes between groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8dfd4d95-bbbd-4357-97e7-1e0e57aa6f9e",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C29",
+      "claim": "The observed differences in information transfer were not due to differences in firing rate modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The effects on information-per-spike of inactivating Sst+ cells versus Pvalb+ cells were significantly different (rank-sum p=1.2 \u00d7 10\u22125), inconsistent with the notion that the observed differences in information transfer were due to differences in firing rate modulation (Figure 6d,e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the finding that information-per-spike differences persist after normalizing for firing rate",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "2c74ebb6-a8cc-4acb-ad8a-1d91243cb9a2",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C30",
+      "claim": "Neither activation of Sst+ cells nor activation of Pvalb+ cells significantly changed information-per-trial (ChR2/Sst: sign-rank p=0.53; ChR2/Pvalb: sign-rank p=0.63).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activating Sst+ cells and activating Pvalb+ cells did not differentially impact information-per-trial (rank-sum p=0.85): indeed, neither activation of Sst+ cells nor activation of Pvalb+ cells significantly changed information-per-trial (ChR2/Sst: sign-rank p=0.53; ChR2/Pvalb: sign-rank p=0.63; Figure 6g,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical tests on mutual information calculations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "e9606bc9-f5c6-435a-8dc5-72389427c111",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C31",
+      "claim": "Activating Sst+ cells and activating Pvalb+ cells did not differentially impact information-per-trial (rank-sum p=0.85).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, activating Sst+ cells and activating Pvalb+ cells did not differentially impact information-per-trial (rank-sum p=0.85)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical comparison of information-per-trial changes between groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "85e758dd-fb2b-4521-9f8a-72b692afe5d5",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C32",
+      "claim": "Multiplicatively modulating the firing of the upstream layer produces multiplication of the downstream neuron's net drive.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiplicatively modulating the firing of the upstream layer (Figure 7b) linearly increases the firing rate of each of the weighted inputs (Figure 7c), which sum in the downstream neuron to produce multiplication of its net drive (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "7d3ebf1d-e4e8-4532-8daf-d4d220ac285f",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C33",
+      "claim": "Additively modulating a single input produces a constant (additive) increase in the downstream neuron's net drive across all stimulus frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, additively modulating a single input (Figure 7e) produces a constant increase in the firing rate of each weighted input (Figure 7f), which, summed in the downstream neuron, leads to a constant (additive) increase in its net drive across all stimulus frequencies (Figure 7g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "4157b7ac-6814-47fa-8ae5-b739a227e89e",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C34",
+      "claim": "Inactivation of interneurons preserves the single-cell effects of multiplication and addition at the network level in this simple model.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inactivation of interneurons preserves the single-cell effects of multiplication and addition at the network level in this simple model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "664aaf80-5641-4ce2-afe9-0ea806078d87",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C35",
+      "claim": "Subtractive suppression does not linearly suppress the firing of the input neurons because the weakest responses are suppressed below the nonlinear spiking threshold, creating a 'floor effect' at the edges of the tuning curve.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, subtractive suppression does not linearly suppress the firing of the input neurons because the weakest responses are suppressed below the nonlinear spiking threshold, creating a 'floor effect' at the edges of the tuning curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Explanation of model behavior based on threshold nonlinearity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "f396c953-962a-4be3-b919-ef1a4cad37b1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C36",
+      "claim": "Subtractive suppression appears division-like from the perspective of the downstream neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In the downstream neuron, these nonlinear floor effects at the edges sum to produce the strongest suppression at the center of the tuning curve (Figure 7n), and thus, downstream, appear division-like (Figure 7k,n).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8bd24cb2-2636-4ed1-8532-320f41fb05d5",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C37",
+      "claim": "Aspects of the network state such as its baseline firing rate determine the regime wherein asymmetric effects between activation and inactivation will be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, aspects of the network state such as its baseline firing rate determine the regime wherein such asymmetric effects between activation and inactivation will be observed (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "55b5d9b6-1f69-400f-a3fb-5429004bce74",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C38",
+      "claim": "In a network with high spontaneous activity, the range of interneuron manipulation levels over which the neural circuit behaves linearly is relatively large.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in a network with high spontaneous activity (Figure 8j), interneurons must be activated more strongly in order to suppress their targets' firing rates below the spiking threshold; thus the range of interneuron manipulation levels over which the neural circuit behaves linearly is relatively large (Figure 8l).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8072659b-2432-4c00-85a2-5cda284e341d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C39",
+      "claim": "In a network with low spontaneous activity, the linear operating range of the network becomes relatively small.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in a network with low spontaneous activity, in which the edges of the tuning curves already lie below threshold (Figure 8p), even small additive increases in firing rates are impacted by threshold nonlinearities; thus the linear operating range of the network becomes relatively small (Figure 8r).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through computational modeling shown in Figure 8",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "4385a1f7-699e-4fdc-9501-27130702bfd0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C40",
+      "claim": "The qualitative conclusions drawn from optogenetic manipulations are sensitive to both the details of the manipulation and the state of the circuit in which the manipulation is performed.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlight that the qualitative conclusions drawn from optogenetic manipulations are sensitive to both the details of the manipulation and the state of the circuit in which the manipulation is performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "f61d3875-4d64-4a58-a0df-440edac71c54",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C41",
+      "claim": "Inhibition shapes the gain and tuning of sensory responses throughout the neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout the neocortex, inhibition shapes the gain and tuning of sensory responses (Kyriazi et al., 1996; Tsumoto and Sato, 1985; Wang et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "a8534d5f-7262-4577-b322-cf872ae57b66",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C42",
+      "claim": "Inhibition controls the precise timing of evoked action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "controls the precise timing of evoked action potentials (Akiyama et al., 2004; Gabernet et al., 2005; Hasenstaub et al., 2005; Poo and Isaacson, 2009; Wehr and Zador, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "dda0ec65-a2cd-4879-8f9f-afd6f6c95149",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C43",
+      "claim": "Inhibition can coordinate rhythmic activity, which gates sensory responses and modulates information processing.",
+      "claim_type": "EXPLICIT",
+      "source": "and can coordinate rhythmic activity, which gates sensory responses and modulates information processing (Cardin et al., 2009; Deans et al., 2001; Hasenstaub et al., 2005; Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "bdbbc6d6-47df-47ff-85bc-1a103c4819d1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C44",
+      "claim": "GABAergic interneurons comprise a minority of cells in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they comprise a minority of cells in the cortex, the GABAergic interneurons that provide this inhibition are strikingly diverse (rev. [Petilla Interneuron Nomenclature et al., 2008])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from review",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "5a1da191-f254-4845-bdd8-332959bcfbe5",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C45",
+      "claim": "GABAergic interneurons are strikingly diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Although they comprise a minority of cells in the cortex, the GABAergic interneurons that provide this inhibition are strikingly diverse (rev. [Petilla Interneuron Nomenclature et al., 2008])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge cited from review",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "4b6f2974-bd80-4384-8a11-97b7834b9d71",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C46",
+      "claim": "Unique combinations of gene expression, electrophysiological properties, morphology, and connectivity define multiple interneuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "unique combinations of gene expression, electrophysiological properties, morphology, and connectivity define multiple interneuron types, and likely allow each interneuron type to exert a unique mode of control over cortical function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "2524ee03-1754-4b8c-9670-e300e9ae7a77",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C47",
+      "claim": "Each interneuron type likely exerts a unique mode of control over cortical function.",
+      "claim_type": "EXPLICIT",
+      "source": "unique combinations of gene expression, electrophysiological properties, morphology, and connectivity define multiple interneuron types, and likely allow each interneuron type to exert a unique mode of control over cortical function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about interneuron function",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "b6e04918-27c2-445e-9854-9019a007eb1d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C48",
+      "claim": "Optogenetics enables reversible and selective activation or inactivation of interneuron firing in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent advances in molecular techniques, such as optogenetics (Boyden et al., 2005; Zhang et al., 2011), chemogenetics (Armbruster et al., 2007), and more recently magnetogenetics (Wheeler et al., 2016), have transcended traditional methods of probing cell function, enabling reversible and selective activation or inactivation of interneuron firing in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about optogenetic techniques with citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "16ebb19c-8fab-40cf-91d8-a2f442067274",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C49",
+      "claim": "An implicit assumption underlying much optogenetic work is that one can directly read out a cell type's function by tonically modulating its firing down or up.",
+      "claim_type": "EXPLICIT",
+      "source": "An implicit assumption underlying much of this work is that one can directly read out a cell type's function, and infer its specialized operations, by tonically modulating its firing down or up",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identification of an assumption in the field",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "68190af0-5d0f-46d7-8cda-351731e629d1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C50",
+      "claim": "The response features or computations weakened by inactivating a cell population are assumed to be specifically those that the cell population normally supports.",
+      "claim_type": "EXPLICIT",
+      "source": "in other words, that the response features or computations weakened by inactivating a cell population are specifically those that the cell population normally supports, that these features will be strengthened when the same population is activated, and that the natural differences in cortical function between cell populations may be read out, and interpreted, using these same strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Identification of an assumption in the field",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d7c4f797-09b7-40ae-bae8-213a29ffd518",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C51",
+      "claim": "Inactivation of Sst+ interneurons increased response gain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inactivation of Sst+ interneurons increased response gain, while inactivation of Pvalb+ interneurons weakened tuning and decreased information transfer, implying that these two neuron types support specific, separable functions in the auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "e0d23cf7-3ceb-45dc-a26b-0d2d2f2da4cd",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C52",
+      "claim": "Inactivation of Pvalb+ interneurons weakened tuning and decreased information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inactivation of Sst+ interneurons increased response gain, while inactivation of Pvalb+ interneurons weakened tuning and decreased information transfer, implying that these two neuron types support specific, separable functions in the auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "59c861da-7702-4579-8f42-fd79c8a260b1",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C53",
+      "claim": "Sst+ and Pvalb+ interneurons support specific, separable functions in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that inactivation of Sst+ interneurons increased response gain, while inactivation of Pvalb+ interneurons weakened tuning and decreased information transfer, implying that these two neuron types support specific, separable functions in the auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from inactivation experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "52975a98-b301-466d-b6f9-cb0006ef1177",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C54",
+      "claim": "Activating Sst+ and Pvalb+ interneurons revealed no differences in their effects on gain, tuning, or information transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet activating Sst+ and Pvalb+ interneurons revealed no such differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "602da7e4-5fea-4913-a3ad-e7a6bc91f74d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C55",
+      "claim": "Relatively small changes in key parameters such as spontaneous activity or strength of the light manipulation determine whether activation and inactivation produce consistent or paradoxical conclusions regarding interneurons' computational functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a simple network model to understand this asymmetry, and showed how relatively small changes in key parameters, such as spontaneous activity or strength of the light manipulation, determined whether activation and inactivation would produce consistent or paradoxical conclusions regarding interneurons' computational functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "e03f27c4-ebf0-4166-b499-2bd9d34b7eb0",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C56",
+      "claim": "Activation of interneurons may be particularly likely to mask normal interneuron function because it targets interneurons that are not normally active during a stimulus response.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that activation may be particularly likely to mask normal interneuron function because it targets interneurons that are not normally active during a stimulus response, and it is likely to obscure distinctions between linear transformations within a nonlinear network",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation based on experimental and modeling results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "434e18b2-94e4-4375-955e-f39c0333ca5b",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C57",
+      "claim": "Activation is likely to obscure distinctions between linear transformations within a nonlinear network.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that activation may be particularly likely to mask normal interneuron function because it targets interneurons that are not normally active during a stimulus response, and it is likely to obscure distinctions between linear transformations within a nonlinear network",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation based on modeling results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "48065fea-318d-40e9-9e31-5d88415cea60",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C58",
+      "claim": "Inactivation targets only the normally active subset of interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "conversely, inactivation targets only the normally active subset of interneurons and is more likely to preserve distinctions between linear transformation types within a nonlinear network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation based on experimental observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "0ee41b06-2160-4c37-8a1a-96c623139456",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C59",
+      "claim": "Inactivation is more likely to preserve distinctions between linear transformation types within a nonlinear network.",
+      "claim_type": "EXPLICIT",
+      "source": "conversely, inactivation targets only the normally active subset of interneurons and is more likely to preserve distinctions between linear transformation types within a nonlinear network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation based on modeling results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "6cf70c60-fa14-4b22-84cb-504ab39efbc5",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C60",
+      "claim": "Recordings with blue light were performed with a light power near 15 \u03bcW (range 1 to 25 \u03bcW).",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings with blue light were performed with a light power near 15 \u03bcW (range 1 to 25 \u03bcW), which typically suppressed firing to about 50% of the light-off condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental parameters reported",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "1c812c4a-6b01-4d77-8e6c-1635496a38d4",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C61",
+      "claim": "Blue light typically suppressed firing to about 50% of the light-off condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings with blue light were performed with a light power near 15 \u03bcW (range 1 to 25 \u03bcW), which typically suppressed firing to about 50% of the light-off condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d1167946-755f-43ae-a5c4-2818cdf41fdf",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C62",
+      "claim": "Recordings with green light were performed with a light power near 10 mW (range 10 to 15 mW).",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings with green light were performed with a light power near 10 mW (range 10 to 15 mW), which typically increased firing to about 150% of the light-off condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental parameters reported",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "f79d3d81-661a-4737-b254-b57f9664e19a",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C63",
+      "claim": "Green light typically increased firing to about 150% of the light-off condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings with green light were performed with a light power near 10 mW (range 10 to 15 mW), which typically increased firing to about 150% of the light-off condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d4eea063-e2e0-422b-bde6-96ea44774b7d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C64",
+      "claim": "The distribution of trough-to-peak durations was bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of trough-to-peak durations was bimodal (Figure 3\u2014figure supplement 2 and Figure 5\u2014figure supplement 2), allowing us to group unit waveforms into narrow-spiking (\u2264450 \u03bcs) or broad-spiking (>450 \u03bcs) categories.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from data analysis shown in supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "f63c220d-8535-4c34-91ac-dae40dbbd4be",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C65",
+      "claim": "Unit waveforms were grouped into narrow-spiking (\u2264450 \u03bcs) or broad-spiking (>450 \u03bcs) categories.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of trough-to-peak durations was bimodal (Figure 3\u2014figure supplement 2 and Figure 5\u2014figure supplement 2), allowing us to group unit waveforms into narrow-spiking (\u2264450 \u03bcs) or broad-spiking (>450 \u03bcs) categories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data analysis method based on observed bimodal distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "8ec846f8-f388-47aa-aacf-218ce7fe8b40",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C66",
+      "claim": "Bidirectional manipulations \u2013 activation and inactivation \u2013 are widely used to identify the functions supported by specific cortical interneuron types.",
+      "claim_type": "EXPLICIT",
+      "source": "Bidirectional manipulations \u2013 activation and inactivation \u2013 are widely used to identify the functions supported by specific cortical interneuron types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about common practice in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "49f5b158-a1be-455d-a5c7-503d3d37e81c",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C67",
+      "claim": "Tonic activation and inactivation may not both produce valid, internally consistent insights into interneurons' computational roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, using single-unit recordings in auditory cortex of awake mice, we show that this may not generally hold true.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main conclusion from the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "6d3d2a8b-967f-41de-ad0e-16b2aa002dbd",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C68",
+      "claim": "Seemingly minor experimental details can qualitatively change the readout of a neural population's role in computation.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that seemingly minor experimental details can qualitatively change the readout of a neural population's role in computation, and that the conclusions we draw regarding neuronal function can be influenced, even distorted, by the precise way in which the neuronal populations are manipulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from modeling and experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "1783e982-775a-4914-a01a-22837b2b6238",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "claim_id": "C69",
+      "claim": "The conclusions we draw regarding neuronal function can be influenced, even distorted, by the precise way in which the neuronal populations are manipulated.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that seemingly minor experimental details can qualitatively change the readout of a neural population's role in computation, and that the conclusions we draw regarding neuronal function can be influenced, even distorted, by the precise way in which the neuronal populations are manipulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from modeling and experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4701a390-3e46-428c-ac5d-d71f2184e01f",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Arch/Sst and Arch/Pvalb mouse models show high specificity (89-93%) and efficiency (89-91%) for targeting Sst+ and Pvalb+ interneurons, consistent with prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 provide quantitative immunostaining data showing >89% specificity and efficiency for both mouse lines. C2 cites established literature (Taniguchi et al., 2011) supporting minimal leak (<10%). These validation data are essential for interpreting subsequent optogenetic manipulations and meet field standards.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "53c549e6-a444-4066-a642-c637952171d9",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Optogenetic inactivation of Sst+ or Pvalb+ interneurons predominantly increased sound-evoked firing rates in frequency-tuned units (44/70 and 41/59 units respectively), with a minority showing suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 report direct electrophysiological measurements with clear sample sizes. The predominant increase in firing with inactivation is consistent with disinhibition. The minority showing suppression (C9-C10) suggests circuit complexity but doesn't undermine the main finding. Statistical significance is established through appropriate tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d3251bec-c857-451d-9dee-067a80f513db",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Inactivation of Sst+ versus Pvalb+ cells produces distinct effects on response gain and tuning: Sst+ inactivation primarily increases multiplicative gain (slope), while Pvalb+ inactivation produces larger additive effects (y-intercept), with differences more prominent in broad-spiking units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13 provide statistical comparisons with significant p-values (p=0.0015, p=0.01, p=1.5\u00d710\u207b\u2074) from appropriate tests (Fisher's exact, rank-sum). C14 shows cell-type specificity. C15-C16 demonstrate the additive effect persists after baseline subtraction, ruling out spontaneous activity as sole explanation. The linear regression framework is well-justified and R\u00b2 values indicate good fits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "13df0015-2964-4f0a-a67d-d0380e3c70fa",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Optogenetic activation of Sst+ or Pvalb+ interneurons predominantly suppressed tone responses in frequency-tuned units (64/97 and 62/103 units respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 report direct measurements showing majority of units suppressed by activation, consistent with increased inhibition. Sample sizes are adequate and effects are statistically significant. This establishes the baseline for comparing activation versus inactivation effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Unlike inactivation, activation of Sst+ and Pvalb+ interneurons produced similar effects on gain and tuning (p=0.51 for proportions, p=0.68 for slopes, p=0.77 for y-intercepts), with activation affecting spontaneous rates more than evoked rates and recruiting normally inactive interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 show no significant differences between Sst+ and Pvalb+ activation using appropriate statistical tests, contrasting sharply with inactivation results. C22-C24 provide mechanistic insight: activation disproportionately affects spontaneous activity and recruits inactive neurons (C23: firing >30 Hz during light despite <5 Hz baseline). This explains why activation masks functional differences. The asymmetry is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Inactivation of Sst+ cells increased information-per-trial while Pvalb+ inactivation decreased it (p=7.1\u00d710\u207b\u2076), with differences persisting in information-per-spike (p=1.2\u00d710\u207b\u2075), indicating effects beyond firing rate changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 report significant differential effects on information transfer with strong statistical support. C28-C29 demonstrate that normalizing by firing rate (information-per-spike) doesn't eliminate differences, ruling out simple rate explanations. Mutual information is an appropriate measure for assessing information transfer. The analysis is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "2ff132ef-ec03-422e-8653-25d5834df555",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Activation of Sst+ or Pvalb+ cells did not significantly change information-per-trial (p=0.53 and p=0.63 respectively) and produced no differential effects between cell types (p=0.85).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 show non-significant effects with appropriate statistical tests. This contrasts with inactivation results (C25-C27) and reinforces the activation-inactivation asymmetry. The lack of effect is consistent with activation masking functional differences through non-specific recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Computational modeling demonstrates that multiplicative and additive modulation of inputs preserve their linear effects at the network level during inactivation, but subtractive suppression during activation appears division-like downstream due to threshold nonlinearities creating floor effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 show that inactivation preserves linear transformations through the network. C35-C36 explain the key asymmetry: activation causes subtractive effects to appear divisive due to threshold interactions. The model is appropriately simple (feedforward with threshold-linear neurons) and provides mechanistic insight. Figures 7-8 support these claims with clear visualizations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "d7e6fec5-8e08-45c3-9ca9-f4fec3caf7ae",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Network baseline activity determines the regime where activation-inactivation asymmetries occur: high baseline activity expands the linear operating range, while low baseline activity contracts it, making conclusions sensitive to experimental parameters and circuit state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 demonstrate through modeling how baseline activity modulates the linear operating range. C40 synthesizes this into a general principle about optogenetic interpretation. The modeling systematically varies threshold (proxy for baseline activity) and shows predicted effects. This provides important context for interpreting optogenetic experiments generally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The central finding is that optogenetic activation and inactivation produce asymmetric conclusions about interneuron function: inactivation reveals distinct roles for Sst+ (gain control) and Pvalb+ (tuning/information) cells, while activation shows no differences, with this asymmetry depending on experimental parameters like baseline activity and manipulation strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 summarize the empirical findings showing clear asymmetry across gain, tuning, and information measures. C55 and C67-C69 state the main conclusion that bidirectional manipulations don't necessarily produce consistent insights. This is supported by: (1) statistical evidence across multiple measures, (2) mechanistic modeling explaining the asymmetry, (3) identification of key parameters. The conclusion challenges common assumptions in the field and is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "c05c93aa-a286-4380-b193-245bc48fb469",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that activation masks normal function by recruiting inactive interneurons and obscuring linear transformations via threshold nonlinearities, while inactivation targets only active interneurons and preserves linear distinctions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 propose mechanistic explanations supported by: (1) direct observation of inactive neurons firing >30 Hz with activation (C23), (2) modeling showing threshold effects (C35-C36), (3) differential effects on spontaneous vs evoked rates (C22). While speculative elements exist, the proposals are well-grounded in data and modeling. This provides practical guidance for experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "22ac176f-b45c-47c9-8b33-c3925c75398d",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Methodological details: blue light (15 \u03bcW, 1-25 \u03bcW range) suppressed firing to ~50% baseline; green light (10 mW, 10-15 mW range) increased firing to ~150% baseline; spike waveforms showed bimodal distribution allowing classification into narrow-spiking (\u2264450 \u03bcs) and broad-spiking (>450 \u03bcs) categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 report experimental parameters and analysis methods. Light powers and effects are clearly stated. The bimodal distribution (C64) justifies the 450 \u03bcs threshold for classification. These methodological details are important for reproducibility and interpretation, though the specific threshold choice could be validated with additional statistical tests (e.g., mixture model).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    },
+    {
+      "id": "0b56b3db-dcd7-44a5-863b-21dc82924375",
+      "content_id": "7c55cd72-2749-4466-9a38-8ad31ba20d56",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background context: inhibition shapes sensory processing through multiple mechanisms; GABAergic interneurons are diverse with distinct properties; optogenetics enables cell-type-specific manipulations; a common assumption is that activation and inactivation directly reveal cell-type function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C48 establish well-accepted background knowledge with appropriate citations. C49-C50 identify the key assumption being tested. C66 states current practice. These claims provide essential context but are not novel findings. They accurately represent the field and motivate the study's central question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:09:02.116083Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bcf1ffa9-1e47-4f30-971d-e8996c0f52f1",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "0018f606-a1de-43d4-8737-844a041f852d",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "08a5fc0f-40ee-409b-9d3f-3e8d01a180e0",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "84ad5fae-527f-4734-af3f-131c4f3a32ce",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "c75eb1a4-bd3b-444e-a879-dd1911ec6ba9",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "b99d9781-6d34-41a9-9d9b-9e51b9babd45",
+      "result_id": "4701a390-3e46-428c-ac5d-d71f2184e01f"
+    },
+    {
+      "claim_id": "803b1046-5c97-44ae-97e1-35969304ebb7",
+      "result_id": "53c549e6-a444-4066-a642-c637952171d9"
+    },
+    {
+      "claim_id": "6d0b7a95-ba0c-423b-8284-c31e629189d0",
+      "result_id": "53c549e6-a444-4066-a642-c637952171d9"
+    },
+    {
+      "claim_id": "1b3bbe1c-346b-4e71-83fe-9271c5f548f9",
+      "result_id": "53c549e6-a444-4066-a642-c637952171d9"
+    },
+    {
+      "claim_id": "3c16ac88-046a-460f-97fb-97975395a680",
+      "result_id": "53c549e6-a444-4066-a642-c637952171d9"
+    },
+    {
+      "claim_id": "7f485851-93ab-43d4-a9ad-008759d992d1",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "5d510ccb-36a5-4582-824c-c1abe8ae62f0",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "f07e9734-76e1-4404-b52e-6bb54b018593",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "4589f60d-188b-4a9e-9bda-ff9f359ac89b",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "b47eda3e-a3a3-4d16-8418-66b6673c4d3c",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "847256a2-cc05-400a-891f-14f7d9adaf62",
+      "result_id": "d3251bec-c857-451d-9dee-067a80f513db"
+    },
+    {
+      "claim_id": "1e7e4ec9-13df-4eb1-84d3-0bcb3581b90e",
+      "result_id": "13df0015-2964-4f0a-a67d-d0380e3c70fa"
+    },
+    {
+      "claim_id": "c5ccf5e8-dd36-4ff2-95f5-f9909887572b",
+      "result_id": "13df0015-2964-4f0a-a67d-d0380e3c70fa"
+    },
+    {
+      "claim_id": "fa33a70a-cc12-46ff-af15-14d2bb959ee3",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "7dc8a0ef-283f-42d8-8a94-b62140cd1f26",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "4e52c3fb-0d8e-477e-8a44-1e0213d9afb0",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "5e36ce7a-9cb8-4a51-ab12-ab9c09b9c5e7",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "e48c8d08-1ee2-4757-a00d-ad5b10e1d51b",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "694bbd06-6c95-4399-8fa6-1c47b156a816",
+      "result_id": "5ee6310b-a8d8-44a4-9055-01e0c73b0583"
+    },
+    {
+      "claim_id": "d7f5012f-2007-4b31-843d-174356849498",
+      "result_id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560"
+    },
+    {
+      "claim_id": "6698f5d4-7170-421a-95da-3b7d8b05de67",
+      "result_id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560"
+    },
+    {
+      "claim_id": "8a52cf75-edaa-4e59-bab5-b11052af7092",
+      "result_id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560"
+    },
+    {
+      "claim_id": "6fcc1080-5d0b-4249-9eab-a6e82c48e8d3",
+      "result_id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560"
+    },
+    {
+      "claim_id": "8dfd4d95-bbbd-4357-97e7-1e0e57aa6f9e",
+      "result_id": "3c92bd07-3c68-4aaf-b86a-aac8db00e560"
+    },
+    {
+      "claim_id": "2c74ebb6-a8cc-4acb-ad8a-1d91243cb9a2",
+      "result_id": "2ff132ef-ec03-422e-8653-25d5834df555"
+    },
+    {
+      "claim_id": "e9606bc9-f5c6-435a-8dc5-72389427c111",
+      "result_id": "2ff132ef-ec03-422e-8653-25d5834df555"
+    },
+    {
+      "claim_id": "85e758dd-fb2b-4521-9f8a-72b692afe5d5",
+      "result_id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7"
+    },
+    {
+      "claim_id": "7d3ebf1d-e4e8-4532-8daf-d4d220ac285f",
+      "result_id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7"
+    },
+    {
+      "claim_id": "4157b7ac-6814-47fa-8ae5-b739a227e89e",
+      "result_id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7"
+    },
+    {
+      "claim_id": "664aaf80-5641-4ce2-afe9-0ea806078d87",
+      "result_id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7"
+    },
+    {
+      "claim_id": "f396c953-962a-4be3-b919-ef1a4cad37b1",
+      "result_id": "da51cf2b-b1db-4ebd-82c7-3c3f3a66cfa7"
+    },
+    {
+      "claim_id": "8bd24cb2-2636-4ed1-8532-320f41fb05d5",
+      "result_id": "d7e6fec5-8e08-45c3-9ca9-f4fec3caf7ae"
+    },
+    {
+      "claim_id": "55b5d9b6-1f69-400f-a3fb-5429004bce74",
+      "result_id": "d7e6fec5-8e08-45c3-9ca9-f4fec3caf7ae"
+    },
+    {
+      "claim_id": "8072659b-2432-4c00-85a2-5cda284e341d",
+      "result_id": "d7e6fec5-8e08-45c3-9ca9-f4fec3caf7ae"
+    },
+    {
+      "claim_id": "4385a1f7-699e-4fdc-9501-27130702bfd0",
+      "result_id": "d7e6fec5-8e08-45c3-9ca9-f4fec3caf7ae"
+    },
+    {
+      "claim_id": "d7c4f797-09b7-40ae-bae8-213a29ffd518",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "e0d23cf7-3ceb-45dc-a26b-0d2d2f2da4cd",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "59c861da-7702-4579-8f42-fd79c8a260b1",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "52975a98-b301-466d-b6f9-cb0006ef1177",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "602da7e4-5fea-4913-a3ad-e7a6bc91f74d",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "49f5b158-a1be-455d-a5c7-503d3d37e81c",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "6d3d2a8b-967f-41de-ad0e-16b2aa002dbd",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "1783e982-775a-4914-a01a-22837b2b6238",
+      "result_id": "1ce206cc-30c9-4c3b-8006-8944274a2d8d"
+    },
+    {
+      "claim_id": "e03f27c4-ebf0-4166-b499-2bd9d34b7eb0",
+      "result_id": "c05c93aa-a286-4380-b193-245bc48fb469"
+    },
+    {
+      "claim_id": "434e18b2-94e4-4375-955e-f39c0333ca5b",
+      "result_id": "c05c93aa-a286-4380-b193-245bc48fb469"
+    },
+    {
+      "claim_id": "48065fea-318d-40e9-9e31-5d88415cea60",
+      "result_id": "c05c93aa-a286-4380-b193-245bc48fb469"
+    },
+    {
+      "claim_id": "0ee41b06-2160-4c37-8a1a-96c623139456",
+      "result_id": "c05c93aa-a286-4380-b193-245bc48fb469"
+    },
+    {
+      "claim_id": "6cf70c60-fa14-4b22-84cb-504ab39efbc5",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "1c812c4a-6b01-4d77-8e6c-1635496a38d4",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "d1167946-755f-43ae-a5c4-2818cdf41fdf",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "f79d3d81-661a-4737-b254-b57f9664e19a",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "d4eea063-e2e0-422b-bde6-96ea44774b7d",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "f63c220d-8535-4c34-91ac-dae40dbbd4be",
+      "result_id": "22ac176f-b45c-47c9-8b33-c3925c75398d"
+    },
+    {
+      "claim_id": "f61d3875-4d64-4a58-a0df-440edac71c54",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "a8534d5f-7262-4577-b322-cf872ae57b66",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "dda0ec65-a2cd-4879-8f9f-afd6f6c95149",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "bdbbc6d6-47df-47ff-85bc-1a103c4819d1",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "5a1da191-f254-4845-bdd8-332959bcfbe5",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "4b6f2974-bd80-4384-8a11-97b7834b9d71",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "2524ee03-1754-4b8c-9670-e300e9ae7a77",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "b6e04918-27c2-445e-9854-9019a007eb1d",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "16ebb19c-8fab-40cf-91d8-a2f442067274",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "68190af0-5d0f-46d7-8cda-351731e629d1",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    },
+    {
+      "claim_id": "8ec846f8-f388-47aa-aacf-218ce7fe8b40",
+      "result_id": "0b56b3db-dcd7-44a5-863b-21dc82924375"
+    }
+  ],
+  "comparisons": []
+}

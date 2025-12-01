@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The replication study found no significant effect of iRGD co-administration on doxorubicin accumulation in prostate tumors (0.86-fold, p=0.737), contradicting the original study's ~7.15-fold increase. Meta-analysis showed opposite effect directions, significant heterogeneity (p=0.0454), and no overall significant effect (p=0.237).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The replication directly contradicts the original finding with opposite effect directions (C50) and statistically significant heterogeneity (C52). The small sample size (n=4 per group, C23-C24) limits statistical power, and the meta-analysis failed to reach significance (C51). The large discrepancy between studies (~7.15-fold vs 0.86-fold) without mechanistic explanation undermines confidence in either result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C56",
+      "C57"
+    ],
+    "result": "The replication found no significant difference in tumor weight between DOX+iRGD (0.668g) and DOX+PBS (0.721g) treatments (p=0.826), while the original study reported reduced tumor weight with iRGD (~0.35g vs ~0.82g). Both studies showed consistent effect direction but non-overlapping confidence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While both studies show tumor weight reduction with iRGD in the same direction (C56), the replication effect was much smaller and non-significant (C32). The control groups were comparable between studies (C28), but the treatment effect differed substantially. The meta-analysis was non-significant (C57), and the moderate sample size (n=7, C26-C30) provides adequate power, suggesting genuine heterogeneity rather than insufficient replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The replication found no significant difference in TUNEL staining between DOX+iRGD and DOX+PBS groups (p=0.670), with both showing reduced staining compared to PBS controls (0.71-0.79-fold). The original study reported increased TUNEL staining with iRGD (~2.6-fold). No cardiac TUNEL staining was detected in the replication, contrasting with the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The replication contradicts the original finding with opposite effect directions for apoptosis (C67). The absence of cardiac TUNEL staining (C38) versus its presence in the original (C39) suggests methodological differences or dose-dependent effects. Significant heterogeneity (p=0.0212, C69) and non-significant meta-analysis (C68) indicate inconsistent results. The blinded analysis (C80, C85) strengthens the replication's validity, but the low-dose DOX may explain minimal apoptotic effects (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Both the original and replication studies found no significant effect of DOX+iRGD treatment on mouse body weight at the 1 mg/kg dose. Meta-analysis showed consistent effect directions with overlapping confidence intervals and no significant overall effect (p=0.229).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The replication successfully reproduced the original finding of no body weight change (C8, C33, C61). Effect sizes were in the same direction with overlapping confidence intervals (C62), and the meta-analysis confirmed no significant effect (C63). Both endpoint analysis (C35) and exploratory AUC analysis (C36) support this conclusion. This consistency validates the low toxicity of the 1 mg/kg DOX dose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "This study is part of the Reproducibility Project: Cancer Biology, which pre-registered experimental protocols to replicate key findings from Sugahara et al. 2010. Known differences were documented, but unidentified critical protocol features and uncontrolled variables (microbiome, temperature, cell line drift, circadian effects, compound potency) may influence outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological framework is well-documented with pre-registration (C1, C11) and transparent reporting of known differences (C70, C72). The acknowledgment of potential uncontrolled variables (C73) and limitations (C71) demonstrates appropriate scientific caution. However, the speculation about influencing factors (C74) remains untested and represents a limitation rather than a finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The replication employed rigorous quality control including peptide synthesis verification, cell line authentication (STR profiling, mycoplasma testing), IACUC approval, and blinded TUNEL analysis. A methodological deviation from the Registered Report involved manual counting instead of automated image analysis for TUNEL quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental methods demonstrate strong quality control with peptide characterization (C75), cell line validation (C77-C78), and ethical approval (C79). Blinding during TUNEL analysis (C80, C85) reduces bias. The deviation from automated to manual TUNEL counting (C84-C85) is transparently reported but could introduce variability. The use of appropriate animal models (C81-C83) and positive/negative controls strengthens experimental rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction summarizes prior literature on iRGD, including the original 2010 finding of enhanced drug penetrance through co-administration, earlier work on conjugated iRGD, and subsequent studies showing mixed results with both conjugated and co-administered forms across different cancer models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review accurately cites prior work (C12-C22) and provides appropriate context for the replication study. The citations describe the evolution from conjugated iRGD (C14) to co-administered forms (C12-C13), and subsequent studies showing variable results depending on formulation (C15 - conjugated only) and cancer type (C16-C22). This establishes the scientific rationale for the replication attempt.",
+    "result_type": "MINOR"
+  }
+]

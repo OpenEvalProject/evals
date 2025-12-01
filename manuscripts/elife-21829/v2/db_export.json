@@ -1,0 +1,1771 @@
+{
+  "submission": {
+    "id": "d4c8a6ce-202e-4293-a6e5-8230dc1f77f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:00:26.438801Z",
+    "updated_at": "2025-11-30T22:00:26.438801Z"
+  },
+  "content": [
+    {
+      "id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "submission_id": "d4c8a6ce-202e-4293-a6e5-8230dc1f77f0",
+      "content_type": "manuscript",
+      "content_text": "# Structure of the transporter associated with antigen processing trapped by herpes simplex virus\n\n## Authors\n\n- Michael L Oldham<sup>1</sup>\n- Nikolaus Grigorieff<sup>2</sup> ([ORCID: 0000-0002-1506-909X](https://orcid.org/0000-0002-1506-909X))\n- Jue Chen<sup>1</sup> ([ORCID: 0000-0003-2075-4283](https://orcid.org/0000-0003-2075-4283)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, The Rockefeller University New York United States\n2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe transporter associated with antigen processing (TAP) is an ATP-binding cassette (ABC) transporter essential to cellular immunity against viral infection. Some persistent viruses have evolved strategies to inhibit TAP so that they may go undetected by the immune system. The herpes simplex virus for example evades immune surveillance by blocking peptide transport with a small viral protein ICP47. In this study, we determined the structure of human TAP bound to ICP47 by electron cryo-microscopy (cryo-EM) to 4.0 \u00c5. The structure shows that ICP47 traps TAP in an inactive conformation distinct from the normal transport cycle. The specificity and potency of ICP47 inhibition result from contacts between the tip of the helical hairpin and the apex of the transmembrane cavity. This work provides a clear molecular description of immune evasion by a persistent virus. It also establishes the molecular structure of TAP to facilitate mechanistic studies of the antigen presentation process.\n\n## Introduction\n\nCytotoxic T cells detect and eliminate infected cells by recognizing viral peptides displayed on the cell surface by major histocompatibility complex (MHC-I) molecules (Blum et al., 2013). The viral peptides are generated in the cytosol and loaded onto MHC-I molecules in the endoplasmic reticulum (ER). The transporter associated with antigen processing (TAP) transports these cytosolic peptides into the ER lumen, where a multi-component peptide-loading complex facilitates peptide-binding to nascent MHC-I molecules (Neefjes et al., 1993; Shepherd et al., 1993). Upon formation of a stable complex with peptides, MHC-I molecules are released from the ER and exported to the cell surface. Receptors on circulating T cells react to pathogen-derived and malignant peptides, leading to a cytotoxic event that kills the diseased cells. T cells that recognize peptides derived from normal cellular proteins are eliminated or inactivated during development to prevent an autoimmune response, a process called immune tolerance. TAP-deficient cells have a reduced surface expression of MHC-I molecules and are less sensitive to cytotoxic T cells (Deverson et al., 1990; Monaco et al., 1990; Spies et al., 1990; Trowsdale et al., 1990)\n\nTAP is an ER-resident transporter formed by two homologous subunits, TAP1 and TAP2. Similar to other ABC transporters, it contains two nucleotide-binding domains (NBDs) that hydrolyze ATP and two transmembrane domains (TMDs) that bind the substrate. In addition, both TAP1 and TAP2 contain an N-terminal transmembrane region (TMD0) that interacts with tapasin to form the larger peptide-loading complex (Hulpke et al., 2012; Procko et al., 2005). TAP\u2019s broad substrate specificity is one of the most important properties for its function (Androlewicz and Cresswell, 1994; Momburg et al., 1994a; Neefjes et al., 1995; van Endert et al., 1995). Humans typically express six different MHC-I molecules, each binding to a large variety of peptides and conferring a different specificity (Falk et al., 1991; Hunt et al., 1992; Jardetzky et al., 1991). The same TAP transporter provides peptides for all six MHC-I molecules; therefore, it must be more promiscuous than any single MHC-I molecule. The substrate specificity of TAP has been studied extensively. The only sequence constraint found for human TAP is a preference for a hydrophobic or basic residue at the C-terminus (Momburg et al., 1994b). Interestingly, this peptide preference complements MHC-I specificity in that an acidic C-terminus is rarely seen in MHC-I presented peptides (Rammensee et al., 1999).\n\nDespite its ability to transport a diverse range of peptides up to 40 residues long (Momburg et al., 1994a), TAP is still subject to inhibition by some viral peptides. For example, human herpes simplex virus (HSV) encodes the potent TAP inhibitor ICP47 (Fr\u00fch et al., 1995; Hill et al., 1995). Peptides containing the N-terminal 34 residues of ICP47 are sufficient to bind TAP and prevent peptide translocation (Galocha et al., 1997; Neumann et al., 1997). Suppressing the presentation of viral peptides renders HSV-infected cells undetectable to cytotoxic T cells (York et al., 1994). This mechanism contributes to the lifelong infection of HSV. It also raises an intriguing question: How does a viral peptide inhibit a promiscuous peptide transporter?\n\nPreviously, we determined the structure of a TAP/ICP47 complex using cryo-electron microscopy (cryo-EM) (Oldham et al., 2016). This structure, at 6.5 \u00c5 resolution, showed that the N-terminal region of ICP47 forms a helical hairpin, inserting itself into TAP\u2019s substrate translocation pathway. We have continued to study this system to establish the molecular structure of TAP and to understand the chemical nature of the inhibition. Here we present a 4.0 \u00c5 cryo-EM reconstruction of the human TAP/ICP47 complex and describe the specific atomic interactions that allow the viral peptide to bind tightly to TAP and lock it in an inactive state.\n\n## Results and discussion\n\n### Cryo-EM attempts to improve the resolution\n\nOne major modification we\u00a0incorporated\u00a0for our\u00a0new\u00a0data collection\u00a0was\u00a0using a higher magnification. As the ordered region of the TAP/ICP47 complex has a molecular mass of only 130 kDa and exhibits a pseudo-twofold symmetry, two factors likely\u00a0limiting resolution are\u00a0the accuracy with which the noisy cryo-EM images of single particles can be aligned and the ability to distinguish pseudo-symmetrically related views. Since the predominant secondary structure observed in TAP/ICP47 complex is helical, we expect that the signal in the 7\u20138 \u00c5 resolution range is important for alignment. The higher magnification reduced the effective pixel size of the images from 1.35 \u00c5 used in our previous study to 1.04 \u00c5 (Table 1), boosting the detective quantum efficiency (DQE) of the K2 Summit detector (Gatan, Inc.) at 7 \u00c5 resolution by about 6% (Li et al., 2013; McMullan et al., 2009; Ruskin et al., 2013). We also lowered the dose rate from 10 electrons per pixel to eight in order to minimize coincidence loss (Li et al., 2013) and limited data collection to areas of the grids that showed good contrast of the particles, presumably correlating with regions of the grids that had the thinnest ice.\n\n**Table 1.**\n Summary of Cryo-EM data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Imaging</th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Microscope</td>\n      <td>Titan Krios I, 300keV (FEI)</td>\n    </tr>\n    <tr>\n      <td>Detector</td>\n      <td>K2 Summit direct electron detector\u00a0(Gatan)</td>\n    </tr>\n    <tr>\n      <td>Energy filter</td>\n      <td>10 eV (Gatan)</td>\n    </tr>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pixel size</td>\n      <td>1.04 \u00c5</td>\n    </tr>\n    <tr>\n      <td>Movies</td>\n      <td>3875</td>\n    </tr>\n    <tr>\n      <td>Frames</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td>Total exposure time</td>\n      <td>10\u00a0s</td>\n    </tr>\n    <tr>\n      <td>Exposure time per frame</td>\n      <td>0.2\u00a0s</td>\n    </tr>\n    <tr>\n      <td>Total exposure</td>\n      <td>74 electrons/\u00c52</td>\n    </tr>\n    <tr>\n      <td>Exposure per frame</td>\n      <td>1.48 electrons/\u00c52/frame</td>\n    </tr>\n    <tr>\n      <td>Defocus range</td>\n      <td>\u22121.5 to \u22123.5 \u03bcm</td>\n    </tr>\n    <tr>\n      <td>Final reconstruction</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of particles</td>\n      <td>501,973</td>\n    </tr>\n    <tr>\n      <td>B-factor correction</td>\n      <td>\u2212150 \u00c52</td>\n    </tr>\n  </tbody>\n</table>\n\nTo optimize data processing, we compared three methods to correct electron beam-induced specimen movement: whole frame alignment using Unblur (Grant and Grigorieff, 2015), individual particle alignment using alignparts_lmbfgs (Rubinstein and Brubaker, 2015), and a combination of both. The best result was obtained by whole frame alignment followed by individual particle tracking. This combination of methods also works best for other small particles such as the \u03b3-secretase (Bai et al., 2015).\n\nReconstruction and refinement were performed in Frealign (Grigorieff, 2016) using the previous 6.5 \u00c5 reconstruction as an initial reference. As Frealign automatically weights each particle according to its correlation to the model, we obtained the best reconstruction without prior 2D or 3D classification using only Frealign\u2019s score-based particle weighting (Grigorieff, 1998). This resulted in weighting coefficients at 4 \u00c5 that varied by about\u00a0\u00b110% (about 5% of the particles received such low scores that they were effectively excluded at 4 \u00c5 resolution). Hence, we used all 502,000 particles that were automatically extracted from the micrographs for the 3D reconstruction. To exclude variable density corresponding to the detergent micelles and the flexible TMD0 domains, alignment was performed with a mask surrounding only the structured region of the protein. This mask was generated from the 6.5 \u00c5 reconstruction\u00a0and low-pass filtered to 8 \u00c5 to remove high-resolution information. The mask was then applied using Frealign\u2019s 3D masking option (Grigorieff, 2016), specifying a smooth edge of about 5 \u00c5 and leaving the density outside the mask in place and low-pass-filtered to 30 \u00c5 resolution. This enabled parts of the disordered regions of the complex to contribute to the alignment at low resolution while only the\u00a0signal from the well-ordered parts of the complex contribute at high resolution.\n\nThe final reconstruction has an average resolution of 4.0 \u00c5 (Figure 1A and B). Analyzing regional variations in resolution using the program Blocres (Cardone et al., 2013) indicates that the TM region is better resolved than the two NBDs (Figure 1D). The density map for ICP47 and the TMDs of TAP shows prominent side chain density sufficient to register the amino acid identity (Figure 1A and C). The density corresponding to the two NBDs is adequate to assign secondary structure but lacks side chain definition (Figure 1). With this map, we built and refined a model containing the 12 core TM-helices of TAP and the N-terminal 55 residues of ICP47 (Table 2). Poly-alanine models of the NBDs were generated from a rat TAP1 NBD crystal structure (PDB 1JJ7) (Gaudet and Wiley, 2001) using the program Modeller (Webb and Sali, 2016) and were placed into the cryo-EM density as rigid bodies. The molecular model was refined using only half of the data while keeping the other half as a free set for validation (Figure 1E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig1-v2.jpg)\n\n**Figure 1.:** (A) Stereo views of the overall density map (blue mesh), filtered to 4 \u00c5 resolution and sharpened with a B-factor of \u2212150 \u00c52, for two 180\u00b0 related views. The TAP/ICP47 model is shown in stick model (orange). (B) Resolution of the final cryo-EM density map indicated by a plot of the Fourier Shell Correlation (FSC) between unfiltered reconstructions of two semi-independently refined half datasets. (C) Stereo view of the density map (blue mesh) highlighting the TAP/ICP47 interface. Models of TAP (yellow) and ICP47 (magenta) are also shown. (D) Overall density map colored by local resolution estimation calculated from two semi-independently refined and reconstructed Frealign half maps using the Bsoft program Blocres and a 20 voxel kernel size. (E) Validation of the structure model. FSC calculated between the structure model and the half map used for refinement (working, cyan), the other half map (free, red), and 3) the full map (green).\n\n**Table 2.**\n Reciprocal space refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Space group</th>\n      <th>P1</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>92.5, 116.0, 116.0</td>\n    </tr>\n    <tr>\n      <td>\u03b1,\u03b2,\u03b3 (\u00b0)</td>\n      <td>90.0, 90.0, 90.0</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>100.0 - 3.97</td>\n    </tr>\n    <tr>\n      <td>Number of residues</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>TAP1</td>\n      <td>561</td>\n    </tr>\n    <tr>\n      <td>TAP2</td>\n      <td>551</td>\n    </tr>\n    <tr>\n      <td>ICP47</td>\n      <td>55</td>\n    </tr>\n    <tr>\n      <td>R.m.s deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.0070</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.881</td>\n    </tr>\n    <tr>\n      <td>Ramachandran</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>94.3</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>5.5</td>\n    </tr>\n    <tr>\n      <td>Outliers (%)</td>\n      <td>0.2</td>\n    </tr>\n  </tbody>\n</table>\n\n### The structure of TAP trapped by a viral inhibitor\n\nThe TAP structure has the canonical fold of ABC exporters (Figure 2A and B). The 12 transmembrane (TM) helices at the core are arranged into two bundles, each consisting of TM 1\u20133 and 6 of one subunit and TM 4\u20135 of the other subunit (Figure 2B). The NBDs are attached to each TM bundle at their cytoplasmic ends and are separated from each other. The N-terminal 55 residues of ICP47 form a helical hairpin structure, which inserts into the opening between the two TM bundles. No density was observed for either the C-terminal 33 residues of ICP47 or the two TMD0s, indicating these regions are flexible in this conformation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig2-v2.jpg)\n\n**Figure 2.:** (A) Ribbon representation of the TAP/ICP47 complex. Color code: TAP1 (blue), TAP2 (yellow), ICP47 (magenta) (B) The domain-swapped architecture: TAP1 is shown in ribbon representation, TAP2 and ICP47 are shown as surfaces. TAP1 TM helices are labelled. (C) The open ER luminal gate viewed along the membrane normal from the ER side (left). The closed extracellular gate of P-gp is also shown for comparison (right). (D) The lateral opening to the membrane bilayer at the ER luminal side (left). The equivalent region in P-gp is also shown for comparison (right).\n\nAlthough the overall conformation of TAP can be described as inward facing, such that the TM pathway is accessible from the cytosol, there is a unique feature that has not been observed in any other ABC transporters. In the inward-facing structures of other ABC exporters such as P-gp (pdb: 4F4C), access to the TM pathway is blocked from the extracellular side of the membrane by TM\u00a01 and TM\u00a06 of both subunits (Figure 2C) (Jin et al., 2012). In TAP, however, this gating region is cracked open by ICP47 to a width approximately 4 \u00c5 in diameter (Figure 2C). In addition, a lateral opening to the membrane leaflet is observed near the ER lumen side (Figure 2D). The presence of ICP47 blocks both openings; otherwise there would be a continuous pathway across the membrane, a state violating the alternating access model (Jardetzky, 1966). Therefore, it is most likely that the ER openings observed in the structure of TAP/ICP47 complex are induced by ICP47. A functional TAP without inhibitor would presumably open the TM pathway to only one side of the membrane at a time to avoid potential ion leakage across the ER membrane.\n\n### The peptide-binding pocket\n\nAlthough we do not yet have direct structural data regarding where or how natural substrates bind, there is strong evidence suggesting that ICP47 competes with substrates for the same binding pocket (Ahn et al., 1996; Fr\u00fch et al., 1995; Hill et al., 1995; Tomazin et al., 1996). Studies using radiolabeled peptides and mass spectrometry identified four regions, residues 375\u2013420 and 453\u2013487 in TAP1 and 301\u2013389 and 414\u2013433 in TAP2, as part of the binding site (Nijenhuis and H\u00e4mmerling, 1996). Mapping these residues onto the structure shows that they are part of the TM helices enclosing the large internal cavity (Figure 3A). The electrostatic environment of the TM cavity containing strong positively and negatively charged patches provides an appropriate interface for binding peptides with free N- and C-termini (Figure 3B) (Momburg et al., 1994b; Schumacher et al., 1994). Many residues identified by mutagenesis or substrate crosslinking experiments are located on the surface of this cavity (Figure 3A and C) (Armandola et al., 1996; Deverson et al., 1998; Geng et al., 2015; Momburg et al., 1996). In the TAP/ICP47 complex these residues are buried by ICP47, consistent with data showing that\u00a0ICP47 precludes peptide binding (Ahn et al., 1996; Fr\u00fch et al., 1995). Interestingly, the two residues proposed to serve as anchors for the C-termini of bound peptides, Y408 of TAP1 and M218 of TAP2 (Geng et al., 2015; Momburg et al., 1996), both interact with the N-terminal region of ICP47 through van der Waals contacts (Figure 3D). This observation is consistent with our previous suggestion that substrates interact with TAP through a very different mode from that of ICP47 (Oldham et al., 2016).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig3-v2.jpg)\n\n**Figure 3.:** (A) Biochemically identified substrate-binding regions: TAP1 375\u2013420 and 453\u2013487 (blue), TAP2 301\u2013389 and 414\u2013433 (gold). The five residues previously suggested to interact with the substrate (TAP1 Y408, E459 and TAP2 M218, A374, R380) are shown in stick model. (B) The electrostatic potential surface of the substrate-binding cavity. The\u00a0electrostatic potential was calculated assuming pH 7 and a 0.15 M concentration of both (+1) and (\u22121) ions. Isocontour levels ranging from \u221210 to 10kT/e are colored from red to blue. (C) The helical hairpin of ICP47 (purple) plugs into the substrate-binding site. (D) The N-terminal region of ICP47 packs against Y408 of TAP1 and M218 of TAP2. For clarity, only side chains of TAP1 408, TAP2 M218, and ICP47 L5 are shown. The blue mesh shows the B-factor sharpened cryo-EM reconstruction.\n\n### The TAP/ICP47 interface\n\nThe interaction surface between ICP47 and TAP is extensive: 32 residues from ICP47 and 36 residues from TAP come into direct contact at the interface. The solvent-accessible surface area of TAP buried by ICP47 is 2360 \u00c52\u00a0(Figure 4A), which is twice the average binding surface between proteins in general (London et al., 2010) and four times the surface area of an MHC-I molecule buried by a peptide antigen (Rudolph et al., 2002).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig4-v2.jpg)\n\n**Figure 4.:** (A) The first 34 residues of ICP47, highlighted in darker magenta, insert into the transmembrane pathway. R34, and the first and last residues of ICP47 resolved in the structure (M1, P55) are labeled. (B) ICP47 reaches into the TMD2/NBD2 interface near Y477. (C) Interactions between the \u2018hot-spots\u2019 in TAP shown in stick models and those of ICP47 (residues 18\u201325, highlighted in darker magenta). (D) Interactions between TAP2 T425 and ICP47 F11 and Y22. For clarity, only side chains of TAP2 T425 and Y428 and ICP47 F11 and Y22 are shown. The blue mesh shows the B-factor sharpened cryo-EM reconstruction.\n\nThe N-terminal 34 residues of ICP47 are largely buried inside the translocation pathway, forming a helical bundle with TAP2 TM helices 3 and 6 (Figure 3C and 4C). Previous studies suggest that this contact alone is sufficient to prevent substrate binding and subsequent conformational changes associated with transport (Galocha et al., 1997; Neumann et al., 1997). Residues 35\u201355 of ICP47 continue to pack closely along TAP2 TM3 and make contact with IH1\u00a0(intracellular\u00a0helix\u00a01), a coupling helix at the TMD/NBD interface. The last ordered residue of ICP47, P55, interacts with Y477, which normally makes an\u00a0aromatic stacking interaction with the adenine ring of ATP (Figure 4B). The interactions between ICP47 and TAP1 are less extensive and are largely confined to the loop region at the tip of the helical hairpin.\n\nA better understanding of which residues contribute most to the overall energy of binding comes from functional data, where each of the first 35 residues on ICP47 were mutated to alanine one at a time and assayed for TAP inhibition (Galocha et al., 1997). Mutations that reduced the activity by more than 50% are located in one region, from positions 18 to 25, where the two helices are connected by a sharp turn (Figure 4C). Previously, we generated a \u2018turn-to-helix\u2019 mutant by replacing residues in the same region (16\u201322) with alanine (Oldham et al., 2016). This mutant, predicted to have a higher propensity to form a long alpha-helix rather than the hairpin structure, indeed reduced the activity of ICP47 by a factor of five (Oldham et al., 2016).\n\nTo understand which residues on TAP are critical for binding to ICP47, we compared sequences of TAP that are sensitive to ICP47 inhibition with those resistant to it (Figure 5). Previous studies showed that ICP47 from HSV inhibits TAP in human, monkey, pig, cow and dog cells, but not in rabbit, mouse\u00a0and rat cells (Ahn et al., 1996; Jugovic et al., 1998; Verweij et al., 2011). Among the 36 residues that make contacts with ICP47, a small set of residues are highly conserved in ICP47-sensitive species but not in rabbit, mouse and rat (Figure 5, boxed residues). When we map these residues onto the human TAP/ICP47 structure we observe that all but one of them are located near the apex of the TM cavity, interacting with the \u2018hot spot\u2019 residues in ICP47 that were identified in the alanine scan (Figure 4C) (Galocha et al., 1997). Thus, it appears that in the setting of a very large interface between TAP and ICP47, amino acid changes in this region are particularly important and account for TAP susceptibility to ICP47 among the species analyzed here. For example, both mouse and rat contain a T425N substitution, which is incompatible with the close contacts between T425 and F11 and Y22 of ICP47 (Figure 4D). Substituting F11 or Y22 with alanine reduced lCP47 inhibition by 40% and 60% respectively (Galocha et al., 1997). The lack of ICP47 inhibition in rabbit cells can be explained by the substitution of S421 with the large, charged arginine residue, which probably prevents insertion of the helical hairpin into the top of TM cavity (Figure 4C). Therefore, two independent approaches\u2014mutagenesis to identify functional hotspots on ICP47 (Galocha et al., 1997) and analysis of specificity determinants on TAP\u2014both point to the same molecular interface at the tip of the helical hairpin as being crucial to the action of ICP47 to inhibit TAP (Figure 4C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig5-v2.jpg)\n\n**Figure 5.:** ICP47 inhibits TAP from human, owl monkey, pig, cow and dog (the top five sequences), but not that of rabbit, mouse and rat (the bottom three sequences). Residues contacting ICP47 are colored based on amino acid character (positively charged in blue, negatively charged in red, hydrophobic in green, glycine in magenta, and polar in gold). Residues discussed in the text are highlighted in boxes.\n\n### A mechanism of immune evasion by HSV\n\nThe structure of the TAP/ICP47 complex provides us with a clear picture of how HSV evades immune surveillance. TAP transports peptide antigens into the ER through conformational changes powered by ATP binding and hydrolysis. Based on what we have learned from homologous ABC transporters, we can envision that in the absence of substrate and ATP, TAP rests in an inward-facing conformation in which the two NBDs are separated and the translocation pathway faces the cytoplasm. Upon binding to the substrate and ATP, the two NBDs form a closed dimer and the translocation pathway orients towards the ER lumen to release the peptide. ATP hydrolysis at the closed NBD dimer interface resets TAP to its resting state, ready for the next transport cycle. ICP47 precludes substrate binding by inserting a long helical hairpin into the translocation pathway. The strong interaction between ICP47 and TAP traps TAP in an inward-facing conformation with the two NBDs separated, unable to progress to the NBD-closed conformation necessary for ATP hydrolysis. By blocking translocation of viral peptides into the ER, HSV suppresses the MHC-I antigen presentation pathway and thereby escapes cytotoxic T cell detection.\n\n### Structural comparison of peptide transporters in the ABC family\n\nPreviously, crystal structures were determined for two prokaryotic peptide transporters: the E. coli McjD in the AMPPNP-bound conformation (pdb: 4PL0) (Choudhury et al., 2014; Mehmood et al., 2016) and the peptidase-containing ABC transporter from Clostridium thermocellum (PCAT1) in two different conformations (inward-facing pdb: 4RY2; occluded, ATP\u03b3S-bound pdb: 4S0F) (Lin et al., 2015). Unlike TAP, which is a promiscuous transporter found only in jawed vertebrates (Hinz et al., 2014), McjD and PCAT1 are dedicated to specific substrates. McjD exports microcin J25, a 21-residue antibacterial peptide with a lasso fold. PCAT1 functions both as a maturation protease and exporter for a 90-residue peptide with an amino-terminal leader sequence. Correspondingly, PCAT1 contains two peptidase domains in addition to the canonical TMDs and NBDs. Despite these differences, the three transporters share a similar fold in the core region: the NBDs have very similar structures and the TM helices in each subunit are of similar length with a similar trajectory (Figure 6). One notable difference between TAP and the other two transporters occurs in TM\u00a04-5, which in TAP appears to be pushed outward and bent (Figure 6). This difference, however, could possibly reflect a distortion due to the presence of ICP47. The overall structures of TAP, PCAT1, and McjD differ in the separation of the two halves, reflecting the different conformational states each structure represents. TAP shows the largest separation, again possibly induced by the viral inhibitor ICP47. The two NBDs of PCAT1 form a semi-open dimer in the absence of a nucleotide, separated at the TMD/NBD interfaces and making contacts at the distal end of the structure (Figure 6). In the presence of ATP analogs and the absence of a substrate, both McjD and PCAT1 reveal an occluded conformation in which the NBDs are closed and the translocation pathway is shielded from both sides of the membrane (Figure 6). The similarity in their structures suggests that these transporters may share a common evolutionary origin and a common mechanism for coupling ATP hydrolysis to peptide translocation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21829/elife-21829-fig6-v2.jpg)\n\n**Figure 6.:** (A) Ribbon representations. The two subunits are shown in blue and gold, respectively. ICP47 is colored in magenta. The peptidase domains of PCAT1 observed in the inward-facing conformation are colored in cyan and light yellow. The nucleotides, ATP\u03b3S in PCAT1 and AMPPNP in McjD, are shown in stick model. (B) Structural comparison of the TMDs. Only one TMD is shown for each transporter. The TM helices for TAP1 are shown.\n\n## Materials and methods\n\n### Expression of TAP and ICP47 and co-purification of the TAP/ICP47 complex\n\nHuman TAP and HSV-1 ICP47 were expressed and purified as described in the earlier study (Oldham et al., 2016). Briefly, ICP47 was expressed in E. coli and purified via a N-terminal glutathione S-transferase (GST) affinity tag. Pichia pastoris cells (strain SMD 1163 His+; Invitrogen) co-expressing TAP1 and TAP2 were lysed with a mixer miller (Retsch Mixer Mill 400) and incubated with purified ICP47 before solubilizing with n-Dodecyl \u03b2-D-maltoside (DDM; Anatrace). The TAP/ICP47 complex was purified on IgG Sepharose resin (GE Healthcare) via the Protein A tag at the C-terminus of TAP1. The Protein A tag was removed by PreScission protease and the complex was further purified using a\u00a0Superose 6 column (GE Healthcare) in a buffer containing 20 mM Hepes, pH 7.4, 150 mM NaCl, 2 mM TCEP, 1 mM DDM, and 1 mM octaethylene glycol monododecyl ether (C12E8; Anatrace).\n\n### Electron microscopy sample preparation and microscope imaging\n\nCryo-EM grids were prepared as described (Oldham et al., 2016). Briefly, 3 \u03bcl of purified TAP/ICP47 complex (2 mg/ml) was pipetted onto glow-discharged C-flat holey carbon CF-1.2/1.3\u20134C grids (Protochips). At 90% humidity, the grids were blotted for 4 s using a Vitrobot Mark IV (FEI) and frozen in liquid ethane. Imaging data were collected on a FEI Titan Krios electron microscope (acceleration voltage of 300 keV) with a K2 Summit direct electron detector (Gatan Inc.) running in super-resolution counting mode and using SerialEM (Mastronarde, 2005). A Gatan Imaging filter with a slit width of 10 eV was used to remove inelastically scattered electrons. Movie frames were recorded on a single grid with a total\u00a0exposure time of 10\u00a0s\u00a0(200 ms per\u00a0frame)\u00a0using a dose rate of 8 electrons/pixel/s or 7.4 electrons/\u00c52/s.\n\n### Image processing\n\nMovie frames were corrected using\u00a0a gain reference and binned by a factor of 2, resulting in a pixel size of 1.04 \u00c5. The effective contrast transfer function (CTF) was determined from the frame-summed micrographs using CTFFIND4 (Rohou and Grigorieff, 2015). Manual picking and 2D classification was performed in Relion to produce template classes for autopicking (Scheres, 2012). Particles automatically selected by Relion were inspected manually to remove false positives, resulting in a dataset of about 502,000 particles.\n\nFor specimen movement correction, we compared the results from three different methods: whole frame alignment using Unblur (Grant and Grigorieff, 2015), individual particle alignment using alignparts_lmbfgs (Rubinstein and Brubaker, 2015), and by\u00a0first aligning frames with Unblur\u00a0then\u00a0aligning individual particles in the Unblur-aligned movies using alignparts_Imbfgs. Using these three different procedures, the best resolution values obtained at the stage of AutoRefine3D in Relion were 7.5 \u00c5, 7.4 \u00c5, and 6.6 \u00c5, respectively. Thus, the best results were obtained by combining whole frame alignment with subsequent individual particle tracking.\n\nFinal reconstruction and refinements were carried out in Frealign (Grigorieff, 2016) using particles aligned with Unblur and alignparts_Imbfgs. Global parameter search (mode 3) was performed at 8.0 \u00c5 resolution, followed by several iterations of local refinement with the alignment resolution limit gradually increasing from 8.0 to 6.0 \u00c5 (mode 1). The resolution of the final reconstruction was estimated at 4.0 \u00c5 using the Fourier shell correlation (FSC) of two reconstructions each containing half of the data and using 0.143 as the cut-off criterion (Figure 1B).\n\n### Model building\n\nA model, consisting of residues 173\u2013742 of TAP1, residues 130\u2013681 of TAP2, and residues 1\u201355 of ICP47, was manually built in Coot (Emsley et al., 2010). Several regions, including TAP1 residues 173\u2013183, 215\u2013222, 272\u2013282, 322\u2013325, 336\u2013347, 431\u2013443 and TAP2 residues 181\u2013186 have poor density and were registered based on the homologous structure ABCB10 (PDBcode 4AYT) (Shintre et al., 2013).\n\n### Refinement and validation\n\nModel refinement was performed in both real and reciprocal space. Using the program Pdbset (Winn et al., 2011), the TAP/ICP47 model was translated into a P1 crystallographic symmetry unit cell which was padded by 5 \u00c5\u00a0in each axis. The full map and the two half maps from Frealign were also translated into the unit cell using the program Maprot (Stein et al., 1994). To generate a working half map for refinement, structure factors and phases were calculated from one of the translated half maps using the program Sfall (Ten Eyck, 1977). The model was then refined against the working half map using PHENIX real space refine with secondary structure restraints imposed (Adams et al., 2010). Subsequently, the structure was refined against the working half map in reciprocal space using Refmac (Brown et al., 2015; Murshudov et al., 1997) with secondary structure restraints calculated from ProSMART (Nicholls et al., 2014). We used the EMAN2 program suite (Tang et al., 2007) to produce map from the atomic coordinates of the complex model. To access the degree of overfitting, we\u00a0calculated\u00a0FSC curves between the model and the half map used for refinement (work), the other half-map (free), and the full map (Figure 1). The FSC curves were calculated using Spider (Frank et al., 1996) by resampling the model map onto the same grid as the data maps using UCSF Chimera (Pettersen et al., 2004) and calculating FSC curves between this converted map and the cryo-EM maps. The cryo-EM maps were masked using a generous mask with a smooth edge and a volume exceeding the estimated volume of the model by about 3.5 times. The FSC curves were then adjusted for the volume exceeding the volume of the model using the formula\n\n$$\nFSC_{corrected}=f\u2217FSC/(1+(f\u22121)\u2217FSC)\n$$\n\nwhere\u00a0f is the factor by which the mask exceeds the volume of the model (Sindelar and Grigorieff, 2012). The FSC curve (green) between the model and the full map has a value of 0.5 at a resolution of 4.3 (Figure 1E).\n\n### Figure preparation\n\nFigures were prepared using the programs PyMOL (Schr\u00f6dinger LLC,\u00a02015) and UCSF Chimera (Pettersen et al., 2004).\n",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "9c915849-9748-4cf9-918c-8048831f6143",
+      "submission_id": "d4c8a6ce-202e-4293-a6e5-8230dc1f77f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olga Boudker, Weill Cornell Medical College , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21829.012](https://doi.org/10.7554/eLife.21829.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Atomic structure of the transporter associated with antigen processing trapped by herpes simplex virus\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Wesley I Sundquist (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors describe a 4\u00c5 cryo-EM reconstruction of the complex formed by the heterodimeric TAP transporter and the Herpesviral TAP inhibitor ICP47. The work builds on the previous 6.5\u00c5 structure reported by this same group in Nature last January. The enhanced resolution was made possible by collecting data at higher magnification (to improve alignment), optimizing other aspects of data collection (e.g., collecting images from regions of thin ice), and optimized data processing (e.g., in improved movie alignment protocols). The advance is that an atomic model can now be built for the core of the complex, which enables the authors to identify intermolecular contacts and interpret the structure in terms of comparative sequence analyses and previous mutational analyses of TAP and ICP47.\n\nEssential revisions:\n\nThe reviewers have discussed the manuscript focusing on the balance of the obviously important achievement of resolving the structure at 4 \u00c5 resolution, which allows the residue-specific model building, and somewhat limited mechanistic insights provided by the manuscript.\n\nThe following are comments to be addressed:\n\n1) The authors should provide a bit better overview of the complex in the current manuscript so that it \"stands alone\" a bit better. For example, it would be helpful to give readers a better overview of how ICP47 binding alters the nucleotide binding cleft. The inhibition of ATPase activity is implied in the second paragraph of the subsection \u201cThe TAP/ICP47 interface\u201d, but the actual bound nucleotide state (apo if I understand correctly) and an explanation of how NBD closure is prevented by ICP47 binding are not really addressed as far as I can see (though this issue was mentioned in the Nature paper).\n\n2) I would have also liked a more extensive comparison with the homologous transporters.\n\n3) It would be helpful if data collection strategy were further discussed and illustrated by figures. For example, quantitative evaluation of different methods to correct for specimen movements would have been informative.\n\n4) The authors indicate that collecting data from areas of the grid with good contrast (presumably where the ice was thinnest) contributed to the improved resolution. This seems logical, but can the authors quantify how the selected regions were chosen (so that others can follow a similar protocol) and/or quantify how much this selection contributed to the increased resolution?\n\n5) The number of particles (502K, minus the 5% that received such low Frealign scores that they were effectively eliminated) is mentioned in the text, but not in either of the two data tables.\n\n6) A structure at 4 \u00c5 resolution cannot \u2013 and should not \u2013 be described as \"atomic\". This is repeatedly and prominently the case, e.g. in the Abstract and summary. The inflationary use of the term \"atomic\" (structure, resolution, model, interactions etc.) in connection with lowish-resolution cryoEM maps is seriously misleading and has to be avoided (\"near-atomic\" is more appropriate and now widely used and accepted). Anyone can build an atomic model into a map of any resolution, and describe the result as an \"atomic structure\". What is the point?\n\n7) It is also potentially misleading and not to be encouraged to show van der Waals surfaces for interacting residues, instead of the genuine cryoEM map, as in Figures 3D and 4D. If the map is good enough, why not show it?\n\n8) The important interaction of ICP Pro55 with Tyr477 of TAP2 is not shown. Pro55 is modelled as a pink sphere, which seems to be too far from Tyr477 for direct, close interaction that would displace an ATP bound by strong \u03c0 stacking.\n\n9) I assume the structure is that of the human transporter. The manuscript does not state this important fact explicitly anywhere.\n",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2a20426a-140d-4cc0-972e-21029c963d9a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C1",
+      "claim": "TAP is an ATP-binding cassette (ABC) transporter essential to cellular immunity against viral infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The transporter associated with antigen processing (TAP) is an ATP-binding cassette (ABC) transporter essential to cellular immunity against viral infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about TAP's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c243e120-82b1-46fb-985c-2a6504df7823",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C2",
+      "claim": "Herpes simplex virus evades immune surveillance by blocking peptide transport with ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "The herpes simplex virus for example evades immune surveillance by blocking peptide transport with a small viral protein ICP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by the structural and functional data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "afc93b61-c1b4-4a58-a5aa-6c7c5112a976",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C3",
+      "claim": "The structure of human TAP bound to ICP47 was determined by cryo-EM to 4.0 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we determined the structure of human TAP bound to ICP47 by electron cryo-microscopy (cryo-EM) to 4.0 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental finding of the study, supported by the cryo-EM data and reconstruction shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "1c6c53e5-02d9-4baa-9f0c-e2213af0493d",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C4",
+      "claim": "ICP47 traps TAP in an inactive conformation distinct from the normal transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that ICP47 traps TAP in an inactive conformation distinct from the normal transport cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural analysis comparing TAP/ICP47 to other ABC transporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c67425c3-73ee-4919-9207-8982cdd39461",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C5",
+      "claim": "The specificity and potency of ICP47 inhibition result from contacts between the tip of the helical hairpin and the apex of the transmembrane cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity and potency of ICP47 inhibition result from contacts between the tip of the helical hairpin and the apex of the transmembrane cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural analysis and mutagenesis data discussed in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "2700cde1-6ec1-4c23-ae0e-686c0b459877",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C6",
+      "claim": "Cytotoxic T cells detect and eliminate infected cells by recognizing viral peptides displayed on the cell surface by MHC-I molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytotoxic T cells detect and eliminate infected cells by recognizing viral peptides displayed on the cell surface by major histocompatibility complex (MHC-I) molecules (Blum et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "0893d6d7-cf22-4124-aa28-fe58d7dabfa2",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C7",
+      "claim": "TAP transports cytosolic peptides into the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The transporter associated with antigen processing (TAP) transports these cytosolic peptides into the ER lumen, where a multi-component peptide-loading complex facilitates peptide-binding to nascent MHC-I molecules (Neefjes et al., 1993; Shepherd et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "98ec4a09-0fcc-412e-be84-5d00c1904e0b",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C8",
+      "claim": "TAP-deficient cells have reduced surface expression of MHC-I molecules and are less sensitive to cytotoxic T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TAP-deficient cells have a reduced surface expression of MHC-I molecules and are less sensitive to cytotoxic T cells (Deverson et al., 1990; Monaco et al., 1990; Spies et al., 1990; Trowsdale et al., 1990)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "cf07cb31-ff9c-4c1e-a1c6-61fcbb678ea8",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C9",
+      "claim": "TAP is formed by two homologous subunits, TAP1 and TAP2.",
+      "claim_type": "EXPLICIT",
+      "source": "TAP is an ER-resident transporter formed by two homologous subunits, TAP1 and TAP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TAP structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "f6f73494-36a7-49e2-ae0e-b5f1f28753e2",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C10",
+      "claim": "TAP contains two nucleotide-binding domains (NBDs) that hydrolyze ATP and two transmembrane domains (TMDs) that bind the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to other ABC transporters, it contains two nucleotide-binding domains (NBDs) that hydrolyze ATP and two transmembrane domains (TMDs) that bind the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of TAP similar to other ABC transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "7399ee48-9fc7-4ea5-aaa6-285b30301f87",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C11",
+      "claim": "Both TAP1 and TAP2 contain an N-terminal transmembrane region (TMD0) that interacts with tapasin to form the larger peptide-loading complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both TAP1 and TAP2 contain an N-terminal transmembrane region (TMD0) that interacts with tapasin to form the larger peptide-loading complex (Hulpke et al., 2012; Procko et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "00ad0624-2766-4163-965f-301ba5824432",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C12",
+      "claim": "TAP's broad substrate specificity is one of the most important properties for its function.",
+      "claim_type": "EXPLICIT",
+      "source": "TAP's broad substrate specificity is one of the most important properties for its function (Androlewicz and Cresswell, 1994; Momburg et al., 1994a; Neefjes et al., 1995; van Endert et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "24d529be-c2a1-48e1-a8ce-fc7efdaa79e5",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C13",
+      "claim": "Humans typically express six different MHC-I molecules, each binding to a large variety of peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Humans typically express six different MHC-I molecules, each binding to a large variety of peptides and conferring a different specificity (Falk et al., 1991; Hunt et al., 1992; Jardetzky et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "2bb1196e-b0c8-41f4-8865-78cc9cb74aca",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C14",
+      "claim": "The same TAP transporter provides peptides for all six MHC-I molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The same TAP transporter provides peptides for all six MHC-I molecules; therefore, it must be more promiscuous than any single MHC-I molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of TAP's role in the antigen presentation pathway.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "e2ee939a-6e6b-4daf-90e0-c5c494a311f7",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C15",
+      "claim": "Human TAP has a preference for a hydrophobic or basic residue at the C-terminus of peptide substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The only sequence constraint found for human TAP is a preference for a hydrophobic or basic residue at the C-terminus (Momburg et al., 1994b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "ccad5644-30b4-4710-b062-1b131a3bd2df",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C16",
+      "claim": "TAP's peptide preference complements MHC-I specificity in that an acidic C-terminus is rarely seen in MHC-I presented peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this peptide preference complements MHC-I specificity in that an acidic C-terminus is rarely seen in MHC-I presented peptides (Rammensee et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "a844ff0f-a8c1-4083-9c9e-8ee97753d428",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C17",
+      "claim": "TAP can transport peptides up to 40 residues long.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its ability to transport a diverse range of peptides up to 40 residues long (Momburg et al., 1994a), TAP is still subject to inhibition by some viral peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "202bb880-a4a1-4493-8bed-eb5b6277894d",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C18",
+      "claim": "Human herpes simplex virus (HSV) encodes the potent TAP inhibitor ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human herpes simplex virus (HSV) encodes the potent TAP inhibitor ICP47 (Fr\u00fch et al., 1995; Hill et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "1327d570-d6ae-4db0-b98a-c7f85de7a372",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C19",
+      "claim": "Peptides containing the N-terminal 34 residues of ICP47 are sufficient to bind TAP and prevent peptide translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptides containing the N-terminal 34 residues of ICP47 are sufficient to bind TAP and prevent peptide translocation (Galocha et al., 1997; Neumann et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "da188f98-2086-4a35-8fa8-18dae59c5752",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C20",
+      "claim": "Suppressing the presentation of viral peptides renders HSV-infected cells undetectable to cytotoxic T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppressing the presentation of viral peptides renders HSV-infected cells undetectable to cytotoxic T cells (York et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "5215ace5-de9b-46f7-87e3-9148f7b43164",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C21",
+      "claim": "A previous structure of the TAP/ICP47 complex was determined at 6.5 \u00c5 resolution using cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we determined the structure of a TAP/ICP47 complex using cryo-electron microscopy (cryo-EM) (Oldham et al., 2016). This structure, at 6.5 \u00c5 resolution, showed that the N-terminal region of ICP47 forms a helical hairpin, inserting itself into TAP's substrate translocation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c6e9ac24-32a5-4440-8e8a-132fcb22814f",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C22",
+      "claim": "The N-terminal region of ICP47 forms a helical hairpin that inserts into TAP's substrate translocation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This structure, at 6.5 \u00c5 resolution, showed that the N-terminal region of ICP47 forms a helical hairpin, inserting itself into TAP's substrate translocation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the previous structural study and confirmed by the current higher resolution structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "bf2ef2cd-38f6-492d-b555-fb8a26b45e2a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C23",
+      "claim": "The ordered region of the TAP/ICP47 complex has a molecular mass of 130 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ordered region of the TAP/ICP47 complex has a molecular mass of only 130 kDa and exhibits a pseudo-twofold symmetry, two factors likely limiting resolution are the accuracy with which the noisy cryo-EM images of single particles can be aligned and the ability to distinguish pseudo-symmetrically related views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the complex that affects resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c7a930a7-3450-4c29-a8c1-92ffa572f46e",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C24",
+      "claim": "The TAP/ICP47 complex exhibits pseudo-twofold symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ordered region of the TAP/ICP47 complex has a molecular mass of only 130 kDa and exhibits a pseudo-twofold symmetry, two factors likely limiting resolution are the accuracy with which the noisy cryo-EM images of single particles can be aligned and the ability to distinguish pseudo-symmetrically related views.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the complex that affects resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3f4978a9-bba3-46a0-8bc0-912a0206118e",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C25",
+      "claim": "Higher magnification reduced the effective pixel size from 1.35 \u00c5 to 1.04 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher magnification reduced the effective pixel size of the images from 1.35 \u00c5 used in our previous study to 1.04 \u00c5 (Table 1), boosting the detective quantum efficiency (DQE) of the K2 Summit detector (Gatan, Inc.) at 7 \u00c5 resolution by about 6% (Li et al., 2013; McMullan et al., 2009; Ruskin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by the data collection parameters in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "9a6fbc22-d815-4b6d-9077-574ad9de0311",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C26",
+      "claim": "Higher magnification boosted the detective quantum efficiency (DQE) of the K2 Summit detector at 7 \u00c5 resolution by about 6%.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher magnification reduced the effective pixel size of the images from 1.35 \u00c5 used in our previous study to 1.04 \u00c5 (Table 1), boosting the detective quantum efficiency (DQE) of the K2 Summit detector (Gatan, Inc.) at 7 \u00c5 resolution by about 6% (Li et al., 2013; McMullan et al., 2009; Ruskin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on detector performance.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "97c7193a-84c6-4d41-8201-d67b6dacb493",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C27",
+      "claim": "The best result for specimen movement correction was obtained by whole frame alignment followed by individual particle tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "The best result was obtained by whole frame alignment followed by individual particle tracking. This combination of methods also works best for other small particles such as the \u03b3-secretase (Bai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from comparing different processing approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "1448dccf-33e6-4e3f-9618-fd4e1a4f4749",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C28",
+      "claim": "The final reconstruction has an average resolution of 4.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The final reconstruction has an average resolution of 4.0 \u00c5 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary result of the cryo-EM reconstruction, shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3bd23766-bc9c-471f-84c9-78de8ac21da9",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C29",
+      "claim": "The TM region is better resolved than the two NBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing regional variations in resolution using the program Blocres (Cardone et al., 2013) indicates that the TM region is better resolved than the two NBDs (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by local resolution analysis in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "e04fb9bc-d467-49ca-a195-15a30327bb76",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C30",
+      "claim": "The density map for ICP47 and the TMDs of TAP shows prominent side chain density sufficient to register the amino acid identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The density map for ICP47 and the TMDs of TAP shows prominent side chain density sufficient to register the amino acid identity (Figure 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the density maps in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "a860b8d2-749a-4393-9d31-2a7985bb6aff",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C31",
+      "claim": "The density corresponding to the two NBDs is adequate to assign secondary structure but lacks side chain definition.",
+      "claim_type": "EXPLICIT",
+      "source": "The density corresponding to the two NBDs is adequate to assign secondary structure but lacks side chain definition (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the density maps shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "4b85e5ab-8464-4b5c-b79a-7ed259477edd",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C32",
+      "claim": "The model contains the 12 core TM-helices of TAP and the N-terminal 55 residues of ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "With this map, we built and refined a model containing the 12 core TM-helices of TAP and the N-terminal 55 residues of ICP47 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the structural model built from the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "fe852da3-4d43-44df-8850-a18a32982b2b",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C33",
+      "claim": "The TAP structure has the canonical fold of ABC exporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAP structure has the canonical fold of ABC exporters (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structure presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "f5e21380-5727-4324-9dc4-7da5d3d93e4a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C34",
+      "claim": "The 12 transmembrane helices at the core are arranged into two bundles, each consisting of TM 1\u20133 and 6 of one subunit and TM 4\u20135 of the other subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The 12 transmembrane (TM) helices at the core are arranged into two bundles, each consisting of TM 1\u20133 and 6 of one subunit and TM 4\u20135 of the other subunit (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the domain-swapped architecture shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "25f6e19e-7641-421c-be73-0d83166bd822",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C35",
+      "claim": "The NBDs are attached to each TM bundle at their cytoplasmic ends and are separated from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The NBDs are attached to each TM bundle at their cytoplasmic ends and are separated from each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "9c06c113-e94e-4bfd-ba32-4df5122b3571",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C36",
+      "claim": "The N-terminal 55 residues of ICP47 form a helical hairpin structure that inserts into the opening between the two TM bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 55 residues of ICP47 form a helical hairpin structure, which inserts into the opening between the two TM bundles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "07a99f29-be1d-4f11-adcd-44713be35013",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C37",
+      "claim": "No density was observed for the C-terminal 33 residues of ICP47 or the two TMD0s.",
+      "claim_type": "EXPLICIT",
+      "source": "No density was observed for either the C-terminal 33 residues of ICP47 or the two TMD0s, indicating these regions are flexible in this conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryo-EM density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "d98fe1c2-b9bb-406f-acd3-ec956b376930",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C38",
+      "claim": "The C-terminal 33 residues of ICP47 and the two TMD0s are flexible in this conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "No density was observed for either the C-terminal 33 residues of ICP47 or the two TMD0s, indicating these regions are flexible in this conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of density in the cryo-EM map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "4db8a613-e265-4737-aeb8-59c42cc0be85",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C39",
+      "claim": "In the TAP/ICP47 structure, the gating region is cracked open by ICP47 to a width approximately 4 \u00c5 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "In TAP, however, this gating region is cracked open by ICP47 to a width approximately 4 \u00c5 in diameter (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the structure shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "53d3fccc-9f76-48ef-afb4-3ed905dced64",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C40",
+      "claim": "A lateral opening to the membrane leaflet is observed near the ER lumen side in the TAP/ICP47 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a lateral opening to the membrane leaflet is observed near the ER lumen side (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "cc6494fb-5594-4c01-a96a-36fe49cab2b6",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C41",
+      "claim": "The ER openings observed in the structure of TAP/ICP47 complex are most likely induced by ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is most likely that the ER openings observed in the structure of TAP/ICP47 complex are induced by ICP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural observations and the alternating access model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "4f6ae60e-f714-4be2-9f84-f012c3987fc6",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C42",
+      "claim": "A functional TAP without inhibitor would presumably open the TM pathway to only one side of the membrane at a time to avoid potential ion leakage across the ER membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A functional TAP without inhibitor would presumably open the TM pathway to only one side of the membrane at a time to avoid potential ion leakage across the ER membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the alternating access model and the observation of openings in the inhibited structure.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "97a24678-6baa-455b-a7e2-6e887442c4e5",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C43",
+      "claim": "ICP47 competes with substrates for the same binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we do not yet have direct structural data regarding where or how natural substrates bind, there is strong evidence suggesting that ICP47 competes with substrates for the same binding pocket (Ahn et al., 1996; Fr\u00fch et al., 1995; Hill et al., 1995; Tomazin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "8d085efb-3d8f-40c3-a365-e0d80611597a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C44",
+      "claim": "Residues 375\u2013420 and 453\u2013487 in TAP1 and 301\u2013389 and 414\u2013433 in TAP2 are part of the substrate binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using radiolabeled peptides and mass spectrometry identified four regions, residues 375\u2013420 and 453\u2013487 in TAP1 and 301\u2013389 and 414\u2013433 in TAP2, as part of the binding site (Nijenhuis and H\u00e4mmerling, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to biochemical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "477155f8-ada3-4c14-806b-d41ca6d2e52f",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C45",
+      "claim": "The substrate-binding regions identified biochemically are part of the TM helices enclosing the large internal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping these residues onto the structure shows that they are part of the TM helices enclosing the large internal cavity (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mapping biochemical data onto the structure in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "47511653-fd25-4fc1-8053-ee7189e9b166",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C46",
+      "claim": "The electrostatic environment of the TM cavity provides an appropriate interface for binding peptides with free N- and C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrostatic environment of the TM cavity containing strong positively and negatively charged patches provides an appropriate interface for binding peptides with free N- and C-termini (Figure 3B) (Momburg et al., 1994b; Schumacher et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B and supported by citations to functional studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "bbca467e-1888-4542-8557-fb0d5b90c017",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C47",
+      "claim": "Many residues identified by mutagenesis or substrate crosslinking experiments are located on the surface of the TM cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Many residues identified by mutagenesis or substrate crosslinking experiments are located on the surface of this cavity (Figure 3A and C) (Armandola et al., 1996; Deverson et al., 1998; Geng et al., 2015; Momburg et al., 1996).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by mapping functional data onto the structure in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "427feb47-dd80-4175-a2a9-c47de75a6f84",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C48",
+      "claim": "In the TAP/ICP47 complex, residues identified by mutagenesis are buried by ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "In the TAP/ICP47 complex these residues are buried by ICP47, consistent with data showing that ICP47 precludes peptide binding (Ahn et al., 1996; Fr\u00fch et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and consistent with functional data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "24af1ce7-f8e3-4846-9ecd-936143a59deb",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C49",
+      "claim": "Y408 of TAP1 and M218 of TAP2 are proposed to serve as anchors for the C-termini of bound peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the two residues proposed to serve as anchors for the C-termini of bound peptides, Y408 of TAP1 and M218 of TAP2 (Geng et al., 2015; Momburg et al., 1996), both interact with the N-terminal region of ICP47 through van der Waals contacts (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to functional studies and shown in Figure 3D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "9a29460e-9f87-420f-afdb-642687858285",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C50",
+      "claim": "Y408 of TAP1 and M218 of TAP2 interact with the N-terminal region of ICP47 through van der Waals contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the two residues proposed to serve as anchors for the C-termini of bound peptides, Y408 of TAP1 and M218 of TAP2 (Geng et al., 2015; Momburg et al., 1996), both interact with the N-terminal region of ICP47 through van der Waals contacts (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "11be3725-c1e9-4278-b6aa-d3171affc704",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C51",
+      "claim": "Substrates interact with TAP through a very different mode from that of ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is consistent with our previous suggestion that substrates interact with TAP through a very different mode from that of ICP47 (Oldham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural observations and cited from previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "223946d5-960f-4747-85d2-81b02f0a6b41",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C52",
+      "claim": "32 residues from ICP47 and 36 residues from TAP come into direct contact at the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction surface between ICP47 and TAP is extensive: 32 residues from ICP47 and 36 residues from TAP come into direct contact at the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "82dcfb62-e6db-465a-8696-68bc29d4cff6",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C53",
+      "claim": "The solvent-accessible surface area of TAP buried by ICP47 is 2360 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The solvent-accessible surface area of TAP buried by ICP47 is 2360 \u00c52 (Figure 4A), which is twice the average binding surface between proteins in general (London et al., 2010) and four times the surface area of an MHC-I molecule buried by a peptide antigen (Rudolph et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the structure and compared to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "8665cef4-d043-4b85-9212-8de5e4ef22da",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C54",
+      "claim": "The buried surface area between TAP and ICP47 is twice the average binding surface between proteins in general.",
+      "claim_type": "EXPLICIT",
+      "source": "The solvent-accessible surface area of TAP buried by ICP47 is 2360 \u00c52 (Figure 4A), which is twice the average binding surface between proteins in general (London et al., 2010) and four times the surface area of an MHC-I molecule buried by a peptide antigen (Rudolph et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the structure and compared to a cited literature value.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "85705562-308f-456e-9b9f-3e0978c3cb68",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C55",
+      "claim": "The buried surface area between TAP and ICP47 is four times the surface area of an MHC-I molecule buried by a peptide antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "The solvent-accessible surface area of TAP buried by ICP47 is 2360 \u00c52 (Figure 4A), which is twice the average binding surface between proteins in general (London et al., 2010) and four times the surface area of an MHC-I molecule buried by a peptide antigen (Rudolph et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the structure and compared to a cited literature value.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "7d77b162-dbdb-41fb-bc67-867988ba62f6",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C56",
+      "claim": "The N-terminal 34 residues of ICP47 are largely buried inside the translocation pathway, forming a helical bundle with TAP2 TM helices 3 and 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal 34 residues of ICP47 are largely buried inside the translocation pathway, forming a helical bundle with TAP2 TM helices 3 and 6 (Figure 3C and 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figures 3C and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3696faa0-a222-47ec-bc8a-3d410c7b84b5",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C57",
+      "claim": "Contact between the N-terminal 34 residues of ICP47 and TAP is sufficient to prevent substrate binding and subsequent conformational changes associated with transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that this contact alone is sufficient to prevent substrate binding and subsequent conformational changes associated with transport (Galocha et al., 1997; Neumann et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "8c0c8224-68ee-4114-998f-1f979cb6f971",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C58",
+      "claim": "Residues 35\u201355 of ICP47 pack closely along TAP2 TM3 and make contact with IH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues 35\u201355 of ICP47 continue to pack closely along TAP2 TM3 and make contact with IH1 (intracellular helix 1), a coupling helix at the TMD/NBD interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c8b6aa7a-1cf4-4e33-89e8-9ec52748a41b",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C59",
+      "claim": "P55 of ICP47 interacts with Y477 of TAP, which normally makes an aromatic stacking interaction with the adenine ring of ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "The last ordered residue of ICP47, P55, interacts with Y477, which normally makes an aromatic stacking interaction with the adenine ring of ATP (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structure shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "ce48e351-bb62-4512-8165-b5fb1f8f2327",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C60",
+      "claim": "Mutations at positions 18 to 25 of ICP47 that reduced activity by more than 50% are located in the region where the two helices are connected by a sharp turn.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that reduced the activity by more than 50% are located in one region, from positions 18 to 25, where the two helices are connected by a sharp turn (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on functional data cited from literature and mapped onto the structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "ae662efb-d1d0-494c-aeaa-c442987f00a4",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C61",
+      "claim": "A 'turn-to-helix' mutant replacing residues 16\u201322 with alanine reduced the activity of ICP47 by a factor of five.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we generated a 'turn-to-helix' mutant by replacing residues in the same region (16\u201322) with alanine (Oldham et al., 2016). This mutant, predicted to have a higher propensity to form a long alpha-helix rather than the hairpin structure, indeed reduced the activity of ICP47 by a factor of five (Oldham et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "ad117a59-fa99-41b8-a545-9ae49e1a8be0",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C62",
+      "claim": "ICP47 from HSV inhibits TAP in human, monkey, pig, cow and dog cells, but not in rabbit, mouse and rat cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that ICP47 from HSV inhibits TAP in human, monkey, pig, cow and dog cells, but not in rabbit, mouse and rat cells (Ahn et al., 1996; Jugovic et al., 1998; Verweij et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "09f85172-8f5b-40b3-9b6c-b4d1f82f06db",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C63",
+      "claim": "Residues that are highly conserved in ICP47-sensitive species but not in rabbit, mouse and rat are located near the apex of the TM cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "When we map these residues onto the human TAP/ICP47 structure we observe that all but one of them are located near the apex of the TM cavity, interacting with the 'hot spot' residues in ICP47 that were identified in the alanine scan (Figure 4C) (Galocha et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by sequence analysis and mapping onto the structure in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "dccdfddd-f4d9-43f9-bf26-2c9f3e23bdd5",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C64",
+      "claim": "Amino acid changes near the apex of the TM cavity account for TAP susceptibility to ICP47 among different species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that in the setting of a very large interface between TAP and ICP47, amino acid changes in this region are particularly important and account for TAP susceptibility to ICP47 among the species analyzed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from sequence analysis and structural mapping.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "e21c7d25-080f-41e6-a27c-7fb9e183961b",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C65",
+      "claim": "The T425N substitution in mouse and rat is incompatible with the close contacts between T425 and F11 and Y22 of ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, both mouse and rat contain a T425N substitution, which is incompatible with the close contacts between T425 and F11 and Y22 of ICP47 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the structure shown in Figure 4D and sequence analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "cf60ec6c-3d71-4d55-bb90-f4e311cf0d55",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C66",
+      "claim": "Substituting F11 or Y22 of ICP47 with alanine reduced inhibition by 40% and 60% respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Substituting F11 or Y22 with alanine reduced lCP47 inhibition by 40% and 60% respectively (Galocha et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c6d77ac3-befc-453d-83ab-6ea92cfd7608",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C67",
+      "claim": "The lack of ICP47 inhibition in rabbit cells can be explained by the substitution of S421 with arginine.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of ICP47 inhibition in rabbit cells can be explained by the substitution of S421 with the large, charged arginine residue, which probably prevents insertion of the helical hairpin into the top of TM cavity (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from sequence analysis and the structure shown in Figure 4C.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "1c709782-11bb-4f47-ae61-4daffd97373a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C68",
+      "claim": "Mutagenesis to identify functional hotspots on ICP47 and analysis of specificity determinants on TAP both point to the same molecular interface at the tip of the helical hairpin as being crucial to ICP47 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, two independent approaches\u2014mutagenesis to identify functional hotspots on ICP47 (Galocha et al., 1997) and analysis of specificity determinants on TAP\u2014both point to the same molecular interface at the tip of the helical hairpin as being crucial to the action of ICP47 to inhibit TAP (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from combining functional data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "5398b8c0-32e8-43a9-b74b-9df91d47c766",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C69",
+      "claim": "TAP transports peptide antigens into the ER through conformational changes powered by ATP binding and hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "TAP transports peptide antigens into the ER through conformational changes powered by ATP binding and hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the mechanism discussion, based on knowledge of ABC transporters.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "191d35c4-32de-4226-a2aa-7458250b48ad",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C70",
+      "claim": "In the absence of substrate and ATP, TAP rests in an inward-facing conformation in which the two NBDs are separated and the translocation pathway faces the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on what we have learned from homologous ABC transporters, we can envision that in the absence of substrate and ATP, TAP rests in an inward-facing conformation in which the two NBDs are separated and the translocation pathway faces the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of ABC transporter mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "423b925d-5a93-41b6-8055-e5d4b64a1cf9",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C71",
+      "claim": "Upon binding to substrate and ATP, the two NBDs of TAP form a closed dimer and the translocation pathway orients towards the ER lumen to release the peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon binding to the substrate and ATP, the two NBDs form a closed dimer and the translocation pathway orients towards the ER lumen to release the peptide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of ABC transporter mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3f3bc2ff-e4c8-4b76-a717-518e083d45c5",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C72",
+      "claim": "ATP hydrolysis at the closed NBD dimer interface resets TAP to its resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP hydrolysis at the closed NBD dimer interface resets TAP to its resting state, ready for the next transport cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of ABC transporter mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "ccbd3b96-3817-4767-aaa2-76ef134109fc",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C73",
+      "claim": "ICP47 precludes substrate binding by inserting a long helical hairpin into the translocation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "ICP47 precludes substrate binding by inserting a long helical hairpin into the translocation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and supported by functional data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "6e3d8615-ffc8-407f-af34-9f1943466132",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C74",
+      "claim": "The strong interaction between ICP47 and TAP traps TAP in an inward-facing conformation with the two NBDs separated.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong interaction between ICP47 and TAP traps TAP in an inward-facing conformation with the two NBDs separated, unable to progress to the NBD-closed conformation necessary for ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structure and inferred from the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "eafa233e-17b5-4a42-a894-1c6cb4eb7449",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C75",
+      "claim": "ICP47 prevents TAP from progressing to the NBD-closed conformation necessary for ATP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong interaction between ICP47 and TAP traps TAP in an inward-facing conformation with the two NBDs separated, unable to progress to the NBD-closed conformation necessary for ATP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structure and knowledge of ABC transporter mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "a3ef74bc-08ac-4204-bffe-69be49d5c557",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C76",
+      "claim": "By blocking translocation of viral peptides into the ER, HSV suppresses the MHC-I antigen presentation pathway and escapes cytotoxic T cell detection.",
+      "claim_type": "EXPLICIT",
+      "source": "By blocking translocation of viral peptides into the ER, HSV suppresses the MHC-I antigen presentation pathway and thereby escapes cytotoxic T cell detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the overall conclusion about the mechanism of immune evasion, based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "269b42a5-33ad-49d1-9922-251f5febc0e1",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C77",
+      "claim": "Crystal structures were determined for E. coli McjD in the AMPPNP-bound conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, crystal structures were determined for two prokaryotic peptide transporters: the E. coli McjD in the AMPPNP-bound conformation (pdb: 4PL0) (Choudhury et al., 2014; Mehmood et al., 2016) and the peptidase-containing ABC transporter from Clostridium thermocellum (PCAT1) in two different conformations (inward-facing pdb: 4RY2; occluded, ATP\u03b3S-bound pdb: 4S0F) (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3039529a-d794-4048-83a6-9e8ec9fc7164",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C78",
+      "claim": "Crystal structures were determined for PCAT1 in two different conformations (inward-facing and occluded, ATP\u03b3S-bound).",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, crystal structures were determined for two prokaryotic peptide transporters: the E. coli McjD in the AMPPNP-bound conformation (pdb: 4PL0) (Choudhury et al., 2014; Mehmood et al., 2016) and the peptidase-containing ABC transporter from Clostridium thermocellum (PCAT1) in two different conformations (inward-facing pdb: 4RY2; occluded, ATP\u03b3S-bound pdb: 4S0F) (Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published structures.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "b0b3e1cd-9923-4417-b704-e661d418faee",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C79",
+      "claim": "TAP is a promiscuous transporter found only in jawed vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike TAP, which is a promiscuous transporter found only in jawed vertebrates (Hinz et al., 2014), McjD and PCAT1 are dedicated to specific substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "bd9608b9-71f3-4558-95a1-80fd1c93d694",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C80",
+      "claim": "McjD exports microcin J25, a 21-residue antibacterial peptide with a lasso fold.",
+      "claim_type": "EXPLICIT",
+      "source": "McjD exports microcin J25, a 21-residue antibacterial peptide with a lasso fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about McjD function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c0594377-61d9-4042-aac8-1c9b4acbad18",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C81",
+      "claim": "PCAT1 functions both as a maturation protease and exporter for a 90-residue peptide with an amino-terminal leader sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "PCAT1 functions both as a maturation protease and exporter for a 90-residue peptide with an amino-terminal leader sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about PCAT1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "d7d10482-c650-4bb5-83cf-e638925633a1",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C82",
+      "claim": "PCAT1 contains two peptidase domains in addition to the canonical TMDs and NBDs.",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, PCAT1 contains two peptidase domains in addition to the canonical TMDs and NBDs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural feature of PCAT1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "5f8da5ff-a20a-4a40-b987-da7f369f12d6",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C83",
+      "claim": "TAP, PCAT1, and McjD share a similar fold in the core region.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these differences, the three transporters share a similar fold in the core region: the NBDs have very similar structures and the TM helices in each subunit are of similar length with a similar trajectory (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by structural comparison in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "2f2d1ac2-a843-4561-af07-72911cd21628",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C84",
+      "claim": "In TAP, TM 4-5 appears to be pushed outward and bent compared to PCAT1 and McjD.",
+      "claim_type": "EXPLICIT",
+      "source": "One notable difference between TAP and the other two transporters occurs in TM 4-5, which in TAP appears to be pushed outward and bent (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structural comparison shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "0a862715-03a2-492d-944e-c457350f0429",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C85",
+      "claim": "The difference in TM 4-5 could possibly reflect a distortion due to the presence of ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference, however, could possibly reflect a distortion due to the presence of ICP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "3edac958-05e0-4562-bd91-42e78ffb1465",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C86",
+      "claim": "TAP shows the largest separation between the two halves compared to PCAT1 and McjD.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structures of TAP, PCAT1, and McjD differ in the separation of the two halves, reflecting the different conformational states each structure represents. TAP shows the largest separation, again possibly induced by the viral inhibitor ICP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "e2be3dec-7d4b-4b3f-bed7-e6d79785236d",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C87",
+      "claim": "The large separation in TAP is possibly induced by the viral inhibitor ICP47.",
+      "claim_type": "EXPLICIT",
+      "source": "TAP shows the largest separation, again possibly induced by the viral inhibitor ICP47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural observation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "46b51729-d1fa-418c-9e58-94781463e71e",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C88",
+      "claim": "The two NBDs of PCAT1 form a semi-open dimer in the absence of a nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "The two NBDs of PCAT1 form a semi-open dimer in the absence of a nucleotide, separated at the TMD/NBD interfaces and making contacts at the distal end of the structure (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the PCAT1 structure shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "7ad3d570-78aa-4397-8ed2-58d3df80b8d7",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C89",
+      "claim": "In the presence of ATP analogs and the absence of substrate, both McjD and PCAT1 reveal an occluded conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP analogs and the absence of a substrate, both McjD and PCAT1 reveal an occluded conformation in which the NBDs are closed and the translocation pathway is shielded from both sides of the membrane (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the structures shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "6b5ae539-7977-407d-80ea-4c4c45287a93",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C90",
+      "claim": "The similarity in structures of TAP, PCAT1, and McjD suggests they may share a common evolutionary origin and a common mechanism for coupling ATP hydrolysis to peptide translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in their structures suggests that these transporters may share a common evolutionary origin and a common mechanism for coupling ATP hydrolysis to peptide translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarities observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "fcdfdfe6-8e1b-4382-9548-80f1a3ed4cdc",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C95",
+      "claim": "The best results for movement correction were obtained by combining whole frame alignment with subsequent individual particle tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these three different procedures, the best resolution values obtained at the stage of AutoRefine3D in Relion were 7.5 \u00c5, 7.4 \u00c5, and 6.6 \u00c5, respectively. Thus, the best results were obtained by combining whole frame alignment with subsequent individual particle tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological finding from comparing different processing approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "accce5b5-c217-4dd5-a094-6e05e0b5b927",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C96",
+      "claim": "All 502,000 particles that were automatically extracted from the micrographs were used for the 3D reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we used all 502,000 particles that were automatically extracted from the micrographs for the 3D reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a processing decision.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "844acaeb-2c82-47a9-bacb-8812894d9b53",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "claim_id": "C97",
+      "claim": "The FSC curve between the model and the full map has a value of 0.5 at a resolution of 4.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The FSC curve (green) between the model and the full map has a value of 0.5 at a resolution of 4.3 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1E as a validation metric.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6f8c714d-3575-41f5-8097-074a285b669a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined a 4.0 \u00c5 resolution cryo-EM structure of the human TAP/ICP47 complex, with the transmembrane region better resolved than the nucleotide-binding domains. The model contains 12 core TM-helices of TAP and the N-terminal 55 residues of ICP47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C28-C32, and C97 collectively demonstrate successful structure determination at 4.0 \u00c5 resolution with appropriate validation metrics (FSC curves). The regional resolution variation is documented (C29-C31), and the model content is clearly specified (C32). The FSC validation at 4.3 \u00c5 (C97) is consistent with the reported 4.0 \u00c5 average resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "4887d217-1e11-40ec-a07b-f8ef569f62f4",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Methodological improvements included higher magnification (reducing pixel size from 1.35 \u00c5 to 1.04 \u00c5), optimized movement correction combining whole frame alignment with individual particle tracking, and use of all 502,000 automatically extracted particles for reconstruction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 and C95-C96 describe specific methodological choices that are well-documented and justified. The comparison of different movement correction approaches (C27, C95) provides empirical support for the chosen method. The pixel size reduction and its impact on detector efficiency (C26) are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "5d3c476a-a054-4973-87a0-63817292798b",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ICP47 traps TAP in an inactive inward-facing conformation with separated NBDs and a domain-swapped architecture. The structure shows unique features including an ER luminal gate cracked open to ~4 \u00c5 and a lateral membrane opening, both likely induced by ICP47 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C33-C42 describe the overall TAP/ICP47 structure and its conformational state. The structural observations (C33-C40) are directly supported by the cryo-EM data shown in Figure 2. The inference that openings are ICP47-induced (C41) is reasonable given comparison to other ABC transporters and the alternating access model (C42), though this remains an interpretation of the inhibited state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ICP47 forms a helical hairpin that inserts into TAP's translocation pathway, with the N-terminal 34 residues buried inside and forming a helical bundle with TAP2 TM helices 3 and 6. This interaction prevents substrate binding and traps TAP in an NBD-separated conformation unable to progress to ATP hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C36, C56-C59, and C73-C75 describe the ICP47 binding mode and its inhibitory mechanism. The structural observations (C22, C36, C56, C58-C59) are directly supported by the cryo-EM density shown in Figures 3-4. The functional interpretation (C57, C73-C75) is supported by cited functional studies and consistent with the structural data showing ICP47 occupying the substrate binding site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The specificity and potency of ICP47 inhibition result from an extensive interface (2360 \u00c5\u00b2) with critical contacts at the tip of the helical hairpin (residues 18-25) interacting with the apex of the TM cavity. Species-specific susceptibility to ICP47 maps to residues in this same region, with mutations like T425N in mouse/rat and S421R in rabbit explaining resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C52-C55, C60-C61, C63-C68 integrate structural data with functional mutagenesis and species specificity. The buried surface area calculation (C53-C55) is quantitative and appropriately compared to literature values. The convergence of mutagenesis data (C60-C61, C66), species specificity analysis (C62-C67), and structural observations (C63-C65) provides strong support for the identified critical interface (C68). The structural rationalization of species-specific resistance is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "595337a4-0ab0-4967-af36-f7b1c46cf941",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The substrate-binding pocket is located in the large internal TM cavity with appropriate electrostatic properties for peptide binding. Biochemically identified substrate-binding residues and proposed C-terminal anchor residues (Y408 of TAP1 and M218 of TAP2) are buried by ICP47, though substrates likely interact with TAP through a different mode than ICP47.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 map functional data onto the structure to identify the substrate binding site. The integration of biochemical studies (C44, cited), mutagenesis data (C47, cited), and structural observations (C45-C46, C48, C50) is appropriate. The inference that substrates bind differently than ICP47 (C51) is reasonable given that ICP47 is an inhibitor rather than a transported substrate, though direct structural evidence of substrate binding is lacking (acknowledged in C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "e54e118d-d217-40a5-84f9-4f6a9ad21886",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a transport mechanism where TAP cycles between inward-facing (NBDs separated) and outward-facing (NBDs closed) conformations powered by ATP binding and hydrolysis. ICP47 blocks this cycle by trapping TAP in the inward-facing state, thereby suppressing MHC-I antigen presentation and enabling HSV immune evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 and C76 describe the proposed transport mechanism and immune evasion strategy. While the transport cycle (C69-C72) is inferred from knowledge of homologous ABC transporters rather than directly demonstrated, this is a reasonable mechanistic model. The immune evasion conclusion (C76) logically follows from the structural and functional data showing ICP47 blocks peptide transport. The mechanism is consistent with the structural observations and cited functional studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "c91cbb47-86df-45dd-9879-36da10c7a525",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structural comparison of TAP with prokaryotic peptide transporters McjD and PCAT1 reveals a conserved core fold despite functional differences. TAP shows the largest NBD separation, with TM4-5 appearing pushed outward and bent, possibly due to ICP47 binding. The structural similarity suggests common evolutionary origin and transport mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C90 compare TAP to related transporters. The structural similarities (C83, C88-C89) are documented in Figure 6. The differences noted (C84, C86) are appropriately qualified as possibly ICP47-induced (C85, C87), acknowledging uncertainty. The evolutionary inference (C90) is reasonable given structural conservation. The comparison appropriately cites published structures (C77-C78) and notes functional differences (C79-C82).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "d1ff19e3-92a8-42b3-a606-360a429e33c7",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on TAP function and immune evasion: TAP is an ABC transporter essential for cellular immunity that transports cytosolic peptides into the ER for MHC-I loading. TAP has broad substrate specificity to serve six different MHC-I molecules. HSV encodes ICP47, which inhibits TAP and enables immune evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C20 provide established background knowledge about TAP function, substrate specificity, and viral inhibition. All claims are appropriately supported by citations to established literature. This background contextualizes the structural study but does not represent new findings from the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    },
+    {
+      "id": "af22fc98-b493-4675-9393-57b2aa1fe68a",
+      "content_id": "60a9ba0c-4ebf-43b9-8dcd-d43fdc29f485",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors previously determined a 6.5 \u00c5 structure of TAP/ICP47 showing ICP47 forms a helical hairpin. The complex has a molecular mass of 130 kDa and exhibits pseudo-twofold symmetry, factors that limited the previous resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 reference the authors' prior work and describe characteristics of the complex relevant to the current study. These are appropriately cited (C21) and the molecular properties (C23-C24) are factual descriptions that contextualize the resolution improvement achieved in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:26.438801Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "afc93b61-c1b4-4a58-a5aa-6c7c5112a976",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "1448dccf-33e6-4e3f-9618-fd4e1a4f4749",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "3bd23766-bc9c-471f-84c9-78de8ac21da9",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "e04fb9bc-d467-49ca-a195-15a30327bb76",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "a860b8d2-749a-4393-9d31-2a7985bb6aff",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "4b85e5ab-8464-4b5c-b79a-7ed259477edd",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "844acaeb-2c82-47a9-bacb-8812894d9b53",
+      "result_id": "6f8c714d-3575-41f5-8097-074a285b669a"
+    },
+    {
+      "claim_id": "3f4978a9-bba3-46a0-8bc0-912a0206118e",
+      "result_id": "4887d217-1e11-40ec-a07b-f8ef569f62f4"
+    },
+    {
+      "claim_id": "9a6fbc22-d815-4b6d-9077-574ad9de0311",
+      "result_id": "4887d217-1e11-40ec-a07b-f8ef569f62f4"
+    },
+    {
+      "claim_id": "97c7193a-84c6-4d41-8201-d67b6dacb493",
+      "result_id": "4887d217-1e11-40ec-a07b-f8ef569f62f4"
+    },
+    {
+      "claim_id": "fcdfdfe6-8e1b-4382-9548-80f1a3ed4cdc",
+      "result_id": "4887d217-1e11-40ec-a07b-f8ef569f62f4"
+    },
+    {
+      "claim_id": "accce5b5-c217-4dd5-a094-6e05e0b5b927",
+      "result_id": "4887d217-1e11-40ec-a07b-f8ef569f62f4"
+    },
+    {
+      "claim_id": "1c6c53e5-02d9-4baa-9f0c-e2213af0493d",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "fe852da3-4d43-44df-8850-a18a32982b2b",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "f5e21380-5727-4324-9dc4-7da5d3d93e4a",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "25f6e19e-7641-421c-be73-0d83166bd822",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "9c06c113-e94e-4bfd-ba32-4df5122b3571",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "07a99f29-be1d-4f11-adcd-44713be35013",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "d98fe1c2-b9bb-406f-acd3-ec956b376930",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "4db8a613-e265-4737-aeb8-59c42cc0be85",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "53d3fccc-9f76-48ef-afb4-3ed905dced64",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "cc6494fb-5594-4c01-a96a-36fe49cab2b6",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "4f6ae60e-f714-4be2-9f84-f012c3987fc6",
+      "result_id": "5d3c476a-a054-4973-87a0-63817292798b"
+    },
+    {
+      "claim_id": "c6e9ac24-32a5-4440-8e8a-132fcb22814f",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "9c06c113-e94e-4bfd-ba32-4df5122b3571",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "7d77b162-dbdb-41fb-bc67-867988ba62f6",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "3696faa0-a222-47ec-bc8a-3d410c7b84b5",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "8c0c8224-68ee-4114-998f-1f979cb6f971",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "c8b6aa7a-1cf4-4e33-89e8-9ec52748a41b",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "ccbd3b96-3817-4767-aaa2-76ef134109fc",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "6e3d8615-ffc8-407f-af34-9f1943466132",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "eafa233e-17b5-4a42-a894-1c6cb4eb7449",
+      "result_id": "45bdef9a-eb0f-4d36-93bd-6934b7675c7e"
+    },
+    {
+      "claim_id": "c67425c3-73ee-4919-9207-8982cdd39461",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "223946d5-960f-4747-85d2-81b02f0a6b41",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "82dcfb62-e6db-465a-8696-68bc29d4cff6",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "8665cef4-d043-4b85-9212-8de5e4ef22da",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "85705562-308f-456e-9b9f-3e0978c3cb68",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "ce48e351-bb62-4512-8165-b5fb1f8f2327",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "ae662efb-d1d0-494c-aeaa-c442987f00a4",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "09f85172-8f5b-40b3-9b6c-b4d1f82f06db",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "dccdfddd-f4d9-43f9-bf26-2c9f3e23bdd5",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "e21c7d25-080f-41e6-a27c-7fb9e183961b",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "cf60ec6c-3d71-4d55-bb90-f4e311cf0d55",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "c6d77ac3-befc-453d-83ab-6ea92cfd7608",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "1c709782-11bb-4f47-ae61-4daffd97373a",
+      "result_id": "15d8a80e-1ecc-494c-9d70-8912ca1e143f"
+    },
+    {
+      "claim_id": "97a24678-6baa-455b-a7e2-6e887442c4e5",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "8d085efb-3d8f-40c3-a365-e0d80611597a",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "477155f8-ada3-4c14-806b-d41ca6d2e52f",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "47511653-fd25-4fc1-8053-ee7189e9b166",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "bbca467e-1888-4542-8557-fb0d5b90c017",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "427feb47-dd80-4175-a2a9-c47de75a6f84",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "24af1ce7-f8e3-4846-9ecd-936143a59deb",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "9a29460e-9f87-420f-afdb-642687858285",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "11be3725-c1e9-4278-b6aa-d3171affc704",
+      "result_id": "595337a4-0ab0-4967-af36-f7b1c46cf941"
+    },
+    {
+      "claim_id": "5398b8c0-32e8-43a9-b74b-9df91d47c766",
+      "result_id": "e54e118d-d217-40a5-84f9-4f6a9ad21886"
+    },
+    {
+      "claim_id": "191d35c4-32de-4226-a2aa-7458250b48ad",
+      "result_id": "e54e118d-d217-40a5-84f9-4f6a9ad21886"
+    },
+    {
+      "claim_id": "423b925d-5a93-41b6-8055-e5d4b64a1cf9",
+      "result_id": "e54e118d-d217-40a5-84f9-4f6a9ad21886"
+    },
+    {
+      "claim_id": "3f3bc2ff-e4c8-4b76-a717-518e083d45c5",
+      "result_id": "e54e118d-d217-40a5-84f9-4f6a9ad21886"
+    },
+    {
+      "claim_id": "a3ef74bc-08ac-4204-bffe-69be49d5c557",
+      "result_id": "e54e118d-d217-40a5-84f9-4f6a9ad21886"
+    },
+    {
+      "claim_id": "269b42a5-33ad-49d1-9922-251f5febc0e1",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "3039529a-d794-4048-83a6-9e8ec9fc7164",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "b0b3e1cd-9923-4417-b704-e661d418faee",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "bd9608b9-71f3-4558-95a1-80fd1c93d694",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "c0594377-61d9-4042-aac8-1c9b4acbad18",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "d7d10482-c650-4bb5-83cf-e638925633a1",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "5f8da5ff-a20a-4a40-b987-da7f369f12d6",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "2f2d1ac2-a843-4561-af07-72911cd21628",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "0a862715-03a2-492d-944e-c457350f0429",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "3edac958-05e0-4562-bd91-42e78ffb1465",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "e2be3dec-7d4b-4b3f-bed7-e6d79785236d",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "46b51729-d1fa-418c-9e58-94781463e71e",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "7ad3d570-78aa-4397-8ed2-58d3df80b8d7",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "6b5ae539-7977-407d-80ea-4c4c45287a93",
+      "result_id": "c91cbb47-86df-45dd-9879-36da10c7a525"
+    },
+    {
+      "claim_id": "2a20426a-140d-4cc0-972e-21029c963d9a",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "2700cde1-6ec1-4c23-ae0e-686c0b459877",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "0893d6d7-cf22-4124-aa28-fe58d7dabfa2",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "98ec4a09-0fcc-412e-be84-5d00c1904e0b",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "cf07cb31-ff9c-4c1e-a1c6-61fcbb678ea8",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "f6f73494-36a7-49e2-ae0e-b5f1f28753e2",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "7399ee48-9fc7-4ea5-aaa6-285b30301f87",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "00ad0624-2766-4163-965f-301ba5824432",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "24d529be-c2a1-48e1-a8ce-fc7efdaa79e5",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "2bb1196e-b0c8-41f4-8865-78cc9cb74aca",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "e2ee939a-6e6b-4daf-90e0-c5c494a311f7",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "ccad5644-30b4-4710-b062-1b131a3bd2df",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "a844ff0f-a8c1-4083-9c9e-8ee97753d428",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "202bb880-a4a1-4493-8bed-eb5b6277894d",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "1327d570-d6ae-4db0-b98a-c7f85de7a372",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "da188f98-2086-4a35-8fa8-18dae59c5752",
+      "result_id": "d1ff19e3-92a8-42b3-a606-360a429e33c7"
+    },
+    {
+      "claim_id": "5215ace5-de9b-46f7-87e3-9148f7b43164",
+      "result_id": "af22fc98-b493-4675-9393-57b2aa1fe68a"
+    },
+    {
+      "claim_id": "c6e9ac24-32a5-4440-8e8a-132fcb22814f",
+      "result_id": "af22fc98-b493-4675-9393-57b2aa1fe68a"
+    },
+    {
+      "claim_id": "bf2ef2cd-38f6-492d-b555-fb8a26b45e2a",
+      "result_id": "af22fc98-b493-4675-9393-57b2aa1fe68a"
+    },
+    {
+      "claim_id": "c7a930a7-3450-4c29-a8c1-92ffa572f46e",
+      "result_id": "af22fc98-b493-4675-9393-57b2aa1fe68a"
+    }
+  ],
+  "comparisons": []
+}

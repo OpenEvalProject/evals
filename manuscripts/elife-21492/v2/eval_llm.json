@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20"
+    ],
+    "result": "The authors implemented an actor-critic architecture for reward-based training of RNNs, consisting of a decision network that selects actions to maximize reward and a value network that predicts future reward to guide learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C20 describe the core methodological contribution. The architecture is clearly defined with citations to the actor-critic framework, and the implementation is demonstrated across multiple tasks in the results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29"
+    ],
+    "result": "The trained network for the simple perceptual decision-making task successfully learns to integrate sensory evidence, with performance improving with longer stimulus durations. The value network output shows expected reward modulated by stimulus difficulty, and decision network units exhibit coherence-dependent ramping activity similar to neural recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C24, C25, C26, C27, and C29 are directly supported by data in Figure 1C-E. The network achieves the task, shows appropriate behavioral patterns, and exhibits neural activity patterns consistent with experimental findings (C28). The interpretation of the value network performing an 'absolute value'-like operation (C29) is supported by the overlap shown in Figure 1E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Networks successfully learned three cognitive tasks (context-dependent integration, multisensory integration, and parametric working memory) that have previously been addressed with supervised learning, demonstrating that these tasks can be learned using reward feedback alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by the psychometric functions and neural activity patterns shown in Figure 2. The networks achieve target performance and exhibit mixed selectivity similar to experimental recordings. The comparison to prior supervised learning approaches (C33) provides appropriate context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C38"
+    ],
+    "result": "The trained network for the multisensory integration task exhibits multisensory enhancement with performance on multisensory trials better than single-modality trials, and decision network units show diverse tuning including mixed selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C38 are directly supported by Figure 2B showing psychometric functions and neural activity patterns. The multisensory enhancement is quantitatively demonstrated, and the diversity of unit tuning matches experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "RNNs trained with reward feedback alone can reproduce the mixed selectivity characteristic of neural populations in higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is a summary statement supported by the neural activity patterns shown across multiple tasks in Figure 2. The mixed selectivity is demonstrated in context-dependent integration, multisensory integration, and parametric working memory tasks, with appropriate citations to prior work on mixed selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In the postdecision wager task, the network reproduces key behavioral features: opting for the sure option more frequently when coherence is low or stimulus duration short, and showing better performance when waiving the sure option. The network's choices are based on internal uncertainty rather than stimulus difficulty alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are directly supported by Figure 3B showing the behavioral patterns. The interpretation that choices are based on internal uncertainty (C45) is supported by the performance difference between wager and non-wager trials. Claim C46 about intermediate firing rates is supported by Figure 3C. These results match experimental findings from cited work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C52"
+    ],
+    "result": "In the economic choice task, the network architecture was unchanged, yet the value network units exhibited diverse selectivity patterns similar to orbitofrontal cortex recordings, including units selective for chosen value, offer value, and choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C52 establish the task structure and methodological consistency. The claim about value network activity is supported by Figure 4B showing diverse tuning patterns. The quantitative breakdown (roughly 20% chosen value, 60% offer value, 20% choice) provides specific evidence. However, the manuscript does not provide statistical validation of these percentages or systematic classification criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The specific form of baseline network inputs (value network receiving decision network activity and selected actions) is novel in recurrent policy gradients. This architecture suggests a role for value representation essential for learning but not executing tasks, consistent with experimental findings on OFC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 about novelty relies on the authors' knowledge without systematic literature review. Claims C56-C59 make interpretations about biological implications that are speculative, though they cite relevant experimental work. The claim that a baseline 'dramatically improves learning but is not required' (C58) is supported by Figure 1\u2014figure supplement 4 showing comparable but slower training with simpler baselines, but more systematic comparison would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The results support the actor-critic architecture for reward-based learning, with potential anatomical correspondence to dorsolateral prefrontal cortex (decision network) and OFC or basal ganglia (value network).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is an interpretation of the results supported by the successful training across tasks. Claims C61-C62 provide appropriate historical and experimental context with citations. However, claim C63 about anatomical correspondence is explicitly speculative ('may correspond') and lacks direct experimental validation. The interpretation is reasonable but remains a hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The use of BPTT makes the learning rule biologically implausible, though the resulting networks exhibit features of biological neural activity. The value network approach offers advantages over prior methods by automatically depending on stimulus without requiring external tracking of trial-specific averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 acknowledges a clear limitation with appropriate citations. Claims C65-C66 provide balanced discussion of biological plausibility with recent developments. Claims C67-C71 provide fair comparison to related work (Miconi 2016) with appropriate citations, noting both similarities and key differences (discrete vs. graded actions, value network vs. algorithmic baseline).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C53",
+      "C54"
+    ],
+    "result": "The work provides a unified framework for investigating diverse cognitive and value-based computations, expanding the range of tasks that can be studied with model RNNs and enabling more direct investigation of reward-related processes in the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C53, and C54 summarize the contributions of the work. These are supported by the successful demonstration of the approach across six different tasks spanning cognitive and value-based domains. The claim about 'unified framework' is justified by the consistent architecture and training procedure applied across diverse tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The work predicts that value representation is essential for learning but not executing tasks, which may explain experimental findings where OFC lesions affect learning but not execution of learned tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 is a key prediction of the work, supported by the model architecture where the value network guides learning but is not needed for policy execution. Claims C57-C59 elaborate on this with citations to relevant experimental work. However, this remains a prediction/interpretation rather than a directly tested hypothesis. The claim that 'an accurate baseline dramatically improves learning but is not required' (C58) has some support from Figure 1\u2014figure supplement 4, but more systematic ablation studies would be needed to fully validate this prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "In reward-based training, the time of decision commitment is unambiguously defined by action selection, and the appropriate speed-accuracy tradeoff is learned in the space of concrete actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C31 describe advantages of the reward-based approach for reaction-time tasks. C30 is a definitional statement about the model. C31 is an inference about the advantages, supported by the reaction-time results in Figure 1\u2014figure supplement 2 showing appropriate speed-accuracy tradeoffs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The REINFORCE algorithm allows mixing supervised and reward-based learning and supports continuous action spaces, though all networks in this work were trained from reward feedback only with discrete actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C74 describe features of the REINFORCE algorithm with appropriate citations. Claim C73 clarifies the methodological choice in this work. These are accurate statements about the algorithm's capabilities and the authors' implementation choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model uses rectified GRU units capable of dynamically modulating time constants and gating recurrent inputs, interpreted as mixtures of excitatory and inhibitory populations, potentially implementing a 'reservoir of time constants.'",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 provides biological context with citation. Claim C76 describes the model units used, which is a methodological choice. Claim C77 is speculative ('may implement') but appropriately cited. The description is accurate and the speculation is reasonable, though the biological interpretation remains to be validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Methods for analyzing trained RNNs remain limited, but reward-based training makes it more likely that resulting networks will correspond closely to biological networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 acknowledge current limitations in analysis methods with appropriate citation. Claim C80 is an inference about the advantages of the approach that is reasonable given the ethologically relevant training paradigm, though it remains a hypothesis rather than a demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The introduction establishes motivation and context: trained neural networks can provide insights into cognitive functions, animals learn through reinforcement rather than supervised learning, and reward-based learning is particularly relevant for confidence-based and value-based decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide background and motivation. Claims C1-C3 establish the rationale. Claims C8-C11 cite prior work on model networks. Claims C12-C14 define learning paradigms. Claims C15-C19 describe specific task contexts and the role of reward in learning. All are appropriately supported by citations or represent established knowledge.",
+    "result_type": "MINOR"
+  }
+]

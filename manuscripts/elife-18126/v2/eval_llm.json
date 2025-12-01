@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C39",
+      "C158"
+    ],
+    "result": "Activation of the PDGF/VEGF receptor (Pvr) in Drosophila wing imaginal discs induces a glycolytic tumor characterized by robust LDH activity and expression. This represents a specific oncogene-driven metabolic reprogramming that is not observed with many other growth-promoting oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35, C39, and C158 collectively establish that Pvr activation specifically induces LDH expression and glycolytic activity in wing discs. The data include both enzymatic activity assays (Figure 1b) and LDH-GFP reporter expression (Figure 1d), providing converging evidence. The specificity is demonstrated by comparison with other oncogenes that cause overgrowth but not LDH induction (C40-C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "LDH upregulation by Pvr is not a general consequence of increased cell proliferation, as other growth-promoting oncogenes (Wingless, Upd, Yorkie, InR, EGFR) do not induce LDH expression despite causing significant tissue overgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate through systematic comparison that multiple oncogenes causing overgrowth fail to induce LDH expression (Figures 1f-j). This establishes the specificity of Pvr-mediated metabolic reprogramming and rules out proliferation per se as the driver of LDH induction. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "Sima (Drosophila Hif\u03b1) is stabilized in Pvr-activated cells and is essential for LDH induction. Overexpression of Sima is sufficient to induce LDH, while RNAi-mediated knockdown of Sima strongly suppresses Pvr-induced LDH expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C52 establish both necessity (RNAi suppression in Figures 2e-f) and sufficiency (overexpression in Figures 2c-d) of Sima for LDH induction. The use of two independent RNAi constructs (C51) strengthens the conclusion. Immunohistochemistry data confirm Sima protein stabilization in Pvr-activated tissues (Figure 2b).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C136"
+    ],
+    "result": "Metabolic reprogramming occurs in a cell-autonomous, hypoxia-independent manner. Single cells expressing Pvr in normoxic conditions show LDH expression without requiring a hypoxic tumor core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 and C136 demonstrate through flip-out clone experiments (Figure 2g) that individual Pvr-expressing cells surrounded by normal tissue show LDH expression without overgrowth or hypoxia. This directly addresses a key mechanistic question and rules out tumor hypoxia as a requirement for Sima stabilization and metabolic reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70"
+    ],
+    "result": "Both ERK and PI3K/Akt pathways are necessary for Pvr-mediated LDH upregulation. Pvr activates both pathways, while EGFR activates only ERK and InR activates only PI3K/Akt, neither of which alone induces LDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 establish through phospho-specific antibody staining (Figures 3a-f) and genetic epistasis experiments (Figures 3i-n) that both pathways are required. RNAi knockdown of components from either pathway suppresses LDH induction. The differential activation by different RTKs provides an elegant explanation for the specificity of Pvr.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C76",
+      "C77"
+    ],
+    "result": "Co-activation of ERK and PI3K pathways is both necessary and sufficient for Hif\u03b1-dependent LDH induction. Individual activation of either pathway causes overgrowth but not LDH expression, while simultaneous activation of both induces robust LDH expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 demonstrate through genetic reconstitution experiments (Figures 3o-r) that co-expression of hRafact and PI3Kact is sufficient to induce LDH even more robustly than Pvr alone. This establishes sufficiency, while the RNAi experiments establish necessity. The logic is sound and the data are compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C84",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ERK and PI3K pathways converge at the level of translational control to regulate Sima and PDHK protein levels. Translational regulators S6K (downstream of PI3K) and Lk6 (downstream of ERK) are both required, while the transcriptional target Pointed is dispensable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 establish through genetic loss-of-function experiments (Figures 3s-u) that translational control, not transcriptional control, mediates the convergence of ERK and PI3K pathways. The dispensability of Pointed (Figure 3v) and requirement for S6K, Lk6, and 4E-BP provide strong evidence for this mechanism. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "RNA-seq analysis reveals that Pvr activation upregulates transcription of multiple glycolytic enzymes (Hex-A, Pfk, Ald, LDH) in a Sima-dependent manner, indicating coordinated enhancement of the entire glycolytic pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 and C96 are supported by RNA-seq data (Figure 4a-b) showing upregulation of six of ten glycolytic enzymes, with four being Sima-dependent. The identification of rate-limiting enzymes at multiple steps supports the interpretation of enhanced glycolytic flux. The experimental design includes appropriate controls (wild-type, Pvract, InRact, Pvract+simaRNAi).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Pvr activation leads to expression and activation of PDHK, which inactivates PDH. While ERK/PI3K co-activation produces PDHK protein, this PDHK is inactive, indicating that additional Pvr-dependent pathways are required for PDHK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 demonstrate through phospho-specific antibody staining (Figures 5a-f, Figure 5\u2014figure supplement 1a-c) that Pvr induces both total and active (phosphorylated) PDHK, as well as inactive (phosphorylated) PDH. The key observation that ERK/PI3K co-activation produces inactive PDHK (C102-C103) establishes that additional pathways are required, setting up the identification of Src/JNK.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C141",
+      "C142"
+    ],
+    "result": "Src and JNK function downstream of Pvr to activate PDHK and inactivate PDH. Src functions upstream of JNK, and simultaneous activation of ERK, PI3K, and JNK pathways is sufficient to produce active PDHK and inactivate PDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115, C141-C142 establish through phospho-specific antibody staining and genetic epistasis that Src and JNK are activated by Pvr (Figures 5g-j), function in a linear pathway (Figures 5o,s), and are required for PDHK activation (Figures 5l-m). The reconstitution experiment showing that ERK+PI3K+JNK activation produces active PDHK (Figure 5\u2014figure supplement 1d) demonstrates sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Pvr-activated cells exhibit high ROS levels that depend on PDHK activity and Src-JNK signaling. ERK/PI3K co-activation does not produce ROS, and blocking JNK, JNKK, or Src suppresses ROS production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 demonstrate through DHE staining and gstD-GFP reporter expression (Figures 6a-f, Figure 6\u2014figure supplement 1) that ROS production requires the Src-JNK pathway and PDHK activity. The observation that ERK/PI3K co-activation does not produce ROS (C119) is consistent with the lack of PDHK activation and PDH inactivation in this condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C149"
+    ],
+    "result": "ROS functions as a feedback signal to maintain metabolic reprogramming. ROS scavenging by Peroxidasin suppresses JNK activation, Sima accumulation, and LDH expression, establishing ROS as central to sustaining the Warburg effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C131 and C149 demonstrate through ROS scavenging experiments (Figures 6g-n) that reducing ROS blocks multiple upstream components of the metabolic reprogramming pathway. The suppression of JNK phosphorylation (Figures 6i-j), Sima accumulation (Figures 6m-n), and LDH expression (Figures 6k-l) by Peroxidasin provides strong evidence for a positive feedback loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Knockdown of Sima causes only modest suppression of Pvr-induced tumor growth (~20% volume reduction), indicating that tumor growth results from multiple interacting events beyond glycolysis alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by quantitative volume measurements (Figure 2\u2014figure supplement 1b) showing that while Sima knockdown completely suppresses LDH expression, it only partially reduces tumor volume. This demonstrates that blocking glycolysis alone is insufficient to fully suppress tumor growth, an important caveat for therapeutic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "PDHK and Sima protein levels are upregulated by Pvr through translational control rather than transcriptional control. RNA-seq and qRT-PCR data show no change in PDHK or Sima transcript levels despite significant protein upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 are supported by RNA-seq data (Figure 4\u2014figure supplement 1) and qRT-PCR (Figure 5\u2014figure supplement 1p-q) showing unchanged transcript levels alongside immunohistochemistry showing increased protein levels. This is consistent with the translational control mechanism established through S6K, Lk6, and 4E-BP experiments. The discrepancy with mammalian studies regarding PDHK transcriptional control is noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Endogenous LDH activity is not detected in wild-type wing and eye imaginal discs but is observed in brain and salivary glands, indicating tissue-specific metabolic profiles in Drosophila larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by enzymatic activity assays and LDH-GFP reporter expression data (Figure 1a, Figure 1\u2014figure supplement 1a-d). This establishes the baseline metabolic state of imaginal discs and validates the LDH-GFP reporter as a faithful readout of endogenous LDH expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Constitutively active Ras causes a small increase in LDH expression, and dominant-negative Ras suppresses Pvr-induced LDH expression, indicating that Ras functions downstream of Pvr but is insufficient alone for robust LDH induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by LDH-GFP expression data (Figures 1e, 3h). The modest effect of Ras activation compared to Pvr (C151) and the requirement for Ras in Pvr-mediated LDH induction establish Ras as a necessary but insufficient intermediate in the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Dual PI3K/ERK activation is sufficient to increase Sima protein expression, and Sima knockdown suppresses PI3K/ERK-induced LDH expression, demonstrating that Sima is the critical regulator of glycolytic genes downstream of these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C73-C75 are supported by immunohistochemistry showing Sima accumulation with PI3K/ERK co-activation (Figure 3\u2014figure supplement 1c-d) and suppression of LDH expression by Sima RNAi (Figure 3\u2014figure supplement 1h-i). This establishes Sima as the key transcriptional mediator of the metabolic reprogramming.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "RNA-seq data identify downregulation of transcripts encoding mitochondrial proteins in Pvr-activated cells, consistent with attenuation of oxidative phosphorylation. Cross-talk between glycolysis and oxidative phosphorylation has been previously demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by RNA-seq analysis and citation to prior work (Owusu-Ansah et al., 2008). While the downregulation of mitochondrial transcripts is consistent with the observed PDH inactivation and metabolic shift, the manuscript does not provide direct measurements of mitochondrial function or TCA cycle flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The Warburg effect is a well-characterized metabolic reprogramming in cancer involving a shift from oxidative phosphorylation to aerobic glycolysis. Hif-1\u03b1 is a known regulator of this process, and hypoxia has been proposed as a mechanism, though the maintenance of altered metabolic states under normoxic conditions is not well understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10, C18-C23 provide background context supported by extensive citations to established literature. These claims accurately represent the current state of knowledge in cancer metabolism and identify the gap that the study addresses. This is standard introductory material that sets up the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C135",
+      "C160",
+      "C161"
+    ],
+    "result": "The genetic study was performed in an otherwise wild-type Drosophila background with only the introduced activated oncogene, providing a clean system to dissect primary oncogenic pathways without confounding background mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C160-C161 accurately describe the experimental approach and its advantages. The use of the Gal4/UAS system in Drosophila allows precise genetic manipulation in an otherwise normal background, which is a key strength of the study compared to mammalian cell line studies (C22, C162).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C142",
+      "C143"
+    ],
+    "result": "Pvr triggers parallel pathways through Ras: PI3K/Akt targeting S6K and Raf/ERK targeting Lk6 for translational control of Sima and PDHK. All three pathways (Src/JNK, PI3K/S6K, ERK/Lk6) are required for active PDHK and PDH inactivation, while only PI3K and ERK pathways are needed for LDH production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138, C142-C143 synthesize the pathway architecture established through the genetic epistasis experiments. The differential requirements for LDH induction (ERK+PI3K) versus PDHK activation (ERK+PI3K+JNK) explain how different oncogenes could produce different metabolic phenotypes. This is a key conceptual advance of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C152"
+    ],
+    "result": "ROS levels rise with mitochondrial dysfunction and function as a feedback signal that stabilizes Hif and activates JNK, thereby reinforcing metabolic reprogramming. This positive feedback is critical for maintaining the Warburg effect in normoxic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148, C152 synthesize the feedback mechanism supported by the ROS scavenging experiments and citations to prior work on ROS effects. The model that ROS stabilizes Hif through the same mechanism as hypoxia (C147) and activates JNK (C148) provides a mechanistic explanation for how metabolic reprogramming is maintained over time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "Given the complete conservation of pathway components between Drosophila and mammals, similar epistatic relationships are likely to hold in mammalian cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C164 is a reasonable speculation based on pathway conservation, but it remains to be experimentally validated in mammalian systems. The discrepancy regarding PDHK transcriptional control (C156) suggests that not all regulatory mechanisms are identical between flies and mammals. This is appropriately framed as a proposal rather than a conclusion.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The study identifies seven additional GABA-positive neuronal cell types (RIB, SMDD/V, AVB, AVA, AVJ, ALA, AVF) beyond the six previously known classes (RME, AVL, RIS, DVB, DD, VD), effectively doubling the number of GABAergic neuron classes in C. elegans. These newly identified neurons show generally weaker GABA staining than previously identified neurons, and all GABA staining is abolished in unc-25/GAD mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are strongly supported by systematic anti-GABA immunostaining (Figure 1), reporter gene analysis (Table 1, Figure 2), and genetic validation using unc-25 mutants (C6). The identification is based on multiple independent methods including antibody staining, cell-specific markers, and developmental stage analysis (C7). The quantitative data in Table 1 and visual evidence in Figure 1 provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The study identifies two novel categories of GABA-containing neurons: 'GABA uptake neurons' (ALA and AVF) that acquire GABA from the extracellular environment via SNF-11/GAT transporter rather than synthesizing it, and distinguishes between 'clearance neurons' (AVF) that only take up GABA and 'recycling neurons' (ALA) that may re-release it. AVF takes up GABA from D-type motor neurons, while ALA may absorb GABA from SMD neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are well-supported by convergent genetic evidence: loss of GABA staining in both unc-47 (no release) and snf-11 (no uptake) mutants (Figure 1D,E), expression of snf-11 but not unc-25 reporters in these neurons (Table 1, Figure 2D), and specific loss of AVF staining in unc-30 mutants lacking D-type neurons (C11, Figure 1F). The distinction between clearance (C9) and recycling (C10) neurons is based on differential unc-47/VGAT expression, though C10 involves some speculation about ALA function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GABA is detected in three classes of non-neuronal cells: the head mesodermal cell (hmc), glia-like GLR cells, and body wall muscle. The hmc operates as a GABA clearance cell expressing snf-11/GAT but not unc-47/VGAT. GLR cells also take up GABA via SNF-11, and GABA may pass from RME neurons to GLR cells through gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by anti-GABA staining (Figure 1A), dependence on unc-25/GAD (C15, Figure 1C), and expression of snf-11/GAT in hmc and GLR cells (Figure 2D). The clearance function of hmc (C16) is well-supported by snf-11 expression, loss of staining in snf-11 mutants, absence of unc-47 expression, and reduced staining in unc-30 mutants. The gap junction hypothesis for GLR (C18) is reasonably inferred from persistence of staining in unc-47 mutants and known anatomical connectivity, though direct evidence is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Seven male-specific neurons are GABA-positive: EF1-4 interneurons that synthesize, release, and reuptake GABA (expressing unc-25, unc-47, and snf-11), and R2A, R6A, R9B sensory neurons. There is sexual dimorphism in snf-11/GAT expression in the VD12 neuron, which expresses snf-11 in males but not hermaphrodites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are well-supported by anti-GABA staining in males (Figure 3B), comprehensive reporter gene analysis showing unc-25, unc-47, and snf-11 expression in EF neurons (C20, Figure 3D), and clear demonstration of sex-specific snf-11 expression in VD12 (C21, Figure 3). The data provide complete characterization of male-specific GABAergic neurons with multiple independent markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Analysis of synaptic connectivity reveals that 47 of 118 neuron classes are innervated by GABA(+); UNC-47(+) neurons. RIB and SMD neurons have the most synaptic outputs among GABAergic neurons and employ both GABA and ACh as neurotransmitters, with one system predominating in each case.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by systematic analysis of the C. elegans wiring diagram (Table 3, cited from www.wormwiring.org). The cotransmission finding (C24) is supported by expression data for both GABA pathway genes (this study) and ACh pathway genes (cited from Pereira et al., 2015), with quantitative differences in expression levels indicating predominance of one system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The GABA receptor genes lgc-37 (alpha subunit) and gab-1 (beta subunit) are located in a conserved head-to-head genomic orientation and are co-expressed in 25 neuron classes, with AVE being the only exception expressing gab-1 but not lgc-37. GABAA-type receptors are expressed in neurons both with and without anatomical connections to GABA-positive neurons, suggesting possible spillover transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are well-supported by genomic analysis (Figure 4B), fosmid reporter expression data (Table 4, Figure 4), and comparison with cited literature on evolutionary conservation (C25). The co-expression pattern (C26) is systematically documented, and the AVE exception (C27) is clearly shown in Figure 4F. The spillover hypothesis (C28) is reasonably inferred from receptor expression in non-innervated neurons and supported by cited literature on spillover transmission in both vertebrates and C. elegans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The orphan nuclear receptor nhr-67 controls GABAergic identity of RME, AVL, and RIS neurons, collaborating with different homeobox genes in different contexts: with lim-6 in AVL and RIS, with ceh-10 in RMED, and with tab-1 (C. elegans ortholog of Drosophila Bsh/vertebrate Bsx) in RMEL/R. These factors control GABA pathway gene expression without affecting neuronal generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 are strongly supported by comprehensive mutant analysis using a newly generated nhr-67 null allele (C29, Figure 5A-B), genetic interaction studies showing synergistic defects in double mutants (C30, Figure 5D), and systematic analysis of GABA pathway gene expression in various mutant backgrounds (C31-C34, Figure 5). The identification of tab-1 through forward genetic screening and whole-genome sequencing (C34, Figure 6, Table 5) is particularly rigorous. Cell fate analysis using pan-neuronal markers (C33, Figure 5F) confirms that defects are in differentiation rather than cell generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C71"
+    ],
+    "result": "The GATA2/3 ortholog elt-1 affects GABA identity of D-type motor neurons, likely acting as a cofactor for unc-30/Pitx. Mosaic analysis demonstrates that elt-1 controls expression of GABA pathway genes (unc-25/GAD, unc-47/VGAT, unc-46/LAMP) without affecting D-type motor neuron generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C71 are well-supported by fosmid reporter expression showing elt-1 in all D-type motor neurons (Figure 7A-B), mosaic analysis demonstrating loss of GABA markers in cells lacking the rescuing array (C36, Figure 7C), and persistence of unc-30 expression confirming cell generation (C37, Figure 7D). The cofactor hypothesis (C71) is reasonably inferred from co-expression data and the known requirement for unc-30 in D-type specification, though direct molecular interaction is not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The homeobox genes ceh-14 and ceh-17 control GABA identity of the ALA uptake neuron, while unc-4 controls GABA identity of the AVF uptake neuron. Loss of these factors abolishes both GABA staining and snf-11/GAT expression in the respective neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by loss of GABA staining and snf-11 reporter expression in the respective mutants (Figure 8A-B). The findings build on previous work showing these factors control other identity features of these neurons (cited for ceh-14/ceh-17 in ALA). The data clearly demonstrate that these transcription factors control the GABA uptake phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C61",
+      "C62"
+    ],
+    "result": "Transcription factors controlling GABAergic identity generally also control other terminal identity features of the respective neurons, demonstrating coupling of neurotransmitter identity with broader neuronal specification. However, DVB presents an exception where lim-6 controls unc-25/GAD but not unc-47/VGAT or other identity markers, possibly due to redundancy with an unknown cofactor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C61-C62 are supported by systematic analysis showing that nhr-67, lim-6, and other factors affect both GABA pathway genes and other identity markers (Figure 9A-E). The DVB exception (C61) is clearly documented with differential effects on different markers (Figures 5C, 9A). The redundancy hypothesis (C62) is reasonably inferred from the synergistic effects observed in nhr-67; lim-6 double mutants in AVL (Figure 5D), though the specific cofactor in DVB is not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The unc-42 homeobox gene represses GABA identity in AVK and SIB neurons. Loss of unc-42 results in ectopic expression of the complete GABA pathway gene battery (unc-25/GAD, unc-47/VGAT, unc-46/LAMP, snf-11/GAT) in these normally peptidergic/cholinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is strongly supported by ectopic anti-GABA staining and ectopic expression of all four GABA pathway reporters in unc-42 mutants (Figure 10A-B). This demonstrates active repression of GABAergic fate by unc-42, consistent with its known role in promoting alternative neuronal identities (cited from Wightman et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Integration of GABA mapping with previous glutamate and acetylcholine maps reveals that 104 of 118 C. elegans neuron classes have assigned neurotransmitter identities, with 98 using fast-acting transmitters. Only nine neuron classes use GABA for synaptic signaling, with just two being pure interneurons (RIS and RIB). GABA usage is sparse in both ring interneurons (2 of 12 classes) and male-specific tail circuitry (1 of 20 classes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by comprehensive compilation of neurotransmitter mapping data (Figure 11, Supplementary file 1) integrating this study with previous work on Glu and ACh neurons. The analysis of GABA usage patterns (C47-C49) is based on systematic evaluation of anti-GABA staining and unc-47/VGAT expression (Table 1), combined with anatomical classification of neuron types. The conclusions about sparse GABA usage are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The sole C. elegans GAT ortholog SNF-11 is expressed in only a small fraction of GABA-positive neurons and in only two types of GABAergic target cells. This restricted expression pattern may reflect GABA spillover signaling, where GABA is not immediately cleared after release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is well-supported by systematic snf-11 reporter expression analysis (Table 1, Figure 2D) showing limited expression compared to vertebrate GAT patterns (cited literature). The spillover hypothesis (C51) is explicitly stated as speculation but is reasonably inferred from the restricted expression pattern and supported by cited evidence of spillover transmission in C. elegans (Jobson et al., 2015). However, direct experimental evidence for spillover in most contexts is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Some newly identified GABAergic neurons cotransmit ACh, particularly RIB (weak ACh expression) and SMD neurons (strong ACh expression). The set of GABA-positive neurons in C. elegans is remarkably similar to that in the distantly related parasitic nematode Ascaris suum, including the existence of GABA uptake neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by expression data for both GABA pathway genes (this study) and ACh pathway genes (cited from Pereira et al., 2015), with quantitative differences noted. Claims C53-C54 are based on comparison with published data from Ascaris suum (cited from Guastella et al., 1991; Guastella and Stretton, 1991), suggesting evolutionary conservation of GABAergic neuron organization in nematodes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The genomic organization of alpha and beta subunit GABA receptor genes in head-to-head orientation is conserved from nematodes to vertebrates. Transcription factors specifying GABAergic phenotype act in neuron-type specific combinations with no common inducer, though nhr-67 and lim-6 show reiterative use across multiple neuron types. The majority of regulators are homeobox genes, with non-homeobox factors (nhr-67, elt-1) cooperating with homeobox genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by genomic analysis (Figure 4B), cited literature on evolutionary conservation (C55), and comprehensive regulatory mapping (Figure 9F, Figure 12). The combinatorial code concept (C56) is demonstrated by the diverse transcription factor requirements across different GABAergic neuron types. The reiterative use of nhr-67 and lim-6 (C57) is clearly documented across multiple neuron classes. The preponderance of homeobox genes (C58) is evident from the regulatory map.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The study demonstrates evolutionary conservation of GABAergic specification mechanisms. Vertebrate GATA2/3 factors specify GABAergic identity in multiple CNS regions, and mouse GABAergic neurons co-express orthologs of elt-1 and unc-30. The C. elegans unc-30/Pitx factor controls D-type motor neuron identity including GABA pathway genes. Several other transcription factors (lim-6, nhr-67, ceh-10, tab-1/Bsx) show conserved roles, with Drosophila Bsh also specifying GABAergic neurons in the optic lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C66-C78 are primarily based on cited literature establishing vertebrate and Drosophila functions, with C68-C70 and C72-C74 citing previous C. elegans work. The current study's contribution (C75-C76) is demonstrating that nhr-67 controls all GABAergic features in multiple neuron types and identifying tab-1 as the C. elegans Bsx ortholog. The evolutionary conservation arguments are well-supported by the combination of cited literature and new findings, though direct functional conservation experiments are not performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The four RME neurons have distinct lineage histories but share the terminal selector nhr-67, which endows them with class-defining properties. RME subtype-specific properties are controlled by nhr-67 in collaboration with subtype-specific transcription factors (ceh-10 in RMED, tab-1 in RMEL/R). System-wide analysis reveals that four transcription factors (unc-3, unc-42, ceh-14, unc-86) are involved in specifying neurotransmitter identity of 46 of 69 neuron classes with known regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by the demonstration that nhr-67 affects all four RME neurons despite their different lineages (Figure 5B), analysis of subtype-specific factor requirements (Figures 5E, 6, 9C-D), and system-wide regulatory mapping (Figure 12). The terminal selector concept (C63) is well-illustrated by nhr-67's control of multiple identity features. The reuse analysis (C65) is based on comprehensive compilation of regulatory data from this and previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript discusses multiple parallels between C. elegans and vertebrate GABA systems based on cited literature, including: GABA recycling in vertebrate dopaminergic neurons, glial GABA signaling via GAT-1 reversal and bestrophin channels, neurotransmitter coupling through gap junctions in retina, GABA uptake by non-synthesizing neurons, widespread GAT expression in vertebrate GABA neurons, ACh/GABA cotransmission, GABAergic disinhibition, spillover transmission, and broad GABAT tissue distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C90 are entirely based on cited literature and serve to contextualize the C. elegans findings within broader neuroscience knowledge. These claims are appropriately supported by the cited references and provide useful comparative context. However, they represent background knowledge rather than new findings from this study. The comparisons help interpret the C. elegans data (e.g., GABA recycling concept for ALA neurons, spillover transmission for receptor expression patterns).",
+    "result_type": "MINOR"
+  }
+]

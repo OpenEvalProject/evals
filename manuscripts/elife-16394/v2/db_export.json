@@ -1,0 +1,1975 @@
+{
+  "submission": {
+    "id": "853005f7-db16-429e-b6c7-e3dc24eb603f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:29:12.905783Z",
+    "updated_at": "2025-11-30T21:29:12.905783Z"
+  },
+  "content": [
+    {
+      "id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "submission_id": "853005f7-db16-429e-b6c7-e3dc24eb603f",
+      "content_type": "manuscript",
+      "content_text": "# Direction-dependent arm kinematics reveal optimal integration of gravity cues\n\n## Authors\n\n- Jeremie Gaveau<sup>1</sup> ([ORCID: 0000-0001-8827-1486](https://orcid.org/0000-0001-8827-1486)) \u2020\n- Bastien Berret<sup>2</sup>\n- Dora E Angelaki<sup>4</sup> ([ORCID: 0000-0002-9650-8962](https://orcid.org/0000-0002-9650-8962))\n- Charalambos Papaxanthis<sup>1</sup>\n\n### Affiliations\n\n1. Universit\u00e9 Bourgogne Franche-Comt\u00e9, INSERM CAPS UMR 1093 Dijon France\n2. CIAMS, Universit\u00e9 Paris-Sud, Universit\u00e9 Paris Saclay Orsay France\n3. CIAMS, Universit\u00e9 d'Orl\u00e9ans Orl\u00e9ans France\n4. Department of Neuroscience Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe brain has evolved an internal model of gravity to cope with life in the Earth's gravitational environment. How this internal model benefits the implementation of skilled movement has remained unsolved. One prevailing theory has assumed that this internal model is used to compensate for gravity's mechanical effects on the body, such as to maintain invariant motor trajectories. Alternatively, gravity force could be used purposely and efficiently for the planning and execution of voluntary movements, thereby resulting in direction-depending kinematics. Here we experimentally interrogate these two hypotheses by measuring arm kinematics while varying movement direction in normal and zero-G gravity conditions. By comparing experimental results with model predictions, we show that the brain uses the internal model to implement control policies that take advantage of gravity to minimize movement effort.\n\n## Introduction\n\nIt is always fascinating to witness the ability of acrobats and dancers to accomplish complex and elegant movements, graciously interacting with gravito-inertial forces. Computational theory postulates that this captivating performance is due to the ability of the brain to learn and store internal representations of environmental dynamics (Wolpert and Ghahramani, 2000). On earth, gravity is the most ubiquitous and constant environmental feature. As such, a neural representation of gravity is created and stored through an internal model (Papaxanthis et al., 1998a; Angelaki et al., 1999; Merfeld et al., 1999; McIntyre et al., 2001; Angelaki et al., 2004; Indovina et al., 2005; Miller et al., 2008; Crevecoeur et al., 2009; Gaveau\u00a0and\u00a0Papaxanthis, 2011; Laurens et al., 2013a, 2013b).\n\nThe need for an internal model of gravity arises because Einstein\u2019s equivalence principle prevents any single sensory receptor from encoding gravity without simultaneously also encoding inertial accelerations (Einstein, 1908). The neural representation of gravity is thought to solve this ambiguity by multisensory statistical inference (Angelaki et al., 1999; Merfeld et al., 1999; Angelaki et al., 2004; Laurens et al., 2013b). An internal model of gravity has been shown to benefit the anticipation of a free falling object motion (Zago and Lacquaniti, 2005; Zago et al., 2008; Lacquaniti et al., 2013), as well as the visual perception of allocentric vertical (Van Pelt et al., 2005; De Vrijer et al., 2008; Elmore et al., 2014). However, whether and how an internal model of gravity benefits the planning and execution of skilled movement remains unknown.\n\nOne influential viewpoint assumes a need for compensation; i.e., the internal model of gravity is used to predict and compensate for its mechanical effects on the body. This hypothesis has been motivated by experimental findings on arm movements in the presence of externally applied Coriolis, viscous force fields and interaction torques (Shadmehr and Mussa-Ivaldi, 1994; Gribble and Ostry, 1999; Pigeon et al., 2003). The main benefit of a compensation strategy would be the simplification of motor planning by allowing for invariant trajectories (Hollerbach and Flash, 1982; Atkeson and Hollerbach, 1985). Current research in fields as diverse as neurorehabilitation, movement perception, or motor control modularity, assumes such a compensation principle (Prange et al., 2009, 2012; Cook et al., 2013; Russo et al., 2014).\n\nAn alternative perspective is based on a need for effort optimization, i.e., the internal model of gravity could be used to predict and take advantage of its mechanical effects on the body. It has been proposed that adaptation to the Earth\u2019s gravity field has allowed control policies to evolve that take advantage of environmental dynamics \u2013 use gravity as an assistive force to accelerate downward movements and as a resistive force to decelerate upward movements. This strategy, which has been formalized into a Minimum Smooth-Effort model, would result in movement kinematics that varies with direction (Berret et al., 2008a; Gaveau et al., 2014). Indeed, upward movements were shown to have shorter time to peak velocity and larger curvature than downward movements, but such comparisons were until now largely qualitative (Papaxanthis et al., 1998b; Gentili et al., 2007). Furthermore, upward/downward direction-dependent kinematics could also arise from the complex dynamics of the peripheral neuromuscular system. For example, the firing properties of extensor motoneurons (pulling the arm downwards when upright) are known to obey different rules from those of flexor motoneurons (pulling upwards when uptight; Cotel et al., 2009; Wilson et al., 2015). In addition, muscle force production generated by eccentric contraction (elongation, e.g. downward movements for flexors) is also known to obey differing rules from concentric contraction (e.g. upward movement for flexors; for a review see Enoka, 1996). Because of these asymmetrical neuromuscular peripheral properties, upward/downward kinematic asymmetries cannot necessarily be attributed to gravity effort optimality (i.e., minimization of muscular force to elevate and lower the arm). Thus, a solid test of the effort optimization hypothesis has been lacking.\n\nHere, we explicitly distinguish between the compensation and effort optimization hypotheses with two critical experiments. First, we contrast predictions of optimal control models that either compensate or take advantage of gravity force effects. Then, we quantitatively compare these predictions with actual kinematic features of arm movements in multiple directions. Second, in order to discard a possible influence of peripheral neuromuscular mechanisms, we measure how differences in upward versus downward arm movement kinematics are influenced by the lack of gravity during the zero-G phase of parabolic flight. If directional asymmetries originate from asymmetric firing of flexor/extensor motoneurons, they should persist in the absence of gravity because motoneurons properties are not expected to change during the short zero-G phase of a parabolic flight (Ishihara et al., 1996, 2002; for a review see Nagatomo et al., 2014). On the other hand, if they originate from eccentric versus concentric force production differences, directional asymmetries should cease to exist instantly in 0g because movement dynamics no longer differ for upward and downward movements (Enoka, 1996). Alternatively, however, if directional asymmetries originate from neural planning processes that take advantage of the internal model of gravity, following a gradual recalibration of the gravity internal model, directional asymmetries should progressively decrease towards new optimal zero-G values (McIntyre et al., 2001; Izawa et al., 2008; Snaterse et al., 2011). In support of the effort optimization hypothesis, we show that directional asymmetries are gradually eliminated during repeated exposure to the zero-G phase of parabolic flight.\n\n## Results\n\nWe asked fifteen humans to perform arm movements around the shoulder joint in different directions (Figure 1A), whereby the work of gravity torque is systematically varied (Figure 1B), while other dynamic variables (interaction torques, Coriolis and centripetal forces) are constant (see Figure 1\u2014figure supplement 1 for a geometrical illustration of the mechanical system and details on gravity torque computations). In single-degree of freedom movements, although the spatial shape of the endpoint trajectory is circular and constant across directions, the temporal shape of the endpoint trajectory (the form of the velocity profile) could change. As a measure of the shape of the velocity profile, we define a symmetry ratio (SR: acceleration time divided by the total movement time). SR corresponds to the relative timing of peak velocity (as in Figure 1C) and thus allows quantifying whether arm kinematics remains invariant (compensation hypothesis prediction) or changes (effort optimization hypothesis prediction) with movement direction. Here we use the optimal control framework (Bryson\u00a0and\u00a0Ho, 1975; Todorov, 2004) to simulate arm movement planning in different directions. Specifically, we change the cost function being minimized to understand how the neural model of gravity serves motor planning; i.e., we compare simulations of optimal control models that use the internal model of gravity to either compensate or take advantage of its mechanical effects on the body.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig1-v2.jpg)\n\n**Figure 1.:** (A) Participants\u2019 initial position and projection of the 17 targets onto the frontal plane. The angle \u03b3, representing the target inclination with respect to horizontal, was used to calculate the gravity torque projecting onto the plane of motion (see also Figure 1\u2014figure supplement 1). (B) The Work of Gravity Torque (WGT), projected onto the plane of motion and integrated over the whole movement, is plotted as a function of movement direction (same color code as in A). This non-linear (cosine-tuned) dependence is well fitted by a sigmoidal function (black curve, average RMSE = 0.12; [min: 0.09, max: 0.15], see Materials\u00a0and\u00a0methods). Positive/negative values indicate that WGT has the same/opposite direction as the arm movement. (C) Mean velocity profiles (for the average subject), normalized in both amplitude and duration, illustrate the predictions of the compensation hypothesis (Jerk) and the effort optimization hypothesis (Smooth-Effort) in the vertical plane (upwards, \u221290; downwards, 90\u00b0; see arrows and color-coded direction definition in panel A). SR up (red) and SR down (blue) illustrate the calculation of a symmetry ratio (acceleration time / movement time) allowing quantification of kinematic differences/similarities. (D) Simulated symmetry ratio predicted by the compensation hypothesis: Minimum Jerk (triangles, Flash and Hogan, 1985); and the effort optimization hypothesis: Minimum Smooth-Effort model (dots, Gaveau et al., 2014); as a function of movement direction (\u221290\u00b0, upwards and 90\u00b0, downwards). Similarly to WGT (see panels B), simulated symmetry ratio obtained from the Smooth-Effort model is well fitted by a sigmoidal function (black curve). (E) Simulated symmetry ratio as a function of WGT (grey triangles, Jerk and black dots, Smooth-Effort). Each data point represents the prediction for one subject moving in one direction (n\u00a0=\u00a0255 in each plot). It is noticeable that according to the effort optimization hypothesis, arm kinematics (symmetry ratio) should not be invariant but instead linearly correlate with WGT. (F) Simulated symmetry ratio predicted by two other well-known models minimizing dynamic cost functions: the Minimum Variance (Harris and Wolpert, 1998) and the Minimum Torque Change (Uno et al., 1989). It can be observed that the modulation of kinematics with movement direction is a specific feature of the effort-related optimization only.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Geometrical representation of the task and equations for computing gravity torque, projecting onto the plane of motion, from endpoint kinematics. Subjects were asked to perform single degree of freedom reaching movements, from a horizontal initial position, to a target requiring a \u03b8 = 45\u00b0 shoulder rotation with an orientation relative to horizontal defined by an angle \u03b3. $l$ is the lever arm length. (B) Gravity torque projected onto the plane of motion for 7 exemplary plane orientations (\u03b3 angle) throughout the \u03b8 = 45\u00b0 required movement amplitude. The gravity torque projecting onto the plane of motion was calculated using Equation 1 for all \u03b3 values presented panel C. The Work of Gravity Torque was then calculated using Equation 2. (C) The convention on plane of motion angle values ($\\gamma$) used to compute the Work of Gravity Torque in Experiment 1 is provided along with the exact positioning of each target defined as shoulder angular coordinates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Because the Smooth-Effort model minimizes a combination of the Absolute Work of force and Jerk, one may wonder whether the predicted linear correlation of symmetry ratio with the Work of Gravity Torque (WGT, see Figure 1E) emerges from the effort-related cost (absolute work of force) or from the kinematic cost (Jerk). This figure presents the results of 1530 simulations performed for the 15 subjects * 17 targets * 6 different values of \u03b1 (the weighting factor for the Jerk cost in the Smooth-Effort model, see Methods). For larger values of \u03b1, the symmetry ratio saturates at SR\u00a0=\u00a00.5. As illustrated, the higher the weight of the jerk, the flatter the correlation between symmetry ratio (SR) and WGT. This undeniably confirms the effort-related origin of the experimental findings presented in Figure 2.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Similarly to results presented in the main text (Figure 1F), including muscle dynamics into the minimization of end-point variance predicts constant symmetry ratios for all movement directions.\n\nMinimizing a kinematic cost only, without taking joint torque into account, such as the Jerk model (Flash and Hogan, 1985), is a perfect example of the compensation strategy. This is because the brain must compensate all perturbing dynamics to produce a consistent and invariant kinematically-defined motor plan (Hollerbach and Flash, 1982; Atkeson and Hollerbach, 1985), thus predicting constant SR values for all movement directions (Jerk prediction in Figure 1D). In contrast, the Smooth-Effort model minimizes a hybrid cost that, in addition to the Jerk, takes the external dynamics into account to minimize the muscular force needed to move the arm (absolute work of muscular torque). Thus, by design, the Smooth-Effort model implements the effort optimization strategy, whereby the brain uses the gravity internal model to predict and take advantage of gravity torques in accelerating and decelerating downward and upward movements, respectively (Berret et al., 2008a, 2008b; Gaveau et al., 2011, 2014). The effort optimization hypothesis predicts a sigmoidal dependence of SR on movement direction (Smooth-Effort prediction in Figure 1D). Critically, increasing the weight of movement smoothness (Jerk) in the Smooth-Effort hybrid cost, leads to a progressive disappearance of the gravity-torque related tuning of arm kinematics (Figure 1\u2014figure supplement 2). Accordingly, the compensation hypothesis predicts that movement kinematics remains unchanged for various gravity torque conditions (Jerk prediction in Figure 1E), whilst the effort optimization hypothesis predicts that movement kinematics strongly correlates (average R\u00a0=\u00a00.99 [min: 0.986, max: 0.994], p<1e-07) with the amount of gravity torque engaged in the motion (Smooth-Effort prediction in Figure 1E). Importantly, the SR dependence on movement direction (i.e., on gravity torque) is a unique feature of effort-related optimization as minimizing other cost functions that take joint torques into account, but are not directly related to effort, such as the Variance (Harris and Wolpert, 1998) or Torque Change (Uno et al., 1989), predict constant SR as a function of arm movement direction (Figure 1F; see also Figure 1\u2014figure supplement 3 for additional simulations testing the effect of including muscle dynamics into the minimization of end-point Variance). In fact, minimization of an effort-related cost is a necessary and sufficient condition to predict directional asymmetries in the vertical plane (Berret et al., 2008a, 2008b).\n\nParticipants accomplished rapid arm movements with single-peaked velocity profiles. Average duration did not vary with movement direction (0.40s \u00b1 0.01, SD; F16,224=0.67, p=0.82). Because arm movements were visually guided, systematic and variable errors were small and independent of movement direction (-2.5\u00b0< SE < 2\u00b0; VE < 2.5\u00b0; F16,224=1.13, p=0.32 and F16,224=1.02, p=0.44, respectively). As illustrated in Figure 2A, SR shows a sigmoidal modulation as a function of movement direction (F16,224=28.36, p<0.001). The robustness of this result is illustrated in Figure 2B, which shows sigmoidal fits for individual subjects (average RMSE = 9.77e-03 [min: 4.5e-03, max: 1.53e-02]). When SR was regressed against gravity torque, correlation coefficients were high, averaging R\u00a0=\u00a00.84 [min: 0.67, max: 0.92], p=2.5e-05 (Figure 2C). Furthermore, SR was independent of movement duration and movement amplitude (average correlation coefficient for duration R\u00a0=\u00a00.22 [min: 0.04, max: 0.57], p=0.41, see Figure 2\u2014figure supplement 1A; for amplitude R\u00a0=\u00a00.29 [min: 0.02, max: 0.69], p=0.26, see Figure 2\u2014figure supplement 1B). Thus, arm kinematics is selectively modulated according to the gravity torque requirements of the movement, as predicted by the Smooth-Effort model and quantified by high correlation coefficients between predicted and experimental SR values (average R\u00a0=\u00a00.82 [min: 0.61, max: 0.91], p=5.6e-05; compare Figure 1D and E to Figure 2A and C, respectively). These findings support the effort optimization hypothesis, whereby the brain implements control policies that exploit gravity effects to minimize muscular efforts.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig2-v2.jpg)\n\n**Figure 2.:** (A) Experimentally recorded symmetry ratio, averaged across all subjects, is plotted as a function of movement direction. Similarly to the effort optimization hypothesis prediction (see panels D in Figure 1), experimental symmetry ratio is well fitted by a sigmoidal function (black curve). Error bars illustrate SD. (B) Fits of a sigmoid function to symmetry ratio as a function of movement direction for data from individual subjects. (C) Symmetry ratio as a function of Work of Gravity Torque (WGT). Each data point represents the mean of 12 trials for one subject moving in one direction (n\u00a0=\u00a0255; 3060 trials total). It is noticeable that, similarly to the effort optimization hypothesis prediction (Figure 1E), arm kinematics (symmetry ratio) linearly correlates with gravity torque.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each data point represents the mean of 12 trials for one subject in one direction (n\u00a0=\u00a0255 in each plot; 3060 trials total). (A) Symmetry ratio as a function of movement duration. (B) Symmetry ratio as a function of movement amplitude. These two plots reveal that the symmetry ratio was independent of movement duration (individual correlation coefficients averaged R\u00a0=\u00a00.22 [min: 0.04, max: 0.57], p=0.41) and amplitude (on average R\u00a0=\u00a00.29 [min: 0.02, max: 0.69], p=0.26); therefore ensuring that the modulation of arm kinematics observed in Figure 2 truly reflects gravity torque effects.\n\nAlthough undeniably supportive, interpretation of these results is complicated by direction-dependent properties of the peripheral neuromuscular system (Enoka, 1996; Cotel et al., 2009; Wilson et al., 2015). As a further test, exploitation of microgravity environments (e.g., during the zero-G phase of parabolic flight) offers a powerful tool to interrogate neural vs. peripheral origins of the directional asymmetries. This is because during the repeated transitions to zero-G, gravity torque is temporarily eliminated. According to the effort optimization hypothesis, kinematic asymmetries should gradually but systematically decrease to zero, because a progressive re-optimization neural process should take place gradually over multiple zero-G transitions (McIntyre et al., 2001; Izawa et al., 2008; Snaterse et al., 2011). In contrast, a peripheral origin of kinematic asymmetries leads to different predictions. Specifically, if directional asymmetries originate from flexor/extensor motoneuron properties, SR should not change during the zero-G phase of parabolic flight (Ishihara et al., 1996, 2002; Cotel et al., 2009; for a review see Nagatomo et al., 2014; Wilson et al., 2015). Else, if directional asymmetries originate from force production properties, SR asymmetries should be eliminated instantly, not gradually, in 0g (Enoka, 1996). A second experiment was designed to test these predictions.\n\nEleven participants performed fast and visually guided single-degree of freedom arm reaching movements in two directions (toward the head and toward the feet, Figure 3A), in zero-G conditions during 5 parabolas (P1-P5) of a flight where centrifugal manoeuvers allow cancellation of gravity effects in the plane\u2019s frame of reference. Arm movements were planar with comparable systematic and variable errors for different gravity and direction conditions (shoulder abduction-adduction and internal/external rotation < 3.1\u00b0; -3\u00b0< SE < 3.3\u00b0; VE < 3.4\u00b0; gravity effect on SE, p=0.12 and VE, p=0.27; direction effect on SE, p=0.41 and VE, p=0.35). Velocity profiles were single-peaked in both one-G and zero-G conditions and average movement durations ranged between 0.40s and 0.54s (on average, 0.45\u00b10.13s), without any statistical difference between gravity conditions (F5,50=1.274, p=0.29) and movement direction (F1,10=0.549, p=0.48).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig3-v2.jpg)\n\n**Figure 3.:** (A) Participants\u2019 initial position and positioning of the 3 targets in the sagittal plane. Eleven participants performed fast and visually guided mono-articular arm movements (shoulder rotations) in the sagittal plane under normal gravity (one-G) and micro-gravity conditions (zero-G) during a parabolic flight (parabola 1, P1 to parabola 5, P5). (B) Symmetry ratios (acceleration time / movement time) predicted by the Minimum Smooth-Effort model in one-G and in zero-G conditions. (C) Symmetry ratios experimentally recorded before (1g) and during adaptation to zero-G (P1 to P5). (D) Mean velocity profiles, normalized in amplitude and duration. Qualitative comparisons between upward and downward arm movements illustrate the progressive decrease of directional asymmetries when subjects adapted to the new microgravity environment. (E) Vertical bars represent the average symmetry ratio (black vertical axis, left) for the recorded (black filled bars) and simulated (black open bars) data in one-G and during zero-G (P1 to P5) environments. For simulated data, the g value was fitted (\u22122*G<g<2*G) in order to best predict the measured symmetry ratios. These fitted g values, represented by the green dots (green vertical axis, right), reveal a progressive decrease of the g internal model value during zero-G exposure. Error bars illustrate SD and color-coded arrows denote movement direction (red = up; blue = down). See also Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16394/elife-16394-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Because two subjects were successively tested during each parabolic flight, the second subject to be tested had therefore already been submitted to microgravity during the test period of the first subject. To reduce sensorimotor adaptation before the experiment was performed for the second subject, we restrained this subject on the ground and prevented him from moving his body limbs. Our rationale was that preventing motor interaction with the various unwanted gravito-inertial force fields would reduce sensorimotor adaptation. Vertical bars represent the directional difference (Down-Up) between average symmetry ratios for subjects who performed the experiment first (black filled bars) and those who performed the experiment second (black open bars) in one-G and during zero-G (P1 to P5) environments. Subjects in both groups exhibited similar behavior (Kruskal-Wallis ANOVA: H1,11<2.13 and p>0.14 in all cases); i.e. directional asymmetry was present during the first parabola and then progressively disappeared.\n\nFigure 3B shows the SR values predicted from the Smooth-Effort model for upward (red) and downward (blue) arm movements, both in one-G and zero-G environments. Optimization to the zero-G environment no longer predicts direction-dependent differences in velocity profiles, as was the case in one-G. In line with the effort optimization hypothesis, which predicts gradual adaptation to the zero-G environment, SR slowly converged towards the new direction-independent optimal value in zero-G (Figure 3C; gravity condition and movement direction interaction effect, F5,50=10.54, p<0.001). Importantly, directional asymmetries persisted early in zero-G (p=4.8e-05 for P1 and p=1.09e-03 for P2). This indicates that, during initial exposure to zero-G, the brain still uses the internal model of the one-G environment to plan arm movements.\n\nHowever, directional asymmetries progressively disappeared in the following parabolas, suggesting a gradual re-optimization of motor commands through sensorimotor adaptation to the zero-G environment (post-hoc, p=0.34 for P3, p=0.92 for P4, and p=0.99 for P5). The corresponding average velocity profiles qualitatively illustrate the increase in acceleration/deceleration symmetry (Figure 3D). For the sake of clarity, these experimental findings are replotted as SR Down - SR Up in Figure 3E (black bars). To quantitatively validate the hypothesis of a gradual re-optimization of motor commands, we fitted this directional difference with the Smooth-Effort model (white bars in Figure 3E) by letting the internal model of gravity, g, being a free parameter (-2*G<g<2*G). The progressive decrease in g (internal model of gravity; green dots in Figure 3E) shows that the progressive change in arm kinematic asymmetries can be well explained as a recalibration of the gravity internal model used for optimal motor planning based on the effort optimization (minimization) model (McIntyre et al., 2001; Izawa et al., 2008; Snaterse et al., 2011).\n\n## Discussion\n\nIt is broadly believed that the brain develops and uses internal models of the sensor and effector dynamics, as well as physical laws of motion, to optimally interact with the external environment (Shadmehr and Mussa-Ivaldi, 1994; Conditt et al., 1997; Gribble and Ostry, 1999; Wolpert and Ghahramani, 2000; Pigeon et al., 2003; Todorov, 2004; Ahmed et al., 2008; Scott, 2012). Having evolved in the Earth\u2019s gravitational environment, our brains have thus acquired an internal model of gravity (Angelaki et al., 1999, 2004; Indovina et al., 2005; Miller\u00a02008). Here, we have conducted two critical experiments and showed that the brain takes advantage of this internal model to implement control policies that minimize movement effort under gravito-inertial constraints.\n\nFirst, we have shown that humans use versatile temporal trajectories that are linearly tuned to the gravity torque requirements of the task. Simulations of a Smooth-Effort model, which minimizes a hybrid cost composed of the absolute work of muscular forces (mechanical energy expenditure) and jerk (inverse smoothness of the trajectory) can predict not only differences in upward/downward arm movements, but also the linear modulation of endpoint kinematics according to the gravity torque requirements of the movement. Because the smoothness term of the Smooth-Effort model corresponds to the Jerk, the Smooth-Effort model can be considered an expansion of the minimum Jerk requirement to include how task dynamics shapes movement kinematics. Yet, inclusion of an effort-related cost is a necessary and sufficient condition to predict directional asymmetries in the vertical plane (Berret et al., 2008a, 2008b). Furthermore, minimizing other torque-related cost functions failed to predict direction-dependent kinematics (Figure 1F). The present results therefore strongly support effort minimization in humans, further extending the growing idea that perceived effort plays an important role in the tailoring of human motor as well as non-motor behaviors (Bramble and Lieberman, 2004; Walton et al., 2006; Mazzoni et al., 2007; Carrier et al., 2011; Kurzban et al., 2013; Selinger et al., 2015; Farshchiansadegh et al., 2016; Shadmehr et al., 2016).\n\nSecond, we have also shown that the direction-dependent kinematics observed in normal gravity progressively vanishes during repeated exposure to a microgravity environment. Remarkably, Smooth-Effort model simulations nicely predict this adaptation to zero-G. Results of this second experiment are of major importance to disentangle peripheral and neural mechanisms for direction-dependent kinematics. This is because, if the observed direction-dependent kinematics were due to properties of the neuromuscular system, either an abrupt change or no change at all would be expected in the new gravity environment (Enoka, 1996; Ishihara et al., 1996, 2002;\u00a0Cotel et al., 2009; Nagatomo et al., 2014; Wilson et al., 2015). The fact that neither happens reveals a central mechanism.\n\nFurthermore, the fact that the observed progressive changes in kinematic asymmetries lead to new optimal values clearly supports the hypothesis of a progressive re-optimization procedure originating from planning processes (Izawa et al., 2008; Snaterse et al., 2011; Selinger et al., 2015). The present findings on arm movements extend and supplement the recent results of Selinger and collaborators on human walking (Selinger et al., 2015), suggesting that i) the brain can easily and progressively adapt motor patterns to reduce energy expenditure and ii) energy-related criteria (such as effort) are not only the result of, but actually tailor, motor patterns.\n\nThe present results and conclusions stand in contrast to a broad view that the brain uses internal models of perturbing forces for their compensation such that stereotypic trajectories can be maintained (Hollerbach and Flash, 1982; Atkeson and Hollerbach, 1985; Shadmehr and Mussa-Ivaldi, 1994). Although very influential, such a compensation hypothesis has been challenged by results of studies that quantified velocity profiles and revealed that the temporal organization of arm kinematics shows a small, yet consistent, dependence on movement direction, speed and load (Papaxanthis et al., 1998b; Gaveau et al., 2011, 2014). Furthermore, findings inconsistent with the compensation hypothesis have been largely ignored. For example, Virji-Babul et al. (1994) reported regression slopes of SR over movement amplitude that significantly differed between upward and downward movements (see Figure 2C in Virji-Babul et al., 1994). Also, the consistent observation of negative periods on the phasic activation of arm muscles, resulting from the subtraction of the hypothesized gravity-compensatory activity from the full muscle activation (Flanders et al., 1996), suggest that muscular activity does not compensate gravity torque (Gaveau et al., 2013).\n\nLuckily, the application of the optimal control theory to the study of biological movement has given better insights into old phenomena. For example, recent studies, which framed motor adaptation as a process of re-optimization (Izawa et al., 2008; Crevecoeur et al., 2009; Gaveau et al., 2011; Cluff and Scott, 2015), have reported subtly altered trajectories \u2013 by contrast to the traditional compensation view that assumes invariant trajectories. Thus, newly constructed/calibrated internal models may serve trajectory optimization rather than external force compensation. The present results provide further support for this notion and demonstrate the propensity of the motor system for multiple control policies (i.e., trajectories) whose temporal organization shows small, but systematic, differences, such as to allow minimization of motor effort in our daily living ubiquitous gravity environment.\n\nAlthough we have only used simple, mono-articular arm movements in the present experiments, our conclusions are generalizable. Specifically, directional asymmetries in the vertical plane (upwards versus downwards) have also been observed in multi-articular arm reaching, reaching to grasp, grasping, hand drawing, and whole-body sit-to-stand / stand-to-sit movements (Papaxanthis et al., 1998c, 2003, 2005; Yamamoto and Kushiro, 2014). Thus, we propose that the directional tuning of movement kinematics is a general feature of motor control that may reflect an evolutionary and/or developmental advantage for effort optimization in the Earth\u2019s gravity field (Bramble and Lieberman, 2004; Carrier et al., 2011; Selinger et al., 2015).\n\nFinally, it is important to speculate that the Smooth-Effort model pioneered here should not be considered solely an extension of the minimum jerk optimization model, which was proposed for planar horizontal movements that are unaffected by gravity (Flash and Hogan, 1985), to now include optimization of work against gravity for vertical movements. Even for movements in the horizontal plane, because the effort component of the cost function in the Smooth-Effort model is torque-dependent, the predictions of the Smooth-Effort model will change with the torque requirements of the movement. The minimum Jerk model predictions, however, will remain constant. Therefore, if interaction torques (for multi-degree of freedom arm movements) or additional external torques (produced by a robotic manipulandum for example) are experienced in the horizontal plane, the Smooth-Effort and Jerk model predictions would be different. Future experiments should test whether the need for optimization of work is limited to vertical movements pro or against gravity or, as we propose, represent a more general principle of motor control.\n\n## Materials and methods\n\nTwenty-six right-handed healthy adults participated in these experiments (Experiment 1: 4\u2640 / 11\u2642, mean age = 24\u00b13.2 years; Experiment 2: 2\u2640 / 9\u2642, mean age = 27\u00b14.1 years). All gave their written informed consent. Right hand preference was evaluated by the Edinburg test (individual scores > 0.86; Oldfield, 1971). The regional ethics committee of Burgundy (C.E.R) approved the protocol of Experiment 1 and the ethics committee of INSERM (Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale) approved the protocol of Experiment 2. All procedures were carried out in agreement with local requirements and international norms (Declaration of Helsinki, 1964).\n\n### Experiment 1\n\nParticipants comfortably sat on a chair with their trunk in the vertical position (Figure 1A). All trials started from a fixed initial position: shoulder elevation 90\u00b0, shoulder abduction 0\u00b0, elbow joint fully-extended, hand semi-pronated and aligned with the upper arm and the forearm. From that initial position, participants carried out rapid, visually guided, single degree of freedom arm movements (rotation around the shoulder, 45\u00b0 amplitude) towards 17 targets (plastic markers, diameter 1\u00a0cm) placed in the right sagittal-frontal space. Note that results from previous experimental and theoretical studies have demonstrated that directional asymmetries in the vertical plane do not originate from the existence of inertial interaction torques at the elbow and wrist joints (Le Seac'h and McIntyre, 2007; Gaveau et al., 2014). Figure 1A depicts the projection of targets' position onto the frontal plane. The inter-target angles are described in Figure 1\u2014figure supplement 1C (Plane angles). All targets were centered on the participants\u2019 right shoulder at a distance equal to the length of their fully-extended arm. Reaching movements required a combination of shoulder abduction and shoulder flexion or extension. Participants performed 204 trials in a random order (12 trials for each movement direction, total trials in the experiment = 3060).\n\n### Experiment 2\n\nThis experiment took place in an aircraft during parabolic flight. Participants comfortably sat on the aircraft\u2019s floor with their legs strapped and their trunk in the vertical position (Figure 3A). The general organization of the task was exactly as described in previous studies (Gaveau et al., 2011, 2014). Briefly, 3 targets were centered on the participants\u2019 right shoulder (parasagittal plane) at a distance equal to the length of their fully extended arm. Participants were requested to perform fast visually guided upward and downward arm reaching movements (45\u00b0 shoulder rotation). Participants first performed arm movements in normal gravity during the flight (before parabolic maneuvers started, 40 trials for each movement direction) and then in microgravity during 5 parabolas (\u224875 trials, \u224815 trials per parabola). During the parabolic flight and based on pilots\u2019 instructions about the gravity force level, the experimenter verbally instructed participants when to start a block of reaching movements and when to stop. This was important to ensure that movements started and finished within zero-G conditions; i.e., participants made no movement in one-G or two-G conditions during or between parabolic manoeuvers. At the beginning of a block of movements within a parabola, participants repetitively reached between the middle, the upward, and the downward targets as follows: middle-upward (stopped for roughly 1\u00a0s), upward-middle (pause 1\u00a0s), middle-downward (pause 1\u00a0s), downward-middle (pause 1\u00a0s) and so on for approximately 15 trials. As initial position did not influence adaptation results across parabolas, movements with different initial positions were pooled together within each direction. The experiments were carried out during 4 different flights. Each flight was composed of thirty parabolas, each parabola consisting of three successive phases: (i) hypergravity ~ 1.8\u00a0g, (ii) microgravity ~ 0\u00a0g, and (iii) hypergravity again ~ 1.8\u00a0g. Each of those three phases lasted ~30\u2009s and the parabolas were separated by a time interval of ~ 2\u2009min. The whole flight lasted ~ 2\u2009hr. Here we present the results of an experiment performed during 5 parabolas for each participant. After this experiment, participants carried out a different experiment from which the results are not presented here.\n\nTwo participants were tested on each flight. Therefore, to reduce motor adaptation to zero-G before the experiment took place, participants who did not perform the experiment during the first five parabolas were restrained on the aircraft floor so as to prevent any motion. Similar results were observed for participants who did the experiment at the beginning or at the end of the flight (see Figure 3\u2014figure supplement 1).\n\n### Data recording, analysis and modeling\n\nAll analyses were performed using custom programs in Matlab (Matworks, Natick, MA) and have been described in details in previous studies (Gaveau et al., 2011, 2014). Arm movements in both Experiments were recorded using an optoelectronic system of motion analysis (Smart, B.T.S., Italy) with 4 TV-cameras (120\u00a0Hz). Five reflective markers (diameter: 4\u2009mm) were placed on the shoulder (acromion), elbow (lateral epicondyle), wrist (middle of the wrist), hand (first metacarpo-phalangeal joint), and the nail of the index. Kinematics was recorded in three dimensions (X, Y and Z) and low-pass filtered (10\u00a0Hz) using a digital fifth-order Butterworth filter. The start and end of each movement was defined as the time at which finger tangential velocity went above or fell below 5% of maximum velocity. An automatic inspection of all trials revealed that shoulder angular velocity profiles were single-peaked and presented no motion (<3\u00b0) from any other joint. Following this analysis, we calculated the subsequent kinematic parameters: (i) movement duration (MD), (ii) constant and variable angular final error and (iii) symmetry ratio (SR) of the finger velocity profile, defined as the ratio of acceleration time to total movement time (a ratio equal to 0.5 indicates temporally symmetric velocity profiles). In the present study, we used SR to quantify kinematic variations with movement direction. SR is a standard parameter that has been routinely used in numerous studies, therefore ensuring an easy comparison of the present result with past ones.\n\nWe calculated the gravity torque (GT) normal to the plane of motion with the following formula:\n\n$$\nGT=mglcos\\thetasin\\gamma\n$$\n\nwhere $m$ is the mass of the arm (estimated for each subject from anthropometric tables, Winter, 1990), $g$\u00a0= 9.81\u2009m.s-2, $l$ is the lever arm length (Winter, 1990), $\\theta$\u00a0is the movement amplitude (0\u00b0 to 45\u00b0) and $\\gamma$ is the plane of motion inclination with respect to horizontal. The geometrical illustration of the mechanical system along with details on how to derive Equation 1 are displayed in Figure 1\u2014figure supplement 1.\n\nIn Experiment 1 we report the Work of Gravity Torque calculated as follows:\n\n$$\nWGT=\u00a0\\int045(GT)d\\theta\n$$\n\nPositive values indicate that WGT has the same direction as arm motion, whilst negative values indicate that WGT direction is opposite to arm motion direction (see Figure 1\u2014figure supplement 1).\n\nIn Experiment 1, we also performed iterative least square minimizations to fit a sigmoid function on simulated as well as experimentally recorded SR. This was performed using the \u201cnlinfit\u201d Matlab function (Mathworks)\u00a0and Equation 3:\n\n$$\nF=p_{1}+\u00a0p_{2}/(1+exp(\\frac{\u2212x+p_{3}}{p_{4}}))\n$$\n\nwhere $p_{1}\u00a0to\u00a0p_{4}$ are free parameters and $x$ is the angular scale. The goodness of fit was assessed by the Root-Mean-Square Error (RMSE), which is essentially equivalent to Standard Deviation and has the same units as the variable being fitted.\n\n### Simulations\n\nWe predicted SR using an optimal control framework based on the Minimum Smooth-Effort model (Gaveau et al., 2014). More sophisticated versions of the model focusing on multi-degree of freedom arm movements have been described in previous publications (Berret et al., 2008a, 2008b; Gaveau et al., 2011).\n\nEquation 4 describes the equation of motion for a single degree of freedom limb movement, with amplitude angle\u00a0$\u00a0(\\theta)$, plane of motion inclination with respect to horizontal $(\\gamma)$, moment of inertia ($I$), viscous friction coefficient $B=0.87$ (as in Nakano et al., 1999) and gravitational torque $GT(\\theta,\\gamma)$. The net muscle torque acting at the shoulder is obtained as follows:\n\n$$\n\\tau=I\\theta\u00a8+B\\theta\u02d9+GT(\\theta,\\gamma)\n$$\n\nThe Minimum Smooth-Effort model minimizes a combination of Effort and Smoothness. The mechanical effort related to a movement, i.e., the amount of muscular force spent to move the arm, can be computed as the absolute work of the muscle torque:\n\n$$\nC_{effort}=\\int0T|\\tau\\theta\u02d9|\u00a0dt\n$$\n\nThe rationale of this effort term is that the desired trajectory must take advantage of non-muscular torques \u2013 gravity torque in the present experiment \u2013 in order to minimize the amount of muscular torque required to move the arm up to the final posture.\n\nIt has been shown that considering effort expenditure alone usually fails to account for several features of human trajectories, such as motion smoothness (Berret et al., 2011a, 2011b). Consequently, we considered that a complementary objective of motor planning was to maximize motion smoothness. This was achieved by penalizing large angle jerks. Thus an additional term that enters into the minimization is:\n\n$$\nC_{smooth}=\\int0T(d\\theta\u00a8/dt)^{2}dt\n$$\n\nThe Smooth-Effort model then relies on the following composite cost function:\n\n$$\nC=C_{effort}+\\alphaC_{smooth}\n$$\n\nwhere $\\alpha$ is a weighting factor normalizing the relative magnitude of the jerk term in the total cost function. For all simulations, but Figure 1\u2014figure supplement 2, we set $\\alpha=7e\u22125$. Figure 1\u2014figure supplement 2 presents simulations where $\\alpha$ was systematically varied to test the relative roles of both the effort and smoothness parts of the cost function in predicting direction dependent kinematics (i.e., the linear correlation of SR with the Work of Gravity Torque; WGT, see Figure 1E). Note that minimizing some function $f(x)=b*g(x)+c*h(x)$\u00a0will provide the same solution x as minimizing $f(x)/d=b/d*g(x)+c/d*h(x)$ for any d>0. Hence, we normalized our cost function by setting b=d, thereby assuming a unit coefficient in front of one component of the cost.\n\nFor a given $\\alpha$, the optimal control problem consists of finding a vector (here the time derivative of the muscle torque) driving the system from an initial $(\\theta_{0})$ to a final static posture $(\\theta_{f})$, in time $T$ (adjusted for each subject based on experimental data), and yielding a minimum cost value $C$. We solved the minimization numerically using a Gauss pseudospectral method and the software GPOPS (Benson et al., 2006; Garg et al., 2009; Rao et al., 2010). We verified that the control variable was smooth, the boundary values were not reached and the Pontryagin\u2019s maximum principle necessary conditions (such as the constancy of the Hamiltonian) met. Predicted SR values were determined based on the simulated velocity profiles, as described above for experimental data.\n\nWe also derived the solution of the Minimum Smooth-Effort model for a constant gravitational torque and obtained very similar results to those presented in the main text. This means that asymmetries are not totally due to GT variations along the movement amplitude but to the presence of non-zero GT. The linearized case for similar models has been analyzed in depth in Berret et al. (2008a); where the solution of the Minimum Smooth-Effort model was derived explicitly and the origin of asymmetries in such a model was mathematically demonstrated \u2013 minimizing an effort-related cost is a necessary and sufficient condition for the production of a brief transient muscle inactivation near the peak of velocity which in turn induces the observed kinematic asymmetries with respect to movement direction.\n\nIn Figure 1 we also present the results of simulations performed with three influential alternative models: the Minimum Jerk, the Minimum Torque Change and the Minimum Variance (Flash and Hogan, 1985; Uno et al., 1989; Harris and Wolpert, 1998). Predicted SR values corresponding to the minimization of each subjective cost were obtained using the following equations and the same optimal control framework as described for the Minimum Smooth-Effort model.\n\nThe cost to minimize for the Jerk model was:\n\n$$\nCj=\\int0T(d\\theta\u00a8/dt)^{2}dt\n$$\n\nAs we deal with a 1-dof arm, this model accounts for both the angular and Cartesian versions of the Minimum Jerk (which indeed provide equivalent predictions in the current case). Note that the smoothness term of the Smooth-Effort model corresponds to the minimum Jerk. The Smooth-Effort model thus represents an important and non-trivial extension of the minimum Jerk model, which also accounts for how task dynamics shapes movement kinematics. Because the effort part of our model is torque dependent, the prediction of the Smooth-Effort model will change with the torque requirement of the movement whilst the minimum Jerk prediction will not. Therefore, if interaction torques (for multi-degree of freedom arm movements) or additional external torques (produced by a robotic manipulandum for example) are experienced in the horizontal plane, the minimum Smooth-Effort and the minimum Jerk would predict very different solutions.\n\nThe cost to minimize for the Torque Change model (Uno et al., 1989) was:\n\n$$\nC\\tau=\u00a0\\int0T\u00a0(\\frac{d\\tau}{dt})^{2}dt\u00a0\u00a0\n$$\n\nSimulations of the Minimum Torque change model for horizontal single degree of freedom arm movements performed under various dynamics by Tanaka et al. (2004) reported that the Minimum Torque Change model predicts velocity profiles that are always symmetrical, in line with Figure 1F. The Minimum Torque Change model in the gravity field has also been investigated in depth in (Berret, 2009).\n\nWe also derived the solutions of the Minimum Variance model in the gravity field (Harris and Wolpert, 1998). We first linearized the arm\u2019s dynamics (Equation 4) in order to compute the optimal solution according to the method presented in Harris and Wolpert (1998) and Tanaka et al. (2004). Here:\n\n$$\nmglcos\\theta\u2248mglcos\\theta_{0}=k\n$$\n\nEquation 10 formalizes that a constant gravitational torque is pushing the moving segment downwards. Note that such linearized case for similar models has been extensively used by previous studies (Harris and Wolpert, 1998; Tanaka et al., 2004; Berret et al., 2008a).\n\nWe considered the discrete time version of the Minimum Variance optimal control problem. Denoting by $x=(\\theta,\\theta\u02d9,\\tau)^{T}$\u00a0the state vector and by $u=\\tau\u02d9$ the control variable, the linear state-space dynamics for the Minimum Variance model was expressed as follows:\n\n$$\nx_{t+1}=Ax_{t}+B(u_{t}+w_{t})+C\n$$\n\nwhere $w_{t}~N(0,\\sigmau_{t}^{2})$ is the signal dependent (multiplicative) noise at time $t$ ($\\sigma=0.2$ in all simulations) and $C=(0,\u2212k/I,0)^{T}\u0394t$ with $\u0394t$ the time step size after discretization ($\u0394t=10ms$ in our simulations).\n\nWe obtained the solution to the optimal control problem by iteratively computing the distribution of the state vector at time $t$:\n\n$$\nE[x_{t}]=A^{t}x_{0}+\\sumi=0t\u22121A^{t\u22121\u2212i}(Bu_{i}+C)\n$$\n\n\n\n$$\ncov[x_{t}]=\u00a0\\sigma\\sumi=0t\u22121(A^{t\u22121\u2212i}B)(A^{t\u22121\u2212i}B)^{T}u_{i}^{2}\n$$\n\nThe positional variance of the endpoint at time t (denoted by $V_{t}$) is thus given by the element $(1,1)$ of the matrix $cov[x_{t}]$ (Equation 13). We can then define a quadratic programming problem by defining a cost related to the endpoint positional variance as follows:\n\n$$\nC_{var}(u_{0},u_{1},\u2026,u_{T+R})=\\sumt=T+1T+RV_{t}\n$$\n\nwhere $R>1$ is an integer defining the post-movement stabilization time, $T$ is the a priori chosen movement time (counting only the transient phase). In our simulations, we considered $R=T$. Because noise accumulates through time, $C_{var}$ is indeed a function of the control variable during the transient period of the motion. This minimization problem was solved using Matlab's fmincon function (sqp algorithm).\n\nFor the sake of completeness, we also derived the minimum variance solution when modeling some basic muscle dynamics, as performed by previous studies (Harris and Wolpert, 1998; Tanaka et al., 2004). In agreement with previous results from Tanaka et al. (2004); we obtained similar results to those presented in the main text (Figure 1F), as illustrated in Figure 1\u2014figure supplement 3. In that case, the state vector becomes $x=(\\theta,\\theta\u02d9,a_{ag},a_{ant})^{T}$, the control variable becomes $u=\u00a0(u_{ag},u_{ant})^{T}$ and the muscles are modeled as first order low-pass filters. The equations for the associated dynamics are as follows:\n\n$$\n\\tau_{ag}\u2212\\tau_{ant}=I\\theta\u00a8+B\\theta\u02d9+GT(\\theta,\\gamma)\n$$\n\n\n\n$$\n\\tau_{ag}\u2212\\tau_{ant}=\u03c1(a_{ag}\u2212a_{ant})\n$$\n\n\n\n$$\n\\sigmaa\u02d9_{ag}=u_{ag}\u2212a_{ag}\n$$\n\n\n\n$$\n\\sigmaa\u02d9_{ant}=u_{ant}\u2212a_{ant}\n$$\n\nEquation 15 describes the equation of motion for a single degree of freedom limb movement, with amplitude angle$\u00a0(\\theta)$, plane of motion inclination with respect to horizontal $(\\gamma)$, moment of inertia ($I$), viscous friction coefficient $B=0.87$ (Nakano et al., 1999) and gravitational torque $GT(\\theta,\\gamma)$. In Equation 16, the constant $\u03c1$ is a gain factor relating agonist and antagonist muscle activations to joint torques. Equations 17 and 18 describe the muscle dynamics as a first order low-pass filter. The control variable is the motoneurons inputs $u_{ag}$ and $u_{ant}$ with the constraint: $(u_{ag},a_{ant})\u00a0\u03f5\u00a0[0,1]^{2}$. This implies the positivity of muscle activations and, therefore, muscle torque. The net torque is simply obtained by subtracting the agonist and antagonist torques.\n\n### Statistical analyses\n\nFor each participant, we calculated mean values for all recorded variables and checked for normal distribution (Shapiro-Wilk tests) and sphericity (Mauchly tests). In Experiment 1, statistical effects were accessed by within-subjects one-way repeated-measures ANOVA (factor: 17 angles). In Experiment 2, statistical comparisons were carried out by within-subjects two-way repeated-measures ANOVA. The factors were direction (2 levels) and gravity-conditions (six levels: 1g and 5 parabolas in 0g). For all statistical analyses, post-hoc differences were assessed with Scheff\u00e9's tests and significance was accepted at p<0.05.\n",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8a3e724c-2720-426e-8006-01f699effed0",
+      "submission_id": "853005f7-db16-429e-b6c7-e3dc24eb603f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eve Marder, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16394.014](https://doi.org/10.7554/eLife.16394.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Direction-dependent arm kinematics reveal optimal integration of gravity cues\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Eve Marder as the Senior Editor. We apologize for the delay in coming to a decision, but it took a while for the reviews to come in, and then the editor and reviewers went through a fairly protracted consultation process to arrive at a decision. Basically, the reviewers all found the topic interesting and important, and felt that your work had a lot to contribute. At the same time, they felt that you have gone too far to claim its novelty and haven't pushed the analyses as far as might be suitable and useful. All of the reviewers agree that a substantial revision is warranted. The comments during the consultation session largely reiterated the comments in the reviews, so I am taking the unusual tack of forwarding the initial reviews, lightly edited, to you, and asking you to do the most thoughtful revision that addresses the substantive issues that the reviewers raised. This will probably require some additional data analysis and rewriting to do more justice to the models and accomplishments already in the literature.\n\nReviewer #1:\n\nThe goal of the present experiment was to settle the long-lasting debate of how the gravitational constraint is integrated in movement control. More specifically, the authors tested whether the motor system attempts to overcome the gravitational force (compensation hypothesis) or rather exploits this passive force to control movement (optimization hypothesis). To disentangle between both hypotheses, the authors analyzed the kinematics of movements performed by human participants in different directions on Earth with predictions made by a mathematical model built on the basis of the optimal control framework. Furthermore, the authors had the unique opportunity to test these hypotheses by asking participants to perform similar movements in absence of gravitational constraint (microgravity), i.e. during parabolic flights. The results of both experiments (normogravity and microgravity) and the comparisons of real and simulated movements in both environments clearly supported the optimization hypothesis.\n\nThis study continues the series of nice papers published by the authors on the effects of gravitoinertial constraints on sensorimotor processes. It addresses an important issue related to the integration of gravity during motor actions and provides significant advance over previous studies. However, the paper could be easily improved with some changes.\n\nThe problem is that other published papers, some of them referenced in the manuscript, provided convincing evidence in favor of the compensation hypothesis. Unfortunately, the authors do not provide explanations as to why the earlier evidence for the compensation hypothesis is less convincing than theirs. They kind of \"kicked the ball into touch\" by simply stating that \"advent of the optimal control theory has cast strong doubts on this more traditional view of motor control\". This was done perhaps on a voluntary basis because critics, even those that lead to progress, are not always welcome. However, because the goal of the study was \"to explicitly distinguish between the compensation and optimization hypotheses\", the discussion should be more explicit about problems regarding the compensation hypothesis. Despite the very nice results, without such a discussion, the impact of the present paper will be dampened.\n\nThe writing style would benefit from smoothing. Currently, there are too many long sentences, many of them are interrupted by long lists of references that sometimes interfere with understanding.\n\nReviewer #2:\n\nThe authors provide interesting evidence of gravitational influence on human single-joint movements. The directional dependence on the ground, and acquired loss of dependence in repeated parabolic flight, is substantive and novel. This work has implication for how the brain can ordinarily (on the ground) and flexibly (via parabolic flight) be influenced by gravity.\n\nThe particular analytical, theoretical, and hypotheses offered, however, have several under-developed and contradictory elements that cause great concern. The chief concern, with regard to the overall hypothesis, regards the sureness that these results confirm a \"Minimum Smooth Effort\" model. The authors choose to cite papers that develop the model in full, rather than doing so here; that is a great disadvantage, as the reader cannot even consider the actual hypothesis suggested. What is suggested throughout is that \"effort\" is dominated by forces (here, gravity) (e.g. \"The behavioral signature of the optimal integration of gravity hypothesis\u2026\") The equations offered, however, show that jerk, a purely kinematic measure, is included in the authors' model. The sensitivity analysis, shown only in the discussion, is very incomplete, as it explores the calculated cost only on one side of the chosen coefficient. My best conclusion is that the jerk inclusion is crucial, and even the most generous reading of the work concludes with a synthesis, that both kinematics and dynamics are important in the present behavior.\n\nSeveral other elements of the analysis, modeling, and interpretation are of concern.\n\n\u2013 The presented smooth effort model includes separate terms for torques generated by agonists and antagonists. The authors have no way to measure these; they measure only kinematics; undoubtedly on the ground, and absolutely in flight, there will be co-contraction. The central variables in their model, therefore, are unmeasurable.\n\n\u2013 The absolute flat lines calculated from minimum torque change and minimum variance hypotheses (Figure 1F) is highly questionable. Similar work (indeed the origin of these theories) suggest that load should play an important role. Much more detail on the calculation of these cost functions is needed to justify this very counter-intuitive result. The minimum variance model, in particular, needs a level of neural activation (drive) that seems complete absent from the present consideration.\n\n\u2013 Passengers that are strapped in the flight clearly have cues that gravity is very strong, absent, and strong again. The notion that strapping will lead to no information before movement is vexing. Similarly, the notion that hypergravity for the not-strapped-down has no learning effect is unusual.\n\n\u2013 The authors provide scant information on how they calculated just the biomechanics of the task. Meaningful quantitative consideration of kinematics versus dynamics requires more information here.\n\nOn the whole, the authors have shown that in a vertical plane, target direction, on the ground, plays a role in human trajectory control; that in early flights, an asymmetry in velocity profiles exist; and in later flights, that asymmetry disappears. All these point to a simple conclusion: the dynamics of gravity can be used by the brain to influence trajectory. All further conclusions made by the manuscript have under-developed evidence, and therefore provide very unclear impact on the field of motor control and neural computation.\n\nReviewer #3:\n\nGeneral Assessment\n\nThis manuscript presents new data and computational analysis supporting the hypothesis that the motor system generates arm movements to satisfy a tradeoff between optimizing smooth kinematics and control effort. The issue of what is being optimized in motor control has been attracting considerable attention through the last decades and no final resolution has been reached to date. Model predictions tend to be consistent with data within specific domains and in some ways this may not be an exception. The authors are considering the impact of gravity in the formation of arm trajectories and they frame the issue in the dichotomy between compensation and exploitation of gravitational torques in the generation of movement. To investigate how the motor system may take advantage of gravity in an optimal control approach, the authors consider a cost function expressing a tradeoff of effort and smoothness terms. They test the model in normal gravity and in microgravity and find evidence for a slow adaptive response when subjects perform repeated movements in the absence of gravity. The key metric considered in this work is the symmetry ratio (SR) expressing the temporal symmetry of acceleration and deceleration phases of simple reaching movements. The authors show that the symmetry ratio (as a function of movement direction and of gravitational work) follows a sigmoidal trend both in the model and in the experiments. Most importantly, the trend is gradually abolished when movements are carried out at zero-g. This is important, in my opinion, because it is not consistent with the possibility that the observed trend in normal gravity is due to an imperfect controller, attempting to implement a kinematic plan with a poor model of the gravitational field. The manuscript is well written, the comparison of the data with the model is done carefully and the conclusion that the data are supporting the idea that the motor controller exploits gravity to shape movement kinematics is convincing.\n\nSubstantive concerns\n\n1) Small effect in a limited domain of motor behavior. The effect considered is a relatively subtle asymmetry in the speed profile that is consistent with exploiting the gravitational torque in the upward and downward phase of movement. While the data are consistent with the postulated cost function, the argument about the evolutionary advantage does not seem to match the small size of the described effect. Perhaps the effect on higher dimensional motions would be more substantial.\n\n2) The model does not refute the minimum jerk optimization but it combines it with the optimization of work against gravity. The smoothness model was proposed for planar horizontal movements that are unaffected by gravity. In this respect the model of Gaveau and colleagues does not seem an \"alternative\" to the minimum jerk model but an extension to cases in which gravity also comes into play. In a similar vein, I found not quite convincing and a bit artificial the suggested contrast between internal models and optimal control. In fact, internal models can be considered in the framework of optimal control, since they enable to predict the consequences of motor commands (forward models) and to form different optimal solutions of ill-posed inverse problems. What the authors consider as kinematics compensations (i.e. the formation of minimum jerk or minimum torque change trajectories) should not be described as alternative to optimization since they are also forms of optimization.\n\n3)The alternative between \"compensation\" and \"optimization\" is not clear as compensation is often described (or describable) as optimization.\n\n4)\"SR dependence on movement direction (i.e., on gravity torque) is a unique feature of effort related optimization.\" Is there a proof for this? Could some similar dependence result from different coordinate representation (as for example min-jerk expressed in angular coordinates)?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Direction-dependent arm kinematics reveal optimal integration of gravity cues\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior editor), a Reviewing editor, and three reviewers. We are sorry for the delay in returning this to you, but your manuscript has engendered a lot of discussion among the reviewers (meaning of course that they care about the work!).\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed. I am giving you the reviews in full, so you can see the issues that are being raised by the reviewers:\n\nReviewer #1:\n\nThe authors have significantly improved the manuscript, and I am satisfied with the revision.\n\nReviewer #2:\n\nThe authors have adequately addressed several concerns. The manuscript now more completely specifies the present smooth effort model, which makes the whole argument easier to understand. The additional modeling results, including demonstration of their torque change model generating varying symmetry ratios under varying duration and load, is heartening.\n\nAt this point there are two competing considerations for the manuscript as a whole.\n\n1) The connection between theory and experiment in Figures 1E and 2C do suggest that \"effort\" likely plays a role in movement asymmetry. The gradual reduction of this asymmetry in parabolic flight does suggest that different environmental conditions lead to alteration of neural control. On the whole, then, this does forward the field and provide interesting insight.\n\n2) Several concerns remain. Even with the additional exploration of their own implementation of the torque change model, the absolute flatness of model results in Figure 1F seems unrealistic. The authors could make a much more compelling case: they could replot the y-axis data (experimental symmetric ratio) versus calculated torque change. If this experimental result is just as flat at 1F, that would be convincing. If not, then the authors need to reconsider the uniqueness of their model at explaining the result.\n\nThe reconsideration of the minimum variance model is far more concerning. Equation 10 removes any angular dependence from gravity. This step seems to prevent any meaningful outcome from their exploration of how angle influences control.\n\nOne comment from another reviewer has resonated with me. There is an alternate interpretation to early movements in parabolic flight, in which asymmetries mimic those on the ground. The reviewer rightly points out that actually experienced dynamics are very different, so the replication of asymmetry in kinematics is very odd. At the very least, this is evidence that actually-experienced gravity (or lack thereof) does not meaningfully influence control, and that the whole interpretation here is questionable. (It is a very curious result, at least).\n\nTaking the clear with the unclear, I do think that the overall results forward the field, although I do have ongoing concerns with the models and math, as presently implemented.\n\nReviewer #3:\n\nThe authors have addressed several of the concerns in the revised manuscript, resulting in an improvement of the final product. The main element of novelty and interest of this work remains the demonstration \u2013 through the 0 g experiment \u2013 that the asymmetry in the kinematics of vertical reaching reflect a process of adaptation to the gravitational field. The effect is small, but I agree with the authors that this relatively small and specific effect is likely to reflect a general evolutionary (but also ontogenetic) process that rewards the ability of an organism to take advantage of the characteristics of its environment.\n\nMy major concerns remain with the attempt to overgeneralize this findings and suggest that it disproves what the authors call \"compensation hypothesis\" in a broader sense. This sounds a bit like a political argument, where one takes the sides of a dynamical optimization against geometrical optimization. The fact is that the literature has shown evidence of both in different contexts. A case in point can be found in a recent study by Farshchansadegh and colleagues (PLoS Computational Biology 2016) who found evidence for both dynamic ad kinematic optimization under the same mechanical conditions, depending upon the agreement between visual and haptic feedback. That said, I am normally convinced that the essential value of a manuscript should be based on the results, not on how the authors want to organize the discussion. Broad speculations about the findings are a matter of choice and intellectual freedom of the authors. However, one should avoid statements that are inaccurate, such as the suggestion that \"the compensation hypothesis has critically lacked quantitative support.\" Perhaps this statement could only be justified by the fact that most researchers proposing that there are geometrical constraints in shaping the planning of multi articular reaching movements have not referred to this ide as \"the compensation hypothesis\".\n",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "767f3fef-762e-4dd6-91e5-2adf19ba5f56",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C1",
+      "claim": "The brain has evolved an internal model of gravity to cope with life in the Earth's gravitational environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The brain has evolved an internal model of gravity to cope with life in the Earth's gravitational environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that is supported by citations throughout the manuscript to prior work establishing internal models of gravity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "d7cb4e9c-a2e6-418c-b578-d0560e5bed83",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C2",
+      "claim": "The brain uses the internal model to implement control policies that take advantage of gravity to minimize movement effort.",
+      "claim_type": "EXPLICIT",
+      "source": "we show that the brain uses the internal model to implement control policies that take advantage of gravity to minimize movement effort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract and supported by experimental data comparing arm kinematics in normal and zero-G conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "5d822192-72ea-4fa1-b530-db9a71c2ea10",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C3",
+      "claim": "A neural representation of gravity is created and stored through an internal model.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, a neural representation of gravity is created and stored through an internal model (Papaxanthis et al., 1998a; Angelaki et al., 1999; Merfeld et al., 1999; McIntyre et al., 2001; Angelaki et al., 2004; Indovina et al., 2005; Miller et al., 2008; Crevecoeur et al., 2009; Gaveau and Papaxanthis, 2011; Laurens et al., 2013a, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research establishing the existence of internal models of gravity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "56481496-82d5-49a1-91f0-75009fef541f",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C4",
+      "claim": "Einstein's equivalence principle prevents any single sensory receptor from encoding gravity without simultaneously also encoding inertial accelerations.",
+      "claim_type": "EXPLICIT",
+      "source": "The need for an internal model of gravity arises because Einstein's equivalence principle prevents any single sensory receptor from encoding gravity without simultaneously also encoding inertial accelerations (Einstein, 1908).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established physics principles (Einstein's equivalence principle) and is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "5afa58bb-685d-4242-a476-59800be6d3bd",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C5",
+      "claim": "The neural representation of gravity is thought to solve the ambiguity between gravity and inertial accelerations by multisensory statistical inference.",
+      "claim_type": "EXPLICIT",
+      "source": "The neural representation of gravity is thought to solve this ambiguity by multisensory statistical inference (Angelaki et al., 1999; Merfeld et al., 1999; Angelaki et al., 2004; Laurens et al., 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research on multisensory integration for gravity perception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "6c0045d0-9f3d-45ba-a459-a0e041e64d99",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C6",
+      "claim": "An internal model of gravity has been shown to benefit the anticipation of a free falling object motion.",
+      "claim_type": "EXPLICIT",
+      "source": "An internal model of gravity has been shown to benefit the anticipation of a free falling object motion (Zago and Lacquaniti, 2005; Zago et al., 2008; Lacquaniti et al., 2013), as well as the visual perception of allocentric vertical (Van Pelt et al., 2005; De Vrijer et al., 2008; Elmore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3cc49f7c-5256-4261-9d07-ce613eacf877",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C7",
+      "claim": "An internal model of gravity has been shown to benefit the visual perception of allocentric vertical.",
+      "claim_type": "EXPLICIT",
+      "source": "An internal model of gravity has been shown to benefit the anticipation of a free falling object motion (Zago and Lacquaniti, 2005; Zago et al., 2008; Lacquaniti et al., 2013), as well as the visual perception of allocentric vertical (Van Pelt et al., 2005; De Vrijer et al., 2008; Elmore et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "758cc3cc-56a3-41bf-887f-5275cc209c0d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C8",
+      "claim": "The compensation hypothesis assumes the internal model of gravity is used to predict and compensate for its mechanical effects on the body.",
+      "claim_type": "EXPLICIT",
+      "source": "One influential viewpoint assumes a need for compensation; i.e., the internal model of gravity is used to predict and compensate for its mechanical effects on the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of one hypothesis being tested, supported by citations to prior work on force field adaptation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "6056317f-02cd-498a-8d68-3cb1af22e988",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C9",
+      "claim": "The compensation hypothesis has been motivated by experimental findings on arm movements in the presence of externally applied Coriolis, viscous force fields and interaction torques.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis has been motivated by experimental findings on arm movements in the presence of externally applied Coriolis, viscous force fields and interaction torques (Shadmehr and Mussa-Ivaldi, 1994; Gribble and Ostry, 1999; Pigeon et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "293589d1-be2d-492b-a705-47a11ca21bd5",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C10",
+      "claim": "The main benefit of a compensation strategy would be the simplification of motor planning by allowing for invariant trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "The main benefit of a compensation strategy would be the simplification of motor planning by allowing for invariant trajectories (Hollerbach and Flash, 1982; Atkeson and Hollerbach, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "7b529513-5cf1-4bfa-990e-0c5a48f22d8d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C11",
+      "claim": "The effort optimization hypothesis proposes that the internal model of gravity could be used to predict and take advantage of its mechanical effects on the body.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative perspective is based on a need for effort optimization, i.e., the internal model of gravity could be used to predict and take advantage of its mechanical effects on the body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the alternative hypothesis being tested.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "db285ef5-1668-4eb0-8436-4971a1940416",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C12",
+      "claim": "Adaptation to the Earth's gravity field has allowed control policies to evolve that take advantage of environmental dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that adaptation to the Earth's gravity field has allowed control policies to evolve that take advantage of environmental dynamics \u2013 use gravity as an assistive force to accelerate downward movements and as a resistive force to decelerate upward movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal that is being tested in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "cb2e3a25-b155-482f-830c-4d63f5d6544b",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C13",
+      "claim": "The effort optimization strategy has been formalized into a Minimum Smooth-Effort model.",
+      "claim_type": "EXPLICIT",
+      "source": "This strategy, which has been formalized into a Minimum Smooth-Effort model, would result in movement kinematics that varies with direction (Berret et al., 2008a; Gaveau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work developing the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c110c9da-a8ff-47d1-8d57-961a3e56ff8e",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C14",
+      "claim": "Upward movements were shown to have shorter time to peak velocity and larger curvature than downward movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upward movements were shown to have shorter time to peak velocity and larger curvature than downward movements, but such comparisons were until now largely qualitative (Papaxanthis et al., 1998b; Gentili et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "439ae739-366b-4f99-8d61-1363e5bba669",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C15",
+      "claim": "The firing properties of extensor motoneurons obey different rules from those of flexor motoneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the firing properties of extensor motoneurons (pulling the arm downwards when upright) are known to obey different rules from those of flexor motoneurons (pulling upwards when uptight; Cotel et al., 2009; Wilson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on motoneuron properties.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "70bb368b-5560-4522-8271-947483d29d8f",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C16",
+      "claim": "Muscle force production generated by eccentric contraction obeys differing rules from concentric contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, muscle force production generated by eccentric contraction (elongation, e.g. downward movements for flexors) is also known to obey differing rules from concentric contraction (e.g. upward movement for flexors; for a review see Enoka, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "e6457a81-a83c-4513-b6d1-f4af11159abb",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C17",
+      "claim": "If directional asymmetries originate from asymmetric firing of flexor/extensor motoneurons, they should persist in the absence of gravity because motoneurons properties are not expected to change during the short zero-G phase of a parabolic flight.",
+      "claim_type": "EXPLICIT",
+      "source": "If directional asymmetries originate from asymmetric firing of flexor/extensor motoneurons, they should persist in the absence of gravity because motoneurons properties are not expected to change during the short zero-G phase of a parabolic flight (Ishihara et al., 1996, 2002; for a review see Nagatomo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on prior knowledge about motoneuron properties, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "88ac73da-17ec-4884-8efa-f6310ad86855",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C18",
+      "claim": "If directional asymmetries originate from eccentric versus concentric force production differences, directional asymmetries should cease to exist instantly in 0g because movement dynamics no longer differ for upward and downward movements.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, if they originate from eccentric versus concentric force production differences, directional asymmetries should cease to exist instantly in 0g because movement dynamics no longer differ for upward and downward movements (Enoka, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on prior knowledge about muscle force production, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "873c4f66-23a2-435e-b5ef-f9f2ec09671c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C19",
+      "claim": "If directional asymmetries originate from neural planning processes that take advantage of the internal model of gravity, following a gradual recalibration of the gravity internal model, directional asymmetries should progressively decrease towards new optimal zero-G values.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, however, if directional asymmetries originate from neural planning processes that take advantage of the internal model of gravity, following a gradual recalibration of the gravity internal model, directional asymmetries should progressively decrease towards new optimal zero-G values (McIntyre et al., 2001; Izawa et al., 2008; Snaterse et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on prior work on sensorimotor adaptation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "6fd8a7af-45b5-460b-b502-47f9c7bc1ef9",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C20",
+      "claim": "Directional asymmetries are gradually eliminated during repeated exposure to the zero-G phase of parabolic flight.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the effort optimization hypothesis, we show that directional asymmetries are gradually eliminated during repeated exposure to the zero-G phase of parabolic flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study, supported by experimental data from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c60af11a-ce3d-4b3c-8f29-956729671b77",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C21",
+      "claim": "Fifteen humans performed arm movements around the shoulder joint in different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked fifteen humans to perform arm movements around the shoulder joint in different directions (Figure 1A), whereby the work of gravity torque is systematically varied (Figure 1B), while other dynamic variables (interaction torques, Coriolis and centripetal forces) are constant (see Figure 1\u2014figure supplement 1 for a geometrical illustration of the mechanical system and details on gravity torque computations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "83dbc4c6-fce8-419a-855d-dd4288b9aacc",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C22",
+      "claim": "The work of gravity torque is systematically varied across different movement directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked fifteen humans to perform arm movements around the shoulder joint in different directions (Figure 1A), whereby the work of gravity torque is systematically varied (Figure 1B), while other dynamic variables (interaction torques, Coriolis and centripetal forces) are constant (see Figure 1\u2014figure supplement 1 for a geometrical illustration of the mechanical system and details on gravity torque computations).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the experimental design and illustrated in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "56a5a3f8-e2ed-418b-8f8b-cc9a395cf282",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C23",
+      "claim": "Other dynamic variables (interaction torques, Coriolis and centripetal forces) are constant across movement directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked fifteen humans to perform arm movements around the shoulder joint in different directions (Figure 1A), whereby the work of gravity torque is systematically varied (Figure 1B), while other dynamic variables (interaction torques, Coriolis and centripetal forces) are constant (see Figure 1\u2014figure supplement 1 for a geometrical illustration of the mechanical system and details on gravity torque computations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a feature of the experimental design using single-degree of freedom movements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "913da255-a231-4c55-9fe0-c70350587242",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C24",
+      "claim": "Symmetry ratio (SR) corresponds to the relative timing of peak velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "As a measure of the shape of the velocity profile, we define a symmetry ratio (SR: acceleration time divided by the total movement time). SR corresponds to the relative timing of peak velocity (as in Figure 1C) and thus allows quantifying whether arm kinematics remains invariant (compensation hypothesis prediction) or changes (effort optimization hypothesis prediction) with movement direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the kinematic measure used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "1f53c82b-03c2-487f-8c26-ba7f1d6273fc",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C25",
+      "claim": "The compensation hypothesis predicts that movement kinematics remains unchanged for various gravity torque conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the compensation hypothesis predicts that movement kinematics remains unchanged for various gravity torque conditions (Jerk prediction in Figure 1E), whilst the effort optimization hypothesis predicts that movement kinematics strongly correlates (average R = 0.99 [min: 0.986, max: 0.994], p<1e-07) with the amount of gravity torque engaged in the motion (Smooth-Effort prediction in Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the Minimum Jerk model simulations, illustrated in Figure 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "94e51ed2-9f64-4f91-929d-d3903394eda5",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C26",
+      "claim": "The effort optimization hypothesis predicts that movement kinematics strongly correlates with the amount of gravity torque engaged in the motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the compensation hypothesis predicts that movement kinematics remains unchanged for various gravity torque conditions (Jerk prediction in Figure 1E), whilst the effort optimization hypothesis predicts that movement kinematics strongly correlates (average R = 0.99 [min: 0.986, max: 0.994], p<1e-07) with the amount of gravity torque engaged in the motion (Smooth-Effort prediction in Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the Minimum Smooth-Effort model simulations, illustrated in Figure 1E, with high correlation coefficients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "1128363f-7167-4834-bec4-43bf23ee146a",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C27",
+      "claim": "The SR dependence on movement direction is a unique feature of effort-related optimization.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the SR dependence on movement direction (i.e., on gravity torque) is a unique feature of effort-related optimization as minimizing other cost functions that take joint torques into account, but are not directly related to effort, such as the Variance (Harris and Wolpert, 1998) or Torque Change (Uno et al., 1989), predict constant SR as a function of arm movement direction (Figure 1F; see also Figure 1\u2014figure supplement 3 for additional simulations testing the effect of including muscle dynamics into the minimization of end-point Variance).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by model simulations comparing different cost functions, illustrated in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8a2251d6-e024-4c09-aac3-d340821aa86e",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C28",
+      "claim": "Minimization of an effort-related cost is a necessary and sufficient condition to predict directional asymmetries in the vertical plane.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, minimization of an effort-related cost is a necessary and sufficient condition to predict directional asymmetries in the vertical plane (Berret et al., 2008a, 2008b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "9de0d4b7-d29b-48f2-8f7d-57dfb3b98d38",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C29",
+      "claim": "Participants accomplished rapid arm movements with single-peaked velocity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Participants accomplished rapid arm movements with single-peaked velocity profiles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "bc435824-a060-432b-bbff-cc9bdf965f5e",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C30",
+      "claim": "Average movement duration did not vary with movement direction (0.40s \u00b1 0.01, SD; F16,224=0.67, p=0.82).",
+      "claim_type": "EXPLICIT",
+      "source": "Average duration did not vary with movement direction (0.40s \u00b1 0.01, SD; F16,224=0.67, p=0.82).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "ea037c1d-7979-4327-b145-4f0e7af22946",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C31",
+      "claim": "Systematic and variable errors were small and independent of movement direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because arm movements were visually guided, systematic and variable errors were small and independent of movement direction (-2.5\u00b0< SE < 2\u00b0; VE < 2.5\u00b0; F16,224=1.13, p=0.32 and F16,224=1.02, p=0.44, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data in Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "ddca0fcd-28b0-48dd-bc54-10fde09a1d1f",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C32",
+      "claim": "SR shows a sigmoidal modulation as a function of movement direction (F16,224=28.36, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 2A, SR shows a sigmoidal modulation as a function of movement direction (F16,224=28.36, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a main finding from Experiment 1, supported by statistical analysis and illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "5435f8a9-51ef-4dff-9dbc-6552b44e858d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C33",
+      "claim": "When SR was regressed against gravity torque, correlation coefficients were high, averaging R = 0.84 [min: 0.67, max: 0.92], p=2.5e-05.",
+      "claim_type": "EXPLICIT",
+      "source": "When SR was regressed against gravity torque, correlation coefficients were high, averaging R = 0.84 [min: 0.67, max: 0.92], p=2.5e-05 (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a main finding from Experiment 1, supported by statistical analysis and illustrated in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "21608c73-3295-4c39-8a96-3a5f67c08a2a",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C34",
+      "claim": "SR was independent of movement duration (average correlation coefficient for duration R = 0.22 [min: 0.04, max: 0.57], p=0.41).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SR was independent of movement duration and movement amplitude (average correlation coefficient for duration R = 0.22 [min: 0.04, max: 0.57], p=0.41, see Figure 2\u2014figure supplement 1A; for amplitude R = 0.29 [min: 0.02, max: 0.69], p=0.26, see Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from Experiment 1, illustrated in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "389f04a1-b1c5-4133-b890-3d9af5f88049",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C35",
+      "claim": "SR was independent of movement amplitude (R = 0.29 [min: 0.02, max: 0.69], p=0.26).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, SR was independent of movement duration and movement amplitude (average correlation coefficient for duration R = 0.22 [min: 0.04, max: 0.57], p=0.41, see Figure 2\u2014figure supplement 1A; for amplitude R = 0.29 [min: 0.02, max: 0.69], p=0.26, see Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from Experiment 1, illustrated in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "7c06b159-4d2b-439a-a553-abfb366f39f5",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C36",
+      "claim": "Arm kinematics is selectively modulated according to the gravity torque requirements of the movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, arm kinematics is selectively modulated according to the gravity torque requirements of the movement, as predicted by the Smooth-Effort model and quantified by high correlation coefficients between predicted and experimental SR values (average R = 0.82 [min: 0.61, max: 0.91], p=5.6e-05; compare Figure 1D and E to Figure 2A and C, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and model predictions in Experiment 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "6dc84e43-72d0-456a-87c8-ea50912193fb",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C37",
+      "claim": "High correlation coefficients exist between predicted and experimental SR values (average R = 0.82 [min: 0.61, max: 0.91], p=5.6e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, arm kinematics is selectively modulated according to the gravity torque requirements of the movement, as predicted by the Smooth-Effort model and quantified by high correlation coefficients between predicted and experimental SR values (average R = 0.82 [min: 0.61, max: 0.91], p=5.6e-05; compare Figure 1D and E to Figure 2A and C, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result comparing model predictions to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8174875a-fcab-4d49-a872-5b3114f72047",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C38",
+      "claim": "Eleven participants performed fast and visually guided single-degree of freedom arm reaching movements in two directions during 5 parabolas in zero-G conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Eleven participants performed fast and visually guided single-degree of freedom arm reaching movements in two directions (toward the head and toward the feet, Figure 3A), in zero-G conditions during 5 parabolas (P1-P5) of a flight where centrifugal manoeuvers allow cancellation of gravity effects in the plane's frame of reference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design of Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c81701e7-2cc3-4cd8-a936-8f2d23b02bc2",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C39",
+      "claim": "Arm movements were planar with comparable systematic and variable errors for different gravity and direction conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Arm movements were planar with comparable systematic and variable errors for different gravity and direction conditions (shoulder abduction-adduction and internal/external rotation < 3.1\u00b0; -3\u00b0< SE < 3.3\u00b0; VE < 3.4\u00b0; gravity effect on SE, p=0.12 and VE, p=0.27; direction effect on SE, p=0.41 and VE, p=0.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "15d80231-1e28-4ad0-aea1-c959ab755635",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C40",
+      "claim": "Velocity profiles were single-peaked in both one-G and zero-G conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Velocity profiles were single-peaked in both one-G and zero-G conditions and average movement durations ranged between 0.40s and 0.54s (on average, 0.45\u00b10.13s), without any statistical difference between gravity conditions (F5,50=1.274, p=0.29) and movement direction (F1,10=0.549, p=0.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "f809ee6b-6929-4fdc-8efe-b20f82cc252f",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C41",
+      "claim": "Average movement durations ranged between 0.40s and 0.54s without any statistical difference between gravity conditions (F5,50=1.274, p=0.29) and movement direction (F1,10=0.549, p=0.48).",
+      "claim_type": "EXPLICIT",
+      "source": "Velocity profiles were single-peaked in both one-G and zero-G conditions and average movement durations ranged between 0.40s and 0.54s (on average, 0.45\u00b10.13s), without any statistical difference between gravity conditions (F5,50=1.274, p=0.29) and movement direction (F1,10=0.549, p=0.48).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data in Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "d1da389d-7ce7-446c-9bf2-478effbf69b5",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C42",
+      "claim": "Optimization to the zero-G environment no longer predicts direction-dependent differences in velocity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3B shows the SR values predicted from the Smooth-Effort model for upward (red) and downward (blue) arm movements, both in one-G and zero-G environments. Optimization to the zero-G environment no longer predicts direction-dependent differences in velocity profiles, as was the case in one-G.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the Smooth-Effort model simulations for zero-G, illustrated in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "b1f2b96a-3719-4ba5-be83-6070c204fb69",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C43",
+      "claim": "SR slowly converged towards the new direction-independent optimal value in zero-G (gravity condition and movement direction interaction effect, F5,50=10.54, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the effort optimization hypothesis, which predicts gradual adaptation to the zero-G environment, SR slowly converged towards the new direction-independent optimal value in zero-G (Figure 3C; gravity condition and movement direction interaction effect, F5,50=10.54, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a main finding from Experiment 2, supported by statistical analysis and illustrated in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "f663be55-f6a0-4867-aa74-a9f514c575d0",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C44",
+      "claim": "Directional asymmetries persisted early in zero-G (p=4.8e-05 for P1 and p=1.09e-03 for P2).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, directional asymmetries persisted early in zero-G (p=4.8e-05 for P1 and p=1.09e-03 for P2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "a3052b34-5e10-47c6-a7ad-aa167bdead61",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C45",
+      "claim": "During initial exposure to zero-G, the brain still uses the internal model of the one-G environment to plan arm movements.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that, during initial exposure to zero-G, the brain still uses the internal model of the one-G environment to plan arm movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the persistence of directional asymmetries in early zero-G parabolas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "465fac3b-4f14-402c-a171-01469a674ffe",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C46",
+      "claim": "Directional asymmetries progressively disappeared in the following parabolas (post-hoc, p=0.34 for P3, p=0.92 for P4, and p=0.99 for P5).",
+      "claim_type": "EXPLICIT",
+      "source": "However, directional asymmetries progressively disappeared in the following parabolas, suggesting a gradual re-optimization of motor commands through sensorimotor adaptation to the zero-G environment (post-hoc, p=0.34 for P3, p=0.92 for P4, and p=0.99 for P5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3ab33115-4126-4a6b-9c90-9df9f20d2477",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C47",
+      "claim": "The progressive disappearance of directional asymmetries suggests a gradual re-optimization of motor commands through sensorimotor adaptation to the zero-G environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, directional asymmetries progressively disappeared in the following parabolas, suggesting a gradual re-optimization of motor commands through sensorimotor adaptation to the zero-G environment (post-hoc, p=0.34 for P3, p=0.92 for P4, and p=0.99 for P5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data in Experiment 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "203d9c93-1ccc-4de3-885c-9a570e5671d7",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C48",
+      "claim": "The progressive change in arm kinematic asymmetries can be well explained as a recalibration of the gravity internal model used for optimal motor planning based on the effort optimization model.",
+      "claim_type": "EXPLICIT",
+      "source": "The progressive decrease in g (internal model of gravity; green dots in Figure 3E) shows that the progressive change in arm kinematic asymmetries can be well explained as a recalibration of the gravity internal model used for optimal motor planning based on the effort optimization (minimization) model (McIntyre et al., 2001; Izawa et al., 2008; Snaterse et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from fitting the Smooth-Effort model to the experimental data, illustrated in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "99d0eb45-af4f-4fce-8947-171a7006a624",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C49",
+      "claim": "The brain develops and uses internal models of the sensor and effector dynamics, as well as physical laws of motion, to optimally interact with the external environment.",
+      "claim_type": "EXPLICIT",
+      "source": "It is broadly believed that the brain develops and uses internal models of the sensor and effector dynamics, as well as physical laws of motion, to optimally interact with the external environment (Shadmehr and Mussa-Ivaldi, 1994; Conditt et al., 1997; Gribble and Ostry, 1999; Wolpert and Ghahramani, 2000; Pigeon et al., 2003; Todorov, 2004; Ahmed et al., 2008; Scott, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established theory in motor control, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "47fa5625-35ce-47fa-8e06-c8346b785076",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C50",
+      "claim": "Humans use versatile temporal trajectories that are linearly tuned to the gravity torque requirements of the task.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we have shown that humans use versatile temporal trajectories that are linearly tuned to the gravity torque requirements of the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "969d2687-71c7-4fbf-9aac-23d5ceaf4d50",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C51",
+      "claim": "Simulations of a Smooth-Effort model can predict not only differences in upward/downward arm movements, but also the linear modulation of endpoint kinematics according to the gravity torque requirements of the movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of a Smooth-Effort model, which minimizes a hybrid cost composed of the absolute work of muscular forces (mechanical energy expenditure) and jerk (inverse smoothness of the trajectory) can predict not only differences in upward/downward arm movements, but also the linear modulation of endpoint kinematics according to the gravity torque requirements of the movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model predictions that match experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3f40ecdd-dc20-4021-aa3a-bc5f7a355169",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C52",
+      "claim": "The Smooth-Effort model can be considered an expansion of the minimum Jerk requirement to include how task dynamics shapes movement kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the smoothness term of the Smooth-Effort model corresponds to the Jerk, the Smooth-Effort model can be considered an expansion of the minimum Jerk requirement to include how task dynamics shapes movement kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the relationship between the Smooth-Effort and Jerk models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "115169b0-d52b-4c7b-b418-21a98edc2019",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C53",
+      "claim": "The present results strongly support effort minimization in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results therefore strongly support effort minimization in humans, further extending the growing idea that perceived effort plays an important role in the tailoring of human motor as well as non-motor behaviors (Bramble and Lieberman, 2004; Walton et al., 2006; Mazzoni et al., 2007; Carrier et al., 2011; Kurzban et al., 2013; Selinger et al., 2015; Farshchiansadegh et al., 2016; Shadmehr et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results, supported by citations to related work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "09cbdcdd-d008-4855-bf7a-b313d8d68356",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C54",
+      "claim": "The direction-dependent kinematics observed in normal gravity progressively vanishes during repeated exposure to a microgravity environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we have also shown that the direction-dependent kinematics observed in normal gravity progressively vanishes during repeated exposure to a microgravity environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "d18f0a43-50bd-411d-af38-8ba6ba4baca8",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C55",
+      "claim": "Smooth-Effort model simulations nicely predict the adaptation to zero-G.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Smooth-Effort model simulations nicely predict this adaptation to zero-G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8e368eb3-ab06-4537-b695-552eb41f1467",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C56",
+      "claim": "If the observed direction-dependent kinematics were due to properties of the neuromuscular system, either an abrupt change or no change at all would be expected in the new gravity environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because, if the observed direction-dependent kinematics were due to properties of the neuromuscular system, either an abrupt change or no change at all would be expected in the new gravity environment (Enoka, 1996; Ishihara et al., 1996, 2002; Cotel et al., 2009; Nagatomo et al., 2014; Wilson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on prior knowledge about neuromuscular properties, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "e25cf768-8cd3-4288-9986-6b673b260eb2",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C57",
+      "claim": "The fact that neither an abrupt change nor no change happens reveals a central mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that neither happens reveals a central mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results in Experiment 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "987fbcdd-5c99-4684-8111-2d7186ebbb6d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C58",
+      "claim": "The observed progressive changes in kinematic asymmetries lead to new optimal values, clearly supporting the hypothesis of a progressive re-optimization procedure originating from planning processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the fact that the observed progressive changes in kinematic asymmetries lead to new optimal values clearly supports the hypothesis of a progressive re-optimization procedure originating from planning processes (Izawa et al., 2008; Snaterse et al., 2011; Selinger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results, supported by citations to related work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "1687a24b-834b-49fd-9821-285a40eeaf68",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C59",
+      "claim": "The present findings on arm movements extend and supplement the recent results of Selinger and collaborators on human walking.",
+      "claim_type": "EXPLICIT",
+      "source": "The present findings on arm movements extend and supplement the recent results of Selinger and collaborators on human walking (Selinger et al., 2015), suggesting that i) the brain can easily and progressively adapt motor patterns to reduce energy expenditure and ii) energy-related criteria (such as effort) are not only the result of, but actually tailor, motor patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to related work, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "5e61e183-6e5b-42ab-9634-03e02a38e4dc",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C60",
+      "claim": "The brain can easily and progressively adapt motor patterns to reduce energy expenditure.",
+      "claim_type": "EXPLICIT",
+      "source": "The present findings on arm movements extend and supplement the recent results of Selinger and collaborators on human walking (Selinger et al., 2015), suggesting that i) the brain can easily and progressively adapt motor patterns to reduce energy expenditure and ii) energy-related criteria (such as effort) are not only the result of, but actually tailor, motor patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and comparison to related work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "aef7fdf9-e27e-4f39-92db-9a5b20c4a4ee",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C61",
+      "claim": "Energy-related criteria (such as effort) are not only the result of, but actually tailor, motor patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The present findings on arm movements extend and supplement the recent results of Selinger and collaborators on human walking (Selinger et al., 2015), suggesting that i) the brain can easily and progressively adapt motor patterns to reduce energy expenditure and ii) energy-related criteria (such as effort) are not only the result of, but actually tailor, motor patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and comparison to related work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "60aeecdf-e98c-4abc-a141-20a7f443b564",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C62",
+      "claim": "The compensation hypothesis assumes that the brain uses internal models of perturbing forces for their compensation such that stereotypic trajectories can be maintained.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results and conclusions stand in contrast to a broad view that the brain uses internal models of perturbing forces for their compensation such that stereotypic trajectories can be maintained (Hollerbach and Flash, 1982; Atkeson and Hollerbach, 1985; Shadmehr and Mussa-Ivaldi, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the compensation hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "14565485-b4ea-47c8-814b-f8483d16f395",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C63",
+      "claim": "The compensation hypothesis has been challenged by results of studies that quantified velocity profiles and revealed that the temporal organization of arm kinematics shows a small, yet consistent, dependence on movement direction, speed and load.",
+      "claim_type": "EXPLICIT",
+      "source": "Although very influential, such a compensation hypothesis has been challenged by results of studies that quantified velocity profiles and revealed that the temporal organization of arm kinematics shows a small, yet consistent, dependence on movement direction, speed and load (Papaxanthis et al., 1998b; Gaveau et al., 2011, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work that challenged the compensation hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "98cab922-4971-4a03-a6b3-dde91c3410bc",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C64",
+      "claim": "Virji-Babul et al. (1994) reported regression slopes of SR over movement amplitude that significantly differed between upward and downward movements.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Virji-Babul et al. (1994) reported regression slopes of SR over movement amplitude that significantly differed between upward and downward movements (see Figure 2C in Virji-Babul et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work that found results inconsistent with the compensation hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "16579bba-4a48-450f-b17b-56d78cb7da57",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C65",
+      "claim": "The consistent observation of negative periods on the phasic activation of arm muscles suggests that muscular activity does not compensate gravity torque.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the consistent observation of negative periods on the phasic activation of arm muscles, resulting from the subtraction of the hypothesized gravity-compensatory activity from the full muscle activation (Flanders et al., 1996), suggest that muscular activity does not compensate gravity torque (Gaveau et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work that found results inconsistent with the compensation hypothesis, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "0a0c0aae-a949-4b58-9899-ebd5c420bcd3",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C66",
+      "claim": "Recent studies have framed motor adaptation as a process of re-optimization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, recent studies, which framed motor adaptation as a process of re-optimization (Izawa et al., 2008; Crevecoeur et al., 2009; Gaveau et al., 2011; Cluff and Scott, 2015), have reported subtly altered trajectories \u2013 by contrast to the traditional compensation view that assumes invariant trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about recent theoretical developments in motor control, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "452762fc-56d7-4121-b99a-b5432b716236",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C67",
+      "claim": "Newly constructed/calibrated internal models may serve trajectory optimization rather than external force compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, newly constructed/calibrated internal models may serve trajectory optimization rather than external force compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation based on recent work on motor adaptation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "4cf857f2-c739-456b-b844-89c11ec5adc1",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C68",
+      "claim": "The present results demonstrate the propensity of the motor system for multiple control policies whose temporal organization shows small, but systematic, differences, such as to allow minimization of motor effort in our daily living ubiquitous gravity environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The present results provide further support for this notion and demonstrate the propensity of the motor system for multiple control policies (i.e., trajectories) whose temporal organization shows small, but systematic, differences, such as to allow minimization of motor effort in our daily living ubiquitous gravity environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "d045ebc7-5445-4b1e-8034-f12215cc3fc7",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C69",
+      "claim": "Directional asymmetries in the vertical plane have been observed in multi-articular arm reaching, reaching to grasp, grasping, hand drawing, and whole-body sit-to-stand / stand-to-sit movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, directional asymmetries in the vertical plane (upwards versus downwards) have also been observed in multi-articular arm reaching, reaching to grasp, grasping, hand drawing, and whole-body sit-to-stand / stand-to-sit movements (Papaxanthis et al., 1998c, 2003, 2005; Yamamoto and Kushiro, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work showing directional asymmetries in various types of movements, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "cc963ae8-77ce-49ae-80bc-13b3b01c184f",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C70",
+      "claim": "The directional tuning of movement kinematics is a general feature of motor control that may reflect an evolutionary and/or developmental advantage for effort optimization in the Earth's gravity field.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the directional tuning of movement kinematics is a general feature of motor control that may reflect an evolutionary and/or developmental advantage for effort optimization in the Earth's gravity field (Bramble and Lieberman, 2004; Carrier et al., 2011; Selinger et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental results and comparison to related work, supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "15efdbcf-fac1-4ce6-a261-bbe6758aa417",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C71",
+      "claim": "If interaction torques or additional external torques are experienced in the horizontal plane, the Smooth-Effort and Jerk model predictions would be different.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if interaction torques (for multi-degree of freedom arm movements) or additional external torques (produced by a robotic manipulandum for example) are experienced in the horizontal plane, the Smooth-Effort and Jerk model predictions would be different.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about how the models would differ in different experimental conditions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "530afcaa-c24c-42ad-80d0-ee6e88616718",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C72",
+      "claim": "The need for optimization of work may represent a more general principle of motor control beyond vertical movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Future experiments should test whether the need for optimization of work is limited to vertical movements pro or against gravity or, as we propose, represent a more general principle of motor control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal for future research based on the current findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "7779c3b1-42c1-4077-a3ed-c3485c24f2f3",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C73",
+      "claim": "Twenty-six right-handed healthy adults participated in these experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-six right-handed healthy adults participated in these experiments (Experiment 1: 4\u2640 / 11\u2642, mean age = 24\u00b13.2 years; Experiment 2: 2\u2640 / 9\u2642, mean age = 27\u00b14.1 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participants in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "2535b102-9ae6-4869-994d-4da8cea29f5d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C74",
+      "claim": "All participants gave their written informed consent.",
+      "claim_type": "EXPLICIT",
+      "source": "All gave their written informed consent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical procedures of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "e98b1785-88d2-4607-b436-2bc8d13e009c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C75",
+      "claim": "Right hand preference was evaluated by the Edinburg test (individual scores > 0.86).",
+      "claim_type": "EXPLICIT",
+      "source": "Right hand preference was evaluated by the Edinburg test (individual scores > 0.86; Oldfield, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to assess handedness, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "1e50a553-83c8-43fb-877c-937597dd31b0",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C76",
+      "claim": "The regional ethics committee of Burgundy (C.E.R) approved the protocol of Experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "The regional ethics committee of Burgundy (C.E.R) approved the protocol of Experiment 1 and the ethics committee of INSERM (Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale) approved the protocol of Experiment 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "016f5c08-8f77-4b7d-88cf-19648a03ade9",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C77",
+      "claim": "The ethics committee of INSERM approved the protocol of Experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The regional ethics committee of Burgundy (C.E.R) approved the protocol of Experiment 1 and the ethics committee of INSERM (Institut National de la Sant\u00e9 et de la Recherche M\u00e9dicale) approved the protocol of Experiment 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "02a928b9-59f5-4e37-869d-32bcadf2213b",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C78",
+      "claim": "All procedures were carried out in agreement with local requirements and international norms (Declaration of Helsinki, 1964).",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were carried out in agreement with local requirements and international norms (Declaration of Helsinki, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical standards followed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "0fbdeb10-c4db-4f68-9281-94da163579ad",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C79",
+      "claim": "Participants performed 204 trials in a random order in Experiment 1 (12 trials for each movement direction, total trials in the experiment = 3060).",
+      "claim_type": "EXPLICIT",
+      "source": "Participants performed 204 trials in a random order (12 trials for each movement direction, total trials in the experiment = 3060).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of Experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "bc7162bc-14e2-49b0-8bd2-09e061aa4afd",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C80",
+      "claim": "The experiments in Experiment 2 were carried out during 4 different flights.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments were carried out during 4 different flights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of Experiment 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3584e5ff-7845-40bb-b46a-6c09ce757472",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C81",
+      "claim": "Each parabolic flight was composed of thirty parabolas.",
+      "claim_type": "EXPLICIT",
+      "source": "Each flight was composed of thirty parabolas, each parabola consisting of three successive phases: (i) hypergravity ~ 1.8 g, (ii) microgravity ~ 0 g, and (iii) hypergravity again ~ 1.8 g.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parabolic flight protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "0799970e-85c7-4659-9212-5a8f67ba1eaa",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C82",
+      "claim": "Each phase of a parabola lasted ~30 s and the parabolas were separated by a time interval of ~ 2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of those three phases lasted ~30 s and the parabolas were separated by a time interval of ~ 2 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parabolic flight protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "125c5077-fb46-42f7-a7e1-9d63a22eb2a7",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C83",
+      "claim": "The whole parabolic flight lasted ~ 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole flight lasted ~ 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parabolic flight protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "5b5847c9-97af-4712-9b4a-ecf8800e377b",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C84",
+      "claim": "Arm movements in both Experiments were recorded using an optoelectronic system of motion analysis (Smart, B.T.S., Italy) with 4 TV-cameras (120 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Arm movements in both Experiments were recorded using an optoelectronic system of motion analysis (Smart, B.T.S., Italy) with 4 TV-cameras (120 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data recording method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3f106fdf-5b93-457b-9b53-8e462e71078c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C85",
+      "claim": "Five reflective markers were placed on the shoulder (acromion), elbow (lateral epicondyle), wrist (middle of the wrist), hand (first metacarpo-phalangeal joint), and the nail of the index.",
+      "claim_type": "EXPLICIT",
+      "source": "Five reflective markers (diameter: 4 mm) were placed on the shoulder (acromion), elbow (lateral epicondyle), wrist (middle of the wrist), hand (first metacarpo-phalangeal joint), and the nail of the index.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data recording method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "f53d6e47-86e6-4a46-b2fc-5faf6e9e2918",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C86",
+      "claim": "Kinematics was recorded in three dimensions (X, Y and Z) and low-pass filtered (10 Hz) using a digital fifth-order Butterworth filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinematics was recorded in three dimensions (X, Y and Z) and low-pass filtered (10 Hz) using a digital fifth-order Butterworth filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3627de90-f268-42ca-bfd8-5925449e1a87",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C87",
+      "claim": "The start and end of each movement was defined as the time at which finger tangential velocity went above or fell below 5% of maximum velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "The start and end of each movement was defined as the time at which finger tangential velocity went above or fell below 5% of maximum velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "b05b22ee-1428-4f6f-b189-467c0d852cfb",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C88",
+      "claim": "An automatic inspection of all trials revealed that shoulder angular velocity profiles were single-peaked and presented no motion (<3\u00b0) from any other joint.",
+      "claim_type": "EXPLICIT",
+      "source": "An automatic inspection of all trials revealed that shoulder angular velocity profiles were single-peaked and presented no motion (<3\u00b0) from any other joint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the data analysis confirming the single-degree of freedom nature of the movements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c1d04cf8-9837-4258-89cc-2b9a1393db1d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C89",
+      "claim": "The Minimum Smooth-Effort model minimizes a combination of Effort and Smoothness.",
+      "claim_type": "EXPLICIT",
+      "source": "The Minimum Smooth-Effort model minimizes a combination of Effort and Smoothness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cost function of the Smooth-Effort model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "40a9eac7-c34c-4944-933b-82b78583dd40",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C90",
+      "claim": "The mechanical effort related to a movement can be computed as the absolute work of the muscle torque.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical effort related to a movement, i.e., the amount of muscular force spent to move the arm, can be computed as the absolute work of the muscle torque",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how effort is quantified in the Smooth-Effort model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "4a66ca24-0c23-433d-b4d7-4933fdf3c3cc",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C91",
+      "claim": "Considering effort expenditure alone usually fails to account for several features of human trajectories, such as motion smoothness.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that considering effort expenditure alone usually fails to account for several features of human trajectories, such as motion smoothness (Berret et al., 2011a, 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior work on motor control models, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "578f6b2d-786c-45c4-8ca6-05b790d342dd",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C92",
+      "claim": "The optimal control problem was solved numerically using a Gauss pseudospectral method and the software GPOPS.",
+      "claim_type": "EXPLICIT",
+      "source": "We solved the minimization numerically using a Gauss pseudospectral method and the software GPOPS (Benson et al., 2006; Garg et al., 2009; Rao et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for model simulations, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "446fb9f8-8eaf-4105-880e-dda2ef747f8c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C93",
+      "claim": "The solution of the Minimum Smooth-Effort model for a constant gravitational torque yielded very similar results to those presented in the main text.",
+      "claim_type": "EXPLICIT",
+      "source": "We also derived the solution of the Minimum Smooth-Effort model for a constant gravitational torque and obtained very similar results to those presented in the main text.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an additional analysis performed to test the robustness of the model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c789853b-a473-47ed-a5de-6fc2ffaf43d2",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C94",
+      "claim": "Asymmetries are not totally due to GT variations along the movement amplitude but to the presence of non-zero GT.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that asymmetries are not totally due to GT variations along the movement amplitude but to the presence of non-zero GT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the analysis of the linearized model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3998166d-6941-43d0-83d7-2098adff9612",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C95",
+      "claim": "The smoothness term of the Smooth-Effort model corresponds to the minimum Jerk.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the smoothness term of the Smooth-Effort model corresponds to the minimum Jerk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship between the Smooth-Effort and Jerk models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "6474fd9b-1625-4790-9b0f-c338724a7cf9",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C96",
+      "claim": "The Smooth-Effort model represents an important and non-trivial extension of the minimum Jerk model, which also accounts for how task dynamics shapes movement kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "The Smooth-Effort model thus represents an important and non-trivial extension of the minimum Jerk model, which also accounts for how task dynamics shapes movement kinematics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the Smooth-Effort model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "7952e98b-3e5a-4e30-917d-d509418c491c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "claim_id": "C97",
+      "claim": "The Minimum Torque Change model predicts velocity profiles that are always symmetrical for horizontal single degree of freedom arm movements performed under various dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of the Minimum Torque change model for horizontal single degree of freedom arm movements performed under various dynamics by Tanaka et al. (2004) reported that the Minimum Torque Change model predicts velocity profiles that are always symmetrical, in line with Figure 1F.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about prior work on the Minimum Torque Change model, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53297c98-ddf4-4626-9ff9-a684ad6531a8",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The brain has evolved an internal model of gravity that is created through multisensory statistical inference to resolve ambiguity between gravity and inertial accelerations, and this model benefits perception and anticipation of object motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3-C7 collectively establish prior work on internal models of gravity. These claims are well-supported by extensive citations to established literature and represent accepted knowledge in the field. The physics principle (C4) and multisensory integration mechanism (C5) provide theoretical grounding, while C6-C7 cite experimental evidence for functional benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "1f8356f5-0041-4181-8969-59cc5529f1a5",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The compensation hypothesis proposes that the internal model of gravity is used to predict and compensate for gravity's mechanical effects to maintain invariant trajectories, motivated by force field adaptation studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C62 accurately describe one theoretical framework being tested. These claims are well-supported by citations to relevant prior work on force field adaptation and represent an established viewpoint in motor control, though the current study challenges this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "13245dd7-56af-4818-ab13-418e012dd37d",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The effort optimization hypothesis proposes that the internal model of gravity is used to take advantage of gravity's mechanical effects to minimize effort, formalized in the Minimum Smooth-Effort model, with prior qualitative evidence of directional asymmetries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 describe the alternative hypothesis being tested. C13-C14 are supported by citations to prior work. However, C14 acknowledges that prior comparisons were 'largely qualitative,' which motivates the current quantitative study. The theoretical framework is well-established in cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "fca5ce14-71aa-42ee-a726-4a5d351198b3",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Directional asymmetries could arise from peripheral neuromuscular properties (motoneuron firing or eccentric/concentric contraction differences), leading to distinct predictions for behavior in zero-G: persistence, immediate disappearance, or gradual adaptation, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 establish alternative explanations and testable predictions. C15-C16 are supported by citations to established neuromuscular physiology. C17-C19 present logical predictions based on this physiology, properly supported by citations. These predictions form the basis for Experiment 2's design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Experiment 1 involved 15 participants performing single-degree-of-freedom arm movements in 17 directions with systematically varied gravity torque while other dynamic variables remained constant, with kinematics quantified using symmetry ratio (SR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C79, C84-C88 describe the experimental design and methods for Experiment 1. The design is well-conceived to isolate gravity torque effects (C22-C23). The use of SR as a kinematic measure (C24) is appropriate and standard. Methods for data collection and analysis are clearly described with sufficient detail for replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "343a3244-20c6-43fe-94e5-601ba3ef2114",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Model simulations predict that the compensation hypothesis (Minimum Jerk) yields constant SR across directions, while the effort optimization hypothesis (Minimum Smooth-Effort) predicts SR strongly correlates with gravity torque (R=0.99), a unique feature of effort-related optimization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 present model predictions with quantitative support. The high correlation (R=0.99, p<1e-07) for the Smooth-Effort model (C26) is well-documented. C27 is supported by simulations comparing multiple cost functions (Figure 1F), and C28 is supported by citations to prior theoretical work. The predictions provide clear, testable hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In Experiment 1, participants produced single-peaked velocity profiles with constant duration across directions, and SR showed significant sigmoidal modulation with direction (F16,224=28.36, p<0.001) and high correlation with gravity torque (R=0.84, p=2.5e-05), independent of duration and amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 report key experimental findings with appropriate statistical tests. The sigmoidal modulation (C32) and correlation with gravity torque (C33) are statistically significant with large effect sizes. Controls showing independence from duration (C34) and amplitude (C35) strengthen the conclusion that SR modulation reflects gravity torque effects specifically. Sample size (n=15, 3060 trials total) appears adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "a58528b7-3900-411c-8d95-9b2692c6f105",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Arm kinematics is selectively modulated according to gravity torque requirements, with high correlation between Smooth-Effort model predictions and experimental SR values (R=0.82, p=5.6e-05), supporting that humans use versatile temporal trajectories linearly tuned to gravity torque.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C50-C51 present the main conclusion from Experiment 1. The high correlation between model and data (R=0.82, p=5.6e-05) provides strong quantitative support. The linear relationship between SR and gravity torque (Figure 2C) matches model predictions (Figure 1E). The conclusion is well-supported by converging evidence from multiple analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Experiment 2 involved 11 participants performing arm movements in two directions during 5 parabolas of parabolic flight in zero-G, with movements remaining planar and single-peaked with comparable errors and durations across gravity conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C80-C83 describe Experiment 2 design and basic kinematic results. The parabolic flight protocol is standard and well-described. Statistical tests show no differences in movement duration (F5,50=1.274, p=0.29) or direction effects (F1,10=0.549, p=0.48), and errors were comparable across conditions, confirming movement quality was maintained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "26820016-5709-4920-b5c2-997bef77b5e1",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SR slowly converged toward direction-independent values in zero-G (interaction F5,50=10.54, p<0.001), with directional asymmetries persisting early (p=4.8e-05 for P1) but progressively disappearing (p=0.99 for P5), suggesting gradual re-optimization through sensorimotor adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 present the main findings from Experiment 2. The significant interaction effect (C43) and post-hoc tests (C44, C46) provide strong statistical support for gradual adaptation. The pattern of results\u2014persistence followed by gradual disappearance\u2014is inconsistent with peripheral mechanisms and supports central re-optimization. Sample size (n=11) is modest but adequate given the within-subjects design and clear effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "4d0186a3-ef8c-47a8-ad0b-2553af36bbeb",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The progressive change in kinematic asymmetries during zero-G exposure can be explained as recalibration of the internal gravity model for optimal motor planning, with Smooth-Effort model simulations accurately predicting the adaptation pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C54-C55 present the interpretation of Experiment 2 results. The model fitting approach (varying internal g parameter) provides quantitative support for the recalibration hypothesis (Figure 3E). The agreement between model predictions and observed gradual adaptation is strong. This interpretation is supported by citations to prior work on sensorimotor adaptation (C48).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "567012d6-6028-417a-a1b1-052812cf9050",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The gradual elimination of directional asymmetries in zero-G, rather than abrupt change or persistence, reveals a central neural mechanism involving progressive re-optimization of motor planning, ruling out peripheral neuromuscular explanations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C56-C58 present the key inference from Experiment 2 that distinguishes between hypotheses. The logic is sound: peripheral mechanisms would predict either no change (motoneuron properties) or immediate change (muscle force properties), but gradual adaptation implicates central planning. The experimental results clearly support gradual adaptation, and the inference is well-supported by citations to relevant physiology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "f8940e48-3921-4c59-b664-da63a8ca9c3c",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The brain uses the internal model of gravity to implement control policies that take advantage of gravity to minimize movement effort, with results strongly supporting effort minimization and demonstrating that the motor system uses multiple control policies with systematic temporal differences to minimize effort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C53, C60-C61, C68 present the overarching conclusions. These are well-supported by converging evidence from both experiments: quantitative match between effort-optimization model and data (Exp 1), gradual adaptation in zero-G (Exp 2), and ruling out alternative explanations. The conclusions are appropriately supported by citations to related work on effort minimization in other contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "61297854-1737-434d-819f-7757f62731bb",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Smooth-Effort model minimizes a hybrid cost of effort (absolute work of muscle torque) and smoothness (jerk), representing an expansion of the minimum Jerk model to include how task dynamics shapes kinematics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C89-C91, C95-C96 describe the theoretical framework of the Smooth-Effort model. The model formulation is clearly described with appropriate citations (C91). The relationship to the minimum Jerk model (C52, C95-C96) is accurately characterized. The necessity of including both effort and smoothness terms is supported by prior work (C91).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3959ae0c-a190-48f0-bd12-19a852b25b58",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The optimal control problem was solved using a Gauss pseudospectral method, with validation showing that linearized constant gravity torque yields similar results, indicating asymmetries arise from non-zero gravity torque presence rather than variations along movement amplitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 describe computational methods and validation. The numerical method (C92) is appropriate and well-cited. The linearized analysis (C93-C94) provides important validation that the key results are robust to modeling assumptions. This strengthens confidence in the model predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The compensation hypothesis has been challenged by prior studies showing direction-dependent kinematics and muscle activity patterns inconsistent with gravity compensation, with recent work framing adaptation as re-optimization rather than compensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 review prior work challenging the compensation hypothesis. The citations appear appropriate and the characterization of prior findings (C64-C65) is specific. The discussion of recent theoretical developments (C66-C67) provides context for the current study's framework. These claims accurately represent the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "ffed6761-4225-4de7-bf1f-9c084603ac9b",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Directional asymmetries have been observed across multiple movement types, suggesting directional tuning is a general motor control feature that may reflect evolutionary/developmental advantage for effort optimization in Earth's gravity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59, C69-C70 discuss generalizability. C69 is well-supported by citations to prior work on various movement types. C70 is appropriately framed as a proposal ('may reflect') rather than a definitive claim, and is supported by relevant citations. The generalization is reasonable given the breadth of prior findings, though C70 remains somewhat speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "3bec2c34-40de-483e-90c5-0783ad86af65",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The Smooth-Effort and Jerk models would make different predictions for horizontal plane movements with interaction or external torques, suggesting effort optimization may represent a general motor control principle beyond vertical movements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C72 present predictions for future work. While the logic is sound (effort-dependent costs should respond to any torque requirements), these remain untested predictions. C72 is appropriately framed as a proposal for future experiments. The claims are speculative but well-reasoned extensions of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "8676e8f9-4335-48f2-80de-d62b720868c2",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Twenty-six right-handed adults participated across two experiments with appropriate informed consent and ethical approval from regional committees, following Declaration of Helsinki standards.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe participant characteristics and ethical procedures. Sample sizes (15 and 11 for Experiments 1 and 2) are reasonable for within-subjects designs. Handedness assessment using Edinburgh test (C75) is standard. Ethical procedures (C74, C76-C78) are appropriately documented. All procedures appear to meet ethical standards.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    },
+    {
+      "id": "930cfc09-9de9-4f47-bf76-e1d4ae528e2e",
+      "content_id": "e3c8ae0b-e57a-4a4c-8f28-b2115cefeeb6",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The Minimum Torque Change model predicts symmetrical velocity profiles for horizontal single-degree-of-freedom movements under various dynamics, consistent with the current study's simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 accurately cites prior work (Tanaka et al., 2004) on the Minimum Torque Change model and relates it to the current findings (Figure 1F). This supports the conclusion that direction-dependent kinematics are specific to effort-related optimization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:29:12.905783Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "767f3fef-762e-4dd6-91e5-2adf19ba5f56",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "5d822192-72ea-4fa1-b530-db9a71c2ea10",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "56481496-82d5-49a1-91f0-75009fef541f",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "5afa58bb-685d-4242-a476-59800be6d3bd",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "6c0045d0-9f3d-45ba-a459-a0e041e64d99",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "3cc49f7c-5256-4261-9d07-ce613eacf877",
+      "result_id": "53297c98-ddf4-4626-9ff9-a684ad6531a8"
+    },
+    {
+      "claim_id": "758cc3cc-56a3-41bf-887f-5275cc209c0d",
+      "result_id": "1f8356f5-0041-4181-8969-59cc5529f1a5"
+    },
+    {
+      "claim_id": "6056317f-02cd-498a-8d68-3cb1af22e988",
+      "result_id": "1f8356f5-0041-4181-8969-59cc5529f1a5"
+    },
+    {
+      "claim_id": "293589d1-be2d-492b-a705-47a11ca21bd5",
+      "result_id": "1f8356f5-0041-4181-8969-59cc5529f1a5"
+    },
+    {
+      "claim_id": "60aeecdf-e98c-4abc-a141-20a7f443b564",
+      "result_id": "1f8356f5-0041-4181-8969-59cc5529f1a5"
+    },
+    {
+      "claim_id": "7b529513-5cf1-4bfa-990e-0c5a48f22d8d",
+      "result_id": "13245dd7-56af-4818-ab13-418e012dd37d"
+    },
+    {
+      "claim_id": "db285ef5-1668-4eb0-8436-4971a1940416",
+      "result_id": "13245dd7-56af-4818-ab13-418e012dd37d"
+    },
+    {
+      "claim_id": "cb2e3a25-b155-482f-830c-4d63f5d6544b",
+      "result_id": "13245dd7-56af-4818-ab13-418e012dd37d"
+    },
+    {
+      "claim_id": "c110c9da-a8ff-47d1-8d57-961a3e56ff8e",
+      "result_id": "13245dd7-56af-4818-ab13-418e012dd37d"
+    },
+    {
+      "claim_id": "439ae739-366b-4f99-8d61-1363e5bba669",
+      "result_id": "fca5ce14-71aa-42ee-a726-4a5d351198b3"
+    },
+    {
+      "claim_id": "70bb368b-5560-4522-8271-947483d29d8f",
+      "result_id": "fca5ce14-71aa-42ee-a726-4a5d351198b3"
+    },
+    {
+      "claim_id": "e6457a81-a83c-4513-b6d1-f4af11159abb",
+      "result_id": "fca5ce14-71aa-42ee-a726-4a5d351198b3"
+    },
+    {
+      "claim_id": "88ac73da-17ec-4884-8efa-f6310ad86855",
+      "result_id": "fca5ce14-71aa-42ee-a726-4a5d351198b3"
+    },
+    {
+      "claim_id": "873c4f66-23a2-435e-b5ef-f9f2ec09671c",
+      "result_id": "fca5ce14-71aa-42ee-a726-4a5d351198b3"
+    },
+    {
+      "claim_id": "c60af11a-ce3d-4b3c-8f29-956729671b77",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "83dbc4c6-fce8-419a-855d-dd4288b9aacc",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "56a5a3f8-e2ed-418b-8f8b-cc9a395cf282",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "913da255-a231-4c55-9fe0-c70350587242",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "0fbdeb10-c4db-4f68-9281-94da163579ad",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "5b5847c9-97af-4712-9b4a-ecf8800e377b",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "3f106fdf-5b93-457b-9b53-8e462e71078c",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "f53d6e47-86e6-4a46-b2fc-5faf6e9e2918",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "3627de90-f268-42ca-bfd8-5925449e1a87",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "b05b22ee-1428-4f6f-b189-467c0d852cfb",
+      "result_id": "09bbf927-f768-4c49-a9de-0ab8f28c98cf"
+    },
+    {
+      "claim_id": "1f53c82b-03c2-487f-8c26-ba7f1d6273fc",
+      "result_id": "343a3244-20c6-43fe-94e5-601ba3ef2114"
+    },
+    {
+      "claim_id": "94e51ed2-9f64-4f91-929d-d3903394eda5",
+      "result_id": "343a3244-20c6-43fe-94e5-601ba3ef2114"
+    },
+    {
+      "claim_id": "1128363f-7167-4834-bec4-43bf23ee146a",
+      "result_id": "343a3244-20c6-43fe-94e5-601ba3ef2114"
+    },
+    {
+      "claim_id": "8a2251d6-e024-4c09-aac3-d340821aa86e",
+      "result_id": "343a3244-20c6-43fe-94e5-601ba3ef2114"
+    },
+    {
+      "claim_id": "9de0d4b7-d29b-48f2-8f7d-57dfb3b98d38",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "bc435824-a060-432b-bbff-cc9bdf965f5e",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "ea037c1d-7979-4327-b145-4f0e7af22946",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "ddca0fcd-28b0-48dd-bc54-10fde09a1d1f",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "5435f8a9-51ef-4dff-9dbc-6552b44e858d",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "21608c73-3295-4c39-8a96-3a5f67c08a2a",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "389f04a1-b1c5-4133-b890-3d9af5f88049",
+      "result_id": "c73647c9-8b81-46a2-8ee9-f6546cbe4f17"
+    },
+    {
+      "claim_id": "7c06b159-4d2b-439a-a553-abfb366f39f5",
+      "result_id": "a58528b7-3900-411c-8d95-9b2692c6f105"
+    },
+    {
+      "claim_id": "6dc84e43-72d0-456a-87c8-ea50912193fb",
+      "result_id": "a58528b7-3900-411c-8d95-9b2692c6f105"
+    },
+    {
+      "claim_id": "47fa5625-35ce-47fa-8e06-c8346b785076",
+      "result_id": "a58528b7-3900-411c-8d95-9b2692c6f105"
+    },
+    {
+      "claim_id": "969d2687-71c7-4fbf-9aac-23d5ceaf4d50",
+      "result_id": "a58528b7-3900-411c-8d95-9b2692c6f105"
+    },
+    {
+      "claim_id": "8174875a-fcab-4d49-a872-5b3114f72047",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "c81701e7-2cc3-4cd8-a936-8f2d23b02bc2",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "15d80231-1e28-4ad0-aea1-c959ab755635",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "f809ee6b-6929-4fdc-8efe-b20f82cc252f",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "bc7162bc-14e2-49b0-8bd2-09e061aa4afd",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "3584e5ff-7845-40bb-b46a-6c09ce757472",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "0799970e-85c7-4659-9212-5a8f67ba1eaa",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "125c5077-fb46-42f7-a7e1-9d63a22eb2a7",
+      "result_id": "f0ed990b-2935-44eb-8b29-f2d35ed195d4"
+    },
+    {
+      "claim_id": "d1da389d-7ce7-446c-9bf2-478effbf69b5",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "b1f2b96a-3719-4ba5-be83-6070c204fb69",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "f663be55-f6a0-4867-aa74-a9f514c575d0",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "a3052b34-5e10-47c6-a7ad-aa167bdead61",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "465fac3b-4f14-402c-a171-01469a674ffe",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "3ab33115-4126-4a6b-9c90-9df9f20d2477",
+      "result_id": "26820016-5709-4920-b5c2-997bef77b5e1"
+    },
+    {
+      "claim_id": "203d9c93-1ccc-4de3-885c-9a570e5671d7",
+      "result_id": "4d0186a3-ef8c-47a8-ad0b-2553af36bbeb"
+    },
+    {
+      "claim_id": "09cbdcdd-d008-4855-bf7a-b313d8d68356",
+      "result_id": "4d0186a3-ef8c-47a8-ad0b-2553af36bbeb"
+    },
+    {
+      "claim_id": "d18f0a43-50bd-411d-af38-8ba6ba4baca8",
+      "result_id": "4d0186a3-ef8c-47a8-ad0b-2553af36bbeb"
+    },
+    {
+      "claim_id": "6fd8a7af-45b5-460b-b502-47f9c7bc1ef9",
+      "result_id": "567012d6-6028-417a-a1b1-052812cf9050"
+    },
+    {
+      "claim_id": "8e368eb3-ab06-4537-b695-552eb41f1467",
+      "result_id": "567012d6-6028-417a-a1b1-052812cf9050"
+    },
+    {
+      "claim_id": "e25cf768-8cd3-4288-9986-6b673b260eb2",
+      "result_id": "567012d6-6028-417a-a1b1-052812cf9050"
+    },
+    {
+      "claim_id": "987fbcdd-5c99-4684-8111-2d7186ebbb6d",
+      "result_id": "567012d6-6028-417a-a1b1-052812cf9050"
+    },
+    {
+      "claim_id": "d7cb4e9c-a2e6-418c-b578-d0560e5bed83",
+      "result_id": "f8940e48-3921-4c59-b664-da63a8ca9c3c"
+    },
+    {
+      "claim_id": "115169b0-d52b-4c7b-b418-21a98edc2019",
+      "result_id": "f8940e48-3921-4c59-b664-da63a8ca9c3c"
+    },
+    {
+      "claim_id": "5e61e183-6e5b-42ab-9634-03e02a38e4dc",
+      "result_id": "f8940e48-3921-4c59-b664-da63a8ca9c3c"
+    },
+    {
+      "claim_id": "aef7fdf9-e27e-4f39-92db-9a5b20c4a4ee",
+      "result_id": "f8940e48-3921-4c59-b664-da63a8ca9c3c"
+    },
+    {
+      "claim_id": "4cf857f2-c739-456b-b844-89c11ec5adc1",
+      "result_id": "f8940e48-3921-4c59-b664-da63a8ca9c3c"
+    },
+    {
+      "claim_id": "3f40ecdd-dc20-4021-aa3a-bc5f7a355169",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "c1d04cf8-9837-4258-89cc-2b9a1393db1d",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "40a9eac7-c34c-4944-933b-82b78583dd40",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "4a66ca24-0c23-433d-b4d7-4933fdf3c3cc",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "3998166d-6941-43d0-83d7-2098adff9612",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "6474fd9b-1625-4790-9b0f-c338724a7cf9",
+      "result_id": "61297854-1737-434d-819f-7757f62731bb"
+    },
+    {
+      "claim_id": "578f6b2d-786c-45c4-8ca6-05b790d342dd",
+      "result_id": "3959ae0c-a190-48f0-bd12-19a852b25b58"
+    },
+    {
+      "claim_id": "446fb9f8-8eaf-4105-880e-dda2ef747f8c",
+      "result_id": "3959ae0c-a190-48f0-bd12-19a852b25b58"
+    },
+    {
+      "claim_id": "c789853b-a473-47ed-a5de-6fc2ffaf43d2",
+      "result_id": "3959ae0c-a190-48f0-bd12-19a852b25b58"
+    },
+    {
+      "claim_id": "14565485-b4ea-47c8-814b-f8483d16f395",
+      "result_id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8"
+    },
+    {
+      "claim_id": "98cab922-4971-4a03-a6b3-dde91c3410bc",
+      "result_id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8"
+    },
+    {
+      "claim_id": "16579bba-4a48-450f-b17b-56d78cb7da57",
+      "result_id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8"
+    },
+    {
+      "claim_id": "0a0c0aae-a949-4b58-9899-ebd5c420bcd3",
+      "result_id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8"
+    },
+    {
+      "claim_id": "452762fc-56d7-4121-b99a-b5432b716236",
+      "result_id": "880c0ecb-8740-477a-a6c8-d02cc53ab4f8"
+    },
+    {
+      "claim_id": "1687a24b-834b-49fd-9821-285a40eeaf68",
+      "result_id": "ffed6761-4225-4de7-bf1f-9c084603ac9b"
+    },
+    {
+      "claim_id": "d045ebc7-5445-4b1e-8034-f12215cc3fc7",
+      "result_id": "ffed6761-4225-4de7-bf1f-9c084603ac9b"
+    },
+    {
+      "claim_id": "cc963ae8-77ce-49ae-80bc-13b3b01c184f",
+      "result_id": "ffed6761-4225-4de7-bf1f-9c084603ac9b"
+    },
+    {
+      "claim_id": "15efdbcf-fac1-4ce6-a261-bbe6758aa417",
+      "result_id": "3bec2c34-40de-483e-90c5-0783ad86af65"
+    },
+    {
+      "claim_id": "530afcaa-c24c-42ad-80d0-ee6e88616718",
+      "result_id": "3bec2c34-40de-483e-90c5-0783ad86af65"
+    },
+    {
+      "claim_id": "7779c3b1-42c1-4077-a3ed-c3485c24f2f3",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "2535b102-9ae6-4869-994d-4da8cea29f5d",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "e98b1785-88d2-4607-b436-2bc8d13e009c",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "1e50a553-83c8-43fb-877c-937597dd31b0",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "016f5c08-8f77-4b7d-88cf-19648a03ade9",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "02a928b9-59f5-4e37-869d-32bcadf2213b",
+      "result_id": "8676e8f9-4335-48f2-80de-d62b720868c2"
+    },
+    {
+      "claim_id": "7952e98b-3e5a-4e30-917d-d509418c491c",
+      "result_id": "930cfc09-9de9-4f47-bf76-e1d4ae528e2e"
+    }
+  ],
+  "comparisons": []
+}

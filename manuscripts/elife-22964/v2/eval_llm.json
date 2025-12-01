@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The study employed larger nanolipoprotein particles (NLPs, 21-27 nm diameter) compared to previous studies that used smaller nanodiscs (6-18 nm), allowing for larger pore sizes and higher SNARE copy numbers. The VAMP2-to-ApoE422k ratio was varied to control v-SNARE copy numbers per NLP, and vNLPs fused with t-SNARE liposomes in a SNARE-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 describe the experimental system and establish that the larger NLPs overcome limitations of previous methods. The characterization data in Figure 1 and bulk fusion assays (Figure 1\u2014figure supplement 1) support SNARE-dependent fusion. The comparison to smaller nanodiscs is well-documented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Lipid mixing between vNLPs and flipped t-SNARE cells was demonstrated using a FRET-based assay with DiI/DiD fluorescent labels. Fusion occurred with wild-type VAMP2 but not with empty NLPs or VAMP2-4X mutant (which prevents C-terminal SNARE zippering), demonstrating SNARE-dependence. Approximately 4-5% of docked vNLPs underwent fusion over ~20 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 describe the lipid mixing assay and controls shown in Figure 2. The use of VAMP2-4X as a negative control is well-validated by prior work and the data clearly show it docks but does not fuse. The fusion efficiency estimate is supported by Figure 2\u2014figure supplement 1. The controls are appropriate and the conclusions are justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Full fusion (not just lipid mixing) was confirmed by calcium influx assays showing increased cytosolic Fluo-4 signals with vNLP8 but not with empty NLPs or VAMP2-4X. Pores eventually resealed after washing away free vNLPs, as cellular calcium levels returned to baseline within minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 demonstrate that fusion pores allow passage of calcium ions, confirming full fusion rather than just hemifusion. The data in Figure 3 and Figure 3\u2014figure supplement 1 clearly support these conclusions with appropriate controls. The resealing experiment provides important information about pore dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Single fusion pores were detected using voltage-clamp electrophysiology, with currents appearing in bursts at ~0.2 bursts/min. Pores flickered open and closed repeatedly. Multiple controls (CDV, TeNT, empty NLPs, VAMP2-4X) blocked pore nucleation, demonstrating strict SNARE-dependence and ruling out ApoE-induced pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C58 establish the single-pore electrophysiology assay and demonstrate SNARE-dependence through comprehensive controls shown in Figure 4. The low burst frequency and small conductances support the single-pore interpretation. The VAMP2-4X control is particularly important as it shows ApoE proximity alone cannot induce pores. All controls are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Mean pore conductance and radius values were significantly smaller than the maximum predicted from NLP dimensions, suggesting substantial inherent resistance to pore expansion independent of NLP geometric constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 make an important observation about pore size limitations. The data in Figure 4b,f clearly show pores are much smaller than geometrically possible. This is a key finding that motivates the subsequent investigation of SNARE copy number effects. The inference about inherent resistance is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C68"
+    ],
+    "result": "Pore nucleation required a minimum of two v-SNAREs per NLP face, and maximal nucleation rates were reached at approximately the same value. Further increases in v-SNARE copy numbers did not affect nucleation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C68 describe the SNARE copy number requirement for nucleation shown in Figure 5a. The data clearly show saturation at ~2 copies per face with no significant differences among higher copy numbers (confirmed by ANOVA). This is a key finding distinguishing nucleation from dilation requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pore conductances, radii, and fluctuations increased dramatically with increasing v-SNARE copy numbers (\u22654 per face), with no saturation at 15 copies per face. Burst lifetimes and open probability showed more gradual increases. Different numbers of SNARE complexes cooperate at distinct stages of nucleation versus dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C69-C73 present the central finding that dilation requires many more SNAREs than nucleation. Figure 5 and supplements provide comprehensive data showing progressive increases in pore properties with SNARE copy number. The distinction between nucleation and dilation requirements is well-supported and represents a major conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Replacing v-SNARE transmembrane domains with lipid anchors reduced nucleation frequency and increased burst duration, but fusion pores showed the same trends with increasing copy number. This suggests specific v-SNARE/t-SNARE TMD interactions are not critical for cooperative pore dilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 address the mechanism of SNARE action using lipid-anchored constructs. Figure 5\u2014figure supplement 2 shows that while nucleation is affected, the dilation trends remain similar. This is important for understanding the mechanism and is consistent with the entropic crowding model. The conclusion is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Swapping v-SNAREs and t-SNAREs between NLPs and cells (to change target membrane composition) resulted in similar fusion rates and pore properties, suggesting SNARE-only fusion may not be very sensitive to target membrane composition within a certain range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 address a potential concern about membrane composition effects. Figure 5\u2014figure supplement 3 shows similar results for both configurations at two different SNARE copy numbers. While limited in scope, this control addresses an important variable and the conclusion is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C83"
+    ],
+    "result": "Analysis of mean conductances for individual pores revealed two populations for vNLP30: a sharp peak at ~300 pS (71% of pores) and a broader population centered at 7.21 nS, separated at ~1 nS. Multiple criteria indicated ~1 nS as a cutoff separating small and large pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81 and C83 describe the bimodal distribution of pore conductances shown in Figure 6b. The Gaussian mixture model analysis is appropriate and the 1 nS cutoff is supported by multiple lines of evidence including conductance fluctuations (Figure 6\u2014figure supplement 1). This classification is important for subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Free energy profiles showed progressive softening with increasing SNARE copy number. The minimum at ~0.5 nm remained constant, but slopes decreased for larger radii. Energy barriers decreased from ~6 kT (1 SNARE) to ~2 kT (15 SNAREs) for 3-fold expansion. Opposing forces decreased from ~24 pN to ~5 pN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 present the free energy analysis from experimental data (Figure 7a). The calculations are straightforward applications of Boltzmann statistics to the pore radius distributions. The quantitative estimates of energy barriers and forces provide important mechanistic insights and are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "A mathematical model describes pore expansion through SNARE-crowding generating entropic expansion forces. The model reproduced experimental free energy profiles with physiologically realistic parameters. Protein-free pores resist expansion (~22 pN), while SNARE crowding at the pore waist generates entropic forces (17 pN with 15 SNAREs) that offset this resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 describe the theoretical model and its predictions (Figure 7b,c and supplements, Table 1). The model makes reasonable physical assumptions and fits experimental data well. The entropic crowding mechanism is novel and well-explained. The conclusion about TMD interactions (C103) is supported by both modeling and lipid-anchor experiments. This represents a significant mechanistic advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A few SNAREs can nucleate a fusion pore (consistent with previous findings), but the pore is highly unlikely to expand significantly without additional forces. Pore dilation is resisted by intrinsic bilayer properties but promoted by many SNAREs cooperatively exerting entropic expansion forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 summarize the main conclusions integrating experimental and modeling results. The findings are well-supported by the comprehensive data presented. The distinction between nucleation and dilation requirements is clearly demonstrated and the entropic crowding mechanism provides a satisfying explanation. This is appropriately cited as consistent with prior work on nucleation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Pores flickered and lasted several seconds on average. Multiple lines of evidence suggest this reflects natural resistance to dilation: pores are much smaller than NLP geometry allows, protein-free pores flicker for seconds, long-lived pores are documented in physiological exocytosis, and theoretical models predict metastable small pores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C117 discuss pore lifetime and flickering behavior, integrating current results with prior literature. The argument that burst lifetime reflects inherent resistance to dilation is well-reasoned and supported by multiple independent lines of evidence from both this study and prior work. The discussion of methodological limitations in amperometry (C114-C115) is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Low fusion efficiency (4-5% of docked NLPs) was measured, possibly due to absence of factors essential for exocytosis. This low efficiency in SNARE-only reconstitutions lacking factors like Munc13 is well documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 acknowledge a limitation of the system and provide appropriate context from prior literature. The low efficiency is well-documented in SNARE-only systems and does not undermine the main conclusions about SNARE copy number effects. The discussion is appropriately cautious about potential biases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Previous studies reported varied SNARE copy number requirements, with most concluding few copies suffice for fusion. However, synaptic vesicles carry ~70 v-SNAREs and similar numbers of t-SNAREs cluster at fusion sites. The current results rationalize these high in vivo copy numbers by showing reliable dilation requires many SNAREs. Different fusion stages may have different cooperativity requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 place the findings in context of prior literature and resolve an apparent paradox. The argument is logical and well-supported: previous methods measuring lipid mixing or small ion flux may report nucleation requirements, while dilation requires many more SNAREs. This provides important conceptual clarity and is appropriately cautious about methodological considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "SNAREs are highly regulated by other proteins during physiological release, and mutations in Munc18, Synaptotagmin, and complexin affect pore properties. While caution is needed extending SNARE-only results to physiology, the protein crowding principle may hold qualitatively. Previous studies support that SNARE availability affects release kinetics. The steep dilation probability curve suggests high sensitivity in the balance between transient and full fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C135 appropriately discuss limitations and broader implications. The authors are appropriately cautious about extrapolating to physiological systems while suggesting the crowding principle may be general. The connection to prior studies on SNARE availability and release kinetics (C132-C133) strengthens the physiological relevance. The discussion of potential regulatory mechanisms (C134) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C26"
+    ],
+    "result": "SNARE availability may be pivotal in determining whether release occurs through transient 'kiss and run' or irreversibly dilating pores (full fusion). The presence of just a few SNARE complexes can nucleate a pore, but reliable pore dilation necessitates many more.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C26 state the main conclusion of the paper, which is well-supported by the comprehensive experimental and modeling data. The distinction between nucleation and dilation requirements is clearly demonstrated, and the implications for kiss-and-run versus full fusion are logical. This represents a significant conceptual advance in understanding fusion pore dynamics.",
+    "result_type": "MAJOR"
+  }
+]

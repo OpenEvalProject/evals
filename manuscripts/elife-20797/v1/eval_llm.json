@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C39",
+      "C40",
+      "C84",
+      "C85"
+    ],
+    "result": "Zero-mode waveguides (ZMWs) combined with single-molecule FRET (smFRET) enable direct observation of individual fcAMP binding events at CNBDs at micromolar concentrations, extending single-molecule approaches to physiologically relevant low-affinity binding events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C18, C39, C40, C84, and C85 collectively demonstrate that the ZMW-smFRET approach successfully resolves single binding events at micromolar concentrations. The experimental data (Figures 1-2) show clear binding events, competition with non-fluorescent cAMP confirms specificity, and the measured Kd values are consistent between single-molecule and bulk measurements, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C86",
+      "C87",
+      "C108"
+    ],
+    "result": "cAMP binding to the CNBD involves a slow initial binding step that selectively binds to a 'receptive' conformation (U1), followed by a ligand-induced isomerization between two distinct bound conformations (B1 and B2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C27, C28, C86, C87, and C108 are supported by the biexponential dwell time distributions (Figure 3B-C), HMM modeling (Figure 3E-F, Table 1), and the observation that bound time distributions are independent of fcAMP concentration while unbound times are concentration-dependent. The kinetic modeling converges on a sequential binding mechanism with selective binding to U1 followed by isomerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Dwell time analysis and HMM modeling reveal that CNBDs exhibit dynamic heterogeneity, interconverting between two unbound (U1, U2) and two bound (B1, B2) conformations, with the CNBD undergoing a reversible conformational change between distinct cAMP-bound states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 are supported by maximum likelihood fitting showing biexponential distributions are significantly better than monoexponential (p < 0.001), per-molecule dwell time distributions centered around weighted averages (Figure 3D), lack of correlation between successive events (Figure 3\u2014figure supplement 2), and HMM modeling showing models with two unbound and two bound states perform best (Figure 3E-F). Simulated data from the model reproduces experimental distributions (Figure 3G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C88",
+      "C89"
+    ],
+    "result": "The biexponential bound time distributions and ligand-induced isomerization are inherent properties of CNBDs observed in both monomeric and tetrameric complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C88, and C89 are supported by dwell time analysis of tetrameric CNBDs (Figure 3H-J) showing similar biexponential bound time distributions as monomers. This demonstrates the isomerization is an intrinsic property of the CNBD module rather than an artifact of the monomeric construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The first unique X-ray crystal structure of the unliganded (apo) HCN2 CNBD was obtained by using a truncated construct lacking the C-linker tetramerization domain, which was necessary because tetramers favor the closed (holo) conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C59, C62, C63, C64, C65, and C66 are supported by the crystallographic data (Figure 4, Table 2, PDB 5JON). The structure shows low B-factors for MBP and higher for CNBD, with most crystal contacts formed by MBP, suggesting minimal crystal packing artifacts. The overall conformation matches the NMR structure, further validating the structure represents the apo state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The apo-to-holo conformational change involves coordinated rigid-body rotation of the N- and C-terminal \u03b1-helical domains around hinges at the \u03b2-roll, with the C-helix capping the bound ligand and the N-terminus moving up to 7 \u00c5 to relieve steric clashes, enabling transmission of cAMP-induced changes across the CNBD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by structural comparisons (Figure 4A-G) showing the \u03b2-roll is invariant (0.49 \u00c5 RMSD), the helical termini superpose as a single module (2.04 \u00c5 RMSD), and steric clashes between the apo N-terminus and holo C-helix are relieved by coordinated movement. This structural coupling provides a mechanism for allosteric communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C80"
+    ],
+    "result": "The trigger for large-scale conformational changes upon cAMP binding is a localized transition in the phosphate binding cassette (PBC) P-helix from a mostly 3\u2081\u2080-helix in the apo structure to a mostly \u03b1-helix in the holo structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, C77, and C80 are supported by structural analysis (Figure 4C, Table 3) showing changes in hydrogen bonding patterns in the P-helix between apo and holo structures. The P-helix remains helical in the X-ray apo structure (unlike the NMR structure), consistent with other CNBD structures. This local change is proposed to trigger global conformational changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Microsecond molecular dynamics simulations show that changing the ligation state induces structural transitions at both local (P-helix secondary structure) and global (B, C helix positions) scales that are tightly coupled to cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C79, C81, C82, and C83 are supported by MD simulation data (Figure 5) showing that removing cAMP from the holo structure causes the P-helix to transition from \u03b1-helix to 3\u2081\u2080-helix and the B, C helices to swing outward toward apo positions. Adding cAMP to the apo structure stabilizes \u03b1-helical contacts. These transitions occur on the microsecond timescale in unbiased simulations, indicating tight coupling to ligand binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C91"
+    ],
+    "result": "The ligand-induced isomerization involves both local transitions in the P-helix and global coordinated rotation of the N- and C-terminal \u03b1-helices about the rigid \u03b2-roll, with the C-helix capping the bound ligand in the holo structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C90, and C91 integrate the structural (Figure 4) and MD simulation (Figure 5) data with the single-molecule kinetics to propose a model where the isomerization observed in the kinetic data corresponds to the structural transition from apo to holo conformations. The model is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "HMM modeling suggests binding occurs selectively from one of two unbound states (U1), implying the other unbound state (U2) involves occlusion of the binding site by the C-helix, with slow interchange dynamics indicating a large energy barrier reduced upon cAMP binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C93, C94, and C95 are supported by HMM modeling (Figure 3E-F, Table 1) showing selective binding to U1, structural analysis showing the C-helix occludes the binding site in the holo form, and consistency with EPR data (cited) showing cAMP-dependent C-helix equilibrium. The model excludes cyclic schemes allowing binding to U2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The binding rate is relatively slow, suggesting fcAMP binding to the 'receptive' state is rate-limited by processes beyond simple diffusion, such as ligand reorientation, desolvation, and structural rearrangements including the P-helix transition, with the initial encounter complex being either unstable or facing a significant formation barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96 and C97 are supported by the observed binding rate constants (Table 1) being slower than expected for diffusion-limited binding. The 100 ms frame rate may miss very brief encounters, but the concentration-independence of bound time distributions argues against this being a major artifact. The interpretation is consistent with the structural complexity of the binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A reciprocal relationship exists between ligand binding and tetramerization: ligand binding shifts equilibrium toward tetramerization, and tetramerization enhances ligand binding, explaining cAMP-induced tetramerization of monomeric CNBDs and lower affinity of CNBDs lacking the C-linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C103, and C104 are supported by the structural observation that the C-helix capping the ligand moves in conjunction with the N-terminal helices connected to the tetramerization module (Figure 4H), and by citation to previous work showing cAMP-induced tetramerization and lower affinity without the C-linker. The reciprocal relationship is a logical inference from the structural coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The study provides direct evidence for a binding process involving isomerization of a ligand-bound receptor, with the initial step involving selective binding to the 'receptive' state (U1) followed by a conformational change that traps the ligand in the bound conformation (B2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107 and C108 are supported by the combined single-molecule kinetic data, HMM modeling, and structural analysis. This represents the first direct observation of bound state isomerization previously inferred only from ensemble measurements, addressing the conformational selection versus induced fit debate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The apparent dissociation constant for fcAMP binding to the CNBD is 1.5 \u00b5M from single-molecule measurements, similar to 2.3 \u00b5M from bulk anisotropy, suggesting weak non-specific interactions with the ZMW surface and that observations reflect inherent CNBD dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by the binding curve (Figure 3A) and comparison with bulk measurements (Figure 1\u2014figure supplement 1A). The similar affinities validate that the ZMW environment does not significantly perturb the binding interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Unbound dwell time distributions shift to shorter durations with increasing fcAMP concentration, while bound time distributions are essentially independent of fcAMP concentration, as expected for a ligand binding reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C45 are supported by the dwell time distributions (Figure 3B, Figure 3\u2014figure supplement 1). This concentration dependence is consistent with a bimolecular binding reaction and validates the interpretation of the idealized traces as binding events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The experimental system uses fcAMP (which modulates HCN2 function similarly to cAMP) and an engineered CNBD with a single accessible cysteine (C508A/C584S/E571C) labeled with a FRET acceptor, with native and mutated CNBDs exhibiting similar fcAMP affinity and efficient FRET confirmed in bulk solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are supported by citations to previous work validating fcAMP, structural data showing C601 is buried, and bulk anisotropy and FRET measurements (Figure 1\u2014figure supplement 1). This validates the experimental system as a faithful reporter of cAMP binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Free fcAMP diffuses across the excitation volume in ~1 ms, much faster than the 100 ms frame duration, so only bound fcAMP is observed. FRET efficiency between bound fcAMP and the acceptor is close to 100%, and the FRET signal is abolished by competition with non-fluorescent cAMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, and C37 are supported by the experimental design, observation that donor excitation results primarily in acceptor emission, and competition experiments (Figure 2\u2014figure supplement 1). This validates the smFRET signal as a specific reporter of fcAMP binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Alternating between donor and acceptor excitation provides explicit information on the number of molecules within each ZMW through acceptor bleach steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by the experimental design and example traces (Figure 2B) showing single acceptor bleach steps. This validates the single-molecule nature of the observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C77"
+    ],
+    "result": "The NMR structure of the apo HCN2 CNBD has features inconsistent with other CNBDs in the Protein Data Bank, including complete unfolding of the P-helix, whereas the X-ray apo structure reported here shows the P-helix remains helical, consistent with other CNBD structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C77 are supported by comparison of the X-ray structure with the NMR structure (Figure 4\u2014figure supplement 2) and citations to other CNBD structures. This highlights the novelty and validity of the X-ray apo structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The observed isomerization may reflect dynamic movement of the C-helix between apo and holo positions, though the C-helix may also move during the initial binding step, and the subsequent isomerization may involve rearrangements in the N-terminal C-linker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C99, and C100 are speculative interpretations acknowledging alternative possibilities. The MD simulations (Figure 5) show the C-helix moves in response to ligand binding/unbinding, but the exact timing and sequence of movements during the binding process remain uncertain. The truncation of the C-linker in the crystallized construct limits structural information about this region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "It is highly plausible that fcAMP and cAMP bind with similar dynamics given their similar affinities and functional effects, though the possibility that cAMP dynamics differ cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 acknowledges a limitation of the study. While fcAMP is a validated cAMP analog with similar affinity and function (C30), the fluorophore conjugation could potentially alter binding dynamics. This is a reasonable caveat but does not undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C109"
+    ],
+    "result": "The approach is generally applicable to weak-binding interactions governing a broad spectrum of signaling processes, providing a general approach for revealing molecular details of weak-binding signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C109 are speculative statements about the potential applicability of the method to other systems. While the ZMW-smFRET approach successfully resolves micromolar affinity binding in this system, demonstrating general applicability would require testing on other weak-binding systems. This is a reasonable future direction but not demonstrated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C38",
+      "C58",
+      "C105",
+      "C106"
+    ],
+    "result": "Background and motivation: Molecular recognition is crucial for signaling, but mechanistic studies have relied on ensemble measures that obscure underlying steps. Single-molecule observations of low-affinity binding are lacking due to technical limitations. HCN channels are critical for heart and brain function, and cyclic nucleotide regulation mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C16, C19-C26, C38, C58, C105-C106 provide background context supported by general knowledge and citations to previous work. These establish the motivation for the study and the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22"
+    ],
+    "result": "HCN channels are critical for oscillatory neuronal activity in the brain and pacemaking in the heart, and cyclic nucleotide binding enhances HCN voltage-dependent activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, and C22 are established knowledge about HCN channel physiology, providing biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The atomic coordinates and structure factors for the apo HCN2 CNBD have been deposited in the Protein Data Bank under accession code 5JON.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 is a statement about data availability, which is verifiable and supports reproducibility.",
+    "result_type": "MINOR"
+  }
+]

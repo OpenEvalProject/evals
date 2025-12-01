@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript reviews established experimental observations about hippocampal theta phase precession and theta sequences, including their dependence on running speed, occurrence along 2D trajectories, dorsoventral organization, and potential role in memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by appropriate citations to prior experimental work. These claims establish the empirical context and challenges that motivate the modeling work presented in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript describes the known architecture of CA1 circuitry, including sparse pyramidal-pyramidal connections, inputs from CA3/entorhinal cortex, septal GABAergic pacemaker inputs to interneurons, and interneuron phase precession coupled to pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 accurately describe established features of CA1 circuitry based on appropriate citations. These claims provide the anatomical and physiological constraints that inform the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "A minimal circuit model with one interneuron and one pyramidal cell generates phase precession when the interneuron integrates pacemaker theta input and spatial drive from the pyramidal cell, causing both cells to precess through 360 degrees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 describe the core mechanism of the model and are supported by simulation results in Figure 1. The model successfully generates phase precession dynamics consistent with experimental observations through biophysically plausible circuit interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A reduced analytical model reveals that interneurons exhibit two dynamical regimes: phase locking for weak drives (covering 180 degrees) and frequency pulling for strong drives (enabling continuous phase precession), with the rate determined by input strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C26 describe the analytical model results shown in Figure 2. The mathematical analysis provides mechanistic insight into the phase precession dynamics, though the reduced model makes simplifying assumptions (e.g., sinusoidal phase response curves) that may not fully capture biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The model accounts for velocity-dependent phase precession by linearly increasing both pacemaker amplitude and depolarizing current to interneurons with running speed, predictions consistent with experimental observations of velocity-dependent currents and theta amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by simulation results in Figure 3 and consistency with cited experimental findings. The model provides a mechanistic explanation for velocity dependence, though the specific parameter scaling is somewhat ad hoc and alternative mechanisms are acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The model accounts for dorsoventral traveling theta waves and gradients in phase precession slope through gradients in excitatory drive, pacemaker amplitude, and synaptic strength, predicting decreasing theta power from dorsal to ventral hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by simulation results in Figure 4 and consistency with experimental observations. The model provides a parsimonious explanation for dorsoventral organization without requiring traveling wave propagation, though the specific parameter gradients are predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The model accounts for phase precession in open environments, including unidirectional precession regardless of running direction and phase reversal on edge passes, as well as sequences during backward travel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by simulation results in Figures 2D-E and 5A and consistency with cited experimental observations. The model successfully reproduces complex 2D trajectory dynamics without requiring additional directional inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The model exhibits robust single-cycle phase precession over a broad range of input strengths (10-25 spikes per place field), with stronger inputs causing precession through multiple cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by simulation results in Figure 5B-E. The analysis reveals constraints on rate remapping and demonstrates robustness of the mechanism, though the specific spike count range depends on model parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model replicates experimental observations of phase precession persistence following transient hippocampal silencing and pacemaker reset, and reproduces the phase shift observed with PV interneuron silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 are supported by simulation results in Figure 5 supplements 1-2. The model successfully accounts for perturbation experiments, though the explanation for PV silencing effects relies on specific assumptions about phase alignment at field entry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "A single interneuron can support phase precession in multiple place cells with non-overlapping fields, but overlap disrupts coding; the model predicts subthreshold phase precession fields in place cells outside their firing fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by simulation results in Figure 6. The analysis reveals network constraints and makes testable predictions, though the two-cell simulation is limited and larger network effects are explored separately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "In larger networks, theta sequences emerge with sparse, low-overlap place field maps but not with dense, high-overlap maps; sequence disruption results from population decoherence while single-cell phase precession persists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by simulation results in Figure 7A-C. The analysis reveals a dissociation between single-cell and population-level phenomena, providing a potential explanation for experimental observations of dissociated phase precession and theta sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Noise injected into pyramidal cells impairs both single-cell phase precession and population sequences in parallel, while noise in interneurons disrupts population sequences but preserves single-trial phase precession.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by simulation results in Figure 7 supplement 2. The differential effects of pyramidal vs. interneuron noise reveal distinct mechanisms for disrupting network function, though quantitative noise levels are model-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The model predicts that place field reorganization in novel environments and CA3 silencing would disrupt theta sequences while preserving phase precession, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 connect model predictions to experimental observations. The consistency with cited experimental findings supports the model, though the specific mechanisms for place field reorganization are not detailed in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Even randomly organized place field maps may account for experimentally observed phase precession statistics in individual place cells despite disrupted population sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by simulation results in Figure 7 supplement 4. The analysis shows that single-cell phase precession can be robust even with suboptimal network organization, though this does not address whether random maps are biologically realistic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Theta sequence compression combined with STDP enables flexible temporal credit assignment, allowing downstream neurons to associate past or future events with outcomes by varying their spike phase relative to theta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 present a theoretical framework for learning based on the model's sequence compression, illustrated in Figure 8. While the logic is sound and C63 is supported by citation, the STDP learning mechanism is not directly simulated or validated. The predictions are plausible but require experimental testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript discusses the model in relation to established circuit properties, experimental perturbations, and recent findings on dissociation of phase precession and theta sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 are all supported by appropriate citations to prior work. These claims contextualize the model within existing experimental literature and demonstrate consistency with diverse observations.",
+    "result_type": "MINOR"
+  }
+]

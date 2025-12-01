@@ -1,0 +1,460 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "GM neurons exhibit substantial animal-to-animal variability in morphology, with cable lengths and branch point numbers varying by 40% of the mean (CV = 0.4), tortuous three-dimensional structures (mean tortuosity 2.1 \u00b1 0.5), and mean soma-to-tip path lengths of 450 \u00b1 80 \u00b5m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C43-C49 collectively demonstrate morphological variability in GM neurons across 14 animals using 3D confocal imaging and skeletal reconstructions. The quantitative measurements (CV = 0.4 for cable length and branch points, tortuosity distributions, path lengths) are directly supported by data in Figures 2C-F and provide converging evidence for substantial structural variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "GM neurons display variable axonal branching patterns across animals, with 3-5 axons projecting to different nerves (aln and dvn), variable branch order distributions, and variable axonal branch point orders, suggesting differential integration of voltage signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by data in Figure 3A-B showing axon numbers and branch order distributions across 14 GM neurons. The inference about differential voltage integration (C54) follows logically from the demonstrated variability in axonal architecture, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Focal glutamate photo-uncaging evokes inhibitory voltage responses across GM neuronal structures with variable amplitudes (mean max 2.15 \u00b1 1 mV, CV = 0.4 \u00b1 0.1) that are relatively stable when inter-pulse periods exceed 10 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are well-supported by experimental data in Figure 4 and Figure 4\u2014figure supplement 1. The photo-uncaging methodology is validated (spatial resolution ~15 \u00b5m), response characteristics are quantified across 10 neurons, and desensitization properties are documented. The consistency with previous literature on glutamate-gated inhibitory currents (C56) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Response amplitudes measured at the soma show no significant linear relationship with distance from soma, branch order, or neurite diameter (p > 0.1 for all comparisons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by linear regression analyses presented in Figure 5\u2014figure supplement 1 and Table 1, showing insignificant p-values (>0.1) across all 10 neurons for all three geometric parameters. This finding is counterintuitive given cable theory predictions but is consistently observed across the dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Computational modeling demonstrates that apparent reversal potentials of locally-activated inhibitory currents are independent of maximal conductance but dependent on distance from the recording site, with the relationship contingent on the electrotonic length constant (\u03bb) of the cable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 are supported by systematic NEURON simulations shown in Figures 6-7. The modeling demonstrates key principles: (1) Erev independence from gmax (Figure 6B-C, Figure 6\u2014figure supplement 1), (2) distance-dependent hyperpolarizing shift (Figure 6D-F), and (3) \u03bb-dependent convergence/divergence of apparent Erevs (Figure 7C-E). These simulations provide the theoretical framework for interpreting experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Apparent reversal potentials measured across photo-uncaging sites within individual GM neurons are remarkably invariant (within-neuron CV = 0.04 \u00b1 0.01), though mean reversal potentials vary across neurons (pooled mean \u221278.6 \u00b1 7 mV), with variable linear fit slopes likely reflecting heterogeneous receptor densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C75-C79 are strongly supported by experimental data in Figures 8-9 and Table 2. The within-neuron invariance of apparent Erevs (CV = 0.04 \u00b1 0.01) across 7-20 sites in 10 neurons is a key finding. The interpretation that variable slopes reflect receptor density differences (C78) is consistent with simulations in Figure 6 and represents a reasonable inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Linear regression analyses of apparent reversal potentials show near-zero slopes as a function of distance, branch order, and diameter across all 10 GM neurons, indicating minimal variation in electrotonic distance and consistency with \u03bb > 1.5 mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by data in Figure 9\u2014figure supplement 1 and Table 2 showing near-zero regression slopes. The inference of \u03bb > 1.5 mm (C82) is derived by comparing experimental results to simulations in Figure 7D-E, representing a reasonable quantitative estimate based on the minimal hyperpolarizing shift observed over 100-800 \u00b5m distances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C92"
+    ],
+    "result": "GM neurons are electrotonically compact (estimated \u03bb > 1.5 mm) despite their expansive and complex morphologies, functioning almost like a single compartment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83, C84, C92 represent the central conclusion of the manuscript, supported by the convergence of morphological characterization (showing complexity) and electrophysiological measurements (showing compactness). The estimate of \u03bb > 1.5 mm is derived from comparison to simulations. However, the authors acknowledge this is an 'upper bound' estimate obtained under TTX conditions (C105-C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C113",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C127",
+      "C131",
+      "C132"
+    ],
+    "result": "Electrotonically compact structures combined with graded transmission provide an elegant solution to morphological variability in the STG, enabling synaptic democracy and a many-to-one morphology-to-physiology transform where fine structural details may not matter for neuronal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C86, C113, C115-C118, C127, C131-C132 represent the major conceptual conclusions of the work. These are well-supported by the experimental demonstration of electrotonic compactness despite morphological variability, though they represent interpretive inferences about functional consequences rather than direct experimental observations. The logic is sound: if neurons are electrotonically compact, then synaptic site location becomes less critical for integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The electrotonically compact structure of GM neurons is most plausibly explained by geometric and passive cable properties, including large neurite diameters (primary neurites 15-20 \u00b5m, distal branches <1-10 \u00b5m) leading to low axial resistance, potentially high membrane resistance, and low somatic input resistance (mean ~10 M\u03a9) reflecting the entire neuronal membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 provide mechanistic explanations for electrotonic compactness. The diameter measurements (C94-C95) are supported by citation to Otopalik et al. 2017. The inferences about low axial resistance (C96), potential high membrane resistance (C97, noted as speculative), and interpretation of low input resistance (C98-C100) are reasonable applications of cable theory principles, though C97 is explicitly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Variable response amplitudes in GM neurons likely arise from local variations in receptor densities rather than systematic distance-dependent scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by the combination of invariant apparent Erevs (indicating uniform electrotonic structure) and variable response amplitudes independent of distance (Figure 5, Table 1). The inference that receptor densities do not scale systematically with distance is reasonable given the lack of correlation between amplitude and distance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The experiments provide an upper bound on electrotonic compactness as they were conducted in TTX, though TTX-sensitive channels are unlikely to substantially alter the findings given their peripheral location and the voltage range tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 appropriately acknowledge experimental limitations. The use of TTX (C106) is documented, and the lack of input resistance change with TTX (C107) is noted. The reasoning that TTX-sensitive channels at peripheral spike initiation zones are unlikely to shunt currents (C108) is supported by anatomical considerations and citations. C109 is explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The electrotonic compactness of GM neurons differs from compartmentalized structures in other neuron types (e.g., pyramidal neurons, medium spiny neurons) that use distance-dependent receptor scaling, suggesting that strategies for achieving synaptic democracy and the relationship between electrotonic structure and computational precision may vary across circuit contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C119-C123 place the findings in comparative context with appropriate citations to previous work. The contrasts drawn with pyramidal neurons (C120, C122) and other systems (C85) are well-supported by literature. The speculation that electrotonic structure may reflect computational precision requirements (C123) is reasonable but explicitly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C126"
+    ],
+    "result": "GM neurons and other STG neuron types exhibit highly conserved physiological properties and circuit functions despite complex and variable morphologies across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C16, C126 establish the biological context and paradox motivating the study. These are well-supported by multiple citations to previous work (Harris-Warrick et al. 1992; Wilensky et al. 2003; Baldwin and Graubard 1995; Bucher et al. 2007; Goeritz et al. 2013; Otopalik et al. 2017) and provide the foundation for investigating how morphological variability is compensated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Neuronal circuits can generate stable output despite variable underlying parameters across animals, with neurons compensating for variable ionic conductances at circuit and single-neuron levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 establish general principles from prior work, supported by multiple citations (Marder and Goaillard 2006; Prinz et al. 2004; Grashow et al. 2010; Tobin et al. 2009; Ball et al. 2010; O'Leary et al. 2013, 2014). These provide important context but represent established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Neuronal physiology arises from the combination of ionic conductances and morphology, with geometric cable properties shaping passive current flow and electrotonic structure determining signal integration versus segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 establish fundamental principles of neuronal cable theory, supported by citations to foundational work (Mainen and Sejnowski 1996; Vetter et al. 2001; Rall 1959, 1977; Koch and Segev 2000; London and H\u00e4usser 2005). These represent established knowledge providing theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C110",
+      "C111"
+    ],
+    "result": "The STG is a 26-27 neuron central pattern-generating circuit where neurons display large somata (50-150 \u00b5m diameter), ramifying neurites, sparse synaptic connections in the neuropil, peripheral spike initiation zones, and predominantly graded inhibitory transmission. GM neurons are one of 14 identified types (typically 4 per animal) that innervate gastric muscles and participate in the gastric mill rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C17-C25, C35-C42, C110-C111 provide anatomical and physiological characterization of the STG and GM neurons, supported by extensive citations to previous work and measurements from the current study (soma diameter 74 \u00b1 13 \u00b5m, ellipsoid volume 4.98 \u00b1 1.43 \u00d7 10^6 \u00b5m^3). These establish the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Previous investigations of STG electrotonic structure showed frequency-dependent signal decay with low-pass filtering of high-frequency events and less decrement of slow oscillations, consistent with the circuit's reliance on graded transmission and slow oscillations, but did not sample distal sites where synapses are located.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 accurately summarize previous work (Miller 1980; Golowasch and Marder 1992; Rall 1977) and identify the gap in knowledge motivating the current study. The characterization of previous findings is supported by appropriate citations, and the limitation regarding distal sampling (C33-C34) provides clear rationale for the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C50",
+      "C62",
+      "C65"
+    ],
+    "result": "Pre- and post-synaptic connections are distributed throughout finer processes in the STG neuropil, and electrotonic decrement depends on neurite diameter, membrane resistance, branching, and distance. A neuron's electrotonic structure can be quantitatively assessed by measuring apparent reversal potentials at varying distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C62, C65 establish anatomical facts (C50, supported by King 1976b; Kilman and Marder 1996) and cable theory principles (C62, supported by Rall 1959; Goldstein and Rall 1974). The methodological principle in C65 is supported by citations to Calvin 1969 and Carnevale and Johnston 1982, providing the rationale for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C114",
+      "C124",
+      "C125",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "STG neurons rely on graded transmission and slow oscillations for circuit function. Previous work has argued for optimal neuronal geometries and developmental growth rules for current transfer, though few studies have published sufficient reconstructions to assess morphological variability ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114, C124, C125, C128-C130 provide context from previous literature with appropriate citations. C114 is well-supported regarding STG circuit properties. C124-C125 cite work on optimal geometries (Mainen and Sejnowski 1996; Stiefel and Sejnowski 2007; Cuntz et al. 2007, 2010; Chklovskii 2000, 2004). C130 makes a valid point about limited availability of detailed reconstructions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Detailed experimental methods are provided for animal preparation, electrophysiology, dye-filling, photo-uncaging (with custom microscope achieving ~10 \u00b5m UV spot, 15 \u00b5m effective radius), immunohistochemistry, confocal imaging, 3D reconstruction using KNOSSOS software, morphological analysis using custom Python scripts, and electrophysiological analysis using custom MATLAB scripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C185 provide comprehensive methodological details that are internally consistent and appropriately detailed. The custom photo-uncaging system is well-described (C157-C161), spatial resolution is validated (C161), and analysis tools are made available (C181, C185). The acknowledgment that 20x imaging resulted in smaller measurements than 60x imaging in Otopalik et al. 2017 (C173) demonstrates appropriate methodological transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "A library of 20 equivalent cylinder cable models was constructed in NEURON with uniform geometry (1000 \u00b5m length, 5 \u00b5m diameter, 1 \u00b5F\u00b7cm^-2 capacitance) but varying passive properties (4 gpas values \u00d7 5 Ra values), yielding electrotonic length constants (\u03bb) ranging from 200 \u00b5m to 5 mm, to simulate apparent reversal potential measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C196 provide detailed description of computational modeling methods. The model parameters are clearly specified, the range of \u03bb values (200 \u00b5m to 5 mm) is appropriate for the experimental distances tested, and the analysis methods (linear regression with R > 0.9, p < 0.01) are rigorous. The modeling approach is standard and well-executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In GM neurons, synaptic voltage events may propagate tortuous paths exceeding 500 \u00b5m, yet current injection at the soma can effectively alter membrane potential at distal sites (apparent Erev ~-80 mV), indicating that voltage responses at photo-uncaging sites must be larger than observed at the soma and that electrotonic decrement must be small enough to allow reversal potential recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 represent logical inferences from the experimental observations. C87 is supported by morphological data (Figure 2). C88 is demonstrated by the ability to measure reasonable apparent Erevs. C89-C91 are necessary logical consequences of the experimental observations and cable theory principles, representing sound reasoning about signal propagation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C133"
+    ],
+    "result": "If STG neurons were highly electrotonically compartmentalized yet variable across animals, circuit wiring would be a puzzling developmental task. The degree of morphological variability and whether it is compensated may depend on the system and computational precision required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112 and C133 are explicitly speculative statements about developmental implications and general principles. While they represent reasonable hypotheses arising from the findings, they are not directly tested and represent future directions rather than supported conclusions. The authors appropriately present these as speculative ideas.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C72",
+      "C73"
+    ],
+    "result": "Nuclear translocation of Ikaros-ERt2 fusion proteins is rapidly induced by 4-OHT, resulting in immediate DNA binding. Ikaros translocates to the nucleus within minutes of 4-OHT treatment and binds to target gene promoters with half-maximal binding at the Igll1 promoter within 5 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, and C73 are supported by complementary immunofluorescence microscopy (Figure 1A) and ChIP-PCR kinetics (Figure 1B). The rapid kinetics are well-documented with appropriate time resolution. The system provides clear temporal control for studying downstream events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C69",
+      "C70",
+      "C78",
+      "C79"
+    ],
+    "result": "Ikaros does not directly displace the transcriptional activator EBF1 from the Igll1 promoter. Instead, increased Ikaros binding occurs without immediate EBF1 eviction, with EBF1 displacement occurring gradually between 15-60 minutes. CHD4-mediated chromatin remodeling is required for EBF1 eviction, and Ikaros-induced chromatin changes ultimately limit Ikaros's own binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dissociation between Ikaros binding (5 min) and EBF1 eviction (15-60 min) is clearly demonstrated by ChIP kinetics (C10, C13). The kinetic modeling (C12) provides a mechanistic framework consistent with the data. CHD4 knockdown experiments (C69, C70) demonstrate that EBF1 eviction requires chromatin remodeling, not direct competition. The conclusion is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C88"
+    ],
+    "result": "Ikaros-mediated transcriptional repression occurs primarily through reduced RNAP2 recruitment rather than elongation. Nuclear translocation of Ikaros leads to rapid RNAP2 eviction from target gene promoters and gene bodies, with similar kinetics to nucleosome invasion and transcriptional silencing. Genome-wide analysis shows that 87% of repressed genes exhibit global RNAP2 reduction, while only 4% show preferential gene body reduction consistent with elongation blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanism is supported by multiple complementary approaches: ChIP-seq (C16, C22), ChIP-PCR kinetics (C20), MNase-seq (C26), and RT-PCR for primary transcripts (C27). The genome-wide analysis (C22-C25, Table 1) provides strong statistical support with clear quantification. The control gene Top3b (C17) demonstrates specificity. The conclusion about recruitment vs. elongation is well-justified by the pattern of RNAP2 loss across gene features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C89"
+    ],
+    "result": "Promoter accessibility at Ikaros target genes is mechanistically independent of RNAP2 occupancy. Triptolide-mediated RNAP2 depletion does not reduce promoter accessibility, and Ikaros can still reduce accessibility even after RNAP2 removal, demonstrating that chromatin remodeling is not simply a consequence of RNAP2 eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The triptolide experiments (C28-C32) provide strong evidence by separating RNAP2 occupancy from chromatin accessibility. The use of MNase sensitivity as a readout is appropriate. The conclusion (C31, C33) that accessibility and RNAP2 occupancy are mechanistically separable is well-supported. This is a key control experiment that strengthens the mechanistic claims about chromatin remodeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C76"
+    ],
+    "result": "The NuRD-associated chromatin remodeler CHD4 is essential for Ikaros-mediated transcriptional repression. CHD4 depletion substantially reduces nucleosome invasion of target promoters and delays RNAP2 eviction and transcriptional repression. Ikaros rapidly recruits CHD4 and MBD3 to target promoters with kinetics matching Ikaros binding, though this recruitment is transient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "CHD4 knockdown experiments (C34, C36) demonstrate functional requirement with appropriate controls. ChIP-PCR shows rapid CHD4/MBD3 recruitment (C37-C39) with proper kinetic resolution. The transient nature of CHD4/MBD3 binding (C39) is an interesting observation. However, the knockdown efficiency should be better quantified, and rescue experiments would strengthen the conclusion. The result is well-supported but could be strengthened.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C81",
+      "C82"
+    ],
+    "result": "Ikaros and the SWI/SNF-associated chromatin remodeler BRG1 are broadly antagonistic in B cell progenitors. Genes activated by BRG1 are preferentially repressed by Ikaros (OR=2.97, p=1.7\u00d710\u207b\u00b3\u2070). Coincident with NuRD recruitment, BRG1 is evicted from the Igll1 promoter and does not return even after CHD4/MBD3 binding declines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome-wide overlap analysis (C41-C43, Table 2) provides strong statistical evidence for antagonism with highly significant p-values. The ChIP kinetics at Igll1 (C45, C46) show temporal correlation between CHD4 recruitment and BRG1 eviction. However, the mechanism of BRG1 eviction is not directly tested\u2014it could be passive (loss of binding sites) or active (displacement). The correlation is clear, but causality requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C84"
+    ],
+    "result": "HDAC activity is dispensable for the initiation of Ikaros-mediated transcriptional repression. Broad HDAC inhibition with TSA or specific HDAC1/2 inhibition with MS-275 does not interfere with early RNAP2 eviction, reduced promoter accessibility, or transcriptional downregulation. Histone deacetylation occurs with markedly slower kinetics than these early repression events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple HDAC inhibitors (TSA, MS-275) were tested in both cell lines and primary cells (C47-C49), demonstrating robustness. The TEV-cleavage system (C50) controls for potential ERt2 artifacts. The kinetic analysis (C52, C53) clearly shows deacetylation lags behind repression. This is a surprising and well-supported finding that challenges conventional models. The use of multiple inhibitors and systems strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C85"
+    ],
+    "result": "While dispensable for initiation, HDAC activity is required for stable transcriptional silencing and proper nucleosome assembly. Prolonged HDAC inhibition (24 hr) prevents stable silencing, reduces protection of full-length nucleosomal DNA, and impairs H2B incorporation into nucleosomes, suggesting that HDAC activity stabilizes nucleosome structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction between short-term (1 hr) and long-term (24 hr) HDAC inhibition is well-designed. The differential effect on short vs. long MNase-protected fragments (C56, C57) is a clever approach to assess nucleosome stability. The H2B/H3 ratio analysis (C59, C60) provides mechanistic insight. However, the interpretation of nucleosome stability (C58) is somewhat speculative. The overall conclusion about HDAC's role in stabilization is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C87"
+    ],
+    "result": "Ikaros-mediated repositioning of target loci to pericentromeric heterochromatin requires both CHD4-mediated chromatin remodeling and HDAC activity. Nuclear translocation of Ikaros increases Igll1 association with \u03b3-satellite DNA from 8% to 78% of alleles. This repositioning is severely impaired by CHD4 knockdown (to 13%) or HDAC inhibition (to 55%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D DNA-FISH experiments (C62-C65, C67) provide direct evidence for locus repositioning with clear quantification. The requirement for both CHD4 and HDAC activity (C66, C68) demonstrates interdependence of silencing mechanisms. Statistical analysis (GLM binomial logit) is appropriate for the data type. This is a strong demonstration that Ikaros directly mediates repositioning, addressing a long-standing question in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C77"
+    ],
+    "result": "Nuclear translocation of Ikaros increases nucleosome occupancy at Ikaros binding sites genome-wide, demonstrating that chromatin remodeling is a general feature of Ikaros-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of MNase-seq with Ikaros ChIP-seq (C71) provides genome-wide evidence. Figure 7C shows clear increase in nucleosome occupancy at Ikaros peaks. This extends the findings from individual loci to a global scale. The analysis is appropriate and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C83",
+      "C86",
+      "C92",
+      "C93"
+    ],
+    "result": "Ikaros-mediated gene silencing involves rapid, complex, and interdependent mechanisms with temporal dissociation of NuRD enzymatic activities. Half-maximal RNAP2 removal, transcriptional silencing, and nucleosome invasion occur within 12 minutes, while histone deacetylation occurs later. These mechanisms are interdependent, as illustrated by CHD4's role in EBF1 eviction, RNAP2 occupancy, and locus repositioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C74, C83, C86, C92, C93) is well-supported by the cumulative evidence from kinetic experiments. The temporal dissociation between CHD4 and HDAC functions is clearly demonstrated. The interdependence is shown through multiple perturbation experiments. This represents a significant conceptual advance in understanding transcriptional repression mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C80"
+    ],
+    "result": "Ikaros binds gamma satellite sequences at pericentromeric heterochromatin, and EBF1 binding is sensitive to local chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from prior literature (C4 cites Brown et al. 1999, 1997; Cobb et al. 2000; Hahm et al. 1998; C80 cites Treiber et al. 2010). The claims appropriately cite previous work and are used as context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Ikaros-mediated repression is consistent with a direct role in target gene repression and is reminiscent of nuclear hormone receptor signaling in its requirement for active chromatin remodeling, though unlike primary response gene induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These comparative statements (C90, C91) appropriately contextualize the findings within the broader transcriptional regulation literature. The comparisons are reasonable given the data showing rapid, direct effects independent of protein synthesis (RNAP2 depletion experiments) and the requirement for active chromatin remodeling.",
+    "result_type": "MINOR"
+  }
+]

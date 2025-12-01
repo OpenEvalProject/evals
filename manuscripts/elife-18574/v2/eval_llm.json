@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors successfully expressed and purified recombinant human DNA2 (hDNA2) and its variants (D277A, K654R, D277A K654R) from Sf9 insect cells. Codon optimization improved yield 2-3 fold, and proteins were purified to near homogeneity with yields of ~330-390 \u03bcg per 3L culture, except for K654R variants which yielded only ~27 \u03bcg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 describe the protein expression and purification methodology with specific quantitative yields. The data is supported by Figure 1B and supplementary figures showing purification gels. The reduced yield of K654R variants is documented and represents a technical observation about protein stability or expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "hDNA2 nuclease preferentially degrades ssDNA and 5'-tailed DNA substrates. Without hRPA, ssDNA is degraded most efficiently, while dsDNA is largely refractory to cleavage. hRPA directs nuclease activity toward the 5' terminus and inhibits 3'-5' activity. In the presence of hRPA, Y-structured and 5'-tailed DNA are degraded 5-10 fold more efficiently than ssDNA. The nuclease activity is qualitatively similar to yeast Dna2 but ~2-fold less active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are well-supported by quantitative nuclease assays shown in Figure 1C-E and supplementary figures. The substrate preferences, RPA-dependence, and polarity of degradation are demonstrated with appropriate controls and quantification. The comparison with yeast enzyme is based on prior published work from the same laboratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The nuclease-deficient hDNA2 D277A variant binds ssDNA with high affinity (KD ~2 nM for 50 nt ssDNA). DNA binding affinity is determined by ssDNA length rather than specific structure. The protein exhibits preference for DNA structures with a free 5' end, as evidenced by distinct gel migration patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by electrophoretic mobility shift assays (EMSA) shown in Figure 1F-I and supplementary figures. The KD determination and substrate preference analysis are appropriately quantified. The observation about 5' end preference (C66) is based on gel migration patterns, which provides reasonable but indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "hDNA2 exhibits DNA-stimulated ATPase activity with greatest stimulation (~13-fold) by 5'-tailed DNA. The apparent kcat values are 6.9 \u00b1 1.1 s\u207b\u00b9 and 6.2 \u00b1 0.9 s\u207b\u00b9 for 5'-tailed substrates. With poly(dT), Vmax = 3.1 \u00b1 0.3 \u03bcM\u00b7min\u207b\u00b9 and KM = 115 \u00b1 45 nM. The nuclease activity interferes with ATPase measurements by degrading DNA cofactors. The ATPase activity qualitatively resembles yeast Dna2 but is ~10-fold less active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by comprehensive ATPase assays shown in Figure 2. The quantitative kinetic parameters are provided with error estimates. The interplay between nuclease and ATPase activities is demonstrated by comparing wild-type and D277A variants over time. The comparison with yeast enzyme is based on prior work from the same laboratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The nuclease-deficient hDNA2 D277A variant is a processive helicase capable of unwinding dsDNA fragments up to 2.3 kbp efficiently, with longer fragments (\u22659.4 kbp) unwound more slowly. DNA unwinding is fully dependent on hRPA and ATP, with 5'-3' polarity. Wild-type hDNA2 shows no detectable helicase activity because the nuclease degrades 5' overhangs required for helicase loading, thus masking the helicase capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C79-C94 are strongly supported by bulk helicase assays shown in Figure 3 and supplementary figures. The substrate length dependence, cofactor requirements, and polarity are well-documented. The key finding that nuclease activity masks helicase activity (C87-C91) is supported by comparing wild-type and D277A variants and is consistent with structural data from Zhou et al. 2015.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Single-molecule magnetic tweezers experiments demonstrate that hDNA2 D277A is a highly processive helicase that unwinds dsDNA slowly but consecutively. Most molecules showed unwinding of several kilobases, with some unwinding the full 6.1 kbp substrate. Unwinding rates were broadly distributed (0-40 bp/s) with a mean of 12.8 \u00b1 0.8 bp/s, ~3-fold slower than yeast Dna2. Unwinding continued after buffer washing, confirming high processivity. No strand-switching (rezipping) was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C105 are supported by single-molecule magnetic tweezers data shown in Figure 4. The quantitative unwinding rates are provided with error estimates (n=30 trajectories). The processivity is demonstrated by washing experiments. The comparison with yeast enzyme is based on prior work. The structural explanation for processivity (C104) cites Zhou et al. 2015 appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "hRPA is a unique and essential cofactor for hDNA2 helicase activity. Neither mtSSB nor SOSS can substitute for hRPA in promoting dsDNA unwinding. The hDNA2-hRPA interaction is largely species-specific, as yeast RPA promotes unwinding much less efficiently. For nuclease activity, yRPA can substitute for hRPA in directing 5' degradation, SOSS shows weak activity, while mtSSB dramatically inhibits all nuclease activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C111-C116 are supported by helicase and nuclease assays with various ssDNA-binding proteins shown in Figure 5 and supplementary figures. The specificity of the hRPA requirement for helicase activity is clearly demonstrated. The unexpected inhibition by mtSSB (C116) is well-documented but raises questions about mitochondrial function that the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The helicase of hDNA2 functionally integrates with BLM or WRN helicases to promote dsDNA degradation. Wild-type hDNA2 is more efficient than helicase-deficient variants in DNA degradation, particularly with WRN. The enzyme pairs show synergistic activity up to 6-fold higher than the sum of individual activities. This stimulation is specific to BLM and WRN; no enhancement is observed with RecQ1, RecQ5, or yeast Sgs1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C120-C129 are supported by DNA resection assays shown in Figure 6. The synergistic relationship is quantified and demonstrated with appropriate controls comparing wild-type and helicase-deficient hDNA2 variants. The specificity for BLM/WRN is shown by testing other helicases. The 5'-3' polarity interpretation (C128) is reasonable based on 3'-end labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "BLM and WRN functionally integrate with the hDNA2 helicase in a reciprocal manner. Helicase-deficient WRN K577M or BLM K695A stimulate hDNA2 D277A helicase activity ~7-fold or ~4-fold respectively, showing structural roles. Conversely, hDNA2 D277A stimulates WRN unwinding (~2.4-fold) more than the helicase-deficient double mutant (~1.5-fold), indicating the hDNA2 helicase contributes to WRN activity. For BLM, hDNA2 has only a structural role. The helicases function in an integrated manner reminiscent of prokaryotic resection machineries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C140 are supported by helicase assays under varying salt conditions shown in Figure 7. The reciprocal stimulation is demonstrated with appropriate helicase-deficient controls. The differential behavior with WRN versus BLM is clearly shown. The comparison to prokaryotic systems (C139) is reasonable and supported by citations. The specificity is demonstrated by testing other helicases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Quantitative comparison reveals that human DNA2 is approximately 3-10-fold slower than yeast Dna2, and human BLM/WRN are about an order of magnitude less active than yeast Sgs1. The authors speculate that the motor activities of DNA2 and RecQ helicases might have co-evolved to match each other's speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C151 are supported by comparative experimental data. However, C152 is explicitly speculative ('may suggest', 'might have co-evolved'). While the quantitative comparisons are sound, the evolutionary interpretation lacks direct evidence and represents hypothesis generation rather than a tested conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The concerted activity of hDNA2-WRN and hDNA2-BLM enzyme pairs results in overall stimulation of dsDNA degradation activity, with no such stimulation observed with Sgs1. The authors propose these complexes might be functional analogs of prokaryotic DNA-end processing machineries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 are supported by experimental data in Figure 6. However, C155 is speculative ('might be'), representing a hypothesis about evolutionary/functional relationships. While the comparison to prokaryotic systems is reasonable and supported by citations (C156-C162), the claim that these are 'functional analogs' requires more direct comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Although wild-type and helicase-deficient hDNA2 variants have the same nuclease activity on 5'-tailed DNA, wild-type enzyme is more proficient in DNA end resection under limiting concentrations. The authors propose that BLM and WRN provide lead motor activity while hDNA2 motor has an accessory function, possibly enhancing processivity or helping traverse strand discontinuities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C163 is well-supported by Figure 6 data. C164 is a reasonable inference from the data. However, C165 is explicitly speculative ('we believe', 'possibly'), and C166 is based on unpublished data ('data not shown'). C167 represents a conclusion that is supported but acknowledges the non-essential nature of the helicase contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The nuclease activity prevents helicase engagement by competing for the same substrate, so prominent DNA unwinding can only be observed with nuclease-deficient variants. This explains why nuclease-deficient hDNA2 is more toxic in vivo than double mutants lacking both activities - the unleashed helicase becomes toxic when uncontrolled. The motor activity is conserved in evolution from yeast to human.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are supported by experimental data comparing wild-type and mutant variants. C147 is a reasonable inference from the processivity data. C148-C149 are supported by citations to Duxin et al. 2012 and provide a mechanistic explanation for prior in vivo observations. The interpretation is logical and consistent with the biochemical data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The authors reconcile their findings with prior studies showing the helicase was dispensable in vivo. They suggest previous experiments using ectopic plasmid expression might have masked the stimulatory role due to overexpression effects. They propose the helicase plays a supportive role in DNA end resection of DSBs, reversed replication forks, and other S-phase structures, with failure causing G2 arrest and checkpoint signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C168 accurately cites prior work. C169-C170 are speculative explanations for discrepancies. C171 is supported by Figure 7 data. However, C172-C173 are explicitly speculative ('suggest', 'might play') and represent hypotheses about in vivo function that are not directly tested in this study. The proposals are reasonable but require validation in cellular systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "hDNA2 is overexpressed in various cancers with expression levels negatively correlating with disease outcome, suggesting it promotes viability of rapidly-dividing cancer cells. This identifies hDNA2 as a potential therapeutic target. The authors propose that nuclease inhibitors will unleash the helicase, contributing to cytotoxicity, but subsequent helicase inactivation might lead to resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C174-C175 are supported by citations to prior studies. However, C176-C177 and C180 are explicitly speculative. C178 is an inference from the current biochemical data. C179 cites prior observations. While the therapeutic implications are reasonable to discuss, these claims represent hypotheses about drug mechanism and resistance that are not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The introduction provides comprehensive background on DNA2 structure, function, and prior characterization in yeast and human systems. This includes domain organization, roles in Okazaki fragment processing, DSB resection, replication stress response, and the controversial nature of the helicase activity. The essentiality of nuclease versus helicase functions differs between yeast and human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C50 represent background knowledge and literature review, all supported by appropriate citations to prior work. These establish the context and rationale for the current study. The claims accurately represent the state of the field, including controversies (C48-C50) about helicase activity that motivated this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The capacity of human DNA2 to unwind DNA has been controversial, with prior studies reporting either undetectable or very weak activity. Previous work from the authors showed that yeast Dna2 possesses vigorous processive helicase activity masked by its nuclease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 accurately summarize prior literature and the authors' previous work, providing direct motivation for the current study. The citations are appropriate and the characterization of the controversy is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background on cellular localization and ssDNA-binding proteins: hDNA2 was initially described as mitochondrial before nuclear functions were determined. Mitochondria contain mtSSB while the nucleus contains the SOSS complex, which regulates DNA metabolism including recombination and resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 provide relevant background supported by appropriate citations. This contextualizes the experiments testing different ssDNA-binding proteins as cofactors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Background on helicase partners: hDNA2 functions with helicase partners in DNA end resection. BLM was initially identified as the partner, with WRN later shown to function redundantly or as the sole partner during reversed replication fork processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 accurately summarize prior literature with appropriate citations, providing context for the functional integration experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Background from authors' prior work: nuclease-deficient yeast Dna2 E675A exhibits vigorous helicase activity similar to Sgs1, one of the most active eukaryotic helicases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 cites the authors' previous work appropriately, providing comparative context for the human enzyme characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Background on essentiality: DNA2 involvement in cellular metabolism is absolutely dependent on nuclease activity in all organisms except for yeast checkpoint signaling. Nuclease-deficiency causes lethality in yeast and human cells. Helicase-deficient yeast mutants are viable under most conditions, but the helicase is essential in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C146 accurately summarize prior literature with appropriate citations, establishing the differential requirements for helicase function between organisms and motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Background on prokaryotic resection machineries: The RecBCD complex in E. coli and AddAB complex in B. subtilis consist of integrated helicase-nuclease activities. The AddB nuclease domain shows structural similarity to DNA2. The RecQ-RecJ complex provides complementary activities for the RecF recombination pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 provide relevant comparative background on prokaryotic systems with appropriate citations. This supports the authors' proposal that hDNA2-BLM/WRN complexes might be functional analogs.",
+    "result_type": "MINOR"
+  }
+]

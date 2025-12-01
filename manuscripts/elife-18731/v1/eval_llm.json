@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors developed a sequential choice task where monkeys made trial-by-trial save/spend decisions with reward accumulation governed by interest rates. Sequence progress (cumulative trials within a sequence) was internally tracked without external cues, and sequences were self-determined in length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C113-C115, and C118-C120 collectively describe a well-designed behavioral task with appropriate controls. The task design prevents motor preplanning (C4) and requires internal tracking of progress (C120), which are critical for interpreting neuronal responses. The mathematical formulation (C114) and self-determined nature (C3, C115) are clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Behavioral analysis showed that sequence progress influenced animals' choices and motivation: spend probability increased with progress and varied by interest rate (r=0.71, p=0.003), and reaction times decreased with progress (p<0.001) at rates dependent on planned sequence length. These effects occurred in both free choice and imperative tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 provide converging behavioral evidence with appropriate statistical support. The correlation between sequence length and interest rate (C7), the partial correlation controlling for confounds (C9), and the task-independent effects (C12) demonstrate that sequence progress is a behaviorally relevant parameter. The reaction time analyses provide an independent measure of motivational state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Control experiments from prior work (Hernadi et al., 2015) confirmed adaptive saving behavior: animals followed uncued interest rate changes (R=0.97, p<0.001), maximized reward rate (R=0.73, p=3.3\u00d710\u207b\u2077), tracked accumulated reward (p=5.06\u00d710\u207b\u2076), and choices were described by subjective value models (p<1.0\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 cite previously published control data with strong statistical support. These controls establish that the animals' behavior was economically rational and internally controlled, which is essential for interpreting neuronal activity as reflecting internal processes rather than simple stimulus-response associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C26",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "A substantial proportion of amygdala neurons (59% by single regression, 39% by multiple regression) showed gradually changing activity related to sequence progress across different trial periods. The majority (72%, p=1.0\u00d710\u207b\u00b9\u2079) showed increasing activity, most were specific to free choice vs. imperative task (p<0.001), and progress neurons were more frequent in basolateral than centromedial amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C26-C28, C30-C31, C33-C36 provide comprehensive characterization of progress-related neurons with appropriate statistical tests. The use of multiple regression approaches (C17, C30, C33) and sliding window analysis (C30) strengthens the findings. The task-specificity (C28) and anatomical distribution (C35-C36) are well-documented. The distinction between 'pure' progress neurons and those also coding other variables (C33-C34) is appropriately quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Example neurons showed phasic, gradually increasing responses during choice sequences that reset at sequence start, occurred specifically in cue/fixation phases, disappeared in the imperative task, and showed linear relationships with sequence progress in free choice but not imperative task. The task design matched sensory/motor/reward parameters between tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 describe detailed single-neuron examples with appropriate controls. The temporal specificity (C20), task-specificity (C22-C23), and matched task parameters (C24) rule out alternative explanations based on sensory accumulation or motor preparation (C25). The regression analysis (C23) provides quantitative support for the qualitative observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C32"
+    ],
+    "result": "Progress coding strength transiently declined during error trials and recovered on subsequent trials. Few neurons (6.6%) encoded both sequence progress and sequence length, suggesting distinct encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C32 provide evidence for behavioral relevance (C29) and functional specificity (C32) of progress signals. The error trial analysis (C29) demonstrates that progress signals track performance fluctuations. The low overlap with length coding (C32) supports the interpretation of distinct neural representations, though the inference about 'distinct encoding' could benefit from additional analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Progress-related activity adapted to planned sequence length: activity slopes were steeper for shorter sequences (slopes 7.33 vs. 2.14 for example neuron), with a linear relationship between slope and inverse sequence length at the population level. This adaptation was prospective, allowing prediction of sequence length from trial 2 onward (all p<0.001 except trial 1), and adapted rapidly across consecutive sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 provide strong evidence for adaptive coding with both single-neuron (C37) and population-level (C38-C39) support. The prospective nature (C41-C43) is critical for distinguishing this from simple reward expectation. The rapid adaptation across consecutive sequences (C44-C46) demonstrates dynamic adjustment. The statistical support is appropriate throughout. This is a key finding that distinguishes these responses from simple ramping activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Model comparison showed that an adaptive progress model (normalizing by sequence length) explained more responses (447 vs. 408) and provided better fits than non-adaptive progress, reward magnitude, elapsed time, and step-tuning models (all p<1.0\u00d710\u207b\u00b2\u2070 for best fits, p<1.0\u00d710\u207b\u2077 for R\u00b2 shifts). Both full and partial adaptation models fit equally well. The adaptive model advantage was specific to free choice task (p>0.1 in imperative task).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 provide comprehensive model comparison with strong statistical support. The comparison against multiple alternative models (C49-C50) rules out simpler explanations. The equivalence of full and partial adaptation (C51-C52) is appropriately acknowledged. The task-specificity of the adaptive model advantage (C53-C54) strengthens the interpretation that adaptation reflects internal planning. The statistical tests are appropriate for comparing nested and non-nested models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Some neurons showed relationships to reaction times (17-25% of neurons), more frequently in centromedial than basolateral amygdala (both p<0.005). Accounting for reaction times did not eliminate progress-related responses (117 neurons, 36% remained significant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 address an important potential confound. The control analysis (C57) demonstrates that progress coding is not simply explained by trial-by-trial motivation/attention reflected in reaction times. The regional difference (C56) is interesting but the functional interpretation is limited. This is an appropriate control analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64"
+    ],
+    "result": "Population decoding of sequence progress using nearest-neighbor classifiers achieved 78.13\u00b10.56% accuracy (max 89% in fixation), significantly above chance in all trial phases. Accuracy increased with neuron number, suggesting partly independent contributions. Decoding was above chance even for non-significant neurons, but depended strongly on individual neuron sensitivities. Considerable information was present in imperative task, though decoding was better in free choice (p=0.033).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C61, C63-C64 demonstrate robust population coding with appropriate cross-validation. The scaling with neuron number (C59) and contribution of individually non-significant neurons (C63) suggest distributed coding. The dependence on single-neuron sensitivity (C64) is expected. The comparison with imperative task (C60) is consistent with single-neuron findings. The decoding analysis appropriately complements the regression analyses and is not subject to the same assumptions about linearity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Regional decoding analysis showed that both basolateral and centromedial neurons decoded progress above chance, but with task period-specific differences: basolateral neurons showed higher accuracy in fixation period, while centromedial neurons showed higher accuracy in cue period. In cue phase, adding centromedial neurons increased accuracy even controlling for progress sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 reveal interesting regional and temporal dynamics in progress coding. The task period-specific regional differences (C66-C68) suggest functional specialization. The subset analysis controlling for sensitivity (C70) is sophisticated and strengthens the interpretation of regional differences. However, the functional interpretation of these differences is limited and somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The imperative control task matched sequence lengths to free choice, but behavior was externally instructed rather than self-controlled. Save/spend trial ratios were matched between tasks to allow reward anticipation (confirmed by reaction times). Tasks were counterbalanced in order, and sequence lengths were highly correlated between tasks (R=0.527, p=2.1\u00d710\u207b\u00b9\u00b2) with no significant difference in ranges (p=0.949).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 describe appropriate control task design. The matching of sequence lengths (C127-C128) and reward anticipation (C124) while varying internal vs. external control is critical for interpreting task-specific neuronal responses. The counterbalancing (C126) controls for order effects. This is a well-designed control that allows strong inferences about internal vs. external control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Neurophysiological recordings were performed in two adult male rhesus monkeys from dorsal, lateral, and basal amygdala using standard extracellular techniques. Activity was sampled from ~700 neurons, resulting in a database of 326 task-related neurons for statistical analysis. Sample sizes are typical for primate neurophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 describe standard methods with appropriate ethical approval (C106). The sample size of 2 animals (C107-C108) is indeed typical for primate single-unit studies, though this limits generalizability. The neuron sampling procedure (C110-C111) involved pre-selection for task-related activity, which is standard but means the reported percentages are relative to task-related neurons, not all amygdala neurons. This is appropriately acknowledged in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors conclude that amygdala neurons evaluate progress during planned, self-defined behavioral sequences. Progress signals showed phasic, gradually increasing responses in the absence of external cues or motor preplanning, were often specific to self-defined sequences, adapted prospectively to planned sequence length, and formed a high-accuracy population code. These signals may be essential for aligning choices with internal plans and may inform understanding of conditions with amygdala dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 represent the main conclusions and interpretations. The core finding (C73-C78) is well-supported by the data. The interpretation about functional significance (C79) is reasonable but somewhat speculative. The clinical implications (C80) are highly speculative and not directly tested. The conclusion that these signals 'evaluate progress' (C78) is an interpretation that goes beyond the data, which show correlation between neural activity and sequence progress, but causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The introduction establishes that the amygdala is a key valuation structure with roles in fear conditioning and reward processing, but its functions in advanced economic behaviors are poorly understood. Previous studies identified neural components of externally instructed sequences but not internal progress evaluation. The amygdala's anatomical connections and involvement in psychiatric conditions motivate studying its role in planned choice sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C96 provide appropriate background and motivation with extensive citations. The characterization of prior work (C91-C93) accurately identifies the gap addressed by the current study. The anatomical (C94) and clinical (C95-C96) motivations are reasonable. This is standard introductory material that appropriately frames the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors previously reported amygdala signals for immediate choices and forthcoming sequences, which cannot by themselves guide stepwise choices. The current study reports gradual responses during internally planned sequences (up to 2 minutes) that were mostly specific to free choices, adapted to planned sequence length, and provided a highly accurate progress code. These data suggest amygdala neurons encode internally evaluated progress and may support multistep decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 appropriately position the current findings relative to prior work. The distinction from previous findings (C99) is important. The summary of current findings (C100-C103) is accurate. The main conclusion (C104) is supported by the data, though the interpretation about 'internally evaluated progress' involves some inference. The functional speculation (C105) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  }
+]

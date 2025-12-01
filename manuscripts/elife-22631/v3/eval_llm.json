@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "OCT4 binds predominantly to distal regulatory elements in mouse ESCs. ChIP-seq identified 15,920 high-confidence OCT4 binding sites, with 75% corresponding to distal regulatory elements (high H3K4me1/low H3K4me3) and only 6.8% to promoters (high H3K4me3/low H3K4me1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide converging evidence from ChIP-seq, motif enrichment, and histone modification analysis (Figures 1C-D, Figure 1\u2014figure supplement 1) that OCT4 predominantly binds distal regulatory elements. The data are internally consistent and supported by appropriate controls and prior literature (C25).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "OCT4 is required to maintain chromatin accessibility at its binding sites in ESCs. Following OCT4 depletion, 72% of OCT4 targets showed significant reductions in chromatin accessibility and increased nucleosome occupancy, with distal regulatory elements more affected than promoters. Many OCT4-bound sites became completely inaccessible and lacked accessibility in OCT4-negative cells and tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by ATAC-seq and nucleosome occupancy data (Figures 1E-J, Figure 1\u2014figure supplements 2-3). The use of appropriate controls (Tn5 transposition control, multiple cell lines/tissues) and statistical thresholds (FDR < 0.05, fold change > 1.5) strengthens the conclusions. The pioneering role interpretation is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "OCT4 supports combinatorial transcription factor binding and pluripotency gene expression. Loss of OCT4 resulted in reduced SOX2 and NANOG binding at sites with decreased accessibility, which correlated with down-regulation of nearby pluripotency-associated genes. Down-regulated genes were significantly closer to OCT4 sites with reduced accessibility (median 16.2 kb) than those retaining accessibility (median 125.4 kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by integrated ChIP-seq and RNA-seq analyses (Figure 2). The correlation between accessibility loss, transcription factor binding reduction, and gene expression changes is well-documented. Gene ontology analysis confirms enrichment for pluripotency networks. The distance analysis (C37) provides spatial evidence linking OCT4 binding to gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "BRG1 is uniquely enriched at OCT4-dependent regulatory elements. Among nine chromatin remodeling complexes examined, only BRG1 showed appreciable correlation with OCT4-dependent chromatin accessibility. BRG1 was significantly enriched at OCT4-bound sites and OCT4-dependent ATAC peaks, with genome-wide co-localization of OCT4 and BRG1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are supported by systematic correlation analysis of multiple remodelers (Figure 3A) and BRG1 ChIP-seq data (Figures 3B-E). The comparative approach examining nine remodelers strengthens the specificity of the BRG1-OCT4 relationship. Genome-wide correlation analysis and published datasets provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "BRG1 is required for chromatin accessibility at OCT4 binding sites. Following BRG1 depletion, chromatin accessibility was reduced and nucleosome occupancy increased at the majority of OCT4 targets. Using stringent thresholds, 45% of OCT4-bound sites showed significantly reduced ATAC-seq signal, and 76% of OCT4-dependent sites were also BRG1-dependent. Loss of OCT4 or BRG1 resulted in similar reductions in chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by ATAC-seq and nucleosome occupancy data in BRG1-depleted cells (Figure 3I-J, Figure 3\u2014figure supplements 1B-F). The use of both stringent thresholds and unbiased clustering approaches provides robust evidence. The similarity between OCT4 and BRG1 depletion effects supports their functional interdependence. Controls showing maintained protein levels and cell morphology are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "OCT4 recruits BRG1 and the BAF complex to its target sites. OCT4, BRG1, and BAF subunit SS18 co-localize within nucleosome-depleted regions at OCT4 sites. Following OCT4 depletion, BRG1 and SS18 binding was dramatically reduced at OCT4 targets but not at OCT4-free sites, and this loss correlated with reduced chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by high-resolution ChIP-seq analysis (Figure 4A-E). The specificity of BRG1/SS18 loss at OCT4-bound versus OCT4-free sites (C53) is critical evidence for recruitment. The correlation between BRG1/SS18 loss and accessibility loss (C54) supports functional significance. Protein level controls rule out indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "BRG1 is required to sustain transcription factor binding at OCT4 target sites. Following BRG1 removal, 60% of distal OCT4 targets showed significant reductions in OCT4 binding, while SOX2 and NANOG binding was reduced at 16.7% and 22.9% of sites, respectively. Even at the most affected sites, transcription factor binding was not completely lost, but cells could not maintain the nucleosome-depleted state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by ChIP-seq data in BRG1-depleted cells (Figure 5A-D, Figure 5\u2014figure supplement 2). The differential effects on OCT4 versus SOX2/NANOG are interesting and well-documented. The observation that binding is reduced but not eliminated (C58) while nucleosome depletion is lost supports a model of BRG1-dependent maturation of pioneer binding events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Gene expression changes following BRG1 depletion correlate with altered transcription factor binding at nearby regulatory elements. Genes associated with sites requiring BRG1 for OCT4 binding showed reduced expression, while genes near sites with unchanged or increased binding showed increased expression. Distal OCT4 sites near BRG1-dependent genes experienced the largest reductions in transcription factor binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by integrated RNA-seq and ChIP-seq analysis (Figure 5E-H, Figure 5\u2014figure supplements 3-4). The correlation between binding changes and expression changes resolves previous inconsistencies in the literature. The bidirectional effects (both decreases and increases) are well-documented and mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "BRG1-dependency reflects temporal dynamics during reprogramming and development. Genes associated with BRG1-independent OCT4 binding were activated early during iPSC reprogramming, while BRG1-dependent genes were activated later. BRG1-dependent OCT4 sites were associated with genes expressed at later developmental stages and became accessible later during early mouse embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by analysis of published reprogramming time-course data (Figure 6A), GREAT annotation (Figure 6B), and developmental ATAC-seq/DNase-seq data (Figure 6C, Figure 6\u2014figure supplement 1). The convergence of evidence from multiple independent datasets (reprogramming and development) strengthens the conclusions. However, these are correlative analyses of published data rather than direct experimental tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "OCT4 functions as a pioneer factor in ESCs by recruiting BRG1 to create accessible chromatin and support combinatorial transcription factor binding. This pioneering activity is required not only during reprogramming but also in the established pluripotent state to maintain the pluripotency-associated transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C66-C68) integrate findings from multiple experiments (Figures 1-5). The model is well-supported by the collective evidence showing OCT4 binding at inaccessible sites, BRG1 recruitment, chromatin accessibility changes, and effects on transcription factor binding and gene expression. The conclusion extends beyond reprogramming to the established pluripotent state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Eukaryotic transcription factors face unique challenges compared to prokaryotic factors due to chromatin structure and shorter recognition sequences, requiring combinatorial binding and often pre-existing chromatin accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 represent established knowledge supported by appropriate citations to the literature. These provide necessary background context for understanding the significance of the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Pioneer transcription factors like FoxA1 can bind nucleosomal DNA and create accessible chromatin to support recruitment of non-pioneer factors. Mechanisms may involve structural mimicry of histones or recruitment of ATP-dependent chromatin remodelers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 represent established knowledge about pioneer factors supported by appropriate citations. These provide essential background for contextualizing the OCT4/BRG1 findings and comparing different pioneer factor mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The Yamanaka factors (OCT4, SOX2, KLF4) can reprogram somatic cells to iPSCs and are proposed to act as pioneer factors that can bind nucleosome-occupied target sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 represent established knowledge about iPSC reprogramming supported by appropriate citations. This provides important context for studying OCT4 as a pioneer factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C50",
+      "C55"
+    ],
+    "result": "BRG1 is essential for ESC pluripotency, early embryonic development, and iPSC reprogramming efficiency. Prior proteomic studies suggested physical interaction between BRG1 and OCT4, and recent work showed BRG1 recruitment to pluripotency enhancers during reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C50, C55 represent prior knowledge supported by appropriate citations. These provide important context for the functional significance of the OCT4-BRG1 relationship and consistency with recent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "OCT4 may dynamically sample target sites through nucleosomal DNA binding, but requires BRG1 for stable binding. This model is consistent with enhanced OCT4 binding when BRG1 is included in reprogramming cocktails and OCT4's unique requirement in iPSC reprogramming. Co-binding factors like OTX2 may shape OCT4 binding in different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 represent mechanistic interpretations and models based on the current findings integrated with prior literature. The model is well-supported by the experimental data and consistent with published observations, though some aspects remain speculative (e.g., dynamic sampling).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Unlike FoxA1, which can directly alter nucleosomal structure, OCT4 requires cooperation with the chromatin remodeler BRG1 to support transcription factor binding and chromatin accessibility. This dependency on chromatin remodelers may be a common feature of pioneer factors, as observed for GATA3 and others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 compare OCT4's mechanism to other pioneer factors. The distinction from FoxA1 (C75) is well-supported by the experimental data showing BRG1 requirement. The comparison to GATA3 (C76) and broader generalization (C77) are supported by appropriate citations, though the extent of this mechanism across pioneer factors remains to be fully determined.",
+    "result_type": "MAJOR"
+  }
+]

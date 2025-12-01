@@ -1,0 +1,2199 @@
+{
+  "submission": {
+    "id": "fad4ed63-680d-47fd-8047-ac9366cf3521",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:38:37.586384Z",
+    "updated_at": "2025-11-30T23:38:37.586384Z"
+  },
+  "content": [
+    {
+      "id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "submission_id": "fad4ed63-680d-47fd-8047-ac9366cf3521",
+      "content_type": "manuscript",
+      "content_text": "# Evolution of substrate specificity in a retained enzyme driven by gene loss\n\n## Authors\n\n- Ana Lilia Ju\u00e1rez-V\u00e1zquez<sup>1</sup>\n- Janaka N Edirisinghe<sup>2</sup>\n- Ernesto A Verduzco-Castro<sup>1</sup>\n- Karolina Michalska<sup>4</sup>\n- Chenggang Wu<sup>6</sup>\n- Lianet Noda-Garc\u00eda<sup>1</sup>\n- Gyorgy Babnigg<sup>4</sup>\n- Michael Endres<sup>4</sup>\n- Sof\u00eda Medina-Ru\u00edz<sup>1</sup>\n- Juli\u00e1n Santoyo-Flores<sup>7</sup>\n- Mauricio Carrillo-Tripp<sup>7</sup>\n- Hung Ton-That<sup>6</sup>\n- Andrzej Joachimiak<sup>4</sup>\n- Christopher S Henry<sup>2</sup>\n- Francisco Barona-G\u00f3mez<sup>1</sup> ([ORCID: 0000-0003-1492-9497](https://orcid.org/0000-0003-1492-9497)) \u2020\n\n### Affiliations\n\n1. Evolution of Metabolic Diversity Laboratory Unidad de Gen\u00f3mica Avanzada (Langebio), Cinvestav-IPN Irapuato Mexico\n2. Computing, Environment and Life Sciences Directorate Argonne National Laboratory Lemont United States\n3. Computation Institute University of Chicago Chicago\n4. Midwest Center for Structural Genomics, Biosciences Division Argonne National Laboratory Lemont United States\n5. Structural Biology Center, Biosciences Division Argonne National Laboratory Lemont United States\n6. Department of Microbiology and Molecular Genetics University of Texas Health Science Center Houston United States\n7. Cinvestav-IPN Mexico\n8. Department of Biochemistry and Molecular Biology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe connection between gene loss and the functional adaptation of retained proteins is still poorly understood. We apply phylogenomics and metabolic modeling to detect bacterial species that are evolving by gene loss, with the finding that Actinomycetaceae genomes from human cavities are undergoing sizable reductions, including loss of L-histidine and L-tryptophan biosynthesis. We observe that the dual-substrate phosphoribosyl isomerase A or priA gene, at which these pathways converge, appears to coevolve with the occurrence of trp and his genes. Characterization of a dozen PriA homologs shows that these enzymes adapt from bifunctionality in the largest genomes, to a monofunctional, yet not necessarily specialized, inefficient form in genomes undergoing reduction. These functional changes are accomplished via mutations, which result from relaxation of purifying selection, in residues structurally mapped after sequence and X-ray structural analyses. Our results show how gene loss can drive the evolution of substrate specificity from retained enzymes.\n\n## Introduction\n\nGenome dynamics, or the process by which an organism gains or loses genes, plays a fundamental role in bacterial evolution. Acquisition of new functions due to horizontal gene transfer (HGT) or genetic duplications is broadly documented (Wiedenbeck and Cohan, 2011; Blount et al., 2012). Gene loss has also been implicated in rapid bacterial adaptation after experimental evolution (Hottes et al., 2013), but this process has not yet been confirmed in natural populations. Phylogenomics involves the comparative analysis of the gene content of a set of phylogenetically related genomes to expose new insights into genome evolution and function, and this approach has been classically applied to study how gene gain is associated with functional divergence in bacteria (Treangen and Rocha, 2011). Here, we propose that bacterial phylogenomics can be similarly applied to study evolution by gene loss (Albalat and Ca\u00f1estro, 2016), specifically where enzymes are evolving within bacterial species that are undergoing genome decay (Adams et al., 2014; Price and Wilson, 2014).\n\nThe current bias toward in-depth functional analysis of proteins from genomes that are undergoing gene gain by HGT versus gene loss by decay is likely due to two factors. First, in genomes that are undergoing decay, there is a relaxation in the selection pressure that increases mutation rates in functioning proteins as these proteins begin to contribute less to cell fitness (Wernegreen and Moran, 1999; McCutcheon and Moran, 2011). As a result, these proteins display higher-than-normal mutation rates, making in vitro analysis of protein function a challenge (Cou\u00f1ago et al., 2006). Second, there is only a brief window of opportunity to study the evolution of most proteins during genome decay in bacteria. This is because most proteins are monofunctional, and they are rapidly removed from the bacterial genome once they become dispensable due to gene loss. To overcome this limitation, we propose to use a bifunctional enzyme to study the evolution of substrate specificity after gene loss, as these enzymes may continue to operate when only one of their associated metabolic pathways becomes dispensable. We use genome-scale metabolic models to determine when each pathway is lost as well as when they become non-functional (Henry et al., 2010).\n\nThe phylum Actinobacteria, Gram-positive organisms with high (G+C)-content, are ubiquitous and show one of the highest levels of bacterial metabolic diversity (Barka et al., 2016). This phylum is known to display significant metabolic specialization, and phylogenomics has been previously applied to correlate genome dynamics with metabolic pathway evolution and enzyme specialization (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Cruz-Morales et al., 2016). Moreover, within the deep-rooted family Actinomycetaceae, phylogenetic analyses have suggested the occurrence of genome decay (Zhao et al., 2014). Furthermore, we have observed that many actinobacterial species lack a trpF gene, while retaining a copy of the potentially bi-functional priA gene. The PriA enzyme is capable of operating in the L-histidine biosynthesis pathway as HisA, while also functioning in the L-tryptophan biosynthesis pathway as TrpF (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Barona-G\u00f3mez and Hodgson, 2003). As such, we suggest PriA is an ideal candidate to study protein evolution during the process of genome decay.\n\nThe product of the priA gene, which is a hisA homolog, catalyzes two analogous isomerizations of structurally similar substrates: (i) the conversion of N-(5'-phosphoribosyl)-anthranilate (PRA) into 1-(O-carboxyphenylamino)-1'-deoxyribulose-5'-phosphate (CdRP) (TrpF or PRA isomerase activity); and (ii) the conversion of N-[(5-phosphoribosyl) formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (ProFAR) into N-[(5-phosphoribulosyl)formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (PRFAR) (HisA or ProFAR isomerase activity) (Barona-G\u00f3mez and Hodgson, 2003). Moreover, evolution of PriA in response to genome dynamics has lead to the appearance of the SubHisA and PriB subfamilies, which have been shown to have different substrate specificities (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016) (Figure 1). While these enzyme subfamilies were respectively discovered using phylogenetics in the genera Corynebacterium and Streptomyces, no study has ever centered on the metabolic genes associated with priA in the deep-branching organisms belonging to the phylum Actinobacteria, such as those of the family Actinomycetaceae where the transition from HisA into PriA must have taken place (Noda-Garc\u00eda et al., 2015; Plach et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig1-v2.jpg)\n\n**Figure 1.:** Selected L-tryptophan (blue) and L-histidine (red) biosynthetic enzymes are shown. The committed reaction catalyzed by PriA and PriB, or phosporibosyl isomerase A or B in Actinobacteria (dashed arrows), is independently catalyzed by the enzymes TrpF or PRA isomerase, and HisA or ProFAR isomerase (standard arrows) in most bacteria. Furthermore, the SubHisA enzyme, resulting from divergent evolution after an event of HGT and positive selection in certain Corynebacterium species, is also shown.\n\nHere we exploit the intrinsic features of PriA to explore the link between the evolution of enzyme function and gene loss within the family Actinomycetaceae, which includes many human oral cavity commensal and pathogenic organisms (Zhao et al., 2014; Yeung, 1999; K\u00f6n\u00f6nen and Wade, 2015). We classify this bacterial family into four major evolutionary lineages, including two specific for the genus Actinomyces. One of these lineages shows extensive gene loss, including his and trp biosynthetic genes. After the loss of constrictions imposed by the retention of biosynthetic pathways, we found that evolutionary patterns correlate with the sub-functionalization, yet not necessarily specialization, of PriA into two new subfamilies, which we named SubHisA2 and SubTrpF. We support this classification by comprehensive in vivo and in vitro biochemical characterization of a dozen PriA homologs from Actinomyces and closely related taxa. X-ray structural analysis and molecular docking simulations were further used to start investigating the evolution of substrate specificity by gene loss in structural grounds. Our results demonstrate that gene loss can drive functional protein divergence, and provide unprecedented insights into the evolution of enzyme substrate specificity in retained enzymes after gene loss in the bacterial genome.\n\n## Results\n\n### Phylogenomic resolution of the aAActinomycetaceae family\n\nTo find evidence of gene loss in deep-branching organisms of the phylum Actinobacteria, specifically within genera belonging to the order Actinomycetales, we selected 133 representative organisms from 18 families with available genome sequences (Figure 2A; Figure 2\u2014source data 1). We then aimed at resolving their taxonomic relationships using 35 single-copy proteins that are conserved among all 133 genomes analyzed (see Materials\u00a0and\u00a0methods and Figure 2A \u2013 Figure 2\u2014source data 2). We concatenated these proteins to reconstruct their phylogeny, and supported the resulting tree by significant Bayesian posterior probabilities. The phylogenetic tree shows several long branches, which correspond to the families Actinomycetaceae, Micrococcaceae, Propionibacteriaceae and Coriobacteriaceae, and to the genus Tropheryma. The tree also includes a clade with the family Bifidobacteriaceae as the root of six different sister families, including the Actinomycetaceae (blue branch and grey box in Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Protein-based phylogeny of 133 representative deep-branching Actinobacteria using Bayesian reconstruction. The tree shows a clade with the family Bifidobacteriaceae as the root of the families Dermabacteraceae, Cellulomonadaceae, Demequinaceae, Jonesiaceae, Promicromonosporaceae and Actinomycetaceae, shown in blue and highlighted with a grey box. (B) Relationship between genome size and percentage of (G+C) content. The color key used for taxonomic associations is provided at the bottom, and it is the same for both panels.\n\nAs expected, all of the organisms contained in the rapidly evolving lineages trended towards smaller genomes and lower (G+C)-content (Figure 2B). The Actinomycetaceae genomes were characterized by particularly broad variances in genome size and (G+C)-content, with the variation being most apparent for organisms belonging to the genus Actinomyces. Representative organisms of this genus, e.g. A. sp. oral taxon 848 str. F0332, A. oris MG-1, A. neuii, and A. odontolyticus, are distributed throughout the Actinomycetaceae clade (blue dots in Figure 2B). Given these observations, we selected the genus Actinomyces as the ideal target for a deeper analysis of rapid evolution by gene loss.\n\nWe then carried out a phylogenomic analysis using the genome sequences of 33 organisms from the family Actinomycetaceae (Figure 3 - Figure 3\u2014source data 1), from which 27 are classified as Actinomyces (Zhao et al., 2014; Yeung, 1999), including the model strain A. oris MG-1 sequenced in this study. The remaining sequences came from the genera Actinotignum, formerly Actinobaculum (K\u00f6n\u00f6nen and Wade, 2015), Trueperella, Varibaculum and Mobiluncus. As an out-group we used the genera Bifidobacterium, which included eight genome sequences. We identified a total of 205 single-copy proteins shared among all these 41 organisms, which were used for constructing a concatenated phylogenetic tree by Bayesian (Figure 3; Figure 3\u2014source data 2), and maximum likelihood approaches (Figure 3\u2014figure supplement 1). Based in this analysis, the family Actinomycetaceae separated into four evolutionary lineages contained in three sub-clades: Lineage I, which includes A. sp. oral taxon 848 str. F0332 (Org10); lineage II, which includes A. oris MG-1 (Org21); and lineages III and IV, which form a monophyletic group and include A. neuii (Org27) and A. odontolyticus (Org41), respectively. Remarkably, these lineages group depending on their mammalian hosts and human body niches from which they were isolated (Figure 3 - Figure 3\u2014source data 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig3-v2.jpg)\n\n**Figure 3.:** The tree was constructed using 205 single-copy conserved proteins using Bayesian methods. Only posterior probabilities are shown but significant bootstrap values close to 100 using maximum likelihood were also calculated (Figure 3\u2014figure supplement 1). A new classification of the family, into four major groups, is proposed: lineage I (orange); lineage II (blue); lineage III, (green); and lineage IV (red). Based in the species phylogenetic tree of Figure 2A, we selected as out-group the genus Bifidobacterium. Occurrence of L-histidine (His, black) and L-tryptophan (Trp, grey) biosynthetic genes as revealed by standard genome annotation using RAST is shown next to the tree. Each square represents a complete pathway including all expected genes (10 and 7 for the his and trp genes respectively) up to 90%. The only missing his gene refers to the enzyme histidinol-phosphatase (EC 3.1.3.15), which belongs to a broad enzyme family difficult to annotate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The phylogenetic tree shows four major groups: lineage I (orange clade), lineage II (blue clade), lineage III (green clade) and lineage IV (red clade). Bootstrap values are shown. Representative sequences from the closely related genus Bifidobacterium were used as out-group (purple clade). Name nomenclature of organisms used in the text is provided. Both phylogenetic trees using different algorithms supported the taxonomic relationships between the selected taxa.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Lineages and the out-group are as defined in the text. A. Percentage of (G+C)-content in whole genomes, where each point in the box-plot represent a genome. B. Genome size (Mbp), where each point in the box-plot represents a genome. C. Number of coding sequences, where each point in the box-plot represents a CDS. D. Number of subsystems based in RASTtk annotation, where each point represents a subsystem. The median is highlighted with a black line. All the box-plots were created with R package.\n\nOur phylogenetic analysis also shows that 25 of the 27 Actinomyces species analyzed have a paraphyletic origin leading to lineages II and IV. These two lineages can be distinguished not only according to their genome size and (G+C)-content, but also to the number of coding sequences (CDS) and metabolic functions or subsystems (Figure 3\u2014figure supplement 2). Specifically, as revealed by genome annotation using RAST (Aziz et al., 2008), lineage II, which has the highest (G+C)-content (68.32% on average) and the biggest genome size (3.04 Mbp on average), has the largest number of amino acid biosynthetic pathways (see next section). This observation contrasts with the results obtained for lineage IV, which shows reduced (G+C)-content (60.66% on average) and genome size (2.19 Mbp on average), as well as less amino acid biosynthetic pathways. Indeed, the genomic differences between lineages II and IV were found to be statistically significant, including the presence or absence of the his and trp biosynthetic genes (Figure 3; Figure 3\u2014figure supplement 2\u2014source data 1). We explore this observation in more detail by constructing metabolic models for all of the analyzed genomes in the following section.\n\n### Metabolic evolution of the Actinomycetaceae family\n\nIn order to reduce the risk of overreaching conclusions based only in homology sequence searches, we constructed genome-scale metabolic models of all 33 organisms comprising this family, plus the nine outgroup Bifidobacterium species (see Materials and methods). Next, flux balance analysis was applied to predict the minimal nutrients required to support growth for each genome. Finally, after automated curation of the metabolic reconstructions (Satish Kumar et al., 2007), which includes not only homologous but also analogous enzymes, we classified each reaction in each model as: (i) essential for growth on predicted minimal media; (ii) functional but not essential; and (iii) nonfunctional. All model results, which represent the highest quality functional annotation available for metabolism, are provided as source data of Figure 4: model overview (Figure 4\u2014source data 1), reaction content and classifications (Figure 4\u2014source data 2) and predicted minimal media (Figure 4\u2014source data 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig4-v2.jpg)\n\n**Figure 4.:** The Venn diagrams show the overlap in gene-associated reactions included in models of genomes of lineage I (A), lineage II (B), lineage III (C), and lineage IV (D). The diagrams for lineages I and III show the overlap of all models in these lineages, while the lineage II and IV diagrams show the overlap of a subset of models sampled based on their metabolic diversity. Overlap in gene-associated reaction content for each of the core lineage models (E), which are comprised of conserved reactions present in at least 75% of the models in each lineage, is also shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The tree is the same as in Figure 3, but without the names of organisms to facilitate visual inspection. Occurrence of amino acid biosynthetic pathways, denoted with standard nomenclature, is shown. Each square represents a complete pathway including all expected genes up to 90%. His and Trp pathways are highlighted with an asterisk.\n\nThe lineage II models were generally the largest with an average of 1019 gene-associated reactions, which is to be expected since the lineage II genomes are also the largest. These models also had the fewest predicted essential nutrients with an average of 19 nutrients required. This result indicates that most biosynthetic pathways for essential biomass precursors are complete in the lineage II models. The lineage I and IV models were substantially smaller with an average of 850 and 843 gene-associated reactions, respectively. Although similar in size, the lineage I models had more required nutrients (25 on average) compared with the lineage IV models (22 on average). Finally, the lineage III models were the smallest of all, with an average of 817 gene-associated reactions. Surprisingly, these models still had fewer required nutrients than the lineage I models (23 on average). These results provide a meaningful biochemical context in which biosynthetic enzymes are evolving.\n\nTo study the metabolic diversity of each lineage in more detail, we performed a comparative analysis of the gene-associated reactions of our models (Figure 4A\u2013D). Given the large metabolic and genetic diversity, we used less stringent parameters than those used for our core genome analysis sustaining our phylogenomics of previous section (see Materials and methods). This comparative analysis revealed that the lineage II genomes were the least diverse, with a very large fraction of reactions present in all models, including those for amino acid biosynthesis (Figure 4\u2014figure supplement 1). All other lineages were more diverse. Interestingly, a comparative analysis of our models found that all models across all lineages share a common conserved core of 695 reactions. When we similarly compute a conserved core for each individual lineage (Figure 4E), we find that the 89% of reactions in the conserved core for each lineage are contained in the conserved core across all lineages.\n\nFrom these modeling results, we clearly see that lineages I, III and IV are all undergoing the process of gene loss, resulting in a reduction towards a common set of core metabolic pathways. This explains the rapid development of diversity within each lineage, as well as the variability in minimal required nutrients predicted by our models. We can also apply our models to study the gene loss process from a mechanistic perspective by looking for patterns in the presence and absence of genes and reactions for two specific pathways of interest: L-tryptophan and L-histidine biosynthesis. Our models predicted genomes in lineages I, III, and IV (but none from lineage II) that required these amino acids as a supplemental nutrient, indicating the loss of these biosynthetic pathways in these organisms. We also observed that the presence of the priA gene, which takes part in both L-tryptophan and L-histidine biosynthesis, closely tracked with the presence of these pathways in these genomes (Figure 5A). This observation suggests that gene losses could have an effect on the evolution of the retained PriA enzymes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig5-v2.jpg)\n\n**Figure 5.:** (A) Analysis of the occurrence of his and trp biosynthetic genes (priA is included in both pathways), marked as absent (white) or present (gray), using the phylogenomics species tree of Figure 3 as a map (same color code). The missing his gene, when almost the entire pathway is present, refers to the enzyme histidinol-phosphatase (EC 3.1.3.15), which belongs to a broad enzyme family difficult to annotate. (B) Same gene occurrence analysis using the PriA phylogenetic tree as a map. Three evolutionary scenarios where PriA is coevolving with the occurrence of his and trp genes, and in agreement with the intensity of purifying selection (Table 1, gradient shown in the left-hand side of the panel), are marked as H1 (purple), H2 (orange), and H3 (yellow). The same color code as in Figure 3 is used, and the selected enzymes that were biochemically characterized are underlined.\n\n### Molecular evolution of PriA within the family Actinomycetaceae\n\nTo bring down these observations at the enzyme level, we carried out comparable phylogenetic analyses of PriA (Figure 5), and we measured the evolutionary rate of its gene by estimating the dN/dS ratio (\u03c9 value) for each resulting clade (Table 1). The PriA phylogeny was complemented with an analysis of the occurrence of the his and trp biosynthetic genes, including priA for both pathways (Figure 5; Figure 5\u2014source data 1). Excluding the out-group, our phylogenetic reconstructions show that PriAs from different lineages are grouped in three sub-clades, highlighted in purple, orange, and yellow boxes in Figure 5A, which have distinguishable selection pressures operating upon them. This analysis also shows that PriA coevolves with the presence or absence of the his and trp biosynthetic genes (Figure 5B).\n\n**Table 1.**\n Selective pressures in PriA homologs from H1, H2 and H3 hypotheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Hypothesis</th>\n      <th>dN/ds</th>\n      <th>dN</th>\n      <th>ds</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>H1</td>\n      <td>0.0636</td>\n      <td>0.3151</td>\n      <td>4.9559</td>\n    </tr>\n    <tr>\n      <td>H2</td>\n      <td>0.0901</td>\n      <td>1.8687</td>\n      <td>20.736</td>\n    </tr>\n    <tr>\n      <td>H3</td>\n      <td>0.1459</td>\n      <td>1.8703</td>\n      <td>12.8227</td>\n    </tr>\n  </tbody>\n</table>\n\nThe purple box denotes a paraphyletic clade that includes PriAs from lineage II, as well as the PriAs from the genus Bifidobacterium used as an out-group. The dN/dS value of this lineage, which retains the entire set of his and trp genes, is 0.0636, consistent with purifying selection. The orange and yellow boxes denote polyphyletic groups that include PriAs from lineages I, III, and IV. Interestingly, the included taxa within these lineages lost their extant his or trp genes differentially (Figure 4A), and their dN/dS values are 0.0901 and 0.1459, respectively, which is suggestive of relaxation of purifying selection. Moreover, the higher dN/dS values in the clade shown in yellow seem to be due to accumulation of nonsynonymous substitutions, in other words, higher values of dN that may relate to changes in enzyme specificity (Table 1).\n\nThus, on the basis of these evolutionary observations, we proposed three functional and testable hypotheses related to the emergence of novel PriA enzyme subfamilies in the bacterial family Actinomycetaceae (Figure 6A). In H1 (purple box) we assume that PriA homologs are conserved as enzymes with dual-substrate specificity, capable of converting both PRA and ProFAR substrates. In H2 (orange box) and H3 (yellow box) the PriA homologs are expected to be monofunctional isomerases, yet not necessarily specialized enzymes, capable of converting ProFAR or PRA as substrates, respectively. Moreover, given that relaxation of purifying selection is associated with the latter two hypothetical scenarios, H2 and H3, our model predicts monofunctional, yet not necessarily specialized enzymes capable of supporting growth. Representative enzymes of each hypothesis were selected for further biochemical characterization, as described.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig6-v2.jpg)\n\n**Figure 6.:** (A) Evolutionary hypothesis (H1, H2 and H3) with functional implications leading to PriA enzyme subfamilies, expressed as biochemical conversions, as obtained from Figure 5. (B) Comparison of the catalytic efficiencies (kcat/KM) of selected enzymes from different scenarios, including the three postulated evolutionary hypotheses. Values for ProFAR (x axis) and PRA (y axis) isomerase activities, expressed as log10, are compared. Data from PriAs of Bifidobacterium (purple circle), PriA from H1 (purple triangle), SubHisA2 from H2 (orange), and SubTrpF from H3 (yellow pentagon) is included.\n\n### Biochemical confirmation of the evolution of PriA by gene loss\n\nBefore evaluating the functional implications of our evolutionary hypotheses from previous section, we confirmed that the priA gene is functional in Actinomyces. For this purpose, we used allelic exchange to delete the priA gene from the chromosome of A. oris MG-1 (Org21) (Wu and Ton-That, 2010; Delisle et al., 1978), a model strain that belongs to lineage II and whose genome was sequenced as part of this study. Mutation of priA in this organism was confirmed by sequencing the entire genome of the resulting \u0394priA mutant strain (Supplementary file 1). Determination of the growth requirements of this strain, termed \u0394priA_Org21, showed that priA mutation leads to L-tryptophan auxotrophy, demonstrating the physiological relevance of PriA in this organism. Unexpectedly, however, the \u0394priA mutant remains prototrophic for L-histidine, which could not be explained on the basis of current data. Thus, it is tempting to speculate that this phenotype may find an explanation in the previously reported association between enzyme promiscuity and genome decay (Adams et al., 2014; Price and Wilson, 2014).\n\nTo biochemically evaluate the functional implications of our evolutionary hypotheses (Figure 6A), we characterized nine selected PriAs, both in vivo, by complementation assays using trpF and hisA Escherichia coli mutants; and in vitro, by estimation of their Michaelis Menten steady-state enzyme kinetic parameters, as we have previously done (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Noda-Garc\u00eda et al., 2010). The results of these experiments are included in Table 2. First, in vivo complementation assays using appropriate priA constructs, showed that PriA homologs from Org15, Org21, and Org22 (H1) were able to rescue growth of both HisA and TrpF deficient strains. Second, priA homologs from Org34 and Org36 (H2) complemented the HisA activity and, to a lesser extent, the TrpF activity. Third, those priA homologs from Org10, Org13, Org39 and Org41 (H3) were able to complement the TrpF activity but not the HisA activity.\n\n**Table 2.**\n Biochemical characterization of PriA, SubHisA2 and SubTrpF homologs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"3\">Enzymes</th>\n      <th colspan=\"2\">In vivo activity</th>\n      <th colspan=\"6\">In vitro activity *</th>\n    </tr>\n    <tr>\n      <th colspan=\"2\"></th>\n      <th colspan=\"3\">ProFAR isomerase (HisA)</th>\n      <th colspan=\"3\">PRA isomerase (TrpF)</th>\n    </tr>\n    <tr>\n      <th>HisA</th>\n      <th>TrpF</th>\n      <th>KM (\u00b5M)</th>\n      <th>kcat (s\u22121)</th>\n      <th>kcat/KM (s\u22121\u00b5M\u22121)</th>\n      <th>KM (\u00b5M)</th>\n      <th>kcat (s\u22121)</th>\n      <th>kcat/KM (s\u22121\u00b5M\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PriA_Org3_B. longum</td>\n      <td>+</td>\n      <td>+</td>\n      <td>2.7\u00a0\u00b1\u00a00.5</td>\n      <td>0.4\u00a0\u00b1\u00a00.1</td>\n      <td>0.1</td>\n      <td>6.1\u00a0\u00b1\u00a00.1</td>\n      <td>2.1\u00a0\u00b1\u00a00.5</td>\n      <td>0.3</td>\n    </tr>\n    <tr>\n      <td>PriA_Org1_B. gallicum</td>\n      <td>+</td>\n      <td>+</td>\n      <td>1.7\u00a0\u00b1\u00a00.3</td>\n      <td>0.3\u00a0\u00b1\u00a00.1</td>\n      <td>0.2</td>\n      <td>40\u00a0\u00b1\u00a09</td>\n      <td>3.5\u00a0\u00b1\u00a00.1</td>\n      <td>0.09</td>\n    </tr>\n    <tr>\n      <td>PriA_Org6_B. adolescentis</td>\n      <td>+</td>\n      <td>+</td>\n      <td>17\u00a0\u00b1\u00a04.3</td>\n      <td>2.3\u00a0\u00b1\u00a00.01</td>\n      <td>0.1</td>\n      <td>21\u00a0\u00b1\u00a05</td>\n      <td>0.9\u00a0\u00b1\u00a00.2</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td>PriA_Org15_A. urogenitalis</td>\n      <td>+</td>\n      <td>+</td>\n      <td>4.0\u00a0\u00b1\u00a00.9</td>\n      <td>0.2\u00a0\u00b1\u00a00.03</td>\n      <td>0.04</td>\n      <td>23\u00a0\u00b1\u00a06.5</td>\n      <td>0.5\u00a0\u00b1\u00a00.05</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>PriA_Org22_A. sp. oral taxon 171</td>\n      <td>+</td>\n      <td>+</td>\n      <td>3\u00a0\u00b1\u00a00.3</td>\n      <td>0.3\u00a0\u00b1\u00a00.09</td>\n      <td>0.1</td>\n      <td>8\u00a0\u00b1\u00a02</td>\n      <td>0.4\u00a0\u00b1\u00a00.1</td>\n      <td>0.04</td>\n    </tr>\n    <tr>\n      <td>PriA_Org21_A. oris MG-1</td>\n      <td>+</td>\n      <td>+</td>\n      <td>10\u00a0\u00b1\u00a02</td>\n      <td>0.2\u00a0\u00b1\u00a00.09</td>\n      <td>0.02</td>\n      <td>30\u00a0\u00b1\u00a07</td>\n      <td>0.3\u00a0\u00b1\u00a00.03</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>SubHisA2_Org34_A. vaccimaxillae</td>\n      <td>+</td>\n      <td>+</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SubHisA2_Org36_A. cardiffensis</td>\n      <td>+</td>\n      <td>+</td>\n      <td>56\u00a0\u00b1\u00a017</td>\n      <td>0.14\u00a0\u00b1\u00a00.05</td>\n      <td>0.002</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n    </tr>\n    <tr>\n      <td>SubTrpF_Org10_A. sp. oral taxon 848</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>0.0001</td>\n    </tr>\n    <tr>\n      <td>SubTrpF_Org13_A. graevenitzii</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SubTrpF_Org39_A. sp. oral taxon 180</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>SubTrpF_Org41_A. odontolyticus</td>\n      <td>\u2212</td>\n      <td>+</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>n.d.</td>\n      <td>8.5\u00a0\u00b1\u00a00.9</td>\n      <td>0.15\u00a0\u00b1\u00a00.06</td>\n      <td>0.02</td>\n    </tr>\n  </tbody>\n</table>\n\n_* Each data point comes from at least three independent determinations using freshly purified enzyme. n.d., activity not detected, even using active-site saturation conditions. Empty entries reflect our inability to properly express and/or solubilize these proteins. The detection limits for the PRA and ProFAR isomerase assay used in the present study are 0.0001 \u03bcM\u22121s\u22121 and 0.001 \u03bcM\u22121s\u22121, respectively (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Noda-Garc\u00eda et al., 2010)._\n\nThe priA homologs were then heterologously expressed and purified to homogeneity in E. coli (see Materials and methods). Only five enzymes out of nine were found to be soluble and could be purified as needed, which agrees with the high mutation rate encountered in the\u00a0previous section. Fortunately, we obtained Michaelis Menten enzyme kinetics parameters for representative enzymes of all three evolutionary hypotheses, namely, three enzymes belonging to H1 and one enzyme each for H2 and H3, with the following results (Figure 6B and Table 2). First, enzymes from Org15, Org21, and Org22 (H1) showed dual-substrate specificity but also poor catalytic efficiencies, namely, kcat/KMProFAR from 0.01 to 0.1 \u03bcM\u22121s\u22121 and kcat/KMPRA around 0.01 \u03bcM\u22121s\u22121. Second, only ProFAR isomerase activity could be detected in vitro using pure enzyme from Org36 (H2), with a catalytic efficiency of kcat/KMProFAR of 0.002 \u03bcM\u22121s\u22121, but not PRA isomerase activity, as suggested by our highly sensitive in vivo complementation assay. Third, PRA isomerase activity as the sole activity present in H3 was confirmed in the enzyme purified from Org42, with a kcat/KMPRA of 0.02 \u03bcM\u22121s\u22121.\n\nThe obtained enzyme kinetics parameters suggest that mutations that accumulate during relaxation of purifying selection, which make these enzymes difficult to work with, affect the turnover (kcat). In the case of the H1 enzymes, the poor turnovers are compensated for by relatively high substrate affinities (KM), mainly for ProFAR. However, this does not seem to be the case for the enzymes belonging to H2 and H3, which have poor KM parameters not only for the substrate of the missing activity but also for the substrates they are active against, ProFAR and PRA, respectively. Therefore, PriA homologs from Actinomyces have poor catalytic efficiencies when compared with bona fide PriAs from its closely related genus Bifidobacterium (Table 2). This suggests that enzyme evolution\u00a0from bifunctionality to monofunctionality\u00a0under relaxation of purifying selection does not necessarily express itself in the same way as recorded during purifying or positive selection, where specialization and enzyme proficiency come together.\n\nThe case of the in vivo PRA isomerase activity detected for the enzyme from Org36, which could not be confirmed in vitro, may be related to the different resolutions of our enzyme assays. For instance, the detection limits for the PRA and ProFAR isomerase assay used in the present study are 0.0001 \u03bcM\u22121s\u22121 and 0.001 \u03bcM\u22121s\u22121, respectively (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Noda-Garc\u00eda et al., 2010). However, despite the poor catalytic efficiency of all Actinomyces enzymes investigated, these detection limits guarantee that our enzyme parameters are in agreement between them and with our hypotheses. Based on these results the family related to H1, which has both activities, is referred to as PriA, whereas the latter two enzyme subfamilies, related to H2 and H3, were renamed as SubHisA2 and SubTrpF, respectively. These names, together with the name of the organism from which the enzymes were obtained, are used in Table 2 and in the following sections.\n\n### Structural insights into the evolution SubHisA2 and SubTrpF\n\nTo potentially identify mutations in active-site residues that may affect kcat\u00a0and KM\u00a0parameters, we attempted to elucidate the structure of the five PriA homologs that we were able to in vitro characterize. However, we were only able to crystallize and solve the structure of PriA_Org15 (H1) at atomic resolution of 1.05 \u00c5 (PDB: 4 \u00d7 2R, Figure 7; Figure 7\u2014source data 1). To compare this structure with SubHisA2_Org36 (H2) and SubTrpF_Org41 (H3), we opted for the construction of structural homology models. Since the ability of PriA to accept both ProFAR and PRA as substrates requires productive conformations, we also explored these interactions using molecular docking. This was complemented with detailed structure-based multiple sequence alignments taking into account all available PriA functional and structural data (Figure 7B). This combined approach allowed us to identify mutations that may be driving the evolution of PriA into SubHisA2 and SubTrpF enzyme subfamilies.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22679/elife-22679-fig7-v2.jpg)\n\n**Figure 7.:** (A) The structure of PriA from A. urogenitalis (purple, PDB:\u00a04X2R) superimposed with PriA from M. tuberculosis in a complex with rCdRP (cyan, PDB: 2Y85) and PrFAR (pink, PDB: 2Y88) is used to illustrate the position of the respective substrates. The catalytic residues and those critical for divergence into SubHisA2 or SubTrpF are shown. Since the loop contributing Trp139 and Arg137 is mostly disordered, and Arg137 itself does not adopt substrate binding-relevant position in the structure from A. urogenitalis, only the equivalent elements from the M. tuberculosis homolog are shown. (B)\u00a0Multiple sequence alignment of PriA (purple), SubHisA2 (red) and SubTrpF (bold) sequences. Catalytic residues, Asp9 and Asp169, are marked in red. PRA and ProFAR binding residues are shown in blue. SubHisA2 and SubTrpF loss-of-function residues are framed. The secondary structure is shown below the sequences. Loops are shown in orange, \u03b1 helixes are shown in gray and \u03b2 sheets are shown in green. Sequence corresponding to loops 1, 5, and six is highlighted in gray. List of Tables provided as Source Data.\n\nChanges of conserved residues from PriA (H1) into SubHisA2 (H2) enzymes include Ile47Leu and Ser79Thr. Previous independent mutation of these two residues, even into similar amino acids, in SubHisA from Corynebacterium abolished the PRA isomerase activity of this monofunctional enzyme (Noda-Garc\u00eda et al., 2013). Analogously, the SubHisA2_Org36 has a change of Ser79 into Thr79 (Figure 7B). In this mutation, the methyl group of the threonine residue may affect the contact between PRA and the hydroxyl group common to these residues (Figure 7A), thus abolishing PRA isomerase activity. This effect agrees with the estimated binding affinities for ProFAR (\u22129.5 kcal/mol) and PRA (\u22129.2 kcal/mol) obtained after molecular docking (Supplementary file 2). The energy-minimized docking model of the productively bound PRA, in agreement with the kinetic parameters from the preceding section, indicates that the catalytic residue Asp11 does not interact with the 2\u2032-hydroxyl group from the substrate. A precedent for this contact is found in previous X-ray structural and mutagenesis analysis of bona fide PriA enzymes (Noda-Garc\u00eda et al., 2010; Due et al., 2011).\n\nComparison of PriA (H1) with SubTrpF (H3) revealed the mutations Gly126Cys and Trp139Gly. In PriA, Gly126 faces the active site near the catalytic residue Asp128. The introduction of the Cys side-chain in SubTrpF could influence the positioning of Arg137 with respect to Asp128, obstructing the accommodation of ProFAR, as this region interacts with a large phosphosugar moiety that is absent from PRA (Figure 7B). Furthermore, Trp139, which is catalytically important for conversion of ProFAR by PriA, is mutated into several different amino acid residues in SubTrpFs. Trp139 is important for the correct positioning of the catalytic residues present in loop 5, and for substrate binding through stacking interactions (Verduzco-Castro et al., 2016; Due et al., 2011). Indeed, the indole group of Trp139 in PriAs can form a hydrogen bond with Asp128, stabilizing the knot-like conformation observed during ProFAR binding. Thus, mutation of this residue in SubTrpF is in agreement with the loss of ProFAR isomerase activity. Arg83 is also interesting as it is differentially missing from SubTrpF, and/or the fragment preceding it contains a two-residue insertion (Figure 7B). Arg83 interacts with the second phosphate group of ProFAR, allowing its correct position in the substrate-binding pocket of PriA. Overall, these modifications in key residues disfavor the ProFAR binding affinities, a result that is in agreement with the enzyme kinetic parameters and the estimated binding affinities for ProFAR (\u22129.5 kcal/mol) and PRA (\u22129.7 kcal/mol) obtained after molecular docking (Supplementary file 2).\n\nAlthough further research is needed to confirm the exact mutations and their roles leading to SubTrpF and SubHisA2 sub-families, our results provide a promising first step towards deciphering at the atomic level how relaxation of purifying selection influences the evolution of substrate specificity. At this point in time, when PriA, SubTrpF and SubHisA2 sequences and structures are still scarce, the effects of genetic drift, i.e. mutations related to taxonomic distance rather than functional divergence (as previously shown for the evolution of PriB from PriA [Verduzco-Castro et al., 2016]) cannot be ruled out. An extra factor potentially hampering sequence and structural analysis is the higher-than-normal mutation rates of these protein sub-families, which translates into lack of sequence conservation and disordered regions in X-ray crystal structures. Our structural data, including the estimates for molecular binding affinities, can therefore only be used to support other biochemical and evolutionary evidence.\n\n### Discussion\n\nOur study highlights the use of phylogenomics and metabolic models to identify and investigate gene loss in bacteria. Our results indicated that the distinctive reactions retained in each Actinomyces genome reflect the preservation of some full biosynthetic pathways over others, conferring a capacity to grow on different sets of environmental nutrients. This result in turn implies an exposure of these genomes to a diverse range of environmental conditions and selection pressures, while the phylogenetic proximity of these functionally diverse genomes speaks to a strong capacity for rapid adaptation to the diverse conditions present in the human body. The process of gene loss, associated with relaxation of purifying selection, is the key driver of this adaptation strategy. Thus, metabolic diversity in complex systems as the human microbiome might be characterized after reconstruction of evolutionary trajectories, which may reflect different bacterial functions and ecological sub-niches. The pattern of reaction conservation seen in our metabolic modeling analysis exemplifies a likely signature for gene loss, which could be used to identify these phenomena among other genome families. Remarkably, in this context, enzyme specialization does not necessarily means catalytic proficiency.\n\nOur study of this gene loss process exposed evolutionary patterns of PriA in L-tryptophan and L-histidine biosynthesis pathways, with the potential to unveil the underpinning mechanisms driving the evolution of substrate specificity of retained enzymes. Because multifunctional enzymes may have more than one constraint operating on them, tracking functional evolution promptly after selection is relaxed during genome decay might be done more readily than with monofunctional enzymes. As shown here, only partial selection may be released in the retained bifunctional enzyme PriA. Indeed, the predicted metabolic phenotypes unveiled by flux balance analysis did correlate better with the evolutionary patterns revealed by metabolic gene occurrence and PriA phylogenetic reconstructions than they did with the natural history told by the species tree. To confirm this sort of evolutionary behavior, other instances of well-known multifunctional proteins, such as moonlighting proteins, may be investigated.\n\nThe occurrence of SubHisA2 in Actinomyces, together with the appearance of SubHisA in Corynebacterium, demonstrates that subfunctionalization of PriA leading into HisA-like enzymes has occurred at least twice. Such phenotypic plasticity is a reflection of the intrinsic enzymatic proficiency of PriA upon two related but topologically dissimilar substrates; but, more interestingly, the evolutionary histories behind these independent subfunctionalization events responded to somehow contrasting evolutionary mechanisms. Whereas SubHisA is the result of positive selection after the acquisition of an entire trp operon by HGT (Noda-Garc\u00eda et al., 2013), SubHisA2 responded to the loss of trp genes, and it evolved under relaxation of purifying selection. Consequently, SubHisA has drastic mutations in its catalytic active site, which have been shown to be responsible for its inability to catalyze PRA, whilst SubHisA2 shows some residual PRA isomerase activity, congruent with the observation that its active-site architecture is almost completely conserved.\n\nThe subfunctionalization of PriA into SubTrpF, in contrast, has been documented only here. This functional shift had to involve \u2018non-proficient\u2019 enzyme specialization, since the ancestral activity of PriA is ProFAR isomerase (Plach et al., 2016). Thus, the appearance of SubTrpF with substitutions in its catalytic active-site could be discussed based on previous knowledge about PriA. These mutations actually resulted in the elimination of the ancestral ProFAR activity, which is remarkable because the driving force behind this process relates to the relaxation of purifying selection. In agreement, a recent study of PriA sequences obtained from a diverse metagenome, complemented by some of the SubTrpF sequences studied here, classified this enzyme subfamily at the transition from HisA into PriA (Noda-Garc\u00eda et al., 2015). Since Actinomyces undergoes interspecies recombination with protein functional implications (Do et al., 2008), such a mechanism may provide a means to explain the sequence heterogeneity found in these Actinomyces PriA homologs.\n\nOur study, therefore, provides experimental evidence that gene loss can drive functional protein divergence. It also shows that, despite the fact that the retained enzymes possess low catalytic activities, they contribute to the maintenance of metabolism, and therefore, to fitness. Taken together, our evolutionary observations backed with metabolic modeling, biochemical and structural data, suggest multiple selection types associated with ecological micro-niches, e.g. environmental cues provided by the human body. Thus, enzyme subfamilies are the result of processes involving different selection types upon proteins with more than one function. Although further examples showing metabolic-driven evolutionary histories need to be identified, our study provides a strategy for the in-depth use of genome sequences for protein and bacterial evolutionary studies to understand enzyme function.\n\n## Materials and methods\n\n### Phylogenomic and evolutionary analysis\n\nThe genomes of the genus Bifidobacterium and the family Actinomyceatceae were obtained from NCBI (NCBI accession numbers are provided as Figure 3\u2014source data 1). The genomes were annotated by using RAST (Aziz et al., 2008). We identified core orthologous genes using BBHs (Tatusov et al., 1997) with a defined e-value of 0.001. The sequences were aligned with MUSCLE 3.8.31 (Edgar, 2004) and edited with GBLOCKS (Castresana, 2000). We concatenated all the orthologous groups for phylogenomic analysis. The phylogenetic analyses were carried out using MrBayes v.3.2.1 (32) and maximum likelihood analysis using RAxML v.8 (33). For MrBayes, we used a mixed model, and for the maximum likelihood analysis, we used the generalized time reversible (GTR) model. Branch support was measured as the posterior probability of clades in the consensus tree for Bayesian analysis; and with 1000 bootstrapping replicates in the maximum likelihood analysis. To calculate the nonsynonymous (dN) and synonymous (ds) substitution rates between PriA and homologous subfamilies, we aligned all the sequences by codon using RevTrans 1.4 Server (Wernersson and Pedersen, 2003). To calculate the dN/ds ratio we used codeml in the PAML four package (Yang, 2007). GC content, genome size, CDS content, and number of subsystems between the lineages were compared by using the T-test in the package R. All the boxplots were done with R.\n\nThe A. oris MG-1 strain (Delisle et al., 1978) was sequenced using an in-house Illumina MiSeq sequencing platform. We used Trimmomatic (Bolger et al., 2014) to filter the reads and Velvet v1.2.10 (Zerbino and Birney, 2008) to assemble the reads. The Whole Genome Shotgun (WGS) A. oris MG-1 project has been deposited at GenBank under the project accession [PRJNA327886].\n\n### Metabolic model reconstruction and flux balance analysis\n\nWe applied the DOE Systems-biology Knowledgebase (KBase) to construct draft genome-scale metabolic models. The model reconstruction process was optimized as previously (Satish Kumar et al., 2007), and comprised of three steps: (i) genome annotation by RAST (Aziz et al., 2008); (ii) reconstruction of a draft model using the ModelSEED approach (Henry et al., 2010); and (iii) gapfilling of the model to permit growth and plug holes in mostly complete pathways (Dreyfuss et al., 2013). In the gap-filling process, we identified the minimal set of reactions that could be added to each model to permit biomass production in a medium containing every transportable metabolite. We also favored the addition of reactions that would permit more gene-associated reactions in each model to carry flux.\n\nOnce models were built, we applied flux balance analysis (FBA) (Orth et al., 2010) to predict minimal feasible media and classify reactions using a six step process: (i) set the biomass flux to a nonzero value; (ii) minimize the number of active exchange reactions to identify the minimal set of external nutrients that must be provided to permit growth; (iii) constrain exchange fluxes so that only the minimal exchanges are allowed to function; (iv) minimize and maximize each reaction flux to classify each reaction during growth on minimal media (Mahadevan and Schilling, 2003); (v) maximize biomass flux on minimal media and fix the biomass flux at its maximum value; and (vi) minimize the sum of all fluxes in the model to produce the simplest flux profile possible (e.g. removing all flux loops). Reactions with only positive or negative fluxes are classified as essential; reactions with only zero flux values are classified as nonfunctional; and reactions with zero and non-zero flux values are classified as functional.\n\nFor construction of the overall model per lineage, we identified all reactions that were associated with genes (i.e. not gapfilled) in at least 75% of the models included in the lineage, using a permissive e-value of 0.01. These reactions formed the basis of our lineage model. Then we applied the same gapfilling algorithm used with our genome models to permit the lineage model to grow. Finally, we applied our FBA pipeline to predict minimal media and classify reactions in the lineage model. All the models, associated genomes, minimal media predictions, reaction classifications, and flux predictions generated in this study are presented using the KBase Narrative Interface and are accessible at https://narrative.kbase.us/narrative/ws.17193.obj.1. See also Figure 4\u2014source data 1, Figure 4\u2014source data 2 and Figure 4\u2014source data 3.\n\n### Biochemical analysis of PriA enzymes\n\nThe priA genes from Org15, Org10, and Org41 were synthesized by GeneArt (Thermo Fisher Scientific, USA). Additionally, priA genes from Org13, Org22, Org34, Org36, and Org39 were synthesized by GenScript (GenScript, USA). Codons were optimized for E. coli heterologous expression. The priA homologs from A. oris MG-1, B. longum, B. gallicum and B. adolescentis were PCR cloned from our genomic DNA collection. Oligonucleotide sequences of primers used in this study are included in Supplementary file 3. All genes were inserted into pET22b, pET28a (Novagen) for expression and protein purification, and pASK for complementation assays, by using the NdeI and HindIII restriction sites (Noda-Garc\u00eda et al., 2015). The in vivo trpF and hisA complementation assays, and in vitro determination of the Michaelis-Menten steady-state enzyme kinetics parameters for both PRA and ProFAR as substrates, were done as previously (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Noda-Garc\u00eda et al., 2010). Lack of enzyme activity in vitro was confirmed using active-site saturation conditions, as before (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016).\n\nTo create a \u0394priA mutation in A. oris MG1 1.5 Kbp fragments upstream and downstream of this organism were amplified by PCR (Supplementary file 3). The upstream fragment was digested with EcoRI and NdeI, the downstream fragment with NdeI and XbaI. The upstream and downstream fragments were ligated together in a single step. The fragment was cloned into pCWU3 precut with EcoRI and XbaI after digestion with appropriate enzymes. The generated plasmid was then introduced into A. oris MG-1 (Org21) by electroporation. Corresponding in-frame deletion mutants were selected by using mCherry fluorescence as a counter-selectable marker and resistance to kanamycin (Wu and Ton-That, 2010). The deletion mutant was confirmed by PCR and by sequencing of the entire genome of the resulting mutant strain.\n\n### Crystallization, X-ray data collection, structure determination, and refinement\n\nPriA_Org15 was expressed and produced in BL21 Magic cells bearing the plasmid pMCSG68_PriA_Org15. The protein was purified by immobilized metal-affinity chromatography (IMAC) followed by His6-tag cleavage using recombinant His-tagged TEV protease. A second IMAC step was used to remove the protease, the uncut protein, and the affinity tag. Concentrated protein (37 mg ml\u22121) was crystallized by sitting-drop vapor-diffusion technique in 96-well CrystalQuick plates (Greiner Bio-One, USA). The crystals appeared at 289 K in conditions consisting of 0.2 M Li2SO4, 0.1 M CAPS:NaOH pH 10.5, and 1.2 M NaH2PO4/0.8 M K2HPO4. Prior to data collection crystals were cryoprotected in 2.4 M K2HPO4 and subsequently flash-cooled. Diffraction data were collected at 100 K. Native datasets were collected at 19-ID equipped with an ADSC quantum Q315r CCD detector at 0.979 \u00c5 wavelength. The images were processed by using the HKL3000 software suite (Minor et al., 2006). Molecular replacement was carried out by using the coordinates of PriA from M. tuberculosis (Due et al., 2011) used as a search probe in Phaser (McCoy et al., 2007). The initial model was then improved by the automatic rebuilding protocol in Arp/wArp, and further modified by iterations of manual rebuilding in COOT (Emsley and Cowtan, 2004) and fully anisotropic crystallographic refinement in PHENIX (Adams et al., 2010) with hydrogen atoms in riding positions. The PriA_Org15 model comprises residues Ser-2-Arg137 and Gly143-Ala247, 305 water molecules, 4 phosphate ions, and 1 CAPS moiety. The mFo-DFc difference map reveals two strong positive peaks (near Asp51 and Leu230) that could not be unambiguously assigned. The quality of the refined models was verified using the Molprobity server (Chen et al., 2010). Data collection statistics and the refinement results are provided as Figure 7\u2014source data 1.\n\n### Structural alignment, homology modeling and molecular docking\n\nT-coffe package was used for all multiple sequence alignments (Notredame et al., 2000). Protein structural homology models of SubHisA_Org36 and SubTrpF_Org41 were based on the crystal structure of PriA from PriA_Org15 (PDB:4X2R; this study). A standard modeling strategy using Robetta and Rosetta 3.5 (47) was adopted. Molecular models of PRA and ProFAR were built using Molden (Schaftenaar and Noordik, 2000), and optimal atomic configuration of both substrates was obtained using Gaussian 09 (Gaussian Inc., Wallingford CT, USA) through a quantic geometry optimization using a self-consistent field at the Hartree-Fock 6\u201331G* level. Polar hydrogen atoms and Gasteiger-Marsili empirical atomic partial charges were added using AutoDockTools (Morris et al., 2009). An extensive configuration sampling of PRA and ProFAR binding biophysical interactions with PriA catalytic site was performed with Autodock Vina (Trott and Olson, 2010). Results were merged, refined, clustered, and energy sorted to produce a set of complex configuration predictions.\n",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a13f383e-b824-4d00-971c-f2262ab7613d",
+      "submission_id": "fad4ed63-680d-47fd-8047-ac9366cf3521",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alfonso Valencia, Barcelona Supercomputing Center - BSC , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22679.033](https://doi.org/10.7554/eLife.22679.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Evolution of substrate specificity in a retained enzyme driven by gene loss\" for further consideration at eLife. Your article has been favorably evaluated by Patricia Wittkopp (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThere are some issues that need to be addressed before acceptance, as outlined below:\n\nThe section on biochemical data requires a more clear version since there are questions about the significance and interpretation of the values reported. The interpretation of the parallel decay of both Trp and His pathways is not sufficiently convincing in the current version of the paper.\n\nThe interpretation of the mutations in the x-ray structure and models, together with the analysis of the MSA, are considered important but weak elements of the paper. The use of better methods and a more systematic approach will be required.\n\nA new version should justify clearly the need of building complete metabolic models for the questions addressed in the paper.\n\nReviewer #1:\n\nThe basic proposal of the paper is interesting and well positioned. The study of PriA dual enzyme acting in two pathways (His and Trp) as a model of the changes in response to a large genomic delection of complete pathways, is an interesting and original idea.\n\nThe work presented include:\n\nFirst the basic phylogenetic analysis of the protein family with the distribution of the aa pathways and the PriA gene. (The analysis of the larger family presented in the first figure seems irrelevant for the rest of the paper). The results are interesting and demonstrate the existence of a potential relation between the absence of the enzymes of the two pathways and the distribution of the PriA gene.\n\nThe importance of the pathways is analyzed with metabolic models of the different genomes. The exercise is interesting but it is debatable if it is really necessary for the conclusions obtained. (\"Overall, we see from the modeling analysis that lineages I, III and IV are all undergoing the process of gene loss, with different genomes in these lineages losing different sets of metabolic genes.\" would not be enough with knowing that enzymes of the key His and Trp pathways are missing? What else do we learn that is important for the logic of the study?)\n\nin vitro biochemical assays of some of the sequences of the key groups are presented to demonstrate the lack of restrictions of the enzymes of the SubHis and SubTrp groups. The results are partially consistent with the interpretation of the authors but the data suggest that the actual situation might be far more complex of what the model suggest. Indeed, it seems difficult to explain the poor catalytic efficiencies of the enzymes of the subHis and subTrp groups in the context of the adaptations to the corresponding missing pathways.\n\nThe analysis of the structure of the enzyme based on a single x-ray obtained for this paper and homology models of the other prototypic sequences. It is a correct analysis but very speculative. It provides very little solid evidence for the interpretation of the mutations.\n\nThe analysis of the variation at the sequence level based on the MSA alignmentof members of the family. In this case it is unclear how some specific positions are selected as key differences between SubTrp and SubHis. Some of the differences are not consistent with the conservations in the groups and it is unclear if they are conserved in other sequences of the family (for example, the T for S substitution in subHisA2_Org36 is not present in subHisA2_Org34).\n\nAdditionally, the analysis is not systematic and none of the various existing methods for the analysis of positions specific of subfamilies are used.\n\nIn summary, a very interesting idea and a potentially good model to explore the evolution of the function of an enzyme in similar genomes subject to specific gene losses. A great effort to combine different type of approaches from genomics to modelling, including biochemistry, phylogenetics and protein structures. To conclude: some not so optimal interpretation of the results and general lack of sufficiently convincing support for the proposed model.\n\nReviewer #2:\n\nThis Manuscript presents an imposing body of work showing how gene loss can drive the evolution of substrate specificity from retained enzymes. The authors did a thorough work, using multiple approaches to elaborate and support their hypotheses. More in detail:\n\n1) Genome sequencing of the A. oris MG-1 strain.\n\n2. Phylogenomic analysis of the Actinomycetaceae family, using 35 single-copy conserved proteins in 133 organisms.\n\n3) Phylogenomic analysis 0f 205 single-copy proteins conserved in 41 organisms (33 from the Actinomycetaceae family, and 8 from the Bifidobacterium genus, used as an outgrup).\n\n4) Metabolic model reconstruction and flux balance analysis on 33 Actinomycetaceae.\n\n5) Molecular evolution analysis of the PriA gene within Actinomycetaceae.\n\n6) Biochemical analysis of PriA enzymes.\n\n7) Crystallographic analysis of PriA.\n\n8) Structural modelling, analysis, and molecular docking to study the evolution of SubHisA2 and SubTrpF.\n\nOverall, I found this work outstanding, and I think this is the kind of manuscript every evolutionary biologist would like to read. I really enjoyed it. I think the authors did a great job in designing the experiments, and in my opinion the methods, the results, the hypotheses and the conclusions are presented in a very clear and accurate form. I could not find any substantive concern about this work.\n\nReviewer #3:\n\nThis paper presents an interesting analysis of two phenomena that are under-studied: gene loss, and generalist-to-specialist evolution. In general, we know a lot on gene gain (by duplication or HGT) and relatively little on gene loss, and, everyone assumes that generalists evolving to specialists is a dominating trend in evolution, whereas it could may well be that the opposite trend, highlighted here, is equally common. Overall, the scope of the work from phylogenetic to crystal structures is impressive, and the evolutionary trend and unraveled mechanisms of gene loss are well supported.\n\nOn the critical side, I must admit that I'm not so convinced that the effects of specialization and general decay of activity can be distinguished in this case. By and large, both activities (Trp and His reactions) drop down and largely in parallel (Table 2). The detection limit for then in vitro assays is not specified (i.e., what n.d. values represent) but the residual, other activity may not be so far from the one detected and assigned as 'specialized'. The structural argumentation is weak \u2013 it's not that the authors did not make an effort to unravel the effects of mutations, but it's sometimes hard to understand what mutations are doing even within active-sites let alone in second-shell, and especially, when these enzyme variants are so crippled. In general, orthologous enzyme vary in activity, often over 3 orders, and even between relatively close species. So, I think that it's hard to say whether, and which part of, the change in activities can be attributed to gene loss and concomitant specialisation (to either Trp or His) and which part to an overall relief of selection (i.e., for both reactions). Finally, since these genome sequences are sporadic (unlike say hundreds of E. coli strains that were sequenced), some mutations may relate to drift (polymorphism) and may not represent a long-term \"wild-type\" sequence. Previous cases analysed by this group are far more clear-cut in this respect (the effect of specialization). These caveats should be explicitly addressed.\n",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1d77a412-1a68-4d4d-8907-003c0f8dff97",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C1",
+      "claim": "Actinomycetaceae genomes from human cavities are undergoing sizable reductions, including loss of L-histidine and L-tryptophan biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply phylogenomics and metabolic modeling to detect bacterial species that are evolving by gene loss, with the finding that Actinomycetaceae genomes from human cavities are undergoing sizable reductions, including loss of L-histidine and L-tryptophan biosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding directly, supported by phylogenomic and metabolic modeling analyses described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1151fb5c-fd07-46d3-b4ff-873241018770",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C2",
+      "claim": "The dual-substrate phosphoribosyl isomerase A (priA) gene appears to coevolve with the occurrence of trp and his genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that the dual-substrate phosphoribosyl isomerase A or priA gene, at which these pathways converge, appears to coevolve with the occurrence of trp and his genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this observation based on phylogenomic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a7661a32-10fd-422a-bae3-6c0684ed61b2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C3",
+      "claim": "PriA enzymes adapt from bifunctionality in the largest genomes to a monofunctional, yet not necessarily specialized, inefficient form in genomes undergoing reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterization of a dozen PriA homologs shows that these enzymes adapt from bifunctionality in the largest genomes, to a monofunctional, yet not necessarily specialized, inefficient form in genomes undergoing reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding based on biochemical characterization of multiple PriA homologs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "be5c5257-96a1-4782-aa55-4f8eb17441fa",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C4",
+      "claim": "Functional changes in PriA are accomplished via mutations resulting from relaxation of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "These functional changes are accomplished via mutations, which result from relaxation of purifying selection, in residues structurally mapped after sequence and X-ray structural analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this mechanism based on evolutionary and structural analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "721f7956-ea2a-4dd2-8089-00c39659648e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C5",
+      "claim": "Gene loss can drive the evolution of substrate specificity from retained enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show how gene loss can drive the evolution of substrate specificity from retained enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract presents this as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "767913da-ea27-46a6-9dde-c66f386aabb2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C6",
+      "claim": "Gene loss has been implicated in rapid bacterial adaptation after experimental evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene loss has also been implicated in rapid bacterial adaptation after experimental evolution (Hottes et al., 2013), but this process has not yet been confirmed in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "fdb5c701-6690-4a66-ac81-0ea82ce263b6",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C7",
+      "claim": "Gene loss has not yet been confirmed in natural populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene loss has also been implicated in rapid bacterial adaptation after experimental evolution (Hottes et al., 2013), but this process has not yet been confirmed in natural populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "bfaac970-e68d-4ef9-84ef-34e19edb946b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C8",
+      "claim": "Acquisition of new functions due to horizontal gene transfer (HGT) or genetic duplications is broadly documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquisition of new functions due to horizontal gene transfer (HGT) or genetic duplications is broadly documented (Wiedenbeck and Cohan, 2011; Blount et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "8972fd6f-ee20-4231-b3c2-4848e88275ed",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C9",
+      "claim": "In genomes undergoing decay, there is a relaxation in selection pressure that increases mutation rates in functioning proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in genomes that are undergoing decay, there is a relaxation in the selection pressure that increases mutation rates in functioning proteins as these proteins begin to contribute less to cell fitness (Wernegreen and Moran, 1999; McCutcheon and Moran, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "46d7f73c-882b-4d41-a8d3-109912eabc9e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C10",
+      "claim": "Proteins in genomes undergoing decay display higher-than-normal mutation rates, making in vitro analysis of protein function a challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, these proteins display higher-than-normal mutation rates, making in vitro analysis of protein function a challenge (Cou\u00f1ago et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and logical inference from the previous statement.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "6afbcf5c-9a59-4a1d-8358-fe9798e29da4",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C11",
+      "claim": "Most proteins are monofunctional and are rapidly removed from the bacterial genome once they become dispensable due to gene loss.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because most proteins are monofunctional, and they are rapidly removed from the bacterial genome once they become dispensable due to gene loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle about protein evolution during genome decay.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b013c907-381c-4d75-a737-086086816c27",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C12",
+      "claim": "Bifunctional enzymes may continue to operate when only one of their associated metabolic pathways becomes dispensable.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this limitation, we propose to use a bifunctional enzyme to study the evolution of substrate specificity after gene loss, as these enzymes may continue to operate when only one of their associated metabolic pathways becomes dispensable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the study design.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "cad35ac3-f440-471a-8358-05fcacb9c0da",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C13",
+      "claim": "The phylum Actinobacteria are Gram-positive organisms with high (G+C)-content.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylum Actinobacteria, Gram-positive organisms with high (G+C)-content, are ubiquitous and show one of the highest levels of bacterial metabolic diversity (Barka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of Actinobacteria, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "234d61d8-bd35-46d9-8fd9-57e602ea2baf",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C14",
+      "claim": "Actinobacteria show one of the highest levels of bacterial metabolic diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylum Actinobacteria, Gram-positive organisms with high (G+C)-content, are ubiquitous and show one of the highest levels of bacterial metabolic diversity (Barka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "0578e219-d47f-489d-978f-39ff4db4ab7d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C15",
+      "claim": "Phylogenetic analyses have suggested the occurrence of genome decay within the family Actinomycetaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, within the deep-rooted family Actinomycetaceae, phylogenetic analyses have suggested the occurrence of genome decay (Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "4a10fe28-7c2d-42ee-b008-8cf0332d5787",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C16",
+      "claim": "Many actinobacterial species lack a trpF gene while retaining a copy of the potentially bi-functional priA gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we have observed that many actinobacterial species lack a trpF gene, while retaining a copy of the potentially bi-functional priA gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "259d5a9a-829e-49bd-a458-faf70f707f4d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C17",
+      "claim": "The PriA enzyme is capable of operating in the L-histidine biosynthesis pathway as HisA and in the L-tryptophan biosynthesis pathway as TrpF.",
+      "claim_type": "EXPLICIT",
+      "source": "The PriA enzyme is capable of operating in the L-histidine biosynthesis pathway as HisA, while also functioning in the L-tryptophan biosynthesis pathway as TrpF (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016; Barona-G\u00f3mez and Hodgson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "3065b180-8572-419c-92a9-af511b979676",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C18",
+      "claim": "PriA catalyzes the conversion of N-(5'-phosphoribosyl)-anthranilate (PRA) into 1-(O-carboxyphenylamino)-1'-deoxyribulose-5'-phosphate (CdRP) (TrpF or PRA isomerase activity).",
+      "claim_type": "EXPLICIT",
+      "source": "The product of the priA gene, which is a hisA homolog, catalyzes two analogous isomerizations of structurally similar substrates: (i) the conversion of N-(5'-phosphoribosyl)-anthranilate (PRA) into 1-(O-carboxyphenylamino)-1'-deoxyribulose-5'-phosphate (CdRP) (TrpF or PRA isomerase activity)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known biochemical function, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c8003fc9-9a2a-4e45-a3d2-a153c3d43540",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C19",
+      "claim": "PriA catalyzes the conversion of N-[(5-phosphoribosyl) formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (ProFAR) into N-[(5-phosphoribulosyl)formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (PRFAR) (HisA or ProFAR isomerase activity).",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) the conversion of N-[(5-phosphoribosyl) formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (ProFAR) into N-[(5-phosphoribulosyl)formimino]-5-aminoimidazole-4-carboxamide ribonucleotide (PRFAR) (HisA or ProFAR isomerase activity) (Barona-G\u00f3mez and Hodgson, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known biochemical function, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "f187681d-197b-47f9-aee8-5c2f48fb5400",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C20",
+      "claim": "Evolution of PriA in response to genome dynamics has led to the appearance of the SubHisA and PriB subfamilies, which have different substrate specificities.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, evolution of PriA in response to genome dynamics has lead to the appearance of the SubHisA and PriB subfamilies, which have been shown to have different substrate specificities (Noda-Garc\u00eda et al., 2013; Verduzco-Castro et al., 2016) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "6e11ead0-c166-41ac-9cd0-23b5a28fb91b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C21",
+      "claim": "SubHisA and PriB enzyme subfamilies were respectively discovered using phylogenetics in the genera Corynebacterium and Streptomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "While these enzyme subfamilies were respectively discovered using phylogenetics in the genera Corynebacterium and Streptomyces, no study has ever centered on the metabolic genes associated with priA in the deep-branching organisms belonging to the phylum Actinobacteria, such as those of the family Actinomycetaceae where the transition from HisA into PriA must have taken place (Noda-Garc\u00eda et al., 2015; Plach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as previous work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b52ebce1-1dd9-4e11-a9c6-de1f68f4af39",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C22",
+      "claim": "No study has centered on the metabolic genes associated with priA in deep-branching organisms of the family Actinomycetaceae where the transition from HisA into PriA must have taken place.",
+      "claim_type": "EXPLICIT",
+      "source": "While these enzyme subfamilies were respectively discovered using phylogenetics in the genera Corynebacterium and Streptomyces, no study has ever centered on the metabolic genes associated with priA in the deep-branching organisms belonging to the phylum Actinobacteria, such as those of the family Actinomycetaceae where the transition from HisA into PriA must have taken place (Noda-Garc\u00eda et al., 2015; Plach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge, with citations supporting the evolutionary context.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "9e015fdf-571e-4a74-b298-9c4e4f8a2896",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C23",
+      "claim": "The family Actinomycetaceae includes many human oral cavity commensal and pathogenic organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we exploit the intrinsic features of PriA to explore the link between the evolution of enzyme function and gene loss within the family Actinomycetaceae, which includes many human oral cavity commensal and pathogenic organisms (Zhao et al., 2014; Yeung, 1999; K\u00f6n\u00f6nen and Wade, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "095b2161-8d07-4e41-8c62-7fe65df42041",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C24",
+      "claim": "The bacterial family Actinomycetaceae can be classified into four major evolutionary lineages, including two specific for the genus Actinomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "We classify this bacterial family into four major evolutionary lineages, including two specific for the genus Actinomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the phylogenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a52c4c7d-37f2-4200-ae06-53e15779a9d5",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C25",
+      "claim": "One lineage of Actinomycetaceae shows extensive gene loss, including his and trp biosynthetic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these lineages shows extensive gene loss, including his and trp biosynthetic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the phylogenomic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "381a968d-0647-4a56-9330-edf9a230f4b3",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C26",
+      "claim": "Evolutionary patterns correlate with the sub-functionalization of PriA into two new subfamilies named SubHisA2 and SubTrpF.",
+      "claim_type": "EXPLICIT",
+      "source": "After the loss of constrictions imposed by the retention of biosynthetic pathways, we found that evolutionary patterns correlate with the sub-functionalization, yet not necessarily specialization, of PriA into two new subfamilies, which we named SubHisA2 and SubTrpF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the evolutionary and biochemical analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1ce1ea65-063c-43fa-8103-df7384b7498b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C27",
+      "claim": "Gene loss can drive functional protein divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that gene loss can drive functional protein divergence, and provide unprecedented insights into the evolution of enzyme substrate specificity in retained enzymes after gene loss in the bacterial genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7746d26b-0fe5-467f-a19e-b33a9fd6ad81",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C28",
+      "claim": "133 representative organisms from 18 families with available genome sequences were selected for phylogenomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To find evidence of gene loss in deep-branching organisms of the phylum Actinobacteria, specifically within genera belonging to the order Actinomycetales, we selected 133 representative organisms from 18 families with available genome sequences (Figure 2A; Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological approach, with reference to Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e57bc87d-233c-4966-ad9e-de1696d93176",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C29",
+      "claim": "35 single-copy proteins conserved among all 133 genomes analyzed were used to resolve taxonomic relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "We then aimed at resolving their taxonomic relationships using 35 single-copy proteins that are conserved among all 133 genomes analyzed (see Materials and methods and Figure 2A \u2013 Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a9ed4809-57d4-4e67-bd32-e307d6415a5e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C30",
+      "claim": "The phylogenetic tree shows several long branches corresponding to the families Actinomycetaceae, Micrococcaceae, Propionibacteriaceae and Coriobacteriaceae, and to the genus Tropheryma.",
+      "claim_type": "EXPLICIT",
+      "source": "The phylogenetic tree shows several long branches, which correspond to the families Actinomycetaceae, Micrococcaceae, Propionibacteriaceae and Coriobacteriaceae, and to the genus Tropheryma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "6ce19d33-5ec7-4643-8903-e33a1f07ecd8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C31",
+      "claim": "All organisms in rapidly evolving lineages trended towards smaller genomes and lower (G+C)-content.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all of the organisms contained in the rapidly evolving lineages trended towards smaller genomes and lower (G+C)-content (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the analysis, with reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "3c812d33-edf9-439b-8426-1625ac18cc8e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C32",
+      "claim": "Actinomycetaceae genomes are characterized by particularly broad variances in genome size and (G+C)-content.",
+      "claim_type": "EXPLICIT",
+      "source": "The Actinomycetaceae genomes were characterized by particularly broad variances in genome size and (G+C)-content, with the variation being most apparent for organisms belonging to the genus Actinomyces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "68c45414-c8de-46cb-9e1c-7767df1ebf37",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C33",
+      "claim": "A phylogenomic analysis was carried out using genome sequences of 33 organisms from the family Actinomycetaceae.",
+      "claim_type": "EXPLICIT",
+      "source": "We then carried out a phylogenomic analysis using the genome sequences of 33 organisms from the family Actinomycetaceae (Figure 3 - Figure 3\u2014source data 1), from which 27 are classified as Actinomyces (Zhao et al., 2014; Yeung, 1999), including the model strain A. oris MG-1 sequenced in this study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "25715e6e-0710-443b-be0d-50021b07692e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C34",
+      "claim": "205 single-copy proteins shared among all 41 organisms (33 Actinomycetaceae + 8 Bifidobacterium) were used for constructing a concatenated phylogenetic tree.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 205 single-copy proteins shared among all these 41 organisms, which were used for constructing a concatenated phylogenetic tree by Bayesian (Figure 3; Figure 3\u2014source data 2), and maximum likelihood approaches (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "152d4f40-6ce9-425b-804a-6a89794dd9e1",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C35",
+      "claim": "The family Actinomycetaceae separated into four evolutionary lineages contained in three sub-clades.",
+      "claim_type": "EXPLICIT",
+      "source": "Based in this analysis, the family Actinomycetaceae separated into four evolutionary lineages contained in three sub-clades: Lineage I, which includes A. sp. oral taxon 848 str. F0332 (Org10); lineage II, which includes A. oris MG-1 (Org21); and lineages III and IV, which form a monophyletic group and include A. neuii (Org27) and A. odontolyticus (Org41), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e5f65fe8-beff-4d8a-9792-5bbfe91ba80d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C36",
+      "claim": "The four lineages of Actinomycetaceae group depending on their mammalian hosts and human body niches from which they were isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, these lineages group depending on their mammalian hosts and human body niches from which they were isolated (Figure 3 - Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "0058ea9b-59b1-44e1-b383-bcd1ca6946b8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C37",
+      "claim": "Lineage II has the highest (G+C)-content (68.32% on average) and the biggest genome size (3.04 Mbp on average).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, as revealed by genome annotation using RAST (Aziz et al., 2008), lineage II, which has the highest (G+C)-content (68.32% on average) and the biggest genome size (3.04 Mbp on average), has the largest number of amino acid biosynthetic pathways (see next section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "63929c10-3248-4b2f-b13b-c11357fdbfda",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C38",
+      "claim": "Lineage II has the largest number of amino acid biosynthetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, as revealed by genome annotation using RAST (Aziz et al., 2008), lineage II, which has the highest (G+C)-content (68.32% on average) and the biggest genome size (3.04 Mbp on average), has the largest number of amino acid biosynthetic pathways (see next section).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "6110cbca-2837-481e-aa36-7fd363a55214",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C39",
+      "claim": "Lineage IV shows reduced (G+C)-content (60.66% on average) and genome size (2.19 Mbp on average), as well as less amino acid biosynthetic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation contrasts with the results obtained for lineage IV, which shows reduced (G+C)-content (60.66% on average) and genome size (2.19 Mbp on average), as well as less amino acid biosynthetic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the genome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c27d1c70-5308-41ef-8d79-d33f294be64c",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C40",
+      "claim": "The genomic differences between lineages II and IV are statistically significant, including the presence or absence of the his and trp biosynthetic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the genomic differences between lineages II and IV were found to be statistically significant, including the presence or absence of the his and trp biosynthetic genes (Figure 3; Figure 3\u2014figure supplement 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e507032a-5ff0-48b7-a629-74794b96ac55",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C41",
+      "claim": "Genome-scale metabolic models were constructed for all 33 organisms comprising the Actinomycetaceae family plus nine outgroup Bifidobacterium species.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to reduce the risk of overreaching conclusions based only in homology sequence searches, we constructed genome-scale metabolic models of all 33 organisms comprising this family, plus the nine outgroup Bifidobacterium species (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "86f22b81-77d5-4e65-b0db-2a2c1f595b06",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C42",
+      "claim": "Flux balance analysis was applied to predict the minimal nutrients required to support growth for each genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, flux balance analysis was applied to predict the minimal nutrients required to support growth for each genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2f25d23b-0de6-48fc-9ad3-7a6210fd374b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C43",
+      "claim": "The lineage II models were generally the largest with an average of 1019 gene-associated reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The lineage II models were generally the largest with an average of 1019 gene-associated reactions, which is to be expected since the lineage II genomes are also the largest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "41a97e70-124a-4cc2-b9e5-eaf5b768ed34",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C44",
+      "claim": "Lineage II models had the fewest predicted essential nutrients with an average of 19 nutrients required.",
+      "claim_type": "EXPLICIT",
+      "source": "These models also had the fewest predicted essential nutrients with an average of 19 nutrients required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "229b1e81-b30d-4af8-88e7-906f12cd47b2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C45",
+      "claim": "Most biosynthetic pathways for essential biomass precursors are complete in the lineage II models.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that most biosynthetic pathways for essential biomass precursors are complete in the lineage II models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the metabolic modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "3dff8c01-24b1-4984-894a-30301bc7ba75",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C46",
+      "claim": "The lineage I and IV models were substantially smaller with an average of 850 and 843 gene-associated reactions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The lineage I and IV models were substantially smaller with an average of 850 and 843 gene-associated reactions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "33761ca8-78f0-49a3-ab17-a55ccaeb5be2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C47",
+      "claim": "The lineage I models had more required nutrients (25 on average) compared with the lineage IV models (22 on average).",
+      "claim_type": "EXPLICIT",
+      "source": "Although similar in size, the lineage I models had more required nutrients (25 on average) compared with the lineage IV models (22 on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "92e09363-c209-4913-abad-3776177cc50b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C48",
+      "claim": "The lineage III models were the smallest of all, with an average of 817 gene-associated reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the lineage III models were the smallest of all, with an average of 817 gene-associated reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "9aaca9ef-a4f6-4a59-91e2-86f444901a68",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C49",
+      "claim": "Lineage III models had fewer required nutrients than the lineage I models (23 on average).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, these models still had fewer required nutrients than the lineage I models (23 on average).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e92efe8a-da82-411a-8522-c3ed7b052575",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C50",
+      "claim": "The lineage II genomes were the least diverse, with a very large fraction of reactions present in all models.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparative analysis revealed that the lineage II genomes were the least diverse, with a very large fraction of reactions present in all models, including those for amino acid biosynthesis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the comparative analysis of metabolic models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2d63a292-337d-4327-8100-4caf50bc6ebb",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C51",
+      "claim": "All models across all lineages share a common conserved core of 695 reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a comparative analysis of our models found that all models across all lineages share a common conserved core of 695 reactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the comparative analysis of metabolic models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "fce3561a-6b63-4988-89b3-ccba65ac2532",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C52",
+      "claim": "89% of reactions in the conserved core for each lineage are contained in the conserved core across all lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "When we similarly compute a conserved core for each individual lineage (Figure 4E), we find that the 89% of reactions in the conserved core for each lineage are contained in the conserved core across all lineages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the comparative analysis of metabolic models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1d76f529-cb59-4ccc-a5c2-4e65eac8cd89",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C53",
+      "claim": "Lineages I, III and IV are all undergoing the process of gene loss, resulting in a reduction towards a common set of core metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "From these modeling results, we clearly see that lineages I, III and IV are all undergoing the process of gene loss, resulting in a reduction towards a common set of core metabolic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the metabolic modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b006e552-c44a-4473-870c-42801823f8a6",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C54",
+      "claim": "Models predicted genomes in lineages I, III, and IV (but none from lineage II) that required L-tryptophan and L-histidine as supplemental nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our models predicted genomes in lineages I, III, and IV (but none from lineage II) that required these amino acids as a supplemental nutrient, indicating the loss of these biosynthetic pathways in these organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "5843aa9e-3cc1-47cb-aeed-6b9ab1a7d097",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C55",
+      "claim": "The presence of the priA gene closely tracked with the presence of L-tryptophan and L-histidine biosynthetic pathways in these genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that the presence of the priA gene, which takes part in both L-tryptophan and L-histidine biosynthesis, closely tracked with the presence of these pathways in these genomes (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e121705f-5eaa-430d-9cd2-9bad5c9e8b19",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C56",
+      "claim": "Gene losses could have an effect on the evolution of the retained PriA enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that gene losses could have an effect on the evolution of the retained PriA enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the observation about priA gene presence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "51886725-1a6d-4807-99a7-a51f2dabc897",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C57",
+      "claim": "PriAs from different lineages are grouped in three sub-clades with distinguishable selection pressures operating upon them.",
+      "claim_type": "EXPLICIT",
+      "source": "Excluding the out-group, our phylogenetic reconstructions show that PriAs from different lineages are grouped in three sub-clades, highlighted in purple, orange, and yellow boxes in Figure 5A, which have distinguishable selection pressures operating upon them.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the phylogenetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7875a6de-45c4-4b13-9057-e46c84b39c19",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C58",
+      "claim": "PriA coevolves with the presence or absence of the his and trp biosynthetic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis also shows that PriA coevolves with the presence or absence of the his and trp biosynthetic genes (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the phylogenetic and gene occurrence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "5958eaa9-baa8-4542-9fec-0962765588c8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C59",
+      "claim": "The dN/dS value of the purple clade (lineage II and Bifidobacterium), which retains the entire set of his and trp genes, is 0.0636, consistent with purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The purple box denotes a paraphyletic clade that includes PriAs from lineage II, as well as the PriAs from the genus Bifidobacterium used as an out-group. The dN/dS value of this lineage, which retains the entire set of his and trp genes, is 0.0636, consistent with purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the evolutionary analysis, with data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "625864fc-ee47-47f2-8c71-cb19930907bf",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C60",
+      "claim": "The dN/dS values for the orange and yellow clades are 0.0901 and 0.1459, respectively, which is suggestive of relaxation of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The orange and yellow boxes denote polyphyletic groups that include PriAs from lineages I, III, and IV. Interestingly, the included taxa within these lineages lost their extant his or trp genes differentially (Figure 4A), and their dN/dS values are 0.0901 and 0.1459, respectively, which is suggestive of relaxation of purifying selection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the evolutionary analysis, with data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "df68bf46-1e36-40a3-a399-41be0b7902a1",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C61",
+      "claim": "The higher dN/dS values in the yellow clade seem to be due to accumulation of nonsynonymous substitutions that may relate to changes in enzyme specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the higher dN/dS values in the clade shown in yellow seem to be due to accumulation of nonsynonymous substitutions, in other words, higher values of dN that may relate to changes in enzyme specificity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the evolutionary analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2e94acf2-59e9-4fa6-bf22-36e0d40e4453",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C62",
+      "claim": "In H1 (purple box), PriA homologs are conserved as enzymes with dual-substrate specificity, capable of converting both PRA and ProFAR substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In H1 (purple box) we assume that PriA homologs are conserved as enzymes with dual-substrate specificity, capable of converting both PRA and ProFAR substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on evolutionary observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "ed04ad54-1826-4fd6-9efa-4a2a4220394d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C63",
+      "claim": "In H2 (orange box) and H3 (yellow box), the PriA homologs are expected to be monofunctional isomerases, yet not necessarily specialized enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In H2 (orange box) and H3 (yellow box) the PriA homologs are expected to be monofunctional isomerases, yet not necessarily specialized enzymes, capable of converting ProFAR or PRA as substrates, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis based on evolutionary observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e105f7de-e648-4e4f-bd42-424d14cb7a7f",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C64",
+      "claim": "Relaxation of purifying selection is associated with H2 and H3 hypothetical scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, given that relaxation of purifying selection is associated with the latter two hypothetical scenarios, H2 and H3, our model predicts monofunctional, yet not necessarily specialized enzymes capable of supporting growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the hypothesis based on evolutionary observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "621d4131-5625-4aae-93da-eb78a94b5d22",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C65",
+      "claim": "Mutation of priA in A. oris MG-1 leads to L-tryptophan auxotrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Determination of the growth requirements of this strain, termed \u0394priA_Org21, showed that priA mutation leads to L-tryptophan auxotrophy, demonstrating the physiological relevance of PriA in this organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the genetic deletion experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "f240ad06-211d-46b4-af9a-5bda00b848b8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C66",
+      "claim": "The \u0394priA mutant of A. oris MG-1 remains prototrophic for L-histidine.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, however, the \u0394priA mutant remains prototrophic for L-histidine, which could not be explained on the basis of current data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the genetic deletion experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "67b07833-a37f-41e0-9e97-8830ce752464",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C67",
+      "claim": "The L-histidine prototrophy phenotype of the \u0394priA mutant may be explained by the association between enzyme promiscuity and genome decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is tempting to speculate that this phenotype may find an explanation in the previously reported association between enzyme promiscuity and genome decay (Adams et al., 2014; Price and Wilson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as speculation, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "f486dc54-3071-431c-9904-f2ccbc0c5840",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C68",
+      "claim": "PriA homologs from Org15, Org21, and Org22 (H1) were able to rescue growth of both HisA and TrpF deficient E. coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in vivo complementation assays using appropriate priA constructs, showed that PriA homologs from Org15, Org21, and Org22 (H1) were able to rescue growth of both HisA and TrpF deficient strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the in vivo complementation assays, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c8fdd091-d4a2-46e6-a81c-7a3e5b7025c2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C69",
+      "claim": "priA homologs from Org34 and Org36 (H2) complemented the HisA activity and, to a lesser extent, the TrpF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, priA homologs from Org34 and Org36 (H2) complemented the HisA activity and, to a lesser extent, the TrpF activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the in vivo complementation assays, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b03b65f9-feb0-4cbd-8cf9-360c60933e14",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C70",
+      "claim": "priA homologs from Org10, Org13, Org39 and Org41 (H3) were able to complement the TrpF activity but not the HisA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, those priA homologs from Org10, Org13, Org39 and Org41 (H3) were able to complement the TrpF activity but not the HisA activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the in vivo complementation assays, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "91d69d6d-e15e-43cb-bb4b-c891991a5d5d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C71",
+      "claim": "Only five enzymes out of nine were found to be soluble and could be purified as needed.",
+      "claim_type": "EXPLICIT",
+      "source": "Only five enzymes out of nine were found to be soluble and could be purified as needed, which agrees with the high mutation rate encountered in the previous section.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the protein expression and purification experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "781bec0c-0786-4630-944b-1e59e23344f2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C72",
+      "claim": "Enzymes from Org15, Org21, and Org22 (H1) showed dual-substrate specificity but also poor catalytic efficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, enzymes from Org15, Org21, and Org22 (H1) showed dual-substrate specificity but also poor catalytic efficiencies, namely, kcat/KMProFAR from 0.01 to 0.1 \u03bcM\u22121s\u22121 and kcat/KMPRA around 0.01 \u03bcM\u22121s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the enzyme kinetics experiments, with data in Table 2 and Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7973cade-4893-4277-82d9-32839caf009a",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C73",
+      "claim": "Only ProFAR isomerase activity could be detected in vitro using pure enzyme from Org36 (H2), with a catalytic efficiency of kcat/KMProFAR of 0.002 \u03bcM\u22121s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, only ProFAR isomerase activity could be detected in vitro using pure enzyme from Org36 (H2), with a catalytic efficiency of kcat/KMProFAR of 0.002 \u03bcM\u22121s\u22121, but not PRA isomerase activity, as suggested by our highly sensitive in vivo complementation assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the enzyme kinetics experiments, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "662bfd39-d1b7-4558-a6a6-5533d99135c2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C74",
+      "claim": "PRA isomerase activity as the sole activity present in H3 was confirmed in the enzyme purified from Org42, with a kcat/KMPRA of 0.02 \u03bcM\u22121s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, PRA isomerase activity as the sole activity present in H3 was confirmed in the enzyme purified from Org42, with a kcat/KMPRA of 0.02 \u03bcM\u22121s\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the enzyme kinetics experiments, with data in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7013a0fc-1b83-4d4d-8088-81752f64cbe3",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C75",
+      "claim": "Mutations that accumulate during relaxation of purifying selection affect the turnover (kcat) of PriA enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained enzyme kinetics parameters suggest that mutations that accumulate during relaxation of purifying selection, which make these enzymes difficult to work with, affect the turnover (kcat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the enzyme kinetics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "99710cb0-f256-4a45-b2d5-a72491617956",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C76",
+      "claim": "In H1 enzymes, poor turnovers are compensated for by relatively high substrate affinities (KM), mainly for ProFAR.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the H1 enzymes, the poor turnovers are compensated for by relatively high substrate affinities (KM), mainly for ProFAR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the enzyme kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c5854783-e809-4124-8364-46b2b258cfec",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C77",
+      "claim": "Enzymes belonging to H2 and H3 have poor KM parameters not only for the substrate of the missing activity but also for the substrates they are active against.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this does not seem to be the case for the enzymes belonging to H2 and H3, which have poor KM parameters not only for the substrate of the missing activity but also for the substrates they are active against, ProFAR and PRA, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the enzyme kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1b27501b-62c4-4b9c-8e66-efa943565521",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C78",
+      "claim": "PriA homologs from Actinomyces have poor catalytic efficiencies when compared with bona fide PriAs from Bifidobacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PriA homologs from Actinomyces have poor catalytic efficiencies when compared with bona fide PriAs from its closely related genus Bifidobacterium (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison of enzyme kinetics data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "cf750a3c-346e-4a87-83a7-c3e69de85400",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C79",
+      "claim": "Enzyme evolution from bifunctionality to monofunctionality under relaxation of purifying selection does not necessarily express itself in the same way as during purifying or positive selection, where specialization and enzyme proficiency come together.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that enzyme evolution from bifunctionality to monofunctionality under relaxation of purifying selection does not necessarily express itself in the same way as recorded during purifying or positive selection, where specialization and enzyme proficiency come together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the enzyme kinetics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "745fd15d-aa37-404e-bce1-fb229cb2108b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C80",
+      "claim": "The structure of PriA_Org15 (H1) was solved at atomic resolution of 1.05 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were only able to crystallize and solve the structure of PriA_Org15 (H1) at atomic resolution of 1.05 \u00c5 (PDB: 4 \u00d7 2R, Figure 7; Figure 7\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the X-ray crystallography experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7a489d2c-9046-44d3-8840-97d2260d0347",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C81",
+      "claim": "Changes of conserved residues from PriA (H1) into SubHisA2 (H2) enzymes include Ile47Leu and Ser79Thr.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes of conserved residues from PriA (H1) into SubHisA2 (H2) enzymes include Ile47Leu and Ser79Thr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sequence and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "ce2b303a-6502-4e0a-b755-06416e945ab0",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C82",
+      "claim": "Previous independent mutation of Ile47 and Ser79 residues in SubHisA from Corynebacterium abolished the PRA isomerase activity of this monofunctional enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous independent mutation of these two residues, even into similar amino acids, in SubHisA from Corynebacterium abolished the PRA isomerase activity of this monofunctional enzyme (Noda-Garc\u00eda et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b086ebe6-4466-4989-9d6b-b935e26e8d3f",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C83",
+      "claim": "SubHisA2_Org36 has a change of Ser79 into Thr79.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, the SubHisA2_Org36 has a change of Ser79 into Thr79 (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "106df447-dcc2-4156-8e86-2e2dc3fb2061",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C84",
+      "claim": "The methyl group of the threonine residue in SubHisA2_Org36 may affect the contact between PRA and the hydroxyl group, thus abolishing PRA isomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mutation, the methyl group of the threonine residue may affect the contact between PRA and the hydroxyl group common to these residues (Figure 7A), thus abolishing PRA isomerase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "af8d98ea-d215-4ddd-b151-687e202d2be8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C85",
+      "claim": "The estimated binding affinities for ProFAR (\u22129.5 kcal/mol) and PRA (\u22129.2 kcal/mol) were obtained after molecular docking for SubHisA2_Org36.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect agrees with the estimated binding affinities for ProFAR (\u22129.5 kcal/mol) and PRA (\u22129.2 kcal/mol) obtained after molecular docking (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the molecular docking simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "68825717-8dae-4dfc-85b4-9b39ab81ada8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C86",
+      "claim": "The energy-minimized docking model of the productively bound PRA in SubHisA2_Org36 indicates that the catalytic residue Asp11 does not interact with the 2\u2032-hydroxyl group from the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The energy-minimized docking model of the productively bound PRA, in agreement with the kinetic parameters from the preceding section, indicates that the catalytic residue Asp11 does not interact with the 2\u2032-hydroxyl group from the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the molecular docking simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "8974c645-a5ba-43ef-9679-a08eac05832d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C87",
+      "claim": "Comparison of PriA (H1) with SubTrpF (H3) revealed the mutations Gly126Cys and Trp139Gly.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of PriA (H1) with SubTrpF (H3) revealed the mutations Gly126Cys and Trp139Gly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the sequence and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7ece043c-1e55-4f81-af89-a7c89936bf76",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C88",
+      "claim": "The introduction of the Cys side-chain at position 126 in SubTrpF could influence the positioning of Arg137 with respect to Asp128, obstructing the accommodation of ProFAR.",
+      "claim_type": "EXPLICIT",
+      "source": "In PriA, Gly126 faces the active site near the catalytic residue Asp128. The introduction of the Cys side-chain in SubTrpF could influence the positioning of Arg137 with respect to Asp128, obstructing the accommodation of ProFAR, as this region interacts with a large phosphosugar moiety that is absent from PRA (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an inference from the structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "aafb0c93-d9c5-4aab-90a9-da40fe6c8afa",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C89",
+      "claim": "Trp139 is catalytically important for conversion of ProFAR by PriA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Trp139, which is catalytically important for conversion of ProFAR by PriA, is mutated into several different amino acid residues in SubTrpFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about PriA function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2bc789c0-74a5-4197-ad8c-49410c9c0c0d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C90",
+      "claim": "Trp139 is important for the correct positioning of the catalytic residues present in loop 5, and for substrate binding through stacking interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Trp139 is important for the correct positioning of the catalytic residues present in loop 5, and for substrate binding through stacking interactions (Verduzco-Castro et al., 2016; Due et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2326ddf4-1254-4a43-ba1e-b752fbf565e3",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C91",
+      "claim": "The indole group of Trp139 in PriAs can form a hydrogen bond with Asp128, stabilizing the knot-like conformation observed during ProFAR binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the indole group of Trp139 in PriAs can form a hydrogen bond with Asp128, stabilizing the knot-like conformation observed during ProFAR binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural observation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e1c16a3b-63de-43e7-a1c4-be4f7c5bd7b4",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C92",
+      "claim": "Mutation of Trp139 in SubTrpF is in agreement with the loss of ProFAR isomerase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, mutation of this residue in SubTrpF is in agreement with the loss of ProFAR isomerase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "835757f4-f186-4d7e-86f1-909407c80e24",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C93",
+      "claim": "Arg83 is differentially missing from SubTrpF, and/or the fragment preceding it contains a two-residue insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg83 is also interesting as it is differentially missing from SubTrpF, and/or the fragment preceding it contains a two-residue insertion (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding from the sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "e52eff7c-ccf1-40dc-a127-ef9a145d6e48",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C94",
+      "claim": "Arg83 interacts with the second phosphate group of ProFAR, allowing its correct position in the substrate-binding pocket of PriA.",
+      "claim_type": "EXPLICIT",
+      "source": "Arg83 interacts with the second phosphate group of ProFAR, allowing its correct position in the substrate-binding pocket of PriA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a structural observation.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7345d552-afb3-40e2-94e9-09c2ac1b7e15",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C95",
+      "claim": "Modifications in key residues disfavor the ProFAR binding affinities in SubTrpF.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these modifications in key residues disfavor the ProFAR binding affinities, a result that is in agreement with the enzyme kinetic parameters and the estimated binding affinities for ProFAR (\u22129.5 kcal/mol) and PRA (\u22129.7 kcal/mol) obtained after molecular docking (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "7b85eda1-41cf-4626-8d12-3192c4d7f37a",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C96",
+      "claim": "The distinctive reactions retained in each Actinomyces genome reflect the preservation of some full biosynthetic pathways over others, conferring a capacity to grow on different sets of environmental nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that the distinctive reactions retained in each Actinomyces genome reflect the preservation of some full biosynthetic pathways over others, conferring a capacity to grow on different sets of environmental nutrients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the metabolic modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "cfb3926c-017c-408c-b694-90cd8c840772",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C97",
+      "claim": "The phylogenetic proximity of functionally diverse Actinomyces genomes speaks to a strong capacity for rapid adaptation to the diverse conditions present in the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "This result in turn implies an exposure of these genomes to a diverse range of environmental conditions and selection pressures, while the phylogenetic proximity of these functionally diverse genomes speaks to a strong capacity for rapid adaptation to the diverse conditions present in the human body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the phylogenomic and metabolic modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a2c4921c-68e6-43f2-bd00-4f151e629fb2",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C98",
+      "claim": "The process of gene loss, associated with relaxation of purifying selection, is the key driver of adaptation in Actinomyces.",
+      "claim_type": "EXPLICIT",
+      "source": "The process of gene loss, associated with relaxation of purifying selection, is the key driver of this adaptation strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "eb34193e-a65e-4420-9444-a6f1f2af1df5",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C99",
+      "claim": "Metabolic diversity in complex systems as the human microbiome might be characterized after reconstruction of evolutionary trajectories, which may reflect different bacterial functions and ecological sub-niches.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, metabolic diversity in complex systems as the human microbiome might be characterized after reconstruction of evolutionary trajectories, which may reflect different bacterial functions and ecological sub-niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a broader implication of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2309b5d4-b9a1-4fa4-8413-7761abdd389f",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C100",
+      "claim": "The pattern of reaction conservation seen in metabolic modeling analysis exemplifies a likely signature for gene loss, which could be used to identify these phenomena among other genome families.",
+      "claim_type": "EXPLICIT",
+      "source": "The pattern of reaction conservation seen in our metabolic modeling analysis exemplifies a likely signature for gene loss, which could be used to identify these phenomena among other genome families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological insight from the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "a84e0057-4ad7-4019-8b7e-85760790dd2c",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C101",
+      "claim": "In the context of gene loss, enzyme specialization does not necessarily mean catalytic proficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in this context, enzyme specialization does not necessarily means catalytic proficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a key finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "fb566559-8d30-4430-b50b-196c5c066030",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C102",
+      "claim": "Multifunctional enzymes may have more than one constraint operating on them, making tracking functional evolution after selection is relaxed during genome decay more readily done than with monofunctional enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Because multifunctional enzymes may have more than one constraint operating on them, tracking functional evolution promptly after selection is relaxed during genome decay might be done more readily than with monofunctional enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a rationale for the study design.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "f34f99cf-27dc-4867-bb7c-5a6b62186d74",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C103",
+      "claim": "Only partial selection may be released in the retained bifunctional enzyme PriA.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown here, only partial selection may be released in the retained bifunctional enzyme PriA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "68eb2e3d-3aba-45a9-8f4f-6a5862c71035",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C104",
+      "claim": "The predicted metabolic phenotypes unveiled by flux balance analysis correlated better with the evolutionary patterns revealed by metabolic gene occurrence and PriA phylogenetic reconstructions than they did with the natural history told by the species tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the predicted metabolic phenotypes unveiled by flux balance analysis did correlate better with the evolutionary patterns revealed by metabolic gene occurrence and PriA phylogenetic reconstructions than they did with the natural history told by the species tree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the comparative analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "d376b1a6-33e0-4fe7-a804-bf1fa10e5f6f",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C105",
+      "claim": "The occurrence of SubHisA2 in Actinomyces, together with the appearance of SubHisA in Corynebacterium, demonstrates that subfunctionalization of PriA leading into HisA-like enzymes has occurred at least twice.",
+      "claim_type": "EXPLICIT",
+      "source": "The occurrence of SubHisA2 in Actinomyces, together with the appearance of SubHisA in Corynebacterium, demonstrates that subfunctionalization of PriA leading into HisA-like enzymes has occurred at least twice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "2295da6f-becd-422f-ab72-eb21d52073c8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C106",
+      "claim": "SubHisA is the result of positive selection after the acquisition of an entire trp operon by HGT.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas SubHisA is the result of positive selection after the acquisition of an entire trp operon by HGT (Noda-Garc\u00eda et al., 2013), SubHisA2 responded to the loss of trp genes, and it evolved under relaxation of purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "19a92981-6942-4a0b-8500-15b12a12ce9b",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C107",
+      "claim": "SubHisA2 responded to the loss of trp genes and evolved under relaxation of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas SubHisA is the result of positive selection after the acquisition of an entire trp operon by HGT (Noda-Garc\u00eda et al., 2013), SubHisA2 responded to the loss of trp genes, and it evolved under relaxation of purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "4642a1ca-4537-4f14-ad52-ad83d48f335d",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C108",
+      "claim": "SubHisA has drastic mutations in its catalytic active site, which have been shown to be responsible for its inability to catalyze PRA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, SubHisA has drastic mutations in its catalytic active site, which have been shown to be responsible for its inability to catalyze PRA, whilst SubHisA2 shows some residual PRA isomerase activity, congruent with the observation that its active-site architecture is almost completely conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison between SubHisA and SubHisA2.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "b9651f31-6a86-41f9-96a5-0a711e27b66c",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C109",
+      "claim": "SubHisA2 shows some residual PRA isomerase activity, congruent with the observation that its active-site architecture is almost completely conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, SubHisA has drastic mutations in its catalytic active site, which have been shown to be responsible for its inability to catalyze PRA, whilst SubHisA2 shows some residual PRA isomerase activity, congruent with the observation that its active-site architecture is almost completely conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the biochemical and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "719a87ea-389b-4369-bda3-0ea80d022ccd",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C110",
+      "claim": "The subfunctionalization of PriA into SubTrpF has been documented only in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The subfunctionalization of PriA into SubTrpF, in contrast, has been documented only here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1f19862b-ce9e-4d53-9e4b-36ce9f517394",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C111",
+      "claim": "The ancestral activity of PriA is ProFAR isomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "This functional shift had to involve 'non-proficient' enzyme specialization, since the ancestral activity of PriA is ProFAR isomerase (Plach et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c0e128b0-dff5-4abb-89b0-15a1694da38a",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C112",
+      "claim": "The appearance of SubTrpF with substitutions in its catalytic active-site resulted in the elimination of the ancestral ProFAR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the appearance of SubTrpF with substitutions in its catalytic active-site could be discussed based on previous knowledge about PriA. These mutations actually resulted in the elimination of the ancestral ProFAR activity, which is remarkable because the driving force behind this process relates to the relaxation of purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "fafc640a-169b-42af-942c-c50658e7e226",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C113",
+      "claim": "A recent study of PriA sequences obtained from a diverse metagenome classified SubTrpF at the transition from HisA into PriA.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement, a recent study of PriA sequences obtained from a diverse metagenome, complemented by some of the SubTrpF sequences studied here, classified this enzyme subfamily at the transition from HisA into PriA (Noda-Garc\u00eda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "fa8c82cb-b132-4c0e-8812-be9941d5fa48",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C114",
+      "claim": "Actinomyces undergoes interspecies recombination with protein functional implications.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Actinomyces undergoes interspecies recombination with protein functional implications (Do et al., 2008), such a mechanism may provide a means to explain the sequence heterogeneity found in these Actinomyces PriA homologs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "c469aef9-813b-4526-994a-e05c2e059262",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C115",
+      "claim": "Despite the fact that the retained enzymes possess low catalytic activities, they contribute to the maintenance of metabolism, and therefore, to fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "It also shows that, despite the fact that the retained enzymes possess low catalytic activities, they contribute to the maintenance of metabolism, and therefore, to fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "5d511c7c-b540-4bb2-b15e-d55e5c976101",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C116",
+      "claim": "Evolutionary observations backed with metabolic modeling, biochemical and structural data suggest multiple selection types associated with ecological micro-niches, e.g. environmental cues provided by the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our evolutionary observations backed with metabolic modeling, biochemical and structural data, suggest multiple selection types associated with ecological micro-niches, e.g. environmental cues provided by the human body.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "f147ee46-f5d2-494f-9572-d2f39afe403a",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "claim_id": "C117",
+      "claim": "Enzyme subfamilies are the result of processes involving different selection types upon proteins with more than one function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, enzyme subfamilies are the result of processes involving different selection types upon proteins with more than one function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8bf94154-803e-4508-994c-24edc221576e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phylogenomic analysis of 133 Actinobacteria genomes, refined to 33 Actinomycetaceae organisms, reveals four evolutionary lineages with differential genome sizes, GC content, and metabolic capacity. Lineage II has the largest genomes (3.04 Mbp average) and highest GC content (68.32%), while lineage IV shows reduced genome size (2.19 Mbp) and GC content (60.66%), with statistically significant differences in amino acid biosynthetic pathways including his and trp genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phylogenomic analysis is methodologically sound, using 35-205 single-copy proteins for tree construction with both Bayesian and maximum likelihood approaches. The classification into four lineages is supported by multiple lines of evidence including genome size, GC content, and metabolic gene content. Statistical significance is explicitly stated for differences between lineages II and IV (C40).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "34b4ebf0-5a6b-4d62-8109-faec63be5592",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genome-scale metabolic models constructed for 42 organisms (33 Actinomycetaceae + 9 Bifidobacterium) using flux balance analysis reveal that lineages I, III, and IV are undergoing gene loss toward a common core of 695 reactions. Lineage II models are largest (1019 reactions average) with fewest nutrient requirements (19 average), while lineages I, III, and IV show progressive metabolic reduction with increased auxotrophy for L-tryptophan and L-histidine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The metabolic modeling approach is rigorous, using established methods (ModelSEED, flux balance analysis) with appropriate gap-filling and validation. The convergence toward a common metabolic core (695 reactions, with 89% overlap between lineage-specific cores) provides strong computational evidence for gene loss. The prediction of amino acid auxotrophy is testable and consistent with genomic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "43cc36aa-becb-4679-a522-9dc52763bea9",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Phylogenetic analysis of PriA reveals three sub-clades with distinct selection pressures that coevolve with his and trp gene presence/absence. The purple clade (lineage II + Bifidobacterium) shows purifying selection (dN/dS = 0.0636), while orange and yellow clades (lineages I, III, IV) show relaxed purifying selection (dN/dS = 0.0901 and 0.1459 respectively), with elevated dN values suggesting functional divergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The evolutionary analysis is well-executed with appropriate dN/dS calculations and phylogenetic methods. The correlation between PriA evolution and metabolic gene content is clearly demonstrated. The interpretation of dN/dS values is appropriate: values <1 indicate purifying selection, with higher values suggesting relaxation. The claim that elevated dN (not just dN/dS) drives specificity changes (C61) is supported by Table 1 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Three functional hypotheses (H1, H2, H3) predict PriA subfunctionalization patterns. In vivo complementation and in vitro kinetics confirm: H1 enzymes retain dual-substrate specificity (both HisA and TrpF activities) but with poor catalytic efficiency (kcat/KM ~0.01-0.1 \u03bcM\u207b\u00b9s\u207b\u00b9); H2 (SubHisA2) shows primarily ProFAR activity (0.002 \u03bcM\u207b\u00b9s\u207b\u00b9); H3 (SubTrpF) shows only PRA activity (0.02 \u03bcM\u207b\u00b9s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The biochemical characterization provides strong experimental validation of evolutionary predictions. Both in vivo (complementation) and in vitro (kinetics) data converge on the same conclusions. The detection limits are explicitly stated, and the poor catalytic efficiencies compared to Bifidobacterium PriAs support the 'non-proficient specialization' model. However, only 5 of 9 enzymes could be purified (C71), which limits the scope but is consistent with high mutation rates in decaying genomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "1bd3d690-a124-4969-b2a3-630705023cc5",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PriA enzymes adapt from bifunctionality to monofunctionality through mutations affecting both kcat and KM parameters. H1 enzymes maintain dual specificity through high substrate affinity (low KM) compensating for poor turnover, while H2 and H3 enzymes show poor KM for both substrates. This demonstrates that enzyme specialization under relaxed selection does not necessarily lead to catalytic proficiency, contrasting with specialization under positive selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The kinetic analysis clearly demonstrates the mechanistic basis for subfunctionalization. The comparison between H1, H2, and H3 enzymes reveals distinct evolutionary trajectories. The key insight that specialization \u2260 proficiency under relaxed selection (C79, C101) is well-supported by the data showing poor catalytic efficiencies across all Actinomyces enzymes compared to Bifidobacterium. This is a novel and important finding about enzyme evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "748c03af-66ae-4cfd-bd92-1c27a6f53644",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Crystal structure of PriA_Org15 (1.05 \u00c5 resolution) combined with homology modeling and molecular docking identifies Ser79Thr mutation in SubHisA2_Org36 as critical for loss of PRA isomerase activity. The threonine methyl group disrupts substrate-hydroxyl contact, consistent with binding affinity estimates (ProFAR: -9.5 kcal/mol; PRA: -9.2 kcal/mol) and kinetic data showing Asp11 no longer interacts with PRA's 2'-hydroxyl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural analysis provides mechanistic insights, but relies heavily on homology modeling and docking for SubHisA2 rather than experimental structures. While the Ser79Thr mutation is consistent with previous work on SubHisA (C82), the molecular docking predictions require experimental validation. The authors acknowledge that structural data can only support, not prove, the biochemical observations. The 1.05 \u00c5 structure of PriA_Org15 is high quality, but extrapolation to other subfamilies introduces uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "3404eebd-22a8-4dd5-935c-ec748ba75bde",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparison of PriA with SubTrpF identifies three key mutations (Gly126Cys, Trp139Gly, Arg83 deletion/insertion) that abolish ProFAR isomerase activity. Gly126Cys disrupts Arg137 positioning relative to Asp128; Trp139 mutation eliminates critical hydrogen bonding and stacking interactions; Arg83 loss removes phosphate-binding capacity. Molecular docking estimates support reduced ProFAR affinity (ProFAR: -9.5 kcal/mol; PRA: -9.7 kcal/mol).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural analysis identifies plausible mutations for SubTrpF evolution, supported by prior knowledge of PriA catalysis (C89-C91 cite previous work). However, the analysis relies on homology modeling rather than experimental structures for SubTrpF. The authors appropriately note that genetic drift effects cannot be ruled out, and that higher mutation rates create disordered regions hampering structural analysis. The molecular docking provides supporting evidence but requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "cbc6b51e-2077-46ab-bdc5-bdb847892cc4",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic deletion of priA in A. oris MG-1 causes L-tryptophan auxotrophy but unexpectedly maintains L-histidine prototrophy. The authors speculate this may relate to enzyme promiscuity in decaying genomes, but cannot explain the phenotype with current data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The \u0394priA deletion is well-executed with whole-genome sequencing confirmation. The L-tryptophan auxotrophy validates PriA's physiological role. However, the L-histidine prototrophy is unexplained and contradicts expectations from the metabolic models. The speculation about enzyme promiscuity (C67) is reasonable but unsupported. This unexpected result suggests either: (1) an alternative HisA activity exists, (2) the metabolic model is incomplete, or (3) there are unknown regulatory mechanisms. This requires follow-up investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "861c922d-5b37-4433-add2-a13191f11fec",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Gene loss drives functional protein divergence in retained bifunctional enzymes through relaxed purifying selection. The study demonstrates that metabolic diversity in Actinomyces reflects rapid adaptation to human body niches via gene loss, with retained enzymes maintaining metabolism despite low catalytic activity. Metabolic phenotypes correlate better with gene content and PriA phylogeny than with species phylogeny, and the reaction conservation pattern provides a signature for identifying gene loss in other bacterial families.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative conclusion is well-supported by the convergence of phylogenomic, metabolic modeling, evolutionary, and biochemical data. The key insight that bifunctional enzymes enable tracking of functional evolution during genome decay (C102) is validated. The observation that metabolic phenotypes correlate better with gene content than species phylogeny (C104) is important for understanding horizontal vs. vertical evolution. The claim that low-activity enzymes still contribute to fitness (C115) is supported by the \u0394priA phenotype. However, some broader implications (C99, C100) are more speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SubHisA2 in Actinomyces represents a second independent subfunctionalization of PriA into HisA-like enzymes, distinct from SubHisA in Corynebacterium. While SubHisA evolved under positive selection after HGT-mediated trp operon acquisition with drastic active-site mutations, SubHisA2 evolved under relaxed selection after trp gene loss with conserved active-site architecture and residual PRA activity. SubTrpF represents a novel subfamily documented only in this study, involving 'non-proficient' specialization away from the ancestral ProFAR activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparative analysis of SubHisA, SubHisA2, and SubTrpF evolution is well-supported by multiple lines of evidence. The distinction between positive selection (SubHisA) and relaxed selection (SubHisA2) is clear from dN/dS values and biochemical data. The claim that SubTrpF is novel (C110) is supported, though C113 notes prior metagenomic classification. The 'non-proficient specialization' concept for SubTrpF (C112) is particularly interesting as it involves loss of ancestral activity under relaxed selection, which is counterintuitive but well-documented here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study addresses a gap in understanding gene loss in natural bacterial populations by focusing on Actinomycetaceae, a family of human oral cavity bacteria with evidence of genome decay. The bifunctional enzyme PriA, which catalyzes analogous isomerizations in both L-histidine (ProFAR\u2192PRFAR) and L-tryptophan (PRA\u2192CdRP) biosynthesis, provides an ideal system to study protein evolution during genome decay because it can be retained when only one pathway is lost.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The background and rationale are well-established through appropriate citations. The identification of a knowledge gap (gene loss in natural populations, C7) and the strategic choice of a bifunctional enzyme to overcome methodological challenges (C12) demonstrate sound experimental design. The characterization of Actinobacteria and Actinomycetaceae (C13-C23) is accurate and well-cited. This provides strong justification for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    },
+    {
+      "id": "36d95e5c-e066-4829-9672-22b7b5baaba6",
+      "content_id": "0f0365f8-097d-4e9f-899e-b0198ebe172f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Actinomyces undergoes interspecies recombination with protein functional implications, which may explain sequence heterogeneity in PriA homologs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by citation to previous work (Do et al., 2008) and provides a plausible explanation for observed sequence variation. However, the authors do not directly test for recombination in their dataset, so this remains a hypothesis rather than a demonstrated result of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:37.586384Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1d77a412-1a68-4d4d-8907-003c0f8dff97",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "095b2161-8d07-4e41-8c62-7fe65df42041",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "a52c4c7d-37f2-4200-ae06-53e15779a9d5",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "7746d26b-0fe5-467f-a19e-b33a9fd6ad81",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "e57bc87d-233c-4966-ad9e-de1696d93176",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "a9ed4809-57d4-4e67-bd32-e307d6415a5e",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "6ce19d33-5ec7-4643-8903-e33a1f07ecd8",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "3c812d33-edf9-439b-8426-1625ac18cc8e",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "68c45414-c8de-46cb-9e1c-7767df1ebf37",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "25715e6e-0710-443b-be0d-50021b07692e",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "152d4f40-6ce9-425b-804a-6a89794dd9e1",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "e5f65fe8-beff-4d8a-9792-5bbfe91ba80d",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "0058ea9b-59b1-44e1-b383-bcd1ca6946b8",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "63929c10-3248-4b2f-b13b-c11357fdbfda",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "6110cbca-2837-481e-aa36-7fd363a55214",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "c27d1c70-5308-41ef-8d79-d33f294be64c",
+      "result_id": "8bf94154-803e-4508-994c-24edc221576e"
+    },
+    {
+      "claim_id": "e507032a-5ff0-48b7-a629-74794b96ac55",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "86f22b81-77d5-4e65-b0db-2a2c1f595b06",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "2f25d23b-0de6-48fc-9ad3-7a6210fd374b",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "41a97e70-124a-4cc2-b9e5-eaf5b768ed34",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "229b1e81-b30d-4af8-88e7-906f12cd47b2",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "3dff8c01-24b1-4984-894a-30301bc7ba75",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "33761ca8-78f0-49a3-ab17-a55ccaeb5be2",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "92e09363-c209-4913-abad-3776177cc50b",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "9aaca9ef-a4f6-4a59-91e2-86f444901a68",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "e92efe8a-da82-411a-8522-c3ed7b052575",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "2d63a292-337d-4327-8100-4caf50bc6ebb",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "fce3561a-6b63-4988-89b3-ccba65ac2532",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "1d76f529-cb59-4ccc-a5c2-4e65eac8cd89",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "b006e552-c44a-4473-870c-42801823f8a6",
+      "result_id": "34b4ebf0-5a6b-4d62-8109-faec63be5592"
+    },
+    {
+      "claim_id": "1151fb5c-fd07-46d3-b4ff-873241018770",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "5843aa9e-3cc1-47cb-aeed-6b9ab1a7d097",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "e121705f-5eaa-430d-9cd2-9bad5c9e8b19",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "51886725-1a6d-4807-99a7-a51f2dabc897",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "7875a6de-45c4-4b13-9057-e46c84b39c19",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "5958eaa9-baa8-4542-9fec-0962765588c8",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "625864fc-ee47-47f2-8c71-cb19930907bf",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "df68bf46-1e36-40a3-a399-41be0b7902a1",
+      "result_id": "43cc36aa-becb-4679-a522-9dc52763bea9"
+    },
+    {
+      "claim_id": "2e94acf2-59e9-4fa6-bf22-36e0d40e4453",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "ed04ad54-1826-4fd6-9efa-4a2a4220394d",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "e105f7de-e648-4e4f-bd42-424d14cb7a7f",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "f486dc54-3071-431c-9904-f2ccbc0c5840",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "c8fdd091-d4a2-46e6-a81c-7a3e5b7025c2",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "b03b65f9-feb0-4cbd-8cf9-360c60933e14",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "781bec0c-0786-4630-944b-1e59e23344f2",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "7973cade-4893-4277-82d9-32839caf009a",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "662bfd39-d1b7-4558-a6a6-5533d99135c2",
+      "result_id": "33ba4a34-f424-4daa-a8f5-0ff817c654e8"
+    },
+    {
+      "claim_id": "a7661a32-10fd-422a-bae3-6c0684ed61b2",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "381a968d-0647-4a56-9330-edf9a230f4b3",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "7013a0fc-1b83-4d4d-8088-81752f64cbe3",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "99710cb0-f256-4a45-b2d5-a72491617956",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "c5854783-e809-4124-8364-46b2b258cfec",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "1b27501b-62c4-4b9c-8e66-efa943565521",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "cf750a3c-346e-4a87-83a7-c3e69de85400",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "a84e0057-4ad7-4019-8b7e-85760790dd2c",
+      "result_id": "1bd3d690-a124-4969-b2a3-630705023cc5"
+    },
+    {
+      "claim_id": "745fd15d-aa37-404e-bce1-fb229cb2108b",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "7a489d2c-9046-44d3-8840-97d2260d0347",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "ce2b303a-6502-4e0a-b755-06416e945ab0",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "b086ebe6-4466-4989-9d6b-b935e26e8d3f",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "106df447-dcc2-4156-8e86-2e2dc3fb2061",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "af8d98ea-d215-4ddd-b151-687e202d2be8",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "68825717-8dae-4dfc-85b4-9b39ab81ada8",
+      "result_id": "748c03af-66ae-4cfd-bd92-1c27a6f53644"
+    },
+    {
+      "claim_id": "8974c645-a5ba-43ef-9679-a08eac05832d",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "7ece043c-1e55-4f81-af89-a7c89936bf76",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "aafb0c93-d9c5-4aab-90a9-da40fe6c8afa",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "2bc789c0-74a5-4197-ad8c-49410c9c0c0d",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "2326ddf4-1254-4a43-ba1e-b752fbf565e3",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "e1c16a3b-63de-43e7-a1c4-be4f7c5bd7b4",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "835757f4-f186-4d7e-86f1-909407c80e24",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "e52eff7c-ccf1-40dc-a127-ef9a145d6e48",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "7345d552-afb3-40e2-94e9-09c2ac1b7e15",
+      "result_id": "3404eebd-22a8-4dd5-935c-ec748ba75bde"
+    },
+    {
+      "claim_id": "621d4131-5625-4aae-93da-eb78a94b5d22",
+      "result_id": "cbc6b51e-2077-46ab-bdc5-bdb847892cc4"
+    },
+    {
+      "claim_id": "f240ad06-211d-46b4-af9a-5bda00b848b8",
+      "result_id": "cbc6b51e-2077-46ab-bdc5-bdb847892cc4"
+    },
+    {
+      "claim_id": "67b07833-a37f-41e0-9e97-8830ce752464",
+      "result_id": "cbc6b51e-2077-46ab-bdc5-bdb847892cc4"
+    },
+    {
+      "claim_id": "721f7956-ea2a-4dd2-8089-00c39659648e",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "1ce1ea65-063c-43fa-8103-df7384b7498b",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "7b85eda1-41cf-4626-8d12-3192c4d7f37a",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "cfb3926c-017c-408c-b694-90cd8c840772",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "a2c4921c-68e6-43f2-bd00-4f151e629fb2",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "eb34193e-a65e-4420-9444-a6f1f2af1df5",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "2309b5d4-b9a1-4fa4-8413-7761abdd389f",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "fb566559-8d30-4430-b50b-196c5c066030",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "f34f99cf-27dc-4867-bb7c-5a6b62186d74",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "68eb2e3d-3aba-45a9-8f4f-6a5862c71035",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "c469aef9-813b-4526-994a-e05c2e059262",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "5d511c7c-b540-4bb2-b15e-d55e5c976101",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "f147ee46-f5d2-494f-9572-d2f39afe403a",
+      "result_id": "861c922d-5b37-4433-add2-a13191f11fec"
+    },
+    {
+      "claim_id": "d376b1a6-33e0-4fe7-a804-bf1fa10e5f6f",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "2295da6f-becd-422f-ab72-eb21d52073c8",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "19a92981-6942-4a0b-8500-15b12a12ce9b",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "4642a1ca-4537-4f14-ad52-ad83d48f335d",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "b9651f31-6a86-41f9-96a5-0a711e27b66c",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "719a87ea-389b-4369-bda3-0ea80d022ccd",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "1f19862b-ce9e-4d53-9e4b-36ce9f517394",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "c0e128b0-dff5-4abb-89b0-15a1694da38a",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "fafc640a-169b-42af-942c-c50658e7e226",
+      "result_id": "5e5941e0-1c4d-4993-9c56-9b5ece37d35e"
+    },
+    {
+      "claim_id": "767913da-ea27-46a6-9dde-c66f386aabb2",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "fdb5c701-6690-4a66-ac81-0ea82ce263b6",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "bfaac970-e68d-4ef9-84ef-34e19edb946b",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "8972fd6f-ee20-4231-b3c2-4848e88275ed",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "46d7f73c-882b-4d41-a8d3-109912eabc9e",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "6afbcf5c-9a59-4a1d-8358-fe9798e29da4",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "b013c907-381c-4d75-a737-086086816c27",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "cad35ac3-f440-471a-8358-05fcacb9c0da",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "234d61d8-bd35-46d9-8fd9-57e602ea2baf",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "0578e219-d47f-489d-978f-39ff4db4ab7d",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "4a10fe28-7c2d-42ee-b008-8cf0332d5787",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "259d5a9a-829e-49bd-a458-faf70f707f4d",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "3065b180-8572-419c-92a9-af511b979676",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "c8003fc9-9a2a-4e45-a3d2-a153c3d43540",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "f187681d-197b-47f9-aee8-5c2f48fb5400",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "6e11ead0-c166-41ac-9cd0-23b5a28fb91b",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "b52ebce1-1dd9-4e11-a9c6-de1f68f4af39",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "9e015fdf-571e-4a74-b298-9c4e4f8a2896",
+      "result_id": "aaf7d16a-3b5e-49ed-b0ad-093d3f3c8e31"
+    },
+    {
+      "claim_id": "fa8c82cb-b132-4c0e-8812-be9941d5fa48",
+      "result_id": "36d95e5c-e066-4829-9672-22b7b5baaba6"
+    }
+  ],
+  "comparisons": []
+}

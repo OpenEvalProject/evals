@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Two distinct groups of STN electrodes were identified based on LFP characteristics: Group 1 (n=9) showed significant beta desynchronization and gamma synchronization during gripping with good force-effort scaling, while Group 2 (n=9) lacked these modulations and exhibited impaired force scaling with effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide converging evidence from spectral analysis (C11-C12), behavioral correlations (C13-C18), and statistical comparisons (C14, C17-C18) demonstrating two functionally distinct groups. The significant differences in correlation coefficients (p<0.0001) and the inference connecting LFP patterns to force scaling (C19-C20) are well-supported by the data presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A first-order dynamic linear model using beta and gamma band STN LFP activities as inputs (Model 2) successfully decoded gripping force profiles, achieving median correlations of 0.952-0.969 between predicted and measured force, with normalized RMSE of 16.4-16.5% and no significant timing offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C24-C29 collectively demonstrate successful force decoding using the proposed model. The high correlation coefficients (C25-C26), acceptable error rates (C27-C28), and lack of timing bias (C29) provide strong quantitative support. Model comparison using BIC (C24) validates the choice of beta and gamma features over alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Individual trial force prediction using Model 2 achieved median within-trial correlations of 0.732 across all STNs, with stable force correlations ranging from 0.448 to 0.913, regression slopes near unity (0.91-1.12), and approximately 13% of trials showing prediction failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 provide comprehensive single-trial validation data. The quantitative metrics (C30-C35) demonstrate reasonable prediction accuracy at the individual trial level, while acknowledging limitations (C36). The regression slopes near unity (C34) indicate unbiased predictions, supporting the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C66"
+    ],
+    "result": "Force prediction from STN LFP was significantly better for the contralateral hand compared to the ipsilateral hand, demonstrating relative lateralization of effort encoding in the basal ganglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C66 provide statistical evidence (F(2,16)=10.629, p=0.012; ks-test p<0.001) for lateralized force encoding. The consistent findings across different statistical tests and models support the conclusion of lateralization, though the authors acknowledge potential underestimation due to mirror movements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Force prediction accuracy strongly correlated with movement-related gamma synchronization (explaining 75.7-88.1% of variance), with gamma showing sharper spatial gradients (71% drop) than beta (59% drop), while baseline activity levels did not predict decoding performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 identify key factors affecting prediction performance. The exponential relationship with gamma synchronization (C40-C41) is well-quantified, spatial gradient differences (C42-C43) are clearly measured, and the lack of correlation with baseline activity (C44-C45) supports the interpretation that movement-related reactivity is critical (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cross-validation in an independent patient group performing maximal effort gripping showed median within-trial correlations of 0.3848-0.9421, with >50% of trials achieving correlations >0.7859. Incorporating alpha activity (Model 4) significantly improved predictions (\u0394BIC=243.3, p=0.020), with >50% of trials achieving correlations >0.8699.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 demonstrate successful cross-validation in an independent cohort with a different task paradigm. The quantitative results (C47-C48, C50) and statistical model comparison (C51) support the generalizability of the approach, while revealing task-dependent optimization (alpha band contribution for maximal effort tasks, C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Beta and gamma activities function as complementary non-linear correlates of force that, when combined in a first-order linear dynamic model, provide a control signal for the motor plant with STN LFP changes preceding force changes by 200-300 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C63-C65 present a coherent mechanistic interpretation supported by the modeling results. The temporal precedence of LFP changes (C65) supports a causal interpretation, while the model's success (C54-C56) validates the proposed relationship. However, C64 is explicitly speculative, appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Diminished beta and gamma modulation in untreated Parkinson's disease may restrict the dynamic range of force coding, leading to bradykinesia, weakness, abnormally high grip forces, and coarse force control, consistent with prior observations of impaired force scaling in PD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C74 present a mechanistic explanation for PD motor symptoms based on the study's findings. While the inference (C68, C73) is logical and supported by multiple citations to prior work (C67, C69-C72, C74), the current study does not directly test this hypothesis with comparative data from ON vs. OFF medication states or PD vs. control subjects. The interpretation is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "STN LFP signals could potentially provide stable, high-performance control signals for brain-machine interfaces in paralyzed patients, leveraging the safety of DBS surgery, signal stability over time, and retention of LFP reactivity during imagined movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C75-C84 present a speculative application based on the study's findings combined with prior literature. While the technical feasibility is supported by citations regarding signal stability (C80-C81) and imagined movement (C83), the authors appropriately acknowledge this as speculative (C4, C75). Critical limitations are not addressed, including whether LFP patterns persist in paralyzed patients and whether effector-specific decoding is possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Force prediction failed in approximately half of patients, with electrode localization analysis suggesting that movement-related beta and gamma modulation may serve as an electrophysiological marker of proximity to the motor STN, with gamma showing sharper spatial gradients than beta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 transparently report study limitations and provide post-hoc analysis of failure modes. The imaging review data (C88, C90) and spatial gradient analysis (C91) support the inference that spectral modulation indicates STN proximity (C89). This honest assessment of limitations strengthens the overall credibility of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Movement-related beta and gamma modulations were presumed to indicate recordings from the dorsal STN and relatively physiological functioning, while lack of modulations might indicate surgical stun effect, temporary STN damage, or targeting variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21-C23 present assumptions and speculative explanations for group differences. While C22 is supported by citation to prior work showing medication effects on LFP reactivity, the presumptions about electrode location (C21) and causes of absent modulation (C23) are not directly validated in this study. These remain plausible hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Predicted force was noisier than measured force, potentially due to dynamic fluctuations and short-time-scale events in STN LFP oscillatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 acknowledge a limitation in prediction quality. The observation (C92) is directly supported by the data, while the explanation (C93) is speculative but supported by citation. The authors appropriately identify this as an area for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study included 11 Parkinson's disease patients (mean age 61.3 years, disease duration 11.3 years) who underwent bilateral STN DBS electrode implantation, with recordings made 3-6 days post-operatively while ON medication, showing 53.4% UPDRS improvement with levodopa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C100 provide essential methodological details about patient demographics, clinical characteristics, surgical procedures, recording parameters, and signal processing methods. These are straightforward descriptive claims supported by the methods section and patient data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior work has established that basal ganglia are involved in force and movement vigor control, with frequency-specific LFP activities correlating with movement parameters, though no BMI user has achieved robotic hand force manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C5-C10 summarize established knowledge from prior literature, all supported by appropriate citations. These provide necessary context for the current work. The claims accurately represent the cited literature and establish the knowledge gap the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The current findings are consistent with prior research showing STN neuronal modulation by gripping force, frequency-specific LFP correlations with force, gamma band information in motor cortex, and beta encoding of force at low effort levels, while contrasting with cortical delta activity findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C57-C62 appropriately contextualize the current findings within prior literature. The citations support the claims, and the authors correctly identify both consistencies (C52-C53, C57-C58) and contrasts (C60) with previous work. The methodological argument against artifact contamination (C59) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Prior work suggests spatial segregation of limb representations in human STN and that cortical control signal plasticity plays a significant role in BMI performance optimization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 cite relevant prior work to contextualize limitations and future directions. The citations appropriately support the claims about STN somatotopy and BMI plasticity, providing important context for interpreting the study's implications.",
+    "result_type": "MINOR"
+  }
+]

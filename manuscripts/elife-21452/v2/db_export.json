@@ -1,0 +1,1759 @@
+{
+  "submission": {
+    "id": "d9efc979-e4b7-420b-a5b3-f437d8d17a15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:28:02.495620Z",
+    "updated_at": "2025-11-30T23:28:02.495620Z"
+  },
+  "content": [
+    {
+      "id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "submission_id": "d9efc979-e4b7-420b-a5b3-f437d8d17a15",
+      "content_type": "manuscript",
+      "content_text": "# Fast-spiking GABA circuit dynamics in the auditory cortex predict recovery of sensory processing following peripheral nerve damage\n\n## Authors\n\n- Jennifer Resnik<sup>1</sup> ([ORCID: 0000-0002-0573-0008](https://orcid.org/0000-0002-0573-0008)) \u2020\n- Daniel B Polley<sup>1</sup> ([ORCID: 0000-0002-5120-2409](https://orcid.org/0000-0002-5120-2409)) \u2020\n\n### Affiliations\n\n1. Eaton-Peabody Laboratories Massachusetts Eye and Ear Infirmary Boston United States\n2. Department of Otolaryngology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCortical neurons remap their receptive fields and rescale sensitivity to spared peripheral inputs following sensory nerve damage. To address how these plasticity processes are coordinated over the course of functional recovery, we tracked receptive field reorganization, spontaneous activity, and response gain from individual principal neurons in the adult mouse auditory cortex over a 50-day period surrounding either moderate or massive auditory nerve damage. We related the day-by-day recovery of sound processing to dynamic changes in the strength of intracortical inhibition from parvalbumin-expressing (PV) inhibitory neurons. Whereas the status of brainstem-evoked potentials did not predict the recovery of sensory responses to surviving nerve fibers, homeostatic adjustments in PV-mediated inhibition during the first days following injury could predict the eventual recovery of cortical sound processing weeks later. These findings underscore the potential importance of self-regulated inhibitory dynamics for the restoration of sensory processing in excitatory neurons following peripheral nerve injuries.\n\n## Introduction\n\nThe enduring plasticity of the adult brain supports a remarkable recovery of perceptual and motor capabilities following peripheral nerve injury. In sensory cortex, reorganization following injury involves a rapid unmasking of inputs from adjacent, undamaged regions of the sensory periphery and, in cases of incomplete injury, a slower, progressive increase in responsiveness to surviving nerve fibers within the damaged region (Rasmusson, 1982; Merzenich et al., 1983; Gilbert and Wiesel, 1992; Kaas et al., 1990; Robertson and Irvine, 1989; Qiu et al., 2000; Chambers et al., 2016; Calford and Tweedale, 1988). The initial stages of this reorganization may be enabled by homeostatic processes that compensate for dramatic swings in afferent input to maintain neural excitability around a set point (Nahmani and Turrigiano, 2014). Recordings from cortical pyramidal neurons in culture or acute brain slices following sudden shifts in excitatory input have revealed a coordinated sequence of changes at glutamatergic and GABAergic synapses that normalize firing rates and rebalance network activity (Kilman et al., 2002; O'Brien et al., 1998; Turrigiano et al., 1998; Xue et al., 2014; D'amour and Froemke, 2015; Li et al., 2014). Whether and how synaptic and extra-synaptic modifications underlie reorganized sensory processing in deafferented zones of the adult cortex remains to be determined, but accumulating evidence from intact preparations suggests that the stabilization of new synaptic inputs from spared regions of the sensory periphery may emerge through a combination of rapid disinhibition and increased structural motility (Li et al., 2014; Marik et al., 2014; Yamahachi et al., 2009; Darian-Smith and Gilbert, 1994; Keck et al., 2011, 2013; Garraghty et al., 1991; Florence et al., 1998).\n\nIn the auditory system, a loss of cochlear hair cells and/or cochlear nerve afferent synapses is associated with reduced GABA signaling and cortical hyperexcitability, as manifest in elevated spontaneous firing rates, enhanced central gain and unmasking of sound-evoked responses from undamaged regions of the cochlea (Qiu et al., 2000; Chambers et al., 2016; Seki and Eggermont, 2003; Yang et al., 2012; Scholl and Wehr, 2008). However, these biomarkers have not been compared with one another over the full course of functional recovery with fine-grain temporal resolution at the level of individual neurons. As a result, it is unclear whether dynamic changes in intracortical inhibition precede, follow, outlast or recede ahead of functional changes in receptive field mapping and neural hyperexcitability. Nor is it clear whether the decline in GABA markers following peripheral injury arise from a reduced influence of PV-expressing fast-spiking interneurons, which synapse onto pyramidal neuron somata and have a well-recognized role in gating activity-dependent cortical plasticity, or instead from other GABA neuron subtypes, which can synapse onto other GABA neurons and exert a net excitatory effect on network activity (Isaacson and Scanziani, 2011). Here, we address these unanswered questions by measuring changes in PV-mediated intracortical inhibition alongside hyperexcitability and receptive field plasticity from individual regular spiking (RS) putative pyramidal neurons over a several month period surrounding varying degrees of auditory nerve damage. These findings highlight a rapid loss and recovery in PV-mediated inhibition that may compensate for a sudden drop in afferent drive following cochlear afferent loss to support a progressive recovery of sensory processing from spared nerve fibers.\n\n## Results\n\nWe implanted optetrode assemblies into the primary auditory cortex (A1) of adult PV-Cre:Ai32 mice (Figure 1a) to isolate regular spiking (RS) putative pyramidal neurons based on their spike shape and estimate the strength of local inhibition on RS units during optogenetic activation of PV\u2013expressing GABA neurons (Figure 1b\u2013c). The mechanical stability of the optetrode assembly combined with the thin, flexible tetrode wires allowed us to isolate single units (Figure 1d) and hold them for many weeks, according to a conservative, objective statistical standard (Figure 1e\u2013f). With this approach, we could measure auditory responsiveness and local inhibitory tone from individual RS neurons in awake, head-fixed adult mice over a 7\u20138 week period surrounding varying degrees of auditory nerve injury (Figure 1g). Although we could occasionally isolate PV-expressing FS interneurons on our tetrodes (Figure 1b\u2013c), we could rarely hold these neurons for more than a single recording session (refer to Figure 1\u2014figure supplement 1). Therefore, all descriptions of long-term changes in single unit response properties were limited to RS, putative pyramidal neurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig1-v2.jpg)\n\n**Figure 1.:** (A) Immunolabeling of PV neurons in A1 with co-localization of EYFP reporter in Pv-Cre:Ai32 transgenic mice. DAPI labels cell nuclei. Scale bar\u00a0=\u00a015 \u00b5m. (B) Spike raster plots illustrating that optogenetic activation of fast spiking (FS) PV+ units (black, top) inhibits regular spiking (RS) units (gray, bottom). Right, spike waveforms for the RS and FS units. Arrowheads denote spike peak and trough. Scale bars, 0.5 ms and 50 \u00b5V. (C) Scatter plot showing the bimodal distribution of peak-tough amplitude and timing differences across all RS (gray) and FS (black) units. (D) A random sub-sampling of spike waveforms recorded over 53 days from a single wire of a tetrode projected down into the first three principal components (PC). (E) Spike waveforms from the two units identified in (D) across all recording sessions, color-coded and superimposed chronologically. Waveforms for random units were selected at random from all simultaneously recorded units. (F) The variability in the actual unit waveforms, estimated as the sum of squared errors (SSE), is significantly less than randomly shuffled units (p<0.001, f(1)=814.73, mean \u00b1 SEM). (G) Experimental design.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) As per Figure 1E, single unit spike waveforms across all recording sessions, are shown for a representative RS unit as well as two representative FS units. The RS unit waveform is consistent across the 7\u20138-week recording period, while the FS unit waveforms are lost after a few recording sessions. (B) Cumulative probability functions depict the number of consecutive recording sessions before each RS and FS unit was lost in noise-exposed and ouabain-treated mice. (C) For the analysis provided in the main text, we only analyzed units that were present in at least 75% of all recording sessions for a given mouse. None of the FS units we recorded met this criterion. Thus, we were unable to contrast changes in the FS neurons themselves with changes reported in the main text for RS neurons or PV-mediated inhibition.\n\nMost forms of cochlear injury induce an intractable set of changes to the auditory nerve as well as sensory and non-sensory cells within the cochlea. In cases of widespread cochlear damage, it is impossible to attribute abnormal cortical tuning to a central plasticity versus abnormal cochlear filtering or amplification. We circumvented this problem by selectively eliminating afferent nerve fibers without permanently affecting cochlear mechanics using a well-characterized noise exposure protocol that lesions approximately 50% of high-frequency afferent nerve synapses in the 16\u201345 kHz region of the cochlea without damaging hair cells (n\u00a0=\u00a04, Figure 2a) (Wan et al., 2014; Kujawa and Liberman, 2009). This protocol induces only a temporary elevation of the\u00a0auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE) thresholds, but a permanent reduction in ABR wave 1 amplitude, which has been shown to reflect the permanent elimination of high-frequency cochlear afferent synapses (Figure 2b, the reader is referred to the figure legends and Supplementary file 1 for most statistical reporting) (Liberman and Kujawa, 2017).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig2-v2.jpg)\n\n**Figure 2.:** (A) Adult mice (16 weeks) were exposed to octave-wide noise at 98 dB SPL for 2 hr, which has been shown to eliminate approximately 50% of auditory nerve synapses onto inner hair cells in the 16\u201345 kHz region of the cochlea (Wan et al., 2014; Kujawa and Liberman, 2009). (B) Mean \u00b1 SEM ABR (left) and DPOAE thresholds (middle) were temporarily elevated 2 days after noise exposure but recover fully by 30 days. ABR wave 1b amplitude reflects the permanent loss of Type-I spiral ganglion nerve fibers (right). (C) A frequency response area (FRA) from a single unit recorded in the high-frequency zone of the A1 tonotopic map rapidly assumed a low-frequency FRA hours after noise exposure but shifted back towards baseline tuning over the ensuing month. (D\u2013E) Rasters depict spiking from the same RS unit evoked by broadband noise at varying sound levels (D) or inhibited by optogenetic activation of neighboring PV+ neurons (E). Note temporary threshold shift and change in inhibition strength. (F) Quantification approach illustrated from a different single unit recorded before (black) and after (red) noise exposure. (G) Mean \u00b1 SEM (n\u00a0=\u00a0208 units) values for each response property illustrated in (F). Data for each unit are normalized to the mean value measured during the 3-day period prior to noise exposure. Red symbols are used to visually highlight the rapid plasticity occurring during the first 5 days following nerve damage. Asterisks = post-hoc pairwise comparison between identified groups (B) or to baseline value (G) p<0.05 after correcting for multiple comparisons.\n\nWe implanted optetrode assemblies into the 32 kHz region of the A1 tonotopic map and recorded RS units with high-frequency receptive fields, low-intensity thresholds to broadband noise stimulation and strong feedforward inhibition from PV neurons (Figure 2c\u2013e, top row). Several hours after noise exposure that affects high-frequency regions of the cochlea, the same unit exhibited elevated response thresholds for a broadband noise burst, slightly reduced PV-mediated inhibition and the appearance of a new, well-tuned low-frequency receptive field that was absent just hours earlier (Figure 2c\u2013e, second row). We quantified the invasion of spared, low-frequency inputs and the eventual restoration of the original receptive field by measuring daily changes in frequency response area (FRA) overlap with the baseline FRA as well as tone-evoked firing rates from the spared (4\u20136 kHz) and partially denervated (32\u201348 kHz) cochlear regions (Figure 2f, left). We compared these metrics of receptive field reorganization against the typical biomarkers of hyperexcitability in the auditory pathway: decreased response thresholds, increased spontaneous firing rate and increased gain, defined here as the slope of the stimulus input-output function (Figure 2f, middle). Finally, we related these markers of RS unit hyperexcitability and receptive field plasticity to changes in the strength of PV-mediated inhibition (Figure 2f, right; n\u00a0=\u00a0208).\n\nSeveral hours after noise exposure, firing rates evoked by stimulation of spared, low-frequency cochlear regions had nearly doubled (increased by 96.7%, p=0.04) with a small, but significant decrease in inhibition (\u22129.8%, p=0.02) and no significant change in gain or spontaneous rate (Figure 2g). Six to ten days after noise exposure, inhibition had decreased by 40% (p<0.0001), receptive fields remained focused on spared regions of the cochlea (p<0.01) and spontaneous firing rate was significantly elevated (p<0.05). Central gain, spontaneous firing rate and frequency tuning all shifted back towards baseline values as response thresholds in the cochlea, ABR and cortical neurons recovered to pre-exposure levels. By the time of the final recording session, approximately 7 weeks after noise exposure, reduced PV-mediated inhibition (\u221219%, p<0.001) was the only enduring compensatory plasticity marker for the putative loss of high-frequency auditory nerve synapses.\n\nExposure to ototoxic drugs can cause a sudden and extreme loss of afferent signaling from the cochlea. Would homeostatic adjustments support as complete a recovery of function following a massive loss of auditory nerve fibers? We addressed this question by applying ouabain bilaterally to the cochlear round window membrane (Figure 3a). In mice, ouabain selectively and evenly eliminates\u00a0>95% of Type-I spiral ganglion afferent neurons across the frequency map, without affecting other types of sensory and non-sensory cells in the cochlea or auditory nerve (Yuan et al., 2014). Bilateral ouabain treatment virtually eliminated the ABR without any adverse DPOAE effects in all mice (n\u00a0=\u00a06, Figure 3b), but, interestingly, was associated with a slow, partial recovery of sound-evoked cortical spiking in half the mice (Figure 3c) but an unremitting loss of auditory responsiveness in the other half (Figure 3d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig3-v2.jpg)\n\n**Figure 3.:** Plotting conventions follow Figure 2. (A) Ouabain was applied bilaterally to the round window membrane. (B) Mean \u00b1 SEM ABR thresholds were substantially elevated 30 days after ouabain application (left) but DPOAE thresholds were unaffected, indicating normal outer hair cell function (middle). ABR wave1b was virtually eliminated after ouabain (right). Darker and lighter shading represent measurements from mice that recovered cortical sound thresholds versus mice that did not, respectively. (C\u2013D) Rasters document changes in noise-evoked spiking and laser-induced inhibition, respectively, from single A1 RS units recorded over a 53-day period from a mouse that eventually recovered function (C) and a mouse that did not recover function (D). (E\u2013H) Mean \u00b1 SEM noise-evoked thresholds (E), rate-level function gain (F), spontaneous firing rate (G) and inhibition strength (H) for all units recorded from three mice that recovered (top row, n\u00a0=\u00a0156), three mice that did not recover (middle row, n\u00a0=\u00a0169) or three mice that underwent a sham surgery (bottom row, n\u00a0=\u00a0156). Asterisks = post-hoc pairwise comparison between identified groups (B) or to baseline value (E\u2013H) p<0.05 after correcting for multiple comparisons.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The amplitude of ABR wave 1b arises directly from the auditory nerve compound action potential and, provided DPOAE thresholds are normal (as is the case here), serves as a useful proxy for the surviving number of afferent nerve fibers onto inner hair cells. The ABR wave 1 amplitude is presented alongside the mean auditory response threshold measured in A1 single units for each mouse subjected to auditory nerve damage. ABR wave 1 amplitude does not predict the eventual recovery of sound processing in mice subjected to massive auditory nerve damage with ouabain.\n\nWhen DPOAE thresholds are normal, ABR wave 1b amplitude is an accurate proxy for the number of cochlear afferent synapses (Wan et al., 2014; Kujawa and Liberman, 2009; Liberman and Kujawa, 2017). However, the ABR wave 1b amplitude was not significantly different between mice that recovered auditory processing following ouabain treatment versus those that did not (unpaired t-test, p>0.4; see also Figure 3\u2014figure supplement 1). Whereas our estimate of peripheral denervation bore no relationship to the mode of cortical recovery, early dynamics in inhibitory tone and spontaneous firing rate were linked to the recovery of cortical processing. RS units that eventually recovered auditory thresholds exhibited a transient spike in spontaneous firing rate, a sustained increase in central gain and a steep drop in PV-mediated inhibition that began to recover as high-threshold sound-evoked activity returned (Figure 3e\u2013h, top row, n\u00a0=\u00a0156). By contrast, in RS units that never recovered auditory sensitivity, changes in spontaneous rate were comparatively sluggish, while inhibitory strength declined gradually and monotonically (Figure 3e\u2013h, middle row, n\u00a0=\u00a0169). This stark dichotomy in the cortical response to nerve injury was shared among all units recorded from a given mouse; if one unit recovered auditory responsiveness, all units recovered auditory responsiveness (Figure 4). As a negative control in a separate group of mice (n\u00a0=\u00a03), we applied sterile water to the round window membrane rather than ouabain and confirmed that cortical response properties were stable over the recording period in mice with intact auditory nerves (Figure 3e\u2013h, bottom row, n\u00a0=\u00a0156).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013B) PV-mediated inhibition strength (A) and change in spontaneous firing rate (B) timelines for sound exposed, ouabain recovered and ouabain non-recovered mice (red, blue and teal accordingly, plotted for visualization purposes as a fourth order polynomial fit to the data presented Figures 2 and 3). (Middle and Right) Correlation between broadband noise threshold at day 50 and PV-mediated inhibition (A) or spontaneous firing rate change (B) at days 6\u201310 for ouabain-treated (middle) and sound-exposed mice (right, Spearman\u2019s correlation coefficient, Rs). Each symbol represents a single RS unit. The shape and color correspond to a particular group, as described above. The shading corresponds to a particular mouse within that group.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21452/elife-21452-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Distribution of best frequency values for primary auditory cortex units recorded before nerve damage. RS units recorded in noise-exposed mice were targeted to a high-frequency region of the tonotopic map, in the zone of putative cochlear denervation. (B\u2013C) Histogram of PV-mediated inhibition strength (B) and response threshold (C) distributions prior to auditory nerve damage. (D) The strength of PV-mediated inhibition and auditory response thresholds are not correlated with each other before nerve damage (Pearson\u2019s correlation coefficient). (E\u2013F) PV-mediated inhibition strength and auditory response thresholds after nerve damage cannot be predicted from the strength of PV-mediated inhibition before nerve damage (Pearson\u2019s correlation coefficient).\n\nThese findings highlight the coordination of short- and long-term changes in adult A1 following peripheral nerve injury. Spontaneous rate, central gain and inhibition all scaled with the degree of nerve damage (Figure 3f\u2013h versus Figure 2g, Figure 4), but varied substantially both over time and between mice. Restored auditory sensitivity was associated with a sharp loss and partial recovery of inhibition from PV interneurons, where the degree of eventual recovery could be predicted from changes in inhibition\u00a0~1 week after nerve damage (Figure 4a). Not only was PV-mediated inhibition a predictor of sensory recovery for both mild and severe peripheral damage, but also\u00a0it was a better predictor than were modifications in spontaneous activity (Figure 4b) or central gain, the biomarkers most commonly employed to assess central auditory plasticity following sensorineural hearing loss (refer to Figure 4\u2014figure supplement 1 for an expanded analysis of predictors of recovery).\n\n## Discussion\n\nIn this study, we tracked a plasticity in PV-mediated inhibition and single neuron responsiveness in the primary auditory cortex of adult mice following a sudden loss of input from the auditory nerve. Just hours after noise exposure, we observed the appearance of new, low-threshold receptive fields tuned to undamaged regions of the cochlea, accompanied by a small, significant drop in PV-mediated inhibition. Over the ensuing weeks, as cochlear thresholds and cortical receptive field tuning returned to baseline conditions, we noted only a brief spike in traditional biomarkers of central auditory hyperactivity, such as increased spontaneous firing rate and increased central gain. By contrast, PV-mediated inhibition remained reduced through our final recording session and was the sole physiological indicator for the permanent, presumed loss of high-frequency cochlear synapses. Importantly, this is not to say that auditory response normalization was mediated by disinhibition; our observations are correlative and do not speak to the necessity nor sufficiency of changes in PV networks for functional recovery. Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).\n\nIn classic and contemporary studies of adult cortical plasticity following deafferentation, fine-scale reorganization varied widely between local subnetworks of RS neurons and the completeness of global remapping was negatively correlated with the spatial extent of peripheral lesions (Robertson and Irvine, 1989; Merzenich et al., 1984; Barnes et al., 2015; Keck et al., 2008). Here, we report that the mode of cortical sensory recovery (complete, partial or none) was roughly shared between all RS units recorded in a given mouse and did not strictly depend on the estimated auditory nerve damage. Unlike focal ablations of the retina, basilar membrane or skin surface, cochlear ouabain treatment eliminates 95% of primary afferent synapses without affecting sensory transduction mechanisms (Chambers et al., 2016; Yuan et al., 2014). This provided us with an uncommon opportunity to track the restoration of sensory responses transmitted through the small fraction of surviving nerve fibers, rather than the typical approach of describing competitive reorganization from ectopic, spared inputs neighboring the lesion. As compared to the rapid unmasking of excitatory inputs from neighboring undamaged regions of the sensory organ, which occurs within hours (Figure 2, see also [Gilbert and Wiesel, 1992; Calford and Tweedale, 1988]), the recovery of function for spared afferent inputs interspersed within a damaged portion of the nerve, if it occurred at all, unfolded over several weeks. The variable modes of recovery between mice with carefully matched nerve damage may relate to earlier observations that cortical sensory reorganization is not only determined by the pattern and density of peripheral innervation, but may also be directed by activity-dependent differences that are orchestrated through behavioral use (Clark et al., 1988; Xerri et al., 1998; Polley et al., 1999).\n\nFollowing either type of nerve damage, the cortical networks that recovered function were those that matched the sudden drop in bottom-up excitatory drive with a rapid dip in PV-mediated inhibition. Precisely balanced excitation and inhibition enables a wider dynamic range of sensory information coding (Isaacson and Scanziani, 2011; Shadlen and Newsome, 1998; Pouille et al., 2009; Zhou et al., 2014) and supports adaptive plasticity without forsaking network stability (Vogels et al., 2011; Froemke et al., 2013; Hellyer et al., 2016; Barrett et al., 2016). These findings suggest that self-regulating PV circuits may not only play an important role in rebalancing network activity in response to reduced afferent drive during developmental critical periods (Xue et al., 2014; Yazaki-Sugiyama et al., 2009), but in the adult cortex following sensory nerve damage as well.\n\n## Materials and methods\n\n### Animals and cochlear denervation\n\nAll procedures were approved by the Animal Care and Use Committee at the Massachusetts Eye and Ear Infirmary and followed guidelines established by the National Institutes of Health for the care and use of laboratory animals. Subjects included 13 PV-Cre:Ai32 mice of either sex (a cross between B6;129P2-Pvalbtm1(cre)Arbr/J and Ai32 (RCL-ChR2(H134R)/EYFP), Jackson Laboratory), aged 16 weeks at the time of optetrode implantation.\n\n### Bilateral auditory nerve damage\n\n#### Acoustic exposure\n\nThe acoustic over-exposure stimulus was an octave band of noise (8\u201316 kHz) presented at 98 dB sound pressure level (SPL) for 2 hr. During exposures, animals were awake and unrestrained within a 12 \u00d7 10 cm, acoustically transparent cage. The cage was suspended directly below the horn of the sound-delivery loudspeaker in a small, reverberant chamber. Noise calibration to target SPL was performed immediately before each exposure session.\n\n#### Ouabain\n\nSelective elimination of Type-I spiral ganglion neurons was achieved by applying a 1 mM solution of ouabain octahydrate (Sigma) and sterile water to the left and right round window niche, as described previously (Yuan et al., 2014). Animals were anesthetized with ketamine (120 mg/kg) and xylazine (12 mg/kg), with half the initial ketamine dose given as a booster when required. The connective tissue and underlying muscle were blunt dissected and held away from the bulla with retractors. A small opening was made in the bulla with the tip of a 28.5-gauge needle. The exposed round window niche was filled with 1\u20132 \u00b5L of the ouabain solution using a blunted needle. Ouabain was reapplied five more times at 15 min intervals, wicking the remaining solution away with absorbent paper points before each application. For control experiments, sterile water was placed on the cochlear round window using an identical procedure. Measurements of the auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE, see subsequent Experimental Procedures) were made during the ouabain application to confirm functionality and ABR threshold shift without changes in DPOAE thresholds or amplitudes. Additional ouabain was applied, as necessary, until the ABR threshold at 16 kHz was greater than 55 dB sound pressure level (SPL). The incision was sutured and the mouse was given an analgesic (Buprenex, 0.05 mg/kg) before being transferred to a heated recovery chamber.\n\n### Cochlear function tests\n\nMice were anesthetized with ketamine and xylazine (as above), and placed on a homeothermic heating blanket during testing. ABR stimuli were 5 ms tone pips (8, 16 and 32 kHz pure tones) with a 0.5 ms rise-fall time delivered at 30 Hz. Intensity was incremented in 5 dB steps, from 20\u201380 dB SPL. ABR threshold was defined as the lowest stimulus level at which a repeatable waveform could be identified. DPOAEs were measured in the ear canal using primary tones with a frequency ratio of 1.2, with the level of the f2 primary set to be 10 dB less than f1 level, incremented together in 5 dB steps. The 2f1-f2 DPOAE amplitude and surrounding noise floor were extracted. DPOAE threshold was defined as the lowest of at least two continuous f2 levels, for which the DPOAE amplitude was at least two standard deviations greater than the noise floor. All treated animals underwent rounds of DPOAE and ABR testing before, 2 days and approximately 30 days after the procedure.\n\n### Immunohistochemistry\n\nMice were perfused with 0.01\u00a0M phosphate buffered saline (PBS) (pH\u00a0=\u00a07.4) followed by 4% paraformaldehyde in 0.01 M PBS. Brains were removed and stored in 4% paraformaldehyde for 12 hr before transferring to cryoprotectant (30% sucrose) for 48 hr. Sections (40 \u00b5m) were cut using a cryostat (Leica CM3050S). Sections were washed in PBS containing 0.1% Triton X-100 (three washes, 5 min each), incubated at room temperature in blocking solution (Super Block) for 6 min at room temperature and then incubated in primary antibody (PV 27 rabbit anti-parvalbumin, Swant,1:1000 dilution) at four degrees C overnight. The next day, slices were washed and incubated in secondary antibody (Alexa 647 goat anti-rabbit immunoglobulin G, Invitrogen, 1:200 dilution) for 1.5 hr at room temperature. Sections were mounted on gelatin-subbed glass slides (BBC Biochemical) and coverslipped. Fluorescence images were obtained with a confocal microscope (Leica).\n\n### Chronic optetrode implantation\n\nMice were brought to a surgical plane of anesthesia with ketamine/xylazine, as described above. Body temperature was maintained at 36.5\u00b0C with a homeothermic blanket system. Using a scalpel, a small craniotomy was centered over the right auditory cortex leaving the dura mater intact. The brain surface was covered with sterile ointment. Chronic implants consisted of a modified microdrive array (VersaDrive 4, Neuralynx Inc) containing 4 independently moveable, closely spaced tetrodes and an optic fiber (0.2 mm, Thorlabs, Inc.). The optic fiber was mounted into the microdrive assembly so that it rested several millimeters above brain the surface. Tetrodes were four twisted nichrome wires (12.5 \u03bcm in diameter, Stablohm 650 wire, California Fine Wire Company), electroplated with gold to reach an impedance of 0.5\u20131 M\u2126 (nanoZ and ADPT-NZ-VERSA adapter, Neuralynx Inc). Microdrive arrays were positioned over the right primary auditory cortex based on an initial mapping of tonotopic gradient orientation using independently moveable tungsten microelectrodes (Hackett et al., 2011). Tetrodes were lowered into the middle cortical layers to match the approximate depth of tungsten microelectrodes recordings. Silver wire was fixed in place atop the left frontal cortex to serve as a ground. A titanium head plate was affixed to the skull once the microdrive assembly was firmly in place with dental cement (C&B Metabond).\n\n### Neurophysiology data collection\n\nSingle unit recordings were made from awake, head-fixed mice. Mice were continuously video monitored during recording. Raw neural signals were digitized at 32-bit, 24.4 kHz (RZ5 BioAmp Processor; Tucker-Davis Technologies) and stored in binary format for offline analysis. The signal was bandpass filtered at 300\u20133000 Hz with a second-order Butterworth filter and movement artifacts were minimized through common mode rejection. Spike waveforms were extracted based on a threshold and sorted offline into single units using Wave_clus, a semiautomatic clustering algorithm (Quiroga et al., 2004). Sorts were performed on concatenated data files from all recording sessions. Neurons were considered continuously recorded if spike sorting from data across the entire experiment yielded a single unit by the following criteria: (1) Waveforms constituted a statistically isolated cluster when all waveforms from all recording sessions were considered; (2) Biophysical properties consistent with single units, such as an absolute refractory period, were met; (3) High uniformity in spike shape was maintained, as assessed by a comparison of the sum of squared errors (SSE) across days (fractional difference in amplitude squared); and (4) Consistently high signal to noise ratios.\n\nThe first recordings after auditory nerve injury were made approximately 2 hr after the end of noise exposure and approximately 14 hr after ouabain application (to allow for extra recovery from injectable anesthetics). Recordings were made every 1\u20134 days thereafter. We only included units that were active in at least 75% of recording sessions and whose firing rate was stable for the two baseline recording sessions prior to peripheral damage. After offline sorting the mean waveform of neurons was calculated, the tetrode wire on which the amplitude of the spikes was largest was used. The trough-to-peak interval and the peak trough ratio were calculated and units were classified as fast-spiking PV+ units or RS-putative excitatory units. The classification was confirmed by laser response in the pre-condition. All subsequent analyses were performed in MATLAB 2015a (MathWorks).\n\n### Acoustic stimuli\n\nStimuli were generated with a 24-bit digital-to-analog converter (National Instruments model PXI-4461). For DPOAE and ABR tests, as well as during electrode implant surgery, stimuli were presented via in-ear acoustic assemblies consisting of two miniature dynamic earphones (CUI CDMG15008\u201303A) and an electret condenser microphone (Knowles FG-23339-PO7) coupled to a probe tube. Stimuli were calibrated in the ear canal in each mouse before recording. In awake recordings, stimuli were presented via a free-field electrostatic speakers (Tucker-Davis Technologies) facing the left (contralateral) ear. Free-field stimuli were calibrated before recording with a wide-band ultrasonic acoustic sensor (Knowles Acoustics, model SPM0204UD5).\n\n### Neurophysiology data analysis\n\n#### Rate-level functions\n\nBroadband noise tokens (4\u201364 kHz, 0.1 s duration, 4 ms raised cosine onset/offset ramps) were presented at 0\u201380 dB SPL in 5 dB increments. Threshold was defined as the lowest of at least three continuous stimulus levels for which the response to sound was significantly higher than the spontaneous activity. Gain was defined as the relationship between sound level (input) and firing rate (output). The gain was measured as the slope of the linear fit of the initial rising phase from the rate-level function.\n\n#### Frequency response areas\n\nFRAs were delineated using pseudorandomly presented tone pips (50 ms duration, 4 ms raised cosine onset/offset ramps, 0.5\u20131 s intertrial interval) of variable frequency (4\u201348 kHz in 0.1 octave increments) and level (0\u201375 dB SPL in 5 dB increments). Each tone pip was repeated three times and responses to each iteration were averaged. The start of the spike collection window was set to be the point when the firing rate began to consistently exceed the spontaneous rate by at least 3 SD. The offset of the spike collection window was the first bin after the response decreased to less than 4 SD above the spontaneous rate. Additional details on spike windowing and FRA boundary determination are described elsewhere (Guo et al., 2012). Receptive field overlap was defined as the number of frequency\u2013intensity combinations in the intersection of the reference and comparator FRA divided by the number of points contained within their union. The reference FRA was the average of the pre-damage FRAs for a given unit and the comparator was selected from each individual measurement time.\n\n### Optogenetic activation\n\nCollimated blue light (473 nm, 500 ms duration, 12 mW) was generated by a laser (DPSS, LaserGlow Co.) and delivered to the brain surface via an optic fiber coupled to the tetrode assembly. Precise timing of the light pulse was controlled via a custom shutter system. The intensity of the blue laser was calibrated for each implant prior to the start of recording with a photodetector (Thorlabs, Inc.). Percentage of inhibition in excitatory cells was calculated as the percentage of 20 ms bins, during the 500 ms laser duration, that were significantly suppressed when compared to spontaneous firing rate (paired t-test corrected for multiple comparisons).\n\n### Statistical analysis\n\nA one-way ANOVA or mixed design ANOVA was employed for determining statistical significance (Matlab). Post-hoc pairwise comparisons were corrected for multiple comparisons using the Bonferroni correction. All error bars are mean \u00b1 SEM. Pearson and Spearman correlation coefficients were used for correlations of normally and not normally distributed variables accordingly.\n",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "0b1aa821-db46-47fd-a411-0fcd568fb8fc",
+      "submission_id": "d9efc979-e4b7-420b-a5b3-f437d8d17a15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dwight E Bergles, Johns Hopkins School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21452.012](https://doi.org/10.7554/eLife.21452.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Coordinated homeostatic modifications enable cortical compensation for sensory nerve damage\" for consideration by eLife. Your article has been favorably evaluated by Andrew King (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes an analysis of the behavior of regular spiking (RS) neurons in primary auditory cortex following two forms of peripheral injury to the cochlea. In a recent report from the same group (Chambers et al., 2016), they showed that the central auditory system can compensate for loss of sensory input, enabling cortical neurons to respond relatively normally to sounds after ~95% of Type I afferents were destroyed by applying ouabain to the round window. Here they examined the time course of changes in RS cell spontaneous activity, responsiveness and degree of inhibition by PV interneurons (using ChR2-mediated stimulation in mice engineered to express ChR2 only in PV interneurons: PV-Cre x Ai32 mice) following two forms of cochlear injury. They find that PV-mediated inhibition of RS cells is transiently reduced following noise-induced trauma, which recovers along with normal response properties of the neurons. In response to bilateral ouabain application, which induces more extensive damage to afferents, they find that some cells were able to partially recover responsiveness to sound. These cells exhibited a greater initial reduction in PV mediated inhibition (75-80% versus 30% inhibition) and correspondingly higher rates of spontaneous activity than RS cells that did not recover, suggesting that homeostatic changes in the strength of PV interneuron-mediated inhibition controls the recovery from these injuries. The design and analyses are thoughtful and well-executed, and the results are of importance to our general understanding of CNS plasticity. However, insight into the mechanisms responsible for the reduced strength of PV inhibition is limited, as hearing loss-induced changes in excitatory currents or voltage-gated properties of RS neurons, which were not assessed, could explain the apparent reduction of inhibitory gain. In addition, there is an uncertain relationship between the concept of homeostasis and the measurements of inhibitory strength which display complicated and dissimilar changes in recovered and non-recovered animals.\n\nEssential revisions:\n\nCorrelation versus causation:\n\n1) The main conclusion of the studies is that the initial reduction in PV interneuron-mediated inhibition predicts whether the cell will recover from the trauma. The authors provide correlative data in support of this argument, but do not show causation. The primary question is whether this effect is just one of a large number of changes in cortical circuits or is key to the recovery process. Several observations raise some concerns about this hypothesis. First, the amount of reduction in PV inhibition in the non-recovering RS cells following ouabain exposure (~35%) is similar (~40%) to that observed in the FS cells that recovered from noise-induced trauma. Second, on a cell-by-cell basis the inhibition strength in non-recovered animals does not appear to predict recovery \u2013 the data presented in Figure 3D show that there is a similar loss of inhibition in both cases and yet one cell partially recovered and one did not. Of note, the summary data for PV-mediated inhibition doesn't appear to match data illustrated in the figures (see panel 2E, day-3 and day 50, summarized in 2F, and compare to bottom panel of Figure 2G). Day 0 recordings were obtained 2-14 hours after noise exposure or ouabain application. Moreover, the example rasters suggest that GABAergic inhibition was completely unchanged on Day 0, whereas the summary data show a significant, but incomplete, reduction (except for the non-recovery group). It would be more intuitive for the reader to view examples that matched the summary data. More importantly, the time course of reduced inhibitory gain after each of these hearing loss protocols is not shown with great enough temporal resolution. In addition, it is not clear why the time course of inhibitory change differed between recovered and non-recovered groups. If all changes are homeostatic, then the kinetics should be consistent across all groups. Third, the authors note that all cells within an animal showed the same behavior (e.g. all partially recover or all fail to recover). Given the intrinsic variability among RS cells with regard to PV inhibition and stochastic changes following injury, one might predict that some cells would show recovery and others would not. These findings suggest that the rapid reduction in PV inhibition and increase in firing rate may not be key to inducing compensatory changes in cortical circuits. Indeed, the dramatic shift in responsiveness to low frequency sounds after noise exposure appears to occur before there is much change in inhibition, suggesting that there are other important sites of regulation. Without some direct manipulations of PV interneurons, the role of this decrease in PV inhibition remains speculative.\n\n2) The interpretation seems to be that GABAergic changes emerge over the first 5 days. In contrast, there is a rapid unmasking of low frequency responsiveness (Figure 2C, top two panels) on Day 0. Since data were collected during a 12 hour interval on Day 0, and data were merged for the subsequent 5 days, the actual time course over which inhibitory strength declines is uncertain. By way of comparison to nerve transection experiments in NHPs, short latency (hours) changes to GABAergic transmission are observed, raising the possibility that there is a very rapid response to the manipulations that may not be revealed by the sampling resolution used in this study. Since the study seeks to characterize the temporal relationship between inhibitory homeostatic mechanisms and other measures of recovery following hearing loss, a better temporal resolution could be important to the overall interpretation. A similar question arises for the data presented in Figure 3.\n\n3) Concerning the difference between recovered and unrecovered animals, perhaps there is a critical amount of survival that is required to promote reorganization, and a greater number of spiral ganglion cells survived in the animals that recovered. Are there within animal comparisons that could establish whether the level of damage correlates with the neurophysiological findings (e.g., recovered versus non-recovered)? Notably, the authors do not provide histological evidence that the degree of synapse loss induced by these manipulations in this strain of mice is similar to that reported by Kujawa and Lieberman (C57BL/6 versus CBA/Cj, which were not examined by Kujawa). This issue is important, as different strains of mice exhibit different sensitivities for noise induced hearing loss. Again, with reference to the NHP somatosensory literature, when animals receive amputations or dorsal rhizotomies that deafferent a whole region of sensory cortex, there are large areas that fail to reorganize. However, when a sufficient number of nerve fibers remain, then that is enough for the neuraxis to reorganize.\n\nMechanisms responsible for the reduced PV neuron mediated suppression of RS cell firing\n\n1) The apparent reduction of PV-mediated inhibition (i.e., failure of a light-evoked PV cell activity to block spontaneous discharge) could be explained by an increase in tonic excitatory currents. That is, if tonic excitatory currents increased following hearing loss, then a normal level of inhibition would appear to be less efficacious at suppressing discharge. The interpretation of reduced inhibitory gain would be more convincing if there were data or analyses to confirm that excitatory gain did not change, at least during the first 5 days. However, in vitro and in vivo experiments in the context of homeostasis suggest that excitatory and voltage-gated currents do change with similar manipulations, and the increased spontaneous discharge rate observed in the current study is consistent with this idea.\n\n2) The interpretation that inhibitory gain declines (Figure 2C and 2F) is based on the suppression of responses of RS neurons and could be explained by reduced FS cell excitability, reduced GABA release, or reduced GABAA receptors located postsynaptically. Are there observations that support any of these specific mechanisms? For example, were a sufficient number of FS cell waveforms recovered through spike sorting to determine how these cells responded to blue light pulses following hearing loss? If there are multiple mechanisms, do they occur over a similar time course? What happens to FS cell spontaneous firing rates following hearing loss? Since they are recurrently connected to pyramidal cells which, themselves, display increased spontaneous rates, one might expect an increase. Does the shift of RF after hearing loss apply for PV neurons as well?\n\nRelationship to prior studies\n\n1) The authors make the following statement in the Introduction: \"It is unclear how these distinct biomarkers of cortical reorganization following injury -receptive field remapping, spontaneous rate increases, and central gain increases \u2013 are coordinated over the days and weeks following varying degrees of sensory nerve injury. Nor is it certain whether these plasticity processes precede or follow homeostatic regulation of intracortical inhibition.\"\n\nThere are many relevant publications investigating how similar outcome measures are coordinated during the somatosensory reorganization that accompanies peripheral and central nerve injury. Changes to inhibition and concomitant reorganization of receptive fields are generally evident as soon as recordings can be obtained (e.g., Turnbull and Rasmusson, Somatosens Mot Res. 7:365, 1990; Calford and Tweedale, Somatosens Mot Res. 8:249, 1991; Rasmusson et al., Somatosens Mot Res. 10:69, 1993). More recently, a brief period of inactivity was demonstrated to induce a short latency reduction of IPSP amplitude in cortex (Lu et al., PNAS 111:1616, 2014). In addition, the rapid unmasking of subthreshold receptive fields is known to be kinetically distinct from the NMDA receptor-dependent reorganization that takes place in the weeks that follow sensory dennervation, especially in NHP models of peripheral dennervation. Thus, there are likely to be many mechanisms that operate across different time courses. In fact, homeostatic synaptic responses (reduced inhibitory or increased excitatory gain) to deprivation may permit \"silent\" inputs to become suprathreshold through NMDAR-dependent plasticity. It would be helpful to place the current findings in the context of a very well-developed literature.\n\n2) Concerning the title. The results show plasticity that begins soon after the manipulation and lasts for a long time. The question is whether all of this plasticity can be termed \"homeostatic.\" Homeostasis covers many specific cellular mechanisms that take place after sensory deprivation or during learning. It is important to make it clear exactly what, where, and when you are referring to homeostasis (e.g., Are all of the observations, from day 0-50, a single homeostatic process?). Since the changes seem to occur proximal to the hearing loss, this issue could be addressed by specifying what is meant by the word \"compensatory\" and specifying what is meant by the term \"homeostatic.\" The Abstract does refer to homeostasis as occurring \"during the first days,\" but it is not clear that homeostatic mechanisms emerge over that long a period of time.\n\nAdditional issues\n\n1) The authors state that noise exposure induces permanent loss of the ABR, assessed through wave 1 amplitude; however, Figure 2 shows almost 50% recovery by 30 days. Please revise or provide further justification for this statement.\n\n2) The authors do not provide histological evidence that the degree of synapse loss induced by these manipulations in this strain of mice is similar to that reported by Kujawa and Lieberman (C57BL/6 versus CBA/Cj, which were not examined by Kujawa). This issue is important, as different strains of mice exhibit different sensitivities for noise induced hearing loss.\n\n3) The authors indicate that \"optetrode assemblies into the 32 kHz region of the A1 tonotopic map and recorded RS units with high-frequency receptive fields, low-intensity thresholds to broadband noise stimulation and strong feedforward inhibition from PV neurons.\" It would be helpful if the authors indicated what proportion of sampled cells exhibited these properties. Was there a correlation between the degree of PV-mediated inhibition and the response of the neurons to peripheral injury?\n",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f6ecd9e-1ba8-42cd-b3f4-a8f12a047b01",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C1",
+      "claim": "Cortical neurons remap their receptive fields following sensory nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical neurons remap their receptive fields and rescale sensitivity to spared peripheral inputs following sensory nerve damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon being investigated in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "1bb7f76f-1b34-41c0-82f5-fd883e16393b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C2",
+      "claim": "Cortical neurons rescale sensitivity to spared peripheral inputs following sensory nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cortical neurons remap their receptive fields and rescale sensitivity to spared peripheral inputs following sensory nerve damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon being investigated in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "ce96cf2b-5199-4e89-8736-5af3f1098e97",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C3",
+      "claim": "Homeostatic adjustments in PV-mediated inhibition during the first days following injury can predict the eventual recovery of cortical sound processing weeks later.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the status of brainstem-evoked potentials did not predict the recovery of sensory responses to surviving nerve fibers, homeostatic adjustments in PV-mediated inhibition during the first days following injury could predict the eventual recovery of cortical sound processing weeks later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "1313488f-6691-4fb5-9cc6-f67ff6b02d7b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C4",
+      "claim": "The status of brainstem-evoked potentials did not predict the recovery of sensory responses to surviving nerve fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the status of brainstem-evoked potentials did not predict the recovery of sensory responses to surviving nerve fibers, homeostatic adjustments in PV-mediated inhibition during the first days following injury could predict the eventual recovery of cortical sound processing weeks later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "fd164f31-6dc9-46f1-8cf0-9190c2391397",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C5",
+      "claim": "Self-regulated inhibitory dynamics are potentially important for the restoration of sensory processing in excitatory neurons following peripheral nerve injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings underscore the potential importance of self-regulated inhibitory dynamics for the restoration of sensory processing in excitatory neurons following peripheral nerve injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "eedef9c6-212f-4743-9d86-0b6a6badf6e6",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C6",
+      "claim": "Reorganization following injury involves a rapid unmasking of inputs from adjacent, undamaged regions of the sensory periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory cortex, reorganization following injury involves a rapid unmasking of inputs from adjacent, undamaged regions of the sensory periphery and, in cases of incomplete injury, a slower, progressive increase in responsiveness to surviving nerve fibers within the damaged region (Rasmusson, 1982; Merzenich et al., 1983; Gilbert and Wiesel, 1992; Kaas et al., 1990; Robertson and Irvine, 1989; Qiu et al., 2000; Chambers et al., 2016; Calford and Tweedale, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "1da5132a-08cb-4210-a1e1-5f5023e7bcee",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C7",
+      "claim": "In cases of incomplete injury, there is a slower, progressive increase in responsiveness to surviving nerve fibers within the damaged region.",
+      "claim_type": "EXPLICIT",
+      "source": "In sensory cortex, reorganization following injury involves a rapid unmasking of inputs from adjacent, undamaged regions of the sensory periphery and, in cases of incomplete injury, a slower, progressive increase in responsiveness to surviving nerve fibers within the damaged region (Rasmusson, 1982; Merzenich et al., 1983; Gilbert and Wiesel, 1992; Kaas et al., 1990; Robertson and Irvine, 1989; Qiu et al., 2000; Chambers et al., 2016; Calford and Tweedale, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3c00b883-8322-403f-8596-73cdaafac16e",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C8",
+      "claim": "Homeostatic processes may enable the initial stages of reorganization by compensating for dramatic swings in afferent input to maintain neural excitability around a set point.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial stages of this reorganization may be enabled by homeostatic processes that compensate for dramatic swings in afferent input to maintain neural excitability around a set point (Nahmani and Turrigiano, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "c8ca8cfa-e586-49e6-8dc3-9f3b60e48041",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C9",
+      "claim": "Recordings from cortical pyramidal neurons in culture or acute brain slices following sudden shifts in excitatory input have revealed a coordinated sequence of changes at glutamatergic and GABAergic synapses that normalize firing rates and rebalance network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings from cortical pyramidal neurons in culture or acute brain slices following sudden shifts in excitatory input have revealed a coordinated sequence of changes at glutamatergic and GABAergic synapses that normalize firing rates and rebalance network activity (Kilman et al., 2002; O'Brien et al., 1998; Turrigiano et al., 1998; Xue et al., 2014; D'amour and Froemke, 2015; Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "727fc396-1c15-4bd7-9d9e-c62061ef19af",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C10",
+      "claim": "The stabilization of new synaptic inputs from spared regions of the sensory periphery may emerge through a combination of rapid disinhibition and increased structural motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether and how synaptic and extra-synaptic modifications underlie reorganized sensory processing in deafferented zones of the adult cortex remains to be determined, but accumulating evidence from intact preparations suggests that the stabilization of new synaptic inputs from spared regions of the sensory periphery may emerge through a combination of rapid disinhibition and increased structural motility (Li et al., 2014; Marik et al., 2014; Yamahachi et al., 2009; Darian-Smith and Gilbert, 1994; Keck et al., 2011, 2013; Garraghty et al., 1991; Florence et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "11728c58-2c7f-48f8-86ed-6912f5b0bc4b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C11",
+      "claim": "A loss of cochlear hair cells and/or cochlear nerve afferent synapses is associated with reduced GABA signaling and cortical hyperexcitability.",
+      "claim_type": "EXPLICIT",
+      "source": "In the auditory system, a loss of cochlear hair cells and/or cochlear nerve afferent synapses is associated with reduced GABA signaling and cortical hyperexcitability, as manifest in elevated spontaneous firing rates, enhanced central gain and unmasking of sound-evoked responses from undamaged regions of the cochlea (Qiu et al., 2000; Chambers et al., 2016; Seki and Eggermont, 2003; Yang et al., 2012; Scholl and Wehr, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "d22fa4e4-dfaf-4afe-be4d-8ee533615408",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C12",
+      "claim": "Cortical hyperexcitability following cochlear damage is manifest in elevated spontaneous firing rates, enhanced central gain and unmasking of sound-evoked responses from undamaged regions of the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "In the auditory system, a loss of cochlear hair cells and/or cochlear nerve afferent synapses is associated with reduced GABA signaling and cortical hyperexcitability, as manifest in elevated spontaneous firing rates, enhanced central gain and unmasking of sound-evoked responses from undamaged regions of the cochlea (Qiu et al., 2000; Chambers et al., 2016; Seki and Eggermont, 2003; Yang et al., 2012; Scholl and Wehr, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "4d460ebb-1aca-42d0-a1cb-7c254f58fbbc",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C13",
+      "claim": "PV-expressing fast-spiking interneurons synapse onto pyramidal neuron somata.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor is it clear whether the decline in GABA markers following peripheral injury arise from a reduced influence of PV-expressing fast-spiking interneurons, which synapse onto pyramidal neuron somata and have a well-recognized role in gating activity-dependent cortical plasticity, or instead from other GABA neuron subtypes, which can synapse onto other GABA neurons and exert a net excitatory effect on network activity (Isaacson and Scanziani, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "e2959e5b-74d9-4cd0-ad25-16d21ac47552",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C14",
+      "claim": "PV-expressing fast-spiking interneurons have a well-recognized role in gating activity-dependent cortical plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor is it clear whether the decline in GABA markers following peripheral injury arise from a reduced influence of PV-expressing fast-spiking interneurons, which synapse onto pyramidal neuron somata and have a well-recognized role in gating activity-dependent cortical plasticity, or instead from other GABA neuron subtypes, which can synapse onto other GABA neurons and exert a net excitatory effect on network activity (Isaacson and Scanziani, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "c0075b5e-2d16-4755-96a7-15d26d07beb3",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C15",
+      "claim": "Some GABA neuron subtypes can synapse onto other GABA neurons and exert a net excitatory effect on network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor is it clear whether the decline in GABA markers following peripheral injury arise from a reduced influence of PV-expressing fast-spiking interneurons, which synapse onto pyramidal neuron somata and have a well-recognized role in gating activity-dependent cortical plasticity, or instead from other GABA neuron subtypes, which can synapse onto other GABA neurons and exert a net excitatory effect on network activity (Isaacson and Scanziani, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a11cbf8b-e565-4e3a-98b2-2b6e2c6dae0b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C16",
+      "claim": "Optetrode assemblies were implanted into the primary auditory cortex (A1) of adult PV-Cre:Ai32 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted optetrode assemblies into the primary auditory cortex (A1) of adult PV-Cre:Ai32 mice (Figure 1a) to isolate regular spiking (RS) putative pyramidal neurons based on their spike shape and estimate the strength of local inhibition on RS units during optogenetic activation of PV\u2013expressing GABA neurons (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "fd2ea87f-669d-4b95-b027-518c85c2ccc9",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C17",
+      "claim": "Regular spiking (RS) putative pyramidal neurons were isolated based on their spike shape.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted optetrode assemblies into the primary auditory cortex (A1) of adult PV-Cre:Ai32 mice (Figure 1a) to isolate regular spiking (RS) putative pyramidal neurons based on their spike shape and estimate the strength of local inhibition on RS units during optogenetic activation of PV\u2013expressing GABA neurons (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "e7338230-55eb-4355-8e42-823f23fc1b15",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C18",
+      "claim": "The strength of local inhibition on RS units was estimated during optogenetic activation of PV-expressing GABA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We implanted optetrode assemblies into the primary auditory cortex (A1) of adult PV-Cre:Ai32 mice (Figure 1a) to isolate regular spiking (RS) putative pyramidal neurons based on their spike shape and estimate the strength of local inhibition on RS units during optogenetic activation of PV\u2013expressing GABA neurons (Figure 1b\u2013c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "66fc86b4-6775-4f7b-943e-b7fefe23ba9d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C19",
+      "claim": "The mechanical stability of the optetrode assembly combined with thin, flexible tetrode wires allowed isolation of single units and holding them for many weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical stability of the optetrode assembly combined with the thin, flexible tetrode wires allowed us to isolate single units (Figure 1d) and hold them for many weeks, according to a conservative, objective statistical standard (Figure 1e\u2013f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical capability of the experimental method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3d648233-5c96-44f3-9a83-32d55680b7a9",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C20",
+      "claim": "Auditory responsiveness and local inhibitory tone were measured from individual RS neurons in awake, head-fixed adult mice over a 7-8 week period surrounding varying degrees of auditory nerve injury.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, we could measure auditory responsiveness and local inhibitory tone from individual RS neurons in awake, head-fixed adult mice over a 7\u20138 week period surrounding varying degrees of auditory nerve injury (Figure 1g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and measurements made in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "2a79d86c-7d83-43f4-8112-907c3d0093e7",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C21",
+      "claim": "PV-expressing FS interneurons could occasionally be isolated on tetrodes but could rarely be held for more than a single recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we could occasionally isolate PV-expressing FS interneurons on our tetrodes (Figure 1b\u2013c), we could rarely hold these neurons for more than a single recording session (refer to Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "60a514e1-197e-4f01-872f-f92be935c517",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C22",
+      "claim": "All descriptions of long-term changes in single unit response properties were limited to RS, putative pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, all descriptions of long-term changes in single unit response properties were limited to RS, putative pyramidal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the analysis based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "252d8543-de65-4e65-8cdf-0698f992bea4",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C23",
+      "claim": "A noise exposure protocol that lesions approximately 50% of high-frequency afferent nerve synapses in the 16-45 kHz region of the cochlea without damaging hair cells was used.",
+      "claim_type": "EXPLICIT",
+      "source": "We circumvented this problem by selectively eliminating afferent nerve fibers without permanently affecting cochlear mechanics using a well-characterized noise exposure protocol that lesions approximately 50% of high-frequency afferent nerve synapses in the 16\u201345 kHz region of the cochlea without damaging hair cells (n = 4, Figure 2a) (Wan et al., 2014; Kujawa and Liberman, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method and is supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f0950ec0-1945-424f-a5f9-550a32b1dc63",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C24",
+      "claim": "The noise exposure protocol induces only a temporary elevation of the auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE) thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol induces only a temporary elevation of the auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE) thresholds, but a permanent reduction in ABR wave 1 amplitude, which has been shown to reflect the permanent elimination of high-frequency cochlear afferent synapses (Figure 2b, the reader is referred to the figure legends and Supplementary file 1 for most statistical reporting) (Liberman and Kujawa, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 2b and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "6c13627f-a5f1-4ef3-bd3d-c0e54b644c47",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C25",
+      "claim": "The noise exposure protocol induces a permanent reduction in ABR wave 1 amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol induces only a temporary elevation of the auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE) thresholds, but a permanent reduction in ABR wave 1 amplitude, which has been shown to reflect the permanent elimination of high-frequency cochlear afferent synapses (Figure 2b, the reader is referred to the figure legends and Supplementary file 1 for most statistical reporting) (Liberman and Kujawa, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study supported by data in Figure 2b and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "89d14225-78d6-47a0-81f3-021bf307848d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C26",
+      "claim": "ABR wave 1 amplitude reflects the permanent elimination of high-frequency cochlear afferent synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This protocol induces only a temporary elevation of the auditory brainstem response (ABR) and distortion product otoacoustic emission (DPOAE) thresholds, but a permanent reduction in ABR wave 1 amplitude, which has been shown to reflect the permanent elimination of high-frequency cochlear afferent synapses (Figure 2b, the reader is referred to the figure legends and Supplementary file 1 for most statistical reporting) (Liberman and Kujawa, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "74bcafc0-68c2-44a6-85ae-d7dfee449678",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C27",
+      "claim": "Several hours after noise exposure, the same unit exhibited elevated response thresholds for a broadband noise burst, slightly reduced PV-mediated inhibition and the appearance of a new, well-tuned low-frequency receptive field that was absent just hours earlier.",
+      "claim_type": "EXPLICIT",
+      "source": "Several hours after noise exposure that affects high-frequency regions of the cochlea, the same unit exhibited elevated response thresholds for a broadband noise burst, slightly reduced PV-mediated inhibition and the appearance of a new, well-tuned low-frequency receptive field that was absent just hours earlier (Figure 2c\u2013e, second row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 2c-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "9edb3b0a-bbb1-4e08-98ac-2c08dd3e97db",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C28",
+      "claim": "Several hours after noise exposure, firing rates evoked by stimulation of spared, low-frequency cochlear regions had nearly doubled (increased by 96.7%, p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Several hours after noise exposure, firing rates evoked by stimulation of spared, low-frequency cochlear regions had nearly doubled (increased by 96.7%, p=0.04) with a small, but significant decrease in inhibition (\u22129.8%, p=0.02) and no significant change in gain or spontaneous rate (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study supported by data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "915a8ba9-2b51-4c3b-996e-26eb0a9bf877",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C29",
+      "claim": "Several hours after noise exposure, there was a small, but significant decrease in inhibition (\u22129.8%, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Several hours after noise exposure, firing rates evoked by stimulation of spared, low-frequency cochlear regions had nearly doubled (increased by 96.7%, p=0.04) with a small, but significant decrease in inhibition (\u22129.8%, p=0.02) and no significant change in gain or spontaneous rate (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study supported by data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "576f92cc-ce9d-4cff-b16b-8c97b10a36ee",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C30",
+      "claim": "Several hours after noise exposure, there was no significant change in gain or spontaneous rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Several hours after noise exposure, firing rates evoked by stimulation of spared, low-frequency cochlear regions had nearly doubled (increased by 96.7%, p=0.04) with a small, but significant decrease in inhibition (\u22129.8%, p=0.02) and no significant change in gain or spontaneous rate (Figure 2g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study supported by data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "ba5d5f53-5b62-41d3-9b9c-b5c220c5ba2c",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C31",
+      "claim": "Six to ten days after noise exposure, inhibition had decreased by 40% (p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Six to ten days after noise exposure, inhibition had decreased by 40% (p<0.0001), receptive fields remained focused on spared regions of the cochlea (p<0.01) and spontaneous firing rate was significantly elevated (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "ab7af761-518c-43f9-b06f-b59404092d0f",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C32",
+      "claim": "Six to ten days after noise exposure, receptive fields remained focused on spared regions of the cochlea (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Six to ten days after noise exposure, inhibition had decreased by 40% (p<0.0001), receptive fields remained focused on spared regions of the cochlea (p<0.01) and spontaneous firing rate was significantly elevated (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5839128b-385c-41cc-b5e0-df628a71df3b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C33",
+      "claim": "Six to ten days after noise exposure, spontaneous firing rate was significantly elevated (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Six to ten days after noise exposure, inhibition had decreased by 40% (p<0.0001), receptive fields remained focused on spared regions of the cochlea (p<0.01) and spontaneous firing rate was significantly elevated (p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "1f14521f-58c4-49be-b61b-9e6abd67e66b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C34",
+      "claim": "Central gain, spontaneous firing rate and frequency tuning all shifted back towards baseline values as response thresholds in the cochlea, ABR and cortical neurons recovered to pre-exposure levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Central gain, spontaneous firing rate and frequency tuning all shifted back towards baseline values as response thresholds in the cochlea, ABR and cortical neurons recovered to pre-exposure levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study describing the recovery process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "271b02da-fd14-4d85-9377-29998d92804e",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C35",
+      "claim": "By approximately 7 weeks after noise exposure, reduced PV-mediated inhibition (\u221219%, p<0.001) was the only enduring compensatory plasticity marker for the putative loss of high-frequency auditory nerve synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "By the time of the final recording session, approximately 7 weeks after noise exposure, reduced PV-mediated inhibition (\u221219%, p<0.001) was the only enduring compensatory plasticity marker for the putative loss of high-frequency auditory nerve synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "9ae84449-b7ca-4bd7-8119-412003a495e5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C36",
+      "claim": "In mice, ouabain selectively and evenly eliminates >95% of Type-I spiral ganglion afferent neurons across the frequency map, without affecting other types of sensory and non-sensory cells in the cochlea or auditory nerve.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, ouabain selectively and evenly eliminates >95% of Type-I spiral ganglion afferent neurons across the frequency map, without affecting other types of sensory and non-sensory cells in the cochlea or auditory nerve (Yuan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "eceabdcb-6466-4301-90dd-1312603bad99",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C37",
+      "claim": "Bilateral ouabain treatment virtually eliminated the ABR without any adverse DPOAE effects in all mice (n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ouabain treatment virtually eliminated the ABR without any adverse DPOAE effects in all mice (n = 6, Figure 3b), but, interestingly, was associated with a slow, partial recovery of sound-evoked cortical spiking in half the mice (Figure 3c) but an unremitting loss of auditory responsiveness in the other half (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "6d38bfb5-b558-47dc-a765-f851c3b56b22",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C38",
+      "claim": "Bilateral ouabain treatment was associated with a slow, partial recovery of sound-evoked cortical spiking in half the mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ouabain treatment virtually eliminated the ABR without any adverse DPOAE effects in all mice (n = 6, Figure 3b), but, interestingly, was associated with a slow, partial recovery of sound-evoked cortical spiking in half the mice (Figure 3c) but an unremitting loss of auditory responsiveness in the other half (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "b70753ba-cf66-4789-b743-5e81cb9dac49",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C39",
+      "claim": "Bilateral ouabain treatment was associated with an unremitting loss of auditory responsiveness in half the mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bilateral ouabain treatment virtually eliminated the ABR without any adverse DPOAE effects in all mice (n = 6, Figure 3b), but, interestingly, was associated with a slow, partial recovery of sound-evoked cortical spiking in half the mice (Figure 3c) but an unremitting loss of auditory responsiveness in the other half (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "e79aceb2-5f38-4c31-aff5-81caef869255",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C40",
+      "claim": "When DPOAE thresholds are normal, ABR wave 1b amplitude is an accurate proxy for the number of cochlear afferent synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "When DPOAE thresholds are normal, ABR wave 1b amplitude is an accurate proxy for the number of cochlear afferent synapses (Wan et al., 2014; Kujawa and Liberman, 2009; Liberman and Kujawa, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "9626854f-ae6a-45ea-84ea-eb492b8a2263",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C41",
+      "claim": "The ABR wave 1b amplitude was not significantly different between mice that recovered auditory processing following ouabain treatment versus those that did not (unpaired t-test, p>0.4).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ABR wave 1b amplitude was not significantly different between mice that recovered auditory processing following ouabain treatment versus those that did not (unpaired t-test, p>0.4; see also Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study supported by statistical analysis and data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "101a3231-ca66-4068-8723-ecb7dc183adf",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C42",
+      "claim": "RS units that eventually recovered auditory thresholds exhibited a transient spike in spontaneous firing rate, a sustained increase in central gain and a steep drop in PV-mediated inhibition that began to recover as high-threshold sound-evoked activity returned.",
+      "claim_type": "EXPLICIT",
+      "source": "RS units that eventually recovered auditory thresholds exhibited a transient spike in spontaneous firing rate, a sustained increase in central gain and a steep drop in PV-mediated inhibition that began to recover as high-threshold sound-evoked activity returned (Figure 3e\u2013h, top row, n = 156).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 3e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "9b740687-e5ce-459b-930e-2abc9c0d8bec",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C43",
+      "claim": "In RS units that never recovered auditory sensitivity, changes in spontaneous rate were comparatively sluggish, while inhibitory strength declined gradually and monotonically.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in RS units that never recovered auditory sensitivity, changes in spontaneous rate were comparatively sluggish, while inhibitory strength declined gradually and monotonically (Figure 3e\u2013h, middle row, n = 169).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 3e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "1394182d-5836-4313-bd7f-20e5ce8541aa",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C44",
+      "claim": "The dichotomy in the cortical response to nerve injury was shared among all units recorded from a given mouse; if one unit recovered auditory responsiveness, all units recovered auditory responsiveness.",
+      "claim_type": "EXPLICIT",
+      "source": "This stark dichotomy in the cortical response to nerve injury was shared among all units recorded from a given mouse; if one unit recovered auditory responsiveness, all units recovered auditory responsiveness (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "75885897-c153-4b52-8c74-3adaebe36091",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C45",
+      "claim": "Cortical response properties were stable over the recording period in mice with intact auditory nerves (sham surgery control).",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control in a separate group of mice (n = 3), we applied sterile water to the round window membrane rather than ouabain and confirmed that cortical response properties were stable over the recording period in mice with intact auditory nerves (Figure 3e\u2013h, bottom row, n = 156).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the control experiment supported by data shown in Figure 3e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "0e4568c8-2c2f-424d-918e-f690af7cd349",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C46",
+      "claim": "Spontaneous rate, central gain and inhibition all scaled with the degree of nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous rate, central gain and inhibition all scaled with the degree of nerve damage (Figure 3f\u2013h versus Figure 2g, Figure 4), but varied substantially both over time and between mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a9807318-c716-48b7-af60-be945d84f709",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C47",
+      "claim": "Restored auditory sensitivity was associated with a sharp loss and partial recovery of inhibition from PV interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Restored auditory sensitivity was associated with a sharp loss and partial recovery of inhibition from PV interneurons, where the degree of eventual recovery could be predicted from changes in inhibition ~1 week after nerve damage (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "09f3e533-ec15-419b-b10d-5db916bd086d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C48",
+      "claim": "The degree of eventual recovery could be predicted from changes in inhibition ~1 week after nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Restored auditory sensitivity was associated with a sharp loss and partial recovery of inhibition from PV interneurons, where the degree of eventual recovery could be predicted from changes in inhibition ~1 week after nerve damage (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5a28ec63-9a1f-4825-9214-95f174c06841",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C49",
+      "claim": "PV-mediated inhibition was a better predictor of sensory recovery than were modifications in spontaneous activity or central gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only was PV-mediated inhibition a predictor of sensory recovery for both mild and severe peripheral damage, but also it was a better predictor than were modifications in spontaneous activity (Figure 4b) or central gain, the biomarkers most commonly employed to assess central auditory plasticity following sensorineural hearing loss (refer to Figure 4\u2014figure supplement 1 for an expanded analysis of predictors of recovery).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study supported by data shown in Figure 4b and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "87c1fa12-4de3-4d91-8ecb-42bc35174ed6",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C50",
+      "claim": "Just hours after noise exposure, new, low-threshold receptive fields tuned to undamaged regions of the cochlea appeared, accompanied by a small, significant drop in PV-mediated inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Just hours after noise exposure, we observed the appearance of new, low-threshold receptive fields tuned to undamaged regions of the cochlea, accompanied by a small, significant drop in PV-mediated inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study summarized in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "dcde6000-7b4b-4892-b6db-b6a2dbb503bb",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C51",
+      "claim": "Over the ensuing weeks after noise exposure, as cochlear thresholds and cortical receptive field tuning returned to baseline conditions, there was only a brief spike in traditional biomarkers of central auditory hyperactivity, such as increased spontaneous firing rate and increased central gain.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the ensuing weeks, as cochlear thresholds and cortical receptive field tuning returned to baseline conditions, we noted only a brief spike in traditional biomarkers of central auditory hyperactivity, such as increased spontaneous firing rate and increased central gain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study summarized in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "d9629f63-6c05-4d97-a2f4-e3f1ed762cb5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C52",
+      "claim": "PV-mediated inhibition remained reduced through the final recording session and was the sole physiological indicator for the permanent, presumed loss of high-frequency cochlear synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, PV-mediated inhibition remained reduced through our final recording session and was the sole physiological indicator for the permanent, presumed loss of high-frequency cochlear synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study summarized in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "50a84ccd-0500-4976-b4fe-76b38cc08ad0",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C53",
+      "claim": "The observations are correlative and do not speak to the necessity nor sufficiency of changes in PV networks for functional recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this is not to say that auditory response normalization was mediated by disinhibition; our observations are correlative and do not speak to the necessity nor sufficiency of changes in PV networks for functional recovery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "cd930a2f-715e-4a5e-8626-4aa4bbff9be5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C54",
+      "claim": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f3ed6ef3-d351-4648-90fc-23411e257eda",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C55",
+      "claim": "Compensation for peripheral damage could have arisen from presynaptic changes in the GABA neurons themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "643e3e54-4e90-4f2e-9029-00a2197754dc",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C56",
+      "claim": "Compensation for peripheral damage could have arisen from upward scaling of glutamatergic synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "079ba93e-2d02-43e7-997c-46800f58fa8d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C57",
+      "claim": "Compensation for peripheral damage could have arisen from changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "606e0a61-d76d-48e0-9723-da6ca453bca6",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C58",
+      "claim": "Compensation for peripheral damage could have arisen from changes in intrinsic membrane response properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Compensation for peripheral damage could have arisen from post-synaptic changes in GABA receptors in the RS principal neurons recorded here (Sarro et al., 2008) or from presynaptic changes in the GABA neurons themselves (Marik et al., 2014; Keck et al., 2011; Hengen et al., 2013), as well as many other homeostatic plasticity mechanisms in the RS neurons including upward scaling of glutamatergic synapses (O'Brien et al., 1998; Turrigiano et al., 1998), changes in extrasynaptic GABA or glutamate receptors that mediate tonic currents (Chen et al., 2010; Fleming et al., 2011; Sametsky et al., 2015), or changes in intrinsic membrane response properties (Turrigiano et al., 1994; Karmarkar and Buonomano, 2006; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about possible mechanisms, supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "7991b8c7-cf3e-401a-a125-ddeb9bab5f9c",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C59",
+      "claim": "Fine-scale reorganization varied widely between local subnetworks of RS neurons and the completeness of global remapping was negatively correlated with the spatial extent of peripheral lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "In classic and contemporary studies of adult cortical plasticity following deafferentation, fine-scale reorganization varied widely between local subnetworks of RS neurons and the completeness of global remapping was negatively correlated with the spatial extent of peripheral lesions (Robertson and Irvine, 1989; Merzenich et al., 1984; Barnes et al., 2015; Keck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f183051a-b1f7-459f-8e5b-9843595d6dc2",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C60",
+      "claim": "The mode of cortical sensory recovery (complete, partial or none) was roughly shared between all RS units recorded in a given mouse and did not strictly depend on the estimated auditory nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that the mode of cortical sensory recovery (complete, partial or none) was roughly shared between all RS units recorded in a given mouse and did not strictly depend on the estimated auditory nerve damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "902ca67b-51d4-42ec-b37c-5d3003f3ba96",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C61",
+      "claim": "Cochlear ouabain treatment eliminates 95% of primary afferent synapses without affecting sensory transduction mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike focal ablations of the retina, basilar membrane or skin surface, cochlear ouabain treatment eliminates 95% of primary afferent synapses without affecting sensory transduction mechanisms (Chambers et al., 2016; Yuan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f99ef871-90ad-4e8c-92b5-43bf48d03569",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C62",
+      "claim": "The rapid unmasking of excitatory inputs from neighboring undamaged regions of the sensory organ occurs within hours.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the rapid unmasking of excitatory inputs from neighboring undamaged regions of the sensory organ, which occurs within hours (Figure 2, see also [Gilbert and Wiesel, 1992; Calford and Tweedale, 1988]), the recovery of function for spared afferent inputs interspersed within a damaged portion of the nerve, if it occurred at all, unfolded over several weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data in Figure 2 and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a40c153a-2080-474e-bd99-fa7eedb025c8",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C63",
+      "claim": "The recovery of function for spared afferent inputs interspersed within a damaged portion of the nerve, if it occurred at all, unfolded over several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "As compared to the rapid unmasking of excitatory inputs from neighboring undamaged regions of the sensory organ, which occurs within hours (Figure 2, see also [Gilbert and Wiesel, 1992; Calford and Tweedale, 1988]), the recovery of function for spared afferent inputs interspersed within a damaged portion of the nerve, if it occurred at all, unfolded over several weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "486c24a3-0807-4ee9-b1e4-b5a49c397c49",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C64",
+      "claim": "The variable modes of recovery between mice with carefully matched nerve damage may relate to earlier observations that cortical sensory reorganization is not only determined by the pattern and density of peripheral innervation, but may also be directed by activity-dependent differences that are orchestrated through behavioral use.",
+      "claim_type": "EXPLICIT",
+      "source": "The variable modes of recovery between mice with carefully matched nerve damage may relate to earlier observations that cortical sensory reorganization is not only determined by the pattern and density of peripheral innervation, but may also be directed by activity-dependent differences that are orchestrated through behavioral use (Clark et al., 1988; Xerri et al., 1998; Polley et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation supported by citations to prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "2526f67a-91db-48bf-aae3-9b03f4459668",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C65",
+      "claim": "Following either type of nerve damage, the cortical networks that recovered function were those that matched the sudden drop in bottom-up excitatory drive with a rapid dip in PV-mediated inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Following either type of nerve damage, the cortical networks that recovered function were those that matched the sudden drop in bottom-up excitatory drive with a rapid dip in PV-mediated inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3445a3cb-310d-419a-96da-c316981e12d8",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C66",
+      "claim": "Precisely balanced excitation and inhibition enables a wider dynamic range of sensory information coding.",
+      "claim_type": "EXPLICIT",
+      "source": "Precisely balanced excitation and inhibition enables a wider dynamic range of sensory information coding (Isaacson and Scanziani, 2011; Shadlen and Newsome, 1998; Pouille et al., 2009; Zhou et al., 2014) and supports adaptive plasticity without forsaking network stability (Vogels et al., 2011; Froemke et al., 2013; Hellyer et al., 2016; Barrett et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "93984af7-c10b-4248-8366-bd3c7f56541a",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C67",
+      "claim": "Precisely balanced excitation and inhibition supports adaptive plasticity without forsaking network stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Precisely balanced excitation and inhibition enables a wider dynamic range of sensory information coding (Isaacson and Scanziani, 2011; Shadlen and Newsome, 1998; Pouille et al., 2009; Zhou et al., 2014) and supports adaptive plasticity without forsaking network stability (Vogels et al., 2011; Froemke et al., 2013; Hellyer et al., 2016; Barrett et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "130bf341-27a3-45f5-889c-a217fde2cbd0",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C68",
+      "claim": "Self-regulating PV circuits may play an important role in rebalancing network activity in response to reduced afferent drive during developmental critical periods.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that self-regulating PV circuits may not only play an important role in rebalancing network activity in response to reduced afferent drive during developmental critical periods (Xue et al., 2014; Yazaki-Sugiyama et al., 2009), but in the adult cortex following sensory nerve damage as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation supported by citations to prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f5a95a4f-10ef-4235-8c4a-c046783da6d5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C69",
+      "claim": "Self-regulating PV circuits may play an important role in the adult cortex following sensory nerve damage.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that self-regulating PV circuits may not only play an important role in rebalancing network activity in response to reduced afferent drive during developmental critical periods (Xue et al., 2014; Yazaki-Sugiyama et al., 2009), but in the adult cortex following sensory nerve damage as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings from the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "2008ab4b-98b4-4c9f-ba4f-ba15f5ca109d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C70",
+      "claim": "Subjects included 13 PV-Cre:Ai32 mice of either sex, aged 16 weeks at the time of optetrode implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects included 13 PV-Cre:Ai32 mice of either sex (a cross between B6;129P2-Pvalbtm1(cre)Arbr/J and Ai32 (RCL-ChR2(H134R)/EYFP), Jackson Laboratory), aged 16 weeks at the time of optetrode implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "e34893be-bb19-4808-b936-73962113487f",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C71",
+      "claim": "The acoustic over-exposure stimulus was an octave band of noise (8-16 kHz) presented at 98 dB SPL for 2 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The acoustic over-exposure stimulus was an octave band of noise (8\u201316 kHz) presented at 98 dB sound pressure level (SPL) for 2 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a71e3599-16e3-4eb5-8c9f-e2d44c3a16b3",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C72",
+      "claim": "Selective elimination of Type-I spiral ganglion neurons was achieved by applying a 1 mM solution of ouabain octahydrate and sterile water to the left and right round window niche.",
+      "claim_type": "EXPLICIT",
+      "source": "Selective elimination of Type-I spiral ganglion neurons was achieved by applying a 1 mM solution of ouabain octahydrate (Sigma) and sterile water to the left and right round window niche, as described previously (Yuan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5d555505-e3d7-4c2b-bff7-d094d777eb9b",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C73",
+      "claim": "All procedures were approved by the Animal Care and Use Committee at the Massachusetts Eye and Ear Infirmary and followed guidelines established by the National Institutes of Health for the care and use of laboratory animals.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Animal Care and Use Committee at the Massachusetts Eye and Ear Infirmary and followed guidelines established by the National Institutes of Health for the care and use of laboratory animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3ba824df-97af-4ceb-9acf-60a91ad0e3ac",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C74",
+      "claim": "Optogenetic activation of fast spiking (FS) PV+ units inhibits regular spiking (RS) units.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike raster plots illustrating that optogenetic activation of fast spiking (FS) PV+ units (black, top) inhibits regular spiking (RS) units (gray, bottom).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "d6fb1d3a-15bb-44c1-b53f-a2f370dc17d6",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C75",
+      "claim": "There is a bimodal distribution of peak-trough amplitude and timing differences across all RS and FS units.",
+      "claim_type": "EXPLICIT",
+      "source": "Scatter plot showing the bimodal distribution of peak-tough amplitude and timing differences across all RS (gray) and FS (black) units.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "22a9e20b-5499-436e-bb20-572a264c6e5c",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C76",
+      "claim": "The variability in the actual unit waveforms, estimated as the sum of squared errors (SSE), is significantly less than randomly shuffled units (p<0.001, f(1)=814.73).",
+      "claim_type": "EXPLICIT",
+      "source": "The variability in the actual unit waveforms, estimated as the sum of squared errors (SSE), is significantly less than randomly shuffled units (p<0.001, f(1)=814.73, mean \u00b1 SEM).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1F with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "00738563-7785-4d80-bdbd-620ce9170535",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C77",
+      "claim": "Mean ABR and DPOAE thresholds were temporarily elevated 2 days after noise exposure but recover fully by 30 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean \u00b1 SEM ABR (left) and DPOAE thresholds (middle) were temporarily elevated 2 days after noise exposure but recover fully by 30 days.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "660d355b-1bbf-4c58-bbef-2cc23ec047fd",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C78",
+      "claim": "ABR wave 1b amplitude reflects the permanent loss of Type-I spiral ganglion nerve fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "ABR wave 1b amplitude reflects the permanent loss of Type-I spiral ganglion nerve fibers (right).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B and is based on established knowledge.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "eaeb3422-43f4-4b8f-a009-af4bf58251e1",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C79",
+      "claim": "A frequency response area (FRA) from a single unit recorded in the high-frequency zone of the A1 tonotopic map rapidly assumed a low-frequency FRA hours after noise exposure but shifted back towards baseline tuning over the ensuing month.",
+      "claim_type": "EXPLICIT",
+      "source": "A frequency response area (FRA) from a single unit recorded in the high-frequency zone of the A1 tonotopic map rapidly assumed a low-frequency FRA hours after noise exposure but shifted back towards baseline tuning over the ensuing month.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "4d8dd461-d0b1-47dd-b1a5-2f969a79f144",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C80",
+      "claim": "Mean ABR thresholds were substantially elevated 30 days after ouabain application but DPOAE thresholds were unaffected, indicating normal outer hair cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean \u00b1 SEM ABR thresholds were substantially elevated 30 days after ouabain application (left) but DPOAE thresholds were unaffected, indicating normal outer hair cell function (middle).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "78462047-735f-47d5-b5ce-d9b5722573ff",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "claim_id": "C81",
+      "claim": "ABR wave1b was virtually eliminated after ouabain.",
+      "claim_type": "EXPLICIT",
+      "source": "ABR wave1b was virtually eliminated after ouabain (right).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f44d60f4-8d69-441c-8505-88c4cb6eae34",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a chronic optetrode recording method in PV-Cre:Ai32 mice that allows stable tracking of individual regular spiking (RS) putative pyramidal neurons and optogenetic measurement of PV-mediated inhibition over 7-8 weeks. The method successfully isolated RS neurons based on spike shape and demonstrated that optogenetic activation of PV+ neurons inhibits RS units, with significantly lower waveform variability than random shuffling (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C70 describe the experimental approach, while C74-C76 provide validation data showing bimodal spike distributions and stable unit tracking. The method is well-documented with appropriate controls and statistical validation, supporting the technical feasibility of the longitudinal recordings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a089dbc1-2930-43dc-b44b-1f612de412e7",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PV-expressing fast-spiking (FS) interneurons could be isolated but were rarely held for more than a single recording session, limiting all long-term analyses to RS putative pyramidal neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 acknowledge a technical limitation that is transparently reported and appropriately constrains the scope of analysis. This is a methodological observation rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A noise exposure protocol (8-16 kHz at 98 dB SPL for 2 hours) selectively lesions approximately 50% of high-frequency cochlear afferent synapses without damaging hair cells, causing temporary ABR and DPOAE threshold elevations that recover by 30 days, but permanent reduction in ABR wave 1 amplitude reflecting permanent synapse loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 describe the noise exposure model with supporting citations, while C77-C78 provide experimental validation. The dissociation between recovered thresholds and persistent ABR wave 1 amplitude reduction is consistent with established literature on cochlear synaptopathy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5de27781-ef29-405c-ad41-b5a0347fc49e",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Within hours after noise exposure, cortical neurons exhibited rapid receptive field reorganization with new low-frequency tuning, nearly doubled firing rates to spared cochlear regions (96.7% increase, p=0.04), and a small but significant decrease in PV-mediated inhibition (-9.8%, p=0.02), with no significant changes in gain or spontaneous rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 and C50 describe acute plasticity with specific quantitative measurements and statistical support from Figure 2. The rapid appearance of new receptive fields and modest inhibition changes represent well-documented phenomena with appropriate statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "9cd41ae6-76d4-4d1a-8a6e-a47cbf017fbf",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Six to ten days after noise exposure, inhibition decreased by 40% (p<0.0001), receptive fields remained focused on spared cochlear regions (p<0.01), and spontaneous firing rate was significantly elevated (p<0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 provide quantitative measurements with statistical support showing progressive changes in cortical response properties. The coordinated changes across multiple parameters are well-documented in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3098d0c0-ca32-4127-90c6-0a26c6a93d06",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Over weeks following noise exposure, as cochlear and cortical thresholds recovered, central gain, spontaneous firing rate, and frequency tuning returned toward baseline, with only brief spikes in traditional hyperactivity biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C51 describe the recovery trajectory of multiple physiological parameters. The temporal coordination of recovery across measures is documented in the longitudinal data, though the claim of \"brief\" spikes could benefit from more precise temporal quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "130eaab9-e9d8-43d2-b1f8-ede0c55014b8",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "By approximately 7 weeks after noise exposure, reduced PV-mediated inhibition (-19%, p<0.001) was the only enduring compensatory plasticity marker for the putative loss of high-frequency auditory nerve synapses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C52 identify persistent inhibitory changes as the sole long-term marker. This is supported by quantitative data showing that other measures returned to baseline while inhibition remained reduced, though the interpretation as \"compensatory\" is correlative rather than mechanistic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "4474bc1b-02b1-4d77-909d-23507e46b9d8",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bilateral ouabain treatment (1 mM solution applied to round window) selectively eliminates >95% of Type-I spiral ganglion neurons, virtually eliminating ABR without affecting DPOAE, indicating preserved hair cell function despite massive nerve loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 and C72 describe the ouabain method with citation support, while C80-C81 provide experimental validation. The dissociation between ABR elimination and preserved DPOAEs confirms selective nerve damage without hair cell loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "8f6cee79-3897-48b1-8796-147278be16f3",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Following bilateral ouabain treatment, half the mice showed slow, partial recovery of sound-evoked cortical spiking while the other half showed unremitting loss of auditory responsiveness, with this dichotomy shared among all units recorded from a given mouse.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 and C44 describe a striking bimodal outcome with within-animal consistency. The observation is well-documented in Figures 3-4, though the small sample size (n=6 mice, 3 per group) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "8d9d893b-b2d4-4a69-b0d9-221caad364e5",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ABR wave 1b amplitude, an established proxy for cochlear afferent synapse number when DPOAEs are normal, was not significantly different between mice that recovered auditory processing versus those that did not (p>0.4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 establish that peripheral damage severity did not predict cortical recovery. The statistical comparison is appropriate, though the negative result should be interpreted cautiously given the small sample size and potential for Type II error.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "6ba2cf6c-96c7-47c5-a885-6614ad7bd6cd",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RS units that recovered auditory thresholds exhibited a transient spike in spontaneous firing rate, sustained increase in central gain, and steep drop in PV-mediated inhibition that began to recover as sound-evoked activity returned, while non-recovering units showed sluggish spontaneous rate changes and gradual, monotonic inhibition decline.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 describe contrasting temporal dynamics between recovery groups with support from Figure 3e-h. The differential trajectories are clearly documented, though the mechanistic relationship between these patterns and recovery remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5ed26db6-5ea1-43f2-8e9a-54abf0d59d22",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Sham surgery control mice (n=3) with sterile water application instead of ouabain showed stable cortical response properties over the recording period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 describes an appropriate negative control demonstrating that surgical procedures and chronic recording do not themselves induce plasticity. The control validates the experimental approach, though the small sample size is noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "4f60136d-8bdc-4def-901d-fe22a7d56e0a",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Spontaneous rate, central gain, and inhibition all scaled with the degree of nerve damage but varied substantially over time and between mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 describes dose-dependent relationships across injury severities with acknowledgment of variability. The scaling relationship is supported by comparison between noise exposure and ouabain conditions in multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "a90e02bb-b8fd-4859-8c6b-4909dc9af074",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Restored auditory sensitivity was associated with sharp loss and partial recovery of PV interneuron inhibition, where the degree of eventual recovery could be predicted from changes in inhibition approximately 1 week after nerve damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 identify early inhibitory dynamics as predictive of long-term recovery, supported by correlation analysis in Figure 4a. The predictive relationship is compelling, though the correlative nature and small sample size limit causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "015588c4-b19d-4764-b38a-f49ec5334112",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PV-mediated inhibition during the first days following injury was a better predictor of eventual cortical sound processing recovery than brainstem-evoked potentials, spontaneous activity, or central gain for both mild and severe peripheral damage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C49 establish PV-mediated inhibition as the superior predictor across injury types. The comparative analysis is supported by correlation data in Figure 4 and supplement, though the predictive power should be validated in independent cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3292517c-fd6b-4c2f-8427-16253d84bb8e",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mode of cortical sensory recovery (complete, partial, or none) was roughly shared between all RS units in a given mouse and did not strictly depend on estimated auditory nerve damage, with recovery of spared afferent inputs unfolding over several weeks when it occurred.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C63 describe network-level recovery patterns that are independent of peripheral damage severity. The within-animal consistency and temporal dynamics are well-documented, though the mechanisms underlying inter-animal variability remain unexplained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "286a2f84-20da-458d-b8cf-473bedc0e1f8",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Following either type of nerve damage, cortical networks that recovered function matched the sudden drop in bottom-up excitatory drive with a rapid dip in PV-mediated inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 synthesizes findings across both injury models, identifying rapid inhibitory adjustment as a common feature of recovering networks. This is supported by the temporal dynamics shown in Figures 2-4, though the causal relationship requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "3fa86cbd-2cbd-4510-a9dd-683353955e7d",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Self-regulating PV circuits may play an important role in rebalancing network activity following sensory nerve damage in adult cortex, similar to their role during developmental critical periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C68-C69 propose a mechanistic interpretation extending findings to a broader principle. While the correlations are compelling, the study does not establish necessity or sufficiency of PV circuit changes for recovery, and the comparison to development is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "5f853f41-a497-4880-a14f-b74985cc576a",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The observations are correlative and do not speak to the necessity or sufficiency of changes in PV networks for functional recovery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 appropriately acknowledges the correlative nature of the findings. This transparent limitation is important for interpreting the mechanistic claims and represents good scientific practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "fa76a15e-3414-4547-8cc8-efc924d2f07c",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Compensation for peripheral damage could arise from multiple homeostatic mechanisms including post-synaptic GABA receptor changes, presynaptic GABA neuron changes, glutamatergic synapse scaling, extrasynaptic receptor changes, or intrinsic membrane property changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 enumerate plausible alternative mechanisms with appropriate citations. This represents responsible speculation about mechanisms that could underlie the observed correlations, though no direct evidence for these specific mechanisms is provided in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "f83dcc4e-83eb-404f-894f-4562bd0d06ac",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Rapid unmasking of excitatory inputs from neighboring undamaged sensory regions occurs within hours following injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 describes rapid receptive field reorganization supported by Figure 2 data and prior literature citations. The timescale and phenomenon are well-established in the field and confirmed in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "b051b3b4-56eb-4979-8177-43099e4b85fe",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Variable recovery modes between mice with matched nerve damage may relate to activity-dependent differences orchestrated through behavioral use, as suggested by prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 proposes a speculative explanation for inter-animal variability with citation support. However, the current study did not measure or control behavioral variables, making this interpretation uncertain and requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "85fda35a-923e-4444-90bd-1e704f6af784",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The study builds on established knowledge that cortical neurons remap receptive fields and rescale sensitivity following nerve damage through homeostatic processes involving coordinated changes at glutamatergic and GABAergic synapses, with PV interneurons playing key roles in gating plasticity and maintaining excitation-inhibition balance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C15 establish the prior knowledge foundation with appropriate citations. Claims C59, C61, C66-C67 provide additional context from established literature. These background claims are well-supported by the cited literature and frame the current investigation appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    },
+    {
+      "id": "10e59ad8-3b85-45d7-96bd-1e4221b670ae",
+      "content_id": "c4f601b4-f402-44eb-a035-875676beb5ad",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "All procedures were approved by institutional animal care committees and followed NIH guidelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C73 documents ethical compliance. This is a standard methodological statement that is assumed to be accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:02.495620Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a11cbf8b-e565-4e3a-98b2-2b6e2c6dae0b",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "fd2ea87f-669d-4b95-b027-518c85c2ccc9",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "e7338230-55eb-4355-8e42-823f23fc1b15",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "66fc86b4-6775-4f7b-943e-b7fefe23ba9d",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "3d648233-5c96-44f3-9a83-32d55680b7a9",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "2008ab4b-98b4-4c9f-ba4f-ba15f5ca109d",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "3ba824df-97af-4ceb-9acf-60a91ad0e3ac",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "d6fb1d3a-15bb-44c1-b53f-a2f370dc17d6",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "22a9e20b-5499-436e-bb20-572a264c6e5c",
+      "result_id": "f44d60f4-8d69-441c-8505-88c4cb6eae34"
+    },
+    {
+      "claim_id": "2a79d86c-7d83-43f4-8112-907c3d0093e7",
+      "result_id": "a089dbc1-2930-43dc-b44b-1f612de412e7"
+    },
+    {
+      "claim_id": "60a514e1-197e-4f01-872f-f92be935c517",
+      "result_id": "a089dbc1-2930-43dc-b44b-1f612de412e7"
+    },
+    {
+      "claim_id": "252d8543-de65-4e65-8cdf-0698f992bea4",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "f0950ec0-1945-424f-a5f9-550a32b1dc63",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "6c13627f-a5f1-4ef3-bd3d-c0e54b644c47",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "89d14225-78d6-47a0-81f3-021bf307848d",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "00738563-7785-4d80-bdbd-620ce9170535",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "660d355b-1bbf-4c58-bbef-2cc23ec047fd",
+      "result_id": "cf0d9a54-c2b6-436b-aed2-1f0e5704d5e5"
+    },
+    {
+      "claim_id": "74bcafc0-68c2-44a6-85ae-d7dfee449678",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "9edb3b0a-bbb1-4e08-98ac-2c08dd3e97db",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "915a8ba9-2b51-4c3b-996e-26eb0a9bf877",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "576f92cc-ce9d-4cff-b16b-8c97b10a36ee",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "87c1fa12-4de3-4d91-8ecb-42bc35174ed6",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "eaeb3422-43f4-4b8f-a009-af4bf58251e1",
+      "result_id": "5de27781-ef29-405c-ad41-b5a0347fc49e"
+    },
+    {
+      "claim_id": "ba5d5f53-5b62-41d3-9b9c-b5c220c5ba2c",
+      "result_id": "9cd41ae6-76d4-4d1a-8a6e-a47cbf017fbf"
+    },
+    {
+      "claim_id": "ab7af761-518c-43f9-b06f-b59404092d0f",
+      "result_id": "9cd41ae6-76d4-4d1a-8a6e-a47cbf017fbf"
+    },
+    {
+      "claim_id": "5839128b-385c-41cc-b5e0-df628a71df3b",
+      "result_id": "9cd41ae6-76d4-4d1a-8a6e-a47cbf017fbf"
+    },
+    {
+      "claim_id": "1f14521f-58c4-49be-b61b-9e6abd67e66b",
+      "result_id": "3098d0c0-ca32-4127-90c6-0a26c6a93d06"
+    },
+    {
+      "claim_id": "dcde6000-7b4b-4892-b6db-b6a2dbb503bb",
+      "result_id": "3098d0c0-ca32-4127-90c6-0a26c6a93d06"
+    },
+    {
+      "claim_id": "271b02da-fd14-4d85-9377-29998d92804e",
+      "result_id": "130eaab9-e9d8-43d2-b1f8-ede0c55014b8"
+    },
+    {
+      "claim_id": "d9629f63-6c05-4d97-a2f4-e3f1ed762cb5",
+      "result_id": "130eaab9-e9d8-43d2-b1f8-ede0c55014b8"
+    },
+    {
+      "claim_id": "9ae84449-b7ca-4bd7-8119-412003a495e5",
+      "result_id": "4474bc1b-02b1-4d77-909d-23507e46b9d8"
+    },
+    {
+      "claim_id": "eceabdcb-6466-4301-90dd-1312603bad99",
+      "result_id": "4474bc1b-02b1-4d77-909d-23507e46b9d8"
+    },
+    {
+      "claim_id": "a71e3599-16e3-4eb5-8c9f-e2d44c3a16b3",
+      "result_id": "4474bc1b-02b1-4d77-909d-23507e46b9d8"
+    },
+    {
+      "claim_id": "4d8dd461-d0b1-47dd-b1a5-2f969a79f144",
+      "result_id": "4474bc1b-02b1-4d77-909d-23507e46b9d8"
+    },
+    {
+      "claim_id": "78462047-735f-47d5-b5ce-d9b5722573ff",
+      "result_id": "4474bc1b-02b1-4d77-909d-23507e46b9d8"
+    },
+    {
+      "claim_id": "6d38bfb5-b558-47dc-a765-f851c3b56b22",
+      "result_id": "8f6cee79-3897-48b1-8796-147278be16f3"
+    },
+    {
+      "claim_id": "b70753ba-cf66-4789-b743-5e81cb9dac49",
+      "result_id": "8f6cee79-3897-48b1-8796-147278be16f3"
+    },
+    {
+      "claim_id": "1394182d-5836-4313-bd7f-20e5ce8541aa",
+      "result_id": "8f6cee79-3897-48b1-8796-147278be16f3"
+    },
+    {
+      "claim_id": "e79aceb2-5f38-4c31-aff5-81caef869255",
+      "result_id": "8d9d893b-b2d4-4a69-b0d9-221caad364e5"
+    },
+    {
+      "claim_id": "9626854f-ae6a-45ea-84ea-eb492b8a2263",
+      "result_id": "8d9d893b-b2d4-4a69-b0d9-221caad364e5"
+    },
+    {
+      "claim_id": "101a3231-ca66-4068-8723-ecb7dc183adf",
+      "result_id": "6ba2cf6c-96c7-47c5-a885-6614ad7bd6cd"
+    },
+    {
+      "claim_id": "9b740687-e5ce-459b-930e-2abc9c0d8bec",
+      "result_id": "6ba2cf6c-96c7-47c5-a885-6614ad7bd6cd"
+    },
+    {
+      "claim_id": "75885897-c153-4b52-8c74-3adaebe36091",
+      "result_id": "5ed26db6-5ea1-43f2-8e9a-54abf0d59d22"
+    },
+    {
+      "claim_id": "0e4568c8-2c2f-424d-918e-f690af7cd349",
+      "result_id": "4f60136d-8bdc-4def-901d-fe22a7d56e0a"
+    },
+    {
+      "claim_id": "a9807318-c716-48b7-af60-be945d84f709",
+      "result_id": "a90e02bb-b8fd-4859-8c6b-4909dc9af074"
+    },
+    {
+      "claim_id": "09f3e533-ec15-419b-b10d-5db916bd086d",
+      "result_id": "a90e02bb-b8fd-4859-8c6b-4909dc9af074"
+    },
+    {
+      "claim_id": "ce96cf2b-5199-4e89-8736-5af3f1098e97",
+      "result_id": "015588c4-b19d-4764-b38a-f49ec5334112"
+    },
+    {
+      "claim_id": "1313488f-6691-4fb5-9cc6-f67ff6b02d7b",
+      "result_id": "015588c4-b19d-4764-b38a-f49ec5334112"
+    },
+    {
+      "claim_id": "5a28ec63-9a1f-4825-9214-95f174c06841",
+      "result_id": "015588c4-b19d-4764-b38a-f49ec5334112"
+    },
+    {
+      "claim_id": "f183051a-b1f7-459f-8e5b-9843595d6dc2",
+      "result_id": "3292517c-fd6b-4c2f-8427-16253d84bb8e"
+    },
+    {
+      "claim_id": "a40c153a-2080-474e-bd99-fa7eedb025c8",
+      "result_id": "3292517c-fd6b-4c2f-8427-16253d84bb8e"
+    },
+    {
+      "claim_id": "2526f67a-91db-48bf-aae3-9b03f4459668",
+      "result_id": "286a2f84-20da-458d-b8cf-473bedc0e1f8"
+    },
+    {
+      "claim_id": "fd164f31-6dc9-46f1-8cf0-9190c2391397",
+      "result_id": "3fa86cbd-2cbd-4510-a9dd-683353955e7d"
+    },
+    {
+      "claim_id": "130bf341-27a3-45f5-889c-a217fde2cbd0",
+      "result_id": "3fa86cbd-2cbd-4510-a9dd-683353955e7d"
+    },
+    {
+      "claim_id": "f5a95a4f-10ef-4235-8c4a-c046783da6d5",
+      "result_id": "3fa86cbd-2cbd-4510-a9dd-683353955e7d"
+    },
+    {
+      "claim_id": "50a84ccd-0500-4976-b4fe-76b38cc08ad0",
+      "result_id": "5f853f41-a497-4880-a14f-b74985cc576a"
+    },
+    {
+      "claim_id": "cd930a2f-715e-4a5e-8626-4aa4bbff9be5",
+      "result_id": "fa76a15e-3414-4547-8cc8-efc924d2f07c"
+    },
+    {
+      "claim_id": "f3ed6ef3-d351-4648-90fc-23411e257eda",
+      "result_id": "fa76a15e-3414-4547-8cc8-efc924d2f07c"
+    },
+    {
+      "claim_id": "643e3e54-4e90-4f2e-9029-00a2197754dc",
+      "result_id": "fa76a15e-3414-4547-8cc8-efc924d2f07c"
+    },
+    {
+      "claim_id": "079ba93e-2d02-43e7-997c-46800f58fa8d",
+      "result_id": "fa76a15e-3414-4547-8cc8-efc924d2f07c"
+    },
+    {
+      "claim_id": "606e0a61-d76d-48e0-9723-da6ca453bca6",
+      "result_id": "fa76a15e-3414-4547-8cc8-efc924d2f07c"
+    },
+    {
+      "claim_id": "f99ef871-90ad-4e8c-92b5-43bf48d03569",
+      "result_id": "f83dcc4e-83eb-404f-894f-4562bd0d06ac"
+    },
+    {
+      "claim_id": "486c24a3-0807-4ee9-b1e4-b5a49c397c49",
+      "result_id": "b051b3b4-56eb-4979-8177-43099e4b85fe"
+    },
+    {
+      "claim_id": "0f6ecd9e-1ba8-42cd-b3f4-a8f12a047b01",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "1bb7f76f-1b34-41c0-82f5-fd883e16393b",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "eedef9c6-212f-4743-9d86-0b6a6badf6e6",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "1da5132a-08cb-4210-a1e1-5f5023e7bcee",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "3c00b883-8322-403f-8596-73cdaafac16e",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "c8ca8cfa-e586-49e6-8dc3-9f3b60e48041",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "727fc396-1c15-4bd7-9d9e-c62061ef19af",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "11728c58-2c7f-48f8-86ed-6912f5b0bc4b",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "d22fa4e4-dfaf-4afe-be4d-8ee533615408",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "4d460ebb-1aca-42d0-a1cb-7c254f58fbbc",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "e2959e5b-74d9-4cd0-ad25-16d21ac47552",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "c0075b5e-2d16-4755-96a7-15d26d07beb3",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "7991b8c7-cf3e-401a-a125-ddeb9bab5f9c",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "902ca67b-51d4-42ec-b37c-5d3003f3ba96",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "3445a3cb-310d-419a-96da-c316981e12d8",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "93984af7-c10b-4248-8366-bd3c7f56541a",
+      "result_id": "85fda35a-923e-4444-90bd-1e704f6af784"
+    },
+    {
+      "claim_id": "5d555505-e3d7-4c2b-bff7-d094d777eb9b",
+      "result_id": "10e59ad8-3b85-45d7-96bd-1e4221b670ae"
+    }
+  ],
+  "comparisons": []
+}

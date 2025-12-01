@@ -1,0 +1,582 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C170"
+    ],
+    "result": "The study profiled primary skin fibroblasts from 16 mammalian species (13 rodents, 2 bats, 1 shrew) representing a wide range of maximum lifespan (2.2-34.0 years) and adult weight (10g-20kg), with RNA-seq performed on 28 samples from 15 species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C38, and C170 consistently describe the study design with specific numbers of species, samples, and biological parameters. The experimental design is clearly documented in both abstract and methods sections with supporting data tables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C136",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "A novel bioinformatics pipeline was developed to generate species-specific ortholog sets using reciprocal best BLAST hits, achieving 83.2-95.0% nucleotide identity and 88.0-96.8% protein identity relative to mouse, with 9389 gene orthologs reliably detected across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C136 describe the methodological challenge and solution, while C175-C177 provide quality metrics. The pipeline addresses the lack of reference genomes for most species, with detailed validation showing 74% of orthologs required minimal gap-filling. The approach is well-documented and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C117",
+      "C118"
+    ],
+    "result": "Gene expression and metabolic profiles segregated primarily by phylogenetic relationships, with biological and technical replicates clustering together, though metabolic patterns were less clear-cut than gene expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 and C117-C118 are supported by PCA analysis (Figure 3A, 5A) and phylogram construction (Figure 3B, 5B). The observation that within-species variation is smaller than cross-species variation validates the experimental approach. The weaker metabolic signal is appropriately attributed to fewer metabolites detected (226 vs 9389 genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Phylogenetic regression identified 675-830 genes significantly correlating with longevity traits (ML, FTM, MLres, FTMres), with substantial overlap among longevity traits but minimal overlap with adult weight, indicating correlations are not driven by body mass differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 present consistent statistical results from phylogenetic regression with appropriate controls. The two-step verification procedure (p value.robust and p value.max) strengthens confidence. The Venn diagram analysis (Figure 3C) clearly demonstrates that longevity correlations are independent of body mass effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C3"
+    ],
+    "result": "Genes positively correlating with longevity were enriched for nucleotide binding (15%), DNA repair (4%), glucose metabolic process (4%), and chromosome organization (4%) pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 and C3 are supported by DAVID pathway enrichment analysis (Table 1, Figure 3D) with specific percentages and p-values. The enrichment is biologically coherent and consistent with prior literature on longevity mechanisms. Statistical thresholds are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "Specific DNA repair genes showing positive correlation with longevity included mismatch repair genes (Msh6, Pms2), DNA damage response genes (Pnkp, Ercc1, C17orf70, Fancg), and telomere protection genes (Rif1, Terf1, Tinf2), with Pnkp, Prdx3, and Rif1 significant across all four longevity traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C66 identify specific genes with functional annotations supported by the data. Figure 4A shows Pnkp correlation, and Table 1 source data confirms statistical significance across multiple longevity traits. The functional categorization is consistent with established knowledge of DNA repair pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C4"
+    ],
+    "result": "Glucose metabolism genes (Hk1, Gpi1, Tpi1, Pfkp, Pdk1) and NAD synthetase (Nadsyn1) showed positive correlation with longevity traits, with Nadsyn1 significant across all four longevity measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 and C4 are supported by pathway analysis and individual gene correlations. Figure 4B demonstrates Nadsyn1 correlation with statistical significance. The genes are correctly annotated to glycolysis/gluconeogenesis pathways, and the NAD+ connection to longevity is well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C5",
+      "C6"
+    ],
+    "result": "Genes negatively correlating with longevity were enriched for proteolysis (9%), protein transport/localization (9%), and regulation of transcription (18%) pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88, C5, and C6 are supported by pathway enrichment analysis (Table 1, Figure 3D). The percentages and statistical significance are clearly reported. The finding is internally consistent and represents a major observation about cellular processes down-regulated in long-lived species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Specific proteolysis-related genes showing negative correlation included ubiquitin pathway components (Ube2b, Ube2v1, Rad18, Mycbp2), autophagy genes (Atg4a, Atg7, Atg10), and lysosomal proteases (Ctsl, Ctsz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 identify specific genes within the proteolysis pathway with consistent negative correlations. The genes are appropriately categorized by function (E2 enzymes, E3 ligases, autophagy, lysosomes), and the pattern is coherent with the overall pathway enrichment finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Apoptosis and growth signaling genes including Trp53, Bax, Foxo3, Mapk1, Tgfbr3, and Jund showed negative correlation with longevity, distinct from DNA repair genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by gene expression data shown in Figures 4C-F with clear statistical significance. The distinction from DNA repair genes (which show positive correlation) is explicitly noted and biologically meaningful. The finding suggests reduced apoptotic signaling in long-lived species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Longevity-correlating genes showed significant protein-protein interaction network connectivity (p<10^-10) and were highly enriched for housekeeping genes (~40%, p=3.646\u00d710^-26), indicating coordinated systemic modulation of fundamental cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 are supported by STRING database analysis (Figure 3 supplement 1) and Fisher's exact test results. The network analysis demonstrates functional relationships among identified genes, and the housekeeping gene enrichment suggests longevity involves coordinated changes in basic cellular functions rather than specialized pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C152"
+    ],
+    "result": "Fibroblasts from longer-lived species showed increased resistance to oxidative stress induced by cadmium (p=9.16\u00d710^-3) and paraquat (p=1.39\u00d710^-2) treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 and C152 are supported by toxicology experiments with LD50 measurements (Figures 4G-H). The positive correlation between maximum lifespan and stress resistance provides functional validation of the gene expression findings related to DNA repair and oxidative stress response. Statistical significance is clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Metabolite profiling of 12 rodent species detected 226 metabolites (144 water-soluble, 82 lipids), with 13-26 metabolites showing significant correlation with longevity traits depending on the measure used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 and C120-C123 describe the metabolomics experimental design and results. The numbers are consistent across claims and supported by supplementary data. The statistical thresholds (p value.robust<0.01, p value.max<0.05) are appropriately applied, though the smaller number of significant metabolites compared to genes reflects the smaller dataset size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C7"
+    ],
+    "result": "Metabolites positively correlating with longevity were enriched for common amino acids, while those negatively correlating were enriched for glycerophospholipids, with longer-lived species showing high amino acid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 and C7 are supported by pathway enrichment analysis and individual metabolite measurements. Figure 5D shows specific amino acid correlations with longevity. The pattern is internally consistent and represents a major metabolic signature of longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C8",
+      "C9"
+    ],
+    "result": "Nucleotides/nucleosides (ADP, GDP, adenosine) showed positive correlation with longevity, while lysophosphatidylcholine (LPC) and lysophosphatidylethanolamine (LPE) species showed negative correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 and C8-C9 are supported by metabolite profiling data (Table 2, Figure 5D). The LPC/LPE findings are consistent with previous reports (Ma et al., 2015b), providing independent validation. The nucleotide findings complement the gene expression data on NAD metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C10"
+    ],
+    "result": "All 10 amino acids associated with lifespan in rodent fibroblasts (arginine, glutamate, histidine, leucine, lysine, methionine, phenylalanine, proline, tryptophan, tyrosine, valine) showed significant positive association in independent validation using fibroblasts from 15 primate and 33 bird species, with particularly strong associations for hydrophobic amino acids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 and C10 describe independent validation across three vertebrate lineages. Table 2 and Figure 5 supplement 1 show consistent positive correlations across taxonomic groups. The validation strengthens confidence that amino acid patterns represent a conserved longevity signature rather than rodent-specific effects. The hydrophobic amino acid observation adds mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Fibroblasts from longer-lived species have lower expression of proteolysis, autophagy, and apoptosis genes but higher expression of DNA repair genes, potentially because they generate less damage and/or have better repair mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C149 are directly supported by the gene expression data (multiple figures and tables). Claim C150 is explicitly labeled as speculative interpretation. The pattern is paradoxical relative to some prior literature but is well-supported by the data and toxicology experiments. The interpretation is reasonable but requires further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The degree of longevity correlation was not biased by sequence conservation (Wilcoxon p=0.32), though potential confounders include gene length effects, missed genes with low sequence conservation, limitation to fibroblast-expressed genes, and inability to capture splice isoform effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 is supported by statistical analysis (Figure 2 supplement 1D). Claims C155-C158 acknowledge legitimate limitations of the approach. The authors appropriately recognize these caveats while demonstrating that sequence conservation does not bias the main findings. The limitations are honestly reported and do not invalidate the core results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "Potential limitations include possible chromatin changes from in vitro culture, differential stress responses to culture conditions, problems with maximum lifespan as a metric (small sample size, high variance), and possible seasonality effects on female time to maturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 acknowledge important methodological limitations. C159-C160 are speculative concerns about culture artifacts. C161 cites literature on ML metric problems. C162 provides empirical support (Spearman r=0.87) for FTM as an alternative. C163 notes FTM limitations. These represent honest assessment of study limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Gene expression and metabolite levels in fibroblast cultures can uncover differences in cell biology corresponding to longer life, with expression patterns preserved under standardized culture conditions, making fibroblasts an attractive experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 represent the main conclusions synthesizing the study findings. They are supported by the totality of the gene expression, metabolite, and validation data. The conclusion that patterns are preserved in culture is supported by the phylogenetic segregation and successful validation across species. The inference is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Prior studies in model organisms showed that over-expression of hif-1 in C. elegans promotes longevity, while deletion of rif1 and msh6 in yeast, knockout of prdx3 in C. elegans, and disruption of Ercc1 in mouse all decrease lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 cite specific prior experimental studies with appropriate references. These provide context showing that genes identified in the current study have established roles in longevity regulation in model organisms, strengthening the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Previous studies suggested long-lived species have enhanced DNA repair capacity, higher poly(ADP-ribose) polymerase activity, up-regulated base-excision repair genes, reduced free-radical production, reduced oxidant generation, and less oxidative damage to nuclear and mitochondrial DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 summarize prior literature with appropriate citations. The authors appropriately note that \"the degree of contribution toward the observed differences in lifespan varied and might be affected by several confounding effects,\" acknowledging complexity in the literature. This provides important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Prior literature shows proteolytic functions decline and oxidized proteins increase with age, autophagy genes are required for lifespan extension by insulin/IGF-1 signaling and dietary restriction, and activation of proteasome or autophagy extends lifespan in C. elegans, yeast, and flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C147 cite extensive prior literature on proteolysis/autophagy and aging. This context is important because the current study's findings (lower proteolysis gene expression in long-lived species) appear paradoxical relative to some prior work. The authors appropriately acknowledge this complexity and offer a reasonable interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Statistical validation showed normalcy assumptions were valid for 89% of genes and 90% of metabolites on log10 scale, and four different trait evolution models were tested to select best-fit models based on maximum likelihood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180 describe statistical validation procedures. The Shapiro test results support the use of parametric methods. Testing multiple evolutionary models and selecting by maximum likelihood is appropriate for phylogenetic comparative methods. These represent sound statistical practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Mammalian lifespan differs by >100-fold (from ~2 years in shrews to >200 years in bowhead whales) and correlates positively with body mass and time to maturity but negatively with growth rate, metabolic rate, and offspring number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C11-C16 provide established background on mammalian lifespan variation and correlates. These are well-supported by citations to authoritative sources (AnAge database, classic comparative biology literature). This background appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Model organism studies have identified lifespan-extending interventions including IGF-1 receptor knockout, mTOR inhibition, growth hormone receptor mutation, anterior pituitary ablation, sirtuin augmentation, and dietary restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 cite well-established findings from model organism aging research with appropriate references. This background provides important context for interpreting whether the cross-species patterns observed in fibroblasts relate to known longevity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior studies identified longevity-associated features in specific long-lived species: UCP1 changes and high-molecular-mass hyaluronan in naked mole rat, IGF1/GH receptor changes in Brandt's bat, DNA repair/cell cycle/insulin signaling changes in bowhead whale, and p53 duplication in elephants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 cite specific prior studies on exceptionally long-lived species with appropriate references. This background motivates the current study's comparative approach across multiple species to identify general longevity signatures rather than species-specific adaptations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior cross-species studies found positive correlations between longevity and fibroblast longevity in vitro, poly(ADP-ribose) polymerase activity, and DNA repair rate, and negative correlations with fatty acid peroxidizability, telomere shortening rate, and oxidative DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 cite prior comparative studies with appropriate references. This establishes precedent for the fibroblast culture approach and provides context for interpreting the current findings. The cited correlations are consistent with the current study's results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Prior studies showed NAD+ levels decline with age and affect SIRT1 function, NAD+ precursor supplementation reverses aging phenotypes in mouse muscle, SIRT1 overexpression protects against aging-dependent circadian changes in mouse brain, and calorie restriction increases NAD+/NADH ratio in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 cite relevant prior literature on NAD+ metabolism and aging with appropriate references. This provides important context for interpreting the finding that Nadsyn1 (NAD synthetase) correlates with longevity, though the authors appropriately note they did not directly measure NAD+/NADH ratios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "FOXO3 can be activated by oxidative stress, and genetic variation in FOXO3A is strongly associated with human longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C107 cite specific prior studies on FOXO3 with appropriate references. This provides important context for the finding that Foxo3 shows negative correlation with longevity in the current study, suggesting complex regulation of this pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Prior work demonstrated that skin-derived fibroblasts from long-lived rodent species are more tolerant of stress from cadmium, hydrogen peroxide, heat, and MMS, and more resistant to metabolic inhibition by rotenone and low-glucose conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 cite prior work (Harper et al., 2007) that motivated the toxicology experiments in the current study. This provides precedent for the approach and context for interpreting the cadmium and paraquat resistance findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C129"
+    ],
+    "result": "LPC levels decrease with age but are maintained in mice under caloric restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 cites prior literature (De Guzman et al., 2013) showing age-related changes in LPC levels. This provides important context suggesting the low LPC levels in long-lived species may relate to caloric restriction-like metabolic states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "Down-regulation of the ubiquitin ligase complex was reported in the liver of longer-lived mammalian species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 cites prior work (Fushan et al., 2015) showing similar patterns in liver tissue. This provides independent validation that the proteolysis down-regulation observed in fibroblasts may be a general feature of long-lived species across tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The pattern of low LPC and LPE among long-lived species was consistent with previous reports, and the positive correlation between amino acids and longevity validated in primates and birds suggests these changes likely evolved independently in separate lineages in association with slower aging and longer lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C153 notes consistency with prior reports (Ma et al., 2015b). Claim C154 makes an evolutionary inference based on the validation across three vertebrate lineages (rodents, primates, birds). The inference of independent evolution is reasonable given the phylogenetic distribution but represents interpretation rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "All mammals descended from a common ancestor over 230 million years and have undergone remarkable diversification in body size, metabolic rate, fertility, and longevity with corresponding changes in gene expression and metabolite landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 state established evolutionary and comparative biology facts with appropriate citations. This provides the broad evolutionary context motivating the comparative approach across mammalian species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C135",
+      "C168",
+      "C169"
+    ],
+    "result": "The pipeline can be extended to larger numbers of species and samples to refine molecular signatures, ultimately revealing the genetic basis for species longevity differences and leading to new targeting strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135, C168, and C169 are explicitly speculative statements about future directions. While the pipeline's extensibility is plausible given its design, and the potential for future insights is reasonable, these represent aspirational goals rather than demonstrated results. The claims are appropriately framed as future possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C181"
+    ],
+    "result": "Methodological details include low-oxygen culture conditions (3% O2) to minimize O2 toxicity selection, MLres and FTMres equations based on AnAge database and linear regression, RNA-seq generating 30-75 million reads per sample, Mouse Reference containing 16,816 genes, and validation using 32 bird and 13 primate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C177 and C181 provide specific methodological details that are clearly documented in the Materials and Methods section. These details are important for reproducibility and interpretation but represent procedural information rather than scientific findings.",
+    "result_type": "MINOR"
+  }
+]

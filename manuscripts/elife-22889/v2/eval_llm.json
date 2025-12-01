@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C33",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C97",
+      "C98"
+    ],
+    "result": "Apo PD-1 presents a non-bound-like hydrophilic interface with closed Asn66 stabilized by hydrogen bonding to Lys78, and the Trp110 pocket is largely occluded. This hydrophilic interface does not sample bound-like hydrophobic conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence converge: NMR structures show closed Asn66 (C26), MD simulations confirm this state is maintained (C45, C46), fractional occlusion analysis demonstrates the Trp110 pocket is blocked (C33), and the interface is characterized as hydrophilic (C3, C97, C98). The structural and computational data are internally consistent and validated against experimental NMR ensembles (C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Tyr123/112 serves as a conserved anchor residue that facilitates molecular recognition by remaining in a bound-like conformation in apo ligands (88\u00b116% of simulation time) and docking into an unobstructed pocket on apo PD-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anchor role is supported by: (1) quantitative MD data showing Tyr123/112 maintains bound-like conformations in apo ligands (C48), (2) structural analysis showing the binding pocket is accessible (C49), and (3) computational docking experiments where Y123G/A mutations abolish successful docking (C50, C51). The convergence of simulation and docking data provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C99"
+    ],
+    "result": "A conserved four-membered hydrogen bond network involving Asp122/111, the Ala121/Trp110 backbone, Tyr68, and Asn66 opens Asn66 by out-competing the Lys78 hydrogen bond, transforming the interface from hydrophilic to hydrophobic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanism is strongly supported by: (1) MD simulations showing the hydrogen bond network formation (C53, C54), (2) consistency with all available crystal structures (C55), (3) rationalization of sequence conservation (C56) and mutagenesis data showing D111A, K124S, and K113A mutations abolish binding (C57, C60, C61), and (4) quantitative MD data on Asp122/111 conformational stability (C58, C59). The integration of computational and experimental validation is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The Y68N mutation in murine PD-1 is functionally equivalent to Tyr68 through water-mediated hydrogen bonding, as demonstrated by crystal structures and MD simulations of the Y68N mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The murine PD-1-PD-L2 cocrystal structure shows Asn68 recruits a water molecule that forms the same hydrogen bond network as Tyr68 (C64), and MD simulations of human Y68N mutant spontaneously reproduce this water-mediated mechanism (C65). The convergence of crystallographic and computational evidence supports functional equivalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C100"
+    ],
+    "result": "The GDY peptide stabilizes both Asn66 and Ile126 in open states through Tyr acting as a 'wedge' that positions Ile134, which then pulls Ile126 out of the pocket. In contrast, the ADY peptide's Ala C\u03b2 carbon recruits Ile126 into a closed state, but only when the Tyr anchor is present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MD simulations systematically demonstrate: (1) GDG opens Asn66 but Ile126 fluctuates (C66-C68), (2) GDY stabilizes both open (C69-C70), (3) the Tyr wedge mechanism stabilizes Ile134 (C71-C72), (4) ADY closes Ile126 (C73), and (5) the Ala C\u03b2 effect requires the anchor (C74). The systematic peptide series provides strong mechanistic evidence, though the reliance on restrained peptide simulations rather than full ligand simulations is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C114",
+      "C115",
+      "C117"
+    ],
+    "result": "The ADY and GDY triggering motifs drive energetically downhill binding pathways that shift the bound-like:non-bound-like ratio from ~1:44 to ~7:1 (PD-L1) or ~12:1 (PD-L2), with each contact monotonically lowering free energy without encountering barriers, strongly suggesting an induced fit mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The free energy calculations using Maxwell-Boltzmann statistics on MD trajectories provide quantitative estimates (C76, C77), and the absence of energy barriers supports induced fit (C78, C114, C115). However, critical concerns include: (1) the use of harmonic restraints on peptides may artificially bias the energetics, (2) the binary classification of 'open' vs 'closed' based on RMSD cutoffs is somewhat arbitrary, (3) standard deviations are large (e.g., 1:44\u00b124), and (4) the 200 ns simulation time may be insufficient to fully sample conformational space and achieve true equilibrium. The conclusions are reasonable but require validation with longer, unrestrained simulations and experimental thermodynamic measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C118"
+    ],
+    "result": "Encounter complex simulations recapitulate the peptide-derived triggering mechanisms, showing a conserved chronology where Tyr68-Asp122/111 hydrogen bonding occurs first, followed by Asn66 opening within ~10 ns, and secondary interface contacts form ~10 ns later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The encounter complex simulations provide temporal information about binding events (C79-C83, C118) and show consistency with peptide simulations. However, significant concerns include: (1) the starting structures were generated by rigid-body docking with average backbone RMSDs of 4.8-5.7 \u00c5 to cocrystals, which may not represent true encounter complexes, (2) only three replicates were performed with large standard deviations (e.g., 6.3\u00b12.9 ns, 15\u00b17.8 ns), (3) the simulations are relatively short (400 ns) for rare binding events, and (4) no validation against experimental kinetics data is provided. The results are suggestive but require more extensive sampling and experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C122"
+    ],
+    "result": "The pembrolizumab antibody stabilizes the same open Asn66 state as PD-L1/2 using an analogous hydrogen bond network, but exhibits a novel binding mode with both Ile126 and Ile134 closed and no anchor analog, with Arg102 'capping' the hydrophobic surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural analysis of pembrolizumab-PD-1 cocrystals clearly shows: (1) the same Asn66-opening hydrogen bond network (C84), (2) a distinct Ile126/134 configuration (C85), (3) absence of an anchor (C86), and (4) the Arg102 capping mechanism (C87). This is purely structural analysis of published crystal structures with clear interpretation, providing strong support for convergent evolution of the Asn66-opening trigger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C123",
+      "C124"
+    ],
+    "result": "The mGDV motif of the Bristol-Myers Squibb macrocyclic inhibitor combines pharmacophore features of PD-L1 and pembrolizumab, opening Asn66 via the canonical hydrogen bond network while stabilizing closed Ile126/134 similar to pembrolizumab, demonstrating that the Asn66-opening trigger can be exploited for drug design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural similarity of mGDV to ADY and pembrolizumab is noted (C89, C123), and simulations show Asn66 opening (C90) and closed Ile126/134 dynamics (C91-C96). However, critical limitations include: (1) no experimental binding or structural data for the macrocycle-PD-1 complex are provided, (2) the docking models (Figure 10 supplements) are computational predictions without validation, (3) the 1.03 nM affinity is cited from a patent without independent verification, and (4) the mechanism of action is entirely inferred from simulations. While the hypothesis is plausible and the simulations are consistent, experimental validation is essential before concluding this represents a viable drug design strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "PD-1 achieves selective promiscuity through a two-step induced fit mechanism: conserved XDY triggers (X=A or W, plus Asp and Tyr) unlock promiscuity by revealing a flexible hydrophobic surface, then the single-atom difference at position X (Ala C\u03b2 vs. Gly) modulates Ile126 to establish ligand-specific binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative result synthesizes multiple findings: (1) the conserved XDY motif opens Asn66 and creates a hydrophobic surface (C35, C36, C101, C120), (2) the Ala C\u03b2 vs. Gly difference determines Ile126 state (C37, C102-C104, C121), (3) apo PD-1 presents an obstructive interface preventing non-specific binding (C119), and (4) the mechanism explains both promiscuity and specificity (C4, C5). The systematic peptide series, free energy calculations, and consistency with structural and mutagenesis data provide strong support for this model, though the quantitative energetics remain uncertain (see Result 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C125",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The induced fit mechanism for selective promiscuity in PD-1 may represent a general evolutionary strategy for eukaryotic regulatory proteins, offering advantages over conformational selection by avoiding kinetic bottlenecks as the number of ligands increases, and potentially applicable to other regulatory domains that bind multiple linear sequences with shared anchor motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The evolutionary and mechanistic arguments are logical: (1) regulatory proteins show high flexibility and promiscuity (C6, C7), (2) induced fit avoids conformational selection bottlenecks (C127, C128, C132), (3) core contacts can be designed once with specificity added incrementally (C130, C131), and (4) many regulatory domains show similar binding patterns (C133). However, this remains highly speculative (C125, C134) as it is based on a single case study (PD-1) without systematic analysis of other systems. The claims about evolutionary advantages are theoretical and lack direct experimental or comparative genomic evidence. This represents an interesting hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Simulations of anchor substitutions (XDF, XDW, XDH, XDR, XDK, XDG, XDA) show that aromatic residues can stabilize open or closed pockets, polar residues produce closed pockets, and small residues cause fluctuations, consistent with mutagenesis showing Y112A slightly reduces but does not abolish binding, though Tyr conservation may reflect kinetic constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic exploration of anchor substitutions in MD simulations (C109-C111) provides mechanistic insight into anchor requirements and is consistent with mutagenesis data showing Y112A partially reduces binding (C112). The speculation about kinetic constraints (C113) is appropriately qualified. This represents solid computational work validated against experimental mutagenesis, though the simulations use restrained peptides which may not fully capture binding energetics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Apo PD-1 MD simulations stabilize within ~2.0 \u00c5 backbone RMSD of NMR starting structures, validating the ability to sample native-like unbound states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a straightforward validation of simulation methodology shown in Figure 12. The simulations remain close to experimental NMR structures, providing confidence in the computational approach. However, staying close to starting structures could also indicate insufficient sampling of conformational space, which is a concern for the longer-timescale binding events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C56",
+      "C57",
+      "C60",
+      "C61"
+    ],
+    "result": "Mutagenesis studies from the literature show that mutations at key interface residues (E136A, K78A, D85G, I126A, L128A, I134A, D111A, K124S, K113A) abolish or greatly reduce PD-1 binding to its ligands or pembrolizumab.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are cited experimental results from published mutagenesis studies that provide crucial validation for the computational model. The authors appropriately cite these results and use them to validate their proposed mechanisms. This represents solid integration of prior experimental work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,205 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C53"
+    ],
+    "result": "The vast majority of dentate gyrus granule cells are silent during spatial exploration. Of 190 juxtacellular recordings in the granule cell layer, 163 (86%) were from silent neurons that did not fire during exploration, with active granule cells accounting for only ~14% (27 out of 190) of sampled neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28, C29, C31, and C53 provide converging quantitative evidence from juxtacellular recordings showing that the large majority of granule cells are silent during exploration. The authors acknowledge potential overestimation of active cells due to sampling bias (C32), which strengthens rather than weakens the conclusion. The sample size (n=190) is substantial and the methodology (juxtacellular recording) is appropriate for detecting both active and silent neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C54",
+      "C55"
+    ],
+    "result": "Active granule cells display characteristic spike waveforms with 'shoulders' following the positive action potential peak. These spike-shoulders were observed in neurons located within the granule cell layer (n=17), corresponded to morphologically mature granule cells (n=15), and were not present in CA3c, fast-spiking, or hilar neurons. Recordings could be classified as granule cells based on spike waveforms with ~89% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 and C54-C55 provide strong electrophysiological and anatomical evidence for spike-shoulders as a reliable correlate of granule cell identity. The classification accuracy (~89%, C27) with cross-validation supports the reliability of this signature. The anatomical localization (C23-C24) and absence in other cell types (C25) provide additional validation. However, the authors acknowledge that not all identified granule cells displayed spike-shoulders (C40: 18/21, ~86%), indicating some false-negatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C42",
+      "C43",
+      "C57"
+    ],
+    "result": "Morphologically mature granule cells display spatial firing patterns, with the majority showing single spatial firing fields. Nine spontaneously active granule cells were identified in freely moving animals, with the sharpest spatial activity observed in neurons with highest firing rates (>1 Hz). In 8 out of 11 recordings with sufficient spatial coverage, firing occurred at single spatial locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C42-C43 provide direct anatomical and electrophysiological evidence linking mature granule cell morphology to spatial firing. The sample size is limited (n=9 identified, n=27 total active cells) and the authors acknowledge limitations in recording duration and spatial sampling (C58). However, the findings are consistent with previous literature (C34, C43) and provide the first direct anatomical confirmation of this relationship (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C51",
+      "C61",
+      "C62"
+    ],
+    "result": "Primary dendritic parameters can predict granule cell activity status during behavior with high accuracy. A logistic regression classifier distinguished active from silent cells with ~85% accuracy (11/13 correct, p=0.03). Longer high-order dendrites (orders 5-6) predicted active cells, while shorter low-order dendrites (orders 2-3) and more primary dendrites predicted silent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C49 demonstrate statistically significant classification accuracy with appropriate cross-validation. However, the sample size is very small (n=13 total: 6 active, 7 silent), and the authors acknowledge that structure-function relationships are subtle and derive from combined analysis of multiple parameters (C62). The p=0.03 significance is marginal, and with such a small sample, the generalizability is uncertain. The authors appropriately note that causal experiments are needed (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Control analyses indicate that morphological differences between active and silent neurons are unlikely to result from methodological or procedural biases. Labeling efficiency was similar between groups (~42% active, ~37% silent), no bias was observed in distribution across animals, and labeling quality metrics were comparable between active and silent neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 provide multiple lines of evidence addressing potential confounds in the morphological analysis. The controls are appropriate and comprehensive, including labeling efficiency, distribution across animals, soma location, laminar location, and labeling quality metrics. The lack of correlation between dendritic complexity and labeling quality (C69, p=0.32) is particularly important for validating the morphological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C52"
+    ],
+    "result": "The data support a sparse coding scheme in the dentate gyrus and provide a possible link between structural and functional heterogeneity among the granule cell population. Sparse coding in the dentate gyrus has been postulated to subserve pattern separation, a key function during memory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 represent the main conclusions of the study, which are well-supported by the convergence of findings on sparse activity (Result 1), electrophysiological signatures (Result 2), spatial firing (Result 3), and morphological predictors (Result 4). The link to pattern separation (C52) is appropriately framed as a theoretical context supported by prior literature rather than a direct finding of this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C30"
+    ],
+    "result": "Juxtacellular recording enables sampling of both silent and active cells during free behavior, irrespective of spiking activity. Silent granule cells could be confirmed by current injection that readily induced spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C30 describe the key methodological advantage that enables this study. The ability to record from silent neurons and confirm their presence by current injection (C30, Figure 2E) is well-demonstrated. This methodological approach is essential for unbiased sampling of sparse networks and is supported by appropriate citations to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Electrophysiological landmarks (electrode resistance, LFP gamma oscillations, and juxtacellular hit-rates) served as reliable correlates of electrode location within the granule cell layer. Cell identification and anatomical verification confirmed the accuracy of these targeting methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe the targeting methodology and its validation. The convergence of multiple electrophysiological markers (C76) and post-hoc anatomical verification (C77) provide strong evidence for accurate targeting. This is important for establishing confidence in the anatomical assignment of recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "All reconstructed granule cells recorded in freely moving animals (n=13) were classified as morphologically mature based on established criteria. Cells in the lower third of the granule cell layer (n=3) tested negative for doublecortin expression, consistent with the expected low proportion (~5%) of immature granule cells in young adult rats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 establish that the study focused on mature granule cells. The morphological criteria are based on established literature (C78), and the doublecortin testing (C79) provides molecular confirmation. The interpretation (C80) is appropriately contextualized with prior literature on the proportion of immature cells in young adult rats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A total of 27 active granule cells (9 identified and 18 classified) were recorded during spatial exploration. Most but not all identified active granule cells displayed spike-shoulders (18/21, ~86%), suggesting that approximately 14% of granule cell recordings may be misclassified as false-negatives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 provide transparency about the dataset composition and classification limitations. The acknowledgment of potential false-negatives (C41) based on the imperfect sensitivity of the spike-shoulder criterion (C40) demonstrates appropriate scientific rigor in assessing classification accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "The authors identify several limitations and suggest future directions, including: testing whether spike-shoulders can be resolved extracellularly for tetrode classification; performing recordings in larger open-field environments to characterize firing patterns; and conducting targeted manipulations of dendritic structures to establish causal relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, C59, and C63 appropriately acknowledge limitations of the current study and suggest specific future experiments. These are reasonable assessments of what additional work is needed to extend and validate the findings. The authors appropriately distinguish between what has been demonstrated and what remains speculative or requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Close anatomical proximity (<1 \u03bcm) was observed between mossy boutons and large hilar neurons (4/13 analyzed boutons), suggesting that hilar neurons might integrate spatial signals from upstream granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 provides anatomical data on proximity between mossy boutons and hilar neurons, but the sample size is very small (4/13 boutons) and the data are not shown. Claim C38 is explicitly speculative ('suggesting that hilar neurons might integrate'). While the observation is interesting, the evidence is insufficient to draw strong conclusions about functional connectivity or signal integration.",
+    "result_type": "MINOR"
+  }
+]

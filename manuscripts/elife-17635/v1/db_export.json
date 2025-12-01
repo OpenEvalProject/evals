@@ -1,0 +1,2154 @@
+{
+  "submission": {
+    "id": "a2203a6b-65cc-4d8f-81dd-aaa4be4a7b62",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:05:34.595022Z",
+    "updated_at": "2025-11-30T21:05:34.595022Z"
+  },
+  "content": [
+    {
+      "id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "submission_id": "a2203a6b-65cc-4d8f-81dd-aaa4be4a7b62",
+      "content_type": "manuscript",
+      "content_text": "# Rac1-mediated membrane raft localization of PI3K/p110\u03b2 is required for its activation by GPCRs or PTEN loss\n\n## Authors\n\n- Onur Cizmecioglu<sup>1</sup>\n- Jing Ni<sup>1</sup>\n- Shaozhen Xie<sup>1</sup>\n- Jean J Zhao<sup>1</sup>\n- Thomas M Roberts<sup>1</sup> ([ORCID: 0000-0001-6453-3955](https://orcid.org/0000-0001-6453-3955)) \u2020\n\n### Affiliations\n\n1. Department of Cancer Biology Dana-Farber Cancer Institute Boston United States\n2. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe aimed to understand how spatial compartmentalization in the plasma membrane might contribute to the functions of the ubiquitous class IA phosphoinositide 3-kinase (PI3K) isoforms, p110\u03b1 and p110\u03b2. We found that p110\u03b2 localizes to membrane rafts in a Rac1-dependent manner. This localization potentiates Akt activation by G-protein-coupled receptors (GPCRs). Thus genetic targeting of a Rac1 binding-deficient allele of p110\u03b2 to rafts alleviated the requirement for p110\u03b2-Rac1 association for GPCR signaling, cell growth and migration. In contrast, p110\u03b1, which does not play a physiological role in GPCR signaling, is found to reside in nonraft regions of the plasma membrane. Raft targeting of p110\u03b1 allowed its EGFR-mediated activation by GPCRs. Notably, p110\u03b2 dependent, PTEN null tumor cells critically rely upon raft-associated PI3K activity. Collectively, our findings provide a mechanistic account of how membrane raft localization regulates differential activation of distinct PI3K isoforms and offer insight into why PTEN-deficient cancers depend on p110\u03b2.\n\n## Introduction\n\nThe phosphoinositide 3-kinase (PI3K) pathway has been widely studied as a major regulator of cellular proliferation, metabolism and migration (Fruman et al., 1998; Engelman et al., 2006; Cain and Ridley, 2009). PI3Ks catalyze phosphorylation of the 3\u2019OH group on phosphoinositides at the plasma membrane, which induces translocation of the Ser/Thr kinase Akt. Once recruited to the plasma membrane, Akt becomes activated by PDK1 and mTOR2 dependent phosphorylation events (Alessi et al., 1997; Sarbassov et al., 2005). Activation of PI3K signaling frequently occurs in human cancers (Vivanco and Sawyers, 2002).\n\nThe PI3Ks are organized into three classes based on their structural similarities and mechanism of activation. The most extensively studied class I PI3Ks are activated by growth factor receptors. Of these, class IA enzymes are activated via receptor tyrosine kinases (RTKs), small G-proteins and G-protein-coupled receptors (GPCRs) and PI3K signaling is functionally antagonized by the PIP3 degrading PI3 phosphatase PTEN (phosphatase and tensin homolog) (Sang et al., 2012). p110\u03b1 and p110\u03b2 are the catalytic class IA isoforms with a ubiquitous expression pattern (Jia et al., 2009). Heterodimerization with the regulatory p85 subunit stabilizes p110 isoforms but at the same time keeps their kinase activity in check through inhibitory interactions (Yu et al., 1998; Zhang et al., 2011). Although both p110\u03b1 and p110\u03b2 form heterodimers with p85 and catalyze the same biochemical reaction upon activation, studies have indicated that they have distinct functions (Foukas et al., 2006; Zhao et al., 2006; Jackson et al., 2005; Jia et al., 2008; Guillermet-Guibert et al., 2008; Ni et al., 2012). p110\u03b1 appears to mediate bulk of PI3K signaling downstream of RTKs whereas p110\u03b2 preferentially signals downstream of GPCRs. Notably p110\u03b1 and \u03b2 isoforms are involved in mutually exclusive signaling complexes with distinct members of small GTPase protein superfamily, Ras and Rac1 respectively (Gupta et al., 2007; Fritsch et al., 2013). However, we are far from a complete understanding of the molecular mechanisms that account for the full spectrum of their functional differences.\n\nIn cancer, p110\u03b1 is the main isoform required for transformation by oncogenes (Zhao et al., 2006) and the encoding PIK3CA is frequently found to have suffered from one of two common activating hotspot mutations in many tumor types (Samuels\u00a0et\u00a0al., 2004). This reliance of tumors on p110\u03b1 may be partially explained by the fact that it has much higher specific activity compared to p110\u03b2 (Zhao et al., 2006; Beeton et al., 2000; Knight et al., 2006). Indeed in a GEM model of breast cancer driven by Her2, knockout of p110\u03b1 blocked tumor formation while knockout p110\u03b2 actually caused tumors to develop more quickly- a surprising result explained by a competition model where the less active p110\u03b2 binds to the same limiting number of p85/p110 binding sites on Her2 and thus actually lowers signaling output compared to the case where only p110\u03b1 is expressed and hence can bind to all of the PI3K binding sites on the receptor (Utermark et al., 2012). Notably tumors that have lost expression of PTEN are largely dependent on p110\u03b2 (Jia et al., 2008; Ni et al., 2012; Wee et al., 2008), an unexpected outcome given its weaker kinase activity. While it is possible that some loss of PTEN tumors feature activation of GPCRs thus explaining their p110\u03b2 dependence (Rodriguez et al., 2016), that does not appear to be a unifying theme.\n\nThe plasma membrane is the site of activation for numerous signaling cascades, and its organizing principles contribute to the specificity and potency of these sequences of biochemical reactions (Kusumi et al., 2012). The lipid raft hypothesis proposes that the preferential association among sphingolipids, sterols, and specific proteins confers upon the lipid bilayer the potential for lateral segregation of key signaling molecules, dramatically transforming the cell membrane from a passive bystander to a dynamic entity facilitating signaling through subcompartmentalization (Lingwood and Simons, 2010). Sphingolipid and cholesterol enriched membrane rafts play a key signaling role in T cell activation via the T cell synapse (Gaus et al., 2005), B cell activation (Gupta and DeFranco, 2007), focal adhesions, cell migration (Gaus et al., 2006), membrane trafficking in polarized epithelial cells (van Meer et al., 1987) and hormone signaling (M\u00e1rquez et al., 2006).\n\nFluorescence correlation spectroscopy data implicate involvement of raft nanodomains in recruitment of Akt to the cell membrane upon PIP3 production (Lasserre et al., 2008), and FRET-based Akt activity reporters uncovered a preferential activation of Akt in membrane rafts (Gao and Zhang, 2008). On the other hand PTEN was shown to localize selectively to nonraft membrane microdomains in human embryonic kidney cells, possibly further restricting Akt activation in these regions (Gao et al., 2011). However, although membrane microdomain compartmentalization is believed to be a crucial mechanism for achieving signaling specificity, the role of spatial partitioning in class IA PI3K signaling has remained elusive.\n\nTo address these questions, we combined simultaneous knock-out of p110\u03b1 and p110\u03b2 with genetic targeting that enabled us to express unique class IA PI3K isoforms directed to specific plasma membrane microdomains. Using this strategy, we investigated Akt activation, cellular proliferation and migration in response to growth factors, when expression of particular class IA PI3K isoforms was directed to membrane rafts or nonraft regions of the plasma membrane. We found that raft targeting of either p110\u03b1 or p110\u03b2 potentiates GPCR mediated activation of Akt. In addition, we determined that p110\u03b2 required Rac1 binding for raft localization and G\u03b2\u03b3 association for activation downstream of GPCRs, whereas raft-targeted p110\u03b1 was dependent on EGFR activity. Notably we found that PI3K signaling was also dependent on raft integrity in PTEN null cancer cells. Taken together, these results indicate that any class IA PI3K catalytic isoform, when targeted to GPCR signaling permissive membrane microdomains, could activate Akt and maintain downstream PI3K signaling through distinct mechanisms. Finally, our data has novel implications concerning the optimal methods for inhibiting Akt activation in PTEN null tumors.\n\n## Results\n\n### Generation of Isogenic MEFs expressing p110\u03b1 or p110\u03b2\n\nTo facilitate the study of the individual p110 isoforms, we first generated immortalized p110\u03b1flox/flox; p110\u03b2flox/flox mouse embryonic fibroblasts (MEFs). Expression of endogenous p110\u03b1 and p110\u03b2 is almost entirely lost upon transduction of the cells with an adenovirus (AdCre) expressing the Cre-recombinase (Figure 1A). These double knock-out (DKO) MEFs show a reduction of phosphorylated Akt (p-Akt) (Figure 1A, compare lanes 1\u20135 with lanes 6\u201310), have a blunted response in promotion of p-Akt and p-S6 to a variety of growth signals (Figure 1B, compare lanes 2\u20135 with lanes 7\u201310) and essentially cease to proliferate (Figure 1C), which is consistent with the key role of the PI3K pathway in proliferation and signaling.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig1-v1.jpg)\n\n**Figure 1.:** (A) p110\u03b1flox/flox; p110\u03b2flox/flox MEFs were treated with either AdLacZ or AdCre. 20 hr after the viral transductions, cells were harvested at indicated time points and immunoblots were performed. p-Akt (for T308) immunoblot depicts activation of PI3K pathway. (B) Wt or DKO MEFs were serum starved for 4 hr and stimulated with insulin, PDGF, EGF or FGF. Cells were then harvested and analyzed in immunoblots using the indicated antibodies (T308 for p-Akt and S235/236 for p-S6) to determine the extent of PI3K activation. (C) Proliferation kinetics of AdLacZ or AdCre treated MEFs were determined by crystal violet assays. Error bars depict standard deviation in 3 independent experiments. D denotes days. (D) Wt, DKO, DKO+p110\u03b1-wt and DKO+p110\u03b2-wt MEFs were analyzed in immunoblots for expression of p110\u03b1 and p110\u03b2 with the indicated antibodies. (E) DKO+p110\u03b1-wt and DKO+p110\u03b2-wt MEFs were starved and stimulated with insulin, PDGF and LPA in the presence of DMSO or isoform specific PI3K inhibitors, BYL-719 (BYL) and TGX-221 (TGX), specific for p110\u03b1 and p110\u03b2, respectively. PI3K signaling efficiency in these cells was determined with p-Akt (for T308 and S473) and p-S6 (for S235/236) immunoblots.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) On the right, DKO+p110\u03b1-wt add-back MEFs were analyzed for proliferation in the presence of DMSO, BYL-719; p110\u03b1 inhibitor, TGX-221; p110\u03b2 inhibitor, BYL+TGX, GDC-0941 (GDC); pan-PI3K inhibitor and MK-2206; Akt inhibitor, for six and eight days. On the left, graph depicts mean proliferation of samples in 3 independent experiments. (B) On the right, DKO+p110\u03b2-wt add-back MEFs were analyzed for proliferation in the presence of the indicated inhibitors, for six and eight days. On the left, graph depicts mean proliferation of samples in 3 independent experiments.\n\nTo generate isogenic MEFs expressing either p110\u03b1 or p110\u03b2, we ectopically expressed comparable levels of wild-type (wt) HA-p110\u03b1 or HA-p110\u03b2 in DKO MEFs (henceforth DKO 'add-back' is used to denote these MEFs) (Figure 1D). Notably, ectopic expression of either p110 isoform could rescue PI3K signaling defects and growth inhibition in the DKO MEFs (Figure 1\u2014figure supplement 1A,B). The resulting isogenic DKO add-back MEFs were highly sensitive to small molecule inhibitors targeting the unique isoform expressed, in growth factor signaling and proliferation assays (Figure 1E and Figure 1\u2014figure supplement 1A,B). These cells have allowed us to compare the two commonly expressed p110 isoforms in much more detail than has previously been possible.\n\n### Rac1 binding constitutes a raft localization signal for p110\u03b2\n\nUsing this robust molecular genetic system, we attempted to address how spatial compartmentalization might contribute to the specificity of the activation of p110\u03b2 by GPCRs. To determine whether wt p110\u03b2 becomes differentially localized to membrane microdomains upon GPCR activation, we first analyzed triton sensitive and resistant membrane fractions in p110\u03b1-wt and p110\u03b2-wt DKO add-back MEFs. Our fractionation experiments demonstrated that p110\u03b2 resides in detergent resistant membranes in addition to soluble and detergent sensitive fractions where p110\u03b1 is primarily detected (Figure 2\u2014figure supplement 1A). A detergent-free fractionation based on density gradient centrifugation in HMECs confirmed the notion that there are distinct pools of p110\u03b2 localized to raft and nonraft membrane microdomains (Figure 2A). Of note, Rac1, which is known to interact with p110\u03b2 displayed a similar fractionation pattern. p110\u03b1 in comparison, can only be found in nonraft membranes. In addition to MEFs and HMECs; we analyzed HEK293, DU145, PC3, MCF7 and BT549 cancer cell lines by examination of triton sensitive and resistant membrane fractions and detected p110\u03b2 in raft as well as nonraft fractions (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig2-v1.jpg)\n\n**Figure 2.:** (A) Detergent-free fractionation of HMECs on an Opti-prep gradient followed by western blots with the indicated antibodies. TfnR (transferrin receptor); marker for nonraft membranes. Nup (nucleoporin); marker for nuclear membranes. Gq; marker for membrane rafts. (B) Graphical depiction of the functional domains of p110\u03b2 including the residues responsible for Rac1 and G\u03b2\u03b3\u00a0interaction. (C) Wt, DKO+p110\u03b2-wt, DKO+p110\u03b2-G\u03b2\u03b3\u00a0binding mutant (GBM) and DKO+p110\u03b2-Rac1 binding mutant (RBM) MEF samples were processed to determine levels of p110\u03b1 and p110\u03b2 expression. (D) The indicated cells were grown in 8% FBS-DMEM and cellular proliferation was assessed after a week. Error bars indicate standard deviation in 3 independent experiments. **p<0.01, n.s. (not significant), p>0.05. (E) The indicated MEFs were analyzed for migration across transwell inserts; cells were detected with crystal violet staining. On the right, MEFs were quantified for migration through the transwell in 3 independent experiments with standard deviation. *p<0.05, **p<0.01. (F) The indicated MEFs were starved and stimulated with serum or GPCR agonists LPA and S1P. p-Akt (for T308) displays level of Akt activation and p-Erk1/2 depicts activation of MAPK pathway. (G) Indicated cells were fractionated into soluble, triton sensitive and triton resistant fractions. Triton soluble and resistant (DRM) fractions were analyzed in immunoblots; anti-HA antibodies were used to visualize the abundance of the p110\u03b2 variants in those fractions. Anti-Rac1 antibody was used to demonstrate raft enrichment, whereas anti-TfnR immunoblot depicts enrichment of nonraft membranes. Anti-actin serves as loading control. (H) On the left, HMECs transfected with either control or Rac1 specific siRNAs were lysed and processed for western blot. On the right, siRNA treated cells were fractionated. WCL were analyzed to display overall levels of protein expression. Soluble, triton soluble (membrane) and triton resistant membrane fractions (DRM) were analyzed in immunoblots; Anti-Rac1 antibodies were used to assess level of Rac1 knock-down. Anti-EGFR antibodies were used as markers for DRM fractions, whereas anti-TfnR immunoblot depicts enrichment of nonraft membranes. Anti-tubulin immunoblot serves as a marker for soluble fractions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) DKO+p110\u03b1-wt and DKO+p110\u03b2-wt MEFs were lysed and fractionated into triton sensitive and triton resistant membrane fractions. Whole cell lysates (WCL) were analyzed to display overall levels of protein expression. Soluble, triton soluble (membrane) and triton resistant membrane fractions (DRM) were analyzed in immunoblots; anti-HA antibodies were used to visualize the abundance of the respective PI3K in fractions. Anti-Caveolin1 antibodies were used as markers for detergent resistant membranes (DRM), whereas anti-TfnR immunoblot depicts enrichment of nonraft membranes. Anti-tubulin immunoblot serves as a marker for soluble fractions. (B) HEK293, DU145, PC3, MCF7 and BT549 cells were lysed and fractionated into triton sensitive and triton resistant membrane fractions. Whole cell lysates (WCL) were analyzed to display overall levels of protein abundance. Soluble, triton sensitive (membrane) and resistant (DRM) membrane fractions were analyzed in immunoblots; anti-EGFR and anti-Rac1 immunoblots were used as markers for detergent resistant membrane (DRM) fractions, whereas anti-TfnR immunoblot depicts enrichment of nonraft plasma membranes. Anti-tubulin antibodies serve as a marker for soluble fractions. Anti-PTEN immunoblots depict PTEN status of the respective cell line.\n\nAs a canonical class IA PI3K isoform, p110\u03b2 functions as a GPCR effector and interacts with the G\u03b2\u03b3\u00a0component of the tripartite G-protein (Guillermet-Guibert et al., 2008; Dbouk et al., 2012). Physical association of p110\u03b2 with Rac1 is also required to potentiate signaling (Fritsch et al., 2013). To test whether Rac1 or G\u03b2\u03b3\u00a0may be responsible for localization of p110\u03b2 to membrane rafts, we introduced point mutations to p110\u03b2 that abolish its binding to Rac1 or G\u03b2\u03b3\u00a0(Fritsch et al., 2013; Dbouk et al., 2012) (Figure 2B). Next, we generated DKO add-back MEF lines that express p110\u03b2-wt, G\u03b2\u03b3\u00a0(GBM) or Rac1 (RBM) binding mutants as their only class IA PI3K isoform (Figure 2C). p110\u03b2-GBM or RBM DKO add-backs displayed retarded proliferation in comparison to either wt or p110\u03b2-wt DKO add-back MEFs (Figure 2D) and were largely deficient in migration through Transwell inserts towards chemoattractants (Figure 2E). Starvation and serum or GPCR agonist stimulation experiments demonstrated that although p110\u03b2 deficient in either G\u03b2\u03b3 or Rac1 binding, instigated Akt phosphorylation upon serum stimulation, both were significantly impaired in elevating p-Akt, in response to two GPCR agonists; lysophosphatidic acid (LPA) and sphingosine 1-phosphate (S1P) (Figure 2F). Interestingly, fractionation of raft versus nonraft membrane microdomains revealed that only p110\u03b2-GBM but not p110\u03b2-RBM localizes to rafts suggesting that Rac1 binding to p110\u03b2 might constitute a raft localization signal (Figure 2G). We next attempted to verify this in HMECs, where p110\u03b2 could readily be detected in triton resistant membrane fractions. We knocked-down Rac1 expression using Rac1 specific siRNAs and analyzed triton sensitive and resistant membrane microdomains. Downregulation of Rac1 led to a displacement of p110\u03b2 from membrane rafts whereas raft and nonraft membrane marker distributions were unchanged (Figure 2H).\n\nTo determine whether raft targeting could compensate for G\u03b2\u03b3 or Rac1 binding deficiencies in p110\u03b2, we constructed raft and nonraft-targeted p110\u03b2 vectors using protein lipidation sequences derived from the Lyn tyrosine kinase and Kras respectively (Gao and Zhang, 2008) (Figure 3A) and generated p110\u03b2-Lyn and p110\u03b2-Ras DKO add-back MEFs. Analysis of homogenized samples fractionated via density gradient centrifugation confirmed enriched localization of p110\u03b2-Lyn to rafts and p110\u03b2-Ras to nonraft membrane microdomains (Figure 3B). Elution of triton sensitive and triton resistant membrane fractions further demonstrated enrichment of the targeting plasmids at the desired microdomains (Figure 3C). p110\u03b2-Ras DKO add-back MEFs displayed a blunted response in Akt phosphorylation upon serum starvation and LPA stimulation whereas both p110\u03b2-wt and p110\u03b2-Lyn DKO add-backs had significant levels of p-Akt upon LPA stimulation (Figure 3D). Similarly, an increase in membrane-associated p-Akt was observed, when p110\u03b2-Lyn but not p110\u03b2-Ras DKO add-back MEFs were stimulated with LPA (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic demonstration of p110\u03b2 membrane microdomain targeting vectors. (B) Detergent-free fractionation of DKO+p110\u03b2-Lyn and DKO+p110\u03b2-Ras MEFs on an Opti-prep gradient followed by western blots with the indicated antibodies. TfnR; a marker for nonraft plasma membrane. Nup; a marker for nuclear membranes. Gq; a marker for membrane rafts. (C) The indicated MEFs were lysed and fractionated. WCL were analyzed to display overall levels of protein expression. Soluble, triton soluble (membrane) and resistant membrane fractions (DRM) were analyzed in immunoblots; anti-Caveolin1 antibodies were used as marker for DRM fractions. Anti-tubulin immunoblot serves as a marker for soluble fractions. (D) The indicated add-back MEFs were starved and stimulated with LPA. Anti-HA immunoblot demonstrates levels of exogenous p110\u03b2 expression whereas anti-p-Akt antibodies (for T308 and S473) mark the activation state of Akt. Anti-actin antibodies were used as loading control. On the right, normalized anti-p-Akt T308 and S473 band intensity quantifications of the samples (mean of 3 independent experiments with standard deviation). Density ratio is the fold change between normalized band intensities of p-Akt signals in LPA stimulated over starved samples. **p<0.01, n.s. p>0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Indicated DKO add-back MEFs were seeded on coverslips, starved and stimulated with LPA; membrane associated Akt phosphorylation at T308 and S473 was detected using anti-p-Akt T308 and p-Akt S473 antibodies (green). Anti-HA antibodies (red) depicted expression levels of the add-back vectors. DNA is shown in blue. Scale bar; 20 \u00b5m. On the right, anti-p-Akt T308 and S473 signals on the cell membrane was quantified upon LPA stimulation and the relative corrected total membrane fluorescence was depicted. Results denote mean of 3 independent experiments with standard deviation. *p<0.05, **p<0.01.\n\nAfter confirming the involvement of raft-localized p110\u03b2 in GPCR mediated activation of Akt, we added Lyn-domain to all versions of p110\u03b2 (Figure 4A) and generated p110\u03b2-Lyn, p110\u03b2-Lyn GBM or p110\u03b2-Lyn RBM DKO add-back MEF lines (Figure 4B, left). As expected, add-back of p110\u03b2-wt enriched at rafts (Figure 4B, right) induced p-Akt in response to serum or LPA stimulation (Figure 4C, left). Interestingly, raft targeting restored p-Akt in p110\u03b2-Lyn RBM, but not in p110\u03b2-Lyn GBM DKO add-back MEFs upon LPA stimulation (Figure 4C, right). Taken together, these results strongly suggest that p110\u03b2-Rac1 association regulates raft recruitment of p110\u03b2, and imply that the G\u03b2\u03b3 interaction with p110\u03b2 might be independently required for its activation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic demonstration of p110\u03b2-Lyn domain membrane targeting vectors. (B) Lysates from the indicated MEFs were processed and analyzed for expression of p110\u03b1 and \u03b2. On the right, DKO MEFs expressing the indicated p110\u03b2 alleles were fractionated into soluble, triton sensitive and triton resistant fractions. Triton resistant fractions were analyzed in immunoblots; anti-HA antibodies were used to visualize the abundance of the p110\u03b2 variants in those fractions. Anti-Rac1 antibody was used to demonstrate raft enrichment, whereas anti-TfnR immunoblot depicts contamination with nonraft membranes. Anti-actin immunoblot serves as loading control. (C) The indicated add-back MEFs were starved and stimulated with serum or LPA. Anti-p-Akt immunoblots on T308 and S473 display level of Akt activation and anti-p-Erk1/2 antibodies (for T202/Y204) depicts activation of MAPK pathway. On the right, density ratios of the normalized fold-increase in baseline Akt phosphorylation at T308 and S473 in starved vs. LPA stimulated states were quantified (mean of 3 independent experiments with standard deviation). **p<0.01. (D) The indicated MEFs were starved and stimulated with either serum or LPA in the presence of M\u03b2CD with or without addition of excess cholesterol. Anti-p-Akt immunoblots on T308 and S473 displays level of Akt activation and anti-p-Erk1/2 antibodies (for T202/Y204) depict activation of MAPK pathway (E) DKO+p110\u03b2-Ras add-back MEFs were starved and stimulated with serum, PDGF or LPA in the presence or absence of M\u03b2CD. Anti-p-Akt (for T308) and anti-p-Erk1/2 (for T202/Y204) immunoblots reveal degree of PI3K and MAPK activation respectively.\n\nWhile p110\u03b2-Lyn is enriched in rafts, it is still moderately localized in nonraft regions, possibly through p85 SH2/SH3 domain-mediated molecular interactions. Therefore we tested whether raft localization is critical for compensating Rac1-binding deficiency in p110\u03b2-Lyn RBM. To this end, we selectively disrupted the formation of membrane rafts with the cholesterol-depleting agent, methyl-\u03b2-cyclodextrin (M\u03b2CD) in starvation-LPA stimulation experiments. Both p110\u03b2-Lyn and p110\u03b2-Lyn RBM failed to induce p-Akt when rafts were disrupted by M\u03b2CD, a defect which was rescued upon addition of excess cholesterol to the cells (Figure 4D). Moreover, the raft-excluded p110\u03b2-Ras allele was relatively insensitive to cholesterol depletion upon stimulation with either serum or PDGF, and promoted Akt phosphorylation in the presence of M\u03b2CD (Figure 4E). Notably LPA stimulation failed to induce p-Akt in either condition, presumably because p110\u03b2-Ras is excluded from rafts.\n\n### G\u03b2\u03b3 interaction is critical for p110\u03b2 activation downstream of GPCRs\n\nTo identify the phenotypic consequences of raft-targeted, G\u03b2\u03b3 or Rac1 binding deficient p110\u03b2 expression, we first determined the growth rate of our p110\u03b2 DKO add-back MEF lines under limiting amounts of mitogenic stimuli. Deficiency in G\u03b2\u03b3 binding, significantly reduced rates of proliferation while p110\u03b2-Lyn RBM supported growth comparable to p110\u03b2-Lyn (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig5-v1.jpg)\n\n**Figure 5.:** (A) Wt and the indicated DKO add-back MEFs were analyzed for cellular proliferation in crystal violet assays (mean of 3 independent experiments with standard deviation). **p<0.01. (B) Wound healing assays were performed on the indicated MEFs. Images of the cells were captured at the indicated time points; dashed lines represent leading edge of the cells moving into the inflicted wound. (C) Graph depicts the mean percentage of wound healing at the end of 12 hr for cells indicated in (B); in 3 independent experiments with standard deviation. **p<0.01. (D) DKO+p110\u03b2-Lyn, DKO+p110\u03b2-Lyn GBM and DKO+p110\u03b2-Lyn RBM add-back MEFs were analyzed for migration across transwell inserts; cells were detected with crystal violet staining. (E) Cells in (D) were quantified for migration through the transwell in 3 independent experiments, mean absorbance (at 595\u00a0nm) with standard deviation is depicted. ***p<0.001.\n\nNext, we investigated the function of raft-targeted p110\u03b2 in cellular migration, which is known to be regulated by GPCR and Rac1 dependent signaling (Dorsam and Gutkind, 2007; Bid et al., 2013). Specifically we analyzed the efficiency of our DKO add-back MEFs in wound healing assays. Wound closure was monitored up to 12\u2009hr upon scratching. p110\u03b2-Lyn RBM DKO add-back MEFs migrate more efficiently into the wound than p110\u03b2-Lyn GBM DKO add-back cells (Figure 5B,C). This observation is consistent with a distinct activating role of G\u03b2\u03b3 on p110\u03b2, which cannot be compensated by relocalization of the molecule to rafts. Transwell migration assays using the same add-back lines reinforced the notion that selective raft targeting is compensatory for p110\u03b2-RBM whereas p110\u03b2-Lyn GBM DKO add-backs are defective in migration (Figure 5D,E). Taken together, this data is again consistent with the idea that the primary function of p110\u03b2-Rac1 binding lies in the placement of p110\u03b2 in membrane rafts and thus creating a GPCR signaling competent PI3K module.\n\n### Raft Targeted p110\u03b1 facilitates GPCR Signaling and has redundant functions with p110\u03b2\n\nTo test our hypothesis that Rac1 binding localized p110\u03b2 to GPCR rich membrane microdomains where it could be further activated by a second signal, we attempted to see if we could render p110\u03b1, which is not normally GPCR responsive, sensitive to GPCR signaling by changing its membrane localization. To this end, we generated vectors that selectively target wt p110\u03b1 to subdomains of the plasma membrane. Following our previous work, p110\u03b1 was targeted to membrane rafts by using the Lyn-derived targeting motif and to nonraft membranes by the motif derived from Kras (Figure 6A). Analysis of homogenized samples fractionated via density gradient centrifugation confirmed enriched localization of p110\u03b1-Lyn to rafts, whereas p110\u03b1-Ras was more prominently localized to nonraft regions of the plasma membrane (Figure 6B). Elution of triton sensitive and triton resistant membrane fractions further demonstrated enrichment of the targeting plasmids at the desired microdomains (Figure 6\u2014figure supplement 1A). Surprisingly, use of LPA led to a significant phosphorylation of Akt in cells expressing raft-targeted p110\u03b1-Lyn in a manner comparable to that seen in p110\u03b2-wt DKO add-back MEFs (Figure 6C). Activation of Akt was observed to a much lesser extent in cells expressing the nonraft membrane targeting p110\u03b1-Ras allele. Similarly, an increase in membrane-associated p-Akt was observed, when p110\u03b1-Lyn but not p110\u03b1-Ras DKO add-back MEFs were stimulated with LPA (Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic demonstration of p110\u03b1 membrane microdomain targeting vectors. (B) Detergent-free fractionation of DKO+p110\u03b1-Lyn and DKO+p110\u03b1-Ras MEFs on an Opti-prep gradient followed by western blots with the indicated antibodies. TfnR; a marker for nonraft plasma membrane. Nup; a marker for nuclear membranes. Gq; a marker for membrane rafts. (C) The indicated add-back MEFs were starved and stimulated with LPA. Anti-p-Akt antibodies (for T308 and S473) mark the activation state of Akt. Anti-Akt and anti-actin immunoblots were used as loading controls. On the right, normalized density ratios of the mean fold-increase in baseline Akt phosphorylation at T308 and S473 in starved vs. LPA stimulated states. Graphs denote mean of 3 independent experiments with standard deviation. **p<0.01. (D) DKO+p110\u03b1-Lyn and DKO+p110\u03b2-wt MEFs were starved and stimulated with LPA in the presence of small molecule inhibitors targeting G\u03b2\u03b3, EGFR or PDGFR. Anti-p-EGFR (for Y1068), anti-p-Akt (for T308) and anti-p-S6 (for S235/236) immunoblots depict activation of EGFR, Akt and downstream signaling. Gal denotes gallein, a G\u03b2\u03b3 inhibitor; lap depicts lapatinib, an EGFR inhibitor and cren denotes crenolanib, a PDGFR inhibitor. (E) The indicated MEFs were treated with 0, 0.1, 1, 2.5, 10, 40 or 100 \u03bcM of lapatinib or gallein in proliferation assays. Cellular growth was assessed after five days in 2% FBS-DMEM. Error bars denote standard deviation in 3 independent experiments.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) DKO+p110\u03b1-Lyn and DKO+p110\u03b1-Ras MEFs were lysed and fractionated into triton sensitive and triton resistant membrane fractions. WCLs were analyzed to display overall levels of protein expression. Soluble, triton soluble (membrane) and resistant membrane fractions (DRM) were analyzed in immunoblots; anti-Rac1 and anti-Caveolin1 antibodies were used as markers for detergent resistant membrane (DRM) rafts, whereas anti-TfnR immunoblot depicts enrichment of nonraft membranes. Anti-tubulin immunoblot serves as a marker for soluble fractions. (B) The indicated DKO add-back MEFs were seeded on coverslips, starved and stimulated with LPA; membrane associated Akt phosphorylation at T308 and S473 was detected using anti-p-Akt T308 and p-Akt S473 antibodies (green). Anti-HA antibodies (red) depicted expression levels of the add-back vectors. DNA is shown in blue. Scale bar; 20 \u00b5m. On the right, anti-p-Akt T308 and S473 signals on the cell membrane was quantified upon LPA stimulation and the relative corrected total membrane fluorescence was depicted. Results denote mean of 3 independent experiments with standard deviation. **p<0.01.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) PC3 cells were transduced with PLKO tet.on shGFP and shp110\u03b2 plasmids and samples were collected 48\u2009hr after dox induction. p110\u03b2, p-Akt (for T308) and p-S6 (for S235/236) levels were determined in an immunoblot with the indicated antibodies. (B) PC3 cells transduced with PLKO tet.on shp110\u03b2 vector were used in exogenous overexpression studies of p110\u03b1 membrane targeting constructs in the presence or absence of dox. Anti-p-Akt immunoblots (for T308 and S473) depict activation of Akt, whereas anti-p-S6 antibodies (for S235/236 and S240/244) demonstrate level of downstream PI3K activation. Anti-p110\u03b2 and anti-HA immunoblots determine levels of p110\u03b2 and exogenously expressed p110\u03b1 respectively. Akt, S6 and actin immunoblots were used as loading controls.\n\nWe also examined p110 isoform localization in the PTEN null PC3 prostate cancer cell line that is dependent on p110\u03b2 function for Akt activation and growth (Ni et al., 2012; Hill et al., 2010). In these cells, we knocked down p110\u03b2 expression using p110\u03b2-specific shRNAs. Downregulation of p110\u03b2 reduced p-Akt and p-S6 levels (Figure 6\u2014figure supplement 2A). We then tested if expression of membrane targeting p110\u03b1 alleles could restore Akt activation and downstream S6 phosphorylation. p110\u03b1-Lyn but not p110\u03b1-Ras expression compensated for p110\u03b2 loss and restored p-Akt and p-S6 in p110\u03b2 knockdown cells (Figure 6\u2014figure supplement 2B, compare lanes 7 with 8), suggesting that raft-targeted p110\u03b1 might have redundant functions with wt p110\u03b2.\n\n### EGFR activity is critical for signaling mediated by raft targeted-p110\u03b1\n\nBecause raft localization of p110\u03b1 is sufficient for activation of Akt in LPA signaling, we next focused on the mechanism by which p110\u03b1 is activated downstream of GPCRs. Previous reports suggest that GPCR activation can also trigger widespread downstream signaling via modulation of various growth factor receptor pathways (Hsieh and Conti, 2005). For instance, LPA stimulation promotes metalloprotease-mediated transactivation of EGFR, and EGFR activity itself is responsible for major growth-promoting effects of GPCR signaling (Prenzel et al., 1999). Since p110\u03b1 has no G\u03b2\u03b3 or Rac1 binding site, we hypothesized that GPCR mediated EGFR activity might be critical for raft-localized p110\u03b1 to modulate Akt function in LPA signaling. To test this idea, we selectively inhibited G\u03b2\u03b3, EGFR or PDGFR with gallein, lapatinib and crenolanib respectively, in serum starved and LPA stimulated p110\u03b1-Lyn or p110\u03b2-wt DKO add-back MEFs. EGFR activation as well as Akt and the downstream S6 phosphorylations were observed for both MEF lines upon stimulation with LPA (Figure 6D). In support of our hypothesis, EGFR but not G\u03b2\u03b3 or PDGFR inhibition reduced p-Akt/S6 in p110\u03b1-Lyn DKO add-back MEFs (Figure 6D, compare lanes 3, 4 and 5). In contrast, G\u03b2\u03b3 activity was critical for p110\u03b2-wt mediated GPCR signaling while EGFR inhibition had only a modest effect (Figure 6D, compare lanes 8 and 9). Consistent with these results, p110\u03b1-Lyn DKO add-back MEFs were more resistant to gallein in cellular proliferation assays (Figure 6E, left), whereas p110\u03b2-wt DKO add-backs were refractory to EGFR inhibition by lapatinib (Figure 6E, right). These results suggest that the EGFR activation by LPA stimulated GPCRs is required for raft-localized p110\u03b1 to promote Akt phosphorylation and activation; whereas the canonical G\u03b2\u03b3 pathway was essential for p110\u03b2-mediated GPCR signaling.\n\n### Raft dependent PI3K function is essential for PTEN null cancer cells\n\nOur results thus far suggest that raft integrity might play a more significant role for p110\u03b2 dependent signaling. We and others have demonstrated that tumors deficient of phosphatase and tensin homolog (PTEN) are often dependent on the p110\u03b2 isoform. Therefore we employed PTEN intact and PTEN null cancer cell line pairs and attempted to disrupt rafts by inhibiting cholesterol function. First, we treated PTEN positive DU145 and PTEN null PC3 prostate cancer cells with increasing doses of the cholesterol-depleting agent M\u03b2CD. PC3 cells were significantly more sensitive to M\u03b2CD treatment than DU145 cells (Figure 7\u2014figure supplement 1A,B). Next we used PTEN wt MCF7 and PTEN null BT549 breast cancer cells to further test our hypothesis. Along the same line, BT549 breast cancer cells were more susceptible to M\u03b2CD than MCF7 cells (Figure 7\u2014figure supplement 1C,D). As an independent approach, we utilized simvastatin, an FDA-approved inhibitor of the enzyme HMG-CoA reductase, which catalyzes the rate-limiting step (HMG-CoA to mavelonic acid) in cholesterol biogenesis in order to lower cholesterol levels. Once again, PC3 cells were considerably more sensitive to inhibition of cholesterol synthesis than DU145 cells. A simvastatin concentration of 1\u00a0\u03bcM was sufficient to potently inhibit proliferation of PC3 cells, which did not impede growth of DU145 cells (Figure 7A,B). Next we treated PTEN wt MCF7 and PTEN null BT549 cells with simvastatin. Treatment of BT549 cells with simvastatin led to a significant impediment of proliferation at 1\u20132\u2009\u03bcM concentrations, which was not growth inhibitory for MCF7 cells (Figure 7C,D). Another PTEN wt breast cancer cell line, T47D was similarly refractory to growth inhibitory effects of simvastatin (Figure 7\u2014figure supplement 1E,F). These results suggest that PTEN null\n\n![Figure 7.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig7-v1.jpg)\n\n**Figure 7.:** (A) DU145 and PC3 prostate cancer cell lines were seeded on 12-well plates and were treated with indicated doses of simvastatin for a week. Crystal violet assays determined the extent of cell growth. (B) Quantification of cellular proliferation assays in (A), graph displays mean of 3 independent experiments with standard deviation. **p<0.01, ***p<0.001. (C) MCF7 and BT549 breast cancer cell lines were seeded on 12-well plates and were treated with indicated doses of simvastatin for a week. Crystal violet assays determined the extent of cellular growth. (D) Quantification of cellular proliferation assays in (C), graph depicts mean of 3 independent experiments with standard deviation. *p<0.05, **p<0.01, ***p<0.001. (E) PC3 cells expressing empty control plasmid, p110\u03b1-H1047R and p110\u03b1-E545K vectors processed for western blot analysis with the indicated antibodies. (F) Indicated cells were treated with increasing doses of simvastatin for a week. Crystal violet assays determined the extent of cellular growth. (G) Quantification of cellular proliferation assays in (F), graph depicts mean of 3 independent experiments with standard deviation. *p<0.05, **p<0.01, n.s. p>0.05. (H) Biochemical analysis of PC3 cells in (E) treated with 2 \u03bcM simvastatin for 36 hr. Anti-p-Akt immunoblots on T308 and S473 display level of Akt activation. Anti-Akt and anti-actin antibodies were used as loading control. (I) Model representing PI3K signaling downstream of GPCRs in a two-step process. Rac1 mediates raft recruitment of p110\u03b2 while p110\u03b1 is elusive from rafts under physiological conditions. Once localized to GPCR signaling permissive membrane microdomains, either p110\u03b1 or p110\u03b2 can be activated via distinct mechanisms; p110\u03b1 activity can be triggered via lateral activation of EGFR by GPCRs, whereas p110\u03b2 can be activated via the canonical G\u03b2\u03b3 pathway.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) DU145 and PC3 prostate cancer cells were seeded on 12-well plates and treated with indicated doses of M\u03b2CD for seven days. Crystal violet assays determined the extent of cell growth. (B) Quantification of cellular proliferation assays in (A), graph displays mean of 3 independent experiments with standard deviation. **p<0.01. (C) MCF7 and PC3 breast cancer cells were seeded on 12-well plates and treated with indicated doses of M\u03b2CD for seven days. Crystal violet assays determined the extent of cell growth. (D) Quantification of cellular proliferation assays in (C), graph displays mean of 3 independent experiments with standard deviation. **p<0.01. (E) T47D breast cancer cells were seeded on 12-well plates and were treated with indicated doses of simvastatin for seven days. Crystal violet assays determined the extent of cell growth. (F) Quantification of cellular proliferation assays in (E), graph displays mean of 3 independent experiments with standard deviation.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17635/elife-17635-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) PC3 cells expressing empty control plasmid, PTEN wt and PTEN C124S were processed for western blot analysis with the indicated antibodies. (B) PC3 cells in (A) were seeded on 12-well plates and treated with indicated doses of simvastatin for seven days. Crystal violet assays determined the extent of cell growth. (C) Quantification of cellular proliferation assays in (B), graph displays mean of 3 independent experiments with standard deviation. **p<0.01. (D) BT549 cells expressing empty control plasmid, PTEN wt and PTEN C124S were processed for western blot analysis with the indicated antibodies. (E) BT549 cells in (D) were seeded on 12-well plates and treated with indicated doses of simvastatin for seven days. Crystal violet assays determined the extent of cell growth. (F) Quantification of cellular proliferation assays in (E), graph displays mean of 3 independent experiments with standard deviation. **p<0.01.\n\ncancers might be more sensitive to inhibition of raft function which in turn negatively influences p110\u03b2 dependent PI3K signaling. In an attempt to restore PI3K pathway activation, we expressed constitutively active, oncogenic mutants of p110\u03b1, H1047R and E545K in PC3 cells. Notably this lead to an activation of Akt as anticipated (Figure 7E). Next, we treated these cells with the cholesterol-lowering agent, simvastatin. Although control PC3 cells were quite susceptible to simvastatin treatment, PC3-p110\u03b1 H1047R or E545K expressing cells proliferated more robustly in the presence of previously deleterious doses of the inhibitor (Figure 7E and F). A biochemical analysis of these cells showed that Akt activation was repressed in PC3 cells treated with simvastatin and this repression was relieved by p110\u03b1-H1047R or E545K expression (Figure 7G). These results suggest that raft specific inhibition of PI3K function in PC3 cells can be partially alleviated by expression of constitutively active oncogenic alleles of p110\u03b1, which presumably utilize raft independent modes of activation. As a complementary approach, we re-expressed either a wt or a catalytically dead version of human Pten (Pten C124S) in PC3 and BT549 cells. Restoration of wt Pten lead to a reduction in Akt activation as judged by levels of pAkt (Figure 7\u2014figure supplement 2A and D). Interestingly, Pten expressing PC3 and BT549 cells became more resistant to increasing concentrations of simvastatin, while cells expressing Pten C124S were almost as sensitive to simvastatin as the parental cell lines (Figure 7\u2014figure supplement 2B,C,E and F, E and F). These results are in support of the notion that loss of Pten in certain cancers might lead to a dependence on raft mediated PI3K signaling.\n\n## Discussion\n\nSignal transduction via the PI3K pathway requires a sequence of highly orchestrated molecular events transpiring at the plasma membrane. Nevertheless, it is still unclear how local signaling is modulated and how membrane microdomain architecture might influence the signal output. We have used a molecular genetic system that allowed us to express specific membrane-targeted isoforms of either p110\u03b1 or p110\u03b2 in an isogenic p110\u03b1/p110\u03b2 DKO background. This genetic system enabled functional comparisons between wild type and membrane-targeted alleles of class IA PI3Ks. Interestingly for p110\u03b2, raft targeting alleviates the requirement for Rac1 binding. However, G\u03b2\u03b3 association is unable to be rescued by raft targeting. These results indicate that Rac1-p110\u03b2 interaction may be necessary for localization of p110\u03b2 to GPCR signaling permissive membrane microdomains, whereas its association with G\u03b2\u03b3 remains crucial for the activation of its lipid kinase activity upon ligand binding to GPCRs. Interestingly, even p110\u03b1, which is usually unresponsive to GPCR activation, becomes responsive if properly localized. Finally, our data has implications concerning the optimal methods for inhibiting Akt activation in PTEN null cancers (Figure 7H).\n\nOur DKO add-back MEF lines were extremely well behaved when tested by the guidance of existing literature: e.g. they were responsive to the relevant PI3K class IA isoform-specific small molecule inhibitors for both signaling and growth. Our efforts in enriching p110\u03b1 and p110\u03b2 in membrane rafts and nonraft regions using targeting sequences derived from the Lyn kinase and Kras were also clearly successful as judged by several means of membrane fractionation. Minimal off-target localization with these p110 constructs might be attributed to the indirect interactions of p85 mediated via its SH2 and/or SH3 domains.\n\nThe resulting targeting constructs were utilized to study the role(s) of microdomain compartmentalization in growth factor signaling. Serum starvation and stimulation experiments revealed that GPCR activation could be communicated to Akt when either p110\u03b1 or p110\u03b2 was adequately localized in membrane rafts. One fundamental difference between these PI3Ks however, is in their intrinsic membrane binding properties. p110\u03b2, by virtue of its association with Rac1, is naturally localized to membrane rafts. On the other hand, p110\u03b1 does not reside in rafts under physiological conditions. However, when it is artificially targeted to the rafts, p110\u03b1 is capable of functioning downstream of GPCRs. Moreover, raft-targeted p110\u03b1 acts in a redundant manner with p110\u03b2 in PTEN null PC3 cells.\n\nWhile membrane raft localization is essential for p110 activation by GPCRs, whether it occurs via Rac binding for p110\u03b2 in the physiological case or via a Lyn-tag for p110\u03b1, the second step in p110 activation by GPCRs can be more varied. In the physiological case p110\u03b2 is activated via its interaction with G\u03b2\u03b3. However, we found that EGFR activity is essential for raft-localized p110\u03b1 mediated Akt phosphorylation. EGFR is enriched in raft fractions, and its activity has been intimately linked to GPCR signaling. LPA stimulation, for instance, was reported to induce EGFR phosphorylation and transactivation (Daub et al., 1997). Membrane bound metalloproteases and non-receptor tyrosine kinases like Src and Pyk2 are implicated in this regulation (Prenzel et al., 1999; Andreev et al., 2001). Our results suggest that LPA stimulated-EGFR could contribute to activation of raft-localized p110\u03b1, whereas the canonical G\u03b2\u03b3\u00a0association is the prominent form of activation for p110\u03b2. However, we cannot rule out a modest contribution of EGFR in raft-localized p110\u03b2 activation, as we detected residual activation of Akt in cells expressing raft-targeted, G\u03b2\u03b3 binding deficient p110\u03b2 upon LPA treatment. Notably p110\u03b2 may also be dependent on Rac mediated raft localization for its activation in the non-physiological conditions of PTEN loss. However, in the case of p110\u03b2 activation in response to PTEN loss yet another mechanism may be involved as the second step in p110\u03b2 activation- further experimentation will be required to test this point.\n\nOur findings confirm the existing literature that both Rac1 and G\u03b2\u03b3 binding are instrumental for p110 function downstream of GPCRs (Fritsch et al., 2013; Dbouk et al., 2012) and allow us to place them in a two-step model for p110 activation. Raft targeting of mutant versions of p110 enabled us to infer that Rac1 binding, at least in a PTEN wild-type setting, is crucial for localization of p110\u03b2 into signaling permissive membrane microdomains. G\u03b2\u03b3 interaction on the other hand, provides the basis for p110\u03b2 activation upon ligand-induced stimulation of GPCRs. We further verified the involvement of raft microdomains in LPA mediated GPCR signaling via cholesterol deprivation experiments. Cholesterol depletion specifically inhibited activating Akt phosphorylations whereas Erk phosphorylation was largely unaffected. These results indicate that activation of the MAPK signaling cascade by GPCRs is not crucially dependent on raft integrity, reinforcing the notion that critical role of membrane compartmentalization may be unique to PI3K/Akt signaling.\n\nThe higher abundance of PTEN in nonraft membrane regions seen here and in earlier work (Gao et al., 2011) might be an important determinant in localizing signaling as it may prevent unnecessary propagation of signaling cascades initiated in rafts to nonraft regions. Thus the reported selective localization of PTEN in nonraft domains suggests that it might exert relatively little control on raft recruitment of p110\u03b2 and activation of Akt, while preventing the resulting signals from propagating outside raft domains. The elevated signaling potency observed when either p110\u03b1 or \u03b2 is targeted to rafts could be explained by a regional lack of PTEN dependent negative regulation. In tumor cells lacking PTEN, such p110\u03b2 dependent signaling could spread to larger portions of the cells greatly strengthening PI3K signaling. However the fact that p110\u03b2 signaling in PTEN null cells is still dependent on raft integrity suggests that the second, Rac-independent 'G\u03b2\u03b3 like' signal activating p110\u03b2 is likely to initiate in rafts in the absence of PTEN. We do not feel that this second signal is G\u03b2\u03b3 itself in most PTEN null cells as Akt activation is often not blocked by GPCR antagonists.\n\nNotably we have found that knock down of PTEN in our MEFs does not render their growth dependent on p110\u03b2 or sensitive to raft disruption suggesting that while PTEN loss may be necessary for p110\u03b2 activation (in rafts as demonstrated by the data in Figure 7) it is not sufficient. Similarly the Vanhaesebroeck group has found that not all tumors arising in mice with global knockout of a single PTEN allele are dependent on p110\u03b2 (Berenjeno et al., 2012). Thus additional parameters seem to be involved in optimal activation of p110\u03b2 in a PTEN null setting.\n\nUse of simvastatin, an FDA approved cholesterol lowering drug, hampered proliferation of PTEN null cancer cells which might pinpoint a plausible 'addiction' of these cancer cells to raft mediated PI3K function. Based on these findings, a combinatorial treatment regimen employing PI3K inhibitors and cholesterol lowering statins might have the potential to treat a broad range of cancers with minimal undesirable side effects.\n\nIn summary, our findings establish a novel distinction between p110\u03b1 and p110\u03b2, and offer new insight into the mechanistic basis of p110 activation by GPCR signaling. Here, we propose that recruitment and activation constitute two distinct steps in PI3K/Akt signaling downstream of GPCRs (Figure 7H). Once properly placed, either p110\u03b1 or \u03b2 molecules can be activated via alternative GPCR signaling cascades owing to the versatility of signaling components activated by a liganded GPCR. Our data warrant further work on the role of membrane partitioning in regulation of the PI3K/Akt pathway and offer novel therapeutic aspects concerning treatment of PTEN null cancers.\n\n## Materials and methods\n\n### Vector construction and shRNA sequences\n\nLyn and Kras tagged constructs (Gao and Zhang, 2008) were generated by in frame fusion of the N-terminal part of the Lyn kinase (GCIKKSKRKDKD, for myristoylation and palmitoylation) at the 5\u2019 end or the C-terminal part of Kras (KKKKKSKTKCVIM, CAAX motif for prenylation) at the 3\u2019end of a pBABE p110\u03b1 or p110\u03b2 vector with an N-terminal HA-tag respectively. p110\u03b2 G\u03b2\u03b3 (K532D/K533D) and Rac1 (S211D/K230A) binding mutants were generated using QuikChange site-directed mutagenesis kit (Agilent, Santa Clara, California) and sequence verified. The sequence of the shRNA targeting human p110\u03b2 transcripts is as follows; CATTCAGCTGAACAGTAGCAA. shGFP sequence is GCAAGCTGACCCTGAAGTTCAT. pBabeL-Pten wt and pBabeL-Pten C124S plasmids were kind gifts from William Sellers (Addgene plasmids #10785 and #10931).\n\n### Generation of immortalized mouse embryonic fibroblasts (MEFs), cell culture and generation of stable cell lines\n\nHEK293, p110\u03b1flox/flox; p110\u03b2flox/flox MEFs and their derivatives were grown at 37\u00b0C in 5% CO2 in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM, including 4.5\u2009g/L D-glucose, L-glutamine and 110 mg/L sodium pyruvate) supplemented with 8% fetal bovine serum (FBS, Gemini-Bio, West Sacramento, California) and penicillin, streptomycin (100 IU/ml and 100 \u00b5g/ml respectively, Gibco). Human mammary epithelial cells (HMECs) were generated and cultured as described (Zhao et al., 2005). DU145, PC3, MCF7 and BT549 cells were acquired from ATCC and were not further authenticated. They were cultured in RPMI medium (Gibco,\u00a0Waltham,\u00a0Massachusetts) supplemented with 8% FBS under standard conditions. All cell lines used were negative for mycoplasma contamination.\n\np110\u03b1flox/flox; p110\u03b2flox/floxMEFs were prepared from embryos at embryonic day 13.5 post-fertilization. These primary MEFs were immortalized using the standard 3T3 protocol (Meek et al., 1977). Floxed MEFs were treated with AdCre (Iowa Viral Vector Core, Iowa City, Iowa) to generate knock-out cells or with AdLacZ for control. Add-back MEF lines were generated by introducing the construct of interest into the cells first and then treating them with two rounds AdCre infection. For RNAi experiments, PC3 cells were treated with 1 \u00b5g/ml of doxycycline for 48\u2009hr.\n\nControl siRNAs (AM4629) and siRNAs targeting human Rac1 (ID 164723) were ordered from Thermo Fisher\u00a0(Waltham,\u00a0Massachusetts, transfected into HMECs at 50 nM concentration using lipofectamine 2000 (Invitrogen,\u00a0Waltham,\u00a0Massachusetts) according to the manufacturer\u2019s instructions. 48\u201372\u2009hr post transfection; cells were harvested and subjected to immunoblot or fractionation assays.\n\nAmphotropic retroviruses were produced by transfection of HEK293 cells with packaging plasmids encoding Vsv-g, gag-pol and a retroviral vector encoding the gene of interest using lipofectamine 2000 (Invitrogen) according to the manufacturer\u2019s instructions. For production of amphotropic lentiviruses, same cells were transfected with Vsv-g, Delta 8.9 and pLKO.tet on vector encoding an shRNA sequence of interest under standard instructions. Culture supernatants containing retro or lentivirus were collected twice at 48\u2009hr and 72\u2009hr posttransfection, pooled together, sterile filtered (Thermo Scientific) and then used immediately.\n\n### Growth factor stimulation and drug treatment\n\nCells were starved for 4\u2009hr and stimulated with insulin (2 \u00b5g/ml), EGF (20 ng/ml), LPA (20 \u00b5M, all Sigma), PDGF (20 ng/ml), FGF (10 ng/ml, both Miltenyi Biotech,\u00a0Germany), or 5% FBS for 5\u2009min. Cells were washed with and scraped into ice-cold PBS and then lysed in RIPA buffer (Westnet,\u00a0Canton,\u00a0Massachusetts) containing protease and phosphatase inhibitor cocktails (both Roche Diagnostics,\u00a0Indianapolis,\u00a0Indiana), 1\u2009mM sodium orthovanadate (Cell Signaling,\u00a0Danvers,\u00a0Massachusetts) and 1\u2009mM dithiothrietol (DTT, Bio-Rad,\u00a0Hercules,\u00a0California). p110\u03b1 specific-inhibitor BYL-719 (1 \u00b5M), p110\u03b2 specific-inhibitor TGX-221 (2 \u00b5M), pan-PI3K inhibitor GDC-0941 (1 \u00b5M), pan-Akt inhibitor MK-2206 (1 \u00b5M, all Selleck Chem,\u00a0Houston,\u00a0Texas) were used in proliferation experiments. In growth factor stimulation experiments BYL-719, TGX-221, G\u03b2\u03b3\u00a0inhibitor Gallein (5 \u00b5M, Santa Cruz,\u00a0Dallas,\u00a0Texas), EGFR inhibitor Lapatinib (5 \u00b5M), PDGFR inhibitor Crenolanib (0.2 \u00b5M, both Selleck), M\u03b2CD (5\u2009mM) and water soluble cholesterol (2\u2009mM, both Sigma,\u00a0St.\u00a0Louis,\u00a0Missouri) were added to serum starved cells 30\u2009min before stimulation.\n\n### Antibodies and western blotting\n\n10\u201320 \u00b5g of total protein was separated with 7.5\u201312% SDS-PAGE and transferred to nitrocellulose membranes (Bio-Rad). The membranes were blocked with 5% non-fat milk (LabScientific, Highlands, New Jersey) in TBS for 30 min and then incubated with primary antibodies in TBS containing 5% milk and 0.1% Tween-20 overnight at 4\u00b0C. After rinsing with TBS-0.1% Tween, membranes were incubated with the secondary antibodies diluted in 5% milk-TBS for 1.5\u2009hr at RT. Bands were detected by using Odyssey CLx Scanner. Band intensity quantifications were performed using Image Studio 3.1. Normalizations were performed either relative to the actin or Akt band intensities. Western blots were performed with antibodies against p110\u03b1 (#4249), p110\u03b2 (#3011), Akt (#4691), phospho-Akt T308 (#13038), phospho-Akt S473 (#9271), phospho-Erk 1/2 T202/Y204 (#9101), phospho-S6 S235/236 (#2211), phospho-S6 S240/244 (#5364), phospho-EGFR Y1068 (#2236), S6 (#2217), HA (#2367), TfnR (transferrin receptor) (#13208), Nup (nucleoporin) (#2598), EGFR (#4267), PTEN (#9188) (all Cell Signaling), Rac1 (05\u2013389) (Millipore,\u00a0Billerica,\u00a0Massachusetts), \u03b2-actin (A5441), \u03b1-tubulin (T5168) (Sigma), Caveolin1 (MA3-600) (Thermo Fisher) and Gq (sc-392) (Santa Cruz). IRDye 800CW Goat anti-mouse or anti-rabbit secondary antibodies (Li-Cor,\u00a0Lincoln,\u00a0Nebraska) were used.\n\n### Membrane preparation and Opti-Prep density gradient fractionation\n\n2\u20134 confluent 150\u2009mm dishes (BD, San Jose, California) of cells grown in 2% FBS to limit excessive amounts of growth factors, were rinsed with ice-cold PBS and scraped into homogenization buffer (20\u2009mM Tris-HCl, pH 7.8, 250\u2009mM sucrose (Sigma), 1\u2009mM CaCl2 and 1\u2009mM MgCl2). Cells were pelleted by centrifugation at 4\u00b0C for 5\u2009min at 250\u2009g and resuspended in 1\u2009ml of cold homogenization buffer supplemented with protease and phosphatase inhibitors. Cells were then subjected to mechanical disruption with 15 strokes of a tight pestle in a tissue grinder (Kimble/Kontes,\u00a0Rockwood,\u00a0Tennessee). Homogenates were then passed through a 22\u00a0g needle 20 times. Lysates were then centrifuged at 500\u2009g for 10\u2009min at 4\u00b0C to get rid of intact cells, nuclei and cell debris. The resulting supernatant was centrifuged at 52,000\u2009g for 1\u2009hr at 4\u00b0C. Supernatants were stored (soluble fraction) and the pellets were subjected to 1% Triton X100, 50\u2009mM Tris-HCl pH 7.4, 150\u2009mM NaCl, 5\u2009mM EDTA supplemented with protease and phosphatase inhibitors. After 20\u2009min incubation on ice, lysates were centrifuged at 52,000\u2009g for 1\u2009hr at 4\u00b0C. Supernatants were collected as the triton-sensitive fraction. Remaining membrane pellets were further extracted with 100\u2009mM N-octyl glucoside (Santa Cruz), 50\u2009mM Tris HCl pH 7.4, 150\u2009mM NaCl supplemented with protease and phosphatase inhibitors. Following 20\u2009min of incubation on ice, samples were centrifuged at 16,000\u2009g for 30\u2009min at 4\u00b0C. Supernatants were collected as the detergent resistant membrane (DRM) fraction.\n\nFor the detergent-free Opti-Prep\u00a0(Sigma) density gradient fractionation, 4 confluent 150\u2009mm dishes of cells grown in 2% FBS were rinsed and scraped into the homogenization buffer. Cells were pelleted by centrifugation at 4\u00b0C for 5\u2009min at 250\u2009g and resuspended in 600\u2009\u03bcl of cold homogenization buffer supplemented with protease and phosphatase inhibitors. Cells were then subjected to mechanical disruption with 15 strokes of a tight pestle in a tissue grinder (Kimble/Kontes). Homogenates were then passed through a 22\u00a0g needle 20 times. At 4\u00b0C, lysates were centrifuged at 1000\u2009g for 10\u2009min. The resulting postnuclear supernatant was transferred into a separate tube. The pellet was again lysed by the addition of 400 \u00b5l cold homogenization buffer supplemented with protease and phosphatase inhibitors followed by sheering 20 times through a 22\u00a0g needle. After centrifugation at 1000\u2009g for 10\u2009min at 4\u00b0C, the second postnuclear supernatant was combined with the first. 1\u2009ml of 50% Opti-Prep (Sigma) was added to the combined postnuclear supernatants and placed in the bottom of a 5\u2009ml centrifuge tube (Beckman Coulter, Brea, California). 400\u2009\u03bcl each of 20%, 17.5%, 15%, 12.5%, 10%, 7.5% and 5% Opti-Prep solutions were poured on top of the lysates. Discontinuous gradients were then centrifuged for 90\u2009min at 100000\u2009g at 4\u00b0C using an SW-55 rotor in a Beckman ultracentrifuge. After centrifugation, 400\u2009\u03bcl fractions were collected and distribution of proteins was analyzed by immunobloting.\n\n### Immunofluorescence\n\nCells grown on coverslips were fixed with 4% formaldehyde (Polysciences, Inc,\u00a0Warrington,\u00a0Pennsylvania) in PBS at RT for 15\u2009min. Coverslips were washed in PBS 3 times for 5\u2009min and blocked in blocking buffer (1xPBS, 5% normal goat serum (Cell Signaling), 0.3% Triton X-100) for 1\u2009hr. Cells were incubated with primary antibodies diluted in 1xPBS, 1% BSA, 0.3% Triton X-100 overnight at 4\u00b0C. Followed by rinsing 3x 5\u2009min with PBS, coverslips were incubated with secondary antibodies diluted in 1xPBS, 1% BSA, 0.3% Triton X-100 for 1\u20132\u2009hr at RT in dark. Cells were then mounted on glass slides using ProLong Gold with DAPI (Cell Signaling) mounting medium and imaged with a Nikon TE2000-U epifluorescence microscope with appropriate filters. Corrected total cell membrane fluorescence was determined for p-Akt T308 and p-Akt S473 signals using Image J (National Institute of Health, Bethesda, Maryland. Rabbit anti\u2013p-Akt T308, anti-p-Akt S473 and mouse anti-HA were all from Cell Signaling. Alexa 488 anti\u2013rabbit, Alexa 594 anti\u2013mouse from Invitrogen. Quantifications are average of 3 independent experiments of at least 10 cells per experimental condition.\n\n### Cellular proliferation assays\n\nMEFs were seeded in 6-well tissue culture plates (Corning, Corning, New York) at a density of 1\u00a0\u00d7 104 cells per well. Cancer cells were seeded in 12-well plates (Corning) at a density of 1\u00a0\u00d7 104 cells per well. At the indicated time points, cells were washed with PBS, fixed in 10% acetic acid (Fisher), 10% ethanol for 15\u2009min and then stained with 0.2% crystal violet (Sigma), 10% ethanol for 20\u2009min, washed with distilled water and air-dried. Cell-associated dye was extracted with 2\u2009ml of 10% acetic acid for 15\u2009min and the optical density (OD) was measured at 595 nm. Values were normalized to the OD at day 0 or to vehicle treatment at day seven for each sample. Each data point was determined in either duplicates or triplicates. For experiments performed with limited supplementation, DMEM with 2% FBS was used. For experiments with cancer cells, RPMI with 4% FBS was used. Data shown are the mean of at least three independent experiments with standard deviation.\n\n### Activation of simvastatin\n\nSimvastatin (Sigma) needs to be activated by opening of the lactone ring before use in cell culture. Briefly, four milligrams of simvastatin were dissolved in 0.1\u2009ml of 100% ethanol, with subsequent addition of 0.15\u2009ml of 0.1\u2009N NaOH. The solution was heated at 50\u00b0C for 2\u2009hr in a water bath and then neutralized with HCl to pH 7.2. The resulting solution was brought to a final volume with sterile PBS (10\u2009mM), and aliquots were stored at \u221280\u00b0C until use.\n\n### Wound healing assays\n\nCells were seeded at 5 \u00d7 105 cells/well in 6-well dishes in DMEM, 8% FBS, incubated for 24\u2009hr then serum-starved for 10\u2009hr. A wound was induced into the cell monolayer using a 200\u2009\u03bcl pipette tip. Cells were incubated in DMEM, 2% FBS, at 37\u00b0C. In triplicate experiments, wounds were imaged at the indicated time points for 12\u2009hr at 3 positions along each wound. Recovery percentages indicate the percentage ratio of distance traversed by the leading edge of migrating cells to the initial wound, determined with ImageJ.\n\n### Transwell migration assays\n\nCells were seeded in duplicates onto 8-\u00b5M PET Transwell migration chambers (Corning) at a density of 1 \u00d7 105 cells/well in media containing 1% FBS and media containing 4% FBS\u00a0+ 20\u2009\u03bcM LPA\u00a0+ 5\u00a0\u00b5M S1P were placed in the lower chamber as chemoattractant. Cells were allowed to migrate to the lower side of the inserts for 18\u2009hr. Cells which did not migrate, were removed with a cotton swab on the upper side and then the inserts were fixed in 10% acetic acid, 10% ethanol for 15\u2009min and then stained with 0.2% crystal violet, 10% ethanol for 20\u2009min, washed with distilled water, air-dried and then scanned. Cell-associated dye was then extracted with 2\u2009ml of 10% acetic acid for 15\u2009min and the OD was measured at 595 nm. Data shown are the mean of three independent experiments with standard deviation.\n\n### Statistical analysis\n\nTwo-tailed Student\u2019s t-test was used for differential comparison between two groups. T-tests and IC50 calculations were performed in GraphPad Prism.\n",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "535ab0d5-cdbc-45eb-85e2-ab563a3e1da0",
+      "submission_id": "a2203a6b-65cc-4d8f-81dd-aaa4be4a7b62",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kari Alitalo, University of Helsinki , Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17635.016](https://doi.org/10.7554/eLife.17635.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rac1-mediated membrane raft localization of PI3K/p110\u03b2 is required for its activation by GPCRs or PTEN loss\" for consideration by eLife. Your article has been favorably evaluated by Charles Sawyers as the Senior Editor and two reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers found the study interesting and the manuscript excellent. Its results illuminate a novel two-step mechanism that differentiates the recruitment and activation of the PI3K p110\u03b2 isoform and relative roles of GPCR and RAC proteins.\n\nEssential revisions:\n\n1) The correlation of PTEN loss with raft-dependent PI3K function employs pairs of PTEN positive and negative tumor cells lines that differ in a number of other parameters. Conclusions regarding the negative regulation of PI3K signaling by PTEN in rafts vs. nonraft membrane regions should be strengthened by employing PTEN silencing in the p110 mutant and various add-back MEF cells.\n\n2) The behavior of p110\u03b1 when targeted to lipid rafts is interesting, with LPA induced activation being shown to operate via EGFR. It would be helpful to show that LPA is indeed inducing EGFR activation under these conditions (as in Figure 6D), by demonstrating increased tyrosine phosphorylation.\n",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "41edf333-03a0-4231-b7c6-cf108701c76a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C1",
+      "claim": "p110\u03b2 localizes to membrane rafts in a Rac1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that p110\u03b2 localizes to membrane rafts in a Rac1-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by fractionation experiments showing p110\u03b2 in detergent resistant membranes and loss of raft localization upon Rac1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f37932e5-b759-414e-b538-f58549971401",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C2",
+      "claim": "Raft localization of p110\u03b2 potentiates Akt activation by G-protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "This localization potentiates Akt activation by G-protein-coupled receptors (GPCRs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing that raft-targeted p110\u03b2 enhances Akt phosphorylation upon GPCR stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "a6c4d04c-2b3a-4acb-a13e-dc9513161e51",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C3",
+      "claim": "Genetic targeting of a Rac1 binding-deficient allele of p110\u03b2 to rafts alleviates the requirement for p110\u03b2-Rac1 association for GPCR signaling, cell growth and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus genetic targeting of a Rac1 binding-deficient allele of p110\u03b2 to rafts alleviated the requirement for p110\u03b2-Rac1 association for GPCR signaling, cell growth and migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that p110\u03b2-Lyn RBM (raft-targeted, Rac1 binding mutant) restores Akt activation, proliferation, and migration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8feec990-c619-4a73-871b-64a03a113328",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C4",
+      "claim": "p110\u03b1 does not play a physiological role in GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, p110\u03b1, which does not play a physiological role in GPCR signaling, is found to reside in nonraft regions of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on fractionation data showing p110\u03b1 primarily in nonraft fractions and lack of response to GPCR agonists in p110\u03b1-wt cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "376925fd-52aa-4091-b557-a70db0c3ae24",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C5",
+      "claim": "p110\u03b1 resides in nonraft regions of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, p110\u03b1, which does not play a physiological role in GPCR signaling, is found to reside in nonraft regions of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by detergent-free fractionation and triton-based fractionation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "5be6f002-661d-472d-8d5d-bf9943bed413",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C6",
+      "claim": "Raft targeting of p110\u03b1 allows its EGFR-mediated activation by GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Raft targeting of p110\u03b1 allowed its EGFR-mediated activation by GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments showing p110\u03b1-Lyn responds to LPA stimulation and this response is blocked by EGFR inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "fcf69db1-b476-4f3f-b778-279b1ec2d090",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C7",
+      "claim": "p110\u03b2 dependent, PTEN null tumor cells critically rely upon raft-associated PI3K activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, p110\u03b2 dependent, PTEN null tumor cells critically rely upon raft-associated PI3K activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by increased sensitivity of PTEN null cells (PC3, BT549) to cholesterol depletion and simvastatin treatment compared to PTEN wild-type cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "65ba6189-a8ed-430c-912f-6c45219b40d6",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C8",
+      "claim": "PI3Ks catalyze phosphorylation of the 3'OH group on phosphoinositides at the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "PI3Ks catalyze phosphorylation of the 3'OH group on phosphoinositides at the plasma membrane, which induces translocation of the Ser/Thr kinase Akt.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about PI3K biochemical function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "5f91afd4-aa8b-4137-8e07-b9fd6a356a1b",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C9",
+      "claim": "Akt becomes activated by PDK1 and mTOR2 dependent phosphorylation events once recruited to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Once recruited to the plasma membrane, Akt becomes activated by PDK1 and mTOR2 dependent phosphorylation events (Alessi et al., 1997; Sarbassov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "ae29d9ea-6565-416e-9652-3d39440c49e4",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C10",
+      "claim": "Activation of PI3K signaling frequently occurs in human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of PI3K signaling frequently occurs in human cancers (Vivanco and Sawyers, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "a51bdecc-c022-41dd-aef8-2effc9201368",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C11",
+      "claim": "Class IA PI3K enzymes are activated via receptor tyrosine kinases (RTKs), small G-proteins and G-protein-coupled receptors (GPCRs).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, class IA enzymes are activated via receptor tyrosine kinases (RTKs), small G-proteins and G-protein-coupled receptors (GPCRs) and PI3K signaling is functionally antagonized by the PIP3 degrading PI3 phosphatase PTEN (phosphatase and tensin homolog) (Sang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "0e1983ec-989f-4754-8793-b7ebef508f5f",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C12",
+      "claim": "PI3K signaling is functionally antagonized by PTEN.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, class IA enzymes are activated via receptor tyrosine kinases (RTKs), small G-proteins and G-protein-coupled receptors (GPCRs) and PI3K signaling is functionally antagonized by the PIP3 degrading PI3 phosphatase PTEN (phosphatase and tensin homolog) (Sang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8cc58084-3017-4332-ae32-b9fdb47a1b20",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C13",
+      "claim": "p110\u03b1 and p110\u03b2 are the catalytic class IA isoforms with a ubiquitous expression pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b1 and p110\u03b2 are the catalytic class IA isoforms with a ubiquitous expression pattern (Jia et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8a7cfef3-2f9e-428e-a94c-15506527f7cc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C14",
+      "claim": "Heterodimerization with the regulatory p85 subunit stabilizes p110 isoforms but keeps their kinase activity in check through inhibitory interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterodimerization with the regulatory p85 subunit stabilizes p110 isoforms but at the same time keeps their kinase activity in check through inhibitory interactions (Yu et al., 1998; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9f3eca2b-8290-48f4-93a1-9ebca6b90b36",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C15",
+      "claim": "p110\u03b1 and p110\u03b2 have distinct functions despite forming heterodimers with p85 and catalyzing the same biochemical reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both p110\u03b1 and p110\u03b2 form heterodimers with p85 and catalyze the same biochemical reaction upon activation, studies have indicated that they have distinct functions (Foukas et al., 2006; Zhao et al., 2006; Jackson et al., 2005; Jia et al., 2008; Guillermet-Guibert et al., 2008; Ni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "5e9c3357-0150-4cbe-bae3-74e2458a071a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C16",
+      "claim": "p110\u03b1 mediates bulk of PI3K signaling downstream of RTKs.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b1 appears to mediate bulk of PI3K signaling downstream of RTKs whereas p110\u03b2 preferentially signals downstream of GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established literature and experimental observations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "db7581b1-c63c-406d-8374-03d8c169edb6",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C17",
+      "claim": "p110\u03b2 preferentially signals downstream of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b1 appears to mediate bulk of PI3K signaling downstream of RTKs whereas p110\u03b2 preferentially signals downstream of GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established literature and experimental observations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c42a7212-cf5d-41be-b5df-4a2fc00d2b7e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C18",
+      "claim": "p110\u03b1 and \u03b2 isoforms are involved in mutually exclusive signaling complexes with distinct members of small GTPase protein superfamily, Ras and Rac1 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably p110\u03b1 and \u03b2 isoforms are involved in mutually exclusive signaling complexes with distinct members of small GTPase protein superfamily, Ras and Rac1 respectively (Gupta et al., 2007; Fritsch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "3f0117d6-9bf0-4fd1-a6f8-26e3db22f68e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C19",
+      "claim": "p110\u03b1 is the main isoform required for transformation by oncogenes in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer, p110\u03b1 is the main isoform required for transformation by oncogenes (Zhao et al., 2006) and the encoding PIK3CA is frequently found to have suffered from one of two common activating hotspot mutations in many tumor types (Samuels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b6a06adf-fa39-4324-be47-d9296717db75",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C20",
+      "claim": "PIK3CA is frequently found to have activating hotspot mutations in many tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "In cancer, p110\u03b1 is the main isoform required for transformation by oncogenes (Zhao et al., 2006) and the encoding PIK3CA is frequently found to have suffered from one of two common activating hotspot mutations in many tumor types (Samuels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "0d9c3d1e-e152-4010-8e64-9e9bae0595ab",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C21",
+      "claim": "p110\u03b1 has much higher specific activity compared to p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "This reliance of tumors on p110\u03b1 may be partially explained by the fact that it has much higher specific activity compared to p110\u03b2 (Zhao et al., 2006; Beeton et al., 2000; Knight et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8c39c0a1-6b05-4f68-92a2-73a401d40a8f",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C22",
+      "claim": "In a GEM model of breast cancer driven by Her2, knockout of p110\u03b1 blocked tumor formation while knockout of p110\u03b2 caused tumors to develop more quickly.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed in a GEM model of breast cancer driven by Her2, knockout of p110\u03b1 blocked tumor formation while knockout p110\u03b2 actually caused tumors to develop more quickly- a surprising result explained by a competition model where the less active p110\u03b2 binds to the same limiting number of p85/p110 binding sites on Her2 and thus actually lowers signaling output compared to the case where only p110\u03b1 is expressed and hence can bind to all of the PI3K binding sites on the receptor (Utermark et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "760a7bce-d22f-4a93-b7a9-18ce4b5de352",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C23",
+      "claim": "Tumors that have lost expression of PTEN are largely dependent on p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably tumors that have lost expression of PTEN are largely dependent on p110\u03b2 (Jia et al., 2008; Ni et al., 2012; Wee et al., 2008), an unexpected outcome given its weaker kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "08f456a8-1c0c-4ffe-a42c-e85587212c64",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C24",
+      "claim": "Sphingolipid and cholesterol enriched membrane rafts play a key signaling role in T cell activation via the T cell synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Sphingolipid and cholesterol enriched membrane rafts play a key signaling role in T cell activation via the T cell synapse (Gaus et al., 2005), B cell activation (Gupta and DeFranco, 2007), focal adhesions, cell migration (Gaus et al., 2006), membrane trafficking in polarized epithelial cells (van Meer et al., 1987) and hormone signaling (M\u00e1rquez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c3ed4d0e-5d78-4918-a801-64691cd85018",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C25",
+      "claim": "Fluorescence correlation spectroscopy data implicate involvement of raft nanodomains in recruitment of Akt to the cell membrane upon PIP3 production.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence correlation spectroscopy data implicate involvement of raft nanodomains in recruitment of Akt to the cell membrane upon PIP3 production (Lasserre et al., 2008), and FRET-based Akt activity reporters uncovered a preferential activation of Akt in membrane rafts (Gao and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d239a8bb-0340-4060-be94-13c8ad4c56e1",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C26",
+      "claim": "FRET-based Akt activity reporters uncovered a preferential activation of Akt in membrane rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence correlation spectroscopy data implicate involvement of raft nanodomains in recruitment of Akt to the cell membrane upon PIP3 production (Lasserre et al., 2008), and FRET-based Akt activity reporters uncovered a preferential activation of Akt in membrane rafts (Gao and Zhang, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9df9fe57-4e31-489a-9293-7a879fe326b0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C27",
+      "claim": "PTEN localizes selectively to nonraft membrane microdomains in human embryonic kidney cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand PTEN was shown to localize selectively to nonraft membrane microdomains in human embryonic kidney cells, possibly further restricting Akt activation in these regions (Gao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "7b3833e2-bd33-465d-a252-5959421b031c",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C28",
+      "claim": "Expression of endogenous p110\u03b1 and p110\u03b2 is almost entirely lost upon transduction of p110\u03b1flox/flox; p110\u03b2flox/flox MEFs with AdCre.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of endogenous p110\u03b1 and p110\u03b2 is almost entirely lost upon transduction of the cells with an adenovirus (AdCre) expressing the Cre-recombinase (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 1A showing loss of p110\u03b1 and p110\u03b2 protein after AdCre treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "3854f5bb-f593-4a61-a45d-15cf5400b5e8",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C29",
+      "claim": "Double knock-out (DKO) MEFs show a reduction of phosphorylated Akt (p-Akt).",
+      "claim_type": "EXPLICIT",
+      "source": "These double knock-out (DKO) MEFs show a reduction of phosphorylated Akt (p-Akt) (Figure 1A, compare lanes 1\u20135 with lanes 6\u201310), have a blunted response in promotion of p-Akt and p-S6 to a variety of growth signals (Figure 1B, compare lanes 2\u20135 with lanes 7\u201310) and essentially cease to proliferate (Figure 1C), which is consistent with the key role of the PI3K pathway in proliferation and signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot data in Figure 1A showing reduced p-Akt levels in DKO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "cef1cca6-3798-4fef-8a66-ac89c3028dea",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C30",
+      "claim": "DKO MEFs have a blunted response in promotion of p-Akt and p-S6 to a variety of growth signals.",
+      "claim_type": "EXPLICIT",
+      "source": "These double knock-out (DKO) MEFs show a reduction of phosphorylated Akt (p-Akt) (Figure 1A, compare lanes 1\u20135 with lanes 6\u201310), have a blunted response in promotion of p-Akt and p-S6 to a variety of growth signals (Figure 1B, compare lanes 2\u20135 with lanes 7\u201310) and essentially cease to proliferate (Figure 1C), which is consistent with the key role of the PI3K pathway in proliferation and signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot data in Figure 1B showing reduced p-Akt and p-S6 response to growth factors in DKO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "1b77b74c-1fff-401e-8fdc-05ff730069a0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C31",
+      "claim": "DKO MEFs essentially cease to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "These double knock-out (DKO) MEFs show a reduction of phosphorylated Akt (p-Akt) (Figure 1A, compare lanes 1\u20135 with lanes 6\u201310), have a blunted response in promotion of p-Akt and p-S6 to a variety of growth signals (Figure 1B, compare lanes 2\u20135 with lanes 7\u201310) and essentially cease to proliferate (Figure 1C), which is consistent with the key role of the PI3K pathway in proliferation and signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 1C showing growth arrest in DKO cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "e51f2509-2a0a-4824-89ac-36207dd8e6d0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C32",
+      "claim": "Ectopic expression of either p110\u03b1 or p110\u03b2 can rescue PI3K signaling defects and growth inhibition in DKO MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, ectopic expression of either p110 isoform could rescue PI3K signaling defects and growth inhibition in the DKO MEFs (Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assays in Figure 1\u2014figure supplement 1A,B showing restored growth in add-back cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d1196014-f926-4eee-b551-dbebca0920c8",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C33",
+      "claim": "DKO add-back MEFs are highly sensitive to small molecule inhibitors targeting the unique isoform expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting isogenic DKO add-back MEFs were highly sensitive to small molecule inhibitors targeting the unique isoform expressed, in growth factor signaling and proliferation assays (Figure 1E and Figure 1\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by signaling and proliferation assays in Figure 1E and Figure 1\u2014figure supplement 1A,B showing sensitivity to isoform-specific inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "62684f55-5f0d-498b-a06c-56af61910afc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C34",
+      "claim": "p110\u03b2 resides in detergent resistant membranes in addition to soluble and detergent sensitive fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our fractionation experiments demonstrated that p110\u03b2 resides in detergent resistant membranes in addition to soluble and detergent sensitive fractions where p110\u03b1 is primarily detected (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fractionation experiments in Figure 2\u2014figure supplement 1A showing p110\u03b2 in DRM fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "a41e697c-e410-4424-a373-849574d234b7",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C35",
+      "claim": "There are distinct pools of p110\u03b2 localized to raft and nonraft membrane microdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "A detergent-free fractionation based on density gradient centrifugation in HMECs confirmed the notion that there are distinct pools of p110\u03b2 localized to raft and nonraft membrane microdomains (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by detergent-free fractionation in Figure 2A showing p110\u03b2 distribution across raft and nonraft fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "cf40d264-f59b-41ec-9df8-d58cbe62b1c1",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C36",
+      "claim": "Rac1 displays a similar fractionation pattern to p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, Rac1, which is known to interact with p110\u03b2 displayed a similar fractionation pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in fractionation experiments showing Rac1 co-fractionating with p110\u03b2 in raft fractions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c01b3b13-83fa-4655-b464-dba75105876c",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C37",
+      "claim": "p110\u03b2 can be detected in raft as well as nonraft fractions in HEK293, DU145, PC3, MCF7 and BT549 cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to MEFs and HMECs; we analyzed HEK293, DU145, PC3, MCF7 and BT549 cancer cell lines by examination of triton sensitive and resistant membrane fractions and detected p110\u03b2 in raft as well as nonraft fractions (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fractionation experiments in Figure 2\u2014figure supplement 1B showing p110\u03b2 in DRM fractions of multiple cancer cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c51bf636-549a-4094-bc03-fc659e645d9e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C38",
+      "claim": "p110\u03b2-GBM and p110\u03b2-RBM DKO add-backs display retarded proliferation compared to wt or p110\u03b2-wt DKO add-back MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b2-GBM or RBM DKO add-backs displayed retarded proliferation in comparison to either wt or p110\u03b2-wt DKO add-back MEFs (Figure 2D) and were largely deficient in migration through Transwell inserts towards chemoattractants (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 2D showing reduced growth of mutant add-backs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "e9853ce8-edac-4165-adc8-25c5a821e078",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C39",
+      "claim": "p110\u03b2-GBM and p110\u03b2-RBM are largely deficient in migration through Transwell inserts towards chemoattractants.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b2-GBM or RBM DKO add-backs displayed retarded proliferation in comparison to either wt or p110\u03b2-wt DKO add-back MEFs (Figure 2D) and were largely deficient in migration through Transwell inserts towards chemoattractants (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Transwell migration assay in Figure 2E showing reduced migration of mutant add-backs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9f5cefb4-2bdb-478c-8ef0-58d8032ec6e4",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C40",
+      "claim": "p110\u03b2 deficient in either G\u03b2\u03b3 or Rac1 binding is significantly impaired in elevating p-Akt in response to GPCR agonists LPA and S1P.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation and serum or GPCR agonist stimulation experiments demonstrated that although p110\u03b2 deficient in either G\u03b2\u03b3 or Rac1 binding, instigated Akt phosphorylation upon serum stimulation, both were significantly impaired in elevating p-Akt, in response to two GPCR agonists; lysophosphatidic acid (LPA) and sphingosine 1-phosphate (S1P) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 2F showing reduced p-Akt upon LPA and S1P stimulation in mutant cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "e7efa16b-37a0-4959-b6fc-e3a4411d5485",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C41",
+      "claim": "Only p110\u03b2-GBM but not p110\u03b2-RBM localizes to rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fractionation of raft versus nonraft membrane microdomains revealed that only p110\u03b2-GBM but not p110\u03b2-RBM localizes to rafts suggesting that Rac1 binding to p110\u03b2 might constitute a raft localization signal (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fractionation in Figure 2G showing p110\u03b2-GBM in DRM fractions but p110\u03b2-RBM absent from DRM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "4743bf4c-979f-4a18-90d6-3e1c6643517f",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C42",
+      "claim": "Rac1 binding to p110\u03b2 might constitute a raft localization signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fractionation of raft versus nonraft membrane microdomains revealed that only p110\u03b2-GBM but not p110\u03b2-RBM localizes to rafts suggesting that Rac1 binding to p110\u03b2 might constitute a raft localization signal (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that Rac1 binding mutant loses raft localization while G\u03b2\u03b3 binding mutant retains it.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "ec3ec5c2-235e-49ae-ac97-3b76d3ede0a4",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C43",
+      "claim": "Downregulation of Rac1 leads to displacement of p110\u03b2 from membrane rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of Rac1 led to a displacement of p110\u03b2 from membrane rafts whereas raft and nonraft membrane marker distributions were unchanged (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fractionation experiments in Figure 2H showing loss of p110\u03b2 from DRM fractions upon Rac1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8f3b40b9-4ac4-4c84-97ad-34fa1b63b627",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C44",
+      "claim": "p110\u03b2-Lyn is enriched in rafts and p110\u03b2-Ras is enriched in nonraft membrane microdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of homogenized samples fractionated via density gradient centrifugation confirmed enriched localization of p110\u03b2-Lyn to rafts and p110\u03b2-Ras to nonraft membrane microdomains (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by detergent-free fractionation in Figure 3B showing differential localization of targeting constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b10be32b-17d3-46da-b113-adbdbf8b1937",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C45",
+      "claim": "p110\u03b2-Ras DKO add-back MEFs display a blunted response in Akt phosphorylation upon serum starvation and LPA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b2-Ras DKO add-back MEFs displayed a blunted response in Akt phosphorylation upon serum starvation and LPA stimulation whereas both p110\u03b2-wt and p110\u03b2-Lyn DKO add-backs had significant levels of p-Akt upon LPA stimulation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 3D showing reduced p-Akt in p110\u03b2-Ras cells upon LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "62aa9481-0ac2-4072-bee7-2aa017c717fa",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C46",
+      "claim": "Both p110\u03b2-wt and p110\u03b2-Lyn DKO add-backs have significant levels of p-Akt upon LPA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b2-Ras DKO add-back MEFs displayed a blunted response in Akt phosphorylation upon serum starvation and LPA stimulation whereas both p110\u03b2-wt and p110\u03b2-Lyn DKO add-backs had significant levels of p-Akt upon LPA stimulation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 3D showing elevated p-Akt in p110\u03b2-wt and p110\u03b2-Lyn cells upon LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "3ab2be78-c5d3-4eb9-9ce2-ae72a85d70bf",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C47",
+      "claim": "An increase in membrane-associated p-Akt is observed when p110\u03b2-Lyn but not p110\u03b2-Ras DKO add-back MEFs are stimulated with LPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an increase in membrane-associated p-Akt was observed, when p110\u03b2-Lyn but not p110\u03b2-Ras DKO add-back MEFs were stimulated with LPA (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence in Figure 3\u2014figure supplement 1 showing membrane p-Akt in p110\u03b2-Lyn but not p110\u03b2-Ras cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "1b0e552c-7b9c-48c0-a55d-03f03267f8e4",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C48",
+      "claim": "Raft targeting restores p-Akt in p110\u03b2-Lyn RBM, but not in p110\u03b2-Lyn GBM DKO add-back MEFs upon LPA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, raft targeting restored p-Akt in p110\u03b2-Lyn RBM, but not in p110\u03b2-Lyn GBM DKO add-back MEFs upon LPA stimulation (Figure 4C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 4C showing p-Akt restoration in p110\u03b2-Lyn RBM but not p110\u03b2-Lyn GBM upon LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c425bca2-8092-4a01-a092-0fcfa287ffb0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C49",
+      "claim": "p110\u03b2-Rac1 association regulates raft recruitment of p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly suggest that p110\u03b2-Rac1 association regulates raft recruitment of p110\u03b2, and imply that the G\u03b2\u03b3 interaction with p110\u03b2 might be independently required for its activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing raft targeting compensates for Rac1 binding deficiency but not G\u03b2\u03b3 binding deficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "e5190153-f09d-48d2-8d5e-f4167431eacf",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C50",
+      "claim": "The G\u03b2\u03b3 interaction with p110\u03b2 is independently required for its activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly suggest that p110\u03b2-Rac1 association regulates raft recruitment of p110\u03b2, and imply that the G\u03b2\u03b3 interaction with p110\u03b2 might be independently required for its activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing raft targeting cannot compensate for G\u03b2\u03b3 binding deficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "10f6245a-1a05-483a-af6c-29826fdb79ed",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C51",
+      "claim": "Both p110\u03b2-Lyn and p110\u03b2-Lyn RBM fail to induce p-Akt when rafts are disrupted by M\u03b2CD.",
+      "claim_type": "EXPLICIT",
+      "source": "Both p110\u03b2-Lyn and p110\u03b2-Lyn RBM failed to induce p-Akt when rafts were disrupted by M\u03b2CD, a defect which was rescued upon addition of excess cholesterol to the cells (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 4D showing loss of p-Akt upon M\u03b2CD treatment and rescue with cholesterol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "14bfa62d-2a60-470f-82bb-54a257aced49",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C52",
+      "claim": "The raft-excluded p110\u03b2-Ras allele is relatively insensitive to cholesterol depletion upon stimulation with either serum or PDGF.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the raft-excluded p110\u03b2-Ras allele was relatively insensitive to cholesterol depletion upon stimulation with either serum or PDGF, and promoted Akt phosphorylation in the presence of M\u03b2CD (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 4E showing maintained p-Akt in p110\u03b2-Ras cells upon M\u03b2CD treatment with serum or PDGF stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c2287a13-2c26-4caf-9923-636de723ede8",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C53",
+      "claim": "LPA stimulation fails to induce p-Akt in p110\u03b2-Ras in either presence or absence of M\u03b2CD.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably LPA stimulation failed to induce p-Akt in either condition, presumably because p110\u03b2-Ras is excluded from rafts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot in Figure 4E showing no p-Akt in p110\u03b2-Ras cells upon LPA stimulation regardless of M\u03b2CD treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "29b81832-7094-4517-972f-77d8117fb2e2",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C54",
+      "claim": "Deficiency in G\u03b2\u03b3 binding significantly reduces rates of proliferation in p110\u03b2 DKO add-back MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency in G\u03b2\u03b3 binding, significantly reduced rates of proliferation while p110\u03b2-Lyn RBM supported growth comparable to p110\u03b2-Lyn (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 5A showing reduced growth of p110\u03b2-Lyn GBM cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "49baee0f-5127-40af-b26f-f19d3ee33fb7",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C55",
+      "claim": "p110\u03b2-Lyn RBM supports growth comparable to p110\u03b2-Lyn.",
+      "claim_type": "EXPLICIT",
+      "source": "Deficiency in G\u03b2\u03b3 binding, significantly reduced rates of proliferation while p110\u03b2-Lyn RBM supported growth comparable to p110\u03b2-Lyn (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 5A showing similar growth of p110\u03b2-Lyn and p110\u03b2-Lyn RBM cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "adf2a928-a94e-47cc-9b42-32505cce939a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C56",
+      "claim": "p110\u03b2-Lyn RBM DKO add-back MEFs migrate more efficiently into wounds than p110\u03b2-Lyn GBM DKO add-back cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Wound closure was monitored up to 12 hr upon scratching. p110\u03b2-Lyn RBM DKO add-back MEFs migrate more efficiently into the wound than p110\u03b2-Lyn GBM DKO add-back cells (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by wound healing assay in Figure 5B,C showing greater wound closure in p110\u03b2-Lyn RBM cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "35999882-d05b-4a14-96dd-c5eb48363509",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C57",
+      "claim": "Selective raft targeting is compensatory for p110\u03b2-RBM whereas p110\u03b2-Lyn GBM DKO add-backs are defective in migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Transwell migration assays using the same add-back lines reinforced the notion that selective raft targeting is compensatory for p110\u03b2-RBM whereas p110\u03b2-Lyn GBM DKO add-backs are defective in migration (Figure 5D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by Transwell migration assay in Figure 5D,E showing restored migration in p110\u03b2-Lyn RBM but not p110\u03b2-Lyn GBM cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "184e586e-d5c9-4aad-b026-6c695a5aa208",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C58",
+      "claim": "The primary function of p110\u03b2-Rac1 binding lies in the placement of p110\u03b2 in membrane rafts and thus creating a GPCR signaling competent PI3K module.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this data is again consistent with the idea that the primary function of p110\u03b2-Rac1 binding lies in the placement of p110\u03b2 in membrane rafts and thus creating a GPCR signaling competent PI3K module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that raft targeting compensates for Rac1 binding deficiency in GPCR signaling, proliferation, and migration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "2f6c26d2-fb74-4a4d-b811-188946767b19",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C59",
+      "claim": "p110\u03b1-Lyn is enriched in rafts and p110\u03b1-Ras is more prominently localized to nonraft regions of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of homogenized samples fractionated via density gradient centrifugation confirmed enriched localization of p110\u03b1-Lyn to rafts, whereas p110\u03b1-Ras was more prominently localized to nonraft regions of the plasma membrane (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by detergent-free fractionation in Figure 6B showing differential localization of p110\u03b1 targeting constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b22d1c14-b1aa-4f4f-9483-db978adf79eb",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C60",
+      "claim": "LPA stimulation leads to significant phosphorylation of Akt in cells expressing raft-targeted p110\u03b1-Lyn in a manner comparable to p110\u03b2-wt DKO add-back MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, use of LPA led to a significant phosphorylation of Akt in cells expressing raft-targeted p110\u03b1-Lyn in a manner comparable to that seen in p110\u03b2-wt DKO add-back MEFs (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 6C showing elevated p-Akt in p110\u03b1-Lyn cells upon LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "77343c2f-d55b-4876-96a7-9dd96835fbbb",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C61",
+      "claim": "Activation of Akt is observed to a much lesser extent in cells expressing the nonraft membrane targeting p110\u03b1-Ras allele upon LPA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Akt was observed to a much lesser extent in cells expressing the nonraft membrane targeting p110\u03b1-Ras allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blot in Figure 6C showing minimal p-Akt in p110\u03b1-Ras cells upon LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "c38b8227-cd60-425a-a6a5-e04cd8f54ed0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C62",
+      "claim": "An increase in membrane-associated p-Akt is observed when p110\u03b1-Lyn but not p110\u03b1-Ras DKO add-back MEFs are stimulated with LPA.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, an increase in membrane-associated p-Akt was observed, when p110\u03b1-Lyn but not p110\u03b1-Ras DKO add-back MEFs were stimulated with LPA (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by immunofluorescence in Figure 6\u2014figure supplement 1B showing membrane p-Akt in p110\u03b1-Lyn but not p110\u03b1-Ras cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "545a29ef-e430-4544-a01d-a45ee219290a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C63",
+      "claim": "PC3 prostate cancer cells are dependent on p110\u03b2 function for Akt activation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined p110 isoform localization in the PTEN null PC3 prostate cancer cell line that is dependent on p110\u03b2 function for Akt activation and growth (Ni et al., 2012; Hill et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d2361df2-cc61-406f-8232-927bcc831b42",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C64",
+      "claim": "Downregulation of p110\u03b2 reduces p-Akt and p-S6 levels in PC3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Downregulation of p110\u03b2 reduced p-Akt and p-S6 levels (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 6\u2014figure supplement 2A showing reduced p-Akt and p-S6 upon p110\u03b2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "2024ebad-1802-438f-9e0c-d29873075464",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C65",
+      "claim": "p110\u03b1-Lyn but not p110\u03b1-Ras expression compensates for p110\u03b2 loss and restores p-Akt and p-S6 in p110\u03b2 knockdown PC3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b1-Lyn but not p110\u03b1-Ras expression compensated for p110\u03b2 loss and restored p-Akt and p-S6 in p110\u03b2 knockdown cells (Figure 6\u2014figure supplement 2B, compare lanes 7 with 8), suggesting that raft-targeted p110\u03b1 might have redundant functions with wt p110\u03b2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 6\u2014figure supplement 2B showing restored p-Akt and p-S6 in p110\u03b2 knockdown cells expressing p110\u03b1-Lyn.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "7813549b-6378-4843-b98b-124e85a500c6",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C66",
+      "claim": "Raft-targeted p110\u03b1 might have redundant functions with wt p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "p110\u03b1-Lyn but not p110\u03b1-Ras expression compensated for p110\u03b2 loss and restored p-Akt and p-S6 in p110\u03b2 knockdown cells (Figure 6\u2014figure supplement 2B, compare lanes 7 with 8), suggesting that raft-targeted p110\u03b1 might have redundant functions with wt p110\u03b2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that raft-targeted p110\u03b1 can substitute for p110\u03b2 in PTEN null cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9207c0d1-90a7-4b4e-9081-6c410bdf41f1",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C67",
+      "claim": "LPA stimulation promotes metalloprotease-mediated transactivation of EGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, LPA stimulation promotes metalloprotease-mediated transactivation of EGFR, and EGFR activity itself is responsible for major growth-promoting effects of GPCR signaling (Prenzel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f23fc5e7-700b-4c02-a03e-ccac98e778ea",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C68",
+      "claim": "EGFR activity is responsible for major growth-promoting effects of GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, LPA stimulation promotes metalloprotease-mediated transactivation of EGFR, and EGFR activity itself is responsible for major growth-promoting effects of GPCR signaling (Prenzel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "20943eda-6fef-46c4-9a23-01b8c89c27cd",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C69",
+      "claim": "EGFR but not G\u03b2\u03b3 or PDGFR inhibition reduces p-Akt/S6 in p110\u03b1-Lyn DKO add-back MEFs upon LPA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of our hypothesis, EGFR but not G\u03b2\u03b3 or PDGFR inhibition reduced p-Akt/S6 in p110\u03b1-Lyn DKO add-back MEFs (Figure 6D, compare lanes 3, 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 6D showing reduced p-Akt/S6 only with EGFR inhibition in p110\u03b1-Lyn cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f8b29d93-49b1-477a-a6f0-e8cd294db5c4",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C70",
+      "claim": "G\u03b2\u03b3 activity is critical for p110\u03b2-wt mediated GPCR signaling while EGFR inhibition has only a modest effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, G\u03b2\u03b3 activity was critical for p110\u03b2-wt mediated GPCR signaling while EGFR inhibition had only a modest effect (Figure 6D, compare lanes 8 and 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 6D showing reduced p-Akt/S6 with G\u03b2\u03b3 inhibition but not EGFR inhibition in p110\u03b2-wt cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "ee994e19-c909-40ad-9a5d-116895b6fca6",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C71",
+      "claim": "p110\u03b1-Lyn DKO add-back MEFs are more resistant to gallein in cellular proliferation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, p110\u03b1-Lyn DKO add-back MEFs were more resistant to gallein in cellular proliferation assays (Figure 6E, left), whereas p110\u03b2-wt DKO add-backs were refractory to EGFR inhibition by lapatinib (Figure 6E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 6E showing higher IC50 for gallein in p110\u03b1-Lyn cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "1eb1a944-50c3-4d39-809b-b54273abe4cd",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C72",
+      "claim": "p110\u03b2-wt DKO add-backs are refractory to EGFR inhibition by lapatinib.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these results, p110\u03b1-Lyn DKO add-back MEFs were more resistant to gallein in cellular proliferation assays (Figure 6E, left), whereas p110\u03b2-wt DKO add-backs were refractory to EGFR inhibition by lapatinib (Figure 6E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 6E showing higher IC50 for lapatinib in p110\u03b2-wt cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "fa3c429f-0c37-4572-9396-fac570de2a00",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C73",
+      "claim": "EGFR activation by LPA stimulated GPCRs is required for raft-localized p110\u03b1 to promote Akt phosphorylation and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the EGFR activation by LPA stimulated GPCRs is required for raft-localized p110\u03b1 to promote Akt phosphorylation and activation; whereas the canonical G\u03b2\u03b3 pathway was essential for p110\u03b2-mediated GPCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing EGFR inhibition blocks p110\u03b1-Lyn mediated Akt activation upon LPA stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b869a7dd-8e16-415e-a1d5-6037a7b63c32",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C74",
+      "claim": "The canonical G\u03b2\u03b3 pathway is essential for p110\u03b2-mediated GPCR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the EGFR activation by LPA stimulated GPCRs is required for raft-localized p110\u03b1 to promote Akt phosphorylation and activation; whereas the canonical G\u03b2\u03b3 pathway was essential for p110\u03b2-mediated GPCR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing G\u03b2\u03b3 inhibition blocks p110\u03b2-wt mediated Akt activation upon LPA stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "627ce02e-7194-43ab-b61c-75691e2db92c",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C75",
+      "claim": "Tumors deficient of PTEN are often dependent on the p110\u03b2 isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have demonstrated that tumors deficient of phosphatase and tensin homolog (PTEN) are often dependent on the p110\u03b2 isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established literature and prior work from the authors' group.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "536b4793-8b16-46e4-bc1e-0b7cb5876e15",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C76",
+      "claim": "PC3 cells are significantly more sensitive to M\u03b2CD treatment than DU145 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PC3 cells were significantly more sensitive to M\u03b2CD treatment than DU145 cells (Figure 7\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7\u2014figure supplement 1A,B showing greater growth inhibition of PC3 cells by M\u03b2CD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b9b94031-3a62-41b8-9d20-7155890912b0",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C77",
+      "claim": "BT549 breast cancer cells are more susceptible to M\u03b2CD than MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the same line, BT549 breast cancer cells were more susceptible to M\u03b2CD than MCF7 cells (Figure 7\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7\u2014figure supplement 1C,D showing greater growth inhibition of BT549 cells by M\u03b2CD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "6036e857-e13e-4c81-8053-f8079db35c19",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C78",
+      "claim": "PC3 cells are considerably more sensitive to inhibition of cholesterol synthesis by simvastatin than DU145 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Once again, PC3 cells were considerably more sensitive to inhibition of cholesterol synthesis than DU145 cells. A simvastatin concentration of 1 \u03bcM was sufficient to potently inhibit proliferation of PC3 cells, which did not impede growth of DU145 cells (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7A,B showing greater growth inhibition of PC3 cells by simvastatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "265fc2c1-841b-4e32-8941-61ccdf90a69d",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C79",
+      "claim": "Treatment of BT549 cells with simvastatin leads to significant impediment of proliferation at 1\u20132 \u03bcM concentrations, which is not growth inhibitory for MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of BT549 cells with simvastatin led to a significant impediment of proliferation at 1\u20132 \u03bcM concentrations, which was not growth inhibitory for MCF7 cells (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7C,D showing greater growth inhibition of BT549 cells by simvastatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b4702fab-d6af-4cfe-8131-b90bbed62af3",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C80",
+      "claim": "T47D breast cancer cell line is refractory to growth inhibitory effects of simvastatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Another PTEN wt breast cancer cell line, T47D was similarly refractory to growth inhibitory effects of simvastatin (Figure 7\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7\u2014figure supplement 1E,F showing minimal growth inhibition of T47D cells by simvastatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "34d1bdf6-fa12-4273-934b-2c1bbd502130",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C82",
+      "claim": "Expression of constitutively active, oncogenic mutants of p110\u03b1 (H1047R and E545K) in PC3 cells leads to activation of Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "In an attempt to restore PI3K pathway activation, we expressed constitutively active, oncogenic mutants of p110\u03b1, H1047R and E545K in PC3 cells. Notably this lead to an activation of Akt as anticipated (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 7E showing elevated p-Akt in PC3 cells expressing p110\u03b1 mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8926422f-dcc6-486a-97d4-e8679148ab1a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C83",
+      "claim": "PC3-p110\u03b1 H1047R or E545K expressing cells proliferate more robustly in the presence of previously deleterious doses of simvastatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although control PC3 cells were quite susceptible to simvastatin treatment, PC3-p110\u03b1 H1047R or E545K expressing cells proliferated more robustly in the presence of previously deleterious doses of the inhibitor (Figure 7E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assay in Figure 7F showing increased growth of PC3 cells expressing p110\u03b1 mutants in presence of simvastatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "3e0ae25c-1404-4795-bdd2-34c2d39cee66",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C84",
+      "claim": "Akt activation is repressed in PC3 cells treated with simvastatin and this repression is relieved by p110\u03b1-H1047R or E545K expression.",
+      "claim_type": "EXPLICIT",
+      "source": "A biochemical analysis of these cells showed that Akt activation was repressed in PC3 cells treated with simvastatin and this repression was relieved by p110\u03b1-H1047R or E545K expression (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 7G showing maintained p-Akt in PC3 cells expressing p110\u03b1 mutants upon simvastatin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "16059fae-9e3b-4a30-a9c0-10d5624a96b2",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C85",
+      "claim": "Raft specific inhibition of PI3K function in PC3 cells can be partially alleviated by expression of constitutively active oncogenic alleles of p110\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that raft specific inhibition of PI3K function in PC3 cells can be partially alleviated by expression of constitutively active oncogenic alleles of p110\u03b1, which presumably utilize raft independent modes of activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that oncogenic p110\u03b1 mutants rescue growth and Akt activation in PC3 cells treated with simvastatin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "b1ae9e44-1768-4b8f-ba3a-1b581b2119cc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C86",
+      "claim": "Constitutively active oncogenic alleles of p110\u03b1 presumably utilize raft independent modes of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that raft specific inhibition of PI3K function in PC3 cells can be partially alleviated by expression of constitutively active oncogenic alleles of p110\u03b1, which presumably utilize raft independent modes of activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the mechanism by which oncogenic p110\u03b1 mutants bypass raft dependence.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9279e8d5-260b-46f7-b2ea-a408ae20786a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C87",
+      "claim": "Restoration of wt Pten leads to a reduction in Akt activation in PC3 and BT549 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoration of wt Pten lead to a reduction in Akt activation as judged by levels of pAkt (Figure 7\u2014figure supplement 2A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by western blot in Figure 7\u2014figure supplement 2A and D showing reduced p-Akt upon Pten re-expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "21fcbb2f-d1af-41ee-be0e-824bb3fb4fda",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C88",
+      "claim": "Pten expressing PC3 and BT549 cells become more resistant to increasing concentrations of simvastatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pten expressing PC3 and BT549 cells became more resistant to increasing concentrations of simvastatin, while cells expressing Pten C124S were almost as sensitive to simvastatin as the parental cell lines (Figure 7\u2014figure supplement 2B,C,E and F, E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by proliferation assays in Figure 7\u2014figure supplement 2B,C,E,F showing increased resistance to simvastatin in Pten-expressing cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "e1298978-8334-4954-8faf-b584873b257f",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C89",
+      "claim": "Loss of Pten in certain cancers might lead to a dependence on raft mediated PI3K signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in support of the notion that loss of Pten in certain cancers might lead to a dependence on raft mediated PI3K signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that PTEN null cells are more sensitive to raft disruption and this sensitivity is reversed by PTEN re-expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "20053215-fb89-4e93-bc42-07e0e8460e7c",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C90",
+      "claim": "Rac1-p110\u03b2 interaction is necessary for localization of p110\u03b2 to GPCR signaling permissive membrane microdomains.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Rac1-p110\u03b2 interaction may be necessary for localization of p110\u03b2 to GPCR signaling permissive membrane microdomains, whereas its association with G\u03b2\u03b3 remains crucial for the activation of its lipid kinase activity upon ligand binding to GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing raft targeting compensates for Rac1 binding deficiency but not G\u03b2\u03b3 binding deficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "75ef8e4b-a9de-45da-8f19-4981877f07a6",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C91",
+      "claim": "Association of p110\u03b2 with G\u03b2\u03b3 remains crucial for the activation of its lipid kinase activity upon ligand binding to GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Rac1-p110\u03b2 interaction may be necessary for localization of p110\u03b2 to GPCR signaling permissive membrane microdomains, whereas its association with G\u03b2\u03b3 remains crucial for the activation of its lipid kinase activity upon ligand binding to GPCRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing raft targeting cannot compensate for G\u03b2\u03b3 binding deficiency.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "30222c94-2c6b-4f12-9425-1a8cd5ff0efc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C92",
+      "claim": "p110\u03b1 becomes responsive to GPCR activation if properly localized to rafts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, even p110\u03b1, which is usually unresponsive to GPCR activation, becomes responsive if properly localized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing p110\u03b1-Lyn responds to LPA stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "44630fc5-a4fe-4958-9fab-dedb81ad2d99",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C93",
+      "claim": "p110\u03b2 dependent, PTEN null tumor cells critically rely upon raft-associated PI3K activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our data has implications concerning the optimal methods for inhibiting Akt activation in PTEN null cancers (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experiments showing PTEN null cells are more sensitive to raft disruption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "0d7f3f9b-4043-4d45-bb4f-858d74ef083e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C94",
+      "claim": "Cholesterol deprivation specifically inhibits activating Akt phosphorylations whereas Erk phosphorylation is largely unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholesterol depletion specifically inhibited activating Akt phosphorylations whereas Erk phosphorylation was largely unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by western blots showing reduced p-Akt but maintained p-Erk upon M\u03b2CD treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "23e12f73-93b3-43b8-99d7-f34ae98c5155",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C95",
+      "claim": "Activation of the MAPK signaling cascade by GPCRs is not crucially dependent on raft integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that activation of the MAPK signaling cascade by GPCRs is not crucially dependent on raft integrity, reinforcing the notion that critical role of membrane compartmentalization may be unique to PI3K/Akt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Erk phosphorylation is maintained upon cholesterol depletion while Akt phosphorylation is reduced.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "833d714d-7771-4d64-8991-03d1d5d9f082",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C96",
+      "claim": "The critical role of membrane compartmentalization may be unique to PI3K/Akt signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that activation of the MAPK signaling cascade by GPCRs is not crucially dependent on raft integrity, reinforcing the notion that critical role of membrane compartmentalization may be unique to PI3K/Akt signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the differential sensitivity of PI3K/Akt versus MAPK signaling to raft disruption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "01c26cd6-1a39-4fcf-8994-df434f8b58ec",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C97",
+      "claim": "The higher abundance of PTEN in nonraft membrane regions might be an important determinant in localizing signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The higher abundance of PTEN in nonraft membrane regions seen here and in earlier work (Gao et al., 2011) might be an important determinant in localizing signaling as it may prevent unnecessary propagation of signaling cascades initiated in rafts to nonraft regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the functional significance of PTEN localization.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d850c0d5-262a-42f0-ae53-db10f7c9b951",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C98",
+      "claim": "The selective localization of PTEN in nonraft domains suggests that it might exert relatively little control on raft recruitment of p110\u03b2 and activation of Akt, while preventing the resulting signals from propagating outside raft domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the reported selective localization of PTEN in nonraft domains suggests that it might exert relatively little control on raft recruitment of p110\u03b2 and activation of Akt, while preventing the resulting signals from propagating outside raft domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the functional role of PTEN localization in regulating PI3K signaling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "7e95fe71-c417-4588-8563-fb8636e763cc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C99",
+      "claim": "The elevated signaling potency observed when either p110\u03b1 or \u03b2 is targeted to rafts could be explained by a regional lack of PTEN dependent negative regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The elevated signaling potency observed when either p110\u03b1 or \u03b2 is targeted to rafts could be explained by a regional lack of PTEN dependent negative regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the mechanism underlying enhanced signaling in rafts.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "abd1fd41-1955-41e8-85a3-cf7ba5b63c8e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C100",
+      "claim": "In tumor cells lacking PTEN, p110\u03b2 dependent signaling could spread to larger portions of the cells greatly strengthening PI3K signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In tumor cells lacking PTEN, such p110\u03b2 dependent signaling could spread to larger portions of the cells greatly strengthening PI3K signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the consequences of PTEN loss on PI3K signaling distribution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "8b5320f5-b0ed-48cb-92f9-d4222f2fd945",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C101",
+      "claim": "p110\u03b2 signaling in PTEN null cells is still dependent on raft integrity.",
+      "claim_type": "EXPLICIT",
+      "source": "However the fact that p110\u03b2 signaling in PTEN null cells is still dependent on raft integrity suggests that the second, Rac-independent 'G\u03b2\u03b3 like' signal activating p110\u03b2 is likely to initiate in rafts in the absence of PTEN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing PTEN null cells are sensitive to raft disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "69f24336-0754-463c-8d56-f7083947b4f7",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C102",
+      "claim": "The second, Rac-independent 'G\u03b2\u03b3 like' signal activating p110\u03b2 is likely to initiate in rafts in the absence of PTEN.",
+      "claim_type": "EXPLICIT",
+      "source": "However the fact that p110\u03b2 signaling in PTEN null cells is still dependent on raft integrity suggests that the second, Rac-independent 'G\u03b2\u03b3 like' signal activating p110\u03b2 is likely to initiate in rafts in the absence of PTEN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PTEN null cells remain sensitive to raft disruption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "ceeb6182-c746-44aa-83cf-21e902201517",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C103",
+      "claim": "The second signal activating p110\u03b2 in PTEN null cells is likely not G\u03b2\u03b3 itself in most PTEN null cells as Akt activation is often not blocked by GPCR antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not feel that this second signal is G\u03b2\u03b3 itself in most PTEN null cells as Akt activation is often not blocked by GPCR antagonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from literature and observations that GPCR antagonists don't always block signaling in PTEN null cells.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "eb415112-6917-42e7-9d77-44ba47fc6c1d",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C104",
+      "claim": "Knock down of PTEN in MEFs does not render their growth dependent on p110\u03b2 or sensitive to raft disruption.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably we have found that knock down of PTEN in our MEFs does not render their growth dependent on p110\u03b2 or sensitive to raft disruption suggesting that while PTEN loss may be necessary for p110\u03b2 activation (in rafts as demonstrated by the data in Figure 7) it is not sufficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experiments performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "35df457f-05b7-4835-acf1-46c415261250",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C105",
+      "claim": "PTEN loss may be necessary for p110\u03b2 activation in rafts but is not sufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably we have found that knock down of PTEN in our MEFs does not render their growth dependent on p110\u03b2 or sensitive to raft disruption suggesting that while PTEN loss may be necessary for p110\u03b2 activation (in rafts as demonstrated by the data in Figure 7) it is not sufficient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that PTEN knockdown alone doesn't confer p110\u03b2 dependence or raft sensitivity in MEFs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "4e8f939b-4293-48a5-b9f1-5625b554aaec",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C106",
+      "claim": "Not all tumors arising in mice with global knockout of a single PTEN allele are dependent on p110\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly the Vanhaesebroeck group has found that not all tumors arising in mice with global knockout of a single PTEN allele are dependent on p110\u03b2 (Berenjeno et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f238eca1-4648-455e-bc3e-78a96e3f22bb",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C107",
+      "claim": "Additional parameters beyond PTEN loss are involved in optimal activation of p110\u03b2 in a PTEN null setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus additional parameters seem to be involved in optimal activation of p110\u03b2 in a PTEN null setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations that PTEN loss alone is not sufficient for p110\u03b2 dependence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "0a7e2037-f222-4b26-b9fb-e4afae886694",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C108",
+      "claim": "Use of simvastatin hampers proliferation of PTEN null cancer cells which might pinpoint a plausible 'addiction' of these cancer cells to raft mediated PI3K function.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of simvastatin, an FDA approved cholesterol lowering drug, hampered proliferation of PTEN null cancer cells which might pinpoint a plausible 'addiction' of these cancer cells to raft mediated PI3K function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by proliferation assays showing PTEN null cells are more sensitive to simvastatin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "16d65a4f-f58f-4b6b-abf8-324619828182",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C109",
+      "claim": "A combinatorial treatment regimen employing PI3K inhibitors and cholesterol lowering statins might have the potential to treat a broad range of cancers with minimal undesirable side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, a combinatorial treatment regimen employing PI3K inhibitors and cholesterol lowering statins might have the potential to treat a broad range of cancers with minimal undesirable side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential therapeutic applications based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "555122be-7dd6-4e29-b13c-b34235226d9d",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C110",
+      "claim": "Recruitment and activation constitute two distinct steps in PI3K/Akt signaling downstream of GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we propose that recruitment and activation constitute two distinct steps in PI3K/Akt signaling downstream of GPCRs (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings showing raft localization and subsequent activation are separable events.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "ac6857e2-d025-4d26-8361-6c9b723a459c",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "claim_id": "C111",
+      "claim": "Once properly placed, either p110\u03b1 or \u03b2 molecules can be activated via alternative GPCR signaling cascades owing to the versatility of signaling components activated by a liganded GPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Once properly placed, either p110\u03b1 or \u03b2 molecules can be activated via alternative GPCR signaling cascades owing to the versatility of signaling components activated by a liganded GPCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing both p110\u03b1 and p110\u03b2 can be activated by GPCRs when localized to rafts, but through different mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c105008e-603d-4594-ac94-b3981fe95a1b",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors generated p110\u03b1/p110\u03b2 double knockout (DKO) MEFs and demonstrated that these cells show reduced Akt phosphorylation, blunted response to growth factors, and growth arrest. Ectopic expression of either p110\u03b1 or p110\u03b2 rescues these defects, and the resulting add-back cells are highly sensitive to isoform-specific inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 provide converging evidence from western blots (Figure 1A,B), proliferation assays (Figure 1C), and inhibitor sensitivity experiments (Figure 1E, Figure 1\u2014figure supplement 1A,B) that establish the DKO system as a valid model for studying individual PI3K isoforms. The data demonstrate loss of protein expression, functional consequences, and rescue by add-back constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "p110\u03b2 localizes to membrane rafts in a Rac1-dependent manner. The authors show that p110\u03b2 is present in detergent-resistant membrane (DRM) fractions in multiple cell types, co-fractionates with Rac1, and loses raft localization upon Rac1 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C34-C37, and C43 are supported by multiple fractionation approaches (triton-based and detergent-free) across different cell types (MEFs, HMECs, cancer cell lines) shown in Figures 2A, 2\u2014figure supplement 1A,B, and 2H. The Rac1 dependence is demonstrated by siRNA knockdown experiments showing loss of p110\u03b2 from DRM fractions while membrane markers remain unchanged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "p110\u03b2 mutants deficient in G\u03b2\u03b3 or Rac1 binding show impaired proliferation, migration, and GPCR-mediated Akt activation. Only the G\u03b2\u03b3 binding mutant (GBM) but not the Rac1 binding mutant (RBM) localizes to rafts, suggesting Rac1 binding constitutes a raft localization signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by proliferation assays (Figure 2D), migration assays (Figure 2E), signaling experiments (Figure 2F), and fractionation data (Figure 2G). The differential raft localization of GBM versus RBM mutants provides strong evidence that Rac1 binding is required for raft localization. However, the claim that Rac1 binding 'constitutes' a raft localization signal (C42) is somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "34978c81-7fa2-49d8-9d2d-65bb7337fb84",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Raft-targeted p110\u03b2 (p110\u03b2-Lyn) but not nonraft-targeted p110\u03b2 (p110\u03b2-Ras) supports Akt phosphorylation upon LPA stimulation. This is demonstrated by both biochemical and immunofluorescence approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by detergent-free fractionation confirming differential localization (Figure 3B), western blots showing differential p-Akt response to LPA (Figure 3D), and immunofluorescence showing membrane-associated p-Akt only in p110\u03b2-Lyn cells (Figure 3\u2014figure supplement 1). The data consistently demonstrate that raft localization is required for GPCR-mediated activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "5f70bf34-fae3-4772-a4c2-be28e1e92ddb",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Raft targeting of p110\u03b2-RBM (Rac1 binding mutant) restores Akt phosphorylation upon LPA stimulation, but raft targeting of p110\u03b2-GBM (G\u03b2\u03b3 binding mutant) does not. This suggests that Rac1 binding regulates raft recruitment while G\u03b2\u03b3 interaction is independently required for activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 are supported by western blot data in Figure 4C showing selective rescue of p-Akt in p110\u03b2-Lyn RBM but not p110\u03b2-Lyn GBM upon LPA stimulation. This provides strong evidence for a two-step model where Rac1 mediates localization and G\u03b2\u03b3 mediates activation. The inference is logical and well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f52e3250-1418-4f7d-88fe-ec4231115b95",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Raft-targeted p110\u03b2 constructs fail to induce p-Akt when rafts are disrupted by cholesterol depletion (M\u03b2CD), and this defect is rescued by cholesterol addition. In contrast, nonraft-targeted p110\u03b2-Ras is insensitive to cholesterol depletion for serum/PDGF signaling but cannot respond to LPA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by western blot data in Figures 4D and 4E showing that M\u03b2CD treatment abolishes p-Akt in raft-targeted constructs (rescued by cholesterol), while p110\u03b2-Ras maintains signaling with serum/PDGF but not LPA. This demonstrates the critical role of raft integrity for GPCR signaling specifically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "700a0432-8c72-49b5-a063-83a57a6c50fe",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Raft-targeted p110\u03b2-Lyn RBM supports proliferation and migration comparable to p110\u03b2-Lyn, while p110\u03b2-Lyn GBM shows defects in both. This supports the conclusion that the primary function of Rac1 binding is to localize p110\u03b2 to rafts for GPCR signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by proliferation assays (Figure 5A), wound healing assays (Figure 5B,C), and Transwell migration assays (Figure 5D,E). The data consistently show that raft targeting compensates for Rac1 binding deficiency but not G\u03b2\u03b3 binding deficiency, supporting the two-step model. The conclusion (C58) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "p110\u03b1 normally resides in nonraft regions and does not respond to GPCR activation. However, when artificially targeted to rafts (p110\u03b1-Lyn), it becomes responsive to LPA stimulation and activates Akt, while nonraft-targeted p110\u03b1-Ras does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C59-C62, and C92 are supported by fractionation data showing p110\u03b1 in nonraft fractions (Figures 2A, 6B), lack of response to LPA in p110\u03b1-wt cells, and robust p-Akt response in p110\u03b1-Lyn but not p110\u03b1-Ras cells upon LPA stimulation (Figure 6C). Immunofluorescence data (Figure 6\u2014figure supplement 1B) confirms membrane-associated p-Akt only in p110\u03b1-Lyn cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "6853a999-77ba-4fc3-868f-ad0b5e320a83",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Raft-targeted p110\u03b1 is activated by GPCRs through EGFR transactivation rather than the canonical G\u03b2\u03b3 pathway. EGFR inhibition blocks p110\u03b1-Lyn mediated signaling while G\u03b2\u03b3 inhibition does not, whereas the opposite is true for p110\u03b2-wt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C65-C66, C69-C74 are supported by inhibitor experiments (Figure 6D) showing differential sensitivity to EGFR versus G\u03b2\u03b3 inhibition, proliferation assays with inhibitors (Figure 6E), and rescue experiments in PC3 cells (Figure 6\u2014figure supplement 2B). The data demonstrate distinct activation mechanisms for raft-localized p110\u03b1 versus p110\u03b2, though the EGFR transactivation mechanism relies on prior literature (C67-C68).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "cda350aa-07c7-483d-bf2d-5a8be219b26a",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PTEN null tumor cells critically rely on raft-associated PI3K activity. PTEN null cells (PC3, BT549) are significantly more sensitive to cholesterol depletion (M\u03b2CD) and cholesterol synthesis inhibition (simvastatin) compared to PTEN wild-type cells (DU145, MCF7, T47D).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C76-C80, C93, C101, and C108 are supported by proliferation assays showing differential sensitivity of PTEN null versus wild-type cell pairs to M\u03b2CD (Figure 7\u2014figure supplement 1A-D) and simvastatin (Figures 7A-D, Figure 7\u2014figure supplement 1E,F). The data consistently demonstrate that PTEN null cells are more dependent on raft integrity for growth.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "d2ff733b-cbdd-43b7-b235-3bef97ae33f1",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Expression of constitutively active oncogenic p110\u03b1 mutants (H1047R, E545K) in PTEN null PC3 cells partially rescues growth and Akt activation in the presence of simvastatin, suggesting these mutants can bypass raft-dependent activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 are supported by western blots showing Akt activation by oncogenic mutants (Figure 7E), proliferation assays showing resistance to simvastatin (Figure 7F), and biochemical analysis showing maintained p-Akt upon simvastatin treatment (Figure 7G). The inference that oncogenic mutants bypass raft dependence (C85) is reasonable though the mechanism (C86) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "5f10a7b5-dc41-4c6d-9c9a-e90f503786cc",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Re-expression of wild-type PTEN in PTEN null cells (PC3, BT549) reduces Akt activation and increases resistance to simvastatin, while catalytically dead PTEN (C124S) does not. This supports the notion that PTEN loss leads to dependence on raft-mediated PI3K signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 are supported by western blots showing reduced p-Akt upon PTEN re-expression (Figure 7\u2014figure supplement 2A,D) and proliferation assays showing increased simvastatin resistance only with wild-type PTEN (Figure 7\u2014figure supplement 2B,C,E,F). The data provide strong evidence that functional PTEN reverses raft dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "f289003a-f658-40b4-8430-d60079c13244",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PTEN knockdown in MEFs does not render their growth dependent on p110\u03b2 or sensitive to raft disruption, and not all tumors in PTEN heterozygous mice are p110\u03b2-dependent. This suggests PTEN loss is necessary but not sufficient for p110\u03b2 activation in rafts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 are supported by the authors' own observations (C104) and citation to prior literature (C106). The inference that PTEN loss is necessary but not sufficient (C105, C107) is logical given the data, though the specific additional parameters remain undefined. This represents an important caveat to the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "9a420def-ea45-42fb-b60a-aead82ad0a29",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cholesterol depletion specifically inhibits Akt phosphorylation while Erk phosphorylation is largely unaffected, indicating that MAPK signaling by GPCRs is not crucially dependent on raft integrity and that membrane compartmentalization may be unique to PI3K/Akt signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 are supported by western blot data showing differential effects of cholesterol depletion on p-Akt versus p-Erk. However, the claim that raft dependence is 'unique' to PI3K/Akt signaling (C96) is overstated\u2014the data only show that MAPK signaling is less dependent on rafts in this specific context. The inference is reasonable but should be more cautiously stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "efd1de86-6d76-4766-a40d-ae5c1255e4de",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose a two-step model for PI3K activation by GPCRs: recruitment to rafts (mediated by Rac1 for p110\u03b2) followed by activation (mediated by G\u03b2\u03b3 for p110\u03b2 or EGFR for raft-targeted p110\u03b1). Once properly localized, either p110\u03b1 or p110\u03b2 can be activated via alternative GPCR signaling cascades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C90-C91, and C110-C111 represent the authors' integrative model based on the collective experimental evidence. The model is well-supported by the data showing that raft targeting compensates for Rac1 binding deficiency but not G\u03b2\u03b3 binding deficiency, and that raft-targeted p110\u03b1 can be activated through EGFR. This represents a major conceptual advance in understanding PI3K isoform specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide extensive background on PI3K signaling, including biochemical mechanisms, isoform differences, cancer relevance, and prior work on membrane rafts. This includes established knowledge and citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C27, C63, C67-C68, and C75 represent background information supported by citations to prior literature. These claims are appropriately referenced and provide necessary context for the current work. They are not novel findings but rather established knowledge that frames the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    },
+    {
+      "id": "493395d0-dbe1-4540-9984-1c9a02fa3135",
+      "content_id": "5647083d-c540-4a79-861d-9e70fe276790",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose several speculative mechanisms and therapeutic implications, including: oncogenic p110\u03b1 mutants bypass raft dependence, PTEN localization restricts signaling propagation, and combination therapy with PI3K inhibitors and statins may be effective for PTEN null cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C97-C100, C102-C103, and C109 represent speculative reasoning and proposed mechanisms that extend beyond the direct experimental evidence. While these are reasonable hypotheses based on the data, they require additional experimental validation. The therapeutic proposal (C109) is particularly speculative and would require extensive preclinical and clinical testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:05:34.595022Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7b3833e2-bd33-465d-a252-5959421b031c",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "3854f5bb-f593-4a61-a45d-15cf5400b5e8",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "cef1cca6-3798-4fef-8a66-ac89c3028dea",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "1b77b74c-1fff-401e-8fdc-05ff730069a0",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "e51f2509-2a0a-4824-89ac-36207dd8e6d0",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "d1196014-f926-4eee-b551-dbebca0920c8",
+      "result_id": "c105008e-603d-4594-ac94-b3981fe95a1b"
+    },
+    {
+      "claim_id": "41edf333-03a0-4231-b7c6-cf108701c76a",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "62684f55-5f0d-498b-a06c-56af61910afc",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "a41e697c-e410-4424-a373-849574d234b7",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "cf40d264-f59b-41ec-9df8-d58cbe62b1c1",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "c01b3b13-83fa-4655-b464-dba75105876c",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "ec3ec5c2-235e-49ae-ac97-3b76d3ede0a4",
+      "result_id": "d90871dd-a008-4124-aa7f-3dda2a88ce9e"
+    },
+    {
+      "claim_id": "c51bf636-549a-4094-bc03-fc659e645d9e",
+      "result_id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9"
+    },
+    {
+      "claim_id": "e9853ce8-edac-4165-adc8-25c5a821e078",
+      "result_id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9"
+    },
+    {
+      "claim_id": "9f5cefb4-2bdb-478c-8ef0-58d8032ec6e4",
+      "result_id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9"
+    },
+    {
+      "claim_id": "e7efa16b-37a0-4959-b6fc-e3a4411d5485",
+      "result_id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9"
+    },
+    {
+      "claim_id": "4743bf4c-979f-4a18-90d6-3e1c6643517f",
+      "result_id": "73c40be1-a761-4c03-a5ec-8f1258c16aa9"
+    },
+    {
+      "claim_id": "8f3b40b9-4ac4-4c84-97ad-34fa1b63b627",
+      "result_id": "34978c81-7fa2-49d8-9d2d-65bb7337fb84"
+    },
+    {
+      "claim_id": "b10be32b-17d3-46da-b113-adbdbf8b1937",
+      "result_id": "34978c81-7fa2-49d8-9d2d-65bb7337fb84"
+    },
+    {
+      "claim_id": "62aa9481-0ac2-4072-bee7-2aa017c717fa",
+      "result_id": "34978c81-7fa2-49d8-9d2d-65bb7337fb84"
+    },
+    {
+      "claim_id": "3ab2be78-c5d3-4eb9-9ce2-ae72a85d70bf",
+      "result_id": "34978c81-7fa2-49d8-9d2d-65bb7337fb84"
+    },
+    {
+      "claim_id": "1b0e552c-7b9c-48c0-a55d-03f03267f8e4",
+      "result_id": "5f70bf34-fae3-4772-a4c2-be28e1e92ddb"
+    },
+    {
+      "claim_id": "c425bca2-8092-4a01-a092-0fcfa287ffb0",
+      "result_id": "5f70bf34-fae3-4772-a4c2-be28e1e92ddb"
+    },
+    {
+      "claim_id": "e5190153-f09d-48d2-8d5e-f4167431eacf",
+      "result_id": "5f70bf34-fae3-4772-a4c2-be28e1e92ddb"
+    },
+    {
+      "claim_id": "10f6245a-1a05-483a-af6c-29826fdb79ed",
+      "result_id": "f52e3250-1418-4f7d-88fe-ec4231115b95"
+    },
+    {
+      "claim_id": "14bfa62d-2a60-470f-82bb-54a257aced49",
+      "result_id": "f52e3250-1418-4f7d-88fe-ec4231115b95"
+    },
+    {
+      "claim_id": "c2287a13-2c26-4caf-9923-636de723ede8",
+      "result_id": "f52e3250-1418-4f7d-88fe-ec4231115b95"
+    },
+    {
+      "claim_id": "29b81832-7094-4517-972f-77d8117fb2e2",
+      "result_id": "700a0432-8c72-49b5-a063-83a57a6c50fe"
+    },
+    {
+      "claim_id": "49baee0f-5127-40af-b26f-f19d3ee33fb7",
+      "result_id": "700a0432-8c72-49b5-a063-83a57a6c50fe"
+    },
+    {
+      "claim_id": "adf2a928-a94e-47cc-9b42-32505cce939a",
+      "result_id": "700a0432-8c72-49b5-a063-83a57a6c50fe"
+    },
+    {
+      "claim_id": "35999882-d05b-4a14-96dd-c5eb48363509",
+      "result_id": "700a0432-8c72-49b5-a063-83a57a6c50fe"
+    },
+    {
+      "claim_id": "184e586e-d5c9-4aad-b026-6c695a5aa208",
+      "result_id": "700a0432-8c72-49b5-a063-83a57a6c50fe"
+    },
+    {
+      "claim_id": "8feec990-c619-4a73-871b-64a03a113328",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "376925fd-52aa-4091-b557-a70db0c3ae24",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "2f6c26d2-fb74-4a4d-b811-188946767b19",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "b22d1c14-b1aa-4f4f-9483-db978adf79eb",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "77343c2f-d55b-4876-96a7-9dd96835fbbb",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "c38b8227-cd60-425a-a6a5-e04cd8f54ed0",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "30222c94-2c6b-4f12-9425-1a8cd5ff0efc",
+      "result_id": "a0ba000e-fcb1-4127-af10-719d6a2bf83f"
+    },
+    {
+      "claim_id": "5be6f002-661d-472d-8d5d-bf9943bed413",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "2024ebad-1802-438f-9e0c-d29873075464",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "7813549b-6378-4843-b98b-124e85a500c6",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "20943eda-6fef-46c4-9a23-01b8c89c27cd",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "f8b29d93-49b1-477a-a6f0-e8cd294db5c4",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "ee994e19-c909-40ad-9a5d-116895b6fca6",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "1eb1a944-50c3-4d39-809b-b54273abe4cd",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "fa3c429f-0c37-4572-9396-fac570de2a00",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "b869a7dd-8e16-415e-a1d5-6037a7b63c32",
+      "result_id": "6853a999-77ba-4fc3-868f-ad0b5e320a83"
+    },
+    {
+      "claim_id": "fcf69db1-b476-4f3f-b778-279b1ec2d090",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "536b4793-8b16-46e4-bc1e-0b7cb5876e15",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "b9b94031-3a62-41b8-9d20-7155890912b0",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "6036e857-e13e-4c81-8053-f8079db35c19",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "265fc2c1-841b-4e32-8941-61ccdf90a69d",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "b4702fab-d6af-4cfe-8131-b90bbed62af3",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "44630fc5-a4fe-4958-9fab-dedb81ad2d99",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "8b5320f5-b0ed-48cb-92f9-d4222f2fd945",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "0a7e2037-f222-4b26-b9fb-e4afae886694",
+      "result_id": "cda350aa-07c7-483d-bf2d-5a8be219b26a"
+    },
+    {
+      "claim_id": "34d1bdf6-fa12-4273-934b-2c1bbd502130",
+      "result_id": "d2ff733b-cbdd-43b7-b235-3bef97ae33f1"
+    },
+    {
+      "claim_id": "8926422f-dcc6-486a-97d4-e8679148ab1a",
+      "result_id": "d2ff733b-cbdd-43b7-b235-3bef97ae33f1"
+    },
+    {
+      "claim_id": "3e0ae25c-1404-4795-bdd2-34c2d39cee66",
+      "result_id": "d2ff733b-cbdd-43b7-b235-3bef97ae33f1"
+    },
+    {
+      "claim_id": "16059fae-9e3b-4a30-a9c0-10d5624a96b2",
+      "result_id": "d2ff733b-cbdd-43b7-b235-3bef97ae33f1"
+    },
+    {
+      "claim_id": "9279e8d5-260b-46f7-b2ea-a408ae20786a",
+      "result_id": "5f10a7b5-dc41-4c6d-9c9a-e90f503786cc"
+    },
+    {
+      "claim_id": "21fcbb2f-d1af-41ee-be0e-824bb3fb4fda",
+      "result_id": "5f10a7b5-dc41-4c6d-9c9a-e90f503786cc"
+    },
+    {
+      "claim_id": "e1298978-8334-4954-8faf-b584873b257f",
+      "result_id": "5f10a7b5-dc41-4c6d-9c9a-e90f503786cc"
+    },
+    {
+      "claim_id": "eb415112-6917-42e7-9d77-44ba47fc6c1d",
+      "result_id": "f289003a-f658-40b4-8430-d60079c13244"
+    },
+    {
+      "claim_id": "35df457f-05b7-4835-acf1-46c415261250",
+      "result_id": "f289003a-f658-40b4-8430-d60079c13244"
+    },
+    {
+      "claim_id": "4e8f939b-4293-48a5-b9f1-5625b554aaec",
+      "result_id": "f289003a-f658-40b4-8430-d60079c13244"
+    },
+    {
+      "claim_id": "f238eca1-4648-455e-bc3e-78a96e3f22bb",
+      "result_id": "f289003a-f658-40b4-8430-d60079c13244"
+    },
+    {
+      "claim_id": "0d7f3f9b-4043-4d45-bb4f-858d74ef083e",
+      "result_id": "9a420def-ea45-42fb-b60a-aead82ad0a29"
+    },
+    {
+      "claim_id": "23e12f73-93b3-43b8-99d7-f34ae98c5155",
+      "result_id": "9a420def-ea45-42fb-b60a-aead82ad0a29"
+    },
+    {
+      "claim_id": "833d714d-7771-4d64-8991-03d1d5d9f082",
+      "result_id": "9a420def-ea45-42fb-b60a-aead82ad0a29"
+    },
+    {
+      "claim_id": "f37932e5-b759-414e-b538-f58549971401",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "a6c4d04c-2b3a-4acb-a13e-dc9513161e51",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "20053215-fb89-4e93-bc42-07e0e8460e7c",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "75ef8e4b-a9de-45da-8f19-4981877f07a6",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "555122be-7dd6-4e29-b13c-b34235226d9d",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "ac6857e2-d025-4d26-8361-6c9b723a459c",
+      "result_id": "efd1de86-6d76-4766-a40d-ae5c1255e4de"
+    },
+    {
+      "claim_id": "65ba6189-a8ed-430c-912f-6c45219b40d6",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "5f91afd4-aa8b-4137-8e07-b9fd6a356a1b",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "ae29d9ea-6565-416e-9652-3d39440c49e4",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "a51bdecc-c022-41dd-aef8-2effc9201368",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "0e1983ec-989f-4754-8793-b7ebef508f5f",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "8cc58084-3017-4332-ae32-b9fdb47a1b20",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "8a7cfef3-2f9e-428e-a94c-15506527f7cc",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "9f3eca2b-8290-48f4-93a1-9ebca6b90b36",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "5e9c3357-0150-4cbe-bae3-74e2458a071a",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "db7581b1-c63c-406d-8374-03d8c169edb6",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "c42a7212-cf5d-41be-b5df-4a2fc00d2b7e",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "3f0117d6-9bf0-4fd1-a6f8-26e3db22f68e",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "b6a06adf-fa39-4324-be47-d9296717db75",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "0d9c3d1e-e152-4010-8e64-9e9bae0595ab",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "8c39c0a1-6b05-4f68-92a2-73a401d40a8f",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "760a7bce-d22f-4a93-b7a9-18ce4b5de352",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "08f456a8-1c0c-4ffe-a42c-e85587212c64",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "c3ed4d0e-5d78-4918-a801-64691cd85018",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "d239a8bb-0340-4060-be94-13c8ad4c56e1",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "9df9fe57-4e31-489a-9293-7a879fe326b0",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "545a29ef-e430-4544-a01d-a45ee219290a",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "9207c0d1-90a7-4b4e-9081-6c410bdf41f1",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "f23fc5e7-700b-4c02-a03e-ccac98e778ea",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "627ce02e-7194-43ab-b61c-75691e2db92c",
+      "result_id": "405040eb-982b-40fc-b2da-dfd4bab9b8c5"
+    },
+    {
+      "claim_id": "b1ae9e44-1768-4b8f-ba3a-1b581b2119cc",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "01c26cd6-1a39-4fcf-8994-df434f8b58ec",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "d850c0d5-262a-42f0-ae53-db10f7c9b951",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "7e95fe71-c417-4588-8563-fb8636e763cc",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "abd1fd41-1955-41e8-85a3-cf7ba5b63c8e",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "69f24336-0754-463c-8d56-f7083947b4f7",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "ceeb6182-c746-44aa-83cf-21e902201517",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    },
+    {
+      "claim_id": "16d65a4f-f58f-4b6b-abf8-324619828182",
+      "result_id": "493395d0-dbe1-4540-9984-1c9a02fa3135"
+    }
+  ],
+  "comparisons": []
+}

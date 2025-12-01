@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Chirp stimulus waveforms become more similar to the background beat at higher beat frequencies due to lower frequency contrast, making chirp detection more difficult. However, the inter-chirp distances (differences between chirps at different phases) remain constant across beat frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are well-supported by quantitative data in Figures 1E-G. The visual evidence clearly shows increased similarity to background at higher frequencies (C14), decreased detectability (C15, Figure 1F), and constant inter-chirp distances (C16, Figure 1G with statistical testing).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Increasing background beat frequency causes phase locking in peripheral afferents, resulting from their high-pass filtering properties. This phase locking manifests as increased firing rate modulations and expanded periods of firing cessation (rectification) at higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C24 are strongly supported by experimental data in Figure 2B and Figure 2\u2014figure supplement 2A,B, showing clear phase locking at higher frequencies. The mechanistic explanation via high-pass filtering (C22) is well-established in cited literature (Bastian, 1981; Xu et al., 1996; Chacron et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C26",
+      "C27"
+    ],
+    "result": "Single afferent responses to chirps are phase-dependent and show low invariance across all beat frequencies. Response duration decreases with increasing beat frequency, but detectability remains consistently low because chirp responses are as variable as beat responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C26-C27 are well-supported by experimental data in Figures 2B-E and supplementary figures. The quantitative invariance and detectability measures (Figures 2D, 2E) provide clear evidence for low performance of single afferent activity across all frequencies tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C9"
+    ],
+    "result": "At low beat frequencies (<16 Hz), correlated afferent activity provides phase-invariant chirp representation through synchronized increases in firing rate or cessation after chirp onset, with correlations increasing irrespective of beat phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30, C9 are supported by data in Figures 2B, 2C, and Figure 2\u2014figure supplement 1A showing clear correlation increases after chirp onset at low frequencies. This replicates previous findings (Metzen et al., 2016) and extends them across frequency ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "At higher beat frequencies (>32 Hz), phase locking causes correlated activity to become phase-dependent during the beat cycle, eliminating phase-invariant chirp representation and decreasing detectability. Phase locking is strongly detrimental to both invariance and detectability of correlated activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by experimental data in Figures 2B-E and Figure 2\u2014figure supplement 2. The data clearly show decreased invariance (Figure 2D, purple) and detectability (Figure 2E, purple) at higher frequencies, with mechanistic explanation linking to phase locking patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C4"
+    ],
+    "result": "Behavioral responses show decreased invariance and detectability at higher beat frequencies, closely matching predictions from correlated afferent activity but not single neuron activity. Correlated activity is a much better predictor of behavior than single neuron responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41, C4 are strongly supported by behavioral data in Figures 3B-D. The close match between correlated activity and behavior (Figures 3C, 3D) versus poor match with single units provides compelling evidence that correlated activity predicts behavioral performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Increasing background frequency decreases both detectability and phase invariant coding through phase locking, which causes increased correlations during beat cessation periods and greater variability in correlation throughout the beat cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C46 synthesize the mechanistic findings. The causal chain from phase locking to decreased performance is well-supported by the experimental data (Figures 2, 3) and mechanistic understanding from cited literature on high-pass filtering properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C47"
+    ],
+    "result": "The results provide a novel explanation for why small chirps preferentially occur on low-frequency beat backgrounds: such chirps cannot be encoded and perceived phase-invariantly at higher beat frequencies due to phase locking effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43, C47 present the main interpretive conclusion. While C47 is explicitly labeled as a hypothesis, it is well-supported by the experimental findings showing loss of invariance and detectability at high frequencies. The preference for low frequencies is established in cited literature (Bastian et al., 2001; Engler and Zupanc, 2001; Zakon et al., 2002).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Small chirps preferentially occur when fish are farther apart, which the authors explain by noting that high beat amplitudes at close distances would cause phase locking even at low frequencies. The authors predict this would similarly impair detectability and invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C53 extend the findings to amplitude effects. While C48-C52 are supported by citations to previous work, C53 is explicitly a prediction requiring future experimental validation. The experimental conditions used low amplitudes (C52, C63), so the prediction about high-amplitude effects remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The characteristics (frequency excursion and duration) of behaviorally-elicited chirps did not differ significantly across different background beat frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by statistical analysis in Figure 3\u2014figure supplement 1, showing no significant differences in chirp parameters across beat frequencies (Kruskal-Wallis tests with p>0.2). This control is important for ensuring that behavioral changes reflect perceptual differences rather than altered chirp production.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Periods of complete firing cessation slightly increase invariance scores for single afferents at higher beat frequencies (>32 Hz) by decreasing distances between responses to chirps at different phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by data in Figure 2D (blue curve) showing slight increase in single-unit invariance at frequencies >32 Hz. The mechanistic explanation linking this to rectification periods is reasonable given the phase locking data, though the effect is modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Previous work (Metzen et al., 2016) established that correlated afferent activity provides phase-invariant chirp representation that is refined through ELL and TS to produce phase-invariant behavior, while single afferents do not show phase invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C12 summarize prior work from Metzen et al., 2016 and other cited studies. These are appropriately cited and provide necessary context. The current study extends this framework by varying beat frequency, which was held constant in the prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Chirps are emitted on top of beats with frequencies spanning a wide range, creating heterogeneities in stimulus waveforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by citation to Zakon et al., 2002 and provides important biological context for why varying beat frequency is relevant. This motivates the experimental design of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The findings have broad implications for other sensory systems, as signal-background segregation, neural correlations, phase locking, and feature invariance are ubiquitous across sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 discuss broader implications and are well-supported by extensive citations across sensory systems (auditory, visual, olfactory, electrosensory). These claims appropriately contextualize the findings within broader neuroscience, though direct experimental validation in other systems is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The study used appropriate methods including ethical approval, established surgical and recording techniques, standardized stimuli (60 Hz frequency increase, 14 ms duration chirps), controlled stimulus intensities (0.14-0.61 mV/cm), and adequate sample sizes (N=116 afferents, N=33 fish, n=3467 chirps).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 describe methodological details that are clearly documented and appropriately controlled. Sample sizes appear adequate, stimulus parameters are well-defined and held constant appropriately (C64), and ethical approval is documented (C58). Methods follow established protocols with appropriate citations.",
+    "result_type": "MINOR"
+  }
+]

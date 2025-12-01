@@ -1,0 +1,2072 @@
+{
+  "submission": {
+    "id": "c870eab4-58ea-4325-8268-92ff59e476fc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:33:02.505367Z",
+    "updated_at": "2025-11-30T22:33:02.505367Z"
+  },
+  "content": [
+    {
+      "id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "submission_id": "c870eab4-58ea-4325-8268-92ff59e476fc",
+      "content_type": "manuscript",
+      "content_text": "# The RFamide receptor DMSR-1 regulates stress-induced sleep in C. elegans\n\n## Authors\n\n- Michael J Iannacone<sup>1</sup>\n- Isabel Beets<sup>3</sup>\n- Lindsey E Lopes<sup>1</sup>\n- Matthew A Churgin<sup>4</sup>\n- Christopher Fang-Yen<sup>4</sup>\n- Matthew D Nelson<sup>5</sup>\n- Liliane Schoofs<sup>3</sup>\n- David M Raizen<sup>1</sup> ([ORCID: 0000-0001-5935-0476](https://orcid.org/0000-0001-5935-0476)) \u2020\n\n### Affiliations\n\n1. Department of Neurology Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n2. Center for Sleep and Circadian Neurobiology Perelman School of Medicine, University of Pennsylvania Philadelphia United States\n3. Department of Biology Katholieke Universiteit Leuven Leuven Belgium\n4. Department of Bioengineering, School of Engineering and Applied Sciences University of Pennsylvania Philadelphia United States\n5. Department of Biology Saint Joseph\u2019s University Philadelphia United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn response to environments that cause cellular stress, animals engage in sleep behavior that facilitates recovery from the stress. In Caenorhabditis elegans, stress-induced sleep(SIS) is regulated by cytokine activation of the ALA neuron, which releases FLP-13 neuropeptides characterized by an amidated arginine-phenylalanine (RFamide) C-terminus motif. By performing an unbiased genetic screen for mutants that impair the somnogenic effects of FLP-13 neuropeptides, we identified the gene dmsr-1, which encodes a G-protein coupled receptor similar to an insect RFamide receptor. DMSR-1 is activated by FLP-13 peptides in cell culture, is required for SIS in vivo, is expressed non-synaptically in several wake-promoting neurons, and likely couples to a Gi/o heterotrimeric G-protein. Our data expand our understanding of how a single neuroendocrine cell coordinates an organism-wide behavioral response, and suggest that similar signaling principles may function in other organisms to regulate sleep during sickness.\n\n## Introduction\n\nWhen acutely ill, animals engage in a behavioral sequence that includes cessation of feeding and body movements as well as reduced responsiveness to the environment. During acute infectious illness in mammals, electrophysiological correlates of sleep behavior are observed (Toth and Krueger, 1988, 1989), indicating that the behavioral sequence is sleep. In the arthropod Drosophila melanogaster (Williams et al., 2007; Lenz et al., 2015) and the nematode Caenorhabditis elegans (Hill et al., 2014), acute illness results in cellular stress, which then induces a sleep behavior: the animals stop moving and feeding, do not respond to weak stimuli but move normally in response to strong stimuli (Hill et al., 2014). This stress-induced sleep (SIS, also known as sickness sleep) is beneficial to the animal and helps it recover from the acute injury (Spiegel et al., 2002; Hill et al., 2014; Kuo and Williams, 2014; Fry et al., 2016). In fruit flies and round worms, environments that induce SIS include bacterial pathogens, bacterial toxins, heat shock, cold shock, osmotic shock, and ultraviolet light exposure (Hill et al., 2014; Lenz et al., 2015). A comparison between mammalian sickness sleep and invertebrate SIS was recently reviewed (Davis and Raizen, 2016).\n\nNematode SIS is a distinct sleep state from a larval sleep state known as developmentally timed sleep (DTS) (Trojanowski et al., 2015), which is regulated by a homolog of the core circadian protein PERIOD (Monsalve et al., 2011). In the absence of stress, nematodes experience sleep only when they transition between larval stages but do not sleep in the adult stage. Since C. elegans does not have an identifiable circadian rhythm of sleep, adult nematodes are an ideal system to study SIS in the absence of the circadian and homeostatic effects of animals that require daily sleep.\n\nThe mechanism of SIS is poorly-understood, yet a few common themes have emerged from studies across phylogeny. The acute illness can occur outside of the brain yet affect behavior, suggesting that communication occurs between non-neural and neural tissues. Cytokine signaling is involved. For example, in mammals, the cytokines interleukin-1 beta and tumor necrosis factor alpha, whose levels increase during an infectious challenge, are each sufficient to induce sleep when injected into the brain (reviewed in (Krueger, 2008). In nematodes (Van Buskirk and Sternberg, 2007), arthropods (Foltenyi et al., 2007), and mammals (Kushikata et al., 1998; Kramer et al., 2001), signaling by epidermal growth factor (EGF) is sufficient to induce sleep behavior and, at least in nematodes, EGF signaling is necessary for SIS (Hill et al., 2014). These cytokines act on central nervous system (CNS) neurons, which then induce sleep.\n\nIn mammals, CNS neurons that regulate sleep reside in the hypothalamus (Saper et al., 2005b). In C. elegans, the target for EGF action is a single interneuron called ALA (Van Buskirk and Sternberg, 2007), whose developmental program has similarities to the developmental program of mammalian neuroendocrine cells (Van Buskirk and Sternberg, 2010). With EGF activation, ALA depolarizes to release neuropeptides encoded by the gene flp-13 (FMRFamide-Like Peptide-13) to promote sleep (Nelson et al., 2014). FLP-13 peptides are characterized by an amidated Arginine-Phenylalanine (RFamide) motif at their C-termini. RFamide neuropeptides are involved in many physiological functions in both invertebrates (L\u00f3pez-Vera et al., 2008; Peymen et al., 2014), and vertebrates (R\u0151szer and B\u00e1nfalvi, 2012; Kim, 2016). In fruit flies, several RFamide neuropeptides regulate sleep (He et al., 2013; Shang et al., 2013), including the RFamide neuropeptide FMRFamide, which regulates SIS (Lenz et al., 2015).\n\nIn this study, we focused on understanding the downstream mechanism of the sleep-promoting activity of FLP-13 RFamide peptides. Both locomotion quiescence and feeding quiescence induced by flp-13 can be reversed by activation of motor neurons (Trojanowski et al., 2015), suggesting that flp-13 mediates quiescence at the level of the nervous system. Furthermore, quiescence induced by flp-13 requires the G protein alpha subunit GOA-1 (Trojanowski et al., 2015), suggesting that these peptides signal through a G protein-coupled receptor (GPCR). There are more than 150 genes in the C. elegans genome predicted to encode neuropeptide receptor GPCRs (Frooninckx et al., 2012; Hobert, 2013). In prior detailed analysis of one of these GPCRs (Nelson et al., 2015), we showed that while FRPR-4 can be activated by FLP-13 peptides in cell-based assay, its genetic removal does not abrogate flp-13 induced quiescence in vivo, suggesting that it is not the receptor mediating the quiescence-inducing effects of FLP-13 peptides in response to cellular stress. Since we had no strong a priori reason to implicate other specific GPCRs, we took a hypothesis-independent forward genetic screen approach to identify the FLP-13 receptor (Yuan et al., 2015). We here identify the GPCR DMSR-1 (DroMyoSuppressin Receptor related-1) as required for flp-13 somnogenic effects. DMSR-1 is expressed in about one tenth of all C. elegans neurons and localizes diffusely to membranes. FLP-13 peptides can activate the receptor directly, indicating that DMSR-1 is likely an in vivo receptor for FLP-13 neuropeptides. Inhibition of neurons where dmsr-1 is expressed enhances the effect of flp-13, suggesting that DMSR-1 transduces the FLP-13 signal by reducing activity of wake-promoting\u00a0neurons.\n\n## Results\n\n### dmsr-1 is required for flp-13 induced sleep\n\nOur goal was to characterize the downstream mechanism for the sleep-inducing FLP-13 neuropeptides. We induced sleep by over expressing the flp-13 gene in somatic cells under the control of the heat-inducible promoter hsp-16.2 (heat-shock protein-16.2). Phsp-16.2:flp-13 transgenic animals are quiescent for body and pharyngeal movements two hours after exposure to a heat pulse to induce flp-13 gene expression (Nelson et al., 2014). As previously described (Yuan et al., 2015) and illustrated in Figure 1A, we performed a forward mutagenesis screen to identify mutants with defective quiescence in response to flp-13 overexpression. By performing genetic complementation tests, we determined that five of the identified mutants (qn45, qn49, qn51, qn52 and qn53) were alleles of the same gene (Yuan et al., 2015). We found two additional alleles (qn40 and qn44) in this gene by manually screening for mutants with defective feeding quiescence induced by overexpression of flp-13.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig1-v1.jpg)\n\n**Figure 1.:** (A) Mutagenesis approach to identify the downstream signaling mechanism for FLP-13 peptides. The grand-daughters of Phsp-16.2:flp-13 worms that were mutagenized with the chemical ethyl methanesulfonate (EMS) were screened for rare animals that continued to feed and move after induction flp-13 overexpression. Moving animals were selected using a microfluidics automated assay (Yuan et al., 2015) and feeding animals were identified by direct observation of pharyngeal pumping movements.\u00a0(B) The DMSR-1 protein is predicted to have seven transmembrane domains with a C-terminus tail of either 145 amino acids (isoform A) or 87 amino acids (isoform B). Five mutations in DMSR-1 result in premature stop codons, one mutation results in an alanine to valine change in the second extracellular loop, and one mutation results in the removal of the C-terminal half of the protein.\u00a0(C) Phylogenetic tree relationship between 30 C. elegans proteins previously demonstrated or predicted to be RFamide receptors, three Drosophila melanogaster RFamide receptors (NM_139501; NP_647713; NP_647711), and one receptor from each Anopheles gambiae (XP_314133) and Rhodnius prolixus (Lee et al., 2015). Unless indicated otherwise, all proteins are from Caenorhabditis elegans. We drew a box to highlight DMSR-1 (isoform A). The evolutionary history was inferred by using the Maximum Likelihood method based on the JTT matrix-based model (Jones et al., 1992). The bootstrap consensus tree inferred from 1000 replicates is taken to represent the evolutionary history of the taxa analyzed. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1000 replicates) is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using a JTT model, and then selecting the topology with superior log likelihood value. The analysis involved 35 amino acid sequences. All positions containing gaps and missing data were eliminated. There were a total of 181 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 (Kumar et al., 2016).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The qn45 mutant allele involved a deletion of 332 nucleotides and a duplication of 54 nucleotides flanking the deletion, with a net loss of 278 nucleotides. This insertion/deletion (indel) is predicted to cause a frameshift resulting in an early stop codon. This indel was identified using Sanger sequencing.\u00a0(B) Predicted amino acid sequence of wild type (N2) DMSR-1 and qn45 DMSR-1 proteins. * indicates STOP codon.\n\nTo identify the gene mutated to cause the defect in flp-13 induced quiescence, we sequenced the genomes of six of the allelic mutants. Each of the six mutants had a mutation in dmsr-1, a gene predicted to encode a GPCR (Figure 1B). Four of the mutants (qn44, qn49, qn51 and qn53) contained premature stop codons. One mutant (qn45) contained a complex rearrangement in exon 4 consisting of deletion of 332 nucleotides coupled with insertion of 54 nucleotides (Figure 1\u2014figure supplement 1). This rearrangement results in a frame shift that eliminates the three transmembrane domains at the C-terminus of the protein. One mutant (qn52) contained an alanine to valine mutation in exon 3. We Sanger sequenced the dmsr-1 gene in qn40, and found a premature stop mutation in exon 4 (Figure 1B). The six mutations which caused premature stops or a deletion are predicted to eliminate gene function. We do not know whether the missense mutation in qn52 eliminates genes function; however, based on the phenotype and the relatively conservative alanine to valine mutation, the second extracellular loop where this mutation occurred likely plays an important role in the function of DMSR-1. We performed subsequent analyses using the qn45 allele because it was a convincing null mutation and because the genotype could be easily determined using polymerase chain reaction (PCR).\n\nDMSR-1 is one of 41 C. elegans proteins in the RFamide receptor family (Frooninckx et al., 2012) and is orthologous to Drosophila receptors for the neuropeptides dromyosuppressin and FMRFamide. Like FLP-13 peptides, Dromyosuppressin and FMRFamide are neuropeptides with an amidated Arginine-Phenylalanine (RFamide) motif at their C-terminus (Nachman et al., 1993). We grouped the C. elegans DMSR and other RFamide receptor proteins based on their sequence homology to the Drosophila myosuppressin receptors MsR1 and MsR2, which are known to respond to RFamide peptides (Figure 1C). Other RFamide receptors in C. elegans include FRPR (FMRFamide Peptide Receptor family) proteins, and the neuropeptide receptor family (NPR), although these FRPR and NPR receptors are more closely related to the Drosophila FMRFaR than they are to the myosuppressin related receptors. We included in the phylogenetic tree other identified RFamide receptors from the arthropods Anopheles gambiae and Rhodnius prolixus, which also share homology to the Drosophila myosuppressin receptors. Based on its mutant phenotype and its homology to known RFamide receptors, we hypothesized that DMSR-1 is a receptor for FLP-13 neuropeptides.\n\nTo measure the degree to which these dmsr-1 mutations suppressed the behavioral quiescence induced by flp-13 overexpression, we subjected Phsp-16.2:flp-13 transgenic animals to a heat pulse. We quantified feeding and locomotion quiescence two hours after induction of flp-13 overexpression \u2013 well after the acute effects of heat on quiescence have dissipated (Nelson et al., 2014). All wild-type animals pumped their pharynxes rapidly two hours after the heat pulse whereas the Phsp-16.2:flp-13 transgenic animals showed little to no feeding movements (Figure 2A\u2013B). By contrast, a significant fraction of each of the dmsr-1 mutants had pharyngeal pumping movements despite overexpression of flp-13 (Figure 2A). In the absence of a heat pulse, dmsr-1(qn45) mutants pumped rapidly at a rate no different from wild-type animals (Figure 2B). Following induction of flp-13 overexpression, the rate of pumping in dmsr-1(qn45) mutants was not changed.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig2-v1.jpg)\n\n**Figure 2.:** (A) Fraction of animals quiescent for pharyngeal pumping two hours after induction of flp-13 overexpression by exposure to a 30 min 33\u00b0C heat pulse. Statistical significance was assessed using a Fisher\u2019s exact test. N\u00a0=\u00a015\u201320 for each genotype. Asterisks indicate significant difference (p<0.0001) compared to wild type animals two hours after heat pulse.\u00a0(B) Rate of pharyngeal pumping in wild type or dmsr-1(qn45) mutants with or without the Phsp16.2:flp-13 transgene comparing the behavior pre-heat pulse to two hours post-heat pulse.\u00a0(C) Body movement quiescence in a two hour period starting two hours after induction of flp-13 overexpression.\u00a0(D) Total body movement activity in the same two-hour period as (C). Activity is the sum of pixels changed between sequential images.\u00a0Statistical significance in panels B-D was assessed using a 2-Way ANOVA with post-hoc pairwise comparisons made using Bonferroni correction method. Error bars denote Mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001.\n\nTo quantify body movements, we recorded worm activity and quiescence using the WorMotel (Churgin and Fang-Yen, 2015). The WorMotel is a polydimethylsulfoxane (PDMS) device consisting of 48 individual wells filled with agar nematode growth medium (NGM) and used to track individual worms over several hours. Two hours after induction of flp-13 overexpression, we recorded body movement activity for two hours by taking images every 10 s. We used image subtraction analysis (Raizen et al., 2008) to determine both the total activity of the animals and the amount of time that each worm spent quiescent following induction of flp-13 overexpression. Following induction of flp-13 overexpression, dmsr-1(qn45) mutants had increased body movement activity and reduced body movement quiescence in comparison to animals that were wild type for dmsr-1 (Figure 2C\u2013D).\n\nWe can make a number of predictions based on the hypothesis that DMSR-1 is the receptor for FLP-13 neuropeptides. The first prediction is that, like flp-13 (Nelson et al., 2014), dmsr-1 should be required for quiescence during SIS. The second prediction is that FLP-13 neuropeptides will activate DMSR-1 in a cell-culture system. The third prediction is that dmsr-1 should be expressed in the nervous system. Finally, DMSR-1 should be active in neurons that affect sleep/wake behavior.\n\n### DMSR-1 is required for stress induced sleep\n\nIn order to test whether dmsr-1 is required for SIS, we first artificially activated the SIS pathway. In response to stress, the C. elegans EGF (called LIN-3) activates the EGF-receptor (called LET-23) on the ALA neuron (Van Buskirk and Sternberg, 2007; Hill et al., 2014). Overexpression of LIN-3/EGF produces a robust sleep state that mimics SIS (Van Buskirk and Sternberg, 2007). While dmsr-1 mutants showed wild-type levels of feeding quiescence in response to EGF overexpression (Figure 3A), they had a small but highly significant defect relative to wild-type worms in body movement quiescence (Figure 3B). This result provides evidence that dmsr-1 is required downstream of or in parallel to EGF. The observation of only partial suppression of the EGF-induced quiescence suggests that there are other ALA-regulated signaling pathways working in parallel to dmsr-1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig3-v1.jpg)\n\n**Figure 3.:** (A) Rate of pharyngeal pumping before and up to two hours following heat pulse induction of EGF/LIN-3C overexpression. dmsr-1 does not suppress EGF induced feeding quiescence.\u00a0(B) dmsr-1(qn45) partially suppresses body movement quiescence induced by EGF overexpression (Phsp-16.2:lin-3). Body movements were measured for two hours starting one hour after induction of EGF overexpression.\u00a0(C) Rate of pharyngeal pumping in dmsr-1(qn45) mutants and dmsr-1 genomic rescue during the first hour following 35\u00b0C heat shock to induce SIS. Rescue construct is the operon-based\u00a0reporter shown in Figure 5. Asterisks denote significant difference compared to dmsr-1(qn45).\u00a0(D) Body movement quiescence during 90 min after a 35\u00b0C heat shock. The dmsr-1(qn45) mutation suppresses body movement quiescence in response to heat shock. This defect in quiescence is rescued by a genomic fragment containing dmsr-1.\u00a0Statistical significance was assessed using a 2-Way ANOVA with post-hoc pairwise comparisons made using Bonferroni correction method. Error bars denote Mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Total body movement quiescence during the first hour after exposure to the indicated temperature for 30 min. Error bars denote SEM. ***p<0.001.\u00a0(B) Total body movement quiescence each hour after exposure to ultraviolet C (UVC) light. Error bars denote SEM. ***p<0.001.\u00a0(C) Total body movement quiescence in the three hours after the start of L4 lethargus. NS denotes p>0.05.In panels A and B, statistical significance was assessed 2-Way ANOVA with post-hoc pairwise comparisons made using Bonferroni correction method, and in C with a two-tailed Student\u2019s t test.\n\nTo test the hypothesis that dmsr-1 mediates SIS, we induced sleep by exposing the animals to a heat stress of 35\u00b0C for 30 min. dmsr-1 mutations suppressed SIS with respect to both body movement quiescence and feeding quiescence (Figure 3C\u2013D). To test whether dmsr-1 was required for SIS after exposure to other temperatures, we exposed cohorts of animals to temperatures ranging from 29 to 37 degrees Celsius. The dmsr-1(qn45) mutation suppressed SIS at temperatures ranging from 34 to 37 degrees (Figure 3\u2014figure supplement 1A). To test whether dmsr-1 was required for sleep in response to stressors other than heat, we exposed animals to ultraviolet C (UVC) radiation. UVC induced a strong body movement quiescent response, which was attenuated in the dmsr-1(qn45) mutant (Figure 3\u2014figure supplement 1B). We partially restored SIS in dmsr-1 mutants by expressing a genomic fragment of dmsr-1 including the coding region and 4 kb of upstream regulatory DNA (Figure 3C,D). It is possible that the incomplete rescue of SIS is due to an absence of dmsr-1 in the full complement of cells where it acts. This incomplete expression may be due to the nature of our extrachromosomal DNA array, which is not inherited by every somatic cell. Alternatively, it is possible that the genomic DNA fragment does not contain all required dmsr-1 regulatory elements. While dmsr-1 mutants were defective in quiescence associated with SIS, they had normal quiescence associated with DTS (Figure 3\u2014figure supplement 1C\u2013D), as previously shown for flp-13 mutants (Nelson et al., 2014), supporting the notion that the DTS and SIS are regulated at least partially differently (Trojanowski et al., 2015).\n\nThese experiments therefore demonstrate that, in response to cellular stress, dmsr-1 is required for quiescence of feeding movements and body movements.\n\n### FLP-13 neuropeptides activate DMSR-1 in cell culture cells\n\nTo test the prediction that FLP-13 peptides activate DMSR-1 in cell culture, we cloned DMSR-1 isoform A into a mammalian expression vector and transiently expressed the protein in Chinese hamster ovarian (CHO) culture cells. These cells stably express a promiscuous G\u03b116 subunit as well as an aequorin reporter activated by intracellular calcium fluxes. G\u03b116 causes a Ca2+ flux in response to receptor activation regardless of the type of G-protein that couples to the receptor in vivo (Figure 4A) (Beets et al., 2011).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig4-v1.jpg)\n\n**Figure 4.:** (A) Signal transduction components in a cell system used to test for receptor activation by peptide ligands (L). DMSR-1A was expressed in CHO cells along with the calcium sensitive bioluminescent protein aequorin. The receptor was paired with the promiscuous human G\u03b116 protein, which causes calcium release from intracellular storage sites upon receptor activation. The calcium response elicits a luminescent signal from aequorin, a calcium-activated protein.\u00a0(B) FLP-13 peptide sequences. flp-13 encodes seven distinct peptides (* indicates that this peptide is encoded by the gene sequence twice). EC50 indicates the concentration of neuropeptide required to elicit 50% of the maximum luminescent response from the aequorin protein (as shown in C).\u00a0(C) Dose response curves for the seven FLP-13 peptides. Error bars represent SEM from 8\u201312 trials of neuropeptide treatment. Line represents non-linear regression fit of a variable slope line using four parameters. The x-axis is shown on a logarithmic scale.\n\nWe measured the response of cells expressing DMSR-1 isoform A to a range of FLP-13 peptide concentrations. Since the FLP-13 protein is processed into seven distinct RFamide peptides (Figure 4B), we performed a dose-response study with each of these seven peptides. Each of these peptides was capable of activating DMSR-1. The most potent activator was FLP-13\u20135, which elicited a 50% maximal response (EC50) at a concentration of 2.3 nM (Figure 4B\u2013C). The observed potent activation of DMSR-1 by FLP-13 peptides in this cell based assay supports the hypothesis that DMSR-1 is an in vivo receptor for FLP-13 peptides.\n\n### DMSR-1 is expressed in the nervous system\n\nThe third prediction made by our model is that dmsr-1 is expressed in the nervous system. This prediction arises from prior studies indicating that the mechanism of feeding and movement quiescence observed with flp-13 overexpression occurs through the inhibition of cholinergic motor neurons (Trojanowski et al., 2015). To test this prediction, we attached the rescuing genomic DNA of dmsr-1 to a trans-splice acceptor site followed by the coding sequence of the red fluorescent protein dsRED (Figure 5A). This Pdmsr-1:dmsr-1:SL2:dsRED transgene rescued the dmsr-1 mutant phenotype (Figure 3C\u2013D), indicating that the construct contains regulatory elements required for appropriate dmsr-1 expression. We observed red fluorescence in several neurons both in the head and tail of the animals (Figure 5B). Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of\u00a0operon (top) and promoter fusion (middle) transcriptional reporters used to determine expression pattern of dmsr-1. Schematic overview of dmsr-1 expression pattern, with identified neurons labelled.\u00a0(B) Example images of dmsr-1 expression in head and tail. The images were processed by 3D deconvolution (Leica Application Suite X, Leica), and presented as a maximum projection of a Z-stack. In this and subsequent images, anterior is to the left.\u00a0(C) Colocalization of dmsr-1 promoter reporter with kal-1 (Wenick and Hobert, 2004) in the RID neuron.\u00a0The dmsr-1 promoter:mCherry reporter gave the same expression pattern as the operon-based transcriptional reporter shown in panel A.\u00a0(D) Colocalization of dmsr-1 mCherry\u00a0reporter with ttx-3 (Hobert et al., 1997) in an\u00a0AIY neuron. Images were captured as a z-stack and processed by 3D deconvolution. One individual slice is shown.\u00a0(E) DiO staining of tail phasmid neurons PHA and PHB, which colocalizes with the dmsr-1 red reporter.\u00a0(F) Lack of colocalization of dmsr-1 promoter reporter with nmr-1 (Brockie et al., 2001) in command interneurons. Images were captured as a z-stack and processed by 3D deconvolution. One deconvolved slice, which shows all three neuron types, is shown. There is a red neuron that partially overlaps the green AVE neuron but our close evaluation of multiple worms shows that these neurons are distinct.\u00a0(G) Membrane localization of GFP attached to the C-terminus of DMSR-1 using a fosmid construct (TransgeneOme project).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Body movement quiescence following UV exposure calculated in one hour intervals. Two-way repeated measures ANOVA with Bonferroni corrected comparisons for post-test. Comparisons are displayed as differences between the indicated line and dmsr-1(qn45) without the rescue construct. *p<0.05; **p<0.01; ***p<0.001.\u00a0(B) Body movement quiescence during the\u00a08-hr period following UV exposure. One-way ANOVA with Tukey HSD post-test.*p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Fraction of animals quiescent for pharyngeal pumping two hours after induction of flp-13 overexpression using a 30 min 33\u00b0C heat pulse of hsp16.2:flp-13 or control animals. Statistical significance was assessed using a Fisher\u2019s exact test. N\u00a0=\u00a015\u201320 for each genotype.\u00a0(B) Pharyngeal pumping rates two hours after induction of flp-13 overexpression using a 30 min 33\u00b0C heat pulse of hsp16.2:flp-13 or control animals. Statistical significance was assessed using a 1-way ANOVA with Dunnett\u2019s post-hoc pairwise comparisons with hsp16.2:flp-13; dmsr-1(qn45) animals.\u00a0(C) and (D) Body movement quiescence in a two-hour period starting at two hours after induction of flp-13 overexpression. Statistical comparisons were made using 1-way ANOVA with Tukey HSD post-test.\u00a0(E) Body movement quiescence for 60 min following a 30 min 35\u00b0C exposure to induce SIS. Statistical comparisons were made using 1-way ANOVA with Dunnett\u2019s post-hoc pairwise comparisons with dmsr-1(qn45) animals.\u00a0(F) Pharyngeal pumping rate following a 30 min 35\u00b0C exposure to induce SIS. Two-way repeated measures ANOVA with Bonferroni corrected comparisons for post-test. Comparisons are displayed as differences between the indicated line and dmsr-1(qn45).In all panels, bars denote the mean and SEM, ns denotes not significant, * denotes p<0.05, **p<0.01, and ***p<0.001.\n\nBased on additional analysis, we concluded that dmsr-1 is not expressed in several other neurons, which are listed in Supplementary file 1. Importantly, we did not see expression of dmsr-1 in AVE or AVA neurons (Figure 5F). These command interneurons are the only post-synaptic partners to the ALA neuron based on the presence of ultrastructurally-defined chemical synapses (White et al., 1986). The expression in neurons that do not make direct synaptic connections with ALA suggested that ALA signals in a neuroendocrine fashion to promote SIS. In support of this suggestion, we found that a DMSR-1 protein with a GFP fluorescent tag at its C-terminus was localized diffusely to neuronal cell membranes and was not localized to synapses (Figure 5G). This GFP-tagged DMSR-1 protein rescued the mutant phenotype of dmsr-1 (Figure 5\u2014figure supplement 1), indicating that it was functional.\n\nTaken together, these results support a model whereby ALA releases FLP-13 peptides in a neuroendocrine fashion to directly activate DMSR-1 expressed in neurons and thus promote sleep in response to cellular stress. The notion that ALA can signal via non-synaptic means was previously proposed based on the observation that a mutant with disrupted ALA axonal outgrowth retained normal ALA function (Van Buskirk and Sternberg, 2007).\n\nIn an attempt to determine which of the neurons observed to express dmsr-1 is sufficient to relay the sleep inducing effect of flp-13 overexpression, we transgenically restored dmsr-1 gene expression in specific neurons in animals otherwise lacking dmsr-1 function. We tested two neuron types\u2014AIY and PHA\u2014where we had the tools to easily express DMSR-1 selectively in a single neuron type. Expression of dmsr-1 in the paired PHA tail sensory neurons was not sufficient to restore feeding or body movement quiescence induced by flp-13 overexpression (Figure 5\u2014figure supplement 2A\u2013C). Expression of dmsr-1 in the paired head AIY interneurons conferred a small but statistically-significant (p<0.01) rescue of the body movement quiescence defect (Figure 5\u2014figure supplement 2D) but not the feeding quiescence defect observed in dmsr-1 mutants during flp-13 overexpression (Figure 5\u2014figure supplement 2A\u2013B). AIY specific dmsr-1 expression did not however rescue the feeding or body movement quiescence defects observed in dmsr-1 mutants during SIS (Figure 5\u2014figure supplement 2E\u2013F).\n\n### DMSR-1 acts to inhibit neuronal activity\n\nThe fourth prediction from our model is that DMSR-1 signaling affects neurons that control sleep/wake behavior. DMSR-1 may regulate sleep either by activating sleep-promoting neurons or by inhibiting wake-promoting neurons. To distinguish between these possibilities, we inhibited the dmsr-1-expressing cells to test their effects on sleep. If DMSR-1 activation promotes sleep by activating sleep-promoting neurons, then inhibiting these neurons should impair sleep. Conversely, if DMSR-1 activation promotes sleep by inhibiting wake-promoting neurons, then inhibiting these cells would promote sleep.\n\nWe inhibited DMSR-1 expressing neurons by using histamine-gated chloride (HisCl) channels. We can use this approach because histamine does not appear to act as a neurotransmitter in C. elegans (Hobert, 2013). In the presence of histamine, HisCl channels allow chloride ions to pass into the neurons to render them less excitable (Liu and Wilson, 2013; Nelson et al., 2014; Pokala et al., 2014). By applying histamine to worms expressing HisCl channels under the control of the dmsr-1 promoter (Pdmsr-1:HisCl), we inhibited dmsr-1 expressing neurons in a spatially- and temporally- controlled fashion. Because non-transgenic animals lack endogenous receptors for histamine (Pokala et al., 2014), they behaved similarly in the presence and absence of histamine (Figure 6). When transgenic worms expressing Pdmsr-1:HisCl worms were placed on histamine, their movement quiescence and total activity were not affected (Figure 6), indicating that in the absence of cellular stress, silencing these neurons has minimal effect on behavior.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig6-v1.jpg)\n\n**Figure 6.:** (A) Pdmsr-1:HisCl worms were placed on histamine-containing agar, and sleep was induced by ultraviolet C (UVC) light irradiation. Worms were compared to the wild type strain (N2) on histamine, as well as to worms not exposed to histamine. Gray lines indicate control worms that were not exposed to UVC light, whose quiescence was not affected by activation of HisCl channels. Statistical comparisons were performed using a 2-way repeated measures ANOVA using time and experimental group as factors. Asterisks indicate lowest level of significance in comparisons between Pdmsr-1:HisCl on histamine with each of the other groups in pairwise comparison using Bonferroni correction. *p<0.05, **p<0.005, ***p<0.0005.\u00a0(B) Total amount of sleep over eight hours from Figure 6A for each individual worm. There was a significant interaction between histamine and HisCl channels such that HisCl channels only increased sleep in the presence of histamine. ***p<0.0005. There were no significant effects found for worms that were not irradiated with UV. NS denotes not significant.\u00a0(C) Total activity analysis across an eight-hour period. HisCl channels reduced activity only in animals exposed to histamine, and there were no significant effects for worms that were not irradiated with UV. ***p<0.0005. NS denotes not significant.\u00a0In all three panels, triangles represent animals that expressed Pdmsr-1:HisCl, circles represent animals that do not express Pdmsr-1:HisCl, filled symbols represent animals that have been exposed to histamine, empty symbols represent animals that have not been exposed to histamine, black symbols represent animals that have been exposed to UV irradiation, and gray symbols represent animals that were not exposed to UV irradiation. In panels B and C, statistical significance was assessed with a 2\u00d72 Factorial ANOVA with Bonferroni post-hoc correction.\n\nWe then tested whether activating the HisCl channels affected activity and quiescence after triggering cellular stress. For these experiments, we triggered cellular stress by exposing the animals to ultraviolet (UV) light (Figure 3\u2014figure supplement 1). UV light exposure triggers a robust sleep state that requires ALA and FLP-13 signaling (H. Debardeleben and D. Raizen, unpublished data). The long-lasting effects of UV induced sleep provide a sensitive tool for measuring the effects of neuronal silencing in this experiment. When HisCl worms were placed on histamine following exposure to UV stress, they had reduced total activity and enhanced body movement quiescence compared to control worms that lacked the HisCl channels (Figure 6A\u2013C). Importantly, HisCl channels did not affect activity or quiescence in the absence of histamine.\n\nThese observations of elevated body movement quiescence with HisCl activation suggest that DMSR-1 promotes sleep by inhibiting wake-promoting cells.\n\n### dmsr-1 and flp-13 have parallel activity\n\nOne neuropeptide (or a group of neuropeptides encoded by the same gene) may activate multiple receptors. Similarly, a given receptor may be activated by multiple neuropeptides. Does the somnogenic effect of FLP-13 neuropeptides result exclusively from the activation of DMSR-1? Do other neuropeptides activate DMSR-1 to induce sleep? We used a double mutant analysis to answer these questions. We compared the SIS phenotypes of flp-13; dmsr-1 double mutant animals to those of dmsr-1 and flp-13 single mutant animals. We reasoned that if flp-13 and dmsr-1 have sleep inducing effects that are independent of one another, then the double mutant will have a greater defect in SIS compared to either of the single mutants. The double mutant animals indeed showed a greater defect in quiescence than either the dmsr-1 or the flp-13 single mutant animals (Figure 7). This result suggests that (1) FLP-13 peptides activate receptors in addition to DMSR-1, and (2) DMSR-1 is either activated by ligands in addition to those encoded by flp-13, or DMSR-1 has ligand-independent activity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig7-v1.jpg)\n\n**Figure 7.:** (A) Double mutant analysis between flp-13 and dmsr-1. Total amount of body movement quiescence was measured following UV irradiation. Statistical comparisons were made using 2-way repeated measures ANOVA with post-hoc pairwise Bonferroni correction method and restricted to comparisons made with the double mutant.\u00a0(B) Total quiescence during first four hour period following UV irradiation shown in Figure 7A. Statistical comparisons were made using 1-way ANOVA with Dunnett\u2019s post-hoc pairwise comparisons with the double mutant.\n\n## Discussion\n\nOur findings expand our understanding of how stress induced sleep is regulated in C. elegans (Figure 8). Cellular stress leads to the release of the EGF/LIN-3 (Hill et al., 2014) either from the stressed cells directly or from other cells. EGF activates the ALA neuron through the EGF-receptor LET-23 (Van Buskirk and Sternberg, 2007). This activation requires depolarization of ALA (Nelson et al., 2014). ALA releases neuropeptides encoded by the flp-13 gene (Nelson et al., 2014) as well as other neuropeptides (Nath et al., 2016). FLP-13 neuropeptides then act in a neuroendocrine fashion to activate the G-protein coupled receptor DMSR-1 and thus to inhibit wake-promoting neurons, which include the AIY interneurons. The G-protein that is coupled to DMSR-1 may be the Gi/o alpha subunit GOA-1, since goa-1 mutants are defective in SIS and in flp-13 induced sleep (Trojanowski et al., 2015) and since goa-1 is expressed widely in the nervous system (S\u00e9galat et al., 1995). GOA-1 signaling may ultimately down regulate the activity of the Gq (EGL-30) signaling pathway, since a gain of function mutation in EGL-30 suppresses flp-13 induced sleep (Trojanowski et al., 2015).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/19837/elife-19837-fig8-v1.jpg)\n\n**Figure 8.:** Cellular stress leads to the release of EGF (LIN-3) either directly from the stressed cells or indirectly via other cells receiving a signal from the stressed cells. EGF activates the ALA neuron by binding to the EGF receptor (LET-23). ALA depolarizes and releases FLP-13 neuropeptides, among other sleep inducing signals. FLP-13 peptides signal in a non-synaptic fashion via the seven-transmembrane domain receptor DMSR-1 and the G protein alpha subunit Gi/o to inhibit several wake-promoting neurons. These neurons include AIY, PHA, PHB,\u00a0RID, and other neurons.\n\nThe observation that the suppression of quiescence by most of our genetic manipulations is only partial suggests that there are additional complexities in the sleep promoting system downstream of ALA activation. Our double mutant analyses support the notion that FLP-13 peptides act on other receptors in addition to DMSR-1, and that DMSR-1 is activated by peptides other than FLP-13 peptides. The additional receptors responding to FLP-13 peptides may include one or more of the 15 other DMSR proteins encoded in the C. elegans genome (Figure 1C), and the additional peptides acting on DMSR-1 may include one or more of the other neuropeptides released from ALA (Nath et al., 2016).\n\nWe showed that selective dmsr-1 expression in the AIY neurons conferred a small but significant rescue of the flp-13 overexpression-induced movement quiescence but did not confer a rescue of SIS. Three possibilities could reconcile these observations. (1) The endogenous FLP-13 peptides that act on the AIY neurons are released from a neuron other than ALA. (2) FLP-13 peptides act on AIY only when expressed at high levels and do not normally do so under physiological conditions. (3) Our SIS assay conditions were not sufficiently sensitive to identify a small rescue in SIS. Regardless of the explanation of these results, since the AIY interneurons are known to promote worm locomotion (Gray et al., 2005; Shtonda and Avery, 2006), our observations that dsmr-1 is expressed in AIY and may function in AIY are consistent with the model that FLP-13/DMSR-1 signaling functions to inhibit wake-promoting neurons.\n\nAlthough selective dmsr-1 expression in neither AIY nor PHA neurons fully rescued the mutant quiescence phenotype, our findings do not exclude the possibility that dmsr-1 functions selectively in a neuron type that we have not yet tested. Several of the other neurons expressing dmsr-1 remain unidentified and may also promote waking activity. One possibility is the neuroendocrine RID neuron, which promotes forward locomotion (Lim et al., 2016). The alternative to the model that dmsr-1 functions in a small subset of the neurons where it is expressed is that dmsr-1 is simultaneously required in several neurons to promote sleep in response to FLP-13 signaling. In this model, which we favor, restoring dmsr-1 gene expression in only a subset of the neurons in which dmsr-1 is required would not be sufficient to fully rescue the mutant phenotype.\n\nIn mammals, wake-promoting centers are distributed broadly across brainstem, basal forebrain, midbrain, and diencephalic structures, but sleep promoting neurons are anatomically restricted (Saper et al., 2005b). The ventrolateral preoptic area of the hypothalamus, which is proposed to be sleep-promoting, contains inhibitory projections to several wake-promoting neurons (Saper et al., 2005a). It is possible that C. elegans similarly has a diffuse wake-promoting circuit that can be inhibited by a central sleep-promoting system, the single ALA neuron. It remains to be seen whether sleep in response to acute illness in other animals functions in a similar fashion, but since RFamide and EGF signaling regulates sleep in arthropods too, it would not be unreasonable to propose that the molecular details and signaling concepts elucidated here are conserved across phylogeny.\n\n## Materials and methods\n\n### Worm cultivation\n\nWorms were cultivated on the agar surface of NGM medium (1.7% agar), fed the OP50 derivative bacterial strain DA837 (Davis et al., 1995), and maintained at 20 degrees Celsius unless noted otherwise. We found that the type of agar used affected the behavior of animals after heat shock. For experiments reported here we used only granulated agar (Apex, catalog\u00a0number\u00a020\u2013275).\n\n### Strains used\n\nN2\n\nNQ570: qnIs303[Phsp-16.2:flp-13; Phsp-16.2:GFP; Prab-3:Cherry]\n\nNQ793: dmsr-1(qn40) V; qnIs303\n\nNQ810: dmsr-1(qn44) V; qnIs303\n\nNQ792: dmsr-1(qn45) V; qnIs303\n\nNQ814: dmsr-1(qn49) V; qnIs303\n\nNQ51: dmsr-1(qn51) V; qnIs303\n\nNQ52: dmsr-1(qn52) V; qnIs303\n\nNQ53: dmsr-1(qn53) V; qnIs303\n\nNQ915: dmsr-1(qn45) V\n\nNQ602: flp-13(tm2427)\n\nNQ943: flp-13(tm2427) IV; dmsr-1(qn45) V\n\nPS5009: pha-1(e2132ts) III (?); syEx723[Phsp16.2:LIN-3C; Pmyo-2:GFP; pha-1(+)]\n\nNQ978: pha-1(e2132ts) III (?); dmsr-1(qn45) V; syEx723\n\nNQ990: qnEx514[Pdmsr-1:HisCl; Pttx-3:GFP]\n\nNQ1006: qnEx526[Pdmsr-1:mCherry; Punc-122:GFP; pha-1(+); ladder]\n\nNQ1083: unc-119(ed3) III; qnEx585[dmsr-1(fosmid)::GFP; pCFJ151]\n\nNQ1055: dmsr-1(qn45) V; qnEx569[dmsr-1(fosmid)::GFP; Pttx-3:GFP; 1 kb DNA ladder]\n\nNQ1111: dmsr-1(qn45) V; qnEx602[dmsr-1:SL2:dsRed; Pttx-3:GFP; 1 kb DNA\u00a0ladder]\n\nNQ1142: dmsr-1(qn45); qnEx610[Pttx-3:dmsr-1:SL2:dsRed; Pmyo-2:GFP; 1 kb DNA\u00a0ladder]\n\nNQ1145: dmsr-1(qn45) V;qnIs303; qnEx610[Pttx-3:dmsr-1:SL2:dsRed; Pmyo-2:GFP; 1 kb DNA\u00a0ladder];\n\nNQ1147: dmsr-1(qn45) V; qnIs303; qnEx614[Pgcy-17:dmsr-1:SL2:dsRed;Pmyo-2:GFP; 1 kb DNA\u00a0ladder]\n\n### Molecular biology\n\nWe used the overlap extension PCR method to generate constructs for transgenic analysis (Nelson and Fitch, 2011). Oligonucleotide sequences used for constructs and for sequencing are listed in Supplementary file 2.\n\nMicroinjection of extrachromosomal arrays was performed as described in Mello et al. (1991).\n\nWhole genome sequencing was performed at the Wistar Institute Genomics Core Facility and bioinformatics analysis of the sequences was performed at the Wistar Institute Bioinformatics Core Facility.\n\n### Genetic crosses\n\nCrosses with dmsr-1 were performed using either the balancer nT1, which expresses a dominant GFP, or by following the qn45 deletion by PCR analysis using the primers oNQ1480 and oNQ1515.\n\n### Behavioral assays\n\nExcept for data shown in Figure 3\u2014figure supplement 1, which was collected from fourth larval stage animals, all behavioral assays were performed in young adult worms. Worms were synchronized by picking larval stage four animals and performing the experiments the following day.\n\n#### SIS induction by heat\n\nSleep was induced by exposing the worms to 35\u00b0C for 30 min by immersion of their housing Petri dish sealed with Parafilm strips in a circulating water bath and then recovered at room temperature. For experiments in which we assessed feeding behavior by direct observation, we immersed the worms housed on the agar surface of 5.5 cm diameter polystyrene Petri dishes (Azer, Catalog\u00a0numbers\u00a0ES3515 and ES3514) containing 10 mL of NGM agar and seeded with DA837 bacteria. For experiments in which we measured body movements using the WorMotel, worms were picked to the WorMotel chip and placed inside an empty plastic 10 cm diameter Petri dish, which was sealed with Parafilm and placed in the heat bath.\n\n#### Assessment of body movement activity and quiescence\n\nThe set-up for imaging the WorMotel is described in Churgin and Fang-Yen (2015). The WorMotel is a PDMS device that contains a series of wells filled with NGM agar so that individual worms can be housed separately for longitudinal tracking. The chip was imaged under dark field microscopy using red light to indirectly illuminate worms from below a glass stage as described. Images were taken every ten seconds at a spatial resolution of 16 microns per pixel. Images were analyzed using custom software that subtracts pairs of successive images as previously described (Raizen et al., 2008). Body movement activity was quantified as the total number of pixels changed in the subtracted images, and quiescent epochs were those in which no pixel movement was detected between a pair of frames. The software is available at https://github.com/cfangyen/wormotel.\n\n#### SIS induced by ultraviolet light exposure\n\nSleep was induced by exposing worms to 1500 J/m2 of UVC light (XL-UV Crosslinker, Spectrolinker Incorporated). Worms were picked to the WorMotel chip with a thin coating of bacteria for food and placed in a 10 cm petri dish with the lid removed inside the crosslinker. Behavior was assessed by recording on the WorMotel.\n\n#### Heat-induced overexpression\n\nOverexpression of flp-13 or of lin-3 was induced in all somatic cells under the control of the heat shock inducible promoter hsp-16.2. Transcription was activated by immersing plates wrapped with Parafilm in a 33\u00b0C water bath for 30 min. To assess body movement quiescence, animals were exposed to heat while on NGM agar dishes, then transferred to the WorMotel chip and imaged. Feeding quiescence was measured two hours following induction of overexpression.\n\n#### Assessment of feeding behavior\n\nFeeding behavior was assessed by examining pharyngeal pumping under a stereomicroscope using 2-4x objective magnification. Behavior was measured in real time, and the experimenter was blinded to the condition of the worm. A pump was identified as a backwards movement of the grinder, a tooth-like structure in the posterior bulb of the pharynx.\n\n#### Histamine-gated chloride channels\n\nThe coding region for the histamine-gated chloride channel was amplified using PCR from the pNP471 plasmid (Pokala et al., 2014), and combined with the dmsr-1 promoter using overlap extension PCR. Worms were raised on NGM media and synchronized at the L4 stage. Young adults expressing Pdmsr-1:HisCl were placed in NGM agar medium with 15 mM histamine immediately prior to UV exposure and imaging on the WorMotel.\n\n### Statistics\n\nMulti-factor analyses were performed using 2-way ANOVA with pairwise post-hoc comparisons using the Bonferroni correction. For post-hoc tests, all comparisons were made against one group. For time course analyses, we used a 2-way ANOVA with the time factor as a\u00a0repeated measure. One factor analyses were performed using a\u00a01-way ANOVA with pairwise comparisons made using Dunnett\u2019s test. All statistics were performed and graphs were generated using GraphPad Prism 5.0.3.477 and\u00a06.0\u00a0(GraphPad Software, Inc., La Jolla California).\n\n### Receptor ligand interactions in cell culture\n\nThe assessment of FLP-13 peptide activation of DMSR-1 was done as described (Nelson et al., 2015). Briefly, DMSR-1A cDNA was cloned into the pcDNA3.1(+) TOPO expression vector (Thermo Fisher Scientific, Waltham Massachusetts). Receptor activation was studied in Chinese hamster ovary cells (CHO) stably expressing apo-aequorin (mtAEQ) targeted to the mitochondria as well as the human Galpha16 subunit. We used the CHO-K1 cell line (PerkinElmer, ES-000-A2) for receptor activation assays. Quality control and authentication was performed by determining the EC50 for reference agonists (e.g. ATP) in an AequoScreen calcium mobilization assay. A mycoplasma test was performed using the MycoAlert Mycoplasma (Lonza) detection kit. This cell line tested negative for mycoplasma.\n\nThe CHO/mtAEQ/Galpha16 cells were cultured in Ham\u2019s F12 medium (Sigma), containing 10% fetal bovine serum (FBS), 100 UI/ml of penicillin/streptomycin, 250 \u03bcg/ml Zeocin and 2.5 \u03bcg/ ml Fungizone (Amphoterin B). Cell lines were grown at 37\u00b0C in a humidified atmosphere of 5% CO2 and were diluted fifteen-fold every third day. CHO/mtAEQ/Galpha16 cells were transiently transfected with the DMSR-1 cDNA construct or the empty pcDNA3.1(+) vector using the Lipofectamine transfection reagent (Thermofisher Scientific), according to the manufacturer\u2019s instructions. Cells expressing the receptor were shifted to 28\u00b0C 1 day later, and collected 2 days post-transfection in BSA medium (DMEM/HAM\u2019s F12 with 15 mM HEPES, without phenol red, supplemented with 0.1% BSA) and loaded with 5 \u03bcM coelenterazine h (Thermo Fisher) for 4 hr to reconstitute the holo-enzyme aequorin. Cells (25,000 cells/well) were exposed to synthetic peptides in BSA medium, and aequorin bioluminescence was recorded for 30 s on a MicroBeta LumiJet luminometer (PerkinElmer,\u00a0Waltham\u00a0Massachusetts) in quadruplicate. For dose-response evaluations, after 30 s of ligand-stimulated calcium measurements, Triton X-100 (0.1%) was added to the well to obtain a measure of the maximum cell Ca2+ response. BSA medium without the peptides was used as a negative control and 1 \u03bcM ATP was used to check the functional response of the cells. Cells transfected with the pcDNA3.1 empty vector were used as a negative control for the effect of the receptor. EC50 values were calculated from dose-response curves, constructed using a computerized nonlinear regression analysis, with a sigmoidal dose-response equation (Prism 6.0).\n",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "47c1f841-39f8-4ff4-b62e-26c51cbed19a",
+      "submission_id": "c870eab4-58ea-4325-8268-92ff59e476fc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eve Marder, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19837.017](https://doi.org/10.7554/eLife.19837.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The RFamide receptor DMSR-1 regulates stress-induced sleep in C. elegans\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Eve Marder as the Senior Editor and Reviewing Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Patsy Dickinson (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nPlease note that both reviewers felt the paper would have substantial impact on the field, but also felt that editorial work would strengthen its impact. In this case, I believe it will be helpful for you to see the initial reviews because they are in essential agreement, and focus on queries that you should answer to make the manuscript more broadly accessible and useful.\n\nReviewer #1:\n\nThis paper provides convincing evidence that the gene dmsr-1 encodes a receptor (DMSR-1) that is activated by FLP-13 peptides, and is important in controlling 'stress-induced sleep', that is, quiescence induced by the effects heat stress or of EGF (presumably acting on the ALA neuron). Using a mutagenesis screen, the authors found that a number of mutants that failed to respond to overexpression of flp-13, and therefore presumably over-stimulation by the FLP-13 peptides had a variety of mutations in the dmsr-1 gene, leading to a failed DMSR-1 receptor. They went on to show that the DMSR-1 receptor binds to the FLP-13 peptides, that it is required for stress-induced sleep, that the dmsr-1 gene is expressed in the nervous system (in a number of specific neurons), and finally that the likely mechanism for the effects of DMSR-1 activation on stress-induced sleep are likely mediated by an inhibition of wake-promoting neurons rather than by an activation of sleep-inducing neurons.\n\nThe writing is clear, and it appears to me that the data are appropriately interpreted and make a strong case for their interpretation. Moreover, the manuscript should be of interest to a reasonably wide range of neuroscientists. The ability to manipulate the genetic makeup of C. elegans, together with the existing knowledge of the nervous system, make this a system that works very well for this study.\n\nReviewer #2:\n\nThis manuscript identifies the GPCR DMSR-1 as a novel regulator of stress-induced sleep through an unbiased forward genetic screen for genes that suppress the effects of a sleep-promoting neuropeptide. Complex neural circuits regulate sleep, and investigating sleep regulation in the nematode's relatively simple nervous system has potential to identify defined circuits regulating this process, and how they are modulated by environmental change. These findings build upon previous work identifying the ALA neurons as mediating stress-induced changes in sleep by release of FLP-13 neuropeptide. The identification of DMSR-1 as a target of FLP-13 provides a system for examining neurohormonal modulation of sleep in response to environmental or physiological changes. The experiments are technically sound and will have broad impact on the sleep community. Below I list a number of comments, mostly minor, that I believe would increase the accessibility and impact of this manuscript.\n\n1) Because this journal is geared towards a generalist audience, greater description of the assays and interpretations of results would be helpful.\n\n2) It is not clear why heat was selected as a stressor to characterize SIS in DMSR mutants while UV was used in the HisCL experiments. Using 35 degrees? What about other stressors? It would be very interesting to know if the role of DMSR-1 is generalizable across difference stressors.\n\n3) The impacted would be aided by localizing DMSR-1 function. Speculate on what other. Is it at least possible to separate head and tail populations?\n\n4) In Figure 7, the double mutant effect almost looks additive, which is somewhat surprising. This experiment may benefit from a more detailed analysis e.g. a number of different UV intensities or heat gradients.\n",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "478c32d1-92e8-46b5-af81-896149096392",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C1",
+      "claim": "In response to environments that cause cellular stress, animals engage in sleep behavior that facilitates recovery from the stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to environments that cause cellular stress, animals engage in sleep behavior that facilitates recovery from the stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by citations in the abstract and introduction sections.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "0bc96a15-fe60-43b5-996a-7fc54a684cdb",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C2",
+      "claim": "In Caenorhabditis elegans, stress-induced sleep (SIS) is regulated by cytokine activation of the ALA neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caenorhabditis elegans, stress-induced sleep(SIS) is regulated by cytokine activation of the ALA neuron, which releases FLP-13 neuropeptides characterized by an amidated arginine-phenylalanine (RFamide) C-terminus motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cdffede8-3e66-4132-a278-8af373f58a49",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C3",
+      "claim": "The ALA neuron releases FLP-13 neuropeptides characterized by an amidated arginine-phenylalanine (RFamide) C-terminus motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caenorhabditis elegans, stress-induced sleep(SIS) is regulated by cytokine activation of the ALA neuron, which releases FLP-13 neuropeptides characterized by an amidated arginine-phenylalanine (RFamide) C-terminus motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "e74955fc-46cc-4b76-a73c-74da6591a0c4",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C4",
+      "claim": "dmsr-1 encodes a G-protein coupled receptor similar to an insect RFamide receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing an unbiased genetic screen for mutants that impair the somnogenic effects of FLP-13 neuropeptides, we identified the gene dmsr-1, which encodes a G-protein coupled receptor similar to an insect RFamide receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the genetic screen results and sequence analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "3eb744b4-1a5f-434a-b1f0-094388481d1f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C5",
+      "claim": "DMSR-1 is activated by FLP-13 peptides in cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is activated by FLP-13 peptides in cell culture, is required for SIS in vivo, is expressed non-synaptically in several wake-promoting neurons, and likely couples to a Gi/o heterotrimeric G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cell culture experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "b36d0f93-623a-4e19-a14c-c88701bd22ef",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C6",
+      "claim": "DMSR-1 is required for SIS in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is activated by FLP-13 peptides in cell culture, is required for SIS in vivo, is expressed non-synaptically in several wake-promoting neurons, and likely couples to a Gi/o heterotrimeric G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the genetic experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "66932bc1-efb6-4c6f-8573-338f9f79aeca",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C7",
+      "claim": "DMSR-1 is expressed non-synaptically in several wake-promoting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is activated by FLP-13 peptides in cell culture, is required for SIS in vivo, is expressed non-synaptically in several wake-promoting neurons, and likely couples to a Gi/o heterotrimeric G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression pattern analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "1257aed0-b2ed-4582-9d4b-7f7f5ffc5b5f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C8",
+      "claim": "DMSR-1 likely couples to a Gi/o heterotrimeric G-protein.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is activated by FLP-13 peptides in cell culture, is required for SIS in vivo, is expressed non-synaptically in several wake-promoting neurons, and likely couples to a Gi/o heterotrimeric G-protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior studies showing goa-1 mutants are defective in SIS.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "20e73b6f-d01b-42a6-99b8-69565ed0c212",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C9",
+      "claim": "During acute infectious illness in mammals, electrophysiological correlates of sleep behavior are observed.",
+      "claim_type": "EXPLICIT",
+      "source": "During acute infectious illness in mammals, electrophysiological correlates of sleep behavior are observed (Toth and Krueger, 1988, 1989), indicating that the behavioral sequence is sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "f92b9e41-90bb-463c-9766-6e405bd82f13",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C10",
+      "claim": "In Drosophila melanogaster and Caenorhabditis elegans, acute illness results in cellular stress, which then induces a sleep behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In the arthropod Drosophila melanogaster (Williams et al., 2007; Lenz et al., 2015) and the nematode Caenorhabditis elegans (Hill et al., 2014), acute illness results in cellular stress, which then induces a sleep behavior: the animals stop moving and feeding, do not respond to weak stimuli but move normally in response to strong stimuli (Hill et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "acaaf667-283d-460c-a38b-f9d0c0edde73",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C11",
+      "claim": "Stress-induced sleep is beneficial to the animal and helps it recover from the acute injury.",
+      "claim_type": "EXPLICIT",
+      "source": "This stress-induced sleep (SIS, also known as sickness sleep) is beneficial to the animal and helps it recover from the acute injury (Spiegel et al., 2002; Hill et al., 2014; Kuo and Williams, 2014; Fry et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "893b30ba-e69e-4db3-b9be-6b507b6524c5",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C12",
+      "claim": "Environments that induce SIS in fruit flies and round worms include bacterial pathogens, bacterial toxins, heat shock, cold shock, osmotic shock, and ultraviolet light exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies and round worms, environments that induce SIS include bacterial pathogens, bacterial toxins, heat shock, cold shock, osmotic shock, and ultraviolet light exposure (Hill et al., 2014; Lenz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "d888967a-6e30-483c-88bb-9834fba23963",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C13",
+      "claim": "Nematode SIS is a distinct sleep state from developmentally timed sleep (DTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Nematode SIS is a distinct sleep state from a larval sleep state known as developmentally timed sleep (DTS) (Trojanowski et al., 2015), which is regulated by a homolog of the core circadian protein PERIOD (Monsalve et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8e316667-4b19-4aa6-895d-e38f65f3d286",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C14",
+      "claim": "Developmentally timed sleep is regulated by a homolog of the core circadian protein PERIOD.",
+      "claim_type": "EXPLICIT",
+      "source": "Nematode SIS is a distinct sleep state from a larval sleep state known as developmentally timed sleep (DTS) (Trojanowski et al., 2015), which is regulated by a homolog of the core circadian protein PERIOD (Monsalve et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "29e0ad93-ad99-4bb7-8b64-ae455eb0357e",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C15",
+      "claim": "In the absence of stress, nematodes experience sleep only when they transition between larval stages but do not sleep in the adult stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of stress, nematodes experience sleep only when they transition between larval stages but do not sleep in the adult stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about C. elegans sleep behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2901e30c-7fba-4461-9367-c5c881b87675",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C16",
+      "claim": "C. elegans does not have an identifiable circadian rhythm of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Since C. elegans does not have an identifiable circadian rhythm of sleep, adult nematodes are an ideal system to study SIS in the absence of the circadian and homeostatic effects of animals that require daily sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about C. elegans.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "671c82fb-aea9-402f-9063-684220805b4b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C17",
+      "claim": "In mammals, the cytokines interleukin-1 beta and tumor necrosis factor alpha, whose levels increase during an infectious challenge, are each sufficient to induce sleep when injected into the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in mammals, the cytokines interleukin-1 beta and tumor necrosis factor alpha, whose levels increase during an infectious challenge, are each sufficient to induce sleep when injected into the brain (reviewed in (Krueger, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ea804df9-19c9-435f-bfb3-d952f9b3a011",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C18",
+      "claim": "In nematodes, arthropods, and mammals, signaling by epidermal growth factor (EGF) is sufficient to induce sleep behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In nematodes (Van Buskirk and Sternberg, 2007), arthropods (Foltenyi et al., 2007), and mammals (Kushikata et al., 1998; Kramer et al., 2001), signaling by epidermal growth factor (EGF) is sufficient to induce sleep behavior and, at least in nematodes, EGF signaling is necessary for SIS (Hill et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cd644912-0f43-453b-8f00-634795528b26",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C19",
+      "claim": "In nematodes, EGF signaling is necessary for SIS.",
+      "claim_type": "EXPLICIT",
+      "source": "In nematodes (Van Buskirk and Sternberg, 2007), arthropods (Foltenyi et al., 2007), and mammals (Kushikata et al., 1998; Kramer et al., 2001), signaling by epidermal growth factor (EGF) is sufficient to induce sleep behavior and, at least in nematodes, EGF signaling is necessary for SIS (Hill et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a362faa6-0de3-4dcd-83f9-549dac3968e8",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C20",
+      "claim": "In mammals, CNS neurons that regulate sleep reside in the hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, CNS neurons that regulate sleep reside in the hypothalamus (Saper et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "82a41f58-a5c3-406f-896e-1858d325746a",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C21",
+      "claim": "In C. elegans, the target for EGF action is a single interneuron called ALA.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the target for EGF action is a single interneuron called ALA (Van Buskirk and Sternberg, 2007), whose developmental program has similarities to the developmental program of mammalian neuroendocrine cells (Van Buskirk and Sternberg, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "c3c2b99b-677a-4def-aaa7-2b4816f41546",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C22",
+      "claim": "The developmental program of ALA has similarities to the developmental program of mammalian neuroendocrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, the target for EGF action is a single interneuron called ALA (Van Buskirk and Sternberg, 2007), whose developmental program has similarities to the developmental program of mammalian neuroendocrine cells (Van Buskirk and Sternberg, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "642eefe3-3528-4ce1-8683-e33aa97fc08f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C23",
+      "claim": "With EGF activation, ALA depolarizes to release neuropeptides encoded by the gene flp-13 to promote sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "With EGF activation, ALA depolarizes to release neuropeptides encoded by the gene flp-13 (FMRFamide-Like Peptide-13) to promote sleep (Nelson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ae455d15-9ff6-461e-be61-7a311684c816",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C24",
+      "claim": "FLP-13 peptides are characterized by an amidated Arginine-Phenylalanine (RFamide) motif at their C-termini.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-13 peptides are characterized by an amidated Arginine-Phenylalanine (RFamide) motif at their C-termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the peptide sequences shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2a573d02-16d4-43fe-b5b1-226ce7e48e6e",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C25",
+      "claim": "RFamide neuropeptides are involved in many physiological functions in both invertebrates and vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "RFamide neuropeptides are involved in many physiological functions in both invertebrates (L\u00f3pez-Vera et al., 2008; Peymen et al., 2014), and vertebrates (R\u0151szer and B\u00e1nfalvi, 2012; Kim, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "763ee5a6-db1a-4068-9460-6d03b06571c6",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C26",
+      "claim": "In fruit flies, several RFamide neuropeptides regulate sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies, several RFamide neuropeptides regulate sleep (He et al., 2013; Shang et al., 2013), including the RFamide neuropeptide FMRFamide, which regulates SIS (Lenz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "36ced9da-04da-40bf-954f-1028c7c053ea",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C27",
+      "claim": "The RFamide neuropeptide FMRFamide regulates SIS in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies, several RFamide neuropeptides regulate sleep (He et al., 2013; Shang et al., 2013), including the RFamide neuropeptide FMRFamide, which regulates SIS (Lenz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "c1817c30-d6d0-4ab9-b869-e4053d782ae4",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C28",
+      "claim": "Both locomotion quiescence and feeding quiescence induced by flp-13 can be reversed by activation of motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both locomotion quiescence and feeding quiescence induced by flp-13 can be reversed by activation of motor neurons (Trojanowski et al., 2015), suggesting that flp-13 mediates quiescence at the level of the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "44807bda-fc39-40bd-a3c7-dba0219f6335",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C29",
+      "claim": "flp-13 mediates quiescence at the level of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Both locomotion quiescence and feeding quiescence induced by flp-13 can be reversed by activation of motor neurons (Trojanowski et al., 2015), suggesting that flp-13 mediates quiescence at the level of the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that motor neuron activation reverses flp-13 induced quiescence.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "5f3f3675-0182-4c8a-bf54-daad24455105",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C30",
+      "claim": "Quiescence induced by flp-13 requires the G protein alpha subunit GOA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, quiescence induced by flp-13 requires the G protein alpha subunit GOA-1 (Trojanowski et al., 2015), suggesting that these peptides signal through a G protein-coupled receptor (GPCR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "7b101f1c-8f8e-4845-8c05-db52343e9f87",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C31",
+      "claim": "FLP-13 peptides signal through a G protein-coupled receptor (GPCR).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, quiescence induced by flp-13 requires the G protein alpha subunit GOA-1 (Trojanowski et al., 2015), suggesting that these peptides signal through a G protein-coupled receptor (GPCR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for GOA-1.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "482f54e3-dc8a-4fff-990c-2fe12d18f68b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C32",
+      "claim": "There are more than 150 genes in the C. elegans genome predicted to encode neuropeptide receptor GPCRs.",
+      "claim_type": "EXPLICIT",
+      "source": "There are more than 150 genes in the C. elegans genome predicted to encode neuropeptide receptor GPCRs (Frooninckx et al., 2012; Hobert, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "313dc5c2-ef60-486b-b6ad-59d460dc8753",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C33",
+      "claim": "FRPR-4 can be activated by FLP-13 peptides in cell-based assay.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior detailed analysis of one of these GPCRs (Nelson et al., 2015), we showed that while FRPR-4 can be activated by FLP-13 peptides in cell-based assay, its genetic removal does not abrogate flp-13 induced quiescence in vivo, suggesting that it is not the receptor mediating the quiescence-inducing effects of FLP-13 peptides in response to cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "3950a717-4e3c-4c46-b794-7b641739e0fd",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C34",
+      "claim": "Genetic removal of FRPR-4 does not abrogate flp-13 induced quiescence in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior detailed analysis of one of these GPCRs (Nelson et al., 2015), we showed that while FRPR-4 can be activated by FLP-13 peptides in cell-based assay, its genetic removal does not abrogate flp-13 induced quiescence in vivo, suggesting that it is not the receptor mediating the quiescence-inducing effects of FLP-13 peptides in response to cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "241e0788-793e-4745-a192-0fcabc1bbba7",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C35",
+      "claim": "FRPR-4 is not the receptor mediating the quiescence-inducing effects of FLP-13 peptides in response to cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In prior detailed analysis of one of these GPCRs (Nelson et al., 2015), we showed that while FRPR-4 can be activated by FLP-13 peptides in cell-based assay, its genetic removal does not abrogate flp-13 induced quiescence in vivo, suggesting that it is not the receptor mediating the quiescence-inducing effects of FLP-13 peptides in response to cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that FRPR-4 removal does not affect flp-13 induced quiescence.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "d101d3e2-b255-4c32-8812-4ea8a0fa4ba7",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C36",
+      "claim": "Phsp-16.2:flp-13 transgenic animals are quiescent for body and pharyngeal movements two hours after exposure to a heat pulse to induce flp-13 gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Phsp-16.2:flp-13 transgenic animals are quiescent for body and pharyngeal movements two hours after exposure to a heat pulse to induce flp-13 gene expression (Nelson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research and confirmed by data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "d7c988d7-bb32-465e-b6c1-328578d32080",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C37",
+      "claim": "Five identified mutants (qn45, qn49, qn51, qn52 and qn53) are alleles of the same gene.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing genetic complementation tests, we determined that five of the identified mutants (qn45, qn49, qn51, qn52 and qn53) were alleles of the same gene (Yuan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic complementation tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "bec02c58-042d-4ebd-bfd8-798e4f6542d1",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C38",
+      "claim": "Each of the six mutants had a mutation in dmsr-1, a gene predicted to encode a GPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the gene mutated to cause the defect in flp-13 induced quiescence, we sequenced the genomes of six of the allelic mutants. Each of the six mutants had a mutation in dmsr-1, a gene predicted to encode a GPCR (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole genome sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "9608efa3-7ae3-4128-999d-073499f559d1",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C39",
+      "claim": "Four of the mutants (qn44, qn49, qn51 and qn53) contained premature stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the mutants (qn44, qn49, qn51 and qn53) contained premature stop codons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "4235003a-8ab7-415f-9945-da53d212bea2",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C40",
+      "claim": "One mutant (qn45) contained a complex rearrangement in exon 4 consisting of deletion of 332 nucleotides coupled with insertion of 54 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutant (qn45) contained a complex rearrangement in exon 4 consisting of deletion of 332 nucleotides coupled with insertion of 54 nucleotides (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "1f834406-51df-42dd-ba2b-0cc3164042bb",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C41",
+      "claim": "The qn45 rearrangement results in a frame shift that eliminates the three transmembrane domains at the C-terminus of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This rearrangement results in a frame shift that eliminates the three transmembrane domains at the C-terminus of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sequence analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "7fa0d919-866f-497d-ade5-d5e78666970a",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C42",
+      "claim": "One mutant (qn52) contained an alanine to valine mutation in exon 3.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutant (qn52) contained an alanine to valine mutation in exon 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "d78e07d5-4acd-461e-80d6-ab1d9400662b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C43",
+      "claim": "DMSR-1 is one of 41 C. elegans proteins in the RFamide receptor family.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is one of 41 C. elegans proteins in the RFamide receptor family (Frooninckx et al., 2012) and is orthologous to Drosophila receptors for the neuropeptides dromyosuppressin and FMRFamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and phylogenetic analysis shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "79177bdb-4a5b-44be-a3d4-322afcc07118",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C44",
+      "claim": "DMSR-1 is orthologous to Drosophila receptors for the neuropeptides dromyosuppressin and FMRFamide.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSR-1 is one of 41 C. elegans proteins in the RFamide receptor family (Frooninckx et al., 2012) and is orthologous to Drosophila receptors for the neuropeptides dromyosuppressin and FMRFamide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "344af49a-2dd2-42bb-b07e-409aad840abf",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C45",
+      "claim": "Dromyosuppressin and FMRFamide are neuropeptides with an amidated Arginine-Phenylalanine (RFamide) motif at their C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Like FLP-13 peptides, Dromyosuppressin and FMRFamide are neuropeptides with an amidated Arginine-Phenylalanine (RFamide) motif at their C-terminus (Nachman et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cd5573f1-9b09-4089-8340-ca2a0c0d1805",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C46",
+      "claim": "All wild-type animals pumped their pharynxes rapidly two hours after the heat pulse whereas the Phsp-16.2:flp-13 transgenic animals showed little to no feeding movements.",
+      "claim_type": "EXPLICIT",
+      "source": "All wild-type animals pumped their pharynxes rapidly two hours after the heat pulse whereas the Phsp-16.2:flp-13 transgenic animals showed little to no feeding movements (Figure 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "0d4baf97-7258-4fa2-9447-a74da126f71a",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C47",
+      "claim": "A significant fraction of each of the dmsr-1 mutants had pharyngeal pumping movements despite overexpression of flp-13.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, a significant fraction of each of the dmsr-1 mutants had pharyngeal pumping movements despite overexpression of flp-13 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "6724de31-a759-4da1-a270-421a70a5b41c",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C48",
+      "claim": "In the absence of a heat pulse, dmsr-1(qn45) mutants pumped rapidly at a rate no different from wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of a heat pulse, dmsr-1(qn45) mutants pumped rapidly at a rate no different from wild-type animals (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "3a0f5a84-75c0-4442-9de6-bd9e5281a10b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C49",
+      "claim": "Following induction of flp-13 overexpression, the rate of pumping in dmsr-1(qn45) mutants was not changed.",
+      "claim_type": "EXPLICIT",
+      "source": "Following induction of flp-13 overexpression, the rate of pumping in dmsr-1(qn45) mutants was not changed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "9e808a4e-341a-4bd9-aee6-09716bf01b31",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C50",
+      "claim": "Following induction of flp-13 overexpression, dmsr-1(qn45) mutants had increased body movement activity and reduced body movement quiescence in comparison to animals that were wild type for dmsr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following induction of flp-13 overexpression, dmsr-1(qn45) mutants had increased body movement activity and reduced body movement quiescence in comparison to animals that were wild type for dmsr-1 (Figure 2C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "9e7f65bf-a447-48eb-8379-ee25ba46e2d3",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C51",
+      "claim": "dmsr-1 mutants showed wild-type levels of feeding quiescence in response to EGF overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "While dmsr-1 mutants showed wild-type levels of feeding quiescence in response to EGF overexpression (Figure 3A), they had a small but highly significant defect relative to wild-type worms in body movement quiescence (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8d846db5-92ad-4273-8b60-1b0775afe995",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C52",
+      "claim": "dmsr-1 mutants had a small but highly significant defect relative to wild-type worms in body movement quiescence in response to EGF overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "While dmsr-1 mutants showed wild-type levels of feeding quiescence in response to EGF overexpression (Figure 3A), they had a small but highly significant defect relative to wild-type worms in body movement quiescence (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "88b625cf-bd1c-40ce-84fd-6cdb8c9e4d40",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C53",
+      "claim": "dmsr-1 is required downstream of or in parallel to EGF.",
+      "claim_type": "EXPLICIT",
+      "source": "This result provides evidence that dmsr-1 is required downstream of or in parallel to EGF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dmsr-1 mutants have defects in EGF-induced quiescence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cabff4d6-d76b-485a-b90c-6b142bb83386",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C54",
+      "claim": "There are other ALA-regulated signaling pathways working in parallel to dmsr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of only partial suppression of the EGF-induced quiescence suggests that there are other ALA-regulated signaling pathways working in parallel to dmsr-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the partial suppression of EGF-induced quiescence by dmsr-1 mutations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "1fabf1cf-4c4b-4d57-a381-adae58f3e81d",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C55",
+      "claim": "dmsr-1 mutations suppressed SIS with respect to both body movement quiescence and feeding quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "To test the hypothesis that dmsr-1 mediates SIS, we induced sleep by exposing the animals to a heat stress of 35\u00b0C for 30 min. dmsr-1 mutations suppressed SIS with respect to both body movement quiescence and feeding quiescence (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "550c70c8-f504-4d25-a27b-c528f39cfa1b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C56",
+      "claim": "The dmsr-1(qn45) mutation suppressed SIS at temperatures ranging from 34 to 37 degrees.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether dmsr-1 was required for SIS after exposure to other temperatures, we exposed cohorts of animals to temperatures ranging from 29 to 37 degrees Celsius. The dmsr-1(qn45) mutation suppressed SIS at temperatures ranging from 34 to 37 degrees (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ab19bb89-376e-4860-a385-0f0c97276a19",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C57",
+      "claim": "UVC induced a strong body movement quiescent response, which was attenuated in the dmsr-1(qn45) mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether dmsr-1 was required for sleep in response to stressors other than heat, we exposed animals to ultraviolet C (UVC) radiation. UVC induced a strong body movement quiescent response, which was attenuated in the dmsr-1(qn45) mutant (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "0265c100-636d-490b-b76b-07c147e645c7",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C58",
+      "claim": "SIS in dmsr-1 mutants was partially restored by expressing a genomic fragment of dmsr-1 including the coding region and 4 kb of upstream regulatory DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We partially restored SIS in dmsr-1 mutants by expressing a genomic fragment of dmsr-1 including the coding region and 4 kb of upstream regulatory DNA (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a29b3a07-9e36-4351-87a2-a32c24c688df",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C59",
+      "claim": "dmsr-1 mutants had normal quiescence associated with DTS.",
+      "claim_type": "EXPLICIT",
+      "source": "While dmsr-1 mutants were defective in quiescence associated with SIS, they had normal quiescence associated with DTS (Figure 3\u2014figure supplement 1C\u2013D), as previously shown for flp-13 mutants (Nelson et al., 2014), supporting the notion that the DTS and SIS are regulated at least partially differently (Trojanowski et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "05837a23-011e-41db-a2dd-46634b9691ef",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C60",
+      "claim": "DTS and SIS are regulated at least partially differently.",
+      "claim_type": "EXPLICIT",
+      "source": "While dmsr-1 mutants were defective in quiescence associated with SIS, they had normal quiescence associated with DTS (Figure 3\u2014figure supplement 1C\u2013D), as previously shown for flp-13 mutants (Nelson et al., 2014), supporting the notion that the DTS and SIS are regulated at least partially differently (Trojanowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of dmsr-1 mutations on SIS versus DTS, and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "0292dd23-7a03-4862-9741-8ec139d38734",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C61",
+      "claim": "Each of the seven FLP-13 peptides was capable of activating DMSR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the FLP-13 protein is processed into seven distinct RFamide peptides (Figure 4B), we performed a dose-response study with each of these seven peptides. Each of these peptides was capable of activating DMSR-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "31f068ea-8a6b-4a6d-bbf6-033bcd6d7a29",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C62",
+      "claim": "The most potent activator of DMSR-1 was FLP-13\u20135, which elicited a 50% maximal response (EC50) at a concentration of 2.3 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The most potent activator was FLP-13\u20135, which elicited a 50% maximal response (EC50) at a concentration of 2.3 nM (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "7ae06bf3-5325-451a-b077-4c21308a9b73",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C63",
+      "claim": "The observed potent activation of DMSR-1 by FLP-13 peptides in this cell based assay supports the hypothesis that DMSR-1 is an in vivo receptor for FLP-13 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed potent activation of DMSR-1 by FLP-13 peptides in this cell based assay supports the hypothesis that DMSR-1 is an in vivo receptor for FLP-13 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cell culture activation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "49f8f6f3-076e-4cbe-905a-01fccafda8fb",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C64",
+      "claim": "The mechanism of feeding and movement quiescence observed with flp-13 overexpression occurs through the inhibition of cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction arises from prior studies indicating that the mechanism of feeding and movement quiescence observed with flp-13 overexpression occurs through the inhibition of cholinergic motor neurons (Trojanowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "119ddf2b-1897-417e-a935-02904570f7ad",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C65",
+      "claim": "dmsr-1 is expressed in the RID neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8b2d561c-e200-4ec1-a15e-2d768929963b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C66",
+      "claim": "dmsr-1 is expressed in the paired AIY neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "29529312-20db-4276-aebd-ab9583298083",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C67",
+      "claim": "dmsr-1 is expressed in 12 other head neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "c3e670d3-85cf-4c25-9038-55305abf5ab2",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C68",
+      "claim": "dmsr-1 is expressed in the paired PHA and PHB neurons in the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "dd65e3f2-203e-4ac3-aad7-9a3389f733f1",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C69",
+      "claim": "dmsr-1 is expressed in five other tail neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the location of the cell body, the neuronal process morphology, the co-expression of the transgene with other, well-characterized, green fluorescent protein (GFP) reporters, and the co-localization of the red fluorescence with green DiO fluorescence, we concluded that dmsr-1 is expressed in the RID neuron (Figure 5C), the paired AIY neurons (Figure 5D), 12 other head neurons, the paired PHA and PHB neurons in the tail (Figure 5E), and in five other tail neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "f24bd3c5-5c3b-4dbf-964d-1002d9c76268",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C70",
+      "claim": "dmsr-1 is not expressed in AVE or AVA neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we did not see expression of dmsr-1 in AVE or AVA neurons (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression pattern analysis shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ad59c5ca-797c-4a71-995b-2e950e9c857f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C71",
+      "claim": "AVE and AVA command interneurons are the only post-synaptic partners to the ALA neuron based on the presence of ultrastructurally-defined chemical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "These command interneurons are the only post-synaptic partners to the ALA neuron based on the presence of ultrastructurally-defined chemical synapses (White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "93773d58-bb72-45f5-b697-bae15154665b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C72",
+      "claim": "ALA signals in a neuroendocrine fashion to promote SIS.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression in neurons that do not make direct synaptic connections with ALA suggested that ALA signals in a neuroendocrine fashion to promote SIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that dmsr-1 is not expressed in ALA's synaptic partners.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "f7def515-944c-49d8-9da7-6d46d7baadb4",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C73",
+      "claim": "A DMSR-1 protein with a GFP fluorescent tag at its C-terminus was localized diffusely to neuronal cell membranes and was not localized to synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this suggestion, we found that a DMSR-1 protein with a GFP fluorescent tag at its C-terminus was localized diffusely to neuronal cell membranes and was not localized to synapses (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a52eb742-62ce-42e7-914a-41ca3ee5bab5",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C74",
+      "claim": "GFP-tagged DMSR-1 protein rescued the mutant phenotype of dmsr-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This GFP-tagged DMSR-1 protein rescued the mutant phenotype of dmsr-1 (Figure 5\u2014figure supplement 1), indicating that it was functional.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "fb9ef877-119e-42f1-be86-696f063bc36f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C75",
+      "claim": "ALA can signal via non-synaptic means.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that ALA can signal via non-synaptic means was previously proposed based on the observation that a mutant with disrupted ALA axonal outgrowth retained normal ALA function (Van Buskirk and Sternberg, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "4e898790-fd4e-44a8-bd75-0a340309db5c",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C76",
+      "claim": "Expression of dmsr-1 in the paired PHA tail sensory neurons was not sufficient to restore feeding or body movement quiescence induced by flp-13 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of dmsr-1 in the paired PHA tail sensory neurons was not sufficient to restore feeding or body movement quiescence induced by flp-13 overexpression (Figure 5\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 5\u2014figure supplement 2A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "b627dd72-28d0-40ba-8054-9afad0d681d6",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C77",
+      "claim": "Expression of dmsr-1 in the paired head AIY interneurons conferred a small but statistically-significant rescue of the body movement quiescence defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of dmsr-1 in the paired head AIY interneurons conferred a small but statistically-significant (p<0.01) rescue of the body movement quiescence defect (Figure 5\u2014figure supplement 2D) but not the feeding quiescence defect observed in dmsr-1 mutants during flp-13 overexpression (Figure 5\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 5\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "84df58e6-62c8-4a51-abcc-ac5e0e58722f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C78",
+      "claim": "AIY specific dmsr-1 expression did not rescue the feeding or body movement quiescence defects observed in dmsr-1 mutants during SIS.",
+      "claim_type": "EXPLICIT",
+      "source": "AIY specific dmsr-1 expression did not however rescue the feeding or body movement quiescence defects observed in dmsr-1 mutants during SIS (Figure 5\u2014figure supplement 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by rescue experiment data shown in Figure 5\u2014figure supplement 2E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "4ea08e68-1206-44ee-819c-77aa0081cc84",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C79",
+      "claim": "When transgenic worms expressing Pdmsr-1:HisCl worms were placed on histamine, their movement quiescence and total activity were not affected.",
+      "claim_type": "EXPLICIT",
+      "source": "When transgenic worms expressing Pdmsr-1:HisCl worms were placed on histamine, their movement quiescence and total activity were not affected (Figure 6), indicating that in the absence of cellular stress, silencing these neurons has minimal effect on behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a10b88a4-6356-46d3-84ce-63e8adbdf8cb",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C80",
+      "claim": "In the absence of cellular stress, silencing dmsr-1 expressing neurons has minimal effect on behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "When transgenic worms expressing Pdmsr-1:HisCl worms were placed on histamine, their movement quiescence and total activity were not affected (Figure 6), indicating that in the absence of cellular stress, silencing these neurons has minimal effect on behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the HisCl experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cb330e72-0348-424e-8804-79c82ceaccc1",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C81",
+      "claim": "When HisCl worms were placed on histamine following exposure to UV stress, they had reduced total activity and enhanced body movement quiescence compared to control worms that lacked the HisCl channels.",
+      "claim_type": "EXPLICIT",
+      "source": "When HisCl worms were placed on histamine following exposure to UV stress, they had reduced total activity and enhanced body movement quiescence compared to control worms that lacked the HisCl channels (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "081960da-08a0-4901-90b2-81c53d0a9f5b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C82",
+      "claim": "HisCl channels did not affect activity or quiescence in the absence of histamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, HisCl channels did not affect activity or quiescence in the absence of histamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "14641e24-0b90-4c42-9739-abaca0467690",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C83",
+      "claim": "DMSR-1 promotes sleep by inhibiting wake-promoting cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations of elevated body movement quiescence with HisCl activation suggest that DMSR-1 promotes sleep by inhibiting wake-promoting cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the HisCl experiment results showing enhanced sleep when dmsr-1 expressing neurons are inhibited.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2fb44ceb-20ba-4c9b-9955-5c9b8d529f09",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C84",
+      "claim": "The double mutant animals showed a greater defect in quiescence than either the dmsr-1 or the flp-13 single mutant animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the SIS phenotypes of flp-13; dmsr-1 double mutant animals to those of dmsr-1 and flp-13 single mutant animals. We reasoned that if flp-13 and dmsr-1 have sleep inducing effects that are independent of one another, then the double mutant will have a greater defect in SIS compared to either of the single mutants. The double mutant animals indeed showed a greater defect in quiescence than either the dmsr-1 or the flp-13 single mutant animals (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "c61aa8fc-d8c4-46ae-9cd0-5d1b6bfd278f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C85",
+      "claim": "FLP-13 peptides activate receptors in addition to DMSR-1.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that (1) FLP-13 peptides activate receptors in addition to DMSR-1, and (2) DMSR-1 is either activated by ligands in addition to those encoded by flp-13, or DMSR-1 has ligand-independent activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the double mutant analysis showing additive effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8c0fcb8f-be3d-4a83-b3e3-b1986e1575ab",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C86",
+      "claim": "DMSR-1 is either activated by ligands in addition to those encoded by flp-13, or DMSR-1 has ligand-independent activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that (1) FLP-13 peptides activate receptors in addition to DMSR-1, and (2) DMSR-1 is either activated by ligands in addition to those encoded by flp-13, or DMSR-1 has ligand-independent activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the double mutant analysis showing additive effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "7b01db1c-69f4-4d2f-a48e-6c79bfbe483b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C87",
+      "claim": "Cellular stress leads to the release of the EGF/LIN-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular stress leads to the release of the EGF/LIN-3 (Hill et al., 2014) either from the stressed cells directly or from other cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "3716fa4a-557d-46df-a856-2fccb3e0e1f3",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C88",
+      "claim": "EGF activates the ALA neuron through the EGF-receptor LET-23.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF activates the ALA neuron through the EGF-receptor LET-23 (Van Buskirk and Sternberg, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "965e6e4e-ea8a-4020-ab00-a4870dcdc404",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C89",
+      "claim": "Activation of ALA requires depolarization of ALA.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation requires depolarization of ALA (Nelson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "f55b6805-0ca8-4b6a-8480-8c987b5aa041",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C90",
+      "claim": "ALA releases neuropeptides encoded by the flp-13 gene as well as other neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "ALA releases neuropeptides encoded by the flp-13 gene (Nelson et al., 2014) as well as other neuropeptides (Nath et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8f956cf1-baa5-4236-b0cd-51f49d2a2b02",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C91",
+      "claim": "FLP-13 neuropeptides act in a neuroendocrine fashion to activate the G-protein coupled receptor DMSR-1 and thus to inhibit wake-promoting neurons, which include the AIY interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-13 neuropeptides then act in a neuroendocrine fashion to activate the G-protein coupled receptor DMSR-1 and thus to inhibit wake-promoting neurons, which include the AIY interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression and functional data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "d576ac24-14a9-44fd-b334-0ee28d2e0c97",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C92",
+      "claim": "The G-protein that is coupled to DMSR-1 may be the Gi/o alpha subunit GOA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-protein that is coupled to DMSR-1 may be the Gi/o alpha subunit GOA-1, since goa-1 mutants are defective in SIS and in flp-13 induced sleep (Trojanowski et al., 2015) and since goa-1 is expressed widely in the nervous system (S\u00e9galat et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior studies showing goa-1 mutants are defective in SIS and flp-13 induced sleep.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2a84d7b3-38a6-4f3d-871c-fafdc4310d71",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C93",
+      "claim": "goa-1 mutants are defective in SIS and in flp-13 induced sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-protein that is coupled to DMSR-1 may be the Gi/o alpha subunit GOA-1, since goa-1 mutants are defective in SIS and in flp-13 induced sleep (Trojanowski et al., 2015) and since goa-1 is expressed widely in the nervous system (S\u00e9galat et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a5ab1452-e2a8-4e14-9cd9-a549a3b86564",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C94",
+      "claim": "goa-1 is expressed widely in the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The G-protein that is coupled to DMSR-1 may be the Gi/o alpha subunit GOA-1, since goa-1 mutants are defective in SIS and in flp-13 induced sleep (Trojanowski et al., 2015) and since goa-1 is expressed widely in the nervous system (S\u00e9galat et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "b1d3878a-7207-4380-b9f6-7ec1ec267e6b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C95",
+      "claim": "GOA-1 signaling may ultimately down regulate the activity of the Gq (EGL-30) signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "GOA-1 signaling may ultimately down regulate the activity of the Gq (EGL-30) signaling pathway, since a gain of function mutation in EGL-30 suppresses flp-13 induced sleep (Trojanowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from prior studies showing a gain of function mutation in EGL-30 suppresses flp-13 induced sleep.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "b462c290-1fc4-4522-93fa-793985b93016",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C96",
+      "claim": "A gain of function mutation in EGL-30 suppresses flp-13 induced sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "GOA-1 signaling may ultimately down regulate the activity of the Gq (EGL-30) signaling pathway, since a gain of function mutation in EGL-30 suppresses flp-13 induced sleep (Trojanowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ea250783-4c78-4616-bbf1-ca3112967865",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C97",
+      "claim": "The additional receptors responding to FLP-13 peptides may include one or more of the 15 other DMSR proteins encoded in the C. elegans genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional receptors responding to FLP-13 peptides may include one or more of the 15 other DMSR proteins encoded in the C. elegans genome (Figure 1C), and the additional peptides acting on DMSR-1 may include one or more of the other neuropeptides released from ALA (Nath et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculative reasoning based on the phylogenetic analysis and double mutant results.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "46d0f6ce-9607-4e8b-af7e-40da23d31770",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C98",
+      "claim": "The additional peptides acting on DMSR-1 may include one or more of the other neuropeptides released from ALA.",
+      "claim_type": "EXPLICIT",
+      "source": "The additional receptors responding to FLP-13 peptides may include one or more of the 15 other DMSR proteins encoded in the C. elegans genome (Figure 1C), and the additional peptides acting on DMSR-1 may include one or more of the other neuropeptides released from ALA (Nath et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the double mutant results and citation to prior research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "ba01b549-1bae-4dd3-abd3-7fbf9e2950bb",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C99",
+      "claim": "The AIY interneurons are known to promote worm locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the explanation of these results, since the AIY interneurons are known to promote worm locomotion (Gray et al., 2005; Shtonda and Avery, 2006), our observations that dsmr-1 is expressed in AIY and may function in AIY are consistent with the model that FLP-13/DMSR-1 signaling functions to inhibit wake-promoting neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "56e4a68e-5b97-4600-b29f-794ac404926d",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C100",
+      "claim": "The neuroendocrine RID neuron promotes forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is the neuroendocrine RID neuron, which promotes forward locomotion (Lim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "e9aa5f86-2a86-487f-8e27-2b4bead3fe98",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C101",
+      "claim": "In mammals, wake-promoting centers are distributed broadly across brainstem, basal forebrain, midbrain, and diencephalic structures, but sleep promoting neurons are anatomically restricted.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, wake-promoting centers are distributed broadly across brainstem, basal forebrain, midbrain, and diencephalic structures, but sleep promoting neurons are anatomically restricted (Saper et al., 2005b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "4e8d26ba-5e71-4249-b704-9ea25002992b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C102",
+      "claim": "The ventrolateral preoptic area of the hypothalamus, which is proposed to be sleep-promoting, contains inhibitory projections to several wake-promoting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The ventrolateral preoptic area of the hypothalamus, which is proposed to be sleep-promoting, contains inhibitory projections to several wake-promoting neurons (Saper et al., 2005a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "45e498f5-9865-489e-b739-94a7336d20e2",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C103",
+      "claim": "C. elegans has a diffuse wake-promoting circuit that can be inhibited by a central sleep-promoting system, the single ALA neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that C. elegans similarly has a diffuse wake-promoting circuit that can be inhibited by a central sleep-promoting system, the single ALA neuron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the mammalian sleep system and the C. elegans data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2e6c41fb-85c0-4462-8d64-32a85f76601f",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "claim_id": "C104",
+      "claim": "RFamide and EGF signaling regulates sleep in arthropods.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains to be seen whether sleep in response to acute illness in other animals functions in a similar fashion, but since RFamide and EGF signaling regulates sleep in arthropods too, it would not be unreasonable to propose that the molecular details and signaling concepts elucidated here are conserved across phylogeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited earlier in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about stress-induced sleep (SIS) across species, including that SIS is beneficial, occurs in response to various stressors, and in C. elegans is regulated by cytokine activation of the ALA neuron which releases FLP-13 neuropeptides. C. elegans SIS is distinct from developmentally timed sleep and adult C. elegans lack circadian sleep rhythms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C9-C16) establish the scientific context through citations to prior work and established knowledge about C. elegans biology. The claims are appropriately attributed to prior research and provide necessary background for understanding the current study. The distinction between SIS and DTS is well-established in the literature cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a17ab25f-0507-4940-a6a3-67e525bad0e6",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has established that cytokine signaling, particularly EGF and RFamide neuropeptides, regulates sleep across phylogeny. In C. elegans, EGF activates the ALA neuron which releases FLP-13 neuropeptides to promote sleep. The ALA neuron shares developmental similarities with mammalian neuroendocrine cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C17-C23, C25-C27) are appropriately attributed to prior research through citations. They establish the evolutionary conservation of sleep signaling mechanisms and the specific role of the ALA neuron in C. elegans, providing essential context for the identification of DMSR-1 as a FLP-13 receptor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "cdec5843-7c50-425a-8204-4a256eda485c",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Prior work established that flp-13 mediates quiescence through the nervous system by inhibiting motor neurons, requires the G-protein alpha subunit GOA-1, and likely signals through a GPCR. FRPR-4 can be activated by FLP-13 in vitro but is not required for flp-13-induced quiescence in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C28-C35) accurately summarize prior research that motivated the current genetic screen. The exclusion of FRPR-4 as the relevant receptor (C33-C35) is properly attributed to prior work and justifies the need for an unbiased genetic approach to identify the FLP-13 receptor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "4b2af85e-fb28-4a48-9440-6587ce19f82c",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Through an unbiased genetic screen for mutants defective in flp-13-induced quiescence, the authors identified dmsr-1, which encodes a GPCR in the RFamide receptor family. Multiple independent alleles were isolated, including premature stop codons, a complex deletion/insertion, and a missense mutation. DMSR-1 is orthologous to Drosophila receptors for dromyosuppressin and FMRFamide.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The genetic screen approach is sound (C4, C37), and the identification of multiple independent alleles with loss-of-function mutations (C38-C42) provides strong genetic evidence that dmsr-1 is required for flp-13-induced quiescence. The phylogenetic analysis (C43-C45) appropriately places DMSR-1 in the context of known RFamide receptors. The molecular characterization is thorough and well-documented in Figure 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "dmsr-1 mutants show reduced feeding and body movement quiescence in response to flp-13 overexpression compared to wild-type animals. In the absence of flp-13 overexpression, dmsr-1 mutants behave normally, indicating dmsr-1 is specifically required for the response to FLP-13 peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The behavioral data in Figure 2 clearly demonstrate that dmsr-1 mutations suppress both feeding quiescence (C46-C49) and body movement quiescence (C50) induced by flp-13 overexpression. The control experiments showing normal behavior without flp-13 overexpression (C48-C49) are critical for establishing specificity. Statistical analyses appear appropriate with multiple alleles tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a61438e9-eafb-48c6-99c7-08ae5332c04e",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "dmsr-1 mutants show wild-type feeding quiescence but have a small yet significant defect in body movement quiescence in response to EGF overexpression, suggesting dmsr-1 acts downstream of or in parallel to EGF and that other ALA-regulated pathways work in parallel to dmsr-1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The EGF overexpression experiments (Figure 3A-B) provide important epistasis data. The partial suppression of EGF-induced quiescence by dmsr-1 mutations (C51-C52) supports the pathway position (C53) and suggests pathway complexity (C54). However, the differential effects on feeding versus movement quiescence warrant further investigation. The statistical significance is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "a34a372a-fee7-47f9-9f8a-8b92369b1990",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "dmsr-1 is required for stress-induced sleep (SIS) in response to heat shock at multiple temperatures (34-37\u00b0C) and UV radiation, affecting both feeding and body movement quiescence. The phenotype can be partially rescued by a genomic dmsr-1 fragment. dmsr-1 mutants show normal developmentally timed sleep (DTS), indicating SIS and DTS are regulated differently.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SIS experiments (Figure 3C-D and supplements) demonstrate that dmsr-1 is required for physiological stress responses, not just artificial flp-13 overexpression. Testing multiple stressors (C55-C57) strengthens the conclusion. The partial rescue (C58) validates the genetic identification, though incomplete rescue suggests either incomplete expression or missing regulatory elements. The normal DTS in dmsr-1 mutants (C59-C60) is an important control showing specificity for SIS.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "18d15b2f-a48e-4a48-a35f-b1447b9b3066",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "All seven FLP-13 peptides, characterized by an RFamide C-terminal motif, can activate DMSR-1 in cell culture with varying potencies. FLP-13-5 is the most potent with an EC50 of 2.3 nM. This supports DMSR-1 as an in vivo receptor for FLP-13 peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell culture activation assays (Figure 4) provide direct biochemical evidence that FLP-13 peptides activate DMSR-1. Testing all seven peptides (C61) is thorough, and the nanomolar EC50 values (C62) are physiologically relevant. The use of a heterologous expression system with promiscuous G\u03b116 is appropriate for receptor deorphanization. The inference that DMSR-1 is an in vivo receptor (C63) is reasonable given the combined genetic and biochemical evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "bcf74424-9ce7-4e8f-90a3-612c672a4864",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "dmsr-1 is expressed in multiple neurons including RID, AIY, PHA, PHB, and others, but not in AVE or AVA (the only synaptic partners of ALA). DMSR-1 localizes diffusely to neuronal membranes rather than synapses. This expression pattern suggests ALA signals via neuroendocrine release of FLP-13 to activate DMSR-1 in non-synaptic target neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The expression analysis (Figure 5) is comprehensive, using multiple approaches including reporter colocalization and DiO staining to identify dmsr-1-expressing neurons (C65-C69). The critical observation that dmsr-1 is not expressed in ALA's synaptic partners (C70-C71) strongly supports neuroendocrine signaling (C72). The diffuse membrane localization of GFP-tagged DMSR-1 (C73) and its functionality in rescue experiments (C74) further support this model. The prior work on non-synaptic ALA signaling (C75) provides additional context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "27551d45-9537-48b2-825c-be52d6917326",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cell-specific rescue experiments show that dmsr-1 expression in PHA neurons does not rescue flp-13-induced quiescence defects. Expression in AIY neurons provides small but significant rescue of body movement quiescence during flp-13 overexpression but does not rescue feeding quiescence or SIS defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cell-specific rescue experiments (Figure 5 supplement 2) attempt to identify which neurons require dmsr-1 function. The negative result for PHA (C76) and partial rescue in AIY (C77-C78) suggest either that dmsr-1 functions in multiple neurons or that the rescue constructs don't fully recapitulate endogenous expression. The authors appropriately acknowledge these limitations in their discussion. The statistical analyses are clearly presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "2843719a-213b-4831-b1c2-c6038554852b",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Silencing dmsr-1-expressing neurons using histamine-gated chloride channels has no effect on behavior in the absence of stress but enhances sleep after UV stress. This suggests DMSR-1 promotes sleep by inhibiting wake-promoting neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The HisCl experiments (Figure 6) provide elegant functional evidence for the role of dmsr-1-expressing neurons. The lack of effect without stress (C79-C80) shows these neurons are not constitutively required for normal behavior. The enhanced sleep when these neurons are silenced during stress (C81-C82) strongly supports the model that DMSR-1 inhibits wake-promoting neurons (C83). The experimental design with appropriate controls is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "431b0d87-6ad1-4b8c-8e6d-2c1dc9182663",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "flp-13; dmsr-1 double mutants show greater defects in SIS than either single mutant, suggesting FLP-13 peptides activate additional receptors beyond DMSR-1, and DMSR-1 may be activated by additional ligands or has ligand-independent activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The double mutant analysis (Figure 7) provides important genetic evidence for pathway complexity. The additive phenotype (C84) clearly demonstrates that flp-13 and dmsr-1 have partially independent functions, supporting both conclusions (C85-C86). This is a standard genetic approach and the interpretation is sound. However, the alternative explanation of ligand-independent DMSR-1 activity (C86) is speculative and would require additional experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose a model where cellular stress leads to EGF release, which activates and depolarizes the ALA neuron through the EGF receptor LET-23. ALA releases FLP-13 and other neuropeptides that act neuroendocrinally to activate DMSR-1 on wake-promoting neurons. DMSR-1 likely couples to Gi/o (GOA-1) to inhibit these neurons, possibly by downregulating Gq (EGL-30) signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This model integrates the current findings with prior work. The upstream components (C87-C90) are well-established from prior research. The neuroendocrine FLP-13/DMSR-1 signaling (C91) is strongly supported by the current data. The proposed G-protein coupling (C92-C96) is reasonable based on prior genetic studies showing goa-1 and egl-30 mutant phenotypes, though direct biochemical evidence for DMSR-1/GOA-1 coupling is not provided. The model is presented appropriately as integrating multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "8c7b74b7-7952-4e17-b31f-a2037309802e",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that additional FLP-13 receptors may include other DMSR family members in C. elegans, and additional DMSR-1 ligands may include other neuropeptides released from ALA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C97-C98) are explicitly speculative, as indicated by the use of \"may include\" and the evidence type labeled as speculation. While the speculation is reasonable given the double mutant data and the existence of other DMSR proteins and ALA neuropeptides, no direct experimental evidence is provided to test these hypotheses. These represent logical directions for future research rather than supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "df61cc35-fadb-44a6-82c7-768e59632ae0",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors draw parallels between the C. elegans sleep system and mammalian sleep architecture, noting that AIY and RID are wake-promoting neurons in C. elegans, and proposing that C. elegans may have a diffuse wake-promoting circuit inhibited by the central ALA sleep-promoting neuron, similar to mammalian systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to mammalian sleep systems (C101-C102) is appropriately cited. The identification of AIY and RID as wake-promoting (C99-C100) is supported by prior literature. The proposed parallel between C. elegans and mammalian sleep architecture (C103) is reasonable speculation based on the data, though it is explicitly presented as a possibility rather than a proven conclusion. This comparative analysis provides useful context for understanding the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "546a30c0-1773-472b-af78-a2a6019a74a1",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors suggest that RFamide and EGF signaling regulates sleep in arthropods, raising the possibility that the molecular mechanisms identified in C. elegans may be conserved across phylogeny.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim (C104) appropriately references prior work on arthropod sleep regulation and suggests evolutionary conservation as a reasonable hypothesis. The claim is appropriately tentative (\"it would not be unreasonable to propose\") and is supported by the cited literature on RFamide and EGF signaling in other species discussed earlier in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    },
+    {
+      "id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7",
+      "content_id": "7daac2dc-f9dc-405e-8966-a5a782c7c4a8",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "DMSR-1 likely couples to the Gi/o G-protein alpha subunit GOA-1, which is expressed widely in the nervous system and whose mutation causes defects in SIS and flp-13-induced sleep. GOA-1 may downregulate Gq (EGL-30) signaling, as gain-of-function EGL-30 mutations suppress flp-13-induced sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the genetic evidence from prior work (C30, C93-C94, C96) supports roles for GOA-1 and EGL-30 in the pathway, the direct coupling of DMSR-1 to GOA-1 (C8, C92) is inferred rather than demonstrated biochemically. The manuscript appropriately uses tentative language (\"likely,\" \"may\") for these claims. Direct biochemical evidence such as co-immunoprecipitation, reconstitution experiments, or functional assays in cells expressing specific G-proteins would be needed to definitively establish DMSR-1/GOA-1 coupling. The pathway relationship between GOA-1 and EGL-30 (C95) is also inferred from genetic epistasis rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:02.505367Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "478c32d1-92e8-46b5-af81-896149096392",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "0bc96a15-fe60-43b5-996a-7fc54a684cdb",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "cdffede8-3e66-4132-a278-8af373f58a49",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "20e73b6f-d01b-42a6-99b8-69565ed0c212",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "f92b9e41-90bb-463c-9766-6e405bd82f13",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "acaaf667-283d-460c-a38b-f9d0c0edde73",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "893b30ba-e69e-4db3-b9be-6b507b6524c5",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "d888967a-6e30-483c-88bb-9834fba23963",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "8e316667-4b19-4aa6-895d-e38f65f3d286",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "29e0ad93-ad99-4bb7-8b64-ae455eb0357e",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "2901e30c-7fba-4461-9367-c5c881b87675",
+      "result_id": "f73d7851-2f4c-4a0c-b4fa-060843e25a3a"
+    },
+    {
+      "claim_id": "671c82fb-aea9-402f-9063-684220805b4b",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "ea804df9-19c9-435f-bfb3-d952f9b3a011",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "cd644912-0f43-453b-8f00-634795528b26",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "a362faa6-0de3-4dcd-83f9-549dac3968e8",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "82a41f58-a5c3-406f-896e-1858d325746a",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "c3c2b99b-677a-4def-aaa7-2b4816f41546",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "642eefe3-3528-4ce1-8683-e33aa97fc08f",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "2a573d02-16d4-43fe-b5b1-226ce7e48e6e",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "763ee5a6-db1a-4068-9460-6d03b06571c6",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "36ced9da-04da-40bf-954f-1028c7c053ea",
+      "result_id": "a17ab25f-0507-4940-a6a3-67e525bad0e6"
+    },
+    {
+      "claim_id": "c1817c30-d6d0-4ab9-b869-e4053d782ae4",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "44807bda-fc39-40bd-a3c7-dba0219f6335",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "5f3f3675-0182-4c8a-bf54-daad24455105",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "7b101f1c-8f8e-4845-8c05-db52343e9f87",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "482f54e3-dc8a-4fff-990c-2fe12d18f68b",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "313dc5c2-ef60-486b-b6ad-59d460dc8753",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "3950a717-4e3c-4c46-b794-7b641739e0fd",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "241e0788-793e-4745-a192-0fcabc1bbba7",
+      "result_id": "cdec5843-7c50-425a-8204-4a256eda485c"
+    },
+    {
+      "claim_id": "e74955fc-46cc-4b76-a73c-74da6591a0c4",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "d7c988d7-bb32-465e-b6c1-328578d32080",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "bec02c58-042d-4ebd-bfd8-798e4f6542d1",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "9608efa3-7ae3-4128-999d-073499f559d1",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "4235003a-8ab7-415f-9945-da53d212bea2",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "1f834406-51df-42dd-ba2b-0cc3164042bb",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "7fa0d919-866f-497d-ade5-d5e78666970a",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "d78e07d5-4acd-461e-80d6-ab1d9400662b",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "79177bdb-4a5b-44be-a3d4-322afcc07118",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "344af49a-2dd2-42bb-b07e-409aad840abf",
+      "result_id": "4b2af85e-fb28-4a48-9440-6587ce19f82c"
+    },
+    {
+      "claim_id": "d101d3e2-b255-4c32-8812-4ea8a0fa4ba7",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "cd5573f1-9b09-4089-8340-ca2a0c0d1805",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "0d4baf97-7258-4fa2-9447-a74da126f71a",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "6724de31-a759-4da1-a270-421a70a5b41c",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "3a0f5a84-75c0-4442-9de6-bd9e5281a10b",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "9e808a4e-341a-4bd9-aee6-09716bf01b31",
+      "result_id": "7b6eeea7-7882-4a9d-a3b8-5579d979de97"
+    },
+    {
+      "claim_id": "9e7f65bf-a447-48eb-8379-ee25ba46e2d3",
+      "result_id": "a61438e9-eafb-48c6-99c7-08ae5332c04e"
+    },
+    {
+      "claim_id": "8d846db5-92ad-4273-8b60-1b0775afe995",
+      "result_id": "a61438e9-eafb-48c6-99c7-08ae5332c04e"
+    },
+    {
+      "claim_id": "88b625cf-bd1c-40ce-84fd-6cdb8c9e4d40",
+      "result_id": "a61438e9-eafb-48c6-99c7-08ae5332c04e"
+    },
+    {
+      "claim_id": "cabff4d6-d76b-485a-b90c-6b142bb83386",
+      "result_id": "a61438e9-eafb-48c6-99c7-08ae5332c04e"
+    },
+    {
+      "claim_id": "1fabf1cf-4c4b-4d57-a381-adae58f3e81d",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "550c70c8-f504-4d25-a27b-c528f39cfa1b",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "ab19bb89-376e-4860-a385-0f0c97276a19",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "0265c100-636d-490b-b76b-07c147e645c7",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "a29b3a07-9e36-4351-87a2-a32c24c688df",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "05837a23-011e-41db-a2dd-46634b9691ef",
+      "result_id": "a34a372a-fee7-47f9-9f8a-8b92369b1990"
+    },
+    {
+      "claim_id": "ae455d15-9ff6-461e-be61-7a311684c816",
+      "result_id": "18d15b2f-a48e-4a48-a35f-b1447b9b3066"
+    },
+    {
+      "claim_id": "0292dd23-7a03-4862-9741-8ec139d38734",
+      "result_id": "18d15b2f-a48e-4a48-a35f-b1447b9b3066"
+    },
+    {
+      "claim_id": "31f068ea-8a6b-4a6d-bbf6-033bcd6d7a29",
+      "result_id": "18d15b2f-a48e-4a48-a35f-b1447b9b3066"
+    },
+    {
+      "claim_id": "7ae06bf3-5325-451a-b077-4c21308a9b73",
+      "result_id": "18d15b2f-a48e-4a48-a35f-b1447b9b3066"
+    },
+    {
+      "claim_id": "49f8f6f3-076e-4cbe-905a-01fccafda8fb",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "119ddf2b-1897-417e-a935-02904570f7ad",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "8b2d561c-e200-4ec1-a15e-2d768929963b",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "29529312-20db-4276-aebd-ab9583298083",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "c3e670d3-85cf-4c25-9038-55305abf5ab2",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "dd65e3f2-203e-4ac3-aad7-9a3389f733f1",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "f24bd3c5-5c3b-4dbf-964d-1002d9c76268",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "ad59c5ca-797c-4a71-995b-2e950e9c857f",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "93773d58-bb72-45f5-b697-bae15154665b",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "f7def515-944c-49d8-9da7-6d46d7baadb4",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "a52eb742-62ce-42e7-914a-41ca3ee5bab5",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "fb9ef877-119e-42f1-be86-696f063bc36f",
+      "result_id": "bcf74424-9ce7-4e8f-90a3-612c672a4864"
+    },
+    {
+      "claim_id": "4e898790-fd4e-44a8-bd75-0a340309db5c",
+      "result_id": "27551d45-9537-48b2-825c-be52d6917326"
+    },
+    {
+      "claim_id": "b627dd72-28d0-40ba-8054-9afad0d681d6",
+      "result_id": "27551d45-9537-48b2-825c-be52d6917326"
+    },
+    {
+      "claim_id": "84df58e6-62c8-4a51-abcc-ac5e0e58722f",
+      "result_id": "27551d45-9537-48b2-825c-be52d6917326"
+    },
+    {
+      "claim_id": "4ea08e68-1206-44ee-819c-77aa0081cc84",
+      "result_id": "2843719a-213b-4831-b1c2-c6038554852b"
+    },
+    {
+      "claim_id": "a10b88a4-6356-46d3-84ce-63e8adbdf8cb",
+      "result_id": "2843719a-213b-4831-b1c2-c6038554852b"
+    },
+    {
+      "claim_id": "cb330e72-0348-424e-8804-79c82ceaccc1",
+      "result_id": "2843719a-213b-4831-b1c2-c6038554852b"
+    },
+    {
+      "claim_id": "081960da-08a0-4901-90b2-81c53d0a9f5b",
+      "result_id": "2843719a-213b-4831-b1c2-c6038554852b"
+    },
+    {
+      "claim_id": "14641e24-0b90-4c42-9739-abaca0467690",
+      "result_id": "2843719a-213b-4831-b1c2-c6038554852b"
+    },
+    {
+      "claim_id": "2fb44ceb-20ba-4c9b-9955-5c9b8d529f09",
+      "result_id": "431b0d87-6ad1-4b8c-8e6d-2c1dc9182663"
+    },
+    {
+      "claim_id": "c61aa8fc-d8c4-46ae-9cd0-5d1b6bfd278f",
+      "result_id": "431b0d87-6ad1-4b8c-8e6d-2c1dc9182663"
+    },
+    {
+      "claim_id": "8c0fcb8f-be3d-4a83-b3e3-b1986e1575ab",
+      "result_id": "431b0d87-6ad1-4b8c-8e6d-2c1dc9182663"
+    },
+    {
+      "claim_id": "7b01db1c-69f4-4d2f-a48e-6c79bfbe483b",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "3716fa4a-557d-46df-a856-2fccb3e0e1f3",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "965e6e4e-ea8a-4020-ab00-a4870dcdc404",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "f55b6805-0ca8-4b6a-8480-8c987b5aa041",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "8f956cf1-baa5-4236-b0cd-51f49d2a2b02",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "d576ac24-14a9-44fd-b334-0ee28d2e0c97",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "2a84d7b3-38a6-4f3d-871c-fafdc4310d71",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "a5ab1452-e2a8-4e14-9cd9-a549a3b86564",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "b1d3878a-7207-4380-b9f6-7ec1ec267e6b",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "b462c290-1fc4-4522-93fa-793985b93016",
+      "result_id": "b7be9caf-6cf0-4c27-af2a-98b4f940cc61"
+    },
+    {
+      "claim_id": "ea250783-4c78-4616-bbf1-ca3112967865",
+      "result_id": "8c7b74b7-7952-4e17-b31f-a2037309802e"
+    },
+    {
+      "claim_id": "46d0f6ce-9607-4e8b-af7e-40da23d31770",
+      "result_id": "8c7b74b7-7952-4e17-b31f-a2037309802e"
+    },
+    {
+      "claim_id": "ba01b549-1bae-4dd3-abd3-7fbf9e2950bb",
+      "result_id": "df61cc35-fadb-44a6-82c7-768e59632ae0"
+    },
+    {
+      "claim_id": "56e4a68e-5b97-4600-b29f-794ac404926d",
+      "result_id": "df61cc35-fadb-44a6-82c7-768e59632ae0"
+    },
+    {
+      "claim_id": "e9aa5f86-2a86-487f-8e27-2b4bead3fe98",
+      "result_id": "df61cc35-fadb-44a6-82c7-768e59632ae0"
+    },
+    {
+      "claim_id": "4e8d26ba-5e71-4249-b704-9ea25002992b",
+      "result_id": "df61cc35-fadb-44a6-82c7-768e59632ae0"
+    },
+    {
+      "claim_id": "45e498f5-9865-489e-b739-94a7336d20e2",
+      "result_id": "df61cc35-fadb-44a6-82c7-768e59632ae0"
+    },
+    {
+      "claim_id": "2e6c41fb-85c0-4462-8d64-32a85f76601f",
+      "result_id": "546a30c0-1773-472b-af78-a2a6019a74a1"
+    },
+    {
+      "claim_id": "1257aed0-b2ed-4582-9d4b-7f7f5ffc5b5f",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "5f3f3675-0182-4c8a-bf54-daad24455105",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "7b101f1c-8f8e-4845-8c05-db52343e9f87",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "d576ac24-14a9-44fd-b334-0ee28d2e0c97",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "2a84d7b3-38a6-4f3d-871c-fafdc4310d71",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "a5ab1452-e2a8-4e14-9cd9-a549a3b86564",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "b1d3878a-7207-4380-b9f6-7ec1ec267e6b",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    },
+    {
+      "claim_id": "b462c290-1fc4-4522-93fa-793985b93016",
+      "result_id": "6aa627d3-7492-4c2f-8922-e532c6fb21f7"
+    }
+  ],
+  "comparisons": []
+}

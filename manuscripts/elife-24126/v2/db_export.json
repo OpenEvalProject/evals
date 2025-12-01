@@ -1,0 +1,2197 @@
+{
+  "submission": {
+    "id": "308fb4f5-d87c-4a73-84e7-ad4936e2114f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:38:15.309584Z",
+    "updated_at": "2025-11-30T23:38:15.309584Z"
+  },
+  "content": [
+    {
+      "id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "submission_id": "308fb4f5-d87c-4a73-84e7-ad4936e2114f",
+      "content_type": "manuscript",
+      "content_text": "# A CDC25 family protein phosphatase gates cargo recognition by the Vps26 retromer subunit\n\n## Authors\n\n- Tie-Zhong Cui<sup>1</sup>\n- Tabitha A Peterson<sup>2</sup> ([ORCID: 0000-0003-0780-5795](https://orcid.org/0000-0003-0780-5795))\n- Christopher G Burd<sup>1</sup> ([ORCID: 0000-0003-1831-8706](https://orcid.org/0000-0003-1831-8706)) \u2020\n\n### Affiliations\n\n1. Department of Cell Biology Yale School of Medicine New Haven United States\n2. Department of Molecular Physiology and Biophysics University of Iowa Iowa City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe describe a regulatory mechanism that controls the activity of retromer, an evolutionarily conserved sorting device that orchestrates cargo export from the endosome. A spontaneously arising mutation that activates the yeast (Saccharomyces cerevisiae) CDC25 family phosphatase, Mih1, results in accelerated turnover of a subset of endocytosed plasma membrane proteins due to deficient sorting into a retromer-mediated recycling pathway. Mih1 directly modulates the phosphorylation state of the Vps26 retromer subunit; mutations engineered to mimic these states modulate the binding affinities of Vps26 for a retromer cargo, resulting in corresponding changes in cargo sorting at the endosome. The results suggest that a phosphorylation-based gating mechanism controls cargo selection by yeast retromer, and they establish a functional precedent for CDC25 protein phosphatases that lies outside of their canonical role in regulating cell cycle progression.\n\n## Introduction\n\nEndocytosis mediates internalization of the plasma membrane via vesicles that deliver their content to the endosomal system, a network of related organelles that undergo maturation to generate a terminal endosome that fuses with the lysosome. During endosome maturation, integral membrane proteins are either retained, leading their eventual turnover in the lysosome, or they are exported and delivered to other organelles for re-use. Molecular sorting reactions in the endosome thus play a fundamental role in controlling the composition of the plasma membrane by determining which molecules are recycled back to the plasma membrane and which are degraded.\n\nThe retromer protein complex is an evolutionarily conserved sorting device that orchestrates export of integral membrane proteins from the endosome via tubular and vesicular ETCs (Burd and Cullen, 2014; Chi et al., 2015). Retromer is composed of three proteins: Vps35, which resembles an alpha solenoid similar to well characterized vesicle coat proteins such as clathrin; Vps26 (standard name: Pep8), which binds the N-terminal region of Vps35; and Vps29, which binds the C-terminal region of Vps35 (Collins et al., 2008; Hierro et al., 2007; Norwood et al., 2011). The full range of molecular functions that are executed by each retromer subunit have yet to be definitively established, and this is a major obstacle for understanding the mechanisms that underpin retromer-mediated cargo export from the endosome. The helical repeats of Vps35 are thought to provide binding sites for cargo and accessory factors, such as the Snx3 and Snx27 sorting nexins (Harrison et al., 2014; Hierro et al., 2007; Liu et al., 2012) and, in mammals, the WASH complex, an activator of the Arp2/3 actin polymerization complex (Harbour et al., 2012; Jia et al., 2012). Vps26 is structurally related to \u03b1- and \u03b2-arrestins (Collins et al., 2008; Shi et al., 2006), which function as sorting adapters for G protein-coupled receptors (GPCRs) in clathrin-mediated endocytosis, raising the possibility that it may function in the selection of integral membrane proteins for export. Given the central role that retromer plays in controlling plasma membrane composition and organelle biogenesis, it is logical to expect that retromer activities would be regulated in order to integrate its functions with cell physiology (Seaman, 2012), but examples of such regulation have yet to be identified.\n\nIn this study, we used genetic selection in budding yeast (Saccharomyces cerevisiae) to identify gene products that control plasma membrane residence of integral membrane proteins. One mutant obtained displays a loss of retromer-dependent plasma membrane recycling of multiple integral plasma membrane proteins. This phenotype results from a gain-of-function mutation in the dual specificity protein phosphatase (Camps et al., 2000; Patterson et al., 2009), MIH1, encoding the S. cerevisiae homolog of CDC25 (Pal et al., 2008). We show that Vps26 directly recognizes a retromer sorting signal and that the phosphorylation state of Vps26, controlled by Mih1, modulates the affinity of retromer for the Chs3 recycling signal.\n\n## Results and discussion\n\n### Isolation of yeast mutants deficient in endosomal trafficking\n\nTo identify factors that regulate post-Golgi trafficking of integral membrane proteins, we harnessed the activity of yeast chitin synthase 3 (Chs3), an integral membrane enzyme that is trafficked between Golgi and endosomal compartments and the plasma membrane. Delivery of Chs3 to the cell surface is mediated by transport vesicles that are coated with the \u2018exomer\u2019 protein complex (Wang et al., 2006). In cells lacking functional exomer, Chs3 is constitutively retained within the cell by a Golgi-endosome trafficking circuit involving a clathrin adapter protein complex 1 (AP1)-dependent retention mechanism (Valdivia et al., 2002; Wang et al., 2006). In cells that lack both functional exomer and AP1 sorting complexes, Chs3 fails to be retained and it is delivered to the plasma membrane via the constitutive secretory pathway (Valdivia et al., 2002) (Figure 1A). Whereas growth of exomer-deficient cells is resistant to calcofluor white (CFW), a cytotoxic molecule that binds chitin in the cell wall (Roncero and Dur\u00e1n, 1985), growth of cells lacking exomer and AP1 is exquisitely sensitive to CFW in the medium (Valdivia et al., 2002) (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic diagram of post-Golgi trafficking pathways. In wild-type cells, Chs3 is retained at the Golgi-endosome interface via AP-1 dependent retrieval from the endosome, and is delivered to the plasma membrane via Golgi-derived exomer coated vesicles (gray arrows). In cells used for the genetic selection in this study, chitin synthase 3 (Chs3) is diverted into the constitutive secretory pathway due to deletions of the Chs6 exomer subunit and the Apl2 AP-1 subunit (chs6\u0394apl2\u0394). Endocytosis of Chs3 and other plasma membrane proteins, which is attenuated by the end4 mutation, delivers the internalized proteins to the endosome, where some are sorted by retromer into a recycling pathway, while others are retained in the endosome and delivered to the lysosome-like vacuole and degraded. (B) Strategy to identify novel mutations affecting Chs3 trafficking. The flowchart lists the number of mutants remaining after each step of selection. (C) Representative calcofluor white (CFW) resistant strains. Serial dilutions (1:10; indicated by the black triangle above the photograph) of the indicated strains were spotted onto YPD medium with or without 100 \u03bcg/ml CFW. The plates were incubated for three days at 30\u00b0C and then photographed. (D) Mutations in MIH1 alter sensitivity of growth to CFW. Serial dilutions (indicated by a triangle above the photograph) of control cells of the indicated genotypes were spotted onto rich medium with or without 50 \u03bcg/ml CFW for three days at 30\u00b0C. The genotype of the control strain is: chs6\u0394apl2\u0394. The chs6\u0394apl2\u0394mih1-1 strain was constructed by introducing the mih1-1 lesion de novo in the original chs6\u0394apl2\u0394 parent strain. The mih1\u0394 designation indicates that the wild-type MIH1 locus was deleted in the original parent strain (chs6\u0394apl2\u0394mih1\u0394). The mih1-1/mih1\u0394 designation indicates that the mih1-1 allele was deleted in the original mih1-1 mutant strain. (E) Mih1 phosphatase activity is required for CFW resistance conferred by the mih1-1 mutation. Serial dilutions of chs6\u0394apl2\u0394mih1\u0394 cells containing plasmids expressing the mih1-1 allele (\u2018S162R\u2019), a double mutant protein (S162R C320S) in which a second mutation was introduced that ablates catalytic activity, or empty vector (\u2018Vec\u2019), were spotted onto complete synthetic medium with or without 50 \u03bcg/ml CFW for three days at 30\u00b0C. The host strain is the chs6\u0394apl2\u0394mih1\u0394 strain background.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Quantitation of phospho-Cdc28 levels. Cell lysates of the indicated strains were probed by immunoblot with an anti-phospho-cdc2 (Tyr15) antiserum (one example is shown in the inset, top). The intensity of the signal corresponding to Cdc28 (the S. cerevisiae homolog of Cdc2) was normalized for loading. The graph shows the mean intensities (+ s.e.m.) for three independent experiments, relative to the mean intensity measured for wild-type cells. The parent genotype of all strains (except wild-type) is chs6\u0394apl2\u0394; additional mutations are indicated. (B) Deletion of SWE1 does not affect growth in the presence of calcofluor white. Serial dilutions of control (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1), mih1\u0394 (chs6\u0394apl2\u0394mih1\u0394), mih1-1/mih1\u0394 (chs6\u0394apl2\u0394mih1-1mih1\u0394), swe1\u0394 (chs6\u0394apl2\u0394swe1\u0394), and mih1-1/swe1\u0394 (chs6\u0394apl2\u0394mih1-1swe1\u0394) cells were grown on YPD medium with or without 100 \u03bcg/ml CFW for three days at 30\u00b0C. This is the uncropped image of Figure 1D. (C) Localization of Chs3-GFP in control (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1), mih1\u0394 (chs6\u0394apl2\u0394 mih1\u0394) and swe1\u0394 (chs6\u0394apl2\u0394swe1\u0394) cells. A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m.\n\nWe used selection on CFW-containing growth medium to obtain CFW-resistant (\u2018CFWR\u2019) mutants and then identified those exhibiting altered distribution of Chs3 (Figure 1B,C). To bias the selection away from mutations that affect exomer- and AP1-mediated trafficking, we employed a strain deleted for both an exomer subunit (CHS6) and an AP1 subunit (APL2), chs6\u0394apl2\u0394. As previously reported (Valdivia et al., 2002), these cells are sensitive to CFW (Figure 1C), however, we observed spontaneously arising CFWR colonies after several days on solid growth medium containing 100 \u03bcg/ml CFW (Figure 1C); we considered these to be good candidates for strains carrying spontaneously arising mutations that cause a reduction in cell wall chitin. Indeed, cells of each of these strains exhibited reduced capacity to bind CFW, as determined by visualizing cells by ultra-violet illumination (not shown).\n\nComplementation tests against a panel of mutants implicated in Chs3-dependent chitin deposition (chs3\u25b3, chs4\u25b3, chs5\u25b3, chs7\u25b3, and pfa4\u25b3) (Lam et al., 2006; Ono et al., 2000; Trilla et al., 1999; Wang et al., 2006) revealed that, as expected, the majority of CFWR mutants (96%) failed to be complemented (i.e., diploid cells remained CFWR) by any single \u2018tester\u2019 strain (Figure 1B), strongly suggesting that lesions in the \u2018tester\u2019 genes are responsible for the observed CFW resistance. These mutants were discarded, leaving a subset of 30 strains that were not complemented by any of the tester strains. To determine if Chs3 trafficking is perturbed in cells of any of these strains, we compared localization of a Chs3-GFP fusion protein in each mutant strain to that of the original parent strain. In a population of parental chs6\u0394apl2\u0394 cells, Chs3-GFP is observed at the bud neck, intracellular punctae (Golgi and/or endosome compartments), and there is a faint signal in the vacuole lumen of most cells (Figure 2A). In 19 out of 30 CFWR strains examined, there are fewer and less bright punctae, the intensity of Chs3-GFP fluorescence at the bud neck is reduced, and the GFP signal in the vacuole lumen is substantially increased (an example of one such mutant is shown in Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig2-v2.jpg)\n\n**Figure 2.:** (A) Localization of Chs3-GFP, Mup1-GFP, and Can1-GFP in control cells (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1) and mih1\u0394 (chs6\u0394apl2\u0394mih1\u0394). A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m. (B) Increased proteolysis of Chs3-GFP, Mup1-GFP, and Can1-GFP in mih1-1 (chs6\u0394apl2\u0394mih1-1) cells and decreased proteolysis in mih1\u0394 (chs6\u0394apl2\u0394mih1\u0394) cells. Mup1-GFP and Can1-GFP expressing cells were grown in methionine- or arginine-deficient medium, respectively, to promote plasma membrane recycling. A representative anti-GFP immunoblot of cell lysates of the indicated strains is shown. The number below each lane indicates the mean proportion (+s.e.m.) of free GFP to the total GFP signal in the lane calculated from a minimum of three independent measurements. Anti 3-phosphoglycerate kinase (Pgk1) blotting was used to control for loading. Statistical significance for pairwise comparisons is indicated; n.s., not statistically significant. The positions of molecular weight (kDa) protein standards is indicated on the left side of the gel.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Micrographs of cells expressing the indicated proteins as fusions to GFP are shown. Cells expressing Ftr1-GFP were cultured in iron-deficient medium to promote recycling. A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m. (B) Steady state levels of Ftr1-GFP, Vps10-GFP, and Snc1-GFP are unaffected in mih1-1 or mih1\u0394 cells. Cell lysates of cells expressing the indicated GFP fusion proteins, which all undergo plasma membrane recycling, were probed with anti-GFP antibody and quantified. Ftr1-GFP expressing cells were grown in iron-deficient medium to promote plasma membrane recycling. The means of three independent measurements (+s.e.m.), normalized to the mean of control cells, are indicated below each lane. None of the differences in abundances are statistically significant.\n\nWhole-genome sequencing of the most severe vacuolar localization mutant led to the identification of a cytosine-to-adenine mutation in the MIH1 ORF that causes a S162R substitution in the Mih1 protein. That this mutation is responsible for the phenotypes that we selected was confirmed by the identical phenotypes of cells in which this mutation was constructed de novo in the parent strain, and by deletion of the MIH1 locus in the original mutant strain, which reverted the enhanced vacuolar targeting of Chs3 (Figure 2) and conferred enhanced sensitivity to CFW (Figure 1D). We termed this allele mih1-1.\n\nMIH1 is homologous to CDC25, first discovered in Schizosaccharomyces pombe, which encodes a dual-specificity protein phosphatase that dephosphorylates the Cdc2 cyclin-dependent kinase (CDK; Cdc28 in S. cerevisiae) to activate it (Pal et al., 2008; Patterson et al., 2009; Russell and Nurse, 1986). The substitution caused by the mih1-1 mutation lies outside of the phosphatase motif, however, the phosphatase activity of Mih1 is necessary for the observed phenotypes of the mih1-1 mutant, because introduction of a second mutation, cysteine(320) to serine, which changes an active site residue required for catalysis (Yano et al., 2013), ablates CFWR caused by the mih1-1 mutation (Figure 1E). Mih1 undergoes cell cycle regulated phosphorylation at numerous sites and this is correlated with inhibition of its activity toward Cdc28/CDK (Pal et al., 2008). While S162 is not a known site of phosphorylation, several residues in the vicinity of S162 are proposed to be phosphorylated by protein kinase C (PKC) (Yano et al., 2013), a protein kinase shown to regulate trafficking of Chs3 (Valdivia and Schekman, 2003). Thus, we speculate that the S162R mutation may impinge on regulation of Mih1 activity.\n\nAs the proposed function of Mih1 is to activate Cdc28/CDK by dephosphorylating an active site tyrosine residue (Pal et al., 2008), we tested the possibility that the mih1-1 associated trafficking phenotypes are due to hyper-activation of Cdc28/CDK. Immunoblotting with anti-phospho-CDK antiserum did not reveal a change in the amount of phosphorylated Cdc28/CDK in lysates from cultures of chs6\u0394apl2\u0394 versus chs6\u0394apl2\u0394mih1-1 cells (Figure 1\u2014figure supplement 1), probably because multiple phosphatases act redundantly to activate Cdc28/CDK (Kennedy et al., 2016). Accordingly, this hypothesis was further tested by deleting the gene encoding the Swe1 kinase that phosphorylates Cdc28/CDK to inhibit its activity (Lianga et al., 2013; Pal et al., 2008); if the mih1-1 allele exerts its effect via activated Cdc28/CDK, deletion of SWE1 should revert the CFWR and Chs3-GFP trafficking phenotypes. However, we observed that CFW resistance and Chs3-GFP localization are unaffected by the swe1\u0394 mutation (Figure 1\u2014figure supplement 1). In addition, deletion of SWE1 in the original chs6\u0394apl2\u0394mih1-1 mutant strain (chs6\u0394apl2\u0394mih1-1swe1\u0394) has no effect on CFW sensitivity or Chs3-GFP localization (Figure 1\u2014figure supplement 1). These data indicate that the consequences of the mih1-1 mutation on Chs3 trafficking are not exerted via activated Cdc28/CDK.\n\n### Mih1 regulates recycling of plasma membrane proteins\n\nThe data suggest that CFW resistance is caused by an increased rate of turnover of Chs3 in the vacuole of chs6\u0394apl2\u0394mih1-1 cells. Anti-GFP immunoblotting of cell extracts confirmed this; in lysates of chs6\u0394apl2\u0394mih1-1 cells expressing Chs3-GFP, GFP is cleaved from\u00a0~62% of the Chs3-GFP fusion protein, but just\u00a0~37% is processed to GFP in lysates from the chs6\u0394apl2\u0394 parent (Figure 2). Importantly, in parental cells lacking MIH1 (chs6\u0394apl2\u0394mih1\u0394), GFP is cleaved from just\u00a0~22% of the Chs3-GFP fusion protein with a concomitant accumulation of full length Chs3-GFP relative to parental cells (Figure 2). Thus, the mih1-1 and mih1\u0394 alleles have opposing consequences, indicating that native Mih1 is a physiological regulator of Chs3 trafficking.\n\nIn order to determine if the mih1-1 mutation uniquely affects trafficking of Chs3, we examined localization and processing of GFP-tagged forms of several nutrient transporters that are maintained at the plasma membrane via endocytic recycling in chs6\u0394apl2\u0394mih1-1 and chs6\u0394apl2\u0394mih1\u0394 cells. As observed for Chs3-GFP in the original mih1-1 mutant, increased vacuole localization and proteolytic processing of Mup1-GFP (a GFP tagged methionine transporter) and Can1-GFP (a GFP tagged arginine transporter) is observed (Figure 2). In addition, deletion of MIH1 (i.e., chs6\u0394apl2\u0394mih1\u0394 cells) results in an increase in the levels of full-length Mup1-GFP and Can1-GFP (Figure 2), while the localization, levels, and proteolytic processing of Ftr1-GFP (a GFP tagged iron transporter), Vps10-GFP (a GFP-tagged integral membrane protein that is trafficked from the endosome to the Golgi by retromer), and GFP-Snc1 (a GFP tagged v-SNARE of secretory vesicles) are not affected by mutations in MIH1 (Figure 2\u2014figure supplement 1). These results indicate that Mih1 regulates recycling of a subset of proteins that transit the plasma membrane.\n\nIn principle, the mih1-1 mutation could affect sorting upon export from the Golgi or sorting at the endosome, after cargo has been internalized by endocytosis. To distinguish between these modes, we monitored localization and processing of Chs3-GFP and Mup1-GFP in a strain in which the end4-1 mutation was introduced into the chs6\u0394apl2\u0394mih1-1 strain (chs6\u0394apl2\u0394mih1-1 end4-1). This mutation substantially limits endocytosis via the clathrin-dependent pathway (Munn and Riezman, 1994), resulting in the accumulation of recycling proteins on the plasma membrane (Strochlic et al., 2007). In cells carrying the end4-1 mutation, the Chs3-GFP and Mup1-GFP (Figure 3A,C) fluorescence signals in the vacuole is decreased, and the proportion of GFP cleaved from the fusion proteins also decreases (Figure 3B,D). These data indicate that Mih1 acts downstream of endocytosis to regulate the abundance of Chs3 and Mup1 on the plasma membrane, strongly suggestive of a role in endocytic recycling.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig3-v2.jpg)\n\n**Figure 3.:** (A) Endocytosis promotes vacuolar localization of Chs3-GFP in mih1-1 cells. Micrographs showing Chs3-GFP in mih1-1 (chs6\u0394apl2\u0394mih1-1) and mih1-1end4-1 (chs6\u0394apl2\u0394mih1-1end4-1) cells are shown. A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m. (B) Cleavage of GFP from Chs3-GFP is attenuated by the end4-1 mutation. Anti-GFP blotting of cell lysates was used to quantify the pools of full length Chs3-GFP and free GFP. The number below each lane indicates the mean (+s.e.m.) proportion of free GFP to the total GFP signal in the lane calculated from a minimum of three independent measurements. Statistical significance is indicated. Anti-Pgk1 blotting was used to control for loading. The positions of molecular weight (kDa) of protein standards are indicated on the left side of the gel. (C) Vacuolar localization of Mup1-GFP requires endocytosis. Micrographs showing Mup1-GFP in mih1-1 (chs6\u0394apl2\u0394mih1-1) and mih1-1end4-1 (chs6\u0394apl2\u0394mih1-1end4-1) cells cultured in medium lacking methionine are shown. A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m. (D) Cleavage of GFP from Mup1-GFP is attenuated by end4-1 mutation. The data are presented as described in the legend to panel B. Due to the small amount of free GFP, the difference is not statistically significant (n.s.).\n\n### Plasma membrane recycling of Chs3 requires retromer\n\nSorting nexins are components of endosomal recycling/retrograde sorting devices (Cullen and Korswagen, 2012) and we therefore speculated that one or more sorting nexins are required for Chs3 recycling in the absence of AP1-mediated recycling (i.e., as in chs6\u0394apl2\u0394 parental cells). To test this, CFW resistance of cells deleted of a sorting nexin with an established role in endocytic recycling introduced into the parental chs6\u0394apl2\u0394 Chs3-GFP was examined (Figure 4A). This screen revealed that deletion of vps5\u25b3 and vps17\u25b3, but no other sorting nexin deletion, including snx3\u0394, which has been shown to ablate plasma membrane recycling of Ftr1-GFP (Strochlic et al., 2007), conferred resistance to CFW comparable to the chs6\u0394apl2\u0394mih1-1 strain. It is noteworthy that Vps5 and Vps17 form a SNX-BAR heterodimer that functions as a component of the retromer sorting complex (Horazdovsky et al., 1997; Seaman et al., 1998) and, indeed, deletion of the gene encoding each retromer subunit also confers resistance to CFW (Figure 4A) and Chs3-GFP is localized prominently to the vacuole lumen (Figure 4B). These results indicate that Chs3 is exported from the endosome via a retromer-dependent recycling pathway.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig4-v2.jpg)\n\n**Figure 4.:** (A) Growth of strains lacking genes encoding endosomal sorting nexins and retromer deletions in the presence of CFW. Serial dilutions of control (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1), snx3\u0394 (chs6\u0394apl2\u0394snx3\u0394), snx4\u0394 (chs6\u0394apl2\u0394snx4\u0394), vps5\u0394 (chs6\u0394apl2\u0394vps5\u0394), vps17\u0394 (chs6\u0394apl2\u0394vps17\u0394), mvp1\u0394 (chs6\u0394apl2\u0394mvp1\u0394), vps26\u0394 (chs6\u0394apl2\u0394vps26\u0394), vps29\u0394 (chs6\u0394apl2\u0394vps29\u0394) and vps35\u0394 (chs6\u0394apl2\u0394vps35\u0394) cells were spotted onto rich medium with or without 50 \u03bcg/ml CFW for three days at 30\u00b0C. (B) Localization of Chs3-GFP in control (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1) and vps29\u0394 (chs6\u0394apl2\u0394vps29\u0394) (as a representative retromer deletion). A representative medial optical plane of a z-series is shown. Scale bar, 5 \u00b5m. (C) Endogenously expressed Vps35-GFP, Vps29-GFP, Vps26-GFP, Vps17-GFP or Vps5-GFP fusion proteins were immunopurified from chs6\u0394apl2\u0394mih1\u0394 cells and samples of the collected material were analyzed by immunoblotting with a pan phosphoryl amino acid antiserum (top) or anti-GFP (bottom). An amount of cell lysate equivalent to 0.5% of the starting material for the purifications was run in the \u2018load\u2019 lanes. The positions of molecular weight (kDa) protein standards are indicated on the left side of the gels. (D) Vps26 phosphorylation status. Endogenously expressed Vps26-GFP fusion protein was immunopurified from chs6\u0394apl2\u0394 (control), chs6\u0394apl2\u0394mih1-1 (mih1-1) and chs6\u0394apl2\u0394mih1\u0394 (mih1\u0394) cells and subjected to immunoblot assay with a pan phosphoryl amino acid antiserum (top) or anti-GFP (bottom). The molecular weight (kDa) of protein standards is indicated on the left side of the gels. (E) Purified Mih1 proteins. The indicated Mih1 proteins were purified from yeast cell lysates. A coomassie blue stained gel of aliquots of the eluted fractions used for activity assays is shown. (F) In vitro assay of Vps26 dephosphorylation by Mih1. Purified Mih1 proteins or lambda protein phosphatase were incubated with immunopurified Vps26-GFP. Equivalent portions of each reaction were examined by immunoblot with a pan phosphoryl amino acid antiserum (top) or anti-GFP (bottom). \u2018Mock\u2019 indicates a reaction that received no purified phosphatase.\n\n### Regulation of retromer by Mih1\n\nDeficient trafficking of multiple proteins (Chs3, Mup1, and Can1) in the endosomal system of mih1-1, mih1\u0394, and retromer null cells leads us to speculate that Mih1 regulates the activity of a general endosomal sorting and trafficking device \u2013 retromer \u2013 via dephosphorylation of one or more retromer subunits. To test this, we immunopurified GFP-tagged forms of each retromer subunit from chs6\u25b3apl2\u25b3 and chs6\u25b3apl2\u25b3mih1\u25b3 cells, and then probed the precipitates with a pan phosphoryl\u2013amino acid antiserum (Figure 4C). We observe an accumulation of phosphorylated Vps26-GFP in cells lacking Mih1 (chs6\u25b3apl2\u25b3mih1\u25b3); we also note that a phosphorylated form of Vps35-GFP was detected, but only in a subset of these experiments (not shown). Phosphorylated Vps26-GFP could also be detected after GFP immuno-purification from wild-type cell lysate, but not in lysate prepared from mih1-1 cells (Figure 4D), consistent with the mih1-1 allele conferring enhanced activity, as predicted from the genetic analyses.\n\nChanges in the phosphorylation status of Vps26 in mih1-1 and mih1\u0394 cells raise the possibility that phosphorylated Vps26 is a substrate of Mih1, though this is unexpected, as CDC25 family phosphatases are thought to be dedicated toward CDKs (Boutros et al., 2007). We tested this by assaying the activities of purified Mih1, Mih1-1, and the catalytically inactive C320S form of Mih1, toward phosphorylated Vps26. Mih1 proteins were purified from yeast strains that overexpress each protein (Figure 4E), and Vps26-GFP was purified from a mih1\u0394 strain. The results clearly show that the wild-type and Mih1-1 phosphatases, but not Mih1(C320S), dephosphorylate Vps26, which was confirmed by comparing to the products of a reaction using pure protein phosphatase derived from bacteriophage lambda (Figure 4F). Accumulation of phosphorylated Vps26 in mih1\u0394 cells, decreased phosphorylation of Vps26-GFP in mih1-1 cells, and the demonstration that phosphorylated Vps26 is a substrate for purified Mih1 in vitro, lead us to conclude that Vps26 is a bona fide substrate of Mih1 in vivo.\n\nTen phosphorylated residues in Vps26 have been identified (Stark et al., 2010) (Bodenmiller et al., 2008), notably including five serine residues located within a loop that connects two \u03b2 strands (corresponding to \u2018loop 6\u2019 in the structure of mammalian Vps26), as well as several positions corresponding to structurally significant features of arrestin family proteins, to which Vps26 is structurally related. To address the significance of Vps26 phosphorylation status controlled by Mih1, we first compared localizations and steady state abundances of GFP- and/or FLAG epitope-tagged Vps26 and Vps35 in wild-type, mih1-1, and mih1\u0394 cells; no differences were noted between these strains, suggesting that Mih1 does not control organelle targeting or turnover of retromer proteins (not shown). Therefore, as an indicator of retromer function, we assessed CFW resistance of mutant strains in which annotated phosphorylated residues in Vps26 were changed to alanine (Ala), and observed that no single point mutation affected CFW resistance of the cells (not shown). We therefore removed most of loop 6 (22 of 33 amino acids) including the five annotated phosphorylated serine and threonine residues, using the structure of human Vps26A (Shi et al., 2006) as a guide to avoid distorting the global fold of the mutant protein. Deletion of loop 6 (\u2018Vps26\u0394L6\u2019) confers increased sensitivity to CFW (Figure 5A), suggesting that this enhances plasma membrane localization of Chs3-GFP. That is, deletion of this loop appears to potentiate retromer-mediated recycling of Chs3. Consistent with residues of loop 6 being targets of Mih1 activity, the amount of phosphorylated Vps26\u0394L6 detected by immunoblotting was reduced by\u00a0~50% compared to native Vps26 (Figure 5B). Next, each of the known and potential sites of phosphorylation of loop 6 were substituted with a phosphomimetic or non-phosphoryl residues and growth on CFW medium was scored (Figure 5C). Similar to cells with the loop 6 deletion, substitution of all serine (Ser) and threonine (Thr) residues with glutamate (Glu) results in enhanced CFW sensitivity (Figure 5C, rows 1, 5), suggesting that phosphorylation of these residues potentiates retromer-mediated recycling. Importantly, these substitutions exerted this effect in the context of the mih1-1 mutation (Figure 5C, compare rows 2 and 3), correlating the charge on these residues with the CFWR phenotype of mih1-1 cells. In contrast, substitution of these residues with non-phosphoryl alanine residues conferred modest resistance CFW (Figure 5C, compare rows 1 and 8), indicating that these substitutions diminish retromer function. Thus, the data argue that Mih1 regulates retromer-dependent recycling in part by controlling the phosphorylation status of Vps26 loop 6 residues. We note that the data also suggest Mih1 has additional targets that affect the growth response to CFW, as deletion of mih1 is epistatic to the Vps26 loop 6 (A) substitutions (Figure 5C, compare rows 7 and 8).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig5-v2.jpg)\n\n**Figure 5.:** (A) Deletion of loop 6 of Vps26 confers CFW sensitive growth. Serial dilutions of control (chs6\u0394apl2\u0394), vps26\u0394 (chs6\u0394apl2\u0394vps26\u0394) and L6\u0394 (chs6\u0394apl2\u0394vps26\u0394L6) cells were spotted on YPD medium with or without CFW at the indicated concentration for three days at 30\u00b0C. (B) Vps26 loop 6 is de-phosphorylated by Mih1 in vivo. The amount of phosphorylated Vps26\u0394L6 -GFP relative to native Vps26-GFP is shown. The mean (+s.e.m.) of three independent determinations is plotted. Statistical significance is indicated. (C) Phospho-mimetic substitutions in loop 6 of Vps26 confer sensitivity to CFW. Serial dilutions of control (chs6\u0394apl2\u0394), mih1-1 (chs6\u0394apl2\u0394mih1-1), mih1\u22121\u00a0+\u00a0L6 (E) (chs6\u0394apl2\u0394mih1-1vps26-loop 6 (E)), mih1\u22121\u00a0+\u00a0L6 (A) (chs6\u0394apl2\u0394mih1-1vps26-loop 6 (A)), L6 (E) (chs6\u0394apl2\u0394vps26-loop 6 (E)), mih1\u0394 (chs6\u0394apl2\u0394mih1\u0394), mih1\u0394\u00a0+\u00a0L6 (A) (chs6\u0394apl2\u0394mih1\u0394vps26-loop 6 (A)) and L6 (A) (chs6\u0394apl2\u0394vps26-loop 6 (A)) cells were spotted on YPD medium with or without CFW at the indicated concentration for three days at 30\u00b0C. (D) Top: Structure of human \u03b2-arrrestin1 bound to a peptide derived from the sequence of the V2 vasopressin receptor (Shukla et al., 2013)\u00a0(PDB: 4JQI). The \u2018finger loop\u2019, which corresponds to loop 6 of Vps26, is shown in the inactive (i.e., GPCR unbound) and active (GPCR bound) conformations to illustrate the manner in which it occludes GPCR binding in the inactive state. Bottom: Structure of human Vps26a (Shi et al., 2006) (PDB: 2FAU) with the extended loop 6 of yeast modeled in the dephosphorylated and phosphorylated conformations. We suggest that phosphorylation relieves an auto-inhibited conformation of the loop that antagonizes cargo recognition and that dephosphorylation by Mih1 restores the auto-inhibited state.\n\nRetromer contributes to Chs3 recycling in wild-type cells (Arcones et al., 2016), and especially in chs6\u0394apl2\u0394 cells (Figure 4A). Thus, Chs3 should possess a recycling signal that is recognized by retromer. As previously noted (Weiskoff and Fromme, 2014), a \u2018YYL\u2019 sequence (amino acids 12\u201314) located within the N-terminal cytoplasmic segment of Chs3 is a candidate and the results of three experiments confirmed this. First, substitution of these three residues with Ala results in CFW resistance (Figure 6A). Second, an immobilized fusion protein composed of the first 52 amino acids of Chs3 fused to glutathione S transferase (GST) captures both Vps26 and Vps35 retromer subunits from cell lysates (Figure 6B). We note that a previous report found that isolated human Vps26 recognizes the retromer sorting motif of the SorLA protein (Fjorback et al., 2012), and that in our experiments Vps26 was slightly, but reproducibly enriched on this matrix relative to Vps35. As Vps26 is the least tightly associated yeast retromer subunit (Seaman et al., 1998), these data suggest that Vps26 may directly recognize GST-Chs3(1-52) while Vps35 capture is indirect. Third, ligand-binding assays employing pure recombinant Vps26 and GST-Chs3(1-52) shows that Vps26 does indeed recognize GST-Chs3(1-52) (Figure 6C), while there is no detectable binding to GST with an irrelevant C-terminal sequence (Figure 6C). Binding of Vps26 to GST-Chs3(1-52) is saturable, with an estimated equilibrium dissociation constant, KD, of 19 \u03bcM (Figure 6D). In contrast, binding of Vps26 to a mutant GST-Chs3 fusion protein in which the YYL sequence was changed to AAA was not saturated, even at 100 \u03bcM Vps26 (KD\u00a0>40 \u03bcM). These results confirm that Vps26 recognizes this sequence and, in light of the data demonstrating retromer-dependent trafficking of Chs3, indicate that this sequence constitutes a retromer-dependent sorting signal.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24126/elife-24126-fig6-v2.jpg)\n\n**Figure 6.:** (A) Substitution of a putative retromer sorting motif in Chs3 confers resistance CFW. Chs3 residues Y12YLwere changed to alanine in chs6\u0394apl2\u0394 cells. Serial dilutions of control (chs6\u0394apl2\u0394) and mutant cells were spotted on calcofluor plates (30 \u03bcg/ml) and grown for three days at 30\u00b0C. (B) The Vps26 and Vps35 retromer subunits are captured by beads presenting Chs3 residues 1\u201352. Lysates from cells expressing GFP tagged Vps26 (or its variants) or Vps35-FLAG were incubated with immobilized GST-Chs3 (amino acids 1\u201352; \u2018GST-1\u201352\u2019) or GST. An amount of cell lysate equivalent to 0.5% of the starting material for the purifications was run in the \u2018load\u2019 lanes. The relative enrichment of each protein in the pulldown fraction (means and standard deviations of three independent experiments) is indicated. A coomassie blue-stained gel of 3% of each starting affinity resins is shown below the immunoblots. The molecular weight (kDa) of protein standards is indicated on the left side of the gels. (C) Vps26 binds directly to the YYL Chs3 sorting signal. Binding assays of pure, 6xHis-tagged wild-type Vps26, Vps26 loop 6 deletion (Vps26\u0394L6) and loop 6 phosphomimetic Vps26 (Vps26-L6(E) to GST-Chs3(1-52) or the same portion of Chs3 with alanines substituted for the YYL sequence (GST-Chs3(YYL->AAA)) are shown. The input fractions show one microgram of the starting material used for each assay. The positions of molecular weight (kDa) protein standards are indicated on the left side of the gel. (D) Loop 6 controls affinity of Vps26 for a retromer sorting signal. Equilibrium binding measurements of pure, recombinant wild-type Vps26, Vps26L6\u0394, and Vps26-L6(E) for the GST-Chs3(1-52) fusion protein, and wild-type Vps26 for the GST-Chs3(YYL->AAA) fusion protein, are shown. The points plotted in the graphs represent the mean fraction of bound Vps26 proteins, calculated from single measurements using three independent protein preparations of each Vps26 protein. The calculated KD values (\u00b1s.e.) are listed. Saturation binding to the GST-Chs3(YYL->AAA) fusion protein was not observed, so a dissociation constant could not be calculated.\n\nAs the results of the cell-based experiments suggest that loop 6 impedes retromer-dependent recycling of Chs3, we measured the affinity of Vps26 lacking this loop (Vps26\u0394L6) to GST-Chs3(1-52). This form of Vps26 exhibits a nearly 4-fold higher affinity for GST-Chs3(1-52) (KD of 5.2 \u03bcM) (Figure 6D). In close agreement with this measurement, the loop 6 phosphomimetic form of Vps26 (Vps26(L6E) binds GST-Chs3(1-52) with a KD of 4.3 \u03bcM (Figure 6D). Taken together, the data correlate an increase in the affinities with which the Chs3 recycling signal is recognized by Vps26 with sorting outcome; an increase in the affinity of cargo resulting from phosphorylation of loop 6 results in enhanced recycling of Chs3.\n\nHow does phosphorylation of Vps26 control the affinity with which Vps26 recognizes cargo? A role for Vps26 in cargo recognition had been raised previously on the basis of its structural homology to arrestin proteins (Collins et al., 2008; Shi et al., 2006), which serve as cargo adapters for clathrin-mediated endocytosis of GPCRs (Kang et al., 2014; Moore et al., 2007), and the finding that Vps26 binds the retromer sorting motif of SorLA (Fjorback et al., 2012). Atomic structures of activated \u03b2-arrestin1 (Kim et al., 2013), especially that of \u03b2-arrestin1 bound to a phosphorylated peptide derived from the human V2 vasopressin receptor (termed \u2018V2Rpp\u2019) (Shukla et al., 2013) (Figure 5D), potentially provide remarkable insight into this question. Arrestins are composed of two tandem \u03b2 sandwich domains whose relative orientation toggles between an inactive conformation and an active conformation that binds ligand-activated, phosphorylated GPCR (Kim et al., 2013; Shukla et al., 2013, 2014). The phosphorylated C-terminal segment of GPCR binds to the N-terminal domain in a concave \u2018cup\u2019 that is partly occluded in the inactive conformation by a loop, termed the \u2018finger loop,\u2019 that connects two strands within a \u03b2 sheet (Figure 5D) (Shukla et al., 2013). In the active, receptor-bound conformation of \u03b2-arrestin1, the finger loop extends from the domain, allowing it to contact the membrane core of the GPCR and exposing the binding site of the GPCR C-terminal segment (Figure 5D) (Shukla et al., 2013; Szczepek et al., 2014).\n\nThe finger loop of \u03b2-arrestin1 corresponds to the phosphorylated loop 6 of Vps26 (Figure 5D). It is unlikely that loop 6 directly recognizes the retromer sorting signal. Rather, we suggest that it functions as a gate that controls access of the \u03b2 sheet of N-terminal domain to cargo (Figure 5D). In its unphosphorylated state, the extended loop would antagonize cargo engagement via an auto-inhibited conformation, akin to the conformation of the finger loop of \u03b2-arrestin1 in the inactive state, and phosphorylation of loop residues would displace it from occluding access to the surface of the \u03b2 sheet, akin to the displacement of the \u03b2-arrestin-1 finger loop in the active conformation. This mechanism provides for a tunable system for adjusting the abundance of proteins on the cell surface via recycling regulated by kinase-phosphatase networks that are responsive to metabolic and environmental cues. Surprisingly, neither the mih1-1 or mih1\u0394 mutations affect the distribution of Vps10, a well characterized retromer cargo that cycles between the Golgi apparatus and endosome (Figure 2\u2014figure supplement 1), indicating the existence of at least one additional mode of cargo recognition by retromer, speculated to be mediated by the Vps35 retromer subunit (Nothwehr et al., 1999, 2000). Consistent with this, a recently published structure of a Vps35-Vps26-Snx3 complex bound to a peptide containing a retromer sorting signal revealed an additional mode of cargo recognition involving the Snx3-Vps26 interface (Lucas et al., 2016). Multiple modes of cargo recognition by retromer provide a mechanistic explanation for the diversity of cargo-specific sorting factors that function with retromer, such as the Snx3, SNX-BAR, and Snx27 sorting nexins (Cullen, 2008; Cullen and Korswagen, 2012; Strochlic et al., 2007). As cargo recognition plays a key role in targeting soluble retromer to the endosome membrane (Harrison et al., 2014; Lucas et al., 2016), an important implication of our findings is that distinct cargo recognition modes could drive the formation of distinct retromer-containing complexes on the endosome membrane.\n\nA future challenge is to identify the signaling pathways and regulatory inputs that modulate plasma membrane composition via retromer-mediated recycling. Importantly, the identification of Mih1 as a physiological regulator of retromer function reveals a new facet of function for CDC25 family phosphatases, which are currently thought to act solely on cyclin-dependent kinases to control cell cycle progression (Boutros et al., 2007). The activities of CDC25 family phosphatases are subject to intricate regulation via kinases and phosphatases that respond to a variety of cellular stimuli and impinge on various cell cycle checkpoints. One possible regulator of Mih1 function with regard to Chs3 recycling is PKC, which is has been shown to control Mih1 signaling (Yano et al., 2013) and to promote Chs3 trafficking from the TGN to the plasma membrane via the exomer pathway (Valdivia and Schekman, 2003). As PKC is a core component of the cell wall integrity pathway, Mih1-mediated regulation of Chs3 recycling by retromer might reflect a stress response to defects in the cell wall.\n\nThe results presented here indicate that, in addition to the role that yeast Mih1 plays in cell cycle progression, it also controls trafficking of plasma membrane proteins that impact nutrient homeostasis and cell wall remodeling \u2013 key axes of cell growth control. Over-expression of CDC25 proteins is observed in some human cancers, leading to speculation that gain-of-function dysregulation, akin to the Mih1-1 protein characterized in this study, contributes to cell transformation. However, it has not been possible to attribute the effects of increased CDC25 expression levels solely to inappropriate progression through the cell cycle and our study raises the possibility that this may be due, in part, to unappreciated activities of CDC25 proteins on non-CDK substrates.\n\n## Materials and methods\n\n### Yeast strains and culture conditions\n\nAll yeast strains were constructed in BY4742 (MAT\u03b1 his3-1, leu2-0, met15-0, and ura3-0) (Open Biosystems/Thermo Scientific, Waltham, MA) by homologous recombination of gene-targeted, polymerase chain reaction (PCR)-generated DNAs using the method of Longtine et al (Longtine et al., 1998). Mutant strains were derived either from the EUROSCARF KANMX deletion collection (Open Biosystems/Thermo Scientific, Waltham, MA) or by replacement of the complete reading frame with a HIS3MX6, NATMX6 or URA3 cassette. The introduction of point or truncation mutations into the genome was performed according to the established methods (Gray et al., 2004, 2005; Toulmay and Schneiter, 2006). To make the Vps26-E mutant, all serine and threonine codons in loop 6 region of Vps26 (87\u2013113 aa) were replaced by glutamate codons; To make the Vps26-A mutant, all serine and threonine codons in loop 6 region of Vps26 were replaced by alanine codons. To express TAP-tagged Mih1, a TAP tag DNA construct was integrated immediately upstream of the native stop codon of strain TVY614 (MAT\u03b1, ura3\u201352, his3-\u0394200, trp1-\u0394 901, lys2\u2013801, suc2-\u03949, leu2\u20133, 11, pep4\u0394::LEU2, prb1\u0394::HISG, prc1\u0394::HIS3). Next, DNAs generated by PCR using pFA-kanMX6-PGAL1 and pBS1539 as templates were used to integrate the GAL1 promoter immediately upstream of the native MIH1 start codon and a TAP tag immediately upstream of the native stop codon, respectively. To construct similar strains expressing the mih1-1 or C320S alleles, the MIH1 locus of TVY614 was first replaced with the URA3 gene. These strains were then transformed with DNA generated by PCR of the mih1 locus using genomic DNA from strains containing the mih1-1 or C320S alleles as template. Transformants were selected on plates containing 5-fluoroorotic acid and replacement of the URA3 locus by the mih1 allele was confirmed by DNA sequencing. Next, a TAP tag and the GAL1 promoter were integrated as described for the native MIH1 locus. All newly constructed strains were confirmed to present relevant autotrophic/drug resistance markers (indicating that they were derived from the BY4742 parent) and chromosomal manipulations were confirmed by PCR amplification and DNA sequencing of the relevant locus.\n\nCells were grown in rich YP medium (2% bacto-peptone, 1% yeast extract, 2% glucose), or complete synthetic medium (Sunrise Science Product, San Diego, CA). Corresponding nutrient(s) were omitted from media to maintain selection for auxotrophic markers and/or plasmids (Sherman et al., 1979). Cells used to produce TAP-tagged Mih1 were grown at 23\u00b0C in YP\u00a0+2% raffinose+0.1% glucose until an OD600 \u2248 0.6, when galactose was added to 2% and growth continued overnight. To obtain calcofluor-resistant mutants, chs6\u0394apl2\u0394 cells were spread onto YPD plates containing 100 \u03bcg/mL CFW, and the plates were incubated at 30\u00b0C for three days. Colonies were picked and re-streaked on a CFW plate. To identify mutant strains with CFWR-conferring mutations in expected genes, each mutant strain was mated to chs3\u0394, chs4\u0394, chs5\u0394, chs7\u0394 and pfa4\u0394 strains (in the BY4741 background) and CFWR was evaluated. If the resulting diploid cells were CFWR, the candidate was determined to have a recessive mutation in the gene which is lacking in the mating partner and the strain was discarded. Candidates that were not complemented by any \u2018tester\u2019 strain were retained. Whole genome DNA sequencing of the parent and mih1-1 strains was used to identify the lesion in the mih1-1 strain. DNA sequencing was performed by the Iowa Institute of Human Genetics, University of Iowa using the Illumina HiSeq platform. Genome assembly was done using Lasergene software (DNASTAR, Madison, WI).\n\nFor spot growth assays, cells from cultures were grown to OD600 \u2248 0.5 in liquid YPD medium were washed with water and fresh YPD medium, and then a 10-fold dilution series was spotted onto plates with a series of concentrations of CFW (0\u2013150 \u03bcg/mL). The plates were assessed after 2\u20133 days of incubation at 30\u00b0C.\n\n### Immunoblot and immunoprecipitation\n\nCells from cultures were grown to OD600 \u2248 0.5 in liquid complete synthetic medium or YPD medium. Equal amounts of cells were collected and TCA-precipitated, and then proteins were resolved by SDS-PAGE. Primary antibodies in these studies include: anti-GFP (1:2000; Roche), anti-Pgk1 (3-phosphoglcerate kinase) (1:10,000; Invitrogen), anti-phosphoserine/threonine/tyrosine antibody (1:500; Abcam), anti-FLAG (1:5000; sigma), anti-His (1:1000; Biolegend) and anti-Phospho-cdc2 (Tyr15) (1:1000; Cell Signaling Technology).\n\nFor immunoprecipitation of GFP tagged retromer subunits, cells were grown to OD600 \u2248 0.5 in complete synthetic medium, and then were washed and frozen in liquid nitrogen prior to disruption by bead beater in lysis buffer (20 mM HEPES pH\u00a0=\u00a07.4, 150 mM KOAc, 5% glycerol, 1% NP40, proteinase inhibitor cocktail (Roche), PhosSTOP (Roche)). GFP-nAb magnetic beads (Allele Biotech) were used to capture GFP tagged proteins. After binding, the beads were extensively washed and then eluted with SDS-PAGE sample buffer.\n\n### Light microscopy and image analysis\n\nCells were grown to OD600 \u2248 0.5 in liquid medium were mounted in growth medium on a microscope slide. Image stacks were collected at 0.3-\u00b5m z increments on a DeltaVision workstation (Applied Precision) based on an inverted microscope (IX-70; Olympus) using a 100\u00a0\u00d7\u00a01.4 NA oil immersion lens. Images were captured at 24\u00b0C with a front illuminated sCMOS, 2560 \u00d7 2160 pixels camera and deconvolved using the iterative-constrained algorithm and the measured point spread function. Image analysis and preparation were done using Softworx 6.1 (Applied Precision Instruments) and ImageJ v1.50d (Rasband, 2015).\n\n### Protein expression and purification\n\nPlasmids, pET28a-Vps26 and pGST-Chs3 (1-52 amino acid) (Weiskoff and Fromme, 2014), were used to express 6XHis-Vps26 and GST-Chs3 (1-52) fusion proteins in Escherichia coli. Cells were grown in LB media containing the appropriate antibiotics in baffled flasks filled to 20% of the total volume to OD600 \u2248 0.5\u20130.7 and IPTG was added to a final concentration of 0.5 mM and growth was continued for 3 hr at 37\u00b0C. Proteins were purified in batch using GSH beads (GE Healthcare Life Sciences) or Ni-NTA Agarose (Qiagen) and confirmed by SDS-PAGE and immunoblot with corresponding antibodies against each tag. Purified protein concentration was quantified by BCA assay (Pierce).\n\nFrozen Mih1-TAP cells were thawed and then lysed (50 mM Tris, pH 7.4, 300 mM NaCl2, 1 mM DTT, proteinase inhibitor (Roche), 0.5%Triton) using an EmulsiFlex-C3 system (Avestin). Lysates were clarified by ultracentrifugation at 100,000 x g for 1 hr at 4\u00b0C. IgG agarose beads (GE Healthcare) were rinsed three times in lysis buffer. Beads were added to cleared lysate and incubated 4 hr at 4\u00b0C with rotation. Beads were washed (10 \u00d7 1 ml) and suspended in tobacco etch virus (TEV) protease buffer (50 mM Tris, pH 7.4, 150 mM NaCl2, 0.5 mM EDTA, 1 mM DTT). TEV protease was added to the buffer and incubated overnight at 4\u00b0C. To reduce the association of Mih1-TAP with IgG beads, IgG beads were precipitated and rinsed in calmodulin binding buffer (20 mM Tris, pH 7.4, 300 mM NaCl2, 4 mM CaCl2, 1 mM magnesium acetate, 1 mM imidazole, 10 mM 2-mercaptoethonal). Calmodulin magnetic beads were rinsed, suspended in calmodulin binding buffer, and added directly to precipitated IgG beads. The mixed beads were incubated at 4\u00b0C with rotation for 4 hr. Calmodulin magnetic beads were isolated magnetically and washed extensively. Mih1-TAP proteins were eluted with elution buffer (20 mM Tris, pH 8.0, 150 mM NaCl2, 10 mM EGTA and 10 mM 2-mercaptoethanol).\n\n### Protein phosphatase assay\n\nMih1, Mih1-1, and Mih1(C320S) were purified as described above. Vps26-GFP was immunoprecipitated from chs6\u0394apl2\u0394mih1\u0394 cells. The immobilized Vps26-GFP was incubated with purified Mih1 proteins in the phosphatase assay buffer (40 mM Tris-HCl, pH 8.0, 100 mM NaCl, 1 mM EDTA, 5 mM DTT) at 30\u00b0C for 1 hr. The immobilized Vps26-GFP was rinsed, boiled and subjected to immunoblotting with a pan phosphoryl amino acid antiserum.\n\n### In vitro binding assays\n\nPurified GST-Chs3 (1-52) or GST was immobilized to glutathione sepharose. Immobilized GST-Chs3 (1-52) or GST (1 \u03bcM) was then mixed with purified WT or mutant 6XHis-Vps26 proteins at the indicated concentration. After overnight incubation, the beads were washed (10 \u00d7 1 ml) with PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, 1 mM TCEP, pH\u00a0=\u00a07.4). The bound 6XHis-Vps26 proteins were extracted from the beads with SDS-PAGE sample buffer and detected by immunoblot with an anti-His antibody (Biolegend). Immunoblot signals were quantified using Image Lab software (Biorad).\n\n### Statistical analyses\n\nPrism 7 software (GraphPad, La Jolla, CA) was used to calculate means, standard deviations and standard errors of mean values. The Student\u2019s unpaired t test was used for statistical analyses. A p<0.05 value was considered to indicate statistical significance.\n",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3e2548cb-c2c4-48a9-b166-52927007ec43",
+      "submission_id": "308fb4f5-d87c-4a73-84e7-ad4936e2114f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne R Pfeffer, Stanford University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24126.010](https://doi.org/10.7554/eLife.24126.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A CDC25 family protein phosphatase gates cargo recognition by the Vps26 Retromer subunit\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom Suzanne Pfeffer, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Randy Schekman as the Senior Editor. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nHere, Cui et al. use a genetic screen to identify a mutant form of the Mih1 phosphatase that alters the recycling of specific proteins at endosomes. They show that Mih1 de-phosphorylates the retromer subunit Vps26, and suggest that phosphorylation of \"loop 6\" blocks an autoinhibitory interaction to enhance the binding of a subset of retromer cargo. The discovery of a new mechanism to regulate cargo recognition by the retromer complex is novel and important. However, data supporting key elements of the model could be strengthened by additional controls and quantitative analyses throughout, as described below.\n\nMajor comments:\n\n1) Better quantification of cargo recycling defects is needed, and statistical significance should be reported. While statistical tests are described in the methods, p-values were not reported in the figures or results. Because the cargo missorting phenotypes are relatively weak, careful quantification and statistics are needed to show differences are significant. As an example, it was not obvious that mih1\u2206 significantly decreased Chs3-GFP or Mup1-GFP cleavage in Figure 2B or 2D as suggested on pages 7 and 8. (Please add quantification to all figures and supplements with p values where possible. Completely independent experiments should be compared.)\n\nFor other cargo, fluorescence microscopy is the only technique used to evaluate missorting, and no quantification is provided. It would strengthen the manuscript to use additional measures of Can1 and Mup1 localization. The Mup1-pHluorin reporter developed by Wendland lab (Prosser et al. Traffic. 2010) is widely used, and canavanine resistance can detect retromer-dependent missorting of Can1, particularly in a snx41 background (see Shi et al., MBoC 2011).\n\n2) Evidence that Mih1 dephosphorylates the Vps26 L6 loop should be bolstered. While the L6E mutant does phenocopy mih1\u2206, mih1\u2206 is epistatic to L6A and this should not be the case if mih1\u2206 phenotypes result from enhanced L6 phosphorylation. Moreover, mih1-1 is epistatic to both L6A and L6E. To explain the epistasis, the authors suggest Mih1 has additional targets that affect growth on CFW. If this is the case, other measures of cargo missorting should be used that do not rely on CFW, such as the Mup1-pHluorin assay described above.\n\nTo test the hypothesis that Mih1 dephosphorylates the L6 loop, the phosphorylation status of the L6A, L6E and L6\u2206 mutants should be examined in the mih1\u2206 strain, and compared to wild type Vps26 as shown in Figure 4C.\n\n3) Additional experiments are needed to establish that YYL is the retromer signal. To show that YYL is the retromer-binding site, a YYL->AAA mutant form of the GST-Chs3(1-52) construct should be included in one or more of the retromer-binding assays shown in Figure 6B-D. Other experiments to strengthen this conclusion could include the demonstration of an equivalent degree of suppression by YYL->AAA, vps26\u2206, and the YYL->AAA vps26\u2206 double mutant (note the CFW concentration is not indicated in 6A, making it difficult to compare with other figures). Fluorescence microscopy could also be used to test if Chs3-YYL-GFP mutant is localized to the vacuole, similar to Chs3-GFP in a retromer mutant.\n\n4) CFW data suggest removing the L6 loop makes Vps26 work better. This is actually pretty cool, so it would be nice if the authors had another line of evidence to support this result.\n\n5) In Figure 6, the error bars are huge and no error estimates are given, presumably because the experiments have only been done once and to quote KDs to 3 significant figures is inappropriate. Could ITC or thermofluor be used here? A better estimate of KDs would be really valuable and support the model proposed. It would also be good if the authors could show that mutations do not affect Vps35 binding but this would be dependent on being able to make recombinant Vps35. It would also be nice if a poly phosphorylated version could be used but if the kinase or a fraction containing the kinase is unknown this is probably too much to ask for and using the poly Asp/Glu mutant would suffice.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A CDC25 family protein phosphatase gates cargo recognition by the Vps26 retromer subunit\" for further consideration at eLife. Your revised article has been favorably evaluated by Randy Schekman, Senior editor, and Suzanne Pfeffer, Reviewing editor. We appreciate the thoughtful manner in which you responded to the reviewer comments.\n\nThe manuscript has been improved significantly, and we would like to be able to present this story in eLife after the following issue is corrected. We believe there is an error in the estimation of the binding affinity for the AAA mutant in Figure 6; the data shown would imply only that the affinity is >40\u00b5M, not 130. Please investigate this and correct the figure accordingly. (Also, the legend indicates average of 3 preps, each done in singlicate? Duplicate? Is the error between preps or between individual samples?)\n",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "40d16fb4-d71c-4670-a8f5-b18ba42cf3a4",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C1",
+      "claim": "A spontaneously arising mutation that activates the yeast (Saccharomyces cerevisiae) CDC25 family phosphatase, Mih1, results in accelerated turnover of a subset of endocytosed plasma membrane proteins due to deficient sorting into a retromer-mediated recycling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "A spontaneously arising mutation that activates the yeast (Saccharomyces cerevisiae) CDC25 family phosphatase, Mih1, results in accelerated turnover of a subset of endocytosed plasma membrane proteins due to deficient sorting into a retromer-mediated recycling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract, supported by experimental data throughout the manuscript including CFW resistance assays, protein localization studies, and proteolysis measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d07571a7-7743-47a8-9acf-5dd7064f2deb",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C2",
+      "claim": "Mih1 directly modulates the phosphorylation state of the Vps26 retromer subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Mih1 directly modulates the phosphorylation state of the Vps26 retromer subunit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation experiments showing phosphorylated Vps26 accumulation in mih1\u0394 cells and in vitro phosphatase assays demonstrating direct dephosphorylation of Vps26 by purified Mih1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "cdbd79f1-0507-4edd-ae9a-6d5d1883b167",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C3",
+      "claim": "Mutations engineered to mimic phosphorylation states of Vps26 modulate the binding affinities of Vps26 for a retromer cargo, resulting in corresponding changes in cargo sorting at the endosome.",
+      "claim_type": "EXPLICIT",
+      "source": "mutations engineered to mimic these states modulate the binding affinities of Vps26 for a retromer cargo, resulting in corresponding changes in cargo sorting at the endosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in vitro binding assays showing different KD values for Vps26 variants (WT: 19 \u03bcM, L6E: 4.3 \u03bcM, L6\u0394: 5.2 \u03bcM) and CFW sensitivity assays correlating these affinities with sorting outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "a728d4f8-a8c2-4fe7-9e65-0fcb2ddf3cda",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C4",
+      "claim": "A phosphorylation-based gating mechanism controls cargo selection by yeast retromer.",
+      "claim_type": "EXPLICIT",
+      "source": "The results suggest that a phosphorylation-based gating mechanism controls cargo selection by yeast retromer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data showing Mih1 dephosphorylates Vps26, phosphorylation state affects cargo binding affinity, and these changes correlate with cargo sorting outcomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "6cba1e52-d79c-4223-856e-14d7daae9ec6",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C5",
+      "claim": "The study establishes a functional precedent for CDC25 protein phosphatases that lies outside of their canonical role in regulating cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "they establish a functional precedent for CDC25 protein phosphatases that lies outside of their canonical role in regulating cell cycle progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing Mih1 regulates retromer function independently of its effects on Cdc28/CDK, as demonstrated by experiments with swe1\u0394 mutants and phospho-Cdc28 measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "f5e80fbd-84a9-4ac0-803b-558bea2d7280",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C6",
+      "claim": "Endocytosis mediates internalization of the plasma membrane via vesicles that deliver their content to the endosomal system.",
+      "claim_type": "EXPLICIT",
+      "source": "Endocytosis mediates internalization of the plasma membrane via vesicles that deliver their content to the endosomal system, a network of related organelles that undergo maturation to generate a terminal endosome that fuses with the lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about endocytosis and endosomal trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "82d09cc9-9000-4cee-a791-a1f164a6b6e8",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C7",
+      "claim": "The retromer protein complex is an evolutionarily conserved sorting device that orchestrates export of integral membrane proteins from the endosome via tubular and vesicular ETCs.",
+      "claim_type": "EXPLICIT",
+      "source": "The retromer protein complex is an evolutionarily conserved sorting device that orchestrates export of integral membrane proteins from the endosome via tubular and vesicular ETCs (Burd and Cullen, 2014; Chi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature establishing retromer function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "9b9e78d9-25b7-443e-8b9a-ca5b5fdaae81",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C8",
+      "claim": "Retromer is composed of three proteins: Vps35, Vps26, and Vps29.",
+      "claim_type": "EXPLICIT",
+      "source": "Retromer is composed of three proteins: Vps35, which resembles an alpha solenoid similar to well characterized vesicle coat proteins such as clathrin; Vps26 (standard name: Pep8), which binds the N-terminal region of Vps35; and Vps29, which binds the C-terminal region of Vps35 (Collins et al., 2008; Hierro et al., 2007; Norwood et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about retromer composition, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "340c1408-f1c9-4c9c-8b1b-16dbf99850eb",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C9",
+      "claim": "Vps35 resembles an alpha solenoid similar to well characterized vesicle coat proteins such as clathrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps35, which resembles an alpha solenoid similar to well characterized vesicle coat proteins such as clathrin",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural characterization is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2fa3023b-a42a-4539-8adb-76780c87546a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C10",
+      "claim": "Vps26 binds the N-terminal region of Vps35.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps26 (standard name: Pep8), which binds the N-terminal region of Vps35",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about retromer structure, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c0811d0f-51b9-4f3b-9e29-edf564d041e2",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C11",
+      "claim": "Vps29 binds the C-terminal region of Vps35.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps29, which binds the C-terminal region of Vps35 (Collins et al., 2008; Hierro et al., 2007; Norwood et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about retromer structure, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "0554ef44-89b5-4dfa-bdd1-980a5c1a0238",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C12",
+      "claim": "The helical repeats of Vps35 are thought to provide binding sites for cargo and accessory factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The helical repeats of Vps35 are thought to provide binding sites for cargo and accessory factors, such as the Snx3 and Snx27 sorting nexins (Harrison et al., 2014; Hierro et al., 2007; Liu et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3b25e43c-bcb9-485d-8e31-db326c0325a2",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C13",
+      "claim": "Vps26 is structurally related to \u03b1- and \u03b2-arrestins.",
+      "claim_type": "EXPLICIT",
+      "source": "Vps26 is structurally related to \u03b1- and \u03b2-arrestins (Collins et al., 2008; Shi et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural relationship is established by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d6c401a0-1932-463e-ab59-83c8e97d7685",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C14",
+      "claim": "Arrestins function as sorting adapters for G protein-coupled receptors (GPCRs) in clathrin-mediated endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "which function as sorting adapters for G protein-coupled receptors (GPCRs) in clathrin-mediated endocytosis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about arrestin function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7f6efc69-8129-4ad3-b050-1a537b7d6229",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C15",
+      "claim": "In cells lacking functional exomer, Chs3 is constitutively retained within the cell by a Golgi-endosome trafficking circuit involving a clathrin adapter protein complex 1 (AP1)-dependent retention mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells lacking functional exomer, Chs3 is constitutively retained within the cell by a Golgi-endosome trafficking circuit involving a clathrin adapter protein complex 1 (AP1)-dependent retention mechanism (Valdivia et al., 2002; Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Chs3 trafficking, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "75ecf349-4d88-43fd-8535-8c6385793673",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C16",
+      "claim": "In cells that lack both functional exomer and AP1 sorting complexes, Chs3 fails to be retained and it is delivered to the plasma membrane via the constitutive secretory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells that lack both functional exomer and AP1 sorting complexes, Chs3 fails to be retained and it is delivered to the plasma membrane via the constitutive secretory pathway (Valdivia et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Chs3 trafficking in double mutants, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b7e3fcba-2578-44ca-bd2f-c0013efc028c",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C17",
+      "claim": "Growth of exomer-deficient cells is resistant to calcofluor white (CFW).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas growth of exomer-deficient cells is resistant to calcofluor white (CFW), a cytotoxic molecule that binds chitin in the cell wall (Roncero and Dur\u00e1n, 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the CFW resistance phenotype of exomer mutants, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "f81c67df-66d5-4e41-b083-30c77692ff0d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C18",
+      "claim": "Growth of cells lacking exomer and AP1 is exquisitely sensitive to CFW in the medium.",
+      "claim_type": "EXPLICIT",
+      "source": "growth of cells lacking exomer and AP1 is exquisitely sensitive to CFW in the medium (Valdivia et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation and confirmed by data in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "86c18084-f751-4939-9325-3c5e9be365c0",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C19",
+      "claim": "CFW is a cytotoxic molecule that binds chitin in the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "calcofluor white (CFW), a cytotoxic molecule that binds chitin in the cell wall (Roncero and Dur\u00e1n, 1985)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CFW properties, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "0bee02ab-cd48-45e9-84c1-2801323e72f7",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C20",
+      "claim": "The mih1-1 mutation is a cytosine-to-adenine mutation in the MIH1 ORF that causes a S162R substitution in the Mih1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-genome sequencing of the most severe vacuolar localization mutant led to the identification of a cytosine-to-adenine mutation in the MIH1 ORF that causes a S162R substitution in the Mih1 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mutation was identified by whole-genome sequencing and confirmed by reconstruction experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "e95d1dc7-2ec2-494e-9a2e-2d57222a393d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C21",
+      "claim": "The S162R substitution in Mih1 is responsible for the CFW resistance and enhanced vacuolar targeting phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "That this mutation is responsible for the phenotypes that we selected was confirmed by the identical phenotypes of cells in which this mutation was constructed de novo in the parent strain, and by deletion of the MIH1 locus in the original mutant strain, which reverted the enhanced vacuolar targeting of Chs3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This was confirmed by genetic reconstruction and deletion experiments shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "31860a50-32ac-4669-a7c4-39ada7879651",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C22",
+      "claim": "MIH1 is homologous to CDC25.",
+      "claim_type": "EXPLICIT",
+      "source": "MIH1 is homologous to CDC25, first discovered in Schizosaccharomyces pombe, which encodes a dual-specificity protein phosphatase that dephosphorylates the Cdc2 cyclin-dependent kinase (CDK; Cdc28 in S. cerevisiae) to activate it (Pal et al., 2008; Patterson et al., 2009; Russell and Nurse, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This homology relationship is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c5af729b-f59b-45f4-bddf-5490a29d03ce",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C23",
+      "claim": "CDC25 encodes a dual-specificity protein phosphatase that dephosphorylates the Cdc2 cyclin-dependent kinase to activate it.",
+      "claim_type": "EXPLICIT",
+      "source": "which encodes a dual-specificity protein phosphatase that dephosphorylates the Cdc2 cyclin-dependent kinase (CDK; Cdc28 in S. cerevisiae) to activate it (Pal et al., 2008; Patterson et al., 2009; Russell and Nurse, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDC25 function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b838e88d-08d9-4d1d-92dc-eb4470261d4f",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C24",
+      "claim": "The S162R substitution lies outside of the phosphatase motif of Mih1.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitution caused by the mih1-1 mutation lies outside of the phosphatase motif",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from knowledge of Mih1 protein structure and the position of the mutation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "a93632f8-ed63-4aab-876a-ed7dc9353dbc",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C25",
+      "claim": "The phosphatase activity of Mih1 is necessary for the CFW resistance phenotype caused by the mih1-1 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "however, the phosphatase activity of Mih1 is necessary for the observed phenotypes of the mih1-1 mutant, because introduction of a second mutation, cysteine(320) to serine, which changes an active site residue required for catalysis (Yano et al., 2013), ablates CFWR caused by the mih1-1 mutation",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data in Figure 1E showing that the C320S mutation abolishes CFW resistance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "743f8056-9cbc-4424-8e16-c32aa9fe81f5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C26",
+      "claim": "Cysteine 320 is an active site residue required for catalysis in Mih1.",
+      "claim_type": "EXPLICIT",
+      "source": "cysteine(320) to serine, which changes an active site residue required for catalysis (Yano et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Mih1 structure and function, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "96cdc076-d914-4541-8903-71c50f4b94d5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C27",
+      "claim": "Mih1 undergoes cell cycle regulated phosphorylation at numerous sites and this is correlated with inhibition of its activity toward Cdc28/CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "Mih1 undergoes cell cycle regulated phosphorylation at numerous sites and this is correlated with inhibition of its activity toward Cdc28/CDK (Pal et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Mih1 regulation, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "4b56266f-d4a6-4b68-833e-9639bc4908e5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C28",
+      "claim": "S162 is not a known site of phosphorylation in Mih1.",
+      "claim_type": "EXPLICIT",
+      "source": "While S162 is not a known site of phosphorylation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on knowledge of known phosphorylation sites in Mih1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b51034a9-4fc9-4ba1-b4ad-6614e07df7ff",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C29",
+      "claim": "Several residues in the vicinity of S162 are proposed to be phosphorylated by protein kinase C (PKC).",
+      "claim_type": "EXPLICIT",
+      "source": "several residues in the vicinity of S162 are proposed to be phosphorylated by protein kinase C (PKC) (Yano et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a citation to a previous study proposing PKC phosphorylation sites.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "cd652235-a9e9-46fb-a814-1c465471220a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C30",
+      "claim": "PKC has been shown to regulate trafficking of Chs3.",
+      "claim_type": "EXPLICIT",
+      "source": "a protein kinase shown to regulate trafficking of Chs3 (Valdivia and Schekman, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "98edab67-8e6f-4d91-a907-9cf05c8703b3",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C31",
+      "claim": "The S162R mutation may impinge on regulation of Mih1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we speculate that the S162R mutation may impinge on regulation of Mih1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as speculation based on the proximity of S162 to proposed PKC phosphorylation sites.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3c13ecf3-b950-4610-b994-1a575b6df9a9",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C32",
+      "claim": "The mih1-1 mutation does not cause a change in the amount of phosphorylated Cdc28/CDK in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting with anti-phospho-CDK antiserum did not reveal a change in the amount of phosphorylated Cdc28/CDK in lysates from cultures of chs6\u0394apl2\u0394 versus chs6\u0394apl2\u0394mih1-1 cells (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "95d35a24-ce71-4830-9513-1414b7dd4d09",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C33",
+      "claim": "Multiple phosphatases act redundantly to activate Cdc28/CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "probably because multiple phosphatases act redundantly to activate Cdc28/CDK (Kennedy et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation, used to explain the lack of change in phospho-Cdc28 levels.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d1abe3d4-ad06-4397-89af-c949abbed8f6",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C34",
+      "claim": "Deletion of SWE1 does not affect CFW resistance or Chs3-GFP localization in mih1-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that CFW resistance and Chs3-GFP localization are unaffected by the swe1\u0394 mutation (Figure 1\u2014figure supplement 1). In addition, deletion of SWE1 in the original chs6\u0394apl2\u0394mih1-1 mutant strain (chs6\u0394apl2\u0394mih1-1swe1\u0394) has no effect on CFW sensitivity or Chs3-GFP localization (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by data in Figure 1\u2014figure supplement 1 showing no effect of swe1\u0394 on the mih1-1 phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "35586526-d414-463b-b516-6ff9f3907e18",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C35",
+      "claim": "The consequences of the mih1-1 mutation on Chs3 trafficking are not exerted via activated Cdc28/CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that the consequences of the mih1-1 mutation on Chs3 trafficking are not exerted via activated Cdc28/CDK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the data showing that swe1\u0394 does not affect mih1-1 phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "0b70b563-0f7d-4a89-bab4-32ed7fc40493",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C36",
+      "claim": "In lysates of chs6\u0394apl2\u0394mih1-1 cells expressing Chs3-GFP, GFP is cleaved from ~62% of the Chs3-GFP fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "in lysates of chs6\u0394apl2\u0394mih1-1 cells expressing Chs3-GFP, GFP is cleaved from ~62% of the Chs3-GFP fusion protein",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from immunoblot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "41c7a46c-45c8-4c6d-b3a3-2a366fbd64f4",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C37",
+      "claim": "In lysates from the chs6\u0394apl2\u0394 parent, GFP is cleaved from ~37% of Chs3-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "but just ~37% is processed to GFP in lysates from the chs6\u0394apl2\u0394 parent",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from immunoblot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "06a56881-2706-40e9-aedf-5883b9211b66",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C38",
+      "claim": "In parental cells lacking MIH1 (chs6\u0394apl2\u0394mih1\u0394), GFP is cleaved from just ~22% of the Chs3-GFP fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "in parental cells lacking MIH1 (chs6\u0394apl2\u0394mih1\u0394), GFP is cleaved from just ~22% of the Chs3-GFP fusion protein with a concomitant accumulation of full length Chs3-GFP relative to parental cells",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is quantified from immunoblot data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c7aa1285-6f2f-4ce2-acbb-816c4ae9bb56",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C39",
+      "claim": "The mih1-1 and mih1\u0394 alleles have opposing consequences on Chs3-GFP processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mih1-1 and mih1\u0394 alleles have opposing consequences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing opposite effects on GFP cleavage from Chs3-GFP in mih1-1 versus mih1\u0394 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d0b7f860-fff9-4bbf-9d5c-4c11cef26935",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C40",
+      "claim": "Native Mih1 is a physiological regulator of Chs3 trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that native Mih1 is a physiological regulator of Chs3 trafficking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the opposing effects of mih1-1 and mih1\u0394 on Chs3 trafficking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "dd5498fc-2589-44cb-967e-0f9fa722ec09",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C41",
+      "claim": "The mih1-1 mutation causes increased vacuole localization and proteolytic processing of Mup1-GFP and Can1-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed for Chs3-GFP in the original mih1-1 mutant, increased vacuole localization and proteolytic processing of Mup1-GFP (a GFP tagged methionine transporter) and Can1-GFP (a GFP tagged arginine transporter) is observed (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microscopy and immunoblot data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b53ec2fc-f066-47fc-bad7-44a126911488",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C42",
+      "claim": "Deletion of MIH1 results in an increase in the levels of full-length Mup1-GFP and Can1-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, deletion of MIH1 (i.e., chs6\u0394apl2\u0394mih1\u0394 cells) results in an increase in the levels of full-length Mup1-GFP and Can1-GFP (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "5c3daa14-4de8-4c42-84f8-187696beb07b",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C43",
+      "claim": "The localization, levels, and proteolytic processing of Ftr1-GFP, Vps10-GFP, and GFP-Snc1 are not affected by mutations in MIH1.",
+      "claim_type": "EXPLICIT",
+      "source": "while the localization, levels, and proteolytic processing of Ftr1-GFP (a GFP tagged iron transporter), Vps10-GFP (a GFP-tagged integral membrane protein that is trafficked from the endosome to the Golgi by retromer), and GFP-Snc1 (a GFP tagged v-SNARE of secretory vesicles) are not affected by mutations in MIH1 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microscopy and immunoblot data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b0e8ffe1-ec79-454e-b815-e2bcb7b1d651",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C44",
+      "claim": "Mih1 regulates recycling of a subset of proteins that transit the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Mih1 regulates recycling of a subset of proteins that transit the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective effects of mih1 mutations on some but not all plasma membrane proteins examined.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c2fef83b-dc71-4b7c-848a-ea54ac8d6b68",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C45",
+      "claim": "The end4-1 mutation substantially limits endocytosis via the clathrin-dependent pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This mutation substantially limits endocytosis via the clathrin-dependent pathway (Munn and Riezman, 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the end4-1 mutation, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "468c29f5-5125-44ce-a868-5a6edac60501",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C46",
+      "claim": "The end4-1 mutation results in the accumulation of recycling proteins on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "resulting in the accumulation of recycling proteins on the plasma membrane (Strochlic et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "45dddd44-c9a0-42a9-9260-1c9017129f5a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C47",
+      "claim": "In cells carrying the end4-1 mutation, the Chs3-GFP and Mup1-GFP fluorescence signals in the vacuole is decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells carrying the end4-1 mutation, the Chs3-GFP and Mup1-GFP (Figure 3A,C) fluorescence signals in the vacuole is decreased",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microscopy data in Figure 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "cf78bd13-b637-4e9a-bae2-a83c15c6446a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C48",
+      "claim": "The end4-1 mutation decreases the proportion of GFP cleaved from Chs3-GFP and Mup1-GFP fusion proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "and the proportion of GFP cleaved from the fusion proteins also decreases (Figure 3B,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data in Figure 3B and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "1e30d82d-4a80-441b-aab7-8620bf0db2a0",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C49",
+      "claim": "Mih1 acts downstream of endocytosis to regulate the abundance of Chs3 and Mup1 on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that Mih1 acts downstream of endocytosis to regulate the abundance of Chs3 and Mup1 on the plasma membrane, strongly suggestive of a role in endocytic recycling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that blocking endocytosis with end4-1 suppresses the mih1-1 phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "be8e8cc4-f769-4b9e-9177-e1ffa83ef894",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C50",
+      "claim": "Deletion of vps5\u0394 and vps17\u0394 confers resistance to CFW comparable to the chs6\u0394apl2\u0394mih1-1 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "This screen revealed that deletion of vps5\u25b3 and vps17\u25b3, but no other sorting nexin deletion, including snx3\u0394, which has been shown to ablate plasma membrane recycling of Ftr1-GFP (Strochlic et al., 2007), conferred resistance to CFW comparable to the chs6\u0394apl2\u0394mih1-1 strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "ca6f18b1-c794-4fee-acdb-7c92ee9d100e",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C51",
+      "claim": "Vps5 and Vps17 form a SNX-BAR heterodimer that functions as a component of the retromer sorting complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that Vps5 and Vps17 form a SNX-BAR heterodimer that functions as a component of the retromer sorting complex (Horazdovsky et al., 1997; Seaman et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Vps5 and Vps17 function, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3802069e-2d23-43c1-aa82-8779d5565c16",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C52",
+      "claim": "Deletion of the gene encoding each retromer subunit confers resistance to CFW.",
+      "claim_type": "EXPLICIT",
+      "source": "and, indeed, deletion of the gene encoding each retromer subunit also confers resistance to CFW (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "55c2bc38-5165-4ce8-8774-21178b1e05bc",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C53",
+      "claim": "In retromer deletion mutants, Chs3-GFP is localized prominently to the vacuole lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "and Chs3-GFP is localized prominently to the vacuole lumen (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microscopy data in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "17d2eada-82dd-4cb2-b658-193a1fec1b21",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C54",
+      "claim": "Chs3 is exported from the endosome via a retromer-dependent recycling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Chs3 is exported from the endosome via a retromer-dependent recycling pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that retromer deletions phenocopy mih1-1 with respect to Chs3 trafficking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c4c49f00-5a52-498f-9658-2ac5486650ba",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C55",
+      "claim": "An accumulation of phosphorylated Vps26-GFP is observed in cells lacking Mih1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe an accumulation of phosphorylated Vps26-GFP in cells lacking Mih1 (chs6\u25b3apl2\u25b3mih1\u25b3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "5f9749e6-3f9c-48ea-b39a-253528c1410e",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C56",
+      "claim": "A phosphorylated form of Vps35-GFP was detected, but only in a subset of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "we also note that a phosphorylated form of Vps35-GFP was detected, but only in a subset of these experiments (not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "6023097c-63bf-4c19-89a7-80cdc138271d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C57",
+      "claim": "Phosphorylated Vps26-GFP can be detected after GFP immuno-purification from wild-type cell lysate, but not in lysate prepared from mih1-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylated Vps26-GFP could also be detected after GFP immuno-purification from wild-type cell lysate, but not in lysate prepared from mih1-1 cells (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "23575edd-4760-4b46-9696-1b024f36f37f",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C58",
+      "claim": "The mih1-1 allele confers enhanced phosphatase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the mih1-1 allele conferring enhanced activity, as predicted from the genetic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the decreased phosphorylation of Vps26 in mih1-1 cells and the genetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "fb6d2ccb-8140-4b22-b4bc-cff6637dc255",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C59",
+      "claim": "CDC25 family phosphatases are thought to be dedicated toward CDKs.",
+      "claim_type": "EXPLICIT",
+      "source": "though this is unexpected, as CDC25 family phosphatases are thought to be dedicated toward CDKs (Boutros et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDC25 substrate specificity, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7839d169-b1d8-4ecb-a187-7ddecffa946d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C60",
+      "claim": "Wild-type Mih1 and Mih1-1 dephosphorylate Vps26 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The results clearly show that the wild-type and Mih1-1 phosphatases, but not Mih1(C320S), dephosphorylate Vps26",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro phosphatase assay data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7a3ec126-be7a-48d4-932d-09dee38bdc64",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C61",
+      "claim": "Mih1(C320S) does not dephosphorylate Vps26 in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The results clearly show that the wild-type and Mih1-1 phosphatases, but not Mih1(C320S), dephosphorylate Vps26",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro phosphatase assay data in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "648a55d1-1846-41c4-bfd6-a984fa7907b8",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C62",
+      "claim": "Vps26 is a bona fide substrate of Mih1 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of phosphorylated Vps26 in mih1\u0394 cells, decreased phosphorylation of Vps26-GFP in mih1-1 cells, and the demonstration that phosphorylated Vps26 is a substrate for purified Mih1 in vitro, lead us to conclude that Vps26 is a bona fide substrate of Mih1 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on multiple lines of evidence including in vivo phosphorylation changes and in vitro dephosphorylation assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "bf24a2f8-33d4-490d-9285-5c36823103fe",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C63",
+      "claim": "Ten phosphorylated residues in Vps26 have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten phosphorylated residues in Vps26 have been identified (Stark et al., 2010) (Bodenmiller et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from phosphoproteomics studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d36ce838-bc31-4af1-8e60-70ae9475c774",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C64",
+      "claim": "Five serine residues located within loop 6 of Vps26 are phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "notably including five serine residues located within a loop that connects two \u03b2 strands (corresponding to 'loop 6' in the structure of mammalian Vps26)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on phosphoproteomics data and structural knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "ea372baa-4001-4281-a2af-a9cd1a765653",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C65",
+      "claim": "Mih1 does not control organelle targeting or turnover of retromer proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "no differences were noted between these strains, suggesting that Mih1 does not control organelle targeting or turnover of retromer proteins (not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on localization and abundance experiments, though the data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2848cb64-fc0e-4d4e-9b69-280807db2111",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C66",
+      "claim": "Deletion of loop 6 of Vps26 confers increased sensitivity to CFW.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of loop 6 ('Vps26\u0394L6') confers increased sensitivity to CFW (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "e3a94124-553a-4964-ba56-fb143613b34f",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C67",
+      "claim": "Deletion of loop 6 appears to potentiate retromer-mediated recycling of Chs3.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that this enhances plasma membrane localization of Chs3-GFP. That is, deletion of this loop appears to potentiate retromer-mediated recycling of Chs3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the increased CFW sensitivity of Vps26\u0394L6 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b348dce3-7894-4d40-a9eb-4731c635f8a5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C68",
+      "claim": "The amount of phosphorylated Vps26\u0394L6 is reduced by ~50% compared to native Vps26.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with residues of loop 6 being targets of Mih1 activity, the amount of phosphorylated Vps26\u0394L6 detected by immunoblotting was reduced by ~50% compared to native Vps26 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunoblot data quantified in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "54e7b91f-d756-4991-97a0-d80b4e49f3d7",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C69",
+      "claim": "Substitution of all serine and threonine residues in loop 6 with glutamate results in enhanced CFW sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to cells with the loop 6 deletion, substitution of all serine (Ser) and threonine (Thr) residues with glutamate (Glu) results in enhanced CFW sensitivity (Figure 5C, rows 1, 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "8333a128-7745-4bbe-9e1b-298f7a85d1ae",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C70",
+      "claim": "Phosphorylation of loop 6 residues potentiates retromer-mediated recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that phosphorylation of these residues potentiates retromer-mediated recycling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CFW sensitivity of phosphomimetic loop 6 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "1d3ae5da-03d4-47df-9c2b-07b6de18c086",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C71",
+      "claim": "Loop 6 glutamate substitutions exert their effect in the context of the mih1-1 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these substitutions exerted this effect in the context of the mih1-1 mutation (Figure 5C, compare rows 2 and 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "fd881b01-761a-40ad-81a5-839e2789a4e8",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C72",
+      "claim": "Substitution of loop 6 residues with non-phosphoryl alanine residues conferred modest resistance to CFW.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, substitution of these residues with non-phosphoryl alanine residues conferred modest resistance CFW (Figure 5C, compare rows 1 and 8)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "f6ddf6d1-07f0-43d0-9fb2-37503a2aa217",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C73",
+      "claim": "Alanine substitutions in loop 6 diminish retromer function.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that these substitutions diminish retromer function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CFW resistance of loop 6 alanine mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "74d92111-3841-4a8a-a63d-f4044b4d3ed4",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C74",
+      "claim": "Mih1 regulates retromer-dependent recycling in part by controlling the phosphorylation status of Vps26 loop 6 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the data argue that Mih1 regulates retromer-dependent recycling in part by controlling the phosphorylation status of Vps26 loop 6 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data on loop 6 phosphorylation, mutations, and their effects on CFW sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "40393aa0-6054-4cb0-854b-f6da1940f1b8",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C75",
+      "claim": "Mih1 has additional targets that affect the growth response to CFW beyond Vps26 loop 6.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the data also suggest Mih1 has additional targets that affect the growth response to CFW, as deletion of mih1 is epistatic to the Vps26 loop 6 (A) substitutions (Figure 5C, compare rows 7 and 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the epistasis data in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "4c4266aa-400a-4d78-a69d-17f1d96305fb",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C76",
+      "claim": "Retromer contributes to Chs3 recycling in wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Retromer contributes to Chs3 recycling in wild-type cells (Arcones et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "d28c5bb4-b08e-4dca-b069-2305032be083",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C77",
+      "claim": "A 'YYL' sequence (amino acids 12\u201314) located within the N-terminal cytoplasmic segment of Chs3 is a candidate retromer sorting signal.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously noted (Weiskoff and Fromme, 2014), a 'YYL' sequence (amino acids 12\u201314) located within the N-terminal cytoplasmic segment of Chs3 is a candidate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on a previous observation cited from the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "27ff31bd-6b97-4112-8e98-4bffdea4a008",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C78",
+      "claim": "Substitution of the YYL residues with alanine results in CFW resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, substitution of these three residues with Ala results in CFW resistance (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CFW growth assay data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "ac13270c-68ed-4d79-acde-3ec16d16eed0",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C79",
+      "claim": "An immobilized GST-Chs3(1-52) fusion protein captures both Vps26 and Vps35 retromer subunits from cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, an immobilized fusion protein composed of the first 52 amino acids of Chs3 fused to glutathione S transferase (GST) captures both Vps26 and Vps35 retromer subunits from cell lysates (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pulldown assay data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "44ab8094-107f-4a79-af93-14cab6ed2714",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C80",
+      "claim": "Isolated human Vps26 recognizes the retromer sorting motif of the SorLA protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that a previous report found that isolated human Vps26 recognizes the retromer sorting motif of the SorLA protein (Fjorback et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "35581df8-4456-46c1-86c9-7c9cfc99f291",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C81",
+      "claim": "Vps26 was slightly, but reproducibly enriched on GST-Chs3(1-52) matrix relative to Vps35.",
+      "claim_type": "EXPLICIT",
+      "source": "and that in our experiments Vps26 was slightly, but reproducibly enriched on this matrix relative to Vps35",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the pulldown data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7e4731bb-d035-4efc-b083-4159fa8a0f74",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C82",
+      "claim": "Vps26 is the least tightly associated yeast retromer subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "As Vps26 is the least tightly associated yeast retromer subunit (Seaman et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about retromer complex stability, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2340dfe9-dde3-41d2-89ee-0c302566e76a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C83",
+      "claim": "Vps26 may directly recognize GST-Chs3(1-52) while Vps35 capture is indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "these data suggest that Vps26 may directly recognize GST-Chs3(1-52) while Vps35 capture is indirect",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enrichment of Vps26 relative to Vps35 in pulldown assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b53fdf9a-2e86-4a2b-aada-7e99b884fb19",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C84",
+      "claim": "Pure recombinant Vps26 recognizes GST-Chs3(1-52).",
+      "claim_type": "EXPLICIT",
+      "source": "Third, ligand-binding assays employing pure recombinant Vps26 and GST-Chs3(1-52) shows that Vps26 does indeed recognize GST-Chs3(1-52) (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro binding assay data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7b8bb26a-c43c-44f8-83f6-480724d3b929",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C85",
+      "claim": "There is no detectable binding of Vps26 to GST with an irrelevant C-terminal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "while there is no detectable binding to GST with an irrelevant C-terminal sequence (Figure 6C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by in vitro binding assay data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "8a60d387-d82a-4f73-84fc-165a2df0280a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C86",
+      "claim": "Binding of Vps26 to GST-Chs3(1-52) is saturable, with an estimated equilibrium dissociation constant, KD, of 19 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of Vps26 to GST-Chs3(1-52) is saturable, with an estimated equilibrium dissociation constant, KD, of 19 \u03bcM (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from equilibrium binding measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "8cdf6187-0361-4c22-b2b2-f66113ed310f",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C87",
+      "claim": "Binding of Vps26 to GST-Chs3(YYL->AAA) was not saturated, even at 100 \u03bcM Vps26 (KD >40 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, binding of Vps26 to a mutant GST-Chs3 fusion protein in which the YYL sequence was changed to AAA was not saturated, even at 100 \u03bcM Vps26 (KD >40 \u03bcM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from equilibrium binding measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "53b056e4-d15f-4ee9-831a-7bd84f034ad4",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C88",
+      "claim": "The YYL sequence constitutes a retromer-dependent sorting signal.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that Vps26 recognizes this sequence and, in light of the data demonstrating retromer-dependent trafficking of Chs3, indicate that this sequence constitutes a retromer-dependent sorting signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined data showing Vps26 binds the YYL sequence, mutation of YYL affects binding and trafficking, and retromer is required for Chs3 recycling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "18dd31a0-ea60-4742-8745-6994ddef9f13",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C89",
+      "claim": "Vps26\u0394L6 exhibits a nearly 4-fold higher affinity for GST-Chs3(1-52) (KD of 5.2 \u03bcM) compared to wild-type Vps26.",
+      "claim_type": "EXPLICIT",
+      "source": "This form of Vps26 exhibits a nearly 4-fold higher affinity for GST-Chs3(1-52) (KD of 5.2 \u03bcM) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from equilibrium binding measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "207664c9-0b27-4246-95f1-ddd5759964bb",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C90",
+      "claim": "The loop 6 phosphomimetic form of Vps26 (Vps26(L6E)) binds GST-Chs3(1-52) with a KD of 4.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "In close agreement with this measurement, the loop 6 phosphomimetic form of Vps26 (Vps26(L6E) binds GST-Chs3(1-52) with a KD of 4.3 \u03bcM (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined from equilibrium binding measurements shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "23807e8c-767c-4320-b9ed-ee500c6e7a53",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C91",
+      "claim": "An increase in the affinity of Vps26 for cargo resulting from phosphorylation of loop 6 results in enhanced recycling of Chs3.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data correlate an increase in the affinities with which the Chs3 recycling signal is recognized by Vps26 with sorting outcome; an increase in the affinity of cargo resulting from phosphorylation of loop 6 results in enhanced recycling of Chs3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between binding affinities and CFW sensitivity phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "adb69cc3-9d3c-4190-8f4c-a07890392211",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C92",
+      "claim": "The finger loop of \u03b2-arrestin1 corresponds to the phosphorylated loop 6 of Vps26.",
+      "claim_type": "EXPLICIT",
+      "source": "The finger loop of \u03b2-arrestin1 corresponds to the phosphorylated loop 6 of Vps26 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison and alignment of Vps26 with \u03b2-arrestin1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "7956f096-e52e-442f-906b-70a8d30ad841",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C93",
+      "claim": "Loop 6 of Vps26 functions as a gate that controls access of the \u03b2 sheet of N-terminal domain to cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we suggest that it functions as a gate that controls access of the \u03b2 sheet of N-terminal domain to cargo (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic model proposed based on structural analogy to \u03b2-arrestin1 and the functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "03df2a30-272b-4c36-a343-89b69079b631",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C94",
+      "claim": "In its unphosphorylated state, the extended loop 6 would antagonize cargo engagement via an auto-inhibited conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In its unphosphorylated state, the extended loop would antagonize cargo engagement via an auto-inhibited conformation, akin to the conformation of the finger loop of \u03b2-arrestin1 in the inactive state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model proposed based on structural analogy to \u03b2-arrestin1 and the functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "df04fe6c-8b3c-45d6-b096-7b1972ba86c1",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C95",
+      "claim": "Phosphorylation of loop 6 residues would displace it from occluding access to the surface of the \u03b2 sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "and phosphorylation of loop residues would displace it from occluding access to the surface of the \u03b2 sheet, akin to the displacement of the \u03b2-arrestin-1 finger loop in the active conformation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic model proposed based on structural analogy to \u03b2-arrestin1 and the functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "83134108-8246-4bc2-9e8d-eb0fd69ed8a1",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C96",
+      "claim": "This mechanism provides for a tunable system for adjusting the abundance of proteins on the cell surface via recycling regulated by kinase-phosphatase networks.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism provides for a tunable system for adjusting the abundance of proteins on the cell surface via recycling regulated by kinase-phosphatase networks that are responsive to metabolic and environmental cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broader implication inferred from the regulatory mechanism discovered.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "750e0bea-3f0a-418b-8e56-ab391ceddd0a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C97",
+      "claim": "Neither the mih1-1 or mih1\u0394 mutations affect the distribution of Vps10.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, neither the mih1-1 or mih1\u0394 mutations affect the distribution of Vps10, a well characterized retromer cargo that cycles between the Golgi apparatus and endosome (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by microscopy data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2fcc9cf0-adc4-4aea-a788-2a1b1e478375",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C98",
+      "claim": "There exists at least one additional mode of cargo recognition by retromer beyond the Vps26-mediated mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating the existence of at least one additional mode of cargo recognition by retromer, speculated to be mediated by the Vps35 retromer subunit (Nothwehr et al., 1999, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective effects of mih1 mutations on some but not all retromer cargoes, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "53c719ea-9ef0-40f8-b182-a724fb38b1cc",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C99",
+      "claim": "A recently published structure of a Vps35-Vps26-Snx3 complex bound to a peptide containing a retromer sorting signal revealed an additional mode of cargo recognition involving the Snx3-Vps26 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, a recently published structure of a Vps35-Vps26-Snx3 complex bound to a peptide containing a retromer sorting signal revealed an additional mode of cargo recognition involving the Snx3-Vps26 interface (Lucas et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a recent structural study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2be55373-3709-428a-89a7-a8651cc641e6",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C100",
+      "claim": "Multiple modes of cargo recognition by retromer provide a mechanistic explanation for the diversity of cargo-specific sorting factors that function with retromer.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple modes of cargo recognition by retromer provide a mechanistic explanation for the diversity of cargo-specific sorting factors that function with retromer, such as the Snx3, SNX-BAR, and Snx27 sorting nexins (Cullen, 2008; Cullen and Korswagen, 2012; Strochlic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discovery of multiple cargo recognition modes and supported by citations to literature on sorting nexins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "b68f4c32-fb29-495e-9caa-1b0b08a5e4a2",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C101",
+      "claim": "Cargo recognition plays a key role in targeting soluble retromer to the endosome membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As cargo recognition plays a key role in targeting soluble retromer to the endosome membrane (Harrison et al., 2014; Lucas et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "03b109ee-e2ed-419e-9dbf-0c43e4cce11c",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C102",
+      "claim": "Distinct cargo recognition modes could drive the formation of distinct retromer-containing complexes on the endosome membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "an important implication of our findings is that distinct cargo recognition modes could drive the formation of distinct retromer-containing complexes on the endosome membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an implication inferred from the findings about multiple cargo recognition modes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "ce0e5658-2974-4a5b-968d-603db0fc2b09",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C103",
+      "claim": "The identification of Mih1 as a physiological regulator of retromer function reveals a new facet of function for CDC25 family phosphatases.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the identification of Mih1 as a physiological regulator of retromer function reveals a new facet of function for CDC25 family phosphatases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c943fd5c-e1c4-47c4-bedd-3435f8cd6b7d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C104",
+      "claim": "CDC25 family phosphatases are currently thought to act solely on cyclin-dependent kinases to control cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "which are currently thought to act solely on cyclin-dependent kinases to control cell cycle progression (Boutros et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDC25 function, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "ea902fff-dfc7-487b-a7cc-93d6027cafb5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C105",
+      "claim": "The activities of CDC25 family phosphatases are subject to intricate regulation via kinases and phosphatases that respond to a variety of cellular stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The activities of CDC25 family phosphatases are subject to intricate regulation via kinases and phosphatases that respond to a variety of cellular stimuli and impinge on various cell cycle checkpoints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDC25 regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3f4efa2c-f1cd-41d0-b0e3-aa88282a9346",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C106",
+      "claim": "PKC is a possible regulator of Mih1 function with regard to Chs3 recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible regulator of Mih1 function with regard to Chs3 recycling is PKC, which is has been shown to control Mih1 signaling (Yano et al., 2013) and to promote Chs3 trafficking from the TGN to the plasma membrane via the exomer pathway (Valdivia and Schekman, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known connections between PKC, Mih1, and Chs3, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "db8f9aca-459d-4db9-9ebb-65d820440cf0",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C107",
+      "claim": "PKC has been shown to control Mih1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "which is has been shown to control Mih1 signaling (Yano et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "1548a931-b38a-49be-9e9c-dcbef11ddd1e",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C108",
+      "claim": "PKC promotes Chs3 trafficking from the TGN to the plasma membrane via the exomer pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "and to promote Chs3 trafficking from the TGN to the plasma membrane via the exomer pathway (Valdivia and Schekman, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "5d5f9a28-73aa-4965-bf68-7b0a0e03a8f8",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C109",
+      "claim": "PKC is a core component of the cell wall integrity pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "As PKC is a core component of the cell wall integrity pathway",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about PKC function in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "3d80f58f-6747-498d-85f6-69d8d82c3537",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C110",
+      "claim": "Mih1-mediated regulation of Chs3 recycling by retromer might reflect a stress response to defects in the cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Mih1-mediated regulation of Chs3 recycling by retromer might reflect a stress response to defects in the cell wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the connection between PKC, cell wall integrity, and the pathways studied.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "782796fe-a896-4e17-ae99-63a06d3da021",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C111",
+      "claim": "In addition to the role that yeast Mih1 plays in cell cycle progression, it also controls trafficking of plasma membrane proteins that impact nutrient homeostasis and cell wall remodeling.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here indicate that, in addition to the role that yeast Mih1 plays in cell cycle progression, it also controls trafficking of plasma membrane proteins that impact nutrient homeostasis and cell wall remodeling \u2013 key axes of cell growth control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the findings showing Mih1 regulates trafficking of nutrient transporters and Chs3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "db163f4f-70b0-4ff2-9cf1-82d9afde9f05",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C112",
+      "claim": "Over-expression of CDC25 proteins is observed in some human cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of CDC25 proteins is observed in some human cancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CDC25 in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "5ee5a2c4-014d-44c5-a823-679f5557672a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C113",
+      "claim": "Gain-of-function dysregulation of CDC25 may contribute to cell transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "leading to speculation that gain-of-function dysregulation, akin to the Mih1-1 protein characterized in this study, contributes to cell transformation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation in the field about CDC25's role in cancer.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "4d956202-aaae-4b34-997c-08837553416e",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C114",
+      "claim": "It has not been possible to attribute the effects of increased CDC25 expression levels solely to inappropriate progression through the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has not been possible to attribute the effects of increased CDC25 expression levels solely to inappropriate progression through the cell cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation in understanding CDC25's role in cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "0114b937-9e23-42f3-a9c1-a0c8ffe2fdf5",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "claim_id": "C115",
+      "claim": "The effects of CDC25 overexpression in cancer may be due, in part, to unappreciated activities of CDC25 proteins on non-CDK substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "and our study raises the possibility that this may be due, in part, to unappreciated activities of CDC25 proteins on non-CDK substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the discovery that Mih1/CDC25 has non-CDK substrates.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a0369776-1570-43fe-8f1c-8c1e13d2247a",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A spontaneously arising S162R mutation in Mih1 (mih1-1) causes accelerated turnover of plasma membrane proteins through a mechanism independent of Cdc28/CDK activation. The mutation requires phosphatase activity for its phenotypic effects, and genetic experiments with swe1\u0394 demonstrate that the trafficking defects are not mediated through the canonical CDC25 target Cdc28/CDK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 establish the mutation identity through whole-genome sequencing and genetic reconstruction. C25 demonstrates phosphatase activity is required via the C320S catalytic mutant. C32, C34-C35 provide multiple lines of evidence (immunoblotting, genetic epistasis) that the mih1-1 effects are independent of Cdc28/CDK, ruling out the canonical CDC25 pathway. The convergent genetic and biochemical evidence strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2313b054-84a3-4d2e-8d5c-e669861e9a04",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mih1 physiologically regulates trafficking of a specific subset of plasma membrane proteins (Chs3, Mup1, Can1), with mih1-1 and mih1\u0394 alleles having opposing effects on protein processing and localization. Other plasma membrane proteins (Ftr1, Vps10, Snc1) are unaffected, indicating cargo selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 provide quantitative immunoblot data showing opposing effects of mih1-1 (increased processing) versus mih1\u0394 (decreased processing) on Chs3-GFP. C41-C42 extend this to Mup1 and Can1. C43 demonstrates selectivity by showing no effect on Ftr1, Vps10, or Snc1. The opposing phenotypes of gain-of-function and loss-of-function alleles (C39-C40) strongly support physiological regulation. The data are internally consistent and well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mih1 acts downstream of endocytosis in the endocytic recycling pathway, as demonstrated by epistasis experiments with the end4-1 endocytosis mutant that suppresses the mih1-1 vacuolar targeting phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 show that blocking endocytosis with end4-1 reduces vacuolar localization and GFP cleavage in mih1-1 cells, placing Mih1 function downstream of endocytosis. The epistasis analysis is appropriate and the conclusion (C49) logically follows from the data. This pathway ordering experiment is well-designed and the result is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "2417fd58-737d-4b10-8138-4d73434780d2",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chs3 is exported from the endosome via a retromer-dependent recycling pathway, as deletion of retromer subunits (Vps26, Vps29, Vps35) or the SNX-BAR components (Vps5, Vps17) phenocopies the mih1-1 mutation with respect to CFW resistance and Chs3 vacuolar localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C52 demonstrate that multiple retromer component deletions confer CFW resistance similar to mih1-1. C53 shows Chs3-GFP vacuolar localization in retromer mutants. The genetic screen (C50) appropriately tested multiple sorting nexins, with only retromer components showing the phenotype. The phenocopy between mih1-1 and retromer deletions strongly supports a functional connection. C54's conclusion is well-supported by the convergent genetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mih1 directly dephosphorylates Vps26 in vitro and in vivo. Phosphorylated Vps26 accumulates in mih1\u0394 cells, is reduced in mih1-1 cells, and purified Mih1 (but not the catalytically inactive C320S mutant) dephosphorylates immunopurified Vps26 in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57 provide in vivo evidence from immunoprecipitation experiments showing opposite phosphorylation states in mih1\u0394 versus mih1-1. C60-C61 provide direct biochemical evidence from in vitro phosphatase assays with purified components, including the critical negative control (C320S). The convergence of in vivo and in vitro evidence, along with appropriate controls, strongly supports that Vps26 is a bona fide Mih1 substrate (C62). This establishes a direct molecular mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "738d840d-d0bb-4786-89a5-81041c12a3fb",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Phosphorylation of Vps26 loop 6 modulates retromer-mediated cargo recycling by controlling the affinity of Vps26 for cargo. Phosphomimetic mutations (glutamate substitutions) increase CFW sensitivity and cargo binding affinity (~4-fold, from KD 19 \u03bcM to 4-5 \u03bcM), while alanine substitutions decrease both, correlating binding affinity with sorting outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 provide systematic mutagenesis data showing that loop 6 deletion and phosphomimetic substitutions enhance CFW sensitivity (indicating increased recycling), while alanine substitutions have the opposite effect. C68 shows loop 6 deletion reduces Vps26 phosphorylation by ~50%. C89-C90 provide quantitative binding data showing phosphomimetic and deletion mutants have ~4-fold higher affinity for the Chs3 sorting signal. C91 appropriately correlates binding affinity with functional outcomes. The combination of genetic, cell biological, and biochemical data provides strong support for the gating mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "64a585a5-69bf-4166-9137-61455ea14114",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The YYL sequence (amino acids 12-14) in the N-terminal cytoplasmic segment of Chs3 constitutes a retromer-dependent sorting signal that is directly recognized by Vps26 with a KD of 19 \u03bcM. Mutation of YYL to AAA abolishes high-affinity binding (KD >40 \u03bcM) and confers CFW resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 shows YYL\u2192AAA mutation causes CFW resistance (functional evidence). C79, C81 show GST-Chs3(1-52) captures Vps26 (and Vps35) from lysates, with Vps26 enriched. C84-C85 demonstrate direct binding of purified Vps26 to GST-Chs3(1-52) but not control GST. C86-C87 provide quantitative binding data showing wild-type has KD 19 \u03bcM while YYL\u2192AAA has KD >40 \u03bcM. The convergence of genetic, pulldown, and quantitative binding data strongly supports that YYL is a Vps26-recognized retromer sorting signal (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "dbad1379-4819-4229-b719-8a00d2384455",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A phosphorylation-based gating mechanism controls cargo selection by yeast retromer, where loop 6 of Vps26 functions analogously to the finger loop of \u03b2-arrestin1, with phosphorylation displacing the loop to expose the cargo-binding surface and dephosphorylation by Mih1 restoring an auto-inhibited conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C95 propose a mechanistic model based on structural analogy to \u03b2-arrestin1, but this is explicitly speculative (evidence_type includes SPECULATION). While the functional data (phosphorylation increases binding affinity, loop deletion increases binding) are consistent with this model, the actual structural changes have not been demonstrated. The model is plausible and well-reasoned, but lacks direct structural evidence (e.g., crystal structures of phosphorylated vs. unphosphorylated Vps26, or structures bound to cargo). C96 extends this to broader implications that are also speculative. The mechanistic model requires additional structural validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "378f57e7-7769-4e2e-94bb-e39f6da87120",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "This study establishes a functional precedent for CDC25 family phosphatases outside their canonical role in cell cycle regulation, showing that Mih1 controls trafficking of plasma membrane proteins affecting nutrient homeostasis and cell wall remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The study demonstrates through multiple lines of evidence (C1, C2, C35, C62) that Mih1 regulates retromer function independently of Cdc28/CDK. C111 summarizes the broader finding that Mih1 controls trafficking of nutrient transporters and Chs3. This represents a genuinely novel function for CDC25 phosphatases beyond their established role in cell cycle control (C104). The evidence is strong and the conclusion is appropriately stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "c417c871-fac1-4e6d-a475-6e3932553939",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiple modes of cargo recognition exist for retromer, as Vps10 trafficking is unaffected by mih1 mutations while Chs3, Mup1, and Can1 are affected. This cargo selectivity suggests distinct retromer-containing complexes may form on endosome membranes depending on the cargo recognition mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 provides direct experimental evidence that Vps10 is unaffected by mih1 mutations, contrasting with the effects on Chs3, Mup1, and Can1. This differential effect strongly supports multiple cargo recognition modes (C98). C99 cites recent structural evidence for an alternative Snx3-Vps26 recognition mode. C100 appropriately connects this to the diversity of sorting nexins. C102 is a reasonable inference about distinct complexes, though more speculative. The core observation of cargo selectivity is solid and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "999cb41c-fd48-4826-84d0-aaf4af957344",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Mih1 has additional targets beyond Vps26 loop 6 that affect the CFW growth response, as evidenced by epistasis between mih1\u0394 and Vps26 loop 6 alanine substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is based on epistasis data showing that mih1\u0394 is epistatic to Vps26-L6(A) substitutions, indicating Mih1 must have additional relevant targets. This is a valid inference from the genetic data. However, the nature of these additional targets is not identified, limiting the completeness of this result. The observation is sound but represents an incomplete finding that requires follow-up.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "15219ccd-9160-4755-bc6b-7060f009efc9",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background knowledge and established findings from prior literature about endocytosis, retromer structure and function, CDC25 phosphatases, Chs3 trafficking, and related cellular processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, appropriately cited and used to provide context for the current study. They are not novel findings of this work but are accurately presented. As background information, they support the interpretation of the novel results but do not constitute primary findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Speculative proposals about regulation of Mih1 by PKC, potential connections to cell wall stress responses, and possible implications for CDC25 function in cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are explicitly identified as speculation (evidence_type: SPECULATION) and represent hypotheses rather than tested conclusions. C31 speculates about S162R affecting Mih1 regulation based on proximity to proposed PKC sites. C106, C110 speculate about PKC involvement and stress responses. C113, C115 speculate about implications for cancer. While these are reasonable hypotheses based on the findings, they lack experimental support in this study and should be considered discussion points rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    },
+    {
+      "id": "a61122bc-f6eb-4bff-ab07-119a3dae5419",
+      "content_id": "4b223b79-5c1c-427a-9919-9ea1e4cf64be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Observations about mutation location, occasional detection of phosphorylated Vps35, and lack of effects on retromer protein localization/turnover.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are valid observations but represent negative or ancillary findings. C24 notes S162R is outside the phosphatase motif (relevant context). C56 notes inconsistent detection of phospho-Vps35 (data not shown, limiting evaluation). C65 reports no effects on retromer localization/turnover (negative result, data not shown). While these observations inform the interpretation, they are supporting details rather than major findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:38:15.309584Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "40d16fb4-d71c-4670-a8f5-b18ba42cf3a4",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "0bee02ab-cd48-45e9-84c1-2801323e72f7",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "e95d1dc7-2ec2-494e-9a2e-2d57222a393d",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "a93632f8-ed63-4aab-876a-ed7dc9353dbc",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "3c13ecf3-b950-4610-b994-1a575b6df9a9",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "d1abe3d4-ad06-4397-89af-c949abbed8f6",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "35586526-d414-463b-b516-6ff9f3907e18",
+      "result_id": "a0369776-1570-43fe-8f1c-8c1e13d2247a"
+    },
+    {
+      "claim_id": "0b70b563-0f7d-4a89-bab4-32ed7fc40493",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "41c7a46c-45c8-4c6d-b3a3-2a366fbd64f4",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "06a56881-2706-40e9-aedf-5883b9211b66",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "c7aa1285-6f2f-4ce2-acbb-816c4ae9bb56",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "d0b7f860-fff9-4bbf-9d5c-4c11cef26935",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "dd5498fc-2589-44cb-967e-0f9fa722ec09",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "b53ec2fc-f066-47fc-bad7-44a126911488",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "b0e8ffe1-ec79-454e-b815-e2bcb7b1d651",
+      "result_id": "2313b054-84a3-4d2e-8d5c-e669861e9a04"
+    },
+    {
+      "claim_id": "c2fef83b-dc71-4b7c-848a-ea54ac8d6b68",
+      "result_id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d"
+    },
+    {
+      "claim_id": "468c29f5-5125-44ce-a868-5a6edac60501",
+      "result_id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d"
+    },
+    {
+      "claim_id": "45dddd44-c9a0-42a9-9260-1c9017129f5a",
+      "result_id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d"
+    },
+    {
+      "claim_id": "cf78bd13-b637-4e9a-bae2-a83c15c6446a",
+      "result_id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d"
+    },
+    {
+      "claim_id": "1e30d82d-4a80-441b-aab7-8620bf0db2a0",
+      "result_id": "bbe7cd49-f0ea-4939-8575-b0e61cbafa9d"
+    },
+    {
+      "claim_id": "be8e8cc4-f769-4b9e-9177-e1ffa83ef894",
+      "result_id": "2417fd58-737d-4b10-8138-4d73434780d2"
+    },
+    {
+      "claim_id": "ca6f18b1-c794-4fee-acdb-7c92ee9d100e",
+      "result_id": "2417fd58-737d-4b10-8138-4d73434780d2"
+    },
+    {
+      "claim_id": "3802069e-2d23-43c1-aa82-8779d5565c16",
+      "result_id": "2417fd58-737d-4b10-8138-4d73434780d2"
+    },
+    {
+      "claim_id": "55c2bc38-5165-4ce8-8774-21178b1e05bc",
+      "result_id": "2417fd58-737d-4b10-8138-4d73434780d2"
+    },
+    {
+      "claim_id": "17d2eada-82dd-4cb2-b658-193a1fec1b21",
+      "result_id": "2417fd58-737d-4b10-8138-4d73434780d2"
+    },
+    {
+      "claim_id": "d07571a7-7743-47a8-9acf-5dd7064f2deb",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "c4c49f00-5a52-498f-9658-2ac5486650ba",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "6023097c-63bf-4c19-89a7-80cdc138271d",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "23575edd-4760-4b46-9696-1b024f36f37f",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "7839d169-b1d8-4ecb-a187-7ddecffa946d",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "7a3ec126-be7a-48d4-932d-09dee38bdc64",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "648a55d1-1846-41c4-bfd6-a984fa7907b8",
+      "result_id": "513b1ccc-1ecd-4c64-9879-d7c1e16c45e0"
+    },
+    {
+      "claim_id": "cdbd79f1-0507-4edd-ae9a-6d5d1883b167",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "2848cb64-fc0e-4d4e-9b69-280807db2111",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "e3a94124-553a-4964-ba56-fb143613b34f",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "b348dce3-7894-4d40-a9eb-4731c635f8a5",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "54e7b91f-d756-4991-97a0-d80b4e49f3d7",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "8333a128-7745-4bbe-9e1b-298f7a85d1ae",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "1d3ae5da-03d4-47df-9c2b-07b6de18c086",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "fd881b01-761a-40ad-81a5-839e2789a4e8",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "f6ddf6d1-07f0-43d0-9fb2-37503a2aa217",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "74d92111-3841-4a8a-a63d-f4044b4d3ed4",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "18dd31a0-ea60-4742-8745-6994ddef9f13",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "207664c9-0b27-4246-95f1-ddd5759964bb",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "23807e8c-767c-4320-b9ed-ee500c6e7a53",
+      "result_id": "738d840d-d0bb-4786-89a5-81041c12a3fb"
+    },
+    {
+      "claim_id": "d28c5bb4-b08e-4dca-b069-2305032be083",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "27ff31bd-6b97-4112-8e98-4bffdea4a008",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "ac13270c-68ed-4d79-acde-3ec16d16eed0",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "35581df8-4456-46c1-86c9-7c9cfc99f291",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "2340dfe9-dde3-41d2-89ee-0c302566e76a",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "b53fdf9a-2e86-4a2b-aada-7e99b884fb19",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "7b8bb26a-c43c-44f8-83f6-480724d3b929",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "8a60d387-d82a-4f73-84fc-165a2df0280a",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "8cdf6187-0361-4c22-b2b2-f66113ed310f",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "53b056e4-d15f-4ee9-831a-7bd84f034ad4",
+      "result_id": "64a585a5-69bf-4166-9137-61455ea14114"
+    },
+    {
+      "claim_id": "a728d4f8-a8c2-4fe7-9e65-0fcb2ddf3cda",
+      "result_id": "dbad1379-4819-4229-b719-8a00d2384455"
+    },
+    {
+      "claim_id": "7956f096-e52e-442f-906b-70a8d30ad841",
+      "result_id": "dbad1379-4819-4229-b719-8a00d2384455"
+    },
+    {
+      "claim_id": "03df2a30-272b-4c36-a343-89b69079b631",
+      "result_id": "dbad1379-4819-4229-b719-8a00d2384455"
+    },
+    {
+      "claim_id": "df04fe6c-8b3c-45d6-b096-7b1972ba86c1",
+      "result_id": "dbad1379-4819-4229-b719-8a00d2384455"
+    },
+    {
+      "claim_id": "83134108-8246-4bc2-9e8d-eb0fd69ed8a1",
+      "result_id": "dbad1379-4819-4229-b719-8a00d2384455"
+    },
+    {
+      "claim_id": "6cba1e52-d79c-4223-856e-14d7daae9ec6",
+      "result_id": "378f57e7-7769-4e2e-94bb-e39f6da87120"
+    },
+    {
+      "claim_id": "ce0e5658-2974-4a5b-968d-603db0fc2b09",
+      "result_id": "378f57e7-7769-4e2e-94bb-e39f6da87120"
+    },
+    {
+      "claim_id": "c943fd5c-e1c4-47c4-bedd-3435f8cd6b7d",
+      "result_id": "378f57e7-7769-4e2e-94bb-e39f6da87120"
+    },
+    {
+      "claim_id": "782796fe-a896-4e17-ae99-63a06d3da021",
+      "result_id": "378f57e7-7769-4e2e-94bb-e39f6da87120"
+    },
+    {
+      "claim_id": "750e0bea-3f0a-418b-8e56-ab391ceddd0a",
+      "result_id": "c417c871-fac1-4e6d-a475-6e3932553939"
+    },
+    {
+      "claim_id": "2fcc9cf0-adc4-4aea-a788-2a1b1e478375",
+      "result_id": "c417c871-fac1-4e6d-a475-6e3932553939"
+    },
+    {
+      "claim_id": "53c719ea-9ef0-40f8-b182-a724fb38b1cc",
+      "result_id": "c417c871-fac1-4e6d-a475-6e3932553939"
+    },
+    {
+      "claim_id": "2be55373-3709-428a-89a7-a8651cc641e6",
+      "result_id": "c417c871-fac1-4e6d-a475-6e3932553939"
+    },
+    {
+      "claim_id": "03b109ee-e2ed-419e-9dbf-0c43e4cce11c",
+      "result_id": "c417c871-fac1-4e6d-a475-6e3932553939"
+    },
+    {
+      "claim_id": "40393aa0-6054-4cb0-854b-f6da1940f1b8",
+      "result_id": "999cb41c-fd48-4826-84d0-aaf4af957344"
+    },
+    {
+      "claim_id": "f5e80fbd-84a9-4ac0-803b-558bea2d7280",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "82d09cc9-9000-4cee-a791-a1f164a6b6e8",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "9b9e78d9-25b7-443e-8b9a-ca5b5fdaae81",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "340c1408-f1c9-4c9c-8b1b-16dbf99850eb",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "2fa3023b-a42a-4539-8adb-76780c87546a",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "c0811d0f-51b9-4f3b-9e29-edf564d041e2",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "0554ef44-89b5-4dfa-bdd1-980a5c1a0238",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "3b25e43c-bcb9-485d-8e31-db326c0325a2",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "d6c401a0-1932-463e-ab59-83c8e97d7685",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "7f6efc69-8129-4ad3-b050-1a537b7d6229",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "75ecf349-4d88-43fd-8535-8c6385793673",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "b7e3fcba-2578-44ca-bd2f-c0013efc028c",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "f81c67df-66d5-4e41-b083-30c77692ff0d",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "86c18084-f751-4939-9325-3c5e9be365c0",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "31860a50-32ac-4669-a7c4-39ada7879651",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "c5af729b-f59b-45f4-bddf-5490a29d03ce",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "743f8056-9cbc-4424-8e16-c32aa9fe81f5",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "96cdc076-d914-4541-8903-71c50f4b94d5",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "4b56266f-d4a6-4b68-833e-9639bc4908e5",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "b51034a9-4fc9-4ba1-b4ad-6614e07df7ff",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "cd652235-a9e9-46fb-a814-1c465471220a",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "95d35a24-ce71-4830-9513-1414b7dd4d09",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "ca6f18b1-c794-4fee-acdb-7c92ee9d100e",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "fb6d2ccb-8140-4b22-b4bc-cff6637dc255",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "bf24a2f8-33d4-490d-9285-5c36823103fe",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "d36ce838-bc31-4af1-8e60-70ae9475c774",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "4c4266aa-400a-4d78-a69d-17f1d96305fb",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "44ab8094-107f-4a79-af93-14cab6ed2714",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "7e4731bb-d035-4efc-b083-4159fa8a0f74",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "adb69cc3-9d3c-4190-8f4c-a07890392211",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "b68f4c32-fb29-495e-9caa-1b0b08a5e4a2",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "c943fd5c-e1c4-47c4-bedd-3435f8cd6b7d",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "ea902fff-dfc7-487b-a7cc-93d6027cafb5",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "db8f9aca-459d-4db9-9ebb-65d820440cf0",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "1548a931-b38a-49be-9e9c-dcbef11ddd1e",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "5d5f9a28-73aa-4965-bf68-7b0a0e03a8f8",
+      "result_id": "15219ccd-9160-4755-bc6b-7060f009efc9"
+    },
+    {
+      "claim_id": "98edab67-8e6f-4d91-a907-9cf05c8703b3",
+      "result_id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e"
+    },
+    {
+      "claim_id": "3f4efa2c-f1cd-41d0-b0e3-aa88282a9346",
+      "result_id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e"
+    },
+    {
+      "claim_id": "3d80f58f-6747-498d-85f6-69d8d82c3537",
+      "result_id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e"
+    },
+    {
+      "claim_id": "5ee5a2c4-014d-44c5-a823-679f5557672a",
+      "result_id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e"
+    },
+    {
+      "claim_id": "0114b937-9e23-42f3-a9c1-a0c8ffe2fdf5",
+      "result_id": "20657bb2-9a89-4b47-9725-3a073d0d9c1e"
+    },
+    {
+      "claim_id": "b838e88d-08d9-4d1d-92dc-eb4470261d4f",
+      "result_id": "a61122bc-f6eb-4bff-ab07-119a3dae5419"
+    },
+    {
+      "claim_id": "5f9749e6-3f9c-48ea-b39a-253528c1410e",
+      "result_id": "a61122bc-f6eb-4bff-ab07-119a3dae5419"
+    },
+    {
+      "claim_id": "ea372baa-4001-4281-a2af-a9cd1a765653",
+      "result_id": "a61122bc-f6eb-4bff-ab07-119a3dae5419"
+    }
+  ],
+  "comparisons": []
+}

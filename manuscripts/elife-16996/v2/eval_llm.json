@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RNA sequencing of dissected cephalic ganglia tissue successfully enriched for CNS-associated transcripts. The dissection protocol yielded 2237 significantly enriched and 1938 significantly diminished transcripts in cephalic ganglia versus head fragments, with CNS-restricted genes like hh and 1020HH showing 57-fold and 81-fold enrichment respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C41 collectively demonstrate successful tissue-specific RNA-seq methodology. The differential expression analysis (C38-C39) and validation with known CNS markers (C40-C41) provide converging evidence that the dissection protocol effectively enriched for CNS transcripts, establishing the foundation for subsequent gene discovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C36",
+      "C37"
+    ],
+    "result": "hh is expressed in medial cephalic ganglia neurons that co-express the neuronal marker pc2 and partially overlap with cholinergic neurons expressing chat. This expression pattern is spatially analogous to the vertebrate neural tube floor plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C36-C37 are supported by double FISH data (Figure 1A-B) and prior literature. The co-expression analysis with neuronal markers definitively establishes the neuronal identity of hh+ cells and their medial localization, though the analogy to vertebrate floor plate (C26) is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "Two genes, if-1 (encoding a cytoplasmic intermediate filament) and cali (encoding a protocadherin-like protein), were identified as misregulated by Hh signaling and are co-expressed in non-neural cells within the CNS neuropil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C49, C51-C52 are well-supported by RNA-seq data (Figure 1G), phylogenetic analysis (Figure 1\u2014figure supplement 3), and FISH localization (Figure 2A-B). The identification of these genes as Hh-responsive and their characterization as non-neural based on localization is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C47",
+      "C48"
+    ],
+    "result": "Hh signaling perturbation does not affect expression of orthologous transcription factors nkx2, nkx6, and pax6b in intact planarians, contrasting with the role of Hh in establishing transcription factor domains in vertebrate neural tube development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C47-C48 are supported by RNA-seq (Figure 1F) and FISH validation (Figure 1\u2014figure supplement 2). The lack of significant changes in transcription factor expression following hh and ptc RNAi is clearly demonstrated, establishing a key difference from vertebrate CNS patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "if-1+/cali+ cells express the Hh receptor ptc and are spatially adjacent to hh+ neurons, indicating they are competent to respond to Hh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by double FISH data (Figure 2C-D) showing high percentages of ptc co-expression (97.8% inside neuropil, 100% outside) and spatial proximity to hh+ neurons. This establishes the cellular basis for Hh-mediated regulation of these cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Hh signaling through gli-1 is required for if-1 and cali expression in the neuropil. hh RNAi decreases if-1+/cali+ cell density, while ptc RNAi increases it, and gli-1 (but not gli-2 or gli-3) RNAi phenocopies hh loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C63-C65 are supported by FISH quantification (Figure 2H-I) and gli RNAi experiments (Figure 2\u2014figure supplement 2). The opposing effects of hh and ptc inhibition, consistent with canonical Hh signaling, and the specific requirement for gli-1 provide strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "if-1+/cali+ cells do not express neuronal markers including pc2, chat, syn, voltage-gated ion channels, neurotransmitter synthesis enzymes, synaptic vesicle proteins, or neuronal transcription factors, establishing that these cells are not neurons despite their CNS localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are comprehensively supported by extensive double FISH analysis (Figure 3A-H, Figure 3\u2014figure supplement 1). The systematic exclusion of multiple classes of neuronal markers provides strong evidence that if-1+/cali+ cells represent a distinct non-neuronal cell type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "if-1+/cali+ cells express orthologs of astrocyte-associated genes involved in neurotransmitter uptake and metabolism, including gs (glutamine synthetase), eaat2-1 and eaat2-2 (glutamate transporters), gat (GABA transporter), glut (glucose transporter), and trpm (ion channel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C78 are supported by double FISH data (Figure 3I-N) and phylogenetic analyses confirming orthology (Figure 3\u2014figure supplements 3-6). The co-expression of multiple functionally related genes involved in neurotransmitter metabolism provides strong molecular evidence for a glial identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cells expressing glial markers (gs, gat, eaat2-1, eaat2-2, glut, trpm) exist outside the cephalic ganglia neuropil, express ptc, and do not express neuronal markers, indicating a broadly distributed population of glia-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by double FISH data (Figure 3O-W) showing co-expression of glial markers outside the neuropil, ptc expression in these cells, and absence of pc2 co-expression. This extends the glial population beyond the CNS proper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C79"
+    ],
+    "result": "The if-1+/cali+ cells are proposed to be planarian glia based on their molecular marker expression, CNS localization, non-neuronal identity, and expression of genes involved in neurotransmitter metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C79 represent the central hypothesis supported by the convergence of multiple lines of evidence: non-neuronal identity (C66-C69), expression of astrocyte-associated genes (C70-C74), CNS localization (C52), and morphology (C57, C81-C87). While functional validation is limited (C80), the molecular and morphological evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "IF-1 protein localizes to an extensive network of cellular processes concentrated in the neuropil, following axon tracts, and closely associating with synaptic regions. These processes weave through synapse-dense areas and appear to encapsulate synaptic glomeruli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C84-C88 are supported by immunofluorescence data (Figure 4A-K, Figure 4\u2014figure supplements) including expansion microscopy (Videos 1-8). The detailed morphological characterization demonstrates the intimate association of IF-1+ processes with neuronal structures, supporting a glial support function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Hh signaling regulates IF-1 protein levels and distribution. hh inhibition eliminates IF-1 signal, while ptc inhibition increases IF-1+ process association with orthogonal axon bundles from 15.1% to 61.4%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by immunofluorescence data and quantification (Figure 4L, N). The opposing effects of hh and ptc inhibition on IF-1 protein distribution, with quantitative assessment of axon bundle association, provide strong evidence for Hh-dependent regulation of glial morphology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "IF-1 protein perdures after if-1 mRNA is lost in hh(RNAi) animals, suggesting that hh RNAi impacts transcription in existing glia rather than causing cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by combined FISH and immunofluorescence data (Figure 5A) showing persistence of IF-1 protein despite loss of if-1 mRNA. This temporal dissociation between mRNA and protein loss provides evidence that Hh regulates gene expression rather than cell survival.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Hh signaling specifically regulates if-1 and cali expression without affecting other glial markers (gs, gat, eaat2-1, eaat2-2) or total glia cell numbers. ptc inhibition induces if-1 and cali in existing glia outside the neuropil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by double FISH data and quantification (Figure 5B-C). The selective effect on if-1/cali versus other glial markers, maintenance of total gat+ cell numbers, and increased if-1+/cali+ proportion in ptc(RNAi) demonstrate that Hh regulates glial gene expression state rather than cell fate or number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Irradiation experiments demonstrate that ptc inhibition induces if-1 and cali expression in existing mature glia. Despite blocking new cell production, ptc(RNAi) irradiated animals show increased if-1+/cali+ cells with branched morphology, and increased proportion of glut+ cells expressing if-1/cali without change in total glut+ cell number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by FISH data and quantification in irradiated animals (Figure 6A-D). The persistence of ectopic if-1/cali expression despite irradiation, presence of branches in ectopic cells, and unchanged total glut+ cell numbers provide strong evidence that Hh signaling dynamically regulates gene expression in mature glia based on proximity to hh+ neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Planarian glia are distributed broadly throughout the animal but only express if-1 and cali in the neuropil near hh+ neurons, indicating spatial regulation of glial gene expression by Hh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by FISH data showing broad distribution of gs+, gat+, and other marker+ cells (Figure 3O-S) but restricted if-1/cali expression near hh+ neurons (Figure 2D, H-I). This spatial pattern, combined with the irradiation experiments (C105-C111), establishes that Hh signaling creates distinct glial states based on proximity to the Hh source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C137"
+    ],
+    "result": "This study provides the first molecular and morphological evidence for glia in planarians and demonstrates that Hh signaling regulation of CNS glia is a common feature across all three superphyla of the Bilateria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113 and C137 represent the major conclusions supported by the comprehensive molecular, morphological, and functional characterization of planarian glia (C7-C88) and comparison with Hh signaling roles in vertebrate and Drosophila glia (C32-C35, C114-C119, C129-C131). The novelty claim is supported by prior literature showing only morphological descriptions without molecular evidence (C112).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "RNAi of glial marker genes (gs, eaat2-1, eaat2-2, gat, glut, trpm) did not result in observable morphological or behavioral phenotypes during homeostasis or regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is supported by experimental observations, though the lack of phenotype is a negative result. This suggests either functional redundancy, incomplete knockdown, or that the assays used were not sensitive enough to detect subtle defects. The claim is accurately stated as an observation rather than a definitive conclusion about gene function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "During regeneration, glia markers are present in blastemas. In hh(RNAi) animals, if-1 and cali expression is eliminated but other glial markers (gat, eaat2-1, eaat2-2) are still expressed, suggesting glia can regenerate in the absence of Hh signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by FISH data in regenerating blastemas (Figure 5\u2014figure supplement 2). The differential effect on if-1/cali versus other glial markers in hh(RNAi) blastemas is consistent with the homeostatic findings and suggests that while Hh regulates specific glial genes, it is not required for glial cell regeneration per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "During regeneration, if-1+/cali+ cells accumulate in control blastemas but are absent in hh(RNAi) blastemas. ptc(RNAi) anterior blastemas contain many if-1+/cali+ cells despite impaired head formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by FISH data in regenerating animals (Figure 2\u2014figure supplement 1D). These observations extend the Hh-dependent regulation of if-1/cali to the regeneration context and show that ectopic Hh signaling can induce these markers even in malformed tissue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C119"
+    ],
+    "result": "The regulation of intermediate filament proteins by Hh signaling in glia and the ability for neurons to instruct glial gene expression profiles are striking commonalities between planarians and vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C119 are supported by comparison of the planarian findings with vertebrate literature (C115-C116, C118). While the specific genes and functional contexts differ, the parallel regulatory mechanisms represent meaningful evolutionary conservation. The comparative analysis is appropriately qualified as identifying commonalities rather than claiming identical mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Regionalized expression of orthologs of Hh-responsive vertebrate neural tube transcription factors appears unaffected by Hh signaling in uninjured planarians, consistent with the possibility that Hh signaling was co-opted into a dorsal-ventral patterning role in the deuterostome lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 are supported by RNA-seq and FISH data (C47-C48) and comparative analysis with Drosophila and Platynereis (C122-C124). The evolutionary inference (C126) is appropriately presented as speculative, and the data support the conclusion that Hh does not pattern the planarian CNS in the same way it patterns the vertebrate neural tube.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "A shared function of Hh signaling among Deuterostomes, Ecdysozoans, and Lophotrochozoans is in the control of glia near the midline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by the planarian findings combined with comparative analysis of Hh roles in vertebrate floor plate glia (C127-C128) and Drosophila midline glia (C129-C130). This represents a synthesis of the current work with existing literature to identify a conserved ancestral function of Hh signaling in bilaterian CNS development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C50",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Background knowledge claims about Hh signaling roles in vertebrate and invertebrate CNS development, planarian biology, and glial functions in other organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C14-C24, C27-C35, C44-C46, C50, C114-C116, C118, C120-C124, C127-C130, C132-C134) represent established knowledge supported by appropriate citations to the literature. They provide essential context for interpreting the novel findings but are not themselves results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C4",
+      "C26"
+    ],
+    "result": "The expression of hh in medial cephalic ganglia neurons suggests a possible role in CNS maintenance or regeneration, and this location is analogous to the vertebrate neural tube floor plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C26 are speculative inferences based on expression patterns. While the spatial analogy to the floor plate is reasonable based on medial positioning, the functional implications remain uncertain. The study does not directly test CNS maintenance or regeneration functions of hh in neurons, focusing instead on its role in regulating glial gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "patched (ptc) encodes the Hh receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is established knowledge about the Hedgehog signaling pathway, well-supported by the literature. This is a factual statement about pathway components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "RNAi of if-1 results in complete loss of IF-1 antibody immunolabeling, confirming antibody specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by immunofluorescence data (Figure 4\u2014figure supplement 1A). This is an important control demonstrating that the IF-1 antibody specifically recognizes the IF-1 protein, validating all subsequent immunofluorescence experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Previous electron microscopy studies identified candidate planarian glia based on localization and appearance but did not provide molecular evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by citations to Golubev, 1988 and Morita and Best, 1966. This accurately characterizes prior work and establishes the novelty of the current molecular characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "IF-1+ processes are not seen deviating from axonal tracts and perturbations affecting gene regulation in planarian glia do not result in observable disruption to the neural network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 are supported by immunofluorescence observations and RNAi phenotype analysis. These observations support the hypothesis that planarian glia passively extend into existing neural architecture rather than actively patterning it, though this remains somewhat speculative without more direct functional tests.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors developed a high-throughput OPT platform for 3D imaging of chromogenic WISH-stained zebrafish embryos. The system uses BABB tissue clearing with refractive index-matched aluminosilicate glass capillaries, acquires 360 color images at ~1.5 \u00b5m pixel resolution in ~12 seconds rotation time, and completes reconstruction in ~11 minutes per embryo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7, C16-C21, and C126-C130 collectively describe the OPT platform's technical specifications and performance. The imaging parameters (C21), processing times (C128-C130), and hardware components (C126-C127) are directly measured and reported. The tissue clearing approach using BABB (C16-C20) is well-established and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors developed registration algorithms using elastix and MATLAB that achieve sub-cellular alignment accuracy (2.3-4.0 \u00b5m) for 3D gene expression patterns. The approach uses both chromogenic WISH stain and SYTOX counterstain, employing rigid, similarity, affine, and B-spline transforms with normalized correlation as the similarity measure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 and C131-C137 describe the registration methodology and quantify its accuracy. The sub-cellular registration accuracy (C23-C24) is directly measured using tph2 expression domains as landmarks. The validation using known co-expression patterns (C25-C28) provides independent confirmation that the registration preserves biological relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors created 3D anatomical reference atlases for zebrafish brains at 2 and 3 dpf comprising 22 brain regions. Atlases were generated from 2P microscopy of Nissl-stained embryos and manually segmented using established nomenclature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C139-C141 describe the atlas creation methodology. The use of Nissl staining (C30-C31) is well-established for neuromorphology. Manual segmentation following established nomenclature (C140) with appropriate reference materials provides a solid foundation for the 22-region atlas (C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors developed an Automated Correlation Analysis framework that calculates Pearson correlation coefficients between wild-type and mutant embryos on a voxel-by-voxel basis. Using a null dataset for FDR estimation, they established thresholds of p<10\u207b\u2075 and effect size d>1.0, yielding an FDR of 0.020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C142-C145 describe the statistical framework and threshold selection. The use of a null dataset (negative controls randomly divided into groups) to empirically determine FDR (C34-C36) is methodologically sound. The combination of significance testing and effect size requirements appropriately balances sensitivity and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Automated deep-phenotyping of fezf2 mutants reveals two phenotypic hotspots: ventral diencephalon and telencephalon. In the ventral diencephalon, the analysis detected known deficits in GABAergic (dlx5a, gad1b) and dopaminergic (th, vmat2, otpb) markers, with subdomain-specific patterns matching previously reported phenotypes, validating the automated approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C46 describe diencephalic phenotypes detected by automated analysis. The detection of known phenotypes (C39-C40, C44-C46) validates the method. The novel finding of transient GABAergic recovery (C42) is supported by temporal data at 2 and 3 dpf. Subdomain specificity (C43-C45) matches prior detailed characterization (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors uncovered novel diencephalic deficits in fezf2 mutants, including widespread alterations in fezf2's own expression pattern and loss of specific sst1.1-expressing neuron clusters. The altered fezf2 expression shows loss along the midline with lateral/anterior expansion into regions normally expressing otpb and th, consistent with disrupted negative feedback regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C61 describe novel phenotypes contradicting prior reports. The widespread fezf2 expression alterations (C47-C49) are directly visualized and quantified. The spatial relationship changes (C50-C53) are supported by virtual co-registration data. The mechanistic interpretation involving otp-mediated negative feedback (C54-C56) is consistent with cited literature and the observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The second phenotypic hotspot is in the telencephalon, where automated analysis reveals that dopaminergic markers remain normal while GABAergic markers show subtle shape alterations without volume changes and glutamatergic markers exhibit striking reductions. This contradicts previous reports that telencephalic morphology and patterning are normal in early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C76 describe telencephalic phenotypes. The differential effects on neurotransmitter systems (C67-C72) are supported by automated correlation analysis and confirmed by 2D slicing and 3D segmentation. Quantitative volume measurements (C74) validate that GABAergic changes reflect shape rather than volume alterations. The findings directly contradict prior literature (C63-C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "fezf2 mutants show dramatic reductions in glutamatergic neurons in the telencephalon at 2 and 3 dpf, affecting both mature markers (vglut1, vglut2.2) and the specification factor tbr1b. This represents the first evidence that fezf2 is required for glutamatergic neuron development in the zebrafish telencephalon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 describe the glutamatergic phenotype. The reduction is documented through multiple approaches: 2D slicing, 3D segmentation, and volume quantification (C77, C80). The involvement of both mature markers (C78-C80) and the specification factor tbr1b (C81) supports a developmental deficit. The novelty claim (C83) is justified given the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Multiple additional markers show telencephalic deficits in fezf2 mutants, including progenitor markers (ascl1a, eomesa, neurog1, zic2a), differentiation markers (glyt1), and broadly expressed transcription factors (emx3). Common features include dorsoventral compression, preferential pallial loss, and anterior/ventral shifts in neighboring diencephalic domains. Volume measurements confirm significant telencephalic reduction and ventricular enlargement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 describe additional telencephalic phenotypes. The involvement of multiple marker classes (C84) is documented through automated correlation analysis. The common morphological features (C86-C90) are consistently observed across markers. The inference of reduced telencephalon size (C91) is directly validated by quantitative volume measurements from Nissl-stained embryos (C92-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C111",
+      "C112",
+      "C113",
+      "C116"
+    ],
+    "result": "Deep phenotyping reveals that fezf2 has an evolutionarily conserved role in glutamatergic development in the dorsal telencephalon, with defects present as early as 2 dpf. This finding reveals unsuspected commonalities between fezf2 function in fish and mammals and brings early zebrafish phenotypes into closer agreement with adult fish phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104, C111-C113, and C116 synthesize the major findings. The glutamatergic phenotype (C103) is well-documented through multiple markers and approaches. The evolutionary conservation argument (C104, C111) is strengthened by the pallial localization (C112), which corresponds to the mammalian neocortex. The connection to adult phenotypes (C113, C116) is supported by literature citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Prior to this study, zebrafish fezf2 mutants were characterized by diencephalic deficits while mouse knockouts showed telencephalic glutamatergic deficits. In mice, Fezf2 promotes glutamatergic identity and represses GABAergic identity, while zebrafish overexpression increases dopaminergic neurons. No glutamatergic defects had been described in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 accurately summarize prior literature on fezf2 function across species. Each claim is supported by appropriate citations to primary literature. This establishes the context for why the current findings (glutamatergic defects in zebrafish telencephalon) are significant and unexpected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C117",
+      "C118"
+    ],
+    "result": "Adult fezf2 mutants have smaller telencephalons with distorted fezf2 expression and enlarged ventricles, accompanied by decreased neurite complexity and increased neural stem cells. The authors' finding that progenitor markers are not reduced while postmitotic markers are substantially reduced supports a failure of maturation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 and C117-C118 connect the current findings to previously reported adult phenotypes. The adult phenotypes (C114-C115, C117) are supported by citations. The differential effects on progenitor versus postmitotic markers (C118) directly support the maturation/differentiation failure interpretation and are documented in the supplementary data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors argue that automated quantitative phenotyping approaches will be invaluable for characterizing new genome-edited lines. Chromogenic WISH offers advantages over fluorescent approaches including no photobleaching/quenching, high contrast, long-term stability, and established automated protocols, though published automated 3D analysis techniques are currently limited to fluorescent readouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C101 discuss the broader significance and advantages of the approach. The advantages of chromogenic WISH (C98-C101) are well-established properties supported by appropriate citations. The limitation of existing automated 3D approaches to fluorescence (C96) is accurately stated. The speculation about future utility (C94) is reasonable given the demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Large-scale zebrafish mutation projects like the ZMP aim to identify disruptive alleles in all 26,000+ vertebrate genes and characterize them for ~20 gross phenotypes at 5 dpf. However, phenotyping in such studies is often non-quantitative and restricted to easily observable features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the motivation for the study. The ZMP goals and characterization approach (C1-C2) are supported by appropriate citations. The limitation to non-quantitative, easily observable features (C3) is a reasonable inference about the state of large-scale phenotyping and provides clear motivation for the automated deep-phenotyping approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Fezf2 is an evolutionarily conserved transcription factor with critical roles in neurogenesis. While developmental expression is similar in fish and mammals, reported phenotypes differ: mouse knockouts show loss of cortical glutamatergic neurons, while zebrafish mutants show diencephalic deficits in dopaminergic, serotonergic, and GABAergic populations. Adult zebrafish mutants have smaller telencephalons despite grossly normal appearance at 2 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 provide essential background on fezf2. Each claim about expression patterns and phenotypes in different species is supported by appropriate citations to primary literature. The apparent paradox between conserved expression but divergent phenotypes (C11) and between adult deficits and normal early appearance (C14-C15) motivates the deep-phenotyping analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors obtained fezf2m808 mutant zebrafish from S. Guo (UCSF), generated homozygous mutants and wild-type siblings by crossing heterozygotes backcrossed to TAB14 background, used PTU to inhibit melanogenesis, and genotyped using dCAPS. They generated a custom probe library by RT-PCR from pooled 1-6 dpf embryo RNA and performed WISH with modifications to the standard protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C125 describe standard experimental procedures. The fish source (C120), breeding strategy (C121), PTU treatment (C122), genotyping method (C123), probe generation (C124), and WISH protocol (C125) are all appropriately documented with citations where relevant. These represent routine methodological details necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Core source code for image reconstruction and registration, along with brain atlases and sample data files, are available online.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 documents data and code availability. The provision of source code, atlases, and test datasets supports reproducibility and enables other researchers to apply these methods. This is an important contribution to the field.",
+    "result_type": "MINOR"
+  }
+]

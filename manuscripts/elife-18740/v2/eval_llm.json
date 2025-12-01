@@ -1,0 +1,355 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C92",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C146"
+    ],
+    "result": "Reprocessing the XFEL diffraction data of the Syt1\u2013SNARE complex with improved methods resulted in small but measurable improvements in data quality and the refined atomic model compared to the originally published structure. The reprocessed data showed higher completeness (97.8% vs. 87.6%), higher multiplicity (6.1 vs. 5.0), better CC1/2 (94.3% vs. 92.7%), and improved Rwork/Rfree values (29.2%/32.9% vs. 32.2%/35.3%). The electron density maps were slightly more interpretable, allowing better modeling of some side chain rotamers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25, C48-C52, C92, C121-C124, and C146 collectively demonstrate improvements in XFEL data processing. The improvements are quantitatively documented in Table 1 with specific statistics, and qualitatively shown in electron density maps (Figures 1 and 1\u2014figure supplement 1). Simulated annealing composite omit maps (C52, Figure 1\u2014figure supplement 2) support that the improvements are not due to model bias. The claims are well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Processing of simulated XFEL diffraction data generated from the Syt1\u2013SNARE structure demonstrated that the data processing methods can accurately recover structure and intensity information. The simulated data produced excellent merging statistics (CC1/2, Rmerge, I/\u03c3(I) in Table 1C), high agreement with input structure factors (CC=97.5%, R=11.8%), low refinement R-values, and good agreement between the refined model and input structure (RMSD=0.11 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 and C105-C108 describe the simulation and validation approach. The simulated data processing results (Table 1C, Figure 1C) demonstrate that the methods can accurately process ideal XFEL data. The excellent statistics and close agreement with the input structure provide strong validation of the computational pipeline. However, the simulation may not fully capture all experimental complexities (C62-C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C93",
+      "C94"
+    ],
+    "result": "The observed XFEL diffraction data statistics (CC1/2) and refined atomic model statistics (Rwork and Rfree) are inferior to those obtained from simulated XFEL data, despite the data processing methods being validated on simulated data. This difference may arise from experimental noise or indicate that the simulation does not fully account for certain features of observed XFEL data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 and C93 are directly supported by comparison of statistics in Table 1A vs. 1C. Claim C94 provides a logical inference that the processing methods are not the limiting factor since they work well on simulated data. Claims C62-C63 appropriately acknowledge uncertainty about the source of the discrepancy. The evaluation is appropriately cautious and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C66",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "XFEL-derived electron density maps at 3.5 \u00c5 resolution contained more structural information than synchrotron-derived maps at 4.1 \u00c5 resolution. Even when XFEL maps were truncated to 4.1 \u00c5 to match the synchrotron resolution, they remained slightly more interpretable. All amino acid types showed higher real-space correlation coefficients with XFEL maps, and more Ca2+ ions were visible (21 vs. 15) with higher correlation coefficients for matching ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C27-C29, C66, C78-C85 are well-supported by visual comparisons (Figures 1, 2) and quantitative analysis (real-space correlation coefficients in Figure 2A-C). The use of simulated annealing composite omit maps (C80-C81, Figure 1\u2014figure supplement 2) strengthens the conclusion by addressing potential model bias. The comparison is appropriately controlled by truncating XFEL data to match synchrotron resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Several methodological improvements were implemented in the XFEL data processing pipeline, including: enhanced crystal lattice model refinement to minimize mis-indexing, improved scaling procedure using pseudo-Wilson scaling, automatic rejection of poor images, detection of mis-indexed images, refinement of detector parameters, and inclusion of negative intensity measurements. Analysis of refined beam positions identified mis-indexed frames, which were corrected by limiting the beam search radius to 0.5 mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 and C111-C115 describe specific methodological improvements. The mis-indexing detection approach (C112-C114) is particularly well-documented with data showing the problem (Figure 4\u2014figure supplement 4A) and solution (Figure 4\u2014figure supplement 4B). The pseudo-Wilson scaling approach (C115) is described in detail with mathematical formulation. These improvements are integral to achieving the better results reported elsewhere.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Inclusion of negative intensity measurements (I/\u03c3(I) > -3.0 instead of > 0.5) slightly improved merging and refinement statistics, improved the L-test, and lowered R-values for observed XFEL data. The effect was much smaller for simulated XFEL data, likely because simulated data contained fewer negative intensities (4.1% vs. 15.8%). Omitting high- or low-resolution data had small deleterious effects, suggesting intensity measurements are of similar quality across resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C134 are well-supported by data in Table 1 (columns A, D, G) and Figure 4\u2014figure supplement 2. The differential effect on observed vs. simulated data (C132-C134) is appropriately explained by the different fractions of negative intensities. The inference about data quality across resolutions (C129) is reasonable based on the small effects of resolution truncation (C128).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C109",
+      "C110",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The XFEL data processing workflow involved indexing and integrating 789 images from 148 crystals using cctbx.xfel with grid search optimization, clustering into crystal forms using hierarchical clustering (identifying 362 images in the 'long unit cell' form), and post-refinement with PRIME over 10 cycles. The final merged dataset included 313 images with 97.8% completeness, 6.1 multiplicity, and reasonable merging statistics to 3.5 \u00c5 resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C47, C70-C73, C109-C110, and C116-C120 describe the data processing workflow and results. The workflow is clearly documented in Figure 4, and the statistics are presented in Table 1A. The convergence behavior during post-refinement is shown in Figure 5\u2014figure supplement 1. All claims are well-supported by the presented data and methods descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "A synchrotron dataset was collected from a crystal in the same 'long unit cell' form as the XFEL data, using shutterless continuous rotation at the NE-CAT beamline. The best crystal from 80 screened yielded data to 4.1 \u00c5 resolution from 450 images. In contrast, XFEL data from 148 crystals of varying quality (resolutions ~5 \u00c5 to 2.9 \u00c5) yielded a merged dataset to 3.5 \u00c5 from only 313 images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C67-C69, C74-C77, and C135-C140 describe the synchrotron data collection and comparison to XFEL. The data are presented in Table 1B and compared to XFEL data in Table 1A. The comparison is appropriate as both datasets are from the same crystal form. The claims accurately describe the experimental approach and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The differences between XFEL and synchrotron datasets may be due to radiation damage, batch-to-batch crystal quality differences, crystal-to-crystal variability, data collection strategy differences, or a combination of these factors. Further studies are required to determine whether XFELs can improve upon synchrotron diffraction data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 appropriately acknowledge multiple possible explanations for observed differences and the need for future work. These are speculative statements (C86-C90) that cannot be definitively evaluated from the current data. The call for further studies (C91) is appropriate given the uncertainties. This represents honest scientific uncertainty rather than a flaw in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Further improvements in modeling XFEL diffraction data properties (such as pulse-to-pulse SASE spectrum variation) and different modes of XFEL beam generation should further improve XFEL data statistics and ultimately approach those of synchrotron crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C96 are forward-looking statements about expected future improvements, supported by citations to relevant work. While the reasoning is sound, these are predictions that cannot be evaluated from the current data. The claims appropriately use tentative language ('should', 'expect') and are supported by citations to relevant technical approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The methods have general applicability to XFEL diffraction data processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C30 is a broad conclusion about general applicability based on successful application to one system (Syt1-SNARE) and simulated data. While the methods appear robust, demonstrating 'general applicability' would require testing on multiple diverse systems with different characteristics. The claim is reasonable but not fully demonstrated by the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "XFELs reduce radiation damage effects and extend limiting resolution, but present challenges for data processing. XFEL pulses are short enough to outrun radiation damage, but crystals are stationary during exposure (complicating lattice determination), pulses destroy crystals (limiting to single images), and SASE beam properties cause significant image-to-image variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11 describe established knowledge about XFEL properties and challenges. These are well-established facts in the field, supported by the cited literature. The claims provide appropriate context for understanding the methodological advances presented in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C64"
+    ],
+    "result": "Prior work established post-refinement methods for XFEL data (including PRIME) and applied them to crystals of known structure and to the previously unknown Syt1-SNARE structure at 3.5 \u00c5 resolution. Previous test cases with high-resolution data from known structures were not challenging enough to fully test XFEL processing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C13-C17, C20-C21, and C64 accurately describe prior work, all supported by appropriate citations. The characterization of prior test cases as 'not challenging enough' (C21) is a reasonable inference that motivates the current work. These claims provide appropriate context and attribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C24",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The Syt1-SNARE complex crystallized in two indistinguishable forms ('long' and 'short' unit cell) as large plates (25\u00d7250\u00d7500 \u03bcm\u00b3) over 1-3 months. XFEL data were collected at LCLS-XPP using a 30 \u03bcm beam with 40 fs pulses in SASE mode, screening 148 crystals and yielding 789 usable images. The challenging nature of this dataset (two crystal forms, ~3.5 \u00c5 resolution) required methodological improvements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C22-C24, and C97-C104 describe the experimental system and data collection. These are straightforward descriptions of experimental conditions and observations, well-documented in the methods and results. The characterization of the dataset as challenging (C24) is supported by the specific difficulties described (C22-C23).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Structure determination used molecular replacement with Phaser using known SNARE and Syt1 domain structures as search models, followed by iterative refinement with CNS (using DEN restraints, grouped ADPs, and NCS restraints) and phenix.refine (using NCS restraints, secondary structure restraints, and individual ADP refinement). Composite omit maps were generated using simulated annealing to reduce model bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C152 describe standard crystallographic structure determination and refinement methods. The approaches are well-established, appropriately cited, and clearly described. The use of composite omit maps (C150-C152) to address potential model bias is a strength of the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Data and coordinates have been deposited in public repositories: XFEL and synchrotron data and models in the PDB (IDs 5KJ7 and 5KJ8), simulated XFEL data as Source Data files, and raw XFEL images will be deposited in the SBGrid repository.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 describe data availability. The PDB depositions can be verified, and the commitment to deposit raw images is stated. This represents appropriate data sharing practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C26"
+    ],
+    "result": "Processing simulated XFEL diffraction images revealed that the methods yield accurate data and atomic models, verifying the accuracy of the improved methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C26 are high-level summary statements supported by the detailed simulation results (C53-C59). These claims accurately summarize the validation approach and conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "Early XFEL diffraction datasets were processed exclusively using 'Monte Carlo' summation methods, which required large numbers of diffraction images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 describes historical context about early XFEL data processing, supported by citation to Kirian et al., 2010. This provides appropriate background for understanding the motivation for post-refinement approaches.",
+    "result_type": "MINOR"
+  }
+]

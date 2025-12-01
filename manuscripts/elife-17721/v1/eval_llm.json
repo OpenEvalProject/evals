@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A genetic screen identified ERAD factors (sel-1, sel-9, sel-11), the peptide N-glycanase png-1, and the aspartic protease ddi-1 as required for SKN-1 activation in response to proteasome dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C37 describe a well-designed EMS mutagenesis screen that isolated multiple independent alleles of genes encoding ERAD components and DDI-1. The identification of multiple alleles for several genes (3 sel-1 alleles, 6 ddi-1 alleles) provides strong genetic evidence. The functional connections between these genes are supported by established knowledge about ERAD pathway components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ERAD factors and DDI-1 are required for transcriptional upregulation of proteasome subunits (rpt-3::gfp) and survival during proteasome dysfunction induced by RNAi or bortezomib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by multiple complementary assays shown in Figure 1: fluorescence microscopy showing defective rpt-3::gfp activation, bortezomib sensitivity assays, and synthetic lethality with rpn-10(RNAi). The genetic epistasis analysis (C45) provides additional support for these genes acting in the same pathway. Multiple independent alleles were tested for key genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SKN-1A, an ER-associated isoform containing a transmembrane domain, is specifically required for responses to proteasome dysfunction, while other SKN-1 isoforms are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C61 are supported by CRISPR-generated isoform-specific mutations that specifically disrupt SKN-1A while leaving other isoforms intact. The phenotypic analysis is comprehensive, showing defects in rpt-3::gfp activation (Figure 2c,d) and larval lethality upon proteasome disruption (Figure 2e,h). The specificity of the requirement is demonstrated by the failure of other isoforms to compensate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SKN-1A::GFP fusion proteins stabilize and localize to the nucleus upon proteasome disruption, and are sufficient to rescue proteasome dysfunction phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 are supported by microscopy data (Figure 2f) showing nuclear localization and rescue experiments (Figure 3) demonstrating functional complementation. The rescue of both the maternal effect lethal phenotype and proteasome disruption sensitivity provides strong evidence for functionality. However, the unexplained higher accumulation of the \u0394DBD construct (C63) suggests some aspects of regulation are not fully understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "ERAD factors constitutively target SKN-1A for proteasomal degradation, and are required for its release from the ER and nuclear localization during proteasome dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are supported by Western blot data (Figure 3a) showing accumulation of SKN-1A in ERAD mutants even without proteasome inhibition, and microscopy data (Figure 3b) showing defective nuclear localization in sel-1 and sel-11 mutants. The genetic epistasis data (C70-C72) further supports ERAD acting through SKN-1A. The inference about PNG-1 acting downstream of ER release (C75) is well-supported by the nuclear localization observed in png-1 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "DDI-1 expression is dramatically induced upon proteasome dysfunction, localizes to the nucleus, and this upregulation is largely mediated by SKN-1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 are supported by both transgenic GFP::DDI-1 (Figure 4a) and endogenously tagged HA::DDI-1 (Figure 4b) showing >10-fold upregulation. The dependence on SKN-1A is demonstrated by reduced upregulation in skn-1a mutants (Figure 4c, C86). The acknowledgment of potential SKN-1A-independent mechanisms (C87) is appropriately cautious given the residual upregulation observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The aspartic protease activity of DDI-1 is essential for SKN-1 activation, as demonstrated by EMS-induced mutations in the catalytic domain and CRISPR-generated active site mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 are strongly supported by multiple lines of evidence: clustering of EMS mutations in the catalytic domain (Figure 5a,b), phenotypic analysis of CRISPR-generated active site mutations (Figure 5c), and rescue experiments showing that catalytic activity but not UBL/UBA domains are required (Figure 5\u2014supplement 1). The convergence of independent mutations on the catalytic domain provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "DDI-1 is required for proteolytic cleavage of SKN-1A at a position approximately 20 kD from the N-terminus, but not for nuclear localization or constitutive degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C104 are supported by multiple Western blot experiments using both C-terminally (Figure 5f) and N-terminally (Figure 5g) tagged SKN-1A constructs. The molecular weight analysis is consistent across experiments, and the requirement for DDI-1 catalytic activity is demonstrated. The observation that nuclear localization occurs normally in ddi-1 mutants (C97, Figure 5d) is important for establishing the order of events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "DDI-1-dependent cleavage of SKN-1A occurs after ER trafficking and deglycosylation, and requires the transmembrane domain for proper processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 are supported by Western blot analysis in ERAD mutants (Figure 6a) and png-1 mutants (Figure 6b) showing incomplete processing, and by analysis of transmembrane domain deletion mutants (Figure 6c) showing no cleavage. The sequential ordering of events is logically inferred from the pattern of processing defects in different mutants. However, the inability of the \u0394TM construct to rescue (C109) is mentioned as 'data not shown', which weakens this specific claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "A model for SKN-1A activation: SKN-1A associates with the ER via its transmembrane domain, undergoes glycosylation, is released by ERAD for proteasomal degradation under normal conditions, but during proteasome dysfunction is stabilized, deglycosylated by PNG-1, localizes to the nucleus, and is cleaved by DDI-1 to produce the active form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C122 represent an integrated model (Figure 6\u2014supplement 1) that synthesizes the experimental findings. The model is well-supported by the collective data from multiple experiments. Each step is supported by specific experimental evidence: ER association (C54, C111), glycosylation (C106, C112), ERAD-mediated degradation (C73, C113-C114), stabilization during dysfunction (C116), deglycosylation (C106, C117), nuclear localization (C62, C117), and DDI-1 cleavage (C104, C120). The model appropriately acknowledges uncertainties (e.g., location of deglycosylation, C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Following ER release, SKN-1A must be deglycosylated by PNG-1 and cleaved by DDI-1 to become fully active, with png-1 mutants showing phenotypes as severe as skn-1a mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C129 are supported by the similar severity of phenotypes between png-1 and skn-1a mutants in bortezomib sensitivity (Figures 1b, 2h) and synthetic lethality with rpn-10(RNAi) (Figures 1b, 2e). The inference that PNG-1 is essential for SKN-1A function (C128) is reasonable given the phenotypic similarities, though the caveat about potential indirect effects (C129) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "SKN-1A retains an essential developmental function in png-1 mutants, as evidenced by synthetic lethality of png-1; skn-1a double mutants, suggesting SKN-1A is important for cellular homeostasis beyond proteasome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C132 are based on the inability to generate png-1; skn-1a double mutants, which is described as unpublished data (C130). While the inference about SKN-1A retaining function in png-1 mutants is logical, the lack of presented data makes this uncertain. The supporting citation about tunicamycin sensitivity (C133) provides some context but doesn't directly validate the double mutant lethality observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "A positive feedback loop exists wherein SKN-1A upregulates DDI-1 transcription, and DDI-1 promotes SKN-1A activation, ensuring a robust response to proteasome inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C143 are supported by the dramatic induction of DDI-1 (Figure 4), the presence of SKN-1 binding sites in the ddi-1 promoter (C139, cited), and the defective DDI-1 upregulation in skn-1a mutants (C141, Figure 4c). The inference of a positive feedback loop (C142) is logical given the mutual dependence. However, the functional significance of this feedback (C143) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "DDI-1 is likely the direct protease responsible for SKN-1A cleavage, though the possibility of an intermediate protease cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C149 are supported by the requirement for DDI-1 catalytic activity (Figures 5c, 5g) and the cleavage site mapping (Figures 5f, 5g). The inference that DDI-1 is the direct protease (C146) is reasonable given the catalytic requirement, though the caveat about a potential intermediate protease (C147) is appropriately noted. The genetic screen data showing only ddi-1 protease alleles (C148) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "SKN-1A cleavage by DDI-1 occurs after nuclear localization, likely in the nucleus, and activates SKN-1A by mechanisms other than enabling nuclear entry, possibly by removing inhibitory N-terminal domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C157 are supported by the observation that uncleaved SKN-1A localizes to the nucleus in ddi-1 mutants (Figure 5d, C150). The speculation about nuclear cleavage (C153) is reasonable given DDI-1's nuclear localization (Figure 4a, C152), though this remains speculative. The proposed mechanism of removing inhibitory domains (C156-C157) is speculative but reasonable given that cleavage is not required for localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "ER trafficking is essential for DDI-1-dependent activation of SKN-1A, and ER-association promotes SKN-1A activation by additional mechanisms beyond DDI-1 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C161 are supported by the transmembrane domain deletion experiments (Figure 6c) showing no cleavage and no degradation. The inference that ER trafficking is required for subsequent activation (C159) is well-supported. The observation that skn-1a mutants are more sensitive than ddi-1 mutants (C160) supports the conclusion that ER-association has additional functions (C161), though the specific mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The DDI-1/SKN-1A pathway is conserved in mammals, with evidence suggesting human DDI2 processes Nrf1, despite lack of primary sequence conservation at the cleavage site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C177 are supported by citations to prior work on mammalian Nrf1 (C170) and a large-scale screen identifying DDI2 and Nrf1 as hits for proteasome inhibitor sensitivity (C171-C172). The inference about conservation (C177) is reasonable despite the lack of cleavage site sequence conservation (C174), which is explained by potential co-evolution (C176). The evidence is primarily from cited work rather than the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The pbs-5(mg502) mutation is a 122bp deletion in the promoter of the CEOP1752 operon that causes constitutive SKN-1-dependent activation of rpt-3::gfp without affecting viability or fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C188-C190 describe the characterization of the pbs-5(mg502) allele used as the basis for the genetic screen. The molecular lesion is defined by sequencing (C188), and the phenotype is well-characterized (C26, C190, Figure 1\u2014supplement 1). This provides a solid foundation for the genetic screen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "C. elegans DDI-1 lacks conserved UBL and UBA domains found in yeast Ddi1, and DDI-1's effect on proteasome disruption is entirely dependent on SKN-1A rather than general proteasome function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C166-C169 are supported by sequence analysis showing lack of UBL/UBA domains and rescue experiments (Figure 5\u2014supplement 1) showing that N- and C-terminal truncations rescue while active site mutations do not. The genetic epistasis data (C169, Figure 2h) showing that ddi-1 effects are SKN-1A-dependent supports the conclusion that DDI-1 acts specifically through SKN-1A rather than having general proteasome functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "NGLY1 deficiency in humans likely involves defects in Nrf1 processing and proteasome homeostasis, suggesting that genetic screens in png-1 mutants could identify therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 connect the findings to human disease. While the connection to NGLY1 deficiency is logical given the conservation of PNG-1/NGLY1 function (C134-C135), the inference about contribution to disease symptoms (C136) is speculative. The proposal for therapeutic screening (C137) is a reasonable suggestion for future work but is not supported by data in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The SKN-1A processing pathway links SKN-1/Nrf to proteasome function and longevity, with implications for aging and age-related disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C181 connect the findings to broader biological contexts. The conclusion that SKN-1A processing is essential during proteasome disruption (C178) is well-supported by the developmental arrest phenotypes. The connections to aging and longevity (C179-C181) are supported by citations to prior work, making this a reasonable synthesis of the current findings with existing knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "DDI-1 and the SKN-1A/Nrf1 processing pathway represent potential therapeutic targets for improving proteasome inhibitor cancer therapy or mitigating proteasome dysfunction in aging and protein aggregation disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C182-C187 discuss therapeutic implications. While the background on proteasome inhibitors in cancer treatment (C182) and Nrf1's role in resistance (C183) is supported by citations, the proposals for targeting DDI-1 therapeutically (C185-C187) are speculative and not supported by data in this manuscript. These represent reasonable suggestions for future work but are not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "ER modifications such as glycosylation may tailor SKN-1A activity specifically for proteasome dysfunction responses, distinguishing it from responses to other stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C163 propose that ER modifications provide specificity to SKN-1A's response to proteasome dysfunction versus other stimuli. While the observation that SKN-1 responds to multiple stimuli (C162) is cited, the speculation about glycosylation providing specificity (C163) is not directly tested. This represents an interesting hypothesis for future investigation but lacks experimental support in the current work.",
+    "result_type": "MINOR"
+  }
+]

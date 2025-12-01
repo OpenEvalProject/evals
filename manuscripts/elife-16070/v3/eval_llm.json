@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C49",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study recruited 18 participants (13 female, ages 18-31, mean 22 years) from Princeton University. Participants were screened for neurological/psychiatric disorders, provided informed consent per IRB regulations, and were compensated $20/hr for scanning and $12/hr for behavioral sessions. Sample size was justified based on prior fMRI studies using naturalistic stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C49, C82-C87 provide comprehensive documentation of participant demographics, recruitment, screening, ethical compliance, and compensation. Claim C85 provides reasonable justification for sample size based on comparable prior studies, though no formal power analysis was conducted. All methodological details are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C51",
+      "C52"
+    ],
+    "result": "Participants successfully distinguished 6-minute intervals (M=5.70 min) from 2-minute intervals (M=3.69 min) with significant accuracy (t(17)=5.20, p<10^-4). Accuracy improved for high-confidence intervals (difference score M=2.43 vs M=2.01 for all intervals, t(17)=2.33, p=0.0324). The experimental design included 24 two-minute and 19 six-minute intervals, and debriefing confirmed participants were unaware of the fixed durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C51, C52 demonstrate that participants could perform retrospective duration estimation above chance with appropriate statistical support. The confidence rating analysis (C8) validates the filtering approach used in subsequent fMRI analyses. Debriefing data (C52) confirms the retrospective nature of the task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Duration estimates showed moderate reliability across participants, with between-group correlations of r=0.64 (SD=0.09) for 2-minute intervals and r=0.54 (SD=0.15) for 6-minute intervals when participants were randomly split into two groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 demonstrates reasonable inter-subject reliability using an appropriate split-half procedure with 1000 iterations. The moderate correlations suggest consistent but not identical strategies across participants, which is expected for subjective duration judgments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C57",
+      "C91",
+      "C92"
+    ],
+    "result": "A control experiment with 17 na\u00efve participants (who never heard the story) showed they could distinguish 6-min from 2-min intervals (t(16)=2.62, p=0.019), but were significantly less accurate than original participants (difference score M=0.59 vs M=2.01, t(26.86)=-3.22, p<0.005). Na\u00efve participants reported basing estimates on perceptual/semantic similarity between clips. This demonstrates that memory of the story enabled significantly more accurate duration estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C57, C91, C92 provide strong evidence that duration estimates depend on memory for the story context, not just clip similarity. The control experiment is well-designed with appropriate statistical comparisons. Debriefing data (C92) supports the interpretation that na\u00efve participants used different strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C59",
+      "C90"
+    ],
+    "result": "The number of event boundaries (identified by 9 separate participants) significantly correlated with duration estimates from original participants (r=0.49, 95% CI [0.27, 0.57]) but not with na\u00efve participants' estimates (r=0.09, 95% CI [-0.05, 0.21]). This suggests event boundaries carry contextual information not contained in clips alone, and original participants' estimates were influenced by memory of this contextual information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C59, C90 provide converging evidence that duration estimates relate to contextual change (operationalized as event boundaries). The differential correlation between original and na\u00efve participants strengthens the interpretation. The use of a separate group for event boundary identification (C90) is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C4"
+    ],
+    "result": "Within-participant ROI analysis revealed that neural pattern distance at encoding correlated with subsequent duration estimates in the right entorhinal cortex and right pars orbitalis (q<0.05 FDR). Extending to whole-brain cortical ROIs identified an additional effect in left caudal ACC (q<0.1 FDR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C4 report the primary fMRI findings with appropriate multiple comparisons correction (FDR). The phase randomization procedure described in the methods provides a rigorous statistical framework accounting for temporal autocorrelation in fMRI data. The right entorhinal cortex finding is particularly robust, surviving both a priori and whole-brain correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C60"
+    ],
+    "result": "Within-interval ROI analysis (holding clip content constant across participants) showed the right entorhinal cortex, right amygdala, and right insula correlated with duration estimates (q<0.05 FDR). Critically, the right entorhinal cortex showed similar effect sizes in both within-interval (Cohen's d=0.83) and within-participant (Cohen's d=0.79) analyses, indicating effects are not driven solely by perceptual/semantic clip differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C60 provide crucial evidence that neural pattern distance reflects abstract contextual change rather than just stimulus features. The within-interval analysis is a strong control, and the comparable effect sizes (C17, C60) support the contextual interpretation. This addresses a key alternative explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C5"
+    ],
+    "result": "Within-participant whole-brain searchlight analysis identified a significant cluster in the right anterior temporal lobe (p=0.034 FWE-corrected, MNI coordinates [45.6, -5.53, -21.7], 572 voxels) where pattern change correlated with duration estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C5 report searchlight results with appropriate FWE correction and precise anatomical localization. The convergence with ROI findings strengthens confidence in the right anterior temporal lobe involvement. The searchlight approach complements the anatomically-defined ROI analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C73",
+      "C74"
+    ],
+    "result": "Within-interval whole-brain searchlight analysis found a significant cluster in the right anterior temporal lobe (p=0.019 FWE-corrected, MNI coordinates [32.1, -10.2, -18.7], 535 voxels). This cluster was located more medially than the within-participant cluster and overlapped with the right entorhinal cortex ROI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C73, C74 demonstrate convergence between searchlight and ROI approaches. The spatial overlap with the right entorhinal cortex ROI (C74) provides anatomical validation. The medial location of the within-interval cluster is consistent with MTL involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C61"
+    ],
+    "result": "Mixed-effects modeling showed that neural pattern distance in the right entorhinal cortex and left caudal ACC predicted duration estimates even when controlling for participant random effects, interval random effects, and na\u00efve duration estimates (confidence intervals did not include zero). Including na\u00efve estimates as a covariate did not significantly weaken these relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C63, C61 demonstrate sophisticated statistical modeling that addresses multiple confounds simultaneously. The use of hierarchical models with random effects is appropriate for the nested data structure. The robustness to controlling for na\u00efve estimates (C63) strengthens the contextual interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C64",
+      "C65",
+      "C68"
+    ],
+    "result": "The right entorhinal cortex exhibited some of the slowest pattern change in the brain, ranking 3rd, 4th, and 1st across three analysis procedures (multivariate, multivariate controlling for ROI size, and univariate). Pattern change was significantly slower than in auditory/language processing regions (right transverse temporal cortex, right banks of superior temporal sulcus, right superior temporal cortex; p<0.005 across procedures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C64, C65, C68 provide converging evidence from multiple analysis approaches that the right entorhinal cortex represents slowly-changing information. The statistical comparisons with auditory regions are appropriate controls. The consistency across three procedures (including controlling for ROI size) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The left caudal ACC ranked 66th, 67th, and 46th out of 84 regions for speed of pattern change across three procedures, changing only slightly more slowly than primary auditory cortex. This suggests it does not exhibit slow signal change relative to the rest of the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C67 demonstrate that the left caudal ACC finding has a different mechanistic basis than the right entorhinal cortex. The ranking analysis is appropriate and suggests the ACC may represent faster-changing contextual signals or different computational processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Duration estimates systematically decreased with story position (r=-0.40, t(16)=-7.59, p<0.00001). This may reflect the positive time-order effect (earlier durations judged longer) or the strong negative correlation (r=-0.77) between event boundaries and story position in this particular story.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C79, C80, C81 document a systematic bias in duration estimates. The authors appropriately consider multiple explanations (positive time-order effect vs. story-specific event boundary distribution). However, the inability to definitively distinguish these explanations is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Pattern change in the right entorhinal cortex, right pars orbitalis, left caudal ACC, right amygdala, and right insula did not consistently correlate with story position (all p>0.05). This suggests the relationship between duration estimates and pattern dissimilarity was not driven by shared effects of story position, but rather by fine-grained variations in estimated durations of nearby intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C70, C71 address the concern that neural effects might simply reflect the systematic decrease in duration estimates over time. The lack of correlation with story position strengthens the interpretation that these regions track local contextual changes rather than global temporal position.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Analysis of unfiltered data showed that almost all brain patterns (including CSF and white matter) changed more at the end than the beginning of the story (q<0.05 FDR), suggesting scanner drift or motion artifacts cause spurious increases in pattern change over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 identifies an important methodological artifact that justifies the high-pass filtering approach. The presence of this artifact in CSF and white matter confirms it is non-neural. This validates the authors' conservative preprocessing choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Participants accurately remembered temporal positions of clips (r=0.885, p<10^-21). Encoding activity in left dorsolateral and medial prefrontal cortex (including dorsomedial PFC and ACC) correlated with subsequent accuracy in timeline placement (p=0.008 FWE-corrected), replicating Jenkins and Ranganath (2010).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24 demonstrate excellent temporal memory and successfully replicate prior findings. The extremely high correlation (C23) validates that participants had strong memory for the story structure. The prefrontal findings (C24) extend prior work to naturalistic narratives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C98",
+      "C99"
+    ],
+    "result": "A high-pass filter cutoff of 480s was selected as the gentlest filter that reduced inter-subject correlations in ventricles and CSF below those in grey matter. Six-minute intervals were excluded from fMRI analysis because neural pattern change at this timescale could not be dissociated from low-frequency scanner noise. The residualization procedure was applied after high-pass filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C98, C99 document critical preprocessing decisions with clear rationale. The systematic evaluation of filter cutoffs using CSF/white matter as negative controls is methodologically sound. The exclusion of 6-minute intervals (C55) is a significant limitation but is appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Differences between ROI and searchlight results likely reflect differences in shapes between searchlight cubes and anatomical masks. Anatomical ROI analyses performed in native space are more suitable for small, elongated regions like entorhinal cortex and caudal ACC that are unlikely to align perfectly across participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, C77 provide reasonable methodological explanation for discrepancies between analysis approaches. The preference for anatomical ROIs in native space for small structures is well-justified based on neuroanatomical considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The findings provide convergent support for the hypothesis that retrospective time judgments are driven by 'drift' in contextual representations supported by the right entorhinal cortex and right anterior temporal lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 represents the main theoretical conclusion, which is well-supported by the convergence of: (1) behavioral evidence linking event boundaries to duration estimates, (2) neural evidence from multiple analysis approaches (ROI, searchlight, mixed-effects models), (3) control analyses ruling out perceptual confounds, and (4) characterization of slow pattern change in key regions. The interpretation is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C78"
+    ],
+    "result": "The authors situate their findings within extensive prior literature on mental context, temporal memory, and the role of MTL and prefrontal cortex in representing contextual information. They cite relevant animal studies, human neuroimaging studies, and theoretical frameworks supporting the contextual drift hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C48, C78 provide comprehensive literature review supporting the theoretical framework. The citations appear appropriate and accurately represent prior findings. The integration of animal and human studies, behavioral and neural evidence, strengthens the theoretical foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C53",
+      "C82",
+      "C83",
+      "C84",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The manuscript provides comprehensive methodological details including: stimulus information (25-min radio story), MRI acquisition parameters (3T Skyra, TR=1500ms, TE=28ms), preprocessing steps (FreeSurfer segmentation, MTL probabilistic atlas, residualization), analysis procedures (pattern distance calculation, phase randomization with 10,000 iterations, FDR/FWE correction), and statistical modeling (mixed-effects with Wishart priors, Box-Cox transformation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C53, C82-C84, C88-C89, C93-C96, C100-C115 provide extensive methodological documentation. The level of detail is sufficient for replication. The statistical approaches are sophisticated and appropriate (phase randomization for temporal autocorrelation, mixed-effects models for nested data, Box-Cox transformation for skewed data).",
+    "result_type": "MINOR"
+  }
+]

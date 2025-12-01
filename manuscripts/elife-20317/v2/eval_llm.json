@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study employed a hierarchical preference design where 24 participants rated items from three domains (food, music, magazines), each containing four categories of 36 items. During fMRI scanning, participants made binary choices between items from two categories within the same domain. Prior preference (DVCAT) was quantified as the difference between mean likeability ratings of the two categories and was validated through post-scan debriefing showing 84\u00b13% agreement and significant correlation with confidence ratings (r=0.44\u00b10.06, p=5.10\u207b\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C33 describe the experimental design and validation of the prior preference measure. The sample size (n=24), task structure, and validation metrics are clearly stated with appropriate statistical support. The correlation between DVCAT and confidence ratings provides convergent validity for the preference measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Behavioral analysis revealed a significant choice bias toward the default option. Logistic regression showed a positive constant (\u03b2=0.68\u00b10.13, p=2.10\u207b\u2075) indicating bias beyond item-level value differences. When DVCAT was included, the constant reduced (\u03b2=0.31\u00b10.16, p=0.06) while DVCAT itself was significant (\u03b2=0.021\u00b10.006, p=2.10\u207b\u00b3). Even when option values were matched (DVIT=0), choice rate favored the default by 15.7\u00b11.7%. Past choices showed no significant effect, and the bias was present from the first trial in each block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 establish the choice bias with appropriate statistical tests and controls. The reduction in the constant when DVCAT is included, combined with DVCAT's significant effect, demonstrates that prior preference drives the bias. The analysis of first-trial choices and past-choice effects appropriately rules out learning/sequential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Response time analysis revealed both expected and novel effects. Unsigned decision value significantly affected RT (t(23)=-6.8, p=6.10\u207b\u2076), with longer RTs for closer values. Critically, choice type also significantly affected RT (t(23)=-5.47, p=1.10\u207b\u2075), with default choices being 357\u00b150 ms faster. There was no interaction between these factors (t(23)=0.59, p=0.56). Choice and RT biases were significantly correlated across blocks (r=0.24\u00b10.06, t(23)=3.78, p=1.10\u207b\u00b3), suggesting a common mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 present RT analysis with appropriate statistical tests. The lack of interaction between decision value and choice type is important for interpreting the RT bias as additive. The correlation between choice and RT biases across blocks provides evidence for a shared computational mechanism, motivating the DDM analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Drift diffusion modeling revealed that choice and RT biases were best explained by a shift in the starting point proportional to prior preference. Family-level model comparison strongly favored starting point models over drift rate models (xp=0.997). Within the starting point family, the model with S proportional to DVCAT was most plausible (xp=0.920). Direct correlation between the 12-free-S model estimates and DVCAT was significant (r=0.35\u00b10.07, t(23)=5.12, p=3.10\u207b\u2075), confirming that prior preference shifts the starting point and drives both biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present a rigorous model comparison using Bayesian model selection. The hierarchical comparison (family-level then within-family) is appropriate. The correlation between free starting point estimates and DVCAT provides independent validation. The conclusion that starting point shift explains both biases is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Eye-tracking experiment (n=23) replicated all behavioral findings: choice bias (15.5\u00b11.7%, t(22)=5.12, p=4.10\u207b\u2074), RT bias (341\u00b142 ms, t(22)=-6.69, p=1.10\u207b\u2076), and their correlation (r=0.22\u00b10.06, t(22)=3.87, p=8.10\u207b\u2074). Fixation patterns showed expected attentional effects: last-fixated items were more likely chosen (t(22)=-11.68, p=7.10\u207b\u00b9\u00b9), as were most-fixated items (t(22)=-4.71, p=1.10\u207b\u2074). However, these fixation effects could not account for the default bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 demonstrate successful replication in an independent sample with eye-tracking. The replication of behavioral effects strengthens confidence in the findings. The observation that fixation patterns show expected effects but don't explain the default bias is critical for ruling out attentional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Fixation duration analysis showed that chosen options were fixated longer than unchosen options, but this was independent of default status. ANOVA revealed a significant main effect of chosen vs. unchosen (F(1,88)=4.03, p=0.048) but no main effect of default vs. alternative (F(1,88)=0.43, p=0.41), with a significant interaction (F(1,88)=17.45, p=1.10\u207b\u2074). Model comparison strongly favored (xp=0.999) a GLM with unsigned decision value and choice over models including prior preference as a predictor of fixation duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 provide strong evidence that fixation patterns are driven by choice outcome rather than prior preference. The ANOVA design appropriately tests the relevant factors, and the model comparison provides additional quantitative support. This effectively rules out the attentional DDM as the sole explanation for the default bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Combined modeling showed that the asDDM (incorporating both starting point shift proportional to DVCAT and attentional discounting \u03b8) was most plausible (xp=0.95). The weight on DVCAT was significantly above zero (0.02\u00b10.003, t(22)=7.85, p=1.10\u207b\u2076) and \u03b8 was significantly below one (0.94\u00b10.03, t(22)=2.14, p=0.04). While fixation patterns improved model fit, only prior preference (via starting point) could explain the default bias, as the default option was not fixated more than the alternative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 demonstrate that both mechanisms contribute to choice behavior but only starting point shift explains the default bias. The model comparison is rigorous, and the statistical tests on parameters are appropriate. The conclusion that gaze patterns cannot produce the default bias is logically sound given equal fixation durations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "fMRI analysis of baseline activity (2 seconds before option display) revealed that DVCAT was encoded in vmPFC, ventral striatum, and left hippocampus (p<0.005 uncorrected). Only ventral striatum and hippocampus survived whole-brain FWE correction; vmPFC survived small-volume correction (p=6.10\u207b\u00b3) within an independently-defined ROI. The difference between high and low DVCAT in vmPFC was maintained during the decision process and progressively vanished at trial end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 report baseline fMRI effects with appropriate statistical thresholds and corrections. The use of an independent ROI for small-volume correction is methodologically sound. However, the vmPFC finding is weaker than ventral striatum/hippocampus as it required small-volume correction. The temporal dynamics description is qualitative but supported by the time-course figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Evoked response analysis using GLM2 revealed a critical dissociation: VIT(def)-VIT(alt) contrast showed significant activation in vmPFC and ventral striatum (surviving whole-brain FWE correction), specific to the valuation system. In contrast, VIT(ch)-VIT(unch) contrast activated vmPFC, ventral striatum, posterior cingulate, but also non-valuation regions like intra-parietal lobules. The opposite contrast VIT(unch)-VIT(ch) activated dACC and anterior insula. No regions showed VIT(alt)-VIT(def) effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 demonstrate that pre-choice framing (default vs. alternative) is more specific to the valuation system than post-choice framing (chosen vs. unchosen). The use of GLM2 with orthogonal regressors is appropriate for disambiguating these frames. The whole-brain FWE correction for the key contrast strengthens the conclusion. The specificity to vmPFC/ventral striatum is important for the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Time-resolved analysis showed VIT(def) was significantly encoded in vmPFC for both choice types (default chosen: \u03b2=6.10\u207b\u00b3\u00b12.10\u207b\u00b3, p=3.10\u207b\u00b3; default unchosen: \u03b2=6.10\u207b\u00b3\u00b13.10\u207b\u00b3, p=0.01) at 4 seconds post-display. Bayesian model selection favored pre-choice family over post-choice (xp=0.92), and within pre-choice family, VIT(def) alone over DVIT (xp=0.94). In contrast, dACC showed post-choice framing (xp=0.99) with DVIT preferred over VIT(ch) alone (xp=0.9996). Previous trial values did not affect baseline activity beyond shared variance with DVCAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 provide strong evidence for pre-choice framing in vmPFC using model comparison and time-resolved analysis. The finding that VIT(def) is encoded regardless of choice is critical. The contrast with dACC showing post-choice framing is informative. The control for previous trial effects is appropriate. The model comparison approach is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Additional analysis revealed that vmPFC encodes both the sum and difference of option values. Regression estimates from an independent vmPFC ROI showed significant effects for both difference (\u03b2=0.10\u00b10.04, t(23)=2.74, p=0.01) and sum (\u03b2=0.14\u00b10.06, t(23)=2.47, p=0.02) when orthogonalized. Model comparison strongly favored (xp=0.993) the GLM with both sum and difference over VIT(def) alone, suggesting vmPFC signals both option values on top of decision value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide an important refinement to the interpretation. The orthogonalization of sum and difference is methodologically appropriate for testing this hypothesis. The model comparison provides strong quantitative support. This explains why only VIT(def) appears significant in simpler models (VIT(alt) cancels out). The interpretation is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study demonstrates that prior preferences shape decision-making through two mechanisms: (1) baseline vmPFC activity shifts proportionally to prior preference strength, paralleling the starting point shift in DDM that accounts for choice bias; (2) evoked vmPFC activity signals default option value, framing choices as default vs. alternative comparisons. Items from preferred categories qualified as defaults (chosen faster and more frequently). The bias persists even when item-level values are matched, potentially causing preference reversals, representing suboptimal but resource-efficient decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 synthesize the main findings into a coherent interpretation. The parallel between neural baseline shift and DDM starting point is well-supported by the data. The characterization of the bias as suboptimal but potentially resource-efficient is reasonable speculation grounded in the findings. The validation of default option criteria (faster, more frequent) is empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The default bias differs from optimal prior use in perceptual decision-making, where biases only occur with invalid cues. However, like perceptual studies, prior information is incorporated in the starting point. The attentional DDM is compatible with the data but cannot alone explain the default bias. The vmPFC baseline sensitivity to context aligns with prior work, but dissociates from perceptual decision studies where cueing affects starting point without vmPFC involvement, suggesting vmPFC specifically biases value-based (not perceptual) decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 appropriately contextualize findings within existing literature. The distinction from optimal perceptual decision-making is important and well-supported by citations. The dissociation between value-based and perceptual decision-making regarding vmPFC involvement is a reasonable inference from comparing studies, though it relies on cross-study comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The temporal dynamics of vmPFC activity show that baseline shift is maintained throughout the decision process and adds to evoked activity (canonical HRF). Both baseline and evoked activity scale with default value at category and item levels, respectively, jointly favoring the default. However, the neural dynamics are incompatible with vmPFC implementing DDM directly (no ramping/accumulation signal) or sending output to a distant accumulator (starting point shift shouldn't integrate over time).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 provide important constraints on mechanistic interpretation. The observation that baseline shift is maintained (not integrated) is supported by the time-course data. The argument against vmPFC implementing DDM is logical given the absence of ramping signals. However, the inference about what neural dynamics 'should' look like involves assumptions about neural implementation of computational models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Pre-choice framing may be general for vmPFC value coding, as most studies find correlations with chosen option value, which partially confounds with default options. However, Boorman et al. (2013) found opposite results (post-choice framing). Confidence/choice easiness also integrates in vmPFC. Pre-choice framing could reconcile with attentional theories if subjects set defaults on-the-fly based on attended options. dACC and anterior insula showed post-choice framing, potentially relating to choice difficulty or value of shifting from default policy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 discuss generalizability and reconciliation with prior literature. The speculation about generality is reasonable but requires further testing. The acknowledgment of contradictory findings (Boorman et al.) is appropriate but not fully resolved. The proposed reconciliation with attentional theories is speculative. The dACC/insula interpretation has multiple possible explanations that cannot be distinguished with current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The interpretation that vmPFC encodes both option values on top of decision value (causing VIT(alt) to cancel and VIT(def) to double) is consistent with automatic value encoding of attended items and decision value computation during choice. This would explain why many studies report correlation with chosen value alone (unchosen cancels out). However, techniques with better spatial resolution than fMRI are needed to determine if different value representations rely on distinct neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 present a parsimonious interpretation that reconciles the current findings with prior literature. The mathematical logic (cancellation/doubling) is sound. The consistency with automatic valuation and decision value computation is reasonable. Claim C120 appropriately acknowledges the spatial resolution limitation of fMRI for distinguishing neuronal populations. The interpretation is well-reasoned but requires future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study concludes that when decision-makers have prior preferences, the brain valuation system compares default vs. alternative options, with prior and novel information in baseline and evoked activity. This framing may solve natural decision problems efficiently but biases choices toward defaults. The generality of default vs. alternative framing remains to be established. Identifying trial-wise/subject-wise default policies may be essential for understanding value-based decisions. vmPFC provides decision value (also in ventral striatum), but how this drives selection remains unexplained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 provide appropriate conclusions and acknowledge limitations. The main conclusions are well-supported by the data. The speculation about evolutionary/functional significance is reasonable. The acknowledgment that generality remains to be established is appropriate scientific caution. The statement that selection mechanisms remain unexplained is an honest assessment of what the study does and doesn't address.",
+    "result_type": "MAJOR"
+  }
+]

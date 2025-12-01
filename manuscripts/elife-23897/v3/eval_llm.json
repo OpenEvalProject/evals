@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C119",
+      "C120"
+    ],
+    "result": "\u03b2C1 specifically interacts with NbATG8f and other NbATG8 isoforms through an 11-amino acid motif (residues 30-40), and the V32 residue is essential for this interaction. The interaction occurs in yeast, in vitro, and in plant cells, localizing to both cytoplasm and vacuoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (yeast two-hybrid C1, GST pull-down C2-C3, co-IP C4-C5, BiFC C7-C8, confocal microscopy C9-C11) consistently demonstrate the \u03b2C1-NbATG8f interaction and show that the V32A mutation abolishes it. The mapping of the interaction motif (C6) and demonstration of interaction with multiple ATG8 isoforms (C119) provide additional supporting evidence. All data converge on the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "CLCuMuV infection induces autophagy in N. benthamiana plants, as evidenced by upregulation of ATG gene expression, increased autophagosome numbers, increased autophagic structures, and enhanced autophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary lines of evidence support autophagy induction: qRT-PCR shows increased ATG gene expression (C13), confocal microscopy quantifies increased autophagosomes (C14), TEM confirms increased autophagic structures (C15), and the Joka2 degradation assay demonstrates enhanced autophagic flux (C16-C18). These independent measurements all point to the same biological conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Autophagy functions as an antiviral mechanism against CLCuMuV. Silencing ATG5 or ATG7 enhances viral susceptibility (earlier and more severe symptoms, higher viral DNA), while activating autophagy by silencing GAPCs reduces viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The VIGS experiments are well-controlled (C20-C22, C26) and show consistent bidirectional effects: disrupting autophagy increases infection (C23-C25) while enhancing autophagy decreases infection (C27-C28). The reliance on prior work for the GAPCs-autophagy connection (C29) is appropriately cited. The convergent evidence from loss-of-function and gain-of-function manipulations strongly supports the antiviral role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The \u03b2C1-NbATG8 interaction is essential for autophagy-mediated antiviral defense. A virus carrying the \u03b2C1V32A mutation (which abolishes ATG8 binding) causes earlier and more severe symptoms with higher viral DNA accumulation compared to wild-type virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutant virus experiment (C31-C33) provides strong functional evidence linking the molecular interaction to biological outcome. The V32A mutation specifically disrupts the \u03b2C1-ATG8 interaction without other known effects, making this a well-designed test of the hypothesis. The enhanced virulence of the mutant virus logically supports the conclusion that the interaction is required for antiviral defense (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "\u03b2C1 is targeted by autophagy for degradation in an ATG8-interaction-dependent manner. In autophagy-deficient plants, \u03b2C1 accumulates in the cytoplasm rather than vacuoles and shows increased protein levels without changes in mRNA, while the \u03b2C1V32A mutant is not affected by autophagy status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The combination of localization data (C35-C37), protein accumulation data (C38-C42), and mRNA data (C43) provides strong evidence for autophagy-mediated degradation. The specificity is demonstrated by the lack of effect on \u03b2C1V32A (which cannot bind ATG8) and on control proteins (C39, C41-C42). The increased protein without increased mRNA in autophagy-deficient plants is a hallmark of reduced degradation rather than increased synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Autophagy functions as a general antiviral mechanism against multiple geminiviruses (TYLCV and TYLCCNV in addition to CLCuMuV), with consistent effects of ATG gene silencing increasing susceptibility and GAPCs silencing enhancing resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The extension to two additional geminiviruses (C46-C53) with consistent results strengthens the generality of the findings. The bidirectional effects (loss and gain of autophagy function) are demonstrated for both viruses, providing robust support for the conclusion that this is a conserved antiviral mechanism (C54). The experimental design parallels the CLCuMuV experiments, ensuring comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Joka2-mediated selective autophagy is not involved in antiviral defense against CLCuMuV, as silencing Joka2 does not affect viral infection despite successful gene knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is well-controlled with confirmation of successful Joka2 silencing (C55) and clear demonstration of no effect on infection (C56). This appropriately distinguishes between general autophagy (which is antiviral) and Joka2-mediated selective autophagy (which is not involved), addressing a specific mechanistic question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The ATG8-binding motif in \u03b2C1 is an 11-amino acid sequence (LVSTKSPSLIK, residues 30-40) that differs from computationally predicted AIMs. The V32 residue within this motif is critical for interaction, and \u03b2C1 interacts with at least four NbATG8 homologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental mapping of the interaction motif (C74, C6) contradicts computational predictions (C73), which is appropriately noted. The functional importance of V32 is demonstrated through multiple assays (C75, C2-C5), and the interaction with multiple ATG8 isoforms (C76, C119) is experimentally confirmed. This represents solid molecular characterization of the interaction interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C89"
+    ],
+    "result": "This study provides the first direct evidence that autophagy functions as an antiviral mechanism in compatible plant-virus interactions, representing a novel antiviral strategy involving targeting viral proteins for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of novelty (C72) is supported by the use of specific ATG gene silencing (rather than chemical inhibitors or non-specific genes used in prior work) and demonstration of effects on viral infection. The comprehensive evidence from molecular interaction through functional consequences supports the conclusion of a novel antiviral mechanism (C89). However, the novelty claim depends on the accuracy of the literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "TYLCCNB \u03b2C1 contains a similar motif (LASTKSPALAK) to CLCuMuB \u03b2C1's ATG8-binding motif, and mutations in this motif affect TYLCCNV infection, suggesting TYLCCNB \u03b2C1 may also be targeted for autophagic degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The sequence similarity (C85) and prior functional data on the motif (C86) provide circumstantial evidence, but the conclusion that TYLCCNB \u03b2C1 is targeted for autophagic degradation (C87) is speculative. Direct experimental testing of TYLCCNB \u03b2C1 interaction with ATG8 and its autophagic degradation would be needed to support this claim. The authors appropriately present this as a possibility rather than a conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The dual role of \u03b2C1 as both a silencing suppressor and an autophagy target suggests a delicate evolutionary balance between viral pathogenesis and host immunity mechanisms, with potential benefits for both virus and host in maintaining moderate rather than extreme virulence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative evolutionary interpretations (C92-C94) based on the experimental findings. While the observation that \u03b2C1 has dual functions is supported by data (C90-C91), the evolutionary explanations are hypothetical. The general observation about plant viruses rarely killing hosts (C95) is accurate but does not directly test the proposed evolutionary scenario. These represent reasonable hypotheses for future investigation rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

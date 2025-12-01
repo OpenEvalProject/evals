@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C59"
+    ],
+    "result": "Modified swim-up sperm selection protocols significantly improved IVF outcomes in pigs compared to conventional density gradient centrifugation, with monospermy rates increasing from 17.4\u00b14.1% to 49.6\u00b14.5% and putative zygote yield increasing from 14.6\u00b10.1% to 35.2\u00b10.2%. Addition of porcine oviductal fluid (POF-LF) to swim-up media further enhanced yield compared to BSA alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide consistent quantitative data from Table 1 showing statistically significant improvements in monospermy and zygote yield with swim-up protocols. The data are internally consistent, include appropriate replicates (N=105-183), and statistical significance is indicated. C59 provides context for the importance of addressing polyspermy in pigs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C4",
+      "C75",
+      "C76"
+    ],
+    "result": "Natur-IVF blastocysts showed superior developmental quality compared to C-IVF blastocysts, with 61% more cells per blastocyst (81.8\u00b17.2 vs 49.9\u00b13.7), cell numbers similar to in vivo embryos (87.0\u00b17.2), and unique ability to reach hatching/hatched stages by day 7.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C75-C76 are supported by quantitative data in Table 2A and 2B with statistical comparisons. The cell count differences are substantial and statistically significant, and the hatching phenotype is a clear qualitative difference. However, sample sizes and statistical tests used are not fully specified in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "RNA-Seq analysis of individual blastocysts revealed that Natur-IVF embryos have gene expression patterns more similar to in vivo embryos than C-IVF embryos, with 40% fewer genes showing aberrant expression (281 vs 440 genes) and higher correlation with in vivo samples (r=0.95 vs r=0.938).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 provide comprehensive RNA-Seq quality metrics and differential expression analysis using DESeq2 with appropriate multiple testing correction (p<0.05). The PCA clustering (C28, Figure 3B) and correlation coefficients (C29) support the conclusion. However, the biological significance of the small difference in correlation coefficients (0.95 vs 0.938) is questionable, and C-IVF showed higher variability which could confound comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "C-IVF embryos showed aberrant expression of genes critical for epigenetic reprogramming (DNMT3B, DNMT1, HDAC5, KDM5A), embryo development (KIT, UBR2, ISOC1), and cell proliferation (CDKN1A, SLC2A3, SLC2A2) that were not altered or less altered in Natur-IVF embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C51-C54 are supported by RNA-Seq data shown in Figure 3D and discussed in text. The genes identified have established roles in development based on knockout studies cited (C53, C55). However, C55 is explicitly speculative ('support the hypothesis...although additional studies are necessary'), and the functional consequences of these expression changes in pig blastocysts are inferred rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C60",
+      "C61"
+    ],
+    "result": "Whole-genome bisulfite sequencing revealed low global DNA methylation levels (11-15%) in all blastocyst groups, consistent with genome-wide demethylation during preimplantation development, with C-IVF showing slightly higher methylation (15.02\u00b13.3%) than Natur-IVF (11.09\u00b12.6%) and in vivo (12.33\u00b13.6%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C60-C61 provide sequencing quality metrics and global methylation percentages. C38 appropriately interprets low methylation as evidence of demethylation with supporting citations. The coverage (52-59.2% of CpGs) is reasonable for single-cell analysis. However, the standard deviations are large relative to the differences between groups, and statistical significance of group differences is not explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C7"
+    ],
+    "result": "Differential methylation analysis identified fewer DMRs between in vivo and Natur-IVF (1,660) than between in vivo and C-IVF (2,244), with a DMR at IGF2R showing reduced methylation specifically in C-IVF (12.45%) compared to Natur-IVF (28.3%) and in vivo (35.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by quantitative methylation data in Figures 5B and 7A-B with statistical significance (p<0.05). The IGF2R finding is particularly important given its association with Large Offspring Syndrome. However, the biological significance of the DMR differences requires caution given the low overall methylation levels and the need for quantile normalization to account for global differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C79",
+      "C80"
+    ],
+    "result": "Targeted analysis of imprinted gene DMRs revealed that three genes (ZAC1, PEG10, NNAT) showed significantly higher methylation in C-IVF compared to in vivo embryos, with PEG10 and NNAT also showing higher methylation compared to Natur-IVF, while no differences were found between Natur-IVF and in vivo groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by targeted methylation analysis with statistical testing (Chi-Square, p<0.05, Table 4B). The NNAT finding is corroborated by unbiased analysis (C80, Figure 8). However, the imprinting status of some genes in pigs is uncertain (noted for IGF2R in C65), which complicates interpretation of whether these are true imprinting defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C56"
+    ],
+    "result": "This study represents the first whole-genome DNA methylation and transcription analysis in single blastocysts comparing in vivo and in vitro produced embryos in any mammalian species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C56 consistently state this novelty claim. C16 explicitly notes that such profiles 'have not been published for any mammalian species' based on literature review. The methods describe single-blastocyst PBAT sequencing and RNA-Seq, which appear technically sound. However, the novelty claim cannot be fully verified without comprehensive literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C58",
+      "C77",
+      "C78"
+    ],
+    "result": "The Natur-IVF protocol, incorporating reproductive fluids at 1% concentration throughout IVF and embryo culture, significantly improved pig embryo production, achieving blastocyst yields (45%) comparable to or exceeding bovine IVF systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C77-C78 are supported by the combined data from Tables 1 and 2 showing improvements in multiple parameters. However, C58 and C78 make comparative claims to 'previous data published' and 'bovine species' without providing specific citations or data for direct comparison, making these claims difficult to fully evaluate. The 45% figure appears to be calculated from Table 2A data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C28"
+    ],
+    "result": "C-IVF embryos showed higher variability in both gene expression and DNA methylation patterns compared to Natur-IVF and in vivo embryos, potentially reflecting embryo plasticity in response to suboptimal culture conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is speculative ('could represent') and based on visual inspection of PCA plots (Figure 3B, 5A). While the PCA does show C-IVF samples more dispersed, no quantitative measure of variability is provided, and the interpretation as 'plasticity' rather than 'instability' or 'aberration' is not justified. The sample size (n=3 per group) is too small to make strong conclusions about variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C25",
+      "C64"
+    ],
+    "result": "In vitro culture alters embryonic gene expression to a lesser extent than previously proposed, with better modulation achieved by mimicking physiological conditions through addition of reproductive fluids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 compares current results to Bauer et al. 2010, but that study used pooled blastocysts while this study used single embryos, making direct comparison problematic. The claim of 'lesser extent' is not quantitatively justified. C64 is an inference from the data rather than a direct finding. The conclusion may be valid but requires more rigorous comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DNA methylation and gene expression showed lack of correlation in blastocysts, which is expected during periods of dramatic methylation loss in early embryo development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 appropriately contextualize the lack of methylation-expression correlation with established knowledge about preimplantation development and cite supporting literature (C68). Claims C81-C83 provide specific examples. This is an important methodological consideration for interpreting the results, though it limits the ability to infer functional consequences of methylation changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C65"
+    ],
+    "result": "The genes showing differential methylation in C-IVF (PEG10, NNAT, ZAC1, IGF2R) have established roles in embryonic development and are associated with imprinting disorders in humans and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by appropriate citations to functional studies. C65 appropriately notes uncertainty about IGF2R imprinting status in pigs. These claims provide important biological context for interpreting the methylation findings, though they rely on cross-species extrapolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C66"
+    ],
+    "result": "IGF2R and related IGF axis genes (IGF2BP2, IGF2BP2-IMP2) were up-regulated in C-IVF embryos, and reduced IGF2R methylation in C-IVF could increase susceptibility to Large Offspring Syndrome-like phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C50 report gene expression changes supported by RNA-Seq data. However, C66 is explicitly speculative ('could suggest') and the connection between reduced methylation, increased expression, and LOS risk is not demonstrated in this study. The imprinting status of IGF2R in pigs is unclear (C65), further complicating interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study did not perform qPCR validation of RNA-Seq and DNA methylation results, reasoning that RNA-Seq data show close correlation with qPCR in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 explain a methodological decision. While C72 cites supporting literature, the decision not to validate (C73-C74) is debatable. For novel findings in a new biological system (single pig blastocysts), some validation would strengthen confidence, particularly for key findings like imprinted gene methylation. The reasoning is presented as opinion ('we deem') rather than established practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C71"
+    ],
+    "result": "The strategy of adding reproductive fluids to ART culture media could be applied to other animals and humans after addressing safety concerns, with human reproductive fluid samples already being stored at a biobank in Spain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 is explicitly speculative about future applications with appropriate caveats about safety. C71 states a fact about biobank storage but doesn't demonstrate feasibility or safety of the approach in humans. These are forward-looking statements rather than results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims about ART prevalence, associated risks, and rationale for using pigs as a model system, along with prior knowledge about reproductive fluids and culture media effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C15 provide background context supported by appropriate citations. These establish the motivation for the study but are not novel findings. C10 provides reasonable justification for using pigs as a model, though the argument could be stronger with more direct evidence of similarity in ART-related epigenetic responses.",
+    "result_type": "MINOR"
+  }
+]

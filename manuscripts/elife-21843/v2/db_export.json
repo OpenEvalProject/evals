@@ -1,0 +1,2100 @@
+{
+  "submission": {
+    "id": "0cc17b94-bad5-4c18-aa44-0b20ab68b9de",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:22:17.959555Z",
+    "updated_at": "2025-11-30T22:22:17.959555Z"
+  },
+  "content": [
+    {
+      "id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "submission_id": "0cc17b94-bad5-4c18-aa44-0b20ab68b9de",
+      "content_type": "manuscript",
+      "content_text": "# Feedforward motor information enhances somatosensory responses and sharpens angular tuning of rat S1 barrel cortex neurons\n\n## Authors\n\n- Mohamed Khateb<sup>1</sup>\n- Jackie Schiller<sup>1</sup>\n- Yitzhak Schiller<sup>1</sup> ([ORCID: 0000-0002-6106-4580](https://orcid.org/0000-0002-6106-4580)) \u2020\n\n### Affiliations\n\n1. The Rappaport Faculty of Medicine Technion - Israel Institute of Technology Haifa Israel\n2. Department of Neurology Rambam Medical Center Haifa Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe primary vibrissae motor cortex (vM1) is responsible for generating whisking movements. In parallel, vM1 also sends information directly to the sensory barrel cortex (vS1). In this study, we investigated the effects of vM1 activation on processing of vibrissae sensory information in vS1 of the rat. To dissociate the vibrissae sensory-motor loop, we optogenetically activated vM1 and independently passively stimulated principal vibrissae. Optogenetic activation of vM1 supra-linearly amplified the response of vS1 neurons to passive vibrissa stimulation in all cortical layers measured. Maximal amplification occurred when onset of vM1 optogenetic activation preceded vibrissa stimulation by 20 ms. In addition to amplification, vM1 activation also sharpened angular tuning of vS1 neurons in all cortical layers measured. Our findings indicated that in addition to output motor signals, vM1 also sends preparatory signals to vS1 that serve to amplify and sharpen the response of neurons in the barrel cortex to incoming sensory input signals.\n\n## Introduction\n\nRodents are equipped with an array of vibrissae on their snout (mystacial vibrissae) that serve as a highly developed tactile somatosensory organ (Woolsey and Van der Loos, 1970; Carvell and Simons, 1990; Petersen, 2007; Diamond et al., 2008; Diamond and Arabzadeh, 2013; Feldmeyer et al., 2013). To probe their environment, rodents typically produce whisking movements of their vibrissae, and palpate objects located within the vibrissae reach. The physical contact between external objects and vibrissae generate forces and vibrations at the base of the vibrissae, which are sensed by specialized mechanoreceptors located at the vibrissae pad. In turn, the sensory information collected by these mechanoreceptors is conveyed to the cortex via the VPM and PoM nuclei of the thalamus (Petersen, 2007; Diamond et al., 2008). The main cortical region receiving sensory information from the vibrissae is the somatosensory S1 barrel cortex (vS1), which is arranged somatotopically, with each vibrissa represented by a separate and discrete barrel-like region (Izraeli and Porter, 1995; Petersen, 2007; Diamond et al., 2008; Bosman et al., 2011; Diamond and Arabzadeh, 2013; Feldmeyer et al., 2013).\n\nThe vibrissae-barrel somatosensory system typically uses active sensing (Kleinfeld et al., 2006; Schroeder et al., 2010). Whisking movements are evoked by descending commands from the primary vibrissae motor cortex (vM1) (Grinevich et al., 2005; Gerdjikov et al., 2013; Hill et al., 2011; Petersen, 2014). It is still unclear whether neurons in vM1 directly drive the facial nucleus, or alternatively activate a central pattern generator (CPG) in the brainstem that in turn rhythmically drives the facial nucleus (Grinevich et al., 2005;\u00a0Kleinfeld et al., 2014; Moore et al., 2014;\u00a0Petersen, 2014). In addition to the descending output motor information to the brain stem, vM1 also directly sends information to other structures in the sensory-motor vibrissae-barrel loop, and especially the vS1 barrel cortex (Aronoff et al., 2010; Veinante and Desch\u00eanes, 2003; Mao et al., 2011; Feldmeyer et al., 2013). This direct vM1 to vS1 pathway originates mostly from layer 2\u20133 and layer 5A pyramidal neurons in vM1 and terminates mostly on layer 5 neurons and to a lesser degree layer 2\u20133 neurons of vS1 (Mao et al., 2011). Previous functional studies have shown that vM1 inputs to vS1 carry information regarding both motor parameters of whisking, as well as more complex sensory information (Petreanu et al., 2012). Moreover, inputs from vM1 have been shown to modify the network state of the vS1 barrel cortex, and increase the coding reliability of complex sensory stimuli in vS1 (Zagha et al., 2013).\n\nIn this study, we aimed to investigate the effect of vM1 inputs on sensory processing in the barrel vS1 cortex. A major obstacle we encountered in tackling this question was the fact the vibrissae-barrel system functions as a motor-sensory loop (Kleinfeld et al., 1999; Diamond et al., 2008), and thus, vM1 can influence vS1 neurons both directly and indirectly. For example, vM1 activation can affect vS1 neuron both via direct inputs connecting the two areas and indirectly via whisking-evoked stimulation of mechanoreceptors in the vibrissae pad. To tackle this problem, we disconnected the motor-sensory loop of the vibrissa-barrel system, and dissociated activation of the motor and sensory components. We passively activated the principal vibrissa by piezo-mediated vibrissa movements or artificial whisking against sandpaper (Szwed et al., 2003; Garion et al., 2014), and independently activated vM1 with optogenetic stimulation. In all our experiments, we cut the buccolabialis branch of the facial nerve to eliminate cortical-driven whisking movements. Using this experimental paradigm, we aimed to investigate the effect vM1 activation on the response of vS1 neurons to vibrissa stimulation; characterize temporal interactions between vM1 and vS1; and examine the effect of vM1 on angular tuning of vS1 neurons.\n\n## Results\n\n### Pairing optogenetic vM1 activation with passive vibrissa activation\n\nThe goal of this study was to investigate the effect of vM1 on sensory processing in the vS1 barrel cortex. Under physiological conditions, the barrel-vibrissae system functions as a loop, and thus vM1 can affect the vS1 barrel cortex both directly and indirectly. To address this obstacle, we passively stimulated the principal vibrissa, and independently activated vM1 neurons using optogenetic stimulation. In the experiments we passively deflected, the principal vibrissa (Typically B2) with piezo-mediated 200 ms ramp and hold vibrissa deflection (Bruno et al., 2003; Lavzin et al., 2012), while concomitantly recording single-unit activity from neurons in the vS1 barrel cortex. We recorded the single-unit activity from neurons in different layers of the vS1 using single-shaft 16 channel silicon probe electrodes (inter contact distance of 50 \u00b5m; contacts located at depth of 300\u20131100 \u00b5m from the pia) (Figure 1A). The principal barrel was identified prior to electrode insertion using intrinsic imaging (for details see Garion et al., 2014), and verified by manual deflection of vibrissae during extracellular multi-unit recordings.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig1-v2.jpg)\n\n**Figure 1.:** (A) Scheme of the experimental design with the recording electrode in vS1, optogenetic stimulation of vM1 and ramp and hold passive vibrissa deflection. (B) Peri-stimulus histograms (PSTH, mean\u00a0\u00b1 SEM) recorded from a vS1 neuron during isolated vM1 optogenetic stimulation (blue), isolated passive vibrissa deflection (green), and paired vM1-vibrissa stimulation (red). In addition, the expected linear sum of the solitary vM1 stimulation and vibrissa deflection is shown (gray). (C) Fluorescence images at different magnifications of neurons co-expressing ChR2 and mCherry. (D) PSTH recorded from a vM1 neuron during optogenetic stimulation (473 nm laser pulse). (E) Average (mean\u00a0\u00b1\u00a0SEM) responses recorded in vS1 neurons during optogenetic stimulation of vM1 with laser pulse duration (147 neurons in four rats). In each neurons, the spike count responses during optohgenetic stimulation were presented as percent of the spike count during the pre-stimulus control value. Later, the responses were averaged over the different neurons.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Four separate traces of raw recording filtered at 1\u20135 kHz. Each trace shows simultaneous recordings from eight different channels.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The raw clustering data is presented for ten individual electrodes, which yielded 26 individual sorted units. For each electrode, we present the putative layer, the 2D principal components graph, the mean\u00a0\u00b1\u00a0SD of each unit and the clustering statistical parameters.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The movement of the piezo bimorph was monitored during a ramp and hold stimulation pulse using a high-speed camera (1000 fps). Panel A shows individual traces of piezo bimorph movement after applying different values to the smoothening factor (0.03\u20131). Panel B presents the average amplitude of the maximal ringing (measured from peak to turf) with the different smoothening factor values.\n\nTypically, the 200 ms passive ramp and hold vibrissa deflection-evoked short on and off responses (Figure 1B). For our analysis, we measured the additional number of spikes (spike count) evoked by the stimulus compared to the pre-stimulus control value during the on (initial 100 ms of the ramp and hold stimulation) and off responses (initial 100 ms after the end of the ramp and hold stimulation). In addition, we independently activated neurons in vM1 cortex with optogenetic stimulation. We expressed ChR2 in vM1 pyramidal neurons by local injection of AAV viral vectors containing the ChR2 gene expressed under the control of the CaMKII promotor (Figure 1C), and ChR2 expressing neurons in vM1 were activated with 20 ms laser pulses (Figure 1D; for details see Materials\u00a0and\u00a0methods).\n\nExtracellular recordings from vM1 during optogenetic stimulation showed that short 473 nm laser pulses effectively activated vM1 neurons (Figure 1D). Overall 84% of all recorded neurons in vM1 significantly increased their firing rate during 20 ms 473 nm laser pulses (109 vM1 neurons from five rats). On average vM1 neurons increased their average firing by 563% \u00b1 84% during the pulse time. Moreover, the average latency between laser onset and increased firing in vM1 was 4.81\u00a0\u00b1\u00a00.43 ms (mean\u00a0\u00b1\u00a0SEM, 109 neurons from five rats), with 41% of neurons showing a unimodal response.\n\nWhen we recorded from vS1 neurons during optogenetic activation of vM1 neurons, we found small responses in vS1 barrel neurons (Figure 1B,E, and Figure 2). The magnitude of the responses recorded in vS1 neurons depended on the duration of the laser pulse, and gradually increased as the duration of the laser pulse increased from 5\u00a0to\u00a020 ms (Figure 1E). Based on this data, we used 20 ms laser pulses for all our experiments.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig2-v2.jpg)\n\n**Figure 2.:** Average (mean\u00a0\u00b1\u00a0SEM) single-unit response (presented as percent above the pre-stimulus control activity) of vS1 neurons to the On response during the different stimulation conditions, isolated vM1 optogenetic stimulation, isolated passive vibrissa deflection, expected linear sum of the solitary vM1 stimulation and vibrissa deflection and paired vM1-vibrissa stimulation presented for single-unit analysis (A) and multi-unit analysis (B), (237 units from 91 electrode contacts in seven rats). Note that the recorded activity during paired vM1-vibrissa stimulation was significantly larger than the linear sum of the response to vM1 activation and passive ramp and hold vibrissa deflection applied separately for both single- and multi-unit analyses. (C) Average (mean\u00a0\u00b1\u00a0SEM) supra-linearity of the paired vM1-vibrissa stimulation response (measured/expected linear sum) presented for all neurons and for neurons in the different putative neocortical layers (2\u20133, 4 and 5). Thirty-five\u00a0neurons from putative layers 2\u20133, 79 neurons from putative layer 4 and 123 neurons in putative layer 5. ***p<0.001 and **p<0.01 using the student's t-test.\n\nTo investigate the effect of vM1 activation on sensory processing in vS1 neurons, we applied three different stimulation conditions in random order. First, isolated vM1 optogenetic stimulation; second, isolated ramp and hold vibrissa deflection; third, paired optogenetic vM1 activation with passive vibrissa deflection. When we paired optogenetic activation of vM1 with passive ramp and hold deflection (paired vM1-vibrissa stimulation), vM1 activation supra-linearly amplified the responses in vS1 neurons. During the on response, paired vM1-vibrissa stimulation were significantly larger (by an average of 39%) than the expected linear sum of the two stimuli applied separately (Figure 2A, 237 neurons from seven rats). We also confirmed these findings with multi-unit analysis (Figure 2B). In the case of multi-unit analysis the on response to paired ramp and hold vibrissa deflection and optogenetic vM1 stimulation was 34% larger than the expected sum of the two stimuli applied separately. Moreover, we found that in 57% of individual neurons (135 out of 237 neurons) paired vM1-vibrissa stimulation was significantly larger than the expected sum of solitary vibrissa deflection and vM1 optogenetic activation.\n\nInterestingly, a small yet significant supra-linearity was also observed during the off response despite the fact we applied the 20 ms optogenetic stimulation at the onset of the 200 ms ramp and hold vibrissa deflection. Paired vM1-vibrissa deflection stimulation yielded an average off response that was 15% larger than the expected sum of the two stimuli applied separately (expected average linear sum of 207.6% \u00b1 11.7% compared to 238% \u00b1 12.4% of the averaged measured paired vM1-vibrissa stimulation, p<0.05, 237 units from seven rats).\n\nWe also investigated the effect of pairing vM1 activation with passive ramp and hold vibrissa deflection in the different cortical layers of the vS1 barrel cortex. Our recordings extended between 300\u20131100 \u00b5m from the cortical surface. We divided the recorded neurons according to their putative cortical layers, based on their distance from the pia. We defined putative layers 2\u20133 as extending up to 600 \u00b5m from the pia, layer 4 as extending 650\u2013800 \u00b5m from the pia, and layer 5 as extending beyond 800 \u00b5m from the pia. It is important to stress that cortical layers were determined solely by the distance of the recording contact from the cortical surface, as we could not verify cortical layers by histological criteria. Paired opto-stimulation of vM1 supra-linearly amplified the on response vS1 neurons to ramp and hold vibrissa deflection in all cortical layers recorded. Supra-linearity was largest in putative layers 2\u20133 and 5, and smallest in putative layer 4 neurons. No significant differences were observed between layers 2\u20133 and 5 (Figure 2D, analysis for the different layers is shown for the on response).\n\nWe further investigated the effect of vM1 activation on the response to vibrissa activation using a second passive stimulation paradigm, artificial whisking against sandpaper. With this passive stimulation paradigm, we cut the buccolabial branch of the facial nerve and stimulated the severed branch to generate artificial whisking movements at 5.5 Hz while contacting sandpaper (Szwed et al., 2003; Bagdasarian et al., 2013; Garion et al., 2014) (Figure 3A). vM1 neurons were optogenetically activated in a similar manner to the ramp and hold vibrissa deflection experiments. For our analysis, we measured the additional number of spikes (spike count) evoked by the protraction phase of artificial whisking (90 ms) as compared to the pre-stimulus baseline. We chose to concentrate on the earlier protraction phase as we opto-stimulated vM1 at the onset of artificial whisking.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig3-v2.jpg)\n\n**Figure 3.:** (A) Scheme of the experimental design with the recording electrode in vS1, optogenetic stimulation of vM1 and artificial whisking against sandpaper by electrically stimulating the buccolabialis nerve. The timing of individual nerve stimulation and protraction phase is marked in black. (B) Peri-stimulus histograms (PSTH, mean\u00a0\u00b1\u00a0SEM) recorded from a vS1 neuron during solitary vM1 optogenetic stimulation (blue), solitary artificial whisking against sandpaper (green), and paired vM1-vibrissa stimulation (red). In addition, the expected linear sum of the solitary vM1 stimulation and artificial whisking is shown (gray). (C) Average (mean\u00a0\u00b1\u00a0SEM) responses (presented as percent above the pre-stimulus control activity) of vS1 neurons to the different stimulation conditions (294 neurons from six rats). Note that the recorded activity during paired vM1-vibrissa stimulation was significantly larger than the linear sum of the response to solitary vM1 activation and artificial whisking. ***p<0.001 with the paired student's t-test. (D) Average (mean\u00a0\u00b1\u00a0SEM) supra-linearity of the paired vM1-vibrissa stimulation response (measured/expected linear sum) presented for all neurons and for neurons in the different putative neocortical layers, 76 neurons from putative layers 2\u20133, 80 neurons from putative layer 4 and 138 neurons in putative layer 5.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig4-v2.jpg)\n\n**Figure 4.:** (A) The peak of the peri-stimulus histograms (PSTH) recorded from individual vS1 neurons during paired vM1-vibrissa stimulation with different time lags between the vM1 optogenetic activation (20 ms laser pulse) and vibrissa stimulation (\u2212100 ms up to\u00a0+50 ms). The time lags were calculated by subtracting the onset time of vibrissa stimulation from the onset time of vM1 optogenetic activation. The data are presented for two different individual neurons during passive ramp and hold vibrissa deflection (left panel) and artificial whisking against sandpaper (right panel). (B) The response (mean\u00a0\u00b1\u00a0SEM) of two different individual vS1 neurons to paired vM1-vibrissa stimulation applied with different inter-stimuli time lags between the optogenetic and vibrissa deflection. In the left panel, the vibrissa was stimulated with a ramp and hold vibrissa deflection, and in the right panel, the vibrissa was stimulated with artificial whisking against a P320 sand paper. (C) The average (mean\u00a0\u00b1\u00a0SEM) response of all recorded vS1 neurons to isolated passive vibrissa stimulation (control) and paired vM1-vibrissa stimulation applied with different inter-stimuli time lags. For both B and C, the data are presented for passive ramp and hold vibrissa deflection (left panels) and artificial whisking against sandpaper (right panels). 238 neurons from six rats for vibrissa deflection experiments; 334 neurons from seven rats in the artificial whisking experiments; *p<0.05, ***p<0.001.\n\nArtificial whisking against sandpaper-evoked spikes during the protraction and retraction phases (Figure 3B). Similar to the ramp and hold stimulation paradigm optogenetic co-activation of vM1 supra-linearly amplified the response of vS1 neurons to artificial whisking against sandpaper. On average, the response evoked by paired vM1 optogenetic activation with artificial whisking against sandpaper was 42% larger than the expected linear sum of the two individual responses applied separately (Figure 3B,C). When we calculated the ratio of the measured versus expected responses for individual neurons we found that 69% of neurons (164 out of 241 neurons) had measured paired vM1-vibrissa stimulation that were significantly larger than the expected linear sum of isolated vibrissa deflection and vM1 optogenetic activation. Similar to ramp and hold vibrissa stimulation, pairing vM1 activation with artificial whisking supra-linearly amplified the response in all recorded neocortical layers (Figure 3D).\n\n### Temporal roles governing the interactions between vM1 and vibrissa sensory inputs\n\nIn contrast to physiological conditions, our experimental paradigm allowed us to activate the vibrissae and vM1 in a temporally independent manner. We utilized this capability to investigate the temporal rules governing the effect vM1 activation on the response of vS1 barrel neurons to passive vibrissa stimulation. In these experiments, the vibrissa and vM1 were stimulated independently with different time delays ranging between \u2212100 ms and\u00a0+50 ms (time difference calculated by subtracting the onset time of vibrissa stimulation from the onset time of the laser pulse, namely the onset of vibrissa stimulation was defined as time 0 ms). For these experiments, we passively stimulated the principal vibrissa by either ramp and hold vibrissa deflection (Figure 3A) or artificial whisking against sandpaper (Figure 3B). When vM1 was optogenetically activated 0\u201350 ms prior to passive vibrissa stimulation the paired response was significantly larger than that evoked by isolated passive vibrissa stimulation (Figure 3). In contrast, when vM1 was activated 75\u2013100 ms before or 20\u201350 ms after passive vibrissa stimulation the combined response did not significantly differ from the isolated vibrissa stimulation. The largest facilitating effect of vM1 activation was observed when the onset of the optogenetic vM1 activation preceded the onset of vibrissa stimulation by 20 ms (Figure 3). These findings were observed for both ramp and hold vibrissa deflection and artificial whisking against sandpaper (Figure 3A,B).\n\nIt is important to stress that in our experiments the time difference between vM1 optogenetic activation and vibrissa stimulation was in fact the time difference between the onset of vibrissa stimulation and onset of optogenetic stimulation, without taking into account transmission and synaptic delays, nor the exact timing of slip and stick events for artificial whisking.\n\n### The effect of vM1 activation on angular tuning of neurons in the vS1 barrel cortex\n\nPrevious studies have reported that neurons in the vS1 barrel cortex show a preference for the direction in which the vibrissa is deflected (angular tuning) (Bruno et al., 2003; Andermann and Moore, 2006; Kremer et al., 2011; Lavzin et al., 2012). In the previous section, we have shown that paired vM1 activation supra-linearly enhances the response of vS1 barrel cortex neurons to vibrissa stimulation. We next set out to examine whether in addition, paired vM1 activation also effects angular tuning of neurons in the vS1 barrel cortex. In these experiments, we recorded the response of vS1 barrel neurons to passive ramp and hold deflection of the principal vibrissa to eight different directions with and without paired optogenetic activation of vM1. vM1 optogenetic activation was applied at the optimal temporal time window (laser onset preceding vibrissa deflection by 20 ms). In these experiments, we randomly alternated the direction of vibrissa deflection and whether the laser was activated or not. Consistent with previous results, we found that\u00a0angular tuning in neurons is\u00a0located in layers 2\u20133 and layer 4 (Bruno et al., 2003; Andermann and Moore, 2006; Kremer et al., 2011; Lavzin et al., 2012). We further found that layer 5\u00a0neurons in the vS1 barrel cortex also show similar angular tuning. We quantified the percent of neurons with significant angular tuning, and found that 62% \u00b1 8% of all recorded neurons showed significant angular tuning, with no significant differences between putative layers (significant angular tuning was defined by significant difference at the 0.05 level for comparison of the responses to the preferred angle and to the three least preferred angles).\n\nWhen we paired optogenetic stimulation of vM1 with vibrissa deflection to different angles, we found that the angular tuning of neurons was sharpened. Sharpening of angular tuning by optogenetic activation of vM1 is demonstrated in six different individual vS1 neurons (Figure 5, Figure 5\u2014figure supplement 1). To quantify the effect of vM1 activation on angular tuning of barrel vS1 neurons, we calculated the selectivity index (SI) of angular tuning of the preferred direction (maximal response in the preferred angle/average response to all angles) for each neurons with and without vM1 optogenetic activation. In these experiments, we found that paired vM1 optogenetic activation significantly increased the average SI for angular tuning in vS1 barrel cortex neurons (Figure 6A), which resulted from a right shift of the SI value histogram by vM1 activation (Figure 6B). Interestingly, we observed a significant increase in the SI of the preferred direction in both 50\u201360 day old and 90\u2013100 day old rats (Figure 6\u2014figure supplement 1A). Furthermore, as expected, while the SI of the preferred direction increased, the SI values of the worst three angular directions decreased by vM1 activation, although this reduction did not reach statistical significance (Figure 6\u2014figure supplement 1B). It is important to stress that although the SI to the worst directions decreased, in many cases the activation of vM1 increased the absolute response to the worst angles (see examples in Figure 5, and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig5-v2.jpg)\n\n**Figure 5.:** Polar plots of six individual vS1 neurons during isolated ramp and hold vibrissa deflection (blue) and paired vM1-vibrissa stimulation (red). In these experiments, the principal vibrissa was randomly deflected to eight different directions (0\u00b0,43\u00b0,90\u00b0, 135\u00b0, 180\u00b0, 225\u00b0,270\u00b0, 315\u00b0) with and without paired vM1 optogenetic activation. Vibrissae were deflected in the different directions by two pairs of galvanometers. Upper four panels are from 50\u201360 day old rats, and the lower two panels are from 90\u2013100 day old rats. Upper left panel-putative layer 2\u20133, upper right panel putative layer 5, middle left panel-putative layer 4, middle right panel putative layer 5, lower left panel-putative layer 5, lower right panel putative layer 2\u20133. Note, sharpening of the angular tuning curve following paired vM1 optogenetic activation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The response (mean\u00a0\u00b1\u00a0SEM) of six individual neurons to ramp and hold vibrissa deflection in eight different angles under control conditions and during optogenetic co-activation of vM1. The neurons are the same neurons presented in Figure 5. In this figure, we present the data in conventional graphs rather than polar plots, and add the variability of the responses (SEM).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig6-v2.jpg)\n\n**Figure 6.:** (A) The average (mean\u00a0\u00b1\u00a0SEM) ratio between the SI calculated for the preferred angular direction for isolated vibrissa deflection (red) and paired vibrissa deflection with vM1 optogenetic activation (blue). The results are presented for single- (SUA) and multi-unit (MUA) analysis. The results are shown for all neurons examine (304 neurons from 11 rats). Note the significant increase in the SI following pairing with vM1 activation for moth SUA and MUA. (B) The SI magnitude histogram of unit for isolated for isolated vibrissa deflection (red) and paired vibrissa deflection with vM1 optogenetic activation (blue). Note that paired vM1 optogenetic stimulation resulted a right shift of the histogram. (C) The effect of vM1 optogenetic activation on the average amplitude (mean\u00a0\u00b1\u00a0SEM) of the vector sum. Vector sum analysis was performed on the same data set presented in panels A and B (204 neurons from 11 rats). **p<0.01. (D)\u00a0The average (mean\u00a0\u00b1\u00a0SEM) ratio between the SI calculated for isolated vibrissa deflection and paired vibrissa deflection with vM1 optogenetic activation. The results are shown for all neurons examine, and for the different putative cortical layers (25.7% putative layer 2\u20133 neurons, 20% putative layer 4 neurons and 54.3% putative layer five neurons). *p<0.05, **p<0.01. In cases the SI for isolated vibrissa deflections were compared with paired vibrissa deflections and vM1 optogenetic activation using the paired student's t-test. (E) Percent of neurons that retained the same SI with and without vM1 optogenetic activation as a function of the control SI value (SI\u00a0<\u00a01.5, SI\u00a0=\u00a01.5\u20132 and SI\u00a0>\u00a02). (F) The average (mean\u00a0\u00b1\u00a0SEM) ratio between the SI value recorded without (SIcont) and with (SIlaser) vM1 optogenetic activation in all recorded neurons and in neurons which retained the preferred angle with and without optogenetic activation (stable), and in neurons that changed their preferred angle after vM1 activation (unstable). **p<0.01.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21843/elife-21843-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The effect of optogenetic activation of vM1 on the SI of the preferred direction in 50\u201360 day old (left) and 90\u2013100 day old mice (right). (B) The effect of optogenetic activation of vM1 on the SI of the preferred direction and of the worst three directions. **p<0.01, *p<0.05.\n\nTo overcome potential technical problems associated with single-unit analysis, we repeated our analysis for angular tuning using multi-unit activity. Similar to single- unit activity multi-unit activity, again demonstrated that vM1 optogenetic activation significantly sharpened angular tuning of vS1 neurons (Figure 6A). The amplificatory effect of vM1 activation. The fact we observed sharpening of angular tuning with multi-unit analysis is consistent with the previously reported spatial mapping of angular tuning in the barrel cortex (Kremer et al., 2011).\n\nTo further quantify the effect of vM1 optogenetic activation on angular tuning, we calculated the vector sum of the responses to vibrissae stimulation in the eight different angles (see Materials\u00a0and\u00a0methods for details) with and without vM1 optogenetic activation. We found that similar to the effect on SI, vM1 optogenetic activation significantly increased the amplitude of the vector sum (Figure 6C). On average, the amplitude of the vector sum increased by 29% \u00b1 7%.\n\nA significant sharpening of angular tuning by paired vM1 activation was observed in all recorded neocortical layers (layers 2\u20135), with no significant differences between the recorded putative layers (Figure 6D).\u00a0The majority of neurons retained their preferred angular direction during opto-stimulation of vM1. The probability for retaining the preferred angular direction during paired vM1 activation was larger in neurons with higher SI during solitary unpaired vibrissa stimulation, with 70.9% of neurons with SI greater than two retaining their preferred angular direction after paired vM1 activation (Figure 6E). Moreover, neurons that retained their preferred angular direction showed a significantly greater degree of sharpening of their angular tuning curve by vM1 optogenetic activation, as compared to neurons that changed their preferred angular tuning during paired vM1 activation (Figure 6F).\n\n## Discussion\n\nIn this study, we set out to investigate the direct effects of vM1 activation on sensory processing in neurons of the vS1 barrel somatosensory cortex. The main findings of this study include: (1) vM1 optogenetic activation supra-linearly amplified the response of vS1 barrel neurons to passive vibrissa stimulation. This supra-linear amplification effect of vM1 activation was observed in all neocortical layers recorded (layers 2\u20135 300\u20131100 \u00b5m from the pia), and recurred in two different passive stimulation paradigms, ramp and hold vibrissa deflection and artificial whisking against sandpaper. (2) The maximal effect of vN1 on the response of vS1 neurons to vibrissa sensory inputs occurred when the onset of vM1 activation preceded vibrissa activation by 20 ms. Smaller yet significant effects were also observed when the onset of vM1 activation preceded vibrissa stimulation by 50 ms or when vibrissa stimulation and vM1 activation occurred simultaneously. This temporal relationship recurred for the two passive stimulation paradigms we examined. The physiological time delay between vM1 and vS1 activation is not fully known. Yet previous studies have shown that the activity of both vM1 and vS1 is phased locked with exploratory rhythmic whisking movements in rats (Ahrens and Kleinfeld, 2004), and vM1 neurons are probably critical in rhythmically driving whisking (Carvell et al., 1996; Kleinfeld et al., 2002; Ahrens and Kleinfeld, 2004; Brecht, 2004; Brecht et al., 2004) (3). We found that in addition to supra-linearly amplification of the response of vS1 barrel neurons to vibrissa stimulation, activation of vM1 also significantly sharpened the angular tuning in these neurons.\n\n### vM1 connections to the vS1 barrel cortex\n\nPrevious studies have shown that vM1 neurons directly innervate neurons in the vS1 barrel cortex (Izraeli and Porter, 1995; Veinante and Desch\u00eanes, 2003; Diamond et al., 2008; Aronoff et al., 2010; Mao et al., 2011; Feldmeyer et al., 2013). The strongest monosynaptic connections between vM1 and vS1 exist between neurons in layers 2\u20133 and layer 5A of vM1 and layer 5A and 5B neurons in the vS1 barrel cortex (Mao et al., 2011). Interestingly, reciprocal connections also exist between layers 2\u20133 and 5A neurons in vS1 and vM1 neurons (Hooks et al., 2013). A subset of vM1 axons reach layer 1 of the vS1 barrel cortex, and carry both motor information regarding different vibrissa movement parameters and more complex sensory information regarding contact of vibrissae with objects, and spatial localization of objects (Petreanu et al., 2012). Moreover, vM1 inputs innervating tuft dendrites of vS1 layer 5 pyramidal neurons critically participate in dendritic spike initiation when vibrissae actively touched objects in a location and angle-dependent manner (Xu et al., 2012).\n\nIn this study, we show that short (20 ms) optogenetic stimulation of vM1 neurons significantly increased firing of vS1 barrel neurons. These findings are in agreement with the results of a recent study performed in awake behaving rodents that reported activation of vS1 barrel neurons by optogenetic stimulation of vM1 neurons (Zagha et al., 2013). Moreover, Zagha et al. (2013) also reported that optogenetic activation of vM1 resulted in context-dependent changes in the network state of the barrel cortex and increased reliability of responses to complex sensory stimuli.\n\nAlthough previous studies have established the existence of direct connections between vM1 and vS1, and have demonstrated functional implications of this pathway (Petreanu et al., 2012; Xu et al., 2012; Zagha et al., 2013), our study adds novel yet unknown information regarding the effects of vM1 inputs on vS1 barrel neurons. First, we show that motor information from vM1 neurons and sensory information from the vibrissae summate supra-linearly in vS1 barrel neurons. Second, we defined the temporal rules governing the interactions between incoming vM1 and vibrissa sensory input information in vS1 neurons. We found maximal vM1-vibrissa interactions occurred when vM1 activation preceded vibrissa stimulation by 20 ms. This optimal temporal window for vM1-vibrissa input interactions suggested that vM1 sent primarily feedforward information regarding the planned vibrissa movements, rather than feedback information originating in the sensory motor loop. Finally, we show that vM1 activation, not only amplified the response of vS1 barrel neurons to incoming vibrissa sensory inputs, but also sharpened their angular tuning curve. Taken together, it seems vM1 inputs participated in increasing both the sensitivity and specificity of barrel cortex neurons to incoming sensory information from the vibrissae. The direct effect of vM1 on vS1 neurons may underlie the difference between passive and active sensing in the barrel vibrissa somatosensory system.\n\n### Possible mechanisms underlying vM1-mediated response amplification and sharpening of angular tuning in vS1 barrel neurons\n\nIn our study, we did not directly address the cellular mechanisms underlying the effects of vM1 inputs on the response of vS1 neurons to incoming vibrissa stimulation. Several different potential cellular and network mechanisms can explain our findings. First, is a non-linear effect on the axonal initiation zone. Specifically with this mechanism, excitatory vM1 inputs depolarize vS1 neurons, and as a result, concomitant vibrissae-evoked EPSPs will generate a larger number of action potentials in the axonal initiation zone. Second, are non-linear dendritic amplification mechanisms. Previous studies have shown that dendrites of neocortical excitatory neurons can support generation of local dendritic sodium, calcium and NMDA spikes (Stuart et al., 1997; Larkum et al., 1999, 2009; Schiller et al., 2000; Polsky et al., 2004;\u00a0London and H\u00e4usser, 2005; Branco et al., 2010; Lavzin et al., 2012; Xu et al., 2012; Harnett et al., 2013; Major et al., 2013; Smith et al., 2013; Palmer et al., 2014; Cichon and Gan, 2015). It is possible that pairing vM1 inputs with inputs carrying vibrissa sensory information results in initiation of local dendritic spikes vS1 neurons. Consistent with this possibility are the results of several previous in\u00a0vivo studies that reported initiation of dendritic spikes in tuft dendrites of vS1 layer-5 pyramidal neurons in response to vM1 and M2 activation (Xu et al., 2012; Manita et al., 2015). Third, are local network mechanisms. For example, vM1 inputs may selectively innervate VIP inhibitory inter neurons, as described for the medial prefrontal inputs to the auditory cortex (Lee et al., 2013; Pi et al., 2013). In this case, vM1 inputs will activate VIP inter neurons, which will inhibit other inhibitory inter neurons, and in turn secondary excite pyramidal neurons in vS1.\n\n### Possible functional significance of vM1 mediated response amplification and sharpening of angular tuning in vS1 barrel neurons\n\nThe barrel vibrissa system uses active sensing to palpate objects in the near vicinity of the rodents head. Typically, vM1, the motor cortex of the barrel vibrissa system, is responsible for generating the whisking movements of the mystacial vibrissae. vM1 can drive whisking either by directly activating lower motor neurons in the facial nucleus, especially during protraction movements, or alternatively, by activating a brain stem CPG located in close proximity to or within the Botzinger complex. In the latter case the CPG drives the facial nucleus to generate rhythmic movements (Grinevich et al., 2005; Haiss and Schwarz, 2005; Gerdjikov et al., 2013; Moore et al., 2013; Petersen, 2014; Sreenivasan et al., 2015). In addition to the brainstem output motor commands, vM1 also directly innervates the vS1 barrel cortex. These inputs convey both motor parameters of whisking, as well as more complex sensory information regarding contacting the object and object localization (Petreanu et al., 2012; Harnett et al., 2013).\n\nFunctionally, there are several scenarios for how the vM1 to vS1 pathway participates in sensory computations. First, vM1 inputs can convey a simple \u2018attentional cue\u2019 to prepare vS1 barrel cortex neurons for the incoming sensory information from the vibrissae. Regarding this possibility, it is interesting to note that previous studies have shown that increased attention and especially activation of the frontal eye field area increases the sensitivity and specificity of cortical neurons in sensory visual regions to different visual stimuli (McAdams and Maunsell, 1999; Reynolds and Chelazzi, 2004; Noudoost et al., 2010). The second possibility is that vM1 inputs convey a motor efference copy that can be used for computing the location as well as shape and texture of objects by comparing the expected (vM1) with the measured (thalamo-cortical) vibrissa movements (Diamond et al., 2008; Curtis and Kleinfeld, 2009; Kleinfeld and Desch\u00eanes, 2011). Third, multiple inputs converge onto the barrel motor cortex, thus vM1 inputs can serve to convey top-down dynamical modifications of sensory processing in the primary vS1 cortex (Xu et al., 2012; Zagha et al., 2013; Manita et al., 2015), see also Squire et al. (2013) regarding the visual system). Regardless of the exact computational role vM1 inputs play in sensory processing in vS1 neurons, the significant effects vM1 inputs have on vS1 neurons may underlie the importance of active sensing in the somatosensory system. Further studies in awake behaving rodents are needed to distinguish between these three possibilities and decipher the functional role of M1 inputs in sensory processing in somatosensory processing.\n\n## Materials\u00a0and\u00a0methods\n\n### Surgical preparation for recording in anesthetized rats\n\nWe conducted experiments in accordance with NIH and institutional standards for the care and use of animals in research, and received the approval of our institutional animal ethics committee (protocol 007-01-2014). P50-60 Wistar rats were anesthetized by intra-peritoneal injection of Urethane (20% dissolved in normal saline). Prior to surgery lidocaine (2%) was applied locally over the scalp, and the buccolabialis branch of the facial nerve, which innervates muscles in the vibrissae pad, was exposed and severed at its proximal segment. The skull was exposed and well cleaned in order to identify important anatomical landmarks such as the midline, bregma and lambda. A craniotomy (2\u20133 mm2) was drilled over the vS1 barrel cortex (2.5 mm posterior to bregma, 4.5 mm lateral to the midline), and a well surrounding the craniotomy was constructed using dental cement. In addition, a short metal pole was glued to the skull rostral to the dental cement well and later used to hold the rats head in place. After the dental cement was constructed, the dura matter was carefully removed over a small area (less than 1 mm2) to allow access to the cortex. We minimized the area of exposed cortical surface in order to\u00a0reduce brain pulsation and damage during the hours of the recordings. The well surrounding the craniotomy was filled with aCSF to cover the exposed neocortical surface to prevent the brain from drying. Body temperature was carefully maintained at 36\u201337\u00b0C using a heating pad (FHC, Montana, USA).\n\n### Optical intrinsic imaging\n\nTo identify the principal barrel, we initially performed optical intrinsic imaging as previously described (Lavzin et al., 2012; Garion et al., 2014). The cortical surface was illuminated and imaged through the thinned skull. We used 650 nm LED to illuminate the cortex, and light absorbance images were acquired with a Q-cam CCD camera (QImaging, British Columbia, Canada). Individual vibrissae were deflected using a pair of galvanometers at 10 Hz for a 2 s duration, to identify the location of the barrel representing the stimulated vibrissa. Sensory stimulation and data acquisition were controlled via an isolated pulse stimulator (model 2100, A-M systems, Washington, USA) using custom home made software written in Matlab (MathWorks, Massachusetts, USA). The location of the principal barrel was later used to guide electrode insertion.\n\n### Electrophysiologcal unit recordings\n\nElectrophysiological recordings were performed simultaneously from multiple neurons in layers 2\u20135 of the vS1 barrel cortex using silicone multi-contact probes (NeuroNexus, Michigan, USA). Our silicone probes (A 1 \u00d7 16 MEA) were composed of a single-shaft electrode with 16 recording contacts arranged along a vertical line and separated by 50 micrometers. Electrodes were inserted to pre-mapped principal barrel using a stereotactic micro-manipulator (TSE, Bad Homburg, Germany). Electrodes were slowly lowered until the electrode tip reached approximately a depth of 1000\u20131100 \u00b5m from the pial surface. After the electrode was inserted into the barrel cortex, we verified the identity of the principal vibrissa by recording multi-unit activity during manual deflection of the vibrissa. During the experiments, we trimmed all vibrissae aside from the principal vibrissa.\n\nElectrophysiological data was acquired with the 16-channel ME-16 system and MC Rack software (Multi channel systems, Reutlingen, Germany). The recorded data were initially amplified (X1000), filtered at 0\u201325 kHz and stored in the computer, and the analysis was performed primarily offline. In addition, to allow for online monitoring of the unit activity during the experiments the data was filtered online at 1\u20135 kHz and displayed. For the offline analysis, the raw recorded data were replayed and filtered at 1\u20135 kHz to obtain the unit activity (Figure 1\u2014figure supplement 1). Later single-units were sorted using the OFS offline spike sorter (Plexon, Texas, USA), and the sorted spike trains were further analyzed using the Neuroexplorer software (Nex Technologies, Alabama, USA) and home written software in MatLab (MathWorks, Massachusetts, USA). The results were presented as peri-stimulus histograms (PSTH), and the increase in spike count during stimulation, defined as the additional number of spikes evoked during stimulation stimuli above the number of spikes during the control pre-stimulus baseline (Spike count during stimulation-Spike count during a similar baseline control).\n\nFor offline sorting, we initially detected events with an amplitude\u00a0>3.5 SD of the baseline value. These events served for multi-unit analysis (MUA). For single-unit analysis, we further sorted the thresholded events using semi-automatic clustering algorithms, followed by manual verification and correction of these clusters, if needed. Clusters were accepted as single-units if all the following criteria were met: (1) the waveform shape remained consistent and stable throughout recording (verified by the \u2018Sort-Quality Vs Time\u2019 analysis in the OFS software). Moreover, units were excluded in case the average amplitude or half width of unit changed significantly (ANOVA test) between the initial and last 20% of recorded spikes. (2) Firing rate was\u00a0>0.5 Hz to allow for adequate sampling. (3) Inter-spike interval (ISI) was\u00a0>2 ms to reflect the absolute refractory period of neurons. (4) ISI distribution showed a smooth exponential-like curve. (5) Finally and most importantly, statistical criterion of p<0.05 (multivariate ANOVA) of cluster separation. Figure 1\u2014figure supplement 2 shows sorting parameters of 10 individual units. The average signal to noise (SNR) value of our units was 11.2\u00a0\u00b1\u00a00.4 (range of 7\u201315, Rousche et al., 1999)\n\nIn addition, we performed cross-correlation analysis between units recorded for all adjacent contact pairs, and excluded the unit from one of the electrodes (with the smaller amplitude) in case the peak of the cross-correlation was\u00a0>0.9 (2 ms time bin) to avoid recording of the same unit with two contacts. In addition, we excluded all units that showed\u00a0>0.9 value of the cross-correlogram in more than one electrode pair to exclude noise.\n\nAll the averaged results are presented as the mean\u00b1SEM values, and statistical testing was performed using the paired and unpaired student's t-test. The source code for the Matlab homemade software are enclosed in supplementary files\u00a0(Source code 1).\n\nTo verify the recording location, at the end of the experiment a fluorescent dextran (florescent dextran-A solution of 2 mM fluorescent dextran Alexa-488 or Texas Red; Invitrogen, USA) was injected into the electrode tract using a pressure injector. Later the rat was sacrificed, and trans-cardially perfused with 4% Para-Formaldehyde for histological processing.\n\n### Vibrissa stimuli\n\nWe used three different passive stimulation paradigms applied to the principal vibrissa:\n\nSimilar to the case of ramp and hold vibrissa deflection to a single direction we calibrated the perpendicular bimorphs, and made sure that no ringing and distortions occurred during stimulation we used a sigmoid function for the onset and offset piezo movements, resulting in an effective rise/fall duration of approximately 10\u201320 ms, and monitored movements of the vibrissa using both a laser displacement sensor (LD1605-2; Micro-Epsilon OptoNCDT 1700) and visual vibrissa tracking with a high-speed camera (Flare, 4M180MCL, 4 Megapixel, Dalsa Xcelera-x4-CL, IO industries at 1000 fps) (See above).\n\nTo quantify angular tuning we used two different methods:\n\n### Viral vector injection and optogenetic stimulation\n\nTo transfect pyramidal neurons of vM1 with channelrhodopsin 2 (ChR2), a craniotomy was drilled over the vM1 region (2 mm anterior to bregma and 1.25 mm lateral to the midline) under Isoflurane anesthesia and local anesthetic injection in P25-30 rats. A solution (500 nl) containing the ChR2 expressing viral vector (AAV2.1.CAMKIIa-hChR2(H134)-mCherry.WPRE.hGH, UNC viral core facility, North Carolina, USA) was injected into the vM1 region via a small craniotomy. ChR2 expressed in excitatory neurons by using the promotor CaMKII. Viral vby a micromanipulator (Sutter Instruments, California, USA) and connected to glass pipettes with tip diameters of 30\u201350 um. To allow for ChR2 expression in the target pyramidal neurons electrophysiological recordings were performed 4\u20136 weeks after viral vector injections. At the end of each experiment, the location and extent of ChR2 expression were verified histologically. Typically, viral vectors were injected at two depths of 300 and 500 \u00b5m. These injections typically resulted in ChR2 expression in a cortical region with vertical and horizontal extents of 500\u2013600 (Figure 1).\n\nIn control rats (intact un-severed buccolibial nerve), optogenetic stimulation of vM1 resulted in whisking movements (n\u00a0=\u00a05), functionally confirming the location of vM1. Upon cutting the buccolabial nerve, optogenetic stimulation of vM1 showed whisking movements in all rats tested, including the five rats in which vM1 optogenetic activation yielded whisking prior to cutting the buccolabial nerve.\n",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "106e8a4f-3f1e-4056-aae5-616df8d52f41",
+      "submission_id": "0cc17b94-bad5-4c18-aa44-0b20ab68b9de",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21843.014](https://doi.org/10.7554/eLife.21843.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Feedforward motor information enhance somatosensory responses and sharpen angular tuning of S1 barrel cortex neurons\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nEach of the reviewers felt the underlying issues were important and the major findings were potentially interesting, but each also had significant (often overlapping) concerns with the rigor of the methods, the main points being\n\n1) the rigor of spike sorting and quality of the recordings\n\n2) the details of stimulus timing and stimulus control, and\n\n3) clarity surrounding the issue of response variability and stability \u2013 both generally and as it relates to the significance of the angular tuning and enhancement thereof.\n\nIt is the policy at eLife to reject manuscripts if the reviewers feel that additional work is needed to support the conclusions of the paper, and if in the editors' opinions this work is extensive enough to require more than about 2 months. We would be open to considering a new revised manuscript if the authors want to try to address the issues outlined above in a new manuscript. We wish to stress, however, that it might be difficult for the authors to raise the manuscript over the bar, because of the many concerns raised.\n\nReviewer #1:\n\nThe authors use multi-site extracellular recording in anesthetized rats to study the influence of M1 projections on sensory responses to whisker stimulation in S1. This is a well studied area and has been the subject of a handful of recent high profile papers. The present study makes an important contribution to this field by breaking the normally recurrent sensory-motor loop so as to be able to study the effect of motor cortex activity in the absence of the indirect effects of the movement that activity would normally produce. To do this, they sever the motor nerve to prevent centrally generated whisking and then stimulate the whiskers passively or by causing artificial whisking by directly stimulating the nerve, while at the same time stimulating the motor cortex ontogenetically. They find that there is a feed-forward facilitation of sensory responses and that this facilitation is strongest for the preferred stimulus, thereby enhancing stimulus specificity. Although there have been other demonstrations of circuits that might produce this facilitation, the sensory and temporal features of the facilitation have not been studied under conditions in which it can be cleanly isolated as here.\n\n1) The manuscript is in need of substantial editing for usage and for clarity. I have tried to catch as many of the errors as I can, but it extends to being unsure of precisely what procedures were followed and what some of the figures depict.\n\n2) The inclusion criteria with respect to response stability are not clear and may be inappropriate. It is stated that two parameters were used: 1) the baseline pre-stimulus frequency \u2013 but this is not justified and no criteria are given, and 2) \"\u2026conditions was repeated twice\u2026and neurons in which the responded differentially to the two stimulation blocks were excluded.\" This is not clear and no definition of difference is given, but treating the responses as an n=2 repetitions and excluding based on differences is not valid without some statistical definition of repeatability. Along these lines, the variability of the responses to different directions of stimulation does not seem to have been adequately assessed. Tuning curves for individual neurons should have error bars so that the claim of enhanced tuning can be assessed statistically on a neuron-by neuron basis.\n\n3) The results are quantified solely with respect to the on response. Off responses should also be shown (examples of the full-time course of individual responses with and without M1 stimulation should be shown) so as to reveal the kinetics of facilitation and to perhaps justify the quantification of on responses only.\n\n4) It is not clear what is different about Figure 1F (39% larger) and 1G all (73.5% larger). The same lack of clarity applies to Figure 2. Is Figure 3B a single example neuron? If so, should a) make it clear that the response on the left and the response on the right are two individual neurons and b) the variability of the response across trials should be indicated. Figure 4 should also include measures of response variability. In Figure 5, the asterisk should be defined and exactly which groups were being compared should be stated clearly (e.g. in the Methods or in the legend or text). If the pooled controls are being compared to individual layers (i.e. the layers don't have their own separate control groups \u2013 which would not make sense but which is somewhat implied by the structure of the figure) a correction for multiple comparisons must be used.\n\n5) The authors should show some example histology that convinces the reader that the assignment to layers is accurate.\n\nReviewer #2:\n\nThe supralinear main effect observed in this paper is undeniably interesting.\n\nMajor:\n\nI) Stimulus control is essential for this experiment:\n\n1) Perpendicularly-arrayed bimorphs are notorious for ringing and distortion. I would like quantification of the amplitude and velocity of motion for all 8 directions for the piezo's used, and most importantly the ringing they demonstrated both for the first deflection and the other deflections in a train. Such quantification and description is essential.\n\n2) I'm confused by the description of stimulation in the Results (200 ms ramp and hold stimuli) and in the Methods (100 ms).\n\nII) I am skeptical about the 50 micron MEAs from neuronexus finding any single units of demonstrable selectivity in layers II/III. I certainly am not impugning the author's basic credibility (I don't think they are lying!) but getting well-isolated units in those layers, or layer IV especially, with such probes is quite hard. Without the virtue of a tetrode configuration or the use of smaller diameter contacts the claim of single unit identification is particularly suspect.\n\nI also found the following criteria to feel a bit arbitrary and wasn't sure what it meant:\n\n\"For our analysis, we excluded all unstable neurons, with stability determined using two parameters. First, the baseline pre-stimulus frequency. Second, for every experimental paradigm at least one of the stimulation conditions was repeated twice during the experiment, and neurons in which the responded differentially to the two stimulation blocks were excluded.\"\n\nFirst, what does the phrase \"the baseline pre-stimulus frequency\" have to do with stability? Second, multi-unit recordings can easily show run-by-run stability and, in fact, are potentially more stable than units for such recordings.\n\nSo, I'd like to see the following to give me confidence:\n\n1) Application of autocorrelogram exclusion criteria.\n\n2) Quantification of spike feature stability across the entire run (whether or not the response properties changed), and a discussion of which spike features were used.\n\n3) Demonstration of the cluster quality for some number of units \u2013.I don't want to make this infinite, but as I said I'm skeptical, so at least a fair number of examples of stability in layers II/III units would be appreciated (say, 10 such examples from 10 experiments or so).\n\nModerate:\n\nI) In the 56 neurons recorded in vMI, what was the latency to firing following optogenetic stimulation, and was this a bimodal distribution (implying directly opto activated and synaptically opto activated populations).\n\nII) The authors should quantify the relative effect of stimulation on the optimal direction angle versus the worst direction angle, whatever these might have been. Obviously, there must be enhancement on average across randomly associated directions or else the main effect of Figure 1 couldn't stand: The sharpening obviously suggests, though, a significant different between best and worst, etc.\n\nReviewer #3:\n\nKhateb et al. report on modulation of whisker-stimulation evoked spike rates in rat barrel cortex by optogenetic activation of projections from motor cortex. To avoid confounding effects by sensory reafference activation they prevented initiation of whisker movements by cutting the motor branch of the facial nerve. For two stimulation paradigms under anesthesia they find that pairing of motor cortex activation with whisker stimulation leads to supralinear spiking responses in barrel cortex neurons across all layers, most prominently in L2/3 and L5. This effect depended on the relative timing of the two inputs, peaking when motor cortex activation shortly preceded the whisker stimulation. In addition, they report a sharpening of tuning to the angular direction of stimulation upon pairing.\n\nHow a cortical sensory area such as the barrel cortex integrates the various input streams it receives, is a fundamental, most relevant question. Modern tools, especially optogenetic precise control of specific pathways as applied here, now enable addressing this question in vivo. This study therefore is timely and presents highly original data. The finding that neuronal spiking activity in barrel cortex is amplified by activation of the M1-S1 pathway is highly significant, even though the underlying potential mechanisms are not investigated here, as the authors admit. The results regarding changes in angular tuning I find less convincing, given that this feature is a complex, debated issue and little data are provided here. Overall, this is a nice study, making an important contribution to signal processing in the barrel cortex. The manuscript would benefit, however, from a more detailed and extensive presentation of (raw) data and a more in-depth treatment of the crucial issue of relative input timing. Find my specific comments below.\n\n1) Introduction, last paragraph: Why only 'partially disconnected'? Isn't the motor arm entirely uncoupled? Was this actually verified by confirming the absence of whisker movements following vM1 activation after the nerve cut?\n\n2) Subsection \u201cElectrophysiological unit recordings\u201d and figures. The authors should provide some raw electrophysiology data, so that one can better judge the quality of data. What were the noise levels? How well could spike sorting be performed and on how many channels? How well could spike waveforms be separated and were there any putative fast-spiking units present? Do the reported spike rates represent changes in spike rate? It would also be interesting to see the LFP responses for the paired stimulation paradigms.\n\n3) Furthermore: what were the respective baseline spike frequencies and why (and how) were these used to exclude data from the analysis (subsection \u201cElectrophysiological unit recordings\u201d, third paragraph). I also do not understand the motivation for excluding units that did not show a consistent response pattern upon repeating the stimulation paradigm. What type of responses did these cells actually show, in how far did they deviate from a nonlinear summation results? Why should one set such bias?\n\n4) Artificial whisking paradigm (subsection \u201cWhisker stimuli\u201d, Figure 2, Figure 3). How exactly was the optogenetic stimulation paired with motor activation pulses? Was it a 20-ms light pulse at the beginning of the 10 pulses to the nerve? How large were the whisker protractions induced by this protocols? The spiking response appears only 20-ms long, how come? What happened in the remaining 80 ms of protraction/retraction cycle? In the eighth paragraph of the subsection \u201cPairing optogenetic vM1 activation with passive whisker activation\u201d it is stated that spikes were evoked during protraction and retraction phase, but I can't see that. More details are needed here.\n\n5) Subsection \u201cViral vector injection and optogenetic stimulation\u201d, first paragraph. How precisely was the vM1 hit with the injections and the light stimulation? Was this verified by measuring whisker movements (or other movements?) by optogenetic vM1 stimulation before the facial nerve was cut?\n\n6) I find the timing experiments very interesting but I am not sure how to interpret the peak revealed at -20 ms. This is a time scale where the conduction delays etc. play an important role. So how was the timing exactly defined (onset of piezo drive and onset of LED illumination, I presume)? Was there any dead time for mechanical stimulation of the whisker considered? In particular, how was the timing defined for the artificial whisking stimulus? Were the whisker movements (presumably stick-slip events) monitored and their timing analyzed? Were any axonal conduction times and synaptic delays taken into account? Obviously, these questions are important to understand what the real timing difference at the integrating neurons in barrel cortex might be. Supplementary whole-cell recordings could be very helpful here, to quantify when exactly inputs from both pathways actually arrive with these stimulation paradigms.\n\n7) Angular tuning in barrel cortex apparently is a complicated matter and among other things seems to especially depend on age (Kremer study). In addition, the housing conditions (use of whiskers) may affect the outcome. The age of rats used here is just in between the ages when no angular tuning was observed and when it later was established. I find the examples in Figure 4 not convincing, as the pure whisker-evoked responses appear relatively untuned and the responses enhanced by optogenetic vM1 activation mostly display multiple peaks (often in orthogonal directions). Cells from what layer are actually shown in Figure 4? It might be helpful to show distributions of the absolute SI values for the different stimulation protocols.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Feedforward motor information enhance somatosensory responses and sharpen angular tuning of S1 barrel cortex neurons\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom, Sacha B Nelson (Reviewer #1), is a member of our Board of Reviewing Editors, and another one is Fritjof Helmchen (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll three reviewers were pleased with the addition of new data and new analyses addressing the issue of spike sorting. The reviewers remain concerned about several issues outlined below. In addition, the manuscript could still benefit from additional editing.\n\nEssential revisions:\n\n1) One reviewer states: \"I appreciate the addition of details on how the stimulator was calibrated-these are all the right approaches and tools. I can guarantee that using these parameters, that unless they use a specific compensatory algorithm, they almost certainly cannot get ringing under 5% of stroke magnitude, and I doubt it can be under 10%. I want the following included in the final manuscript \u2192 An actual analysis of the mean amplitude of the ringing. Saying you did not see it does not reflect quantification of the effect. Say how large in angle of vibrissal base motion and at what frequency the ring is on average across trials and across the different stimulators used.\" The reviewer notes that this is likely to have an effect on the direction selective responses.\n\n2) A second reviewer felt that the documentation of the degree of direction selectivity was inadequate. They did not feel the statement \"Consistent with previous results we found angular tuning in neurons.\u2026\" (subsection \u201cThe effect of vM1 activation on angular tuning of neurons in the vS1 barrel cortex\u201d, first paragraph) was well supported. They felt that the criteria for when a cell's response is considered well tuned were not clear and that the SI as calculated made comparisons across neurons with very different response amplitudes difficult. It is suggested that the authors \"confirm their interpretation with an alternative, more robust analysis method of direction-tuning, based on the mean response vector not the Rmax (Kremer et al. 2011; Mazurek et al., Front Neural Circ 2014). And provide a statistical argument for their statement 'we found angular tuning'.\"\n\n3) One of the reviewers also notes that \"laser stimulation of vM1 alone in essentially all cases did not evoke spiking activity at all (except perhaps for Figure 1B?). Thus, the 'supralinear' effect essentially consists in an upregulation or facilitation of the sensory-evoked response in vS1, which could be simply explained by additional pre-depolarization mediated by the M1-to-S1 projections, given vM1 is stimulated at the right time briefly before the sensory stimulus. While the authors mention this simple explanation (vM1 projection fibers helping vS1 neurons to reach the \u2013 nonlinear \u2013 spike threshold), they only refer to it as 'additional cellular mechanism' in the third paragraph of the subsection \u201cPossible mechanisms underlying vM1 mediated response amplification and sharpening of angular tuning in vS1 barrel neurons\u201d. Their primary 'attractive potential mechanism' of dendritic amplification (in the first paragraph of the aforementioned subsection) in my view is, however, largely speculative.\" The authors should consider toning down their use of 'supralinear responses' and may consider using terms like 'facilitation' or 'modulation.' At the very least they should give more equal weight to the simplest interpretation of these effects.\n",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebc64333-811f-49dd-aab2-5916f6c124c5",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C1",
+      "claim": "The primary vibrissae motor cortex (vM1) is responsible for generating whisking movements.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary vibrissae motor cortex (vM1) is responsible for generating whisking movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without supporting data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "e12ed0ab-1be6-44fb-b15a-a0c78bd4d294",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C2",
+      "claim": "vM1 sends information directly to the sensory barrel cortex (vS1).",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, vM1 also sends information directly to the sensory barrel cortex (vS1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "e8b1e7a4-23d2-418a-acc6-8cf95974f3c4",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C3",
+      "claim": "Optogenetic activation of vM1 supra-linearly amplified the response of vS1 neurons to passive vibrissa stimulation in all cortical layers measured.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic activation of vM1 supra-linearly amplified the response of vS1 neurons to passive vibrissa stimulation in all cortical layers measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 2 and 3, showing measurements across different cortical layers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "4a2f6c42-5141-4f04-8442-59b6187058cf",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C4",
+      "claim": "Maximal amplification occurred when onset of vM1 optogenetic activation preceded vibrissa stimulation by 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal amplification occurred when onset of vM1 optogenetic activation preceded vibrissa stimulation by 20 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4, which tests different time delays between vM1 activation and vibrissa stimulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "2a1e1296-1383-4b6e-a7fa-2405d65aa95d",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C5",
+      "claim": "vM1 activation sharpened angular tuning of vS1 neurons in all cortical layers measured.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to amplification, vM1 activation also sharpened angular tuning of vS1 neurons in all cortical layers measured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 5 and 6, showing angular tuning measurements across cortical layers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5f72e192-10b8-4b3d-8671-f32b16b3583b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C6",
+      "claim": "vM1 sends preparatory signals to vS1 that serve to amplify and sharpen the response of neurons in the barrel cortex to incoming sensory input signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings indicated that in addition to output motor signals, vM1 also sends preparatory signals to vS1 that serve to amplify and sharpen the response of neurons in the barrel cortex to incoming sensory input signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings, particularly the temporal relationship showing maximal effect when vM1 activation precedes vibrissa stimulation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "2368cd4b-5719-4655-b5e4-4df4572678ea",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C7",
+      "claim": "Rodents are equipped with an array of vibrissae on their snout (mystacial vibrissae) that serve as a highly developed tactile somatosensory organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodents are equipped with an array of vibrissae on their snout (mystacial vibrissae) that serve as a highly developed tactile somatosensory organ (Woolsey and Van der Loos, 1970; Carvell and Simons, 1990; Petersen, 2007; Diamond et al., 2008; Diamond and Arabzadeh, 2013; Feldmeyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "fd18c54a-4602-4893-9f2e-61256d6e189f",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C8",
+      "claim": "Rodents typically produce whisking movements of their vibrissae to probe their environment and palpate objects located within the vibrissae reach.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe their environment, rodents typically produce whisking movements of their vibrissae, and palpate objects located within the vibrissae reach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about rodent behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5cec1887-45cb-440d-a087-f9e2f87a5016",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C9",
+      "claim": "Physical contact between external objects and vibrissae generate forces and vibrations at the base of the vibrissae, which are sensed by specialized mechanoreceptors located at the vibrissae pad.",
+      "claim_type": "EXPLICIT",
+      "source": "The physical contact between external objects and vibrissae generate forces and vibrations at the base of the vibrissae, which are sensed by specialized mechanoreceptors located at the vibrissae pad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanosensory mechanism of vibrissae.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "09e83ce8-0cdb-4322-9665-e81cf5ab161a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C10",
+      "claim": "Sensory information collected by mechanoreceptors is conveyed to the cortex via the VPM and PoM nuclei of the thalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, the sensory information collected by these mechanoreceptors is conveyed to the cortex via the VPM and PoM nuclei of the thalamus (Petersen, 2007; Diamond et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "fb31a625-721b-49ca-a74f-53e707c0b9f3",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C11",
+      "claim": "The main cortical region receiving sensory information from the vibrissae is the somatosensory S1 barrel cortex (vS1), which is arranged somatotopically, with each vibrissa represented by a separate and discrete barrel-like region.",
+      "claim_type": "EXPLICIT",
+      "source": "The main cortical region receiving sensory information from the vibrissae is the somatosensory S1 barrel cortex (vS1), which is arranged somatotopically, with each vibrissa represented by a separate and discrete barrel-like region (Izraeli and Porter, 1995; Petersen, 2007; Diamond et al., 2008; Bosman et al., 2011; Diamond and Arabzadeh, 2013; Feldmeyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "b35d9328-fb7b-4f59-8269-2b92bf61b0bc",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C12",
+      "claim": "The vibrissae-barrel somatosensory system typically uses active sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "The vibrissae-barrel somatosensory system typically uses active sensing (Kleinfeld et al., 2006; Schroeder et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "9abfbbc4-c776-4ddb-a3c8-e22e12021b3b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C13",
+      "claim": "Whisking movements are evoked by descending commands from the primary vibrissae motor cortex (vM1).",
+      "claim_type": "EXPLICIT",
+      "source": "Whisking movements are evoked by descending commands from the primary vibrissae motor cortex (vM1) (Grinevich et al., 2005; Gerdjikov et al., 2013; Hill et al., 2011; Petersen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "50af3780-e9d5-4e7d-98a2-3cad20151a47",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C14",
+      "claim": "It is still unclear whether neurons in vM1 directly drive the facial nucleus, or alternatively activate a central pattern generator (CPG) in the brainstem that in turn rhythmically drives the facial nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still unclear whether neurons in vM1 directly drive the facial nucleus, or alternatively activate a central pattern generator (CPG) in the brainstem that in turn rhythmically drives the facial nucleus (Grinevich et al., 2005; Kleinfeld et al., 2014; Moore et al., 2014; Petersen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "63119830-a090-439c-a1ef-84b4ff2b71ed",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C15",
+      "claim": "vM1 directly sends information to other structures in the sensory-motor vibrissae-barrel loop, especially the vS1 barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the descending output motor information to the brain stem, vM1 also directly sends information to other structures in the sensory-motor vibrissae-barrel loop, and especially the vS1 barrel cortex (Aronoff et al., 2010; Veinante and Desch\u00eanes, 2003; Mao et al., 2011; Feldmeyer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "80ec81e3-18a2-4bd7-9c3b-4a5d19a7fa47",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C16",
+      "claim": "The direct vM1 to vS1 pathway originates mostly from layer 2\u20133 and layer 5A pyramidal neurons in vM1 and terminates mostly on layer 5 neurons and to a lesser degree layer 2\u20133 neurons of vS1.",
+      "claim_type": "EXPLICIT",
+      "source": "This direct vM1 to vS1 pathway originates mostly from layer 2\u20133 and layer 5A pyramidal neurons in vM1 and terminates mostly on layer 5 neurons and to a lesser degree layer 2\u20133 neurons of vS1 (Mao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bd265190-53aa-46a5-a65e-6135dfdafa56",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C17",
+      "claim": "vM1 inputs to vS1 carry information regarding both motor parameters of whisking, as well as more complex sensory information.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous functional studies have shown that vM1 inputs to vS1 carry information regarding both motor parameters of whisking, as well as more complex sensory information (Petreanu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c3db2997-7a38-4313-bc11-a66b9a34088c",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C18",
+      "claim": "Inputs from vM1 have been shown to modify the network state of the vS1 barrel cortex, and increase the coding reliability of complex sensory stimuli in vS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, inputs from vM1 have been shown to modify the network state of the vS1 barrel cortex, and increase the coding reliability of complex sensory stimuli in vS1 (Zagha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "9aadce66-b1df-477d-b991-325906b0fafe",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C19",
+      "claim": "The vibrissae-barrel system functions as a motor-sensory loop.",
+      "claim_type": "EXPLICIT",
+      "source": "A major obstacle we encountered in tackling this question was the fact the vibrissae-barrel system functions as a motor-sensory loop (Kleinfeld et al., 1999; Diamond et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c2dc1cc6-f9b9-4d4b-bdb5-32ab6da642f3",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C20",
+      "claim": "vM1 can influence vS1 neurons both directly and indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vM1 activation can affect vS1 neuron both via direct inputs connecting the two areas and indirectly via whisking-evoked stimulation of mechanoreceptors in the vibrissae pad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the known anatomy and physiology of the system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "fd25cf09-5f96-4876-9786-94d10fbbd4b4",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C21",
+      "claim": "The buccolabialis branch of the facial nerve was cut to eliminate cortical-driven whisking movements in all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In all our experiments, we cut the buccolabialis branch of the facial nerve to eliminate cortical-driven whisking movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5f618345-21f1-479a-93d9-d6ebb439e7a8",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C22",
+      "claim": "The principal barrel was identified prior to electrode insertion using intrinsic imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The principal barrel was identified prior to electrode insertion using intrinsic imaging (for details see Garion et al., 2014), and verified by manual deflection of vibrissae during extracellular multi-unit recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "7fad00d1-2505-4db8-9c98-c8d3b4433b5b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C23",
+      "claim": "200 ms passive ramp and hold vibrissa deflection evoked short on and off responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the 200 ms passive ramp and hold vibrissa deflection-evoked short on and off responses (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "3799d624-6607-4ea3-8563-e299c69d4533",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C24",
+      "claim": "84% of all recorded neurons in vM1 significantly increased their firing rate during 20 ms 473 nm laser pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall 84% of all recorded neurons in vM1 significantly increased their firing rate during 20 ms 473 nm laser pulses (109 vM1 neurons from five rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from recordings in vM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "e535dc17-b484-4163-b901-e0284c0b6d26",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C25",
+      "claim": "vM1 neurons increased their average firing by 563% \u00b1 84% during the laser pulse time.",
+      "claim_type": "EXPLICIT",
+      "source": "On average vM1 neurons increased their average firing by 563% \u00b1 84% during the pulse time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from recordings in vM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "2b3d1a00-e660-4765-bd95-c58871a38f91",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C26",
+      "claim": "The average latency between laser onset and increased firing in vM1 was 4.81 \u00b1 0.43 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the average latency between laser onset and increased firing in vM1 was 4.81 \u00b1 0.43 ms (mean \u00b1 SEM, 109 neurons from five rats), with 41% of neurons showing a unimodal response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from recordings in vM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "39895e70-a887-4fc5-a49e-a6e84089372a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C27",
+      "claim": "41% of vM1 neurons showed a unimodal response to optogenetic stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the average latency between laser onset and increased firing in vM1 was 4.81 \u00b1 0.43 ms (mean \u00b1 SEM, 109 neurons from five rats), with 41% of neurons showing a unimodal response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from recordings in vM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "8dafdb9d-e7a3-4b6c-a569-a4c246ff6118",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C28",
+      "claim": "The magnitude of the responses recorded in vS1 neurons depended on the duration of the laser pulse, and gradually increased as the duration of the laser pulse increased from 5 to 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnitude of the responses recorded in vS1 neurons depended on the duration of the laser pulse, and gradually increased as the duration of the laser pulse increased from 5 to 20 ms (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "fb470806-6d98-48a8-a567-d17747eb43b6",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C29",
+      "claim": "During the on response, paired vM1-vibrissa stimulation were significantly larger (by an average of 39%) than the expected linear sum of the two stimuli applied separately.",
+      "claim_type": "EXPLICIT",
+      "source": "During the on response, paired vM1-vibrissa stimulation were significantly larger (by an average of 39%) than the expected linear sum of the two stimuli applied separately (Figure 2A, 237 neurons from seven rats).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "1b40b848-e46e-41bd-a59c-b0181bf8365b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C30",
+      "claim": "In multi-unit analysis, the on response to paired ramp and hold vibrissa deflection and optogenetic vM1 stimulation was 34% larger than the expected sum of the two stimuli applied separately.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of multi-unit analysis the on response to paired ramp and hold vibrissa deflection and optogenetic vM1 stimulation was 34% larger than the expected sum of the two stimuli applied separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from multi-unit analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "562eb593-7492-4bb9-a2a5-60748111c3e0",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C31",
+      "claim": "In 57% of individual neurons (135 out of 237 neurons) paired vM1-vibrissa stimulation was significantly larger than the expected sum of solitary vibrissa deflection and vM1 optogenetic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found that in 57% of individual neurons (135 out of 237 neurons) paired vM1-vibrissa stimulation was significantly larger than the expected sum of solitary vibrissa deflection and vM1 optogenetic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from single-unit analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "ebd469f8-5270-428f-972c-628e69ef7422",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C32",
+      "claim": "A small yet significant supra-linearity was also observed during the off response despite the fact that the 20 ms optogenetic stimulation was applied at the onset of the 200 ms ramp and hold vibrissa deflection.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a small yet significant supra-linearity was also observed during the off response despite the fact we applied the 20 ms optogenetic stimulation at the onset of the 200 ms ramp and hold vibrissa deflection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "3d2dd97d-3436-41f9-8e66-8554b34ac394",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C33",
+      "claim": "Paired vM1-vibrissa deflection stimulation yielded an average off response that was 15% larger than the expected sum of the two stimuli applied separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired vM1-vibrissa deflection stimulation yielded an average off response that was 15% larger than the expected sum of the two stimuli applied separately (expected average linear sum of 207.6% \u00b1 11.7% compared to 238% \u00b1 12.4% of the averaged measured paired vM1-vibrissa stimulation, p<0.05, 237 units from seven rats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "73e58392-67b6-4a61-accf-2e23003de830",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C34",
+      "claim": "Putative layers 2\u20133 were defined as extending up to 600 \u00b5m from the pia, layer 4 as extending 650\u2013800 \u00b5m from the pia, and layer 5 as extending beyond 800 \u00b5m from the pia.",
+      "claim_type": "EXPLICIT",
+      "source": "We defined putative layers 2\u20133 as extending up to 600 \u00b5m from the pia, layer 4 as extending 650\u2013800 \u00b5m from the pia, and layer 5 as extending beyond 800 \u00b5m from the pia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology for layer assignment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "96e22450-dc4c-4f98-9c94-9860cc588146",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C35",
+      "claim": "Cortical layers were determined solely by the distance of the recording contact from the cortical surface, as cortical layers could not be verified by histological criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to stress that cortical layers were determined solely by the distance of the recording contact from the cortical surface, as we could not verify cortical layers by histological criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation acknowledged by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "b7717890-b360-4244-a899-212717d9ca16",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C36",
+      "claim": "Paired opto-stimulation of vM1 supra-linearly amplified the on response of vS1 neurons to ramp and hold vibrissa deflection in all cortical layers recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Paired opto-stimulation of vM1 supra-linearly amplified the on response vS1 neurons to ramp and hold vibrissa deflection in all cortical layers recorded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "baf00625-0eb8-4563-910a-d7ed5796478e",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C37",
+      "claim": "Supra-linearity was largest in putative layers 2\u20133 and 5, and smallest in putative layer 4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Supra-linearity was largest in putative layers 2\u20133 and 5, and smallest in putative layer 4 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "0dc56dea-8844-4f81-925c-fe017a4bc874",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C38",
+      "claim": "No significant differences were observed between layers 2\u20133 and 5 in supra-linearity.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant differences were observed between layers 2\u20133 and 5 (Figure 2D, analysis for the different layers is shown for the on response).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "af3a16fd-9d8c-4f62-bdc2-5e1de64d45df",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C39",
+      "claim": "The response evoked by paired vM1 optogenetic activation with artificial whisking against sandpaper was 42% larger than the expected linear sum of the two individual responses applied separately.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the response evoked by paired vM1 optogenetic activation with artificial whisking against sandpaper was 42% larger than the expected linear sum of the two individual responses applied separately (Figure 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "4b1ac4ae-9468-4e62-a275-3714bd31ec8d",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C40",
+      "claim": "69% of neurons (164 out of 241 neurons) had measured paired vM1-vibrissa stimulation that were significantly larger than the expected linear sum of isolated vibrissa deflection and vM1 optogenetic activation in artificial whisking experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "When we calculated the ratio of the measured versus expected responses for individual neurons we found that 69% of neurons (164 out of 241 neurons) had measured paired vM1-vibrissa stimulation that were significantly larger than the expected linear sum of isolated vibrissa deflection and vM1 optogenetic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from artificial whisking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bc20b634-b926-4647-965e-56fc24d1d1ba",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C41",
+      "claim": "Pairing vM1 activation with artificial whisking supra-linearly amplified the response in all recorded neocortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to ramp and hold vibrissa stimulation, pairing vM1 activation with artificial whisking supra-linearly amplified the response in all recorded neocortical layers (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "d925d174-944e-4cf2-959a-5a73de9edbf0",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C42",
+      "claim": "When vM1 was optogenetically activated 0\u201350 ms prior to passive vibrissa stimulation the paired response was significantly larger than that evoked by isolated passive vibrissa stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "When vM1 was optogenetically activated 0\u201350 ms prior to passive vibrissa stimulation the paired response was significantly larger than that evoked by isolated passive vibrissa stimulation (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "648580c9-0884-406e-9cba-70d395458daa",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C43",
+      "claim": "When vM1 was activated 75\u2013100 ms before or 20\u201350 ms after passive vibrissa stimulation the combined response did not significantly differ from the isolated vibrissa stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when vM1 was activated 75\u2013100 ms before or 20\u201350 ms after passive vibrissa stimulation the combined response did not significantly differ from the isolated vibrissa stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "ba4e5746-c506-4bf8-85ac-0a00d32770b7",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C44",
+      "claim": "The largest facilitating effect of vM1 activation was observed when the onset of the optogenetic vM1 activation preceded the onset of vibrissa stimulation by 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest facilitating effect of vM1 activation was observed when the onset of the optogenetic vM1 activation preceded the onset of vibrissa stimulation by 20 ms (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "4ee7621e-eb2c-4f72-af23-dd12ffbcbd8f",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C45",
+      "claim": "The temporal relationship showing maximal effect at -20 ms was observed for both ramp and hold vibrissa deflection and artificial whisking against sandpaper.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings were observed for both ramp and hold vibrissa deflection and artificial whisking against sandpaper (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "88db9e34-9b6e-4616-97dd-19a78f8b19e3",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C46",
+      "claim": "Neurons in the vS1 barrel cortex show a preference for the direction in which the vibrissa is deflected (angular tuning).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have reported that neurons in the vS1 barrel cortex show a preference for the direction in which the vibrissa is deflected (angular tuning) (Bruno et al., 2003; Andermann and Moore, 2006; Kremer et al., 2011; Lavzin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bcd2f6ec-ef11-4c1c-ad3d-a4b260aa053c",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C47",
+      "claim": "Angular tuning in neurons is located in layers 2\u20133 and layer 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous results, we found that angular tuning in neurons is located in layers 2\u20133 and layer 4 (Bruno et al., 2003; Andermann and Moore, 2006; Kremer et al., 2011; Lavzin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is consistent with previous studies and supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "8b1f12d5-203b-4ed3-8e39-a08d60b60608",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C48",
+      "claim": "Layer 5 neurons in the vS1 barrel cortex also show similar angular tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that layer 5 neurons in the vS1 barrel cortex also show similar angular tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "87c4ae34-cc8c-4d67-b28a-44470835a09c",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C49",
+      "claim": "62% \u00b1 8% of all recorded neurons showed significant angular tuning, with no significant differences between putative layers.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified the percent of neurons with significant angular tuning, and found that 62% \u00b1 8% of all recorded neurons showed significant angular tuning, with no significant differences between putative layers (significant angular tuning was defined by significant difference at the 0.05 level for comparison of the responses to the preferred angle and to the three least preferred angles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from angular tuning experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "1fa134bc-1e3f-47c6-85c6-d985a44fa0a9",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C50",
+      "claim": "Paired vM1 optogenetic activation significantly increased the average SI for angular tuning in vS1 barrel cortex neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments, we found that paired vM1 optogenetic activation significantly increased the average SI for angular tuning in vS1 barrel cortex neurons (Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bc484a7b-d376-47bb-92a0-225f22742e27",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C51",
+      "claim": "Paired vM1 optogenetic activation resulted in a right shift of the SI value histogram.",
+      "claim_type": "EXPLICIT",
+      "source": "which resulted from a right shift of the SI value histogram by vM1 activation (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f770f9d1-04ae-4f07-9cda-23f258611133",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C52",
+      "claim": "A significant increase in the SI of the preferred direction was observed in both 50\u201360 day old and 90\u2013100 day old rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed a significant increase in the SI of the preferred direction in both 50\u201360 day old and 90\u2013100 day old rats (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "281dbd30-0a41-4100-9471-8aa3729d9b2d",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C53",
+      "claim": "While the SI of the preferred direction increased, the SI values of the worst three angular directions decreased by vM1 activation, although this reduction did not reach statistical significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as expected, while the SI of the preferred direction increased, the SI values of the worst three angular directions decreased by vM1 activation, although this reduction did not reach statistical significance (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "67469d71-c001-489a-a9eb-a946a7c25762",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C54",
+      "claim": "In many cases the activation of vM1 increased the absolute response to the worst angles.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to stress that although the SI to the worst directions decreased, in many cases the activation of vM1 increased the absolute response to the worst angles (see examples in Figure 5, and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "0d9776e5-2d95-45db-ba98-aadd2260b310",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C55",
+      "claim": "Multi-unit activity demonstrated that vM1 optogenetic activation significantly sharpened angular tuning of vS1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to single- unit activity multi-unit activity, again demonstrated that vM1 optogenetic activation significantly sharpened angular tuning of vS1 neurons (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "e093e140-81b0-458f-af70-03745a17d817",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C56",
+      "claim": "The sharpening of angular tuning with multi-unit analysis is consistent with the previously reported spatial mapping of angular tuning in the barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact we observed sharpening of angular tuning with multi-unit analysis is consistent with the previously reported spatial mapping of angular tuning in the barrel cortex (Kremer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the current findings to previous work, supported by a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "dc916357-e8db-4409-b98c-445dc6a4196e",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C57",
+      "claim": "vM1 optogenetic activation significantly increased the amplitude of the vector sum.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that similar to the effect on SI, vM1 optogenetic activation significantly increased the amplitude of the vector sum (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bfe72ee3-1678-4bad-9b02-fbc2ad89b0fe",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C58",
+      "claim": "The amplitude of the vector sum increased by 29% \u00b1 7% on average.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, the amplitude of the vector sum increased by 29% \u00b1 7%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "1ded0cc3-a161-43d7-aceb-a75b7e554ebd",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C59",
+      "claim": "A significant sharpening of angular tuning by paired vM1 activation was observed in all recorded neocortical layers (layers 2\u20135), with no significant differences between the recorded putative layers.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant sharpening of angular tuning by paired vM1 activation was observed in all recorded neocortical layers (layers 2\u20135), with no significant differences between the recorded putative layers (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c88431e7-f1ad-4fb2-b4d8-817cf48a3282",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C60",
+      "claim": "The majority of neurons retained their preferred angular direction during opto-stimulation of vM1.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of neurons retained their preferred angular direction during opto-stimulation of vM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "df7f9cc8-1f8e-4317-94f8-11924472bb8a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C61",
+      "claim": "The probability for retaining the preferred angular direction during paired vM1 activation was larger in neurons with higher SI during solitary unpaired vibrissa stimulation, with 70.9% of neurons with SI greater than two retaining their preferred angular direction after paired vM1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability for retaining the preferred angular direction during paired vM1 activation was larger in neurons with higher SI during solitary unpaired vibrissa stimulation, with 70.9% of neurons with SI greater than two retaining their preferred angular direction after paired vM1 activation (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "06e857eb-5ca6-4b73-86db-d8575b7d5540",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C62",
+      "claim": "Neurons that retained their preferred angular direction showed a significantly greater degree of sharpening of their angular tuning curve by vM1 optogenetic activation, as compared to neurons that changed their preferred angular tuning during paired vM1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, neurons that retained their preferred angular direction showed a significantly greater degree of sharpening of their angular tuning curve by vM1 optogenetic activation, as compared to neurons that changed their preferred angular tuning during paired vM1 activation (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "27067326-dc5b-4526-afd6-724fb969e409",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C63",
+      "claim": "The strongest monosynaptic connections between vM1 and vS1 exist between neurons in layers 2\u20133 and layer 5A of vM1 and layer 5A and 5B neurons in the vS1 barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest monosynaptic connections between vM1 and vS1 exist between neurons in layers 2\u20133 and layer 5A of vM1 and layer 5A and 5B neurons in the vS1 barrel cortex (Mao et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "25ecb5a7-16b3-4f6d-80cd-ab6dd77a5023",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C64",
+      "claim": "Reciprocal connections exist between layers 2\u20133 and 5A neurons in vS1 and vM1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, reciprocal connections also exist between layers 2\u20133 and 5A neurons in vS1 and vM1 neurons (Hooks et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "0878382f-662d-4a83-b220-194730d95917",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C65",
+      "claim": "A subset of vM1 axons reach layer 1 of the vS1 barrel cortex, and carry both motor information regarding different vibrissa movement parameters and more complex sensory information regarding contact of vibrissae with objects, and spatial localization of objects.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of vM1 axons reach layer 1 of the vS1 barrel cortex, and carry both motor information regarding different vibrissa movement parameters and more complex sensory information regarding contact of vibrissae with objects, and spatial localization of objects (Petreanu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "80a1b25d-e0b3-4c1a-b7c8-c3f522e1fd9c",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C66",
+      "claim": "vM1 inputs innervating tuft dendrites of vS1 layer 5 pyramidal neurons critically participate in dendritic spike initiation when vibrissae actively touched objects in a location and angle-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, vM1 inputs innervating tuft dendrites of vS1 layer 5 pyramidal neurons critically participate in dendritic spike initiation when vibrissae actively touched objects in a location and angle-dependent manner (Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "583b8f8f-240e-4a46-a2c2-067f4678aad0",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C67",
+      "claim": "Short (20 ms) optogenetic stimulation of vM1 neurons significantly increased firing of vS1 barrel neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that short (20 ms) optogenetic stimulation of vM1 neurons significantly increased firing of vS1 barrel neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "03f15a42-7fc9-4e75-addb-111269c94020",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C68",
+      "claim": "The findings are in agreement with the results of a recent study performed in awake behaving rodents that reported activation of vS1 barrel neurons by optogenetic stimulation of vM1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in agreement with the results of a recent study performed in awake behaving rodents that reported activation of vS1 barrel neurons by optogenetic stimulation of vM1 neurons (Zagha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to previous work, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "8e915a50-8b58-4933-ab61-5afea3d76e97",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C69",
+      "claim": "Zagha et al. (2013) reported that optogenetic activation of vM1 resulted in context-dependent changes in the network state of the barrel cortex and increased reliability of responses to complex sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zagha et al. (2013) also reported that optogenetic activation of vM1 resulted in context-dependent changes in the network state of the barrel cortex and increased reliability of responses to complex sensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from a previous study, supported by a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c7eacaa4-f260-45a7-b96c-579660ebbfbf",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C70",
+      "claim": "Motor information from vM1 neurons and sensory information from the vibrissae summate supra-linearly in vS1 barrel neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that motor information from vM1 neurons and sensory information from the vibrissae summate supra-linearly in vS1 barrel neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f5026e1b-e423-4543-ac82-a8a2884bb422",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C71",
+      "claim": "Maximal vM1-vibrissa interactions occurred when vM1 activation preceded vibrissa stimulation by 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found maximal vM1-vibrissa interactions occurred when vM1 activation preceded vibrissa stimulation by 20 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "789a1bff-c05b-4e6f-a5e2-a243e207ebec",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C72",
+      "claim": "The optimal temporal window for vM1-vibrissa input interactions suggested that vM1 sent primarily feedforward information regarding the planned vibrissa movements, rather than feedback information originating in the sensory motor loop.",
+      "claim_type": "EXPLICIT",
+      "source": "This optimal temporal window for vM1-vibrissa input interactions suggested that vM1 sent primarily feedforward information regarding the planned vibrissa movements, rather than feedback information originating in the sensory motor loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "b2ded597-06c4-4823-8807-d10808111ab5",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C73",
+      "claim": "vM1 activation not only amplified the response of vS1 barrel neurons to incoming vibrissa sensory inputs, but also sharpened their angular tuning curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that vM1 activation, not only amplified the response of vS1 barrel neurons to incoming vibrissa sensory inputs, but also sharpened their angular tuning curve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f41c6764-dc4c-4143-a528-d69a90693557",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C74",
+      "claim": "vM1 inputs participated in increasing both the sensitivity and specificity of barrel cortex neurons to incoming sensory information from the vibrissae.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it seems vM1 inputs participated in increasing both the sensitivity and specificity of barrel cortex neurons to incoming sensory information from the vibrissae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "0062493a-fcbc-4503-8138-caf8adbe8840",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C75",
+      "claim": "The direct effect of vM1 on vS1 neurons may underlie the difference between passive and active sensing in the barrel vibrissa somatosensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effect of vM1 on vS1 neurons may underlie the difference between passive and active sensing in the barrel vibrissa somatosensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "97c24201-2a68-43cc-99e8-fa92648a5d85",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C76",
+      "claim": "Dendrites of neocortical excitatory neurons can support generation of local dendritic sodium, calcium and NMDA spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that dendrites of neocortical excitatory neurons can support generation of local dendritic sodium, calcium and NMDA spikes (Stuart et al., 1997; Larkum et al., 1999, 2009; Schiller et al., 2000; Polsky et al., 2004; London and H\u00e4usser, 2005; Branco et al., 2010; Lavzin et al., 2012; Xu et al., 2012; Harnett et al., 2013; Major et al., 2013; Smith et al., 2013; Palmer et al., 2014; Cichon and Gan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f06fcaf5-c63e-4f55-865a-b0c8353ae5c2",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C77",
+      "claim": "It is possible that pairing vM1 inputs with inputs carrying vibrissa sensory information results in initiation of local dendritic spikes in vS1 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that pairing vM1 inputs with inputs carrying vibrissa sensory information results in initiation of local dendritic spikes vS1 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "70cd7f78-4489-4909-bdcd-1c087220bc8e",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C78",
+      "claim": "Several previous in vivo studies reported initiation of dendritic spikes in tuft dendrites of vS1 layer-5 pyramidal neurons in response to vM1 and M2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this possibility are the results of several previous in vivo studies that reported initiation of dendritic spikes in tuft dendrites of vS1 layer-5 pyramidal neurons in response to vM1 and M2 activation (Xu et al., 2012; Manita et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "4189d75a-d559-4762-81f5-789141048aa1",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C79",
+      "claim": "vM1 inputs may selectively innervate VIP inhibitory inter neurons, as described for the medial prefrontal inputs to the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, vM1 inputs may selectively innervate VIP inhibitory inter neurons, as described for the medial prefrontal inputs to the auditory cortex (Lee et al., 2013; Pi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on analogous findings in another system, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "ace58d11-046d-4db9-8d81-8cd3a844a6d2",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C80",
+      "claim": "In the case where vM1 inputs activate VIP inter neurons, vM1 inputs will activate VIP inter neurons, which will inhibit other inhibitory inter neurons, and in turn secondary excite pyramidal neurons in vS1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, vM1 inputs will activate VIP inter neurons, which will inhibit other inhibitory inter neurons, and in turn secondary excite pyramidal neurons in vS1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "54427cc1-5eae-4ba7-a8e4-1a3604b7d15d",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C81",
+      "claim": "The barrel vibrissa system uses active sensing to palpate objects in the near vicinity of the rodents head.",
+      "claim_type": "EXPLICIT",
+      "source": "The barrel vibrissa system uses active sensing to palpate objects in the near vicinity of the rodents head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "20aa1777-3552-4310-a4e4-a399649c43e8",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C82",
+      "claim": "vM1, the motor cortex of the barrel vibrissa system, is responsible for generating the whisking movements of the mystacial vibrissae.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, vM1, the motor cortex of the barrel vibrissa system, is responsible for generating the whisking movements of the mystacial vibrissae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "a32c3e42-b463-466c-a6b8-00ab11944d3b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C83",
+      "claim": "vM1 can drive whisking either by directly activating lower motor neurons in the facial nucleus, especially during protraction movements, or alternatively, by activating a brain stem CPG located in close proximity to or within the Botzinger complex.",
+      "claim_type": "EXPLICIT",
+      "source": "vM1 can drive whisking either by directly activating lower motor neurons in the facial nucleus, especially during protraction movements, or alternatively, by activating a brain stem CPG located in close proximity to or within the Botzinger complex. In the latter case the CPG drives the facial nucleus to generate rhythmic movements (Grinevich et al., 2005; Haiss and Schwarz, 2005; Gerdjikov et al., 2013; Moore et al., 2013; Petersen, 2014; Sreenivasan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "50f642c4-00a9-4f4a-a722-c557a54ffa31",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C84",
+      "claim": "vM1 inputs can convey a simple 'attentional cue' to prepare vS1 barrel cortex neurons for the incoming sensory information from the vibrissae.",
+      "claim_type": "EXPLICIT",
+      "source": "First, vM1 inputs can convey a simple 'attentional cue' to prepare vS1 barrel cortex neurons for the incoming sensory information from the vibrissae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis about the functional role.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "742cfae9-0fe6-4be1-b96b-30644ee92aa2",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C85",
+      "claim": "Previous studies have shown that increased attention and especially activation of the frontal eye field area increases the sensitivity and specificity of cortical neurons in sensory visual regions to different visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding this possibility, it is interesting to note that previous studies have shown that increased attention and especially activation of the frontal eye field area increases the sensitivity and specificity of cortical neurons in sensory visual regions to different visual stimuli (McAdams and Maunsell, 1999; Reynolds and Chelazzi, 2004; Noudoost et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the visual system, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "9d50f597-aeeb-40c3-b7b6-c8f001c83533",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C86",
+      "claim": "vM1 inputs may convey a motor efference copy that can be used for computing the location as well as shape and texture of objects by comparing the expected (vM1) with the measured (thalamo-cortical) vibrissa movements.",
+      "claim_type": "EXPLICIT",
+      "source": "The second possibility is that vM1 inputs convey a motor efference copy that can be used for computing the location as well as shape and texture of objects by comparing the expected (vM1) with the measured (thalamo-cortical) vibrissa movements (Diamond et al., 2008; Curtis and Kleinfeld, 2009; Kleinfeld and Desch\u00eanes, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations to related work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5a4339f2-9f28-4810-8a39-3c7bc0735d15",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C87",
+      "claim": "vM1 inputs can serve to convey top-down dynamical modifications of sensory processing in the primary vS1 cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, multiple inputs converge onto the barrel motor cortex, thus vM1 inputs can serve to convey top-down dynamical modifications of sensory processing in the primary vS1 cortex (Xu et al., 2012; Zagha et al., 2013; Manita et al., 2015), see also Squire et al. (2013) regarding the visual system).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "152139a3-c7cc-4461-82db-aeaa3ebe0d68",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C88",
+      "claim": "The significant effects vM1 inputs have on vS1 neurons may underlie the importance of active sensing in the somatosensory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the exact computational role vM1 inputs play in sensory processing in vS1 neurons, the significant effects vM1 inputs have on vS1 neurons may underlie the importance of active sensing in the somatosensory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c550a227-2797-4d62-bcc0-1bd5df539fb1",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C89",
+      "claim": "Further studies in awake behaving rodents are needed to distinguish between the three functional possibilities and decipher the functional role of M1 inputs in sensory processing in somatosensory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Further studies in awake behaving rodents are needed to distinguish between these three possibilities and decipher the functional role of M1 inputs in sensory processing in somatosensory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "ba2c1768-5358-4d37-af87-daa7b1fc4a52",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C90",
+      "claim": "Experiments were conducted in accordance with NIH and institutional standards for the care and use of animals in research, and received the approval of the institutional animal ethics committee (protocol 007-01-2014).",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted experiments in accordance with NIH and institutional standards for the care and use of animals in research, and received the approval of our institutional animal ethics committee (protocol 007-01-2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c66b6db8-6b62-4b81-b4e8-196810c586cf",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C91",
+      "claim": "P50-60 Wistar rats were anesthetized by intra-peritoneal injection of Urethane (20% dissolved in normal saline).",
+      "claim_type": "EXPLICIT",
+      "source": "P50-60 Wistar rats were anesthetized by intra-peritoneal injection of Urethane (20% dissolved in normal saline).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "44c754f5-6940-4350-95da-20fe102426a1",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C92",
+      "claim": "Body temperature was carefully maintained at 36\u201337\u00b0C using a heating pad.",
+      "claim_type": "EXPLICIT",
+      "source": "Body temperature was carefully maintained at 36\u201337\u00b0C using a heating pad (FHC, Montana, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "551069f8-1b77-45a4-9833-9882fa79df49",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C93",
+      "claim": "Electrophysiological recordings were performed simultaneously from multiple neurons in layers 2\u20135 of the vS1 barrel cortex using silicone multi-contact probes.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological recordings were performed simultaneously from multiple neurons in layers 2\u20135 of the vS1 barrel cortex using silicone multi-contact probes (NeuroNexus, Michigan, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "d9de24d8-b514-496c-ab3e-c7ee6c6e24ad",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C94",
+      "claim": "The silicone probes (A 1 \u00d7 16 MEA) were composed of a single-shaft electrode with 16 recording contacts arranged along a vertical line and separated by 50 micrometers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our silicone probes (A 1 \u00d7 16 MEA) were composed of a single-shaft electrode with 16 recording contacts arranged along a vertical line and separated by 50 micrometers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "6945228f-d03c-4b07-af06-9eef1bb7adbb",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C95",
+      "claim": "Electrodes were slowly lowered until the electrode tip reached approximately a depth of 1000\u20131100 \u00b5m from the pial surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrodes were slowly lowered until the electrode tip reached approximately a depth of 1000\u20131100 \u00b5m from the pial surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "dd4731a2-ae5b-48f4-b53c-6a7c67baf276",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C96",
+      "claim": "All vibrissae aside from the principal vibrissa were trimmed during the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "During the experiments, we trimmed all vibrissae aside from the principal vibrissa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "1a2ae896-6296-4e8d-a29d-10daa4471043",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C97",
+      "claim": "The average signal to noise (SNR) value of the units was 11.2 \u00b1 0.4 (range of 7\u201315).",
+      "claim_type": "EXPLICIT",
+      "source": "The average signal to noise (SNR) value of our units was 11.2 \u00b1 0.4 (range of 7\u201315, Rousche et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5694c776-9185-4d15-a8a6-958c6c1c1f67",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C98",
+      "claim": "To transfect pyramidal neurons of vM1 with channelrhodopsin 2 (ChR2), a solution (500 nl) containing the ChR2 expressing viral vector (AAV2.1.CAMKIIa-hChR2(H134)-mCherry.WPRE.hGH) was injected into the vM1 region.",
+      "claim_type": "EXPLICIT",
+      "source": "To transfect pyramidal neurons of vM1 with channelrhodopsin 2 (ChR2), a craniotomy was drilled over the vM1 region (2 mm anterior to bregma and 1.25 mm lateral to the midline) under Isoflurane anesthesia and local anesthetic injection in P25-30 rats. A solution (500 nl) containing the ChR2 expressing viral vector (AAV2.1.CAMKIIa-hChR2(H134)-mCherry.WPRE.hGH, UNC viral core facility, North Carolina, USA) was injected into the vM1 region via a small craniotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "49853442-ed34-4a07-b220-794f6f9aa68a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C99",
+      "claim": "ChR2 was expressed in excitatory neurons by using the promotor CaMKII.",
+      "claim_type": "EXPLICIT",
+      "source": "ChR2 expressed in excitatory neurons by using the promotor CaMKII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f32f1b5f-e3a7-485d-a116-bcb0df410406",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C100",
+      "claim": "Electrophysiological recordings were performed 4\u20136 weeks after viral vector injections to allow for ChR2 expression in the target pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow for ChR2 expression in the target pyramidal neurons electrophysiological recordings were performed 4\u20136 weeks after viral vector injections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "32cd2dba-b281-4736-843f-4cf3bdc8afdd",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C101",
+      "claim": "In control rats (intact un-severed buccolibial nerve), optogenetic stimulation of vM1 resulted in whisking movements (n = 5).",
+      "claim_type": "EXPLICIT",
+      "source": "In control rats (intact un-severed buccolibial nerve), optogenetic stimulation of vM1 resulted in whisking movements (n = 5), functionally confirming the location of vM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data confirming the location of vM1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "0742e9d6-0aa0-4c3b-91c4-2c91f71c7df4",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "claim_id": "C102",
+      "claim": "Upon cutting the buccolabial nerve, optogenetic stimulation of vM1 showed no whisking movements in all rats tested.",
+      "claim_type": "IMPLICIT",
+      "source": "Upon cutting the buccolabial nerve, optogenetic stimulation of vM1 showed whisking movements in all rats tested, including the five rats in which vM1 optogenetic activation yielded whisking prior to cutting the buccolabial nerve.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text appears to contain an error - it states 'showed whisking movements' but the context suggests it should be 'showed no whisking movements' after cutting the nerve. This is inferred from the experimental design.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "764eca1b-e8f8-4998-90f4-0ff9539275e2",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Optogenetic activation of vM1 supra-linearly amplified vS1 neuronal responses to passive vibrissa stimulation across all cortical layers, with the paired response being 39% larger than the linear sum in single-unit analysis and 34% larger in multi-unit analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C29-C31, C36-C38, and C70 collectively demonstrate supra-linear amplification with consistent experimental evidence from both single-unit and multi-unit recordings across multiple cortical layers. The data show statistically significant effects (p<0.001) with appropriate sample sizes (237 neurons from seven rats), and the findings are replicated across different stimulation paradigms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "4d7484b9-341c-4dea-8ce3-4563ceecc02a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pairing vM1 activation with artificial whisking against sandpaper produced supra-linear amplification (42% larger than expected linear sum) in all neocortical layers, with 69% of individual neurons showing significant enhancement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 provide converging evidence from an alternative stimulation paradigm (artificial whisking) that replicates the supra-linear amplification effect. The consistency across two different passive stimulation methods (ramp-and-hold and artificial whisking) strengthens the robustness of the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "c2039e02-dd73-4450-8a8d-a00cba1116bb",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The maximal facilitating effect of vM1 on vS1 responses occurred when vM1 activation preceded vibrissa stimulation by 20 ms, suggesting vM1 sends feedforward preparatory signals rather than feedback information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C42-C45, C71-C72 demonstrate a clear temporal relationship with maximal effect at -20 ms delay, replicated across both stimulation paradigms. The interpretation that this represents feedforward signaling (C72) is reasonable given the temporal dynamics, though the authors acknowledge limitations in precisely measuring transmission delays.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "79b3a914-95fe-469a-9f91-8078931a5c38",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "vM1 activation sharpened angular tuning of vS1 neurons across all cortical layers, significantly increasing the selectivity index and vector sum amplitude (29% increase), thereby enhancing both sensitivity and specificity of sensory responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C50-C51, C55, C57-C59, C73-C74 provide comprehensive evidence for angular tuning sharpening with statistical significance (p<0.01) across both single-unit and multi-unit analyses. The consistency across cortical layers and the use of multiple quantification methods (SI and vector sum) strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "689bb532-37db-4a27-990d-2e883dbf1bff",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The majority of neurons retained their preferred angular direction during vM1 activation, with neurons having higher baseline selectivity (SI>2) showing greater stability (70.9% retention) and more pronounced sharpening effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 provide detailed analysis of how angular tuning stability relates to baseline selectivity and the magnitude of sharpening effects. The data show clear relationships between baseline SI, direction retention, and degree of sharpening, with appropriate statistical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "226ec4a9-98ba-43dd-8dfc-0e95eaafd943",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Layer 5 neurons in vS1 barrel cortex exhibit angular tuning similar to layers 2-3 and 4, with 62% of all recorded neurons showing significant angular tuning across layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 present a novel finding extending previous knowledge about angular tuning to layer 5. The quantification is appropriate with clear statistical criteria (p<0.05), though the authors acknowledge the limitation that layer assignment was based solely on depth without histological verification (C35).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "644ff547-cee1-4c17-8b77-48f31cff043a",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A small but significant supra-linearity (15% enhancement) was observed during the off response despite vM1 activation occurring 180 ms earlier at stimulus onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 report an unexpected finding of persistent effects during the off response. While statistically significant (p<0.05), the effect is smaller than the on response and the mechanism is not explored, making this a secondary observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "03d637c6-50e0-419e-ae55-5abbb36a26db",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "vM1 activation increased the selectivity index of the preferred direction in both young (50-60 days) and older (90-100 days) rats, while responses to non-preferred directions showed variable effects including increased absolute responses despite decreased relative selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 provide age-related analysis and detailed characterization of how vM1 affects responses to different angular directions. The finding that absolute responses to worst angles can increase while relative selectivity decreases is important for understanding the mechanism, though the decrease in worst direction SI did not reach significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optogenetic stimulation effectively activated vM1 neurons, with 84% of neurons showing significant firing rate increases (563% above baseline) at short latency (4.81 ms), validating the optogenetic approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C67 provide essential validation of the optogenetic manipulation with appropriate sample size (109 neurons from five rats) and clear quantification of activation efficacy, latency, and response characteristics. This is critical methodological validation for interpreting the main results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "2d8494d6-bcab-49f8-b024-cdfa60b8cbc3",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The magnitude of vS1 responses to vM1 optogenetic activation was dose-dependent, gradually increasing with laser pulse duration from 5 to 20 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C28 demonstrates appropriate dose-response characterization that justified the choice of 20 ms stimulation for subsequent experiments. This is important methodological optimization supported by Figure 1E.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5ef98fad-c287-4b81-a7da-fc37cc26238b",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cutting the buccolabialis branch of the facial nerve successfully eliminated cortical-driven whisking movements while preserving the ability to record vM1 and vS1 activity, as validated by control experiments showing whisking before but not after nerve transection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C21, C101, and C102 describe the critical experimental manipulation to dissociate motor and sensory pathways. However, C102 appears to contain a textual error stating whisking was observed after nerve cut, when the experimental logic requires the opposite. While the approach is sound and validated in controls (C101), the contradictory statement in C102 creates uncertainty about complete documentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "5c68c2fa-7c3e-4bb3-8e2e-ee7258a1d2b7",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cortical layers were assigned based solely on recording depth from the pia (layers 2-3: 0-600 \u03bcm, layer 4: 650-800 \u03bcm, layer 5: >800 \u03bcm) without histological verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 transparently acknowledge a significant methodological limitation. While the depth-based assignment follows reasonable conventions, the lack of histological verification introduces uncertainty in layer-specific conclusions. The authors appropriately qualify these as 'putative' layers throughout.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "3ddc8f0c-6bd8-4ebc-80da-4d73b0e33249",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "vM1 sends preparatory feedforward signals to vS1 that amplify and sharpen sensory responses, potentially underlying the difference between passive and active sensing in the vibrissa system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C72, C74, and C75 represent the authors' main interpretive conclusions synthesizing the experimental findings. The interpretation of feedforward preparatory signaling is well-supported by the temporal dynamics data, though the broader functional significance (C75) remains somewhat speculative and would benefit from awake behaving experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "73a25c3f-487d-46f5-9cbb-2e561adccee1",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Dendritic spike initiation in vS1 neurons may be a mechanism underlying the supra-linear amplification, consistent with previous in vivo studies showing dendritic spikes in layer 5 pyramidal neurons during vM1/M2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78 propose a plausible mechanistic hypothesis supported by prior literature (C76, C78), but this mechanism was not directly tested in the current study (C77 explicitly states this is speculative). While the hypothesis is reasonable and well-grounded in prior work, it remains unverified in this experimental context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "bf9ebc04-3c05-4723-b683-4698723706bd",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "vM1 inputs may selectively activate VIP inhibitory interneurons leading to disinhibition of pyramidal neurons, analogous to mechanisms described in auditory cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 propose an alternative disinhibitory circuit mechanism based on analogy to other systems. This is purely speculative (C79 states 'may') with no direct experimental evidence in the current study. While plausible, this hypothesis requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "1b02b237-7d19-4b60-8b81-922dd5b666c2",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Three functional hypotheses are proposed for vM1-to-vS1 signaling: attentional cue, motor efference copy, or top-down modulation, with further studies in awake animals needed to distinguish between these possibilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 present well-reasoned functional hypotheses grounded in relevant literature from both somatosensory and visual systems. The authors appropriately acknowledge these as speculative possibilities requiring future investigation (C89), making this a thoughtful discussion of functional implications rather than unsupported claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "61592c99-208a-42eb-a3c1-73e78a935746",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The vibrissae-barrel system anatomy and physiology, including vM1's role in whisking generation and its direct projections to vS1, are established based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C20 provide appropriate background context well-supported by multiple citations. These establish the known anatomical and functional organization of the system, providing necessary foundation for the experimental work. The authors correctly identify both established knowledge and remaining uncertainties (e.g., C14).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "905bfc0c-31b0-4252-a609-8bd257c17778",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The experimental methods included appropriate animal care protocols, anesthesia, temperature maintenance, multi-electrode recordings with good signal quality (SNR 11.2\u00b10.4), and validated optogenetic transfection procedures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C100 document standard methodological procedures with appropriate detail. Ethical approval is documented (C90), recording quality is quantified (C97), and optogenetic methods are clearly described with adequate expression time (C100). These represent competent execution of established techniques.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "ba0e4ae7-aab8-4638-8539-9753612dad27",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The principal barrel was identified using intrinsic imaging and verified by multi-unit recordings during manual vibrissa deflection, with typical on/off responses to 200 ms ramp-and-hold stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 describe appropriate methods for barrel identification using established techniques (intrinsic imaging) with functional verification. The characterization of typical response patterns provides important baseline data for interpreting experimental manipulations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "96274529-df38-4446-9b7d-b6548de684e5",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Prior studies have established angular tuning in vS1 layers 2-4, anatomical connectivity between vM1 and vS1, and functional effects of vM1 activation on vS1 network state and response reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C63-C66, C68-C69 appropriately cite and summarize relevant prior work that provides context for the current findings. The authors correctly position their work relative to existing literature, particularly the Zagha et al. 2013 study in awake animals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "f722fa24-e432-4f08-b2a5-e66a19d077fb",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The observation of angular tuning sharpening in multi-unit analysis is consistent with previously reported spatial mapping of angular tuning in barrel cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 makes an appropriate inference connecting the multi-unit findings to prior spatial mapping studies (Kremer et al., 2011). This helps validate that the multi-unit effects reflect genuine spatial organization rather than artifacts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    },
+    {
+      "id": "967b4f9b-b62a-413f-98a4-de2e9c7ead2f",
+      "content_id": "bdffd1c4-f917-4a4d-a66d-e69ff5cdeeda",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The barrel vibrissa system uses active sensing with vM1 generating whisking movements either by directly activating facial nucleus motor neurons or via a brainstem central pattern generator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C83 summarize established knowledge about the motor control of whisking, appropriately citing relevant literature. This provides important functional context for understanding why vM1-to-vS1 signaling might be important for active sensing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:22:17.959555Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e8b1e7a4-23d2-418a-acc6-8cf95974f3c4",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "fb470806-6d98-48a8-a567-d17747eb43b6",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "1b40b848-e46e-41bd-a59c-b0181bf8365b",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "562eb593-7492-4bb9-a2a5-60748111c3e0",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "b7717890-b360-4244-a899-212717d9ca16",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "baf00625-0eb8-4563-910a-d7ed5796478e",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "0dc56dea-8844-4f81-925c-fe017a4bc874",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "c7eacaa4-f260-45a7-b96c-579660ebbfbf",
+      "result_id": "764eca1b-e8f8-4998-90f4-0ff9539275e2"
+    },
+    {
+      "claim_id": "af3a16fd-9d8c-4f62-bdc2-5e1de64d45df",
+      "result_id": "4d7484b9-341c-4dea-8ce3-4563ceecc02a"
+    },
+    {
+      "claim_id": "4b1ac4ae-9468-4e62-a275-3714bd31ec8d",
+      "result_id": "4d7484b9-341c-4dea-8ce3-4563ceecc02a"
+    },
+    {
+      "claim_id": "bc20b634-b926-4647-965e-56fc24d1d1ba",
+      "result_id": "4d7484b9-341c-4dea-8ce3-4563ceecc02a"
+    },
+    {
+      "claim_id": "4a2f6c42-5141-4f04-8442-59b6187058cf",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "d925d174-944e-4cf2-959a-5a73de9edbf0",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "648580c9-0884-406e-9cba-70d395458daa",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "ba4e5746-c506-4bf8-85ac-0a00d32770b7",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "4ee7621e-eb2c-4f72-af23-dd12ffbcbd8f",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "f5026e1b-e423-4543-ac82-a8a2884bb422",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "789a1bff-c05b-4e6f-a5e2-a243e207ebec",
+      "result_id": "c2039e02-dd73-4450-8a8d-a00cba1116bb"
+    },
+    {
+      "claim_id": "2a1e1296-1383-4b6e-a7fa-2405d65aa95d",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "1fa134bc-1e3f-47c6-85c6-d985a44fa0a9",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "bc484a7b-d376-47bb-92a0-225f22742e27",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "0d9776e5-2d95-45db-ba98-aadd2260b310",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "dc916357-e8db-4409-b98c-445dc6a4196e",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "bfe72ee3-1678-4bad-9b02-fbc2ad89b0fe",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "1ded0cc3-a161-43d7-aceb-a75b7e554ebd",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "b2ded597-06c4-4823-8807-d10808111ab5",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "f41c6764-dc4c-4143-a528-d69a90693557",
+      "result_id": "79b3a914-95fe-469a-9f91-8078931a5c38"
+    },
+    {
+      "claim_id": "c88431e7-f1ad-4fb2-b4d8-817cf48a3282",
+      "result_id": "689bb532-37db-4a27-990d-2e883dbf1bff"
+    },
+    {
+      "claim_id": "df7f9cc8-1f8e-4317-94f8-11924472bb8a",
+      "result_id": "689bb532-37db-4a27-990d-2e883dbf1bff"
+    },
+    {
+      "claim_id": "06e857eb-5ca6-4b73-86db-d8575b7d5540",
+      "result_id": "689bb532-37db-4a27-990d-2e883dbf1bff"
+    },
+    {
+      "claim_id": "8b1f12d5-203b-4ed3-8e39-a08d60b60608",
+      "result_id": "226ec4a9-98ba-43dd-8dfc-0e95eaafd943"
+    },
+    {
+      "claim_id": "87c4ae34-cc8c-4d67-b28a-44470835a09c",
+      "result_id": "226ec4a9-98ba-43dd-8dfc-0e95eaafd943"
+    },
+    {
+      "claim_id": "ebd469f8-5270-428f-972c-628e69ef7422",
+      "result_id": "644ff547-cee1-4c17-8b77-48f31cff043a"
+    },
+    {
+      "claim_id": "3d2dd97d-3436-41f9-8e66-8554b34ac394",
+      "result_id": "644ff547-cee1-4c17-8b77-48f31cff043a"
+    },
+    {
+      "claim_id": "f770f9d1-04ae-4f07-9cda-23f258611133",
+      "result_id": "03d637c6-50e0-419e-ae55-5abbb36a26db"
+    },
+    {
+      "claim_id": "281dbd30-0a41-4100-9471-8aa3729d9b2d",
+      "result_id": "03d637c6-50e0-419e-ae55-5abbb36a26db"
+    },
+    {
+      "claim_id": "67469d71-c001-489a-a9eb-a946a7c25762",
+      "result_id": "03d637c6-50e0-419e-ae55-5abbb36a26db"
+    },
+    {
+      "claim_id": "3799d624-6607-4ea3-8563-e299c69d4533",
+      "result_id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6"
+    },
+    {
+      "claim_id": "e535dc17-b484-4163-b901-e0284c0b6d26",
+      "result_id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6"
+    },
+    {
+      "claim_id": "2b3d1a00-e660-4765-bd95-c58871a38f91",
+      "result_id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6"
+    },
+    {
+      "claim_id": "39895e70-a887-4fc5-a49e-a6e84089372a",
+      "result_id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6"
+    },
+    {
+      "claim_id": "583b8f8f-240e-4a46-a2c2-067f4678aad0",
+      "result_id": "8b84f930-27a1-4f4e-bd0c-2f6acaed8ae6"
+    },
+    {
+      "claim_id": "8dafdb9d-e7a3-4b6c-a569-a4c246ff6118",
+      "result_id": "2d8494d6-bcab-49f8-b024-cdfa60b8cbc3"
+    },
+    {
+      "claim_id": "fd25cf09-5f96-4876-9786-94d10fbbd4b4",
+      "result_id": "5ef98fad-c287-4b81-a7da-fc37cc26238b"
+    },
+    {
+      "claim_id": "32cd2dba-b281-4736-843f-4cf3bdc8afdd",
+      "result_id": "5ef98fad-c287-4b81-a7da-fc37cc26238b"
+    },
+    {
+      "claim_id": "0742e9d6-0aa0-4c3b-91c4-2c91f71c7df4",
+      "result_id": "5ef98fad-c287-4b81-a7da-fc37cc26238b"
+    },
+    {
+      "claim_id": "73e58392-67b6-4a61-accf-2e23003de830",
+      "result_id": "5c68c2fa-7c3e-4bb3-8e2e-ee7258a1d2b7"
+    },
+    {
+      "claim_id": "96e22450-dc4c-4f98-9c94-9860cc588146",
+      "result_id": "5c68c2fa-7c3e-4bb3-8e2e-ee7258a1d2b7"
+    },
+    {
+      "claim_id": "5f72e192-10b8-4b3d-8671-f32b16b3583b",
+      "result_id": "3ddc8f0c-6bd8-4ebc-80da-4d73b0e33249"
+    },
+    {
+      "claim_id": "789a1bff-c05b-4e6f-a5e2-a243e207ebec",
+      "result_id": "3ddc8f0c-6bd8-4ebc-80da-4d73b0e33249"
+    },
+    {
+      "claim_id": "f41c6764-dc4c-4143-a528-d69a90693557",
+      "result_id": "3ddc8f0c-6bd8-4ebc-80da-4d73b0e33249"
+    },
+    {
+      "claim_id": "0062493a-fcbc-4503-8138-caf8adbe8840",
+      "result_id": "3ddc8f0c-6bd8-4ebc-80da-4d73b0e33249"
+    },
+    {
+      "claim_id": "97c24201-2a68-43cc-99e8-fa92648a5d85",
+      "result_id": "73a25c3f-487d-46f5-9cbb-2e561adccee1"
+    },
+    {
+      "claim_id": "f06fcaf5-c63e-4f55-865a-b0c8353ae5c2",
+      "result_id": "73a25c3f-487d-46f5-9cbb-2e561adccee1"
+    },
+    {
+      "claim_id": "70cd7f78-4489-4909-bdcd-1c087220bc8e",
+      "result_id": "73a25c3f-487d-46f5-9cbb-2e561adccee1"
+    },
+    {
+      "claim_id": "4189d75a-d559-4762-81f5-789141048aa1",
+      "result_id": "bf9ebc04-3c05-4723-b683-4698723706bd"
+    },
+    {
+      "claim_id": "ace58d11-046d-4db9-8d81-8cd3a844a6d2",
+      "result_id": "bf9ebc04-3c05-4723-b683-4698723706bd"
+    },
+    {
+      "claim_id": "50f642c4-00a9-4f4a-a722-c557a54ffa31",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "742cfae9-0fe6-4be1-b96b-30644ee92aa2",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "9d50f597-aeeb-40c3-b7b6-c8f001c83533",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "5a4339f2-9f28-4810-8a39-3c7bc0735d15",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "152139a3-c7cc-4461-82db-aeaa3ebe0d68",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "c550a227-2797-4d62-bcc0-1bd5df539fb1",
+      "result_id": "1b02b237-7d19-4b60-8b81-922dd5b666c2"
+    },
+    {
+      "claim_id": "ebc64333-811f-49dd-aab2-5916f6c124c5",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "e12ed0ab-1be6-44fb-b15a-a0c78bd4d294",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "2368cd4b-5719-4655-b5e4-4df4572678ea",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "fd18c54a-4602-4893-9f2e-61256d6e189f",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "5cec1887-45cb-440d-a087-f9e2f87a5016",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "09e83ce8-0cdb-4322-9665-e81cf5ab161a",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "fb31a625-721b-49ca-a74f-53e707c0b9f3",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "b35d9328-fb7b-4f59-8269-2b92bf61b0bc",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "9abfbbc4-c776-4ddb-a3c8-e22e12021b3b",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "50af3780-e9d5-4e7d-98a2-3cad20151a47",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "63119830-a090-439c-a1ef-84b4ff2b71ed",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "80ec81e3-18a2-4bd7-9c3b-4a5d19a7fa47",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "bd265190-53aa-46a5-a65e-6135dfdafa56",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "c3db2997-7a38-4313-bc11-a66b9a34088c",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "9aadce66-b1df-477d-b991-325906b0fafe",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "c2dc1cc6-f9b9-4d4b-bdb5-32ab6da642f3",
+      "result_id": "61592c99-208a-42eb-a3c1-73e78a935746"
+    },
+    {
+      "claim_id": "ba2c1768-5358-4d37-af87-daa7b1fc4a52",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "c66b6db8-6b62-4b81-b4e8-196810c586cf",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "44c754f5-6940-4350-95da-20fe102426a1",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "551069f8-1b77-45a4-9833-9882fa79df49",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "d9de24d8-b514-496c-ab3e-c7ee6c6e24ad",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "6945228f-d03c-4b07-af06-9eef1bb7adbb",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "dd4731a2-ae5b-48f4-b53c-6a7c67baf276",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "1a2ae896-6296-4e8d-a29d-10daa4471043",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "5694c776-9185-4d15-a8a6-958c6c1c1f67",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "49853442-ed34-4a07-b220-794f6f9aa68a",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "f32f1b5f-e3a7-485d-a116-bcb0df410406",
+      "result_id": "905bfc0c-31b0-4252-a609-8bd257c17778"
+    },
+    {
+      "claim_id": "5f618345-21f1-479a-93d9-d6ebb439e7a8",
+      "result_id": "ba0e4ae7-aab8-4638-8539-9753612dad27"
+    },
+    {
+      "claim_id": "7fad00d1-2505-4db8-9c98-c8d3b4433b5b",
+      "result_id": "ba0e4ae7-aab8-4638-8539-9753612dad27"
+    },
+    {
+      "claim_id": "88db9e34-9b6e-4616-97dd-19a78f8b19e3",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "bcd2f6ec-ef11-4c1c-ad3d-a4b260aa053c",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "27067326-dc5b-4526-afd6-724fb969e409",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "25ecb5a7-16b3-4f6d-80cd-ab6dd77a5023",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "0878382f-662d-4a83-b220-194730d95917",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "80a1b25d-e0b3-4c1a-b7c8-c3f522e1fd9c",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "03f15a42-7fc9-4e75-addb-111269c94020",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "8e915a50-8b58-4933-ab61-5afea3d76e97",
+      "result_id": "96274529-df38-4446-9b7d-b6548de684e5"
+    },
+    {
+      "claim_id": "e093e140-81b0-458f-af70-03745a17d817",
+      "result_id": "f722fa24-e432-4f08-b2a5-e66a19d077fb"
+    },
+    {
+      "claim_id": "54427cc1-5eae-4ba7-a8e4-1a3604b7d15d",
+      "result_id": "967b4f9b-b62a-413f-98a4-de2e9c7ead2f"
+    },
+    {
+      "claim_id": "20aa1777-3552-4310-a4e4-a399649c43e8",
+      "result_id": "967b4f9b-b62a-413f-98a4-de2e9c7ead2f"
+    },
+    {
+      "claim_id": "a32c3e42-b463-466c-a6b8-00ab11944d3b",
+      "result_id": "967b4f9b-b62a-413f-98a4-de2e9c7ead2f"
+    }
+  ],
+  "comparisons": []
+}

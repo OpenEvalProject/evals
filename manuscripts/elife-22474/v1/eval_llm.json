@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "P19 cells exhibit chronic NODAL/Activin signaling in the untreated state due to autocrine production of NODAL and GDF3 signaling via ACVR1B, ACVR2A/B and TDGF1. Upon Activin treatment from a signal-inhibited baseline, robust pSMAD2 induction occurs within 30-60 min and attenuates at later timepoints, with responses being partly dose-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are well-supported by Western blot data (C1, C2, C3, C6), RNA-seq and siRNA knockdown experiments (C5), and logical inference from the TDGF1 degradation data (C7). The characterization of the P19 cell system provides a solid foundation for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "RNA-seq identified 747 genes differentially expressed in response to Activin signaling, which were classified into four kinetic categories: induced sustained, delayed, transient induced, and repressed. These distinct transcriptional profiles are not due to differences in mRNA half-lives but reflect genuine differences in transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by RNA-seq data (C8, C10), gene ontology analysis (C9), and mRNA stability measurements (C11). The classification scheme is clearly defined and the data demonstrate distinct temporal patterns of gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The temporal modulation of transcriptional responses requires continuous Activin signaling. Protein synthesis inhibitors perturb delayed and repressed gene expression, and SB-431542 chase experiments demonstrate that induced sustained genes require continuous signaling for long-term transcription, delayed genes require extended signaling for induction, and repressed genes require ongoing signaling for repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 are well-supported by protein synthesis inhibitor experiments (C12) and SB-431542 chase experiments (C13-C17). The data convincingly demonstrate that continuous signaling is required for the dynamic transcriptional program, establishing both direct and indirect (protein synthesis-dependent) mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "SMAD2 ChIP-seq identified 846, 5485, and 2869 peaks at 1 hr, 8 hr, and chronic signaling states respectively, with 532 peaks overlapping at all timepoints. Integration of SMAD2 ChIP-seq with RNA-seq and Pol II ChIP-seq identified 140 high-confidence NODAL/Activin transcriptional targets associated with 478 SMAD2 peaks, with approximately 50% of peaks within 10 kb of the TSS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are supported by SMAD2 ChIP-seq data and integration with RNA-seq and Pol II ChIP-seq. The methodology for associating SMAD2 peaks with target genes is reasonable, though the 100 kb distance cutoff is somewhat arbitrary. The high-confidence dataset provides a solid foundation for downstream analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "CRISPR/Cas9 deletion of SMAD2 binding sites upstream of Lefty1 and Lefty2 resulted in specific loss of Activin-induced expression of the respective genes without affecting the other or additional Activin targets, demonstrating a one-to-one relationship between SBSs and regulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are strongly supported by CRISPR/Cas9 deletion experiments with three independent clones for each deletion. The specificity of the effects validates the method for associating SMAD2 peaks with target genes, though the generalizability to all 140 target genes is an extrapolation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Activin/NODAL signaling regulates transcription via de novo recruitment of RNA Polymerase II rather than pause-release. Pol II Ser5P and Ser2P show similar patterns of enrichment, and baseline off genes show no paused Pol II at the TSS in the signal-inhibited state, while baseline on genes show ongoing transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by Pol II ChIP-seq data showing correlation between Ser5P and Ser2P (C28), absence of paused Pol II at baseline off genes (C30), and presence of elongating Pol II at baseline on genes (C31). The conclusion that Pol II recruitment is the dominant mechanism (C29, C32) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SMAD2 binding does not correlate linearly with transcriptional kinetics. SMAD2 chromatin occupancy often increases at genes after prolonged signaling when Pol II occupancy is downregulated, suggesting that secondary repression results from recruitment of repressors by chromatin-bound SMAD2 rather than loss of SMAD2 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by comparison of SMAD2 ChIP-seq, Pol II ChIP-seq, and RNA-seq data showing discordance between SMAD2 binding and transcriptional output over time. The inference that SMAD2 recruits repressors (C35) is logical but remains speculative without direct evidence of repressor recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SMAD2 binding induces dramatic changes in the chromatin landscape. Histone H3 acetylation (H3K9Ac, H3K27Ac, H3K18Ac, H3K23Ac) is observed around SMAD2 peaks and increases in response to Activin signaling, with ligand-induced acetylation restricted to ~1.5 kb on either side of the SBS. EP300 is enriched at SBSs with similar kinetics to SMAD2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 are well-supported by ChIP-seq data for multiple histone modifications and EP300. The absence of repressive marks (C38) and presence of activating acetylation marks (C39-C44) are clearly demonstrated. The correlation between EP300 and SMAD2 binding (C45) supports the mechanism of SMAD2-mediated histone acetylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Activated SMAD2 exhibits two distinct modes of chromatin binding. At baseline off genes, SMAD2 binds to closed, unacetylated chromatin and induces nucleosome displacement and histone acetylation at adjacent nucleosomes. At baseline on genes, SMAD2 binds to pre-existing nucleosome-depleted sites flanked by acetylated histones and induces further acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are strongly supported by ChIP-seq and FAIRE-PCR data showing distinct chromatin states at different SMAD2 binding sites. The metaprofile analyses clearly demonstrate nucleosome depletion and histone acetylation induction at baseline off genes (C46-C48) versus constitutively open chromatin at baseline on genes (C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "SMAD2 binding strength correlates with histone acetylation status, either constitutive or signal-induced. Baseline acetylation predicts SMAD2 binding at 1 hr but not 8 hr peaks, and SMAD2 binding is stronger at sites where acetylation is induced. H3K4Me1 is enriched at the Lefty1 SBS prior to signal activation and likely precedes SMAD2 binding and H3 acetylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by correlation analyses between SMAD2 binding and histone acetylation (C51-C53) and H3K4Me1 ChIP-PCR data (C54). The inference that H3K4Me1 precedes SMAD2 binding (C56) is reasonable based on its presence before signaling, though temporal ordering is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Motif enrichment analysis identified binding sites for known SMAD2 co-factors (FOXH1, POU5F1, SMAD3/4) and novel motifs under SMAD2 peaks. siRNA knockdown experiments demonstrated gene-specific requirements: Lefty1 and Eomes require both FOXH1 and POU5F1, Tdgf1 requires only POU5F1, and Pmepa1 requires neither. The FOXH1 motif is centrally enriched relative to SMAD2 peak summits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C63 are supported by motif enrichment analysis (C57, C58) and siRNA knockdown experiments (C59-C62). The gene-specific requirements for transcription factors are clearly demonstrated, though the lack of effect for NANOG, EOMES, and TEAD (C62) is based on unpublished data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SMAD2 binding strength correlates with the presence of a FOXH1 motif, which is enriched in 1 hr versus 8 hr peaks. FOXH1 binding is absent in signal-inhibited cells but rapidly inducible upon Activin stimulation at FOXH1-dependent genes (Lefty1, Lefty2, Pitx2), indicating that FOXH1 is recruited together with SMAD2 and does not act as a classic pioneer factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are well-supported by motif enrichment analysis (C64, C65) and FOXH1 ChIP-PCR data (C66-C68). The conclusion that FOXH1 does not act as a pioneer factor (C69) is strongly supported by the absence of FOXH1 binding in the baseline state and its co-recruitment with SMAD2 upon signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FOXH1 is required for SMAD2 recruitment, histone acetylation, and chromatin accessibility at a subset of target genes (Lefty1, Lefty2, Pitx2) but not at others (Tdgf1, Pmepa1, Pou5f1, Smad7). FOXH1 knockdown inhibits Activin-induced SMAD2 recruitment, H3K27 acetylation, and chromatin accessibility at FOXH1-dependent sites, demonstrating that the FOXH1-SMAD2 complex is required for nucleosome eviction at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 are strongly supported by FOXH1 knockdown experiments showing gene-specific effects on SMAD2 binding (C70, C72), histone acetylation (C71, C72), and chromatin accessibility (C73, C75, C76). The conclusion that FOXH1 directs SMAD2 to specific targets and mediates chromatin remodeling (C74, C77) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "SMARCA4 is required for SMAD2 binding to closed chromatin at baseline off genes (Lefty1, Lefty2, Pmepa1) where it mediates nucleosome eviction and flanking acetylation, but is not required at baseline on genes (Smad7, Pitx2). SMARCA4 knockdown inhibits Activin-induced transcription, SMAD2 recruitment, H3K27 acetylation, and chromatin accessibility at SMARCA4-dependent genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 are well-supported by SMARCA4 knockdown experiments showing gene-specific effects on transcription (C79, C80), SMAD2 binding (C81, C82), histone acetylation (C83, C84), and chromatin accessibility (C83, C84). The conclusion that SMARCA4 is required for SMAD2 binding and chromatin remodeling at baseline off genes (C85) is strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "SMAD2 can bind both pre-acetylated nucleosome-depleted sites and unacetylated closed chromatin. At closed chromatin sites, SMAD2 binds independently of pioneer factors and induces nucleosome displacement and histone acetylation, with SMARCA4 required for a subset of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by the combined ChIP-seq, FAIRE, and knockdown data presented throughout the manuscript. The two modes of SMAD2 binding are clearly demonstrated, and the gene-specific requirement for SMARCA4 is well-established by the knockdown experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Long-term modulation of transcriptional responses requires continued NODAL/Activin signaling. SMAD2 binding does not linearly correlate with transcriptional kinetics, suggesting that SMAD2 recruits multiple co-factors during sustained signaling to shape the downstream transcriptional program.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are well-supported by the SB-431542 chase experiments and the observation that SMAD2 remains bound while transcription changes. However, C91 is more speculative\u2014while the data strongly suggest recruitment of different co-factors over time, direct evidence of such recruitment is not provided. The claim remains reasonable as an inference but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "LAMP1 and LAMP2 proteins bind cholesterol directly via the 3\u03b2-hydroxyl group. Purified soluble LAMP1 and LAMP2 bind 3H-cholesterol saturably with stoichiometry comparable to NPC1 N-terminal domain. Binding is competed by cholesterol, 25-hydroxycholesterol, 7-ketocholesterol, and 24-hydroxycholesterol, but not by cholesterol sulfate or epicholesterol, indicating specificity for the 3\u03b2-hydroxyl orientation. LAMP2 domain 1 binds more cholesterol than domain 2, though both may contribute to binding in the full-length protein. LAMP2 purified from cells carries bound cholesterol as confirmed by mass spectrometry and thin layer chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12-C13, C17-C25, C30-C32 provide converging experimental evidence from multiple complementary approaches (saturable binding assays, competition experiments with sterol analogs, domain mapping, and mass spectrometry) that collectively demonstrate direct, specific cholesterol binding to LAMP proteins via the 3\u03b2-hydroxyl group. The epicholesterol competition experiment (C25) is particularly strong evidence for binding orientation. The data are internally consistent and appropriately controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "LAMP2 binds directly to both NPC1 and NPC2 proteins. Co-immunoprecipitation experiments show that endogenous LAMP2 interacts with full-length NPC1-GFP but not with control proteins (GFP or MCOLN1). This interaction is cholesterol-dependent, decreasing upon cyclodextrin treatment. Microscale thermophoresis demonstrates direct binding with KD = 6 nM for NPC1 N-terminal domain and KD = 122 nM for NPC2, with no binding to control protein RNase B. LAMP2 binding to NPC1 NTD occurs independently of cholesterol occupancy of that domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C47 provide strong evidence from two independent methods (co-IP and microscale thermophoresis) demonstrating direct, specific binding between LAMP2 and both NPC proteins. Appropriate negative controls (GFP, MCOLN1, RNase B) strengthen the conclusions. The cholesterol-dependence of the cellular interaction (C36) is interesting but the mechanism remains unclear since in vitro binding is cholesterol-independent (C40, C47), suggesting indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "LAMP2's ability to facilitate cholesterol export from lysosomes depends on its cholesterol-binding capacity. Site-directed mutagenesis of residues I111 and V114 in the predicted hydrophobic pocket of LAMP2 domain 1 significantly impairs cholesterol binding. Functional rescue experiments in LAMP1/2-deficient MEF cells show that wild-type LAMP2 rescues cholesterol export (measured by cholesteryl oleate synthesis), membrane-anchored domain 1 shows partial rescue consistent with its lower binding capacity, but the I111A/V114A mutant fails to rescue despite proper lysosomal localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C62-C68 provide strong functional evidence linking cholesterol binding to LAMP2's role in cholesterol export. The mutagenesis approach is well-designed, targeting structurally predicted residues. The rescue experiments include appropriate controls and account for protein expression levels and localization. The correlation between binding capacity and rescue ability across three constructs (full-length, domain 1, and mutant domain 1) provides compelling evidence for a direct mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "LAMP proteins represent a significant cholesterol binding reservoir at the lysosome limiting membrane. Quantitative immunoblotting reveals HeLa cells contain 6.8 \u00d7 10^6 LAMP2 molecules and 3.7 \u00d7 10^5 NPC1 molecules per cell (18-fold excess LAMP2). Using published lysosome volume estimates, this corresponds to 0.3 mM LAMP2-associated cholesterol binding sites and a membrane density of 18,378 LAMP2 molecules per \u03bcm\u00b2 in HeLa lysosomes, comparable to densities of tightly packed viral spike glycoproteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C49-C60 provide quantitative evidence that LAMP proteins are sufficiently abundant to serve as a significant cholesterol reservoir. The quantitation method (immunoblotting with purified protein standards) is appropriate. However, the calculations rely on lysosome volume estimates from a different cell type (baby hamster kidney cells, C55-C56), which introduces uncertainty. The comparison to viral spike proteins (C59) provides useful context for the calculated density. The conclusion is reasonable but would be strengthened by direct measurement of lysosome parameters in the cell types studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "LAMP proteins may signal cholesterol availability and serve additional functions beyond facilitating NPC1-mediated export. The 10-18 fold higher abundance of LAMP proteins compared to NPC1 suggests roles beyond simply facilitating NPC1 function. Cholesterol levels may influence LAMP protein conformation or interactions to signal cholesterol availability and influence autophagy and cellular metabolism. NPC2 may deliver cholesterol to both NPC1 and the more abundant LAMP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C75, C76, C79 are explicitly speculative (using \"may\" and \"suggests\") and represent hypotheses rather than demonstrated findings. While the abundance data (C76) provides circumstantial support, no direct experimental evidence is provided for signaling functions (C10, C75) or the proposed NPC2-LAMP2 transfer mechanism (C79). These are reasonable hypotheses for future investigation but remain unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Comparison with published mass spectrometry data shows agreement in relative LAMP:NPC1 ratios but 25-fold lower absolute protein levels in the Itzhak et al. 2016 study. The authors speculate this discrepancy may reflect under-representation of transmembrane glycoproteins in mass spectrometry due to protease resistance, cell confluency differences, or HeLa cell line variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 appropriately compare the current quantitation with published data. The observation of matching relative ratios but different absolute levels (C71) is clearly stated. The proposed explanations (C72) are speculative but reasonable. This comparison strengthens confidence in the relative abundance measurements while acknowledging uncertainty in absolute quantitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background information on LAMP proteins and lysosomes: LAMP1 and LAMP2 are highly abundant proteins lining the lysosome limiting membrane that protect it from hydrolases. The LAMP family includes five members, each containing LAMP domains (LAMP1/2 have two domains each). LAMPs are heavily glycosylated transmembrane proteins proposed to serve as protective barriers. LAMP1 and LAMP2 are 37% identical and may overlap in function. Lysosomes are acidic organelles containing hydrolases that degrade cellular components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C27-C29, C83-C90 represent established background knowledge appropriately cited to prior literature. These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on LAMP2 functions and phenotypes: LAMP2 deficiency causes Danon's disease. LAMP2 is required for chaperone-mediated autophagy and its expression improves tissue function in aging models. LAMP1 knockout has milder phenotypes than LAMP2 knockout, which causes short lifespans and autophagic structure accumulation. LAMPs are required for lysosome-phagosome fusion. Previous work implicated LAMP2 in cholesterol export, as LAMP-deficient cells accumulate cholesterol that can be rescued by LAMP2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C91-C97 represent established knowledge from prior literature, appropriately cited. These provide important context and motivation for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C14",
+      "C48",
+      "C73",
+      "C74",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Background on NPC proteins and related biology: NPC1 and NPC2 export cholesterol from lysosomes. NPC1 N-terminal domain contains a single cholesterol binding site. NPC1 likely binds cholesterol in its membrane-spanning region affecting conformation. Current models suggest NPC2 binds cholesterol from internal lysosome membranes and delivers it to NPC1 at the limiting membrane. NPC2 binds cholesterol in opposite orientation to NPC1 NTD. Crystal structures support direct NPC1-NPC2 handoff. Lysosomes sense amino acid availability to regulate biogenesis, and LAMP oligomerization correlates with chaperone-mediated autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C14, C48, C73, C74, C78, C81, C82 represent established knowledge from prior literature, appropriately cited. These provide necessary context for interpreting the LAMP-NPC interactions but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C77",
+      "C80"
+    ],
+    "result": "LAMP2 and NPC1 N-terminal domain bind cholesterol in the same orientation (via the 3\u03b2-hydroxyl group), which is opposite to NPC2's binding orientation. This orientation compatibility would allow NPC2 to transfer cholesterol between LAMP2 and NPC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C77, C80 logically integrate the experimental findings on LAMP2 cholesterol binding orientation (from epicholesterol competition) with established knowledge about NPC1 and NPC2 binding modes. The inference about transfer compatibility is reasonable given the known mechanisms of sterol transfer proteins, though direct transfer experiments are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The DC-LAMP domain structure reveals a beta-prism fold containing a hydrophobic pocket, which was used to model LAMP2 domain 1 structure and guide mutagenesis experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 cites established structural knowledge (Wilke et al., 2012) that was appropriately used to guide the mutagenesis strategy. This represents proper application of prior structural information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Prior proteome-wide analysis identified LAMP1 and LAMP2 as candidate cholesterol-binding proteins, but the precise function of LAMP proteins has remained unclear and they are often presumed to be structural components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 appropriately cite prior work (Hulce et al., 2013) and characterize the knowledge gap that motivated the current study. This provides important context but is not a novel finding.",
+    "result_type": "MINOR"
+  }
+]

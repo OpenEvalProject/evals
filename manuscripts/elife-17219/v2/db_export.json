@@ -1,0 +1,1902 @@
+{
+  "submission": {
+    "id": "34dd5af5-94f1-4366-8c85-87c2228faf70",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:57:54.884396Z",
+    "updated_at": "2025-11-30T20:57:54.884396Z"
+  },
+  "content": [
+    {
+      "id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "submission_id": "34dd5af5-94f1-4366-8c85-87c2228faf70",
+      "content_type": "manuscript",
+      "content_text": "# Automated structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta\n\n## Authors\n\n- Ray Yu-Ruei Wang<sup>1</sup> ([ORCID: 0000-0001-5025-9596](https://orcid.org/0000-0001-5025-9596))\n- Yifan Song<sup>2</sup>\n- Benjamin A Barad<sup>3</sup> ([ORCID: 0000-0002-1016-862X](https://orcid.org/0000-0002-1016-862X))\n- Yifan Cheng<sup>5</sup>\n- James S Fraser<sup>3</sup> ([ORCID: 0000-0002-5080-2859](https://orcid.org/0000-0002-5080-2859))\n- Frank DiMaio<sup>2</sup> ([ORCID: 0000-0002-7524-8938](https://orcid.org/0000-0002-7524-8938)) \u2020\n\n### Affiliations\n\n1. Graduate Program in Biological Physics, Structure and Design University of Washington Seattle United States\n2. Department of Biochemistry University of Washington Seattle United States\n3. Department of Bioengineering and Therapeutic Science University of California, San Francisco San Francisco United States\n4. Graduate Group in Biophysics University of California, San Francisco San Francisco United States\n5. Keck Advanced Microscopy Laboratory University of California, San Francisco San Francisco United States\n6. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n7. Institute for Protein Design University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCryo-EM has revealed the structures of many challenging yet exciting macromolecular assemblies at near-atomic resolution (3\u20134.5\u00c5), providing biological phenomena with molecular descriptions. However, at these resolutions, accurately positioning individual atoms remains challenging and error-prone. Manually refining thousands of amino acids \u2013 typical in a macromolecular assembly \u2013 is tedious and time-consuming. We present an automated method that can improve the atomic details in models that are manually built in near-atomic-resolution cryo-EM maps. Applying the method to three systems recently solved by cryo-EM, we are able to improve model geometry while maintaining the fit-to-density. Backbone placement errors are automatically detected and corrected, and the refinement shows a large radius of convergence. The results demonstrate that the method is amenable to structures with symmetry, of very large size, and containing RNA as well as covalently bound ligands. The method should streamline the cryo-EM structure determination process, providing accurate and unbiased atomic structure interpretation of such maps.\n\n## Introduction\n\nAdvances in direct electron detectors, as well as better image analysis algorithms, have led cryo-electron microscopy (cryo-EM) to achieve near-atomic resolution (3\u20134.5\u2009\u00c5) using single-particle analysis (Li et al., 2013; Bai et al., 2013; Scheres, 2012). Cryo-EM reconstructions at these resolutions, at which individual \u03b2-strands are resolvable and bulky sidechains are somewhat visible, make it possible to build an all-atom model directly from such maps (Kudryashev et al., 2015; Wang et al., 2015). Although sequence can be registered, density maps at this range of resolution do not grant enough information to assign coordinates for each atom in the structure precisely, and thus they cannot always capture molecular interactions for a biochemical process. Furthermore, such model building and refinement is challenging and error prone (DeLaBarre and Brunger, 2006; Brunger et al., 2009). Nevertheless, determination of detailed atomic interactions from these sparse sources of data is desirable.\u00a0However, the inherent ambiguity in the data makes accurately identifying molecular interactions extremely difficult, even for experts.\n\nModel-building into a cryo-EM map at near-atomic resolution generally involves manually building a model into the map with the assistance of a graphical user interface tool (Emsley et al., 2010), followed by refinement with software repurposed from X-ray crystallography (Brown et al., 2015; Afonine et al., 2012). This process requires identification of key amino acid sidechains to register stretches of sequence within the map (possibly aided by information\u00a0on\u00a0the topology of a homologous structure), followed by extension of these short fragments of sequence to form one or more fully connected protein chains. At near-atomic resolution, this manual model-building and refinement can be error prone because: (a) the density may not be of sufficient resolution to identify sidechain rotamers\u00a0uniquely, even for bulky aromatic residues, making it difficult to determine sidechain-sidechain or sidechain-backbone interactions\u00a0accurately; (b) for regions of non-regular secondary structure (turns or loops) or with poor local resolution, it may be difficult to position backbone atoms\u00a0accurately; and (c) in these same regions, precise sequence registration may also be error prone. Getting these atomic interactions correct is crucial for understanding detailed atomic mechanisms of protein\u00a0activities, for\u00a0designing drugs with a very specific shape complementarity, and for understanding subtle conformational changes of a protein. A structure refinement procedure that can automatically improve the atomic details of a model from such density data is thus very much desired.\n\nIn this manuscript, we develop a three-stage approach for automatically refining manually traced cryo-EM models (Figure 1). While previously we have developed an iterative local rebuilding tool that\u00a0is\u00a0capable of refining homology models into near-atomic-resolution cryo-EM maps (DiMaio et al., 2015), several advances were required to\u00a0extend this tool so that it can successfully refine hand-built models. Our new approach includes a method for automatically detecting and correcting problematic residues in hand-built models without overfitting, a model-selection method for identifying models with good agreement to the density data and with physically realistic geometry, a voxel-size refinement method for correcting errors in calibrating the magnification scaling factor of a microscope, an improved sidechain-optimization method to correct sidechain placement errors in very large systems, and a way to estimate uncertainty in a refined model. These methods, combined, allow the\u00a0tool\u00a0to correct backbone errors that significantly deviate from the starting model, but\u00a0it may still assign a high degree of confidence to these regions in the refined model.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig1-v2.jpg)\n\n**Figure 1.:** (Left) In stage 1, problematic regions are predicted using a newly developed error predictor that\u00a0looks\u00a0for local strain in the model and poor local density-fit. These selected regions are subject to iterative fragment-based rebuilding within a Monte Carlo sampling trajectory. Refinement in this stage is restricted to using one-half of the data, referred to as the training map. (Middle) In stage 2, the best models from the ~5000 independent Monte Carlo trajectories are selected. Models are selected based: on\u00a0agreement to the validation map (independently constructed from the other half of the data), then by model geometry as assessed by MolProbity, and finally, on agreement to the full reconstruction. At this point, the selected models should in general have good fit-to-density and good geometry without overfitting to the data. (Right) In stage 3, using the 10 best models selected, we then optimize against the full reconstruction. Two half maps are used to\u00a0choose\u00a0the optimal density weight to refine structures using full-reconstruction. Finally, these top 10 models are optimized (without large-scale backbone rebuilding) into the full-reconstruction, which alternates with voxel-size refinement iteratively. Finally, these models are subject to B-factor refinement.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Both insets show two regions of models refined by the\u00a0superceded Rosetta approach, where strain can indicate errors in models. In both cases, phenylalanine sidechains fit the density well, but both show geometric strain around the C\u03b2 atom. The type of strain (as evaluated by MolProbity) is indicated by model color, using the key on the right.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Guided by the 3.3-\u00c5 20S proteasome reconstruction, we evaluated 500 models against the high-resolution crystal structure. We plot here the precision (y-axis) and recall (x-axis) of predicting which residues were incorrectly placed (RMS > 1\u00c5). Use\u00a0of density alone (pink line) is outperformed by using a combination of density and model strain (blue line). Our refinement approach considers four points on this curve when picking density\u00a0+ model strain cutoffs, indicated on the plot with 'Stage1\u20134'.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Before refinement against the full reconstruction, we optimize the weight on the 'fit-to-density' energy using half maps, to avoid overfitting. We plot several key metrics here as a function of weight on the fit-to-density score term (x-axis), including the Fourier Shell Correlation (FSC) 'overfitting' (FSC\u00a0work-free, top\u00a0histogram), the Rosetta energy (second\u00a0histogram), and several Molprobity model geometry terms (histograms 3\u20136). In all cases, we see a sharp inflection point at\u00a0which overfitting increases and geometry gets notably worse. As a general rule-of-thumb, we use the weight maximizing FSCfree\u2013(0.04*per-residue-energy to capture this inflection point).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Refined models initially had poor pre-proline geometry. Thus, a new backbone torsional potential was created which separately treats pre-proline and pre-non-proline residues. In the plot, we show the old potential (left), the new pre-non-proline potential (middle), and the pre-proline potential (right) for three different residue identities. The color indicates the unweighted energy values, using the key on the right.\n\nFinally, we apply this approach to three recently solved cryo-EM single particle reconstructions at near-atomic resolution: the TRPV1 channel at 3.4-\u00c5 resolution (TRPV1) (Liao et al., 2013), the F420-reducing [NiFe] hydrogenase (Frh) at 3.4-\u00c5 resolution (Allegretti et al., 2014), and the large subunit of mitochondrial ribosomes at 3.4-\u00c5 resolution (mitoribosome) (Brown et al., 2014). We show that in all three cases of diverse and large systems, we are able to refine models automatically\u00a0to high-quality (as assessed by MolProbity), while maintaining or improving agreement to the density data. Significantly, in the case of TRPV1, we newly identify a biologically relevant atomic interaction \u2013 a disulfide bond \u2013 that\u00a0was\u00a0not built in the originally deposited model but that\u00a0is\u00a0supported in the literature. In the case of Frh, we show that\u00a0our refinement procedure led to a significant improvement of model geometry. Finally, in the case of mitoribosome, we show significant improvement in model geometry: the number of 'Ramachandran favored' residues increases by 5%, and Molprobity\u00a0score (Chen et al., 2010) improvement is observed in all 48 protein chains.\n\n## Results\n\nAn overview of our refinement approach is shown schematically in Figure 1 (and is fully described in Materials and methods). Broadly, the approach proceeds in three stages. In the first stage, we identify problematic residues by assessing local model-strain and local agreement to density data. These problematic\u00a0regions are rebuilt against a 'training' half-map using fragment-based Monte Carlo sampling with many independent trajectories followed by all-atom refinement. Second, the best subset of these independent trajectories are selected by identifying a subset of stereochemically correct models with best agreement to an independent 'validation' half-map, to prevent overfitting. Finally, models are further optimized in the full-reconstruction with a weight optimally scaled between experimental data and the forcefield using the 'validation' half map. Our approach adopts and improves upon our previous work on refining cryo-EM structures from distant homology structures (DiMaio et al., 2015), in which a similar fragment-based backbone rebuilding strategy was employed. However, several crucial improvements were necessary in extending our previous work to successfully refine hand-traced models, larger complexes, and a more diverse set of systems.\n\n### Identification of backbone errors using local strain\n\nIn our\u00a0previous work (DiMaio et al., 2015), local fit to density is used to identify residues in a distant homology model. Unlike remote homology models, hand-traced models typically fit the data very well, but are incorrect geometrically (in terms of strain). Consequently, a key improvement is to make use of model strain as a criterion in selecting regions to refine. Moreover, when this previous approach was applied to the de novo hand-traced models from cryo-EM maps, we observed\u00a0that in incorrect regions, the models still fit the density well, but did so by introducing strain into the nearby bond angles and torsions. This often occurred near the\u00a0C\u03b2 atom of aromatic residues, where strain was introduced to fit the sidechain into the\u00a0density (Figure 1\u2014figure supplement 1). We reasoned that\u00a0the backbone was incorrect in these strained residues; by correcting the backbone, we would be able to fit a non-strained sidechain into density. Thus, local strain can serve as an indicator to identify regions that could be refined to improve both the fit-to-density and the\u00a0model geometry. We developed an error predictor by constructing a function (see Materials and methods) that assesses both local model-map agreement and local model-strain. Using a training dataset composed of error-containing models of a cryo-EM map in which the structure has been determined by X-ray crystallography (Figure 1\u2014figure supplement 2), we show that the new error predictor offers better discrimination of incorrectly versus correctly placed backbone, with an AUPRC (area under precision-recall curve) of 0.80 versus 0.76 using density alone (Figure 1\u2014figure supplement 2). In cases where models are hand-built into density, we expect this strain term to play an even larger role, as fit-to-data is expected to have larger influence on the initially constructed model.\n\n### Better treatment of sidechain density\n\nRecent studies have shown that certain sidechains \u2013 particularly those\u00a0containing\u00a0negatively charged amino acids (Glu/Asp) \u2013 tend to suffer from radiation damage and thus appear weaker in single-particle reconstructions (Bartesaghi et al., 2014; Campbell et al., 2015). Moreover, the\u00a0density of certain bulky sidechains, such as those containing Lys and Arg, tends to be less well-defined than their backbone density. This missing density dramatically affects the convergence of conformational sampling during structure refinement, during\u00a0which sidechains tend to be fit into density corresponding to backbone atoms. To compensate for this, we downweigh the contributions of sidechains which are less resolved in cryo-EM density. Down-weighing factors for each amino acid were determined by comparing the average per-amino-acid real-space B-factor on two cryo-EM reconstructions with known high-resolution crystal structures (20S proteasome [Li et al., 2013] and \u03b2-galactosidase [Bartesaghi et al., 2014]), with the ratio of backbone and sidechain average B-factors being\u00a0used to derive the scaling factors. Table 3 shows the computed scalefactors used in our refinement method.\n\n### Local sidechain refinement for large complexes\n\nWhen our previous all-atom refinement approach was applied to very large complexes (of\u00a0800+ residues), we observed many instances in\u00a0which sidechains were not properly optimized to density (Figure 6\u2014figure supplement 1). It was hypothesized that this was due to the convergence of sidechain optimization, as the number of possible sidechain states expands exponentially with the number of residues present in a protein. Here, we opted to treat this global optimization problem as a series of smaller local optimization problems, repeatedly optimizing overlapping regions of ~20\u2013100 residues until all residues in a protein are visited at least once. This approach resolved this sidechain fitting issue, as shown in Figure 6\u2014figure supplement 1 (right panel).\n\n### Voxel-size refinement\n\nThe voxel size of a cryo-EM reconstruction is determined by the physical pixel size on the detector scaled by a magnification factor. However, the magnification factor may be determined with some inaccuracy, leading to errors in deciding the voxel size of the resulting single-particle reconstruction. It has been\u00a0shown that voxel size may be off by as much as several percent when using EM maps as molecular replacement targets (Jackson et al., 2015). Here, we develop a voxel-size refinement strategy\u00a0that\u00a0scales the voxel size of the map to maximize the\u00a0model-map real-space correlation coefficient. During refinement, we alternate structure refinement and map voxel size refinement with several cycles iteratively until the voxel size converges (Figure 1). The approach is fully described in the Materials\u00a0and\u00a0methods section.\n\nMoreover, we investigate the robustness of our voxel-size refinement method in the presence of model errors, and demonstrate that our iterative approach captures the general agreement between forcefield and voxel size. We initially made use of an arbitrary target structure (PDB id: 4AKE). We calculated density to 3\u00c5 resolution on a 1\u00c5 grid\u00a0and ran several MD trajectories in Rosetta, followed by all-atom minimization, yielding 50 models that are 2.9\u20133.1\u00c5 RMSd from the native structure. We initially refined voxel size against each of these models, yielding voxel sizes from 0.95 to 1.02\u2009\u00c5 (stdev\u00a0=\u00a00.011). Following our iterative procedure, the deviation was much smaller, ranging from 0.99 to 1.02 (stdev\u00a0=\u00a00.004). Figure 2A illustrates the distribution of voxel sizes derived from the models before refinement (red curve) and after refinement (blue curve), showing a sharp peak at the true voxel size (1.0\u00c5) after refinement.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig2-v2.jpg)\n\n**Figure 2.:** (A) Voxel-size refinement on perturbed models. Perturbed structures were generated by running short MD trajectories in Rosetta, followed by all-atom minimization. Voxel size is refined against the perturbed models, yielding the density distribution in red. Following cycles of iterated voxel refinement and all-atom refinement, the voxel size shows significantly better convergence (blue line). (B) Rosetta structure refinement with a range values of B-factor sharpening. Integrated Fourier Shell Correlation eavluated using the validation map (free-iFSC) is plotted here as a function of B-factor sharpening of the training map. The results indicate that our refinement method is not particularly sensitive to the extent of B-factor sharpening, behaving similarly over a range of sharpening values between \u221240 and \u2212130. The error bars show standard deviation of the free-iFSC among the top10 ensemble models (see Materials and methods for the ensemble selection method).\n\n### The effect of B-factor sharpening in Rosetta structure refinement\n\nTo investigate the\u00a0extent of B-factor sharpening that\u00a0would influence the accuracy of Rosetta structure refinement, we benchmarked structure refinement using various B-factors from 0 to \u2212200 (Figure 2B). Using the 20S proteasome 3.3\u00c5 resolution map, we refined a model starting from a template (PDB id: 3H4P, 52% sequence identity) in the training map, and reported the integrated Fourier Shell Correlation evaluated by the validation map\u00a0(free-iFSC). The method does not show a particularly strong dependency on B-factor sharpening values; with B-factors ranging from \u201340 to \u2013130, the refinement all performed equally well, as assessed by free-iFSC.\n\n### The role of independent reconstruction in Rosetta structure refinement\n\nIn our previous approaches, we used independent reconstructions ('validation' half-map) both for\u00a0model selection (DiMaio et al., 2015) and to\u00a0determine\u00a0the balance between model geometry and fit-to-data during refinement (DiMaio et al., 2013). In this manuscript, we use independent reconstructions in the same manner during the first two stages of refinement (Figure 1). At the very last stage,\u00a0however, we perform several steps in the context of the full reconstruction because of the additional sidechain details that may be present only\u00a0in the full reconstruction. As shown in Figure 1, for the best 10 sampled models selected from stage 2, we perform a final all-atom and atomic B-factor refinement against the complete reconstruction. Similar to the approach adapted by the REFMAC group (Brown et al., 2015; Fern\u00e1ndez et al., 2014), we use two independent halves of the data (the training and validation half-maps) to optimize the weight used with full-reconstruction data (see Materials and methods\u00a0and (Figure 1\u2014figure supplement 3), and that weight is used\u00a0both in refinement against the full reconstruction\u00a0and\u00a0in voxel-size refinement. Following refinement against the full reconstruction, model geometry is verified (using MolProbity [Chen et al., 2010]) to ensure that\u00a0it is not worsening during refinement against the full reconstruction. This confers additional sensitivity during model selection.\n\n### Evaluation of refined models with Molprobity and EMRinger\n\nModels are evaluated for geometric quality using Molprobity (Chen et al., 2010), which compares local\u00a0geometric\u00a0features describing an all-atom model to those from high-resolution crystal structures. In addition to using MolProbity to assess model quality, we further validate the Rosetta-refined models with EMRinger (Barad et al., 2015), using this tool as an independent source to validate both model geometry and density-fit at sidechain level. EMRinger samples density around C\u03b3 atoms as they are rotated about the \u03c71 dihedral angle, and identifies the angle which presents peak density for the C\u03b3.\u00a0On the basis of existing statistical and chemical information, this position should generally fall into the rotamer distribution of \u03c71, with angles of 60, 180, and 300 degrees. The distribution of measured peak angles at various signal-to-noise cutoffs is integrated into the EMRinger score, which reports on backbone model-to-map agreement using side chain geometry.\n\n### Application to TRPV1\n\nWe first applied our new refinement approach to the recently determined 3.4-\u00c5 cryo-EM reconstruction of the TRPV1 channel in the apo form (Liao et al., 2013). Half-maps were reconstructed by subdividing particles into two sets randomly, with one used for initial model rebuilding and refinement, and the other used for validation. The deposited model (PDB id: 3J5P) was used as input to the protocol described previously. All refinement was carried out using the native C4 symmetry. Because of the highly heterogeneous nature of the system, fragment-based rebuilding (stage 1 and 2) was focused on the trans-membrane domain initially, and then the full three-stage refinement was performed on the full structure (see Materials and methods for details). All input files are included as Supplementary file 1.\n\nThe results of refinement are indicated in Figures 3 and 4 and in Table 1. The refined model improves model quality and maintains good model-data agreement when compared to the deposited model: the MolProbity score improves from 3.81 to 1.45, the fit-to-data (integrated Fourier shell correlation from 10 to 3.4\u00c5) drops slightly from 0.612 to 0.607, but the EMRinger score improves from 0.65 to 2.34, indicating that the better fitting shown in the deposited model might result from overfitting. Figure 3A\u2013B compares the refined model and the deposited model, illustrating the model violations reported by MolProbity. Figure 4A illustrates the convergence of our refined ensemble, showing the 10 selected refined structures, the top model colored by per residue structural variation, and the refined B-factors. Both structural variation and B-factors provide unique insights on assessing the local confidence of the refined models, in which structural variance shows the allowed local conformations that satisfy the density data, while B-factors assess the local resolution of the density data at different regions of a model.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig3-v2.jpg)\n\n**Figure 3.:** (A) Comparison of the deposited and Rosetta-refined models, as assessed by MolProbity. Residues reported as violations are colored using the key shown on the far right. Blue open arrows indicate that the\u00a0hydrogen-bond geometry of a \u03b2-hairpin was automatically detected and improved in the Rosetta refined model. (B) An overlay of\u00a0the asymmetric unit of the deposited (pink) and the\u00a0Rosetta-refined (green) model indicates the magnitude of conformational changes that are explored by our refinement approach. (C) The agreement of models to map assessed by Fourier space correlation (y-axis) at each resolution shell (x-axis), where the reported resolution (3.4\u00c5) is depicted in a dashed orange\u00a0line.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig4-v2.jpg)\n\n**Figure 4.:** (A) An overview of the entire structure, estimating local model uncertainty in two ways: local structural diversity and refined B-factors. Local structure diversity is indicated by showing (left)\u00a0an overlay of the top 10 Rosetta models, (middle)\u00a0the top model colored by per residue deviation, and (right)\u00a0the refined per-atom B-factors. Using the model selection method illustrated in the middle panel of Figure 1, the C\u03b1 RMSDs among the selected ensemble range from 0.44 to 0.63 \u00c5. The orange square shows the location of a newly identified disulfide bond (C386\u2013C390) revealed by our refinement protocol. (B) A zoomed-in view of the disulfide linkage (C386\u2013C390) identified by the automated method. Note that the sidechain coordinates of C390 were unassigned in the deposited model; for presentation, the sidechain atoms of C390 were optimally added by Rosetta on the basis of the deposited backbone torsion angles of C390.\n\n**Table 1.**\n Structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">EMD ID</th>\n      <th rowspan=\"2\">PDB ID</th>\n      <th rowspan=\"2\">Reported resolution [\u00c5]</th>\n      <th rowspan=\"2\">Symmetry</th>\n      <th rowspan=\"2\">Number of amino acids*</th>\n      <th colspan=\"4\">MolProbity\u2020</th>\n      <th rowspan=\"2\">EMRinger score\u2020</th>\n      <th rowspan=\"2\">iFSC\u2021</th>\n    </tr>\n    <tr>\n      <th>Score</th>\n      <th>Clash\u00a0score</th>\n      <th>Rotamer outliers [%]</th>\n      <th>Ramachandran favored [%]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TRPV1</td>\n      <td>5778</td>\n      <td>3j5p</td>\n      <td>3.4</td>\n      <td>C4</td>\n      <td>489 (1956)</td>\n      <td>3.81 / 1.45</td>\n      <td>86.35 / 1.96</td>\n      <td>28.78 / 0.00</td>\n      <td>95.65 / 91.93</td>\n      <td>0.65 / 2.34</td>\n      <td>0.612 / 0.607</td>\n    </tr>\n    <tr>\n      <td>Frh</td>\n      <td>2513</td>\n      <td>4ci0</td>\n      <td>3.4</td>\n      <td>T</td>\n      <td>893 (10,716)\u00a7</td>\n      <td>3.98 / 1.59</td>\n      <td>120.42 / 3.22</td>\n      <td>39.11 / 0.27</td>\n      <td>96.51 / 92.18</td>\n      <td>1.06 / 2.17</td>\n      <td>0.743 / 0.708</td>\n    </tr>\n    <tr>\n      <td>Mitoribosome</td>\n      <td>2762</td>\n      <td>3j7y</td>\n      <td>3.4</td>\n      <td>N/A</td>\n      <td>7469\u00b6</td>\n      <td>2.71 / 1.50</td>\n      <td>8.38 / 3.51</td>\n      <td>8.49 / 0.08</td>\n      <td>89.86 / 94.86</td>\n      <td>2.09 / 2.40</td>\n      <td>0.692 / 0.676</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Number of protein residues in the asymmetric unit and (the total residues) modeled.\u2020Scores from deposited (left) versus (/) Rosetta refined (right) model.\u2021Integrated Fourier Shell Correlation (iFSC) from 10\u20133.4\u00c5 resolution shells.\u00a7In addition to protein residues, nine residues of ligand per asymmetric unit\u2013including a [NiFe] cluster, two metal ions (Fe and Zn), and four [4Fe4S] clusters, and an FAD\u2013were included in the refinement.\u00b6In addition to protein residues, 1529 base pairs of RNA molecule were included in the refinement._\n\nCloser inspection of the low-energy\u00a0refined models identified that serveral made a disulfide linkage (C386\u2013C390) that was not built in the deposited model and was supported by the deposited density data (Figure 4B). Further refinement (with the addition of the Ankyrin repeat domain) was made using the lowest energy disulfide-containing model as a starting point.\u00a0This disulfide has previously been identified and characterized in the literature as playing an important role in the TRPV1 channel's response to oxidative stress (Chuang and Lin, 2009); this, combined with our model's ability to better explain a tube of density that is unaccounted for in the deposited model, let us speculate that this disulfide bond is present in the cryo-EM reconstruction. The discovery of this linkage also illustrates the magnitude of conformational change that may be captured by our protocol; our Monte Carlo backbone sampling strategy allows refinement to overcome energy barriers that other methods using density minimization alone cannot overcome. Despite the magnitude of these changes, the conformational ensemble is well converged in this region (Figure 4B, right panel), providing further confidence in our refined model.\n\n### Refinement of highly\u00a0liganded complexes: application to the F420-reducing [NiFe] hydrogenase complex\n\nAs our next test of the approach, we wanted to illustrate structure refinement of a macromolecular assembly containing proteins with large numbers of ligands, some of which are covalently bound, all in a system with high-order point symmetry. For this, we chose the 3.4-\u00c5 reconstruction of the F420-reducing [NiFe] hydrogenase complex, in which the asymmetric unit contains three protein chains which feature together with a [NiFe] cluster, two metal ions, four [4Fe4S] clusters that are covalently bound to cysteine sidechains, and a flavin adenine dinucleotide (FAD) (Figure 5A). The complex is a dodecamer with tetrahedral symmetry, with 12 copies of a 902-residue molecule of three protein chains. We used the -auto_setup_metals option of Rosetta to maintain covalent linkages between protein and ligand during refinement (full input files are included as Supplementary file 2). The results of refinement are indicated in Figure 5 and Table 1; the MolProbity score improves from 3.98 to 1.59, and the EMRinger score improves from 1.06 to 2.17, but the iFSC drops from 0.743 to 0.708. We reason that the decrease of fit-to-density at high-resolution (10\u20133.4\u00c5) shells may be a result of overfitting the model to the density map; the deposited model was forced to fit the density by deviating the likely geometry observed in high-resolution crystal structures. This overfitting hypothesis is well supported by a high number of bad clashes and 39% rotamer outliers found in the deposited model (Table 1 and Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig5-v2.jpg)\n\n**Figure 5.:** (A) An illustration comparing the model geometry of the deposited (upper panel)\u00a0and Rosetta-refined (lower panel) models. Three chains (A/B/C) of the asymmetric unit of the complex are shown as cartoon with geometry violations reported by MolProbity colored according\u00a0to the key shown on the far right. Four iron\u2013sulfur clusters [4Fe4S] and a FAD are shown in a stick representation. Metal ions are depicted as spheres, with Zn grey, Fe orange, and Ni green. (B) Model\u2013map agreement \u2013 as assessed by Fourier shell correlation (y-axis) as a function of resolution (x-axis) \u2013 quantifies this improvement following voxel-size refinement. (C) Model quality as assessed by EMRinger and MolProbity. The x-axis shows methods used to evaluate the models, while the y-axis shows the scores under each criterion.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (Left panel) The symmetric complex downloaded from a\u00a0protein data bank as a\u00a0biounit shifts the entire complex out of the deposited density map. The middle and right panels show a zoomed-in view of two regions in the deposited models corresponding to the helix and the sheet indicated by the orange and cyan squares,\u00a0respectively, in the left panel.\n\n### Refinement of large complexes: application to the mitochondrial ribosome large subunit\n\nFinally, we wanted to test the ability of our refinement to scale to large asymmetric macromolecular assemblies, more typical of cryo-EM single particle reconstruction. To do so, we considered refining models against the previously published 3.4-\u00c5 cryo-EM reconstruction of the large subunit of the human mitochondrial ribosome (Brown et al., 2014). The deposited model had been previously refined with REFMAC (Brown et al., 2015), and consists of 48 chains of proteins with 7469 amino acids assigned, and two chains of RNA with 1529 nucleic acid bases.\n\nIn order to make conformational sampling tractable, we used a strategy slightly modified from that shown in Figure 1 (full input files are included as Supplementary file 3). The first two stages of the protocol (fragment-based backbone rebuilding and model selection) were carried out on each protein chain individually, whereas the third stage was carried out on the fully assembled complex. Model selection was carried out on each individual chain; each selected model was refined in the context of the complete assembly. Nucleic acids were not subject to geometry refinement but were included as rigid bodies throughout the whole-assembly refinement to accurately recapitulate protein\u2013RNA interactions.\n\nThe results of the\u00a0refinement are indicated in Figure 6 and\u00a0in Table 1. Several large-scale conformational changes again appear in converged models; these models show better geometry, improved\u00a0fit-to-density and fewer unexplained regions of density. The backbone geometry improvements in particular are\u00a0noticeable in proteins with \u03b2-sheet-containing domains. Refinement procedures such\u00a0as\u00a0phenix.real_space_refine [Afonine et al., 2012] and REFMAC [Brown et al., 2015]\u00a0require manual input of secondary structure restraints that\u00a0are\u00a0determined either from an initial model or from\u00a0homologous protein structure to maintain backbone geometry during refinement. In our approach, the Rosetta forcefield is able to optimize hydrogen bond geometry in secondary structures without requiring prior\u00a0knowledge of secondary structures. This is particularly powerful in refining de novo structures whose secondary structure is ambiguous because\u00a0of\u00a0poor local resolution. Figure 6C\u00a0illustrates an example (chain k) of this from the case of mitoribosome, where a \u03b2-sheet not present in the original model is identified, the backbone geometry is improved, and the model fits the density much better than the deposited model (Figure 6B\u00a0left panel, red arrow); the refinement also shows a large radius of convergence.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig6-v2.jpg)\n\n**Figure 6.:** (A) Scatterplots of model quality for each of the 48 protein chains compare the deposited (x-axis) and Rosetta (y-axis) models using MolProbity. On the left, the MolProbity scores of all 48 protein chains are compared, where a lower values indicates a better model geometry. On the right, the percentage of 'Ramachandran favored' residues on each chain are compared, with higher values preferable. (B) An evaluation of the fit-to-density of each protein chain. On the left, we compare the Fourier shell correlation (FSC) of each chain before and after refinement; we integrate the FSC from 10\u00c5 to 3.4\u00c5. Higher values indicate better agreement with the data. The largest improvement, chain k, is indicated by the red arrow. On the right, we show the full FSC curve, with the deposited model shown in pink, and the Rosetta refined model shown in green; the reported map resolution (3.4\u00c5) is indicated in the dashed orange line. (C) A zoomed-in view indicating a much improved backbone geometry and the large radius of convergence of the refinement of chain k. The left panel shows that the density for chain k is in the region of relatively low local resolution.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In the case of the\u00a0mitoribosome, refinement of a particularly well-resolved region in the map (left) led to sidechains that\u00a0are\u00a0clearly misaligned with the density (middle). This was due to the poor convergence of our Monte Carlo sidechain placing approach when applied to systems with more\u00a0than\u00a01000 residues. Our alternative approach, LocalRelax, which performs many local sidechain optimizations, correctly places sidechains in a way that is consistent with density (right).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17219/elife-17219-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** A scatterplot of model quality assessed by EMringer of each of the 48 protein chains compares the deposited (x-axis) and Rosetta (y-axis) models.\n\nThe refined ribosome model has 1.50 MolProbity score, 0.676 iFSC, and 2.40 EMRinger score. The largest improvements tend to occur in regions of low local resolution (~5\u00c5 assessed by ResMap [Kucukelbir et al., 2014] from the original paper) on the periphery of the complex. Looking at the results on individual chains, the MolProbity score improves on all 48 protein chains, in part because\u00a0of the much-improved backbone geometry assessed by the Ramachandran favored term in MolProbity (Figure 6A, right panel). Our Monte Carlo backbone sampling can correct these incorrect backbone placements, which often require significant compensating conformational changes. EMRinger score is also consistently improved (Figure 6\u2014figure supplement 2), particularly in regions where the deposited model scores poorly.\n\n### Comparison to phenix.real_space refinement\n\nFinally, using the same set of target proteins, we compare the Rosetta refinement results with those\u00a0of\u00a0another state-of-the-art real-space refinement method from the phenix package (phenix.real_space_refine) (Afonine et al., 2012). In order to prevent refinement from fitting to noise, starting from the deposited models, we carried out phenix real-space refinement in the training maps, which\u00a0contained\u00a0only the half of the data used by Rosetta in the first step of the refinement procedure (Figure 1). We then used the validation map to evaluate and compare the phenix refinement results to the Rosetta-refined models before full-map refinement. In the case of TRPV1, phenix used 0.24 CPU hours, generating a single model. For Rosetta, the 1000 independent trajectories take about 5\u2009hr each, or 5000 CPU-hours\u00a0in\u00a0total. As shown in Table 2, with much shorter run time (at most 1\u2009hr) phenix can yield models with geometry almost as good as Rosetta, albeit with slightly worse density fit as\u00a0evaluated by both real-space correlation coefficient and iFSC. However,\u00a0without the Monte Carlo backbone conformational sampling used\u00a0by Rosetta, models generated from phenix tend to minimally perturb the structure, and cannot\u00a0provide the\u00a0large backbone corrections shown by our new approach.\n\n**Table 2.**\n Comparison of structure refinement results between Rosetta and phenix.real_space_refine*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th rowspan=\"2\">RSCC*,\u2020,\u2021 validation map</th>\n      <th rowspan=\"2\">iFSC*,\u2020,\u00a7 validation map</th>\n      <th rowspan=\"2\">EMRinger Score*,\u2020 validation map</th>\n      <th colspan=\"4\">MolProbity\u2020</th>\n      <th rowspan=\"2\">Number of residues with better RSCC\u2020,\u00b6</th>\n    </tr>\n    <tr>\n      <th>Score</th>\n      <th>Clash\u00a0score</th>\n      <th>Rotamer outliers [%]</th>\n      <th>Ramachandran favored [%]</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>TRPV1</td>\n      <td>0.785 / 0.790</td>\n      <td>0.546 / 0.566</td>\n      <td>1.84 / 1.90</td>\n      <td>1.59 / 1.48</td>\n      <td>4.30 / 2.14</td>\n      <td>0.00 / 0.00</td>\n      <td>94.41 / 91.72</td>\n      <td>86 / 250</td>\n    </tr>\n    <tr>\n      <td>Frh</td>\n      <td>0.835 / 0.835</td>\n      <td>0.504 / 0.517</td>\n      <td>1.36 / 1.27</td>\n      <td>1.68 / 1.62</td>\n      <td>7.99 / 3.66</td>\n      <td>0.68 / 0.13</td>\n      <td>96.31 / 92.67</td>\n      <td>677 / 1328</td>\n    </tr>\n    <tr>\n      <td>Mitoribosome</td>\n      <td>0.832 / 0.832</td>\n      <td>0.476 / 0.478</td>\n      <td>2.05 / 1.98</td>\n      <td>1.88 / 1.62</td>\n      <td>6.17 / 4.08</td>\n      <td>0.38 / 0.00</td>\n      <td>90.19 / 93.49</td>\n      <td>415 / 564</td>\n    </tr>\n  </tbody>\n</table>\n\n_*To avoid over-fitting, refinement using both methods was carried out using the half-map approach, in which the models were subject to refinement using the training maps. The results showing here were evaluated using the validation-maps. The input model information is the same as reported at Table 1.\u2020Numbers (scores) from phenix.real_space_refine (left) versus (/) Rosetta refined (right) model.\u2021Real-space correlation coefficients were evaluated using UCSF Chimera.\u00a7Integrated Fourier shell correlation (iFSC) from 10\u20133.4\u00c5 resolution shells.\u00b6We calculate per-residue real-space correlation coefficient and report the number of residues which show the value of \u0394RSCC greater than 0.05._\n\n## Discussion\n\nIn this report, we develop a method for improving the\u00a0atomic details of manually traced models from 3\u20134.5\u00c5 resolution cryo-EM density\u00a0maps. We show the applicability of the approach by applying it to three systems: a membrane protein, a highly symmetric system with a large number of ligands,\u00a0and\u00a0an asymmetric macromolecular assembly containing large numbers of protein chains and RNAs. In all cases, we show that we are able to improve model geometry significantly\u00a0while maintaining good agreement to the density data. We show that model convergence can be used to suggest local model uncertainty in addition to B-factors. Finally, we also show that our models also recover structure features that are supported in the literature, or that\u00a0are\u00a0in much better local agreement with the density data.\n\nUnlike other approaches (Brown et al., 2015; Headd et al., 2012), our approach can automatically perform large-scale backbone reorganization, correcting backbone placement errors common in these 3\u20134.5\u00c5 resolution datasets. Two features of our refinement approach regarding the use of prior\u00a0information are crucial\u00a0to the success of this large-scale refinement. First, the use a physically realistic forcefield throughout refinement handles the under-constrained nature of refinement at these resolutions, using chemical 'domain knowledge' learned from high-resolution crystal structures to implicitly fill in the missing information in the data. Second, our fragment-based rebuilding ,\u00a0which explicitly samples the most likely backbone conformations given a short stretch of sequence, also uses prior information gathered from high-resolution protein structures, further restricting conformation space and filling in additional information that\u00a0is\u00a0not present in the data.\n\nIn all cases, we found that the high-resolution density-fit (evaluated by FSC integrated from 10\u20133.4\u00c5 resolution shells) drops slightly after Rosetta structure refinement. We reason that this is probably\u00a0because\u00a0the deposited models were overfit to the density maps, so\u00a0that\u00a0the models (especially the\u00a0sidechains) were forced to fit into the density by violating the likely\u00a0geometry observed from known high-resolution crystal structures. The observation of the slightly decreased of fit-to-density but significant improvement of model geometry bolsters the importance of using prior\u00a0information (such\u00a0as\u00a0sidechain rotatmers), as well as\u00a0of having a refinement scheme to monitor model overfitting.\n\nThere is an open question as to how structure refinement can be further improved, particularly as refinement extends to even lower resolutions (worse than 5\u00c5). Enhancing the predicting power of the Rosetta modeling methods is key to pushing the resolution limit of the current refinement method further. This can be achieved by improving: (1) the energy function (forcefield) used in structure refinement, and (2) conformational sampling methodology, particularly for systems for which secondary structure prediction is poor. Further improvements in the role of B-factor sharpening and its effect on refinement, as well as better predictors of local model error are necessary. Finally, structure refinement in maps that have highly heterogeneous local resolution remains challenging because a single set of refinement parameters cannot readily be applied at all regions. Methodological improvements that allow the adjustment of parameters based on local map quality will be essential to refine structures accurately from such maps. In our effort to enable automated structure refinement for large macromolecular assemblies, we hope that this method will be a valuable tool for determining atomically accurate structures from near-atomic-resolution cryo-EM data.\n\n## Materials and methods\n\n### Preparing maps for refinement\n\nSplit maps were provided by the original authors. One map was randomly chosen for refinement, and the other was used for validation. In all cases, a B-factor of \u2212100 was applied to the map used for refinement using the 'image_handler'\u00a0tool in RELION (Scheres, 2012). The maps were subsequently filtered to the user-refined resolution. In the case of the mitochondrial ribosome, segmented maps were prepared using a custom Rosetta application and the deposited structure to guide segmentation:\n\ndensity_tools.default.linuxgccrelease -s 3j7y0.pdb -mapfile EMD-2762.mrc -mask_radius 2 -maskonly\n\nSome steps of the protocol also made use of the full reconstruction. As with the training map, these were sharpened using a B-factor of \u201390 with a low-pass filter to 3\u00c5.\n\n### Preparing structures for refinement\n\nIn the case of TRPV1, residues 111\u2013202 in the Ankryin repeat domain from the deposited model did not have visible density, and so were deleted prior to refinement. Furthermore, automatic refinement was applied in two stages because\u00a0of\u00a0the high heterogeneity between the trans-membrane domain and the Ankryin repeat domain. The trans-membrane domain (residue 234\u2013586) was first refined in the masked density\u00a0using the deposited model. In the case of the mitoribosome, residues from chain t and chain f, in which atoms are assigned to residues 'UNK', were removed from all the refinement processes, as well as from\u00a0data analyses or results comparisons. In the case of Frh, we found that\u00a0the deposited symmetry operators (the 'BIOMT' lines) are not able to generate a symmetric model that can properly fit into the density map (Figure\u00a05\u2014figure supplement 1). To assemble the symmetric complex, we manually docked each subunit of the symmetric complex into the deposited density map (EMD-2513) using Chimera, and used this model as the 'deposited model' used in the paper. The\u00a0refinement of ligands received special treatment: refinement started using protein only, with constraints maintaining ligand site geometry. Later, ligands were added back on to the protein, which was rerefined.\n\n### Algorithm for model rebuilding\n\nModel rebuilding generally follows the procedure from our previous work (DiMaio et al., 2015), with a few key changes highlighted below. Rebuilding starts from the deposited structure, which is first conservatively refined using one macrocycle of the Rosetta relax protocol to trigger local strain on sidechains, which iterates four cycles Monte Carlo rotamer optimization with all-atom minimization, ramping the weight on van der Waals repulsion in each cycle. Minimization is carried out in Cartesian space, with a term enforcing ideal bond angles, bond lengths, and planarity (Conway et al., 2014).\n\nFollowing Cartesian minimization, the worst residues are selected using the following equation to evaluate the quality of the model at residue i:\n\n$$\nZ_{error}^{(i)}=w_{dens}\u22c5Z_{dens}^{(i)}+w_{lcldens}\u22c5Z_{lcldens}^{(i)}+w_{bonded}\u22c5Z_{bonded}^{(i)}+w_{rama}\u22c5Z_{rama}^{(i)}\n$$\n\nFour different terms appear in this equation, two of which assess a model\u2019s agreement to data, and\u00a0two of which assess a model\u2019s local strain. The first two, $Z_{dens}^{(i)}$ and $Z_{lcldens}^{(i)}$, assess the model\u2013map agreement of the backbone and sidechain atoms of each residue, computing the real-space correlation coefficient in a region around a residue, and converting that to a Z-score compared to the entire model. For the former term, an absolute correlation coefficient is computed; for the latter term, the correlation is normalized with respect to residues nearby (those within 10\u2009\u00c5 of residue i). The latter term is specifically added to deal with maps that have significant diversity in local resolution.\n\nThe second two terms, $Z_{bonded}^{(i)}$ and $Z_{rama}^{(i)}$, assess a model\u2019s strain following model refinement. The motivation for these terms is that in cases where the model was built incorrectly into density, it will be energetically unfavorable. Following an initial refinement, these incorrect portions will either be moved away from the data, or will introduce model strain to maintain the favorable agreement with the data, depending upon the balance of forces between the two. These terms compare the per-residue bond geometry term, and the per-residue Ramachandran energy, respectively, to that over the entire structure, and compute a Z-score for each residue.\n\nFor each of the four terms, a Z-score is computed and is summed together, with a particular weight for each term. The weights were tuned using a 3.3-\u00c5 cryo-EM map dataset with known high-resolution structure (the 20S proteasome [Li et al., 2013]), where a set of ~500 error-containing models was used as the training data. The results of this tuning process are shown in Figure 1\u2014figure supplement 2. The final weights selected were $w_{dens}$=0.45, $w_{lcldens}$=0.05, $w_{bonded}$=0.15, $w_{rama}$=0.35.\n\nAfter computing this weighted Z-score for each residue, all residues with a score below some target value (see the next section on iteration for specific values) are selected for local rebuilding. Local rebuilding uses the iterative fragment-based approach previously published (DiMaio et al., 2015). In our new approach, a residue is randomly chosen from the pool tagged for rebuilding from the previous step. Given the local sequence around this selected residue, a set of 25 protein backbone conformations from high-resolution structures with similar local sequence and predicted secondary structure is sampled. Each sampled backbone is refined \u2013 as an isolated fragment \u2013 into density using the following three-step procedure: (a) only\u00a0the backbone is minimized in torsion space using a simplified energy function, (b) sidechain rotamers are optimized into density, and (c) both backbone and sidechain are minimized in torsion space using a simplified energy function. Constraints on the ends of each fragment ensure the a\u00a0local region is reasonable in the context of the entire backbone. Of the 25 sampled fragments, the best is selected by fit-to-density. Finally, the replaced fragment is minimized in the context of the complete structure. This process is run as a Monte Carlo trajectory.\n\n### Iterative rebuilding and all-atom refinement\n\nModel rebuilding and all-atom refinement are run iteratively, as shown in Figure 1. Four separate 200-step Monte Carlo trajectories are run with increasing coverage of predicting errors but sacrificing the accuracy of the predictions. This is done with the Z-score cutoff increased in each step, following the schedule shown in Figure 1\u2014figure supplement 2: first residues with Z<\u22120.5 are selected for fragment-based rebuilding, followed by Z<\u22120.3, Z<\u22120.1, and finally Z<0. Between each cycle, a single iteration of Relax is run, in the same manner as in\u00a0the pre-refinement step. At the start of each stage, the\u00a0$Z_{error}^{(i)}$ of a model is re-evaluated as above to avoid refining fixed errors from the previous stage, and residues predicted to be in error are selected. Finally, an additional 200-step Monte Carlo trajectory is run with the $Z_{error}^{(i)}$ computing solely from $Z_{rama}^{(i)}$ to ensure the favorable Ramachandran geometry in models.\n\n### Pre-proline Ramachandran potential\n\nFollowing early experiments, a new term was added to Rosetta that enforces a distinct pre-proline Ramachandran potential, replacing the original 20 different potentials:\n\n$$\nE_{rama}=P(\\phi_{i},\u03c8_{i}|AA_{i})\n$$\n\nWith 40 different potentials conditioned on the sequence identity of the C-terminal adjacent residue:\n\n$$\nE_{rama}=P(\\phi_{i},\u03c8_{i}|AA_{i},is_pro_{i+1})\n$$\n\nThis potential was trained using the Richardson 8000 set of high-resolution crystal structures (Chen et al., 2010), and smoothed using adaptive kernel density estimates, as with the original Ramachandran potential (Ting et al., 2010). They are included in the released Rosetta with the energy term rama_prepro (using the same weight as the Rosetta term rama). Figure 1\u2014figure supplement 4 illustrates the resulting potentials. For all experiments in this manuscript, this term replaced the default Ramachandran score term in Rosetta.\n\n### Local relax\n\nFollowing our four cycles of refinement, we run a modified version of Relax, which we call LocalRelax. Modifications were made following the observation that \u2013 when applied to very large complexes (800+ residues) \u2013 we observed many instances in\u00a0which sidechains were not properly optimized into density, even though the density was very clear. Figure 5\u2014figure supplement 1 shows several such cases.\n\nIn Local\u00a0Relax, small overlapping regions of ~20\u2013100 residues (discontinuous in sequence space) are selected for optimization repeatedly, until the entire protein has been optimized at least once. The approach is based upon the idea of neighbor residues, where residue neighbors are defined as all residues with a C\u03b2-C\u03b2 distance less than 8\u00c5. We first find the residue ri\u00a0with the most residue neighbors. Then we optimize the neighbors of ri, and the neighbors-of-neighbors of ri: the neighbors are allowed to optimize both sidechain and backbone conformation, while the neighbors-of-neighbors may only optimize sidechain conformation. This optimization is performed via Monte Carlo sampling of sidechain rotamers, followed by Cartesian minimization of all movable atoms. Following this, all neighbors of ri (as well as ri) are marked as visited, and the process repeats, selecting a new ri as the unmarked residue with the most neighbors. This process continues until all residues are marked. In total, four cycles of this procedure are carried out, increasing the weight on van der Waals repulsion in each cycle. Finally, following coordinate refinement with LocalRelax, we fit atomic B-factors following the scheme described\u00a0in our previous paper (DiMaio et al., 2015).\n\n### Sidechain rescaling\n\nWe compute a scale\u00a0factor associated with each sidechain that describes how much contribution to the density score is made by each sidechain. The values were computed using the 3.3-\u00c5 reconstruction of the 20S proteasome (Li et al., 2013) and the 3.2-\u00c5 reconstruction of \u03b2-galactosidase (Bartesaghi et al., 2014). Models were refined into the density and real-space atomic B-factors were fit for each atom. We then converted the atomic B-factors to scale factors using the following transformation:\n\n$$\nscale_{AA}\u2248\\frac{1}{B^{3/2}}\n$$\n\nScales were normalized such that the scale for all backbone atoms was equal to 1. To prevent overfitting, each sidechain was grouped into one of three classes, and all sidechains within a given group were given the average scale\u00a0factor of the group. Finally, while maintaining the ratio of these three groups with respect to one another, we scaled the relative contribution of backbone versus sidechain density, and selected the best values on the basis of free FSC following refinement. The final values range from 0.66 to 0.78, and are tabulated in Table 3.\n\n**Table 3.**\n Sidechain scaling factors used in automated Rosetta structure refinement.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sidechain</th>\n      <th>Raw data</th>\n      <th>Factor used</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ARG</td>\n      <td>0.84</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>LYS</td>\n      <td>0.84</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>GLU</td>\n      <td>0.85</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>MET</td>\n      <td>0.87</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>ASP</td>\n      <td>0.88</td>\n      <td>0.66</td>\n    </tr>\n    <tr>\n      <td>CYS</td>\n      <td>0.87</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>GLN</td>\n      <td>0.89</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>HIS</td>\n      <td>0.91</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>ASN</td>\n      <td>0.91</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>THR</td>\n      <td>0.94</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>SER</td>\n      <td>0.95</td>\n      <td>0.71</td>\n    </tr>\n    <tr>\n      <td>TYR</td>\n      <td>0.95</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>TRP</td>\n      <td>0.96</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>ALA</td>\n      <td>0.97</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>PHE</td>\n      <td>0.98</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>PRO</td>\n      <td>0.98</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>ILE</td>\n      <td>0.99</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>LEU</td>\n      <td>0.99</td>\n      <td>0.78</td>\n    </tr>\n    <tr>\n      <td>VAL</td>\n      <td>1.00</td>\n      <td>0.78</td>\n    </tr>\n  </tbody>\n</table>\n\n### Voxel-size refinement\n\nTo optimize the voxel size of a map used to refine the model, we fix the model coordinates, and compute the model density. We then refine the voxel size $v=[v_{x},v_{y},v_{z}]$\u00a0and the origin $o=[o_{x},o_{y},o_{z}]$ of the map density \u2013 fixing these parameters in the model density \u2013 to maximize the real-space correlation coefficient between the two:\n\n$$\nCC(v,o)=\\frac{\\sum\u200b\u03c1_{o}(x\u21c0)\u22c5\u03c1_{c}(I^_{v,o}(x\u21c0))\u2212\\sum\u200b\u03c1_{o}(x\u21c0)\u22c5\\sum\u200b\u03c1_{c}(I^_{v,o}(x\u21c0))}{(\\sigma_{o}^{2}(x\u21c0)\\sigma_{c}^{2}+(I^_{v,o}(x\u21c0)))^{1/2}}I^_{v,o}(x,y,z)=(o_{x}+x/a_{x},o_{y}+y/a_{y},o_{z}+z/a_{z})\n$$\n\nHere, $\u03c1_{0}$ refers to the experimental map and $\u03c1_{c}$ to the map derived from the model, while $\\sigma_{o}$ and $\\sigma_{c}$ refer to the standard deviations over the corresponding density maps. Sums are taken over the entire map. Off-grid density values are computed using cubic splines to interpolate the calculated density map. This function is optimized with respect to the voxel-size parameters using l-BFGS minimization; analytic derivatives are computed for CC with respect to v and o, and the same cubic splines are used to calculate derivatives with respect to the calculated map. Voxel size may be refined isotropically or anisotropically (using\u00a0either four or six total parameters); all experiments in this manuscript treated this refinement isotropically (that is, all three axes are scaled together).\n\nIn this report, although\u00a0we carried out voxel-size refinement for each\u00a0of\u00a0the three targets, we found only minimal changes of voxel size in all\u00a0the cases. For fair comparison, we report all of\u00a0the model-to-map metrics using maps with the deposited voxel sizes.\n\n### Refinement against the full reconstruction and model selection\n\nThe previously described protocol was run to generate 5000 independent trajectories. From these 5000 models, a set of 10 representative models is chosen, following the protocol outlined in Figure 1. We want our optimized models to be optimal simultaneously\u00a0in terms of: (a) independent map agreement, (b) physically realistic geometry, and (c) agreement to the full reconstruction. The last of these three is necessary\u00a0because the full reconstruction often features details that\u00a0are\u00a0not present in the independent half maps.\n\nIndependent-map FSCs were computed against the validation map \u2013 subject to the same sharpening scheme as the training map \u2013 using the ComputeFSC mover in Rosetta. The integrated FSC between 10\u00a0\u00c5 and the reported resolution (3.4\u00a0\u00c5 in all cases) of the map was used to assess agreement with the independent map. The script computes FSC after masking the map with a mask computed from the model and filtered to 12\u00c5 with the command line:\n\ndensity_tools.exe -in:file:s model.pdb -mapfile validation_map.mrc -mask_radius 12 -nresbins 50 -lowres 10 -hires 3.4 -verbose\n\nIn the case of the mitochondrial ribsosome, each segmented domain map was evaluated separately. Of the 1000 generated models, the top 50 by independent map agreement are selected.\n\nNext, we want to identify the models from this subset that are the most physically realistic. To do this, all 50 models are rescored with MolProbity (Chen et al., 2010), and the top 10 are selected. While computing similar features to the Rosetta energy, its slightly different implementation makes it a somewhat orthogonal measure for structure evaluation.\n\nFinally, we want to use features from the full reconstruction to further improve the model, particularly bulky sidechains that may not be visible in the half-map reconstructions. However, when refining against the full reconstruction, we need to be careful not to overfit to the full reconstruction, as we no longer have an independent map with which to evaluate overfitting. We use two ideas to avoid overfitting in this case. First, we do not perform any fragment-based rebuilding with the full map, and instead we\u00a0perform just\u00a0two cycles of LocalRelax and B-factor refinement with the full map. Second, we use half\u00a0maps to determine the optimal fit-to-density weight when refining against the full map. The weight is selected using the following relation, where the weight is chosen to maximize the following:\n\n$$\nU=FSC_{free}\u22120.004\u2219E_{i}\n$$\n\nHere, Ei\u00a0is the per-residue energy, and is included as additional regularization to avoid overfitting. The value of 0.004 was chosen to normalize the two based on the relative dynamic ranges of both terms.\n\nThe top 10 models from the previous selection are subject to refinement against the full map. The final model is then taken as the model with best integrated-FSC against the full reconstruction. Local deviation over all ten models is used to estimate model uncertainty. The per-residue structural variance of ensemble models is calculated using Theseus with the default command line (Theobald and Wuttke, 2008).\n\n### Assembly of the mitochondrial ribosome\n\nIn the case of the mitochondrial ribosome, we refine separate models for each protein subunit. A final assembly step combines the full model. In this final assembly step, all subunits, plus the deposited nucleic acid chains are combined in a single model, and are subject to 2 cycles of LocalRelax against the full reconstruction.\n\n### EMRinger score calculation\n\nFor each of the five models following model selection, EMringer was run using the command:\n\nphenix.emringer MODEL.pdb MAP.ccp4\n\nTo calculate per-chain EMRinger scores, pdb files were first segmented by chain ID and then EMringer scores were calculated against the segmented pdb files.\n\nEMRinger scores can be compared absolutely between structures, although model size and local resolution variation are sources of noise for the EMRinger score. Scores below one are indicators of suboptimal model to map agreement for structures better than 4-\u00c5 resolution, while a score around zero indicates no improvement beyond randomness.\n\n### Phenix real-space refinement\n\nStarting from the deposited model for each of the three targets, real-space refinement was carried out using the Phenix package (v. 2450) with a default setting using the command:\n\nphenix.real_space_refine MODEL.pdb MAP.mrc resolution=3.4\n\nFor the case of Frh, ligand files were appended to the above command with cif files generated using the command:\n\nphenix.elbow ligands.pdb\n\n### Availability\n\nAll methods described are available as part of Rosetta\u00a0Software\u00a0Suite, using weekly releases after week 35, 2016. The Rosetta XML files and flags for running all the refinements discussed in this manuscript are included as Supplementary files 1\u20133. The scripts and the tutorial used for running the method described here is available at the website of the corresponding author (https://faculty.washington.edu/dimaio/files/density_tutorial_sept15_2.pdf).\n",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e0a94170-ec5b-4a44-8d66-a57657e0c361",
+      "submission_id": "34dd5af5-94f1-4366-8c85-87c2228faf70",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Axel T Brunger, Howard Hughes Medical Institute, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17219.028](https://doi.org/10.7554/eLife.17219.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Automated structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors and another is Sjors HW Scheres (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript concerns atomic model refinement against maps obtained from single particle electron microscopy data at near atomic resolution (for EM structures determined in the ~ 4.5 to 3 \u00c5 range). This is an important topic in modern structural biology, as the recent surge in resolution of cryo-EM structures calls for improvements in the methods to position and refine atoms in these maps.\n\nHere the authors use the Rosetta package which takes into account prior knowledge about protein structure. Although Rosetta has been previously applied to EM map refinement, the authors describe a number of improvements of the method. The authors implemented (1) procedures to detect regions where the fit of manually built models produced strain in the local geometry as a consequence of misfitting the map or as a consequence of inaccuracy of the magnification parameter. Other improvements include (2) voxel size refinement, which may resolve the magnification inaccuracy of cryoEM maps; (3) side chain down-weighting during refinement, which may be proper for cryoEM maps since the molecules are not packed and therefore side chains less well defined compared to backbone; (4) refinement against the full map at the final stage.\n\nAlthough none of these approaches are individually entirely new, it is the combination of these methods that may become a useful tool for the structural biologist working with EM maps. However, the reviewers have identified a number of issues that need to be addressed before a final decision can be made.\n\nEssential revisions:\n\n1) The improved refinement methods should be compared to standard refinement approaches, since otherwise it is difficult to judge the improvement of the presented over existing methods. They should for example compare with standard phenix.refine real-space simulated-annealing refinement. The amount of computational time for both approaches should also be provided. Finally, the comparison should systematically assess the quality of the model fit throughout the model, not just by subjectively showing particular regions.\n\n2) There is clearly a need to find a better estimate of the voxel size. It is tempting to optimize the voxel in the way described here and it has been done in the same way before as published by other groups (these references to previous work should be provided). However, if the model has errors (which it always has), the best modelmap correlation is not always obtained for the correct voxel size. One of the reviewers performed a simple test using a PDB structure (PDB ID 4AKE) and simulated a density with voxel size 1.0 \u00c5. Errors were introduced to the model by adding Gaussian noise to the atomic coordinates, here with a \u03c3 of 3 \u00c5. 50 of such randomized models were generated. The modelmap correlation was then plotted for different voxel sizes, showing mean and standard deviation for these 50 models. It turns out that the error of the voxel size optimization is of the same order of magnitude as the typical error of the estimate from the microscope (~1%). Thus, the proposed voxel size estimation method may not produce the true voxel size. This issue needs to be addressed in the manuscript.\n\n3) Figure 4A is supposed to show the mismatch of the deposited model and density. One of the reviewers downloaded the deposited model (PDB 4CI0) and EM map (EMD-2513) and could not reproduce this figure. The deposited model actually fits well into the deposited map. Images are attached to this decision letter of a similar view with the same contour level given in the figure caption (0.065). The authors need to clarify this issue.\n\n4) The authors may wish to further elaborate on two limitations that are briefly mentioned in the final paragraph of the Discussion:\n\nA) How to handle maps that have dramatic differences in local resolution. For example, in the TrpV1 channel case, the authors had to refine part of the model in two steps against two parts of the map (which is only mentioned in the Methods).\n\nB) How to determine the sharpening B-factor objectively before real-space refinement. The authors appear to have determined the sharpening B-factor subjectively (as mentioned in the first paragraph of the Methods section). But what criterion was used? This issue may become more difficult when the map has heterogeneous local resolutions.\n\n5) How does the method handle missing residues in loops or disordered region that are very difficult to place manually? This would be a very useful tool.\n\n6) Figure 3B, right panel. How are these different models of the ensemble selected? By using some map correlation criterion to get the \"best\" fitted models?\n\n7) The original and optimized voxel sizes for the F420 example is given in the manuscript as 1.320 and 1.326 \u00c5. The changes in voxel sizes should also be given for the other examples.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Automated structure refinement of macromolecular assemblies from cryo-EM maps using Rosetta\" for further consideration at eLife. Your article has been favorably evaluated by John Kiriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript has been improved but there is a remaining issue that needs to be addressed before acceptance, as outlined in the following.\n\nThe reviewers found the explanation on the issue previously raised about Figure 5 not satisfactory. The shift shown in Figure 5 is not a result of voxel size error, but is likely due to the fact that the authors of the F420 structure (PDBID 4ci0) did not carefully generate the biological assembly structure. Maybe there was a slight mismatch in the symmetry operators used to generate the entire assembly. If one fits each subunit rigidly into the density (e.g. in Chimera) then all subunits fit very well (also with the original voxel size of 1.320). Figure 5A and the \"deposited\" items in panels B and C should therefore be removed. The effect of changing the voxel size from 1.320 to 1.326 Ang is much smaller than the current figure suggests.\n",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dbc1dd8c-8f7e-456c-b51c-d5bc5f57d142",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C1",
+      "claim": "Cryo-EM has revealed the structures of many challenging yet exciting macromolecular assemblies at near-atomic resolution (3\u20134.5\u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM has revealed the structures of many challenging yet exciting macromolecular assemblies at near-atomic resolution (3\u20134.5\u00c5), providing biological phenomena with molecular descriptions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the capabilities of cryo-EM that is supported by the broader scientific literature and the specific examples discussed in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "c8381c04-651c-4651-a4b7-e9a70c98e319",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C2",
+      "claim": "At near-atomic resolutions (3-4.5\u00c5), accurately positioning individual atoms remains challenging and error-prone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at these resolutions, accurately positioning individual atoms remains challenging and error-prone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the discussion of challenges in model building and references to prior work on model building errors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a8981546-a0be-4602-bd28-0861425024ab",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C3",
+      "claim": "Manually refining thousands of amino acids typical in a macromolecular assembly is tedious and time-consuming.",
+      "claim_type": "EXPLICIT",
+      "source": "Manually refining thousands of amino acids \u2013 typical in a macromolecular assembly \u2013 is tedious and time-consuming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical challenges of manual refinement, supported by common knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "2c2e50b9-8893-4941-803c-36ac7989b2ca",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C4",
+      "claim": "The presented automated method can improve the atomic details in models that are manually built in near-atomic-resolution cryo-EM maps.",
+      "claim_type": "EXPLICIT",
+      "source": "We present an automated method that can improve the atomic details in models that are manually built in near-atomic-resolution cryo-EM maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by the experimental results presented for three test systems.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e2598375-d673-4c47-96fa-69e70ad35bd1",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C5",
+      "claim": "The method can improve model geometry while maintaining the fit-to-density when applied to three systems recently solved by cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying the method to three systems recently solved by cryo-EM, we are able to improve model geometry while maintaining the fit-to-density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the quantitative results presented in Tables 1 and 2 and the figures showing model quality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3de378db-ca63-42ef-b82c-6ad50f585282",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C6",
+      "claim": "Backbone placement errors are automatically detected and corrected by the method.",
+      "claim_type": "EXPLICIT",
+      "source": "Backbone placement errors are automatically detected and corrected, and the refinement shows a large radius of convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the examples shown in the figures, particularly for TRPV1 and mitoribosome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "ead2bdfb-dd5b-4d00-ae32-66de51291cf9",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C7",
+      "claim": "The refinement shows a large radius of convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Backbone placement errors are automatically detected and corrected, and the refinement shows a large radius of convergence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ability to correct significant backbone errors, as shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "5422495c-2f49-43c0-963f-47f37938b64c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C8",
+      "claim": "The method is amenable to structures with symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that the method is amenable to structures with symmetry, of very large size, and containing RNA as well as covalently bound ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful refinement of TRPV1 (C4 symmetry) and Frh (tetrahedral symmetry).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "13b5dde5-b252-4ab2-869e-8e51c0109ed7",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C9",
+      "claim": "The method is amenable to structures of very large size.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that the method is amenable to structures with symmetry, of very large size, and containing RNA as well as covalently bound ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful refinement of the mitoribosome with 7469 amino acids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f1501ee5-de2f-491e-bbd8-7c71a111dfd0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C10",
+      "claim": "The method is amenable to structures containing RNA as well as covalently bound ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrate that the method is amenable to structures with symmetry, of very large size, and containing RNA as well as covalently bound ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the refinement of mitoribosome (containing RNA) and Frh (containing covalently bound ligands).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "8f059542-4eef-4fdc-8d13-fcf1c48eaa91",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C11",
+      "claim": "Advances in direct electron detectors have led cryo-EM to achieve near-atomic resolution (3\u20134.5 \u00c5) using single-particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in direct electron detectors, as well as better image analysis algorithms, have led cryo-electron microscopy (cryo-EM) to achieve near-atomic resolution (3\u20134.5 \u00c5) using single-particle analysis (Li et al., 2013; Bai et al., 2013; Scheres, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "9528c036-aca5-4276-84e2-7f5e7ac3d488",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C12",
+      "claim": "Better image analysis algorithms have led cryo-EM to achieve near-atomic resolution (3\u20134.5 \u00c5) using single-particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Advances in direct electron detectors, as well as better image analysis algorithms, have led cryo-electron microscopy (cryo-EM) to achieve near-atomic resolution (3\u20134.5 \u00c5) using single-particle analysis (Li et al., 2013; Bai et al., 2013; Scheres, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f25e4132-8e05-44b1-ac84-c9ff47c159a0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C13",
+      "claim": "At 3-4.5\u00c5 resolution, individual \u03b2-strands are resolvable in cryo-EM reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM reconstructions at these resolutions, at which individual \u03b2-strands are resolvable and bulky sidechains are somewhat visible, make it possible to build an all-atom model directly from such maps (Kudryashev et al., 2015; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of cryo-EM maps at this resolution range, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "c689189b-e87b-4246-a7c7-0854fcaa4410",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C14",
+      "claim": "At 3-4.5\u00c5 resolution, bulky sidechains are somewhat visible in cryo-EM reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM reconstructions at these resolutions, at which individual \u03b2-strands are resolvable and bulky sidechains are somewhat visible, make it possible to build an all-atom model directly from such maps (Kudryashev et al., 2015; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of cryo-EM maps at this resolution range, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "5aac3b7e-437a-45f4-9211-f8dc017f2087",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C15",
+      "claim": "It is possible to build an all-atom model directly from cryo-EM maps at 3-4.5\u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM reconstructions at these resolutions, at which individual \u03b2-strands are resolvable and bulky sidechains are somewhat visible, make it possible to build an all-atom model directly from such maps (Kudryashev et al., 2015; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work demonstrating this capability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "9d5cc753-89b5-463a-881d-4c4476a536a6",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C16",
+      "claim": "Density maps at 3-4.5\u00c5 resolution do not grant enough information to assign coordinates for each atom in the structure precisely.",
+      "claim_type": "EXPLICIT",
+      "source": "Although sequence can be registered, density maps at this range of resolution do not grant enough information to assign coordinates for each atom in the structure precisely, and thus they cannot always capture molecular interactions for a biochemical process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of cryo-EM at this resolution, based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3e0da8e7-650d-486e-87dd-d4438894b958",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C17",
+      "claim": "Model building and refinement at near-atomic resolution is challenging and error prone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, such model building and refinement is challenging and error prone (DeLaBarre and Brunger, 2006; Brunger et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work documenting these challenges.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "08c9c421-b252-484f-9bde-8a1ac171815d",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C18",
+      "claim": "Model-building into a cryo-EM map at near-atomic resolution generally involves manually building a model into the map with the assistance of a graphical user interface tool.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-building into a cryo-EM map at near-atomic resolution generally involves manually building a model into the map with the assistance of a graphical user interface tool (Emsley et al., 2010), followed by refinement with software repurposed from X-ray crystallography (Brown et al., 2015; Afonine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard workflow in the field, supported by citations to relevant software.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f36d399a-67e6-4b98-8c86-73d23901abbf",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C19",
+      "claim": "Model-building at near-atomic resolution is followed by refinement with software repurposed from X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "Model-building into a cryo-EM map at near-atomic resolution generally involves manually building a model into the map with the assistance of a graphical user interface tool (Emsley et al., 2010), followed by refinement with software repurposed from X-ray crystallography (Brown et al., 2015; Afonine et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard workflow in the field, supported by citations to relevant software.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "0b55d0d0-88fa-4c6f-84ec-28e19f466272",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C20",
+      "claim": "At near-atomic resolution, the density may not be of sufficient resolution to identify sidechain rotamers uniquely, even for bulky aromatic residues.",
+      "claim_type": "EXPLICIT",
+      "source": "At near-atomic resolution, this manual model-building and refinement can be error prone because: (a) the density may not be of sufficient resolution to identify sidechain rotamers uniquely, even for bulky aromatic residues, making it difficult to determine sidechain-sidechain or sidechain-backbone interactions accurately",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of cryo-EM density at this resolution, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "ad757b25-45a8-4022-b56f-e32056854c17",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C21",
+      "claim": "For regions of non-regular secondary structure (turns or loops) or with poor local resolution, it may be difficult to position backbone atoms accurately.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) for regions of non-regular secondary structure (turns or loops) or with poor local resolution, it may be difficult to position backbone atoms accurately",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges of model building in certain regions, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "cb7c9ddd-613d-47b0-a77e-ff905b725926",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C22",
+      "claim": "In regions of non-regular secondary structure or poor local resolution, precise sequence registration may be error prone.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) in these same regions, precise sequence registration may also be error prone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the challenges of model building in certain regions, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "ef36da38-d22e-4c21-9f86-2548b5690d9d",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C23",
+      "claim": "The refinement approach proceeds in three stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, the approach proceeds in three stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e7a9a966-2350-495e-874b-681de4b1277b",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C24",
+      "claim": "In the first stage, problematic residues are identified by assessing local model-strain and local agreement to density data.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first stage, we identify problematic residues by assessing local model-strain and local agreement to density data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "d8cba301-77e3-4f96-8d08-c960677d18ea",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C25",
+      "claim": "Problematic regions are rebuilt against a 'training' half-map using fragment-based Monte Carlo sampling with many independent trajectories followed by all-atom refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "These problematic regions are rebuilt against a 'training' half-map using fragment-based Monte Carlo sampling with many independent trajectories followed by all-atom refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "8c38635c-5067-4641-b67a-ec6dd1b686dd",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C26",
+      "claim": "In the second stage, the best subset of independent trajectories are selected by identifying a subset of stereochemically correct models with best agreement to an independent 'validation' half-map.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the best subset of these independent trajectories are selected by identifying a subset of stereochemically correct models with best agreement to an independent 'validation' half-map, to prevent overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "82855391-f079-4f1c-9bab-82ffb6b78bd3",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C27",
+      "claim": "In the third stage, models are further optimized in the full-reconstruction with a weight optimally scaled between experimental data and the forcefield using the 'validation' half map.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, models are further optimized in the full-reconstruction with a weight optimally scaled between experimental data and the forcefield using the 'validation' half map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the methods and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "eee92424-f6d9-4f6e-8e36-45bd0974588d",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C28",
+      "claim": "In incorrect regions of hand-traced models, the models fit the density well but introduce strain into nearby bond angles and torsions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, when this previous approach was applied to the de novo hand-traced models from cryo-EM maps, we observed that in incorrect regions, the models still fit the density well, but did so by introducing strain into the nearby bond angles and torsions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "562efda7-ab75-4cb3-ac12-633d1a29a2b7",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C29",
+      "claim": "Strain often occurs near the C\u03b2 atom of aromatic residues, where strain is introduced to fit the sidechain into the density.",
+      "claim_type": "EXPLICIT",
+      "source": "This often occurred near the C\u03b2 atom of aromatic residues, where strain was introduced to fit the sidechain into the density (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is illustrated in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "7c12fe7b-6495-4fb2-8f31-0e65751837a0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C30",
+      "claim": "Local strain can serve as an indicator to identify regions that could be refined to improve both the fit-to-density and the model geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, local strain can serve as an indicator to identify regions that could be refined to improve both the fit-to-density and the model geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the development and testing of the error predictor shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "110c594f-effc-4a18-bfd4-7b0cf37cd3dc",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C31",
+      "claim": "The new error predictor that assesses both local model-map agreement and local model-strain offers better discrimination of incorrectly versus correctly placed backbone than using density alone, with an AUPRC of 0.80 versus 0.76.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a training dataset composed of error-containing models of a cryo-EM map in which the structure has been determined by X-ray crystallography (Figure 1\u2014figure supplement 2), we show that the new error predictor offers better discrimination of incorrectly versus correctly placed backbone, with an AUPRC (area under precision-recall curve) of 0.80 versus 0.76 using density alone (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from testing the error predictor, shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "9decc3c3-1b7d-4fd0-867c-f12f3cad114f",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C32",
+      "claim": "Certain sidechains, particularly those containing negatively charged amino acids (Glu/Asp), tend to suffer from radiation damage and appear weaker in single-particle reconstructions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that certain sidechains \u2013 particularly those containing negatively charged amino acids (Glu/Asp) \u2013 tend to suffer from radiation damage and thus appear weaker in single-particle reconstructions (Bartesaghi et al., 2014; Campbell et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "ea753e12-2545-44d5-ae6c-1584c57b6e04",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C33",
+      "claim": "The density of certain bulky sidechains, such as those containing Lys and Arg, tends to be less well-defined than their backbone density.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the density of certain bulky sidechains, such as those containing Lys and Arg, tends to be less well-defined than their backbone density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the characteristics of cryo-EM density, based on established knowledge and observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "cdb6a6ca-3f54-4363-bc4e-5e5472cb06f6",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C34",
+      "claim": "Down-weighing factors for each amino acid were determined by comparing the average per-amino-acid real-space B-factor on two cryo-EM reconstructions with known high-resolution crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Down-weighing factors for each amino acid were determined by comparing the average per-amino-acid real-space B-factor on two cryo-EM reconstructions with known high-resolution crystal structures (20S proteasome [Li et al., 2013] and \u03b2-galactosidase [Bartesaghi et al., 2014]), with the ratio of backbone and sidechain average B-factors being used to derive the scaling factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to derive the scaling factors, which are presented in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "d4857862-7e2d-4ac8-9271-3d3d7c736b27",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C35",
+      "claim": "When the previous all-atom refinement approach was applied to very large complexes (of 800+ residues), many instances were observed in which sidechains were not properly optimized to density.",
+      "claim_type": "EXPLICIT",
+      "source": "When our previous all-atom refinement approach was applied to very large complexes (of 800+ residues), we observed many instances in which sidechains were not properly optimized to density (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is illustrated in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "70030b84-b3e9-47c8-bddb-bedbcfa2217e",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C36",
+      "claim": "The local sidechain refinement approach resolved the sidechain fitting issue in large complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach resolved this sidechain fitting issue, as shown in Figure 6\u2014figure supplement 1 (right panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a81c7e6a-2712-49ff-9827-b406519ca675",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C37",
+      "claim": "The magnification factor of cryo-EM may be determined with some inaccuracy, leading to errors in deciding the voxel size of the resulting single-particle reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the magnification factor may be determined with some inaccuracy, leading to errors in deciding the voxel size of the resulting single-particle reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about potential sources of error in cryo-EM, based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a9585ff2-25a3-4409-ac1e-ad6376f72392",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C38",
+      "claim": "Voxel size may be off by as much as several percent when using EM maps as molecular replacement targets.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that voxel size may be off by as much as several percent when using EM maps as molecular replacement targets (Jackson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "0b8964e2-6c09-4e18-9a3b-75755dfb6f28",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C39",
+      "claim": "The voxel-size refinement strategy scales the voxel size of the map to maximize the model-map real-space correlation coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we develop a voxel-size refinement strategy that scales the voxel size of the map to maximize the model-map real-space correlation coefficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method developed in this work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e761eec6-c941-40ed-8694-d7b1e13b8c06",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C40",
+      "claim": "The iterative voxel-size refinement approach captures the general agreement between forcefield and voxel size in the presence of model errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we investigate the robustness of our voxel-size refinement method in the presence of model errors, and demonstrate that our iterative approach captures the general agreement between forcefield and voxel size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "b3443aa2-3918-4126-a26e-4e0ec09d625f",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C41",
+      "claim": "Following cycles of iterated voxel refinement and all-atom refinement, the voxel size shows significantly better convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Following our iterative procedure, the deviation was much smaller, ranging from 0.99 to 1.02 (stdev = 0.004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "49d23345-da5d-497b-a891-0bae62636c51",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C42",
+      "claim": "The refinement method is not particularly sensitive to the extent of B-factor sharpening, behaving similarly over a range of sharpening values between \u221240 and \u2212130.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that our refinement method is not particularly sensitive to the extent of B-factor sharpening, behaving similarly over a range of sharpening values between \u221240 and \u2212130.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "02556908-bc98-4ffd-b493-0f7a64770435",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C43",
+      "claim": "Independent reconstructions are used for model selection and to determine the balance between model geometry and fit-to-data during refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous approaches, we used independent reconstructions ('validation' half-map) both for model selection (DiMaio et al., 2015) and to determine the balance between model geometry and fit-to-data during refinement (DiMaio et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach used in this work, building on prior methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "483695d8-9dfb-472f-b964-8a0ce134721c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C44",
+      "claim": "At the final stage, several steps are performed in the context of the full reconstruction because of the additional sidechain details that may be present only in the full reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "At the very last stage, however, we perform several steps in the context of the full reconstruction because of the additional sidechain details that may be present only in the full reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for using the full reconstruction in the final stage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3948ea5d-05e1-46f1-ad3a-3ef18c392776",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C45",
+      "claim": "Two independent halves of the data are used to optimize the weight used with full-reconstruction data.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the approach adapted by the REFMAC group (Brown et al., 2015; Fern\u00e1ndez et al., 2014), we use two independent halves of the data (the training and validation half-maps) to optimize the weight used with full-reconstruction data (see Materials and methods and (Figure 1\u2014figure supplement 3), and that weight is used both in refinement against the full reconstruction and in voxel-size refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used, with reference to a similar approach by others.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "178bd750-f995-40eb-9312-98b9c005f78c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C46",
+      "claim": "Model geometry is verified using MolProbity following refinement against the full reconstruction to ensure that it is not worsening.",
+      "claim_type": "EXPLICIT",
+      "source": "Following refinement against the full reconstruction, model geometry is verified (using MolProbity [Chen et al., 2010]) to ensure that it is not worsening during refinement against the full reconstruction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a quality control step in the refinement protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "362f420b-210d-462a-9d06-4d3f1be2e329",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C47",
+      "claim": "EMRinger samples density around C\u03b3 atoms as they are rotated about the \u03c71 dihedral angle, and identifies the angle which presents peak density for the C\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "EMRinger samples density around C\u03b3 atoms as they are rotated about the \u03c71 dihedral angle, and identifies the angle which presents peak density for the C\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how EMRinger works, based on the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "504d9f1c-a1cd-424a-8f6d-3cd35b88c31d",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C48",
+      "claim": "The deposited TRPV1 model (PDB id: 3J5P) was used as input to the refinement protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "The deposited model (PDB id: 3J5P) was used as input to the protocol described previously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the starting point for the TRPV1 refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "92f62eaf-17cc-4d52-88fa-fd8547476001",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C49",
+      "claim": "All TRPV1 refinement was carried out using the native C4 symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "All refinement was carried out using the native C4 symmetry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a parameter of the TRPV1 refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "cd643773-056c-42d5-a946-8b0adc8b264f",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C50",
+      "claim": "The refined TRPV1 model improves MolProbity score from 3.81 to 1.45.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined model improves model quality and maintains good model-data agreement when compared to the deposited model: the MolProbity score improves from 3.81 to 1.45",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the TRPV1 refinement, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "fd91b06b-672a-45e0-bcfa-3080b28f2c61",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C51",
+      "claim": "The fit-to-data (integrated Fourier shell correlation from 10 to 3.4\u00c5) for TRPV1 drops slightly from 0.612 to 0.607 after refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "the fit-to-data (integrated Fourier shell correlation from 10 to 3.4\u00c5) drops slightly from 0.612 to 0.607",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the TRPV1 refinement, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "81c337ec-c69a-4666-9b65-8e05a0a4a7aa",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C52",
+      "claim": "The EMRinger score for TRPV1 improves from 0.65 to 2.34 after refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "but the EMRinger score improves from 0.65 to 2.34, indicating that the better fitting shown in the deposited model might result from overfitting",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the TRPV1 refinement, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "df86c321-9cd9-4a95-a640-9fabe07a2b86",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C53",
+      "claim": "The better fitting shown in the deposited TRPV1 model might result from overfitting.",
+      "claim_type": "EXPLICIT",
+      "source": "but the EMRinger score improves from 0.65 to 2.34, indicating that the better fitting shown in the deposited model might result from overfitting",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the EMRinger score improvement.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "90fdc9dd-9ccb-455b-b10e-af2b7302f61a",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C54",
+      "claim": "Closer inspection of the low-energy refined TRPV1 models identified that several made a disulfide linkage (C386\u2013C390) that was not built in the deposited model.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of the low-energy refined models identified that serveral made a disulfide linkage (C386\u2013C390) that was not built in the deposited model and was supported by the deposited density data (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the TRPV1 refinement, illustrated in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "41c58fe5-216f-4a21-8706-760f4f218a56",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C55",
+      "claim": "The C386-C390 disulfide linkage in TRPV1 was supported by the deposited density data.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer inspection of the low-energy refined models identified that serveral made a disulfide linkage (C386\u2013C390) that was not built in the deposited model and was supported by the deposited density data (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "7db9af39-680d-44e3-8509-d40e7bf2f076",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C56",
+      "claim": "The C386-C390 disulfide bond has previously been identified and characterized in the literature as playing an important role in the TRPV1 channel's response to oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This disulfide has previously been identified and characterized in the literature as playing an important role in the TRPV1 channel's response to oxidative stress (Chuang and Lin, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "2dcb1565-6abc-49dd-af5c-c335f1ab97fd",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C57",
+      "claim": "The discovery of the C386-C390 disulfide linkage illustrates the magnitude of conformational change that may be captured by the refinement protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of this linkage also illustrates the magnitude of conformational change that may be captured by our protocol",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural changes required to form the disulfide bond.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "6f7c0903-c2a6-481a-84e5-0e392fdd6268",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C58",
+      "claim": "The Monte Carlo backbone sampling strategy allows refinement to overcome energy barriers that other methods using density minimization alone cannot overcome.",
+      "claim_type": "EXPLICIT",
+      "source": "our Monte Carlo backbone sampling strategy allows refinement to overcome energy barriers that other methods using density minimization alone cannot overcome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ability to make large conformational changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3c8b475d-6f1f-491d-8e5a-6ad7d9e66848",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C59",
+      "claim": "The asymmetric unit of the F420-reducing [NiFe] hydrogenase complex contains three protein chains which feature together with a [NiFe] cluster, two metal ions, four [4Fe4S] clusters that are covalently bound to cysteine sidechains, and a flavin adenine dinucleotide (FAD).",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we chose the 3.4-\u00c5 reconstruction of the F420-reducing [NiFe] hydrogenase complex, in which the asymmetric unit contains three protein chains which feature together with a [NiFe] cluster, two metal ions, four [4Fe4S] clusters that are covalently bound to cysteine sidechains, and a flavin adenine dinucleotide (FAD) (Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the Frh complex.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "b93ff979-8c9b-4c16-be16-c1255e6b643e",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C60",
+      "claim": "The F420-reducing [NiFe] hydrogenase complex is a dodecamer with tetrahedral symmetry.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex is a dodecamer with tetrahedral symmetry, with 12 copies of a 902-residue molecule of three protein chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the symmetry of the Frh complex.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "52454057-6c3e-46fd-9ebd-5698d9174486",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C61",
+      "claim": "The MolProbity score for Frh improves from 3.98 to 1.59 after refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of refinement are indicated in Figure 5 and Table 1; the MolProbity score improves from 3.98 to 1.59",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the Frh refinement, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "36488977-d834-4064-be42-3c35efaaf4a2",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C62",
+      "claim": "The EMRinger score for Frh improves from 1.06 to 2.17 after refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "and the EMRinger score improves from 1.06 to 2.17",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the Frh refinement, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "76962706-4e4a-4f3d-821c-4102e2a98379",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C63",
+      "claim": "The iFSC for Frh drops from 0.743 to 0.708 after refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "but the iFSC drops from 0.743 to 0.708",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the Frh refinement, shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "4c8e56db-e42f-4f6d-ad54-f149faad7f3d",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C64",
+      "claim": "The decrease of fit-to-density at high-resolution shells for Frh may be a result of overfitting the deposited model to the density map.",
+      "claim_type": "EXPLICIT",
+      "source": "We reason that the decrease of fit-to-density at high-resolution (10\u20133.4\u00c5) shells may be a result of overfitting the model to the density map",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of improved geometry but decreased fit-to-density.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "120c7975-97fb-482c-9368-7b0cebdf5ffc",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C65",
+      "claim": "The deposited Frh model was forced to fit the density by deviating from the likely geometry observed in high-resolution crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "the deposited model was forced to fit the density by deviating the likely geometry observed in high-resolution crystal structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high number of geometry violations in the deposited model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "58cfd3ae-750c-4573-814f-7905122e51c4",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C66",
+      "claim": "The overfitting hypothesis for Frh is well supported by a high number of bad clashes and 39% rotamer outliers found in the deposited model.",
+      "claim_type": "EXPLICIT",
+      "source": "This overfitting hypothesis is well supported by a high number of bad clashes and 39% rotamer outliers found in the deposited model (Table 1 and Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the quantitative data in Table 1 and Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "92fe89a0-1e94-44f3-b1b0-c70866209844",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C67",
+      "claim": "The deposited mitochondrial ribosome model had been previously refined with REFMAC.",
+      "claim_type": "EXPLICIT",
+      "source": "The deposited model had been previously refined with REFMAC (Brown et al., 2015), and consists of 48 chains of proteins with 7469 amino acids assigned, and two chains of RNA with 1529 nucleic acid bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the starting point for the mitoribosome refinement.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "32f9c231-e0fc-424c-85e3-e2f08165a051",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C68",
+      "claim": "The deposited mitochondrial ribosome model consists of 48 chains of proteins with 7469 amino acids assigned, and two chains of RNA with 1529 nucleic acid bases.",
+      "claim_type": "EXPLICIT",
+      "source": "The deposited model had been previously refined with REFMAC (Brown et al., 2015), and consists of 48 chains of proteins with 7469 amino acids assigned, and two chains of RNA with 1529 nucleic acid bases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the mitoribosome model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "228d509f-cce0-46e9-856a-4228bd0cf24a",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C69",
+      "claim": "For the mitoribosome, the first two stages of the protocol (fragment-based backbone rebuilding and model selection) were carried out on each protein chain individually.",
+      "claim_type": "EXPLICIT",
+      "source": "The first two stages of the protocol (fragment-based backbone rebuilding and model selection) were carried out on each protein chain individually, whereas the third stage was carried out on the fully assembled complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the strategy used for the mitoribosome refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f19e7e79-f357-4279-83cc-3ebf60773126",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C70",
+      "claim": "For the mitoribosome, the third stage of refinement was carried out on the fully assembled complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The first two stages of the protocol (fragment-based backbone rebuilding and model selection) were carried out on each protein chain individually, whereas the third stage was carried out on the fully assembled complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the strategy used for the mitoribosome refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "1623156d-c753-4aed-b759-9466862c6fed",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C71",
+      "claim": "Nucleic acids in the mitoribosome were not subject to geometry refinement but were included as rigid bodies throughout the whole-assembly refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleic acids were not subject to geometry refinement but were included as rigid bodies throughout the whole-assembly refinement to accurately recapitulate protein\u2013RNA interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how RNA was handled in the mitoribosome refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a3ea9c77-6f7e-420f-9e27-a1c5fdc76f9c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C72",
+      "claim": "Several large-scale conformational changes appear in converged mitoribosome models.",
+      "claim_type": "EXPLICIT",
+      "source": "Several large-scale conformational changes again appear in converged models",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mitoribosome refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "36938473-2178-475c-84e7-b300c3e11081",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C73",
+      "claim": "The refined mitoribosome models show better geometry, improved fit-to-density and fewer unexplained regions of density.",
+      "claim_type": "EXPLICIT",
+      "source": "these models show better geometry, improved fit-to-density and fewer unexplained regions of density",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the improvements observed in the mitoribosome refinement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "8343974e-38bc-4649-aa70-f23cc0eedbb5",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C74",
+      "claim": "The Rosetta forcefield is able to optimize hydrogen bond geometry in secondary structures without requiring prior knowledge of secondary structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In our approach, the Rosetta forcefield is able to optimize hydrogen bond geometry in secondary structures without requiring prior knowledge of secondary structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of the Rosetta forcefield.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "fb815e89-4263-4b39-84eb-5870ca6c35ad",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C75",
+      "claim": "The refined mitoribosome model has 1.50 MolProbity score, 0.676 iFSC, and 2.40 EMRinger score.",
+      "claim_type": "EXPLICIT",
+      "source": "The refined ribosome model has 1.50 MolProbity score, 0.676 iFSC, and 2.40 EMRinger score.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are quantitative results from the mitoribosome refinement, also shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "1a1bcdcd-c909-4e67-a9f7-2e033f156f04",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C76",
+      "claim": "The largest improvements in the mitoribosome tend to occur in regions of low local resolution (~5\u00c5) on the periphery of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The largest improvements tend to occur in regions of low local resolution (~5\u00c5 assessed by ResMap [Kucukelbir et al., 2014] from the original paper) on the periphery of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the mitoribosome refinement results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "5f7bf550-0bb3-4ee2-81ba-de19a0cd03b2",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C77",
+      "claim": "The MolProbity score improves on all 48 protein chains of the mitoribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at the results on individual chains, the MolProbity score improves on all 48 protein chains",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A and Table 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "d673a018-4912-47ad-8d1a-e03ac25d9896",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C78",
+      "claim": "The improvement in MolProbity score for the mitoribosome is in part because of the much-improved backbone geometry assessed by the Ramachandran favored term.",
+      "claim_type": "EXPLICIT",
+      "source": "in part because of the much-improved backbone geometry assessed by the Ramachandran favored term in MolProbity (Figure 6A, right panel)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "19aaa4a4-b42e-4a2c-93d6-e0b2c88e259b",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C79",
+      "claim": "EMRinger score is consistently improved for the mitoribosome, particularly in regions where the deposited model scores poorly.",
+      "claim_type": "EXPLICIT",
+      "source": "EMRinger score is also consistently improved (Figure 6\u2014figure supplement 2), particularly in regions where the deposited model scores poorly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3b690ff3-b8bd-40c9-b95f-134f229520b8",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C80",
+      "claim": "Phenix real-space refinement was carried out in the training maps for comparison with Rosetta.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to prevent refinement from fitting to noise, starting from the deposited models, we carried out phenix real-space refinement in the training maps, which contained only the half of the data used by Rosetta in the first step of the refinement procedure (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the comparison methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3dd54745-d4f6-42f2-a088-464047330487",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C81",
+      "claim": "For TRPV1, phenix used 0.24 CPU hours, while Rosetta used about 5000 CPU-hours in total.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TRPV1, phenix used 0.24 CPU hours, generating a single model. For Rosetta, the 1000 independent trajectories take about 5 hr each, or 5000 CPU-hours in total.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of computational cost between the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "edbe0b87-992c-4814-9056-71e2fec9f423",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C82",
+      "claim": "Phenix can yield models with geometry almost as good as Rosetta with much shorter run time (at most 1 hr), albeit with slightly worse density fit.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Table 2, with much shorter run time (at most 1 hr) phenix can yield models with geometry almost as good as Rosetta, albeit with slightly worse density fit as evaluated by both real-space correlation coefficient and iFSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of results between phenix and Rosetta, shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "91c09351-7894-4e5e-884d-31296213313a",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C83",
+      "claim": "Without the Monte Carlo backbone conformational sampling used by Rosetta, models generated from phenix tend to minimally perturb the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, without the Monte Carlo backbone conformational sampling used by Rosetta, models generated from phenix tend to minimally perturb the structure, and cannot provide the large backbone corrections shown by our new approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the capabilities of the two methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "3d12954a-fb92-4f24-b68d-a96004a0996e",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C84",
+      "claim": "Models generated from phenix cannot provide the large backbone corrections shown by the Rosetta approach.",
+      "claim_type": "EXPLICIT",
+      "source": "However, without the Monte Carlo backbone conformational sampling used by Rosetta, models generated from phenix tend to minimally perturb the structure, and cannot provide the large backbone corrections shown by our new approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the capabilities of the two methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "db52bd8b-ce1b-4fd2-9ee2-0db78dae30e0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C85",
+      "claim": "The method can improve model geometry significantly while maintaining good agreement to the density data in all three test systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we show that we are able to improve model geometry significantly while maintaining good agreement to the density data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings, supported by the data in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f026e124-66b9-4df2-99c1-9f1ce52c2c15",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C86",
+      "claim": "Model convergence can be used to suggest local model uncertainty in addition to B-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that model convergence can be used to suggest local model uncertainty in addition to B-factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 4A for TRPV1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "fccfbaf0-b90c-402d-8c30-2f48e8636c76",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C87",
+      "claim": "The refined models recover structure features that are supported in the literature or that are in much better local agreement with the density data.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also show that our models also recover structure features that are supported in the literature, or that are in much better local agreement with the density data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the C386-C390 disulfide bond in TRPV1 and the improved \u03b2-sheet geometry in mitoribosome chain k.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "f1c5b53b-6a61-40ee-a718-13f380903cf6",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C88",
+      "claim": "The approach can automatically perform large-scale backbone reorganization, correcting backbone placement errors common in 3\u20134.5\u00c5 resolution datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other approaches (Brown et al., 2015; Headd et al., 2012), our approach can automatically perform large-scale backbone reorganization, correcting backbone placement errors common in these 3\u20134.5\u00c5 resolution datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key distinguishing feature of the method, demonstrated in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "56f4ba51-81cc-4179-a356-e8211c9bd019",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C89",
+      "claim": "The use of a physically realistic forcefield throughout refinement handles the under-constrained nature of refinement at 3-4.5\u00c5 resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the use a physically realistic forcefield throughout refinement handles the under-constrained nature of refinement at these resolutions, using chemical 'domain knowledge' learned from high-resolution crystal structures to implicitly fill in the missing information in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the role of the forcefield in the method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "c3f0fe02-19fb-4b3d-aa91-34150f5c2106",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C90",
+      "claim": "Fragment-based rebuilding explicitly samples the most likely backbone conformations given a short stretch of sequence, using prior information gathered from high-resolution protein structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our fragment-based rebuilding , which explicitly samples the most likely backbone conformations given a short stretch of sequence, also uses prior information gathered from high-resolution protein structures, further restricting conformation space and filling in additional information that is not present in the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about how fragment-based rebuilding works.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "d4213820-f1b3-4c98-bf38-3a8e62bb34a2",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C91",
+      "claim": "In all cases, the high-resolution density-fit (evaluated by FSC integrated from 10\u20133.4\u00c5 resolution shells) drops slightly after Rosetta structure refinement.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we found that the high-resolution density-fit (evaluated by FSC integrated from 10\u20133.4\u00c5 resolution shells) drops slightly after Rosetta structure refinement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the results, shown in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "12212150-a9dd-45ab-8f1a-32834c36fed7",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C92",
+      "claim": "The deposited models were likely overfit to the density maps, so that the models (especially the sidechains) were forced to fit into the density by violating the likely geometry observed from known high-resolution crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We reason that this is probably because the deposited models were overfit to the density maps, so that the models (especially the sidechains) were forced to fit into the density by violating the likely geometry observed from known high-resolution crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation of decreased fit-to-density but improved geometry.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "b951fc8c-e0a8-444c-900c-58e6740febdb",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C93",
+      "claim": "The observation of slightly decreased fit-to-density but significant improvement of model geometry bolsters the importance of using prior information (such as sidechain rotamers).",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of the slightly decreased of fit-to-density but significant improvement of model geometry bolsters the importance of using prior information (such as sidechain rotatmers), as well as of having a refinement scheme to monitor model overfitting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "d484e314-16ff-46fc-a3e4-85d2a019be13",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C94",
+      "claim": "Enhancing the predicting power of the Rosetta modeling methods is key to pushing the resolution limit of the current refinement method further.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancing the predicting power of the Rosetta modeling methods is key to pushing the resolution limit of the current refinement method further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future directions for improving the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "38a3b180-80f9-4e57-88f5-346e5b880698",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C95",
+      "claim": "Structure refinement in maps that have highly heterogeneous local resolution remains challenging because a single set of refinement parameters cannot readily be applied at all regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, structure refinement in maps that have highly heterogeneous local resolution remains challenging because a single set of refinement parameters cannot readily be applied at all regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current limitations of the method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e7586234-c706-4191-8ff5-feb22f1083e2",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "claim_id": "C96",
+      "claim": "Methodological improvements that allow the adjustment of parameters based on local map quality will be essential to refine structures accurately from maps with heterogeneous local resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Methodological improvements that allow the adjustment of parameters based on local map quality will be essential to refine structures accurately from such maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future directions for improving the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "266809e2-4cda-4321-8cac-a48c3960a866",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context and challenges of cryo-EM model building at near-atomic resolution (3-4.5\u00c5). At these resolutions, while structures can be determined, accurately positioning individual atoms is challenging and error-prone due to insufficient density information for precise atomic placement, difficulty identifying sidechain rotamers, and challenges in positioning backbone atoms in non-regular secondary structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C16-C22 collectively describe well-established limitations of cryo-EM at near-atomic resolution. These are supported by citations to prior work (C17) and represent accepted knowledge in the field. The claims accurately characterize the state of the field and the motivation for the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "37604282-ef04-43bf-93fd-4f17d7aca14c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors present an automated refinement method that improves atomic details in manually built cryo-EM models at near-atomic resolution. The method automatically detects and corrects backbone placement errors with a large radius of convergence, while improving model geometry and maintaining fit-to-density. The method is applicable to structures with symmetry, very large size, and containing RNA and covalently bound ligands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 describe the main contributions of the paper and are well-supported by experimental results on three test systems (TRPV1, Frh, mitoribosome) as shown in Tables 1-2 and multiple figures. The quantitative improvements in MolProbity scores, EMRinger scores, and successful application to diverse systems provide strong evidence for these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a7ca2659-7b09-4026-8dd8-e06b97b19461",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The refinement approach proceeds in three stages: (1) identifying problematic residues using local model-strain and density agreement, then rebuilding using fragment-based Monte Carlo sampling against a training half-map; (2) selecting the best models based on agreement to a validation half-map and stereochemical correctness; (3) optimizing models in the full reconstruction with optimally weighted experimental data and forcefield terms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 describe the three-stage refinement protocol, which is clearly illustrated in Figure 1 and detailed in the Methods section. The use of half-maps for training and validation to prevent overfitting is a sound approach. The methodology is well-documented and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "13dbfc44-829c-4736-8041-32bba9c13667",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed a new error predictor that identifies problematic residues by assessing both local model-strain and local model-map agreement. In incorrect regions of hand-traced models, strain is introduced (particularly near C\u03b2 atoms of aromatic residues) to fit sidechains into density. This strain serves as an indicator for regions requiring refinement. The new predictor achieves AUPRC of 0.80 versus 0.76 for density alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 describe a key methodological innovation. The observation of strain in incorrect regions (C28-C29) is illustrated in Figure 1\u2014figure supplement 1. The improved performance (AUPRC 0.80 vs 0.76, C31) is demonstrated using a training dataset with known structure (20S proteasome) as shown in Figure 1\u2014figure supplement 2. The improvement is modest but meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "c05a1d41-3e4e-4c94-89c1-118d63e785fc",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors account for differential sidechain visibility in cryo-EM by implementing amino acid-specific down-weighting factors. Certain sidechains (particularly Glu/Asp) suffer radiation damage and appear weaker, while bulky sidechains (Lys/Arg) are less well-defined than backbone. Down-weighting factors were derived by comparing real-space B-factors from two cryo-EM reconstructions with known crystal structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by citations to prior studies on radiation damage. Claims C33-C34 describe the methodological approach to derive scaling factors (presented in Table 3) based on empirical analysis of two systems with known structures. This is a reasonable approach to handle known limitations of cryo-EM density.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "fe7ca7b4-9ffe-4df3-9194-9c81fa0123bc",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A local sidechain refinement approach was developed to address poor sidechain optimization in very large complexes (800+ residues). The previous all-atom refinement approach failed to properly optimize sidechains in such systems, but the new local approach resolved this issue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 identify a limitation of the previous approach and describe the solution. Both claims are supported by Figure 6\u2014figure supplement 1, which shows the problem (left/middle panels) and the solution (right panel). The local optimization strategy is a practical solution to the combinatorial explosion problem in large systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "1a8b22eb-71d7-404f-8040-251d097b5f8b",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors developed a voxel-size refinement strategy to correct magnification calibration errors. Voxel size may be inaccurate by several percent, and the iterative refinement approach scales voxel size to maximize model-map correlation. The method shows robust convergence even in the presence of model errors, with standard deviation improving from 0.011 to 0.004 after iterative refinement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe a known problem in cryo-EM (supported by citation C38). Claims C39-C41 describe the solution and demonstrate its robustness using perturbed models (Figure 2A). The quantitative improvement in convergence (stdev 0.011 to 0.004) provides strong evidence for the method's effectiveness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "877682b7-5225-42f3-be8a-8c005cd88b3c",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The refinement method is not particularly sensitive to B-factor sharpening, behaving similarly over a range of values between -40 and -130.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by the benchmark results shown in Figure 2B, which demonstrates consistent performance across a range of B-factor sharpening values. This is an important robustness check for the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "017b7e8a-6d1d-46a6-bcbd-954a3b260843",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The refinement protocol uses independent half-map reconstructions for model selection and determining the balance between geometry and fit-to-data to prevent overfitting. At the final stage, refinement is performed against the full reconstruction to capture additional sidechain details, with the density weight optimized using half-maps and geometry verified with MolProbity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 describe the strategy to prevent overfitting while maximizing use of available data. The approach is well-justified and follows best practices in the field (with reference to REFMAC, C45). Figure 1\u2014figure supplement 3 illustrates the weight optimization procedure. This is a sound methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "a56ad8bd-0d06-4e33-beca-4de626669280",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Application to TRPV1 (3.4\u00c5 resolution, C4 symmetry) shows significant improvement: MolProbity score improves from 3.81 to 1.45, EMRinger score improves from 0.65 to 2.34, while fit-to-data (iFSC) drops slightly from 0.612 to 0.607. The improved EMRinger score despite slightly decreased fit-to-data suggests the deposited model may have been overfit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 present quantitative results for TRPV1 refinement (Table 1, Figures 3-4). The dramatic improvement in geometry metrics (MolProbity, EMRinger) with minimal decrease in fit-to-data is well-documented. The inference about overfitting (C53) is reasonable given the EMRinger improvement, though it remains an interpretation rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Refinement of TRPV1 identified a disulfide linkage (C386-C390) not built in the deposited model but supported by density and previously characterized in the literature as important for oxidative stress response. This discovery illustrates the large conformational changes the protocol can capture through Monte Carlo backbone sampling, overcoming energy barriers that density minimization alone cannot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 describe a specific structural finding supported by Figure 4B showing the disulfide bond and density. Claim C56 provides literature support for the biological relevance. Claims C57-C58 are reasonable inferences about the method's capabilities based on the magnitude of structural change required to form this bond. This is a compelling validation of the method's ability to make biologically meaningful corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "72ba6a16-4d29-42cd-b173-4a6e016961b0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Application to F420-reducing [NiFe] hydrogenase (Frh, 3.4\u00c5, tetrahedral symmetry, highly liganded) shows MolProbity improvement from 3.98 to 1.59 and EMRinger improvement from 1.06 to 2.17, but iFSC decreases from 0.743 to 0.708. The authors reason this decrease reflects overfitting in the deposited model, supported by high clash scores and 39% rotamer outliers in the original.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 describe the system composition. Claims C61-C63 present quantitative results (Table 1, Figure 5). Claims C64-C66 provide interpretation of the decreased fit-to-data. The inference about overfitting is well-supported by the poor geometry metrics of the deposited model (39% rotamer outliers, high clashes). This demonstrates the method's applicability to complex liganded systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "ef029ee9-470c-4c89-ace7-27799162fa08",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Application to the mitochondrial ribosome (3.4\u00c5, 48 protein chains, 7469 amino acids, 2 RNA chains) demonstrates scalability. Refinement was performed chain-by-chain for stages 1-2, then on the full assembly for stage 3. The refined model achieves MolProbity 1.50, iFSC 0.676, EMRinger 2.40, with improvements on all 48 chains, particularly in Ramachandran favored residues (5% increase). The Rosetta forcefield optimizes hydrogen bonding without requiring prior secondary structure knowledge.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C79 describe the mitoribosome refinement, the largest and most complex test case. The quantitative improvements are documented in Table 1 and Figure 6. The claim about improvements on all 48 chains (C77) is shown in Figure 6A. The ability to refine such a large system without secondary structure restraints (C74) is a significant advantage. The results demonstrate the method's scalability and robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "e8c48a1c-ff49-466f-b977-f70738515bc9",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Comparison with Phenix real-space refinement shows that Phenix achieves similar geometry with much shorter runtime (0.24 vs 5000 CPU-hours for TRPV1) but slightly worse density fit. However, Phenix cannot provide the large backbone corrections shown by Rosetta due to lack of Monte Carlo backbone sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 present a fair comparison with an alternative method (Table 2). The computational cost difference is substantial (C81), and the trade-offs are clearly stated: Phenix is faster with comparable geometry but cannot make large backbone corrections (C83-C84). This comparison helps contextualize the method's advantages and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "706258a5-3b81-47cd-a6c2-7ad6c072e0a2",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Across all three test systems, the method significantly improves model geometry while maintaining good agreement to density data. Model convergence can be used to estimate local uncertainty in addition to B-factors. The refined models recover structural features supported by literature or showing better local density agreement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 summarize the main findings across all test cases. C85 is supported by Tables 1-2. C86 is demonstrated in Figure 4A for TRPV1. C87 is exemplified by the C386-C390 disulfide bond and improved \u03b2-sheet geometry in mitoribosome chain k. These summary claims accurately reflect the demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "8c64257b-230f-48dc-b120-7efc5813a2c9",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The approach can automatically perform large-scale backbone reorganization, correcting placement errors common at 3-4.5\u00c5 resolution. Two key features enable this: (1) use of a physically realistic forcefield to handle under-constrained refinement by incorporating prior knowledge from high-resolution structures; (2) fragment-based rebuilding that samples likely backbone conformations based on sequence and prior structural information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 describe key distinguishing features of the method. C88 is demonstrated by the large conformational changes shown in the results (e.g., TRPV1 disulfide formation, mitoribosome chain k). C89-C90 explain the methodological basis for these capabilities. These are well-supported by the demonstrated results and represent important conceptual contributions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "52181209-59a1-43e8-991f-72075eac19d0",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In all cases, high-resolution density fit (iFSC 10-3.4\u00c5) drops slightly after refinement. The authors reason this is because deposited models were overfit to density, forcing models (especially sidechains) to fit density by violating likely geometry from high-resolution structures. This observation emphasizes the importance of using prior information and monitoring overfitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C91 is an observation documented in Tables 1-2. Claims C92-C93 provide interpretation. While the inference about overfitting is reasonable given the improved geometry metrics and is supported by specific examples (e.g., Frh with 39% rotamer outliers), it remains an interpretation. However, the pattern is consistent across all three systems, lending credibility to this explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    },
+    {
+      "id": "fa260c59-5d3a-408b-a611-f89527a8dd71",
+      "content_id": "2ab93b64-62f6-4eab-8722-57255853581b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors identify future directions: enhancing Rosetta's predictive power is key to extending to lower resolutions; refinement in maps with heterogeneous local resolution remains challenging because single parameter sets cannot be applied uniformly; methodological improvements allowing parameter adjustment based on local map quality will be essential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C96 discuss limitations and future work. These are reasonable assessments based on the current results and represent honest acknowledgment of remaining challenges. C95 is particularly relevant given the heterogeneous resolution observed in the mitoribosome. These are appropriate forward-looking statements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:57:54.884396Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dbc1dd8c-8f7e-456c-b51c-d5bc5f57d142",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "c8381c04-651c-4651-a4b7-e9a70c98e319",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "a8981546-a0be-4602-bd28-0861425024ab",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "9d5cc753-89b5-463a-881d-4c4476a536a6",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "3e0da8e7-650d-486e-87dd-d4438894b958",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "0b55d0d0-88fa-4c6f-84ec-28e19f466272",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "ad757b25-45a8-4022-b56f-e32056854c17",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "cb7c9ddd-613d-47b0-a77e-ff905b725926",
+      "result_id": "266809e2-4cda-4321-8cac-a48c3960a866"
+    },
+    {
+      "claim_id": "2c2e50b9-8893-4941-803c-36ac7989b2ca",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "e2598375-d673-4c47-96fa-69e70ad35bd1",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "3de378db-ca63-42ef-b82c-6ad50f585282",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "ead2bdfb-dd5b-4d00-ae32-66de51291cf9",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "5422495c-2f49-43c0-963f-47f37938b64c",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "13b5dde5-b252-4ab2-869e-8e51c0109ed7",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "f1501ee5-de2f-491e-bbd8-7c71a111dfd0",
+      "result_id": "37604282-ef04-43bf-93fd-4f17d7aca14c"
+    },
+    {
+      "claim_id": "ef36da38-d22e-4c21-9f86-2548b5690d9d",
+      "result_id": "a7ca2659-7b09-4026-8dd8-e06b97b19461"
+    },
+    {
+      "claim_id": "e7a9a966-2350-495e-874b-681de4b1277b",
+      "result_id": "a7ca2659-7b09-4026-8dd8-e06b97b19461"
+    },
+    {
+      "claim_id": "d8cba301-77e3-4f96-8d08-c960677d18ea",
+      "result_id": "a7ca2659-7b09-4026-8dd8-e06b97b19461"
+    },
+    {
+      "claim_id": "8c38635c-5067-4641-b67a-ec6dd1b686dd",
+      "result_id": "a7ca2659-7b09-4026-8dd8-e06b97b19461"
+    },
+    {
+      "claim_id": "82855391-f079-4f1c-9bab-82ffb6b78bd3",
+      "result_id": "a7ca2659-7b09-4026-8dd8-e06b97b19461"
+    },
+    {
+      "claim_id": "eee92424-f6d9-4f6e-8e36-45bd0974588d",
+      "result_id": "13dbfc44-829c-4736-8041-32bba9c13667"
+    },
+    {
+      "claim_id": "562efda7-ab75-4cb3-ac12-633d1a29a2b7",
+      "result_id": "13dbfc44-829c-4736-8041-32bba9c13667"
+    },
+    {
+      "claim_id": "7c12fe7b-6495-4fb2-8f31-0e65751837a0",
+      "result_id": "13dbfc44-829c-4736-8041-32bba9c13667"
+    },
+    {
+      "claim_id": "110c594f-effc-4a18-bfd4-7b0cf37cd3dc",
+      "result_id": "13dbfc44-829c-4736-8041-32bba9c13667"
+    },
+    {
+      "claim_id": "9decc3c3-1b7d-4fd0-867c-f12f3cad114f",
+      "result_id": "c05a1d41-3e4e-4c94-89c1-118d63e785fc"
+    },
+    {
+      "claim_id": "ea753e12-2545-44d5-ae6c-1584c57b6e04",
+      "result_id": "c05a1d41-3e4e-4c94-89c1-118d63e785fc"
+    },
+    {
+      "claim_id": "cdb6a6ca-3f54-4363-bc4e-5e5472cb06f6",
+      "result_id": "c05a1d41-3e4e-4c94-89c1-118d63e785fc"
+    },
+    {
+      "claim_id": "d4857862-7e2d-4ac8-9271-3d3d7c736b27",
+      "result_id": "fe7ca7b4-9ffe-4df3-9194-9c81fa0123bc"
+    },
+    {
+      "claim_id": "70030b84-b3e9-47c8-bddb-bedbcfa2217e",
+      "result_id": "fe7ca7b4-9ffe-4df3-9194-9c81fa0123bc"
+    },
+    {
+      "claim_id": "a81c7e6a-2712-49ff-9827-b406519ca675",
+      "result_id": "1a8b22eb-71d7-404f-8040-251d097b5f8b"
+    },
+    {
+      "claim_id": "a9585ff2-25a3-4409-ac1e-ad6376f72392",
+      "result_id": "1a8b22eb-71d7-404f-8040-251d097b5f8b"
+    },
+    {
+      "claim_id": "0b8964e2-6c09-4e18-9a3b-75755dfb6f28",
+      "result_id": "1a8b22eb-71d7-404f-8040-251d097b5f8b"
+    },
+    {
+      "claim_id": "e761eec6-c941-40ed-8694-d7b1e13b8c06",
+      "result_id": "1a8b22eb-71d7-404f-8040-251d097b5f8b"
+    },
+    {
+      "claim_id": "b3443aa2-3918-4126-a26e-4e0ec09d625f",
+      "result_id": "1a8b22eb-71d7-404f-8040-251d097b5f8b"
+    },
+    {
+      "claim_id": "49d23345-da5d-497b-a891-0bae62636c51",
+      "result_id": "877682b7-5225-42f3-be8a-8c005cd88b3c"
+    },
+    {
+      "claim_id": "02556908-bc98-4ffd-b493-0f7a64770435",
+      "result_id": "017b7e8a-6d1d-46a6-bcbd-954a3b260843"
+    },
+    {
+      "claim_id": "483695d8-9dfb-472f-b964-8a0ce134721c",
+      "result_id": "017b7e8a-6d1d-46a6-bcbd-954a3b260843"
+    },
+    {
+      "claim_id": "3948ea5d-05e1-46f1-ad3a-3ef18c392776",
+      "result_id": "017b7e8a-6d1d-46a6-bcbd-954a3b260843"
+    },
+    {
+      "claim_id": "178bd750-f995-40eb-9312-98b9c005f78c",
+      "result_id": "017b7e8a-6d1d-46a6-bcbd-954a3b260843"
+    },
+    {
+      "claim_id": "504d9f1c-a1cd-424a-8f6d-3cd35b88c31d",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "92f62eaf-17cc-4d52-88fa-fd8547476001",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "cd643773-056c-42d5-a946-8b0adc8b264f",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "fd91b06b-672a-45e0-bcfa-3080b28f2c61",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "81c337ec-c69a-4666-9b65-8e05a0a4a7aa",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "df86c321-9cd9-4a95-a640-9fabe07a2b86",
+      "result_id": "a56ad8bd-0d06-4e33-beca-4de626669280"
+    },
+    {
+      "claim_id": "90fdc9dd-9ccb-455b-b10e-af2b7302f61a",
+      "result_id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028"
+    },
+    {
+      "claim_id": "41c58fe5-216f-4a21-8706-760f4f218a56",
+      "result_id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028"
+    },
+    {
+      "claim_id": "7db9af39-680d-44e3-8509-d40e7bf2f076",
+      "result_id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028"
+    },
+    {
+      "claim_id": "2dcb1565-6abc-49dd-af5c-c335f1ab97fd",
+      "result_id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028"
+    },
+    {
+      "claim_id": "6f7c0903-c2a6-481a-84e5-0e392fdd6268",
+      "result_id": "b765fdd2-0ca2-42fd-8776-038f3fcdc028"
+    },
+    {
+      "claim_id": "3c8b475d-6f1f-491d-8e5a-6ad7d9e66848",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "b93ff979-8c9b-4c16-be16-c1255e6b643e",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "52454057-6c3e-46fd-9ebd-5698d9174486",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "36488977-d834-4064-be42-3c35efaaf4a2",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "76962706-4e4a-4f3d-821c-4102e2a98379",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "4c8e56db-e42f-4f6d-ad54-f149faad7f3d",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "120c7975-97fb-482c-9368-7b0cebdf5ffc",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "58cfd3ae-750c-4573-814f-7905122e51c4",
+      "result_id": "72ba6a16-4d29-42cd-b173-4a6e016961b0"
+    },
+    {
+      "claim_id": "92fe89a0-1e94-44f3-b1b0-c70866209844",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "32f9c231-e0fc-424c-85e3-e2f08165a051",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "228d509f-cce0-46e9-856a-4228bd0cf24a",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "f19e7e79-f357-4279-83cc-3ebf60773126",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "1623156d-c753-4aed-b759-9466862c6fed",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "a3ea9c77-6f7e-420f-9e27-a1c5fdc76f9c",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "36938473-2178-475c-84e7-b300c3e11081",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "8343974e-38bc-4649-aa70-f23cc0eedbb5",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "fb815e89-4263-4b39-84eb-5870ca6c35ad",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "1a1bcdcd-c909-4e67-a9f7-2e033f156f04",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "5f7bf550-0bb3-4ee2-81ba-de19a0cd03b2",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "d673a018-4912-47ad-8d1a-e03ac25d9896",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "19aaa4a4-b42e-4a2c-93d6-e0b2c88e259b",
+      "result_id": "ef029ee9-470c-4c89-ace7-27799162fa08"
+    },
+    {
+      "claim_id": "3b690ff3-b8bd-40c9-b95f-134f229520b8",
+      "result_id": "e8c48a1c-ff49-466f-b977-f70738515bc9"
+    },
+    {
+      "claim_id": "3dd54745-d4f6-42f2-a088-464047330487",
+      "result_id": "e8c48a1c-ff49-466f-b977-f70738515bc9"
+    },
+    {
+      "claim_id": "edbe0b87-992c-4814-9056-71e2fec9f423",
+      "result_id": "e8c48a1c-ff49-466f-b977-f70738515bc9"
+    },
+    {
+      "claim_id": "91c09351-7894-4e5e-884d-31296213313a",
+      "result_id": "e8c48a1c-ff49-466f-b977-f70738515bc9"
+    },
+    {
+      "claim_id": "3d12954a-fb92-4f24-b68d-a96004a0996e",
+      "result_id": "e8c48a1c-ff49-466f-b977-f70738515bc9"
+    },
+    {
+      "claim_id": "db52bd8b-ce1b-4fd2-9ee2-0db78dae30e0",
+      "result_id": "706258a5-3b81-47cd-a6c2-7ad6c072e0a2"
+    },
+    {
+      "claim_id": "f026e124-66b9-4df2-99c1-9f1ce52c2c15",
+      "result_id": "706258a5-3b81-47cd-a6c2-7ad6c072e0a2"
+    },
+    {
+      "claim_id": "fccfbaf0-b90c-402d-8c30-2f48e8636c76",
+      "result_id": "706258a5-3b81-47cd-a6c2-7ad6c072e0a2"
+    },
+    {
+      "claim_id": "f1c5b53b-6a61-40ee-a718-13f380903cf6",
+      "result_id": "8c64257b-230f-48dc-b120-7efc5813a2c9"
+    },
+    {
+      "claim_id": "56f4ba51-81cc-4179-a356-e8211c9bd019",
+      "result_id": "8c64257b-230f-48dc-b120-7efc5813a2c9"
+    },
+    {
+      "claim_id": "c3f0fe02-19fb-4b3d-aa91-34150f5c2106",
+      "result_id": "8c64257b-230f-48dc-b120-7efc5813a2c9"
+    },
+    {
+      "claim_id": "d4213820-f1b3-4c98-bf38-3a8e62bb34a2",
+      "result_id": "52181209-59a1-43e8-991f-72075eac19d0"
+    },
+    {
+      "claim_id": "12212150-a9dd-45ab-8f1a-32834c36fed7",
+      "result_id": "52181209-59a1-43e8-991f-72075eac19d0"
+    },
+    {
+      "claim_id": "b951fc8c-e0a8-444c-900c-58e6740febdb",
+      "result_id": "52181209-59a1-43e8-991f-72075eac19d0"
+    },
+    {
+      "claim_id": "d484e314-16ff-46fc-a3e4-85d2a019be13",
+      "result_id": "fa260c59-5d3a-408b-a611-f89527a8dd71"
+    },
+    {
+      "claim_id": "38a3b180-80f9-4e57-88f5-346e5b880698",
+      "result_id": "fa260c59-5d3a-408b-a611-f89527a8dd71"
+    },
+    {
+      "claim_id": "e7586234-c706-4191-8ff5-feb22f1083e2",
+      "result_id": "fa260c59-5d3a-408b-a611-f89527a8dd71"
+    }
+  ],
+  "comparisons": []
+}

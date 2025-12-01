@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors demonstrate that mRNA:ncRNA avoidance is evolutionarily conserved across prokaryotes. Using computational analysis of 1,700 prokaryotic genomes, they show that 97% of species exhibit either extrinsic avoidance (73% of phyla show significantly reduced binding energies between native mRNAs and ncRNAs compared to shuffled controls) or intrinsic avoidance (95% show significant G+C composition differences between mRNAs and ncRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C28-C31 collectively demonstrate evolutionary conservation of avoidance through comprehensive computational analysis. The use of multiple negative controls (C24-C25), large sample sizes (1,582 bacterial and 118 archaeal genomes), appropriate statistical tests (Mann-Whitney U tests with p<0.05), and two independent measures of avoidance (extrinsic and intrinsic) provide strong converging evidence. The 97% figure represents a robust finding across diverse prokaryotic lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors show that mRNA:ncRNA avoidance correlates with protein abundance and has comparable or greater impact than codon usage and mRNA secondary structure. Avoidance significantly correlates with protein abundance in all four mass spectrometry datasets (Rs=0.11-0.17, p<0.05), while codon usage correlates in all four and mRNA structure in only two datasets. In GFP experiments with randomly sampled sequences, avoidance explains ~35% of variance, compared to 2-3% in native proteomics datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C50 are supported by consistent correlations across multiple independent datasets (4 proteomics, 2 GFP datasets) using appropriate statistical methods (Spearman correlations, linear regression). The finding that avoidance shows significant correlations in all datasets while other factors show variable results strengthens the conclusion. The difference in variance explained between GFP (35%) and native datasets (2-3%) is appropriately attributed to negative selection (C45), which is a reasonable inference supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C39",
+      "C41",
+      "C53",
+      "C54",
+      "C55",
+      "C73",
+      "C77"
+    ],
+    "result": "The authors experimentally demonstrate that GFP expression can be predicted and controlled by modulating mRNA:ncRNA avoidance. Using 13 synonymous GFP constructs designed to vary in avoidance, codon usage, and secondary structure, they show avoidance correlates most strongly with GFP expression (Rs=0.56, p=6.9\u00d710\u207b\u2076) compared to CAI (Rs=0.29, p=0.016) and folding energy (Rs=0.34, p=0.006). An optimized construct with high avoidance, optimal codon usage, and low secondary structure showed maximal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C39, C41, C53-C55, C73, C77 are supported by well-designed experimental validation. The use of synonymous variants controlling for G+C content, appropriate replication (quadruplicate cultures), commercial service to reduce bias, and statistical significance (Kruskal-Wallis test p=1.35\u00d710\u207b\u2075) provide strong evidence. The correlation coefficients and p-values demonstrate avoidance has the strongest predictive power among the three factors tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C14",
+      "C51"
+    ],
+    "result": "The authors conclude that mRNA:ncRNA avoidance increases translational efficiency and has a greater impact on protein abundance than mRNA structure or codon usage. This represents the central claim integrating the evolutionary conservation and experimental validation results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, C14, C51 are supported by the convergence of evolutionary analysis (showing selection for avoidance), proteomics correlations (showing avoidance correlates with protein abundance in all datasets), and experimental validation (showing avoidance has the strongest correlation with GFP expression). The claim of 'greater impact' is justified by the consistent correlations across all datasets and higher correlation coefficients compared to other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C16",
+      "C18",
+      "C52",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors claim that taking mRNA:ncRNA interactions into account enables precise modulation and prediction of protein abundance through mRNA design. This represents the translational application of their findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C16, C18, C52, C67-C68 are supported by the experimental demonstration with GFP constructs showing predictable expression levels based on avoidance scores. The ability to design constructs with varying expression levels (C53, C77) and the improved variance explanation when combining all factors (C48: 42-70%) support the practical utility. However, the claim of 'precise' control may be somewhat overstated given that even combined models explain at most 70% of variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C69"
+    ],
+    "result": "The authors show that regions of T. thermophilus SSU rRNA with the least capacity to interact with mRNAs are generally not bound to ribosomal proteins or other ncRNAs (p=2.49\u00d710\u207b\u00b9\u2077, Fisher's exact test), suggesting that accessible regions are avoided. The anti-SD region is identified as one such avoidance region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C69 are supported by structural analysis using a high-quality ribosome structure (PDB 4WZO) and appropriate statistical testing (Fisher's exact test). The significant p-value and the biological logic that accessible regions would be more prone to stochastic interactions strengthen this result. This provides mechanistic insight into why avoidance is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors show through sliding window analysis that avoidance signals are not limited to the first 21 nucleotides of the CDS but are also present throughout the entire CDS and in 5' UTRs. The first 21 nucleotides show the strongest correlation with protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C70-C72 are supported by sliding window analysis of GFP expression data (Figure 3\u2014figure supplement 1) and comparison of avoidance conservation in different regions (Figure 3\u2014figure supplement 2). The finding that the 5' end shows the strongest signal is consistent with translation initiation being rate-limiting (C23) and justifies the focus on this region in the main analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "In the model organism Streptococcus suis, native mRNA:ncRNA binding energies (mean=-3.21 kcal/mol) are significantly higher (less stable) than all five types of negative control binding energies (means ranging from -3.62 to -5.21 kcal/mol, p<2.2\u00d710\u207b\u00b9\u2076 for all comparisons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 are supported by computational analysis with multiple negative controls and highly significant p-values. This single-organism analysis serves as proof-of-concept before the genome-wide analysis. The use of five different negative control types strengthens confidence that the signal is not an artifact of the control choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C78"
+    ],
+    "result": "The authors' model assumes that ncRNA expression levels vastly exceed mRNA expression levels ([ncRNA] >> [mRNA]), which they validate as biologically reasonable for core genes using RNA-seq data from 42 prokaryotic strains showing higher expression of core ncRNAs compared to core mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C78 are supported by RNA-seq data (Figure 4) and citations to previous work. This assumption is critical for the summative binding energy model used throughout the paper. The validation using empirical expression data from diverse organisms strengthens confidence in this assumption, though it may not hold for all genes under all conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Reanalysis of a previously published GFP dataset (Kudla et al., 2009) shows that CAI does not correlate with protein abundance (Rs=0.02, p=0.4), while 5' end folding energy (Rs=0.61, p=5.7\u00d710\u207b\u00b9\u2078) and avoidance (Rs=0.65, p=1.6\u00d710\u207b\u00b2\u2070) significantly influence GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by reanalysis of an independent published dataset, which provides external validation of the avoidance hypothesis. The very high correlation for avoidance (Rs=0.65) and highly significant p-value strengthen confidence in the findings. The lack of CAI correlation in this dataset contrasts with the authors' own GFP experiments, which may reflect differences in experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The authors claim that RNA avoidance is the only factor explaining protein-per-mRNA ratio differences between the most and least efficient native E. coli mRNAs based on outlier analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is based on Z-score analysis of outliers (Figure 2\u2014figure supplement 4), which shows avoidance has the most extreme shifts. However, the claim that it is the 'only' factor is strong and may not be fully justified. The analysis appears to show that codon usage and secondary structure also have some differences, though less extreme. The sample size (top and bottom 10 genes) is small for making such a definitive claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "The authors observe that avoidance has a strong influence on expression for randomly sampled synonymous mRNAs but limited influence on endogenous gene expression, which they attribute to negative selection pruning low avoidance mRNAs from the gene pool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by comparison of GFP datasets with random sequences versus native proteomics data. The inference that negative selection explains the difference (C45) is reasonable and consistent with the evolutionary conservation data. However, alternative explanations (e.g., other selective pressures constraining native sequences) are not explicitly ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C23"
+    ],
+    "result": "The authors describe their methodological choices: using six conserved, highly expressed ncRNA families (tRNA, rRNA, RNase P RNA, SRP RNA, tmRNA, 6S RNA) and 114 conserved mRNAs, and focusing on the first 21 nucleotides of the CDS because translation initiation is the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C23 describe methodological choices that are well-justified by citations and biological reasoning. The focus on conserved genes ensures comparability across species, and the focus on the 5' end is supported by prior work on translation initiation and validated by the authors' own sliding window analysis (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The authors predict that similar avoidance signals can be observed for mRNA:mRNA and ncRNA:ncRNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is explicitly labeled as a prediction/speculation by the authors. While it is a logical extension of their findings, no data is presented to support this prediction. This represents a testable hypothesis for future work rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The authors conclude that the specificity of prokaryotic ncRNAs for target mRNAs results from selection both for functional interactions and against stochastic interactions, with experimental results supporting that stochastic interactions are selected against due to deleterious effects on expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 represent a synthesis of the evolutionary and experimental findings. The evolutionary conservation of avoidance (C6, C17, C29, C31) combined with experimental demonstration of reduced expression for low-avoidance constructs (C77) support this conclusion. This provides a mechanistic explanation for the observed evolutionary patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors speculate about evolutionary consequences of avoidance: that increasing transcriptional diversity raises the probability of stochastic interactions, potentially limiting the emergence of high-abundance RNAs and the number of simultaneously transcribed RNAs, which may drive selection for spatial or temporal segregation of transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 are explicitly speculative evolutionary consequences. While they are logical extensions of the findings and represent interesting hypotheses, they are not directly tested or supported by data in this manuscript. These represent predictions for future work rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors establish the background context that mRNA and protein levels are imperfectly correlated, which is a barrier to bioengineering, and that existing explanations (codon usage, mRNA secondary structure, degradation rates) account for at most 40% of variation in protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10-C13 represent established knowledge from the field, supported by multiple citations. These claims provide the motivation for the study but are not novel findings. The authors accurately represent prior work and identify a gap that their research addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The authors note that under-representation of RNA interactions has been previously considered for specific cases: Shine-Dalgarno-like sequences with the ribosome and microRNAs with 3' UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 accurately cite prior work on specific cases of interaction avoidance. This contextualizes the novelty of the current work, which extends the concept to genome-wide stochastic mRNA:ncRNA interactions. These claims establish that the general principle is not entirely new but the comprehensive application is novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The authors reason that complete avoidance of stochastic interactions is combinatorially unlikely given thousands of potential interacting RNA species, leading to a predicted tradeoff between avoidance and optimal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 represent logical inferences based on the complexity of RNA interaction networks. While not directly tested, this reasoning motivates the analysis of proteomics data to assess the actual impact of avoidance on protein abundance. The inference is reasonable and supported by citations about RNA complexity.",
+    "result_type": "MINOR"
+  }
+]

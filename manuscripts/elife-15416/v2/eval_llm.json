@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Vector-borne diseases remain a major global health burden, with malaria killing one child per minute and dengue infecting 400 million people annually. Evolution persistently undermines vector control through insecticide resistance, which is inevitable according to both theory and experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the public health context and problem statement through citations to WHO reports and peer-reviewed literature (C1, C2, C4) and established scientific knowledge (C3, C5). These background claims are well-supported by appropriate citations and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "DDT historically provided effective malaria control through combined toxicity and spatial repellence, and spatial repellents have shown proof-of-concept efficacy in field trials. However, finding new effective repellents is challenging, and DDT's continued use is problematic due to environmental concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 provide historical and empirical context for spatial repellents, supported by citations to field trials (C8) and established literature (C6). The challenges in developing new repellents (C9) and DDT's environmental issues (C10) are appropriately characterized based on available evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The authors propose that combining a spatial repellent with a high-toxicity, low-contact-repellence insecticide creates a 'double-dip' disease control system. Selection will favor deflected phenotypes when the fitness cost of deflection is less than the fitness cost of insecticide susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C12 present the core theoretical proposal but are speculative (C11) and based on inference (C12). While the evolutionary logic is sound, no empirical validation is provided. The authors acknowledge this is a theoretical framework requiring empirical testing, making the proposal uncertain until validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The model assumes single-locus bi-allelic control of both insecticide resistance and deflection behavior, with complete dominance. This simplification is justified by examples of single-locus resistance genes like kdr alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C13-C14 state model assumptions that are acknowledged simplifications. While C15 provides empirical support for single-locus resistance genes, the genetic basis of deflection behavior is unknown and likely more complex. The authors acknowledge this limitation but the simplification may not capture real-world genetic architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Model simulations show that deflection alleles can spread to near-fixation and be maintained (scenario a), spread transiently then decline (scenario b), or fail to establish (scenario c). A 'ratchet' strategy of switching insecticides can enable sustained deflection in scenario b cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe model outputs shown in Figure 1, with clear visual evidence of the three scenarios. The ratchet strategy (C19) is supported by model results and logical inference. The mathematical framework appears sound, though empirical validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The potential for deflection alleles to spread and be maintained depends on fitness values of all phenotypes and initial allele frequencies. Costs of resistance in deflected phenotypes increase the parameter space where deflection can be established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by systematic parameter exploration shown in Figures 2 and 3. The grid plots demonstrate how different parameter combinations affect ESR establishment. The analysis appropriately explores sensitivity to key parameters, though the biological realism of parameter values remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "When deflected mosquitoes experience reduced transmission efficiency, ESR provides initial infectious bite reduction similar to insecticide alone, with benefits maintained long-term unlike insecticide-only approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 is supported by model results in Figure 4 showing temporal dynamics of infectious bites under different transmission reduction scenarios. The comparison between ESR and insecticide-only approaches is clearly demonstrated, though it depends on uncertain assumptions about outdoor transmission efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Empirical evidence suggests DDT maintained efficacy through spatial repellence despite widespread resistance to its toxicity. Many repellent substances are also toxic, and carbosulfan showed repellence in susceptible but not resistant mosquito populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide empirical support for the ESR concept through citations to field studies. The carbosulfan example (C25) is particularly relevant as it demonstrates the predicted relationship between toxicity and evolved repellence. These observations are consistent with the theoretical framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "To maximize ESR establishment, control programs should achieve high coverage with high-efficacy insecticides to minimize susceptible fitness. All treated properties should receive both insecticide and ESR together, not separately.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are logical inferences from the model results regarding optimal deployment strategies. The recommendations follow directly from the fitness relationships shown in Expression 1 and the parameter explorations in Figures 2-3. However, these remain untested recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Fungal biopesticides offer an ideal partnership with spatial repellents because they lack contact repellency and have inherent resistance management benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by citations to literature on fungal biopesticides (Thomas and Read, 2007; Mnyone et al., 2010) and represents a logical inference about their compatibility with ESR. The lack of contact repellency would maximize selection for deflection while maintaining toxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Pyrethroid excito-repellence on bed nets reduces mortality by pushing vectors away before lethal doses are acquired. Field studies found no sporozoites in outdoor-feeding susceptible An. gambiae populations while indoor-feeding resistant populations maintained high transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by appropriate citations to empirical studies. The Ndiath et al. (2014) finding (C30) provides important field evidence that outdoor deflection can reduce transmission, though the authors appropriately note this cannot be unambiguously attributed to reduced outdoor transmission versus differential mortality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Indoor-feeding vectors face fitness costs when switching to outdoor feeding. ESR-induced behavioral changes are reversible upon ESR withdrawal, and ESR does not require reducing existing control measures to be effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are logical inferences from evolutionary principles and the proposed mechanism. The reversibility argument (C32) is sound because ESR provides an external cue rather than selecting for fixed behavioral changes. The compatibility with existing measures (C33) follows from the additive nature of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Gould (1984) predicted that insect populations would evolve behavioral avoidance of agricultural insecticides and that physiological resistance would evolve more slowly to repellent than non-repellent formulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 accurately cite historical theoretical work by Gould (1984) that anticipated aspects of the ESR concept. This provides important historical context showing the theoretical foundation has precedent in the agricultural pest management literature.",
+    "result_type": "MINOR"
+  }
+]

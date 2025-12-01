@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C189",
+      "C192",
+      "C227"
+    ],
+    "result": "The authors developed a novel method to infer gene regulation functions (GRFs) from dynamic transcriptome data of synchronized S. cerevisiae cells over three cell cycles, demonstrating for the first time the inference of individual GRFs and functional genetic modules from such data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C189-C192 establish the methodological innovation and its application. The approach is well-documented with experimental data (C3, C4, C24), uses appropriate DTA methodology (C16), and represents a novel contribution (C192, C227). The method's proof-of-principle is demonstrated through multiple examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The GRF inference method parameterizes single-input regulation using Hill functions with four parameters (basal activity, regulation amplitude, response threshold, and sensitivity) and extends to combinatorial regulation by testing multiple logic functions for two-input systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe the single-input model with clear parameterization, while C49-C52 describe the extension to combinatorial regulation. The mathematical framework is well-defined, the optimization approach (simulated annealing, C34) is appropriate, and the method systematically tests different regulatory logics (C52).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C62",
+      "C63",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The effective protein degradation rate parameter \u03bb captures multiple molecular processes including nuclear transport, phosphorylation, and protein dilution, and can be estimated consistently across multiple target genes of the same transcription factor using MCMC sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 explain the biological interpretation of \u03bb as a coarse-grained parameter, while C117-C122 describe the unified estimation method. The approach is methodologically sound, using MCMC for posterior distributions (C122) and exploiting the property that \u03bb is TF-specific (C119). The consistency requirement across targets provides internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GRFs were successfully inferred for CLB2 cluster genes (Hof1 and Mob1) showing AND-like logic for Fkh2 and Ndd1 regulation, with the sampling density in input space indicating the range of data support for the inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 establish the biological context with appropriate citations, while C64-C66 present specific results. The AND-like logic inference (C64) is supported by data, and the authors appropriately acknowledge limitations in data coverage (C65) and provide a quality control metric (C66). The results are consistent with known biology (C55-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "For the three-input gene Kip2, a simplified two-input approach (Fkh1 and Ndd1) yielded results nearly identical to a detailed thermodynamic model, identifying Ndd1 as the limiting factor in the Mcm1-Fkh2-Ndd1 complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C81 describe a comprehensive validation comparing two modeling approaches. The thermodynamic model (C70-C74) provides a reference with more parameters, while the simplified approach (C75-C78) achieves similar fit quality with fewer parameters. The consistency between approaches (C77-C78) and biological interpretation (C79) are well-supported. This demonstrates both the method's validity and its ability to identify key regulatory inputs (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The inferred GRFs showed good predictive power when tested against an independent dataset from Pramila et al. (2006), with predictions made without additional parameter fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 describe a rigorous validation using independent data. The test is properly designed as a true prediction without fit parameters (C87), uses appropriate data transformation (C85), and shows good agreement (C88). The comparison of input ranges (C89) provides context for the prediction scope. This represents strong external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C128",
+      "C129"
+    ],
+    "result": "The inferred GRFs demonstrated reproducibility between biological replicates, captured expression dynamics in independent test data, and correctly predicted activating versus repressing effects wherever experimental evidence was available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C195 and C128-C129 provide multiple lines of validation. Reproducibility between replicates (C193, C129), performance on independent data (C194), and correct prediction of regulatory direction (C195, C128) all support the method's reliability. These validations are essential for establishing the method's credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C130",
+      "C131",
+      "C212",
+      "C213"
+    ],
+    "result": "An unbiased systematic approach was developed to infer transcriptional network modules by pre-fitting all possible two-input combinations and then combinatorially constructing networks, evaluating ~950,000 strongly connected networks from ~117 million possible configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 and C130-C131 describe the systematic network inference strategy. The approach addresses the combinatorial explosion problem (C100) through a stepwise pre-fitting strategy (C101), applies clear selection criteria (C103-C105), and evaluates a large number of candidates (C130-C131, C213). This represents a genuinely unbiased approach compared to testing preselected networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C214",
+      "C215",
+      "C216"
+    ],
+    "result": "The best-ranking inferred network shows strong similarity to previously proposed transcriptional oscillator networks, containing 9 of 10 candidate nodes with mostly two-input regulation, and features sequential forward activation and backward inhibition as dominant motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C138 and C214-C216 describe the inferred network structure and its comparison to prior work. The network composition (C133-C134), necessity of multiple inputs (C135), and consistency among top-ranking networks (C136) are well-documented. The similarity to previous proposals (C132, C214-C216) validates the approach while the systematic inference adds quantitative rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Analysis revealed that a completely autonomous transcriptional network is incompatible with the data, particularly for Swi4 regulation, which requires additional input from Cln1/2 cyclins and self-activation to adequately explain its expression dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C152 provide strong evidence for cyclin coupling. The poor fit for Swi4 without cyclin input (C142-C143) is quantified, the biological mechanism is well-established in literature (C146-C150), and the modeling approach (C151) is justified. The improved fit with cyclin input (C152) supports the conclusion. This represents a key biological insight from the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C186"
+    ],
+    "result": "A complete dynamical model was constructed from the inferred GRFs and protein half-lives, which adequately captures the dynamic transcriptome data for synchronized wild-type cells in both replicates when including Cln2 input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C156 and C186 describe the construction and validation of the full network model. The model is properly formulated as differential equations (C153), uses appropriate initial conditions (C154), includes cyclin input (C155), and shows good agreement with data (C156, C186). This demonstrates that the inferred GRFs can be integrated into a coherent dynamical system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The model qualitatively predicts some mutant phenotypes (Swi4 deletion effects on Yox1, and \u0394yox1\u0394yhp1 effects on Swi4) but fails for cases involving post-transcriptional regulation (Rnr1 in Swi4 deletion), revealing both capabilities and limitations of the transcriptional model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C168 describe mutant predictions with appropriate nuance. Successful qualitative predictions (C161, C165) validate the model, while acknowledged failures (C166, C173-C174) and limitations (C167-C168) demonstrate scientific rigor. The authors correctly identify that post-transcriptional effects are outside the model's scope (C168, C170-C171), which is an appropriate limitation for a transcriptional model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C187",
+      "C188",
+      "C219",
+      "C221"
+    ],
+    "result": "The transcriptional network has intrinsic oscillatory capability, producing regular or dampened oscillations without cyclin input depending on parameters, but with altered period (~20% shorter) and Ash1 requiring cyclin input, supporting that cyclin action is required for normal oscillatory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C188 and C219-C221 describe the autonomous oscillation analysis. The computational experiment is well-designed (C175), results are clearly reported for both replicates (C177-C178), parameter dependence is acknowledged (C179), and specific gene behavior (Ash1, C180-C182) is noted with literature support (C181). The period change (C183) and preserved phase ordering (C185) provide quantitative details. The conclusion about cyclin requirement (C188, C221) is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C96",
+      "C217",
+      "C223",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "The study addresses the debated question of transcriptional oscillator autonomy, finding that while the network can oscillate without cyclins, cyclin input is required for native behavior, potentially reconciling contradictory experimental results through dampened oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 state the main finding, while C20-C23 and C96 establish the biological context and debate. The model results (C217, C223) support the conclusion, and the proposed reconciliation of conflicting studies (C224-C226) is reasonable speculation based on the model's behavior. This represents an important contribution to resolving a biological controversy, though the reconciliation remains speculative (C226 is marked as SPECULATION).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C68",
+      "C69",
+      "C81"
+    ],
+    "result": "The method can identify the two most significant regulatory inputs for a gene by testing all two-input combinations, which is at the practical limit of systematic unbiased inference given current data availability due to exponential scaling with input number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C199 and C68-C69 describe both the capability and limitation of the approach. The ability to identify significant inputs (C196, C81) is demonstrated through the Kip2 example, while the limitation to two inputs (C68-C69, C199) is honestly acknowledged with clear reasoning about data requirements (C198). This represents appropriate scientific transparency about method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The nonlinear inference scheme is tolerant to partial loss of synchrony in the cell population because limited cell-to-cell variation samples only a local regime where the nonlinear GRF appears locally linear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 address an important methodological concern. The explanation (C48) is logically sound: within limited variation, nonlinear functions appear approximately linear, making population averaging less problematic. The observation of dampening (C47) is consistent with loss of synchrony. This robustness property is important for the method's applicability to real experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C31",
+      "C202"
+    ],
+    "result": "The method assumes smooth input-output relations (GRFs) that subsume multiple molecular processes including nuclear transport and TF activation, representing effective rather than mechanistic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 state the key assumption, while C31 and C202 acknowledge limitations. The assumption of smoothness (C28) is reasonable for coarse-grained modeling, and the viability for networked genes (C29) is important. The acknowledgment that these are effective models (C202) rather than mechanistic ones is appropriate scientific framing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208"
+    ],
+    "result": "The method requires prior knowledge of potential TF-target interactions (from YEASTRACT database) and exploits redundant information from long time series and TF pleiotropy through self-consistency conditions to circumvent the need for protein data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C204-C208 describe essential requirements and strategies of the method. The need for prior knowledge (C204) is clearly stated, the adequacy of available data (C205-C206) is assessed, and the use of redundancy (C207) and self-consistency (C208) is well-explained. These represent important methodological details for understanding the approach's applicability and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The study builds on established knowledge about yeast transcriptional networks, previous GRF measurement approaches in E. coli and multicellular organisms, and the role of DTA in overcoming limitations of total mRNA measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C19 establish the scientific context with appropriate citations. The prior work on network topology (C8), GRF measurement limitations (C10-C11), alternative approaches (C12-C13), and DTA methodology (C16) are all properly referenced. This contextualizes the current work's contribution relative to existing methods and knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "While TF knockouts could potentially be emulated by setting TF input to zero, accurate prediction of mutant behaviors generally requires a complete model of the genetic module due to indirect effects on other inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 appropriately describe both the potential application and its limitations. The basic idea (C90) is sound, but the complications (C91) and requirements for accurate prediction (C92) are honestly acknowledged. This represents appropriate scientific caution about the method's predictive capabilities for perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27",
+      "C200",
+      "C209",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "The approach has potential for extension to other regulatory systems (stress response, apoptosis, differentiation), would benefit from direct protein measurements, and represents a promising direction as dynamic transcriptome data becomes more widely available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27, C200, C209, C229, and C230 are all speculative (marked as SPECULATION in evidence_type). While these represent reasonable future directions based on the proof-of-principle demonstrated, they are not supported by data in the current study. C228 acknowledges related work but doesn't validate these specific extensions.",
+    "result_type": "MINOR"
+  }
+]

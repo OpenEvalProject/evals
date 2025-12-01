@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "This manuscript reports a replication study of selected experiments from Sirota et al., 2011, conducted as part of the Reproducibility Project: Cancer Biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is explicitly stated and well-documented with appropriate citations to both the original study and the registered report. This is a straightforward descriptive claim about the nature of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C23",
+      "C36",
+      "C38"
+    ],
+    "result": "Cimetidine treatment in A549 lung adenocarcinoma xenografts resulted in decreased tumor volume compared to vehicle control (2.37\u00d7 vs 3.29\u00d7 original volume by day 11), but the effect was not statistically significant after Bonferroni correction (p=0.105), though the effect size (Cohen's d=0.93) was in the same direction as the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C13, C14, C23, C36, and C38 collectively provide consistent evidence for this result. The statistical analysis was pre-registered (C66), appropriate corrections were applied, and the effect direction matches the original study despite not reaching statistical significance. The sample sizes (n=13 cimetidine, n=14 vehicle) and statistical methods are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C24",
+      "C41",
+      "C43"
+    ],
+    "result": "Cimetidine treatment in ACHN renal cell carcinoma xenografts did not differ from vehicle control (3.37\u00d7 vs 2.96\u00d7 original volume by day 11, p>0.99), consistent with the original study's negative control demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, C16, C24, C41, and C43 provide consistent evidence that cimetidine had no effect on ACHN tumors. The lack of effect was predicted a priori (C12) and serves as a specificity control. Statistical analysis shows no significant difference, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C46",
+      "C48"
+    ],
+    "result": "Doxorubicin treatment in A549 xenografts reduced tumor volume to 1.87\u00d7 original volume (similar to ~2.0\u00d7 in original study) compared to 3.29\u00d7 for vehicle, but the effect was not statistically significant after Bonferroni correction (p=0.0976).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C25, C26, C46, and C48 report the doxorubicin results. While the effect size was substantial (Cohen's d=1.26) and in the expected direction, the very small sample size (n=4) raises concerns about statistical power. Additionally, adverse effects (C27) suggest the dose may have been problematic. The lack of significance may reflect insufficient power rather than absence of effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Two-way ANOVA testing the interaction between cell line (A549 vs ACHN) and treatment (vehicle vs cimetidine) showed no statistically significant interaction (F(1,53)=3.88, p=0.054) or main effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C22 report the ANOVA results. The interaction p-value of 0.054 is very close to the 0.05 threshold, and the study was powered to detect this effect based on the original data. The marginal non-significance (p=0.054) makes interpretation difficult - this could represent a true lack of interaction or insufficient power. The pre-registered analysis plan strengthens the approach, but the borderline result limits definitive conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C39",
+      "C83"
+    ],
+    "result": "Meta-analysis combining original and replication data showed a statistically significant effect of cimetidine on inhibiting A549 derived tumors (Cohen's d=1.04, 95% CI [0.33, 1.75], p=0.0043).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C39, and C83 consistently report the meta-analysis results for A549 cimetidine treatment. The random effects meta-analysis was pre-specified (C67), used appropriate methods (metafor package), and shows overlapping confidence intervals between studies (C38). The statistically significant combined effect provides stronger evidence than either study alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C49",
+      "C85"
+    ],
+    "result": "Meta-analysis combining original and replication data showed a statistically significant effect of doxorubicin on inhibiting A549 derived tumors (Cohen's d=1.98, 95% CI [0.30, 3.66], p=0.021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C47, C49, and C85 report the doxorubicin meta-analysis. While statistically significant, the very small replication sample size (n=4) and wide confidence interval raise concerns. The original effect size (d=3.00) was not within the replication CI (C48), suggesting heterogeneity. The adverse effects observed (C27) and citations to other studies showing only small effects (C28, C34) suggest the true effect may be smaller than originally reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C44",
+      "C84"
+    ],
+    "result": "Meta-analysis of ACHN cimetidine treatment showed no statistically significant effect (Cohen's d=0.04, 95% CI [-0.65, 0.73], p=0.917), as predicted for this negative control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42, C44, and C84 consistently report the meta-analysis for ACHN tumors. The lack of effect was predicted a priori as a specificity control (C12), and both studies showed no significant effect. The meta-analysis appropriately combines these null results, supporting the conclusion of no effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of excised tumor weights showed A549 tumors were significantly heavier than ACHN tumors (F(1,53)=7.56, p=0.008), but no significant effects of treatment or interaction were observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 report tumor weight analysis, which was an exploratory measure not in the original study. The cell line difference is statistically significant and well-powered. The lack of treatment effects is consistent with the tumor volume results. This provides additional supporting data, though tumor weight was not a pre-registered primary outcome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "ACHN tumor volumes in the replication (~3\u00d7 original volume) differed from the original study (~2\u00d7 original volume), and the replication showed generally higher relative standard deviations than the original study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 identify differences between the replication and original study. The higher variability in the replication (RSD 30-45% vs 10-36% in original) is clearly documented. These differences are important for interpreting the replication results and are honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Multiple uncontrolled variables including circadian responses, mouse sex/strain, microbiome, housing temperature, cell line drift, and compound potency may influence experimental outcomes in xenograft studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 list potential confounding variables with appropriate citations. This is a reasonable discussion of factors that could contribute to differences between studies. The authors appropriately acknowledge limitations and uncertainties in replication studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The experimental methods included appropriate cell culture conditions, quality control (STR profiling, mycoplasma testing), xenograft procedures using 6-week-old female SCID mice, randomization at 100 mm\u00b3 tumor volume, and 11-day treatment with daily cimetidine or twice-weekly doxorubicin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 describe the experimental methods in detail. Quality control measures (C59, C60) were appropriate. The experimental design follows standard xenograft protocols with proper randomization (C62). Methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Statistical analyses were performed using R version 3.2.3 with pre-registered confirmatory analyses, and meta-analyses used random effects models with the metafor package. Original study data were extracted a priori from published figures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe the statistical methods. Pre-registration (C66) is a major strength that reduces bias. The use of random effects meta-analysis is appropriate. Extracting original data from figures introduces some uncertainty, but this was done a priori and documented in the registered report.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Mice treated with doxorubicin exhibited adverse effects including weight loss and rough coat starting around day 7 of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 reports observed adverse effects. This is important safety/toxicity data that helps interpret the doxorubicin results and suggests the dose may have been at the upper limit of tolerability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C34"
+    ],
+    "result": "Other published studies using low-dose doxorubicin have reported small reductions in tumor volume and weight compared to vehicle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C34 cite multiple studies showing similar small effects with low-dose doxorubicin. This contextualizes the current results and suggests the modest effect observed may be typical for this dose.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,444 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "MDMs exhibit a unique nucleotide metabolism characterized by high dUTP/TTP ratios (~20) due to high SAMHD1 expression, undetectable dUTPase activity, and modest UBER enzyme expression. This metabolic profile is distinct from resting CD4+ T cells (dUTP/TTP ~1.1) and activated CD4+ T cells (dUTP/TTP <0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14, C50-C53 are well-supported by multiple complementary assays including LC-MS measurements of dNTP pools (C14-C16) and enzymatic activity assays for SAMHD1, dUTPase, hUNG, and APE1 (C50-C53). The data consistently demonstrate the unique metabolic state of MDMs with appropriate controls and quantitative measurements across different cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C47",
+      "C54"
+    ],
+    "result": "High dUTP levels in MDMs lead to extensive incorporation of uracil into HIV-1 DNA during reverse transcription, forming U/A base pairs uniformly across the viral genome on both DNA strands. This incorporation is driven by reverse transcriptase's similar affinity for dUTP and TTP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C38-C40, C42, C47, C54 are strongly supported by Ex-ddPCR showing ~70% of gag amplicons contained uracil (C2), Ex-Seq demonstrating uniform uracilation across the genome (C42), and detection of uracils on both DNA strands (C47). The mechanism is validated by thymidine supplementation experiments reducing uracilation 14-fold and absence of APOBEC signature mutations (C38, C41, C47-C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HIV-infected MDMs segregate into two distinct populations: a minor GFP+ population (~10-15%) with no detectable uracils and 20-fold lower dUTP/TTP ratio, and a major GFP\u2212 population (~85-90%) with ~90% of proviruses containing uracil. This segregation is stable over 30 days and independent of MOI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22, C27-C30 are well-supported by flow cytometry data showing consistent 12-15% GFP+ cells over 30 days (C20-C21), Ex-ALU-gag nested qPCR demonstrating differential uracilation (C27-C28), and dNTP measurements revealing 20-fold difference in dUTP/TTP ratios between populations (C29-C30). The phenotype stability across MOI range 0.1-10 strengthens the conclusion (C22).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Uracilated HIV-1 DNA undergoes potent pre-integration restriction in GFP\u2212 MDMs, with ~99% of uracilated viral DNA destroyed before integration through UBER-mediated degradation. GFP\u2212 MDMs show 7-fold lower early reverse transcription products and 100-fold lower proviral copies compared to GFP+ MDMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5-C6, C23-C26 are supported by ddPCR and ALU-gag nested qPCR measurements showing the dramatic reduction in viral DNA from early intermediates to integrated proviruses (C23, C25). The UBER mechanism is validated by hUNG2 overexpression reducing proviral copies 10-fold and Ugi expression increasing copies 5-fold (C55-C58). However, the exact 99% figure (C5) is an inference from the 50-fold reduction data rather than a direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "hUNG2 activity is the primary determinant of uracilated viral DNA fate in MDMs. Ugi overexpression increases viral DNA copies 5-fold with dramatically increased uracil content, while hUNG2 overexpression reduces copies 10-fold with undetectable uracil. Vpr-mediated hUNG2 depletion results in 2-fold more uracilated proviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 are well-supported by complementary experimental approaches including plasmid transfection experiments (C55-C58) and vpr deletion studies (C59-C62). The data consistently demonstrate hUNG2's role in restricting uracilated viral DNA. Western blots confirm selective hUNG2 (not hUNG1) depletion with vpr+ virus (C59-C60). The experiments include appropriate controls and the effects are specific to the uracilation phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C74",
+      "C75",
+      "C85"
+    ],
+    "result": "Uracilated proviral DNA in GFP\u2212 MDMs shows minimal mutations (<0.007% in env region), while viral genomic RNA from the same cells exhibits high mutation frequency (1.2%). This discrepancy indicates that mutations arise primarily during transcription rather than reverse transcription in MDM infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C74-C75, C85 are supported by targeted Sanger sequencing of proviral DNA showing <0.007% mutations and limiting dilution sequencing of extracellular viral RNA showing 1.2% mutations (C7-C8, C74). The >170-fold difference strongly supports transcriptional mutagenesis (C9, C75, C85). This contrasts with T cell infections where reverse transcription errors dominate (C83-C84), providing important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C118"
+    ],
+    "result": "The cytokine environment modulates mutation frequency in viral RNA from uracilated proviruses. IFN\u03b3 stimulation increases mutation frequency 2-fold (to ~2.4%), while IL-4 stimulation significantly decreases it. This suggests the cytokine environment of infected macrophages could influence viral evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C118 are supported by limiting dilution clonal sequencing showing differential mutation frequencies under different cytokine conditions (C68-C70). The basal 1.2% mutation frequency in GFP\u2212 MDMs increases with IFN\u03b3 and decreases with IL-4 (C69-C70). However, the mechanistic basis for these effects is not established, and the claim about influencing evolution (C71) is speculative though reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Viral DNA from blood monocytes and alveolar macrophages of ART-suppressed HIV-infected individuals contains abundant uracils (20-80% of amplicons), while viral DNA from resting CD4+ T cells contains no detectable uracils. This uracilation is specific to myeloid lineage cells and persists during ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C88-C91 are supported by Ex-ddPCR analysis of patient samples showing 5 of 6 monocyte samples with 20-80% uracil-positive pol amplicons, while resting CD4+ T cells showed no detectable uracil (C10-C12, C88-C89). The cell-type specificity is well-established (C90). Similar uracil levels in pre- and post-ART BAL samples from one donor (C91) support persistence, though this is based on a single patient and requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C139",
+      "C140",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The presence of uracilated viral DNA in short-lived blood monocytes (several-day half-life) indicates recent infection, likely through contact with virus-producing cells in tissue reservoirs. The requirement for dUTP incorporation during reverse transcription excludes latently infected myeloid stem cells as the source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C139-C140, C143-C145 present a logical inference based on monocyte biology and the mechanism of uracil incorporation. The short monocyte half-life (C139) combined with the requirement for dUTP incorporation during reverse transcription (C143) strongly supports recent infection. The exclusion of stem cell origin is validated by data showing no uracils in genomic DNA (C145). However, the specific infection pathway (C140) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "GFP+ MDMs produce 100-1000 times more p24 than GFP\u2212 MDMs, with levels remaining constant over 30 days. GFP\u2212 MDMs show a 10-fold decrease in p24 between days 7-14, coinciding with a 20-fold reduction in proviral copy number. When normalized for proviral DNA levels, uracilation does not significantly alter viral RNA output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C63-C66 are supported by p24 ELISA measurements and qRT-PCR data. The differential p24 production between populations is well-documented (C31, C63), and the temporal dynamics in GFP\u2212 cells correlate with proviral copy number changes (C33-C34). The conclusion that uracilation doesn't affect normalized RNA output (C65) is reasonable based on comparable EVR/proviral DNA ratios, though this is an inference rather than direct measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Despite the restrictive environment in GFP\u2212 MDM producer cells, viruses derived from uracilated proviruses are highly competent for infection of CEMx174 target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by infection assays showing comparable proviral copy numbers in CEMx174 target cells infected with virus from GFP\u2212 versus GFP+ MDMs (Figure 6G). This demonstrates that the mutations in viral RNA do not completely abolish infectivity, though the extent of 'high competence' could be better quantified with dose-response curves or specific infectivity measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Integrated proviruses contain abundant uracils at levels similar to total HIV DNA. Ex-Seq analysis identified >4000 discordant read pairs (integrated proviruses) per million HIV reads, with ~60% reduction after UNG treatment, indicating uracils persist in integrated proviruses when hUNG2 expression is low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by Ex-Seq data showing discordant read pairs and their reduction with UNG treatment (C43-C44). The similarity in uracilation levels between integrated and total HIV DNA (C45) is demonstrated by the ~60% reduction in both. The persistence mechanism (C46) is supported by citation to prior work and current data, though the specific hUNG2 expression levels in these cells are not directly measured in this context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The LTR region of extracellular viral RNAs from GFP\u2212 MDMs was devoid of detectable mutations after sequencing 7392 bases, which may reflect selection for transcription-competent LTR sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by sequencing data showing no mutations in 7392 bases of LTR sequences (C72). The interpretation as selection for transcription competence (C73) is reasonable given that mutated LTRs would likely be non-functional and not produce detectable viral RNA. However, this is an inference and alternative explanations (e.g., differential mutation rates in different genomic regions) are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Viral RNA mutations from MDMs are primarily A\u2192G, A\u2192C, and T\u2192C transitions/transversions, distinct from APOBEC signatures and from the C\u2192T and T\u2192G mutations predominant in T cell proviral DNA. The mutation spectrum differs between MDM-derived viral RNA and T cell proviral DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by sequencing analysis and Hypermut 2.0 analysis showing the mutation spectrum is inconsistent with APOBEC activity (C78). The comparison with T cell infections (C79-C82) provides important context showing cell-type-specific mutation patterns. The data are from appropriate sequencing of multiple clones with adequate coverage, though the mechanistic basis for the specific mutation spectrum remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Detection of p24 but not GFP in GFP\u2212 MDMs suggests expression of truncated viral RNAs extending through p24 coding sequence but not GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is a reasonable inference from the observation that GFP\u2212 MDMs produce detectable p24 but lack GFP fluorescence. However, alternative explanations exist: (1) GFP may require higher expression levels for detection than p24 ELISA, (2) post-transcriptional regulation could differentially affect GFP versus p24, (3) the GFP gene may be more susceptible to inactivating mutations. The truncated RNA hypothesis is plausible but not directly demonstrated by RNA analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The mechanism of transcriptional mutagenesis likely involves complex interactions between RNAP II and uracil-containing DNA or repair intermediates. While RNAP II shows high-fidelity incorporation opposite uracil in vitro, transcription-coupled repair generates abasic sites and strand breaks that may lead to misincorporation. Faithful repair of proviral DNA may involve reincorporation of U or T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76, C111-C117 present mechanistic speculation about transcriptional mutagenesis. While the observation that proviral DNA is relatively mutation-free while RNA is highly mutated is well-supported (C115), the specific mechanisms proposed (C76, C112-C114, C117) are largely speculative and based on cited literature rather than direct experimental evidence in this system. The contradiction between RNAP II's high fidelity opposite U in vitro (C111) and the observed mutations suggests the mechanism is complex and not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "HIV DNA in monocytes/alveolar macrophages represents a potential source for viral rebound after discontinued therapy, though the primary stable reservoir remains in resting CD4+ T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 combine well-established knowledge (C93: T cells as primary reservoir) with inference from the current data (C92: monocytes/macrophages as rebound source). While detection of uracilated HIV DNA in monocytes/macrophages from ART-suppressed patients is demonstrated, the claim about viral rebound potential (C92) requires additional evidence such as replication competence assays, quantitative contribution to rebound, or longitudinal studies. The citation to Cribbs et al. 2015 provides some support but this remains an inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "HIV DNA levels in resting CD4+ T cells are generally higher and more variable than in monocytes, with geometric mean values of 526 copies/10^6 T cells versus 47 copies/10^6 monocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by ddPCR measurements from six ART-suppressed patients (Figure 7A). The data show clear differences in HIV DNA levels between cell types with appropriate quantification methods. The variability in T cell measurements is evident in the data presentation. This is a straightforward descriptive finding with adequate sample size and appropriate methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "MDMs express very low levels of APOBEC3G and APOBEC3A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by Western blot analysis (Figure 2\u2014figure supplement 1) showing low or undetectable A3G and A3A in MDMs over 30 days post-infection, with appropriate positive controls (PBMCs) and negative controls (HEK 293T cells). This finding is consistent with prior literature and helps exclude APOBEC-mediated deamination as the source of uracils.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C17",
+      "C39",
+      "C48"
+    ],
+    "result": "Reverse transcriptase has nearly identical Km for dUTP and TTP, utilizes dUTP with the same efficiency and fidelity as TTP, and APOBECs exclusively target the (-) strand of viral cDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C39, C48 are based on citations to established literature (Kennedy et al., 2011 for C17 and C39; Yu et al., 2004 for C48). These are well-established biochemical properties that provide important context for interpreting the current results. While not directly demonstrated in this study, these are appropriate citations to prior work and the claims are accurate representations of the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C19",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background knowledge claims about UBER, dUTP-dependent pathways, U/A base pairs, viral evolution, and prior literature on hUNG2's role in HIV infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C94-C106 represent background knowledge and literature citations that provide context for the study. These include established facts about UBER localization (C19), dUTP-dependent restriction pathways (C94-C95, C99-C102), properties of U/A base pairs (C96-C98), and prior conflicting literature on hUNG2's role (C103-C106). These claims are appropriately cited and accurately represent the referenced literature, providing important context for interpreting the novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Fragmentation of uracilated HIV DNA is initiated by hUNG2 uracil excision, likely followed by APE1/APE2 abasic site excision. This pathway differs from APOBEC3G-mediated restriction in that uracils are on both DNA strands and are not inherently mutagenic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 describe the established UBER pathway mechanism (C107-C108) supported by citations to Schrader et al., 2009 and Stavnezer et al., 2014, and distinguish it from APOBEC-mediated restriction (C109-C110). The distinction is supported by Ex-Seq data showing uracils on both strands (C47) and the non-mutagenic nature of U/A pairs (C96-C97). These are appropriate applications of established mechanisms to the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "IFN\u03b3-induced errors may lead to non-functional viral genomes but also allow rapid viral DNA evolution in the absence of reverse transcription. Replication-competent viruses would undergo fitness selection, making UBER a 'double-edged sword' for viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C122 present reasonable speculation about the evolutionary implications of transcriptional mutagenesis. While the increased mutation frequency with IFN\u03b3 is demonstrated (C69), the claims about non-functional genomes (C119), rapid evolution (C120), fitness selection (C121), and the 'double-edged sword' concept (C122) are inferences without direct experimental support. These would require long-term evolution studies, fitness measurements, or analysis of viral populations over time to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Uracil has not been considered an epigenetic base, but densely incorporated uracils could alter DNA structure and affect protein binding. Multiple studies show U/A pairs can affect transcription, protein binding, and DNA processing, potentially leading to profound silencing of HIV gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123-C134 compile evidence from multiple cited studies (C126-C132) about potential effects of uracils on DNA function. While the individual cited findings are likely accurate, the extrapolation to 'profound silencing' of HIV gene expression (C134) in the current system is speculative. The current study does not directly test these mechanisms in the context of HIV-infected MDMs. The potential for uracils to act as epigenetic marks (C123-C125) is an interesting hypothesis but requires direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Macrophages have unique phenotypes conducive to significant impact on HIV infection: they persist for months, produce virus for their lifetime, provide drug-tolerant environments, and reside in tissues with poor drug penetrance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are based on appropriate citations to established literature (Gerngross and Fischer, 2015; Crowe and Sonza, 2000; Gavegnano and Schinazi, 2009; Gavegnano et al., 2013; Cribbs et al., 2015). These represent well-established properties of macrophages that provide important context for why the findings in this study are significant for HIV persistence and treatment. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "In T cell infections, host RNAP II contributes little to HIV sequence evolution and errors during reverse transcription are the predominant diversification mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are based on citation to Menendez-Arias, 2009, representing established knowledge about HIV evolution in T cells. This provides important context for the novel finding that transcriptional errors dominate in MDM infections (C85). The contrast between cell types highlights the unique biology of HIV infection in macrophages versus T cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Speculative claims about infection pathways, proviral persistence in compacted chromatin, potential for long-term latency, and mechanisms of transcriptional silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C142, C146-C152 are largely speculative, marked as such in the evidence field. While based on reasonable biological principles and some supporting citations (e.g., C147, C149), these represent hypotheses rather than demonstrated findings. Claims about infection pathways (C141-C142), chromatin protection (C146-C147), years-long persistence (C148), and transcriptional regulation (C150-C152) would require specific experimental validation that is not provided in the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C21",
+      "C22",
+      "C53",
+      "C54",
+      "C55",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors anatomically characterized 22 distinct LC neuron types based on morphologically distinct dendritic arbors in the lobula with stereotyped arbor stratification, size and shape. Each LC type projects to a specific optic glomerulus in the central brain, with most prominent PVLP glomeruli receiving input from a single LC type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14, C21, C22, C53-C55, C66-C73 collectively demonstrate comprehensive anatomical characterization of 22 LC types using multiple complementary approaches (population labeling, single-cell MCFO, layer pattern analysis). The data in Figures 2-7 provide strong converging evidence for distinct morphological features of each type, including layer patterns (Figure 5), arbor sizes (Figure 6), and target glomeruli (Figure 3). The correspondence between layer patterns and target glomeruli is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C65"
+    ],
+    "result": "Most LC neurons discard retinotopic information at the glomerulus level, with axons converging onto cell-type specific target regions. However, LC10 neurons retain retinotopic organization in the AOTu, with the DV axis of axonal terminals matching the AP axis of lobula dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20, C27-C29, C56-C60, C64-C65 are well-supported by MCFO labeling experiments (Figure 4) showing that most LC types lack obvious retinotopy within glomeruli, while LC10 subtypes show clear retinotopic mapping. The anatomical data demonstrate that individual LC neuron terminals of most types intermingle within glomeruli without spatial restriction, whereas LC10 terminals show ordered arrangement along one axis of the AOTu.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "LC10 can be divided into four subtypes (LC10a-d) based on distinct layer patterns in the lobula, all projecting to the medial zone of the AOTu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C61-C63 are supported by anatomical data in Figures 5F, 10, and related supplements showing distinct layer patterns for LC10 subtypes. Multiple split-GAL4 driver lines with subtype-specific expression provide genetic support for this classification. The data demonstrate that all subtypes project to the same general target region (AOTu medial zone) but have distinct dendritic arbor patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Optogenetic activation of different LC types evokes distinct, cell-type specific behaviors including jumping, reaching, backward walking, forward walking, and turning. Nearly half of LC types (10/22) drove one of five assessed behaviors in a majority of flies tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C33, C86-C90 are supported by systematic behavioral screening data (Figure 8) using two complementary assays. The data show that different LC types produce distinct behavioral phenotypes with varying penetrance. The relationship between LC type and behavior is not one-to-one, with some types producing multiple behaviors and some behaviors produced by multiple types. Control experiments and multiple driver lines confirm the specificity of these phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Control experiments confirm that LC6 and LC16 activation phenotypes (jumping and backward walking, respectively) are due to experimental activation of these cell types and not artifacts of light stimulation or genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C91-C93 are supported by comprehensive control experiments (Figure 9) including norpA mutants (blind flies), parental lines without CsChrimson, flies without retinal supplementation, and multiple independent split-GAL4 driver lines. All controls show minimal or no behavioral responses, while experimental lines show highly penetrant phenotypes (80-100% for jumping, 89-95% for backward walking). Independent thermogenetic screen corroborates findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Activation of LC10a or LC10d subtypes alone is sufficient to drive highly penetrant reaching behavior, while LC10b and LC10c have minor or no role in this behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C94-C97 are supported by correlation between subtype expression patterns and behavioral phenotypes across 15 LC10 driver lines (Figure 10). MCFO labeling identified which subtypes were present in each line, and lines with strong reaching phenotypes consistently contained LC10a and/or LC10d. Subtype-specific driver lines for LC10a and LC10d each showed high penetrance reaching. The inference about LC10b/c is based on correlation, not direct silencing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "LC6 and LC16 activation phenotypes closely resemble natural avoidance behaviors triggered by visual looming stimuli. LC6 activation produces jumping with a takeoff sequence similar in duration to looming-evoked escape, while LC16 activation produces backward walking similar to looming-evoked retreat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C42, C98-C100 are supported by detailed behavioral comparisons using high-speed videography (Figure 11). The data show that LC6 activation produces a coordinated takeoff sequence matching looming-evoked escape in both sequence and duration, while LC16 activation produces backward walking at speeds similar to looming-evoked retreat. The behavioral phenotypes are quantitatively similar to natural responses, though the claim of 'closely resembling' is somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C26",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "LC6 and LC16 respond selectively to dark looming stimuli as revealed by two-photon calcium imaging, showing stronger responses to dark expanding discs than to bright looming or luminance-matched stimuli lacking edge motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25-C26, C43-C46 are supported by calcium imaging data (Figure 12) showing that both LC6 and LC16 respond to dark looming disks with larger responses to slower looming speeds. Both cell types show selectivity for dark looming stimuli over bright looming or luminance-matched stimuli. Statistical tests (Mann-Whitney, p<0.01) confirm significant differences. The similar layer patterns of LC6 and LC16 are consistent with their similar response properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "LC11 responds selectively to small moving objects but not to looming stimuli, showing large responses to a small moving object and moderate responses to a moving bar, but no calcium response changes to looming-related stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C49 are supported by calcium imaging data (Figure 12D-E) showing that LC11 does not respond to any looming-related stimuli but shows large responses to a small moving object. LC11's responses to the small object are significantly larger than those of LC6 and LC16 (Mann-Whitney test, p<0.01). The different layer pattern of LC11 compared to LC6/LC16 is consistent with different response properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C50",
+      "C51",
+      "C52",
+      "C107",
+      "C108",
+      "C121",
+      "C122"
+    ],
+    "result": "Unilateral activation of LC neurons produces directional turning behaviors that depend on cell type: LC16 activation causes turning away from the activated side (aversive), while LC10 activation causes turning toward the activated side (attractive).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C50-C52, C107-C108, C121-C122 are supported by stochastic labeling and activation experiments (Figure 13) showing that unilateral LC16 activation produces turning away from the activated side, while unilateral LC10 activation produces turning toward the activated side. The data demonstrate that positional information can be extracted from differential activity between the two optic lobes, and that LC neurons convey information about both feature presence and location.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "Neither LC6 nor LC16 appeared to be essential for looming-evoked behaviors based on Kir2.1 silencing experiments, suggesting functional redundancy at the level of neurons mediating looming-evoked escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102 are supported by silencing experiments (Figure 11\u2014figure supplement 1) showing no reduction in backward walking for LC16 and only partial reduction in jumping for LC6 (fast loom only, no effect on takeoff duration). The interpretation of functional redundancy is reasonable given that multiple LC types show jumping/backward walking phenotypes upon activation and other non-LC cell types contribute to looming-evoked escape. However, the silencing experiments are limited in scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C110",
+      "C111",
+      "C128",
+      "C145",
+      "C151"
+    ],
+    "result": "LC neurons convey information on the presence and location of visual features relevant for specific behaviors. The encoding of visual information at the level of LC neurons is sufficiently specialized to contribute to distinct behavioral responses in a cell-type dependent fashion, though LC neurons do not appear to instruct a single behavioral output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C110-C111, C128, C145, C151 represent summary interpretations of the combined anatomical, behavioral, and physiological data. The data strongly support that LC neurons encode specific visual features (e.g., looming for LC6/LC16, small object motion for LC11) and that activation can evoke behaviorally relevant responses. The interpretation that LC neurons do not instruct single outputs is supported by observations of multiple behaviors from single types and context-dependent responses. These are reasonable inferences from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "LC neurons show cell-type specific variation in lateral dendritic arbor spread in the lobula, ranging from ~10 columns (LC10a) to over 60 columns (LC11). The dendrites of most LC types overlap rather than tile, and the distinct arbor spreads determine the spatial extent over which specific response properties are computed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C83 are supported by anatomical measurements from MCFO labeling (Figure 6, Figure 6\u2014figure supplement 1) showing considerable variation in arbor sizes across LC types. Cell counts and arbor spread estimates suggest overlapping rather than tiling patterns for most types. The interpretation that arbor spreads determine spatial integration extent is reasonable given the lack of retinotopy in most glomeruli. However, the estimates involve simplifying assumptions about visual column distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Arbors of LC neurons are found in all lobula strata with large differences between layers. Only LC4 cells have processes in layer Lo1, while all but three LC types (LC4, LC12, LC18) have processes in layer Lo5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C71-C73 are supported by systematic layer pattern analysis (Figure 5) showing that all lobula layers contain processes of at least one LC type, with varying numbers of types per layer. The data clearly show LC4 as the only type in Lo1 and most types (except LC4, LC12, LC18) in Lo5. This demonstrates diversity in potential synaptic inputs across LC types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The signaling downstream of LC neurons is likely complex, with activation of single LC types producing multiple behaviors, spatial patterns of activation modifying phenotypes, and multiple LC types contributing to similar behaviors. Context-dependent responses suggest integration of LC signals with other information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120, C123-C125 are supported by behavioral data showing that single LC types can produce multiple behaviors (e.g., LC10: reaching, wing extension, turning; LC16: backward walking, turning), unilateral activation produces different phenotypes than bilateral activation, and multiple types produce similar behaviors (e.g., five types produce jumping). Context-dependent responses are demonstrated by differences between assays. These observations support the interpretation of complex downstream processing, though direct circuit mechanisms are not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The most common activation phenotypes were avoidance responses, with neurons showing avoidance-like phenotypes projecting to two separate groups of adjacent glomeruli in the PVLP. Multiple LC types may contribute to parallel escape pathways, which has not been previously reported for identified visual projection neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C141 are supported by behavioral screen results (Figure 8) showing predominance of avoidance phenotypes and anatomical data (Figure 3) showing spatial clustering of functionally related LC types. The interpretation that multiple LC types contribute to escape pathways is reasonable given the behavioral data, though direct circuit connectivity is not demonstrated. The speculation about evolutionary significance and parallel pathways is plausible but not directly tested. The claim of novelty (C140) appears accurate based on the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "Visual projection neurons provide anatomical connections between early visual processing in the optic lobes (comprising lamina, medulla, lobula, and lobula plate) and higher brain regions. LC neurons have individual dendritic arbors covering only part of the lobula but as populations cover the entire visual field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C13, C15-C16 represent established anatomical knowledge about the fly visual system supported by cited references and the anatomical data presented. The characterization of LC neuron dendritic coverage is demonstrated by the data in Figures 1, 6, and related figures. These are well-established facts that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C126",
+      "C127",
+      "C142",
+      "C143",
+      "C144",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study provides context from prior work, speculations about mechanisms, and statements about implications for future research. These include hypotheses about LC neuron function as feature detectors, potential downstream circuit mechanisms, and the broader significance of the findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85, C103-C106, C109, C112-C117, C126-C127, C142-C155 represent a mixture of hypotheses from the literature, speculations about mechanisms not directly tested, and statements about the implications of the work. While these provide important context and interpretation, they are not primary results of the study. Many are explicitly speculative (e.g., C106, C109, C112-C114, C124, C126, C131-C134, C136, C138, C141, C152) or represent established knowledge from prior work (C84, C115-C117, C127, C139, C144, C146-C150). These do not constitute testable results from the current study.",
+    "result_type": "MINOR"
+  }
+]

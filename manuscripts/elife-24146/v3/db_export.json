@@ -1,0 +1,1844 @@
+{
+  "submission": {
+    "id": "d6a56e38-d367-4eb1-b471-6d464f88cfe0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:41:25.516924Z",
+    "updated_at": "2025-11-30T23:41:25.516924Z"
+  },
+  "content": [
+    {
+      "id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "submission_id": "d6a56e38-d367-4eb1-b471-6d464f88cfe0",
+      "content_type": "manuscript",
+      "content_text": "# La-related protein 1 (LARP1) binds the mRNA cap, blocking eIF4F assembly on TOP mRNAs\n\n## Authors\n\n- Roni M Lahr<sup>1</sup> ([ORCID: 0000-0002-7469-4565](https://orcid.org/0000-0002-7469-4565))\n- Bruno D Fonseca<sup>2</sup>\n- Gabrielle E Ciotti<sup>1</sup>\n- Hiba A Al-Ashtal<sup>1</sup>\n- Jian-Jun Jia<sup>2</sup>\n- Marius R Niklaus<sup>2</sup>\n- Sarah P Blagden<sup>3</sup>\n- Tommy Alain<sup>2</sup>\n- Andrea J Berman<sup>1</sup> ([ORCID: 0000-0003-1217-7412](https://orcid.org/0000-0003-1217-7412)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences University of Pittsburgh Pittsburgh United States\n2. Children\u2019s Hospital of Eastern Ontario Research Institute Ottawa Canada\n3. Department of Oncology University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe 5\u2019terminal oligopyrimidine (5\u2019TOP) motif is a cis-regulatory RNA element located immediately downstream of the 7-methylguanosine [m7G] cap of TOP mRNAs, which encode ribosomal proteins and translation factors. In eukaryotes, this motif coordinates the synchronous and stoichiometric expression of the protein components of the translation machinery. La-related protein 1 (LARP1) binds TOP mRNAs, regulating their stability and translation. We present crystal structures of the human LARP1 DM15 region in complex with a 5\u2019TOP motif, a cap analog (m7GTP), and a capped cytidine (m7GpppC), resolved to 2.6, 1.8 and 1.7 \u00c5, respectively. Our binding, competition, and immunoprecipitation data corroborate and elaborate on the mechanism of 5\u2019TOP motif binding by LARP1. We show that LARP1 directly binds the cap and adjacent 5\u2019TOP motif of TOP mRNAs, effectively impeding access of eIF4E to the cap and preventing eIF4F assembly. Thus, LARP1 is a specialized TOP mRNA cap-binding protein that controls ribosome biogenesis.\n\n## Introduction\n\nRibosome biogenesis is a complex and energetically costly process for the cell. Eukaryotic cells exert precise temporal and stoichiometric control over ribosomal protein expression to ensure the production of functional ribosomes meets the growth demands of the cell. Multicellular organisms regulate ribosome biogenesis post-transcriptionally, at the level of mRNA translation (Meyuhas and Kahan, 2015; Perry, 2007). All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5\u2019terminal oligopyrimidine (5\u2019TOP) motif comprising an invariant 5\u2019-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991). This motif is essential for translation regulation of TOP mRNAs (Biberman and Meyuhas, 1999; Avni et al., 1994; Meyuhas and Kahan, 2015).\n\nThe mammalian target of rapamycin complex 1 (mTORC1) signaling pathway plays a prominent role in the control of TOP mRNA translation (Fonseca et al., 2014; Hsieh et al., 2012; Thoreen et al., 2012). In response to provision of nutrients (such as amino acids, growth factors, glucose, or oxygen), the growth-associated kinase complex mTORC1 boosts the production of components of the translation machinery encoded by TOP mRNAs (Meyuhas and Kahan, 2015; Chantranupong et al., 2015). Pharmacological inhibition of mTORC1 results in the pronounced repression of TOP mRNA translation (Terada et al., 1994; Jefferies et al., 1994; Thoreen et al., 2012; Hsieh et al., 2012).\n\nGenome-wide ribosome profiling studies demonstrate that TOP mRNAs are the class of transcripts that are most sensitive to translation suppression by mTOR inhibitors (Thoreen et al., 2012; Hsieh et al., 2012). TOP mRNA translation has been the subject of intense study and several mechanisms have been proposed for its regulation by mTORC1 to date. Most recently, the mRNA cap-binding protein, eIF4E, and its repressor proteins, 4E-BP1 and 4E-BP2, have been linked to the control of TOP mRNA translation downstream of mTORC1 (Hsieh et al., 2012; Thoreen, 2017; Thoreen et al., 2012), but the exact contribution of 4E-BPs to the control of TOP mRNA translation remains a point of contention (Miloslavski et al., 2014). While 4E-BPs and many other candidates have been linked to the control of TOP mRNA translation (discussed in detail in (Meyuhas and Kahan, 2015)), the identity of the bona fide trans-acting factor that represses TOP mRNA translation downstream of mTORC1 remained enigmatic.\n\nRecently, we and others (Fonseca et al., 2015; Tcherkezian et al., 2014) identified La-related protein 1 (LARP1) as a novel downstream target of mTORC1 and proposed that it plays an important role in the translation of TOP mRNAs. Specifically, we have shown that LARP1 associates with the regulatory-associated protein of mTOR (RAPTOR) when mTORC1 is active. Upon mTORC1 inhibition, a cellular state that is associated with TOP mRNA translation repression, we demonstrated that LARP1 dissociates from mTORC1 and binds to the 5\u2019TOP motif of TOP mRNAs (Fonseca et al., 2015). We have also shown that LARP1 associates with the 5\u2019TOP motif via a LARP1 family-specific \u2018DM15 region\u2019 located within its C-terminus (Lahr et al., 2015). In the present study, we confirm a direct association between the DM15 region and the 5\u2019TOP motif.\n\nMost importantly, our crystallographic data revealed an unexpected, but seminal role for the DM15 region of LARP1 in specialized cap-binding of TOP mRNAs. We show that the DM15 region of LARP1 specifically binds the 7-methylguanosine 5\u2019\u22125\u2019 triphosphate (m7Gppp) moiety and the invariant first cytidine of TOP mRNAs. Biochemical analyses reveal that LARP1 selectively prevents the binding of eIF4E to the m7Gppp cap to block the assembly of the eIF4F complex on TOP mRNAs. These important findings highlight a previously unrecognized dynamic interplay between LARP1 and eIF4F in the control of TOP mRNA translation and reconcile earlier, seemingly contradictory models of TOP mRNA translation control.\n\n## Results and discussion\n\nTo better understand how LARP1 engages the 5\u2019TOP motif and controls TOP mRNA translation, we determined the 2.6 \u00c5 resolution X-ray crystal structure of the DM15 region (DM15) of human LARP1 bound to an RNA oligonucleotide spanning a segment of the 5\u2019TOP motif of ribosomal protein S6 (RPS6) mRNA. We selected nucleotides 4\u201311 of the 42-nucleotide TOP sequence of RPS6 for co-crystallization experiments (5\u2019-CCUCUUUUCCG-3\u2019; the sequence used in co-crystallization experiments is underlined). The sequence and length choice was informed by the dimensions of the identified RNA binding site in the structure of apo DM15 and the results of nuclease protection assays performed on a complex of DM15 with the first 42 nucleotides of the RPS6 mRNA (Lahr et al., 2015). Importantly, despite excluding the first three nucleotides of the biological RPS6 TOP sequence, the sequence chosen for crystallization fits the definition of a TOP motif: a short stretch of pyrimidines preceded by a cytidine and succeeded by a guanosine (Meyuhas and Kahan, 2015). As anticipated, based on the negatively-charged phosphate backbone of the RNA, the resulting RNA-bound structure of DM15 revealed that the 5\u2019TOP sequence binds to the highly conserved, positively charged surface of the three tandem helix-turn-helix HEAT-like repeats of DM15, termed A, B, and C (Figure 1A, Figure 1\u2014figure supplement 1, Table 1) .\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-v3.jpg)\n\n**Figure 1.:** (A) Protein surface representation is colored according to electrostatic potential (\u221274 kEV, red; 74 kEV, blue). (B) Zoomed view of the DM15 RNA binding site. (C) Superimposition of DM15 bound to RNA and bound to cap analog, m7GTP. (D) Superimposition of DM15 bound to RNA and bound to m7GpppC. (E\u2013F) Zoomed views of the specific recognition of C1 (E) and m7GTP (F). Potential hydrogen bonds indicated by dotted lines.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Composite omit maps carved around the (A) RNA (3\u03c3), (B) m7GTP cap analog (3\u03c3), and (C) m7GpppC dinucleotide (2\u03c3). (D) Composite omit map carved around the m7GpppC dinucleotide at 2\u03c3 (grey) and 3\u03c3 (magenta) for comparison.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Three neighboring unit cells from the DM15-RNA co-crystal are shown. The protein monomer colored in blue interacts with two molecules of RNA: one from its unit cell and one originating in the unit cell on the right. This places a guanosine nucleotide 5\u2019 to the TOP motif in the binding site of the\u00a0blue DM15 region. (B) Two non-crystallographic symmetry mates from the DM15-m7GTP co-crystal show the guanine of the cap analog binds the same place as the G8* residue binds in the DM15-RNA co-crystal (A). (C) Two non-crystallographic symmetry mates from the DM15-m7GpppC co-crystal structure reveal that the m7G and C moieties bind in the same place as the G8* and C1 residues in the DM15-RNA co-crystal, respectively. In the other non-crystallographic symmetry-mate shown, only m7GTP is modeled because only one dinucleotide can bind per asymmetric unit since the inverted triphosphate linkage sits on the NCS 2-fold axis (see Figure 1\u2014figure supplement 5).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Frequency plots were generated from amino acid sequences of LARP1 from H. sapiens (NP_056130.2), M. musculus (NP_082727.1), D. rerio (XP_001920902.3), X. laevis (NP_001089363.1), D. melanogaster (NP_524998.1), C. elegans (NP_001040867.2), A. thaliana (NP_001190354.1), O. sativa (XP_015621184.1), B. dendrobatidis (XP_006676827.1), and M. brevicollis (XP_001744631.1). Asterisks indicate amino acids shown in Figure 1. Numbering is based on the DM15 region construct cloned from LARP1 isoform 2 (NP_056130.2).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** The amino acids responsible for cap recognition in each of the proteins are shown as white sticks and the cap analog is shown as green sticks. PDBs used to generate each panel: eIF4E (1EJ1), VP23 (1AV6), VP39 D182A (4DCG), CBP20 (1H2T), LARP1 DM15 (5V4R), DXO (4J7N), PARN (3CTR), DCP1-DCP2 (5KQ4), DCPS (1XMM).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** The composite omit map shown is contoured at 1\u03c3 and reveals an ordered m7GpppC dinucleotide bound to the DM15 NCS-mate on the right. The DM15 NCS-mate on the left binds the m7G in the G-binding pocket, while the triphosphate moiety is ordered and facing away from the C-binding pocket (m7GTP*). Presumably, the density for the cytidine is mostly disordered: based on the path of the m7G triphosphate moiety (dotted line and 3'C label), the cytidine is most likely in the solvent channel; density for the Watson-Crick face of a cytidine is visible in the C-binding site in this copy of DM15, but is presumably of very low occupancy. Based on this data and the data shown in Figure 1\u2014figure supplement 2B, only one inverted triphosphate per asymmetric unit can be accommodated in the anion binding site that overlaps with the non-crystallographic 2-fold axis.\n\n**Table 1.**\n X-ray data collection and refinement statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Data collection</th>\n      <th>m7GTP</th>\n      <th>RNA-bound</th>\n      <th>m7GpppC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Space group</td>\n      <td>P21</td>\n      <td>I4</td>\n      <td>P21</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">Unit cell dimensions</td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>48.177, 60.163, 60.609</td>\n      <td>107.095, 107.095, 29.113</td>\n      <td>47.959, 59.962, 60.321</td>\n    </tr>\n    <tr>\n      <td>\u03b2</td>\n      <td>101.283</td>\n      <td>90</td>\n      <td>100.653</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>33.90\u20131.77</td>\n      <td>37.86\u20132.59</td>\n      <td>30.00\u20131.69</td>\n    </tr>\n    <tr>\n      <td>Rmerge (%)</td>\n      <td>3.5 (27.7)</td>\n      <td>15.6 (37.1)</td>\n      <td>3.6 (12.5)</td>\n    </tr>\n    <tr>\n      <td>I/\u03c3(I)</td>\n      <td>16.30 (2.1)</td>\n      <td>8.79 (1.36)</td>\n      <td>19.85 (8.8)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>82 (73)</td>\n      <td>98.5 (87.1)</td>\n      <td>92.2 (93.2)</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>2.9 (1.5)</td>\n      <td>4.3 (2.1)</td>\n      <td>3.4 (2.8)</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nFortuitously, the sequence of RNA chosen for co-crystallization experiments promoted additional crystal contacts, which revealed an unanticipated function for the DM15, discussed below. Co-crystallization of DM15 with part of the RPS6 5\u2019TOP motif yielded a crystal lattice in which one protein molecule interacts with two molecules of RNA in the unit cell. A given protein molecule simultaneously binds nucleotides 1\u20135 of one RNA molecule and the 3\u2019 guanosine (G8) of the RNA bound to the protein in the neighboring unit cell (Figure 1\u2014figure supplement 2A). G8 sits \u2018upstream\u2019 or 5\u2019 to nucleotides 1\u20135; we denote the 3\u2019 terminal G derived from the RNA strand originating in the neighboring unit cell as G8* to indicate its discontinuity from the polypyrimidine motif in nucleotides 1 to 5.\n\nOur observations of (1) a binding pocket complementary to the size and shape of a guanosine that (2) specifically recognizes its Watson-Crick face, and (3) sits upstream of the 5\u2019 terminal cytidine of the bound TOP RNA led us to hypothesize that DM15 binds the cap of TOP mRNAs. To test this, we determined the co-crystal structure of DM15 bound to the cap analog 7-methylguanosine triphosphate (m7GTP) to 1.8 \u00c5 resolution. m7GTP binds the same pocket as G8* in the DM15-RNA co-crystal (Figure 1C, Figure 1\u2014figure supplements 1B and 2B). Lysine-915 stabilizes the \u03b3-phosphate of m7GTP (Figure 1F). Interestingly, the \u03b3-phosphate of m7GTP aligns with the position of the bound sulfate ion that crystallized at the non-crystallographic dimer interface in the structure of the apo DM15 region (Lahr et al., 2015).\n\nResidues from each of the conserved DM15 repeats (A, B, C) participate in the recognition of the invariant cytidine in the first position of TOP mRNAs (C1) and the guanosine (G8*) 5\u2019 to it (Figure 1B\u2013D). All of the amino acids that interact directly with the RNA are nearly 100% conserved from worms to mammals and plants (Figure 1\u2014figure supplement 3) (Bousquet-Antonelli and Deragon, 2009; Lahr et al., 2015). Amino acids R840, R879, and H800 define the path of the RNA by aligning it on the surface of DM15 through ionic and hydrogen bonding interactions with the phosphate backbone. Amino acids Y922, Y883, and F844 stabilize the nucleobases of G8* and C1 through stacking interactions. Sequence-specific recognition of G8* through its Watson-Crick face is accomplished by hydrogen bonds with E886 and S882. Arginines 847 and 879 specifically recognize C1 (Bousquet-Antonelli and Deragon, 2009; Lahr et al., 2015). The position of R879 forces U2 to flip away from stacking with C1. Instead, U3 stacks on U2. The base of U4 flips back toward C1 to stack on H800, while the O2 on its Watson-Crick face hydrogen bonds with the backbone carbonyl of H797.\n\nWhile the\u00a0\u03b1-helical nature of DM15 is unique among cap-binding proteins, its cap recognition pocket exhibits the canonical architecture (Figure 1\u2014figure supplement 4). The DM15 region of LARP1 stabilizes the nucleobase of m7GTP between two conserved aromatic amino acids, Y883 and Y922. In addition, E886 hydrogen bonds with the Watson-Crick face of the guanosine moiety, using acidic side chains for this recognition in a mechanism reminiscent to that of other cap-binding proteins (Figure 1\u2014figure supplement 4, CBP20). The methyl group points away from the core of the DM15 region in a manner similar to that observed in the nuclear cap-binding complex; it is therefore likely that other regions of LARP1 outside of the crystallized construct interact with the methyl group at position 7 and the 5\u2019\u22125\u2019 triphosphate linkage connecting the m7Gppp moiety and the first cytidine\u00a0nucleotide of the TOP\u00a0motif.\n\nThe conservation of the residues interacting with m7GTP in addition to the nucleotide-specific recognition of G8* and C1 from the DM15-RNA and DM15-m7GTP co-crystal structures suggest the DM15 region of LARP1 specifically recognizes the m7GpppC motif. To test this hypothesis, we determined the crystal structure of DM15 bound to m7GpppC dinucleotide. Indeed, this dinucleotide binds the DM15 region in the cap- and C-binding pockets (Figure 1, Figure 1\u2014figure supplements 1, 2 and 5).\n\nIn vitro biochemical RNA-binding assays analyzed by electrophoretic mobility shift corroborate our crystallographic observations. DM15 binds a 42-mer oligonucleotide of the 5\u2019UTR of RPS6 containing an additional 5\u2019G, effectively making it a non-5\u2019TOP sequence, with an affinity of 7.5 \u03bcM; capping this substrate enhances affinity 3.8-fold (2.0 \u03bcM). Capping the TOP 42-mer RPS6 RNA substrate increases the affinity 360-fold (Figure 2; 21 nM) over the non-TOP substrate and 95-fold over the capped non-TOP substrate.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013C) Electrophoretic mobility shift assays using the indicated RNA. (D) Quantitation of 3 replicate EMSAs; error bars represent standard deviation. (E) Competition assays analyzed by native gel electrophoresis using labeled m7Gppp-RPS6 as substrate with the indicated protein concentrations.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A\u2013C) EMSA of capped RPS6 42-mer 5\u2019UTR with each indicated\u00a0point mutant. (D) Quantification of three replicates of each indicated EMSA. ND, not determined.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) EMSA of DM15 with an uncapped RNA representing the first 42 nucleotides of the 5\u2019UTR of RPL32. (B) EMSA of DM15 with the capped version of the RNA from panel (A).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Competition assay challenging DM15 bound to\u00a0labeled capped non-TOP RNA with capped (lanes 3\u20135) or uncapped (lanes 6\u20138)\u00a0cold competitor RNA.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Quantification of thermal shift assays conducted in the presence of GTP, m7GTP, ATP, m7GpppG, or m7GpppC; n\u00a0=\u00a03 for all assays; error bars show 1 standard deviation.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig2-figsupp5-v3.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A\u2013B) EMSAs with the indicated substrates and increasing concentrations of recombinant human eIF4E. (C) Quantitation of EMSAs, n\u00a0=\u00a03. Error bars indicate standard deviation. (D\u2013E) Competition assays for the capped non-TOP substrate.\n\nMutating the residues in DM15 that stabilize the cap, E886, Y922, or Y883, decreases the affinity for capped TOP RNA 380-fold (8.0 \u03bcM), 124-fold (2.6 \u03bcM), and greater than\u00a0~950 fold (N.D.,>20 \u03bcM), respectively (Figure 2\u2014figure supplement 1). Capping another 5\u2019TOP sequence comprised of the first 42 nucleotides of the 5\u2019UTR of RPL32 mRNA enhances the interaction of DM15 with this sequence (Figure 2\u2014figure supplement 2). Further, competition assays in which capped mRNAs better displace capped DM15-bound sequences than uncapped mRNAs do, suggest the interaction of DM15 with the cap moiety is specific (Figure 2\u2014figure supplement 3). Finally, thermal shift stability assays demonstrate the interaction of DM15 with m7GTP and m7GpppC is increasingly stabilizing to the DM15 fold (Figure 2\u2014figure supplement 4); notably, the m7GpppG dinucleotide does not impart additional stability to DM15 over m7GTP. Together with the conservation of the residues interacting with m7GTP, the base-specific\u00a0hydrogen bonding of the Watson-Crick faces of nucleobases of G8* and C1 in the DM15-RNA co-crystal structure and the recognition of the m7GpppC dinucleotide in the DM15-m7GpppC co-crystal structure, these data suggest the DM15 region of LARP1 specifically recognizes the m7GpppC motif characteristic of TOP mRNAs. This observation is particularly remarkable because the first cytdine is indispensable for repression of TOP mRNA translation (Levy et al., 1991). Interestingly, the first cytidine is also essential for LARP1 association with RPS6 and RPL32 mRNAs (Fonseca et al., 2015). Higher-order complexes and nonspecific binding of DM15 to the RNA oligonucleotide are greatly reduced in the capped-TOP substrate binding reaction (Figure 2), indicating that the m7GpppC motif might lock the register of DM15 binding. Furthermore, these data provide a molecular mechanism by which LARP1 differentiates TOP mRNAs from all other cellular mRNAs, most of which have a purine in the\u00a0+1 position (Schibler et al., 1977; Schibler and Perry, 1977).\n\nWe hypothesized that if DM15 recognizes the caps of TOP mRNAs, it might compete for cap binding with eIF4E, the eukaryotic initiation factor required for canonical cap-dependent translation initiation (Sonenberg et al., 1978, 1979). To test this, we conducted competition assays between the human DM15 region and recombinant human eIF4E for capped oligonucleotides (Figure 2E). While displacement of DM15 from capped TOP RNA requires high-micromolar concentrations of eIF4E, low-nanomolar concentrations of DM15 are sufficient to displace eIF4E from this substrate. Interestingly, the opposite is true for capped non-TOP mRNA: eIF4E outcompetes DM15 for the non-TOP substrate as the pre-bound or competitor protein (Figure 2\u2014figure supplement 3). These results are consistent with the preferred binding of eIF4E for m7GpppG (Kiraga-Motoszko et al., 2011; Thoreen et al., 2012; et al., Tamarkin-Ben-Harush et al., 2017) and with studies suggesting that quiescent cells and translation systems contain a factor that represses TOP mRNA translation even in the presence of excess eIF4E (Shama et al., 1995; Biberman and Meyuhas, 1999). Since most mRNAs have a purine in the\u00a0+1 position (Schibler et al., 1977; Schibler and Perry, 1977), eIF4E is anticipated to stimulate their translation; by contrast, TOP mRNAs have an invariant C in the first position, suggesting that LARP1 would sequester them, thereby preventing cap-dependent translation initiation until a signaling event releases this repression. Of note, we show that the affinity of the DM15 region of LARP1 for TOP mRNAs is considerably higher than that of full-length eIF4E protein for this class of mRNAs, likely explaining why excess eIF4E alone is insufficient to upregulate the translation of TOP mRNAs (Shama et al., 1995).\n\nThe eIF4F complex (formed by the cap-binding protein eIF4E, the scaffolding protein eIF4G and the ATP-dependent RNA helicase eIF4A) has been linked to the control of TOP mRNA translation (Thoreen et al., 2012; Hsieh et al., 2012). Moreover, eIF4G co-precipitates TOP mRNAs in an mTORC1\u2013dependent manner (Fonseca et al., 2015). Notably, the ability of TOP mRNAs to associate with eIF4G is markedly inhibited upon overexpression of LARP1 in mammalian cells (Fonseca et al., 2015), consistent with the idea that LARP1 competes with eIF4E and eIF4G for binding to TOP mRNAs. This notion is substantiated by the present findings that LARP1 blocks the access of eIF4E to m7Gppp-TOP mRNAs.\n\nTo investigate the mechanism by which LARP1 hinders the assembly of the eIF4F complex on TOP mRNAs we generated mutations in two key amino acids (R840 and Y883) that play pivotal roles in TOP mRNA binding (R840 and Y883) and in recognizing the m7Gppp cap structure (Y883) (Lahr et al., 2015). We compared the effects of overexpression of full-length wild type LARP1 on the assembly of the eIF4F complex on TOP (RPS6 and RPL32) and non-TOP (\u03b2-actin) mRNAs with that of the\u00a0full-length R840E/Y883A double mutant. Expression of wild type LARP1 hinders the binding of endogenous eIF4G to both RPS6 and RPL32 mRNAs, but not to \u03b2-actin mRNA, as determined by RNA-immunoprecipitation/RT-ddPCR (Figure 3). This finding is consistent with the model that LARP1 binds to the cap and 5\u2019TOP sequence of TOP mRNAs, thus selectively inhibiting eIF4F assembly on this class of transcripts. Perhaps more importantly, expression of the LARP1 R840E/Y883A double mutant does not inhibit eIF4G association with TOP mRNAs (Figure 3), indicating that cap- and TOP-binding is essential for LARP1-mediated displacement of the eIF4F complex from TOP mRNAs. Taken together with data demonstrating mTORC1 inhibition decreases the association of eIF4G with TOP transcripts (Fonseca et al., 2015), these data suggest that mTORC1 blocks the inhibitory function of LARP1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24146/elife-24146-fig3-v3.jpg)\n\n**Figure 3.:** (A and B). Extracts of HEK293T cells that were transfected with empty vector (EV), FLAG-tagged wild type LARP1 (WT) or FLAG-LARP1 double-mutant (R840E/Y883A), were immunoprecipitated with anti-eIF4G antibody. Inputs were analyzed by Western blot (A) and eIF4G-IPs were analyzed for TOP mRNA abundance by RT-ddPCR (B). Data were normalized to input mRNA levels. Three biological replicates were performed and error bars denote propagated standard deviation.\n\nThe data presented in this study provide important structural insights into the molecular mechanism of LARP1, a specific 5\u2019TOP motif-binding protein. LARP1 plays a fundamental role in the specialized recognition of the m7GpppC motif, a unique feature of TOP mRNAs that encode all the core protein components of the ribosome and the translation apparatus. Cap-binding proteins display a variety of mRNA regulatory functions (Topisirovic et al., 2011). LARP1 regulates translation and stability of this class of mRNAs through specialized 5\u2019TOP motif (Fonseca et al., 2015; Lahr et al., 2015; Aoki et al., 2013) and cap recognition. eIF4E and its binding partner, eIF4G,\u00a0have been previously linked to the control of TOP mRNA translation (Thoreen et al., 2012; Hsieh et al., 2012). Our work demonstrates that LARP1 displaces eIF4E from capped TOP mRNAs, thereby preventing the assembly of the eIF4F complex required for translation initiation. These findings reveal a previously unrecognized mTORC1-regulated dynamic interplay between LARP1 and the eIF4F complex, whereby eIF4F stimulates TOP mRNA translation while LARP1 represses it. Notably, LARP1 exhibits higher specificity and affinity for TOP mRNAs than eIF4E does, suggesting it may function as the selective factor for TOP mRNA translation regulation. These findings corroborate our earlier report (Fonseca et al., 2015) that LARP1 functions as a repressor of TOP mRNA translation: overexpression of LARP1 in mammalian cells leads to reduced TOP mRNA translation, as inferred by the accumulation of TOP mRNAs in subpolysomal fractions. Conversely, depletion of LARP1 protein from mammalian cells leads to an accumulation TOP messages in heavy polysomal fractions (Fonseca et al., 2015), indicating that LARP1 represses TOP mRNA translation. Importantly, LARP1 is essential for the ability of allosteric (rapamycin) and active-site (Torin1) mTOR inhibitors to effectively suppress TOP mRNA translation (Fonseca et al., 2015), consistent with LARP1 functioning downstream of mTORC1.\n\nIt is noteworthy that whilst LARP1 is shown here to repress TOP translation, in cancer cells LARP1 has been shown to have a positive effect on overall protein synthesis (Burrows et al., 2010) and bind many mRNA targets, including those encoding oncogenes (Hopkins et al., 2016; Mura et al., 2015), in addition to TOP mRNAs (Aoki et al., 2013; Fonseca et al., 2015; Lahr et al., 2015; Tcherkezian et al., 2014). This suggests that LARP1, while repressing TOP translation, can activate the\u00a0translation of other targets, although the mechanism for the latter has yet to be elucidated.\n\nIn conclusion, our findings elucidate a novel mechanism of translation control whereby LARP1 competes with eIF4E for binding the cap of TOP mRNAs, effectively preventing eIF4F complex assembly on TOP mRNAs and ultimately precluding the translation of this class of mRNAs. Our studies now establish LARP1 as a bona fide cap-binding protein and the long-sought regulator of TOP mRNA translation.\n\n## Materials and methods\n\n### Protein expression and purification\n\nThe DM15 construct (aa 796\u2013946) from LARP1a (BC001460.2) was expressed, purified, concentrated, and stored as previously reported (Lahr et al., 2015). Point mutations in DM15 were generated by site directed mutagenesis, and\u00a0expressed and purified similarly. eIF4E (BC043226) was cloned into a modified pET28a vector expressing an N-terminal His6-MBP tag followed by a TEV protease site. pET28-eIF4E was transformed into BL21(DE3) cells and plated on LB supplemented with kanamycin. Cells from one\u00a0~90% confluent plate were transferred to 500 mL ZY auto-induction media for 3 hr at 37\u00b0C and then flasks were transferred overnight to 18\u00b0C (Studier, 2005). Cells were pelleted and flash frozen in liquid nitrogen for storage at \u221280\u00b0C.\n\nCells expressing eIF4E were resuspended in lysis buffer (50 mM Tris, pH 7.4, 500 mM NaCl, 1 mM \u03b2-mercaptoethanol, 20 mM imidazole, 10% glycerol) and homogenized. Lysed cells were clarified by centrifugation and the soluble fraction was incubated with Ni-NTA nickel resin (ThermoFisher Scientific\u00a0(Waltham,\u00a0MA), cat. no. 88221). Resin was washed three times with wash buffer (50 mM Tris, pH 7.4, 500 mM NaCl, 1 mM \u03b2-mercaptoethanol, 35 mM imidazole, 10% glycerol) and eluted in elution buffer (50 mM Tris, pH 7.4, 500 mM NaCl, 1 mM \u03b2-mercaptoethanol, 250 mM imidazole, 10% glycerol). His6-MBP-eIF4E was TEV-cleaved overnight in Q/SP start buffer (50 mM Tris, pH 8.0, 150 mM NaCl, 5 mM \u03b2-mercaptoethanol, 10% glycerol). Cleaved eIF4E was separated from contaminating MBP and TEV by tandem anion and cation exchange chromatography.\n\n### Crystallization and structure solution\n\n#### m7GTP-DM15 co-crystal\n\nDM15 was concentrated to 30 mg/mL (1620 \u00b5M) for crystallization in DM15 crystallization buffer (50 mM HEPES, pH 7.0, 50 mM NaCl, 2 mM DTT). m7GTP (Sigma-Aldrich\u00a0(St.\u00a0Louis,\u00a0MO), cat. no. M6133) was resuspended at a concentration of 4 mM in the same buffer. DM15 and m7GTP were incubated at a 1:1.3 ratio (850 \u00b5M DM15: 1100 \u00b5M m7GTP) in 50 mM HEPES, pH 7.0, 50 mM NaCl, 2 mM DTT at room temperature for 30 min. Crystals were grown at room temperature by sitting drop vapor diffusion using a 1:1 ratio of protein to mother liquor solution of 0.1 M HEPES, pH 7.5%, 10% PEG 6000. Crystals were stabilized in the same buffer\u00a0+5% ethylene glycol and frozen in liquid nitrogen.\n\nX-ray diffraction data were collected using the home source at the Department of Structural Biology (University of Pittsburgh) using a FR-E rotating anode generator and an R-AXIS HTC IP. Data were indexed, merged, and scaled using HKL-2000 (Otwinowski and Minor, 1997). Initial phases were generated with Phaser using the apo DM15 structure (PDBID: 5C0V) as the search model (McCoy et al., 2007). Iterative model building and refinement were performed with COOT and PHENIX, respectively, utilizing TLS, B-factor and positional refinement, and simulated annealing (Adams et al., 2010; Emsley et al., 2010). Ligand restraints were generated using eLBOW (Moriarty et al., 2009). A simulated annealing composite omit map confirmed amino acid positions of the final model.\n\n#### RPS6-DM15 co-crystal\n\nDM15 was concentrated to 20 mg/mL for crystallization in 50 mM HEPES, pH 7.0, 2 mM DTT. RPS6 RNA oligonucleotide was synthesized by IDT (5\u2019 CUUUUCCG 3\u2019) and was resuspended in 20 mM sodium cacodylate (Hampton Research\u00a0Aliso Viejo, CA), pH 6.5. DM15 and RNA were incubated at a 1:1.1 ratio of DM15:RNA with a final concentration of 10 mg/mL DM15 in the presence of 4X binding buffer (100 mM NaCl, 4 mM DTT). This usually resulted in precipitation, so 4 M NaCl was added 1 \u00b5L at a time and mixed until the solution cleared (~100 mM NaCl final). Crystals were grown by vapor diffusion at room temperature by sitting drop using 1:1 ratio of protein-RNA complex to mother liquor solution of 5 mM MgCl2, 50 mM HEPES, pH 7.0, 25% PEG MME 550 (Hampton Research Natrix HR2-116 #31). Crystals were looped directly from the drop and frozen in liquid nitrogen.\n\nX-ray diffraction data were collected at the home source at the Department of Structural Biology using a FR-E rotating anode generator and an R-AXIS IV++ IP. Data were indexed, merged, and scaled using HKL-2000 (Otwinowski and Minor, 1997). Initial phases were generated with Phaser using the apo DM15 structure (PDBID: 5C0V) as the search model (McCoy et al., 2007; Lahr et al., 2015). Iterative model building and refinement were performed with COOT and PHENIX, respectively, utilizing simulated annealing, grouped B-factors and rigid-body refinement (Adams et al., 2010; Emsley et al., 2010). A simulated annealing composite omit map confirmed amino acid and nucleotide positions of the final model.\n\n#### m7GpppC-DM15 co-crystal\n\nDM15 was concentrated to 26 mg/mL (1405 \u00b5M) for crystallization in DM15 crystallization buffer (50 mM HEPES, pH 7.0, 100 mM NaCl, 2 mM DTT). m7GpppC (40 mM stock generously provided by Utz Fischer and Nahum Sonenberg) was diluted at a concentration of 4 mM in the same buffer. DM15 and m7GpppC were incubated at a 1:1.3 ratio (850 \u00b5M DM15: 1100 \u00b5M m7GpppC) in 50 mM HEPES, pH 7.0, 100 mM NaCl, 2 mM DTT at room temperature for 30 min. Protein/RNA complex will precipitate quickly at 4\u00b0C, so all reagents must be kept at room temperature. Crystals were grown at room temperature by sitting drop vapor diffusion using a 1:1 ratio of protein to mother liquor solution of 0.08 M Magnesium acetate tetrahydrate, 0.05 M Sodium cacodylate trihydrate pH 6.5, 30% w/v PEG 4000 (#25 Index-116). Crystals were looped directly from the drop and frozen in liquid nitrogen.\n\nX-ray diffraction data were collected using the home source at the Department of Structural Biology (University of Pittsburgh) using a FR-E rotating anode generator and an R-AXIS HTC IP. Data were indexed, merged, and scaled using HKL-2000 (Otwinowski and Minor, 1997). Initial phases were generated with Phaser using the apo DM15 structure (PDBID: 5C0V) as the search model (McCoy et al., 2007). Iterative model building and refinement were performed with COOT and PHENIX, respectively, utilizing TLS, B-factor and positional refinement, and simulated annealing (Adams et al., 2010; Emsley et al., 2010). Ligand restraints were generated using eLBOW (Moriarty et al., 2009). A composite omit map confirmed amino acid positions of the final model.\n\nAll figures containing refined models were generated with the PyMOL Molecular Graphics System (Schr\u00f6dinger, LLC.\u00a0(New\u00a0York,\u00a0NY)).\n\n### RNA synthesis for biochemical assays\n\nRNAs were in vitro transcribed and purified as described previously (Lahr et al., 2015). For studying the un-capped RNAs, transcribed RNAs were treated with alkaline phosphatase (Roche Life Sciences\u00a0(Indianapolis,\u00a0IN), cat. no. M183A) and 5\u2019 end-radiolabeled with [\u03b3-32P]-ATP. To generate capped RNAs, the 5\u2019 triphosphate required for the capping reaction was regenerated in TOP RNAs by incubation of 50 nM RNA with T4 PNK in PNK buffer A (ThermoFisher Scientific cat. no. EK0032) with 3 mM ATP for 20 min at 37\u00b0C followed by addition of 5 units of nucleoside monophosphate kinase (Roche Life Sciences, cat. no. 10107948001). RNA was purified by phenol-chloroform extraction, MicroSpin G-25 desalting columns (GE Healthcare Life Sciences (Marlborough, MA), cat. no. 27-5325-01), and ethanol precipitation. RNAs with a 5\u2019 triphosphate were subsequently capped and radiolabeled using vaccinia capping enzyme (NEB\u00a0(Ipswich, MA), cat. no. M2080S) and [\u03b1-32P]-GTP or GTP according to the manufacturer\u2019s protocol.\n\n### Electrophoretic mobility shift assays (EMSAs)\n\nEMSAs were performed and imaged as reported previously using the same amount of RNA (\u2264200 pM) regardless of labeling efficiency (Lahr et al., 2015). All RNAs were snap-cooled by heating at 95\u00b0C in 1X binding buffer for 1 min and immediately transferred to ice for 20 min. Replicates were quantified using ImageQuant TL (GE Healthcare Life Sciences) and graphed using KaleidaGraph (Synergy Software) as previously reported (Lahr et al., 2015).\n\n### RNA competition assays\n\nDM15 was prepared\u00a0as 5X protein stocks in protein dilution buffer (50 mM Tris, pH 7.5, 250 mM NaCl, 25% glycerol, 2 mM DTT) and prebound to m7GpppG-RPS6 for 30 min on ice in 8 \u00b5L reactions. 2 \u00b5L of 5X cold competitor RNA was titrated for final reaction conditions of 20 mM Tris, pH 8, 150 mM NaCl, 10% glycerol, 1 mM DTT, 0.5 \u00b5g BSA,\u00a00.5 \u00b5g tRNA. Competitions were incubated for an additional 30 min on ice before loading and analyzing on native gels using the same methods as the EMSAs.\n\n### eIF4E and DM15 competition assays\n\nDM15 or eIF4E 5X protein dilutions were prepared in protein dilution buffer and pre-bound to RNA substrates for 30 min on ice in 8 \u00b5L reactions. 2 \u00b5L of 5X competitor protein was titrated for final reaction conditions of 20 mM Tris, pH 8, 150 mM NaCl, 10% glycerol, 1 mM DTT, 0.5 \u00b5g BSA,\u00a00.5 \u00b5g tRNA. Competitions were incubated for an additional 30 min on ice before and analyzing on native gels using the same methods as the EMSAs.\n\n### RNA sequences\n\nThe RNA oligonucleotides used for crystallization and biochemical assays were as follows:\n\nRPS6 8mer (IDT\u00a0(Coralville,\u00a0IA)): 5\u2019 CUUUUCCG 3\u2019\n\nRPS6 42mer (Sigma-Aldrich):\n\n5\u2019 CCUCUUUUCCGUGGCGCCUCGGAGGCGUUCAGCUGCUUCAAG 3\u2019.\n\nG-RPS6 was T7-transcribed from a DNA template to generate the RNA sequence:\n\n5\u2019 GCCUCUUUUCCGUGGCGCCUCGGAGGCGUUCAGCUGCUUCAAG 3\u2019.\n\nRPL32 was T7-transcribed from a DNA template designed with a self-cleaving 5\u2019 hammerhead ribozyme to generate a 5\u2019 C, resulting in the final RNA sequence:\n\n5\u2019 CUCUCUUCCUCGGCGCUGCCUACGGAGGUGGCAGCCAUCUCC 3\u2019.\n\n#### Thermal shift assays\n\n100 \u00b5M protein was incubated with a saturating amount of GTP, ATP or m7GTP (1 mM) in 1X EMSA binding buffer and 1X SYPRO orange (Promega\u00a0(Madison,\u00a0WI), cat. no. s5692) in 50 \u00b5L reactions at room temperature for 20 min. Protein unfolding was measured by monitoring fluorescence of SYPRO orange at 570 nm during a temperature ramp from (25\u201395\u00b0C). Fluorescence data were analyzed using R-studio and the Boltzmann model to calculate the melting temperature. Three biological replicates were performed for each experiment and averaged. The \u2206Tm was determined to be the difference between the Tm of the protein alone and Tm of the protein in the presence of the ligand.\n\n### Sequence alignments\n\nSequences were aligned with BLAST (Altschul et al., 1997) and frequency plots were generated with WebLogo (Crooks et al., 2004).\n\n### Cell culture\n\nHEK293T cells (human embryo kidney 293 transformed with the simian virus 40 large T antigen, cat. no. CRL11268TM and lot no. 59521234), used in Figure 3, were purchased from ATCC (Manassas,\u00a0VA) in January 2012, expanded and stored in liquid nitrogen. Low passage cells were thawed and tested for mycoplasma infection every 6 months. Cells scored negative for mycoplasma infection in every instance. Cells were maintained in DMEM (Hyclone/GE Healthcare, cat. no. SH30022.01) supplemented with 10% (v/v) fetal bovine serum (Sigma-Aldrich, cat. no. F1051-500ml) and 1% (v/v) penicillin/streptomycin in a humidified incubator at 37\u00b0C and 5% (v/v) CO2.\n\n### Cell lysis, protein extraction, and RNA immunoprecipitation\n\nRNA immunoprecipitation was carried out as follows: HEK293T cells were seeded at approximately 15 million cells per plate on 15 cm plates and propagated in DMEM (Hyclone/GE Healthcare\u00a0Life\u00a0Sciences, cat. no. SH30022.01) supplemented with 10% (v/v) fetal bovine serum (Sigma-Aldrich, cat. no. F1051-500ml) and 1% (v/v) penicillin/streptomycin in a humidified incubator at 37\u00b0C and 5% (v/v) CO2. Approximately 24 hr after seeding, cells were transfected with various amounts of pCMV5 empty vector or pCMV6-human LARP1 (1019 aa) C-terminally myc- and FLAG-tagged. Typically, 4 to 8 \u03bcg of plasmid DNA were used for transfecting HEK293T cells in a 15 cm dish. Cells were transfected with lipofectamine 2000 reagent (Invitrogen\u00a0(Carlsbad,\u00a0CA), cat. no. 11668\u2013019) as per manufacturer\u2019s instructions. Plasmids were expressed for 24 hr prior to lysis in CHAPS extraction buffer containing 40 mM HEPES (pH 7.5 at room temperature), 0.3 (w/v) CHAPS zwitterionic detergent, 120 mM NaCl, 1 mM EDTA, 10 mM sodium pyrophosphate, 10 mM \u03b2-glycerophosphate, 50 mM sodium fluoride (Ser/Thr phosphatase inhibitor), 1.5 mM sodium orthovanadate (Tyr phosphatase inhibitor), 1 mM DTT, complete EDTA-free protease inhibitors mixture tablets (Roche Life Sciences, cat. no. 04693132001). Briefly, cells were washed once with 10 mL ice-cold phosphate buffer saline followed by 3 mL of CHAPS lysis buffer. Cells were incubated with lysis buffer for 45 min and then scraped and collected in a microfuge tube. Lysates were pre-cleared by centrifugation at 21,000\u00a0x\u00a0g for 1 min at 4\u00b0C. Supernatant was collected and 1 mL lysate was used for immunoprecipitation with 10 \u03bcL of eIF4G antibody (Cell Signaling Technologies\u00a0(Danvers, MA), cat. no. 2469) or 5 \u03bcL of FLAG antibody (Sigma-Aldrich, cat. no. F1804-200\u00a0\u03bcg). Lysates were incubated with antibody for 1 hr at 4\u00b0C mixing end-over-end. Twenty microliters of bed-volume of protein G-conjugated magnetic dynabeads (Life Technologies\u00a0(Carlsbad,\u00a0CA), cat. no. 10004D) were added to the lysate/antibody mixture and incubated for an additional 30 min at 4\u00b0C with mixing end-over-end. Beads were collected with a magnetic rack and washed 3 times with 1 vol (1 mL) of CHAPS extraction buffer described above. RNA was then extracted with RNAzol RT solution (Sigma-Aldrich, cat. no. R4533-500\u00a0mL). 1 mL of RNAzol was added to the beads/antibody/protein/RNA mixture, followed by the addition of 1 mL of CHAPS lysis buffer. Samples were vortexed for 15 s and incubated at room temperature for 15 min, and then centrifuged at maximal speed on a table-top centrifuge for 15 min at 4\u00b0C. The aqueous phase was collected (900 \u03bcL) and ethanol precipitated. The total RNA pellet was air-dried and resuspended in 100 \u03bcL RNAse-free water (Sigma-Aldrich, cat. no. W4502-1L) for inputs and in 10 \u03bcL RNAse-free water for immunoprecipitates.\n\n### Reverse transcription-digital droplet PCR (RT-ddPCR)\n\nReverse-transcription reactions were carried out using the iScript advanced cDNA synthesis kit (Bio-Rad\u00a0(Hercules, CA), cat. no. 172\u20135038) as per manufacturer\u2019s protocol with modifications. Briefly, 4 \u03bcL of 5X advanced reaction mix were added to 1 \u03bcL advanced reverse transcriptase and 10 \u03bcL of RNA template supplemented with RNAse-free water to a final volume of 20 \u03bcL. The reaction mixture was incubated at 46\u00b0C for 1 hr followed by 95\u00b0C for 1 min. The cDNA reaction was then diluted 1000X for eIF4G IPs and 5000X for (LARP1 IPs) in RNAse free water prior to analysis by digital droplet PCR (ddPCR). Each ddPCR reaction was carried out by adding 10 \u03bcL QX200 ddPCR EvaGreen Supermix (Bio-Rad, cat. no. 186\u20134034), 0.2 \u03bcL of each primer (forward and reverse) at a stock concentration of 10 \u03bcM, 8 \u03bcL of diluted cDNA, and 1.6 \u03bcL RNAse-free water to a final volume of 20 \u03bcL reaction. The reaction mixtures were transferred to DG8 Cartridges for the QX100/QX200 Droplet Generator (Bio-Rad, cat. no.186\u20134008) and 70 \u03bcL Droplet Generation Oil for EvaGreen were added (Bio-Rad, cat. no.186\u20134006). Samples were processed on the droplet generator and then transferred to 96-well ddPCR plates followed by sealing with aluminum foil. Thermal cycling was run using the following conditions: 95\u00b0C for 5 min, 95\u00b0C for 30 s, ramp down 2\u00b0C/s until it temperature reaches 62\u00b0C, then ramp up temperature to 95\u00b0C; repeat this cycle 45 times. Samples were then cooled to 4\u00b0C for 5 min, heated up to 95\u00b0C 5 min, and lastly held at 12\u00b0C indefinitely. Samples were analyzed on Bio-Rad QX200 droplet plate reader.\n",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "042444a7-fcc6-4944-b54b-35fe7f49bf3d",
+      "submission_id": "d6a56e38-d367-4eb1-b471-6d464f88cfe0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Cynthia Wolberger, Johns Hopkins University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24146.024](https://doi.org/10.7554/eLife.24146.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"La-related protein 1 (LARP1) binds the mRNA cap, blocking eIF4F assembly on TOP mRNAs\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Alan G Hinnebusch (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an elegant study that reveals a new and unanticipated mechanism by which LARP1 regulates translation of TOP mRNAs by competing with translation initiation factors for binding to the mRNA CAP. Efficient translation of these mRNAs in nutrient-replete cells depends on mTORC1. LARP1 has been implicated recently as a target of mTORC1 and was previously shown by this group to bind the 5'TOP motif on TOP mRNAs via the DM15 region. In the present manuscript, the authors discover that DM15 also has cap-binding activity by noting fortuitous interactions in their crystal structure of the human LARP1 DM15 domain bound to an RNA fragment. In the crystal, a guanine nucleotide from one LARP-RNA complex bound to a site in a neighboring LARP1 protein that the authors cleverly surmised might mimic the guanine cap of the remaining RNA fragment. This hypothesis is supported by a crystal structure of LARP1 bound to an mRNA CAP analogue, in vitro binding studies demonstrating a preference for capped TOP mRNA and competition studies showing that LARP1 DM15 competes for mRNA binding to the initiation factor, eIF4E. LARP1 is thus a novel cap-binding protein that couples recognition of the m7G cap with that of the 5'-TOP sequences, particularly a conserved 5'-terminal C residue. Consistent with these data, ectopic expression of wild type, but not mutant, LARP1 reduces co-IP of two native TOP mRNAs with eIF4G, but not the non-TOP actin mRNA.\n\nThe three reviewers were enthusiastic about this exciting addition to our understanding of the mechanism by which mTORC1, which regulates LARP1 activity, enhances TOP mRNA translation and thereby stimulates growth. By revealing a previously unknown activity of LARP1, the work represents a conceptual advance in understanding how translation of components of the protein synthesis machinery is regulated.\n\nEssential revisions:\n\nThe manuscript is somewhat tersely written and would thus benefit overall from more detailed explanations of the authors' logic and relation of their results to prior work. The Introduction needs more details about exactly what has already been shown for LARP1 in terms of inhibiting the translation of TOP mRNAs and mediating the stimulatory effects of mTORC1 on TOP mRNA translation in extracts or cells. The authors should also do a better job of explaining to the general readership how the interactions in the crystal lattice led them to speculate that they were mimicking binding of a capped RNA and how the contacts they observe co-specify binding to the m7GpppC cap. The authors should also cite and discuss results from Fonseca et al., 2015, JBC that support their new model, including the finding that LARP1 overexpression led to a shift of mRNAs encoding ribosomal proteins towards lighter fractions in polysome density gradients, while knocking down LARP1 caused the re-distribution of TOP mRNAs from light to heavy polysomal fractions.\n",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6614e5fe-94dc-4fdd-9e0c-7d7ebed8fb96",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C1",
+      "claim": "The 5'terminal oligopyrimidine (5'TOP) motif is a cis-regulatory RNA element located immediately downstream of the 7-methylguanosine [m7G] cap of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5'terminal oligopyrimidine (5'TOP) motif is a cis-regulatory RNA element located immediately downstream of the 7-methylguanosine [m7G] cap of TOP mRNAs, which encode ribosomal proteins and translation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the 5'TOP motif structure and location.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "7bb8371f-c13b-4196-8515-715332b01c9c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C2",
+      "claim": "TOP mRNAs encode ribosomal proteins and translation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5'terminal oligopyrimidine (5'TOP) motif is a cis-regulatory RNA element located immediately downstream of the 7-methylguanosine [m7G] cap of TOP mRNAs, which encode ribosomal proteins and translation factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about what TOP mRNAs encode.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "d81c4a7b-4d48-43a8-bec7-3997a35a9f29",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C3",
+      "claim": "The 5'TOP motif coordinates the synchronous and stoichiometric expression of the protein components of the translation machinery in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, this motif coordinates the synchronous and stoichiometric expression of the protein components of the translation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the function of the 5'TOP motif.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c51ab263-c8a6-4587-85b7-3ceeeebf9cdb",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C4",
+      "claim": "La-related protein 1 (LARP1) binds TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "La-related protein 1 (LARP1) binds TOP mRNAs, regulating their stability and translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "bd5340d6-a8d0-449e-8ff4-6ba4b7a5f9dc",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C5",
+      "claim": "LARP1 regulates the stability and translation of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "La-related protein 1 (LARP1) binds TOP mRNAs, regulating their stability and translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "dd177dc9-34ef-4091-9368-fd5748b78f9d",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C6",
+      "claim": "The crystal structure of the human LARP1 DM15 region in complex with a 5'TOP motif was resolved to 2.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We present crystal structures of the human LARP1 DM15 region in complex with a 5'TOP motif, a cap analog (m7GTP), and a capped cytidine (m7GpppC), resolved to 2.6, 1.8 and 1.7 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly reported experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "3b214813-eb3c-4939-8cab-5bdf25c6f6c3",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C7",
+      "claim": "The crystal structure of the human LARP1 DM15 region in complex with m7GTP was resolved to 1.8 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We present crystal structures of the human LARP1 DM15 region in complex with a 5'TOP motif, a cap analog (m7GTP), and a capped cytidine (m7GpppC), resolved to 2.6, 1.8 and 1.7 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly reported experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a24e2568-c331-486d-9233-a216fb32d84a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C8",
+      "claim": "The crystal structure of the human LARP1 DM15 region in complex with m7GpppC was resolved to 1.7 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "We present crystal structures of the human LARP1 DM15 region in complex with a 5'TOP motif, a cap analog (m7GTP), and a capped cytidine (m7GpppC), resolved to 2.6, 1.8 and 1.7 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly reported experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "0143fba5-3bec-4a70-8d04-e3c287d5b8b4",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C9",
+      "claim": "LARP1 directly binds the cap and adjacent 5'TOP motif of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that LARP1 directly binds the cap and adjacent 5'TOP motif of TOP mRNAs, effectively impeding access of eIF4E to the cap and preventing eIF4F assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystallographic and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "339507a2-453b-483b-98d9-ab6479c8be07",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C10",
+      "claim": "LARP1 impedes access of eIF4E to the cap of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that LARP1 directly binds the cap and adjacent 5'TOP motif of TOP mRNAs, effectively impeding access of eIF4E to the cap and preventing eIF4F assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competition assays and immunoprecipitation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "efc9a7f1-4fe9-4373-aadd-e21552132a43",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C11",
+      "claim": "LARP1 prevents eIF4F assembly on TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that LARP1 directly binds the cap and adjacent 5'TOP motif of TOP mRNAs, effectively impeding access of eIF4E to the cap and preventing eIF4F assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoprecipitation data showing reduced eIF4G association with TOP mRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9a3867aa-2988-44ec-93e6-14786bfe814c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C12",
+      "claim": "LARP1 is a specialized TOP mRNA cap-binding protein that controls ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LARP1 is a specialized TOP mRNA cap-binding protein that controls ribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "d6952a39-4bbd-4f5e-9340-e71fbd8a6d76",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C13",
+      "claim": "All transcripts encoding ribosomal proteins carry a 5'TOP motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5'terminal oligopyrimidine (5'TOP) motif comprising an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "5cafd3f6-0533-434a-a7d5-c82db3c25fc6",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C14",
+      "claim": "Most translation factors carry a 5'TOP motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5'terminal oligopyrimidine (5'TOP) motif comprising an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9eeb31d0-7644-49e2-8e11-ffb57a9187fb",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C15",
+      "claim": "Some RNA-binding proteins carry a 5'TOP motif.",
+      "claim_type": "EXPLICIT",
+      "source": "All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5'terminal oligopyrimidine (5'TOP) motif comprising an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a520f6d6-38ce-4aac-9f77-c6b601a42a8a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C16",
+      "claim": "The 5'TOP motif comprises an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5'terminal oligopyrimidine (5'TOP) motif comprising an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the established definition of the 5'TOP motif supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "75d3cb62-a0d8-4002-9d91-14e51b1c893f",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C17",
+      "claim": "The 5'TOP motif is preceded by the 7-methylguanosine triphosphate (m7Gppp) cap.",
+      "claim_type": "EXPLICIT",
+      "source": "All transcripts encoding ribosomal proteins, most translation factors, and some RNA-binding proteins carry a cis-regulatory RNA element termed the 5'terminal oligopyrimidine (5'TOP) motif comprising an invariant 5'-cytidine followed by an uninterrupted tract of 4\u201314 pyrimidine nucleotides and preceded by the 7-methylguanosine triphosphate (m7Gppp) cap (Fonseca et al., 2014; Iadevaia et al., 2008; Meyuhas and Kahan, 2015; Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the established definition of the 5'TOP motif supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "5beab5e6-b61d-4221-bba6-4ec2e417ebac",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C18",
+      "claim": "The 5'TOP motif is essential for translation regulation of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "This motif is essential for translation regulation of TOP mRNAs (Biberman and Meyuhas, 1999; Avni et al., 1994; Meyuhas and Kahan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "ab343619-e3e0-461f-b268-d42d0a33cb00",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C19",
+      "claim": "The mammalian target of rapamycin complex 1 (mTORC1) signaling pathway plays a prominent role in the control of TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian target of rapamycin complex 1 (mTORC1) signaling pathway plays a prominent role in the control of TOP mRNA translation (Fonseca et al., 2014; Hsieh et al., 2012; Thoreen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "ef9d4746-2fcc-423b-88a0-49d079d094b3",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C20",
+      "claim": "mTORC1 boosts the production of components of the translation machinery encoded by TOP mRNAs in response to provision of nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to provision of nutrients (such as amino acids, growth factors, glucose, or oxygen), the growth-associated kinase complex mTORC1 boosts the production of components of the translation machinery encoded by TOP mRNAs (Meyuhas and Kahan, 2015; Chantranupong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "75f7ee4e-6470-4d63-b554-75a12a1506d6",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C21",
+      "claim": "Pharmacological inhibition of mTORC1 results in the pronounced repression of TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of mTORC1 results in the pronounced repression of TOP mRNA translation (Terada et al., 1994; Jefferies et al., 1994; Thoreen et al., 2012; Hsieh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "7dca3ffa-7c34-423b-8c63-24e1516e9c4e",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C22",
+      "claim": "TOP mRNAs are the class of transcripts that are most sensitive to translation suppression by mTOR inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide ribosome profiling studies demonstrate that TOP mRNAs are the class of transcripts that are most sensitive to translation suppression by mTOR inhibitors (Thoreen et al., 2012; Hsieh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to genome-wide ribosome profiling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9bed01e1-8d29-4c78-9b13-cb1221fa09b1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C23",
+      "claim": "eIF4E and its repressor proteins, 4E-BP1 and 4E-BP2, have been linked to the control of TOP mRNA translation downstream of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, the mRNA cap-binding protein, eIF4E, and its repressor proteins, 4E-BP1 and 4E-BP2, have been linked to the control of TOP mRNA translation downstream of mTORC1 (Hsieh et al., 2012; Thoreen, 2017; Thoreen et al., 2012), but the exact contribution of 4E-BPs to the control of TOP mRNA translation remains a point of contention (Miloslavski et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "02af6211-f64b-47a7-901f-9498e255eb5a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C24",
+      "claim": "The exact contribution of 4E-BPs to the control of TOP mRNA translation remains a point of contention.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, the mRNA cap-binding protein, eIF4E, and its repressor proteins, 4E-BP1 and 4E-BP2, have been linked to the control of TOP mRNA translation downstream of mTORC1 (Hsieh et al., 2012; Thoreen, 2017; Thoreen et al., 2012), but the exact contribution of 4E-BPs to the control of TOP mRNA translation remains a point of contention (Miloslavski et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation indicating disagreement in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "29ea866b-f135-432a-80ef-6168dd3863a5",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C25",
+      "claim": "LARP1 was identified as a novel downstream target of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we and others (Fonseca et al., 2015; Tcherkezian et al., 2014) identified La-related protein 1 (LARP1) as a novel downstream target of mTORC1 and proposed that it plays an important role in the translation of TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "bcd2f70e-dd6c-4f8b-b80d-a6f9624594e1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C26",
+      "claim": "LARP1 plays an important role in the translation of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we and others (Fonseca et al., 2015; Tcherkezian et al., 2014) identified La-related protein 1 (LARP1) as a novel downstream target of mTORC1 and proposed that it plays an important role in the translation of TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research by the authors and others.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "91c2d329-41cf-4ca5-b2c6-e17a8732d627",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C27",
+      "claim": "LARP1 associates with the regulatory-associated protein of mTOR (RAPTOR) when mTORC1 is active.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we have shown that LARP1 associates with the regulatory-associated protein of mTOR (RAPTOR) when mTORC1 is active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "aa943b46-6cd3-45df-b0af-d13aaa164f33",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C28",
+      "claim": "Upon mTORC1 inhibition, LARP1 dissociates from mTORC1 and binds to the 5'TOP motif of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon mTORC1 inhibition, a cellular state that is associated with TOP mRNA translation repression, we demonstrated that LARP1 dissociates from mTORC1 and binds to the 5'TOP motif of TOP mRNAs (Fonseca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "ca4b3fa4-b0d0-4a02-bba2-1268e82fb9b1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C29",
+      "claim": "LARP1 associates with the 5'TOP motif via a LARP1 family-specific 'DM15 region' located within its C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that LARP1 associates with the 5'TOP motif via a LARP1 family-specific 'DM15 region' located within its C-terminus (Lahr et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "bc7af8d8-cf7b-415a-a21a-425686956949",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C30",
+      "claim": "There is a direct association between the DM15 region and the 5'TOP motif.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we confirm a direct association between the DM15 region and the 5'TOP motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the crystallographic and biochemical data in the present study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "16079111-7a15-4694-9299-b171ab8129bc",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C31",
+      "claim": "The DM15 region of LARP1 specifically binds the 7-methylguanosine 5'\u22125' triphosphate (m7Gppp) moiety and the invariant first cytidine of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the DM15 region of LARP1 specifically binds the 7-methylguanosine 5'\u22125' triphosphate (m7Gppp) moiety and the invariant first cytidine of TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structures and biochemical assays presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a5ca5d67-a96c-4d78-a709-d1262f9750f8",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C32",
+      "claim": "LARP1 selectively prevents the binding of eIF4E to the m7Gppp cap to block the assembly of the eIF4F complex on TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical analyses reveal that LARP1 selectively prevents the binding of eIF4E to the m7Gppp cap to block the assembly of the eIF4F complex on TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by competition assays and immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "47d4ee71-acee-469f-951c-d299a33de76c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C34",
+      "claim": "m7GTP binds the same pocket as G8* in the DM15-RNA co-crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we determined the co-crystal structure of DM15 bound to the cap analog 7-methylguanosine triphosphate (m7GTP) to 1.8 \u00c5 resolution. m7GTP binds the same pocket as G8* in the DM15-RNA co-crystal (Figure 1C, Figure 1\u2014figure supplements 1B and 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structures shown in Figure 1C and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "8b22355d-95d0-4d11-8df6-a2c6c7e55fac",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C35",
+      "claim": "Lysine-915 stabilizes the \u03b3-phosphate of m7GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Lysine-915 stabilizes the \u03b3-phosphate of m7GTP (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "e2095e03-ec86-4ac7-b0c2-1fe511dc0364",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C36",
+      "claim": "Residues from each of the conserved DM15 repeats (A, B, C) participate in the recognition of the invariant cytidine in the first position of TOP mRNAs (C1) and the guanosine (G8*) 5' to it.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues from each of the conserved DM15 repeats (A, B, C) participate in the recognition of the invariant cytidine in the first position of TOP mRNAs (C1) and the guanosine (G8*) 5' to it (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structures shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "833fbb8c-c1a3-4cc4-b61c-880b12db96c6",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C37",
+      "claim": "All of the amino acids that interact directly with the RNA are nearly 100% conserved from worms to mammals and plants.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the amino acids that interact directly with the RNA are nearly 100% conserved from worms to mammals and plants (Figure 1\u2014figure supplement 3) (Bousquet-Antonelli and Deragon, 2009; Lahr et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1\u2014figure supplement 3 and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "f4954df3-a09e-4e22-a81a-d8d62ffb036c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C38",
+      "claim": "Amino acids R840, R879, and H800 define the path of the RNA by aligning it on the surface of DM15 through ionic and hydrogen bonding interactions with the phosphate backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids R840, R879, and H800 define the path of the RNA by aligning it on the surface of DM15 through ionic and hydrogen bonding interactions with the phosphate backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "bb01a74f-d991-407a-bf63-44bb81a6eb9e",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C39",
+      "claim": "Amino acids Y922, Y883, and F844 stabilize the nucleobases of G8* and C1 through stacking interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids Y922, Y883, and F844 stabilize the nucleobases of G8* and C1 through stacking interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "51580bcd-a648-4d96-b941-a6c1dbc48ff1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C40",
+      "claim": "Sequence-specific recognition of G8* through its Watson-Crick face is accomplished by hydrogen bonds with E886 and S882.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence-specific recognition of G8* through its Watson-Crick face is accomplished by hydrogen bonds with E886 and S882.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "4d99adb2-433e-435b-b8d8-47ba929e94c2",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C41",
+      "claim": "Arginines 847 and 879 specifically recognize C1.",
+      "claim_type": "EXPLICIT",
+      "source": "Arginines 847 and 879 specifically recognize C1 (Bousquet-Antonelli and Deragon, 2009; Lahr et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "8fbb692f-2830-4249-9ad9-bf190db0ff19",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C42",
+      "claim": "The DM15 region of LARP1 stabilizes the nucleobase of m7GTP between two conserved aromatic amino acids, Y883 and Y922.",
+      "claim_type": "EXPLICIT",
+      "source": "The DM15 region of LARP1 stabilizes the nucleobase of m7GTP between two conserved aromatic amino acids, Y883 and Y922.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a043283b-7511-4776-90b4-fce395cb1661",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C43",
+      "claim": "E886 hydrogen bonds with the Watson-Crick face of the guanosine moiety.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, E886 hydrogen bonds with the Watson-Crick face of the guanosine moiety, using acidic side chains for this recognition in a mechanism reminiscent to that of other cap-binding proteins (Figure 1\u2014figure supplement 4, CBP20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the crystal structure and compared to other cap-binding proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2866522e-edcd-4ed1-bbca-72d336912c67",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C44",
+      "claim": "DM15 binds a 42-mer oligonucleotide of the 5'UTR of RPS6 containing an additional 5'G with an affinity of 7.5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "DM15 binds a 42-mer oligonucleotide of the 5'UTR of RPS6 containing an additional 5'G, effectively making it a non-5'TOP sequence, with an affinity of 7.5 \u03bcM; capping this substrate enhances affinity 3.8-fold (2.0 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "ad0a9de2-2f3e-4060-a159-02bd04e9d4ea",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C45",
+      "claim": "Capping the non-TOP RPS6 substrate enhances DM15 binding affinity 3.8-fold (2.0 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "DM15 binds a 42-mer oligonucleotide of the 5'UTR of RPS6 containing an additional 5'G, effectively making it a non-5'TOP sequence, with an affinity of 7.5 \u03bcM; capping this substrate enhances affinity 3.8-fold (2.0 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "31e326f7-cb64-42f9-9dea-54a321530d12",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C46",
+      "claim": "Capping the TOP 42-mer RPS6 RNA substrate increases the affinity 360-fold (21 nM) over the non-TOP substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Capping the TOP 42-mer RPS6 RNA substrate increases the affinity 360-fold (Figure 2; 21 nM) over the non-TOP substrate and 95-fold over the capped non-TOP substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c1bf6192-586d-4a2a-9d55-a7e5d8da63c4",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C47",
+      "claim": "Capping the TOP 42-mer RPS6 RNA substrate increases the affinity 95-fold over the capped non-TOP substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Capping the TOP 42-mer RPS6 RNA substrate increases the affinity 360-fold (Figure 2; 21 nM) over the non-TOP substrate and 95-fold over the capped non-TOP substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2f2d70d9-39fe-42f4-b472-f18e16212bef",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C48",
+      "claim": "Mutating E886 in DM15 decreases the affinity for capped TOP RNA 380-fold (8.0 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the residues in DM15 that stabilize the cap, E886, Y922, or Y883, decreases the affinity for capped TOP RNA 380-fold (8.0 \u03bcM), 124-fold (2.6 \u03bcM), and greater than ~950 fold (N.D.,>20 \u03bcM), respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "624effba-3d8b-48e5-bc67-19629d31c82a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C49",
+      "claim": "Mutating Y922 in DM15 decreases the affinity for capped TOP RNA 124-fold (2.6 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the residues in DM15 that stabilize the cap, E886, Y922, or Y883, decreases the affinity for capped TOP RNA 380-fold (8.0 \u03bcM), 124-fold (2.6 \u03bcM), and greater than ~950 fold (N.D.,>20 \u03bcM), respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "016ad6b3-e13a-4797-84f1-4b982e98b5a3",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C50",
+      "claim": "Mutating Y883 in DM15 decreases the affinity for capped TOP RNA greater than ~950 fold (>20 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the residues in DM15 that stabilize the cap, E886, Y922, or Y883, decreases the affinity for capped TOP RNA 380-fold (8.0 \u03bcM), 124-fold (2.6 \u03bcM), and greater than ~950 fold (N.D.,>20 \u03bcM), respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by electrophoretic mobility shift assays shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c68c087e-0fd7-42a6-94a3-f3b0d4675afc",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C51",
+      "claim": "Capped mRNAs better displace capped DM15-bound sequences than uncapped mRNAs do.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, competition assays in which capped mRNAs better displace capped DM15-bound sequences than uncapped mRNAs do, suggest the interaction of DM15 with the cap moiety is specific (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by competition assays shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "5c8b3d1c-38b3-4ee9-a404-e8bc5f2de954",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C52",
+      "claim": "The interaction of DM15 with m7GTP and m7GpppC is increasingly stabilizing to the DM15 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, thermal shift stability assays demonstrate the interaction of DM15 with m7GTP and m7GpppC is increasingly stabilizing to the DM15 fold (Figure 2\u2014figure supplement 4); notably, the m7GpppG dinucleotide does not impart additional stability to DM15 over m7GTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by thermal shift assays shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a5453a92-d2a2-4142-adee-9c1c2672b8eb",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C53",
+      "claim": "The m7GpppG dinucleotide does not impart additional stability to DM15 over m7GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, thermal shift stability assays demonstrate the interaction of DM15 with m7GTP and m7GpppC is increasingly stabilizing to the DM15 fold (Figure 2\u2014figure supplement 4); notably, the m7GpppG dinucleotide does not impart additional stability to DM15 over m7GTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by thermal shift assays shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2380aa98-715e-4ec7-ad0f-742d19cdb484",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C54",
+      "claim": "The DM15 region of LARP1 specifically recognizes the m7GpppC motif characteristic of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the conservation of the residues interacting with m7GTP, the base-specific hydrogen bonding of the Watson-Crick faces of nucleobases of G8* and C1 in the DM15-RNA co-crystal structure and the recognition of the m7GpppC dinucleotide in the DM15-m7GpppC co-crystal structure, these data suggest the DM15 region of LARP1 specifically recognizes the m7GpppC motif characteristic of TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2ebc097e-d961-45d6-babd-0442340e6903",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C55",
+      "claim": "The first cytidine is indispensable for repression of TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation is particularly remarkable because the first cytdine is indispensable for repression of TOP mRNA translation (Levy et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c83ff899-b8cf-4b0f-9b5a-78b8a149722a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C56",
+      "claim": "The first cytidine is essential for LARP1 association with RPS6 and RPL32 mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the first cytidine is also essential for LARP1 association with RPS6 and RPL32 mRNAs (Fonseca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "f51ef771-5c1f-4bbd-bb72-6c6d3c607bba",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C57",
+      "claim": "The m7GpppC motif might lock the register of DM15 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order complexes and nonspecific binding of DM15 to the RNA oligonucleotide are greatly reduced in the capped-TOP substrate binding reaction (Figure 2), indicating that the m7GpppC motif might lock the register of DM15 binding.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of reduced nonspecific binding in the presence of the cap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "106ffb6e-6421-4ae5-907c-ec8eeb4cda5a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C58",
+      "claim": "LARP1 differentiates TOP mRNAs from all other cellular mRNAs, most of which have a purine in the +1 position.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these data provide a molecular mechanism by which LARP1 differentiates TOP mRNAs from all other cellular mRNAs, most of which have a purine in the +1 position (Schibler et al., 1977; Schibler and Perry, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the specificity data and supported by citations about the +1 position in other mRNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "e7fa29e9-9fc5-419f-9a3e-7ed081606f4b",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C59",
+      "claim": "Most cellular mRNAs have a purine in the +1 position.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, these data provide a molecular mechanism by which LARP1 differentiates TOP mRNAs from all other cellular mRNAs, most of which have a purine in the +1 position (Schibler et al., 1977; Schibler and Perry, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a9581cdb-c5c4-43ae-9359-7b0a2e7eea07",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C60",
+      "claim": "Displacement of DM15 from capped TOP RNA requires high-micromolar concentrations of eIF4E.",
+      "claim_type": "EXPLICIT",
+      "source": "While displacement of DM15 from capped TOP RNA requires high-micromolar concentrations of eIF4E, low-nanomolar concentrations of DM15 are sufficient to displace eIF4E from this substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by competition assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "7fc2e02d-6373-4cbb-b3d4-6a188708f5c8",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C61",
+      "claim": "Low-nanomolar concentrations of DM15 are sufficient to displace eIF4E from capped TOP RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "While displacement of DM15 from capped TOP RNA requires high-micromolar concentrations of eIF4E, low-nanomolar concentrations of DM15 are sufficient to displace eIF4E from this substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by competition assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a0abf637-2a2d-49fc-b153-9dec2d5fd69d",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C62",
+      "claim": "eIF4E outcompetes DM15 for the non-TOP substrate as the pre-bound or competitor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the opposite is true for capped non-TOP mRNA: eIF4E outcompetes DM15 for the non-TOP substrate as the pre-bound or competitor protein (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by competition assays shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "6e7256e0-fa14-43da-a8ad-806f352d4a68",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C63",
+      "claim": "eIF4E has a preferred binding for m7GpppG.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the preferred binding of eIF4E for m7GpppG (Kiraga-Motoszko et al., 2011; Thoreen et al., 2012; et al., Tamarkin-Ben-Harush et al., 2017) and with studies suggesting that quiescent cells and translation systems contain a factor that represses TOP mRNA translation even in the presence of excess eIF4E (Shama et al., 1995; Biberman and Meyuhas, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "bb2bd4ad-c145-4e1c-89bd-be5c39c5b7d1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C64",
+      "claim": "Quiescent cells and translation systems contain a factor that represses TOP mRNA translation even in the presence of excess eIF4E.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the preferred binding of eIF4E for m7GpppG (Kiraga-Motoszko et al., 2011; Thoreen et al., 2012; et al., Tamarkin-Ben-Harush et al., 2017) and with studies suggesting that quiescent cells and translation systems contain a factor that represses TOP mRNA translation even in the presence of excess eIF4E (Shama et al., 1995; Biberman and Meyuhas, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "3fb4481b-79a7-416d-80f6-340432d9f12b",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C65",
+      "claim": "The affinity of the DM15 region of LARP1 for TOP mRNAs is considerably higher than that of full-length eIF4E protein for this class of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we show that the affinity of the DM15 region of LARP1 for TOP mRNAs is considerably higher than that of full-length eIF4E protein for this class of mRNAs, likely explaining why excess eIF4E alone is insufficient to upregulate the translation of TOP mRNAs (Shama et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured by competition assays and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "0e06f5d3-b92c-4de9-b2c2-83696fb0a131",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C66",
+      "claim": "Excess eIF4E alone is insufficient to upregulate the translation of TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we show that the affinity of the DM15 region of LARP1 for TOP mRNAs is considerably higher than that of full-length eIF4E protein for this class of mRNAs, likely explaining why excess eIF4E alone is insufficient to upregulate the translation of TOP mRNAs (Shama et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "325b47de-2b22-4c43-87e8-e60ffa17f986",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C67",
+      "claim": "The eIF4F complex has been linked to the control of TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF4F complex (formed by the cap-binding protein eIF4E, the scaffolding protein eIF4G and the ATP-dependent RNA helicase eIF4A) has been linked to the control of TOP mRNA translation (Thoreen et al., 2012; Hsieh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "1548102a-5c4c-41ad-89ad-addd8e00eba2",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C68",
+      "claim": "eIF4G co-precipitates TOP mRNAs in an mTORC1\u2013dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, eIF4G co-precipitates TOP mRNAs in an mTORC1\u2013dependent manner (Fonseca et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "0a806fdc-0f31-4308-a5d3-9091d69dc782",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C69",
+      "claim": "The ability of TOP mRNAs to associate with eIF4G is markedly inhibited upon overexpression of LARP1 in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the ability of TOP mRNAs to associate with eIF4G is markedly inhibited upon overexpression of LARP1 in mammalian cells (Fonseca et al., 2015), consistent with the idea that LARP1 competes with eIF4E and eIF4G for binding to TOP mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "cc9dcacb-b560-4f3a-9081-5653970d2625",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C70",
+      "claim": "Expression of wild type LARP1 hinders the binding of endogenous eIF4G to both RPS6 and RPL32 mRNAs, but not to \u03b2-actin mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of wild type LARP1 hinders the binding of endogenous eIF4G to both RPS6 and RPL32 mRNAs, but not to \u03b2-actin mRNA, as determined by RNA-immunoprecipitation/RT-ddPCR (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by RNA-immunoprecipitation/RT-ddPCR shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "24dfed12-109d-472a-9bd3-633ce52e7299",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C71",
+      "claim": "LARP1 binds to the cap and 5'TOP sequence of TOP mRNAs, thus selectively inhibiting eIF4F assembly on this class of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the model that LARP1 binds to the cap and 5'TOP sequence of TOP mRNAs, thus selectively inhibiting eIF4F assembly on this class of transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the immunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "fdaaa6c5-7d60-4950-8127-2d5ef2e9c0c0",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C72",
+      "claim": "Expression of the LARP1 R840E/Y883A double mutant does not inhibit eIF4G association with TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more importantly, expression of the LARP1 R840E/Y883A double mutant does not inhibit eIF4G association with TOP mRNAs (Figure 3), indicating that cap- and TOP-binding is essential for LARP1-mediated displacement of the eIF4F complex from TOP mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured by RNA-immunoprecipitation/RT-ddPCR shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9b6b4e40-1854-4eac-9739-6b39074ac67c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C73",
+      "claim": "Cap- and TOP-binding is essential for LARP1-mediated displacement of the eIF4F complex from TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more importantly, expression of the LARP1 R840E/Y883A double mutant does not inhibit eIF4G association with TOP mRNAs (Figure 3), indicating that cap- and TOP-binding is essential for LARP1-mediated displacement of the eIF4F complex from TOP mRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutant data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "b2bb918a-d6d9-42ea-ac61-3e3eb2a597b3",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C74",
+      "claim": "mTORC1 inhibition decreases the association of eIF4G with TOP transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with data demonstrating mTORC1 inhibition decreases the association of eIF4G with TOP transcripts (Fonseca et al., 2015), these data suggest that mTORC1 blocks the inhibitory function of LARP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2fdf3dea-dcbc-4741-97e7-73dbfe5be3bb",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C75",
+      "claim": "mTORC1 blocks the inhibitory function of LARP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with data demonstrating mTORC1 inhibition decreases the association of eIF4G with TOP transcripts (Fonseca et al., 2015), these data suggest that mTORC1 blocks the inhibitory function of LARP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combination of current and prior data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "dd0ddf4e-26a4-42cf-8379-4fc3ce9ba929",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C76",
+      "claim": "LARP1 plays a fundamental role in the specialized recognition of the m7GpppC motif.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented in this study provide important structural insights into the molecular mechanism of LARP1, a specific 5'TOP motif-binding protein. LARP1 plays a fundamental role in the specialized recognition of the m7GpppC motif, a unique feature of TOP mRNAs that encode all the core protein components of the ribosome and the translation apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9f635c65-fa88-47d7-9d3e-b58565d73f60",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C77",
+      "claim": "TOP mRNAs encode all the core protein components of the ribosome and the translation apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented in this study provide important structural insights into the molecular mechanism of LARP1, a specific 5'TOP motif-binding protein. LARP1 plays a fundamental role in the specialized recognition of the m7GpppC motif, a unique feature of TOP mRNAs that encode all the core protein components of the ribosome and the translation apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TOP mRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a24db87e-e93d-479d-87b3-618345b5529a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C78",
+      "claim": "LARP1 regulates translation and stability of TOP mRNAs through specialized 5'TOP motif and cap recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "LARP1 regulates translation and stability of this class of mRNAs through specialized 5'TOP motif (Fonseca et al., 2015; Lahr et al., 2015; Aoki et al., 2013) and cap recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and the current study's data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "43aca42f-508c-4d6a-bbc3-72ba2a90261c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C79",
+      "claim": "LARP1 displaces eIF4E from capped TOP mRNAs, thereby preventing the assembly of the eIF4F complex required for translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that LARP1 displaces eIF4E from capped TOP mRNAs, thereby preventing the assembly of the eIF4F complex required for translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the competition assays and immunoprecipitation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "25fad6ed-c9ee-4512-932c-357c31b5b128",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C80",
+      "claim": "There is a previously unrecognized mTORC1-regulated dynamic interplay between LARP1 and the eIF4F complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a previously unrecognized mTORC1-regulated dynamic interplay between LARP1 and the eIF4F complex, whereby eIF4F stimulates TOP mRNA translation while LARP1 represses it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "4b286013-a786-47b9-9249-8a14a3300ffc",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C81",
+      "claim": "eIF4F stimulates TOP mRNA translation while LARP1 represses it.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal a previously unrecognized mTORC1-regulated dynamic interplay between LARP1 and the eIF4F complex, whereby eIF4F stimulates TOP mRNA translation while LARP1 represses it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "2fe47713-542a-449f-97aa-1aa4b5bf313c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C82",
+      "claim": "LARP1 exhibits higher specificity and affinity for TOP mRNAs than eIF4E does.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, LARP1 exhibits higher specificity and affinity for TOP mRNAs than eIF4E does, suggesting it may function as the selective factor for TOP mRNA translation regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the competition assays and binding affinity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9073c45f-b499-499e-b30e-3e4acf41c7f1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C83",
+      "claim": "LARP1 may function as the selective factor for TOP mRNA translation regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, LARP1 exhibits higher specificity and affinity for TOP mRNAs than eIF4E does, suggesting it may function as the selective factor for TOP mRNA translation regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the specificity and affinity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c3509511-d163-44a7-93f1-e4ffa0cbb868",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C84",
+      "claim": "Overexpression of LARP1 in mammalian cells leads to reduced TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings corroborate our earlier report (Fonseca et al., 2015) that LARP1 functions as a repressor of TOP mRNA translation: overexpression of LARP1 in mammalian cells leads to reduced TOP mRNA translation, as inferred by the accumulation of TOP mRNAs in subpolysomal fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a8d35a99-cc71-46bd-b8b8-b48deb684f3a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C85",
+      "claim": "Depletion of LARP1 protein from mammalian cells leads to an accumulation TOP messages in heavy polysomal fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, depletion of LARP1 protein from mammalian cells leads to an accumulation TOP messages in heavy polysomal fractions (Fonseca et al., 2015), indicating that LARP1 represses TOP mRNA translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "326fdf64-bf78-49a4-b465-b0adcd071964",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C86",
+      "claim": "LARP1 represses TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, depletion of LARP1 protein from mammalian cells leads to an accumulation TOP messages in heavy polysomal fractions (Fonseca et al., 2015), indicating that LARP1 represses TOP mRNA translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors and the current study's data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "072e3fac-3280-4000-a324-aa585e488a84",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C87",
+      "claim": "LARP1 is essential for the ability of allosteric (rapamycin) and active-site (Torin1) mTOR inhibitors to effectively suppress TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, LARP1 is essential for the ability of allosteric (rapamycin) and active-site (Torin1) mTOR inhibitors to effectively suppress TOP mRNA translation (Fonseca et al., 2015), consistent with LARP1 functioning downstream of mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "b40f13af-1a72-4845-9a12-2a2d456317e1",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C88",
+      "claim": "LARP1 functions downstream of mTORC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, LARP1 is essential for the ability of allosteric (rapamycin) and active-site (Torin1) mTOR inhibitors to effectively suppress TOP mRNA translation (Fonseca et al., 2015), consistent with LARP1 functioning downstream of mTORC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing LARP1's role in mTOR inhibitor effects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "47d9fd1a-0b37-471f-9a63-8ac2b1aa1f4a",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C89",
+      "claim": "In cancer cells, LARP1 has been shown to have a positive effect on overall protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that whilst LARP1 is shown here to repress TOP translation, in cancer cells LARP1 has been shown to have a positive effect on overall protein synthesis (Burrows et al., 2010) and bind many mRNA targets, including those encoding oncogenes (Hopkins et al., 2016; Mura et al., 2015), in addition to TOP mRNAs (Aoki et al., 2013; Fonseca et al., 2015; Lahr et al., 2015; Tcherkezian et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "7cd7b12b-14e9-400a-8e2c-25fa34ef0ba0",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C90",
+      "claim": "LARP1 binds many mRNA targets, including those encoding oncogenes, in addition to TOP mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that whilst LARP1 is shown here to repress TOP translation, in cancer cells LARP1 has been shown to have a positive effect on overall protein synthesis (Burrows et al., 2010) and bind many mRNA targets, including those encoding oncogenes (Hopkins et al., 2016; Mura et al., 2015), in addition to TOP mRNAs (Aoki et al., 2013; Fonseca et al., 2015; Lahr et al., 2015; Tcherkezian et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a355d7cc-5748-4e6c-a3b0-df5404499393",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C91",
+      "claim": "LARP1, while repressing TOP translation, can activate the translation of other targets.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that LARP1, while repressing TOP translation, can activate the translation of other targets, although the mechanism for the latter has yet to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that LARP1 has different effects on different mRNA targets.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "a735f454-ee33-4f2f-befd-ef5c1aab0b02",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C92",
+      "claim": "The mechanism by which LARP1 activates the translation of non-TOP targets has yet to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that LARP1, while repressing TOP translation, can activate the translation of other targets, although the mechanism for the latter has yet to be elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "dcf8bb00-aeb7-4ecb-9242-372c6f6cf70f",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C93",
+      "claim": "LARP1 competes with eIF4E for binding the cap of TOP mRNAs, effectively preventing eIF4F complex assembly on TOP mRNAs and ultimately precluding the translation of this class of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our findings elucidate a novel mechanism of translation control whereby LARP1 competes with eIF4E for binding the cap of TOP mRNAs, effectively preventing eIF4F complex assembly on TOP mRNAs and ultimately precluding the translation of this class of mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "4e1e0e64-7eba-4c40-bb62-81006e73d0d9",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C94",
+      "claim": "LARP1 is a bona fide cap-binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies now establish LARP1 as a bona fide cap-binding protein and the long-sought regulator of TOP mRNA translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and biochemical data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "cac7a848-38db-483c-9972-539a2e854e51",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "claim_id": "C95",
+      "claim": "LARP1 is the long-sought regulator of TOP mRNA translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies now establish LARP1 as a bona fide cap-binding protein and the long-sought regulator of TOP mRNA translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented and the context of prior research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Crystal structures of the LARP1 DM15 region in complex with a 5'TOP motif RNA fragment, m7GTP cap analog, and m7GpppC dinucleotide were solved at 2.6 \u00c5, 1.8 \u00c5, and 1.7 \u00c5 resolution, respectively. These structures reveal that DM15 specifically recognizes both the m7G cap and the first cytidine (C1) of TOP mRNAs through conserved residues from all three DM15 repeats (A, B, C), with m7GTP binding in the same pocket as G8* from the RNA structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystallographic data (C6-C8, C34) are well-documented with appropriate resolution and electron density maps (Figure 1 supplements). The structural observations regarding specific residue interactions (C35-C43) are directly supported by the crystal structures and conservation analysis (C37). The claim that m7GTP binds the same pocket as G8* (C34) is clearly demonstrated by structural superposition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Electrophoretic mobility shift assays demonstrate that DM15 binds capped TOP RNA (m7Gppp-RPS6) with 360-fold higher affinity (21 nM) compared to uncapped non-TOP RNA (7.5 \u03bcM), and 95-fold higher affinity than capped non-TOP RNA (2.0 \u03bcM). Mutations in cap-binding residues (E886, Y922, Y883) reduce binding affinity by 380-fold, 124-fold, and >950-fold, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The binding affinity measurements (C44-C47) are supported by quantitative EMSA data with error bars and replicate information (Figure 2). The mutational analysis (C48-C50) provides strong evidence for the functional importance of specific residues identified in the crystal structure. The fold-change calculations are appropriate and the data quality appears sufficient.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "8d3e4647-1069-4972-9e30-abe2a1be213f",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Competition assays and thermal shift assays demonstrate that DM15 specifically recognizes the m7GpppC motif characteristic of TOP mRNAs. Capped mRNAs displace DM15-bound sequences more effectively than uncapped mRNAs, and m7GpppC (but not m7GpppG) provides additional thermal stability to DM15 beyond m7GTP alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The competition assays (C51) and thermal shift data (C52-C53) provide orthogonal biochemical evidence supporting the structural findings. The conclusion about m7GpppC specificity (C54) is well-supported by the combination of structural, binding, and biophysical data. The inference about binding register (C57) is reasonable given the reduced nonspecific binding observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "f1b15762-1006-4089-bf91-cf055150271c",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Competition assays between DM15 and eIF4E reveal that DM15 has considerably higher affinity for capped TOP mRNAs than eIF4E, with low nanomolar concentrations of DM15 sufficient to displace eIF4E from TOP substrates, while high micromolar concentrations of eIF4E are required to displace DM15. Conversely, eIF4E outcompetes DM15 for capped non-TOP substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The competition data (C60-C62) are directly measured and shown in Figure 2E and supplements. The differential specificity for TOP vs. non-TOP substrates provides strong evidence for the selectivity mechanism. The conclusion about higher affinity (C65, C82) is well-supported by the quantitative competition data, though direct Kd measurements for eIF4E would strengthen the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "618e69bd-8ca0-4d29-bdec-d0f6b0952370",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNA immunoprecipitation experiments demonstrate that overexpression of wild-type LARP1 in mammalian cells reduces eIF4G association with TOP mRNAs (RPS6 and RPL32) but not with non-TOP mRNA (\u03b2-actin). A LARP1 double mutant (R840E/Y883A) that disrupts cap and TOP binding fails to inhibit eIF4G association with TOP mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The RNA-IP/RT-ddPCR data (C70, C72) directly demonstrate the functional consequence of LARP1 binding in cells (Figure 3). The mutant analysis (C72-C73) provides strong evidence that both cap and TOP binding are essential for the inhibitory function. The selectivity for TOP vs. non-TOP mRNAs supports the specificity mechanism. Three biological replicates with error bars strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "485303c1-d953-48af-8b19-62a7a8e662ce",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LARP1 directly binds both the m7Gppp cap and adjacent 5'TOP motif of TOP mRNAs, thereby blocking eIF4E access to the cap and preventing eIF4F complex assembly. This represents a novel mechanism of translation control where LARP1 competes with eIF4E for cap binding on TOP mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This central mechanistic conclusion is well-supported by the integration of structural data (showing simultaneous cap and TOP binding), biochemical competition assays (demonstrating displacement of eIF4E), and cellular data (showing reduced eIF4G association). The claims are internally consistent and supported by multiple independent lines of evidence (C9-C11, C31-C32, C79, C93).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "0ec9da90-b674-4aec-992e-a43a493df781",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LARP1 is established as a specialized TOP mRNA cap-binding protein that controls ribosome biogenesis through recognition of the m7GpppC motif and regulation of TOP mRNA translation and stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This overarching conclusion (C12, C94-C95) is well-supported by the structural and functional data presented. The claim that LARP1 is a \"bona fide cap-binding protein\" (C94) is justified by the crystal structures and binding data. The designation as \"the long-sought regulator\" (C95) is supported by the data but represents a strong interpretive claim that depends on prior work cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "6f61da65-7d71-40d9-b00f-7382276ed53f",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LARP1 differentiates TOP mRNAs (which have cytidine at +1) from other cellular mRNAs (which predominantly have purines at +1) through specific recognition of the m7GpppC motif, while eIF4E preferentially binds m7GpppG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic basis for discrimination (C58) is supported by the structural and biochemical specificity data. The claim about purine prevalence in non-TOP mRNAs (C59) and eIF4E's preference for m7GpppG (C63) are supported by appropriate citations to prior literature. This provides a satisfying molecular explanation for selective regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "c9276dfa-b87b-4438-babc-82bf76409fad",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The data reveal a previously unrecognized mTORC1-regulated dynamic interplay between LARP1 and the eIF4F complex, where eIF4F stimulates TOP mRNA translation while LARP1 represses it, with mTORC1 blocking LARP1's inhibitory function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the competition between LARP1 and eIF4F is well-demonstrated (C80-C81), the claim about mTORC1 blocking LARP1 function (C75) relies heavily on prior work (Fonseca et al., 2015) rather than new data in this manuscript. The current study does not directly test mTORC1 regulation, making this integrative conclusion somewhat speculative despite being consistent with cited prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "64bb03d6-272d-4a92-9bdd-8c220cd88427",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The first cytidine of TOP mRNAs is indispensable for both TOP mRNA translation repression and LARP1 association with TOP mRNAs. Prior studies suggested that quiescent cells contain a factor that represses TOP translation even with excess eIF4E, and that excess eIF4E alone is insufficient to upregulate TOP mRNA translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C55-C56, C64, C66) are appropriately attributed to prior literature with specific citations. The current study's demonstration of LARP1's high affinity for m7GpppC-containing TOP mRNAs provides a molecular explanation for these earlier observations. The integration of prior knowledge with new findings is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LARP1 functions as a repressor of TOP mRNA translation downstream of mTORC1, with overexpression reducing TOP mRNA translation and depletion increasing it. LARP1 is essential for mTOR inhibitors to suppress TOP mRNA translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These functional claims (C83-C88) are primarily supported by citations to prior work (Fonseca et al., 2015) rather than new data in this manuscript. However, they provide important context for interpreting the structural and biochemical findings. The claims are appropriately attributed to prior studies and are consistent with the new mechanistic data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "33409690-f997-43fd-b7ad-f66229d97993",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In cancer cells, LARP1 has been shown to have positive effects on overall protein synthesis and binds many mRNA targets including oncogene-encoding mRNAs in addition to TOP mRNAs. LARP1 may activate translation of some targets while repressing TOP translation, though the activation mechanism remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C89-C92) appropriately acknowledge complexity in LARP1 function beyond TOP mRNA repression, citing relevant prior literature. The acknowledgment that the activation mechanism is unknown (C92) is appropriate. This contextualizes the current findings within broader LARP1 biology without overstating the implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 5'TOP motif is a cis-regulatory element comprising an invariant 5'-cytidine followed by 4-14 pyrimidines, preceded by the m7Gppp cap, found in mRNAs encoding ribosomal proteins, most translation factors, and some RNA-binding proteins. This motif coordinates synchronous expression of translation machinery components and is essential for TOP mRNA translation regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background claims (C1-C3, C13-C18, C77) appropriately supported by multiple citations to prior literature. They provide necessary context for the study but do not represent new findings. The claims accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    },
+    {
+      "id": "cef401b9-7208-4da6-a6a2-ec26492be39e",
+      "content_id": "05752e6e-06ed-4b64-b375-611dfb770ab7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work established that LARP1 binds and regulates TOP mRNAs, associates with mTORC1 via RAPTOR when active, dissociates upon mTORC1 inhibition to bind TOP motifs via the DM15 region, and that TOP mRNAs are highly sensitive to mTOR inhibition. The eIF4F complex and 4E-BPs have been linked to TOP mRNA control, though 4E-BP contribution remains contentious.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C4-C5, C19-C29, C67-C69, C74) appropriately summarize prior literature with specific citations, including the authors' own previous work. They establish the context and rationale for the current structural and mechanistic studies. The acknowledgment of controversy regarding 4E-BPs (C24) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:41:25.516924Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd177dc9-34ef-4091-9368-fd5748b78f9d",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "3b214813-eb3c-4939-8cab-5bdf25c6f6c3",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "a24e2568-c331-486d-9233-a216fb32d84a",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "bc7af8d8-cf7b-415a-a21a-425686956949",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "47d4ee71-acee-469f-951c-d299a33de76c",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "8b22355d-95d0-4d11-8df6-a2c6c7e55fac",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "e2095e03-ec86-4ac7-b0c2-1fe511dc0364",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "833fbb8c-c1a3-4cc4-b61c-880b12db96c6",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "f4954df3-a09e-4e22-a81a-d8d62ffb036c",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "bb01a74f-d991-407a-bf63-44bb81a6eb9e",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "51580bcd-a648-4d96-b941-a6c1dbc48ff1",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "4d99adb2-433e-435b-b8d8-47ba929e94c2",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "8fbb692f-2830-4249-9ad9-bf190db0ff19",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "a043283b-7511-4776-90b4-fce395cb1661",
+      "result_id": "8c2b485a-1847-4ef7-8d6a-39092e094fe7"
+    },
+    {
+      "claim_id": "2866522e-edcd-4ed1-bbca-72d336912c67",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "ad0a9de2-2f3e-4060-a159-02bd04e9d4ea",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "31e326f7-cb64-42f9-9dea-54a321530d12",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "c1bf6192-586d-4a2a-9d55-a7e5d8da63c4",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "2f2d70d9-39fe-42f4-b472-f18e16212bef",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "624effba-3d8b-48e5-bc67-19629d31c82a",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "016ad6b3-e13a-4797-84f1-4b982e98b5a3",
+      "result_id": "97dfb7c7-46f0-4886-bf72-7db6d3445f58"
+    },
+    {
+      "claim_id": "c68c087e-0fd7-42a6-94a3-f3b0d4675afc",
+      "result_id": "8d3e4647-1069-4972-9e30-abe2a1be213f"
+    },
+    {
+      "claim_id": "5c8b3d1c-38b3-4ee9-a404-e8bc5f2de954",
+      "result_id": "8d3e4647-1069-4972-9e30-abe2a1be213f"
+    },
+    {
+      "claim_id": "a5453a92-d2a2-4142-adee-9c1c2672b8eb",
+      "result_id": "8d3e4647-1069-4972-9e30-abe2a1be213f"
+    },
+    {
+      "claim_id": "2380aa98-715e-4ec7-ad0f-742d19cdb484",
+      "result_id": "8d3e4647-1069-4972-9e30-abe2a1be213f"
+    },
+    {
+      "claim_id": "f51ef771-5c1f-4bbd-bb72-6c6d3c607bba",
+      "result_id": "8d3e4647-1069-4972-9e30-abe2a1be213f"
+    },
+    {
+      "claim_id": "a9581cdb-c5c4-43ae-9359-7b0a2e7eea07",
+      "result_id": "f1b15762-1006-4089-bf91-cf055150271c"
+    },
+    {
+      "claim_id": "7fc2e02d-6373-4cbb-b3d4-6a188708f5c8",
+      "result_id": "f1b15762-1006-4089-bf91-cf055150271c"
+    },
+    {
+      "claim_id": "a0abf637-2a2d-49fc-b153-9dec2d5fd69d",
+      "result_id": "f1b15762-1006-4089-bf91-cf055150271c"
+    },
+    {
+      "claim_id": "3fb4481b-79a7-416d-80f6-340432d9f12b",
+      "result_id": "f1b15762-1006-4089-bf91-cf055150271c"
+    },
+    {
+      "claim_id": "2fe47713-542a-449f-97aa-1aa4b5bf313c",
+      "result_id": "f1b15762-1006-4089-bf91-cf055150271c"
+    },
+    {
+      "claim_id": "cc9dcacb-b560-4f3a-9081-5653970d2625",
+      "result_id": "618e69bd-8ca0-4d29-bdec-d0f6b0952370"
+    },
+    {
+      "claim_id": "24dfed12-109d-472a-9bd3-633ce52e7299",
+      "result_id": "618e69bd-8ca0-4d29-bdec-d0f6b0952370"
+    },
+    {
+      "claim_id": "fdaaa6c5-7d60-4950-8127-2d5ef2e9c0c0",
+      "result_id": "618e69bd-8ca0-4d29-bdec-d0f6b0952370"
+    },
+    {
+      "claim_id": "9b6b4e40-1854-4eac-9739-6b39074ac67c",
+      "result_id": "618e69bd-8ca0-4d29-bdec-d0f6b0952370"
+    },
+    {
+      "claim_id": "0143fba5-3bec-4a70-8d04-e3c287d5b8b4",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "339507a2-453b-483b-98d9-ab6479c8be07",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "efc9a7f1-4fe9-4373-aadd-e21552132a43",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "16079111-7a15-4694-9299-b171ab8129bc",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "a5ca5d67-a96c-4d78-a709-d1262f9750f8",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "43aca42f-508c-4d6a-bbc3-72ba2a90261c",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "dcf8bb00-aeb7-4ecb-9242-372c6f6cf70f",
+      "result_id": "485303c1-d953-48af-8b19-62a7a8e662ce"
+    },
+    {
+      "claim_id": "9a3867aa-2988-44ec-93e6-14786bfe814c",
+      "result_id": "0ec9da90-b674-4aec-992e-a43a493df781"
+    },
+    {
+      "claim_id": "dd0ddf4e-26a4-42cf-8379-4fc3ce9ba929",
+      "result_id": "0ec9da90-b674-4aec-992e-a43a493df781"
+    },
+    {
+      "claim_id": "a24db87e-e93d-479d-87b3-618345b5529a",
+      "result_id": "0ec9da90-b674-4aec-992e-a43a493df781"
+    },
+    {
+      "claim_id": "4e1e0e64-7eba-4c40-bb62-81006e73d0d9",
+      "result_id": "0ec9da90-b674-4aec-992e-a43a493df781"
+    },
+    {
+      "claim_id": "cac7a848-38db-483c-9972-539a2e854e51",
+      "result_id": "0ec9da90-b674-4aec-992e-a43a493df781"
+    },
+    {
+      "claim_id": "106ffb6e-6421-4ae5-907c-ec8eeb4cda5a",
+      "result_id": "6f61da65-7d71-40d9-b00f-7382276ed53f"
+    },
+    {
+      "claim_id": "e7fa29e9-9fc5-419f-9a3e-7ed081606f4b",
+      "result_id": "6f61da65-7d71-40d9-b00f-7382276ed53f"
+    },
+    {
+      "claim_id": "6e7256e0-fa14-43da-a8ad-806f352d4a68",
+      "result_id": "6f61da65-7d71-40d9-b00f-7382276ed53f"
+    },
+    {
+      "claim_id": "25fad6ed-c9ee-4512-932c-357c31b5b128",
+      "result_id": "c9276dfa-b87b-4438-babc-82bf76409fad"
+    },
+    {
+      "claim_id": "4b286013-a786-47b9-9249-8a14a3300ffc",
+      "result_id": "c9276dfa-b87b-4438-babc-82bf76409fad"
+    },
+    {
+      "claim_id": "2fdf3dea-dcbc-4741-97e7-73dbfe5be3bb",
+      "result_id": "c9276dfa-b87b-4438-babc-82bf76409fad"
+    },
+    {
+      "claim_id": "2ebc097e-d961-45d6-babd-0442340e6903",
+      "result_id": "64bb03d6-272d-4a92-9bdd-8c220cd88427"
+    },
+    {
+      "claim_id": "c83ff899-b8cf-4b0f-9b5a-78b8a149722a",
+      "result_id": "64bb03d6-272d-4a92-9bdd-8c220cd88427"
+    },
+    {
+      "claim_id": "bb2bd4ad-c145-4e1c-89bd-be5c39c5b7d1",
+      "result_id": "64bb03d6-272d-4a92-9bdd-8c220cd88427"
+    },
+    {
+      "claim_id": "0e06f5d3-b92c-4de9-b2c2-83696fb0a131",
+      "result_id": "64bb03d6-272d-4a92-9bdd-8c220cd88427"
+    },
+    {
+      "claim_id": "9073c45f-b499-499e-b30e-3e4acf41c7f1",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "326fdf64-bf78-49a4-b465-b0adcd071964",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "c3509511-d163-44a7-93f1-e4ffa0cbb868",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "a8d35a99-cc71-46bd-b8b8-b48deb684f3a",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "072e3fac-3280-4000-a324-aa585e488a84",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "b40f13af-1a72-4845-9a12-2a2d456317e1",
+      "result_id": "9fa72b5a-7d23-4d2c-a3bf-b9b1202fe5b3"
+    },
+    {
+      "claim_id": "47d9fd1a-0b37-471f-9a63-8ac2b1aa1f4a",
+      "result_id": "33409690-f997-43fd-b7ad-f66229d97993"
+    },
+    {
+      "claim_id": "7cd7b12b-14e9-400a-8e2c-25fa34ef0ba0",
+      "result_id": "33409690-f997-43fd-b7ad-f66229d97993"
+    },
+    {
+      "claim_id": "a355d7cc-5748-4e6c-a3b0-df5404499393",
+      "result_id": "33409690-f997-43fd-b7ad-f66229d97993"
+    },
+    {
+      "claim_id": "a735f454-ee33-4f2f-befd-ef5c1aab0b02",
+      "result_id": "33409690-f997-43fd-b7ad-f66229d97993"
+    },
+    {
+      "claim_id": "6614e5fe-94dc-4fdd-9e0c-7d7ebed8fb96",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "7bb8371f-c13b-4196-8515-715332b01c9c",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "d81c4a7b-4d48-43a8-bec7-3997a35a9f29",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "d6952a39-4bbd-4f5e-9340-e71fbd8a6d76",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "5cafd3f6-0533-434a-a7d5-c82db3c25fc6",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "9eeb31d0-7644-49e2-8e11-ffb57a9187fb",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "a520f6d6-38ce-4aac-9f77-c6b601a42a8a",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "75d3cb62-a0d8-4002-9d91-14e51b1c893f",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "5beab5e6-b61d-4221-bba6-4ec2e417ebac",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "9f635c65-fa88-47d7-9d3e-b58565d73f60",
+      "result_id": "66f42bc0-5439-432f-b0d1-b5e6abb3b642"
+    },
+    {
+      "claim_id": "c51ab263-c8a6-4587-85b7-3ceeeebf9cdb",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "bd5340d6-a8d0-449e-8ff4-6ba4b7a5f9dc",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "ab343619-e3e0-461f-b268-d42d0a33cb00",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "ef9d4746-2fcc-423b-88a0-49d079d094b3",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "75f7ee4e-6470-4d63-b554-75a12a1506d6",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "7dca3ffa-7c34-423b-8c63-24e1516e9c4e",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "9bed01e1-8d29-4c78-9b13-cb1221fa09b1",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "02af6211-f64b-47a7-901f-9498e255eb5a",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "29ea866b-f135-432a-80ef-6168dd3863a5",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "bcd2f70e-dd6c-4f8b-b80d-a6f9624594e1",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "91c2d329-41cf-4ca5-b2c6-e17a8732d627",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "aa943b46-6cd3-45df-b0af-d13aaa164f33",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "ca4b3fa4-b0d0-4a02-bba2-1268e82fb9b1",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "325b47de-2b22-4c43-87e8-e60ffa17f986",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "1548102a-5c4c-41ad-89ad-addd8e00eba2",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "0a806fdc-0f31-4308-a5d3-9091d69dc782",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    },
+    {
+      "claim_id": "b2bb918a-d6d9-42ea-ac61-3e3eb2a597b3",
+      "result_id": "cef401b9-7208-4da6-a6a2-ec26492be39e"
+    }
+  ],
+  "comparisons": []
+}

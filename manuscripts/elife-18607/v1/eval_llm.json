@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Neuromodulator levels vary across sleep stages: ACh, HA, and NE are reduced during NREM (N2/N3) and GABA is increased; during REM, ACh increases while monoamines and GABA decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe well-established patterns of neuromodulator changes across sleep stages, supported by multiple experimental citations. These are foundational observations from prior work that inform the model design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A thalamocortical network model was constructed with 500 PY, 100 IN, 100 TC, and 100 RE cells, implementing neuromodulator effects through changes in K+ leak currents, AMPA conductances, Ih activation, and GABA conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 describe the model architecture and implementation of neuromodulator effects. The model structure is clearly defined with specific cell numbers and biophysically motivated parameter changes based on experimental literature. The implementation is documented in detail in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "During the awake state, the model exhibits sparse cortical activity (2-3 Hz in PY, 4-5 Hz in IN), silent TC neurons, desynchronized LFP, and stable dynamics that return to baseline after brief stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 describe awake state model behavior with specific firing rates and response to stimulation. The results are illustrated in Figures 2A, 2C, and 3A, and compared to experimental observations. The model successfully reproduces key features of awake cortical activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The model reproduces N2 sleep characterized by spontaneous spindle oscillations (7-15 Hz, lasting 2-5 s, recurring every 3-10 s) following reduction of ACh and HA and increase of GABA, with hyperpolarized membrane potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe N2 sleep simulation results. The model generates spindles with temporal characteristics matching experimental data (Figures 2, 3B), including spontaneous generation without external stimulation and appropriate recurrence intervals. Membrane hyperpolarization is consistent with intracellular recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The model reproduces N3 sleep with slow oscillations (0.5-1 Hz) consisting of Up states (high spiking in cortical and RE neurons, depolarized TC cells) and Down states (network silence), with spindles nested during Up states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe N3 sleep simulation results. The model generates slow oscillations with Up/Down state transitions matching experimental observations (Figures 2, 3C). The cellular behavior during Up and Down states is consistent with intracellular recordings, and spindle nesting is observed as in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The model reproduces REM sleep with increased cortical activity and brief, spatially localized 7-15 Hz oscillations (alpha/mu rhythms) on a desynchronized background, dependent on reduced monoamines and higher cortical excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe REM sleep simulation results. The model generates activity patterns resembling REM sleep with brief alpha-burst events (Figure 3D). The mechanistic explanation linking these events to reduced monoamines and cortical excitability is plausible given the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cluster analysis of model simulations across neuromodulator parameter space identified 10 distinct network states, including awake/REM-like (clusters 3-4), slow oscillation-dominated (cluster 2), mixed states (clusters 5-6), and quasi-continuous spindles (cluster 1), each associated with specific neuromodulator levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe systematic exploration of neuromodulator parameter space using cluster analysis. The analysis identifies distinct network states with characteristic electrical patterns (Figure 4), and maps these to specific neuromodulator combinations. The approach is methodologically sound and results are well-illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Minimal model analysis reveals that reduction of ACh and HA in thalamus plus ACh reduction in cortex is necessary and sufficient for awake-to-N2 transition, with thalamic HA reduction alone producing only focal spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe systematic minimal model experiments (Figure 5A-D). The dissection of necessary components for N2 transition is methodologically rigorous, testing thalamic vs. cortical contributions separately. Results clearly demonstrate the requirement for both thalamic and cortical changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Minimal model analysis reveals that cortical ACh reduction is necessary and sufficient for N2-to-N3 transition, requiring both increased AMPA conductance and increased K+ leak; thalamic changes alone are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe minimal model experiments for N2-N3 transition (Figure 5E-H). The systematic dissection demonstrates that cortical changes are critical, and that both AMPA and K+ leak changes are required together. The logic is clear and results are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In vivo recordings from cats and mice show high spindle and delta power during both S2 and SWS, with strong positive correlation between spindle and delta power across cortical electrodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 describe experimental observations from animal recordings (Figure 6). The positive correlation between spindle and delta power is clearly demonstrated in both cats and mice (7/9 significant channels in mice showed positive correlation). The data analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "To replicate the positive correlation between spindle and delta power observed in animal data, the model requires moderate ACh reduction during SWS (to 75% of baseline), producing increased spindle activity during SWS and positive correlation between oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 describe model adjustments to match animal data (Figure 7). The model with higher ACh during SWS successfully reproduces the positive correlation observed experimentally. This demonstrates the model's ability to explain species differences through neuromodulator levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Human ECoG recordings show significant negative correlation between spindle and delta power during NREM sleep (average r=-0.26, 15/42 electrodes significant), with higher delta in N3 and higher spindles in N2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe human ECoG data analysis (Figure 8). The negative correlation is clearly demonstrated with appropriate statistics. The pattern differs markedly from animal data, providing a key observation for model testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The model reproduces the negative correlation between spindle and delta power observed in humans when ACh is reduced to 45% of baseline during N3 (compared to 57% in control), suggesting that lower ACh levels during N3 explain the human pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 describe model simulations matching human data (Figure 8F-G). The model successfully reproduces the negative correlation with lower ACh levels, providing a mechanistic explanation for species differences. This is a key prediction of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Propofol acts as a GABA agonist increasing GABA-A decay time constant, and also reduces ACh and HA levels through multiple mechanisms including decreased ACh release, attenuated ACh receptor responses, and inhibition of tuberomammillary nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 describe known pharmacological effects of propofol, supported by multiple experimental citations. These are well-established findings from prior work that inform the propofol model implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model of propofol anesthesia implementing ACh/HA reduction plus increased GABA decay time constant reproduces elevated 8-15 Hz and slow oscillations; GABA changes alone are insufficient, suggesting propofol requires indirect effects on ACh and HA systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 describe propofol modeling results (Figure 9). The model demonstrates that combined neuromodulator effects are necessary to reproduce propofol's electrographic signature. The comparison between full model and GABA-only manipulation is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Alternative GABA models (fixed GABA, tonic inhibition based on microdialysis, co-release with ACh/HA) all produce sleep stage transitions, but the co-release model shows poorly formed spindles during N2 and elevated alpha during REM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85 describe systematic testing of GABA implementation alternatives (Figure 10). The analysis demonstrates robustness of main findings to GABA assumptions while identifying specific differences. This addresses an important uncertainty about GABA's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior experimental work established that slow oscillations have primarily intracortical origin (surviving thalamic lesions, present in cortical slices, absent in decorticated thalamus) and spindles require thalamic reticular-relay cell interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 summarize well-established experimental findings from prior work, supported by multiple citations. These foundational observations motivate the model architecture and are not new findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Prior computational studies identified increased K+ leak current as critical for awake-to-SWS transition and predicted that slow oscillation synchronization depends on cortico-cortical connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 summarize findings from prior computational models, appropriately cited. These are established results from previous modeling work that inform the current study's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study identifies that thalamic HA and ACh reduction is required for N2 induction (with GABA modulating power/synchrony), and cortical ACh reduction is the minimal requirement for N2-to-N3 transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 summarize key findings from minimal model experiments. These conclusions are well-supported by the systematic manipulations shown in Figure 5 and represent major mechanistic insights from the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "All network rhythms result from intrinsic dynamics without external stimulation; mixed states combining spindles and slow oscillations occur with moderate ACh reduction and may occur in vivo, with phase-amplitude coupling correlating with memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe important model properties and connections to function. The autonomous generation of rhythms is a strength of the model. The connection to memory consolidation (C98) is supported by citation to a separate behavioral study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The model predicts that age-related elevation of HA in cerebrospinal fluid could contribute to age-related decline in spindle power, since HA level is a major predictor of spindle power in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C102 present a speculative connection between aging, HA levels, and spindle decline. While the model shows HA affects spindle power (C101), and experimental data show HA increases with age (C99) and spindles decline (C100), the causal connection is speculative and would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Specific combinations of K+-leak, Ih, GABA, and AMPA current changes are sufficient for sleep stage transitions; fixing these while leaving other neuromodulator effects fails to produce transitions, identifying these as critical mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe systematic testing of which parameters are critical (Figure 11). The comparison between full and reduced models clearly demonstrates that the identified core parameters are necessary and sufficient for sleep transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The model assumes different ACh, GABA, and HA levels between N2 and N3, and that ACh modulates AMPA synapse strength; these assumptions are supported by experimental evidence on ACh's effects on excitation spread, evoked responses, and receptor-specific synaptic modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 describe model assumptions and their experimental basis. The assumptions are reasonable and supported by cited experimental work, though the assumption of different neuromodulator levels between N2 and N3 (C105) is less directly established than other assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Cats and mice show positive correlation between spindle and delta power during NREM, while humans show negative correlation; the model predicts this inter-species difference arises from different relative ACh levels during NREM, consistent with microdialysis data in cats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 present a major finding comparing species and providing mechanistic explanation. The experimental observations are clear (Figures 6-8), and the model successfully explains the difference through ACh levels. The consistency with cat microdialysis data (C115) supports the prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The model predicts that minor neuromodulator changes significantly affect sleep electrical activity, with ACh fluctuations potentially explaining short slow oscillation periods in N2, gamma modulation during Up states, K-complexes, PGO waves, and ultimately affecting memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C120 present predictions and speculations about neuromodulator fluctuations. While C116 is supported by model results, C117-C120 are increasingly speculative predictions about transient phenomena not directly tested in the model. These would require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "During NREM sleep, spindle and delta power are negatively correlated in humans but positively correlated in animals, with this discrepancy explained by differences in relative ACh levels during NREM sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 summarize the main finding from the abstract. This is well-supported by the experimental data (Figures 6-8) and model simulations (Figures 7-8), representing a major contribution of the study.",
+    "result_type": "MAJOR"
+  }
+]

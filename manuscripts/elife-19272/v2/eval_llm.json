@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C23",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "The authors examined DNA binding specificities of 270 human bZIP pairs using SELEX-seq, revealing DNA interactomes for 80 heterodimers and 22 homodimers. The method showed good reproducibility (Pearson's r = 0.8 \u00b1 0.1 for replicates, r = 0.89-0.98 for reciprocal experiments) and successfully identified cognate sites for 73 of 126 (58%) stable dimers and 29 of 144 (20%) non-stable pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C22, C23, C67, C68, and C71 provide comprehensive quantitative data on the experimental scope and reproducibility. The high correlation values for replicates and reciprocal experiments (C67, C68) validate the technical robustness, while the success rates (C22, C23) demonstrate the method's effectiveness. The finding that 20% of non-stable pairs bind DNA (C23) is particularly well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C140"
+    ],
+    "result": "The authors classified heterodimer binding sites into three categories: 72% conjoined half-sites, 12% variably-spaced half-sites, and 16% emergent sites that cannot be readily inferred from monomer preferences. This classification represents a major finding about the diversity of heterodimer DNA recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, C61, C62, and C140 consistently report the same quantitative breakdown across abstract, results, and discussion sections. The percentages sum to 100%, and the classification is supported by multiple examples throughout the manuscript (e.g., C27-C30). The emergent sites category (C5, C62) represents a novel and unexpected finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C35",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "EMSA-FRET analysis validated heterodimer-specific DNA binding, demonstrating that 52 of 56 stable heterodimers bound conjoined sites and 6 of 27 non-stable pairs showed DNA-stabilized binding. The method successfully distinguished homodimers from heterodimers and confirmed emergent sites are heterodimer-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C34, C35, and C92-C98 provide comprehensive EMSA-FRET validation data. The quantitative results (C34, C35) align well with SELEX-seq findings (C22, C23). The technical controls (C94, C95) demonstrate assay robustness. The validation of emergent sites (C96, C97) is particularly important as it confirms these sites are not artifacts of the SELEX-seq method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "ChIP-seq validation in human cell lines showed that ATF3 homodimer alone explains only 39% of ATF3 peaks (AUC 0.67-0.77), while considering multiple ATF3 heterodimers increases coverage to 85% of peaks at FPR 0.10. Different heterodimers perform better in different cell lines (e.g., JUN\u2022ATF3 AUC=0.85 in glioblastoma, BATF3\u2022ATF3 AUC=0.69-0.70 in H1/HepG2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38-C44 provide strong in vivo validation using ChIP-seq data from multiple cell lines. The quantitative AUC values (C40-C42) and peak classification data (C43-C44) demonstrate that heterodimer binding sites are functionally relevant in cells. The cell-type-specific differences (C41-C42) add biological context. However, the analysis relies on published ChIP-seq data rather than experiments performed specifically for this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "ATF3 case study revealed that different bZIP partners confer distinct DNA-binding preferences on ATF3, with nine heterodimers showing high-confidence binding to five motif categories (CRE, TRE, CRE-CAAT, CRE-L, and emergent TGACGCAT). Genome-wide ATF3 binding is best explained by considering multiple dimers rather than homodimer alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C102-C107 provide detailed characterization of ATF3 as a model system. The identification of nine heterodimers with distinct preferences (C102) and five motif categories (C103) is well-supported by data. The specific examples (C104-C106) demonstrate heterodimer-specific preferences. Claim C9 about genome-wide binding is supported by the ChIP-seq analysis (C43-C44), though the interpretation could benefit from additional statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "The bZIP-DNA interactome compendium predicted bZIP binding to 156 disease-associated SNPs (\u22652-fold CSI intensity change), of which only 20 were previously annotated. Nearly 77% of these SNPs affect heterodimers, and 64% represent gain-of-function changes creating new binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C55-C57, C64-C65 provide comprehensive SNP analysis results. The quantitative data (156 SNPs, 20 previously annotated) demonstrates the novelty of the findings. The breakdown by heterodimer vs. homodimer (C56, C64) and gain vs. loss of function (C65) adds mechanistic insight. However, the predictions require experimental validation, and the choice of 2-fold cutoff and noise factor F=25 (C55) appears somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Specific disease-associated SNPs were analyzed, including rs10993994 (prostate cancer/CREB1), rs12740374 (myocardial infarction/CEBPA), rs7631605 (Alzheimer's/disrupts JUN\u2022ATF3 emergent site), rs1869901 (schizophrenia/FOS\u2022CEBPE), rs3758354 (psychiatric disorders/increased FOS\u2022JUN binding), and rs17293632 (Crohn's disease/decreased FOS\u2022JUN binding).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C54 describe specific SNP examples with disease associations. While C47-C49 cite known SNPs used for calibration, the predictions for other SNPs (C50-C54) are computational and lack experimental validation. The disease associations are cited from GWAS studies, but the causal relationship between altered bZIP binding and disease phenotype remains speculative. ENCODE ChIP-seq data (C129) provides some support that these loci are bound by bZIPs in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C73"
+    ],
+    "result": "The study reports comprehensive DNA-binding specificity for the first time for 10 human bZIP homodimers (ATF2, ATF3, ATF6, ATF6B, CEBPA, CREB1, FOSL1, JUN, MAFB, NFE2L1). Hierarchical clustering identified six previously known binding site classes (TRE, CAAT, PAR, MARE, CRE, CRE-L), and several homodimers enriched multiple motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C73 describe the homodimer characterization. The claim of 'first time' comprehensive specificity (C25) is supported by comparison with prior work (C69-C70). The identification of six motif classes (C73) validates the method against known biology. The observation that some homodimers bind multiple motifs (C26) is consistent with prior literature (cited in C74-C75) and adds granularity to understanding bZIP specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Specific examples of heterodimer binding site classes were characterized: FOS\u2022CEBPG prefers conjoined CRE-CAAT (8bp), FOS\u2022CEBPE prefers variably-spaced TRE-CAAT (7bp), BATF family switches to CRE-L half-sites in heterodimers (gain-of-specificity), and DDIT3\u2022CEBPG shows loss-of-specificity for one half-site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C76-C79 provide specific molecular examples of the three binding site classes. The FOS\u2022CEBPG vs. FOS\u2022CEBPE comparison (C27-C28) is particularly striking as these are closely related proteins with different preferences. The BATF example (C29) and DDIT3\u2022CEBPG example (C30, with citation) illustrate the two types of emergent sites. These examples are well-supported by the data and provide mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C74",
+      "C75",
+      "C80"
+    ],
+    "result": "Multiple heterodimers (11%) and homodimers bind more than one motif, and closely related dimers show differential preferences for sequences within consensus motif classes. These preferences are not readily predictable from monomer binding or protein homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C74-C75, C80 describe the complexity and unpredictability of bZIP binding. The quantitative data (C31) and specific examples (C32) support the observation. The sub-structure within consensus motifs (C74-C75) is an important finding that challenges simplified PWM models. The unpredictability (C80) is well-illustrated by examples like JUNB\u2022ATF3 and MAFB\u2022ATF5. These findings have implications for computational prediction methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Specificity and Energy Landscapes (SELs) revealed detailed binding preferences including context effects, differential tolerance to mismatches in half-sites, and heterodimer-specific sites. For example, the emergent site TGACGCAT is highly preferred by JUN\u2022ATF3 but not by homodimers, and single nucleotide changes can dramatically alter which bZIPs bind a site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C82-C91 describe insights from SEL analysis. The correlation between CSI intensity and binding affinity (C33) validates the quantitative interpretation. The detailed analysis of ATF4\u2022CEBPG (C82-C84) and the heatmap analysis (C85-C91) demonstrate the power of the SEL approach to reveal subtle specificity differences. The examples of how single nucleotide changes affect binding (C88-C91) are particularly valuable for understanding SNP effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In glioblastoma cells, ATF3-bound genomic regions cluster by motif type with distinct gene ontology enrichments: CRE-CAAT sites (CEBP\u2022ATF3 heterodimers) enrich for immune response and JAK-STAT signaling, while TRE sites enrich for nutrient sensing and PDGF signaling, suggesting heterodimers drive cell-type and signal-specific gene networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C109-C112 connect DNA binding specificity to biological function through gene ontology analysis. The de novo motif discovery (C45-C46) validates the ChIP-seq analysis. The differential GO enrichments (C109-C111) are statistically significant (FDR<0.05 mentioned in methods). However, the interpretation that heterodimers drive cell-type-specific networks (C112) is somewhat speculative as it's based on correlation rather than functional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "CSI-Genomescape analysis of co-occupied genomic loci showed that ATF3\u2022CEBPB heterodimer sites score higher than homodimers at 1018 co-occupied regions in H1 cells, including sites in closed chromatin. For JUN\u2022ATF3, 39 co-occupied regions contain the emergent site TGACGCAT, which scores highest for the heterodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C125 provide detailed analysis of co-occupied genomic regions. The quantitative data on co-occupancy (C117-C118) and violin plot analysis (C119-C125) demonstrate heterodimer-specific binding at these loci. The observation of binding to closed chromatin (C113) is interesting but based on DNase I data interpretation. The analysis of the emergent site (C122-C125) provides strong support for its functional relevance in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on bZIP biology: bZIPs bind DNA as obligate dimers, JUN and FOS heterodimerize (discovered 1988), human bZIPs show greater heterodimerization than simpler eukaryotes, 53 human bZIPs group into 21 families and bind at least six motif classes, and JUN\u2022ATF2 heterodimer binds sites not bound by either homodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 provide background information from the introduction, all supported by appropriate citations. These are established facts from prior literature rather than new findings from this study. The claims accurately represent the cited work and provide necessary context for understanding the significance of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C36",
+      "C37",
+      "C99",
+      "C100",
+      "C101",
+      "C108"
+    ],
+    "result": "Background on ATF3: ATF3 homodimer acts as a repressor binding CRE sites, ATF3\u2022JUN activates transcription, ATF3 functions as a regulatory hub interacting with many TFs, initially identified as an inflammation suppressor, now associated with cancer and other diseases, and is a tumor suppressor in glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C36-C37, C99-C101, C108 provide background on ATF3 from the introduction and results sections, all supported by appropriate citations. These establish the biological importance of ATF3 and justify its selection as a case study. The information accurately represents prior literature and provides context for the ATF3-focused analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C59",
+      "C23"
+    ],
+    "result": "DNA stabilizes protein-protein interactions for bZIP pairs that do not stably associate in solution, with approximately 20% of non-interacting pairs showing DNA-induced dimerization and sequence-specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C59, and C23 describe DNA-stabilized dimerization. The quantitative data (C23: 29 of 144 pairs, 20%) is consistent across abstract and discussion. The interpretation that DNA stabilizes PPIs (C24) is reasonable given that these pairs don't interact in solution (Kd >1 \u00b5M) but show sequence-specific binding. This is an important finding that expands the functional bZIP dimer repertoire.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C60",
+      "C66",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Discussion context: 36 human bZIP monomers can form ~217 heterodimers, this study examined 270 pairs representing a wide survey of 666 possible pairs, this is the largest bZIP heterodimer dataset to date, heterodimerization complexity increases with evolutionary complexity, and prior to this work the impact of heterodimerization on DNA recognition was unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C60, C66, C132-C139 provide context from the discussion section. The quantitative claims about dimer numbers (C58, C66, C139) are accurate. The claim of being the largest dataset (C60) appears justified given the 80 heterodimers characterized. The evolutionary observations (C132-C134) are supported by citation. The statements about prior knowledge gaps (C137-C138) appropriately contextualize the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C81",
+      "C141",
+      "C142"
+    ],
+    "result": "Discussion implications: ATF3\u2022CEBPB binding to closed chromatin is consistent with pioneer factor function of certain bZIPs, emergent sites challenge homology-based prediction models, protein-protein and protein-DNA interactions influence binding specificity in important ways, and future work will tackle higher-order interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C81, C141-C142 provide interpretations and implications from the discussion. The pioneer factor interpretation (C63) is reasonable given the data (C113) and cited literature. The challenge to prediction models (C81) is well-supported by the emergent sites data. The statement about TF interactions (C141) is appropriately supported by citations. The forward-looking statement (C142) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Methodological validation: DNA specificity of isolated bZIP domains is typically indistinguishable from full-length proteins, and comparison with prior ATF4 data suggests the previous study may have inadvertently characterized ATF4\u2022CEBPG heterodimer rather than ATF4 homodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 justify the use of bZIP domains rather than full-length proteins. C69 is supported by citation and represents accepted practice in the field. C70 provides an interesting reinterpretation of prior data based on higher correlation with ATF4\u2022CEBPG than ATF4 homodimer, suggesting contamination in the previous study. This highlights an advantage of using purified proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C126",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Additional technical observations: bZIPs not known to bind as homodimers (JUNB, FOS) did not yield cognate sites, 5076 disease-associated SNPs were analyzed, some SNPs affect many bZIP dimers (e.g., rs10994336 affects 44 of 102 dimers), and many RegulomeDB annotations use homodimer PWMs rather than comprehensive interactomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C126, C129-C131 provide additional technical details and observations. The negative results for JUNB and FOS (C72) validate the method. The SNP analysis scope (C126) is clearly stated. The ENCODE validation (C129) provides independent support. The observation about broad SNP effects (C130) and database limitations (C131) are useful for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

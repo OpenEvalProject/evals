@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C24"
+    ],
+    "result": "Infant marmoset vocal development exhibits three key behavioral patterns: (1) a transition from immature calls (cries) to mature calls (phees) during early postnatal days, (2) a decrease in dominant frequency over development, and (3) a negative correlation between parental contingent responses and the zero-crossing day (the day when phees and cries are equally produced).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, and C24 are directly supported by empirical data shown in Figures 1b-e. The spectrograms, frequency measurements, phee/cry ratio curves, and correlation analysis provide converging observational evidence for these developmental patterns in the marmoset dataset (n=10 infants, 301 undirected sessions, 195 directed sessions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A biomechanical model of the marmoset vocal apparatus was developed based on Titze's one-mass model, using a second-order ordinary differential equation with two time-varying parameters (\u03b1(t) for air pressure and \u03b2(t) for vocal fold tension), assuming bilateral symmetry and source-filter independence, with the vocal tract modeled as a uniform cylinder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C32-C35, and C71-C76 describe the model structure and parameters. The model is explicitly stated, properly cited (Titze 1988, Amador et al. 2013), and parameter values are documented in Table 1. The model successfully reproduces marmoset call types (Figure 3b-e), providing validation of the modeling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C36",
+      "C37",
+      "C84",
+      "C85"
+    ],
+    "result": "The biomechanical model produces cries through a mismatch between low-frequency glottal oscillations and higher-frequency vocal tract resonance, without requiring chaotic dynamics, contrasting with previous models that attributed cries to turbulent or chaotic vocal fold dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C36, C37, C84, and C85 are supported by model simulations (Figure 9) and comparison with prior literature (Fitch et al. 2002, Herzel 1993). The model demonstrates that periodic dynamics with frequency mismatch can produce cry-like vocalizations, providing a simpler mechanistic explanation than chaotic dynamics models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C29"
+    ],
+    "result": "Growth of the vocal tract (increasing length L) explains the observed reduction in dominant frequency during development by shifting the resonance frequencies and the troughs/valleys of the developmental landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C29 are supported by model fitting to developmental data (Figure 4a-b). The model successfully fits the dominant frequency decline by estimating vocal tract length changes from 7.9-10 mm, consistent with physical growth. This represents a well-validated biomechanical explanation for one aspect of vocal development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C30"
+    ],
+    "result": "A two-element developmental landscape incorporating both vocal tract growth and developing muscular control (parameterized by \u03bb) can account for the rapid transition from immature to mature calls, but cannot explain the correlation between parental feedback and individual transition timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C30 are supported by model fitting results (Figures 5d-f). The model with vocal tract growth and muscle parameter \u03bb successfully fits the population phee/cry ratio trajectory but fails to predict the individual variation related to parental feedback (Figure 5f, gray vs. purple lines), demonstrating the need for an additional component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C28",
+      "C31",
+      "C52",
+      "C53"
+    ],
+    "result": "The relationship between parental contingent feedback and the rate of vocal transition can be explained by incorporating nervous system development (learning parameter \u03ba=0.2126) facilitated by social feedback into the cost function, with parental feedback having a direct effect on the infant nervous system independent of growth or call rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C28, C31, C52, and C53 are supported by model fitting (Figure 6c) and statistical analysis (C27, C28). The model with learning parameter \u03ba successfully fits the relationship between parental feedback and zero-crossing day. The lack of correlation between infant growth/call rate and parental feedback (Figure 7, p>0.36) supports the direct neural effect hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C1",
+      "C88",
+      "C92",
+      "C93"
+    ],
+    "result": "Only the integrated combination of developing vocal tract, vocal apparatus muscles, and nervous system (influenced by social interaction) can fully account for marmoset vocal development patterns, providing a systems-level framework that eschews privileged levels of understanding and enables predictions about perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C88, C92, and C93 represent the main conclusion. The sequential modeling approach (Figures 4-6) demonstrates that each element alone is insufficient, while their combination successfully explains all three key developmental patterns. The framework is conceptually sound and mathematically formalized, though predictive applications (C88, C93) remain prospective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Infant marmoset growth rate (weight change) and call rate do not correlate with the probability of parental contingent responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by statistical analysis showing no significant correlations (Figure 7a-b: r=0.314, p=0.378 for weight; r=-0.048, p=0.896 for call rate; n=10). Multiple regression coefficients were also non-significant (all p>0.36). This rules out an alternative explanation for the parental feedback effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In the biomechanical model, robust stable limit cycles producing calls exist only in region I of parameter space (above the saddle-node bifurcation and right of the Hopf bifurcation), with each cycle passage corresponding to one vocal fold opening-closing event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by bifurcation analysis (Figure 10) and mathematical derivations in the Appendix. The phase space analysis correctly identifies the parameter regions supporting sustained oscillations, providing theoretical foundation for understanding which parameter combinations produce vocalizations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Cries serve as scaffolding for vocal maturation in both marmosets and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by the model results showing cries as a developmental precursor to phees, combined with citations to prior work (Takahashi et al. 2015, Kent and Murray 1982). The biomechanical model provides mechanistic support for this hypothesis by showing cries result from lower air pressure/tension parameters that are more accessible to young infants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C19"
+    ],
+    "result": "Prior literature establishes that vocal development involves multiple interacting elements (vocal apparatus growth, muscular changes, neural development, social feedback) across species including songbirds, bats, humans, and marmosets, and that Waddington's landscape metaphor has been formalized for developmental processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 and C19 cite relevant prior work appropriately. The citations appear accurate and support the conceptual framework. These claims establish the scientific context and justify the modeling approach, though they represent background knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The experimental methods involved recording vocalizations from 10 infant marmosets in two contexts (undirected isolation and directed parent interaction) with appropriate ethical approval, yielding 301 undirected sessions (73,421 utterances) and 195 directed sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C61-C64, C66-C68 describe the experimental procedures and dataset. These are clearly documented, ethically approved, and the dataset is publicly available. The sample size (n=10 infants) is justified by post-hoc power analysis (power=0.818 for key correlation). Methods are reproducible and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C45",
+      "C46",
+      "C69",
+      "C70"
+    ],
+    "result": "Methodological definitions were established for key measures: contingent responses (within 5s), zero-crossing day (phee/cry ratio crosses zero), call detection threshold (99th percentile of silent period amplitude), and whole calls (utterances <500ms apart).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C45, C46, C69, and C70 provide clear operational definitions with appropriate citations (Takahashi et al. 2015, DiMattina and Wang 2006). These definitions are standard in the field and enable reproducible analysis. The 5s contingency window is reasonable for vocal turn-taking analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Call type classification achieved >99.9% inter-rater reliability between two independent classifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by validation analysis on 10 randomly selected sessions. The extremely high agreement (>99.9%) indicates the call types are spectrally distinct and classification is reliable, validating the data quality for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C86",
+      "C87"
+    ],
+    "result": "Model parameters were manually fit to match spectrotemporal features of real calls, with pink noise added to simulations to match recording background, and without separately modeling the mouth cavity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C86, and C87 describe modeling procedures. Manual parameter fitting is appropriate for this exploratory modeling study. The decision not to model the mouth cavity separately (unlike Amador et al. 2013) is justified by the model's ability to reproduce marmoset calls (Figure 3b-e). However, manual fitting limits reproducibility compared to automated optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Parental call rate and strength of dynamic interaction between infants and parents remain constant throughout development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by citations to Takahashi et al. 2015, 2016. This finding justifies the causal ordering in the model (parental feedback affects infant development rather than vice versa). However, the claim relies on prior published work rather than new analysis in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "The vocal development landscape framework could potentially be applied to predict effects of genetic manipulations, explain species differences in vocal learning capacity, compare developmental trajectories across species, and predict effects of various experimental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 and C93 describe potential future applications of the framework. While conceptually plausible and well-motivated, these remain speculative as no such applications are demonstrated in the current work. The framework would need to be validated in these contexts before these claims can be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Background context includes that infant vocalization affects parental care and development, genetically-modified marmosets have been established, squirrel monkey vocalizations change little during development, and Bengalese finches are domesticated white-rumped munias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 cite relevant background literature appropriately (Lester 1985, Zeskind 2013, Sasaki et al. 2009, Okano et al. 2016, Hammerschmidt et al. 2001, Katahira et al. 2013, Suzuki et al. 2014). These provide context for potential applications but represent prior knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  }
+]

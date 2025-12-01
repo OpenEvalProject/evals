@@ -1,0 +1,2248 @@
+{
+  "submission": {
+    "id": "94d0c988-f1c7-4058-8d85-50400d4cfcb6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:59:19.065310Z",
+    "updated_at": "2025-11-30T22:59:19.065310Z"
+  },
+  "content": [
+    {
+      "id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "submission_id": "94d0c988-f1c7-4058-8d85-50400d4cfcb6",
+      "content_type": "manuscript",
+      "content_text": "# The interplay of stiffness and force anisotropies drives embryo elongation\n\n## Authors\n\n- Thanh Thi Kim Vuong-Brender<sup>1</sup> ([ORCID: 0000-0001-6594-2881](https://orcid.org/0000-0001-6594-2881)) \u2020\n- Martine Ben Amar<sup>3</sup> ([ORCID: 0000-0001-9132-2053](https://orcid.org/0000-0001-9132-2053))\n- Julien Pontabry<sup>2</sup> ([ORCID: 0000-0001-7412-4645](https://orcid.org/0000-0001-7412-4645))\n- Michel Labouesse<sup>1</sup> ([ORCID: 0000-0001-7995-5843](https://orcid.org/0000-0001-7995-5843)) \u2020\n\n### Affiliations\n\n1. Laboratoire de Biologie du D\u00e9veloppement - Institut de Biologie Paris Seine (LBD - IBPS) Sorbonne Universit\u00e9s, UPMC Univ Paris 06, CNRS Paris France\n2. Development and Stem Cells Program IGBMC, CNRS (UMR7104), INSERM (U964), Universit\u00e9 de Strasbourg Illkirch France\n3. Laboratoire de Physique Statistique Ecole Normale Sup\u00e9rieure, UPMC Universit\u00e9 Pierre et Marie Curie, Universit\u00e9 Paris Diderot, CNRS Paris France\n4. Institut Universitaire de Canc\u00e9rologie Facult\u00e9 de M\u00e9decine, Universit\u00e9 Pierre et Marie Curie-Paris Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe morphogenesis of tissues, like the deformation of an object, results from the interplay between their material properties and the mechanical forces exerted on them. The importance of mechanical forces in influencing cell behaviour is widely recognized, whereas the importance of tissue material properties, in particular stiffness, has received much less attention. Using Caenorhabditis elegans as a model, we examine how both aspects contribute to embryonic elongation. Measuring the opening shape of the epidermal actin cortex after laser nano-ablation, we assess the spatiotemporal changes of actomyosin-dependent force and stiffness along the antero-posterior and dorso-ventral axis. Experimental data and analytical modelling show that myosin-II-dependent force anisotropy within the lateral epidermis, and stiffness anisotropy within the fiber-reinforced dorso-ventral epidermis are critical in driving embryonic elongation. Together, our results establish a quantitative link between cortical tension, material properties and morphogenesis of an entire embryo.\n\n## Introduction\n\nMorphogenesis and organ formation rely on force distribution and tissue material properties, which are often heterogeneous and evolve over time. Forces are generated through a group of relatively well-conserved molecular motors associated with the cytoskeleton, among which, myosin II linked to actin filaments is the most prevalent during epithelial morphogenesis (Vicente-Manzanares et al.,\u00a02009). The\u00a0spatial distribution and dynamics of\u00a0myosin II\u00a0greatly influence morphogenetic processes (Levayer and Lecuit, 2012). In particular, the asymmetric distribution of the actomyosin network and its pulsatile behaviour define the direction of extension during Drosophila germband elongation (Bertet et al., 2004;\u00a0Blankenship et al., 2006), Drosophila renal tubule formation (Saxena et al.,\u00a02014) or Xenopus mesoderm convergent extension (Shindo and Wallingford, 2014). The implications of mechanical forces on cell behavior have been intensively investigated (Zhang and Labouesse, 2012;\u00a0Heisenberg and Bella\u00efche, 2013), but\u00a0many fewer studies have considered the impact of tissue material properties\u00a0in vivo, except for their influence on cell behaviour in vitro (Kasza, 2007).\n\nEmbryonic\u00a0elongation\u00a0in\u00a0C. elegans represents an attractive model for studying morphogenesis, as it offers single-cell resolution and powerful genetic analysis. During its elongation, the embryo evolves from a lima-bean shape\u00a0to a typical cylindrical shape with a four-fold increase in length, without cell migration, cell division, or a notable change in embryonic volume (Sulston et al.,\u00a01983;\u00a0Priess and Hirsh, 1986) (Figure 1a). This process requires the epidermal actomyosin cytoskeleton, which acts mostly in the lateral epidermis (also called seam cells), while the dorso-ventral (DV) epidermal cells may remain passive (Appendix 1)\u00a0(Wissmann et al., 1997;\u00a01999;\u00a0Shelton et al., 1999;\u00a0Piekny et al., 2003;\u00a0Diogon et al., 2007;\u00a0Gally et al.,\u00a02009;\u00a0Chan et al., 2015;\u00a0Vuong-Brender et al., 2016). Indeed, the non-muscle myosin II is concentrated in seam cells; in addition, short disorganized actin filaments, which favour actomyosin contractility, are present in seam cells but not in the DV epidermis, where they instead form parallel circumferential bundles (Figure 1b\u2013d)\u00a0(Gally et al., 2009;\u00a0Priess and Hirsh, 1986). The actomyosin forces are thought to squeeze the embryo circumferentially, thereby increasing the hydrostatic pressure and promoting embryo elongation in the antero-posterior (AP) direction (Priess and Hirsh, 1986) (Figure 1e).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig1-v3.jpg)\n\n**Figure 1.:** (a) Embryonic\u00a0elongation\u00a0in\u00a0C. elegans is driven in part by epidermal actomyosin contractility and in part by muscle contractions. The length of the embryo is used for staging: 2-fold (2F) stage means roughly 2-fold increase in length from the beginning of elongation. Representative stages are shown; anterior to the left, dorsal up. (b, c, d) Actin filament organization at the 1.3F, 1.5F and 1.7F stages, respectively, visualized with an ABD::GFP marker. Actin filaments progressively organize into circumferential parallel bundles in DV cells (arrows), arrowheads point to seam cells. Note that the integrated ABD::GFP marker shows some cell to cell variation in expression. (b\u2019, b\u201d, c\u2019, c\u201d, d\u2019, d\u201d) Close-up\u00a0images of actin pattern in DV cells (from the area in the white rectangle) and seam cells (from the area in the pink rectangle), respectively, of the images in (b),\u00a0(c) and (d) respectively. (e) Actomyosin forces squeeze the embryo circumferentially to make it elongate in the antero-posterior direction. (f, g) Endogenous distribution of the two non-muscle myosin II isoforms visualized with the\u00a0CRISPR GFP-labelled myosin heavy chains NMY-2\u00a0(f)\u00a0and\u00a0NMY-1\u00a0(g). Arrowheads point to seam cells, which are delineated by the junctional marker DLG-1::RFP.\n\nAlthough the published data clearly implicate myosin II in driving elongation, they raise a number of issues. First, myosin II does not show a polarized distribution (Figure 1f,g), nor does it display dynamic pulsatile foci at this stage; hence, it is difficult to account for the circumferential squeezing. Moreover, force measurements are lacking to establish that the actomyosin network does squeeze the embryo circumferentially. Second, a mechanical continuum model is needed to explain how the embryo extends preferentially in the AP direction.\n\nTo address those issues, we used laser ablation to map the distribution of mechanical stress (i.e the force per unit area) and to\u00a0assess tissue stiffness (i.e. the extent to which the\u00a0tissue resists deformation) in the embryonic epidermis. We then correlated the global embryonic morphological changes with these physical parameters. Finally, we developed continuum mechanical models to account for the morphological changes. Altogether, our data and modelling demonstrate that the distribution of forces in the seam cells and the stiffness in the DV epidermis must be polarized along the circumferential axis (or DV axis) to drive elongation.\n\n## Results\n\n### Measuring the mechanical stress on the actin cortex through laser ablation\n\nTo measure the stress distribution on the actin cortex, we used laser nano-ablation, which has now become a standard method to assess forces exerted in cells, to sever the actin cytoskeleton and to\u00a0observe the shape of the opening hole (Figure 2a). We visualized actin with a GFP- or mCherry-labelled actin-binding-domain protein (ABD) expressed in the epidermis (Gally et al., 2009) (Figure 1b\u2013d). We adjusted the region of interest to cut within one cell, restricting our analysis to the early phase of elongation (\u22641.7F; for staging, see Figure 1 legend).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig2-v3.jpg)\n\n**Figure 2.:** (a) The GFP-labelled actin cortex of HYP7 dorsal epidermal cell at the 1.7F stage before (0 s), 1.4 s and 10 s after laser severing; the\u00a0cut made\u00a0along the AP direction and\u00a0was 5 \u03bcm in\u00a0length. Double arrowheads\u00a0indicate\u00a0the distance between cut borders, which increases with time. (b) Model of epidermal cells as an infinite elastic plane under biaxial stress in the AP and DV directions after an incision of length l. The final shape of the cut opening is an ellipse. The cut opening in the DV direction (after an incision along the AP direction) depends on the stress along the DV direction and the Young modulus (see text). (c) The opening depends on myosin II activity: comparison of the cut response in the seam cell H1 between wild-type (WT) and let-502(sb118)/Rho kinase mutant embryos at a stage when muscles start to twitch (around 1.5F). The average value and standard error are reported. Time zero, moment of the cut; DV and AP show direction of opening. Two-tailed t-test, ***p=4*$10^{\u22127}\u00a0$\u00a0between WT DV and let-502(sb118) DV, p=4*$10^{\u22126}\u00a0$\u00a0between WT AP and let-502(sb118) AP; N, number of embryos examined.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The average value and standard error are reported. Time 0 is the moment of the cut. Solid lines show the single exponential fit with an initial width of cut opening of 0.6 \u03bcm (see Materials\u00a0and\u00a0methods).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Scheme for measuring the calcium sensor GCaMP3 mean fluorescence intensity at positions 9 \u03bcm and 17 \u03bcm away from the cut site (red bar). The intensity was averaged over a region of interest (ROI) of 1.5 \u00d7 1.5 \u03bcm2. A, anterior; P, posterior; D, dorsal; V, ventral. (b, c) Calcium level over time for an embryo typical\u00a0of the majority of ablated embryos, in which the cortex is probably disrupted locally (b), or of the minority of ablated embryos, in which the wounding response is probably more severe (c).\n\nWe observed two types of ablation responses (see Materials\u00a0and\u00a0methods). In the first (accounting for\u00a0>80% of the cases), the opening hole within the actin cytoskeleton reached equilibrium in less than 10 s, and resealed within less than 2 min (Figure 2\u2014figure supplement 1, Video 1). In such embryos, actin occasionally accumulated around the cut borders but not around cell borders (Video 1). Imaging calcium levels, which can rise after laser wounding (Xu and Chisholm, 2011;\u00a0Razzell et al., 2013;\u00a0Antunes et al., 2013), showed either no change or a localized increase (Video 2, Figure 2\u2014figure supplement 2a,b). In the second\u00a0ablation\u00a0reponse, an actin ring accumulated around the cell borders during the repair process (Video 3) and a calcium wave propagated to nearby epidermal cells (Video 4; Figure 2\u2014figure supplement 2c). Embryos showing the first response continued to develop and hatched, whereas\u00a0those showing the second response arrested their development and eventually died. In all subsequent studies, we only took into account the first type of response, which should correspond to a local cortex disruption.\n\n![Video 1.](https://cdn.elifesciences.org/articles/23866/elife-23866-media1.mp4.jpg)\n\n**Video 1.:** 0 s time corresponds to the\u00a0first picture after\u00a0the laser cut. The\u00a0yellow line shows the cut region.\n\n![Video 2.](https://cdn.elifesciences.org/articles/23866/elife-23866-media2.mp4.jpg)\n\n**Video 2.:** The calcium sensor GCaMP3 was expressed under the epidermal promoter dpy-7 (which\u00a0provides\u00a0strong expression in the dorso-ventral cells). 0 s time corresponds to the\u00a0first picture after the\u00a0laser cut. The\u00a0yellow line shows the cut region. This is the same embryo as that\u00a0shown in Video 1.\n\n![Video 3.](https://cdn.elifesciences.org/articles/23866/elife-23866-media3.mp4.jpg)\n\n**Video 3.:** 0 s time corresponds to the\u00a0first picture after the\u00a0laser cut. The\u00a0yellow line shows the cut region.\n\n![Video 4.](https://cdn.elifesciences.org/articles/23866/elife-23866-media4.mp4.jpg)\n\n**Video 4.:** The calcium sensor GCaMP3 was expressed under the epidermal dpy-7 promoter (which\u00a0provides\u00a0strong expression in the dorso-ventral cells). 0 s time corresponds to the\u00a0first picture after the\u00a0laser cut. The\u00a0yellow line shows the cut region. This is the same embryo as that\u00a0shown in Video 3.\n\nTo compare the response between different conditions, we detected the cut-opening shape, which we fitted with an ellipse to derive the shape parameters (see Materials\u00a0and\u00a0methods). The laser setup we used did not enable us to image the recoil dynamics within the first second after the cut, which other investigators previously used to assess the extent of mechanical stress (Rauzi and Lenne, 2015;\u00a0Smutny et al., 2015;\u00a0Saha et al., 2016). To circumvent this issue, we developed a novel analysis method to derive mechanical stress\u00a0data, based on the equilibrium shape of a thin cut in an infinite elastic isotropic plane, subjected to biaxial loading (stress applied in two perpendicular directions)\u00a0(Theocaris, 1986). The rationale for approximating the epidermis to such a plane is further outlined in the Appendices 2\u00a0and\u00a03. In these conditions, a thin cut will open to form an elliptical hole at equilibrium (Figure 2a). The opening of the cut reflects mechanical stress in the direction perpendicular to the cut direction.\n\nWe cut the epidermal actin specifically in the AP and DV directions, which we found to correspond to the stress loading directions (Figure 2b; Appendix 2). For a cut in the AP direction, the minor axis of the ellipse at equilibrium, bDV, will be proportional to the cut length, l, and to the ratio of stress in the DV direction, $\\sigma_{DV},\u00a0$\u00a0over the Young modulus E of the plane (Theocaris et al., 1986) (Figure 2b):\n\n$$\nb_{DV}=\u00a02\\frac{\\sigma_{DV}}{E}l\n$$\n\nWe will call the ratio $\\frac{b_{DV}}{l}$ the opening in the DV direction of a cut made along the AP direction (Figure 2b), and similarly $\\frac{b_{AP}}{l}$ the opening in the AP direction of a cut made in the DV direction. Thus, we used the opening of the hole in a given direction to derive the stress in that direction.\n\nWe compared the conclusions drawn from this method with methods relying on the recoil dynamics (Rauzi and Lenne, 2015;\u00a0Smutny et al., 2015; Saha et al., 2016) (Appendix 3). The half-time of the cut border relaxation, which depends on the ratio of viscosity over stiffness, was similar in the AP and DV directions (Appendix 3), supporting the hypothesis that the seam cell cortex is isotropic. We found an agreement between both methods for the AP versus DV stress ratio, and similar trends for the stress magnitude.\n\nTo further examine the validity of this method, we performed two tests. First, the theory described\u00a0above\u00a0(Theocaris, 1986) predicts that the minor to major axis ratio of the opening ellipse is independent of the initial cut length. We found that it is the case when the cut length varied from 3 \u03bcm to 6 \u03bcm (Appendix 4). Second, to prove that the opening observed after laser cutting depends on myosin II activity, we performed cuts in embryos defective for the main myosin II regulator, LET-502/Rho-kinase (Gally et al., 2009). As shown in Figure 2c, the opening in the seam cell H1 at the 1.5F stage in let-502(sb118ts) embryos changed very little and was significantly smaller than\u00a0that in WT embryos, consistent with a decrease in\u00a0mechanical stress.\n\nThus, we feel confident that the method based on the opening shape measures actomyosin-dependent stress and can be\u00a0used\u00a0reliably to\u00a0report on\u00a0stress differences along the DV and AP directions.\n\n### Stress anisotropy in seam cells correlates with embryonic morphological changes\n\nWe applied the method described above on three seam cells (head H1, body V3, tail V6; Figure 3a)\u00a0because myosin II acts mainly in seam cells (Gally et al., 2009), and compared the response with embryonic morphological changes. We focused on the anisotropy of stress between the DV and AP directions (difference of stress along both directions) in a given cell (Figure 3b). Indeed, in other systems, such as Drosophila embryos (Rauzi et al., 2008) and C. elegans zygotes (Mayer et al., 2010), this parameter is critical.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig3-v3.jpg)\n\n**Figure 3.:** (a) Scheme showing laser ablation experiments in the AP and DV directions for H1, V3 and V6 seam cells at different stages. A, anterior; P, posterior; D, dorsal; V, ventral. (b) Cut opening in H1, V3 and V6 from the 1.3F to the 1.7F stages (see Figure 2b). The\u00a0p-values from\u00a0two-tailed t-tests are reported. (c) Changes in embryo length, head diameter at the level of H1, body diameter at the level of V3 and tail diameter at the level of V6, between the 1.3F and 1.7F stages. N\u00a0=\u00a010. (d) Scheme showing the measurement of circumferential cell width in the head (above) and corresponding section (below). (e) The circumferential width of H1, V3, head and body DV cells (averaged for dorsal and ventral cells). N\u00a0=\u00a010. (f) Measures of the cut opening in H1 for WT, spc-1(RNAi) treated and unc-112(RNAi) muscle-defective embryos at a stage equivalent to the 1.7F stage. The\u00a0p-values of two-tailed t-tests are reported. (g) Comparison of the stress anisotropy in H1, defined by DV/AP stress, between WT 1.7F stage, spc-1(RNAi) embryos and unc-112(RNAi) embryos at the equivalent 1.7F stage. The\u00a0p-values of Z-tests are reported. The number of embryos used for ablation is given in Supplementary file 1. For (b,c,e\u2013g), the average (or calculated) values and standard errors are reported.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** ML1540 is the strain carrying the actin-binding domain fused to GFP (see Materials\u00a0and\u00a0methods). The average value and standard error are reported. N\u00a0\u2265\u00a09 for each genotype.\n\nAt the 1.3F stage in H1, there was no significant stress anisotropy; however, as the embryo elongated to the 1.5F and 1.7F stages, the stress became anisotropic (Figure 3b). In V3, the anisotropy of stress evolved in the opposite direction, with higher stress anisotropy at the 1.3F stage\u00a0compared to the 1.5F stage (Figure 3b). In V6, the stress was slightly anisotropic at both the 1.3F and the\u00a01.5F stage (Figure 3b). In all cells, whenever the stress became anisotropic, it was higher in the DV direction. Overall, the opening increased as the embryo elongated from the 1.3F to the 1.5F stage and from the 1.5F to the 1.7F stage for H1.\n\nTo correlate the stress anisotropy with the morphological changes in the embryo, we used markers labelling cortical actin (an ABD) and junctions (HMR-1/E-cadherin). We observed that the head, body and tail diameter (at the levels of H1, V3 and V6, respectively) decreased at different rates over time (Figure 3c), as also observed by Martin and colleagues (Martin et al., 2014). The head diameter did not diminish between the 1.3F and 1.5F stages when the stress was nearly isotropic, but decreased significantly between the 1.5F and 1.7F stages as the stress anisotropy increased. Conversely, the body diameter decreased most\u00a0rapidly between the 1.3F and 1.5F stages, when the stress was highly anisotropic, then changed at a lower pace beyond the 1.5F stage, when the stress became less anisotropic. Finally, the tail diameter decreased nearly linearly between the 1.3F and 1.7F stages, at a lower rate than the body diameter, coinciding with a smaller anisotropic stress in V6. Thus, the local morphological changes within the embryo correlate with locally higher stress in the DV compared to the AP direction.\n\nTo define whether all cells contribute equally\u00a0to the diameter change, we quantified the circumferential width of the epidermal cells H1, V3 and their adjacent DV cells (Figure 3d,e). At the level of V3, the decrease in body diameter came from both seam (V3) and DV cells, whereas in the head, it came mainly from DV cells (Figure 3e). Collectively, our results strongly suggest that stress anisotropy correlates with morphological changes. Furthermore, we found that both seam and DV epidermal cells contribute to the changes in embryo diameter, irrespective of their level of active myosin II.\n\n### The establishment of stress anisotropy depends in part on the spectrin cytoskeleton\n\nTaking the H1 cell as an example, we considered some cellular factors that could contribute to the stress anisotropy in seam cells: (i) actin-anchoring proteins, and\u00a0(ii) muscle-induced tension. To ease comparisons, we defined the anisotropy of stress (AS) as\n\n$$\nAS=\\frac{DV\u00a0stress}{AP\u00a0stress}=\u00a0\\frac{\\sigma_{DV}}{\\sigma_{AP}}\n$$\n\nwhich can be derived from the ratio of the opening along the DV and AP directions, see Equation (1).\n\nFirst, we examined the actin-anchoring spectrin cytoskeleton, which is essential for embryonic elongation (Moorthy et al. 2000;\u00a0Norman and Moerman, 2002;\u00a0Praitis et al., 2005). In spc-1(RNAi) embryos, at a developmental timing equivalent to the 1.7F stage in control embryos, we found a smaller opening in both AP and DV directions and a decrease of AS compared to WT (Figure 3f,g). This may account for the slower elongation rate of spc-1(RNAi) embryos and their arrest at the 2F stage (Figure 3\u2014figure supplement 1). Thus, spectrin partially contributes to the AS at the 1.7F stage.\n\nSecond, we wondered whether muscle contractions, which start after the 1.5F stage, could account for AS changes (Figure 3b). Compared to controls, embryos that are depleted in UNC-112/Kindlin, which mediates sarcomere assembly (Rogalski et al., 2000), showed a significantly larger opening in both the AP and DV directions at the 1.7F stage, but no change in stress anisotropy (Figure 3f,g). This is consistent with their wild-type elongation rate up to the 2F stage (Figure 3\u2014figure supplement 1). Thus, AS establishment in the H1 cell after the 1.5F stage is independent of muscle contractions.\n\n### A mechanical model for seam cell elongation depending on stress anisotropy\n\nTo define the possible causal relationship between the AS and embryonic shape changes, we aimed to simplify the shape of the embryo in\u00a0order\u00a0to allow the application of classical physical laws such as the Young-Laplace equation, which predicts the relationship between surface tension and the surface curvature. As illustrated in Figure 1, the embryo has a circular section and a cylindrical or conical shape depending on the stage, in which the epidermis is relatively\u00a0thin (100 nm to 2 \u00b5m, depending on areas; www.wormatlas.org) when\u00a0compared to the embryo diameter (25 \u00b5m). Within the embryo, the epidermis is subjected to hydrostatic pressure when the section decreases (Priess and Hirsh, 1986). We can thus model the C. elegans embryo as an isotropic thin-wall (the epidermis) vessel with capped ends under hydrostatic pressure, and can\u00a0determine the relationship between the mechanical stress on the epidermis and the embryo shape.\n\nFirst, we calculated the anisotropy of stress on the wall of such a vessel. For an axisymmetric vessel, the AS on the wall depends on the surface curvature and the radius (Appendix 5), which for simple geometrical configurations can be written as shown in Figure 4a\u2013c. Typically, the AS factor, or the DV to AP stress ratio, is equal to one for a sphere, equal to two for a cylinder and takes an intermediate value between 1 and 2 for an ellipsoid. We can simplify the geometry of C. elegans embryos between the 1.3F and 1.5F stages as a curved cylinder (body), attached to a sphere (head) (Figure 4d,e). The head evolves into an ellipsoid between the 1.5F and 1.7F stages (Figure 4f). Thus, the AS of the head can be determined easily. We previously observed that the AP stress among the seam cells at a given stage differs by 20% (Figure 3b). Thus, if we approximate the AP stress as a constant at a given stage, the AS in the body will depend on the ratio of the body to head radius (Figure 4d,e, Appendix 5). Given the head and body diameter of the embryo (Figure 3c), we can compare the AS predicted by the thin-wall vessel model with those derived experimentally using laser ablation (Figure 4g). These values are nearly identical, showing that AS can be predicted on the basis of embryonic geometry.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig4-v3.jpg)\n\n**Figure 4.:** (a, b, c) Anisotropy of stress (AS) for a sphere\u00a0(a), an ellipsoid (b)\u00a0and a cylinder (c)\u00a0with DV and AP axis defined in the schemes; (a, b) show the middle plane; the major and minor axis of the ellipsoid are called a1 and a2. (d, e, f) The embryo is schematized with a spherical (1.3F and 1.5F stages) or ellipsoidal (1.7F stage) head, and a curved cylindrical body. The AS in the head evolves from 1 (sphere) to that of an ellipsoid, whereas the body AS depends on the ratio of body to head radius (R2/R1). (g) Comparison of the predicted AS based on embryo diameter measurements (see Figure 3c) and the measured AS obtained from laser ablation experiments (Figure 3b). (h) Hooke\u2019s law written for an isotropic material like seam cells (Appendix 6A); $\u03f5_{AP}^{s}$ and $\u03f5_{DV}^{s}$ are the relative length changes along the AP and DV directions, respectively. The stress $\\sigma_{AP}^{s}$ and $\\sigma_{DV}^{s}$ along the AP and DV directions are supposed to be contractile (so negative). E, seam cell Young modulus; A, anterior; P, posterior; D, dorsal; V, ventral. (i, j) Dependence of the AP and DV relative length change on the AS for different values of $\\sigma_{AP}^{s}$/E.\n\nTo examine whether the AS can dictate embryonic morphological changes, we related the deformation of the vessel wall with the forces applied using the Hooke\u2019s law (Figure 4h, Appendix 6A) \u2013 for instance, Hooke\u2019s law states that the one-dimensional deformation of a spring is\u00a0equal to the ratio of the applied force to the spring stiffness. Similarly, in a two-dimensional system and for an isotropic material, the deformation is proportional to the mechanical stress (forces) and inversely proportional to the Young modulus (stiffness) along the different loading directions (Figure 4h). The resulting equations, which assume that seam cells have an isotropic cortex and are subjected to contractile stress, correctly predict that the seam cell dimension increases along the AP axis (\u03b5AP) with the AS (Figure 4h\u2013j), and decreases along the DV axis (\u03b5DV). Indeed, consistent with the equations, the head evolves from a sphere to an ellipsoid between the 1.5F to the 1.7F stages as the AS becomes greater than 1 (Figure 3b,c).\n\nIn conclusion, our experimental and modelling data show that the AS induces morphological changes in embryonic seam cells and provide a basis for\u00a0understanding how the embryo elongates from a mechanical standpoint.\n\n### Stiffness anisotropy-based elongation of the DV epidermis\n\nAs shown in Figure 3e, the head diameter reduction primarily involves changes in the circumferential width in the DV epidermis. As the RhoGAP RGA-2 maintains myosin II activation in these cells at a low level (Diogon et al., 2007), actomyosin contractility in DV cells cannot account for such changes. However, in contrast to seam cells,\u00a0DV epidermal cells have circumferentially\u00a0oriented actin bundles (Figure 1b\u2013d), which based on recent observation could affect cell stiffness (Calzado-Mart\u00edn et al., 2016;\u00a0Salker et al., 2016). We thus hypothesized that the circumferential polarized actin distribution in DV epidermal cells could induce greater stiffness in that direction and thereby influences their deformation. To establish whether this is the case, we investigated both stress and stiffness distribution in the epidermal cells dorsal and ventral to the H1 seam cell using laser nano-ablation (Figure 5a). As these cells are the precursors of the HYP7 syncytium, we will denote them HYP7.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig5-v3.jpg)\n\n**Figure 5.:** (a) Scheme showing laser ablation experiments in the epithelial cell HYP7 dorsal and ventral to H1, yellow crosses show cut directions. (b) Cut opening in the DV and AP directions measured in HYP7 between the 1.3F and 1.7F stages (see Figure 2b). p-values of two-tailed t-tests are reported. (c) Comparison of the DV/AP opening ratio in the seam cell H1 and in\u00a0the\u00a0head HYP7 cell. The data were derived from Figures\u00a03b and 5b. To simplify, we will call the cells that\u00a0will\u00a0form the future HYP7 syncytium the HYP7 cells. The average (or computed) values and standard errors are reported. The numbers of embryos used for ablation are given in Supplementary file 1.\n\nIn the HYP7 cell, the opening in the DV direction was larger than\u00a0that in the AP direction (Figure 5b; dorsal and ventral cells behaved similarly after laser cutting) at the 1.5F and 1.7F stages, as was the case in the H1 cell (Figure 3b). However, the ratio of DV/AP opening in HYP7 was greater than that\u00a0in H1 (Figure 5c). Assuming that the HYP7 cell cortex has isotropic material properties like those of H1, our model (Figure 4; Appendix 5) would predict that the DV/AP opening ratio in HYP7 depends only on the head axisymmetric shape and is equal to that of H1, and would thus contradicts our observations. Hence, this suggests that the HYP7 cell has anisotropic cortical material properties.\n\nTo model the DV epidermal cell deformation, we examined two classes of anisotropic stiffness materials that have been described previously: orthotropic materials such as bones (Miller et al., 2002; Helwig et al., 2009), and fiber-reinforced materials such as arteries (Gasser et al., 2006), articular cartilage (Federico and Gasser, 2010) or fibrous connective tissues (Ben Amar et al., 2015). Orthotropic materials have different stiffnesses along orthogonal directions, and thus respond differently to the same stress magnitude along these directions. Fiber-reinforced materials also have different stiffnesses in the directions along and transverse to the fibers; in addition, such materials can respond differently to extensive or compressive stress (Bert, 1977). To define which model best applies to the DV epidermis, we used continuum linear elastic analysis (Muskkhelishvili, 1975;\u00a0Suo, 1990;\u00a0Theocaris, 1986;\u00a0Yoffe, 1951) (Appendix 7) to interpret the laser-cutting data from the DV epidermis. We discarded the orthotropic model, as it did not adequately describe our data (Appendix 8), and focused on the fiber-reinforced plane model, which better accounts for the presence of well aligned actin fibers in DV cells.\n\nIn a fiber-reinforced material that\u00a0is\u00a0composed of a matrix\u00a0\u00a0superimposed with fibers, the contribution of the fibers to the stiffness of the material depends on their orientation. Along the direction parallel to the fibers, the Young modulus of the composite is much increased due to fiber reinforcement, whereas along the direction perpendicular to the fibers, the contribution of the fibers to the composite stiffness\u00a0is small. According to our modelling, the Young modulus along the fiber direction increases linearly with a factor K related to the fiber stiffness and density; whereas the stiffness along the direction transverse to the fibers varies as a hyperbolic function of K and reaches a plateau (Appendix 7). For fiber-reinforcement in the DV direction, the change in Young modulus along the DV and AP directions predicted by modelling is given in Figure 6a,b. Cuts perpendicular to the fibers opened similarly to an isotropic material with the matrix Young modulus, because they locally destroyed the fibers (Figure 6c; see Equation (1) above). By contrast, cuts along the fibers opened with an equilibrium value that depends on the fiber stiffness and distribution through the factor K defined above (Figure 6d, Appendix 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig6-v3.jpg)\n\n**Figure 6.:** (a) Considering a composite material with fiber reinforcement along the DV direction, the ratio of the Young modulus of the composite material along the DV direction, $E_{DV}$, to the Young modulus of the material without fibers (matrix), $E_{0}$, depends linearly on a factor K (see Appendix 7); K is related to fiber density and stiffness. (b) The ratio of the Young modulus along the AP direction, $E_{AP}$, to the matrix Young modulus, $E_{0}$, varies little with K. (c) The opening of the cuts perpendicular to the fibers is similar to an isotropic plane response, and depends on the ratio of DV stress to the matrix Young modulus $\\sigma_{DV}/E_{0}$. (d) The opening\u00a0of the cuts parallel to the fibers depends on the factor K, the ratio of AP/DV stiffness, $E_{AP}/E_{DV}$, and the ratio of stress over Young modulus in the AP direction, $\\sigma_{AP}/E_{AP}$.\n\nSince the H1 seam and the head HYP7 cells are adjacent along the circumference (Figure 3d), they should be under the same DV stress due to tension continuity across cell-cell junctions. According to Equation (1), if the stress in two cells is the same, their opening should vary inversely with their respective Young moduli. As\u00a0the DV opening of HYP7 was about 1.5 times smaller than that of H1 (Figure 7a), we infer that the Young modulus of the HYP7 matrix without fibers was about 1.5 times stiffer than that of H1 (Appendix 9), suggesting that these cells have distinct material properties. Comparing the DV and AP opening for the HYP7 cell, we found that the factor K increased during early elongation (Figure 7b; Appendix 10). More importantly, the calculated ratio of DV/AP Young moduli also increased, and was greater than the DV/AP stress anisotropy (Figure 7c).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig7-v3.jpg)\n\n**Figure 7.:** (a) The cut opening in HYP7 is linearly related to the cut opening in H1. The slope of the linear regression gives the ratio of the HYP7 matrix without fibers to H1 Young moduli. (b) The factor K increases during elongation from the 1.3F to 1.7F stages. (c) The ratio of DV/AP stiffness increases and is greater than the AS during early elongation. The data were derived from Figure 3c and Appendix\u00a010. (d) Hooke\u2019s law written for a fiber-reinforced material such as DV cells (Appendix 6B). $\u03f5_{AP}$ and $\u03f5_{DV}$ are the relative length change along the AP and DV directions, respectively. The stresses $\\sigma_{AP}$ and $\\sigma_{DV}$ along the AP and DV directions,\u00a0respectively are supposed to be tensile (so positive). $E_{AP}$ and $E_{DV}$ are the Young moduli in the DV cells along the AP and DV direction, respectively. \u03bd1 and \u03bd2 are Poisson\u2019s ratios in DV cells; \u03c9 is the $E_{DV}/E_{AP\u00a0}ratio$. A, anterior; P, posterior; D, dorsal; V, ventral. (e) Dependence of the AP relative length change $\u03f5_{AP}\u00a0$\u00a0on the ratio of DV/AP stiffness \u03c9 for different values of AS and $\\sigma_{AP}/E_{AP}$; the \u03bd1 value is taken to be 1. (f) Dependence of the DV relative length change $\u03f5_{DV}\u00a0$\u00a0on the ratio of DV/AP stiffness \u03c9 for different values of AS and $\\sigma_{DV}/E_{DV}$; the \u03bd2 value is taken to be 1. For (a\u2013c), the average (or computed) values and standard errors are reported.\n\nTo understand how a change in stiffness affects head HYP7 deformation, we again applied\u00a0Hooke\u2019s law to these cells (Appendix 6B; Figure 7d). As myosin II activity in DV cells is low, their cortex should be exposed to tensile stress induced by actomyosin contractility in the seam cells. The cell length along the AP direction increased when the stiffness anisotropy (DV/AP stiffness ratio) increased (Figure 7d,e), whereas the trend was opposite in the DV direction (Figure 7d,f). Thus, the stiffness anisotropy helps the HYP7 cell to\u00a0extend along the AP direction and to\u00a0shrink along the DV direction. Interestingly, the equations predict that increasing stress anisotropy has an opposite effect on HYP7 cell deformation, as it prevents these\u00a0cells from extending antero-posteriorly (Figure 7e). Altogether, our model strongly suggests that when the DV/AP stiffness anisotropy increases and is greater than the DV/AP stress anisotropy, as observed in the head HYP7 (Figure 7c), elongation along the AP direction is favored. Furthermore, our data demonstrate that the distinct mechanical properties of the\u00a0cells composing a complex tissue enables its morphogenesis ,\u00a0which\u00a0does not require all cells to be contractile.\n\n### Stress and stiffness anisotropies correlate with actin arrangement\n\nMyosin II is not polarized (Figure 1e,f), but\u00a0to find out whether actin distribution accounts for the stress and stiffness anisotropies, we carried out an analysis of actin filament alignment in the seam cells H1 and V3, as well as in the head HYP7 cell. We found that the polarization of actin filaments in seam cells correlated with the observed pattern of stress anisotropy. Indeed, in H1 at the 1.3F stage, actin filaments had a nearly isotropic angular distribution correlating with the isotropic stress (Figure 8a, Figure 3b), whereas they became increasingly aligned along the DV direction from the 1.3F to the\u00a01.7F stage (Figure 8a), mirroring the increasing stress anisotropy from 1.3F to 1.7F (Figure 3b). Likewise, actin alignment decreased along the DV direction in V3 from the 1.3F to the 1.5F stage, in parallel to the decrease of stress anisotropy between those stages (Figures 8b and 3b). The changes in H1 (Figure 8c), but\u00a0not in V3 (Figure 8d), were statistically significant. In the HYP7 cell, actin filaments already acquired a preferential DV alignment at the 1.3F stage (Figure 8c), but became increasingly organized along the DV direction as the embryo elongated to the 2F stage, with a highly significant difference between the 1.5F and 1.7F stages (Figure 8c and f). These changes correlated with the increased stiffness anisotropy observed in the HYP7 cell (Figure 7c).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23866/elife-23866-fig8-v3.jpg)\n\n**Figure 8.:** (a\u2013c) Angle distribution of actin filaments in the seam cell H1 (a), seam V3 (b) and the HYP7 cell (c), at different elongation stages. D, dorsal; V, ventral; A, anterior; P, posterior. 90\u00b0 correspond to DV direction. (d, e, f) Comparison of the peak values at 90\u00b0\u00a0\u00b1\u00a08\u00b0 (DV direction) of angular distribution showed in (a, b, c), respectively. p-values of two-tailed t-tests\u00a0are reported. (g) (Left) The anisotropy of mechanical stress generated by the polarized actomyosin network and medial myosin pulses promote Drosophila germband extension. (Right) The interplay of stress anisotropy (generated in seam cells - red) and stiffness anisotropy (DV cells \u2013 white) promote C. elegans embryo elongation. Note that, although myosin II does not display a polarized distribution within individual C. elegans epidermal cells as\u00a0it\u00a0does in Drosophila germband epithelial cells, its enrichment in seam cells along the circumference is reminiscent of the localized myosin II enrichment at vertical junctions in Drosophila. A, anterior; P, posterior. For (a\u2013f), the average values and standard errors are reported.\n\nWe have attempted to test functionally\u00a0how actin organization could affect stress and stiffness by manipulating actin polymerization through two different strategies to express cofilin during early elongation. However, we could not obtain meaningful results. Altogether, we conclude that the pattern of actin distribution showed a good correlation with the observed stress and stiffness anisotropy. It will remain important to define the mechanisms that\u00a0mediate changes in actin distribution, and ultimately to\u00a0determine\u00a0whether this\u00a0distribution is a cause or a consequence of anisotropy.\n\n## Discussion\n\nClassical experiments in embryology have outlined how the juxtaposition of cells that\u00a0have different properties is crucial in powering important morphogenetic movements, such as Xenopus gastrulation (Hardin and Keller, 1988;\u00a0Keller and Winklbauer, 1992). In this work, we have dissected the mechanical contributions of the different epidermal cells driving C. elegans embryonic morphogenesis at single-cell resolution, highlighting the importance of juxtaposition of cells with different properties. Combining laser nano-ablation and continuum mechanics modelling, we first highlight the importance of stress anisotropy in the seam cells. Second, we emphasize that stiffness anisotropy is equally important for embryonic elongation but matters in another epidermal cell type, the DV cells. Thereby, we reveal the critical role of tissue material properties in morphogenesis.\n\nMany studies analysing morphogenetic processes have focused on 2D epithelial sheets such as the Drosophila mesoderm (Martin et al., 2009), germband (Rauzi et al., 2008, 2010;\u00a0Blankenship et al., 2006;\u00a0Fernandez-Gonzalez and Zallen, 2011), amnioserosa (Solon et al., 2009;\u00a0Gorfinkiel et al., 2009), wing and thorax (Aigouy et al., 2010;\u00a0Bosveld et al., 2012), or the zebrafish enveloping cell layer (Behrndt et al., 2012) during embryonic development. They have revealed the role of contractile actomyosin pulses and planar polarity in coordinating events over long distances. The C. elegans embryonic elongation is distinct from those situations because it does not involve myosin-II-polarized distribution nor actomyosin pulses. Interestingly, this process still requires stress anisotropy, outlining that stress anisotropy can be produced by different means.\n\nWe suggest that several factors contribute to establish stress anisotropy in C. elegans. First, the actin network displayed a more polarized dorso-ventral distribution in seam cells when the stress anisotropy was higher, which should increase the stress in that direction. Second, akin to a planar polarized distribution, myosin II activity displays an asymmetric distribution along the embryo circumference in cells with different material properties (Figure 8g). Intriguingly, tissue culture cells can sense the spatial stiffness distribution (Walcott and Sun, 2010;\u00a0Fouchard et al., 2011;\u00a0Trichet et al., 2012;\u00a0Lange and Fabry, 2013), raising the possibility that seam cells sense the higher circumferential stiffness and respond with higher DV-oriented stress through the mechanosensitive adherens junctions (le Duc et al., 2010; Yonemura et al., 2010). Third, we found that the spectrin cytoskeleton has a significant role in establishing normal levels of stress magnitude and anisotropy. Spectrin is known to impinge on actin filament alignment and continuity in DV cells (Praitis et al., 2005;\u00a0Norman and Moerman, 2002) and could thus affect DV stiffness anisotropy by reducing the level of actin fiber alignment. Finally, although myosin II activity is low in DV cells (Diogon et al., 2007), the remaining activity might create some DV-oriented stress feeding back on seam cells.\n\nBy modelling the DV cells as a fiber-reinforced material, we reveal how the polarized cytoskeleton in DV cells increases their stiffness to orient the extension in the AP direction, acting like a \u2018molecular corset\u2019. Related \u2018molecular corsets\u2019 have been described and proposed to drive axis elongation in other systems (Wainwright, 1988). In Drosophila, a network of extracellular matrix fibrils was proposed to help elongate developing eggs (Haigo and Bilder, 2011). In plant cells, the orientation of cellulose microfibrils determines the axis of maximal expansion. In the latter, stiffness anisotropy also helps overcome stress anisotropy (Green, 1962;\u00a0Baskin, 2005). Importantly, C. elegans embryos reduce their circumference during elongation, whereas Drosophila eggs and plants increase it. This suggests that to conserve the actin reinforcement properties when the diameter decreases, C. elegans DV epidermal cells should have a mechanism to actively shorten the actin bundles, as observed in a biomimetic in vitro system (Murrell and Gardel, 2012).\n\nOur experimental data were consistent with the predictions from Hooke\u2019s law. They prove that the actomyosin cortex preferentially squeezes the embryo circumferentially, and that the stress anisotropy is tightly linked to the geometry of the embryo. By quantitatively assessing the contribution of stiffness anisotropy in tissue elongation, we have emphasized its importance relative to the more established role of stress anisotropy. The precise relationship between both anisotropies remains to be investigated. Thus, the juxtaposition of cells with different \u2018physical phenotypes\u2019, seam epidermis expressing stress anisotropy and DV epidermal cell showing stiffness anisotropy, powers C. elegans elongation, as previously suggested in chicken limb bud outgrowth (Damon et al., 2008) or chick intestinal looping (Savin et al., 2011). We did not mention other potential stress-bearing components, such\u00a0as microtubules and the embryonic sheath (Priess and Hirsh, 1986), as the former mainly serves to enable protein transport (Quintin et al., 2016) whereas the function of the latter will be the focus of an upcoming work.\n\nIn conclusion, our work shows that tissue elongation relies on two fundamental physical quantities (mechanical stress and tissue stiffness), and provides the most advanced mesoscopic understanding to date of the mechanics at work during the first steps of C. elegans embryonic elongation.\n\n## Materials\u00a0and\u00a0methods\n\n### C. elegans alleles and strains\n\nBristol N2 was used as the wild-type (WT) strain and animals were maintained as described in Brenner (1974). The strain ML1540: mcIs50[lin-26p::vab-10(abd)::gfp; myo-2p::gfp] LGI carrying the actin-binding domain (ABD) of the protein VAB-10 under the epidermal promoter lin-26 has\u00a0been described elsewhere (Gally et al., 2009). The endogenous NMY-1::GFP reporter strain was built by CRISPR knock-in (ML2540: nmy-1(mc82)[nmy-1::gfp] LGX; the NMY-2::GFP reporter strain LP162 nmy-2(cp13)[nmy-2::gfp + LoxP] LGI was a generous gift from Daniel Dickinson.\n\nFor parallel calcium and actin imaging during ablation, we used the strain ML2142: mcIs43 [lin26p:: vab-10::mCherry; myo-2p::gfp]; juIs307[dpy-7p::GCaMP3] carrying a calcium sensor under the epidermal promoter dpy-7p and mCherry-labeled VAB-10(ABD) under the lin-26 promoter. The thermosensitive Rho kinase mutation let-502(sb118ts) was crossed with ML1540 to give the strain ML2216: let-502(sb118ts); mcIs50[lin-26p::vab-10(abd)::gfp; myo-2p::gfp] LGI.\n\nFor determining morphological changes, we used the strain ML2386: mcIs50[lin-26p::vab-10(abd)::gfp; myo-2p::gfp] I; xnIs97[hmr-1::gfp] III,\u00a0which expresses both a junctional marker (HMR-1/E-cadherin) and an actin marker (VAB-10(ABD)).\n\nFor actin alignment analysis, we used the ML1966 unc-119(ed3) mcIs67 [dpy7p::LifeAct::GFP; unc-119(+)] strain, expressing the actin reporter LIFEACT under the dpy-7 epidermal promoter.\n\n### RNA interference\n\nRNAi experiments were done using injection of double-stranded RNA synthesized from PCR-amplified genomic fragments using a T3 or T7 mMESSAGE mMACHINE Kit (Ambion, Austin, TX, USA). The embryos were analyzed from 24 hr to 48 hr post-injection.\n\n### Time-lapse analysis and morphological change quantification\n\nFreshly laid embryos or embryos from dissected hermaphrodites were mounted on 5% agarose pads in M9 buffer and the coverslip was sealed with paraffin oil. DIC time-lapse movies were recorded at 20\u00b0C using a Leica DM6000 upright microscope with a 40X oil immersion objective. For each embryo, a Z-stack of 7\u20138 focal planes with 4 \u03bcm step size was acquired. The length of embryos was estimated by tracing the embryo body axis (through the middle of the embryo). Fluorescence time-lapse movies were recorded at 20\u00b0C using a spinning-disk Zeiss microscope Axio Observer.Z1 using a 63X oil immersion objective. Other fluorescence images were acquired with the same microscope using a 100X oil immersion objective. To determine the morphological changes in the embryo, sections of the embryo imaged with junctional and actin markers at the level of H1, V3 and V6 were reconstructed to determine the radius, seam and DV cell width along the circumferential direction. All images were analyzed using the ImageJ (FiJi) software (NIH, Bethesda, Maryland, USA; http://rsb.info.nih.gov/ij/) and MATLAB R2014b (The MathWorks Inc., Natick, MA).\n\n### Actin alignment analysis\n\nZ-stack images of LIFEACT::GFP fluorescence expression in the epidermis were acquired using a confocal Leica SP5 microscope with a 63X oil immersion objective and zoom factor 8. We used a step size of 0.08 \u03bcm, a pinhole opening of 0.6 Airy Unit and projected 2 \u03bcm around the actin cortex. The embryos were rotated on the scan field to have the same antero-posterior orientation. The acquired images were deconvoluted using the Huygens Essential software from Scientific Volume Imaging (Hilversum, Netherlands). We chose a region of interest (ROI) of 4 \u00d7 4 \u03bcm2 within the seam cell H1 or dorso-ventral epidermal cell HYP7, and of 3 \u00d7 3 \u03bcm2 within the seam cell V3 to perform Fast Fourier Transform (FFT). We used a high-pass filter to remove the low frequencies then did inverse FFT. We found that the high pass filter removed changes in intensity due to unequal labelling or out of focus signals but retained the actin texture. Finally, we used an ImageJ plugin, \u2018Spectral Texture Analysis\u2019, written by Julien Pontabry to derive the angle distribution of actin texture. This plugin performed the Fast Fourier Transform (FFT) of the given ROI and computing coefficients in Fourier space, such as the angle distribution of the given structure, as detailed in Gonzalez and Woods (2008). Digital image processing, Nueva Jersey, chapter 11, section 3.3 (Gonzalez, 2008).\n\n### Embryo staging for ablation\n\nFor ablations, we compared embryos of the same developmental timing. To do so, we recorded the elongation curve of different genetics background (Figure 3\u2014figure supplement 1) and took embryos at the corresponding developmental time from the beginning of elongation. Thus, unc-112(RNAi) embryos elongating up to 1.7F similarly to WT have the same length as WT at 1.7F stage. By contrast, spc-1(RNAi) embryos elongated slower than WT (Figure 3\u2014figure supplement 1) and thus at a time corresponding to 1.7F in a control embryos were shorter than wild-type embryos\u00a0at\u00a01.7F stage. For comparison between let-502(sb118ts) embryos, measurements were carried out at 25.5\u00b0C and the embryos were taken when muscles started to twitch (at\u00a0around 1.5F in control embryos).\n\n### Laser ablation\n\nLaser ablation was performed using a Leica TCS SP8 Confocal Laser Scanning microscope, with a femtosecond near-infrared Coherent Chameleon Vision II, Ti:Sapphire 680\u20131080 nm laser, 80 MHz. To make a line cut, a region of interest with a length varying from 3 \u03bcm\u00a0to 6 \u03bcm and a width of 0.08 \u03bcm (1 pixel width) was drawn. We used a laser wavelength varying from 800 nm to 900 nm, which gave consistent ablation responses. The laser power was tuned before each imaging section to obtain local disruption of the cortex response (>80% of the cases, visible opening, no actin accumulation around cell borders in the repair process and the ablated embryos developed normally). Typically, the power of the laser was 2000 mW, and we used 50% power at 100% gain. Wounding response (actin accumulation around cell borders in the repair process, embryo died afterwards) was rarely observed at the power used for local disruption, but more often when the power was increased to 60\u201365%. The first time point was recorded 1.44 s after cutting, which corresponded to the time needed to reset the microscope from a two-photon to a regular imaging configuration. The image scanning time recorded by the software was usually less than 400 ms, so the total exposure time of the chosen ROI to multiphoton laser was less than 1 ms. The cuts were oriented either in the antero-posterior (AP) or dorso-ventral (DV) directions relative to the global orientation of the embryos. After ablation, the embryos were monitored to see whether they continued to develop normally or whether\u00a0they expressed the desired phenotype. More precisely, we verified whether embryos ablated at 1.3F and 1.5F developed past the 2F stage, whether\u00a0embryos ablated at 1.7F developed past the 2.5F stage, and\u00a0whether\u00a0unc-112(RNAi) embryos and spc-1(RNAi) embryos arrested at 2F stage.\n\n### Laser ablation image processing and data analysis\n\nThe shape of the cut opening was detected using the Active Contour plugin ABsnake (Boudier, 1997). A starting ROI was drawn around the opening as the initiation ROI for ABsnake. After running the plugin, the results were checked and corrected for detection errors. The detected shape was fitted with an ellipse to derive the minor axis, major axis and the angle formed by the major axis with the initial cut direction. The average opening of the five last time points before the repair process began (Figure 2\u2014figure supplement 1, from around 8 to 10 s after cutting) was taken as the opening at equilibrium. The standard error of the mean is\u00a0reported.\n\nThe curve fit was performed on the average value of the cut opening (defined as the minor axis/initial cut length) using GraphPad Prism 5.00 (San Diego, California, USA) and the equation of one-phase association:\n\n$$\ny=y_{0}+(Plateau\u2212y_{0})*(1\u2212e^{\u2212\\gammat})\n$$\n\nwhere y0 is the initial width of the cut opening, Plateau is the minor axis of the opening at equilibrium and \u03b3 is the relaxation rate. The standard error of the mean given by the software is reported.\n\n### Statistical analysis\n\nThe two-tailed t-test was performed on the average of the last five time points (from about 8 s to 10 s) of the cut opening using MATLAB R2014b (The MathWorks Inc., Natick, MA). Z-test was performed using QuickCalcs of GraphPad Prism (San Diego, California, USA) to compare the anisotropy of stress (AS), the relaxation half-time and the initial recoil speed of the cut opening.\n",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "552fec95-59ff-4b5d-81b1-55917dcb0a12",
+      "submission_id": "94d0c988-f1c7-4058-8d85-50400d4cfcb6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research , India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23866.025](https://doi.org/10.7554/eLife.23866.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: minor issues and corrections have not been included, so there is not an accompanying Author response.]\n\nCongratulations, we are pleased to inform you that your article, \"The interplay of stiffness and force anisotropies drive embryo elongation\", has been accepted for publication in eLife. If you have selected our \"Publish on Acceptance\" option, your PDF will be published within a few days; if you have opted out of the \"Publish on Acceptance\" option, your work will be published in about four weeks' time. Please take note of the points below and we hope you will continue to support eLife going forwards.\n\nReviewer #1:\n\nThis manuscript addresses the mechanobiology of cell and tissue shape changes in the context of C. elegans embryonic epidermal elongation. The authors use an impressive combination of laser surgery, live imaging, and mathematical modeling to dissect out the roles of forces and tissue stiffness in elongation. Anisotropies in stiffness in the dorsoventral epidermal cells are found to account for directed elongation in the anterior posterior axis. Without giving a precis of the entire work, this was a very rigorous investigation.\n\nThe investigation into stiffness is distinctive and sets this apart from other studies of forces in tissue shape change. From a technical standpoint the biology is complete and very high quality and I have no substantive concerns. The mathematical modeling is beyond my expertise to evaluate. However, I am impressed by the close agreement between the authors' models and their measurements.\n\nReviewer #2:\n\nI read this article with great interest. It is very well written and conducted. It presents an exciting blend of results. To me the most important advance was the demonstration that the mechanical properties of tissue play a significant role in embryonic elongation. The mix of modelling and experimental results brings out most impressive results. The paper should be published as is in my opinion.\n",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "13ae1895-3037-429d-9b67-d340cabee49d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C1",
+      "claim": "C. elegans embryonic elongation involves a four-fold increase in length without cell migration, cell division, or a notable change in embryonic volume.",
+      "claim_type": "EXPLICIT",
+      "source": "During its elongation, the embryo evolves from a lima-bean shape to a typical cylindrical shape with a four-fold increase in length, without cell migration, cell division, or a notable change in embryonic volume (Sulston et al., 1983; Priess and Hirsh, 1986) (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Sulston et al., 1983; Priess and Hirsh, 1986) and reference to Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "815c3685-a412-43b4-83e9-5979b1094142",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C2",
+      "claim": "Embryonic elongation requires the epidermal actomyosin cytoskeleton, which acts mostly in the lateral epidermis (seam cells).",
+      "claim_type": "EXPLICIT",
+      "source": "This process requires the epidermal actomyosin cytoskeleton, which acts mostly in the lateral epidermis (also called seam cells), while the dorso-ventral (DV) epidermal cells may remain passive (Appendix 1) (Wissmann et al., 1997; 1999; Shelton et al., 1999; Piekny et al., 2003; Diogon et al., 2007; Gally et al., 2009; Chan et al., 2015; Vuong-Brender et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work and reference to Appendix 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "98d10340-64d6-4b00-86e9-f3efc4f5ed50",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C3",
+      "claim": "Non-muscle myosin II is concentrated in seam cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the non-muscle myosin II is concentrated in seam cells; in addition, short disorganized actin filaments, which favour actomyosin contractility, are present in seam cells but not in the DV epidermis, where they instead form parallel circumferential bundles (Figure 1b\u2013d) (Gally et al., 2009; Priess and Hirsh, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Gally et al., 2009; Priess and Hirsh, 1986) and reference to Figure 1b-d.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e169b8b2-5330-49ef-a87c-fa17d3c457ff",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C4",
+      "claim": "Short disorganized actin filaments are present in seam cells but not in the DV epidermis, where they instead form parallel circumferential bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the non-muscle myosin II is concentrated in seam cells; in addition, short disorganized actin filaments, which favour actomyosin contractility, are present in seam cells but not in the DV epidermis, where they instead form parallel circumferential bundles (Figure 1b\u2013d) (Gally et al., 2009; Priess and Hirsh, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Gally et al., 2009; Priess and Hirsh, 1986) and reference to Figure 1b-d.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "9eb52d33-a765-48f6-a91e-d3ca5127ac24",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C5",
+      "claim": "Actomyosin forces are thought to squeeze the embryo circumferentially, thereby increasing the hydrostatic pressure and promoting embryo elongation in the antero-posterior direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The actomyosin forces are thought to squeeze the embryo circumferentially, thereby increasing the hydrostatic pressure and promoting embryo elongation in the antero-posterior (AP) direction (Priess and Hirsh, 1986) (Figure 1e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Priess and Hirsh, 1986) and reference to Figure 1e.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "741258e7-51a1-494b-a9c9-4b5b02ae686b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C6",
+      "claim": "Myosin II does not show a polarized distribution in C. elegans embryonic epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, myosin II does not show a polarized distribution (Figure 1f,g), nor does it display dynamic pulsatile foci at this stage; hence, it is difficult to account for the circumferential squeezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to Figure 1f,g showing myosin II distribution.",
+      "evidence_type": "[\"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "3ed7b86a-55ba-4ec8-849b-579c647d6b94",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C7",
+      "claim": "Myosin II does not display dynamic pulsatile foci during early C. elegans embryonic elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, myosin II does not show a polarized distribution (Figure 1f,g), nor does it display dynamic pulsatile foci at this stage; hence, it is difficult to account for the circumferential squeezing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations at the stage being studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "5d596366-54f2-4551-9a1f-740172565e19",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C8",
+      "claim": "The opening hole within the actin cytoskeleton after laser ablation reached equilibrium in less than 10 s in more than 80% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first (accounting for >80% of the cases), the opening hole within the actin cytoskeleton reached equilibrium in less than 10 s, and resealed within less than 2 min (Figure 2\u2014figure supplement 1, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations and reference to Figure 2\u2014figure supplement 1 and Video 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "d468cc4e-dd81-47d1-9242-a6e2de8dca55",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C9",
+      "claim": "The opening hole within the actin cytoskeleton after laser ablation resealed within less than 2 min in more than 80% of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first (accounting for >80% of the cases), the opening hole within the actin cytoskeleton reached equilibrium in less than 10 s, and resealed within less than 2 min (Figure 2\u2014figure supplement 1, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations and reference to Figure 2\u2014figure supplement 1 and Video 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "fe6ea3ff-016a-44b7-befd-af8d20679dbc",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C10",
+      "claim": "The opening in the seam cell H1 at the 1.5F stage in let-502(sb118ts) embryos was significantly smaller than that in WT embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2c, the opening in the seam cell H1 at the 1.5F stage in let-502(sb118ts) embryos changed very little and was significantly smaller than that in WT embryos, consistent with a decrease in mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "77a6a5f5-a434-4564-824b-b1bc604730dd",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C11",
+      "claim": "The reduced opening in let-502(sb118ts) embryos is consistent with a decrease in mechanical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2c, the opening in the seam cell H1 at the 1.5F stage in let-502(sb118ts) embryos changed very little and was significantly smaller than that in WT embryos, consistent with a decrease in mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing reduced opening in let-502 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "74c659f7-4e67-4df4-a773-0886ad734ccf",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C12",
+      "claim": "At the 1.3F stage in H1, there was no significant stress anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 1.3F stage in H1, there was no significant stress anisotropy; however, as the embryo elongated to the 1.5F and 1.7F stages, the stress became anisotropic (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "a4d0053d-ce67-4461-bca5-6bad95eba0bb",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C13",
+      "claim": "As the embryo elongated to the 1.5F and 1.7F stages, the stress in H1 became anisotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "At the 1.3F stage in H1, there was no significant stress anisotropy; however, as the embryo elongated to the 1.5F and 1.7F stages, the stress became anisotropic (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1ee4ac2d-f448-485d-9911-400fff4bbb03",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C14",
+      "claim": "In V3, the anisotropy of stress evolved in the opposite direction compared to H1, with higher stress anisotropy at the 1.3F stage compared to the 1.5F stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In V3, the anisotropy of stress evolved in the opposite direction, with higher stress anisotropy at the 1.3F stage compared to the 1.5F stage (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4adf5ea6-debe-4f04-87a9-144c32633d75",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C15",
+      "claim": "In V6, the stress was slightly anisotropic at both the 1.3F and the 1.5F stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In V6, the stress was slightly anisotropic at both the 1.3F and the 1.5F stage (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4cf15f0d-ac24-47e0-aab5-e1a59f1efb43",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C16",
+      "claim": "Whenever the stress became anisotropic in seam cells, it was higher in the DV direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cells, whenever the stress became anisotropic, it was higher in the DV direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations across multiple cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "da109626-ef64-4606-a431-089b3577e609",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C17",
+      "claim": "The head diameter did not diminish between the 1.3F and 1.5F stages when the stress was nearly isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "The head diameter did not diminish between the 1.3F and 1.5F stages when the stress was nearly isotropic, but decreased significantly between the 1.5F and 1.7F stages as the stress anisotropy increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological measurements and correlation with stress data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1581e3b8-920f-48b3-a581-c6d5952b314f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C18",
+      "claim": "The head diameter decreased significantly between the 1.5F and 1.7F stages as the stress anisotropy increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The head diameter did not diminish between the 1.3F and 1.5F stages when the stress was nearly isotropic, but decreased significantly between the 1.5F and 1.7F stages as the stress anisotropy increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological measurements and correlation with stress data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "6b623d03-f7f3-4640-ae85-3af527f49579",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C19",
+      "claim": "The body diameter decreased most rapidly between the 1.3F and 1.5F stages, when the stress was highly anisotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the body diameter decreased most rapidly between the 1.3F and 1.5F stages, when the stress was highly anisotropic, then changed at a lower pace beyond the 1.5F stage, when the stress became less anisotropic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological measurements and correlation with stress data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4358e8a2-3100-4b14-8b7f-a26ee27896b5",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C20",
+      "claim": "The local morphological changes within the embryo correlate with locally higher stress in the DV compared to the AP direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the local morphological changes within the embryo correlate with locally higher stress in the DV compared to the AP direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis between morphological changes and stress measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "35ce1fcb-ec5b-4fba-b73c-ff3d770c0387",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C21",
+      "claim": "At the level of V3, the decrease in body diameter came from both seam (V3) and DV cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of V3, the decrease in body diameter came from both seam (V3) and DV cells, whereas in the head, it came mainly from DV cells (Figure 3e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of cell width shown in Figure 3e.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1d1c9c18-951a-4c81-9bc7-97738d19febe",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C22",
+      "claim": "In the head, the decrease in diameter came mainly from DV cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of V3, the decrease in body diameter came from both seam (V3) and DV cells, whereas in the head, it came mainly from DV cells (Figure 3e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurements of cell width shown in Figure 3e.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "90e4d6e2-d301-421c-bf99-a96d65f44359",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C23",
+      "claim": "Both seam and DV epidermal cells contribute to the changes in embryo diameter, irrespective of their level of active myosin II.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that both seam and DV epidermal cells contribute to the changes in embryo diameter, irrespective of their level of active myosin II.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations of cell width changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "abe94a87-72b4-4e91-82e3-1cbdb84b76ea",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C24",
+      "claim": "In spc-1(RNAi) embryos at a developmental timing equivalent to the 1.7F stage, there was a smaller opening in both AP and DV directions compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In spc-1(RNAi) embryos, at a developmental timing equivalent to the 1.7F stage in control embryos, we found a smaller opening in both AP and DV directions and a decrease of AS compared to WT (Figure 3f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3f,g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "bffeda84-0104-4df3-8a44-305a3058c072",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C25",
+      "claim": "In spc-1(RNAi) embryos at a developmental timing equivalent to the 1.7F stage, there was a decrease of AS compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In spc-1(RNAi) embryos, at a developmental timing equivalent to the 1.7F stage in control embryos, we found a smaller opening in both AP and DV directions and a decrease of AS compared to WT (Figure 3f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3f,g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "823274d4-3d8a-4b8f-83a0-16e63b2f98b1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C26",
+      "claim": "The reduced opening and AS in spc-1(RNAi) embryos may account for their slower elongation rate and arrest at the 2F stage.",
+      "claim_type": "EXPLICIT",
+      "source": "This may account for the slower elongation rate of spc-1(RNAi) embryos and their arrest at the 2F stage (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data correlating mechanical properties with elongation phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e731d047-c547-4ac9-8f4d-b56eaf92f49a",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C27",
+      "claim": "Spectrin partially contributes to the AS at the 1.7F stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, spectrin partially contributes to the AS at the 1.7F stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the spc-1(RNAi) experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "7ce8b204-6587-4066-af75-791f615e7c0a",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C28",
+      "claim": "Embryos depleted in UNC-112/Kindlin showed a significantly larger opening in both the AP and DV directions at the 1.7F stage compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, embryos that are depleted in UNC-112/Kindlin, which mediates sarcomere assembly (Rogalski et al., 2000), showed a significantly larger opening in both the AP and DV directions at the 1.7F stage, but no change in stress anisotropy (Figure 3f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3f,g and citation to prior work (Rogalski et al., 2000).",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "2b5f0c90-b908-4eb6-919c-1fe2ec776208",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C29",
+      "claim": "Embryos depleted in UNC-112/Kindlin showed no change in stress anisotropy at the 1.7F stage compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, embryos that are depleted in UNC-112/Kindlin, which mediates sarcomere assembly (Rogalski et al., 2000), showed a significantly larger opening in both the AP and DV directions at the 1.7F stage, but no change in stress anisotropy (Figure 3f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3f,g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "d06204c1-7ab6-42c4-9e34-993b326e0223",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C30",
+      "claim": "AS establishment in the H1 cell after the 1.5F stage is independent of muscle contractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, AS establishment in the H1 cell after the 1.5F stage is independent of muscle contractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the unc-112(RNAi) experimental results showing no change in AS despite muscle defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "04e52cd9-ca20-4fa7-85ca-5a6111629b8b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C31",
+      "claim": "The AS of the head can be determined based on embryo geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the AS of the head can be determined easily.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the application of thin-wall vessel model to the embryo geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e9c2e468-5e7b-44ba-bc19-37c548c78f86",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C32",
+      "claim": "The AS predicted by the thin-wall vessel model is nearly identical to those derived experimentally using laser ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the head and body diameter of the embryo (Figure 3c), we can compare the AS predicted by the thin-wall vessel model with those derived experimentally using laser ablation (Figure 4g). These values are nearly identical, showing that AS can be predicted on the basis of embryonic geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of model predictions with experimental data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "294f2065-b8a6-426e-a99b-a395e74806b1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C33",
+      "claim": "AS can be predicted on the basis of embryonic geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are nearly identical, showing that AS can be predicted on the basis of embryonic geometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the agreement between model predictions and experimental measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "32f65b16-8cc6-4ecb-a610-affdb7350562",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C34",
+      "claim": "The AS induces morphological changes in embryonic seam cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our experimental and modelling data show that the AS induces morphological changes in embryonic seam cells and provide a basis for understanding how the embryo elongates from a mechanical standpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on combined experimental data and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4276d420-3ac1-4553-b756-cbaa8ff64ea2",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C35",
+      "claim": "In the HYP7 cell, the opening in the DV direction was larger than that in the AP direction at the 1.5F and 1.7F stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HYP7 cell, the opening in the DV direction was larger than that in the AP direction (Figure 5b; dorsal and ventral cells behaved similarly after laser cutting) at the 1.5F and 1.7F stages, as was the case in the H1 cell (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "da47f74b-2596-44d1-b22c-0c1b3e9d5b1f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C36",
+      "claim": "Dorsal and ventral HYP7 cells behaved similarly after laser cutting.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HYP7 cell, the opening in the DV direction was larger than that in the AP direction (Figure 5b; dorsal and ventral cells behaved similarly after laser cutting) at the 1.5F and 1.7F stages, as was the case in the H1 cell (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations during laser ablation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "a7f7a7f8-e21a-4fca-a1a1-b5b50623b372",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C37",
+      "claim": "The ratio of DV/AP opening in HYP7 was greater than that in H1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ratio of DV/AP opening in HYP7 was greater than that in H1 (Figure 5c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "091b240c-a188-41d8-a8e6-7b622000b4a1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C38",
+      "claim": "The HYP7 cell has anisotropic cortical material properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, this suggests that the HYP7 cell has anisotropic cortical material properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the discrepancy between model predictions for isotropic material and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "9f06a6f8-7a45-4c03-8c20-91dbf3774004",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C39",
+      "claim": "The Young modulus of the HYP7 matrix without fibers was about 1.5 times stiffer than that of H1.",
+      "claim_type": "EXPLICIT",
+      "source": "As the DV opening of HYP7 was about 1.5 times smaller than that of H1 (Figure 7a), we infer that the Young modulus of the HYP7 matrix without fibers was about 1.5 times stiffer than that of H1 (Appendix 9), suggesting that these cells have distinct material properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data shown in Figure 7a and calculations in Appendix 9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "fdfe96ca-8cb3-4eee-ae0a-8b6675355285",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C40",
+      "claim": "H1 and HYP7 cells have distinct material properties.",
+      "claim_type": "EXPLICIT",
+      "source": "As the DV opening of HYP7 was about 1.5 times smaller than that of H1 (Figure 7a), we infer that the Young modulus of the HYP7 matrix without fibers was about 1.5 times stiffer than that of H1 (Appendix 9), suggesting that these cells have distinct material properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from experimental data and modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1723c753-d9af-481a-802b-b8e52cbdf01a",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C41",
+      "claim": "The factor K increased during early elongation in HYP7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the DV and AP opening for the HYP7 cell, we found that the factor K increased during early elongation (Figure 7b; Appendix 10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calculations shown in Figure 7b and Appendix 10.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "04f9148a-28ed-468a-a21d-409089b8103d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C42",
+      "claim": "The calculated ratio of DV/AP Young moduli in HYP7 increased during early elongation and was greater than the DV/AP stress anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, the calculated ratio of DV/AP Young moduli also increased, and was greater than the DV/AP stress anisotropy (Figure 7c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by calculations shown in Figure 7c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "fb28213f-feeb-478c-9509-994f41a3fddf",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C43",
+      "claim": "When the DV/AP stiffness anisotropy increases and is greater than the DV/AP stress anisotropy, elongation along the AP direction is favored in HYP7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, our model strongly suggests that when the DV/AP stiffness anisotropy increases and is greater than the DV/AP stress anisotropy, as observed in the head HYP7 (Figure 7c), elongation along the AP direction is favored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions and experimental observations shown in Figure 7c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "6297227a-dd88-4a88-8523-31f265d15123",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C44",
+      "claim": "The distinct mechanical properties of the cells composing a complex tissue enables its morphogenesis, which does not require all cells to be contractile.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our data demonstrate that the distinct mechanical properties of the cells composing a complex tissue enables its morphogenesis , which does not require all cells to be contractile.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the overall findings from the study showing that both contractile seam cells and non-contractile DV cells contribute to elongation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "51b00b46-5f3f-4de8-a8a6-b4c408e5171b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C45",
+      "claim": "The polarization of actin filaments in seam cells correlated with the observed pattern of stress anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the polarization of actin filaments in seam cells correlated with the observed pattern of stress anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis between actin alignment measurements and stress anisotropy data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "247e00dc-4177-4022-a1bf-61d34ea2345c",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C46",
+      "claim": "In H1 at the 1.3F stage, actin filaments had a nearly isotropic angular distribution correlating with the isotropic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in H1 at the 1.3F stage, actin filaments had a nearly isotropic angular distribution correlating with the isotropic stress (Figure 8a, Figure 3b), whereas they became increasingly aligned along the DV direction from the 1.3F to the 1.7F stage (Figure 8a), mirroring the increasing stress anisotropy from 1.3F to 1.7F (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by actin alignment data shown in Figure 8a and stress data in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "b09ee895-ca41-493b-aa3e-ed7b2a0b35f8",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C47",
+      "claim": "Actin filaments in H1 became increasingly aligned along the DV direction from the 1.3F to the 1.7F stage, mirroring the increasing stress anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in H1 at the 1.3F stage, actin filaments had a nearly isotropic angular distribution correlating with the isotropic stress (Figure 8a, Figure 3b), whereas they became increasingly aligned along the DV direction from the 1.3F to the 1.7F stage (Figure 8a), mirroring the increasing stress anisotropy from 1.3F to 1.7F (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by actin alignment data shown in Figure 8a and stress data in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "12b176c4-d64e-41a0-9b54-51192825202f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C48",
+      "claim": "Actin alignment decreased along the DV direction in V3 from the 1.3F to the 1.5F stage, in parallel to the decrease of stress anisotropy between those stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, actin alignment decreased along the DV direction in V3 from the 1.3F to the 1.5F stage, in parallel to the decrease of stress anisotropy between those stages (Figures 8b and 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by actin alignment data shown in Figure 8b and stress data in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "73fe5276-da97-4faf-a317-1f9d3dfd4240",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C49",
+      "claim": "In the HYP7 cell, actin filaments already acquired a preferential DV alignment at the 1.3F stage.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HYP7 cell, actin filaments already acquired a preferential DV alignment at the 1.3F stage (Figure 8c), but became increasingly organized along the DV direction as the embryo elongated to the 2F stage, with a highly significant difference between the 1.5F and 1.7F stages (Figure 8c and f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by actin alignment data shown in Figure 8c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4bae6d18-cb46-45db-b45d-42d334193ebd",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C50",
+      "claim": "Actin filaments in HYP7 became increasingly organized along the DV direction as the embryo elongated to the 2F stage, with a highly significant difference between the 1.5F and 1.7F stages.",
+      "claim_type": "EXPLICIT",
+      "source": "In the HYP7 cell, actin filaments already acquired a preferential DV alignment at the 1.3F stage (Figure 8c), but became increasingly organized along the DV direction as the embryo elongated to the 2F stage, with a highly significant difference between the 1.5F and 1.7F stages (Figure 8c and f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by actin alignment data shown in Figure 8c and f.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1824776f-d57f-4bb5-9500-4feddae477eb",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C51",
+      "claim": "Changes in actin alignment in HYP7 correlated with the increased stiffness anisotropy observed in the HYP7 cell.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes correlated with the increased stiffness anisotropy observed in the HYP7 cell (Figure 7c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation between actin alignment data and stiffness anisotropy calculations shown in Figure 7c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "dfda7b72-27e1-4646-8f04-5e619a648d77",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C52",
+      "claim": "The pattern of actin distribution showed a good correlation with the observed stress and stiffness anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we conclude that the pattern of actin distribution showed a good correlation with the observed stress and stiffness anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation analysis between actin alignment and mechanical properties.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "c0bb16f5-35ad-47d8-af1e-877c5405c9cc",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C53",
+      "claim": "C. elegans embryonic elongation does not involve myosin-II-polarized distribution nor actomyosin pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans embryonic elongation is distinct from those situations because it does not involve myosin-II-polarized distribution nor actomyosin pulses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of myosin II distribution and dynamics in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "a6cd8421-764e-437a-b963-b65d71649b9b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C54",
+      "claim": "C. elegans embryonic elongation still requires stress anisotropy despite not having myosin-II-polarized distribution or actomyosin pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this process still requires stress anisotropy, outlining that stress anisotropy can be produced by different means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental findings showing stress anisotropy is important for elongation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "52a0dfd9-e8af-49c9-bca1-37ced0d93523",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C55",
+      "claim": "Stress anisotropy can be produced by different means.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this process still requires stress anisotropy, outlining that stress anisotropy can be produced by different means.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from comparing C. elegans with other systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "802457ae-c44e-4594-9183-d4c88f38ad2b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C56",
+      "claim": "Myosin II activity displays an asymmetric distribution along the embryo circumference in cells with different material properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, akin to a planar polarized distribution, myosin II activity displays an asymmetric distribution along the embryo circumference in cells with different material properties (Figure 8g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of myosin II distribution and reference to Figure 8g.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "824fb7ae-1489-4d54-a181-808620f56112",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C57",
+      "claim": "The spectrin cytoskeleton has a significant role in establishing normal levels of stress magnitude and anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, we found that the spectrin cytoskeleton has a significant role in establishing normal levels of stress magnitude and anisotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental results from spc-1(RNAi) embryos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "50acdeaa-6db0-42b5-a47d-24d06eb44f25",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C58",
+      "claim": "Spectrin is known to impinge on actin filament alignment and continuity in DV cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectrin is known to impinge on actin filament alignment and continuity in DV cells (Praitis et al., 2005; Norman and Moerman, 2002) and could thus affect DV stiffness anisotropy by reducing the level of actin fiber alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Praitis et al., 2005; Norman and Moerman, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "25f578e0-6b24-4f77-b12d-1270849c642d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C59",
+      "claim": "Spectrin could affect DV stiffness anisotropy by reducing the level of actin fiber alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectrin is known to impinge on actin filament alignment and continuity in DV cells (Praitis et al., 2005; Norman and Moerman, 2002) and could thus affect DV stiffness anisotropy by reducing the level of actin fiber alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about the mechanism by which spectrin affects stiffness.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "600e1ae7-7400-481e-8f28-7866d43fb19e",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C60",
+      "claim": "The juxtaposition of cells with different 'physical phenotypes', seam epidermis expressing stress anisotropy and DV epidermal cell showing stiffness anisotropy, powers C. elegans elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the juxtaposition of cells with different 'physical phenotypes', seam epidermis expressing stress anisotropy and DV epidermal cell showing stiffness anisotropy, powers C. elegans elongation, as previously suggested in chicken limb bud outgrowth (Damon et al., 2008) or chick intestinal looping (Savin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the overall findings of the study and comparison with other systems cited (Damon et al., 2008; Savin et al., 2011).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "3b5efd4b-cc3f-4de4-968a-7bf6aa27e632",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C61",
+      "claim": "Tissue elongation relies on two fundamental physical quantities: mechanical stress and tissue stiffness.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our work shows that tissue elongation relies on two fundamental physical quantities (mechanical stress and tissue stiffness), and provides the most advanced mesoscopic understanding to date of the mechanics at work during the first steps of C. elegans embryonic elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the overall findings and conclusions of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "c933266d-71e9-4c61-a647-0aa7ab816106",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C62",
+      "claim": "The work provides the most advanced mesoscopic understanding to date of the mechanics at work during the first steps of C. elegans embryonic elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our work shows that tissue elongation relies on two fundamental physical quantities (mechanical stress and tissue stiffness), and provides the most advanced mesoscopic understanding to date of the mechanics at work during the first steps of C. elegans embryonic elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an assessment of the contribution of the work based on the comprehensive analysis performed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "235e46e3-2fa1-4a56-841c-c1afdc199654",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C63",
+      "claim": "Actin filaments progressively organize into circumferential parallel bundles in DV cells during embryonic elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin filaments progressively organize into circumferential parallel bundles in DV cells (arrows), arrowheads point to seam cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by observations shown in Figure 1b-d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4fa3cad6-0c46-4ea4-a83f-1091a89a4c4f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C64",
+      "claim": "The integrated ABD::GFP marker shows some cell to cell variation in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that the integrated ABD::GFP marker shows some cell to cell variation in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of the marker expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "dcf89471-2d2c-44a2-b210-0f0b2ebb7002",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C65",
+      "claim": "The minor to major axis ratio of the opening ellipse is independent of the initial cut length when the cut length varied from 3 \u03bcm to 6 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that it is the case when the cut length varied from 3 \u03bcm to 6 \u03bcm (Appendix 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental validation described in Appendix 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "ddabdc42-f1f7-4a48-b974-cd353a9ecb31",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C66",
+      "claim": "The half-time of the cut border relaxation was similar in the AP and DV directions.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-time of the cut border relaxation, which depends on the ratio of viscosity over stiffness, was similar in the AP and DV directions (Appendix 3), supporting the hypothesis that the seam cell cortex is isotropic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis described in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "02a2750a-b866-4374-8967-1c2f9ec4a3a8",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C67",
+      "claim": "The seam cell cortex is isotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "The half-time of the cut border relaxation, which depends on the ratio of viscosity over stiffness, was similar in the AP and DV directions (Appendix 3), supporting the hypothesis that the seam cell cortex is isotropic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the relaxation half-time data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "b40259f0-1178-453d-8233-0a149816bfc1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C68",
+      "claim": "There was an agreement between methods based on equilibrium shape and recoil dynamics for the AP versus DV stress ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "We found an agreement between both methods for the AP versus DV stress ratio, and similar trends for the stress magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of different analysis methods described in Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "3dccfda6-d186-4aee-a904-253e9d9dce2f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C69",
+      "claim": "Embryos showing the first type of ablation response (local cortex disruption) continued to develop and hatched.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos showing the first response continued to develop and hatched, whereas those showing the second response arrested their development and eventually died.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of embryo development after ablation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e7e28906-5e2a-4005-bbb2-0f407cc8f4d1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C70",
+      "claim": "Embryos showing the second type of ablation response (wounding response) arrested their development and eventually died.",
+      "claim_type": "EXPLICIT",
+      "source": "Embryos showing the first response continued to develop and hatched, whereas those showing the second response arrested their development and eventually died.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations of embryo development after ablation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "7570b686-8ace-4272-9a8e-76f5856ab660",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C71",
+      "claim": "The head, body and tail diameter decreased at different rates over time during embryonic elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the head, body and tail diameter (at the levels of H1, V3 and V6, respectively) decreased at different rates over time (Figure 3c), as also observed by Martin and colleagues (Martin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological measurements shown in Figure 3c and citation to prior work (Martin et al., 2014).",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4f68efb6-175a-4f34-ab85-914f55415eab",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C72",
+      "claim": "The tail diameter decreased nearly linearly between the 1.3F and 1.7F stages, at a lower rate than the body diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the tail diameter decreased nearly linearly between the 1.3F and 1.7F stages, at a lower rate than the body diameter, coinciding with a smaller anisotropic stress in V6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological measurements and correlation with stress data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "aaf1bb90-16cc-47d5-91d5-593bd68d269a",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C73",
+      "claim": "The decrease in tail diameter coincided with a smaller anisotropic stress in V6.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the tail diameter decreased nearly linearly between the 1.3F and 1.7F stages, at a lower rate than the body diameter, coinciding with a smaller anisotropic stress in V6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation between morphological changes and stress measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "c4934b43-f20d-4879-9b6d-736cb1874849",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C74",
+      "claim": "UNC-112/Kindlin mediates sarcomere assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to controls, embryos that are depleted in UNC-112/Kindlin, which mediates sarcomere assembly (Rogalski et al., 2000), showed a significantly larger opening in both the AP and DV directions at the 1.7F stage, but no change in stress anisotropy (Figure 3f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Rogalski et al., 2000).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "166bce43-ca4c-4137-9f40-b0f82a3a0af8",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C75",
+      "claim": "unc-112(RNAi) embryos elongate up to 1.7F similarly to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with their wild-type elongation rate up to the 2F stage (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by elongation measurements shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "bec19aa2-1a22-423d-b7d4-1ed2d4e47619",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C76",
+      "claim": "The C. elegans embryo can be modeled as an isotropic thin-wall vessel with capped ends under hydrostatic pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "We can thus model the C. elegans embryo as an isotropic thin-wall (the epidermis) vessel with capped ends under hydrostatic pressure, and can determine the relationship between the mechanical stress on the epidermis and the embryo shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the application of physical modeling principles to the embryo geometry.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "5461ec04-387c-4ad8-9f40-9b0bdc397c43",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C77",
+      "claim": "The AS factor is equal to one for a sphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the AS factor, or the DV to AP stress ratio, is equal to one for a sphere, equal to two for a cylinder and takes an intermediate value between 1 and 2 for an ellipsoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established physical principles for thin-wall vessels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "ea3f4dfe-aee1-4f5a-84e5-b317a59e8743",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C78",
+      "claim": "The AS factor is equal to two for a cylinder.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the AS factor, or the DV to AP stress ratio, is equal to one for a sphere, equal to two for a cylinder and takes an intermediate value between 1 and 2 for an ellipsoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established physical principles for thin-wall vessels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1c02c64d-1084-4f79-b93d-28bcfb13277c",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C79",
+      "claim": "The AS factor takes an intermediate value between 1 and 2 for an ellipsoid.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, the AS factor, or the DV to AP stress ratio, is equal to one for a sphere, equal to two for a cylinder and takes an intermediate value between 1 and 2 for an ellipsoid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established physical principles for thin-wall vessels.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "97ee9c6a-a487-4083-a7cc-79d261d24a81",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C80",
+      "claim": "The AP stress among the seam cells at a given stage differs by 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that the AP stress among the seam cells at a given stage differs by 20% (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "670b83cd-0bca-49b7-a491-4389f63cb876",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C81",
+      "claim": "The head evolves from a sphere to an ellipsoid between the 1.5F to the 1.7F stages as the AS becomes greater than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, consistent with the equations, the head evolves from a sphere to an ellipsoid between the 1.5F to the 1.7F stages as the AS becomes greater than 1 (Figure 3b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by morphological observations and stress measurements shown in Figure 3b,c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "d42d1bda-8417-409f-b25b-093e7cfe527c",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C82",
+      "claim": "The seam cell dimension increases along the AP axis with the AS.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting equations, which assume that seam cells have an isotropic cortex and are subjected to contractile stress, correctly predict that the seam cell dimension increases along the AP axis (\u03b5AP) with the AS (Figure 4h\u2013j), and decreases along the DV axis (\u03b5DV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions shown in Figure 4h-j.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4947d2cf-01c3-4cbc-8d1f-8bc16a6b211b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C83",
+      "claim": "The seam cell dimension decreases along the DV axis with the AS.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting equations, which assume that seam cells have an isotropic cortex and are subjected to contractile stress, correctly predict that the seam cell dimension increases along the AP axis (\u03b5AP) with the AS (Figure 4h\u2013j), and decreases along the DV axis (\u03b5DV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions shown in Figure 4h-j.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "97ef8644-0983-46e5-8679-a0ab2eec1804",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C84",
+      "claim": "The RhoGAP RGA-2 maintains myosin II activation in DV cells at a low level.",
+      "claim_type": "EXPLICIT",
+      "source": "As the RhoGAP RGA-2 maintains myosin II activation in these cells at a low level (Diogon et al., 2007), actomyosin contractility in DV cells cannot account for such changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Diogon et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "bd41251f-0dce-4e11-921e-9413412b7aa8",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C85",
+      "claim": "Actomyosin contractility in DV cells cannot account for the head diameter reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "As the RhoGAP RGA-2 maintains myosin II activation in these cells at a low level (Diogon et al., 2007), actomyosin contractility in DV cells cannot account for such changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the low myosin II activity in DV cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "2ced2929-0fd5-4df2-a1e2-61ecc4b89387",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C86",
+      "claim": "Polarized actin distribution could affect cell stiffness based on recent observations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to seam cells, DV epidermal cells have circumferentially oriented actin bundles (Figure 1b\u2013d), which based on recent observation could affect cell stiffness (Calzado-Mart\u00edn et al., 2016; Salker et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent work (Calzado-Mart\u00edn et al., 2016; Salker et al., 2016).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "2dda1056-e4d4-482d-bdf7-242f4dd26e2d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C87",
+      "claim": "The circumferential polarized actin distribution in DV epidermal cells could induce greater stiffness in that direction and thereby influences their deformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus hypothesized that the circumferential polarized actin distribution in DV epidermal cells could induce greater stiffness in that direction and thereby influences their deformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis based on the observation of actin organization and knowledge from other systems.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "be6ee54e-f1d2-4ea3-a4de-c3d3b5254f81",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C88",
+      "claim": "The orthotropic model did not adequately describe the laser-cutting data from the DV epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "We discarded the orthotropic model, as it did not adequately describe our data (Appendix 8), and focused on the fiber-reinforced plane model, which better accounts for the presence of well aligned actin fibers in DV cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling analysis described in Appendix 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "7a81a77a-62cf-4d09-a22e-6ed0dd34421d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C89",
+      "claim": "The fiber-reinforced plane model better accounts for the presence of well aligned actin fibers in DV cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We discarded the orthotropic model, as it did not adequately describe our data (Appendix 8), and focused on the fiber-reinforced plane model, which better accounts for the presence of well aligned actin fibers in DV cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the rationale for choosing the fiber-reinforced model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "94db3c72-1a88-4265-9aa0-d9abbcc140db",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C90",
+      "claim": "Along the direction parallel to the fibers, the Young modulus of the composite is much increased due to fiber reinforcement.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the direction parallel to the fibers, the Young modulus of the composite is much increased due to fiber reinforcement, whereas along the direction perpendicular to the fibers, the contribution of the fibers to the composite stiffness is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established principles of fiber-reinforced materials.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "fb621e1b-8871-4701-9c8e-347529b562f4",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C91",
+      "claim": "Along the direction perpendicular to the fibers, the contribution of the fibers to the composite stiffness is small.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the direction parallel to the fibers, the Young modulus of the composite is much increased due to fiber reinforcement, whereas along the direction perpendicular to the fibers, the contribution of the fibers to the composite stiffness is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established principles of fiber-reinforced materials.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "38451562-c0f9-4a2e-9c1a-7cbedeaa9479",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C92",
+      "claim": "The Young modulus along the fiber direction increases linearly with a factor K related to the fiber stiffness and density.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our modelling, the Young modulus along the fiber direction increases linearly with a factor K related to the fiber stiffness and density; whereas the stiffness along the direction transverse to the fibers varies as a hyperbolic function of K and reaches a plateau (Appendix 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling results described in Appendix 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e020b627-1c71-411c-ad75-7f16f056760b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C93",
+      "claim": "The stiffness along the direction transverse to the fibers varies as a hyperbolic function of K and reaches a plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our modelling, the Young modulus along the fiber direction increases linearly with a factor K related to the fiber stiffness and density; whereas the stiffness along the direction transverse to the fibers varies as a hyperbolic function of K and reaches a plateau (Appendix 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling results described in Appendix 7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "9be83b4e-7889-49d6-ada4-b37586a968e5",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C94",
+      "claim": "Cuts perpendicular to the fibers opened similarly to an isotropic material with the matrix Young modulus, because they locally destroyed the fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "Cuts perpendicular to the fibers opened similarly to an isotropic material with the matrix Young modulus, because they locally destroyed the fibers (Figure 6c; see Equation (1) above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions shown in Figure 6c.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "5d76eddc-75c6-45c4-aad8-c91a951c3676",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C95",
+      "claim": "Cuts along the fibers opened with an equilibrium value that depends on the fiber stiffness and distribution through the factor K.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, cuts along the fibers opened with an equilibrium value that depends on the fiber stiffness and distribution through the factor K defined above (Figure 6d, Appendix 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions shown in Figure 6d and Appendix 7.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "7d853a81-ebba-48fd-a39e-c2b6715a9f27",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C96",
+      "claim": "The H1 seam and the head HYP7 cells should be under the same DV stress due to tension continuity across cell-cell junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the H1 seam and the head HYP7 cells are adjacent along the circumference (Figure 3d), they should be under the same DV stress due to tension continuity across cell-cell junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on physical principles of tension continuity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "036a68e3-077a-45c2-b682-2f5f707eabce",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C97",
+      "claim": "The stiffness anisotropy helps the HYP7 cell to extend along the AP direction and to shrink along the DV direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the stiffness anisotropy helps the HYP7 cell to extend along the AP direction and to shrink along the DV direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions from Hooke's law applied to fiber-reinforced materials.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "742debac-3daf-4e44-a054-3c6fb2975dd5",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C98",
+      "claim": "Increasing stress anisotropy prevents HYP7 cells from extending antero-posteriorly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the equations predict that increasing stress anisotropy has an opposite effect on HYP7 cell deformation, as it prevents these cells from extending antero-posteriorly (Figure 7e).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on modeling predictions shown in Figure 7e.",
+      "evidence_type": "[\"INFERENCE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1bb4db59-dbf1-4a57-a8ee-9d61aec027f5",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C99",
+      "claim": "The changes in H1 actin alignment were statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in H1 (Figure 8c), but not in V3 (Figure 8d), were statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of actin alignment data shown in Figure 8c.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "07ff85ab-4f50-4489-aa5f-60e49c059ab6",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C100",
+      "claim": "The changes in V3 actin alignment were not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The changes in H1 (Figure 8c), but not in V3 (Figure 8d), were statistically significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of actin alignment data shown in Figure 8d.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "513037ad-57ee-4d19-a05c-4d4962db1a9c",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C101",
+      "claim": "Myosin II is the most prevalent molecular motor during epithelial morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Forces are generated through a group of relatively well-conserved molecular motors associated with the cytoskeleton, among which, myosin II linked to actin filaments is the most prevalent during epithelial morphogenesis (Vicente-Manzanares et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Vicente-Manzanares et al., 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "3d909890-dcdc-4f8d-92f6-08470fe5f19f",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C102",
+      "claim": "The spatial distribution and dynamics of myosin II greatly influence morphogenetic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial distribution and dynamics of myosin II greatly influence morphogenetic processes (Levayer and Lecuit, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Levayer and Lecuit, 2012).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "f60629e4-8b05-46c0-90bf-c33953b5d589",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C103",
+      "claim": "The asymmetric distribution of the actomyosin network and its pulsatile behaviour define the direction of extension during Drosophila germband elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the asymmetric distribution of the actomyosin network and its pulsatile behaviour define the direction of extension during Drosophila germband elongation (Bertet et al., 2004; Blankenship et al., 2006), Drosophila renal tubule formation (Saxena et al., 2014) or Xenopus mesoderm convergent extension (Shindo and Wallingford, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Bertet et al., 2004; Blankenship et al., 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "70714340-8618-4962-8cb4-570da57f1150",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C104",
+      "claim": "The implications of mechanical forces on cell behavior have been intensively investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "The implications of mechanical forces on cell behavior have been intensively investigated (Zhang and Labouesse, 2012; Heisenberg and Bella\u00efche, 2013), but many fewer studies have considered the impact of tissue material properties in vivo, except for their influence on cell behaviour in vitro (Kasza, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Zhang and Labouesse, 2012; Heisenberg and Bella\u00efche, 2013).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e5569548-45d6-4366-9ee7-2a912d67f5d9",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C105",
+      "claim": "Many fewer studies have considered the impact of tissue material properties in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The implications of mechanical forces on cell behavior have been intensively investigated (Zhang and Labouesse, 2012; Heisenberg and Bella\u00efche, 2013), but many fewer studies have considered the impact of tissue material properties in vivo, except for their influence on cell behaviour in vitro (Kasza, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on assessment of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "824345f0-7033-4fcc-a05a-35eb29c14673",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C106",
+      "claim": "A network of extracellular matrix fibrils was proposed to help elongate developing Drosophila eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, a network of extracellular matrix fibrils was proposed to help elongate developing eggs (Haigo and Bilder, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work (Haigo and Bilder, 2011).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "4fd2083b-68a2-4f82-9082-38f9a9ca3946",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C107",
+      "claim": "In plant cells, the orientation of cellulose microfibrils determines the axis of maximal expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "In plant cells, the orientation of cellulose microfibrils determines the axis of maximal expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about plant cell mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "5756540e-d70d-4743-9428-7cb204e9e1ed",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C108",
+      "claim": "In plant cells, stiffness anisotropy helps overcome stress anisotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter, stiffness anisotropy also helps overcome stress anisotropy (Green, 1962; Baskin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work (Green, 1962; Baskin, 2005).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "81a18090-0004-4bd4-85d8-fbfd6a8cc1d2",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C109",
+      "claim": "C. elegans embryos reduce their circumference during elongation, whereas Drosophila eggs and plants increase it.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, C. elegans embryos reduce their circumference during elongation, whereas Drosophila eggs and plants increase it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of morphological changes across different organisms.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e5e0b529-09e8-42d8-afe9-cd8597c25f0e",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C110",
+      "claim": "To conserve the actin reinforcement properties when the diameter decreases, C. elegans DV epidermal cells should have a mechanism to actively shorten the actin bundles.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that to conserve the actin reinforcement properties when the diameter decreases, C. elegans DV epidermal cells should have a mechanism to actively shorten the actin bundles, as observed in a biomimetic in vitro system (Murrell and Gardel, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on speculation about the mechanism, with reference to an in vitro system (Murrell and Gardel, 2012).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "85fa577d-160f-42ca-8a02-59dfcd4ff25d",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C111",
+      "claim": "The actomyosin cortex preferentially squeezes the embryo circumferentially.",
+      "claim_type": "EXPLICIT",
+      "source": "They prove that the actomyosin cortex preferentially squeezes the embryo circumferentially, and that the stress anisotropy is tightly linked to the geometry of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental data being consistent with model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "05588cc4-2188-4e46-a470-1d4a55814886",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "claim_id": "C112",
+      "claim": "The stress anisotropy is tightly linked to the geometry of the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "They prove that the actomyosin cortex preferentially squeezes the embryo circumferentially, and that the stress anisotropy is tightly linked to the geometry of the embryo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans embryonic elongation involves a four-fold increase in length without cell migration or division, driven primarily by actomyosin contractility in seam cells. Myosin II and disorganized actin filaments are concentrated in seam cells, while DV cells contain organized circumferential actin bundles. The prevailing model suggests actomyosin forces squeeze the embryo circumferentially to promote AP elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 establish the basic biological context of C. elegans elongation based on well-cited prior work (Sulston et al., 1983; Priess and Hirsh, 1986; Gally et al., 2009). The claims are supported by multiple citations and imaging data (Figure 1), providing a solid foundation for the study. These are established facts from the literature rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "9587a220-72b3-42b4-929c-0aa83e6c0fa7",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Myosin II does not show polarized distribution or dynamic pulsatile foci during early C. elegans embryonic elongation, making it difficult to account for circumferential squeezing through conventional mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 are supported by imaging data (Figure 1f,g) showing non-polarized myosin II distribution. This observation is critical as it distinguishes C. elegans elongation from other well-studied systems (e.g., Drosophila) and motivates the need for alternative mechanical explanations, which is a central theme of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "8344282e-4fb3-4397-9270-41d4c9900c08",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Laser ablation of the actin cortex produces two distinct responses: local cortex disruption (>80% of cases) where the opening reaches equilibrium in <10s and reseals in <2min, and a wounding response leading to developmental arrest. The opening depends on myosin II activity, as demonstrated by reduced opening in let-502 mutants. The method is validated by showing independence from cut length (3-6 \u03bcm) and similar relaxation half-times in AP and DV directions, supporting the assumption of isotropic seam cell cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11, C65-C70 establish the laser ablation methodology and its validation. The experimental controls are appropriate: testing cut length independence (C65), comparing relaxation dynamics (C66-C68), verifying myosin II dependence (C10-C11), and distinguishing productive ablations from wounding responses (C69-C70). The agreement between equilibrium-based and dynamics-based methods (C68) strengthens confidence in the approach. This methodological foundation is essential for all subsequent stress measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "001030e1-018e-4213-861a-df7c6a566ede",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Stress anisotropy in seam cells varies spatially and temporally during elongation. In H1, stress becomes increasingly anisotropic from 1.3F to 1.7F stages, while in V3 it decreases from 1.3F to 1.5F. Whenever stress is anisotropic, it is higher in the DV direction. These stress patterns correlate with local morphological changes: head diameter decreases when H1 stress becomes anisotropic (1.5F-1.7F), body diameter decreases most rapidly when V3 stress is highly anisotropic (1.3F-1.5F), and tail diameter decreases linearly with smaller anisotropic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C20, C71-C73 present the core experimental findings on stress anisotropy and its correlation with morphological changes. The data are supported by laser ablation measurements (Figure 3b) and morphological quantification (Figure 3c). The spatiotemporal correlation between stress anisotropy and diameter changes is compelling. However, correlation does not establish causation\u2014the modeling work (addressed in other results) is needed to establish the causal relationship. Statistical significance is reported for key comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "463e171b-979c-4455-8644-b26800070437",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Both seam and DV epidermal cells contribute to changes in embryo diameter, irrespective of their level of active myosin II. At the V3 level, both seam and DV cells contribute to diameter reduction, while in the head, DV cells contribute primarily.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by cell width measurements (Figure 3e). This finding is important as it demonstrates that DV cells, despite low myosin II activity, actively contribute to morphological changes. This observation motivates the investigation of stiffness anisotropy in DV cells as an alternative mechanism, which becomes a major theme of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Spectrin partially contributes to stress anisotropy at the 1.7F stage. In spc-1(RNAi) embryos, both AP and DV opening are reduced, and stress anisotropy decreases compared to WT. This correlates with slower elongation and arrest at 2F stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C57 are supported by laser ablation data (Figure 3f,g) and elongation measurements (Figure 3\u2014figure supplement 1). The genetic perturbation provides functional evidence for spectrin's role. However, the mechanism by which spectrin affects stress anisotropy is speculative (C59), and the correlation with elongation defects (C26) does not definitively establish causation. The result identifies spectrin as one contributing factor but acknowledges it is partial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "af285856-d4ea-4f35-b42b-d6063338a2e3",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Muscle contractions do not contribute to stress anisotropy establishment in H1 after the 1.5F stage. unc-112(RNAi) embryos show larger opening in both directions but no change in stress anisotropy, consistent with normal elongation up to 2F stage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30, C74-C75 are supported by laser ablation data (Figure 3f,g) and elongation measurements (Figure 3\u2014figure supplement 1). This negative result is important as it rules out muscle contractions as a contributor to stress anisotropy during early elongation, focusing attention on epidermal mechanisms. The interpretation that larger opening reflects reduced tissue stiffness due to muscle defects is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "e450cd64-53e2-469e-9b7c-fb076266b366",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The embryo can be modeled as a thin-wall vessel under hydrostatic pressure, allowing prediction of stress anisotropy from embryo geometry. The stress anisotropy factor equals 1 for a sphere, 2 for a cylinder, and intermediate values for ellipsoids. Predicted stress anisotropy values based on head and body diameter measurements are nearly identical to those measured by laser ablation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C76-C81 present the thin-wall vessel model and its validation. The agreement between predicted and measured stress anisotropy (Figure 4g) is compelling evidence that the model captures the essential physics. The model assumptions (thin wall, hydrostatic pressure, axisymmetric geometry) are reasonable approximations for the C. elegans embryo. This establishes a quantitative link between geometry and stress distribution, which is a key conceptual advance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "f56aa742-6972-4655-a349-f80e40e5c2b9",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stress anisotropy induces morphological changes in seam cells. Applying Hooke's law to isotropic seam cells under contractile stress predicts that cell dimensions increase along the AP axis and decrease along the DV axis as stress anisotropy increases, consistent with observed head shape evolution from sphere to ellipsoid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C82-C83 present the mechanical model for seam cell deformation and its validation. The model predictions (Figure 4h-j) are consistent with morphological observations (C81). The application of Hooke's law is appropriate for relating stress to strain in an elastic material. This establishes the causal link between stress anisotropy and morphological changes in seam cells, completing the mechanical explanation for this cell type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "181b66fa-cd35-4f9e-81ac-385ae7778c74",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HYP7 DV cells show anisotropic cortical material properties. The ratio of DV/AP opening in HYP7 is greater than in H1, which cannot be explained by an isotropic material model. Since myosin II activity is low in DV cells (maintained by RGA-2), actomyosin contractility cannot account for diameter reduction. The hypothesis is that circumferentially oriented actin bundles in DV cells induce greater stiffness in that direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38, C84-C87 establish that DV cells have anisotropic material properties based on the discrepancy between isotropic model predictions and experimental observations (Figure 5b,c). The reasoning is sound: if H1 and HYP7 are under the same DV stress (due to tension continuity), their different opening ratios must reflect different material properties. The hypothesis about actin-based stiffness anisotropy (C87) is reasonable given the circumferential actin organization and citations to relevant work (C86), though it remains to be tested mechanistically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1f930845-198d-45a1-900f-915b1835c0f4",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "HYP7 and H1 cells have distinct material properties, with HYP7 matrix ~1.5 times stiffer than H1. A fiber-reinforced material model better describes DV cells than an orthotropic model. In this model, fibers increase stiffness along their direction (linearly with factor K) while having minimal effect perpendicular to fibers. Cuts perpendicular to fibers open as in isotropic material, while cuts parallel to fibers depend on fiber properties through factor K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C88-C96 present the fiber-reinforced material model for DV cells. The inference that HYP7 is stiffer than H1 (C39-C40) is based on tension continuity and inverse relationship between stiffness and opening (Equation 1). The choice of fiber-reinforced over orthotropic model is justified by model-data comparison (Appendix 8). The model predictions for cutting behavior (C94-C95) are testable and provide a framework for interpreting the data. The physical principles of fiber reinforcement (C90-C93) are well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "f5005cc0-9410-461e-904e-e7c3443cee58",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In HYP7 cells, the fiber stiffness factor K and the ratio of DV/AP Young moduli both increase during early elongation, with stiffness anisotropy exceeding stress anisotropy. When DV/AP stiffness anisotropy is greater than stress anisotropy, elongation along the AP direction is favored. Stiffness anisotropy helps HYP7 cells extend along AP and shrink along DV, while increasing stress anisotropy has the opposite effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43, C97-C98 present the key finding about stiffness anisotropy in DV cells. The calculations (Figure 7b,c, Appendix 10) show that stiffness anisotropy exceeds stress anisotropy, and the model predictions (Figure 7d-f) demonstrate how this drives AP elongation. This is a major conceptual advance: stiffness anisotropy, not just stress anisotropy, drives morphological changes. The model predictions are internally consistent with Hooke's law for anisotropic materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "c34b8f97-ae14-43ad-a15b-c57c3062f687",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The distinct mechanical properties of cells composing a complex tissue enable its morphogenesis without requiring all cells to be contractile. The juxtaposition of seam cells expressing stress anisotropy and DV cells showing stiffness anisotropy powers C. elegans elongation. Tissue elongation relies on two fundamental physical quantities: mechanical stress and tissue stiffness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C60-C61 present the main conceptual conclusions of the paper. These are well-supported by the combined experimental and modeling results showing that both contractile seam cells (stress anisotropy) and non-contractile DV cells (stiffness anisotropy) contribute to elongation. The comparison to other systems (Damon et al., 2008; Savin et al., 2011) provides broader context. This represents a significant advance in understanding how tissue material properties contribute to morphogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "9727f1ee-e747-477f-b633-448cf1ae0caf",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Actin filament alignment correlates with stress and stiffness anisotropy. In H1, actin alignment along DV increases from 1.3F to 1.7F, mirroring increasing stress anisotropy (statistically significant). In V3, DV alignment decreases from 1.3F to 1.5F, paralleling decreasing stress anisotropy (not statistically significant). In HYP7, actin is preferentially aligned in DV at 1.3F and becomes increasingly organized through 2F, correlating with increased stiffness anisotropy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C52, C99-C100 present correlations between actin alignment and mechanical anisotropies. The data (Figure 8a-f) show good qualitative correlations, with statistical significance for H1 and HYP7 but not V3. The authors appropriately acknowledge they could not test causality through functional manipulation. The correlation is suggestive but does not establish whether actin alignment is cause or consequence of mechanical anisotropy. This is an important observation but the mechanistic relationship remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "a7c7290c-9f85-4d04-a69c-837c6168419e",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "C. elegans embryonic elongation is distinct from other systems as it does not involve myosin-II-polarized distribution or actomyosin pulses, yet still requires stress anisotropy. Myosin II activity displays an asymmetric distribution along the embryo circumference in cells with different material properties, analogous to planar polarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 place the findings in comparative context. The distinction from Drosophila and other systems (C53) is supported by the imaging data (C6-C7). The observation that stress anisotropy can be produced by different means (C55) is an important conceptual point. The asymmetric distribution of myosin II along the circumference (C56) is supported by Figure 8g and represents a form of tissue-level polarity distinct from cellular polarity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "0528a82e-68a4-4e76-bc98-2836dbaed282",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Spectrin is known to affect actin filament alignment and continuity in DV cells and could affect DV stiffness anisotropy by reducing actin fiber alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is supported by citations to prior work (Praitis et al., 2005; Norman and Moerman, 2002). However, C59 is explicitly speculative ('could thus affect'), and the authors acknowledge this mechanism was not tested. The spc-1(RNAi) data show spectrin affects stress magnitude and anisotropy (C24-C27), but the specific mechanism through which it affects stiffness anisotropy in DV cells remains hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "506fe6c9-8855-42dd-91de-c06b26cb14e1",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The work provides the most advanced mesoscopic understanding to date of the mechanics at work during the first steps of C. elegans embryonic elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is a self-assessment of the work's significance. While the comprehensive integration of stress measurements, stiffness analysis, and mechanical modeling is indeed impressive and represents a significant advance, the claim of being 'the most advanced' is difficult to evaluate objectively without comprehensive knowledge of all related work. The work clearly makes major contributions but such superlative claims are inherently subjective.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "1beb2b6b-67a8-4a82-8d24-db755a37ac5b",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Actin filaments progressively organize into circumferential parallel bundles in DV cells during embryonic elongation. The ABD::GFP marker shows some cell-to-cell variation in expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 describe observations from imaging data (Figure 1b-d). The progressive organization of actin in DV cells is clearly visible in the images. The note about marker expression variation (C64) is an appropriate caveat about the imaging method. These are descriptive observations that support the characterization of actin organization differences between cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background context from the literature: Myosin II is the most prevalent molecular motor during epithelial morphogenesis, and its spatial distribution and dynamics greatly influence morphogenetic processes. In various systems, asymmetric actomyosin distribution and pulsatile behavior define extension direction. While mechanical forces have been intensively studied, tissue material properties have received less attention in vivo. Examples of material property roles include ECM fibrils in Drosophila eggs and cellulose microfibrils in plant cells, where stiffness anisotropy helps overcome stress anisotropy. C. elegans embryos reduce circumference during elongation, unlike Drosophila eggs and plants which increase it.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C109 provide literature context and are supported by appropriate citations. These establish the broader significance of the work by comparing C. elegans to other systems. The observation that C. elegans reduces circumference while other systems increase it (C109) highlights a key difference that may require active actin bundle shortening (C110), though this remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "079e7778-4bfe-4e79-906c-7999b296a2f0",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "To conserve actin reinforcement properties when diameter decreases, C. elegans DV epidermal cells should have a mechanism to actively shorten actin bundles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C110 is explicitly speculative ('should have a mechanism') and is presented as a hypothesis based on comparison with an in vitro system (Murrell and Gardel, 2012). While the reasoning is logical\u2014that decreasing circumference would require actin bundle shortening to maintain reinforcement\u2014this mechanism has not been demonstrated in C. elegans. This represents an interesting prediction for future work rather than a supported finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    },
+    {
+      "id": "c8dc6685-155f-4673-bf7d-d49c56882d06",
+      "content_id": "8ae44047-a675-460d-9910-a08c4bbca9d9",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The experimental data prove that the actomyosin cortex preferentially squeezes the embryo circumferentially, and that stress anisotropy is tightly linked to embryo geometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C112 summarize the main conclusions about stress distribution. The word 'prove' is strong, but the agreement between model predictions and experimental measurements (C32) provides compelling evidence. The link between stress anisotropy and geometry is established through the thin-wall vessel model (C31-C33, C76-C81). These conclusions are well-supported by the combined experimental and modeling results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:59:19.065310Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "13ae1895-3037-429d-9b67-d340cabee49d",
+      "result_id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27"
+    },
+    {
+      "claim_id": "815c3685-a412-43b4-83e9-5979b1094142",
+      "result_id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27"
+    },
+    {
+      "claim_id": "98d10340-64d6-4b00-86e9-f3efc4f5ed50",
+      "result_id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27"
+    },
+    {
+      "claim_id": "e169b8b2-5330-49ef-a87c-fa17d3c457ff",
+      "result_id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27"
+    },
+    {
+      "claim_id": "9eb52d33-a765-48f6-a91e-d3ca5127ac24",
+      "result_id": "ac673e3b-65be-4fe6-a1a4-41abbfad6b27"
+    },
+    {
+      "claim_id": "741258e7-51a1-494b-a9c9-4b5b02ae686b",
+      "result_id": "9587a220-72b3-42b4-929c-0aa83e6c0fa7"
+    },
+    {
+      "claim_id": "3ed7b86a-55ba-4ec8-849b-579c647d6b94",
+      "result_id": "9587a220-72b3-42b4-929c-0aa83e6c0fa7"
+    },
+    {
+      "claim_id": "5d596366-54f2-4551-9a1f-740172565e19",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "d468cc4e-dd81-47d1-9242-a6e2de8dca55",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "fe6ea3ff-016a-44b7-befd-af8d20679dbc",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "77a6a5f5-a434-4564-824b-b1bc604730dd",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "dcf89471-2d2c-44a2-b210-0f0b2ebb7002",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "ddabdc42-f1f7-4a48-b974-cd353a9ecb31",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "02a2750a-b866-4374-8967-1c2f9ec4a3a8",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "b40259f0-1178-453d-8233-0a149816bfc1",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "3dccfda6-d186-4aee-a904-253e9d9dce2f",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "e7e28906-5e2a-4005-bbb2-0f407cc8f4d1",
+      "result_id": "8344282e-4fb3-4397-9270-41d4c9900c08"
+    },
+    {
+      "claim_id": "74c659f7-4e67-4df4-a773-0886ad734ccf",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "a4d0053d-ce67-4461-bca5-6bad95eba0bb",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "1ee4ac2d-f448-485d-9911-400fff4bbb03",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "4adf5ea6-debe-4f04-87a9-144c32633d75",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "4cf15f0d-ac24-47e0-aab5-e1a59f1efb43",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "da109626-ef64-4606-a431-089b3577e609",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "1581e3b8-920f-48b3-a581-c6d5952b314f",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "6b623d03-f7f3-4640-ae85-3af527f49579",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "4358e8a2-3100-4b14-8b7f-a26ee27896b5",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "7570b686-8ace-4272-9a8e-76f5856ab660",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "4f68efb6-175a-4f34-ab85-914f55415eab",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "aaf1bb90-16cc-47d5-91d5-593bd68d269a",
+      "result_id": "001030e1-018e-4213-861a-df7c6a566ede"
+    },
+    {
+      "claim_id": "35ce1fcb-ec5b-4fba-b73c-ff3d770c0387",
+      "result_id": "463e171b-979c-4455-8644-b26800070437"
+    },
+    {
+      "claim_id": "1d1c9c18-951a-4c81-9bc7-97738d19febe",
+      "result_id": "463e171b-979c-4455-8644-b26800070437"
+    },
+    {
+      "claim_id": "90e4d6e2-d301-421c-bf99-a96d65f44359",
+      "result_id": "463e171b-979c-4455-8644-b26800070437"
+    },
+    {
+      "claim_id": "abe94a87-72b4-4e91-82e3-1cbdb84b76ea",
+      "result_id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e"
+    },
+    {
+      "claim_id": "bffeda84-0104-4df3-8a44-305a3058c072",
+      "result_id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e"
+    },
+    {
+      "claim_id": "823274d4-3d8a-4b8f-83a0-16e63b2f98b1",
+      "result_id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e"
+    },
+    {
+      "claim_id": "e731d047-c547-4ac9-8f4d-b56eaf92f49a",
+      "result_id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e"
+    },
+    {
+      "claim_id": "824fb7ae-1489-4d54-a181-808620f56112",
+      "result_id": "f75f03c9-b8f5-4e25-9c93-09e8b11a218e"
+    },
+    {
+      "claim_id": "7ce8b204-6587-4066-af75-791f615e7c0a",
+      "result_id": "af285856-d4ea-4f35-b42b-d6063338a2e3"
+    },
+    {
+      "claim_id": "2b5f0c90-b908-4eb6-919c-1fe2ec776208",
+      "result_id": "af285856-d4ea-4f35-b42b-d6063338a2e3"
+    },
+    {
+      "claim_id": "d06204c1-7ab6-42c4-9e34-993b326e0223",
+      "result_id": "af285856-d4ea-4f35-b42b-d6063338a2e3"
+    },
+    {
+      "claim_id": "c4934b43-f20d-4879-9b6d-736cb1874849",
+      "result_id": "af285856-d4ea-4f35-b42b-d6063338a2e3"
+    },
+    {
+      "claim_id": "166bce43-ca4c-4137-9f40-b0f82a3a0af8",
+      "result_id": "af285856-d4ea-4f35-b42b-d6063338a2e3"
+    },
+    {
+      "claim_id": "04e52cd9-ca20-4fa7-85ca-5a6111629b8b",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "e9c2e468-5e7b-44ba-bc19-37c548c78f86",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "294f2065-b8a6-426e-a99b-a395e74806b1",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "bec19aa2-1a22-423d-b7d4-1ed2d4e47619",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "5461ec04-387c-4ad8-9f40-9b0bdc397c43",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "ea3f4dfe-aee1-4f5a-84e5-b317a59e8743",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "1c02c64d-1084-4f79-b93d-28bcfb13277c",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "97ee9c6a-a487-4083-a7cc-79d261d24a81",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "670b83cd-0bca-49b7-a491-4389f63cb876",
+      "result_id": "e450cd64-53e2-469e-9b7c-fb076266b366"
+    },
+    {
+      "claim_id": "32f65b16-8cc6-4ecb-a610-affdb7350562",
+      "result_id": "f56aa742-6972-4655-a349-f80e40e5c2b9"
+    },
+    {
+      "claim_id": "d42d1bda-8417-409f-b25b-093e7cfe527c",
+      "result_id": "f56aa742-6972-4655-a349-f80e40e5c2b9"
+    },
+    {
+      "claim_id": "4947d2cf-01c3-4cbc-8d1f-8bc16a6b211b",
+      "result_id": "f56aa742-6972-4655-a349-f80e40e5c2b9"
+    },
+    {
+      "claim_id": "4276d420-3ac1-4553-b756-cbaa8ff64ea2",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "da47f74b-2596-44d1-b22c-0c1b3e9d5b1f",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "a7f7a7f8-e21a-4fca-a1a1-b5b50623b372",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "091b240c-a188-41d8-a8e6-7b622000b4a1",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "97ef8644-0983-46e5-8679-a0ab2eec1804",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "bd41251f-0dce-4e11-921e-9413412b7aa8",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "2ced2929-0fd5-4df2-a1e2-61ecc4b89387",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "2dda1056-e4d4-482d-bdf7-242f4dd26e2d",
+      "result_id": "181b66fa-cd35-4f9e-81ac-385ae7778c74"
+    },
+    {
+      "claim_id": "9f06a6f8-7a45-4c03-8c20-91dbf3774004",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "fdfe96ca-8cb3-4eee-ae0a-8b6675355285",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "be6ee54e-f1d2-4ea3-a4de-c3d3b5254f81",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "7a81a77a-62cf-4d09-a22e-6ed0dd34421d",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "94db3c72-1a88-4265-9aa0-d9abbcc140db",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "fb621e1b-8871-4701-9c8e-347529b562f4",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "38451562-c0f9-4a2e-9c1a-7cbedeaa9479",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "e020b627-1c71-411c-ad75-7f16f056760b",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "9be83b4e-7889-49d6-ada4-b37586a968e5",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "5d76eddc-75c6-45c4-aad8-c91a951c3676",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "7d853a81-ebba-48fd-a39e-c2b6715a9f27",
+      "result_id": "1f930845-198d-45a1-900f-915b1835c0f4"
+    },
+    {
+      "claim_id": "1723c753-d9af-481a-802b-b8e52cbdf01a",
+      "result_id": "f5005cc0-9410-461e-904e-e7c3443cee58"
+    },
+    {
+      "claim_id": "04f9148a-28ed-468a-a21d-409089b8103d",
+      "result_id": "f5005cc0-9410-461e-904e-e7c3443cee58"
+    },
+    {
+      "claim_id": "fb28213f-feeb-478c-9509-994f41a3fddf",
+      "result_id": "f5005cc0-9410-461e-904e-e7c3443cee58"
+    },
+    {
+      "claim_id": "036a68e3-077a-45c2-b682-2f5f707eabce",
+      "result_id": "f5005cc0-9410-461e-904e-e7c3443cee58"
+    },
+    {
+      "claim_id": "742debac-3daf-4e44-a054-3c6fb2975dd5",
+      "result_id": "f5005cc0-9410-461e-904e-e7c3443cee58"
+    },
+    {
+      "claim_id": "6297227a-dd88-4a88-8523-31f265d15123",
+      "result_id": "c34b8f97-ae14-43ad-a15b-c57c3062f687"
+    },
+    {
+      "claim_id": "600e1ae7-7400-481e-8f28-7866d43fb19e",
+      "result_id": "c34b8f97-ae14-43ad-a15b-c57c3062f687"
+    },
+    {
+      "claim_id": "3b5efd4b-cc3f-4de4-968a-7bf6aa27e632",
+      "result_id": "c34b8f97-ae14-43ad-a15b-c57c3062f687"
+    },
+    {
+      "claim_id": "51b00b46-5f3f-4de8-a8a6-b4c408e5171b",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "247e00dc-4177-4022-a1bf-61d34ea2345c",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "b09ee895-ca41-493b-aa3e-ed7b2a0b35f8",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "12b176c4-d64e-41a0-9b54-51192825202f",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "73fe5276-da97-4faf-a317-1f9d3dfd4240",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "4bae6d18-cb46-45db-b45d-42d334193ebd",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "1824776f-d57f-4bb5-9500-4feddae477eb",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "dfda7b72-27e1-4646-8f04-5e619a648d77",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "1bb4db59-dbf1-4a57-a8ee-9d61aec027f5",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "07ff85ab-4f50-4489-aa5f-60e49c059ab6",
+      "result_id": "9727f1ee-e747-477f-b633-448cf1ae0caf"
+    },
+    {
+      "claim_id": "c0bb16f5-35ad-47d8-af1e-877c5405c9cc",
+      "result_id": "a7c7290c-9f85-4d04-a69c-837c6168419e"
+    },
+    {
+      "claim_id": "a6cd8421-764e-437a-b963-b65d71649b9b",
+      "result_id": "a7c7290c-9f85-4d04-a69c-837c6168419e"
+    },
+    {
+      "claim_id": "52a0dfd9-e8af-49c9-bca1-37ced0d93523",
+      "result_id": "a7c7290c-9f85-4d04-a69c-837c6168419e"
+    },
+    {
+      "claim_id": "802457ae-c44e-4594-9183-d4c88f38ad2b",
+      "result_id": "a7c7290c-9f85-4d04-a69c-837c6168419e"
+    },
+    {
+      "claim_id": "50acdeaa-6db0-42b5-a47d-24d06eb44f25",
+      "result_id": "0528a82e-68a4-4e76-bc98-2836dbaed282"
+    },
+    {
+      "claim_id": "25f578e0-6b24-4f77-b12d-1270849c642d",
+      "result_id": "0528a82e-68a4-4e76-bc98-2836dbaed282"
+    },
+    {
+      "claim_id": "c933266d-71e9-4c61-a647-0aa7ab816106",
+      "result_id": "506fe6c9-8855-42dd-91de-c06b26cb14e1"
+    },
+    {
+      "claim_id": "235e46e3-2fa1-4a56-841c-c1afdc199654",
+      "result_id": "1beb2b6b-67a8-4a82-8d24-db755a37ac5b"
+    },
+    {
+      "claim_id": "4fa3cad6-0c46-4ea4-a83f-1091a89a4c4f",
+      "result_id": "1beb2b6b-67a8-4a82-8d24-db755a37ac5b"
+    },
+    {
+      "claim_id": "513037ad-57ee-4d19-a05c-4d4962db1a9c",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "3d909890-dcdc-4f8d-92f6-08470fe5f19f",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "f60629e4-8b05-46c0-90bf-c33953b5d589",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "70714340-8618-4962-8cb4-570da57f1150",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "e5569548-45d6-4366-9ee7-2a912d67f5d9",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "824345f0-7033-4fcc-a05a-35eb29c14673",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "4fd2083b-68a2-4f82-9082-38f9a9ca3946",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "5756540e-d70d-4743-9428-7cb204e9e1ed",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "81a18090-0004-4bd4-85d8-fbfd6a8cc1d2",
+      "result_id": "8cb2dd77-dc8e-4144-89f3-ca243c04cda5"
+    },
+    {
+      "claim_id": "e5e0b529-09e8-42d8-afe9-cd8597c25f0e",
+      "result_id": "079e7778-4bfe-4e79-906c-7999b296a2f0"
+    },
+    {
+      "claim_id": "85fa577d-160f-42ca-8a02-59dfcd4ff25d",
+      "result_id": "c8dc6685-155f-4673-bf7d-d49c56882d06"
+    },
+    {
+      "claim_id": "05588cc4-2188-4e46-a470-1d4a55814886",
+      "result_id": "c8dc6685-155f-4673-bf7d-d49c56882d06"
+    }
+  ],
+  "comparisons": []
+}

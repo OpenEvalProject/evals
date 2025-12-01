@@ -1,0 +1,1869 @@
+{
+  "submission": {
+    "id": "1b4f7f38-6132-4210-990c-d769d9bd003f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:40:46.582635Z",
+    "updated_at": "2025-11-30T23:40:46.582635Z"
+  },
+  "content": [
+    {
+      "id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "submission_id": "1b4f7f38-6132-4210-990c-d769d9bd003f",
+      "content_type": "manuscript",
+      "content_text": "# Global analysis of gene expression reveals mRNA superinduction is required for the inducible immune response to a bacterial pathogen\n\n## Authors\n\n- Kevin C Barry<sup>1</sup> ([ORCID: 0000-0003-1064-5964](https://orcid.org/0000-0003-1064-5964))\n- Nicholas T Ingolia<sup>2</sup> ([ORCID: 0000-0002-3395-1545](https://orcid.org/0000-0002-3395-1545)) \u2020\n- Russell E Vance<sup>1</sup> ([ORCID: 0000-0002-6686-3912](https://orcid.org/0000-0002-6686-3912)) \u2020\n\n### Affiliations\n\n1. Division of Immunology and Pathogenesis, Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. Division of Biochemistry, Biophysics and Structural Biology, Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n3. Cancer Research Laboratory University of California, Berkeley Berkeley United States\n4. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe inducible innate immune response to infection requires a concerted process of gene expression that is regulated at multiple levels. Most global analyses of the innate immune response have focused on transcription induced by defined immunostimulatory ligands, such as lipopolysaccharide. However, the response to pathogens involves additional complexity, as pathogens interfere with virtually every step of gene expression. How cells respond to pathogen-mediated disruption of gene expression to nevertheless initiate protective responses remains unclear. We previously discovered that a pathogen-mediated blockade of host protein synthesis provokes the production of specific pro-inflammatory cytokines. It remains unclear how these cytokines are produced despite the global pathogen-induced block of translation. We addressed this question by using parallel RNAseq and ribosome profiling to characterize the response of macrophages to infection with the intracellular bacterial pathogen Legionella pneumophila. Our results reveal that mRNA superinduction is required for the inducible immune response to a bacterial pathogen.\n\n## Introduction\n\nGene expression is a concerted process that is regulated at multiple steps, including transcription, mRNA degradation, translation, and protein degradation. Most global studies of gene expression have focused on the transcriptional response, but the relative importance of transcription in determining protein levels remains debated (Li et al., 2014; Schwanh\u00e4usser et al., 2011; Breker and Schuldiner, 2014; Maier et al., 2009; Vogel and Marcotte, 2012; de Sousa Abreu et al., 2009). One recent study analyzed the response of dendritic cells to lipopolysaccharide (LPS) and found that changes in mRNA levels accounted for\u00a0~90% of observed alterations in protein levels (Jovanovic et al., 2015). However, the response to infection with a virulent pathogen is certainly more complicated than the response to a purified immunostimulatory ligand such as LPS. Indeed, pathogens have evolved to disrupt or manipulate almost every cellular process involved in gene expression (Finlay and McFadden, 2006). An effective innate immune response to infection therefore requires that host cells be able to induce appropriate responses in the face of pathogen manipulation.\n\nInhibition of host protein synthesis is a common strategy used by many viral and bacterial pathogens to disrupt host gene expression (Mohr and Sonenberg, 2012; Lemaitre and Girardin, 2013). For example, the intracellular bacterial pathogen L. pneumophila uses its Dot/Icm type IV secretion system (T4SS) to translocate into host cells several effector proteins that block host protein synthesis, including at least four effectors that target the elongation factor eEF1A (Lemaitre and Girardin, 2013; Barry et al., 2013; Belyi et al., 2008; Fontana et al., 2011; Shen et al., 2009). Similarly, the bacterial pathogen Pseudomonas aeruginosa blocks host translation elongation by secretion of exotoxin A (Lemaitre and Girardin, 2013; Dunbar et al., 2012; Iglewski et al., 1977). Interestingly, we previously discovered that host cells respond to protein synthesis inhibition \u2014 whether by Legionella, exotoxin A, or by pharmacological agents that block translation initiation or elongation \u2014 by initiating a specific host response characterized by production of specific pro-inflammatory cytokines, including interleukin-23 (Il23a), granulocyte macrophage colony-stimulating factor (Csf2) and interleukin-1\u03b1 (Il1a) (Barry et al., 2013; Fontana et al., 2011). The mechanism by which infected host cells are able to produce certain cytokines despite a global (>90%) block in protein synthesis remains unclear, but at least two distinct models have been proposed (Mohr and Sonenberg, 2012; Lemaitre and Girardin, 2013; Barry et al., 2013; Fontana et al., 2011; Dunbar et al., 2012; Fontana and Vance, 2011; McEwan et al., 2012; Chakrabarti et al., 2012). One model posits that the block in protein synthesis leads to superinduction of cytokine mRNAs that is sufficient to overcome the partial block in host protein synthesis (Barry et al., 2013; Fontana et al., 2011). Alternatively, it has been proposed that host cells may circumvent the global block in protein synthesis by selective translation of specific cytokine transcripts (Dunbar et al., 2012; Asrat et al., 2014).\n\nTo determine how host cells mount an inflammatory response when protein synthesis is disrupted, we performed parallel RNAseq and ribosome profiling (Ingolia et al., 2012, 2009, 2011) of Legionella-infected mouse primary bone-marrow-derived macrophages (BMMs). The results reveal the relative contributions of translational regulation and mRNA induction in controlling immune responses to pathogenic L. pneumophila, and support a model in which the majority of gene induction in response to pathogenic infections occurs at the level of mRNA induction. We were able to identify a subset of mRNAs that display higher-than-average ribosome occupancy, but the elevated occupancy of these mRNAs was observed in uninfected cells as well as in cells infected with L. pneumophila. We propose that mRNA superinduction provides a robust mechanism for host cells to initiate a response to infection despite pathogen-mediated disruption of host gene expression.\n\n## Results\n\n### mRNA superinduction mediates the host response to virulent L. pneumophila\n\nThe relative role of transcription versus translation in mediating the inducible response to an infection with a virulent bacterial pathogen remains unclear. Thus, we performed ribosome profiling (Ingolia et al., 2012, 2009, 2011) and total (rRNA-depleted) RNA sequencing of BMMs infected with L. pneumophila. BMMs were infected with a virulent \u0394flaA strain, an avirulent T4SS-deficient \u0394dotA\u0394flaA strain, or a \u03947\u0394flaA strain that lacks the seven effectors associated with inhibition of host protein synthesis. RNA was isolated at 6 hr post-infection, which was the earliest we could detect significant L. pneumophila-induced translation inhibition without marked cytotoxicity (data not shown). L. pneumophila strains on the \u0394flaA background were used to reduce cell cytotoxicity by avoiding the effects of NAIP5/NLRC4 inflammasome activation by flagellin (Molofsky et al., 2006; Ren et al., 2006) and we previously showed loss of flagellin does not affect blockade of host translation or the transcriptional induction of inflammatory cytokines (Barry et al., 2013). Control experiments demonstrated that\u00a0~90% of macrophages were infected with at least one bacterium under our infection conditions (Figure 1\u2014figure supplement 1A\u2013B).\n\nLysates from infected macrophages were split and used to generate ribosome profiling libraries and RNAseq libraries, thereby allowing us to compare directly the mRNA levels and ribosome occupancy of those mRNAs from the same cells. As a confirmation of the quality of the ribosome profiling libraries, ribosome footprints were found to map preferentially to the exonic regions of infection-induced genes (Figure 1), and showed a strong bias toward 27\u201328 nucleotide fragment lengths (Figure 1\u2014figure supplement 2), consistent with the known size of ribosome-protected footprints. In accord with previous studies, induction of ribosome footprints on Gem, Csf2, and Il23a required the seven-bacterial effectors associated with the block in host protein synthesis, while induction of ribosome footprints corresponding to Il1a and Il1b required the bacterial T4SS (Figure 1A\u2013F).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig1-v2.jpg)\n\n**Figure 1.:** (A\u2013F) Ribosome footprint reads were mapped to the genome and the number of footprints on the mRNAs for Gapdh (A), Csf2 (B), Gem (C), Il23a (D), Il1a (E), and Il1b (F) was visualized. Numbers in parentheses show the total read count of ribosome footprints found on the indicated transcript. Bracketed numbers represent read count data range. Gray, uninfected BMMs. Red, \u0394flaA-infected BMMs. Green, \u0394dotA\u0394flaA-infected BMMs. Blue, \u03947\u0394flaA-infected BMMs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) \u0394flaA or \u0394dotA\u0394flaA L. pneumophila-infected BMMs were stained to mark extracellular (blue) and all bacteria (red). (A) Representative image of \u0394flaA L. pneumophila-infected BMMs showing extracellular (blue and red stain, blue arrow) and intracellular (red stain only, yellow arrow) bacteria. (B) Individual BMMs (n\u00a0=\u00a01375) were analyzed for the presence of at least one intracellular \u0394flaA or \u0394dotA\u0394flaA L. pneumophila bacterium. Image is the same as in A with yellow circles marking infected cells and blue circles marking uninfected cells. The average combined infectivity in these conditions is\u00a0~90%. See supplemental methods for more details on counting.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The fraction of total reads with a size of 26\u201334 nucleotides was plotted for each ribosome profiling library used in this study. These graphs clearly show that the ribosome profiling libraries used in this study have a strong bias for 27\u201328 nucleotide fragments, consistent with the size of the footprint of the ribosome. Columns indicate infection condition. Rows indicate BMM genotype and/or drug treatment.\n\nWe first analyzed WT BMMs for T4SS-dependent gene induction, defined as the ratio of normalized read counts in the virulent \u0394flaA to avirulent \u0394dotA\u0394flaA L. pneumophila-infected conditions (see Materials and methods). We found that the majority of T4SS-dependent increases in ribosome footprints could be explained at the level of mRNA induction, as there was nearly a perfect linear correlation between the extent of mRNA induction and ribosome footprints for all T4SS-induced genes (Figure 2A). This correlation held for numerous known pathogen-induced mRNAs, including Il23a, Gem, Csf2, Il6, Tnf, Cxcl1, Cxcl2, Dusp1, and Dusp2, as well as for the cytokines Il1a and Il1b that were previously proposed to be preferentially translated (Asrat et al., 2014). To confirm that cytokine protein levels correlate with mRNA levels, we infected BMMs with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila and measured the levels of 42 cytokines or immune-related proteins in the supernatants or cell lysates of these BMMs at 6 hr, using commercially available bead arrays. Of the cytokines assayed, 18 cytokines/proteins were measured above the limit of detection in lysates, and 22 cytokines/proteins were measured above the limit of detection in supernatants. The T4SS-dependent fold-induction of these protein levels was plotted versus the T4SS-dependent fold-induction of mRNA levels (Figure 2B\u2013C). We observed a robust correlation between the extent of mRNA induction and the extent of protein induction, particularly in lysates (Figure 2B). The correlation seems to apply for the most highly induced proteins/mRNAs (e.g. IL-10 (Il10) and GM-CSF (Csf2)) but also for more modestly induced cytokines (Il1a, Il1b, Cxcl10). The less robust correlation between mRNA levels and protein levels in the cell supernatant (Figure 2C) may reflect differing rates of secretion, accumulation in the supernatant over time, re-binding to cell surface receptors, and stability in the supernatant. Taken together, these results suggest that the inducible immune response to L. pneumophila is controlled primarily at the level of mRNA superinduction (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig2-v2.jpg)\n\n**Figure 2.:** (A) The ratio of ribosome footprint and RNAseq read counts for well-expressed transcripts (read count\u00a0\u2265100) in \u0394flaA-infected versus \u0394dotA\u0394flaA-infected B6 BMMs was calculated for each annotated transcript (open circles) in the dataset and plotted. (B\u2013C) B6 BMMs were infected with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila and at 6 hr post-infection proteins were measured in cell lysates (B) or supernatants (C) by bead array. The T4SS-induction (\u0394flaA/\u0394dotA\u0394flaA) of protein in supernatants (B) or lysates (C) and the T4SS-induction of mRNA (\u0394flaA/\u0394dotA\u0394flaA) was plotted. Proteins were normalized to total protein levels measured by BCA and RNAseq read counts was normalized to transcript length and the sum of their respective mitochondrial protein coding genes. Data are averaged from four (A) or two independent experiments (B\u2013C). Orange circle, Il1a. Green circle, Il1b. Blue circle, subset of inducible genes. Grey dotted line, y = x. Blue dotted line, linear regression model. r2, coefficient of determination. See also Figure 2\u2014source data 1.\n\n### mRNA induction accounts for effector-induced gene expression\n\nL. pneumophila uses multiple mechanisms to block host protein synthesis. It has been shown that up to seven bacterial effectors secreted into the host cytosol can block translation (Barry et al., 2013; Fontana et al., 2011). Interestingly, the \u22067 strain that lacks these effectors is still able to partially suppress host protein synthesis by a mechanism that remains to be fully characterized (Barry et al., 2013; Fontana et al., 2011; Ivanov and Roy, 2013). It has been proposed that T4SS-competent L. pneumophila damages host cell membranes, resulting in ubiquitylation-dependent downregulation of mTOR activity and a block in cap-dependent translation (Ivanov and Roy, 2013). Consistent with its ability to partially suppress protein synthesis, the \u22067 strain still provokes IL-1\u03b1 production, although its ability to stimulate Il23a and Csf2 expression is diminished (Barry et al., 2013; Fontana et al., 2011).\n\nTo determine the mechanism of effector-triggered cytokine induction, we performed parallel RNAseq and ribosome profiling of BMMs infected either with \u2206flaA or \u22067\u2206flaA L. pneumophila. As expected, induction of Gem, Il23a, and Csf2 is highly dependent on the seven bacterial effectors, but again, similar to the total T4SS-dependent gene induction (Figure 2), the seven effector-dependent induction of ribosome footprints on these genes could be explained at the level of mRNA induction (Figure 3A). While the seven effector-dependent induction of the genes Dusp1, Dusp2, Cxcl1, Cxcl2, Tnf, Il1a, Il1b, and Il6 was low, all changes in ribosome footprint reads could again be explained by changes in mRNA levels (Figure 3A). These data suggest that T4SS-dependent and seven bacterial effector-dependent induction of inflammatory cytokines occurs by the induction of mRNA transcripts rather than through a mechanism of selective ribosome loading of mRNAs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013B) Ribosome footprint and RNAseq read counts were sorted for well-expressed transcripts (read count\u00a0\u2265100) and normalized to the sum of their respective mitochondrial protein coding genes. The ratio of ribosome footprint and RNAseq read counts in (A) \u0394flaA-infected and \u03947\u0394flaA-infected B6 BMMs or (B) B6 or Myd88\u2013/\u2013 BMMs infected with \u0394flaA L. pneumophila was calculated for each annotated transcript (open circles) in the dataset and plotted. Data are averaged from two independent experiments. Orange circle, Il1a. Green circle, Il1b. Blue circle, subset of inducible genes. Grey dotted line, y = x. Blue dotted line, linear regression model. r2, coefficient of determination. See also Figure 3\u2014source data 1.\n\n### MyD88 signaling in response to L. pneumophila is required for mRNA induction\n\nIt was previously proposed that specific transcripts, such as Il1a and Il1b, can be preferentially translated via a mechanism that requires signaling through the adaptor protein MyD88 (Asrat et al., 2014). Thus, we performed ribosome profiling and RNAseq on WT and Myd88\u2013/\u2013 BMMs infected with \u0394flaA L. pneumophila. For all MyD88-induced genes, including Il1a and Il1b, we observed a linear correlation between the induction of ribosome footprints and RNAseq reads (Figure 3B). This implies that MyD88-dependent induction of Il1a and Il1b ribosome footprints is controlled primarily at the level of mRNA induction, rather than at the level of selective ribosome loading of the mRNA. A similar pattern was also observed for other MyD88-induced genes, including Cxcl1, Csf2, Tnf, and Il6 (Figure 3B). Taken together, our results argue that the ability of host cells to overcome a pathogen-induced block in protein synthesis, and produce inflammatory cytokines such as IL-1\u03b1 and IL-1\u03b2, requires a T4SS- and MyD88-dependent increase in mRNA levels rather than preferential loading of these cytokine mRNAs with ribosomes.\n\n### Ribosome occupancy of mRNAs varies but is independent of infection\n\nThe above analyses sought to determine whether T4SS-dependent or MyD88-dependent gene induction was due to increased mRNA levels or increased ribosome loading of mRNAs. However, the analyses did not reveal whether there is differential ribosome occupancy of constitutively expressed (i.e. non-induced) mRNAs. We thus analyzed the ratio of ribosome footprint reads to RNAseq reads for all (induced and non-induced) transcripts in uninfected BMMs, and in BMMs infected with \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA L. pneumophila. This analysis revealed a wide range of ribosome occupancies across different transcripts (Figure 4A\u2013D). As might be anticipated, many of the mRNAs with the highest ribosome occupancy encoded abundant \u2018housekeeping\u2019 proteins, including Acta1 and histone mRNAs (e.g. Hist1h2ba, H2afj, and Hist3h2ba) (Figure 4A; Table 1). Importantly, most mRNAs that exhibit increased ribosome occupancy in uninfected BMMs also exhibit increased ribosome occupancy in \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA L. pneumophila-infected BMMs (Figure 4B\u2013D; Table 1), implying that the increased ribosome occupancy of these mRNAs is constitutive and not induced in response to infection. A few mRNAs of immunological interest, namely Lyz1, S100a11, and Cxcl3 exhibited elevated ribosome occupancy in all infection conditions (Figure 4B\u2013D; Table 1). In contrast, Ftl1 mRNA exhibited very low ribosome occupancy (Figure 4A), consistent with a previous report showing that Ftl1 translation can be strongly repressed (Cairo et al., 1989). Atf4 is another gene known to be regulated at the level of translation (Pavitt and Ron, 2012), and in \u0394flaA and \u0394dotA\u0394flaA L. pneumophila-infected BMMs, Atf4 exhibited low ribosome occupancy (Figure 4B\u2013C). Atf4 was not expressed at high enough levels to be called as detected in uninfected or \u03947\u0394flaA L. pneumophila-infected BMMs (Figure 4A and D). Taken together, our results reveal that several mRNAs exhibit constitutive increased or decreased ribosome occupancy, as expected. Despite this, ribosome occupancy of mRNAs was not markedly affected by L. pneumophila infection (Figure 4A\u2013D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013D) Ribosome footprint and RNAseq read counts were sorted for well-expressed transcripts (read counts\u00a0\u2265\u00a0100) and normalized to CDS length and the sum of their respective mitochondrial protein coding genes. The normalized read counts for ribosome footprints and RNAseq for all well-expressed annotated transcripts were plotted for (A) uninfected, (B) \u0394flaA, (C) \u0394dotA\u0394flaA, or (D) \u03947\u0394flaA L. pneumophila-infected B6 BMMs. Red dots represent transcripts with low translation efficiency. Purple dots represent a number of transcripts common to all conditions that appear to have significantly higher ribosome occupancy. Data are averaged from three (A), four (B\u2013C), or two independent experiments (D). Orange circle, Il1a. Green circle, Il1b. Blue circles, subset of inducible transcripts. Blue dotted line, linear regression model. Grey lines, 99% prediction interval. r2, coefficient of determination. See also Table 1 and Figure 4\u2014source data 1.\n\n**Table 1.**\n Transcripts with ribosome occupancy eight times greater than the condition average. Bolded, transcripts found in all conditions. Orange, transcripts found in three conditions. Purple, transcripts found in two conditions. Data are averaged from two independent experiments.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Uninfected</th>\n      <th colspan=\"2\">\u0394flaA</th>\n      <th colspan=\"2\">\u0394dotA\u0394flaA</th>\n      <th colspan=\"2\">\u03947\u0394flaA</th>\n    </tr>\n    <tr>\n      <th>Gene</th>\n      <th>Riobosome occupancy</th>\n      <th>Gene</th>\n      <th>Riobosome occupancy</th>\n      <th>Gene</th>\n      <th>Riobosome occupancy</th>\n      <th>Gene</th>\n      <th>Riobosome occupancy</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acta1</td>\n      <td>7105.62</td>\n      <td>Acta1</td>\n      <td>3137.40</td>\n      <td>Acta1</td>\n      <td>2489.70</td>\n      <td>Acta1</td>\n      <td>1633.44</td>\n    </tr>\n    <tr>\n      <td>H2-Q7</td>\n      <td>3130.45</td>\n      <td>Hist1h4f</td>\n      <td>1177.90</td>\n      <td>S100a11</td>\n      <td>1115.36</td>\n      <td>Hist1h4f</td>\n      <td>943.87</td>\n    </tr>\n    <tr>\n      <td>Hist1h4f</td>\n      <td>2195.70</td>\n      <td>S100a11</td>\n      <td>870.51</td>\n      <td>Hist1h4f</td>\n      <td>1069.93</td>\n      <td>Rpl31</td>\n      <td>893.93</td>\n    </tr>\n    <tr>\n      <td>Hist3h2ba</td>\n      <td>1715.98</td>\n      <td>Hist1h2aa</td>\n      <td>844.87</td>\n      <td>Rpl31</td>\n      <td>873.61</td>\n      <td>Hist1h2aa</td>\n      <td>822.96</td>\n    </tr>\n    <tr>\n      <td>H2afj</td>\n      <td>1524.09</td>\n      <td>Hist3h2bb-ps</td>\n      <td>699.92</td>\n      <td>Hist1h2ba</td>\n      <td>707.62</td>\n      <td>Hist3h2ba</td>\n      <td>625.90</td>\n    </tr>\n    <tr>\n      <td>Hist3h2bb-ps</td>\n      <td>1470.88</td>\n      <td>Hist1h2ba</td>\n      <td>692.19</td>\n      <td>Hist3h2ba</td>\n      <td>670.32</td>\n      <td>S100a11</td>\n      <td>565.91</td>\n    </tr>\n    <tr>\n      <td>Lyz1</td>\n      <td>1260.16</td>\n      <td>H2afj</td>\n      <td>686.47</td>\n      <td>Lyz1</td>\n      <td>533.22</td>\n      <td>Fus</td>\n      <td>532.18</td>\n    </tr>\n    <tr>\n      <td>Hist1h2ba</td>\n      <td>1174.16</td>\n      <td>Cxcl3</td>\n      <td>675.23</td>\n      <td>Hist3h2bb-ps</td>\n      <td>524.22</td>\n      <td>Hist1h2ba</td>\n      <td>519.60</td>\n    </tr>\n    <tr>\n      <td>Cd52</td>\n      <td>1170.22</td>\n      <td>H2-T24</td>\n      <td>557.88</td>\n      <td>Fus</td>\n      <td>405.23</td>\n      <td>Lyz1</td>\n      <td>498.70</td>\n    </tr>\n    <tr>\n      <td>Fus</td>\n      <td>1102.13</td>\n      <td>Lyz1</td>\n      <td>551.76</td>\n      <td>H2-T24</td>\n      <td>374.06</td>\n      <td>H2-Q7</td>\n      <td>371.10</td>\n    </tr>\n    <tr>\n      <td>H2-Q4</td>\n      <td>1022.17</td>\n      <td>Hist3h2ba</td>\n      <td>509.95</td>\n      <td>Gm5803</td>\n      <td>345.78</td>\n      <td>Gm5803</td>\n      <td>368.22</td>\n    </tr>\n    <tr>\n      <td>Rpl38</td>\n      <td>1004.74</td>\n      <td>Fus</td>\n      <td>480.25</td>\n      <td>H2-Q7</td>\n      <td>337.36</td>\n      <td>H2afj</td>\n      <td>356.99</td>\n    </tr>\n    <tr>\n      <td>Hist2h2ab</td>\n      <td>796.60</td>\n      <td>Saa1</td>\n      <td>475.25</td>\n      <td>Hist1h4i</td>\n      <td>302.55</td>\n      <td>Hist1h4i</td>\n      <td>348.34</td>\n    </tr>\n    <tr>\n      <td>H2-Q6</td>\n      <td>752.77</td>\n      <td>Gm5803</td>\n      <td>436.48</td>\n      <td>Cxcl3</td>\n      <td>281.86</td>\n      <td>Hist1h4k</td>\n      <td>318.08</td>\n    </tr>\n    <tr>\n      <td>S100a11</td>\n      <td>717.99</td>\n      <td>Hist1h4i</td>\n      <td>333.72</td>\n      <td>Saa1</td>\n      <td>265.08</td>\n      <td>Rrbp1</td>\n      <td>306.19</td>\n    </tr>\n    <tr>\n      <td>Gm5803</td>\n      <td>692.32</td>\n      <td>Atp5e</td>\n      <td>315.00</td>\n      <td>Hist1h4n</td>\n      <td>244.74</td>\n      <td>Hist1h4j</td>\n      <td>301.73</td>\n    </tr>\n    <tr>\n      <td>Tmsb10</td>\n      <td>679.27</td>\n      <td>Rrbp1</td>\n      <td>308.68</td>\n      <td>Rrbp1</td>\n      <td>225.85</td>\n      <td>Hist1h4a</td>\n      <td>298.67</td>\n    </tr>\n    <tr>\n      <td>H2-Q10</td>\n      <td>674.79</td>\n      <td>Mt1</td>\n      <td>308.36</td>\n      <td>Hist1h4j</td>\n      <td>218.84</td>\n      <td>Hist1h4h</td>\n      <td>295.99</td>\n    </tr>\n    <tr>\n      <td>Rpl36</td>\n      <td>672.43</td>\n      <td>Hist1h4j</td>\n      <td>304.87</td>\n      <td>Hist1h4k</td>\n      <td>217.89</td>\n      <td>Hist1h4b</td>\n      <td>288.98</td>\n    </tr>\n    <tr>\n      <td>Mt1</td>\n      <td>672.29</td>\n      <td>Hist1h4k</td>\n      <td>303.19</td>\n      <td>Atp5e</td>\n      <td>217.08</td>\n      <td>Hist1h4n</td>\n      <td>272.04</td>\n    </tr>\n    <tr>\n      <td>Hist2h2bb</td>\n      <td>650.90</td>\n      <td>Hist1h4h</td>\n      <td>293.11</td>\n      <td>H2-Q4</td>\n      <td>215.94</td>\n      <td>BC094916</td>\n      <td>259.08</td>\n    </tr>\n    <tr>\n      <td>H2-Q7</td>\n      <td>629.56</td>\n      <td>Hist1h4a</td>\n      <td>292.51</td>\n      <td>Hist1h4h</td>\n      <td>215.51</td>\n      <td>Hist1h4c</td>\n      <td>255.20</td>\n    </tr>\n    <tr>\n      <td>H2-Q7</td>\n      <td>618.80</td>\n      <td>Hist1h4b</td>\n      <td>280.60</td>\n      <td>H2afj</td>\n      <td>206.14</td>\n      <td>Cxcl3</td>\n      <td>252.49</td>\n    </tr>\n    <tr>\n      <td>Atp5e</td>\n      <td>606.27</td>\n      <td>Gm11127</td>\n      <td>272.59</td>\n      <td>Hist1h4a</td>\n      <td>205.64</td>\n      <td>Atp5e</td>\n      <td>241.23</td>\n    </tr>\n    <tr>\n      <td>H2-T24</td>\n      <td>601.41</td>\n      <td>Hist1h4n</td>\n      <td>265.41</td>\n      <td>Hist1h4b</td>\n      <td>197.15</td>\n      <td>Saa1</td>\n      <td>220.10</td>\n    </tr>\n    <tr>\n      <td>Rpl37</td>\n      <td>584.88</td>\n      <td>Fkbp1a</td>\n      <td>264.22</td>\n      <td>Hist2h2bb</td>\n      <td>191.90</td>\n      <td>Myl12b</td>\n      <td>210.72</td>\n    </tr>\n    <tr>\n      <td>H2-T10</td>\n      <td>545.54</td>\n      <td>Hist1h4c</td>\n      <td>Hist1h4c</td>\n      <td>Hist1h4c</td>\n      <td>187.03</td>\n      <td>Gm7030</td>\n      <td>206.93</td>\n    </tr>\n    <tr>\n      <td>Hist1h4i</td>\n      <td>529.15</td>\n      <td>Gm7030</td>\n      <td>253.47</td>\n      <td>Mt1</td>\n      <td>185.28</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gm11127</td>\n      <td>512.74</td>\n      <td>Myl12b</td>\n      <td>247.71</td>\n      <td>Cd52</td>\n      <td>184.14</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Uqcrq</td>\n      <td>511.93</td>\n      <td>Rps17</td>\n      <td>234.41</td>\n      <td>Gm11127</td>\n      <td>183.08</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Emp1</td>\n      <td>494.39</td>\n      <td>Cd52</td>\n      <td>231.77</td>\n      <td>Hist1h2bj</td>\n      <td>182.74</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hist1h2bf</td>\n      <td>484.53</td>\n      <td></td>\n      <td></td>\n      <td>Sh3bgrl</td>\n      <td>181.81</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gm7030</td>\n      <td>481.28</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Npc2</td>\n      <td>479.93</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hist1h2bj</td>\n      <td>478.33</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Usmg5</td>\n      <td>477.21</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hmga2</td>\n      <td>468.10</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Global analysis of translation inhibition by L. pneumophila\n\nA benefit of ribosome profiling is that it permits the mapping of ribosome footprints with nucleotide resolution. Thus, to characterize the position of ribosomes on mRNAs after infection with L. pneumophila, we generated metagene ribosome footprint profiles from libraries generated from WT BMMs (Figure 5). Metagene profiles were generated by mapping the inferred A site position of ribosome footprint reads relative to the start (Figure 5A,C,E,G,I) or stop (Figure 5B,D,F,H,J) codon on a given transcript. Mapped reads were then summed to produce a global view of the distribution of ribosomes across all transcripts in our dataset. As expected from the known stepwise codon-by-codon movement of the ribosome, all metagene plots demonstrated a characteristic three-nucleotide periodicity (Figure 5). Interestingly, metagene ribosome profiles of uninfected (Figure 5A\u2013B), \u0394flaA (Figure 5C\u2013D), \u0394dotA\u0394flaA (Figure 5E\u2013F), or \u03947\u0394flaA (Figure 5G\u2013H) infected BMMs appeared grossly similar to each other, even though global translation is blocked only in the \u0394flaA and \u03947\u0394flaA L. pneumophila-infected conditions (Barry et al., 2013; Fontana et al., 2011; Asrat et al., 2014). This result can be explained by the fact that ribosome metagene profiles do not distinguish whether ribosome footprints arise from stalled or translating ribosomes, unless the stall occurs at a characteristic distance from the start or stop codon. In fact, we did notice a slight increase in the number of ribosomes found at the start site of the transcript in \u03947\u0394flaA L. pneumophila-infected BMMs as compared to other conditions (Figure 5I). This may reflect a selective block in translation initiation by this strain (see below). In addition, we noted that in all conditions, ribosomes accumulated at the stop codon, suggesting that, in BMMs, translation termination may be a limiting step in translation (Figure 5J).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013J) Metagene profiles of uninfected (A\u2013B), \u0394flaA (C\u2013D), \u0394dotA\u0394flaA (E\u2013F), \u03947\u0394flaA (G\u2013H) L. pneumophila-infected B6 BMMs and a merge (I\u2013J). Metagene profiles are depicted relative to the translation start (A, C, E, G, I) and stop site (B, D, F, H, J). Metagene analyses show peaks at every three nucleotides, corresponding to the codon-to-codon shifts of the ribosome. Data are representative of two independent experiments (A\u2013J). Black line, uninfected. Red line, \u0394flaA-infected. Green line, \u0394dotA\u0394flaA-infected. Blue line, \u03947\u0394flaA-infected.\n\n### L. pneumophila blocks translation at the levels of initiation and elongation\n\nTo distinguish whether an observed ribosome footprint arises from a stalled or translating ribosome, we performed ribosome run-off experiments. In these experiments, new translation initiation was blocked by the drug harringtonine 120 s prior to cell lysis. Harringtonine inhibits the first rounds of peptide bond formation following ribosome subunit joining and results in accumulation of ribosomes at the translational start site and run-off of elongating (but not stalled) ribosomes that have already cleared the start codon (Ingolia et al., 2012, 2011; Huang and Harringtonine, 1975; Tscherne and Pestka, 1975; Fresno et al., 1977). Importantly, cells experiencing a block in translation elongation will exhibit less ribosome run-off after harringtonine treatment, and an increased number of reads at the 5\u02b9 end of mRNAs after drug treatment (Ingolia et al., 2011), compared to cells in which elongation is not blocked.\n\nAs expected, uninfected and \u0394dotA\u0394flaA-infected BMMs show an increase in ribosome footprints at the translation start site and a preferential loss of ribosome footprints from the 5\u02b9 and 3\u02b9 end of mRNAs, consistent with the expected effects of harringtonine and demonstrating clear ribosome run-off (Figure 6A\u2013B,E\u2013F, Figure 6\u2014figure supplement 1A\u2013B). By contrast, \u0394flaA L. pneumophila-infected BMMs treated with harringtonine exhibited little ribosome run-off (Figure 6C\u2013D, Figure 6\u2014figure supplement 1A\u2013B), consistent with the expectation that \u0394flaA L. pneumophila blocks host translation elongation. The \u03947\u0394flaA L. pneumophila strain, lacking all known bacterial effectors that block host protein synthesis, nevertheless, shuts down host translation (Barry et al., 2013), yet we observed clear evidence of run-off of elongating ribosomes from the 5\u02b9 and 3\u02b9 end of mRNAs following harringtonine treatment (Figure 6G\u2013H, Figure 6\u2014figure supplement 1A\u2013B). These data suggest that the residual block in host protein synthesis induced by \u03947\u0394flaA L. pneumophila is at the level of translation initiation. Similar results can be seen when analyzing longer stretches of coding sequences (Figure 6\u2014figure supplement 1C\u2013F).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013H) Metagene profiles of B6 BMMs uninfected (A\u2013B) or infected with \u0394flaA (C\u2013D), \u0394dotA\u0394flaA (E\u2013F), or \u03947\u0394flaA (G\u2013H) L. pneumophila in the presence (solid line) or absence (dashed line) of the drug harringtonine to block translation initiation. Metagene profiles are depicted relative to the translation start (A, C, E, G) and stop site (B, D, F, H). Data are representative of two independent experiments (A\u2013H). Solid line, no drug treatment. Dashed line, harringtonine treatment. Black line, uninfected. Red line, \u0394flaA-infected. Green line, \u0394dotA\u0394flaA-infected. Blue line, \u03947\u0394flaA-infected.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A\u2013B) Metagene profile plot around the translation start (A) or stop (B) site of all harringtonine-treated conditions normalized to mitochondrial read counts of each condition. (C\u2013F) Global weighted averages across transcripts were calculated for BMMs left uninfected (C) or infected with \u0394flaA (D), \u0394dotA\u0394flaA (E), or \u03947\u0394flaA (F) L. pneumophila. Weighted averages were generated by scaling each transcript\u2019s ribosome occupancy profile according to the average density from codon 250 to codon 349 and then averaging across the entire condition. Transcripts with very low density in the 250\u2013349 codon region (or shorter than 349 codons) are excluded from averaging. If the weighted average is less than 1, this shows that this region has reduced ribosome footprints, while if the weighted average is greater than one this shows that there are more ribosome footprints in this region. Following a brief pulse of cells with harringtonine (red line) there is a change in the distribution of ribosomes from the 5\u02b9 end of the mRNA to the 3\u02b9 end of the mRNA (i.e., as the ribosomes continue to move 5\u02b9 to 3\u02b9; C\u2013F) as compared to untreated cells (blue line). This can be seen by an increase in the weighted average at the 3\u02b9 end of mRNAs (C, E, F) but the lack of this change shows a block in translation elongation (D). We also expect an accumulation of ribosomes at the ATG following harringtonine treatment, which is also seen as a peak in the weighted average at the start site (C\u2013F). Data are representative of two independent experiments (A\u2013F).\n\nIt is important to note that there is a small proportion of uninfected bystander cells assayed in our experiments. However, it is unlikely that these uninfected cells are responsible for the ribosome run-off seen in \u03947\u0394flaA L. pneumophila-infected BMMs because the conditions used in these experiments led to most (~90%) cells being infected with L. pneumophila (Figure 1\u2014figure supplement 1A\u2013B). Furthermore, if our infection conditions resulted in large numbers of uninfected cells, then a similar run-off should have been observed in the \u2206flaA-infected sample, which it was not. Thus, these results suggest that the seven effectors are required to block translation elongation, and that the residual translation inhibition induced by \u03947\u0394flaA L. pneumophila is at the level of translation initiation (Figure 6).\n\n### Cytokine transcripts do not escape the pathogen-induced translation block\n\nAlthough the above results demonstrate a global block in translation elongation in \u2206flaA-infected cells, it remains possible that specific transcripts escape this block. We therefore analyzed our translation run-off datasets to assess translation elongation on a per-mRNA basis. We plotted the number of ribosome footprint reads for each transcript in paired untreated and harringtonine treated samples (Figure 7A\u2013D). In this analysis, we expect that an mRNA with actively elongating ribosomes would show a reduction in the number of 5\u02b9 reads in the harringtonine treated sample, as ribosomes will run off the transcript, compared to the untreated sample. In order to best measure run-off elongation and avoid the expected but confounding effects of harringtonine-induced accumulation of footprints at start codons (which were clearly observed; Figure 6), we excluded the first 25 codons and analyzed ribosome footprint occupancy over the next 300 codons. Consistent with our previous analysis, we find that uninfected, \u0394dotA\u0394flaA, and \u03947\u0394flaA-infected BMMs show a clear global signature of ribosome run-off, again suggesting that the block in host protein synthesis induced by \u03947\u0394flaA L. pneumophila infection is occurring at the level of translation initiation (Figure 7A\u2013D). Importantly, in \u0394flaA-infected BMMs there is no evidence of ribosome run-off, consistent with \u0394flaA L. pneumophila inducing a block in host translation elongation (Figure 7B). Interestingly, in all conditions tested, cytokine-related genes fell well within the average of ribosome retention across all transcripts, and if anything, were found to have reduced ribosome run-off compared to a typical gene (Figure 7A\u2013D). A similar trend was seen when we further examined ribosome run-off for specific immune and housekeeping transcripts by plotting the cumulative read counts over the length of the mRNA (Figure 7\u2014figure supplement 1). These results imply that at this time point, cytokine transcripts are not preferentially translated in response to pathogenic infection, but instead are controlled at the level of mRNA induction (Figure 7A\u2013D).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Read counts from paired samples treated with harringtonine or left untreated were plotted for uninfected (A), \u0394flaA (B), \u0394dotA\u0394flaA (C), or \u03947\u0394flaA-infected (D) BMMs showing where cytokine-related transcripts (pink circles; Csf1, Csf2, Cxcl1, Cxcl2, Dusp1, Dusp2, Ifnb1, Il10, Il12b, Il1a, Il1b, Il23a, Il6, Lyz1, and Tnf) and housekeeping transcripts (blue circles; Gapdh, Rpl31, Rps17, and Tuba1a) fall among all transcripts (black circles). Grey line, y=x. Data shown are representative of two independent experiments. See Figure 7\u2014source data 1 for individual housekeeping and cytokine-related transcripts. Supporting Information Captions.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22707/elife-22707-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Cumulative read counts across the length of individual transcripts were calculated and normalized to the sum of ribosome footprints of mitochondrial transcripts in each respective library. Red = BMMs treated with harringtonine. Black = BMMs untreated. Numbers in parentheses = total read counts. Rows = individual transcript. Columns = infection condition.\n\n## Discussion\n\nInducible gene expression is of central importance for the immune response to infection. A recent study showed that in response to innate immune stimulation with purified LPS, dendritic cells almost entirely control the induction of genes at the level of transcription (Jovanovic et al., 2015). However, this conclusion may not apply to cells infected with a virulent pathogen that manipulates gene expression. We thus investigated the relative contributions of mRNA induction and translation during infection with an intracellular bacterial pathogen, L. pneumophila, that blocks host protein synthesis.\n\nPathogen-induced blockade of host protein synthesis has been shown in a number of infection models to be sensed by the host and induce an inflammatory response (Barry et al., 2013; Fontana et al., 2011; Dunbar et al., 2012; McEwan et al., 2012; Chakrabarti et al., 2012; Fontana et al., 2012). We previously identified IL-1\u03b1 as a key inflammatory cytokine induced preferentially in response to translation inhibition imposed by L. pneumophila (Barry et al., 2013). However, the mechanism by which cytokine proteins are induced despite a pathogen-induced translation blockade remains unclear. We previously provided evidence for a model in which translation inhibition results in a failure to synthesize negative feedback inhibitors of transcription, for\u00a0example, I\u03baB or A20 (Fontana et al., 2011). We proposed this results in a massive and sustained production of cytokine transcripts, termed mRNA superinduction, that is sufficient to overcome the partial (~95%) block in translation and allow for production of cytokine proteins (Barry et al., 2013; Fontana et al., 2011). Another report provided data suggesting that IL-1 production is mediated by MyD88-enhanced protein synthesis, although alternative explanations were also entertained (Asrat et al., 2014). A third study proposed that virulent L. pneumophila regulates cap-dependent translation initiation, via manipulation of the mTOR signaling pathway, to regulate the protein levels of highly abundant transcripts in infected macrophages (Ivanov and Roy, 2013). In our present study, we found that the induction of ribosome footprints by L. pneumophila could be explained by an underlying induction of mRNAs. We did not find evidence for selective ribosome loading of abundant cytokine mRNAs. In addition, ribosome run-off experiments confirmed that cytokine mRNAs are not selectively translated during infection (Figure 7). Furthermore, we find that the role of MyD88 signaling in gene expression appears to be primarily at the level of mRNA induction and not translational regulation (Figure 3). Thus, we conclude that preferential translation does not account for the majority of specific gene induction following infection by L. pneumophila.\n\nIt remains possible that selective translation initiation mechanisms, for\u00a0example, via uORFs, might also contribute modestly to the inducible immune response to L. pneumophila, but these subtle effects were not evident in our global analysis. In any case, it is difficult to explain how regulation of translation initiation could overcome a downstream pathogen-induced block in translation elongation such as is observed during L. pneumophila infection. It is also possible that post-translational mechanisms, which are not addressable with the ribosomal profiling techniques used here, may regulate protein production by infected cells. Indeed, inflammasome-dependent caspase-1 processing is known to be an important post-translational regulatory mechanism controlling IL-1\u03b2 production by infected cells (von Moltke et al., 2013). Lastly, our data do not specifically address the mechanism of mRNA induction, although our prior work suggested mRNA induction involves new transcription rather than increased mRNA stability (Fontana et al., 2011).\n\nAlthough wild-type L. pneumophila blocks translation elongation via translocated effectors, we found that \u03947\u0394flaA L. pneumophila lacking the effectors nevertheless blocks protein synthesis at the level of translation initiation (Figure 6). Thus, in contrast to a previous study that used virus-based translation reporter experiments in L. pneumophila-infected RAW macrophages (Ivanov and Roy, 2013), we were clearly able to dissociate the L. pneumophila-induced block in host protein synthesis into two components: (1) an elongation block that required the seven translocated effectors, and (2) an initiation block that did not require the seven effectors. In addition, our analysis represents an advance over prior studies because we were able to analyze the translation of all endogenous transcripts simultaneously as opposed to measuring translation only of a single exogenous reporter mRNA. Intriguingly, in contrast to the effector-dependent block in translation that we show occurs at the level of elongation, the majority of host-mediated regulation of translation occurs at the level of translation initiation (Hershey et al., 2012). Thus, while it is possible that a novel bacterial effector that directly targets translation initiation could explain the residual inhibition of translation by the \u03947\u0394flaA L. pneumophila mutant, we favor the hypothesis that the residual block in host protein synthesis may be a result of the host stress response induced by pathogenic infection, consistent with numerous prior studies (Mohr and Sonenberg, 2012; Lemaitre and Girardin, 2013; Chakrabarti et al., 2012; Ivanov and Roy, 2013; Janssens et al., 2014; Tattoli et al., 2012). Indeed, T4SS-competent L. pneumophila has been suggested to induce membrane damage that inhibits the mTOR pathway and blocks translation initiation (Ivanov and Roy, 2013). Further studies will be required to identify the bacterial and host pathways required for the residual translation inhibition caused by the \u03947\u0394flaA L. pneumophila mutant.\n\nThe results presented here further support a role for translation inhibition as a signal that the innate immune system uses to recognize and preferentially respond to pathogens (Fontana et al., 2011). Our work provides nucleotide-level analysis of the global block in host protein synthesis induced by L. pneumophila, and demonstrates that L. pneumophila infection results in inhibition of host protein synthesis both at the level of translation initiation and elongation. Importantly, our results also provide insights into the molecular mechanisms by which host cells are able to mount a protective immune response despite a pathogen-induced block in protein synthesis. Using ribosome run-off assays in combination with ribosome profiling and RNAseq, we find that mRNA superinduction, rather than selective mRNA translation, is the strategy by which host cells produce inflammatory cytokines in the face of pathogen-mediated translation inhibition. To be effective, the strategy of mRNA superinduction requires that the magnitude of mRNA superinduction exceeds the magnitude of the block in protein synthesis. Indeed, our data suggest this is the case, as we observe\u00a0>1000 fold induction of certain mRNAs, whereas we previously estimated the block in protein synthesis to be\u00a0~95% (20-fold) (Fontana et al., 2011). One possible advantage of mRNA superinduction as a strategy for overcoming a pathogen-mediated block of protein synthesis is that it does not require specific translation factors, as was previously proposed might mediate selective mRNA translation in L. pneumophila-infected cells (Asrat et al., 2014). In addition, in mammalian cells, selective translation is usually regulated at the level of translation initiation, a strategy that would be easily defeated by pathogens such as L. pneumophila that block the downstream process of translation elongation. Importantly, since numerous viral and bacterial pathogens and toxins interfere with host protein synthesis, we propose that our results may provide general insight into the inducible innate immune response to infection.\n\n## Materials and methods\n\n### Ethics statement\n\nThese studies were carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health under animal protocol AUP-2014-09-6665. The protocol was approved by the Animal Care and Use Committee at the University of California, Berkeley.\n\n### Access to high-throughput sequencing data\n\nThe data discussed in this publication have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE89184 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89184).\n\n### Cell culture\n\nMacrophages were derived from the bone marrow of C57BL/6J (Jackson Laboratory, Bar Harbor, ME, USA) and Myd88 \u2013/\u2013 (Hou et al., 2008) mice on the B6 background. Macrophages were derived by 8 days of culture in RPMI supplemented with 10% serum, 100 \u03bcM streptomycin, 100 U/mL penicillin, 2 mM L-glutamine and 10% supernatant from 3T3-macrophage-colony-stimulating factor cells, with feeding on day 5. Cells were re-plated in antibiotic free media 24 hr prior to infection with L. pneumophila.\n\n### Bacterial strains and infections\n\nAll L. pneumophila strains were derived from LP02, a streptomycin-resistant thymidine auxotroph derived from L. pneumophila LP01. The \u0394dotA\u0394flaA, \u0394flaA, and \u03947\u0394flaA strains were generated on the LP02 background and have been described previously (Barry et al., 2013; Fontana et al., 2011; Ren et al., 2006; Fontana et al., 2012). Twofold dilutions of L. pneumophila strains used for infections were grown overnight in liquid buffered-yeast-extract culture and, at the time of infection, cultures with an optical density (600 nm) greater than 4.0 were selected. BMMs were plated at a density of 1.56 \u00d7 105 cells per cm2 (1.5.x106 cells per well of a six-well plate) and infected at an MOI of 3 by centrifugation for 10 min at 400 xg. After 1\u00a0hr of infection media was changed. All in vitro L. pneumophila infections were performed in the absence of thymidine to prevent bacterial replication which would otherwise differ between the \u2206dotA and Dot+ strains. The lack of thymidine can result in a loss of bacterial viability, although we attempted to mitigate this concern by examining host gene expression at a relatively early 6 hr time point.\n\n### Library preparation and sequencing for ribosome profiling\n\nRibosome profiling experiments were undertaken as previously described (Ingolia et al., 2012). BMMs\u00a0were plated in tissue culture treated six-well plates (1.5 \u00d7 106 BMMs/well) or 75 cm2 flasks (1.2 \u00d7 107 BMMs per flask). At 6 hr post-infection BMMs were lysed by flash freezing and thawed in the presence of lysis buffer (Ingolia et al., 2012). When used, harringtonine (LKT Laboratories, Saint Paul, MN) was added at a final concentration of 2 \u03bcg/mL for 120 s at the end of the 6 hr infection. 100 \u03bcg/mL of cycloheximide (Sigma-Aldrich, St. Louis, MO) was added to freeze ribosomes after the 120 s harringtonine treatment. Following cycloheximide treatment cells were immediately lysed. Clarified lysates were split and some was used to generate ribosome footprints while some was used to isolate total RNA for RNA sequencing (described below). All RNA and DNA gel extractions were performed overnight as previously described (Ingolia et al., 2012). The Ribo-Zero Gold rRNA Removal Kit (Illumina, San Diego, CA) was used to remove rRNA from ribosome profiling samples before the dephosphorylation and linker ligation steps (Ingolia et al., 2012). Final ribosome profiling libraries were sequenced on a HiSeq2000 System (Illumina) with single read 50 (SR50) read lengths by the Vincent J. Coates Genomics Sequencing Laboratory at UC, Berkeley.\n\n### Generation of RNAseq libraries\n\nClarified lysate was isolated as described above and 300\u00a0\u03bcL of lysate was mixed with 900 \u03bcL of Trizol LS (Thermo Fisher Scientific, Waltham, MA) and RNA was isolated following the manufacturer\u2019s guidelines. RNA integrity was measured utilizing the RNA Pico method on the Agilent 2100 Bioanalyzer at the University of California, Berkeley Functional Genomics Laboratory. High-quality RNA with a RNA integrity number (RIN)\u00a0>8 (Agilent Technologies, Santa Clara, CA) was submitted to the QB3-Berkeley Functional Genomics Laboratory and single read 100 base pair read length (SR100) sequencing libraries were generated. Libraries were sequenced on a HiSeq2000 System (Illumina) by the Vincent J. Coates Genomics Sequencing Laboratory at UC, Berkeley.\n\n### Alignment of RNAseq reads and differential expression analysis\n\nRNA sequencing reads were preprocessed using tools from the FASTX-Toolkit (http://hannonlab.cshl.edu/fastx_toolkit/) by trimming the linker sequence from the 3\u02b9 end of each read and in some cases removing 10\u201315 nucleotides from the 5\u02b9 of each read to mitigate a region of overrepresented nucleotides. Alignment and differential expression analysis of RNAseq reads were undertaken as previously described (Trapnell et al., 2012). Briefly, high quality and preprocessed sequencing reads were aligned using the TopHat splicing-aware short-read alignment program to a library of transcripts derived from the UCSC Known Gene data set, and those with no acceptable transcript alignment were then aligned against the Mus musculus genome (mm10).\n\n### Alignment of ribosome footprint sequences\n\nSequences were processed as described previously (Ingolia et al., 2012). Sequences were preprocessed by trimming the linker sequence from the 3\u02b9 end of each sequencing read and removing the first nucleotide from the 5\u02b9 end of each read. Reads were then aligned to a rRNA reference using the Bowtie short-read alignment program. All sequences aligning the rRNA reference were discarded. All non-rRNA sequencing reads were aligned using the TopHat splicing-aware short-read alignment program to a library of transcripts derived from the UCSC Known Genes data set, and those with no acceptable transcript alignment were then aligned against the mouse genome (mm10). Perfect-match alignments were extracted, and these files were used for analyses. For most analyses, footprint alignments were assigned to specific A site nucleotides by using the position and total length of each alignment, calibrated from footprints at the beginning and the end of CDSes, as previously described (Ingolia et al., 2012, 2011).\n\n### Counting of ribosome profiling and RNAseq reads\n\nCounting of reads was performed as previously described (Ingolia et al., 2009, 2011). Reads were mapped to coding sequences and counted, excluding reads that mapped to the first 15 codons or the last 5 codons of a CDS due to accumulation of ribosomes (Ingolia et al., 2011). In order to analyze gene-specific ribosome run-off (Figure 7A\u2013D), we counted reads mapping from codon 26 to codon 325, that is, a 300-codon window excluding the first 25 codons of a gene.\n\n### Ribosome occupancy analysis\n\nFor analyses of ribosome occupancy (Figure 4), ribosome footprint and mRNAseq read counts were calculated similarly. Read counts were normalized to CDS length, as longer transcripts inherently have increased read counts, generating a read density (read density = read count \u00f7 transcript length) for each gene. Read densities were further normalized to the sum of read counts of 12 mitochondrial protein-coding genes (see below) as an estimate of total cells in each condition, allowing for comparison among different conditions and libraries (Iwasaki et al., 2016). For each transcript in the dataset, the average raw ribosome footprint read counts for each infection conditions was calculated and transcripts with an average ribosome footprint or RNAseq read count less than 100 were discarded. Additionally, any transcript that had ribosome footprint reads but 0 RNAseq reads was also discarded. Discarded transcripts were defined as undetectable.\n\n### MyD88-dependent gene induction analysis\n\nTwo experiments were used to generate two independent libraries consisting of B6 and Myd88\u2013/\u2013 BMMs infected with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila. For each gene in the dataset, the average raw ribosome footprint read counts for \u0394flaA L. pneumophila-infected B6 BMMs were sorted and genes with an average ribosome footprint or RNAseq read count less than 100 were discarded. Additionally, any gene that had ribosome footprint reads but no detectable RNAseq reads in B6 or Myd88\u2013/\u2013 BMMs were discarded. The sorted read counts were then normalized to ribosome footprint or RNAseq read counts of 12 mitochondrial protein-coding genes (see below) as an estimate of total cells in each condition. MyD88-dependent gene induction was calculated using the equation: MyD88-dependent gene induction = average(normalized B6 read count) \u00f7 average(normalized Myd88\u2013/\u2013 read count).\n\n### Type IV secretion system-dependent gene induction analysis\n\nFour independent experiments were used to generate four collections of sequencing libraries consisting of B6 BMMs infected with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila. For each gene in the dataset, the average raw ribosome footprint read counts for \u0394flaA L. pneumophila infected B6 BMMs were sorted and genes with an average ribosome footprint or RNAseq read count less than 100 were discarded. Additionally, any gene that had ribosome footprint reads but no detectable RNAseq reads in \u0394flaA or \u0394dotA\u0394flaA L. pneumophila-infected B6 BMMs were discarded. The sorted read counts were then normalized to ribosome footprint or RNAseq read counts of 12 mitochondrial protein-coding genes (see below) as an estimate of total cells in each condition. T4SS-dependent gene induction was calculated using the equation: T4SS-dependent gene induction = average(normalized \u0394flaA-infected read count) \u00f7 average(normalized \u0394dotA\u0394flaA-infected read count).\n\n### Analysis of cytokine and protein levels in infected BMM lysates and supernatants\n\nB6 BMMs were left uninfected or infected with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila at an MOI of 3 in duplicate, as described above. Media was changed 1 hr following infection and at 6 hr post-infection supernatants were collected and BMMs washed with PBS. BMMs were lysed in 400 \u03bcL mammalian cell PE lysis buffer (G-Biosciences, St. Louis, MO) following the manufacturers instructions. Lysates and supernatants were cleared by spinning at 20,000 x g for 30 min at 4\u00b0C. Cytokine and protein levels were measured using a commercially available cytokine bead array (Rodent MAP 4.0-Mouse Sample Testing, Ampersand Biosciences, Saranac Lake, NY) and total protein levels were measured by bicinchoninic acid (BCA) assay (Ampersand Biosciences, Saranac Lake, NY). Protein and cytokine levels in each infection condition were normalized to total protein levels. Infectivity was confirmed by staining for L. pneumophila (see below). mRNA levels of cytokines were determined by counting (counting method described above) previously acquired RNAseq data of B6 BMMs infected with \u0394flaA or \u0394dotA\u0394flaA L. pneumophila at an MOI of 3 for 6 hr. RNAseq read counts were normalized to transcript length and the sum of RNAseq read counts of 12 mitochondrial protein-coding genes (see below) as an estimate of total cells in each condition (RNAseq normalization described above). T4SS-dependent induction was measured by taking the ratio of protein or mRNA levels in the \u0394flaA infected condition to protein or mRNA levels in the \u0394dotA\u0394flaA infected condition: T4SS-dependent induction = average(normalized \u0394flaA mRNA or protein) divided\u00a0by average(normalized \u0394dotA\u0394flaA mRNA or protein). T4SS-induction was averaged from two independent experiments and plotted.\n\n### Seven-effector-dependent gene induction analysis\n\nTwo independent experiments were used to generate two collections of sequencing libraries consisting of B6 BMMs infected with \u0394flaA or \u03947\u0394flaA L. pneumophila. For each gene in the dataset the average raw ribosome footprint read counts for \u0394flaA L. pneumophila-infected B6 BMMs were sorted and genes with an average ribosome footprint or RNAseq read count less than 100 were discarded. Additionally, any gene that had ribosome footprint reads but no detectable RNAseq reads in \u0394flaA or \u03947\u0394flaA L. pneumophila-infected B6 BMMs were discarded. The sorted read counts were then normalized to ribosome footprint or RNAseq read counts of 12 mitochondrial protein-coding genes (see below) as an estimate of total cells in each condition. Seven effector-dependent gene induction was calculated using the equation: seven effector-dependent gene induction = average(normalized \u0394flaA-infected read count) \u00f7 average(normalized \u03947\u0394flaA-infected read count).\n\n### Metagene profile analysis of ribosome profiling libraries\n\nMetagene profiles were generated as previously described (Ingolia et al., 2009, 2011). These metagene profiles indicate the total number of ribosome footprints whose A site falls at the indicated position relative to the start or stop codon of the coding sequence, and reflect a simple, unweighted sum of the footprint profiles around the beginning and the end of each protein-coding gene. The A site position was estimated for each footprint using a length-dependent offset from the 5\u02b9 end of the fragment. The distance from this A site position to the start or stop codon of the coding sequence was then computed, taking into account the fact that translation initiation occurs with the second codon in the A site.\n\n### Analysis of ribosome run-off of individual genes\n\nCumulative ribosome occupancy profiles (Figure 7\u2014figure supplement 1) were computed by taking the cumulative sum of ribosome footprints mapping to each position in the gene, scaled by the normalization factor derived from mitochondrial translation in that sample.\n\n### Mitochondrial genes used for library normalization\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene ID</th>\n      <th>Name</th>\n      <th>Size (bp)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ENSMUST00000082392</td>\n      <td>mt-Nd1</td>\n      <td>299</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082396</td>\n      <td>mt-Nd2</td>\n      <td>326</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082402</td>\n      <td>mt-Co1</td>\n      <td>495</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082405</td>\n      <td>mt-Co2</td>\n      <td>208</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082407</td>\n      <td>mt-Atp8</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082408</td>\n      <td>mt-Atp6</td>\n      <td>207</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082409</td>\n      <td>mt-Co3</td>\n      <td>241</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082411</td>\n      <td>mt-Nd3</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082414</td>\n      <td>mt-Nd4</td>\n      <td>439</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082418</td>\n      <td>mt-Nd5</td>\n      <td>588</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082419</td>\n      <td>mt-Nd6</td>\n      <td>153</td>\n    </tr>\n    <tr>\n      <td>ENSMUST00000082421</td>\n      <td>mt-Cytb</td>\n      <td>361</td>\n    </tr>\n  </tbody>\n</table>\n\n### Quantification of infectivity\n\nWT BMMs were plated on a sterile #1.5 coverslip by placing the coverslip in a tissue-culture-treated six-well plates and adding 1.5 \u00d7 106 BMMs/well in antibiotic-free media 24 hr prior to infection. Twofold dilutions of L. pneumophila strains used for infections were grown overnight in liquid buffered-yeast-extract culture and, at the time of infection, cultures with an optical density (600 nm) greater than 4.0 were selected. BMMs were infected at an MOI of 3 by centrifugation for 10 min at 400 xg. Media was changed after one hour of infection. At 6 hr post-infection coverslips were collected, washed in PBS, and placed in fixative solution (100 uM sodium periodate, 75 uM Lysine, 2.9 uM NaH2PO4, 3.2% sucrose, and 4% paraformaldehyde) for 1 hr at 37\u00b0C. Following fixation BMMs were blocked in 2% goat serum in PBS. To stain extracellular L. pneumophila, blocked BMMs were incubated with a rabbit anti-Legionella antibody (RRID: AB_231859; Fitzgerald Industries International, North Acton, MA, USA 20-LR45), washed in PBS, and stained with a goat-anti-rabbit IgG secondary antibody conjugated to Cascade Blue (RRID: AB_2536453; ThermoFisher Scientific, Waltham, MA, USA, C-2764). In some experiments, mammalian cell membrane was labeled with FITC-labeled wheat germ agglutinin (Sigma-Aldrich, St. Louis, MO, L4895) prior to permeabilization. BMMs were permeabilized by dipping coverslips into ice-cold methanol. Permeabilized BMMs were blocked with 2% goat serum and stained with a rabbit anti-Legionella antibody (Fitzgerald Industries International, North Acton, MA, 20-LR45) followed by incubation with a goat-anti-rabbit IgG secondary antibody conjugated to TexasRed (RRID: AB_2556776; ThermoFisher Scientific, Waltham, MA, T-2767) to mark all (intracellular and extracellular) L. pneumophila. Coverslips were mounted in vectashield antifade mounting medium (Vector Laboratories, Burlingame, CA, H-1000) and visualized on a Nikon TE2000 inverted microscope. All antibody stains were incubated for 30 min at 37\u00b0C and all blocking steps were incubated for 60 min at 37\u00b0C.\n\nImportantly, the staining method described above results in intracellular bacteria staining positive for TexasRed while extracellular bacteria are double positive for Cascade Blue and TexasRed. Quantification of infectivity was undertaken by two methods using the differential staining of intracellular and extracellular L pneumophila. In experiments where differential contrast (DIC) microscopy, Cascade Blue, and TexasRed were visualized counting of intracellular bacteria in BMMs was done by hand using the image analysis software ImageJ (RRID:SCR_003070; Rasband, W.S., ImageJ, U. S. National Institutes of Health, Bethesda, Maryland, USA, http://imagej.nih.gov/ij/, 1997\u20132016) and the Cell Counter plugin (https://imagej.nih.gov/ij/plugins/cell-counter.html). Uninfected BMMs were classified as BMMs that were not associated with L. pneumophila or only associated with extracellular (Cascade Blue + TexasRed double positive) bacteria. Infected BMMs were classified as macrophages containing at least one intracellular L. pneumophila (Texas Red only), independent of the number of extracellular bacteria associated with the BMM. In experiments where the cell membrane of BMMs was labeled with FITC-conjugated wheat germ agglutinin along with DIC, Cascade Blue, and TexasRed, analysis of infectivity was undertaken using the imaging software Imaris (RRID:SCR_007370; Bitplane, Zurich, Switzerland). Using Imaris, surfaces of BMMs were drawn on the FITC-conjugated wheat germ agglutinin channel to mark individual BMMs. All extracellular bacteria were removed from analysis by generating a new channel that subtracted the Cascade Blue channel from the TexasRed channel, for\u00a0example Intracellular Channel = TexasRed Channel \u2013 (Scaling Value x Cascade Blue Channel). The scaling value was calculated by measuring the average pixel intensities in each channel for double positive bacteria. As an example, if the TexasRed channel had an average pixel intensity of 350 and the Cascade Blue channel was 3500 then the equation would be: Intracellular Channel = TexasRed Channel \u2013 (0.1 x Cascade Blue Channel). The outcome of this calculation is the generation of a channel that removes the TexasRed signal of extracellular bacteria, thus allowing for analysis of bacteria that are only intracellular. Lastly, using the Sortomato utility (http://open.bitplane.com/tabid/235/Default.aspx?id=90) in Imaris, new cell surfaces were drawn for cells that contained a signal in the new Intracellular channel (with double positive bacteria removed), marking cells infected with an intracellular bacterium. Surfaces were also drawn for cells that did not have a signal in the Intracellular channel, marking uninfected BMMs or BMMs only associated with extracellular L. pneumophila. Results were checked by eye to confirm that all surfaces accurately marked uninfected and infected BMMs; the surfaces generated by Sortomato were used to quantify infectivity.\n",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "94157d25-d4f9-4459-86ac-f13e1ad7dd1c",
+      "submission_id": "1b4f7f38-6132-4210-990c-d769d9bd003f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher K Glass, University of California, San Diego , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22707.021](https://doi.org/10.7554/eLife.22707.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Global analysis of gene expression reveals mRNA superinduction is required for the inducible immune response\" for consideration by eLife. Your article has been favorably evaluated by Michel Nussenzweig (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nBarry, et al., investigate the important issue of how phagocytic cells can raise a cytokine response in the presence of protein synthesis inhibition that occurs in response to pathogens. Previous studies have shown that macrophages hyperinduce cytokine transcripts in response to Legionella pneumophila proteins that interfere with host cell protein synthesis inhibitors. In spite of the fact that many of the induced transcripts appear to produce little increase in translation relative to uninfected cells, some of these transcripts are productively translated. Two other labs have forwarded models that the successfully translated products are a consequence of either RNA abundance or perhaps some pattern recognition control of translation. The authors show that the amount of ribosome loading is directly proportional to the transcript abundance, arguing the ability to detect cytokines in the presence of protein synthesis inhibitors is due to massive overexpression of cytokine transcripts. All three reviewers thought the experimental approach was powerful and convincing. However, there was considerable debate as to the novelty of the main conclusion. In particular, Ivanov and Roy, 2013, previously came to the same conclusion that cytokine production in macrophages infected with pathogenic Legionella occurred due to high levels of mRNA expression. The present studies clearly strengthen this conclusion substantially, but were not considered to represent a conceptual advance. However, there do appear to be unexpected and interesting aspects to the data that could be explored further, such as the apparent effects of pathogen infection on translational elongation. Following discussion, there was agreement among the reviewers to consider a revised manuscript that further distinguishes this work from the prior studies and addresses experimental weaknesses.\n\nEssential revisions:\n\n1) A more compelling case is required that the findings represent a conceptual advance beyond that of prior work, particularly that of Invanov and Roy. The authors can consider how to best approach this, but one avenue would be to expand investigation/analysis of the control of translational elongation by pathogen infection.\n\n2) The authors should measure protein levels of a set of representative and biologically important host defense cytokines or host defense proteins to establish whether post-translational mechanisms or superinduction is more important for determining actual cytokine/host defense protein levels.\n\nThe reviewers considered the issue of whether the elongation block or the initiation block is being overcome by transcript abundance to not be clearly resolved.\n\nOne reviewer commented: There is no demonstration in the literature that bypass of the highly expressed proteins is due to bypass of translation elongation. Most of the expression of cytokines is occurring 5-6 hours after infection, and that is also when the translation initiation block is setting in. Also, Roy and coworkers claim that most of the effects are due to effects on translation initiation blockade, so the literature is a little confusing here. It is reasonable to suppose that the expression of cytokines is due to bypass of translation initiation because of the timing, so if they have data that contradicts that point, that is of interest. The second reviewer agreed with this comment.\n\nWith respect to the question of more specific direction on revision:\n\nOne reviewer responded: In this system, there are two types of translation bypass that can be blocked, either elongation or initiation. With these highly expressed genes, it looks like high level expression is able to overcome the elongation block. If a case can be made for this by looking at a few of these transcripts in detail, that would be a novel contribution. It is even possible they have the data in hand, and that just by analyzing the data in a different fashion they can show this. For instance, by looking at the group of highly expressed transcripts (say the top 8 or so), can they demonstrate a pattern that shows that elongation inhibition (rather than initiation inhibition) is the thing that is being overcome in these transcripts?\n\nThe other reviewer responded: The authors have a powerful dataset in hand, and they would be doing themselves a disservice by simply using that data to confirm previous publications in the field. It is likely that within their existing dataset exists additional evidence of translational elongation regulation. Adjusting the text to highlight this finding, and adding some data along the lines suggested by (the other reviewer) should improve this study and assuage my concerns.\n",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "55167a52-8754-4bd0-ba02-f1b59095e0c1",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C1",
+      "claim": "The inducible innate immune response to infection requires a concerted process of gene expression that is regulated at multiple levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The inducible innate immune response to infection requires a concerted process of gene expression that is regulated at multiple levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about immune response that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "b0f15350-303b-476e-b897-87fac03ed2dd",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C2",
+      "claim": "Most global analyses of the innate immune response have focused on transcription induced by defined immunostimulatory ligands, such as lipopolysaccharide.",
+      "claim_type": "EXPLICIT",
+      "source": "Most global analyses of the innate immune response have focused on transcription induced by defined immunostimulatory ligands, such as lipopolysaccharide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field that draws from established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e52e86cd-4431-4664-b04f-79036cb337e8",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C3",
+      "claim": "Pathogens interfere with virtually every step of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the response to pathogens involves additional complexity, as pathogens interfere with virtually every step of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "903449a3-d602-4b54-b008-7fd12dde7193",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C4",
+      "claim": "A pathogen-mediated blockade of host protein synthesis provokes the production of specific pro-inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously discovered that a pathogen-mediated blockade of host protein synthesis provokes the production of specific pro-inflammatory cytokines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "6f5a67e7-8ef9-40ac-b1fb-c56851edbec4",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C5",
+      "claim": "mRNA superinduction is required for the inducible immune response to a bacterial pathogen.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that mRNA superinduction is required for the inducible immune response to a bacterial pathogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "a91fbb46-a69b-4806-a66d-96e4294ba16c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C6",
+      "claim": "Changes in mRNA levels accounted for ~90% of observed alterations in protein levels in dendritic cells responding to LPS.",
+      "claim_type": "EXPLICIT",
+      "source": "One recent study analyzed the response of dendritic cells to lipopolysaccharide (LPS) and found that changes in mRNA levels accounted for ~90% of observed alterations in protein levels (Jovanovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "30ffc0f1-f901-424d-8f0a-04833f53d19b",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C7",
+      "claim": "Pathogens have evolved to disrupt or manipulate almost every cellular process involved in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pathogens have evolved to disrupt or manipulate almost every cellular process involved in gene expression (Finlay and McFadden, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "709e32cd-53cd-4bfb-ad54-e4c5e328961a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C8",
+      "claim": "Inhibition of host protein synthesis is a common strategy used by many viral and bacterial pathogens to disrupt host gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of host protein synthesis is a common strategy used by many viral and bacterial pathogens to disrupt host gene expression (Mohr and Sonenberg, 2012; Lemaitre and Girardin, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "8daf7614-93a1-40d5-a666-6e26d4f991a4",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C9",
+      "claim": "L. pneumophila uses its Dot/Icm type IV secretion system (T4SS) to translocate into host cells several effector proteins that block host protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the intracellular bacterial pathogen L. pneumophila uses its Dot/Icm type IV secretion system (T4SS) to translocate into host cells several effector proteins that block host protein synthesis, including at least four effectors that target the elongation factor eEF1A (Lemaitre and Girardin, 2013; Barry et al., 2013; Belyi et al., 2008; Fontana et al., 2011; Shen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "27e3fb5e-3ad8-43fb-8071-af5deaeea495",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C10",
+      "claim": "Pseudomonas aeruginosa blocks host translation elongation by secretion of exotoxin A.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the bacterial pathogen Pseudomonas aeruginosa blocks host translation elongation by secretion of exotoxin A (Lemaitre and Girardin, 2013; Dunbar et al., 2012; Iglewski et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "0ebbab13-c6a8-470a-8310-3c788f4aed1c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C11",
+      "claim": "Host cells respond to protein synthesis inhibition by initiating a specific host response characterized by production of specific pro-inflammatory cytokines, including interleukin-23 (Il23a), granulocyte macrophage colony-stimulating factor (Csf2) and interleukin-1\u03b1 (Il1a).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we previously discovered that host cells respond to protein synthesis inhibition \u2014 whether by Legionella, exotoxin A, or by pharmacological agents that block translation initiation or elongation \u2014 by initiating a specific host response characterized by production of specific pro-inflammatory cytokines, including interleukin-23 (Il23a), granulocyte macrophage colony-stimulating factor (Csf2) and interleukin-1\u03b1 (Il1a) (Barry et al., 2013; Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "4736c9fc-d0f3-4bb5-8990-cfa9d5218c65",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C12",
+      "claim": "One model posits that the block in protein synthesis leads to superinduction of cytokine mRNAs that is sufficient to overcome the partial block in host protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "One model posits that the block in protein synthesis leads to superinduction of cytokine mRNAs that is sufficient to overcome the partial block in host protein synthesis (Barry et al., 2013; Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model proposed in prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "423048cf-dc42-4c8e-bee0-e8a25ee5aa75",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C13",
+      "claim": "It has been proposed that host cells may circumvent the global block in protein synthesis by selective translation of specific cytokine transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it has been proposed that host cells may circumvent the global block in protein synthesis by selective translation of specific cytokine transcripts (Dunbar et al., 2012; Asrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an alternative model proposed in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "2677c2c3-85db-4bdb-b246-da448fe397d2",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C14",
+      "claim": "~90% of macrophages were infected with at least one bacterium under the infection conditions used.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments demonstrated that ~90% of macrophages were infected with at least one bacterium under our infection conditions (Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "d1311f4a-d9b7-415b-95cf-126a97418bfc",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C15",
+      "claim": "Ribosome footprints were found to map preferentially to the exonic regions of infection-induced genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a confirmation of the quality of the ribosome profiling libraries, ribosome footprints were found to map preferentially to the exonic regions of infection-induced genes (Figure 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "4e64a4ec-76fc-415f-b7e8-7a93655fd667",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C16",
+      "claim": "Ribosome footprints showed a strong bias toward 27\u201328 nucleotide fragment lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "ribosome footprints were found to map preferentially to the exonic regions of infection-induced genes (Figure 1), and showed a strong bias toward 27\u201328 nucleotide fragment lengths (Figure 1\u2014figure supplement 2), consistent with the known size of ribosome-protected footprints.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2 and is consistent with known properties of ribosome footprints.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "4b47e2dd-f987-454c-aad6-85985fbb0b6a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C17",
+      "claim": "Induction of ribosome footprints on Gem, Csf2, and Il23a required the seven-bacterial effectors associated with the block in host protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with previous studies, induction of ribosome footprints on Gem, Csf2, and Il23a required the seven-bacterial effectors associated with the block in host protein synthesis, while induction of ribosome footprints corresponding to Il1a and Il1b required the bacterial T4SS (Figure 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "7dae5372-8478-42b8-ad78-5e2917a88b61",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C18",
+      "claim": "Induction of ribosome footprints corresponding to Il1a and Il1b required the bacterial T4SS.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with previous studies, induction of ribosome footprints on Gem, Csf2, and Il23a required the seven-bacterial effectors associated with the block in host protein synthesis, while induction of ribosome footprints corresponding to Il1a and Il1b required the bacterial T4SS (Figure 1A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "de8a6c52-381c-4b50-a255-a3d5523b982c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C19",
+      "claim": "The majority of T4SS-dependent increases in ribosome footprints could be explained at the level of mRNA induction.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of T4SS-dependent increases in ribosome footprints could be explained at the level of mRNA induction, as there was nearly a perfect linear correlation between the extent of mRNA induction and ribosome footprints for all T4SS-induced genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A showing a linear correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3d837965-a47b-459a-8948-f29b9a888238",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C20",
+      "claim": "There was nearly a perfect linear correlation between the extent of mRNA induction and ribosome footprints for all T4SS-induced genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the majority of T4SS-dependent increases in ribosome footprints could be explained at the level of mRNA induction, as there was nearly a perfect linear correlation between the extent of mRNA induction and ribosome footprints for all T4SS-induced genes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "dc8ef260-f2cd-4755-8444-2e5abefe647e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C21",
+      "claim": "A robust correlation was observed between the extent of mRNA induction and the extent of protein induction in cell lysates.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a robust correlation between the extent of mRNA induction and the extent of protein induction, particularly in lysates (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "db356c98-cad4-456a-8316-4727e9adbcbb",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C22",
+      "claim": "The correlation between mRNA levels and protein levels applies for the most highly induced proteins/mRNAs (e.g. IL-10 (Il10) and GM-CSF (Csf2)) but also for more modestly induced cytokines (Il1a, Il1b, Cxcl10).",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation seems to apply for the most highly induced proteins/mRNAs (e.g. IL-10 (Il10) and GM-CSF (Csf2)) but also for more modestly induced cytokines (Il1a, Il1b, Cxcl10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the data shown in Figure 2B-C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e3bb0079-443f-4cb5-a3f4-c0968bcf2665",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C23",
+      "claim": "The less robust correlation between mRNA levels and protein levels in the cell supernatant may reflect differing rates of secretion, accumulation in the supernatant over time, re-binding to cell surface receptors, and stability in the supernatant.",
+      "claim_type": "EXPLICIT",
+      "source": "The less robust correlation between mRNA levels and protein levels in the cell supernatant (Figure 2C) may reflect differing rates of secretion, accumulation in the supernatant over time, re-binding to cell surface receptors, and stability in the supernatant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the observed data pattern.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "222a163a-3798-4b8c-9b9a-9772060b508a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C24",
+      "claim": "The inducible immune response to L. pneumophila is controlled primarily at the level of mRNA superinduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that the inducible immune response to L. pneumophila is controlled primarily at the level of mRNA superinduction (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "44e639af-ef02-4423-909f-3d0e7bca15ca",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C25",
+      "claim": "The \u22067 strain that lacks seven bacterial effectors is still able to partially suppress host protein synthesis by a mechanism that remains to be fully characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the \u22067 strain that lacks these effectors is still able to partially suppress host protein synthesis by a mechanism that remains to be fully characterized (Barry et al., 2013; Fontana et al., 2011; Ivanov and Roy, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "b8b5de3b-c08e-461a-9ee1-5d157d25ec40",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C26",
+      "claim": "It has been proposed that T4SS-competent L. pneumophila damages host cell membranes, resulting in ubiquitylation-dependent downregulation of mTOR activity and a block in cap-dependent translation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that T4SS-competent L. pneumophila damages host cell membranes, resulting in ubiquitylation-dependent downregulation of mTOR activity and a block in cap-dependent translation (Ivanov and Roy, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model proposed in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "bd9a8c2c-5e00-48c2-8254-3d4b22b65d86",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C27",
+      "claim": "The \u22067 strain still provokes IL-1\u03b1 production, although its ability to stimulate Il23a and Csf2 expression is diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with its ability to partially suppress protein synthesis, the \u22067 strain still provokes IL-1\u03b1 production, although its ability to stimulate Il23a and Csf2 expression is diminished (Barry et al., 2013; Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "cdb2b6b5-0342-4f09-9ed4-3a1728b50e26",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C28",
+      "claim": "Induction of Gem, Il23a, and Csf2 is highly dependent on the seven bacterial effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, induction of Gem, Il23a, and Csf2 is highly dependent on the seven bacterial effectors, but again, similar to the total T4SS-dependent gene induction (Figure 2), the seven effector-dependent induction of ribosome footprints on these genes could be explained at the level of mRNA induction (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e4db5827-aee4-4ab3-925c-d615c4e35db2",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C29",
+      "claim": "The seven effector-dependent induction of ribosome footprints on Gem, Il23a, and Csf2 could be explained at the level of mRNA induction.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, induction of Gem, Il23a, and Csf2 is highly dependent on the seven bacterial effectors, but again, similar to the total T4SS-dependent gene induction (Figure 2), the seven effector-dependent induction of ribosome footprints on these genes could be explained at the level of mRNA induction (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "09279185-85a3-4432-97d1-773f5287b9c6",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C30",
+      "claim": "All changes in ribosome footprint reads for Dusp1, Dusp2, Cxcl1, Cxcl2, Tnf, Il1a, Il1b, and Il6 could be explained by changes in mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "While the seven effector-dependent induction of the genes Dusp1, Dusp2, Cxcl1, Cxcl2, Tnf, Il1a, Il1b, and Il6 was low, all changes in ribosome footprint reads could again be explained by changes in mRNA levels (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "fe821de6-2fc8-4f4d-a953-fcde90424c54",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C31",
+      "claim": "T4SS-dependent and seven bacterial effector-dependent induction of inflammatory cytokines occurs by the induction of mRNA transcripts rather than through a mechanism of selective ribosome loading of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that T4SS-dependent and seven bacterial effector-dependent induction of inflammatory cytokines occurs by the induction of mRNA transcripts rather than through a mechanism of selective ribosome loading of mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "0aaad7ab-54ab-4b5c-8db8-fc1f060c0836",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C32",
+      "claim": "It was previously proposed that specific transcripts, such as Il1a and Il1b, can be preferentially translated via a mechanism that requires signaling through the adaptor protein MyD88.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously proposed that specific transcripts, such as Il1a and Il1b, can be preferentially translated via a mechanism that requires signaling through the adaptor protein MyD88 (Asrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model proposed in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "2db1a264-1495-423b-ae98-8fa4f0daff96",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C33",
+      "claim": "For all MyD88-induced genes, including Il1a and Il1b, a linear correlation was observed between the induction of ribosome footprints and RNAseq reads.",
+      "claim_type": "EXPLICIT",
+      "source": "For all MyD88-induced genes, including Il1a and Il1b, we observed a linear correlation between the induction of ribosome footprints and RNAseq reads (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "83c448c1-082b-4ac3-a229-17472e33e1b1",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C34",
+      "claim": "MyD88-dependent induction of Il1a and Il1b ribosome footprints is controlled primarily at the level of mRNA induction, rather than at the level of selective ribosome loading of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that MyD88-dependent induction of Il1a and Il1b ribosome footprints is controlled primarily at the level of mRNA induction, rather than at the level of selective ribosome loading of the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3d1441fe-1b5c-43d3-87c3-ef9cc6e34082",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C35",
+      "claim": "The ability of host cells to overcome a pathogen-induced block in protein synthesis, and produce inflammatory cytokines such as IL-1\u03b1 and IL-1\u03b2, requires a T4SS- and MyD88-dependent increase in mRNA levels rather than preferential loading of these cytokine mRNAs with ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results argue that the ability of host cells to overcome a pathogen-induced block in protein synthesis, and produce inflammatory cytokines such as IL-1\u03b1 and IL-1\u03b2, requires a T4SS- and MyD88-dependent increase in mRNA levels rather than preferential loading of these cytokine mRNAs with ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "bc9bd093-c11f-4d3c-b8fa-5a66048a2cd0",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C36",
+      "claim": "There is a wide range of ribosome occupancies across different transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a wide range of ribosome occupancies across different transcripts (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "83d52e8a-6a3f-4a33-a21f-1c76283e0eba",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C37",
+      "claim": "Many of the mRNAs with the highest ribosome occupancy encoded abundant 'housekeeping' proteins, including Acta1 and histone mRNAs (e.g. Hist1h2ba, H2afj, and Hist3h2ba).",
+      "claim_type": "EXPLICIT",
+      "source": "As might be anticipated, many of the mRNAs with the highest ribosome occupancy encoded abundant 'housekeeping' proteins, including Acta1 and histone mRNAs (e.g. Hist1h2ba, H2afj, and Hist3h2ba) (Figure 4A; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "d3cac2f9-a99e-4387-83e2-39cf268a219f",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C38",
+      "claim": "Most mRNAs that exhibit increased ribosome occupancy in uninfected BMMs also exhibit increased ribosome occupancy in \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA L. pneumophila-infected BMMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, most mRNAs that exhibit increased ribosome occupancy in uninfected BMMs also exhibit increased ribosome occupancy in \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA L. pneumophila-infected BMMs (Figure 4B\u2013D; Table 1), implying that the increased ribosome occupancy of these mRNAs is constitutive and not induced in response to infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B\u2013D and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "cb4bcbfe-3ebc-48ac-bb38-ec7c94b4f3fa",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C39",
+      "claim": "The increased ribosome occupancy of certain mRNAs is constitutive and not induced in response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, most mRNAs that exhibit increased ribosome occupancy in uninfected BMMs also exhibit increased ribosome occupancy in \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA L. pneumophila-infected BMMs (Figure 4B\u2013D; Table 1), implying that the increased ribosome occupancy of these mRNAs is constitutive and not induced in response to infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 4B\u2013D and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3fd5e6dc-693b-4cea-8f78-210b0b98b5ad",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C40",
+      "claim": "Lyz1, S100a11, and Cxcl3 exhibited elevated ribosome occupancy in all infection conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "A few mRNAs of immunological interest, namely Lyz1, S100a11, and Cxcl3 exhibited elevated ribosome occupancy in all infection conditions (Figure 4B\u2013D; Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B\u2013D and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "ae88af99-1369-47bb-acbf-c3f98a599db2",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C41",
+      "claim": "Ftl1 mRNA exhibited very low ribosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Ftl1 mRNA exhibited very low ribosome occupancy (Figure 4A), consistent with a previous report showing that Ftl1 translation can be strongly repressed (Cairo et al., 1989).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4A and is consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "eab23f1a-c8bf-4164-a0b2-72cbfbbde21c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C42",
+      "claim": "Ftl1 translation can be strongly repressed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Ftl1 mRNA exhibited very low ribosome occupancy (Figure 4A), consistent with a previous report showing that Ftl1 translation can be strongly repressed (Cairo et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "69a044d3-fb7f-49e6-a657-1a5ee3d19093",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C43",
+      "claim": "Atf4 is a gene known to be regulated at the level of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "Atf4 is another gene known to be regulated at the level of translation (Pavitt and Ron, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "dd2cd559-7cfc-4988-ae2a-702261112acf",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C44",
+      "claim": "In \u0394flaA and \u0394dotA\u0394flaA L. pneumophila-infected BMMs, Atf4 exhibited low ribosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "and in \u0394flaA and \u0394dotA\u0394flaA L. pneumophila-infected BMMs, Atf4 exhibited low ribosome occupancy (Figure 4B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "53a4a9e1-3ac0-4403-8a41-73348844440b",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C45",
+      "claim": "Several mRNAs exhibit constitutive increased or decreased ribosome occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results reveal that several mRNAs exhibit constitutive increased or decreased ribosome occupancy, as expected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 4 and Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "70652292-e950-4a9e-9f97-0c9a30e9642d",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C46",
+      "claim": "Ribosome occupancy of mRNAs was not markedly affected by L. pneumophila infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, ribosome occupancy of mRNAs was not markedly affected by L. pneumophila infection (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 4A\u2013D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "dcedd463-bd4f-4ef7-b370-d47730d87591",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C47",
+      "claim": "All metagene plots demonstrated a characteristic three-nucleotide periodicity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from the known stepwise codon-by-codon movement of the ribosome, all metagene plots demonstrated a characteristic three-nucleotide periodicity (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5 and is consistent with known properties of ribosome movement.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "48f0f0c6-0c56-43b4-b84b-5f25604fa78a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C48",
+      "claim": "Metagene ribosome profiles of uninfected, \u0394flaA, \u0394dotA\u0394flaA, or \u03947\u0394flaA infected BMMs appeared grossly similar to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, metagene ribosome profiles of uninfected (Figure 5A\u2013B), \u0394flaA (Figure 5C\u2013D), \u0394dotA\u0394flaA (Figure 5E\u2013F), or \u03947\u0394flaA (Figure 5G\u2013H) infected BMMs appeared grossly similar to each other, even though global translation is blocked only in the \u0394flaA and \u03947\u0394flaA L. pneumophila-infected conditions (Barry et al., 2013; Fontana et al., 2011; Asrat et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5 and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "a12a5c9d-8adf-425d-aba0-46e9bb7c337e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C49",
+      "claim": "Global translation is blocked only in the \u0394flaA and \u03947\u0394flaA L. pneumophila-infected conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, metagene ribosome profiles of uninfected (Figure 5A\u2013B), \u0394flaA (Figure 5C\u2013D), \u0394dotA\u0394flaA (Figure 5E\u2013F), or \u03947\u0394flaA (Figure 5G\u2013H) infected BMMs appeared grossly similar to each other, even though global translation is blocked only in the \u0394flaA and \u03947\u0394flaA L. pneumophila-infected conditions (Barry et al., 2013; Fontana et al., 2011; Asrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9cea29e2-8115-45d0-a452-005803e7604e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C50",
+      "claim": "Ribosome metagene profiles do not distinguish whether ribosome footprints arise from stalled or translating ribosomes, unless the stall occurs at a characteristic distance from the start or stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "This result can be explained by the fact that ribosome metagene profiles do not distinguish whether ribosome footprints arise from stalled or translating ribosomes, unless the stall occurs at a characteristic distance from the start or stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on knowledge of the ribosome profiling technique.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9a5e1eef-2d80-4277-a098-9e226eec7d3e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C51",
+      "claim": "There was a slight increase in the number of ribosomes found at the start site of the transcript in \u03947\u0394flaA L. pneumophila-infected BMMs as compared to other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, we did notice a slight increase in the number of ribosomes found at the start site of the transcript in \u03947\u0394flaA L. pneumophila-infected BMMs as compared to other conditions (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "8fafb530-301f-4111-b42b-d49a7c74af6d",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C52",
+      "claim": "The slight increase in ribosomes at the start site in \u03947\u0394flaA L. pneumophila-infected BMMs may reflect a selective block in translation initiation by this strain.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect a selective block in translation initiation by this strain (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9cdb6555-0c91-4a04-85a6-39b330c8c4e2",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C53",
+      "claim": "In all conditions, ribosomes accumulated at the stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we noted that in all conditions, ribosomes accumulated at the stop codon, suggesting that, in BMMs, translation termination may be a limiting step in translation (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9056451f-4a37-4aa5-a98d-2cf96987c770",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C54",
+      "claim": "In BMMs, translation termination may be a limiting step in translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we noted that in all conditions, ribosomes accumulated at the stop codon, suggesting that, in BMMs, translation termination may be a limiting step in translation (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "1c9b327c-25cb-41fa-8c43-073fd2de46a7",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C55",
+      "claim": "Harringtonine inhibits the first rounds of peptide bond formation following ribosome subunit joining and results in accumulation of ribosomes at the translational start site and run-off of elongating (but not stalled) ribosomes that have already cleared the start codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Harringtonine inhibits the first rounds of peptide bond formation following ribosome subunit joining and results in accumulation of ribosomes at the translational start site and run-off of elongating (but not stalled) ribosomes that have already cleared the start codon (Ingolia et al., 2012, 2011; Huang and Harringtonine, 1975; Tscherne and Pestka, 1975; Fresno et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "90cc61d6-163c-4474-b97f-adf2e3364a73",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C56",
+      "claim": "Cells experiencing a block in translation elongation will exhibit less ribosome run-off after harringtonine treatment, and an increased number of reads at the 5\u02b9 end of mRNAs after drug treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cells experiencing a block in translation elongation will exhibit less ribosome run-off after harringtonine treatment, and an increased number of reads at the 5\u02b9 end of mRNAs after drug treatment (Ingolia et al., 2011), compared to cells in which elongation is not blocked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "18625039-dee8-4285-8e6f-b59a452e5d1e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C57",
+      "claim": "Uninfected and \u0394dotA\u0394flaA-infected BMMs show an increase in ribosome footprints at the translation start site and a preferential loss of ribosome footprints from the 5\u02b9 and 3\u02b9 end of mRNAs, consistent with the expected effects of harringtonine and demonstrating clear ribosome run-off.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, uninfected and \u0394dotA\u0394flaA-infected BMMs show an increase in ribosome footprints at the translation start site and a preferential loss of ribosome footprints from the 5\u02b9 and 3\u02b9 end of mRNAs, consistent with the expected effects of harringtonine and demonstrating clear ribosome run-off (Figure 6A\u2013B,E\u2013F, Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6A\u2013B,E\u2013F and Figure 6\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "04ab1ed8-484a-499d-af72-a9ac4ce027d0",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C58",
+      "claim": "\u0394flaA L. pneumophila-infected BMMs treated with harringtonine exhibited little ribosome run-off.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u0394flaA L. pneumophila-infected BMMs treated with harringtonine exhibited little ribosome run-off (Figure 6C\u2013D, Figure 6\u2014figure supplement 1A\u2013B), consistent with the expectation that \u0394flaA L. pneumophila blocks host translation elongation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6C\u2013D and Figure 6\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "cd335d62-cce3-448d-a137-3780badb579e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C59",
+      "claim": "\u0394flaA L. pneumophila blocks host translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, \u0394flaA L. pneumophila-infected BMMs treated with harringtonine exhibited little ribosome run-off (Figure 6C\u2013D, Figure 6\u2014figure supplement 1A\u2013B), consistent with the expectation that \u0394flaA L. pneumophila blocks host translation elongation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 6C\u2013D and Figure 6\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "386d113f-024f-48f4-b6c4-17e8fd859ffa",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C60",
+      "claim": "Clear evidence of run-off of elongating ribosomes from the 5\u02b9 and 3\u02b9 end of mRNAs was observed following harringtonine treatment in \u03947\u0394flaA L. pneumophila-infected BMMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03947\u0394flaA L. pneumophila strain, lacking all known bacterial effectors that block host protein synthesis, nevertheless, shuts down host translation (Barry et al., 2013), yet we observed clear evidence of run-off of elongating ribosomes from the 5\u02b9 and 3\u02b9 end of mRNAs following harringtonine treatment (Figure 6G\u2013H, Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6G\u2013H and Figure 6\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "1dbba559-0205-4647-befd-9d39bc031c32",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C61",
+      "claim": "The residual block in host protein synthesis induced by \u03947\u0394flaA L. pneumophila is at the level of translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the residual block in host protein synthesis induced by \u03947\u0394flaA L. pneumophila is at the level of translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 6G\u2013H and Figure 6\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "f4dcbbe4-5faf-4ad9-a345-e70775be3690",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C62",
+      "claim": "It is unlikely that uninfected bystander cells are responsible for the ribosome run-off seen in \u03947\u0394flaA L. pneumophila-infected BMMs because the conditions used in these experiments led to most (~90%) cells being infected with L. pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unlikely that these uninfected cells are responsible for the ribosome run-off seen in \u03947\u0394flaA L. pneumophila-infected BMMs because the conditions used in these experiments led to most (~90%) cells being infected with L. pneumophila (Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the infectivity data shown in Figure 1\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "1b738e41-4acc-47e9-8a04-8d4868e48521",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C63",
+      "claim": "If infection conditions resulted in large numbers of uninfected cells, then a similar run-off should have been observed in the \u2206flaA-infected sample, which it was not.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, if our infection conditions resulted in large numbers of uninfected cells, then a similar run-off should have been observed in the \u2206flaA-infected sample, which it was not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "d5b2264c-5cb9-43d7-a19f-71053058e58d",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C64",
+      "claim": "The seven effectors are required to block translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these results suggest that the seven effectors are required to block translation elongation, and that the residual translation inhibition induced by \u03947\u0394flaA L. pneumophila is at the level of translation initiation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "c470f3a6-7965-4591-bdaa-6bf550a8399b",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C65",
+      "claim": "Uninfected, \u0394dotA\u0394flaA, and \u03947\u0394flaA-infected BMMs show a clear global signature of ribosome run-off.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous analysis, we find that uninfected, \u0394dotA\u0394flaA, and \u03947\u0394flaA-infected BMMs show a clear global signature of ribosome run-off, again suggesting that the block in host protein synthesis induced by \u03947\u0394flaA L. pneumophila infection is occurring at the level of translation initiation (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "130d74c4-aeae-4a4a-b97b-42286ad50bd9",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C66",
+      "claim": "In \u0394flaA-infected BMMs there is no evidence of ribosome run-off, consistent with \u0394flaA L. pneumophila inducing a block in host translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, in \u0394flaA-infected BMMs there is no evidence of ribosome run-off, consistent with \u0394flaA L. pneumophila inducing a block in host translation elongation (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "bcfb0fe9-1b66-4083-af28-1aef6dd8dada",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C67",
+      "claim": "In all conditions tested, cytokine-related genes fell well within the average of ribosome retention across all transcripts, and if anything, were found to have reduced ribosome run-off compared to a typical gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in all conditions tested, cytokine-related genes fell well within the average of ribosome retention across all transcripts, and if anything, were found to have reduced ribosome run-off compared to a typical gene (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "2a69df21-d778-4309-a4a6-b46406c3969c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C68",
+      "claim": "At this time point, cytokine transcripts are not preferentially translated in response to pathogenic infection, but instead are controlled at the level of mRNA induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that at this time point, cytokine transcripts are not preferentially translated in response to pathogenic infection, but instead are controlled at the level of mRNA induction (Figure 7A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 7A\u2013D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "a3c7fb21-dfe6-4f7e-a0d4-3af7b6e5cd0f",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C69",
+      "claim": "A recent study showed that in response to innate immune stimulation with purified LPS, dendritic cells almost entirely control the induction of genes at the level of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that in response to innate immune stimulation with purified LPS, dendritic cells almost entirely control the induction of genes at the level of transcription (Jovanovic et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "8cb37c60-2c96-471c-88c6-f9f9f3b641aa",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C70",
+      "claim": "Pathogen-induced blockade of host protein synthesis has been shown in a number of infection models to be sensed by the host and induce an inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathogen-induced blockade of host protein synthesis has been shown in a number of infection models to be sensed by the host and induce an inflammatory response (Barry et al., 2013; Fontana et al., 2011; Dunbar et al., 2012; McEwan et al., 2012; Chakrabarti et al., 2012; Fontana et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "49771494-2801-4fe3-b2e5-2712ed29d846",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C71",
+      "claim": "IL-1\u03b1 was identified as a key inflammatory cytokine induced preferentially in response to translation inhibition imposed by L. pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified IL-1\u03b1 as a key inflammatory cytokine induced preferentially in response to translation inhibition imposed by L. pneumophila (Barry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "6a96d195-9411-42a2-bab2-5591a9f65629",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C72",
+      "claim": "Translation inhibition results in a failure to synthesize negative feedback inhibitors of transcription, for example, I\u03baB or A20.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously provided evidence for a model in which translation inhibition results in a failure to synthesize negative feedback inhibitors of transcription, for example, I\u03baB or A20 (Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "7f4a1e6e-7044-41c2-b6bf-f0325e4ad071",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C73",
+      "claim": "Massive and sustained production of cytokine transcripts, termed mRNA superinduction, is sufficient to overcome the partial (~95%) block in translation and allow for production of cytokine proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We proposed this results in a massive and sustained production of cytokine transcripts, termed mRNA superinduction, that is sufficient to overcome the partial (~95%) block in translation and allow for production of cytokine proteins (Barry et al., 2013; Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "5e14ca65-de7a-4da4-94aa-08637979524e",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C74",
+      "claim": "Another report provided data suggesting that IL-1 production is mediated by MyD88-enhanced protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Another report provided data suggesting that IL-1 production is mediated by MyD88-enhanced protein synthesis, although alternative explanations were also entertained (Asrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes findings from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "da594ec4-9528-4b04-b6bd-d475b54a2838",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C75",
+      "claim": "A third study proposed that virulent L. pneumophila regulates cap-dependent translation initiation, via manipulation of the mTOR signaling pathway, to regulate the protein levels of highly abundant transcripts in infected macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "A third study proposed that virulent L. pneumophila regulates cap-dependent translation initiation, via manipulation of the mTOR signaling pathway, to regulate the protein levels of highly abundant transcripts in infected macrophages (Ivanov and Roy, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a model proposed in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "ca17c56f-199c-4b65-b560-771c2ec8ddbb",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C76",
+      "claim": "The induction of ribosome footprints by L. pneumophila could be explained by an underlying induction of mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In our present study, we found that the induction of ribosome footprints by L. pneumophila could be explained by an underlying induction of mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "46e1ee70-ded4-46ec-b0af-b210295f86a9",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C77",
+      "claim": "There was no evidence found for selective ribosome loading of abundant cytokine mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not find evidence for selective ribosome loading of abundant cytokine mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "ae7c0bbf-16b3-4012-b7b0-2d0827f756be",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C78",
+      "claim": "Ribosome run-off experiments confirmed that cytokine mRNAs are not selectively translated during infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ribosome run-off experiments confirmed that cytokine mRNAs are not selectively translated during infection (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9baecfda-8414-4aef-911e-d914c550dd9c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C79",
+      "claim": "The role of MyD88 signaling in gene expression appears to be primarily at the level of mRNA induction and not translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that the role of MyD88 signaling in gene expression appears to be primarily at the level of mRNA induction and not translational regulation (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "f3e31146-2623-4214-a544-499cfe7d2b51",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C80",
+      "claim": "Preferential translation does not account for the majority of specific gene induction following infection by L. pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that preferential translation does not account for the majority of specific gene induction following infection by L. pneumophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "31ae19d7-832c-486e-82e7-0652e81ac80a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C81",
+      "claim": "It remains possible that selective translation initiation mechanisms, for example, via uORFs, might also contribute modestly to the inducible immune response to L. pneumophila, but these subtle effects were not evident in the global analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains possible that selective translation initiation mechanisms, for example, via uORFs, might also contribute modestly to the inducible immune response to L. pneumophila, but these subtle effects were not evident in our global analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms not detected in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "b888d6e8-b6b5-4241-8a82-b9de5856a474",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C82",
+      "claim": "It is difficult to explain how regulation of translation initiation could overcome a downstream pathogen-induced block in translation elongation such as is observed during L. pneumophila infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In any case, it is difficult to explain how regulation of translation initiation could overcome a downstream pathogen-induced block in translation elongation such as is observed during L. pneumophila infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the mechanism of translation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e3ddc1fe-a227-47c0-8bed-7c86043acf1c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C83",
+      "claim": "It is possible that post-translational mechanisms may regulate protein production by infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that post-translational mechanisms, which are not addressable with the ribosomal profiling techniques used here, may regulate protein production by infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about mechanisms not addressed by the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3397fa7c-6724-40ca-b0e0-52025b2a1679",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C84",
+      "claim": "Inflammasome-dependent caspase-1 processing is known to be an important post-translational regulatory mechanism controlling IL-1\u03b2 production by infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inflammasome-dependent caspase-1 processing is known to be an important post-translational regulatory mechanism controlling IL-1\u03b2 production by infected cells (von Moltke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "d2408b82-ffa4-4972-b80d-2a8685e6a825",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C85",
+      "claim": "The data do not specifically address the mechanism of mRNA induction, although prior work suggested mRNA induction involves new transcription rather than increased mRNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, our data do not specifically address the mechanism of mRNA induction, although our prior work suggested mRNA induction involves new transcription rather than increased mRNA stability (Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "0039dfc4-5140-4b3f-86cc-f3f43793d468",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C86",
+      "claim": "Wild-type L. pneumophila blocks translation elongation via translocated effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although wild-type L. pneumophila blocks translation elongation via translocated effectors, we found that \u03947\u0394flaA L. pneumophila lacking the effectors nevertheless blocks protein synthesis at the level of translation initiation (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the data presented in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9b1fd028-583a-4806-bc37-7bdc42b5bfdb",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C87",
+      "claim": "The L. pneumophila-induced block in host protein synthesis can be dissociated into two components: (1) an elongation block that required the seven translocated effectors, and (2) an initiation block that did not require the seven effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in contrast to a previous study that used virus-based translation reporter experiments in L. pneumophila-infected RAW macrophages (Ivanov and Roy, 2013), we were clearly able to dissociate the L. pneumophila-induced block in host protein synthesis into two components: (1) an elongation block that required the seven translocated effectors, and (2) an initiation block that did not require the seven effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "2b7425f7-7069-4f8c-a189-3ca647362f90",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C88",
+      "claim": "The analysis represents an advance over prior studies because it was able to analyze the translation of all endogenous transcripts simultaneously as opposed to measuring translation only of a single exogenous reporter mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, our analysis represents an advance over prior studies because we were able to analyze the translation of all endogenous transcripts simultaneously as opposed to measuring translation only of a single exogenous reporter mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the methodology used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "5d4de280-bc55-41ac-be18-af71e8b7e5b5",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C89",
+      "claim": "The majority of host-mediated regulation of translation occurs at the level of translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in contrast to the effector-dependent block in translation that we show occurs at the level of elongation, the majority of host-mediated regulation of translation occurs at the level of translation initiation (Hershey et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e0d25cd1-3001-4af2-821a-ca0322df92b5",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C90",
+      "claim": "The residual block in host protein synthesis may be a result of the host stress response induced by pathogenic infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while it is possible that a novel bacterial effector that directly targets translation initiation could explain the residual inhibition of translation by the \u03947\u0394flaA L. pneumophila mutant, we favor the hypothesis that the residual block in host protein synthesis may be a result of the host stress response induced by pathogenic infection, consistent with numerous prior studies (Mohr and Sonenberg, 2012; Lemaitre and Girardin, 2013; Chakrabarti et al., 2012; Ivanov and Roy, 2013; Janssens et al., 2014; Tattoli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "95526551-e338-46ff-8b12-d5212daf5ca7",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C91",
+      "claim": "T4SS-competent L. pneumophila has been suggested to induce membrane damage that inhibits the mTOR pathway and blocks translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, T4SS-competent L. pneumophila has been suggested to induce membrane damage that inhibits the mTOR pathway and blocks translation initiation (Ivanov and Roy, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e1bc8a9b-f4e9-4352-bfdb-dfdcee047eab",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C92",
+      "claim": "The results further support a role for translation inhibition as a signal that the innate immune system uses to recognize and preferentially respond to pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here further support a role for translation inhibition as a signal that the innate immune system uses to recognize and preferentially respond to pathogens (Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "cbe29ce1-2a70-438f-9216-cda2b99bac3c",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C93",
+      "claim": "The work provides nucleotide-level analysis of the global block in host protein synthesis induced by L. pneumophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work provides nucleotide-level analysis of the global block in host protein synthesis induced by L. pneumophila, and demonstrates that L. pneumophila infection results in inhibition of host protein synthesis both at the level of translation initiation and elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the contributions of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "6f2d4d75-dbc8-40e4-a4c8-6d0e45ce1449",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C94",
+      "claim": "L. pneumophila infection results in inhibition of host protein synthesis both at the level of translation initiation and elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work provides nucleotide-level analysis of the global block in host protein synthesis induced by L. pneumophila, and demonstrates that L. pneumophila infection results in inhibition of host protein synthesis both at the level of translation initiation and elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "b0bb2929-70b4-45f9-a294-4cb1b56dd415",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C95",
+      "claim": "Using ribosome run-off assays in combination with ribosome profiling and RNAseq, mRNA superinduction, rather than selective mRNA translation, is the strategy by which host cells produce inflammatory cytokines in the face of pathogen-mediated translation inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ribosome run-off assays in combination with ribosome profiling and RNAseq, we find that mRNA superinduction, rather than selective mRNA translation, is the strategy by which host cells produce inflammatory cytokines in the face of pathogen-mediated translation inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "eaf097c7-4071-4957-86df-40569ec08690",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C96",
+      "claim": "To be effective, the strategy of mRNA superinduction requires that the magnitude of mRNA superinduction exceeds the magnitude of the block in protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To be effective, the strategy of mRNA superinduction requires that the magnitude of mRNA superinduction exceeds the magnitude of the block in protein synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "75561d40-9ca2-47f8-bbdf-d8f359c950bf",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C97",
+      "claim": "The data suggest this is the case, as >1000 fold induction of certain mRNAs was observed, whereas the block in protein synthesis was previously estimated to be ~95% (20-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our data suggest this is the case, as we observe >1000 fold induction of certain mRNAs, whereas we previously estimated the block in protein synthesis to be ~95% (20-fold) (Fontana et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in the manuscript and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "a25aa869-a023-4185-897f-d0bb8a83fa4f",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C98",
+      "claim": "One possible advantage of mRNA superinduction as a strategy for overcoming a pathogen-mediated block of protein synthesis is that it does not require specific translation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "One possible advantage of mRNA superinduction as a strategy for overcoming a pathogen-mediated block of protein synthesis is that it does not require specific translation factors, as was previously proposed might mediate selective mRNA translation in L. pneumophila-infected cells (Asrat et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the advantages of the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "d21505f6-e2e4-4e99-8593-dbf4422590ac",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C99",
+      "claim": "In mammalian cells, selective translation is usually regulated at the level of translation initiation, a strategy that would be easily defeated by pathogens such as L. pneumophila that block the downstream process of translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in mammalian cells, selective translation is usually regulated at the level of translation initiation, a strategy that would be easily defeated by pathogens such as L. pneumophila that block the downstream process of translation elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of translation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "cd34510c-f49b-4edd-98f7-9fe265c35b91",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C100",
+      "claim": "Since numerous viral and bacterial pathogens and toxins interfere with host protein synthesis, the results may provide general insight into the inducible innate immune response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, since numerous viral and bacterial pathogens and toxins interfere with host protein synthesis, we propose that our results may provide general insight into the inducible innate immune response to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the broader implications of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "1a67243e-4595-4e24-994e-dd5b59523866",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C101",
+      "claim": "Loss of flagellin does not affect blockade of host translation or the transcriptional induction of inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "L. pneumophila strains on the \u0394flaA background were used to reduce cell cytotoxicity by avoiding the effects of NAIP5/NLRC4 inflammasome activation by flagellin (Molofsky et al., 2006; Ren et al., 2006) and we previously showed loss of flagellin does not affect blockade of host translation or the transcriptional induction of inflammatory cytokines (Barry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the authors' previous published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "9481f49e-35a8-4019-9abb-ba909d842ecc",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C102",
+      "claim": "All in vitro L. pneumophila infections were performed in the absence of thymidine to prevent bacterial replication which would otherwise differ between the \u2206dotA and Dot+ strains.",
+      "claim_type": "EXPLICIT",
+      "source": "All in vitro L. pneumophila infections were performed in the absence of thymidine to prevent bacterial replication which would otherwise differ between the \u2206dotA and Dot+ strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "1323f77c-608f-4bdf-8ff2-d2d926b7b18a",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "claim_id": "C103",
+      "claim": "The lack of thymidine can result in a loss of bacterial viability, although this concern was mitigated by examining host gene expression at a relatively early 6 hr time point.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of thymidine can result in a loss of bacterial viability, although we attempted to mitigate this concern by examining host gene expression at a relatively early 6 hr time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6e32eb7b-36f7-41be-830e-0b2b9b018cb5",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ribosome profiling libraries from L. pneumophila-infected macrophages are of high quality, with ~90% infection efficiency, ribosome footprints mapping preferentially to exonic regions, and characteristic 27-28 nucleotide fragment lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 provide quality control data for the ribosome profiling experiments. The high infection rate (C14) addresses concerns about uninfected bystander cells, while the mapping patterns (C15) and fragment sizes (C16) are consistent with established ribosome profiling methodology and validate the technical quality of the libraries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "4e602c08-dce1-4f86-b63c-d4785045e4ce",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "T4SS-dependent induction of inflammatory cytokines in L. pneumophila-infected macrophages is controlled primarily at the level of mRNA superinduction rather than selective ribosome loading, with a near-perfect linear correlation between mRNA levels and ribosome footprints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 and C24 collectively demonstrate that T4SS-dependent gene induction correlates linearly between mRNA and ribosome footprints (Figure 2A), and this correlation extends to protein levels in lysates (Figure 2B). The data support the conclusion that mRNA superinduction, not selective translation, drives the immune response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3f5690a2-1bd2-427a-add5-23312ea1b4e0",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The correlation between mRNA and protein levels in cell supernatants is less robust than in lysates, potentially due to differences in secretion rates, accumulation, receptor binding, and stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C23 offers a speculative explanation for weaker correlation in supernatants (Figure 2C) compared to lysates. While the observation is data-supported, the proposed mechanisms are not experimentally tested and remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "34f20467-6c5b-4b9a-84f5-aca66f44e048",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Seven bacterial effector-dependent induction of inflammatory cytokines occurs through mRNA induction rather than selective ribosome loading of mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate that effector-dependent gene induction (comparing \u0394flaA to \u03947\u0394flaA strains) shows linear correlation between ribosome footprints and mRNA levels (Figure 3A), supporting the conclusion that mRNA induction, not selective translation, mediates this response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "0cec9ae9-b48a-4710-9061-136dd8011d43",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MyD88-dependent induction of inflammatory cytokines, including Il1a and Il1b, is controlled primarily at the level of mRNA induction rather than selective ribosome loading or translational regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 and C79 show linear correlation between ribosome footprints and mRNA levels for MyD88-induced genes (Figure 3B), contradicting prior proposals of MyD88-mediated selective translation (C32). The data support transcriptional rather than translational control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Ribosome occupancy varies widely across transcripts but is constitutive and not markedly affected by L. pneumophila infection, with housekeeping genes showing high occupancy and specific genes like Ftl1 and Atf4 showing low occupancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C46 demonstrate that while ribosome occupancy varies across transcripts (Figure 4, Table 1), the patterns are largely consistent across infection conditions, indicating constitutive rather than infection-induced regulation. This supports the conclusion that infection does not selectively alter ribosome loading.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "c5689380-813a-43cc-be7d-00c1c5271efa",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Metagene ribosome profiles show characteristic three-nucleotide periodicity and are grossly similar across infection conditions, with slight accumulation at start sites in \u03947\u0394flaA-infected cells and at stop codons in all conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54 describe metagene analysis (Figure 5) showing expected periodicity and similar profiles across conditions. The slight start site accumulation in \u03947\u0394flaA (C51) is interpreted as potential initiation block (C52, speculative), while stop codon accumulation (C53) suggests termination may be limiting (C54, speculative). The core observations are well-supported, though mechanistic interpretations are tentative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "19e96806-3fd9-4430-9b39-f1527836aed8",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "L. pneumophila blocks host protein synthesis at two distinct levels: translation elongation (requiring seven bacterial effectors) and translation initiation (independent of the seven effectors), as demonstrated by harringtonine run-off experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64, C86-C87, and C94 present harringtonine run-off data (Figure 6) showing clear ribosome run-off in uninfected, \u0394dotA\u0394flaA, and \u03947\u0394flaA conditions but not in \u0394flaA-infected cells. This dissociates elongation block (effector-dependent) from initiation block (effector-independent). The high infection rate (C62-C63) addresses concerns about uninfected cell contamination. This is a key mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "e805799c-c86d-423c-bd7a-7e34144291a8",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Global analysis of ribosome run-off shows that cytokine transcripts are not preferentially translated during infection but instead fall within or below the average ribosome retention, confirming control at the mRNA induction level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 and C78 analyze per-transcript run-off (Figure 7) and demonstrate that cytokine mRNAs do not escape the translation block but rather show typical or reduced run-off. This directly contradicts selective translation models and supports the mRNA superinduction mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "72e7dabf-dd98-4a59-927d-75dffb079ed3",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mRNA superinduction (>1000-fold for some genes) is the primary mechanism by which host cells produce inflammatory cytokines despite pathogen-mediated translation inhibition (~95% block), rather than selective mRNA translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C76-C77, C80, and C95-C97 synthesize the study's main conclusion. The magnitude of mRNA induction (>1000-fold, C97) exceeds the translation block (~20-fold, C97), making superinduction sufficient to overcome the block (C96). Multiple lines of evidence (ribosome profiling, run-off assays) support this over selective translation mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that mRNA superinduction may be advantageous because it does not require specific translation factors and cannot be defeated by elongation blocks, and may provide general insights into immune responses to pathogens that inhibit translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C83 and C98-C100 are explicitly speculative statements about mechanisms not tested (uORFs, post-translational regulation) and potential advantages of the superinduction strategy. While logically reasoned, these remain hypotheses requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "b42d5227-2960-4144-a61b-a2619ed78aa5",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study provides nucleotide-level analysis of translation in infected cells and represents a methodological advance over prior studies by analyzing all endogenous transcripts simultaneously rather than single reporter mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C93 accurately describe the methodological contributions of the study. Ribosome profiling does provide genome-wide, nucleotide-resolution data on endogenous transcripts, which is indeed an advance over reporter-based approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "3c9fbb7b-89c6-421b-a11a-905d4cca7c75",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The residual translation initiation block by \u03947\u0394flaA L. pneumophila may result from host stress responses rather than a novel bacterial effector, potentially involving mTOR pathway inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 present a hypothesis about the mechanism of residual translation inhibition, supported by citations to prior work but not directly tested in this study. The authors favor this explanation but acknowledge alternatives, making this an uncertain conclusion requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    },
+    {
+      "id": "5c98c7e3-44c7-47ec-9a65-58989d2985e3",
+      "content_id": "a69067af-fc56-4e9b-9411-8eaf705f7823",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Experimental design considerations: \u0394flaA strains were used to avoid inflammasome-mediated cytotoxicity without affecting translation blockade or cytokine induction, and infections were performed without thymidine at an early 6-hour timepoint to minimize bacterial replication differences and viability loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C103 describe methodological choices that are well-justified by prior work (C101) and logical experimental design considerations (C102-C103). These are appropriate controls for the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:40:46.582635Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2677c2c3-85db-4bdb-b246-da448fe397d2",
+      "result_id": "6e32eb7b-36f7-41be-830e-0b2b9b018cb5"
+    },
+    {
+      "claim_id": "d1311f4a-d9b7-415b-95cf-126a97418bfc",
+      "result_id": "6e32eb7b-36f7-41be-830e-0b2b9b018cb5"
+    },
+    {
+      "claim_id": "4e64a4ec-76fc-415f-b7e8-7a93655fd667",
+      "result_id": "6e32eb7b-36f7-41be-830e-0b2b9b018cb5"
+    },
+    {
+      "claim_id": "4b47e2dd-f987-454c-aad6-85985fbb0b6a",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "7dae5372-8478-42b8-ad78-5e2917a88b61",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "de8a6c52-381c-4b50-a255-a3d5523b982c",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "3d837965-a47b-459a-8948-f29b9a888238",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "dc8ef260-f2cd-4755-8444-2e5abefe647e",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "db356c98-cad4-456a-8316-4727e9adbcbb",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "222a163a-3798-4b8c-9b9a-9772060b508a",
+      "result_id": "4e602c08-dce1-4f86-b63c-d4785045e4ce"
+    },
+    {
+      "claim_id": "e3bb0079-443f-4cb5-a3f4-c0968bcf2665",
+      "result_id": "3f5690a2-1bd2-427a-add5-23312ea1b4e0"
+    },
+    {
+      "claim_id": "cdb2b6b5-0342-4f09-9ed4-3a1728b50e26",
+      "result_id": "34f20467-6c5b-4b9a-84f5-aca66f44e048"
+    },
+    {
+      "claim_id": "e4db5827-aee4-4ab3-925c-d615c4e35db2",
+      "result_id": "34f20467-6c5b-4b9a-84f5-aca66f44e048"
+    },
+    {
+      "claim_id": "09279185-85a3-4432-97d1-773f5287b9c6",
+      "result_id": "34f20467-6c5b-4b9a-84f5-aca66f44e048"
+    },
+    {
+      "claim_id": "fe821de6-2fc8-4f4d-a953-fcde90424c54",
+      "result_id": "34f20467-6c5b-4b9a-84f5-aca66f44e048"
+    },
+    {
+      "claim_id": "2db1a264-1495-423b-ae98-8fa4f0daff96",
+      "result_id": "0cec9ae9-b48a-4710-9061-136dd8011d43"
+    },
+    {
+      "claim_id": "83c448c1-082b-4ac3-a229-17472e33e1b1",
+      "result_id": "0cec9ae9-b48a-4710-9061-136dd8011d43"
+    },
+    {
+      "claim_id": "3d1441fe-1b5c-43d3-87c3-ef9cc6e34082",
+      "result_id": "0cec9ae9-b48a-4710-9061-136dd8011d43"
+    },
+    {
+      "claim_id": "9baecfda-8414-4aef-911e-d914c550dd9c",
+      "result_id": "0cec9ae9-b48a-4710-9061-136dd8011d43"
+    },
+    {
+      "claim_id": "bc9bd093-c11f-4d3c-b8fa-5a66048a2cd0",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "83d52e8a-6a3f-4a33-a21f-1c76283e0eba",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "d3cac2f9-a99e-4387-83e2-39cf268a219f",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "cb4bcbfe-3ebc-48ac-bb38-ec7c94b4f3fa",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "3fd5e6dc-693b-4cea-8f78-210b0b98b5ad",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "ae88af99-1369-47bb-acbf-c3f98a599db2",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "dd2cd559-7cfc-4988-ae2a-702261112acf",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "53a4a9e1-3ac0-4403-8a41-73348844440b",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "70652292-e950-4a9e-9f97-0c9a30e9642d",
+      "result_id": "7e764237-f7b0-46af-afb4-1b72fe0b22d3"
+    },
+    {
+      "claim_id": "dcedd463-bd4f-4ef7-b370-d47730d87591",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "48f0f0c6-0c56-43b4-b84b-5f25604fa78a",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "9cea29e2-8115-45d0-a452-005803e7604e",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "9a5e1eef-2d80-4277-a098-9e226eec7d3e",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "8fafb530-301f-4111-b42b-d49a7c74af6d",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "9cdb6555-0c91-4a04-85a6-39b330c8c4e2",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "9056451f-4a37-4aa5-a98d-2cf96987c770",
+      "result_id": "c5689380-813a-43cc-be7d-00c1c5271efa"
+    },
+    {
+      "claim_id": "18625039-dee8-4285-8e6f-b59a452e5d1e",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "04ab1ed8-484a-499d-af72-a9ac4ce027d0",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "cd335d62-cce3-448d-a137-3780badb579e",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "386d113f-024f-48f4-b6c4-17e8fd859ffa",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "1dbba559-0205-4647-befd-9d39bc031c32",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "f4dcbbe4-5faf-4ad9-a345-e70775be3690",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "1b738e41-4acc-47e9-8a04-8d4868e48521",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "d5b2264c-5cb9-43d7-a19f-71053058e58d",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "0039dfc4-5140-4b3f-86cc-f3f43793d468",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "9b1fd028-583a-4806-bc37-7bdc42b5bfdb",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "6f2d4d75-dbc8-40e4-a4c8-6d0e45ce1449",
+      "result_id": "19e96806-3fd9-4430-9b39-f1527836aed8"
+    },
+    {
+      "claim_id": "c470f3a6-7965-4591-bdaa-6bf550a8399b",
+      "result_id": "e805799c-c86d-423c-bd7a-7e34144291a8"
+    },
+    {
+      "claim_id": "130d74c4-aeae-4a4a-b97b-42286ad50bd9",
+      "result_id": "e805799c-c86d-423c-bd7a-7e34144291a8"
+    },
+    {
+      "claim_id": "bcfb0fe9-1b66-4083-af28-1aef6dd8dada",
+      "result_id": "e805799c-c86d-423c-bd7a-7e34144291a8"
+    },
+    {
+      "claim_id": "2a69df21-d778-4309-a4a6-b46406c3969c",
+      "result_id": "e805799c-c86d-423c-bd7a-7e34144291a8"
+    },
+    {
+      "claim_id": "ae7c0bbf-16b3-4012-b7b0-2d0827f756be",
+      "result_id": "e805799c-c86d-423c-bd7a-7e34144291a8"
+    },
+    {
+      "claim_id": "6f5a67e7-8ef9-40ac-b1fb-c56851edbec4",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "ca17c56f-199c-4b65-b560-771c2ec8ddbb",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "46e1ee70-ded4-46ec-b0af-b210295f86a9",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "f3e31146-2623-4214-a544-499cfe7d2b51",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "b0bb2929-70b4-45f9-a294-4cb1b56dd415",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "eaf097c7-4071-4957-86df-40569ec08690",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "75561d40-9ca2-47f8-bbdf-d8f359c950bf",
+      "result_id": "72e7dabf-dd98-4a59-927d-75dffb079ed3"
+    },
+    {
+      "claim_id": "31ae19d7-832c-486e-82e7-0652e81ac80a",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "b888d6e8-b6b5-4241-8a82-b9de5856a474",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "e3ddc1fe-a227-47c0-8bed-7c86043acf1c",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "a25aa869-a023-4185-897f-d0bb8a83fa4f",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "d21505f6-e2e4-4e99-8593-dbf4422590ac",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "cd34510c-f49b-4edd-98f7-9fe265c35b91",
+      "result_id": "fa12ce53-3779-4c95-9fcc-2f8fa832da84"
+    },
+    {
+      "claim_id": "2b7425f7-7069-4f8c-a189-3ca647362f90",
+      "result_id": "b42d5227-2960-4144-a61b-a2619ed78aa5"
+    },
+    {
+      "claim_id": "cbe29ce1-2a70-438f-9216-cda2b99bac3c",
+      "result_id": "b42d5227-2960-4144-a61b-a2619ed78aa5"
+    },
+    {
+      "claim_id": "e0d25cd1-3001-4af2-821a-ca0322df92b5",
+      "result_id": "3c9fbb7b-89c6-421b-a11a-905d4cca7c75"
+    },
+    {
+      "claim_id": "95526551-e338-46ff-8b12-d5212daf5ca7",
+      "result_id": "3c9fbb7b-89c6-421b-a11a-905d4cca7c75"
+    },
+    {
+      "claim_id": "1a67243e-4595-4e24-994e-dd5b59523866",
+      "result_id": "5c98c7e3-44c7-47ec-9a65-58989d2985e3"
+    },
+    {
+      "claim_id": "9481f49e-35a8-4019-9abb-ba909d842ecc",
+      "result_id": "5c98c7e3-44c7-47ec-9a65-58989d2985e3"
+    },
+    {
+      "claim_id": "1323f77c-608f-4bdf-8ff2-d2d926b7b18a",
+      "result_id": "5c98c7e3-44c7-47ec-9a65-58989d2985e3"
+    }
+  ],
+  "comparisons": []
+}

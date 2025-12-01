@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The clear minimum pattern, where genes reach minimum expression in leaf cell types rather than root cell types, correlates with lineage topology in 100% of triplets with >10 genes showing the pattern. The clear maximum pattern does not reliably correlate with lineage topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively demonstrate a robust pattern discovery from known lineage relationships. The 100% correlation in C4 for triplets with >10 genes is striking, and the contrast with the poor performance of the clear maximum pattern (C5-C7) strengthens the finding. The analysis is based on 150 triplets from experimentally established lineages (C1-C2), providing strong empirical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Genes exhibiting the clear minimum pattern include functionally important developmental regulators and are consistent with known mechanisms like lateral inhibition and mutual inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 provide biological validation for the discovered pattern through literature citations. The connection to lateral inhibition (C9) and mutual inhibition (C10) provides mechanistic plausibility. However, these are primarily literature-based validations rather than experimental tests within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "PCA-based methods failed to reconstruct lineage relationships between all cell types in B- and T-cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by Figure 1D showing PCA results. This negative result motivates the need for the sparse pattern-based approach and demonstrates limitations of standard dimensionality reduction methods for this problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Unrelated triplets show distinct patterns from related triplets: genes with clear minimum are evenly distributed (higher entropy), and the probability distributions of null topology differ with AUC=0.96.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 provide important negative controls showing that the clear minimum pattern is specific to related triplets. The high AUC of 0.96 (C14) demonstrates strong discriminatory power between related and unrelated triplets, validating the specificity of the discovered pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "For the CMP/ST/MPP triplet, Bayesian inference identifies ST as the intermediate cell type with 84% probability and identifies specific transition genes (Gata1, Gata2, Hlf, Hoxa9) and marker genes for each cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 demonstrate the application of the Bayesian framework to a specific triplet. The identified genes (C16-C20) are supported by literature citations showing their known roles in lineage specification, providing biological validation. The probabilistic framework appears sound, though sensitivity to the sparsity parameter is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "For triplet MEP/GMP/FrBC, the null hypothesis has 99% probability, indicating insufficient evidence for a specific topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 demonstrates that the method appropriately assigns null topology when evidence is insufficient. This is an important control showing the method does not force a topology when the data do not support one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Analysis of 165 hematopoietic triplets yields a lineage tree supporting the Adolfsson model over the traditional model, with 8 of 9 distinguishing triplets favoring Adolfsson.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 present the major biological conclusion regarding hematopoietic lineage. The inference is based on 144 high-confidence triplets (C22), and the specific support for Adolfsson model (8/9 triplets, C26) is compelling. However, this is computational inference rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The inferred hematopoietic lineage tree contains three additional lineage decisions beyond the Adolfsson model: CMP\u2192MEP/GMP, MPP\u2192MLP\u2192GMP/CLP, and CLP\u2192ETP/FrA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 describe specific novel predictions from the inferred tree. These are computational predictions that extend beyond existing models, representing testable hypotheses. The claims are clearly stated and supported by the inference framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "For 14 adjacent triplets in the hematopoietic tree, an average of 24 marker genes per cell type and 25 transition genes were identified, including known regulators (Cebpa, Sfpi1, Gata1, Ebf1) and genes used in reprogramming experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 provide systematic characterization of identified genes across the tree. The validation through literature (C31) and connection to reprogramming (C32) strengthen confidence in the biological relevance of identified genes. This represents successful application of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Application to intestinal development data yields a lineage tree differing from Gr\u00fcn et al. only in one triplet (C2-C8-C4 vs C8-C2-C4), and identifies known intestinal regulators (Klf4, Atoh1, Spdef, Foxa1/2, Tcf3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 demonstrate application to an independent dataset with largely concordant results. The single disagreement (C33) represents a testable prediction. Identification of known regulators (C34) provides validation. This serves as an important cross-validation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Single-cell RNA-seq data from 2217 cells across 80 days of human neuronal differentiation were analyzed using SMART-Seq2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 describe the experimental dataset. These are straightforward methodological claims supported by citation to Yao et al., 2017. The data generation appears sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Standard methods (t-SNE, Monocle, Monocle2, TSCAN, StemID) did not clearly reconstruct lineage or identify key regulatory genes from the neuronal differentiation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 present negative results for existing methods. While Figure 4 and supplements show outputs from these methods, the evaluation is somewhat subjective ('did not clearly reconstruct'). The authors acknowledge that unexplored parameter regimes might yield better results. This motivates their approach but the comparison could be more rigorous.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C42"
+    ],
+    "result": "An iterative clustering-inference procedure converged to 8 final clusters with 45 high-probability triplets inferred between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C42 describe the algorithmic procedure and its output. The convergence criterion (C40) is clearly defined. The resulting 45 triplets (C42) form the basis for subsequent lineage inference. The iterative approach is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "Early progenitor c0 splits into c1 (ganglionic eminences/interneurons), c2 (cortical progenitors), and c3 (midbrain/hindbrain progenitors), with specific transition genes identified for each branch that match known regional markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47-C48 describe a major three-way split in early neuronal development. The extensive literature citations for each set of transition genes provide strong biological validation. This represents a key prediction about early brain regionalization that was experimentally validated (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Later differentiation branches are characterized by specific transition genes: c2\u2192c4 (neocortex: BCL11A, EMX2, FOXP2, RORB), c3\u2192c5 (midbrain/hindbrain: ASCL1, PAX3, ZIC1/4, EN2), c5\u2192c6 (midbrain dopaminergic/GABAergic: PAX3, ASCL1, FOXP4), and c5\u2192c7 (hindbrain medulla: ARGFX, HES1, SOX2/7/9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C53, C55-C56 describe later differentiation events with region-specific genes. Each claim is supported by multiple literature citations validating the regional associations. This provides detailed characterization of the differentiation trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Correlation with in vivo developmental data maps c1 to ganglionic eminences, c5/c6/c7 to mid/hindbrain, and c4 to neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide independent validation through correlation with in vivo data (Miller et al., 2014). This cross-dataset validation strengthens confidence in the cluster identities, though the correlations are noted to be relatively low due to technical differences between datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The lineage predictions were experimentally validated using viral barcoding in Yao et al., 2017.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 provides crucial experimental validation of the computational predictions. This independent experimental confirmation in a separate publication strongly supports the validity of the inference method and its predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "As few as 4 genes per triplet are sufficient to correctly infer lineage topology, suggesting that monitoring 4 specific genes can track a lineage decision in single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 demonstrate remarkable sparsity in the gene requirements. The analysis in Figure 4\u2014figure supplement 1E supports C61. However, C62 is somewhat speculative\u2014while 4 genes may be sufficient for computational inference from population data, whether they are sufficient for real-time monitoring in individual cells is a stronger claim that would require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Sparse representation provides interpretability and experimental direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is a general methodological point supported by citation. The entire manuscript demonstrates this principle through identification of small gene sets with biological meaning. This is more of a discussion point than a specific result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Genes showing the clear minimum pattern are most predictive of lineage transitions during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 summarizes the main discovery of the pattern analysis. This is well-supported by the systematic analysis in claims C1-C7 and the successful applications in claims C15-C32 and C45-C59.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The clear minimum pattern is consistent with mutual inhibition, which plays important roles in maintaining multi-stable systems and mediating state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 provides mechanistic interpretation of the discovered pattern. The connection to mutual inhibition is supported by literature citations (Ferrell, 2012 and others). This is a plausible biological interpretation though not directly tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Finding small gene subsets that capture lineage transitions provides a low-dimensional subspace useful for modeling genetic network dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 discusses implications for modeling, supported by citation to Jang et al., 2017. This is a forward-looking claim about utility rather than a result of this study, though the sparse gene sets identified here do enable such modeling.",
+    "result_type": "MINOR"
+  }
+]

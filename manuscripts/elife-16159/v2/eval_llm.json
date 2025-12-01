@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors measured the 3D Euclidean distance (\u03943D) between eGFP-CENP-A and Ndc80-tagRFP as 98.0 \u00b1 0.9 nm in live cells, which is larger than the ~60 nm predicted from prior 1D measurements. When applying the same 1D method to their 3D data, they obtained 57.9 \u00b1 1.1 nm, suggesting that projection effects from 3D to 1D may give a misleading picture of kinetochore structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C19, and C20 provide converging evidence that 3D measurements reveal a larger intra-kinetochore distance than previously reported 1D measurements, and that this discrepancy is due to projection effects. The measurements are well-documented with sample sizes (n=4291 for 3D, n=1002 for 1D) and appropriate statistical reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C27"
+    ],
+    "result": "The authors found that the CENP-A-to-Ndc80(C) connection is non-compliant (stiff) under tension. \u03943D showed no correlation with inter-kinetochore distance changes during metaphase oscillations, and nocodazole treatment (which reduced inter-kinetochore distance by 30%) only marginally reduced \u03943D by 5% (5 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C27 collectively demonstrate kinetochore stiffness through multiple lines of evidence: lack of correlation during oscillations (C21) and minimal change under nocodazole treatment (C22-C23). The statistical significance (p=0.012) and large sample sizes (n\u2265649) support the conclusion of non-compliance (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors discovered that the outer kinetochore domain can swivel around the inner kinetochore/centromere, which results in large reductions in intra-kinetochore distance when viewed in lower dimensions. The \u03941D measurement decreased by 70% (40 nm) under nocodazole treatment while \u03943D only changed by 5 nm, suggesting that rotation (swivel) is the major degree of freedom upon microtubule attachment rather than stretching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C30-C34 provide strong evidence for kinetochore swivel as the primary explanation for apparent changes in intra-kinetochore distance. The large discrepancy between 1D (70% decrease) and 3D (5% decrease) measurements under nocodazole treatment, with significant statistical support (p<10\u207b\u2074), demonstrates that projection artifacts due to swivel explain previous interpretations of kinetochore stretching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors characterized swivel dynamics, showing that nocodazole treatment results in a larger range of y-directional swivel (standard deviation 56.4\u00b0 in untreated vs. 89.5\u00b0 in nocodazole), with some kinetochores capable of rotating >90\u00b0. Taxol treatment also increased swivel but to a lesser extent, and swivel changes over time, demonstrating that kinetochores do not have a fixed swivel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide comprehensive characterization of swivel behavior under different conditions with appropriate statistical tests (F-test for variance comparison). The observation that taxol (which maintains spindle but reduces dynamics) increases swivel less than nocodazole (which eliminates microtubules) supports the interpretation that both force and attachment status affect swivel (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors demonstrated that swivel provides mechanical flexibility enabling kinetochores at the periphery of the spindle to engage microtubules. Peripheral kinetochores exhibited greater swivel than central ones, and swivel direction correlated with k-fiber direction (r=0.371, p<10\u207b\u2074), indicating that outer kinetochore swivel serves as a proxy for k-fiber binding direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C41-C44 provide spatial analysis of swivel across the metaphase plate with appropriate statistical support. The correlation between swivel and k-fiber direction (C43) with immunofluorescence validation strengthens the functional interpretation that swivel enables microtubule engagement at different spindle positions (C7, C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors found that swivel reduces as cells approach anaphase. Peripheral kinetochores decreased absolute y-swivel from 45.7\u00b0 in early metaphase to 33.6\u00b0 in late metaphase (p<10\u207b\u2074). While \u03941D increased from early to late metaphase, \u03943D did not change, indicating that swivel is the distinctive mechanical change correlating with anaphase onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C46-C50 demonstrate temporal changes in swivel during metaphase progression using metaphase plate thickness as a proxy for time to anaphase. The statistical significance (p<10\u207b\u2074) and large sample sizes (n=455-460) support the finding. The observation that \u03943D remains constant while \u03941D increases (C48-C49) reinforces that swivel, not stretching, changes during metaphase progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C60"
+    ],
+    "result": "The authors validated their experimental system by showing that kinetochore dynamics were normal following exogenous expression of Ndc80-tagRFP, and found no difference between poleward and away-from-pole moving kinetochores in 3D measurements of delta in human cells, unlike previous findings in PtK2 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C60 provide important controls demonstrating that the fluorescent tagging does not perturb kinetochore function (C60) and characterizing species-specific differences from prior work (C18). The validation is supported by Figure 1\u2014figure supplement 1A and B showing normal inter-kinetochore distances and oscillation periods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors found that taxol treatment (which maintains spindle but inhibits microtubule dynamics) did not affect the CENP-A-to-Ndc80(C) linkage (p=0.302), demonstrating that exerting pulling force alone is not sufficient to change \u03943D and suggesting that microtubule presence induces conformational changes in the kinetochore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 present an interesting finding that distinguishes force from microtubule presence. However, the interpretation that microtubule presence (rather than force) induces conformational change (C63) is speculative and requires additional experiments to rule out alternative explanations, such as differences in force magnitude or dynamics between taxol and control conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C29"
+    ],
+    "result": "The authors measured intra-kinetochore distances using multiple marker combinations in both live and fixed cells, finding consistent 5-7 nm reductions in \u03943D under nocodazole treatment across different markers (eGFP-CENP-A/mCherry-Mis12, GFP-CENP-C/Ndc80(C), CENP-A/MIS12 complex). Measurements to the N-terminus of Ndc80 showed larger (~15 nm) reductions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C29 demonstrate reproducibility across multiple marker combinations and experimental conditions (live vs. fixed cells). The consistency of 5-7 nm changes across different markers strengthens confidence in the measurements, while the larger change at the N-terminus (C29) suggests additional conformational changes in the outer kinetochore domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors speculate that the reduction in swivel as cells approach anaphase may represent an organizational change linked to checkpoint satisfaction and/or obligatory changes in kinetochore mechanochemistry. They suggest swivel changes could provide proximity changes between Aurora B and its substrates, and that kinetochores may undergo a mechanochemical shift in readiness for anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C51-C53 are explicitly presented as speculations by the authors. While the correlation between swivel reduction and anaphase approach is well-documented (C8, C46-C47), the causal mechanisms and functional significance remain uncertain. The authors acknowledge this uncertainty (C51) and these interpretations require future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors propose mechanical models for swivel, suggesting it requires a flexible yet non-compliant structure. They discuss two possibilities: outer kinetochore remodeling relative to the inner kinetochore, or complete rotation of the whole kinetochore structure within the chromosome. They speculate that extreme swivel on unattached kinetochores may optimize microtubule search-and-capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C59 present mechanistic models and functional speculations that are reasonable interpretations of the data but lack direct experimental validation. The authors appropriately acknowledge uncertainty (C57: 'cannot rule out') and cite supporting literature (C56, C58, C59), but these remain hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors observed that the N-terminal Ndc80 movement may relate to conformational changes reported in budding yeast, and noted that delta changes for CENP-A/CENP-C to Ndc80 N-terminus are smaller in live cells than fixed cells, potentially reflecting fixation effects on kinetochore integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 make comparisons to prior work and suggest explanations for discrepancies between live and fixed cell measurements. However, these are speculative interpretations (C64: 'may relate', C66: 'may reflect') that require additional experiments to confirm, as acknowledged by the authors (C64: 'further experiments will be needed').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors provide caveats about interpreting delta measurements, noting that kinetochore domain shape and size can change under different conditions, and that the NDC80 complex can be recruited via two distinct linkages with potentially different properties. They conclude that delta and swivel provide valuable information about kinetochore supramolecular organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 appropriately acknowledge limitations and complexities in interpreting the measurements while affirming their value. These are well-supported cautionary statements based on cited literature (C68-C69) and reasonable conclusions about the utility of the approach (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors provide background on chromosome segregation, kinetochore structure, and prior work on intra-kinetochore tension. They cite previous findings that microtubule-pulling forces reduce intra-kinetochore distance by ~30 nm, which has been interpreted as evidence of tension and linked to checkpoint silencing, though this requirement has been challenged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C10-C16 accurately summarize established knowledge and prior work with appropriate citations. These background claims provide context for the current study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

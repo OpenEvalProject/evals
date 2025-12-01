@@ -1,0 +1,1790 @@
+{
+  "submission": {
+    "id": "022a7142-ee7f-40d5-b081-ed19d2e03173",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:47:56.953746Z",
+    "updated_at": "2025-11-30T21:47:56.953746Z"
+  },
+  "content": [
+    {
+      "id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "submission_id": "022a7142-ee7f-40d5-b081-ed19d2e03173",
+      "content_type": "manuscript",
+      "content_text": "# Accelerated cell divisions drive the outgrowth of the regenerating spinal cord in axolotls\n\n## Authors\n\n- Fabian Rost<sup>1</sup> ([ORCID: 0000-0001-6466-2589](https://orcid.org/0000-0001-6466-2589))\n- Aida Rodrigo Albors<sup>2</sup> ([ORCID: 0000-0002-9573-2639](https://orcid.org/0000-0002-9573-2639))\n- Vladimir Mazurov<sup>2</sup>\n- Lutz Brusch<sup>1</sup>\n- Andreas Deutsch<sup>1</sup>\n- Elly M Tanaka<sup>2</sup> \u2020\n- Osvaldo Chara<sup>1</sup> ([ORCID: 0000-0002-0868-2507](https://orcid.org/0000-0002-0868-2507)) \u2020\n\n### Affiliations\n\n1. Center for Information Services and High Performance Computing Technische Universit\u00e4t Dresden Dresden Germany\n2. Deutsche Forschungsgemeinschaft \u2013 Center for Regenerative Therapies Dresden Dresden Germany\n3. Max Planck Institute of Molecular Cell Biology and Genetics Dresden Germany\n4. Center for Advancing Electronics Dresden Dresden Germany\n5. Systems Biology Group, Institute of Physics of Liquids and Biological Systems National Scientific and Technical Research Council, University of La Plata La Plata Argentina\n\n\u2020 Corresponding author\n\n## Abstract\n\nAxolotls are unique in their ability to regenerate the spinal cord. However, the mechanisms that underlie this phenomenon remain poorly understood. Previously, we showed that regenerating stem cells in the axolotl spinal cord revert to a molecular state resembling embryonic neuroepithelial cells and functionally acquire rapid proliferative divisions (Rodrigo Albors et al., 2015). Here, we refine the analysis of cell proliferation in space and time and identify a high-proliferation zone in the regenerating spinal cord that shifts posteriorly over time. By tracking sparsely-labeled cells, we also quantify cell influx into the regenerate. Taking a mathematical modeling approach, we integrate these quantitative datasets of cell proliferation, neural stem cell activation and cell influx, to predict regenerative tissue outgrowth. Our model shows that while cell influx and neural stem cell activation play a minor role, the acceleration of the cell cycle is the major driver of regenerative spinal cord outgrowth in axolotls.\n\n## Introduction\n\nNeural stem cells exist in the spinal cord of all vertebrates, but only in salamanders these cells are mobilized efficiently to resolve spinal cord injuries (Becker and Becker, 2015; Tanaka and Ferretti, 2009). In axolotls, this is best exemplified following tail amputation, when cells adjacent to the cut end regrow a fully functional spinal cord (Holtzer, 1956; Mchedlishvili et al., 2007). Despite the regenerative potential of axolotl neural stem cells, little was known about the molecular changes occurring upon them and the changes in cell behavior that lead to the rapid expansion of the stem cell pool during regeneration.\n\nIn our previous study, we looked at spinal cord regeneration at the molecular and cellular levels. There, we found that resident SOX2+ neural stem cells re-activate an embryonic-like gene expression program following tail amputation (Rodrigo Albors et al., 2015). Part of this program involves the re-establishment of planar cell polarity (PCP) signaling, the downregulation of pro-neural genes, and upregulation of proliferation-promoting genes. In line with these gene expression changes, we also found that regenerating neural stem cells speed up their cell cycle, and switch from neuron-generating to proliferative cell divisions. PCP turned out to be key for the efficient and orderly expansion of the regenerating spinal cord, at least in part by instructing cells to divide along the growing axis. However, besides oriented cell division, whether other cellular mechanisms such as convergence and extension, which leads to the narrowing and lengthening of tissues, are involved in the rapid expansion of the regenerating spinal cord remained unknown.\n\nIn this follow-up study we investigate the contribution of different cellular mechanisms to the elongation of the regenerating spinal cord in the axolotl. To address this question, we apply a quantitative modeling approach to causally link previous (Rodrigo Albors et al., 2015) and new datasets to the time-course of spinal cord outgrowth. In particular, we calculate neural stem cell density from previous measurements (Rodrigo Albors et al., 2015) to show that convergence and extension is negligible. We make use of cell proliferation-related measurements along the anterior-posterior axis (AP) of the spinal cord (Rodrigo Albors et al., 2015) to identify a high-proliferation zone, which initially extends 800 \u03bcm anterior to the amputation plane, and calculate changes in cell cycle kinetics within this zone. By tracing sparsely-labelled cells, we also determine the\u00a0cell influx into the regenerating spinal cord. Finally, we set up a mathematical model of spinal cord outgrowth that incorporates cell proliferation, neural stem cell activation, and cell influx. Using this model, we test the contribution of each of these cellular mechanisms to the regenerative spinal cord outgrowth. Comparing the model predictions with experimental data of tissue outgrowth we show that while cell influx and activation of quiescent neural stem cells play a minor role, the acceleration of the cell cycle in the high-proliferation zone is the major driver of the observed regenerative spinal cord outgrowth.\n\n## Results\n\n### The regenerating spinal cord grows with increasing velocity\n\nTo refine the outgrowth time-course of the regenerating spinal cord, we measured the spinal cord outgrowth in individual axolotls, 2\u20133 cm snout to tail, during the first 8 days of regeneration (Figure 1A, Figure 1\u2014figure supplement 1 and\u00a0Rost et al., 2016b). Initially, the regenerating spinal cord extended slowly to a mean outgrowth of 0.45\u00a0\u00b1\u00a00.04 mm at day 4 (Figure 1B). Thereafter, the spinal cord grew faster, reaching an outgrowth of 2.26\u00a0\u00b1\u00a00.07 mm by day 8.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative images of a regenerating spinal cord after tail amputation (individual time-lapse images are in Figure 1\u2014figure supplement 1). The white dashed line marks the amputation plane. The arrowheads mark the tip of the regenerating spinal cord. Scale bar, 1 mm. (B) Spinal cord outgrowth time-course during the first eight days after amputation (n\u00a0=\u00a08 axolotls).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each row shows images from an axolotl; each column shows animals from one time point analyzed. Vertical and horizontal green\u00a0lines mark the amputation plane and the spinal cord outgrowth, respectively. High-resolution images are in\u00a0Rost et al., 2016b. Animal t3 is shown in the representative images of Figure 1A.\n\n### The density of neural stem cells stays constant along the AP axis of the regenerating spinal cord\n\nTo explain the outgrowth time-course of the regenerating spinal cord in terms of underlying cellular mechanisms, we first set out to translate tissue outgrowth into cell numbers. To quantitatively investigate neural stem cell arrangement in space and time, we revisited our previously published dataset of the number of SOX2+ cells per cross section in uninjured and regenerating spinal cords (Figure 2A and see Materials and methods) (Rodrigo Albors et al., 2015). We found that the number of SOX2+ cells per spinal cord cross section is constant along the AP axis in both uninjured and regenerating samples at any time (Figure 2B,B\u2019 and Figure 2\u2014figure supplement 1 and see Materials and methods). We also found that the number of SOX2+ cells per cross section spatially averaged along the AP axis is constant during regeneration (Figure 2C and see Materials and methods). On average, 30.4\u00a0\u00b1\u00a00.6 SOX2+ cells make up the circumference of the axolotl spinal cord. Since the length of SOX2+ cells along the AP axis does not change during regeneration (lc\u00a0=\u00a013.2\u00a0\u00b1\u00a00.1 \u03bcm) (Rodrigo Albors et al., 2015), the density of cells along the AP axis is spatially homogeneous and equal to 2.3\u00a0\u00b1\u00a00.6 cells/\u03bcm (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sketch of measurements taken to estimate the density and total number of neural stem cells (nuclei, black dots) in the axolotl spinal cord. The density of SOX2+ cells, \u03c1, is the ratio of the number of SOX2+ cells per cross section (# stem cells) and the mean AP cell length, lc. The density of SOX2+ cells is the proportionality constant between the total number of stem cells in a zone along the spinal cord with zone length, LSC. (B,B\u2019) Number of SOX2+ cells per cross section along the AP axis of a selected uninjured (B) and a selected day 4-regenerating spinal cord (B\u2019). Black line and gray region indicate the mean number of SOX2+ cells and the standard deviation, respectively. Plots for all individual axolotls in Figure 2\u2014figure supplement 1. (C) Spatial mean of the number of SOX2+ cells per cross section of individual axolotls against time (black dots). Black line and gray region indicate the mean number of SOX2+ cells and the standard deviation of all animals, respectively. (D,D\u2019) Number of SOX2+/PCNA+ cells per cross section (upper panel) and mitotic cells per section (lower panel) along the AP axis in a selected uninjured (D) and a selected day 4-regenerating spinal cord (D\u2019). Black line and the gray region show the expected number and the 68% confidence belt for the best fit of the model with two spatial proliferation zones, respectively. Plots for all animals in Figure 2\u2014figure supplement 3. (E) Possible cell states in the two spatial proliferation zones model used to analyze the spatial cell proliferation dataset (D,D\u2019). pp, probability that a cell is proliferative, otherwise quiescent. pm, probability that a proliferative cell undergoes mitosis at the time of analysis. (E\u2019) The model assumes two proliferation zones. The location of the border between zones is called switchpoint. (F\u2013F\u2019) Results of model fitting for growth fraction (F) and mitotic index time-course (F\u2019) in the anterior (orange diamonds) and posterior (green triangles) zone. Error bars indicate the 68% credibility interval. (F\u2019\u2019) Black dots mark the switchpoint. Blue dashed line marks 800 \u03bcm anterior to the amputation plane. The dashed region marks the space outside of the embryo, the dotted region marks the unaffected part of the embryo. (G) Proliferation rate time-course in the high-proliferation zone. (H) Total number of SOX2+/PCNA- cells in the high-proliferation zone (mean \u00b1 linearly propagated 1-\u03c3 error). (I) Selected time-lapse images of clone (blue arrowhead) tracking during spinal cord regeneration. Dashed line marks the amputation plane. Scale bar, 200 \u03bcm\u00a0(J) Tracking of 19 clones along the AP axis during regeneration. Clone trajectories are color coded by their initial position. (K) Clone velocities at different positions along the AP axis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Each row shows data from three animals at a given time point. Data from animals 0D_1 and 4D_3 are shown as representative data in Figure 2B and B\u2019, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Simulations of a spatially homogeneous zone of proliferation for three animals. Population mean number of stem cells per cross section, NSpop\u00a0=\u00a07, inter-animal standard deviation for number of stem cells per cross section, \u03c3pop\u00a0=\u00a01, intra-animal standard deviation for number of stem cells per cross section, \u03c3\u00a0=\u00a00.5, probability of a cell to be proliferative (expected growth fraction), pp\u00a0=\u00a00.5, inter-animal standard deviation of pp, \u03c3p\u00a0=\u00a00.04, probability of a proliferative cell to be mitotic (expected mitotic index), pm\u00a0=\u00a00.015, inter-animal standard deviation of pm, \u03c3m\u00a0=\u00a00.003. (B) Simulations of two adjacent spatially homogeneous zones of proliferation for three animals. Parameters for the anterior zone are the same as in (A). The\u00a0probability of a cell to be proliferative and probability of a proliferative cell to be mitotic in the posterior zone are elevated to pp\u00a0=\u00a00.8 and pm\u00a0=\u00a00.1, respectively. The mean switchpoint location is 300 \u03bcm anterior to the amputation plane and the corresponding inter-animal standard deviation is 100 \u03bcm. As expected, there are more proliferative and mitotic cells in the posterior zone. Simulation results can statistically be compared with the cell counts we obtained from experimentally observed animals to infer growth fraction, mitotic index and switchpoint (Figure 2F\u2013F\u2019\u2019).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Data from animals 0D_1 and 4D_3 are shown in Figure 2D and D\u2019, respectively. Each row shows data from three animals at a given time point.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Each row shows a different model parameter. Each column shows a different time point.\u00a0Three animals per time point were used in the analysis. Vertical dashed lines show the limits of the 95% credibility interval. The distribution means and the 68% credibility intervals for the growth fraction, mitotic index and the switchpoint are shown in Figure 2F\u2013F\u2019\u2019.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig2-figsupp5-v2.jpg)\n\nTaken together, these findings allow us to exclude mechanisms such as cell shape changes and convergence and extension as driving forces of regenerative spinal cord outgrowth in the axolotl. Instead, constant neural stem cell density implies an increasing neural stem cell number during regeneration. This suggests that the expansion of the regenerating neural stem cell pool mostly relies on proliferation-based mechanisms.\n\n### Cell proliferation increases within an 800 \u03bcm zone anterior to the amputation plane in four-day regenerates\n\nTo determine spatial and temporal changes in cell proliferation during regeneration, we calculated different cell proliferation parameters along uninjured and regenerating spinal cords. In our previous study, we quantified the number of proliferative cells, i.e. SOX2+ cells that are positive for proliferating cell nuclear antigen (PCNA) and the number of cells in mitosis, i.e. SOX2+/PCNA+ cells with condensed chromosomes based on Hoechst DNA stain (Rodrigo Albors et al., 2015). Here, we used these datasets to estimate the growth fraction, i.e. the fraction of proliferative cells and the mitotic index, i.e. the ratio of mitotic cells over proliferative cells. Although neither SOX2+/PCNA+ cells nor mitotic cells showed any evident spatial pattern along the AP axis in uninjured animals (Figure 2D, points), they showed a tendency to increase posteriorly from day 4 (Figure 2D\u2019, points). To elucidate whether proliferation was patterned along the AP axis during regeneration, we tested the data with a mathematical model of two spatially homogeneous zones characterized by their growth fraction and mitotic index and separated by a border that we call the switchpoint (Figure 2E,E\u2019). We reasoned that in the absence of an AP pattern of cell proliferation the two zones would be indistinguishable; while if cell proliferation would be locally increased, the model would allow us to determine the magnitude and the location of the increased cell proliferation. For a given growth fraction and mitotic index, the model predicts the expected number of proliferative cells and mitotic cells per cross section (Figure 2\u2014figure supplement 2). Hence, we fitted the model to the cell number datasets of uninjured and regenerating spinal cords at day 3, 4, 6 and 8 after amputation (Figure 2D,D\u2019, Figure 2\u2014figure supplement 3 and Figure 2\u2014figure supplement 4) to determine the growth fraction, the mitotic index, and the switchpoint for each time point (Figure 2F\u2013F\u2019\u2019). Not surprisingly, we found that in the uninjured spinal cord the growth fraction and the mitotic index in the two modeled zones are not significantly different (Figure 2D,F,F\u2019 and Figure 2\u2014figure supplement 3). Similarly, at day 3 there are no significant differences between the two zones (Figure 2F,F\u2019 and Figure 2\u2014figure supplement 3). In contrast, the growth fraction and the mitotic index are higher in the posterior zone from day 4 onward (Figure 2D\u2019,F,F\u2019 and Figure 2\u2014figure supplement 3). These findings reveal that a high-proliferation zone emerges in the regenerating spinal cord at day 4. At this time point, the switchpoint between the two zones is located 800\u00a0\u00b1\u00a0100 \u03bcm anterior to the amputation plane, but shows the tendency to shift posteriorly as the regenerating spinal cord grows (Figure 2F\u2019\u2019).\n\nNext, we combined the mitotic index measurements with our previous cell cycle length estimates (Rodrigo Albors et al., 2015) to establish how the proliferation rate changes during regeneration (Figure 2G and see Materials and methods). We find that the proliferation rate is 0.06\u00a0\u00b1\u00a00.02 per day in the uninjured spinal cord which corresponds to a cell cycle length of 10\u00a0\u00b1\u00a04 days (Figure 2\u2014figure supplement 5). The proliferation rate is similar at day 3. However, at day 4 the proliferation rate increases to about 0.15 per day corresponding to a cell cycle length of about five days and the proliferation rate remains that high until day 8.\n\n### Quiescent neural stem cells re-enter the cell cycle during regeneration\n\nTwo possible scenarios could lead to the observed increased growth fraction in the high-proliferation zone (Figure 2F): the activation of quiescent neural stem cells, or the dilution of quiescent cells by the expansion of the proliferating cell population. If quiescent cells were activated, the total number of quiescent cells in the high-proliferation zone would decrease. We estimated the total number of quiescent cells in the high-proliferation zone from the mean number of SOX2+/PCNA- cells per cross section, the mean AP cell length, and the outgrowth time-course (see Materials and methods). The number of SOX2+/PCNA- cells drops from 180\u00a0\u00b1\u00a030 at day 0 to 23\u00a0\u00b1\u00a013 at day 6 (Figure 2H) which suggests that quiescent SOX2+ cells get activated and re-enter the cell cycle upon injury. The number of quiescent SOX2+ cells appears to increase again at day 8, when cells resume neurogenesis (Rodrigo Albors et al., 2015).\n\n### Cells translocate faster the closer they are to the tip of the regenerate\n\nCell movement could also contribute new cells to the regenerative spinal cord outgrowth. To investigate whether anterior spinal cord cells move into the high-proliferation zone, we followed individual cells during regeneration. For that, we\u00a0electroporated\u00a0cells with a dual fluorescent reporter plasmid (cytoplasmic GFP and nuclear mCherry) at very low concentration to achieve sparse labelling of cells and tracked them daily during the first 8 days of regeneration (Figure 2I). We found that labelled cells preserve their original spatial order: cells located close to the amputation plane end up at the posterior end of the regenerated spinal cord (Figure 2J). Most-anterior cells, however, almost do not change their position. From the clone trajectories, we calculated the mean clone velocity at different positions along the AP axis (Figure 2K and see Materials and methods). Clones initially located 800 \u03bcm anterior to the amputation plane translocate slowly, with a velocity of 20\u00a0\u00b1\u00a09 \u03bcm/day. In contrast, the more posterior a clone is, the faster it translocates (Figure 2K).\n\n### Cell proliferation drives the outgrowth of the regenerating spinal cord\n\nThe fact that cell density along the AP axis is constant in space and time (Figure 2B\u2013C) made us reason that the spinal cord must grow as a result of increasing cell numbers. In line with this, we found a high-proliferation zone, first spanning from 800 \u03bcm anterior to the amputation plane, and showed that the increase in cell proliferation is due to both (i) the acceleration of the cell cycle and (ii) the activation of quiescent stem cells (Figure 2D\u2013H). The influx of cells that we identified could also contribute to increasing cell numbers in the regenerating spinal cord (Figure 2I\u2013K). To assess the contribution of these cellular mechanisms to the outgrowth time-course, we used a quantitative mathematical modeling framework (Greulich and Simons, 2016; Ru\u00e9 and Martinez Arias, 2015; Oates et al., 2009). We formalized the influence of each cellular mechanism on the total number of proliferative and quiescent SOX2+ cells in the high-proliferation zone in a mathematical model of cell numbers (Figure 3A, see Materials and methods, Equations 3 and 4). As cell density along the AP axis is constant, the cell number is proportional to the AP length of the growing high-proliferation zone. Hence, we can transform the model of cell numbers into an equivalent model for the tissue geometry that predicts the spinal cord outgrowth, L(t), and growth fraction, GF(t) at time t:\n\n$$\n(1)\\frac{dL(t)}{dt}=r(t)(L(t)+L_{0})GF(t)\u23dedivisions\u00a0of\u00a0proliferative\u00a0cells+((a))v((a))\u23deinflux\u00a0of\u00a0cells\u00a0into\u00a0the\u00a0high\u2212proliferation\u00a0zone,L(t=0)=0,(2)\\frac{dGF(t)}{dt}=(1\u2212GF(t))k\u23dfactivation\u00a0of\u00a0quiescent\u00a0cells+(1\u2212GF(t))r(t)GF(t)\u23dfdilution\u00a0of\u00a0quiescent\u00a0cells\u00a0in\u00a0the\u00a0expanding\u00a0pool\u00a0of\u00a0proliferative\u00a0cells,GF(t=0)=GF_{0}.\n$$\n\nwhere L0\u00a0=\u00a0800 \u03bcm is the length of the high-proliferation zone, GF0 is the growth fraction in uninjured tails, r(t) is the proliferation rate at time t, v is the velocity of cells 800 \u03bcm anterior to the amputation plane, and k is the cell cycle entry rate. As we determined the proliferation rate time-course r(t) (Figure 2G), the initial growth fraction GF0 (Figure 2F) and the influx velocity v (Figure 2K), only the cell cycle entry rate k is unknown. By fitting the model to the experimental growth fraction data from day 0 to day 6 (Figure 3B), we determined this parameter as k\u00a0=\u00a00.2\u00a0\u00b1\u00a00.1 day\u22121. Importantly, the model predicts a spinal cord outgrowth time-course that recapitulates the observed experimental data (Figure 3C). This fit-free agreement shows that the acceleration of the cell cycle, the activation of quiescent neural stem cells, and an influx of cells into the regenerate quantitatively explain the observed spinal cord outgrowth.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sketch of cellular mechanisms included in the model: cell proliferation, quiescent cell activation, and cell influx into the 800 \u03bcm high-proliferation zone. (B) Growth fraction time-course of the SOX2+ cell population in the high-proliferation zone as observed (black dots) and fitted by the model (gray shaded areas, from darker to lighter, 68%, 95% and 99.7% confidence intervals of the model prediction). (C) Spinal cord outgrowth during the first eight days of regeneration as observed (black dots, n\u00a0=\u00a08 axolotls) and predicted by the model (Equations 1 and 2) (green shaded areas, from darker to lighter, 68%, 95% and 99.7% confidence intervals). The model prediction is in agreement with the experimental data. (D\u2013G) Prediction of spinal cord outgrowth for four model scenarios based on Equations 1 and 2 with selected mechanisms switched off (green shaded areas). Black dots show the same experimental data as in panel (C). (D) The acceleration of the cell cycle is switched off. Hence, the proliferation rate is fixed to the basal proliferation rate of uninjured animals. (E) Cell influx is switched off (v\u00a0=\u00a00). (F) Quiescent cell activation is switched off (k\u00a0=\u00a00). (G) Cell influx and quiescent cell activation are switched off (k\u00a0=\u00a00, v\u00a0=\u00a00). Corresponding predictions for growth fraction in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Black dots show the same experimental data as in Figure 3B. Scenarios in panels A-D correspond to the scenarios in Figure 3D\u2013G, respectively. Switching off the acceleration of the cell cycle length and switching off the cell influx hardly have an effect on the growth fraction time course (A,B). As expected, switching off the activation of quiescent stem cells has a strong impact on growth fraction time-course (C,D). This is consistent with the fit of a non-zero activation rate k to these data.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Outgrowth prediction of the full model (green, same as in Figure 3C) and rescaled outgrowth in the\u00a0control condition from\u00a0Fei et al., 2014 (black dot, n\u00a0=\u00a012 axolotls). (B) Outgrowth prediction of the model for the case that cell cycle acceleration is switched off (green, same as in Figure 3D) and rescaled, density-corrected outgrowth in a Sox2-knockout condition from\u00a0Fei et al., 2014 (black dot, n\u00a0=\u00a024 axolotls).\n\nTo quantitatively determine the contribution of each cellular mechanism to the regenerative spinal cord outgrowth, we switched them off one by one in silico. First, we switched off the acceleration of the cell cycle, modeling growth only with basal cell proliferation, the influx of cells, and the activation of quiescent neural stem cells (Figure 3D). This predicted a maximum outgrowth of 1.7 mm (p=0.003) which is 0.6 mm shorter than the observed outgrowth at day 8. This result shows that the acceleration of the cell cycle is a key driver of regenerative spinal cord outgrowth. In contrast, switching off cell influx (Figure 3E) or the activation of quiescent neural stem cells (Figure 3F) has almost no effect on the predicted outgrowth, which suggests that these cellular mechanisms are not major drivers of regenerative spinal cord outgrowth. Indeed, even when we switched off both cell influx and cell activation the observed outgrowth time-course is in agreement with the model prediction (Figure 3G). Together, these results show that the acceleration of the cell cycle in cells that were already proliferating in the uninjured spinal cord can explain the observed spinal cord outgrowth during regeneration.\n\nTo test the prediction of our model against an independent experimental dataset, we revisited data of Sox2-knockout spinal cords (Fei et al., 2014). Fei and colleagues found evidences that Sox2-knockout prevented the acceleration of the cell cycle during regeneration and lead to shorter spinal cord outgrowth. In agreement with these findings, running our model with the acceleration of the cell cycle switched off recapitulated the shorter outgrowth in the Sox2-knockout condition (Figure 3\u2014figure supplement 2 and see Materials and methods).\n\n## Discussion\n\nThe spinal cord tissue size and architecture is faithfully restored after tail amputation in axolotls. This unique regenerative capability relies on neural stem cells surrounding the central canal of the spinal cord. These cells re-activate an embryonic-like gene expression program that implements PCP signaling to make possible the increase in cell proliferation while maintaining a tube-like structure (Rodrigo Albors et al., 2015). However, the precise contribution of proliferation-based mechanisms to the outgrowth of the regenerated spinal cord and whether other cellular mechanisms are involved remained unknown.\n\nHere, we combined detailed quantitative datasets with mathematical modeling to dissect the cellular mechanisms that underlie regenerative spinal cord outgrowth in axolotls. We found that the response to injury involves (i) changes in the cell proliferation rate, (ii) activation of quiescent neural stem cells, and (iii) cell influx into the regenerating spinal cord, while maintaining a surprisingly organized neural stem cell-scaffold. By modeling the contribution of each of these mechanisms to tissue outgrowth upon regeneration, we uncovered that the acceleration of the cell cycle is the main driver of regenerative spinal cord outgrowth in axolotls.\n\nIncreased proliferation of SOX2+ cells upon spinal cord injury is a common feature among vertebrates (Becker and Becker, 2015). In zebrafish (Hui et al., 2010, 2015), Xenopus (Gaete et al., 2012), mouse (Lacroix et al., 2014) and axolotl (this work, Rodrigo Albors et al., 2015; Holtzer, 1956) traumatic spinal cord injury triggers a long-range wave of increased cell proliferation. It is however clear that although the potential to replace lost cells or tissue exists in other species, they are not as efficient as axolotls at resolving spinal cord injuries. A more comprehensive characterization of cell proliferation responses is thus needed to understand fundamental differences between species with different regenerative capabilities. In our previous study, we uncovered that spinal cord stem cells in the axolotl speed up their cell cycle during regeneration (Rodrigo Albors et al., 2015). Performing detailed quantifications, we were now able to delineate a high-proliferation zone that initially spans from the 800 \u03bcm adjacent to the amputation plane to the regenerating tip, and later shifts posteriorly as the spinal cord regrows. Although some quiescent neural stem cells enter the cell cycle during regeneration, we demonstrate that the observed increase in proliferation is primarily due to the acceleration of the cell cycle within the regenerating neural stem cell pool. By performing experiments in silico using our mechanistic model of spinal cord regeneration, we demonstrate that the acceleration of the cell cycle can explain the observed spinal cord outgrowth.\n\nWe further applied our model to an independent experimental dataset in which Sox2-knockout spinal cords do not regrow properly upon amputation, due to the inability of Sox2-knockout cells to \u2018change gears\u2019 in response to injury (Fei et al., 2014). Indeed, Sox2-knockout cells express PCNA and are in theory able to proliferate, but their lower incorporation of the thymidine analog 5-ethynyl-2\u2019-deoxyuridine (EdU) suggests that they cannot speed up the cell cycle (Fei et al., 2014). We were able to show that the reduced outgrowth in Sox2-knockout spinal cords can be quantitatively explained by the lack of cell cycle acceleration (Figure 3\u2014figure supplement 2). However, it is important to point out that our model does not include the regulation of individual cellular mechanisms and thus it does not consider compensatory mechanisms that may operate under perturbed conditions. To apply our model to the Sox2-knockout dataset, we assumed that knocking out Sox2 only affects the acceleration of the cell cycle. The fact that the model successfully recapitulated the experimental outgrowth in the Sox2-knockout scenario suggests that compensatory mechanisms might have a small contribution in this condition. Nevertheless, the validity of this assumption remains to be further investigated.\n\nOur approach and findings highlight the importance of mathematical modeling and careful quantification of cellular mechanisms to understand the mechanisms of regeneration. Moreover, our detailed spatial and temporal characterization of cell proliferation may help to focus the search for key signals that might be operating in the high-proliferation zone to speed up the cell cycle of regenerative neural stem cells. It will be interesting to see whether the expression of AxMLP, the recently identified regeneration-initiating factor in axolotls (Sugiura et al., 2016), correlates in time and space with the high-proliferation zone. This work thus provides a deeper understanding of spinal cord regeneration in axolotls and new insights to help elucidating the molecular mechanisms that drive spontaneous spinal cord regeneration in vivo.\n\nBesides the increase in cell proliferation, we uncovered an influx of cells into the regenerating spinal cord. Cells move along the AP axis of the spinal cord but maintain their relative position: cells translocate faster the closer they are to the amputation plane (Figure 2J,K). In line with earlier work (Mchedlishvili et al., 2007), we found that cells initially located within the 500 \u03bcm anterior to the amputation plane contribute to the regenerated spinal cord; while cells outside this zone translocate slower, and cells at 800 \u03bcm, the border of the high-proliferation zone, almost do not move. This would be consistent with a model in which cells are passively displaced, pushed by more anterior dividing cells. In this model, the more posterior a cell is the more cells anterior to that cell divide and the stronger is the push, making the cell translocate faster (Figure 4). Importantly, the proliferative response extends beyond the 500 \u03bcm anterior to the amputation plane that gives rise to the regenerated spinal cord (Mchedlishvili et al., 2007). In the light of this model, it is plausible that cells in the posterior 500 \u03bcm of the high-proliferation zone regenerate the spinal cord while cells from the anterior 300 \u03bcm of the high-proliferation zone replenish and push out the 500 \u03bcm regeneration source zone.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20357/elife-20357-fig4-v2.jpg)\n\n**Figure 4.:** Only one row of stem cells is shown as circles and three cell clones are marked with different patterns (striped, black and dotted). In the uninjured spinal cord (Day 0), cells divide at a slow, basal proliferation rate (white background). From day 4 after amputation, cells speed up their cell cycle and the growth fraction increases, within a high-proliferation zone that initially extends 800 \u03bcm anterior to the amputation plane (green background). The density of neural stem cells along the spinal cord stays constant and spinal cord outgrowth is achieved by an increase in the total number of neural stem cells. Acceleration of the cell cycle in the high-proliferation zone is the major driver of this increase in cell numbers. Dividing cells might push cells posteriorly. The more posterior a cell is the more cells anterior to that cell divide and push the cell making it move faster: While an anterior clone (striped) hardly moves, clones in the center of the high proliferation zone (black) move faster. Clones that start at the amputation plane (dotted) stay at the tip of the regenerating spinal cord and move fastest.\n\nA notable finding of this study is that the increase in cell numbers during regeneration is tightly regulated so that the regenerating spinal cord extends while maintaining constant cell density and proper tube-like structure. This tube-like structure made up almost entirely of neural stem cells might be essential to act as a scaffold for rebuilding the spinal cord tissue architecture. Previously, we showed that the activation of PCP signaling within the source zone instructs cells to divide along the growing axis of the spinal cord and is key for effective spinal cord regeneration. This work highlights the importance of orderly and directed expansion of the neural stem cell pool for efficient spinal cord regeneration.\n\nTogether, our findings provide a quantitative mechanistic understanding of the cellular mechanisms that drive complete spinal cord regeneration in axolotls. By performing a quantitative modeling approach combined with quantitative experimental data, we found that axolotl spinal cord outgrowth is driven by the acceleration of the cell cycle in a pool of SOX2+ neural stem cells restricted in space and time. Whether this peculiar spatiotemporal proliferative pattern is unique to the axolotl and how this correlates with injury-induced signals remain to be elucidated.\n\n## Materials and methods\n\n### Axolotls\n\nAxolotls, Ambystoma mexicanum, from 2\u20133 cm in length snout-to-tail were used for experiments. Axolotls were kept in tap water in individual cups and fed daily with Artemia. Before any manipulation or imaging, axolotls were anaesthetized in 0.01% benzocaine. The axolotl animal work was performed under permission granted in animal license number DD24-9168.11-1/2012\u201313 conferred by the Animal Welfare Commission of the State of Saxony, Germany (Landesdirektion Sachsen).\n\n### Measurement of spinal cord outgrowth\n\nImages of regenerating tails were acquired on an Olympus SZX16 stereomicroscope using the Cell^F software by Olympus. Spinal cord outgrowth was measured from bright field images in Fiji (RRID:SCR_002285). First, the amputation plane which is clearly visible in the myotome was marked with a line. Then, the length between the intersection of the amputation plane with the spinal cord and the spinal cord tip was measured with Fiji's line tool.\n\n### Cell count data\n\nThe cell count data of SOX2+ and SOX2+/PCNA+ cells per cross section and mitotic cells in 50 \u00b5m sections were taken from Rodrigo Albors et al. (2015).\n\n### Analysis of SOX2+ cell count data\n\nTo test whether the SOX2+ cells per cross section showed a spatial pattern along the AP axis or not, we used three different methods (Figure 2B,B\u2019, Figure 2\u2014figure supplement 1). First, it was tested if the cell count data linearly depends on spatial position along the AP axis using Bayesian inference (see \u2018Constant density\u2019\u00a0in Rost et al., 2016a). The slope was always smaller than 0.13 cells/mm and only significantly different from 0 (p<0.05) for 4 of the 15 replicates. Second, a model of two spatially homogeneous zones was fitted to the data using Bayesian inference (see \u2018Constant density\u2019\u00a0in\u00a0Rost et al., 2016a). Here, only 4 of the 15 replicates showed a significant difference in density between the two zones (p<0.05). These first two methods indicated that, for an average animal, there is no significant change of the number of SOX2+ cells per cross section along the AP axis. Third, the data was collapsed ignoring the spatial position, and the resulting cell count histogram was tested for being a normal distribution using the SciPy function scipy.stats.normaltest (D'Agostino, 1971; D\u2019Agostino and Pearson, 1973). Only for one of the replicates the null hypothesis could be rejected (p<0.05), hence the\u00a0SOX2+ cell density in an average animal was considered spatially homogeneous with Gaussian noise in this study.\n\nFor each replicate the mean number of SOX2+ cells per cross section averaged over all measurements along the AP axis was calculated. To access whether there was a significant change in this mean number, the replicates were grouped according to their time post amputation. A one-way ANOVA-test showed no significant differences among the groups (p=0.08, see \u2018Constant density\u2019\u00a0in\u00a0Rost et al., 2016a).\n\n### Analysis of proliferation count data\n\nThe counts of SOX2+ cells, SOX2+/PCNA+ cells and mitotic cells were analyzed by fitting a mathematical model of two adjacent spatial proliferation zones to the data of each time point (Figure 2D,D\u2019, Figure 2\u2014figure supplement 3).\n\nThe model that predicts the number of SOX2+/PCNA+ cells per cross section and the number of mitotic cells in three-dimensional (3D) 50 \u00b5m sections based on the growth fraction and mitotic index was defined as follows: If the number of SOX2+ cells for a specific cross section along the AP axis, NS, had been measured, it was used for this section. If the data for the specific section was missing, NS was computed by assuming that there is a constant expected number of SOX2+ cells per cross section and that the deviations from the expected value follow a normal distribution. The mean and standard deviation of this normal distribution were estimated by the sample mean and standard deviation of the sample of the measured numbers of SOX2+ cells per cross section for each replicate. The number of SOX2+cells\u00a0in a cross section is independent from other cross sections. The state \u2018Proliferative\u2019, i.e. SOX2+/PCNA+, is independently assigned to each SOX2+ cell with probability pp or \u2018Quiescent\u2019 with probability 1 \u2013 pp (Figure 2E). Hence, for a given number of SOX2+ cells in a cross section, NS, the number of SOX2+/PCNA+ cells per cross section, NP, follows a binomial distribution with Ns experiments and success probability pp. Consequently, the expected growth fraction equals pp. As the number of mitotic cells, NM, in 3D 50 \u00b5m sections was measured previously, we estimated the number of SOX2+/PCNA+ cells also in a 3D 50 \u00b5m section, $N_{PS}=50\u00a0\\mum/l_{cell}\u00a0\u22c5N_{P}$, where $l_{cell}=13.2\\pm0.1\u00a0\\mum$ is the mean AP length of SOX2+ cells (Rodrigo Albors et al., 2015). Assuming that the cell cycle position and hence the cell cycle phase of each cell is independent of all other cells, the state \u2018Proliferative, mitotic\u2019 is independently assigned to each SOX2+/PCNA+ cell with probability pm or \u2018Proliferative, non-mitotic\u2019 with probability 1 \u2013 pm. Hence, the number of mitotic cells per section, NM, follows a binomial distribution with NPS experiments and success probability pm. Consequently, the expected mitotic index equals pm. For given values of pp and pm the model gives a likelihood for the observed number of SOX2+/PCNA+ cells per cross section and mitotic cells per 3D section that can be used to fit the model parameters. To reflect the assumption of two spatial proliferation zones, pp and pm have spatial dependencies in the form of step functions (Figure 2E\u2019). Hence, there can be different growth fractions and mitotic indices for the anterior and the posterior zone, respectively. The spatial position of the border between the zones is another model parameter termed switchpoint. Furthermore, variability between replicates in the switchpoint is modeled as a normal distribution with standard deviation $\\sigma_{switch}$. Likewise, variability in growth fraction and mitotic index between replicates is modeled with a normal distribution with spatially homogeneous standard deviations $\\sigma_{GF}$ and $\\sigma_{mi}$, respectively. Hence, the resulting model to describe the cell count data of all replicates at a given time point has eight parameters: the switchpoint, growth fraction and mitotic index in the anterior zone and in the posterior zone, respectively, and the inter-replicate variabilities $\\sigma_{switch}$, $\\sigma_{GF}$ and $\\sigma_{mi}$. Those parameters were estimated with Bayesian inference using uniform priors for uninjured animals and at 3, 4, 6 and 8 days. Fitting was performed using a Markov chain Monte Carlo algorithm implemented in pymc (Figure 2F\u2013F\u2019\u2019, Figure 2\u2014figure supplement 4, see also \u2018step_model_fixed_density_fit_per_timepoint\u2019\u00a0in\u00a0Rost et al., 2016a). To verify the fitting procedure, test data were created by simulating our model with picked parameter values. These 'true' parameter values were then found to be included in the 95% credibility intervals of the parameter values inferred from the test data with our fitting procedure.\n\n### Proliferation rate time-course\n\nThe cell cycle length at day six was estimated previously using a cumulative 5-bromo-2'-deoxyuridine (BrdU) labelling approach (Rodrigo Albors et al., 2015). For the sake of consistent methodology within the present study, the data were reanalyzed with bootstrapping using case resampling (see \u2018brdu_bootstrapping_day6\u2019\u00a0in\u00a0Rost et al., 2016a). In agreement with the previous analysis the cell cycle length was estimated as 117\u00a0\u00b1\u00a012 hours corresponding to a proliferation rate of 0.21\u00a0\u00b1\u00a00.02 per day at six days after amputation.\n\nAs the mitotic index is proportional to the proliferation rate (Smith and Dendy, 1962), the mitotic index time-course in the high-proliferation zone was rescaled with the proliferation rate at day six to obtain the proliferation rate time-course:\n\n$$\nr(t)=\\frac{mi(t)}{mi(day\u00a06)}r(day\u00a06),\n$$\n\nwhere r(t) is the proliferation rate at time t, and mi is the mitotic index. The mitotic index in the high-proliferation zone was estimated as described in (Rodrigo Albors et al., 2015).\n\n### Axolotl spinal cord electroporation\n\nAxolotl larvae (2 cm snout-to-tail) were electroporated with a dual fluorescent reporter plasmid (cytoplasmic eGFP and nuclear Cherry). Cells were electroporated by cutting the tail of 2 cm-long larval axolotls and inserting a DNA-filled electrode into the spinal cord (Echeverri and Tanaka, 2003). To transfect DNA into only a few cells, optimum electroporation conditions were three pulses of 50 V, 200 Hz and a length of 100 ms, applied using an SD9 Stimulator (Grass Telefactor, West Warwick, RI).\n\n### In vivo imaging of labeled cells in the spinal cord\n\nAxolotls with sparsely labelled cells in the spinal cord were amputated, leaving cells at different distances from the amputation plane. Regenerating axolotls were anaesthetized and imaged every 1\u20132 days by placing them on a cover slip. Labelled cells were imaged using a Zeiss Apotome A1 microscope.\n\n### Clone tracking\n\nThe distance between the amputation plane and the anterior border of a clone was measured manually in each image using AxioVision microscopy software (RRID:SCR_002677). Representative images of one axolotl showing a clone at different distances from the amputation plane during regeneration time are shown in Figure 2I. All the individual images are in\u00a0Rost et al., 2016c.\n\n### Clone velocity\n\nTo estimate the mean velocity of clones at different spatial positions, the space along the AP axis was subdivided into 800 \u03bcm bins. For each clone trajectory, the position measurements were grouped according to these bins. Groups containing less than two measurements were excluded. The average clone velocity for each group was estimated with linear regression. Then, the mean and standard deviation of the velocity of all the clones in a bin was calculated (see \u2018clone_velocities\u2019\u00a0in\u00a0Rost et al., 2016a).\n\n### Estimation of the total number of quiescent cells in the high-proliferation zone\n\nThe total number of quiescent cells in the high-proliferation zone, $N_{q}(t)$, was estimated by $N_{q}(t)=N_{q}^{s}\u22c5L(t)/l_{cell}$ where $N_{q}^{s}$ is the mean number of SOX2+/PCNA- cells per cross section, $l_{cell}$ is the mean AP cell length, and $L(t)$ is the outgrowth time-course.\n\n### Mechanistic model of spinal cord outgrowth\n\nTo simultaneously evaluate the importance of cell proliferation, cell influx and activation of quiescent cells in the outgrowth of the spinal cord we performed a data-driven modeling approach (Greulich and Simons, 2016; Ru\u00e9 and Martinez Arias, 2015; Oates et al., 2009). This approach allows to establish causal relationship between the individually quantified cellular processes and it has been previously employed to unravel the stem cell dynamics during spinal cord development in chick and mouse (Kicheva et al., 2014). Although less frequent so far, modeling is more and more being used in the regeneration arena (Durant et al., 2016; for an overview see Chara et al., 2014). In this study, we model the number of proliferative,\u00a0$N_{p}(t)$, and quiescent cells,\u00a0$N_{q}(t)$, in the high-proliferation zone at time t\u00a0by the following ordinary differential equations (Figure 3A):\n\n$$\n(3)\\frac{dN_{p}(t)}{dt}=\\frac{N_{q}}{N_{p}(t)}r(t)N_{p}(t)\u23decell\u00a0divisions\u00a0\u00a0+\u00a0\u00a0\\frac{N_{p}(t)}{N_{p}(t)}kN_{q}(t)((t))\u23deactivation\u00a0+\u00a0\u00a0\\frac{N_{p}(t)}{N_{p}(t)+N_{q}(t)}v\u03c1\u23deinflux,N_{p}(t=0)=N_{p}^{0},(4)\\frac{dN_{q}(t)}{dt}=\\frac{N_{q}}{N_{p}(t)}r(t)N_{p}(t)\u23decell\u00a0divisions\u00a0\u00a0\u2212kN_{q}(t)\u00a0\u00a0\u00a0+\u00a0\u00a0\\frac{N_{q}(t)}{N_{p}(t)+N_{q}(t)}v\u03c1,N_{q}(t=0)=N_{q}^{0}.\n$$\n\nwhere $N_{p}^{0}$ and $N_{q}^{0}$ are the initial cell numbers in this zone, r(t) is the proliferation rate at time t, v is the velocity of cells 800 \u03bcm anterior to the amputation plane, \u03c1 is the density of neural stem cells along the AP axis and k is the quiescent cell activation rate. The factors Np/q(t)/ (Np(t)+ Nq(t)) ensure that the influx of cells into the high-proliferation zone does not alter the growth fraction. As the density is constant one can write\n\n$$\n\u03c1\u22c5(L(t)+L_{0})=N_{p}(t)+N_{q}(t),\n$$\n\nwhere L(t) is the outgrowth posterior to the amputation plane and L0\u00a0=\u00a0800 \u00b5m is the high-proliferation zone length at t\u00a0=\u00a00. Using this relation and the definition of the growth fraction GF(t),\n\n$$\nGF(t)=\\frac{N_{p}(t)}{N_{p}(t)+N_{q}(t)},\n$$\n\nthe cell number model was reformulated as a model for outgrowth and growth fraction (see Results, Equations 1 and 2).\n\nThe assumption that the population mean model parameters can be used to estimate the population mean outgrowth time-course was used when simulating the model and interpreting results. The confidence intervals of the model prediction were estimated with a Monte Carlo approach using bootstrapping with a case resampling scheme (100,000 iterations). In each iteration, we case-resampled the cell count data, the BrdU incorporation data and the clone trajectory data, and calculated the proliferation rate time-course, clone velocity at \u2212800 \u00b5m and initial growth fraction from this resampled data as described above. Then, in each iteration, these bootstrapped parameter values were used to estimate the activation rate k by fitting the model prediction of the growth fraction to the data (Figure 3B). The growth fraction measurement of day 8 was excluded from the fit because its precise value would only affect the model prediction after this day. Now, as all parameters were estimated, an outgrowth trajectory was calculated for each iteration. This ensemble of trajectories was used to calculate the confidence intervals of the model prediction (Figure 3C). The same approach was used for the model scenarios with individual cellular mechanisms turned off (Figure 3D\u2013G). The source code is available in the \u2018lg_model\u2019\u00a0in\u00a0Rost et al., 2016a.\n\n### Validation of a model prediction against an experimental dataset\n\nControl animals by Fei et al. (2014) showed less regenerative outgrowth than our \u2018normally\u2019 regenerating animals. This could be either due to their control CRISPR treatment or due to their reduced feeding. To account for the reduced growth, we assumed that all cellular mechanisms maintain the same relative contribution in Fei and colleagues\u2019 control as they have in normal regeneration. This assumption allowed linear rescaling of the outgrowth dataset from Fei and colleagues to match our \u2018normal\u2019 outgrowth dataset (Figure 3\u2014figure supplement 2A, \u2018lg_model\u2019\u00a0in\u00a0Rost et al., 2016a). We also assumed that Sox2-knockout only affects the acceleration of the cell cycle but that all other cellular mechanisms remain unaffected (i.e. compensatory mechanisms are not considered). Fewer neural stem cells make up the circumference of Sox2-knockout spinal cords (Fei et al., 2014). Assuming that the\u00a0AP cell length is unchanged this means that cell density is decreased in this condition. Therefore, we corrected the outgrowth for the Sox2-knockout dataset to a density corrected outgrowth by $L_{corr}=N_{S}^{Sox2^{ko}}/N_{S}^{control}\u2219L$, where $L_{corr}$ is the density corrected outgrowth, $L$ is the measured outgrowth in the Sox2-knockout dataset and $N_{S}^{Sox2^{ko}}$ and $N_{S}^{control}$ are the mean number of neural stem cells per cross section in the Sox2-knockout and control condition, respectively (Figure 3\u2014figure supplement 2B, \u2018lg_model\u2019\u00a0in\u00a0Rost et al., 2016a).\n\n### Coordinate system\n\nTime starts with the event of amputation. For spatial positions along the AP axis of the spinal cord, the amputation plane defines 0; positive values refer to positions posterior to the amputation plane, in regenerated tissue; negative values refer to positions anterior to the amputation plane. In all images, anterior is to the left.\n\n### Statistics and computational tools\n\nIf not stated otherwise, measurements are reported as mean \u00b1 standard error of the mean. In the figures * denotes p<0.05 and ** denotes p<0.01 for the respective test as indicated in the figure caption.\n\nImage analysis was performed with Fiji (Schindelin et al., 2012) and AxioVision Microscopy software (Zeiss). Data analysis was performed using the python modules bokeh (http://bokeh.pydata.org), iminuit (http://github.com/iminuit/iminuit), ipycache (http://github.com/rossant/ipycache), Jupyter Notebook (http://jupyter.org/), matplotlib (Hunter, 2007), numba (http://numba.pydata.org/), pandas (McKinney, 2010), probfit (http://github.com/iminuit/probfit), pymc (Patil et al., 2010), SciPy (Jones et al., 2001) and uncertainties (http://pythonhosted.org/uncertainties/).\n\n### Supplementary notebooks\n\nJupyter Notebooks containing the source code for all computations performed together with the data and referred to as Rost et al., 2016a in this work can be found at https://doi.org/10.5281/zenodo.160333.\n",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "567e222f-55ee-4507-8c77-c1fd107c0c4f",
+      "submission_id": "022a7142-ee7f-40d5-b081-ed19d2e03173",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20357.021](https://doi.org/10.7554/eLife.20357.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your Research Advance article \"Accelerated cell divisions drive the outgrowth of the regenerating spinal cord in axolotls\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Marianne Bronner as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis Research Advance paper is a follow up of a previous paper from the same group in which they demonstrated that neural stem cells in the axolotl spinal cord re-establish a planar cell polarity signaling during spinal cord regeneration. In this paper, they describe in more detail the cell proliferative response during regeneration and identify a dynamic high-proliferation zone in the regenerating spinal cord. The authors reasoned that this increased proliferation could be due to 1) changes in the cell proliferation rate, 2) activation of quiescent cells, and 3) cell influx into the regenerating spinal cord.\n\nEssential revisions:\n\nThe authors should soften their statement about acceleration of cell cycle as being \"necessary and sufficient\" to drive regeneration since these are predictions based on mathematical modeling. The major concern about this paper is the lack of validation of the model predictions, especially since the authors use the model to predict the data from which the model was derived. The predictive value of the model would have been strengthened by applying it to an independent dataset. Any one of the following experiments should be included to strengthen the paper:\n\n1) Reduce cell cycle in proliferating stem cells and demonstrate that regeneration is delayed to a similar extent as predicted by the model. The authors cite previous Sox2 KO study in support of their findings, but perhaps they can use that dataset to test the robustness of their model.\n\n2) Prevent the influx of cells into the regenerating spinal cord and demonstrate that it has negligible effects on regeneration.\n\n3) Prevent the activation of quiescent stem cells and demonstrate that it has negligible effects on regeneration. It is possible that one of the three mechanisms may compensate for the loss of the other. How does the model take this into account? This would be nice to include in the Discussion.\n",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75c7f4e0-35ee-447f-a7b6-bf1d0a00ad7a",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C1",
+      "claim": "Axolotls are unique in their ability to regenerate the spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Axolotls are unique in their ability to regenerate the spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement presented in the abstract without specific experimental data in this manuscript, drawing on established knowledge about axolotl regenerative capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "7e9b5e2f-34cc-4fae-a316-9b3cdd6d5bc0",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C2",
+      "claim": "Regenerating stem cells in the axolotl spinal cord revert to a molecular state resembling embryonic neuroepithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that regenerating stem cells in the axolotl spinal cord revert to a molecular state resembling embryonic neuroepithelial cells and functionally acquire rapid proliferative divisions (Rodrigo Albors et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "97a098ba-4eaa-4323-8cd6-3686fd3135da",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C3",
+      "claim": "Regenerating stem cells in the axolotl spinal cord functionally acquire rapid proliferative divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that regenerating stem cells in the axolotl spinal cord revert to a molecular state resembling embryonic neuroepithelial cells and functionally acquire rapid proliferative divisions (Rodrigo Albors et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f2d62825-5a92-48c5-9e72-645cea1e8a47",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C4",
+      "claim": "A high-proliferation zone exists in the regenerating spinal cord that shifts posteriorly over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we refine the analysis of cell proliferation in space and time and identify a high-proliferation zone in the regenerating spinal cord that shifts posteriorly over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial analysis of proliferation markers presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "c7eb61e4-ccc0-4c42-997f-fcd9dad939d3",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C5",
+      "claim": "The acceleration of the cell cycle is the major driver of regenerative spinal cord outgrowth in axolotls.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that while cell influx and neural stem cell activation play a minor role, the acceleration of the cell cycle is the major driver of regenerative spinal cord outgrowth in axolotls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling that integrates multiple quantitative datasets and tests different scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f7061141-9f47-4d02-877c-cb909e46c47e",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C6",
+      "claim": "Cell influx plays a minor role in regenerative spinal cord outgrowth in axolotls.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that while cell influx and neural stem cell activation play a minor role, the acceleration of the cell cycle is the major driver of regenerative spinal cord outgrowth in axolotls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling comparing different cellular mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "d09852cd-537e-4780-8568-8997a087412c",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C7",
+      "claim": "Neural stem cell activation plays a minor role in regenerative spinal cord outgrowth in axolotls.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that while cell influx and neural stem cell activation play a minor role, the acceleration of the cell cycle is the major driver of regenerative spinal cord outgrowth in axolotls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by mathematical modeling comparing different cellular mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "3223b55c-699a-41c5-88f5-1f540e961cdf",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C8",
+      "claim": "Only in salamanders are neural stem cells mobilized efficiently to resolve spinal cord injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural stem cells exist in the spinal cord of all vertebrates, but only in salamanders these cells are mobilized efficiently to resolve spinal cord injuries (Becker and Becker, 2015; Tanaka and Ferretti, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "0985ef54-109d-4000-94cf-ed34ae1d49f3",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C9",
+      "claim": "Neural stem cells exist in the spinal cord of all vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural stem cells exist in the spinal cord of all vertebrates, but only in salamanders these cells are mobilized efficiently to resolve spinal cord injuries (Becker and Becker, 2015; Tanaka and Ferretti, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "7aa171b0-127f-45fc-af61-1b2fa3f52690",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C10",
+      "claim": "Cells adjacent to the cut end regrow a fully functional spinal cord following tail amputation in axolotls.",
+      "claim_type": "EXPLICIT",
+      "source": "In axolotls, this is best exemplified following tail amputation, when cells adjacent to the cut end regrow a fully functional spinal cord (Holtzer, 1956; Mchedlishvili et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "9039ffc5-e4cc-462d-baa7-265056cae909",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C11",
+      "claim": "Resident SOX2+ neural stem cells re-activate an embryonic-like gene expression program following tail amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "There, we found that resident SOX2+ neural stem cells re-activate an embryonic-like gene expression program following tail amputation (Rodrigo Albors et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "8e1e306f-3afe-46d4-80aa-61666c17e73d",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C12",
+      "claim": "The embryonic-like gene expression program involves the re-establishment of planar cell polarity (PCP) signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of this program involves the re-establishment of planar cell polarity (PCP) signaling, the downregulation of pro-neural genes, and upregulation of proliferation-promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "7ecd6550-c4fa-4d69-9187-3f92ad975fe5",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C13",
+      "claim": "The embryonic-like gene expression program involves the downregulation of pro-neural genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of this program involves the re-establishment of planar cell polarity (PCP) signaling, the downregulation of pro-neural genes, and upregulation of proliferation-promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "6559e494-4f78-47cb-b15b-95957e523a90",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C14",
+      "claim": "The embryonic-like gene expression program involves upregulation of proliferation-promoting genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Part of this program involves the re-establishment of planar cell polarity (PCP) signaling, the downregulation of pro-neural genes, and upregulation of proliferation-promoting genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "ae3923a2-033e-4c36-a4b0-d9c9f3b087b6",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C15",
+      "claim": "Regenerating neural stem cells speed up their cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these gene expression changes, we also found that regenerating neural stem cells speed up their cell cycle, and switch from neuron-generating to proliferative cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "a7e04ef5-caf8-44cf-b723-587d3a507050",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C16",
+      "claim": "Regenerating neural stem cells switch from neuron-generating to proliferative cell divisions.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with these gene expression changes, we also found that regenerating neural stem cells speed up their cell cycle, and switch from neuron-generating to proliferative cell divisions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "49c53f58-ecfc-440d-b0d4-6546d80bbab7",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C17",
+      "claim": "PCP is key for the efficient and orderly expansion of the regenerating spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "PCP turned out to be key for the efficient and orderly expansion of the regenerating spinal cord, at least in part by instructing cells to divide along the growing axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f1a9d976-6033-44cb-8e11-fd050156d6a2",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C18",
+      "claim": "PCP instructs cells to divide along the growing axis.",
+      "claim_type": "EXPLICIT",
+      "source": "PCP turned out to be key for the efficient and orderly expansion of the regenerating spinal cord, at least in part by instructing cells to divide along the growing axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors in the preceding context.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "28f7b0df-50bc-4490-b06b-21cc7142bd42",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C19",
+      "claim": "The regenerating spinal cord initially extended slowly to a mean outgrowth of 0.45 \u00b1 0.04 mm at day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the regenerating spinal cord extended slowly to a mean outgrowth of 0.45 \u00b1 0.04 mm at day 4 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "2f30b574-524d-42e9-96c0-aa969efc3991",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C20",
+      "claim": "The spinal cord reached an outgrowth of 2.26 \u00b1 0.07 mm by day 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Thereafter, the spinal cord grew faster, reaching an outgrowth of 2.26 \u00b1 0.07 mm by day 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental measurements referenced in the text and shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "eb2bc244-d9c7-449a-821d-a1312fa213cb",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C21",
+      "claim": "The number of SOX2+ cells per spinal cord cross section is constant along the AP axis in both uninjured and regenerating samples at any time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the number of SOX2+ cells per spinal cord cross section is constant along the AP axis in both uninjured and regenerating samples at any time (Figure 2B,B' and Figure 2\u2014figure supplement 1 and see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of cell counts shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "d6663843-d52d-49d2-97cf-0a3935e60759",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C22",
+      "claim": "The number of SOX2+ cells per cross section spatially averaged along the AP axis is constant during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the number of SOX2+ cells per cross section spatially averaged along the AP axis is constant during regeneration (Figure 2C and see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "5ec4126f-5b9d-4fd0-bf3f-a65e475c1e49",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C23",
+      "claim": "On average, 30.4 \u00b1 0.6 SOX2+ cells make up the circumference of the axolotl spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, 30.4 \u00b1 0.6 SOX2+ cells make up the circumference of the axolotl spinal cord.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative measurements from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "4a010cc6-e7e9-4245-bd99-2bfae46914e6",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C24",
+      "claim": "The length of SOX2+ cells along the AP axis does not change during regeneration (lc = 13.2 \u00b1 0.1 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the length of SOX2+ cells along the AP axis does not change during regeneration (lc = 13.2 \u00b1 0.1 \u03bcm) (Rodrigo Albors et al., 2015), the density of cells along the AP axis is spatially homogeneous and equal to 2.3 \u00b1 0.6 cells/\u03bcm (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "b926ad2c-c08f-4b87-a710-c95e860cd5e4",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C25",
+      "claim": "The density of cells along the AP axis is spatially homogeneous and equal to 2.3 \u00b1 0.6 cells/\u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the length of SOX2+ cells along the AP axis does not change during regeneration (lc = 13.2 \u00b1 0.1 \u03bcm) (Rodrigo Albors et al., 2015), the density of cells along the AP axis is spatially homogeneous and equal to 2.3 \u00b1 0.6 cells/\u03bcm (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from measurements of cell number and cell length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f4e45645-d7f0-4172-af8b-4c22bd1eb68f",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C26",
+      "claim": "Convergence and extension are not driving forces of regenerative spinal cord outgrowth in the axolotl.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings allow us to exclude mechanisms such as cell shape changes and convergence and extension as driving forces of regenerative spinal cord outgrowth in the axolotl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the finding that cell density remains constant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "95817a68-6c65-49de-8094-86822554dcd7",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C27",
+      "claim": "Cell shape changes are not driving forces of regenerative spinal cord outgrowth in the axolotl.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings allow us to exclude mechanisms such as cell shape changes and convergence and extension as driving forces of regenerative spinal cord outgrowth in the axolotl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the finding that cell density remains constant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "727dcf8f-3628-4e0c-bed3-d8850811c18a",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C28",
+      "claim": "Constant neural stem cell density implies an increasing neural stem cell number during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, constant neural stem cell density implies an increasing neural stem cell number during regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from constant density and increasing tissue length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "9eeee651-4d47-456c-a204-471863869219",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C29",
+      "claim": "The expansion of the regenerating neural stem cell pool mostly relies on proliferation-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the expansion of the regenerating neural stem cell pool mostly relies on proliferation-based mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the exclusion of other mechanisms and the observation of increasing cell numbers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "76dfbc5a-aabc-4544-abd6-3eb4425fa998",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C30",
+      "claim": "A high-proliferation zone emerges in the regenerating spinal cord at day 4.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings reveal that a high-proliferation zone emerges in the regenerating spinal cord at day 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the spatial analysis of proliferation markers showing significant differences between zones from day 4 onward.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "4d19f360-2df7-44a6-b546-ca08bc6227d9",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C31",
+      "claim": "At day 4, the switchpoint between the two zones is located 800 \u00b1 100 \u03bcm anterior to the amputation plane.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, the switchpoint between the two zones is located 800 \u00b1 100 \u03bcm anterior to the amputation plane, but shows the tendency to shift posteriorly as the regenerating spinal cord grows (Figure 2F'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data shown in Figure 2F''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "5b0252de-e06e-498a-81d9-c013fa65e0ba",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C32",
+      "claim": "The switchpoint shows the tendency to shift posteriorly as the regenerating spinal cord grows.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, the switchpoint between the two zones is located 800 \u00b1 100 \u03bcm anterior to the amputation plane, but shows the tendency to shift posteriorly as the regenerating spinal cord grows (Figure 2F'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data shown in Figure 2F''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "ee76c217-701b-4bc1-8330-6d7179fc6f6b",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C33",
+      "claim": "The proliferation rate is 0.06 \u00b1 0.02 per day in the uninjured spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the proliferation rate is 0.06 \u00b1 0.02 per day in the uninjured spinal cord which corresponds to a cell cycle length of 10 \u00b1 4 days (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by calculations from mitotic index and cell cycle length measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "3a7f34f9-381c-44eb-a41b-a3d6efcdb4b0",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C34",
+      "claim": "The proliferation rate in the uninjured spinal cord corresponds to a cell cycle length of 10 \u00b1 4 days.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the proliferation rate is 0.06 \u00b1 0.02 per day in the uninjured spinal cord which corresponds to a cell cycle length of 10 \u00b1 4 days (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is derived from proliferation rate measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "888d4754-0f21-46de-aad9-2da404b14958",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C35",
+      "claim": "At day 4 the proliferation rate increases to about 0.15 per day corresponding to a cell cycle length of about five days.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at day 4 the proliferation rate increases to about 0.15 per day corresponding to a cell cycle length of about five days and the proliferation rate remains that high until day 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calculations from mitotic index and cell cycle length measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "dcb1103b-730b-4bed-9b43-ebc0240f25df",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C36",
+      "claim": "The proliferation rate remains high until day 8.",
+      "claim_type": "EXPLICIT",
+      "source": "However, at day 4 the proliferation rate increases to about 0.15 per day corresponding to a cell cycle length of about five days and the proliferation rate remains that high until day 8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by calculations from mitotic index and cell cycle length measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "157f6680-48b4-45cd-bedd-580bf504d4c8",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C37",
+      "claim": "The number of SOX2+/PCNA- cells drops from 180 \u00b1 30 at day 0 to 23 \u00b1 13 at day 6.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SOX2+/PCNA- cells drops from 180 \u00b1 30 at day 0 to 23 \u00b1 13 at day 6 (Figure 2H) which suggests that quiescent SOX2+ cells get activated and re-enter the cell cycle upon injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative measurements shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f8a8593a-fe17-455d-acff-51d942c0b4d0",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C38",
+      "claim": "Quiescent SOX2+ cells get activated and re-enter the cell cycle upon injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of SOX2+/PCNA- cells drops from 180 \u00b1 30 at day 0 to 23 \u00b1 13 at day 6 (Figure 2H) which suggests that quiescent SOX2+ cells get activated and re-enter the cell cycle upon injury.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the decrease in quiescent cell numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "a29a22ab-7cca-47c3-a399-36d9cd4996a1",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C39",
+      "claim": "The number of quiescent SOX2+ cells appears to increase again at day 8, when cells resume neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of quiescent SOX2+ cells appears to increase again at day 8, when cells resume neurogenesis (Rodrigo Albors et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "3d0eb810-549f-4337-bb0d-ee947c2e8752",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C40",
+      "claim": "Labelled cells preserve their original spatial order during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that labelled cells preserve their original spatial order: cells located close to the amputation plane end up at the posterior end of the regenerated spinal cord (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clone tracking experiments shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "5e309485-e943-4043-adc0-821829fbb960",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C41",
+      "claim": "Cells located close to the amputation plane end up at the posterior end of the regenerated spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that labelled cells preserve their original spatial order: cells located close to the amputation plane end up at the posterior end of the regenerated spinal cord (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clone tracking experiments shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "2f30ed75-035d-4251-8cfd-ace7bc4f7918",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C42",
+      "claim": "Most-anterior cells almost do not change their position during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Most-anterior cells, however, almost do not change their position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clone tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "37ccff87-1d5f-436b-8101-b8146cf054a1",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C43",
+      "claim": "Clones initially located 800 \u03bcm anterior to the amputation plane translocate slowly, with a velocity of 20 \u00b1 9 \u03bcm/day.",
+      "claim_type": "EXPLICIT",
+      "source": "Clones initially located 800 \u03bcm anterior to the amputation plane translocate slowly, with a velocity of 20 \u00b1 9 \u03bcm/day.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of clone trajectories shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "c213686a-424e-46cf-89ee-94c6690966ad",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C44",
+      "claim": "The more posterior a clone is, the faster it translocates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the more posterior a clone is, the faster it translocates (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative analysis of clone velocities shown in Figure 2K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "50c1192f-0509-4145-ae79-e651cd88483a",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C45",
+      "claim": "The spinal cord must grow as a result of increasing cell numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that cell density along the AP axis is constant in space and time (Figure 2B\u2013C) made us reason that the spinal cord must grow as a result of increasing cell numbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from constant cell density and increasing tissue length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "1b592270-1829-49af-bee2-37e7e3109993",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C46",
+      "claim": "The increase in cell proliferation is due to both the acceleration of the cell cycle and the activation of quiescent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we found a high-proliferation zone, first spanning from 800 \u03bcm anterior to the amputation plane, and showed that the increase in cell proliferation is due to both (i) the acceleration of the cell cycle and (ii) the activation of quiescent stem cells (Figure 2D\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by multiple experimental measurements and analyses shown in Figure 2D-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "0d074402-0868-4177-b2a3-f870f61fb1f2",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C47",
+      "claim": "The model prediction of spinal cord outgrowth is in agreement with experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the model predicts a spinal cord outgrowth time-course that recapitulates the observed experimental data (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of model predictions with experimental measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "ad485a0b-2af3-4ff1-a0cc-f30087200585",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C48",
+      "claim": "The acceleration of the cell cycle, the activation of quiescent neural stem cells, and an influx of cells into the regenerate quantitatively explain the observed spinal cord outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "This fit-free agreement shows that the acceleration of the cell cycle, the activation of quiescent neural stem cells, and an influx of cells into the regenerate quantitatively explain the observed spinal cord outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the agreement between model predictions and experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "e136eacf-a265-4186-9545-72c698bcdffe",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C49",
+      "claim": "Switching off the acceleration of the cell cycle predicted a maximum outgrowth of 1.7 mm (p=0.003) which is 0.6 mm shorter than the observed outgrowth at day 8.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we switched off the acceleration of the cell cycle, modeling growth only with basal cell proliferation, the influx of cells, and the activation of quiescent neural stem cells (Figure 3D). This predicted a maximum outgrowth of 1.7 mm (p=0.003) which is 0.6 mm shorter than the observed outgrowth at day 8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in silico modeling experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "383f0410-e430-4722-b1c4-ffd6479bf0ef",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C50",
+      "claim": "The acceleration of the cell cycle is a key driver of regenerative spinal cord outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that the acceleration of the cell cycle is a key driver of regenerative spinal cord outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the modeling results showing significant reduction in outgrowth when cell cycle acceleration is removed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "64926976-e323-4ce7-996a-ea4a22dc6a24",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C51",
+      "claim": "Switching off cell influx has almost no effect on the predicted outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, switching off cell influx (Figure 3E) or the activation of quiescent neural stem cells (Figure 3F) has almost no effect on the predicted outgrowth, which suggests that these cellular mechanisms are not major drivers of regenerative spinal cord outgrowth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in silico modeling experiments shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "3e4f7db0-1f65-443d-82d4-2c7caf74fc0d",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C52",
+      "claim": "Switching off the activation of quiescent neural stem cells has almost no effect on the predicted outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, switching off cell influx (Figure 3E) or the activation of quiescent neural stem cells (Figure 3F) has almost no effect on the predicted outgrowth, which suggests that these cellular mechanisms are not major drivers of regenerative spinal cord outgrowth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in silico modeling experiments shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "7750640a-eaac-4023-8325-af8663115e04",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C53",
+      "claim": "Cell influx and activation of quiescent neural stem cells are not major drivers of regenerative spinal cord outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, switching off cell influx (Figure 3E) or the activation of quiescent neural stem cells (Figure 3F) has almost no effect on the predicted outgrowth, which suggests that these cellular mechanisms are not major drivers of regenerative spinal cord outgrowth.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from modeling results showing minimal effect when these mechanisms are removed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "afdac310-766e-4ae0-86c5-39af15efb7f7",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C54",
+      "claim": "The acceleration of the cell cycle in cells that were already proliferating in the uninjured spinal cord can explain the observed spinal cord outgrowth during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that the acceleration of the cell cycle in cells that were already proliferating in the uninjured spinal cord can explain the observed spinal cord outgrowth during regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by modeling results showing that cell cycle acceleration alone is sufficient to explain outgrowth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "20e94314-b3e4-441f-9fc0-f425a9755934",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C55",
+      "claim": "Sox2-knockout prevented the acceleration of the cell cycle during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Fei and colleagues found evidences that Sox2-knockout prevented the acceleration of the cell cycle during regeneration and lead to shorter spinal cord outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to work by Fei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "cd657dc5-a8cf-4b3f-a747-2f4ded572134",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C56",
+      "claim": "Sox2-knockout lead to shorter spinal cord outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "Fei and colleagues found evidences that Sox2-knockout prevented the acceleration of the cell cycle during regeneration and lead to shorter spinal cord outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to work by Fei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "d81b8408-d98e-4ba0-94c8-bb7db85d87fd",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C57",
+      "claim": "Running the model with the acceleration of the cell cycle switched off recapitulated the shorter outgrowth in the Sox2-knockout condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with these findings, running our model with the acceleration of the cell cycle switched off recapitulated the shorter outgrowth in the Sox2-knockout condition (Figure 3\u2014figure supplement 2 and see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model predictions compared to independent experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "41e023f9-1dbb-4c52-9b01-7a63bcc5b501",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C58",
+      "claim": "Increased proliferation of SOX2+ cells upon spinal cord injury is a common feature among vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased proliferation of SOX2+ cells upon spinal cord injury is a common feature among vertebrates (Becker and Becker, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "dad06cad-1f3f-452d-bb7b-da1fef3f715e",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C59",
+      "claim": "In zebrafish, Xenopus, mouse and axolotl traumatic spinal cord injury triggers a long-range wave of increased cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish (Hui et al., 2010, 2015), Xenopus (Gaete et al., 2012), mouse (Lacroix et al., 2014) and axolotl (this work, Rodrigo Albors et al., 2015; Holtzer, 1956) traumatic spinal cord injury triggers a long-range wave of increased cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple prior studies and data from this work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "ed14b9dc-dc3c-4e34-935c-743ece4408bf",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C60",
+      "claim": "Although the potential to replace lost cells or tissue exists in other species, they are not as efficient as axolotls at resolving spinal cord injuries.",
+      "claim_type": "EXPLICIT",
+      "source": "It is however clear that although the potential to replace lost cells or tissue exists in other species, they are not as efficient as axolotls at resolving spinal cord injuries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "efbe9076-af14-446e-930e-70e558af8383",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C61",
+      "claim": "Spinal cord stem cells in the axolotl speed up their cell cycle during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous study, we uncovered that spinal cord stem cells in the axolotl speed up their cell cycle during regeneration (Rodrigo Albors et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "89ef95f6-8c94-47a0-b841-2db0a6223559",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C62",
+      "claim": "The high-proliferation zone initially spans from the 800 \u03bcm adjacent to the amputation plane to the regenerating tip.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing detailed quantifications, we were now able to delineate a high-proliferation zone that initially spans from the 800 \u03bcm adjacent to the amputation plane to the regenerating tip, and later shifts posteriorly as the spinal cord regrows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by detailed quantitative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f9e4fdbd-9eb0-4c1c-828b-208dfd9bae2c",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C63",
+      "claim": "The high-proliferation zone later shifts posteriorly as the spinal cord regrows.",
+      "claim_type": "EXPLICIT",
+      "source": "Performing detailed quantifications, we were now able to delineate a high-proliferation zone that initially spans from the 800 \u03bcm adjacent to the amputation plane to the regenerating tip, and later shifts posteriorly as the spinal cord regrows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by detailed quantitative analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "e82b36a1-a27a-4942-aea3-a5ca4f341718",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C64",
+      "claim": "The observed increase in proliferation is primarily due to the acceleration of the cell cycle within the regenerating neural stem cell pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Although some quiescent neural stem cells enter the cell cycle during regeneration, we demonstrate that the observed increase in proliferation is primarily due to the acceleration of the cell cycle within the regenerating neural stem cell pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis and modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "f895d42d-a99f-4080-8397-b6d7320a578e",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C65",
+      "claim": "The acceleration of the cell cycle can explain the observed spinal cord outgrowth.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing experiments in silico using our mechanistic model of spinal cord regeneration, we demonstrate that the acceleration of the cell cycle can explain the observed spinal cord outgrowth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by in silico modeling experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "479181f1-b591-4e27-ad29-ce7faa1f1a1e",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C66",
+      "claim": "Sox2-knockout spinal cords do not regrow properly upon amputation, due to the inability of Sox2-knockout cells to 'change gears' in response to injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We further applied our model to an independent experimental dataset in which Sox2-knockout spinal cords do not regrow properly upon amputation, due to the inability of Sox2-knockout cells to 'change gears' in response to injury (Fei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to work by Fei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "921110f8-beff-4936-8017-042d60486b63",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C67",
+      "claim": "Sox2-knockout cells express PCNA and are in theory able to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Sox2-knockout cells express PCNA and are in theory able to proliferate, but their lower incorporation of the thymidine analog 5-ethynyl-2'-deoxyuridine (EdU) suggests that they cannot speed up the cell cycle (Fei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to work by Fei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "82b22a38-115e-4c12-a740-10f2fc7464c4",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C68",
+      "claim": "Sox2-knockout cells' lower incorporation of EdU suggests that they cannot speed up the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Sox2-knockout cells express PCNA and are in theory able to proliferate, but their lower incorporation of the thymidine analog 5-ethynyl-2'-deoxyuridine (EdU) suggests that they cannot speed up the cell cycle (Fei et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to work by Fei et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "58c23cb4-e2d0-49a9-8d85-d298cd577b3a",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C69",
+      "claim": "The reduced outgrowth in Sox2-knockout spinal cords can be quantitatively explained by the lack of cell cycle acceleration.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to show that the reduced outgrowth in Sox2-knockout spinal cords can be quantitatively explained by the lack of cell cycle acceleration (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model predictions compared to experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "b0f5ffb6-6b25-47fd-8f2b-98e4f0098fa8",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C70",
+      "claim": "Cells initially located within the 500 \u03bcm anterior to the amputation plane contribute to the regenerated spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier work (Mchedlishvili et al., 2007), we found that cells initially located within the 500 \u03bcm anterior to the amputation plane contribute to the regenerated spinal cord; while cells outside this zone translocate slower, and cells at 800 \u03bcm, the border of the high-proliferation zone, almost do not move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clone tracking data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "2b12666d-ff65-4ad2-a740-1332e0abbba6",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C71",
+      "claim": "Cells outside the 500 \u03bcm zone anterior to the amputation plane translocate slower.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier work (Mchedlishvili et al., 2007), we found that cells initially located within the 500 \u03bcm anterior to the amputation plane contribute to the regenerated spinal cord; while cells outside this zone translocate slower, and cells at 800 \u03bcm, the border of the high-proliferation zone, almost do not move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clone tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "b225b042-0ced-4553-a3a8-8349a418e42f",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C72",
+      "claim": "Cells at 800 \u03bcm, the border of the high-proliferation zone, almost do not move.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier work (Mchedlishvili et al., 2007), we found that cells initially located within the 500 \u03bcm anterior to the amputation plane contribute to the regenerated spinal cord; while cells outside this zone translocate slower, and cells at 800 \u03bcm, the border of the high-proliferation zone, almost do not move.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by clone tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "8610619d-e679-40c3-a55a-99f489e04e80",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C73",
+      "claim": "Cells are passively displaced, pushed by more anterior dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be consistent with a model in which cells are passively displaced, pushed by more anterior dividing cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the observed cell movement patterns.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "de41bc00-af47-4a9b-93c9-7a0799d5ca70",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C74",
+      "claim": "The more posterior a cell is the more cells anterior to that cell divide and the stronger is the push, making the cell translocate faster.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the more posterior a cell is the more cells anterior to that cell divide and the stronger is the push, making the cell translocate faster (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for the observed velocity gradient.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "9ff21a6c-c90a-40a1-9ba7-1a805af13878",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C75",
+      "claim": "The proliferative response extends beyond the 500 \u03bcm anterior to the amputation plane that gives rise to the regenerated spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the proliferative response extends beyond the 500 \u03bcm anterior to the amputation plane that gives rise to the regenerated spinal cord (Mchedlishvili et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "486a4812-d0be-4186-a16d-1b8da6043a0b",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C76",
+      "claim": "Cells in the posterior 500 \u03bcm of the high-proliferation zone regenerate the spinal cord while cells from the anterior 300 \u03bcm of the high-proliferation zone replenish and push out the 500 \u03bcm regeneration source zone.",
+      "claim_type": "EXPLICIT",
+      "source": "In the light of this model, it is plausible that cells in the posterior 500 \u03bcm of the high-proliferation zone regenerate the spinal cord while cells from the anterior 300 \u03bcm of the high-proliferation zone replenish and push out the 500 \u03bcm regeneration source zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "94f02ec3-0819-4c1e-8b74-afa46845ced0",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C77",
+      "claim": "The increase in cell numbers during regeneration is tightly regulated so that the regenerating spinal cord extends while maintaining constant cell density and proper tube-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable finding of this study is that the increase in cell numbers during regeneration is tightly regulated so that the regenerating spinal cord extends while maintaining constant cell density and proper tube-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the observation of constant cell density during outgrowth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "7bbb8900-8382-41ca-85f9-8b93436f28b0",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C78",
+      "claim": "The tube-like structure made up almost entirely of neural stem cells might be essential to act as a scaffold for rebuilding the spinal cord tissue architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "This tube-like structure made up almost entirely of neural stem cells might be essential to act as a scaffold for rebuilding the spinal cord tissue architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed structure.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "fae1e27f-9455-43a2-bb98-498fdc4136a9",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C79",
+      "claim": "The activation of PCP signaling within the source zone instructs cells to divide along the growing axis of the spinal cord and is key for effective spinal cord regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that the activation of PCP signaling within the source zone instructs cells to divide along the growing axis of the spinal cord and is key for effective spinal cord regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "dfe21ba8-b404-4a2b-b855-405ffb18e373",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C80",
+      "claim": "Orderly and directed expansion of the neural stem cell pool is important for efficient spinal cord regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "This work highlights the importance of orderly and directed expansion of the neural stem cell pool for efficient spinal cord regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the findings of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "23ffce37-9398-46d0-8807-6ddee69c9cf8",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C81",
+      "claim": "Axolotl spinal cord outgrowth is driven by the acceleration of the cell cycle in a pool of SOX2+ neural stem cells restricted in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our findings provide a quantitative mechanistic understanding of the cellular mechanisms that drive complete spinal cord regeneration in axolotls. By performing a quantitative modeling approach combined with quantitative experimental data, we found that axolotl spinal cord outgrowth is driven by the acceleration of the cell cycle in a pool of SOX2+ neural stem cells restricted in space and time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the integrated analysis of experimental data and mathematical modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "a8580415-6b62-4de8-a2f3-9222eb4a44f8",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C82",
+      "claim": "The cell cycle length at day six was estimated as 117 \u00b1 12 hours corresponding to a proliferation rate of 0.21 \u00b1 0.02 per day.",
+      "claim_type": "EXPLICIT",
+      "source": "For the sake of consistent methodology within the present study, the data were reanalyzed with bootstrapping using case resampling (see 'brdu_bootstrapping_day6' in Rost et al., 2016a). In agreement with the previous analysis the cell cycle length was estimated as 117 \u00b1 12 hours corresponding to a proliferation rate of 0.21 \u00b1 0.02 per day at six days after amputation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reanalysis of BrdU labeling data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "59361a61-7230-4742-9e91-6ab19a25ec5b",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C83",
+      "claim": "The regenerating spinal cord grew faster after day 4.",
+      "claim_type": "IMPLICIT",
+      "source": "Initially, the regenerating spinal cord extended slowly to a mean outgrowth of 0.45 \u00b1 0.04 mm at day 4 (Figure 1B). Thereafter, the spinal cord grew faster, reaching an outgrowth of 2.26 \u00b1 0.07 mm by day 8.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the comparison of outgrowth rates before and after day 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "6cf22ed3-87df-4ed9-9f7f-724bf4921b84",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C84",
+      "claim": "The growth fraction and mitotic index are not significantly different between the two modeled zones in the uninjured spinal cord.",
+      "claim_type": "EXPLICIT",
+      "source": "Not surprisingly, we found that in the uninjured spinal cord the growth fraction and the mitotic index in the two modeled zones are not significantly different (Figure 2D,F,F' and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "94abe113-d37f-45d2-95ea-46c4d25182c4",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C85",
+      "claim": "At day 3 there are no significant differences between the two zones in growth fraction and mitotic index.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, at day 3 there are no significant differences between the two zones (Figure 2F,F' and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "1fbe3692-e098-4b9d-a21b-047c16f20c42",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C86",
+      "claim": "The growth fraction and the mitotic index are higher in the posterior zone from day 4 onward.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the growth fraction and the mitotic index are higher in the posterior zone from day 4 onward (Figure 2D',F,F' and Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "edb47eaa-8a67-4ea3-9358-457e337a7797",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C87",
+      "claim": "The model successfully recapitulated the experimental outgrowth in the Sox2-knockout scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the model successfully recapitulated the experimental outgrowth in the Sox2-knockout scenario suggests that compensatory mechanisms might have a small contribution in this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the agreement between model predictions and experimental data for Sox2-knockout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "6699a3db-6cb0-4e93-84dc-930af3b82c8f",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C88",
+      "claim": "Compensatory mechanisms might have a small contribution in the Sox2-knockout condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the model successfully recapitulated the experimental outgrowth in the Sox2-knockout scenario suggests that compensatory mechanisms might have a small contribution in this condition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on model predictions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "dbf8ac8d-48b0-42e9-9313-8a114db81403",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C89",
+      "claim": "The cell cycle entry rate k = 0.2 \u00b1 0.1 day\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "By fitting the model to the experimental growth fraction data from day 0 to day 6 (Figure 3B), we determined this parameter as k = 0.2 \u00b1 0.1 day\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by model fitting to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "22e833ed-3bca-407e-b3ef-5b719fa414fa",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "claim_id": "C90",
+      "claim": "Even when both cell influx and cell activation are switched off, the observed outgrowth time-course is in agreement with the model prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even when we switched off both cell influx and cell activation the observed outgrowth time-course is in agreement with the model prediction (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by in silico modeling experiments shown in Figure 3G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8efbd1da-6ca7-4372-b23b-def87c2cc105",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The regenerating spinal cord initially grows slowly (0.45 \u00b1 0.04 mm at day 4) then accelerates, reaching 2.26 \u00b1 0.07 mm by day 8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C20, and C83 are directly supported by experimental measurements shown in Figure 1B with n=8 axolotls. The biphasic growth pattern is clearly documented with quantitative data and error estimates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "416da1cb-157f-4e27-91b1-e8fe91dc68af",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neural stem cell density remains constant along the AP axis during regeneration (2.3 \u00b1 0.6 cells/\u03bcm), excluding convergence-extension and cell shape changes as drivers of outgrowth and indicating proliferation-based mechanisms drive expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29 and C45 are well-supported by quantitative analysis of SOX2+ cell counts (Figure 2B-C, Figure 2\u2014figure supplement 1) using multiple statistical tests. The constant density observation logically excludes certain mechanisms and supports proliferation-based expansion. The analysis includes appropriate statistical validation (ANOVA, p=0.08).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A high-proliferation zone emerges at day 4, initially located 800 \u00b1 100 \u03bcm anterior to the amputation plane, and shifts posteriorly as regeneration proceeds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C4, C62-C63, and C84-C86 are supported by Bayesian model fitting to spatial proliferation data (Figure 2D-F'', Figure 2\u2014figure supplement 3-4). The two-zone model shows significant differences in growth fraction and mitotic index from day 4 onward with appropriate statistical analysis and credibility intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The proliferation rate increases from 0.06 \u00b1 0.02 per day (cell cycle ~10 days) in uninjured spinal cord to ~0.15 per day (cell cycle ~5 days) at day 4, remaining elevated through day 8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 and C82 are supported by calculations combining mitotic index measurements with BrdU labeling data reanalyzed using bootstrapping (Figure 2G, Figure 2\u2014figure supplement 5). The methodology is clearly described and the cell cycle length estimates are consistent with prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "ed04fd78-ad8d-4957-968c-ae824f089aa1",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Quiescent SOX2+ cells (SOX2+/PCNA-) decrease from 180 \u00b1 30 at day 0 to 23 \u00b1 13 at day 6, indicating activation and cell cycle re-entry, with numbers increasing again at day 8 when neurogenesis resumes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C46 are supported by quantitative measurements shown in Figure 2H and Figure 2D-H. The decrease in quiescent cell numbers provides direct evidence for activation, though the inference about re-entry is reasonable given the data. The day 8 increase is supported by citation to prior work on neurogenesis resumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "9a444aba-f5da-4a9b-8971-1746683a0d0f",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Clone tracking reveals cells preserve spatial order during regeneration, with cells near the amputation plane moving fastest (cells at 800 \u03bcm move at 20 \u00b1 9 \u03bcm/day), while anterior cells barely move.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C70-C72 are supported by sparse labeling and clone tracking experiments (Figure 2I-K). The velocity measurements are quantified with error estimates and show a clear spatial gradient. The findings are consistent with prior work (Mchedlishvili et al., 2007).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "0b448557-ed72-41e1-85f3-0deb40a913ec",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A mathematical model incorporating cell cycle acceleration, quiescent cell activation (k = 0.2 \u00b1 0.1 day\u207b\u00b9), and cell influx quantitatively predicts the observed spinal cord outgrowth time-course.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C89 are supported by the model fitting to growth fraction data (Figure 3B) and fit-free prediction of outgrowth (Figure 3C). The model successfully recapitulates experimental data with appropriate confidence intervals calculated via bootstrapping (100,000 iterations). The single fitted parameter (k) is well-constrained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In silico experiments demonstrate that cell cycle acceleration is the major driver of spinal cord outgrowth; switching it off reduces predicted outgrowth to 1.7 mm (p=0.003), 0.6 mm shorter than observed, while removing cell influx or activation has minimal effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C49-C50, C54, C64-C65, C81, and C90 are supported by systematic in silico perturbation experiments (Figure 3D-G). The model predictions with mechanisms switched off show clear quantitative differences, with statistical significance reported for cell cycle acceleration. The logic is sound: only removing acceleration significantly affects outgrowth prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cell influx and quiescent neural stem cell activation play minor roles in regenerative spinal cord outgrowth, as switching them off in the model has minimal effect on predicted outgrowth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C51-C53 are supported by in silico modeling (Figure 3E-F). The model predictions show that removing these mechanisms individually or together (Figure 3G) does not significantly alter outgrowth predictions, providing strong evidence for their minor contribution relative to cell cycle acceleration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "4542f872-a227-44ee-a104-2d9a2fe1caeb",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model successfully predicts reduced outgrowth in Sox2-knockout conditions when cell cycle acceleration is switched off, consistent with independent experimental data showing Sox2-knockout prevents cell cycle acceleration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C66-C69, and C87 are supported by model validation against independent data from Fei et al., 2014 (Figure 3\u2014figure supplement 2). The model recapitulates the Sox2-knockout phenotype when acceleration is removed, though the authors appropriately note assumptions about compensatory mechanisms and the need for density correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "0493f08b-6346-4013-b98f-5dac8a272427",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cells may be passively displaced by anterior dividing cells, with posterior cells experiencing stronger push forces, and the tube-like neural stem cell structure might serve as a scaffold for tissue architecture rebuilding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74, C76, C78, and C88 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While consistent with observed velocity gradients, these mechanistic explanations lack direct experimental validation. The authors appropriately present these as plausible models rather than demonstrated mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "631fd8da-8209-473f-8078-2d0d3e461c1b",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Axolotls uniquely mobilize neural stem cells efficiently to resolve spinal cord injuries, unlike other vertebrates that possess neural stem cells but lack comparable regenerative capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10, and C60 are supported by citations to established literature (Becker and Becker, 2015; Tanaka and Ferretti, 2009; Holtzer, 1956; Mchedlishvili et al., 2007) and represent well-established knowledge in the field. These provide appropriate context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work by the authors showed regenerating neural stem cells revert to an embryonic-like state involving PCP signaling, downregulation of pro-neural genes, upregulation of proliferation genes, cell cycle acceleration, and switch to proliferative divisions, with PCP directing division orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C11-C18, C61, and C79 appropriately cite prior work by Rodrigo Albors et al., 2015. These claims provide essential context for the current study and are properly attributed. The current manuscript builds on this foundation with quantitative modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "2703783c-2760-49e9-8bd8-38b541fb950f",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Increased SOX2+ cell proliferation upon spinal cord injury is common across vertebrates (zebrafish, Xenopus, mouse, axolotl), with injury triggering long-range proliferation waves extending beyond the regeneration source zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 and C75 are supported by citations to multiple studies across species (Hui et al., 2010, 2015; Gaete et al., 2012; Lacroix et al., 2014; Mchedlishvili et al., 2007) and data from this work. This comparative context appropriately frames the axolotl findings within broader vertebrate biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    },
+    {
+      "id": "037ce027-949e-4b2f-a6cf-bda53d72ea9d",
+      "content_id": "b31918b0-c481-402b-9864-cdd1b5884845",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cell number increase during regeneration is tightly regulated to maintain constant density and tube structure, highlighting the importance of orderly neural stem cell pool expansion for efficient regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77 and C80 are supported by the constant density observations (Figure 2B-C) and represent reasonable interpretations of the data. The tight regulation is evidenced by the maintained density despite rapid outgrowth, though the mechanistic basis for this regulation is not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:47:56.953746Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28f7b0df-50bc-4490-b06b-21cc7142bd42",
+      "result_id": "8efbd1da-6ca7-4372-b23b-def87c2cc105"
+    },
+    {
+      "claim_id": "2f30b574-524d-42e9-96c0-aa969efc3991",
+      "result_id": "8efbd1da-6ca7-4372-b23b-def87c2cc105"
+    },
+    {
+      "claim_id": "59361a61-7230-4742-9e91-6ab19a25ec5b",
+      "result_id": "8efbd1da-6ca7-4372-b23b-def87c2cc105"
+    },
+    {
+      "claim_id": "eb2bc244-d9c7-449a-821d-a1312fa213cb",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "d6663843-d52d-49d2-97cf-0a3935e60759",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "5ec4126f-5b9d-4fd0-bf3f-a65e475c1e49",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "4a010cc6-e7e9-4245-bd99-2bfae46914e6",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "b926ad2c-c08f-4b87-a710-c95e860cd5e4",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "f4e45645-d7f0-4172-af8b-4c22bd1eb68f",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "95817a68-6c65-49de-8094-86822554dcd7",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "727dcf8f-3628-4e0c-bed3-d8850811c18a",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "9eeee651-4d47-456c-a204-471863869219",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "50c1192f-0509-4145-ae79-e651cd88483a",
+      "result_id": "416da1cb-157f-4e27-91b1-e8fe91dc68af"
+    },
+    {
+      "claim_id": "76dfbc5a-aabc-4544-abd6-3eb4425fa998",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "4d19f360-2df7-44a6-b546-ca08bc6227d9",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "5b0252de-e06e-498a-81d9-c013fa65e0ba",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "f2d62825-5a92-48c5-9e72-645cea1e8a47",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "89ef95f6-8c94-47a0-b841-2db0a6223559",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "f9e4fdbd-9eb0-4c1c-828b-208dfd9bae2c",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "6cf22ed3-87df-4ed9-9f7f-724bf4921b84",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "94abe113-d37f-45d2-95ea-46c4d25182c4",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "1fbe3692-e098-4b9d-a21b-047c16f20c42",
+      "result_id": "5b5b9bb2-b13d-4266-b6f7-a7d690831aad"
+    },
+    {
+      "claim_id": "ee76c217-701b-4bc1-8330-6d7179fc6f6b",
+      "result_id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e"
+    },
+    {
+      "claim_id": "3a7f34f9-381c-44eb-a41b-a3d6efcdb4b0",
+      "result_id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e"
+    },
+    {
+      "claim_id": "888d4754-0f21-46de-aad9-2da404b14958",
+      "result_id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e"
+    },
+    {
+      "claim_id": "dcb1103b-730b-4bed-9b43-ebc0240f25df",
+      "result_id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e"
+    },
+    {
+      "claim_id": "a8580415-6b62-4de8-a2f3-9222eb4a44f8",
+      "result_id": "eb961017-ad6d-445c-92c1-ffd7c5865c9e"
+    },
+    {
+      "claim_id": "157f6680-48b4-45cd-bedd-580bf504d4c8",
+      "result_id": "ed04fd78-ad8d-4957-968c-ae824f089aa1"
+    },
+    {
+      "claim_id": "f8a8593a-fe17-455d-acff-51d942c0b4d0",
+      "result_id": "ed04fd78-ad8d-4957-968c-ae824f089aa1"
+    },
+    {
+      "claim_id": "a29a22ab-7cca-47c3-a399-36d9cd4996a1",
+      "result_id": "ed04fd78-ad8d-4957-968c-ae824f089aa1"
+    },
+    {
+      "claim_id": "1b592270-1829-49af-bee2-37e7e3109993",
+      "result_id": "ed04fd78-ad8d-4957-968c-ae824f089aa1"
+    },
+    {
+      "claim_id": "3d0eb810-549f-4337-bb0d-ee947c2e8752",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "5e309485-e943-4043-adc0-821829fbb960",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "2f30ed75-035d-4251-8cfd-ace7bc4f7918",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "37ccff87-1d5f-436b-8101-b8146cf054a1",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "c213686a-424e-46cf-89ee-94c6690966ad",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "b0f5ffb6-6b25-47fd-8f2b-98e4f0098fa8",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "2b12666d-ff65-4ad2-a740-1332e0abbba6",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "b225b042-0ced-4553-a3a8-8349a418e42f",
+      "result_id": "9a444aba-f5da-4a9b-8971-1746683a0d0f"
+    },
+    {
+      "claim_id": "0d074402-0868-4177-b2a3-f870f61fb1f2",
+      "result_id": "0b448557-ed72-41e1-85f3-0deb40a913ec"
+    },
+    {
+      "claim_id": "ad485a0b-2af3-4ff1-a0cc-f30087200585",
+      "result_id": "0b448557-ed72-41e1-85f3-0deb40a913ec"
+    },
+    {
+      "claim_id": "dbf8ac8d-48b0-42e9-9313-8a114db81403",
+      "result_id": "0b448557-ed72-41e1-85f3-0deb40a913ec"
+    },
+    {
+      "claim_id": "c7eb61e4-ccc0-4c42-997f-fcd9dad939d3",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "e136eacf-a265-4186-9545-72c698bcdffe",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "383f0410-e430-4722-b1c4-ffd6479bf0ef",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "afdac310-766e-4ae0-86c5-39af15efb7f7",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "e82b36a1-a27a-4942-aea3-a5ca4f341718",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "f895d42d-a99f-4080-8397-b6d7320a578e",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "23ffce37-9398-46d0-8807-6ddee69c9cf8",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "22e833ed-3bca-407e-b3ef-5b719fa414fa",
+      "result_id": "e7ffabf2-ea17-471e-8cf3-6bd03ace9821"
+    },
+    {
+      "claim_id": "f7061141-9f47-4d02-877c-cb909e46c47e",
+      "result_id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68"
+    },
+    {
+      "claim_id": "d09852cd-537e-4780-8568-8997a087412c",
+      "result_id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68"
+    },
+    {
+      "claim_id": "64926976-e323-4ce7-996a-ea4a22dc6a24",
+      "result_id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68"
+    },
+    {
+      "claim_id": "3e4f7db0-1f65-443d-82d4-2c7caf74fc0d",
+      "result_id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68"
+    },
+    {
+      "claim_id": "7750640a-eaac-4023-8325-af8663115e04",
+      "result_id": "d53ca877-ffa7-4c46-b548-72bcd74a2d68"
+    },
+    {
+      "claim_id": "20e94314-b3e4-441f-9fc0-f425a9755934",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "cd657dc5-a8cf-4b3f-a747-2f4ded572134",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "d81b8408-d98e-4ba0-94c8-bb7db85d87fd",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "479181f1-b591-4e27-ad29-ce7faa1f1a1e",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "921110f8-beff-4936-8017-042d60486b63",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "82b22a38-115e-4c12-a740-10f2fc7464c4",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "58c23cb4-e2d0-49a9-8d85-d298cd577b3a",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "edb47eaa-8a67-4ea3-9358-457e337a7797",
+      "result_id": "4542f872-a227-44ee-a104-2d9a2fe1caeb"
+    },
+    {
+      "claim_id": "8610619d-e679-40c3-a55a-99f489e04e80",
+      "result_id": "0493f08b-6346-4013-b98f-5dac8a272427"
+    },
+    {
+      "claim_id": "de41bc00-af47-4a9b-93c9-7a0799d5ca70",
+      "result_id": "0493f08b-6346-4013-b98f-5dac8a272427"
+    },
+    {
+      "claim_id": "486a4812-d0be-4186-a16d-1b8da6043a0b",
+      "result_id": "0493f08b-6346-4013-b98f-5dac8a272427"
+    },
+    {
+      "claim_id": "7bbb8900-8382-41ca-85f9-8b93436f28b0",
+      "result_id": "0493f08b-6346-4013-b98f-5dac8a272427"
+    },
+    {
+      "claim_id": "6699a3db-6cb0-4e93-84dc-930af3b82c8f",
+      "result_id": "0493f08b-6346-4013-b98f-5dac8a272427"
+    },
+    {
+      "claim_id": "75c7f4e0-35ee-447f-a7b6-bf1d0a00ad7a",
+      "result_id": "631fd8da-8209-473f-8078-2d0d3e461c1b"
+    },
+    {
+      "claim_id": "3223b55c-699a-41c5-88f5-1f540e961cdf",
+      "result_id": "631fd8da-8209-473f-8078-2d0d3e461c1b"
+    },
+    {
+      "claim_id": "0985ef54-109d-4000-94cf-ed34ae1d49f3",
+      "result_id": "631fd8da-8209-473f-8078-2d0d3e461c1b"
+    },
+    {
+      "claim_id": "7aa171b0-127f-45fc-af61-1b2fa3f52690",
+      "result_id": "631fd8da-8209-473f-8078-2d0d3e461c1b"
+    },
+    {
+      "claim_id": "ed14b9dc-dc3c-4e34-935c-743ece4408bf",
+      "result_id": "631fd8da-8209-473f-8078-2d0d3e461c1b"
+    },
+    {
+      "claim_id": "7e9b5e2f-34cc-4fae-a316-9b3cdd6d5bc0",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "97a098ba-4eaa-4323-8cd6-3686fd3135da",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "9039ffc5-e4cc-462d-baa7-265056cae909",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "8e1e306f-3afe-46d4-80aa-61666c17e73d",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "7ecd6550-c4fa-4d69-9187-3f92ad975fe5",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "6559e494-4f78-47cb-b15b-95957e523a90",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "ae3923a2-033e-4c36-a4b0-d9c9f3b087b6",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "a7e04ef5-caf8-44cf-b723-587d3a507050",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "49c53f58-ecfc-440d-b0d4-6546d80bbab7",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "f1a9d976-6033-44cb-8e11-fd050156d6a2",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "efbe9076-af14-446e-930e-70e558af8383",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "fae1e27f-9455-43a2-bb98-498fdc4136a9",
+      "result_id": "9c4c7c94-d2e7-4592-9010-a68a65e72ca3"
+    },
+    {
+      "claim_id": "41e023f9-1dbb-4c52-9b01-7a63bcc5b501",
+      "result_id": "2703783c-2760-49e9-8bd8-38b541fb950f"
+    },
+    {
+      "claim_id": "dad06cad-1f3f-452d-bb7b-da1fef3f715e",
+      "result_id": "2703783c-2760-49e9-8bd8-38b541fb950f"
+    },
+    {
+      "claim_id": "9ff21a6c-c90a-40a1-9ba7-1a805af13878",
+      "result_id": "2703783c-2760-49e9-8bd8-38b541fb950f"
+    },
+    {
+      "claim_id": "94f02ec3-0819-4c1e-8b74-afa46845ced0",
+      "result_id": "037ce027-949e-4b2f-a6cf-bda53d72ea9d"
+    },
+    {
+      "claim_id": "dfe21ba8-b404-4a2b-b855-405ffb18e373",
+      "result_id": "037ce027-949e-4b2f-a6cf-bda53d72ea9d"
+    }
+  ],
+  "comparisons": []
+}

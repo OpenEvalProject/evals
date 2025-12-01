@@ -1,0 +1,1865 @@
+{
+  "submission": {
+    "id": "8022e7c1-52c5-40c0-b85c-c2861ccd5b50",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:28:47.633717Z",
+    "updated_at": "2025-11-30T23:28:47.633717Z"
+  },
+  "content": [
+    {
+      "id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "submission_id": "8022e7c1-52c5-40c0-b85c-c2861ccd5b50",
+      "content_type": "manuscript",
+      "content_text": "# Atrophin controls developmental signaling pathways via interactions with Trithorax-like\n\n## Authors\n\n- Kelvin Yeung<sup>1</sup> ([ORCID: 0000-0003-2284-8734](https://orcid.org/0000-0003-2284-8734))\n- Ann Boija<sup>3</sup>\n- Edvin Karlsson<sup>4</sup>\n- Per-Henrik Holmqvist<sup>3</sup>\n- Yonit Tsatskis<sup>1</sup>\n- Ilaria Nisoli<sup>6</sup>\n- Damian Yap<sup>7</sup> ([ORCID: 0000-0002-5370-4592](https://orcid.org/0000-0002-5370-4592))\n- Alireza Lorzadeh<sup>9</sup>\n- Michelle Moksa<sup>9</sup>\n- Martin Hirst<sup>9</sup>\n- Samuel Aparicio<sup>7</sup>\n- Manolis Fanto<sup>6</sup>\n- Per Stenberg<sup>4</sup>\n- Mattias Mannervik<sup>3</sup> \u2020\n- Helen McNeill<sup>1</sup> ([ORCID: 0000-0003-1126-5154](https://orcid.org/0000-0003-1126-5154)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Genetics University of Toronto Toronto Canada\n2. Lunenfeld-Tanenbaum Research Institute Mount Sinai Hospital Toronto Canada\n3. Department of Molecular Biosciences The Wenner-Gren Institute, Stockholm University Stockholm Sweden\n4. Department of Molecular Biology Ume\u00e5 University Ume\u00e5 Sweden\n5. Division of CBRN Security and Defence FOI-Swedish Defence Research Agency Ume\u00e5 Sweden\n6. Department of Basic and Clinical Neuroscience Maurice Wohl Clinical Neuroscience Institute, King\u2019s College London London United Kingdom\n7. Department of Molecular Oncology British Columbia Cancer Research Centre Vancouver Canada\n8. Department of Pathology and Laboratory Medicine University of British Columbia Vancouver Canada\n9. Department of Microbiology and Immunology University of British Columbia Vancouver Canada\n10. Michael Smith Laboratories Vancouver Canada\n11. Canada\u2019s Michael Smith Genome Sciences Centre, BC Cancer Agency Vancouver Canada\n\n\u2020 Corresponding author\n\n## Abstract\n\nMutations in human Atrophin1, a transcriptional corepressor, cause dentatorubral-pallidoluysian atrophy, a neurodegenerative disease. Drosophila Atrophin (Atro) mutants display many phenotypes, including neurodegeneration, segmentation, patterning and planar polarity defects. Despite Atro\u2019s critical role in development and disease, relatively little is known about Atro\u2019s binding partners and downstream targets. We present the first genomic analysis of Atro using ChIP-seq against endogenous Atro. ChIP-seq identified 1300 potential direct targets of Atro including engrailed, and components of the Dpp and Notch signaling pathways. We show that Atro regulates Dpp and Notch signaling in larval imaginal discs, at least partially via regulation of thickveins and fringe. In addition, bioinformatics analyses, sequential ChIP and coimmunoprecipitation experiments reveal that Atro interacts with the Drosophila GAGA Factor, Trithorax-like (Trl), and they bind to the same loci simultaneously. Phenotypic analyses of Trl and Atro clones suggest that Atro is required to modulate the transcription activation by Trl in larval imaginal discs. Taken together, these data indicate that Atro is a major Trl cofactor that functions to moderate developmental gene transcription.\n\n## Introduction\n\nAtrophin family transcription factors are conserved transcriptional corepressors essential for development. Humans have two Atrophin genes; Atrophin 1 (ATN1) and Atrophin 2. A polyglutamine expansion in ATN1 is responsible for dentatorubral-pallidoluysian atrophy (DRPLA) a progressive disorder of ataxia, myoclonus, epilepsy, intellectual deterioration and dementia (Koide et al., 1994; Nagafuchi et al., 1994). Drosophila has only one Atrophin (Atro) gene, and expression of polyglutamine expansion Atro also lead to neurodegeneration (Napoletano et al., 2011). Loss of Atro results in defects in planar polarity, segmentation, and eye, wing and leg developmental defects (Erkner et al., 2002; Zhang et al., 2002; Fanto et al., 2003; Charroux et al., 2006; Napoletano et al., 2011; Saburi et al., 2012; Sharma and McNeill, 2013). Atro is required for proper expression of en in the embryo and represses the gap genes Kr\u00fcppel and knirps (Erkner et al., 2002; Zhang et al., 2002; Haecker et al., 2007). Atro also affects epidermal growth factor receptor (EGFR), Decapentaplegic (Dpp) and Hedgehog signaling (Erkner et al., 2002; Charroux et al., 2006; Zhang et al., 2013). Despite regulating many pathways and processes, only three direct Atro targets have been defined (knirps, fat and dpp) (Wang et al., 2006; Napoletano et al., 2011; Zhang et al., 2013). These targets cannot adequately explain the diverse phenotypes exhibited by loss of Atro.\n\nAtro physically interacts with histone deacetylase 1 (HDAC1) and the histone methyltransferase, G9a, through its SANT and ELM2 domains, respectively (Figure 1A) (Wang et al., 2006, 2008). These interactions are thought to contribute to Atro\u2019s repressor activity. Atro also interacts with other cofactors such as the co-repressor, Scribbler (also called Brakeless) (Wang et al., 2006; Haecker et al., 2007). Atro does not have a DNA-binding sequence and has been shown to interact with DNA via interactions with nuclear receptors (Wang et al., 2006). We show here that a major means by which Atro regulates transcription is with the Drosophila GAGA factor, Trithorax-like (Trl, also called GAF). Trl is an essential transcription factor that directly binds to GA repeats (Biggin and Tjian, 1988; Soeller et al., 1988). Trl regulates many developmentally important genes including the segment polarity gene, engrailed (en) (Farkas et al., 1994; Bejarano and Busturia, 2004). Trl can interact with other transcription factors (e.g. Yorkie, Tramtrack) to regulate transcriptional targets in patterning and growth control (Pagans et al., 2002; Oh et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic of Atro protein\u00a0is\u00a0shown. Atro\u2019s N-terminal side has ELM2 and SANT domains to interact with HDAC1 and G9a, respectively. Atro\u2019s C-terminal domain interacts with Tailless and Fat. (B) Fraction of the common Atro regions overlapping with various genomic features (genome release 5.57) (Attrill et al., 2016). (C) The fraction of common Atro regions overlapping genes (including 500 bp upstream of transcription start site) with high, medium or low expression in S2 cells (data from [Cherbas et al., 2011]). (D) Venn diagram showing overlap of the common regions from three biological replicates (S1-3-5) with two additional, independent biological replicates (A1 and A2) using a different Atro antibody (4H6). Only the peaks at the major chromosome arms (heterochromatin are excluded) are compared, and thus, only 1275 peaks are used in S1-3-5 for this analysis instead of 1377 peaks. (E) Example overlap of Atro ChIP-seq peaks at the engrailed (en) locus. Atro #1\u20133 are the triplicates Atro ChIP-seq data; IgG #1\u20133 are the corresponding IgG ChIP-seq controls for the Atro ChIP-seq data. Atro (4H6) #1\u20132 are the independent Atro ChIP replicates (shown in D). (F) Top 10 GO-term enrichment hits of the Atro ChIP-seq data. GO-term enrichments were done with PANTHER overrepresentation test with default parameters and Bonferroni correction (Mi et al., 2016).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Score plot showing the first two components from principal component analysis using enrichment of all factors mapped by modENCODE (S2 cells) within Atro-binding regions. The Atro-binding regions are colored according to the three classes defined by hierarchical clustering. R2X values represent the fraction of the total variation explained by each component. (B) The mean scaled enrichment values for each factor withing the three classes. All factors with enrichment values below 0.4 in all classes were excluded.\n\nTrl was initially discovered to bind to the promoter of Ultrabithorax (Ubx) to activate transcription of Ubx in vitro (Biggin and Tjian, 1988). Trl is also required in transcriptional repression. This is supported by three pieces of evidence: First, Trl binds to Polycomb response elements, DNA sequences where Polycomb group proteins bind to repress transcription of target genes (Horard et al., 2000; Busturia et al., 2001). Second, Trl can physically associate with Polycomb Repressive Complex I (Poux et al., 2001). Third, Trl mutations enhance Polycomb group mutations, indicating that Trl is required for Polycomb repression (Mahmoudi et al., 2003). In addition to Trl\u2019s ability to regulate transcription, Trl binding leads to open chromatin (Tsukiyama et al., 1994) and Trl maintains open chromatin (Fuda et al., 2015), at least in part by interacting with chromatin remodeling complexes such as NURF and FACT (Xiao et al., 2001; Shimojima et al., 2003). Trl is also required for transcriptional pausing (Lee et al., 2008; Fuda et al., 2015). A working model is that Trl first binds to DNA to maintain open chromatin and later associates with other proteins to activate or repress transcription (reviewed in [Granok et al., 1995; Lehmann, 2004]).\n\nHere, we identify the genome-wide targets of Atro by chromatin-immunoprecipitation followed by sequencing (ChIP-seq). Our ChIP data show that Atro binds to regulatory regions of en, and in the putative regulatory regions of multiple Dpp and Notch signaling components. Our genetic and phenotypic analyses of Atro show that Atro regulates Dpp and Notch signaling, via transcriptional regulation of thickveins and likely fringe, respectively. We find that Atro negatively modulates En expression, while Trl promotes En expression. Bioinformatic analyses reveal that Atro and Trl ChIP-seq data strongly overlap and sequential ChIP and coimmunoprecipitation experiments confirm Atro and Trl bind to the same loci simultaneously and associate with one another. These data indicate that Atro modulates developmental gene expression via Trl binding. Our results suggest that Trl uses Atro as a cofactor to modulate transcription activation.\n\n## Results\n\n### Identification of genome-wide targets of Atro reveals enrichment in developmental patterning pathways\n\nChIP-seq against Atro was carried out in Drosophila Schneider 2 (S2) cells in three biological replicates (three sets of cells were grown and ChIP\u2019ed on different days). ChIP peaks were called with MACS2 (Zhang et al., 2008) for each biological replicate using IgG ChIP-seq as the background model. The resulting three lists (containing 1757, 3064 and 3375 peaks) were intersected and peaks found in all three lists and with summits within 100 bp of each other were selected. The resulting list of 1377 peaks were associated with 1300 unique genes by proximity and treated as potential Atro targets (Supplementary file 1). We further mapped the 1377 Atro peaks relative to gene features and gene expression, which showed that the majority of peaks are located in actively transcribed genes, often close to the promoters or in introns (Figure 1B,C). In addition, we quantified the enrichment of all chromatin factors mapped by modENCODE (44 proteins and 23 histone modifications) at the Atro peaks and performed principal component analyses of our Atro peaks from major chromosome arms (with heterochromatin excluded, thus 1275 peaks were used). After hierarchical clustering of the significant principal components, we defined three classes (Figure 1\u2014figure supplement 1A). We noticed that Class 2 (blue, Figure 1\u2014figure supplement 1A and B) peaks are strongly enriched with Polycomb factors, indicating a potential connection between Atro and Polycomb factors.\n\nTo validate these peaks, we also performed independent ChIP-seq in two biological replicates with an antibody raised against a different part of Atro. Peaks were called with MACS2 using input as background model and intersected with the peaks identified above. We compared the peaks from major chromosome arms from each of the ChIP-seqs. A large fraction of the Atro-binding regions identified with the first antibody overlapped the ones found with this second antibody (Figure 1D,E).\n\n### Atro modulates developmental gene expression during larval development\n\nGO term enrichment analysis (PANTHER, [Mi et al., 2016]) of our ChIP-seq data revealed that Atro targets are enriched in chromatin organization, development and morphogenesis (Figure 1F). Interestingly, a potential direct target gene of Atro is engrailed (en, Figure 1E), a critical and conserved regulator of development. There are two strong Atro peaks in the en promoter (Figure 1E, within 2.4 kb upstream of the transcription start site [Kassis et al., 1992]). During embryogenesis, Atro is proposed to repress en expression with Even-skipped (Zhang et al., 2002). The regulatory region of en is complex (Cheng et al., 2014), and it is not known if Atro regulates en expression in larval stages. Therefore, we generated null mutant clones of Atro (Atro35) in larval imaginal discs and examined the expression of En by immunofluorescence.\n\nWe found Atro35 clones have increased En levels in antennal, wing and leg imaginal discs (Figure 2A,B, and data not shown). Interestingly, Atro35 clones only show increased En levels in clones located in the posterior compartment, where En is endogenously expressed (Figure 2A\u2013C). Notably, Atro35 clones in the anterior compartment cannot induce ectopic expression of En (Figure 2C). These data suggest that Atro negatively modulates En expression levels to maintain moderate expression in imaginal discs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig2-v2.jpg)\n\n**Figure 2.:** (A) Antennal disc clones of Atro35 have increased En levels (arrows). (B) Atro35 wing disc clones in the posterior compartment have increased En levels (yellow arrow). But Atro35 clones cannot induce ectopic En expression in the anterior compartment (red arrow). (C) Atro35 clones cannot induce ectopic En expression (dotted lines mark clonal borders, wing disc is shown here). (A) has posterior to the right; (B\u2013C) have posterior to the left, dorsal up. All scale bars are 50 \u03bcm.\n\n### Atro directly regulates Dpp signaling via thickveins\n\nAtro mutant clones exhibit phenotypes similar to Dpp signaling defects such as leg patterning defects and expanded wing veins (Erkner et al., 2002; Zhang et al., 2002), suggesting Atro regulates Dpp signaling. Interestingly, our ChIP-seq data show that several Atro peaks occur in putative regulatory regions of several Dpp signaling pathway components (e.g. thickveins, Daughters against dpp and schnurri, Figure 3A and Supplementary file 1), suggesting Atro regulates Dpp signaling by directly regulating the expression of Dpp signaling pathway components. Thickveins (Tkv) is a critical Dpp receptor, and Atro35 clones show upregulation of the tkv-LacZ reporter in the wing (Wehn and Campbell, 2006). To confirm that Atro represses tkv expression, tkv transcript levels were assessed in Atro knocked down wing discs using in situ hybridization. Indeed, tkv expression is increased if Atro is knocked down (Figure 3B), confirming Atro represses tkv expression in the wing.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig3-v2.jpg)\n\n**Figure 3.:** (A) An Atro ChIP peak is found inside the tkv locus. This peak is directly upstream of the transcription start site of tkv isoform D. (B) In situ hybridization showing enGal4 control wing disc with normal tkv expression. (B\u2019) shows in situ hybridization of Atro RNAi driven in the posterior half of the wing disc by enGal4. tkv expression is increased in the posterior half. (C) Atro35 wing disc clones that cross the endogenous pMad regions have increased pMad levels along the interior border of the clone that is closest to the middle of the disc (where the Dpp source is located). This indicates that Atro35 clones have increased Dpp signaling. (D) Atro35 wing disc clones cannot cause ectopic Mad phosphorylation (yellow arrow heads). (E) Atro35 wing disc clones cannot induce ectopic Dpp. All clones are marked by the absence of GFP; all figures have posterior to the left, dorsal up. Scale bars in A and C are 100 \u03bcm; in B and D are 50 \u03bcm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Dpp signaling in the wild-type situation is\u00a0shown\u00a0(Tanimoto et al., 2000). (B) In Atro35 clones (dark rectangle), Tkv protein levels are increased. The increase of receptors causes pMad to increase near the interior clonal border closest to the Dpp source. Atro35 clones near the anterior/posterior edges of the wing also increase Tkv levels but does not affect pMad levels. (C) TrlR85 clones (dark rectangle) cause a loss of Tkv protein levels and thus pMad levels also decrease within the clones.\n\nAtro binds within tkv\u2019s gene locus and represses tkv transcription; however, it is not clear if this repression is important for the regulation of Dpp signaling. Mothers against dpp (Mad) is a downstream component of Dpp signaling, that is phosphorylated when the cell receives the Dpp signal (Newfeld et al., 1997). Phosphorylated Mad (pMad) is found in a broad stripe around the Dpp source and is used as a read-out for Dpp signaling. We stained Atro35 clones with anti-pMad antibodies to assess Dpp signaling. Atro35 clones that are found in the endogenous pMad regions have increased pMad levels along the interior border of the clones that is closest to the centre of the discs, where the endogenous Dpp source is located (Figure 3C). This pattern of increased pMad expression is expected if Tkv levels are increased in the clone, since increased Tkv levels in Atro35 clones would lead to an increase in Mad phosphorylation, as these cells will receive more Dpp signal compared to the adjacent non-clone cells (see Figure 3\u2014figure supplement 1B). Atro35 clones also have increased Optomotor blind (Omb, a downstream target of Dpp signaling) expression (data not shown), indicating increased Dpp signaling in the clones (Grimm and Pflugfelder, 1996). However, Atro35 clones far from the Dpp source do not induce ectopic Mad phosphorylation, suggesting Dpp levels are not increased in Atro35 clones (Figure 3D, arrow heads). Consistent with this, Atro35 clones in the anterior or posterior compartments do not cause ectopic Dpp expression (Figure 3E). Our data indicate that Atro directly regulates tkv expression and thereby Dpp signaling.\n\n### Atro is required for Notch signaling and directly regulates Notch pathway gene expression\n\nAtro ChIP data also revealed that Atro binds the putative regulatory regions of several Notch signaling components (mastermind (mam), Delta (Dl), neuralized (neur) and fringe (fng) (Figure 4A, Supplementary file 1), suggesting that Atro may regulate Notch signaling. Previous studies had not indicated that Atro loss of function affected Notch pathway activity. Therefore, to explore the biological relevance of the link with Notch, we first tested for genetic interactions between Atro and Notch (N). N is required for the development of the wing margin, and heterozygous N264-39 mutant (a null allele of N) flies have wing notches in the adult wing (Figure 4B\u2019). We find that transheterozygous N264-39/+; Atro35 /+ mutant flies exhibit strikingly more severe wing notching than heterozygous N264-39 mutant alone (Figure 4B\u201d). No notching is observed in Atro35 /+ mutant flies. Similar results were obtained with another independent Atro allele, Atroj5A3 (a P-element insertion allele, data not shown). Thus, Atro genetically interacts with N, suggesting Atro may play a role in N signaling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig4-v2.jpg)\n\n**Figure 4.:** (A) Atro ChIP peaks are found in the fng and neur loci, indicating that Atro may regulate these genes during development. (B) Wild-type wings have no notches at the wing margin. N264-39 heterozygous wings have wing notches (B\u2019). Wing notch phenotype is enhanced in transheterozygous N264-39, Atro35 wings (B\u2019\u2019). (C) Atro35 clones cause the Notch signaling reporter (GFP) to express in a diffused pattern (arrow). Dotted line marks clonal borders. (D) Large Atro35 clones cause an autonomous loss of wing margin marker Cut as well as ectopic Cut expression on the posterior side of the clone (arrow). Clonal borders are marked with dotted lines. (E) Atro35 clones have extra cells expressing the early R8 marker, Sens. Extra Sens\u2014positive cells are found in clusters of two\u00a0to\u00a0three cells but one cell within each cluster has more Sens staining than the rest (arrowheads). Clones are marked by absence of \u00df-Gal (red) in C and clones are marked by the absence of GFP in D and E. B have posterior to the bottom and C to E have posterior to the left. C and D have dorsal side up. Scale bars in C and D are 50 \u03bcm; in E is 25 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Atro35 clones have an autonomous loss of Wg expression. (B) Atro35 clones do not affect Cut expression in the antennal disc. (C) In situ hybridization of enGal4 control wing disc with normal fng expression. (C\u2019) In situ hybridization of a wing disc with Atro RNAi driven in the posterior half by enGal4. fng expression is increased in the posterior half. A and C have the posterior side to the left, dorsal side up. B has posterior to the right. Scale bars are 50 \u03bcm in A and B; 100 \u03bcm in C.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Atro35 clones have extra Sens-positive cells (blue) but normal amount of Boss staining (red). (B) Atro35 clones have reduced Emc levels (arrow) anterior to the morphogenetic furrow (arrowhead) but normal levels posterior to the furrow. All clones are marked by absence of GFP. All pictures have posterior on the left. Scale bar in A is 25 \u03bcm; in B is 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Atro35 clones have a loss of R7 cells. R7 cells are marked by Pros and Runt co-expression (purple). Yellow outline marks the clone boundary. (B) Atro35 clones have a loss of Cut expression but some Cut positive cells are still found inside the clone. (C) Atro35 clones have a loss of Tramtrack isoform 69 (Ttk69) expression. Clonal boundary is marked by yellow outline. Clones are marked by the absence of GFP. All pictures have posterior to the left. Scale bars are 25 \u03bcm.\n\nSince Atro and N genetically interact, we decided to test if loss of Atro affects wing margin development. In the wing, a line of N signaling induces the expression of wing margin markers Wingless (Wg) and Cut (Ct) (de Celis et al., 1996). N signaling in the wing can also be visualized with a N signaling reporter (NRE-GFP) (Housden et al., 2012), which expresses in a sharp line in the developing wing margin. Atro35 clones that cross the wing margin disrupt the expression pattern of the NRE-GFP reporter (Figure 4C), resulting in diffuse expression of the NRE-GFP reporter. In addition, Atro35 clones that cross the wing margin cause a loss of wing margin markers (Figure 4D and Figure 4\u2014figure supplement 1A). In some cases, Atro35 clones induce ectopic Ct expression just outside of the posterior clonal border (Figure 4D, arrow). In contrast to the wing, Atro35 clones do not affect Ct expression in the antennal discs, where a requirement of N signaling for Ct expression has not been shown (Figure 4\u2014figure supplement 1B). Atro binds to the fng promoter (Figure 4A, [Yang et al., 2013]), and in situ hybridization shows Atro knockdown causes increased fng transcription (Figure 4\u2014figure supplement 1C). These observations suggest that Atro may be regulating fng and/or other factors to affect N signaling.\n\nWe also checked if Atro regulates N signaling in the eye. In larval eye discs, R8 photoreceptors differentiate from a three-cell equivalence group, which differentiates into R2, R5 and R8 photoreceptors (reviewed in [Frankfort and Mardon, 2002; Tsachaki and Sprecher, 2012]). N signaling is required for lateral inhibition in this equivalence group, such that one cell receives the least amount of N signaling and differentiates into R8. Thus, N signaling loss of function mutants have extra R8\u2019s. To see if Atro affects R8 development, we stained Atro35 clones with Senseless (Sens), an early R8 marker. Atro35 clones have extra Sens positive cells (Figure 4E), clustered together in groups of two to three cells, resembling the number and shape of the R2/5/8 equivalence group. This suggests that lateral inhibition is defective in Atro35 clones. However, we noticed that there is one cell that has more Sens staining than the rest within each Sens-positive cell cluster (Figure 4E, arrowheads). Although Atro35 clones can induce extra Sens-positive cells, these clones do not have an excess of cells marked with a late R8 marker, Bride of sevenless (Boss) (Figure 4\u2014figure supplement 2A). In addition, N signaling is required for the differentiation of R7 photoreceptors and cone cells, and loss of N signaling results in a lack of R7 and cone cells in the eye (Cooper and Bray, 2000; Flores et al., 2000; Tomlinson et al., 2011). We found that Atro35 clones also lose R7 and cone cell markers (Figure 4\u2014figure supplement 3). Extra macrochaetae (emc), a downstream target of N signaling (Bhattacharya and Baker, 2009), is another potential direct target of Atro (Supplementary file 1). Indeed, Atro35 clones have reduced Emc protein levels anterior to the morphogenetic furrow (Figure 4\u2014figure supplement 2B). Since Atro peaks are present in/very close to multiple N signaling components and downstream targets (fng, numb, Dl, neur, emc, Figure 4A, Supplementary file 1), Atro may directly regulate multiple targets to affect N signaling in the eye.\n\n### Atro is a cofactor of Trl\n\nAlthough Atro does not bind to DNA directly, it binds with other cofactors to associate with DNA (e.g. Tailless [Wang et al., 2006]). We reasoned that analysis of the DNA sequences obtained from the Atro ChIP-seq could identify novel potential cofactors and binding motifs of Atro to gain insight into how Atro regulates developmental signaling. Therefore, we performed de novo motif analysis of our ChIP-seq data using MEME-ChIP (Bailey et al., 2009) (Figure 5A, Figure 5\u2014figure supplement 1). The top motif discovered is a GA repeat, the binding motif of Trithorax-like (Trl, Figure 5A). The Trl binding motif is enriched within Atro ChIP peak summits, indicating strongest Atro binding. Other enriched motifs include Twin of eyeless (Toy) and Mad (Figure 5A). Next, we looked for overlap between the Atro ChIP-seq data with other ChIP datasets from S2 cells. We reasoned that we should see an increase of overlap between Atro and other ChIP data if we looked more specifically at genomic locations with higher Atro ChIP signal using Atro peaks from major chromosome arms (excluding heterochromatin). Therefore, we plotted the amount of Atro overlap with other transcription factors over that expected by chance against the number of genomic locations grouped according to the amount of Atro binding (using genomic data from modENCODE (downloaded from http://intermine.modencode.org/), CBP [Philip et al., 2015], and Yki [Oh et al., 2013]). In this analysis, several factors, including Trl, CBP (Nejire), the replication proteins Orc2 and MCM, Yorkie (Yki) and Polycomb proteins, showed increased overlap with increasing Atro binding (Figure 5B). Interestingly, the strongest overlap was found with Trl, confirming the MEME-ChIP analysis (Figure 5A). We further compared our list of Atro peaks with the published Trl ChIP-seq data (Fuda et al., 2015) and found striking overlap between the two data sets (1123/1377 Atro peaks overlap with Trl ChIP, Figure 5C). Visual inspection of Atro and Trl ChIP-seq peaks also shows binding at the same genomic regions (Figure 6C,E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig5-v2.jpg)\n\n**Figure 5.:** (A) The top four hits from MEME-ChIP analysis using all Atro peaks. The top hit is a (GA) repeat, which is the binding motif of Trl. (B) Atro ChIP-seq data overlap with other factors in S2 cells. The y-axis represents the overlap over that expected by chance, where the fraction of the genome covered by each factor is the overlap expected by chance. Only positive values are shown. The Atro values are selected with increasing cut-off, so that fewer but stronger Atro-binding sites are shown along the x-axis. (C) shows the Venn diagram of the overlap of all Atro and Trl ChIP data. All 1377 Atro ChIP peaks were used and Trl ChIP peaks are from Fuda et al. (2015). Genomic coordinates from both data sets were used to construct this diagram.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** These MEME ChIP results are the 5th-12th top hits of the MEME ChIP experiment.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Box and whisker plot of Atro peaks based on MACS2 derived \u2013log(pvalue), which is an indication of the significance of called peaks. (B) Box and whisker plot of Atro peaks based on MACS2-derived fold enrichment values for each called peaks. Both A and B shows Atro peaks that intersect with Trl peaks are more significant (higher \u2013log(pvalue)) and have more fold enrichment than Atro peaks that do not intersect Trl (Wilcoxon test p-value<0.001 for both plots).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig6-v2.jpg)\n\n**Figure 6.:** (A) There is an Atro peak that overlaps with Trl peak within the sbb locus (left peak, Atro and Trl Peak in B). There is an Atro peak that does not overlap with Trl about 20 kb upstream of the sbb locus (right peak, Atro Only Peak in B). The red rectangle marks the region used as negative control in B. (B) ChIP-re-ChIP qPCR results. ChIP-re-ChIP samples are labeled as the sequence of antibody used (e.g. IgG, Atro means rabbit IgG ChIP followed by Atro re-ChIP). Negative controls for the ChIP-re-ChIP are any ChIPs with IgG. Atro, Trl ChIP-re-ChIP enriches the Atro and Trl Peak (purple bar) but it does not enrich the Atro only peak (same enrichment as Atro, IgG). Mean Ct value was used to calculate percent input and standard deviation of the Ct values was carried over in calculations and used as error bars. (C) Trl and Atro ChIP peaks coincide at the same loci upstream of en. (D) TrlR85 imaginal disc clones have decreased En levels (arrow, wing disc clone shown here). (E) Trl and Atro ChIP peaks coincide at the tkv locus. (F) TrlR85 wing disc clones have decreased pMad levels (arrow), possibly due to a decrease of tkv expression. All clones are marked by the absence of GFP; all figures have posterior to the left, dorsal up. Scale bars are 50 \u03bcm. (G) Model of how Atro and Trl function together to regulate expression of target genes. Trl is required to activate the transcription of its target genes. In the absence of Atro (Left), the target gene will express at a higher level than normal. Atro binds to the same site as Trl either directly or via some unknown cofactors (X?, Right). Atro modulates the expression of its target gene by counteracting Trl; potentially Atro is doing so by recruiting Histone deacetylase 1 (HDAC1) and G9a, a histone methyl transferase. Thus, target genes are expressed at the correct levels.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Trl Negative and noc Negative are negative control loci for both genes. ChIP-re-ChIP samples are labeled in the sequence of antibody used (e.g. IgG, Atro means rabbit IgG ChIP followed by Atro re-ChIP). Negative controls for the ChIP-re-ChIP are any ChIPs with IgG. Atro and Trl ChIP-re-ChIP enriches the Trl and noc peaks (purple bar). Mean Ct values were used to calculate percent input and standard deviation was carried over in calculations to be used as error bars. (B) Atro (green) and Trl (black) ChIP peaks overlap at the same positions at the Trl and noc loci. The red rectangle in the Trl loci figure shows where the Trl primer set amplifies for the qPCR in A.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Trl knockdown by RNAi causes Atro protein levels to decrease (arrow), while no RNAi or GFP RNAi treatments do not affect Atro protein levels. Lamin was used as a loading control. (B) shows the coimmunoprecipitation of Atro and Trl. Each lane is labeled with the antibody used for each IP. Blot was stained with Trl antibody. The red arrows mark the Trl bands. Trl is coimmunoprecipitated with Atro but not with IgG control. (C) The pausing index (amount of Pol II in the promoter-proximal region versus the gene body calculated from PRO-seq data (Kwak et al., 2013) is higher on average for genes bound by Atro and Trl than for all other expressed genes in S2 cells.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23084/elife-23084-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Clones are marked by the absence of GFP. Posterior is to the left, dorsal upwards. Scale bar is 50 \u00b5m.\n\n### Atro and Trl bind simultaneously and form a complex\n\nThe above analyses suggest that Atro and Trl bind to the same sites and may form a protein complex. To determine if Atro and Trl form a protein complex, we performed coimmunoprecipitation (coIP) of Atro and Trl in S2 cells. Although we did not detect an interaction using standard coIP conditions, pretreating lysates with micrococcal nuclease allowed us to coimmunoprecipitate endogenous Trl with endogenous Atro (Figure 5D).\n\nTo directly test if Atro and Trl bind to the same loci simultaneously, we performed sequential ChIP (ChIP-re-ChIP) on Atro followed by Trl in S2 cells. For this analysis, we selected Atro peaks at the scribbler (sbb) locus because of the presence of an Atro peak that overlaps with a Trl peak as well as a nearby Atro peak that does not overlap (Figure 6A). qPCR show that Atro-Trl ChIP-re-ChIP enriches for the locus with both Atro and Trl peaks, while it does not enrich for a locus with only Atro peak (enrichment is nearly equal to Atro-IgG ChIP-re-ChIP-negative control) (Figure 6B). Additional experiments showed that Atro and Trl co-occupy all the tested loci with both Atro and Trl peaks (Figure 6\u2014figure supplement 1).\n\nTo see if Atro requires Trl to associate with DNA, we knocked down Trl using RNAi in S2 cells. Unfortunately, we could not directly test if Atro association with DNA requires Trl in cells, as knock down of Trl also leads to reduced abundance of Atro proteins (Figure 6\u2014figure supplement 2A). These findings indicate that Atro and Trl bind to the same loci and to one another, forming a complex on chromatin to regulate transcription.\n\n### Trl is required for En and Tkv expression\n\nBoth ChIP-seq and ChIP-re-ChIP data show that Atro and Trl bind to the same loci simultaneously. Interestingly, there are strong overlaps of Atro and Trl ChIP-seq peaks at the en locus (Figure 6C). Since we found that Atro negatively modulates the expression of En during larval development, we wondered if Trl also regulates En expression. Therefore, we generated and analyzed Trl null mutant clones (TrlR85) in imaginal discs. In contrast to Atro35 clones, TrlR85 clones have reduced En expression (Figure 6D), indicating that Trl is required for the positive regulation of En expression in larval discs.\n\nAtro and Trl ChIP-seq data also indicate that Atro and Trl bind to the same region of the tkv locus (Figure 6E), suggesting that Trl regulates tkv expression with Atro. Therefore, TrlR85 clones were generated to investigate the role of Trl in tkv regulation. pMad levels were used as a read out for Tkv levels. In contrast to Atro35 clones, TrlR85 clones have reduced pMad levels (Figure 6F, Figure 6\u2014figure supplement 3). In addition, pMad staining can be found on the side of the TrlR85 clones further away from the middle of the wing (Figure 6\u2014figure supplement 3, arrow), indicating Dpp expression was not disrupted. These changes can be explained by a decrease in Tkv levels in TrlR85 clones. In addition, we did not find any Trl or Atro peaks within 20 kb of the mad locus (data not shown). Thus, the simplest model to explain our data is that the reduced pMad in TrlR85 clones is caused by a downregulation of tkv expression. Therefore, similar to Atro and Trl\u2019s regulation of en, Trl is required for tkv expression, while Atro is required for repression of tkv.\n\n## Discussion\n\nMutations in Atrophins lead to neurodegeneration, and loss of Atro leads to major defects in development. However, only a direct few targets of Atro are known and it is unclear how Atro regulates many genes. Here, using genome-wide ChIP-seq and in vivo analyses we show that Atro directly binds a number of developmentally critical genes; specifically regulating En expression and Dpp and Notch signaling. Trl has been proposed to activate transcription by opening and maintaining open chromatin to allow additional transcription factors to bind (reviewed in [Granok et al., 1995; Lehmann, 2004). We find that Atro and Trl participate in a complex and bind to the same loci simultaneously. Atro does not bind to DNA directly, while Trl has a DNA binding domain (Biggin and Tjian, 1988). Thus, our results suggest a model in which Atro binds to DNA via Trl, either directly or indirectly via someunknown cofactors, and Atro modulates transcriptional activation by Trl.\n\nOur in vivo analyses of en and tkv show that Trl is required to promote their expression while Atro negatively modulates expression levels. To explain these phenotypes, we propose a model in which Trl binding leads to open chromatin to allow transcription, and Atro binding, either by directly interacting with Trl or through some unknown factors, negatively modulates Trl\u2019s activity (Figure 6G). Atro binds to Histone deacetylase 1 (HDAC1) and a histone methyltransferase (G9a) to close chromatin and repress transcription (Wang et al., 2006, 2008), suggesting a mechanisms by which Atro is able to counteract Trl. Indeed, Atro- and Trl-binding sites at the en, tkv and fng loci overlap with HDAC1-binding sites (from modENCODE, RPD3-Q3451) (Celniker et al., 2009). Thus, loss of Trl leads to loss of expression of en and tkv where they are normally expressed. In the absence of Atro, Trl\u2019s activity is no longer negatively modulated, and expression of target genes such as en and tkv are increased. However, in regions where en and tkv are not endogenously expressed, loss of Atro cannot induce ectopic expression as Atro\u2019s function is to negatively modulate the transcription of its target genes.\n\nInterestingly, Trl is enriched at paused promoters and is involved in transcription pausing (Lee et al., 2008; Fuda et al., 2015). Trl recruits the negative elongation factor NELF to paused genes (Li et al., 2013), but the precise mechanism of how Trl affects pausing is unknown. Our data suggest that Atro is present to modulate Trl\u2019s transcription activation role. Perhaps, Atro is part of the transcriptional machinery used by Trl to pause transcription. In support of this, we noted that Atro preferentially binds to genes with higher expression (in S2 cells, genes with high expression are likely to be paused, Figure 1C) (Gilchrist et al., 2010). GO analysis of Atro targets shows enrichment of signaling and patterning genes, also consistent with a role in pausing (Figure 1F, data not shown). Notably, the pausing index for genes bound by both Atro and Trl is higher on average than for all expressed genes (Figure 6\u2014figure supplement 2C, [Kwak et al., 2013]). This increase of pausing index is even higher than genes bound only by Trl (Figure 6\u2014figure supplement 2B). These data suggest that Atro may be involved in transcriptional pausing with Trl.\n\nWe note that there are some Atro-binding sites that are not co-occupied by Trl. Atro also binds to other transcription factors (such as Tailless and Cubitus Interruptus [Wang et al., 2006; Zhang et al., 2013]) and Atro may interact with other factors to bind to sites not co-occupied by Trl. Visual inspection reveals strong Atro peaks that do overlap with Trl (Figure 6A); however, on a genome-wide basis, Atro peaks that do not overlap with Trl peaks are slightly weaker than the ones that do, as judged from the MACS2 derived significance (-log(p-value)) and fold enrichment values (Figure 5\u2014figure supplement 2).\n\nAtro maternal mutants have missing, malformed and/or expanded En stripes (Zhang et al., 2002), while in discs Atro modulates En expression. A possible explanation is that En regulation changes at different developmental times. During early embryogenesis, Pair-rule genes are required to first establish en expression (DiNardo et al., 1988). Atro is also required for the proper expression of Pair-rule genes such as fushi tarazu and even-skipped (Erkner et al., 2002; Zhang et al., 2002). This could explain why loss of Atro during early embryogenesis has more severe effects on en expression. However, from late embryogenesis on, En expression no longer requires Pair-rule genes but depends on Polycomb group genes and unidentified activators (Moazed and O'Farrell, 1992). We observed reduced En expression in Trl clones in antennal and wing imaginal discs, while Atro disc clones have increased expression. These results suggest that Trl and Atro are required for regulation of En expression from late embryogenesis through larval development.\n\nWhy is it important for Atro to moderate en expression? Intriguingly, expressing higher than normal levels of En in the posterior compartment leads to lethality and anterior-posterior patterning defects of the posterior wing, suggesting that moderating En levels is required for normal development, and high levels could be toxic (Guill\u00e9n et al., 1995; Tabata et al., 1995).\n\nOur Atro ChIP data show that Atro binds to the tkv locus and our in situ analysis reveals Atro represses tkv expression. We find that Atro35 clones have increased Dpp signaling, consistent with Atro\u2019s role in tkv regulation. Conversely, TrlR85 clones have lower pMad levels. We reason that this is caused by decreased Tkv within the TrlR85 clones, consistent with a peak in the tkv locus. These observations mirror what we have seen with en, where Trl is required for activation and Atro is required for repression of transcription.\n\nA model for Atro and Trl regulation of Dpp signaling is shown in Figure 3\u2014figure supplement 1. In wild-type wings, the expression patterns of Dpp (yellow shading) and Tkv (red line) cause pMad to be found in a broad stripe (Figure 3\u2014figure supplement 1A, blue line) (Tanimoto et al., 2000). Tkv levels are increased in Atro35 clones (Figure 3\u2014figure supplement 1B, indicated by the shaded rectangle). Thus, pMad levels are increased along the interior border of the clone if the Atro35 clones are close enough to the Dpp source. Atro35 clones further away would not cause changes to pMad levels. Trl has the opposite effect where TrlR85 clones (Figure 3\u2014figure supplement 1C, shaded rectangle) cause a decrease of Tkv and thus lower pMad levels. Interestingly, the Mad binding motif is enriched in the Atro ChIP, with a shift in distribution, suggesting Mad may bind adjacent to Atro, and that Atro-Mad interactions on chromatin may also affect Dpp signaling.\n\nAlthough Atro35 clones can lead to ectopic dpp-LacZ expression (Erkner et al., 2002; Zhang et al., 2013), we did not see increased Dpp in Atro35 wing clones. Additionally, loss of Atro away from the endogenous Dpp stripe does not induce ectopic pMad. Therefore, the increase of pMad staining in Atro35 clones matches the pattern that is expected if Atro regulates Dpp signaling via tkv and not via dpp regulation. Thus, we suggest that Atro regulates Dpp signaling in the wing primarily by regulating tkv transcription.\n\nTo our knowledge, this report also provides the first evidence that Atro regulates N signaling. Our ChIP-seq analysis revealed Atro binding in multiple N pathway components, and genetic and molecular analysis reveals disruption of N signaling in Atro clones in eye and wing discs. Atro knockdown results in upregulation of fng transcripts in larval wings. Interestingly, patched-Gal4-driven overexpression of fng leads to an autonomous loss of wing margin marker expression as well as ectopic expression of wing margin marker on the posterior border of the Fng overexpressing region (Panin et al., 1997). All Atro35 clones that cross the wing margin cause an autonomous loss of wing margin markers and large Atro35 clones can induce some ectopic wing margin marker expression on the posterior edge of the clone, mimicking patched-Gal4-driven Fng overexpression. Atro35 clones also disrupt N signaling reporter expression. Atro35 clones cause the N signaling reporter to express diffusely instead of in a sharp line. This diffuse expression pattern may be an indication of a loss of precise N signaling at the wing margin. Interestingly, Fng is crucial for N signaling at the margin (de Celis and Bray, 1997; Panin et al., 1997). Thus, Atro represses fng expression, and loss of Atro and patched-Gal4-driven overexpression of Fng have similar N-related phenotype in the wing.\n\nLoss of Atro also leads to Notch loss of function in the eye. Atro35 clones have extra cells with the early R8 marker, Sens, indicating a defect in lateral inhibition. Although there are extra Sens-positive cells in Atro clones, not all these cells express the late R8 marker, Boss, thus the extra Sens-positive cells do not differentiate into R8. Inspection of the Sens-positive cell clusters reveals there is one cell with more Sens than its neighbors in each cluster. We reason that the difference in Sens levels renders one cell with the most R8-like and this cell can express Boss. Atro35 clones also exhibit a loss of R7 and cone cell markers. Thus, Atro binds to the putative regulatory regions of genes that are connected to N signaling (such as emc, Dl, mam, fng, neur, numb, Supplementary file 1), genetically interacts with N and regulates N target expression.\n\nWhile the strongest overlap in our ChIP-seq peaks was seen between Atro and Trl, we also observed significant overlap of our Atro ChIP-seq data with ChIP data sets of Yorkie (Yki), the key transcriptional co-activator of the Hippo pathway (Figure 5B). Interestingly, the atypical cadherin Fat regulates Yki activity via the Hippo pathway ([Bennett and Harvey, 2006; Cho et al., 2006; Silva et al., 2006; Willecke et al., 2006] and reviewed in Enderle and McNeill [2013] and planar polarity via Atro (Fanto et al., 2003; Saburi et al., 2012; Sharma and McNeill, 2013). Significantly, neurodegeneration by Atro has been shown to be mediated in part by Yki and the Hippo pathway (Napoletano et al., 2011). Thererfore, our finding that Yki and Atro are found at the same loci suggests a direct mechanism by which Atro may impact neurodegeneration, and suggests that Atro interactions with Yki may feed back into growth and patterning regulation by Fat cadherins.\n\nTo our knowledge, this is the first genome-wide analysis of Atrophin. Our genome-wide ChIP-seq and phenotypic analyses reveal many novel direct targets of Atro, and showed that Engrailed, Notch and Dpp signaling are directly regulated by Atro. Our analyses indicate that Atro preferentially binds to Trl binding sites. Interestingly, the fraction of paused genes is significantly more correlated with sites that bind both Atro and Trl, than just Trl alone, suggesting Atro may have a function in the regulation of pausing. Significantly, ChIP-re-ChIP experiments reveal that Atro and Trl bind to the same loci simultaneously, and phenotypic analyses indicate that Atro restricts expression of genes whose expression is promoted by Trl. Taken together, our data indicate that Atro is a critical component of developmental signaling and is an important general modulator of transcription activation by Trl.\n\n## Materials and methods\n\n### Double crosslink ChIP and subsequent ChIP-seq\n\nTwo\u00a0step crosslinking ChIP was required in order for ChIP to enrich for positive controls when using the SG2524 anti-Atro antibody (see below). S2 cells (107 cells/mL, S2-DGRC, stock #6 from Drosophila Genomics Research Center) were washed three times in sterile PBS. Washed cells were first fixed with 2 mM ethylene glycol bis(succinimidyl succinate) (EGS) in PBS for 45 min at room temperature followed by three PBS washes. Washed cells were crosslinked in 1% formaldehyde in PBS for 15 min at room temperature and quenched in 125 mM glycine for 5 min on ice. Cells were then washed once in ChIP Wash Buffer A (10 mM Hepes pH7.6, 10 mM EDTA pH8.0, 0.5 mM EGTA pH8.0, 0.25% Triton X-100) and followed by a wash in ChIP Wash Buffer B (10 mM Hepes pH7.6, 100 mM NaCl, 1 mM EDTA pH8.0, 0.5 mM EGTA pH8.0, 0.01% Triton X-100) at 4\u00b0C, 5 min each. Washed cells were resuspended in Sonication buffer (50 mM Hepes pH7.6, 140 mM NaCl, 1 mM EDTA pH8.0, 1% Triton X-100, 0.1% sodium deoxycholate, 0.1% SDS, supplemented with proteinase inhibitors) at a concentration of 108 cells/mL. Cells were then sonicated using a Qsonica Q700 sonicator in an ice-water bath (until fragments were roughly 150 bp in length). 10 \u03bcL of 10% SDS, 100 \u03bcL of 1% sodium deoxycholate, 100 \u03bcL of 10% Triton X-100, 28 \u03bcL of 5M NaCl were added to each mL of sonicated chromatin and incubated at 4\u00b0C for 10 min. Sonicated chromatin was then spun down at\u00a0\u226520,000g for 5 min to remove cellular debris and the supernatant was used for ChIP.\n\nProtein G Dynabeads (Invitrogen, Lithuania) were blocked in 1 mg/mL BSA in sonication buffer for at least 2 hr at 4\u00b0C. Blocked beads were conjugated with the antibodies for at least 4 hr at 4\u00b0C. 5 \u03bcL anti-Atro sera (SG2524, raised in rabbits against Atro amino acids 121\u2013134, KGIDKKWTEDETKK), and 5 \u03bcL normal rabbit IgG (Cell Signaling\u00a0Technology, Danvers, MA) were used for ChIP. Of the\u00a0sonicated chromatin,\u00a0300\u00a0\u03bcL\u00a0were incubated with conjugated beads overnight on a rotating wheel at 4\u00b0C. Beads were washed for 5 min each in Sonication buffer, Wash A (50 mM Hepes pH7.6, 500 mM NaCl, 1 mM EDTA pH8.0, 1% Triton X-100, 0.1% sodium deoxycholate, 0.1% SDS, supplemented with proteinase inhibitors), Wash B (20 mM Tris pH8.0, 1 mM EDTA pH8.0, 250 mM LiCl, 0.5% NP-40, 0.5% sodium deoxycholate), and TE buffer. Beads were then resuspended in Elution Buffer (50 mM Tris pH8.0, 50 mM NaCl, 2 mM EDTA, 0.75% SDS, 20 ug/mL RNase A) and incubated at 68\u00b0C overnight to remove crosslinks. Eluted chromatin was extracted by treating with Proteinase K followed by phenol chloroform DNA extraction (with 6 \u03bcg glycogen added during DNA precipitation\u00a0[Thermo Scientific, Lithuania]). The extracted DNA was resuspended in 50 \u03bcL Tris pH8.0.\n\nThree biological replicates were used for library construction (along with three corresponding IgG ChIP control). ChIP samples were treated with polynucleotide kinase and DNA polymerases for 30 min at room temperature (35 \u03bcL ChIP sample, 5 \u03bcL 10xNEB two buffer (New Englands Biolabs, Ipswich, MA), 2 \u03bcL of 25 mM ATP, 2 \u03bcL of 10 mM dNTP, 10U T4 polynucleotide kinase, 4.5U T4 DNA polymerase, 1U Klenow Large Fragment DNA Polymerase, water to a volume of 50 uL). Afterwards, DNA was purified with PEG bead slurry (1M NaCl, 23% PEG, Sera-Mag Speedbeads (Fisher Scientific, England) with final PEG concentration of 13.87%) and eluted with 35 uL Qiagen EB buffer (Qiagen, Valencia, CA). Single dA overhang was added to eluted ChIP samples by incubating samples in 35 \u03bcL ChIP samples, 5 \u03bcL 10X NEB two buffer, 1 \u03bcL 10 mM dATP, 5U Klenow Fragment (3\u2019\u22125\u2019 exo-) (New England Biolab), water to 50 \u03bcL for 30 min at 37\u00b0C. Samples were purified with PEG bead slurry and eluted with 35 \u03bcL Qiagen EB buffer. Short adapators for sequencing were ligated to samples by incubating samples at room temperature overnight in ligation buffer (35 \u03bcL DNA, 12 \u03bcL 5X quick ligation buffer, 2000U quick T4 DNA ligase, 2 \u03bcL 0.5 \u03bcM Illumina short sequencing adaptor, water to 60 \u03bcL). ChIP samples were purified two times with PEG bead slurry (started with 20% PEG instead of 23% PEG; final PEG of 8.89% and 10.91%, respectively) and eluted with 35 \u03bcL Qiagen EB buffer. Adaptor ligated libraries were PCR amplified (10 cycles), purified with PEG bead slurry (started with 20% PEG instead of 23%; final PEG concentration of 9.19%), and eluted with 35 \u03bcL Qiagen EB buffer. Libraries were then sequenced on Miseq (Illumina, San Diego, CA) using PE150V3 kit PE 85 bp. BWA program (v0.6.1; using default parameters) was used to align sequence reads to Drosophila genome release five (Attrill et al., 2016).\n\n### Single crosslink ChIP\n\nA second, independent ChIP was performed with a monoclonal antibody (4H6) raised against Atro amino acids 1369\u20131378 (SRQSPLHPVP) using Drosophila S2 cells catalog #006 from the Drosophila Genomics Resource Center. This ChIP was performed using two biological replicates (cells grown and ChIP\u2019ed at different times). The cells were grown to a density of 0.2\u20131 \u00d7 107 cells/mL and fixed in 1% formaldehyde for 15 min at ambient temperature. The reaction was quenched by 0.16 M glycine pH 7.0 for 5 min and washed in PBS. Cells were sequentially washed with ChIP Wash buffer A and ChIP Wash Buffer B for 10 min at 4\u00b0C followed by resuspension in Sonication buffer to a final concentration of 5\u201310 \u00d7 107 cells/mL. Nuclei were sonicated for 15 min using a Diagenode Bioruptor, rotated for 10 min followed by centrifugation for 10 min at 13,000 rpm at 4\u00b0C.\n\nA mix of Protein A and G Dynabeads (Invitrogen, Lithuania) blocked with BSA (Sigma Aldrich, St Louis, MO) were mixed with the antibody. Beads and antibodies were incubated for at least 2 hr followed by the addition of 0.5\u20131 \u00d7 107 cells. Chromatin and antibody bead complexes were formed during at least 2 hr followed by 5 min washes with Sonication buffer, Wash A, Wash B and TE buffer. Beads were resuspended in Elution buffer (same as above but supplemented with 20 \u00b5g/mL glycogen) in a new tube. Cross-linking was reversed at 68\u00b0C for at least 4 hr and proteins removed by Proteinase K digestion. DNA was purified by phenol-chloroform extraction, ethanol precipitated and finally resuspended in 200 \u00b5l 0.1\u00d7TE.\n\nThe DNA was sequenced at the Uppsala Genome Center using SOLiD (TM) ChIP-Seq Library preparation, size selection (around 150 bp + adapters 95 bp) and sequenced using SOLiD4 75 bp fragment run. The number of mapped reads were 11270731 (Input 1), 13320338 (Atro ChIP 1), 7315911 (Input 2) and 6972016 (Atro ChIP 2).\n\n### ChIP-re-ChIP\n\nS2 cells were double crosslinked, sonicated, and ChIP\u2019ed as above, using 5 \u03bcL anti-Atro sera (SG2524), and 10 \u03bcL normal rabbit IgG (Cell Signaling\u00a0Technology). After the first ChIP, beads were washed and eluted for re-ChIP as described in Truax and Greer (2012). Eluted chromatin was incubated in BSA-blocked Dynabeads for 2 hr to remove any leftover antibodies. The supernatant containing eluted chromatin was re-ChIP\u2019ed by incubating in beads conjugated with the appropriate amount of antibodies overnight (5 \u03bcL anti-Atro sera (SG2524), 10 \u03bcL anti-Trl sera (gift from K. White), 10 \u03bcL normal rabbit IgG (Cell Signaling\u00a0Technology)). After the re-ChIP, the beads were washed and eluted as normal double crosslink ChIP samples above. qPCRs were done in technical triplicates with SYBR green PCR Master Mix (Applied Biosystems,\u00a0Canada, 20 \u03bcL reaction volume; qPCR was performed three times for each ChIP samples). Percent input and errors were calculated using standard percent input calculations. qPCR primer pairs are listed in Supplementary file 2.\n\n### Bioinformatics\n\nFor each biological replicate, peaks were called using MACS2 (version 2.1.0, FDR\u00a0=\u00a00.01, genome size 1.2 \u00d7 108). Each Atro ChIP-seq replicate was compared with its corresponding IgG ChIP-seq replicate control (or input control for the second independent Atro ChIP-seq replicates) in the MACS analysis. Peaks from the biological replicates were intersected and only peaks present across all replicates with summits within 100 bp were selected. Peaks were extended by 2 kb on both sides and then annotated by intersecting all Drosophila genes\u2019 coordinates with the peaks coordinates using BEDTools (Quinlan and Hall, 2010). MEME-ChIP was carried out using first-order model, any number of repetitions, motif count of 10, score\u00a0\u22655 and an E-value threshold of\u00a0\u226410. Overlap of Atro ChIP with Trl ChIP data sets (Figure 5C) was done using BEDTools Intersect function. Atro-binding sites were compared to data from modENCODE (downloaded from http://intermine.modencode.org/), (Philip et al., 2015) for CBP, and (Oh et al., 2013) for Yki, and gene expression divided into three equally sized bins (low, medium and high expressions) from (Cherbas et al., 2011) using custom Perl scripts.\n\n### Principal component analyses\n\nThe enrichment values for each factor in the Atro binding regions were calculated by taking the mean of the top three consecutive enrichment values within each region (Philip et al., 2015). All factors were normalized so that 0 represents the genomic mean (background levels) and one represents the genomic maximum (mean of top 0.001 percentile) for each factor. Enriched Atro regions were used as observations and normalized enrichment values of each factor within the regions were used as variables as decribed in (Philip et al., 2015). Hierarchical clustering was done on all significant components of the analysis using Ward clustering to calculate tree distances. The three classes of Atro-bound regions were based on hierachical clustering.\n\n### Clones and immunofluorescence\n\nMitotic clones were generated in flies with the following genotypes:\n\nhs-flp; ; Atro35 FRT80B / ubi-GFP FRT80B\n\nhs-flp; ; TrlR85 FRT2A / hs-GFP, Minute, FRT2A\n\nhs-flp; NRE-GFP / +; Atro35 FRT80B / arm-LacZ FRT80B\n\nMitotic clones were generated by heat shocking (at 37\u00b0C) larvae for 45 min at 48 hr and 72 hr after egg laying. TrlR85 clones were additionally heat shocked for 45 min about 1.5 hr prior to dissection to induce GFP expression. Larval tissues were dissected and prepared as in standard protocol. Sample sizes are listed in Supplementary file 3. The following antibodies were used for immunofluorescence: mouse antibodies against En (DSHB 4D9, 1/400), Pros (DSHB MR1A, 1/500), Ct (DSHB 2B10, 1/500), Wg (DSHB 4D4, 1/500), and \u00df-Gal (Promega\u00a0[Madison, WI], 1/1000); rabbit antibodies against En (Santa Cruz (Santa Cruz, CA)\u00a0d-300, 1/500), Omb (gift from G. Pflugfelder, 1/1000), Dpp (gift from M. Gibson, 1/100), Ttk (gift from W. Ge, 1/100), and pMad (Cell Signaling Technology (Danvers, MA) #9510, 1/500); guinea pig antibodies against Sens (gift from H. Bellen, 1/1000), and Runt (gift from C. Desplan, 1/500).\n\n### In situ hybridization\n\nenGal4 / +; UAS Atro RNAi (Bloomington stock center, line 32961) / + larvae were used for in situ hybridization. Larval wing discs are prepared and stained as described in Morris et al. (2009), substituting wing discs for testes. Primers for probes are listed in Supplementary file 2.\n\n### S2 cells and knockdown\n\nS2 cells were purchased from Drosophila Genomics Resource Center (S2-DGRC, stock #6). S2 cells were grown in S2 media\u00a0+\u00a010% fetal bovine serum in standard conditions, and cells were kept healthy for all experiments. Double stranded RNA was made using the Megascript T7 kit (Life Technologies, Canada). Primers used to make the dsRNA are listed in Supplementary file 2. S2 cells were dsRNA treatment using standard bathing S2 knockdown protocol. 10 ug/mL of dsRNA was used for each treatment.\n\n### Immunoprecipitation\n\nS2 cells (107 cells per immunoprecipitation) were incubated in 0.5 mL LPC buffer (5% sucrose, 35 mM Hepes pH7.4, 80 mM KCl, 5\u00a0mM\u00a0K2HPO4, 5 mM MgCl2, 5 mM CaCl2, 0.01% \u03b1-lysophospatidylcholine) for 3 min at room temperature. Cells were resuspended in 0.2 mL MNase buffer (5% Glycerol, 20 mM Tris pH7.4, 60 mM KCl, 15 mM NaCl, 5 mM CaCl2, 3 mM MgCl2, 0.5% NP-40, 1 mM DTT). 6 \u03bcL of micrococcal nuclease (40 U/\u03bcL, New England Biolabs) were added and incubated at 25\u00b0C for 5 min. 0.3 mL of MNase dilution buffer (3.6 mM Tris pH8.8, 12 mM EDTA, 225 mM NaCl, 60 mM KCl, 1.2% NP-40, supplemented with proteinase inhibitor) were added and incubated on shaker for 10 min at 4\u00b0C. MNase treated samples were centrifuged to remove cellular debris. Supernatant were used for immunoprecipitation using standard methods.\n\n### Accession number\n\nChIP-Sequencing data reported in this study are archived at the Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/) as accession numbers GSE87509 (ChIP using Atro antibody SG2524) and GSE87471 (second independent Atro ChIP with antibody 4H6).\n",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "4c0606ad-a0c3-4cd6-881c-a8db6cec18da",
+      "submission_id": "8022e7c1-52c5-40c0-b85c-c2861ccd5b50",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- K VijayRaghavan, National Centre for Biological Sciences, Tata Institute of Fundamental Research , India\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23084.039](https://doi.org/10.7554/eLife.23084.039)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Atrophin controls developmental signaling pathways via interactions with Trithorax-like\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by K VijayRaghavan as the Senior Editor and Reviewing Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary and Essential revisions:\n\nThis is an interesting paper that uses an analysis of the genome-wide binding sites of the co-repressor Atrophin in Drosophila to increase understanding of target genes under Atrophin control and to suggest a mechanism of Atrophin function as a cofactor regulating the activity of Trithorax-like (Trl). This is a valuable addition to our understanding of how signaling pathways are regulated.\n\nBased on Atrophin binding peaks close to developmental pathway genes the authors explore the role of Atrophin in a number of pathways through analysis of Atrophin mutant clones. Evidence is presented implicating Atrophin as a regulator of engrailed, the Dpp pathway and Notch signalling. The binding data allow the inference of direct targets and this study is more comprehensive than prior analyses although Atrophin has been previously implicated in the regulation of engrailed and Dpp signalling.\n\nMotif analysis on the Atrophin binding peaks indicates a strong enrichment for GA repeats, a motif associated with Trl. The majority of Atrophin binding peaks overlap Trl binding peaks and sequential ChIP experiments support the simultaneous binding of both Atrophin and Trl. Functional experiments on Atrophin targets, engrailed and thick veins, indicate that they are also regulated by Trl. All this forms an association between Atrophin and Trl and supports the authors' model that Atrophin can act to modulate gene activation by Trl.\n\nThe question is then how close is the association between Atrophin and Trl? The authors test this by co-IP and report no evidence for interaction in conventional extracts, however they do show co-IP following chromatin solubilisation using micrococcal nuclease. The authors conclude that Atrophin and Trl participate in a complex and suggest that Atrophin is a major Trl cofactor. Whilst there is good evidence for a co-localisation of Atrophin and Trl on chromatin the evidence for direct interaction seems weak. It remains plausible that Trl is associated with open chromatin regions where Atrophin may be recruited by a number of transcription factors and it is not clear that a direct interaction with Trl is required.\n\nAlthough the association between Atrophin and Trl, both at the binding and functional levels, is interesting we do not think sufficient evidence is provided for the involvement of Atrophin in a clear mechanism as a direct cofactor of Trl. The discussions should appropriately be toned-down.\n\nThis paper is relatively straightforward and presents a consistent picture about the role of Atrophin in transcriptional regulation. The data are of high quality and convincing and they support the authors' conclusions. Overall this is a valuable and significant addition to the field.\n\nReviewer #1 (Minor Comments):\n\n1) Figure 1. How are the 1275 S1-3-5 peaks derived from the 1377 common peaks mentioned in the text?\n\n2) Subsection \u201cAtro modulates developmental gene expression during larval development\u201d, first paragraph: \"two strong Atro peaks\" upstream of the en TSS are described as being \"in the en promoter\". What are the limits of the en promoter and has it been defined? Similarly, subsection \u201cAtro directly regulates Dpp signaling via thickveins\u201d: \"Atro bind's tkv's regulatory region\"; what is this region and has it been defined? Also similarly, subsection \u201cAtro is required for Notch signaling and directly regulates Notch pathway gene expression\u201d, second and last paragraphs: \"Atro binds to the regulatory region of fng\" and \"regulatory regions of multiple N signaling components\"; what is the evidence these are regulatory regions?\n\n3) The clonal analysis data is not always compelling; particularly the enhancement in Figure 2 B' is difficult to see in the image provided.\n\n4) As the suggestion of a direct complex between Atro and Trl seems to me to be a major, or the major, point of interest in the paper, why is the critical co-IP experiment in a supplementary figure?\n\n5) Figure 5. Although most Atro peaks overlap Trl peaks, a sizeable minority do not. Is this just a genomic data thresholding issue or is there good evidence for Atro binding in the absence of Trl? The peak the authors use in Figure 6 seems to be a clear example but it would be good if the authors could comment in general on the Atro sites that lack Trl and how they fit in their model.\n\nReviewer #2 (Minor Comments):\n\n1) The choice about which data to include in the supplemental figures sometimes seems odd. For example, the co-IP data seem central to their conclusions and so I don't understand why they are relegated to a supplemental figure.\n\n2) Perhaps it's there somewhere, but I can't readily find the source of the genomic data that was used to generate the graph shown in Figure 5B.\n\n3) Does bioinformatic analysis give any clue as to the difference between the Trl peaks that bind Atro and those that do not?\n\n4) Given that the co-IP analysis was performed on MNase treated crude lysates, the interaction between Atro and Trl could be very indirect. Do the authors think it depends on the presence of chromatin fragments in the lysates?\n\n5) Some of the ChIP experiments used double cross-linking. Is this because they found that the double cross-linking enhanced their signal?\n",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a6f43239-328b-4603-9cf0-6a6c61abd1c2",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C1",
+      "claim": "Mutations in human Atrophin1 cause dentatorubral-pallidoluysian atrophy, a neurodegenerative disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in human Atrophin1, a transcriptional corepressor, cause dentatorubral-pallidoluysian atrophy, a neurodegenerative disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koide et al., 1994 and Nagafuchi et al., 1994 in the Introduction section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "154881a4-e894-4947-a8e6-64321335ca46",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C2",
+      "claim": "Drosophila Atrophin mutants display neurodegeneration, segmentation, patterning and planar polarity defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila Atrophin (Atro) mutants display many phenotypes, including neurodegeneration, segmentation, patterning and planar polarity defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Erkner et al., 2002; Zhang et al., 2002; Fanto et al., 2003; Charroux et al., 2006; Napoletano et al., 2011; Saburi et al., 2012; Sharma and McNeill, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "861119ff-575e-460d-9163-a5411728092e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C3",
+      "claim": "ChIP-seq identified 1300 potential direct targets of Atro including engrailed, and components of the Dpp and Notch signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq identified 1300 potential direct targets of Atro including engrailed, and components of the Dpp and Notch signaling pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental ChIP-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "d8107fb2-c025-421e-8360-6e0fb13ec526",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C4",
+      "claim": "Atro regulates Dpp and Notch signaling in larval imaginal discs, at least partially via regulation of thickveins and fringe.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Atro regulates Dpp and Notch signaling in larval imaginal discs, at least partially via regulation of thickveins and fringe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data including in situ hybridization and immunofluorescence analyses presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "5aff8738-135f-42c7-8dc0-ed0890236cb1",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C5",
+      "claim": "Atro interacts with the Drosophila GAGA Factor, Trithorax-like (Trl), and they bind to the same loci simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, bioinformatics analyses, sequential ChIP and coimmunoprecipitation experiments reveal that Atro interacts with the Drosophila GAGA Factor, Trithorax-like (Trl), and they bind to the same loci simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-re-ChIP and coimmunoprecipitation experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "c19caed9-25a1-4f2c-af06-01cff9440346",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C6",
+      "claim": "Atro is required to modulate the transcription activation by Trl in larval imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Phenotypic analyses of Trl and Atro clones suggest that Atro is required to modulate the transcription activation by Trl in larval imaginal discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by phenotypic analyses of mutant clones presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "b92a6fe2-5749-470f-830e-d570b961a8fe",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C7",
+      "claim": "Atro is a major Trl cofactor that functions to moderate developmental gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that Atro is a major Trl cofactor that functions to moderate developmental gene transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined ChIP-seq, ChIP-re-ChIP, and phenotypic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "a06ad783-f1a5-4e30-a3a6-a0e766a581be",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C8",
+      "claim": "A polyglutamine expansion in ATN1 is responsible for dentatorubral-pallidoluysian atrophy (DRPLA).",
+      "claim_type": "EXPLICIT",
+      "source": "A polyglutamine expansion in ATN1 is responsible for dentatorubral-pallidoluysian atrophy (DRPLA) a progressive disorder of ataxia, myoclonus, epilepsy, intellectual deterioration and dementia (Koide et al., 1994; Nagafuchi et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koide et al., 1994 and Nagafuchi et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "455a7d8c-b49e-4d3f-a500-081b06ecb1b3",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C9",
+      "claim": "Expression of polyglutamine expansion Atro in Drosophila leads to neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila has only one Atrophin (Atro) gene, and expression of polyglutamine expansion Atro also lead to neurodegeneration (Napoletano et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Napoletano et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "b46c2469-9ebe-40a5-bdcf-ad2529d343d7",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C10",
+      "claim": "Loss of Atro results in defects in planar polarity, segmentation, and eye, wing and leg developmental defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Atro results in defects in planar polarity, segmentation, and eye, wing and leg developmental defects (Erkner et al., 2002; Zhang et al., 2002; Fanto et al., 2003; Charroux et al., 2006; Napoletano et al., 2011; Saburi et al., 2012; Sharma and McNeill, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "958908c2-91d8-43c5-ba57-efe08e22c6ef",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C11",
+      "claim": "Atro is required for proper expression of en in the embryo and represses the gap genes Kr\u00fcppel and knirps.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro is required for proper expression of en in the embryo and represses the gap genes Kr\u00fcppel and knirps (Erkner et al., 2002; Zhang et al., 2002; Haecker et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkner et al., 2002; Zhang et al., 2002; Haecker et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "d8aaa0ed-0a79-4556-a75e-afd214add740",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C12",
+      "claim": "Atro affects epidermal growth factor receptor (EGFR), Decapentaplegic (Dpp) and Hedgehog signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro also affects epidermal growth factor receptor (EGFR), Decapentaplegic (Dpp) and Hedgehog signaling (Erkner et al., 2002; Charroux et al., 2006; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkner et al., 2002; Charroux et al., 2006; Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2c2b7bd9-ee9a-4c9c-9979-1541b2212619",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C13",
+      "claim": "Only three direct Atro targets have been defined: knirps, fat and dpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite regulating many pathways and processes, only three direct Atro targets have been defined (knirps, fat and dpp) (Wang et al., 2006; Napoletano et al., 2011; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006; Napoletano et al., 2011; Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ca0227a6-6140-41e9-8a02-c241c8bd54a5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C14",
+      "claim": "Atro physically interacts with histone deacetylase 1 (HDAC1) through its SANT domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro physically interacts with histone deacetylase 1 (HDAC1) and the histone methyltransferase, G9a, through its SANT and ELM2 domains, respectively (Figure 1A) (Wang et al., 2006, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "57924954-1264-44d9-a623-9a97bf10f114",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C15",
+      "claim": "Atro physically interacts with the histone methyltransferase G9a through its ELM2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro physically interacts with histone deacetylase 1 (HDAC1) and the histone methyltransferase, G9a, through its SANT and ELM2 domains, respectively (Figure 1A) (Wang et al., 2006, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "081594df-cf4d-4d4b-a044-b6e5afa745ad",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C16",
+      "claim": "Atro interacts with the co-repressor Scribbler (also called Brakeless).",
+      "claim_type": "EXPLICIT",
+      "source": "Atro also interacts with other cofactors such as the co-repressor, Scribbler (also called Brakeless) (Wang et al., 2006; Haecker et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006; Haecker et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "d2f4198c-c5c7-4a84-8c08-321f042ade65",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C17",
+      "claim": "Atro does not have a DNA-binding sequence and has been shown to interact with DNA via interactions with nuclear receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro does not have a DNA-binding sequence and has been shown to interact with DNA via interactions with nuclear receptors (Wang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wang et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "a40f2c04-cf5f-4872-8f92-f182d55b254e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C18",
+      "claim": "Trl is an essential transcription factor that directly binds to GA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl is an essential transcription factor that directly binds to GA repeats (Biggin and Tjian, 1988; Soeller et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Biggin and Tjian, 1988; Soeller et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "3b9f669b-5198-431f-aa46-825a55c25bd5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C19",
+      "claim": "Trl regulates the segment polarity gene engrailed (en).",
+      "claim_type": "EXPLICIT",
+      "source": "Trl regulates many developmentally important genes including the segment polarity gene, engrailed (en) (Farkas et al., 1994; Bejarano and Busturia, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Farkas et al., 1994; Bejarano and Busturia, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "4278f2f8-9590-4b7c-90a1-ba5d81cde96d",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C20",
+      "claim": "Trl can interact with other transcription factors (e.g. Yorkie, Tramtrack) to regulate transcriptional targets in patterning and growth control.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl can interact with other transcription factors (e.g. Yorkie, Tramtrack) to regulate transcriptional targets in patterning and growth control (Pagans et al., 2002; Oh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pagans et al., 2002; Oh et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "89871598-000a-4fb3-9b99-bb173084fec4",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C21",
+      "claim": "The majority of Atro peaks are located in actively transcribed genes, often close to the promoters or in introns.",
+      "claim_type": "EXPLICIT",
+      "source": "We further mapped the 1377 Atro peaks relative to gene features and gene expression, which showed that the majority of peaks are located in actively transcribed genes, often close to the promoters or in introns (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data analysis shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "0333168d-47c8-4a73-8409-56cd519c7c73",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C22",
+      "claim": "Class 2 Atro peaks are strongly enriched with Polycomb factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that Class 2 (blue, Figure 1\u2014figure supplement 1A and B) peaks are strongly enriched with Polycomb factors, indicating a potential connection between Atro and Polycomb factors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by principal component analysis shown in Figure 1\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ee648c67-218c-465d-9603-444821d4d8fe",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C24",
+      "claim": "There are two strong Atro peaks in the en promoter within 2.4 kb upstream of the transcription start site.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two strong Atro peaks in the en promoter (Figure 1E, within 2.4 kb upstream of the transcription start site [Kassis et al., 1992]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 1E and citation to Kassis et al., 1992.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "658172ab-5054-4a86-b997-71ffb255f379",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C25",
+      "claim": "Atro35 clones have increased En levels in antennal, wing and leg imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found Atro35 clones have increased En levels in antennal, wing and leg imaginal discs (Figure 2A,B, and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ad7a60d0-aaa2-41f1-935d-cc86e8c0f8e2",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C26",
+      "claim": "Atro35 clones only show increased En levels in clones located in the posterior compartment, where En is endogenously expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Atro35 clones only show increased En levels in clones located in the posterior compartment, where En is endogenously expressed (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "e0644d6b-bdc1-40eb-9d2f-e0f1e86f0cc4",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C28",
+      "claim": "Atro negatively modulates En expression levels to maintain moderate expression in imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Atro negatively modulates En expression levels to maintain moderate expression in imaginal discs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro35 clones have increased En levels in the posterior compartment but cannot induce ectopic En in the anterior compartment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "8500366c-180b-4e36-89ff-d2cf984bf47b",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C29",
+      "claim": "Several Atro peaks occur in putative regulatory regions of several Dpp signaling pathway components (e.g. thickveins, Daughters against dpp and schnurri).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our ChIP-seq data show that several Atro peaks occur in putative regulatory regions of several Dpp signaling pathway components (e.g. thickveins, Daughters against dpp and schnurri, Figure 3A and Supplementary file 1), suggesting Atro regulates Dpp signaling by directly regulating the expression of Dpp signaling pathway components.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 3A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "3ec16044-45b7-4b0d-9c81-057f84522a0a",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C30",
+      "claim": "Atro35 clones show upregulation of the tkv-LacZ reporter in the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thickveins (Tkv) is a critical Dpp receptor, and Atro35 clones show upregulation of the tkv-LacZ reporter in the wing (Wehn and Campbell, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wehn and Campbell, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "4125d891-a48d-4ff0-96ef-12a770a5e11b",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C31",
+      "claim": "tkv expression is increased if Atro is knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that Atro represses tkv expression, tkv transcript levels were assessed in Atro knocked down wing discs using in situ hybridization. Indeed, tkv expression is increased if Atro is knocked down (Figure 3B), confirming Atro represses tkv expression in the wing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "f7ffe8c1-82b9-4173-b311-4356cd1f07fd",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C32",
+      "claim": "Atro35 clones that cross the endogenous pMad regions have increased pMad levels along the interior border of the clone that is closest to the middle of the disc.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro35 clones that are found in the endogenous pMad regions have increased pMad levels along the interior border of the clones that is closest to the centre of the discs, where the endogenous Dpp source is located (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ccdbb9dc-6821-4002-b9cc-9a1fb0a0be47",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C33",
+      "claim": "Atro35 clones have increased Optomotor blind (Omb) expression, indicating increased Dpp signaling in the clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro35 clones also have increased Optomotor blind (Omb, a downstream target of Dpp signaling) expression (data not shown), indicating increased Dpp signaling in the clones (Grimm and Pflugfelder, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation to Grimm and Pflugfelder, 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "e689c040-9fe8-4db7-b4e5-1c5845c26c19",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C34",
+      "claim": "Atro35 clones far from the Dpp source do not induce ectopic Mad phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Atro35 clones far from the Dpp source do not induce ectopic Mad phosphorylation, suggesting Dpp levels are not increased in Atro35 clones (Figure 3D, arrow heads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "fd8c3bad-a321-4f99-895b-4c653684377e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C35",
+      "claim": "Atro35 clones in the anterior or posterior compartments do not cause ectopic Dpp expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, Atro35 clones in the anterior or posterior compartments do not cause ectopic Dpp expression (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "304d500f-cd5f-4b82-b497-a4b82b511666",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C36",
+      "claim": "Atro directly regulates tkv expression and thereby Dpp signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that Atro directly regulates tkv expression and thereby Dpp signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-seq data showing Atro binding at tkv locus and phenotypic data showing increased pMad in Atro35 clones.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "9a8ea5f2-d09f-4d9e-bc78-5a35edfaf755",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C37",
+      "claim": "Atro binds the putative regulatory regions of several Notch signaling components (mastermind, Delta, neuralized and fringe).",
+      "claim_type": "EXPLICIT",
+      "source": "Atro ChIP data also revealed that Atro binds the putative regulatory regions of several Notch signaling components (mastermind (mam), Delta (Dl), neuralized (neur) and fringe (fng) (Figure 4A, Supplementary file 1), suggesting that Atro may regulate Notch signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 4A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "14f4a913-1c95-4e40-8373-820edcab76f8",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C39",
+      "claim": "Atro genetically interacts with Notch.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Atro genetically interacts with N, suggesting Atro may play a role in N signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genetic interaction data showing enhanced wing notching in transheterozygous mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "03f46ae4-a5e8-403c-9cd5-9f369614a015",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C40",
+      "claim": "Atro35 clones cause the Notch signaling reporter (NRE-GFP) to express in a diffused pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro35 clones that cross the wing margin disrupt the expression pattern of the NRE-GFP reporter (Figure 4C), resulting in diffuse expression of the NRE-GFP reporter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "15723901-0f26-4b60-919d-1e95bd249349",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C41",
+      "claim": "Large Atro35 clones cause an autonomous loss of wing margin marker Cut as well as ectopic Cut expression on the posterior side of the clone.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Atro35 clones that cross the wing margin cause a loss of wing margin markers (Figure 4D and Figure 4\u2014figure supplement 1A). In some cases, Atro35 clones induce ectopic Ct expression just outside of the posterior clonal border (Figure 4D, arrow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4D and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "04eaa526-0a2f-4f83-a87d-430232a446ed",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C42",
+      "claim": "Atro35 clones do not affect Cut expression in the antennal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the wing, Atro35 clones do not affect Ct expression in the antennal discs, where a requirement of N signaling for Ct expression has not been shown (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "bbfd418c-6404-4fdd-85e5-35ce97965cf5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C45",
+      "claim": "Atro35 clones have extra Sens positive cells clustered together in groups of two to three cells, resembling the number and shape of the R2/5/8 equivalence group.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro35 clones have extra Sens positive cells (Figure 4E), clustered together in groups of two to three cells, resembling the number and shape of the R2/5/8 equivalence group.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "38b5e3c2-70f8-4d18-9835-d57dfe8c8fcd",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C46",
+      "claim": "There is one cell that has more Sens staining than the rest within each Sens-positive cell cluster in Atro35 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noticed that there is one cell that has more Sens staining than the rest within each Sens-positive cell cluster (Figure 4E, arrowheads).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2183ee3b-a409-4f61-87d8-f5be6e7a4c02",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C47",
+      "claim": "Atro35 clones do not have an excess of cells marked with a late R8 marker, Bride of sevenless (Boss).",
+      "claim_type": "EXPLICIT",
+      "source": "Although Atro35 clones can induce extra Sens-positive cells, these clones do not have an excess of cells marked with a late R8 marker, Bride of sevenless (Boss) (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "00c853e9-f0e7-4680-b799-5d871c0b13cd",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C48",
+      "claim": "Atro35 clones lose R7 and cone cell markers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Atro35 clones also lose R7 and cone cell markers (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "584085f1-65c5-410d-aa1d-db68df1c70e9",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C49",
+      "claim": "Atro35 clones have reduced Emc protein levels anterior to the morphogenetic furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Atro35 clones have reduced Emc protein levels anterior to the morphogenetic furrow (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2f9efc66-7f6e-4ea8-a7ea-1cfbc5a4c51e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C50",
+      "claim": "The top motif discovered in Atro ChIP-seq data is a GA repeat, the binding motif of Trithorax-like (Trl).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed de novo motif analysis of our ChIP-seq data using MEME-ChIP (Bailey et al., 2009) (Figure 5A, Figure 5\u2014figure supplement 1). The top motif discovered is a GA repeat, the binding motif of Trithorax-like (Trl, Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MEME-ChIP analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "5704ca52-41bb-4177-8b74-19387800681b",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C51",
+      "claim": "The Trl binding motif is enriched within Atro ChIP peak summits.",
+      "claim_type": "EXPLICIT",
+      "source": "The Trl binding motif is enriched within Atro ChIP peak summits, indicating strongest Atro binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the MEME-ChIP analysis showing Trl motif as the top hit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "a096703a-4ce6-4223-baf6-cabc5948c485",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C52",
+      "claim": "Other enriched motifs in Atro ChIP-seq data include Twin of eyeless (Toy) and Mad.",
+      "claim_type": "EXPLICIT",
+      "source": "Other enriched motifs include Twin of eyeless (Toy) and Mad (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MEME-ChIP analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "f22f061a-9378-4bf0-b79a-5b0f25116433",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C53",
+      "claim": "The strongest overlap of Atro ChIP-seq data with other transcription factors was found with Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, several factors, including Trl, CBP (Nejire), the replication proteins Orc2 and MCM, Yorkie (Yki) and Polycomb proteins, showed increased overlap with increasing Atro binding (Figure 5B). Interestingly, the strongest overlap was found with Trl, confirming the MEME-ChIP analysis (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "e7335e89-d127-453c-bfe5-136233f9bdf5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C54",
+      "claim": "1123 out of 1377 Atro peaks overlap with Trl ChIP peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "We further compared our list of Atro peaks with the published Trl ChIP-seq data (Fuda et al., 2015) and found striking overlap between the two data sets (1123/1377 Atro peaks overlap with Trl ChIP, Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 5C and citation to Fuda et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "161b4ee7-72b6-4e61-93b2-c0ec7bd3b867",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C55",
+      "claim": "Endogenous Trl can be coimmunoprecipitated with endogenous Atro after pretreatment with micrococcal nuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not detect an interaction using standard coIP conditions, pretreating lysates with micrococcal nuclease allowed us to coimmunoprecipitate endogenous Trl with endogenous Atro (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by coimmunoprecipitation data shown in Figure 5D (note: the text refers to Figure 5D but the actual figure is Figure 6\u2014figure supplement 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "d9057749-4a9e-4744-8062-1bdcd477587c",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C56",
+      "claim": "Atro-Trl ChIP-re-ChIP enriches for loci with both Atro and Trl peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "qPCR show that Atro-Trl ChIP-re-ChIP enriches for the locus with both Atro and Trl peaks, while it does not enrich for a locus with only Atro peak (enrichment is nearly equal to Atro-IgG ChIP-re-ChIP-negative control) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-re-ChIP qPCR data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "80c7e77d-3d6f-496b-a6a2-b757afe9b8e7",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C57",
+      "claim": "Atro and Trl co-occupy all the tested loci with both Atro and Trl peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional experiments showed that Atro and Trl co-occupy all the tested loci with both Atro and Trl peaks (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-re-ChIP data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "f8034cb4-4d17-4fad-97d8-00fa5856c4bc",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C58",
+      "claim": "Knock down of Trl leads to reduced abundance of Atro proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, we could not directly test if Atro association with DNA requires Trl in cells, as knock down of Trl also leads to reduced abundance of Atro proteins (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2bafbb8b-4b56-4153-a3ec-5a0668ffcd3d",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C59",
+      "claim": "Atro and Trl bind to the same loci and to one another, forming a complex on chromatin to regulate transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that Atro and Trl bind to the same loci and to one another, forming a complex on chromatin to regulate transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ChIP-re-ChIP and coimmunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "bac94474-a073-4521-971c-bb56ac51d1ff",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C60",
+      "claim": "There are strong overlaps of Atro and Trl ChIP-seq peaks at the en locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both ChIP-seq and ChIP-re-ChIP data show that Atro and Trl bind to the same loci simultaneously. Interestingly, there are strong overlaps of Atro and Trl ChIP-seq peaks at the en locus (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "dd178eca-a979-4f0c-b9ba-cf07412b904d",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C61",
+      "claim": "TrlR85 clones have reduced En expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Atro35 clones, TrlR85 clones have reduced En expression (Figure 6D), indicating that Trl is required for the positive regulation of En expression in larval discs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ba850994-c13b-4c47-a5b7-e1892e130342",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C62",
+      "claim": "Trl is required for the positive regulation of En expression in larval discs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Atro35 clones, TrlR85 clones have reduced En expression (Figure 6D), indicating that Trl is required for the positive regulation of En expression in larval discs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that TrlR85 clones have reduced En expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "c1ad62c5-fca1-4f15-b93a-bad05b4ecdf0",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C63",
+      "claim": "Atro and Trl bind to the same region of the tkv locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro and Trl ChIP-seq data also indicate that Atro and Trl bind to the same region of the tkv locus (Figure 6E), suggesting that Trl regulates tkv expression with Atro.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "32a8ec73-df20-41be-84d2-e80230cdcbb3",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C64",
+      "claim": "TrlR85 clones have reduced pMad levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to Atro35 clones, TrlR85 clones have reduced pMad levels (Figure 6F, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 6F and Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "b07fc4ff-36f8-472c-887f-ea62e2347a92",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C65",
+      "claim": "The reduced pMad in TrlR85 clones is caused by a downregulation of tkv expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the simplest model to explain our data is that the reduced pMad in TrlR85 clones is caused by a downregulation of tkv expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that TrlR85 clones have reduced pMad levels and the absence of Trl or Atro peaks within 20 kb of the mad locus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "199c86ec-a3a9-42a6-bc0e-85a52eb46890",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C66",
+      "claim": "Trl is required for tkv expression, while Atro is required for repression of tkv.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, similar to Atro and Trl's regulation of en, Trl is required for tkv expression, while Atro is required for repression of tkv.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the phenotypic data showing opposite effects of Atro35 and TrlR85 clones on tkv expression and pMad levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "80e92084-0562-434a-83ce-f57da1117d16",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C67",
+      "claim": "Atro binds to DNA via Trl, either directly or indirectly via some unknown cofactors, and Atro modulates transcriptional activation by Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro does not bind to DNA directly, while Trl has a DNA binding domain (Biggin and Tjian, 1988). Thus, our results suggest a model in which Atro binds to DNA via Trl, either directly or indirectly via someunknown cofactors, and Atro modulates transcriptional activation by Trl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro does not bind DNA directly, Trl has a DNA binding domain, and they bind to the same loci simultaneously.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "6ef7cec0-6516-4d44-a080-a47d592e30e1",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C68",
+      "claim": "Trl binding leads to open chromatin to allow transcription, and Atro binding negatively modulates Trl's activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain these phenotypes, we propose a model in which Trl binding leads to open chromatin to allow transcription, and Atro binding, either by directly interacting with Trl or through some unknown factors, negatively modulates Trl's activity (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the combined data from the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "5c45affd-fe40-4c3d-8f85-3bbf83b8642c",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C69",
+      "claim": "Atro binds to Histone deacetylase 1 (HDAC1) and a histone methyltransferase (G9a) to close chromatin and repress transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro binds to Histone deacetylase 1 (HDAC1) and a histone methyltransferase (G9a) to close chromatin and repress transcription (Wang et al., 2006, 2008), suggesting a mechanisms by which Atro is able to counteract Trl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al., 2006, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "7793b656-a9e4-417a-9f2d-11615907d6b1",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C70",
+      "claim": "Atro- and Trl-binding sites at the en, tkv and fng loci overlap with HDAC1-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Atro- and Trl-binding sites at the en, tkv and fng loci overlap with HDAC1-binding sites (from modENCODE, RPD3-Q3451) (Celniker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with modENCODE data and citation to Celniker et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "87cf21b0-cd47-4a3e-ad3f-b579583300c7",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C71",
+      "claim": "Loss of Trl leads to loss of expression of en and tkv where they are normally expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of Trl leads to loss of expression of en and tkv where they are normally expressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that TrlR85 clones have reduced En expression and reduced pMad levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "3c482948-19c9-4520-8af3-22cf0595fc8f",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C72",
+      "claim": "In the absence of Atro, Trl's activity is no longer negatively modulated, and expression of target genes such as en and tkv are increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Atro, Trl's activity is no longer negatively modulated, and expression of target genes such as en and tkv are increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro35 clones have increased En levels and increased tkv expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "5b9e9787-c33c-4543-a96e-9e2764e4bd25",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C73",
+      "claim": "In regions where en and tkv are not endogenously expressed, loss of Atro cannot induce ectopic expression as Atro's function is to negatively modulate the transcription of its target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in regions where en and tkv are not endogenously expressed, loss of Atro cannot induce ectopic expression as Atro's function is to negatively modulate the transcription of its target genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro35 clones cannot induce ectopic En expression in the anterior compartment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "98be36b6-31bb-4ef3-ac6c-a76926e672aa",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C74",
+      "claim": "Trl is enriched at paused promoters and is involved in transcription pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Trl is enriched at paused promoters and is involved in transcription pausing (Lee et al., 2008; Fuda et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee et al., 2008; Fuda et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "b5607c6c-156f-402e-99b6-dd9d299456d8",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C75",
+      "claim": "Trl recruits the negative elongation factor NELF to paused genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Trl recruits the negative elongation factor NELF to paused genes (Li et al., 2013), but the precise mechanism of how Trl affects pausing is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "498e9146-a8ec-438f-82f0-1c4e1c2ac4da",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C78",
+      "claim": "The pausing index increase is even higher for genes bound by both Atro and Trl than genes bound only by Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase of pausing index is even higher than genes bound only by Trl (Figure 6\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pausing index analysis shown in Figure 6\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "b39c8005-dcfb-454c-937b-b3a09484cd4f",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C79",
+      "claim": "Atro may be involved in transcriptional pausing with Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Atro may be involved in transcriptional pausing with Trl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that genes bound by both Atro and Trl have higher pausing index.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "a3a14cdf-4722-4dc8-8def-1321d607bc19",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C80",
+      "claim": "There are some Atro-binding sites that are not co-occupied by Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that there are some Atro-binding sites that are not co-occupied by Trl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overlap analysis showing 254 Atro peaks do not overlap with Trl peaks.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "85e62040-513a-4cb7-965c-8a8008cdd7da",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C81",
+      "claim": "Atro peaks that do not overlap with Trl peaks are slightly weaker than the ones that do.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection reveals strong Atro peaks that do overlap with Trl (Figure 6A); however, on a genome-wide basis, Atro peaks that do not overlap with Trl peaks are slightly weaker than the ones that do, as judged from the MACS2 derived significance (-log(p-value)) and fold enrichment values (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2e4e7796-36b6-45e6-9df2-f31c1146c164",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C82",
+      "claim": "Atro maternal mutants have missing, malformed and/or expanded En stripes.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro maternal mutants have missing, malformed and/or expanded En stripes (Zhang et al., 2002), while in discs Atro modulates En expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "c35a1652-26cb-4b0e-b676-c64d8d509824",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C83",
+      "claim": "During early embryogenesis, Pair-rule genes are required to first establish en expression.",
+      "claim_type": "EXPLICIT",
+      "source": "During early embryogenesis, Pair-rule genes are required to first establish en expression (DiNardo et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to DiNardo et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ea1df465-c02c-4454-b328-2efa4bda6fde",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C84",
+      "claim": "Atro is required for the proper expression of Pair-rule genes such as fushi tarazu and even-skipped.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro is also required for the proper expression of Pair-rule genes such as fushi tarazu and even-skipped (Erkner et al., 2002; Zhang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkner et al., 2002; Zhang et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ed57ad5d-8b05-4e76-aef9-b0c006dc6517",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C85",
+      "claim": "From late embryogenesis on, En expression no longer requires Pair-rule genes but depends on Polycomb group genes and unidentified activators.",
+      "claim_type": "EXPLICIT",
+      "source": "However, from late embryogenesis on, En expression no longer requires Pair-rule genes but depends on Polycomb group genes and unidentified activators (Moazed and O'Farrell, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moazed and O'Farrell, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "3faaade0-e36d-404d-9fa4-f7fb4b044d55",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C86",
+      "claim": "Trl and Atro are required for regulation of En expression from late embryogenesis through larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed reduced En expression in Trl clones in antennal and wing imaginal discs, while Atro disc clones have increased expression. These results suggest that Trl and Atro are required for regulation of En expression from late embryogenesis through larval development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the phenotypic data showing opposite effects of Trl and Atro clones on En expression in imaginal discs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2250a454-fe27-446f-9786-e928c10ad90f",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C87",
+      "claim": "Expressing higher than normal levels of En in the posterior compartment leads to lethality and anterior-posterior patterning defects of the posterior wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, expressing higher than normal levels of En in the posterior compartment leads to lethality and anterior-posterior patterning defects of the posterior wing, suggesting that moderating En levels is required for normal development, and high levels could be toxic (Guill\u00e9n et al., 1995; Tabata et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Guill\u00e9n et al., 1995; Tabata et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "0f0e30e9-d756-4856-89a3-b4bbcae5c9e8",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C88",
+      "claim": "Moderating En levels is required for normal development, and high levels could be toxic.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, expressing higher than normal levels of En in the posterior compartment leads to lethality and anterior-posterior patterning defects of the posterior wing, suggesting that moderating En levels is required for normal development, and high levels could be toxic (Guill\u00e9n et al., 1995; Tabata et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that overexpression of En leads to lethality and patterning defects.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "03d30752-f6cf-4954-84ad-51b321d36ff2",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C89",
+      "claim": "Atro35 clones can lead to ectopic dpp-LacZ expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Atro35 clones can lead to ectopic dpp-LacZ expression (Erkner et al., 2002; Zhang et al., 2013), we did not see increased Dpp in Atro35 wing clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Erkner et al., 2002; Zhang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "c6cea72c-7780-4269-a107-abf7a3b123a5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C90",
+      "claim": "Atro regulates Dpp signaling in the wing primarily by regulating tkv transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that Atro regulates Dpp signaling in the wing primarily by regulating tkv transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro35 clones increase pMad in a pattern consistent with increased Tkv levels but do not increase Dpp expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "774a7880-965d-4f84-a688-883d3bba5386",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C91",
+      "claim": "Atro knockdown results in upregulation of fng transcripts in larval wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Atro knockdown results in upregulation of fng transcripts in larval wings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "468323ae-757e-4986-b787-44e6e9dd7885",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C92",
+      "claim": "patched-Gal4-driven overexpression of fng leads to an autonomous loss of wing margin marker expression as well as ectopic expression of wing margin marker on the posterior border of the Fng overexpressing region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, patched-Gal4-driven overexpression of fng leads to an autonomous loss of wing margin marker expression as well as ectopic expression of wing margin marker on the posterior border of the Fng overexpressing region (Panin et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Panin et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "7820a206-7b09-4923-b470-8b01be0ca330",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C93",
+      "claim": "All Atro35 clones that cross the wing margin cause an autonomous loss of wing margin markers and large Atro35 clones can induce some ectopic wing margin marker expression on the posterior edge of the clone, mimicking patched-Gal4-driven Fng overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "All Atro35 clones that cross the wing margin cause an autonomous loss of wing margin markers and large Atro35 clones can induce some ectopic wing margin marker expression on the posterior edge of the clone, mimicking patched-Gal4-driven Fng overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "c47b00c1-eb4c-4a66-8b1c-3f9bc259c44b",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C94",
+      "claim": "Fng is crucial for N signaling at the margin.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Fng is crucial for N signaling at the margin (de Celis and Bray, 1997; Panin et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to de Celis and Bray, 1997; Panin et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "25e42a0d-4bd7-4d78-8423-0d74c0d6e8b8",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C95",
+      "claim": "Atro represses fng expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Atro represses fng expression, and loss of Atro and patched-Gal4-driven overexpression of Fng have similar N-related phenotype in the wing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that Atro knockdown increases fng transcripts and Atro35 clones have similar phenotypes to Fng overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "3c30ece6-57f6-47c5-8f65-08c15d937068",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C96",
+      "claim": "Loss of Atro and patched-Gal4-driven overexpression of Fng have similar N-related phenotype in the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Atro represses fng expression, and loss of Atro and patched-Gal4-driven overexpression of Fng have similar N-related phenotype in the wing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the comparison of phenotypes between Atro35 clones and Fng overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2c037e9e-29cb-432d-a1f4-9399217e0c00",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C97",
+      "claim": "Significant overlap of Atro ChIP-seq data with ChIP data sets of Yorkie (Yki) was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "While the strongest overlap in our ChIP-seq peaks was seen between Atro and Trl, we also observed significant overlap of our Atro ChIP-seq data with ChIP data sets of Yorkie (Yki), the key transcriptional co-activator of the Hippo pathway (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by overlap analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "2cf7c204-df01-440b-b5a9-d939aa2d6d40",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C100",
+      "claim": "Neurodegeneration by Atro has been shown to be mediated in part by Yki and the Hippo pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, neurodegeneration by Atro has been shown to be mediated in part by Yki and the Hippo pathway (Napoletano et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Napoletano et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "7aca8bfc-78af-4530-8ea6-44f48e3f5efa",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C101",
+      "claim": "Atro interactions with Yki may feed back into growth and patterning regulation by Fat cadherins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thererfore, our finding that Yki and Atro are found at the same loci suggests a direct mechanism by which Atro may impact neurodegeneration, and suggests that Atro interactions with Yki may feed back into growth and patterning regulation by Fat cadherins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on the overlap of Atro and Yki ChIP-seq data and known interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "8630280d-7c96-43b6-8107-1655bb7f93da",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C102",
+      "claim": "Atro preferentially binds to Trl binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Our genome-wide ChIP-seq and phenotypic analyses reveal many novel direct targets of Atro, and showed that Engrailed, Notch and Dpp signaling are directly regulated by Atro. Our analyses indicate that Atro preferentially binds to Trl binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the strong overlap between Atro and Trl ChIP-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "8814ec5a-eaa2-486c-bbef-e276923d0dfb",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C103",
+      "claim": "The fraction of paused genes is significantly more correlated with sites that bind both Atro and Trl, than just Trl alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the fraction of paused genes is significantly more correlated with sites that bind both Atro and Trl, than just Trl alone, suggesting Atro may have a function in the regulation of pausing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pausing index analysis shown in Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "35fa3f30-e8fc-4f36-8f30-339b5876dce0",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "claim_id": "C104",
+      "claim": "Atro is a critical component of developmental signaling and is an important general modulator of transcription activation by Trl.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that Atro is a critical component of developmental signaling and is an important general modulator of transcription activation by Trl.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8b8d06c1-7ea9-4aaf-993c-3677edbe2f31",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ChIP-seq identified 1377 Atro binding peaks corresponding to 1300 potential direct target genes, including engrailed. These peaks are predominantly located in actively transcribed genes near promoters or introns, with a subset enriched for Polycomb factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21, C22, and C24 are supported by ChIP-seq data presented in Figures 1B-E and supplementary figures. The identification of 1377 peaks, their genomic distribution, and validation with an independent antibody (Figure 1D) provide strong evidence. The enrichment analysis and principal component analysis further support the characterization of Atro binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "ac8fca2d-3018-4b96-994f-1218ce131d9e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Atro negatively modulates En expression in larval imaginal discs. Atro35 mutant clones show increased En levels specifically in the posterior compartment where En is endogenously expressed, but cannot induce ectopic En expression in the anterior compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C26, and C28 are well-supported by immunofluorescence data in Figure 2. The compartment-specific effect (increased En only where it is normally expressed) provides strong evidence for Atro's role as a negative modulator rather than a repressor of En activation. The inability to induce ectopic expression is consistent with this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "963026f8-5c75-4db3-8d8c-b232d8439b0e",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Atro directly regulates Dpp signaling by repressing thickveins (tkv) expression. ChIP-seq shows Atro binding at the tkv locus, in situ hybridization confirms increased tkv expression upon Atro knockdown, and Atro35 clones show increased pMad levels in a pattern consistent with elevated Tkv receptor levels without affecting Dpp ligand expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 and C90 are strongly supported by converging evidence from ChIP-seq (Figure 3A), in situ hybridization (Figure 3B), and immunofluorescence for pMad (Figures 3C-E). The spatial pattern of pMad increase in Atro35 clones is consistent with increased receptor levels rather than increased ligand, and the absence of ectopic Dpp expression supports the conclusion that Atro regulates Dpp signaling primarily through tkv.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "f7fff033-affd-41ce-ad6d-948c134b5559",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Atro regulates Notch signaling in multiple developmental contexts. ChIP-seq identifies Atro binding at Notch pathway components including fringe. Atro genetically interacts with Notch, and Atro35 clones disrupt Notch signaling in wing margin development and eye photoreceptor specification, at least partially through regulation of fringe expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C49 and C91-C96 are supported by multiple lines of evidence: ChIP-seq data (Figure 4A), genetic interaction (Figure 4B), disrupted Notch reporter expression (Figure 4C), loss of wing margin markers (Figure 4D), extra Sens-positive cells in the eye (Figure 4E), and increased fng transcripts upon Atro knockdown (Figure 4\u2014figure supplement 1C). The phenotypic similarity between Atro loss and Fng overexpression strengthens the conclusion that fng is a key mediator of Atro's effects on Notch signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "fbb4471c-2531-42d5-b5c0-44520ebff989",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Atro preferentially binds to Trl (Trithorax-like/GAGA factor) binding sites. De novo motif analysis identifies the Trl binding motif (GA repeat) as the top enriched sequence in Atro ChIP peaks, and 1123 of 1377 Atro peaks overlap with published Trl ChIP-seq data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 and C102 are strongly supported by MEME-ChIP analysis (Figure 5A), overlap analysis with other transcription factors (Figure 5B), and direct comparison with published Trl ChIP-seq data (Figure 5C). The convergence of de novo motif discovery and direct overlap analysis provides robust evidence for the Atro-Trl association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "9fd84450-fcc3-458c-aeea-03368dd586aa",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Atro and Trl physically interact and bind to the same genomic loci simultaneously. Coimmunoprecipitation after micrococcal nuclease treatment shows endogenous Atro-Trl interaction, and ChIP-re-ChIP experiments demonstrate co-occupancy at multiple tested loci.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 and C59 are supported by coimmunoprecipitation data (Figure 6\u2014figure supplement 2B) and ChIP-re-ChIP qPCR results (Figures 6B and 6\u2014figure supplement 1). The requirement for micrococcal nuclease treatment suggests the interaction may be chromatin-dependent or stabilized by DNA, which is consistent with the proposed model. The ChIP-re-ChIP data directly demonstrate simultaneous binding at shared loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Atro and Trl have opposing effects on target gene expression. At both the engrailed and thickveins loci, Trl is required for transcriptional activation while Atro negatively modulates this activation. TrlR85 clones show reduced En expression and reduced pMad levels, opposite to the effects of Atro35 clones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66 and C71-C73, C86 are supported by ChIP-seq data showing overlapping Atro and Trl peaks (Figures 6C, E) and phenotypic analysis of TrlR85 clones (Figures 6D, F). The opposite phenotypes of Atro and Trl mutant clones provide strong functional evidence for their antagonistic roles. The compartment-specific effects further support the model that Atro modulates rather than initiates transcription.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "76e4144e-0858-4b75-82b8-1947a04a939b",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Atro functions as a major Trl cofactor that moderates developmental gene transcription. Atro binds to DNA via Trl (directly or indirectly) and negatively modulates Trl's transcriptional activation activity, likely through recruitment of chromatin-modifying enzymes HDAC1 and G9a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C67-C68, and C104 represent the central conclusion of the manuscript, supported by the integration of all major findings: ChIP-seq overlap, ChIP-re-ChIP co-occupancy, coimmunoprecipitation, and opposing phenotypes of Atro and Trl mutants. The model is consistent with Atro lacking a DNA-binding domain while Trl has one, and with known Atro interactions with chromatin-modifying enzymes. This is a well-supported integrative conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "e149ad00-23f2-4b73-9b52-282cc2f4c9a5",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Trl knockdown leads to reduced Atro protein levels in S2 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by western blot data in Figure 6\u2014figure supplement 2A. This observation prevented direct testing of whether Atro requires Trl for DNA binding, but the result itself is clearly demonstrated. The interdependence of Atro and Trl protein levels suggests a complex regulatory relationship.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "d9d966a1-baff-4d0a-8d7f-a6e2c7c761e4",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genes bound by both Atro and Trl have higher pausing indices than genes bound by Trl alone or all expressed genes, suggesting Atro may be involved in transcriptional pausing with Trl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C79, and C103 are based on pausing index analysis shown in Figure 6\u2014figure supplement 2B-C. While the data show a correlation between Atro+Trl binding and higher pausing indices, this is correlative evidence without functional validation. The authors appropriately present this as a suggestion ('may be involved') rather than a definitive conclusion. Additional experiments would be needed to establish causality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "7cdb32c0-13ee-4010-bf99-bb9233e3a3b2",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Some Atro binding sites (254 of 1377 peaks) do not overlap with Trl peaks, and these non-overlapping peaks are on average slightly weaker than Atro peaks that overlap with Trl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80 and C81 are supported by overlap analysis (Figure 5C) and statistical comparison of peak significance and fold enrichment (Figure 5\u2014figure supplement 2). The observation that non-Trl-overlapping Atro peaks are weaker suggests Trl may stabilize or enhance Atro binding, though alternative explanations exist (e.g., Atro binding through other factors at these sites).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "fd7a54fa-fbb5-434e-9e8d-e91b5a5db581",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Atro-Trl binding sites at en, tkv, and fng loci overlap with HDAC1 binding sites, consistent with Atro recruiting HDAC1 and G9a to close chromatin and repress transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C70 are supported by comparison with modENCODE HDAC1 ChIP data (C70) and citations to prior work showing Atro-HDAC1 and Atro-G9a interactions (C69). The overlap with HDAC1 binding provides additional support for the proposed mechanism of Atro-mediated repression, though the functional requirement for HDAC1 at these specific loci is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "7b8becb4-9fbc-4086-87bb-55bf126856a7",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Atro ChIP-seq data shows significant overlap with Yorkie (Yki) binding sites. Given that Atro-mediated neurodegeneration involves Yki and the Hippo pathway, this suggests a direct mechanism for Atro's effects and potential feedback into growth and patterning regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C100, and C101 are based on overlap analysis (Figure 5B) and prior work on Atro-Yki interactions in neurodegeneration. While the ChIP-seq overlap is demonstrated (C97) and the prior connection to neurodegeneration is cited (C100), the functional implications (C101) are speculative. The manuscript appropriately presents this as a suggestion rather than a demonstrated result. Further experiments would be needed to validate the proposed feedback mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    },
+    {
+      "id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8",
+      "content_id": "cc029b32-d450-4703-879d-a65225f34c12",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and context claims about Atrophin function, disease associations, known phenotypes, protein interactions, and Trl function based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C20, C74-C75, C82-C89, C92, and C94 are all supported by appropriate citations to prior literature. These claims establish the context and rationale for the current study. The authors accurately represent prior work, though the evaluation of these claims depends on the accuracy of the cited studies rather than data presented in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:47.633717Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "861119ff-575e-460d-9163-a5411728092e",
+      "result_id": "8b8d06c1-7ea9-4aaf-993c-3677edbe2f31"
+    },
+    {
+      "claim_id": "89871598-000a-4fb3-9b99-bb173084fec4",
+      "result_id": "8b8d06c1-7ea9-4aaf-993c-3677edbe2f31"
+    },
+    {
+      "claim_id": "0333168d-47c8-4a73-8409-56cd519c7c73",
+      "result_id": "8b8d06c1-7ea9-4aaf-993c-3677edbe2f31"
+    },
+    {
+      "claim_id": "ee648c67-218c-465d-9603-444821d4d8fe",
+      "result_id": "8b8d06c1-7ea9-4aaf-993c-3677edbe2f31"
+    },
+    {
+      "claim_id": "658172ab-5054-4a86-b997-71ffb255f379",
+      "result_id": "ac8fca2d-3018-4b96-994f-1218ce131d9e"
+    },
+    {
+      "claim_id": "ad7a60d0-aaa2-41f1-935d-cc86e8c0f8e2",
+      "result_id": "ac8fca2d-3018-4b96-994f-1218ce131d9e"
+    },
+    {
+      "claim_id": "e0644d6b-bdc1-40eb-9d2f-e0f1e86f0cc4",
+      "result_id": "ac8fca2d-3018-4b96-994f-1218ce131d9e"
+    },
+    {
+      "claim_id": "8500366c-180b-4e36-89ff-d2cf984bf47b",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "3ec16044-45b7-4b0d-9c81-057f84522a0a",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "4125d891-a48d-4ff0-96ef-12a770a5e11b",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "f7ffe8c1-82b9-4173-b311-4356cd1f07fd",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "ccdbb9dc-6821-4002-b9cc-9a1fb0a0be47",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "e689c040-9fe8-4db7-b4e5-1c5845c26c19",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "fd8c3bad-a321-4f99-895b-4c653684377e",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "304d500f-cd5f-4b82-b497-a4b82b511666",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "c6cea72c-7780-4269-a107-abf7a3b123a5",
+      "result_id": "963026f8-5c75-4db3-8d8c-b232d8439b0e"
+    },
+    {
+      "claim_id": "9a8ea5f2-d09f-4d9e-bc78-5a35edfaf755",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "14f4a913-1c95-4e40-8373-820edcab76f8",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "03f46ae4-a5e8-403c-9cd5-9f369614a015",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "15723901-0f26-4b60-919d-1e95bd249349",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "04eaa526-0a2f-4f83-a87d-430232a446ed",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "bbfd418c-6404-4fdd-85e5-35ce97965cf5",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "38b5e3c2-70f8-4d18-9835-d57dfe8c8fcd",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "2183ee3b-a409-4f61-87d8-f5be6e7a4c02",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "00c853e9-f0e7-4680-b799-5d871c0b13cd",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "584085f1-65c5-410d-aa1d-db68df1c70e9",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "774a7880-965d-4f84-a688-883d3bba5386",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "468323ae-757e-4986-b787-44e6e9dd7885",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "7820a206-7b09-4923-b470-8b01be0ca330",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "c47b00c1-eb4c-4a66-8b1c-3f9bc259c44b",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "25e42a0d-4bd7-4d78-8423-0d74c0d6e8b8",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "3c30ece6-57f6-47c5-8f65-08c15d937068",
+      "result_id": "f7fff033-affd-41ce-ad6d-948c134b5559"
+    },
+    {
+      "claim_id": "2f9efc66-7f6e-4ea8-a7ea-1cfbc5a4c51e",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "5704ca52-41bb-4177-8b74-19387800681b",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "a096703a-4ce6-4223-baf6-cabc5948c485",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "f22f061a-9378-4bf0-b79a-5b0f25116433",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "e7335e89-d127-453c-bfe5-136233f9bdf5",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "8630280d-7c96-43b6-8107-1655bb7f93da",
+      "result_id": "fbb4471c-2531-42d5-b5c0-44520ebff989"
+    },
+    {
+      "claim_id": "161b4ee7-72b6-4e61-93b2-c0ec7bd3b867",
+      "result_id": "9fd84450-fcc3-458c-aeea-03368dd586aa"
+    },
+    {
+      "claim_id": "d9057749-4a9e-4744-8062-1bdcd477587c",
+      "result_id": "9fd84450-fcc3-458c-aeea-03368dd586aa"
+    },
+    {
+      "claim_id": "80c7e77d-3d6f-496b-a6a2-b757afe9b8e7",
+      "result_id": "9fd84450-fcc3-458c-aeea-03368dd586aa"
+    },
+    {
+      "claim_id": "2bafbb8b-4b56-4153-a3ec-5a0668ffcd3d",
+      "result_id": "9fd84450-fcc3-458c-aeea-03368dd586aa"
+    },
+    {
+      "claim_id": "bac94474-a073-4521-971c-bb56ac51d1ff",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "dd178eca-a979-4f0c-b9ba-cf07412b904d",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "ba850994-c13b-4c47-a5b7-e1892e130342",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "c1ad62c5-fca1-4f15-b93a-bad05b4ecdf0",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "32a8ec73-df20-41be-84d2-e80230cdcbb3",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "b07fc4ff-36f8-472c-887f-ea62e2347a92",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "199c86ec-a3a9-42a6-bc0e-85a52eb46890",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "87cf21b0-cd47-4a3e-ad3f-b579583300c7",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "3c482948-19c9-4520-8af3-22cf0595fc8f",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "5b9e9787-c33c-4543-a96e-9e2764e4bd25",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "3faaade0-e36d-404d-9fa4-f7fb4b044d55",
+      "result_id": "4ae9ee3a-98c2-498a-9eb5-cb4bb13248d3"
+    },
+    {
+      "claim_id": "5aff8738-135f-42c7-8dc0-ed0890236cb1",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "c19caed9-25a1-4f2c-af06-01cff9440346",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "b92a6fe2-5749-470f-830e-d570b961a8fe",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "80e92084-0562-434a-83ce-f57da1117d16",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "6ef7cec0-6516-4d44-a080-a47d592e30e1",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "35fa3f30-e8fc-4f36-8f30-339b5876dce0",
+      "result_id": "76e4144e-0858-4b75-82b8-1947a04a939b"
+    },
+    {
+      "claim_id": "f8034cb4-4d17-4fad-97d8-00fa5856c4bc",
+      "result_id": "e149ad00-23f2-4b73-9b52-282cc2f4c9a5"
+    },
+    {
+      "claim_id": "498e9146-a8ec-438f-82f0-1c4e1c2ac4da",
+      "result_id": "d9d966a1-baff-4d0a-8d7f-a6e2c7c761e4"
+    },
+    {
+      "claim_id": "b39c8005-dcfb-454c-937b-b3a09484cd4f",
+      "result_id": "d9d966a1-baff-4d0a-8d7f-a6e2c7c761e4"
+    },
+    {
+      "claim_id": "8814ec5a-eaa2-486c-bbef-e276923d0dfb",
+      "result_id": "d9d966a1-baff-4d0a-8d7f-a6e2c7c761e4"
+    },
+    {
+      "claim_id": "a3a14cdf-4722-4dc8-8def-1321d607bc19",
+      "result_id": "7cdb32c0-13ee-4010-bf99-bb9233e3a3b2"
+    },
+    {
+      "claim_id": "85e62040-513a-4cb7-965c-8a8008cdd7da",
+      "result_id": "7cdb32c0-13ee-4010-bf99-bb9233e3a3b2"
+    },
+    {
+      "claim_id": "5c45affd-fe40-4c3d-8f85-3bbf83b8642c",
+      "result_id": "fd7a54fa-fbb5-434e-9e8d-e91b5a5db581"
+    },
+    {
+      "claim_id": "7793b656-a9e4-417a-9f2d-11615907d6b1",
+      "result_id": "fd7a54fa-fbb5-434e-9e8d-e91b5a5db581"
+    },
+    {
+      "claim_id": "2c037e9e-29cb-432d-a1f4-9399217e0c00",
+      "result_id": "7b8becb4-9fbc-4086-87bb-55bf126856a7"
+    },
+    {
+      "claim_id": "2cf7c204-df01-440b-b5a9-d939aa2d6d40",
+      "result_id": "7b8becb4-9fbc-4086-87bb-55bf126856a7"
+    },
+    {
+      "claim_id": "7aca8bfc-78af-4530-8ea6-44f48e3f5efa",
+      "result_id": "7b8becb4-9fbc-4086-87bb-55bf126856a7"
+    },
+    {
+      "claim_id": "a6f43239-328b-4603-9cf0-6a6c61abd1c2",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "154881a4-e894-4947-a8e6-64321335ca46",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "a06ad783-f1a5-4e30-a3a6-a0e766a581be",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "455a7d8c-b49e-4d3f-a500-081b06ecb1b3",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "b46c2469-9ebe-40a5-bdcf-ad2529d343d7",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "958908c2-91d8-43c5-ba57-efe08e22c6ef",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "d8aaa0ed-0a79-4556-a75e-afd214add740",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "2c2b7bd9-ee9a-4c9c-9979-1541b2212619",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "ca0227a6-6140-41e9-8a02-c241c8bd54a5",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "57924954-1264-44d9-a623-9a97bf10f114",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "081594df-cf4d-4d4b-a044-b6e5afa745ad",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "d2f4198c-c5c7-4a84-8c08-321f042ade65",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "a40f2c04-cf5f-4872-8f92-f182d55b254e",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "3b9f669b-5198-431f-aa46-825a55c25bd5",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "4278f2f8-9590-4b7c-90a1-ba5d81cde96d",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "98be36b6-31bb-4ef3-ac6c-a76926e672aa",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "b5607c6c-156f-402e-99b6-dd9d299456d8",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "2e4e7796-36b6-45e6-9df2-f31c1146c164",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "c35a1652-26cb-4b0e-b676-c64d8d509824",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "ea1df465-c02c-4454-b328-2efa4bda6fde",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "ed57ad5d-8b05-4e76-aef9-b0c006dc6517",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "2250a454-fe27-446f-9786-e928c10ad90f",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "0f0e30e9-d756-4856-89a3-b4bbcae5c9e8",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "03d30752-f6cf-4954-84ad-51b321d36ff2",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "468323ae-757e-4986-b787-44e6e9dd7885",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    },
+    {
+      "claim_id": "c47b00c1-eb4c-4a66-8b1c-3f9bc259c44b",
+      "result_id": "bfba4914-0846-4280-b5be-1ef6a9cc9ae8"
+    }
+  ],
+  "comparisons": []
+}

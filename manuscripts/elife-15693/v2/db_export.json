@@ -1,0 +1,2298 @@
+{
+  "submission": {
+    "id": "2a4ec48b-8938-41af-adfc-a7f8dd9973f9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:43:06.170093Z",
+    "updated_at": "2025-11-30T20:43:06.170093Z"
+  },
+  "content": [
+    {
+      "id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "submission_id": "2a4ec48b-8938-41af-adfc-a7f8dd9973f9",
+      "content_type": "manuscript",
+      "content_text": "# Regulation of starvation-induced hyperactivity by insulin and glucagon signaling in adult Drosophila\n\n## Authors\n\n- Yue Yu<sup>1</sup>\n- Rui Huang<sup>1</sup> \u2020\n- Jie Ye<sup>1</sup>\n- Vivian Zhang<sup>3</sup>\n- Chao Wu<sup>1</sup>\n- Guo Cheng<sup>1</sup>\n- Junling Jia<sup>1</sup>\n- Liming Wang<sup>1</sup> ([ORCID: 0000-0001-7758-1120](https://orcid.org/0000-0001-7758-1120)) \u2020\n\n### Affiliations\n\n1. Life Sciences Institute Zhejiang University Hangzhou China\n2. Innovation Center for Cell Signaling Network Zhejiang University Hangzhou China\n3. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nStarvation induces sustained increase in locomotion, which facilitates food localization and acquisition and hence composes an important aspect of food-seeking behavior. We investigated how nutritional states modulated starvation-induced hyperactivity in adult Drosophila. The receptor of the adipokinetic hormone (AKHR), the insect analog of glucagon, was required for starvation-induced hyperactivity. AKHR was expressed in a small group of octopaminergic neurons in the brain. Silencing AKHR+ neurons and blocking octopamine signaling in these neurons eliminated starvation-induced hyperactivity, whereas activation of these neurons accelerated the onset of hyperactivity upon starvation. Neither AKHR nor AKHR+ neurons were involved in increased food consumption upon starvation, suggesting that starvation-induced hyperactivity and food consumption are independently regulated. Single cell analysis of AKHR+ neurons identified the co-expression of Drosophila insulin-like receptor (dInR), which imposed suppressive effect on starvation-induced hyperactivity. Therefore, insulin and glucagon signaling exert opposite effects on starvation-induced hyperactivity via a common neural target in Drosophila.\n\n## Introduction\n\nEnergy homeostasis is vital for survival, growth, and reproduction of animal species (Gautron et al., 2015). Energy deprivation drives a complex behavioral program to ensure adequate food intake (Sternson et al., 2013). As an adaptive response to starvation, food intake is modulated by nutrient and hormonal cues. In mammals, the hypothalamic arcuate nucleus, especially the neurons expressing agouti-related protein (AgRP)/neuropeptide Y (NPY), and those expressing pro-opiomelanocortin (POMC), sense and integrate numerous nutritional cues such as circulating glucose, insulin, leptin, and ghrelin and modulate food intake in response (Belgardt et al., 2009). In fruit flies, several hormonal signals modulate different aspects of food intake, these including Drosophila insulin-like peptides (DILPs), the two homologs of mammalian NPY, neuropeptide F (NPF) and short neuropeptide F (sNPF), and a handful of other neuropeptides such as allatostatin A (AstA), leucokinin, and hugin (Pool and Scott, 2014). It is generally accepted that these hormonal cues represent the nutritional status of animals and translate them into physiological and behavioral responses (Pool and Scott, 2014; Sternson et al., 2013).\n\nThe search of appropriate food sources (i.e. food seeking) is often the first step of food intake, followed by the actual ingestion of food (i.e. food consumption) (Stephens et al., 2007). Starvation enhances food-seeking behavior in two parallel ways. On the one hand, starvation modulates the perception of food associated sensory cues, increasing the likelihood to target desirable food sources. In fruit flies, starvation increases the sensitivity of Or42b+ olfactory receptor neurons (ORNs) that mediate odor attraction, and decreases the sensitivity of aversive Or85a+ ORNs, resulting in enhanced behavioral attraction to food odors (Ko et al., 2015; Root et al., 2011). Similarly, starvation also influences the sensitivity of sweet-sensing Gr5a+ gustatory receptor neurons (GRNs) and bitter-sensing Gr66a+ GRNs in opposite directions, resulting in enhanced attractiveness to food taste (Inagaki et al., 2012; Inagaki et al., 2014; Marella et al., 2012). A number of neurohormonal cues, including DILPs, NPF, sNPF, dopamine, and tachykinin (DTK), are involved in the sensory modulation by starvation (Inagaki et al., 2012; Inagaki et al., 2014; Ko et al., 2015; Marella et al., 2012; Root et al., 2011).\n\nOn the other hand, starvation also promotes locomotor activity in both rodents and fruit flies, which may facilitate the exploration of the environment and increase the possibility to locate potential food sources (Dietrich et al., 2015; Isabel et al., 2005; Lee and Park, 2004; Yang et al., 2015). In fruit flies, starvation-induced hyperactivity requires the neuroendocrine cells producing AKH, the insect analog of glucagon (Isabel et al., 2005; Lee and Park, 2004). However, AKH has a role in modulating lipid storage as well as starvation resistance and whether it imposes a direct effect on starvation-induced hyperactivity remains unclear (Bharucha et al., 2008; Gr\u00f6nke et al., 2007). We have also shown that octopamine, the insect analog of norepinephrine, is required for starvation induced hyperactivity (Yang et al., 2015). But given the diverse anatomical distribution and physiological function of octopaminergic neurons in the fly brain, the underlying neural circuitry of starvation-induced hyperactivity and how it is modulated by hormonal cues remain largely unknown (El-Kholy et al., 2015).\n\nStarvation-induced hyperactivity and food consumption are reciprocally inhibitory and the transition of these two behaviors relies on the detection of food cues (Chen et al., 2015; Yang et al., 2015). It is of great interest to understand how these two behaviors are dynamically regulated by the nutritional states and the availability of food sources. In rodents, acute activation of hypothalamic AgRP/NPY neurons induces both hyperactivity and food consumption, suggesting that these two behaviors are regulated by a same group of neurons and hormonal cues (Aponte et al., 2011; Atasoy et al., 2012; Betley et al., 2015; Dietrich et al., 2015; Krashes et al., 2011). However, the detection of food sources rapidly suppresses starvation-induced hyperactivity along with the activity of AgRP/NPY neurons before actual food consumption, suggesting that these neurons may only be involved in the locomotor response upon starvation but not food consumption (Betley et al., 2015; Chen et al., 2015). Thus, it remains elusive whether starvation-induced hyperactivity and food consumption are modulated by the same set of hormones via a common neural target, or they are independently regulated (Seeley and Berridge, 2015).\n\nIn this present study, we aimed to better understand how starvation-induced hyperactivity is regulated by hormonal signals, and whether starvation-induced hyperactivity and food consumption are interdependently or independently regulated. Through a neuronal-specific RNAi screen, we find that a small group of octopaminergic neurons located in the subesophageal zone (SEZ) of the fly brain are both necessary and sufficient for starvation-induced hyperactivity. These neurons co-express AKHR and dInR, the receptor of hunger hormone AKH and the receptor of satiety hormone DILPs, respectively, which modulate starvation-induced hyperactivity in opposite directions. Thus, these AKHR+dInR+ octopaminergic neurons represent a common neural target for two sets of functionally antagonizing hormones to modulate starvation-induced hyperactivity. Notably, manipulating starvation-induced hyperactivity does not interfere with starvation-induced food consumption, suggesting that starvation-induced changes in different food intake behaviors are independently regulated by different hormonal cues and neural circuitry in fruit flies.\n\n## Results\n\n### A neuron-specific RNAi screen identified AKHR required for starvation-induced hyperactivity\n\nWe have previously shown that starvation induces sustained increase in locomotor activity of adult flies (Yang et al., 2015). To identify the hormonal cues that regulate this behavior, we performed a neuron-specific RNAi screen in adult flies and examined the influence on their locomotor activity, which was indirectly measured by their frequency to cross the midline of tubes in the Drosophila Activity Monitor System (DAMS, Trikinetics) (Figure 1a\u2013b).\n\nWe crossed UAS-RNAi lines targeting 31 candidate neuropeptide receptors to a pan-neuronal GAL4 driver, elav-GAL4, and assayed their female progeny for baseline locomotion under fed conditions (Figure 1c). 16 out of the 31 lines exhibited significantly altered activity compared to the control, suggesting that the baseline locomotion may be a behavioral trait sensitive to multiple neuropeptidergic signaling systems (Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig1-v2.jpg)\n\n**Figure 1.:** (a\u2013b) The DAMS-based locomotion assay. (a) A single virgin female fly was hosted in a 5 \u00d7 65 mm polycarbonate tube, secured between 2% agar medium (with or without 5% sucrose) on one end and a piece of cotton on the other. The ruler was used for illustrating the size of the tube. (b) The tube was then inserted into the DAMS monitor (Trikinetics). One DAM2 monitor can hold 32 tubes at a time. The passage of flies through the middle of the tube was counted by an infrared beam. The frequency of midline crossings therefore indirectly measured flies\u2019 locomotor activity. (c) The workflow of our RNAi screen. Note that UAS-RNAi transgenes were integrated into either the second or the third chromosome. (d) Summary of our RNAi screen (n\u00a0=\u00a029\u201348). For each line, their average daily midline crossing activity when fed ad libitum with 5% sucrose ('Baseline locomotion'), their activity upon starvation ('Locomotion upon starvation'), and the relative increase in locomotion ('Increase in locomotion') were listed. 'Control' is the progeny of GAL4 driver line crossed to a wild type strain. The statistical difference between fed vs. starved conditions were listed for each RNAi line. Data are shown as means ( \u00b1 SEM). NS, p>0.05; *p<0.05; **p<0.01; ***p<0.001.\n\nBesides the baseline activity, we also examined the changes in locomotor activity upon starvation (Figure 1c). Consistent with our previous report (Yang et al., 2015), control flies exhibited ~60% increase in their locomotor activity upon starvation (Figure 1d, 'Control'). Amongst 31 RNAi lines we examined, only the neuronal knock-down of AKHR eliminated starvation-induced hyperactivity (Figure 1d, 'AKHR'), whereas all other RNAi lines still exhibited significantly enhanced locomotion upon starvation (Figure 1d). Notably, neuronal knock-down of AKHR did not interfere with the baseline locomotion under fed conditions (Supplementary file 1), suggesting that AKHR is not involved in general motor control, but specifically in the regulation of locomotion by the internal nutritional states.\n\nConsistent with the results from our RNAi screen, we found that AKHR-/- mutants exhibited no increase in locomotion upon starvation (Figure 2a\u2013c). It is worth noting that a previous report did not observe the behavioral difference between AKHR-/- mutants vs. the control under starvation conditions, which was likely due to the short time window of the behavioral assay (Bharucha et al., 2008).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig2-v2.jpg)\n\n**Figure 2.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('+Sucrose') (n = 61\u201363). Yellow bars represent 12 hr light-on period in this and following figures. (c) Average daily midline crossing activity of flies assayed in a\u2013b. (d\u2013e) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 24\u201330). (f) Average daily midline crossing activity of flies assayed in d\u2013e. Error bars represent SEM. NS, p>0.05; ***p<0.001.\n\nAKHR is the candidate receptor of AKH, the insect analog of mammalian glucagon. Similar to its mammalian counterpart, AKH secretion is induced by the reduction in circulating sugar levels, which in turn mobilizes lipid storage for energy supply (Kim and Rulifson, 2004). Previous reports have shown that genetic ablation of AKH-producing cells located in the corpora cardiaca led to increased fat storage and diminished starvation-induced hyperactivity (Isabel et al., 2005; Lee and Park, 2004). Consistently, we also found that eliminating AKH expression abolished starvation-induced hyperactivity (Figure 2d\u2013f). Taken together, AKH-AKHR signaling is required for starvation-induced hyperactivity in adult flies.\n\n### Neuronal AKHR is required for starvation-induced hyperactivity but not food consumption\n\nPrevious reports have shown that AKHR is expressed in the fat body and regulates lipid storage (Bharucha et al., 2008; Gr\u00f6nke et al., 2007). We also confirmed that AKHR-/- mutant flies had excessive fat storage (Figure 3\u2014figure supplement 1). Therefore, it was unclear whether AKHR signaling had a direct role in regulating starvation-induced hyperactivity in the nervous system, or merely delayed starvation-induced hyperactivity by enhancing lipid storage, or both. To further examine the function of neuronal AKHR, we used a different pan-neuronal driver neuronal synaptobrevin-GAL4 (nSyb-GAL4) to knock down AKHR in the nervous system. Consistent with the results from our RNAi screen, pan-neuronal elimination of AKHR showed comparable locomotor activity under fed and starved conditions, whereas the two genetic controls exhibited significant increase in locomotion upon starvation (Figure 3a\u2013c). Notably, neuronal knock-down of AKHR did not affect lipid storage of flies (Figure 3\u2014figure supplement 1), and fat body knock-down of AKHR did not eliminate starvation-induced hyperactivity (Figure 3\u2014figure supplement 2), disassociating the behavioral and metabolic effects of AKHR signaling. These results confirm that only neuronal AKHR, but not fat body-expressed AKHR, is required for starvation-induced hyperactivity in flies.\n\nTo further evaluate the function of neuronal AKHR in starvation-induced hyperactivity, we used a behavioral assay that directly quantified the walking velocity as well as the position of individual flies in the presence or absence of food cues (Figure 3\u2014figure supplement 3a). By using this behavioral assay, we confirmed that flies with neuronal knock-down of AKHR exhibited comparable walking velocity under fed vs. starved conditions, whereas the two control genotypes exhibited significantly increased walking velocity upon starvation (Figure 3\u2014figure supplement 3e). Besides increased locomotion, starved flies also exhibited increased interest to food and could rapidly locate and occupy food sources (Ko et al., 2015; Root et al., 2011; Yang et al., 2015). Interestingly, starved flies from all three genotypes could locate and occupy food sources in the center of the behavioral chamber (Figure 3\u2014figure supplement 3b\u2013d). Taken together, these data confirm that neuronal AKHR is required for starvation-induced hyperactivity without interfering their ability to locate and occupy food sources.\n\nStarvation promotes both locomotor activity and food consumption. But it remained unclear whether these two behaviors are regulated by the same set of hormonal cues or not. We thus asked whether neuronal AKHR was also required for starvation-induced increase in food consumption. We first examined food consumption during the course of a single meal, by using a capillary-based feeding assay named the MAFE (MAnual FEeding) assay (Qi et al., 2015) (Figure 3d). We found that starvation could significantly increase food consumption, and that neuronal knock-down of AKHR did not affect starvation-induced increase in meal size (Figure 3f).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig3-v2.jpg)\n\n**Figure 3.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 31\u201380). (c) Average daily midline crossing activity of flies assayed in a\u2013b. (d\u2013e) Schematic illustration of the MAFE assay (d) or the FLIC assay (e). (f) Volume of 800 mM sucrose consumed in a meal by indicated genotypes fed ad libitum with 5% sucrose, or starved for 36 hr using the MAFE assay. (n = 30\u201339). (g\u2013i) Representative feeding plots of individual flies in the FLIC assay. Flies of the indicated genotypes were starved for 36 hr before the assays. The plots show the electrical current signals that reflected the physical contact between flies and the liquid food (800 mM sucrose). The a.u. higher than 120 (red line) was considered as feeding events (arrows). Asterisks indicate possible 'tasting/licking' events. (j\u2013k) Number of feeding bouts (j) and total duration of feeding time (k) during 1 hr recording in the FLIC assay (n\u00a0=\u00a050\u201372). Note that one control genotype (green) exhibited higher levels of feeding likely due to the genetic background of nSyb-GAL4 we used. Error bars represent SEM. NS, p>0.05; *p<0.05; ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average amount of triglyceride of indicated genotypes fed ad libitum (n\u00a0=\u00a020\u201330). NS, p>0.05; ***p<0.001. For detailed protocols, please see Yang et al. (2015). Octopamine mediates starvation-induced hyperactivity in adult Drosophila. Proceedings of the National Academy of Sciences 112, 5219\u20135224.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 44\u201364). (c) Average daily midline crossing activity of flies assayed in a\u2013b. *p<0.05; ***p<0.001.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Top view of a behavioral chamber (10 mm (D) \u00d7 4 mm (H)). The dashed circle outlines an agar patch \u00b1 5% sucrose. (b\u2013d) Spatial distribution of indicated genotypes assayed fed ad libitum in the presence of sucrose (first row), and starved flies assayed in the absence or presence of sucrose (second and third rows) (n = 10\u201320). The average walking velocity for each treatment was listed at the upper left corner (mm/s). Color temperature of the scale bar represents the percentage of time spent on each pixel for the duration of the assay (8 hr). (e) Walking velocity of flies assayed in b\u2013d (n = 10\u201320).\n\nWe also assayed long-term food consumption using the FLIC (Fly Liquid-food Interaction Counter) assay that measured the frequency and duration of physical contacts between fly\u2019s proboscis and the liquid food (Ro et al., 2014) (Figure 3e, also see Figure 3g\u2013i). We found that eliminating AKHR in neurons did not interfere with long-term feeding, as measured by both the number of feeding bouts and the total duration of feeding (Figure 3j\u2013k). Taken together, these data show that neuronal AKHR is specifically required for starvation-induced hyperactivity but not food consumption. It is likely that several other hormonal cues mediate the effect of starvation on food consumption (Figure 7i) (Pool and Scott, 2014).\n\n### AKHR+ neurons are required for starvation-induced hyperactivity\n\nWe next asked which AKHR+ neurons were required for starvation-induced hyperactivity. Previous reports have shown that besides the fat body, AKHR is also expressed in the sweet-sensing gustatory neurons (Bharucha et al., 2008). However, we found that knocking down AKHR in Gr5a+ sweet-sensing gustatory neurons did not interfere with starvation-induced hyperactivity (Figure 4\u2014figure supplement 1). Moreover, we have previously shown that starvation-induced hyperactivity did not require gustatory input (Yang et al., 2015). These data suggest that AKHR is likely expressed in additional neurons other than those in the gustatory sensory organs, where it regulates starvation-induced hyperactivity.\n\nTo specifically examine the neuronal expression of AKHR, we utilized the split-GAL4 system and generated transgenic flies carrying the GAL4 Activation Domain under the control of nSyb promoter (nSyb:AD) and the GAL4 DNA-binding Domain under the control of AKHR promoter (AKHR:BD). Using the combinational nSyb:AD/AKHR:BD-GAL4 driver that induces gene expression only in AKHR+ neurons, we found that AKHR was expressed in a small group of neurons located in the SEZ (2\u20134 neurons per hemisphere) but not in the ventral nerve cord (data not shown) (Figure 4a\u2013b). The cell bodies of these AKHR+ neurons were located in the ventrolateral region of the SEZ and sent Y-shaped neural projections into the SEZ (Figure 4b). As previously reported (Bharucha et al., 2008), we also found that AKHR was expressed in the sweet-sensing gustatory neurons and projected to the SEZ region of the brain (Figure 4c\u2013d). As discussed above, however, these gustatory neurons are not involved in starvation-induced hyperactivity (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig4-v2.jpg)\n\n**Figure 4.:** (a, c) The expression of membrane-bound GFP (mCD8GFP) in AKHR+neurons in the anterior (a) and the posterior (c) part of the fly brain. The dashed box outlines the region of SEZ. (b, d) An enlarged image of the SEZ region seen in a and c. Note the cell bodies located in the ventrolateral side of the SEZ (arrowheads) and their Y-shaped projections (arrows) in b. Green: GFP. Magenta: nc82. Scale bars represent 20 \u03bcm in a\u2013d. (e\u2013f) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n\u00a0=\u00a060\u201375). (g) Average daily midline crossing activity of flies assayed in e\u2013f. (h) Volume of 800 mM sucrose consumed in a meal by indicated genotypes fed ad libitum with 5% sucrose, or starved for 24 hr using the MAFE assay (n = 18\u201340). (i\u2013j) Number of feeding bouts (i) and total duration of feeding time (j) during 1 hr recording in the FLIC assay (n\u00a0=\u00a020\u201324). Error bars represent SEM. NS, p>0.05; ***p<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 46\u201364). (c) Average daily midline crossing activity of flies assayed in a\u2013b. ***p<0.001.\n\nTo test whether AKHR+ neurons in the SEZ were required for starvation-induced hyperactivity, we expressed Shibirets1, a temperature sensitive form of dynamin (Kitamoto, 2001), in AKHR+ neurons and acutely blocked neuronal transmission by transferring the flies to non-permissive temperature (30\u00b0C) before the behavioral assays. We found that acute silencing of AKHR+ neurons eliminated starvation-induced hyperactivity (Figure 4e\u2013g). Therefore, AKHR+ neurons in the fly brain are required for increased locomotion upon starvation.\n\nWe also examined whether AKHR+ neurons were required for starvation-induced increase in food consumption. Acute silencing of AKHR+ neurons did not block the increase in food consumption by starvation, as assayed by the changes in meal size upon starvation (Figure 4h), and by the number of feeding bouts and total feeding duration (Figure 4i\u2013j). Therefore, AKHR and AKHR+ neurons specifically regulate starvation-induced hyperactivity, but not food consumption.\n\n### Activation of AKHR+ neurons promotes starvation-induced hyperactivity\n\nWe then sought to investigate whether AKHR+ neurons played an instructive or merely permissive role in regulating starvation-induced hyperactivity. To do so, we expressed NaChBac (Nitabach et al., 2006), a bacterial sodium channel, in AKHR+ neurons. NaChBac expression increases the membrane excitability and facilitates the activation of these neurons (Nitabach et al., 2006). We found that NaChBac expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation. While the two control lines only exhibited a\u00a0significant increase in locomotion during Day two of the assay, NaChBac expression in AKHR+ neurons led to increased locomotor activity from Day one of the assay (Figure 5a\u2013d). Consistently, over-expression of AKHR in AKHR+ neurons also led to earlier onset of starvation-induced hyperactivity (Figure 5\u2014figure supplement 1).\n\nWe also examined whether activation of AKHR+ neurons influenced starvation-induced increase in food consumption. As shown in Figure 5e, NaChBac expression in AKHR+ neurons did not change the meal size of both fed and starved flies. Activating AKHR+ neurons did not alter the duration and frequency of feeding behavior, either (Figure 5f\u2013g). Taken together, the regulation of starvation-induced hyperactivity can therefore be disassociated from the regulation of starvation-induced food consumption, since the former is neither necessary nor sufficient for the latter (Figures 4 and 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig5-v2.jpg)\n\n**Figure 5.:** (a, c) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 48\u201380). (b, d) Average daily midline crossing activity during Day one (b) and Day two (d) of flies assayed in a, c. (e) Volume of 800 mM sucrose consumed in a meal by indicated genotypes fed ad libitum with 5% sucrose, or starved for 18\u00a0and\u00a036 hr using the MAFE assay (n = 38\u201352). (f\u2013g) Number of feeding bouts (f) and total duration of feeding time (g) during 1 hr recording in the FLIC assay (n\u00a0= 54\u201360). Error bars represent SEM. NS, p>0.05; *p<0.05; **p<0.01; ***p<0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 46\u201348). (c\u2013e) Average daily midline crossing activity of flies assayed in a\u2013b, breaking down to three different time windows (Day one-Daytime, Day one-Nighttime, Day two). NS, p>0.05; *p<0.05; **p<0.01; ***p<0.001.\n\n### Insulin signaling suppresses starvation-induced hyperactivity via AKHR+ neurons\n\nWe next sought to further investigate the mechanism underlying the regulation of starvation-induced hyperactivity by AKHR+ neurons. We hypothesized that besides AKH, AKHR+ neurons might also sense other hormonal cues that exerted modulatory effects on the activity of AKHR+ neurons and hence starvation-induced hyperactivity. To examine this hypothesis, we labeled AKHR+ neurons with mCD8GFP, extracted individual GFP+ neurons (and randomly picked GFP- neurons as negative controls) from fly brains, and performed single-cell RT-PCR analysis. All GFP+ neurons we examined were AKHR positive, confirming that the nSyb:AD/AKHR:BD-GAL4 driver reliably recapitulates the endogenous expression pattern of AKHR (Figure 6a\u2013b, 'GFP' and 'AKHR'). We also performed single-cell RNA-seq using the cells labeled by the nSyb:AD/AKHR:BD-GAL4 driver. Consistent with our single-cell RT-PCR experiments, all GFP+ cells we examined by RNA-seq showed considerable AKHR expression (Figure 6c, 'AKHR'). In contrast, these GFP+ cells showed no or very low expression for genes specifically expressed in the peripheral nervous system, muscle, and the fat body (Figure 6c, 'Or67d', 'Gr5a', 'MyoD', and 'Slimfast').\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig6-v2.jpg)\n\n**Figure 6.:** (a) Heat map indicating the expression pattern of neuropeptide receptors we examined in individual AKHR+ (green) and AKHR- (black) neurons. Red and black blocks represent genes that could and could not be detected by RT-PCR, respectively. For a complete list of all 32 genes we examined see Supplementary file 1. The first three genes, GFP, AKHR, and dInR are indicated in bold. (b) Representative RT-PCR bands for indicated genes shown in a. Note that the lower bands in the 'dInR' row are primer dimers. (c) Gene expression in five GFP+ cells assayed by RNA-seq (shown in RPKM). Or67d and Gr5a are expressed in the primary sensory neurons; MyoD in muscle; and Slimfast in the fat body. (d\u2013e) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 48\u201380). (f\u2013g) Average daily midline crossing activity during Day one and Day two of flies assayed in d\u2013e. (h\u2013i) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 48\u201380). (j\u2013k) Average daily midline crossing activity during Day one and Day two of flies assayed in h\u2013i. Error bars represent SEM. NS, p>0.05; ***p<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Two representative series are shown (upper and lower rows). (a, d) Merged images, showing the co-localization of dInR (red) and AKHR (green) in the SEZ (arrowheads). dInR expression was shown by antibody staining (b, e). GFP expression was driven by the nSyb:AD/AKHR:BD-GAL4 driver (c, f). Scale bars represent 20 \u03bcm.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 41\u201364). (c\u2013d) Average daily midline crossing activity during Day one and Day two of flies assayed in a\u2013b. NS, p>0.05; ***p<0.001.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 48). (c) Average daily midline crossing activity of flies assayed in a\u2013b. **p<0.01; ***p<0.001.\n\nWe then examined the expression of a collection of candidate neuropeptide receptors in AKHR+ neurons. Among all receptor genes we examined (Supplementary file 1), we found that the transcripts of dInR were steadily detected in GFP+ neurons by single-cell RT-PCR (Figure 6a\u2013b, 'dInR'). The co-localization of dInR and AKHR was also confirmed by RNA-seq (Figure 6c, 'dInR') and antibody staining (Figure 6\u2014figure supplement 1).\n\ndInR is the receptor of DILPs, the insect analogs of mammalian insulin. Similar to insulin, DILPs function as satiety signals. Dietary sugars and proteins induce the release of DILPs into the hemolymph, which in turn promotes growth and nutrient storage (Buch et al., 2008; Rulifson et al., 2002). Therefore, the expression of dInR in AKHR+ neurons suggests that insulin signaling may counteract the effect of AKH-AKHR signaling and suppress the activity of AKHR+ neurons hence starvation-induced hyperactivity. To test this hypothesis, we knocked down the expression of dInR in AKHR+ neurons and examined its effect on flies\u2019 locomotion. We found that similar to the effect of activating AKHR+ neurons (Figure 5a\u2013d), eliminating dInR expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation (Figure 6d\u2013g). Conversely, over-expression of dInR in AKHR+ neurons delayed the onset of starvation-induced hyperactivity (Figure 6\u2014figure supplement 2). Collectively, these data suggest that insulin signaling in AKHR+ neurons suppress the activity of these neurons and hence starvation-induced hyperactivity. To confirm this finding, we over-expressed Drosophila PTEN (dPTEN), a negative regulator of insulin signaling pathway, in AKHR+ neurons (Gao et al., 2000). Over-expression of dPTEN led to an earlier onset of starvation-induced hyperactivity, phenocopying the effect of dInR knock-down in AKHR+ neurons (Figure 6h\u2013k).\n\nTaken together, these data suggest that the activity of AKHR+ neurons is modulated by two sets of functionally antagonizing hormones, AKH and DILPs. The hunger hormone AKH activates these neurons via AKHR and promotes locomotor activity upon starvation, whereas the satiety hormones DILPs exert a suppressive effect on starvation-induced hyperactivity via dInR signaling. The interplay between these two sets of hormonal cues therefore modulates locomotor activity upon changes in flies\u2019 internal nutritional states. Besides dInR, Myosuppressin receptor 2 (DMS-R2) was also moderately enriched in AKHR+ neurons (Figure 6a, Line 4). Knocking down DMS-R2 in AKHR+ neurons, however, did not affect starvation-induced hyperactivity (Figure 6\u2014figure supplement 3).\n\n### Octopamine signaling mediates the effect of AKHR+ neurons on starvation-induced hyperactivity\n\nWe next asked how AKHR+ neurons connected the upstream hormonal signals to downstream neural circuitry. To do so, we aimed to understand which neurotransmitter(s) AKHR+ neurons utilized to modulate starvation-induced hyperactivity. We performed single-cell RT-PCR on AKHR+ neurons for genes critical for the biosynthesis of several neurotransmitters including dopamine, serotonin, octopamine, tyramine, acetylcholine, glutamate, GABA, and histamine (Supplementary file 1). Single-cell RT-PCR showed that the transcripts of tyramine beta-hydroxylase (T\u03b2H) were detected in GFP+ neurons (Figure 7a\u2013b). These results were also confirmed by single-cell RNA-seq (Figure 7c).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig7-v2.jpg)\n\n**Figure 7.:** (a) Heat map indicating the expression of neurotransmitter related genes in individual AKHR+ and AKHR- neurons. Red and black blocks represent genes that could and could not be detected by RT-PCR, respectively. For a complete list of all 10 genes we examined see Supplementary file 1.\u00a0(b) Representative RT-PCR bands for indicated genes shown in a. (c) Gene expression in five GFP+ cells assayed by RNA-seq (shown in RPKM). (d\u2013e) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 38\u201348). (f) Average daily midline crossing activity of indicated genotypes in d\u2013e. (g\u2013h) Average daily midline crossing activity of indicated genotypes (n\u00a0=\u00a043\u201365). (i) A working model. Starvation promotes both food seeking and food consumption. Food seeking has two components: food targeting (i.e. perception of food cues) and environmental exploration (i.e. hyperactivity). In this present study (highlighted in red), we have shown that a small group of octopaminergic neurons located in the fly brain are both necessary and sufficient for starvation-induced hyperactivity, an important aspect of food seeking. These neurons express AKHR and dInR, the receptors of AKH and DILPs, respectively. These neurons are octopaminergic (OA), and likely exert their behavioral effect via downstream neurons expressing certain octopamine receptor(s) (OA-R). It is worth noting that the regulation of starvation-induced hyperactivity is independent from that of food consumption, and vice versa. NS, p>0.05; **p<0.01; ***p<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15693/elife-15693-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a\u2013b) Midline crossing activity of indicated genotypes assayed in the presence of 5% sucrose ('+Sucrose') or 2% agar ('-Sucrose') (n = 31\u201377). (c) Average daily midline crossing activity of flies assayed in a\u2013b. NS, p>0.05; **p<0.01; ***p<0.001.\n\nT\u03b2H is critical for the biosynthesis of octopamine, the insect analog of vertebrate norepinephrine (Roeder, 2004). Octopamine is involved in the regulation of various behaviors, including sleep (Crocker and Sehgal, 2008), learning (Burke et al., 2012), and aggression (Hoyer et al., 2008). We have also shown previously that octopamine signaling was also required for starvation-induced hyperactivity (Yang et al., 2015). We therefore asked whether octopamine mediated the effect of AKHR+ neurons on this behavior. We first showed that similar to the phenotype of T\u03b2HM18 null mutants (Yang et al., 2015), pan-neuronal knock-down of T\u03b2H expression eliminated starvation-induced hyperactivity (Figure 7\u2014figure supplement 1). Furthermore, knocking down the expression of T\u03b2H specificallyin AKHR+ neurons eliminated starvation-induced hyperactivity (Figure 7d\u2013f). Consistently, knocking down the expression of AKHR in octopaminergic neurons also blocked the increase in locomotion by starvation (Figure 7g). Taken together, our data suggest that AKHR+ neurons in the fly brain are octopaminergic, and that octopamine signaling mediates the effect of these neurons on starvation-induced hyperactivity.\n\nSingle-cell RT-PCR also identified that the transcripts of Dopa decarboxylase (DDC), a key enzyme for the biosynthesis of both dopamine and serotonin (Lundell and Hirsh, 1994), was moderately enriched in AKHR+ neurons (Figure 7a\u2013b). We thus examined the potential role of DDC\u00a0in AKHR+ neurons. Nevertheless, eliminating DDC expression in AKHR+ neurons exerted no effect on the increased locomotion by starvation (Figure 7h).\n\n## Discussion\n\nFood seeking and food consumption are essential for the acquisition of food sources, and hence survival, growth, and reproduction of animal species (Gao and Horvath, 2007). Starvation influences food-seeking behavior via both modulating the perception of food cues as well as enhancing flies\u2019 locomotor activity (Figure 7i). Accumulated evidence has suggested that starvation modulates the activity of ORNs via multiple neural and hormonal cues (Beshel and Zhong, 2013; Ko et al., 2015), which in turn facilitates odor-driven food search (Root et al., 2011) and food consumption (Farhadian et al., 2012; Wang et al., 2013). Similarly, starvation also modulates the perception of food taste via the relative sensitivity of appetitive sweet-sensing and aversive bitter-sensing GRNs, which may in turn increase the attractiveness of food taste (Inagaki et al., 2012; Inagaki et al., 2014; Marella et al., 2012). However, how starvation increases the locomotor activity of flies remains largely uncharacterized.\n\nConsistent with previous reports (Isabel et al., 2005; Lee and Park, 2004), we have shown that starved fruit flies exhibit sustained increase in their locomotor activity, which can be suppressed by food consumption induced by both nutritive and non-nutritive food cues (Yang et al., 2015). In the present study, we have shown that a small group of neurons located in the SEZ region of the fly brain are both necessary and sufficient for starvation-induced hyperactivity. These neurons sense the changes in flies\u2019 internal nutritional states by directly responding to two sets of hormones, AKH and DILPs, and modulate locomotor activity in response. Single cell analysis has identified that these AKHR+dInR+ neurons are octopaminergic, which offers an entry point to trace the downstream neural circuitry that regulates starvation-induced hyperactivity. For example, there are 7 candidate octopamine receptors in fruit flies and it would be of interest to investigate whether any of these receptors and the receptor-expressing neurons are involved in locomotor regulation upon starvation (El-Kholy et al., 2015).\n\nAKH and DILPs are two sets of functionally counteracting hormones in fruit flies. As its mammalian analog glucagon, the reduction in circulating sugars induces the release of AKH, which in turn mobilizes fat storage and provides energy supply for flies (Bharucha et al., 2008; Kim and Rulifson, 2004; Lee and Park, 2004). In contrast, DILPs, the insect analog of mammalian insulin, function as satiety hormones. Dietary nutrient induces the release of DILPs into the hemolymph, which in turn promotes protein synthesis, body growth, and other anabolic processes (Buch et al., 2008; Rulifson et al., 2002). We have shown that these two hormonal signaling systems exert opposite effects on starvation-induced hyperactivity via a small group of AKHR+InR+ octopaminergic neurons. These results suggest that these AKHR+dInR+ neurons can integrate the inputs from the two hormonal signaling systems representing hunger and satiety at the same time, and modulate flies\u2019 locomotor activity (Figure 7i). This elegant yet concise design allows these neurons to be responsive to rapid changes in the internal nutritional states as well as food availability. Furthermore, it is possible that besides hunger and satiety, other physiological states such as wakefulness, stress, and emotions also influence flies\u2019 locomotor activity. Notably, our single cell analysis has shown that these AKHR+dInR+ neurons also sparsely express other neuropeptide receptors, suggesting that at least small portions of these neurons may also receive input from other neuropeptidergic systems.\n\nStarved animals exhibited increased locomotion and food consumption, the transition of which relies on the detection of food cues (Chen et al., 2015; Yang et al., 2015). But whether these two behaviors are interdependently or independently regulated remains unclear. In this present study, we have shown that these two behaviors are dissociable from each other in fruit flies (Figure 7i). On the one hand, although AKHR+ neurons exert a\u00a0robust modulatory effect on starvation-induced hyperactivity, these neurons are neither necessary nor sufficient for starvation-induced food consumption (Figures 4 and 5). On the other hand, the regulation of food consumption is independent of starvation-induced hyperactivity as well. We have previously shown that a small subset of GABAergic neurons in the fly brain regulates food consumption but exerts no effect on starvation-induced hyperactivity (Pool et al., 2014). In addition, several neuropeptides are known to regulate food consumption, such as Hugin, NPF, sNPF, Leucokinin, and AstA (Al-Anzi et al., 2010; Hergarden et al., 2012; Lee et al., 2004; Melcher and Pankratz, 2005; Wu et al., 2005). However, we found in our RNAi screen that the receptors of these neuropeptides were not involved in the regulation of starvation-induced hyperactivity (Figure 1d). Taken together, it is likely that starvation-induced hyperactivity and food consumption are independently regulated by different sets of hormonal cues, and that AKHR+ neurons are only involved in the former but not the latter. Our results may shed light on the regulation of food intake in mammals, especially whether starvation-induced hyperactivity and food consumption are also independently regulated by different sets of hormones and distinct neural circuitry in mammals.\n\n## Materials and methods\n\n### Flies\n\nFlies were kept on a\u00a0standard fly medium made of yeast, corn, and agar at 25\u00b0C and 60% humidity on a 12\u00a0hr light: 12\u00a0hr dark cycle. Virgin female flies were collected shortly after eclosion and kept in groups (20 flies per vial) for 5\u20136 d before experiments. For experiments involving Shibirets1, flies were raised at 18\u00b0C for 8\u20139 d before transferring to 30\u00b0C right before the behavioral assays.\n\nAll UAS-RNAi lines used in the screen (#25832, #25858, #25925, #25935, #25936, #25939, #25940, #26017, #27275, #27280, #27494, #27669, #27506, #27507, #27509, #27513, #27529, #27539, #28580, #28780, #28781, #28783, #29414, #29577, #29624, #31490, #34947, #31884, #31958, #33627, #38347), UAS-T\u03b2H RNAi (#27667), UAS-AKH RNAi (#27031), AKH-GAL4 (#25683), UAS-mCD8GFP (#32186), Tdc2-GAL4 (#9313), fat body specific ppl-GAL4 (#58768), and gustatory neuron specific Gr5a-GAL4 (#57592) were obtained from the Bloomington Drosophila Stock Center at Indiana University. UAS-DDC RNAi (#2197.N) and UAS-dInR RNAi (#5713) were from the Tsinghua Fly Center. AKHR-/- and UAS-AKHR flies were from R. K\u00fchnlein (Gr\u00f6nke et al., 2007).\n\nTransgenic flies were generated using the methods described previously (Pfeiffer et al., 2010). Briefly, the nSyb promoter (\u22121826 to +78) and the AKHR promoter (\u22122804 to +55) were generated by PCR from genomic DNA and cloned into pDONR221 vector (Life Technologies), and subsequently cloned into pBPGUw (Addgene #17575), pBPp65ADZpUw (Addgene #26234), and pBPZpGAL4DBDUw (Addgene #26233) to generate nSyb-GAL4, AKHR-GAL4, nSyb:AD and AKHR:BD constructs. These cloned DNA fragments were then integrated into AttP40 (25C6), AttP2 (68A4), and VK00031 (62E1) landing sites, respectively.\n\n### Locomotion assay\n\n#### DAMS-based locomotion assay\n\nAs described in our earlier report (Yang et al., 2015), the locomotor activity of individual flies was indirectly monitored using DAMS (Trikinetics). Briefly, individual virgin female flies were lightly anesthetized and introduced into 5\u2009\u00d7 65\u2009mm polycarbonate tubes (Trikinetics). One end of these tubes was filled with 2% (wt/vol) agar \u00b1 5% (wt/vol) sucrose and the other end was blocked by cotton wool. These polycarbonate tubes were then inserted into DAMS monitors and kept in fly incubators during the course of the experiments.\n\n#### Video-based locomotion assay\n\nTo prepare for the assay, a small drop of 2% (wt/vol) agar medium (sucrose might be added as indicated) was placed in the center of each recording chamber (10\u00a0mm (Diameter) \u00d7 4\u00a0mm (Height)). Individual flies fed ad libitum or starved for 36\u2009hr were gently aspirated into each chamber, and their activity was then video recorded for 8\u2009hr and analyzed by the CADABRA software (Dankert et al., 2009; Yang et al., 2015).\n\n### Food consumption assays\n\n#### The MAFE assay\n\nAs described previously (Qi et al., 2015), individual flies were introduced into a 200\u2009\u03bcL pipette tip by gentle aspiration. The pipette tip was carefully cut using a blade to expose the proboscis. Flies were first water satiated and then presented with 800\u2009mM sucrose added with 2% green dye (McCormick,\u00a0Sparks, MD) delivered in a fine graduated capillary (VWR, #53432\u2013604). When the flies became unresponsive to a series of 10 food stimuli, the assay was terminated and the total volume of ingested food was calculated.\n\n#### The FLIC assay\n\nThe FLIC assay was performed as described previously (Ro et al., 2014). Briefly, both feeding channels in the Drosophila Feeding Monitors (DFM) were filled with 800\u00a0mM sucrose added with 2% blue dye (McCormick). Individual starved flies were gently aspirated into each feeding arena and their feeding behavior was recorded for 1\u2009hr. Physical contact between flies\u2019 proboscis and the liquid food generated an electrical current that was recorded by the DFMs. According to the original report, electrical current greater than 120 a.u. was considered as actual feeding, and the total feeding bouts and the duration of feeding time were calculated accordingly.\n\n### Imaging\n\nThe brains of ice anesthetized flies were dissected in PBS and then fixed in 4% PFA on ice for at least 1\u2009hr. Fixed brains were incubated in Penetration/Blocking Buffer (2% Triton X-100 and 10% Calf Serum in PBS) for 20\u201324\u2009hr at 4\u00b0C and incubated in Dilution Buffer (0.25% Triton X-100 and 1% Calf Serum in PBS) with primary antibodies at 4\u00b0C for 20\u201324\u2009hr. The samples were then washed in Washing Buffer (3% NaCl and 1% Triton X-100 in PBS) for 3 \u00d7 30\u2009min at room temperature and subsequently incubated in secondary antibodies for 20\u201324\u2009hr at 4\u00b0C. The brains were washed again in Washing Buffer before mounted in Fluoroshield with DAPI (Sigma-Aldrich) for confocal imaging (Nikon 60 \u00d7 A/1.20 WI). Antibodies were used at the following dilutions: mouse anti-nc82 (1:200, DSHB), rabbit anti-GFP (1:500, Life Technologies), mouse anti-GFP (1:500, abcam), rabbit anti-dInR (1:100, Cell Signaling Technology), Alexa Fluor 546 goat anti mouse (1:300, Life Technologies), Alexa Fluor 488 goat anti rabbit (1:300, Life Technologies), Alexa Fluor 546 goat anti rabbit (1:300, Life Technologies), and Alexa Fluor 488 goat anti mouse (1:300, Life Technologies).\n\n### Single-cell RT-PCR\n\nThe method of single-cell cDNA preparation has been described previously (Tang et al., 2010). In brief, individual GFP+ cells were picked with a glass micropipette in situ (pipettes were pulled from thick-walled borosilicate capillaries (BF120-69-10, Sutter Instruments) for initial tip opening of 1\u20132\u2009\u03bcm under a dissecting microscope and transferred into lysate buffer (0.9\u00a0\u00d7\u00a0PCR Reaction Buffer II, 1.35\u2009mM MgCl2, 0.45% NP40, 4.5\u2009mM DTT, 0.18 U/\u00b5l SUPERase-In, 0.36 U/\u00b5l RNase inhibitor, 12.5 nM UP1 primer, 0.045\u2009mM dNTP mix) immediately, followed by reverse transcription using oligo(dT) primers to generated first-strand cDNA. A poly(A) tail was then added to the 3\u2032 end of the first-strand cDNA by terminal deoxynucleotidyl transferase. The cDNA was amplified by 29 cycles of PCR with universal oligo(dT) primers, and then tested by nested PCR with the primers listed in Supplementary file 1.\n\n### Single-cell RNA-seq\n\nIndividual GFP+ cells were harvested as described above, subjected to cDNA amplification (SMARTer Ultra Low RNA Kit for Sequencing, Clonetech), library preparation (NEBNext Ultra II DNA Library Prep Kit, NEB), and sequencing (Illumina Hiseq2500/4000 platform). Reads were subsequently mapped to Drosophila genome and only uniquely mapped reads were kept for further analysis. Gene expression levels were quantified and compared by RPKM (Reads Per Kilobase per Million mapped reads).\n\n### Statistical analysis\n\nData presented in this study were verified for normal distribution by D\u2019Agostino-Pearson omnibus test. Student\u2019s t-test, one-way ANOVA, and two-way ANOVA were applied for pair-wise comparisons, comparisons among 3 or more data sets, and comparisons with more than one variant, respectively. The post hoc test with Bonferroni correction was performed for multiple comparisons following ANOVA.\n",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b2bd1735-325f-4d41-8393-041753383c61",
+      "submission_id": "2a4ec48b-8938-41af-adfc-a7f8dd9973f9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15693.020](https://doi.org/10.7554/eLife.15693.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Regulation of food-seeking behavior by insulin and glucagon signaling in adult Drosophila\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior Editor) and three reviewers, one of whom, Mani Ramaswami (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors use simple assays for starvation-induced food seeking and food consumption in Drosophila to understand how these behaviors are regulated. They use a quasi-unbiased transgenic RNAi screen to test which of some 31 neuropeptide receptors are required in the nervous system for starvation-induced hyperactivity. Of these they identify one AKHR that has the strongest effect on starvation-induced hyperactivity (though others appear to have significant effects as well). This is significant because AKHR is the receptor for insect glucagon, which is released under starvation conditions. The AKH receptor is expressed in a small number of identified central neurons as well as in sugar sensing labellar neurons: however, it does not appear to be required for starvation induced locomotion in peripheral receptors.\n\nThe authors show that:\n\nA) Loss of AKHR or reduced activity of the AKHR positive neurons has the same effect on \"food-seeking,\" without affect food consumption.\n\nB) That the same neurons express Insulin receptors, which have an opposing role on food-seeking. Thus, knocking down insulin signaling in these cells enhances starvation induced food seeking.\n\nC) The same neurons also express octopamine and that octopamine biosynthetic machinery is required in these cells for starvation-induced hyperactivity.\n\nAlthough some elements of the story were already published (Yang et al., 2015), the current study is a comprehensive synthesis linking hormone modulation to octopamine release. Together, they identify key central sensors of starvation and satiety that control food seeking behaviors and show that these are different from those that control food consumption. It is notable that they engage deeply with mammalian literature, making parallels as appropriate across biological systems.\n\nMajor comments:\n\n1) The manuscript should be more judicious in its use of the term \"food-seeking.\" In previous publications, the behaviour is called starvation triggered hyperactivity or locomotion, which is appropriate. Hyperactivity could increase the chance of finding food, without being \"food-seeking.\" The authors could certainly speculate, propose and discuss that this implies increased food-seeking, but without further evidence, the terminology used should not imply that the purpose of the behavior is known or that this is targeted in any way.\n\n2) The authors should verify using either existing genetic mutants or antibody reagents that the central brain neurons identified are indeed AKHR+ as they claim. The RNAi experiments could and should be augmented by use of a genetic mutant and the RT PCR by use of an antibody. Two groups have generated AKHR mutants (Zipursky lab and Kuhnlein lab), UAS-AKHR transgenes, and AKHR antibodies. So there are a number of available reagents that can be used.\n\n3) The work should be complemented by experimental activation (by Chrimson or TRPA1) of the AKHR neurons to determine a direct effect of these neurons on motor activity +/- starvation conditions. Time allowing the authors should also ask whether AKHR+ neurons activation in neurons depleted of octopamine (TBH RNAi or mutants) also causes the flies to increase their motility? The prediction would be that they would not, that the final read-out is octopamine release.\n\n4) The work shows that AKHR is involved not AKH as stated in the last paragraph of the subsection \u201cA neuron-specific RNAi screen identified AKHR required for starvation-induced hyperactivity\u201d. What is the chance that there is a second ligand? However, a previous study by Lee and Park (2004) showed that starvation increases locomotion activity in Drosophila and this hyperactivity is absent in flies lacking AKH releasing cells. It should be acknowledged that the AKHR result is consistent with the previous AKH result.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Regulation of starvation-induced hyperactivity by insulin and glucagon signaling in adult Drosophila\" for consideration by eLife. Your article has been reviewed by one peer reviewer, and the evaluation has been overseen by Mani Ramaswami as Reviewing Editor and K VijayRaghavan as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe results from this study show that AKH and its receptor AKHR are required for starvation-induced hyperactivity. Thus, experimentally, the data are interesting and valuable. However, the main concern from the previous review, that the experimental results need to be interpreted more carefully and critically, has not yet been addressed satisfactorily.\n\nCrucially, the authors overstate the findings as indication that AKH signaling is required for \"food-seeking\" in Drosophila. The language needs to be toned back consistently to better integrate the authors findings with previously published work, and to distinguish between what is actually \"shown\" by the work and what the authors speculate this may be informing us about Biology.\n\nThe authors should include a model summarized below, which all the reviewers agree to be the most parsimonious and probable interpretation of available data.\n\nUpon starvation animals may exhibit two physiological/ behavioral changes, both of which contribute to food-seeking (or foraging or food finding) behavior. One is a change in sensory responses (for example, the change in gustatory neurons as shown by David Anderson and Kristin Scott, and the increased in the sensitivity of Or42b ORNs and the decrease in the sensitivity of Or85a ORNs shown by Jing Wang). Another of which is an increase in locomotion activity as shown in this study and the previous publications. Starvation-induced hyperactivity may simply facilitate food finding (by allowing a wider area to be scanned by the fly) while the targeting aspects are provided by a change in the chemosensory system.\n\nThere is no evidence from this study that AKH or its receptor is required for anything beyond the hyperactivity. The fact that starved flies tend to accumulate around food and display a reduced walking speed (shown in Figure 3) merely supports the notion that food (sugar in this experiment) consumption reduces the hyperactivity through the metabolic hormone insulin as shown in the current study that the AKHR-positive neurons also express InR. The findings of the current study are interesting, but they must be presented and discussed more conservatively and in context of what is already known in the field.\n\nBefore the paper can be accepted, the authors must do a better job of addressing the following non-exhaustive list of issues focused on this major concern, which was also \"major comment #1\" in the previous decision letter.\n\n1) Abstract. First sentence \"Starvation induces sustained increase in locomotion, which resembles food-seeking behavior and facilitates food localization and acquisition\". This should be changed to \"Starvation induces a sustained increase in locomotion, which acts to facilitate food localization and acquisition\".\n\n2) Introduction. \"We have also shown that starvation induced hyperactivity facilitates food localization and acquisition, partly resembling food-seeking behavior in flies\". This needs to be revised accordingly (the \"partly resembling food-seeking behavior in flies\" phrase should be removed).\n\n3) In general, the Introduction should be revised to be more precise and scholarly. It should be framed around the concept that, food seeking behavior has sensory and locomotion aspects. For the sensory aspect, both olfactory and gustatory contributions must be included. The authors should also discuss the previous papers on AKH with the specific goal of discussing what is not known about the starvation-induced AKH-mediated hyperactivity.\n\n4) Title of the section \"Neuronal AKHR is required for starvation-induced food seeking\" needs to be changed accordingly. The whole section must be edited to deliver a consistent accurate and balanced message.\n\n5) The Discussion section should also be revised in the same manner.\n\n6) Figure 8I shows that sNPF and NPF are only involved in food consumption. This is incorrect. Previous work has shown that both are involved in foraging behavior. The text should acknowledge that food seeking is separated into sensory and locomotion aspects.\n",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9eac9b6-3bf8-4ee3-b81e-c074ae927378",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C1",
+      "claim": "Starvation induces sustained increase in locomotion in adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation induces sustained increase in locomotion, which facilitates food localization and acquisition and hence composes an important aspect of food-seeking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "6546c9f2-baa3-41d0-a2de-5d23f6c8b044",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C2",
+      "claim": "The receptor of the adipokinetic hormone (AKHR) is required for starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The receptor of the adipokinetic hormone (AKHR), the insect analog of glucagon, was required for starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RNAi screen data and mutant analysis shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "9eb64f7a-0674-4275-988c-51f254295c6b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C3",
+      "claim": "AKHR is expressed in a small group of octopaminergic neurons in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "AKHR was expressed in a small group of octopaminergic neurons in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by imaging data in Figure 4 and single-cell analysis in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "1243f58b-7d6f-403c-aa77-4c0e36ce809d",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C4",
+      "claim": "Silencing AKHR+ neurons eliminates starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing AKHR+ neurons and blocking octopamine signaling in these neurons eliminated starvation-induced hyperactivity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated using Shibirets1 to block neuronal transmission in Figure 4e-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f45e3a4b-5b3e-4294-ad31-f0837dfb2267",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C5",
+      "claim": "Activation of AKHR+ neurons accelerates the onset of hyperactivity upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "activation of these neurons accelerated the onset of hyperactivity upon starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by NaChBac expression experiments in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "fb9125e6-ab96-4644-a900-1904612d70b5",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C6",
+      "claim": "AKHR+ neurons are not involved in increased food consumption upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither AKHR nor AKHR+ neurons were involved in increased food consumption upon starvation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by MAFE and FLIC assays in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ffa7869f-370b-4990-86f6-6cd9c8177a5e",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C7",
+      "claim": "Starvation-induced hyperactivity and food consumption are independently regulated.",
+      "claim_type": "EXPLICIT",
+      "source": "starvation-induced hyperactivity and food consumption are independently regulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the dissociation of effects on hyperactivity versus food consumption across multiple experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "9b255d92-a14a-46b5-8f27-015d802e6e6b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C8",
+      "claim": "AKHR+ neurons co-express Drosophila insulin-like receptor (dInR).",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell analysis of AKHR+ neurons identified the co-expression of Drosophila insulin-like receptor (dInR)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by single-cell RT-PCR, RNA-seq, and antibody staining in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "6bb7d640-1a02-40c4-9e18-80d32f073be8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C9",
+      "claim": "dInR imposes suppressive effect on starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "which imposed suppressive effect on starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by dInR knockdown and overexpression experiments in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "820f771f-41f6-46ee-919c-ba6cd4755742",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C10",
+      "claim": "Insulin and glucagon signaling exert opposite effects on starvation-induced hyperactivity via a common neural target in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, insulin and glucagon signaling exert opposite effects on starvation-induced hyperactivity via a common neural target in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from the opposing effects of AKHR and dInR signaling in the same neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "e8a0d21e-6dbb-48cf-928e-89b516c61583",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C11",
+      "claim": "Neuronal knock-down of AKHR eliminated starvation-induced hyperactivity in the RNAi screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst 31 RNAi lines we examined, only the neuronal knock-down of AKHR eliminated starvation-induced hyperactivity (Figure 1d, 'AKHR')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct result from the RNAi screen shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "54de1bee-2b47-4a11-a17a-b519b44aa195",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C12",
+      "claim": "Neuronal knock-down of AKHR did not interfere with baseline locomotion under fed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neuronal knock-down of AKHR did not interfere with the baseline locomotion under fed conditions (Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported from screen data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a70fee55-9540-4e64-b7db-1015aec132bf",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C13",
+      "claim": "AKHR-/- mutants exhibited no increase in locomotion upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results from our RNAi screen, we found that AKHR-/- mutants exhibited no increase in locomotion upon starvation (Figure 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by locomotion assays in Figure 2a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "924ff81b-2dce-49a1-a426-5c0d1e15c03e",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C14",
+      "claim": "Eliminating AKH expression abolished starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we also found that eliminating AKH expression abolished starvation-induced hyperactivity (Figure 2d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experiments in Figure 2d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "78134059-de41-4bf5-9546-22eda9ad2305",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C15",
+      "claim": "AKH-AKHR signaling is required for starvation-induced hyperactivity in adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, AKH-AKHR signaling is required for starvation-induced hyperactivity in adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from multiple lines of evidence including RNAi, mutants, and AKH deletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0bfc5457-3d17-49db-9f4f-4f5763ddb17d",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C16",
+      "claim": "AKHR is expressed in the fat body and regulates lipid storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have shown that AKHR is expressed in the fat body and regulates lipid storage (Bharucha et al., 2008; Gr\u00f6nke et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0d1c134b-ab41-45b4-858c-efb07bf93690",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C17",
+      "claim": "AKHR-/- mutant flies had excessive fat storage.",
+      "claim_type": "EXPLICIT",
+      "source": "We also confirmed that AKHR-/- mutant flies had excessive fat storage (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by triglyceride measurements in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f917ca60-a3ee-4885-8c9a-15cab09a97d6",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C18",
+      "claim": "Pan-neuronal elimination of AKHR showed comparable locomotor activity under fed and starved conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results from our RNAi screen, pan-neuronal elimination of AKHR showed comparable locomotor activity under fed and starved conditions, whereas the two genetic controls exhibited significant increase in locomotion upon starvation (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by nSyb-GAL4 driven AKHR knockdown in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0546e571-d5c7-4ef6-8448-b3db04e6c194",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C19",
+      "claim": "Neuronal knock-down of AKHR did not affect lipid storage of flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neuronal knock-down of AKHR did not affect lipid storage of flies (Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by triglyceride measurements in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "c184c899-5a4d-44eb-ac3d-9d0e90e4b5d6",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C20",
+      "claim": "Fat body knock-down of AKHR did not eliminate starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "fat body knock-down of AKHR did not eliminate starvation-induced hyperactivity (Figure 3\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by ppl-GAL4 driven experiments in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a59f931c-5ff5-4f76-8c3d-28076330cce7",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C21",
+      "claim": "Only neuronal AKHR, but not fat body-expressed AKHR, is required for starvation-induced hyperactivity in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that only neuronal AKHR, but not fat body-expressed AKHR, is required for starvation-induced hyperactivity in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from tissue-specific knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "36d7d639-f805-4c1a-8a66-516f49573537",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C22",
+      "claim": "Flies with neuronal knock-down of AKHR exhibited comparable walking velocity under fed vs. starved conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "By using this behavioral assay, we confirmed that flies with neuronal knock-down of AKHR exhibited comparable walking velocity under fed vs. starved conditions, whereas the two control genotypes exhibited significantly increased walking velocity upon starvation (Figure 3\u2014figure supplement 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by video-based locomotion assay in Figure 3\u2014figure supplement 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bdb59880-68a3-4fcc-b709-06ce508e5a3a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C23",
+      "claim": "Starved flies from all three genotypes could locate and occupy food sources in the center of the behavioral chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, starved flies from all three genotypes could locate and occupy food sources in the center of the behavioral chamber (Figure 3\u2014figure supplement 3b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by spatial distribution analysis in Figure 3\u2014figure supplement 3b-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bd3d6c30-2a14-4634-ab4c-ec53f1812037",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C24",
+      "claim": "Neuronal AKHR is required for starvation-induced hyperactivity without interfering with the ability to locate and occupy food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data confirm that neuronal AKHR is required for starvation-induced hyperactivity without interfering their ability to locate and occupy food sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from behavioral assays showing dissociation of hyperactivity and food localization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d848ddc2-e318-4d1a-9d37-c798feb3896c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C25",
+      "claim": "Starvation significantly increases food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that starvation could significantly increase food consumption",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by MAFE assay in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "e1a8ecbf-e767-4c71-b1f3-18925c5b7cb1",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C26",
+      "claim": "Neuronal knock-down of AKHR did not affect starvation-induced increase in meal size.",
+      "claim_type": "EXPLICIT",
+      "source": "and that neuronal knock-down of AKHR did not affect starvation-induced increase in meal size (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by MAFE assay in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "6bd0d2b6-130e-407d-a8bf-4bcd0d93222c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C27",
+      "claim": "Eliminating AKHR in neurons did not interfere with long-term feeding, as measured by both the number of feeding bouts and the total duration of feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that eliminating AKHR in neurons did not interfere with long-term feeding, as measured by both the number of feeding bouts and the total duration of feeding (Figure 3j\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by FLIC assay in Figure 3j-k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "7e73f00b-24ef-4732-a151-8006d353bc40",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C28",
+      "claim": "Neuronal AKHR is specifically required for starvation-induced hyperactivity but not food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that neuronal AKHR is specifically required for starvation-induced hyperactivity but not food consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from multiple feeding assays showing no effect on food consumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ec1db4cb-6481-46a7-95e7-93c5973cfede",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C29",
+      "claim": "Several other hormonal cues mediate the effect of starvation on food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that several other hormonal cues mediate the effect of starvation on food consumption (Figure 7i) (Pool and Scott, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the dissociation of hyperactivity and food consumption, supported by literature citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f16be14f-cd4f-4cea-b100-970010d903ce",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C30",
+      "claim": "Knocking down AKHR in Gr5a+ sweet-sensing gustatory neurons did not interfere with starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that knocking down AKHR in Gr5a+ sweet-sensing gustatory neurons did not interfere with starvation-induced hyperactivity (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by Gr5a-GAL4 driven experiments in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "4deb39a4-c3ff-4403-be57-89f10b1ab3bd",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C31",
+      "claim": "Starvation-induced hyperactivity does not require gustatory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we have previously shown that starvation-induced hyperactivity did not require gustatory input (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "72cdfb30-7722-4ebb-83f1-fcf3ccaa2d27",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C32",
+      "claim": "AKHR is expressed in a small group of neurons located in the SEZ (2\u20134 neurons per hemisphere).",
+      "claim_type": "EXPLICIT",
+      "source": "Using the combinational nSyb:AD/AKHR:BD-GAL4 driver that induces gene expression only in AKHR+ neurons, we found that AKHR was expressed in a small group of neurons located in the SEZ (2\u20134 neurons per hemisphere) but not in the ventral nerve cord (data not shown) (Figure 4a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by split-GAL4 imaging in Figure 4a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "46c8fb0d-95a7-4b1b-89ab-9142865bba46",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C33",
+      "claim": "The cell bodies of AKHR+ neurons are located in the ventrolateral region of the SEZ and send Y-shaped neural projections into the SEZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell bodies of these AKHR+ neurons were located in the ventrolateral region of the SEZ and sent Y-shaped neural projections into the SEZ (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by imaging in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "33c187a4-4ca7-4c91-a318-8c631cc1d609",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C34",
+      "claim": "AKHR is expressed in the sweet-sensing gustatory neurons and projects to the SEZ region of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Bharucha et al., 2008), we also found that AKHR was expressed in the sweet-sensing gustatory neurons and projected to the SEZ region of the brain (Figure 4c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Confirmed by imaging in Figure 4c-d and cited from previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "1e15dfa5-a3f5-4f2b-9ccd-9a17b897b3ce",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C35",
+      "claim": "Acute silencing of AKHR+ neurons eliminated starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that acute silencing of AKHR+ neurons eliminated starvation-induced hyperactivity (Figure 4e\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated using Shibirets1 in Figure 4e-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "974da2ac-fb73-43c2-ad2c-ab71e6b99a71",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C36",
+      "claim": "AKHR+ neurons in the fly brain are required for increased locomotion upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, AKHR+ neurons in the fly brain are required for increased locomotion upon starvation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from silencing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "3db0cb35-2991-45d1-a89f-f0f5ab95e556",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C37",
+      "claim": "Acute silencing of AKHR+ neurons did not block the increase in food consumption by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute silencing of AKHR+ neurons did not block the increase in food consumption by starvation, as assayed by the changes in meal size upon starvation (Figure 4h), and by the number of feeding bouts and total feeding duration (Figure 4i\u2013j).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by MAFE and FLIC assays in Figure 4h-j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "49d39276-d108-45b2-bb2a-eeb1877cca04",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C38",
+      "claim": "AKHR and AKHR+ neurons specifically regulate starvation-induced hyperactivity, but not food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, AKHR and AKHR+ neurons specifically regulate starvation-induced hyperactivity, but not food consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from dissociation of effects on hyperactivity versus food consumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "dc64062f-9876-4399-9e88-21542ebac70c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C39",
+      "claim": "NaChBac expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that NaChBac expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation. While the two control lines only exhibited a significant increase in locomotion during Day two of the assay, NaChBac expression in AKHR+ neurons led to increased locomotor activity from Day one of the assay (Figure 5a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by NaChBac expression experiments in Figure 5a-d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "9db15900-d9ec-4ec9-ab13-04068109b92f",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C40",
+      "claim": "Over-expression of AKHR in AKHR+ neurons led to earlier onset of starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, over-expression of AKHR in AKHR+ neurons also led to earlier onset of starvation-induced hyperactivity (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by AKHR overexpression experiments in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "aa75e00e-7764-47f8-81f3-3297decdb36b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C41",
+      "claim": "NaChBac expression in AKHR+ neurons did not change the meal size of both fed and starved flies.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5e, NaChBac expression in AKHR+ neurons did not change the meal size of both fed and starved flies.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by MAFE assay in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b129fe54-740f-4a7c-a976-30dfedc49495",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C42",
+      "claim": "Activating AKHR+ neurons did not alter the duration and frequency of feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating AKHR+ neurons did not alter the duration and frequency of feeding behavior, either (Figure 5f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by FLIC assay in Figure 5f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "c05c93d3-3126-43ba-984c-760584aa4660",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C43",
+      "claim": "The regulation of starvation-induced hyperactivity can be disassociated from the regulation of starvation-induced food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the regulation of starvation-induced hyperactivity can therefore be disassociated from the regulation of starvation-induced food consumption, since the former is neither necessary nor sufficient for the latter (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from experiments showing manipulation of hyperactivity does not affect food consumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "5fd43a19-2632-4933-8629-e4016fc105c9",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C44",
+      "claim": "All GFP+ neurons examined by single-cell RT-PCR were AKHR positive.",
+      "claim_type": "EXPLICIT",
+      "source": "All GFP+ neurons we examined were AKHR positive, confirming that the nSyb:AD/AKHR:BD-GAL4 driver reliably recapitulates the endogenous expression pattern of AKHR (Figure 6a\u2013b, 'GFP' and 'AKHR').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RT-PCR in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d82f3f5b-7ca3-471d-abb7-226049f49f40",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C45",
+      "claim": "All GFP+ cells examined by RNA-seq showed considerable AKHR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our single-cell RT-PCR experiments, all GFP+ cells we examined by RNA-seq showed considerable AKHR expression (Figure 6c, 'AKHR').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RNA-seq in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bb9fc802-5beb-42af-91f0-b8fb5a4ee12f",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C46",
+      "claim": "GFP+ cells showed no or very low expression for genes specifically expressed in the peripheral nervous system, muscle, and the fat body.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, these GFP+ cells showed no or very low expression for genes specifically expressed in the peripheral nervous system, muscle, and the fat body (Figure 6c, 'Or67d', 'Gr5a', 'MyoD', and 'Slimfast').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RNA-seq in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "cc4027a0-760b-471b-90d2-de4e47223635",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C47",
+      "claim": "The transcripts of dInR were steadily detected in GFP+ neurons by single-cell RT-PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Among all receptor genes we examined (Supplementary file 1), we found that the transcripts of dInR were steadily detected in GFP+ neurons by single-cell RT-PCR (Figure 6a\u2013b, 'dInR').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RT-PCR in Figure 6a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ce7e6932-0029-4bf1-af9b-7311e132320c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C48",
+      "claim": "The co-localization of dInR and AKHR was confirmed by RNA-seq and antibody staining.",
+      "claim_type": "EXPLICIT",
+      "source": "The co-localization of dInR and AKHR was also confirmed by RNA-seq (Figure 6c, 'dInR') and antibody staining (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by RNA-seq in Figure 6c and immunostaining in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d75040c4-05d3-415a-9066-84f25e38697e",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C49",
+      "claim": "Eliminating dInR expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that similar to the effect of activating AKHR+ neurons (Figure 5a\u2013d), eliminating dInR expression in AKHR+ neurons accelerated the onset of hyperactivity upon starvation (Figure 6d\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by dInR RNAi experiments in Figure 6d-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "c01510eb-e41f-4e51-854e-aaad750f2f46",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C50",
+      "claim": "Over-expression of dInR in AKHR+ neurons delayed the onset of starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, over-expression of dInR in AKHR+ neurons delayed the onset of starvation-induced hyperactivity (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by dInR overexpression experiments in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "6bd00c33-45b6-4cf9-baad-1e0904a40e1b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C51",
+      "claim": "Insulin signaling in AKHR+ neurons suppresses the activity of these neurons and hence starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data suggest that insulin signaling in AKHR+ neurons suppress the activity of these neurons and hence starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from dInR manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a9d7b2b4-1d9d-4284-a816-5377aa5bf91a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C52",
+      "claim": "Over-expression of dPTEN led to an earlier onset of starvation-induced hyperactivity, phenocopying the effect of dInR knock-down in AKHR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of dPTEN led to an earlier onset of starvation-induced hyperactivity, phenocopying the effect of dInR knock-down in AKHR+ neurons (Figure 6h\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by dPTEN overexpression experiments in Figure 6h-k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "c5572a58-b778-439f-8ffb-0ed38704f986",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C53",
+      "claim": "The activity of AKHR+ neurons is modulated by two sets of functionally antagonizing hormones, AKH and DILPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that the activity of AKHR+ neurons is modulated by two sets of functionally antagonizing hormones, AKH and DILPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from experiments showing opposite effects of AKHR and dInR signaling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "845c5b27-3232-486a-9e0f-d5a3aabb63a0",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C54",
+      "claim": "The hunger hormone AKH activates AKHR+ neurons via AKHR and promotes locomotor activity upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "The hunger hormone AKH activates these neurons via AKHR and promotes locomotor activity upon starvation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from AKHR requirement and activation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "5d8dc830-2104-4093-9ef2-005036fa8405",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C55",
+      "claim": "The satiety hormones DILPs exert a suppressive effect on starvation-induced hyperactivity via dInR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the satiety hormones DILPs exert a suppressive effect on starvation-induced hyperactivity via dInR signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from dInR manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d8304dad-9294-4153-9f36-26d501a5b530",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C56",
+      "claim": "The interplay between AKH and DILPs modulates locomotor activity upon changes in flies' internal nutritional states.",
+      "claim_type": "EXPLICIT",
+      "source": "The interplay between these two sets of hormonal cues therefore modulates locomotor activity upon changes in flies' internal nutritional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the opposing effects of the two signaling systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ea01fb5c-76f3-4e63-8566-2858c0c3d506",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C57",
+      "claim": "Myosuppressin receptor 2 (DMS-R2) was moderately enriched in AKHR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides dInR, Myosuppressin receptor 2 (DMS-R2) was also moderately enriched in AKHR+ neurons (Figure 6a, Line 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RT-PCR in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "52b29aba-76fc-4929-aa29-efdf72d050de",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C58",
+      "claim": "Knocking down DMS-R2 in AKHR+ neurons did not affect starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down DMS-R2 in AKHR+ neurons, however, did not affect starvation-induced hyperactivity (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by DMS-R2 RNAi experiments in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b8dec83d-7f0f-41a3-9fbe-301f6e4031ba",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C59",
+      "claim": "The transcripts of tyramine beta-hydroxylase (T\u03b2H) were detected in GFP+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RT-PCR showed that the transcripts of tyramine beta-hydroxylase (T\u03b2H) were detected in GFP+ neurons (Figure 7a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RT-PCR in Figure 7a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "63fbb81e-8ed2-4ba2-91ea-253c0062530a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C60",
+      "claim": "T\u03b2H expression in AKHR+ neurons was confirmed by single-cell RNA-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were also confirmed by single-cell RNA-seq (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RNA-seq in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "3e28f64c-218d-4591-8385-dd53074f0349",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C61",
+      "claim": "Pan-neuronal knock-down of T\u03b2H expression eliminated starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We first showed that similar to the phenotype of T\u03b2HM18 null mutants (Yang et al., 2015), pan-neuronal knock-down of T\u03b2H expression eliminated starvation-induced hyperactivity (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by nSyb-GAL4 driven T\u03b2H RNAi in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b0842665-b8f4-43a7-b8ee-1535683ec40e",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C62",
+      "claim": "Knocking down the expression of T\u03b2H specifically in AKHR+ neurons eliminated starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, knocking down the expression of T\u03b2H specificallyin AKHR+ neurons eliminated starvation-induced hyperactivity (Figure 7d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by AKHR-GAL4 driven T\u03b2H RNAi in Figure 7d-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "e96d56cd-72a3-43a0-805b-49c6870283c0",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C63",
+      "claim": "Knocking down the expression of AKHR in octopaminergic neurons blocked the increase in locomotion by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, knocking down the expression of AKHR in octopaminergic neurons also blocked the increase in locomotion by starvation (Figure 7g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by Tdc2-GAL4 driven AKHR RNAi in Figure 7g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "7b10a578-a531-40d1-8fff-0a5901f59ed4",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C64",
+      "claim": "AKHR+ neurons in the fly brain are octopaminergic.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that AKHR+ neurons in the fly brain are octopaminergic",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from T\u03b2H expression and functional experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f66a8b71-1700-44eb-b23f-c753a7dc35ea",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C65",
+      "claim": "Octopamine signaling mediates the effect of AKHR+ neurons on starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "and that octopamine signaling mediates the effect of these neurons on starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from T\u03b2H knockdown experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "db037758-31be-4a1d-8f75-34b068dada0a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C66",
+      "claim": "The transcripts of Dopa decarboxylase (DDC) were moderately enriched in AKHR+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RT-PCR also identified that the transcripts of Dopa decarboxylase (DDC), a key enzyme for the biosynthesis of both dopamine and serotonin (Lundell and Hirsh, 1994), was moderately enriched in AKHR+ neurons (Figure 7a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by single-cell RT-PCR in Figure 7a-b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "8b2dc12d-d9fa-43a2-adc0-0d6775aa460a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C67",
+      "claim": "Eliminating DDC expression in AKHR+ neurons exerted no effect on the increased locomotion by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, eliminating DDC expression in AKHR+ neurons exerted no effect on the increased locomotion by starvation (Figure 7h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by DDC RNAi experiments in Figure 7h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ec001661-2d1b-4118-9aab-b586c0a04bb7",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C68",
+      "claim": "Energy homeostasis is vital for survival, growth, and reproduction of animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy homeostasis is vital for survival, growth, and reproduction of animal species (Gautron et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "de3b70ea-0728-4540-ad7e-78b842f88e05",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C69",
+      "claim": "Energy deprivation drives a complex behavioral program to ensure adequate food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Energy deprivation drives a complex behavioral program to ensure adequate food intake (Sternson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "36f1f9fe-d87d-4c70-86d5-ed4ef0369403",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C70",
+      "claim": "In mammals, the hypothalamic arcuate nucleus senses and integrates numerous nutritional cues and modulates food intake in response.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the hypothalamic arcuate nucleus, especially the neurons expressing agouti-related protein (AgRP)/neuropeptide Y (NPY), and those expressing pro-opiomelanocortin (POMC), sense and integrate numerous nutritional cues such as circulating glucose, insulin, leptin, and ghrelin and modulate food intake in response (Belgardt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "db3156cb-0e97-4448-b6f1-90f66c583935",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C71",
+      "claim": "In fruit flies, several hormonal signals modulate different aspects of food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies, several hormonal signals modulate different aspects of food intake, these including Drosophila insulin-like peptides (DILPs), the two homologs of mammalian NPY, neuropeptide F (NPF) and short neuropeptide F (sNPF), and a handful of other neuropeptides such as allatostatin A (AstA), leucokinin, and hugin (Pool and Scott, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bd070016-d530-48d5-8446-ff923b385a57",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C72",
+      "claim": "Hormonal cues represent the nutritional status of animals and translate them into physiological and behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted that these hormonal cues represent the nutritional status of animals and translate them into physiological and behavioral responses (Pool and Scott, 2014; Sternson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "63fa0715-f643-4525-9298-a418199322ce",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C73",
+      "claim": "The search of appropriate food sources (food seeking) is often the first step of food intake, followed by the actual ingestion of food (food consumption).",
+      "claim_type": "EXPLICIT",
+      "source": "The search of appropriate food sources (i.e. food seeking) is often the first step of food intake, followed by the actual ingestion of food (i.e. food consumption) (Stephens et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "1e81b1e4-89f3-40f7-8ed4-fb0e2a8d954b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C74",
+      "claim": "Starvation increases the sensitivity of Or42b+ olfactory receptor neurons that mediate odor attraction, and decreases the sensitivity of aversive Or85a+ ORNs, resulting in enhanced behavioral attraction to food odors.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies, starvation increases the sensitivity of Or42b+ olfactory receptor neurons (ORNs) that mediate odor attraction, and decreases the sensitivity of aversive Or85a+ ORNs, resulting in enhanced behavioral attraction to food odors (Ko et al., 2015; Root et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ac258136-e958-409e-83e0-188d1ff503c8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C75",
+      "claim": "Starvation influences the sensitivity of sweet-sensing Gr5a+ gustatory receptor neurons and bitter-sensing Gr66a+ GRNs in opposite directions, resulting in enhanced attractiveness to food taste.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, starvation also influences the sensitivity of sweet-sensing Gr5a+ gustatory receptor neurons (GRNs) and bitter-sensing Gr66a+ GRNs in opposite directions, resulting in enhanced attractiveness to food taste (Inagaki et al., 2012; Inagaki et al., 2014; Marella et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "42c849ef-feba-425f-be12-8ff770c560c6",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C76",
+      "claim": "A number of neurohormonal cues, including DILPs, NPF, sNPF, dopamine, and tachykinin (DTK), are involved in the sensory modulation by starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of neurohormonal cues, including DILPs, NPF, sNPF, dopamine, and tachykinin (DTK), are involved in the sensory modulation by starvation (Inagaki et al., 2012; Inagaki et al., 2014; Ko et al., 2015; Marella et al., 2012; Root et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "9feb6d16-2656-40a3-ae81-39382ffabccc",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C77",
+      "claim": "Starvation promotes locomotor activity in both rodents and fruit flies, which may facilitate the exploration of the environment and increase the possibility to locate potential food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, starvation also promotes locomotor activity in both rodents and fruit flies, which may facilitate the exploration of the environment and increase the possibility to locate potential food sources (Dietrich et al., 2015; Isabel et al., 2005; Lee and Park, 2004; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature including authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a29a34c0-d278-48df-a1c3-8fb1ba41cd59",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C78",
+      "claim": "In fruit flies, starvation-induced hyperactivity requires the neuroendocrine cells producing AKH, the insect analog of glucagon.",
+      "claim_type": "EXPLICIT",
+      "source": "In fruit flies, starvation-induced hyperactivity requires the neuroendocrine cells producing AKH, the insect analog of glucagon (Isabel et al., 2005; Lee and Park, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b89e25fc-1992-4418-906a-bcd46fdfb4d7",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C79",
+      "claim": "AKH has a role in modulating lipid storage as well as starvation resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AKH has a role in modulating lipid storage as well as starvation resistance and whether it imposes a direct effect on starvation-induced hyperactivity remains unclear (Bharucha et al., 2008; Gr\u00f6nke et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bf337726-4379-4607-a61d-6b8c237238db",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C80",
+      "claim": "Octopamine, the insect analog of norepinephrine, is required for starvation induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also shown that octopamine, the insect analog of norepinephrine, is required for starvation induced hyperactivity (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "4bfa51dd-9714-45ef-ad93-17f46f74f16f",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C81",
+      "claim": "Starvation-induced hyperactivity and food consumption are reciprocally inhibitory and the transition of these two behaviors relies on the detection of food cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Starvation-induced hyperactivity and food consumption are reciprocally inhibitory and the transition of these two behaviors relies on the detection of food cues (Chen et al., 2015; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature including authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "bf3c211f-07d0-4c50-a9e3-f0994ece1c66",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C82",
+      "claim": "In rodents, acute activation of hypothalamic AgRP/NPY neurons induces both hyperactivity and food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "In rodents, acute activation of hypothalamic AgRP/NPY neurons induces both hyperactivity and food consumption, suggesting that these two behaviors are regulated by a same group of neurons and hormonal cues (Aponte et al., 2011; Atasoy et al., 2012; Betley et al., 2015; Dietrich et al., 2015; Krashes et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "74dde4e3-2b7c-43a7-846a-a3087163e0ef",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C83",
+      "claim": "The detection of food sources rapidly suppresses starvation-induced hyperactivity along with the activity of AgRP/NPY neurons before actual food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the detection of food sources rapidly suppresses starvation-induced hyperactivity along with the activity of AgRP/NPY neurons before actual food consumption, suggesting that these neurons may only be involved in the locomotor response upon starvation but not food consumption (Betley et al., 2015; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "1f2a0e29-fb33-4bdb-97df-9590dbfa57c9",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C84",
+      "claim": "16 out of 31 RNAi lines exhibited significantly altered activity compared to the control under fed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "16 out of the 31 lines exhibited significantly altered activity compared to the control, suggesting that the baseline locomotion may be a behavioral trait sensitive to multiple neuropeptidergic signaling systems (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported from screen results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "6cf3bd7c-9952-481e-9f0d-3834350dbd65",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C85",
+      "claim": "Baseline locomotion may be a behavioral trait sensitive to multiple neuropeptidergic signaling systems.",
+      "claim_type": "EXPLICIT",
+      "source": "16 out of the 31 lines exhibited significantly altered activity compared to the control, suggesting that the baseline locomotion may be a behavioral trait sensitive to multiple neuropeptidergic signaling systems (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that many RNAi lines affected baseline locomotion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a9f18213-e0be-47b8-bccb-7ed5bab99225",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C86",
+      "claim": "Control flies exhibited ~60% increase in their locomotor activity upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous report (Yang et al., 2015), control flies exhibited ~60% increase in their locomotor activity upon starvation (Figure 1d, 'Control').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1d and consistent with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "05e5027d-1731-4a06-b403-e29f772eb06a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C87",
+      "claim": "All other RNAi lines (except AKHR) still exhibited significantly enhanced locomotion upon starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas all other RNAi lines still exhibited significantly enhanced locomotion upon starvation (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "3656f2ac-cbc4-4e15-a25d-121da99215f5",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C88",
+      "claim": "AKHR is not involved in general motor control, but specifically in the regulation of locomotion by the internal nutritional states.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neuronal knock-down of AKHR did not interfere with the baseline locomotion under fed conditions (Supplementary file 1), suggesting that AKHR is not involved in general motor control, but specifically in the regulation of locomotion by the internal nutritional states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that AKHR knockdown affects starvation-induced but not baseline locomotion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "286da76e-b1f6-42d2-adaf-7ad1912a6299",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C89",
+      "claim": "A previous report did not observe the behavioral difference between AKHR-/- mutants vs. the control under starvation conditions, likely due to the short time window of the behavioral assay.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that a previous report did not observe the behavioral difference between AKHR-/- mutants vs. the control under starvation conditions, which was likely due to the short time window of the behavioral assay (Bharucha et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of discrepancy with previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "65427f79-afc6-4db2-a821-e1c8dbdb190b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C90",
+      "claim": "AKH secretion is induced by the reduction in circulating sugar levels, which in turn mobilizes lipid storage for energy supply.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to its mammalian counterpart, AKH secretion is induced by the reduction in circulating sugar levels, which in turn mobilizes lipid storage for energy supply (Kim and Rulifson, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "695705bc-c55d-4faa-9bc3-b94199cd67e8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C91",
+      "claim": "Genetic ablation of AKH-producing cells located in the corpora cardiaca led to increased fat storage and diminished starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports have shown that genetic ablation of AKH-producing cells located in the corpora cardiaca led to increased fat storage and diminished starvation-induced hyperactivity (Isabel et al., 2005; Lee and Park, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0d5d2ce1-ac38-4cd9-b0aa-1df625a2aa5c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C92",
+      "claim": "AKHR signaling has a direct role in regulating starvation-induced hyperactivity in the nervous system.",
+      "claim_type": "IMPLICIT",
+      "source": "To further examine the function of neuronal AKHR, we used a different pan-neuronal driver neuronal synaptobrevin-GAL4 (nSyb-GAL4) to knock down AKHR in the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing neuronal-specific AKHR is sufficient for the behavioral effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "4024cffd-c3ea-4957-8cf2-e5c5aa7a04aa",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C93",
+      "claim": "The behavioral and metabolic effects of AKHR signaling can be dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, neuronal knock-down of AKHR did not affect lipid storage of flies (Figure 3\u2014figure supplement 1), and fat body knock-down of AKHR did not eliminate starvation-induced hyperactivity (Figure 3\u2014figure supplement 2), disassociating the behavioral and metabolic effects of AKHR signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from tissue-specific manipulations showing independent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0845fe03-52e9-4730-83d1-8efd6c808e1d",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C94",
+      "claim": "Starved flies exhibit increased interest to food and can rapidly locate and occupy food sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides increased locomotion, starved flies also exhibited increased interest to food and could rapidly locate and occupy food sources (Ko et al., 2015; Root et al., 2011; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature including authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "2294a6a2-f162-4141-ab0e-95eb23af429a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C95",
+      "claim": "DILPs function as satiety signals in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "dInR is the receptor of DILPs, the insect analogs of mammalian insulin. Similar to insulin, DILPs function as satiety signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge about DILPs function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "cae28b57-5a83-4c88-bda2-fd566089a119",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C96",
+      "claim": "Dietary sugars and proteins induce the release of DILPs into the hemolymph, which in turn promotes growth and nutrient storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Dietary sugars and proteins induce the release of DILPs into the hemolymph, which in turn promotes growth and nutrient storage (Buch et al., 2008; Rulifson et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "5bb0c8f3-f953-4ab0-9a98-32d71eb3838a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C97",
+      "claim": "The expression of dInR in AKHR+ neurons suggests that insulin signaling may counteract the effect of AKH-AKHR signaling and suppress the activity of AKHR+ neurons hence starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the expression of dInR in AKHR+ neurons suggests that insulin signaling may counteract the effect of AKH-AKHR signaling and suppress the activity of AKHR+ neurons hence starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis based on the co-expression of dInR and AKHR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "773f3300-6553-4f7e-8f86-bb1b39929820",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C98",
+      "claim": "dPTEN is a negative regulator of insulin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this finding, we over-expressed Drosophila PTEN (dPTEN), a negative regulator of insulin signaling pathway, in AKHR+ neurons (Gao et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b3f3a062-0f64-4620-a10c-198fa7da8283",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C99",
+      "claim": "T\u03b2H is critical for the biosynthesis of octopamine, the insect analog of vertebrate norepinephrine.",
+      "claim_type": "EXPLICIT",
+      "source": "T\u03b2H is critical for the biosynthesis of octopamine, the insect analog of vertebrate norepinephrine (Roeder, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "5a8a4868-a867-4392-bd68-d8ac27bab551",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C100",
+      "claim": "Octopamine is involved in the regulation of various behaviors, including sleep, learning, and aggression.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine is involved in the regulation of various behaviors, including sleep (Crocker and Sehgal, 2008), learning (Burke et al., 2012), and aggression (Hoyer et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "429bdb20-66b8-4dca-9b91-2c913ef74b3b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C101",
+      "claim": "DDC is a key enzyme for the biosynthesis of both dopamine and serotonin.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell RT-PCR also identified that the transcripts of Dopa decarboxylase (DDC), a key enzyme for the biosynthesis of both dopamine and serotonin (Lundell and Hirsh, 1994), was moderately enriched in AKHR+ neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a6213634-78bc-4fbf-bce1-00d997964a97",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C102",
+      "claim": "Starvation influences food-seeking behavior via both modulating the perception of food cues as well as enhancing flies' locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Food seeking and food consumption are essential for the acquisition of food sources, and hence survival, growth, and reproduction of animal species (Gao and Horvath, 2007). Starvation influences food-seeking behavior via both modulating the perception of food cues as well as enhancing flies' locomotor activity (Figure 7i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary statement supported by literature and the current study.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "626b5b76-cf13-4448-a968-238472106b49",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C103",
+      "claim": "Starvation modulates the activity of ORNs via multiple neural and hormonal cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulated evidence has suggested that starvation modulates the activity of ORNs via multiple neural and hormonal cues (Beshel and Zhong, 2013; Ko et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b67d9da2-db91-4ef9-8df6-273dba711455",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C104",
+      "claim": "Starvation modulates ORN activity, which facilitates odor-driven food search and food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "which in turn facilitates odor-driven food search (Root et al., 2011) and food consumption (Farhadian et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "3b902fb7-70cc-4605-b818-676f9a970e31",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C105",
+      "claim": "Starvation modulates the perception of food taste via the relative sensitivity of appetitive sweet-sensing and aversive bitter-sensing GRNs, which may increase the attractiveness of food taste.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, starvation also modulates the perception of food taste via the relative sensitivity of appetitive sweet-sensing and aversive bitter-sensing GRNs, which may in turn increase the attractiveness of food taste (Inagaki et al., 2012; Inagaki et al., 2014; Marella et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "085b97f5-6ad5-4fc8-926a-b2fb8c7891e2",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C106",
+      "claim": "Starved fruit flies exhibit sustained increase in their locomotor activity, which can be suppressed by food consumption induced by both nutritive and non-nutritive food cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Isabel et al., 2005; Lee and Park, 2004), we have shown that starved fruit flies exhibit sustained increase in their locomotor activity, which can be suppressed by food consumption induced by both nutritive and non-nutritive food cues (Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature including authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ac8c5be1-6a4c-4b60-8e40-3875c9e3f5cb",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C107",
+      "claim": "A small group of neurons located in the SEZ region of the fly brain are both necessary and sufficient for starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we have shown that a small group of neurons located in the SEZ region of the fly brain are both necessary and sufficient for starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the current study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "4975a287-cd47-452a-a14d-939d20b8f4bd",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C108",
+      "claim": "AKHR+dInR+ neurons sense the changes in flies' internal nutritional states by directly responding to two sets of hormones, AKH and DILPs, and modulate locomotor activity in response.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons sense the changes in flies' internal nutritional states by directly responding to two sets of hormones, AKH and DILPs, and modulate locomotor activity in response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the current study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "de049ad0-b135-4ec9-a31d-7acf24b06bd8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C109",
+      "claim": "Single cell analysis has identified that AKHR+dInR+ neurons are octopaminergic, which offers an entry point to trace the downstream neural circuitry that regulates starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cell analysis has identified that these AKHR+dInR+ neurons are octopaminergic, which offers an entry point to trace the downstream neural circuitry that regulates starvation-induced hyperactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings and implications for future research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a2acd8b5-525b-4a2a-a3ff-aae2c879a768",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C110",
+      "claim": "There are 7 candidate octopamine receptors in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, there are 7 candidate octopamine receptors in fruit flies and it would be of interest to investigate whether any of these receptors and the receptor-expressing neurons are involved in locomotor regulation upon starvation (El-Kholy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "9b13f6a1-856a-4bec-89cb-103f0eed43c5",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C111",
+      "claim": "AKH and DILPs are two sets of functionally counteracting hormones in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "AKH and DILPs are two sets of functionally counteracting hormones in fruit flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement based on established knowledge and current findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "51e3c41e-4112-4c17-a269-f9777ba8c1f1",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C112",
+      "claim": "These two hormonal signaling systems exert opposite effects on starvation-induced hyperactivity via a small group of AKHR+InR+ octopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that these two hormonal signaling systems exert opposite effects on starvation-induced hyperactivity via a small group of AKHR+InR+ octopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the current study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "fe67f1a6-88ff-42dd-a418-abe3faeaf55d",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C113",
+      "claim": "AKHR+dInR+ neurons can integrate the inputs from the two hormonal signaling systems representing hunger and satiety at the same time, and modulate flies' locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that these AKHR+dInR+ neurons can integrate the inputs from the two hormonal signaling systems representing hunger and satiety at the same time, and modulate flies' locomotor activity (Figure 7i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the co-expression and opposing effects of AKHR and dInR.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a690ebac-8b89-43f2-962b-5970a3e441a8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C114",
+      "claim": "This elegant yet concise design allows these neurons to be responsive to rapid changes in the internal nutritional states as well as food availability.",
+      "claim_type": "EXPLICIT",
+      "source": "This elegant yet concise design allows these neurons to be responsive to rapid changes in the internal nutritional states as well as food availability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of the functional significance of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "06eb0fd4-bae5-46a7-94a7-8a211049118e",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C115",
+      "claim": "Other physiological states such as wakefulness, stress, and emotions may also influence flies' locomotor activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it is possible that besides hunger and satiety, other physiological states such as wakefulness, stress, and emotions also influence flies' locomotor activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "dcf64714-53dc-4d0a-aa12-43d9a05186b8",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C116",
+      "claim": "At least small portions of AKHR+dInR+ neurons may also receive input from other neuropeptidergic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our single cell analysis has shown that these AKHR+dInR+ neurons also sparsely express other neuropeptide receptors, suggesting that at least small portions of these neurons may also receive input from other neuropeptidergic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from single-cell analysis showing expression of other receptors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "7dd30a50-70b0-4aeb-b678-d5543b0ed75f",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C117",
+      "claim": "Starved animals exhibit increased locomotion and food consumption, the transition of which relies on the detection of food cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Starved animals exhibited increased locomotion and food consumption, the transition of which relies on the detection of food cues (Chen et al., 2015; Yang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature including authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "cbfd3568-57a3-4204-8c00-0f29481b030d",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C118",
+      "claim": "Starvation-induced hyperactivity and food consumption are dissociable from each other in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In this present study, we have shown that these two behaviors are dissociable from each other in fruit flies (Figure 7i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of the current study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "02ce5799-1be1-467b-a871-507c6cbb5ed0",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C119",
+      "claim": "A small subset of GABAergic neurons in the fly brain regulates food consumption but exerts no effect on starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that a small subset of GABAergic neurons in the fly brain regulates food consumption but exerts no effect on starvation-induced hyperactivity (Pool et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a2c74a72-69bc-42f5-9e09-41c6c336b3ca",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C120",
+      "claim": "Several neuropeptides are known to regulate food consumption, such as Hugin, NPF, sNPF, Leucokinin, and AstA.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, several neuropeptides are known to regulate food consumption, such as Hugin, NPF, sNPF, Leucokinin, and AstA (Al-Anzi et al., 2010; Hergarden et al., 2012; Lee et al., 2004; Melcher and Pankratz, 2005; Wu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from literature as established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "c983dc2f-5e9e-4900-bab9-6228bee1ba4a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C121",
+      "claim": "The receptors of neuropeptides known to regulate food consumption were not involved in the regulation of starvation-induced hyperactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found in our RNAi screen that the receptors of these neuropeptides were not involved in the regulation of starvation-induced hyperactivity (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown by RNAi screen results in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "4cef3b3c-2283-4ac3-b894-cd411420032b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C122",
+      "claim": "Starvation-induced hyperactivity and food consumption are independently regulated by different sets of hormonal cues in fruit flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, it is likely that starvation-induced hyperactivity and food consumption are independently regulated by different sets of hormonal cues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from multiple lines of evidence showing dissociation of the two behaviors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "651c247b-0875-4c35-8cd7-ea790d9bd891",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C123",
+      "claim": "AKHR+ neurons are only involved in starvation-induced hyperactivity but not food consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "and that AKHR+ neurons are only involved in the former but not the latter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the current study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "28950d1e-5909-49d7-8a4b-4e0ceaae72a9",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "claim_id": "C124",
+      "claim": "The results may shed light on the regulation of food intake in mammals, especially whether starvation-induced hyperactivity and food consumption are also independently regulated by different sets of hormones and distinct neural circuitry in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results may shed light on the regulation of food intake in mammals, especially whether starvation-induced hyperactivity and food consumption are also independently regulated by different sets of hormones and distinct neural circuitry in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation about broader implications for mammalian biology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "95ed9b18-8c42-47c3-a600-2ec17c66d551",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AKHR is specifically required for starvation-induced hyperactivity in adult Drosophila. An RNAi screen of 31 neuropeptide receptors identified AKHR as uniquely necessary for this behavior, with neuronal knockdown eliminating the ~60% increase in locomotion upon starvation without affecting baseline locomotion. This was confirmed in AKHR-/- mutants and AKH deletion flies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The RNAi screen (C11, C87), mutant analysis (C13), and AKH deletion experiments (C14) provide converging genetic evidence. The specificity is demonstrated by preserved baseline locomotion (C12, C88) and the unique phenotype among 31 tested receptors. Sample sizes appear adequate (n=29-80) with appropriate statistical comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Neuronal AKHR, but not fat body AKHR, is required for starvation-induced hyperactivity, dissociating behavioral from metabolic effects. Pan-neuronal AKHR knockdown eliminated hyperactivity without affecting lipid storage, while fat body knockdown did not eliminate hyperactivity despite AKHR's known role in lipid metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Tissue-specific manipulations (C18-C20) using different GAL4 drivers provide clear dissociation of behavioral and metabolic functions. The complementary approaches (neuronal vs. fat body knockdown) with opposite phenotypes strongly support the conclusion. Controls are appropriate with multiple genetic backgrounds tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d1952aab-19ba-49c0-99f7-56467f7c43ad",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neuronal AKHR is required for starvation-induced hyperactivity but not for food localization ability. Video-based behavioral analysis showed that AKHR knockdown flies exhibited comparable walking velocity under fed vs. starved conditions, yet all genotypes could locate and occupy food sources.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The video-based locomotion assay (C22) provides direct measurement of walking velocity, complementing the DAMS assay. The spatial distribution analysis (C23) demonstrates preserved food-seeking ability despite loss of hyperactivity. This dissociation is important but relies on a single behavioral paradigm for food localization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AKHR and AKHR+ neurons specifically regulate starvation-induced hyperactivity but not food consumption. Multiple feeding assays (MAFE and FLIC) showed that neuronal AKHR knockdown and AKHR+ neuron silencing did not affect starvation-induced increases in meal size, feeding bout number, or feeding duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Two independent feeding assays (MAFE for meal size, FLIC for long-term feeding) consistently show no effect on food consumption (C26, C27, C37). Both loss-of-function (knockdown) and acute silencing approaches yield the same result. Sample sizes are adequate (n=18-72). This establishes independent regulation of hyperactivity and consumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "819a41f5-9348-44b1-a302-d7c17ff11d42",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AKHR is expressed in a small group of neurons (2-4 per hemisphere) in the subesophageal zone (SEZ) with Y-shaped projections, distinct from gustatory neurons. Split-GAL4 imaging revealed these neurons in the ventrolateral SEZ, while AKHR knockdown in Gr5a+ gustatory neurons did not affect hyperactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The split-GAL4 system (C32) provides specific labeling of AKHR+ neurons with clear anatomical characterization (C33). The negative result with gustatory neuron knockdown (C30) helps localize function. However, the claim that these are distinct from gustatory neurons is somewhat weakened by C34 showing AKHR expression in sweet-sensing neurons, though functional data support the SEZ neurons as critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "d1de2c43-d39b-4014-be36-5e286d0d4436",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AKHR+ neurons in the brain are necessary for starvation-induced hyperactivity. Acute silencing using temperature-sensitive Shibirets1 eliminated the increase in locomotion upon starvation, demonstrating that ongoing activity of these neurons is required.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The Shibirets1 experiments (C35) provide temporal control, demonstrating acute requirement rather than developmental effects. The use of temperature shift controls for specificity. This is a standard and well-validated approach. Sample sizes appear adequate (n=60-75).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b7a82a37-2eec-4011-bd49-9ef3b27546ac",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Activation of AKHR+ neurons is sufficient to accelerate the onset of starvation-induced hyperactivity. NaChBac expression and AKHR overexpression in AKHR+ neurons caused increased locomotion to appear on Day 1 rather than Day 2 of starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Two independent gain-of-function approaches (NaChBac and AKHR overexpression) yield consistent results (C39, C40). The temporal shift in onset is clearly demonstrated with appropriate controls. This establishes sufficiency and suggests an instructive rather than merely permissive role. Sample sizes are adequate (n=41-80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "e5049d48-e748-4abe-8346-28fc39004f0b",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AKHR+ neurons co-express the Drosophila insulin receptor (dInR). Single-cell RT-PCR and RNA-seq confirmed AKHR expression in all GFP+ neurons and identified dInR co-expression, validated by antibody staining. These neurons showed no expression of peripheral, muscle, or fat body markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Three independent methods (single-cell RT-PCR, RNA-seq, and immunostaining) confirm dInR co-expression (C47, C48). The validation of the GAL4 driver (C44, C45) and negative controls for non-neuronal markers (C46) strengthen confidence. However, single-cell RNA-seq sample size is small (n=5 cells), which limits statistical power for rare transcripts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Insulin signaling via dInR in AKHR+ neurons suppresses starvation-induced hyperactivity. dInR knockdown accelerated hyperactivity onset (phenocopying AKHR+ neuron activation), while dInR overexpression delayed onset. dPTEN overexpression (inhibiting insulin signaling) also accelerated onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Bidirectional manipulations (knockdown and overexpression of dInR) yield opposite, consistent effects (C49, C50). The dPTEN experiment (C52) provides independent validation through a different molecular mechanism. The logic is sound: if dInR suppresses hyperactivity, reducing insulin signaling should enhance it. Sample sizes are adequate (n=41-80).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "714f91fd-4ba1-40dc-b91e-5cd330485604",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AKHR+ neurons integrate opposing signals from hunger hormone AKH (activating via AKHR) and satiety hormones DILPs (suppressing via dInR) to modulate locomotor activity. This represents a common neural target for functionally antagonizing hormonal systems that sense nutritional state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The co-expression of AKHR and dInR (Result 8) combined with their opposite functional effects (Results 7 and 9) strongly support hormonal integration. The model is parsimonious and consistent with all data. However, direct demonstration of simultaneous AKH and DILP signaling in the same neurons is lacking\u2014the evidence is based on separate manipulations of each pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "cb00f32e-3a73-4c5a-bfda-43003186c937",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AKHR+ neurons are octopaminergic and octopamine signaling mediates their effect on starvation-induced hyperactivity. Single-cell analysis detected T\u03b2H (required for octopamine synthesis) in AKHR+ neurons. T\u03b2H knockdown specifically in AKHR+ neurons or AKHR knockdown in octopaminergic neurons eliminated hyperactivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple lines of evidence converge: T\u03b2H expression detected by RT-PCR and RNA-seq (C59, C60), functional requirement shown by cell-type-specific knockdowns in both directions (C62, C63), and consistency with prior work on octopamine (C61). The reciprocal genetic approaches (AKHR driver with T\u03b2H RNAi vs. Tdc2 driver with AKHR RNAi) provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f4133b83-d86b-4736-8aad-58062ea1c9ff",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DDC (Dopa decarboxylase) is expressed in AKHR+ neurons but is not required for starvation-induced hyperactivity. Despite moderate enrichment of DDC transcripts, knockdown in AKHR+ neurons had no effect on locomotion upon starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The expression data (C66) and functional test (C67) are straightforward. The negative result is important for ruling out dopamine/serotonin involvement. However, the conclusion assumes complete knockdown, which is not directly demonstrated. RNAi efficiency could be a concern for negative results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "b9173edd-d014-49de-8b63-db7aa1800ce6",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Myosuppressin receptor 2 (DMS-R2) is moderately enriched in AKHR+ neurons but is not required for starvation-induced hyperactivity. Despite detection by single-cell RT-PCR, DMS-R2 knockdown did not affect the behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Similar to Result 12, this is a clear expression-function dissociation. The negative functional result (C58) is important for specificity but subject to the same RNAi efficiency caveat. Sample size appears adequate (n=48).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "f7b551ef-3064-4964-be90-b3273345b051",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Starvation-induced hyperactivity and food consumption are independently regulated by different hormonal cues and neural circuits. AKHR+ neurons regulate hyperactivity but not consumption, while other neuropeptides (NPF, sNPF, Leucokinin, AstA, Hugin) regulate consumption but not hyperactivity based on the RNAi screen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dissociation is demonstrated by multiple approaches: AKHR manipulations affect hyperactivity but not feeding (Result 4), other neuropeptide receptors affect feeding but not hyperactivity (C121), and prior work shows GABAergic neurons regulate feeding without affecting hyperactivity (C119). This is a major conceptual finding, though the RNAi screen for feeding-related peptides is cited rather than directly shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "290a210d-40c5-4b03-bfce-02cc75a936f1",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Baseline locomotion is sensitive to multiple neuropeptidergic signaling systems. In the RNAi screen, 16 of 31 neuropeptide receptor knockdowns significantly altered locomotion under fed conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a straightforward observation from the screen (C84). The interpretation (C85) is reasonable but somewhat speculative\u2014alternative explanations (off-target effects, general health impacts) are not fully excluded. Sample sizes appear adequate (n=29-48 per line).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "3fe96b75-b74e-41ca-a06a-d88392b3a2a2",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A previous study's failure to observe AKHR mutant phenotypes was likely due to short assay duration. The authors suggest their longer time window (days vs. hours) revealed the behavioral difference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a reasonable hypothesis to explain discrepancy with prior literature (Bharucha et al., 2008), but it's speculative. The authors don't directly test different time windows in a controlled comparison. The claim is plausible but not rigorously demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "AKHR+dInR+ octopaminergic neurons in the SEZ integrate multiple hormonal inputs to modulate locomotor activity in response to nutritional state changes. The design allows responsiveness to rapid changes in internal state and food availability, and may receive additional inputs from other neuropeptidergic systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This synthesizes the major findings into a coherent model. The core claims about AKHR+dInR+ neurons being necessary and sufficient are well-supported (Results 1-11). The speculation about responsiveness to rapid changes (C114) and other inputs (C115, C116) is reasonable but not directly tested. The sparse expression of other receptors (C116) is observational.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    },
+    {
+      "id": "a117aac9-f859-4330-a40b-6c37ae2a98de",
+      "content_id": "6dcfa954-1843-4f25-9552-63f206234059",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The findings may inform understanding of mammalian food intake regulation, particularly whether hyperactivity and consumption are independently regulated in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is purely speculative about translational relevance. While the Drosophila findings are solid, extrapolation to mammals is uncertain without direct evidence. The authors appropriately frame this as a possibility rather than a conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:43:06.170093Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9eac9b6-3bf8-4ee3-b81e-c074ae927378",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "6546c9f2-baa3-41d0-a2de-5d23f6c8b044",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "e8a0d21e-6dbb-48cf-928e-89b516c61583",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "54de1bee-2b47-4a11-a17a-b519b44aa195",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "a70fee55-9540-4e64-b7db-1015aec132bf",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "924ff81b-2dce-49a1-a426-5c0d1e15c03e",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "78134059-de41-4bf5-9546-22eda9ad2305",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "a9f18213-e0be-47b8-bccb-7ed5bab99225",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "05e5027d-1731-4a06-b403-e29f772eb06a",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "3656f2ac-cbc4-4e15-a25d-121da99215f5",
+      "result_id": "95ed9b18-8c42-47c3-a600-2ec17c66d551"
+    },
+    {
+      "claim_id": "0bfc5457-3d17-49db-9f4f-4f5763ddb17d",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "0d1c134b-ab41-45b4-858c-efb07bf93690",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "f917ca60-a3ee-4885-8c9a-15cab09a97d6",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "0546e571-d5c7-4ef6-8448-b3db04e6c194",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "c184c899-5a4d-44eb-ac3d-9d0e90e4b5d6",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "a59f931c-5ff5-4f76-8c3d-28076330cce7",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "0d5d2ce1-ac38-4cd9-b0aa-1df625a2aa5c",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "4024cffd-c3ea-4957-8cf2-e5c5aa7a04aa",
+      "result_id": "e4c02a3c-0768-4644-bbc5-4ae20a89b74a"
+    },
+    {
+      "claim_id": "36d7d639-f805-4c1a-8a66-516f49573537",
+      "result_id": "d1952aab-19ba-49c0-99f7-56467f7c43ad"
+    },
+    {
+      "claim_id": "bdb59880-68a3-4fcc-b709-06ce508e5a3a",
+      "result_id": "d1952aab-19ba-49c0-99f7-56467f7c43ad"
+    },
+    {
+      "claim_id": "bd3d6c30-2a14-4634-ab4c-ec53f1812037",
+      "result_id": "d1952aab-19ba-49c0-99f7-56467f7c43ad"
+    },
+    {
+      "claim_id": "0845fe03-52e9-4730-83d1-8efd6c808e1d",
+      "result_id": "d1952aab-19ba-49c0-99f7-56467f7c43ad"
+    },
+    {
+      "claim_id": "d848ddc2-e318-4d1a-9d37-c798feb3896c",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "e1a8ecbf-e767-4c71-b1f3-18925c5b7cb1",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "6bd0d2b6-130e-407d-a8bf-4bcd0d93222c",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "7e73f00b-24ef-4732-a151-8006d353bc40",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "3db0cb35-2991-45d1-a89f-f0f5ab95e556",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "49d39276-d108-45b2-bb2a-eeb1877cca04",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "aa75e00e-7764-47f8-81f3-3297decdb36b",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "b129fe54-740f-4a7c-a976-30dfedc49495",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "c05c93d3-3126-43ba-984c-760584aa4660",
+      "result_id": "0aae965b-2cd0-4ac5-87bd-8ef1f099348c"
+    },
+    {
+      "claim_id": "f16be14f-cd4f-4cea-b100-970010d903ce",
+      "result_id": "819a41f5-9348-44b1-a302-d7c17ff11d42"
+    },
+    {
+      "claim_id": "4deb39a4-c3ff-4403-be57-89f10b1ab3bd",
+      "result_id": "819a41f5-9348-44b1-a302-d7c17ff11d42"
+    },
+    {
+      "claim_id": "72cdfb30-7722-4ebb-83f1-fcf3ccaa2d27",
+      "result_id": "819a41f5-9348-44b1-a302-d7c17ff11d42"
+    },
+    {
+      "claim_id": "46c8fb0d-95a7-4b1b-89ab-9142865bba46",
+      "result_id": "819a41f5-9348-44b1-a302-d7c17ff11d42"
+    },
+    {
+      "claim_id": "33c187a4-4ca7-4c91-a318-8c631cc1d609",
+      "result_id": "819a41f5-9348-44b1-a302-d7c17ff11d42"
+    },
+    {
+      "claim_id": "1e15dfa5-a3f5-4f2b-9ccd-9a17b897b3ce",
+      "result_id": "d1de2c43-d39b-4014-be36-5e286d0d4436"
+    },
+    {
+      "claim_id": "974da2ac-fb73-43c2-ad2c-ab71e6b99a71",
+      "result_id": "d1de2c43-d39b-4014-be36-5e286d0d4436"
+    },
+    {
+      "claim_id": "1243f58b-7d6f-403c-aa77-4c0e36ce809d",
+      "result_id": "d1de2c43-d39b-4014-be36-5e286d0d4436"
+    },
+    {
+      "claim_id": "dc64062f-9876-4399-9e88-21542ebac70c",
+      "result_id": "b7a82a37-2eec-4011-bd49-9ef3b27546ac"
+    },
+    {
+      "claim_id": "9db15900-d9ec-4ec9-ab13-04068109b92f",
+      "result_id": "b7a82a37-2eec-4011-bd49-9ef3b27546ac"
+    },
+    {
+      "claim_id": "f45e3a4b-5b3e-4294-ad31-f0837dfb2267",
+      "result_id": "b7a82a37-2eec-4011-bd49-9ef3b27546ac"
+    },
+    {
+      "claim_id": "5fd43a19-2632-4933-8629-e4016fc105c9",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "d82f3f5b-7ca3-471d-abb7-226049f49f40",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "bb9fc802-5beb-42af-91f0-b8fb5a4ee12f",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "cc4027a0-760b-471b-90d2-de4e47223635",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "ce7e6932-0029-4bf1-af9b-7311e132320c",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "9b255d92-a14a-46b5-8f27-015d802e6e6b",
+      "result_id": "e5049d48-e748-4abe-8346-28fc39004f0b"
+    },
+    {
+      "claim_id": "d75040c4-05d3-415a-9066-84f25e38697e",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "c01510eb-e41f-4e51-854e-aaad750f2f46",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "6bd00c33-45b6-4cf9-baad-1e0904a40e1b",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "a9d7b2b4-1d9d-4284-a816-5377aa5bf91a",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "6bb7d640-1a02-40c4-9e18-80d32f073be8",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "5bb0c8f3-f953-4ab0-9a98-32d71eb3838a",
+      "result_id": "5adf65b3-cc88-45bd-a3c8-10a2d1555277"
+    },
+    {
+      "claim_id": "c5572a58-b778-439f-8ffb-0ed38704f986",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "845c5b27-3232-486a-9e0f-d5a3aabb63a0",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "5d8dc830-2104-4093-9ef2-005036fa8405",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "d8304dad-9294-4153-9f36-26d501a5b530",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "820f771f-41f6-46ee-919c-ba6cd4755742",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "4975a287-cd47-452a-a14d-939d20b8f4bd",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "9b13f6a1-856a-4bec-89cb-103f0eed43c5",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "51e3c41e-4112-4c17-a269-f9777ba8c1f1",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "fe67f1a6-88ff-42dd-a418-abe3faeaf55d",
+      "result_id": "714f91fd-4ba1-40dc-b91e-5cd330485604"
+    },
+    {
+      "claim_id": "b8dec83d-7f0f-41a3-9fbe-301f6e4031ba",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "63fbb81e-8ed2-4ba2-91ea-253c0062530a",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "3e28f64c-218d-4591-8385-dd53074f0349",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "b0842665-b8f4-43a7-b8ee-1535683ec40e",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "e96d56cd-72a3-43a0-805b-49c6870283c0",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "7b10a578-a531-40d1-8fff-0a5901f59ed4",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "f66a8b71-1700-44eb-b23f-c753a7dc35ea",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "9eb64f7a-0674-4275-988c-51f254295c6b",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "b3f3a062-0f64-4620-a10c-198fa7da8283",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "5a8a4868-a867-4392-bd68-d8ac27bab551",
+      "result_id": "cb00f32e-3a73-4c5a-bfda-43003186c937"
+    },
+    {
+      "claim_id": "db037758-31be-4a1d-8f75-34b068dada0a",
+      "result_id": "f4133b83-d86b-4736-8aad-58062ea1c9ff"
+    },
+    {
+      "claim_id": "8b2dc12d-d9fa-43a2-adc0-0d6775aa460a",
+      "result_id": "f4133b83-d86b-4736-8aad-58062ea1c9ff"
+    },
+    {
+      "claim_id": "429bdb20-66b8-4dca-9b91-2c913ef74b3b",
+      "result_id": "f4133b83-d86b-4736-8aad-58062ea1c9ff"
+    },
+    {
+      "claim_id": "ea01fb5c-76f3-4e63-8566-2858c0c3d506",
+      "result_id": "b9173edd-d014-49de-8b63-db7aa1800ce6"
+    },
+    {
+      "claim_id": "52b29aba-76fc-4929-aa29-efdf72d050de",
+      "result_id": "b9173edd-d014-49de-8b63-db7aa1800ce6"
+    },
+    {
+      "claim_id": "ffa7869f-370b-4990-86f6-6cd9c8177a5e",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "ec1db4cb-6481-46a7-95e7-93c5973cfede",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "c05c93d3-3126-43ba-984c-760584aa4660",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "cbfd3568-57a3-4204-8c00-0f29481b030d",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "02ce5799-1be1-467b-a871-507c6cbb5ed0",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "a2c74a72-69bc-42f5-9e09-41c6c336b3ca",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "c983dc2f-5e9e-4900-bab9-6228bee1ba4a",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "4cef3b3c-2283-4ac3-b894-cd411420032b",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "651c247b-0875-4c35-8cd7-ea790d9bd891",
+      "result_id": "f7b551ef-3064-4964-be90-b3273345b051"
+    },
+    {
+      "claim_id": "1f2a0e29-fb33-4bdb-97df-9590dbfa57c9",
+      "result_id": "290a210d-40c5-4b03-bfce-02cc75a936f1"
+    },
+    {
+      "claim_id": "6cf3bd7c-9952-481e-9f0d-3834350dbd65",
+      "result_id": "290a210d-40c5-4b03-bfce-02cc75a936f1"
+    },
+    {
+      "claim_id": "286da76e-b1f6-42d2-adaf-7ad1912a6299",
+      "result_id": "3fe96b75-b74e-41ca-a06a-d88392b3a2a2"
+    },
+    {
+      "claim_id": "ac8c5be1-6a4c-4b60-8e40-3875c9e3f5cb",
+      "result_id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7"
+    },
+    {
+      "claim_id": "de049ad0-b135-4ec9-a31d-7acf24b06bd8",
+      "result_id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7"
+    },
+    {
+      "claim_id": "a690ebac-8b89-43f2-962b-5970a3e441a8",
+      "result_id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7"
+    },
+    {
+      "claim_id": "06eb0fd4-bae5-46a7-94a7-8a211049118e",
+      "result_id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7"
+    },
+    {
+      "claim_id": "dcf64714-53dc-4d0a-aa12-43d9a05186b8",
+      "result_id": "ae978d47-ea5f-4753-9b97-9c2a3c760ab7"
+    },
+    {
+      "claim_id": "28950d1e-5909-49d7-8a4b-4e0ceaae72a9",
+      "result_id": "a117aac9-f859-4330-a40b-6c37ae2a98de"
+    }
+  ],
+  "comparisons": []
+}

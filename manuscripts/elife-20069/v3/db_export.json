@@ -1,0 +1,1791 @@
+{
+  "submission": {
+    "id": "9eca660f-86da-4b54-a86c-6651651f1468",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:02:58.148146Z",
+    "updated_at": "2025-11-30T21:02:58.148146Z"
+  },
+  "content": [
+    {
+      "id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "submission_id": "9eca660f-86da-4b54-a86c-6651651f1468",
+      "content_type": "manuscript",
+      "content_text": "# The fail-safe mechanism of post-transcriptional silencing of unspliced HAC1 mRNA\n\n## Authors\n\n- Rachael Di Santo<sup>1</sup>\n- Soufiane Aboulhouda<sup>1</sup>\n- David E Weinberg<sup>1</sup> ([ORCID: 0000-0002-9348-1709](https://orcid.org/0000-0002-9348-1709)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Sandler Faculty Fellows Program University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHAC1 encodes a transcription factor that is the central effector of the unfolded protein response (UPR) in budding yeast. When the UPR is inactive, HAC1 mRNA is stored as an unspliced isoform in the cytoplasm and no Hac1 protein is detectable. Intron removal is both necessary and sufficient to relieve the post-transcriptional silencing of HAC1 mRNA, yet the precise mechanism by which the intron prevents Hac1 protein accumulation has remained elusive. Here, we show that a combination of inhibited translation initiation and accelerated protein degradation\u2014both dependent on the intron\u2014prevents the accumulation of Hac1 protein when the UPR is inactive. Functionally, both components of this fail-safe silencing mechanism are required to prevent ectopic production of Hac1 protein and concomitant activation of the UPR. Our results provide a mechanistic understanding of HAC1 regulation and reveal a novel strategy for complete post-transcriptional silencing of a cytoplasmic mRNA.\n\n## Introduction\n\nThe unfolded protein response (UPR) is a eukaryotic stress response pathway that is activated when unfolded proteins accumulate in the endoplasmic reticulum (ER) lumen (Gardner et al., 2013). In the budding yeast Saccharomyces cerevisiae, the central effector of the UPR is the transcription factor Hac1p (Cox and Walter, 1996; Mori et al., 1996; Nikawa et al., 1996). HAC1 (and its metazoan ortholog Xbp1) is unique among eukaryotic genes in that it contains an intron that is excised through an unconventional cytoplasmic splicing reaction mediated by two proteins, Ire1p and tRNA ligase, rather than the spliceosome (Cox and Walter, 1996; Kawahara et al., 1997; Sidrauski and Walter, 1997; Sidrauski et al., 1996). In the absence of ER protein-folding stress, the intron-containing mRNA (denoted HAC1u; \u2018u\u2019 for UPR \u2018uninduced\u2019) is transcribed and exported to the cytoplasm but does not give rise to detectable protein due to the presence of the inhibitory intron (Cox and Walter, 1996; Chapman and Walter, 1997). The accumulation of unfolded proteins in the ER lumen activates the ER-resident transmembrane kinase\u2013endonuclease Ire1p, which cleaves out the intron from HAC1 mRNA via its cytoplasmic nuclease domain (Sidrauski and Walter, 1997). After the exons are joined by tRNA ligase, the resulting spliced mRNA (denoted HAC1i; \u2018i\u2019 for UPR \u2018induced\u2019) is now translated into Hac1ip. This active transcription factor is imported into the nucleus, where it activates the expression of UPR target genes involved in restoring protein-folding homeostasis in the ER (Chapman et\u00a0al., 1998). Intron removal is both necessary and sufficient to relieve the post-transcriptional silencing of HAC1 that otherwise prevents Hac1p accumulation (Chapman and Walter, 1997).\n\nThe post-transcriptional silencing of HAC1 and its subsequent reversal by cytoplasmic splicing together enable a rapid UPR that does not depend on de novo transcription (R\u00fcegsegger et al., 2001). At the same time, a robust silencing mechanism is required to prevent ectopic accumulation of Hac1up from the abundant cytoplasmic pool of HAC1u mRNA that might otherwise turn on UPR target genes in the absence of ER stress. The current model for silencing is that elongating ribosomes are stalled on the mRNA during translation, thereby preventing synthesis of full-length Hac1p (R\u00fcegsegger et al., 2001). According to this model, the mediator of translational attenuation is a long-range base-pairing interaction between the 5\u2032 untranslated region (UTR) and intron of HAC1u mRNA.\n\nThe key data supporting the stalled elongation model is that the majority of HAC1u mRNA sediments in the polysome region of a sucrose gradient (Arava et al., 2003; Chapman and Walter, 1997; Cox and Walter, 1996; Kuhn et al., 2001; Mori et al., 2010; Park et al., 2011; Payne et al., 2008; R\u00fcegsegger et al., 2001; Sathe et al., 2015) despite no detectable Hac1up. Furthermore, the heavy-sedimenting HAC1u mRNA is distributed in a discontinuous pattern with peaks and valleys that precisely match the peaks and valleys observed for polysomes (R\u00fcegsegger et al., 2001). These data provide convincing evidence that heavy-sedimenting HAC1u mRNA reflects ribosome association rather than another high-molecular-weight complex that co-sediments with polysomes, or so-called \u2018pseudo-polysomes\u2019 (Thermann and Hentze, 2007). Given this apparent ribosome association of HAC1u mRNA, an alternative explanation for the absence of Hac1up is that Hac1up is synthesized but immediately degraded (Cox and Walter, 1996). However, Hac1up and Hac1ip are thought to have similar half lives (Chapman and Walter, 1997; Kawahara et al., 1997), arguing against differential protein degradation as the primary mechanism that prevents Hac1up accumulation yet allows Hac1ip accumulation.\n\nDespite widespread acceptance of the stalled elongation model (Richter and Coller, 2015), the mechanism by which base pairing between untranslated regions causes ribosomes to stall in the open reading frame (ORF) is unknown. The reduced efficiency of translational attenuation in vitro suggested that additional factors might be involved in the inhibitory mechanism (R\u00fcegsegger et al., 2001), perhaps acting to transduce the signal from the untranslated regions to translating ribosomes. However, the sequence of the base-pairing region can be changed without affecting silencing if base pairing is preserved (R\u00fcegsegger et al., 2001), making it unlikely that any sequence-specific RNA-binding proteins are involved. In addition, the more recent discovery of the No-Go Decay (NGD) pathway that recognizes stalled ribosomes and targets the associated mRNA for degradation (Doma and Parker, 2006) raises the question of how the ribosome\u2013HAC1u mRNP evades detection and subsequent turnover by the quality-control machinery. For these reasons, and others described below, we revisited the stalled elongation model, which led us to instead identify an entirely different mechanism of post-transcriptional silencing of HAC1u mRNA that reconciles these issues.\n\n## Results\n\n### Very few ribosome footprints on unspliced HAC1 mRNA\n\nWe recently reported improved ribosome-footprint profiles (Ingolia et al., 2009) and mRNA-abundance measurements from exponentially growing S. cerevisiae (Weinberg et al., 2016). Under these growth conditions HAC1 mRNA is almost entirely unspliced (Figure 1\u2014figure supplement 1A) and is distributed across a sucrose gradient with\u00a0~50% in the non-translating fractions and the remaining\u00a0~50% extending across all of the translating (i.e., 80S and larger) fractions without substantial enrichment in any particular fraction (Figure 1A), similar to previous observations (Arava et al., 2003; Chapman and Walter, 1997; Cox and Walter, 1996; Kuhn et al., 2001; Mori et al., 2010; Park et al., 2011; Payne et al., 2008; R\u00fcegsegger et al., 2001; Sathe et al., 2015). In contrast, the well-translated actin (ACT1) mRNA is essentially absent from the non-translating fractions and is found mostly in large polysomes. Based on the sedimentation of HAC1 mRNPs, we predicted that the mRNA would generate a large number of ribosome-protected fragments, in a quantity only\u00a0~2-fold fewer than similarly abundant mRNAs (based on the fraction of HAC1 mRNA in the untranslated fractions). Strikingly, however, after normalizing for mRNA abundance HAC1 generates the fewest ribosome-protected fragments among all expressed yeast genes (Figure 1B)\u2014and ~50-fold fewer than expected from the polysome profile. Rather than providing evidence for stalled ribosomes on HAC1u mRNA, instead these observations suggest that either ribosomes are stalled on the mRNA in a closely packed configuration that prevents nuclease cleavage between ribosomes, which would eliminate the\u00a0~28-nucleotide fragments that are sequenced in the ribosome-profiling method (Figure 1C, middle); or that there are not stalled ribosomes on HAC1u mRNA (Figure 1C, bottom).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig1-v3.jpg)\n\n**Figure 1.:** (A) Polysome analysis of HAC1 and ACT1 mRNAs. Extracts prepared from exponentially growing yeast cells were fractionated on 10\u201350% sucrose gradients, with absorbance at 260 nm monitored (top). The relative distributions of HAC1 and ACT1 mRNAs across fractions were determined by qRT-PCR (bottom). Shown are the mean \u00b1 SEM with n\u00a0=\u00a02 (i.e., the range), expressed as a fraction of the total mRNA detected. (B) Histogram of ribosome densities measured by ribosome profiling and RNA-seq. The ratio of the number of ribosome-protected fragments (RPFs) to the number of RNA-seq reads (mRNA counts) was calculated for each of 4838 expressed yeast genes (data from Weinberg et al., 2016). Shown is the distribution of log-transformed ratios in bins of 0.05, with the position of HAC1 indicated. (C) Possible scenarios to explain a lack of RPFs. While an mRNA with average ribosome density will generate many\u00a0~28 nucleotide (nt) RPFs (top), the close packing of stacked ribosomes could inhibit the RNase digestion between ribosomes required to generate\u00a0~28 nt RPFs (middle). Alternatively, an mRNA that does not contain translating ribosomes would not generate RPFs (bottom). (D) Polysome analysis of HAC1 mRNA variants with shortened ORFs. G-to-T point mutations were introduced into the first exon of HAC1 to generate premature stop codons, with the resulting ORFs shown as thick colored boxes (constitutive 5\u2032- and 3\u2032-UTRs located within exons 1 and 2, respectively, are shown as thin black lines; other untranslated regions are depicted as thin colored boxes; and the coding regions of exons 1 (teal) and 2 (purple) are labeled as 'HAC1 exon1' and \u2018exon2\u2019, respectively). The maximum number of ribosomes that could be accommodated was calculated based on each ribosome occupying 28 nt. Polysome analysis was performed as in (A), with data for wild-type HAC1 from (A) duplicated for comparison. (E) Effects of heparin on polysome analysis. Purified uncapped luciferase (luc) RNA was added to either lysate or lysis buffer in the absence (\u2013) or presence (+) of 0.2 mg/ml heparin. Polysome analysis was performed as in (A) with absorbance at 260 nm monitored (top), and the relative distributions of exogenous luc RNA (middle) and endogenous HAC1 and ACT1 mRNAs (bottom; in lysate only) were determined. (F) Refined polysome analysis of HAC1 mRNAs. Extracts were prepared in heparin-containing lysis buffer from strains shown in (D). Polysome analysis was performed as in (A). (G) Polysome analysis of HAC1 mRNAs during the UPR. Strains shown in (D) were grown to mid-log phase and treated with 8 mM DTT for 20 min before harvesting. Extracts were prepared in heparin-containing lysis buffer, and polysome analysis was performed as in (A). Dotted lines indicate the fractions after which the corresponding color-coded mutant mRNAs would not be expected to sediment based on ORF length.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Design of RT-PCR assay for HAC1 splicing. To differentiate between the HAC1u and HAC1i mRNAs, reverse-transcription products are PCR amplified using a pair of primers that flank the intron. The resulting PCR products are separated by agarose gel electrophoresis, with a size difference of 252 base pairs (bp) corresponding to the size of the intron. (B) Splicing status of HAC1 mRNA. Total RNA was extracted from exponentially growing yeast cells of the indicated genotypes. RT-PCR across the intron was used to differentiate between unspliced (black arrow) and spliced (red arrow) HAC1 mRNA. The small percentage of spliced HAC1 mRNA observed in wild-type cells is IRE1 dependent, as expected. (C) Splicing of HAC1 mRNA variants upon DTT treatment. Strains expressing the indicated HAC1 variants were grown to mid-log phase and either left untreated (\u2013DTT) or treated with 8 mM DTT for 20 min (+DTT) before harvesting. Total RNA was extracted and used for RT-PCR analysis as in (A). The same cultures (two of each strain) were used for polysome analysis in Figure 1F and G.\n\n### Inhibited translation initiation revealed by polysome analyses\n\nAlthough the polysome-like sedimentation of HAC1u mRNA indicates ribosome association, it does not reveal if the ribosomes associated with the mRNA were ever engaged in its translation. Alternatively, the associated ribosomes might be bound in a conformation that is unrelated to translation of HAC1u mRNA. We therefore devised an experiment to definitively determine whether the ribosomes bound to HAC1u mRNA reflect ribosomes that were engaged in its translation. To do so, we took advantage of the observation that HAC1 mRNA is distributed across all of the translating fractions of a sucrose gradient (Figure 1A). If the deep sedimentation is due to multiple translating ribosomes being stalled on a single mRNA, then reducing the number of translating ribosomes that can fit on the mRNA should shift the sedimentation pattern toward lighter fractions. We designed a series of constructs containing point mutations in the first exon of HAC1 that created premature termination codons, which reduce the size of the ORF and thereby limit the number of translating ribosomes (Figure 1D, top). To ensure that the mutant alleles were expressed at near wild-type levels, we replaced the endogenous HAC1 allele without disrupting flanking regulatory regions. Remarkably, each of the mutant mRNAs had a sedimentation pattern that was indistinguishable from the wild-type mRNA (Figure 1D, bottom). In the most extreme case, the mRNA containing a 21-nucleotide ORF that can only accommodate a single translating ribosome still co-sedimented with polysomes containing upwards of 10 ribosomes (fraction 14 of the gradient). These data provide direct evidence that the polysome-like sedimentation of HAC1u mRNA is not due to stalled ribosomes on the mRNA.\n\nWe hypothesized that the ribosome association of HAC1u mRNA was instead due to non-specific interactions between the mRNA and bona fide polysomes formed on other mRNAs. To evaluate the extent of such non-specific interactions, we introduced an exogenous control RNA that should not be translated: an uncapped luciferase-encoding RNA purified from an in vitro transcription reaction. We analyzed the sedimentation behavior of this control RNA when it was added to lysis buffer compared to when it was added to the yeast lysate prior to centrifugation. Surprisingly, some of the exogenous RNA was found in the translating fractions of the lysate\u2014a behavior not observed in lysis buffer alone (Figure 1E, middle). Through extensive optimization, we found that the addition of heparin to the lysis buffer (at a concentration of 0.2 mg/ml) was sufficient to largely prevent the deep sedimentation of exogenous RNA. The addition of heparin also had a major effect on the sedimentation of HAC1 mRNA, as most (83%) now sedimented in the non-translating fractions of the gradient (Figure 1E, bottom). In contrast, the sedimentation of ACT1 mRNA (Figure 1E, bottom) and the overall polysome profile (Figure 1E, top) were largely unchanged, suggesting that heparin competed away non-specific interactions without disrupting bona fide polysomes.\n\nBased on these results, we re-analyzed the HAC1 mutants with shortened ORFs using heparin-containing lysis buffer. Under these conditions, the polysome co-sedimentation of each of the mRNAs was greatly reduced (from\u00a0~50% to <\u00a020%) but there was still no difference among the constructs (Figure 1F), providing further evidence against stalled ribosomes on HAC1u mRNA. Importantly, when we treated cells with the reducing agent dithiothreitol (DTT) to induce the UPR and concomitant splicing of HAC1 mRNA (Figure 1\u2014figure supplement 1C) and repeated the experiment, the variant mRNAs now displayed the expected differential sedimentation based on ORF length (Figure 1G), validating our experimental design. Together, these results demonstrate that at steady state HAC1u mRNA is not associated with either actively elongating or stalled ribosomes. This indicates that the primary block to production of Hac1up is at the stage of translation initiation, not translation elongation as previously proposed (Chapman and Walter, 1997; Richter and Coller, 2015; R\u00fcegsegger et al., 2001).\n\n### An additional silencing mechanism downstream of translation initiation\n\nThe absence of ribosomes on HAC1u mRNA suggests that translation initiation is inhibited. To further understand the mechanism of this inhibition, we used a green fluorescent protein (GFP) reporter system that has been previously shown to recapitulate post-transcriptional silencing by the HAC1 intron (Chapman and Walter, 1997; R\u00fcegsegger et al., 2001). We replaced the first exon of HAC1 with the GFP ORF lacking its own stop codon (Figure 2B), which allowed us to quantitatively analyze post-transcriptional silencing of GFP using a combination of flow cytometry (protein abundance), quantitative RT-PCR (mRNA abundance), and sucrose gradient fractionation (ribosome density). When GFP was embedded in an otherwise wild-type HAC1 context the mRNA sedimented almost entirely in the non-translating fractions (Figure 2A), and there was no detectable fluorescence above background (Figure 2C). In contrast, cells expressing a reporter construct missing the entire intron displayed a strong fluorescence signal (Figure 2C), and most of the mRNA was found in the translating fractions (Figure 2A). Thus, the reporter GFP mRNA behaves similarly to endogenous HAC1 mRNA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig2-v3.jpg)\n\n**Figure 2.:** (A) Polysome analysis of reporter mRNAs. Extracts were prepared in heparin-containing lysis buffer from strains expressing the GFP reporter mRNAs depicted in (B). Polysome analysis was performed as in Figure 1A, with data for wild-type HAC1 from Figure 1F duplicated for comparison. (B) Design of reporter mRNAs. Constructs are depicted as in Figure 1D, with the dotted line indicating a deleted region. Colored stars indicate mutations to the base-pairing region, with specific nucleotide changes shown below in red. (C) Flow cytometry analysis of reporter strains. Strains expressing the GFP reporter mRNAs depicted in (B) were grown to mid-log phase and analyzed by flow cytometry. Plotted is the median GFP intensity (normalized to cell size) of the cell population relative to background fluorescence in the wild-type (no GFP) strain with error bars indicating quartiles of the cell population, all averaged across replicates (n\u00a0=\u00a02\u20137).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) RNA abundance measurements for GFP reporter mRNAs. Total RNA was extracted from strains expressing the indicated mRNAs, using the same cultures as for flow cytometry analyses in Figure 2C. qRT-PCR was used to measure the abundances of GFP reporter mRNAs relative to ACT1 mRNA, with all data normalized to the abundance of the \u2018wild-type\u2019 GFP reporter mRNA (construct 2). Shown are the mean \u00b1 SD (n\u00a0=\u00a02\u20137). (B) Immunoblotting analysis of reporter strains. Proteins were extracted from mid-log-phase cultures of strains expressing the indicated reporter mRNAs depicted in (A). Immunoblots for the GFP reporter and actin loading control are shown. No signal for GFP is observed in the base-pairing mutants (constructs 5 and 6) even after overexposing the blot, consistent with the corresponding flow cytometry results (Figure 2C).\n\nTo determine whether 5\u2032-UTR\u2013intron base pairing is required to prevent ribosome loading on the reporter mRNA, we designed constructs in which the sequence implicated in base-pairing interactions in either the 5\u2032-UTR or the intron was mutated to its complement to disrupt the interaction (Figure 2B, bottom), as was done previously (R\u00fcegsegger et al., 2001). Both mutant mRNAs sedimented mostly in the translating fractions in a manner that was similar to the intronless construct (Figure 2A). When we combined the 5\u2032-UTR and intron mutations and thereby restored base pairing, the mRNA was now found almost exclusively in the non-translating fractions and resembled the original reporter mRNA. These results demonstrate that base pairing between the 5\u2032-UTR and intron is required to prevent ribosome loading by directly impeding the binding or progress of the scanning ribosome.\n\nGiven that the base-pairing mutant mRNAs were loaded with ribosomes similarly to the intronless mRNA (Figure 2A), we expected to observe GFP expression from the mutant mRNAs that was similar to that of the intronless construct. Remarkably, however, neither of the strains expressing a base-pairing mutant mRNA had any GFP detectable by either flow cytometry (Figure 2C) or immunoblotting (Figure 2\u2014figure supplement 1). The lack of GFP signal despite polysome sedimentation was not due to low mRNA abundance, as the mutant mRNAs were present at similar levels compared to the intronless mRNA (Figure 2\u2014figure supplement 1A, compare construct 3 with constructs 5\u20136). These results suggest that an additional silencing mechanism acting downstream of translation initiation prevents GFP accumulation when base pairing is disrupted.\n\n### Post-translational silencing by the intron-encoded C-terminal tail\n\nIn addition to removing the intron portion of the base-pairing interaction, splicing of HAC1 mRNA also alters the C-terminal tail of the encoded protein: The ORF in HAC1u mRNA has a 10-amino-acid tail encoded by the intron, which in HAC1i mRNA is replaced by an 18-amino-acid tail encoded by the second exon (Figure 3A). The fact that the polypeptide tails encoded by the HAC1u and HAC1i mRNAs are different suggests that the 10-amino-acid tail unique to Hac1up may be functionally important. We therefore hypothesized that the intron-encoded C-terminal tail may be involved in the additional silencing mechanism revealed by our base-pairing mutant reporters (Figure 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig3-v3.jpg)\n\n**Figure 3.:** (A) Schematic of HAC1 mRNA splicing. The proteins encoded by HAC1u and HAC1i mRNAs differ in their C-terminal tails, with the amino acid sequences indicated. (B) Design of reporter mRNAs. Black shading indicates recoding, with the original and recoded sequences depicted below (mutations in red). Untranslated regions colored red correspond to those of the TMA7 mRNA, with the reporter gene integrated at the TMA7 rather than HAC1 locus. Otherwise constructs are depicted as in Figure 2B. (C) Flow cytometry analysis of reporter strains. Strains expressing the GFP reporter mRNAs depicted in (B) were analyzed as in Figure 2C, with data for the first three strains duplicated from Figure 2B for comparison. (D) Polysome analysis of reporter mRNAs. Extracts were prepared in heparin-containing lysis buffer from strains expressing the GFP reporter mRNAs indicated in (B). Polysome analysis was performed as in Figure 1A, with data for the wild-type and intronless GFP reporters from Figure 2A duplicated for comparison. (E) Differentiating between co-translational and post-translational silencing mechanisms. Left: Schematic of reporter construct that generates two separate polypeptides from each round of translation. Right: Extracts were prepared from strains expressing reporter mRNAs that either encoded the 10-amino-acid C-terminal tail of Hac1up (+tail) or contained a stop codon just before the tail (\u2013tail). Immunoblotting was used to detect HA-tagged mRuby (top) and GFP (bottom), with actin as a loading control. Two biological replicates are shown for each genotype.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) RNA abundance measurements for GFP reporter mRNAs, analyzed as in Figure 2\u2014figure supplement 1A using the same cultures as for flow cytometry analyses in Figure 3C. (B) Flow cytometry and RNA analyses of additional reporter strains. Strains expressing the indicated GFP reporter mRNAs (left) were analyzed by flow cytometry as in Figure 2C (middle) or qRT-PCR as in Figure 2\u2014figure supplement 1A (right), with data for the first four strains duplicated from Figure 3C and Figure 3\u2014figure supplement 1A for comparison.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Design of the 2A reporter construct. In the absence of 2A activity, a 57\u201358 kDa polypeptide (*) is produced that contains both an HA tag and GFP. When the 2A sequence is active, translation of the reporter generates a 30\u201331 kDa HA-tagged protein and a 27 kDa GFP. Shown are the 30-amino-acid sequences of the 2A peptides that were tested, with each preceded by a GlySerGly linker (gray) and \u2018cleaved\u2019 at the site marked with an arrow. The region corresponding to a minimal 20-amino-acid T2A peptide (\u2018minT2A\u2019) that has been used previously in yeast (Beekwilder et al., 2014) is indicated. Minimal versions of the F2A peptide have also been used in yeast (Doronina et al., 2008; de Felipe et al., 2003; Sharma et al., 2012; Voordeckers et al., 2012) but with \u2018cleavage\u2019 efficiencies that were low or not directly measured. (B\u2013C) Analysis of 2A activity by immunoblotting. BY4741 was transformed with a pRS413-derived centromeric plasmid containing the indicated reporter construct under control of the GPD promoter. Proteins were extracted from mid-log-phase cultures and analyzed for HA- (B) and GFP- (C) tagged proteins by immunoblotting. Only the P2A peptide causes efficient separation of the upstream and downstream proteins (indicated by arrows). The nucleotide sequences encoding the 30-amino-acid peptides are:F2A: CACAAACAAAAGATTGTTGCGCCTGTGAAACAGCTTTTGAACTTTGACCTGCTCAAGTTGGCAGGAGACGTCGAGTCCAACCCTGGGCCTE2A: AGACATAAATTTCCCACTAACATCAACAAACAGTGTACTAATTACTCTCTCCTCAAATTGGCTGGAGATGTTGAGAGCAACCCTGGC CCCP2A: GCTATGACTGTGATGACATTCCAGGGACCAGGTGCAACAAACTTCTCCCTCTTGAAACAAGCAGGAGATGTTGAGGAAAATCCCGGGCCTT2A: CGGGGGCCTCGCCCCCAAAACCTTGGGGTAAGGGCCGAGGGCAGGGGAAGTCTTCTAACATGCGGGGACGTGGAGGAAAATCCCGGCCCC\n\nTo investigate this possibility, we designed a reporter construct in which we removed the entire intron except for the 5\u2032 end that codes for the 10-amino-acid tail of Hac1up (Figure 3B, fourth construct). Remarkably, cells expressing this construct had no detectable GFP (Figure 3C), despite the corresponding mRNA being abundant (Figure 3\u2014figure supplement 1A) and detected on polysomes due to the absence of the base-pairing interaction (Figure 3D). Thus, the coding region at the 5\u2032 end of the intron is sufficient for complete silencing of the GFP reporter. Introducing a termination codon between GFP and the intron restored robust fluorescence comparable to that observed for the intronless construct, which implicated translation of the 5\u2032 end of the intron as required for silencing. Furthermore, making 10 nucleotide changes that maintained the coding potential of the intron-encoded tail (Figure 3B, bottom) had no effect on silencing (Figure 3C), suggesting that the amino-acid sequence encoded by the 5\u2032 end of the intron is more important than the nucleotide sequence itself.\n\nTo determine whether the 10-amino-acid element alone was sufficient for silencing in the absence of any other HAC1 sequences, we expressed GFP from a different locus in the yeast genome (TMA7) either with or without the 10-amino-acid tail. When the 10-amino-acid sequence was either absent or not translated due to a premature stop codon, we observed robust GFP signal (Figure 3C). In contrast, there was no fluorescence detected in cells expressing GFP containing the 10-amino-acid tail. Thus, the C-terminal tail of Hac1up is sufficient for silencing independently of the rest of the HAC1 intron and any other HAC1 sequences.\n\nHaving established the effects of the 10-amino-acid tail in isolation, we next examined the effects of the tail when translation initiation was inhibited by the base-pairing interaction. In an otherwise wild-type HAC1 context, preventing translation of the 10-amino-acid tail either by deleting the entire sequence or by introducing a stop codon caused GFP to accumulate to low but detectable levels (Figure 3C) without greatly affecting the sedimentation of the corresponding mRNAs (Figure 3D). Thus, even when base pairing is intact there is some low-level accumulation of GFP that is normally suppressed by the 10-amino-acid silencing element.\n\nIn the context of reporter constructs lacking the intron-encoded C-terminal tail, mutations in either the 5\u2032-UTR or intron that disrupted base pairing greatly increased the amount of GFP, while the compensatory double-mutant construct with restored base pairing had only low levels of GFP (Figure 3C and Figure 3\u2014figure supplement 1B). These results are in agreement with previous GFP reporter experiments, which used constructs that contained a stop codon between the GFP and intron sequences and therefore had inadvertently eliminated the effects of the 10-amino-acid tail (Chapman and Walter, 1997; R\u00fcegsegger et al., 2001).\n\nTogether, our GFP reporter experiments indicate that the HAC1 intron mediates post-transcriptional silencing through a pair of independent but partially redundant mechanisms: base-pairing interactions with the 5\u2032-UTR that inhibit translation initiation, and a novel silencing mechanism mediated by the intron-encoded C-terminal tail of Hac1up. Robust expression requires that both silencing mechanisms be inactivated, as would happen simultaneously when the intron is removed by Ire1p-dependent splicing.\n\nWhat is the mechanism by which the intron-encoded tail of Hac1up silences gene expression? Because disrupting translation of the tail elevated protein levels (Figure 3C) without affecting polysome formation (Figure 3D), we inferred that the tail was exerting its effect downstream of translation initiation. We therefore reasoned that the 10-amino-acid sequence was acting either by halting translation across the entire mRNA (after polysome formation); or by promoting protein degradation. Our inability to detect GFP containing the 10-amino-acid tail (Figure 3C) prevented us from directly comparing the half lives of GFP with and without the tail. Instead, to distinguish between stalled elongation and protein degradation, we designed a reporter construct that generates two separate polypeptides from a single round of translation through co-translational \u2018cleavage\u2019 mediated by a viral 2A peptide (Sharma et al., 2012). After screening for a 2A peptide sequence that functions efficiently in S. cerevisiae (Figure 3\u2014figure supplement 2), we designed a construct containing HA-mRuby and GFP sequences separated by the P2A peptide (derived from porcine teschovirus-1). The GFP sequence downstream of P2A was appended with the 10-amino-acid tail (or was not, as a control), which should lead to the absence of detectable GFP regardless of the mechanism of action. In contrast, the upstream HA-tagged mRuby should only be detected if translation itself is not affected by the 10-amino-acid sequence, since it reports on the number of rounds of translation but is not covalently linked to the inhibitory tail. Assaying for GFP by immunoblotting revealed that accumulation of the protein was suppressed by the 10-amino-acid tail, as expected (Figure 3E). In contrast, HA-mRuby was detected at similar levels whether or not the tail was included in the construct. These results indicate that the tail functions downstream of translation, likely by acting as a \u2018degron\u2019 (Varshavsky, 1991) that targets the protein for immediate degradation after synthesis (Cox and Walter, 1996).\n\n### Identification of DUH1 through a genetic selection\n\nIf the C-terminal tail of Hac1up functions as a degron, additional proteins may be involved in recognizing the degron and targeting the covalently linked protein for degradation. To identify such trans-acting factors, we used a genetic approach that took advantage of the strong silencing phenotype imparted by the 10-amino-acid tail alone (Figure 3C). We constructed strains in which the first exon of HAC1 was replaced by HIS3, which we reasoned might behave like the analogous GFP reporter genes and be completely silenced by the 10-amino-acid sequence. Similarly to GFP, replacing the first exon of HAC1 with HIS3 but keeping the HAC1 locus otherwise intact prevented expression of His3p as evidenced by histidine auxotrophy (Figure 4A). Removing the entire intron restored His3p expression and growth of the corresponding strain on medium lacking histidine, suggesting that silencing was mediated by the HAC1 intron. Strains containing a stop codon between HIS3 and the intron (to prevent translation of the 10-amino-acid degron) had a low but detectable level of growth on histidine-lacking medium (Figure 4A), consistent with the weak fluorescence signal observed from the corresponding GFP reporter construct (Figure 3C). On the other hand, strains containing His3p appended with the C-terminal tail of Hac1up but no other elements of the HAC1 intron could not grow on medium lacking histidine. These results indicate that the degron is sufficient for functional silencing of HIS3 expression, providing a useful genetic tool to identify additional genes involved in the degron-dependent silencing mechanism.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig4-v3.jpg)\n\n**Figure 4.:** (A) Evaluating a genetic reporter for intron-dependent silencing. Strains expressing the indicated HAC1-based HIS3 reporter mRNAs (depicted as in Figure 2B) either without (\u2013) or with (+) an N-terminal HA tag were grown to saturation, and 10-fold dilution series were plated on either SC or SC\u2013His media. (B) Flowchart of genetic selection for dds mutants. After selecting for spontaneous mutants that could grow on medium lacking histidine, restreaked clones were filtered out for cis mutants, verified to be expressing HA-His3p, and a subset analyzed by whole-genome sequencing. (C) Chromosome map of mutations identified by whole-genome sequencing. Each color corresponds to a different dds mutant strain. Shown on the right is the DUH1 locus (YJL149W), with locations of nucleotide changes (with respect to DUH1 start codon) and corresponding amino changes listed below. (D) Effect of DUH1 disruption on expression of the genetic reporter. Strains expressing the indicated reporter mRNAs depicted in (A) in either a DUH1 or duh1\u2206 (two independent clones) background were grown to mid-log phase. Extracts were prepared and immunoblotted for HA-His3p and actin loading control. (E) Flow cytometry analysis of reporter strains. Strains expressing the indicated GFP reporter mRNAs in either a DUH1 or duh1\u2206 background were analyzed as in Figure 2C. Data is plotted as in Figure 2C (n\u00a0=\u00a02 for all strains).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Table of cis-acting mutations identified by Sanger sequencing. In the parental strain, the Hisp3-coding sequence is shown in gray while the 10-amino-acid degron is shown in black. Amino-acid changes caused by nucleotide mutations are shown in red. (B) Analysis of HA-His3p abundance in dds mutant strains. Protein extraction and immunoblotting were performed as in Figure 4D, using untagged BY4741 as a negative specificity control for the HA antibody. Strains indicated in red contain mutations in the HA-His3p +tail reporter gene. Strains that were subjected to whole-genome sequencing are indicated in blue and gray, with blue indicating those that contain a mutation in DUH1 and gray indicating those that do not. (C) Table of trans-acting mutations identified by whole-genome sequencing. Strains containing DUH1 mutations are listed in order of increasing total number of mutations. (D) Representative example of Sanger sequencing confirmation of DUH1 mutations. Shown are sequencing traces across a region of DUH1 for the parental selection strain and two dds mutants. Each dds mutant contains a nucleotide substitution (highlighted in yellow), compared to both the reference sequence and parental selection strain, corresponding to the mutation identified by whole-genome sequencing.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** RNA abundance measurements for GFP reporter mRNAs in the indicated strain backgrounds, analyzed as in Figure 2\u2014figure supplement 1A using the same cultures as for flow cytometry analyses in Figure 4E.\n\nAlthough we had initially intended to use chemical mutagenesis to generate silencing-defective mutants, upon streaking out the selection strain on histidine-lacking medium we noticed that a small number of slow-growing colonies appeared even without mutagen treatment. We reasoned that such spontaneous suppressor strains would have very few mutations, making it possible to identify suppressor mutations by whole-genome sequencing without requiring backcrossing or forming complementation groups. Thus, to isolate mutants with defective degron-dependent silencing ('dds mutants') we simply plated the selection strain expressing HA-tagged His3p with the 10-amino-acid tail on histidine-lacking medium and isolated the rare single colonies that grew for further analysis (Figure 4B). From five independent platings we isolated a total of 123 mutant strains that, when re-streaked, could grow on medium lacking histidine. Sanger sequencing of the C-terminal region of the reporter gene in each mutant identified 15 strains harboring a cis mutation that either altered the sequence of the degron, introduced a premature stop codon before or within the degron, or removed the stop codon of the degron resulting in a six-amino-acid C-terminal extension (Figure 4\u2014figure supplement 1A)\u2014all of which provided confirmation that the genetic selection worked as desired.\n\nFrom the strains that displayed histidine prototrophy, we picked 35 (including four cis mutants) to analyze by immunoblotting and found that all had detectable HA-His3p (Figure 4\u2014figure supplement 1B). We selected 20 of these strains with unknown mutations for whole-genome sequencing (as well as the parental selection strain as a reference, and three strains with known mutations in the degron as positive controls for our variant-calling procedure), taking care to select strains that varied widely in HA-His3p abundance or growth rate to minimize our chances of sequencing the same mutation in multiple strains. We sequenced the 24 genomes together in a single lane of a HiSeq sequencer using 50-nucleotide single-end reads, which provided 38\u201374X coverage (9.3\u201318.0 million reads) of each yeast genome. We then used standard mapping and variant-calling tools (BWA and FreeBayes, respectively) to identify variants that were absent from the parental genome, which successfully recovered the positive-control cis mutants. Remarkably, 17 out of the 20 strains that we sequenced contained a mutation in the same gene YJL149W (Figure 4C and Figure 4\u2014figure supplement 1C), and in each case we confirmed the mutation by Sanger sequencing (Figure 4\u2014figure supplement 1D). Because no other ORF was found mutated in more than one of the 20 mutant strains (Figure 4\u2014figure supplement 1C), we focused our follow-up efforts on YJL149W.\n\nYJL149W had previously been named DAS1 for 'Dst1-delta 6-Azauracil Sensitivity 1' when it was identified in a genetic screen unrelated to the UPR (G\u00f3mez-Herreros et al., 2012). Based on the protein\u2019s domain structure (containing an F-box domain and leucine-rich repeats) and physical interactions with the SCF core components Cdc53p and Skp1p (Willems et al., 1999), YJL149W was annotated as a 'putative SCF ubiquitin ligase F-box protein' (Cherry et al., 2012). F-box proteins act as adapters to target substrates for ubiquitination and subsequent degradation by the proteasome (Skaar et al., 2013). We therefore propose to rename this gene DUH1 for 'Degrader of Unspliced HAC1 gene product 1' to reflect its role in the degradation of Hac1up, as we demonstrate later.\n\nThe DUH1 variants that we identified in our 17 strains comprised 16 different mutations, of which 8 were nonsense, 7 were missense, and 1 was a frameshift (Figure 4C, right). The nonsense mutations tended to cluster in the first half of the ORF, suggesting that they likely functioned as null alleles. In addition, three of the 17 strains containing mutations in DUH1 did not contain any other mutations, implicating the DUH1 mutations as causative for the phenotype. We therefore tested whether knocking-out DUH1 (which is non-essential) in the original selection strain recapitulated the de-silencing phenotype. Disrupting DUH1 led to a dramatic increase in the steady-state abundance of HA-His3p containing the 10-amino-acid tail, while having no effect on HA-His3p lacking the tail or constructs repressed by long-range base pairing (Figure 4D). Analogously, deleting DUH1 in the GFP reporter strains completely eliminated the silencing effect of the Hac1up tail but had no effect on base-pairing-mediated silencing (Figure 4E and Figure 4\u2014figure supplement 2). Notably, in the absence of DUH1 the GFP reporter in a wild-type HAC1 context was now expressed at the same leaky level as previously seen for the reporter in which a stop codon was positioned between GFP and the intron, indicating that degron-dependent silencing is required to suppress leaky GFP expression. Together, these results provide genetic evidence that DUH1 is the adapter protein that recognizes the Hac1up tail and targets the covalently attached protein for degradation.\n\n### Effects of DUH1 on Hac1p abundance, synthesis, and turnover\n\nHaving established that DUH1 is required for degron-dependent silencing of two different reporter genes, we returned to HAC1 itself. To detect Hac1p we introduced a 3xHA tag at the extreme N terminus of the endogenous HAC1 allele (Figure 5A), which did not interfere with its post-transcriptional silencing in the absence of the UPR (Figure 5B and C). To determine which Hac1p isoforms are regulated by DUH1, we constructed a set of HA-tagged strains that constitutively produced either Hac1ip containing the 18-amino-acid exon 2\u2013encoded tail (construct 3), Hac1up containing the 10-amino-acid intron-encoded tail (construct 5), or Hac1\u0394tailp containing no tail at all (constructs 4 and 6). All of the mRNAs encoding HA-tagged Hac1p variants were expressed at similar levels in the presence versus the absence of DUH1 (Figure 5B). Strikingly, at the protein level only the abundance of Hac1up was affected by disruption of DUH1, increasing by\u00a0~five fold in the knock-out strain (Figure 5C). The increased abundance of Hac1up in the absence of DUH1 was not due to increased translation, as evidenced by deletion of DUH1 having no impact on ribosome density on any of the HA-tagged reporter mRNAs (Figure 5D). Instead, our results suggest that Duh1p specifically affects the turnover of Hac1up due to its 10-amino-acid tail, as was suggested by the results of our reporter experiments.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig5-v3.jpg)\n\n**Figure 5.:** (A) Design of 3xHA-tagged HAC1 mRNA variants. Constructs are depicted as in Figure 2B, with the location of the N-terminal 3xHA tag indicated. (B) RNA abundance measurements for HAC1 mRNA variants. Total RNA was extracted from strains expressing the indicated mRNAs in either a DUH1 or duh1\u2206 background. qRT-PCR was used to measure the abundances of HAC1 variants relative to ACT1 mRNA, with all data normalized to the abundance of construct 1 in strain BY4741. Shown are the mean \u00b1 SD (n\u00a0=\u00a02). (C) Effect of DUH1 disruption on protein abundances. Strains expressing the indicated mRNAs depicted in (A) in either a DUH1 or duh1\u2206 background were grown to mid-log phase. Extracts were prepared and immunoblotted for 3xHA-Hac1p and actin loading control. (D) Polysome analysis of 3xHA-tagged HAC1 mRNA variants. Extracts were prepared in heparin-containing lysis buffer from strains expressing the mRNAs indicated in (A) in either a DUH1 or duh1\u2206 background. Polysome analysis was performed as in Figure 1A. (E) Analysis of protein degradation kinetics. Strains expressing construct 5 (depicted in A) in either a DUH1 or duh1\u2206 background were grown to mid-log phase before being treated with cycloheximide (CHX) to halt translation. At the indicated time points, aliquots of cells were quenched in dry-ice-cold methanol and harvested by centrifugation. Protein extraction and immunoblotting were performed as in (C), except that a high-sensitivity antibody was used to detect 3xHA-Hac1up. Shown are the mean \u00b1 SD (n\u00a0=\u00a03), expressed as a fraction of protein detected at t\u00a0=\u00a00.\n\nBecause we were able to detect Hac1up by immunoblotting (using a high-sensitivity antibody) even when DUH1 was intact (unlike the corresponding GFP reporter), we could use cycloheximide (CHX) shut-off experiments to directly assay the impact of DUH1 on the turnover of Hac1up. In both the presence and absence of DUH1, Hac1up was degraded so rapidly that we could not accurately measure its half life even using a rapid harvesting procedure, due to the\u00a0~2 minutes required for CHX to accumulate in cells and halt translation (Gerashchenko and Gladyshev, 2014). However, the protein-degradation kinetics allowed us to calculate an upper bound for the half life of Hac1up, which was 50 seconds when DUH1 was present (Figure 5E). Deletion of DUH1 stabilized Hac1up and increased its half-life upper bound to 2 minutes. These results demonstrate that DUH1 is required for the extremely short half life of Hac1up that normally limits its accumulation. The true half-life difference upon DUH1 deletion is likely to be greater than the ~2-fold difference in upper bounds that we measured, based on the\u00a0~5-fold difference in steady-state protein levels that could not be accounted for by differences in either mRNA abundance or ribosome density (Figure 5B and D).\n\n### Synergy between long-range base pairing and Duh1p-dependent degradation\n\nIt was previously observed that disrupting the base-pairing interaction between the 5\u2032-UTR and intron of HAC1 mRNA was sufficient to allow accumulation of Hac1up, which led to a model in which base-pairing alone was responsible for the post-transcriptional silencing phenomenon (R\u00fcegsegger et al., 2001). Our results using constructs in which the base-pairing region was deleted (Figure 5) suggested that the previously observed accumulation of Hac1up was unknowingly being buffered by Duh1p-dependent degradation. To directly address this possibility, we generated HA-tagged constructs in which the base-pairing region was disrupted by mutations in either the 5\u2032-UTR or intron or was reconstituted by the compensatory mutations (Figure 6A) and determined the effect of DUH1 deletion on steady-state protein levels. Because the 5\u2032 and 3\u2032 splice sites remained intact in these constructs, we introduced them into an ire1\u0394 background to eliminate any potential confounding effects of background splicing (Figure 1\u2014figure supplement 1B). As previously observed, mutating the base-pairing region in the presence of DUH1 resulted in detectable levels of Hac1up (Figure 6C). However, the accumulation of Hac1up was greatly stimulated by deletion of DUH1, which was not explained by a corresponding increase in mRNA abundance (Figure 6B and C). Thus, although disrupting the base pairing produces detectable amounts of Hac1up as previously reported (R\u00fcegsegger et al., 2001), Duh1p-dependent degradation restricts the steady-state level of the protein.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig6-v3.jpg)\n\n**Figure 6.:** (A) Design of 3xHA-tagged HAC1 mRNA variants. Constructs are depicted as in Figure 2B. Colored stars indicate mutations to the base-pairing region, with specific nucleotide changes shown in Figure 2B (red and blue stars) or below (green and black stars) in red. (B) RNA abundance measurements for HAC1 mRNA variants in the indicated strain backgrounds, analyzed as in Figure 5B. (C\u2013D) Effect of DUH1 disruption on protein abundances. ire1\u2206 strains expressing the indicated mRNAs depicted in (A) in either a DUH1 or duh1\u2206 background were analyzed as in Figure 5C, except that a high-sensitivity antibody was used to detect 3xHA-Hac1up.\n\nRemarkably, even a single nucleotide change in the center of the base-pairing region (Sathe et al., 2015) was sufficient for some accumulation of Hac1up, which again was enhanced by deletion of DUH1 (Figure 6D). This result suggests that the 5\u2032-UTR\u2013intron base-pairing interaction is only marginally stable, which may be required for efficient dissociation of the intron after splicing (see Discussion).\n\n### Functional consequences of incomplete silencing\n\nCollectively, we have shown that a pair of silencing mechanisms, one translational and the other post-translational, prevents spurious production of Hac1up in the absence of the UPR. The existence of such a fail-safe silencing mechanism implies that ectopic production of Hac1up has physiological consequences that negatively impact cellular fitness. However, a previous study suggested that Hac1up is itself not an active transcription factor because it lacks the activating 18-amino-acid tail found in Hac1ip (Mori et al., 2000), raising the question as to why Hac1up accumulation would need to be tightly regulated. We hypothesized that Hac1up was in fact an active transcription factor but that in the previous study its accumulation had been prevented due to the experiments being performed in a DUH1 background. To test this hypothesis, we evaluated the ability of strains that constitutively produced either Hac1ip, Hac1up, or Hac1\u0394tailp to grow under conditions of chronic ER stress induced by the drug tunicamycin. Strains expressing Hac1ip or Hac1\u0394tailp grew on tunicamycin-containing medium regardless of whether DUH1 (or IRE1) was present (Figure 7A), consistent with both proteins being active transcription factors that are not targeted by Duh1p. In contrast, strains expressing Hac1up only grew robustly on tunicamycin-containing medium when DUH1 was knocked out (but independently of IRE1). These results confirm our hypothesis that Duh1p-dependent degradation normally masks the activity of Hac1up. Our findings also explain how HAC1 was able to be initially identified as a high-copy activator of the UPR in an \u0394ire1 strain, since the UPR activity detected in this strain had to have resulted from Hac1up produced from unspliced HAC1 mRNA (Chapman and Walter, 1997; Cox and Walter, 1996).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig7-v3.jpg)\n\n**Figure 7.:** (A) Analysis of Hac1p activity in the UPR. Strains expressing the indicated HAC1 mRNA variants, with (+) or without (\u2206) IRE1 and/or DUH1 present, were grown to saturation. 10-fold dilution series were plated on YPD without (\u2013Tm) or with (+Tm) 400 ng/ml tunicamycin to induce ER stress. (B) Impact of DUH1 on detection of Hac1up. Strains expressing the indicated mRNAs, with (+) or without (\u2206) IRE1 and/or DUH1 present, were analyzed as in Figure 6C. Black arrow indicates the position of Hac1up, which migrates more slowly than Hac1ip. Construct 1, which lacks a 3xHA tag, was used as a negative control for anti-HA immunoblotting. (C) Effect of Duh1p-dependent degradation on the UPR. Strains expressing wild-type HAC1 with an N-terminal 3xHA tag, with (+) or without (\u2206) IRE1 and/or DUH1 present, were grown to saturation. 10-fold dilution series were plated on YPD without tunimacyin (\u2013Tm) or containing the indicated concentration of tunicamycin (+Tm). Plates were imaged at days 2 (top), 3 (middle), and 6 (bottom).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Strains expressing the indicated mRNAs, with (+) or without (\u2206) IRE1 and/or DUH1 present, were analyzed and presented as in Figure 7B.\n\nBecause Hac1up has UPR-inducing activity (Figure 7A), we reasoned that the fail-safe mechanism we discovered is required to prevent leaky production of Hac1up that would otherwise cause Ire1p-independent activation of the UPR. However, we initially failed to detect Hac1up produced from unspliced HAC1 mRNA even when DUH1 was disrupted (Figure 5C). On the other hand, our results from the analogous GFP and HIS3 reporter gene studies demonstrated that translational repression mediated by 5\u2032-UTR\u2013intron base pairing was incomplete and allowed a low level of protein synthesis that was normally 'cleaned up' by Duh1p-dependent degradation (Figure 4D and E). This led us to hypothesize that Hac1up itself was also being occasionally produced from HAC1u mRNA and rapidly degraded in a Duh1p-dependent manner, but that the short half life of Hac1up (Figure 5E)\u2014relative to both GFP (Natarajan et al., 1998) and His3p (Belle et al., 2006)\u2014further reduced the steady-state abundance of Hac1up to an extremely low level that was initially undetectable.\n\nTo enhance detection of HA-tagged Hac1up, we made two modifications: We used a more sensitive anti-HA antibody for immunoblotting; and we knocked out IRE1 in our strains, which eliminates the background Ire1p-dependent splicing of HAC1 mRNA (Figure 1\u2014figure supplement 1B) and concomitant production of Hac1ip that can otherwise dominate the signal on immunoblots. With these modifications we could now detect Hac1up being produced from unspliced HAC1 mRNA, but only when the protein was stabilized by deletion of DUH1 (Figure 7B) and at levels far below even those of Hac1up being constitutively produced in the presence of DUH1 (Figure 7\u2014figure supplement 1). Despite the relatively low level of leaky translation product we detected, these results provide molecular evidence that Hac1up is being continuously produced from HAC1u mRNA but rapidly degraded due to its C-terminal degron.\n\nDoes the leaky production of Hac1up unmasked by deletion of DUH1 have any functional consequences? The ability of constitutively produced Hac1up to promote survival under UPR-inducing conditions (Figure 7A) suggested that small amounts of Hac1up might also induce the UPR to some extent. To test this possibility, we examined how strains expressing HA-tagged but otherwise unmodified HAC1 mRNA grew on media containing different concentrations of tunicamycin. At the highest tunicamycin concentration only strains expressing IRE1 could grow regardless of whether DUH1 was also present (Figure 7C), suggesting that growth was dependent on the abundant Hac1ip produced from HAC1i mRNA. In contrast, at lower concentrations of tunicamycin the IRE1 deletion strain showed some growth, but this was reproducibly enhanced by simultaneous deletion of DUH1. These results indicate that the low level of Hac1up detectable in strains lacking DUH1 (Figure 7B) is sufficient to activate the UPR enough to facilitate cell survival under stress, even in the absence of Ire1p. Thus, degron-dependent degradation of Hac1up mediated by Duh1p is normally required to prevent ectopic Ire1p-independent activation of the UPR.\n\n## Discussion\n\nAltogether, we have shown that the ability of unspliced HAC1 mRNA to be stored in the cytoplasm without giving rise to detectable protein depends on two layers of post-transcriptional silencing, which together comprise a fail-safe mechanism (Figure 8). The initial silencing mechanism that acts on HAC1u mRNA is a block to translation initiation, which is caused by secondary structure in the 5\u2032-UTR that inhibits binding or progression of the scanning ribosome. However, this silencing mechanism does not entirely prevent translation, allowing the production of small amounts of Hac1up. Because Hac1up is an active transcription factor, even small amounts of this protein produced by leaky translation could activate the UPR and affect cellular physiology. To prevent this, a second silencing mechanism exists to rapidly degrade any Hac1up that is produced by leaky translation. By relying on recognition of the unique C-terminal tail of Hac1up by the F-box protein Duh1p, the protein-degradation mechanism selectively targets Hac1up for ubiquitination and subsequent degradation by the proteasome. Because both translational repression and protein degradation rely on sequences found in the intron of HAC1, removal of the intron by Ire1p-dependent splicing simultaneously results in the inactivation of both silencing mechanisms. In this way, splicing allows the rapid accumulation of Hac1ip from the existing pool of HAC1 mRNA.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/20069/elife-20069-fig8-v3.jpg)\n\n**Figure 8.:** See the main text for a description.\n\nOne surprising finding of our studies is that the polysome-like sedimentation of HAC1u mRNA is not due to translation of the mRNA. Instead, our results using mRNAs containing premature stop codons and using a modified lysis buffer (Figure 1) indicate that translation initiation on HAC1u mRNA almost never occurs due to the 5\u2032-UTR\u2013intron base-pairing interaction. The lack of appreciable translation of HAC1u mRNA suggests that the substrate for Ire1p-dependent splicing is untranslated mRNA, rather than polysomal mRNA containing stalled ribosomes as originally proposed (R\u00fcegsegger et al., 2001). A corollary of this is that the synthesis of Hac1ip requires de novo translation initiation on HAC1i mRNA, rather than just the resumption of translation by stalled ribosomes that initiated on HAC1u mRNA. The initial hint that HAC1u mRNA is translationally repressed at the initiation rather than elongation stage came from ribosome-profiling data, which revealed a lack of ribosome-protected fragments derived from HAC1u mRNA (Weinberg et al., 2016). At least in this case, our findings suggest that ribosome profiling can provide a more accurate measurement of translation than traditional polysome profiling.\n\nWhat is the molecular basis for the polysome-like sedimentation of HAC1u mRNA? The disruption of the pseudo-polysomes by addition of heparin, which is more negatively charged than RNA itself, suggests that electrostatic interactions are responsible. Moreover, the discontinuous distribution of HAC1u mRNA that matches the peaks and valleys observed for polysomes (R\u00fcegsegger et al., 2001) indicates that HAC1u mRNA is associated with integral numbers of actual 80S ribosomes. On the basis of these data, we propose that electrostatic interactions between HAC1u mRNA and either non-translating 80S ribosomes or, more likely, bona fide polysomes (containing both ribosomes and mRNA) are responsible for its polysome-like sedimentation. HAC1u mRNA may be especially prone to such non-specific interactions because of the strong initiation block, though other untranslated mRNA molecules (including the small fraction of ribosome-free mRNA molecules observed even for well-translated genes) may also behave similarly. In this regard, the analysis method (i.e., use of constructs containing premature stop codons) and experimental tools (i.e., exogenous RNA controls combined with heparin-containing lysis buffer) that we utilized here to definitively establish the translation state of HAC1u mRNA will be generally useful in polysome-profiling studies in the future.\n\nAfter the unexpected discovery that eliminating the 5\u2032-UTR\u2013intron base pairing alone did not result in detectable protein expression, we uncovered the effect of protein degradation caused by an intron-encoded C-terminal degron. The genetic selection that we performed to identify components of the protein-degradation pathway yielded just a single gene with recurrent mutations: DUH1. Our failure to isolate mutations in other components of the ubiquitin\u2013proteasome machinery (i.e., the E2 ubiquitin-conjugating enzyme that presents the ubiquitin to the Duh1p-containing SCF complex for transfer onto Hac1up; and subunits of the proteasome itself) may reflect the pleiotropic nature of such mutations, which would hinder growth despite the HIS3 reporter gene being de-silenced; an extreme case is the essential gene encoding the sole E1 ubiquitin-activating enzyme in yeast, UBA1. In addition, our reliance on spontaneous mutagenesis made it unlikely that we would have isolated multiple mutations in redundant sets of genes, which may also explain our failure to isolate E2 mutants given their sometimes overlapping functions (Chen et al., 1993). Nonetheless, the fact that we isolated 16 different mutations in DUH1 in 17 of our 20 sequenced strains illustrates the power of our genetic selection system. A noteworthy feature of our selection was that by combining spontaneous mutagenesis with whole-genome sequencing, we were able to rapidly go directly from phenotypic mutants to genotypic mutations without any crosses and relying on only simple computational tools for analysis.\n\nCompared to an alternative silencing mechanism involving only protein degradation with no translational repression (Cox and Walter, 1996), the fail-safe mechanism we discovered has the advantage of not wasting resources on the production of Hac1up that will anyway be rapidly degraded. But why does budding yeast rely on a pair of silencing mechanisms to prevent accumulation of Hac1up, rather than just completely blocking translation in the first place? An intriguing possibility is that the marginal stability of the 5\u2032-UTR\u2013intron base-pairing interaction (Figure 6D) is the cause of leaky translation but is also required to make the translational repression reversible (R\u00fcegsegger et al., 2001). If the base-pairing interaction were more stable and prevented translation altogether, splicing might not be sufficient for the intron to dissociate from the 5\u2032-UTR despite their being covalently unlinked. Another possibility is that the act of translating the mRNA has a function. For example, a pioneer round of translation on HAC1u mRNA might be required to form the 5\u2032-UTR\u2013intron interaction that inhibits subsequent rounds of translation. Such a requirement might be due to the ribosome physically bringing the distant sequences together through a tethering mechanism, or due to the ribosome unwinding alternative competing structures that initially form with the ORF. A third possibility is that the small amount of Hac1up being constantly produced and degraded has a function. In particular, the ability to regulate accumulation of Hac1up through Duh1p without relying on Ire1p activation would provide a means of rapidly producing a small pool of Hac1up in the absence of ER protein-folding stress. A constitutively produced yet transient pool of Hac1up might also contribute to the switch-like behavior of the UPR, based on the predicted ability of Hac1up to heterodimerize with Hac1ip and thereby facilitate proteasomal degradation of any Hac1ip produced from background splicing (Figure 1\u2014figure supplement 1).\n\nAlternatively, the leaky translation of HAC1u mRNA that we discovered may reflect a more fundamental property of translational repression: that it is inherently incomplete. The two predominant mechanisms known to inhibit cap-dependent translation are upstream ORFs (uORFs) and 5\u2032-UTR secondary structure (Gebauer and Hentze, 2004). Inhibition by uORFs has been shown to be only partial, due to both leaky scanning enabling bypass of the uORF and reinitiation facilitating translation of the downstream ORF (Meijer and Thomas, 2002). Our findings suggest that inhibition by 5\u2032-UTR secondary structure may also be incomplete, potentially due to the action of RNA helicases that are constantly unwinding RNA structures in vivo (Rouskin et al., 2014). Future work may shed light on both the causes and consequences of the incomplete translational repression of unspliced HAC1 mRNA.\n\n## Materials and methods\n\n### Yeast growth\n\nSaccharomyces cerevisiae strains used in this study were derived from BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) and are listed in Supplementary file 1. Strains were cultured at 30\u00b0C with shaking in rich yeast-peptone-dextrose (YPD) medium, synthetic complete (SC) medium, or the appropriate drop out medium (e.g., SC\u2013His) as indicated. Cultures were grown to mid-log phase (OD600\u00a0~0.5) before harvesting by either vacuum filtration (polysome analysis), methanol quenching (protein half-life), or brief centrifugation at 4\u00b0C (all other experiments) and then snap frozen in liquid nitrogen. For growth tests under UPR stress (Figure 7), 10-fold serial dilutions of cells were spotted onto YPD plates containing either the indicated concentration of tunicamycin (Sigma,\u00a0St. Louis, MO) dissolved in DMSO (+Tm) or DMSO alone (\u2013Tm).\n\n### Yeast strain construction\n\nTo facilitate generation of HAC1 variant and reporter strains, the entire transcribed region of the HAC1 gene \u2013\u00a0as well as additional flanking sequence \u2013\u00a0was amplified from genomic DNA (extracted from BY4741) and cloned into the pCR4-TOPO vector backbone (Invitrogen,\u00a0Carlsbad,\u00a0CA) using Gibson Assembly Master Mix (New England Biolabs,\u00a0Ipswich, MA) according to the Gibson assembly method (Gibson et al., 2009). GFP and HIS3 reporter constructs were generated from this plasmid by replacing the HAC1 ORF with the reporter gene using the Gibson assembly method. Variants of these constructs were generated using inverse PCR with 5\u2032-phosphorylated primers (designed to introduce point mutations or deletions) and Phusion High-Fidelity DNA Polymerase (New England Biolabs) followed by ligation with Quick Ligase (New England Biolabs); or using the Gibson assembly method with either PCR products or synthetic gBlocks (Integrated DNA Technologies,\u00a0Coralville, IA). All plasmid inserts were verified by Sanger sequencing before PCR amplification with Phusion DNA polymerase for integration into the yeast genome.\n\nYeast transformations were performed using the PEG\u2013lithium acetate method (Gietz and Woods, 2002). HAC1 was deleted from the genome using the URA3 cassette of pRS416 to replace the entire transcribed region of HAC1 (from 366 nucleotides upstream of the start codon, to 750 nucleotides downstream of the stop codon in exon 2). IRE1 and/or DUH1 were deleted using the HIS3MX or URA3 cassettes of pFA6a-3HA-HIS3MX6 or pRS416, respectively, as indicated in Supplementary file 1. HAC1 variant and reporter strains were generated from hac1\u0394::URA3 strains using 5-FOA counterselection. Transformants were screened by PCR to identify integrants, which were subsequently verified by PCR and Sanger sequencing of the entire integrated cassette.\n\n### Sucrose gradient analysis\n\nPolysome analyses by sucrose gradient fractionation are described in more detail at Bio-protocol (Aboulhouda et al., 2017).\u00a0Yeast strains were grown to mid-log phase (OD600\u00a0~\u00a00.5) in YPD and harvested by vacuum filtration as previously described (Weinberg et al., 2016). The frozen cell pellet was transferred into a pre-chilled mortar that was surrounded by and filled with liquid nitrogen. The pellet was ground to a fine powder by hand using a pre-chilled pestle, transferred into a 50 ml conical tube filled with liquid nitrogen, and after boiling off the liquid stored at \u201380\u00b0C. Crude lysate was prepared by briefly thawing the cell powder on ice for 1 min and then resuspending in 1 ml polysome lysis buffer (20 mM HEPES-KOH [pH 7.4], 5 mM MgCl2, 100 mM KCl, 1% Triton X-100, 2 mM DTT, 100 \u03bcg/mL cycloheximide, 20 U/mL SuperUPERase-In [Thermo Fisher Scientific, Waltham, MA], 1X cOmplete EDTA-free Protease Inhibitor Cocktail [Roche,\u00a0Switzerland]). Where indicated, the lysis buffer also contained 200 \u03bcg/mL heparin (Sigma). The lysate was centrifuged at 1300 g for 10 min, and the supernatant was transferred to a new tube taking care to avoid the thick top lipid layer. The resulting clarified lysate was diluted to a concentration of 25 OD260 units/ml, flash frozen in liquid nitrogen in single-use aliquots, and stored at \u201380\u00b0C.\n\nA 10\u201350% continuous sucrose gradient was prepared in polysome gradient buffer (20 mM HEPES-KOH [pH 7.4], 5 mM MgCl2, 100 mM KCl, 2 mM DTT, 100 \u03bcg/mL cycloheximide, 20 U/mL SUPERase-I) and allowed to cool to 4\u00b0C while lysate was thawed gently on ice. Where indicated, 100 ng luciferase RNA (Promega,\u00a0Madison, WI) was then added to 100 \u03bcl of thawed cell lysate. 100 \u03bcl of cell lysate (at 25 OD260 units/ml) was loaded on top of the gradient, and gradients were spun in an SW41-Ti rotor at 36000 rpm for 2.5 hr at 4\u00b0C. Gradients were fractionated into 15 fractions using a Biocomp Piston Gradient Fractionator, and fractions were flash frozen and stored at \u201380\u00b0C.\n\nRT-qPCR was performed directly on gradient fractions using the TaqMan Gene Expression Cells-to-CT Kit (Life TechnologiesThermo\u00a0Fisher\u00a0Scientific). Briefly, 10 \u03bcl Lysis Buffer containing DNase was combined with 0.1 \u03bcl synthetic XenoRNA control (provided with the TaqMan Cells-to-CT\u00a0Control Kit) and 1 \u03bcl of the fraction. Reactions were incubated at room temperature for 5 min, and then quenched on ice by addition of 1 \u03bcl STOP Solution followed by incubation at room temperature for an additional 2 min. 4.5 \u03bcl of this reaction was added to 5.5 \u03bcl RT Master Mix, and reverse transcription was carried out at 37\u00b0C for 1 hr followed by a 5 min incubation at 95\u00b0C before cooling to 4\u00b0C. RT reactions were diluted 6-fold in nuclease-free water prior to qPCR.\n\nqPCR was carried out in duplicate for each fraction using the TaqMan Gene Expression Master Mix (Thermo\u00a0Fisher\u00a0Scientific) according to the manufacturer\u2019s instructions, using 10 \u03bcl reactions containing 4.5 \u03bcl of six-fold diluted RT reaction per qPCR reaction. XenoRNA was analyzed using the primer-probe assay provided with the TaqMan Cells-to-CT Control Kit. ACT1 and luciferase RNAs were analyzed using predesigned TaqMan Gene Expression Assays from Life TechnologiesThermo\u00a0Fisher\u00a0Scientific (Sc04120488_s1 and Mr03987587_mr, respectively). HAC1 and GFP RNAs were analyzed using the following primer-probe qPCR assays from Integrated DNA Technologies (containing 6-FAM/ZEN/IBFQ quenchers with a primer-to-probe ratio of 1-to-2):\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Primer 1</th>\n      <th>Primer 2</th>\n      <th>Probe</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HAC1</td>\n      <td>TCAAGAGCTATGTTCAGTGTCG</td>\n      <td>GGTTTCTACTGTTCTGTCTCCG</td>\n      <td>56-FAM/CGCGCCCTC/ZEN/CTACAATTATTTGTGG/3IABkFQ</td>\n    </tr>\n    <tr>\n      <td>GFP</td>\n      <td>GTTTGCCATAAGTTGCGTCC</td>\n      <td>TGGTAGAATTGGATGGCGAC</td>\n      <td>56-FAM/CTGTGAGTG/ZEN/GTGAGGGTGAAGGG/3IABkFQ</td>\n    </tr>\n  </tbody>\n</table>\n\nRelative mRNA abundances in each fraction (i.e., Cq values) were first normalized to XenoRNA to account for differences in qRT-PCR efficiency among fractions, and then calculated as a percentage of total mRNA detected across the gradient. All strains were analyzed in duplicate, beginning with separate cultures of the same strain, to confirm the reproducibility of each result. ACT1 mRNA was analyzed in every gradient and confirmed to co-sediment with polysomes in all cases.\n\n### Flow cytometry analysis\n\nYeast strains were grown to mid-log phase (OD600\u00a0~\u00a00.5) in SC medium, then diluted 10 fold in fresh medium before quantifying GFP fluorescence using a LSR II flow cytometer (Becton Dickinson,\u00a0Franklin Lakes, NJ) and 530/30 filter. Raw data from 10,000 cells per sample was analyzed using FlowJo and gated to remove debris before being exported to Microsoft\u00a0Excel. Fluorescence in each cell was normalized to cell size using the side scatter measurement before calculating the median and quartiles of the population. All strains were analyzed at least twice, beginning with separate cultures of the same strain, to confirm reproducibility. The equivalent of 5 OD600 units was harvested for both protein and RNA analyses from the same cultures used for flow cytometry.\n\n### Protein analysis\n\nProtein samples were prepared using the NaOH/TCA method (Riezman et al., 1983), separated by SDS-PAGE using 12% or 4\u201312% Bolt Bis-Tris gels (Thermo Fisher Scientific), and transferred in 1X CAPS Buffer onto 0.22 micron PVDF membrane (Bio-Rad,\u00a0Hercules, CA). Blots were probed with the following antibodies diluted in 1X TBS-T containing 5% nonfat dry milk: mouse anti-GFP (RRID:AB_390913, Roche #11814460001, 1:1000), mouse anti-HA (RRID:AB_627809, Santa Cruz\u00a0Biotechnology [Dallas, TX]\u00a0sc-7392, 1:3000), rat anti-HA high sensitivity (RRID:AB_390918, Roche #11867423001, 1:5000), mouse anti\u2013beta actin (RRID:AB_449644, AbCam []\u00a0ab8224, 1:10000), HRP-conjugated goat anti-mouse IgG (RRID:AB_631736, Santa Cruz\u00a0Biotechnology sc-2005, 1:10000), and HRP-conjugated goat anti-rat IgG (RRID:AB_631755, Santa Cruz\u00a0Biotechnology sc-2032, 1:10000). Blots were developed using Clarity ECL Western Blotting Substrate (Bio-Rad), and chemiluminescence was detected on a ChemiDoc Imaging System (Bio-Rad).\n\n### RNA analysis\n\nTotal RNA was isolated using the hot acid phenol method (Ares, 2012) and resuspended in nuclease-free water. For each sample, 2.5 \u03bcg of RNA was treated with RQ1 DNase (Promega) according to the manufacturer\u2019s instructions. cDNA synthesis and qPCR were performed using the Cells-to-CT Kit (Thermo Fisher Scientific) as described above.\n\nFor RT-PCR analysis of HAC1 splicing, cDNA generated from input samples (as described in 'Sucrose gradient analysis') was used as a template for PCR amplification using the following intron-flanking primers: forward, ACGACGCTTTTGTTGCTTCT; reverse, TCTTCGGTTGAAGTAGCACAC. PCR products were analyzed by agarose gel electrophoresis.\n\n### Protein half-life determination\n\nYeast strains YRDS221 and YRDS241 (Supplementary file 1) were grown to mid-log phase (OD600\u00a0~\u00a00.5) in SC medium. Cycloheximide (Sigma) was added to a final concentration of 100 \u03bcg/ml and samples collected at the indicated time points. To rapidly harvest samples, 5 ml of culture was directly added to a prechilled 50 ml tube (in a dry ice\u2013ethanol bath) containing 25 ml Quench Solution (60% methanol, 10 mM HEPES-KOH pH 7.4) and mixed well. Cells were collected by centrifugation at 4\u00b0C, snap frozen, and processed for immunoblotting as above. Quantification of immunoblot signal was performed by densitometry with ImageJ. An upper bound on protein half-life was calculated from 3 independent experiments as the time point at which\u00a0~50% of the protein remained.\n\n### Genetic selection and whole-genome sequencing\n\nYeast strain YRDS57 (Supplementary file 1) was grown overnight in liquid YPD, plated on SC\u2013His solid medium, and allowed to grow for 5\u20137 days at 30\u00b0C. Spontaneous mutant colonies were isolated from five independent platings and verified for growth on SC\u2013His by restreaking and for expression of the HA-His3p by immunoblotting. Clones were then examined for cis mutations by Sanger sequencing the 3\u2032 end of the HIS3 reporter gene. Of the remaining clones that had a \u2018trans\u2019 mutation, 20 were chosen for analysis by genomic DNA sequencing along with 4 control strains (the parent strain YRDS57 and 3 strains with cis mutations).\n\nGenomic DNA was isolated from individual saturated overnight cultures using the MasterPure Yeast DNA Purification Kit (Epicentre) according to the manufacturer\u2019s instructions. Purified genomic DNA was treated with RNase A/T1 Cocktail (Thermo Fisher Scientific), phenol extracted, precipitated with ethanol, and quantified with the Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific). For each strain 1 ng of genomic DNA was used as input into the Nextera XT DNA Library Preparation Kit (Illumina,\u00a0San Diego, CA), and genomic DNA libraries were prepared according to the manufacturer\u2019s instructions using the Nextera XT Index Kit for barcoding during PCR. Genomic DNA libraries from each strain were quantified with the Qubit dsDNA HS Assay Kit (Invitrogen), and pooled into a single tube in equal proportions. Pooled DNA was purified using the DNA Clean and Concentrator-5 Kit (Zymo Research,\u00a0Irvine, CA), and 200\u2013350 bp fragments were isolated using a BluePippin Gel Cassette (2% agarose dye-free with internal standards;\u00a0). The size-selected library was sequenced on a single lane of a HiSeq 4000 sequencer using 50-nucleotide single-end reads.\n\nData analysis was performed using the Galaxy web server (Afgan et al., 2016\u00a0). Reads in FASTQ format were aligned to the sacCer3 reference genome using BWA (version 0.1) with default 'Commonly Used' settings. Sequence differences between the reference genome and aligned reads were identified using FreeBayes (version 0.4) to generate a variant call format (VCF) file for each strain. The VCF-VCFintersect tool (with options '-i --invert') was then used to compare VCF files for mutants against the VCF file for the parental selection strain, in order to identify variants that were unique to the mutants. Finally, variants were manually annotated using the UCSC Genome Browser. For proof-of-principle analysis of cis mutants, the same mapping and variant-calling procedures were used with a custom reference genome containing only the reporter gene.\n\n### Accession numbers\n\nGenome-sequencing data from the genetic selection have been deposited in the NCBI Sequence Read Archive (SRA) under accession SRP081128.\n",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a01ce27e-4a82-4cec-b9df-267c14558044",
+      "submission_id": "9eca660f-86da-4b54-a86c-6651651f1468",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rachel Green, Johns Hopkins School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20069.023](https://doi.org/10.7554/eLife.20069.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The fail-safe mechanism of post-transcriptional silencing of unspliced HAC1 mRNA\" for consideration by eLife. Your article has been favorably evaluated by James Manley (Senior Editor) and three reviewers, one of whom, Rachel Green (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has also agreed to reveal their identity: Traude Beilharz (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an outstanding manuscript that tells a very complete story about multiple pathways for regulating the expression of Hac1p, such that protein is produced only during conditions of UPR stress. The study includes multiple approaches to address each question including a genetic screen with a novel E3 ligase identified. All three reviewers feel the manuscript is highly suitable for publication in eLife with minor changes.\n\nEssential revisions:\n\nThe authors should address the citation issues raised by reviewer 2 and the figure issues raised by reviewers 1 and 3 (colors for exons/introns etc.). Finally, some language about the \"only\" gene that emerged from the strain should be corrected (full reviews included below).\n\nCongratulations on an outstanding study.\n\nReviewer #1:\n\nThis is a very complete and compelling manuscript defining the mechanisms though which Hac1 expression is controlled in the absence of UPR stress in S. cerevisiae. Contrary to earlier studies, DiSanto et al. establish that Hac1 translation is controlled first at the level of initiation through secondary structural interactions between the 5'UTR and the intron, and secondly, through protein degradation via a novel E3 ligase targeting the intron-encoded 8 aa sequence. The manuscript nicely resolves many small issues in the literature regarding this tightly regulated and biologically critical gene. A few small points are suggested below but this manuscript is highly suitable for publication in eLife.\n\n1) The pseudo-polysome phenomenon is nicely addressed experimentally but could be more clearly described in the text. What is observed is A260 that rises about background in a rather amorphous smear \u2013 earlier studies that collected more fractions saw the ribosome peaks emerging \u2013 this could be discussed more explicitly. To the non-expert, the modest background A260 will not be particularly compelling, and so the modest reduction will not seem compelling either. This is a request for textual changes.\n\n2) In all Figures, the 5' and 3' UTR are colored in black as though they are not part of the exons \u2013 for clarity, these should be colored in exon color but in thin lines instead of thick (for coding).\n\n3) RNA level changes are dismissed as not relevant though in some figures (3A for example), there are substantial changes in RNA level that should not be so quickly dismissed.\n\n4) Discussion of why this transcription factor Hac1u needs to be so tightly controlled, but why translational control is not sufficient, was a bit too long and speculative. This portion of the Discussion could be reduced.\n\nReviewer #2:\n\nThis manuscript from the Weinberg lab addresses a longstanding mystery in the UPR field: why does the HAC1 mRNA appear in heavy polysomes even though it does not generate any protein product? Existing data supported a model where blockage of initiation by base-pairing between the intron and 5'UTR prevented HAC1 translation. It was assumed that this blockage somehow also stalled 80S elongating ribosomes and thereby accounted for the migration in heavy polysome fractions. Recently, ribosome profiling datasets revealed that the mRNA did not appear to be bound to translating 80S ribosomes. Experiments in this manuscript resolve this contradiction by showing the old polysome profiling methods were flawed and that the base-pairing between intron and 5'UTR does appear to block most translation from initiating. Surprisingly, however, the authors also found that elimination of this base-pairing interaction did not result in protein production, even though it does lead to migration of the mRNA in heavy polysome fractions (as observed by an improved polysome profiling method).\n\nThe authors then meticulously build a case for a model where the amino acid sequence encoded by the intron encodes a degron tag. This tag is recognized by a previously unknown E3 ligase that results in degradation of any Hac1 protein that happens to be produced from the unspliced transcript. Presumably, this system is important for eliminating protein produced by low levels of HAC1 translation that escape the initiation-based inhibition mechanism. The paper therefore reveals a new layer of regulation of this regulatory network and opens up many new questions for the field to explore.\n\nThe experimental work is very convincing and aside from a few minor points about inadequate citation (see below), I have no major concerns. I think this paper will generate wide interest because it raises so many new questions about UPR regulation and, more generally, the breadth of targets of the ubiquitin proteasome system.\n\nConcern about adequate citation:\n\nThe original discovery of Hac1p function by Cox and Walter in 1996 showed that 1) Uninduced Hac1p is an effective stimulator of the UPR and 2) E2 ligases are involved in degrading uninduced Hac1p. Subsequent papers (including most recently work by the Dever and Dey labs) also showed that uninduced Hac1p is capable of conferring resistance to tunicamycin.\n\nTherefore, the authors should eliminate the statement that their results, \"confirm our hypothesis that Hac1up is indeed a functional UPR transcription factor.\" This was already established and should be acknowledged as such. Second, they should point out that the idea of the intron \"tail\" sequence serving as a degron dates back two decades. While it's true that this model was not strongly embraced by the field, the Walter lab should be cited for first proposing and testing it.\n\nReviewer #3:\n\nI like this manuscript. It seems to me to reconcile multiple conflicts in the literature and to provide new insight in to the regulation of the UPR with a satisfying level of clarity. The data are of high quality and have been clearly designed and executed to probe the precise aspect of the experimental hypotheses in question. E.g., the clever use of reporters/ mutant strains/ and new technologies mean there is no confusion regarding the source of regulatory control. The problem of mRNA co-sedimentation with polysomes in the absence of translation is satisfyingly dealt with, although it will likely to confound the literature for some time to come. The sequencing of spontaneous suppressor mutants to define the second-phase repression by proteolysis is also lovely.\n\nMy comments/questions are therefor of a fairly minor nature, but might also be of interest to other readers.\n\n1) In the figures, can the authors unify the schematics for the mRNA structures. Specifically, I thought Figure 1C should have the same colour coding and intron included. At first reading of Figure 1D, it took a while to recognise that fat-to-thin line transition meant inclusion of 3' nonsense stop codons. I'm not sure if this needs more explicit marks on the figures. Also should the purple line on the left-hand panel of Figure 8 be fat?\n\n2) On the topic of the truncating stop-codons should there be comment about why these don't trigger NMD? Or is the fact that they don't more evidence toward the point that these mRNA are not translated.\n\n3) At the end of the second paragraph of the subsection \u201cAn additional silencing mechanism downstream of translation initiation\u201d: prompted by the point about 5'-3' looping being an impediment to \"binding or progress of the scanning ribosome\" I checked the recent TCP-seq App from Archer et al. Nature 2016 (http://bioapps.erc.monash.edu/TCP/) to see the HAC1 transcript had any interesting regulation by small subunit scanning. However, there is no-data, which is unexpected given HAC1s abundance. But it does suggest that the inhibition precedes binding of even a single SSU necessary for the TCP-seq approach.\n\n4) In the Discussion: I wondered if an additional purpose or benefit of leaky translation might be that inhibition of proteolysis might be a kinetically quicker way to get a functional transcription factor with which to initiate the UPR, then by first splicing and new translation.\n",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9fa1a8b8-5c7e-490e-bfdf-19bd4f7047b2",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C1",
+      "claim": "HAC1 encodes a transcription factor that is the central effector of the unfolded protein response (UPR) in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "HAC1 encodes a transcription factor that is the central effector of the unfolded protein response (UPR) in budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work establishing HAC1's role in the UPR.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "d26d63bf-71cb-4e88-bdc7-394441ab6687",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C2",
+      "claim": "When the UPR is inactive, HAC1 mRNA is stored as an unspliced isoform in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "When the UPR is inactive, HAC1 mRNA is stored as an unspliced isoform in the cytoplasm and no Hac1 protein is detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HAC1 regulation cited from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "15837d79-08f7-43ae-9d59-65cc90740949",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C3",
+      "claim": "When the UPR is inactive, no Hac1 protein is detectable.",
+      "claim_type": "EXPLICIT",
+      "source": "When the UPR is inactive, HAC1 mRNA is stored as an unspliced isoform in the cytoplasm and no Hac1 protein is detectable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HAC1 regulation cited from prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ed8837a3-9093-4e9b-90c7-c279caa5ed7f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C4",
+      "claim": "Intron removal is both necessary and sufficient to relieve the post-transcriptional silencing of HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Intron removal is both necessary and sufficient to relieve the post-transcriptional silencing of HAC1 mRNA, yet the precise mechanism by which the intron prevents Hac1 protein accumulation has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work (Chapman and Walter, 1997).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "82e4740b-c664-4a5e-a294-706b2269e9aa",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C5",
+      "claim": "A combination of inhibited translation initiation and accelerated protein degradation\u2014both dependent on the intron\u2014prevents the accumulation of Hac1 protein when the UPR is inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that a combination of inhibited translation initiation and accelerated protein degradation\u2014both dependent on the intron\u2014prevents the accumulation of Hac1 protein when the UPR is inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the manuscript, supported by experimental data presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "3a28f1be-7e71-4ab1-83e4-9b9c0e3f88a6",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C6",
+      "claim": "Both components of the fail-safe silencing mechanism are required to prevent ectopic production of Hac1 protein and concomitant activation of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionally, both components of this fail-safe silencing mechanism are required to prevent ectopic production of Hac1 protein and concomitant activation of the UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing functional consequences of incomplete silencing (Figure 7).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ee4e623f-3434-480d-bd7a-91b78c86189f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C7",
+      "claim": "The unfolded protein response (UPR) is a eukaryotic stress response pathway that is activated when unfolded proteins accumulate in the endoplasmic reticulum (ER) lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "The unfolded protein response (UPR) is a eukaryotic stress response pathway that is activated when unfolded proteins accumulate in the endoplasmic reticulum (ER) lumen (Gardner et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Gardner et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8106b011-976f-4165-ad43-9ad2077fca0f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C8",
+      "claim": "In budding yeast Saccharomyces cerevisiae, the central effector of the UPR is the transcription factor Hac1p.",
+      "claim_type": "EXPLICIT",
+      "source": "In the budding yeast Saccharomyces cerevisiae, the central effector of the UPR is the transcription factor Hac1p (Cox and Walter, 1996; Mori et al., 1996; Nikawa et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cox and Walter, 1996; Mori et al., 1996; Nikawa et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a379d9c8-4430-4deb-bc26-2e5338f5bfb7",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C9",
+      "claim": "HAC1 contains an intron that is excised through an unconventional cytoplasmic splicing reaction mediated by Ire1p and tRNA ligase, rather than the spliceosome.",
+      "claim_type": "EXPLICIT",
+      "source": "HAC1 (and its metazoan ortholog Xbp1) is unique among eukaryotic genes in that it contains an intron that is excised through an unconventional cytoplasmic splicing reaction mediated by two proteins, Ire1p and tRNA ligase, rather than the spliceosome (Cox and Walter, 1996; Kawahara et al., 1997; Sidrauski and Walter, 1997; Sidrauski et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cox and Walter, 1996; Kawahara et al., 1997; Sidrauski and Walter, 1997; Sidrauski et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "fb98d8e1-09a9-42b9-ac16-79b1fab5c37c",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C10",
+      "claim": "In the absence of ER protein-folding stress, the intron-containing HAC1u mRNA is transcribed and exported to the cytoplasm but does not give rise to detectable protein due to the presence of the inhibitory intron.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ER protein-folding stress, the intron-containing mRNA (denoted HAC1u; 'u' for UPR 'uninduced') is transcribed and exported to the cytoplasm but does not give rise to detectable protein due to the presence of the inhibitory intron (Cox and Walter, 1996; Chapman and Walter, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cox and Walter, 1996; Chapman and Walter, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "b90dca0c-2c68-478e-98f1-7ea5688efd1f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C11",
+      "claim": "The accumulation of unfolded proteins in the ER lumen activates the ER-resident transmembrane kinase\u2013endonuclease Ire1p.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of unfolded proteins in the ER lumen activates the ER-resident transmembrane kinase\u2013endonuclease Ire1p, which cleaves out the intron from HAC1 mRNA via its cytoplasmic nuclease domain (Sidrauski and Walter, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sidrauski and Walter, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "970f2ff8-888d-4449-9e48-a8d402950fe6",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C12",
+      "claim": "Ire1p cleaves out the intron from HAC1 mRNA via its cytoplasmic nuclease domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation of unfolded proteins in the ER lumen activates the ER-resident transmembrane kinase\u2013endonuclease Ire1p, which cleaves out the intron from HAC1 mRNA via its cytoplasmic nuclease domain (Sidrauski and Walter, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sidrauski and Walter, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "6b908501-a800-4dd1-8d52-008a47cc8280",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C13",
+      "claim": "After the exons are joined by tRNA ligase, the resulting spliced HAC1i mRNA is translated into Hac1ip.",
+      "claim_type": "EXPLICIT",
+      "source": "After the exons are joined by tRNA ligase, the resulting spliced mRNA (denoted HAC1i; 'i' for UPR 'induced') is now translated into Hac1ip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HAC1 splicing and translation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "009a0767-07f3-4e23-8dcd-6e52401dc1e3",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C14",
+      "claim": "Hac1ip is an active transcription factor that is imported into the nucleus where it activates the expression of UPR target genes involved in restoring protein-folding homeostasis in the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "This active transcription factor is imported into the nucleus, where it activates the expression of UPR target genes involved in restoring protein-folding homeostasis in the ER (Chapman et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chapman et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "f8ebc14e-72b0-461d-b53f-8559d01021d0",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C15",
+      "claim": "The post-transcriptional silencing of HAC1 and its subsequent reversal by cytoplasmic splicing together enable a rapid UPR that does not depend on de novo transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-transcriptional silencing of HAC1 and its subsequent reversal by cytoplasmic splicing together enable a rapid UPR that does not depend on de novo transcription (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to R\u00fcegsegger et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "feae8a4e-5730-4ef3-8054-c0419689a214",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C16",
+      "claim": "The current model for silencing is that elongating ribosomes are stalled on the mRNA during translation, thereby preventing synthesis of full-length Hac1p.",
+      "claim_type": "EXPLICIT",
+      "source": "The current model for silencing is that elongating ribosomes are stalled on the mRNA during translation, thereby preventing synthesis of full-length Hac1p (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the prior model supported by citation to R\u00fcegsegger et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "50998b90-e208-433c-a368-2482d3778a49",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C17",
+      "claim": "According to the stalled elongation model, the mediator of translational attenuation is a long-range base-pairing interaction between the 5\u2032 untranslated region (UTR) and intron of HAC1u mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, the mediator of translational attenuation is a long-range base-pairing interaction between the 5\u2032 untranslated region (UTR) and intron of HAC1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the prior model based on R\u00fcegsegger et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "932f7f2c-e261-49d7-9d0e-0867a2b1838a",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C18",
+      "claim": "The majority of HAC1u mRNA sediments in the polysome region of a sucrose gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The key data supporting the stalled elongation model is that the majority of HAC1u mRNA sediments in the polysome region of a sucrose gradient (Arava et al., 2003; Chapman and Walter, 1997; Cox and Walter, 1996; Kuhn et al., 2001; Mori et al., 2010; Park et al., 2011; Payne et al., 2008; R\u00fcegsegger et al., 2001; Sathe et al., 2015) despite no detectable Hac1up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "1da1b52a-5c4e-4538-bf89-52e65d3a34e4",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C19",
+      "claim": "The heavy-sedimenting HAC1u mRNA is distributed in a discontinuous pattern with peaks and valleys that precisely match the peaks and valleys observed for polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the heavy-sedimenting HAC1u mRNA is distributed in a discontinuous pattern with peaks and valleys that precisely match the peaks and valleys observed for polysomes (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to R\u00fcegsegger et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8915c620-82b3-425e-be67-7255be7a6780",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C20",
+      "claim": "Hac1up and Hac1ip are thought to have similar half lives.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Hac1up and Hac1ip are thought to have similar half lives (Chapman and Walter, 1997; Kawahara et al., 1997), arguing against differential protein degradation as the primary mechanism that prevents Hac1up accumulation yet allows Hac1ip accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chapman and Walter, 1997; Kawahara et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "6d61e71d-226a-4986-8a42-aa4386e6ee7e",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C21",
+      "claim": "HAC1 generates the fewest ribosome-protected fragments among all expressed yeast genes after normalizing for mRNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, after normalizing for mRNA abundance HAC1 generates the fewest ribosome-protected fragments among all expressed yeast genes (Figure 1B)\u2014and ~50-fold fewer than expected from the polysome profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7c6da0c9-8cac-46f2-b3ee-332de5271d36",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C22",
+      "claim": "HAC1 generates ~50-fold fewer ribosome-protected fragments than expected from the polysome profile.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, however, after normalizing for mRNA abundance HAC1 generates the fewest ribosome-protected fragments among all expressed yeast genes (Figure 1B)\u2014and ~50-fold fewer than expected from the polysome profile.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ribosome profiling data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "c005cc13-3901-480b-8b0a-96ddd004d231",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C23",
+      "claim": "Under exponential growth conditions, HAC1 mRNA is almost entirely unspliced.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these growth conditions HAC1 mRNA is almost entirely unspliced (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "39f7fc15-845a-471c-9d7f-b2cacaba0aee",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C24",
+      "claim": "HAC1 mRNA is distributed across a sucrose gradient with ~50% in the non-translating fractions and the remaining ~50% extending across all of the translating fractions without substantial enrichment in any particular fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "and is distributed across a sucrose gradient with ~50% in the non-translating fractions and the remaining ~50% extending across all of the translating (i.e., 80S and larger) fractions without substantial enrichment in any particular fraction (Figure 1A), similar to previous observations (Arava et al., 2003; Chapman and Walter, 1997; Cox and Walter, 1996; Kuhn et al., 2001; Mori et al., 2010; Park et al., 2011; Payne et al., 2008; R\u00fcegsegger et al., 2001; Sathe et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1A and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "86fbed66-5798-4f49-9a79-469b3de92baf",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C25",
+      "claim": "ACT1 mRNA is essentially absent from the non-translating fractions and is found mostly in large polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the well-translated actin (ACT1) mRNA is essentially absent from the non-translating fractions and is found mostly in large polysomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "4d9fe044-2504-4e64-9a49-fd85cc540bd3",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C26",
+      "claim": "Each of the HAC1 mutant mRNAs with premature stop codons had a sedimentation pattern that was indistinguishable from the wild-type mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, each of the mutant mRNAs had a sedimentation pattern that was indistinguishable from the wild-type mRNA (Figure 1D, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ca725532-9679-4951-9acd-4c66ea9bf2ab",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C27",
+      "claim": "The mRNA containing a 21-nucleotide ORF that can only accommodate a single translating ribosome still co-sedimented with polysomes containing upwards of 10 ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the most extreme case, the mRNA containing a 21-nucleotide ORF that can only accommodate a single translating ribosome still co-sedimented with polysomes containing upwards of 10 ribosomes (fraction 14 of the gradient).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "35b53b2d-c86d-4907-8437-ecaa36b963df",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C28",
+      "claim": "The polysome-like sedimentation of HAC1u mRNA is not due to stalled ribosomes on the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These data provide direct evidence that the polysome-like sedimentation of HAC1u mRNA is not due to stalled ribosomes on the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that HAC1 mRNAs with shortened ORFs sediment identically to wild-type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "3639813b-0afd-4eef-8d79-c7a693fa0d48",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C29",
+      "claim": "The addition of heparin to the lysis buffer at a concentration of 0.2 mg/ml was sufficient to largely prevent the deep sedimentation of exogenous RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Through extensive optimization, we found that the addition of heparin to the lysis buffer (at a concentration of 0.2 mg/ml) was sufficient to largely prevent the deep sedimentation of exogenous RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a1aa78a5-8a34-4ef3-8b1f-8f3e93369295",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C30",
+      "claim": "The addition of heparin caused most (83%) of HAC1 mRNA to sediment in the non-translating fractions of the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of heparin also had a major effect on the sedimentation of HAC1 mRNA, as most (83%) now sedimented in the non-translating fractions of the gradient (Figure 1E, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "85d48e61-5936-48f6-a78e-496c2c4368cd",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C31",
+      "claim": "The addition of heparin had minimal effect on the sedimentation of ACT1 mRNA and the overall polysome profile.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the sedimentation of ACT1 mRNA (Figure 1E, bottom) and the overall polysome profile (Figure 1E, top) were largely unchanged, suggesting that heparin competed away non-specific interactions without disrupting bona fide polysomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "4ee2de85-ba1e-4ea8-a457-ababa8032c5b",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C32",
+      "claim": "When cells were treated with DTT to induce the UPR and concomitant splicing of HAC1 mRNA, the variant mRNAs displayed the expected differential sedimentation based on ORF length.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when we treated cells with the reducing agent dithiothreitol (DTT) to induce the UPR and concomitant splicing of HAC1 mRNA (Figure 1\u2014figure supplement 1C) and repeated the experiment, the variant mRNAs now displayed the expected differential sedimentation based on ORF length (Figure 1G), validating our experimental design.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data shown in Figure 1G and splicing data in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "d854f11c-d9e3-456f-adab-44d5c1644f03",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C33",
+      "claim": "At steady state HAC1u mRNA is not associated with either actively elongating or stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate that at steady state HAC1u mRNA is not associated with either actively elongating or stalled ribosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the polysome profiling data with heparin and premature stop codons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ba6264d4-89aa-4ef9-ad2a-a2977182a616",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C34",
+      "claim": "The primary block to production of Hac1up is at the stage of translation initiation, not translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the primary block to production of Hac1up is at the stage of translation initiation, not translation elongation as previously proposed (Chapman and Walter, 1997; Richter and Coller, 2015; R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing lack of ribosome association with HAC1u mRNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "eb71d382-e402-446a-b168-498443ade1e7",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C35",
+      "claim": "When GFP was embedded in an otherwise wild-type HAC1 context the mRNA sedimented almost entirely in the non-translating fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "When GFP was embedded in an otherwise wild-type HAC1 context the mRNA sedimented almost entirely in the non-translating fractions (Figure 2A), and there was no detectable fluorescence above background (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data in Figure 2A and flow cytometry data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "6075602f-5a59-402e-8fc3-31c5d28ab8e8",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C36",
+      "claim": "Cells expressing a GFP reporter construct missing the entire intron displayed a strong fluorescence signal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cells expressing a reporter construct missing the entire intron displayed a strong fluorescence signal (Figure 2C), and most of the mRNA was found in the translating fractions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2C and polysome profiling data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "2c3e97de-ba09-4fcf-ad8f-4bfd0ce21415",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C37",
+      "claim": "Base pairing between the 5\u2032-UTR and intron is required to prevent ribosome loading by directly impeding the binding or progress of the scanning ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that base pairing between the 5\u2032-UTR and intron is required to prevent ribosome loading by directly impeding the binding or progress of the scanning ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the polysome profiling data of base-pairing mutants shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "49f4a9a1-ce5e-465b-989d-df2dbbf26de5",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C38",
+      "claim": "Neither of the strains expressing a base-pairing mutant mRNA had any GFP detectable by either flow cytometry or immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, however, neither of the strains expressing a base-pairing mutant mRNA had any GFP detectable by either flow cytometry (Figure 2C) or immunoblotting (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 2C and immunoblotting data in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ee10d92d-80ff-4d5f-bcf0-35c23a679623",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C39",
+      "claim": "An additional silencing mechanism acting downstream of translation initiation prevents GFP accumulation when base pairing is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that an additional silencing mechanism acting downstream of translation initiation prevents GFP accumulation when base pairing is disrupted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that base-pairing mutants are loaded with ribosomes but produce no detectable protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "e5b8d462-7cec-479c-a197-a42a0b7d632d",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C40",
+      "claim": "Splicing of HAC1 mRNA alters the C-terminal tail of the encoded protein: The ORF in HAC1u mRNA has a 10-amino-acid tail encoded by the intron, which in HAC1i mRNA is replaced by an 18-amino-acid tail encoded by the second exon.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to removing the intron portion of the base-pairing interaction, splicing of HAC1 mRNA also alters the C-terminal tail of the encoded protein: The ORF in HAC1u mRNA has a 10-amino-acid tail encoded by the intron, which in HAC1i mRNA is replaced by an 18-amino-acid tail encoded by the second exon (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and is established knowledge about HAC1 splicing.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a5cbdd38-c6e9-4405-82f8-4da8375cb4a6",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C41",
+      "claim": "The coding region at the 5\u2032 end of the intron is sufficient for complete silencing of the GFP reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, cells expressing this construct had no detectable GFP (Figure 3C), despite the corresponding mRNA being abundant (Figure 3\u2014figure supplement 1A) and detected on polysomes due to the absence of the base-pairing interaction (Figure 3D). Thus, the coding region at the 5\u2032 end of the intron is sufficient for complete silencing of the GFP reporter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C, RNA abundance data in Figure 3\u2014figure supplement 1A, and polysome profiling data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "d1aa7b90-83c8-4cb3-8186-1fa62e8ac39c",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C42",
+      "claim": "Translation of the 5\u2032 end of the intron is required for silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing a termination codon between GFP and the intron restored robust fluorescence comparable to that observed for the intronless construct, which implicated translation of the 5\u2032 end of the intron as required for silencing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "598d1a49-eed3-4dbb-b06b-fe4c1416edc4",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C43",
+      "claim": "The amino-acid sequence encoded by the 5\u2032 end of the intron is more important than the nucleotide sequence itself for silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, making 10 nucleotide changes that maintained the coding potential of the intron-encoded tail (Figure 3B, bottom) had no effect on silencing (Figure 3C), suggesting that the amino-acid sequence encoded by the 5\u2032 end of the intron is more important than the nucleotide sequence itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C showing that recoding the sequence does not affect silencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "55f72c94-9490-4271-959c-473b412f6353",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C44",
+      "claim": "The C-terminal tail of Hac1up is sufficient for silencing independently of the rest of the HAC1 intron and any other HAC1 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the C-terminal tail of Hac1up is sufficient for silencing independently of the rest of the HAC1 intron and any other HAC1 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C showing that the 10-amino-acid tail silences GFP when expressed from the TMA7 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "31424690-ca8d-4e33-8445-a51dd2ea5dfe",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C45",
+      "claim": "Preventing translation of the 10-amino-acid tail in an otherwise wild-type HAC1 context caused GFP to accumulate to low but detectable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In an otherwise wild-type HAC1 context, preventing translation of the 10-amino-acid tail either by deleting the entire sequence or by introducing a stop codon caused GFP to accumulate to low but detectable levels (Figure 3C) without greatly affecting the sedimentation of the corresponding mRNAs (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 3C and polysome profiling data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ab8b9ff5-602c-451f-a006-814369de2f56",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C46",
+      "claim": "The 10-amino-acid tail functions downstream of translation, likely by acting as a 'degron' that targets the protein for immediate degradation after synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the tail functions downstream of translation, likely by acting as a 'degron' (Varshavsky, 1991) that targets the protein for immediate degradation after synthesis (Cox and Walter, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the 2A peptide experiment shown in Figure 3E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "0a54c9b7-7b4c-45ae-8c9f-57972a1b8ac3",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C48",
+      "claim": "Replacing the first exon of HAC1 with HIS3 but keeping the HAC1 locus otherwise intact prevented expression of His3p as evidenced by histidine auxotrophy.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to GFP, replacing the first exon of HAC1 with HIS3 but keeping the HAC1 locus otherwise intact prevented expression of His3p as evidenced by histidine auxotrophy (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "b20f9020-cc65-4886-9154-bb2eae4a5822",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C49",
+      "claim": "Removing the entire intron from the HIS3 reporter restored His3p expression and growth of the corresponding strain on medium lacking histidine.",
+      "claim_type": "EXPLICIT",
+      "source": "Removing the entire intron restored His3p expression and growth of the corresponding strain on medium lacking histidine, suggesting that silencing was mediated by the HAC1 intron.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "e43d6a19-4acd-45bf-b8d3-63a9569f3bea",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C50",
+      "claim": "Strains containing His3p appended with the C-terminal tail of Hac1up but no other elements of the HAC1 intron could not grow on medium lacking histidine.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, strains containing His3p appended with the C-terminal tail of Hac1up but no other elements of the HAC1 intron could not grow on medium lacking histidine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "cc46d828-aac1-4f32-b135-2f74b8bc95b9",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C51",
+      "claim": "17 out of the 20 strains sequenced contained a mutation in the same gene YJL149W.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, 17 out of the 20 strains that we sequenced contained a mutation in the same gene YJL149W (Figure 4C and Figure 4\u2014figure supplement 1C), and in each case we confirmed the mutation by Sanger sequencing (Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-genome sequencing data shown in Figure 4C and Figure 4\u2014figure supplement 1C, and Sanger sequencing confirmation in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "b104a048-0e11-47fd-b0d6-98e3f171d090",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C52",
+      "claim": "YJL149W was previously named DAS1 when it was identified in a genetic screen unrelated to the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "YJL149W had previously been named DAS1 for 'Dst1-delta 6-Azauracil Sensitivity 1' when it was identified in a genetic screen unrelated to the UPR (G\u00f3mez-Herreros et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to G\u00f3mez-Herreros et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "48f111c0-f491-47d0-a079-a0021072ea9a",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C53",
+      "claim": "YJL149W was annotated as a 'putative SCF ubiquitin ligase F-box protein' based on its domain structure and physical interactions with the SCF core components Cdc53p and Skp1p.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the protein's domain structure (containing an F-box domain and leucine-rich repeats) and physical interactions with the SCF core components Cdc53p and Skp1p (Willems et al., 1999), YJL149W was annotated as a 'putative SCF ubiquitin ligase F-box protein' (Cherry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Willems et al., 1999 and Cherry et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "2b5744dd-fa3d-4857-8a11-77a77097eaf5",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C54",
+      "claim": "Disrupting DUH1 led to a dramatic increase in the steady-state abundance of HA-His3p containing the 10-amino-acid tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Disrupting DUH1 led to a dramatic increase in the steady-state abundance of HA-His3p containing the 10-amino-acid tail, while having no effect on HA-His3p lacking the tail or constructs repressed by long-range base pairing (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8bb11655-4585-4816-b071-781e18440d01",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C55",
+      "claim": "Deleting DUH1 in the GFP reporter strains completely eliminated the silencing effect of the Hac1up tail but had no effect on base-pairing-mediated silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, deleting DUH1 in the GFP reporter strains completely eliminated the silencing effect of the Hac1up tail but had no effect on base-pairing-mediated silencing (Figure 4E and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4E and RNA abundance data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "efa2fe4f-0e91-48fd-91df-676dd010182b",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C56",
+      "claim": "In the absence of DUH1, the GFP reporter in a wild-type HAC1 context was expressed at the same leaky level as previously seen for the reporter in which a stop codon was positioned between GFP and the intron.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in the absence of DUH1 the GFP reporter in a wild-type HAC1 context was now expressed at the same leaky level as previously seen for the reporter in which a stop codon was positioned between GFP and the intron, indicating that degron-dependent silencing is required to suppress leaky GFP expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by flow cytometry data in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "40e08047-4e64-4770-a7ba-87c88cd60d11",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C57",
+      "claim": "DUH1 is the adapter protein that recognizes the Hac1up tail and targets the covalently attached protein for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide genetic evidence that DUH1 is the adapter protein that recognizes the Hac1up tail and targets the covalently attached protein for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic and biochemical data showing DUH1's role in degron-dependent silencing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "c7a05066-7cf9-49c7-85c7-f20870034863",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C58",
+      "claim": "Only the abundance of Hac1up was affected by disruption of DUH1, increasing by ~five fold in the knock-out strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, at the protein level only the abundance of Hac1up was affected by disruption of DUH1, increasing by ~five fold in the knock-out strain (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "9cc5d2a8-fd86-4a00-aeeb-fc79e07f3ba6",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C59",
+      "claim": "The increased abundance of Hac1up in the absence of DUH1 was not due to increased translation.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased abundance of Hac1up in the absence of DUH1 was not due to increased translation, as evidenced by deletion of DUH1 having no impact on ribosome density on any of the HA-tagged reporter mRNAs (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by polysome profiling data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "00b3faf9-8b48-48f8-ad5c-dfb7f11efd86",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C60",
+      "claim": "Duh1p specifically affects the turnover of Hac1up due to its 10-amino-acid tail.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our results suggest that Duh1p specifically affects the turnover of Hac1up due to its 10-amino-acid tail, as was suggested by the results of our reporter experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing DUH1-dependent effects on Hac1up protein abundance but not mRNA abundance or ribosome density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7968d7c3-bc4f-43c9-aea8-e086f972dbd8",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C61",
+      "claim": "The half-life upper bound of Hac1up was 50 seconds when DUH1 was present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the protein-degradation kinetics allowed us to calculate an upper bound for the half life of Hac1up, which was 50 seconds when DUH1 was present (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cycloheximide shut-off data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "2e37c8ac-27c5-480f-951b-ec61da0dfb1d",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C62",
+      "claim": "Deletion of DUH1 stabilized Hac1up and increased its half-life upper bound to 2 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of DUH1 stabilized Hac1up and increased its half-life upper bound to 2 minutes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cycloheximide shut-off data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "f9ad80c6-f70b-4f19-af5b-d246e364ca8e",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C63",
+      "claim": "DUH1 is required for the extremely short half life of Hac1up that normally limits its accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that DUH1 is required for the extremely short half life of Hac1up that normally limits its accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the cycloheximide shut-off data in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "5ff76048-b066-4392-9316-5a632e5b2aae",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C64",
+      "claim": "Mutating the base-pairing region in the presence of DUH1 resulted in detectable levels of Hac1up.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed, mutating the base-pairing region in the presence of DUH1 resulted in detectable levels of Hac1up (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "4532d77f-2dd4-44b9-ade5-dec1f5be76d9",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C65",
+      "claim": "The accumulation of Hac1up from base-pairing mutants was greatly stimulated by deletion of DUH1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the accumulation of Hac1up was greatly stimulated by deletion of DUH1, which was not explained by a corresponding increase in mRNA abundance (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 6C and RNA abundance data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "bc3dfd92-6a9e-480c-8750-735a0f25bde4",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C66",
+      "claim": "Although disrupting the base pairing produces detectable amounts of Hac1up, Duh1p-dependent degradation restricts the steady-state level of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although disrupting the base pairing produces detectable amounts of Hac1up as previously reported (R\u00fcegsegger et al., 2001), Duh1p-dependent degradation restricts the steady-state level of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data in Figure 6C showing increased Hac1up in duh1\u0394 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a3464c6a-e2f1-4c96-b408-f134b8c32e02",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C67",
+      "claim": "Even a single nucleotide change in the center of the base-pairing region was sufficient for some accumulation of Hac1up, which was enhanced by deletion of DUH1.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, even a single nucleotide change in the center of the base-pairing region (Sathe et al., 2015) was sufficient for some accumulation of Hac1up, which again was enhanced by deletion of DUH1 (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "493ad0a0-e4d0-4b50-8363-8df5a61db594",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C68",
+      "claim": "The 5\u2032-UTR\u2013intron base-pairing interaction is only marginally stable.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the 5\u2032-UTR\u2013intron base-pairing interaction is only marginally stable, which may be required for efficient dissociation of the intron after splicing (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that a single nucleotide change affects Hac1up accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "1fba05df-cb74-40c7-8bd0-dcd5b7152e09",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C69",
+      "claim": "Strains expressing Hac1ip or Hac1\u0394tailp grew on tunicamycin-containing medium regardless of whether DUH1 or IRE1 was present.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains expressing Hac1ip or Hac1\u0394tailp grew on tunicamycin-containing medium regardless of whether DUH1 (or IRE1) was present (Figure 7A), consistent with both proteins being active transcription factors that are not targeted by Duh1p.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "3148908c-13c7-41e2-aab1-805fc5816fce",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C70",
+      "claim": "Strains expressing Hac1up only grew robustly on tunicamycin-containing medium when DUH1 was knocked out.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, strains expressing Hac1up only grew robustly on tunicamycin-containing medium when DUH1 was knocked out (but independently of IRE1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "dfd302a9-c792-4ac1-83e8-8786c595aefd",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C71",
+      "claim": "Duh1p-dependent degradation normally masks the activity of Hac1up.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm our hypothesis that Duh1p-dependent degradation normally masks the activity of Hac1up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the growth assay data in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "74ab4d50-8664-4b32-83fe-7ac5f73b1ab7",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C72",
+      "claim": "Hac1up is being continuously produced from HAC1u mRNA but rapidly degraded due to its C-terminal degron.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the relatively low level of leaky translation product we detected, these results provide molecular evidence that Hac1up is being continuously produced from HAC1u mRNA but rapidly degraded due to its C-terminal degron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunoblotting data in Figure 7B showing Hac1up detection only in duh1\u0394 ire1\u0394 strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "3093f5dd-e842-4507-9040-d1aafe9768ab",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C73",
+      "claim": "At the highest tunicamycin concentration only strains expressing IRE1 could grow regardless of whether DUH1 was also present.",
+      "claim_type": "EXPLICIT",
+      "source": "At the highest tunicamycin concentration only strains expressing IRE1 could grow regardless of whether DUH1 was also present (Figure 7C), suggesting that growth was dependent on the abundant Hac1ip produced from HAC1i mRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8bc3b2d0-2836-4ee4-985d-787d78c211b7",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C74",
+      "claim": "At lower concentrations of tunicamycin the IRE1 deletion strain showed some growth, but this was reproducibly enhanced by simultaneous deletion of DUH1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at lower concentrations of tunicamycin the IRE1 deletion strain showed some growth, but this was reproducibly enhanced by simultaneous deletion of DUH1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by growth assay data in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "06e217aa-1135-4850-819b-eb83c4dd0396",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C75",
+      "claim": "The low level of Hac1up detectable in strains lacking DUH1 is sufficient to activate the UPR enough to facilitate cell survival under stress, even in the absence of Ire1p.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the low level of Hac1up detectable in strains lacking DUH1 (Figure 7B) is sufficient to activate the UPR enough to facilitate cell survival under stress, even in the absence of Ire1p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the growth assay data in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "25f86525-a251-45f0-9d33-b4ee7f4ff998",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C76",
+      "claim": "Degron-dependent degradation of Hac1up mediated by Duh1p is normally required to prevent ectopic Ire1p-independent activation of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, degron-dependent degradation of Hac1up mediated by Duh1p is normally required to prevent ectopic Ire1p-independent activation of the UPR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the growth assay data in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "381a6101-957e-4f60-9f74-87ccb2e1afa8",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C77",
+      "claim": "The ability of unspliced HAC1 mRNA to be stored in the cytoplasm without giving rise to detectable protein depends on two layers of post-transcriptional silencing, which together comprise a fail-safe mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, we have shown that the ability of unspliced HAC1 mRNA to be stored in the cytoplasm without giving rise to detectable protein depends on two layers of post-transcriptional silencing, which together comprise a fail-safe mechanism (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the main conclusion of the manuscript, supported by all the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7df4fce0-05a2-4a32-b15a-f300c3568eae",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C78",
+      "claim": "The initial silencing mechanism that acts on HAC1u mRNA is a block to translation initiation, which is caused by secondary structure in the 5\u2032-UTR that inhibits binding or progression of the scanning ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial silencing mechanism that acts on HAC1u mRNA is a block to translation initiation, which is caused by secondary structure in the 5\u2032-UTR that inhibits binding or progression of the scanning ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the polysome profiling data and base-pairing mutant experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "8584be25-68ef-4434-ae78-c3a9deb7656d",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C79",
+      "claim": "The translational silencing mechanism does not entirely prevent translation, allowing the production of small amounts of Hac1up.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this silencing mechanism does not entirely prevent translation, allowing the production of small amounts of Hac1up.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the detection of Hac1up in duh1\u0394 strains and the leaky expression of reporter genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a209b0a8-8275-4b9a-a5ad-8b4bbbe8cb6d",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C80",
+      "claim": "A second silencing mechanism exists to rapidly degrade any Hac1up that is produced by leaky translation.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent this, a second silencing mechanism exists to rapidly degrade any Hac1up that is produced by leaky translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the protein degradation data and DUH1 genetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "862cbe3d-24d7-4bdb-90b3-fe5673a04b82",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C81",
+      "claim": "The protein-degradation mechanism selectively targets Hac1up for ubiquitination and subsequent degradation by the proteasome by relying on recognition of the unique C-terminal tail of Hac1up by the F-box protein Duh1p.",
+      "claim_type": "EXPLICIT",
+      "source": "By relying on recognition of the unique C-terminal tail of Hac1up by the F-box protein Duh1p, the protein-degradation mechanism selectively targets Hac1up for ubiquitination and subsequent degradation by the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the genetic and biochemical data on DUH1 and the degron.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "c4c7a56c-0be3-47d4-98b4-b094bdad4db2",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C82",
+      "claim": "Removal of the intron by Ire1p-dependent splicing simultaneously results in the inactivation of both silencing mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Because both translational repression and protein degradation rely on sequences found in the intron of HAC1, removal of the intron by Ire1p-dependent splicing simultaneously results in the inactivation of both silencing mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structure of HAC1 and the mechanisms identified.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "4ab0aa4b-8d60-4c1e-86fc-1117d876ccef",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C83",
+      "claim": "Splicing allows the rapid accumulation of Hac1ip from the existing pool of HAC1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, splicing allows the rapid accumulation of Hac1ip from the existing pool of HAC1 mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the UPR and is supported by the mechanisms identified.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7170b526-8019-45a6-8578-0742a2207f4c",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C84",
+      "claim": "The polysome-like sedimentation of HAC1u mRNA is not due to translation of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "One surprising finding of our studies is that the polysome-like sedimentation of HAC1u mRNA is not due to translation of the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the polysome profiling experiments with premature stop codons and heparin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a1cb6a2a-55de-4106-94ac-a3d9385c8f34",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C85",
+      "claim": "The lack of appreciable translation of HAC1u mRNA suggests that the substrate for Ire1p-dependent splicing is untranslated mRNA, rather than polysomal mRNA containing stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of appreciable translation of HAC1u mRNA suggests that the substrate for Ire1p-dependent splicing is untranslated mRNA, rather than polysomal mRNA containing stalled ribosomes as originally proposed (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that HAC1u mRNA is not translated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "f06021c5-e6b6-49ca-b61f-7b7ebdf67aa0",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C86",
+      "claim": "The synthesis of Hac1ip requires de novo translation initiation on HAC1i mRNA, rather than just the resumption of translation by stalled ribosomes that initiated on HAC1u mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "A corollary of this is that the synthesis of Hac1ip requires de novo translation initiation on HAC1i mRNA, rather than just the resumption of translation by stalled ribosomes that initiated on HAC1u mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the finding that HAC1u mRNA is not translated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7ddb93f7-b7a5-4d2e-a03b-a8a5f3f2b59a",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C87",
+      "claim": "Ribosome profiling can provide a more accurate measurement of translation than traditional polysome profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "At least in this case, our findings suggest that ribosome profiling can provide a more accurate measurement of translation than traditional polysome profiling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between polysome profiling and ribosome profiling results for HAC1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "9e5787bf-da28-4a58-8ed5-aa3ec915d864",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C88",
+      "claim": "Electrostatic interactions between HAC1u mRNA and either non-translating 80S ribosomes or bona fide polysomes are responsible for its polysome-like sedimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these data, we propose that electrostatic interactions between HAC1u mRNA and either non-translating 80S ribosomes or, more likely, bona fide polysomes (containing both ribosomes and mRNA) are responsible for its polysome-like sedimentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the heparin disruption experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "6dea58af-c77a-4fc6-9d7e-96948856e331",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C89",
+      "claim": "HAC1u mRNA may be especially prone to non-specific interactions with polysomes because of the strong initiation block.",
+      "claim_type": "EXPLICIT",
+      "source": "HAC1u mRNA may be especially prone to such non-specific interactions because of the strong initiation block, though other untranslated mRNA molecules (including the small fraction of ribosome-free mRNA molecules observed even for well-translated genes) may also behave similarly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "4f1cbec3-a6af-43ff-91ed-c9339f4a07a5",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C90",
+      "claim": "The marginal stability of the 5\u2032-UTR\u2013intron base-pairing interaction may be required to make the translational repression reversible.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing possibility is that the marginal stability of the 5\u2032-UTR\u2013intron base-pairing interaction (Figure 6D) is the cause of leaky translation but is also required to make the translational repression reversible (R\u00fcegsegger et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation of marginal stability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "ac6afccb-1d35-482d-9897-a764887a3d57",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C91",
+      "claim": "If the base-pairing interaction were more stable and prevented translation altogether, splicing might not be sufficient for the intron to dissociate from the 5\u2032-UTR despite their being covalently unlinked.",
+      "claim_type": "EXPLICIT",
+      "source": "If the base-pairing interaction were more stable and prevented translation altogether, splicing might not be sufficient for the intron to dissociate from the 5\u2032-UTR despite their being covalently unlinked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance of marginal stability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "2c10b01b-d8e1-4336-9186-88fe9eaea427",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C92",
+      "claim": "The leaky translation of HAC1u mRNA may reflect a more fundamental property of translational repression: that it is inherently incomplete.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the leaky translation of HAC1u mRNA that we discovered may reflect a more fundamental property of translational repression: that it is inherently incomplete.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the general nature of translational repression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "1e5c7d67-2473-45dd-b7fb-ef4d5adc3cc8",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C93",
+      "claim": "Inhibition by uORFs has been shown to be only partial, due to both leaky scanning enabling bypass of the uORF and reinitiation facilitating translation of the downstream ORF.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition by uORFs has been shown to be only partial, due to both leaky scanning enabling bypass of the uORF and reinitiation facilitating translation of the downstream ORF (Meijer and Thomas, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Meijer and Thomas, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "fb6f231c-a51c-4045-b1b3-5167da3c69a2",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "claim_id": "C94",
+      "claim": "Inhibition by 5\u2032-UTR secondary structure may also be incomplete, potentially due to the action of RNA helicases that are constantly unwinding RNA structures in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that inhibition by 5\u2032-UTR secondary structure may also be incomplete, potentially due to the action of RNA helicases that are constantly unwinding RNA structures in vivo (Rouskin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Rouskin et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "72ae415b-0940-48a5-8d25-db723e5c3f0f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HAC1u mRNA is not associated with translating ribosomes despite its polysome-like sedimentation. Ribosome profiling shows HAC1 generates ~50-fold fewer ribosome-protected fragments than expected from polysome profiles. HAC1 mRNAs with premature stop codons sediment identically to wild-type, and heparin treatment shifts HAC1 mRNA to non-translating fractions while leaving ACT1 and overall polysomes unchanged. Upon DTT-induced splicing, HAC1 variants show expected differential sedimentation. The primary block to Hac1up production is at translation initiation, not elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C34 provide converging evidence from ribosome profiling (C21-C22), polysome profiling with premature stop codons (C26-C27), heparin treatment (C29-C31), and DTT-induced splicing controls (C32) that definitively demonstrate HAC1u mRNA is not translated. The experimental design is rigorous, with appropriate controls (ACT1, exogenous RNA, DTT treatment) and multiple orthogonal approaches. The conclusion that translation initiation rather than elongation is blocked (C34) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "a6a4a1ef-2a02-48d6-bcce-50066154d490",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Base pairing between the 5\u2032-UTR and intron prevents ribosome loading on HAC1 mRNA, but an additional post-initiation silencing mechanism exists. GFP reporters with intact base pairing sediment in non-translating fractions and show no fluorescence, while intronless constructs are translated. However, base-pairing mutants that sediment with polysomes produce no detectable protein, revealing a second silencing layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 demonstrate two independent silencing mechanisms through GFP reporter experiments. The polysome profiling (C35-C36) and base-pairing mutant analysis (C37-C38) provide clear evidence for translational repression. The critical observation that base-pairing mutants load ribosomes but produce no protein (C38) strongly supports the existence of an additional silencing mechanism (C39). The experimental design with appropriate controls (intronless, base-pairing mutants, compensatory mutants) is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "dd0e3d31-6006-4e4d-999f-962826b3b52c",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 10-amino-acid C-terminal tail encoded by the HAC1 intron acts as a degron that silences protein expression post-translationally. This tail is sufficient for complete silencing independently of other HAC1 sequences, requires translation to function, and acts through protein degradation rather than translational stalling. The amino acid sequence rather than nucleotide sequence is critical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 establish the degron function of the intron-encoded tail through systematic reporter experiments. The sufficiency of the tail alone (C41, C44), requirement for translation (C42), importance of amino acid sequence (C43), and post-translational mechanism (C46 via 2A peptide experiment) are all well-demonstrated. The 2A peptide experiment (C46) is particularly elegant in distinguishing co-translational from post-translational effects. The data consistently support the degron model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DUH1 (YJL149W) is the F-box protein adapter that recognizes the Hac1up degron and targets it for degradation. A genetic selection using HIS3 reporters identified DUH1 mutations in 17/20 sequenced strains. Disrupting DUH1 dramatically increases steady-state abundance of proteins containing the 10-amino-acid tail but has no effect on base-pairing-mediated silencing or proteins lacking the tail.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57 describe a well-executed genetic selection that identified DUH1 as the degron-recognition factor. The high frequency of DUH1 mutations (17/20 strains, C51) with Sanger confirmation provides strong genetic evidence. The specificity of DUH1 effects (C54-C56) - affecting only tail-containing proteins and not base-pairing-mediated silencing - strongly supports its role as the degron adapter. The combination of genetic selection, whole-genome sequencing, and functional validation is rigorous.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "6d160940-cdc0-48b8-bae6-88c07e11abe6",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DUH1 specifically regulates Hac1up protein turnover without affecting mRNA abundance or translation. Disrupting DUH1 increases Hac1up abundance ~5-fold without changing ribosome density. The half-life upper bound of Hac1up increases from 50 seconds to 2 minutes upon DUH1 deletion, demonstrating DUH1's role in rapid protein degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 demonstrate DUH1's specific effect on protein stability through multiple approaches: immunoblotting (C58), polysome profiling (C59), and cycloheximide shut-off experiments (C61-C62). The specificity for Hac1up over other Hac1 variants (C58) and the lack of effects on mRNA or translation (C59) support the post-translational mechanism. The half-life measurements (C61-C62) provide quantitative evidence, though the authors appropriately note these are upper bounds due to technical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Base-pairing-mediated translational repression and DUH1-dependent degradation act synergistically. Disrupting base pairing produces detectable Hac1up that is greatly enhanced by DUH1 deletion. Even a single nucleotide change in the base-pairing region allows some Hac1up accumulation, suggesting the interaction is only marginally stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 demonstrate the synergy between the two silencing mechanisms through systematic analysis of base-pairing mutants in DUH1 and duh1\u0394 backgrounds. The observation that base-pairing disruption produces detectable but limited Hac1up that is greatly enhanced by DUH1 deletion (C65) clearly shows both mechanisms contribute. The single nucleotide mutant experiment (C67) provides evidence for marginal stability, though the functional significance (C68) is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "d708bb2c-267f-4e53-91d0-c5591505e2dc",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Both silencing mechanisms are functionally required to prevent ectopic UPR activation. Hac1up is continuously produced from HAC1u mRNA at low levels but is normally degraded by DUH1. In the absence of DUH1, this leaky Hac1up production is sufficient to activate the UPR and promote survival under ER stress, even without IRE1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C76 demonstrate the physiological importance of the fail-safe mechanism through growth assays under ER stress. The differential growth of Hac1up-expressing strains depending on DUH1 status (C70) confirms Hac1up is an active transcription factor whose activity is masked by DUH1 (C71). The detection of Hac1up from wild-type HAC1u mRNA only in duh1\u0394 ire1\u0394 strains (C72) provides molecular evidence for leaky translation. The dose-dependent effects of tunicamycin (C73-C74) and enhanced survival in duh1\u0394 strains (C75) demonstrate functional consequences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "HAC1 silencing operates through a fail-safe mechanism with two layers: (1) base-pairing-mediated translational repression that blocks but does not eliminate translation initiation, and (2) DUH1-dependent degradation of any Hac1up produced by leaky translation. Splicing simultaneously inactivates both mechanisms by removing the intron, allowing rapid Hac1ip accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C83 synthesize the major findings into a coherent model. This conclusion is well-supported by the collective evidence from all previous results showing: (1) translational repression via base pairing (C78), (2) incomplete repression allowing leaky translation (C79), (3) DUH1-dependent degradation of leaky products (C80-C81), and (4) simultaneous inactivation by splicing (C82). The model is internally consistent and accounts for all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The polysome-like sedimentation of HAC1u mRNA is not due to translation but likely results from non-specific electrostatic interactions with polysomes. This finding suggests that ribosome profiling provides more accurate translation measurements than polysome profiling, and that the substrate for Ire1p splicing is untranslated mRNA requiring de novo translation initiation after splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 draw important mechanistic conclusions supported by the experimental data, particularly the premature stop codon and heparin experiments. The proposal about electrostatic interactions (C88) is reasonable speculation based on heparin disruption. However, C89 is explicitly speculative. The conclusion about ribosome profiling accuracy (C87) is supported by the discrepancy between methods for HAC1. The implications for Ire1p substrate specificity (C85) and translation initiation requirements (C86) are logical inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "00c382eb-737b-4c76-a259-8af0511af1d8",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The marginal stability of the base-pairing interaction may be functionally important for reversibility after splicing, or may reflect a fundamental property that translational repression is inherently incomplete. This incompleteness may be due to RNA helicases constantly unwinding structures in vivo, similar to how uORF-mediated repression is incomplete.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C94 are primarily speculative discussions about why translational repression is incomplete. While the observation of marginal stability (C67-C68) is supported by data, the functional explanations (C90-C91) and general principles (C92, C94) are hypotheses without direct experimental support in this manuscript. The comparison to uORFs (C93) is cited from prior work but doesn't validate the speculation about HAC1. These are reasonable hypotheses for future work but are not demonstrated here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on HAC1 and the UPR: HAC1 encodes the central transcription factor effector of the yeast UPR. When the UPR is inactive, HAC1u mRNA is stored in the cytoplasm without producing detectable protein. The intron is removed by Ire1p-dependent cytoplasmic splicing upon ER stress, and the resulting HAC1i mRNA is translated into active Hac1ip that activates UPR target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 provide established background knowledge about HAC1 and the UPR, supported by appropriate citations to prior literature. These claims accurately represent the current understanding of the system and provide necessary context for the study. The authors correctly cite the relevant prior work establishing these facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    },
+    {
+      "id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4",
+      "content_id": "bec4db8f-dc19-459b-918e-9da41d052a89",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The prior model proposed that HAC1u silencing occurs through ribosome stalling during elongation, mediated by base pairing between the 5\u2032-UTR and intron. This model was supported by polysome sedimentation of HAC1u mRNA and the assumption that Hac1up and Hac1ip have similar half-lives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 accurately describe the prior model from the literature, particularly from R\u00fcegsegger et al., 2001. These claims correctly represent what was previously believed about HAC1 silencing, which the current manuscript challenges. The authors appropriately cite the relevant prior work and accurately describe its conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:02:58.148146Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6d61e71d-226a-4986-8a42-aa4386e6ee7e",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "7c6da0c9-8cac-46f2-b3ee-332de5271d36",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "c005cc13-3901-480b-8b0a-96ddd004d231",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "39f7fc15-845a-471c-9d7f-b2cacaba0aee",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "86fbed66-5798-4f49-9a79-469b3de92baf",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "4d9fe044-2504-4e64-9a49-fd85cc540bd3",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "ca725532-9679-4951-9acd-4c66ea9bf2ab",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "35b53b2d-c86d-4907-8437-ecaa36b963df",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "3639813b-0afd-4eef-8d79-c7a693fa0d48",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "a1aa78a5-8a34-4ef3-8b1f-8f3e93369295",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "85d48e61-5936-48f6-a78e-496c2c4368cd",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "4ee2de85-ba1e-4ea8-a457-ababa8032c5b",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "d854f11c-d9e3-456f-adab-44d5c1644f03",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "ba6264d4-89aa-4ef9-ad2a-a2977182a616",
+      "result_id": "72ae415b-0940-48a5-8d25-db723e5c3f0f"
+    },
+    {
+      "claim_id": "eb71d382-e402-446a-b168-498443ade1e7",
+      "result_id": "a6a4a1ef-2a02-48d6-bcce-50066154d490"
+    },
+    {
+      "claim_id": "6075602f-5a59-402e-8fc3-31c5d28ab8e8",
+      "result_id": "a6a4a1ef-2a02-48d6-bcce-50066154d490"
+    },
+    {
+      "claim_id": "2c3e97de-ba09-4fcf-ad8f-4bfd0ce21415",
+      "result_id": "a6a4a1ef-2a02-48d6-bcce-50066154d490"
+    },
+    {
+      "claim_id": "49f4a9a1-ce5e-465b-989d-df2dbbf26de5",
+      "result_id": "a6a4a1ef-2a02-48d6-bcce-50066154d490"
+    },
+    {
+      "claim_id": "ee10d92d-80ff-4d5f-bcf0-35c23a679623",
+      "result_id": "a6a4a1ef-2a02-48d6-bcce-50066154d490"
+    },
+    {
+      "claim_id": "e5b8d462-7cec-479c-a197-a42a0b7d632d",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "a5cbdd38-c6e9-4405-82f8-4da8375cb4a6",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "d1aa7b90-83c8-4cb3-8186-1fa62e8ac39c",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "598d1a49-eed3-4dbb-b06b-fe4c1416edc4",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "55f72c94-9490-4271-959c-473b412f6353",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "31424690-ca8d-4e33-8445-a51dd2ea5dfe",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "ab8b9ff5-602c-451f-a006-814369de2f56",
+      "result_id": "dd0e3d31-6006-4e4d-999f-962826b3b52c"
+    },
+    {
+      "claim_id": "0a54c9b7-7b4c-45ae-8c9f-57972a1b8ac3",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "b20f9020-cc65-4886-9154-bb2eae4a5822",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "e43d6a19-4acd-45bf-b8d3-63a9569f3bea",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "cc46d828-aac1-4f32-b135-2f74b8bc95b9",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "b104a048-0e11-47fd-b0d6-98e3f171d090",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "48f111c0-f491-47d0-a079-a0021072ea9a",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "2b5744dd-fa3d-4857-8a11-77a77097eaf5",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "8bb11655-4585-4816-b071-781e18440d01",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "efa2fe4f-0e91-48fd-91df-676dd010182b",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "40e08047-4e64-4770-a7ba-87c88cd60d11",
+      "result_id": "0a96c1e5-8c83-446d-ac51-282bb2fc78af"
+    },
+    {
+      "claim_id": "c7a05066-7cf9-49c7-85c7-f20870034863",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "9cc5d2a8-fd86-4a00-aeeb-fc79e07f3ba6",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "00b3faf9-8b48-48f8-ad5c-dfb7f11efd86",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "7968d7c3-bc4f-43c9-aea8-e086f972dbd8",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "2e37c8ac-27c5-480f-951b-ec61da0dfb1d",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "f9ad80c6-f70b-4f19-af5b-d246e364ca8e",
+      "result_id": "6d160940-cdc0-48b8-bae6-88c07e11abe6"
+    },
+    {
+      "claim_id": "5ff76048-b066-4392-9316-5a632e5b2aae",
+      "result_id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f"
+    },
+    {
+      "claim_id": "4532d77f-2dd4-44b9-ade5-dec1f5be76d9",
+      "result_id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f"
+    },
+    {
+      "claim_id": "bc3dfd92-6a9e-480c-8750-735a0f25bde4",
+      "result_id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f"
+    },
+    {
+      "claim_id": "a3464c6a-e2f1-4c96-b408-f134b8c32e02",
+      "result_id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f"
+    },
+    {
+      "claim_id": "493ad0a0-e4d0-4b50-8363-8df5a61db594",
+      "result_id": "e8a1ede9-8f42-4eec-8b96-118714e7bc4f"
+    },
+    {
+      "claim_id": "1fba05df-cb74-40c7-8bd0-dcd5b7152e09",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "3148908c-13c7-41e2-aab1-805fc5816fce",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "dfd302a9-c792-4ac1-83e8-8786c595aefd",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "74ab4d50-8664-4b32-83fe-7ac5f73b1ab7",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "3093f5dd-e842-4507-9040-d1aafe9768ab",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "8bc3b2d0-2836-4ee4-985d-787d78c211b7",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "06e217aa-1135-4850-819b-eb83c4dd0396",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "25f86525-a251-45f0-9d33-b4ee7f4ff998",
+      "result_id": "d708bb2c-267f-4e53-91d0-c5591505e2dc"
+    },
+    {
+      "claim_id": "381a6101-957e-4f60-9f74-87ccb2e1afa8",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "7df4fce0-05a2-4a32-b15a-f300c3568eae",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "8584be25-68ef-4434-ae78-c3a9deb7656d",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "a209b0a8-8275-4b9a-a5ad-8b4bbbe8cb6d",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "862cbe3d-24d7-4bdb-90b3-fe5673a04b82",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "c4c7a56c-0be3-47d4-98b4-b094bdad4db2",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "4ab0aa4b-8d60-4c1e-86fc-1117d876ccef",
+      "result_id": "f51789e5-b8cd-4fbe-a19d-753ca024ae44"
+    },
+    {
+      "claim_id": "7170b526-8019-45a6-8578-0742a2207f4c",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "a1cb6a2a-55de-4106-94ac-a3d9385c8f34",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "f06021c5-e6b6-49ca-b61f-7b7ebdf67aa0",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "7ddb93f7-b7a5-4d2e-a03b-a8a5f3f2b59a",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "9e5787bf-da28-4a58-8ed5-aa3ec915d864",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "6dea58af-c77a-4fc6-9d7e-96948856e331",
+      "result_id": "064b5ffe-5a4e-482c-a18b-29b73af52b4a"
+    },
+    {
+      "claim_id": "4f1cbec3-a6af-43ff-91ed-c9339f4a07a5",
+      "result_id": "00c382eb-737b-4c76-a259-8af0511af1d8"
+    },
+    {
+      "claim_id": "ac6afccb-1d35-482d-9897-a764887a3d57",
+      "result_id": "00c382eb-737b-4c76-a259-8af0511af1d8"
+    },
+    {
+      "claim_id": "2c10b01b-d8e1-4336-9186-88fe9eaea427",
+      "result_id": "00c382eb-737b-4c76-a259-8af0511af1d8"
+    },
+    {
+      "claim_id": "1e5c7d67-2473-45dd-b7fb-ef4d5adc3cc8",
+      "result_id": "00c382eb-737b-4c76-a259-8af0511af1d8"
+    },
+    {
+      "claim_id": "fb6f231c-a51c-4045-b1b3-5167da3c69a2",
+      "result_id": "00c382eb-737b-4c76-a259-8af0511af1d8"
+    },
+    {
+      "claim_id": "9fa1a8b8-5c7e-490e-bfdf-19bd4f7047b2",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "d26d63bf-71cb-4e88-bdc7-394441ab6687",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "15837d79-08f7-43ae-9d59-65cc90740949",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "ed8837a3-9093-4e9b-90c7-c279caa5ed7f",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "ee4e623f-3434-480d-bd7a-91b78c86189f",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "8106b011-976f-4165-ad43-9ad2077fca0f",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "a379d9c8-4430-4deb-bc26-2e5338f5bfb7",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "fb98d8e1-09a9-42b9-ac16-79b1fab5c37c",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "b90dca0c-2c68-478e-98f1-7ea5688efd1f",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "970f2ff8-888d-4449-9e48-a8d402950fe6",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "6b908501-a800-4dd1-8d52-008a47cc8280",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "009a0767-07f3-4e23-8dcd-6e52401dc1e3",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "f8ebc14e-72b0-461d-b53f-8559d01021d0",
+      "result_id": "7e1b6eab-c67d-48be-900c-b54ae3d38be0"
+    },
+    {
+      "claim_id": "feae8a4e-5730-4ef3-8054-c0419689a214",
+      "result_id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4"
+    },
+    {
+      "claim_id": "50998b90-e208-433c-a368-2482d3778a49",
+      "result_id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4"
+    },
+    {
+      "claim_id": "932f7f2c-e261-49d7-9d0e-0867a2b1838a",
+      "result_id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4"
+    },
+    {
+      "claim_id": "1da1b52a-5c4e-4538-bf89-52e65d3a34e4",
+      "result_id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4"
+    },
+    {
+      "claim_id": "8915c620-82b3-425e-be67-7255be7a6780",
+      "result_id": "92dcbace-b9a8-4771-b83d-be3f0e94b9f4"
+    }
+  ],
+  "comparisons": []
+}

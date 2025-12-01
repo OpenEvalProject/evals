@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors developed ncdDetect, a novel non-coding cancer driver detection method that uses sample- and position-specific mutation probabilities derived from a multinomial logistic regression model trained on 505 whole genomes, incorporating mutational signatures, genomic annotations, and position-specific impact scores through a convolution-based algorithm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C22, and C107-C114 collectively describe the development and implementation of ncdDetect with clear methodological details. The method's novelty (C21), training data (C22), algorithmic approach (C107-C112), and implementation (C113-C114) are explicitly stated with appropriate technical specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The null model accounts for heterogeneity in cancer mutation rates by incorporating multiple genomic features including sample-specific variation (mean 32\u00d710\u00b3, median 8\u00d710\u00b3 mutations per sample), trinucleotide context, replication timing, gene expression, genomic segments, and local mutation rate in a strand-symmetric framework with four outcome classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 and C23-C25 provide comprehensive characterization of mutation rate heterogeneity with specific quantitative data (C7-C9) and cite appropriate literature for known correlations (C10-C12). The methodological framework (C23-C25) is clearly described with proper justification (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "ncdDetect identified 64 protein-coding genes as significant using conservation scores (23% in COSMIC), with conservation scores showing the highest sensitivity among three scoring schemes tested, successfully ranking known drivers TP53 and PIK3CA as top candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 provide specific quantitative results with appropriate benchmarking against COSMIC database. The comparison of scoring schemes (C26-C28, C30) is data-driven, and validation with known drivers (C32-C33) supports the method's performance. The observation that detected COSMIC genes have 8-fold higher mutation rates (C29) provides biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ncdDetect identified 160 significant promoter elements (q<0.10) with a 4-fold enrichment in mutation rate, including the highly significant TERT promoter (q=2.4\u00d710\u207b\u2076\u2079) and previously reported drivers WDR74 and PLEKHS1, with 29 of 160 candidates previously identified in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C45 provide comprehensive analysis of promoter elements with specific statistical values and appropriate validation through literature comparison. The identification of TERT (C38-C40) as top-ranked provides strong positive control, and overlap with previous studies (C45) supports validity, though data independence concerns are noted in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Three splice sites were identified as significant by ncdDetect, including TP53 splice sites (q=1.2\u00d710\u207b\u00b2\u00b9) with 12 mutations across 52 bps, showing 25-fold mutation rate enrichment and significant enrichment of COSMIC genes in top-10 ranked splice sites (p=6.1\u00d710\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 describe splice site analysis with appropriate statistical support. The limitation that 90% of splice sites have zero mutations (C48) is acknowledged, and validation through known TP53 splice site mutations (C51-C54) with literature support provides credibility despite limited power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "ncdDetect identified 86 significant 5' UTRs (6-fold mutation rate enrichment) and 16 significant 3' UTRs (3-fold enrichment), including previously reported candidates SDHD, DRD5, and PCMTD1, with SDHD showing 6 melanoma mutations in 135 bps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 provide quantitative results for UTR analysis with appropriate fold-enrichment calculations and validation through literature comparison (C61-C63). The specific example of SDHD (C62-C64) with prior evidence of association with expression and survival provides supporting context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Expression and survival validation analyses recovered known associations for TERT promoter mutations with expression (q=1.4\u00d710\u207b\u00b3) and TP53 splice site mutations with both expression (q=2.3\u00d710\u207b\u00b2) and survival (q=1.0\u00d710\u207b\u00b9), and identified HLA-DRB1 promoter mutations associated with decreased survival (q=2.0\u00d710\u207b\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 demonstrate validation strategy with recovery of known associations (C65-C67) providing positive controls. Statistical tests are appropriate (Fisher's method, Wilcoxon, Log-rank), though the marginal significance for TP53 survival (C67, q=0.1) and the acknowledged challenges with HLA genotyping (C68) indicate some limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SMUG1 promoter mutations (19 mutations, q=1.1\u00d710\u207b\u2076) correlate with a uracil-DNA glycosylase deficiency signature (enrichment of G\u2192A mutations outside CpG), with significant associations in melanoma (p=8.2\u00d710\u207b\u00b2) and uterus cancer (p=2.1\u00d710\u207b\u00b2), and negative correlation between the signature and SMUG1\u00d7UNG expression (p=2.4\u00d710\u207b\u00b3) in TCGA exomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C80 present an interesting mechanistic hypothesis supported by prior literature (C72-C75) and correlative data. However, the melanoma association is only a tendency (p=0.082, C76), the uterus cancer finding is based on a single sample (C77), and the analysis is purely correlative without functional validation. The UV signature confounding in melanoma (C71) is appropriately addressed but adds complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CD1A 5' UTR mutations (11 mutations in 533 bp, q=1.1\u00d710\u207b\u00b2, 5-fold enrichment) show highly significant association with decreased survival in melanoma (p=1.2\u00d710\u207b\u2079), with CD1A being an antigen-presenting gene highly expressed in skin and previously implicated in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88 present a compelling candidate with strong statistical association with survival (C84) and appropriate biological context (C85-C88). The survival association is top-ranked and highly significant, though the mechanism remains unclear. The tissue-specific expression pattern (C87) and prior cancer associations (C88) provide supporting biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PRSS3 shows significant mutations across multiple regulatory regions (promoter: 22 mutations, q=1.1\u00d710\u207b\u00b2, 4-fold enrichment; 3' UTR: q=1.4\u00d710\u207b\u2075; coding: q=6.8\u00d710\u207b\u00b2\u2070) with decreased survival in HNSC for promoter (p=1.8\u00d710\u207b\u00b3) and coding mutations (p=1.2\u00d710\u207b\u00b2), and tendency in melanoma 3' UTR (p=8.3\u00d710\u207b\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 demonstrate convergent evidence across multiple genomic regions of the same gene with prior literature support (C91). The survival associations are significant for HNSC (C94-C95) with appropriate statistical tests, though the melanoma 3' UTR association is marginal (C96). The multi-region significance strengthens the case for PRSS3 as a driver.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "SEC14L1 3' UTR mutations (31 mutations in 3052 bp, q=8.9\u00d710\u207b\u2075, 4-fold enrichment) with 58% in breast and colorectal cancer show significant association with decreased survival in HNSC (p=5.8\u00d710\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 provide specific quantitative data with significant survival association (C100). However, the cancer type distribution (C99) and survival association in HNSC rather than the enriched cancer types (breast/colorectal) raises questions about biological interpretation, though the statistical evidence is clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "STK11 splice site mutations (4 LUAD samples, 36 bp, q=2.2\u00d710\u207b\u00b3, 56-fold enrichment) show significantly lower expression in mutated LUAD samples (p=1.3\u00d710\u207b\u00b3) and marginally significant decreased survival (p=6.5\u00d710\u207b\u00b2), with STK11 being a known COSMIC tumor suppressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 present a well-validated candidate with prior knowledge (C103-C104), significant expression correlation (C105), and marginal survival association (C106). The recent independent reports of STK11 splice site mutations (C104) provide strong validation, though the survival association is at the margin of significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Application of ncdDetect to 505 whole genomes identified candidates that associate with altered expression or decreased survival in an independent set of 5454 samples, including CD1A 5' UTR mutations correlating with melanoma survival and SMUG1 mutations correlating with C-to-T signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 summarize the main findings with appropriate use of independent validation cohort. The specific examples (CD1A, SMUG1) are supported by detailed analyses in other claim groups, though the strength of evidence varies between candidates as detailed in those evaluations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C33",
+      "C39",
+      "C40",
+      "C72",
+      "C73",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91",
+      "C103",
+      "C104"
+    ],
+    "result": "The manuscript appropriately contextualizes findings within established cancer biology knowledge, including the role of somatic mutations in cancer, the limited protein-coding genome fraction, known drivers like TERT and TP53, and the functions of candidate genes like SMUG1, CD1A, PRSS3, and STK11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C14-C17, C33, C39-C40, C72-C73, C85-C88, C91, C103-C104 appropriately cite established knowledge with proper references. These provide necessary biological context for interpreting the computational findings, though they represent background rather than novel results.",
+    "result_type": "MINOR"
+  }
+]

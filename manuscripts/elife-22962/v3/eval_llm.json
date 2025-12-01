@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "O-LM cells are inhibitory interneurons in the hippocampus that gate information flow, fire phase-locked to theta rhythms during the trough of local field potentials, target distal dendrites of pyramidal cells, and express h-channels that enable post-inhibitory rebound spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C16, C17, C18 are well-supported by multiple citations to experimental literature (Klausberger et al., 2003; Varga et al., 2012; Le\u00e3o et al., 2012; Maccaferri, 2005). Claims C19 and C20 regarding h-channel expression and function are also supported by citations (Maccaferri and McBain, 1996; Getting, 1989), though C20 involves some inference about functional consequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Theta rhythms in the hippocampus extend from 4-12 Hz and can be classified into Type 1 (high, 7-12 Hz, atropine-resistant) and Type 2 (low, 4-7 Hz, atropine-sensitive), with different behavioral correlates. PV+ MS-DBB neurons can entrain hippocampal theta and specifically target interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to the literature (Colgin, 2013; Buzs\u00e1ki, 2002; Kramis et al., 1975; Tendler and Wagner, 2015; Hangya et al., 2009; Guly\u00e1s et al., 1990; Garrett et al., 2014). These are established findings in the field that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Previous experimental work shows that O-LM cells exhibit subthreshold resonance at theta frequencies and that h-channels contribute to spontaneous firing at 8 Hz in vitro, but in depolarized states h-channels may not contribute to subthreshold oscillations. In high-conductance states, O-LM cells respond preferentially to 8 Hz inputs through mechanisms dependent on afterhyperpolarization dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by citations to experimental literature (Pike et al., 2000; Maccaferri and McBain, 1996; Zemankovics et al., 2010; Kispersky et al., 2012). These prior findings provide important context and motivation for the computational modeling approach taken in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C77",
+      "C78"
+    ],
+    "result": "The distribution of h-channels in O-LM cells is currently unknown. While HCN2 expression has been found in O-LM cell somata, dendritic expression has not been specifically examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 and C77 are direct statements about the lack of knowledge, which is appropriate given the cited literature (Matt et al., 2011). This knowledge gap motivates the modeling approach of testing both somatic and somatodendritic h-channel distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C93",
+      "C94"
+    ],
+    "result": "The study uses 32 multi-compartment O-LM cell models from a previously developed database, with 16 models having somatic h-channels and 16 having somatodendritic h-channels. All models within each distribution type have identical h-channel maximum conductance densities. Simulations were performed in NEURON using CVODE integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by clear methodological descriptions and citations to the model database (Sekuli\u0107 et al., 2014). The model selection criteria are well-justified to isolate the effects of h-channel distribution. Methods are described with sufficient detail including software specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Somatodendritic inhibitory synaptic inputs more effectively entrain O-LM cell model spiking than somatic inputs, with significantly higher power ratios across all tested frequencies for both somatic and somatodendritic h-channel models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by data in Figure 1G and statistical analysis using two-way repeated measures ANOVA with significant results (p<0.001 for somatic H models, p=0.017 for somatodendritic H models, n=16 each). The finding is consistent across both model types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Models with somatodendritic h-channels exhibit preferred spiking recruitment at high theta frequencies (4-9 Hz) with a peak at 4 Hz and broader response (power ratio >0.6 at 4-10 Hz), while models with somatic h-channels exhibit preferred recruitment at low theta frequencies (2-5 Hz) with a peak at 3 Hz and sharp drop-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figures 2B and 2C showing power ratios and rotation numbers. The differential frequency preferences are clearly demonstrated with appropriate statistical analysis. This represents a core finding of the paper linking h-channel distribution to theta frequency tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Blocking h-channels causes hyperpolarization and loss of firing, but after adjusting excitatory conductances to restore baseline firing, h-channel blockade results in modest impairment of spiking resonance at theta frequencies. However, the partitioning of somatic and somatodendritic h-channel models into low and high theta preferences is preserved despite h-channel block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figure 2\u2014figure supplement 1 and Figures 2B-C. The methodological approach of adjusting excitatory conductances is well-justified to avoid confounds. The preservation of differential theta preferences despite h-block is an important finding suggesting other mechanisms are involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Models exhibit differential firing precision (vector strength) matching their spiking recruitment preferences. Somatic h-channel models show high synchronization (VS >0.8) at 2-5 Hz, while somatodendritic h-channel models synchronize at 4-9 Hz. With h-block, somatodendritic models show reduced synchronization at 3-15 Hz. Somatodendritic models exhibit phase advance compared to somatic models, firing at 180\u00b0 relative to release from inhibition at 8 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figures 3A-C with appropriate statistical analysis (two-way repeated measures ANOVA). The 180\u00b0 phase relationship at 8 Hz for somatodendritic models is particularly notable as it matches in vivo observations of O-LM cell firing during theta (as discussed in relation to Varga et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Post-spike voltage trajectories differ between model types: somatic h-channel models show sharp depolarization after spikes, while somatodendritic models remain hyperpolarized longer. Kdrs conductance density is an order of magnitude higher in somatodendritic h-channel models compared to somatic models, while KA densities are comparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by data in Figure 4A. Claims C50-C51 are supported by parameter values in Table 1. These observations provide mechanistic insight into the differential behavior of the two model classes and motivate subsequent channel blocking experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C63",
+      "C64"
+    ],
+    "result": "The preferred theta frequency ranges depend on slow delayed-rectifier potassium channels (Kdrs). Blocking both h-channels and Kdrs abolishes the broad theta spiking resonance in somatodendritic models and shifts their frequency preference from high theta (4-5 Hz) to low theta (2-3 Hz), effectively transforming them into somatic h-channel model-like responses. Blocking h-channels and KA does not produce this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by extensive data in Figures 4B-C and Figures 5A-D with appropriate statistical analysis. The differential effects of Kdrs vs KA blockade are clearly demonstrated. This represents a major mechanistic finding identifying the specific conductances underlying high theta resonance in somatodendritic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Blocking h-channels and KA has minimal effects on power ratio and rotation number for both model types, and the ability of somatodendritic models to exhibit high theta spiking power is preserved. In contrast, blocking h-channels and Kdrs significantly reduces vector strength in the high theta range for somatodendritic models but not for somatic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figures 5 and 6 with appropriate statistical analysis (repeated measures ANOVA). The differential effects of blocking Kdrs vs KA further support the specific role of Kdrs in high theta resonance. Data in Figure 6\u2014figure supplement 1 confirms no effect on somatic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "Simulating cAMP modulation of h-channels by shifting V1/2 by +5 mV shifts preferred theta ranges: somatic models shift from 2-5 Hz to 3-5 Hz, while somatodendritic models shift from 4-12 Hz to 8-10 Hz with enhanced and narrowed recruitment. This modulation confers phase advance and narrowing of recruitment and precision in respective theta ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figures 7 and 8 with appropriate statistical analysis. The +5 mV shift is justified by citations (Wainger et al., 2001; Baruscotti et al., 2015). The cAMP modulation results demonstrate that the differential theta preferences can be dynamically modulated, which has important functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "With cAMP modulation, somatic h-channel models shift their precise recruitment (VS >0.8) from 2-5 Hz to 3-5 Hz, while somatodendritic models shift from 4-10 Hz to 8-10 Hz with suppression of phase-locking outside this range. The division into low and high theta preferences is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by data in Figure 8A-C with appropriate statistical analysis (two-way repeated measures ANOVA). The preservation of differential preferences with cAMP modulation while shifting the specific frequency ranges demonstrates robustness of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C76",
+      "C81",
+      "C82",
+      "C86",
+      "C87",
+      "C90",
+      "C92"
+    ],
+    "result": "The modeling results suggest that O-LM cells can be differentially recruited by frequency-modulated inputs depending on h-channel distribution and co-regulation with Kdrs. The presence of dendritic h-channels may be important for determining spiking resonance preferences, and O-LM cells may be 'tuned' to Type 1 or Type 2 theta depending on channel distributions, potentially constituting an intrinsic 'switch' along the dorsoventral axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are predictions and interpretations based on the modeling results (C7, C76, C82, C86, C87, C92 are supported by the data presented). However, C81 and C90 are speculative predictions requiring experimental validation. The link to Type 1/Type 2 theta and dorsoventral gradients is plausible but indirect. Experimental determination of h-channel distribution in O-LM cells is needed to validate these predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "Type 1 theta originates in dorsal hippocampus and is associated with spatial memory, while Type 2 theta is involved in emotional processing and may originate in ventral hippocampus. A gradient of HCN1 to HCN2 exists in pyramidal neurons along the dorsoventral axis. O-LM cells fire at the trough of theta in vivo, 180\u00b0 phase-delayed from MS-DBB inhibitory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to experimental literature (Strange et al., 2014; Ciocchi et al., 2015; Patel et al., 2012; Le\u00e3o et al., 2015; Dougherty et al., 2013; Varga et al., 2012; Borhegyi et al., 2004). These provide important context for interpreting the modeling results in relation to hippocampal function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C79",
+      "C80"
+    ],
+    "result": "Non-uniform dendritic h-channel distributions in pyramidal cells enable synchronous arrival of spatially disparate inputs. Cell types can maintain characteristic output despite variable ion channel densities. Previous modeling work showed that disparate h-channel distributions in O-LM cells can reproduce somatic responses if total conductance is maintained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations (Magee and Cook, 2000; Williams and Stuart, 2000; Marder and Goaillard, 2006; Magee, 1998; Sekuli\u0107 et al., 2015). These provide important background and justification for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study used specific synaptic parameters (500 Hz excitatory, 1000 Hz inhibitory rates; \u03c4rise=0.5ms, \u03c4decay=6.8ms; Eexc=0mV, Einh=-80mV) with \u00b140% modulation of inhibitory inputs at frequencies from 0.5-30 Hz. Output was analyzed using power ratio, rotation number (average spikes per input cycle), and vector strength (synchronization index ranging 0-1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All methodological claims are clearly stated and appropriately justified by citation to Kispersky et al., 2012. The analysis metrics are standard and well-defined. The methods are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

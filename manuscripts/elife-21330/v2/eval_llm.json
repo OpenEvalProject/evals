@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides historical and biochemical context for aerobic glycolysis, describing Warburg's original observations and the metabolic inefficiency of glycolysis compared to oxidative phosphorylation. These claims establish background knowledge about the Warburg effect and its paradoxical nature in rapidly dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C13 are well-established historical and biochemical facts supported by appropriate citations to primary literature (Warburg et al., 1927, 1924; DeBerardinis et al., 2007; Xie et al., 2014). These provide necessary context for the study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The hexosamine biosynthetic pathway requires glucose (via fructose-6-phosphate) and glutamine to synthesize UDP-GlcNAc, which is used by Golgi branching enzymes to create N-glycan branches. These branches regulate receptor endocytosis and signaling by binding galectins. The authors hypothesize that the hexosamine pathway competes with glycolysis and glutaminolysis for shared substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C18-C22 describe established biochemical pathways supported by extensive prior literature and citations. Claim C23 presents the central hypothesis of the study, which is a logical inference based on shared substrate requirements. This provides the mechanistic framework for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "TH17-inducing cytokines (TGF\u03b2+IL-6+IL-23) synergistically reduce N-glycan branching by 3-4 fold as measured by L-PHA binding, while also reducing E-PHA and galectin-3 binding and increasing ConA binding. This occurs despite unchanged or increased Mgat1/Mgat5 mRNA expression. The cytokines specifically downregulate GFPT1 protein while maintaining or increasing glycolytic enzyme expression (HK1, GPI, PFK1), resulting in reduced UDP-GlcNAc production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C29-C31, C33 are well-supported by multiple complementary experimental approaches including flow cytometry (Figure 1B, supplements), Western blot (Figure 1C), qPCR (Figure 1\u2014supplement 1C), and LC-MS/MS (Figure 1D). The synergistic effect of cytokines, specificity of GFPT1 downregulation, and consequent reduction in UDP-GlcNAc are clearly demonstrated with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "GlcNAc supplementation reverses the reduction in branching induced by TH17 cytokines, markedly inhibits TH17 differentiation, and induces a cell fate switch to iTreg cells despite the presence of TH17-inducing cytokines. This effect is reversed by kifunensine, confirming that GlcNAc acts by restoring branching rather than through metabolic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are strongly supported by flow cytometry data (Figures 1E, F, Figure 1\u2014supplement 1E, F) showing both branching restoration and differentiation changes. The kifunensine reversal experiment (C38-C39) provides critical specificity control demonstrating that effects are mediated through branching. Citation to Wellen et al. 2010 (C37) supports that GlcNAc is metabolically inert.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Genetic manipulation of branching confirms its role in T cell differentiation: Mgat5 overexpression induces TH17-to-iTreg switching, while blocking branching through kifunensine, Mgat1 deficiency, or Mgat5 deficiency all significantly enhance TH17 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by flow cytometry data from multiple genetic models (Figure 1G, H, Figure 1\u2014supplements 1F, 2A, 2C). The use of inducible Mgat5 overexpression (ROSArtTAMgat5tet) and conditional Mgat1 deletion (Mgat1f/ftetO-Cre+ROSArtTA) provides strong genetic evidence. However, the magnitude of effect with Mgat5 overexpression is noted to be less than GlcNAc supplementation, appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "N-glycan branching promotes iTreg over TH17 differentiation by regulating IL-2 signaling. Reduced branching (via Mgat1 deletion) decreases CD25 surface expression and retention, while increased branching (via GlcNAc or Mgat5 overexpression) raises CD25 levels. TH17 cytokines reduce pSTAT5 signaling, which is restored by GlcNAc. Anti-IL-2 antibody blocks GlcNAc's ability to switch cell fate, and blocking branching prevents exogenous IL-2 from inducing TH17-to-iTreg switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C56 are well-supported by multiple experimental approaches including flow cytometry (Figures 2A-C, E, F, supplements), Western blot (Figure 2D), endocytosis assays (Figure 2\u2014supplement 1B), and ELISA (Figure 2\u2014supplement 1E). The mechanistic link between branching, CD25 retention, and IL-2 signaling is demonstrated through complementary gain-of-function and loss-of-function experiments with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Blocking aerobic glycolysis with rapamycin or galactose enhances branching and drives iTreg over TH17 differentiation. These effects are reversed by Mgat1 deficiency or kifunensine, demonstrating that increased branching is necessary for the cell fate switch. Importantly, GlcNAc supplementation does not alter the glycolytic state (ECAR/OCR), and kifunensine does not reverse glycolysis inhibition, establishing that TH17 differentiation does not require aerobic glycolysis beyond its effects on branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 are strongly supported by Seahorse metabolic analysis (Figures 3A-C, supplement 1B), flow cytometry (Figures 3D-G, supplements), and Western blot (Figure 3E). The key decoupling experiments showing that branching manipulation affects differentiation without changing metabolic state (C59, C66) are critical for establishing that branching is the primary mediator. Statistical analysis is appropriate with Bonferroni corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "2-Deoxy-D-glucose reduces branching and promotes TH17 differentiation, consistent with branching being dominant over aerobic glycolysis in controlling TH17 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by flow cytometry data (Figure 3\u2014supplement 1F, G). However, the authors appropriately note that 2-deoxy-D-glucose is also 2-deoxy-D-mannose and inhibits N-glycan biosynthesis through incorporation into the lipid-linked oligosaccharide precursor, which complicates interpretation. This result supports the model but has mechanistic ambiguity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In neutral T cell blasts (without polarizing cytokines), GFPT1 is markedly upregulated compared to TH17 conditions. Rapamycin and galactose enhance branching and inhibit T cell growth under neutral conditions, effects reversed by kifunensine, demonstrating that aerobic glycolysis promotes growth by limiting branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are supported by Western blot data (Figure 1C) and flow cytometry (Figures 5A-C, supplement 1). The differential regulation of GFPT1 in neutral versus TH17 conditions is clearly shown. The growth inhibition experiments with metabolic modulators and kifunensine reversal provide evidence that branching regulation is a general mechanism affecting both differentiation and proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "iTreg cells induced by TGF\u03b2 alone utilize lipid oxidation rather than glycolysis. Abolishing branching via Mgat1 deficiency virtually eliminates iTreg differentiation, and Mgat5 deficiency or kifunensine also inhibit iTreg generation. Conversely, raising branching with GlcNAc promotes iTreg differentiation. Etomoxir (fatty acid oxidation inhibitor) decreases branching, CD25 expression, and iTreg generation, effects reversed by GlcNAc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by flow cytometry data (Figures 4A-F, supplements) and citations to prior work (Michalek et al., 2011; Shi et al., 2011). The etomoxir experiments (C77-C78) provide evidence linking lipid oxidation to branching and iTreg differentiation. The near-complete elimination of iTreg with Mgat1 deficiency (C73) is a strong phenotype, though the lack of quantification in some panels limits assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Excess exogenous glutamine raises branching under TH17 conditions, markedly inhibits TH17 differentiation, and induces a cell fate switch to iTreg. These effects are reversed by kifunensine. Similarly, increasing glutamine under iTreg-inducing conditions raises branching and increases iTreg generation in a kifunensine-sensitive manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 are supported by flow cytometry data (Figures 6A-D, supplements). The dose-dependent effects of glutamine on branching and differentiation, along with kifunensine reversal, demonstrate that glutamine availability regulates T cell fate through branching. The experiments are well-controlled with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Glutaminase inhibitors (DON and azaserine) enhance branching and induce TH17-to-iTreg switching. However, DMK (\u03b1-ketoglutarate analog) does not reverse DON's effects on branching or TH17 induction, though it partially rescues iTreg generation. Kifunensine only partially reverses the effects of glutaminase inhibitors. The authors conclude that glutamine availability regulates branching to affect differentiation, but other factors such as glutamine catabolism to \u03b1-ketoglutarate also play a role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 are supported by flow cytometry data (Figures 6E-J). The partial rescue experiments with DMK and kifunensine (C86-C88) appropriately demonstrate that branching is not the sole mechanism by which glutamine affects T cell differentiation. The authors' conclusion (C89-C90) acknowledges this complexity, which strengthens rather than weakens the overall model. The incomplete reversal by kifunensine suggests additional glutamine-dependent pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors conclude that a primary function of aerobic glycolysis and glutaminolysis is to cooperatively limit metabolite supply to N-glycan biosynthesis. In T cells, this promotes pro-inflammatory TH17 over anti-inflammatory iTreg differentiation. Restoring branching via GlcNAc switches cell fate without altering glycolytic state, and blocking branching reverses the effects of forcing oxidative phosphorylation, demonstrating that aerobic glycolysis is not essential for differentiation control beyond branching regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 represent the main conclusions of the study, which are well-supported by the collective experimental evidence. The decoupling experiments (C93, C95) are particularly strong, showing that branching manipulation affects differentiation independently of metabolic state. The cooperative effects of glucose and glutamine metabolism on branching are demonstrated through multiple complementary approaches. The conclusion is appropriately stated as a 'primary function' rather than the sole function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors address potential alternative mechanisms by which GlcNAc might affect T cell differentiation. While GlcNAc alters glucose uptake, it does not acutely change metabolic state (OCR/ECAR). GlcNAc raises UDP-GlcNAc levels, which could affect other glycan pathways, but kifunensine reversal confirms effects are predominantly through branching. The authors conclude that T cell differentiation can be decoupled from metabolic state by manipulating branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 are supported by 2-NBDG uptake data (Figure 3\u2014supplement 1A), Seahorse analysis (Figures 3A, supplement 1B), UDP-GlcNAc measurements (Figure 1D), and kifunensine reversal experiments (multiple figures). The authors appropriately address potential confounding mechanisms and provide evidence that branching is the primary mediator. Citation to prior work (Ryczko et al., 2016; Mkhikian et al., 2016) supports the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors propose that competition between PFK1 and GFPT for fructose-6-phosphate determines glucose flux into the hexosamine/branching pathways. During TH17 differentiation, GFPT1 downregulation allows PFK1 to dominate, restricting hexosamine pathway flux. In neutral T cell blasts, GFPT1 upregulation allows increased UDP-GlcNAc production, though aerobic glycolysis still limits hexosamine flux to promote growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 represent mechanistic interpretations supported by Western blot data (Figure 1C), branching measurements (Figure 1B), and growth assays (Figures 5A-C). The differential regulation of GFPT1 in different conditions is clearly demonstrated. However, these are inferences about metabolic flux competition rather than direct measurements of flux, which would require isotope tracing experiments. The model is consistent with the data but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C28",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript cites prior work suggesting that aerobic glycolysis and glutaminolysis promote pro-inflammatory responses and TH17 differentiation. The authors note that only ~20% change in branching is sufficient to alter T cell growth. Previous work showed that oral GlcNAc in an EAE model blocked disease progression, raised branching, and suppressed TH17 in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C28, C40-C42 are supported by appropriate citations to prior literature (Chang et al., 2013; Gubser et al., 2013; Klysz et al., 2015; Ho et al., 2015; Michalek et al., 2011; Shi et al., 2011; Lee et al., 2007; Mkhikian et al., 2011; Zhou et al., 2014; Grigorian et al., 2011). These provide context for the current work and establish the biological significance of the observed changes in branching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors discuss implications for cancer, noting that branching and Mgat5 are pathologically overexpressed in cancer cells and promote growth, motility, and metastasis. Oncogenes like Kras upregulate hexosamine pathway genes, and GFPT expression is elevated in multiple cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by citations to prior literature (Granovsky et al., 2000; Lau et al., 2007; Partridge et al., 2004; Demetriou et al., 1995; Ying et al., 2012; Itkonen et al., 2013) and mention of unpublished data. These claims provide context for the broader significance of the findings but do not present new experimental data on cancer. The discussion appropriately notes that the functional consequences in cancer merit further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors discuss therapeutic potential of GlcNAc for autoimmune diseases. GlcNAc has been given orally to children with inflammatory bowel disease with clinical improvement and no reported toxicities. Unpublished data suggests serum GlcNAc is reduced in progressive MS patients and correlates with disability, and a pilot study showed oral GlcNAc increased serum levels and T cell branching. The authors suggest GlcNAc may serve as a safe, inexpensive therapeutic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is supported by citation to Salvatore et al., 2000. Claims C112-C113 rely on unpublished data that cannot be evaluated. Claim C114 is a factual statement about regulatory status. Claim C115 is speculative and appropriately qualified with 'may serve.' The therapeutic potential is plausible based on the mechanistic findings, but the unpublished clinical data cannot be assessed for quality, and the suggestion requires prospective clinical trials for validation.",
+    "result_type": "MINOR"
+  }
+]

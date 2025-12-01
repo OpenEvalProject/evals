@@ -1,0 +1,2055 @@
+{
+  "submission": {
+    "id": "ab43e3f0-63f0-45bc-ac6c-6560ade56726",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:59:44.951477Z",
+    "updated_at": "2025-11-30T20:59:44.951477Z"
+  },
+  "content": [
+    {
+      "id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "submission_id": "ab43e3f0-63f0-45bc-ac6c-6560ade56726",
+      "content_type": "manuscript",
+      "content_text": "# Synchronized excitability in a network enables generation of internal neuronal sequences\n\n## Authors\n\n- Yingxue Wang<sup>1</sup>\n- Zachary Roth<sup>1</sup>\n- Eva Pastalkova<sup>1</sup> ([ORCID: 0000-0001-5518-9590](https://orcid.org/0000-0001-5518-9590)) \u2020\n\n### Affiliations\n\n1. Janelia Farm Research Campus, Howard Hughes Medical Institute Ashburn United States\n2. Department of Mathematics University of Nebraska-Lincoln Lincoln United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHippocampal place field sequences are supported by sensory cues and network internal mechanisms. In contrast, sharp-wave (SPW) sequences, theta sequences, and episode field sequences are internally generated. The relationship of these sequences to memory is unclear. SPW sequences have been shown to support learning and have been assumed to also support episodic memory. Conversely, we demonstrate these SPW sequences were present in trained rats even after episodic memory was impaired and after other internal sequences \u2013 episode field and theta sequences \u2013 were eliminated. SPW sequences did not support memory despite continuing to \u2018replay\u2019 all task-related sequences \u2013 place- field and episode field sequences. Sequence replay occurred selectively during synchronous increases of population excitability -- SPWs. Similarly, theta sequences depended on the presence of repeated synchronized waves of excitability \u2013 theta oscillations. Thus, we suggest that either intermittent or rhythmic synchronized changes of excitability trigger sequential firing of neurons, which in turn supports learning and/or memory.\n\n## Introduction\n\nSequences generated in the absence of sensory cues have been observed in various cortical areas, basal ganglia, and the hippocampus (Wilson and McNaughton, 1994; N\u00e1dasdy et al., 1999; Louie and Wilson, 2001; Dragoi and Buzs\u00e1ki, 2006; O\u2019Neil et al., 2006; Foster and Wilson, 2006; Ji and Wilson, 2007; Lee and Wilson, 2002; Pastalkova et al., 2008; Luczak et al., 2009; Peyrache et al., 2009; Havenith et al., 2011; Harvey et al., 2012; Xu et al., 2012; Carrillo-Reid et al., 2015; Markowitz et al., 2015; Mello et al., 2015). These internally generated sequences seem to support mental functions such as cognitive planning, motor planning, visual memory, and episodic memory. It has been suggested that the composition of these internal sequences reflects the synaptic connectivity of the network, first, because the formation of internal sequences frequently requires learning (Gill et al., 2011; Xu et al., 2012) and, second, because similar sequences can be repeated in the absence of prominent sensory cues (Wilson and McNaughton, 1994; Ji and Wilson, 2007; Pastalkova et al., 2008; Carrillo-Reid et al., 2015; Markowitz et al., 2015).\n\nThe hippocampus generates internal sequences that play out over the timescale of tens of milliseconds. Theta sequences are generated during running (Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006), and sharp-wave (SPW) sequences are generated during pauses between runs and during sleep (N\u00e1dasdy et al., 1999; Ji and Wilson, 2007). The hippocampus also produces seconds-long internal sequences during running \u2013 episode field sequences (Pastalkova et al., 2008). Episode field sequences might appear to be like place field sequences (O\u2019Keefe and Dostrovsky, 1971); but unlike place field sequences, episode field sequences are formed independently of sensory cues and only during memory tasks (Wang et al., 2015).\n\nEach of these internal sequences was generally accepted as being necessary for learning and/or episodic memory tasks such as delayed left-right alternation or radial arm maze tasks. For example, elimination of SPWs impaired learning of these tasks (Girardeau et al., 2009; Dupret et al., 2010; Ego-Stengel and Wilson, 2010; Jadhav et al., 2012) and elimination of theta sequences and episode field sequences was accompanied by learning impairment as well as the loss of episodic memory in well-trained animals (Robbe et al., 2006; Wang et al., 2015).\n\nHow do internal sequences support learning? One hypothesis suggests that the waking experience of animals is reactivated during SPW events and that this reactivation strengthens connections within the hippocampal network and/or transfers the newly acquired information into the cortex (Buzs\u00e1ki, 1986). Supportive of this hypothesis, place cells tend to fire during SPWs in an order that is similar to the order in which place fields of the same cells are organized in space, a phenomenon called \u2018replay\u2019 of waking experience (Wilson and McNaughton, 1994; N\u00e1dasdy et al., 1999; Foster and Wilson, 2006). Similarly, it has been suggested that the fast succession of firing during theta sequences might trigger synaptic plasticity (Skaggs et al., 1996).\n\nAn important unresolved question, however, is whether SPW sequences, like theta sequences, support not only the learning of a new task but also the performance of a previously learned episodic memory task. To address this question, we first characterized the replay of SPW sequences during an already learned episodic memory task \u2013 a delayed left-right alternation task \u2013 and then took advantage of the fact that medial septum (MS) inactivation strongly impairs episodic memory (Chrobak et al., 1989; Mizumori et al., 1990) but leaves the local-field potential SPW events intact (Buzs\u00e1ki, 1984). We asked whether SPW sequences were preserved during SPW events once episodic memory was eliminated.\n\nFirst, we show that under normal conditions SPW replay was not limited to sequences that were accompanied by sensory cues, that is, to place field sequences. Rather, SPW sequences also replayed episode field sequences. Place and episode cell sequences were replayed with comparable frequency and their replay was not biased by the current position of the animal or by the previous or future choice of the maze arm. Next, we show that SPW replay of both place field and episode field sequences was preserved after MS inactivation, suggesting that SPW sequences could not support episodic memory of animals after other internal sequences such as theta and episode field sequences were eliminated. Importantly, this data demonstrates that the replay of episode field sequences during SPWs was preserved even after the episode field sequences themselves were eliminated during wheel running. Thus, we suggest that SPW sequences reflect a preserved synaptic structure of the network rather than the memory of recent events.\n\nThe fact that despite their similarity to theta and episode\u00a0field sequences, only SPW sequences survived after MS inactivation made us wonder whether a specific mechanism is required to activate sequences in a network, a mechanism that perhaps remained uninterrupted during SPWs. We show that replay of place\u00a0field and episode\u00a0field sequences were generated exclusively during SPW events, during the short periods when the excitability of a large population of neurons suddenly increased. Interestingly, one of the effects of the MS inactivation was elimination of such synchronized changes of excitability during running (i.e., elimination of theta oscillations). Thus, we hypothesize that these isolated or repetitive waves of synchronously rising and decreasing excitability among a large population of neurons are necessary to activate internally generated sequences.\n\n## Results\n\n### Internal hippocampal sequences are replayed during sharp-waves\n\nSPW sequences are thought to play an important role in learning (Buzs\u00e1ki, 1989, 2015), in part, because neuronal sequences with an order highly similar to place field sequences are replayed during SPWs. First we asked whether episode field sequences, which are internally generated and do not rely on external cues, are also replayed during SPWs.\n\nWe analyzed the neuronal activity and local field potentials recorded in the hippocampal CA1 field of three rats performing a delayed alternation task (Figure 1A top, Carr, 1917; Tolman, 1925; Mizumori et al., 1990; Ainge et al., 2007; Wang et al., 2015, 2016). We identified episode field sequences generated during wheel running (Figure 1A-purple, Pastalkova et al., 2008) and place field sequences in the arms of the maze (Figure 1A-green). We also identified all the SPW events (Figure 1B top) generated in the reward and delay areas of the maze (Figure 1A \u2013 orange, speed < 3 cm/s; Csicsvari et al., 2000). As shown before, 5\u201320% of SPW sequences were highly correlated with the sensory-cue-guided place field sequences identified in the arms of the maze (Figure 1B,C \u2013 orange/green, median = 9%; z-score= 3.5\u20139; median z-score= 4.5; Ji and Wilson, 2007; Foster and Wilson, 2006; Diba and Buzs\u00e1ki, 2007). Interestingly, about 4.3\u201316.7% of SPW sequences were also significantly correlated with the episode field sequences (Figure 1B,C \u2013 orange/purple; median = 10.25%; z-score= 3.1\u20137.8, median z-score= 4.7, p<0.01). SPW sequences correlated with place or episode field sequences did not show any spatial bias, suggesting they were not strongly influenced by recently traveled trajectories in the maze. (44.8 \u00b1 2.9% of all SPW- sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area . 51.2 \u00b1 4% of all SPW sequences significantly correlated with the place field sequence in the right maze arm were generated in the left reward area , n = 8 recordings from 3 animals.) The percentage of significant sequences also was not correlated with the performance of animals (Pearson correlation: Pre: r=0.34, p=0.25). This data shows that internal sequences (i.e. episode field sequences) are replayed during SPW events with equal probability as sequences strongly influenced by sensory cues (i.e. place field sequences). This suggests that SPW sequences reveal synaptic structure underlying not only place field sequences but also episode field sequences. Also, this data suggests that SPW sequences do not clearly reflect an animal's most recent choices and experiences.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20697/elife-20697-fig1-v4.jpg)\n\n**Figure 1.:** (A) An alternation task maze. Purple: an example episode field sequence. Green: an example place field sequence. Each dot represents the peak of an episode/place field. (B) An example SPW event. Orange/purple: example SPW sequences correlated with the example episode field sequence. Orange/green: example SPW sequences correlated with the example place field sequence. Each dot represents a spike. (C) Percentage of SPWs with sequences significantly correlated with episode field (top) and place field (bottom) sequences. Red line: median, error bars: 95%-tile. Dash line: 2SD.\n\n### SPW sequences were present even after memory loss\n\nSince SPW sequences did not directly reflect recent experiences, we asked whether SPW replay could support episodic memory of animals even after internal sequences such as theta and episode field sequences were eliminated (Wang et al., 2015). First, we checked the local field potential to determine whether the hippocampal network was able to generate SPW events even after the MS inputs into hippocampus were inhibited (Buzs\u00e1ki, 1984). SPW events were reliably generated (Figure 2A) during reward consumption and during short periods of rest in the delay area of the maze (Figure 1A-orange, 2B). After the inactivation, SPW events occurred more frequently (Figure 2C, Kruskal-Wallis, p=5.7 * 10 e-5, n = 13), recruited more neurons (Figure 2D, KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997), and tended to have more spikes per neuron (Figure 2E, KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997) even though the duration of the SPW events did not change (Figure 2F, KS-test = 0.08; p>> 0.05). Thus, SPW events were more frequent and stronger after MS inactivation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20697/elife-20697-fig2-v4.jpg)\n\n**Figure 2.:** (A) Example SPW event before (black) and after (blue) the inactivation. (B) Locations of SPW events before (left) and after (right) the inactivation. (C) Frequency of SPW events before (Pre) and after (Musc) the inactivation. (D) Number of active neurons during SPW events. (E) Number of spikes during SPW events. (F) Duration of SPW events.\n\nWas replay of place and episode field sequences still present after MS inactivation even though the performance of animals in the task was degraded (Chrobak et al., 1989; Mizumori et al., 1990; Wange et al., 2015)? We compared the order of episode field sequences from before the inactivation(Figure 3A, left - purple) with the order of SPW sequences from after the inactivation (Figure 3A, right - blue/purple). We found that SPW sequences whose orders were highly similar to the pre-inactivation episode field sequences were not eliminated by the inactivation. In fact, after inactivation, a slightly higher percentage of eligible SPW sequences was significantly correlated with episode field sequences (Figure 3B; n = 10 recordings; z-score(Pre) = 4.1 \u00b1 0.4, z-score(Musc) = 6.7 \u00b1 0.9; Kruskal-Wallis, p=0.023). The same held true for the SPW sequences correlated with place field sequences (Figure 3E; n = 8 recordings; z-score(Pre) = 5 \u00b1 0.7; z-score(Musc) = 8.5 \u00b1 0.9; Kruskal-Wallis, p=0.016). Both place and episode field sequences were replayed at close to a constant rate during the entire recording following MS inactivation (Figure 3C,F), and the mean number of neurons activated during the replay of the place and episode field sequences did not change after the inactivation (Episode cells: Pre: 8.17 neurons, Musc: 8.73 neurons; Place cells: Pre: 5.96 neurons, Musc: 5.28 neurons). This was the case even though the episode field sequences observed during wheel running were eliminated after MS inactivation (Wang et al., 2015). Correspondingly, there was no significant correlation between the frequency of replay occurrence and the performance of animals (Figure 4A, Pre: r = 0.34 p=0.25, Musc: r = \u22120.19 p=0.53). Also, we did not observe any significant decrease in the sequence replay during error trials (Figure 4B, Correct trials: Pre: 0.22 Hz \u00b1 0.014, Musc: 0.32 Hz \u00b1 0.024. Error trials: Pre: 0.5 Hz \u00b1 0.08, Musc: 0.85 Hz \u00b1 0.25). As before the injection, SPW sequences that were correlated with pre-inactivation place and episode field sequences did not show clear spatial bias, suggesting that they were not strongly influenced by recently traveled trajectories in the maze. (56 \u00b1 6.6% of all SPW sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area. 63 \u00b1 8.4% of all SPW sequences significantly correlated with the place field sequence in the right maze- arm were generated in the left reward area, n = 8 recordings from 3 animals). Thus, this data further confirms that SPW replay of episode and place field sequences does not support episodic memory in trained animals (Wang et al., 2015) and likely reflects the structure of the network rather than the recent activity in the network.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20697/elife-20697-fig3-v4.jpg)\n\n**Figure 3.:** (A) Left: Example episode field sequence before (purple) and after (blue/purple) MS inactivation. Right: example SPW sequences correlated with the pre-injection episode field sequence recorded before (orange/purple) and after (blue/purple) MS inactivation. (B) Normalized percentage of SPW events with episode field replay before (Pre) and after (Musc) MS inactivation. Dash line: 2SD. (C) Percentage of SPW events with episode field replay in time since the start of the recording. (D\u2013F) the same as A\u2013C but for place field sequences.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20697/elife-20697-fig4-v4.jpg)\n\n**Figure 4.:** (A) Relationship between animal performance in the task and percentage of significant sequence replay before (Pre) and after (Musc) MS injection. (B) Frequency of sequence replay before (x-axis) and after (y-axis) MS injection plotted separately for correct (red) and erroneous (red) trials. Each dot represents the mean of correct/erroneous trials from one recording.\n\n### Synchronized wave of excitability in a population of neurons is necessary for the generation of internal sequences\n\nAfter MS inactivation, internal sequences (e.g., episode field and theta sequences) were eliminated during running, i.e., during theta brain state (Wang et al., 2015). Conversely, highly similar sequences formed by physically identical neurons were preserved during reward consumption, i.e., during SPW brain state. What was the reason one set of these sequences was affected by MS inactivation while the other one remained unchanged? One common feature of the observed internal sequences (i.e., theta and SPW sequences) is that they coincide with synchronized changes in the excitability of a large population of neurons: individual troughs of theta oscillations and SPW events (Figure 5A \u2013 red traces, 4B-C; N\u00e1dasdy et al., 1999; Louie and Wilson, 2001; Dragoi and Buzs\u00e1ki, 2006; Ji and Wilson, 2007; Schmidt et al., 2009). Is such a synchronous change in excitability necessary for the generation of theta and SPW sequences? Our previous data supports this hypothesis since theta sequences were eliminated along with the waves of excitability \u2013 theta oscillations \u2013 after MS inactivation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20697/elife-20697-fig5-v4.jpg)\n\n**Figure 5.:** (A) Left: example electrode-signal with theta oscillations. One theta cycle is magnified (red). Right: example SPW event. (B) Left: example sequences generated during individual cycles of theta oscillations that were correlated with episode field (brown/purple) and place field (brown/green) sequences. Right: example SPW sequences correlated with episode field (orange/purple) and place field (orange /green) sequences. (C) Normalized percentage of theta cycles and SPW events that contained sequences significantly correlated with episode field (top) and place field (bottom) sequences. Dash line: 2SD. (D) The method used to detect replay in between SPW events. (E) Normalized percentage of time windows that contained sequences significantly correlated with episode field (purple) and place field (green) sequences in between SPWs.\n\nTo further address this question, we reasoned that if the excitatory drive is necessary to generate sequences, we should not see replay of place field and episode field sequences between SPWs. To test this hypothesis we searched for sequences with a similar composition to the place field and episode field sequences throughout the entire time period of reward except for the periods when SPWs occurred (Figure 5D, speed <3 cm/s, excluding SPW events, see Materials and methods). However, we did not find such sequences with a probability higher than chance within a collection of 1822 time periods with sufficient neuronal activity to be able to detect such sequences (Figure 5E, episode field sequence replay z-score= \u22120.2 \u00b1 0.23; place field sequence replay z-score= \u22120.15 \u00b1 0.25; mean: 240 \u00b1 49 time periods per recording; see Materials and methods). This data shows that both theta sequences and SPW sequences are generated exclusively at the times periods of temporally increased population excitability.\n\n## Discussion\n\nSPW sequences were surmised to be necessary for memory, route planning, and learning (Buzs\u00e1ki, 1989, 2015; Girardeau et al., 2009; Dupret et al., 2010; Ego-Stengel and Wilson, 2010; Jadhav et al., 2012; Pfeiffer and Foster, 2013), in part, because selective perturbation of SPWs in untrained animals impaired the speed with which animals learned to perform an episodic memory task. This impairment was observed even though other internal sequences such as theta sequences were preserved (Jadhav et al., 2012). Therefore, SPW sequences are considered key physiological phenomena supporting rodent navigation and memory storage. Can we thus assert that the presence of SPW sequences predicts memory performance of an animal? Based on our data, the answer is no: SPW sequences were fully preserved in animals that could not perform an episodic memory task. It should be noted that the impact of the MS inactivation is rather broad as it affects theta oscillations, theta sequences, hippocampal cholinergic input and spatial selectivity of grid cells. Given our data and the results of others (Girardeau et al., 2009; Dupret et al., 2010; Ego-Stenget and Wilson, 2010; Jadhav et al., 2012), it is possible that SPW sequences are required only for learning but are not necessary once the environment and the task have become familiar. In contrast, theta oscillations, theta sequences, and episode field sequences seem to be necessary during learning as well as during performance of well-trained episodic memory tasks (Landfield et al., 1972; Berry and Thompson, 1978; Winson, 1978; Mitchell et al., 1982; Mizumori et al., 1990; M'Harzi and Jarrard, 1992; Robbe et al., 2006; Wang et al., 2015). Since general spatial memory of animals was not impaired after MS inactivation, as evidenced by the fact animals understood the location of the water ports, did not re-explore the maze as if it were a novel environment and remembered the procedure of the task, it is possible that neither theta sequences nor episode field sequences are necessary to make use of already established long-term spatial memory (Hepler et al., 1985; Shen et al., 1996). In contrast, theta and episode field sequences might be necessary for the instantaneous formation and recall of episodic memories such as which arm the animal just visited.\n\nThe hippocampal network was able to generate SPW sequences that were highly similar to episode field sequences even after the latter sequences were abolished. We wondered whether there is a mechanism that helped CA1 to 'read out' the network structure during SPWs that was perhaps eliminated by MS inactivation during theta state. Our data shows that SPW sequences were selectively generated when the excitability of a large portion of a network was temporarily increased, likely due to synchronized excitatory inputs from CA3 (Buzs\u00e1ki, 1986; Csicsvari et al., 2000). Similarly, others have shown that optical stimulation of CA1 region triggers SPW-like events that are accompanied by sequential firing of neurons (Stark et al., 2015). Thus, could such a synchronized excitability increase be required to generate theta sequences? One of the effects of the medial septum inactivation was the elimination of synchronized changes of excitability during running, namely theta oscillations (Green and Arduini, 1954; Petsche et al., 1962; Stumpf et al., 1962). Therefore, we propose that the loss of theta sequences may be due to the lack of such excitability changes after MS inactivation. Overall, we hypothesize that either intermittent or rhythmic synchronized excitability changes are necessary to activate internally generated sequences and thus support memory (in case of theta sequences) and learning (in case of SPWs and theta sequences).\n\nHow could such synchronized changes in excitability enable the generation of internal sequences? First, the membrane potential of neurons is 2\u201310 millivolts below the spiking threshold during both theta and SPW brain states (Ylinen et al., 1995; Harvey et al., 2009; Bittner et al., 2015). The incoming wave of excitation arriving from CA3 and/or EC might synchronously increase the membrane potential among a large number of neurons, bringing all neurons closer to spiking at about the same time. The first neurons that fire during this wave of excitability likely activate local feed-forward inhibition and thus start to silence their 'competitor' principal neurons and dominate the activity of the network (Csicsvari et al., 1999; Wang et al., 2015; Romani and Tsodyks, 2015). Only after the competitor principal cells are silenced would these neurons be able to reliably activate their own post-synaptic principal neurons and thus trigger a sequential firing in the network.\n\nOur data indicates that no theta and SPW sequences were generated without excitatory waves even though there are many theoretical models that can produce sequences in the absence of a broad synchronizing input. However, these models usually utilize an alternative to such an excitatory wave, such as prominent sensory cue inputs that strongly stimulate a subset of neurons at the onset of each sequence (Tsodyks et al., 1996; Lisman et al., 2005), selective amplification of already strong synaptic connections that promotes activation of a subset of cells (Fiete et al., 2010), or very strong connectivity, which gives rise to a distinct region of high activity that perpetually activates itself due to asymmetry of connections, dynamic thresholds, or dynamic strength of synapses (Kleinfeld, 1986; Sampolinsky and Kanter, 1986; Horn and Usher, 1989; Hopfield, 2010; Itskov et al., 2011). We propose that synchronized waves of excitability are required for the generation of sequences in networks with no sensory inputs, with relatively weak connections and with relatively sparse activity (Wang et al., 2015; Romani and Tsodyks, 2015). Without such synchronized waves, the activity of the network is dominated by non-specific feed-forward inhibition that prevents activation of specific sequences.\n\nDifferent anatomical regions control the synchronized changes of excitability in CA1 during different brain states. SPWs are induced by inputs from the CA3 hippocampal sub-field (Buzs\u00e1ki, 1986; Csicsvari et al., 2000) while theta waves are controlled by inputs from CA3, MS, and the entorhinal cortex\u00a0(Kocsis et al., 1999). However, these synchronizing inputs still might recruit highly similar subpopulations of cells (Varga et al., 2012) and thus enable generation of highly similar sequences.\n\nIt has been shown that internal sequences are locked to individual cycles of rhythmic excitatory waves (oscillations) in other brain structures (Ji and Wilson, 2007; Luczak et al., 2009; Peyrache et al., 2009; Havenith et al., 2011; Harvey et al., 2012; Xu et al., 2012; Carrillo-Reid et al., 2015; Markowitz et al., 2015; Mello et al., 2015). Thus, the same mechanism for sequence generation might be utilized not only in the hippocampus but also in other brain regions.\n\nOverall, we show that SPW sequences were fully preserved even in animals with impaired episodic memory and suggest that the role of SPWs might be limited to the conditions under which the animal is learning a new environment or a new aspect of a task. In contrast, the loss of theta oscillations and the associated loss of theta sequences appear to hinder both learning as well as performance of an episodic memory task. In addition, we suggest that generation of internal hippocampal sequences such as theta and SPW sequences requires not only a network substrate structured due to past experiences but also synchronized changes in the excitability of large populations of neurons.\n\n## Materials and methods\n\nAll procedures were approved by the Janelia Farm Research Campus Institutional Animal Care and Use Committee. All data utilized in this study were previously used in Wang et al. (2015). All experimental procedures were described in detail in Wang et al. (2015). Here we describe data analysis methods specific for this work. No statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in previous publications. We used non-parametric statistical methods to reduce the effect of the small sample size.\n\n### SPW detection\n\nSPW events were identified based on their signature shape: positive-going LFP in the deep CA1 pyramidal layer and negative-going LFP in the superficial CA1 pyramidal layer (Figure 1b). Specifically, we calculated the difference between the raw LFP traces recorded from the deep and superficial CA1 and subtracted the running average calculated with a 0.5 s time window. Then we smoothed the resulting trace with a Gaussian kernal (SD = 5ms) and computed z-score. We detected individual SPW events by thresholding the smoothed trace at 4 SD and refined the start and the end time point of each event by thresholding at 1.25 SD. Finally, we extended the start and end times of each detected event in case the mean firing rate of the multi-unit activity was above 70Hz. All SPW events that were shorter than 25 ms or longer than 250 ms were excluded.\n\n### SPW sequence detection\n\nAll spikes generated by any reliably identified neuron (spikes belonging to well isolated clusters defined as being more than 20 SD from the noise cluster) that were generated within the time period of a SPW were identified. We subselected all SPW events with more than 5 active neurons. Then we adapted the \u2018score\u2019 method (Gupta et al., 2010, 2012; Wang et al., 2015) in order to identify SPW sequences that followed approximately the same order as place and episode field sequences (see Step 1 and 2 described below). In addition, we also used \u2018global statistics\u2019 in order to eliminate those recordings in which in the pre-muscimol session the detected percentage of significant sequences was lower than or equal to shuffled data (Wang et al., 2015). This step enabled us to eliminate recordings that did not have sufficient frequency of sequences replay before the manipulation. Step 1: in this step we derived a sequence score for each SPW event. The sequence score described how similar the order of spikes within that SPW event was to the order of place/episode fields of the same neurons. Specifically, for each pair of spikes we added '+1' to the sequence score, if the order of spikes was the same as the order of the episode/place cell sequence. Otherwise, we added '\u20131'. The sum of scores across all pairs of spikes within the time window determined the sequence score.\n\nStep 2: in this step we determined whether a specific sequence was similar to a template place/episode field sequence above chance level by comparing the calculated sequence score to the distribution of scores obtained from randomly shuffled SPW sequences. We shuffled spikes within the SPW events by randomly reassigning the identity of each spike to a neuron which was active in the current SPW event, while preserving individual spike timing and re-calculated the sequence score as described in Step 1. This method shuffled both the identity of the cells and the order of spikes. The shuffling was repeated 10,000 times. If the original sequence score was > 97.5% or < 2.5% of the shuffled sequence scores, then the sequence was considered a significant sequence. This means only sequences with p strictly < 0.05 (including both, positive and negative replay) were considered significant sequences.\n\nFinally, we performed global statistics on each recording by asking whether in the pre-muscimol session the percentage of significant sequences we found in our data was larger than 95% of the percentages of significant sequences we found among the entire population of shuffled sequences generated in steps 1 and 2 (Sup. Fig. 17 in Wang et al., 2015). This analysis partially compensated the differences in the significant sequence detection due to the choice of more liberal or restrictive shuffling procedures.\n\nIn the end, to account for the fact that different shuffling procedures result in different percentage of significant sequences and different chance levels, we chose to plot results as z-scores rather than as percentages. This step controlled for the specific choice of a more liberal or restrictive shuffling procedure:\n\n$$\nz-score=(%ofSPWsequencesobservedinthedata\u2212mean%ofSPWsequencesobservedintheshuffleddata)/(STD%ofSPWsequencesobservedintheshuffleddata)\n$$\n\nSince pyramidal neurons can burst during SPWs, shuffling the cell identity of each spike independently can break the spike statistics and lower the threshold for significant sequences. Therefore, we re-ran our analysis after we replaced each burst with the first spike of the burst. However, we obtained the same results as before.\n\nFinally, we also re-ran the analysis with a less permissive shuffling procedures: first, we only shuffled the identity of cells within each SPW event and, second, we shuffled the identity of cells and the times of all spikes while preserving the inter-spike intervals among the spikes generated by individual cells. We followed each of these shuffling procedures with global statistics as described above. Both shuffling procedures resulted in the same overall results, that is, the replay of both place and episode field sequences was present before and after septal inactivation.\n\n### Sequence replay search outside of SPW events (Figure 5e)\n\nFirst, we detected time periods during which an animal was in one of the reward areas, was moving with the speed < 3 cm/s, and was not generating any SPW events (detected as described above). We slid a time window of the length of an average SPW event along these isolated reward periods. Once we found a time period with at least the minimal number of active neurons and the minimal number of spikes that enabled us to reach a significance level smaller than 0.05, we used the step 1 and 2 described in 'SPW sequence detection' section to detected sequences that were similar to one of the template sequences. Note, in this analysis we skipped over those time periods in which we previously detected SPW events.\n",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f74d4d54-990f-4987-a69e-0b3c5689a3a3",
+      "submission_id": "ab43e3f0-63f0-45bc-ac6c-6560ade56726",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Howard Eichenbaum, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20697.013](https://doi.org/10.7554/eLife.20697.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Synchronized excitability in a network enables generation of internal neuronal sequences\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The reviewers have opted to remain anonymous.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nOverall the reviewers found the study quite interesting and potentially important. However, there were also major concerns, especially about the method for detecting replay events and that ripple associated replay under MS inactivation alone is a rather expected result. Detailed comments are provided below.\n\nReviewer #1:\n\nYingxue, Roth, and Pastakova recorded spiking and local field potential data from CA1 in rats as they traversed an alternation task. The task required the animal to run on a 'running wheel' during the delay period. The authors have several main findings. First, they report that episode field sequences are replayed during sharp wave ripples with a similar consistency as place field sequences. Second, they show that muscimol inactivation of the medial septum (which reduces theta oscillations) did not block the occurrence of sharp wave ripples \u2013 in fact, the number of ripples increased. Third, they show that replay of place field sequences and episode field sequences were preserved during ripples in the muscimol condition (despite the disruption of episode field sequences during muscimol inactivation). Finally, the authors show that replay events of place field and episode field sequences are generally restricted to sharp wave ripple events.\n\nIn general I find the paper will be interesting to many, but I feel that the conclusions drawn by the authors about the role of sharp wave ripples in memory is grandiose. The authors point to prior reports that selective elimination of sharp wave ripples disrupt memory performance and consolidation. They then frame muscimol inactivation as a method to test memory while preserving sharp wave ripples to test whether sharp wave ripples are sufficient to support memory. The authors state that since muscimol inactivation disrupts memory performance, then sharp-wave ripple activity is not sufficient to support memory. I cannot understand why this is an interesting conclusion \u2013 and I feel that the authors have reached too far here. Muscimol inactivation of the septum does many things to hippocampal and entorhinal physiology including the reduction or elimination of 1) theta oscillations, 2) cholinergic input, 3) speed modulated input, 4) theta sequences, 5) episode/time fields, 6) spatial selectivity of grid cell input, 7) theta cycle skipping of HD cells. With so much disrupted it\u2019s almost meaningless to say that the one or two things that remain intact are not sufficient for memory performance. An analogy would be to remove 90% of a car engine and conclude that the transmission alone isn't enough for the car to operate. At a minimum I would suggest the authors discuss this point in detail.\n\nThe authors also conclude that sharp wave ripples might then be needed for learning. Using their own logic, do the authors predict that learning will be intact during septal inactivation? This seems incredibly unlikely. While I agree that sharp wave ripples may be needed for learning (didn't Wilson et al. 1994 say this?) I don't think the data presented here addresses this point at all.\n\nThe most interesting parts of this paper are that 1) there is replay of episode fields, 2) replay in conserved during septal inactivation, 3) replay of episode fields is conserved even though episode fields are disrupted during septal inactivation. I think the authors need to focus on these points and probably forget about their discussion of memory. On a positive note, I did appreciate the discussion on how a \"wave of excitability\" could generate a sequence.\n\nReviewer #2:\n\nThis manuscript observed place cell sequences during sharp wave ripples (SPW-Rs) under the suppression of the medial septum during a delayed alternation task. Septal inhibition increased the incidence of SPW-Rs and increased the error rates of the animal (as reported in their previous paper). Therefore, the authors suggest that sequence reactivation during SPW-Rs is not sufficient for the animal to perform the delayed alternation task. The work is potentially significant, however, they need to address several technical questions.\n\n1) According to their previous paper, septal inhibition increased the error rate but the animal still showed a bias to choose the correct arm. Therefore, it is important to show that, during error trials, sequences reactivation can still be seen.\n\n2) Is there a correlation between the error rate observed in a session and quality of sequence reactivation?\n\n3) Although SPW-R may not be needed for memory recall, it is possible that they may reflect the arm choice of the animal. Therefore, it is needed to be quantified whether reactivated sequences reflect preferentially the past or future choice of the animal under septal inhibition. They report these for the before inactivation case but their description is confusing. This data needs to be described better and I think it would also deserve a separate figure considering that it may not agree with previous work.\n\n4) SPW-Rs were not detected the 'usual way', in fact they detected high synchrony periods and the Methods section does explain how it was verified whether indeed ripples were present during these periods. According to Figure 4E no sequences were detected outside SPW-Rs. Does it mean that high synchrony periods with low ripple power did not contain sequences? Again, if this was the case, it is surprising and it does not agree with past work that usually shows a 10-20% correspondence between SPW-Rs and high synchrony periods.\n\nReviewer #3:\n\nIn this study, the authors examine the effect of inactivation of the medial septum (MS) on the generation of sequential patterns of activity across ensembles of hippocampal CA1 neurons in the context of a dual arm alternation memory task, modified to include a running wheel. This work builds on prior work by the same group (Wang et al., 2015) and it represents new analyses performed on this same data set. The main findings reported by the authors include 1) the observation that episode field sequences are \"replayed\" during sharp wave ripple LFP events at rate that is higher than would be expected by chance and similar to the rate of place field sequence replay. 2) Inactivation of MS using muscimol does not abolish SPW replay of event/place field sequences, in fact it increases the occurrence of these replay events. However, I believe that the statistics employed to detect replay events are flawed, and thus I do not believe that the data supports the main claims of the paper. I outline the nature of my concerns below.\n\nThough one has to dig through the previous paper to understand the methods for detecting sequences of firing on small time scales that are similar to sequences of firing on longer timescales, I believe I understand the analysis steps taken by the authors, and I believe they are problematic. The authors first detect episode/place field sequences as described in Wang 2015. They derive from these sequences an ordered sequence of firing peaks across cells. To detect replay events, they then compute a sequence similarity score by comparing each pair of spikes recorded in different cells within a time window, adding 1 to a sequence score if the order of those two spikes is the same as the order of the peak firing rates in the episode/place field sequence, and adding -1 otherwise. To assess significance, the authors shuffle the cell identity of each spike, maintaining spike timing, across the active cells within the epoch. They do this 10,000 times to build a null distribution of sequence scores. If the observed sequence score falls outside of 95% of the shuffle-computed sequence scores, the authors identify the sequence as being significantly similar to the episode/place field sequence.\n\nHowever, it appears from the examples shown that there is often structure in the autocorrelation function of neurons' spiking, for example, neurons seem to burst in many identified sequences. By shuffling the cell identity of each spike independently, the authors break this feature of spiking statistics, inflating the significance of patterns they identify as sequences. For an extreme example, imagine two cells fire three spikes each in non-overlapping bursts, in the order found in the original episode/place field sequence. Shuffling spikes independently makes the particular observed sequence score unlikely by chance. However, if the autocorrelation function of the cells were to be preserved, that particular sequence score becomes very likely by chance, essentially those bursts of spikes would need to travel together in the reshuffling process. I think this is a huge problem for their data and conclusions.\n\nUnfortunately, for me, since much of the claims of the paper rely on accurately identifying replay events, these issues are a non-starter for considering the validity of the authors' conclusions. The authors would need to convince me that performing their shuffling procedure in a way that maintains the structure of the autocorrelation within neurons does not change their results for me to consider the paper further.\n",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "63839b58-888c-44ec-8295-67e5889fa189",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C1",
+      "claim": "Hippocampal place field sequences are supported by sensory cues and network internal mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal place field sequences are supported by sensory cues and network internal mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract presenting established knowledge about hippocampal place field sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "02f2c28b-b198-44e9-a0a0-ff8aa6427b12",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C2",
+      "claim": "Sharp-wave (SPW) sequences, theta sequences, and episode field sequences are internally generated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, sharp-wave (SPW) sequences, theta sequences, and episode field sequences are internally generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established scientific understanding of these sequence types.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "4dd68c5d-12ad-43b5-baff-7bd73deba912",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C3",
+      "claim": "SPW sequences have been shown to support learning.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences have been shown to support learning and have been assumed to also support episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior research findings about SPW sequences and learning.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "92ca7878-233a-4e93-9fd2-ad5ed80e9862",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C4",
+      "claim": "SPW sequences have been assumed to also support episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences have been shown to support learning and have been assumed to also support episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references an assumption in the field based on prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "a30ba9b5-ccf0-4178-ad0f-19a1895f27fd",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C5",
+      "claim": "SPW sequences were present in trained rats even after episodic memory was impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we demonstrate these SPW sequences were present in trained rats even after episodic memory was impaired and after other internal sequences \u2013 episode field and theta sequences \u2013 were eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0ba77172-474a-4d0e-b378-9893565d093e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C6",
+      "claim": "SPW sequences were present in trained rats after episode field and theta sequences were eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, we demonstrate these SPW sequences were present in trained rats even after episodic memory was impaired and after other internal sequences \u2013 episode field and theta sequences \u2013 were eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "1d353343-9857-44f8-9ba8-c7a18bbab2a2",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C7",
+      "claim": "SPW sequences did not support memory despite continuing to 'replay' all task-related sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences did not support memory despite continuing to 'replay' all task-related sequences \u2013 place- field and episode field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing preserved replay without memory support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "136a7563-bb82-4ab3-8603-f428c7f72a30",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C8",
+      "claim": "SPW sequences replay place-field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences did not support memory despite continuing to 'replay' all task-related sequences \u2013 place- field and episode field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e08cb1da-fb99-4f3a-bd44-54e4e868721b",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C9",
+      "claim": "SPW sequences replay episode field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences did not support memory despite continuing to 'replay' all task-related sequences \u2013 place- field and episode field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e3eb8d3f-04fc-4ca2-bdd7-904322eef440",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C10",
+      "claim": "Sequence replay occurred selectively during synchronous increases of population excitability -- SPWs.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence replay occurred selectively during synchronous increases of population excitability -- SPWs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on analysis of when sequences occur.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "11d2319e-1a68-427b-bdfa-cb91e5a4f8cf",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C11",
+      "claim": "Theta sequences depended on the presence of repeated synchronized waves of excitability \u2013 theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, theta sequences depended on the presence of repeated synchronized waves of excitability \u2013 theta oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on observations of theta sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "34bd29cc-197b-4e25-a53c-6d8af3013eee",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C12",
+      "claim": "Either intermittent or rhythmic synchronized changes of excitability trigger sequential firing of neurons, which in turn supports learning and/or memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that either intermittent or rhythmic synchronized changes of excitability trigger sequential firing of neurons, which in turn supports learning and/or memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "29d67e76-90a5-44b6-bbf0-6917b11fe3fa",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C13",
+      "claim": "Sequences generated in the absence of sensory cues have been observed in various cortical areas, basal ganglia, and the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequences generated in the absence of sensory cues have been observed in various cortical areas, basal ganglia, and the hippocampus (Wilson and McNaughton, 1994; N\u00e1dasdy et al., 1999; Louie and Wilson, 2001; Dragoi and Buzs\u00e1ki, 2006; O'Neil et al., 2006; Foster and Wilson, 2006; Ji and Wilson, 2007; Lee and Wilson, 2002; Pastalkova et al., 2008; Luczak et al., 2009; Peyrache et al., 2009; Havenith et al., 2011; Harvey et al., 2012; Xu et al., 2012; Carrillo-Reid et al., 2015; Markowitz et al., 2015; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "6a80016d-0eef-4548-9e5a-a5c1e91e51c4",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C14",
+      "claim": "Internally generated sequences seem to support mental functions such as cognitive planning, motor planning, visual memory, and episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "These internally generated sequences seem to support mental functions such as cognitive planning, motor planning, visual memory, and episodic memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proposed functions of internal sequences based on prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "46ea59c5-f7d9-45bd-b2f4-7fb6e6a390f4",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C15",
+      "claim": "The composition of internal sequences reflects the synaptic connectivity of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the composition of these internal sequences reflects the synaptic connectivity of the network, first, because the formation of internal sequences frequently requires learning (Gill et al., 2011; Xu et al., 2012) and, second, because similar sequences can be repeated in the absence of prominent sensory cues (Wilson and McNaughton, 1994; Ji and Wilson, 2007; Pastalkova et al., 2008; Carrillo-Reid et al., 2015; Markowitz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and logical inference from those findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "cf58d226-386b-4545-ad5b-488689fdd2cd",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C16",
+      "claim": "The formation of internal sequences frequently requires learning.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the composition of these internal sequences reflects the synaptic connectivity of the network, first, because the formation of internal sequences frequently requires learning (Gill et al., 2011; Xu et al., 2012) and, second, because similar sequences can be repeated in the absence of prominent sensory cues (Wilson and McNaughton, 1994; Ji and Wilson, 2007; Pastalkova et al., 2008; Carrillo-Reid et al., 2015; Markowitz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "95f15e57-530b-4631-99c0-f30c8e459c90",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C17",
+      "claim": "Similar sequences can be repeated in the absence of prominent sensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that the composition of these internal sequences reflects the synaptic connectivity of the network, first, because the formation of internal sequences frequently requires learning (Gill et al., 2011; Xu et al., 2012) and, second, because similar sequences can be repeated in the absence of prominent sensory cues (Wilson and McNaughton, 1994; Ji and Wilson, 2007; Pastalkova et al., 2008; Carrillo-Reid et al., 2015; Markowitz et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e9c35042-539f-4b0e-9a56-f2e47e73303a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C18",
+      "claim": "The hippocampus generates internal sequences that play out over the timescale of tens of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus generates internal sequences that play out over the timescale of tens of milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hippocampal sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "d2bdb863-e247-4bcb-a5c3-8bdb670806d1",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C19",
+      "claim": "Theta sequences are generated during running.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta sequences are generated during running (Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006), and sharp-wave (SPW) sequences are generated during pauses between runs and during sleep (N\u00e1dasdy et al., 1999; Ji and Wilson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "d5771738-c953-4445-80e4-e7146c56fda2",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C20",
+      "claim": "Sharp-wave (SPW) sequences are generated during pauses between runs and during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Theta sequences are generated during running (Skaggs et al., 1996; Dragoi and Buzs\u00e1ki, 2006), and sharp-wave (SPW) sequences are generated during pauses between runs and during sleep (N\u00e1dasdy et al., 1999; Ji and Wilson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "069c4c8a-b857-466e-a591-4655b4141ece",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C21",
+      "claim": "The hippocampus produces seconds-long internal sequences during running \u2013 episode field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus also produces seconds-long internal sequences during running \u2013 episode field sequences (Pastalkova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c30cdb3d-5f29-4549-8c40-f96383930ede",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C22",
+      "claim": "Episode field sequences are formed independently of sensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Episode field sequences might appear to be like place field sequences (O'Keefe and Dostrovsky, 1971); but unlike place field sequences, episode field sequences are formed independently of sensory cues and only during memory tasks (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "29917e9e-c5ba-43a6-a8e5-b3ce7fe02f58",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C23",
+      "claim": "Episode field sequences are formed only during memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Episode field sequences might appear to be like place field sequences (O'Keefe and Dostrovsky, 1971); but unlike place field sequences, episode field sequences are formed independently of sensory cues and only during memory tasks (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "869a88ae-ed94-4e88-ba97-c9efb49b0d66",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C24",
+      "claim": "Internal sequences were generally accepted as being necessary for learning and/or episodic memory tasks such as delayed left-right alternation or radial arm maze tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these internal sequences was generally accepted as being necessary for learning and/or episodic memory tasks such as delayed left-right alternation or radial arm maze tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the general consensus in the field based on prior literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8eb6da5b-98fb-427a-8785-8e2db42498fe",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C25",
+      "claim": "Elimination of SPWs impaired learning of delayed left-right alternation or radial arm maze tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, elimination of SPWs impaired learning of these tasks (Girardeau et al., 2009; Dupret et al., 2010; Ego-Stengel and Wilson, 2010; Jadhav et al., 2012) and elimination of theta sequences and episode field sequences was accompanied by learning impairment as well as the loss of episodic memory in well-trained animals (Robbe et al., 2006; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "d61f26cf-a113-43d6-926f-2c5f66a539f1",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C26",
+      "claim": "Elimination of theta sequences and episode field sequences was accompanied by learning impairment as well as the loss of episodic memory in well-trained animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, elimination of SPWs impaired learning of these tasks (Girardeau et al., 2009; Dupret et al., 2010; Ego-Stengel and Wilson, 2010; Jadhav et al., 2012) and elimination of theta sequences and episode field sequences was accompanied by learning impairment as well as the loss of episodic memory in well-trained animals (Robbe et al., 2006; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "12254174-d68e-4a55-829a-e45277d27483",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C27",
+      "claim": "One hypothesis suggests that the waking experience of animals is reactivated during SPW events and that this reactivation strengthens connections within the hippocampal network and/or transfers the newly acquired information into the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "One hypothesis suggests that the waking experience of animals is reactivated during SPW events and that this reactivation strengthens connections within the hippocampal network and/or transfers the newly acquired information into the cortex (Buzs\u00e1ki, 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior literature supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "71e802c3-5c3e-48fb-93ee-3a3274be8f73",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C28",
+      "claim": "Place cells tend to fire during SPWs in an order that is similar to the order in which place fields of the same cells are organized in space, a phenomenon called 'replay' of waking experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Supportive of this hypothesis, place cells tend to fire during SPWs in an order that is similar to the order in which place fields of the same cells are organized in space, a phenomenon called 'replay' of waking experience (Wilson and McNaughton, 1994; N\u00e1dasdy et al., 1999; Foster and Wilson, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "ac4fe66c-9377-480c-a992-782af117731a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C29",
+      "claim": "The fast succession of firing during theta sequences might trigger synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, it has been suggested that the fast succession of firing during theta sequences might trigger synaptic plasticity (Skaggs et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from prior literature supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "40082227-2c64-4a48-9703-6c76a0753708",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C30",
+      "claim": "Medial septum (MS) inactivation strongly impairs episodic memory.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we first characterized the replay of SPW sequences during an already learned episodic memory task \u2013 a delayed left-right alternation task \u2013 and then took advantage of the fact that medial septum (MS) inactivation strongly impairs episodic memory (Chrobak et al., 1989; Mizumori et al., 1990) but leaves the local-field potential SPW events intact (Buzs\u00e1ki, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "2326e197-116f-48dd-9228-6d8034e3f9ef",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C31",
+      "claim": "Medial septum (MS) inactivation leaves the local-field potential SPW events intact.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we first characterized the replay of SPW sequences during an already learned episodic memory task \u2013 a delayed left-right alternation task \u2013 and then took advantage of the fact that medial septum (MS) inactivation strongly impairs episodic memory (Chrobak et al., 1989; Mizumori et al., 1990) but leaves the local-field potential SPW events intact (Buzs\u00e1ki, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0b1f89d4-5146-4b7f-8ebb-3a2ed6a21d0f",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C32",
+      "claim": "Under normal conditions SPW replay was not limited to sequences that were accompanied by sensory cues, that is, to place field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we show that under normal conditions SPW replay was not limited to sequences that were accompanied by sensory cues, that is, to place field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8cd1be94-b35a-4477-a90e-56fc6487308b",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C33",
+      "claim": "SPW sequences also replayed episode field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, SPW sequences also replayed episode field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "4cca0a17-667b-44db-81f2-a5f09e303d4b",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C34",
+      "claim": "Place and episode cell sequences were replayed with comparable frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Place and episode cell sequences were replayed with comparable frequency and their replay was not biased by the current position of the animal or by the previous or future choice of the maze arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "4085adf7-8ccd-4e18-988a-d6e8f0b96f72",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C35",
+      "claim": "Replay of place and episode cell sequences was not biased by the current position of the animal or by the previous or future choice of the maze arm.",
+      "claim_type": "EXPLICIT",
+      "source": "Place and episode cell sequences were replayed with comparable frequency and their replay was not biased by the current position of the animal or by the previous or future choice of the maze arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f6ef6942-7c38-40c1-8a3b-3eed686035ac",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C36",
+      "claim": "SPW replay of both place field and episode field sequences was preserved after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we show that SPW replay of both place field and episode field sequences was preserved after MS inactivation, suggesting that SPW sequences could not support episodic memory of animals after other internal sequences such as theta and episode field sequences were eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "b709a641-a48e-409e-b022-73aafdcd92c2",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C37",
+      "claim": "SPW sequences could not support episodic memory of animals after other internal sequences such as theta and episode field sequences were eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we show that SPW replay of both place field and episode field sequences was preserved after MS inactivation, suggesting that SPW sequences could not support episodic memory of animals after other internal sequences such as theta and episode field sequences were eliminated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental data showing preserved SPW sequences without memory support.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "eea7a58e-e5de-431d-bd9c-2a85ad8d2bc7",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C38",
+      "claim": "The replay of episode field sequences during SPWs was preserved even after the episode field sequences themselves were eliminated during wheel running.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this data demonstrates that the replay of episode field sequences during SPWs was preserved even after the episode field sequences themselves were eliminated during wheel running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "ad291758-5cb4-4bde-9a4e-17590399502a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C39",
+      "claim": "SPW sequences reflect a preserved synaptic structure of the network rather than the memory of recent events.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that SPW sequences reflect a preserved synaptic structure of the network rather than the memory of recent events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "3df06b5e-6797-4950-adc1-265ad7be6cac",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C40",
+      "claim": "Replay of place field and episode field sequences were generated exclusively during SPW events, during the short periods when the excitability of a large population of neurons suddenly increased.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that replay of place field and episode field sequences were generated exclusively during SPW events, during the short periods when the excitability of a large population of neurons suddenly increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "4e81185b-64b3-4765-a823-f8e7827d8c87",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C41",
+      "claim": "One of the effects of the MS inactivation was elimination of such synchronized changes of excitability during running (i.e., elimination of theta oscillations).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, one of the effects of the MS inactivation was elimination of such synchronized changes of excitability during running (i.e., elimination of theta oscillations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0dc85367-85c7-4872-bb66-d23b019dce97",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C42",
+      "claim": "Isolated or repetitive waves of synchronously rising and decreasing excitability among a large population of neurons are necessary to activate internally generated sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we hypothesize that these isolated or repetitive waves of synchronously rising and decreasing excitability among a large population of neurons are necessary to activate internally generated sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e0029ae5-271a-4df5-9bd9-9187f0b6e998",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C43",
+      "claim": "5\u201320% of SPW sequences were highly correlated with the sensory-cue-guided place field sequences identified in the arms of the maze (median = 9%; z-score= 3.5\u20139; median z-score= 4.5).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown before, 5\u201320% of SPW sequences were highly correlated with the sensory-cue-guided place field sequences identified in the arms of the maze (Figure 1B,C \u2013 orange/green, median = 9%; z-score= 3.5\u20139; median z-score= 4.5; Ji and Wilson, 2007; Foster and Wilson, 2006; Diba and Buzs\u00e1ki, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "a1f2e59f-5615-46e2-9028-6d7516a6a80d",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C44",
+      "claim": "About 4.3\u201316.7% of SPW sequences were significantly correlated with the episode field sequences (median = 10.25%; z-score= 3.1\u20137.8, median z-score= 4.7, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, about 4.3\u201316.7% of SPW sequences were also significantly correlated with the episode field sequences (Figure 1B,C \u2013 orange/purple; median = 10.25%; z-score= 3.1\u20137.8, median z-score= 4.7, p<0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "81f66c15-d716-43f9-8536-d353020ef56d",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C45",
+      "claim": "SPW sequences correlated with place or episode field sequences did not show any spatial bias.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences correlated with place or episode field sequences did not show any spatial bias, suggesting they were not strongly influenced by recently traveled trajectories in the maze.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "17431b26-9ab4-428e-a812-3efca7b89ba0",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C46",
+      "claim": "44.8 \u00b1 2.9% of all SPW- sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area.",
+      "claim_type": "EXPLICIT",
+      "source": "(44.8 \u00b1 2.9% of all SPW- sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area . 51.2 \u00b1 4% of all SPW sequences significantly correlated with the place field sequence in the right maze arm were generated in the left reward area , n = 8 recordings from 3 animals.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f8b58401-4d49-4aff-a23d-1762b8f04c44",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C47",
+      "claim": "51.2 \u00b1 4% of all SPW sequences significantly correlated with the place field sequence in the right maze arm were generated in the left reward area.",
+      "claim_type": "EXPLICIT",
+      "source": "(44.8 \u00b1 2.9% of all SPW- sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area . 51.2 \u00b1 4% of all SPW sequences significantly correlated with the place field sequence in the right maze arm were generated in the left reward area , n = 8 recordings from 3 animals.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e3b5ffa3-3d45-4771-9afc-32d74ffa1940",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C48",
+      "claim": "The percentage of significant sequences was not correlated with the performance of animals (Pearson correlation: Pre: r=0.34, p=0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "The percentage of significant sequences also was not correlated with the performance of animals (Pearson correlation: Pre: r=0.34, p=0.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "aec6b2c4-ca65-4c29-9b42-66d10cd18fd9",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C49",
+      "claim": "Internal sequences (i.e. episode field sequences) are replayed during SPW events with equal probability as sequences strongly influenced by sensory cues (i.e. place field sequences).",
+      "claim_type": "EXPLICIT",
+      "source": "This data shows that internal sequences (i.e. episode field sequences) are replayed during SPW events with equal probability as sequences strongly influenced by sensory cues (i.e. place field sequences).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8fcd8489-37a7-407b-bb5e-1cbe479eea07",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C50",
+      "claim": "SPW sequences reveal synaptic structure underlying not only place field sequences but also episode field sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that SPW sequences reveal synaptic structure underlying not only place field sequences but also episode field sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "07dd37aa-61be-4b58-bd07-544bfdeff26a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C51",
+      "claim": "SPW sequences do not clearly reflect an animal's most recent choices and experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, this data suggests that SPW sequences do not clearly reflect an animal's most recent choices and experiences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "57102104-13ed-49f4-b249-21b47c0764ab",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C52",
+      "claim": "SPW events were reliably generated during reward consumption and during short periods of rest in the delay area of the maze after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW events were reliably generated (Figure 2A) during reward consumption and during short periods of rest in the delay area of the maze (Figure 1A-orange, 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study based on experimental data and shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c9a33145-2086-43c9-89dc-9f005b8eda89",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C53",
+      "claim": "After MS inactivation, SPW events occurred more frequently (Kruskal-Wallis, p=5.7 * 10 e-5, n = 13).",
+      "claim_type": "EXPLICIT",
+      "source": "After the inactivation, SPW events occurred more frequently (Figure 2C, Kruskal-Wallis, p=5.7 * 10 e-5, n = 13), recruited more neurons (Figure 2D, KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997), and tended to have more spikes per neuron (Figure 2E, KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997) even though the duration of the SPW events did not change (Figure 2F, KS-test = 0.08; p>> 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "6ac1287e-0ff0-4842-9657-386b522a5718",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C54",
+      "claim": "After MS inactivation, SPW events recruited more neurons (KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997).",
+      "claim_type": "EXPLICIT",
+      "source": "After the inactivation, SPW events occurred more frequently (Figure 2C, Kruskal-Wallis, p=5.7 * 10 e-5, n = 13), recruited more neurons (Figure 2D, KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997), and tended to have more spikes per neuron (Figure 2E, KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997) even though the duration of the SPW events did not change (Figure 2F, KS-test = 0.08; p>> 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "aa624a28-00a7-4d29-bca6-fa43b00ae50d",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C55",
+      "claim": "After MS inactivation, SPW events tended to have more spikes per neuron (KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997).",
+      "claim_type": "EXPLICIT",
+      "source": "After the inactivation, SPW events occurred more frequently (Figure 2C, Kruskal-Wallis, p=5.7 * 10 e-5, n = 13), recruited more neurons (Figure 2D, KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997), and tended to have more spikes per neuron (Figure 2E, KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997) even though the duration of the SPW events did not change (Figure 2F, KS-test = 0.08; p>> 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c03c7b8b-4a2e-453d-afea-986b37b72139",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C56",
+      "claim": "The duration of the SPW events did not change after MS inactivation (KS-test = 0.08; p>> 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "After the inactivation, SPW events occurred more frequently (Figure 2C, Kruskal-Wallis, p=5.7 * 10 e-5, n = 13), recruited more neurons (Figure 2D, KS-test = 0.15; p=1.7 e-23; n(Pre) = 1114; n(Musc) = 3997), and tended to have more spikes per neuron (Figure 2E, KS-test = 0.11; p=8.4 e-10; n(Pre) = 1114; n(Musc) = 3997) even though the duration of the SPW events did not change (Figure 2F, KS-test = 0.08; p>> 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "eb92d931-d830-42c4-86ef-9e252925b63f",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C57",
+      "claim": "SPW events were more frequent and stronger after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SPW events were more frequent and stronger after MS inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "372a5f31-07c2-4390-9acf-7046bf25a373",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C58",
+      "claim": "SPW sequences whose orders were highly similar to the pre-inactivation episode field sequences were not eliminated by MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SPW sequences whose orders were highly similar to the pre-inactivation episode field sequences were not eliminated by the inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "42d7008d-c348-4105-90cb-61e0c9b5a1a7",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C59",
+      "claim": "After MS inactivation, a slightly higher percentage of eligible SPW sequences was significantly correlated with episode field sequences (n = 10 recordings; z-score(Pre) = 4.1 \u00b1 0.4, z-score(Musc) = 6.7 \u00b1 0.9; Kruskal-Wallis, p=0.023).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, after inactivation, a slightly higher percentage of eligible SPW sequences was significantly correlated with episode field sequences (Figure 3B; n = 10 recordings; z-score(Pre) = 4.1 \u00b1 0.4, z-score(Musc) = 6.7 \u00b1 0.9; Kruskal-Wallis, p=0.023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "5f600354-fc53-4ed3-bf06-4730db8cbf05",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C60",
+      "claim": "After MS inactivation, SPW sequences correlated with place field sequences were preserved (n = 8 recordings; z-score(Pre) = 5 \u00b1 0.7; z-score(Musc) = 8.5 \u00b1 0.9; Kruskal-Wallis, p=0.016).",
+      "claim_type": "EXPLICIT",
+      "source": "The same held true for the SPW sequences correlated with place field sequences (Figure 3E; n = 8 recordings; z-score(Pre) = 5 \u00b1 0.7; z-score(Musc) = 8.5 \u00b1 0.9; Kruskal-Wallis, p=0.016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "62d49ad9-bd32-4446-8f79-951cf9cd80da",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C61",
+      "claim": "Both place and episode field sequences were replayed at close to a constant rate during the entire recording following MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Both place and episode field sequences were replayed at close to a constant rate during the entire recording following MS inactivation (Figure 3C,F), and the mean number of neurons activated during the replay of the place and episode field sequences did not change after the inactivation (Episode cells: Pre: 8.17 neurons, Musc: 8.73 neurons; Place cells: Pre: 5.96 neurons, Musc: 5.28 neurons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the study based on experimental data and shown in Figures 3C and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "adb1bcf0-5eb6-4d4a-abf3-6c411a0d179b",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C62",
+      "claim": "The mean number of neurons activated during the replay of the place and episode field sequences did not change after MS inactivation (Episode cells: Pre: 8.17 neurons, Musc: 8.73 neurons; Place cells: Pre: 5.96 neurons, Musc: 5.28 neurons).",
+      "claim_type": "EXPLICIT",
+      "source": "Both place and episode field sequences were replayed at close to a constant rate during the entire recording following MS inactivation (Figure 3C,F), and the mean number of neurons activated during the replay of the place and episode field sequences did not change after the inactivation (Episode cells: Pre: 8.17 neurons, Musc: 8.73 neurons; Place cells: Pre: 5.96 neurons, Musc: 5.28 neurons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8fe96f60-c90b-402e-b7d8-8792db957b40",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C63",
+      "claim": "Episode field sequences observed during wheel running were eliminated after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the case even though the episode field sequences observed during wheel running were eliminated after MS inactivation (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "b2dadf1b-57ce-408e-93b0-9132606cd099",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C64",
+      "claim": "There was no significant correlation between the frequency of replay occurrence and the performance of animals (Pre: r = 0.34 p=0.25, Musc: r = \u22120.19 p=0.53).",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, there was no significant correlation between the frequency of replay occurrence and the performance of animals (Figure 4A, Pre: r = 0.34 p=0.25, Musc: r = \u22120.19 p=0.53).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical finding from the study based on experimental data and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "fae8d42f-663d-43a0-a503-1aafa3a453e1",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C65",
+      "claim": "There was no significant decrease in the sequence replay during error trials (Correct trials: Pre: 0.22 Hz \u00b1 0.014, Musc: 0.32 Hz \u00b1 0.024. Error trials: Pre: 0.5 Hz \u00b1 0.08, Musc: 0.85 Hz \u00b1 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we did not observe any significant decrease in the sequence replay during error trials (Figure 4B, Correct trials: Pre: 0.22 Hz \u00b1 0.014, Musc: 0.32 Hz \u00b1 0.024. Error trials: Pre: 0.5 Hz \u00b1 0.08, Musc: 0.85 Hz \u00b1 0.25).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "1677642d-b4a1-4ddc-ae23-1c2a6da50fea",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C66",
+      "claim": "After MS inactivation, SPW sequences that were correlated with pre-inactivation place and episode field sequences did not show clear spatial bias.",
+      "claim_type": "EXPLICIT",
+      "source": "As before the injection, SPW sequences that were correlated with pre-inactivation place and episode field sequences did not show clear spatial bias, suggesting that they were not strongly influenced by recently traveled trajectories in the maze.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "1b6562e8-7a80-44f9-8b17-2e15ad221444",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C67",
+      "claim": "56 \u00b1 6.6% of all SPW sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "(56 \u00b1 6.6% of all SPW sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area. 63 \u00b1 8.4% of all SPW sequences significantly correlated with the place field sequence in the right maze- arm were generated in the left reward area, n = 8 recordings from 3 animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0b211507-3d08-44d9-b13c-7e31756d130e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C68",
+      "claim": "63 \u00b1 8.4% of all SPW sequences significantly correlated with the place field sequence in the right maze-arm were generated in the left reward area after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "(56 \u00b1 6.6% of all SPW sequences significantly correlated with the place field sequence in the left maze arm were generated in the left reward area. 63 \u00b1 8.4% of all SPW sequences significantly correlated with the place field sequence in the right maze- arm were generated in the left reward area, n = 8 recordings from 3 animals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "fb544e48-82b3-4846-938d-44f5a5e75454",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C69",
+      "claim": "SPW replay of episode and place field sequences does not support episodic memory in trained animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this data further confirms that SPW replay of episode and place field sequences does not support episodic memory in trained animals (Wang et al., 2015) and likely reflects the structure of the network rather than the recent activity in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "6f7a4e57-8019-49b5-a81a-b83e6859e14f",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C70",
+      "claim": "SPW replay likely reflects the structure of the network rather than the recent activity in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this data further confirms that SPW replay of episode and place field sequences does not support episodic memory in trained animals (Wang et al., 2015) and likely reflects the structure of the network rather than the recent activity in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "2db4656e-129c-4615-a531-ec752e87a5c4",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C71",
+      "claim": "Internal sequences (e.g., episode field and theta sequences) were eliminated during running after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "After MS inactivation, internal sequences (e.g., episode field and theta sequences) were eliminated during running, i.e., during theta brain state (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "57d64b54-aa78-4256-9138-ec092d3747f3",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C72",
+      "claim": "Highly similar sequences formed by physically identical neurons were preserved during reward consumption after MS inactivation, i.e., during SPW brain state.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, highly similar sequences formed by physically identical neurons were preserved during reward consumption, i.e., during SPW brain state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "cdcfd3cf-b212-46ea-b32e-5dcd17013319",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C73",
+      "claim": "Theta and SPW sequences coincide with synchronized changes in the excitability of a large population of neurons: individual troughs of theta oscillations and SPW events.",
+      "claim_type": "EXPLICIT",
+      "source": "One common feature of the observed internal sequences (i.e., theta and SPW sequences) is that they coincide with synchronized changes in the excitability of a large population of neurons: individual troughs of theta oscillations and SPW events (Figure 5A \u2013 red traces, 4B-C; N\u00e1dasdy et al., 1999; Louie and Wilson, 2001; Dragoi and Buzs\u00e1ki, 2006; Ji and Wilson, 2007; Schmidt et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to prior research and shown in Figure 5A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c48154d7-4af5-4f51-a568-2ff460b4ee68",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C74",
+      "claim": "Theta sequences were eliminated along with the waves of excitability \u2013 theta oscillations \u2013 after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous data supports this hypothesis since theta sequences were eliminated along with the waves of excitability \u2013 theta oscillations \u2013 after MS inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from prior work by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "597d061b-05eb-4b51-aa0f-aa868f5f3e79",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C75",
+      "claim": "Sequences with a similar composition to the place field and episode field sequences were not found with a probability higher than chance within a collection of 1822 time periods outside of SPW events (episode field sequence replay z-score= \u22120.2 \u00b1 0.23; place field sequence replay z-score= \u22120.15 \u00b1 0.25; mean: 240 \u00b1 49 time periods per recording).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not find such sequences with a probability higher than chance within a collection of 1822 time periods with sufficient neuronal activity to be able to detect such sequences (Figure 5E, episode field sequence replay z-score= \u22120.2 \u00b1 0.23; place field sequence replay z-score= \u22120.15 \u00b1 0.25; mean: 240 \u00b1 49 time periods per recording; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from the study based on experimental data and shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "3f6f1056-1882-4b6c-b6ae-e2cd310a5987",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C76",
+      "claim": "Both theta sequences and SPW sequences are generated exclusively at the times periods of temporally increased population excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "This data shows that both theta sequences and SPW sequences are generated exclusively at the times periods of temporally increased population excitability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "a94e2902-4176-4441-972b-1155fa7af3f9",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C77",
+      "claim": "Selective perturbation of SPWs in untrained animals impaired the speed with which animals learned to perform an episodic memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "SPW sequences were surmised to be necessary for memory, route planning, and learning (Buzs\u00e1ki, 1989, 2015; Girardeau et al., 2009; Dupret et al., 2010; Ego-Stengel and Wilson, 2010; Jadhav et al., 2012; Pfeiffer and Foster, 2013), in part, because selective perturbation of SPWs in untrained animals impaired the speed with which animals learned to perform an episodic memory task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "73036366-e8cc-48b0-a4cc-2d8f8f5efd0e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C78",
+      "claim": "This impairment was observed even though other internal sequences such as theta sequences were preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "This impairment was observed even though other internal sequences such as theta sequences were preserved (Jadhav et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "a4478583-7444-48f8-b5fc-bc154e441460",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C79",
+      "claim": "SPW sequences were fully preserved in animals that could not perform an episodic memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, the answer is no: SPW sequences were fully preserved in animals that could not perform an episodic memory task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e742caf3-08d3-4e90-9107-e02bed9f3f70",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C80",
+      "claim": "The impact of the MS inactivation is rather broad as it affects theta oscillations, theta sequences, hippocampal cholinergic input and spatial selectivity of grid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the impact of the MS inactivation is rather broad as it affects theta oscillations, theta sequences, hippocampal cholinergic input and spatial selectivity of grid cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the known effects of MS inactivation based on prior knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "edd4fa44-1e81-4894-b0e4-ccf47062b99f",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C81",
+      "claim": "SPW sequences are required only for learning but are not necessary once the environment and the task have become familiar.",
+      "claim_type": "EXPLICIT",
+      "source": "Given our data and the results of others (Girardeau et al., 2009; Dupret et al., 2010; Ego-Stenget and Wilson, 2010; Jadhav et al., 2012), it is possible that SPW sequences are required only for learning but are not necessary once the environment and the task have become familiar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c55479b4-c402-486b-b7fe-14debee46330",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C82",
+      "claim": "Theta oscillations, theta sequences, and episode field sequences seem to be necessary during learning as well as during performance of well-trained episodic memory tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, theta oscillations, theta sequences, and episode field sequences seem to be necessary during learning as well as during performance of well-trained episodic memory tasks (Landfield et al., 1972; Berry and Thompson, 1978; Winson, 1978; Mitchell et al., 1982; Mizumori et al., 1990; M'Harzi and Jarrard, 1992; Robbe et al., 2006; Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "d922a2ff-cb24-43be-87d6-b30204f3e9a5",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C83",
+      "claim": "General spatial memory of animals was not impaired after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since general spatial memory of animals was not impaired after MS inactivation, as evidenced by the fact animals understood the location of the water ports, did not re-explore the maze as if it were a novel environment and remembered the procedure of the task, it is possible that neither theta sequences nor episode field sequences are necessary to make use of already established long-term spatial memory (Hepler et al., 1985; Shen et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e2b8589c-c1c1-489b-8c22-9debd31e21a9",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C84",
+      "claim": "Neither theta sequences nor episode field sequences are necessary to make use of already established long-term spatial memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Since general spatial memory of animals was not impaired after MS inactivation, as evidenced by the fact animals understood the location of the water ports, did not re-explore the maze as if it were a novel environment and remembered the procedure of the task, it is possible that neither theta sequences nor episode field sequences are necessary to make use of already established long-term spatial memory (Hepler et al., 1985; Shen et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "aa4d6281-c101-42d9-b94d-660106dd6e5a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C85",
+      "claim": "Theta and episode field sequences might be necessary for the instantaneous formation and recall of episodic memories such as which arm the animal just visited.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, theta and episode field sequences might be necessary for the instantaneous formation and recall of episodic memories such as which arm the animal just visited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c6e08804-f638-492e-8fe5-9eff2574d058",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C86",
+      "claim": "The hippocampal network was able to generate SPW sequences that were highly similar to episode field sequences even after the latter sequences were abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampal network was able to generate SPW sequences that were highly similar to episode field sequences even after the latter sequences were abolished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e8c2582e-9dd9-491a-b8be-0e6157ff1d25",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C87",
+      "claim": "SPW sequences were selectively generated when the excitability of a large portion of a network was temporarily increased, likely due to synchronized excitatory inputs from CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data shows that SPW sequences were selectively generated when the excitability of a large portion of a network was temporarily increased, likely due to synchronized excitatory inputs from CA3 (Buzs\u00e1ki, 1986; Csicsvari et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "868cbfac-a7b1-45ef-aba8-a566de6011bd",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C88",
+      "claim": "Optical stimulation of CA1 region triggers SPW-like events that are accompanied by sequential firing of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, others have shown that optical stimulation of CA1 region triggers SPW-like events that are accompanied by sequential firing of neurons (Stark et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f37a2cf5-8d67-4123-8500-8da55fec2385",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C89",
+      "claim": "One of the effects of the medial septum inactivation was the elimination of synchronized changes of excitability during running, namely theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the effects of the medial septum inactivation was the elimination of synchronized changes of excitability during running, namely theta oscillations (Green and Arduini, 1954; Petsche et al., 1962; Stumpf et al., 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the study supported by citations to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "219a32d2-f657-427e-89fe-c41f858d99ed",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C90",
+      "claim": "The loss of theta sequences may be due to the lack of synchronized excitability changes after MS inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that the loss of theta sequences may be due to the lack of such excitability changes after MS inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "bfc885ce-36e4-4b4d-9523-62557d42cdd5",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C91",
+      "claim": "The membrane potential of neurons is 2\u201310 millivolts below the spiking threshold during both theta and SPW brain states.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the membrane potential of neurons is 2\u201310 millivolts below the spiking threshold during both theta and SPW brain states (Ylinen et al., 1995; Harvey et al., 2009; Bittner et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "56defa18-06e9-46ef-bb7f-8e63c2d4a141",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C92",
+      "claim": "The incoming wave of excitation arriving from CA3 and/or EC might synchronously increase the membrane potential among a large number of neurons, bringing all neurons closer to spiking at about the same time.",
+      "claim_type": "EXPLICIT",
+      "source": "The incoming wave of excitation arriving from CA3 and/or EC might synchronously increase the membrane potential among a large number of neurons, bringing all neurons closer to spiking at about the same time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "19c6da42-354c-4e51-a10b-a0e941a519d2",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C93",
+      "claim": "The first neurons that fire during this wave of excitability likely activate local feed-forward inhibition and thus start to silence their 'competitor' principal neurons and dominate the activity of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "The first neurons that fire during this wave of excitability likely activate local feed-forward inhibition and thus start to silence their 'competitor' principal neurons and dominate the activity of the network (Csicsvari et al., 1999; Wang et al., 2015; Romani and Tsodyks, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors and supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "42165893-bcf7-4c11-8dbd-2c280eac4d95",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C94",
+      "claim": "Only after the competitor principal cells are silenced would these neurons be able to reliably activate their own post-synaptic principal neurons and thus trigger a sequential firing in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "Only after the competitor principal cells are silenced would these neurons be able to reliably activate their own post-synaptic principal neurons and thus trigger a sequential firing in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c605ddbc-320c-4eed-b040-8e2f6a96187e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C95",
+      "claim": "No theta and SPW sequences were generated without excitatory waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicates that no theta and SPW sequences were generated without excitatory waves even though there are many theoretical models that can produce sequences in the absence of a broad synchronizing input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0108efed-96a0-4fdd-9d43-f7e68ec3c24b",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C96",
+      "claim": "Synchronized waves of excitability are required for the generation of sequences in networks with no sensory inputs, with relatively weak connections and with relatively sparse activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that synchronized waves of excitability are required for the generation of sequences in networks with no sensory inputs, with relatively weak connections and with relatively sparse activity (Wang et al., 2015; Romani and Tsodyks, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "355256c5-e5ca-4f46-b571-4e85f575f2a8",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C97",
+      "claim": "Without synchronized waves, the activity of the network is dominated by non-specific feed-forward inhibition that prevents activation of specific sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Without such synchronized waves, the activity of the network is dominated by non-specific feed-forward inhibition that prevents activation of specific sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "d2f789cc-6231-4d63-8ce9-4dfc82d980d1",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C98",
+      "claim": "SPWs are induced by inputs from the CA3 hippocampal sub-field.",
+      "claim_type": "EXPLICIT",
+      "source": "Different anatomical regions control the synchronized changes of excitability in CA1 during different brain states. SPWs are induced by inputs from the CA3 hippocampal sub-field (Buzs\u00e1ki, 1986; Csicsvari et al., 2000) while theta waves are controlled by inputs from CA3, MS, and the entorhinal cortex (Kocsis et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "25b34f4c-e042-4ffb-99d9-c4d88cc6b32e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C99",
+      "claim": "Theta waves are controlled by inputs from CA3, MS, and the entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Different anatomical regions control the synchronized changes of excitability in CA1 during different brain states. SPWs are induced by inputs from the CA3 hippocampal sub-field (Buzs\u00e1ki, 1986; Csicsvari et al., 2000) while theta waves are controlled by inputs from CA3, MS, and the entorhinal cortex (Kocsis et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "86d8e935-a595-4e38-92cb-bd25789bb730",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C100",
+      "claim": "Synchronizing inputs during SPWs and theta waves might recruit highly similar subpopulations of cells and thus enable generation of highly similar sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these synchronizing inputs still might recruit highly similar subpopulations of cells (Varga et al., 2012) and thus enable generation of highly similar sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors and supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "21e76ba1-0255-4163-92ed-28c1820a726d",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C101",
+      "claim": "Internal sequences are locked to individual cycles of rhythmic excitatory waves (oscillations) in other brain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that internal sequences are locked to individual cycles of rhythmic excitatory waves (oscillations) in other brain structures (Ji and Wilson, 2007; Luczak et al., 2009; Peyrache et al., 2009; Havenith et al., 2011; Harvey et al., 2012; Xu et al., 2012; Carrillo-Reid et al., 2015; Markowitz et al., 2015; Mello et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "c7ed26e5-7777-4e75-9f36-0e861133fca7",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C102",
+      "claim": "The same mechanism for sequence generation might be utilized not only in the hippocampus but also in other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the same mechanism for sequence generation might be utilized not only in the hippocampus but also in other brain regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings and prior literature.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "0e722b64-c8d3-4518-bf7c-a245e2002fe3",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C103",
+      "claim": "The role of SPWs might be limited to the conditions under which the animal is learning a new environment or a new aspect of a task.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we show that SPW sequences were fully preserved even in animals with impaired episodic memory and suggest that the role of SPWs might be limited to the conditions under which the animal is learning a new environment or a new aspect of a task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f7e03a5d-1990-4977-9803-f6e4eb76baf8",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C104",
+      "claim": "The loss of theta oscillations and the associated loss of theta sequences appear to hinder both learning as well as performance of an episodic memory task.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the loss of theta oscillations and the associated loss of theta sequences appear to hinder both learning as well as performance of an episodic memory task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "66cd0186-ccd1-4072-b778-b7c551986446",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C105",
+      "claim": "Generation of internal hippocampal sequences such as theta and SPW sequences requires not only a network substrate structured due to past experiences but also synchronized changes in the excitability of large populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we suggest that generation of internal hippocampal sequences such as theta and SPW sequences requires not only a network substrate structured due to past experiences but also synchronized changes in the excitability of large populations of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "5a8e44bc-5665-49c1-aacb-03660ab22ffe",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C106",
+      "claim": "All data utilized in this study were previously used in Wang et al. (2015).",
+      "claim_type": "EXPLICIT",
+      "source": "All data utilized in this study were previously used in Wang et al. (2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the data source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "e08db426-0b64-41b9-a322-fb94b8ff8035",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "claim_id": "C107",
+      "claim": "All procedures were approved by the Janelia Farm Research Campus Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Janelia Farm Research Campus Institutional Animal Care and Use Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d34a23c7-61c7-4794-817f-d7f4b25d108e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Under normal conditions, SPW sequences replay both place field sequences (5-20% of SPWs, median 9%) and episode field sequences (4.3-16.7% of SPWs, median 10.25%) with comparable frequency. This replay shows no spatial bias and is not correlated with animal performance, suggesting SPW sequences reflect synaptic network structure rather than recent experiences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C51 provide converging quantitative evidence with statistical support (z-scores 3.5-9 for place fields, 3.1-7.8 for episode fields, p<0.01) and are visualized in Figure 1. The lack of spatial bias (C45-C47) and absence of performance correlation (C48) strengthen the interpretation that SPW replay reflects network structure (C50-C51).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "281a8e2c-e6af-48cd-a295-561cff99ee8a",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "After MS inactivation, SPW sequences replaying both place and episode field sequences were preserved and even slightly enhanced (z-scores increased from 4.1\u00b10.4 to 6.7\u00b10.9 for episode fields, p=0.023; from 5\u00b10.7 to 8.5\u00b10.9 for place fields, p=0.016), despite impaired episodic memory and elimination of episode field sequences during running. SPW events became more frequent and recruited more neurons, but replay showed no correlation with performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C70 and C79 provide extensive quantitative evidence with statistical tests (Kruskal-Wallis, KS-tests) and are supported by Figures 2-4. The preservation of SPW replay despite memory impairment (C37, C69) and elimination of episode field sequences during running (C38, C63) is well-documented. However, the broad effects of MS inactivation (C80) complicate causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Both SPW and theta sequences are generated exclusively during periods of synchronized population excitability increases. No sequences with similarity to place or episode field sequences were detected outside SPW events (z-scores -0.2\u00b10.23 and -0.15\u00b10.25 for episode and place field sequences, respectively, across 1822 time periods).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C40, C73, C75-C76, and C95 provide direct experimental evidence with quantitative analysis shown in Figure 5. The negative control (C75) demonstrating absence of sequences outside SPWs strengthens the conclusion. The claim is supported by both positive detection during SPWs and negative results outside SPWs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MS inactivation eliminated theta oscillations during running, which was accompanied by elimination of theta sequences and episode field sequences during the theta brain state. This provides evidence that theta sequences depend on synchronized waves of excitability (theta oscillations).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C41, C71, C74, and C89 are supported by experimental observations and citations to prior work (Wang et al., 2015). The temporal correlation between loss of theta oscillations and loss of theta sequences is documented, though the causal relationship is inferred rather than directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "ed08bea0-8346-4849-912c-2493b0b37bd5",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that synchronized changes in excitability (either intermittent as in SPWs or rhythmic as in theta oscillations) are necessary to trigger sequential firing of neurons, which supports learning and/or memory. This mechanism is proposed to be required for sequence generation in networks with weak connections and sparse activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12, C42, C90, C96, and C105 represent the central mechanistic hypothesis. While speculative in nature, this hypothesis is well-supported by the convergence of multiple experimental observations: preservation of SPW sequences with intact excitability waves (C36-C62), elimination of theta sequences with loss of theta oscillations (C71, C74), and absence of sequences outside periods of synchronized excitability (C75-C76).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "fa9985ae-cd80-4ac5-8486-fe14886248c3",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose that SPW sequences may be required only for learning new environments or tasks but are not necessary once the environment and task have become familiar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81 and C103 represent a speculative interpretation based on the current findings and prior literature. While the preservation of SPW sequences without memory support (C79) is consistent with this hypothesis, the study does not directly test learning versus performance in trained animals. The broad effects of MS inactivation (C80) further complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "65799a8f-e73a-4f5d-9517-48ff81d47a44",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Theta oscillations, theta sequences, and episode field sequences appear necessary during both learning and performance of well-trained episodic memory tasks, in contrast to SPW sequences which may only be required during learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82 and C104 are supported by the current experimental data showing memory impairment with loss of theta sequences (C26, C71) and by extensive citations to prior literature. The contrast with SPW sequences (which persist without supporting memory) strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "551caa8b-7a83-472e-82a0-209d42259fea",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "General spatial memory was preserved after MS inactivation (animals remembered water port locations and maze layout), suggesting theta and episode field sequences may be specifically necessary for instantaneous formation and recall of episodic memories rather than long-term spatial memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C85 are supported by behavioral observations (C83) and citations to prior work. The dissociation between preserved general spatial memory and impaired episodic memory provides evidence for distinct memory systems, though C84-C85 remain somewhat speculative interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "ca3ee3df-d52a-47b5-94cf-33bf93fe695c",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The hippocampal network generated SPW sequences highly similar to episode field sequences even after episode field sequences were abolished during running. SPW sequences were selectively generated when network excitability was temporarily increased, likely due to synchronized CA3 inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C87, and C72 are directly supported by experimental data (C38, C58-C62) and citations. The preservation of SPW replay after elimination of episode field sequences during running is a key finding demonstrating that SPW sequences reflect network structure rather than ongoing activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where synchronized excitatory waves bring neurons close to threshold, early-firing neurons activate feed-forward inhibition to silence competitors, and only then can these neurons reliably activate postsynaptic neurons to trigger sequential firing. Without synchronized waves, non-specific feed-forward inhibition prevents sequence activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C94 and C97 represent a detailed mechanistic hypothesis. While C91 is supported by citations to prior electrophysiological work, C92-C94 and C97 are speculative models not directly tested in this study. The model is plausible and consistent with the data, but lacks direct experimental validation of the proposed inhibitory mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "8f4a01df-25f7-4615-8284-a7146708b5e6",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different anatomical regions control synchronized excitability changes: SPWs are induced by CA3 inputs while theta waves are controlled by CA3, MS, and entorhinal cortex inputs. These different inputs may recruit similar subpopulations enabling generation of similar sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 are well-supported by citations to established literature. Claim C100 is more speculative but supported by citation (Varga et al., 2012) and provides a plausible explanation for how different brain states can generate similar sequences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "b7beef83-8707-4b8f-a11a-4e04092519c9",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Internal sequences in other brain structures are also locked to individual cycles of rhythmic excitatory waves, suggesting the same mechanism for sequence generation might be utilized across brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 are supported by extensive citations to prior work in multiple brain regions. This represents a reasonable extrapolation from the hippocampal findings to a broader principle, though direct experimental validation in other regions is not provided in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about hippocampal sequences, their generation, functions, and the effects of manipulations. These include the distinction between sensory-cue-guided and internally generated sequences, their roles in memory and learning, and established effects of MS inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C31 represent established knowledge supported by extensive citations to prior literature. These provide the necessary context for interpreting the current study's findings. The claims accurately represent the state of the field based on the citations provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "78154377-2a59-4952-8701-1378ab7b40ce",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work showed that selective SPW perturbation in untrained animals impaired learning even when theta sequences were preserved, MS inactivation has broad effects on multiple systems, and optical stimulation can trigger SPW-like events with sequential firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78, C80, and C88 accurately represent findings from cited prior work. These claims provide important context for interpreting the current results, particularly the distinction between learning and memory performance, and the limitations of the MS inactivation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    },
+    {
+      "id": "58647425-f944-46da-b897-9c9491a2338e",
+      "content_id": "6d20159f-c002-4e42-b6db-98c3688a79be",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological statements indicating data were previously published (Wang et al., 2015) and procedures were ethically approved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 are straightforward methodological statements. C106 indicates data reuse from a prior publication, which is transparent. C107 confirms ethical approval, which is standard practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:59:44.951477Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b1f89d4-5146-4b7f-8ebb-3a2ed6a21d0f",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "8cd1be94-b35a-4477-a90e-56fc6487308b",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "4cca0a17-667b-44db-81f2-a5f09e303d4b",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "4085adf7-8ccd-4e18-988a-d6e8f0b96f72",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "e0029ae5-271a-4df5-9bd9-9187f0b6e998",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "a1f2e59f-5615-46e2-9028-6d7516a6a80d",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "81f66c15-d716-43f9-8536-d353020ef56d",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "17431b26-9ab4-428e-a812-3efca7b89ba0",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "f8b58401-4d49-4aff-a23d-1762b8f04c44",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "e3b5ffa3-3d45-4771-9afc-32d74ffa1940",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "aec6b2c4-ca65-4c29-9b42-66d10cd18fd9",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "8fcd8489-37a7-407b-bb5e-1cbe479eea07",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "07dd37aa-61be-4b58-bd07-544bfdeff26a",
+      "result_id": "d34a23c7-61c7-4794-817f-d7f4b25d108e"
+    },
+    {
+      "claim_id": "a30ba9b5-ccf0-4178-ad0f-19a1895f27fd",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "0ba77172-474a-4d0e-b378-9893565d093e",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "f6ef6942-7c38-40c1-8a3b-3eed686035ac",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "b709a641-a48e-409e-b022-73aafdcd92c2",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "eea7a58e-e5de-431d-bd9c-2a85ad8d2bc7",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "57102104-13ed-49f4-b249-21b47c0764ab",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "c9a33145-2086-43c9-89dc-9f005b8eda89",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "6ac1287e-0ff0-4842-9657-386b522a5718",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "aa624a28-00a7-4d29-bca6-fa43b00ae50d",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "c03c7b8b-4a2e-453d-afea-986b37b72139",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "eb92d931-d830-42c4-86ef-9e252925b63f",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "372a5f31-07c2-4390-9acf-7046bf25a373",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "42d7008d-c348-4105-90cb-61e0c9b5a1a7",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "5f600354-fc53-4ed3-bf06-4730db8cbf05",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "62d49ad9-bd32-4446-8f79-951cf9cd80da",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "adb1bcf0-5eb6-4d4a-abf3-6c411a0d179b",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "8fe96f60-c90b-402e-b7d8-8792db957b40",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "b2dadf1b-57ce-408e-93b0-9132606cd099",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "fae8d42f-663d-43a0-a503-1aafa3a453e1",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "1677642d-b4a1-4ddc-ae23-1c2a6da50fea",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "1b6562e8-7a80-44f9-8b17-2e15ad221444",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "0b211507-3d08-44d9-b13c-7e31756d130e",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "fb544e48-82b3-4846-938d-44f5a5e75454",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "6f7a4e57-8019-49b5-a81a-b83e6859e14f",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "a4478583-7444-48f8-b5fc-bc154e441460",
+      "result_id": "281a8e2c-e6af-48cd-a295-561cff99ee8a"
+    },
+    {
+      "claim_id": "e3eb8d3f-04fc-4ca2-bdd7-904322eef440",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "3df06b5e-6797-4950-adc1-265ad7be6cac",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "cdcfd3cf-b212-46ea-b32e-5dcd17013319",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "597d061b-05eb-4b51-aa0f-aa868f5f3e79",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "3f6f1056-1882-4b6c-b6ae-e2cd310a5987",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "c605ddbc-320c-4eed-b040-8e2f6a96187e",
+      "result_id": "4bead21e-3f61-4c44-bacf-d8c57ab49da9"
+    },
+    {
+      "claim_id": "11d2319e-1a68-427b-bdfa-cb91e5a4f8cf",
+      "result_id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54"
+    },
+    {
+      "claim_id": "4e81185b-64b3-4765-a823-f8e7827d8c87",
+      "result_id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54"
+    },
+    {
+      "claim_id": "2db4656e-129c-4615-a531-ec752e87a5c4",
+      "result_id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54"
+    },
+    {
+      "claim_id": "c48154d7-4af5-4f51-a568-2ff460b4ee68",
+      "result_id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54"
+    },
+    {
+      "claim_id": "f37a2cf5-8d67-4123-8500-8da55fec2385",
+      "result_id": "44beb616-da2e-49b2-a3e0-ed6b0809dc54"
+    },
+    {
+      "claim_id": "34bd29cc-197b-4e25-a53c-6d8af3013eee",
+      "result_id": "ed08bea0-8346-4849-912c-2493b0b37bd5"
+    },
+    {
+      "claim_id": "0dc85367-85c7-4872-bb66-d23b019dce97",
+      "result_id": "ed08bea0-8346-4849-912c-2493b0b37bd5"
+    },
+    {
+      "claim_id": "219a32d2-f657-427e-89fe-c41f858d99ed",
+      "result_id": "ed08bea0-8346-4849-912c-2493b0b37bd5"
+    },
+    {
+      "claim_id": "0108efed-96a0-4fdd-9d43-f7e68ec3c24b",
+      "result_id": "ed08bea0-8346-4849-912c-2493b0b37bd5"
+    },
+    {
+      "claim_id": "66cd0186-ccd1-4072-b778-b7c551986446",
+      "result_id": "ed08bea0-8346-4849-912c-2493b0b37bd5"
+    },
+    {
+      "claim_id": "edd4fa44-1e81-4894-b0e4-ccf47062b99f",
+      "result_id": "fa9985ae-cd80-4ac5-8486-fe14886248c3"
+    },
+    {
+      "claim_id": "0e722b64-c8d3-4518-bf7c-a245e2002fe3",
+      "result_id": "fa9985ae-cd80-4ac5-8486-fe14886248c3"
+    },
+    {
+      "claim_id": "c55479b4-c402-486b-b7fe-14debee46330",
+      "result_id": "65799a8f-e73a-4f5d-9517-48ff81d47a44"
+    },
+    {
+      "claim_id": "f7e03a5d-1990-4977-9803-f6e4eb76baf8",
+      "result_id": "65799a8f-e73a-4f5d-9517-48ff81d47a44"
+    },
+    {
+      "claim_id": "d922a2ff-cb24-43be-87d6-b30204f3e9a5",
+      "result_id": "551caa8b-7a83-472e-82a0-209d42259fea"
+    },
+    {
+      "claim_id": "e2b8589c-c1c1-489b-8c22-9debd31e21a9",
+      "result_id": "551caa8b-7a83-472e-82a0-209d42259fea"
+    },
+    {
+      "claim_id": "aa4d6281-c101-42d9-b94d-660106dd6e5a",
+      "result_id": "551caa8b-7a83-472e-82a0-209d42259fea"
+    },
+    {
+      "claim_id": "c6e08804-f638-492e-8fe5-9eff2574d058",
+      "result_id": "ca3ee3df-d52a-47b5-94cf-33bf93fe695c"
+    },
+    {
+      "claim_id": "e8c2582e-9dd9-491a-b8be-0e6157ff1d25",
+      "result_id": "ca3ee3df-d52a-47b5-94cf-33bf93fe695c"
+    },
+    {
+      "claim_id": "57d64b54-aa78-4256-9138-ec092d3747f3",
+      "result_id": "ca3ee3df-d52a-47b5-94cf-33bf93fe695c"
+    },
+    {
+      "claim_id": "bfc885ce-36e4-4b4d-9523-62557d42cdd5",
+      "result_id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716"
+    },
+    {
+      "claim_id": "56defa18-06e9-46ef-bb7f-8e63c2d4a141",
+      "result_id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716"
+    },
+    {
+      "claim_id": "19c6da42-354c-4e51-a10b-a0e941a519d2",
+      "result_id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716"
+    },
+    {
+      "claim_id": "42165893-bcf7-4c11-8dbd-2c280eac4d95",
+      "result_id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716"
+    },
+    {
+      "claim_id": "355256c5-e5ca-4f46-b571-4e85f575f2a8",
+      "result_id": "b0ff26d8-cf26-4cf9-91c5-eff03a0c1716"
+    },
+    {
+      "claim_id": "d2f789cc-6231-4d63-8ce9-4dfc82d980d1",
+      "result_id": "8f4a01df-25f7-4615-8284-a7146708b5e6"
+    },
+    {
+      "claim_id": "25b34f4c-e042-4ffb-99d9-c4d88cc6b32e",
+      "result_id": "8f4a01df-25f7-4615-8284-a7146708b5e6"
+    },
+    {
+      "claim_id": "86d8e935-a595-4e38-92cb-bd25789bb730",
+      "result_id": "8f4a01df-25f7-4615-8284-a7146708b5e6"
+    },
+    {
+      "claim_id": "21e76ba1-0255-4163-92ed-28c1820a726d",
+      "result_id": "b7beef83-8707-4b8f-a11a-4e04092519c9"
+    },
+    {
+      "claim_id": "c7ed26e5-7777-4e75-9f36-0e861133fca7",
+      "result_id": "b7beef83-8707-4b8f-a11a-4e04092519c9"
+    },
+    {
+      "claim_id": "63839b58-888c-44ec-8295-67e5889fa189",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "02f2c28b-b198-44e9-a0a0-ff8aa6427b12",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "29d67e76-90a5-44b6-bbf0-6917b11fe3fa",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "6a80016d-0eef-4548-9e5a-a5c1e91e51c4",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "46ea59c5-f7d9-45bd-b2f4-7fb6e6a390f4",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "cf58d226-386b-4545-ad5b-488689fdd2cd",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "95f15e57-530b-4631-99c0-f30c8e459c90",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "e9c35042-539f-4b0e-9a56-f2e47e73303a",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "d2bdb863-e247-4bcb-a5c3-8bdb670806d1",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "d5771738-c953-4445-80e4-e7146c56fda2",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "069c4c8a-b857-466e-a591-4655b4141ece",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "c30cdb3d-5f29-4549-8c40-f96383930ede",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "29917e9e-c5ba-43a6-a8e5-b3ce7fe02f58",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "869a88ae-ed94-4e88-ba97-c9efb49b0d66",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "8eb6da5b-98fb-427a-8785-8e2db42498fe",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "d61f26cf-a113-43d6-926f-2c5f66a539f1",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "12254174-d68e-4a55-829a-e45277d27483",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "71e802c3-5c3e-48fb-93ee-3a3274be8f73",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "ac4fe66c-9377-480c-a992-782af117731a",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "40082227-2c64-4a48-9703-6c76a0753708",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "2326e197-116f-48dd-9228-6d8034e3f9ef",
+      "result_id": "f8ff0d6b-0166-4466-97ec-3532d2c9ffd4"
+    },
+    {
+      "claim_id": "a94e2902-4176-4441-972b-1155fa7af3f9",
+      "result_id": "78154377-2a59-4952-8701-1378ab7b40ce"
+    },
+    {
+      "claim_id": "73036366-e8cc-48b0-a4cc-2d8f8f5efd0e",
+      "result_id": "78154377-2a59-4952-8701-1378ab7b40ce"
+    },
+    {
+      "claim_id": "e742caf3-08d3-4e90-9107-e02bed9f3f70",
+      "result_id": "78154377-2a59-4952-8701-1378ab7b40ce"
+    },
+    {
+      "claim_id": "868cbfac-a7b1-45ef-aba8-a566de6011bd",
+      "result_id": "78154377-2a59-4952-8701-1378ab7b40ce"
+    },
+    {
+      "claim_id": "5a8e44bc-5665-49c1-aacb-03660ab22ffe",
+      "result_id": "58647425-f944-46da-b897-9c9491a2338e"
+    },
+    {
+      "claim_id": "e08db426-0b64-41b9-a322-fb94b8ff8035",
+      "result_id": "58647425-f944-46da-b897-9c9491a2338e"
+    }
+  ],
+  "comparisons": []
+}

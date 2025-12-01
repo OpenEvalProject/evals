@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C104",
+      "C105"
+    ],
+    "result": "DPP9 directly interacts with Filamin A (FLNA) through FLNA repeats 5-7, as demonstrated by yeast two-hybrid screening, pull-down assays, co-immunoprecipitation with cross-linkers, and proximity ligation assays in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent biochemical and cell-based assays (C27-C31) converge to demonstrate direct DPP9-FLNA interaction. The mapping to FLNA repeats 5-7 is supported by both yeast two-hybrid (C104, C105) and pull-down assays with deletion constructs (C28). The requirement for cross-linkers in co-IP (C29) appropriately captures a transient interaction, and PLA confirms the interaction occurs in cells (C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DPP9 directly binds to and cleaves the N-terminal peptide of Syk (MA\u2193S), removing the first two amino acids (Met-Ala) with >99% efficiency in vitro. The interaction requires the DPP9 active site and the Met-Ala dipeptide at the Syk N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Surface plasmon resonance demonstrates direct binding with quantified KD values (C33-C35), showing reduced affinity for inactive DPP9 (C34) and truncated peptide (C35). Mass spectrometry provides definitive evidence of cleavage (C36), with appropriate controls using inactive enzyme (C38) and inhibitor (C37). The data clearly establish Syk as a direct DPP9 substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C44"
+    ],
+    "result": "The DPP9-Syk interaction in cells requires DPP9 catalytic activity and is dependent on FLNA. DPP9 inhibitors reduce DPP9-Syk PLA signals without affecting DPP9-FLNA interaction, while FLNA silencing significantly reduces DPP9-Syk interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PLA experiments with two different DPP9 inhibitors (C39, C40) demonstrate that the DPP9-Syk interaction requires active site engagement, while the DPP9-FLNA interaction is unaffected (C41), indicating substrate-specific requirements. FLNA silencing reduces DPP9-Syk PLA signals (C44), supporting FLNA's role as a scaffold. The use of multiple complementary approaches strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "FLNA silencing dramatically alters DPP9 cellular localization, with DPP9 no longer observed at the plasma membrane, reduced in the cytosol, and elevated in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence microscopy with quantification (C42, C43) demonstrates a clear redistribution of DPP9 upon FLNA knockdown. This supports FLNA's role in DPP9 localization and provides a mechanism for how FLNA facilitates DPP9-Syk interaction. The dramatic nature of the effect is well-documented in the images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In DPP9 knockdown cells, Syk protein is more stable than in wild-type cells. Syk-FLAG has a half-life of 6 hours in HeLa cells, which is extended in DPP9-kd cells despite equal transfection amounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DPP9-kd cell line is well-characterized with 40% reduction in DPP activity (C45) and 50% reduction in DPP9 protein (C46). Higher steady-state Syk levels in DPP9-kd cells (C47) and cycloheximide chase experiments (C48, C49) provide converging evidence that DPP9 regulates Syk stability. The use of GFP as transfection control strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C4"
+    ],
+    "result": "The serine residue exposed after DPP9 cleavage (position 1 in the neo-N-terminus) is critical for Syk destabilization. Mutation of Ser3 to Gly or Val, or mutation of the cleavage site (A2D), increases Syk half-life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mutagenesis experiments (C50, C51) directly test the role of the exposed serine and the cleavage site. The increased stability of SykS3G, SykS3V, and SykA2D variants compared to wild-type Syk provides strong evidence that DPP9 cleavage and the resulting N-terminal serine drive Syk degradation, consistent with N-end rule pathway involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C86"
+    ],
+    "result": "DPP9 processing of Syk is required for efficient Syk-Cbl interaction. DPP9 silencing significantly reduces Syk-Cbl PLA signals, suggesting DPP9 cleavage is upstream of Cbl-mediated ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "PLA experiments establish endogenous Syk-Cbl interaction (C54), and demonstrate reduced interaction in DPP9-kd cells (C55). Combined with data showing DPP9 inhibition prolongs Syk pY323 (a Cbl-binding site), this supports a model where DPP9 cleavage precedes Cbl recruitment (C86). However, the mechanism linking N-terminal cleavage to Cbl binding remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DPP9 inhibition stabilizes Syk in B cells. In unstimulated DG-75 cells, Syk is stable over 6 hours, but upon BCR stimulation, Syk is degraded with a 2-hour half-life. Both proteasome inhibition and DPP9 inhibition stabilize Syk after BCR engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cycloheximide chase experiments in DG-75 B cells (C61, C62) establish context-dependent Syk degradation. The stabilization by both MG132 (C63) and 1G244 (C64) demonstrates that Syk degradation is proteasome-dependent and DPP9-dependent. The comparable effects of proteasome and DPP9 inhibition support DPP9's role in targeting Syk for proteasomal degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C83"
+    ],
+    "result": "DPP9 inhibition in stimulated B cells results in prolonged accumulation of phosphorylated Syk (pY323 and pY352), suggesting DPP9 targets the active, phosphorylated form of Syk for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis shows that DPP9 inhibition prolongs phospho-Syk signals (C65-C67), with pY323 and pY352 levels remaining elevated longer in 1G244-treated cells. This supports the conclusion that DPP9 preferentially targets active Syk (C83). The data are consistent across multiple phosphorylation sites important for Syk function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77"
+    ],
+    "result": "DPP9 inhibition in unstimulated B cells causes 'signal leakage' with increased basal Ca2+ flux and elevated phosphorylation of Syk (pY352) and PLC\u03b32 (pY753), despite unchanged total Syk levels. This occurs in both DG-75 and Ramos cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays demonstrate signal leakage: rapid Ca2+ mobilization upon 1G244 addition (C69, C70), elevated phospho-Syk and phospho-PLC\u03b32 in unstimulated cells (C72-C74), despite unchanged total protein levels (C71). The observation in two cell lines strengthens the finding. This reveals DPP9's role in maintaining low basal signaling (tonic signaling).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "BCR engagement under DPP9 inhibition results in a more transient ERK1/2 phosphorylation profile, though basal ERK1/2 phosphorylation is slightly elevated in 1G244-treated resting cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot analysis (C75, C76) shows altered ERK1/2 phosphorylation dynamics upon DPP9 inhibition. The more transient response upon BCR stimulation combined with elevated basal levels is consistent with the 'signal leakage' model, where depletion of signaling capacity in resting cells reduces the response to stimulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C78",
+      "C84",
+      "C90",
+      "C91"
+    ],
+    "result": "DPP9 functions as a negative regulator of Syk signaling by maintaining low levels of activated Syk for tonic signaling in resting cells and by terminating Syk activity through N-terminal processing after BCR engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the collective data showing: (1) DPP9 cleaves and destabilizes Syk, (2) DPP9 inhibition causes signal leakage in resting cells, (3) DPP9 inhibition stabilizes Syk after BCR stimulation, and (4) DPP9 preferentially targets phosphorylated Syk. The model coherently explains the observed phenotypes, though some aspects (C90, C91) remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C93",
+      "C98"
+    ],
+    "result": "DPP9 is a novel integral aminopeptidase of the N-end rule pathway, acting in a post-translational manner to expose destabilizing N-terminal residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data showing that DPP9 cleavage exposes an N-terminal serine that affects protein stability (C50, C51), combined with evidence of proteasome-dependent degradation (C63) and Cbl involvement (C55), support DPP9's role in the N-end rule pathway. The post-translational nature is inferred from cleavage of mature Syk protein (C98). This represents a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In DG-75 B cells, DPP9 is expressed and the FLNA-DPP9-Syk interaction network is conserved. DPP9, but not the related proteases DPP8 or DPPIV, specifically interacts with Syk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple assays confirm DPP9 expression in DG-75 cells (C56), and PLA demonstrates conservation of FLNA-DPP9 and FLNA-Syk interactions (C57). Importantly, specificity controls show no interaction between Syk and DPP8 or DPPIV (C59, C60), despite their expression, supporting the specific role of DPP9 in Syk regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C115"
+    ],
+    "result": "FLNA serves as a scaffold protein that recruits DPP9 to Syk, potentially by increasing local concentration, stabilizing the complex, or optimizing protein orientation for efficient cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for FLNA in cellular DPP9-Syk interaction (C44), despite direct DPP9-Syk binding in vitro (C33), supports FLNA's scaffolding role (C99, C115). The proposed mechanisms (C100) are reasonable inferences based on FLNA's known properties, though direct evidence for the specific mechanism is limited. The model is consistent with all available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "DPP9 is an intracellular dipeptidyl peptidase with broad tissue distribution and multiple cellular localizations (cytosol, nucleus, leading edge). It is linked to various cellular processes including Akt signaling, macrophage activation, cell migration, and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C9-C19) represent established background knowledge supported by appropriate citations. They provide context for the current work but are not novel findings of this study. The claims are well-documented in the literature and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "FLNA is an actin-binding protein important for cell mechanics and migration. Syk binds to FLNA repeat 5, an interaction first identified in platelets and conserved in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge about FLNA (C23, C24) and the FLNA-Syk interaction (C26, C106, C107), supported by appropriate citations. The conservation in HeLa cells (C108) is demonstrated by PLA. This provides important context for understanding the DPP9-FLNA-Syk complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C111",
+      "C112"
+    ],
+    "result": "Syk is a central kinase in B cell receptor signaling that is negatively regulated by phosphatases and the E3 ubiquitin ligase Cbl. B cells possess tonic signaling that maintains baseline activity in the absence of antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C52, C53, C79-C82, C85, C87-C89, C111, C112) represent well-established background knowledge about Syk biology and B cell signaling, supported by appropriate citations. They provide essential context for interpreting the novel findings about DPP9's role in Syk regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "SUMO1 was previously identified as a DPP9-interacting protein that acts as an allosteric activator of DPP9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C20, C21) represent prior work by the same authors, appropriately cited (Pilla et al., 2012, 2013). They provide context for the current yeast two-hybrid screen but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "MetAPs are integral aminopeptidases of the N-end rule pathway that function co-translationally. DPP9 differs from MetAPs in substrate specificity and broader P1' and P2 position tolerance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C92, C94, C96, C97) provide important context for positioning DPP9 within the N-end rule pathway, supported by appropriate citations. The comparison highlights DPP9's unique features as a post-translational aminopeptidase with different substrate specificity than MetAPs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Syk Y352 phosphorylation is important for Syk catalytic activity and activation of PLC\u03b32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim (C68) represents established knowledge about Syk function, supported by appropriate citations (Tsang et al., 2008; Law et al., 1996). It provides context for interpreting the significance of prolonged pY352 upon DPP9 inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "The N-terminal region (amino acids 1-7) of Syk is not resolved in crystal structures, suggesting it is flexible and accessible for interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C109, C110) is based on published Syk structures and is reasonable. The lack of structural resolution typically indicates flexibility, which would facilitate DPP9 access to the N-terminus. This supports the plausibility of DPP9 cleavage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "DPP9 may directly produce N-degrons without further modification. FLNA may function analogously to F-box proteins in SCF complexes and could recruit DPP9 to additional substrates. DPP9 may cooperate with various E3 ligases depending on the substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C95, C100-C103) are largely speculative models and hypotheses for future investigation. While they are reasonable extrapolations from the data, they lack direct experimental support in this manuscript. The analogy to F-box proteins (C101) is interesting but remains to be tested. These represent important directions for future work rather than established findings.",
+    "result_type": "MINOR"
+  }
+]

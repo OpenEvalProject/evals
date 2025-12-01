@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "A high-throughput screen of ~170,000 compounds identified 30 reproducibly positive hits, of which 8 were confirmed as splicing inhibitors. The study focused on compound 028 (cp028), a specific chemical entity with the structure 1-(2-Ethylphenyl)\u22125-((5-(4-fluorophenyl)furan-2-yl)methylene) pyrimidine-2,4,6 (1H,3H,5H)\u2212trione.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the screening methodology and hit identification process with explicit numbers and chemical characterization. The progression from 170,000 compounds to 30 hits to 8 confirmed inhibitors is clearly documented, and the chemical structure of cp028 is provided with supporting figure reference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "cp028 inhibits pre-mRNA splicing in HeLa nuclear extract in a dose-dependent manner, with reduced splicing at 50 \u00b5M, complete abolishment above 150 \u00b5M, and an IC50 of 54 \u00b1 4 \u00b5M. The compound causes accumulation of A- and B-like spliceosomal complexes that peak at 20 minutes, inhibiting both the A to B transition and the B to later complex transitions. This inhibitory effect is general for pre-mRNA splicing in vitro, as demonstrated with both MINX and IgM substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 collectively demonstrate cp028's splicing inhibition activity with quantitative dose-response data (IC50 with error bars), kinetic analysis, and validation across multiple substrates. The data are supported by gel images (Figure 1B, 1C) and supplementary figures showing reproducible effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "cp028 does not inhibit splicing in S. cerevisiae extracts at concentrations up to 250 \u00b5M, suggesting it specifically targets spliceosomal components involved in higher eukaryotic splicing rather than acting through non-specific mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 demonstrate species specificity through negative results in yeast. The lack of inhibition at concentrations well above the mammalian IC50 (250 \u00b5M vs 54 \u00b5M) provides strong evidence for specific targeting rather than general toxicity or non-discriminatory inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Gradient fractionation and MS2 affinity purification of complexes formed in the presence of cp028 identified A028 complexes in peak I containing stoichiometric U1 and U2 snRNAs with characteristic A complex proteins. Mass spectrometry and 2D gel analysis confirmed A028 contains U1/U2 snRNP proteins plus U2AF65, U2AF35, SRSF1, SRSF7, hnRNPA1, and SPF30, with composition nearly identical to kinetically-stalled A complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 describe comprehensive biochemical characterization of A028 complexes using multiple complementary techniques (gradient centrifugation, affinity purification, RNA analysis, MS, 2D gels). The data are internally consistent and supported by figures and supplementary files, with appropriate comparison to control A complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "cp028 has only a moderate effect on tri-snRNP stability, with most tri-snRNPs remaining intact under splicing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 is supported by gradient centrifugation and immunoprecipitation experiments (Figure 1\u2014figure supplement 3) showing that the majority of U4/U6.U5 tri-snRNPs remain assembled in the presence of cp028, ruling out tri-snRNP disruption as the primary mechanism of inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Complexes from gradient peak II (designated B028) contain stoichiometric U2, U5, U6 snRNAs and pre-mRNA but substantially reduced U1 and U4 snRNAs. B028 exhibits a lower S-value than B complexes and migrates faster than Bact on native gels, indicating it represents a novel assembly intermediate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 characterize B028 using RNA composition analysis and biophysical properties (sedimentation, gel migration). The distinct properties compared to both B and Bact complexes support the conclusion that B028 is a novel intermediate, though the authors appropriately note this is inferred from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "B028 complexes contain predominantly U2 and U5 snRNP proteins plus most B-specific proteins (RED, MFAP1, hSmu-1, hPrp38, hSnu23, NPW38, NPW38BP), with very low amounts of U4/U6 proteins and only minor tri-snRNP-specific proteins. Lsm 2-8 proteins remain abundant, while Bact-specific and Prp19/CDC5L complex proteins are absent or highly underrepresented. SF3b155 is not hyperphosphorylated in B028. This composition indicates B028 is stalled between B and Bact after U4 displacement but before release of B-specific/Lsm proteins and recruitment of Bact/Prp19 proteins, suggesting stepwise protein exchange during the B to Bact transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 provide comprehensive proteomic characterization of B028 using MS, 2D gels, and western blotting (Figure 2, Supplementary file 1). The data consistently show an intermediate composition between B and Bact. The inference of stepwise protein exchange (C40-C41) is appropriately qualified with the caveat that B028 might not represent a typical intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNA structure probing reveals that B028 contains U2/U6 helix II, U6 ACAGA box/5'SS interaction, U2/BPS helix, and the U6 ISL. However, U2 helix IIc is not formed, and U6 nucleotides 79-81 are protected in B028 but not Bact, suggesting an extended ISL stem. The U2/U6 junction in B028 differs from Bact, possibly forming a four-way rather than three-way junction, consistent with stepwise rearrangement of the catalytic RNA network during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C52 describe detailed RNA structure analysis using psoralen crosslinking and chemical modification (Figure 3 and supplements). The data support formation of key RNA structures but reveal differences between B028 and Bact, particularly in the U2/U6 junction configuration. The inference of a four-way junction is appropriately presented as a possibility based on protection patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Purified B028 complexes can be chased into catalytically active spliceosomes that perform both steps of splicing when supplemented with micrococcal nuclease-treated nuclear extract, demonstrating B028 is a functional intermediate. However, addition of cp028 to the chase reaction blocks splicing, suggesting cp028 binds to or inactivates a factor required for converting B/B028 into catalytically active spliceosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe chase experiments (Figure 4) demonstrating B028 functionality. The ability to complete splicing with MN-treated extract (which lacks intact snRNPs) proves B028 is on-pathway. The block by cp028 in chase reactions provides insight into the mechanism, though the specific target remains unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Electron microscopy reveals B028 particles exhibit a roughly triangular shape with a foot-like protrusion. The most dominant classes (~40%) show a triangular shape with a long density element and upper globular domain. B028 shares morphological similarities with B complex (triangular views) and Bact complex (mushroom views), but clear structural differences exist between B028 and B complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe EM analysis of B028 (Figure 5). The morphological characterization is supported by class averages and comparison to published structures of B and Bact. The conclusion of structural differences is appropriately cautious, noting similarities and differences with both B and Bact complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Structure-activity relationship studies reveal that the fluorophenyl and furan groups are required for splicing inhibition (replacement abolishes activity), while the ethylphenyl group is not essential (modifications have minimal effect). Reduction of the conjugated double bond completely abolishes activity, suggesting cp028 may act by covalently modifying target proteins or that the double bond's rigidity is critical for activity. The ethylphenyl position could potentially be used for introducing tags to identify cp028 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C73 describe systematic SAR studies with multiple analogues (Figure 6 and supplements). The data clearly identify essential (fluorophenyl, furan, double bond) and non-essential (ethylphenyl) structural features. The mechanistic speculation about covalent modification (C72) is appropriately qualified as a possibility based on the double bond requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "cp028 represents a new tool to study pre-mRNA splicing mechanisms, particularly for dissecting the spliceosome activation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is a reasonable conclusion based on the demonstrated ability of cp028 to stall splicing at a novel intermediate stage (B028) that provides new insights into the stepwise nature of spliceosome activation. The compound's specificity and the functional nature of B028 support its utility as a research tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The B028 composition suggests U4/U6 protein loss occurs independently of Lsm/B-specific protein release, and that Prp19/CDC5L complex recruitment occurs after U4/U6 protein release. This is consistent with yeast studies showing NTC recruitment after U4 release. The Prp19/CDC5L complex and related proteins likely act as chaperones that help form/maintain the active RNA conformation, potentially shifting equilibrium toward the U2/U6 three-helix structure. NTC proteins are positioned near the U6 3' end in yeast Bact, likely making their binding mutually exclusive with Lsm proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C88 present mechanistic interpretations and models based on B028 composition, cited structural studies, and yeast genetics. While the inferences are logical and consistent with available data, they involve substantial speculation about order of events, protein functions, and structural transitions. The authors appropriately use qualifying language ('may,' 'likely,' 'suggest'), but definitive evidence for the proposed mechanisms is lacking. Key claims rely on analogy to yeast and structural data from other complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The target(s) of cp028 remain unclear, but effects at multiple assembly stages suggest multiple targets. The species specificity (no effect in yeast) suggests targeting of higher eukaryote-specific components. Potential targets include factors required for A to B transition (SPF30, hSAD1, hSART1, SR proteins, hPrp4K, SRPK2, Prp28) or factors involved in B to Bact transition (B-specific, Lsm, Bact, or Prp19/CDC5L proteins). Modified cp028 versions with tags at the ethylphenyl position could be used to identify targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C98 discuss potential mechanisms and targets but acknowledge the target remains unidentified. The speculation is reasonable based on the observed effects and known factors, but lacks direct experimental evidence. The proposal to use tagged analogues (C98) is a logical future direction but doesn't constitute a current result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Small molecule inhibitors are important tools for identifying spliceosome intermediates. The study demonstrates that U4/U6 snRNP proteins are released before U6 Lsm and B-specific proteins, and before Prp19/CDC5L complex recruitment. The U2/U6 RNA network in B028 differs from Bact, consistent with stepwise formation of the catalytic RNA core that is likely stabilized by Prp19/CDC5L complex proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 summarize the main findings from the abstract. These conclusions are well-supported by the detailed experimental data presented in the manuscript, including proteomic analysis (C100-C101), RNA structure probing (C102), and the logical inference of stepwise assembly (C103-C104) based on the B028 intermediate composition.",
+    "result_type": "MAJOR"
+  }
+]

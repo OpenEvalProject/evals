@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C23",
+      "C24",
+      "C66"
+    ],
+    "result": "Chronic social isolation (\u22657 weeks single-housing from weaning) reduces the excitability of dorsal raphe nucleus 5-HT neurons, as measured by decreased firing frequency in response to depolarizing current injections, optogenetic stimulation, and electrophysiological stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent stimulation methods (current injection, optogenetics, electrical stimulation) converge on the same finding with appropriate statistical tests (two-way repeated-measures ANOVA, p=0.003 for current injection; unpaired t-tests, p<0.05 and p<0.01 for optogenetic and electrical stimulation respectively). Sample sizes are adequate (33-38 neurons from \u22653 mice per group). The consistency across methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The reduced excitability of 5-HT neurons after social isolation does not result from altered membrane properties, GABA tone, or 5-HT1A receptor function, as demonstrated by measurements of membrane characteristics, GABA receptor blockade experiments, and 5-HT1A receptor agonist/antagonist studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors systematically exclude alternative mechanisms through appropriate control experiments. Membrane properties (RMP, input resistance, capacitance) show no differences (Figure 1\u2014supplement 1C). GABA receptor blockade does not eliminate group differences (Figure 1\u2014supplement 1D). 5-HT1A receptor responses and protein levels are comparable between groups, and WAY100635 blockade does not eliminate the excitability difference (Figure 1\u2014supplement 2). These negative controls strengthen the SK channel hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C36"
+    ],
+    "result": "Social isolation increases the afterhyperpolarization (AHP) in 5-HT neurons, with both peak AHP amplitude and AHP area significantly greater in single-housed mice compared to group-housed controls, rendering neurons less excitable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The AHP measurements show statistically significant increases in both peak amplitude and area (unpaired t-test, p<0.01 for both measures, Figure 1I-J). The claim that larger AHP renders neurons less excitable is well-established in the literature (C34, C35) and logically consistent with the reduced firing frequency observed. Sample sizes are adequate (33-37 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "5-HT neurons from socially isolated mice show reduced firing responses to excitatory neuromodulators (orexinB and phenylephrine), despite comparable receptor-mediated inward current amplitudes, indicating impaired excitability rather than altered receptor function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dissociation between reduced firing frequency (two-way ANOVA, p<0.001 for both neuromodulators) and preserved current amplitudes (p>0.05) is compelling evidence that the deficit is downstream of receptor activation. This supports an intrinsic excitability problem rather than altered neuromodulator sensitivity. Sample sizes are adequate (15-23 neurons per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C90"
+    ],
+    "result": "The reduced excitability results from alterations in SK channel function rather than changes in calcium dynamics, as demonstrated by: (1) CdCl2 blockade of voltage-gated calcium channels abolishing group differences, (2) apamin blockade of SK channels normalizing excitability, and (3) similar intracellular calcium responses between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological dissection is logical and well-controlled. CdCl2 eliminates group differences (Figure 1\u2014supplement 4A-B), implicating calcium-dependent mechanisms. Apamin normalizes excitability (Figure 1\u2014supplement 4C-D), specifically implicating SK channels. The similar calcium responses (dF/F) between groups (Figure 1\u2014supplement 4E-F) rule out altered calcium influx and point to SK channel expression/sensitivity changes. The logic chain is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C69",
+      "C84",
+      "C85",
+      "C89"
+    ],
+    "result": "Social isolation causes a shift in SK channel subtype function: SK2 channels contribute significantly to 5-HT neuron regulation in control mice but become non-functional after isolation, while SK3 channel expression increases significantly (Western blot, p=0.027) and blocking both SK2 and SK3 with apamin normalizes excitability in isolated mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a novel and well-supported finding. Lei-Dab7 (SK2-selective blocker) increases excitability in group-housed mice (two-way ANOVA, p=0.023) but has no effect in single-housed mice (p=0.13), demonstrating loss of SK2 function. Western blot shows increased SK3 expression in single-housed mice while SK2 remains unchanged. Apamin (blocking both subtypes) normalizes excitability (two-way ANOVA, p=0.42 for housing effect after apamin). The convergence of pharmacological and molecular evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Apamin application decreases the rheobase AHP in 5-HT neurons from both groups, making them comparable and confirming SK channels as the mechanistic basis for the enlarged AHP after social isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data show that apamin reduces both peak AHP and AHP area in both groups (two-way ANOVA, p<0.001 for drug effect), eliminating the group difference (Figure 2H-J). This directly links SK channel function to the AHP phenotype and provides mechanistic confirmation. The statistical analysis is appropriate with adequate sample sizes (8-18 neurons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C70",
+      "C71"
+    ],
+    "result": "Chronic social isolation induces anxiety- and depressive-like behaviors (increased latency to feed, increased immobility in tail suspension, decreased sucrose preference, increased overall emotionality), which are normalized or significantly improved by acute systemic apamin treatment (0.3 mg/kg i.p.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple behavioral assays converge on increased anxiety/depression phenotype in single-housed mice with appropriate statistics (one-way or two-way ANOVAs with post-hoc tests). Apamin treatment shows complete reversal in tail suspension (p<0.01) and sucrose preference (p<0.05), with trend-level improvement in novelty suppressed feeding (p=0.09). The integrated z-score analysis (Figure 3D) provides a composite measure showing normalization. Sample sizes are adequate (n=7-9 per group). However, the novelty suppressed feeding result is only a trend, limiting the strength of this specific claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Single-housed mice consume significantly more food in the homecage after novelty suppressed feeding test, and this hyperphagia is normalized by apamin treatment, suggesting SK channels may play a role in stress/anxiety-related feeding behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data show increased homecage food consumption in single-housed mice that is normalized by apamin (one-way ANOVA, p=0.026), this is a secondary observation from a different behavioral test. The interpretation that this represents stress/anxiety-related eating is speculative (C59 is explicitly labeled as speculation). The mechanism linking SK channels in 5-HT neurons to feeding behavior is not established. This finding requires replication and mechanistic investigation before strong conclusions can be drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C76",
+      "C86"
+    ],
+    "result": "Systemic inhibition of SK channels with apamin normalizes both the cellular excitability deficits in 5-HT neurons and the behavioral deficits induced by chronic social isolation, establishing a causal link between SK channel dysregulation and mood-related behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The convergence of cellular (Figures 1-2) and behavioral (Figure 3) effects of apamin provides strong evidence for causality. The same pharmacological manipulation (SK channel blockade) reverses both the neuronal hypoexcitability and the behavioral phenotypes. This bidirectional consistency (cellular mechanism \u2192 behavior, and pharmacological rescue of both) supports a causal relationship. However, the specificity could be questioned since apamin acts systemically and SK channels are expressed in multiple brain regions and tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C80",
+      "C88"
+    ],
+    "result": "SK channel modulation, particularly SK3-selective inhibition, is proposed as a promising therapeutic target for depression and anxiety disorders, though current limitations include lack of tissue/subtype-specific modulators and potential adverse effects of apamin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative therapeutic claims (C77, C80, C88 are labeled as speculation). While the data support SK3 upregulation as a mechanism in this social isolation model, extrapolation to human depression/anxiety disorders is premature. The authors acknowledge limitations: apamin has adverse effects in rats at doses close to the beneficial dose (C78), and lack of specific SK3 inhibitors is a major limitation (C79). The therapeutic potential requires extensive additional validation including specificity, safety, and efficacy in other depression models and ultimately clinical trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript establishes the context that social isolation is a risk factor for depression in humans and rodents, that 5-HT neurons are critical for mood regulation and vulnerable to stress, and that the effect of social isolation on DRN 5-HT neuron activity was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by appropriate citations to prior literature (C3-C10). The identification of the knowledge gap (C11) is accurate and justified. This contextualizes the novelty of the current work (C68, C75, C87) as the first direct examination of how social isolation affects DRN 5-HT neuron activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C34",
+      "C35",
+      "C37",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The manuscript provides appropriate background on 5-HT neuron physiology, including their inputs, neuromodulation, AHP characteristics, and SK channel subtypes, establishing the scientific foundation for the experimental approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by appropriate citations to established literature. They provide necessary context for interpreting the experimental findings. The identification that the discrete contribution of SK2 vs SK3 to 5-HT neuron excitability was unknown (C44) justifies the pharmacological approach using Lei-Dab7 and apamin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior research has linked SK3 channel polymorphisms to neuropsychiatric disorders, shown antidepressant-like effects of apamin in rodents, and demonstrated enhanced 5-HT release in SK3 null mice, providing precedent for the current findings while also highlighting limitations of apamin as a therapeutic agent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about prior work are supported by appropriate citations. They provide important context showing that the current findings align with previous genetic and pharmacological evidence linking SK channels to mood disorders. The acknowledgment of apamin's adverse effects (C78) and lack of specific inhibitors (C79) demonstrates appropriate critical assessment of therapeutic potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The experimental design used Tg(Tph2-COP4*H134R/EYFP)5Gfng mice with single-housing from weaning (p21) for \u22657 weeks compared to group-housed littermate controls, providing a chronic social isolation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described and appropriate. Using littermate controls minimizes genetic variability. The \u22657 week isolation period is sufficient to model chronic social isolation. The transgenic mouse line allows optogenetic identification and stimulation of 5-HT neurons. The experimental design is sound for addressing the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C75",
+      "C87"
+    ],
+    "result": "The authors claim this work provides the first direct link between chronic social isolation and functional alterations in DRN 5-HT neurons, and the first causal link between SK channel dysregulation and 5-HT neuron activity in a lifelong stress paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Based on the literature review presented (C10, C11), this appears to be an accurate assessment of novelty. Prior work examined 5-HT release and turnover in postsynaptic areas but not DRN 5-HT neuron activity directly. The combination of cellular mechanism (SK channel upregulation), neuronal phenotype (reduced excitability), and behavioral consequences (anxiety/depression-like behaviors) with pharmacological rescue provides strong evidence for the causal claims. The novelty claims are justified.",
+    "result_type": "MAJOR"
+  }
+]

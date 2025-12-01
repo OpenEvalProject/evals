@@ -1,0 +1,175 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Cortical spindles are spatiotemporally organized into circular wave-like patterns, with 50.8% classified as rotating waves and 15.6% as expanding waves. Rotating waves exhibit a directional bias (69.5% temporal\u2192parietal\u2192frontal, p<10\u207b\u00b9\u2070) with propagation speeds of 2-5 m/s, consistent across subjects and hemispheres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C21 provide converging evidence from multiple analyses (wave classification, directional bias with statistical significance, propagation speed measurements, cross-subject consistency) supported by extensive data in Figures 1 and supplements. The statistical testing is appropriate (binomial test, p<10\u207b\u00b9\u2070) and the propagation speeds match known white matter conduction velocities (C20), providing biological plausibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32"
+    ],
+    "result": "Rotating spindle wave patterns repeat with millisecond temporal precision over hours of sleep. Rotating waves show significantly higher intra-class similarity than other wave types (77.8% of epochs significant, KS test, \u03b1=0.01), with stronger rotating waves exhibiting greater temporal precision (5 ms alignment window for highest similarity cycles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate temporal precision through rigorous statistical analysis (Kolmogorov-Smirnov test with Bonferroni correction) and quantitative similarity metrics shown in Figure 3. The calculation linking similarity index to temporal precision (C30) is mathematically sound, using the measured spindle frequency (13.5 Hz). The inference about STDP-compatible precision (C32) is reasonable given the measured timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Similarity in the next rotating wave predicts the number of strong reverberations throughout the night in Subject 1, with this effect eliminated by shuffling controls and not observed for expanding waves. Similar observations are consistent across subjects, supporting the hypothesis that rotating waves enable strengthening of corticocortical assemblies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C36-C39 show data supporting increased reverberation with appropriate controls (shuffling, expanding wave comparison, cross-subject consistency in Figure 4 and supplements), the result is described as 'preliminary' with data primarily from Subject 1. The mechanistic claim (C40) remains speculative as no direct evidence of synaptic strengthening is provided. Additional subjects and direct plasticity measurements would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C7",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors propose a theoretical mechanism whereby rotating spindle waves with stereotyped trajectories could enable STDP-mediated synaptic strengthening despite long axonal conduction delays (up to 50 ms), in contrast to synchronized spindles which would cause long-term depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 present a logically coherent theoretical framework supported by established knowledge about STDP, axonal conduction delays, and neuronal firing during spindles (C23 with multiple citations). The theoretical predictions (C24, C25) are illustrated in Figure 2 and are consistent with the measured wave properties (C7). However, this remains a theoretical proposal requiring experimental validation of actual synaptic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C33"
+    ],
+    "result": "High gamma-band power (80-120 Hz), a correlate of spiking activity, consistently increases around spindles and is modulated by spindle phase, increasing toward the surface-positive peak, consistent with previous animal and human recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are well-supported by data in Figure 4A-B and Figure 4\u2014figure supplement 3, with appropriate citations establishing HGP as a spiking correlate (C33). The phase modulation finding (C35) is consistent with prior literature (Peyrache et al., 2011; Andrillon et al., 2011), providing validation. This result supports the link between field potential patterns and neuronal activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C41",
+      "C42"
+    ],
+    "result": "A substantial number of spindle oscillation cycles are organized into global, hemisphere-spanning patterns of rotating and expanding waves, likely established through widespread thalamocortical loops and shaped by corticocortical connections. This extends prior work proposing global spindle synchronization and recent reports of mixed local/global spindles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by data in Figure 1\u2014figure supplement 7 showing hemisphere-spanning patterns. The mechanistic interpretation (C44) is a reasonable inference based on known thalamocortical connectivity (Contreras et al., 1996) and the measured propagation speeds matching white matter conduction velocities. The contextualization with prior work (C41-C42) is appropriately cited and positions the findings within existing literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C3",
+      "C4",
+      "C13",
+      "C15",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors propose that stereotyped rotating wave patterns provide a novel mechanism for how spindles contribute to memory consolidation by enabling STDP to establish large-scale neuronal assemblies despite long axonal conduction delays, addressing a previously unclear aspect of sleep-dependent memory consolidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C47 presents a mechanistically plausible proposal supported by the observed wave patterns and temporal precision, it remains speculative (marked as SPECULATION in evidence_type). Claims C3, C13, C45 establish the importance of spindles for memory consolidation through citations, and C4, C15 identify the knowledge gap. However, no direct evidence linking the observed wave patterns to actual memory consolidation or synaptic plasticity changes is provided. This is a hypothesis requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study used ECoG recordings from five epilepsy patients during natural sleep, with electrode placement determined by clinical criteria. Data collection, processing, and spindle detection methods are described, yielding 54 epochs of stage 2 sleep (15-101.5 min per patient) with spindle detection validated against previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C62 provide comprehensive methodological details with appropriate citations for established techniques (electrode localization C54, cortical surface computation C55, sleep scoring C57, spindle detection C59-C60). The validation of spindle detection against prior literature (C60) strengthens confidence in the data. However, the use of epilepsy patients is a limitation not explicitly addressed in these claims, though electrode placement was clinically determined (C50), potentially affecting coverage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spatial correlation values are elevated during spindle oscillations compared to non-spindle periods, indicating large-scale coherent activity. The analytic signal representation was used for phase extraction, and analysis code is publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by data in Figure 1\u2014figure supplement 1B with appropriate citation (Destexhe et al., 1999). The mathematical method (C64) is standard and correctly described. Code availability (C65) supports reproducibility. These are appropriate validation and methodological transparency measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "The manuscript establishes background knowledge about sleep spindles, memory consolidation, and cortical connectivity, including that thalamus generates 11-15 Hz spindle oscillations that synchronize cortex, spindles are critical for memory consolidation, and long-range cortical connections result from excitatory pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C12, C14 represent established knowledge appropriately supported by citations to foundational literature (Contreras et al., 1996; McClelland et al., 1995; Rasch and Born, 2007; Wheeler et al., 2000; Horner et al., 2015; Sholl, 1956; Sch\u00fcz et al., 2002). These provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  }
+]

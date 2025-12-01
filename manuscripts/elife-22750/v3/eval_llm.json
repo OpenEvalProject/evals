@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C25",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "miRNAs and siRNAs show distinct partitioning between ER/microsomal and cytosolic fractions, with miRNAs enriched in membrane fractions while P4siRNAs are depleted from membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C20, C21, C25, C28, C29 are supported by sRNA-seq data from multiple fractionation methods (microsome, ER-IP) showing consistent enrichment of miRNAs and depletion of P4siRNAs in membrane fractions. The use of rRNA normalization (C26) and validation with nrpd1-1 mutant controls strengthens the quantitative comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "All miRNAs, including both 21-nt and 22-nt isoforms, are specifically associated with membrane-bound polysomes (MBPs) rather than polysomes in general. Many miRNAs produce 22-nt isoforms through imprecise DCL1 processing, predominantly via 3' extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C31, C32, C36 are strongly supported by sRNA-seq comparing MBP vs. TP fractions showing enrichment of miRNAs in MBPs. Claims C35, C37, C38, C39 regarding 22-nt isoform generation are supported by size analysis and dcl mutant data. The identification of 188 22-nt hyper DSRs (C34) with 31 overlapping MIR genes provides genomic-scale validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C92",
+      "C93"
+    ],
+    "result": "Most cellular mRNAs, including miRNA target transcripts, are present on both MBPs and free polysomes (FPs), with many transcripts enriched on MBPs, indicating that translation occurs on both rough ER and in the cytosol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46, C92-C93 are supported by RNA-seq data comparing MBP, FP, microsome, and cytosol fractions. The validation using transmembrane domain-containing proteins (C42, C43) as positive controls strengthens the conclusion. The clustering analysis (referenced in figures) and the observation that miRNA targets are equally represented on MBPs and FPs (C45) support the broad conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "AGO1 associates with membranes and MBPs in a manner that is largely independent of miRNAs and intact target RNAs, but AGO1's MBP association depends substantially on intact mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C55 are supported by western blot data from multiple experiments. The miRNA-independence (C49, C50) is demonstrated using dcl1 and hyl1 mutants. RNase I treatment experiments (C51, C52, C54, C55) distinguish between membrane association (partially resistant) and MBP/polysome association (sensitive to RNase I). The absence of AGO4 in membrane fractions (C48) serves as an appropriate negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C98"
+    ],
+    "result": "AGO1 is instrumental in recruiting miRNAs to membranes, as demonstrated by drastically reduced membrane association of most miRNAs in ago1-27 mutant, while miR390 (which associates with AGO7) remains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62, C98 are supported by sRNA-seq and northern blot data from ago1-27 and ago1-36 mutants. The use of miR390 as an internal control (C61, C69) is appropriate since it binds AGO7 rather than AGO1. The observation that overall miRNA levels are largely unaffected (C58) while membrane association is reduced (C59, C60) specifically implicates AGO1 in membrane recruitment rather than miRNA stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C97"
+    ],
+    "result": "miRNA-guided cleavage of target RNAs occurs on membrane-bound polysomes, as demonstrated by in vitro slicer assays with microsomal AGO1 and detection of precise cleavage products from MBP RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, C97 are supported by in vitro slicer assays using AGO1 immunoprecipitated from microsomes (C64) and 5' RACE RT-PCR showing precise cleavage at expected positions in both M and MBP fractions (C65). The data directly demonstrate that the cleavage machinery is functional on membranes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "phasiRNA production from most known phasiRNA-generating loci is functionally linked to MBP association, as reduced membrane association of triggering miRNAs in ago1-27 correlates with reduced phasiRNA levels or loss of phasing, while TAS3 ta-siRNAs (triggered by AGO7) remain unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C70-C72, C99 are supported by sRNA-seq showing reduced phasiRNA levels in ago1-27 for 21 of 23 non-TAS3 loci. The correlation with reduced membrane association of triggering miRNAs (C78, C100) is demonstrated. The preservation of AGO1-27 slicer activity (C75, C76, C77) rules out a general cleavage defect. TAS3 ta-siRNAs serve as an appropriate control (C73, C74), being unaffected in ago1-27 as expected for AGO7-dependent processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C101"
+    ],
+    "result": "TAS transcripts, previously thought to be noncoding, are present on MBPs and occupied by ribosomes in a specific pattern where the miRNA-binding site is positioned at the boundary between ribosome-protected and non-protected regions, with the non-protected regions generating ta-siRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are strongly supported by ribo-seq data showing sharp boundaries between ribosome-protected and non-protected portions of TAS transcripts, with miRNA-binding sites precisely at these boundaries. The correlation between ribosome-free regions and ta-siRNA production (C86) is demonstrated by comparing sRNA-seq and ribo-seq data. Claims C88, C89 regarding the functional significance are reasonable inferences from the data, though they represent mechanistic interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Two new phasiRNA-generating loci were identified: CIL2 (At3g23690) targeted by miR393 and At5g43740 (NBS-LRR gene) targeted by miR472.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115, C116 are supported by phasing analysis data showing characteristic phasiRNA production patterns from these loci. The identification extends the known repertoire of phasiRNA-generating loci in Arabidopsis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose a model where the rough ER environment inhibits phasiRNA production from most transcripts despite widespread production of 22-nt miRNA isoforms, and that TAS genes have evolutionarily adapted through optimal positioning of miRNA binding sites relative to ribosome occupancy to enable phasiRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C113 represent a proposed mechanistic model based on the observations but lack direct experimental validation. While C109 is supported by data showing many 22-nt isoforms exist, C110-C113 are speculative interpretations. The model is consistent with the data but alternative explanations have not been ruled out. Claim C114 is a reasonable inference from the collective findings but represents a broad conclusion requiring additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "This study confirms and extends prior observations of TAS3 ribosome association to other TAS RNAs and reveals their association with MBPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by ribo-seq and RNA-seq data. The confirmation of TAS3 ribosome association validates the methodology, while the extension to other TAS RNAs (C107) and demonstration of MBP association (C108) represent novel findings building on prior work.",
+    "result_type": "MINOR"
+  }
+]

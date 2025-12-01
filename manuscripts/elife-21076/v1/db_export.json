@@ -1,0 +1,2349 @@
+{
+  "submission": {
+    "id": "8dabb802-0202-4cc0-89c1-8bcc40aa8ecc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:39:11.630885Z",
+    "updated_at": "2025-11-30T22:39:11.630885Z"
+  },
+  "content": [
+    {
+      "id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "submission_id": "8dabb802-0202-4cc0-89c1-8bcc40aa8ecc",
+      "content_type": "manuscript",
+      "content_text": "# Coincident postsynaptic activity gates presynaptic dopamine release to induce plasticity in Drosophila mushroom bodies\n\n## Authors\n\n- Kohei Ueno<sup>1</sup> \u2020\n- Ema Suzuki<sup>1</sup>\n- Shintaro Naganos<sup>1</sup>\n- Kyoko Ofusa<sup>1</sup>\n- Junjiro Horiuchi<sup>1</sup>\n- Minoru Saitoe<sup>1</sup> ([ORCID: 0000-0001-9731-4214](https://orcid.org/0000-0001-9731-4214)) \u2020\n\n### Affiliations\n\n1. Learning and Memory Project Tokyo Metropolitan Institute of Medical Science Setagaya Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nSimultaneous stimulation of the antennal lobes (ALs) and the ascending fibers of the ventral nerve cord (AFV), two sensory inputs to the mushroom bodies (MBs), induces long-term enhancement (LTE) of subsequent AL-evoked MB responses. LTE induction requires activation of at least three signaling pathways to the MBs, mediated by nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1 dopamine receptors (D1Rs). Here, we demonstrate that inputs from the AL are transmitted to the MBs through nAChRs, and inputs from the AFV are transmitted by NRs. Dopamine signaling occurs downstream of both nAChR and NR activation, and requires simultaneous stimulation of both pathways. Dopamine release requires the activity of the rutabaga adenylyl cyclase in postsynaptic MB neurons, and release is restricted to MB neurons that receive coincident stimulation. Our results indicate that postsynaptic activity can gate presynaptic dopamine release to regulate plasticity.\n\n## Introduction\n\nDopamine (DA) signaling is required for associative learning and synaptic plasticity (Jay, 2003; Kim et al., 2007; Puig and Miller, 2012; Qin et al., 2012). However, its precise function in these processes is not known. In associative learning, where a conditioned stimulus or CS (e.g. a neutral odor) is paired with an unconditioned stimulus or US (e.g. aversive electrical shocks or appetitive food rewards), DA activity often correlates with US presentation (Aso et al., 2010; Burke et al., 2012; Riemensperger et al., 2005; Schwaerzel et al., 2003; Waddell, 2013). Indeed, in Drosophila, the\u00a0activation of different subsets of dopaminergic neurons (DANs) can substitute for the\u00a0presentation of aversive or appetitive stimuli during training (Aso et al., 2010; Burke et al., 2012; Claridge-Chang et al., 2009; Schwaerzel et al., 2003; Waddell, 2013). This suggests that DA functions to transmit US information to olfactory association areas in the Drosophila brain. However, results from mammals suggest that the function of DA is more complex. While the\u00a0DAN activity initially correlates with US presentation, as animals learn to associate the CS with the US, activity becomes correlated with the CS (Wise, 2004). DAN activity also correlates with the unexpectedness of the US presentation. In reward or punishment prediction error paradigms, a reward or punishment that is expected causes little change in activity, while a reward or punishment that is obtained or withheld unexpectedly induces strong increases or decreases in activity (Bromberg-Martin et al., 2010; Busto et al., 2010; Schultz, 2013; Waddell, 2013). To more precisely understand the role of DA in learning and plasticity, here we examined DA release properties in dissected Drosophila brains.\n\nIn Drosophila aversive olfactory conditioning, presentation of a relatively neutral odor is paired with presentation of aversive electric shocks (Quinn et al., 1974; Tully and Quinn, 1985). Flies learn to associate the odor with the aversive stimulus and subsequently avoid the odor. This association forms in the mushroom bodies (MBs) of the Drosophila brain (Heisenberg, 2003). Odor information is transmitted to the MBs from the antennal lobes (ALs) via projection neurons (Ito et al., 1998; Stocker, 1994), while shock information is likely transmitted from the body through the ascending fibers of the ventral nerve cord (AFV). Previously, we and others developed a functional imaging system using isolated Drosophila brains to study synaptic plasticity in the MBs (Ueno et al., 2013; Wang et al., 2008). Electrical stimulation of the ALs or AFV induces Ca2+ influx in the MBs of dissected brains. However, simultaneous stimulation of both the ALs and AFV causes long-term enhancement (LTE) of subsequent AL-induced Ca2+ responses in the MBs that lasts for at least two hours.\n\nWhile LTE is a physiological phenomenon, it shares several similarities with associative learning. Both LTE and learning require activity of at least three neurotransmitter receptors, nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1Rs (Kim et al., 2007; Qin et al., 2012; Ueno et al., 2013; Xia et al., 2005). In addition, LTE formation requires associativity between the two input stimuli, since increasing the stimulus intensity or duration of one input is insufficient to bypass the requirement of the other (Ueno et al., 2013). LTE also displays input specificity. MB responses to AL stimulation, but not AFV stimulation, are enhanced. Similarly, during associative learning, responses to odors are modified, but not responses to electrical shocks (Quinn et al., 1974). Finally, LTE can be extinguished by repetitive AL stimulation in the absence of AFV stimulation (Ueno et al., 2013), a phenomenon reminiscent of learning extinction (Quinn et al., 1974).\n\nThe dissected brain imaging system allows characterization of synaptic plasticity using a combination of mutant and pharmacological analyses. In this study, we examined when DA is released during LTE induction using both the fluorescent Ca2+ reporter, G-CaMP (Nakai et al., 2001) or R-GECO1 (Zhao et al., 2011), and the vesicular exocytosis probe, synapto-pHluorin (spH) (Miesenb\u00f6ck et al., 1998). We determined that stimulation of either the ALs or AFV alone is unable to evoke release. Instead, simultaneous activation of postsynaptic MBs, by both AL and NR-mediated AFV inputs, is required. Application of DA to the MBs on its own is sufficient to induce LTE, and DA release requires rutabaga adenylyl cyclase (Rut-AC) in the MBs. We propose that sensory information is conveyed to the MBs through acetylcholine and glutamate, and that coincident stimulation of postsynaptic neurons is required to gate presynaptic DA release to induce plasticity in specific targets.\n\n## Results\n\n### AFV stimulation causes vesicular release from glutamatergic terminals\n\nSimultaneous stimulation of the AL and AFV (AL + AFV) induces LTE that can be measured at the tip of MB vertical lobes. (Ueno et al., 2013) (Figure 1A). To first verify whether cholinergic PNs, which connect the ALs to the MBs, transmit AL stimuli to the MBs, we expressed spH in PNs to visualize synaptic vesicle exocytosis (Figure 1B). We also expressed the red-fluorescent Ca2+ indicator, R-GECO1 (Zhao et al., 2011) in MBs to verify that AL stimulation induces Ca2+ responses in the MBs (Figure 1B). In the absence of AL stimulation, we observed baseline spH fluorescence in PN terminals in the MB calyx (short arrowheads), lateral horn (long arrowheads), and in PN dendrites in the AL. spH fluorescence was also observed in the MBs, since the GH146-PN driver also labels anterior posterior lateral (APL) neurons which innervate the MBs (Tanaka et al., 2008). Upon stimulation of the ALs, we observed increased spH fluorescence in PN terminals, including those in the MB calyx, the MB region receiving inputs from PNs. We also observed robust Ca2+ responses in the vertical lobes of the MBs (Figure 1C), indicating that AL stimulation causes both synaptic vesicle exocytosis from PN terminals on the MB calyx and Ca2+ response in MB lobes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the stimulation/recording system. (B) Fluorescent images of a representative MB-LexA,LexAop-R-GECO1/UAS-spH, GH146-GAL4 brain. (C) AL stimulation induced Ca2+ responses in the MBs, and evoked vesicle exocytosis from PN terminals of the PNs. Left panel, the\u00a0time course of spH and R-GECO1 fluorescence changes upon AL stimulation. spH fluorescence changes upon AL stimulation (green) and background (black) were measured in the MB calyces (typical images are shown in middle panels), and R-GECO1 fluorescence (red) was measured at the terminals of the MB vertical lobes. The gray bar in the right panel indicates AL stimulation. Right panel, spH responses were obtained by subtracting background fluorescence changes from stimulation-evoked fluorescence changes. One-way ANOVA indicates significant differences in fluorescence (F3,40\u00a0=\u00a04.769, p=0.006). N\u00a0=\u00a011. (D) Fluorescent images of a MB-LexA,LexAop-R-GECO1/UAS-spH;TH-GAL4/+ brain. (E) AFV stimulation did not evoke exocytosis from TH-DA neuron terminals. Left panel, time course of spH and R-GECO1 fluorescence changes upon AFV stimulation. Middle panels, typical images of spH fluorescence changes at TH-DA neuron terminals on the vertical MB lobes. Right panel, one-way ANOVA indicates no significant differences in spH fluorescence (F3,36\u00a0=\u00a00.061, p=0.980). N\u00a0=\u00a010. (F) Fluorescent images of a MB-LexA,LexAop-R-GECO1/UAS-spH;GMR51C07-GAL4/+ brain. (G) AFV stimulation evoked vesicle exocytosis at glutamatergic terminals at the tip of vertical MB lobes. Changes in spH and R-GECO1 fluorescence produced upon AFV stimulation. Right panel, One-way ANOVA indicates significant differences in spH flurorescence (F3,20\u00a0=\u00a04.927, p=0.010). N\u00a0=\u00a06.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) When GMR51C07-GAL4/UAS-shits flies are trained and tested at the permissive temperature, 15 min memory is unaffected compared to controls. (B) when these flies are trained at a restrictive temperature (30\u00b0C) and tested at the permissive temperature, 15 min memory is significantly reduced.\n\nNext, to test whether DA signaling transmits AFV stimuli to the MBs, we expressed spH in (tyrosine hydroxylase)\u00a0TH-expressing DA neurons and R-GECO1 in the MBs (Figure 1D). In this case, baseline spH fluorescence was observed in DAN axonal terminals in various brain regions, including the MB vertical lobes (dotted region in Figure 1D). When we next stimulated the AFV, we again observed robust Ca2+ responses in the MBs. However, we did not observe increased spH fluorescence in the MB vertical lobes (Figure 1E). This suggests that, although DA signaling is required for LTE, TH-DA neurons may not be directly responsible for transmitting AFV information to the MBs.\n\nWe previously showed that the NR antagonist, MK801, impairs AFV-evoked MB Ca2+ responses and LTE (Ueno et al., 2013), suggesting that glutamate (Glu), rather than DA, may transmit AFV signals to the MBs. Furthermore, synaptic terminals immunoreactive for the vesicular Glu transporter, VGLUT, have been identified at the tip of the MB vertical lobes, where LTE is strongly induced (Daniels et al., 2008). Thus, to test whether AFV stimulation induces vesicular exocytosis from glutamatergic terminals, we expressed spH using the GMR51C07-VGlut-GAL4 driver, and R-GECO1 in MBs using MB-LexA. GMR51C07-VGlut-GAL4 contains approximately 3 KB of the 5\u2019 flanking sequence of the VGlut gene and drives GAL4 expression in a subset of glutamatergic neurons innervating the tip of the MB vertical lobes (Figure 1F). In the absence of AFV stimulation, we observed baseline spH fluorescence at the tips of the MB vertical lobes and in the central complex. AFV stimulation caused significant increases in both spH and R-GECO1 fluorescence at the MB vertical lobe tips (Figure 1G), suggesting that stimulation induces exocytosis from GMR51C07-VGlut terminals onto the MBs.\n\nIf glutamatergic input from GMR51C07 neurons transmits somatosensory information from the AFV to the MBs, inhibiting activity of GMR51C07 neurons should impair learning or memory. To test this, we next inhibited synaptic output from GMR51C07 neurons during learning, by expressing shits, a temperature-sensitive dominant-negative variant of dynamin (Kitamoto, 2001) in these cells. When GMR51C07>shits flies were trained in an aversive olfactory associative paradigm at the permissive temperature, short-term memory (STM) was unaffected compared to controls. In contrast, when these flies were trained at the restrictive temperature, memory was significantly impaired (Figure 1\u2014figure supplement 1). Thus, GMR51C07 cells both release glutamate to the MBs upon AFV stimulation, and are required during formation of aversive memories.\n\nConsistent with idea that Glu transmits AFV inputs required for LTE to the MBs, we found that a Drosophila NR1 hypomorphic mutant, Nmdar1EP331 (Xia et al., 2005), is defective for both AFV-induced MB Ca2+ responses (Figure 2A), and LTE (Figure 2B). Furthermore, we found that AFV stimulation could be replaced by the\u00a0direct application of NMDA by micropipette onto the terminals of the MB vertical lobes (Figure 2C), to induce LTE (Figure 2D). Application of NMDA in the absence of AL stimulation did not induce LTE, indicating that NMDA can replace AFV, but not AL, stimulation. To determine whether NRs in the MBs mediate NMDA signaling, we next knocked down NRs in the MBs by expressing inverted repeats of Nmdar2 (Nmdar2-IR) from the OK107-GAL4 driver, and found that coupled AL stimulation and NMDA application (AL+ NMDA) failed to induce LTE (Figure 2E). Knocking down NRs in the MBs also inhibited learning (3 min memory) in adult Drosophila, again suggesting a link between LTE and learning-associated plasticity (Figure 2\u2014figure supplement 1). Taken together, our results suggest that AFV input to the MBs is transmitted via Glu neurons onto MB NRs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig2-v1.jpg)\n\n**Figure 2.:** (A) AFV-evoked Ca2+ responses in the MBs are significantly diminished in Nmdar1EP331 mutants. Upper panel, typical images of G-CaMP fluorescence immediately after AFV stimulation in MB-LexA, LexAop-G-CaMP2 (control) and MB-LexA, LexAop-G-CaMP2; Nmdar1EP331 mutants. (B) LTE induced by AL+AFV stimulation is abolished in Nmdar1 mutants. The upper panels show a schematic diagram of the LTE induction protocol, and typical traces of AL-induced Ca2+ responses before and 15 min after induction. Arrowheads indicate AL-stimulation. Lower panels, one-way ANOVA indicates significant LTE in controls (filled columns, F3,20\u00a0=\u00a09.347, p<0.001) but not in Nmdar1 mutants (blank columns, F3,20\u00a0=\u00a00.621, p=2.900). N\u00a0=\u00a06. (C) Schematic of LTE induction by simultaneous AL stimulation and puff application of NMDA (AL + NMDA). Dotted lines in the\u00a0lower panel indicate the position of a micropipette. (D) LTE induced by simultaneous AL stimulation and NMDA application. One-way ANOVA indicates significant LTE upon AL + NMDA (F2,18\u00a0=\u00a06.062, p=0.010, N\u00a0=\u00a07) but not upon NMDA puff alone (F2,18\u00a0=\u00a01.470, p=0.256, N\u00a0=\u00a07). (E) Expressing Nmdar2-IR in the MBs from the OK107-GAL4 driver (MB-LexA, LexAop-G-CaMP2/+; UAS-Nmdar2-IR/+; OK107-GAL4/+) abolishes LTE. Left panel, one-way ANOVA did not identify significant differences between time points (F2,15\u00a0=\u00a00.031, p=0.969, N\u00a0=\u00a06). One-way ANOVA indicates significant LTE in control flies containing the OK107-GAL4 driver alone (F2,12\u00a0=\u00a05.169, p=0.024 for GAL4 alone, N\u00a0=\u00a05), or the UAS-Nmdar2-IR construct alone (F2,15\u00a0=\u00a011.388, p<0.001, N\u00a0=\u00a06).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Knocking down NRs in the MBs by expressing different inverted repeats of Nmdar2 (Nmdar2-IR) from the OK107-GAL4 driver reduces 3 min memory compared to driver alone controls.\n\n### D1R activation is sufficient to induce LTE\n\nIf ACh and Glu transmit AL and AFV inputs to the MBs, what is the function of DA? Drosophila D1Rs, encoded by the DopR gene, are required for LTE induced by AL + AFV stimulation (Ueno et al., 2013). To determine the epistatatic relationship between DA and Glu signaling during LTE induction, we examined AL + NMDA-induced LTE, and found that it is abolished in DopRf02676, DopR null mutant, brains (Kim et al., 2007) (Figure 3A). Furthermore, addition of 50 \u03bcM of the Drosophila D1R antagonist, butaclamol (Sugamori et al., 1995) prevented induction of AL + NMDA-induced LTE in wild-type brains (Figure 3B). These results indicate that D1R functions downstream of Glu/NR signaling during LTE formation. Thus, we next performed bypass experiments to determine whether application of DA could replace NMDA application during LTE induction. When AL stimulation was paired with application of DA (AL + DA), we observed significant LTE (Figure 3C). Surprisingly, we also detected LTE formation upon application of DA alone in the absence of AL stimulation (Figure 3D). Although this result was unexpected since it seems to bypass the specificity requirement for formation of associations, it is consistent with a model where DA signaling functions after association of simultaneous AL and AFV inputs during LTE formation. Further supporting this model, DA-induced LTE was not impaired in brains from Nmdar1EP331 mutants (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig3-v1.jpg)\n\n**Figure 3.:** (A) DopRf02676 mutations suppress LTE induced by AL + NMDA stimulation. Left panel, MB-LexA, LexAop-G-CaMP2/+, one-way ANOVA (F2,18\u00a0=\u00a05.932, p<0.001). Right panel, MB-LexA, LexAop-G-CaMP2/+; DopRf02676, one-way ANOVA (F2,18\u00a0=\u00a03.479, p=0.053). N\u00a0=\u00a07 for both genotypes. (B) LTE induced by AL + NMDA stimulation in MB-LexA, LexAop-G-CaMP2 brains is abolished by the\u00a0addition of the D1R antagonist 10 min prior to AL + NMDA stimulation. Control, F2,15\u00a0=\u00a022.148, p<0.001, butaclamol, F2,15\u00a0=\u00a00.334, p=0.801, N\u00a0=\u00a06 for all data. (C) LTE is induced by simultaneous AL + DA stimulation in c309-GAL4; UAS-G-CaMP brains, F2,18\u00a0=\u00a05.374, p=0.015, N\u00a0=\u00a07. (D) LTE can be induced by application of DA alone. One-way ANOVA (F2,18\u00a0=\u00a025.306, p<0.001, N\u00a0=\u00a07). (E) DA-induced LTE in Nmdar1EP331 mutants is indistinguishable from DA-induced LTE in controls. Left panel, MB-LexA, LexAop-G-CaMP2/+, one-way ANOVA (F2,18\u00a0=\u00a022.591, p<0.001, N\u00a0=\u00a07). Right panel, MB-LexA, LexAop-G-CaMP2/+; Nmdar1EP331, one-way ANOVA (F2,15\u00a0=\u00a010.335, p=0.002, N\u00a0=\u00a06). (F) DA-induced LTE is restored in DopRf02676 mutants by expressing a DopR transgene in the MBs. Control (MB-LexA, LexAop-G-CaMP2/+), one-way ANOVA (F2,15\u00a0=\u00a08.261, p=0.004). DopRf02676 (MB-LexA, LexAop-G-CaMP2/+; DopRf02676), one-way ANOVA (F2,15\u00a0=\u00a00.111, p=0.351). Rescude (MB-LexA, LexAop-G-CaMP2/c747-GAL4; DopRf02676), one-way ANOVA (F2,15\u00a0=\u00a05.556, p=0.016). N\u00a0=\u00a06. (G) LTE induced by DA alone is indistinguishable from LTE induced by AL + DA stimulation. Peak LTE responses plotted as a function of DA concentration. Two-way ANOVA demonstrated significant differences in Ca2+ responses due to DA concentration (F2,30\u00a0=\u00a022.49, p<0.0001), but no differences due to the\u00a0stimulation protocol (DA alone versus DA + AL, F1,30\u00a0=\u00a02.869, p=0.1007, N\u00a0=\u00a06).\n\nWe previously showed that LTE induced by simultaneous AL + AFV stimulation requires the\u00a0expression of D1Rs specifically in the MBs (Ueno et al., 2013). To determine whether DA-induced LTE also depends on MB expression of these receptors, we carried out rescue experiments using an inducible DopR mutant. The DopRf02676 allele consists of a UAS-containing transposon inserted into the DopR locus, and DopRf02676 mutants do not express DopR, unless they also contain a GAL4 driver (Kim et al., 2007; Thibault et al., 2004). The\u00a0DA-induced LTE was fully restored in DopRf02676 mutants when DopR was expressed from c747-Gal4, a MB driver predominantly expressing GAL4 in \u03b1/\u03b2 and \u03b3 lobes (Aso et al., 2009) (Figure 3F). Dose response curves plotting LTE magnitude as a function of DA concentration were not different when DA was applied alone or with simultaneous AL stimulation (Figure 3G), suggesting that the\u00a0DA-induced LTE is unlikely to be an artifact of excess DA application.\n\nTo determine whether DA functions during LTE formation, or during maintenance or expression, we induced LTE by DA application, and added the D1R antagonist, SCH23390 (Sugamori et al., 1995), either during DA application, or after washout during maintenance or expression phases. The\u00a0addition of antagonist during DA treatment abolished LTE (Figure 4A), while addition during maintenance and expression phases had no effect (Figure 4B). This discounts the possibility that residual DA remaining after washout is a\u00a0responsible expression or maintenance of LTE, and instead indicates that DA is required during LTE induction. DA application induced LTE even under external Ca2+ free conditions, and in the presence of tetrodotoxin (TTX), which prevents the generation of action potentials (Figure 4C), suggesting that DA release and MB D1R activation occur at a late step of LTE induction where subsequent neurotransmission is not required.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig4-v1.jpg)\n\n**Figure 4.:** (A) DA-induced LTE was abolished by applying 100 \u03bcM SCH23390 10 min prior to treatment with 200 \u03bcM DA in c309-GAL4; UAS-G-CaMP brains. One-way ANOVA indicates significant differences between time points in DA alone (F2,15\u00a0=\u00a011.050, p=0.001) but not in DA + SCH23390 (F2,15\u00a0=\u00a00.051, p=0.950). N\u00a0=\u00a06. (B) LTE was unaffected when SCH23390 was applied immediately after DA treatment in c309-GAL4; UAS-G-CaMP brains. One-way ANOVA indicates significant differences between time points (F2,15\u00a0=\u00a014.745, p=<0.001, N\u00a0=\u00a06). (C) DA-induced LTE was not suppressed in external Ca2+ free solution containing 1 mM EGTA and 100 nM tetrodotoxin (TTX) in c309-GAL4; UAS-G-CaMP brains. One-way ANOVA indicates significant differences between time points in control (F2,15\u00a0=\u00a09.926, p=0.002, N\u00a0=\u00a06).\n\n### Coincidently activated MB neurons gate DA release to induce LTE\n\nIf DA signaling occurs downstream of AL + NMDA stimulation, DA release may be regulated by coincident AL and AFV inputs. To test this, we re-examined vesicular exocytosis from TH-DA neuron terminals by expressing spH in TH-DA neurons, and observed significant elevation of spH fluorescence from TH-DA neuron terminals on the MB vertical lobes upon simultaneous AL stimulation and NMDA application (Figure 5A). spH fluorescence was unchanged upon either AL stimulation or NMDA application alone. Likewise, spH fluorescence increased significantly in TH-DA neuron terminals upon simultaneous AL and AFV stimulation (Figure 5B). These results are consistent with a model where presynaptic DA release is gated by postsynaptic MB neurons that are activated by coincident AL and AFV inputs. Alternately, it is possible that while cholinergic and glutamatergic inputs to the MBs are required for LTE, separate cholinergic and glutamatergic inputs to DA neurons may also be required for DA release. To test this possibility, we used a dominant negative form of the nAChR\u03b17 subunit, nAChR\u03b17Y195T, to inhibit nicotinic AChR activation (Mejia et al., 2013). We confirmed that the expression of nAChR\u03b17Y195T in MBs effectively disrupts both cholinergic transmission from AL to MBs and release of DA from TH-DA terminals upon AL + NMDA stimulation (Figure 5C and D). However, when we expressed nAChR\u03b17Y195T in TH-DA neurons, we still observed significant increases in spH fluorescence from TH-DA neuron terminals upon coincident AL + NMDA stimulation (Figure 5E). This suggests that coincident inputs to MBs, but not TH-DA neurons, are required for DA release.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig5-v1.jpg)\n\n**Figure 5.:** (A) Time course of spH fluorescence changes and quantification of spH responses at TH-DA terminals on the vertical lobes of the MBs upon indicated treatments. Brains were first exposed to 100 \u00b5M NMDA for 1 min while spH fluorescence was scanned (blue traces). Following washout and a 3 min interval, spH fluorescence was scanned while brains were subjected to 5 trains of AL stimulation (red traces). After another 3 min interval, spH fluorescence was scanned while brains were exposed simultaneously to NMDA and AL stimulation (green traces). Black traces show spH fluorescence in the absence of stimulation. Arrows represent AL stimulation. One-way ANOVA indicates significant differences between time points upon AL + NMDA stimulation (F4,25\u00a0=\u00a06.593, p=0.001, N\u00a0=\u00a06). (B) Time course of spH fluorescence changes and quantification of spH responses at TH-DA terminals induced by AL + AFV stimulation. One-way ANOVA indicates significant differences between time points (F4,25\u00a0=\u00a06.593, p=0.001, N\u00a0=\u00a06). (C) Ca2+ responses in the MBs upon AL stimulation are inhibited by expressing dominant negative nAChRs, nAChR(DN)s, in the MBs. Control, UAS-G-CaMP3/+;;OK107 and nAChR(DN), UAS-G-CaMP3/UAS- nAChR\u03b17Y195T;;OK107. Stimulus intensities of 1.0 and 1.5 refer to pulse durations of 1.0 and 1.5 ms, respectively. Two-way ANOVA indicates significant differences due to stimulus intensity (F1,20\u00a0=\u00a020.58, p=0.0002) and genotype (F1,20\u00a0=\u00a028.7, p<0.0001). N\u00a0=\u00a06 for all genotypes. (D) Expression of nAChR(DN)s in MB neurons abolishes AL + NMDA stimulation-induced DA release. One-way ANOVA indicates significant differences between time points upon AL + NMDA stimulation in control (F3,32\u00a0=\u00a011.888, p<0.001) but not nAChR(DN) brains (F3,32\u00a0=\u00a00.664, p=0.058). (E) Expression of nAChR(DN)s in TH-DA neurons does not affect the\u00a0DA release induced by AL + NMDA stimulation. Control, UAS-spH/+; TH-GAL4/+ and nAChR DN, UAS-spH/ UAS-nAChR\u03b17Y195T; TH-GAL4. One-way ANOVA indicates significant differences between time points upon AL + NMDA stimulation in control (F3,28\u00a0=\u00a09.59, p=0.0002) and nAChR DN brains (F3,28\u00a0=\u00a03.45, p=0.0298). N\u00a0=\u00a08 for all genotypes.\n\nWe next examined the mechanism through which MB neurons might detect coincident inputs. In Drosophila, the rutabaga (rut) gene encodes an adenylyl cyclase (Rut-AC) that is required in the MBs during associative learning (Busto et al., 2010), and is proposed to function as a coincidence detector. We found that Rut-AC is also required for LTE formation (Figure 6A). To determine whether Rut-AC is required for DA release following coincident AL + NMDA stimulation, we examined release in rut2080 mutants (Levin et al., 1992), and observed significant impairments (Figure 6B and D). Significantly release was restored when a rut transgene (rut+) was re-expressed in the MBs from the 30Y-GAL4 MB driver (Figure 6C and D), indicating that the\u00a0presynaptic DA vesicle release is regulated by post-synaptic MB neurons through a Rut-AC-dependent mechanism.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig6-v1.jpg)\n\n**Figure 6.:** (A) LTE induced by simultaneous AL + AFV stimulation is suppressed in rut mutants. N\u00a0=\u00a07 for both control (MB-LexA, LexAop-G-CaMP2) and rut mutants (rut2080; MB-LexA, LexAop-G-CaMP2). (B) DA release induced by AL + NMDA stimulation is abolished in rut mutants. Time course of spH fluorescent changes at TH-DA terminals in controls (LexAop-spH/+; TH-LexA/+), and rut2080 mutants (rut2080; LexAop-spH/UAS-rut; TH-LexA/+) upon AL + NMDA stimulation. N\u00a0=\u00a08 for all genotypes. (C) MB expression of rut+ restores DA release upon AL + NMDA stimulation. The\u00a0time course of spH fluorescent changes and spH responses at TH-DA terminals in rut2080 mutants expressing a rut+ transgene in the MBs (rut2080; LexAop-spH/UAS-rut; TH-LexA/30Y-GAL4) upon AL + NMDA stimulation. N\u00a0=\u00a08. (D) spH responses upon AL + NMDA stimulation in indicated lines. Two-way ANOVA indicates significant differences due to time point (F3,84\u00a0=\u00a06.69, p<0.0164) and genotype (F2,84\u00a0=\u00a034.70, p<0.0001). N\u00a0=\u00a09 for all genotypes.\n\nPrevious work has shown that most TH-DA neurons project their terminals bilaterally onto the MBs in both hemispheres of the brain (Mao and Davis, 2009). Thus, if DA release is controlled strictly by anterograde, action potential-dependent mechanisms, DA should be released onto the MBs on both hemispheres. On the other hand, our findings suggest that the\u00a0DA release and induction of plasticity will be restricted to specific locations where post-synaptic MB neurons receive coincident stimulation. The ALs are bilateral structures, and anatomical and physiological studies show that PNs connect the ALs only to ipsilateral MBs (Marin et al., 2002; Ueno et al., 2013; Wong et al., 2002). Thus, we next tested whether simultaneous AL + NMDA stimulation induces DA release bilaterally, or only unilaterally to the MB ipsilateral to AL stimulation. We monitored vesicular exocytosis from TH-DA neuronal terminals in response to simultaneous AL + NMDA stimulation (Figure 7A), and observed DA release only on the MB lobes ipsilateral to AL stimulation (Figure 7B and C). Thus, postsynaptic gating mechanisms are able to restrict the location of DA release, even though DA neurons innervate extensive brain areas.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21076/elife-21076-fig7-v1.jpg)\n\n**Figure 7.:** (A) Schematic diagram of the connections between ALs, MBs, and TH-DA neurons. PNs (yellow) connect ALs only to ipsilateral MB calyces, whereas DA neurons (green) innervate MBs bilaterally. (B) Typical fluorescence images of spH at TH-DA neuron terminals on the vertical lobes 0 s and 30 s after AL + NMDA stimulation. The arrow indicates the vertical lobe of the MB (dotted lines) ipsilateral to the stimulated AL. (C) Left panel, changes in spH fluorescence at TH-DA terminals on ipsilateral and contralateral MB lobes receiving coincident AL + NMDA stimulation. N\u00a0=\u00a05. Right panel, one-way ANOVA indicates significant differences in spH fluorescence in the ipsilateral MB (F3,16\u00a0=\u00a05.333, p=0.001), but not the contralateral MB (F3,16\u00a0=\u00a00.458, p=0.716). N\u00a0=\u00a05. (D) Proposed model of a cellular circuit regulating DA release and LTE formation. Simultaneous activation of cholinergic AL inputs (blue) and glutamatergic AFV inputs (orange) to MB neurons activates a gating mechanism that allows DA (green dots) to be released onto these coincidently activated MB neurons. DA is not released onto MB neurons that only receive single inputs. PNs and ALs are outlined in blue, MB neurons are outlined in red, inputs from the AFV are shown in orange, and a DA neuron is shown in green. Released glutamate from AFV inputs and acetylcholine from PNs are shown by orange dots and blue dots, respectively. Filled areas represent activated (depolarized) regions.\n\n## Discussion\n\nDA has been proposed to function either to modulate behaviors based on physiological states, including differing motivational or hunger states, or to more directly transmit associative input, during associative learning. In this study, we demonstrate that for LTE in the MBs, DA is unlikely to transmit sensory information, but instead, plays a critical mechanistic role in LTE establishment at a step after sensory input. DA is not released by activation of individual sensory inputs, but instead requires coincident stimulation, indicating that DA functions downstream of a coincidence detector. Blocking DA signaling abolishes LTE, while DA release alone is sufficient to induce LTE, demonstrating the essential nature of DA in LTE formation. Although LTE is a phenomenon observed in vitro, we propose that it is likely related to learning and memory-associated plastic changes. Aversive olfactory learning involves associations between odor information, which is transmitted to the MBs via PNs from the antennal lobes, and shock information, which is likely transmitted to the brain via the AFV. LTE is induced by simultaneous stimulation of the same sensory inputs, and shares various physiological phenotypes and molecular requirements with learning. In the current manuscript, we further demonstrate that both LTE and learning (3 min memory) require the\u00a0activity of NRs in the MBs, and identify a subset of glutamatergic neurons (using the GMR51C07 line), which are required for memory, and exhibit vesicular exocytosis onto MB vertical lobes upon AFV stimulation.\n\nOur synapto-pHluorin data indicate that AL stimulation evokes vesicular exocytosis from cholinergic PN terminals in the MB calyx, a result consistent with previous studies (Heisenberg, 2003; Su and O'Dowd, 2003; Yasuyama et al., 2002). However, we find that AFV stimulation evokes exocytosis from glutamatergic neurons rather than DANs. Significantly, direct application of NMDA to the MBs can replace AFV stimulation during LTE induction. NMDA acts through NRs in the MBs to induce LTE. Thus, although the complete neural pathway from the AFV to the MBs has not yet been identified, our results suggest that the final step in transmission of US information from the AFV to the MBs occurs through glutamatergic neurons activating MB NRs.\n\nDA release occurs at a step after cholinergic and glutamatergic activation of the MBs, since LTE induced by AL + NMDA stimulation requires D1Rs, while LTE induced by the\u00a0DA application does not require NR activity or AL stimulation. Furthermore, DA application induces LTE even in the presence of TTX in Ca2+ free media, suggesting that DA release and activation of D1Rs in the MBs comprise the last intercellular step during LTE establishment. Similar to DA-induced plasticity in AL-MB transmission, previous papers have also found that exogenous activation of dopaminergic pathways can induce plasticity in MB Kenyon cell to MB output neuron transmission in Drosophila (Cohn et al., 2015), and in CA3 to CA1 transmission in rats and guinea pigs (Huang and Kandel, 1995; Williams et al., 2006).\n\nDA release requires the\u00a0activity of the Rut-AC in the MBs. Rut-AC is proposed to function as a coincidence detector of olfactory and somatosensory inputs during olfactory learning (Boto et al., 2014; Busto et al., 2010; Heisenberg, 2003; Tomchik and Davis, 2009), suggesting that coincident AL and AFV-mediated activation of postsynaptic Kenyon cells functions to gate presynaptic dopaminergic release through a Rut-AC-dependent mechanism. Thus, simultaneous AL and AFV inputs specify the appropriate targets where DA needs to be released, while the amount of released DA may regulate the occurrence and intensity of plastic changes.\n\nWhile our data demonstrate that Rut-AC functions at a step in between coincident activation of Kenyon cells and presynaptic DA release, we note that we have not proven that Rut-AC actually detects coincident AL and AFV activity. Previous studies have shown that Rut-AC is activated by both Ca2+/calmodulin and G-protein-mediated signaling, and may function to integrate these two signaling pathways (Levin et al., 1992; Tomchik and Davis, 2009). However, nAChRs and NRs are both ionotrophic receptors, and it is unclear whether or how either receptor activates G-proteins. Alternatively, Tsien and colleagues have recently demonstrated that the\u00a0activation of neuronal gene expression by L-type voltage gated Ca2+ channels requires two independent activation mechanisms: Ca2+ influx, and a separate voltage-dependent conformational change (Li et al., 2016). Neither signal alone is sufficient for activation. Similarly, Rut-AC, or another coincidence detector in the MBs may require convergent activation by Ca2+ influx from NRs, and a conformational change induced by action potentials propagated from the calyx.\n\nOur current study focuses on the identification of a novel DA gating mechanism involved in plasticity in general. Thus, at this point, we have not examined the precise relationship between this gating mechanism and a specific phase of memory. In Drosophila, formation and storage of short-term memories (STMs) require \u03b3 and \u03b1\u2019/\u03b2\u2019 Kenyon cells, while consolidation to long-term memories (LTMs) is proposed to require \u03b1/\u03b2 Kenyon cells (Guven-Ozkan and Davis, 2014; Krashes et al., 2007). In our study, we measured LTE at the vertical lobes, and previously demonstrated that LTE occurs in both the \u03b1 and \u03b1\u2019 lobes (Ueno et al., 2013). Thus LTE may be associated with both STM and LTM. Consistent with a role of LTE in LTM, a previous study by Blum et al. reported that rutabaga expression in \u03b1/\u03b2 neurons is necessary for LTM, but not STM (Blum et al., 2009). Since we examined LTE, in part in the \u03b1 lobes, and demonstrate that it requires rutabaga, the LTE we examined may be necessary for LTM formation. On the other hand, we also show that NR expression in the MBs is required for both learning (3 min memory) and LTE. Although NRs are also required LTM, this requirement is in the ellipsoid bodies, a brain region distinct from the MBs (Wu et al., 2007). Taken together, our data suggest that LTE may be important for both STM and LTM, and may be a general mechanism for DA-mediated plasticity.\n\nFinally, we note that our results show an apparent discrepancy with previous work demonstrating that artificial activation of DANs can replace US exposure during learning (Aso et al., 2010; Burke et al., 2012; Claridge-Chang et al., 2009; Liu et al., 2012). Our results suggest that DA on its own is sufficient to induce LTE, and coincident activation of odor-specific and US-specific neurons is required to specify unique locations where DA release is gated. Thus, if release is artificially induced in a large subset of DANs, one would expect that odor-specific learning would not occur, and instead flies would display a general avoidance or attraction to odors. While we cannot explain why this does not happen, we note that artificial activation of DANs in other studies is induced using temperature or optically regulated cationic (TrpA1 or P2X2) channels (Aso et al., 2010; Burke et al., 2012; Claridge-Chang et al., 2009; Liu et al., 2012). We propose that the\u00a0activation of these cationic channels by itself is not sufficient to induce dopaminergic release since our proposed post-synaptic gating mechanism is not induced in this situation. However, coincident application of an odor and heat or intensive light may be sufficient to open this gate. In combination with TrpA1 or P2X2-dependent activation of DANs, this is sufficient to generate odor-specific memories.\n\nOur data suggest that LTE formation follows a circuitous route. Coincident signals are first detected in the MBs, but formation of LTE requires communication to external DA neurons, which then transmit a signal back to MBs. Why is such an apparently non-parsimonious pathway used? The basic input requirements for forming associations are two temporally paired stimuli. However, it is clear from both vertebrate and invertebrate systems that the strength of resulting associations is modulated by various factors, including the physiological state of the organism. While some physiological states may alter how the organism perceives the incoming sensory information, other states may modulate the probability of forming an association independently of sensory perception. Incorporating a dopaminergic feedback loop may allow the organism to fine tune the amount of learning that occurs based factors including the physiological state of the organism.\n\n## Materials and methods\n\n### Fly stocks\n\nAll stocks were raised on standard cornmeal medium at 25\u02daC \u00b1 2\u00b0C and 60% \u00b1 10% humidity under a 12/12 hr light\u2013dark cycle. Flies were used for experiments 1\u20133 d after eclosion.\n\n### Transgenic lines\n\nUAS-G-CaMP (Reiff et al., 2005), UAS-G-CaMP3 (RRID:BDSC_32234, Bloomington Stock Center, Indiana) and LexAop-G-CaMP2 (Ueno et al., 2013) lines were used for measuring Ca2+ responses, UAS-synapto-pHluorin (UAS-spH) (Ng et al., 2002) was used for measuring vesicle release, P[TRiP.JF02044]attP2 (RRID:BDSC_26019, Bloomington Stock Center) was used for Nmdar2 RNAi, MB-LexA::GAD (Ueno et al., 2013) was used for the MB LexA driver, and OK107, c309 and c747 (Aso et al., 2009) were used for MB GAL4 drivers. TH-GAL4 (Friggi-Grelin et al., 2003) and TH-LexAp65 (provided by Y. Aso and J. Rubin, Janelia Research Campus, Ashburn, Virginia, USA) were used for TH-DA neuron drivers, GH146-GAL4 (Stocker et al., 1997) (RRID:BDSC_30026) was used for the PN driver, P[EP]Nmdar1EP331 (Xia et al., 2005) (RRID:BDSC_17112) was used for the Nmdar1 mutant, and GMR51C07-GAL4 (Jenett et al., 2012) (RRID:BDSC_38773, Bloomington Stock Center,), which carries approximately 3 KB of the 5\u2019 flanking sequence of the VGlut gene was used for the VGlut-GAL4 driver. UAS-nAChR\u03b17Y195T (Mejia et al., 2013), containing a dominant negative form of the nAChR\u03b1 subunit of nAChRs, was used to disrupt nAChR function. LexAop-R-GECO1 was provided by A. Nose, Tokyo University, Tokyo, Japan.\n\nTo express spH in TH-LexA labeled DA neurons, we generated LexAop-spH flies. spH cDNA (Ng et al., 2002) was amplified by PCR and subcloned into pCasper-lexAop-W (Diegelmann et al., 2008). The resulting construct was injected into embryos to obtain LexAop-spH flies (Genetics Service Inc., USA).\n\n### Isolated whole brain preparation\n\nBrains were prepared for imaging as previously described (Ueno et al., 2013). Briefly, brains were dissected in ice cold Ca2+ free HL3 medium (in mM, NaCl, 70; sucrose, 115; KCl, 5; MgCl2, 20; NaHCO3, 10; trehalose, 5; Hepes, 5; pH 7.3) (Stewart et al., 1994), and placed in a recording chamber filled with normal, room temperature HL3 medium (the same recipe as above, containing 1.8 mM CaCl2). To deliver DA through the blood brain barrier, brains were treated with papain (10 U/ml) for 15 min at room temperature, and washed several times with Ca2+ free HL3 medium prior to use (Gu and O'Dowd, 2007).\n\n### Imaging analysis\n\nFluorescent images were captured at 15 Hz using a confocal microscope system (A1R, Nikon Corp., Tokyo, Japan) equipped with a 20x water-immersion lens (numerical aperture 0.5; Nikon Corp). To measure AL- and AFV-induced Ca2+ responses, ALs and AFVs were stimulated (30 pulses, 100 Hz, 1.0 ms pulse duration) using glass micro-electrodes. Fluorescent traces from 3 stimulus trains with an inter-train interval of 10 s were averaged to obtain F values, and the 5 sequential frames before stimulus onset were averaged to obtain F0 values. These were used to calculate \u0394F/F0. To quantify LTE, we divided peak \u0394F/F0 values, obtained from AL-induced Ca2+ responses at indicated times after LTE induction, by peak values obtained before LTE induction. To induce LTE by AL + AFV stimulation, both the AL and AFV were simultaneously stimulated with twelve stimulus trains (inter-train interval of 5 s) (Ueno et al., 2013). For inducing LTE by AL stimulation and puff application of NMDA, 1 mM NMDA (in HL3 medium containing 4 mM Mg2+) was applied from a micropipette onto the MBs for 1 min (pressure\u00a0=\u00a06 psi) using a Picospritzer III system (Parker Hannifin Corp., USA). During the second minute of application, ALs were stimulated with 6 stimulus trains (inter-train interval of 5 s). To induce LTE by AL stimulation and bath application of 100 \u03bcM NMDA, NMDA was diluted in HL3 containing 4 mM Mg2+, to prevent Mg2+ block (Miyashita et al., 2012), and added to the recording chamber while a peristaltic pump (15 ml/min) was used to remove excess fluid from the chamber. For washout, media was removed from the recording chamber and continuously replaced with fresh HL3 buffer (20 mM MgCl2). ALs were stimulated with 5 or 12 stimulus trains (with an inter-train interval of 5 s) during one min NMDA addition. To induce LTE by DA application alone, DA was added to the recording chamber for 1 min in the absence of AL or AFV stimulation and subsequently washed out. Receptor antagonists were added and washed out similarly. \u0394F/F0 for spH was measured similarly to measurements of \u0394F/F0 for Ca2+ responses. To quantify stimulation-induced fluorescent changes of spH, \u0394F/F0 in the absence of stimulation was subtracted from \u0394F/F0 at indicated time points during and after stimulation.\n\n### Chemicals\n\nNMDA, butaclamol ((+)-butaclamol hydrochloride), and SCH23390 (R(+)-SCH-23390) were purchased from Sigma-Aldrich (Missouri, USA). DA (3,4-dihydroxyphenethylamine hydrochloride) was purchased from Wako Pure Chemical Industries (Osaka, Japan). Papain was purchased from Worthington Biochemical Corporation (New Jersey, USA). Butaclamol was dissolved in DMSO, and NMDA, SCH23390 and DA were dissolved in water.\n\n### Statistics\n\nAll data in bar and line graphs plot means \u00b1 SEMs. Student\u2019s t-test was used to evaluate the statistical significance between two data sets. For multiple comparisons, one-way or two-way ANOVA was used, followed by Bonferroni post hoc analyses using Prism software (GraphPad Software, Inc., La Jolla, CA, USA) or XLtoolbox (Free Software Foundation, Inc. MA, USA). In all figures, NS indicates p>0.05, * indicates p<0.05, and ** indicates p<0.01.\n",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0fd0a213-cb5b-477a-9aea-9c0f05b25fe4",
+      "submission_id": "8dabb802-0202-4cc0-89c1-8bcc40aa8ecc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21076.011](https://doi.org/10.7554/eLife.21076.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Coincident postsynaptic activity gates presynaptic dopamine release to induce plasticity in Drosophila mushroom bodies\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder as the Senior Editor and three reviewers, one of whom, Leslie C Griffith (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Josh Dubnau (Reviewer #2) and Yi Zhong (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper addressed the organization and plasticity of the MB memory circuit. This is a venerable and well-studied circuit, but the actual cellular processes underlying associative memory formation are not completely understood. This paper proposes a model for long-term enhancement (LTE) of AL-driven MB responses, a purely electrophysiological phenomenon, which posits glutamatergic/MB activity gating of the US dopamine signal and provides a mechanism for ensuring DA signaling is local. The idea is well-supported by pharmacological and genetic evidence using imaging and electrophysiological methods. The one weak point of the paper is that there is no behavioral verification of the model to firmly link the LTE phenomenon to actual memory, and in fact there is a paper in the literature that suggests MB NMDARs are not essential for LTM (Wu et al., 2007). Without behavioral results, it remains possible that LTE is an epiphenomenon and not part of the underpinnings of memory.\n\nEssential revisions:\n\nAll the reviewers found this study very interesting and potentially important. But the lack of evidence linking LTE directly to LTM is concerning. The authors should add some discussion of the links to behavior and specifically discuss the Wu et al. paper.\n",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "84b2f546-11d3-434e-b3a9-a57f69c2f556",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C1",
+      "claim": "Simultaneous stimulation of the antennal lobes (ALs) and the ascending fibers of the ventral nerve cord (AFV) induces long-term enhancement (LTE) of subsequent AL-evoked MB responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneous stimulation of the antennal lobes (ALs) and the ascending fibers of the ventral nerve cord (AFV), two sensory inputs to the mushroom bodies (MBs), induces long-term enhancement (LTE) of subsequent AL-evoked MB responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a primary finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "9bb6b55f-eb8b-42a3-9bc8-3aeb0228a241",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C2",
+      "claim": "LTE induction requires activation of nicotinic acetylcholine receptors (nAChRs).",
+      "claim_type": "EXPLICIT",
+      "source": "LTE induction requires activation of at least three signaling pathways to the MBs, mediated by nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1 dopamine receptors (D1Rs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a requirement for LTE induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "eb543568-b2a2-4724-9f58-30abd68c19e9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C3",
+      "claim": "LTE induction requires activation of NMDA receptors (NRs).",
+      "claim_type": "EXPLICIT",
+      "source": "LTE induction requires activation of at least three signaling pathways to the MBs, mediated by nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1 dopamine receptors (D1Rs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a requirement for LTE induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5eb93639-cfc1-41ff-80eb-053659c816c2",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C4",
+      "claim": "LTE induction requires activation of D1 dopamine receptors (D1Rs).",
+      "claim_type": "EXPLICIT",
+      "source": "LTE induction requires activation of at least three signaling pathways to the MBs, mediated by nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1 dopamine receptors (D1Rs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a requirement for LTE induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e25b7e4c-6373-46a3-a1e5-986e0420783b",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C5",
+      "claim": "Inputs from the AL are transmitted to the MBs through nAChRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that inputs from the AL are transmitted to the MBs through nAChRs, and inputs from the AFV are transmitted by NRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "90d14896-9fa1-4c3d-9396-6988bc614f1e",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C6",
+      "claim": "Inputs from the AFV are transmitted to the MBs by NRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate that inputs from the AL are transmitted to the MBs through nAChRs, and inputs from the AFV are transmitted by NRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "b475a593-b52a-43f8-9a8c-72e61cfaf6de",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C7",
+      "claim": "Dopamine signaling occurs downstream of both nAChR and NR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine signaling occurs downstream of both nAChR and NR activation, and requires simultaneous stimulation of both pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "b9748607-7d54-47bd-bd7e-81ca08426863",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C8",
+      "claim": "Dopamine release requires simultaneous stimulation of both nAChR and NR pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine signaling occurs downstream of both nAChR and NR activation, and requires simultaneous stimulation of both pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4419629c-4c2a-40c4-905d-f0818ef5a2e9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C9",
+      "claim": "Dopamine release requires the activity of the rutabaga adenylyl cyclase in postsynaptic MB neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine release requires the activity of the rutabaga adenylyl cyclase in postsynaptic MB neurons, and release is restricted to MB neurons that receive coincident stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0e9831d3-3b3d-4ba9-bd0a-fef51d92d958",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C10",
+      "claim": "Dopamine release is restricted to MB neurons that receive coincident stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine release requires the activity of the rutabaga adenylyl cyclase in postsynaptic MB neurons, and release is restricted to MB neurons that receive coincident stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a demonstrated finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "2a8bc5da-4029-4b45-8b05-b5404975075f",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C11",
+      "claim": "Postsynaptic activity can gate presynaptic dopamine release to regulate plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that postsynaptic activity can gate presynaptic dopamine release to regulate plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a conclusion from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e7fc199d-d1d6-4f24-a5e9-f8a9580bf5d9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C12",
+      "claim": "Dopamine (DA) signaling is required for associative learning and synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine (DA) signaling is required for associative learning and synaptic plasticity (Jay, 2003; Kim et al., 2007; Puig and Miller, 2012; Qin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "83357f9a-e4d0-412c-a799-5d364f3e03a8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C13",
+      "claim": "In associative learning, DA activity often correlates with US presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "In associative learning, where a conditioned stimulus or CS (e.g. a neutral odor) is paired with an unconditioned stimulus or US (e.g. aversive electrical shocks or appetitive food rewards), DA activity often correlates with US presentation (Aso et al., 2010; Burke et al., 2012; Riemensperger et al., 2005; Schwaerzel et al., 2003; Waddell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0bea8559-c358-4cbb-82b0-3431b805bdc3",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C14",
+      "claim": "In Drosophila, the activation of different subsets of dopaminergic neurons (DANs) can substitute for the presentation of aversive or appetitive stimuli during training.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in Drosophila, the activation of different subsets of dopaminergic neurons (DANs) can substitute for the presentation of aversive or appetitive stimuli during training (Aso et al., 2010; Burke et al., 2012; Claridge-Chang et al., 2009; Schwaerzel et al., 2003; Waddell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "dbe3666c-2d43-4b0e-a91e-a68fa95b71d6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C15",
+      "claim": "DA functions to transmit US information to olfactory association areas in the Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that DA functions to transmit US information to olfactory association areas in the Drosophila brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies showing DAN activation can substitute for US presentation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5bd3651b-2122-4e58-bcaf-f8dac11fce5d",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C16",
+      "claim": "As animals learn to associate the CS with the US, DAN activity becomes correlated with the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "While the DAN activity initially correlates with US presentation, as animals learn to associate the CS with the US, activity becomes correlated with the CS (Wise, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work in mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "7bddecb8-0510-424f-973d-2bba9b02db9c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C17",
+      "claim": "DAN activity correlates with the unexpectedness of the US presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "DAN activity also correlates with the unexpectedness of the US presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent description of reward prediction error paradigms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "8b2780b6-a7f2-4f2b-9ff3-0c2754de8536",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C18",
+      "claim": "In reward or punishment prediction error paradigms, an expected reward or punishment causes little change in DAN activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In reward or punishment prediction error paradigms, a reward or punishment that is expected causes little change in activity, while a reward or punishment that is obtained or withheld unexpectedly induces strong increases or decreases in activity (Bromberg-Martin et al., 2010; Busto et al., 2010; Schultz, 2013; Waddell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "6ce516a3-3dd6-4e2e-9d8b-beb681cba9ba",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C19",
+      "claim": "In reward or punishment prediction error paradigms, an unexpected reward or punishment induces strong increases or decreases in DAN activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In reward or punishment prediction error paradigms, a reward or punishment that is expected causes little change in activity, while a reward or punishment that is obtained or withheld unexpectedly induces strong increases or decreases in activity (Bromberg-Martin et al., 2010; Busto et al., 2010; Schultz, 2013; Waddell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d496a381-db7b-4c89-a0c4-be010eeacfea",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C20",
+      "claim": "In Drosophila aversive olfactory conditioning, presentation of a relatively neutral odor is paired with presentation of aversive electric shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila aversive olfactory conditioning, presentation of a relatively neutral odor is paired with presentation of aversive electric shocks (Quinn et al., 1974; Tully and Quinn, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work describing the conditioning paradigm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "bd6119a4-efe2-4c10-8ceb-03a690cbf3a5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C21",
+      "claim": "Flies learn to associate the odor with the aversive stimulus and subsequently avoid the odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies learn to associate the odor with the aversive stimulus and subsequently avoid the odor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established behavioral outcome of the conditioning paradigm.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5a716f79-c976-448f-8374-6da88d60a692",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C22",
+      "claim": "The odor-shock association forms in the mushroom bodies (MBs) of the Drosophila brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This association forms in the mushroom bodies (MBs) of the Drosophila brain (Heisenberg, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "fd59d7cd-8916-46ee-9640-b3b2f2222f41",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C23",
+      "claim": "Odor information is transmitted to the MBs from the antennal lobes (ALs) via projection neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Odor information is transmitted to the MBs from the antennal lobes (ALs) via projection neurons (Ito et al., 1998; Stocker, 1994), while shock information is likely transmitted from the body through the ascending fibers of the ventral nerve cord (AFV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "6322ac54-5e8a-44b7-b6b3-25af074266b8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C24",
+      "claim": "Shock information is likely transmitted from the body through the ascending fibers of the ventral nerve cord (AFV).",
+      "claim_type": "EXPLICIT",
+      "source": "Odor information is transmitted to the MBs from the antennal lobes (ALs) via projection neurons (Ito et al., 1998; Stocker, 1994), while shock information is likely transmitted from the body through the ascending fibers of the ventral nerve cord (AFV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a likely pathway, suggesting it is an inference or hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "1e67cf38-67f0-43a4-a2c4-ae822b58fdb4",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C25",
+      "claim": "Electrical stimulation of the ALs or AFV induces Ca2+ influx in the MBs of dissected brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical stimulation of the ALs or AFV induces Ca2+ influx in the MBs of dissected brains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors and others.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0f16d1c2-da37-44b1-b4e7-0dc4baba8752",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C26",
+      "claim": "Simultaneous stimulation of both the ALs and AFV causes long-term enhancement (LTE) of subsequent AL-induced Ca2+ responses in the MBs that lasts for at least two hours.",
+      "claim_type": "EXPLICIT",
+      "source": "However, simultaneous stimulation of both the ALs and AFV causes long-term enhancement (LTE) of subsequent AL-induced Ca2+ responses in the MBs that lasts for at least two hours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from previous work by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "cf4ec121-d3a1-4020-9ac5-00d9b49a4a25",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C27",
+      "claim": "Both LTE and learning require activity of nicotinic acetylcholine receptors (nAChRs).",
+      "claim_type": "EXPLICIT",
+      "source": "Both LTE and learning require activity of at least three neurotransmitter receptors, nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1Rs (Kim et al., 2007; Qin et al., 2012; Ueno et al., 2013; Xia et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4dcf1a39-4c1f-4554-b44a-400f096d7429",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C28",
+      "claim": "Both LTE and learning require activity of NMDA receptors (NRs).",
+      "claim_type": "EXPLICIT",
+      "source": "Both LTE and learning require activity of at least three neurotransmitter receptors, nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1Rs (Kim et al., 2007; Qin et al., 2012; Ueno et al., 2013; Xia et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "9182f1c5-35d7-447d-a987-0e8b3305f9bc",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C29",
+      "claim": "Both LTE and learning require activity of D1Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "Both LTE and learning require activity of at least three neurotransmitter receptors, nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1Rs (Kim et al., 2007; Qin et al., 2012; Ueno et al., 2013; Xia et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c47b6a5a-32c5-4ead-90da-aa1b4ab6015a",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C30",
+      "claim": "LTE formation requires associativity between the two input stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LTE formation requires associativity between the two input stimuli, since increasing the stimulus intensity or duration of one input is insufficient to bypass the requirement of the other (Ueno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0b989ce1-786b-4df7-af02-9d3c4208c437",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C31",
+      "claim": "Increasing the stimulus intensity or duration of one input is insufficient to bypass the requirement of the other input for LTE formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LTE formation requires associativity between the two input stimuli, since increasing the stimulus intensity or duration of one input is insufficient to bypass the requirement of the other (Ueno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e51a2fd9-463d-4e40-8d0d-6d2ec28f5ce5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C32",
+      "claim": "LTE displays input specificity, with MB responses to AL stimulation, but not AFV stimulation, being enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "LTE also displays input specificity. MB responses to AL stimulation, but not AFV stimulation, are enhanced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of LTE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "f1ba8416-86fe-4248-9b3d-cee79a4978e0",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C33",
+      "claim": "During associative learning, responses to odors are modified, but not responses to electrical shocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, during associative learning, responses to odors are modified, but not responses to electrical shocks (Quinn et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "fbeb9f0d-ba81-48e2-b106-37d3662edaf7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C34",
+      "claim": "LTE can be extinguished by repetitive AL stimulation in the absence of AFV stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, LTE can be extinguished by repetitive AL stimulation in the absence of AFV stimulation (Ueno et al., 2013), a phenomenon reminiscent of learning extinction (Quinn et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "218c9665-6079-490d-8ca9-b8ce068e9992",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C35",
+      "claim": "AL stimulation causes synaptic vesicle exocytosis from PN terminals in the MB calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon stimulation of the ALs, we observed increased spH fluorescence in PN terminals, including those in the MB calyx, the MB region receiving inputs from PNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "afa9cb76-ae1f-4df8-b93e-436e8b135282",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C36",
+      "claim": "AL stimulation causes Ca2+ response in MB lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed robust Ca2+ responses in the vertical lobes of the MBs (Figure 1C), indicating that AL stimulation causes both synaptic vesicle exocytosis from PN terminals on the MB calyx and Ca2+ response in MB lobes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by R-GECO1 fluorescence imaging shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c6b4ed41-5877-4f9e-b275-130ec6fbe30c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C37",
+      "claim": "AFV stimulation does not evoke vesicular exocytosis from TH-DA neuron terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "When we next stimulated the AFV, we again observed robust Ca2+ responses in the MBs. However, we did not observe increased spH fluorescence in the MB vertical lobes (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4ef1a8db-bc8f-48c5-8d4c-ac5bb0a3efb0",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C38",
+      "claim": "TH-DA neurons may not be directly responsible for transmitting AFV information to the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, although DA signaling is required for LTE, TH-DA neurons may not be directly responsible for transmitting AFV information to the MBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the lack of spH fluorescence increase in TH-DA neurons upon AFV stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "70cdca96-6f30-4b2f-ad2c-52172c5940e5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C39",
+      "claim": "The NR antagonist, MK801, impairs AFV-evoked MB Ca2+ responses.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the NR antagonist, MK801, impairs AFV-evoked MB Ca2+ responses and LTE (Ueno et al., 2013), suggesting that glutamate (Glu), rather than DA, may transmit AFV signals to the MBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "367ea368-92ab-4068-a513-26ae05f35c49",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C40",
+      "claim": "The NR antagonist, MK801, impairs LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the NR antagonist, MK801, impairs AFV-evoked MB Ca2+ responses and LTE (Ueno et al., 2013), suggesting that glutamate (Glu), rather than DA, may transmit AFV signals to the MBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "ac098557-49db-4169-bab0-a4e8ffb9444d",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C41",
+      "claim": "Glutamate, rather than DA, may transmit AFV signals to the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that the NR antagonist, MK801, impairs AFV-evoked MB Ca2+ responses and LTE (Ueno et al., 2013), suggesting that glutamate (Glu), rather than DA, may transmit AFV signals to the MBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the effects of MK801.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e7de51b9-1ffa-4176-af64-ea94a1475eda",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C42",
+      "claim": "Synaptic terminals immunoreactive for the vesicular Glu transporter, VGLUT, have been identified at the tip of the MB vertical lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, synaptic terminals immunoreactive for the vesicular Glu transporter, VGLUT, have been identified at the tip of the MB vertical lobes, where LTE is strongly induced (Daniels et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "805110b2-9cb3-448c-b160-40d29df9f1e6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C43",
+      "claim": "LTE is strongly induced at the tip of the MB vertical lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, synaptic terminals immunoreactive for the vesicular Glu transporter, VGLUT, have been identified at the tip of the MB vertical lobes, where LTE is strongly induced (Daniels et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of LTE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "28cb448f-a977-4339-b86d-df83026146da",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C44",
+      "claim": "AFV stimulation induces vesicular exocytosis from GMR51C07-VGlut terminals onto the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "AFV stimulation caused significant increases in both spH and R-GECO1 fluorescence at the MB vertical lobe tips (Figure 1G), suggesting that stimulation induces exocytosis from GMR51C07-VGlut terminals onto the MBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "25542995-e411-4558-a703-797a7f2d35c0",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C45",
+      "claim": "Inhibiting synaptic output from GMR51C07 neurons during learning impairs short-term memory when flies are trained at the restrictive temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "When GMR51C07>shits flies were trained in an aversive olfactory associative paradigm at the permissive temperature, short-term memory (STM) was unaffected compared to controls. In contrast, when these flies were trained at the restrictive temperature, memory was significantly impaired (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral experiments shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "091c4c68-4714-40f2-bc48-1142028de01c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C46",
+      "claim": "GMR51C07 cells release glutamate to the MBs upon AFV stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GMR51C07 cells both release glutamate to the MBs upon AFV stimulation, and are required during formation of aversive memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the spH imaging and behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e8e02dc3-a001-44eb-ac36-c1225434b74c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C47",
+      "claim": "GMR51C07 cells are required during formation of aversive memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, GMR51C07 cells both release glutamate to the MBs upon AFV stimulation, and are required during formation of aversive memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the behavioral experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0a915635-11f0-4e90-8836-2aef8e8e2287",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C48",
+      "claim": "Nmdar1EP331 mutants are defective for AFV-induced MB Ca2+ responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with idea that Glu transmits AFV inputs required for LTE to the MBs, we found that a Drosophila NR1 hypomorphic mutant, Nmdar1EP331 (Xia et al., 2005), is defective for both AFV-induced MB Ca2+ responses (Figure 2A), and LTE (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Ca2+ imaging shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "017fb2b7-7544-49fe-8e2e-1a7fe0b66cba",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C49",
+      "claim": "Nmdar1EP331 mutants are defective for LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with idea that Glu transmits AFV inputs required for LTE to the MBs, we found that a Drosophila NR1 hypomorphic mutant, Nmdar1EP331 (Xia et al., 2005), is defective for both AFV-induced MB Ca2+ responses (Figure 2A), and LTE (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "1a3d1491-5e9d-41a8-b60f-6a132614f841",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C50",
+      "claim": "AFV stimulation can be replaced by the direct application of NMDA to induce LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that AFV stimulation could be replaced by the direct application of NMDA by micropipette onto the terminals of the MB vertical lobes (Figure 2C), to induce LTE (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "75dad4ea-a3a3-4c48-966f-1a04fba57e49",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C51",
+      "claim": "Application of NMDA in the absence of AL stimulation does not induce LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of NMDA in the absence of AL stimulation did not induce LTE, indicating that NMDA can replace AFV, but not AL, stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by LTE measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "963dbabb-4fd9-4741-afde-64747e0b797b",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C52",
+      "claim": "Knocking down NRs in the MBs by expressing Nmdar2-IR from the OK107-GAL4 driver prevents AL+ NMDA-induced LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether NRs in the MBs mediate NMDA signaling, we next knocked down NRs in the MBs by expressing inverted repeats of Nmdar2 (Nmdar2-IR) from the OK107-GAL4 driver, and found that coupled AL stimulation and NMDA application (AL+ NMDA) failed to induce LTE (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e74ad6b6-d746-4411-9d28-1669ec0979aa",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C53",
+      "claim": "Knocking down NRs in the MBs inhibits learning (3 min memory) in adult Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Knocking down NRs in the MBs also inhibited learning (3 min memory) in adult Drosophila, again suggesting a link between LTE and learning-associated plasticity (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral experiments shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "40cc6e07-e7ae-4e84-a396-61ad42a05e0a",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C54",
+      "claim": "AFV input to the MBs is transmitted via Glu neurons onto MB NRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that AFV input to the MBs is transmitted via Glu neurons onto MB NRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "9044c069-3e5c-4d55-91ad-600796af9f1e",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C55",
+      "claim": "AL + NMDA-induced LTE is abolished in DopRf02676 null mutant brains.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the epistatatic relationship between DA and Glu signaling during LTE induction, we examined AL + NMDA-induced LTE, and found that it is abolished in DopRf02676, DopR null mutant, brains (Kim et al., 2007) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d9140d1f-55ee-45d5-ae0b-833a3ed1bfd0",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C56",
+      "claim": "Addition of 50 \u03bcM of the Drosophila D1R antagonist, butaclamol, prevents induction of AL + NMDA-induced LTE in wild-type brains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, addition of 50 \u03bcM of the Drosophila D1R antagonist, butaclamol (Sugamori et al., 1995) prevented induction of AL + NMDA-induced LTE in wild-type brains (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c9d6e010-9284-42f8-9142-1dbbb64b2b18",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C57",
+      "claim": "D1R functions downstream of Glu/NR signaling during LTE formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that D1R functions downstream of Glu/NR signaling during LTE formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the epistasis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "82aca9de-1ac5-446e-87c4-3ff8ba934439",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C58",
+      "claim": "AL stimulation paired with application of DA (AL + DA) induces significant LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "When AL stimulation was paired with application of DA (AL + DA), we observed significant LTE (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5d9e46bb-5ade-43fd-a654-04e456dd61f3",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C59",
+      "claim": "Application of DA alone in the absence of AL stimulation induces LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we also detected LTE formation upon application of DA alone in the absence of AL stimulation (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "490ecd50-0fbc-498a-8cc3-e9c85f04f9f8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C60",
+      "claim": "DA-induced LTE is not impaired in brains from Nmdar1EP331 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Further supporting this model, DA-induced LTE was not impaired in brains from Nmdar1EP331 mutants (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "b85d4899-f390-44a1-9fb1-ee780ac3626a",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C61",
+      "claim": "DA-induced LTE is restored in DopRf02676 mutants by expressing a DopR transgene in the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The DA-induced LTE was fully restored in DopRf02676 mutants when DopR was expressed from c747-Gal4, a MB driver predominantly expressing GAL4 in \u03b1/\u03b2 and \u03b3 lobes (Aso et al., 2009) (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "6b758c5f-5307-468b-bb2f-99189000c2d9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C62",
+      "claim": "Dose response curves plotting LTE magnitude as a function of DA concentration are not different when DA is applied alone or with simultaneous AL stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dose response curves plotting LTE magnitude as a function of DA concentration were not different when DA was applied alone or with simultaneous AL stimulation (Figure 3G), suggesting that the DA-induced LTE is unlikely to be an artifact of excess DA application.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dose-response curves shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "2d58e5c7-06ab-4732-bafa-bd97a59cfaf6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C63",
+      "claim": "DA is required during LTE induction.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of antagonist during DA treatment abolished LTE (Figure 4A), while addition during maintenance and expression phases had no effect (Figure 4B). This discounts the possibility that residual DA remaining after washout is a responsible expression or maintenance of LTE, and instead indicates that DA is required during LTE induction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "82b43b1c-bdba-4ca5-998e-b84ef0adc014",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C64",
+      "claim": "DA application induces LTE even under external Ca2+ free conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "DA application induced LTE even under external Ca2+ free conditions, and in the presence of tetrodotoxin (TTX), which prevents the generation of action potentials (Figure 4C), suggesting that DA release and MB D1R activation occur at a late step of LTE induction where subsequent neurotransmission is not required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "fa5f2fd6-b39b-4cd3-bd4c-6a58572a2777",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C65",
+      "claim": "DA application induces LTE in the presence of tetrodotoxin (TTX).",
+      "claim_type": "EXPLICIT",
+      "source": "DA application induced LTE even under external Ca2+ free conditions, and in the presence of tetrodotoxin (TTX), which prevents the generation of action potentials (Figure 4C), suggesting that DA release and MB D1R activation occur at a late step of LTE induction where subsequent neurotransmission is not required.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "6cbd4644-422f-484d-8f2b-76b9ea122288",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C66",
+      "claim": "DA release and MB D1R activation occur at a late step of LTE induction where subsequent neurotransmission is not required.",
+      "claim_type": "EXPLICIT",
+      "source": "DA application induced LTE even under external Ca2+ free conditions, and in the presence of tetrodotoxin (TTX), which prevents the generation of action potentials (Figure 4C), suggesting that DA release and MB D1R activation occur at a late step of LTE induction where subsequent neurotransmission is not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the TTX and Ca2+ free experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "16668ea9-4d03-4659-b849-d683c6066731",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C67",
+      "claim": "Simultaneous AL stimulation and NMDA application induces significant elevation of spH fluorescence from TH-DA neuron terminals on the MB vertical lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we re-examined vesicular exocytosis from TH-DA neuron terminals by expressing spH in TH-DA neurons, and observed significant elevation of spH fluorescence from TH-DA neuron terminals on the MB vertical lobes upon simultaneous AL stimulation and NMDA application (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "2f1c327e-a4b4-4100-9176-4a8c3152acbe",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C68",
+      "claim": "spH fluorescence is unchanged in TH-DA neuron terminals upon either AL stimulation or NMDA application alone.",
+      "claim_type": "EXPLICIT",
+      "source": "spH fluorescence was unchanged upon either AL stimulation or NMDA application alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from the spH imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "cf32d7f1-2008-47e1-8213-f50b404bb196",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C69",
+      "claim": "Simultaneous AL and AFV stimulation induces significant increase in spH fluorescence in TH-DA neuron terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, spH fluorescence increased significantly in TH-DA neuron terminals upon simultaneous AL and AFV stimulation (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "bc2c6f94-15e5-43c0-9c97-b0edef066de8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C70",
+      "claim": "Presynaptic DA release is gated by postsynaptic MB neurons that are activated by coincident AL and AFV inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a model where presynaptic DA release is gated by postsynaptic MB neurons that are activated by coincident AL and AFV inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5c32b6e8-386a-4d82-95dd-13d43a16feb6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C71",
+      "claim": "Expression of nAChR\u03b17Y195T in MBs disrupts cholinergic transmission from AL to MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the expression of nAChR\u03b17Y195T in MBs effectively disrupts both cholinergic transmission from AL to MBs and release of DA from TH-DA terminals upon AL + NMDA stimulation (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "81b815f3-330f-496f-9bdd-de4d3e0766a7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C72",
+      "claim": "Expression of nAChR\u03b17Y195T in MBs disrupts release of DA from TH-DA terminals upon AL + NMDA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the expression of nAChR\u03b17Y195T in MBs effectively disrupts both cholinergic transmission from AL to MBs and release of DA from TH-DA terminals upon AL + NMDA stimulation (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by experiments shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "47b4e95f-3a44-4db6-8d2a-6ead66a2e025",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C73",
+      "claim": "Expression of nAChR\u03b17Y195T in TH-DA neurons does not prevent DA release upon coincident AL + NMDA stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we expressed nAChR\u03b17Y195T in TH-DA neurons, we still observed significant increases in spH fluorescence from TH-DA neuron terminals upon coincident AL + NMDA stimulation (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a974d8bc-5b2d-4849-9d8a-feb01141646b",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C74",
+      "claim": "Coincident inputs to MBs, but not TH-DA neurons, are required for DA release.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that coincident inputs to MBs, but not TH-DA neurons, are required for DA release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the nAChR dominant negative experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "ae57690b-004d-47f6-aa37-d5f756c6b0b6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C75",
+      "claim": "Rut-AC is required for LTE formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined the mechanism through which MB neurons might detect coincident inputs. In Drosophila, the rutabaga (rut) gene encodes an adenylyl cyclase (Rut-AC) that is required in the MBs during associative learning (Busto et al., 2010), and is proposed to function as a coincidence detector. We found that Rut-AC is also required for LTE formation (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by LTE measurements shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "97ef8fea-5ebd-4f1a-998e-1ab95d3a4eb9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C76",
+      "claim": "DA release following coincident AL + NMDA stimulation is significantly impaired in rut2080 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether Rut-AC is required for DA release following coincident AL + NMDA stimulation, we examined release in rut2080 mutants (Levin et al., 1992), and observed significant impairments (Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figures 6B and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "f123df5e-27c9-4335-90c5-590748e76779",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C77",
+      "claim": "DA release is restored when a rut transgene is re-expressed in the MBs from the 30Y-GAL4 MB driver in rut2080 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly release was restored when a rut transgene (rut+) was re-expressed in the MBs from the 30Y-GAL4 MB driver (Figure 6C and D), indicating that the presynaptic DA vesicle release is regulated by post-synaptic MB neurons through a Rut-AC-dependent mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figures 6C and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c9c09b96-967d-4bc3-a4d5-8f1c8008048e",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C78",
+      "claim": "Presynaptic DA vesicle release is regulated by post-synaptic MB neurons through a Rut-AC-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly release was restored when a rut transgene (rut+) was re-expressed in the MBs from the 30Y-GAL4 MB driver (Figure 6C and D), indicating that the presynaptic DA vesicle release is regulated by post-synaptic MB neurons through a Rut-AC-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c53d2033-2b3a-49f4-887d-397656bece36",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C79",
+      "claim": "Most TH-DA neurons project their terminals bilaterally onto the MBs in both hemispheres of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that most TH-DA neurons project their terminals bilaterally onto the MBs in both hemispheres of the brain (Mao and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4b18f7ac-5d9a-42fa-96b2-418269988c00",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C80",
+      "claim": "PNs connect the ALs only to ipsilateral MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "The ALs are bilateral structures, and anatomical and physiological studies show that PNs connect the ALs only to ipsilateral MBs (Marin et al., 2002; Ueno et al., 2013; Wong et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "117c58b0-dc5d-4315-9264-1df221ed7f53",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C81",
+      "claim": "Simultaneous AL + NMDA stimulation induces DA release only on the MB lobes ipsilateral to AL stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We monitored vesicular exocytosis from TH-DA neuronal terminals in response to simultaneous AL + NMDA stimulation (Figure 7A), and observed DA release only on the MB lobes ipsilateral to AL stimulation (Figure 7B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by spH fluorescence imaging shown in Figures 7B and 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "1d70d6f9-474b-4a12-a874-74987272ea13",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C82",
+      "claim": "Postsynaptic gating mechanisms are able to restrict the location of DA release, even though DA neurons innervate extensive brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, postsynaptic gating mechanisms are able to restrict the location of DA release, even though DA neurons innervate extensive brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the unilateral DA release experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "efdac4bd-3e3b-427b-bec3-09efa215b4d6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C83",
+      "claim": "For LTE in the MBs, DA is unlikely to transmit sensory information, but instead plays a critical mechanistic role in LTE establishment at a step after sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that for LTE in the MBs, DA is unlikely to transmit sensory information, but instead, plays a critical mechanistic role in LTE establishment at a step after sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0198702e-2976-4c69-8bf7-04aa167c3adb",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C84",
+      "claim": "DA is not released by activation of individual sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "DA is not released by activation of individual sensory inputs, but instead requires coincident stimulation, indicating that DA functions downstream of a coincidence detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c93283c9-a8fa-46f3-9408-e13dc3d926ee",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C85",
+      "claim": "DA requires coincident stimulation for release.",
+      "claim_type": "EXPLICIT",
+      "source": "DA is not released by activation of individual sensory inputs, but instead requires coincident stimulation, indicating that DA functions downstream of a coincidence detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a9069e35-6f26-45ff-813b-34e1b4cb3cf7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C86",
+      "claim": "DA functions downstream of a coincidence detector.",
+      "claim_type": "EXPLICIT",
+      "source": "DA is not released by activation of individual sensory inputs, but instead requires coincident stimulation, indicating that DA functions downstream of a coincidence detector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the requirement for coincident stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "202931bb-236e-425c-a305-32f7f7a9b8e5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C87",
+      "claim": "Blocking DA signaling abolishes LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking DA signaling abolishes LTE, while DA release alone is sufficient to induce LTE, demonstrating the essential nature of DA in LTE formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a65b894f-6930-4eaa-a220-e87de9698d5c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C88",
+      "claim": "DA release alone is sufficient to induce LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking DA signaling abolishes LTE, while DA release alone is sufficient to induce LTE, demonstrating the essential nature of DA in LTE formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "1708503b-1d0a-4281-b6e9-b381571254d5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C89",
+      "claim": "LTE is likely related to learning and memory-associated plastic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although LTE is a phenomenon observed in vitro, we propose that it is likely related to learning and memory-associated plastic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the similarities between LTE and learning.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d89d427a-1e71-4b5d-832c-48c7fd957fcf",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C90",
+      "claim": "Aversive olfactory learning involves associations between odor information transmitted to the MBs via PNs from the antennal lobes, and shock information likely transmitted to the brain via the AFV.",
+      "claim_type": "EXPLICIT",
+      "source": "Aversive olfactory learning involves associations between odor information, which is transmitted to the MBs via PNs from the antennal lobes, and shock information, which is likely transmitted to the brain via the AFV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge and the authors' findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e2aa40b3-5d70-4183-99da-6fa79d0f7150",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C91",
+      "claim": "Both LTE and learning (3 min memory) require the activity of NRs in the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current manuscript, we further demonstrate that both LTE and learning (3 min memory) require the activity of NRs in the MBs, and identify a subset of glutamatergic neurons (using the GMR51C07 line), which are required for memory, and exhibit vesicular exocytosis onto MB vertical lobes upon AFV stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e3ba9058-52a8-4631-87b2-cd6bc24b9d09",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C92",
+      "claim": "A subset of glutamatergic neurons (using the GMR51C07 line) are required for memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current manuscript, we further demonstrate that both LTE and learning (3 min memory) require the activity of NRs in the MBs, and identify a subset of glutamatergic neurons (using the GMR51C07 line), which are required for memory, and exhibit vesicular exocytosis onto MB vertical lobes upon AFV stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "7ab5dd39-176a-4a92-bfd4-e58cf7d00d20",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C93",
+      "claim": "GMR51C07 glutamatergic neurons exhibit vesicular exocytosis onto MB vertical lobes upon AFV stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current manuscript, we further demonstrate that both LTE and learning (3 min memory) require the activity of NRs in the MBs, and identify a subset of glutamatergic neurons (using the GMR51C07 line), which are required for memory, and exhibit vesicular exocytosis onto MB vertical lobes upon AFV stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "c9047d63-af42-48e2-8df3-9fe384819b5b",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C94",
+      "claim": "AL stimulation evokes vesicular exocytosis from cholinergic PN terminals in the MB calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "Our synapto-pHluorin data indicate that AL stimulation evokes vesicular exocytosis from cholinergic PN terminals in the MB calyx, a result consistent with previous studies (Heisenberg, 2003; Su and O'Dowd, 2003; Yasuyama et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the spH imaging data and is consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a9f455f4-12eb-4f98-87fb-7c918ac92287",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C95",
+      "claim": "AFV stimulation evokes exocytosis from glutamatergic neurons rather than DANs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that AFV stimulation evokes exocytosis from glutamatergic neurons rather than DANs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the spH imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d4e3201c-fc8e-45b2-9932-fefb9f230c6e",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C96",
+      "claim": "Direct application of NMDA to the MBs can replace AFV stimulation during LTE induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, direct application of NMDA to the MBs can replace AFV stimulation during LTE induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "f52b1073-a537-4763-859a-1ead6d3f2265",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C97",
+      "claim": "NMDA acts through NRs in the MBs to induce LTE.",
+      "claim_type": "EXPLICIT",
+      "source": "NMDA acts through NRs in the MBs to induce LTE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "b357ee79-4814-417c-b5fe-ac2c581e9d72",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C98",
+      "claim": "The final step in transmission of US information from the AFV to the MBs occurs through glutamatergic neurons activating MB NRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although the complete neural pathway from the AFV to the MBs has not yet been identified, our results suggest that the final step in transmission of US information from the AFV to the MBs occurs through glutamatergic neurons activating MB NRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0ffb8917-7943-44ac-8975-9c82b15b7a12",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C99",
+      "claim": "DA release occurs at a step after cholinergic and glutamatergic activation of the MBs.",
+      "claim_type": "EXPLICIT",
+      "source": "DA release occurs at a step after cholinergic and glutamatergic activation of the MBs, since LTE induced by AL + NMDA stimulation requires D1Rs, while LTE induced by the DA application does not require NR activity or AL stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the epistasis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "5e10d6fa-96e3-472b-8476-2889e9e79d7c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C100",
+      "claim": "DA release and activation of D1Rs in the MBs comprise the last intercellular step during LTE establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DA application induces LTE even in the presence of TTX in Ca2+ free media, suggesting that DA release and activation of D1Rs in the MBs comprise the last intercellular step during LTE establishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the TTX and Ca2+ free experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "007cc5e2-9eff-4ac2-aacc-22754933d3b8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C101",
+      "claim": "Exogenous activation of dopaminergic pathways can induce plasticity in MB Kenyon cell to MB output neuron transmission in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to DA-induced plasticity in AL-MB transmission, previous papers have also found that exogenous activation of dopaminergic pathways can induce plasticity in MB Kenyon cell to MB output neuron transmission in Drosophila (Cohn et al., 2015), and in CA3 to CA1 transmission in rats and guinea pigs (Huang and Kandel, 1995; Williams et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "2b77f661-e6a5-4547-bbe6-e59d157c4a74",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C102",
+      "claim": "Exogenous activation of dopaminergic pathways can induce plasticity in CA3 to CA1 transmission in rats and guinea pigs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to DA-induced plasticity in AL-MB transmission, previous papers have also found that exogenous activation of dopaminergic pathways can induce plasticity in MB Kenyon cell to MB output neuron transmission in Drosophila (Cohn et al., 2015), and in CA3 to CA1 transmission in rats and guinea pigs (Huang and Kandel, 1995; Williams et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0d9fd856-264e-4695-8b58-ad842f317305",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C103",
+      "claim": "Rut-AC is proposed to function as a coincidence detector of olfactory and somatosensory inputs during olfactory learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Rut-AC is proposed to function as a coincidence detector of olfactory and somatosensory inputs during olfactory learning (Boto et al., 2014; Busto et al., 2010; Heisenberg, 2003; Tomchik and Davis, 2009), suggesting that coincident AL and AFV-mediated activation of postsynaptic Kenyon cells functions to gate presynaptic dopaminergic release through a Rut-AC-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "792aba4f-c994-471e-8331-f53007d8dea2",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C104",
+      "claim": "Coincident AL and AFV-mediated activation of postsynaptic Kenyon cells functions to gate presynaptic dopaminergic release through a Rut-AC-dependent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Rut-AC is proposed to function as a coincidence detector of olfactory and somatosensory inputs during olfactory learning (Boto et al., 2014; Busto et al., 2010; Heisenberg, 2003; Tomchik and Davis, 2009), suggesting that coincident AL and AFV-mediated activation of postsynaptic Kenyon cells functions to gate presynaptic dopaminergic release through a Rut-AC-dependent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "80bf8f9b-153f-4b99-882a-6c36ea842ff8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C105",
+      "claim": "Simultaneous AL and AFV inputs specify the appropriate targets where DA needs to be released.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, simultaneous AL and AFV inputs specify the appropriate targets where DA needs to be released, while the amount of released DA may regulate the occurrence and intensity of plastic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "ce65424b-305b-4b3d-882e-ed6e5e44953b",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C106",
+      "claim": "The amount of released DA may regulate the occurrence and intensity of plastic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, simultaneous AL and AFV inputs specify the appropriate targets where DA needs to be released, while the amount of released DA may regulate the occurrence and intensity of plastic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "0db7f892-4e99-44e8-b09d-9051152a291d",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C107",
+      "claim": "Rut-AC is activated by both Ca2+/calmodulin and G-protein-mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Rut-AC is activated by both Ca2+/calmodulin and G-protein-mediated signaling, and may function to integrate these two signaling pathways (Levin et al., 1992; Tomchik and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "05ef3ce9-05a9-4b1c-ba9d-c03b1099adb2",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C108",
+      "claim": "Rut-AC may function to integrate Ca2+/calmodulin and G-protein-mediated signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that Rut-AC is activated by both Ca2+/calmodulin and G-protein-mediated signaling, and may function to integrate these two signaling pathways (Levin et al., 1992; Tomchik and Davis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "6e0e7ab3-cf3a-4201-9011-25ef102ef813",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C109",
+      "claim": "The activation of neuronal gene expression by L-type voltage gated Ca2+ channels requires two independent activation mechanisms: Ca2+ influx, and a separate voltage-dependent conformational change.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Tsien and colleagues have recently demonstrated that the activation of neuronal gene expression by L-type voltage gated Ca2+ channels requires two independent activation mechanisms: Ca2+ influx, and a separate voltage-dependent conformational change (Li et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "64006c9d-739d-45bb-8658-5d197595e27c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C110",
+      "claim": "Neither Ca2+ influx nor voltage-dependent conformational change alone is sufficient for activation of neuronal gene expression by L-type voltage gated Ca2+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither signal alone is sufficient for activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the cited work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "e8832c77-ed40-4e1d-b715-9b8c2f1cf2a4",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C111",
+      "claim": "Rut-AC, or another coincidence detector in the MBs may require convergent activation by Ca2+ influx from NRs, and a conformational change induced by action potentials propagated from the calyx.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Rut-AC, or another coincidence detector in the MBs may require convergent activation by Ca2+ influx from NRs, and a conformational change induced by action potentials propagated from the calyx.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the analogy to L-type Ca2+ channels.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "7d54f4c3-6f57-4b7a-aa69-b991f3c34a64",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C112",
+      "claim": "Formation and storage of short-term memories (STMs) require \u03b3 and \u03b1'/\u03b2' Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, formation and storage of short-term memories (STMs) require \u03b3 and \u03b1'/\u03b2' Kenyon cells, while consolidation to long-term memories (LTMs) is proposed to require \u03b1/\u03b2 Kenyon cells (Guven-Ozkan and Davis, 2014; Krashes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "1150db0e-4c73-476f-a0f3-a1fe509821b9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C113",
+      "claim": "Consolidation to long-term memories (LTMs) is proposed to require \u03b1/\u03b2 Kenyon cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, formation and storage of short-term memories (STMs) require \u03b3 and \u03b1'/\u03b2' Kenyon cells, while consolidation to long-term memories (LTMs) is proposed to require \u03b1/\u03b2 Kenyon cells (Guven-Ozkan and Davis, 2014; Krashes et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "ee62009a-7d8f-4c6a-9a45-1e8b70be0317",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C114",
+      "claim": "LTE occurs in both the \u03b1 and \u03b1' lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we measured LTE at the vertical lobes, and previously demonstrated that LTE occurs in both the \u03b1 and \u03b1' lobes (Ueno et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "47b67e73-1b20-4b72-ad3a-07707c3e16e5",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C115",
+      "claim": "LTE may be associated with both STM and LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus LTE may be associated with both STM and LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the location of LTE and the memory requirements of different Kenyon cell types.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "f591e50d-eb2a-440b-9e71-ad2af4bb6183",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C116",
+      "claim": "Rutabaga expression in \u03b1/\u03b2 neurons is necessary for LTM, but not STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role of LTE in LTM, a previous study by Blum et al. reported that rutabaga expression in \u03b1/\u03b2 neurons is necessary for LTM, but not STM (Blum et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4a2120d2-fbcc-425c-b1f9-d510a6f96d64",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C117",
+      "claim": "NRs are required for LTM in the ellipsoid bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Although NRs are also required LTM, this requirement is in the ellipsoid bodies, a brain region distinct from the MBs (Wu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "07eb7556-9321-46b7-83d2-33adc6d0c2a7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C118",
+      "claim": "LTE may be important for both STM and LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that LTE may be important for both STM and LTM, and may be a general mechanism for DA-mediated plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "ae4f0768-f4fe-4e2b-a1d8-1b78e1d7e2dd",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C119",
+      "claim": "LTE may be a general mechanism for DA-mediated plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that LTE may be important for both STM and LTM, and may be a general mechanism for DA-mediated plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "80c65001-7ae6-44c4-87b3-6df8c29bb79c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C120",
+      "claim": "Artificial activation of DANs can replace US exposure during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that our results show an apparent discrepancy with previous work demonstrating that artificial activation of DANs can replace US exposure during learning (Aso et al., 2010; Burke et al., 2012; Claridge-Chang et al., 2009; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "665adc06-c3b2-4d3e-9bd0-6ece42d202d3",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "claim_id": "C121",
+      "claim": "Incorporating a dopaminergic feedback loop may allow the organism to fine tune the amount of learning that occurs based on factors including the physiological state of the organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating a dopaminergic feedback loop may allow the organism to fine tune the amount of learning that occurs based factors including the physiological state of the organism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional significance of the dopaminergic feedback loop.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "be1f76ff-9924-4fa5-b0cc-338f791b6610",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Simultaneous stimulation of the antennal lobes (ALs) and ascending fibers of the ventral nerve cord (AFV) induces long-term enhancement (LTE) of subsequent AL-evoked mushroom body (MB) responses that lasts at least two hours. LTE displays input specificity, with MB responses to AL stimulation, but not AFV stimulation, being enhanced, and can be extinguished by repetitive AL stimulation without AFV stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C26, C32, and C34 describe the core LTE phenomenon and its properties. These claims are supported by prior work from the authors (C26, C34) and are consistent with the experimental paradigm described throughout the manuscript. The input specificity (C32) parallels learning paradigms where odor responses are modified but not shock responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LTE induction requires activation of three neurotransmitter receptor types: nicotinic acetylcholine receptors (nAChRs), NMDA receptors (NRs), and D1 dopamine receptors (D1Rs). Both LTE and learning share these molecular requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 and C27-C29 establish the receptor requirements for LTE. These are supported by multiple citations to prior work and are consistent with the experimental manipulations throughout the manuscript (e.g., pharmacological blockade, genetic manipulations). The parallel requirements for learning strengthen the connection between LTE and memory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "22a6c957-adf8-4d73-801e-6c45c81e57c2",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AL inputs are transmitted to the MBs through cholinergic projection neurons (PNs) acting via nAChRs. AL stimulation causes synaptic vesicle exocytosis from PN terminals in the MB calyx and Ca2+ responses in MB lobes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, C36, and C94 describe the AL-to-MB transmission pathway. These are supported by spH fluorescence imaging (Figure 1C) showing vesicle release from PN terminals and Ca2+ imaging showing MB responses. The findings are consistent with prior anatomical and physiological studies cited in C94.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "4218f622-7ed7-4889-9723-eb490d0d5a22",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AFV inputs are transmitted to the MBs through glutamatergic neurons (GMR51C07 line) acting via NMDA receptors, not through dopaminergic neurons. AFV stimulation induces vesicular exocytosis from glutamatergic terminals onto MB vertical lobes, and NMDA application can replace AFV stimulation to induce LTE. GMR51C07 neurons are required for memory formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This large group of claims establishes the glutamatergic pathway for AFV transmission. Key evidence includes: (1) lack of DA neuron vesicle release upon AFV stimulation (C37, Figure 1E), (2) glutamatergic neuron vesicle release (C44, Figure 1G), (3) NMDA substitution for AFV (C50, Figure 2D), (4) Nmdar1 mutant defects (C48-C49, Figure 2A-B), (5) NR knockdown effects (C52-C53, Figures 2E and supplement), and (6) GMR51C07 requirement for memory (C45, C47, Figure 1 supplement). The convergent evidence from imaging, genetics, and pharmacology strongly supports this pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a73916fd-181c-486f-ae06-015c69715c11",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dopamine signaling occurs downstream of both nAChR and NR activation and requires simultaneous stimulation of both pathways. DA application alone is sufficient to induce LTE, and DA acts at a late step in LTE induction where subsequent neurotransmission is not required. DA is not released by individual sensory inputs but requires coincident stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result establishes DA's epistatic position and sufficiency. Key evidence includes: (1) AL+NMDA-induced LTE requires D1Rs (C55-C56, Figure 3A-B), (2) DA application alone induces LTE (C59, Figure 3D), (3) DA-induced LTE doesn't require NRs (C60, Figure 3E), (4) DA rescue in D1R mutants (C61, Figure 3F), (5) DA requirement during induction but not maintenance (C63, Figure 4A-B), and (6) DA-induced LTE in TTX and Ca2+-free conditions (C64-C65, Figure 4C). The epistasis experiments and pharmacological manipulations provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dopamine release requires the activity of rutabaga adenylyl cyclase (Rut-AC) in postsynaptic MB neurons and is restricted to MB neurons receiving coincident stimulation. Coincident AL and AFV inputs to MBs, not to DA neurons, gate presynaptic DA release. DA release is spatially restricted to the ipsilateral MB receiving AL stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result establishes the postsynaptic gating mechanism. Key evidence includes: (1) coincident AL+NMDA induces DA release but individual stimuli do not (C67-C69, Figure 5A-B), (2) nAChR blockade in MBs but not DA neurons prevents DA release (C71-C73, Figure 5C-E), (3) rut mutants impair DA release (C76, Figure 6B), (4) MB-specific rut rescue restores DA release (C77, Figure 6C-D), and (5) unilateral DA release ipsilateral to AL stimulation (C81, Figure 7B-C). The genetic rescue experiments and spatial restriction provide particularly strong evidence for postsynaptic control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d2b29c4b-db71-44d0-b6c3-7fed7b857983",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Postsynaptic activity can gate presynaptic dopamine release to regulate plasticity, even though DA neurons innervate extensive brain areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the main conclusion of the paper (C11) and is well-supported by the mechanistic findings in the previous result groups. The spatial restriction of DA release (C81-C82) despite bilateral DA neuron projections provides particularly compelling evidence for postsynaptic gating. This represents a novel mechanism for controlling neuromodulator release.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "301b587f-8ef1-478d-8815-32219ab5a5b7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LTE is likely related to learning and memory-associated plastic changes and may be a general mechanism for DA-mediated plasticity. LTE may be associated with both short-term and long-term memory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C89, C115, C118, C119) are largely speculative inferences about the relationship between LTE and memory. While LTE shares molecular requirements with learning and occurs in memory-relevant brain regions, the direct connection to specific memory phases remains uncertain. The authors acknowledge LTE is an in vitro phenomenon and the precise relationship to memory types requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Rut-AC is proposed to function as a coincidence detector integrating Ca2+/calmodulin and G-protein-mediated signaling. Rut-AC or another coincidence detector may require convergent activation by Ca2+ influx from NRs and conformational changes induced by action potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103 and C107-C108 are supported by citations to prior work, but the specific mechanism by which Rut-AC detects coincidence in this system (C104, C111) remains speculative. The authors acknowledge uncertainty about whether nAChRs and NRs activate G-proteins and propose an alternative mechanism by analogy to L-type Ca2+ channels. The requirement for Rut-AC is established, but the precise detection mechanism is not.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "d12aadae-0ce9-4b73-8844-2acf8c393343",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Exogenous activation of dopaminergic pathways can induce plasticity in multiple systems including Drosophila MB-to-output neuron transmission and mammalian hippocampal CA3-to-CA1 transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C101-C102) are supported by citations to prior work and provide context for the DA-induced LTE findings in the current study. The parallel findings across systems support the generality of DA's role in plasticity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on dopamine function in learning: DA signaling is required for associative learning and plasticity, DA activity correlates with US presentation and prediction errors, and in Drosophila aversive conditioning, odor-shock associations form in the mushroom bodies with odor information transmitted via projection neurons from antennal lobes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C12-C25) provide established background from prior work and are well-supported by multiple citations. They establish the context for the current study but are not novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "9128e385-7175-4506-a5ec-827af4f605cd",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LTE formation requires associativity between AL and AFV inputs, with increasing intensity or duration of one input insufficient to bypass the requirement for the other. This parallels associative learning where odor responses are modified but not shock responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C30-C31, C33) are supported by citations to prior work by the authors and others. The associativity requirement is a key feature linking LTE to learning, though the specific experiments demonstrating this are from prior publications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "7150f35d-e83a-488d-9bce-0485a8957fe7",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The amount of released DA may regulate the occurrence and intensity of plastic changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim (C106) is speculative and not directly tested in the manuscript. While the dose-response data (C62, Figure 3G) show DA concentration affects LTE magnitude, the specific regulatory role of DA amount in determining plasticity occurrence and intensity requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "b401be01-8b4a-4314-a4da-ed68a40df87d",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Activation of neuronal gene expression by L-type voltage-gated Ca2+ channels requires two independent mechanisms: Ca2+ influx and a voltage-dependent conformational change, with neither alone being sufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C109-C110) are supported by citation to prior work (Li et al., 2016) and provide an analogy for potential Rut-AC activation mechanisms. This is background information from other systems, not a finding from the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Different Kenyon cell types are required for different memory phases: \u03b3 and \u03b1'/\u03b2' cells for short-term memory, \u03b1/\u03b2 cells for long-term memory consolidation. LTE occurs in both \u03b1 and \u03b1' lobes, and rutabaga expression in \u03b1/\u03b2 neurons is necessary for LTM but not STM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C112-C114, C116-C117) are supported by citations to prior work and provide context for interpreting where LTE might fit in memory processing. The findings are from other studies, not novel results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "a90d8cb4-a4bc-4d52-b287-8ded505bc2cb",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors note an apparent discrepancy with prior work showing artificial DAN activation can replace US during learning, and speculate that incorporating a dopaminergic feedback loop may allow fine-tuning of learning based on physiological state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C120-C121) acknowledge a discrepancy with prior work and offer speculation about its resolution and functional significance. The proposed explanation that TrpA1/P2X2 activation alone is insufficient without postsynaptic gating is not directly tested. This represents an important discussion point but not a resolved finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    },
+    {
+      "id": "7c6694d6-1abb-4a01-b11b-eab57947292a",
+      "content_id": "26467395-4f0b-4d32-bc16-d48132fadc76",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Most TH-DA neurons project bilaterally to MBs in both brain hemispheres, while projection neurons connect ALs only to ipsilateral MBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These anatomical claims (C79-C80) are supported by citations to prior work and provide the anatomical basis for testing spatial restriction of DA release. These are established findings used to design experiments, not novel discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:39:11.630885Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "84b2f546-11d3-434e-b3a9-a57f69c2f556",
+      "result_id": "be1f76ff-9924-4fa5-b0cc-338f791b6610"
+    },
+    {
+      "claim_id": "0f16d1c2-da37-44b1-b4e7-0dc4baba8752",
+      "result_id": "be1f76ff-9924-4fa5-b0cc-338f791b6610"
+    },
+    {
+      "claim_id": "e51a2fd9-463d-4e40-8d0d-6d2ec28f5ce5",
+      "result_id": "be1f76ff-9924-4fa5-b0cc-338f791b6610"
+    },
+    {
+      "claim_id": "fbeb9f0d-ba81-48e2-b106-37d3662edaf7",
+      "result_id": "be1f76ff-9924-4fa5-b0cc-338f791b6610"
+    },
+    {
+      "claim_id": "9bb6b55f-eb8b-42a3-9bc8-3aeb0228a241",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "eb543568-b2a2-4724-9f58-30abd68c19e9",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "5eb93639-cfc1-41ff-80eb-053659c816c2",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "cf4ec121-d3a1-4020-9ac5-00d9b49a4a25",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "4dcf1a39-4c1f-4554-b44a-400f096d7429",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "9182f1c5-35d7-447d-a987-0e8b3305f9bc",
+      "result_id": "338612e0-0bfa-4e2a-b816-5ea027f65eb6"
+    },
+    {
+      "claim_id": "e25b7e4c-6373-46a3-a1e5-986e0420783b",
+      "result_id": "22a6c957-adf8-4d73-801e-6c45c81e57c2"
+    },
+    {
+      "claim_id": "218c9665-6079-490d-8ca9-b8ce068e9992",
+      "result_id": "22a6c957-adf8-4d73-801e-6c45c81e57c2"
+    },
+    {
+      "claim_id": "afa9cb76-ae1f-4df8-b93e-436e8b135282",
+      "result_id": "22a6c957-adf8-4d73-801e-6c45c81e57c2"
+    },
+    {
+      "claim_id": "c9047d63-af42-48e2-8df3-9fe384819b5b",
+      "result_id": "22a6c957-adf8-4d73-801e-6c45c81e57c2"
+    },
+    {
+      "claim_id": "90d14896-9fa1-4c3d-9396-6988bc614f1e",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "c6b4ed41-5877-4f9e-b275-130ec6fbe30c",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "4ef1a8db-bc8f-48c5-8d4c-ac5bb0a3efb0",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "70cdca96-6f30-4b2f-ad2c-52172c5940e5",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "367ea368-92ab-4068-a513-26ae05f35c49",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "ac098557-49db-4169-bab0-a4e8ffb9444d",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "e7de51b9-1ffa-4176-af64-ea94a1475eda",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "28cb448f-a977-4339-b86d-df83026146da",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "091c4c68-4714-40f2-bc48-1142028de01c",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "e8e02dc3-a001-44eb-ac36-c1225434b74c",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "0a915635-11f0-4e90-8836-2aef8e8e2287",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "017fb2b7-7544-49fe-8e2e-1a7fe0b66cba",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "1a3d1491-5e9d-41a8-b60f-6a132614f841",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "75dad4ea-a3a3-4c48-966f-1a04fba57e49",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "963dbabb-4fd9-4741-afde-64747e0b797b",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "e74ad6b6-d746-4411-9d28-1669ec0979aa",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "40cc6e07-e7ae-4e84-a396-61ad42a05e0a",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "e2aa40b3-5d70-4183-99da-6fa79d0f7150",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "e3ba9058-52a8-4631-87b2-cd6bc24b9d09",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "7ab5dd39-176a-4a92-bfd4-e58cf7d00d20",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "a9f455f4-12eb-4f98-87fb-7c918ac92287",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "d4e3201c-fc8e-45b2-9932-fefb9f230c6e",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "f52b1073-a537-4763-859a-1ead6d3f2265",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "b357ee79-4814-417c-b5fe-ac2c581e9d72",
+      "result_id": "4218f622-7ed7-4889-9723-eb490d0d5a22"
+    },
+    {
+      "claim_id": "b475a593-b52a-43f8-9a8c-72e61cfaf6de",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "b9748607-7d54-47bd-bd7e-81ca08426863",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "9044c069-3e5c-4d55-91ad-600796af9f1e",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "d9140d1f-55ee-45d5-ae0b-833a3ed1bfd0",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "c9d6e010-9284-42f8-9142-1dbbb64b2b18",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "82aca9de-1ac5-446e-87c4-3ff8ba934439",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "5d9e46bb-5ade-43fd-a654-04e456dd61f3",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "490ecd50-0fbc-498a-8cc3-e9c85f04f9f8",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "b85d4899-f390-44a1-9fb1-ee780ac3626a",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "6b758c5f-5307-468b-bb2f-99189000c2d9",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "2d58e5c7-06ab-4732-bafa-bd97a59cfaf6",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "82b43b1c-bdba-4ca5-998e-b84ef0adc014",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "fa5f2fd6-b39b-4cd3-bd4c-6a58572a2777",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "6cbd4644-422f-484d-8f2b-76b9ea122288",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "efdac4bd-3e3b-427b-bec3-09efa215b4d6",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "0198702e-2976-4c69-8bf7-04aa167c3adb",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "c93283c9-a8fa-46f3-9408-e13dc3d926ee",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "a9069e35-6f26-45ff-813b-34e1b4cb3cf7",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "202931bb-236e-425c-a305-32f7f7a9b8e5",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "a65b894f-6930-4eaa-a220-e87de9698d5c",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "0ffb8917-7943-44ac-8975-9c82b15b7a12",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "5e10d6fa-96e3-472b-8476-2889e9e79d7c",
+      "result_id": "a73916fd-181c-486f-ae06-015c69715c11"
+    },
+    {
+      "claim_id": "4419629c-4c2a-40c4-905d-f0818ef5a2e9",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "0e9831d3-3b3d-4ba9-bd0a-fef51d92d958",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "16668ea9-4d03-4659-b849-d683c6066731",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "2f1c327e-a4b4-4100-9176-4a8c3152acbe",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "cf32d7f1-2008-47e1-8213-f50b404bb196",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "bc2c6f94-15e5-43c0-9c97-b0edef066de8",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "5c32b6e8-386a-4d82-95dd-13d43a16feb6",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "81b815f3-330f-496f-9bdd-de4d3e0766a7",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "47b4e95f-3a44-4db6-8d2a-6ead66a2e025",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "a974d8bc-5b2d-4849-9d8a-feb01141646b",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "ae57690b-004d-47f6-aa37-d5f756c6b0b6",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "97ef8fea-5ebd-4f1a-998e-1ab95d3a4eb9",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "f123df5e-27c9-4335-90c5-590748e76779",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "c9c09b96-967d-4bc3-a4d5-8f1c8008048e",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "117c58b0-dc5d-4315-9264-1df221ed7f53",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "1d70d6f9-474b-4a12-a874-74987272ea13",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "792aba4f-c994-471e-8331-f53007d8dea2",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "80bf8f9b-153f-4b99-882a-6c36ea842ff8",
+      "result_id": "aa135a20-5a8c-4a48-8c97-5301fc6ec90c"
+    },
+    {
+      "claim_id": "2a8bc5da-4029-4b45-8b05-b5404975075f",
+      "result_id": "d2b29c4b-db71-44d0-b6c3-7fed7b857983"
+    },
+    {
+      "claim_id": "bc2c6f94-15e5-43c0-9c97-b0edef066de8",
+      "result_id": "d2b29c4b-db71-44d0-b6c3-7fed7b857983"
+    },
+    {
+      "claim_id": "1d70d6f9-474b-4a12-a874-74987272ea13",
+      "result_id": "d2b29c4b-db71-44d0-b6c3-7fed7b857983"
+    },
+    {
+      "claim_id": "1708503b-1d0a-4281-b6e9-b381571254d5",
+      "result_id": "301b587f-8ef1-478d-8815-32219ab5a5b7"
+    },
+    {
+      "claim_id": "d89d427a-1e71-4b5d-832c-48c7fd957fcf",
+      "result_id": "301b587f-8ef1-478d-8815-32219ab5a5b7"
+    },
+    {
+      "claim_id": "47b67e73-1b20-4b72-ad3a-07707c3e16e5",
+      "result_id": "301b587f-8ef1-478d-8815-32219ab5a5b7"
+    },
+    {
+      "claim_id": "07eb7556-9321-46b7-83d2-33adc6d0c2a7",
+      "result_id": "301b587f-8ef1-478d-8815-32219ab5a5b7"
+    },
+    {
+      "claim_id": "ae4f0768-f4fe-4e2b-a1d8-1b78e1d7e2dd",
+      "result_id": "301b587f-8ef1-478d-8815-32219ab5a5b7"
+    },
+    {
+      "claim_id": "0d9fd856-264e-4695-8b58-ad842f317305",
+      "result_id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9"
+    },
+    {
+      "claim_id": "792aba4f-c994-471e-8331-f53007d8dea2",
+      "result_id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9"
+    },
+    {
+      "claim_id": "0db7f892-4e99-44e8-b09d-9051152a291d",
+      "result_id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9"
+    },
+    {
+      "claim_id": "05ef3ce9-05a9-4b1c-ba9d-c03b1099adb2",
+      "result_id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9"
+    },
+    {
+      "claim_id": "e8832c77-ed40-4e1d-b715-9b8c2f1cf2a4",
+      "result_id": "89043a37-6fcb-49c7-bff3-e6f417b9c7d9"
+    },
+    {
+      "claim_id": "007cc5e2-9eff-4ac2-aacc-22754933d3b8",
+      "result_id": "d12aadae-0ce9-4b73-8844-2acf8c393343"
+    },
+    {
+      "claim_id": "2b77f661-e6a5-4547-bbe6-e59d157c4a74",
+      "result_id": "d12aadae-0ce9-4b73-8844-2acf8c393343"
+    },
+    {
+      "claim_id": "e7fc199d-d1d6-4f24-a5e9-f8a9580bf5d9",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "83357f9a-e4d0-412c-a799-5d364f3e03a8",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "0bea8559-c358-4cbb-82b0-3431b805bdc3",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "dbe3666c-2d43-4b0e-a91e-a68fa95b71d6",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "5bd3651b-2122-4e58-bcaf-f8dac11fce5d",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "7bddecb8-0510-424f-973d-2bba9b02db9c",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "8b2780b6-a7f2-4f2b-9ff3-0c2754de8536",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "6ce516a3-3dd6-4e2e-9d8b-beb681cba9ba",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "d496a381-db7b-4c89-a0c4-be010eeacfea",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "bd6119a4-efe2-4c10-8ceb-03a690cbf3a5",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "5a716f79-c976-448f-8374-6da88d60a692",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "fd59d7cd-8916-46ee-9640-b3b2f2222f41",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "6322ac54-5e8a-44b7-b6b3-25af074266b8",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "1e67cf38-67f0-43a4-a2c4-ae822b58fdb4",
+      "result_id": "37de1bfe-700a-4d45-ae2c-9fecd1b35df6"
+    },
+    {
+      "claim_id": "c47b6a5a-32c5-4ead-90da-aa1b4ab6015a",
+      "result_id": "9128e385-7175-4506-a5ec-827af4f605cd"
+    },
+    {
+      "claim_id": "0b989ce1-786b-4df7-af02-9d3c4208c437",
+      "result_id": "9128e385-7175-4506-a5ec-827af4f605cd"
+    },
+    {
+      "claim_id": "f1ba8416-86fe-4248-9b3d-cee79a4978e0",
+      "result_id": "9128e385-7175-4506-a5ec-827af4f605cd"
+    },
+    {
+      "claim_id": "ce65424b-305b-4b3d-882e-ed6e5e44953b",
+      "result_id": "7150f35d-e83a-488d-9bce-0485a8957fe7"
+    },
+    {
+      "claim_id": "6e0e7ab3-cf3a-4201-9011-25ef102ef813",
+      "result_id": "b401be01-8b4a-4314-a4da-ed68a40df87d"
+    },
+    {
+      "claim_id": "64006c9d-739d-45bb-8658-5d197595e27c",
+      "result_id": "b401be01-8b4a-4314-a4da-ed68a40df87d"
+    },
+    {
+      "claim_id": "7d54f4c3-6f57-4b7a-aa69-b991f3c34a64",
+      "result_id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8"
+    },
+    {
+      "claim_id": "1150db0e-4c73-476f-a0f3-a1fe509821b9",
+      "result_id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8"
+    },
+    {
+      "claim_id": "ee62009a-7d8f-4c6a-9a45-1e8b70be0317",
+      "result_id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8"
+    },
+    {
+      "claim_id": "f591e50d-eb2a-440b-9e71-ad2af4bb6183",
+      "result_id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8"
+    },
+    {
+      "claim_id": "4a2120d2-fbcc-425c-b1f9-d510a6f96d64",
+      "result_id": "3a4136f8-7cf7-4625-93ca-78df0754f3d8"
+    },
+    {
+      "claim_id": "80c65001-7ae6-44c4-87b3-6df8c29bb79c",
+      "result_id": "a90d8cb4-a4bc-4d52-b287-8ded505bc2cb"
+    },
+    {
+      "claim_id": "665adc06-c3b2-4d3e-9bd0-6ece42d202d3",
+      "result_id": "a90d8cb4-a4bc-4d52-b287-8ded505bc2cb"
+    },
+    {
+      "claim_id": "c53d2033-2b3a-49f4-887d-397656bece36",
+      "result_id": "7c6694d6-1abb-4a01-b11b-eab57947292a"
+    },
+    {
+      "claim_id": "4b18f7ac-5d9a-42fa-96b2-418269988c00",
+      "result_id": "7c6694d6-1abb-4a01-b11b-eab57947292a"
+    }
+  ],
+  "comparisons": []
+}

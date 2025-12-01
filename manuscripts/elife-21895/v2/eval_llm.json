@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "RTP1,2DKO mice are viable and lack RTP1 and RTP2 transcripts. Heterozygous crosses produced offspring in a roughly 1:2:1 Mendelian ratio, suggesting no embryonic or postnatal lethality, and RNA in situ hybridization confirmed the absence of RTP1 and RTP2 transcripts in knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide converging evidence for successful generation of viable RTP1,2DKO mice. The Mendelian ratio (C9, C10) with appropriate sample size (n=10 mating pairs) supports viability, and RNA in situ hybridization (C11) validates the knockout at the transcript level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "RTP1,2DKO mice exhibit OR trafficking defects. While OSN morphology remains intact as evidenced by GFP staining in dendrites, Olfr151 immunostaining is restricted to the cell body, indicating failure to traffic ORs to dendrites, demonstrating that RTP1 and RTP2 are essential for OR trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 provide strong evidence for OR trafficking defects. The use of M71-IRES-tauGFP mice allows separation of morphological integrity (C12, C13) from OR localization defects (C14, C15), with appropriate controls and imaging data (Figure 1D) supporting the conclusion (C16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "RTP1,2DKO mice show reduced olfactory epithelium thickness and fewer mature OSNs with age-dependent effects. The OE thickness is significantly reduced (p=0.02), with 22% reduction in OMP-positive area (p<0.0001) and 17% decrease in ACIII-positive area (p=0.0001) at 21 days. Mature OSN markers show significant reductions at 1 and 21 days but not at 6 months, while immature marker GAP43 shows a 7% increase at 21 days (p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 present comprehensive characterization of OE phenotype with appropriate statistical tests and multiple markers. The age-dependent analysis (1 day, 21 days, 6 months) reveals dynamic changes, though the recovery at 6 months requires further mechanistic explanation. Sample sizes and statistical methods are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RTP1,2DKO mice exhibit dramatically reduced odorant sensitivity measured by EOG. While wild-type mice show robust responses to all odorants at 0.01% concentration, RTP1,2DKO responses to most odors are identical to blank, though some sensitivity is maintained for specific odorants (2-heptanone, amyl acetate, isomenthone).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 demonstrate functional consequences of RTP loss using EOG recordings. The data show clear differences between genotypes with appropriate controls (blank/air stimuli). However, the mechanistic link (C28) between reduced mature OSNs, OR trafficking defects, and diminished sensitivity is correlative rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RNA-Seq analysis reveals differential gene expression in RTP1,2DKO with 3.8% of genes affected (926/24,661), including 805 downregulated and 121 upregulated genes (FDR p<0.05). Mature OSN signaling molecules (Gnal, Adcy3, Cnga2) are reduced, while housekeeping genes and other RTP family members show no compensatory changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 present RNA-Seq data with appropriate statistical correction (FDR p<0.05). The consistency with reduced mature OSN numbers (C31) and lack of compensation (C32, C33) strengthen the findings. However, the whole olfactory mucosa was used, potentially including non-OSN cells, which could confound interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "OR expression is biased in RTP1,2DKO with 62% of intact ORs significantly affected. Approximately half (562/1088) are downregulated while unexpectedly 116/1088 are upregulated (FDR p<0.05). OR-specific normalization reveals 531/1088 underrepresented (uORs) and 202/1088 overrepresented (oORs). RNA in situ validation confirms fewer OSNs express uORs (p<0.05) while more express oORs (p<0.05), demonstrating biased OR gene choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 present the key unexpected finding with RNA-Seq data validated by in situ hybridization. The use of OR-specific normalization (C37) addresses potential confounding from non-OSN cells. Statistical significance is appropriate, and the validation of multiple individual ORs (C38, C39) strengthens confidence in the RNA-Seq findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "oORs are more abundantly expressed than uORs in wild-type mice, while OR genes not classified as uORs or oORs (NS) are expressed at significantly lower levels than both (p<0.0001, one-way ANOVA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe baseline OR expression patterns in wild-type with appropriate statistical analysis. This provides important context for interpreting the knockout phenotype, though the biological significance of these baseline differences is not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Age-dependent analysis reveals progressive accumulation of oOR-expressing OSNs in RTP1,2DKO. Wild-type shows increased uOR-expressing OSNs at 21 days and 6 months, consistent with maturation. In contrast, RTP1,2DKO shows no increase in uOR-expressing cells with age, but dramatic increases in oOR-expressing neurons from 1 day to 21 days and 21 days to 6 months (p<0.0001, one-way ANOVA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate temporal dynamics of OR bias using probe mixes against multiple ORs. The statistical analysis is appropriate (one-way ANOVA with post-hoc test), and the progressive accumulation of oOR-expressing cells provides insight into the mechanism. However, probe mixes may have variable hybridization efficiencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "OR protein sequence, not genomic locus, determines representation bias in RTP1,2DKO. Using \u03b22AR expressed from the Olfr151 locus, fewer Olfr151-expressing OSNs are present in RTP1,2DKO (p=0.0028), as expected for a uOR. However, more \u03b22AR-positive OSNs are present in RTP1,2DKO compared to wild-type (p<0.001), demonstrating that protein sequence determines OR representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 present a critical experiment using \u03b22AR knock-in at the Olfr151 locus to distinguish locus effects from protein sequence effects. The opposite behaviors of Olfr151 and \u03b22AR from the same locus provide strong evidence for the conclusion (C49). Statistical significance is appropriate for both comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "oORs show greater cell surface expression than uORs in heterologous HEK293T cells without RTPs. FACS analysis reveals oORs as a group have significantly more surface expression than uORs (p<0.05), with the most robustly expressed ORs all being oORs, suggesting RTP-independent trafficking may relate to increased oOR frequencies in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52 provide supporting evidence from heterologous cells, but the authors acknowledge trafficking mechanisms likely differ between HEK293T cells and OSNs (C52). While the correlation is suggestive, the causal link between heterologous surface expression and in vivo representation remains speculative. Sample sizes for individual ORs tested are not clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "OSNs expressing oORs mature and function in RTP1,2DKO while uOR-expressing OSNs fail to mature. OMP-negative immature OSNs expressing uORs are similar between genotypes, but OMP-positive mature uOR-expressing OSNs show 69% decrease in RTP1,2DKO (p=0.024). Functional testing shows oOR-expressing OSNs (Olfr1395) respond to cognate ligand TMT in both genotypes (p<0.0001), while uOR-expressing OSNs (Olfr923) respond to acetophenone only in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide strong evidence for differential maturation and function using OMP colocalization and pS6 activation assays. The functional data (C55, C56) with deorphanized ORs directly demonstrates that oOR-expressing OSNs are functional in RTP1,2DKO. Statistical tests are appropriate, though sample sizes for individual ORs could be larger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "RTP1,2DKO mice show increased OSN cell death. Active caspase 3 staining reveals significantly more OSNs undergoing apoptosis in RTP1,2DKO (p<0.01), with increased death in both immature and mature layers. Notably, immature OSNs rarely undergo death in wild-type, suggesting uOR-expressing OSNs are more likely to die in RTP1,2DKO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 demonstrate increased apoptosis using active caspase 3 with appropriate statistical analysis. The observation that immature OSNs rarely die in wild-type (C60) but show increased death in RTP1,2DKO is notable. However, the inference that uOR-expressing OSNs specifically undergo death (C61) is indirect and would benefit from direct colocalization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RTP1,2DKO shows expanded and persistent nATF5 expression indicating prolonged UPR. More nATF5-positive OSNs are present in RTP1,2DKO (p<0.001), with some located closer to the apical surface, a pattern not seen in wild-type. LSD1, whose expression depends on nATF5, also shows expanded expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate persistent UPR signaling using nATF5 and LSD1 markers with appropriate statistical analysis. The apical localization of nATF5-positive cells (C63) suggests persistence during maturation. The LSD1 data (C65) provides supporting evidence, though the dependency relationship is based on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "OR delivery to the membrane terminates UPR. OSNs co-expressing Olfr151 and nATF5 are significantly increased in RTP1,2DKO (p<0.05), while \u03b22AR/nATF5 co-expression is unchanged (p=1). Since Olfr151 requires RTPs for surface expression but \u03b22AR does not, this suggests OR membrane delivery terminates UPR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide strong mechanistic evidence using the \u03b22AR knock-in strategy to test the UPR hypothesis. The differential nATF5 colocalization between Olfr151 and \u03b22AR from the same locus supports the conclusion that surface trafficking, not locus-specific factors, controls UPR termination. Statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "uOR-expressing OSNs show persistent UPR while oOR-expressing OSNs do not. Higher numbers of uOR-expressing OSNs colocalize with nATF5 in RTP1,2DKO (p=0.007), while no significant difference is observed for oORs (p=0.937). This suggests uOR-expressing OSNs contribute to expanded nATF5 expression and links surface trafficking to UPR termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 test multiple uORs and oORs (7 and 6 respectively) for nATF5 colocalization, providing robust group-level evidence. The statistical significance for uORs but not oORs supports the model linking trafficking to UPR. However, individual OR variability within groups is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "OR gene expression is unstable in Olfr151-expressing OSNs in RTP1,2DKO. Lineage tracing shows only 17% of tdTomato-positive cells in RTP1,2DKO also express Olfr151, compared to 31% in wild-type and 38% in heterozygotes (p<0.05), indicating frequent termination of Olfr151 expression. No Olfr143/tdTomato double-positive cells were found, indicating no preferential switching to this nearby oOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide direct evidence for OR gene choice instability using lineage tracing with appropriate genetic tools and statistical analysis. The lack of switching to Olfr143 (C75, C76) addresses a specific alternative hypothesis. However, the identities of ORs expressed by tdTomato+/Olfr151- cells remain unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "RTP1,2DKO mice show OR-specific defects in glomerular convergence. While olfactory axons reach the glomerular layer, Olfr151-expressing OSNs fail to converge into glomeruli in RTP1,2DKO, whereas wild-type shows two Olfr151 glomeruli per bulb. \u03b22AR-expressing OSNs form glomeruli in both genotypes, though with ectopic positioning in RTP1,2DKO. Small tdTomato-positive glomeruli form in some RTP1,2DKO mice (2/3), suggesting OSNs initially expressing Olfr151 may switch to and stabilize expression of another OR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 demonstrate axon targeting defects with appropriate imaging approaches. The differential glomerular formation between Olfr151 and \u03b22AR (C78-C81) parallels the OSN representation data. The tdTomato-positive glomeruli (C83) provide intriguing evidence for gene switching, though the speculation about oOR stabilization (C84) requires validation. Sample size for tdTomato analysis is small (n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "RTP loss leads to biased OR representation determined by protein sequence. The absence of RTP1 and RTP2 causes underrepresentation of nearly half of ORs while ~10% are overrepresented. OR protein sequences differentially influence gene choice, linked to OR trafficking to the cell surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 summarize the major findings with support from multiple experimental approaches (RNA-Seq, in situ, \u03b22AR knock-in, heterologous expression). The conclusion that protein sequence determines bias is well-supported, though the specific sequence features remain unidentified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Proposed model: RTPs suppress UPR by enabling OR exit from ER and transport to plasma membrane. Without RTPs, uORs fail to traffic, causing persistent UPR and destabilization of gene choice leading to cell death or OR switching. In contrast, oORs traffic without RTPs, allowing UPR termination and gene stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 present an integrated model supported by multiple lines of evidence: trafficking defects (C12-C16), persistent nATF5 (C62-C72), gene instability (C73-C76), and differential maturation (C53-C57). While the model is well-supported, some mechanistic details (e.g., how surface ORs signal to terminate UPR) remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RTP1,2DKO mice retain diminished but not abolished olfactory responses due to functional oOR-expressing OSNs. These OSNs mature and function in RTP1,2DKO, explaining residual EOG responses. oOR-expressing OSNs become more abundant with age, helping maintain olfactory ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 integrate functional (EOG), cellular (maturation markers), and temporal (age-dependent) data to explain residual olfactory function. The correlation between oOR accumulation and maintained function is logical, though direct behavioral testing would strengthen the conclusion about olfactory ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ORs expressed outside the olfactory epithelium are predominantly oORs. Olfr78 and its human ortholog OR51E2 function in multiple tissues and are oORs that traffic without RTPs. ORs in bladder and thyroid (Olfr544, Olfr558, Olfr1386) are all oORs, suggesting oORs expressed outside the OE may be more likely to play chemosensory roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 cite prior literature appropriately, but C98 is speculative. While the correlation between oOR classification and ectopic expression is intriguing, the sample size is small (4 ORs mentioned), and the speculation about chemosensory roles requires experimental validation. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  }
+]

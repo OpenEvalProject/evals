@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "A three-stage purification procedure based on CD63 immunoisolation was developed to isolate exosomes from HEK293T cells. The procedure yielded a 5-fold purification of exosomes from the starting pellet, with vesicles of expected size and morphology by electron microscopy, and RNA associated with the CD63-positive fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C30 describe the development and validation of an exosome purification method. The electron microscopy (C25), luciferase topology assays (C26-C27), quantitative purification metrics (C28), and RNA association data (C29-C30) provide converging evidence that the method successfully isolates CD63-positive exosomes. The methodology is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C4"
+    ],
+    "result": "Small RNA sequencing identified specific miRNAs highly enriched in CD63-containing exosomes compared to cellular levels. miR-223-3p was uniquely abundant in exosomes (72nd percentile) despite low cellular levels, and several other miRNAs (miR-144-3p, miR-150-5p, miR-142-3p) were also highly enriched in exosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 and C4 present comprehensive small RNA-seq data showing differential miRNA enrichment in exosomes versus cells. The quantitative metrics (read counts, percentages, enrichment ratios) are clearly reported, and the identification of miR-223 as highly enriched despite low cellular abundance is a key finding supported by the data. The vast majority of reads mapping to mature targeting strands (C34) validates the quality of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "qRT-PCR validation and RNase protection assays confirmed that miR-223 and miR-144 are selectively packaged into CD63-positive exosomes and protected from degradation by the exosome membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 provide orthogonal validation of the sequencing results using qRT-PCR (C42) and functional RNase protection assays (C44). The enrichment at each purification stage (C42) and protection from RNase unless detergent is added (C44) provide strong evidence that these miRNAs are specifically enclosed within exosomes rather than surface-bound or contaminating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C5"
+    ],
+    "result": "A cell-free exosome biogenesis assay was developed that reconstitutes the formation of membrane-enclosed vesicles containing CD63-luciferase. The assay requires cytosol, physiological temperature (30\u00b0C), and is disrupted by detergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C5 describe the development of a cell-free biogenesis assay with appropriate controls (temperature, cytosol requirement, detergent sensitivity). The use of CD63-luciferase as a reporter with membrane-impermeable substrates provides a clever readout for vesicle formation. The requirements match expected biochemical conditions for exosome biogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A cell-free miRNA packaging assay was developed that recapitulates the selective packaging of miR-223 into RNase-resistant, detergent-sensitive vesicles. The assay requires membranes, cytosol, physiological temperature, and ATP, and is inhibited by the neutral sphingomyelinase inhibitor GW4869.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 describe a complementary cell-free assay for miRNA packaging with systematic controls for each requirement (membranes, cytosol, temperature, ATP). The ATP requirement (C51) and GW4869 inhibition (C52) provide mechanistic insights. The convergence of requirements with the biogenesis assay (C53) strengthens the conclusion that both assays recapitulate aspects of exosome formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C105"
+    ],
+    "result": "The cell-free packaging assay reconstitutes selective sorting, with exosomal miR-223 packaged more efficiently (9%) than cellular miR-190 (1.5%). The kinetics of miR-223 packaging mirror the kinetics of CD63-luciferase sequestration in the biogenesis assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 and C105 demonstrate that the cell-free assay recapitulates the selectivity observed in vivo. The quantitative comparison between miR-223 and miR-190 (C54) and the correlation of kinetics between the two assays (C55) provide strong evidence that the cell-free system captures the biological sorting mechanism. The ~6-fold difference in packaging efficiency is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mass spectrometry of proteins bound to biotinylated miR-223 in the cell-free packaging assay identified YBX1 as the most abundant protein (>45% coverage). YBX1 co-packaging with miR-223 requires the same conditions as miRNA packaging (membranes, cytosol, physiological temperature).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C6, and C71-C74 describe the identification of YBX1 through an unbiased proteomics approach. The high peptide coverage (>45%, C58) and the requirement for the same conditions as miRNA packaging (C71-C74) provide strong evidence for YBX1's involvement. The controls (lacking cytosol, membranes, or biotin-miR-223) are appropriate and show specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "YBX1 co-purifies with CD63-positive exosomes and known exosome markers (TSG101, Alix, CD9), while flotillin 2 is predominantly found in the CD63-negative fraction, indicating that HEK293T cells release at least two vesicle types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 demonstrate that YBX1 is specifically associated with CD63-positive exosomes through immunoisolation and immunoblotting. The differential distribution of flotillin 2 (C68) provides an important control showing that not all membrane proteins co-purify with CD63, supporting the specificity of the purification and the existence of distinct vesicle populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C128"
+    ],
+    "result": "Ago2 was not detected in density gradient-purified vesicle fractions from HEK293T cells, indicating that the majority of extracellular Ago2 exists as a non-vesicle-associated species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 and C128 present clear negative data showing that Ago2 is not associated with purified exosomes. The use of density gradient purification (C76-C77) to separate vesicles from non-vesicle material is appropriate, and the enrichment of exosome markers without Ago2 is convincing. The citation of supporting evidence from MCF7 cells (C79) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C129"
+    ],
+    "result": "In the cell-free packaging assay, both single-stranded and duplex miR-223 substrates bind Ago2 in cytosol alone, but in complete reactions containing membranes and ATP, only YBX1 is detected associated with packaged miR-223. Duplex substrates are packaged ~2-fold more efficiently than single-stranded guide RNA, and only the guide strand (not passenger) is sorted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 and C129 systematically address potential technical concerns about the absence of Ago2 in packaged miRNA. The experiments with different biotinylation positions (C80-C81) and duplex versus single-stranded substrates (C82-C83) are well-controlled. The finding that Ago2 binds in cytosol alone but YBX1 predominates in complete reactions (C84-C86) suggests a handoff mechanism and explains the absence of Ago2 in the mass spectrometry data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C7"
+    ],
+    "result": "CRISPR/Cas9-generated YBX1 knockout (\u0394YBX1) cells grow normally and release similar numbers of particles as wild-type cells. Cytosol from \u0394YBX1 cells does not support miR-223 packaging in vitro, but activity is restored by YBX1 re-expression. YBX1 is required for miRNA packaging but not for CD63-luciferase sorting in the cell-free assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 and C7 provide genetic validation of YBX1's role through knockout and rescue experiments. The normal growth and particle release (C89-C90) indicate that the knockout is specific and does not cause general cellular dysfunction. The loss of miR-223 packaging activity in vitro (C91) and its restoration by YBX1 re-expression (C92) provide strong evidence for YBX1's requirement. The differential effect on miRNA versus membrane protein sorting (C93-C94) suggests specificity for RNA cargo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C8",
+      "C103"
+    ],
+    "result": "\u0394YBX1 cells show significantly decreased secretion of miR-223 and miR-144 (but not miR-190) and accumulation of these miRNAs in cells (~3-4 fold). YBX2 knockdown in \u0394YBX1 cells further reduces miR-223 secretion, suggesting partial functional redundancy between YBX paralogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99, C8, and C103 demonstrate that YBX1 controls exosomal miRNA secretion in intact cells. The selective effect on exosomal miRNAs (miR-223, miR-144) but not cellular miR-190 (C99) provides specificity. The cellular accumulation of exosomal miRNAs (C98) is consistent with a secretion defect. The YBX2 knockdown experiment (C96-C97) addresses potential redundancy, though the partial effect suggests YBX1 is the primary factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In wild-type cells, miR-223 does not co-immunoprecipitate with Ago2, but in \u0394YBX1 cells, accumulated miR-223 is associated with Ago2, suggesting that miR-223 is processed, loaded into Ago2, and then dissociated and bound by YBX1 for exosomal sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 provide mechanistic insight into the relationship between Ago2 and YBX1 in miRNA sorting. The differential association of miR-223 with Ago2 in wild-type versus \u0394YBX1 cells (C100-C101) suggests a sequential handoff mechanism. The inference that miR-223 is loaded into Ago2 and then transferred to YBX1 (C102) is reasonable given the data, though direct evidence of the handoff would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C106",
+      "C115",
+      "C116"
+    ],
+    "result": "No statistically significant primary sequence motifs were identified in HEK293T-derived exosomal miRNAs. The mature strand of miR-223 contains no guanine nucleotides, and hRNPA2B1 (which recognizes GGAG motifs in T-cells) was not detected in the mass spectrometry results, suggesting that different cell types may use different RNA-binding proteins with distinct binding preferences for miRNA sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 and C106, C115-C116 address the question of sorting motifs. The failure to identify sequence motifs (C111) and the absence of hRNPA2B1 (C113) are negative results that are appropriately reported. The proposal that different cell types use different RNA-binding proteins (C115-C116) is a reasonable hypothesis to explain the discrepancy with T-cell studies, though it remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors propose two possible routes for miRNA egress via exosomes: an Ago2-associated pathway (affected by KRAS signaling) and a chaperone-mediated pathway involving RNA-binding proteins like hnRNPA2B1 in T-cells and YBX1 in HEK293T cells. These pathways may not be mutually exclusive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 present a model integrating the current findings with previous literature. While the model is consistent with the data presented (YBX1-dependent sorting of miR-223) and cited literature (KRAS-dependent Ago2 sorting), it remains a hypothesis. The suggestion that the pathways may not be mutually exclusive (C137) is based on a single example (miR-328-5p) and requires further validation. The model is plausible but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background claims about exosomes, unconventional secretion, and RNA sorting mechanisms based on established knowledge and literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C23 provide background context from established literature. These are appropriately cited and represent accepted knowledge in the field. The critical assessment of previous studies' limitations (C18-C19) is fair and motivates the need for improved purification methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Background information about YBX1's known functions, localization, and previous detection in exosomes, establishing the biological plausibility of YBX1's role in exosomal miRNA sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 and C117-C121 provide relevant background on YBX1 from the literature. These are appropriately cited and establish that YBX1 is a multi-functional RNA-binding protein with known roles in RNA metabolism and previous associations with exosomes. This background supports the plausibility of the findings but does not constitute new results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C138",
+      "C139",
+      "C147",
+      "C152",
+      "C153"
+    ],
+    "result": "Speculative claims about potential mechanisms of RNA sorting, broader roles of YBX1, and future applications of the chaperone-mediated pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104 and C122-C127, C138-C139, C147, C152-C153 are primarily speculative statements about mechanisms, broader implications, and future directions. While these are reasonable hypotheses based on the data, they are not directly tested in the manuscript. The speculation about secondary structure recognition (C122) and broader RNA classes (C124) would require additional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C114",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Discussion of prior work on Ago2 in exosomes, KRAS signaling effects, hnRNPA2B1 in T-cells, and the physiological function of exosomal miRNAs, providing context for interpreting the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C107-C110, C114, C130-C133, C140-C151 discuss relevant prior work and ongoing debates in the field. These are appropriately cited and provide important context for interpreting the current findings. The critical assessment of the evidence for physiological function (C142, C146) is fair and highlights an important gap in the field.",
+    "result_type": "MINOR"
+  }
+]

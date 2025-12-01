@@ -1,0 +1,2212 @@
+{
+  "submission": {
+    "id": "c5b940d9-e286-4216-a4e6-faaf610826cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:20:28.632495Z",
+    "updated_at": "2025-11-30T21:20:28.632495Z"
+  },
+  "content": [
+    {
+      "id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "submission_id": "c5b940d9-e286-4216-a4e6-faaf610826cc",
+      "content_type": "manuscript",
+      "content_text": "# Factors essential for L,D-transpeptidase-mediated peptidoglycan cross-linking and \u03b2-lactam resistance in Escherichia coli\n\n## Authors\n\n- Jean-Emmanuel Hugonnet<sup>1</sup>\n- Dominique Mengin-Lecreulx<sup>4</sup>\n- Alejandro Monton<sup>5</sup>\n- Tanneke den Blaauwen<sup>5</sup>\n- Etienne Carbonnelle<sup>1</sup>\n- Carole Veckerl\u00e9<sup>1</sup>\n- Yves, V. Brun<sup>6</sup>\n- Michael van Nieuwenhze<sup>6</sup>\n- Christiane Bouchier<sup>7</sup>\n- Kuyek Tu<sup>1</sup>\n- Louis B Rice<sup>8</sup>\n- Michel Arthur<sup>1</sup> ([ORCID: 0000-0003-1007-636X](https://orcid.org/0000-0003-1007-636X)) \u2020\n\n### Affiliations\n\n1. INSERM, UMR_S 1138, Centre de Recherche des Cordeliers Paris France\n2. Sorbonne Universit\u00e9s, UPMC Universit\u00e9 Paris 06, UMR_S 1138, Centre de Recherche des Cordeliers Paris France\n3. Universit\u00e9 Paris Descartes, Sorbonne Paris Cit\u00e9, UMR_S 1138, Centre de Recherche des Cordeliers Paris France\n4. Institute for Integrative Biology of the Cell (I2BC), CEA, CNRS, Universit\u00e9 Paris-Sud, Universit\u00e9 Paris-Saclay Gif-sur-Yvette France\n5. Bacterial Cell Biology and Physiology, Swammerdam Institute for Life Sciences University of Amsterdam Amsterdam Netherlands\n6. Indiana University Indiana United States\n7. Institut Pasteur Paris France\n8. Rhode Island Hospital Brown University Providence United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe target of \u03b2-lactam antibiotics is the D,D-transpeptidase activity of penicillin-binding proteins (PBPs) for synthesis of 4\u21923 cross-links in the peptidoglycan of bacterial cell walls. Unusual 3\u21923 cross-links formed by L,D-transpeptidases were first detected in Escherichia coli more than four decades ago, however no phenotype has previously been associated with their synthesis. Here we show that production of the L,D-transpeptidase YcbB in combination with elevated synthesis of the (p)ppGpp alarmone by RelA lead to full bypass of the D,D-transpeptidase activity of PBPs and to broad-spectrum \u03b2-lactam resistance. Production of YcbB was therefore sufficient to switch the role of (p)ppGpp from antibiotic tolerance to high-level \u03b2-lactam resistance. This observation identifies a new mode of peptidoglycan polymerization in E. coli that relies on an unexpectedly small number of enzyme activities comprising the glycosyltransferase activity of class A PBP1b and the D,D-carboxypeptidase activity of DacA in addition to the L,D-transpeptidase activity of YcbB.\n\n## Introduction\n\nPeptidoglycan, the major component of bacterial cell walls, is a giant (109 to 1010 Da) net-like macromolecule composed of glycan strands cross-linked by short peptides (Turner et al., 2014) (Figure 1). The glycan strands are polymerized by glycosyltransferases and the cross-links are formed by D,D-transpeptidases. The latter enzymes cleave the D-Ala4-D-Ala5 peptide bond of an acyl donor stem and link the carbonyl of D-Ala4 to the side chain amine of diaminopimelic acid (DAP) of the acceptor stem, thereby generating D-Ala4\u2192DAP3 cross-links (Figure 1A) (Pratt, 2008). \u03b2-lactam antibiotics mimic the D-Ala4-D-Ala5 termination of peptidoglycan precursors and inactivate the D,D-transpeptidases by acting as suicide substrates (Tipper and Strominger, 1965). The D,D-transpeptidases belong to a diverse family of proteins, commonly referred to as penicillin-binding proteins (PBPs), that fall into three main classes (Sauvage et al., 2008). Class A PBPs (PBP1a, 1b, and 1c) combine glycosyltransferase and D,D-transpeptidase modules. Class B PBPs (PBP2 and 3) are composed of a nonenzymatic morphogenesis module fused to a D,D-transpeptidase module. Class C PBPs (PBP4, 4b, 5, 6, 6b, 7, and AmpH) are monofunctional enzymes with D,D-carboxypeptidase and endopeptidase activities that hydrolyze the D-Ala4-D-Ala5 bond of pentapeptide stems and the D-Ala4\u2192DAP3 bond of cross-linked peptidoglycan, respectively. Peptidoglycan polymerization involves two complexes (Figure 1B), the divisome and the elongasome, responsible for septum formation and lateral cell-wall elongation, respectively (den Blaauwen et al., 2008). These complexes include all the biosynthetic and hydrolytic enzymes required for the incorporation of new subunits into the expanding peptidoglycan net, as well as cytoskeletal proteins, MreB and FtsZ, acting as guiding devices.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig1-v2.jpg)\n\n**Figure 1.:** (A) Reactions catalyzed by enzymes involved in peptidoglycan polymerization and Braun lipoprotein anchoring.\u00a0(B) Complexes responsible for peptidoglycan synthesis during lateral cell-wall growth and division.\n\nUnusual cross-links connecting two DAP residues were detected in E. coli as early as 1969, however the enzymes responsible for their formation at that time were unknown (Schwarz et al., 1969). These DAP3\u2192DAP3 cross-links account for 3% and 10% of the cross-links present in the peptidoglycan extracted from bacteria in the exponential and stationary phases of growth, respectively (Schwarz et al., 1969). More recently, we have identified the L,D-transpeptidases (Ldt) responsible for the formation of 3\u21923 cross-links in various bacterial species and shown that these enzymes are structurally unrelated to PBPs (Mainardi et al., 2008). Gene deletion and complementation analyses have indicated that the chromosome of E. coli encodes five L,D-transpeptidases with distinct functions. Two paralogues form the DAP3\u2192DAP3 peptidoglycan cross-links (YcbB and YnhG) (Magnet et al., 2008), whereas the three remaining paralogues anchor the Braun lipoprotein to peptidoglycan (YbiS, ErfK, and YcfS) (Magnet et al., 2007).\n\nHere we show that the L,D-transpeptidase activity of YcbB, but not that of YnhG, is able to replace the D,D-transpeptidase activity of all five class A and B PBPs of E. coli, leading to \u03b2-lactam resistance. We have also identified the various factors required for bypass of the PBPs by YcbB, which include the enzyme partners of the L,D-transpeptidase for peptidoglycan polymerization and upregulation of the (p)ppGpp alarmone synthesis.\n\n## Results\n\n### YcbB-mediated \u03b2-lactam resistance\n\n\u03b2-lactams of the penam and cephem classes, such as ampicillin and ceftriaxone, respectively, effectively inactivate D,D-transpeptidases belonging to the PBP family. In contrast, L,D-transpeptidases are slowly acylated by these drugs and the resulting acyl-enzymes are unstable (Triboulet et al., 2013). This accounts for L,D-transpeptidase-mediated penam and cephem resistance since slow acylation combined with acyl-enzyme hydrolysis results in partial L,D-transpeptidase inhibition. In this study, resistance to ampicillin and ceftriaxone was used to assess the capacity of L,D-transpeptidases to bypass PBPs in E. coli. In order to control the level of production of the L,D-transpeptidase YcbB, the corresponding gene was cloned under the control of the IPTG-inducible trc promoter of the vector pTRCKm. The resulting plasmid, pJEH11(ycbB), was introduced into strain BW25113\u03944 (8), which does not harbor any of the remaining L,D-transpeptidase genes, i.e. ynhG, ybiS, erfK, and ycfS. Plasmid pJEH11(ycbB) did not confer ampicillin resistance to this host in the absence of IPTG or in media containing low concentrations of this inducer (up to 50 \u00b5M). Induction of ycbB expression with IPTG concentrations greater than 50 \u00b5M prevented bacterial growth, indicating that high-level production of the L,D-transpeptidase YcbB was toxic. Selection for ampicillin resistance (32 \u00b5g/ml) in the presence of IPTG (500 \u00b5M) yielded mutant M1, which was not inhibited by 500 \u00b5M IPTG and displayed IPTG-inducible resistance to ampicillin and ceftriaxone (Figure 2). Genetic analyses showed that mutant M1 harbors two mutations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig2-v2.jpg)\n\n**Figure 2.:** The diffusion assay was performed with disks containing 30 \u00b5g of ampicillin (AM), 30 \u00b5g of ceftriaxone (CRO), or 10 \u00b5g of IPTG.\n\nTo identify the first mutation, the plasmid was extracted from mutant M1 and introduced into the parental strain E. coli BW25113\u03944. Toxicity associated with ycbB induction was not observed and the plasmid did not confer ampicillin resistance. Sequencing revealed a mutation located in the vector-born lacI gene resulting in an Arg127Leu substitution in the inducer binding site. Thus, the plasmid-borne mutation abolished YcbB toxicity by decreasing the level of ycbB transcription in inducing conditions. The toxicity associated with high-level production of YcbB may be linked to the putative membrane anchor of the protein as demonstrated for PBP2 in E. coli (Legaree et al., 2007).\n\nTo identify the second mutation, a cured derivative of M1 was obtained by spontaneous loss of the derivative of pJEH11(ycbB) harboring the lacI mutation, which was designated pJEH11-1(ycbB). The resulting strain, designated M1cured, was susceptible to ampicillin and attempts to select ampicillin-resistant derivatives of that strain were negative (survivor frequency < 10\u20139). Introduction of pJEH11-1(ycbB) into M1cured restored ampicillin resistance. These results indicate that a chromosomal mutation is required for ampicillin resistance in addition to the expression of the plasmid copy of ycbB.\n\nTesting a large panel of \u03b2-lactams using the disk diffusion assay indicated that IPTG-inducible expression of ycbB, in combination with the chromosomal mutation, confers broad-spectrum resistance to \u03b2-lactams, with the exception of carbapenems (Table 1). This conclusion is supported by the phenotypes of the parental strain BW25113\u03944, mutant M1, a derivative of this mutant (M1cured) devoid of ycbB following the\u00a0spontaneous loss of plasmid pJEH11-1(ycbB), and of a derivative of M1cured expressing ycbB following introduction of the plasmid pJEH12(ycbB), which is identical to pJEH11-1, except for the origin of replication and the selectable resistance marker.\n\n**Table 1.**\n Susceptibility of E. coli strains determined by the disk diffusion assay.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Antibiotic</th>\n      <th rowspan=\"2\">Load (\u00b5g)</th>\n      <th rowspan=\"2\">BW25113</th>\n      <th colspan=\"5\">Diameter of inhibition zones (mm) for the indicated strains*</th>\n    </tr>\n    <tr>\n      <th>BW25113\u03944</th>\n      <th>M1IPTG 50 \u00b5M</th>\n      <th>M1cured</th>\n      <th>M1curedpJEH12(ycbB)</th>\n      <th>M1curedpJEH12(ycbB)IPTG 50 \u00b5M</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Amoxicillin</td>\n      <td>25</td>\n      <td>23</td>\n      <td>24</td>\n      <td>13</td>\n      <td>28</td>\n      <td>28</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>Ampicillin</td>\n      <td>10</td>\n      <td>21</td>\n      <td>21</td>\n      <td>ND\u00a7</td>\n      <td>27</td>\n      <td>26</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Amox+Clav\u2020</td>\n      <td>20+10</td>\n      <td>20</td>\n      <td>23</td>\n      <td>13</td>\n      <td>27</td>\n      <td>30</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Piperacillin</td>\n      <td>75</td>\n      <td>29</td>\n      <td>28</td>\n      <td>ND</td>\n      <td>36</td>\n      <td>36</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Pip+Tazo\u2021</td>\n      <td>75+10</td>\n      <td>29</td>\n      <td>30</td>\n      <td>ND</td>\n      <td>37</td>\n      <td>37</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Ticarcillin</td>\n      <td>75</td>\n      <td>26</td>\n      <td>27</td>\n      <td>ND</td>\n      <td>37</td>\n      <td>31</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Mecillinam</td>\n      <td>10</td>\n      <td>17</td>\n      <td>22</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Aztreonam</td>\n      <td>30</td>\n      <td>33</td>\n      <td>36</td>\n      <td>ND</td>\n      <td>49</td>\n      <td>47</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Cefalotin</td>\n      <td>30</td>\n      <td>16</td>\n      <td>18</td>\n      <td>ND</td>\n      <td>23</td>\n      <td>23</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Cefoxitin</td>\n      <td>30</td>\n      <td>20</td>\n      <td>25</td>\n      <td>29</td>\n      <td>30</td>\n      <td>30</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Cefotetan</td>\n      <td>30</td>\n      <td>30</td>\n      <td>31</td>\n      <td>25</td>\n      <td>41</td>\n      <td>41</td>\n      <td>27</td>\n    </tr>\n    <tr>\n      <td>Ceftazidime</td>\n      <td>30</td>\n      <td>29</td>\n      <td>30</td>\n      <td>ND</td>\n      <td>39</td>\n      <td>37</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Cefotaxime</td>\n      <td>30</td>\n      <td>33</td>\n      <td>36</td>\n      <td>ND</td>\n      <td>44</td>\n      <td>44</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Cefixime</td>\n      <td>10</td>\n      <td>28</td>\n      <td>30</td>\n      <td>ND</td>\n      <td>37</td>\n      <td>38</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Cefpirome</td>\n      <td>30</td>\n      <td>31</td>\n      <td>33</td>\n      <td>ND</td>\n      <td>41</td>\n      <td>41</td>\n      <td>9</td>\n    </tr>\n    <tr>\n      <td>Cefoperazone</td>\n      <td>30</td>\n      <td>27</td>\n      <td>28</td>\n      <td>ND</td>\n      <td>41</td>\n      <td>40</td>\n      <td>ND</td>\n    </tr>\n    <tr>\n      <td>Moxalactam</td>\n      <td>30</td>\n      <td>31</td>\n      <td>32</td>\n      <td>15</td>\n      <td>43</td>\n      <td>40</td>\n      <td>17</td>\n    </tr>\n    <tr>\n      <td>Ceftriaxone</td>\n      <td>30</td>\n      <td>33</td>\n      <td>32</td>\n      <td>15</td>\n      <td>42</td>\n      <td>42</td>\n      <td>18</td>\n    </tr>\n    <tr>\n      <td>Carbapenems</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Doripenem</td>\n      <td>10</td>\n      <td>31</td>\n      <td>34</td>\n      <td>32</td>\n      <td>38</td>\n      <td>37</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>Meropenem</td>\n      <td>10</td>\n      <td>30</td>\n      <td>34</td>\n      <td>35</td>\n      <td>40</td>\n      <td>41</td>\n      <td>34</td>\n    </tr>\n    <tr>\n      <td>Imipenem</td>\n      <td>10</td>\n      <td>26</td>\n      <td>30</td>\n      <td>35</td>\n      <td>25</td>\n      <td>27</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>Ertapenem</td>\n      <td>10</td>\n      <td>30</td>\n      <td>35</td>\n      <td>37</td>\n      <td>49</td>\n      <td>47</td>\n      <td>37</td>\n    </tr>\n  </tbody>\n</table>\n\n_*BW25113\u03944 is a derivative of E. coli BW25113 that does not harbor the ynhG, ybiS, erfK, and ycfS genes encoding YcbB paralogues. M1 is a \u03b2-lactam-resistant mutant of BW25113\u03944 harboring pJEH11-1(ycbB). M1cured is a derivative of M1 resulting from the spontaneous loss of pJEH11-1(ycbB). Plasmid pJEH12(ycbB) was obtained by replacing the origin of replication (ColE1) and resistance marker (kanamycin) of pJEH11-1(ycbB) by the p15A replication origin and tetracycline resistance marker of plasmid pACY184. The L,D-transpeptidase gene ycbB of pJEH11-1 and pJEH12 are expressed under the control of the IPTG-inducible trc promoter and regulated by the LacI Arg127Leu repressor.\u2020Combination of amoxicillin (20 \u00b5g) and clavulanate (10 \u00b5g).\u2021Combination of piperacillin (75 \u00b5g) and tazobactam (10 \u00b5g).\u00a7ND, not detected as the strains grew at the contact of the disk._\n\n### Expression of ynhG in mutant M1 does not enable emergence of ampicillin resistance\n\nDeletion of both ynhG and ycbB is required to suppress the in vivo formation of 3\u21923 cross-links (Magnet et al., 2008). Since these results strongly suggest that both genes encode peptidoglycan L,D-transpeptidases, we investigated whether YnhG was able to bypass PBPs, as shown for YcbB. To address this question, the gene ynhG was cloned under the control of the trc promoter of pTRCKm, and the resulting plasmid was introduced into M1cured and BW25113\u03944. The resulting plasmid did not confer ampicillin resistance in either host. Ampicillin-resistant mutants were not obtained using various concentrations of IPTG and ampicillin (frequency < 10\u20139). These results indicate that bypass of the D,D-transpeptidase activity of the PBPs was only possible with YcbB.\n\n### Contribution of YcbB to the formation of peptidoglycan cross-links\n\nThe respective contributions of PBPs and YcbB to peptidoglycan polymerization were assessed by determining the relative proportions of 4\u21923 and 3\u21923 cross-links in mutant M1 (Figure 3). The sequence of the cross-links was determined by tandem mass spectrometry analysis of purified peptidoglycan fragments (Figure 4 and data not shown). In the presence of ampicillin, the D,D-transpeptidase activity of the PBPs was inhibited, and all cross-links were of the 3\u21923 type. These results indicate that YcbB is sufficient for peptidoglycan cross-linking in the absence of the D,D-transpeptidase activity of the PBPs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig3-v2.jpg)\n\n**Figure 3.:** (A) rpHPLC profile of disaccharide-peptides. Absorbance was recorded at 210 nm (mAU, absorbance units x 103). (B) Identification of disaccharide-peptides by mass spectrometry. The relative abundance of peptidoglycan fragments was estimated as the percentage of the total integrated area. The observed and calculated monoisotopic mass of muropeptides is indicated in Da. GM, GlcNAc-MurNAc; anh, anhydro; R, reduced; Tri, tripeptide L-Ala-\u03b3-D-Glu-DAP (DAP, diaminopimelic acid); Tetra, tetrapeptide L-Ala-\u03b3-D-Glu-DAP-D-Ala; Tri-Gly, tetrapeptide L-Ala-\u03b3-D-Glu-DAP-Gly; Penta, pentapeptide L-Ala-\u03b3-D-Glu-DAP-D-Ala-D-Ala; 3\u21923, cross-link generated by L,D-transpeptidation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig4-v2.jpg)\n\n**Figure 4.:** The figure illustrates the capacity of the method to discriminate isomers containing 3\u21923 (A) and 4\u21923 (B) cross-links. Fragments specific of each isomer are shown in red. L, D-Lac; A, L-Ala or D-Ala; a, C-terminal D-Ala; E, D-Glu; DAP, diaminopimelic acid. All dimers present in peptidoglycan preparations from mutant M1 were identified by this method.\n\n### L,D-transpeptidase activity of YcbB\n\nA soluble fragment of YcbB, devoid of the putative membrane anchor of the protein, was produced in E. coli, purified, and assayed for in vitro formation of peptidoglycan cross-links. Incubation of YcbB with a disaccharide-tetrapeptide prepared from the peptidoglycan of E. coli resulted in the formation of a peptidoglycan dimer containing a DAP3\u2192DAP3 cross-link (Figures 5 and 6A). Purified YcbB also displayed L,D-carboxypeptidase activity as the enzyme removed the C-terminal residue (D-Ala4) from the tetrapeptide stem (Figures 5 and 6A). These results confirm that YcbB is a bona fide L,D-transpeptidase, which directly accounts for the synthesis of DAP3\u2192DAP3 cross-links in mutant M1.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig5-v2.jpg)\n\n**Figure 5.:** (A) Disaccharide-tetrapeptide used as the substrate. The muropeptide GlcNAc-MurNAc-L-Ala1-\u03b3-D-Glu2-DAP3-D-Ala4 (Tetra) was purified from the E. coli cell wall peptidoglycan. The peak at m/z 942.4250 [M+H]1+ corresponds to an observed mass (Mobs) of 941.42 Da in agreement with the calculated mass (Mcal) of 941.41 Da. (B) Reaction products. YcbB (10 \u00b5M) was incubated with the disaccharide-tetrapeptide (30 \u00b5M) for 2\u2009hr at 37\u00b0C revealing the formation of (i) the tripeptide GlcNAc-MurNAc-L-Ala1-\u03b3-D-Glu2-DAP3 (Tri; Mobs = 870.40 Da; Mcal = 870.37 Da) by the L,D-carboxypeptidase activity of YcbB; (ii) the peptidoglycan dimer bis-disaccharide-Tri-Tetra (Mobs = 1793.80 Da; Mcal = 1793.77 Da) by the L,D-transpeptidase activity of YcbB; and the peptidoglycan dimer bis-disaccharide-Tri-Tri (Mobs = 1722.78 Da; Mcal = 1722.73 Da) by the L,D-transpeptidase and L,D-carboxypeptidase activities of YcbB.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig6-v2.jpg)\n\n**Figure 6.:** (A) In vitro\u00a0cross-linking assay. Incubation of YcbB with the reduced disaccharide GlcNAc-MurNAc-tetrapeptide resulted in the formation of a dimer containing a 3\u21923 cross-link (L,D-transpeptidase activity). YcbB also hydrolyzed the C-terminal D-Ala4 residue of tetrapeptide stems (L,D-carboxypeptidase activity). The muropeptides were determined by mass spectrometry. The observed (Mobs) and calculated (Mcal) monoisotopic masses are indicated in Daltons. The pentapeptide GlcNAc-MurNAc-L-Ala1-\u03b3-D-Glu2-DAP3-D-Ala4-D-Ala5 was not a substrate of YcbB. The reaction used to label peptidoglycan with a fluorescent derivative of D-Ala (NADA) is indicated. (B) Acylation of YcbB by \u03b2-lactams. Incubation of YcbB with two carbapenems, i.e. meropenem and imipenem, led to the acyl-enzymes shown, which were stable. In contrast, the acyl-enzyme formed with ceftriaxone was unstable, accounting for resistance of mutant M1 to this cephalosporin. The observed (Mobs) and calculated (Mcal) average masses are indicated in Daltons. No adduct was observed with amoxicillin.\n\n### Inactivation of YcbB by \u03b2-lactams\n\nIncubation of YcbB with representatives of the \u03b2-lactams belonging to the carbapenem class, i.e. meropenem and imipenem, led to full and irreversible acylation of the protein, as detected by mass spectrometry (Figures 6B and 7). In contrast, adducts resulting from acylation of YcbB by \u03b2-lactams of the penam and cephem classes were prone to hydrolysis (data no shown), as previously described for Ldtfm from E. faecium (Triboulet et al., 2013). Thus, the inhibition profile of purified YcbB accounts for broad-spectrum resistance to all \u03b2-lactams except carbapenems (Table 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig7-v2.jpg)\n\n**Figure 7.:** YcbB (10 \u00b5M) was incubated with \u03b2-lactams (100 \u00b5M) for 1\u2009hr at 37\u00b0C. The peaks correspond to the [M+71H]71+ and [M+72H]72+ ions. The observed (Mobs) and calculated (Mcal) masses are indicated. Acylenzymes formed with ceftriaxone (a cephem) were detected although they were slowly hydrolyzed, as previously described for Ldtfm from E. faecium (Triboulet et al., 2013). Acylenzymes formed with ampicillin (a penam) were not detected by mass spectrometry.\n\n### Identification of the class C PBP partner of YcbB\n\nPurified YcbB used as the acyl donor a disaccharide-tetrapeptide ending in D-Ala4, but not a disaccharide-pentapeptide ending in D-Ala4-D-Ala5 (Figure 6A). We therefore investigated low-molecular-weight class C PBPs to identify the D,D-carboxypeptidase that generates the substrate of YcbB by cleavage of the D-Ala4-D-Ala5 peptide bond of pentapeptide stems. We reasoned that selection for YcbB-mediated ampicillin resistance could be used to determine whether a host strain produces the D,D-carboxypeptidase partner of YcbB for peptidoglycan polymerization. Note that partner refers in the context of this study to an enzyme that is essential for peptidoglycan polymerization in conditions where YcbB is the sole functional transpeptidase without implying that a physical contact between YcbB and that protein exists or is essential for enzyme activity. We therefore introduced plasmid pJEH12(ycbB) into the mutant from the Keio collection that harbors a kanamycin-resistance cassette in place of dacA encoding class C PBP5 (12). Plating the resulting strain on agar containing ceftriaxone (32 \u00b5g/ml) and IPTG (50 \u00b5M) led to no survivors (frequency <10\u20139), unless a plasmid copy of dacA was provided in trans (9 \u00d7 10\u20136) (Table 2). Thus, the D,D-carboxypeptidase PBP5 was essential for YcbB-mediated \u03b2-lactam resistance. In contrast, independent deletions of dacB, dacC, and dacD encoding PBP4, PBP6, and PBP6b, respectively, had no impact on the frequency of selection of ceftriaxone-resistant mutants (Table 2). Further analyses were performed with strain CS801-4 (13), which was obtained by deletions of dacA, dacB, dacC, dacD, mrcA, ampH, and ampC (Table 3). In this host, plasmids pJEH12(ycbB) and pTrc99A\u2126dacA were both required for selection of ceftriaxone-resistant mutants. These results indicate that the D,D-carboxypeptidase activity of PBP5 is necessary and sufficient to generate the essential tetrapeptide-containing substrate of YcbB. It is of note that PBP5 is only inhibited by high concentrations of \u03b2-lactams (Curtis et al., 1979). This accounts for the proposed participation of PBP5 in peptidoglycan synthesis in the presence of \u03b2-lactams. This also accounts for the residual activity of cefoxitin (Table 1, inhibition zone of 30\u2009mm) since this cephalosporin displays moderate activity against PBP5 (14).\n\n**Table 2.**\n Selection of \u03b2-lactam-resistant derivatives of E. coli BW25113 harboring various plasmids.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Deletion*</th>\n      <th>Plasmid 1</th>\n      <th>Plasmid 2</th>\n      <th>Frequency x 109\u2020</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>None</td>\n      <td>pACYC184</td>\n      <td>pTrc99A</td>\n      <td>&lt;1</td>\n    </tr>\n    <tr>\n      <td>None</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>3200</td>\n    </tr>\n    <tr>\n      <td>dacA</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>&lt;1</td>\n    </tr>\n    <tr>\n      <td>dacA</td>\n      <td>pJEH12(ycbB)</td>\n      <td>pTrc99A\u2126dacA</td>\n      <td>9100</td>\n    </tr>\n    <tr>\n      <td>dacB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>13,000</td>\n    </tr>\n    <tr>\n      <td>dacC</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>9000</td>\n    </tr>\n    <tr>\n      <td>dacD</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>9100</td>\n    </tr>\n    <tr>\n      <td>mrcB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>pTrc99A</td>\n      <td>&lt;1</td>\n    </tr>\n    <tr>\n      <td>mrcB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>pTrc99A\u2126mrcB</td>\n      <td>6400</td>\n    </tr>\n    <tr>\n      <td>mrcB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>pTrc99A\u2126mrcB TG (E233M) \u2021</td>\n      <td>&lt;1</td>\n    </tr>\n    <tr>\n      <td>mrcB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>pTrc99A\u2126mrcB TP (S510A)\u00a7</td>\n      <td>1700</td>\n    </tr>\n    <tr>\n      <td>mrcA</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>1600</td>\n    </tr>\n    <tr>\n      <td>pbpC</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>2700</td>\n    </tr>\n    <tr>\n      <td>mgtA</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>2700</td>\n    </tr>\n    <tr>\n      <td>lpoA</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>5000</td>\n    </tr>\n    <tr>\n      <td>lpoB</td>\n      <td>pJEH12(ycbB)</td>\n      <td>none</td>\n      <td>&lt;1</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Mutants of the Keio collection harboring a kanamycin-resistance gene cassette in place of the indicated gene.\u2020Frequency of survivors obtained by plating 109 colony forming units on agar containing ceftriaxone (32 \u00b5g/ml) and IPTG (50 \u00b5M). Values are the median from 2 to 8 experiments.\u2021The glycosyltransferase (GT) module of PBP1b was selectively inactivated by the E233M amino acid substitution.\u00a7The transpeptidase (TP) module of PBP1b was selectively inactivated by the S510A substitution._\n\n**Table 3.**\n Selection of \u03b2-lactam-resistant derivatives of E. coli CS801-4 harboring various plasmids.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"3\">Plasmid 1</th>\n      <th colspan=\"3\">Plasmid 2</th>\n      <th colspan=\"3\">Frequency x\u00a0109</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"3\">pACYC184</td>\n      <td colspan=\"3\">pTrc99A</td>\n      <td colspan=\"3\">&lt;1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">pJEH12(ycbB)</td>\n      <td colspan=\"3\">None</td>\n      <td colspan=\"3\">&lt;1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">pJEH12(ycbB)</td>\n      <td colspan=\"3\">pTrc99A</td>\n      <td colspan=\"3\">&lt;1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">none</td>\n      <td colspan=\"3\">pTrc99A\u2126dacA</td>\n      <td colspan=\"3\">&lt;1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">pJEH12(ycbB)</td>\n      <td colspan=\"3\">pTrc99A\u2126dacA</td>\n      <td colspan=\"3\">5900</td>\n    </tr>\n  </tbody>\n</table>\n\n_E. coli CS801-4 harbors deletions of genes pbp4, 5, 6, 7, mrcA, ampH, ampC, and dacD_\n\n### Identification of the glycosyltransferase partner of YcbB\n\nSince the L,D-transpeptidase YcbB does not harbor a glycosyltransferase-related domain, peptidoglycan polymerization in the presence of ampicillin is predicted to require cooperation between the L,D-transpeptidase activity of YcbB and the glycosyltransferase activity of housekeeping enzymes. E. coli produces four candidate enzymes for the latter function, including three class A PBPs (PBP1a, PBP1b, and PBP1c) and a monofunctional glycosyltransferase (MgtA) (Figure 1A) encoded by the genes mrcA, mrcB, pbpC, and mgtA, respectively (Sauvage et al., 2008). To determine which of these four enzymes cooperate with YcbB, plasmid pJEH12(ycbB) was introduced into four mutants of the Keio collection harboring a kanamycin-resistance gene cassette in place of each of the four glycosyltransferase genes. Ceftriaxone-resistant mutants were obtained with the mrcA, pbpC, and mgtA mutants, but not with the mrcB mutant, indicating that PBP1b is an essential partner of YcbB for peptidoglycan polymerization in the presence of \u03b2-lactams.\n\nPBP1b is a bifunctional class A PBP containing transpeptidase and glycosyltransferase modules. To assess the role of the transpeptidase activity of PBP1b, the mrcB gene was introduced into plasmid pTrc99A, and the transpeptidase module was inactivated by the substitution S510A (Terrak et al., 1999). It has been previously shown that PBP1b harboring this substitution is able to catalyze in vitro the polymerization of lipid II into glycan strands in the absence of TPase activity (Terrak et al., 1999; Egan et al., 2015). The derivatives of pTrc99A encoding wild-type PBP1b and PBP1b S510A were introduced into the strain BW25113\u0394mrcB harboring pJEH12(ycbB). Selection of ceftriaxone-resistant mutants was obtained in both cases. Thus, the glycosyltransferase activity of PBP1b, but not its D,D-transpeptidase activity, is required for YcbB-mediated \u03b2-lactam resistance. We also tested PBP1b harboring the E233M substitution inactivating the glycosyltransferase domain of the protein using the same approach. As expected, ceftriaxone-resistant mutants were not obtained with derivative of BW25113\u0394mrcB producing YcbB and PBP1b E233M. The limitation of the latter observation is that no or significantly reduced transpeptidase activity is observed when the glycosyltransferase of E. coli class A PBPs is not functional, although the latter enzymes still bind \u03b2-lactam antibiotics indicating a properly folded transpeptidase domain (Terrak et al., 1999; Egan et al., 2015; Born et al., 2006; Bertsche et al., 2005; den Blaauwen et al., 1990). PBP1b E233M may therefore be deficient in both transpeptidase and transglycosylase activities.\n\nTo determine whether PBP1b was sufficient for resistance, we constructed by serial deletions a derivative of BW25113 lacking chromosomal copies of mrcA, mrcB, pbpC, and mgtA. This mutant, designated BW25113\u03944GT/pMAK705\u2126mrcB, was viable at 30\u00b0C owing to the expression of a plasmid copy of mrcB harbored by the vector pMAK705, which is thermosensitive for replication. Mutants displaying IPTG-inducible ceftriaxone resistance were obtained by plating BW25113\u03944GT harboring pMAK705\u2126mrcB and pJEH12(ycbB) at 30\u00b0C on agar containing ceftriaxone (32 \u00b5g/ml) and IPTG (50 \u00b5M) (frequency of survivors of 5 \u00d7 10\u20137). Mutants were also obtained at 37\u00b0C if pMAK705\u2126mrcB was replaced by pTrc99A\u2126mrcB, which is not thermosensitive for replication. Together, these results indicate that the glycosyltransferase activity of PBP1b is necessary and sufficient for glycan-chain elongation when YcbB is the only functional cross-linking enzyme.\n\nThe outer membrane lipoproteins LpoA and LpoB have been shown to be essential for the activity of class A PBP1a and PBP1b, respectively (Paradis-Bleau et al., 2010; Typas et al., 2010). As expected, ampicillin-resistant mutants were only obtained with the lpoA mutant (Table 2), indicating that LpoB is essential for the participation of PBP1b in glycan-chain elongation in the context of peptidoglycan cross-linking by YcbB.\n\n### Bypass of the D,D-transpeptidase activity of class B PBPs by YcbB\n\nE. coli produces two class B PBPs, PBP2 and PBP3, which are essential and specifically inhibited by mecillinam (Spratt, 1977; Vinella et al., 1993) and aztreonam (Georgopapadakou et al., 1982), respectively. In the presence of IPTG, mutant M1 was resistant to mecillinam and aztreonam, indicating that inhibition of the D,D-transpeptidase module of the class B PBPs did not impair YcbB-mediated ampicillin resistance (Table 1 and data not shown). Surprisingly, M1 was resistant to mecillinam in the absence of IPTG. M1cured was also resistant to mecillinam, indicating that resistance to this antibiotic was mediated by a chromosomal mutation independently from YcbB production (Table 1). This observation raised the possibility that the same mutation might be responsible both for mecillinam resistance in the absence of YcbB in M1cured and for broad-spectrum resistance to penams and cephems in M1 following the\u00a0induction of the plasmid copy of ycbB by IPTG. To test this hypothesis, derivatives of strain BW25113/pJEH12(ycbB) were selected on media containing mecillinam alone (50 \u00b5g/ml) or ampicillin (32 \u00b5g/ml) and IPTG (50 \u00b5M). Independent mutants obtained on each selective medium were analyzed for expression of \u03b2-lactam resistance. Four of the seven mutants selected on mecillinam remained susceptible to ampicillin both in the presence or absence of IPTG. The three remaining mecillinam-resistant mutants (M2, M3, and M4) displayed IPTG-inducible ampicillin resistance, as did mutant M1. All six mutants selected on ampicillin-and-IPTG-containing media (M5 to M10) were resistant to mecillinam in the absence of IPTG and, additionally, resistant to ampicillin in its presence (as was M1). These results indicate that acquisition of a mutation conferring mecillinam resistance is necessary and sufficient for YcbB-mediated ampicillin resistance. In contrast, only a portion of the mutations conferring mecillinam resistance enabled YcbB-mediated ampicillin resistance.\n\n### Identification of chromosomal mutations essential for YcbB-mediated ampicillin resistance\n\nWhole genome sequencing revealed that mutants M1 to M7 each harbored a single mutation (Table 4). This observation confirms that a single mutation is responsible for mecillinam resistance in the absence of YcbB and for YcbB-mediated broad-spectrum \u03b2-lactam resistance upon ycbB induction by IPTG. Mutant M1 harbored a 13-bp deletion located in an untranslated region upstream from the isoleucine-tRNA synthetase (IleRS) gene. The remaining mutants (M2 to M7) harbored missense mutations in genes encoding ArgRS, ThrRS, GluRS, and AspRS, with two distinct substitutions for the latter two enzymes.\n\n**Table 4.**\n Mutations detected in M1 to M7.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutant</th>\n      <th>Selection</th>\n      <th colspan=\"2\">Position</th>\n      <th>Mutation</th>\n      <th colspan=\"3\">Impact</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>M1</td>\n      <td>Ap</td>\n      <td colspan=\"2\">22,373</td>\n      <td>\u039413-nt*</td>\n      <td colspan=\"3\">IleRS translation</td>\n    </tr>\n    <tr>\n      <td>M2</td>\n      <td>Me</td>\n      <td colspan=\"2\">1,960,069</td>\n      <td>T\u2192C</td>\n      <td colspan=\"3\">I3T in ArgRS</td>\n    </tr>\n    <tr>\n      <td>M3</td>\n      <td>Me</td>\n      <td colspan=\"2\">1,801,022</td>\n      <td>A\u2192C</td>\n      <td colspan=\"3\">S517A in ThrRS</td>\n    </tr>\n    <tr>\n      <td>M4</td>\n      <td>Ap</td>\n      <td colspan=\"2\">2,520,555</td>\n      <td>G\u2192T</td>\n      <td colspan=\"3\">R40S in GluRS</td>\n    </tr>\n    <tr>\n      <td>M5</td>\n      <td>Ap</td>\n      <td colspan=\"2\">2,520,540</td>\n      <td>C\u2192T</td>\n      <td colspan=\"3\">D45N in GluRS</td>\n    </tr>\n    <tr>\n      <td>M6</td>\n      <td>Ap</td>\n      <td colspan=\"2\">1,948,853</td>\n      <td>G\u2192T</td>\n      <td colspan=\"3\">T557N in AspRS</td>\n    </tr>\n    <tr>\n      <td>M7</td>\n      <td>Ap</td>\n      <td colspan=\"2\">1,950,015</td>\n      <td>G\u2192A</td>\n      <td colspan=\"3\">P170S in AspRS</td>\n    </tr>\n  </tbody>\n</table>\n\n_*13-base pair deletion (positions 22,373 to 22,385).Ap, ampicillin; IleRS, isoleucine-tRNA synthetase; Me, mecillinam._\n\nThe deletion present in M1 most probably impairs translation of IleRS since it ends 5 nucleotides upstream from the ATG codon and includes the ribosome binding site. Thus, the mutation present in M1 impaired aminoacylation of tRNAIle, a defect known to result in activation of (p)ppGpp synthesis by RelA in response to ribosomal stalling, following occupancy of the ribosome acceptor site by uncharged tRNAs (Hauryliuk et al., 2015). The same conclusion is also likely to apply to missense mutations in the aminoacyl-tRNA synthetase genes of mutants M2 to M7, although we cannot exclude the possibility that the corresponding amino acid substitutions altered other properties of the proteins.\n\n### Production of (p)ppGpp triggers expression of YcbB-mediated ampicillin resistance\n\nIn order to modulate the level of synthesis of (p)ppGpp, a fragment of relA encoding the first 455 residues of the protein was cloned under the control of the arabinose-inducible promoter of vector pBAD33. The truncated protein encoded by the resulting plasmid, pBAD33\u2126relA 1\u2013455, is devoid of the C-terminal ribosome binding module and constitutively synthesizes (p)ppGpp (Schreiber et al., 1991). The latter plasmid and a compatible plasmid coding for IPTG-inducible synthesis of YcbB, pKT2(ycbB), were introduced into a derivative of E. coli, BW25113, lacking the chromosomal copy of relA. In the absence of both inducers, the resulting strain was susceptible to \u03b2-lactams, as was the parental strain BW25113 (Figure 8A). Induction of YcbB synthesis by IPTG had no impact on the activity of \u03b2-lactams (Figure 8B). Induction of RelA 1\u2013455 synthesis by arabinose led to expression of resistance to mecillinam, but not to other \u03b2-lactams (Figure 8C). Induction of both RelA 1\u2013455 and YcbB recapitulated the phenotype of mutant M1 (Figure 8D). These results indicate that YcbB production and increased (p)ppGpp synthesis are both required for bypass of the D,D-transpeptidase activity of PBPs and broad-spectrum \u03b2-lactam resistance. Production of (p)ppGpp by RelA 1\u2013455 recapitulates the phenotype conferred by mutations in the aminoacyl-tRNA synthetase genes of mutants M1 to M7, in agreement with their proposed role in the activation of (p)ppGpp synthesis by RelA in response to binding of uncharged tRNAs to the ribosome acceptor site.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig8-v2.jpg)\n\n**Figure 8.:** Antibiograms using the disk diffusion assay were performed on BHI agar (A) supplemented with 50 \u00b5M IPTG (B), 1% arabinose (C) or both inducers (D), to induce expression of ycbB and relA 1\u2013455 encoded by compatible plasmids pKT2 and pKT8, respectively. Disks were loaded with 10 \u00b5g of mecillinam (1), 10 \u00b5g of ampicillin (2), 30 \u00b5g of ceftriaxone (3), 30 \u00b5g of tetracycline (4), 10 \u00b5g of imipenem (5), or 30 \u00b5g of chloramphenicol (6). Plates were inoculated with BW25113\u0394relA harboring plasmids pKT8(relA) and pKT2(ycbB).\n\n### Localization of YcbB activity\n\nL,D-transpeptidases catalyze the exchange of D-Ala4 at the C-terminus of tetrapeptide stems by various D-amino acids (Mainardi et al., 2005). The first step in this reaction involves nucleophilic attack of the carbonyl of DAP3 by the catalytic Cys of the enzyme, leading to the release of D-Ala4 and formation of a thioester bond (Figure 6A). In the second step, the resulting acyl-enzyme is attacked by the D-amino acid, leading to the\u00a0formation of a DAP-D-amino acid peptide bond. We used a fluorescent derivative of D-Ala (NADA) (Kuru et al., 2012) to localize YcbB activity in live bacteria. As shown in Figure 9, intense labeling was detected at mid-cell indicating that YcbB and its tetrapeptide substrate are co-localized in the septum. As controls, we also showed that labeling was inhibited by meropenem, which inactivates YcbB and PBPs, but not by ampicillin, which only inactivates PBPs.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig9-v2.jpg)\n\n**Figure 9.:** Mutant M1 was grown in the absence or in the presence of 50 \u00b5M IPTG to induce ycbB expression. Prior to labeling with NADA, bacteria were incubated with ampicillin, which inhibits PBPs but not YcbB, or meropenem, which inhibits all transpeptidases. The graphics in the lower panel correspond to the surface plot within the yellow rectangle.\n\n## Discussion\n\nE. coli is known to resist \u03b2-lactams through a combination of drug inactivation by \u03b2-lactamases and reduced access of the drugs to their targets following activation of efflux pumps and modification of outer membrane porins. Here we show that E. coli can also resist \u03b2-lactams through bypass of the D,D-transpeptidase activity of high-molecular-weight PBPs. The resistance mechanism required production of the L,D-transpeptidase YcbB, which was purified and shown to catalyze the\u00a0formation of peptidoglycan cross-links in vitro (Figure 6A) and to be inactivated only by carbapenems (Figure 6B), accounting for broad-spectrum resistance to other classes of \u03b2-lactams (Table 1). The bypass mechanism involves substantial modification of the set of enzymes required for peptidoglycan polymerization. In wild-type strains, lateral expansion of the peptidoglycan network and the\u00a0formation of the septum involve two protein complexes, the elongasome and the divisome, respectively, which integrate distinct sets of peptidoglycan polymerases with partially overlapping functions (den Blaauwen et al., 2008) (Figure 1). In contrast, the L,D-transpeptidase activity of YcbB is sufficient for peptidoglycan cross-linking in mutant M1. This conclusion is based on the exclusive detection of DAP3\u2192DAP3 cross-links in the peptidoglycan of M1 grown in the presence of ampicillin (Figures 3 and 4) and on mutagenic or chemical invalidation of the transpeptidase module of class-A or -B PBPs (Table\u00a02 and Table 1). In wild-type strains, glycan chains are polymerized by either PBP1a or PBP1b, although the former is preferentially associated with the elongasome and the latter with the divisome (den Blaauwen et al., 2008). In contrast, PBP1b, together with its cognate lipoprotein LpoB, are both essential and sufficient for peptidoglycan polymerization in mutant M1 exposed to ampicillin. Peptidoglycan labeling with a fluorescent D-amino acid indicated that YcbB activity is preferentially located in the septum, as is its PBP1b partner (Figure 9). The cross-linking and glycosyltransferase activities of YcbB and PBP1b were nonetheless sufficient for lateral extension of the peptidoglycan network since bacterial cells retained a rod shape in the presence of ampicillin. This observation indicates that the cross-linking activity of high-molecular-weight PBPs is not indispensable to the maintenance of cell shape in E. coli. Together, our data identified a minimum set of enzyme activities that are necessary and sufficient for peptidoglycan polymerization in the presence of \u03b2-lactams (Figure 10). This set comprises the L,D-transpeptidase activity of YcbB, the glycosyltransferase activity of PBP1b, and the D,D-carboxypeptidase activity of PBP5, which provides the essential tetrapeptide substrate of YcbB. Bypass of the D,D-transpeptidase activity of PBPs by YcbB is potentially useful to explore the function of members of the polymerization complexes. For example, the fact that LpoB remains essential in the L,D-transpeptidation context indicates that it directly stimulates the glycosyltransferase activity of PBP1b, as indicated in a recent study (Markovski et al., 2016).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/19469/elife-19469-fig10-v2.jpg)\n\n**Figure 10.:** The lipid intermediate II (Lipid II) consists in the disaccharide-pentapeptide subunit linked to the undecaprenyl lipid transporter (C55) by a pyrophosphate bond. N-acetylglucosamine linked to N-acetylmuramic acid (MurNAc) by a \u03b21\u21924 bond is represented by light and dark blue hexagons, respectively. The pentapeptide stem is linked to the D-lactoyl group of MurNAc and assembled by the sequential addition of L-Ala (white circle), D-Glu (grey circle), meso-diamopimelic acid (DAP; black circle), and the dipeptide D-Ala-D-Ala (orange circles). Following translocation through the cytoplasmic membrane, the subunit is polymerized by the glycosyltransferase (GT) activity of PBP1b, which requires binding of LpoB to its UBH2 domain (Vinella et al., 1993). The transpeptidase (TP) activity of PBP1b and other PBPs is bypassed by the TP activity of YcbB that forms 3\u21923 cross-links (arrows) connecting DAP residues at the 3rd position of stem peptides. The donor substrate of YcbB is generated by the D,D-carboxypeptidase activity of PBP5.\n\nIn addition to YcbB production, increased synthesis of the alarmone (p)ppGpp by RelA was required for broad-spectrum \u03b2-lactam resistance. This conclusion was drawn from the construction of strains that conditionally produce YcbB and a truncated form of RelA (Figure 8) (Table 5) and by an\u00a0independent selection of mutants with impaired aminoacyl-tRNA synthetases (Table 4). Prior analyses also showed that PBP2 is not indispensable in E. coli when (p)ppGpp synthesis is increased, leading to mecillinam resistance (Vinella et al., 1992). Aside from mecillinam resistance, increased (p)ppGpp synthesis has also been shown to regulate growth rate and several different stress responses, including the response to exposure to antibiotics (Hauryliuk et al., 2015). The latter leads to persistence, a response that involves production of rare cells within a bacterial population that remain susceptible but are not killed by the drugs, in the absence of acquisition of any mutation. In E. coli, tolerance to ampicillin mediated by increased (p)ppGpp synthesis leads to a 1000-fold reduction in bacterial killing. The bacterial cells are tolerant to numerous antibiotics, including non-\u03b2-lactams, such as ciprofloxacin, which acts on DNA topoisomerases (Maisonneuve et al., 2013). The cascade triggered by elevated (p)ppGpp involves an increase in the intracellular concentration of polyphosphate via inhibition of the exopolyphosphatase PPX. In turn, elevated polyphosphate stimulates the protease activity of Lon, which degrades antitoxins, thereby activating the toxins that prevent bacterial killing through inhibition of translation and bacterial growth. This cascade is distinct from YcbB-mediated ampicillin resistance in several respects. Persistence emerges from stochastic events that render a limited number of bacterial cells transiently tolerant to multiple families of antibiotics, whereas YcbB in combination with elevated (p)ppGpp rendered the bulk of the population resistant only to \u03b2-lactams that did not inactivate the L,D-transpeptidase activity of YcbB (Table 5). In addition, plasmids pKT2(ycbB) and pKT8(relA 1\u2013455) conferred ampicillin and ceftriaxone resistance to mutants from the Keio collection deficient in production of the Lon protease and the polyphosphate kinase PPK (data not shown) indicating that tolerance and resistance do not involve the same (p)ppGpp-regulated circuits.\n\n**Table 5.**\n Minimal inhibitory concentration of \u03b2-lactams against E. coli strains harboring various plasmids*.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">\u03b2-lactam</th>\n      <th rowspan=\"2\">Inducer\u2020</th>\n      <th colspan=\"8\">Strains</th>\n    </tr>\n    <tr>\n      <th>BW25113</th>\n      <th>BW25113pJEH12(ycbB)</th>\n      <th>M1cured</th>\n      <th>M1curedpJEH12(ycbB)</th>\n      <th>BW25113pKT8(relA')</th>\n      <th>BW25113pKT8(relA')pKT2(ycbB)</th>\n      <th>BW25113\u0394relApKT8(relA')</th>\n      <th>BW25113\u0394relApKT8(relA')pKT2(ycbB)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"4\">Ampicillin</td>\n      <td>None</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>4</td>\n      <td>8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>IPTG</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>128</td>\n      <td>8</td>\n      <td>4</td>\n      <td>8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Ara</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>IPTG+Ara</td>\n      <td>8</td>\n      <td>8</td>\n      <td>8</td>\n      <td>128</td>\n      <td>8</td>\n      <td>64</td>\n      <td>8</td>\n      <td>128</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">Ceftriaxone</td>\n      <td>None</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n    </tr>\n    <tr>\n      <td>IPTG</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>32</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n    </tr>\n    <tr>\n      <td>Ara</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,1</td>\n      <td>0,05</td>\n      <td>0,05</td>\n    </tr>\n    <tr>\n      <td>IPTG+Ara</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>0,05</td>\n      <td>32</td>\n      <td>0,05</td>\n      <td>32</td>\n      <td>0,05</td>\n      <td>32</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Minimal inhibitory concentrations were determined by the agar dilution method with an inoculum of 105 colony forming units per spot in brain heart infusion agar after 24 hr of incubation at 37\u00b0C. The same results were obtained with 104 and 106 colony forming units, indicating that YcbB in combination with elevated (p)ppGpp rendered the bulk of the population resistant.\u2020Induction was performed with 50 mM IPTG, 1% arabinose (Ara), and a combination of both inducers (IPTG+Ara). IPTG induces expression of the ycbB gene of plasmids pJEH12(ycbB) and pKT2(ycbB). Arabinose induces expression of relA\u2019 encoding the first 455 residues of RelA._\n\n## Materials and methods\n\n### Strains, plasmids, and growth conditions\n\nAll strains were derived from E. coli BW25113 (32), except strain CS801-4 (13), kindly provided by Kevin D. Young. Single-deletion strains were obtained from the Keio collection (Baba et al., 2006), provided by the National BioRessource Project-E.coli at National Institute of Genetics (Shigen, Japan). Serial deletion of class A pbp genes was obtained by the one-step technique described by B. Wanner and K. Datsenko (Datsenko and Wanner, 2000) using the primers depicted in Table 6. Strains were grown in brain heart infusion broth or agar at 37\u00b0C unless otherwise specified.\n\n**Table 6.**\n Oligonucleotides used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Oligonucleotide</th>\n      <th>Sequence</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PBP1b-inact1</td>\n      <td>GAAGAACAGAAAATCGGGCTTTTGCGCCTGAATATTGCGGAGAAAAAGCCATATGAATATCCTCCTTAG</td>\n    </tr>\n    <tr>\n      <td>PBP1b-inact2</td>\n      <td>GTTATTTTACCGGATGGCAACTCGCCATCCGGTATTTCACGCTTAGATGGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>PBP1a-inact1</td>\n      <td>GCGCGTTTGTTTATAAACTGCCCAAATGAAACTAAATGGGAAATTTCCACATATGAATATCCTCCTTAG</td>\n    </tr>\n    <tr>\n      <td>PBP1a-inact2</td>\n      <td>CAAGTGCACTTTGTCAGCAAACTGAAAAGGCGCCGAAGCGCCTTTTTAAGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>PBPC-inact1</td>\n      <td>ATGCCTCGCTTGTTAACCAAACGCGGCTGCTGGATAACGTTGGCAGCCGCATATGAATATCCTCCTTAG</td>\n    </tr>\n    <tr>\n      <td>PBPC-inact2</td>\n      <td>CCGTCAAATGCAGGGTCACGTTGCGCCCGCGTTCAGTTAACGGTTCGCCGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>MGT-inact1</td>\n      <td>GCGGCATTGATAAGCTGGTTTCCCGCGTGCTGGTTCTGGCTGAATGAGTCATATGAATATCCTCCTTAG</td>\n    </tr>\n    <tr>\n      <td>MGT-inact2</td>\n      <td>TCGTGAGAGCAAAACGCTGGCCCTCACTTCGCGCGAAGCTTAATCCAGCGTGTAGGCTGGAGCTGCTTC</td>\n    </tr>\n    <tr>\n      <td>PBP1b-NcoI</td>\n      <td>AAAACCATGGCCGGGAATGACCGCGAGCCAATTGGACGC</td>\n    </tr>\n    <tr>\n      <td>PBP1b-SacI</td>\n      <td>GTTATGAGCTCGGATGGCAACTCGCCATCCGGTATTTCACGC</td>\n    </tr>\n    <tr>\n      <td>PBP1a-BspHI</td>\n      <td>TTCTCATGAAGTTCGTAAAGTATTTTTTGATCCTTGC</td>\n    </tr>\n    <tr>\n      <td>PBP1a-SacI</td>\n      <td>AGCCGGAGCTCGCGTTCACGCCGTATCCGGCATAAACAAGTGCAC</td>\n    </tr>\n    <tr>\n      <td>PMAK-PBP1b</td>\n      <td>CCAAGGATCCGTAAGGTTGGTTTTCTCCCTCTCCCTGTGGG</td>\n    </tr>\n    <tr>\n      <td>PBP1b-TG1</td>\n      <td>GCGACCATGGACCGTCATTTTTACGAGCATGATGGAATC</td>\n    </tr>\n    <tr>\n      <td>PBP1b-TG2</td>\n      <td>CGGTCCATGGTCGCCAGCAAAGTATCCACCAGCAAATCC</td>\n    </tr>\n    <tr>\n      <td>PBP1b-TP1</td>\n      <td>TCGATTGGCGCCCTTGCAAAACCAGCGACTTATCTGACGGC</td>\n    </tr>\n    <tr>\n      <td>PBP1b-TP2</td>\n      <td>TGCAAGGGCGCCAATCGAACGACGCGCCTGCATCGCACGG</td>\n    </tr>\n    <tr>\n      <td>RelA-XbaI</td>\n      <td>AATCTAGAAATCGATGGTACTTTTCTC</td>\n    </tr>\n    <tr>\n      <td>RelA-PstI</td>\n      <td>AACTGCAGCTACAGCTGGTAGGTGAACGGC</td>\n    </tr>\n    <tr>\n      <td>DacA-SacI</td>\n      <td>GGGAGCTCGGCATCTGATGTGTCAAT</td>\n    </tr>\n    <tr>\n      <td>DacA-BamHI</td>\n      <td>GGGGATCCTTAACCAAACCAGTGATGG</td>\n    </tr>\n    <tr>\n      <td>CDF-for</td>\n      <td>AACTGCAGTCATGAGCGGATACATAT</td>\n    </tr>\n    <tr>\n      <td>CDF-rev</td>\n      <td>AAATCGATATCTAGAGCGGTTCAGTAG</td>\n    </tr>\n  </tbody>\n</table>\n\n### Construction of plasmids expressing the L,D-transpeptidase gene ycbB\n\nTo avoid incompatibilities between antibiotic resistance markers and replication origins of the various plasmids used in this study, three plasmids encoding YcbB were constructed.\n\nConstruction of pJEH11(ycbB) was based on vector pTRCKm, a derivative of pTrc99A obtained by replacing the ampicillin-resistance gene by the kanamycin-resistance gene of pCR-Blunt (Invitrogen, Carlsbad, CA) (our laboratory collection). The gene ycbB of BW25113 carried by plasmid pTrc99A\u03a9ycbB (Turner et al., 2014) was subcloned into the vector pTRCKm using restriction endonucleases NcoI and XbaI. The resulting plasmid was designated pJEH11(ycbB). A derivative of pJEH11(ycbB), designated pJEH11-1(ycbB), was obtained upon selection on pTrc99A\u03a9ycbB containing ampicillin and IPTG. Plasmid pJEH11-1(ycbB) carries a mutation in the lacI gene resulting in an Arg127Leu substitution in the inducer binding site of the LacI repressor.\n\nTo construct pJEH12(ycbB), the ApaI-XmnI fragment of pJEH11-1(ycbB) harboring lacI Arg127Leu, ycbB, and their respective promoters were cloned between the EcoRI and ScaI sites of pACYC184. For this construction, the EcoRI and ApaI protruding ends were blunted by treatment with the Klenow fragment of E. coli DNA polymerase I. The resulting plasmid, pJEH12(ycbB), contains the p15A replication origin, a tetracycline resistance marker, lacI Arg127Leu, and ycbB expressed under the control of the IPTG-inducible trc promoter.\n\nTo construct pKT2(ycbB), the origin of replication CDF was amplified by PCR with oligonucleotides CDF-for and CDF-rev (Table 6) from vector pCDFDuet-1 (Novagen). PstI and ClaI restriction sites were included at the 5\u2019 extremity of the forward and reverse primers, respectively. To replace the p15A replication origin of pJEH12(ycbB), the plasmid was digested with ClaI and PstI, and ligated to the CDF amplified PCR product digested with PstI and ClaI. The resulting plasmid, pKT2(ycbB), contains the CDF replication origin, a tetracycline resistance marker, lacI Arg127Leu, and ycbB expressed under the control of the trc promoter.\n\n### Peptidoglycan structure\n\nPeptidoglycan was extracted by the boiling SDS method and digested with muramidases (Magnet et al., 2008). The resulting muropeptides were reduced, separated by rpHPLC, collected, lyophilized, and identified by electrospray time-of flight mass spectrometry (Q-star Pulsar, Applied Biosystem) (Magnet et al., 2008). For tandem mass spectrometry, muropeptides were treated with ammonia to generate lactoyl-peptides following cleavage of the ether bond internal to N-acetyl-muramic acid (MurNAc) (Magnet et al., 2008). Lactoyl-peptides were separated by rpHPLC, collected, lyophilized, and identified by mass spectrometry. The sequence of the cross-links was determined by tandem mass spectrometry using N2 as the collision gaz (collision of 36\u201340 eV) (Magnet et al., 2008).\n\n### Purification of the L,D-transpeptidase, YcbB\n\nThe ycbB gene was amplified by PCR and cloned into pETMM82 (33) between the EcoRI and XhoI restriction sites. The fusion protein comprises the disulfide isomerase DsbC, a 6\u00d7His tag, a TEV protease cleavage site, and residues 30-616 of YcbB. The enzyme was produced in E. coli BL21(DE3) following induction by IPTG (0.5\u2009mM) at 16\u00b0C for 19\u2009hr. The fusion protein was purified from clarified lysates by nickel affinity chromatography in 25\u2009mM Tris-HCl, 300\u2009mM NaCl, pH 8.0 (buffer A). DsbC and the 6\u00d7His tag were removed by TEV protease digestion followed by nickel affinity chromatography. YcbB was further purified as a monomer by size-exclusion chromatography (Superdex 75 HiLoad 26/60, GE Healthcare) in buffer A.\n\n### Mass spectrometry analyses of YcbB acylation by \u03b2-lactams\n\nThe formation of drug-enzyme adducts was tested by incubating YcbB (10 \u00b5M) with \u03b2-lactams (100 \u00b5M) at 20\u00b0C in 100\u2009mM sodium-phosphate buffer (pH 6.0) for 1\u2009hr. Mass spectra were acquired in the positive mode (Qstar Pulsar I, Applied Biosystem) as previously described (Triboulet et al., 2013).\n\n### In vitro peptidoglycan cross-linking assay\n\nThe disaccharide-tetrapeptide GlcNAc-MurNAc-L-Ala1-\u03b3-D-Glu2-DAP3-D-Ala4 was purified from the E. coli BW25113 cell-wall peptidoglycan (30 \u00b5M) and incubated with YcbB (10 \u00b5M) for 2\u2009hr at 37\u00b0C in 25\u2009mM Tris-HCl, 300\u2009mM NaCl (pH 8.0). The reaction mixture was desalted (ZipTip C18; Millipore) and analyzed by mass spectrometry (Triboulet et al., 2015).\n\n### Deletion of glycosyltransferase genes\n\nInactivation of the genes mrcA, mrcB, pbpC, and mgt was performed by the Datsenko and Wanner technique (Pratt, 2008) with PCR products obtained by amplification of the kanamycin-resistance cassette with oligos PBP1a-inact1 and PBP1a-inact2 (mrcA), PBP1b-inact1 and PBP1b-inact2 (mrcB), PBPC-inact1 and PBPC-inact2 (pbpC), and MGT-inact1 and MGT-inact2 (mgt).\n\n### Construction of pTrc99A derivatives expressing the class A mrcB PBP gene\n\nGene mrcB was amplified with oligonucleotides PBP1b-NcoI and PBP1b-SacI. The amplicon was digested with SacI and NcoI and cloned into pTrc99A digested by the same enzymes.\n\n### Construction of a pMAK705 derivative expressing mrcB\n\npMAK705 is a replication thermosensitive plasmid (repts) (Tipper and Strominger, 1965). mrcB was amplified with oligonucleotides PMAK-PBP1b and PBP1b-SacI, and the amplicon was digested with BamHI and SacI, and cloned into pMAK705 digested with the same enzymes.\n\n### Inactivation of the transpeptidase module of PBP1b\n\nA 5' portion of the mrcB gene was amplified from plasmid pTrc99A\u2126mrcB with oligonucleotides PBP1b-NcoI and PBP1b-TP2. The primer PBP1b-TP2 introduced a NarI site and replaced the codon specifying the catalytic residue Ser510 by an Ala codon. This amplicon, designated A1, was digested with NcoI and NarI. The remaining 3' portion of the mrcB gene was amplified with primers PBP1b-SacI and PBP1b-TP1, which comprises a NarI site. The amplicon designated A2 was digested with NarI and SacI. The amplicons A1 and A2 were ligated to pTrc99A digested with NcoI and SacI.\n\n### Inactivation of the glycosyltransferase module of PBP1b\n\nFor inactivation of the glycosyltransferase module of PBP1b, a 5' portion of the mrcB gene was amplified from plasmid pTrc99A\u2126mrcB with primers PBP1b-NcoI and PBP1b-TG1. The primer PBP1b-TG1 introduced a NcoI site and replaced the codon specifying the catalytic residue Glu233 by a Met codon. The amplicon, designated B1 was digested with NcoI and HindIII. The remaining 3' portion of the mcrB gene was amplified with primers PBP1b-SacI and PBP1b-TG2, which comprises a HindIII site. The amplicon, designated B2 was digested with HindIII and SacI. The amplicons B1 and B2 were ligated to pTrc99A digested with NcoI and SacI.\n\n### Construction of the plasmid pBAD33\u2126relA 1\u2013455 expressing a truncated form of RelA\n\nA fragment of relA encoding residues 1\u2013455 was amplified by PCR (primers RelA-XbaI and RelA-PstI) and cloned into vector pBAD33 using restriction endonucleases XbaI and PstI. The recombinant plasmid encodes a truncated version of RelA (residues 1 to 455), which is unable to bind to the ribosome and retains (p)ppGpp synthase activity (Sauvage et al., 2008).\n\n### Selection of \u03b2-lactam resistant mutants\n\nE. coli strains were grown overnight in 10\u2009ml of BHI broth at 37\u00b0C, concentrated by centrifugation, and ca. 109 colony-forming units were plated on agar containing ampicillin (32 \u00b5g/ml) or ceftriaxone (32 \u00b5g/ml) and IPTG (50 \u00b5M). Colony-forming units were enumerated after 48\u2009hr incubation at 37\u00b0C. To determine the frequency of survivors, cultures were also plated on BHI agar to enumerate bacteria present in the inoculum.\n\n### Assay for the identification of YcbB partners\n\nIn order to identify proteins essential for YcbB-mediated peptidoglycan cross-linking in the absence of the D,D-transpeptidase activity of PBPs, we expressed ycbB in E. coli mutants from the Keio collection, which were obtained by replacement of individual open-reading frames by a kanamycin-resistance gene cassette (den Blaauwen et al., 2008). We hypothesized that insertion of the Km cassette in place of a gene encoding an essential partner of YcbB would produce a mutant unable to acquire ampicillin resistance despite production of the L,D-transpeptidase (frequency < 10\u20139\u00a0on agar containing 32 \u00b5g/ml ampicillin or 32 \u00b5g/ml ceftriaxone, and 50 \u00b5M IPTG). For non-essential genes, mutants displaying IPTG-inducible expression of \u03b2-lactam resistance were obtained at a frequency \u2265 10\u20136).\n\n### Whole genome sequencing\n\nGenomic DNA was prepared with the Wizard Genomic DNA purification kit (Promega). Mutations were identified using the Illumina single reads sequencing technology. Library preparation was performed with Genomic DNA Sample Prep Kit v1. Nebulization was used to share genomic DNA, and fragments were blunt-ended, phosphorylated, and A-tailed prior to ligation of sequencing adapters. Fragments with an insert size of ca. 200 bp were gel-extracted and enriched with PCR (14 cycles) before library quantification and validation. Clusters were generated by hybridization of the library to the flow cell and bridge amplification. Single reads of 36 cycles were collected on a GAIIX (Illumina, San Diego, CA). The Illumina Analysis Pipeline (version 1.6) was used for image analysis, base calling, and error estimation. Raw sequence files were filtered using programs developed by N. Joly (Biology IT Center, Institut Pasteur, Paris). Quality-filtered trimmed reads (minimum 50 bases) were mapped on the genome sequence of E. coli BW25113 (ID: 2829859), and variant detection was performed with CLC Genomics Workbench version3 (CLC Bio, Denmark).\u00a0Raw sequencing data have been deposited in the Dryad Digital Repository database (Bouchier et al., 2015).\n\n### Probing of YcbB activity in live bacteria with a fluorescent D-amino acid\n\nM1cured harboring pJEH12(ycbB), was grown in the absence or presence of 50 \u00b5M IPTG in lysogeny broth (LB) to an optical density at 600 nm of 0.3 at 37\u00b0C. The bacterial culture was further incubated with 16 \u00b5g/ml ampicillin or 1 \u00b5g/ml meropenem at 37\u00b0C for 30 and 15\u2009min, respectively. A fluorescent derivative of D-Ala containing a 7-nitrobenzofurazan fluorophore (NADA; 1\u2009mM) (Kuru et al., 2012) was added to the culture under constant shaking and incubation was continued for 150 s at 37\u00b0C. Cells were washed three times in LB (5000\u2009rpm; 5\u2009min), immobilized on 0.1 x LB containing 1% agarose, and incorporation of NADA was determined with a Nikon Eclipse T1 microscope (Nikon Plan Fluor \u00d7 100/1.30 Oil Ph3 DLL objective) coupled to an EMCCD camera (Hamamatsu Flash 4.0). Images were further analyzed by ImageJ (NIH).\n\n## Acknowledgements\n\nMass spectra were collected at the mass spectrum facility of the Mus\u00e9um National d\u2019Histoire Naturelle. We thank Dr. Matthias Bochtler for the generous gift of plasmid pETMM82. This work was supported by the National Institute of Allergy and Infectious Diseases (Grant RO1 307 AI046626) to LBR and MA, the project NAPCLI from the JPI AMR program (ZonMW project 60-60900-98-207 for AM), and the National Institutes of Health (Grant GM113172) to MSvN. We thank Laurence Ma and Magali Tichit for technical assistance for genome sequencing. The Genomics Platform is a member of the 'France G\u00e9nomique' consortium supported by the Agence Nationale de la Recherche (ANR10-INBS-09-08).\n",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "68e34557-137a-46a1-9e2e-357bab51799e",
+      "submission_id": "c5b940d9-e286-4216-a4e6-faaf610826cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael S Gilmore, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19469.020](https://doi.org/10.7554/eLife.19469.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Factors essential for L,D-transpeptidase mediated peptidoglycan crosslinking and \u03b2-lactam resistance in Escherichia coli\" for consideration by eLife. Your article has been favorably evaluated by Wendy Garrett as the Senior Editor and three reviewers, including Jose Lemos (Reviewer #3) and Michael S. Gilmore, who is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a generally well written and technically highly competent manuscript for which there would be a high level of enthusiasm if the issues below can be adequately addressed. It describes the conditions necessary to generate a complete, ampicillin-resistant cell wall by employing a previously identified L,D-transpeptidase activity mediated by YcbB, in conjunction with increased alarmone levels. The importance of this work is that peptidoglycan biosynthesis represents a complex activity that is uniquely microbial, which can be targeted by molecules that do not require translocation across the cytoplasmic membrane. The contribution of YcbB to generation of the unusual 3-3 crosslinks that ordinarily constitutes ~ 10% of the E. coli peptidoglycan was discovered by this group in 2008 (8). The present work extends that to show that this activity, combined with an elevation in alarmone ppGpp, PBP1b and DacA expression, are sufficient for complete cell wall biosynthesis in a manner that is resistant to ampicillin inhibition. A main attraction for this theme is the problem of antibiotic resistance, and this pathway renders the cell ampicillin resistant in vitro.\n\nEssential revisions:\n\nA major limitation of the manuscript in its current form is that are some gaps in logic and omissions of critical data. For example, there is broad interest in the field in antibiotic resistance, and the central theme of this paper is the ampicillin-resistant generation of a complete cell wall. However, this reviewer is unfamiliar with that happening in nature, and as a result, most \u03b2-lactam related resistance is mediated by drug modifying enzymes and efflux \u2013 is that the case? For the sake of a balanced perspective, the authors should discuss any evidence that this bypass occurs, or if not, why not?\n\nIn terms of leaps of logic in the experimentation that require further explanation:\n\n1) As it currently reads (subsection \u201cYcbB-mediated \u03b2-lactam resistance\u201d, first paragraph), it appears that selection for both resistance to 500 \u03bcg/ml IPTG induction and resistance to 32 \u03bcg/ml ampicillin were performed simultaneously. Is this correct? If so, the rationale as well as rate of mutation should be better explained and documented, as this is central to the manuscript.\n\n2) Was an actual change in transcription in the lacI mutant seen or is this simply presumed? (And why is high expression of YcbB toxic (subsection \u201cYcbB-mediated \u03b2-lactam resistance\u201d, first paragraph)? The authors may not know, of course, but it would be useful to briefly speculate based on the authors understanding).\n\n3) Was a change in ppGpp levels in the tRNA synthetase mutants that were essential for the phenotype actually measured? As there are broad effects of altering ppGpp pools, the lack of direct connection detracts from the perceived robustness of the results and the model proposed. There are also effects on the cell of mistranslation.\n\n4) When the glycosyltransferase (GT) activity of PBP1B is blocked by mutation, its transpeptidase (TP) activity also decreases substantially or disappears (Egan et al., 2015). This means that the PBP1B-E233 mutant lacks both GT and TP activities. Thus, even if the GT enzymatic domain is \"inactivated independently\" (subsection \u201cIdentification of the glycosyltransferase partner of YcbB\u201d, second paragraph), it is unclear how the authors can claim that only \"the GT activity of PBP1b.\u2026 is required for.\u2026 \u03b2-lactam resistance\" (second paragraph), or that this GT activity \"is necessary and sufficient\" (third paragraph) [Reference: Egan, A. J. F., J. Biboy, I. van't Veer, E. Breukink & W. Vollmer, (2015) Activities and regulation of peptidoglycan synthases. Philosophical Transactions of the Royal Society of London B: Biological Sciences 370: 20150031].\n\n5) In the subsection \"L,D-transpeptidase activity of YcbB\", a schematic of this reaction is shown, but no biochemical data is presented showing that the protein actually exhibits this enzymatic activity. What is the basis for this claim? Without the underlying data the reader does not know anything about the reaction or its rate. (Also, how active is YcbB when compared to similar L,D or D,D enzymes?)\n\n6) In the subsection \"Inactivation of YcbB by \u03b2-lactams\", no biochemical data is presented to support this claim. Without this data the reader does not know anything about the rate or extent of inhibition.\n",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bcd0e849-1943-40e5-b35f-7878abb4921d",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C1",
+      "claim": "Unusual 3\u21923 cross-links formed by L,D-transpeptidases were first detected in Escherichia coli more than four decades ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusual 3\u21923 cross-links formed by L,D-transpeptidases were first detected in Escherichia coli more than four decades ago, however no phenotype has previously been associated with their synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to historical work (Schwarz et al., 1969) mentioned later in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2a222e13-5eee-4968-ac4b-a936a7d974f4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C2",
+      "claim": "No phenotype has previously been associated with the synthesis of 3\u21923 cross-links in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusual 3\u21923 cross-links formed by L,D-transpeptidases were first detected in Escherichia coli more than four decades ago, however no phenotype has previously been associated with their synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of prior findings in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "7e3c4fb6-7576-4cf3-8f3d-4f06578cedc1",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C3",
+      "claim": "Production of the L,D-transpeptidase YcbB in combination with elevated synthesis of the (p)ppGpp alarmone by RelA leads to full bypass of the D,D-transpeptidase activity of PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that production of the L,D-transpeptidase YcbB in combination with elevated synthesis of the (p)ppGpp alarmone by RelA lead to full bypass of the D,D-transpeptidase activity of PBPs and to broad-spectrum \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including genetic analyses, peptidoglycan structure analysis, and antibiotic susceptibility testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "648e8740-4127-4990-8ce5-f46b5c48bae4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C4",
+      "claim": "Production of YcbB in combination with elevated (p)ppGpp synthesis leads to broad-spectrum \u03b2-lactam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that production of the L,D-transpeptidase YcbB in combination with elevated synthesis of the (p)ppGpp alarmone by RelA lead to full bypass of the D,D-transpeptidase activity of PBPs and to broad-spectrum \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by disk diffusion assays and MIC determinations shown in Tables 1 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "08fe6807-04a6-4330-a164-2f0454fd9e90",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C5",
+      "claim": "Production of YcbB is sufficient to switch the role of (p)ppGpp from antibiotic tolerance to high-level \u03b2-lactam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of YcbB was therefore sufficient to switch the role of (p)ppGpp from antibiotic tolerance to high-level \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that YcbB production combined with (p)ppGpp synthesis confers resistance rather than tolerance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "1261479f-1080-42a1-8de5-2fcc624d2704",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C6",
+      "claim": "Peptidoglycan polymerization in the YcbB-mediated resistance mechanism relies on the glycosyltransferase activity of class A PBP1b.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation identifies a new mode of peptidoglycan polymerization in E. coli that relies on an unexpectedly small number of enzyme activities comprising the glycosyltransferase activity of class A PBP1b and the D,D-carboxypeptidase activity of DacA in addition to the L,D-transpeptidase activity of YcbB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic deletion studies and complementation experiments shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "934b7435-ce74-4cdd-aec3-fe8c27e9a99e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C7",
+      "claim": "Peptidoglycan polymerization in the YcbB-mediated resistance mechanism relies on the D,D-carboxypeptidase activity of DacA (PBP5).",
+      "claim_type": "EXPLICIT",
+      "source": "This observation identifies a new mode of peptidoglycan polymerization in E. coli that relies on an unexpectedly small number of enzyme activities comprising the glycosyltransferase activity of class A PBP1b and the D,D-carboxypeptidase activity of DacA in addition to the L,D-transpeptidase activity of YcbB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genetic deletion studies showing that dacA is essential for YcbB-mediated resistance (Table 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f330d681-dddb-4c88-8d22-7e5fdd078ca1",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C8",
+      "claim": "Peptidoglycan is a giant macromolecule with a molecular weight of 10^9 to 10^10 Da.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan, the major component of bacterial cell walls, is a giant (109 to 1010 Da) net-like macromolecule composed of glycan strands cross-linked by short peptides (Turner et al., 2014) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Turner et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f00e0282-7745-4e6f-9b3e-96476a81cb06",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C9",
+      "claim": "Peptidoglycan is composed of glycan strands cross-linked by short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan, the major component of bacterial cell walls, is a giant (109 to 1010 Da) net-like macromolecule composed of glycan strands cross-linked by short peptides (Turner et al., 2014) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "9364fa03-544d-4503-84fc-dca50edc74cd",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C10",
+      "claim": "Glycan strands in peptidoglycan are polymerized by glycosyltransferases.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycan strands are polymerized by glycosyltransferases and the cross-links are formed by D,D-transpeptidases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d1563a2c-04b4-4411-a1b0-f2ca7e43cb26",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C11",
+      "claim": "Cross-links in peptidoglycan are formed by D,D-transpeptidases.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycan strands are polymerized by glycosyltransferases and the cross-links are formed by D,D-transpeptidases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "66975d8f-882f-4e87-8410-e79971b95e1e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C12",
+      "claim": "D,D-transpeptidases cleave the D-Ala4-D-Ala5 peptide bond of an acyl donor stem.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter enzymes cleave the D-Ala4-D-Ala5 peptide bond of an acyl donor stem and link the carbonyl of D-Ala4 to the side chain amine of diaminopimelic acid (DAP) of the acceptor stem, thereby generating D-Ala4\u2192DAP3 cross-links (Figure 1A) (Pratt, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pratt, 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f5db0a5e-91af-4e05-b14b-5c68bbf9b535",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C13",
+      "claim": "D,D-transpeptidases link the carbonyl of D-Ala4 to the side chain amine of diaminopimelic acid (DAP) of the acceptor stem, generating D-Ala4\u2192DAP3 cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter enzymes cleave the D-Ala4-D-Ala5 peptide bond of an acyl donor stem and link the carbonyl of D-Ala4 to the side chain amine of diaminopimelic acid (DAP) of the acceptor stem, thereby generating D-Ala4\u2192DAP3 cross-links (Figure 1A) (Pratt, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pratt, 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "bf3fb6da-255e-479f-bf1a-0734280d71fe",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C14",
+      "claim": "\u03b2-lactam antibiotics mimic the D-Ala4-D-Ala5 termination of peptidoglycan precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-lactam antibiotics mimic the D-Ala4-D-Ala5 termination of peptidoglycan precursors and inactivate the D,D-transpeptidases by acting as suicide substrates (Tipper and Strominger, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tipper and Strominger, 1965 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "431915f5-2bac-404b-91c0-267418a2e069",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C15",
+      "claim": "\u03b2-lactam antibiotics inactivate D,D-transpeptidases by acting as suicide substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-lactam antibiotics mimic the D-Ala4-D-Ala5 termination of peptidoglycan precursors and inactivate the D,D-transpeptidases by acting as suicide substrates (Tipper and Strominger, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tipper and Strominger, 1965 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "932a0bf7-d317-421f-8139-f5c0bde0e4c3",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C16",
+      "claim": "D,D-transpeptidases belong to a diverse family of proteins commonly referred to as penicillin-binding proteins (PBPs).",
+      "claim_type": "EXPLICIT",
+      "source": "The D,D-transpeptidases belong to a diverse family of proteins, commonly referred to as penicillin-binding proteins (PBPs), that fall into three main classes (Sauvage et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sauvage et al., 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "a11a7ac7-d094-48d2-9d53-92315dbcf156",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C17",
+      "claim": "PBPs fall into three main classes.",
+      "claim_type": "EXPLICIT",
+      "source": "The D,D-transpeptidases belong to a diverse family of proteins, commonly referred to as penicillin-binding proteins (PBPs), that fall into three main classes (Sauvage et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sauvage et al., 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "e5d534ee-47e3-4db7-9eb7-26a514b13812",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C18",
+      "claim": "Class A PBPs (PBP1a, 1b, and 1c) combine glycosyltransferase and D,D-transpeptidase modules.",
+      "claim_type": "EXPLICIT",
+      "source": "Class A PBPs (PBP1a, 1b, and 1c) combine glycosyltransferase and D,D-transpeptidase modules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "c717df3f-361a-4d3f-8c8c-75d64df0f95f",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C19",
+      "claim": "Class B PBPs (PBP2 and 3) are composed of a nonenzymatic morphogenesis module fused to a D,D-transpeptidase module.",
+      "claim_type": "EXPLICIT",
+      "source": "Class B PBPs (PBP2 and 3) are composed of a nonenzymatic morphogenesis module fused to a D,D-transpeptidase module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "1677ffdc-2eb7-4187-9ab4-106f47810a31",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C20",
+      "claim": "Class C PBPs (PBP4, 4b, 5, 6, 6b, 7, and AmpH) are monofunctional enzymes with D,D-carboxypeptidase and endopeptidase activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Class C PBPs (PBP4, 4b, 5, 6, 6b, 7, and AmpH) are monofunctional enzymes with D,D-carboxypeptidase and endopeptidase activities that hydrolyze the D-Ala4-D-Ala5 bond of pentapeptide stems and the D-Ala4\u2192DAP3 bond of cross-linked peptidoglycan, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ce10f157-67d3-46fa-8188-bf27e06c2d67",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C21",
+      "claim": "Class C PBPs hydrolyze the D-Ala4-D-Ala5 bond of pentapeptide stems.",
+      "claim_type": "EXPLICIT",
+      "source": "Class C PBPs (PBP4, 4b, 5, 6, 6b, 7, and AmpH) are monofunctional enzymes with D,D-carboxypeptidase and endopeptidase activities that hydrolyze the D-Ala4-D-Ala5 bond of pentapeptide stems and the D-Ala4\u2192DAP3 bond of cross-linked peptidoglycan, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "210d2943-36b2-4da2-99b2-306f3e9bfe6a",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C22",
+      "claim": "Class C PBPs hydrolyze the D-Ala4\u2192DAP3 bond of cross-linked peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Class C PBPs (PBP4, 4b, 5, 6, 6b, 7, and AmpH) are monofunctional enzymes with D,D-carboxypeptidase and endopeptidase activities that hydrolyze the D-Ala4-D-Ala5 bond of pentapeptide stems and the D-Ala4\u2192DAP3 bond of cross-linked peptidoglycan, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "44f91ba6-3d12-4cf0-8766-12b8d296af58",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C23",
+      "claim": "Peptidoglycan polymerization involves two complexes: the divisome and the elongasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan polymerization involves two complexes (Figure 1B), the divisome and the elongasome, responsible for septum formation and lateral cell-wall elongation, respectively (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to den Blaauwen et al., 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "73821d5c-85e0-4042-9492-3f480da9e728",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C24",
+      "claim": "The divisome is responsible for septum formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan polymerization involves two complexes (Figure 1B), the divisome and the elongasome, responsible for septum formation and lateral cell-wall elongation, respectively (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to den Blaauwen et al., 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "e04804e8-c3c6-4ae3-94d4-da2bb6d0e8bd",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C25",
+      "claim": "The elongasome is responsible for lateral cell-wall elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan polymerization involves two complexes (Figure 1B), the divisome and the elongasome, responsible for septum formation and lateral cell-wall elongation, respectively (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to den Blaauwen et al., 2008 and is established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b8992cee-6580-4a62-a174-7777559fdc51",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C26",
+      "claim": "The divisome and elongasome complexes include all the biosynthetic and hydrolytic enzymes required for the incorporation of new subunits into the expanding peptidoglycan net.",
+      "claim_type": "EXPLICIT",
+      "source": "These complexes include all the biosynthetic and hydrolytic enzymes required for the incorporation of new subunits into the expanding peptidoglycan net, as well as cytoskeletal proteins, MreB and FtsZ, acting as guiding devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "bee8e4e9-001f-46c9-b791-d319848b9292",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C27",
+      "claim": "The divisome and elongasome complexes include cytoskeletal proteins MreB and FtsZ that act as guiding devices.",
+      "claim_type": "EXPLICIT",
+      "source": "These complexes include all the biosynthetic and hydrolytic enzymes required for the incorporation of new subunits into the expanding peptidoglycan net, as well as cytoskeletal proteins, MreB and FtsZ, acting as guiding devices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "7a9ba809-0d14-4383-89c6-dea41345d3e8",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C28",
+      "claim": "Unusual cross-links connecting two DAP residues were detected in E. coli as early as 1969.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusual cross-links connecting two DAP residues were detected in E. coli as early as 1969, however the enzymes responsible for their formation at that time were unknown (Schwarz et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwarz et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "af8c8384-ebc6-4a25-aa36-b4e27ddde4a4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C29",
+      "claim": "The enzymes responsible for DAP3\u2192DAP3 cross-link formation were unknown in 1969.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusual cross-links connecting two DAP residues were detected in E. coli as early as 1969, however the enzymes responsible for their formation at that time were unknown (Schwarz et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwarz et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "a88d538a-5323-475a-8665-d4ac04263dfc",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C30",
+      "claim": "DAP3\u2192DAP3 cross-links account for 3% of the cross-links present in peptidoglycan extracted from bacteria in the exponential phase of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These DAP3\u2192DAP3 cross-links account for 3% and 10% of the cross-links present in the peptidoglycan extracted from bacteria in the exponential and stationary phases of growth, respectively (Schwarz et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwarz et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2d36c268-0f74-4715-b0d4-625c08ca97e7",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C31",
+      "claim": "DAP3\u2192DAP3 cross-links account for 10% of the cross-links present in peptidoglycan extracted from bacteria in the stationary phase of growth.",
+      "claim_type": "EXPLICIT",
+      "source": "These DAP3\u2192DAP3 cross-links account for 3% and 10% of the cross-links present in the peptidoglycan extracted from bacteria in the exponential and stationary phases of growth, respectively (Schwarz et al., 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Schwarz et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "794de54b-dafb-41d9-8c21-c58d77b70d85",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C32",
+      "claim": "L,D-transpeptidases responsible for the formation of 3\u21923 cross-links in various bacterial species have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, we have identified the L,D-transpeptidases (Ldt) responsible for the formation of 3\u21923 cross-links in various bacterial species and shown that these enzymes are structurally unrelated to PBPs (Mainardi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mainardi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "1eecc542-dff2-4e86-85fb-92597167bacd",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C33",
+      "claim": "L,D-transpeptidases are structurally unrelated to PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, we have identified the L,D-transpeptidases (Ldt) responsible for the formation of 3\u21923 cross-links in various bacterial species and shown that these enzymes are structurally unrelated to PBPs (Mainardi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mainardi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "260538b8-b456-44aa-bdfb-3e3184cb4f5f",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C34",
+      "claim": "The chromosome of E. coli encodes five L,D-transpeptidases with distinct functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene deletion and complementation analyses have indicated that the chromosome of E. coli encodes five L,D-transpeptidases with distinct functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene deletion and complementation analyses cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "e0d44a3c-6e33-4e1d-b2b1-437b097f0e04",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C35",
+      "claim": "Two L,D-transpeptidase paralogues (YcbB and YnhG) form the DAP3\u2192DAP3 peptidoglycan cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "Two paralogues form the DAP3\u2192DAP3 peptidoglycan cross-links (YcbB and YnhG) (Magnet et al., 2008), whereas the three remaining paralogues anchor the Braun lipoprotein to peptidoglycan (YbiS, ErfK, and YcfS) (Magnet et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Magnet et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "bbb4ef08-71b7-41b8-87f9-59032915c494",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C36",
+      "claim": "Three L,D-transpeptidase paralogues (YbiS, ErfK, and YcfS) anchor the Braun lipoprotein to peptidoglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "Two paralogues form the DAP3\u2192DAP3 peptidoglycan cross-links (YcbB and YnhG) (Magnet et al., 2008), whereas the three remaining paralogues anchor the Braun lipoprotein to peptidoglycan (YbiS, ErfK, and YcfS) (Magnet et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Magnet et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "4e534343-00f1-48f8-82db-a3bea8f4dc10",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C37",
+      "claim": "The L,D-transpeptidase activity of YcbB is able to replace the D,D-transpeptidase activity of all five class A and B PBPs of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the L,D-transpeptidase activity of YcbB, but not that of YnhG, is able to replace the D,D-transpeptidase activity of all five class A and B PBPs of E. coli, leading to \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing resistance in the presence of YcbB and inhibitors of class A and B PBPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ed51e1c9-a4ec-4c1b-b6fe-c1f53a2ab499",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C38",
+      "claim": "The L,D-transpeptidase activity of YnhG is not able to replace the D,D-transpeptidase activity of all five class A and B PBPs of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the L,D-transpeptidase activity of YcbB, but not that of YnhG, is able to replace the D,D-transpeptidase activity of all five class A and B PBPs of E. coli, leading to \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that expression of ynhG did not confer ampicillin resistance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "31cc61db-9f8f-4372-8792-f9359fb00db5",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C39",
+      "claim": "\u03b2-lactams of the penam and cephem classes effectively inactivate D,D-transpeptidases belonging to the PBP family.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2-lactams of the penam and cephem classes, such as ampicillin and ceftriaxone, respectively, effectively inactivate D,D-transpeptidases belonging to the PBP family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "5a6e08c5-e099-42dd-b23e-9b953a78295a",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C40",
+      "claim": "L,D-transpeptidases are slowly acylated by penam and cephem \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L,D-transpeptidases are slowly acylated by these drugs and the resulting acyl-enzymes are unstable (Triboulet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Triboulet et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "60f4e52f-b67d-4ef5-88b2-bd09dd1c6532",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C41",
+      "claim": "Acyl-enzymes formed between L,D-transpeptidases and penam/cephem \u03b2-lactams are unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, L,D-transpeptidases are slowly acylated by these drugs and the resulting acyl-enzymes are unstable (Triboulet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Triboulet et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "3032ad67-9af1-40e3-8bd0-98016b59aa6a",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C42",
+      "claim": "Slow acylation combined with acyl-enzyme hydrolysis results in partial L,D-transpeptidase inhibition by penam and cephem \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "This accounts for L,D-transpeptidase-mediated penam and cephem resistance since slow acylation combined with acyl-enzyme hydrolysis results in partial L,D-transpeptidase inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biochemical properties of L,D-transpeptidases.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "6a81dfa8-2c79-409d-be9b-9b4bb8d7292f",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C43",
+      "claim": "Plasmid pJEH11(ycbB) did not confer ampicillin resistance to strain BW25113\u03944 in the absence of IPTG or in media containing low concentrations of IPTG (up to 50 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmid pJEH11(ycbB) did not confer ampicillin resistance to this host in the absence of IPTG or in media containing low concentrations of this inducer (up to 50 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations of antibiotic susceptibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "1d21f11b-38d0-4834-9610-d51d10dcb0c8",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C44",
+      "claim": "Induction of ycbB expression with IPTG concentrations greater than 50 \u00b5M prevented bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ycbB expression with IPTG concentrations greater than 50 \u00b5M prevented bacterial growth, indicating that high-level production of the L,D-transpeptidase YcbB was toxic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations of bacterial growth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "4303761f-acb1-4e10-86ee-0ddbe05060d5",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C45",
+      "claim": "High-level production of the L,D-transpeptidase YcbB is toxic to E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of ycbB expression with IPTG concentrations greater than 50 \u00b5M prevented bacterial growth, indicating that high-level production of the L,D-transpeptidase YcbB was toxic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that high IPTG concentrations prevented growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "09e7c69b-715d-49e8-b09a-0c2e27553dc1",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C46",
+      "claim": "Mutant M1 harbors two mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic analyses showed that mutant M1 harbors two mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d71e72ff-bb98-445b-a5bc-6a5fec3417e4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C47",
+      "claim": "Mutant M1 displays IPTG-inducible resistance to ampicillin and ceftriaxone.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection for ampicillin resistance (32 \u00b5g/ml) in the presence of IPTG (500 \u00b5M) yielded mutant M1, which was not inhibited by 500 \u00b5M IPTG and displayed IPTG-inducible resistance to ampicillin and ceftriaxone (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by disk diffusion assay data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "df707dad-81b2-4b88-b6cc-526442253c01",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C48",
+      "claim": "The plasmid-borne mutation in mutant M1 is located in the lacI gene resulting in an Arg127Leu substitution.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing revealed a mutation located in the vector-born lacI gene resulting in an Arg127Leu substitution in the inducer binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DNA sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "8f28ec19-845c-4ca5-9711-4b4d7bfb1a38",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C49",
+      "claim": "The plasmid-borne lacI mutation abolished YcbB toxicity by decreasing the level of ycbB transcription in inducing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the plasmid-borne mutation abolished YcbB toxicity by decreasing the level of ycbB transcription in inducing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that the mutation in lacI reduced toxicity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b2871b6f-9828-40de-96df-29e525cd5752",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C50",
+      "claim": "The toxicity associated with high-level production of YcbB may be linked to the putative membrane anchor of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The toxicity associated with high-level production of YcbB may be linked to the putative membrane anchor of the protein as demonstrated for PBP2 in E. coli (Legaree et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on analogy to PBP2, supported by citation to Legaree et al., 2007.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "c113479b-4233-4789-b100-18182e090a8d",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C51",
+      "claim": "A chromosomal mutation is required for ampicillin resistance in addition to the expression of the plasmid copy of ycbB.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that a chromosomal mutation is required for ampicillin resistance in addition to the expression of the plasmid copy of ycbB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic complementation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "9482fa89-380f-4cfe-8722-bb9b0456991e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C52",
+      "claim": "IPTG-inducible expression of ycbB, in combination with the chromosomal mutation, confers broad-spectrum resistance to \u03b2-lactams, with the exception of carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing a large panel of \u03b2-lactams using the disk diffusion assay indicated that IPTG-inducible expression of ycbB, in combination with the chromosomal mutation, confers broad-spectrum resistance to \u03b2-lactams, with the exception of carbapenems (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by disk diffusion assay data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "7e62b095-cbe3-47bf-b586-d541ef3c9eb5",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C53",
+      "claim": "In the presence of ampicillin, all cross-links in mutant M1 peptidoglycan were of the 3\u21923 type.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ampicillin, the D,D-transpeptidase activity of the PBPs was inhibited, and all cross-links were of the 3\u21923 type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on mass spectrometry analysis of peptidoglycan fragments shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "627cacdb-12a1-463d-93b5-28e9784313cc",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C54",
+      "claim": "YcbB is sufficient for peptidoglycan cross-linking in the absence of the D,D-transpeptidase activity of the PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that YcbB is sufficient for peptidoglycan cross-linking in the absence of the D,D-transpeptidase activity of the PBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the observation that all cross-links were 3\u21923 type in the presence of ampicillin.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2fdbf570-a433-45ff-9296-5c22be532e89",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C55",
+      "claim": "Incubation of YcbB with a disaccharide-tetrapeptide resulted in the formation of a peptidoglycan dimer containing a DAP3\u2192DAP3 cross-link.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of YcbB with a disaccharide-tetrapeptide prepared from the peptidoglycan of E. coli resulted in the formation of a peptidoglycan dimer containing a DAP3\u2192DAP3 cross-link (Figures 5 and 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro enzyme assay data shown in Figures 5 and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "8b7e48aa-0461-4ce1-afe7-be13481337c5",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C56",
+      "claim": "Purified YcbB displays L,D-carboxypeptidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified YcbB also displayed L,D-carboxypeptidase activity as the enzyme removed the C-terminal residue (D-Ala4) from the tetrapeptide stem (Figures 5 and 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro enzyme assay data shown in Figures 5 and 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "cece3eb1-2554-4f82-9d2f-a02b4516e2b9",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C57",
+      "claim": "YcbB is a bona fide L,D-transpeptidase.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that YcbB is a bona fide L,D-transpeptidase, which directly accounts for the synthesis of DAP3\u2192DAP3 cross-links in mutant M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on in vitro enzyme activity data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d6a703f8-5575-42da-b12f-dac211dffa84",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C58",
+      "claim": "Incubation of YcbB with meropenem and imipenem led to full and irreversible acylation of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of YcbB with representatives of the \u03b2-lactams belonging to the carbapenem class, i.e. meropenem and imipenem, led to full and irreversible acylation of the protein, as detected by mass spectrometry (Figures 6B and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry data shown in Figures 6B and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "584e38ea-a0f4-4601-9401-e26ce994a343",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C59",
+      "claim": "Adducts resulting from acylation of YcbB by \u03b2-lactams of the penam and cephem classes were prone to hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, adducts resulting from acylation of YcbB by \u03b2-lactams of the penam and cephem classes were prone to hydrolysis (data no shown), as previously described for Ldtfm from E. faecium (Triboulet et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations and citation to Triboulet et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "0dd12ba3-ac54-49a2-8dd1-ab20ad4b76c0",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C60",
+      "claim": "The inhibition profile of purified YcbB accounts for broad-spectrum resistance to all \u03b2-lactams except carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the inhibition profile of purified YcbB accounts for broad-spectrum resistance to all \u03b2-lactams except carbapenems (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro enzyme inhibition data and susceptibility testing shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b623bc4b-a597-421a-99a0-b089a175c3a8",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C61",
+      "claim": "Purified YcbB used as the acyl donor a disaccharide-tetrapeptide ending in D-Ala4, but not a disaccharide-pentapeptide ending in D-Ala4-D-Ala5.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified YcbB used as the acyl donor a disaccharide-tetrapeptide ending in D-Ala4, but not a disaccharide-pentapeptide ending in D-Ala4-D-Ala5 (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro enzyme assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "de73aef5-3f68-4136-9990-314af5600dba",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C62",
+      "claim": "The D,D-carboxypeptidase activity of PBP5 is essential for YcbB-mediated \u03b2-lactam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the D,D-carboxypeptidase PBP5 was essential for YcbB-mediated \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic deletion and complementation experiments shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "e08c0fa8-b829-4d85-8323-6ed7e11ba082",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C63",
+      "claim": "Independent deletions of dacB, dacC, and dacD had no impact on the frequency of selection of ceftriaxone-resistant mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, independent deletions of dacB, dacC, and dacD encoding PBP4, PBP6, and PBP6b, respectively, had no impact on the frequency of selection of ceftriaxone-resistant mutants (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic deletion experiments shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "39fb2698-3e71-4442-8ae7-963f72b0ce69",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C64",
+      "claim": "The D,D-carboxypeptidase activity of PBP5 is necessary and sufficient to generate the essential tetrapeptide-containing substrate of YcbB.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the D,D-carboxypeptidase activity of PBP5 is necessary and sufficient to generate the essential tetrapeptide-containing substrate of YcbB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic deletion and complementation experiments in strain CS801-4 shown in Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b82c8090-e625-463b-b1ce-503ec70effa6",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C65",
+      "claim": "PBP5 is only inhibited by high concentrations of \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "It is of note that PBP5 is only inhibited by high concentrations of \u03b2-lactams (Curtis et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Curtis et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "6c1b3358-f7ac-4b93-a39a-70fb4ccb3df0",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C66",
+      "claim": "PBP1b is an essential partner of YcbB for peptidoglycan polymerization in the presence of \u03b2-lactams.",
+      "claim_type": "EXPLICIT",
+      "source": "Ceftriaxone-resistant mutants were obtained with the mrcA, pbpC, and mgtA mutants, but not with the mrcB mutant, indicating that PBP1b is an essential partner of YcbB for peptidoglycan polymerization in the presence of \u03b2-lactams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic deletion experiments shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "87ce4831-d452-407b-94fb-9508326017ed",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C67",
+      "claim": "The glycosyltransferase activity of PBP1b, but not its D,D-transpeptidase activity, is required for YcbB-mediated \u03b2-lactam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Selection of ceftriaxone-resistant mutants was obtained in both cases. Thus, the glycosyltransferase activity of PBP1b, but not its D,D-transpeptidase activity, is required for YcbB-mediated \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments with PBP1b S510A mutant shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ec041386-1897-45e9-b468-e35a65ddabaf",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C68",
+      "claim": "The glycosyltransferase activity of PBP1b is necessary and sufficient for glycan-chain elongation when YcbB is the only functional cross-linking enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the glycosyltransferase activity of PBP1b is necessary and sufficient for glycan-chain elongation when YcbB is the only functional cross-linking enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments with strain BW25113\u03944GT lacking all glycosyltransferase genes except mrcB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b1cd02e7-5d7c-4692-ba55-6b90fc3c7240",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C69",
+      "claim": "LpoB is essential for the participation of PBP1b in glycan-chain elongation in the context of peptidoglycan cross-linking by YcbB.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, ampicillin-resistant mutants were only obtained with the lpoA mutant (Table 2), indicating that LpoB is essential for the participation of PBP1b in glycan-chain elongation in the context of peptidoglycan cross-linking by YcbB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on genetic deletion experiments shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f594a57c-beed-409d-823e-76d60b853d64",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C70",
+      "claim": "E. coli produces two class B PBPs, PBP2 and PBP3, which are essential.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli produces two class B PBPs, PBP2 and PBP3, which are essential and specifically inhibited by mecillinam (Spratt, 1977; Vinella et al., 1993) and aztreonam (Georgopapadakou et al., 1982), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "9deca1a6-37b6-4f53-9338-4f6b3954e2f6",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C71",
+      "claim": "PBP2 is specifically inhibited by mecillinam.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli produces two class B PBPs, PBP2 and PBP3, which are essential and specifically inhibited by mecillinam (Spratt, 1977; Vinella et al., 1993) and aztreonam (Georgopapadakou et al., 1982), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "adb8675e-db1a-461b-88f5-9ca10ec55ad2",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C72",
+      "claim": "PBP3 is specifically inhibited by aztreonam.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli produces two class B PBPs, PBP2 and PBP3, which are essential and specifically inhibited by mecillinam (Spratt, 1977; Vinella et al., 1993) and aztreonam (Georgopapadakou et al., 1982), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "389210d4-13d6-483e-88e7-afba4aaf58cf",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C73",
+      "claim": "Mutant M1 was resistant to mecillinam and aztreonam in the presence of IPTG.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of IPTG, mutant M1 was resistant to mecillinam and aztreonam, indicating that inhibition of the D,D-transpeptidase module of the class B PBPs did not impair YcbB-mediated ampicillin resistance (Table 1 and data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on antibiotic susceptibility testing shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "63765128-b66f-45d6-8857-691c8dad1d83",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C74",
+      "claim": "Inhibition of the D,D-transpeptidase module of the class B PBPs did not impair YcbB-mediated ampicillin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of IPTG, mutant M1 was resistant to mecillinam and aztreonam, indicating that inhibition of the D,D-transpeptidase module of the class B PBPs did not impair YcbB-mediated ampicillin resistance (Table 1 and data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the resistance to mecillinam and aztreonam.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2c7bf856-bb70-4df7-b7fa-bfd583d1736f",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C75",
+      "claim": "M1 was resistant to mecillinam in the absence of IPTG.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, M1 was resistant to mecillinam in the absence of IPTG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on antibiotic susceptibility testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "85e3b8ac-f0c1-4f80-9e6a-400b781cec17",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C76",
+      "claim": "Resistance to mecillinam in M1cured was mediated by a chromosomal mutation independently from YcbB production.",
+      "claim_type": "EXPLICIT",
+      "source": "M1cured was also resistant to mecillinam, indicating that resistance to this antibiotic was mediated by a chromosomal mutation independently from YcbB production (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on antibiotic susceptibility testing of M1cured shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "16bb0cc8-b6e6-4d78-9993-0b19026e6e08",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C77",
+      "claim": "Acquisition of a mutation conferring mecillinam resistance is necessary and sufficient for YcbB-mediated ampicillin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that acquisition of a mutation conferring mecillinam resistance is necessary and sufficient for YcbB-mediated ampicillin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of independently selected mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "fd492b7a-642a-4386-8990-dc8ecb1a1fc8",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C78",
+      "claim": "Only a portion of the mutations conferring mecillinam resistance enabled YcbB-mediated ampicillin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only a portion of the mutations conferring mecillinam resistance enabled YcbB-mediated ampicillin resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of independently selected mutants showing that 4 of 7 mecillinam-resistant mutants did not display ampicillin resistance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "eac45803-c5c3-47f8-bc22-92bd33381103",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C79",
+      "claim": "Mutants M1 to M7 each harbored a single mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole genome sequencing revealed that mutants M1 to M7 each harbored a single mutation (Table 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "96bc36e3-d3c6-45b3-a4f0-f54c2d043596",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C80",
+      "claim": "A single mutation is responsible for mecillinam resistance in the absence of YcbB and for YcbB-mediated broad-spectrum \u03b2-lactam resistance upon ycbB induction by IPTG.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation confirms that a single mutation is responsible for mecillinam resistance in the absence of YcbB and for YcbB-mediated broad-spectrum \u03b2-lactam resistance upon ycbB induction by IPTG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the whole genome sequencing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b8369d5c-43d4-4934-b9d2-d900d5bf5deb",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C81",
+      "claim": "Mutant M1 harbored a 13-bp deletion located in an untranslated region upstream from the isoleucine-tRNA synthetase (IleRS) gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant M1 harbored a 13-bp deletion located in an untranslated region upstream from the isoleucine-tRNA synthetase (IleRS) gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "43e79ce7-2a46-4361-aa4b-dc1abe9cc6ee",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C82",
+      "claim": "Mutants M2 to M7 harbored missense mutations in genes encoding ArgRS, ThrRS, GluRS, and AspRS.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining mutants (M2 to M7) harbored missense mutations in genes encoding ArgRS, ThrRS, GluRS, and AspRS, with two distinct substitutions for the latter two enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on whole genome sequencing data shown in Table 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "80020ed8-321b-4e38-ada3-408a9f6ecead",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C83",
+      "claim": "The deletion in M1 most probably impairs translation of IleRS since it ends 5 nucleotides upstream from the ATG codon and includes the ribosome binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion present in M1 most probably impairs translation of IleRS since it ends 5 nucleotides upstream from the ATG codon and includes the ribosome binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the location of the deletion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f1a1dc77-eefd-47c2-b1cb-218301120878",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C84",
+      "claim": "The mutation in M1 impairs aminoacylation of tRNAIle, a defect known to result in activation of (p)ppGpp synthesis by RelA in response to ribosomal stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mutation present in M1 impaired aminoacylation of tRNAIle, a defect known to result in activation of (p)ppGpp synthesis by RelA in response to ribosomal stalling, following occupancy of the ribosome acceptor site by uncharged tRNAs (Hauryliuk et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutation's effect and supported by citation to Hauryliuk et al., 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "91d74ae4-a1bb-4680-8105-3def7c0b985d",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C85",
+      "claim": "Missense mutations in the aminoacyl-tRNA synthetase genes of mutants M2 to M7 likely result in activation of (p)ppGpp synthesis by RelA.",
+      "claim_type": "EXPLICIT",
+      "source": "The same conclusion is also likely to apply to missense mutations in the aminoacyl-tRNA synthetase genes of mutants M2 to M7, although we cannot exclude the possibility that the corresponding amino acid substitutions altered other properties of the proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on analogy to M1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b271fe7d-6a21-4170-8e89-d82ff9b022d4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C86",
+      "claim": "YcbB production and increased (p)ppGpp synthesis are both required for bypass of the D,D-transpeptidase activity of PBPs and broad-spectrum \u03b2-lactam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that YcbB production and increased (p)ppGpp synthesis are both required for bypass of the D,D-transpeptidase activity of PBPs and broad-spectrum \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments with inducible expression of YcbB and RelA 1-455 shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "15be1a8f-0ed2-4565-97ff-b26253b912f3",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C87",
+      "claim": "Production of (p)ppGpp by RelA 1\u2013455 recapitulates the phenotype conferred by mutations in the aminoacyl-tRNA synthetase genes of mutants M1 to M7.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of (p)ppGpp by RelA 1\u2013455 recapitulates the phenotype conferred by mutations in the aminoacyl-tRNA synthetase genes of mutants M1 to M7, in agreement with their proposed role in the activation of (p)ppGpp synthesis by RelA in response to binding of uncharged tRNAs to the ribosome acceptor site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments with inducible expression of RelA 1-455 shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "bcd09bcc-57d7-49a5-a2f9-e2f40d9c9d1c",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C88",
+      "claim": "Intense labeling with NADA was detected at mid-cell indicating that YcbB and its tetrapeptide substrate are co-localized in the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 9, intense labeling was detected at mid-cell indicating that YcbB and its tetrapeptide substrate are co-localized in the septum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fluorescence microscopy data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2b9de9e5-cad0-44ab-9edb-87a891797793",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C89",
+      "claim": "Labeling with NADA was inhibited by meropenem, which inactivates YcbB and PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As controls, we also showed that labeling was inhibited by meropenem, which inactivates YcbB and PBPs, but not by ampicillin, which only inactivates PBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "af8d5664-e298-4033-9ed7-6a03aeb564fe",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C90",
+      "claim": "Labeling with NADA was not inhibited by ampicillin, which only inactivates PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "As controls, we also showed that labeling was inhibited by meropenem, which inactivates YcbB and PBPs, but not by ampicillin, which only inactivates PBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on fluorescence microscopy data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "54a391c5-98a1-4871-a632-dcc40df90ceb",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C91",
+      "claim": "E. coli can resist \u03b2-lactams through bypass of the D,D-transpeptidase activity of high-molecular-weight PBPs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that E. coli can also resist \u03b2-lactams through bypass of the D,D-transpeptidase activity of high-molecular-weight PBPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "c3d00b48-2aa7-48b3-bb4e-882c7fc9bc12",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C92",
+      "claim": "The resistance mechanism required production of the L,D-transpeptidase YcbB, which was purified and shown to catalyze the formation of peptidoglycan cross-links in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The resistance mechanism required production of the L,D-transpeptidase YcbB, which was purified and shown to catalyze the formation of peptidoglycan cross-links in vitro (Figure 6A) and to be inactivated only by carbapenems (Figure 6B), accounting for broad-spectrum resistance to other classes of \u03b2-lactams (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on in vitro enzyme assays shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "b3f9ad50-3e55-4282-bfa0-afe23fad651e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C93",
+      "claim": "YcbB is inactivated only by carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "The resistance mechanism required production of the L,D-transpeptidase YcbB, which was purified and shown to catalyze the formation of peptidoglycan cross-links in vitro (Figure 6A) and to be inactivated only by carbapenems (Figure 6B), accounting for broad-spectrum resistance to other classes of \u03b2-lactams (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "351cb69b-3736-4bc8-8cfe-1c20c628564d",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C94",
+      "claim": "In wild-type strains, lateral expansion of the peptidoglycan network and the formation of the septum involve two protein complexes, the elongasome and the divisome.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type strains, lateral expansion of the peptidoglycan network and the formation of the septum involve two protein complexes, the elongasome and the divisome, respectively, which integrate distinct sets of peptidoglycan polymerases with partially overlapping functions (den Blaauwen et al., 2008) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by citation to den Blaauwen et al., 2008.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "cbbef30d-9443-4ea8-b0cb-0c4dc07c4396",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C95",
+      "claim": "The L,D-transpeptidase activity of YcbB is sufficient for peptidoglycan cross-linking in mutant M1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the L,D-transpeptidase activity of YcbB is sufficient for peptidoglycan cross-linking in mutant M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the exclusive detection of DAP3\u2192DAP3 cross-links in the presence of ampicillin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "0b65cf0c-b019-4451-98c0-a5303acfe3a9",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C96",
+      "claim": "In wild-type strains, glycan chains are polymerized by either PBP1a or PBP1b.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type strains, glycan chains are polymerized by either PBP1a or PBP1b, although the former is preferentially associated with the elongasome and the latter with the divisome (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to den Blaauwen et al., 2008.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "627b0042-479a-4056-9f85-bffaa5034456",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C97",
+      "claim": "PBP1a is preferentially associated with the elongasome.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type strains, glycan chains are polymerized by either PBP1a or PBP1b, although the former is preferentially associated with the elongasome and the latter with the divisome (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to den Blaauwen et al., 2008.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "46bf40d6-009e-4a34-be95-97b77d04b6cb",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C98",
+      "claim": "PBP1b is preferentially associated with the divisome.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type strains, glycan chains are polymerized by either PBP1a or PBP1b, although the former is preferentially associated with the elongasome and the latter with the divisome (den Blaauwen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to den Blaauwen et al., 2008.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "fa151712-9d2f-4346-a72e-f7a08fce28f2",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C99",
+      "claim": "PBP1b, together with its cognate lipoprotein LpoB, are both essential and sufficient for peptidoglycan polymerization in mutant M1 exposed to ampicillin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PBP1b, together with its cognate lipoprotein LpoB, are both essential and sufficient for peptidoglycan polymerization in mutant M1 exposed to ampicillin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genetic deletion and complementation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2debbff0-b227-4cb2-b7da-16aaff49f4be",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C100",
+      "claim": "YcbB activity is preferentially located in the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan labeling with a fluorescent D-amino acid indicated that YcbB activity is preferentially located in the septum, as is its PBP1b partner (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on fluorescence microscopy data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "cd28ad16-89db-4c3f-b532-1599075d359a",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C101",
+      "claim": "The cross-linking and glycosyltransferase activities of YcbB and PBP1b were sufficient for lateral extension of the peptidoglycan network since bacterial cells retained a rod shape in the presence of ampicillin.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-linking and glycosyltransferase activities of YcbB and PBP1b were nonetheless sufficient for lateral extension of the peptidoglycan network since bacterial cells retained a rod shape in the presence of ampicillin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microscopic observation of cell morphology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "971c2948-b45a-4bda-9bb6-b3e0e66ce0bb",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C102",
+      "claim": "The cross-linking activity of high-molecular-weight PBPs is not indispensable to the maintenance of cell shape in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the cross-linking activity of high-molecular-weight PBPs is not indispensable to the maintenance of cell shape in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that cells retained rod shape with only YcbB-mediated cross-linking.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "113dd822-5e29-4530-a3af-90f588afd449",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C103",
+      "claim": "A minimum set of enzyme activities necessary and sufficient for peptidoglycan polymerization in the presence of \u03b2-lactams comprises the L,D-transpeptidase activity of YcbB, the glycosyltransferase activity of PBP1b, and the D,D-carboxypeptidase activity of PBP5.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data identified a minimum set of enzyme activities that are necessary and sufficient for peptidoglycan polymerization in the presence of \u03b2-lactams (Figure 10). This set comprises the L,D-transpeptidase activity of YcbB, the glycosyltransferase activity of PBP1b, and the D,D-carboxypeptidase activity of PBP5, which provides the essential tetrapeptide substrate of YcbB.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the combined results of genetic deletion and complementation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "78454838-f3b2-4799-b2ef-4300819b2236",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C104",
+      "claim": "LpoB directly stimulates the glycosyltransferase activity of PBP1b.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the fact that LpoB remains essential in the L,D-transpeptidation context indicates that it directly stimulates the glycosyltransferase activity of PBP1b, as indicated in a recent study (Markovski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the essentiality of LpoB and supported by citation to Markovski et al., 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "02ec6799-31d1-482a-b3c5-a033ed101a15",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C105",
+      "claim": "Increased synthesis of the alarmone (p)ppGpp by RelA was required for broad-spectrum \u03b2-lactam resistance in addition to YcbB production.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to YcbB production, increased synthesis of the alarmone (p)ppGpp by RelA was required for broad-spectrum \u03b2-lactam resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experiments with inducible expression of RelA 1-455 shown in Figure 8 and Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "613fae63-850f-4b25-9096-e9286d7551c2",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C106",
+      "claim": "PBP2 is not indispensable in E. coli when (p)ppGpp synthesis is increased, leading to mecillinam resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior analyses also showed that PBP2 is not indispensable in E. coli when (p)ppGpp synthesis is increased, leading to mecillinam resistance (Vinella et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Vinella et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "89cd644b-f151-460e-b120-8e06bc437ad2",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C107",
+      "claim": "Increased (p)ppGpp synthesis regulates growth rate and several different stress responses, including the response to exposure to antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Aside from mecillinam resistance, increased (p)ppGpp synthesis has also been shown to regulate growth rate and several different stress responses, including the response to exposure to antibiotics (Hauryliuk et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Hauryliuk et al., 2015.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "eec6dab1-eb7d-4f1d-82fa-f44ca2c510fb",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C108",
+      "claim": "Tolerance to ampicillin mediated by increased (p)ppGpp synthesis leads to a 1000-fold reduction in bacterial killing.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, tolerance to ampicillin mediated by increased (p)ppGpp synthesis leads to a 1000-fold reduction in bacterial killing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "77975272-6733-4190-809f-f47d6ba9516d",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C109",
+      "claim": "The cascade triggered by elevated (p)ppGpp involves an increase in the intracellular concentration of polyphosphate via inhibition of the exopolyphosphatase PPX.",
+      "claim_type": "EXPLICIT",
+      "source": "The cascade triggered by elevated (p)ppGpp involves an increase in the intracellular concentration of polyphosphate via inhibition of the exopolyphosphatase PPX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f6564a86-9e59-4cd3-8087-1512b08818a1",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C110",
+      "claim": "Elevated polyphosphate stimulates the protease activity of Lon, which degrades antitoxins, thereby activating the toxins that prevent bacterial killing through inhibition of translation and bacterial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, elevated polyphosphate stimulates the protease activity of Lon, which degrades antitoxins, thereby activating the toxins that prevent bacterial killing through inhibition of translation and bacterial growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d5bc5f4b-94d6-4c65-9a3f-3d9c0894d835",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C111",
+      "claim": "Persistence emerges from stochastic events that render a limited number of bacterial cells transiently tolerant to multiple families of antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistence emerges from stochastic events that render a limited number of bacterial cells transiently tolerant to multiple families of antibiotics, whereas YcbB in combination with elevated (p)ppGpp rendered the bulk of the population resistant only to \u03b2-lactams that did not inactivate the L,D-transpeptidase activity of YcbB (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge contrasted with the findings of this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "683b1a44-d545-489b-a543-34f21f87d5a8",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C112",
+      "claim": "YcbB in combination with elevated (p)ppGpp rendered the bulk of the population resistant only to \u03b2-lactams that did not inactivate the L,D-transpeptidase activity of YcbB.",
+      "claim_type": "EXPLICIT",
+      "source": "Persistence emerges from stochastic events that render a limited number of bacterial cells transiently tolerant to multiple families of antibiotics, whereas YcbB in combination with elevated (p)ppGpp rendered the bulk of the population resistant only to \u03b2-lactams that did not inactivate the L,D-transpeptidase activity of YcbB (Table 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on MIC determinations shown in Table 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "91c96a17-3a3e-482b-9d37-a2fd77a46851",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C113",
+      "claim": "Plasmids pKT2(ycbB) and pKT8(relA 1\u2013455) conferred ampicillin and ceftriaxone resistance to mutants from the Keio collection deficient in production of the Lon protease and the polyphosphate kinase PPK.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, plasmids pKT2(ycbB) and pKT8(relA 1\u2013455) conferred ampicillin and ceftriaxone resistance to mutants from the Keio collection deficient in production of the Lon protease and the polyphosphate kinase PPK (data not shown) indicating that tolerance and resistance do not involve the same (p)ppGpp-regulated circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data (not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d642734b-5bb9-4484-9630-7123b0f6985c",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "claim_id": "C114",
+      "claim": "Tolerance and resistance do not involve the same (p)ppGpp-regulated circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, plasmids pKT2(ycbB) and pKT8(relA 1\u2013455) conferred ampicillin and ceftriaxone resistance to mutants from the Keio collection deficient in production of the Lon protease and the polyphosphate kinase PPK (data not shown) indicating that tolerance and resistance do not involve the same (p)ppGpp-regulated circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that resistance occurred in Lon and PPK mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "30e9721c-2dda-47ad-ace0-94683a966a3a",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Historical detection of 3\u21923 cross-links in E. coli peptidoglycan was established over four decades ago, accounting for 3% and 10% of cross-links in exponential and stationary phases respectively, though no phenotype was previously associated with their synthesis and the responsible enzymes were initially unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C28-C31 are well-supported by citations to historical work (Schwarz et al., 1969) and represent established knowledge in the field. These background claims provide appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ea568935-164d-4b68-bd83-2be2b245d934",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "YcbB production combined with elevated (p)ppGpp synthesis by RelA enables complete bypass of D,D-transpeptidase activity of PBPs, conferring broad-spectrum \u03b2-lactam resistance (except carbapenems) and switching (p)ppGpp's role from tolerance to high-level resistance. YcbB, but not YnhG, can replace all five class A and B PBPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C37-C38, C52, C86-C87, C91 are strongly supported by multiple experimental approaches including genetic analyses (Tables 1, 2, 5), peptidoglycan structure analysis (Figures 3-4), antibiotic susceptibility testing, and inducible expression systems (Figure 8). The specificity for YcbB over YnhG is demonstrated experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A minimal enzyme set necessary and sufficient for peptidoglycan polymerization during YcbB-mediated resistance comprises: the L,D-transpeptidase activity of YcbB, the glycosyltransferase activity of PBP1b, and the D,D-carboxypeptidase activity of PBP5 (DacA). PBP5 generates the essential tetrapeptide substrate for YcbB, while other class C PBPs (PBP4, PBP6, PBP6b) are dispensable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C61-C64, C103 are well-supported by systematic genetic deletion and complementation experiments (Tables 2-3), in vitro enzyme assays showing substrate specificity (Figure 6A), and mass spectrometry analysis. The necessity and sufficiency of each component is rigorously demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ee5f5c22-88dc-4e98-b4ad-ed7ec51b5b50",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Purified YcbB catalyzes formation of peptidoglycan cross-links in vitro, displaying both L,D-transpeptidase activity (forming DAP3\u2192DAP3 cross-links) and L,D-carboxypeptidase activity (removing C-terminal D-Ala4 from tetrapeptide stems).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C92 are directly supported by in vitro enzyme assays with purified YcbB and mass spectrometry analysis of reaction products (Figures 5, 6A). The dual enzymatic activities are clearly demonstrated with appropriate substrate specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "13612be5-3cb4-43b5-ac54-ba047531b642",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "YcbB is irreversibly inactivated only by carbapenems (meropenem, imipenem), while acyl-enzymes formed with penam and cephem \u03b2-lactams are unstable and prone to hydrolysis, accounting for broad-spectrum resistance to non-carbapenem \u03b2-lactams.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C93 are supported by mass spectrometry analysis of drug-enzyme adducts (Figures 6B, 7) and correlation with susceptibility data (Table 1). The differential stability of acyl-enzymes provides a clear mechanistic explanation for the resistance pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PBP1b and its cognate lipoprotein LpoB are essential and sufficient for peptidoglycan polymerization in YcbB-mediated resistance. The glycosyltransferase activity of PBP1b, but not its D,D-transpeptidase activity, is required, as demonstrated by site-directed mutagenesis (S510A) and systematic deletion studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69, C99 are well-supported by genetic deletion experiments (Table 2), site-directed mutagenesis of PBP1b catalytic residues, and complementation studies in strains lacking all glycosyltransferases except mrcB. The essentiality of LpoB confirms its direct role in stimulating glycosyltransferase activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "9119a1cf-ac16-41f1-a9e7-9d8274b4a69b",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In the presence of ampicillin, all peptidoglycan cross-links in mutant M1 are of the 3\u21923 type, demonstrating that YcbB is sufficient for peptidoglycan cross-linking in the absence of D,D-transpeptidase activity of PBPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C95 are supported by comprehensive mass spectrometry analysis of peptidoglycan fragments (Figures 3-4) showing exclusive 3\u21923 cross-links when PBPs are inhibited by ampicillin. This provides direct structural evidence for complete bypass.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Acquisition of a chromosomal mutation conferring mecillinam resistance (targeting PBP2) is necessary and sufficient for YcbB-mediated ampicillin resistance, though only a subset of mecillinam-resistance mutations enable YcbB-mediated broad-spectrum resistance. M1 displays mecillinam resistance independently of YcbB production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 are supported by antibiotic susceptibility testing (Table 1), analysis of independently selected mutants, and genetic complementation experiments. The data show that 4 of 7 mecillinam-resistant mutants did not display ampicillin resistance, indicating specificity in the required mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Whole genome sequencing revealed that mutants M1-M7 each harbor a single mutation in aminoacyl-tRNA synthetase genes (IleRS, ArgRS, ThrRS, GluRS, AspRS) or their regulatory regions. These mutations likely impair aminoacylation of cognate tRNAs, leading to activation of (p)ppGpp synthesis by RelA in response to ribosomal stalling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 are supported by whole genome sequencing data (Table 4) and mechanistic inference based on established knowledge of RelA activation (citation to Hauryliuk et al., 2015). The M1 deletion includes the ribosome binding site, providing strong evidence for impaired translation. However, C85 acknowledges uncertainty about whether missense mutations in M2-M7 affect other protein properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "79da9045-b29f-4f7d-a123-56998149d8d4",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "YcbB activity is preferentially localized in the septum, as demonstrated by intense mid-cell labeling with the fluorescent D-amino acid NADA. Labeling is inhibited by meropenem (which inactivates both YcbB and PBPs) but not by ampicillin (which only inactivates PBPs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90, C100 are supported by fluorescence microscopy data (Figure 9) with appropriate controls. The differential inhibition by meropenem vs. ampicillin confirms that the labeling specifically reports YcbB activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "9c4963c3-f8be-4fe4-998b-a81adacb6c98",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The cross-linking and glycosyltransferase activities of YcbB and PBP1b are sufficient for lateral extension of the peptidoglycan network, as bacterial cells retain rod shape in the presence of ampicillin, indicating that the cross-linking activity of high-molecular-weight PBPs is not indispensable for maintaining cell shape in E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 are supported by microscopic observation of cell morphology showing maintained rod shape despite inhibition of PBP D,D-transpeptidase activity. This is an important inference about the non-essentiality of PBP cross-linking for shape maintenance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "High-level YcbB production is toxic to E. coli, preventing growth at IPTG concentrations >50 \u00b5M. Mutant M1 harbors two mutations: a plasmid-borne lacI mutation (Arg127Leu) that reduces toxicity by decreasing ycbB transcription, and a chromosomal mutation required for ampicillin resistance. The toxicity may be linked to YcbB's putative membrane anchor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 are supported by experimental observations of growth inhibition, genetic sequencing, and complementation experiments. C50 is appropriately qualified as speculation based on analogy to PBP2 (citation to Legaree et al., 2007).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "f56b9978-09cf-49a6-94fc-d9bd472ce071",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Increased (p)ppGpp synthesis by RelA is required for YcbB-mediated broad-spectrum \u03b2-lactam resistance, distinct from (p)ppGpp-mediated antibiotic tolerance. Unlike persistence (affecting limited cells transiently tolerant to multiple antibiotics), YcbB plus elevated (p)ppGpp renders the bulk population resistant specifically to \u03b2-lactams not inactivating YcbB. Resistance and tolerance involve different (p)ppGpp-regulated circuits, as resistance occurs in Lon and PPK mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C114 are supported by experiments with inducible RelA 1-455 expression (Figure 8, Table 5), MIC determinations showing population-level resistance, and genetic experiments with Lon/PPK mutants. The distinction between tolerance and resistance mechanisms is well-established through multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "3b56a6bc-85f9-42c9-b927-bfae8f704022",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "LpoB directly stimulates the glycosyltransferase activity of PBP1b, as inferred from its essentiality in the L,D-transpeptidation context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 is supported by the essentiality of LpoB demonstrated in Table 2 and corroborated by recent literature (Markovski et al., 2016). The inference is reasonable given that LpoB remains essential even when PBP1b's transpeptidase activity is dispensable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "2b788611-f9c4-47a4-a500-556240c5f7d5",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on peptidoglycan structure, biosynthesis, and \u03b2-lactam mechanism of action, including: peptidoglycan composition and molecular weight; roles of glycosyltransferases and D,D-transpeptidases; PBP classification and activities; divisome and elongasome complexes; L,D-transpeptidases in E. coli; \u03b2-lactam inhibition mechanisms; and class B PBP functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C27, C32-C36, C39-C42, C70-C72, C94, C96-C98 represent established knowledge in the field, appropriately supported by citations to relevant literature. These provide necessary context for understanding the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    },
+    {
+      "id": "5e82b629-7c2e-47ac-9d3a-ff8cc108e285",
+      "content_id": "77fff058-76d0-4526-baf4-03ca9c4e611b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PBP5 is only inhibited by high concentrations of \u03b2-lactams, accounting for its participation in peptidoglycan synthesis in the presence of \u03b2-lactams and the residual activity of cefoxitin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by citation to Curtis et al., 1979 and provides mechanistic explanation for experimental observations in Table 1 showing partial cefoxitin activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:20:28.632495Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bcd0e849-1943-40e5-b35f-7878abb4921d",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "2a222e13-5eee-4968-ac4b-a936a7d974f4",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "7a9ba809-0d14-4383-89c6-dea41345d3e8",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "af8c8384-ebc6-4a25-aa36-b4e27ddde4a4",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "a88d538a-5323-475a-8665-d4ac04263dfc",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "2d36c268-0f74-4715-b0d4-625c08ca97e7",
+      "result_id": "30e9721c-2dda-47ad-ace0-94683a966a3a"
+    },
+    {
+      "claim_id": "7e3c4fb6-7576-4cf3-8f3d-4f06578cedc1",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "648e8740-4127-4990-8ce5-f46b5c48bae4",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "08fe6807-04a6-4330-a164-2f0454fd9e90",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "4e534343-00f1-48f8-82db-a3bea8f4dc10",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "ed51e1c9-a4ec-4c1b-b6fe-c1f53a2ab499",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "9482fa89-380f-4cfe-8722-bb9b0456991e",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "b271fe7d-6a21-4170-8e89-d82ff9b022d4",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "15be1a8f-0ed2-4565-97ff-b26253b912f3",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "54a391c5-98a1-4871-a632-dcc40df90ceb",
+      "result_id": "ea568935-164d-4b68-bd83-2be2b245d934"
+    },
+    {
+      "claim_id": "1261479f-1080-42a1-8de5-2fcc624d2704",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "934b7435-ce74-4cdd-aec3-fe8c27e9a99e",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "b623bc4b-a597-421a-99a0-b089a175c3a8",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "de73aef5-3f68-4136-9990-314af5600dba",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "e08c0fa8-b829-4d85-8323-6ed7e11ba082",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "39fb2698-3e71-4442-8ae7-963f72b0ce69",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "113dd822-5e29-4530-a3af-90f588afd449",
+      "result_id": "d4ebbb8d-65ab-48c5-85bc-c5e38d395c9e"
+    },
+    {
+      "claim_id": "2fdbf570-a433-45ff-9296-5c22be532e89",
+      "result_id": "ee5f5c22-88dc-4e98-b4ad-ed7ec51b5b50"
+    },
+    {
+      "claim_id": "8b7e48aa-0461-4ce1-afe7-be13481337c5",
+      "result_id": "ee5f5c22-88dc-4e98-b4ad-ed7ec51b5b50"
+    },
+    {
+      "claim_id": "cece3eb1-2554-4f82-9d2f-a02b4516e2b9",
+      "result_id": "ee5f5c22-88dc-4e98-b4ad-ed7ec51b5b50"
+    },
+    {
+      "claim_id": "c3d00b48-2aa7-48b3-bb4e-882c7fc9bc12",
+      "result_id": "ee5f5c22-88dc-4e98-b4ad-ed7ec51b5b50"
+    },
+    {
+      "claim_id": "d6a703f8-5575-42da-b12f-dac211dffa84",
+      "result_id": "13612be5-3cb4-43b5-ac54-ba047531b642"
+    },
+    {
+      "claim_id": "584e38ea-a0f4-4601-9401-e26ce994a343",
+      "result_id": "13612be5-3cb4-43b5-ac54-ba047531b642"
+    },
+    {
+      "claim_id": "0dd12ba3-ac54-49a2-8dd1-ab20ad4b76c0",
+      "result_id": "13612be5-3cb4-43b5-ac54-ba047531b642"
+    },
+    {
+      "claim_id": "b3f9ad50-3e55-4282-bfa0-afe23fad651e",
+      "result_id": "13612be5-3cb4-43b5-ac54-ba047531b642"
+    },
+    {
+      "claim_id": "6c1b3358-f7ac-4b93-a39a-70fb4ccb3df0",
+      "result_id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9"
+    },
+    {
+      "claim_id": "87ce4831-d452-407b-94fb-9508326017ed",
+      "result_id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9"
+    },
+    {
+      "claim_id": "ec041386-1897-45e9-b468-e35a65ddabaf",
+      "result_id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9"
+    },
+    {
+      "claim_id": "b1cd02e7-5d7c-4692-ba55-6b90fc3c7240",
+      "result_id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9"
+    },
+    {
+      "claim_id": "fa151712-9d2f-4346-a72e-f7a08fce28f2",
+      "result_id": "ce7076b3-7cb6-4946-9303-91d2eab8aff9"
+    },
+    {
+      "claim_id": "7e62b095-cbe3-47bf-b586-d541ef3c9eb5",
+      "result_id": "9119a1cf-ac16-41f1-a9e7-9d8274b4a69b"
+    },
+    {
+      "claim_id": "627cacdb-12a1-463d-93b5-28e9784313cc",
+      "result_id": "9119a1cf-ac16-41f1-a9e7-9d8274b4a69b"
+    },
+    {
+      "claim_id": "cbbef30d-9443-4ea8-b0cb-0c4dc07c4396",
+      "result_id": "9119a1cf-ac16-41f1-a9e7-9d8274b4a69b"
+    },
+    {
+      "claim_id": "389210d4-13d6-483e-88e7-afba4aaf58cf",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "63765128-b66f-45d6-8857-691c8dad1d83",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "2c7bf856-bb70-4df7-b7fa-bfd583d1736f",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "85e3b8ac-f0c1-4f80-9e6a-400b781cec17",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "16bb0cc8-b6e6-4d78-9993-0b19026e6e08",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "fd492b7a-642a-4386-8990-dc8ecb1a1fc8",
+      "result_id": "88e56d88-ccee-4a7f-bf24-593eefbf46ef"
+    },
+    {
+      "claim_id": "eac45803-c5c3-47f8-bc22-92bd33381103",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "96bc36e3-d3c6-45b3-a4f0-f54c2d043596",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "b8369d5c-43d4-4934-b9d2-d900d5bf5deb",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "43e79ce7-2a46-4361-aa4b-dc1abe9cc6ee",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "80020ed8-321b-4e38-ada3-408a9f6ecead",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "f1a1dc77-eefd-47c2-b1cb-218301120878",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "91d74ae4-a1bb-4680-8105-3def7c0b985d",
+      "result_id": "2164ae15-df5e-4ab9-b1f0-095d42c2613e"
+    },
+    {
+      "claim_id": "bcd09bcc-57d7-49a5-a2f9-e2f40d9c9d1c",
+      "result_id": "79da9045-b29f-4f7d-a123-56998149d8d4"
+    },
+    {
+      "claim_id": "2b9de9e5-cad0-44ab-9edb-87a891797793",
+      "result_id": "79da9045-b29f-4f7d-a123-56998149d8d4"
+    },
+    {
+      "claim_id": "af8d5664-e298-4033-9ed7-6a03aeb564fe",
+      "result_id": "79da9045-b29f-4f7d-a123-56998149d8d4"
+    },
+    {
+      "claim_id": "2debbff0-b227-4cb2-b7da-16aaff49f4be",
+      "result_id": "79da9045-b29f-4f7d-a123-56998149d8d4"
+    },
+    {
+      "claim_id": "cd28ad16-89db-4c3f-b532-1599075d359a",
+      "result_id": "9c4963c3-f8be-4fe4-998b-a81adacb6c98"
+    },
+    {
+      "claim_id": "971c2948-b45a-4bda-9bb6-b3e0e66ce0bb",
+      "result_id": "9c4963c3-f8be-4fe4-998b-a81adacb6c98"
+    },
+    {
+      "claim_id": "6a81dfa8-2c79-409d-be9b-9b4bb8d7292f",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "1d21f11b-38d0-4834-9610-d51d10dcb0c8",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "4303761f-acb1-4e10-86ee-0ddbe05060d5",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "09e7c69b-715d-49e8-b09a-0c2e27553dc1",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "d71e72ff-bb98-445b-a5bc-6a5fec3417e4",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "df707dad-81b2-4b88-b6cc-526442253c01",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "8f28ec19-845c-4ca5-9711-4b4d7bfb1a38",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "b2871b6f-9828-40de-96df-29e525cd5752",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "c113479b-4233-4789-b100-18182e090a8d",
+      "result_id": "ba1e71c9-eb30-4f43-ad24-9c9d8feeacaf"
+    },
+    {
+      "claim_id": "02ec6799-31d1-482a-b3c5-a033ed101a15",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "613fae63-850f-4b25-9096-e9286d7551c2",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "89cd644b-f151-460e-b120-8e06bc437ad2",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "eec6dab1-eb7d-4f1d-82fa-f44ca2c510fb",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "77975272-6733-4190-809f-f47d6ba9516d",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "f6564a86-9e59-4cd3-8087-1512b08818a1",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "d5bc5f4b-94d6-4c65-9a3f-3d9c0894d835",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "683b1a44-d545-489b-a543-34f21f87d5a8",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "91c96a17-3a3e-482b-9d37-a2fd77a46851",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "d642734b-5bb9-4484-9630-7123b0f6985c",
+      "result_id": "f56b9978-09cf-49a6-94fc-d9bd472ce071"
+    },
+    {
+      "claim_id": "78454838-f3b2-4799-b2ef-4300819b2236",
+      "result_id": "3b56a6bc-85f9-42c9-b927-bfae8f704022"
+    },
+    {
+      "claim_id": "f330d681-dddb-4c88-8d22-7e5fdd078ca1",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "f00e0282-7745-4e6f-9b3e-96476a81cb06",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "9364fa03-544d-4503-84fc-dca50edc74cd",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "d1563a2c-04b4-4411-a1b0-f2ca7e43cb26",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "66975d8f-882f-4e87-8410-e79971b95e1e",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "f5db0a5e-91af-4e05-b14b-5c68bbf9b535",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "bf3fb6da-255e-479f-bf1a-0734280d71fe",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "431915f5-2bac-404b-91c0-267418a2e069",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "932a0bf7-d317-421f-8139-f5c0bde0e4c3",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "a11a7ac7-d094-48d2-9d53-92315dbcf156",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "e5d534ee-47e3-4db7-9eb7-26a514b13812",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "c717df3f-361a-4d3f-8c8c-75d64df0f95f",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "1677ffdc-2eb7-4187-9ab4-106f47810a31",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "ce10f157-67d3-46fa-8188-bf27e06c2d67",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "210d2943-36b2-4da2-99b2-306f3e9bfe6a",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "44f91ba6-3d12-4cf0-8766-12b8d296af58",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "73821d5c-85e0-4042-9492-3f480da9e728",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "e04804e8-c3c6-4ae3-94d4-da2bb6d0e8bd",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "b8992cee-6580-4a62-a174-7777559fdc51",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "bee8e4e9-001f-46c9-b791-d319848b9292",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "794de54b-dafb-41d9-8c21-c58d77b70d85",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "1eecc542-dff2-4e86-85fb-92597167bacd",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "260538b8-b456-44aa-bdfb-3e3184cb4f5f",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "e0d44a3c-6e33-4e1d-b2b1-437b097f0e04",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "bbb4ef08-71b7-41b8-87f9-59032915c494",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "31cc61db-9f8f-4372-8792-f9359fb00db5",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "5a6e08c5-e099-42dd-b23e-9b953a78295a",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "60f4e52f-b67d-4ef5-88b2-bd09dd1c6532",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "3032ad67-9af1-40e3-8bd0-98016b59aa6a",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "f594a57c-beed-409d-823e-76d60b853d64",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "9deca1a6-37b6-4f53-9338-4f6b3954e2f6",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "adb8675e-db1a-461b-88f5-9ca10ec55ad2",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "351cb69b-3736-4bc8-8cfe-1c20c628564d",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "0b65cf0c-b019-4451-98c0-a5303acfe3a9",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "627b0042-479a-4056-9f85-bffaa5034456",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "46bf40d6-009e-4a34-be95-97b77d04b6cb",
+      "result_id": "2b788611-f9c4-47a4-a500-556240c5f7d5"
+    },
+    {
+      "claim_id": "b82c8090-e625-463b-b1ce-503ec70effa6",
+      "result_id": "5e82b629-7c2e-47ac-9d3a-ff8cc108e285"
+    }
+  ],
+  "comparisons": []
+}

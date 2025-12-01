@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors develop a mathematical model where researchers sequentially test a claim until the community reaches sufficient certainty to canonize or reject it. The model assumes constant false positive rate \u03b1 and false negative rate \u03b2, with readers performing Bayesian updating but failing to correct for publication bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C21-C22 establish the core model structure and assumptions. The model is clearly defined with explicit mathematical assumptions about error rates and reader behavior. The framework is internally consistent and provides a foundation for subsequent analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C26",
+      "C27",
+      "C39",
+      "C40"
+    ],
+    "result": "The model demonstrates that true claims are almost always canonized as facts, with negligible risk of rejection even when negative publication rates approach 1. The predominant risk of publication bias is the canonization of false claims, not the rejection of true ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C26, C39-C40 are supported by model results shown in Figures 3 and 7B. The mathematical analysis demonstrates that for true claims, the expected change in log odds of belief is positive under most circumstances, leading to canonization. Claim C27 follows logically from the asymmetric risks demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C56"
+    ],
+    "result": "Unless a sufficient fraction of negative results are published, false claims frequently become canonized as fact. The model shows a threshold effect where false claims are likely canonized below a critical negative publication rate (e.g., ~20% for \u03b1=0.05, \u03b2=0.4 with strong evidentiary standards), and this threshold increases with higher experimental error rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28-C31, C56 are directly supported by model results in Figure 4. The threshold behavior is clearly demonstrated across multiple parameter combinations. The quantitative finding in C29 is explicitly shown in Figure 4D. This is a primary finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Under most circumstances, the probability of canonizing false claims is relatively insensitive to initial belief. Initial belief matters strongly only when evidentiary standards are weak and experiments are highly error-prone, where belief behaves as a random walk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by model results in Figure 5. The insensitivity to initial belief is demonstrated across most parameter combinations, with the exception clearly identified in Figure 5B. The random walk explanation (C34) provides theoretical justification based on established mathematical principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C66",
+      "C67"
+    ],
+    "result": "Strengthening evidentiary standards does not necessarily reduce false canonization in the presence of strong publication bias. When false positive rates are high and negative publication rates are low, increasing evidentiary requirements can paradoxically increase the chance of canonizing false claims.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C66-C67 are supported by model results in Figure 6. The counterintuitive finding that stronger standards can worsen outcomes is clearly demonstrated. The explanation in C67\u2014that misleading results are more likely to be published than correct ones\u2014provides mechanistic insight supported by the expected change analysis in Figure 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The model's behavior can be understood through random walk theory: as evidentiary standards strengthen, canonization probability depends increasingly on the expected change in log odds of belief per publication. For false claims with low negative publication rates, each publication on average increases belief, driving canonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 provide theoretical explanation for model behavior, supported by Figure 7A. The application of random walk theory (C37) is mathematically sound. The finding that false claims accumulate positive belief when negative publication is suppressed (C38) is directly demonstrated in Figure 7A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Questionable research practices (p-hacking, data dredging, HARKing, etc.) that inflate actual false positive rates above nominal rates dramatically increase the probability of canonizing false claims. Even with no publication bias and strong evidentiary standards, inflated false positive rates can lead to false canonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 establish the prevalence of practices that inflate false positive rates (supported by citations). Claims C44-C45 demonstrate the consequences through model extension shown in Figure 8. The specific example in C45 (\u03b1_nom=0.05, \u03b1_act=0.25) clearly shows false canonization persists even with \u03c1_0=1. Claim C3 is the primary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "If negative results become easier to publish as claims approach canonization (dynamic publication rates), true and false claims can be more readily distinguished. The fluctuating asymmetry hypothesis in evolutionary ecology provides empirical support for this dynamic, where negative results became publishable as the hypothesis gained acceptance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide empirical evidence for dynamic publication rates from evolutionary ecology (supported by citations). Claims C51-C52 show model results in Figure 9 demonstrating that dynamic rates markedly reduce false canonization. Claims C4, C46-C47, C53 frame the finding and its implications. The model extension is well-supported, though C53's speculation about real-world importance is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model shows no advantage to selective publication; false canonization decreases monotonically with increasing publication of negative results. This aligns with decision theory, which affirms that withholding information cannot improve decision-making performance when information costs are negligible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by model results across all parameter combinations tested (Figures 4-9 show monotonic relationships). Claims C60-C61 provide theoretical support from decision theory (supported by citations to Savage, Good, Ramsey). The alignment between model results and decision theory strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Science faces a replication crisis where many experimental findings cannot be replicated. Publication bias is pervasive: over 80% of papers report positive findings (>90% in psychology and ecology), and in FDA-registered antidepressant trials, negative studies were published at ~10% the rate of positive studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5 establish the replication crisis (supported by multiple citations to replication studies). Claims C9-C13 document publication bias through cited empirical studies (Fanelli 2012, Turner et al. 2008). The antidepressant meta-analysis provides particularly strong quantitative evidence. These claims establish the empirical motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C76",
+      "C77"
+    ],
+    "result": "Much of publication bias stems from authors not writing up null results rather than journal rejection. Authors respond to incentive structures where negative findings receive little credit or prestige, and negative results rarely appear in journals of equal prestige to those publishing original positive studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by multiple cited empirical studies. Claims C63-C65, C76-C77 describe the incentive structures driving author behavior, supported by citations and general knowledge of academic practices. These claims identify the source of publication bias and inform potential interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Publication bias creates serious problems in scientific inquiry, with potential to cause many false claims to be canonized as facts while true claims are seldom rejected. Current publication bias appears strong, with many negative results presumably going unreported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are summary conclusions supported by the full model analysis (Figures 3-9). Claims C57-C58 are inferences from empirical observations of publication patterns (C9-C13). These claims synthesize the paper's main findings about the consequences of publication bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "When experimental results are continuous-valued with multiple opposing directions for positive results (e.g., correlation vs. anticorrelation), publication bias may be less problematic because false positives would appear in both directions, allowing meta-analysis to detect the lack of consistent effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 are speculations about how continuous outcomes might mitigate publication bias. While the logic is plausible, no model results or empirical evidence are provided to support this mechanism. The authors appropriately frame this as speculation about model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In practice, false claims might be abandoned rather than rejected or canonized if they generate conflicting results or take too long to resolve. Asymmetric evidentiary standards (requiring less certainty to reject than to canonize) could increase rejection of false claims with minimal impact on true claims.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C73 are speculations about how real-world dynamics might differ from model assumptions. No empirical evidence or model extensions are provided to test these possibilities. The authors appropriately present these as limitations and potential differences between model and reality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "New journals and collections specializing in negative results have been established, and preprint archives may provide alternative venues for making negative results visible without formal peer review.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is a factual statement about recent publishing developments supported by citation. Claim C75 is a speculation about preprint archives as an alternative mechanism. These claims describe potential interventions to address publication bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Science can self-correct even after false claims are canonized, through accumulation of inconsistencies with other facts. Results that resolve conflicts by disproving accepted facts gain special significance and avoid the stigma of typical negative results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 are speculations about self-correction mechanisms not captured in the model. While plausible based on general knowledge of scientific practice, no empirical evidence or formal analysis is provided. The authors appropriately present this as a \"saving grace\" beyond the model's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model addresses small-scale facts established by one or two dozen studies, not major facts like anthropogenic climate change or vaccine safety that are supported by massive research volumes and established despite well-funded opposition. The model's false canonization process would not operate for such major facts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 clearly delineate the model's scope and limitations. Claim C81 explicitly describes what the model addresses. Claims C82-C83 explain why major scientific facts are outside the model's applicability. This is an important clarification about the model's domain of relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The paper adopts an epistemological definition of facts (accepted by the community) rather than ontological (reflecting physical reality). The Dicer enzyme example illustrates how scientific facts are established through multiple subsidiary hypotheses tested across diverse experimental approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 establishes the definitional framework (supported by philosophy of science citations). Claim C7 provides a concrete example of a scientific claim. Claim C8 defines publication bias. These claims establish conceptual foundations for the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "In practice, readers are unlikely to perform sophisticated Bayesian updating and instead form beliefs informally based on general assessment of accumulated results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 acknowledges that the model's assumption of Bayesian updating is optimistic compared to real reader behavior. This is a reasonable statement about model limitations based on general knowledge of how scientists actually process evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Science remains unparalleled in generating useful models of physical phenomena. The paper's goal is to improve scientific accuracy and efficiency, not to delegitimize science.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are statements about the value of science and the paper's motivation. These are appropriately placed in the conclusion to contextualize the critical analysis and prevent misinterpretation of the findings.",
+    "result_type": "MINOR"
+  }
+]

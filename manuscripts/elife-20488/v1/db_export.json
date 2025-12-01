@@ -1,0 +1,1344 @@
+{
+  "submission": {
+    "id": "ce2bfa10-4266-4d85-9198-672e1331edf0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:18:32.831766Z",
+    "updated_at": "2025-11-30T23:18:32.831766Z"
+  },
+  "content": [
+    {
+      "id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "submission_id": "ce2bfa10-4266-4d85-9198-672e1331edf0",
+      "content_type": "manuscript",
+      "content_text": "# Discovering sparse transcription factor codes for cell states and state transitions during development\n\n## Authors\n\n- Leon A Furchtgott<sup>1</sup> ([ORCID: 0000-0002-4258-0950](https://orcid.org/0000-0002-4258-0950)) \u2020\n- Samuel Melton<sup>1</sup>\n- Vilas Menon<sup>4</sup>\n- Sharad Ramanathan<sup>1</sup> \u2020\n\n### Affiliations\n\n1. FAS Center for Systems Biology Harvard University Cambridge United States\n2. Biophysics Program Harvard University Cambridge United States\n3. Harvard Stem Cell Institute Harvard University Cambridge United States\n4. Allen Institute for Brain Science Seattle United States\n5. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n6. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n7. School of Engineering and Applied Sciences Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nComputational analysis of gene expression to determine both the sequence of lineage choices made by multipotent cells and to identify the genes influencing these decisions is challenging. Here we discover a pattern in the expression levels of a sparse subset of genes among cell types in B- and T-cell developmental lineages that correlates with developmental topologies. We develop a statistical framework using this pattern to simultaneously infer lineage transitions and the genes that determine these relationships. We use this technique to reconstruct the early hematopoietic and intestinal developmental trees. We extend this framework to analyze single-cell RNA-seq data from early human cortical development, inferring a neocortical-hindbrain split in early progenitor cells and the key genes that could control this lineage decision. Our work allows us to simultaneously infer both the identity and lineage of cell types as well as a small set of key genes whose expression patterns reflect these relationships.\n\n## Introduction\n\nDuring development, pluripotent cells make a series of lineage decisions to give rise to the different cell types of the body. These lineage decisions are controlled by intra-cellular molecular networks that include transcription factors and signaling molecules. There are two fundamental challenges associated with understanding the differentiation of individual cells. The first is to identify lineage relationships: how cells and their progeny move from pluripotent through intermediate to terminally differentiated cell states. The second is to identify the key molecular drivers that allow cells to make fate decisions along their developmental trajectory.\n\nReconstructing cell lineages has traditionally involved prospectively tracking cells and their progeny using a variety of imaging or genetic tools (Buckingham and Meilhac, 2011; Frumkin et al., 2008; Orkin and Zon, 2008; Sulston et al., 1983). Recent progress in single-cell sequencing techniques (Gr\u00fcn et al., 2015; Jaitin et al., 2014; Macosko et al., 2015; Patel et al., 2014; Paul et al., 2015; Treutlein et al., 2014; Zeisel et al., 2015) allows for a complementary view of the transcriptional states of individual cells during the course of development, providing static snapshots of the dynamics of the underlying molecular network. But inferring lineage relationships and the dynamics of the underlying molecular networks has proved difficult using transcriptional data alone, in part because of the high dimensional nature of these data. Overcoming this challenge would be particularly useful for understanding the development of human organs such as the brain where traditional lineage tracing experiments are more difficult.\n\nHigh dimensional data analysis techniques such as PCA, ICA, or t-SNE, are useful at reducing dimensionality. However, since the resulting axes represent linear combinations of a large number of features (for\u00a0example, expression levels of each gene), interpreting the analysis or making experimental predictions is sometimes challenging. Meanwhile, traditional statistical methods such as linear multivariate regression have limited applicability for detecting patterns in high dimensional data (Advani and Ganguli, 2016; Donoho and Tanner, 2009). The challenges inherent in high-dimensional data analysis such as identifying discriminatory features are further exacerbated as the fraction of relevant features decreases (Donoho and Tanner, 2009). Computational techniques currently in use to cluster single cell data or to infer relationships among\u00a0cells are built on these approaches, thereby assuming that all high-variance genes are equally relevant for pattern detection (Marco et al., 2014; Satija et al., 2015; Trapnell et al., 2014). In contrast, decades of work in developmental biology have revealed that combinations of a few transcription factors can be sufficient to experimentally perturb cell fate and developmental decisions (Gilbert, 2014; Graf and Enver, 2009; Takahashi and Yamanaka, 2006) suggesting that the expression patterns of a few genes may be most relevant for making computational inferences. Therefore, there is a need to detect patterns involving a small fraction of all genes. Unfortunately, except in the case of well-studied lineage decisions, we do not know the identity of this fraction.\n\nIn statistics, techniques relying on L1 regularization have been successful in contexts where the number of informative variables is known to be small but whose identities are unknown, both for regression problems (Baraniuk, 2007; Cand\u00e8s et al., 2006; Tibshirani, 1996; Wainwright, 2009) and for clustering (Witten and Tibshirani, 2010). Inspired by these successes in statistics, our aim here is to discover generalizable sparse patterns in gene expression data during development (if they exist), and to exploit these patterns to computationally infer the dynamics of cell state transitions from high-dimensional transcriptional data obtained during the course of development.\n\nIn this manuscript we analyze expression patterns among cell types with known lineage relationships in late hematopoiesis and discover a pattern in a sparse subset of genes that correlates with these relationships. We develop a Bayesian framework based on this gene expression pattern to simultaneously infer lineage transitions and the key genes that drive them. We apply this method to reconstruct the lineage tree among a different set of cell types in early hematopoietic development, and in this process identify many known drivers of early hematopoiesis, including Gata1, Cebpa and Ebf1. We further extend our method to analyze single-cell gene expression data, using genes exhibiting the discovered pattern to cluster cells from early brain development and to infer lineage relationships between these clusters. Our analysis reveals a split from early progenitors to putative neocortex and mid/hindbrain cell types, as evidenced by the mutually exclusive expression of region-specific genes such as FOXG1, LHX1, and POU3F2 (BRN2). This prediction was validated experimentally in a separate work (Yao et al., 2017). We finally discuss the advantages of using sparse patterns for making inferences and for modeling the underlying gene regulatory networks.\n\n## Results\n\n### Discovering sparse patterns correlated with lineage transitions\n\nIn order to identify gene expression patterns that are robustly predictive of lineage relationships, we analyzed gene expression data from 41 cell types during B- and T- cell development that have an experimentally established developmental lineage (Figure 1A, Heng et al., 2008). We searched for sparse patterns of gene expression amongst groups of three cell types from this collection; subsets of three are the minimal set in which measures of relative similarity can be used infer relative lineage relationships.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig1-v1.jpg)\n\n**Figure 1.:** (A) Developmental lineage tree showing relationships among 41 cell types in B- and T-cell development (Heng et al., 2008). Three triplets \u2013 the minimal subset of the tree from which relative distances can be studied \u2013 are denoted, each including an intermediate root cell type (red) and terminal leaf cell types (blue). 150 triplets among all sets of three cell types within five steps on the lineage tree were extracted for pattern-detection. (B) For each triplet of cell types (left), each gene\u2019s expression level can have the clear minimum pattern in either the root or the leaves (right, top box) where the distribution of gene expression levels in one cell type is well separated from the other two (left, p<0.005 in a two sample t-test); clear maximum pattern (left, bottom) in the root or the leaves: the gene has a clear maximum in one of the cell types (right, p<0.005 in a two sample t-test). (C) A histogram of the number of genes showing the clear minimum pattern among the 150 triplets with known developmental topology. Triplets in which the root has the most genes showing the pattern shown in red; triplets in which one of the leaves has the most genes showing the pattern shown in blue. None of the triplets with more than 10 genes showing the pattern have the most genes with a clear minimum in the root (no red in any histogram bar except for the left most)(D) Principal component analysis of microarray data from the cell types in B- and T- cell development does not reflect known lineage relationships in (A).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) We used a two-distribution t-test to quantify the likelihood of a gene (each denoted by a single dot) showing either the clear minimum (A) or clear maximum pattern (B).We show the p-value from this t-test and the cell type in which the gene shows differential expression. The p-value cutoff is used to identify genes which show these patterns with high significance (dotted line). In this particular triplet, there are fewer genes with a clear minimum and with a clear maximum in the root of the triplet (B.T1) than in either leaf, as seen by fewer genes in the first row to the right of the cutoff. (C)\u00a0A\u00a0histogram of the number of genes showing the clear maximum pattern among the 150 triplets with known developmental topology. Triplets in which the root as the most genes showing the pattern are shown in blue. The clear maximum pattern does not show strong predictive power over the lineage relationships between triplets, and even when a large number of genes exhibit the pattern, the majority often reach their maximum in a leaf.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Histogram of the number of genes showing the clear minimum pattern evaluated over all 25,194 genes among the 150 triplets with known developmental topology.\u00a0Triplets in which the root has the most genes showing the pattern shown in red; triplets in which one of the leaves has the most genes showing the pattern shown in blue. (B) Histogram of the number of genes showing the clear minimum pattern evaluated over transcription factors, using FDR-adjusted p-values, among the 150 triplets with known developmental topology. Triplets in which the root has the most genes showing the pattern shown in red; triplets in which one of the leaves has the most genes showing the pattern shown in blue. (C) Number of genes showing the clear minimum pattern in the three cell types of each triplet. The number of genes in the root cell type of each triplet is indicated in blue; the number of genes in the two leaves are represented in yellow and red. The triplets are ordered according to the total number of genes showing the pattern in the triplet. (D\u2013F) A\u00a0histogram of the number of genes showing the clear minimum pattern. As in Figure 1C, triplets in which the root has the most genes showing the pattern shown in red; triplets in which one of the leaves has the most genes showing the pattern shown in blue. Triplets are shaded according to different characteristics: length of triplet (D), presence of terminal node in triplet (E), cell-fate decision or lineage progression (F).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Plot, for triplets of related and unrelated cell types, of the entropy S of the fraction of genes downregulated in the 3 cell types (x-axis) and the total number of genes showing a minimum in any triplet for 100 unrelated and 150 related triplets (Figure 1\u2014source data 1).\u00a0Related triplets are shown in blue or red, depending on whether the cell type with the most genes showing the downregulated pattern is the root (red) or a leaf (blue), as in Figure 1C. Unrelated triplets are shown in green. For each triplet, we computed the entropy $S=\u2212\\sumi=A,B,Cf_{i}log\u2061(f_{i})$, where fi is the fraction of the genes which reach a clear minimum in cell type i = A, B, C. Jitter added to triplets with S\u00a0=\u00a00 for clarity. (B) Histogram of the maximum inferred probability of a non-null topology in the Bayesian algorithm for the set of related triplets (top) and the set of unrelated triplets (bottom). (C) Receiver operating characteristic (ROC) curve for the probability of a non-null topology (B) for binary classification of the related and unrelated triplets. The area under the curve (AUC) is 0.96.\n\nWe identified 150 triplets of cell types with experimentally verified lineage relationships from B- and T- cell development (Heng et al., 2008) (Figure 1\u2014source data 1). Three such triplets are shown in Figure 1A. These triplets constituted both cell fate decisions (for\u00a0example, cell type A gives rise to cell type B and C) and lineage progressions (cell type B gives rise to cell type A which then gives rise to cell type C). For each triplet, we noted which cell type was the progenitor or intermediate cell type (\u2018root\u2019 cell type A) and which cell types were not (\u2018leaf\u2019 cell types B and C). Note that even in the case in which cell type B gives rise to cell type A which gives rise to cell type C, we will refer to A as the \u2018root\u2019 and B and C as \u2018leaves\u2019 for that particular triplet. We analyzed transcription factor gene expression data for these triplets from the Immunological Genome Consortium (Heng et al., 2008) since transcription factors are the ultimate drivers of cell fate decisions.\n\nSurprisingly, we found that specific expression patterns involving only single genes correlated well with lineage relationships between three cell types. Genes that are not differentially expressed within a triplet of cell types convey no information about relationships between the cell types. Therefore, we select genes with expression variability among the three cell types. The expression pattern of such genes can belong to one of only two possible patterns: (Figure 1B): the clear minimum pattern: the gene has a clear minimum level in one of the three cell types, with its distribution of gene expression levels being well-separated from the other two (p<0.005 in both two sample t-tests between the minimum cell type and the other two cell types; Figure 1\u2014figure supplement 1A); the clear maximum pattern: the gene has a clear maximum level in one of the cell types (p<0.005 in both sample t-tests; Figure 1\u2014figure supplement 1B). Note that both patterns can be satisfied simultaneously if the distribution of expression levels in the three cell types are all well-separated with a clear maximum and minimum. We tested if either of the two patterns correlated with the lineage topologies between the three cell types with known lineage relationships (Figure 1C, Figure 1\u2014figure supplement 1C).\n\nTriplets of cell types can be separated into categories based on how many genes exhibit the aforementioned patterns. 56% of the triplets contained more than 10 genes exhibiting the clear minimum pattern, and in 100% of these triplets the majority of genes with expression fitting this pattern reached their minimum expression in one of the leaves (Figure 1C) and never in the root of the triplet. The frequency with which the pattern correctly indicated the lineage relationship increased with the number of genes within a triplet exhibiting the pattern, thus suggesting a confidence measure. The genes showing the clear minimum pattern fell into two distinct groups, corresponding to whether the minimum expression level was in one or the other of the two leaves (Figure 1\u2014figure supplement 1A; Figure 1\u2014figure supplement 2C). Thus the expression pattern of the total set of clear minimum genes correlated with the topology. Since genes showing the clear minimum pattern correlated with lineage relationships (Figure 1C) between cell states both in the case of branches and linear sequences of cell state transitions, we refer to them as transition genes.\n\nWe further verified that the clear minimum pattern could be observed (a) in the set of all 25,194 genes (Figure 1\u2014figure supplement 2A), (b) using FDR-adjusted p-values (Benjamini and Hochberg, 1995) (Figure 1\u2014figure supplement 2B), (c) in triplets of different lengths along the lineage tree (Figure 1\u2014figure supplement 2D), (d) in triplets both containing only internal nodes and including terminal nodes (Figure 1\u2014figure supplement 2E), (e) and in both lineage progression and cell fate decision triplets (Figure 1\u2014figure supplement 2F).\n\nThe clear maximum pattern was a poorer indicator of lineage relationships (Figure 1\u2014figure supplement 1C). 83% of the triplets had more than 10 genes exhibiting this pattern, but 10% of those showed the majority of genes with expression fitting this pattern reaching their maximum in the root while the others did so in the leaves. Crucially, the integrity of the relationship between the clear maximum pattern and lineage topology was not correlated with the number of genes exhibiting the pattern (Figure 1\u2014figure supplement 1C). While the clear maximum pattern did not correlate with lineage relationships, genes exhibiting this pattern identify individual cell types, and therefore we will refer to them as marker genes.\n\nThere are many examples of genes known to be functionally important for lineage decisions whose expression patterns fit the clear minimum pattern. In the case of lateral inhibition commonly used during development, progenitor cells express genes together (for example, Notch and Delta) which are differentially expressed in the differentiated states (only Notch or only Delta) (Perrimon et al., 2012) reaching the minimum expression level in one of the leaves. The same pattern is also seen in multiple examples of lineage decisions often involving mutual inhibition, where key genes expressed in the progenitor are differentially regulated in the progeny (Graf and Enver, 2009; Qi et al., 2013; Thomson et al., 2011; Zhang et al., 1999). In each of these cases, key genes reach minimal expression levels in one of the leaves of the triplets.\n\nThe observation that genes exhibiting the clear minimum pattern are correlated with the lineage topology of a triplet of cell types further revealed that (i) only this fraction of transcription factors can be useful for inferring lineage relationships, and (ii) the identity of this fraction depends on which group of three cell types were analyzed. As the subset of genes that are informative varies based on the triplet of cell types being considered, establishing lineage relationship between all cell types at once as opposed to three at a time could be challenging. Indeed, our attempt to reconstruct the lineage relationships between all cell types using methods based on PCA failed (Figure 1D).\n\nWe further evaluated the clear minimum pattern in 100 triplets in which there was no clear relation between the cell types (Figure 1\u2014source data 1). We found that while there were a substantial number of genes exhibiting a clear minimum in one of the three cell types in unrelated triplets, their minima were evenly distributed amongst the cell types. To quantify that the minima were evenly distributed, we counted the fraction of genes fi which reached a clear minimum in cell type i = A, B, C (for A, B, and C unrelated cell types), and for each triplet, we computed the entropy $S=\u2212\\sum_{i=A,B,C}f_{i}log\u2061(f_{i})$. We compared the distribution of the entropy and the number of genes showing a minimum in any triplet for unrelated and related triplets (Figure 1\u2014figure supplement 3A). The unrelated triplets have higher entropy and typically more genes with a minimum level. This suggested that unrelated triplets show a distinct pattern from the related triplets.\n\n### Using patterns to infer lineages\n\nTogether, these observations suggested a strategy for inferring the lineage topology between three cell types: each gene showing the clear minimum pattern with a minimum expression level in a particular cell type increases to the probability that this cell type is not the root of the topology (Figure 2A). We next developed a statistical machinery to systematically detect this pattern in gene expression data and to use the resulting sparse subset of genes to infer lineage relationships between three cell types at a time. We then used the inferred relationships between all sets of three cell types as constraints to determine the full developmental lineage tree.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0Schematic for the statistical inference of lineage topology for 3 cell types. Genes with a clear minimum pattern indicate which cell types that are not the root (see Figure 1C) and hence allow inference of the topological relationship. (B) Dot plot (each dot representing a gene) of the cell type that is most likely to have the minimum mean expression of each gene among CMP, ST and MPP as a function of the odds $\ud835\udcaa_{i}$ of that gene being a transition gene. Each gene votes against the topology whose root has the minimum mean among the three cell types, and this vote is weighted by the odds that the gene is a transition gene (Equation 1). Two groups of genes, labeled by their names, have high odds of being transition genes and thus cast a strong vote against CMP or MPP being the root.(C) The\u00a0computed probability of the topology given gene expression data indicates 0.84 probability that ST is the intermediate type.(D) The\u00a0plot of the probabilities of genes being transition genes for triplet ST/MPP/CMP, given gene expression data and that the topology is MPP \u2013 ST \u2013 CMP. The names of the 10 genes with the highest probability of being transition genes are shown. Probabilities are calculated assuming the prior odds $\\frac{p(\\beta_{i}=1)}{p(\\beta_{i}=0)}$ = 0.05 (see main text). There are two classes of transition genes: one for which gene expression in CMP is greater than expression in MPP (regular font), and another for which gene expression in MPP is greater than expression in CMP (bold font).(E) Plot of the replicates of ST, MPP and CMP in the gene-expression space of the two classes of transition genes (with probability\u00a0>\u00a00.8). Plotted on each axis is the mean normalized log expression level of the transition genes in the class, each class is denoted in curly brackets by the name of the transition gene with the highest probability.(F) Dot plot for triplet MEP/GMP/FrBC of the cell type that is most likely to have the minimum mean expression as a function of the odds $O_{i}$ of that gene being a transition gene.(G) The\u00a0computed probability of the topology given gene expression data is the null hypothesis (p=0.99).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Two models of the hierarchy of early hematopoietic progenitors, both built based on prospective isolation of lineage restricted progenitors, include (left) the traditional model, in which the first split strictly separates myeloid and lymphoid lineages (Akashi et al., 2000; Kondo et al., 1997; Reya et al., 2001) and (right) an alternative hierarchy proposed by Adolfsson and colleagues, in which lymphoid progenitors subsequent to the first split retain some myeloid potential (Adolfsson et al., 2005).\u00a0(B) The\u00a0inferred probability of different topological configurations as a function of the prior odds of genes being transition genes. At low values of the prior odds, very few genes are given substantial votes in the inference procedure. The topology MPP-ST-CMP has high probability for a range of prior odds. (C) Genes with high probability of being marker genes for MPP (bold), CMP (plaintext), or ST (italics). (D) The triplet MEP, GMP, FrBC shows no significant probability of a non-null topology for a wide range of prior odds. In this case, our inference method makes no claim as to the topological configuration based on the gene expression evidence provided. (E) Histogram of the maximum inferred probability of a non-null topology for the 165 triplets of hematopoietic progenitors. (F) Projections of the early hematopoietic progenitors along first two principal components. (PC1: 30%; PC2: 17%). Each point represents a different replicate. Note the proximity between ETP and MPP samples (red circle), which does not reflect either of the lineage models shown in (A).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Separate plots are shown for triplets whose inferred topology is consistent with only the Adolfsson model (A) and the traditional model (B) Triplets whose inferred topology is null are shown in turquoise; those whose inferred topology is non-null are shown in black. Jitter was added to the points for clarity.\n\nThe classifications of genes as transition or marker genes in Figure 1 were based on p<0.005 in a two-sample t-test. To implement such classifications probabilistically without arbitrary cutoffs we developed a statistical framework to infer the lineage relationships between each set of three cell types A, B, and C and find the key sets of transition genes (those genes that show the clear minimum pattern), given gene expression data ${g_{i}^{A,B,C}}$ in those cell types. We determined the probability of any possible topological relationship between the cell types $T=\u00a0{A,\u00a0B,\u00a0C,\u00a0\u2205}$ referring to cell type A, B, or C being the root of the triplet, or $\u2205\u00a0$which corresponds to the case where the data does not suggest any lineage relationship between the three cell types because either no significant pattern could be detected, or multiple genes exhibiting the minimum pattern suggested conflicting topologies. Rather than an absolute classification of genes as showing a pattern or not, we calculated the probability $p(\\alpha_{i}=1\u00a0\u00a0|\u00a0g_{i}^{A,B,C})$ of each gene $i$ being a marker gene (denoted by $\\alpha_{i}=1$), i.e. gene $i$ showing the clear maximum pattern, and the probability $p(\\beta_{i}=1\u00a0|\u00a0g_{i}^{A,B,C})$ of it being a transition gene denoted by $\\beta_{i}=1$, i.e. gene $i\u00a0$\u00a0showing the clear minimum pattern (Materials and methods).\n\nWe derived the probability of a given topology $T$\u00a0given the expression data as (Materials and methods):\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}})\u221d\\prodi(1+\\frac{3}{2}\ud835\udcaa_{i}[1\u2212p(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{A,B,C})]),\n$$\n\nwhere,\u00a0$\ud835\udcaa_{i}=p(\\beta_{i}=1\u00a0|\u00a0g_{i}^{A,B,C})/p(\\beta_{i}=0\u00a0|\u00a0g_{i}^{A,B,C})$\u00a0is the odds of gene $i$ being a transition gene and thus having a unique minimum. The term $p(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{A,B,C})$ is the probability that the mean $\\mu_{T}^{i}$ of the distribution of the expression levels of gene\u00a0i in the root cell type $T$ is less than the mean in the other two cell types. The odds implicitly contains the only free parameter in our analysis, the prior odds $\\frac{p(\\beta_{i}=1)}{p(\\beta_{i}=0)}$, which defines the number of genes we expect to show the clear minimum pattern a priori, and functions as a sparsity parameter for the inference. Qualitatively, in the above equation, every gene casts a vote $\u2212p(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{A,B,C})$ against the cell type $T$ in which its mean expression is minimal being the root. Further, this vote is weighted by the odds $\ud835\udcaa_{i}$ of gene $i$ being a transition gene. Thus, genes with a clearer minimum pattern get larger votes in determining which cell type is not the root. In practice, these quantities are computed numerically (Materials and methods).\n\nWe note further that if a substantial number of genes cast votes against each of the cell types, then the probability of the null topology $\u2205$ increases. We computed the probability of obtaining the null topology among the 150 related triplets and 100 unrelated triplets from our training set. The distribution of the probability of obtaining the null topology was considerably different between the related triplets and the unrelated triplets, with an AUC of 0.96 (Figure 1\u2014figure supplement 3B\u2013C).\n\n### Application to hematopoietic gene expression data\n\nWe used our statistical framework to recreate the lineage of early hematopoietic differentiation. We considered 11 early hematopoietic progenitors from the ImmGen Consortium microarray data set (Heng et al., 2008) (Figure 2\u2014source data 1). These cell types and their associated relationships were not included in the data set used earlier to study the correlations of the two patterns and lineage topologies. Several features of the early hematopoietic lineage tree are debated (Adolfsson et al., 2005; Iwasaki and Akashi, 2007) (Figure 2\u2014figure supplement 2A). Given only the gene expression data for these different subpopulations of cells, we determined the lineage relationships and the key factors associated with each lineage decision. We calculated the probabilities of topology and marker and transition genes for the (113)=165 possible triplets of cell types using our statistical framework (Figure 2\u2014source data 2). To illustrate our method, we first described the analysis of the expression data from two such triplets of cell types: CMP/ST/MPP and MEP/GMP/FrBC (Figure 2B\u2013G). We then assembled the triplets to form an undirected lineage tree (Figure 3; Video 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig3-v1.jpg)\n\n**Figure 3.:** (A) Final lineage tree, recapitulating the inferred triplet topologies, with top inferred transition genes indicated along cell fate decisions. (B) Plot of the replicates of different cell types in the gene-expression space of the transition gene classes (probability\u00a0>\u00a00.8) for 4 cell-fate transitions along the inferred lineage tree in (A). Plotted on each axis is the mean normalized log expression level of the transition genes in the class. The axis labels and data points are color-coded according to the colors in (A). (C) Table with selected transition genes for early hematopoietic cell-fate transitions, along with references to published validations of their functional role. Genes known to be effective for reprogramming are shown in bold.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Probability of all topological configurations for a triplet as a function of prior odds for all triplets between 4 cell types: MPP, ST, LT, and CMP. (A)\u00a0The LT-ST-MPP triplet, with p=0.99. (B)\u00a0The CMP-ST-MPP triplet, with p=0.95. (C) The LT-ST-CMP triplet, with p=0.99. (D) The MPP-LT-CMP triplet, with p=0.65. Note that the next highest topology here is the null topology. (E) These four triplets can be combined to infer a simple relationship between all four cell types that is consistent with the topological restrictions inferred from each high probability triplet.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Inferred lineage tree from intestinal single cell data taken from (Gr\u00fcn et al., 2015).Cluster identifications were taken from RaceID2 (Gr\u00fcn et al., 2016), and a similar tree was inferred from StemID ([Gr\u00fcn et al., 2016], not shown). Using 1369 transcription factors, we inferred these lineage relationships between all cell clusters with more than 10 cells per cluster. The tree differs from that in (Gr\u00fcn et al., 2016) only in the progression from C2 \u2013 C8 \u2013 C4, while we infer the triplet C8 \u2013 C2 \u2013 C4 with p>0.99, both of which are consistent with literature (van der Flier and Clevers, 2009), and await experimental validation. (B) High-probability transition genes with known relevance in intestinal homeostasis or differentiation taken from the top 20 transition genes for each lineage progression.\n\n![Video 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-media1.mp4.jpg)\n\n**Video 1.:** Animation of the triplet assembly and pruning process for reconstructing the early hematopoietic lineage. For illustrative purposes, triplets (with p>0.6) are successively selected at random (in practice, the assembly and pruning process was performed on all triplets simultaneously; the resulting tree does not depend on the order in which the triplets are selected). The nodes of the current triplet are highlighted in yellow; if a topology is recognized for the triplet, the root is shown in green and the leaves in yellow, and the triplet edges are shown in magenta. If adding the triplet causes another triplet to be pruned, the soon-to-be-pruned (i.e. offending) edge is highlighted in red. The resulting pruned graph is then shown before adding the next triplet. As more triplets are considered, more edges between nodes are added and then pruned, leading to the final tree.\n\nFollowing Equation 1, each gene votes against the topology whose central node has the minimum expression of that gene among the three cell types, and this vote is weighted by the odds that the gene is a transition gene. To illustrate this for the triplet of cell types CMP, ST and MPP, we plotted the topology each gene voted most against, i.e. the topology $T$ for which $p(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{CMP,ST,MPP})$ is the maximum, versus the odds $\ud835\udcaa_{i}$ of that gene being a transition gene (Figure 2B).\n\nWe find two groups of genes that are much more likely to be transition genes than any of the other genes, with values of $O_{i}\u223c10^{2}$ compared to $10^{0}$ at most for other genes (Figure 2B, regular and bold fonts). These two groups of genes have a large value for either $p(\\mu_{CMP}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{CMP,ST,MPP})$ or $p(\\mu_{MPP}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{CMP,ST,MPP})$ and thus vote against $T=CMP$ (cell type CMP is the intermediate) or against $T=MPP$ (cell type MPP is the intermediate). Together these genes that have a high odds of being transition genes appear to most support topology $T=ST\u2261CMP\u2212ST\u2212MPP$.\n\nIn fact, the intuition in Figure 2B is borne out in the calculation of $p(T\u00a0|\u00a0{g_{i}^{CMP,ST,MPP}})$. Using Equation 1 above and assuming a sparsity parameter of 0.05, we calculate that there is an 84% chance that the topology is $ST$ (Figure 2C; Figure 2\u2014figure supplement 2B). Although gene Irf8 (Figure 2B, italic font) is strongly downregulated in ST and is expressed at higher levels in CMP and MPP (Figure 2C), we note that its signal is overwhelmed by the large number of genes downregulated in either CMP or MPP, illustrating the statistical nature of the framework.\n\nFor each triplet, we evaluated each gene\u2019s probability of being a transition or marker gene (Figure 2\u2014source data 3). Figure 2D shows the names and associated probabilities of the 12 genes most likely to be transition genes for the triplet $CMP\u2212ST\u2212MPP$. The transition genes fall into two groups, corresponding to the two groups in Figure 2B. One group, which includes genes Gata1, Dach1, and Gata2, has higher expression in CMP than in MPP; the other group, which includes Hlf, Tsc22d1, and Hoxa9, has higher expression in MPP. Although the values of the probabilities of the genes being transition genes vary with the value of the sparsity parameter, the relative order of different genes does not change. The genes identified include many genes previously identified as being important for lineage specification (Crispino, 2005; Gazit et al., 2013; Miyawaki et al., 2015). The transition genes we discovered thus not only have gene expression patterns that reflect the lineage decision but also include functionally important genes.\n\nIn addition to the transition genes, we identified marker genes ($p(\\alpha_{i}=1\u00a0|\u00a0{g_{i}},T)>0.8$) present only in ST (including Mpl and Rai14, consistent with [Solar et al., 1998]) and then symmetrically downregulated in both CMP and MPP (Figure 2\u2014figure supplement 1C). Marker genes for CMP include Srf, Zeb2, Rbpj and Irf8 (consistent with [Goossens et al., 2011; Kurotaki et al., 2013; Ragu et al., 2010; Robert-Moreno et al., 2005; Tamura et al., 2000]); marker genes for MPP include Satb1, consistent with (Satoh et al., 2013). Although these genes were not used to determine the topology, they are good markers for cell types ST, CMP and MPP.\n\nPlotting the cell types using the mean expression levels of the two transition gene class captures the fork in the gene expression space associated with the cell-fate decision (Figure 2E). In contrast with the PCA analysis of the cell types (Figure 2\u2014figure supplement 1E), in which MPP appears to be an intermediate between the hematopoietic stem cell types (LT and ST) and CMP, the projection of the cell types onto the transition-gene subspace shows that ST splits into CMP and MPP.\n\nIn contrast to the case of the triplet of cell types CMP/ST/MPP, for triplet MEP/GMP/FrBC, the distributions of genes supporting different topologies are similar (Figure 2F). Thus the most likely topology calculated using Equation 1 is the null hypothesis (99%), which is that transition genes, if they exist, do not have patterns that depend on the cellular topology (Figure 2G, Figure 2\u2014figure supplement 1D), in which case there is insufficient evidence to classify the triplet according to a particular non-null topology. The distribution of the maximal probability of non-null topologies in the different triplets is heavily concentrated near 1, allowing for clear separation between null and non-null triplets (Figure 2\u2014figure supplement 1E). Null topologies were identified by the algorithm for triplets with cells that are from three terminal nodes (for\u00a0example, the triplet MEP/GMP/FrBC) or from triplets that contain very distantly related triplets (for\u00a0example, LT/CLP/ETP) (Figure 2\u2014source data 2).\n\n### A lineage tree for early hematopoiesis\n\nWe next reconstructed the early hematopoietic lineage tree and identified transition genes involved in the different cell state transitions using all the non-null triplet relationships as constraints on the lineage relationships between all cell types. Out of the 165 possible triplets of hematopoietic progenitors, 144 showed one single non-null topology with probability greater than 0.6 over a range of the prior odds from 10\u22126 to 102. We next determined an undirected graph that recapitulates all of the individual triplet topologies (note that we are only inferring triplet topologies and are not inferring directionality). For example, although triplet CMP/LT/MPP has topology CMP \u2013 LT \u2013 MPP (Figure 3\u2014figure supplement 1A), we could determine that LT cannot be the direct progenitor of CMP or MPP, because ST is an intermediate between LT and both cell types (Figure 3\u2014figure supplement 1B\u2013C). We could thus 'prune' this triplet when inferring the full graph (Figure 3\u2014figure supplement 1D\u2013E). A visualization of the pruning process is shown in Video 1, where successive triplets are added to the graph, creating new edges and pruning others, leading to the final undirected tree. In practice, though, the pruning process was performed on all triplets simultaneously, not in succession.\n\nThe ST/CMP/MPP triplet (Figure 2B\u2013E) immediately distinguishes between two competing models regarding the hierarchy of early hematopoietic progenitors. According to the traditional picture (Iwasaki and Akashi, 2007), MPP is the progenitor of CMP, and ST is the progenitor of MPP \u2013 therefore MPP should be an intermediate between ST and CMP and the topology of triplet ST/MPP/CMP should be ST \u2013 MPP \u2013 CMP (Figure 2\u2014figure supplement 1A, left). According to a model suggested by Adolfsson and colleagues (Adolfsson et al., 2005), ST splits into CMP and MPP (Figure 2\u2014figure supplement 1A, right), and the topology should be CMP \u2013 ST \u2013 MPP. We identify both CMP \u2013 ST \u2013 MPP and CMP \u2013 LT \u2013 MPP as the correct topologies, lending support to the Adolfsson model. The Adolfsson and traditional models differ in the topology of 9 triplets. The inferred expected topologies of 8 out of these nine triplets support the Adolfsson model, which led to the identification of the final tree (Figure 2\u2014figure supplement 2).\n\nThe lineage tree that we determined is consistent with the Adolfsson model and contains three additional lineage decisions (Figure 3A\u2013B). First, CMP gives rise to MEP (megakaryocyte/erythroid progenitor) and GMP (granulocyte/macrophage progenitor). Second, MPP gives rise to MLP (multilineage progenitor), which then splits into the GMP and CLP (common lymphoid progenitor) cell types. In the final lineage decision, CLP gives rise to the ETP (pre-T) and FrA (pre-pro-B) cell types.\n\nFor each triplet of cell types along the tree, we identified transition and marker classes of genes. Among the 14 triplets that contained only adjacent cell types, we identified on average 24 marker genes per cell type and 25 transition genes (probability threshold of 0.8, prior odds $p(\\beta_{i}=1)/p(\\beta_{i}=0)\u00a0=0.05$). Many genes we discovered as belonging with high probability to the transition and marker classes of genes at each lineage decision are known in the literature to be functionally important genes, including classic hematopoietic regulators such as Cebpa, Sfpi1, Gata1, Satb1, Irf8 and Ebf1 (see full tables with references in Figure 3C and Figure 3\u2014source data 1). Additionally, the genes identified include many genes successfully used in hematopoietic reprogramming experiments, including Gata2 and Pbx1 (Figure 3C). Together these observations suggest that the sparse subspace of transition and marker genes identified by our framework not only allows for accurate reconstruction of the lineage hierarchy but also constitutes a set of candidates for relevant biological functions.\n\nAs further validation of the inference method, we compared it to the method proposed by Grun et al. on a single-cell intestinal development data set (Gr\u00fcn et al., 2015, 2016). We inferred lineages between each cell type based on their cluster identifications, excluding clusters with fewer than 10 cells,\u00a0and constructed an undirected lineage tree by taking triplets with probability > 0.6 and applying the pruning rule (Figure 3\u2014figure supplement 2A). The only disagreement between the two methods is the progression from crypt base columnar cells (C2) to different populations of Goblet cells (C4 and C8). Grun et al. hypothesize a C2 \u2013 C8 \u2013 C4 progression, while we infer the triplet C8 \u2013 C2 \u2013 C4 with p>0.99, suggesting that the progenitor C2 gives rise to both differentiated Goblet subpopulations. Both lineage trees are supported by the literature (van der Flier and Clevers, 2009). The high probability transition genes included many factors well known for their roles in tissue homeostasis and development (Figure 3\u2014figure supplement 2B), notably Klf4 (Yu et al., 2012), Atoh1 (VanDussen and Samuelson, 2010), Spdef (Noah et al., 2010), Foxa1/Foxa2 (Ye and Kaestner, 2009), and Tcf3 (Merrill et al., 2001).\n\n### Inferred lineage tree for human excitatory neuronal progenitors from in vitro single-cell data over 80 days of differentiation\n\nThe ease with which single-cell transcriptomic data can be generated (Gr\u00fcn et al., 2015; Jaitin et al., 2014; Macosko et al., 2015; Patel et al., 2014; Paul et al., 2015; Treutlein et al., 2014; Zeisel et al., 2015) presents an opportunity to understand the dynamics of the underlying networks that lead individual cells to their final fate. We studied the differentiation of stem cells both into germ layer progenitors (Jang et al., 2017) and into cortical neurons. To study the latter, we analyzed single-cell gene expression data from 2217 cells from an in vitro differentiation protocol for early human neuronal development (Yao et al., 2017). Briefly, human embryonic stem cells (hESCs) were subjected to a SMAD inhibition-based cortical induction phase, a progenitor expansion phase, and a neural differentiation phase. Single cells were sorted at 12, 26, 54, and 80 days into differentiation, and their gene expression was profiled using the SMART-Seq2 technique (Picelli et al., 2013). In the initial clustering of the single-cell data, dimensionality reduction by PCA (into 15 above-noise components) followed by t-SNE (Van Der Maaten and Hinton, 2008; Satija et al., 2015) showed separation by day and SOX2 expression (Figure 4A). However, the number of predicted clusters varied depending on the perplexity parameter (Figure 4\u2014figure supplement 1A\u2013B). In addition, no clear lineage or distance relationship among the putative types is immediately apparent from this clustering. Analysis of this data with other recent methods such as Monocle and Monocle2 (Trapnell et al., 2014), TSCAN (Ji and Ji, 2016), and StemID (Gr\u00fcn et al., 2016) did not clearly reconstruct lineage or infer key genes regulating transitions (Figure 4A \u2013 Bottom, Figure 4\u2014figure supplement 2). Monocle2 (Figure 4\u2014figure supplement 2A) produces a tree with complex branching, but SOX2+ progenitors and DCX+ differentiated neurons do not clearly separate.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig4-v1.jpg)\n\n**Figure 4.:** (A) RNA-seq data from single cells collected at days 12, 26, 54, and 80 from a human brain in vitro differentiation protocol (Yao et al., 2017) were analyzed using a variety of existing methods. Partitioning single-cells into cell types through non-linear dimensionality reduction using t-SNE (top) depends on the perplexity parameter (set here to 5, see Figure 4 \u2013 Figure Supplement 1A-B) and does not allow for mechanistic understanding. Independent component analysis of all transcription factors with\u00a0Monocle\u00a0(bottom) does not show clear structure and could not inform reconstruction of lineage relationships.\u00a0(B) Maximization algorithm to determine most likely cluster identities ${C}\u2261{c_{1},c_{2},\u2026,c_{n}}$, sets of transitions ${T}$, marker genes ($\\alpha_{i}=1$) and transition genes ($\\beta_{i}=1$), given single-cell gene expression data ${g_{i}}$. Starting from a seed clustering scheme ${C_{0}},\u00a0$iterative maximization of the conditional probabilities $p({T},{\\alpha_{i}},{\\beta_{i}}|{g_{i}},{C})$ and $p({C}|{g_{i}},{T},{\\alpha_{i}},{\\beta_{i}})$ converges to most likely set $({C},{T},{\\alpha_{i}},{\\beta_{i}})$\u00a0(C) Cell-cell covariance matrix between cells using only the associated high probability marker and transition genes show the final cluster assignments $c_{0},\u00a0c_{2}$ and $\u00a0c_{3}$ (right) in contrast to using all transcription factors (left).\u00a0(D) Selected high probability triplets of clusters plotted in the axes defined by two sets of transition gene classes for each triplet. $c_{1}\u2212\u00a0c_{0}\u2212\u00a0c_{2}\u00a0$(top right, $p(T=c_{0}\u00a0|\u00a0{g_{i}^{c_{0},c_{1},c_{2}}})>\u00a00.99$), plotted in transition gene class {CEBPG} also including POU3F1, POU3F2, NR2F1, NR2F2, ARX, LIN28A, TOX3, ZBTB20, PROX1 and SOX15, and class {DMRTA1} also including HES1, HES5, FOXG1, PAX6, HMGA2, SOX2, SOX3, SOX9, SOX6, SP8, OTX2, TGIF, ID4, TCF7L2, and TCFL1. $\u00a0c_{2}\u2212\u00a0c_{0}\u2212\u00a0c_{3}$ (top left, $p(T=c_{0}\u00a0|\u00a0{g_{i}^{c_{0},c_{2},c_{3}}})=\u00a00.96$), plotted in transition gene class {LHX2} also including FEZF2, FOXG1, HMGA1, SP8, OTX1, SOX11, GLI3, SIX3, ETV5, and class {POU3F2} also including GTF2I, HIF1A, ID1, ID3, PROX1, SALL1, SOX21, TCF12, TRPS1, ZHX2.$\u00a0c_{1}\u2212\u00a0c_{0}\u2212\u00a0c_{3}$ (bottom left, $p(T=c_{0}\u00a0|\u00a0{g_{i}^{c_{0},c_{1},c_{3}}})>0.99$), plotted in transition gene class {FOXO1} also including HMGA2, PAX6, and SOX2, and class {LHX2} also including DMRTA2, HMGA1, ARX, LIN28A, OTX2, LITAF, NANOG, POU3F1, SOX15. $c_{6}\u2212\u00a0c_{5}\u2212\u00a0c_{7}$ (bottom right, $p(T=c_{5}\u00a0|\u00a0{g_{i}^{c_{5},c_{6},c_{7}}})>0.99$), plotted in transition gene class {PAX3} also including CRX, SOX11, EBF2, FOXP4, ASCL1, FOXO3, and SIX3, and class {ARGFX} also including DUXA, HES1, NFIB, PPARA, SOX2, SOX7, and SOX9. (E) Correlations between differentiated cell clusters (Figure 4 \u2013 Figure Supplement 4D) and bulk population samples from brain regions (in vivo developmental human data) (Miller et al., 2014). Neuronal cell types can be identified with specific spatial regions of the brain to interpret the topology of the lineage tree. Expression signatures of SOX2+ cell types $c_{0},\u00a0c_{2}$ and $\u00a0c_{3}$ were dominated by pluripotency factors, and are not shown. (F) Inferred lineage tree for brain development. Genes associated with neocortical development, and mid-/hind-brain progenitors, and specific neuronal cell types are identified as high probability transition genes and are corroborated by mapping information from in vivo data. Clusters color-coded similarly to (D). D12/26/54/80 labels indicate time of collection of cells within each cell type. Prog refers to SOX2+ cells, Diff refers to SOX2-/DCX+ cells (Figure 4\u2014figure supplement 1C\u2013D).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013B) t-SNE of developing neuronal cells displays seemingly different number of cell types depending on the perplexity parameter.(C) SOX2 expression clearly falls into bimodal distribution. Cell types with high levels of SOX2 (blue, $c_{0},c_{2},\u00a0$ and $c_{3}$) are labeled progenitor cell populations. (D) DCX expression in final clusters is also bimodal, and cell types with high expression (green, $c_{1},c_{4},\u00a0c_{6},$ and $c_{7}$) are labeled differentiated (post-mitotic) neurons. (E) We assembled 20 triplets that were inferred to be non-null, and had a maximal distance between leaf nodes of less than 5. Amongst these triplets, we attempted to infer the correct topology using a minimal subset of genes. Restricting the inference to the N genes per triplet with the greatest odds ratio of being transition genes, the tree can be reconstructed accurately for any N\u00a0\u2265\u00a04.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20488/elife-20488-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Each of these methods was run with multiple sets of parameters in an attempt to optimize the lineage inference; however, it is possible that an unexplored parameter regime might yield more interpretable results, although it is unclear which parameters these might be. (A) Monocle2 (Trapnell et al., 2014) shows a complex tree with clear progression and multiple branches, but does not separate progenitor cells (DCX- cells) from neurons (DCX+ cells): progenitor cells are known to give rise to neurons, whereas neurons are post-mitotic and do not give rise to progenitors, in contradiction with certain portions of the tree. In addition, portions of the tree are in conflict with the general time point information specifying when cells were collected (Yao et al., 2017). (B) TSCAN (Ji and Ji, 2016) shows separation of DCX- and DCX+ cells along PC dimension 2 (note that cells are not labeled by DCX expression in this plot), but fails to capture structure among the differentiated neurons, particularly a fore-/hind-brain split. (C). StemID (Gr\u00fcn et al., 2016) produces a complex lineage that is not directly interpretable, and no clear separation of progenitors from neurons or forebrain-like from mid/hindbrain-like neurons is apparent.\n\nAnalyzing data from single-cell profiling presents an additional challenge relative to data from population-level profiling because cell types are not previously known and must be inferred from the data. Computationally, it is necessary define a measure of similarity in the gene expression profiles of individual cells so as to be able to cluster them and define cell states. Here again, it is necessary to identify the correct gene subspace to use for clustering. Clustering and determining lineage have typically been performed sequentially and treated as independent problems (Satija et al., 2015; Trapnell, 2015; Trapnell et al., 2014). However, we found that it is informative to solve both these problems simultaneously.\n\nIn our framework, the relevant feature set for clustering is the set of marker and transition transcription factors from the triplets with non-null topologies. But determination of these sets of genes and of the transition topologies depends itself on knowledge of the cluster identities. Following previous work on sparse clustering (Witten and Tibshirani, 2010), we simultaneously determined optimal clusters, lineage topology and sets of transition and marker genes by iteratively selecting transition and marker genes and clustering the data using this set of features (Figure 4B).\n\nIn order to utilize information about developmental distances in clustering, we iteratively maximized a joint distribution, $P(T,{C}^{m}|{g_{i}})$, over the developmental tree, $T,$ and the set of clusters of cells, ${C}^{m}={c_{1}^{m},c_{2}^{m},\u2026,c_{K}^{m}}$ (Figure 4B). Starting with a clustering ${C}^{m},$ we first inferred the set of genes ${\\alpha_{i}=1}$ and ${\\beta_{i}=1}$ which were identified in high probability triplets, $p(T|{g_{i}},\u00a0{C}^{m})>0.6$, and we then re-clustered in this new subspace to obtain the clusters for the next iteration ${C}^{m+1}$.\n\nInitial analysis based on the gap statistic (Tibshirani et al., 2001) suggested that the single-cell gene expression profiles clustered into 20 clusters of cell types. We chose a seed ${C}^{0}$ for the iterated clustering procedure by intentionally over-clustering the data into 40 clusters using spectral K-medoids. By being overly discriminative in our initial clustering, we ensured that all genes with differential regulation would be classified as either marker genes or transition genes, and would be preserved in later clustering iterations. We iterated the clustering-inference procedure until the dimension of the re-clustering subspace changed by less than 10% of the total transcription factor space. In this resulting subspace of 469 genes, we finally clustered the cells into the final configuration ${C}^{f}={c_{0},\u00a0c_{1},\u2026,c_{7}}$ using K-medoids (Figure 4C, Figure 4\u2014source data 1) where the number of clusters K\u00a0=\u00a08 was chosen based on the gap statistic (Tibshirani et al., 2001).\n\nWe inferred 45 high probability triplets ($p(T\u00a0|\u00a0{g_{i}})>0.6$) between the final cell clusters (Figure 4\u2014source data 2). Four such triplets are shown in Figure 4D, plotted in axes defined by transition genes for each triplet (Figure 4\u2014source data 3). Starting with progenitor cell states (SOX2+, Figure 4\u2014figure supplement 1C), we manually appended cell clusters to the tree according to their time information and in agreement with inferred topological restrictions. The first transition involves the production of day 12 neuronal cell type $c_{1}$ from day 12 progenitor $c_{0}$, which is observed in the triplets $c_{1}\u2212c_{0}\u2212c_{2}$ and $c_{1}\u2212c_{0}\u2212c_{3}$. The $c_{1}\u2212c_{0}\u2212c_{2}$ triplet ($p(T=c_{0}\u00a0|\u00a0{g_{i}^{c_{0},c_{1},c_{2},}})=\u00a00.99$, Figure 4D \u2013 top left) is mediated by 47 transition genes between $c_{0}$ and $c_{1}$ and 87 between $c_{0}$ and $c_{2}$ ($p(\\beta_{i}=1\u00a0|\u00a0{g_{i}},T)>0.8$). Transition genes expressed highly in the $c_{1}\u2212c_{0}$ branch include CEBPG, POU3F1, POU3F2, NR2F1, NR2F2, ARX, LIN28A, TOX3, ZBTB20, PROX1, and SOX15 which have been previously implicated in proliferation of forebrain progenitors (Au et al., 2013; Borello et al., 2014; Cimadamore et al., 2013; Dominguez et al., 2013; Yang et al., 2015) and the migratory behaviors of ganglionic eminences (Kanatani et al., 2008; Kessaris et al., 2014; Lodato et al., 2014; Olivetti and Noebels, 2012; Reinchisi et al., 2012). The $c_{0}\u2212c_{2}$ transition genes include DMRTA1, HES1, HES5, FOXG1, PAX6, HMGA2, SOX2, SOX3, SOX9, SOX6, SP8, OTX2, TGIF, ID4, SOX3, TCF7L2, and TCFL1 which are known to be expressed in forebrain progenitors of the developing neocortex, thalamus, and hypothalamus (Abraham et al., 2013; Pozniak et al., 2010; Shimojo et al., 2011; Tzeng and de Vellis, 1998; Wang et al., 2006), and are known to establish dorsal forebrain regional identity; (Azim et al., 2009; Bani-Yaghoub et al., 2006; Borello et al., 2014; Gaston-Massuet et al., 2016; Hagey et al., 2014; Hutton and Pevny, 2011; Johansson et al., 2013; Kikkawa et al., 2013; Kishi et al., 2012; Manuel et al., 2011; Miyoshi and Fishell, 2012; Ohtsuka et al., 2001; Ross et al., 2003; Shen and Walsh, 2005; Sur and Rubenstein, 2005; Yang et al., 2015; Zembrzycki et al., 2007).\n\nThe progenitor cell types form the triplet $c_{2}\u2212c_{0}\u2212c_{3}\u00a0(p(T=c_{0}|{g_{i}^{c_{0},c_{2},c_{3}}})=\u00a00.96$, Figure 4D \u2013 top right). The $c_{2}\u2212c_{0}$ branch is mediated by 39 transition genes including LHX2, FEZF2, FOXG1, HMGA1, SP8, OTX1, SOX11, GLI3, SIX3, and ETV5 which suggest that $c_{2}$ is comprised of cortical progenitors (Appolloni et al., 2008; Greig et al., 2013; Kishi et al., 2012; Manuel et al., 2011; Raciti et al., 2013). The $c_{0}\u2212c_{3}$ branch is mediated by 55 transition genes including GTF2I, HIF1A, ID1, ID3, PROX1, POU3F2, SALL1, SOX21 TCF12, TRPS1 and ZHX2, which are associated with mesencephalon and metencephalon regional development, as well as having known involvement with midbrain/hindbrain organizer identity (Buck et al., 2001; Enkhmandakh et al., 2009; Inoue et al., 2012; Jaegle et al., 2003; Kunath et al., 2002; Lavado and Oliver, 2007; Milosevic et al., 2007; Ohba et al., 2004; Uittenbogaard and Chiaramello, 2002; Yao et al., 2017). We additionally inferred the triplet $c_{2}\u2212c_{0}\u2212c_{3}\u00a0(p(T=c_{0}\u00a0|\u00a0{g_{i}^{c_{0},c_{1},c_{3}}})>\u00a00.99$, Figure 4D \u2013 bottom left), which suggests a three way split from early progenitor $c_{0}$ into early differentiated neuron $c_{1}$, and progenitors $c_{2}$ and $c_{3}$.\n\nThe continuation of the $c_{2}$ branch is inferred through triplet $c_{0}\u2212c_{2}\u2212c_{4}$ ($p(T=c_{2}\u00a0|\u00a0{g_{i}^{c_{0},c_{2},c_{4}}})=\u00a00.97$). The $c_{2}\u2212c_{4}$ branch includes transition genes BCL11A, EMX2, FOXP2 and RORB, which are known to be associated with the neocortex and neuronal identity (C\u00e1novas et al., 2015; Ebisu et al., 2016; Greig et al., 2016; Jabaudon et al., 2012; Wiegreffe et al., 2015; Woodworth et al., 2016; Zembrzycki et al., 2007).The triplet $c_{0}\u2212c_{3}\u2212c_{5}$ ($p(T=c_{3}\u00a0|\u00a0{g_{i}^{c_{0},c_{3},c_{5}}})>\u00a00.99$) meanwhile is characterized by transition genes in the $c_{3}\u2212c_{5}$ branch including ASCL1, FOXP2, PAX3, POU3F4, ZIC1, ZIC4, HOXB2, and EN2, which have been shown to regulate fate acquisition in the midbrain/hindbrain (Agoston et al., 2012; Ang, 2006; Di Bonito et al., 2013; Elsen et al., 2008; Hegarty et al., 2013; Miller et al., 2011; Tan et al., 2014).\n\nThe $c_{5}$ cell cluster differentiates into two distinct clusters of post-mitotic neurons -- $c_{6}$ and $c_{7\u00a0}$ ($p(T=c_{5}\u00a0|\u00a0{g_{i}^{c_{5},c_{6},c_{7}}})>\u00a00.99$, Figure 4D \u2013 bottom right). The $c_{5}\u2212c_{6}$ branch is inferred from transition genes including PAX3, CRX, SOX11, EBF2, FOXP4, ASCL1, FOXO3, and SIX3 which have strong expression in developing dopaminergic and gabaergic neurons of the midbrain (Agoston et al., 2012; Erickson et al., 2010; Pino et al., 2014; Yang et al., 2015; Yin et al., 2009; Zhang et al., 2002). Transition genes in the $c_{5}\u2212c_{7}$ branch include ARGFX, DUXA, HES1, NFIB, PPARA, SOX2, SOX7, and SOX9, which are known to be associated with the medulla oblongata region of the hindbrain (Fawcett and Klymkowsky, 2004; Kameda et al., 2011; Kumbasar et al., 2009; Madissoon et al., 2016; Matsui et al., 2000; Stolt et al., 2003).\n\nIn addition to interpreting these individual transition genes defining the major branch splits, we correlated the expression over all predicted transition\u00a0and\u00a0marker genes in neuronal clusters to in vivo developmental human data (Miller et al., 2014). The in vivo data comprise a representative range of microarray data sampled from different parts of the developing brain at post-conception week 15, including forebrain proliferative regions, midbrain, and hindbrain. The differences in data acquisition methods (RNAseq vs. microarray, single-cell vs heterogeneous populations) resulted in relatively low correlations overall, but there are clear associations between individual clusters and specific brain regions (Figure 4E). Specifically, $c_{1}$, maps to the ganglionic eminences, suggesting an interneuron identity, whereas $c_{5},\u00a0c_{6}$ and $c_{7}$ show better mapping to mid- and hindbrain structures, and $c_{4}$ appears to be more closely related to neocortex. Overall, this global comparison, combined with the identification of genes with known regional expression, suggests that the inferred clusters from the in vitro data capture the diversity of differentiation into the\u00a0early stages of the major neuronal lineages (Figure 4F). These lineage predictions based on our analysis techniques were verified experimentally using viral barcoding in a separate work (Yao et al., 2017).\n\nTo estimate the sparsity of the underlying network and\u00a0to find a minimal subset of genes through which lineage could be inferred, we replicated the analysis while only considering a limited set of genes per triplet. We assembled a collection of 20 triplets with maximal leaf-to-leaf distance of 4 nodes, and non-null inferred topology. For each triplet, we ranked genes based on their odds of being a transition gene, $\ud835\udcaa_{i},$ agnostic of the true topology of the triplet. We then replicated the inference process using only the N genes with the greatest odds (Figure 4\u2014figure supplement 1E). We found that with as few as 4 genes per triplet, the correct lineage topology could be inferred for all of the triplets. Genes with greatest odds comprise a restricted subset of genes for further experimental investigation. Further, these findings suggest that the dynamics of expression of just four specific genes are sufficient to monitor a particular lineage decision in single cells.\n\n## Discussion\n\nFinding an informative subspace of variables for data analysis is a general problem in machine learning, both for regression and clustering (Tibshirani, 1996; Witten and Tibshirani, 2010); the innovation in this paper is to use a statistical pattern learned from known biology to inform this subspace search. The approach we take here is complementary to methods that project expression variability onto coordinates of PCA, ICA or t-SNE maps (Marco et al., 2014; Satija et al., 2015; Trapnell et al., 2014), which are combinations of all variables. Searching for sparse representation of the dynamics has the advantage of providing interpretability and experimental direction (McGibbon and Pande, 2017). Following the dynamics of this small set of high-probability transition genes via fluorescent tagging could allow for the tracking of lineage decisions of individual cells in real time. Further, these genes provide a list of candidates for drivers of fate decisions, and hence a set of experimental hypotheses.\n\nNot all genes give us equal information about the dynamics of differentiation. We discovered that genes showing the clear minimum pattern are most predictive of the sequence of lineage transitions during development. Although our pattern discovery and subsequent lineage reconstruction does not assume any functional role for the clear minimum pattern, we note that this pattern is shown by genes known to be regulators of development during hematopoiesis. The same pattern observed in many differentiating systems (Graf and Enver, 2009; Qi et al., 2013; Thomson et al., 2011; Zhang et al., 1999), and is consistent with mutual inhibition. Mutual inhibition, in turn, is hypothesized to play an important role in maintaining multi-stable systems and in mediating transitions between different stable states of multi-stable systems (Ferrell, 2012).\n\nDiscovery of sparse representations of the cell states and variability between them demonstrates the efficacy of low dimensional descriptions of the system. Understanding the dynamics and transitions of complex physical systems composed of a large number of variables has been driven by the discovery of low dimensional order parameters (Anderson, 1978; Landau and Lifshitz, 1951). As opposed to measuring and modeling states as high dimensional objects in their native representation, order parameters provide low dimensional descriptions of the states and dynamics, which has proven crucial in developing both qualitative and quantitative models. Finding small subsets of genes which captures the lineage transitions in cells analogously provides a low dimensional subspace that captures the dynamics in genetic networks and can be useful for modeling (Jang et al., 2017). An accompanying paper allows us to exploit this idea to extract mathematical models for the underlying molecular circuits from single cell gene expression data obtained during germ layer differentiation (Jang et al., 2017).\n\n## Materials and methods\n\n### In vitro neuronal differentiation\n\nSingle-cell transcriptomic data from the in vitro neural differentiation procedure was obtained as described in Yao et al. (2017) (Supplemental information):\n\nhESCs were dissociated with Accutase and plated on Matrigel-coated 24-well plates at 2.5 \u00d7 105 cells/cm2 in DMEM/F12 (#11330\u2013032), 1\u00a0\u00d7\u00a0N2, 1\u00a0\u00d7\u00a0B27 without vitamin A, 2 mM Glutamax, 100 \u03bcM non-essential amino acids, 0.5 mg/mL BSA, 1X Pen-Strep, and 100 \u03bcM 2-mercaptoethanol (referred to as basal medium; all from Thermo Fisher,\u00a0Waltham,\u00a0MA) with 20 ng/mL FGF2 (Thermo Fisher) and 2 \u03bcM thiazovivin. Cortical induction was initiated by changing to the\u00a0basal medium with 5 \u03bcM SB431542 (StemRD,\u00a0Burlingame,\u00a0CA), 50 nM LDN193189 (Reagents Direct,\u00a0Encinitas,\u00a0CA) and 1 \u03bcM cyclopamine (Stemgent,\u00a0Lexington,\u00a0MA) (referred to as NIM). NIM was changed daily for 11 days. On day 12, cells were dissociated and seeded on Matrigelcoated 24-well plates at 5\u00a0\u00d7\u00a0105/cm2 in basal medium with 20 ng/mL FGF2 and 2 \u03bcM thiazovivin. Progenitor expansion was initiated on D13 by changing to serum-free human neural stem cell culture medium (NSCM, #A10509\u201301 from Thermo Fisher) containing 20 ng/mL FGF2 and 20 ng/mL EGF. NSCM was changed daily for 6 days. Cultures were passaged once more on D19 with Accutase and replated at 5 \u00d7 105 cells/cm2. On D26, cells were dissociated with Accutase and seeded on 24-well plates sequentially coated with poly-D-lysine (Millipore,\u00a0Billerica,\u00a0MA) and laminin (Thermo Fisher) at 1\u00a0\u00d7\u00a0105 cells/cm2 in basal medium supplemented with 20 ng/mL FGF2 and 2 \u03bcM thiazovivin. On D27, medium was changed to a 1:1 mixture of DMEM/F12 and Neurobasal medium (#21103\u2013049) supplemented with 100 \u03bcM cAMP (Sigma-Aldrich, St Louis, MO), 10 ng/mL BDNF (R and D Systems,\u00a0Minneapolis,\u00a0MN), 10 ng/mL GDNF (R and D Systems) and 10 ng/mL NT-3 (R and D Systems) (referred to as ND). Cells were maintained in ND medium for four weeks until day 54 with half medium change every other day. Quality of differentiations was routinely assessed by immunostaining at D12 (PAX6 and DCX), at D26 (LHX2, SOX2, EOMES, POU3F2, and TBR1), and at D54 (MAP2 costained with TBR1, CTIP2, SATB2). In addition flow cytometry at D26 (EOMES, SOX2 and PAX6) was performed. Typically, EOMES at day 26 proved the most valuable quality control metric (~10% of cells by both flow cytometry and immunostaining) and predicted failure at D54. Specifically, when EOMES was low (<1% of cells) differentiations failed and were typically dominated by POU3F2+ cell types and/or non-neural \u2018other\u2019 cell types. These failed differentiations were eliminated from further analysis, typically\u00a0~20% of experiments (5 of 19 experiments in 2016). 50 bp paired-end Smart-Seq2 libraries were prepared from these cells as previously described (Picelli et al., 2013) and mapped as described in Thomsen et al., 2016 and Yao et al. (2017). As each cell was profiled independently (without pooling before amplification, as in methods such as Cel-Seq, STRT, or Drop-Seq), we did not observe the batch effects present in pooling-based methods. Although cells were profiled in plates (batches), there was no significant plate-related variation - this\u00a0Fixed single-cell transcriptomic characteriza is most likely due to amplification being carried out separately in each well of the plate, thereby precluding cross-talk among barcodes, or plate-related differences in amplification. This is clear from the mixing of cells from different plates in the clustering. A complete census is provided (Figure 4\u2014source data 4).\n\n### Gene expression data\n\nHematopoietic gene expression data were downloaded from the Immunological Genome Project (Heng et al., 2008); GEO GSE15907) and log-2 transformed. We restricted the genes considered to 1459 transcription factors. Brain development expression data were log-2 transformed, and 1460 transcription factors were individually normalized by dividing by the 90th-percentile expression value. Lists of mouse and human transcription factors are provided (Figure 1\u2014source data 2, Figure 4\u2014source data 5).\n\n### Software\n\nCalculations were performed using custom written MATLAB code (The Mathworks) on the Harvard Research Computing Odyssey cluster. Code is available at https://github.com/furchtgott/sibilant. t-SNE was done using the package provided in (Van Der Maaten, 2009). Monocole was run in R (Core Team, 2015; Trapnell et al., 2014).\n\n### Description of algorithm\n\nThe algorithm proceeds according to the following steps:\n\nEach of these steps is described in the following section.\n\n### Bayesian framework for inferring cluster identities, state transitions, and marker and transition genes simultaneously\n\n#### Notation; Bayes\u2019 rule\n\nGiven gene expression data from single cells ${g_{i}}$, we built a probabilistic framework to simultaneously infer cell cluster identities, ${C}\u2261{c_{A},c_{B},\u2026}$, the sequence of transitions $T$ between these clusters, the key sets of marker genes ${\\alpha_{i}}$ that define each cell cluster, and genes ${\\beta_{i}}$ that determine the sequence of transitions between clusters. We maximized the joint probability distribution of these variables given the gene expression data, $p(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u2223{g_{i}})$ to determine the maximum likelihood estimates of these parameters.\n\nWe first consider how to solve this problem in the case in which there are three cell clusters, and we will later build a tree using all possible combinations of three cell clusters. Let the set of three cell clusters be cA, cB and cC with gene expression data ${g_{i}^{A,B,C}}$ for all genes $(i=1\u00a0to\u00a0N)$ and all cells. The term $g_{i}^{A,B,C}$ denotes the expression data for just gene $i$ in cells in clusters cA, cB, and cC. The topology $T$ of the relationships between cell clusters cA, cB and cC can take on four possible values: $T=\ud835\udc9c$: cell cluster cA is in the middle (either cA is the progenitor of cB and cC, or cA is an intermediate cell type between cB and cC); $T=\u212c$: cell cluster cB is in the middle; $T=\ud835\udc9e$: cell cluster cC is in the middle; or $T=\u2205$: we cannot determine the topology. Complementarily, for each gene $i$ we define variables $\\alpha_{i}$ and $\\beta_{i}$, where $\\alpha_{i}=1$ and $\\beta_{i}=0$ if the gene is a marker gene, $\\alpha_{i}=0$ and $\\beta_{i}=1$ if the gene is a transition gene, and $\\alpha_{i}=\\beta_{i}=0$ otherwise. Our task is to determine the probability $p(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})$ given gene expression data for all genes ${g_{i}^{A,B,C}}$.\n\nAccording to Bayes\u2019 rule, $p(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})$ is proportional to the probability of the gene expression data given $T$, ${C},\u00a0{\\alpha_{i}}$ and ${\\beta_{i}}$:\n\n$$\np(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})=\\frac{p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C},{\\alpha_{i}},{\\beta_{i}})\u00a0p({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0T,{C})\u00a0p(T|{C})\u00a0p({C})}{p({g_{i}^{A,B,C}})}\n$$\n\nThe denominator of the right hand side of Equation 2 is a normalization constant. Expressions\u00a0$p({\\alpha_{i}},{\\beta_{i}}\u2223T,{C})$, $\u00a0p(T|{C})$, and$\u00a0\u00a0p({C})$ are respectively the prior probabilities of ${\\alpha_{i}}$ and ${\\beta_{i}}$ given $T$ and ${C},\u00a0$the prior probability of $T$ given ${C}$, and the prior probability of ${C}$. We assume that in the absence of any expression data, the probability that a gene is a transition or marker gene is independent of the topology and clustering configuration: $p({\\alpha_{i}},{\\beta_{i}}\u2223T,{C})\u00a0p(T|{C})\u00a0p({C})=p({C})p(T)\\prodi\u00a0p(\\alpha_{i},\\beta_{i})$, and $p(T)=1/4\u00a0$.\n\n#### Conditional independence\n\nIn our model, we assume that knowing the clustering configuration ${C}$, the topology $T$ and whether or not a gene is a marker or transition gene is sufficient to determine the probability distribution for its expression levels in each of the cell clusters. Therefore, the gene expression patterns of different genes are conditionally independent given the topology, clustering and gene type:\n\n$$\np({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C},{\\alpha_{i}},{\\beta_{i}})=\\prodi\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i},\u00a0\\beta_{i})\n$$\n\nThus, Equation 2 becomes\n\n$$\np(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})=\\frac{p({C})p(T)\\prodip(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i},\u00a0\\beta_{i})\u00a0p(\\alpha_{i},\\beta_{i})}{p({g_{i}^{A,B,C}})}\n$$\n\nWe maximize the evaluated $p(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})$ with respect to $T$, ${C}$ and each of the $\\alpha_{i}$ and $\\beta_{i}$ to obtain the most likely relationships between cell types cA, cB and cC, as well as the genes most likely to be marker and transition genes.\n\n#### Expression for p(giA,B,C\u00a0|\u00a0T,{C},\u03b1i=0,\u00a0\u03b2i=1) (transition genes)\n\nTo infer $p(T,{c_{A},c_{B},\u2026},{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}})$, we need a model to compute the probability of the gene expression data for each gene, $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i},\u00a0\\beta_{i})$, given $T$, ${C},$$\\alpha_{i}\u00a0$and $\\beta_{i}$, following Equation 4. Our model for the probability distribution of the expression of a single transition gene $i$ in the three cell types $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i}=0,\u00a0\\beta_{i}=1)$ is defined solely by the geometry of the arrangement of the cell types in gene expression space, as described in the main text. For example, for $T=\ud835\udc9c$ and $\\beta_{i}=1$, our model is that the distribution of the expression levels of $g_{i}^{A,B,C}$ in the three cell types A, B and C has the smallest mean value in either B or C but not in A (Figure 2A). If the distribution of the expression of gene $i$ in cell type A is $D_{A}(g_{i}^{A}\u00a0|\u00a0\\mu_{A}^{i},\\sigma_{A}^{i},{C})$ (we assume a log-normal distribution) with a mean $\\mu_{A}^{i}$ and standard deviation $\\sigma_{A}^{i}$, with analogous expressions for cell types B and C, then our model defining $p(g_{i}^{A,B,C}\u00a0|\u00a0T=\ud835\udc9c,\\beta_{i}=1,{C})$ is that either $\\mu_{B}^{i}<\u00a0\\mu_{C}^{i}$ and $\\mu_{B}^{i}<\u00a0\\mu_{A}^{i}$ or $\\mu_{C}^{i}<\u00a0\\mu_{B}^{i}\u00a0$and $\\mu_{C}^{i}<\u00a0\\mu_{A}^{i}$, where $\\mu_{A}^{i}$, $\\mu_{B}^{i}$ and $\\mu_{C}^{i}$ are the mean values of the expression levels of $g_{i}$ in cell types A, B and C. Thus,\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T=\ud835\udc9c,\\beta_{i}=1,{C})=\\frac{1}{2}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{B}^{i}<\u00a0\\mu_{A}^{i},\\mu_{B}^{i}<\u00a0\\mu_{C}^{i},{C})+p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{C}^{i}<\u00a0\\mu_{A}^{i},\\mu_{C}^{i}<\u00a0\\mu_{B}^{i},{C})}\n$$\n\nThe terms in Equation 5 can be calculated by integrating over the prior probability distribution of the means $\\mu_{A}^{i}$, $\\mu_{B}^{i}$ and $\\mu_{C}^{i}$ and standard deviations $\\sigma_{A}^{i}$, $\\sigma_{B}^{i}$ and $\\sigma_{C}^{i}$, with the conditions on the means constraining the domains of integration:\n\n$$\np(g_{i}^{A,B,C}|T=\ud835\udc9c,\\beta_{i}=1,{C})=\\frac{1}{2}\u222d\\mu_{B}^{i}<\\mu_{A}^{i},\\mu_{B}^{i}<\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i}D_{A}(g_{i}^{A}|\\mu_{A}^{i},\\sigma_{A}^{i})D_{B}(g_{i}^{B}|\\mu_{B}^{i},\\sigma_{B}^{i})D_{C}(g_{i}^{C}|\\mu_{C}^{i},\\sigma_{C}^{i})p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})+\\frac{1}{2}\u222d\\mu_{C}^{i}<\\mu_{A}^{i},\\mu_{C}^{i}<\\mu_{B}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i}D_{A}(g_{i}^{A}|\\mu_{A}^{i},\\sigma_{A}^{i})D_{B}(g_{i}^{B}|\\mu_{B}^{i},\\sigma_{B}^{i})D_{C}(g_{i}^{C}|\\mu_{C}^{i},\\sigma_{C}^{i})p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})\n$$\n\nProbabilities $p(g_{i}^{A,B,C}\u00a0|\u00a0T=\u212c,\\beta_{i}=1,{C})$ and $p(g_{i}^{A,B,C}\u00a0|\u00a0T=\ud835\udc9e,\\beta_{i}=1,{C})$ are defined similarly.\n\nIn addition to topologies $\ud835\udc9c$, $\u212c$ and $\ud835\udc9e$, we consider a null hypothesis $\u2205$ in which transition genes have differential expression levels between states, but these levels are not correlated with any particular topology of states. This corresponds to having gene expression levels from cell-types A, B and C coming from three distributions with no restrictions on the relative order of the three means:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T=\u2205,\\beta_{i}=1,{C})=\u222d\\mu_{A}^{i},\\mu_{B}^{i},\u00a0\u00a0\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i}D_{A}(g_{i}^{A}\u00a0|\u00a0\\mu_{A}^{i},\\sigma_{A}^{i})D_{B}(g_{i}^{B}\u00a0|\u00a0\\mu_{B}^{i},\\sigma_{B}^{i})D_{C}(g_{i}^{C}\u00a0|\u00a0\\mu_{C}^{i},\\sigma_{C}^{i})p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})\n$$\n\nNote that the probability of the data given the null hypothesis is the average of the probabilities of the data given the non-null hypotheses:\n\n$$\np(g_{i}^{A,B,C}|T=\u2205,\\beta_{i}=1,{C})=\\frac{1}{3}\\sumT=A,B,Cp(g_{i}^{A,B,C}|T,\\beta_{i}=1,{C})\n$$\n\nNote that $p(g_{i}^{A,B,C}|T,{C},\\alpha_{i}=0,\\beta_{i}=1)$ depends on both $T$ and ${C}$.\n\n#### Expression for p(giA,B,C\u00a0|\u00a0T,{C},\u03b1i=1,\u03b2i=0) (marker genes)\n\nOur model for marker genes assumes that the probability distribution for the expression level of such genes, $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i}=1,\\beta_{i}=0)$ to be independent of $T$ and to be generated from distributions with two cell-types having a low value and the third a high value (for example, $D_{AB}(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{AB}^{i},\\sigma_{AB}^{i})$ for cell-types A and B and $D_{C}(g_{i}^{C}\u00a0|\u00a0\\mu_{C}^{i},\\sigma_{c}^{i})$ for cell-type C, with the constraint $\\mu_{AB}^{i}<\\mu_{C}^{i})$:\n\n$$\np(g_{i}^{A,B,C}|T,{C},\\alpha_{i}=1,\\beta_{i}=0)=\\frac{1}{3}\u222d\\mu_{AB}^{i}<\\mu_{C}^{i},\\sigma_{AB}^{i},\\sigma_{C}^{i}D_{AB}(g_{i}^{AB}|\\mu_{AB}^{i},\\sigma_{AB}^{i})D_{C}(g_{i}^{C}|\\mu_{C}^{i},\\sigma_{C}^{i})p(\\mu_{AB}^{i},\\mu_{C}^{i},\\sigma_{AB}^{i},\\sigma_{C}^{i})+\\frac{1}{3}\u222d\\mu_{AC}^{i}<\\mu_{B}^{i},\\sigma_{AC}^{i},\\sigma_{B}^{i}D_{AC}(g_{i}^{AC}|\\mu_{AC}^{i},\\sigma_{AC}^{i})D_{B}(g_{i}^{B}|\\mu_{B}^{i},\\sigma_{B}^{i})p(\\mu_{AC}^{i},\\mu_{B}^{i},\\sigma_{AC}^{i},\\sigma_{B}^{i})+\\frac{1}{3}\u222d\\mu_{BC}^{i}<\\mu_{A}^{i},\\sigma_{BC}^{i},\\sigma_{A}^{i}D_{BC}(g_{i}^{BC}|\\mu_{BC}^{i},\\sigma_{BC}^{i})D_{B}(g_{i}^{A}|\\mu_{A}^{i},\\sigma_{A}^{i})p(\\mu_{BC}^{i},\\mu_{A}^{i},\\sigma_{BC}^{i},\\sigma_{A}^{i})\n$$\n\nNote that $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\u00a0\\alpha_{i}=1,\\beta_{i}=0)=\u00a0\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0{C},\u00a0\\alpha_{i}=1,\\beta_{i}=0)$ does not depend on $T$ but does depend on ${C}$.\n\n#### Expression for p(giA,B,C\u00a0|\u00a0T,{C},\u00a0\u03b1i=0,\u03b2i=0) (irrelevant genes)\n\nOur model for genes that are neither marker nor transition genes is that the expression levels of such genes, $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\u00a0\\alpha_{i}=0,\\beta_{i}=0)$, is generated from one single distribution $D_{ABC}(g_{i}^{A,B,C}\u00a0|\u00a0\\mu^{i},\\sigma^{i})$:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i}=0,\\beta_{i}=0)=\u222c\\mu^{i},\\sigma^{i}D_{ABC}(g_{i}^{A,B,C}\u00a0|\u00a0\\mu^{i},\\sigma^{i})p(\\mu^{i},\\sigma^{i})\n$$\n\nNote that $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\u00a0\\alpha_{i}=0,\\beta_{i}=0)=\u00a0\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0\u00a0\\alpha_{i}=0,\\beta_{i}=0)$ does not depend on $T$ or ${C}$.\n\n#### Numerical integration\n\nEach of the probabilities on the right hand side of Equation 4 is evaluated numerically as above. We assume the distribution of the expression of gene $i$ in cluster cA\u00a0$D_{A}(g_{i}^{A}\u00a0|\u00a0\\mu_{A}^{i},\\sigma_{A}^{i})$ to be log-normal. Given $m$ log2-transformed replicate measurements $g_{i}^{A}$ of gene expression of gene $i$ in cells belonging to cluster cA, the probability of the data assuming mean $\\mu_{A}^{i}$ and standard deviation $\\sigma_{A}^{i}$ is:\n\n$$\nD_{A}(g_{i}^{A}|\\mu_{A}^{i},\\sigma_{A}^{i})=(\\frac{1}{\\sqrt{2\\pi\\sigma_{A}^{i2}}})^{m}\\prodg_{i}^{A}me^{\u2212\\frac{(g_{i}^{A}\u2212\\mu_{A}^{i})^{2}}{2\\sigma_{A}^{i2}}}.\n$$\n\nDistributions $D_{B},\u00a0D_{C},\u00a0D_{AB},\u00a0D_{AC},\u00a0D_{BC}$ and $D_{ABC}$ are defined analogously.\n\nWe take the a priori probability distribution of $\\mu^{i}$ and $\\sigma^{i}$, $p(\\mu^{i},\\sigma^{i})$ as uniform over a certain range of means and standard deviations estimated from the data. For the log2-transformed hematopoietic gene expression data, we take $2<\\mu^{i}<14$ and $0<\\sigma^{i}<0.75$.\n\nWe take the prior probabilities for the distributions in different cell types to be independent: $p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})=\u00a0p(\\mu_{A}^{i},\\sigma_{A}^{i})\u00a0p(\\mu_{B}^{i},\\sigma_{B}^{i})\u00a0p(\\mu_{C}^{i},\\sigma_{C}^{i})$. The constraints on the order of the means are enforced by the domain of integration, and the prior must be properly normalized over this domain. For example, in Equation 6,\n\n$$\n\\frac{1}{2}\u222d\\mu_{B}^{i}<\\mu_{A}^{i},\\mu_{B}^{i}<\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i}p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})+\\frac{1}{2}\u222d\\mu_{C}^{i}<\\mu_{A}^{i},\\mu_{C}^{i}<\\mu_{B}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i}p(\\mu_{A}^{i},\\mu_{B}^{i},\\mu_{C}^{i},\\sigma_{A}^{i},\\sigma_{B}^{i},\\sigma_{C}^{i})=1.\n$$\n\nIntegrals were evaluated numerically in MATLAB using trapezoidal integration with step-sizes $\\delta\\mu$ = 0.05 and $\\delta\\sigma$ = 0.01.\n\nThe choice of a log-normal distribution could potentially confound the results, particularly for single-cell RNA-Seq data with significant zero-inflation. This is a potential area for improvement in our algorithm, but the method can easily be adapted to model different distributions of RNA expression, such as gamma distributions (Shahrezaei and Swain, 2008; Wills et al., 2013) or beta-Poisson distributions (Delmans and Hemberg, 2016; Vu et al., 2016). In either case, the probability of the data given different topologies would be computed by numeric integration over the parameters of the distribution, for\u00a0example, $\\alpha$ and $\\beta$ for the Gamma distribution, by replacing the log-normal distributions in Equations 7, 9 and 10 with ones from the appropriate model.\n\nThe choice of the right parametric form for single-cell RNA expression is still an area of active research. Our choice of log-normal distributions assumes that higher order moments of the distributions (beyond standard deviation) ought to have a minimal contribution to the predictions, but we have not tested this extensively.\n\nAlthough the default prior was the uniform prior, we also implemented an empirical prior $p(\\mu,\u00a0\\sigma)$ by estimating the empirical distribution over all the Immgen cell types, using the kernel density estimation code provided in (Botev et al., 2010). The resulting hematopoietic lineage tree was identical. Using the kernel-density-estimated empirical prior may provide more stability in future analyses.\n\n#### Probability of topology given gene expression and cluster identities p(T\u00a0|\u00a0{giA,B,C},{C})\n\nWe can derive the probability of the topology given the gene expression data and cluster identities $p(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})$ by summing over all the ${\\alpha_{i}}$ and ${\\beta_{i}}$ to find the probability of the data given topology $p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C})$:\n\n$$\np({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C})=\\sum\\alpha_{i},\\beta_{i}\u00a0p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{\\alpha_{i}},{\\beta_{i}},{C})p({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0T,{C})=\\sum\\beta_{1}\\sum\\beta_{2}\u2026\\sum\\beta_{N}\\prodi\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\alpha_{i},\u00a0\\beta_{i},{C})\u00a0p(\\alpha_{i},\u00a0\\beta_{i})=\\prodi(\\sum\\beta_{i}\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\alpha_{i},\u00a0\\beta_{i},{C})p(\\alpha_{i},\\beta_{i}))\n$$\n\n\n\n$$\np({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C})=\\prodi\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C}),\n$$\n\nwhere the probability of gene expression data for gene $i$ given topology $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})$\u00a0is obtained by summing $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\u00a0\\alpha_{i},\\beta_{i})$ over $\\alpha_{i}$ and $\\beta_{i}$:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})=\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\\alpha_{i}=0,\\beta_{i}=1)p(\\beta_{i}=1)+p(g_{i}^{A,B,C}\u00a0|\u00a0{C},\\alpha_{i}=1,\\beta_{i}=0)p(\\alpha_{i}=1,\\beta_{i}=0)+p(g_{i}^{A,B,C}\u00a0|\u00a0\\alpha_{i}=0,\\beta_{i}=0)p(\\alpha_{i}=0,\\beta_{i}=0).\n$$\n\nWe consider the odds of a gene being a transition gene $p(\\beta_{i}=1)/p(\\beta_{i}=0)$ as a sparsity parameter, which we vary. We take $p(\\alpha_{i}=0\u00a0|\u00a0\\beta_{i}=0)=\u00a0p(\\alpha_{i}=1\u00a0|\u00a0\\beta_{i}=0)=1/2.$\n\nThe probability of topology $T$ given data is proportional to the probability of the data given topology $T$ (using Bayes\u2019 rule):\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})=\\frac{p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C})p(T)}{p({g_{i}^{A,B,C}}\u00a0|\u00a0{C})},\n$$\n\nwhere\n\n$$\np({g_{i}^{A,B,C}}\u00a0|\u00a0{C})=\\sumTp(T)p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C}).\n$$\n\nTherefore, using Equation 14, we obtain the following expression for $p(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})$:\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})=\\frac{p(T)\\prodip(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})}{\\sumTp(T)\\prodip(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})}.\n$$\n\nEquation 18 can be written more explicitly by rewriting Equation 15 as follows:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})=p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=0,{C})p(\\beta_{i}=0)+p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=1,{C})p(\\beta_{i}=1)=p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})\u00a0p(\\beta_{i}=0)(1+\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=1,{C})p(\\beta_{i}=1)}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})p(\\beta_{i}=0)}).\n$$\n\nHere we have used the fact noted earlier that in our generating model, $p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\alpha_{i}=1,\u00a0\u00a0\\beta_{i}=0,\u00a0{C})=p(g_{i}^{A,B,C}\u00a0|\u00a0\\alpha_{i}=1,\u00a0\u00a0\\beta_{i}=0,{C})$ and $p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\alpha_{i}=0,\u00a0\u00a0\\beta_{i}=0,\u00a0{C})=p(g_{i}^{A,B,C}\u00a0|\u00a0\\alpha_{i}=0,\u00a0\u00a0\\beta_{i}=0)$ do not depend on $T$ (Equation 10). The terms $\\prodip(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})\u00a0p(\\beta_{i}=0)$ cancel out in the numerator and denominator of Equation 18, and we can write Equation 18 in terms of ratios of the probabilities of the data given transition-gene and non-transition-gene status:\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})=\\frac{p(T)\\prodi(1+\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=1,{C})p(\\beta_{i}=1)}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})p(\\beta_{i}=0)})}{\\sumTp(T)\\prodi(1+\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=1,{C})p(\\beta_{i}=1)}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})p(\\beta_{i}=0)})}.\n$$\n\nWe can rewrite Equation 20 as:\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})=\\frac{p(T)\\prodi(1+\\frac{1}{p(T)}\ud835\udcaa_{i}\u00a0p(T\u2223g_{i}^{A,B,C},\u00a0\\beta_{i}=1,{C}))}{\\sumTp(T)\\prodi(1+\\frac{1}{p(T)}\ud835\udcaa_{i}\u00a0p(T\u2223g_{i}^{A,B,C},\u00a0\\beta_{i}=1,{C}))},\n$$\n\nwhere $\ud835\udcaa_{i}$ is the odds that gene $i$ is a transition gene, given clustering:\n\n$$\n\ud835\udcaa_{i}=\\frac{p(\\beta_{i}=1\u00a0|\u00a0g_{i}^{A,B,C},{C})}{p(\\beta_{i}=0\u00a0|\u00a0g_{i}^{A,B,C},{C})}=\u00a0\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,{C})}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=0,{C})}\\frac{p(\\beta_{i}=1)}{p(\\beta_{i}=0)}\n$$\n\nand $p(T\u00a0|\u00a0g_{i}^{A,B,C},\u00a0\\beta_{i}=1,{C})$ is the probability of $T$ given only gene expression data for gene $i$, clustering and that gene $i$ is a transition gene:\n\n$$\np(T\u00a0|\u00a0g_{i}^{A,B,C},\u00a0\\beta_{i}=1,{C})=\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,\u00a0\u00a0T,{C})\u00a0p(T)}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,{C})}.\n$$\n\nThus each gene\u2019s contribution $p(T\u00a0|\u00a0g_{i}^{A,B,C},\u00a0\\beta_{i}=1,{C})$ to the probability of the topology given total gene expression $p(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})$ is weighted by the odds $\ud835\udcaa_{i}$ that it is transition gene.\n\n#### Rewriting Equation 21 in terms of negative votes\n\nLet us denote the probability of gene expression data for gene $i$ given that cell cluster $\u03be$ has the distribution with minimum mean expression as $p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{\u03be}^{i}\u00a0ismin,\u00a0{C\u00a0}).$ For example, $p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{B}^{i}\u00a0ismin\u00a0,\u00a0{C\u00a0})=\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{B}^{i}<\u00a0\\mu_{A}^{i},\\mu_{B}^{i}<\u00a0\\mu_{C}^{i},\u00a0{C})$. Then, using $p(T)=1/4$ and Equations 5 and 8, we can write:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,{C})=\\frac{1}{4}[\\sumT=\ud835\udc9c,\u212c,\ud835\udc9e,\u2205p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=0,{C\u00a0})]=\\frac{1}{4}[\\sum\u03be=A,B,Cp(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{\u03be}^{i}\u00a0is\u00a0min,\u00a0{C\u00a0})\u23dfT=\ud835\udc9c,\u212c,\ud835\udc9e+\\frac{1}{3}\\sum\u03be=A,B,Cp(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{\u03be}^{i}\u00a0is\u00a0min,\u00a0{C\u00a0})\u23dfT=\u2205]=\\frac{1}{3}[\\sum\u03be=A,B,Cp(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{\u03be}^{i}\u00a0is\u00a0min,\u00a0{C\u00a0})]\n$$\n\nTherefore, for $T=\ud835\udc9c,\u212c,\ud835\udc9e$, we can rewrite Equation 5 as:\n\n$$\np(g_{i}^{A,B,C}\u00a0|\u00a0T,\\beta_{i}=1,{C\u00a0})=\\frac{1}{2}[3\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,{C\u00a0})\u2212\u00a0p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{T}^{i}\u00a0ismin,\u00a0{C\u00a0})]\n$$\n\nCombining Equations 21 and 25, we derive, for $T\\neq\u2205$:\n\n$$\np(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})\u221dp(T)\\prodi(1+\\frac{p(g_{i}^{A,B,C}|T,\\beta_{i}=1,{C})}{p(g_{i}^{A,B,C}|\\beta_{i}=1,{C})}\ud835\udcaa_{i})\u221dp(T)\\prodi(1+\\frac{\\frac{1}{2}[3\u00a0p(g_{i}^{A,B,C}\u2223\u00a0\\beta_{i}=1,{C})\u2212p\u00a0(g_{i}^{A,B,C}\u2223\u00a0\\mu_{T}^{i}\u00a0ismin,\u00a0{C\u00a0})]}{p(g_{i}^{A,B,C}|\\beta_{i}=1,{C})}\ud835\udcaa_{i})\u221d\u00a0p(T)\\prodi(1+\\frac{3}{2}\ud835\udcaa_{i}[1\u2212p(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{A,B,C},\\beta_{i}=1,{C})]),\n$$\n\nwhere $p(\\mu_{T}^{i}ismin\u00a0|\u00a0\u00a0g_{i}^{A,B,C},\\beta_{i}=1,{C})$ is the probability that cell cluster $T$ (the intermediate cluster in topology $T$) has the distribution with the minimum mean for gene $i$:\n\n$$\np(\\mu_{T}^{i}\u00a0ismin\u00a0|\u00a0g_{i}^{A,B,C},\\beta_{i}=1,{C})=\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{T}^{i}\u00a0ismin,{C\u00a0})\u00a0p(\\mu_{T}^{i}\u00a0ismin|\\beta_{i}=1,{C})\u00a0}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1)}=\\frac{1}{3}\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0\\mu_{T}^{i}\u00a0ismin,\u00a0{C\u00a0})\u00a0\u00a0}{p(g_{i}^{A,B,C}\u00a0|\u00a0\\beta_{i}=1,{C})}.\n$$\n\nEvery gene can be thought of as casting a vote $\u2212p(\\mu_{T}^{i}ismin\u00a0|\u00a0g_{i}^{A,B,C},\\beta_{i}=1,{C})$ against cell type $T$ being the intermediate, and this vote is weighted by the odds $\ud835\udcaa_{i}$ of the gene $i$ being a transition gene and having a unique minimum, given the clustering. This corresponds to\u00a0Equation 1 in the main text.\n\n#### Expression for p(T,{\u03b1i},{\u03b2i}\u00a0|\u00a0{giA,B,C},{C})\n\nOnce $p(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C})$ is calculated, it is straightforward to find $p(T,{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}},{C})$:\n\n$$\np(T,{\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}},{C})=\u00a0p({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}},T,{C})p(T\u00a0|\u00a0{g_{i}^{A,B,C}},{C}),\n$$\n\nwhere $p({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}},T,{C})$ is the probability of ${\\alpha_{i}}$ and ${\\beta_{i}}\u00a0$given the particular topology $T$, clustering ${C}$ and gene expression. Because we have assumed that gene expression patterns $p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C},\u00a0\\alpha_{i},\\beta_{i})$ are conditionally independent given $T$, ${C}$, $\\alpha_{i}$ and $\\beta_{i}$ (Equation 3), the probabilities of being marker or transition genes $\\alpha_{i}$ or $\\beta_{i}$ are also conditionally independent given gene expression, clustering and the topology:\n\n$$\np({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0{g_{i}^{A,B,C}},T,{C})=\\frac{p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{\\alpha_{i}},{\\beta_{i}},{C})\u00a0p({\\alpha_{i}},{\\beta_{i}}\u00a0|\u00a0T,{C})}{p({g_{i}^{A,B,C}}\u00a0|\u00a0T,{C})}=\\prodi\u00a0\\frac{p(g_{i}^{A,B,C}\u00a0|\u00a0T,\\alpha_{i},\\beta_{i},{C})\u00a0p(\\alpha_{i},\\beta_{i}\u00a0|\u00a0T,{C})}{p(g_{i}^{A,B,C}\u00a0|\u00a0T,{C})}=\\prodi\u00a0p(\\alpha_{i},\\beta_{i}\u00a0|\u00a0T,{C},\u00a0g_{i}^{A,B,C}),\n$$\n\nwhere $p(\\alpha_{i},\\beta_{i}\u00a0|\u00a0T,{C},\u00a0g_{i}^{A,B,C})$ is the probability that gene $i$ is a marker or transition gene given its gene expression, the clustering, and that the topology is $T$.\n\n#### Choice of prior odds does not affect the most likely topology\n\nThe only free parameter in our calculation above is the prior odds of gene i being a transition gene, $p(\\beta_{i}=1)/p(\\beta_{i}=0)$. At one extreme, if $p(\\beta_{i}=1)/p(\\beta_{i}=0)\u21920$, then $p(T\u00a0|\u00a0{g_{i}^{A,B,C}})\u2192p(T)$: if we assume that none of the genes are transition genes, then knowing gene expression does not give us any new knowledge of the topology $T$, since only transition genes are informative about $T$. At the other extreme, if $p(\\beta_{i}=1)/p(\\beta_{i}=0)\u2192\u221e$ then the null hypothesis dominates: if all genes are transition\u00a0genes, then there will be negative votes against all topologies. We computed the behavior of $p(T\u00a0|\u00a0{g_{i}^{A,B,C}})$ between these two limits to determine the sensitivity of our answer to $p(\\beta_{i}=1)/p(\\beta_{i}=0)$.\n\nFigure 2\u2014figure supplement 1 shows the dependence of the probabilities $p(T\u00a0|\u00a0{g_{i}^{A,B,C}})$ on the prior odds for triplets CMP/ST/MPP and GMP/MEP/FrBC for values of $p(\\beta_{i}=1)/p(\\beta_{i}=0)$ between 10\u22128 and 102. For triplet CMP/ST/MPP the topology $ST\u2261CMP\u2212ST\u2212MPP$ dominates for $p(\\beta_{i}=1)/p(\\beta_{i}=0)$ between 10\u22122 and 10, whereas for triplet MEP/GMP/FrBC there is no value of the prior odds that strongly favors a non-null topology. For most triplets, the most likely topology does not depend on the choice of prior odds; when building lineage trees, we ignore those triplets where different choices of prior odds lead to different most-likely topologies, i.e. there is more than one non-null topology that reaches probability 0.6 over the range of prior odds.\n\n### Determination of lineage tree from triplet topologies\n\n#### Selection of triplets\n\nIn order to build lineage trees from the topologies we determine for each cell type, we select the triplets for which our determination of the topology is most robust. There is one free parameter in our model: the prior odds for a gene to be a transition gene in the absence of gene expression data, $p(\\beta_{i}=1)/p(\\beta_{i}=0)$. For each triplet, we vary this parameter between 10\u22126 and 102 and calculate the probability of the topology given gene expression data $p(T\u00a0|\u00a0{g_{i}^{A,B,C}})$ as a function of the prior odds.\n\nWe want to consider only triplets which showed a single dominant topology. We exclude triplets which show a weak probability for a particular topology or ones which depend on a particular choice of prior odds. We also do not consider triplets which show a strong probability for two different topologies, depending on the choice of prior odds.\n\nThere were 14 such triplets among the 165 hematopoietic triplets. Mathematically, these cases come up when the genes that are most likely to show the clear minimum pattern (furthest on the right in a \u2018dot plot\u2019) suggest one topology, but if one used a more permissive value of the sparsity parameter, a different topology wins out. One of the cell types might have a small number of genes with very high odds, but then fewer genes with moderately high odds compared to the other cell types. We did not notice a clear pattern in the identity of the triplets exhibiting this behavior, but 9 of the 14 were triplets of length five or greater in the Adolfsson model. One of the triplets with this behavior was the MLP/CMP/GMP triplet, and the dominant topology was either MLP (at low prior odds) or CMP (at higher prior odds). Interestingly, both cell types are progenitors to GMP in the Adolfsson model.\n\nWe consider triplets for which only one non-null topology has probability $p(T\u00a0|\u00a0{g_{i}^{A,B,C}})$greater than 0.6. The\u00a0probabilities of the different topologies for each triplet in the hematopoietic tree are shown in Figure 2\u2014source data 1 and for the triplets in the cortical development tree in Figure 4\u2014source data 2.\n\n#### Pruning rule\n\nWe assemble the triplets with known topology into an undirected graph. Since we determined topologies by considering cell types three at a time, we obtain topological relationships involving both cell types that are nearest neighbors and cell types that are more distantly related. In order to reconstruct the tree, we must determine which cell types are nearest neighbors and which ones are separated by one or more intermediate cell types.\n\nThe set of inferred topologies allows us to determine which cell types are separated by intermediates. For every pair of cell types, we ask whether any of the inferred topologies features an intermediate between the two cell types. If such a topology has been inferred, we consider that the two cell types are not nearest neighbors, and that at least one other cell type is an intermediate. For example, we can ignore triplet CMP \u2013 LT \u2013 MPP because triplet LT \u2013 ST \u2013 CMP testifies that there exists an intermediate between LT and CMP, and triplet LT \u2013 ST \u2013 MPP testifies that there exists an intermediate between LT and MPP (Figure 3\u2014figure supplement 1).\n\nNote that this pruning rule does not assume the absence of loops. The lineage tree we infer for the hematopoietic progenitors contains a loop that includes ST to CMP to GMP on one side and ST to MPP to MLP to GMP on the other side. The loop involves triplets CMP \u2013 ST \u2013 MPP, ST \u2013 CMP \u2013 GMP, ST \u2013 MPP \u2013 MLP and MPP \u2013 MLP \u2013 GMP (we cannot determine the topology of triplet CMP/MLP/GMP). None of the triplets shows a topology that would allow us to break up the loop.\n\n#### Distinguishing between two models of hematopoiesis\n\nThe topologies we infer support the model from Adolfsson et al. (2005), in which CMP splits from ST-HSC. In particular, there are several triplets that can distinguish the Adolfsson model from the traditional picture, and they support the Adolfsson model. These triplets include CMP \u2013 ST \u2013 MPP, CMP \u2013 ST \u2013 MLP, MEP \u2013 ST \u2013 MLP and CMP \u2013 LT \u2013 MPP. These triplets show that, unlike in the traditional picture, cell types CMP and MEP split from ST are not descended from MPP or MLP.\n\nOn the other hand, triplets LT \u2013 MLP \u2013 GMP, ST \u2013 MLP \u2013 GMP and MPP \u2013 MLP \u2013 GMP show that MLP is an intermediate between the earliest progenitors and GMP. See also Figure 2\u2014figure supplement 2 and Figure 2\u2014source data 2.\n\n### Stability analysis\n\nThe inference algorithm depends on several parameters and priors. We performed a stability analysis for both the microarray hematopoietic data and the human brain single cell data to determine the parameter ranges for which the inferred lineage tree was unchanged.\n",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "1401acfe-1fc8-4987-9146-5deb6fcc2b86",
+      "submission_id": "ce2bfa10-4266-4d85-9198-672e1331edf0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Yosef, University of California , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20488.033](https://doi.org/10.7554/eLife.20488.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Discovering sparse transcription factor codes for cell states and state transitions during development\" for consideration by eLife. Your article has been favorably evaluated by Arup Chakraborty (Senior Editor) and three reviewers, one of whom, Nir Yosef (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper presents an interesting framework for identification of lineage/ developmental relationships based on whole transcriptome profiles. The basic notion is that differentially expressed genes among triplets of samples (representing either a developmental fork or a linear developmental progression) should largely exhibit a prototypical pattern that reflects the lineage relationship. The authors successfully apply this to infer lineage relationship in hematopoiesis, using bulk- level RNA-seq. They then turn to apply their method to single cell data of early neuronal development, and concomitantly infer clusters of cells (each representing a developmental state), and their organization into a lineage structure. A subset of these results is followed up in another, yet unpublished manuscript. The algorithm was also used and followed up on in a companion manuscript of ESC differentiation.\n\nEssential revisions:\n\nOverall, this study is innovative and provides new insights into cell-type detection and lineage relationship. The method developed here is complementary to existing pseudotime inference methods in single-cell analysis and the paper is clearly written. Nonetheless, the paper may benefit from additional valuation of the method's performance, specifically \u2013 by applications to additional data sets and by systematic comparison with existing methods. More detailed descriptions of their methods is also merited, as described below.\n\n1) \"Lineage progression\" triplets: In the case of cell type B that gives rise to cell type A that gives rise to cell type C the middle node (A) is chosen as the \"root\"\n\n1.1) The terminology \"root cell type\" and \"terminal leaf cell types\" seems inappropriate and confusing in this case and should be revised.\n\n1.2) The minimum-in-leaf model makes sense in the \"Lineage progression\" case as it captures the common scenario of genes that get turned on or off in a lineage path, with some persistence of this state. However, in such triplets that are distant enough along the path this may contradict the single \"pulse\" model (i.e., transient change) proposed in other studies. To explore this, Figure 1 should be revised. Currently it only shows the majority statistics. It would be important to see the fraction of genes that conform to the minimum-in-leaf model (which can be anywhere between 51% and 100%) while contrasting:\n\n1.2.1) \"Lineage progression\" vs. \"cell fate decision\" triplets.\n\n1.2.2) Triplets with leaves vs. triplets that only include internal nodes.\n\n1.2.3) Triplets with different distance in the tree.\n\n2) The Clear-minimum-in-leaf model.\n\n2.1) To further support the validity of the minimum-in-leaf model, the latter extension to Figure 1 (comment 1.2) should also include comparison between all related triplets vs. all unrelated triplets (i.e., representatives from three different branches).\n\n2.2) Subsection \u201cDiscovering sparse patterns correlated with lineage transitions\u201d, third paragraph: There are more than 2 possible patterns for differentially expressed genes between 3 cell types. In addition to the clear minimum A<B=C and clear maximum A=B<C there is also A<B<C, which is actually what is expected for lateral inhibition, discussed in the text several times. This pattern of three clearly distinct expression levels is not discussed at all in the text (in fact, it is excluded from the model, as described in subsection \u201c1. Notation; Bayes\u2019 Rule\u201d, first paragraph). A clear example is HLF, mentioned in the text as higher in MPP compared to CMP, but it is much higher in the third member of the discussed triplet, ST (according to ImmGen skyline browser).\n\n2.3) The B&T subtree used for the observation has a very simple topology of only two branches. That might limit the generality of the conclusion. Indeed, the reconstructed lineage tree of the progenitors include a loop, which is not supported by the literature. Authors should discuss this difference from known tree topology. Also, why did they use their approach to reconstruct only hematopoietic progenitors and not all ~250 ImmGen populations?\n\n3) First algorithm.\n\n3.1) For the formula in the third paragraph of the subsection \u201cUsing patterns to infer lineages\u201d, but I wonder how to draw a cutoff for a tree to be 'correct'. If the method is applied to unrelated cell-types, what is distribution of the p-values?\n\n3.2) How robust is the lineage prediction model to the initialization procedure and parameter choices? For example, how sensitive is the resulting tree on the number of initial clusters? how sensitive are the results for the algorithm's parameters (e.g., probability cutoffs) or for sub-sampling of samples or genes? A similar stability analysis should also be included for the second algorithm (extension to single cells), which can be even more sensitive due to its iterative nature.\n\n4) Application to hematopoiesis:\n\n4.1) It is not clear how well the algorithm can separate related from unrelated triplets? (i.e., representatives from three different branches). While this is mentioned anecdotally in Figure 2, it should be evaluated systematically, e.g., with AUROC.\n\n4.2) Given the constraints of the algorithm, the aggregated lineage tree is undirected. While this is mentioned briefly, this key point should be better clarified in the main text.\n\n5) Algorithm's extension to single cells.\n\n5.1) Comparison to other methods.\n\nRecently a number of papers have been published to infer cell lineages from single-cell gene expression data, such as Monocole (Trapnell et al. NBT, 2014), Treutlein et al. (Nature 2014), Wishbone (Setty, Nature Biotech, 2016), tSCAN (Ji, NAR, 2016), StemID (Grun, Cell Stem Cell 2016), and diffusion map (Haghverdi, Nature Methods, 2016). It will be useful to compare with these methods at least to get a sense to what degree this method provides new information (note: it looks like Figure 4B comes from Monocole, but we could not find a mention for it in the Results section).\n\n5.2) Differential expression in single cells.\n\nThe t-test used to identify clear minimum and clear maximum patterns is appropriate for microarray analysis, but one limitation of t-test is it assumes the underlying distribution is normal, which is not true for RNAseq, and especially single-cell RNA-seq data. Specifically, single-cell RNA-seq can be severely under-powered because many genes (especially transcription factors) have low or even zero expression values due to dropout. Please discuss ways to incorporate more sophisticated tests that addresses this challenge (e.g., as in scDE), or demonstrate why this is not needed.\n\n5.3) Related to that \u2013 the threshold used for definition of a pattern is p<0.005 in a two sample t-test. Though not specified by the authors, it seems that as there are 1500 transcription factors tested, and 3 tests performed per gene (to test the separation of each of the 3 triplet members from the other two), 4500 tests were performed per triplet. Thus, one would expect to find 22 transcription factors (4500*0.005) with a pattern that pass this threshold for each triplet in the absence of a signal. The authors have to address the multiple comparisons issue.\n\n6) Application on Single cell data\n\n6.1) While the single-cell data comes from another manuscript that is under review elsewhere; the information provided on this data is insufficient.\n\n6.1.1) Please provide a compete \"census\" of the data \u2013 how many cells from each condition; how many reads per library, which read lengths were used?\n\n6.1.2) How was the data processed? Should we worry about potential confounders of library quality (which have been presented and discussed time and again in the recent scRNA-seq literature)?\n\n6.2) The algorithm should have been demonstrated first on a single cell RNA-seq datasets where the true cell type transitions tree is known, such as one of the publicly available hematopoietic progenitors single cell RNA-seq datasets.\n\n6.3) There is no estimate of how sparse is the resulting code \u2013 how many genes can be used to decipher the topology? Can they be identified ahead? Is it possible that any group of genes of similar size (~1500) can code for cell states and cell transitions with the same success as the transcription factors?\n\n6.4) It is not clear how the tree was generated. Was it using the generic algorithm from the previous section, or by enforcing the temporal order of the samples? If it is the latter \u2013 please describe the procedure and explain why the generic algorithm does not work.\n",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fd3f7e9d-1a14-4ac1-81ea-1d747bcb8b0c",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C1",
+      "claim": "41 cell types during B- and T-cell development have an experimentally established developmental lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed gene expression data from 41 cell types during B- and T- cell development that have an experimentally established developmental lineage (Figure 1A, Heng et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Heng et al., 2008 and reference to Figure 1A showing the lineage tree.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ca291983-b2cd-4311-ac8d-406564f2d9b8",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C2",
+      "claim": "150 triplets of cell types with experimentally verified lineage relationships were identified from B- and T-cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 150 triplets of cell types with experimentally verified lineage relationships from B- and T- cell development (Heng et al., 2008) (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Heng et al., 2008 and reference to source data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "99b8314c-5192-4544-a74d-8171975f4a6c",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C3",
+      "claim": "56% of triplets contained more than 10 genes exhibiting the clear minimum pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "56% of the triplets contained more than 10 genes exhibiting the clear minimum pattern, and in 100% of these triplets the majority of genes with expression fitting this pattern reached their minimum expression in one of the leaves (Figure 1C) and never in the root of the triplet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "c24c2e67-c867-4589-9f2b-3e2049dac7e0",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C4",
+      "claim": "In 100% of triplets with more than 10 genes exhibiting the clear minimum pattern, the majority of genes reached their minimum expression in one of the leaves and never in the root.",
+      "claim_type": "EXPLICIT",
+      "source": "56% of the triplets contained more than 10 genes exhibiting the clear minimum pattern, and in 100% of these triplets the majority of genes with expression fitting this pattern reached their minimum expression in one of the leaves (Figure 1C) and never in the root of the triplet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "43024eb2-90a7-453d-8ea6-a851afa28e2f",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C5",
+      "claim": "The clear maximum pattern was a poorer indicator of lineage relationships than the clear minimum pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The clear maximum pattern was a poorer indicator of lineage relationships (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "5cb4df81-5ad2-4c97-ba78-79092f2bbf24",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C6",
+      "claim": "83% of triplets had more than 10 genes exhibiting the clear maximum pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "83% of the triplets had more than 10 genes exhibiting this pattern, but 10% of those showed the majority of genes with expression fitting this pattern reaching their maximum in the root while the others did so in the leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis of the clear maximum pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "0b289bee-e396-4c97-b415-70587472e8ee",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C7",
+      "claim": "The integrity of the relationship between the clear maximum pattern and lineage topology was not correlated with the number of genes exhibiting the pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the integrity of the relationship between the clear maximum pattern and lineage topology was not correlated with the number of genes exhibiting the pattern (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ef04f126-23d5-47c8-b75d-94f636727cd5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C8",
+      "claim": "Genes exhibiting the clear minimum pattern include many known to be functionally important for lineage decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "There are many examples of genes known to be functionally important for lineage decisions whose expression patterns fit the clear minimum pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of developmental biology and examples provided in the text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "5f12050e-1975-4a49-a367-7e7a2e3723ab",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C9",
+      "claim": "In lateral inhibition, progenitor cells express genes together (e.g., Notch and Delta) which are differentially expressed in differentiated states.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of lateral inhibition commonly used during development, progenitor cells express genes together (for example, Notch and Delta) which are differentially expressed in the differentiated states (only Notch or only Delta) (Perrimon et al., 2012) reaching the minimum expression level in one of the leaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Perrimon et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "596da29d-20c3-4be7-bed8-c2ff9aed4d2d",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C10",
+      "claim": "The clear minimum pattern is consistent with mutual inhibition mechanisms in development.",
+      "claim_type": "EXPLICIT",
+      "source": "The same pattern is also seen in multiple examples of lineage decisions often involving mutual inhibition, where key genes expressed in the progenitor are differentially regulated in the progeny (Graf and Enver, 2009; Qi et al., 2013; Thomson et al., 2011; Zhang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "883eb352-9bc0-46ef-b903-2c2eba30c60d",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C11",
+      "claim": "PCA analysis failed to reconstruct lineage relationships between all cell types in B- and T-cell development.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our attempt to reconstruct the lineage relationships between all cell types using methods based on PCA failed (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the PCA analysis shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ec0297f6-6171-491d-8da6-f0986869c178",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C12",
+      "claim": "Unrelated triplets show genes exhibiting a clear minimum evenly distributed amongst the cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that while there were a substantial number of genes exhibiting a clear minimum in one of the three cell types in unrelated triplets, their minima were evenly distributed amongst the cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of 100 unrelated triplets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "68a55bed-4614-49e8-98cc-47b9b45cff03",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C13",
+      "claim": "Unrelated triplets have higher entropy than related triplets in the distribution of genes showing the clear minimum pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The unrelated triplets have higher entropy and typically more genes with a minimum level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by entropy analysis shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "9db3e2dc-dd8c-4d35-afb0-06f64f3fb986",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C14",
+      "claim": "The probability of obtaining the null topology differs between related and unrelated triplets with an AUC of 0.96.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the probability of obtaining the null topology was considerably different between the related triplets and the unrelated triplets, with an AUC of 0.96 (Figure 1\u2014figure supplement 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ROC curve analysis shown in Figure 1\u2014figure supplement 3B\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "8f694fda-2f60-4eed-9740-ddfd59cde737",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C15",
+      "claim": "The triplet CMP/ST/MPP has an 84% probability that ST is the intermediate cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Equation 1 above and assuming a sparsity parameter of 0.05, we calculate that there is an 84% chance that the topology is ST (Figure 2C; Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Bayesian inference calculation shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "6c0e66b1-0245-4bce-981a-812abea56291",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C16",
+      "claim": "Transition genes for triplet CMP-ST-MPP include Gata1, Dach1, Gata2, Hlf, Tsc22d1, and Hoxa9.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2D shows the names and associated probabilities of the 12 genes most likely to be transition genes for the triplet CMP\u2212ST\u2212MPP. The transition genes fall into two groups, corresponding to the two groups in Figure 2B. One group, which includes genes Gata1, Dach1, and Gata2, has higher expression in CMP than in MPP; the other group, which includes Hlf, Tsc22d1, and Hoxa9, has higher expression in MPP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by probabilistic analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "d26cf0b1-a5d8-424e-87da-2659ea5169f2",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C17",
+      "claim": "Many transition genes identified include genes previously identified as important for lineage specification.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the values of the probabilities of the genes being transition genes vary with the value of the sparsity parameter, the relative order of different genes does not change. The genes identified include many genes previously identified as being important for lineage specification (Crispino, 2005; Gazit et al., 2013; Miyawaki et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work on lineage specification.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "f609baa3-d9ac-40d1-8fc9-2036fcb44092",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C18",
+      "claim": "Marker genes for ST include Mpl and Rai14.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the transition genes, we identified marker genes (p(\u03b1i=1 | {gi},T)>0.8) present only in ST (including Mpl and Rai14, consistent with [Solar et al., 1998]) and then symmetrically downregulated in both CMP and MPP (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citation to Solar et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ad69cc6b-c178-40a7-a7a2-83f85d471e1d",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C19",
+      "claim": "Marker genes for CMP include Srf, Zeb2, Rbpj and Irf8.",
+      "claim_type": "EXPLICIT",
+      "source": "Marker genes for CMP include Srf, Zeb2, Rbpj and Irf8 (consistent with [Goossens et al., 2011; Kurotaki et al., 2013; Ragu et al., 2010; Robert-Moreno et al., 2005; Tamura et al., 2000])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ff949c87-d7bf-4c0c-9893-c2c80c3d7f53",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C20",
+      "claim": "Marker genes for MPP include Satb1.",
+      "claim_type": "EXPLICIT",
+      "source": "marker genes for MPP include Satb1, consistent with (Satoh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citation to Satoh et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "6056b72f-dae9-4833-9a62-d97e0214cb1c",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C21",
+      "claim": "For triplet MEP/GMP/FrBC, the most likely topology is the null hypothesis with 99% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the case of the triplet of cell types CMP/ST/MPP, for triplet MEP/GMP/FrBC, the distributions of genes supporting different topologies are similar (Figure 2F). Thus the most likely topology calculated using Equation 1 is the null hypothesis (99%), which is that transition genes, if they exist, do not have patterns that depend on the cellular topology (Figure 2G, Figure 2\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Bayesian inference calculation shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "68d3b6f6-c579-4964-9260-8b1379cec5e5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C22",
+      "claim": "Out of 165 possible triplets of hematopoietic progenitors, 144 showed one single non-null topology with probability greater than 0.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 165 possible triplets of hematopoietic progenitors, 144 showed one single non-null topology with probability greater than 0.6 over a range of the prior odds from 10\u22126 to 102.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of all possible triplets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "44f4ef3a-4769-4cd5-aa66-d20d8f03eb2e",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C23",
+      "claim": "The inferred lineage tree supports the Adolfsson model of early hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The lineage tree that we determined is consistent with the Adolfsson model and contains three additional lineage decisions (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the inferred lineage tree shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "5c4d55de-c196-4c09-9621-dfb2508110e5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C24",
+      "claim": "The topology of triplet ST/MPP/CMP distinguishes between the traditional model and the Adolfsson model of hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ST/CMP/MPP triplet (Figure 2B\u2013E) immediately distinguishes between two competing models regarding the hierarchy of early hematopoietic progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the triplet topology analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "f6137174-c964-4599-88b7-10c9c934ea76",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C25",
+      "claim": "The inferred topology CMP-ST-MPP supports the Adolfsson model where ST splits into CMP and MPP.",
+      "claim_type": "EXPLICIT",
+      "source": "We identify both CMP \u2013 ST \u2013 MPP and CMP \u2013 LT \u2013 MPP as the correct topologies, lending support to the Adolfsson model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the inferred triplet topologies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "c3e8fe79-7216-4df3-a64e-d460fc92dfcb",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C26",
+      "claim": "The inferred expected topologies of 8 out of 9 triplets that differ between the Adolfsson and traditional models support the Adolfsson model.",
+      "claim_type": "EXPLICIT",
+      "source": "The Adolfsson and traditional models differ in the topology of 9 triplets. The inferred expected topologies of 8 out of these nine triplets support the Adolfsson model, which led to the identification of the final tree (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of triplet topologies shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "993a9191-a13a-43f0-ae98-3ed13d9b74a2",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C27",
+      "claim": "CMP gives rise to MEP and GMP in the inferred hematopoietic lineage tree.",
+      "claim_type": "EXPLICIT",
+      "source": "The lineage tree that we determined is consistent with the Adolfsson model and contains three additional lineage decisions (Figure 3A\u2013B). First, CMP gives rise to MEP (megakaryocyte/erythroid progenitor) and GMP (granulocyte/macrophage progenitor).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the inferred lineage tree shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "15cd3f9e-c5e4-401d-bb39-1e00ffff2b34",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C28",
+      "claim": "MPP gives rise to MLP, which then splits into GMP and CLP in the inferred hematopoietic lineage tree.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, MPP gives rise to MLP (multilineage progenitor), which then splits into the GMP and CLP (common lymphoid progenitor) cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the inferred lineage tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "b0ac5bfa-9582-4fa3-96b8-2b7c1e316e4e",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C29",
+      "claim": "CLP gives rise to ETP and FrA in the inferred hematopoietic lineage tree.",
+      "claim_type": "EXPLICIT",
+      "source": "In the final lineage decision, CLP gives rise to the ETP (pre-T) and FrA (pre-pro-B) cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the inferred lineage tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "91bcfd68-6625-4e28-aeaf-d64ab7fafda7",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C30",
+      "claim": "Among 14 triplets containing only adjacent cell types, an average of 24 marker genes per cell type and 25 transition genes were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 14 triplets that contained only adjacent cell types, we identified on average 24 marker genes per cell type and 25 transition genes (probability threshold of 0.8, prior odds p(\u03b2i=1)/p(\u03b2i=0) =0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of triplets in the hematopoietic lineage tree.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "f5776ca4-65c3-437d-ab3a-fc4e2ef7ce86",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C31",
+      "claim": "Many identified transition and marker genes are known to be functionally important, including Cebpa, Sfpi1, Gata1, Satb1, Irf8 and Ebf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes we discovered as belonging with high probability to the transition and marker classes of genes at each lineage decision are known in the literature to be functionally important genes, including classic hematopoietic regulators such as Cebpa, Sfpi1, Gata1, Satb1, Irf8 and Ebf1 (see full tables with references in Figure 3C and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by literature references provided in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "7ed40509-7744-46d0-9b5b-9d07a36f84df",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C32",
+      "claim": "Identified genes include many successfully used in hematopoietic reprogramming experiments, including Gata2 and Pbx1.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the genes identified include many genes successfully used in hematopoietic reprogramming experiments, including Gata2 and Pbx1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by references to reprogramming experiments in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ffdcf243-8470-416b-9aea-d8003e394ce2",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C33",
+      "claim": "The inferred intestinal lineage tree differs from Gr\u00fcn et al. only in the progression from crypt base columnar cells to Goblet cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The only disagreement between the two methods is the progression from crypt base columnar cells (C2) to different populations of Goblet cells (C4 and C8). Grun et al. hypothesize a C2 \u2013 C8 \u2013 C4 progression, while we infer the triplet C8 \u2013 C2 \u2013 C4 with p>0.99, suggesting that the progenitor C2 gives rise to both differentiated Goblet subpopulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with Gr\u00fcn et al.'s method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "0cf714ba-da42-4db5-9b0b-e74a45252bec",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C34",
+      "claim": "High probability transition genes in intestinal development include Klf4, Atoh1, Spdef, Foxa1/Foxa2, and Tcf3.",
+      "claim_type": "EXPLICIT",
+      "source": "The high probability transition genes included many factors well known for their roles in tissue homeostasis and development (Figure 3\u2014figure supplement 2B), notably Klf4 (Yu et al., 2012), Atoh1 (VanDussen and Samuelson, 2010), Spdef (Noah et al., 2010), Foxa1/Foxa2 (Ye and Kaestner, 2009), and Tcf3 (Merrill et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 3\u2014figure supplement 2B and citations to published work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "2537201d-8bce-409c-b723-35e4c44b0a53",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C35",
+      "claim": "Single-cell gene expression data from 2217 cells from in vitro human neuronal development were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the latter, we analyzed single-cell gene expression data from 2217 cells from an in vitro differentiation protocol for early human neuronal development (Yao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yao et al., 2017.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "3154d63c-6588-4765-9ed7-187009e1fdeb",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C36",
+      "claim": "Human embryonic stem cells were subjected to SMAD inhibition-based cortical induction, progenitor expansion, and neural differentiation phases.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, human embryonic stem cells (hESCs) were subjected to a SMAD inhibition-based cortical induction phase, a progenitor expansion phase, and a neural differentiation phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ea9443c2-ef83-4c91-a6c4-4ecf2afc0898",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C37",
+      "claim": "Single cells were sorted at 12, 26, 54, and 80 days into differentiation and profiled using SMART-Seq2.",
+      "claim_type": "EXPLICIT",
+      "source": "Single cells were sorted at 12, 26, 54, and 80 days into differentiation, and their gene expression was profiled using the SMART-Seq2 technique (Picelli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol and cites the SMART-Seq2 technique.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "4c9750d3-bfe2-461f-832f-cae7ffab49e8",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C38",
+      "claim": "t-SNE clustering showed separation by day and SOX2 expression but the number of predicted clusters varied depending on the perplexity parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial clustering of the single-cell data, dimensionality reduction by PCA (into 15 above-noise components) followed by t-SNE (Van Der Maaten and Hinton, 2008; Satija et al., 2015) showed separation by day and SOX2 expression (Figure 4A). However, the number of predicted clusters varied depending on the perplexity parameter (Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by t-SNE analysis shown in Figure 4A and Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "dbbca8c2-a07f-40a3-8c5d-3169ab5c5f37",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C39",
+      "claim": "Analysis with Monocle, Monocle2, TSCAN, and StemID did not clearly reconstruct lineage or infer key genes regulating transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of this data with other recent methods such as Monocle and Monocle2 (Trapnell et al., 2014), TSCAN (Ji and Ji, 2016), and StemID (Gr\u00fcn et al., 2016) did not clearly reconstruct lineage or infer key genes regulating transitions (Figure 4A \u2013 Bottom, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison with other methods shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "b203f161-bd6b-422f-86c4-2c8adad9bf75",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C40",
+      "claim": "The iterative clustering procedure converged when the dimension of the re-clustering subspace changed by less than 10% of the total transcription factor space.",
+      "claim_type": "EXPLICIT",
+      "source": "We iterated the clustering-inference procedure until the dimension of the re-clustering subspace changed by less than 10% of the total transcription factor space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the convergence criterion for the algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "dca1f1ab-c3e1-4fa7-88fc-e980b94cd341",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C42",
+      "claim": "45 high probability triplets (p(T | {gi})>0.6) were inferred between the final cell clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred 45 high probability triplets (p(T | {gi})>0.6) between the final cell clusters (Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the inference analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "c198d8e5-6a9b-4c7f-ae45-390906af7f26",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C45",
+      "claim": "The c0-c2 transition genes include DMRTA1, HES1, HES5, FOXG1, PAX6, HMGA2, SOX2, SOX3, SOX9, SOX6, SP8, OTX2, TGIF, ID4, SOX3, TCF7L2, and TCFL1.",
+      "claim_type": "EXPLICIT",
+      "source": "The c0\u2212c2 transition genes include DMRTA1, HES1, HES5, FOXG1, PAX6, HMGA2, SOX2, SOX3, SOX9, SOX6, SP8, OTX2, TGIF, ID4, SOX3, TCF7L2, and TCFL1 which are known to be expressed in forebrain progenitors of the developing neocortex, thalamus, and hypothalamus (Abraham et al., 2013; Pozniak et al., 2010; Shimojo et al., 2011; Tzeng and de Vellis, 1998; Wang et al., 2006), and are known to establish dorsal forebrain regional identity; (Azim et al., 2009; Bani-Yaghoub et al., 2006; Borello et al., 2014; Gaston-Massuet et al., 2016; Hagey et al., 2014; Hutton and Pevny, 2011; Johansson et al., 2013; Kikkawa et al., 2013; Kishi et al., 2012; Manuel et al., 2011; Miyoshi and Fishell, 2012; Ohtsuka et al., 2001; Ross et al., 2003; Shen and Walsh, 2005; Sur and Rubenstein, 2005; Yang et al., 2015; Zembrzycki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and extensive citations to published work on forebrain development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "8c99e63b-2955-41ce-bee3-dceec66bda63",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C47",
+      "claim": "The c2-c0 branch is mediated by 39 transition genes including LHX2, FEZF2, FOXG1, HMGA1, SP8, OTX1, SOX11, GLI3, SIX3, and ETV5, suggesting c2 is comprised of cortical progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The c2\u2212c0 branch is mediated by 39 transition genes including LHX2, FEZF2, FOXG1, HMGA1, SP8, OTX1, SOX11, GLI3, SIX3, and ETV5 which suggest that c2 is comprised of cortical progenitors (Appolloni et al., 2008; Greig et al., 2013; Kishi et al., 2012; Manuel et al., 2011; Raciti et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on cortical development.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "79d936a1-8a95-4daf-abd4-0addfe7887f5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C48",
+      "claim": "The c0-c3 branch is mediated by 55 transition genes including GTF2I, HIF1A, ID1, ID3, PROX1, POU3F2, SALL1, SOX21 TCF12, TRPS1 and ZHX2, associated with mesencephalon and metencephalon regional development.",
+      "claim_type": "EXPLICIT",
+      "source": "The c0\u2212c3 branch is mediated by 55 transition genes including GTF2I, HIF1A, ID1, ID3, PROX1, POU3F2, SALL1, SOX21 TCF12, TRPS1 and ZHX2, which are associated with mesencephalon and metencephalon regional development, as well as having known involvement with midbrain/hindbrain organizer identity (Buck et al., 2001; Enkhmandakh et al., 2009; Inoue et al., 2012; Jaegle et al., 2003; Kunath et al., 2002; Lavado and Oliver, 2007; Milosevic et al., 2007; Ohba et al., 2004; Uittenbogaard and Chiaramello, 2002; Yao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on midbrain/hindbrain development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "97062b17-3a49-4d57-ba4f-87340a814ea5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C51",
+      "claim": "The c2-c4 branch includes transition genes BCL11A, EMX2, FOXP2 and RORB, associated with the neocortex and neuronal identity.",
+      "claim_type": "EXPLICIT",
+      "source": "The c2\u2212c4 branch includes transition genes BCL11A, EMX2, FOXP2 and RORB, which are known to be associated with the neocortex and neuronal identity (C\u00e1novas et al., 2015; Ebisu et al., 2016; Greig et al., 2016; Jabaudon et al., 2012; Wiegreffe et al., 2015; Woodworth et al., 2016; Zembrzycki et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on neocortex development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "8f00ba63-8f4f-492f-8adf-b4b96c750715",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C53",
+      "claim": "The c3-c5 branch includes transition genes ASCL1, FOXP2, PAX3, POU3F4, ZIC1, ZIC4, HOXB2, and EN2, which regulate fate acquisition in the midbrain/hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "meanwhile is characterized by transition genes in the c3\u2212c5 branch including ASCL1, FOXP2, PAX3, POU3F4, ZIC1, ZIC4, HOXB2, and EN2, which have been shown to regulate fate acquisition in the midbrain/hindbrain (Agoston et al., 2012; Ang, 2006; Di Bonito et al., 2013; Elsen et al., 2008; Hegarty et al., 2013; Miller et al., 2011; Tan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on midbrain/hindbrain development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "015d9ce1-dc9e-4544-af90-7ee81d5f3c32",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C55",
+      "claim": "The c5-c6 branch includes transition genes PAX3, CRX, SOX11, EBF2, FOXP4, ASCL1, FOXO3, and SIX3, which have strong expression in developing dopaminergic and gabaergic neurons of the midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "The c5\u2212c6 branch is inferred from transition genes including PAX3, CRX, SOX11, EBF2, FOXP4, ASCL1, FOXO3, and SIX3 which have strong expression in developing dopaminergic and gabaergic neurons of the midbrain (Agoston et al., 2012; Erickson et al., 2010; Pino et al., 2014; Yang et al., 2015; Yin et al., 2009; Zhang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on midbrain neuron development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "6b963f4f-0c8e-4dfa-861b-08d80306e5ca",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C56",
+      "claim": "Transition genes in the c5-c7 branch include ARGFX, DUXA, HES1, NFIB, PPARA, SOX2, SOX7, and SOX9, associated with the medulla oblongata region of the hindbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Transition genes in the c5\u2212c7 branch include ARGFX, DUXA, HES1, NFIB, PPARA, SOX2, SOX7, and SOX9, which are known to be associated with the medulla oblongata region of the hindbrain (Fawcett and Klymkowsky, 2004; Kameda et al., 2011; Kumbasar et al., 2009; Madissoon et al., 2016; Matsui et al., 2000; Stolt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by probabilistic analysis and citations to published work on hindbrain development.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "920a3209-fc75-4c33-830d-f1e48fbc4e66",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C57",
+      "claim": "Cluster c1 maps to the ganglionic eminences, suggesting an interneuron identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, c1, maps to the ganglionic eminences, suggesting an interneuron identity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation with in vivo developmental human data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "11e1d693-5807-4572-aaf7-f210bc6131e7",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C58",
+      "claim": "Clusters c5, c6 and c7 show better mapping to mid- and hindbrain structures.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas c5, c6 and c7 show better mapping to mid- and hindbrain structures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation with in vivo developmental human data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "1c60403c-aa21-4122-a5b6-07d307595092",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C59",
+      "claim": "Cluster c4 appears to be more closely related to neocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and c4 appears to be more closely related to neocortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on correlation with in vivo developmental human data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "3ffb0dbf-ce72-4d22-8b0c-28828148f6c0",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C60",
+      "claim": "The lineage predictions based on the analysis were verified experimentally using viral barcoding in a separate work.",
+      "claim_type": "EXPLICIT",
+      "source": "These lineage predictions based on our analysis techniques were verified experimentally using viral barcoding in a separate work (Yao et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to experimental validation in Yao et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "fef5ccc5-0075-4f9e-a33a-a5aedee1505a",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C61",
+      "claim": "With as few as 4 genes per triplet, the correct lineage topology could be inferred for all triplets.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that with as few as 4 genes per triplet, the correct lineage topology could be inferred for all of the triplets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 4\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "af6fd60c-8c8c-4dad-a632-24b0fa0848c2",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C62",
+      "claim": "The dynamics of expression of just four specific genes are sufficient to monitor a particular lineage decision in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, these findings suggest that the dynamics of expression of just four specific genes are sufficient to monitor a particular lineage decision in single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the minimal gene analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "fb0a3a9b-18c6-4560-b322-2ca7f6ea7acf",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C63",
+      "claim": "Searching for sparse representation of dynamics has the advantage of providing interpretability and experimental direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Searching for sparse representation of the dynamics has the advantage of providing interpretability and experimental direction (McGibbon and Pande, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to McGibbon and Pande, 2017.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "06d9965a-0528-417f-a1a2-3a554ef0ab03",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C64",
+      "claim": "Genes showing the clear minimum pattern are most predictive of the sequence of lineage transitions during development.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered that genes showing the clear minimum pattern are most predictive of the sequence of lineage transitions during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the pattern discovery analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "3cdbab27-a0e8-4414-8962-438cb3fb6b9a",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C65",
+      "claim": "The clear minimum pattern is consistent with mutual inhibition, which is hypothesized to play an important role in maintaining multi-stable systems and mediating transitions between different stable states.",
+      "claim_type": "EXPLICIT",
+      "source": "The same pattern observed in many differentiating systems (Graf and Enver, 2009; Qi et al., 2013; Thomson et al., 2011; Zhang et al., 1999), and is consistent with mutual inhibition. Mutual inhibition, in turn, is hypothesized to play an important role in maintaining multi-stable systems and in mediating transitions between different stable states of multi-stable systems (Ferrell, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published work on mutual inhibition and multi-stable systems.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "245f3ff4-9d45-4d8c-979e-999ab9d19dcc",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "claim_id": "C66",
+      "claim": "Finding small subsets of genes which capture lineage transitions provides a low dimensional subspace that captures the dynamics in genetic networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Finding small subsets of genes which captures the lineage transitions in cells analogously provides a low dimensional subspace that captures the dynamics in genetic networks and can be useful for modeling (Jang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and citation to Jang et al., 2017.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The clear minimum pattern, where genes reach minimum expression in leaf cell types rather than root cell types, correlates with lineage topology in 100% of triplets with >10 genes showing the pattern. The clear maximum pattern does not reliably correlate with lineage topology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 collectively demonstrate a robust pattern discovery from known lineage relationships. The 100% correlation in C4 for triplets with >10 genes is striking, and the contrast with the poor performance of the clear maximum pattern (C5-C7) strengthens the finding. The analysis is based on 150 triplets from experimentally established lineages (C1-C2), providing strong empirical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "3549b898-7a0c-448c-9d40-e74e1f8729e9",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Genes exhibiting the clear minimum pattern include functionally important developmental regulators and are consistent with known mechanisms like lateral inhibition and mutual inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 provide biological validation for the discovered pattern through literature citations. The connection to lateral inhibition (C9) and mutual inhibition (C10) provides mechanistic plausibility. However, these are primarily literature-based validations rather than experimental tests within this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "575246cb-42b6-45ec-8e48-4013a84a1a5d",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PCA-based methods failed to reconstruct lineage relationships between all cell types in B- and T-cell development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 is supported by Figure 1D showing PCA results. This negative result motivates the need for the sparse pattern-based approach and demonstrates limitations of standard dimensionality reduction methods for this problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "2484a09f-6dd6-4250-886e-339694742660",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Unrelated triplets show distinct patterns from related triplets: genes with clear minimum are evenly distributed (higher entropy), and the probability distributions of null topology differ with AUC=0.96.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 provide important negative controls showing that the clear minimum pattern is specific to related triplets. The high AUC of 0.96 (C14) demonstrates strong discriminatory power between related and unrelated triplets, validating the specificity of the discovered pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "cfdde4fb-48a8-4013-a042-821c892e6888",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For the CMP/ST/MPP triplet, Bayesian inference identifies ST as the intermediate cell type with 84% probability and identifies specific transition genes (Gata1, Gata2, Hlf, Hoxa9) and marker genes for each cell type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 demonstrate the application of the Bayesian framework to a specific triplet. The identified genes (C16-C20) are supported by literature citations showing their known roles in lineage specification, providing biological validation. The probabilistic framework appears sound, though sensitivity to the sparsity parameter is acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ceb76f42-dc39-435d-8dd5-918d35648794",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For triplet MEP/GMP/FrBC, the null hypothesis has 99% probability, indicating insufficient evidence for a specific topology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 demonstrates that the method appropriately assigns null topology when evidence is insufficient. This is an important control showing the method does not force a topology when the data do not support one.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "3450c7ef-7155-4215-a750-bcd959bd1650",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Analysis of 165 hematopoietic triplets yields a lineage tree supporting the Adolfsson model over the traditional model, with 8 of 9 distinguishing triplets favoring Adolfsson.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 present the major biological conclusion regarding hematopoietic lineage. The inference is based on 144 high-confidence triplets (C22), and the specific support for Adolfsson model (8/9 triplets, C26) is compelling. However, this is computational inference rather than experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "f71357ed-91ea-4126-9b31-2e081c97f692",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The inferred hematopoietic lineage tree contains three additional lineage decisions beyond the Adolfsson model: CMP\u2192MEP/GMP, MPP\u2192MLP\u2192GMP/CLP, and CLP\u2192ETP/FrA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 describe specific novel predictions from the inferred tree. These are computational predictions that extend beyond existing models, representing testable hypotheses. The claims are clearly stated and supported by the inference framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "24c0f8c1-3713-4d3c-ae85-a16eada8222c",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "For 14 adjacent triplets in the hematopoietic tree, an average of 24 marker genes per cell type and 25 transition genes were identified, including known regulators (Cebpa, Sfpi1, Gata1, Ebf1) and genes used in reprogramming experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 provide systematic characterization of identified genes across the tree. The validation through literature (C31) and connection to reprogramming (C32) strengthen confidence in the biological relevance of identified genes. This represents successful application of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "f4d27970-9720-4ec8-8396-3062be7fa1b5",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Application to intestinal development data yields a lineage tree differing from Gr\u00fcn et al. only in one triplet (C2-C8-C4 vs C8-C2-C4), and identifies known intestinal regulators (Klf4, Atoh1, Spdef, Foxa1/2, Tcf3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 demonstrate application to an independent dataset with largely concordant results. The single disagreement (C33) represents a testable prediction. Identification of known regulators (C34) provides validation. This serves as an important cross-validation of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "5cf532fa-8b09-44ca-90bf-49577c1fe628",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq data from 2217 cells across 80 days of human neuronal differentiation were analyzed using SMART-Seq2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 describe the experimental dataset. These are straightforward methodological claims supported by citation to Yao et al., 2017. The data generation appears sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "7b5237d1-6e14-4095-9870-a2d3d7417489",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Standard methods (t-SNE, Monocle, Monocle2, TSCAN, StemID) did not clearly reconstruct lineage or identify key regulatory genes from the neuronal differentiation data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C39 present negative results for existing methods. While Figure 4 and supplements show outputs from these methods, the evaluation is somewhat subjective ('did not clearly reconstruct'). The authors acknowledge that unexplored parameter regimes might yield better results. This motivates their approach but the comparison could be more rigorous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "9e344ed0-ef65-41ee-804f-8b600104fdbb",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An iterative clustering-inference procedure converged to 8 final clusters with 45 high-probability triplets inferred between them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C42 describe the algorithmic procedure and its output. The convergence criterion (C40) is clearly defined. The resulting 45 triplets (C42) form the basis for subsequent lineage inference. The iterative approach is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "4cffad87-5893-4fb1-9f31-740d88e703d8",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Early progenitor c0 splits into c1 (ganglionic eminences/interneurons), c2 (cortical progenitors), and c3 (midbrain/hindbrain progenitors), with specific transition genes identified for each branch that match known regional markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47-C48 describe a major three-way split in early neuronal development. The extensive literature citations for each set of transition genes provide strong biological validation. This represents a key prediction about early brain regionalization that was experimentally validated (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "1d55ba8a-904b-4f39-9f6d-b37b0ea460e4",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Later differentiation branches are characterized by specific transition genes: c2\u2192c4 (neocortex: BCL11A, EMX2, FOXP2, RORB), c3\u2192c5 (midbrain/hindbrain: ASCL1, PAX3, ZIC1/4, EN2), c5\u2192c6 (midbrain dopaminergic/GABAergic: PAX3, ASCL1, FOXP4), and c5\u2192c7 (hindbrain medulla: ARGFX, HES1, SOX2/7/9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C53, C55-C56 describe later differentiation events with region-specific genes. Each claim is supported by multiple literature citations validating the regional associations. This provides detailed characterization of the differentiation trajectory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "85919332-86a1-4ac2-b5c5-90c8de7e10ca",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Correlation with in vivo developmental data maps c1 to ganglionic eminences, c5/c6/c7 to mid/hindbrain, and c4 to neocortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 provide independent validation through correlation with in vivo data (Miller et al., 2014). This cross-dataset validation strengthens confidence in the cluster identities, though the correlations are noted to be relatively low due to technical differences between datasets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "ba2de17b-b403-419a-a62e-a9e445cc8dbd",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The lineage predictions were experimentally validated using viral barcoding in Yao et al., 2017.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 provides crucial experimental validation of the computational predictions. This independent experimental confirmation in a separate publication strongly supports the validity of the inference method and its predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "956e82f1-fb87-4559-ad1b-400c6545cd0f",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "As few as 4 genes per triplet are sufficient to correctly infer lineage topology, suggesting that monitoring 4 specific genes can track a lineage decision in single cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 demonstrate remarkable sparsity in the gene requirements. The analysis in Figure 4\u2014figure supplement 1E supports C61. However, C62 is somewhat speculative\u2014while 4 genes may be sufficient for computational inference from population data, whether they are sufficient for real-time monitoring in individual cells is a stronger claim that would require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "29701169-8341-49a9-b12e-d2d090654f34",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Sparse representation provides interpretability and experimental direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is a general methodological point supported by citation. The entire manuscript demonstrates this principle through identification of small gene sets with biological meaning. This is more of a discussion point than a specific result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "4c355298-b906-4afd-866f-7b6189021ca7",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Genes showing the clear minimum pattern are most predictive of lineage transitions during development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 summarizes the main discovery of the pattern analysis. This is well-supported by the systematic analysis in claims C1-C7 and the successful applications in claims C15-C32 and C45-C59.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "d721439d-8eb6-4cce-b373-8982c8f00f0b",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The clear minimum pattern is consistent with mutual inhibition, which plays important roles in maintaining multi-stable systems and mediating state transitions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 provides mechanistic interpretation of the discovered pattern. The connection to mutual inhibition is supported by literature citations (Ferrell, 2012 and others). This is a plausible biological interpretation though not directly tested in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    },
+    {
+      "id": "7a62bb53-3b15-45bc-a7da-a04b294d9a3e",
+      "content_id": "d134cff5-2afd-4104-b330-470e9d5b57d1",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Finding small gene subsets that capture lineage transitions provides a low-dimensional subspace useful for modeling genetic network dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 discusses implications for modeling, supported by citation to Jang et al., 2017. This is a forward-looking claim about utility rather than a result of this study, though the sparse gene sets identified here do enable such modeling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:18:32.831766Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fd3f7e9d-1a14-4ac1-81ea-1d747bcb8b0c",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "ca291983-b2cd-4311-ac8d-406564f2d9b8",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "99b8314c-5192-4544-a74d-8171975f4a6c",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "c24c2e67-c867-4589-9f2b-3e2049dac7e0",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "43024eb2-90a7-453d-8ea6-a851afa28e2f",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "5cb4df81-5ad2-4c97-ba78-79092f2bbf24",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "0b289bee-e396-4c97-b415-70587472e8ee",
+      "result_id": "ca07393c-1b5f-428b-beb2-f6bbb4704ed3"
+    },
+    {
+      "claim_id": "ef04f126-23d5-47c8-b75d-94f636727cd5",
+      "result_id": "3549b898-7a0c-448c-9d40-e74e1f8729e9"
+    },
+    {
+      "claim_id": "5f12050e-1975-4a49-a367-7e7a2e3723ab",
+      "result_id": "3549b898-7a0c-448c-9d40-e74e1f8729e9"
+    },
+    {
+      "claim_id": "596da29d-20c3-4be7-bed8-c2ff9aed4d2d",
+      "result_id": "3549b898-7a0c-448c-9d40-e74e1f8729e9"
+    },
+    {
+      "claim_id": "883eb352-9bc0-46ef-b903-2c2eba30c60d",
+      "result_id": "575246cb-42b6-45ec-8e48-4013a84a1a5d"
+    },
+    {
+      "claim_id": "ec0297f6-6171-491d-8da6-f0986869c178",
+      "result_id": "2484a09f-6dd6-4250-886e-339694742660"
+    },
+    {
+      "claim_id": "68a55bed-4614-49e8-98cc-47b9b45cff03",
+      "result_id": "2484a09f-6dd6-4250-886e-339694742660"
+    },
+    {
+      "claim_id": "9db3e2dc-dd8c-4d35-afb0-06f64f3fb986",
+      "result_id": "2484a09f-6dd6-4250-886e-339694742660"
+    },
+    {
+      "claim_id": "8f694fda-2f60-4eed-9740-ddfd59cde737",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "6c0e66b1-0245-4bce-981a-812abea56291",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "d26cf0b1-a5d8-424e-87da-2659ea5169f2",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "f609baa3-d9ac-40d1-8fc9-2036fcb44092",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "ad69cc6b-c178-40a7-a7a2-83f85d471e1d",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "ff949c87-d7bf-4c0c-9893-c2c80c3d7f53",
+      "result_id": "cfdde4fb-48a8-4013-a042-821c892e6888"
+    },
+    {
+      "claim_id": "6056b72f-dae9-4833-9a62-d97e0214cb1c",
+      "result_id": "ceb76f42-dc39-435d-8dd5-918d35648794"
+    },
+    {
+      "claim_id": "68d3b6f6-c579-4964-9260-8b1379cec5e5",
+      "result_id": "3450c7ef-7155-4215-a750-bcd959bd1650"
+    },
+    {
+      "claim_id": "44f4ef3a-4769-4cd5-aa66-d20d8f03eb2e",
+      "result_id": "3450c7ef-7155-4215-a750-bcd959bd1650"
+    },
+    {
+      "claim_id": "5c4d55de-c196-4c09-9621-dfb2508110e5",
+      "result_id": "3450c7ef-7155-4215-a750-bcd959bd1650"
+    },
+    {
+      "claim_id": "f6137174-c964-4599-88b7-10c9c934ea76",
+      "result_id": "3450c7ef-7155-4215-a750-bcd959bd1650"
+    },
+    {
+      "claim_id": "c3e8fe79-7216-4df3-a64e-d460fc92dfcb",
+      "result_id": "3450c7ef-7155-4215-a750-bcd959bd1650"
+    },
+    {
+      "claim_id": "993a9191-a13a-43f0-ae98-3ed13d9b74a2",
+      "result_id": "f71357ed-91ea-4126-9b31-2e081c97f692"
+    },
+    {
+      "claim_id": "15cd3f9e-c5e4-401d-bb39-1e00ffff2b34",
+      "result_id": "f71357ed-91ea-4126-9b31-2e081c97f692"
+    },
+    {
+      "claim_id": "b0ac5bfa-9582-4fa3-96b8-2b7c1e316e4e",
+      "result_id": "f71357ed-91ea-4126-9b31-2e081c97f692"
+    },
+    {
+      "claim_id": "91bcfd68-6625-4e28-aeaf-d64ab7fafda7",
+      "result_id": "24c0f8c1-3713-4d3c-ae85-a16eada8222c"
+    },
+    {
+      "claim_id": "f5776ca4-65c3-437d-ab3a-fc4e2ef7ce86",
+      "result_id": "24c0f8c1-3713-4d3c-ae85-a16eada8222c"
+    },
+    {
+      "claim_id": "7ed40509-7744-46d0-9b5b-9d07a36f84df",
+      "result_id": "24c0f8c1-3713-4d3c-ae85-a16eada8222c"
+    },
+    {
+      "claim_id": "ffdcf243-8470-416b-9aea-d8003e394ce2",
+      "result_id": "f4d27970-9720-4ec8-8396-3062be7fa1b5"
+    },
+    {
+      "claim_id": "0cf714ba-da42-4db5-9b0b-e74a45252bec",
+      "result_id": "f4d27970-9720-4ec8-8396-3062be7fa1b5"
+    },
+    {
+      "claim_id": "2537201d-8bce-409c-b723-35e4c44b0a53",
+      "result_id": "5cf532fa-8b09-44ca-90bf-49577c1fe628"
+    },
+    {
+      "claim_id": "3154d63c-6588-4765-9ed7-187009e1fdeb",
+      "result_id": "5cf532fa-8b09-44ca-90bf-49577c1fe628"
+    },
+    {
+      "claim_id": "ea9443c2-ef83-4c91-a6c4-4ecf2afc0898",
+      "result_id": "5cf532fa-8b09-44ca-90bf-49577c1fe628"
+    },
+    {
+      "claim_id": "4c9750d3-bfe2-461f-832f-cae7ffab49e8",
+      "result_id": "7b5237d1-6e14-4095-9870-a2d3d7417489"
+    },
+    {
+      "claim_id": "dbbca8c2-a07f-40a3-8c5d-3169ab5c5f37",
+      "result_id": "7b5237d1-6e14-4095-9870-a2d3d7417489"
+    },
+    {
+      "claim_id": "b203f161-bd6b-422f-86c4-2c8adad9bf75",
+      "result_id": "9e344ed0-ef65-41ee-804f-8b600104fdbb"
+    },
+    {
+      "claim_id": "dca1f1ab-c3e1-4fa7-88fc-e980b94cd341",
+      "result_id": "9e344ed0-ef65-41ee-804f-8b600104fdbb"
+    },
+    {
+      "claim_id": "c198d8e5-6a9b-4c7f-ae45-390906af7f26",
+      "result_id": "4cffad87-5893-4fb1-9f31-740d88e703d8"
+    },
+    {
+      "claim_id": "8c99e63b-2955-41ce-bee3-dceec66bda63",
+      "result_id": "4cffad87-5893-4fb1-9f31-740d88e703d8"
+    },
+    {
+      "claim_id": "79d936a1-8a95-4daf-abd4-0addfe7887f5",
+      "result_id": "4cffad87-5893-4fb1-9f31-740d88e703d8"
+    },
+    {
+      "claim_id": "97062b17-3a49-4d57-ba4f-87340a814ea5",
+      "result_id": "1d55ba8a-904b-4f39-9f6d-b37b0ea460e4"
+    },
+    {
+      "claim_id": "8f00ba63-8f4f-492f-8adf-b4b96c750715",
+      "result_id": "1d55ba8a-904b-4f39-9f6d-b37b0ea460e4"
+    },
+    {
+      "claim_id": "015d9ce1-dc9e-4544-af90-7ee81d5f3c32",
+      "result_id": "1d55ba8a-904b-4f39-9f6d-b37b0ea460e4"
+    },
+    {
+      "claim_id": "6b963f4f-0c8e-4dfa-861b-08d80306e5ca",
+      "result_id": "1d55ba8a-904b-4f39-9f6d-b37b0ea460e4"
+    },
+    {
+      "claim_id": "920a3209-fc75-4c33-830d-f1e48fbc4e66",
+      "result_id": "85919332-86a1-4ac2-b5c5-90c8de7e10ca"
+    },
+    {
+      "claim_id": "11e1d693-5807-4572-aaf7-f210bc6131e7",
+      "result_id": "85919332-86a1-4ac2-b5c5-90c8de7e10ca"
+    },
+    {
+      "claim_id": "1c60403c-aa21-4122-a5b6-07d307595092",
+      "result_id": "85919332-86a1-4ac2-b5c5-90c8de7e10ca"
+    },
+    {
+      "claim_id": "3ffb0dbf-ce72-4d22-8b0c-28828148f6c0",
+      "result_id": "ba2de17b-b403-419a-a62e-a9e445cc8dbd"
+    },
+    {
+      "claim_id": "fef5ccc5-0075-4f9e-a33a-a5aedee1505a",
+      "result_id": "956e82f1-fb87-4559-ad1b-400c6545cd0f"
+    },
+    {
+      "claim_id": "af6fd60c-8c8c-4dad-a632-24b0fa0848c2",
+      "result_id": "956e82f1-fb87-4559-ad1b-400c6545cd0f"
+    },
+    {
+      "claim_id": "fb0a3a9b-18c6-4560-b322-2ca7f6ea7acf",
+      "result_id": "29701169-8341-49a9-b12e-d2d090654f34"
+    },
+    {
+      "claim_id": "06d9965a-0528-417f-a1a2-3a554ef0ab03",
+      "result_id": "4c355298-b906-4afd-866f-7b6189021ca7"
+    },
+    {
+      "claim_id": "3cdbab27-a0e8-4414-8962-438cb3fb6b9a",
+      "result_id": "d721439d-8eb6-4cce-b373-8982c8f00f0b"
+    },
+    {
+      "claim_id": "245f3ff4-9d45-4d8c-979e-999ab9d19dcc",
+      "result_id": "7a62bb53-3b15-45bc-a7da-a04b294d9a3e"
+    }
+  ],
+  "comparisons": []
+}

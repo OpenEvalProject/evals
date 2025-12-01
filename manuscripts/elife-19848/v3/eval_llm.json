@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In B. subtilis, stoichiometry analysis reveals that 41% of replication factories contain only 6 DnaC proteins (one helicase complex) while 59% contain 12 DnaC proteins (two helicase complexes), inconsistent with the expectation that all actively replicating cells should have two replisomes. This observation is not explained by incomplete labeling (>98% of DnaC is GFP-labeled by Western blot) or incorrect step size determination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 provide strong experimental evidence from single-molecule fluorescence microscopy with appropriate controls ruling out technical artifacts. The Western blot data (C54) and in vitro calibration (C55) address the most obvious alternative explanations. The bimodal distribution with peaks at integer multiples of 6 (C53) provides internal validation of the measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "DNA polymerase (PolC) stoichiometry in B. subtilis shows a similar bimodal distribution to DnaC, with 47% of factories having ~2 copies (one fork) and 53% having ~4 copies (two forks), suggesting that both the helicase and polymerase are frequently disassembled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PolC data (C57-C58) corroborate the DnaC findings with a different replisome component, strengthening the conclusion that replisome disassembly is occurring rather than selective loss of one component. The proportions are remarkably similar between DnaC (41%/59%) and PolC (47%/53%), supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C67",
+      "C68",
+      "C66",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Helicase complexes in B. subtilis have short lifetimes with a mean of ~8 minutes, and the distribution appears roughly exponential. Using a Poisson process model, this predicts approximately 5 disassembly events per 40-minute cell cycle, though this estimate has significant systematic uncertainty depending on replication cycle length and modeling assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lifetime measurements (C67) are supported by time-lapse imaging data. The Poisson model (C68-C69) is a reasonable first approximation, and the authors appropriately acknowledge significant systematic uncertainty (C70). The consistency between lifetime and stoichiometry observations (C71) and deviation from the continuous replication model (C72) strengthen the interpretation, though the quantitative estimate should be treated cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Transcription inhibition by rifampicin or rpoB* mutation dramatically increases helicase complex lifetimes in B. subtilis, with the percentage of complexes persisting >20 minutes increasing from 9% to 53%, and the calculated number of conflicts per cell cycle decreasing by a factor of four.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rifampicin and rpoB* experiments (C73-C76) provide convergent evidence that transcription inhibition stabilizes replisomes, with the rpoB* control (C77) ruling out rifampicin-specific artifacts. The quantitative changes are substantial and consistent across both perturbations. This is strong evidence for transcription-dependent replisome instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Transcription inhibition in B. subtilis shifts the stoichiometry distribution such that the majority of cells have two active replisomes (12 DnaC or 4 PolC), observed both with rifampicin treatment and in rpoB* mutants, for both helicase and polymerase components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stoichiometry shifts upon transcription inhibition (C80-C83) are well-documented with multiple independent perturbations (rifampicin and rpoB*) and multiple replisome components (DnaC and PolC). This provides strong support that transcription-dependent conflicts cause replisome disassembly (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Introduction of an engineered head-on replication-transcription conflict (IPTG-inducible lacZ in head-on orientation) decreases the fraction of cells with two intact helicase complexes, with >80% of induced cells containing only 6 DnaC molecules. A smaller effect is observed with co-directional lacZ, and IPTG alone has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The engineered conflict experiment (C85-C89) provides direct causal evidence that replication-transcription conflicts lead to helicase disassembly. The appropriate controls (C90-C92) rule out alternative explanations. The head-on vs. co-directional comparison (C90-C91) is consistent with prior knowledge about conflict severity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C93",
+      "C144",
+      "C145",
+      "C146",
+      "C148",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The combined evidence from stoichiometry, lifetime, and transcription perturbation experiments demonstrates that replisome instability and disassembly is transcription-dependent, suggesting that replication-transcription conflicts are pervasive (occurring multiple times per cell cycle) and that DNA replication is largely discontinuous in vivo, contrary to the canonical continuous replication model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C93, C144-C146, C148, C154-C156) is well-supported by the convergence of multiple independent lines of evidence: stoichiometry showing single replisomes, short lifetimes, stabilization by transcription inhibition, and destabilization by engineered conflicts. The claim that conflicts are the primary cause of instability is strongly supported, though the exact frequency remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In E. coli, stoichiometry measurements of DnaB (helicase), DnaX (clamp loader), and DnaE (polymerase) show that a significant proportion of replisome foci contain stoichiometries consistent with a single replisome (6, 3, and 3 molecules respectively). Rifampicin treatment shifts the distribution toward higher stoichiometry, suggesting pervasive replisome disassembly in E. coli as well.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E. coli stoichiometry data (C99-C100) extend the B. subtilis findings to a second organism, strengthening the generality of the conclusions. The interpretation (C101-C102) is reasonable given the data, though the E. coli experiments are less extensive than those in B. subtilis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "E. coli helicase (DnaB) complexes have short lifetimes with a mean of ~9 minutes. Rifampicin treatment increases the percentage of complexes persisting \u226520 minutes from 21% to 46%, and the predicted number of conflicts per 40-minute replication cycle decreases from ~4 to ~2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E. coli lifetime measurements (C105-C107) parallel the B. subtilis findings and show similar transcription-dependence. The quantitative estimates have the same caveats as in B. subtilis regarding modeling assumptions, but the qualitative conclusion of transcription-dependent instability is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In E. coli dnaC2 temperature-sensitive mutants at non-permissive temperature, 86% of helicase complexes observed in the first frame disassemble before the end of the time course, new complexes rarely develop (15%), and the probability of observing a focus decreases throughout the time series faster than expected from replication termination alone. In contrast, wild-type cells show steady-state focus probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dnaC2 experiment (C108-C114) provides strong evidence that the observed disassembly events require restart machinery for recovery. The comparison to a null hypothesis model (C113) and wild-type control (C114) strengthen the interpretation. This supports the model that disassembly is frequent and restart is essential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C116",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Transcription inhibition (rifampicin or rpoB*) increases DNA replication rates in B. subtilis by ~60-65% as measured by thymidine incorporation assays. The consistency between rifampicin and rpoB* treatments, and the insensitivity of rpoB* strains to rifampicin, suggest this is not an artifact of altered nucleotide uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The thymidine incorporation data (C120-C121) provide independent biochemical support for the model that conflicts limit replication rate. The controls (C122-C123) address the most obvious artifact (altered uptake), and the validation of DnaC-GFP functionality (C124-C125) is important. This result strongly supports the functional significance of the observed instability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Despite faster growth on glucose versus arabinose, B. subtilis shows significantly higher thymidine incorporation rates in arabinose, where ribosomal RNA and protein genes are less highly expressed. This counterintuitive finding is consistent with the model that conflicts with highly-transcribed genes slow replication during fast growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The glucose vs. arabinose comparison (C130) provides an elegant test of the conflict model's prediction (C129) using endogenous variation in transcription. The connection to ribosomal genes (C127-C128) is supported by prior ChIP work. This result strengthens the physiological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The DnaC-GFP fusion used in B. subtilis experiments is expressed from the endogenous promoter and locus, localizes to midcell in a replication-dependent manner, and shows no growth defect in minimal arabinose medium (though a minor defect is observed in LB medium).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of the DnaC-GFP construct (C42-C45) is adequate for the experimental conditions used (minimal arabinose). The minor growth defect in rich medium (C45) is appropriately noted and does not affect the main conclusions since experiments were performed in minimal medium.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Single-molecule fluorescence microscopy (SMFM) was used to characterize replisome stoichiometry and lifetimes in B. subtilis and E. coli. This approach, previously applied to measure replisome stoichiometry in E. coli, had not been used to study the impact of conflicts on replisome dynamics and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims (C22-C23, C33-C37) accurately describe the approach and its novelty. The citations to prior SMFM work (C35-C36) are appropriate, and the identification of the gap in knowledge (C37) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "DnaC (the replicative helicase in B. subtilis) was chosen for analysis due to its essential role, extensive characterization, well-accepted hexameric stoichiometry (supported by in vitro structural studies and in vivo E. coli measurements), and its role as the first protein reloaded during PriA-dependent restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rationale for studying DnaC (C38) is well-justified by the cited structural (C40) and functional (C41) evidence. The description of helicase function (C39) is accurate based on established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In bacteria with circular chromosomes and bidirectional replication from a single origin, two replisomes are expected. In B. subtilis, the two forks often co-localize to a replication factory, and cells with factory-inconsistent localization (~16%) were excluded from analysis. Two co-localized hexameric helicases would yield 12 DnaC molecules at the factory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background on bacterial replication (C46-C47) and B. subtilis factory organization (C48) is accurate and well-cited. The data exclusion criterion (C49) is reasonable and clearly stated. The expectation of 12 DnaC molecules (C50) follows logically from the hexameric structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "For lifetime measurements, cells were imaged at 2-minute intervals over 22 minutes using longer exposures (600 ms) at lower laser intensity to minimize bleaching. Disassembly events were defined as cooperative loss of all fluorophores. Photobleaching minimally affects measurements over the experimental timeframe but would prevent visualization over a full cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental protocol (C61-C62) is clearly described. The operational definition of disassembly (C63) is reasonable. The photobleaching characterization (C64-C65) is supported by control experiments shown in figures, demonstrating appropriate consideration of this potential artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Stoichiometry and lifetimes of three replisome proteins (DnaB helicase, DnaX clamp loader, DnaE polymerase) were investigated in E. coli, where replisome localization patterns are similar to B. subtilis with co-localized forks. Fluorescent fusions used distinct linkers to YPet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The E. coli experimental approach (C95, C97-C98) is clearly described and appropriately builds on prior work. The similarity in localization patterns (C96) is well-cited and justifies the parallel analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "In E. coli, lifetimes of DnaE and DnaX cannot be reliably measured due to their low copy number (3 molecules each) causing significant photobleaching. However, DnaB lifetimes can be measured over 20 minutes due to the higher number of molecules (6) per complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reasoning about measurement limitations (C103-C104) is sound and demonstrates appropriate consideration of technical constraints. The supporting data in figures validates this assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has extensively studied the replisome in vitro and in vivo, but fundamental questions remain about replisome dynamics and stability in living cells. Genetic evidence suggests conflicts can necessitate restart, but the frequency of such events is uncertain (estimates range from 1 per cell cycle to 1 per 7 generations). The essentiality of restart proteins (PriA in B. subtilis, PriA/PriB/PriC in E. coli) conflicts with estimates of <1 restart per cell cycle and provides indirect evidence against continuous replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review (C7-C17) accurately represents the state of knowledge and identifies genuine gaps and contradictions in the field. The citations appear appropriate, and the logical inference about the conflict between restart protein essentiality and low restart frequency estimates (C13, C16-C17) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Previous ChIP experiments determined chromosomal locations of conflicts in cell populations but are poor reporters of conflict-induced structural changes, single-cell conflict frequency, and restart rapidity due to population averaging. Understanding replication and conflicts requires single-cell, single-molecule approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The assessment of ChIP limitations (C19) is reasonable and well-justified. The argument for single-cell, single-molecule approaches (C20-C21) follows logically from these limitations and the molecular-scale stoichiometry of the replisome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C29",
+      "C30"
+    ],
+    "result": "The observations of single helicase complexes and short lifetimes are consistent with pervasive replisome disassembly, possibly occurring several times per cell cycle. This suggests that endogenous replication-transcription conflicts frequently lead to replisome disassembly, potentially every cell cycle, and that conflicts may limit replication rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C3, C26, C29-C30) are reasonable inferences from the stoichiometry and lifetime data, though they involve some speculation. The qualifier \"possibly\" (C3) and \"potentially\" (C29) appropriately indicate uncertainty. The prediction about replication rate (C30) is subsequently tested and supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C6",
+      "C143",
+      "C147"
+    ],
+    "result": "The overall conclusion is that DNA replication is a largely discontinuous process in vivo due to pervasive replication-transcription conflicts, with elongating replisomes frequently disrupted (~50% of the time) and disassembled during a single replication cycle, such that replicating cells often possess only a single active replisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C6, C143, C147) integrates the major findings and is well-supported by the combined evidence from stoichiometry, lifetimes, transcription perturbations, and replication rate measurements across two bacterial species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The canonical model of continuous DNA replication in bacteria, based primarily on in vitro reconstitution and ensemble in vivo measurements, is contradicted by evidence that replication can be disrupted by transcription, with dire consequences in the absence of efficient restart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization of the canonical model (C131-C135) and identification of the contradiction (C136-C137) accurately represent the field and provide appropriate context for the study. The assessment of prior methodologies' limitations (C133-C134) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Alternative explanations for low helicase stoichiometry (differential arm replication rates, observation of individual forks) are ruled out by prior evidence showing equal arm copy numbers and factory-like replisome positioning for 80% of the cell cycle in both E. coli and B. subtilis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consideration and dismissal of alternative explanations (C138-C142) is thorough and appropriately supported by citations to prior work. This strengthens confidence in the preferred interpretation of frequent disassembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C149",
+      "C153"
+    ],
+    "result": "The observations provide a potential explanation for restart protein essentiality under conditions where rDNA and ribosomal protein genes are highly expressed. The essentiality of restart proteins and replication rate measurements provide independent lines of evidence for the pervasive disassembly model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These integrative claims (C149, C153) appropriately connect the findings to prior genetic observations and note the convergence of independent evidence types, strengthening the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Single-molecule experiments are technically challenging due to low fluorophore intensity and potential photodamage to cells at required intensities. Therefore, it is essential to consider single-molecule measurements in the context of additional corroboratory biochemical and genetic evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of technical challenges and the need for corroboratory evidence (C150-C152) demonstrates appropriate scientific caution and strengthens confidence in the conclusions by showing awareness of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The increased stability of helicase complexes upon transcription inhibition is consistent with increased replisome stability, which predicts an increase in the ratio of cells with two helicase complexes (12 DnaC) relative to one helicase complex (6 DnaC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The logical connection between helicase stability and replisome stability (C78) and the prediction about stoichiometry changes (C79) are reasonable inferences that are subsequently validated by experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Given the universality of replication-transcription conflicts, other bacteria outside of B. subtilis should experience replisome instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This hypothesis (C94) is reasonable given the conservation of replication and transcription machinery, and is subsequently supported by the E. coli experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Based on in vitro and in vivo measurements assuming replisome stability, it takes ~40 minutes to replicate bacterial chromosomes at 500 bp/s. However, the observation of frequent conflicts (during which the replisome stalls) predicts that in vivo rates should increase if conflicts are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background on replication rates (C117) is appropriately cited, and the prediction (C118) follows logically from the conflict model. This prediction is subsequently tested and confirmed.",
+    "result_type": "MINOR"
+  }
+]

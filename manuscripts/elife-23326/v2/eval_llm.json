@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors establish a reliable system to analyze the onset of zygotic transcription in zebrafish, showing that six selected genes are robustly induced at high stage (~1900 cells, ~3.3 hpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 collectively establish the timing and characterization of zygotic genome activation in zebrafish. The qPCR data (C2, C3), cell counting (C4), and literature support (C1) provide converging evidence for a reliable experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Core histones H3, H4, H2A, and H2B are present at stable levels from 8-cell to 1K stage, suggesting they are in excess relative to DNA and could function as repressors of the zygotic genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by Western blot data (C6) showing stable histone levels during early development. The inference that histones are in excess (C7) is reasonable given stable protein levels despite exponential DNA replication. C8 is appropriately framed as speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Increasing histone levels by injecting a histone cocktail delays the onset of transcriptional activation by one complete developmental stage without affecting cell cycle length or developmental progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are well-supported by qPCR data (C9, C10), NanoString analysis of 53 genes (C11), cell counting controls (C12), and chromatin incorporation assays (C13). The effect is specific to histone injection versus BSA control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "All four core histones are required for the histone cocktail to delay transcription onset, indicating that histones exert their repressive effect together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by minus-one-histone experiments showing that removal of any single histone impairs the effect. This demonstrates specificity and argues against non-specific effects of injecting basic proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The delay in transcription caused by increased histone levels results in a corresponding delay in gastrulation onset, with embryos developing normally thereafter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by brightfield imaging and quantification of gastrulation timing. The correlation between transcription delay and developmental delay is demonstrated, though the causal claim (C21) is an inference. BSA controls show some non-specific injection effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Decreasing the soluble pool of histones H3 and H4 by injecting PTX3 causes premature transcription activation, demonstrating that histone levels dictate transcription timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 are supported by co-immunoprecipitation showing PTX3-histone interaction (C24), qPCR showing premature transcription (C25), and appropriate RFP controls (C26). This provides complementary evidence to the histone addition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Quantitative mass spectrometry reveals that histones are present in massive excess early in development (3098 genomes worth at 1-cell stage), with levels increasing until 1K stage and still maintaining 9 genomes worth of excess at 1K stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are supported by quantitative mass spectrometry data. The calculations appear sound based on known genome size and nucleosome repeat length. The inference about zygotic histone translation (C29) is reasonable given the timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The cellular concentration of non-DNA-bound histones does not change substantially during transcription activation because decreasing histone numbers per cell are accompanied by decreasing cell volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by lightsheet microscopy volume measurements showing only 29% growth from 128-cell to 1K. The calculation that cellular histone concentration remains stable is mathematically sound given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "There is a decrease in the nuclear concentration of non-DNA-bound histones at the onset of transcription, which causes genome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by combined lightsheet microscopy, immunofluorescence, and mass spectrometry data. The calculation of nuclear histone concentration is methodologically sophisticated. The causal claim (C37) is an inference but well-supported by the functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Global nucleosome density on DNA does not change during genome activation, as H2B levels scale with DNA amount, indicating that nuclear histone concentration determines transcription timing without requiring changes in chromatin density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by Western blot analysis of chromatin fractions showing H2B scales with DNA. This is a critical finding that distinguishes the authors' model from simple depletion models and is consistent with their previous work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors propose a competition model where transcription factors compete with histones for binding to transcription factor binding sites, allowing local nucleosome displacement without affecting global nucleosome density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present a mechanistic model to explain the experimental observations. While these are hypotheses/predictions rather than direct observations, they are well-reasoned and consistent with all the data presented. The model is appropriately illustrated in Figure 4G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Reducing levels of transcription factors (Pou5f3, Sox19b, FoxH1) by morpholino injection delays the onset of transcription of their target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by qPCR data from morpholino experiments for three different transcription factors. Appropriate morpholino validation and controls are shown in supplementary figures. This demonstrates the effect is general across multiple transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Increasing levels of transcription factors (Pou5f3 and Sox19b) causes premature transcription of target genes, demonstrating that transcription factor concentration affects transcription onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by qPCR data showing premature transcription upon overexpression. The effect is specific to genes that are both Pou5f3-dependent and sufficient for Pou5f3/Sox19b activation, as shown in supplementary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The binding of endogenous transcription factor Pou5f3 to DNA is reduced when histone levels are increased by co-injection of histone cocktail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by ChIP-qPCR data showing reduced Pou5f3 binding at target sites when histones are co-injected. This provides direct molecular evidence for competition between histones and transcription factors for DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Using a heterologous tTA-VP16 transcription factor and TRE:GFP transgene system, the authors demonstrate that transcription factor binding and activity are sensitive to histone levels, providing direct evidence for competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by qPCR and ChIP-qPCR data using a well-controlled heterologous system. The dose-dependent effect of tTA-VP16 (5 pg vs 300 pg) and the reversal by histone co-injection provide strong evidence for the competition model independent of endogenous complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors conclude that competition between histones and transcription factors for DNA binding determines the onset of transcription in zebrafish embryos, representing the first example of this mechanism in a developmental transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 represent the main conclusions of the study, which are well-supported by the comprehensive experimental evidence including histone manipulation, transcription factor manipulation, ChIP experiments, and quantitative measurements. The novelty claim (C60) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors argue that core histones function as repressors through nucleosome formation rather than through global nucleosome depletion, based on the requirement for all four core histones and the lack of global chromatin density changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by the chromatin fractionation data (C61), the minus-one-histone experiments (C63), and logical inference (C64). The argument against the Amodeo et al. model is well-reasoned based on the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors propose that exponential DNA increase during cleavage stages contributes to reducing nuclear histone concentration by titrating histones, consistent with previous observations in multiple species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by the quantitative data and literature citations. The proposal (C65-C66) is reasonable given the data, and the reinterpretation of previous DNA manipulation experiments (C67-C68) is well-argued.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The marked increase in nuclear-to-cytoplasmic volume ratio during cleavage stages may limit nuclear histone concentration, supported by recent Xenopus experiments showing nuclear size affects transcription timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by the volume measurements and external citation. The mechanism proposed is plausible and consistent with the data, though it remains somewhat speculative (appropriately indicated in C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Transcription factors required for genome activation are present before ZGA and dynamically compete with histones for DNA binding, consistent with the general principle that transcription factors cannot bind nucleosome-wrapped DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by the functional experiments showing transcription can be induced early by manipulating histone levels, and by extensive literature on transcription factor-nucleosome competition. The distinction from previous models (C74) is clearly articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The transcription factors shown to compete with histones (Pou5f3, Sox19b, FoxH1, tTA-VP16) include factors suggested to be pioneer factors, which can interact with nucleosome-bound DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by the ChIP data and literature citations. The observation about pioneer factors is interesting and appropriately discussed as context for understanding the competition mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors suggest that histone-based regulation of transcription timing likely applies across species (Drosophila, Xenopus, zebrafish) given the conserved presence of excess histones, with supporting evidence from Xenopus and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by literature citations showing histone excess in multiple species and evidence for histone-dependent regulation in Xenopus. The inference about conservation is reasonable but appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Competition likely affects de novo histone modification, and post-translational modifications are either downstream of transcription timing or the modifying enzymes are not limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by the observation that unmodified histones affect transcription timing and by literature on histone modification timing. The logic is sound and the conclusions appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The competition model explains gene-specific activation timing based on enhancer properties, transcription factor affinity, and binding site number, consistent with observations in zebrafish and Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by logical inference from the model and literature citations. The explanation for gene-specific timing is well-reasoned and consistent with published observations in multiple systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Recent literature suggests histone levels may regulate transcription during aging, differentiation, and reprogramming, indicating broader applicability of histone-based regulation beyond early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by literature citations. The speculation about broader applicability (C90) is appropriately qualified and provides interesting context for the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors conclude that dynamic competition between histones and transcription factors for DNA binding regulates transcription onset, with relative nuclear concentrations determining timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 represent the final summary conclusions, which are well-supported by the comprehensive experimental evidence throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

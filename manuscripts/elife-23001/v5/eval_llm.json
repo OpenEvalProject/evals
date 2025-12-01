@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Five cytochrome P450s (CfCYP76AH15, CfCYP76AH8, CfCYP76AH17, CfCYP76AH11, CfCYP76AH16) from C. forskohlii catalyze multiple oxygenations of 13R-manoyl oxide with discrete but overlapping substrate specificities. The minimal combination of three P450s (CfCYP76AH15, CfCYP76AH11, CfCYP76AH16) efficiently converts 13R-manoyl oxide to deacetylforskolin in N. benthamiana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 and C63-C69 provide comprehensive experimental evidence from transient expression studies in N. benthamiana, including GC-MS and LC-MS data (Figures 2-5), NMR structural characterization (Tables 1-2, Figure 4), and systematic combinatorial testing of enzyme combinations. The data demonstrate specific enzyme activities, product identification, and optimal pathway composition with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Two acetyltransferases (CfACT1-6 and CfACT1-8) catalyze acetylation of deacetylforskolin, with CfACT1-8 showing high specificity for forskolin production. This completes the entire biosynthetic pathway from GGPP to forskolin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by experimental data from transient expression studies (Figure 8) showing CfACT1-8 specifically converts deacetylforskolin to forskolin with minimal side products, while CfACT1-6 produces multiple acetylated products. The complete pathway is demonstrated through the combination of all identified enzymes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C59",
+      "C60",
+      "C61",
+      "C82",
+      "C83"
+    ],
+    "result": "The complete forskolin biosynthetic pathway was stably integrated into S. cerevisiae, achieving forskolin titers of 40 mg/L in fermenter experiments. However, significant accumulation of intermediates (200 mg/L 13R-manoyl oxide and 500 mg/L 9-hydroxy-13R-manoyl oxide) indicates incomplete pathway conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C59-C61, C82-C83 are supported by fermentation data (Figure 10) showing forskolin production at 40 mg/L with quantification by LC-MS. The accumulation of intermediates is documented and provides evidence for pathway bottlenecks. The genetic stability of the strain through multiple cultivation rounds is stated but lacks detailed supporting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Flux limitation through one or more P450s is identified as the primary bottleneck in yeast-based forskolin production, evidenced by intermediate accumulation. CfACT1-8 is not limiting, and the heterologous CYP expression levels or activities in yeast may not be properly balanced compared to the native plant system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by experimental observations of intermediate accumulation (C61, Figure 10) and comparison with plant extracts (Figure 10\u2014figure supplement 1). The inference about P450 expression/activity limitations is reasonable given the data and supported by citations about P450 expression challenges in yeast (C87). However, direct measurements of enzyme expression levels or activities in yeast are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C33"
+    ],
+    "result": "Transcriptome analysis of C. forskohlii root cork identified 263,652 assembled putative cDNAs, with seven members of the CYP76AH subfamily being the highest represented CYP subfamily. These CYP76AH members were highly or exclusively expressed in root cork cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C32-C33 are supported by RNA-Seq data with appropriate sequencing depth (106.2 million read-pairs) and gene expression analysis (Figure 1B). The transcriptome assembly and CYP identification methodology is described, and tissue-specific expression is demonstrated by qRT-PCR with appropriate reference genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C73"
+    ],
+    "result": "CfCYP76AH15 converts miltiradiene to ferruginol, and ferruginol was detected in C. forskohlii root cork extracts. CfCYP76AH15 shows similar catalytic activities to rosemary CYP76AH4, suggesting possible involvement in ferruginol biosynthesis in planta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by experimental data (Figure 6) showing enzyme activity and product identification in both heterologous expression and plant extracts. Claim C52 is appropriately qualified as speculative. Claim C73 is supported by comparative enzyme activity data (Figures 6-7).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "CYP76AH enzymes from other Lamiaceae species (RoCYP76AH4, RoFS1, SfFS) can convert 13R-manoyl oxide to oxygenated products, demonstrating substrate promiscuity across the CYP76AH subfamily.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by experimental data from transient expression studies (Figure 7) showing cross-species enzyme activities. Product identification is confirmed by comparison to authentic standards and mass spectrometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The precise sequence of in planta 13R-manoyl oxide oxygenations cannot be determined from the experimental results. The co-expression and functional redundancy of CfCYP76AH enzymes may constitute the basis for chemical diversity of labdane terpenoids in C. forskohlii root cork.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 appropriately acknowledges experimental limitations. Claims C71-C72 are speculative but reasonably supported by the observed enzyme promiscuity (C68-C69) and product diversity data. The inference is logical given the experimental evidence, though direct in planta pathway analysis is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "CfCYP76AH15 and RoCYP76AH4 may represent orthologues based on similar activities. The ability to catalyze 11-oxo-13R-manoyl oxide formation likely evolved convergently in different plants. The CYP76AH subfamily may have arisen through gene duplications in a Lamiaceae ancestor followed by neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75, C78 are speculative evolutionary inferences supported by phylogenetic analysis (Figure 11) and functional data. However, the phylogenetic tree shows C. forskohlii CYP76AHs cluster separately from rosemary/salvia enzymes, which contradicts the orthology hypothesis (C74). More rigorous phylogenetic analysis and synteny data would be needed to support these evolutionary claims definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The functional versatility and substrate promiscuity of CYP76AH enzymes may advance metabolic evolution by providing metabolic plasticity, facilitating expansion of diterpenoid diversity and potentially augmenting plant phytochemical defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 are speculative interpretations of the observed enzyme promiscuity. While the substrate promiscuity is well-documented experimentally (C68-C69), the evolutionary and ecological implications are inferred without direct evidence. No fitness experiments, ecological studies, or directed evolution experiments are provided to support these broader claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Forskolin is the first example of a pharmaceutical diterpenoid produced entirely in yeast at titers relevant for industrial consideration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by the experimental achievement of 40 mg/L forskolin production (C60, C82) and knowledge of the field at the time of publication. The claim appropriately qualifies 'relevant for industrial consideration' without specifying exact commercial viability thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Mining for additional CYP76AH family members has potential to facilitate assembly of optimized mixed-species P450 panels for bioactive diterpenoid biosynthesis, offering opportunities to produce currently inaccessible compounds or new-to-nature diterpenoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are forward-looking statements supported by the demonstrated success of the current study (C4-C6, C53-C54) and the observed substrate promiscuity of CYP76AH enzymes. Claim C90 is appropriately qualified as speculative about future applications. The inference is reasonable given the experimental evidence of cross-species enzyme functionality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Forskolin is a structurally complex labdane-type diterpenoid with therapeutic applications that accumulates in C. forskohlii root cork. Current commercial production relies on extraction from plant material with variable yields (0.013-0.728% dry weight), which faces sustainability challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C15-C25 are supported by citations to established literature and general knowledge. Claim C26 about future production challenges is speculative but reasonably supported by cited literature and logical inference about sustainability issues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Previously identified diterpene synthases CfTPS2 and CfTPS3 catalyze formation of 13R-manoyl oxide from GGPP. Conversion of 13R-manoyl oxide to forskolin requires six monooxygenations and one acetylation. Low-yield biosynthesis of 13R-manoyl oxide was previously achieved in microbial hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by citations to prior work (Pateraki et al., 2014; Andersen-Ranberg et al., 2016). Claim C29 is supported by inference from chemical structures (Figure 1A) and is consistent with the enzymatic activities identified in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Plant specialized metabolites, particularly terpenoids, constitute a major source of pharmaceuticals. Traditional chemical synthesis of complex diterpenoids remains challenging, and complete biosynthetic pathway reconstruction for terpenoid therapeutics had not been achieved at the time of publication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide background context supported by appropriate citations to established literature. These claims accurately represent the state of the field and provide justification for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CYP76AH subfamily members from other Lamiaceae species catalyze monooxygenation of abietane-type diterpenoids. C. forskohlii contains miltiradiene-derived diterpenoids, and CfTPS1/CfTPS3 produce miltiradiene. These CYP76AHs show 60-85% amino acid sequence homology with C. forskohlii enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C45-C49 are supported by citations to prior literature and sequence analysis data. These claims provide appropriate context for the cross-species enzyme activity experiments (C50-C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C39"
+    ],
+    "result": "Forskolin and the majority of 13R-manoyl oxide-derived diterpenoids in C. forskohlii harbor a keto-group at C-11. The oxygenation pattern of 1,11-dihydroxy-13R-manoyl oxide matches that found in forskolin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C39 are supported by citations (C36) and structural comparison (C39). These observations provide rationale for focusing on C-11 oxygenating enzymes in the pathway elucidation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The intermediates 13R-manoyl oxide and 9-hydroxy-13R-manoyl oxide did not accumulate in C. forskohlii root cork, contrasting with their accumulation in engineered yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by experimental comparison of plant and yeast extracts (Figure 10\u2014figure supplement 1). This observation provides important context for understanding differences between native and engineered systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Prior to this work, the only identified acyltransferases in diterpenoid biosynthesis were those involved in paclitaxel biosynthesis (Clade V). The C. forskohlii ACTs identified here, including CfACT1-6 and CfACT1-8, belong to Clade III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by knowledge of the field (C79), citations (C80), and phylogenetic analysis (C81, Figure 12). This represents a novel finding regarding acyltransferase involvement in diterpenoid biosynthesis outside the paclitaxel pathway.",
+    "result_type": "MINOR"
+  }
+]

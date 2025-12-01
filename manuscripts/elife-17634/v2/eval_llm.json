@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors characterize neural differentiation patterns in a panel of genome-edited mESC lines with various combinations of Ptch1, Ptch2, Shh, and Smo mutations. Each cell line differentiates into neural progenitor identities consistent with established Hedgehog signaling models, with ventral markers (Nkx2.2, Olig2, Isl1/2) indicating high pathway activity and dorsal markers (Pax7) indicating pathway inactivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C45 collectively demonstrate that the genome-edited cell lines behave as predicted by canonical Hh signaling models. The immunostaining data (Figure 1) shows appropriate neural progenitor marker expression patterns across all genotypes, with Smo invariably required for pathway activation and Ptch1/2 acting as negative regulators. This validation is essential for subsequent mosaic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors validate that Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- cells have constitutive, Shh-independent Hedgehog pathway activation that is Smoothened-dependent. Cyclopamine inhibits the response with IC50 ~25 nM, ShhN cannot activate the pathway in these cells, but Ptch1 transfection restores Shh responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are well-supported by experimental data (Figures 1S, 1T, 1U). The cyclopamine dose-response, lack of ShhN response, and rescue by Ptch1 transfection collectively validate that these cells are appropriate for assessing non-cell autonomous Ptch1/2 effects. The IC50 determination and rescue experiments provide strong mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In mosaic nEBs composed 1:1 of Ptch1+/LacZ;Shh-/- and Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- cells, the authors observe fewer Nkx2.2+ and Olig2+ cells than expected, suggesting non-cell autonomous inhibition of the Hedgehog response by Ptch1/2-expressing cells. Co-culture with Smo-/- cells produces a dorsal shift in Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 provide the first direct evidence for non-cell autonomous Ptch1/2 activity. The mosaic nEB data (Figure 2) shows deviation from the null hypothesis of purely cell-autonomous regulation. The interpretation that this reflects extracellular flux of Ptch1/2 substrates is reasonable given the genetic absence of Shh and ligand insensitivity of the reporter cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors establish Ptch1:LacZ as a reliable, lineage-restricted reporter of Hedgehog pathway activity across their cell line panel. Ptch1:LacZ levels correlate with neural progenitor marker expression, are maximal at 72 hr differentiation, and require Smoothened activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are well-supported by experimental data (Figure 3A-C). The correlation between Ptch1:LacZ levels and ventral neural progenitor markers, time-course data, and cyclopamine sensitivity validate this reporter for subsequent mosaic experiments. This provides a quantitative, high-throughput alternative to immunostaining.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Using Disp1-/- cell lines to eliminate all Hedgehog ligand signaling, the authors demonstrate that Ptch1/2-expressing cells non-cell autonomously suppress Ptch1:LacZ expression in neighboring Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- cells. This effect requires Smoothened in the responding cells and is not due to differential cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 provide strong evidence for non-cell autonomous Ptch1/2 activity independent of ligand sequestration. The use of Disp1-/- cells eliminates paracrine Hedgehog signaling, and the Smo-dependence of the effect (C67-C68) supports Smo as the target. Cell tracker experiments (C69) rule out differential proliferation as a confound. This is a key result supporting the antiporter model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Loss of 7dhcr enhances the ability of cells to non-cell autonomously inhibit the Hedgehog response in neighboring Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- cells. Exogenous 7DHC inhibits the Hedgehog response, with greater inhibition when Ptch1/2-expressing cells are present, supporting 7DHC or its derivatives as candidate Ptch1/2 cargo molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are supported by experimental data (Figure 4). The enhanced non-cell autonomous inhibition by 7dhcr-/- cells (C71) and differential effects of exogenous 7DHC in mosaic vs. monotypic cultures (C74-C75) provide evidence for sterol involvement. However, the interpretation remains somewhat speculative (C73, C76) as the exact molecular species is not identified. The results are consistent with but do not definitively prove the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Using HB9:GFP motor neuron differentiation as a readout, the authors show that Ptch1/2 in surrounding cells suppress motor neuron induction in wild-type cells. SAG-induced motor neuron differentiation shows strong synergy with Ptch1/2 loss in surrounding cells, consistent with Ptch1/2 cargo acting as a SAG antagonist rather than through ligand sequestration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are well-supported by experimental data (Figure 5). The synergistic effect between SAG and Ptch1/2 loss (C82) is particularly important as it argues against ligand sequestration and supports a direct Smo-inhibitory mechanism. The dose-dependent effects and intermediate phenotype of Ptch1LacZ/-;Shh-/- cells (C84) suggest Ptch2 compensation, consistent with other results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In three-part mosaic nEBs with sparse Shh-expressing cells, the authors demonstrate that Ptch1/2 absence in the majority cell population strongly enhances Shh-mediated motor neuron induction in HB9:GFP reporter cells. Extracellular Shh levels are unchanged across conditions, arguing against ligand sequestration as the mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 are strongly supported by experimental data (Figure 6A-D, Figure 6\u2014supplement 1). The dramatic differences in motor neuron induction based on Ptch1/2 status of surrounding cells (C86-C87, C91-C92), combined with equivalent extracellular Shh staining (C90), provide compelling evidence that non-cell autonomous effects are mediated by secreted inhibitor rather than ligand sequestration. The Smo-dependence (C93) further supports this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "In four-part mosaic nEBs, even a minor fraction of Ptch1+/LacZ;Shh-/- cells suppresses Shh-mediated motor neuron induction in a predominantly Ptch1LacZ/LacZ;Ptch2-/-;Shh-/- environment, demonstrating that Ptch1/2-containing cells have dominant inhibitory properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are supported by experimental data (Figure 6E-F). The dominant inhibitory effect of even small numbers of Ptch1/2-expressing cells strongly supports secretion of a diffusible inhibitor rather than a cell-autonomous or activating mechanism. This is a key result distinguishing between alternative models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors conclude that Ptch1/2 mediate secretion of a Smoothened inhibitor that affects the Hedgehog response both cell autonomously and non-cell autonomously. This extends prior observations using overexpressed Ptch1 by demonstrating the effect with endogenous Ptch1/2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 represent the main conclusion, which is well-supported by the collective experimental evidence from mosaic nEBs. The use of endogenous expression levels (C98) addresses a key limitation of prior work (C97). However, the exact molecular identity of the secreted inhibitor remains unidentified, which is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors observe that different Ptch1-/- cell lines vary in their non-cell autonomous inhibitory activity, with dorsal cells being more effective inhibitors than ventral cells. They speculate this reflects varying Ptch2 levels. Loss of Smoothened decreases non-cell autonomous inhibition, likely due to reduced Ptch1/2 expression, but Ptch1/2 can still inhibit Smo even without pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 are supported by experimental observations, though the interpretation regarding Ptch2 levels (C100) is speculative. The observation that Smo loss reduces non-cell autonomous inhibition (C101-C102) is consistent with feedback regulation of Ptch1/2 expression. The conclusion that Ptch1/2 can inhibit Smo without pathway activation (C103) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose a mechanistic model in which Ptch1/2 function as proton-driven antiporters in acidified endosomal compartments, enriching endosomal lumen or multivesicular endosomes with a Smoothened inhibitor that is released via exosomes to regulate Smo both cell autonomously and non-cell autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C107 cite prior work establishing Ptch1 localization to late endosomes and requirement for acidification and conserved acidic residues. However, claims C108-C109 are speculative models not directly tested in this study. While consistent with the data, alternative mechanisms for secretion are not ruled out. Additional experiments would be needed to validate this specific model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors conclude that cells enriched in sterol precursors (7dhcr-/-) are more effective non-cell autonomous inhibitors, and that 7DHC becomes more potent when acted upon by Ptch1/2 activity, suggesting the Ptch1/2 cargo becomes inhibitory after translocation or secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 are well-supported by the 7dhcr experiments (Figure 4). Claims C112-C113 represent reasonable inferences from the data showing enhanced inhibition in mosaic cultures with Ptch1/2-expressing cells. However, the exact molecular species and mechanism of activation remain speculative. The conclusion is consistent with but not definitively proven by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors discuss implications for cancer biology, noting that Ptch1/2 disruption in tumors may enhance Smoothened activation in adjacent stromal cells non-cell autonomously, but that cells remain sensitive to Hedgehog ligands even without Ptch1/2, suggesting ligand-targeting therapies remain viable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 represent reasonable implications of the findings for cancer therapy, supported by citations to prior literature on stromal cell responses to Shh-expressing tumors (C115). The prediction that ligand-targeting strategies remain viable (C116-C117) follows logically from the demonstration that Ptch1/2-null cells respond to Shh when Ptch1 is restored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors propose that Ptch1/2 act broadly and communally to inhibit Smoothened in tissues undergoing patterning, with non-cell autonomous inhibition mediated by antiporter activity rather than ligand sequestration. This model suggests local Shh sensitivity is highly buffered and equalized between cells, aiding formation of smooth response gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are well-supported by the experimental data showing non-cell autonomous inhibition in Shh-/- nEBs and dominant effects of small numbers of Ptch1/2-expressing cells. Claims C122-C123 represent a broader model for morphogen gradient formation that is consistent with the findings but extends beyond what is directly demonstrated. The model is plausible but would require additional in vivo validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The introduction establishes the biological importance of Hedgehog signaling, the molecular identities of key pathway components (Smoothened as a GPCR, Patched as an RND family antiporter), the prevailing model of Ptch-mediated Smo inhibition, and multiple lines of evidence suggesting the endogenous Ptch cargo is a steroidal molecule, though no Smo-regulatory Ptch substrate has been definitively identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34 represent established knowledge and prior work that provides context for the current study. These are well-supported by appropriate citations to the literature. The summary of evidence for a steroidal cargo (C17-C27) is comprehensive and accurately represents the state of the field. This background appropriately motivates the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

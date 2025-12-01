@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors determined a 3.8 \u00c5 resolution cryoEM structure of E. coli RecBCD bound to a DNA fork substrate with a 12-nucleotide 5'-tail using a nuclease-dead mutant. The structure accounts for all protein domains and DNA, representing approximately half of the particles analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C27, C98-C101 collectively establish the successful structure determination with appropriate resolution (3.8 \u00c5), proper experimental design (nuclease-dead mutant to preserve substrate), and complete structural coverage. The methods, data processing statistics (Table 1), and figures provide converging evidence for this technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Extension of the 5'-tail beyond 10 nucleotides induces a large conformational change in RecD, causing it to close around the DNA and bringing the RecD SH3 domain into contact with the RecB 2B domain, which stabilizes the closed conformation. This conformational change propagates through RecC to affect RecB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C64-C69 are well-supported by structural comparisons between the current structure and previous crystal structures (C22-C24). The conformational changes are directly observed in the cryoEM density and illustrated in Figure 4 and Videos 1-3, providing strong visual and structural evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The RecD SH3 domain adopts a novel binding mode, interacting with an \u03b1-helix in RecB rather than the extended proline-rich peptide typical of canonical SH3 domains. This domain becomes a focal point coordinating three interaction interfaces (DNA, RecB helix, and RecB linker) during nuclease activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C43-C59 are supported by direct structural observations (Figure 3) and comparisons with canonical SH3 domains and RecD2 structures. The structural data clearly show the \u03b1-helix binding mode and altered loop positions (C55) that distinguish this from typical SH3-peptide interactions. The novelty claim (C57) is appropriately qualified as an inference based on structural comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C45"
+    ],
+    "result": "This represents the first example of peptide-binding by an SH3 domain in a bacterial system, with SH3 domains being rare in prokaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C45 rely on the authors' knowledge of the literature rather than systematic analysis. While C45 (rarity in prokaryotes) is supported by general knowledge, C8 (first bacterial example) is qualified with 'to our knowledge,' indicating potential incompleteness of the literature survey. The novelty claim cannot be definitively verified without comprehensive database searches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Conformational changes in RecC shift the position of the RecB nuclease domain, breaking stabilizing contacts between a RecC helix and the nuclease-blocking helix in the RecB linker. This releases the blocking helix from the active site, which relocates to the RecD 2A domain, opening the nuclease site for DNA access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C74-C83 describe the nuclease activation mechanism supported by structural comparisons with the initiation complex (C21, C74, C77). The absence of electron density for the blocking helix in its original position (C79) and weak density suggesting an alternate path (C81-C82) provide direct evidence. However, the weak density for the relocated linker (C81) introduces some uncertainty about the precise path, though the overall mechanism is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ADPNP binds to the RecB ATP-binding site with the adenine sandwiched between aromatic residues, inducing conformational changes in the helicase domains similar to other SF1 helicases. The RecB arm domain contacts the duplex DNA across the minor groove, contrasting with AddAB's major groove contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are supported by direct structural observations (electron density in Figure 2\u2014figure supplement 1) and comparisons with other SF1 helicases and AddAB structures. The unusual adenine binding mode (C30) and conformational changes (C31) are well-documented, and the comparison with AddAB (C36) is based on published structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All twelve bases of the 5'-tail are visible in the electron density, extending from the fork junction through RecC and along RecD. The first nine bases match previous structures, while the last three extend across RecD's 2A domain. Surprisingly, only weak nucleotide density is visible at RecD's ATP-binding site despite ADPNP binding to RecB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by direct observation of electron density (Figure 2) and comparison with previous structures (C39, C41). The weak nucleotide density at RecD (C42) is acknowledged and discussed in Figure 2\u2014figure supplement 2, with a plausible explanation provided. The structural observations are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "DNA substrates with 10-nucleotide 5'-tails crystallize similarly to the initiation complex, but adding a single base beyond 10 nucleotides prevents crystallization, indicating a conformational change in the protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe direct experimental observations from crystallization trials. The inference of conformational change (C24) from loss of crystallization is reasonable and subsequently validated by the cryoEM structure showing large conformational changes with the 12-nucleotide tail. This provides strong support for the length-dependent conformational switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "A minor class of particles (18%) lacks electron density for the RecB nuclease domain, though other structural features are similar to the main class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is a direct observation from cryoEM data classification. The authors appropriately note this class but focus on the dominant class (C25) for detailed analysis. This represents a minor observation about sample heterogeneity that does not affect the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RecD is not required after Chi recognition and becomes inactivated rather than ejected from the complex. The SH3 domain might relocate to lock RecD in an inactive conformation following Chi recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C62 cite established findings from previous studies. However, C63 is explicitly speculative ('it is plausible,' 'might cause'), proposing a possible mechanism for RecD inactivation based on the current structural findings. This speculation is reasonable but lacks direct experimental support and is appropriately qualified by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "RecBCD employs a multi-step activation pathway: initial ATP-independent unwinding fills the RecB ssDNA-binding site, ATP-dependent unwinding by RecB begins with the nuclease blocked, extension of the 5'-tail beyond 10 bases triggers RecD conformational changes that activate the nuclease, enabling processive DNA digestion until Chi recognition or complete phage genome degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C97 integrate the current structural findings with established knowledge about RecBCD function. The proposed pathway (C85-C93) is well-supported by the structural data showing the activation mechanism, previous biochemical studies (C86, C89), and the current structure. The functional consequences (C94-C97) are established knowledge appropriately cited. This represents a comprehensive mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RecBCD, AddAB, and AdnAB are highly processive helicase-nucleases that process DNA breaks for homologous recombination and phage defense. Previous structural studies of AddAB provided detailed mechanistic understanding, while RecBCD structural knowledge was limited to the initiation complex showing nuclease inhibition by an \u03b1-helix blocking the active site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C21 provide background context supported by appropriate citations to previous work. These establish the biological importance of RecBCD (C1-C2, C9-C13), the state of knowledge for AddAB (C16) versus RecBCD (C17-C18), and the known nuclease regulation mechanism from the initiation complex (C19-C21). This background appropriately frames the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The SH3 domain in RecD2 and related helicases binds ssDNA in a location different from the canonical peptide-binding site, potentially allowing simultaneous binding of both DNA and peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 describe findings from previous RecD2 structures (cited appropriately). The inference that the domain retains potential for peptide binding (C47) is reasonable based on the structural observation that the canonical binding site is not occupied by DNA. This provides important context for understanding the RecBCD SH3 domain.",
+    "result_type": "MINOR"
+  }
+]

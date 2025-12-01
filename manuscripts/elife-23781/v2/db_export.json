@@ -1,0 +1,1281 @@
+{
+  "submission": {
+    "id": "3c9d9a90-477a-46a0-af70-780c767b2351",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:51:29.179102Z",
+    "updated_at": "2025-11-30T22:51:29.179102Z"
+  },
+  "content": [
+    {
+      "id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "submission_id": "3c9d9a90-477a-46a0-af70-780c767b2351",
+      "content_type": "manuscript",
+      "content_text": "# Atomistic simulations indicate the c-subunit ring of the F1Fo ATP synthase is not the mitochondrial permeability transition pore\n\n## Authors\n\n- Wenchang Zhou<sup>1</sup> ([ORCID: 0000-0003-0397-1032](https://orcid.org/0000-0003-0397-1032))\n- Fabrizio Marinelli<sup>1</sup> \u2020\n- Corrine Nief<sup>1</sup>\n- Jos\u00e9 D Faraldo-G\u00f3mez<sup>1</sup> ([ORCID: 0000-0001-7224-7676](https://orcid.org/0000-0001-7224-7676)) \u2020\n\n### Affiliations\n\n1. Theoretical Molecular Biophysics Section National Heart, Lung and Blood Institute, National Institutes of Health Bethesda United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPathological metabolic conditions such as ischemia induce the rupture of the mitochondrial envelope and the release of pro-apoptotic proteins, leading to cell death. At the onset of this process, the inner mitochondrial membrane becomes depolarized and permeable to osmolytes, proposedly due to the opening of a non-selective protein channel of unknown molecular identity. A recent study purports that this channel, referred to as Mitochondrial Permeability Transition Pore (MPTP), is formed within the c-subunit ring of the ATP synthase, upon its dissociation from the catalytic domain of the enzyme. Here, we examine this claim for two c-rings of different lumen width, through calculations of their ion conductance and selectivity based on all-atom molecular dynamics simulations. We also quantify the likelihood that the lumen of these c-rings is in a hydrated, potentially conducting state rather than empty or blocked by lipid molecules. These calculations demonstrate that the structure and biophysical properties of a correctly assembled c-ring are inconsistent with those attributed to the MPTP.\n\n## Introduction\n\nUnder certain pathological conditions mitochondria cease ATP production and instead trigger apoptosis. At the onset of this process is the depolarization of the inner mitochondrial membrane, which under normal conditions sustains the proton-motive-force powering the ATP synthase. It has long been hypothesized that this depolarization is mediated by a channel protein referred to as the Mitochondrial Permeability Transition Pore (MPTP) (Szab\u00f3 and Zoratti, 1992; Bernardi and Forte, 2007; Halestrap, 2009; Azzolin et al., 2010). The hallmark properties of this putative channel are: very large ionic conductance (up to 1300 pS); high permeability to small molecules, including osmolytes (less than 1.5 kDa); and no solute specificity (aside from size-limit) or ion selectivity. Thus, opening of the MPTP, thought to be induced,\u00a0for\u00a0example, by excessive amounts of Ca2+ or ROS in the mitochondrial matrix, is catastrophic for the cell: not only does it short-circuit the respiratory chain, causing the ATP synthase to reverse its activity and deplete cellular ATP, but it also induces the osmotic swelling of the matrix, rupturing the outer membrane and causing the release of pro-apoptotic proteins (Halestrap, 2009).\n\nThe molecular identity of the MPTP remains to be established. Seemingly promising studies have implicated mitochondrial proteins as diverse as the outer-membrane Voltage-Dependent Anion Channel (VDAC), the inner-membrane Adenine Nucleotide Translocase (ANT), and the non-transmembrane cyclophilin D; ultimately, however, none of these proteins was found to be actually essential (Bernardi and Forte, 2007; Halestrap, 2009; Azzolin et al., 2010; Bernardi et al., 2015). More recently, Jonas and co-workers have proposed that a sub-complex of the mitochondrial F1Fo ATP synthase, known as the c-ring, is the MPTP (Alavian et al., 2014). The c-ring is an oligomer of identical copies of subunit-c, each of which is a hairpin of two transmembrane helices (Figure 1\u2014figure supplement 1A); when assembled, these helices are arranged in two concentric rings around a central lumen (Meier et al., 2005; Pogoryelov et al., 2009; Symersky et al., 2012). The F1 domain, which projects out of the membrane and contains the catalytic domain, sits atop the ring (Figure 1\u2014figure supplement 1B) (Dautant et al., 2010; Watt et al., 2010). In the operating enzyme, the membrane Fo domain works like a turbine, with the c-ring rotating against other static elements as protons sequentially bind to each of the c-subunits and are released across the membrane after a revolution (Meier et al., 2011; Leone and Faraldo-G\u00f3mez, 2016). These proton-binding sites are on the outer surface of the ring, and feature a conserved glutamate and other polar groups (Figure 1\u2014figure supplement 1A) (Pogoryelov et al., 2009; Symersky et al., 2012; Vollmar et al., 2009; Zhou et al., 2016); the lumen, by contrast, is largely hydrophobic. What Jonas et al. propose is that the metabolic conditions associated with the mitochondrial permeability transition induce the F1 and Fo sectors to dissociate, upon which the lumen of the c-ring would become the MPTP (Alavian et al., 2014).\n\nHere, we use all-atom molecular dynamics simulations to directly investigate the plausibility of this claim, which has been questioned by others (Bernardi et al., 2015; Halestrap, 2014). Specifically, we consider two c-rings of different size, and examine their ion-conducting properties under the assumption that their lumen is hydrated. Independently, we examine the validity of this assumption, that\u00a0is, we evaluate whether a hydrated lumen, which is a requisite for ion/solute permeation, is more or less probable than an empty lumen or a lumen occupied by a lipid bilayer, which would not permit conduction at the expected rates. Taken\u00a0together,\u00a0our results strongly suggest that the c-subunit ring, if correctly folded and assembled, is not the elusive MPTP, even if it did in fact became detached from the F1 sector.\n\n## Results and discussion\n\n### The hydrated c-ring lumen does not conduct like the MPTP\n\nWe first considered the c10-ring from Saccharomyces cerevisiae, which is the only mitochondrial c-ring of known atomic structure (Figure 1A) (Symersky et al., 2012; Zhou et al., 2016). The lumen of this ring is also wider than that of the c8-rings found in vertebrates (Figure 1\u2014figure supplement 2A) (Watt et al., 2010), and thus, it is in\u00a0principle more likely to sustain a larger conductance. (Note the mitochondrial\u00a0permeability transition has also been observed in yeast (Azzolin et al., 2010)). To evaluate the conducting properties of this c10-ring, we calculated the free-energy profile associated with the permeation of either K+ or Cl\u2212\u00a0across the lumen, as well as the diffusion-coefficient profile for each ion (Figure 1B\u2013D), in a state in which the c-ring lumen is filled with water at bulk-like density (as will be discussed below, this state is intrinsically metastable though not the most probable). The resulting conductance values are 2.5 ps for K+ and 116 ps for Cl\u2212\u00a0(for 100 mM KCl). These values are clearly inconsistent with the properties of the MPTP, not only in terms of their magnitude, but also in that they reveal a marked anion selectivity. Analogous calculations carried out in the absence of electrolytes indicate that this selectivity owes to a ring of arginine side-chains at the mouth of the lumen, on the matrix side, which influences the energetics and dynamics of ion permeation electrostatically (Figure 1G and A). This electropositive arginine ring, which is conserved in other mitochondrial c-rings (Figure 1\u2014figure supplement 2A), counters the cost of dehydration for Cl-\u2212, but imposes an additional barrier for K+ (Figure 1C), incompatible with the high conductance properties of the MPTP.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Cross-section of the c10-ring of the mitochondrial ATP synthase from S. cerevisiae. The surface of the protein is colored as follows: Lys and Arg, blue; Asp and Glu, red; other polar residues (and protonated Glu), green; other residues, grey. The ring is oriented such that the interface with the F1 domain, inside the mitochondrial matrix, is up. (B) Molecular simulation system employed to study the properties of the c10-ring, shown again in cross-section (blue). The ring is embedded in a model phospholipid bilayer, in 100 mM KCl. K+ and Cl- ions are shown as yellow and green spheres, respectively. Note the c-ring lumen is hydrated. (C, D) Potential-of-mean-force (G(z), PMF) and diffusion-coefficient profiles for the permeation of either K+ or Cl- across the lumen of the c10-ring (Materials\u00a0and\u00a0methods). The lack of binding sites for K+ and the 3 kcal/mol free-energy barrier explain the modest K+ conductance; permeation by Cl-, by contrast, is strongly favored electrostatically. (E, F) Same as (A, B), for a variant of the c13-ring from Bacillus pseudofirmus (Figure 1\u2014figure supplement 2B,C), whose lumen is wider than that of the c10-ring. (G) Free-energy of selectivity for Cl- and against K+ by the c10-ring lumen, examined with and without electrolyte. The selectivity profile, \u0394G(z), was calculated by subtracting the individual PMF profiles, G(z), in each case. The marked increase in Cl- selectivity toward the lumen entrance, on the matrix side, confirms the strong electrostatic influence of a ring of arginine residues. (H) Same as (G), for the variant of the c13-ring from B. pseudofirmus. Despite its wider lumen, this ring is also markedly anion selective, unlike the MPTP.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The structure shown corresponds to PDB entry 2WPD (Dautant et al., 2010). Note that the complete F1Fo enzyme includes additional components both inside and outside the membrane, not present in this structure; these missing components sit peripherally and are believed to act as the \u2018stator\u2019 against which the moving parts rotate, and also mediate the dimerization of the enzyme. (A) Structure of the c10-ring in the Fo domain, viewed from the plane of the membrane and from the interior of the mitochondrial matrix. Each of the 10 c-subunits consists of two transmembrane helices. The functional proton-binding sites are found on the outermost surface of the ring, roughly halfway across the transmembrane span. (B) The F1 domain sits atop the c-ring and includes the catalytic unit (\u03b13\u03b23) and the so-called central stalk (subunits \u03b3, \u03b4 and e), which mechanically couples F1 and Fo. (C) Close-up of the interface between the c-ring and the central stalk, highlighting openings that would plausibly permit the downhill permeation of protons across the c-ring lumen, if this lumen had channel-like characteristics. These openings are considerably w in ATP synthases with larger c-rings (i.e. with greater number of c-subunits).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Structure of the c8-ring of the ATP synthase from bovine mitochondria (Watt et al., 2010). Side-chains were modeled onto the low-resolution structure. This c8-ring is thought to be conserved across all vertebrates (Watt et al., 2010). (B) Structure of the c13-ring of the ATP synthase from Bacillus pseudofirmus OF4 (Preiss et al., 2010), in the wild-type form. (C) Double-mutant of the c13-ring, made to resemble the lumen of the c8-ring and c10-rings (Figure 1A).\n\n### The lumen of the mitochondrial c-ring is not hydrated\n\nBecause the interior surface of the c-ring is highly hydrophobic, the permeation of ions and osmolytes across the lumen requires an aqueous pathway. Thus, another way to evaluate the notion that the c-ring is the MPTP is to determine whether this lumen is indeed likely to be filled with water. We therefore sought to calculate the free-energy gain or cost associated with varying the density of water inside this region. To do so, we developed a variation of the Metadynamics enhanced-sampling technique, with which we simulated multiple transitions between an empty state of the c-ring lumen and another that is maximally hydrated, while quantifying the energetics of this process (Materials\u00a0and\u00a0methods). The resulting free-energy profile (Figure 2A) reveals that a metastable state does exist in which the lumen of the mitochondrial c-ring is filled with water, at bulk-like density (Figure 2B). However, this water-filled state is approximately 15 kcal/mol less favorable than a second state in which most of the lumen of the c-ring is void of any water (Figure 2B). That is, the probability that the c-ring lumen exists in a \u2018conducting state\u2019 is negligible \u2013 a dehydrated, non-conducting state is much more probable, by multiple orders of magnitude.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Free energy as a function of the water density inside the lumen of the mitochondrial c10-ring, calculated with a variant of the Metadynamics technique (Materials\u00a0and\u00a0methods), for a simulation system analogous to that shown in Figure 1B. The density value for bulk water (for the CHARMM36 forcefield) is indicated in red. Error bars reflect the differences between two profiles calculated using different halves of all simulation data. (B) Snapshots of the c-ring lumen in the two metastable minima detected in the free-energy profile shown in panel (A), i.e. a non-conducting, de-wetted state (left), and a water-filled, putatively-conducting state (right), whose properties are characterized in Figure 1. For clarity, several c-subunits in the c-ring are omitted, as are the lipid bilayer and the solvent outside the lumen. Hydrogen atoms in water (red spheres) are also omitted. Note that in the non-conducting state (left), the two regions at the entrance of the hydrophobic portion of the lumen are hydrated; hence, the density value for this state in free-energy profile in panel (A) is not zero. (C, D) Same as (A, B), for the variant of the prokaryotic c13-ring from the B. pseudofirmus ATP synthase.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** See Materials\u00a0and\u00a0methods. (A) The weight function \u03be\u00a0defines a cylindrical volume with soft boundaries that extend from R-\u0394R/2 to R+\u0394R/2, and from |Z-\u0394Z/2| to |Z+\u0394Z/2|. Specifically, the value of \u03be inside the blue cylinder is 1, and is 0 outside the red cylinder. In between the two cylinders, \u03be\u00a0switches smoothly from 1 to 0 (panel B). A larger cylinder, shown in grey, is used to define and update a list of particles that neighbor the volume during the simulation. (B) Switching function used to evaluate \u03be at the cylinder boundaries. (C, D) Specific definition of the cylindrical volume used in our analysis of the probability of lumen hydration in the c10- and c13-rings. As mentioned, this volume is defined relative to the protein coordinates, and not in absolute Cartesian space; therefore, the volume can change position and orientation during the simulation as the protein tumbles and diffuses within the membrane. To achieve this, three sets of C\u03b1 atoms in regions of the protein with minimal structural variability (orange and cyan spheres) are used to define three centers-of-mass. The center of the cylindrical volume is made to coincide and follow the protein center in the middle (orange), while the vector that connects the two distal centers (cyan) defines the cylinder axis.\n\n### The lumen of the mitochondrial c-ring is plugged by lipid molecules\n\nIrrespective of the question of hydration, the notion that the c-ring is the MPTP implicitly assumes that lipid molecules are somehow excluded from its lumen as c-subunits gradually assemble to form a ring. There is, however, no evidence that this is the case; to the contrary, detergent molecules are often observed in the lumen in X-ray structures of c-rings (Pogoryelov et al., 2010; Schulz et al., 2013; Matthies et al., 2014), and AFM images of two-dimensional ring arrays also indicate the lumen might be occluded (Meier et al., 2001). To conclusively evaluate this question, we carried out three independent simulations in which the mitochondrial c-ring lacked two of the c-subunits (Figure 3). This open c-ring resembles the kind of assembly intermediate that has been observed in AFM micrographs of prokaryotic c-rings (M\u00fcller et al., 2001; Pogoryelov et al., 2005). Initially, we assumed the lumen of the c-ring to be hydrated (Figure 2B), as this is the necessary feature of the hypothesized conducting form. As shown in Figure 3A\u2013C, however, the three simulations consistently demonstrate that all this water is quickly displaced by lipid molecules gradually entering the c-ring lumen; ultimately, these lipid molecules occupy the totality of the pore, in a bilayer-like arrangement akin to that outside the c-ring (Figure 3C). There is no reason to assume that the incorporation of the two missing c-subunits would alter the lipid occupancy of the lumen, which would therefore remain in a non-conducting state when the c-ring assembles completely.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23781/elife-23781-fig3-v2.jpg)\n\n**Figure 3.:** Three independent molecular dynamics simulations were carried out of assembly intermediates of the c10- and c13-rings lacking two of the c-subunits. Initially, the lumen of these c-rings was hydrated at bulk-like density. (A) Time-series of the number of non-hydrogen atoms from either water (dashed lines) or lipid molecules (solid lines) inside the lumen of the mitochondrial c-ring. The volume consider for this count is a cylinder of radius 7 \u00c5 and height 32 \u00c5, approximately centered in the middle of the membrane. Running averages are shown for each of the three simulation, colored in black, red and blue, respectively, with the raw data shown in the background in grey. The number of atoms equivalent to 4 POPC lipid molecules is indicated, for reference. (B) Snapshots of the molecular system, at the beginning (left) and at the end (right) of the simulation. Water molecules (red) are progressively displaced by lipid molecules (shown in yellow) entering the lumen laterally. (C) Side-view of the open c-ring at the end of the one of the simulations. The lipid molecules inside the lumen preserve a bilayer arrangement, and adapt to the specific features of the protein surface. (D, E, F) Same as (A, B, C), for the variant of the c13-ring from B. pseudofirmus. The volume considered in panel (D) is a cylinder of radius 14 \u00c5 and height 34 \u00c5.\n\n### Enlargement of c-ring lumen does not explain properties of MPTP\n\nOne of the elements in the proposal that the mitochondrial c-ring is the MPTP is that the size of the\u00a0lumen might expand upon dissociation of the F1 sector (Alavian et al., 2014). This expansion is not entirely implausible; indeed, subtle variations in the amino-acid sequence of the c-subunits can destabilize the native state of a c-ring, and favor the assembly of larger c-rings with a slightly greater number of c-subunits (Pogoryelov et al., 2012). With this in mind, we repeated all calculations presented thus far for a variant of the c13-ring from the bacterium Bacillus pseudofirmus (Figure 1E\u2013F). Among the ATP synthase c-rings of known structure, this specific c13-ring features the widest lumen (Preiss et al., 2010). Thus, although no process akin to the permeability transition has been described in bacteria, we reasoned this ring would be a suitable system to assess whether an expanded mitochondrial c-ring might be the MPTP. For a better comparison, two of the residues lining the lumen of the ring were mutated, to make it more similar to the mitochondrial c-ring (Figure 1\u2014figure supplement 2B,C). The results from this new set of calculations, however, confirm the conclusions drawn above. Because the lumen is wider, the permeability of the hydrated state is significantly larger, but this state remains highly anion-selective (Figure 1H), unlike the MPTP. Moreover, this water-filled state is still disfavored, relative to the empty lumen, albeit to a lesser degree than in the c10-ring (Figure 2C,D). Importantly, though, independent simulations of an assembly intermediate lacking two c-subunits demonstrate that the preferred state is again\u00a0one in which lipid molecules occlude the lumen, in a bilayer arrangement (Figure 3D\u2013F).\n\n### Conclusions\n\nThis study demonstrates that the characteristics of the lumen of the mitochondrial c-ring are incompatible with the conducting properties of the MPTP. Consistent with the fact that the F1 domain does not actually seal the entrance to the lumen of the c-ring in the\u00a0fully\u00a0assembled, operating enzyme (Figure 1\u2014figure supplement 1C), the interior of the ring is not water-filled, but occupied by lipid molecules; that\u00a0is,\u00a0it is in a non-conducting state, thereby precluding the dissipation of the ion-motive-force that powers ATP synthesis. Our results also show that even if the c-ring became dissociated from the F1 domain (Alavian et al., 2014), despite the nanomolar affinity of this interaction (Pogoryelov et al., 2008), and even if its lumen was to become hydrated, under some hypothetical in vitro conditions, the conductance levels sustained by the c-ring would be unlike those of the MPTP.\n\nAdmittedly, this study does not rule out that an as-yet-unknown molecular structure consisting of c-subunits, distinct from that of the c-ring, matches the properties of the MPTP. However, it is also worth noting that no evidence of such alternative structure exists, to our knowledge. Structural studies of the c-subunit and its oligomers date back two decades; these studies include two- and three-dimensional crystallography, liquid and solid-state NMR spectroscopy, atomic-force microscopy, and more recently, single-particle cryo-electron microscopy (Meier et al., 2011; Leone and Faraldo-G\u00f3mez, 2016; von Ballmoos et al., 2009). Across a wide variety of species and experimental conditions, the consistent conclusion from these studies is that the c-subunits assemble in ring-like oligomers such as those analyzed here. This conclusion holds true for wild-type, mutagenized and inhibited forms of the c-ring, and for a variety of expression systems (including cell-free). Moreover, to our knowledge no apparent discrepancy exists between this set of structural data and the even larger collection of biochemical and functional measurements gathered for this enzyme or its constituent elements. Indeed, in the instances where clear thermodynamic data has been attained, for\u00a0example, on Na+/H+ binding to isolated c-rings, it was found to be not only quantitatively consistent with kinetic measurements for the complete enzyme functioning in membranes, but also explicable based on existing structures and theoretical considerations (Murata et al., 2008; Leone et al., 2015). In absence of concrete experimental evidence of the existence of an alternative architecture, the logical conclusion from this body of work and the present study is therefore that the c-ring from the mitochondrial ATP synthase is not the MPTP.\n\n## Materials and methods\n\n### Simulation systems and general specifications\n\nThe molecular dynamics (MD) simulation systems used to study the mitochondrial c10-ring from S. cerevisiae were adapted from a system used in earlier studies of the proton-binding sites in this structure (Symersky et al., 2012; Zhou et al., 2016). Briefly, the c10-ring had been embedded in a hydrated (and pre-equilibrated) palmitoyl-oleoyl-phosphatydyl-choline (POPC) lipid bilayer, using GRIFFIN (Staritzbichler et al., 2011), and equilibrated extensively through a series of restrained and unrestrained MD simulations. Here, the four lipid molecules occupying the center of the c-ring were removed, and instead the lumen was initially filled with water molecules. Several alternative systems were prepared: for the complete ring, one system included 100 mM KCl, while the other included counter-ions only; a simulation system was also prepared in which the c-ring lacks two c-subunits, thus resembling an assembly intermediate. After making these changes, energy minimizations, restrained and unrestrained molecular dynamics simulations were used to equilibrate these systems.\n\nThe simulation systems for the c13-ring from B. pseudofirmus OF4 were also adapted from a system used in a previous study of its proton-binding sites (Leone et al., 2010). The central lumen of this ring is about two-fold wider than that of the mitochondrial c10 ring, but the amino-acid composition of the protein surface lining this lumen differs. Thus, to make the c13-ring more similar, we introduced two mutations (K26L and E30Q) at the entrance of the lumen, on the side that would be exposed to the mitochondrial interior or matrix. In addition, the POPC lipid molecules inside the central lumen were also replaced by water. The resulting systems (with and without added 100 mM KCl, for the complete c13-ring, plus a system missing two c-subunits) were equilibrated analogously to the c10-ring systems.\n\nAll MD simulations were performed with NAMD2 (Phillips et al., 2005), using the CHARMM36 forcefield (MacKerell et al., 1998; Best et al., 2012; Klauda et al., 2010), at constant temperature (298 K) and pressure (1 atm) and with periodic boundary conditions in all directions. Long-range electrostatic interactions were calculated using the Particle-Mesh-Ewald algorithm, with a real-space cut-off of 12 \u00c5. Van der Waals interactions were modeled with a Lennard-Jones potential, cut-off at 12 \u00c5 using a smooth switching function taking effect at a distance of 10 \u00c5.\n\n### Ion conductance calculations\n\nFollowing Hummer and co-workers (Zhu and Hummer, 2012), the conductance $\\gamma$ of the c10-ring lumen was calculated using the expression:\n\n$$\n\\gamma=\\frac{q^{2}C\u00a0S}{k_{B}T}[\u00a0\\intZ_{1}Z_{2}exp\u2061{\\frac{G(z)}{k_{B}T}}\\frac{1}{D(z)}dZ\u00a0]^{\u22121}\n$$\n\nwhere q is the charge of the permeant ion, C is the bulk ion concentration (100 mM), S is the effective cross-section area of the lumen (201 \u00c52 for c10-ring and 616 \u00c52 for c13-ring), kB is the Boltzmann constant and T the temperature. $G(z)$ is the one-dimensional free-energy landscape reflecting the translocation of the ion across the protein, and $D(z)$ is the position-dependent diffusion coefficient of the ion along the lumen; both $G(z)$ and $D(z)$ were calculated using MD simulations, as described below. It is important to note that this computational framework has been shown to produce conductance values that are in good agreement with experimental measurements (Zhu and Hummer, 2012).\n\n### Free-energy profiles for K+ and Cl\u2212\u00a0permeation\n\nThe Adaptive-Biasing-Force (ABF) method (H\u00e9nin et al., 2010; Fiorin et al., 2013)\u00a0was used to calculate the potential-of-mean-force associated\u00a0with\u00a0the translocation of either K+ and Cl+ along the lumen of the c-ring, or $G(z)$, for each of the simulation systems described above. The lumen of the c-ring was filled with water (at bulk-like density) throughout these calculations. (It was not required to impose this condition, as this state is metastable and sufficiently long-lived to observe tens of permeation events). The reaction coordinate was the Z-coordinate of one K+ or one Cl- ion, defined relatively to the Z-coordinate of the center-of-mass of a ring of C\u03b1 atoms in the protein (from residues\u00a0A22 in the c10-ring, and from A18 in the c13-ring). The permeating ion was confined to a cylindrical volume (through flat-bottom restraining potentials) whose center and axis coincide with the center and axis of the lumen (defined by two additional rings of C\u03b1 atoms), and whose radius is slightly larger, namely 8 \u00c5 for the c10-ring, and 14 \u00c5 for the c13-ring. The length of the cylinder along the Z-coordinate was 100 \u00c5, therefore projecting into the bulk solution on both sides of the membrane.\n\nFor each ion type and system, two ABF simulations of 300 ns each were carried out, with the permeant ion starting on opposite sides of the membrane; in the course of each of these trajectories, the ions traverse the lumen multiple times, in both directions. The range in the Z-coordinate to be sampled was divided up in 0.2 \u00c5 bins, and 1000 unbiased samples were collected for each bin before the estimated biasing force was applied and updated. A third simulation was then conducted similarly for 100 ns to combine and refine the bias potentials calculated from the first two simulations. The free-energy profiles shown in Figure 1 reflect the outcome of these final calculations, while the error bands reflect the differences between the two initial profiles (averaged over the length of the profile).\n\n### Diffusion profiles for K+ and Cl\u2212\u00a0across the lumen\n\nTo calculate the diffusion coefficient of the permeant ion as a function of its position along the c-ring lumen, or $D(z)$, 51 independent simulations of 10 ns each were carried out for each system. In each of these simulations, the permeant ion was confined (through flat-bottom restraining potentials) in a disk of 2 \u00c5 in length (and radius as specified above), whose center varies in the Z-direction from \u221250 to 50 \u00c5 (relative to the protein, as described above). The starting configurations for each of these simulations were obtained from the ABF trajectories. The position-dependent diffusion coefficient was calculated a posteriori from the expression (Zhu and Hummer, 2012):\n\n$$\nD(z)=\\frac{var(z)}{\\tau(z)}\n$$\n\nwhere the numerator is the variance of the Z-coordinate of the ion (relative to the protein), i.e. $var\u00a0(z)=\u00a0\u27e8z^{2}\u27e9\u2212\u27e8z\u27e9^{2}$, and $\\tau(z)$ is the characteristic time of its autocorrelation function, i.e.:\n\n$$\n\\tau(z)=\\int0\u221e\u27e8\\deltaz(0)\u00a0\\deltaz(t)\u27e9\u00a0dt\u00a0/\u00a0var(z)\n$$\n\nwhere $\\deltaz(t)=z(t)\u2212\u27e8z\u27e9$, and t is the so-called lag time. In our simulations, the values of $\\tau(z)$ are all well converged for t\u00a0>\u00a080\u201390 ps. The diffusion profiles shown in Figure 1 are (cubic-spline) interpolations of the 51 values of $D(z)$ obtained using this approach; the error bars reflect the differences between values obtained from different halves of the simulations.\n\n### Density-biased multiple-walker metadynamics\n\nThe Metadynamics method was used to induce the wetting and de-wetting of the lumen of the c10 and c13-rings reversibly, and to calculate the associated free-energy changes. The collective variable biased in these simulations is the water density in the volume of the lumen. Following Feig and co-workers, we express this density as (Mirjalili and Feig, 2015):\n\n$$\n\u03c1=\\frac{\\sumi\u03be(X_{i})}{V}\n$$\n\nwhere $0\\leq\u03be(X_{i})\\leq1$ is a weight function of the Cartesian coordinates of a given atom i at a given time, whose value depends on whether that atom is inside ($\u03be(X_{i})\u223c1$) or outside ($\u03be(X_{i})\u223c0$) the volume V considered. Given the geometry of the lumen of the c-rings, we used a weight function $\u03be(X)$ that defines a cylinder of radius $R$, whose axis and center coincide with the those of the lumen, and which extends from $\u2212Z$ to $+Z$. Importantly, the boundaries of this cylinder are not abrupt, but rather smoothened over an interval $\u0394R$ and $\u0394Z$ around $R$ and $\\pmZ$ (Figure 2\u2014figure supplement 1A). More specifically:\n\n$$\n\u03be(X)=\u03be_{z}(z)\u00a0\u03be_{R}(r)={1if\u00a0r\u00a0<\u00a0R\u2212\u0394R/2\u00a0and\u00a0|z|\u00a0<\u00a0Z\u2212\u0394Z/20if\u00a0r\u00a0>\u00a0R+\u0394R/2\u00a0or\u00a0|z|\u00a0>\u00a0Z+\u0394Z/2\u03c7_{Z}(z)\u00a0\u03c7_{R}(r)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0otherwise\n$$\n\nwhere $\u03c7_{S}(\\sigma)$ (\u03c3 denotes z or r and S denotes R or Z) is a switching function whose value varies smoothly from 1 to 0 in the intervals $S\u2212\u0394S/2\\leq\\sigma\\leqS+\u0394S/2$, constructed so that its derivative is 0 at the outer boundaries of the cylinder (Figure 2\u2014figure supplement 1B):\n\n$$\n\u03c7_{S}(\\sigma)=\\frac{[(S+\u0394S/2)^{2}\u2212\\sigma^{2}]^{2}[(S+\u0394S/2)^{2}+2\\sigma^{2}\u22123(S\u2212\u0394S/2)^{2}]}{[(S+\u0394S/2)^{2}\u2212(S\u2212\u0394S/2)^{2}]^{3}}\n$$\n\nLastly, the effective volume V of this cylinder is:\n\n$$\nV=\\int^{\u200b}\u03be(X)\u00a0dX=\\int\u2212(Z+\u0394Z/2)Z+\u0394Z/2\u03be_{Z}(z)\u00a0dz\\int0R+\u0394R/22\\pir\u00a0\u03be_{R}(r)\u00a0dr\n$$\n\nAs in standard Metadynamics, a time-dependent biasing potential Ub acting on the collective-coordinate $\u03c1$ was adaptively constructed throughout the simulation; at convergence, the free-energy profile is the negative of this potential. At a given time, the forces acting on a given atom i due to this biasing potential can be derived using the chain rule, that\u00a0is:\n\n$$\nF_{i}^{b}=\u2212\u2207U_{b}(\u03c1)=\u2212\\frac{dU_{b}(\u03c1)}{d\u03c1}(\u00a0\\frac{\u2202\u03c1}{\u2202x_{i}},\u00a0\\frac{\u2202\u03c1}{\u2202y_{i}},\\frac{\u2202\u03c1}{\u2202z_{i}}\u00a0)\n$$\n\nwhere $x_{i}$, $y_{i}$ and $z_{i}$ are the coordinates of atom i. Note that our definition of the weight function $\u03be(X)$ is such that $F_{i}^{b}$\u00a0is non-zero only if atom i is found within the smooth boundaries of the cylinder, that\u00a0is, in the region where the switching functions $\u03c7_{Z}(z_{i})\u00a0$\u00a0and $\u03c7_{R}(r_{i})$ are non-zero.\n\nThe collective variable $\u03c1$ defined above is a function of all the atoms considered in the density calculation. In our case, these atoms are all the water oxygen atoms in the simulation system, which in principle would\u00a0make the calculation of the density collective variable and related biasing forces prohibitively slow. However,\u00a0because at a given time the value of the weight function (and associated forces) is non-zero only for the atoms found inside the target volume, we\u00a0can speed up the calculations by introducing a \u2018neighbor search\u2019 in the algorithm, whereby a list of water molecules within and in the vicinity of that volume is created and updated regularly, but not at every simulation step (Figure 2\u2014figure supplement 1A). In addition, we note that unlike earlier work (Mirjalili and Feig, 2015), our implementation defines $\u03be(X)$ in reference to the protein coordinates, that\u00a0is, not in absolute Cartesian space, and therefore the tumbling and diffusion of the ring in the membrane is unrestricted during the simulations.\n\nThe geometric definitions of the target volumes considered for quantification of the free-energies of hydration of the c10 and c13-ring lumens are indicated in Figure 2\u2014figure supplement 1C,D. The Metadynamics simulations were carried out using eight concurrent replicas, or walkers, which update and share a common bias potential but sample different configurations. The biasing potential applied to the density variable $\u03c1$ consisted of a series of Gaussian functions of width 0.0005 \u00c5\u22123, added in 4-ps intervals. The height of the Gaussians was gradually diminished throughout the simulations, ultimately reaching a value of 0.0035 kcal/mol; the free-energy profiles were obtained by time-averaging the biasing potential after this time-point (Marinelli et al., 2009). The total simulation times per walker were 140 ns for the c10-ring (using the last 50 ns for analysis), and 120 ns for the c13-ring (using the last 80 ns for analysis). The \u2018neighbor search\u2019 comprised a region that is 4 \u00c5 larger than the target volume in all directions, and the list of atoms therein was updated every 200 simulation steps, resulting in a\u00a0~\u00a01000-fold speed-up of the calculations.\n",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "12736acf-d8ff-4c25-8254-9cb64c37ec3d",
+      "submission_id": "3c9d9a90-477a-46a0-af70-780c767b2351",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23781.008](https://doi.org/10.7554/eLife.23781.008)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The c-Subunit Ring of the F1Fo ATP Synthase is Not the Mitochondrial Permeability Transition Pore\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and two reviewers, one of whom, Yibing Shan, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nZhou el at. used fully atomistic molecular dynamics simulations to characterize the c-subunit ring of F1F0 ATP synthases as a membrane pore. In this sophisticated and well executed simulation study, the conductance of the channel was shown to be low and selective, inconsistent with the properties of mitochondrial permeability transition pore (MPTP), which plays a crucial role in rupture of mitochondrial envelope in cell death. Moreover, the lumen of the ring was shown to be likely dehydrated, suggesting that the apparent pore is non-conductive at its ground state. The authors thus concluded that the MPTP cannot be the lumen of the c-subunit ring of F1F0 ATP synthases. This work is not the first in questioning the notion of the c-subunit ring as the MPTP, but it has added to the debate crucial and otherwise unavailable atomic details using MD simulations.\n\nEssential revisions:\n\nThe reviewers agree with one another in their primary concern to this work, that is that it does not seem to rule out the possibility of another structural configuration of the c-subunit ring different from the one that has been simulated. It is perceivable that in the alternative configuration the c-subunit ring be more hydrated, more conducive, and less selective, and thus more MPTP-like. This concern is accentuated by the report (Alavian et al., 2014, PNAS) of the existence of an open and a closed state of the c-subunit ring, where the closed state is conductive at ~100-300 pS (Figure 1 of the paper), which agrees very well with the simulation conductance, although the ion selectivity is different. The authors did try to study the conductance change upon widening of the pore. But apart from widening of the pore, there might be other conformational changes correlated with conductance. There might be a simple and convincing argument to address this concern, but in any case, an in-depth discussion to rule out the alternative (more open) configuration is vitally important to the drawn conclusion.\n",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9d2e64aa-a234-4193-ae3c-506e934896ee",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C1",
+      "claim": "Pathological metabolic conditions such as ischemia induce the rupture of the mitochondrial envelope and the release of pro-apoptotic proteins, leading to cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathological metabolic conditions such as ischemia induce the rupture of the mitochondrial envelope and the release of pro-apoptotic proteins, leading to cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about mitochondrial response to pathological conditions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "2950000a-7384-4f58-8d87-12be874dfff6",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C2",
+      "claim": "At the onset of mitochondrial permeability transition, the inner mitochondrial membrane becomes depolarized and permeable to osmolytes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of this process, the inner mitochondrial membrane becomes depolarized and permeable to osmolytes, proposedly due to the opening of a non-selective protein channel of unknown molecular identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the proposed mechanism of MPTP based on existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "bf72a806-f4cf-41b0-9e19-9f8f7a2614b9",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C3",
+      "claim": "The depolarization and permeability of the inner mitochondrial membrane is proposedly due to the opening of a non-selective protein channel of unknown molecular identity.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of this process, the inner mitochondrial membrane becomes depolarized and permeable to osmolytes, proposedly due to the opening of a non-selective protein channel of unknown molecular identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the hypothesis in the field about MPTP mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "799caae0-8c02-419d-8d2b-3c1332420d5d",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C4",
+      "claim": "A recent study purports that the MPTP is formed within the c-subunit ring of the ATP synthase upon its dissociation from the catalytic domain of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study purports that this channel, referred to as Mitochondrial Permeability Transition Pore (MPTP), is formed within the c-subunit ring of the ATP synthase, upon its dissociation from the catalytic domain of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a specific claim from another study that is being investigated.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "a1a831a6-d3aa-46cf-b14b-fe480fcd0361",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C5",
+      "claim": "The structure and biophysical properties of a correctly assembled c-ring are inconsistent with those attributed to the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "These calculations demonstrate that the structure and biophysical properties of a correctly assembled c-ring are inconsistent with those attributed to the MPTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion supported by the computational data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e9db24d9-afc1-462a-bb40-4f91527e4e1a",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C6",
+      "claim": "Under pathological conditions, mitochondria cease ATP production and instead trigger apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Under certain pathological conditions mitochondria cease ATP production and instead trigger apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial function under stress.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "00f75968-6882-4014-ae70-c0a4d9f88252",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C7",
+      "claim": "The depolarization of the inner mitochondrial membrane is at the onset of the apoptotic process.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of this process is the depolarization of the inner mitochondrial membrane, which under normal conditions sustains the proton-motive-force powering the ATP synthase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequence of events in mitochondrial apoptosis based on existing knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e3765124-6b60-46ed-86f6-af1a793d2025",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C8",
+      "claim": "Under normal conditions, the inner mitochondrial membrane sustains the proton-motive-force powering the ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of this process is the depolarization of the inner mitochondrial membrane, which under normal conditions sustains the proton-motive-force powering the ATP synthase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ATP synthase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "a315e86c-cdce-49dd-a880-bdd5f7e7c98f",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C9",
+      "claim": "It has long been hypothesized that membrane depolarization is mediated by a channel protein referred to as the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been hypothesized that this depolarization is mediated by a channel protein referred to as the Mitochondrial Permeability Transition Pore (MPTP) (Szab\u00f3 and Zoratti, 1992; Bernardi and Forte, 2007; Halestrap, 2009; Azzolin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "a09e66da-9939-45c9-ae70-9e6fdde9703a",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C10",
+      "claim": "The MPTP has very large ionic conductance (up to 1300 pS).",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark properties of this putative channel are: very large ionic conductance (up to 1300 pS); high permeability to small molecules, including osmolytes (less than 1.5 kDa); and no solute specificity (aside from size-limit) or ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known properties of MPTP from literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "34974fc4-f5f6-4e79-bf16-bc8aa17beb2e",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C11",
+      "claim": "The MPTP has high permeability to small molecules, including osmolytes (less than 1.5 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark properties of this putative channel are: very large ionic conductance (up to 1300 pS); high permeability to small molecules, including osmolytes (less than 1.5 kDa); and no solute specificity (aside from size-limit) or ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known properties of MPTP from literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "636f77cd-831c-4125-8ac3-0daf945fd25f",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C12",
+      "claim": "The MPTP has no solute specificity (aside from size-limit) or ion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark properties of this putative channel are: very large ionic conductance (up to 1300 pS); high permeability to small molecules, including osmolytes (less than 1.5 kDa); and no solute specificity (aside from size-limit) or ion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the known properties of MPTP from literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "7236f27b-1152-403c-b364-3e7080fdfcf0",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C13",
+      "claim": "Opening of the MPTP is thought to be induced by excessive amounts of Ca2+ or ROS in the mitochondrial matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, opening of the MPTP, thought to be induced, for example, by excessive amounts of Ca2+ or ROS in the mitochondrial matrix, is catastrophic for the cell",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects the hypothesis about MPTP activation from literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "642d09da-7aaa-4c62-906f-13d17f6e7894",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C14",
+      "claim": "Opening of the MPTP short-circuits the respiratory chain, causing the ATP synthase to reverse its activity and deplete cellular ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "not only does it short-circuit the respiratory chain, causing the ATP synthase to reverse its activity and deplete cellular ATP, but it also induces the osmotic swelling of the matrix, rupturing the outer membrane and causing the release of pro-apoptotic proteins (Halestrap, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consequences of MPTP opening based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "3bd7740b-a642-4db5-a31b-dddb7edf60e7",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C15",
+      "claim": "Opening of the MPTP induces the osmotic swelling of the matrix, rupturing the outer membrane and causing the release of pro-apoptotic proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "not only does it short-circuit the respiratory chain, causing the ATP synthase to reverse its activity and deplete cellular ATP, but it also induces the osmotic swelling of the matrix, rupturing the outer membrane and causing the release of pro-apoptotic proteins (Halestrap, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consequences of MPTP opening based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "feaa8b66-1384-4d2b-9e04-3da564696172",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C16",
+      "claim": "The molecular identity of the MPTP remains to be established.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular identity of the MPTP remains to be established.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "a05a5b6a-be24-4266-929d-32fd21794394",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C17",
+      "claim": "Studies have implicated VDAC, ANT, and cyclophilin D as potential MPTP candidates, but none were found to be actually essential.",
+      "claim_type": "EXPLICIT",
+      "source": "Seemingly promising studies have implicated mitochondrial proteins as diverse as the outer-membrane Voltage-Dependent Anion Channel (VDAC), the inner-membrane Adenine Nucleotide Translocase (ANT), and the non-transmembrane cyclophilin D; ultimately, however, none of these proteins was found to be actually essential (Bernardi and Forte, 2007; Halestrap, 2009; Azzolin et al., 2010; Bernardi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes findings from multiple cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "d5c659b1-5426-4745-99b6-7f4b8e0d8d4a",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C18",
+      "claim": "Jonas and co-workers have proposed that the c-ring is the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, Jonas and co-workers have proposed that a sub-complex of the mitochondrial F1Fo ATP synthase, known as the c-ring, is the MPTP (Alavian et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites a specific proposal from another research group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e94c4fc4-4dae-48f7-ae65-1e65e9e845a2",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C19",
+      "claim": "The c-ring is an oligomer of identical copies of subunit-c, each of which is a hairpin of two transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "The c-ring is an oligomer of identical copies of subunit-c, each of which is a hairpin of two transmembrane helices (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the known structure of the c-ring with reference to a figure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "b3324b92-51a1-4199-9191-457ae1fd9a61",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C20",
+      "claim": "When assembled, the c-ring helices are arranged in two concentric rings around a central lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "when assembled, these helices are arranged in two concentric rings around a central lumen (Meier et al., 2005; Pogoryelov et al., 2009; Symersky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structural arrangement based on cited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "6509124b-f767-4c52-be5e-08373b7b0f65",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C21",
+      "claim": "The F1 domain projects out of the membrane and contains the catalytic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The F1 domain, which projects out of the membrane and contains the catalytic domain, sits atop the ring (Figure 1\u2014figure supplement 1B) (Dautant et al., 2010; Watt et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the known structure and function of the F1 domain with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "67f8c9eb-cafb-4a6e-b789-8730bb2d0ee4",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C22",
+      "claim": "In the operating enzyme, the c-ring rotates against other static elements as protons sequentially bind to each of the c-subunits and are released across the membrane after a revolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the operating enzyme, the membrane Fo domain works like a turbine, with the c-ring rotating against other static elements as protons sequentially bind to each of the c-subunits and are released across the membrane after a revolution (Meier et al., 2011; Leone and Faraldo-G\u00f3mez, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of ATP synthase based on cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "1a1d8893-e729-403b-9430-81f832fd31b3",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C23",
+      "claim": "The proton-binding sites are on the outer surface of the c-ring and feature a conserved glutamate and other polar groups.",
+      "claim_type": "EXPLICIT",
+      "source": "These proton-binding sites are on the outer surface of the ring, and feature a conserved glutamate and other polar groups (Figure 1\u2014figure supplement 1A) (Pogoryelov et al., 2009; Symersky et al., 2012; Vollmar et al., 2009; Zhou et al., 2016)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the structural features of the c-ring based on multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "b32b78a1-43ad-434f-affa-9d2049dcd5c6",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C24",
+      "claim": "The lumen of the c-ring is largely hydrophobic.",
+      "claim_type": "EXPLICIT",
+      "source": "the lumen, by contrast, is largely hydrophobic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a structural property of the c-ring.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e502c636-ddda-45aa-b4ce-8854fa45b1c8",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C25",
+      "claim": "Jonas et al. propose that metabolic conditions associated with the mitochondrial permeability transition induce the F1 and Fo sectors to dissociate, upon which the lumen of the c-ring would become the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "What Jonas et al. propose is that the metabolic conditions associated with the mitochondrial permeability transition induce the F1 and Fo sectors to dissociate, upon which the lumen of the c-ring would become the MPTP (Alavian et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific hypothesis being tested, citing the original proposal.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "56c9b2af-e7fc-4e87-a764-a7999b3a07ed",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C26",
+      "claim": "The claim that the c-ring is the MPTP has been questioned by others.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use all-atom molecular dynamics simulations to directly investigate the plausibility of this claim, which has been questioned by others (Bernardi et al., 2015; Halestrap, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites other researchers who have questioned the hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "152c1717-72a9-4d1c-a175-57fd318c70a1",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C27",
+      "claim": "The c10-ring from Saccharomyces cerevisiae is the only mitochondrial c-ring of known atomic structure.",
+      "claim_type": "EXPLICIT",
+      "source": "We first considered the c10-ring from Saccharomyces cerevisiae, which is the only mitochondrial c-ring of known atomic structure (Figure 1A) (Symersky et al., 2012; Zhou et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about available structural data with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "08a0ec47-1c86-47bd-ab93-a6a5227e69cd",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C28",
+      "claim": "The lumen of the c10-ring is wider than that of the c8-rings found in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The lumen of this ring is also wider than that of the c8-rings found in vertebrates (Figure 1\u2014figure supplement 2A) (Watt et al., 2010)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative structural observation based on cited data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "bd3021d7-93fe-49e0-9ea9-04c17334a74b",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C29",
+      "claim": "The mitochondrial permeability transition has been observed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "(Note the mitochondrial permeability transition has also been observed in yeast (Azzolin et al., 2010)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental observations in yeast.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "483800cb-40e8-49b8-83c3-97c5a553f7e0",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C30",
+      "claim": "The conductance of the c10-ring lumen is 2.5 pS for K+ and 116 pS for Cl\u2212 (for 100 mM KCl).",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting conductance values are 2.5 ps for K+ and 116 ps for Cl\u2212 (for 100 mM KCl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are calculated values from the molecular dynamics simulations presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "563b9ce6-7145-4b1c-939a-7fd7e474bba1",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C31",
+      "claim": "The conductance values of the c10-ring are inconsistent with the properties of the MPTP in terms of magnitude and reveal marked anion selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are clearly inconsistent with the properties of the MPTP, not only in terms of their magnitude, but also in that they reveal a marked anion selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the calculated conductance values to known MPTP properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "7f14f25e-3b4f-4f28-a350-3a6d22c91644",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C32",
+      "claim": "The anion selectivity of the c10-ring owes to a ring of arginine side-chains at the mouth of the lumen on the matrix side.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous calculations carried out in the absence of electrolytes indicate that this selectivity owes to a ring of arginine side-chains at the mouth of the lumen, on the matrix side, which influences the energetics and dynamics of ion permeation electrostatically (Figure 1G and A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from computational experiments with and without electrolytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "4612e913-d9f7-46cf-a50c-0a95993f2e2c",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C33",
+      "claim": "The electropositive arginine ring is conserved in other mitochondrial c-rings.",
+      "claim_type": "EXPLICIT",
+      "source": "This electropositive arginine ring, which is conserved in other mitochondrial c-rings (Figure 1\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation based on sequence/structure comparison.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "ff6f8a86-966d-4363-8d7e-08d0baaa7aca",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C34",
+      "claim": "The arginine ring counters the cost of dehydration for Cl\u2212 but imposes an additional barrier for K+.",
+      "claim_type": "EXPLICIT",
+      "source": "counters the cost of dehydration for Cl-\u2212, but imposes an additional barrier for K+ (Figure 1C), incompatible with the high conductance properties of the MPTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the free energy profiles calculated in the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "c23692ab-1985-4b73-a834-ab444cc87f3e",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C35",
+      "claim": "The water-filled state of the c10-ring lumen is approximately 15 kcal/mol less favorable than a state in which most of the lumen is void of water.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this water-filled state is approximately 15 kcal/mol less favorable than a second state in which most of the lumen of the c-ring is void of any water (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the metadynamics free energy calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "0824fd39-d624-4edb-aa21-dbeab3c227bd",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C36",
+      "claim": "The probability that the c-ring lumen exists in a 'conducting state' is negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, the probability that the c-ring lumen exists in a 'conducting state' is negligible \u2013 a dehydrated, non-conducting state is much more probable, by multiple orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the free energy difference calculated in the simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "3f49734b-f4a7-4e92-ad85-5b6d6ad87907",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C37",
+      "claim": "The notion that the c-ring is the MPTP implicitly assumes that lipid molecules are excluded from its lumen as c-subunits assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of the question of hydration, the notion that the c-ring is the MPTP implicitly assumes that lipid molecules are somehow excluded from its lumen as c-subunits gradually assemble to form a ring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the assumptions underlying the MPTP hypothesis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "c9e9d356-b097-43ae-99c1-bcf41b771df2",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C38",
+      "claim": "There is no evidence that lipid molecules are excluded from the c-ring lumen during assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "There is, however, no evidence that this is the case",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of supporting evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "02caff68-4123-43ab-b583-7fbba1ece28d",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C39",
+      "claim": "Detergent molecules are often observed in the lumen in X-ray structures of c-rings.",
+      "claim_type": "EXPLICIT",
+      "source": "to the contrary, detergent molecules are often observed in the lumen in X-ray structures of c-rings (Pogoryelov et al., 2010; Schulz et al., 2013; Matthies et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites structural evidence from multiple X-ray crystallography studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "a6c3ed74-ee90-484b-92d5-8647eb61d56e",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C40",
+      "claim": "AFM images of two-dimensional ring arrays indicate the lumen might be occluded.",
+      "claim_type": "EXPLICIT",
+      "source": "and AFM images of two-dimensional ring arrays also indicate the lumen might be occluded (Meier et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites AFM imaging evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "ee779867-0eb5-4e50-8cf2-5653f019258b",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C41",
+      "claim": "In three independent simulations of the c10-ring lacking two c-subunits, water is quickly displaced by lipid molecules entering the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3A\u2013C, however, the three simulations consistently demonstrate that all this water is quickly displaced by lipid molecules gradually entering the c-ring lumen",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the results from molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "0b14afa3-aeb6-4a7f-ad48-4a7e4e38d42a",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C42",
+      "claim": "Lipid molecules ultimately occupy the totality of the c-ring lumen in a bilayer-like arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "ultimately, these lipid molecules occupy the totality of the pore, in a bilayer-like arrangement akin to that outside the c-ring (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the final state observed in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "49377a44-d76a-4c57-8609-104560e11cca",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C43",
+      "claim": "There is no reason to assume that incorporation of the two missing c-subunits would alter the lipid occupancy of the lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no reason to assume that the incorporation of the two missing c-subunits would alter the lipid occupancy of the lumen, which would therefore remain in a non-conducting state when the c-ring assembles completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the simulation results about the complete ring.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "1f91db40-82df-42f4-b79c-5441a1ac451f",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C44",
+      "claim": "Subtle variations in the amino-acid sequence of the c-subunits can destabilize the native state of a c-ring and favor the assembly of larger c-rings.",
+      "claim_type": "EXPLICIT",
+      "source": "This expansion is not entirely implausible; indeed, subtle variations in the amino-acid sequence of the c-subunits can destabilize the native state of a c-ring, and favor the assembly of larger c-rings with a slightly greater number of c-subunits (Pogoryelov et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental evidence about c-ring assembly.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "16a3620a-406e-4b68-bdd2-9e9832e09d6e",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C45",
+      "claim": "The c13-ring from Bacillus pseudofirmus features the widest lumen among ATP synthase c-rings of known structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the ATP synthase c-rings of known structure, this specific c13-ring features the widest lumen (Preiss et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative structural observation based on cited data.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "47395391-532b-40cb-8f52-ee158b780569",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C46",
+      "claim": "No process akin to the permeability transition has been described in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although no process akin to the permeability transition has been described in bacteria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of reported phenomena in bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "85ded387-8cb5-4be4-9db4-fb806a2bf176",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C47",
+      "claim": "Because the c13-ring lumen is wider, the permeability of the hydrated state is significantly larger, but this state remains highly anion-selective.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lumen is wider, the permeability of the hydrated state is significantly larger, but this state remains highly anion-selective (Figure 1H), unlike the MPTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the calculated results for the c13-ring variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e7f6d810-7e0e-4eb6-9d4a-c9f614afdf3b",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C48",
+      "claim": "The water-filled state of the c13-ring is still disfavored relative to the empty lumen, albeit to a lesser degree than in the c10-ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this water-filled state is still disfavored, relative to the empty lumen, albeit to a lesser degree than in the c10-ring (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the free energy calculation results for the c13-ring.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "5f453735-84ea-4521-a0b0-0f7beaf38c45",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C49",
+      "claim": "Independent simulations of a c13-ring assembly intermediate lacking two c-subunits demonstrate that the preferred state is one in which lipid molecules occlude the lumen in a bilayer arrangement.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, though, independent simulations of an assembly intermediate lacking two c-subunits demonstrate that the preferred state is again one in which lipid molecules occlude the lumen, in a bilayer arrangement (Figure 3D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation results for the c13-ring assembly intermediate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "4deff27e-cc29-4a56-ad87-ec4be4f2b4c3",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C50",
+      "claim": "The characteristics of the lumen of the mitochondrial c-ring are incompatible with the conducting properties of the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrates that the characteristics of the lumen of the mitochondrial c-ring are incompatible with the conducting properties of the MPTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the computational data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "dd41e95c-9cad-43f2-acdd-6da7d7d8146d",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C51",
+      "claim": "The F1 domain does not actually seal the entrance to the lumen of the c-ring in the fully assembled, operating enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the fact that the F1 domain does not actually seal the entrance to the lumen of the c-ring in the fully assembled, operating enzyme (Figure 1\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from known structures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "699585d7-1e3b-42ac-acf3-81f5f8ae0f30",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C52",
+      "claim": "The interior of the c-ring is not water-filled, but occupied by lipid molecules in a non-conducting state.",
+      "claim_type": "EXPLICIT",
+      "source": "the interior of the ring is not water-filled, but occupied by lipid molecules; that is, it is in a non-conducting state, thereby precluding the dissipation of the ion-motive-force that powers ATP synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the simulation data about the preferred state of the lumen.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "0a0a3d10-efa3-480f-a883-033369608582",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C53",
+      "claim": "Even if the c-ring became dissociated from the F1 domain and its lumen became hydrated, the conductance levels sustained would be unlike those of the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also show that even if the c-ring became dissociated from the F1 domain (Alavian et al., 2014), despite the nanomolar affinity of this interaction (Pogoryelov et al., 2008), and even if its lumen was to become hydrated, under some hypothetical in vitro conditions, the conductance levels sustained by the c-ring would be unlike those of the MPTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the conductance calculations presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "9b722904-7d10-463f-964e-c7217fc20033",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C54",
+      "claim": "The F1-Fo interaction has nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "despite the nanomolar affinity of this interaction (Pogoryelov et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental measurements of binding affinity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "4e01df50-4c2d-45ce-9a10-9617d40ec5e2",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C55",
+      "claim": "This study does not rule out that an as-yet-unknown molecular structure consisting of c-subunits, distinct from that of the c-ring, matches the properties of the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Admittedly, this study does not rule out that an as-yet-unknown molecular structure consisting of c-subunits, distinct from that of the c-ring, matches the properties of the MPTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges a limitation of the study's scope.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "e9e018c8-4248-4070-b5e1-a05a7583aee9",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C56",
+      "claim": "No evidence of an alternative c-subunit structure exists.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is also worth noting that no evidence of such alternative structure exists, to our knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "11604165-75c2-473b-adf8-98ea7a44ecbd",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C57",
+      "claim": "Structural studies of the c-subunit and its oligomers date back two decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies of the c-subunit and its oligomers date back two decades",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the history of research in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "2c4dd12a-9744-4609-83f1-d0da61fda5e1",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C58",
+      "claim": "Across a wide variety of species and experimental conditions, the consistent conclusion is that c-subunits assemble in ring-like oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Across a wide variety of species and experimental conditions, the consistent conclusion from these studies is that the c-subunits assemble in ring-like oligomers such as those analyzed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the consensus from multiple structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "874fae65-ee7e-48fd-a692-b5cd34aa687f",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C59",
+      "claim": "The ring-like oligomer conclusion holds true for wild-type, mutagenized and inhibited forms of the c-ring, and for a variety of expression systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion holds true for wild-type, mutagenized and inhibited forms of the c-ring, and for a variety of expression systems (including cell-free).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the breadth of experimental conditions supporting the structural consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "338a9315-5720-46aa-8958-73a5d040d216",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C60",
+      "claim": "No apparent discrepancy exists between structural data and biochemical and functional measurements for the ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, to our knowledge no apparent discrepancy exists between this set of structural data and the even larger collection of biochemical and functional measurements gathered for this enzyme or its constituent elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the consistency of different types of experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "55cde534-f87e-465a-8dbf-09e151a7d729",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C61",
+      "claim": "Thermodynamic data on Na+/H+ binding to isolated c-rings is quantitatively consistent with kinetic measurements for the complete enzyme functioning in membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the instances where clear thermodynamic data has been attained, for example, on Na+/H+ binding to isolated c-rings, it was found to be not only quantitatively consistent with kinetic measurements for the complete enzyme functioning in membranes, but also explicable based on existing structures and theoretical considerations (Murata et al., 2008; Leone et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites specific examples of consistent experimental data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "253e4681-1777-47ee-84be-4e24d4bfc29b",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C62",
+      "claim": "In absence of concrete experimental evidence of an alternative architecture, the logical conclusion is that the c-ring from the mitochondrial ATP synthase is not the MPTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In absence of concrete experimental evidence of the existence of an alternative architecture, the logical conclusion from this body of work and the present study is therefore that the c-ring from the mitochondrial ATP synthase is not the MPTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion drawn from the computational results and literature review.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "78de66a4-3caa-4787-80c9-c19584401409",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C63",
+      "claim": "The computational framework used produces conductance values that are in good agreement with experimental measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to note that this computational framework has been shown to produce conductance values that are in good agreement with experimental measurements (Zhu and Hummer, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the computational method by citing previous benchmarking work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "02501760-df66-4561-86e1-41d05f47b276",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C64",
+      "claim": "The water-filled state of the c-ring lumen is metastable and sufficiently long-lived to observe tens of permeation events.",
+      "claim_type": "EXPLICIT",
+      "source": "(It was not required to impose this condition, as this state is metastable and sufficiently long-lived to observe tens of permeation events).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "7172b9d0-7a86-448d-982b-cc4b5278db2e",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "claim_id": "C65",
+      "claim": "Open c-ring assembly intermediates lacking two c-subunits have been observed in AFM micrographs of prokaryotic c-rings.",
+      "claim_type": "EXPLICIT",
+      "source": "This open c-ring resembles the kind of assembly intermediate that has been observed in AFM micrographs of prokaryotic c-rings (M\u00fcller et al., 2001; Pogoryelov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites AFM imaging studies of c-ring assembly.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about the mitochondrial permeability transition pore (MPTP), describing it as a hypothesized channel with hallmark properties including very large ionic conductance (up to 1300 pS), high permeability to small molecules (<1.5 kDa), and no ion selectivity. The molecular identity of MPTP remains unknown despite previous candidates (VDAC, ANT, cyclophilin D) being ruled out.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C17 accurately summarize established knowledge about MPTP from the literature, appropriately citing prior work. These background claims provide the necessary context for evaluating the hypothesis that the c-ring is the MPTP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "6d865c41-4d6e-4ab0-859a-a8a770b817e2",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Jonas and co-workers proposed that the c-subunit ring of the ATP synthase is the MPTP, specifically that metabolic stress induces F1-Fo dissociation, after which the c-ring lumen becomes the MPTP. This claim has been questioned by other researchers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C18, C25, and C26 accurately cite the hypothesis being tested (Alavian et al., 2014) and note that it has been questioned by others (Bernardi et al., 2015; Halestrap, 2014). This establishes the scientific controversy motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The c-ring is an oligomer of subunit-c hairpins arranged in two concentric rings around a central hydrophobic lumen. The F1 domain sits atop the ring, and in the operating enzyme, the c-ring rotates as protons bind to sites on the outer surface featuring conserved glutamate residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 accurately describe the established structure and function of the c-ring based on multiple cited structural studies. These are well-established facts about ATP synthase architecture necessary for interpreting the computational results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "7974ba70-44f9-40d8-b28a-1bca033e1d90",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations of the hydrated c10-ring from S. cerevisiae reveal conductance values of 2.5 pS for K+ and 116 pS for Cl\u2212 (at 100 mM KCl), which are inconsistent with MPTP properties in magnitude and show marked anion selectivity. This selectivity is attributed to a conserved arginine ring at the matrix-side entrance that electrostatically favors Cl\u2212 over K+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 present computational results using validated methods (C63 cites benchmarking). The conductance calculations are orders of magnitude lower than MPTP's reported 1300 pS, and the strong anion selectivity contradicts MPTP's lack of ion selectivity. The mechanistic explanation involving the arginine ring is supported by control simulations without electrolytes (C32). However, these calculations assume the lumen is hydrated, which is addressed separately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "c13afcde-0800-432b-8b21-30b36a4e9a8b",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Metadynamics simulations reveal that the water-filled state of the c10-ring lumen is approximately 15 kcal/mol less favorable than a dehydrated state, making the probability of a conducting state negligible. The water-filled state is metastable and sufficiently long-lived to observe permeation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 present free energy calculations showing the hydrated state is thermodynamically disfavored by ~15 kcal/mol, corresponding to multiple orders of magnitude difference in probability. The metastability observation (C64) validates that the conductance calculations in the previous result are meaningful despite the state being unfavorable. The methodology appears sound with error analysis provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Simulations of c10-ring assembly intermediates lacking two c-subunits demonstrate that lipid molecules spontaneously displace water and occupy the lumen in a bilayer-like arrangement. This contradicts the implicit assumption that lipids are excluded during c-ring assembly, and structural evidence (X-ray, AFM) suggests lumens may be occluded by detergent/lipid molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 present consistent results from three independent simulations showing lipid occlusion. The inference (C43) that complete ring assembly wouldn't change this is reasonable given the hydrophobic nature of the lumen. Supporting evidence from X-ray structures (C39) and AFM (C40) strengthens the conclusion. This addresses a critical assumption of the MPTP hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "7311d421-2700-4856-af38-7ec748f0e513",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "To test whether c-ring expansion could explain MPTP properties, simulations were performed on a variant of the wider c13-ring from B. pseudofirmus. Despite the wider lumen, the hydrated state shows significantly larger but still anion-selective permeability, remains thermodynamically disfavored relative to the empty state, and becomes occluded by lipids in assembly intermediate simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 show that even with a wider lumen (the widest known c-ring structure, C45), the fundamental problems persist: anion selectivity, unfavorable hydration thermodynamics, and lipid occlusion. The use of a bacterial c-ring is justified as a model for potential expansion (C44), though the authors note no permeability transition has been described in bacteria (C46). This systematically addresses the expansion hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study concludes that the structure and biophysical properties of a correctly assembled c-ring are incompatible with those attributed to the MPTP. The c-ring lumen is lipid-occupied and non-conducting in the native enzyme, and even if F1-Fo dissociation occurred (despite nanomolar affinity) and the lumen became hydrated, the conductance would be unlike MPTP. Therefore, the c-ring is not the MPTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C50, C52, C53, and C62 represent the main conclusions, which are well-supported by the computational data presented. The argument is logically structured: (1) the lumen is lipid-filled not water-filled, (2) even if hydrated, conductance is wrong, (3) even if expanded, problems persist. The nanomolar F1-Fo affinity (C54) makes dissociation unlikely. The conclusion is appropriately strong given the convergent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    },
+    {
+      "id": "198e814e-18e0-4b90-960f-627e9bf29ca6",
+      "content_id": "ca7dc666-28ed-4707-838f-b8e1b7e5685d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors acknowledge their study doesn't rule out an unknown alternative c-subunit structure that could be the MPTP, but note no evidence for such a structure exists despite two decades of structural studies across diverse species and conditions consistently showing ring-like oligomers. Structural data is consistent with biochemical and functional measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C61 appropriately acknowledge limitations (C55) while providing strong context that no alternative c-subunit architecture has been observed despite extensive structural characterization (C57-C59). The consistency between structural and functional data (C60-C61) strengthens the argument that the known c-ring structure is the physiologically relevant form. This is a fair and scientifically rigorous discussion of scope.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:51:29.179102Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9d2e64aa-a234-4193-ae3c-506e934896ee",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "2950000a-7384-4f58-8d87-12be874dfff6",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "bf72a806-f4cf-41b0-9e19-9f8f7a2614b9",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "e9db24d9-afc1-462a-bb40-4f91527e4e1a",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "00f75968-6882-4014-ae70-c0a4d9f88252",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "e3765124-6b60-46ed-86f6-af1a793d2025",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "a315e86c-cdce-49dd-a880-bdd5f7e7c98f",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "a09e66da-9939-45c9-ae70-9e6fdde9703a",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "34974fc4-f5f6-4e79-bf16-bc8aa17beb2e",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "636f77cd-831c-4125-8ac3-0daf945fd25f",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "7236f27b-1152-403c-b364-3e7080fdfcf0",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "642d09da-7aaa-4c62-906f-13d17f6e7894",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "3bd7740b-a642-4db5-a31b-dddb7edf60e7",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "feaa8b66-1384-4d2b-9e04-3da564696172",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "a05a5b6a-be24-4266-929d-32fd21794394",
+      "result_id": "3749d6fa-a32e-479d-b5e3-a44b1f8dab8c"
+    },
+    {
+      "claim_id": "799caae0-8c02-419d-8d2b-3c1332420d5d",
+      "result_id": "6d865c41-4d6e-4ab0-859a-a8a770b817e2"
+    },
+    {
+      "claim_id": "d5c659b1-5426-4745-99b6-7f4b8e0d8d4a",
+      "result_id": "6d865c41-4d6e-4ab0-859a-a8a770b817e2"
+    },
+    {
+      "claim_id": "e502c636-ddda-45aa-b4ce-8854fa45b1c8",
+      "result_id": "6d865c41-4d6e-4ab0-859a-a8a770b817e2"
+    },
+    {
+      "claim_id": "56c9b2af-e7fc-4e87-a764-a7999b3a07ed",
+      "result_id": "6d865c41-4d6e-4ab0-859a-a8a770b817e2"
+    },
+    {
+      "claim_id": "e94c4fc4-4dae-48f7-ae65-1e65e9e845a2",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "b3324b92-51a1-4199-9191-457ae1fd9a61",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "6509124b-f767-4c52-be5e-08373b7b0f65",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "67f8c9eb-cafb-4a6e-b789-8730bb2d0ee4",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "1a1d8893-e729-403b-9430-81f832fd31b3",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "b32b78a1-43ad-434f-affa-9d2049dcd5c6",
+      "result_id": "ef1d8d8e-0f3e-401c-9aa5-b8ab44f8b9aa"
+    },
+    {
+      "claim_id": "152c1717-72a9-4d1c-a175-57fd318c70a1",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "08a0ec47-1c86-47bd-ab93-a6a5227e69cd",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "bd3021d7-93fe-49e0-9ea9-04c17334a74b",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "483800cb-40e8-49b8-83c3-97c5a553f7e0",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "563b9ce6-7145-4b1c-939a-7fd7e474bba1",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "7f14f25e-3b4f-4f28-a350-3a6d22c91644",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "4612e913-d9f7-46cf-a50c-0a95993f2e2c",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "ff6f8a86-966d-4363-8d7e-08d0baaa7aca",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "78de66a4-3caa-4787-80c9-c19584401409",
+      "result_id": "7974ba70-44f9-40d8-b28a-1bca033e1d90"
+    },
+    {
+      "claim_id": "c23692ab-1985-4b73-a834-ab444cc87f3e",
+      "result_id": "c13afcde-0800-432b-8b21-30b36a4e9a8b"
+    },
+    {
+      "claim_id": "0824fd39-d624-4edb-aa21-dbeab3c227bd",
+      "result_id": "c13afcde-0800-432b-8b21-30b36a4e9a8b"
+    },
+    {
+      "claim_id": "02501760-df66-4561-86e1-41d05f47b276",
+      "result_id": "c13afcde-0800-432b-8b21-30b36a4e9a8b"
+    },
+    {
+      "claim_id": "3f49734b-f4a7-4e92-ad85-5b6d6ad87907",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "c9e9d356-b097-43ae-99c1-bcf41b771df2",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "02caff68-4123-43ab-b583-7fbba1ece28d",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "a6c3ed74-ee90-484b-92d5-8647eb61d56e",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "ee779867-0eb5-4e50-8cf2-5653f019258b",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "0b14afa3-aeb6-4a7f-ad48-4a7e4e38d42a",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "49377a44-d76a-4c57-8609-104560e11cca",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "7172b9d0-7a86-448d-982b-cc4b5278db2e",
+      "result_id": "285bcfe5-96b9-4bf6-8b3f-e9d77246523a"
+    },
+    {
+      "claim_id": "1f91db40-82df-42f4-b79c-5441a1ac451f",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "16a3620a-406e-4b68-bdd2-9e9832e09d6e",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "47395391-532b-40cb-8f52-ee158b780569",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "85ded387-8cb5-4be4-9db4-fb806a2bf176",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "e7f6d810-7e0e-4eb6-9d4a-c9f614afdf3b",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "5f453735-84ea-4521-a0b0-0f7beaf38c45",
+      "result_id": "7311d421-2700-4856-af38-7ec748f0e513"
+    },
+    {
+      "claim_id": "a1a831a6-d3aa-46cf-b14b-fe480fcd0361",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "4deff27e-cc29-4a56-ad87-ec4be4f2b4c3",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "dd41e95c-9cad-43f2-acdd-6da7d7d8146d",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "699585d7-1e3b-42ac-acf3-81f5f8ae0f30",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "0a0a3d10-efa3-480f-a883-033369608582",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "9b722904-7d10-463f-964e-c7217fc20033",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "253e4681-1777-47ee-84be-4e24d4bfc29b",
+      "result_id": "1e6e07b2-c52e-4558-ab85-2e7751a4d6a2"
+    },
+    {
+      "claim_id": "4e01df50-4c2d-45ce-9a10-9617d40ec5e2",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "e9e018c8-4248-4070-b5e1-a05a7583aee9",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "11604165-75c2-473b-adf8-98ea7a44ecbd",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "2c4dd12a-9744-4609-83f1-d0da61fda5e1",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "874fae65-ee7e-48fd-a692-b5cd34aa687f",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "338a9315-5720-46aa-8958-73a5d040d216",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    },
+    {
+      "claim_id": "55cde534-f87e-465a-8dbf-09e151a7d729",
+      "result_id": "198e814e-18e0-4b90-960f-627e9bf29ca6"
+    }
+  ],
+  "comparisons": []
+}

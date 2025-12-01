@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C18",
+      "C19",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The Cell Painting assay was successfully implemented using U-2 OS cells, yielding 1384 morphological features per cell that were processed into 158-dimensional profiles for each of 5 replicates per gene/allele. The assay uses six stains in five channels to reveal eight cellular components (DNA, mitochondria, ER, Golgi, RNA, nucleoli, actin, plasma membrane), with image processing performed using CellProfiler v2.1.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C18-C19, and C85-C93 collectively describe the experimental setup and data processing pipeline with appropriate technical detail. The methodology is well-documented with specific software versions, feature counts, and quality control steps (e.g., excluding 6 blurry wells). The five replicates were justified by prior work (C89), and mycoplasma testing was performed (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C20"
+    ],
+    "result": "50% (110/220) of tested ORF constructs induced reproducible morphological profiles that were distinguishable from negative control profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C20 report the same finding with explicit statistical methodology described in Materials and Methods. Figure 2A provides visual support, and Figure 2\u2014figure supplement 1 shows robustness to alternative null distributions. The 95th percentile threshold for distinguishing phenotypes is clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Wild-type ORF pairs of the same gene showed high correlation (96% of 23 pairs), and constitutively activating alleles yielded stronger phenotypes than wild-type counterparts (p=0.012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 demonstrate technical reproducibility and biological validity. The 96% correlation rate for wild-type pairs (C21) validates construct quality, while the statistical comparison of activating vs. wild-type alleles (C22, p=0.012, one-sided paired t-test) shows expected biological behavior. Both findings are supported by Figure 2B and Supplementary file 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Genes in pathways known to affect cellular morphology (RAC1, KRAS, CDC42, RHOA, PAK1, Hippo pathway genes) were significantly more likely to yield detectable morphological phenotypes than other genes (Fisher's test p=3.7\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 provides a critical validation that the assay detects biologically relevant signals. The statistical test is appropriate (Fisher's exact test), the p-value is significant, and the result is shown in Figure 2C. This confirms the assay's ability to capture known morphology-regulating pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "Among genes with detectable phenotypes, the top 5% most-correlated gene pairs showed significantly higher rates of verified protein-protein interactions (9%) compared to other gene pairs (5%, Fisher's test p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C24 demonstrates that morphological similarity correlates with known protein interactions from BioGRID. The statistical test is appropriate, though the p-value is marginal (p=0.04). The authors appropriately acknowledge limitations of using protein interaction data as ground truth. This provides external validation of the clustering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27"
+    ],
+    "result": "Morphological profiles grouped into 25 biologically meaningful clusters, with 19 of 22 multi-gene clusters enriched for Gene Ontology terms, indicating shared biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26-C27 describe the clustering analysis with clear methodology (dendrogram cut at correlation 0.522, chosen by stability analysis shown in Figure 3\u2014figure supplement 2). The GO enrichment in 86% of multi-gene clusters (C27) provides strong evidence for biological meaningfulness. Figure 3 and Supplementary file 1F support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The RAS-RAF-MEK-ERK cascade genes (KRAS, RAF1, BRAF, MOS) clustered together (Cluster 19), with constitutively active alleles (BRAFV600E, RAF1L613V) forming an adjacent cluster (Cluster 6), and constitutively active RAS alleles (HRASG12V, KRASG12V) in a nearby cluster (Cluster 3) with their known activators MAP2K4 and MAP2K3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C37 demonstrate that the clustering recapitulates a well-established signaling cascade. The spatial organization in the dendrogram (wild-type in Cluster 19, constitutively active alleles in adjacent Clusters 6 and 3) is biologically sensible and supported by multiple citations. This provides strong validation of the approach's ability to capture functional relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Hippo pathway effectors YAP1 and WWTR1 clustered together (Cluster 20), with their negative regulator STK3 showing strong anti-correlation. PI3K regulators PIK3R1 and PTEN formed Cluster 21, consistent with known dominant negative effects of certain PIK3R1 isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 show the method captures known regulatory relationships in the Hippo and PI3K pathways. The anti-correlation of STK3 with YAP1/WWTR1 (C30) is expected given STK3's role as a negative regulator. The clustering of PIK3R1 and PTEN (C31) and interpretation regarding dominant negative effects (C33) are supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CDC42 wild-type and mutant alleles (activating Q61L in Cluster 4, dominant negative T17N in Cluster 7, wild-type in Cluster 11) showed related phenotypes characterized by binucleate cells, DNA fragmentation, and apoptosis. These clusters also contained functionally related genes including TRAF2, RAC1, AKT isoforms, and MAP3K genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C49 describe complex relationships among CDC42 alleles and functionally related genes. The observation that activating and inhibiting alleles yield similar phenotypes (C43) is appropriately cited. The morphological characterization (binucleate cells C47, DNA fragmentation C48-C49) is supported by Supplementary file 2. The functional connections (CDC42-TRAF2 C38, CDC42-YAP1 C39, Akt-CDC42 C45) are well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cluster 8 contains PKA (PRKACA) and its substrates GLI1 and RHOAQ63L, with all members inducing cell rounding due to increased proportions of telophase, anaphase, and apoptotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 demonstrate the method's ability to cluster enzymes with their substrates. The substrate relationships (C50-C51) are well-cited. The morphological interpretation (cell rounding C52-C53, explained by cell cycle stage enrichment C54) is supported by Supplementary files 1H and 2. This shows the value of subpopulation analysis for phenotype interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "MAPK pathway activators in Cluster 19 show a cell polarization phenotype with asymmetric ER, mitochondria, and Golgi staining, supported by literature evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 demonstrates that subpopulation analysis can reveal biologically meaningful phenotypes not apparent from bulk analysis. The cell polarization phenotype is supported by Figure 4C and Supplementary file 2, and is consistent with literature (Samaj et al., 2004; Elsum et al., 2013; Godde et al., 2014). This validates the subpopulation visualization approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "Morphological profiling revealed an unexpected anti-correlation between TRAF2 (NF-\u03baB regulator, Cluster 11) and YAP1/WWTR1 (Hippo pathway effectors, Cluster 20), with distinct subpopulation enrichments for each cluster. No prior evidence of physical protein interactions between these clusters was found in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C55, C58, C60-C61 identify a novel relationship between NF-\u03baB and Hippo pathways. The morphological anti-correlation is clearly shown in the dendrogram and correlation matrix. The subpopulation analysis (C60-C61, Figures 6A-B) provides mechanistic insight. The lack of prior physical interaction data (C58) establishes novelty, though functional connections are subsequently validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The negative regulation of YAP/TAZ by NF-\u03baB effectors (TRAF2, C-REL) was confirmed at the transcriptional level using luciferase reporter assays. Hippo-insensitive mutants (YAP-5SA, TAZ-4SA) remained sensitive to TRAF2/C-REL suppression, suggesting the regulation is independent of canonical Hippo pathway signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C64-C66 provide orthogonal validation of the morphological finding using transcriptional reporters. The luciferase assays (Figure 6D) show statistically significant suppression. The key finding that Hippo-insensitive mutants remain sensitive to NF-\u03baB effectors (C65-C66) suggests a novel regulatory mechanism. The experiments used different constructs and cell types (HEK293T) than the original Cell Painting data, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "YAP/TAZ-directed transcription is negatively regulated by NF-\u03baB pathway effectors through a mechanism independent of upstream Hippo kinases, representing the first identification of this regulatory relationship in mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C74-C75 synthesize the major discovery. The independence from Hippo kinases (C70, C75) is supported by the Hippo-insensitive mutant data (C65). The novelty in mammalian systems (C74) is established by literature review and comparison to Drosophila work (C73). The conclusion is well-supported by converging evidence from morphological profiling, gene expression analysis, and luciferase assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C76"
+    ],
+    "result": "The study validates that functionally similar genes yield morphologically similar cells when overexpressed, and that morphological profiling combined with subpopulation visualization can effectively annotate gene function and reveal functional connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C76 represent the overarching conclusions. The hypothesis (C76) is supported by multiple lines of evidence: technical reproducibility (C21), correlation with known pathways (C23-C24), recapitulation of known gene relationships (C34-C37), and discovery of novel connections (C4, C69). The value of subpopulation analysis (C68) is demonstrated throughout (C40, C54, C60-C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C56",
+      "C57",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The manuscript contextualizes the work within existing knowledge about gene annotation challenges, morphological vs. transcriptional profiling, and prior work on Hippo and NF-\u03baB pathway interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12, C56-C57, C71-C73 provide background context supported by appropriate citations. These claims establish the motivation for the work (C7-C10), position morphological profiling relative to other approaches (C11-C12), and review prior knowledge of the pathways studied (C6, C56-C57, C71-C73). All are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C84"
+    ],
+    "result": "The study used 220 ORF constructs (from 323 total) representing full-length transcripts, with ~90% of constructs inducing expression >2 SD above control. U-2 OS cells were chosen for their flat morphology and prior validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C84 describe the experimental materials. The construct selection criteria (C17) and expression validation (C84) are clearly stated. The cell line choice (C15) is justified. These are straightforward methodological details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The manuscript discusses caveats of overexpression approaches, noting that while overexpression typically activates pathways, it can also produce dominant negative effects or other complex responses. Overexpression avoids RNAi off-target effects that impact 90% of constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide important discussion of methodological limitations and advantages. The acknowledgment of potential complications (C77-C78) demonstrates appropriate scientific caution. The comparison to RNAi (C79-C80) is supported by citation to Singh et al., 2015. This balanced discussion strengthens the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose that morphological profiling could be used to predict functional impacts of disease alleles, potentially in combination with mRNA profiling, to enable personalized medicine approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 describe potential future applications. While C82 cites successful use of mRNA profiles (Berger et al., 2016), claims C81 and C83 are explicitly speculative ('should be feasible', 'would be to combine'). No data in the current manuscript directly supports these applications. These are reasonable proposals but remain to be validated.",
+    "result_type": "MINOR"
+  }
+]

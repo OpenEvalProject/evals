@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "E. coli fitness shows an optimal peak at basal DHFR expression levels, with both down-regulation and overexpression causing toxicity. The fitness-abundance relationship differs qualitatively between depletion (Michaelis-Menten-like) and overexpression (sigmoidal decline) regimes, indicating different underlying mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C17, C18, C19, C20, and C21 are well-supported by Figure 1A showing the fitness curve across DHFR abundance ranges. The data clearly demonstrate the optimal fitness at basal levels and distinct curve shapes for depletion versus overexpression, with appropriate citations to theoretical frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "DHFR overexpression toxicity is protein-specific and cannot be explained by resource overload. Control proteins (ADK and Ras) expressed to comparable or higher levels than DHFR show no toxicity, and empty plasmid controls show no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 are supported by Figure 1B showing ADK reaching ~5000-fold and Ras ~600-fold overexpression without toxicity, compared to DHFR's strong dose-dependent toxicity. Figure 1\u2014figure supplement 1 confirms empty plasmid has no effect. This effectively rules out generic protein burden as the cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C87"
+    ],
+    "result": "Overexpressed DHFR-GFP fusion protein remains soluble and diffuse throughout cells without forming aggregates, ruling out aggregation toxicity as the mechanism of gene dosage toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, and C87 are supported by fluorescence microscopy (Figure 2A) showing diffuse fluorescence and Western blot data (Figure 2B,C) confirming the fusion protein is not cleaved. The evidence clearly demonstrates absence of aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DHFR overexpression causes pronounced metabolic perturbations including increased AICAR and dUMP levels and decreased purine/pyrimidine nucleotides, while ADK overexpression causes no measurable metabolite changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 are well-supported by metabolomics data in Figure 3A showing clear heat-map differences between DHFR and ADK overexpression with appropriate statistical significance markers (p<0.05 and p<0.001). The specificity of DHFR's effect is convincingly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C49"
+    ],
+    "result": "Toxicity from DHFR overexpression can be partially rescued by supplementing growth medium with depleted metabolites (IMP, dTMP) or tryptophan, validating the functional significance of detected protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C49 are supported by complementation data in Figure 3B and Figure 3\u2014figure supplement 1 showing partial fitness rescue upon metabolite addition. This provides functional validation linking metabolite depletion to toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C70",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Orthologous DHFRs from other bacteria have minimal effects on E. coli fitness and metabolite levels despite being highly active, demonstrating that neither protein burden nor excessive DHFR activity per se explains endogenous DHFR toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C70, C88, C89, C90, and C91 are strongly supported by fitness data (Figure 4A,B), metabolomics (Figure 4C), and activity measurements (Figure 4\u2014figure supplement 1). Statistical significance (p<0.001) is reported. Controls with and without His-tags (Figure 4\u2014figure supplement 2) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C93"
+    ],
+    "result": "Growth rate across all strains is tightly correlated with intracellular dTTP levels (Pearson r=0.99, p=0.0002), indicating that metabolite depletion is a direct signature of toxicity and loss of fitness is directly related to metabolic imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C37, and C93 are supported by the strong correlation shown in Figure 4D with excellent statistical significance. This provides quantitative evidence linking metabolite levels to fitness outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C71"
+    ],
+    "result": "Excessive DHFR activity per se is not the root cause of metabolite imbalance, as orthologous DHFRs with high activity do not cause similar metabolic perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C71 are supported by comparing metabolomics data (Figure 4C) showing orthologous DHFRs don't cause metabolite imbalance despite high activity (Figure 4\u2014figure supplement 1). This is a key mechanistic insight ruling out simple enzymatic overactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C94"
+    ],
+    "result": "Overexpressed DHFR pulls out numerous interaction partners (234 proteins) enriched in 1-carbon metabolism enzymes, while control proteins ADK and Ras pick very few (3-4), suggesting cellular protein-protein interactions are the most likely cause of toxicity. Orthologous DHFR11 pulls out even more proteins than EcDHFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 and C94 are supported by IP/LC-MS/MS data (Figure 5B, Figure 5\u2014source data 1 and 2) with good reproducibility (r=0.8, p<0.001). The functional classification of interacting proteins strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C68",
+      "C69",
+      "C72",
+      "C81"
+    ],
+    "result": "Partial inhibition of 1-carbon metabolism pathways through protein-protein interactions explains the metabolic imbalance and fitness cost. The comprehensive evidence points to spurious PPI between overexpressed DHFR and metabolically related proteins as the cause of gene dosage toxicity, with the actual toxicity mechanism being the resulting metabolic imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C68, C69, C72, and C81 integrate multiple lines of evidence: IP/LC-MS/MS (Figure 5), metabolomics (Figure 3A, 4C), binding studies (Figure 7\u2014figure supplement 1), and activity assays (Figures 7, 8). The mechanistic model is well-supported by converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "DHFR overexpression is not toxic in rich medium (LB) in terms of growth rate, though saturation OD is lower, indicating that conditionally essential genes in purine biosynthesis (PurH, PurC, MetF) play a role in determining DHFR overexpression toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47, C95-C97 are supported by growth data in LB versus M9 (Figure 6A, Figure 6\u2014figure supplement 1) and citations to essentiality studies. The differential toxicity in different media provides important mechanistic insight about which pathways are affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Overexpression of DHFR-interacting proteins (PurH, PurC, ThyA, MetF) results in moderate but significant alleviation of DHFR toxicity, validating IP-detected interactions. However, these proteins themselves show varying toxicity at high expression, and complementation is beneficial only at low expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C98-C101 are supported by complementation data (Figure 6C, Figure 6\u2014figure supplement 2). The partial rescue validates functional interactions, though the complexity of dose-dependent effects is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "GlyA and PurH interact with EcDHFR and orthologous DHFRs with similar weak binding affinities in the low micromolar range (KD 3-8 \u03bcM), while control protein ADK shows no binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by SPR binding data (Figure 7\u2014figure supplement 1, Figure 7\u2014source data 1). The KD values are quantitatively reported with appropriate controls. The similar binding affinities across orthologs is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Binding affinity alone is insufficient to explain the selective toxicity of EcDHFR overexpression, as orthologous DHFRs show similar binding to partner proteins but different toxicity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a well-supported inference from the similar KD values (Figure 7\u2014figure supplement 1) but different fitness effects (Figure 4A,B). This is a key insight that binding must be distinguished from functional consequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C102"
+    ],
+    "result": "EcDHFR is a more potent inhibitor of GlyA than orthologous DHFRs, with significantly lower IC50 values and causing the largest increase in KD for 5f-THF binding to GlyA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, and C102 are supported by GlyA activity assays (Figure 7A,B) and 5f-THF binding data (Figure 7\u2014figure supplement 2) with appropriate statistical significance (p<0.05, p<0.001). This demonstrates functional differences despite similar binding affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Only EcDHFR causes a concentration-dependent increase in KM of PurH for 10Nf-THF, explaining its selective toxicity, while DHFR does not affect AICAR transformylase activity of PurH at physiological concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by PurH activity assays (Figure 7C,D) showing EcDHFR specifically increases KM while orthologous DHFRs do not. The concentration-dependence and specificity are clearly demonstrated with statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C103",
+      "C104"
+    ],
+    "result": "At physiological concentrations, PurH significantly increases the catalytic efficiency (kcat/KM) of EcDHFR by decreasing KM, while orthologous DHFR activity remains unaffected. This effect is specific to EcDHFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C103, and C104 are strongly supported by DHFR activity assays (Figure 8) showing PurH specifically enhances EcDHFR but not orthologous DHFRs at physiological ratios. Statistical significance is reported (p<0.05). This is a key finding showing beneficial interactions at normal levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C74",
+      "C105",
+      "C106"
+    ],
+    "result": "Weak transient protein-protein interactions between DHFR and partner proteins are beneficial at physiological concentrations, enhancing enzymatic activity, but this benefit is specific to co-evolved proteins from the same organism. Orthologous DHFRs that diverged evolutionarily no longer benefit from E. coli PurH, suggesting an evolutionary functional relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C74, C105, and C106 are supported by the differential effects of PurH on EcDHFR versus orthologous DHFRs (Figure 8). This is a major conceptual finding about the evolution of functional protein interactions, though it relies on inference from the differential effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C80"
+    ],
+    "result": "At basal expression, DHFR may be part of a dynamic metabolon with transient interactions (5% DHFR complexed with PurH), but overexpression causes stoichiometric imbalance converting transient complexes to permanent ones (96% PurH complexed at 1000-fold overexpression), triggering toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C80 are supported by Law of Mass Action calculations using measured KD values (~3 \u03bcM) and known cellular concentrations. The quantitative modeling (5% vs 96% complexed) provides mechanistic insight, though C63 is appropriately labeled as speculation about metabolon formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C67",
+      "C73",
+      "C84"
+    ],
+    "result": "DHFR overexpression causes toxic metabolic imbalance through interactions with functionally related enzymes, perturbing a dynamic metabolon of weak but functional protein-protein interactions. The fitness cost can only be understood by integrating metabolic and PPI networks, representing a system-level collective effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C67, C73, and C84 represent the main conclusions integrating all experimental evidence: metabolomics, IP/LC-MS/MS, binding studies, and activity assays. The comprehensive multi-scale analysis from molecular to organismal levels strongly supports these integrative conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Overexpression of orthologous DHFR proteins has minimal effects on cellular organization compared to E. coli DHFR, with foreign DHFR pulling more interaction partners than EcDHFR. This dramatic difference suggests evolutionary selection shaped PPI networks through both positive selection for beneficial interactions and negative selection against promiscuous mis-interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C75, C76, and C77 are supported by comprehensive comparison of EcDHFR versus orthologous DHFRs across fitness (Figure 4A,B), metabolomics (Figure 4C), and IP data (Figure 5\u2014source data 1 and 2). The evolutionary interpretation is well-justified by the data, though it remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Transient interactions between metabolically related proteins might be beneficial through ligand channeling, but higher copy number enzymes like GlyA are more prone to mis-interactions than less abundant proteins like PurH, potentially explaining weaker EcDHFR-GlyA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78 and C79 are speculative interpretations based on binding data (Figure 7\u2014source data 1) and known protein abundances (Taniguchi et al., 2010). While plausible, the channeling mechanism is not directly demonstrated, and the relationship between abundance and mis-interaction propensity is inferred rather than tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Protein abundance is a selectable trait with non-monotonic fitness landscapes for many proteins, reaching optima at certain levels, in contrast to largely monotonic protein stability landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C83 are supported by the DHFR abundance-fitness curve (Figure 1A) and citations to studies on protein abundance conservation and stability landscapes. The comparison between abundance and stability landscapes is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "E. coli DHFR is a low copy monomeric enzyme with no physical interactions detected at basal levels in E. coli, yeast, or Drosophila databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 are supported by appropriate citations to Taniguchi et al., 2010, Hu et al., 2009, and the DIP database. This background information contextualizes why DHFR is a good model for studying overexpression-induced interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "Metabolite levels in orthologous DHFR overexpression were significantly different from EcDHFR overexpression for several metabolites with statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is supported by metabolomics data and statistical analysis in Figure 4C with appropriate significance markers (p<0.05, p<0.001). This is a descriptive result supporting the broader conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Gene overexpression toxicity is common in bacteria and yeast, and gene-dosage increase plays a central role in evolutionary adaptations including carbon source adaptation, temperature adaptation, and antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C8 are background information supported by appropriate citations (Kitagawa et al., 2005; Sopko et al., 2006; Kondrashov, 2012; Brown et al., 1998; Riehle et al., 2001; Andersson and Hughes, 2009). This contextualizes the importance of understanding gene dosage toxicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "DHFR is an essential enzyme catalyzing electron transfer to form tetrahydrofolate, a carrier of single-carbon functional groups used in specific biochemical reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are standard biochemical knowledge appropriately cited (Harvey and Dev, 1975; Schnell et al., 2004). This provides necessary background on DHFR function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "The drop in fitness upon DHFR downregulation is predicted by enzymatic flux kinetics analysis, but toxicity upon overexpression contradicts flux kinetics predictions of fitness neutrality once functional capacity exceeds threshold flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by appropriate citations to flux kinetics theory and experimental work. This establishes the puzzle that motivates the study: why is overexpression toxic when theory predicts neutrality?",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Overexpressed DHFR from E. coli and other bacteria interact with enzymes in the folate pathway/purine biosynthesis, confirmed by in vitro analysis, but the mutual effects on activity differ markedly between EcDHFR and orthologues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 summarize key findings supported by IP/LC-MS/MS (Figure 5), SPR (Figure 7\u2014figure supplement 1), and activity assays (Figures 7, 8). These are summary statements of results detailed elsewhere.",
+    "result_type": "MINOR"
+  }
+]

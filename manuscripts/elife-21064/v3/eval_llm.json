@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C27",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C154"
+    ],
+    "result": "PCGF6 forms a non-canonical PRC1 complex (PCGF6-PRC1) that includes RING1A/B, MGA, RYBP, L3MBTL2, YAF2, and other factors, but excludes canonical PRC1 components like PCGF2 and PRC2 components like EZH2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Mass spectrometry (Figure 1A,B) and co-immunoprecipitation experiments (Figure 1C) demonstrate that PCGF6 associates with RING1A/B, MGA, RYBP, L3MBTL2, and MAX, but not with PCGF1, PCGF2, EZH2, or SET1. The composition is consistent with a non-canonical PRC1 complex and is reproducible across mouse and human cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C42",
+      "C43",
+      "C70",
+      "C71",
+      "C82",
+      "C84",
+      "C87",
+      "C155"
+    ],
+    "result": "PCGF6 recruits RING1B to target genes and mediates H2AK119ub1 deposition, specifically at PCGF6-PRC1 targets but not at canonical PRC1 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (Figure 3B,C) show that RING1B binding is substantially reduced at PCGF6 targets in Pcgf6-KO ESCs, while cPRC1 targets remain unaffected. ChIP-qPCR (Figure 2C) confirms loss of H2AK119ub1 at PCGF6 targets upon Pcgf6 deletion. Tethering experiments (Figure 3A) demonstrate that ectopic PCGF6 recruitment leads to RING1B binding and H2AK119ub1 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C42",
+      "C67",
+      "C68",
+      "C157",
+      "C158"
+    ],
+    "result": "PCGF6-PRC1 target genes are enriched for germ cell- and meiosis-related genes, distinct from the developmental genes targeted by canonical PRC1 and PCGF1-PRC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (Figure 1D-G) show PCGF6 binding at germ cell gene promoters like Tex19.1 and Tdrkh, with minimal overlap with CBX7 (canonical PRC1 marker). Gene ontology analysis (Figure 2\u2014figure supplement 1D) confirms significant enrichment of meiosis and germ cell terms among PCGF6 targets, contrasting with developmental gene enrichment in cPRC1 targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C58",
+      "C59",
+      "C62",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Conditional ablation of Pcgf6 in ESCs leads to robust de-repression of germ cell-related genes, particularly those co-bound by PCGF6 and RING1B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (Figure 2A) demonstrate significant up-regulation of PCGF6+RING1B+ genes in Pcgf6-KO ESCs, with the most highly up-regulated genes showing expression levels considerably higher than PCGF6-RING1B+ genes. These de-repressed genes are a subset of those up-regulated in Ring1A/B-dKO ESCs (Figure 2\u2014figure supplement 1A), and RT-qPCR validation (Figure 2B) confirms the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C73"
+    ],
+    "result": "Repression of PCGF6 target genes depends on the catalytic activity of RING1B and H2AK119ub1 deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data (Figure 2D) show that catalytically inactive RING1B mutants (I53S, I53A) fail to rescue repression of PCGF6 target genes in Ring1A/B-dKO ESCs, while wild-type RING1B restores repression. This demonstrates that the E3 ligase activity of RING1B is essential for PCGF6-mediated gene silencing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C110",
+      "C111",
+      "C117",
+      "C166",
+      "C167"
+    ],
+    "result": "The MAX/MGA heterodimer recruits PCGF6-PRC1 to target loci through recognition of E-box motifs (CACGTG) enriched at PCGF6 target promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Motif enrichment analysis (Figure 4\u2014figure supplement 1D) identifies CACGTG E-box motifs specifically at PCGF6 targets. ChIP-qPCR (Figure 4C) demonstrates that PCGF6 binding depends on MAX and MGA, with both factors binding targets in a mutually dependent manner. RNA-seq (Figure 4B) shows that MAX+PCGF6+RING1B+ genes are significantly up-regulated upon Max or Mga knockdown. ChIP-qPCR in Max-KO ESCs (Figure 4D) confirms loss of PCGF6, RING1B, and associated histone marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PCGF6 recruits RING1B through direct physical interaction via its RING finger domain, as demonstrated by a separation-of-function mutant (H155Y).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP data (Figure 3\u2014figure supplement 1B) show that the PCGF6 H155Y mutant fails to interact with RING1B while retaining binding to L3MBTL2 and MAX. ChIP-qPCR (Figure 3D) demonstrates that this mutant can bind target genes but fails to recruit RING1B, H2AK119ub1, or H3K27me3. RT-qPCR (Figure 3\u2014figure supplement 1C) confirms that the mutant cannot rescue repression of PCGF6 target genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Loss of Pcgf6 impairs ESC and epiLC proliferation and viability while maintaining ESC morphology, indicating a role in cell growth but not morphological maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell proliferation assays (Figure 5A,B,D,E) demonstrate significantly reduced growth rates in Pcgf6-KO ESCs and epiLCs, with growth arrest and cell death observed upon Pcgf6 deletion at ESC and epiLC stages. Phase-contrast microscopy (Figure 5A) shows that Pcgf6-KO ESCs maintain ESC-like morphology despite growth defects, distinguishing the phenotype from Max-KO ESCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "PCGF6-PRC1-mediated gene silencing is essential for maintaining ESCs and epiLCs but not PGCLCs, with the same genes de-repressed across all three cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data (Figure 5G) show that the same PCGF6+RING1B+ genes are de-repressed to similar extents in ESCs, epiLCs, and PGCLCs upon Pcgf6 deletion. However, only ESCs and epiLCs exhibit growth defects (Figure 5D,E), while PGCLCs show accelerated differentiation (Figure 5F). This indicates that the phenotypic differences are not due to differential gene expression but rather to cell-type-specific requirements for PCGF6-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "PCGF6 plays essential roles in pre- and peri-implantation mouse embryonic development, with Pcgf6-/- mice showing non-Mendelian ratios, embryonic lethality, and failure to establish ESC lines from knockout blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Genotype distribution data (Figure 6D) demonstrate significant deviation from Mendelian ratios at multiple developmental stages, with lethality detectable as early as 3.5 dpc. Embryo images (Figure 6E) show growth retardation in surviving Pcgf6-/- embryos at 10.5 dpc. ESC derivation experiments (Figure 6F) reveal complete failure to establish ESC lines from Pcgf6-/- blastocysts (0/22 lines), indicating functional defects in the ICM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Loss of Pcgf6 causes pleiotropic developmental defects including anterior axial transformations, aberrant Hoxb6 expression, and impaired placental development with reduced spongiotrophoblast and trophoblast giant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Skeletal analysis (Figure 6G,H) demonstrates anterior transformations of the vertebrae in Pcgf6-/- mice, while overexpression causes posterior transformations (Figure 6\u2014figure supplement 1C,D). In situ hybridization (Figure 6I) shows aberrant Hoxb6 repression at the eighth pre-vertebra. Histological analysis (Figure 6J,K) reveals significant reduction in placental size and dramatic decreases in spongiotrophoblast and TGC numbers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C156"
+    ],
+    "result": "PCGF6-PRC1 recruits PRC2 and mediates H3K27me3 deposition at target genes, though PRC2 has limited impact on transcriptional repression of PCGF6 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Tethering experiments (Figure 3A) show that ectopic PCGF6 recruitment leads to sequential RING1B binding, H2AK119ub1, and PRC2/H3K27me3 deposition. ChIP-qPCR (Figure 2C, Figure 2\u2014figure supplement 1E) confirms H3K27me3 enrichment at PCGF6 targets that is reduced in Pcgf6-KO and Eed-KO ESCs. However, gene expression analysis (Figure 2\u2014figure supplement 1F) shows only limited de-repression in Eed-KO ESCs, indicating that H3K27me3 is not the primary repressive mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C114",
+      "C116",
+      "C169",
+      "C170"
+    ],
+    "result": "MAX/MGA independently recruits both PCGF6 and L3MBTL2 to target genes, suggesting parallel repressive mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (Figure 3E) show that L3MBTL2 binding to gene promoters is maintained in Pcgf6-KO ESCs, indicating PCGF6-independent recruitment. However, ChIP-qPCR in Max-KO ESCs (Figure 4D) demonstrates that both PCGF6 and L3MBTL2 binding require MAX, supporting a model where MAX/MGA recruits both factors independently to mediate parallel repressive pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C121",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "DNA motif recognition by MAX is essential for ESC maintenance through recruitment of PCGF6-PRC1, as demonstrated by rescue experiments with DNA-binding-deficient MAX mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Cell proliferation assays (Figure 4\u2014figure supplement 2A) show that wild-type MAX rescues Max-KO ESC growth defects, while DNA-binding-deficient mutants (VD, \u0394b) fail to rescue. Co-IP data (Figure 4\u2014figure supplement 2B) demonstrate that mutant MAX proteins retain the ability to interact with PCGF6, RING1B, and L3MBTL2. ChIP-qPCR (Figure 4\u2014figure supplement 2C,D) confirms that mutant MAX fails to bind target genes and recruit PCGF6, establishing that DNA binding is essential for function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C161"
+    ],
+    "result": "PCGF6 binds in close proximity to transcription start sites at genes with shorter, more methylated CpG islands compared to canonical PRC1 targets, with distinct roles for KDM2B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Heat map analysis (Figure 1G) shows that PCGF6 exhibits sharp binding peaks at TSSs, unlike the broader distribution of RING1B, CBX7, and H3K27me3. Analysis of CGI characteristics (Figure 1\u2014figure supplement 1E) demonstrates that PCGF6 targets have shorter and more methylated CGIs than CBX7 targets. ChIP-seq analysis (Figure 1\u2014figure supplement 1F,G) shows that KDM2B loss has opposite effects on PCGF6 vs. CBX7 targets, suggesting distinct recruitment mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "H3K27me3 is dispensable for PCGF6-PRC1 recruitment, and the H3K27me3-dependent pathway for recruiting canonical PRC1 is not active at PCGF6 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-qPCR data (Figure 4\u2014figure supplement 1B,C) show that PCGF6 binding and H2AK119ub1 levels are unaffected in Eed-KO ESCs, while PCGF2 (a cPRC1 component) shows minimal binding at PCGF6 targets regardless of H3K27me3 status. This demonstrates that PCGF6-PRC1 recruitment is independent of H3K27me3 and that cPRC1 is not recruited to PCGF6 targets via the canonical H3K27me3-dependent pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The L3MBTL2/G9A/GLP axis and CBX1/3 play marginal roles in PCGF6-mediated repression in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Heat map analysis (Figure 3\u2014figure supplement 1D) shows no considerable changes in H3K9me2 levels at PCGF6 targets in Pcgf6-KO ESCs, contrasting with L3mbtl2-KO ESCs. Gene expression analysis (Figure 3\u2014figure supplement 1F) shows no significant changes in PCGF6+CBX7-RING1B+ gene expression in Cbx1/3-dKO ESCs. These data indicate that while these factors are present in the complex, they are not essential for PCGF6-mediated repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "Anterior transformations in Pcgf6-/- mice are suppressed by Pcgf2 mutation, suggesting antagonistic functions of PCGF6 and PCGF2 in axial patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Skeletal analysis (Figure 6\u2014figure supplement 1E,F) demonstrates that the anterior transformations observed in Pcgf6-/- mice are suppressed in Pcgf6-/-;Pcgf2-/- double mutants. This genetic interaction suggests that PCGF6 and PCGF2 have opposing effects on Hox gene regulation and axial specification, though the molecular mechanism requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C41",
+      "C159",
+      "C160"
+    ],
+    "result": "The manuscript provides background on PcG-mediated gene silencing mechanisms, including the roles of PRC1, PRC2, canonical and non-canonical PRC1 complexes, and their recruitment mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to established literature and represent accepted knowledge in the field. They provide necessary context for understanding the novel findings about PCGF6-PRC1 but do not constitute new results from this study.",
+    "result_type": "MINOR"
+  }
+]

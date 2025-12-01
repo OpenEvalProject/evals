@@ -1,0 +1,2152 @@
+{
+  "submission": {
+    "id": "f14d5ab4-8599-40be-9637-3a9f582a7fa8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:21:18.042276Z",
+    "updated_at": "2025-11-30T21:21:18.042276Z"
+  },
+  "content": [
+    {
+      "id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "submission_id": "f14d5ab4-8599-40be-9637-3a9f582a7fa8",
+      "content_type": "manuscript",
+      "content_text": "# Sub-synaptic, multiplexed analysis of proteins reveals Fragile X related protein 2 is mislocalized in Fmr1 KO synapses\n\n## Authors\n\n- Gordon X Wang<sup>1</sup> ([ORCID: 0000-0002-2707-7118](https://orcid.org/0000-0002-2707-7118)) \u2020\n- Stephen J Smith<sup>3</sup>\n- Philippe Mourrain<sup>1</sup>\n\n### Affiliations\n\n1. Department of Psychiatry and Behavioral Sciences Stanford University School of Medicine Stanford United States\n2. Center for Sleep Sciences and Medicine Stanford University School of Medicine Stanford United States\n3. Department of Molecular and Cellular Physiology Stanford University School of Medicine Stanford United States\n4. INSERM 1024, Ecole Normale Sup\u00e9rieure Paris France\n5. Allen Institute for Brain Science Seattle USA\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe distribution of proteins within sub-synaptic compartments is an essential aspect of their neurological function. Current methodologies, such as electron microscopy (EM) and super-resolution imaging techniques, can provide the precise localization of proteins, but are often limited to a small number of one-time observations with narrow spatial and molecular coverage. The diversity of synaptic proteins and synapse types demands synapse analysis on a scale that is prohibitive with current methods. Here, we demonstrate SubSynMAP, a fast, multiplexed sub-synaptic protein analysis method using wide-field data from deconvolution array tomography (ATD). SubSynMAP generates probability distributions for that reveal the functional range of proteins within the averaged synapse of a particular class. This enables the differentiation of closely juxtaposed proteins. Using this method, we analyzed 15 synaptic proteins in normal and Fragile X mental retardation syndrome (FXS) model mouse cortex, and revealed disease-specific modifications of sub-synaptic protein distributions across synapse classes and cortical layers.\n\n## Introduction\n\nSynapses are central to neural circuit function and dysfunction, but their compositional diversity (there\u00a0are\u00a0hundreds of distinct protein species) and structural compactness (they\u00a0average a single micron in size) have prevented their complete molecular analysis (Emes and Grant, 2012; Heuser and Reese, 1977; O'Rourke et al., 2012; Chen et al., 2008; Sheng et al., 2012). Many techniques have been developed to visualize synaptic proteins through the nanometer localization of single proteins.\u00a0These\u00a0include\u00a0structured illumination microscopy (SIM; which can locate sub-cellular structures to ~100 nm resolution) (Gustafsson et al., 2008; Gustafsson, 2000), fluorescence localization microscopy (PALM/STORM; which can examine sub-cellular to single molecules at 10\u201350 nm resolution) (Watanabe et al., 2011; Dani et al., 2010), stimulated emission depletion microscopy (STED; which can be used to visualize sub-cellular to sub-synaptic structures\u00a0at\u00a010\u201350 nm resolution) (Wijetunge et al., 2014; Willig et al., 2006, 2007) and electron microscopy (EM; which can be used to locate single molecules at 1\u20135 nm resolution) (Dani et al., 2010; Specht et al., 2013; Micheva and Beaulieu, 1995; Kubota et al., 2007). These methods can resolve molecules with exquisite precision, but they are time consuming and struggle with both spatial coverage and molecular depth. This current work introduces a new computational method (SubSynMAP: SUB-SYNaptic, Multiplexed Analysis of Proteins) that quantifies the nanometer distribution of multiplex proteins across large regions of the brain with synapse population specificity.\n\nSubSynMAP is a novel combination of previously developed volumetric super-resolution imaging of deconvolution array tomography (ATD) (Wang and Smith, 2012; Micheva and Smith, 2007), EM ratified computation synapse classification (Collman et al., 2015; Wang et al., 2014), and a new synapse alignment procedure. It builds protein localization profiles of the average synapse that reveals the multiplexed, functional distributions of dozens of proteins. ATD uses a combination of physical sectioning and deconvolved wide-field imaging to generate an unparalleled combination of acquisition speed, volumetric resolution (100 nm by 100 nm by 50\u201370 nm) and molecular multiplexing (Wang and Smith, 2012; Micheva and Smith, 2007). Using ATD, different populations of synapses can be classified from large regions of the cortex based on molecular markers (Wang et al., 2014; Micheva et al., 2010; Allen et al., 2012; Hiu\u00a0et\u00a0al., 2016). These EM verified algorithms can be used to extract different classes of synapses (excitatory, inhibitory and their subclasses) at large numbers (>1 million) with low error rates (false positive 5%, false negative 12% \u2013 for more on antibody verification and error rates see 'Methods') (Wang et al., 2014; Allen et al., 2012; Hiu\u00a0et al., 2016). Moreover, these algorithms return the molecular features of each synapse organized around a spatial vector that defines the presynaptic bouton to post-synaptic density (Wang et al., 2014; Allen et al., 2012; Hiu et al., 2016) (see Figure 1E).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig1-v3.jpg)\n\n**Figure 1.:** (A) Representative maximum (max)\u00a0projections (25 \u00b5m by 20 \u00b5m by 1.5 \u00b5m) of PSD95, SYN and VGluT1. Scale bar\u00a0=\u00a05 \u00b5m. (B) Up-sampled view of the highlighted regions in panel (A) that represents a volume of 1.5 \u00b5m x 1.5 \u00b5m x 1.5 \u00b5m. Scale bar\u00a0=\u00a0500 nm. (C\u2013E) Composite 3D rendering and rotational perspectives of PSD95 and SYN, and PSD95, SYN and VGluT1 volumes highlighted in panel (B). Scale bar\u00a0=\u00a0500 nm. (D) Arrow heads point to putative synapses revealed by the structured localization of synaptic proteins. (E) Expanded panel of the central synapse in panel (C) (Yellow box). Red arrow illustrates a synaptic axis drawn from the center of mass of a PSD95 punctum to a SYN punctum. Scale bar\u00a0=\u00a0250 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Max projection of multiple proteins imaged in the same volume of cortex. Max projection of 25 \u00b5m x 20 \u00b5m x 0.7 \u00b5m of array tomography image volume. Scale Bar\u00a0=\u00a05 \u00b5m.\n\nThis synaptic-vector is made possible because proteins within presynaptic and post-synaptic compartments are spatially localized in relation to their function (Heuser and Reese, 1977; Chen et al., 2008; Dani et al., 2010; De Camilli, 1983; Hunt et al., 1996). While individual synapses can vary greatly in their structure and molecular composition, on average, the synapse remains an ordered structure with a\u00a0specific distribution of protein populations (Heuser and Reese, 1977; Chen et al., 2008; Dani et al., 2010; De Camilli, 1983; Hunt et al., 1996). These protein distributions are dictated by their functions (Park et al., 2012). Thus, the\u00a0presynaptic proteins required for transmitter release, such as bassoon (BSN), are on average located closer to the active zone;\u00a0andproteins that\u00a0are\u00a0required to load transmitter into vesicles, such as vesicular glutamate transporter 1 (VGluT1), are distributed broadly within the presynaptic vesicle pool (Dani et al., 2010; Micheva et al., 2010; El Mestikawy et al., 2011). In the post-synapse, transmitter receptors, such as ionotropic glutamate receptor 2 (GluR2), are localized to the synaptic cleft, and post-synaptic regulatory molecules, such as fragile x mental retardation protein (FMRP), are situated further away from the cleft (Chen et al., 2008; Dani et al., 2010; Dosemeci et al., 2007; Bear et al., 2004).\n\nTo make possible the analysis of the spatially multiplexed proteome of the synapse, we demonstrate SubSynMAP, a method that aligns and integrates tens of thousands of individual synapses within a brain region. This method extracts the averaged protein distributions within molecularly defined synapses drawn from large populations, and allows for the sub-synaptic visualization of multiplexed proteins. For example, in accordance to previous EM and STORM measurements (Dani et al., 2010; Mineur et al., 2002), BSN and VGlut1 distributions pre-synaptically peaked 25 and 60 nm, respectively, from the cleft, whereas GluR2 peaked 20 nm post-synaptically from the cleft. These spatial distributions are also useful for the characterization of novel proteins within specific synapse populations. We found that FMRP is distributed both pre- and post-synaptically, while its autosomal homologs FXR1 and FXR2 are predominantly distributed post-synaptically. Interestingly, in fragile X mental retardation 1 knock out mice (Fmr1 KO), a well-accepted model of FXS (Bear et al., 2004; Bassell and Warren, 2008; Graziano et al., 2008)\u00a0in\u00a0whichFMRP is no longer expressed, we found that synaptic FXR2 distribution is disrupted while FXR1 remains unperturbed. This suggests that proper synaptic FXR2 localization requires FMRP and a FXR2 deficit could be part of the pathophysiology of FXS synapse dysfunction.\n\n## Results\n\n### Computational alignment of synapse populations reveals the probability distribution of synaptic proteins\n\nATD provides exquisite volumetric resolution of spatially registered synaptic proteins (Wang and Smith, 2012). These punctate protein data allow for the recognition and classification of synapses based on the\u00a0colocalization and spatial orientation of known pre- and post-synaptic proteins (Figure 1 and Figure 1\u2014figure supplement 1) (Wang et al., 2014). Specific synaptic proteins can be used to\u00a0define synaptic axes with a defined orientation (post-synaptic to presynaptic) by connecting centers of mass from post-synaptic density protein 95 (PSD95) to presynaptic synapsin-1 (SYN) for glutamatergic synapses (Figure 1E), and post-synaptic gephyrin (GPHN) to presynaptic vesicular GABA transporter (VGAT) for GABAergic synapses. The centers of mass are calculated from segmented puncta objects as defined by a thresholded, three-dimensional (3D)\u00a0connected component analysis (see 'Methods'). Centers of mass are used in our calculations to facilitate computation of the over 9 million protein puncta collected across the 13 synaptic proteins in our ATD volumes (Figure 1\u2014figure supplement 1;\u00a0see 'Methods' for further description of the datasets).\n\nThese synaptic vectors, which are oriented in many directions in the tissue volumes (Figure 2A), are computationally aligned into one coordinate system, creating a registered synaptic volume (Figure 2B\u00a0and\u00a0C, see 'Methods'). This volume contains the aligned centers of all protein puncta located within a 1\u00a0\u03bcm radius of the origin (PSD95 weighted center) of each synaptic vector (Figure 2C\u00a0and D). The raw 3D histograms of these protein volumes reveal distinct pre- and post-synaptic orientation (Figure 3\u2014figure supplement 1 and Video 1). To facilitate the interpretation and analysis of these volumes, two-dimensional\u00a0(2D) histograms are created by rotationally projecting all the centers of a single protein into a 2D plane. The bins of these 2D histograms are half slices of a spherical shell (Figure 3A). Rotational projection is used to insure that the distance of all centers from the origin is maintained in the histogram (Figure 3A). Moreover, these histograms are generated as a half distribution because there is no rotational constraint along the synaptic axis (Figure 3B). Thus, to better conceptually the full synaptic distribution of the protein, this half distribution is mirrored to create a full distribution (Figure 3B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig2-v3.jpg)\n\n**Figure 2.:** (A) Diagrammatic representation of the random orientation of synaptic axes in normal cortical tissue. (B) All the axes are translated to a single origin and then computationally rotated on to a single axis. This creates a single space in\u00a0which all of the synapses are aligned along the synaptic axis. (C) Proteins associated with each synapse are disorganized in space, but have a structured relationship with the synaptic axis. This is difficult to see in tissue because the synapses are not ordered. (D) Once the synapses are aligned, the proteins associated with each synapse are also aligned and any non-random structure of their relationship to the synaptic axis is revealed.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig3-v3.jpg)\n\n**Figure 3.:** (A) Protein centers from registered synapses are summed using bins that are slices of spherical shells to maintain the distance of each center to the origin. As there is no rotational invariance along the x-axis, the data are binned into a hemi-histogram. (B) This hemi-histogram is then mirrored to provide a better representation of the full synapse. (C) A profile view of the bins further depicts\u00a0the size change of the bins as they move from the center. (D) A graphical depiction of bin volumes moving from the center of the figure. (E) This raw 2D histogram is generated for all the VGluT1 centers within a 1 \u00b5m radius sphere around the central PSD95 (origin) of VGluT1 class synaptic axes (n\u00a0=\u00a036,997). (F) The raw histogram is normalized by the calculated volume of each bin to create the density histogram. The density histogram represents the probability of a VGluT1 center landing in that location in the average synapse of that population. (G) The relationship of VGluT1 centers to their associated synaptic axes is randomized and the resulting histogram is plotted, which looks very much like (D). (H) The density histogram created from these randomized data shows no probability bias, thus creating a flat and featureless image.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** 3D visualization of pre-2D projection VGluT1, GluR2, NR1, SYNPH and randomized VGluT1 data. The bins of the 3D histograms are of\u00a0equal volume, 10 nm3. Note that the random data produce a sphere and the composite VGluT1 and GluR2 showed pre- and post-synaptic alignment.\n\n![Video 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-media1.mp4.jpg)\n\n**Video 1.:** 3D visualization of VGluT1, GluR2, VGluT1 and GluR2 composite and\u00a0of\u00a0randomized VGluT1 data. The bins of the 3D histograms are of\u00a0equal volume, 10 nm3. Note that the random data produces a sphere and the composite VGluT1 and GluR2 showed pre and post-synaptic alignment.\n\nDue to the rotational nature of the projection into 2D, the volume of each histogram bin increases as a function of its distance from the origin (Figure 3C\u00a0and D). This means that the probability that a protein center falls randomly into any given bin increases as a function of the bin's distance from the origin (Figure 3E). Thus, to remove this effect, the histogram is normalized with the bin volumes to create a density histogram in\u00a0which the random probability that a protein center\u00a0will\u00a0land within a bin is equal across all bins (Figure 3F, see 'Methods'). The density histogram reveals the probability that\u00a0a protein center will\u00a0be found at a position in a given synapse of that population. Thus, this distribution is representative of the functional spatial-range of a synaptic protein and defines quantitatively the potential transit area of that protein within the average synapse of a given class.\n\nAs an example, in Figure 3, vesicular glutamate transporter 1 (VGluT1) protein centers from nearly 40,000 classified VGluT1 class synapses of layer 4 mouse somatosensory cortex (for classification, see 'Methods') are binned into a density histogram. VGluT1 is one of two presynaptic glutamate transporters that\u00a0are\u00a0essential to the loading of glutamate into cortical synaptic vesicles, the other being VGluT2 (Fremeau et al., 2001; Kaneko and Fujiyama, 2002; Siksou et al., 2007). The presynaptic localization of VGluT1 is reflected by the histogram (Figure 3E\u00a0and F). Moreover, the histogram is also able to resolve the exclusion of VGluT1 from the post-synaptic zone, which is demonstrated by the below background dark area in the post-synaptic region (Figure 3E\u00a0and F). To further confirm the fidelity of the method in characterizing synaptic protein distributions, the association of the VGluT1 centers and their synaptic axes were randomized. The resulting random raw histogram appears similar to the bin volume histogram (Figure 3D\u00a0and G), as the probability that a center will\u00a0falls within a bin in an unbiased dataset is solely dependent upon the volume of the bin, thus the resulting normalized density histogram is flat and featureless (Figure 3H).\n\n### Empirical protein probability distributions reveal nanometer localization differences of synaptic proteins\n\nDensity histograms, such as the one in Figure 3F, can be converted to a probability histogram by dividing the number of protein centers per bin by the number of synapses. This generates an estimated percent probability that a protein center can be found at a position in space in the average synapse of that class; for example, a probability that VGluT1 proteins will be found in VGluT1 class synapses in layer 4 (Figure 4A). The shape of the VGluT1 empirical probability distribution in Layer 4 VGluT1 synapses is asymmetrical in regards to the synaptic axis (PSD95 to SYN), with a wider distribution along the axis and a narrower distribution perpendicular to it (Figure 4A). This is\u00a0likely to\u00a0reflect a distribution of synaptic vesicles in\u00a0which the major pool of vesicles, in excitatory synapses, resides axially behind the active zone (Heuser and Reese, 1977; Park et al., 2012; Mineur et al., 2002). To further simplify the visualization and statistical comparison of these distributions, the 2Dprobability histograms are rotationally projected to a one-dimensional (1D)\u00a0plot (Figure 4A). In this plot, the origin is the PSD95 centers of the nearly 40,000 VGluT1 synapses registered in the dataset. The putative synaptic cleft (red dashed line,\u00a0Figure 4)is\u00a050\u00a0nm from the origin,\u00a0as estimated from previous EM and super-resolution measurements (Dani et al., 2010; Mineur et al., 2002). Assessing the plot, the VGluT1 distribution dips in the post-synaptic zone, demonstrating the expected anti-correlation of VGluT1 localization to the post-synapse. Furthermore, the distribution peaks at\u00a0~125\u2013200 nm from PSD95 or about 75\u2013150 nm from the cleft (Figure 4A). These measurements corroborate previous analysis of presynaptic vesicle pools using EM (Mineur et al., 2002) or super-resolution microscopy, demonstrating that this method provides an accurate visualization of protein distribution in synapses.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig4-v3.jpg)\n\n**Figure 4.:** Volume-normalized 2D probability plots were generated from 36,997 classified VGluT1 synapses in Layer 4 of mouse cortex. Each channel reveals specific information regarding the distribution of those proteins in relation to the synaptic axis. The 2D distributions are further reduced to a 1D distribution to ease the visual and statistical comparison of the data. The dashed red line represents the putative location of the synaptic cleft. The\u00a0y-axis scale is\u00a0in percentage points, because density is converted to percent probability by dividing the number of protein centers per bin by the number of synapses. This generates an estimated percent probability that a protein center can be found at a position in space in the average synapse of that class. (A\u2013F) Pre- and post-synaptic protein distributions are clearly differentiated. The distributions of presynaptic vesicular proteins (VGluT1 and SYNPH) are significantly different from those of the presynaptic active zone protein BSN. (G\u2013J) Astrocytic proteins are distributed as halos surrounding the synapse center. (J) The exclusion at the center of the GLT1 halo fits the distribution of the presynaptic and postsynaptic proteins nicely.\n\nUsing this method, we demonstrate that glutamate receptors of both the AMPA and NMDA subtype (GluR2 and NR1), which reside in the post-synaptic active-zone membrane, have a distribution that peaks near the synaptic cleft, where they are expected to reside (Figure 4B,D,F). More importantly, while the empirical glutamate receptor distributions are similar to each other, they are significantly different from the empirical presynaptic protein distributions (Figure 4A\u2013F, Chi-square test p\u00a0<\u00a00.01, see 'Methods'). Moreover, while the empirical distribution of presynaptic vesicular proteins VGluT1 and synaptophysin (SYNPH) are similar (Figure 4A\u00a0and C,p\u00a0>\u00a00.05); they are significantly different from the empirical distribution of the\u00a0presynaptic structural protein bassoon (BSN) (Figure 4A,C,E, p < 0.01). BSN is an important cytoskeletal component of vesicle priming, which was demonstrated by both EM and STORM to be located\u00a0near the active zone (Dani et al., 2010; Mineur et al., 2002). Thus, our method can reveal with statistical significance the fine-scale distributional differences of synaptic proteins, and can\u00a0correlate those variations with their function, in for example the vesicle pool or\u00a0the\u00a0active zone.\n\nPeri-synaptic astrocytes also play an important regulatory role in synaptic function. This technique is able to visualize astrocytic proteins, which typically form \u2018halos\u2019 around the pre- and post-synapse (Figure 4G\u2013J), exactly where peri-synaptic astrocytic processes reside (Amara and Fontana, 2002). Interestingly,\u00a0the\u00a0astrocytic proteins glial glutamate transporter 1 (GLT1) and glutamine synthetase (GS) both show dips in the synaptic cleft region (Figure 4G\u00a0and I), whereas\u00a0glutamate aspartate transporter (GLAST) presents a peak at the cleft (Figure 4H). This suggests that GLAST, in comparison to GLT1, is more localized to the cleft. This result points to a currently unknown functional separation of the two major cortical, astrocytic-glutamate transporters.\n\n### Multiplexed analysis of empirical synapse protein distribution across synapse classes and cortical layers demonstrates the stability of cortical synapses across layers and classes\n\nThis fine-scale analysis, coupled with the spatial and molecular coverage of this technique, allows us the opportunity to quantify whether shared, synaptic proteins are distributed similarly between synapse classes and cortical layers. In Figure 5, the distribution of L4 proteins in nearly 100,000 synapses were analyzed across two glutamatergic synapse classes (VGluT1\u00a0and VGluT2) and one inhibitory synapse class. VGluT1 represents the majority of cortical\u2013cortical synapses and VGluT2 defines the majority of thalamocortical synapses in the cortex (Fremeau et al., 2001; Kaneko and Fujiyama, 2002; Herzog et al., 2001). It is satisfying to see in our datasets that in both Layers 4 and 5, VGluT1 synapses have little VGluT2 protein and vice versa (Figure 5A and\u00a0B and Figure 5\u2014figure supplement 1A and\u00a0B). This demonstrates the fidelity of the synapse classification and the accuracy of the protein visualization. A point that is further validated by the near-random distribution of VGluT1 and VGluT2 proteins in inhibitory synapses (Figure 5C and Figure 5\u2014figure supplement 1C), which illustrates that even for a densely expressed protein, such as VGluT1 (Figure 1), the method is robust and accurate enough to reveal the lack of association between that protein and the inhibitory synaptic axes.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013B) Probability distribution of proteins in glutamatergic synapses. (A) Probability distributions of proteins surrounding VGluT1 (n\u00a0=\u00a036,997). (B) Probability distributions of proteins surrounding VGluT2 (n\u00a0=\u00a06047). (C) Probability distribution of proteins in GABAergic synapses (n\u00a0=\u00a08100). Note that VGluT1 synapses have low levels of VGluT2, and VGluT2 synapses have low levels of VGluT1. Inhibitory synapses do not have VGluT1 or VGluT2. In fact, the dip in the center of histogram reveals that VGluT1 is anti-correlated with inhibitory synapses. Source data for the histograms in this figure can be found in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013B) Probability distribution of proteins in glutamatergic synapses. (A) Probability distributions of VGluT1 synapse proteins (n\u00a0=\u00a050,423). (B) VGluT2 (n\u00a0=\u00a05916). (C) GABAergic (n\u00a0=\u00a06252). Note that VGluT1 synapses have low levels of VGluT2, and VGluT2 synapses have low levels of VGluT1. Inhibitory synapses do not have VGluT1 or VGluT2. In fact, the dip in the center of histogram reveals that VGluT1 is anti-correlated with inhibitory synapses. Source data for the histograms in this figure can be found in Figure 5\u2014figure supplement\u2014source data 1.\n\nUpon\u00a0quantifying the distributional differences of proteins across Layers 4 and 5 of these three synapse classes, there are no significant differences between the two layers when comparing the same protein within the same synapse class (Figure 5 and Figure 5\u2014figure supplement 1, p\u00a0>\u00a00.01). This is also true of the cross-class comparison between VGluT1 and VGluT2 synapses within the same cortical layer (Figure 5A\u00a0and B and Figure 5\u2014figure supplement 1A B, p > 0.01). This demonstrates that the overall synapse architecture of excitatory synapses remains stable between classes and layers, and that inhibitory synapse architecture is stable between layers as well.\n\nInterestingly, this population-level analysis of excitatory and inhibitory synapses also uncovers the\u00a0stability of some common elements: BSN distribution is not different between inhibitory and excitatory synapses (Figure 5, Figure 5\u2014figure supplement 1, p\u00a0>\u00a00.01). However, we found that this\u00a0is\u00a0not true for all proteins shared by both synapse classes. For example, SYNPH distribution is significantly different depending upon whether it is within an inhibitory or an excitatory presynaptic terminal (Figure 5, Figure 5\u2014figure supplement 1, p\u00a0<\u00a00.01). This suggests that the structure of the presynaptic release architecture remains similar across the two synapse types (as demonstrated by BSN), but the structure of the synaptic vesicle pools differs\u00a0between inhibitory and excitatory synapses (as demonstrated by SYNPH and\u00a0consistent with previous findings in both EM (Khanmohammadi et al., 2015) and electrophysiology [Moulder et al., 2007]).\n\n### Layer-specific sub-synaptic localization of FMRP\n\nWe validated the use of our method on novel synaptic proteins by generating insight into the physiology of synapses in fragile X syndrome (FXS). FXS is a leading cause of congenital mental retardation that is mediated by the loss of FMRP, an RNA-binding protein that inhibits activity dependent translation in dendrites (Darnell et al., 2011; Huber et al., 2002). Canonically, FMRP is considered to be a post-synaptic protein, but recent reports also suggest that it can be detected in presynaptic terminals (Christie et al., 2009; Akins et al., 2012). In our analysis, FMRP is indeed localized post-synaptically in both VGluT1 and VGluT2 synapse classes across Layers 4 and 5 (Figure 6A and\u00a0B). Moreover, the empirical distribution of post-synaptic FMRP, unlike that\u00a0of the post-synaptic glutamate receptors, peak away from the synaptic cleft (Figure 6A\u00a0and B), which concurs with its role as a post-synaptic regulatory molecule (Darnell et al., 2011; Huber et al., 2002). Interestingly, in Layer 4 synapses only, a second FMRP peak can be detected presynaptically (Figure 6A\u00a0and B, black arrows). This peak is not pronounced in the empirical distribution of Layer 5 synapses (Figure 6A\u00a0and B), which suggests that although post-synaptic FMRP localization is a general feature, the bulk of presynaptic FMRP is directed to Layer 4 rather\u00a0than\u00a0to Layer 5.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig6-v3.jpg)\n\n**Figure 6.:** (A) Synaptic distribution of FMRP in VGluT1 synapses of Layers 5 (n\u00a0=\u00a06877) and 4 (n\u00a0=\u00a011,346). FMRP peaks in the post-synapse for both Layer 5 and 4 VGluT1 class synapses, but only Layer 4 has a presynaptic peak too (black arrow). (B) Synaptic distribution of FMRP in VGluT2 synapses of Layers 5 (n\u00a0=\u00a0487) and 4 (n\u00a0=\u00a01797). FMRP also peaks in the post-synapse in both Layer 5 and Layer\u00a04 VGluT2 synapses. (C, D) Single-section images of EM micrographs aligned with single-section images of fluorescent FMRP staining. Red boxes are hand classified synapses with an\u00a0associated FMRP punctum. Green boxes are exemplar synapses that are shown below in (E) and (F). (E, F) Example EM synapses with fluorescent FMRP labeling. Note the synaptic vesicles and PSD that allows for the delineation of the pre- and post-synapse. All images are single sections for both EM and fluorescence images. (G, H) Histograms of FMRP distance from the synaptic cleft (at 0),\u00a0the presynaptic side is on the right and the\u00a0postsynaptic side is on the left. (G) FMRP in Layer 5 is highly post-synaptic. (H) FMRP in Layer 4 is more evenly split between pre- and postsynapses. The EM histograms are also narrower, because of the z direction clipping of the EM dataset (210 nm in this figure), as compared to the light level dataset (2.8 \u00b5m\u00a0in previous figures). Source data for the histograms in this figure can be found in Figure 6\u2014source data 1 and 2.\n\nValidation of this result was confirmed using EM conjugate AT (Collman et al., 2015). Four datasets were generated (for\u00a0Layers 4 and 5 of both WT and Fmr1 KO mice), each covering a volume of 60 \u00b5m x 10 \u00b5m x 210 nm and consisting of both EM and light level immunohistochemistry (VGluT1, FMRP and FXR2). Using hand classification, we identified 115 WT Layer 4 synapses, 199 WT Layer 5 synapses, 113 KO Layer 4 synapses and 118 KO Layer 5 synapses. After the alignment of EM and light level data (Figure 6C and\u00a0D), pre- and post-synapses are identified in EM using the presence of synaptic vesicles and the PSD (Figure 6E F). Using conjugate FMRP light level data in combination with hand-classified synapses, FMRP-containing synapses were identified (Figure 6E and F). The distance to cleft from the FMRP punctum center\u00a0was measured and graphed on a histogram (Figure 6G and H). The histogram of FMRP distance to cleft in EM (Figure 6G and H) clearly reproduces the wide-field, synapse alignment result (Figure 6A). The EM histograms are narrower in distance because the EM volumes in the z-axis are significantly smaller than an actual synapse (210 nm), whereas this is not the case in the wide-field dataset (EM volumes are 2.8 \u00b5m). In our EM data, Layer 4 clearly has more presynaptic FMRP (230% more) than layer 5, which corroborates our SubSynMAP analysis.\n\n### FMRP-dependent localization of FXR2P\n\nFragile X related proteins 1 and 2 (FXR1P and FXR2P) are nearly structurally identical autosomal homologs of FMRP (Tamanini, 1997). Yet, their involvement in FXS and their synaptic localization and function is mostly unknown. The application of our synapse analysis method demonstrates that, across synapse classes and cortical layers, FXR1P and FXR2P unlike FMRP are preferentially localized to the post-synaptic region (Figure 7A\u2013D, Figure 7\u2014figure supplement 1A\u2013D); but like FMRP, the distributions of FXR1P and FXR2P peak away from the synaptic cleft (Figure 7A\u2013D\u00a0and Figure 7\u2014figure supplement 1A\u2013D). Furthermore, by assessing the\u00a0distributions of these proteins in Fmr1 KO animals, we reveal that the loss of FMRP does not affect the synaptic localization of FXR1P (Figure 7\u2014figure supplement 1, p\u00a0>\u00a00.01), but causes a significant depletion of post-synaptic FXR2P in both Layers 4 and 5, as measured both in SubSynMAP (Figure 7A\u2013D, p < 0.01) and EM (Figure 7E and F, Figure 7\u2014figure supplement 2). This suggests that the synaptic localization of FXR2P depends on FMRP. However, we do not know whether this coupling of expression proceeds through the FXR2P\u2013FMRP heteromeric complexes (Christie et al., 2009; Tamanini et al., 1999; Ceman et al., 1999) or through FMRP regulation of FXR2P mRNA (Ascano et al., 2012). Importantly, it suggests that FXR2P localization could contribute to the synaptic pathology seen in FXS.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig7-v3.jpg)\n\n**Figure 7.:** (A) Synapse distribution of FXR2P in Layer 5 VGluT1 class synapses in both KO (n\u00a0=\u00a05381) and WT (n\u00a0=\u00a09481). FXR2P post-synaptic localization is dramatically reduced in Layer 5. (B) Synapse distribution of FXR2P in Layer 5 VGluT2 synapses in both KO (n\u00a0=\u00a0563) and WT (n\u00a0=\u00a01483). FXR2P post-synaptic localization is reduced. (C) Synapse distribution of FXR2P in Layer 4 VGluT1 synapses in both KO (n\u00a0=\u00a05341) and WT (n\u00a0=\u00a09917). (D) Synapse distribution of FXR2P in Layer 4 VGluT2 synapses in both KO (n\u00a0=\u00a01207) and WT (n\u00a0=\u00a01783). Significance of distribution difference is tested via chi-squared two-sample tests (see 'Methods', p\u00a0<\u00a00.01). (E, F) EM distance histograms of FXR2 from synaptic cleft (at 0). Both Layers 4 and 5 show dramatic reduction of synaptic FXR2P. Source data for the histograms in this figure can be found in Figure 7\u2014source data 1 and 2.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Synapse distribution of FXR1P in Layer 5 VGluT1 synapses in both KO (n\u00a0=\u00a09838) and WT (n\u00a0=\u00a07948)\u00a0mice. (B) Synapse distribution of FXR1P in Layer 5 VGluT2 synapses in both KO (n\u00a0=\u00a01008) and WT (n\u00a0=\u00a01338\u00a0)mice. (C) Synapse distribution of FXR1P in Layer 4 VGluT1 synapses in both KO (n\u00a0=\u00a09471) and WT (n\u00a0=\u00a011,091)\u00a0mice. (D) Synapse distribution of FXR1P in Layer 4 VGluT2 synapses in both KO (n\u00a0=\u00a02009) and WT (n\u00a0=\u00a02027)\u00a0mice. There is no significant change in FXR1P distribution in all layers and classes between KO and WT animals. Significance of distribution difference is tested via chi-squared two-sample tests (see 'Methods', p\u00a0<\u00a00.01). Source data for the histograms in this figure can be found in Figure 7\u2014source data 1 and 2.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20560/elife-20560-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A\u2013D) Aligned images of EM micrographs with fluorescent FXR2P staining. Red boxes are hand classified synapses with an\u00a0associated FMRP punctum. Green boxes are exemplar synapses that are shown below in (E\u2013H). (E\u2013H) Example EM synapses with fluorescent FXR2P labeling. Note the synaptic vesicles and PSD that allow for the delineation of the pre- and post-synapse.\n\n## Discussion\n\nWe demonstrated a highly multiplexed method (SubSynMAP) for the visualization and quantification of the nanometer-resolution distribution of proteins within synapse populations. SubSynMAP uses the statistical power of large datasets to reveal discrete variations in the sub-synaptic distribution of synaptic proteins. For example, we can differentiate presynaptic vesicular proteins (such\u00a0as\u00a0SYNPH, VGluT1) from presynaptic active zone proteins (such\u00a0as\u00a0BSN). The comparison of these distributions can provide meaningful insight into the potential function of these proteins. For example, the greater\u00a0localization to the synaptic cleft\u00a0region\u00a0of GLAST as compared to GLT1\u00a0suggests that GLAST plays a more important role in the direct clearing of glutamate in the cleft, whereas GLT1 localization reflects its known function as a peri-synaptic regulator of metabotropic glutamate receptor signaling (Bar-Peled et al., 1997; Tzingounis and Wadiche, 2007; Reichelt and Kn\u00f6pfel, 2002). Furthermore, our method is dramatically faster and more cost effective than traditional sub-synaptic protein analysis.\u00a0Our\u00a0work using\u00a0EM to optimize, image and analyze 545 synapses for two\u00a0proteins (FMRP and FXR2P)\u00a0took over a year and tens of thousands of dollars , whereas\u00a0the optimization, imaging and analysis of over 500,000 synapses for 15 proteins, took less than 1 month using SubSynMAP.\n\nSubSynMAP is easier and faster than traditional super-resolution methods, such as EM, but its goal is to complement\u00a0those methods, not to replace them. Methods such as EM provide detailed visualization of sub-synaptic proteins with exceptional resolution (<5 nm), SubSynMAP cannot be measured along those traditional resolution metrics, nor can its data be interpreted along those lines. In SubSynMAP, the resolution does not come from a single high-resolution snap shot, but rather from the combined distribution of tens of thousands of observations at lower resolution (100 nm3). The distributions in SubSynMAP are not meant to represent the location of any one protein at any one time, which is information that EM can\u00a0provide. Instead, it represents the likelihood of finding that protein in that location of the prototypical synapse of a specific class if you make many observations. Thus, it does not resolve a protein\u2019s location per se, as one would in immunoEM, which can be used to resolve a protein on synaptic vesicles. SubSynMAP can,\u00a0however, tell you,\u00a0by comparing\u00a0the distribution of a particular protein with\u00a0that\u00a0of known vesicle proteins, whether a protein is likely to be a vesicle protein.\n\nAnother feature that warrants thought is the selection of the protein markers that are used to generate the synaptic axis. In this paper, all excitatory synapses use an axis described by a line drawn from the center of a PSD95 puncta to a synapsin puncta, whereas inhibitory synapses use a line from gephyrin to VGAT. In practice, we found no difference in resultant SubSynMAP histograms from axes generated from PSD95 to vesicle proteins; for example, there are no differences in the histogram for synaptic vesicle protein 2\u00a0(SV2) and that for vesicle pool related structural proteins such as synapsin. Nevertheless, one cannot fully rule out the possibility that data generated from different synaptic axes are not identical. Thus, comparison across such different axes should be verified with EM when possible.\n\nThis approach to the description of the substructure of a synapse not only provides protein localization data but also observational power. Traditional super-resolution or ultra-structural analysis routinely involves small sample sizes in terms of animals, synapse number and imaged volume. In this study, over a half million synapses from 20 animals across two cortical layers were analyzed, creating an overall image that is more likely to reflect the reality of the synapses studied. The extent of the coverage, both in numbers and in space, allows the analysis of synapse classes that are rare in relation to the total synapse population. For example, Layer 5 VGluT2 synapses only represent about eight percent of the total synapse population, and of that eight percent, only about a quarter have FMRP in them. Thus, a direct sample of 100 synapses in Layer 5 using traditional methods will yield, at most, two VGluT2 synapses with FMRP, a quantity that is mostly anecdotal. In our study, we are able to analyze a total of 487 Layer 5 VGluT2 FMRP synapses, which provides a more robust measure of their structure.\n\nStructural modification of synaptic proteins is hypothesized to be an integral part of most neurological diseases, yet there is little actual structural data supporting this. This data gap is caused by the potential diversity of synapse modifications in neurological diseases, which requires large sample sizes to obtain significant numbers of similarly perturbed synapses. This is extremely challenging for current methods of structural analysis. Our method can fill this data gap. We demonstrated in Fmr1 KO mice that we are able to reveal specific changes in protein\u00a0locations mediated by FMRP loss within defined synapse classes. We localized proteins\u00a0(FXR1P and FXR2P), within normal and diseased contexts, whose synapse localization was previously unknown. Finally, the large-scale quantification of small, complex, stereotypically structured protein complexes is not just a problem in neuroscience, but in biology in general. SubSynMAP, while designed for synapse analysis, can be generalized to a much wider array of cellular structures and should provide a new level of analytical power for other disciplines such as immunology and cancer\u00a0studies that require subcellular resolution\u00a0investigations\u00a0of large tissues.\n\n## Methods\n\n### Preparation of ATD ribbon arrays\n\nTissue preparation, array creation and immunohistochemistry are described in detail in a previous publication (Micheva and Smith, 2007). In short, a small piece of cortical tissue (~2 mm high x 1 mm wide x 1 mm deep) from the somatosensory cortex of the mouse brain is microwave-fixed in 4% paraformaldehyde. The fixed tissue is then dehydrated in graded steps of ethanol, and then embedded in LR White resin overnight at 50\u00b0C. The embedded tissue is sectioned on an ultramicrotome at a thickness of 70 nm and placed as a ribbon array directly on gelatin- or carbon-coated glass coverslips. For conjugate EM and array tomography, tissues are embedded in Lowicryle instead of LR White. The Lowicryle embedding is further described in a previous publication (Collman et al., 2015). Also, in Lowicryle, not all antibodies work as in LR White, specifically the VGluT2 antibody used in this study does not work in Lowicryle.\n\nImmunohistochemistry is then carried out on the arrays using primary antibodies targeting the\u00a0antigens of choice (Synapsin Cell Signaling Technology 5297S, VGluT2 Millipore AB2251, VGluT1 Millipore AB5905, Synaptophysin Abcam ab8049, PSD-95 Cell Signaling 3450, NR2B NeuroMabs 75\u2013101, NR2A Millipore MAB5216, NR1 Milipore MAB363, GluR2 Millipore MAB397, EAAT2/GLT1 and EAAT1/GLAST gifts from Dr. Jeffrey Rothstein (Johns Hopkins Univeristy), GS BD Biosciences 610517, Gephyrin BD Biosciences 612632, GAD65 Cell Signaling 3988S, Gabra1 NeuroMabs 75\u2013136, Bassoon Abcam ab13249, VGAT SYSY 131 011, FMRP Dr. Justin Fallon (Brown University), FXR1P ProteinTech 13194\u20131-AP, FXR2P Dr. Rob Willemsen and DSHB 1G2). The primary antibodies are visualized using fluorescently labeled secondary antibodies (Alexa 594, Invitrogen A11037, Alexa 488, Invitrogen A11034, and Alexa 647, Invitrogen A21245), and mounted in SlowFade Gold antifade with DAPI (Invitrogen).\n\n### Data collection\n\nData for Figures 1\u20135 and Figures 1, 3 and 5 supplements were newly collected from WT C57BL/6 Layer 4 and 5 somatosensory cortices\u00a0in volumes of\u00a0140 \u00b5m\u00a0\u00d7 100 \u00b5m x 5 \u00b5m). Data for Figures 6 and 7 and supplemental Figures 4 and 5 were generated from pooled data collected from six\u00a0WT and\u00a0six Fmr1KO mice that were imaged for a previous study (Wang et al., 2014). Fmr1KO mice were derived from Fmr1 KO2 animals originally from the FRAXS-sponsored distribution facility at Baylor College headed by Dr. David Nelson. Data volumes ranged from 140 \u00d7 100 \u00b5m x 0.5 \u00b5m to 140\u00a0\u00d7 100 \u00b5m x 2 \u00b5m. The antibody staining sequence for the tissue is: GAD 594 VGAT 488 VGluT2 647; Synpod 594 GEPH 488 VGluT1 647; FXR1 594, SYNPH 488; EAAT2 594 Bassoon 488; PSD95 594 GABAa1alpha 588; Synapsin 594 FMRP 488.\n\n### Microscopy\n\nWide-field imaging of ribbons were accomplished on a Zeiss Axio Imager.Z1 Upright Fluorescence Microscope with motorized stage and Axiocam HR Digital Camera as previously described (Micheva and Smith, 2007). A position list was generated for each ribbon array of ultrathin sections using software modules for Axiovision. Single fields of view were imaged for each position in the position list using a Zeiss 63\u00a0\u00d7/\u00a01.4 NA Plan Apochromat objective.\n\n### Image registration and processing\n\nImage stacks from ATD were imported into FIJI and aligned using both rigid and affine transformations with the Register Virtual Stacks plugin. The aligned image stacks were further registered across image sessions using FIJI and TrackEM.\n\nThe aligned and registered image stacks were imported into Matlab (Mathworks) and deconvolved using the native implementation of Richardson-Lucy deconvolution with empirical PSF through ten iterations (Wang and Smith, 2012). Custom functions were written to automate and facilitate this work flow (all custom Matlab functions are included in the publication). Empirical PSF were measured using 110 nm beads mounted on slides in the actual imaging system (Wang and Smith, 2012).\n\n### Center of mass calculations for protein puncta\n\nMatlab native function (regionprops) was used to calculate the centers of mass of puncta in the image volumes using 26 neighborhood 3D connected component analyses with an assumed background threshold that is 0.1 of the total dynamic range, which is 6553.5 for a 16-bit image, and is in line with previous background thresholds used for ATD analysis (Wang and Smith, 2012). Custom functions in Matlab were implemented to facilitate the handling and processing of the data (all custom Matlab functions are included in the publication).\n\n### Custom software\n\nMatlab software written for the synapse analysis, histogram generation and image deconvolution are included in the submission as a single archive titled 'Image Analysis Suite'.\n\n### Resolution beyond 100 nm pixel resolution of the images\n\nThe pixel resolution of each single image used to generate the image volume is 100 nm. The section thickness is\u00a0~100 nm thus creating nearly 100 nm isotropic voxels. The resolutions in the distribution histograms are better than the 100 nm voxel resolution. This improved resolution arises from the statistics that\u00a0combine\u00a0tens of thousands of centers of mass calculations, which introduces sub-pixel jitter into the dataset which,\u00a0over the large population, creates a dithering effect that provides sub-100 nm localization seen in our probability distributions.\n\n### Discretization effects mediated by aliasing and ringing in 3D histograms\n\nHalos are present in every distribution generated by SubSynMAP. These\u00a0are\u00a0caused by the discretization of the protein structures through pixilation. While the 3D weighted centroid calculations do provide sub-pixel coordinates, the very nature of the calculation being made on a discrete dataset increases the probability of certain sub pixel distances. The reason why these halos are more apparent in some instances is because the background is higher for those proteins; and the reason for a higher background is caused by: (1) fewer pooled synapses, some synapses are rarer and thus their histograms involve smaller\u00a0protein numbers; and (2) some proteins have more background, because all protein centers within a 1 \u00b5m radius sphere are incorporated into the histogram. This means that even protein puncta not associated with that particular synapse can be included. As our synapses are aligned, the random non-synaptic signals will reduce to an even background (see randomized data), but the coherent signal (the protein localization within the aligned synapses) will rise from that homogenous noise.\n\n### Synapse classification and rotations\n\nThe classification method has been published previously (Wang et al., 2014; Allen et al., 2012; Hiu et al., 2016). In short, classification occurs in a 1 \u00b5m radius sphere centered on the origin (PSD95 for excitatory synapses and gephyrin for inhibitory synapses). For example, a VGluT1 synapse will have PSD95 at the postsynaptic termini and synapsin at the presynaptic termini. Moreover, VGluT1 will be closer to synapsin than to\u00a0PSD95. Thus, the algorithm will require the third point (VGluT1) to be closer to synapsin by a specified factor than it is to PSD95 in\u00a0order\u00a0for it to classify the grouping as a synapse. In some instances, after this initial classification step, a synaptic axis still retains more than one third point (VGluT1 puncta). If that is the case, then the algorithm looks through the entire dataset and removes sharing of the third point in a manner that maximizes the number of possible synaptic axis with third points. If a decision must be made regarding a single third point that is shared by two synaptic axes, then the axis that is the closest to the third point is selected. Finally, once the ownership of the third point has reached parsimony, a final check is applied to ensure that there is no duplication of the synaptic axis. This situation is rare in practice, but if it does occur, the axis with the smallest magnitude is preferred.\n\nThe output of the classified data is a set of synaptic axes defined by two points. These synaptic axes are then aligned. For the alignment of the synapses, the first step is to translate all of the synaptic axes so that the origin lies at 0, 0, 0 of the coordinate system. Then all the axes are aligned using a 3D rotation matrix as defined by:\n\n$$\nR_{x}R_{y}R_{z}=[cos\\alphacos\\beta\u2212cos\\gammasin\\alpha+cos\\alphasin\\betasin\\gammacos\\alphacos\\gammasin\\beta+sin\\alphasin\\gamma0cos\\betasin\\alphacos\\alphacos\\gamma+sin\\alphasin\\betasin\\gammacos\\gammasin\\alphasin\\beta\u2212cos\\alphasin\\gamma0\u2212sin\\betacos\\betasin\\gammacos\\betacos\\gamma00001]\n$$\n\nwhere the rotation $R$ is rotated by $\\alpha$ around the x-axis, $\\beta$ around the y-axis, and $\\gamma$\u00a0around the z-axis.\n\nWe rotate the synaptic axis to a position on the x-axis so that the coordinates of all the termini is x, 0, 0. We then use the rotation defined by this axis to rotate all associated third points for all channels in the dataset. For the distributional histograms, the dataset in\u00a0which all of the protein centers across all imaged protein channels within a radius of 1 \u00b5m from the origin of the axis is used. This is done to ensure that\u00a0the volume normalization is correct. The volume normalization assumes that there is some baseline probability that a punctum will co-localize with a synaptic axis, and that\u00a0that probability increases as the volume increases, which is exactly what happens as you extend the distance from the origin to the termini of the axis. Thus, for the volume normalization to work properly, one must take all of the points scattered around the synaptic axis. This creates a 3D histogram, which can be rotationally reduced to 2D, in\u00a0which the volumes of each bin are half slices of a spherical shell or a simpler approximation as a half slice of a cylindrical shell that can be described by the equation:\n\n$$\nV=\\frac{\\pih(r_{1}^{2}\u2212r_{2}^{2})}{2}\n$$\n\nwhere $V$= volume of the half cylindrical shell, $h$ = the y length of the bin, and $(r_{1}\u2212r_{2})$ = the x length of the bin.\n\n### Proteins associated with synaptic axis\n\nAn important note is that for every synaptic axis, all protein centers within a 1 \u00b5m radius sphere are incorporated into the histogram. This means that even protein puncta that\u00a0are\u00a0not associated with that particular synapse can be included. However, as our synapses are aligned, the random non-synaptic signals will reduce to an even background (see randomized data), but the coherent signal (the protein localization within the aligned synapses) will rise from that homogenous noise.\n\n### Synapse histogram workflow\n\nThe synaptic vectors formed by connecting the centroids of PSD95 staining\u00a0or of\u00a0gephyrin staining and the centroids of staining for a vesicle protein were aligned in an x,y,z coordinate system. All PSD95 or gephyrin centroids were placed at the origin of the x,y,z coordinate system, and the centroids of a synaptic vesicle protein in each synapse were each placed at an appropriate position x, along the x-axis. Thus, the x axis is equivalent to the 'synaptic axis' in the coordinate system. The positions of other protein centroids within a 1 \u00b5m sphere of the origin of each synapse were rotated in the same way to appropriate positions in the x,y,z coordinate system. To provide a visual representation of the 2D distributions of these proteins in the x,y plane, with respect to the synaptic axis, the centroids of proteins were binned in the x,y plane as follows. The x coordinate of a centroid was given as its distance from the origin along the x-axis (Figure 3A). The y coordinate was given as its distance from the origin along the y-axis. The x coordinates of the centroids were binned within semi-circular bins of fixed width centered on the y-axis, and the y-coordinates were binned within semi-circular bins of the same fixed width centered on the x-axis. The semi-circular bins were mirrored along the x-axis (synaptic axis) to produce a circular image (Figure 3B). This creates a projection of centroids with x,y coordinates that are binned into circular bins of fixed width centered on the origin. To correct for the fact that the circular bins effectively draw from spherical bins in 3D, the number of centroids in each bin is divided by the volume of the corresponding spherical bin to give the density of centroids in each bin. This normalization ensures that the random probability of a centroid falling within each bin is equal.\n\n### Chi-squared two-sample test\n\nGenerating a statistical comparison of both 2D and 1D non-parametric distributions was not trivial. We, with the help of the Stanford statistics department, settled upon the chi-square two-sample test (below) as the best solution. This is defined as follows:\n\nH0: The two samples come from a common distribution.\n\nHa: The two samples do not come from a common distribution.\n\nTest statistic: For the chi-square two-sample test, the data are divided into k bins and the test statistic is defined as:\n\n$$\n\u03c7^{2}=\\sumi=1k\\frac{(K_{1}R_{i}\u2212\u00a0K_{2}S_{i})^{2}}{R_{i}+S_{i}}\n$$\n\nWhere the summation for bins 1 to $k$\u00a0, $R_{i}$\u00a0is the observed frequency for bin i for sample 1, and $S_{i}$ is the observed frequency for bin i for sample 2. $K_{1}$ and $K_{2}$\u00a0are scaling constants that are used to adjust for unequal sample sizes. Specifically,\n\n$$\nK_{1}=\\sqrt{\\frac{\\sumi=1kS_{i}}{\\sumi=1kR_{i}}}K_{2}=\\sqrt{\\frac{\\sumi=1kR_{i}}{\\sumi=1kS_{i}}}\n$$\n\n### Sample size and replication\n\nWe used estimates derived from previous studies (Wang et al., 2014; Allen et al., 2012; Hiu et al., 2016), coupled with empirical tests to determine our sample size and replication. In this paper, synapses were pooled from six different animals per brain region (Layers 4 and 5) per genotype (WT and KO). Each animal was separately imaged and synapse classification was also done separately. These computationally generated synapses were then aligned and pooled to create average synapse protein data distributions.\n\n### Synapse axes metrics\n\nFor 116592 Layer 5 cortical synapse axes: mean\u00a0=\u00a0675.32 nm, median\u00a0=\u00a0706.00 nm and standard\u00a0deviation\u00a0=\u00a0216.18. For 102886 Layer 4 cortical synapse axes: mean\u00a0=\u00a0677.04, median\u00a0=\u00a0704.50, standard\u00a0deviation\u00a0=\u00a0214.09. All these numbers are in line with\u00a0published literature regarding the average size of a mouse cortical synapse (Chen et al., 2008; Dani et al., 2010; Mineur et al., 2002; Chen et al., 2005; Tao-Cheng et al., 2014; Coleman et al., 2010).\n",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f05c2648-9b93-4512-8622-04309918d15b",
+      "submission_id": "f14d5ab4-8599-40be-9637-3a9f582a7fa8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mary B Kennedy, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20560.022](https://doi.org/10.7554/eLife.20560.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"SUB-SYNaptic, Multiplexed Analysis of Proteins (SubSynMAP): Reveals FXR2P Localization deficits in Fmr1 KO synapses\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Shigeki Watanabe (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors have developed a technique that maps the probability of protein distributions from array tomography data to infer the average localization of particular proteins over thousands of synaptic terminals. Array tomography uses conventional fluorescence microscopy but achieves super-resolution by physical sectioning of tissues, deconvolution and reconstruction of the arrays. Multiple proteins can be probed simply by repeating antibody staining against proteins of interest and the subsequent elution of the antibody. In brief, the new technique works as follows.\n\n1) The synaptic vector is determined by connecting the centroid of fluorescence from a post-synaptic marker with the centroid of fluorescence from a vesicle marker. Another synaptic vesicle marker (synapse type specific) is used to ensure that the connected puncta represent a synapse. 2. The centroids of fluorescence puncta from other proteins are mapped relative to the synaptic vector, and histograms or density maps, are generated.\n\nUsing this method, the authors have demonstrated that: 1. Proteins with known localization are found at the appropriate locations relative to post-synaptic markers (PSD95 for glutamatergic neurons and gephyrin for GABAergic neurons). 2. FMRP is located mostly postsynaptically in Layer 5 neurons, but it is found both presynaptically and postynaptically in Layer 4 neurons. 3. These data are confirmed by mapping fluorescence data on underlying ultrastructure. 3. The FXR2P distribution, but not the FXR1P distribution, is altered in FMR1 KO mice via an unknown mechanism.\n\nEssential revisions:\n\nThe reviewers felt that the method reported here as an extension of array tomography, and analysis methods already published is interesting and the data are compelling. It would be useful to researchers wanting to detect changes in protein distribution of synaptic proteins throughout brain regions caused by disease mutations, or other manipulations. However, for publication in eLife, the manuscript needs to be much more clearly written; it needs to provide more background information; and it needs to address several technical points.\n\nThe following major revisions will be necessary:\n\n1) It is not made clear in the Abstract or Introduction what parts of the method have already been published and what parts are newly introduced in this manuscript. The authors should state in the Abstract that the method builds on data and analyses provided by ATD. Because the RL deconvolution is used here, and this was referred to as ATD in the authors' previous 2012 publication, the ATD terminology should be used here to avoid confusion. The newly introduced computational method supports alignment of all the synaptic vectors in such a way that the positions of additional proteins can be mapped and averaged over the thousands of synaptic axes identified in a sample.\n\n2) The reviewers had quite a bit of confusion about the axes along which the projections to 2D were made. This is because the explanations in the Results and Materials and methods section are unclear and often ambiguous. The verbal descriptions of Figures 2, 3, and 4, their respective figure legends, and the work flow described in the methods section all must be thoroughly revised to make more clear the nature of the coordinate systems and the axes along which projections are made. After much re-reading, here is our understanding of what was done. The synaptic vectors formed by connecting the centroids of PSD-95 staining, or gephyrin staining and the centroids of staining for a vesicle protein were aligned in an x,y,z coordinate system. All PSD-95 or gephyrin centroids were placed at the origin of the x,y,z coordinate system, and the centroids of a synaptic vesicle protein in each synapse were each placed at an appropriate position x, along the x-axis. Thus, the x axis is equivalent to the \"synaptic axis\" in the coordinate system. The positions of other protein centroids within a 1 \u00b5m sphere of the origin of each synapse were rotated in the same way to appropriate positions in the x,y,z coordinate system. To provide a visual representation of the 2D distributions of these proteins in the x, y plane, with respect to the synaptic axis, the centroids of proteins were binned in the x-y plane as follows. The x coordinate of a centroid was given as its distance from the origin along the x-axis (Figure 3A). The y coordinate was given as its distance from the origin along the y-axis. The x coordinates of the centroids were binned within semi-circular bins of fixed width centered on the y-axis, and the y-coordinates were binned within semi-circular bins of the same fixed width centered on the x-axis. The semi-circular bins were mirrored along the x-axis (synaptic axis) to produce a circular image (Figure 3B). This creates a projection of centroids with x,y coordinates that are binned into circular bins of fixed width centered on the origin. To correct for the fact that the circular bins effectively draw from spherical bins in 3D, the number of centroids in each bin is divided by the volume of the corresponding spherical bin to give the density of centroids in each bin. This normalization ensures that the random probability of a centroid falling within each bin is equal. If the above description is not correct, the authors need to clarify the work flow further. In several figures, the density distributions are represented on a percentage scale, but the exact calculation by which the percentages were determined needs to be stated explicitly. The explanation of this process in a revised manuscript needs to be as clearly written as explanations of other methods were in earlier papers by the same authors.\n\n3) The authors need to clarify and quantify the rate of false positives and negatives. The authors define a synapse by the presence of two synaptic vesicle markers close to the post-synaptic marker. However, this definition may not always be accurate. For example, in Figure 1D, there is a pair of upper left signals containing juxtaposed PSD95 and vGlut1. However, this pair does not appear to be defined as a synapse because the SYN marker is not present. Since both vGlut1 and synapsin are vesicle markers, how do the authors explain this? Alternatively, the signals in the middle have all three markers, but the presynaptic markers are further away from the PSD95 marker. How well have the authors confirmed their definition of a synapse by the EM conjugate AT method? Is the pair of signals for PSD-95 and vGlut1 at the upper left, a false negative; that is a true synapse that has not been identified by the classification? Approximately what percentage of the synaptic vectors identified using this method actually represents synapses by morphology? If the algorithm used by the authors has been fully verified by the EM conjugate method in a previous publication, the authors need to state this in the Introduction, and give the calculated rate of false positive and false negative synapses identified by the algorithm. They need to summarize their previous studies with respect to choice of antibodies and the percentage of synapses that are actually labeled by the antibodies in the plastic sections. Is there a failure rate for labeling, for example, because of inadequate penetration of the antibody into the center of a section? A discussion of these issues, which may have been resolved in earlier papers, would be important for a tools and methods paper.\n\n4) Supplemental Figure 1 is composed of portions of figures that were originally published in Wang and Smith, 2012 (PLoS Computational Biology 8(8): e1002671. doi:10.1371/journal.pcbi.1002671). That supplemental figure could be removed. If the authors feel strongly that it is necessary, all panels need to be properly attributed. The other supplemental figures must be associated with a regular figure, and appropriately named according to eLife instructions to authors.\n\n5) The authors need to clarify and quantify the actual resolution of this method. The pixel dimensions are stated as 100 nm voxels in methods. Earlier papers indicate that an actual resolution of about 100 nm is achieved by the RL deconvolution. In the methods section, the authors indicate that statistics and dithering effect create a resolution \"considerably better than 100 nm\". The authors should discuss this issue more thoroughly in the Discussion section and provide an estimate of the actual resolution that is achievable. Is it ~10 nm? ~50 nm? Can this number be calculated?\n\n6) It is difficult to assess the full extent of the 3D distribution of the signals from the 2D max projection. Please provide the 3D volumes as supplementary figures to Figure 3. The authors should also discuss how they exclude the possibility that the defining markers may be located outside of the reconstructed volume. For example, in Figure 1D, would it be possible that the post-synaptic marker is actually outside the imaged volume (vice versa, the presynaptic markers are outside of the imaged volume)? This last question is related to the issue of false negatives.\n\n7) There are some puzzling disparities in the data. The probability/ nm^3 is much higher in the 2D density plots than in the corresponding 1D distributions. Why? For example, in Figure 4B, the 2D plot shows a 17% peak, but the 1D plot shows the peak is only ~3.3%. Please explain this.\n\n8) In several of the 2D projections, there are periodic \"halo\" bins separated by bins with low density. These are particularly evident for bassoon and synaptophysin in Figure 5C. What is the origin of these apparent artifacts? Could they be coming from inadvertent assigning of signals from neighboring synapses?\n\n9) The criteria and accuracy of the EM conjugate AT experiment in Figure 6 need to be better explained. In Figure 6 E and F, there appear to be fluorescent signals that are not marked by arrows. For example, the middle panel in 6E shows both presynaptic and postsynaptic signals. The second panel from the left in 6F shows a second signal just outside of the synapses. What are the criteria that the authors use to decide which signals are associated with the particular synapse?\n\nIn the middle figure in 6F, the signal indicated by the arrow does not seem to be in the postsynaptic spine (the smear of the signal is in the post-synaptic terminal, but the bright spot is outside the boundary). In SubSynMAP, this signal will be counted into the postsynaptic bin; how would this affect the rate of false positives and negatives? (Note that the labels in Figure 6F all say L5, but should say L4. Please fix the typos.)\n\nIn general, the figure legend and description of this figure is not detailed enough. Are the fluorescence signals max projections of the same volume (210 nm in z) or 2.8 \u00b5m? If 2.8 \u00b5m, some of the signals observed may be from synapses located at a different location in z. The signals should be correlated from the same volume.\n\n10) In Figure 7\u2014figure supplement 2, Why is there no signal from vGlut2 in this condition?\n",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d43d65f6-8d30-45ee-9635-5582339ebb35",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C1",
+      "claim": "Current methodologies such as electron microscopy (EM) and super-resolution imaging techniques can provide precise localization of proteins but are limited to a small number of one-time observations with narrow spatial and molecular coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Current methodologies, such as electron microscopy (EM) and super-resolution imaging techniques, can provide the precise localization of proteins, but are often limited to a small number of one-time observations with narrow spatial and molecular coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods in the abstract, drawing on established knowledge about EM and super-resolution techniques.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5ecfd5a9-123c-4678-b45b-d9099b1f67f4",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C2",
+      "claim": "SubSynMAP generates probability distributions that reveal the functional range of proteins within the averaged synapse of a particular class.",
+      "claim_type": "EXPLICIT",
+      "source": "SubSynMAP generates probability distributions for that reveal the functional range of proteins within the averaged synapse of a particular class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the method's capability described in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "bb174e5f-60be-4fba-a651-8f9c4b740f70",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C3",
+      "claim": "SubSynMAP enables the differentiation of closely juxtaposed proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This enables the differentiation of closely juxtaposed proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the method in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "8b2a1dcc-d6b5-44f6-a3ff-c2ee8a944d8e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C4",
+      "claim": "15 synaptic proteins were analyzed in normal and Fragile X mental retardation syndrome (FXS) model mouse cortex using SubSynMAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we analyzed 15 synaptic proteins in normal and Fragile X mental retardation syndrome (FXS) model mouse cortex, and revealed disease-specific modifications of sub-synaptic protein distributions across synapse classes and cortical layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the experimental scope in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2cf9f17a-f058-47bf-8cec-9ad7a6536825",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C5",
+      "claim": "Disease-specific modifications of sub-synaptic protein distributions were revealed across synapse classes and cortical layers in FXS model mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we analyzed 15 synaptic proteins in normal and Fragile X mental retardation syndrome (FXS) model mouse cortex, and revealed disease-specific modifications of sub-synaptic protein distributions across synapse classes and cortical layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding in the abstract, supported by data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "946ccecd-a7d6-42ff-87e6-f1cf847366ea",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C6",
+      "claim": "Synapses are central to neural circuit function and dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses are central to neural circuit function and dysfunction, but their compositional diversity (there are hundreds of distinct protein species) and structural compactness (they average a single micron in size) have prevented their complete molecular analysis (Emes and Grant, 2012; Heuser and Reese, 1977; O'Rourke et al., 2012; Chen et al., 2008; Sheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "9a852666-2165-4d5f-995b-8d272abc80b5",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C7",
+      "claim": "Synapses have compositional diversity with hundreds of distinct protein species.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses are central to neural circuit function and dysfunction, but their compositional diversity (there are hundreds of distinct protein species) and structural compactness (they average a single micron in size) have prevented their complete molecular analysis (Emes and Grant, 2012; Heuser and Reese, 1977; O'Rourke et al., 2012; Chen et al., 2008; Sheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "73dd264c-46b1-4ca8-8e20-83ca532973cc",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C8",
+      "claim": "Synapses average a single micron in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses are central to neural circuit function and dysfunction, but their compositional diversity (there are hundreds of distinct protein species) and structural compactness (they average a single micron in size) have prevented their complete molecular analysis (Emes and Grant, 2012; Heuser and Reese, 1977; O'Rourke et al., 2012; Chen et al., 2008; Sheng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about synapse size supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "d5f94681-c029-476d-b396-adea8f9fe450",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C9",
+      "claim": "Structured illumination microscopy (SIM) can locate sub-cellular structures to ~100 nm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "These include structured illumination microscopy (SIM; which can locate sub-cellular structures to ~100 nm resolution) (Gustafsson et al., 2008; Gustafsson, 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about SIM capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2437d979-1436-440c-806a-5279550a4488",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C10",
+      "claim": "Fluorescence localization microscopy (PALM/STORM) can examine sub-cellular to single molecules at 10\u201350 nm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "fluorescence localization microscopy (PALM/STORM; which can examine sub-cellular to single molecules at 10\u201350 nm resolution) (Watanabe et al., 2011; Dani et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about PALM/STORM capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "752722b8-2af9-4bc1-a7c0-58b63fc1e4cd",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C11",
+      "claim": "Stimulated emission depletion microscopy (STED) can be used to visualize sub-cellular to sub-synaptic structures at 10\u201350 nm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "stimulated emission depletion microscopy (STED; which can be used to visualize sub-cellular to sub-synaptic structures at 10\u201350 nm resolution) (Wijetunge et al., 2014; Willig et al., 2006, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about STED capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4678006a-2ed8-424d-9ebc-959723318b79",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C12",
+      "claim": "Electron microscopy (EM) can be used to locate single molecules at 1\u20135 nm resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "electron microscopy (EM; which can be used to locate single molecules at 1\u20135 nm resolution) (Dani et al., 2010; Specht et al., 2013; Micheva and Beaulieu, 1995; Kubota et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about EM capabilities.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "711e6d1e-5ddc-4d2d-a3e6-26a754b4bb50",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C13",
+      "claim": "Traditional super-resolution methods are time consuming and struggle with both spatial coverage and molecular depth.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods can resolve molecules with exquisite precision, but they are time consuming and struggle with both spatial coverage and molecular depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "052bda87-6975-45a6-aa54-9f8c2e7b2518",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C14",
+      "claim": "SubSynMAP quantifies the nanometer distribution of multiplex proteins across large regions of the brain with synapse population specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This current work introduces a new computational method (SubSynMAP: SUB-SYNaptic, Multiplexed Analysis of Proteins) that quantifies the nanometer distribution of multiplex proteins across large regions of the brain with synapse population specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the method's capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "98e68f3b-042d-4f90-ac9b-9b58c08c0aaf",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C15",
+      "claim": "SubSynMAP is a combination of deconvolution array tomography (ATD), EM ratified computation synapse classification, and a new synapse alignment procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "SubSynMAP is a novel combination of previously developed volumetric super-resolution imaging of deconvolution array tomography (ATD) (Wang and Smith, 2012; Micheva and Smith, 2007), EM ratified computation synapse classification (Collman et al., 2015; Wang et al., 2014), and a new synapse alignment procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the components of the method with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "a25db2e9-28d5-4a81-9c7e-8ccb488703d4",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C16",
+      "claim": "ATD provides volumetric resolution of 100 nm by 100 nm by 50\u201370 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "ATD uses a combination of physical sectioning and deconvolved wide-field imaging to generate an unparalleled combination of acquisition speed, volumetric resolution (100 nm by 100 nm by 50\u201370 nm) and molecular multiplexing (Wang and Smith, 2012; Micheva and Smith, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations about ATD capabilities.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "77a5664b-b04b-4272-9051-7adf64a5778a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C17",
+      "claim": "EM verified algorithms can extract different classes of synapses with false positive rate of 5% and false negative rate of 12%.",
+      "claim_type": "EXPLICIT",
+      "source": "These EM verified algorithms can be used to extract different classes of synapses (excitatory, inhibitory and their subclasses) at large numbers (>1 million) with low error rates (false positive 5%, false negative 12% \u2013 for more on antibody verification and error rates see 'Methods') (Wang et al., 2014; Allen et al., 2012; Hiu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations and references to methods.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "416be717-9456-4ea7-abf2-e84bb6ee7232",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C18",
+      "claim": "Proteins within presynaptic and post-synaptic compartments are spatially localized in relation to their function.",
+      "claim_type": "EXPLICIT",
+      "source": "This synaptic-vector is made possible because proteins within presynaptic and post-synaptic compartments are spatially localized in relation to their function (Heuser and Reese, 1977; Chen et al., 2008; Dani et al., 2010; De Camilli, 1983; Hunt et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "0a1bf020-0c73-4147-b414-04c0f639da00",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C19",
+      "claim": "Individual synapses vary greatly in their structure and molecular composition, but on average, the synapse remains an ordered structure with a specific distribution of protein populations.",
+      "claim_type": "EXPLICIT",
+      "source": "While individual synapses can vary greatly in their structure and molecular composition, on average, the synapse remains an ordered structure with a specific distribution of protein populations (Heuser and Reese, 1977; Chen et al., 2008; Dani et al., 2010; De Camilli, 1983; Hunt et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "068e210e-40d3-41fc-baca-d523eb40d941",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C20",
+      "claim": "Presynaptic proteins required for transmitter release, such as bassoon (BSN), are on average located closer to the active zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presynaptic proteins required for transmitter release, such as bassoon (BSN), are on average located closer to the active zone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of protein localization patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f93987e6-0df1-46c2-acdd-c2582caf6f63",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C21",
+      "claim": "Proteins that load transmitter into vesicles, such as vesicular glutamate transporter 1 (VGluT1), are distributed broadly within the presynaptic vesicle pool.",
+      "claim_type": "EXPLICIT",
+      "source": "andproteins that are required to load transmitter into vesicles, such as vesicular glutamate transporter 1 (VGluT1), are distributed broadly within the presynaptic vesicle pool (Dani et al., 2010; Micheva et al., 2010; El Mestikawy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "ebf001e6-b2e0-4d36-8413-edde9fdb4d3f",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C22",
+      "claim": "Transmitter receptors, such as ionotropic glutamate receptor 2 (GluR2), are localized to the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "In the post-synapse, transmitter receptors, such as ionotropic glutamate receptor 2 (GluR2), are localized to the synaptic cleft",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of post-synaptic protein localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f706e496-eca3-4734-b9b1-1c80ec19e81d",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C23",
+      "claim": "Post-synaptic regulatory molecules, such as fragile x mental retardation protein (FMRP), are situated further away from the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "and post-synaptic regulatory molecules, such as fragile x mental retardation protein (FMRP), are situated further away from the cleft (Chen et al., 2008; Dani et al., 2010; Dosemeci et al., 2007; Bear et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "d03fd2f0-f574-433a-9b2f-f178904b73c0",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C24",
+      "claim": "BSN and VGlut1 distributions pre-synaptically peaked 25 and 60 nm, respectively, from the cleft, in accordance with previous EM and STORM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in accordance to previous EM and STORM measurements (Dani et al., 2010; Mineur et al., 2002), BSN and VGlut1 distributions pre-synaptically peaked 25 and 60 nm, respectively, from the cleft",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding that corroborates previous measurements, with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "667fef02-28fe-48dc-9323-cd759a32a1a2",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C25",
+      "claim": "GluR2 peaked 20 nm post-synaptically from the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas GluR2 peaked 20 nm post-synaptically from the cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "52f80063-4eb5-498d-9b4f-65ff5c2d9136",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C26",
+      "claim": "FMRP is distributed both pre- and post-synaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that FMRP is distributed both pre- and post-synaptically",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "77897e45-d269-40c2-ac74-4f674a93c330",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C27",
+      "claim": "FXR1 and FXR2 are predominantly distributed post-synaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "while its autosomal homologs FXR1 and FXR2 are predominantly distributed post-synaptically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "ad515125-11b7-4f7e-874d-83319091481e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C28",
+      "claim": "In Fmr1 KO mice, synaptic FXR2 distribution is disrupted while FXR1 remains unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in fragile X mental retardation 1 knock out mice (Fmr1 KO), a well-accepted model of FXS (Bear et al., 2004; Bassell and Warren, 2008; Graziano et al., 2008) in whichFMRP is no longer expressed, we found that synaptic FXR2 distribution is disrupted while FXR1 remains unperturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with supporting citations for the model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "dee7de55-4cdc-4d62-a071-db74bdf9930a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C29",
+      "claim": "Proper synaptic FXR2 localization requires FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that proper synaptic FXR2 localization requires FMRP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the FXR2 disruption finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "02fcbcac-b712-41a0-b7d5-d3777edc92e4",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C30",
+      "claim": "FXR2 deficit could be part of the pathophysiology of FXS synapse dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "and a FXR2 deficit could be part of the pathophysiology of FXS synapse dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "82a5fa28-7f4c-444b-855b-f55583d082a0",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C31",
+      "claim": "Centers of mass are calculated from segmented puncta objects defined by a thresholded, three-dimensional (3D) connected component analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The centers of mass are calculated from segmented puncta objects as defined by a thresholded, three-dimensional (3D) connected component analysis (see 'Methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "e248e500-a809-479b-9715-fe84d3414bb2",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C32",
+      "claim": "Over 9 million protein puncta were collected across 13 synaptic proteins in the ATD volumes.",
+      "claim_type": "EXPLICIT",
+      "source": "Centers of mass are used in our calculations to facilitate computation of the over 9 million protein puncta collected across the 13 synaptic proteins in our ATD volumes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "6cec0ece-85ab-4974-a98e-2fb270fe8623",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C33",
+      "claim": "The VGluT1 empirical probability distribution in Layer 4 VGluT1 synapses is asymmetrical with respect to the synaptic axis, with a wider distribution along the axis and a narrower distribution perpendicular to it.",
+      "claim_type": "EXPLICIT",
+      "source": "The shape of the VGluT1 empirical probability distribution in Layer 4 VGluT1 synapses is asymmetrical in regards to the synaptic axis (PSD95 to SYN), with a wider distribution along the axis and a narrower distribution perpendicular to it (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "245ff14b-e238-4ef9-a40f-029c085e051e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C34",
+      "claim": "The asymmetrical VGluT1 distribution likely reflects a distribution of synaptic vesicles in which the major pool of vesicles resides axially behind the active zone in excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely to reflect a distribution of synaptic vesicles in which the major pool of vesicles, in excitatory synapses, resides axially behind the active zone (Heuser and Reese, 1977; Park et al., 2012; Mineur et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2114cb56-d4a7-4458-bd78-221dd1fa5cb2",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C35",
+      "claim": "The putative synaptic cleft is 50 nm from the origin (PSD95 centers), as estimated from previous EM and super-resolution measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The putative synaptic cleft (red dashed line, Figure 4)is 50 nm from the origin, as estimated from previous EM and super-resolution measurements (Dani et al., 2010; Mineur et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3d5caab8-7efe-416b-91a8-88889efe12f3",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C36",
+      "claim": "The VGluT1 distribution dips in the post-synaptic zone, demonstrating the expected anti-correlation of VGluT1 localization to the post-synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "Assessing the plot, the VGluT1 distribution dips in the post-synaptic zone, demonstrating the expected anti-correlation of VGluT1 localization to the post-synapse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "8426a218-89db-40bc-90e0-eb10a2f9f06e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C37",
+      "claim": "The VGluT1 distribution peaks at ~125\u2013200 nm from PSD95 or about 75\u2013150 nm from the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the distribution peaks at ~125\u2013200 nm from PSD95 or about 75\u2013150 nm from the cleft (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a measurement from Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "b5aa9ce4-c823-416f-a0a8-3f667a6ecdc9",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C38",
+      "claim": "The VGluT1 distribution measurements corroborate previous analysis of presynaptic vesicle pools using EM.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements corroborate previous analysis of presynaptic vesicle pools using EM (Mineur et al., 2002) or super-resolution microscopy, demonstrating that this method provides an accurate visualization of protein distribution in synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "04eaf7ed-c36d-4a31-b422-e919e94d0467",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C39",
+      "claim": "Glutamate receptors of both the AMPA and NMDA subtype (GluR2 and NR1) have a distribution that peaks near the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we demonstrate that glutamate receptors of both the AMPA and NMDA subtype (GluR2 and NR1), which reside in the post-synaptic active-zone membrane, have a distribution that peaks near the synaptic cleft, where they are expected to reside (Figure 4B,D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "6fd0243e-454b-4bc7-bc11-3bbd6f807cdd",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C40",
+      "claim": "The empirical glutamate receptor distributions are similar to each other but significantly different from the empirical presynaptic protein distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, while the empirical glutamate receptor distributions are similar to each other, they are significantly different from the empirical presynaptic protein distributions (Figure 4A\u2013F, Chi-square test p < 0.01, see 'Methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "8d7bb316-3e83-4790-9cfc-8f1c880beda9",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C41",
+      "claim": "The empirical distribution of presynaptic vesicular proteins VGluT1 and synaptophysin (SYNPH) are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while the empirical distribution of presynaptic vesicular proteins VGluT1 and synaptophysin (SYNPH) are similar (Figure 4A and C,p > 0.05)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "92fccf4f-4f44-4d4b-b091-cc3975fa3288",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C42",
+      "claim": "The empirical distributions of VGluT1 and SYNPH are significantly different from the empirical distribution of the presynaptic structural protein bassoon (BSN).",
+      "claim_type": "EXPLICIT",
+      "source": "they are significantly different from the empirical distribution of the presynaptic structural protein bassoon (BSN) (Figure 4A,C,E, p < 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4fb04d97-d93e-40a0-b6d4-734fd7fd10a9",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C43",
+      "claim": "BSN is an important cytoskeletal component of vesicle priming located near the active zone, as demonstrated by both EM and STORM.",
+      "claim_type": "EXPLICIT",
+      "source": "BSN is an important cytoskeletal component of vesicle priming, which was demonstrated by both EM and STORM to be located near the active zone (Dani et al., 2010; Mineur et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "89be34c2-6691-434e-ae39-b047f85fe568",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C44",
+      "claim": "The method can reveal with statistical significance the fine-scale distributional differences of synaptic proteins and correlate those variations with their function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our method can reveal with statistical significance the fine-scale distributional differences of synaptic proteins, and can correlate those variations with their function, in for example the vesicle pool or the active zone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion about the method's capabilities.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f4cae6e1-539d-4a18-a790-7c85d250ac2c",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C45",
+      "claim": "Astrocytic proteins typically form 'halos' around the pre- and post-synapse, exactly where peri-synaptic astrocytic processes reside.",
+      "claim_type": "EXPLICIT",
+      "source": "This technique is able to visualize astrocytic proteins, which typically form 'halos' around the pre- and post-synapse (Figure 4G\u2013J), exactly where peri-synaptic astrocytic processes reside (Amara and Fontana, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3a641a0a-aac4-43b6-8c7c-4785da3fa407",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C46",
+      "claim": "The astrocytic proteins glial glutamate transporter 1 (GLT1) and glutamine synthetase (GS) both show dips in the synaptic cleft region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the astrocytic proteins glial glutamate transporter 1 (GLT1) and glutamine synthetase (GS) both show dips in the synaptic cleft region (Figure 4G and I)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "7cd8cd7b-1f56-495a-9588-c812d06bdc8f",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C47",
+      "claim": "Glutamate aspartate transporter (GLAST) presents a peak at the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas glutamate aspartate transporter (GLAST) presents a peak at the cleft (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "dd9becb9-4b28-4997-9933-210612582442",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C48",
+      "claim": "GLAST, in comparison to GLT1, is more localized to the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that GLAST, in comparison to GLT1, is more localized to the cleft.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "949828f3-9829-460c-b4ce-08c2b038b6de",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C49",
+      "claim": "The differential localization of GLAST and GLT1 points to a currently unknown functional separation of the two major cortical, astrocytic-glutamate transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "This result points to a currently unknown functional separation of the two major cortical, astrocytic-glutamate transporters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "eed262ca-0c6e-406d-8c90-49b2e0d61a8e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C50",
+      "claim": "The distribution of L4 proteins in nearly 100,000 synapses were analyzed across two glutamatergic synapse classes (VGluT1 and VGluT2) and one inhibitory synapse class.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 5, the distribution of L4 proteins in nearly 100,000 synapses were analyzed across two glutamatergic synapse classes (VGluT1 and VGluT2) and one inhibitory synapse class.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a description of the analysis with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "66cd45ec-6e6f-4d80-900a-4365fbe715b4",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C51",
+      "claim": "VGluT1 represents the majority of cortical\u2013cortical synapses in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "VGluT1 represents the majority of cortical\u2013cortical synapses and VGluT2 defines the majority of thalamocortical synapses in the cortex (Fremeau et al., 2001; Kaneko and Fujiyama, 2002; Herzog et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "89d4edde-bd9e-410d-ab1d-62df1c7a3551",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C52",
+      "claim": "VGluT2 defines the majority of thalamocortical synapses in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "VGluT1 represents the majority of cortical\u2013cortical synapses and VGluT2 defines the majority of thalamocortical synapses in the cortex (Fremeau et al., 2001; Kaneko and Fujiyama, 2002; Herzog et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "c61d3abf-8186-468e-8bba-061b87c91e2d",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C53",
+      "claim": "In both Layers 4 and 5, VGluT1 synapses have little VGluT2 protein and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "It is satisfying to see in our datasets that in both Layers 4 and 5, VGluT1 synapses have little VGluT2 protein and vice versa (Figure 5A and B and Figure 5\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3020c519-b29d-48cd-bbf0-48483f28c36a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C54",
+      "claim": "VGluT1 and VGluT2 proteins have near-random distribution in inhibitory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "A point that is further validated by the near-random distribution of VGluT1 and VGluT2 proteins in inhibitory synapses (Figure 5C and Figure 5\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3a6b1dc8-80e9-402a-820d-61503b072fe6",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C55",
+      "claim": "There are no significant differences between Layers 4 and 5 when comparing the same protein within the same synapse class.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon quantifying the distributional differences of proteins across Layers 4 and 5 of these three synapse classes, there are no significant differences between the two layers when comparing the same protein within the same synapse class (Figure 5 and Figure 5\u2014figure supplement 1, p > 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "d4fc1e6d-74ff-408c-a219-2ca5dab60b34",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C56",
+      "claim": "There are no significant differences in the cross-class comparison between VGluT1 and VGluT2 synapses within the same cortical layer.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also true of the cross-class comparison between VGluT1 and VGluT2 synapses within the same cortical layer (Figure 5A and B and Figure 5\u2014figure supplement 1A B, p > 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "1def5af4-fe31-428a-9edc-2cf65be16d01",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C57",
+      "claim": "The overall synapse architecture of excitatory synapses remains stable between classes and layers.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the overall synapse architecture of excitatory synapses remains stable between classes and layers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the statistical findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3a1d2302-5442-43fd-b68e-b3e09e95e003",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C58",
+      "claim": "Inhibitory synapse architecture is stable between layers.",
+      "claim_type": "EXPLICIT",
+      "source": "and that inhibitory synapse architecture is stable between layers as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the statistical findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3a232fed-ff5d-4ee5-bc7e-7b7b2baa7d4f",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C59",
+      "claim": "BSN distribution is not different between inhibitory and excitatory synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "BSN distribution is not different between inhibitory and excitatory synapses (Figure 5, Figure 5\u2014figure supplement 1, p > 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5e9c5715-ea91-4de6-82ee-12ddbd925119",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C60",
+      "claim": "SYNPH distribution is significantly different depending upon whether it is within an inhibitory or an excitatory presynaptic terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that this is not true for all proteins shared by both synapse classes. For example, SYNPH distribution is significantly different depending upon whether it is within an inhibitory or an excitatory presynaptic terminal (Figure 5, Figure 5\u2014figure supplement 1, p < 0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "ec9feae3-112a-4a7e-a86a-8d7158de5d60",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C61",
+      "claim": "The structure of the presynaptic release architecture remains similar across inhibitory and excitatory synapse types, as demonstrated by BSN.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the structure of the presynaptic release architecture remains similar across the two synapse types (as demonstrated by BSN)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the BSN distribution data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "a976c416-63ed-4068-8bea-606d516a7f6a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C62",
+      "claim": "The structure of the synaptic vesicle pools differs between inhibitory and excitatory synapses, as demonstrated by SYNPH and consistent with previous findings in EM and electrophysiology.",
+      "claim_type": "EXPLICIT",
+      "source": "but the structure of the synaptic vesicle pools differs between inhibitory and excitatory synapses (as demonstrated by SYNPH and consistent with previous findings in both EM (Khanmohammadi et al., 2015) and electrophysiology [Moulder et al., 2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "1c068a0b-d987-45a7-96a5-8ff7ac875163",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C63",
+      "claim": "FXS is a leading cause of congenital mental retardation mediated by the loss of FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "FXS is a leading cause of congenital mental retardation that is mediated by the loss of FMRP, an RNA-binding protein that inhibits activity dependent translation in dendrites (Darnell et al., 2011; Huber et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4e2ef63d-fc28-4215-bb5b-bb68232cd882",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C64",
+      "claim": "FMRP is an RNA-binding protein that inhibits activity dependent translation in dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "FXS is a leading cause of congenital mental retardation that is mediated by the loss of FMRP, an RNA-binding protein that inhibits activity dependent translation in dendrites (Darnell et al., 2011; Huber et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3a62b7b9-a43d-4f30-9306-c5bb0b61c69d",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C65",
+      "claim": "FMRP is canonically considered to be a post-synaptic protein, but recent reports suggest it can be detected in presynaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonically, FMRP is considered to be a post-synaptic protein, but recent reports also suggest that it can be detected in presynaptic terminals (Christie et al., 2009; Akins et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "04e4cb15-eb3c-46a4-90ef-8ad7ff6f290e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C66",
+      "claim": "FMRP is localized post-synaptically in both VGluT1 and VGluT2 synapse classes across Layers 4 and 5.",
+      "claim_type": "EXPLICIT",
+      "source": "In our analysis, FMRP is indeed localized post-synaptically in both VGluT1 and VGluT2 synapse classes across Layers 4 and 5 (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "edc0bbb4-7978-40da-a756-83a7d509fbc1",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C67",
+      "claim": "The empirical distribution of post-synaptic FMRP peaks away from the synaptic cleft, which concurs with its role as a post-synaptic regulatory molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the empirical distribution of post-synaptic FMRP, unlike that of the post-synaptic glutamate receptors, peak away from the synaptic cleft (Figure 6A and B), which concurs with its role as a post-synaptic regulatory molecule (Darnell et al., 2011; Huber et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4d778270-da19-4c9c-8b32-011bed036eef",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C68",
+      "claim": "In Layer 4 synapses only, a second FMRP peak can be detected presynaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in Layer 4 synapses only, a second FMRP peak can be detected presynaptically (Figure 6A and B, black arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "ec813dd9-cb35-4d2b-b8ed-3ef2039c772d",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C69",
+      "claim": "The presynaptic FMRP peak is not pronounced in the empirical distribution of Layer 5 synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "This peak is not pronounced in the empirical distribution of Layer 5 synapses (Figure 6A and B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation from figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "bf6ddbaa-98bf-41f7-88a3-e2ae68860ceb",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C70",
+      "claim": "The bulk of presynaptic FMRP is directed to Layer 4 rather than to Layer 5.",
+      "claim_type": "EXPLICIT",
+      "source": "which suggests that although post-synaptic FMRP localization is a general feature, the bulk of presynaptic FMRP is directed to Layer 4 rather than to Layer 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the layer-specific distribution data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "173b7022-b0fd-4e98-888e-94f6ac724db7",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C71",
+      "claim": "Layer 4 has 230% more presynaptic FMRP than layer 5, as corroborated by EM data.",
+      "claim_type": "EXPLICIT",
+      "source": "In our EM data, Layer 4 clearly has more presynaptic FMRP (230% more) than layer 5, which corroborates our SubSynMAP analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from EM data that corroborates the SubSynMAP results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2c7c8810-97a9-4605-a5c2-c63725e0d676",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C72",
+      "claim": "Fragile X related proteins 1 and 2 (FXR1P and FXR2P) are nearly structurally identical autosomal homologs of FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Fragile X related proteins 1 and 2 (FXR1P and FXR2P) are nearly structurally identical autosomal homologs of FMRP (Tamanini, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "57bcc0c6-3ec5-480f-a389-d0bd252b5c7f",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C73",
+      "claim": "The involvement of FXR1P and FXR2P in FXS and their synaptic localization and function is mostly unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, their involvement in FXS and their synaptic localization and function is mostly unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "a377148f-1341-461e-917d-524d86844849",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C74",
+      "claim": "FXR1P and FXR2P, unlike FMRP, are preferentially localized to the post-synaptic region across synapse classes and cortical layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of our synapse analysis method demonstrates that, across synapse classes and cortical layers, FXR1P and FXR2P unlike FMRP are preferentially localized to the post-synaptic region (Figure 7A\u2013D, Figure 7\u2014figure supplement 1A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "66a6bb6d-9337-4b2d-8fa6-cde12502a34e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C75",
+      "claim": "Like FMRP, the distributions of FXR1P and FXR2P peak away from the synaptic cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "but like FMRP, the distributions of FXR1P and FXR2P peak away from the synaptic cleft (Figure 7A\u2013D and Figure 7\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "24e5fb29-65ae-420e-b823-d516a5b02954",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C76",
+      "claim": "The loss of FMRP does not affect the synaptic localization of FXR1P.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, by assessing the distributions of these proteins in Fmr1 KO animals, we reveal that the loss of FMRP does not affect the synaptic localization of FXR1P (Figure 7\u2014figure supplement 1, p > 0.01)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f856c0ff-8f15-44a8-8062-b6a925f68391",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C77",
+      "claim": "The loss of FMRP causes a significant depletion of post-synaptic FXR2P in both Layers 4 and 5, as measured both in SubSynMAP and EM.",
+      "claim_type": "EXPLICIT",
+      "source": "but causes a significant depletion of post-synaptic FXR2P in both Layers 4 and 5, as measured both in SubSynMAP (Figure 7A\u2013D, p < 0.01) and EM (Figure 7E and F, Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a statistical finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5217197b-37b5-4825-8cb0-0a124240ca0c",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C78",
+      "claim": "The synaptic localization of FXR2P depends on FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the synaptic localization of FXR2P depends on FMRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the FXR2P depletion finding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5bd9daa8-4910-4baf-9f49-3f49e886bfc5",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C79",
+      "claim": "It is unknown whether the coupling of FXR2P and FMRP expression proceeds through FXR2P\u2013FMRP heteromeric complexes or through FMRP regulation of FXR2P mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not know whether this coupling of expression proceeds through the FXR2P\u2013FMRP heteromeric complexes (Christie et al., 2009; Tamanini et al., 1999; Ceman et al., 1999) or through FMRP regulation of FXR2P mRNA (Ascano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an acknowledgment of uncertainty with supporting citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "3d9a7c2a-8421-4c66-ba37-da3faa187024",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C80",
+      "claim": "FXR2P localization could contribute to the synaptic pathology seen in FXS.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it suggests that FXR2P localization could contribute to the synaptic pathology seen in FXS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "eb4060c9-d1ac-4762-b409-12003ab7f9f7",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C81",
+      "claim": "SubSynMAP is dramatically faster and more cost effective than traditional sub-synaptic protein analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our method is dramatically faster and more cost effective than traditional sub-synaptic protein analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison of methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "0a15df78-8ee3-4843-886e-f92b3d84ff9a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C82",
+      "claim": "The optimization, imaging and analysis of 545 synapses for two proteins using EM took over a year and tens of thousands of dollars.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work using EM to optimize, image and analyze 545 synapses for two proteins (FMRP and FXR2P) took over a year and tens of thousands of dollars",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the EM work effort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "383042e8-b3f9-48ed-9c56-cf9ab83ede97",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C83",
+      "claim": "The optimization, imaging and analysis of over 500,000 synapses for 15 proteins using SubSynMAP took less than 1 month.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the optimization, imaging and analysis of over 500,000 synapses for 15 proteins, took less than 1 month using SubSynMAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the SubSynMAP work effort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "a8035558-84e1-4c8c-a10d-c426dade47bd",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C84",
+      "claim": "SubSynMAP's goal is to complement traditional super-resolution methods, not to replace them.",
+      "claim_type": "EXPLICIT",
+      "source": "SubSynMAP is easier and faster than traditional super-resolution methods, such as EM, but its goal is to complement those methods, not to replace them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a clarification of the method's purpose.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "421fa692-8ebe-4dc0-9877-d4dd4572a498",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C85",
+      "claim": "EM provides detailed visualization of sub-synaptic proteins with exceptional resolution (<5 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "Methods such as EM provide detailed visualization of sub-synaptic proteins with exceptional resolution (<5 nm), SubSynMAP cannot be measured along those traditional resolution metrics, nor can its data be interpreted along those lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison of methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "66b16ad6-3caf-4c66-99fa-a95c5bcf98aa",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C86",
+      "claim": "In SubSynMAP, the resolution comes from the combined distribution of tens of thousands of observations at lower resolution (100 nm3).",
+      "claim_type": "EXPLICIT",
+      "source": "In SubSynMAP, the resolution does not come from a single high-resolution snap shot, but rather from the combined distribution of tens of thousands of observations at lower resolution (100 nm3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation of how SubSynMAP achieves resolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "19ccb74e-a2fa-4294-91d2-9281619d78bc",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C87",
+      "claim": "The distributions in SubSynMAP represent the likelihood of finding a protein in a location of the prototypical synapse of a specific class if many observations are made.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions in SubSynMAP are not meant to represent the location of any one protein at any one time, which is information that EM can provide. Instead, it represents the likelihood of finding that protein in that location of the prototypical synapse of a specific class if you make many observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation of what SubSynMAP distributions represent.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "9bfc65d2-f7f5-48b8-b08f-383809f3114e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C88",
+      "claim": "SubSynMAP can tell whether a protein is likely to be a vesicle protein by comparing its distribution with that of known vesicle proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "SubSynMAP can, however, tell you, by comparing the distribution of a particular protein with that of known vesicle proteins, whether a protein is likely to be a vesicle protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of SubSynMAP's capability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5eb8f6e4-ab8a-453b-99cf-ffbc2cae75ab",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C89",
+      "claim": "All excitatory synapses use an axis described by a line drawn from the center of a PSD95 puncta to a synapsin puncta.",
+      "claim_type": "EXPLICIT",
+      "source": "In this paper, all excitatory synapses use an axis described by a line drawn from the center of a PSD95 puncta to a synapsin puncta",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4e51604d-5daf-4bb7-b7d7-506e3a9cfe82",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C90",
+      "claim": "Inhibitory synapses use a line from gephyrin to VGAT as the synaptic axis.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas inhibitory synapses use a line from gephyrin to VGAT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "725db414-a7db-49c0-876d-b0bf3cf91964",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C91",
+      "claim": "No difference was found in resultant SubSynMAP histograms from axes generated from PSD95 to vesicle proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, we found no difference in resultant SubSynMAP histograms from axes generated from PSD95 to vesicle proteins; for example, there are no differences in the histogram for synaptic vesicle protein 2 (SV2) and that for vesicle pool related structural proteins such as synapsin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an empirical observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "d97e82a7-d7f6-4ec8-ad1a-4cb5766e964e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C92",
+      "claim": "Traditional super-resolution or ultra-structural analysis routinely involves small sample sizes in terms of animals, synapse number and imaged volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional super-resolution or ultra-structural analysis routinely involves small sample sizes in terms of animals, synapse number and imaged volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of traditional methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "bc8aa1ba-b48b-46e8-8cc6-f026a50a0b7e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C93",
+      "claim": "Over a half million synapses from 20 animals across two cortical layers were analyzed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, over a half million synapses from 20 animals across two cortical layers were analyzed, creating an overall image that is more likely to reflect the reality of the synapses studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the study's scope.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "ccdb7378-7775-487f-b9cc-30602ff070f3",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C94",
+      "claim": "Layer 5 VGluT2 synapses only represent about eight percent of the total synapse population.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Layer 5 VGluT2 synapses only represent about eight percent of the total synapse population",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of a rare synapse class.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "47ba6caf-8115-4963-9981-7a28c49500bf",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C95",
+      "claim": "Of Layer 5 VGluT2 synapses, only about a quarter have FMRP in them.",
+      "claim_type": "EXPLICIT",
+      "source": "and of that eight percent, only about a quarter have FMRP in them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as further specification of a rare synapse subclass.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "fdcdd7bb-8236-40e0-a1d9-03f12ca681dc",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C96",
+      "claim": "A direct sample of 100 synapses in Layer 5 using traditional methods will yield, at most, two VGluT2 synapses with FMRP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a direct sample of 100 synapses in Layer 5 using traditional methods will yield, at most, two VGluT2 synapses with FMRP, a quantity that is mostly anecdotal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a calculation demonstrating the limitation of traditional methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "10f01351-ce8e-43d7-ac0e-25dd862a8440",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C97",
+      "claim": "487 Layer 5 VGluT2 FMRP synapses were analyzed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, we are able to analyze a total of 487 Layer 5 VGluT2 FMRP synapses, which provides a more robust measure of their structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of the study's capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "6790f036-43c9-4965-ba5a-95832edd78ea",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C98",
+      "claim": "Structural modification of synaptic proteins is hypothesized to be an integral part of most neurological diseases, yet there is little actual structural data supporting this.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural modification of synaptic proteins is hypothesized to be an integral part of most neurological diseases, yet there is little actual structural data supporting this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2883d45b-8273-4267-841f-6b02198da84a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C99",
+      "claim": "The data gap regarding structural modifications in neurological diseases is caused by the potential diversity of synapse modifications, which requires large sample sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "This data gap is caused by the potential diversity of synapse modifications in neurological diseases, which requires large sample sizes to obtain significant numbers of similarly perturbed synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an explanation for the data gap.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "8b2f303b-6aad-44ec-b057-00b244de9255",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C100",
+      "claim": "SubSynMAP can fill the data gap regarding structural modifications in neurological diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our method can fill this data gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a capability of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "77aeed8d-2997-466b-b57f-3e200afa569b",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C101",
+      "claim": "Specific changes in protein locations mediated by FMRP loss within defined synapse classes were revealed in Fmr1 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrated in Fmr1 KO mice that we are able to reveal specific changes in protein locations mediated by FMRP loss within defined synapse classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstration of the method's capability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "4847ad48-0d06-4183-898b-d21cfe5a1d44",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C102",
+      "claim": "FXR1P and FXR2P were localized within normal and diseased contexts, and their synapse localization was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "We localized proteins (FXR1P and FXR2P), within normal and diseased contexts, whose synapse localization was previously unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "01457746-5e96-4a1d-bb01-0d0d01a54c12",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C103",
+      "claim": "SubSynMAP can be generalized to a much wider array of cellular structures beyond synapse analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the large-scale quantification of small, complex, stereotypically structured protein complexes is not just a problem in neuroscience, but in biology in general. SubSynMAP, while designed for synapse analysis, can be generalized to a much wider array of cellular structures and should provide a new level of analytical power for other disciplines such as immunology and cancer studies that require subcellular resolution investigations of large tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "898639a9-ea2d-45aa-af96-d26906e13f46",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C104",
+      "claim": "For Layer 4 cortical synapse axes, the mean is 677.04 nm, median is 704.50 nm, and standard deviation is 214.09.",
+      "claim_type": "EXPLICIT",
+      "source": "For 102886 Layer 4 cortical synapse axes: mean = 677.04, median = 704.50, standard deviation = 214.09.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measurement from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "60aa263b-82ce-42fd-829c-4cb65e851c7e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C105",
+      "claim": "For Layer 5 cortical synapse axes, the mean is 675.32 nm, median is 706.00 nm, and standard deviation is 216.18.",
+      "claim_type": "EXPLICIT",
+      "source": "For 116592 Layer 5 cortical synapse axes: mean = 675.32 nm, median = 706.00 nm and standard deviation = 216.18.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a measurement from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "cba9439a-e122-4b0c-82ab-8fb2fbb97e2f",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C106",
+      "claim": "The synapse axis measurements are in line with published literature regarding the average size of a mouse cortical synapse.",
+      "claim_type": "EXPLICIT",
+      "source": "All these numbers are in line with published literature regarding the average size of a mouse cortical synapse (Chen et al., 2008; Dani et al., 2010; Mineur et al., 2002; Chen et al., 2005; Tao-Cheng et al., 2014; Coleman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "07e906ce-d8e8-4b21-9364-268f1f47f481",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C107",
+      "claim": "The greater localization to the synaptic cleft region of GLAST as compared to GLT1 suggests that GLAST plays a more important role in the direct clearing of glutamate in the cleft.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the greater localization to the synaptic cleft region of GLAST as compared to GLT1 suggests that GLAST plays a more important role in the direct clearing of glutamate in the cleft",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the distribution data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "6d86675e-13ec-483a-9a9a-7114f6e3335c",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "claim_id": "C108",
+      "claim": "GLT1 localization reflects its known function as a peri-synaptic regulator of metabotropic glutamate receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas GLT1 localization reflects its known function as a peri-synaptic regulator of metabotropic glutamate receptor signaling (Bar-Peled et al., 1997; Tzingounis and Wadiche, 2007; Reichelt and Kn\u00f6pfel, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SubSynMAP is a novel computational method that combines deconvolution array tomography (ATD), EM-verified synapse classification, and synapse alignment to generate probability distributions of protein localization within averaged synapses of specific classes. The method achieves nanometer-scale resolution through statistical aggregation of tens of thousands of observations at 100 nm\u00b3 voxel resolution, enabling differentiation of closely juxtaposed proteins and functional classification of novel proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C14, C15 describe the method's capabilities and are supported by the technical implementation detailed in C16, C31, C32, C86, C87, C88. The method is well-documented with clear descriptions of how resolution is achieved through statistical aggregation rather than single high-resolution snapshots. The validation against EM and prior literature (C24, C38) supports the accuracy of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SubSynMAP measurements of presynaptic proteins BSN and VGluT1 show peaks at 25 nm and 75-150 nm from the synaptic cleft respectively, while post-synaptic GluR2 peaks at 20 nm from the cleft. These measurements corroborate previous EM and STORM studies and reveal the asymmetrical distribution of VGluT1 reflecting vesicle pool organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C37 provide specific quantitative measurements that are explicitly stated to corroborate previous EM and STORM measurements (C38). The asymmetrical distribution of VGluT1 (C33) and its interpretation (C34) are supported by citations to prior work. The putative cleft location (C35) is based on established measurements. These converging lines of evidence validate the method's accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SubSynMAP reveals statistically significant fine-scale distributional differences between synaptic proteins. Glutamate receptors (GluR2, NR1) peak near the synaptic cleft and differ significantly from presynaptic proteins (p<0.01). Presynaptic vesicular proteins (VGluT1, SYNPH) are similar to each other but differ significantly from the active zone protein BSN (p<0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42 present statistical findings with explicit p-values and references to figures. The chi-square two-sample test is described in methods. Claim C43 provides literature support for BSN localization. Claim C44 appropriately concludes that the method can reveal fine-scale differences and correlate them with function, which is supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "07684043-07b4-402b-93f7-17df40072ab3",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Astrocytic proteins form halos around synapses, with differential localization patterns: GLAST peaks at the synaptic cleft while GLT1 and GS show dips in the cleft region. This suggests GLAST plays a greater role in direct glutamate clearance at the cleft, while GLT1 functions as a peri-synaptic regulator of metabotropic glutamate receptor signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 describe observed distribution patterns with figure references. The inference about GLAST vs GLT1 function (C48, C107) is reasonable given the distribution data. Claim C108 is supported by citations. However, C49 acknowledges this functional separation is \"currently unknown,\" appropriately framing this as a hypothesis rather than established fact. The data support the distributions but the functional interpretation requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "19fa3a74-9027-4589-873f-d4f5705f80b9",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of nearly 100,000 synapses across VGluT1, VGluT2, and inhibitory synapse classes in Layers 4 and 5 reveals that overall synapse architecture remains stable between classes and cortical layers. VGluT1 and VGluT2 show mutual exclusivity in their respective synapse classes, and no significant distributional differences exist for the same protein within the same synapse class across layers (p>0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 describe the dataset and observations with figure references. Claims C55-C56 present statistical findings with explicit p-values. The conclusions about architectural stability (C57-C58) are appropriately drawn from the statistical comparisons. The mutual exclusivity of VGluT1 and VGluT2 (C53) validates the classification method's fidelity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "c435f998-3248-4a00-8a5c-8eac698c4f16",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "BSN distribution does not differ between inhibitory and excitatory synapses (p>0.01), suggesting similar presynaptic release architecture. However, SYNPH distribution differs significantly between synapse types (p<0.01), indicating that synaptic vesicle pool structure differs between inhibitory and excitatory synapses, consistent with prior EM and electrophysiology findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 present statistical findings with explicit p-values and figure references. The inferences about release architecture (C61) and vesicle pool structure (C62) are appropriately drawn from the data and supported by citations to prior EM and electrophysiology studies. The distinction between shared structural elements (BSN) and divergent elements (SYNPH) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "6859c129-05ef-4dd3-93be-1375c627ca90",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FMRP is distributed both pre- and post-synaptically, with post-synaptic FMRP peaking away from the cleft consistent with its regulatory role. Layer 4 synapses show a distinct presynaptic FMRP peak not pronounced in Layer 5, suggesting layer-specific presynaptic FMRP targeting. EM data corroborates this, showing Layer 4 has 230% more presynaptic FMRP than Layer 5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27, C66-C70 describe distribution patterns with figure references and appropriate citations. The layer-specific difference is supported by both SubSynMAP and independent EM validation (C71). The interpretation that presynaptic FMRP is preferentially directed to Layer 4 is appropriately drawn from the data. The EM corroboration strengthens confidence in the SubSynMAP findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FXR1P and FXR2P are preferentially localized post-synaptically and peak away from the cleft like FMRP. Loss of FMRP in Fmr1 KO mice does not affect FXR1P localization (p>0.01) but causes significant depletion of post-synaptic FXR2P in both Layers 4 and 5 (p<0.01), as measured by both SubSynMAP and EM, suggesting FXR2P synaptic localization depends on FMRP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 present findings with explicit statistical tests, p-values, and figure references. The conclusion that FXR2P localization depends on FMRP (C78) is appropriately drawn from the selective depletion of FXR2P but not FXR1P in KO animals. The convergence of SubSynMAP and EM measurements strengthens the finding. The differential effect on FXR2P vs FXR1P is a key control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "d564b1f7-4ecb-410f-a103-748d3fe54344",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Fmr1 KO mice, synaptic FXR2 distribution is disrupted while FXR1 remains unperturbed, suggesting proper synaptic FXR2 localization requires FMRP. The mechanism (heteromeric complexes vs mRNA regulation) is unknown, but FXR2 deficit could contribute to FXS synaptic pathology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C29 are supported by data (overlapping with C76-C78). However, C30 and C80 are explicitly speculative about FXR2's role in FXS pathology. Claim C79 acknowledges uncertainty about the mechanism. While the localization data are solid, the pathophysiological significance requires functional validation. The speculation is reasonable but not yet demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "63f31b39-f003-4149-af4b-1f59cafa5cea",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SubSynMAP is dramatically faster and more cost-effective than traditional EM analysis. EM analysis of 545 synapses for two proteins took over a year and tens of thousands of dollars, while SubSynMAP analysis of over 500,000 synapses for 15 proteins took less than 1 month.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 provide specific quantitative comparisons of time and scale between methods. The comparison is fair as both represent work from the same laboratory. The dramatic difference in throughput (nearly 1000-fold more synapses, 7.5-fold more proteins, in <1/12 the time) clearly supports the efficiency claim in C81.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f83dfc86-a4a8-4be7-811a-3211280e736a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Over 500,000 synapses from 20 animals across two cortical layers were analyzed. This large sample size enables analysis of rare synapse populations: Layer 5 VGluT2 synapses represent ~8% of total synapses, and only ~25% contain FMRP. Traditional sampling of 100 synapses would yield at most 2 VGluT2+FMRP synapses, while this study analyzed 487.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 states the dataset scope. Claims C94-C95 provide specific percentages for rare populations. Claim C96 correctly calculates the expected yield from traditional methods (0.08 \u00d7 0.25 \u00d7 100 = 2). Claim C97 demonstrates the actual number analyzed. This clearly illustrates the statistical power advantage of the method for rare populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SubSynMAP complements rather than replaces traditional super-resolution methods like EM. While EM provides single-molecule localization at <5 nm resolution, SubSynMAP generates probability distributions from tens of thousands of observations at 100 nm\u00b3 resolution, representing the likelihood of finding a protein at a location in the prototypical synapse rather than single-molecule positions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 clearly articulate the conceptual difference between SubSynMAP and traditional methods. The distinction between single high-resolution snapshots (EM) and statistical distributions from many lower-resolution observations (SubSynMAP) is well-explained. Claim C88 provides an appropriate example of the method's capability. This appropriately frames the method's niche and limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "51cca7c9-d730-4e51-b604-6d53fdd4d13a",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Excitatory synapses use a synaptic axis from PSD95 to synapsin, while inhibitory synapses use gephyrin to VGAT. No differences were found in SubSynMAP histograms when using different vesicle proteins (SV2 vs synapsin) to define the presynaptic terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 describe methodological choices that are standard and appropriate. Claim C91 provides empirical validation that the choice of presynaptic marker doesn't affect results, which is important for method robustness. This is a minor but important methodological validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "42884a97-54f4-41dd-98b7-a65dd53b9c30",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Synapse axis measurements show Layer 4 synapses have mean=677.04 nm, median=704.50 nm, SD=214.09, while Layer 5 synapses have mean=675.32 nm, median=706.00 nm, SD=216.18. These measurements are consistent with published literature on mouse cortical synapse size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C105 provide specific measurements with large sample sizes (>100,000 synapses each). Claim C106 validates these against multiple literature sources. The consistency with prior measurements supports the method's accuracy. This is a validation metric rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Structural modifications of synaptic proteins are hypothesized to be integral to neurological diseases, but data are lacking due to the need for large sample sizes to capture diverse modifications. SubSynMAP can fill this gap, as demonstrated by revealing FMRP loss-mediated changes in Fmr1 KO mice and localizing FXR1P and FXR2P whose synaptic localization was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C99 identify a gap in the field. Claim C100 asserts the method can address this gap. Claims C101-C102 provide concrete examples demonstrating this capability. The FXR2P findings in particular represent novel localization data in both normal and disease contexts, supporting the claim that the method can address the identified gap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "b29debda-df91-4090-99da-104061adea75",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Current super-resolution methods (SIM ~100 nm, PALM/STORM 10-50 nm, STED 10-50 nm, EM 1-5 nm) can provide precise protein localization but are time-consuming and struggle with spatial coverage and molecular depth. Traditional methods routinely involve small sample sizes in terms of animals, synapse number, and imaged volume.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C13 describe established capabilities and limitations of existing methods with appropriate citations. Claim C92 characterizes typical sample sizes in traditional approaches. These are accurate characterizations of the field that establish the context and motivation for the new method. This is background rather than a novel finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Synapses are central to neural circuit function but their compositional diversity (hundreds of protein species) and structural compactness (~1 \u03bcm) have prevented complete molecular analysis. Proteins within synaptic compartments are spatially localized according to function, and while individual synapses vary, the average synapse maintains ordered protein distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 establish basic facts about synapses with citations. Claims C18-C23 describe the principle of functional protein localization with examples and citations. These are well-established principles from prior literature that provide the biological foundation for the method. This is background knowledge rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "26537247-7fbd-415b-868e-b7eff1379c98",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "FXS is a leading cause of congenital mental retardation mediated by loss of FMRP, an RNA-binding protein that inhibits activity-dependent translation in dendrites. FMRP is canonically post-synaptic but can be detected presynaptically. FXR1P and FXR2P are structurally similar autosomal homologs of FMRP, but their involvement in FXS and synaptic localization is mostly unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65, C72-C73 provide background on FXS, FMRP, and related proteins with appropriate citations. These establish the biological context for the disease model studies. This is background information from prior literature rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    },
+    {
+      "id": "b72f76b9-1e70-462e-9bb9-e6efa3fce115",
+      "content_id": "7e88c2e8-6e27-4758-95f4-fc6ef895d104",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "SubSynMAP can potentially be generalized beyond synapse analysis to other cellular structures requiring subcellular resolution investigations of large tissues, such as in immunology and cancer studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C103 is explicitly speculative about future applications. While the underlying principle of aligning and averaging stereotypically structured protein complexes could apply to other systems, no data are presented to demonstrate this generalizability. This is a reasonable speculation but remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:18.042276Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5ecfd5a9-123c-4678-b45b-d9099b1f67f4",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "bb174e5f-60be-4fba-a651-8f9c4b740f70",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "052bda87-6975-45a6-aa54-9f8c2e7b2518",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "98e68f3b-042d-4f90-ac9b-9b58c08c0aaf",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "a25db2e9-28d5-4a81-9c7e-8ccb488703d4",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "82a5fa28-7f4c-444b-855b-f55583d082a0",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "e248e500-a809-479b-9715-fe84d3414bb2",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "66b16ad6-3caf-4c66-99fa-a95c5bcf98aa",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "19ccb74e-a2fa-4294-91d2-9281619d78bc",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "9bfc65d2-f7f5-48b8-b08f-383809f3114e",
+      "result_id": "456c9cfa-2fe3-4fe5-be2c-94b55445c550"
+    },
+    {
+      "claim_id": "d03fd2f0-f574-433a-9b2f-f178904b73c0",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "667fef02-28fe-48dc-9323-cd759a32a1a2",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "6cec0ece-85ab-4974-a98e-2fb270fe8623",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "245ff14b-e238-4ef9-a40f-029c085e051e",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "2114cb56-d4a7-4458-bd78-221dd1fa5cb2",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "3d5caab8-7efe-416b-91a8-88889efe12f3",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "8426a218-89db-40bc-90e0-eb10a2f9f06e",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "b5aa9ce4-c823-416f-a0a8-3f667a6ecdc9",
+      "result_id": "79b17c1f-0ab8-4412-a4f1-d42b5a760464"
+    },
+    {
+      "claim_id": "04eaf7ed-c36d-4a31-b422-e919e94d0467",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "6fd0243e-454b-4bc7-bc11-3bbd6f807cdd",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "8d7bb316-3e83-4790-9cfc-8f1c880beda9",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "92fccf4f-4f44-4d4b-b091-cc3975fa3288",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "4fb04d97-d93e-40a0-b6d4-734fd7fd10a9",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "89be34c2-6691-434e-ae39-b047f85fe568",
+      "result_id": "fd2ce569-e860-42f3-b715-b2d4c7f2c5a2"
+    },
+    {
+      "claim_id": "f4cae6e1-539d-4a18-a790-7c85d250ac2c",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "3a641a0a-aac4-43b6-8c7c-4785da3fa407",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "7cd8cd7b-1f56-495a-9588-c812d06bdc8f",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "dd9becb9-4b28-4997-9933-210612582442",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "949828f3-9829-460c-b4ce-08c2b038b6de",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "07e906ce-d8e8-4b21-9364-268f1f47f481",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "6d86675e-13ec-483a-9a9a-7114f6e3335c",
+      "result_id": "07684043-07b4-402b-93f7-17df40072ab3"
+    },
+    {
+      "claim_id": "eed262ca-0c6e-406d-8c90-49b2e0d61a8e",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "66cd45ec-6e6f-4d80-900a-4365fbe715b4",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "89d4edde-bd9e-410d-ab1d-62df1c7a3551",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "c61d3abf-8186-468e-8bba-061b87c91e2d",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "3020c519-b29d-48cd-bbf0-48483f28c36a",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "3a6b1dc8-80e9-402a-820d-61503b072fe6",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "d4fc1e6d-74ff-408c-a219-2ca5dab60b34",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "1def5af4-fe31-428a-9edc-2cf65be16d01",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "3a1d2302-5442-43fd-b68e-b3e09e95e003",
+      "result_id": "19fa3a74-9027-4589-873f-d4f5705f80b9"
+    },
+    {
+      "claim_id": "3a232fed-ff5d-4ee5-bc7e-7b7b2baa7d4f",
+      "result_id": "c435f998-3248-4a00-8a5c-8eac698c4f16"
+    },
+    {
+      "claim_id": "5e9c5715-ea91-4de6-82ee-12ddbd925119",
+      "result_id": "c435f998-3248-4a00-8a5c-8eac698c4f16"
+    },
+    {
+      "claim_id": "ec9feae3-112a-4a7e-a86a-8d7158de5d60",
+      "result_id": "c435f998-3248-4a00-8a5c-8eac698c4f16"
+    },
+    {
+      "claim_id": "a976c416-63ed-4068-8bea-606d516a7f6a",
+      "result_id": "c435f998-3248-4a00-8a5c-8eac698c4f16"
+    },
+    {
+      "claim_id": "52f80063-4eb5-498d-9b4f-65ff5c2d9136",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "77897e45-d269-40c2-ac74-4f674a93c330",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "04e4cb15-eb3c-46a4-90ef-8ad7ff6f290e",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "edc0bbb4-7978-40da-a756-83a7d509fbc1",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "4d778270-da19-4c9c-8b32-011bed036eef",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "ec813dd9-cb35-4d2b-b8ed-3ef2039c772d",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "bf6ddbaa-98bf-41f7-88a3-e2ae68860ceb",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "173b7022-b0fd-4e98-888e-94f6ac724db7",
+      "result_id": "6859c129-05ef-4dd3-93be-1375c627ca90"
+    },
+    {
+      "claim_id": "a377148f-1341-461e-917d-524d86844849",
+      "result_id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688"
+    },
+    {
+      "claim_id": "66a6bb6d-9337-4b2d-8fa6-cde12502a34e",
+      "result_id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688"
+    },
+    {
+      "claim_id": "24e5fb29-65ae-420e-b823-d516a5b02954",
+      "result_id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688"
+    },
+    {
+      "claim_id": "f856c0ff-8f15-44a8-8062-b6a925f68391",
+      "result_id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688"
+    },
+    {
+      "claim_id": "5217197b-37b5-4825-8cb0-0a124240ca0c",
+      "result_id": "5ff0c4eb-e591-4e04-be9c-db14b0d03688"
+    },
+    {
+      "claim_id": "ad515125-11b7-4f7e-874d-83319091481e",
+      "result_id": "d564b1f7-4ecb-410f-a103-748d3fe54344"
+    },
+    {
+      "claim_id": "dee7de55-4cdc-4d62-a071-db74bdf9930a",
+      "result_id": "d564b1f7-4ecb-410f-a103-748d3fe54344"
+    },
+    {
+      "claim_id": "02fcbcac-b712-41a0-b7d5-d3777edc92e4",
+      "result_id": "d564b1f7-4ecb-410f-a103-748d3fe54344"
+    },
+    {
+      "claim_id": "5bd9daa8-4910-4baf-9f49-3f49e886bfc5",
+      "result_id": "d564b1f7-4ecb-410f-a103-748d3fe54344"
+    },
+    {
+      "claim_id": "3d9a7c2a-8421-4c66-ba37-da3faa187024",
+      "result_id": "d564b1f7-4ecb-410f-a103-748d3fe54344"
+    },
+    {
+      "claim_id": "eb4060c9-d1ac-4762-b409-12003ab7f9f7",
+      "result_id": "63f31b39-f003-4149-af4b-1f59cafa5cea"
+    },
+    {
+      "claim_id": "0a15df78-8ee3-4843-886e-f92b3d84ff9a",
+      "result_id": "63f31b39-f003-4149-af4b-1f59cafa5cea"
+    },
+    {
+      "claim_id": "383042e8-b3f9-48ed-9c56-cf9ab83ede97",
+      "result_id": "63f31b39-f003-4149-af4b-1f59cafa5cea"
+    },
+    {
+      "claim_id": "bc8aa1ba-b48b-46e8-8cc6-f026a50a0b7e",
+      "result_id": "f83dfc86-a4a8-4be7-811a-3211280e736a"
+    },
+    {
+      "claim_id": "ccdb7378-7775-487f-b9cc-30602ff070f3",
+      "result_id": "f83dfc86-a4a8-4be7-811a-3211280e736a"
+    },
+    {
+      "claim_id": "47ba6caf-8115-4963-9981-7a28c49500bf",
+      "result_id": "f83dfc86-a4a8-4be7-811a-3211280e736a"
+    },
+    {
+      "claim_id": "fdcdd7bb-8236-40e0-a1d9-03f12ca681dc",
+      "result_id": "f83dfc86-a4a8-4be7-811a-3211280e736a"
+    },
+    {
+      "claim_id": "10f01351-ce8e-43d7-ac0e-25dd862a8440",
+      "result_id": "f83dfc86-a4a8-4be7-811a-3211280e736a"
+    },
+    {
+      "claim_id": "a8035558-84e1-4c8c-a10d-c426dade47bd",
+      "result_id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9"
+    },
+    {
+      "claim_id": "421fa692-8ebe-4dc0-9877-d4dd4572a498",
+      "result_id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9"
+    },
+    {
+      "claim_id": "66b16ad6-3caf-4c66-99fa-a95c5bcf98aa",
+      "result_id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9"
+    },
+    {
+      "claim_id": "19ccb74e-a2fa-4294-91d2-9281619d78bc",
+      "result_id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9"
+    },
+    {
+      "claim_id": "9bfc65d2-f7f5-48b8-b08f-383809f3114e",
+      "result_id": "f64a37b6-2379-42a6-939d-9d97d8bc98c9"
+    },
+    {
+      "claim_id": "5eb8f6e4-ab8a-453b-99cf-ffbc2cae75ab",
+      "result_id": "51cca7c9-d730-4e51-b604-6d53fdd4d13a"
+    },
+    {
+      "claim_id": "4e51604d-5daf-4bb7-b7d7-506e3a9cfe82",
+      "result_id": "51cca7c9-d730-4e51-b604-6d53fdd4d13a"
+    },
+    {
+      "claim_id": "725db414-a7db-49c0-876d-b0bf3cf91964",
+      "result_id": "51cca7c9-d730-4e51-b604-6d53fdd4d13a"
+    },
+    {
+      "claim_id": "898639a9-ea2d-45aa-af96-d26906e13f46",
+      "result_id": "42884a97-54f4-41dd-98b7-a65dd53b9c30"
+    },
+    {
+      "claim_id": "60aa263b-82ce-42fd-829c-4cb65e851c7e",
+      "result_id": "42884a97-54f4-41dd-98b7-a65dd53b9c30"
+    },
+    {
+      "claim_id": "cba9439a-e122-4b0c-82ab-8fb2fbb97e2f",
+      "result_id": "42884a97-54f4-41dd-98b7-a65dd53b9c30"
+    },
+    {
+      "claim_id": "6790f036-43c9-4965-ba5a-95832edd78ea",
+      "result_id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e"
+    },
+    {
+      "claim_id": "2883d45b-8273-4267-841f-6b02198da84a",
+      "result_id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e"
+    },
+    {
+      "claim_id": "8b2f303b-6aad-44ec-b057-00b244de9255",
+      "result_id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e"
+    },
+    {
+      "claim_id": "77aeed8d-2997-466b-b57f-3e200afa569b",
+      "result_id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e"
+    },
+    {
+      "claim_id": "4847ad48-0d06-4183-898b-d21cfe5a1d44",
+      "result_id": "2a7e45ce-3e75-4fa0-b59d-650b4583709e"
+    },
+    {
+      "claim_id": "d43d65f6-8d30-45ee-9635-5582339ebb35",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "d5f94681-c029-476d-b396-adea8f9fe450",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "2437d979-1436-440c-806a-5279550a4488",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "752722b8-2af9-4bc1-a7c0-58b63fc1e4cd",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "4678006a-2ed8-424d-9ebc-959723318b79",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "711e6d1e-5ddc-4d2d-a3e6-26a754b4bb50",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "d97e82a7-d7f6-4ec8-ad1a-4cb5766e964e",
+      "result_id": "b29debda-df91-4090-99da-104061adea75"
+    },
+    {
+      "claim_id": "946ccecd-a7d6-42ff-87e6-f1cf847366ea",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "9a852666-2165-4d5f-995b-8d272abc80b5",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "73dd264c-46b1-4ca8-8e20-83ca532973cc",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "416be717-9456-4ea7-abf2-e84bb6ee7232",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "0a1bf020-0c73-4147-b414-04c0f639da00",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "068e210e-40d3-41fc-baca-d523eb40d941",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "f93987e6-0df1-46c2-acdd-c2582caf6f63",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "ebf001e6-b2e0-4d36-8413-edde9fdb4d3f",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "f706e496-eca3-4734-b9b1-1c80ec19e81d",
+      "result_id": "15fc3aa7-6ca1-4153-861f-ed76fcb55da3"
+    },
+    {
+      "claim_id": "1c068a0b-d987-45a7-96a5-8ff7ac875163",
+      "result_id": "26537247-7fbd-415b-868e-b7eff1379c98"
+    },
+    {
+      "claim_id": "4e2ef63d-fc28-4215-bb5b-bb68232cd882",
+      "result_id": "26537247-7fbd-415b-868e-b7eff1379c98"
+    },
+    {
+      "claim_id": "3a62b7b9-a43d-4f30-9306-c5bb0b61c69d",
+      "result_id": "26537247-7fbd-415b-868e-b7eff1379c98"
+    },
+    {
+      "claim_id": "2c7c8810-97a9-4605-a5c2-c63725e0d676",
+      "result_id": "26537247-7fbd-415b-868e-b7eff1379c98"
+    },
+    {
+      "claim_id": "57bcc0c6-3ec5-480f-a389-d0bd252b5c7f",
+      "result_id": "26537247-7fbd-415b-868e-b7eff1379c98"
+    },
+    {
+      "claim_id": "01457746-5e96-4a1d-bb01-0d0d01a54c12",
+      "result_id": "b72f76b9-1e70-462e-9bb9-e6efa3fce115"
+    }
+  ],
+  "comparisons": []
+}

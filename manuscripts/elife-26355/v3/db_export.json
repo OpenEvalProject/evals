@@ -1,0 +1,1962 @@
+{
+  "submission": {
+    "id": "1c3100d7-4189-467b-9c06-789a534a9f05",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:58:12.532863Z",
+    "updated_at": "2025-11-30T23:58:12.532863Z"
+  },
+  "content": [
+    {
+      "id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "submission_id": "1c3100d7-4189-467b-9c06-789a534a9f05",
+      "content_type": "manuscript",
+      "content_text": "# Molecular mechanism of voltage-dependent potentiation of KCNH potassium channels\n\n## Authors\n\n- Gucan Dai<sup>1</sup>\n- William N Zagotta<sup>1</sup> ([ORCID: 0000-0002-7631-8168](https://orcid.org/0000-0002-7631-8168)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEAG-like (ELK) voltage-gated potassium channels are abundantly expressed in the brain. These channels exhibit a behavior called voltage-dependent potentiation (VDP), which appears to be a specialization to dampen the hyperexitability of neurons. VDP manifests as a potentiation of current amplitude, hyperpolarizing shift in voltage sensitivity, and slowing of deactivation in response to a depolarizing prepulse. Here we show that VDP of D. rerio ELK channels involves the structural interaction between the intracellular N-terminal eag domain and C-terminal CNBHD. Combining transition metal ion FRET, patch-clamp fluorometry, and incorporation of a fluorescent noncanonical amino acid, we show that there is a rearrangement in the eag domain-CNBHD interaction with the kinetics, voltage-dependence, and ATP-dependence of VDP. We propose that the activation of ELK channels involves a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.\n\n## Introduction\n\nIon channels in the KCNH family (EAG, ERG and ELK) are voltage-gated potassium channels important for nervous system function, cardiac physiology, and cancer biology (Warmke and Ganetzky, 1994; Ganetzky et al., 1999; Pardo et al., 1999; Morais-Cabral and Robertson, 2015) (Figure 1\u2014figure supplement 1). ERG channels (Kv11) constitute the fast delayed rectifier in cardiomyocytes and are partly responsible for the repolarization of the cardiac action potential (Sanguinetti et al., 1995; Trudeau et al., 1995). EAG channels (Kv10) and ELK channels (Kv12) are abundantly and almost exclusively expressed in the brain where they also regulate electrical excitability, though their precise physiological function is not well understood (Shi et al., 1998; Warmke and Ganetzky, 1994; Zou et al., 2003; Saganich et al., 2001; Martin et al., 2008). Genetic deletion of ELK channels was shown to cause hippocampal hyperexcitability and epilepsy in mice (Zhang et al., 2010). In addition, EAG channels are also abundantly expressed in many forms of cancer (Camacho, 2006; Pardo and StuhmerSt\u00fchmer, 2014).\n\nLike other voltage-gated potassium channels, KCNH channels are composed of four subunits around a centrally located pore, where each subunit contains six transmembrane segments and an intracellular N-terminal and C-terminal region (Figure 1A). Although the KCNH channels contain a cyclic nucleotide-binding homology domain (CNBHD) in the C-terminal region, the channels do not bind and are not directly regulated by cyclic nucleotides, including cAMP and cGMP (Brelidze et al., 2009; Robertson et al., 1996). Instead, the analogous cyclic nucleotide-binding pocket of the CNBHD is occupied by an \u2018intrinsic ligand\u2019 from a short sequence at the C-terminal end of the CNBHD (Marques-Carvalho et al., 2012; Brelidze et al., 2012). This intrinsic ligand regulates KCNH channel function (Marques-Carvalho et al., 2012; Brelidze et al., 2012; Zhao et al., 2017) and explains, in part, why KCNH channels are not regulated by cyclic nucleotides. Another important structural feature of KCNH channels is the interaction between the N-terminal eag domain (PAS domain and PAS cap) and C-terminal CNBHD (Gianulis et al., 2013; Gustina and Trudeau, 2009; Haitin et al., 2013; Whicher and MacKinnon, 2016) (Figure 1A). This interaction has been demonstrated to be critical for the proper function of KCNH channels. Mutations in KCNH channels that impair this eag domain-CNBHD interaction lead to alterations in channel trafficking and gating, which are thought to underlie some forms of Long QT Syndrome and cancer (Curran et al., 1995; Gustina and Trudeau, 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig1-v3.jpg)\n\n**Figure 1.:** (A) Homology model of the structure of the zELK channel illustrating the intersubunit eag domain-CNBHD interaction (side-view parallel to the plasma membrane), based on the cryo-EM structure of the rEAG1 channel (PDB code: 5K7L) (Whicher and MacKinnon, 2016). Red arrow highlights the direct eag domain-CNBHD interaction. (B) Representative current-voltage (I\u2013V) recordings of zELK channels in the cell-attached configuration using the voltage protocol on the left. The red trace is the double-exponential fitting of the current elicited by a +120 mV voltage pulse (\u03c41\u00a0=\u00a04 ms and \u03c42\u00a0=\u00a0206 ms). (C) Representative conductance-voltage (G\u2013V) curves of zELK channels in the cell-attached configuration without and with a +60 mV prepulse. The dashed curve is the same data as the black solid curve but normalized to the amplitude of the red curve. (Right) Summary of the V1/2 of the G-V curves from multiple patches (n\u00a0=\u00a04\u201314). (D) zELK currents (right) elicited by a voltage protocol with increasing durations of +60 mV pulse (left). The deactivation time constants for the red traces are 8.5 and 22.9 ms respectively). (E) A 6-state kinetic model for the VDP of KCNH channels. (F\u2013H) Simulated data based on the 6-state model for zELK channels using QuB software (State University of New York at Buffalo) using the same protocols as panels B\u2013D respectively. Voltage-dependent rate constants are given by k(V) = k0 exp(k1V), where V is voltage, k0 is the rate at 0 mV, and k1 the voltage dependence of the rate. For the forward rate constant \u03b1 of the voltage-dependent transition: k0\u00a0=\u00a080 s\u22121 and k1\u00a0=\u00a00.025 mV\u22121; for the reverse rate constant \u03b2 of the voltage-dependent transition: k0\u00a0=\u00a0600 s\u22121 and k1\u00a0=\u00a0\u22120.025 mV\u22121. For the rate constant of the VDP transition step: \u03b5\u00a0=\u00a035 s\u22121. For the other transitions illustrated: \u03b3\u00a0=\u00a060 s\u22121, d\u00a0=\u00a0200 s\u22121, \u03bf\u00a0=\u00a05000 s\u22121, \u03ba\u00a0=\u00a070 s\u22121.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Phylogenetic tree illustrating the evolutionary relationships of EAG, ERG and ELK channels in the KCNH channel family.\n\nOne behavior shared by ERG and ELK channels is mode shift or hysteresis (Li et al., 2015; Tan et al., 2012; Goodchild et al., 2015). This electrical property is characterized by a shift in the voltage dependence of activation to more hyperpolarized voltages in response to a depolarizing prepulse. In ERG channels, this mode shift is thought to be responsible for the slowing of deactivation that contributes to the repolarization of the cardiac action potential (Sanguinetti et al., 1995; Trudeau et al., 1995). This phenomenon, also called prepulse facilitation, has been found in other types of ion channels including N-type and P/Q-type calcium channels and HCN channels (Hoshi et al., 1984; Hoshi and Smith, 1987; Bean, 1989; M\u00e4nnikk\u00f6 et al., 2005; Elinder et al., 2006). We refer to this behavior in KCNH channels as voltage-dependent potentiation (VDP).\n\nIn this paper, we studied the structural mechanism underlying the VDP in ELK channels. Using deletions, mutations, and chimeric constructs we show that VDP involves the interaction between the eag domain and CNBHD. To measure the distance between positions in the eag domain and CNBHD, we used transition metal ion FRET (tmFRET) (Taraska et al., 2009a) together with incorporation of a fluorescent noncanonical amino acid (Chatterjee et al., 2013). By simultaneously measuring channel current and tmFRET using patch-clamp fluorometry (PCF) (Zheng and Zagotta, 2003), we showed that the distance between the eag domain and CNBHD decreases with the time course, voltage-dependence, and ATP-dependence of VDP. These results indicate that VDP in ELK channels involves a slow rearrangement of the interaction between the eag domain and the CNBHD that is coupled to channel opening.\n\n## Results\n\n### VDP of zELK channels\n\nFor this study, we used a vertebrate ELK channel from zebrafish (zELK) which exhibits robust expression in heterologous expression systems (Figure 1\u2014figure supplement 1). Previously, the basic electrophysiological properties of zELK channels were shown to be similar to the mammalian orthologs, and the structure of the C-linker/CNBD of the channel was solved by X-ray diffraction (Brelidze et al., 2012). zELK channels were expressed in Xenopus oocytes and activated by depolarizing voltage steps from \u2212120 mV to +120 mV in the cell-attached patch-clamp configuration (Figure 1B). As for other KCNH channels, zELK is a K+-selective channel activated by membrane depolarization with prominent inward tail currents seen with high concentrations of potassium in the recording electrode.\n\nVDP of zELK channels manifests in three ways. The first is that the activation of zELK channels at depolarizing voltages exhibits prominent double exponential kinetics, with a fast (~4 ms) and a slow (~200 ms) component (Figure 1B). This suggests that prolonged depolarization is causing the channel to transition to a second more stable open conformation. The second manifestation of VDP is hysteresis in the steady-state conductance-voltage (G-V) curve. We applied a 500 ms depolarizing prepulse to +60 mV before a family of voltage steps. The depolarizing prepulse caused about a \u221260 mV shift in the G-V curve to more hyperpolarized voltages as well as a dramatic increase in the peak tail-current amplitude (Figure 1C). The third manifestation of VDP is apparent by varying the duration of depolarizing voltages (+60 mV) and monitoring the amplitude and time course of the tail current at \u2212100 mV. The tail current amplitude increased 3.5\u00a0\u00b1\u00a00.3 fold (n\u00a0=\u00a011) for depolarizing voltage pulses of longer durations, with a time course that closely matched the slow component of the activation kinetics (Figure 1D). More interestingly, the time constant of the tail current increased from 8.4\u00a0\u00b1\u00a00.4 ms to 16.9\u00a0\u00b1\u00a01.5 ms with longer pulses (n\u00a0=\u00a012) (Figure 1D). This suggests that channels closed more slowly from a potentiated open state.\n\nThese three manifestations of VDP can be recapitulated in a simple kinetic scheme (Figure 1E). In this scheme the voltage-dependent activation of the channel was modeled as a single voltage-dependent transition followed by a voltage-independent closed-to-open transition. VDP was then modeled as a slow transition to a potentiated mode with an unaltered voltage-dependent transition but a more favorable closed-to-open transition. As required by thermodynamics, the mode shift is more favorable from the open state than from the closed states, and is therefore coupled to activation. This coupling produces a voltage-dependence to the mode shift, and therefore VDP. While clearly oversimplified, this simple gating scheme could quantitatively account for the double exponential activation (Figure 1F), the shift in the G-V curve with depolarizing prepulses (Figure 1G), and the slowing of the tail currents with longer depolarizing pulses (Figure 1H). In the rest of the paper, we determine the molecular mechanism that underlies the mode shift that produces VDP.\n\n### VDP is eliminated in the inside-out patch-clamp configuration\n\nzELK channels exhibit a dramatic run-up in activity after patch excision. Similar to VDP, this run-up manifested as an increase in tail current amplitude (a 2.2\u00a0\u00b1\u00a00.3 fold increase compared to the cell-attached configuration, measured after +120 mV depolarization, n\u00a0=\u00a07) (Figure 2A) and a significant shift of the G-V curve of channel activation to more hyperpolarized voltages (V1/2 = \u221252.5\u00a0\u00b1\u00a03.5 mV, n\u00a0=\u00a06) (Figure 2C). The shift of the G-V curve happened gradually after excision and reached steady-state after about 20 mins (Figure 2B). Interestingly, the VDP was almost completely eliminated in excised patches, with no further shift in the G-V curve with depolarizing prepulses (Figure 2C), and no slowing of the tail currents with longer depolarizing pulses (Figure 2D,E). This suggests that patch excision shifted the channels into the potentiated mode even without a depolarizing prepulse. Patch excision also revealed a prominent voltage-dependent inactivation in zELK channels, particularly at very depolarized voltages (>+60 mV) (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative I-V recordings of zELK channels immediately after excision (left) and 20 mins after excision (middle) in the inside-out configuration, as well as after patch cramming (right) using the same voltage protocol illustrated in Figure 1B. (B) Time course of the V1/2 change of the G-V curve of zELK channels after patch excision; patch-cramming restored the V1/2 to that before patch excision (n\u00a0=\u00a03\u20136). (C) Representative G-V curves of zELK channels in the cell-attached configuration (black), in the inside-out configuration with a \u2212100 mV prepulse (blue), and with a +60 mV prepulse (red) (see the legend in panel G). (D) zELK currents elicited by a voltage protocol with increasing durations of +60 mV pulse in the inside-out configuration (same protocol illustrated in Figure 1D). The deactivation time constants for the red traces are 10.3 and 13.7 ms respectively). (E) Plot of the time constants of deactivation versus the duration of the +60 mV pulse for zELK channels in inside-out patches with and without ATP/Mg2+ (n\u00a0=\u00a04). The corresponding data for the cell-attached configuration is shown for comparison. (F) I-V recordings of zELK channels in inside-out patches with ATP/Mg2+ in the bath solution showing no run-up after patch excision. (G) G-V curves of zELK channels in the same conditions as panel C with the addition of 2 mM ATP/Mg2+ to the bath solution. (H) zELK current elicited using the same voltage protocol in Figure 1D, with 2 mM ATP/Mg2+ in the bath solution. The deactivation time constants for the red traces are 7.2 and 14.3 ms, respectively.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative I-V recordings showing 5 mM DTT was not able to prevent the run-up of zELK channels after patch excision. (B) Representative I-V recordings showing 1 mM ATP alone without Mg2+ failed to prevent the run-up of zELK channels after patch excision.\n\nPatch cramming, i.e. inserting the excised patch back into the intracellular regions of the oocyte, was able to completely restore the cell-attached channel behavior within five mins, indicating some cytosolic factors were lost in the inside-out configuration (Figure 2A and B). Reducing reagent DTT in the bath did not prevent the run-up, suggesting disulfide bonding was not involved in this run-up (Figure 2\u2014figure supplement 1A). Previously, it was proposed that run-up of human ELK1 channels was mediated by PI(4,5)P2 hydrolysis (Li et al., 2015). We found that supplementation of the bath solution with 2 mM ATP/Mg2+ was able to prevent the run-up and maintain the VDP observed in the cell-attached configuration (Figure 2F,G and H). ATP alone without Mg2+ was not able to prevent the run-up (Figure 2\u2014figure supplement 1B). These results suggest that, consistent with previous findings in human ELK1 (Li et al., 2015), PI(4,5)P2 is also required for VDP in zELK, and hydrolysis of PI(4,5)P2 after patch excision leaves the channel in a potentiated state.\n\n### Interaction between the eag domain and CNBHD controls the VDP of zELK channels\n\nTo determine the role of the intracellular eag domain and CNBHD in VDP, we made mutations in these domains and tested for VDP. We found the VDP was almost completely abolished in zELK channels with the eag domain deleted (zELK \u0394eag) (Figure 3A). In the cell-attached configuration; the average change in V1/2 (\u0394V1/2) with a +60 mV prepulse was \u221212.7\u00a0\u00b1\u00a01.4 mV (n\u00a0=\u00a07) (Figure 3B) compared to \u221254.0\u00a0\u00b1\u00a02.0 mV (n\u00a0=\u00a014) in wild-type zELK. In addition, zELK \u0394eag did not show an increase in the time constant of deactivation with longer depolarizing pulses (Figure 3C) as seen in the wild-type channel.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig3-v3.jpg)\n\n**Figure 3.:** (A) I-V recordings of zELK \u0394eag channels in the cell-attached configuration (\u03c4\u00a0=\u00a05.9 ms for the faster deactivation highlighted in red). (B) Representative G-V curves for zELK \u0394eag channels without or with a +60 mV prepulse. The dashed trace illustrates the G-V curve of the wild-type channel after a +60 mV prepulse. (C) Plot of the time constant for deactivation vs. the duration of the +60 mV pulse for zELK \u0394eag channels. (D) Ribbon structure of the eag domain/CNBHD complex of mEAG1 channels (PDB code: 4LLO) (Haitin et al., 2013), highlighting a salt bridge between the eag domain and CNBHD formed by R57 and D681 in the analogous positions of zELK. (E) and (F) Summary of effects of salt-bridge mutations on V1/2 (E) and VDP measured by \u0394\u0394G (prepulse) (F), (n\u00a0=\u00a04\u20135). *p<0.05. (G) Representative I-V recordings of mEAG1 channels showing that the kinetics of activation has only one component (\u03c4\u00a0=\u00a07.7 ms for the red trace). The fit is applied to the exponential activation following small sigmoidal delay. (H) G-V curves of mEAG1 channels in the same conditions as panel B. (I) G-V curves of a zELK-mEAG1 chimera containing the N- and C-terminal intracellular domains from zELK and transmembrane (S1\u2013S6) domain from mEAG1. The dashed curve is the same data as the black solid curve but normalized to the amplitude of the red curve.\n\nWe next mutated an intersubunit salt bridge between the eag domain and the CNBHD predicted based on structures of the EAG1 channel (Figure 3D) (Haitin et al., 2013; Whicher and MacKinnon, 2016). In zELK, the homologous positions of the salt-bridging residues are R57 in the eag domain and D681 in the CNBHD. We found that charge reversal mutations (zELK-R57D or D681R) that would disrupt the salt bridge not only shifted the initial V1/2, but also attenuated the VDP (Figure 3E and F). When we made the charge-swapping mutations (zELK-R57D, D681R) by combining the individual reversal mutations, we partially rescued the channel behavior to that of the wild-type channels (Figure 3E and F). These results indicate that the eag domain and CNBHD are interacting via the salt bridge and this interaction is supporting the VDP.\n\nTo test the hypothesis that the intracellular eag domain-CNBHD interaction is sufficient to confer VDP to the channel, we engineered a chimeric channel with the S1 to S6 transmembrane domains of mEAG1 (amino acids: 209\u2013503) and N- (amino acids: 1\u2013217) and C- (amino acids: 544\u2013914) terminal regions from zELK. Wild-type mouse EAG1 channels do not have VDP (Figure 3G,H). However, the mEAG1-zELK chimera exhibited prominent VDP (Figure 3I). The average \u0394V1/2 with the +60 mV prepulse was \u221239.1\u00a0\u00b1\u00a02.6 mV (n\u00a0=\u00a09) for the mEAG1-zELK chimera in the cell-attached configuration. These results suggest that the eag domain-CNBHD complex of zELK is sufficient to confer VDP on mEAG1.\n\n### Measuring the distance between eag domain and CNBHD using tmFRET\n\nTo determine if there is a rearrangement of the eag domain-CNBHD interaction during VDP, we used transition metal ion FRET (tmFRET) combined with patch-clamp fluorometry. tmFRET measures the FRET between a donor fluorophore and a nonfluorescent transition metal ion acceptor (Latt et al., 1972; Horrocks et al., 1975; Richmond et al., 2000; Sandtner et al., 2007; Taraska et al., 2009a, 2009b). The efficiency of tmFRET is steeply dependent on the distance between the donor fluorophore and the acceptor metal ion and can be directly measured from the percent quenching of the donor\u2019s fluorescence upon addition of the metal ion. Compared to traditional FRET, tmFRET measures much shorter distances (10\u201320 \u00c5) and has less orientation dependence, making it ideal for measuring intramolecular distances in proteins (Taraska et al., 2009a).\n\nAs the donor fluorophore for tmFRET, we used the fluorescent noncanonical amino acid L-Anap (Figure 4A). L-Anap was site-specifically incorporated into zELK channels using the amber (TAG) stop-codon suppression strategy (Chatterjee et al., 2013; Kalstrup and Blunck, 2013; Aman et al., 2016; Sakata et al., 2016; Zagotta et al., 2016). As the tmFRET acceptor, we used Co2+ coordinated by a dihistidine pair engineered into an \u03b1 helix in zELK (Figure 4A). The emission spectrum of L-Anap overlaps with the absorption spectrum of Co2+-dihistidine, predicting a distance for 50% FRET efficiency (R0) of 12 \u00c5 (Figure 5\u2014figure supplement 1) (Zagotta et al., 2016; Aman et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig4-v3.jpg)\n\n**Figure 4.:** (A) Ribbon diagram of eag domain-CNBHD complex illustrating the strategy of using tmFRET between an noncanonical amino acid L-Anap (structure shown on the right) and Co2+ chelated by dihistidines to measure interdomain (intramolecular) distances. (B) Cartoon illustrating the zELK channel construct with L-Anap site, dihistidine site, and C-terminal YFP. (C) Representative patch-clamp fluorometry images showing the specific incorporation of L-Anap into zELK channels using the amber stop-codon suppression strategy. (D) and (E) L-Anap fluorescence in patches correlated with zELK channel current (D) or YFP fluorescence (E).\n\nWhen combined with patch-clamp fluorometry (Zheng and Zagotta, 2003), tmFRET is able to detect the distance change between protein domains with simultaneous electrophysiological measurements while controlling the membrane voltage and intracellular solution. L-Anap was incorporated into the zELK eag domain by mutating the codon for amino acid 51 in the A helix to the amber stop codon TAG (Figure 4A,B). We also fused a YFP at the C-terminal end of the zELK channels as a fluorescent reporter to confirm the successful expression of the full-length channel (Figure 4B). Xenopus oocytes were then injected with the zELK-E51TAG-YFP mRNA, L-Anap, and a plasmid pANAP coding for the orthogonal amber suppressor tRNA/aminoacyl-tRNA synthetase (aaRS) pair for L-Anap (Chatterjee et al., 2013; Kalstrup and Blunck, 2013; Aman et al., 2016; Sakata et al., 2016; Zagotta et al., 2016). Only patches from oocytes injected with all three components exhibited Anap fluorescence (Figure 4C). The linear correlation between the Anap fluorescence and the YFP fluorescence and current in the patches indicates that virtually all of the Anap fluorescence was coming from L-Anap incorporated within the functional channel and not from any nonspecific background fluorescence (Figure 4D and E). Indeed, the negative controls in the absence of channels or with wild-type zELK channels (no TAG mutation) produced negligible Anap fluorescence (Figure 4C).\n\nWith E51Anap located within the A helix of the eag domain, a dihistidine (K729H, E733H) was introduced to the C helix of the CNBHD (Figure 4A and B). The tmFRET efficiency between L-Anap and Co2+ bound to the dihistidine was measured by the degree of quenching of Anap fluorescence by Co2+. With an increasing concentration of Co2+ applied to the intracellular face of excised patches held at \u2212100 mV, the Anap fluorescence decreased monotonically (Figure 5A). The Co2+-mediated quenching was reversed by applying 10 mM EDTA to chelate the divalent cations (Figure 5\u2014figure supplement 2). This quenching of Anap fluorescence by Co2+ is indicative of FRET between the L-Anap and the bound Co2+. The channel without the dihistidine produced only a small amount of quenching up to 1 mM Co2+ (Figure 5A) and was used to correct the FRET efficiency for any quenching that was not due to Co2+ binding to the dihistidine (see tmFRET efficiency calculation in the Materials and methods) (Figure 5B). The apparent tmFRET efficiency increased with increasing Co2+ concentration and was well described by a Langmuir isotherm with an apparent affinity of around 70 \u00b5M, and a maximal FRET efficiency of 0.71\u00a0\u00b1\u00a00.05 (n\u00a0=\u00a04). These results suggest that Co2+ binding to the dihistidine in the CNBHD is in close proximity to L-Anap in the eag domain, as predicted from the X-ray crystal and cryoEM structures (Haitin et al., 2013; Whicher and MacKinnon, 2016).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig5-v3.jpg)\n\n**Figure 5.:** (A) Quenching of Anap fluorescence measured using PCF by different concentrations of Co2+ with or without dihistidines and in the absence and presence of 2 mM ATP/Mg2+ at the resting holding voltage of \u2212100 mV. (B) tmFRET efficiency as a function of Co2+ concentration in the absence and presence of ATP/Mg2+ as described. The smooth curves are fits of the Langmuir isotherm, Apparent FRETeff. = FRETeff [Co2+] / (K1/2 + [Co2+]), with the following parameters: FRETeff\u00a0=\u00a00.46, K1/2\u00a0=\u00a048.0 \u00b5M with ATP (red) and FRETeff\u00a0=\u00a00.71, K1/2\u00a0=\u00a066.1 \u00b5M without ATP (green). For the control construct zELK-E51Anap without the dihistidine, the quenching data with and without ATP/Mg2+ were merged since ATP/Mg2+ did not produce any significant difference. (C) Inside-out patch-clamp recordings of zELK E51Anap, K729H-E733H channels exhibiting a ATP/Mg2+-dependent slow component of activation typical of VDP in wild-type zELK channels. (D) Representative G-V curves of zELK-E51Anap, K729H-E733H channels exhibiting prepulse-dependent shift in the voltage-dependence of activation typical of VDP in wild-type zELK channels (different patch from panel C). (E) Representative PCF images showing Anap fluorescence decreased when the membrane voltage was stepped from \u2212100 mV to +120 mV for zELK-E51Anap, K729H-E733H channels in the presence of 1 mM Co2+ and ATP/Mg2+ in the bath. (F) Summary data showing the Anap fluorescence decrease by depolarization was abolished without the dihistidines or when the VDP disappeared in the absence of ATP/Mg2+ (n\u00a0=\u00a05), *p<0.05. The fluorescence was measured using a bandpass filter for Anap emission. (G) Spectral images of L-Anap emission at \u2212100 mV and +120 mV. (H) Emission spectra from the spectral images shown in panel G.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Spectra of L-Anap excitation and emission and absorbance (measured as extinction coefficient) of cobalt and copper coordinated by a dihistidine pair. (B) F\u00f6rster distance of the L-Anap/Co2+-dihistidine FRET pair (labeled with the dashed line).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Representative PCF images of Anap fluorescence from zELK-E51Anap, K729H-E733H channels, for the control, 1 mM Co2+ and the subsequent application of 10 mM EDTA. (B) Quantification of the Anap fluorescence of the conditions in panel A for zELK-E51Anap, K729H-E733H channels. Background fluorescence was subtracted.\n\n### Rearrangements between the eag domain and CNBHD have the ATP/Mg2+-dependence, voltage-dependence, and time course of VDP\n\nWe showed above that zELK channels in patches excised in the standard saline solution are potentiated and lose VDP, while channels excised in the presence of ATP/Mg2+ maintain VDP (Figure 2). zELK-E51Anap, K729H-E733H channels behaved similarly to wild-type zELK channels and exhibited VDP in ATP/Mg2+ (Figure 5C). In the presence of ATP/Mg2+, zELK-E51, K729H-E733H channels exhibited a shift in the G-V curve (\u0394V1/2) of \u221243.5\u00a0\u00b1\u00a02.7 mV with depolarizing prepulses, only slightly less than the wild-type channel in the cell-attached configuration (Figure 5D). We next measured the tmFRET efficiency between sites in the eag domain and CNBHD in the absence and presence of ATP/Mg2+ (Figure 5A and B). FRET efficiency was determined at a saturating concentration of 1 mM Co2+ where the dihistidine sites are expected to be completely bound by Co2+ (see tmFRET efficiency calculation in the Materials and methods). We found that, with ATP/Mg2+ added to the bath, the FRET efficiency at \u2212100 mV decreased to 0.46\u00a0\u00b1\u00a00.08 (n\u00a0=\u00a04) compared to 0.71\u00a0\u00b1\u00a00.05 without 2 mM ATP/Mg2+ added (Figure 5B). Using the F\u00f6rster equation and an R0 of 12 \u00c5, this corresponds to a distance change of 2.0 \u00c5. These results suggest that, at hyperpolarizing voltages, these two sites within the eag domain and CNBHD are further apart when the channel is not potentiated and closer together when the channel is potentiated.\n\nWe next measured the voltage-dependence of the conformational change between the eag domain and the CNBHD. With patch-clamp fluorometry, we found the steady-state Anap fluorescence intensity with 1 mM Co2+ decreased at\u00a0+120 mV compared to \u2212100 mV (Figure 5E and F). This decrease was not present without dihistidine or in the absence of ATP/Mg2+ (Figure 5F). L-Anap is an environmentally sensitive fluorophore whose emission spectrum shifts to shorter wavelengths in more hydrophobic environments (Chatterjee et al., 2013). To determine if the decreased fluorescence was associated with a change of the environment of L-Anap, we measured the emission spectra of Anap fluorescence in patches at \u2212100 mV and\u00a0+120 mV. We found the wavelength of the L-Anap peak emission was not significantly shifted despite the reduction in the intensity of peak emission produced by the +120 mV voltage pulse in the presence of 1 mM Co2+ (Figure 5G and H). Together with the absence of a fluorescence change without a dihistidine (Figure 5F), these results are consistent with a FRET mechanism for Co2+ quenching and not a change in environment (Figure 5G and H). These results indicate that, similar to VDP, membrane depolarization causes a ATP/Mg2+-dependent and voltage-dependent rearrangement between the eag domain and CNBHD. This suggests that the rearrangement between the eag domain and the CNBHD is associated with VDP.\n\nTo further test that the rearrangement between the eag domain and CNBHD is associated with VDP, we measured the kinetics of the change in tmFRET and compared it with kinetics of the development and the recovery of VDP. Using patch-clamp fluorometry, we simultaneously measured the time course of the\u00a0development of VDP and the time course of the domain rearrangement in zELK-E51, K729H-E733H channels. Fluorescent images were captured every 100 ms with a 50 ms exposure time. In the presence of ATP/Mg2+ and 1 mM Co2+, the Anap fluorescence decreased with a +60 mV depolarization and recovered after repolarization to \u2212100 mV (Figure 6A). The time constant, 261\u00a0\u00b1\u00a056 ms, for the decrease in Anap fluorescence was not statistically different from the time constant of approximately 308\u00a0\u00b1\u00a026 ms for the slow component of channel activation associated with the development of VDP (Figure 6A and B, also Figure 1D). In the absence of ATP/Mg2+, the channel activated quickly with the +60 mV depolarization without a slow component, and the concurrent Anap fluorescence was unchanged by the voltage step (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig6-v3.jpg)\n\n**Figure 6.:** (A) Kinetic measurement of Anap fluorescence during a +60 mV depolarization pulse with simultaneous current recordings, in the presence or absence of ATP/Mg2+. (B) and (C) Comparison of the kinetics of the development (B) and the recovery (C) of tmFRET and VDP (n\u00a0=\u00a04\u20136). (D) Cartoon illustrating that the VDP of zELK channels involves a rearrangement of the direct interaction between the eag domain and CNBHD. The intersubunit interaction of the eag domain and CNBHD of diagonal subunits is illustrated at hyperpolarizing and depolarizing voltages showing a rearrangement of this interaction accompanies the VDP. Other changes such as pore opening and movement of the S4 are also important for channel activation. The yellow box indicates the intrinsic ligand. PI(4,5)P2 in the inner leaflet of the plasma membrane is shown to highlight its potential role in regulating VDP.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/26355/elife-26355-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Recovery of VDP measured by a voltage protocol with hyperpolarizing recovery pulses of various durations. Representative control current traces without the +60 mV prepulse are shown, and representative current traces with +60 mV prepulse and subsequent 0, 100 and 300 ms recovery pulses are shown. (B) Relationship between the duration of the recovery pulse and V1/2 of zELK channel activation after a +60 mV prepulse (n\u00a0=\u00a06). The\u03c4 of the exponential fit in red is 136 ms. (C) Relationship between the duration of the recovery pulse and the peak tail-current amplitudes of zELK channels after a +60 mV prepulse (n\u00a0=\u00a06). The\u03c4 of the exponential fit in red is 293 ms.\n\nThe time course of the recovery of tmFRET also closely matched the time course of the recovery of VDP. The time constant for recovery of the Anap fluorescence at \u2212100 mV was 137.5\u00a0\u00b1\u00a016 ms (Figure 6A and C). To measure the recovery rate of VDP, we used a new voltage protocol applying a \u2212100 mV recovery pulse of variable durations after a +60 mV prepulse (Figure 6\u2014figure supplement 1A). With an increased duration of the \u2212100 mV pulse, the VDP gradually disappeared; a 500 ms recovery pulse shifted the V1/2 back to the control value without the +60 mV prepulse (Figure 6\u2014figure supplement 1). The recovery of the peak tail-current amplitude happened in a similar but somewhat slower time frame compared to the V1/2 recovery (Figure 6\u2014figure supplement 1B and C). The time constant of the V1/2 recovery of wild-type channels was not significantly different from the time constant of the recovery of Anap fluorescence (p>0.05, Figure 6C). Overall these tmFRET experiments demonstrate that there is a rearrangement between the eag domain and CNBHD that exhibits the\u00a0same ATP/Mg2+-dependence, voltage-dependence, and kinetics as VDP. Combined with our finding that VDP is altered or eliminated by mutations of the eag domain and CNBHD (Figure 3), these experiments suggest that the VDP is produced partially or fully by a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.\n\n## Discussion\n\nIn this paper, we show zELK channels exhibit VDP that results from the channel undergoing a slow state-dependent transition to a mode with a more favorable opening transition. We then show that the VDP transition involves an interaction between the intracellular N-terminal eag domain and C-terminal CNBHD. Combining transition metal ion FRET, patch-clamp fluorometry, and incorporation of a fluorescent noncanonical amino acid, we show a rearrangement between the eag domain and CNBHD that exhibits the\u00a0same ATP/Mg2+-dependence, voltage-dependence, and kinetics as VDP. We proposed that this rearrangement of the eag domain-CNBHD interaction is coupled to channel opening and underlies VDP in these channels (Figure 6D). VDP of mammalian ELK and ERG channels appears to be an adaptation to dampen the hyperexitability of neurons and cardiac tissue.\n\nPreviously, it has been shown that hELK1 is downregulated by PI(4,5)P2 (Li et al., 2015). Similarly, we found that excision of the patch causes a run-up of the current that is prevented by the presence of ATP/Mg2+. This downregulation by PI(4,5)P2 is unusual in ion channels which are generally upregulated by PI(4,5)P2 (Hille et al., 2015). Furthermore, for both hELK1 (Li et al., 2015) and zELK, PI(4,5)P2 degradation leaves the channels in a potentiated mode that no longer undergoes VDP. These results suggest that VDP could result from a simple mechanism where PI(4,5)P2 binds with higher affinity to the closed state of the channel than the open state, and unbinds slowly upon depolarization. This mechanism could account for our ATP/Mg2+-dependence and voltage-dependence of VDP. It would suggest that PI(4,5)P2 regulation is linked to a rearrangement of the eag domain-CNBHD interaction. However, hERG channels are also thought to undergo VDP (Tan et al., 2012; Goodchild et al., 2015) but are not appreciably regulated by PI(4,5)P2 (Kruse and Hille, 2013). The precise role of PI(4,5)P2 in VDP has yet to be fully understood.\n\nThe interaction between the eag domain and CNBHD has been well studied in ERG and EAG channels. Direct interaction between the eag domain and CNBHD in hERG channels has been demonstrated by multiple approaches including FRET (Gianulis et al., 2013; Gustina and Trudeau, 2009, 2013). In hERG channels, the eag domain-CNBHD interaction is necessary to maintain the slow deactivation and normal inactivation of the channel (Gianulis et al., 2013; Gustina and Trudeau, 2009, 2013). Furthermore, the eag domain-CNBHD interface of ERG channels is altered in some forms of long QT syndrome and schizophrenia (Chen et al., 1999; Huffaker et al., 2009). In EAG channels, direct interaction between the EAG domain and CNBHD was demonstrated using X-ray crystallography and cryo-EM (Haitin et al., 2013; Whicher and MacKinnon, 2016). Indeed, the eag domain-CNBHD complex has been shown to adopt two closely related but different conformations in X-ray crystallography (Haitin et al., 2013). These two conformations of the complex predict a small change in the distances between the eag domain and CNBHD. Breaking the critical salt bridge between eag domain and CNBHD significantly altered activation gating in EAG channels. Moreover, mutations at this interface of EAG channels have being associated with cancer (Haitin et al., 2013). For both ERG and EAG channels, the interaction has been shown to be intersubunit rather than intrasubunit (Gianulis et al., 2013; Whicher and MacKinnon, 2016). It appears that intersubunit eag domain-CNBHD interactions are a general self-regulatory mechanism among all three subfamilies of KCNH channels, EAG, ERG, and ELK; though the forms of regulation are different for the individual channels.\n\nOur experiments with zELK suggest that the intracellular domains are responsible for the VDP. We hypothesize that, for KCNH channels, a rearrangement of the eag domain-CNBHD interaction is necessary for VDP. Moreover, we suggest that there is a rearrangement of the eag domain-CNBHD interaction coupled to the opening of the channel. Since the rearrangement is coupled to opening, it occurs preferentially at depolarized voltage and stabilizes channel opening. Indeed, thermodynamics dictates that any open state-dependent transition will stabilize channel opening. Therefore, while the molecular mechanism for VDP might be distinct for different channels, the presence of a slow state-dependent transition might be a general theme that underlies the VDP of all channels.\n\n## Materials and methods\n\n### Molecular biology\n\nThe full length D.\u00a0rerio\u00a0zELK construct (GI: 159570347) was synthesized (Bio Basic, Amherst, NY) and subcloned into a modified pcDNA3 vector that contained a C-terminal YFP, a T7 promoter and 3\u2019 and 5\u2019 untranslated regions of a Xenopus \u03b2-globin gene. Point mutations were made using Quickchange II XL Site-Directed Mutagenesis kit (Agilent technologies, Santa Clara, CA). The chimeras and deletions were made using standard overlapping PCR followed by ligation using T4 ligase or Gibson Assembly (New England Biolabs). The sequences of the DNA constructs were confirmed by fluorescence-based DNA sequencing (Genewiz LLC,\u00a0Seattle,\u00a0WA). The RNA was synthesized in vitro using HiScribe T7 ARCA mRNA Kit (New England Biolabs,\u00a0Ipswich,\u00a0MA) or mMESSAGE mMACHINE T7 ULTRA Transcription Kit (ThermoFisher,\u00a0Waltham,\u00a0MA) from the linearized cDNA. mEAG1 was a gift from Dr. Gail Robertson (University of Wisconsin-Madison, Madison, WI).\n\n### Heterologous expression and electrophysiology\n\nXenopus oocytes were prepared as previously described (Varnum et al., 1995). The pANAP plasmid cDNA (~50 nL of 100 ng/ml) containing the orthogonal tRNA/aminoacyl-tRNA synthetase specific to L-Anap (Chatterjee et al., 2013) was injected into the Xenopus oocyte nucleus. L-Anap (~50 nL of 1 mM free-acid form, AsisChem, Waltham, MA) as well as channel mRNA were injected into the cytosolic regions of oocytes separately. 2 to 4 days after injection, currents were recorded in the cell-attached and inside-out configuration of the patch-clamp technique using an EPC-10 (HEKA Elektronik,\u00a0Germany) or Axopatch 200B (Axon Instruments, Union City, CA) patch-clamp amplifier and PATCHMASTER software (HEKA Elektronik). For oocyte patch-clamp recording, the standard bath and pipette saline solutions contained 130 mM KCl, 10 mM HEPES, 0.2 mM EDTA, pH 7.2. For patch-clamp fluorometry, 0.5 mM niflumic acid was added to the bath solution and the perfusion solution to remove calcium-activated CI- currents. Different concentrations of Co2+ were added to the perfusion solution with EDTA eliminated. Borosilicate patch electrodes were made using a P97 micropipette puller (Sutter Instrument,\u00a0Novato,\u00a0CA). The initial pipette resistance was 0.3\u20130.7 M\u2126 for oocyte recordings. Recordings were made at 22\u00b0C to 24\u00b0C.\n\nThe channel conductance-voltage relationship (G-V curve) was measured from the instantaneous tail currants at \u2212100 mV as a function of the voltage of the main pulse. It was fitted with a Boltzmann equation:\n\nI = Imin + (Imax \u2013 Imin) / (1 + exp[(V1/2 \u2013 V)/Vs])\n\nwhere Imax is the maximum tail current at \u2212100 mV, Imin is the minimum tail current after hyperpolarizing voltage steps, V is the membrane potential, V1/2 is the potential for half-maximal activation, and Vs is the slope factor.\n\nThe change in Gibbs free energy of channel activation was calculated according to the following equation: \u0394G = RTV1/2/Vs, where R is the gas constant, and T is temperature in kelvin. The VDP due to a prepulse was calculated using the following equation: \u0394\u0394G (prepulse) = \u0394G (after prepulse) - \u0394G (before prepulse).\n\n### Microscopy and fluorometry\n\nPatch-clamp fluorometry (PCF) was performed using a Nikon Eclipse TE2000-E microscope with a 60X water immersion objective (N.A.=1.2). Epifluorescent recording of L-Anap was performed with wide-field excitation using a Lambda LS Xenon Arc lamp (Sutter Instruments), as well as a 376/30 nm excitation filter and 485/40 nm emission filter. YFP was excited with a 490/10 nm excitation filter and 535/30 nm emission filter. Images were collected with a 50 or 100 ms exposure using an Evolve 512 EMCCD camera (Photometrics,\u00a0Tucson,\u00a0AZ) and MetaMorph software (Molecular Devices,\u00a0Sunnyvale,\u00a0CA). VC3-8xP series valve-controlled pressurized perfusion system (Scientific Instruments,\u00a0Farmingdale,\u00a0NY) was used to minimize electronic noise during PCF experiments. For spectral measurements, images were collected by a Cascade 512B intensified CCD camera (Roper Scientific,\u00a0Tucson,\u00a0AZ) attached to a spectrograph (Acton research, Acton, MA) on the output port of the microscope. Spectra were analyzed by measuring line-scans across the patch area. Spectra were background subtracted using a line-scan of the non-fluorescent region outside of patch.\n\n### tmFRET efficiency calculation\n\nThe tmFRET efficiency measured by the decrease in donor fluorescence upon addition of the metal acceptor can be affected by nonspecific decreases in fluorescence that do not involve FRET with the metal bound to the dihistidine motif. The FRET efficiency can be corrected for these nonspecific decreases in donor fluorescence using the fluorescence decrease for channels without the dihistidine. The precise form of the correction depends on the source for the nonspecific fluorescence decrease. If the decrease comes from a source that does not involve energy transfer, such as static quenching, bleaching, inner filter effect, or nonspecific loss of the fluorophore, then the FRET efficiency can be calculated using the following equation:\n\n$$\nFRET_{eff}=1\u2212\\frac{F_{HH}}{F_{noHH}}\n$$\n\nwhere FHH is the normalized fluorescence of channels with dihistidines and FnoHH is the normalized fluorescence of channels without dihistidines. In each case, the F values are the fluorescence measured at metal concentrations that saturate the binding sites normalized by the fluorescence in the absence of metal, e.g.\n\n$$\nF_{HH}=\\frac{fl\u00a0(metal)}{fl\u00a0(no\u00a0metal)}\n$$\n\nIf the nonspecific decrease in fluorescence is due to collisional quenching or FRET to a different metal ion bound to an endogenous metal binding site, then the mechanism of quenching involves an additional pathway for relaxation of the fluorophore from its excited state. Consider the following scheme for a fluorophore relaxing from the excited state.\n\n$$\n\u00a0photon\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2191k_{ph}\u00a0nonspecific\u00a0quenching\u2190k_{no}\u00a0\u00a0\u00a0F^{*\u00a0}\u2192k_{HH}FRET\u00a0to\u00a0metal\u00a0dihistidine\n$$\n\nwhere F* is the excited state of the fluorophore, kph is the rate constant for emission of a photon by the excited-state fluorophore, kHH is the rate constant for energy transfer to the metal bound to the dihistidine, and kno is the sum of the rate constants for nonspecific sources of energy transfer. FRETeff in terms of the rate constants is given by:\n\n$$\nFRET_{eff}=\\frac{k_{HH}}{k_{ph}+k_{HH}}\n$$\n\nRearranging:\n\n$$\n1+\\frac{k_{HH}}{k_{ph}}=\\frac{1}{1\u2212FRET_{eff}}\n$$\n\nFurthermore, FnoHH in terms of the rate constants is given by:\n\n$$\nF_{noHH}=\\frac{k_{ph}}{k_{ph}+k_{no}}\n$$\n\nRearranging:\n\n$$\n\\frac{k_{no}}{k_{ph}}=\\frac{1}{F_{noHH}}\u22121\n$$\n\nFinally, FHH in terms of the rate constants is given by:\n\n$$\nF_{HH}=\\frac{k_{ph}}{k_{ph}+k_{HH}+k_{no}}\n$$\n\nRearranging:\n\n$$\n\\frac{1}{F_{HH}}=1+\\frac{k_{HH}}{k_{ph}}+\\frac{k_{no}}{k_{ph}}\n$$\n\nSubstituting in Equations 4 and 6 into Equation 8 gives:\n\n$$\n\\frac{1}{F_{HH}}=\\frac{1}{1\u2212FRET_{eff}}+\\frac{1}{F_{noHH}}\u22121\n$$\n\nAnd solving for FRETeff gives:\n\n$$\nFRET_{eff}=1\u2212\u00a0\\frac{1}{1+\\frac{1}{F_{HH}}\u2212\\frac{1}{F_{noHH}}}=\u00a0\\frac{F_{noHH}\u2212F_{HH}}{F_{HH}\u2217F_{noHH}+F_{noHH}\u2212F_{HH}}\n$$\n\nBoth equations (Equations 1 and 10) produce similar values of FRETeff. when the value of FnoHH is near one (little decrease in donor fluorescence for channels without the dihistidine), as seen for the experiments in this paper. Since the small nonspecific fluorescence decrease in these experiments likely involved collisional quenching or FRET to a metal ion bound to an endogenous metal binding site, we used Equation 10 to calculate the tmFRET efficiency.\n\nThe distance (R) between L-Anap and the metal ion was calculated using the F\u00f6rster equation: R\u00a0=\u00a0R0 (1/ FRETeff\u22121)1/6, where R0 is the F\u00f6rster distance for FRET between L-Anap and Co2+-dihistidine (12 \u00c5) (Aman et al., 2016).\n\n### Statistics\n\nAll data were analyzed using IgoPro (Wavemetrics, Lake Oswago, OR). Data parameters were expressed as mean \u00b1 SEM of n experiments. Statistical significance (p<0.05) was determined by using Student\u2019s t test.\n",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6771d4bf-7bee-4d60-8704-75387f4d7266",
+      "submission_id": "1c3100d7-4189-467b-9c06-789a534a9f05",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Baron Chanda, University of Wisconsin-Madison , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.26355.014](https://doi.org/10.7554/eLife.26355.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Molecular mechanism of voltage-dependent potentiation of KCNH potassium channels\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, Baron Chanda (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Matthew Trudeau (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this study, Dai and Zagotta explore the molecular and structural mechanisms that underlie voltage-dependent potentiation (VDP) in KCNH family of potassium channels. Previous studies have shown that VDP is eliminated in excised patches due to hydrolysis of PIP2. Here, the authors find that this potentiation can be maintained if supplemented by ATP and Mg. This ability to study VDP in excised patches allowed the authors to apply techniques such as patch clamp fluorometry to track conformational changes that underlie voltage-dependent potentiation. They find that the transition metal ion-FRET between labeled EAG domain and CNBHD increases upon depolarization and this increase is not observed in absence of ATP. They also show that VDP closely tracks the strength of interaction between these two domains; when an intersubunit salt bridge between EAG and CNBHD is disrupted, VDP is attenuated but it can be restored by charge swapping mutations.\n\nThis is a technical tour de force using a fluorescent non-canonical amino acid (L-ANAP) incorporation, tmFRET with ANAP-containing channels and Co2+, and patch-clamp fluorometry to simultaneously detect structural rearrangements and function in ELK channels. Overall, this is an elegant mechanistic study that illustrates at a molecular level how KCNH family of ion channels is potentiated by depolarizing voltage pulses. In addition, this study shines new light on why many disease causing mutations occur at the interface of these two domains which presumably disrupts VDP.\n\nEssential revisions:\n\n1) Figure 5A: Even in absence of di-Histidines, ELK channels show some non-specific binding at that site. If it is non-specific binding at that site, why does it not change in a prepulse dependent manner (Figure 5F)? How general are these non-specific effects? Were they observed in other TM-FRET experiments?\n\n2) Figure 2H. There is no quantification of the change in Tau in MgATP condition, as in 2E for the cell attached and no MgATP conditions.\n\n3) Figure 3F. What is the slopes of the G(V)s in the different conditions? If they are very different from each other\u2019s, then \u0394G would be a better comparison to use.\n\n4) The FRET efficiency equation is not standard and needs to be better explained. In addition, it doesn't seem to have the right units (should be unit less, but now there are a product of fluorescence signal in the denominator and only single F values in the nominator).\n\n5) My major comment is that a mechanism for the PIP2 (ATP/Mg2+) regulation and its relationship to voltage would be welcome in the kinetic scheme or cartoon scheme in order to guide future experiments.\n",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9f1f34da-5d4c-4147-af19-18056f9b6590",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C1",
+      "claim": "EAG-like (ELK) voltage-gated potassium channels are abundantly expressed in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "EAG-like (ELK) voltage-gated potassium channels are abundantly expressed in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract without specific experimental data in this manuscript, but is presented as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6600b26c-619d-4234-97ca-7f7206b17d8d",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C2",
+      "claim": "VDP manifests as a potentiation of current amplitude, hyperpolarizing shift in voltage sensitivity, and slowing of deactivation in response to a depolarizing prepulse.",
+      "claim_type": "EXPLICIT",
+      "source": "VDP manifests as a potentiation of current amplitude, hyperpolarizing shift in voltage sensitivity, and slowing of deactivation in response to a depolarizing prepulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the experimental observations presented in the manuscript, supported by data in Figures 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3b47ed59-e5be-4730-b452-502936180c59",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C3",
+      "claim": "VDP of D. rerio ELK channels involves the structural interaction between the intracellular N-terminal eag domain and C-terminal CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that VDP of D. rerio ELK channels involves the structural interaction between the intracellular N-terminal eag domain and C-terminal CNBHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by deletion experiments (Figure 3A-C), mutation experiments (Figure 3D-F), and tmFRET measurements (Figures 5-6).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e0a9a579-18f3-4e86-93ca-95b8b2fedda4",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C4",
+      "claim": "There is a rearrangement in the eag domain-CNBHD interaction with the kinetics, voltage-dependence, and ATP-dependence of VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining transition metal ion FRET, patch-clamp fluorometry, and incorporation of a fluorescent noncanonical amino acid, we show that there is a rearrangement in the eag domain-CNBHD interaction with the kinetics, voltage-dependence, and ATP-dependence of VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tmFRET experiments showing changes in fluorescence with voltage (Figure 5E-H), ATP/Mg2+ dependence (Figure 5A-B), and kinetic measurements (Figure 6A-C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a0fda4ea-a405-4ef6-95fd-515c5b7a80ae",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C5",
+      "claim": "The activation of ELK channels involves a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the activation of ELK channels involves a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and kinetic modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "1bc3fdc5-c2d1-430d-bde8-e8d9e5bbd300",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C6",
+      "claim": "ERG channels (Kv11) constitute the fast delayed rectifier in cardiomyocytes and are partly responsible for the repolarization of the cardiac action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG channels (Kv11) constitute the fast delayed rectifier in cardiomyocytes and are partly responsible for the repolarization of the cardiac action potential (Sanguinetti et al., 1995; Trudeau et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "c3b6149a-f829-43a5-8756-49581e85a489",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C7",
+      "claim": "EAG channels (Kv10) and ELK channels (Kv12) are abundantly and almost exclusively expressed in the brain where they also regulate electrical excitability.",
+      "claim_type": "EXPLICIT",
+      "source": "EAG channels (Kv10) and ELK channels (Kv12) are abundantly and almost exclusively expressed in the brain where they also regulate electrical excitability, though their precise physiological function is not well understood (Shi et al., 1998; Warmke and Ganetzky, 1994; Zou et al., 2003; Saganich et al., 2001; Martin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4e0263eb-9a03-4e32-bb8a-da18576fa6ea",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C8",
+      "claim": "Genetic deletion of ELK channels was shown to cause hippocampal hyperexcitability and epilepsy in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic deletion of ELK channels was shown to cause hippocampal hyperexcitability and epilepsy in mice (Zhang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "57431222-754b-4815-9172-453cc78c7386",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C9",
+      "claim": "EAG channels are also abundantly expressed in many forms of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, EAG channels are also abundantly expressed in many forms of cancer (Camacho, 2006; Pardo and StuhmerSt\u00fchmer, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3eb21303-d57b-47a0-b7ff-1c796f99453c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C10",
+      "claim": "KCNH channels are composed of four subunits around a centrally located pore, where each subunit contains six transmembrane segments and an intracellular N-terminal and C-terminal region.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other voltage-gated potassium channels, KCNH channels are composed of four subunits around a centrally located pore, where each subunit contains six transmembrane segments and an intracellular N-terminal and C-terminal region (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established structural knowledge about KCNH channels, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a247e758-fc80-4ab0-8d89-fdde37142c7c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C11",
+      "claim": "KCNH channels do not bind and are not directly regulated by cyclic nucleotides, including cAMP and cGMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the KCNH channels contain a cyclic nucleotide-binding homology domain (CNBHD) in the C-terminal region, the channels do not bind and are not directly regulated by cyclic nucleotides, including cAMP and cGMP (Brelidze et al., 2009; Robertson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "ba577ec9-644b-449e-85dd-e07849e4362c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C12",
+      "claim": "The analogous cyclic nucleotide-binding pocket of the CNBHD is occupied by an 'intrinsic ligand' from a short sequence at the C-terminal end of the CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the analogous cyclic nucleotide-binding pocket of the CNBHD is occupied by an 'intrinsic ligand' from a short sequence at the C-terminal end of the CNBHD (Marques-Carvalho et al., 2012; Brelidze et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "abba9d32-d986-4374-8370-024d2bdd6be5",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C13",
+      "claim": "The intrinsic ligand regulates KCNH channel function.",
+      "claim_type": "EXPLICIT",
+      "source": "This intrinsic ligand regulates KCNH channel function (Marques-Carvalho et al., 2012; Brelidze et al., 2012; Zhao et al., 2017) and explains, in part, why KCNH channels are not regulated by cyclic nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e93963e7-7191-4b55-9cde-13bd45f7fcee",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C14",
+      "claim": "There is an interaction between the N-terminal eag domain (PAS domain and PAS cap) and C-terminal CNBHD in KCNH channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Another important structural feature of KCNH channels is the interaction between the N-terminal eag domain (PAS domain and PAS cap) and C-terminal CNBHD (Gianulis et al., 2013; Gustina and Trudeau, 2009; Haitin et al., 2013; Whicher and MacKinnon, 2016) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous literature and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7d9f9ddb-cbd8-44d0-a6c2-17cb35654226",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C15",
+      "claim": "The eag domain-CNBHD interaction has been demonstrated to be critical for the proper function of KCNH channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction has been demonstrated to be critical for the proper function of KCNH channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the subsequent statement about mutations and their effects.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "dd75a18f-ee14-4d3d-939f-d07780924bd9",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C16",
+      "claim": "Mutations in KCNH channels that impair the eag domain-CNBHD interaction lead to alterations in channel trafficking and gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in KCNH channels that impair this eag domain-CNBHD interaction lead to alterations in channel trafficking and gating, which are thought to underlie some forms of Long QT Syndrome and cancer (Curran et al., 1995; Gustina and Trudeau, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "81ca97c4-fb9c-43ad-850f-3cf198c65dca",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C17",
+      "claim": "The activation of zELK channels at depolarizing voltages exhibits prominent double exponential kinetics, with a fast (~4 ms) and a slow (~200 ms) component.",
+      "claim_type": "EXPLICIT",
+      "source": "The first is that the activation of zELK channels at depolarizing voltages exhibits prominent double exponential kinetics, with a fast (~4 ms) and a slow (~200 ms) component (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a54dd95f-c652-40ca-b3e5-8de79ca3b288",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C18",
+      "claim": "Prolonged depolarization causes the zELK channel to transition to a second more stable open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that prolonged depolarization is causing the channel to transition to a second more stable open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the double exponential kinetics observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "60503762-408b-44d5-bb43-4ce93a682431",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C19",
+      "claim": "A depolarizing prepulse to +60 mV caused about a \u221260 mV shift in the G-V curve to more hyperpolarized voltages as well as a dramatic increase in the peak tail-current amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "The depolarizing prepulse caused about a \u221260 mV shift in the G-V curve to more hyperpolarized voltages as well as a dramatic increase in the peak tail-current amplitude (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "61df3531-abe2-4eda-965a-79b28a471578",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C20",
+      "claim": "The tail current amplitude increased 3.5 \u00b1 0.3 fold (n = 11) for depolarizing voltage pulses of longer durations.",
+      "claim_type": "EXPLICIT",
+      "source": "The tail current amplitude increased 3.5 \u00b1 0.3 fold (n = 11) for depolarizing voltage pulses of longer durations, with a time course that closely matched the slow component of the activation kinetics (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "f0bd29db-f6d7-4b1d-898f-a7a7539968ec",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C21",
+      "claim": "The time constant of the tail current increased from 8.4 \u00b1 0.4 ms to 16.9 \u00b1 1.5 ms with longer pulses (n = 12).",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, the time constant of the tail current increased from 8.4 \u00b1 0.4 ms to 16.9 \u00b1 1.5 ms with longer pulses (n = 12) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "fb5f1cd8-aa3a-4c71-aa58-0b1ee9d65ae2",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C22",
+      "claim": "Channels closed more slowly from a potentiated open state.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that channels closed more slowly from a potentiated open state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the increased time constant of tail currents with longer depolarizing pulses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "2df30da4-68b3-42b9-9816-d2d29505b9fc",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C23",
+      "claim": "A simple kinetic scheme with a slow transition to a potentiated mode can quantitatively account for the double exponential activation, the shift in the G-V curve with depolarizing prepulses, and the slowing of the tail currents with longer depolarizing pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "While clearly oversimplified, this simple gating scheme could quantitatively account for the double exponential activation (Figure 1F), the shift in the G-V curve with depolarizing prepulses (Figure 1G), and the slowing of the tail currents with longer depolarizing pulses (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulated data in Figures 1F-H matching the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4abeeae8-195d-4b7d-99a8-922aa1efc7b0",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C24",
+      "claim": "zELK channels exhibit a dramatic run-up in activity after patch excision.",
+      "claim_type": "EXPLICIT",
+      "source": "zELK channels exhibit a dramatic run-up in activity after patch excision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "adcbcc38-0f68-473b-b3e0-226815e5063c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C25",
+      "claim": "The run-up manifested as a 2.2 \u00b1 0.3 fold increase in tail current amplitude compared to the cell-attached configuration (measured after +120 mV depolarization, n = 7).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to VDP, this run-up manifested as an increase in tail current amplitude (a 2.2 \u00b1 0.3 fold increase compared to the cell-attached configuration, measured after +120 mV depolarization, n = 7) (Figure 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4776276b-477f-4fe6-ba6d-2bcde8c6e448",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C26",
+      "claim": "The run-up manifested as a significant shift of the G-V curve of channel activation to more hyperpolarized voltages (V1/2 = \u221252.5 \u00b1 3.5 mV, n = 6).",
+      "claim_type": "EXPLICIT",
+      "source": "and a significant shift of the G-V curve of channel activation to more hyperpolarized voltages (V1/2 = \u221252.5 \u00b1 3.5 mV, n = 6) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "83ca177b-40bf-4f8e-abcf-03413247a3ad",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C27",
+      "claim": "The shift of the G-V curve happened gradually after excision and reached steady-state after about 20 mins.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift of the G-V curve happened gradually after excision and reached steady-state after about 20 mins (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4b2bb760-9065-4aba-b8af-5554a23ffd33",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C28",
+      "claim": "The VDP was almost completely eliminated in excised patches, with no further shift in the G-V curve with depolarizing prepulses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the VDP was almost completely eliminated in excised patches, with no further shift in the G-V curve with depolarizing prepulses (Figure 2C), and no slowing of the tail currents with longer depolarizing pulses (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6bcaad14-891c-4ce3-b362-d8551df6d7cb",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C29",
+      "claim": "Patch excision shifted the channels into the potentiated mode even without a depolarizing prepulse.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that patch excision shifted the channels into the potentiated mode even without a depolarizing prepulse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the elimination of VDP after patch excision.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7fbbf303-784c-4695-a83e-2e0370170901",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C30",
+      "claim": "Patch excision revealed a prominent voltage-dependent inactivation in zELK channels, particularly at very depolarized voltages (>+60 mV).",
+      "claim_type": "EXPLICIT",
+      "source": "Patch excision also revealed a prominent voltage-dependent inactivation in zELK channels, particularly at very depolarized voltages (>+60 mV) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "54c2ad9e-7fcd-415d-bb18-26ed63703a6d",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C31",
+      "claim": "Patch cramming was able to completely restore the cell-attached channel behavior within five mins.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch cramming, i.e. inserting the excised patch back into the intracellular regions of the oocyte, was able to completely restore the cell-attached channel behavior within five mins, indicating some cytosolic factors were lost in the inside-out configuration (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "d70717a8-c653-418f-ac3c-ff9933702a56",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C32",
+      "claim": "Some cytosolic factors were lost in the inside-out configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Patch cramming, i.e. inserting the excised patch back into the intracellular regions of the oocyte, was able to completely restore the cell-attached channel behavior within five mins, indicating some cytosolic factors were lost in the inside-out configuration (Figure 2A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the patch cramming experiment restoring channel behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "cd032f3b-e5f3-4e9d-ae58-cdc48abf1805",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C33",
+      "claim": "Reducing reagent DTT in the bath did not prevent the run-up, suggesting disulfide bonding was not involved in this run-up.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing reagent DTT in the bath did not prevent the run-up, suggesting disulfide bonding was not involved in this run-up (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "fad24835-9eff-4e8b-b669-03cc436fa8cb",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C34",
+      "claim": "Supplementation of the bath solution with 2 mM ATP/Mg2+ was able to prevent the run-up and maintain the VDP observed in the cell-attached configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that supplementation of the bath solution with 2 mM ATP/Mg2+ was able to prevent the run-up and maintain the VDP observed in the cell-attached configuration (Figure 2F,G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "aefbdf56-0682-427d-b948-87cc246ae982",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C35",
+      "claim": "ATP alone without Mg2+ was not able to prevent the run-up.",
+      "claim_type": "EXPLICIT",
+      "source": "ATP alone without Mg2+ was not able to prevent the run-up (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7aef4708-66b9-4e48-a0c9-a86ec62e946f",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C36",
+      "claim": "PI(4,5)P2 is required for VDP in zELK.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, consistent with previous findings in human ELK1 (Li et al., 2015), PI(4,5)P2 is also required for VDP in zELK, and hydrolysis of PI(4,5)P2 after patch excision leaves the channel in a potentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ATP/Mg2+ dependence and comparison with previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "8d235bbf-9e51-4ca2-be0e-4e754feecf18",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C37",
+      "claim": "Hydrolysis of PI(4,5)P2 after patch excision leaves the channel in a potentiated state.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, consistent with previous findings in human ELK1 (Li et al., 2015), PI(4,5)P2 is also required for VDP in zELK, and hydrolysis of PI(4,5)P2 after patch excision leaves the channel in a potentiated state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the ATP/Mg2+ dependence and comparison with previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "eaf0f143-b40d-4670-9957-3923c4896e6a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C38",
+      "claim": "The VDP was almost completely abolished in zELK channels with the eag domain deleted (zELK \u0394eag).",
+      "claim_type": "EXPLICIT",
+      "source": "We found the VDP was almost completely abolished in zELK channels with the eag domain deleted (zELK \u0394eag) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e64716cb-bd8a-4dd3-8721-1db4bd8e337a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C39",
+      "claim": "In the cell-attached configuration, the average change in V1/2 (\u0394V1/2) with a +60 mV prepulse was \u221212.7 \u00b1 1.4 mV (n = 7) for zELK \u0394eag compared to \u221254.0 \u00b1 2.0 mV (n = 14) in wild-type zELK.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cell-attached configuration; the average change in V1/2 (\u0394V1/2) with a +60 mV prepulse was \u221212.7 \u00b1 1.4 mV (n = 7) (Figure 3B) compared to \u221254.0 \u00b1 2.0 mV (n = 14) in wild-type zELK.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "86f70152-b315-48eb-9dd4-eb8baabba991",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C40",
+      "claim": "zELK \u0394eag did not show an increase in the time constant of deactivation with longer depolarizing pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, zELK \u0394eag did not show an increase in the time constant of deactivation with longer depolarizing pulses (Figure 3C) as seen in the wild-type channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7de714a8-4570-493d-9f0a-a834b1e659e9",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C41",
+      "claim": "Charge reversal mutations (zELK-R57D or D681R) that would disrupt the salt bridge not only shifted the initial V1/2, but also attenuated the VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that charge reversal mutations (zELK-R57D or D681R) that would disrupt the salt bridge not only shifted the initial V1/2, but also attenuated the VDP (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "b3ef202b-503f-45c8-ae04-47256bfaba8f",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C42",
+      "claim": "Charge-swapping mutations (zELK-R57D, D681R) partially rescued the channel behavior to that of the wild-type channels.",
+      "claim_type": "EXPLICIT",
+      "source": "When we made the charge-swapping mutations (zELK-R57D, D681R) by combining the individual reversal mutations, we partially rescued the channel behavior to that of the wild-type channels (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 3E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7400de19-d0ef-4d13-9a5a-37e2c445c0b0",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C43",
+      "claim": "The eag domain and CNBHD are interacting via the salt bridge and this interaction is supporting the VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the eag domain and CNBHD are interacting via the salt bridge and this interaction is supporting the VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutation experiments showing that disrupting the salt bridge attenuates VDP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "18393d73-cc00-49e0-a819-f1fcc0afe344",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C44",
+      "claim": "Wild-type mouse EAG1 channels do not have VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type mouse EAG1 channels do not have VDP (Figure 3G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7718e024-281d-49dd-901b-c28be3c85de0",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C45",
+      "claim": "The mEAG1-zELK chimera exhibited prominent VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mEAG1-zELK chimera exhibited prominent VDP (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "fb333685-1123-4831-828e-d7c5971f7119",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C46",
+      "claim": "The average \u0394V1/2 with the +60 mV prepulse was \u221239.1 \u00b1 2.6 mV (n = 9) for the mEAG1-zELK chimera in the cell-attached configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "The average \u0394V1/2 with the +60 mV prepulse was \u221239.1 \u00b1 2.6 mV (n = 9) for the mEAG1-zELK chimera in the cell-attached configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "490f130d-00ef-47bb-9aa4-02d4c7de299c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C47",
+      "claim": "The eag domain-CNBHD complex of zELK is sufficient to confer VDP on mEAG1.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the eag domain-CNBHD complex of zELK is sufficient to confer VDP on mEAG1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the chimera experiments showing that replacing the intracellular domains of mEAG1 with those from zELK confers VDP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "edb0581f-50ae-47ee-8d6d-68dcaed4020d",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C48",
+      "claim": "tmFRET measures the FRET between a donor fluorophore and a nonfluorescent transition metal ion acceptor.",
+      "claim_type": "EXPLICIT",
+      "source": "tmFRET measures the FRET between a donor fluorophore and a nonfluorescent transition metal ion acceptor (Latt et al., 1972; Horrocks et al., 1975; Richmond et al., 2000; Sandtner et al., 2007; Taraska et al., 2009a, 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the tmFRET technique, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "dc314805-3c8f-43f4-a1b3-a810966d851b",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C49",
+      "claim": "The efficiency of tmFRET is steeply dependent on the distance between the donor fluorophore and the acceptor metal ion.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of tmFRET is steeply dependent on the distance between the donor fluorophore and the acceptor metal ion and can be directly measured from the percent quenching of the donor's fluorescence upon addition of the metal ion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the tmFRET technique.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "19f4cfba-b209-4cae-99d6-aa230553b78a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C50",
+      "claim": "tmFRET measures much shorter distances (10\u201320 \u00c5) compared to traditional FRET and has less orientation dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to traditional FRET, tmFRET measures much shorter distances (10\u201320 \u00c5) and has less orientation dependence, making it ideal for measuring intramolecular distances in proteins (Taraska et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the tmFRET technique, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4d721805-5dcc-4327-888f-f88d5e8fb328",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C51",
+      "claim": "L-Anap was site-specifically incorporated into zELK channels using the amber (TAG) stop-codon suppression strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "L-Anap was site-specifically incorporated into zELK channels using the amber (TAG) stop-codon suppression strategy (Chatterjee et al., 2013; Kalstrup and Blunck, 2013; Aman et al., 2016; Sakata et al., 2016; Zagotta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the method used in the study, supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "ace35d41-8b9c-4d4c-95d6-b808d9812038",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C52",
+      "claim": "The emission spectrum of L-Anap overlaps with the absorption spectrum of Co2+-dihistidine, predicting a distance for 50% FRET efficiency (R0) of 12 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The emission spectrum of L-Anap overlaps with the absorption spectrum of Co2+-dihistidine, predicting a distance for 50% FRET efficiency (R0) of 12 \u00c5 (Figure 5\u2014figure supplement 1) (Zagotta et al., 2016; Aman et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated based on spectral overlap shown in Figure 5\u2014figure supplement 1 and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "0f0e97f0-258a-4112-aac3-9b5de5f2bd88",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C53",
+      "claim": "Only patches from oocytes injected with all three components (zELK-E51TAG-YFP mRNA, L-Anap, and pANAP plasmid) exhibited Anap fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Only patches from oocytes injected with all three components exhibited Anap fluorescence (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "d233f113-7d92-4171-a326-253ac541d3b2",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C54",
+      "claim": "The linear correlation between the Anap fluorescence and the YFP fluorescence and current in the patches indicates that virtually all of the Anap fluorescence was coming from L-Anap incorporated within the functional channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear correlation between the Anap fluorescence and the YFP fluorescence and current in the patches indicates that virtually all of the Anap fluorescence was coming from L-Anap incorporated within the functional channel and not from any nonspecific background fluorescence (Figure 4D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "528da402-cd59-4c41-9031-e3fcedecd95a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C55",
+      "claim": "With an increasing concentration of Co2+ applied to the intracellular face of excised patches held at \u2212100 mV, the Anap fluorescence decreased monotonically.",
+      "claim_type": "EXPLICIT",
+      "source": "With an increasing concentration of Co2+ applied to the intracellular face of excised patches held at \u2212100 mV, the Anap fluorescence decreased monotonically (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "618f3b75-4e95-4149-8fe8-e22621affe97",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C56",
+      "claim": "The Co2+-mediated quenching was reversed by applying 10 mM EDTA to chelate the divalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "The Co2+-mediated quenching was reversed by applying 10 mM EDTA to chelate the divalent cations (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a071e106-c2a2-4f14-9323-eabe4fb9f4ea",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C57",
+      "claim": "The quenching of Anap fluorescence by Co2+ is indicative of FRET between the L-Anap and the bound Co2+.",
+      "claim_type": "EXPLICIT",
+      "source": "This quenching of Anap fluorescence by Co2+ is indicative of FRET between the L-Anap and the bound Co2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed quenching and its reversal by EDTA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "1043ae48-8f5f-4629-990c-e78fe0fb80cd",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C58",
+      "claim": "The channel without the dihistidine produced only a small amount of quenching up to 1 mM Co2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel without the dihistidine produced only a small amount of quenching up to 1 mM Co2+ (Figure 5A) and was used to correct the FRET efficiency for any quenching that was not due to Co2+ binding to the dihistidine (see tmFRET efficiency calculation in the Materials and methods) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e359cf20-b1a4-4f60-8bf9-ab04093221f0",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C59",
+      "claim": "The apparent tmFRET efficiency increased with increasing Co2+ concentration and was well described by a Langmuir isotherm with an apparent affinity of around 70 \u00b5M, and a maximal FRET efficiency of 0.71 \u00b1 0.05 (n = 4).",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent tmFRET efficiency increased with increasing Co2+ concentration and was well described by a Langmuir isotherm with an apparent affinity of around 70 \u00b5M, and a maximal FRET efficiency of 0.71 \u00b1 0.05 (n = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data and fitted with a Langmuir isotherm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4bbc1dc2-3cb3-473a-b162-8f541d0a4b0f",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C60",
+      "claim": "Co2+ binding to the dihistidine in the CNBHD is in close proximity to L-Anap in the eag domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Co2+ binding to the dihistidine in the CNBHD is in close proximity to L-Anap in the eag domain, as predicted from the X-ray crystal and cryoEM structures (Haitin et al., 2013; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the high FRET efficiency observed, consistent with structural predictions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "b1615f33-c60c-4594-b662-c297229b12fe",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C61",
+      "claim": "zELK-E51Anap, K729H-E733H channels behaved similarly to wild-type zELK channels and exhibited VDP in ATP/Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "zELK-E51Anap, K729H-E733H channels behaved similarly to wild-type zELK channels and exhibited VDP in ATP/Mg2+ (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e65ba7cf-cd79-4e30-a176-080015e58698",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C62",
+      "claim": "In the presence of ATP/Mg2+, zELK-E51, K729H-E733H channels exhibited a shift in the G-V curve (\u0394V1/2) of \u221243.5 \u00b1 2.7 mV with depolarizing prepulses.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP/Mg2+, zELK-E51, K729H-E733H channels exhibited a shift in the G-V curve (\u0394V1/2) of \u221243.5 \u00b1 2.7 mV with depolarizing prepulses, only slightly less than the wild-type channel in the cell-attached configuration (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "723b6947-09e9-4716-abba-6ff451b3b2b4",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C63",
+      "claim": "With ATP/Mg2+ added to the bath, the FRET efficiency at \u2212100 mV decreased to 0.46 \u00b1 0.08 (n = 4) compared to 0.71 \u00b1 0.05 without 2 mM ATP/Mg2+ added.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, with ATP/Mg2+ added to the bath, the FRET efficiency at \u2212100 mV decreased to 0.46 \u00b1 0.08 (n = 4) compared to 0.71 \u00b1 0.05 without 2 mM ATP/Mg2+ added (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "459602ec-565c-4df6-9c16-ab56769a233e",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C64",
+      "claim": "Using the F\u00f6rster equation and an R0 of 12 \u00c5, the change in FRET efficiency corresponds to a distance change of 2.0 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the F\u00f6rster equation and an R0 of 12 \u00c5, this corresponds to a distance change of 2.0 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the measured FRET efficiencies using the F\u00f6rster equation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3d6541dc-ced7-48a6-a996-11e800dd6a65",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C65",
+      "claim": "At hyperpolarizing voltages, the two sites within the eag domain and CNBHD are further apart when the channel is not potentiated and closer together when the channel is potentiated.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that, at hyperpolarizing voltages, these two sites within the eag domain and CNBHD are further apart when the channel is not potentiated and closer together when the channel is potentiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the FRET efficiency measurements with and without ATP/Mg2+.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "9ec5e1dd-9963-4d4f-870c-11d4b99b9f53",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C66",
+      "claim": "The steady-state Anap fluorescence intensity with 1 mM Co2+ decreased at +120 mV compared to \u2212100 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "With patch-clamp fluorometry, we found the steady-state Anap fluorescence intensity with 1 mM Co2+ decreased at +120 mV compared to \u2212100 mV (Figure 5E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figures 5E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "20beef11-a6cd-43c5-b18d-a88c9d0f779d",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C67",
+      "claim": "The decrease in fluorescence was not present without dihistidine or in the absence of ATP/Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was not present without dihistidine or in the absence of ATP/Mg2+ (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "097fa77e-4c64-4a5d-9e1d-7e2d6194e070",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C68",
+      "claim": "The wavelength of the L-Anap peak emission was not significantly shifted despite the reduction in the intensity of peak emission produced by the +120 mV voltage pulse in the presence of 1 mM Co2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the wavelength of the L-Anap peak emission was not significantly shifted despite the reduction in the intensity of peak emission produced by the +120 mV voltage pulse in the presence of 1 mM Co2+ (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the spectral data shown in Figures 5G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "b2e11d1d-a7ad-4598-b46d-c2ab9b5c3a9a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C69",
+      "claim": "The decreased fluorescence is consistent with a FRET mechanism for Co2+ quenching and not a change in environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the absence of a fluorescence change without a dihistidine (Figure 5F), these results are consistent with a FRET mechanism for Co2+ quenching and not a change in environment (Figure 5G and H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spectral data and control experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "beb3ea3c-01ea-490b-a083-13ed69352e3e",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C70",
+      "claim": "Membrane depolarization causes a ATP/Mg2+-dependent and voltage-dependent rearrangement between the eag domain and CNBHD.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, similar to VDP, membrane depolarization causes a ATP/Mg2+-dependent and voltage-dependent rearrangement between the eag domain and CNBHD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the voltage-dependent changes in FRET observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "15acad91-955b-4c96-a9fc-0822edeed716",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C71",
+      "claim": "The rearrangement between the eag domain and the CNBHD is associated with VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the rearrangement between the eag domain and the CNBHD is associated with VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between FRET changes and VDP properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e17b6d11-a68c-467a-8f4c-9a7b5b84bf0a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C72",
+      "claim": "In the presence of ATP/Mg2+ and 1 mM Co2+, the Anap fluorescence decreased with a +60 mV depolarization and recovered after repolarization to \u2212100 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ATP/Mg2+ and 1 mM Co2+, the Anap fluorescence decreased with a +60 mV depolarization and recovered after repolarization to \u2212100 mV (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "b3923bbf-4d6d-466d-abca-9bd7a2d1cdd9",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C73",
+      "claim": "The time constant, 261 \u00b1 56 ms, for the decrease in Anap fluorescence was not statistically different from the time constant of approximately 308 \u00b1 26 ms for the slow component of channel activation associated with the development of VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant, 261 \u00b1 56 ms, for the decrease in Anap fluorescence was not statistically different from the time constant of approximately 308 \u00b1 26 ms for the slow component of channel activation associated with the development of VDP (Figure 6A and B, also Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data and compared statistically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4b846da7-d877-494b-a4b6-b7cd2bdb6298",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C74",
+      "claim": "In the absence of ATP/Mg2+, the channel activated quickly with the +60 mV depolarization without a slow component, and the concurrent Anap fluorescence was unchanged by the voltage step.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of ATP/Mg2+, the channel activated quickly with the +60 mV depolarization without a slow component, and the concurrent Anap fluorescence was unchanged by the voltage step (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "29afc6cb-759b-4a47-bce1-a3f186f8217a",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C75",
+      "claim": "The time constant for recovery of the Anap fluorescence at \u2212100 mV was 137.5 \u00b1 16 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant for recovery of the Anap fluorescence at \u2212100 mV was 137.5 \u00b1 16 ms (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured from experimental data shown in Figures 6A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6c8f5967-f422-4494-92e0-3bf4cdbeb13e",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C76",
+      "claim": "With an increased duration of the \u2212100 mV pulse, the VDP gradually disappeared; a 500 ms recovery pulse shifted the V1/2 back to the control value without the +60 mV prepulse.",
+      "claim_type": "EXPLICIT",
+      "source": "With an increased duration of the \u2212100 mV pulse, the VDP gradually disappeared; a 500 ms recovery pulse shifted the V1/2 back to the control value without the +60 mV prepulse (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed in the experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "df09ca37-72bf-422b-b0c9-7925da116d83",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C77",
+      "claim": "The time constant of the V1/2 recovery of wild-type channels was not significantly different from the time constant of the recovery of Anap fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constant of the V1/2 recovery of wild-type channels was not significantly different from the time constant of the recovery of Anap fluorescence (p>0.05, Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured and compared statistically.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "58a63366-32a0-48ae-9088-e71badf49f6b",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C78",
+      "claim": "There is a rearrangement between the eag domain and CNBHD that exhibits the same ATP/Mg2+-dependence, voltage-dependence, and kinetics as VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall these tmFRET experiments demonstrate that there is a rearrangement between the eag domain and CNBHD that exhibits the same ATP/Mg2+-dependence, voltage-dependence, and kinetics as VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the tmFRET experiments presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "f0d5023b-23bb-4aa2-bf18-8774d45446fd",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C79",
+      "claim": "The VDP is produced partially or fully by a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined with our finding that VDP is altered or eliminated by mutations of the eag domain and CNBHD (Figure 3), these experiments suggest that the VDP is produced partially or fully by a slow open-state dependent rearrangement of the direct interaction between the eag domain and CNBHD, which stabilizes the opening of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main mechanistic conclusion of the study, based on the combined evidence from mutations and tmFRET experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "0959992f-c465-4412-8723-f903360ec6bd",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C80",
+      "claim": "hELK1 is downregulated by PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been shown that hELK1 is downregulated by PI(4,5)P2 (Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "4089b941-f124-4e76-9265-d63248382c86",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C81",
+      "claim": "For both hELK1 and zELK, PI(4,5)P2 degradation leaves the channels in a potentiated mode that no longer undergoes VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for both hELK1 (Li et al., 2015) and zELK, PI(4,5)P2 degradation leaves the channels in a potentiated mode that no longer undergoes VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental observations in this study and comparison with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "05fa15de-b1b3-44ab-a235-e8f781dcd411",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C82",
+      "claim": "VDP could result from a mechanism where PI(4,5)P2 binds with higher affinity to the closed state of the channel than the open state, and unbinds slowly upon depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that VDP could result from a simple mechanism where PI(4,5)P2 binds with higher affinity to the closed state of the channel than the open state, and unbinds slowly upon depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic proposal based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e89fec56-1958-42ad-9642-67f3ca1f9626",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C83",
+      "claim": "hERG channels are thought to undergo VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hERG channels are also thought to undergo VDP (Tan et al., 2012; Goodchild et al., 2015) but are not appreciably regulated by PI(4,5)P2 (Kruse and Hille, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "67157998-c308-4783-a406-bb75cc902430",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C84",
+      "claim": "hERG channels are not appreciably regulated by PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hERG channels are also thought to undergo VDP (Tan et al., 2012; Goodchild et al., 2015) but are not appreciably regulated by PI(4,5)P2 (Kruse and Hille, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "9d64a42f-f425-4938-9324-7b59cd1be3b7",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C85",
+      "claim": "Direct interaction between the eag domain and CNBHD in hERG channels has been demonstrated by multiple approaches including FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct interaction between the eag domain and CNBHD in hERG channels has been demonstrated by multiple approaches including FRET (Gianulis et al., 2013; Gustina and Trudeau, 2009, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "54710e51-35f7-42f6-825b-d0c4131968c1",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C86",
+      "claim": "In hERG channels, the eag domain-CNBHD interaction is necessary to maintain the slow deactivation and normal inactivation of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In hERG channels, the eag domain-CNBHD interaction is necessary to maintain the slow deactivation and normal inactivation of the channel (Gianulis et al., 2013; Gustina and Trudeau, 2009, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "90ae7ff1-64e4-48bb-8c61-06966e1d0815",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C87",
+      "claim": "The eag domain-CNBHD interface of ERG channels is altered in some forms of long QT syndrome and schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the eag domain-CNBHD interface of ERG channels is altered in some forms of long QT syndrome and schizophrenia (Chen et al., 1999; Huffaker et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6a3d1253-f312-4c45-a068-e966209ba744",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C88",
+      "claim": "Direct interaction between the EAG domain and CNBHD was demonstrated using X-ray crystallography and cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "In EAG channels, direct interaction between the EAG domain and CNBHD was demonstrated using X-ray crystallography and cryo-EM (Haitin et al., 2013; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "e931de25-0717-4c33-b1df-4267555628a6",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C89",
+      "claim": "The eag domain-CNBHD complex has been shown to adopt two closely related but different conformations in X-ray crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the eag domain-CNBHD complex has been shown to adopt two closely related but different conformations in X-ray crystallography (Haitin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "15b7dc16-cf88-4991-b4a3-f6a6d48ba6cb",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C90",
+      "claim": "Breaking the critical salt bridge between eag domain and CNBHD significantly altered activation gating in EAG channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking the critical salt bridge between eag domain and CNBHD significantly altered activation gating in EAG channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge, likely from previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3ab86d2e-3156-469d-b451-f166c3e52f39",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C91",
+      "claim": "Mutations at the eag domain-CNBHD interface of EAG channels have been associated with cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, mutations at this interface of EAG channels have being associated with cancer (Haitin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "1a5ddb40-7cf6-40f2-9e85-cbc534b1c216",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C92",
+      "claim": "For both ERG and EAG channels, the eag domain-CNBHD interaction has been shown to be intersubunit rather than intrasubunit.",
+      "claim_type": "EXPLICIT",
+      "source": "For both ERG and EAG channels, the interaction has been shown to be intersubunit rather than intrasubunit (Gianulis et al., 2013; Whicher and MacKinnon, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "b22389e6-5875-4b88-bde4-85b3476817ca",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C93",
+      "claim": "Intersubunit eag domain-CNBHD interactions are a general self-regulatory mechanism among all three subfamilies of KCNH channels, EAG, ERG, and ELK.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that intersubunit eag domain-CNBHD interactions are a general self-regulatory mechanism among all three subfamilies of KCNH channels, EAG, ERG, and ELK; though the forms of regulation are different for the individual channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion based on the findings in this study and previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "ae1dced1-d463-4d18-a4a3-142aff33d3d7",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C94",
+      "claim": "For KCNH channels, a rearrangement of the eag domain-CNBHD interaction is necessary for VDP.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that, for KCNH channels, a rearrangement of the eag domain-CNBHD interaction is necessary for VDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental findings in this study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7e0bdbcd-0821-46ea-b2e9-6753cfa58bcc",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C95",
+      "claim": "There is a rearrangement of the eag domain-CNBHD interaction coupled to the opening of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we suggest that there is a rearrangement of the eag domain-CNBHD interaction coupled to the opening of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings showing state-dependent changes in FRET.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "438d95d9-b398-45c8-86ea-6f4ba4c31340",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C96",
+      "claim": "Since the rearrangement is coupled to opening, it occurs preferentially at depolarized voltage and stabilizes channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the rearrangement is coupled to opening, it occurs preferentially at depolarized voltage and stabilizes channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the voltage-dependence of the rearrangement and thermodynamic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "51bfcaf8-865b-40c7-8986-7611afed7b8b",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C97",
+      "claim": "Thermodynamics dictates that any open state-dependent transition will stabilize channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, thermodynamics dictates that any open state-dependent transition will stabilize channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on thermodynamic principles.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "8e970f89-587a-4afc-9daa-613c285d6d63",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "claim_id": "C98",
+      "claim": "The presence of a slow state-dependent transition might be a general theme that underlies the VDP of all channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while the molecular mechanism for VDP might be distinct for different channels, the presence of a slow state-dependent transition might be a general theme that underlies the VDP of all channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative generalization based on the findings in this study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "zELK channels exhibit voltage-dependent potentiation (VDP) characterized by double exponential activation kinetics (~4 ms fast, ~200 ms slow), a ~60 mV hyperpolarizing shift in G-V curve with depolarizing prepulses, 3.5-fold increase in tail current amplitude, and slowing of deactivation (8.4 ms to 16.9 ms). A simple kinetic model with a slow transition to a potentiated mode quantitatively accounts for these observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 provide direct experimental measurements from Figures 1B-D showing the three manifestations of VDP with appropriate sample sizes (n=11-12) and statistical reporting. Claim C23 demonstrates that a kinetic model can recapitulate the experimental observations (Figures 1F-H), providing mechanistic support. The data are internally consistent and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Patch excision causes run-up in zELK channel activity (2.2-fold increase in tail current, V1/2 shift to -52.5 mV over 20 minutes) and eliminates VDP. Patch cramming restores cell-attached behavior within 5 minutes, indicating loss of cytosolic factors in the inside-out configuration. Patch excision also reveals voltage-dependent inactivation at very depolarized voltages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C31 are supported by direct experimental observations in Figures 2A-C with appropriate sample sizes (n=6-7). The patch cramming experiment (C31) provides strong evidence for the loss of cytosolic factors (C32). The temporal progression and reversibility are well-documented, supporting the inference about cytosolic factor loss.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "7452a076-3b88-43d8-a707-e4f444a290a9",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ATP/Mg2+ (2 mM) prevents run-up and maintains VDP in excised patches, while DTT does not prevent run-up and ATP alone without Mg2+ is ineffective. This suggests PI(4,5)P2 is required for VDP in zELK, and its hydrolysis after patch excision leaves channels in a potentiated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 are directly supported by experimental data in Figures 2F-H and Figure 2\u2014figure supplement 1. The inference about PI(4,5)P2 requirement (C36-C37) is reasonable based on ATP/Mg2+ dependence and comparison with previous literature on hELK1, though direct PI(4,5)P2 measurements are not provided. The controls with DTT and ATP alone strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "ef6b52d2-2fd3-4935-8830-f1bd52e7546b",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Deletion of the eag domain (zELK \u0394eag) almost completely abolishes VDP, reducing \u0394V1/2 from -54.0 mV (wild-type) to -12.7 mV and eliminating the increase in deactivation time constant with longer depolarizing pulses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are directly supported by experimental data in Figures 3A-C with appropriate sample sizes (n=7 for \u0394eag, n=14 for WT). The dramatic reduction in VDP with eag domain deletion provides strong evidence for its involvement in the mechanism. Statistical comparisons are implicit in the reported values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3cf6dfa8-7bfa-42c3-b6be-8167df372c63",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Charge reversal mutations (R57D or D681R) that disrupt a predicted salt bridge between the eag domain and CNBHD attenuate VDP, while charge-swapping mutations (R57D+D681R) partially rescue wild-type behavior. This indicates the eag domain and CNBHD interact via this salt bridge to support VDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by experimental data in Figures 3E-F with appropriate sample sizes (n=4-5). The charge-swap rescue experiment (C42) provides strong evidence for a specific salt bridge interaction. The inference (C43) is well-supported by the mutation data, though the partial rescue suggests additional interactions may be involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "56bd4f4c-fc62-4763-a6ff-8974fe48f2b4",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wild-type mouse EAG1 channels lack VDP, but a chimera with mEAG1 transmembrane domains (S1-S6) and zELK intracellular domains (N- and C-terminal) exhibits prominent VDP (\u0394V1/2 = -39.1 mV). This demonstrates that the eag domain-CNBHD complex of zELK is sufficient to confer VDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are directly supported by experimental data in Figures 3G-I with appropriate sample size (n=9 for chimera). The chimera experiment provides strong evidence for sufficiency of the intracellular domains. The inference (C47) is well-justified by the gain-of-function in the chimera, though the slightly reduced VDP compared to wild-type zELK suggests the transmembrane domain may also contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a982c05d-d7b2-4595-9672-f22fc83c4e4e",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "L-Anap was site-specifically incorporated into zELK channels at position E51 using amber stop-codon suppression. Only oocytes injected with all three components (mRNA, L-Anap, pANAP plasmid) showed Anap fluorescence, which correlated linearly with YFP fluorescence and current, indicating specific incorporation into functional channels. The L-Anap/Co2+-dihistidine pair has an R0 of 12 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by experimental data in Figures 4C-E and Figure 5\u2014figure supplement 1. The controls (C53) and linear correlations (C54) provide strong evidence for specific incorporation. The R0 calculation (C52) is based on spectral overlap measurements and established FRET theory. The methodology is well-established and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "1295226c-39d9-45f4-85b9-53bdca51912d",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Co2+ quenches Anap fluorescence in a concentration-dependent manner (maximal FRET efficiency 0.71 \u00b1 0.05, apparent affinity ~70 \u03bcM) that is reversed by EDTA. Channels without dihistidine show minimal quenching. This indicates Co2+ binding to the dihistidine in CNBHD is in close proximity to L-Anap in the eag domain, consistent with structural predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 are directly supported by experimental data in Figures 5A-B and Figure 5\u2014figure supplement 2 with appropriate sample size (n=4). The EDTA reversal (C56) and dihistidine control (C58) provide strong evidence for specific FRET. The Langmuir isotherm fit (C59) is appropriate. The inference about proximity (C60) is well-supported by the high FRET efficiency and consistent with structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The tmFRET-labeled channels (zELK-E51Anap, K729H-E733H) exhibit VDP similar to wild-type (\u0394V1/2 = -43.5 mV). FRET efficiency at -100 mV decreases from 0.71 \u00b1 0.05 (without ATP/Mg2+) to 0.46 \u00b1 0.08 (with ATP/Mg2+), corresponding to a 2.0 \u00c5 distance increase. This indicates the eag domain and CNBHD are further apart in the non-potentiated state and closer in the potentiated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 are directly supported by experimental data in Figures 5C-D and 5B with appropriate sample size (n=4). The distance calculation (C64) using the F\u00f6rster equation is appropriate. The inference (C65) is well-supported by the FRET efficiency changes, though the 2.0 \u00c5 change is relatively small and near the resolution limit of the technique. The functional validation (C61-C62) strengthens confidence in the measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "5cf1e43e-136f-4e02-965f-846984efd645",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Steady-state Anap fluorescence with 1 mM Co2+ decreases at +120 mV compared to -100 mV in an ATP/Mg2+-dependent manner, without spectral shift in emission wavelength. This voltage-dependent decrease requires dihistidine and ATP/Mg2+, indicating membrane depolarization causes an ATP/Mg2+-dependent rearrangement between eag domain and CNBHD associated with VDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are directly supported by experimental data in Figures 5E-H with appropriate sample size (n=5). The controls without dihistidine and without ATP/Mg2+ (C67) and the spectral analysis (C68) provide strong evidence for a FRET mechanism rather than environmental effects (C69). The inferences about voltage-dependent rearrangement (C70-C71) are well-supported by the correlation with VDP properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "d2facd53-3947-41fb-893a-9ce00c506e8c",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The kinetics of Anap fluorescence changes match the kinetics of VDP development and recovery. The time constant for fluorescence decrease during depolarization (261 \u00b1 56 ms) matches the slow component of activation (308 \u00b1 26 ms), and recovery time constant (137.5 \u00b1 16 ms) matches V1/2 recovery. These changes are ATP/Mg2+-dependent. This demonstrates a rearrangement between eag domain and CNBHD with the same ATP/Mg2+-dependence, voltage-dependence, and kinetics as VDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 are directly supported by experimental data in Figure 6A-C and Figure 6\u2014figure supplement 1 with appropriate sample sizes (n=4-6). The statistical comparison showing no significant difference between fluorescence and VDP kinetics (C73, C77) provides strong evidence for coupling. The ATP/Mg2+ dependence (C74) strengthens the connection. The summary conclusion (C78) is well-justified by the comprehensive kinetic matching.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "6fbd0b1f-23a8-4c5a-9253-d34114ecfb73",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "VDP of zELK channels involves structural interaction between the eag domain and CNBHD, with a rearrangement exhibiting the kinetics, voltage-dependence, and ATP-dependence of VDP. The authors propose VDP is produced by a slow open-state dependent rearrangement of this interaction that stabilizes channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent the main conclusions synthesizing results from deletion experiments (C38-C40), mutation experiments (C41-C43), chimera experiments (C44-C47), and tmFRET measurements (C55-C78). The convergence of multiple independent experimental approaches (deletions, mutations, chimeras, FRET, kinetics) provides strong support for the proposed mechanism. The open-state dependence is supported by the voltage-dependence and kinetic coupling of the rearrangement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "PI(4,5)P2 is required for VDP in zELK, and its degradation leaves channels in a potentiated state. The authors propose VDP could result from PI(4,5)P2 binding with higher affinity to the closed state and unbinding slowly upon depolarization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C37 are inferences based on ATP/Mg2+ dependence and comparison with previous literature on hELK1 (C80-C81), but direct PI(4,5)P2 measurements are not provided in this study. The proposed mechanism (C82) is explicitly speculative. While the ATP/Mg2+ dependence is well-documented (C34-C35), the specific role of PI(4,5)P2 versus other ATP-dependent processes is not definitively established. Additional experiments with direct PI(4,5)P2 manipulation would be needed to confirm this mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors hypothesize that rearrangement of the eag domain-CNBHD interaction is necessary for VDP in KCNH channels generally, and that this rearrangement is coupled to channel opening, occurring preferentially at depolarized voltages and stabilizing opening. They suggest a slow state-dependent transition might be a general theme underlying VDP in all channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C96 are hypotheses and generalizations based on the zELK data and comparison with ERG and EAG channels from literature. While the thermodynamic principle (C97) is sound, the generalization to all KCNH channels (C94) and all channels exhibiting VDP (C98) extends beyond the experimental data presented. The authors acknowledge this is speculative (C98). The hypothesis is reasonable but requires testing in other channel types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "acc8374c-0668-4953-869c-fe6d59a266d2",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on KCNH channel family: ELK channels are abundantly expressed in brain, ERG channels function in cardiac repolarization, EAG channels are expressed in cancer. KCNH channels have characteristic structural features including four subunits with six transmembrane segments, a CNBHD that doesn't bind cyclic nucleotides but contains an intrinsic ligand, and an interaction between the eag domain and CNBHD critical for function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from the literature, supported by appropriate citations (C6-C16). Claim C1 is stated as established knowledge. This background information provides context for the study but does not represent new findings. The citations appear appropriate and the statements are consistent with the field's understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "3b0c94a4-08cc-4a88-aafb-c555242edca1",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "tmFRET measures FRET between a donor fluorophore and a nonfluorescent transition metal ion acceptor, with efficiency steeply dependent on distance. Compared to traditional FRET, tmFRET measures shorter distances (10-20 \u00c5) with less orientation dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the established tmFRET technique, supported by appropriate citations to previous literature. This is methodological background that justifies the choice of technique. The properties described are well-established in the field and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    },
+    {
+      "id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278",
+      "content_id": "6477d099-6bcb-4669-8dd5-83c98202ae95",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Literature review of eag domain-CNBHD interactions in ERG and EAG channels: These interactions have been demonstrated by multiple approaches, are necessary for proper channel function, are altered in disease states (Long QT syndrome, schizophrenia, cancer), and are intersubunit rather than intrasubunit. The authors conclude this is a general self-regulatory mechanism among KCNH channel subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C92 represent established knowledge from the literature with appropriate citations. The generalization (C93) is a reasonable inference based on the findings in this study combined with previous literature, though it acknowledges that forms of regulation differ among individual channels. This provides important context for interpreting the zELK results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:58:12.532863Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6600b26c-619d-4234-97ca-7f7206b17d8d",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "81ca97c4-fb9c-43ad-850f-3cf198c65dca",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "a54dd95f-c652-40ca-b3e5-8de79ca3b288",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "60503762-408b-44d5-bb43-4ce93a682431",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "61df3531-abe2-4eda-965a-79b28a471578",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "f0bd29db-f6d7-4b1d-898f-a7a7539968ec",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "fb5f1cd8-aa3a-4c71-aa58-0b1ee9d65ae2",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "2df30da4-68b3-42b9-9816-d2d29505b9fc",
+      "result_id": "f2d0df99-7d5c-4f75-9cde-9d5741a63cec"
+    },
+    {
+      "claim_id": "4abeeae8-195d-4b7d-99a8-922aa1efc7b0",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "adcbcc38-0f68-473b-b3e0-226815e5063c",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "4776276b-477f-4fe6-ba6d-2bcde8c6e448",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "83ca177b-40bf-4f8e-abcf-03413247a3ad",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "4b2bb760-9065-4aba-b8af-5554a23ffd33",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "6bcaad14-891c-4ce3-b362-d8551df6d7cb",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "7fbbf303-784c-4695-a83e-2e0370170901",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "54c2ad9e-7fcd-415d-bb18-26ed63703a6d",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "d70717a8-c653-418f-ac3c-ff9933702a56",
+      "result_id": "99bd8bc7-b9a7-47fb-b9d0-fd4dd95fb3f9"
+    },
+    {
+      "claim_id": "cd032f3b-e5f3-4e9d-ae58-cdc48abf1805",
+      "result_id": "7452a076-3b88-43d8-a707-e4f444a290a9"
+    },
+    {
+      "claim_id": "fad24835-9eff-4e8b-b669-03cc436fa8cb",
+      "result_id": "7452a076-3b88-43d8-a707-e4f444a290a9"
+    },
+    {
+      "claim_id": "aefbdf56-0682-427d-b948-87cc246ae982",
+      "result_id": "7452a076-3b88-43d8-a707-e4f444a290a9"
+    },
+    {
+      "claim_id": "7aef4708-66b9-4e48-a0c9-a86ec62e946f",
+      "result_id": "7452a076-3b88-43d8-a707-e4f444a290a9"
+    },
+    {
+      "claim_id": "8d235bbf-9e51-4ca2-be0e-4e754feecf18",
+      "result_id": "7452a076-3b88-43d8-a707-e4f444a290a9"
+    },
+    {
+      "claim_id": "eaf0f143-b40d-4670-9957-3923c4896e6a",
+      "result_id": "ef6b52d2-2fd3-4935-8830-f1bd52e7546b"
+    },
+    {
+      "claim_id": "e64716cb-bd8a-4dd3-8721-1db4bd8e337a",
+      "result_id": "ef6b52d2-2fd3-4935-8830-f1bd52e7546b"
+    },
+    {
+      "claim_id": "86f70152-b315-48eb-9dd4-eb8baabba991",
+      "result_id": "ef6b52d2-2fd3-4935-8830-f1bd52e7546b"
+    },
+    {
+      "claim_id": "7de714a8-4570-493d-9f0a-a834b1e659e9",
+      "result_id": "3cf6dfa8-7bfa-42c3-b6be-8167df372c63"
+    },
+    {
+      "claim_id": "b3ef202b-503f-45c8-ae04-47256bfaba8f",
+      "result_id": "3cf6dfa8-7bfa-42c3-b6be-8167df372c63"
+    },
+    {
+      "claim_id": "7400de19-d0ef-4d13-9a5a-37e2c445c0b0",
+      "result_id": "3cf6dfa8-7bfa-42c3-b6be-8167df372c63"
+    },
+    {
+      "claim_id": "18393d73-cc00-49e0-a819-f1fcc0afe344",
+      "result_id": "56bd4f4c-fc62-4763-a6ff-8974fe48f2b4"
+    },
+    {
+      "claim_id": "7718e024-281d-49dd-901b-c28be3c85de0",
+      "result_id": "56bd4f4c-fc62-4763-a6ff-8974fe48f2b4"
+    },
+    {
+      "claim_id": "fb333685-1123-4831-828e-d7c5971f7119",
+      "result_id": "56bd4f4c-fc62-4763-a6ff-8974fe48f2b4"
+    },
+    {
+      "claim_id": "490f130d-00ef-47bb-9aa4-02d4c7de299c",
+      "result_id": "56bd4f4c-fc62-4763-a6ff-8974fe48f2b4"
+    },
+    {
+      "claim_id": "4d721805-5dcc-4327-888f-f88d5e8fb328",
+      "result_id": "a982c05d-d7b2-4595-9672-f22fc83c4e4e"
+    },
+    {
+      "claim_id": "ace35d41-8b9c-4d4c-95d6-b808d9812038",
+      "result_id": "a982c05d-d7b2-4595-9672-f22fc83c4e4e"
+    },
+    {
+      "claim_id": "0f0e97f0-258a-4112-aac3-9b5de5f2bd88",
+      "result_id": "a982c05d-d7b2-4595-9672-f22fc83c4e4e"
+    },
+    {
+      "claim_id": "d233f113-7d92-4171-a326-253ac541d3b2",
+      "result_id": "a982c05d-d7b2-4595-9672-f22fc83c4e4e"
+    },
+    {
+      "claim_id": "528da402-cd59-4c41-9031-e3fcedecd95a",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "618f3b75-4e95-4149-8fe8-e22621affe97",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "a071e106-c2a2-4f14-9323-eabe4fb9f4ea",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "1043ae48-8f5f-4629-990c-e78fe0fb80cd",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "e359cf20-b1a4-4f60-8bf9-ab04093221f0",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "4bbc1dc2-3cb3-473a-b162-8f541d0a4b0f",
+      "result_id": "1295226c-39d9-45f4-85b9-53bdca51912d"
+    },
+    {
+      "claim_id": "b1615f33-c60c-4594-b662-c297229b12fe",
+      "result_id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6"
+    },
+    {
+      "claim_id": "e65ba7cf-cd79-4e30-a176-080015e58698",
+      "result_id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6"
+    },
+    {
+      "claim_id": "723b6947-09e9-4716-abba-6ff451b3b2b4",
+      "result_id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6"
+    },
+    {
+      "claim_id": "459602ec-565c-4df6-9c16-ab56769a233e",
+      "result_id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6"
+    },
+    {
+      "claim_id": "3d6541dc-ced7-48a6-a996-11e800dd6a65",
+      "result_id": "dc1af3f8-9de5-46f4-9986-98ff3f11efc6"
+    },
+    {
+      "claim_id": "9ec5e1dd-9963-4d4f-870c-11d4b99b9f53",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "20beef11-a6cd-43c5-b18d-a88c9d0f779d",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "097fa77e-4c64-4a5d-9e1d-7e2d6194e070",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "b2e11d1d-a7ad-4598-b46d-c2ab9b5c3a9a",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "beb3ea3c-01ea-490b-a083-13ed69352e3e",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "15acad91-955b-4c96-a9fc-0822edeed716",
+      "result_id": "5cf1e43e-136f-4e02-965f-846984efd645"
+    },
+    {
+      "claim_id": "e17b6d11-a68c-467a-8f4c-9a7b5b84bf0a",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "b3923bbf-4d6d-466d-abca-9bd7a2d1cdd9",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "4b846da7-d877-494b-a4b6-b7cd2bdb6298",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "29afc6cb-759b-4a47-bce1-a3f186f8217a",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "6c8f5967-f422-4494-92e0-3bf4cdbeb13e",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "df09ca37-72bf-422b-b0c9-7925da116d83",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "58a63366-32a0-48ae-9088-e71badf49f6b",
+      "result_id": "d2facd53-3947-41fb-893a-9ce00c506e8c"
+    },
+    {
+      "claim_id": "3b47ed59-e5be-4730-b452-502936180c59",
+      "result_id": "6fbd0b1f-23a8-4c5a-9253-d34114ecfb73"
+    },
+    {
+      "claim_id": "e0a9a579-18f3-4e86-93ca-95b8b2fedda4",
+      "result_id": "6fbd0b1f-23a8-4c5a-9253-d34114ecfb73"
+    },
+    {
+      "claim_id": "a0fda4ea-a405-4ef6-95fd-515c5b7a80ae",
+      "result_id": "6fbd0b1f-23a8-4c5a-9253-d34114ecfb73"
+    },
+    {
+      "claim_id": "f0d5023b-23bb-4aa2-bf18-8774d45446fd",
+      "result_id": "6fbd0b1f-23a8-4c5a-9253-d34114ecfb73"
+    },
+    {
+      "claim_id": "7aef4708-66b9-4e48-a0c9-a86ec62e946f",
+      "result_id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f"
+    },
+    {
+      "claim_id": "8d235bbf-9e51-4ca2-be0e-4e754feecf18",
+      "result_id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f"
+    },
+    {
+      "claim_id": "0959992f-c465-4412-8723-f903360ec6bd",
+      "result_id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f"
+    },
+    {
+      "claim_id": "4089b941-f124-4e76-9265-d63248382c86",
+      "result_id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f"
+    },
+    {
+      "claim_id": "05fa15de-b1b3-44ab-a235-e8f781dcd411",
+      "result_id": "a3ba8a3d-0ae0-49b3-9fd0-fbda6e493b2f"
+    },
+    {
+      "claim_id": "ae1dced1-d463-4d18-a4a3-142aff33d3d7",
+      "result_id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2"
+    },
+    {
+      "claim_id": "7e0bdbcd-0821-46ea-b2e9-6753cfa58bcc",
+      "result_id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2"
+    },
+    {
+      "claim_id": "438d95d9-b398-45c8-86ea-6f4ba4c31340",
+      "result_id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2"
+    },
+    {
+      "claim_id": "51bfcaf8-865b-40c7-8986-7611afed7b8b",
+      "result_id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2"
+    },
+    {
+      "claim_id": "8e970f89-587a-4afc-9daa-613c285d6d63",
+      "result_id": "61832929-b0b3-4ec7-92d5-1f0cb7c0ecf2"
+    },
+    {
+      "claim_id": "9f1f34da-5d4c-4147-af19-18056f9b6590",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "1bc3fdc5-c2d1-430d-bde8-e8d9e5bbd300",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "c3b6149a-f829-43a5-8756-49581e85a489",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "4e0263eb-9a03-4e32-bb8a-da18576fa6ea",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "57431222-754b-4815-9172-453cc78c7386",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "3eb21303-d57b-47a0-b7ff-1c796f99453c",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "a247e758-fc80-4ab0-8d89-fdde37142c7c",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "ba577ec9-644b-449e-85dd-e07849e4362c",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "abba9d32-d986-4374-8370-024d2bdd6be5",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "e93963e7-7191-4b55-9cde-13bd45f7fcee",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "7d9f9ddb-cbd8-44d0-a6c2-17cb35654226",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "dd75a18f-ee14-4d3d-939f-d07780924bd9",
+      "result_id": "acc8374c-0668-4953-869c-fe6d59a266d2"
+    },
+    {
+      "claim_id": "edb0581f-50ae-47ee-8d6d-68dcaed4020d",
+      "result_id": "3b0c94a4-08cc-4a88-aafb-c555242edca1"
+    },
+    {
+      "claim_id": "dc314805-3c8f-43f4-a1b3-a810966d851b",
+      "result_id": "3b0c94a4-08cc-4a88-aafb-c555242edca1"
+    },
+    {
+      "claim_id": "19f4cfba-b209-4cae-99d6-aa230553b78a",
+      "result_id": "3b0c94a4-08cc-4a88-aafb-c555242edca1"
+    },
+    {
+      "claim_id": "e89fec56-1958-42ad-9642-67f3ca1f9626",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "67157998-c308-4783-a406-bb75cc902430",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "9d64a42f-f425-4938-9324-7b59cd1be3b7",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "54710e51-35f7-42f6-825b-d0c4131968c1",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "90ae7ff1-64e4-48bb-8c61-06966e1d0815",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "6a3d1253-f312-4c45-a068-e966209ba744",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "e931de25-0717-4c33-b1df-4267555628a6",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "15b7dc16-cf88-4991-b4a3-f6a6d48ba6cb",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "3ab86d2e-3156-469d-b451-f166c3e52f39",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "1a5ddb40-7cf6-40f2-9e85-cbc534b1c216",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    },
+    {
+      "claim_id": "b22389e6-5875-4b88-bde4-85b3476817ca",
+      "result_id": "5c81dc06-17cd-4c73-b6f3-5ebf3978f278"
+    }
+  ],
+  "comparisons": []
+}

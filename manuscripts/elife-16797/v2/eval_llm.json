@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors characterized the planarian genome annotation, identifying that 75% of protein-coding genes are multiexonic with a bimodal intron length distribution (centered at 57 bp and 1-10 Kbps), and comprehensively identified 12,276 alternative splicing events including 2,529 alternative exons and 262 microexons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are supported by systematic genome annotation and RNA-Seq analysis using the vast-tools pipeline. The computational methods are well-described, and the bimodal intron distribution is visualized in figures. These foundational genomic characterizations provide the basis for subsequent AS analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors identified 246 X1-included and 256 X1-excluded neoblast-differential AS events, with all 22 tested events validated by RT-PCR showing high correlation (R\u00b2=0.92) with RNA-Seq estimates. Among these, 64 microexons were differentially regulated, with 82.8% more included in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 are strongly supported by both computational RNA-Seq analysis and experimental RT-PCR validation. The 100% validation rate (22/22) and high correlation coefficient provide robust evidence for the neoblast-differential AS program. The microexon bias toward differentiated cells is consistent with vertebrate patterns (C13).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C21"
+    ],
+    "result": "Neoblast-differential exons predominantly (68.5%) overlap protein-coding regions and conserve reading frames, are enriched in cytoskeleton and cell signaling functions, and significantly overlap disordered protein regions while avoiding structured domains (p\u22644.7\u00d710\u207b\u2075), suggesting they may modulate protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 are supported by computational analyses using TransDecoder, Gene Ontology enrichment, Disopred2, and PFAM domain annotation. The statistical significance for disorder/domain enrichment is strong. However, C21 (modulation of protein-protein interactions) is speculative and based on analogy to mammals (C20), not direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors discovered an unexpected abundance of neoblast-specific retained introns (107 X1-included vs 41 X1-excluded), which are longer than other introns (p=7.1\u00d710\u207b\u00b9\u2070), belong to genes more highly expressed in differentiated cells, and nearly all disrupt reading frames specifically in neoblasts (p<2.2\u00d710\u207b\u00b9\u2076), suggesting they ensure early-transcribed differentiation genes remain inactive in neoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are well-supported by RNA-Seq analysis, RT-PCR validation (11/11 X1-included introns confirmed), statistical tests, and Gene Ontology enrichment showing differentiation-related functions. The mechanistic interpretation (C29) is reasonable given the data. However, C30 (selective activation upon differentiation) is speculative and based on analogy to mammalian ESCs without direct experimental validation in planarians.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The neoblast-differential AS program is highly conserved between S. mediterranea and D. japonica (diverged ~85 million years ago): 95.2% (20/21) of cassette exons are alternatively spliced in both species, with 80% (16/20) showing conserved differential regulation, and 50% (3/6) of IR events also conserved\u2014a higher conservation rate than observed between mammalian ESC-differential exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are strongly supported by RT-PCR validation in D. japonica and comparison with mammalian data (C36, citing Han et al., 2013). The high conservation rates (80-95%) across 85 million years of evolution provide compelling evidence for functional importance. The divergence time comparison to human-mouse (C31-C32) appropriately contextualizes the evolutionary distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors identified 15 orthologous gene groups with neoblast/ESC-differential exons in both planarians and humans, with 10 groups showing stem cell-regulated exons in similar protein regions, and at least 4 groups (add3, eml4, fmnl3, ppfibp1) having partly orthologous intervening sequences despite extensive intron-exon rearrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by orthology analysis using Inparanoid and BLAST, protein alignments, and intron position mapping. The identification of conserved AS regulation in similar protein regions across ~500 million years of evolution is notable, though the number of conserved events is relatively small (15 groups), indicating largely lineage-specific AS programs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors identified over 300 putative RNA binding proteins in planarians and screened AS factors by RNAi. BRULI (CELF family) showed the strongest X1 enrichment and was previously reported as essential for stem cell self-renewal. RNAi of bruli and ptbp abolished regeneration, while combined CELF knockdown (Xins-enriched) caused movement defects without affecting regeneration, and mbnl knockdown significantly delayed regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by computational annotation (InterProScan, BLAST), RNA-Seq expression analysis, and regeneration assays. The regeneration phenotypes are clearly documented. However, the study lacks quantification of regeneration delay severity and statistical analysis of regeneration rates. The ptbp phenotype (C44) receives minimal characterization compared to bruli and mbnl.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "RT-PCR analysis of FACS-sorted X1 cells after RNAi showed that only bruli knockdown induced dramatic changes in AS inclusion levels toward the differentiated pattern, suggesting BRULI acts as a positive regulator of neoblast AS. Conversely, mbnl knockdown in whole worms showed the most widespread changes toward the neoblast pattern, suggesting MBNL proteins act as negative regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by RT-PCR analysis of 8 representative AS events in FACS-sorted cells (C47) and RNA-Seq analysis of whole worms (C49). The opposing directional effects support the antagonistic regulatory model. However, C48 and C50 are inferred regulatory roles rather than direct mechanistic demonstrations. The whole worm analysis for mbnl (C49) is less cell-type-specific than the X1 analysis for bruli (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "MBNL consensus motifs are the most significantly enriched in downstream introns of X1-excluded cassette exons, consistent with planarian MBNL proteins enhancing X1-excluded exons via binding to downstream introns, as described for mammalian MBNL proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is supported by computational motif enrichment analysis using RNAcompete-derived binding profiles. However, C52 is an inference based on motif location and mammalian analogy, not direct binding experiments in planarians. The claim of \"enhancing\" is mechanistically reasonable but not experimentally demonstrated in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Four mbnl orthologs were identified in planarians: mbnl-1 (canonical with two zinc finger pairs) and mbnl-like-1,2,3 (single zinc finger pairs). All showed Xins enrichment. In situ hybridization revealed mbnl-1 has widespread expression, mbnl-like-1,2 are mainly in gut tissue, and mbnl-like-3 showed no detectable expression. Single-cell data confirmed mbnl-1, mbnl-like-1,2 expression in epidermis. BRULI was specifically expressed in neoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by sequence analysis, RNA-Seq expression data, whole mount in situ hybridization, and analysis of published single-cell sequencing data. The complementary expression patterns of BRULI (neoblast-specific) and MBNL factors (differentiated cell-enriched) support their antagonistic regulatory roles. The lack of mbnl-like-3 detection (C57) is noted but not further investigated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNA-Seq of FACS-sorted cells after RNAi showed bruli knockdown induced strong changes in X1 toward differentiated patterns (p=1.4\u00d710\u207b\u00b9\u2079), while mbnl knockdown induced opposite changes in Xins (p=2.1\u00d710\u207b\u00b9\u00b9). All 19 tested changes were validated by RT-PCR (R\u00b2=0.87). Remarkably, 37.9% (33/87) of mbnl-regulated events were also affected by bruli in the opposite direction (p=2.2\u00d710\u207b\u2077). BRULI regulated 33.6% of X1-retained introns and MBNL affected 37% of Xins-enriched microexons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are strongly supported by RNA-Seq analysis with biological replicates, RT-PCR validation (100% confirmation rate), and statistical testing. The opposing directional effects (C64) and significant overlap of regulated events provide compelling evidence for antagonistic regulation. The time-course data (C60) shows effects are detectable by day 5 and stable through day 30, supporting sustained AS changes rather than transient effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNAcompete assays showed planarian and mammalian MBNL and CELF binding specificities strongly correlated and highly significantly overlapped (p<5.5\u00d710\u207b\u2078\u2079). BRULI and MBNL-1 motifs were highly significantly enriched in downstream introns of downregulated exons, while MBNL-1 motifs were enriched in exonic sequences of upregulated exons. These locations are consistent with mammalian regulatory maps, strongly suggesting direct regulatory roles in planarian AS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 are supported by RNAcompete assays showing conserved binding specificities and motif enrichment analysis. The statistical significance is very strong (p<5.5\u00d710\u207b\u2078\u2079 for overlap). However, C73-C74 (direct regulatory role) are inferred from motif locations and mammalian comparisons, not direct binding or functional validation in planarians (e.g., no CLIP-seq or motif mutagenesis experiments). The evidence is compelling but indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "bruli knockdown induced neoblast loss with strong downregulation of neoblast markers, while mbnl knockdown did not affect neoblast markers. Progeny markers (prog-1, prog-2-1) changed in opposing directions: bruli knockdown caused loss while mbnl knockdown caused increased expression, likely due to loss and accumulation of progenitors, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by RNA-Seq analysis of marker genes, qPCR validation, and citations to previous work characterizing these markers. The opposing effects on progeny markers provide strong evidence for antagonistic roles in stem cell differentiation. However, C81 (interpretation of progenitor loss/accumulation) is inferred rather than directly demonstrated through cell counting or FACS quantification of progenitor populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Analysis of previously defined gene expression clusters showed bruli knockdown highly significantly decreased Cluster 1 genes (neoblast-enriched, p<5.6\u00d710\u207b\u2075\u2076), while mbnl knockdown predominantly impacted Cluster 6 genes (differentiated cell-enriched, p<0.01). Gene Ontology analysis showed opposing functional enrichments, and PCA separated bruli samples with Smed-H2B(RNAi) from mbnl samples with Smedwi-2(RNAi), reflecting opposing effects on stem cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are strongly supported by RNA-Seq analysis, statistical testing (hypergeometric tests), Gene Ontology enrichment, and PCA. The use of previously characterized gene clusters (Onal et al., 2012) and comparison with known stem cell regulators (H2B, Smedwi-2) provides robust validation. The statistical significance for Cluster 1 enrichment (p<5.6\u00d710\u207b\u2075\u2076) is extremely strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors conclude that both CELF and MBNL factors are required for planarian regeneration in vivo and act by antagonizing each other in the control of neoblast self-renewal and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by the cumulative evidence from RNAi regeneration assays, AS profiling, marker gene analysis, and functional characterization. The antagonistic relationship is demonstrated through opposing effects on AS patterns, gene expression, and cellular phenotypes. However, the mechanistic details of how AS changes lead to regeneration defects remain incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose that MBNL proteins act as negative regulators of stem cell-differential AS in both planarians and mammals, and that this regulatory mechanism is a deeply conserved ancestral feature of animal stem cells, despite MBNL targets being largely lineage-specific (only 7 orthologous groups share MBNL-regulated exons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by comparison with published mammalian data and orthology analysis. However, C91 (deeply conserved ancestral feature) is a broad evolutionary inference based on conservation between two distant lineages. While the evidence is compelling, the claim would be strengthened by data from additional phyla. The conservation of regulatory mechanism despite target divergence is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors argue that CELF/MBNL antagonism represents an ancient post-transcriptional regulatory switch associated with pluripotency across animals (supported by sponge and Drosophila data), contrasting with the apparent lineage-specific innovation of core transcription factors (OCT4, NANOG, SOX2) that regulate mammalian ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by citations to relevant literature on sponges, Drosophila, and mammalian transcription factors. The contrast between conserved post-transcriptional regulation and divergent transcriptional regulation is conceptually important. However, the evolutionary interpretation relies heavily on literature citations rather than new experimental data. The Drosophila example (C93-C94) shows temporal expression patterns but not functional antagonism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C13",
+      "C17",
+      "C20",
+      "C31",
+      "C32",
+      "C36",
+      "C42",
+      "C75",
+      "C78",
+      "C88",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The manuscript includes numerous claims based on citations to prior work, establishing context about vertebrate microexons, mammalian ESC regulation, planarian stem cell properties, MBNL/CELF function in mammals, and transcription factor conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C13, C17, C20, C31-C32, C36, C42, C75, C78, C88, C98-C113) are appropriately supported by citations to relevant literature. The authors accurately represent prior work to contextualize their findings. These background claims are essential for interpreting the significance of the planarian AS program but do not constitute novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

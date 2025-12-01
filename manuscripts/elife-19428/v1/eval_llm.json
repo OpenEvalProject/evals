@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors developed a novel statistical methodology that detects cell assembly structure at multiple temporal scales with arbitrary lag constellations, using a fast parametric test statistic that corrects for non-stationarity and reduces computational burden by factors of 100-1000 compared to previous methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12, C13, and C14 describe the core methodological innovation. The methodology is extensively detailed in Materials and Methods with mathematical derivations (Equations 1-11), and computational efficiency is quantified. The approach is validated on simulated data (Figures 1, 2) and applied to real neural recordings (Figures 3-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The method successfully detected all five types of simulated assemblies with their correct temporal precision and lag distributions, with no false detections, and maintained low false positive rates (~0.5%) across varying sample sizes and spike sorting errors up to ~30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 report validation results on simulated data with known ground truth. Figure 1B demonstrates perfect recovery of all five assembly types, and Figure 2 systematically characterizes performance degradation thresholds and false positive rates. The simulations provide controlled conditions for method validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Assembly structure and temporal precision vary dramatically across brain areas (ACC, CA1, EC) and task conditions (exploration vs. delayed alternation), with EC showing fine temporal structure (15-50 ms), ACC showing broad rate patterns (120-700 ms), and CA1 expressing a wide spectrum (30-1500 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C25-C33 describe the main experimental findings comparing brain regions and tasks. Figure 4 provides comprehensive quantitative evidence showing distinct (\u0394,l)-distributions across areas and conditions. The data come from multiple recording sessions (n=9-28 sessions per condition) with 19-35 units per session, providing adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In CA1, temporally precise assemblies (30-50 ms) with synchronous spiking coded for specific place fields, while broader assemblies with sequential organization coded for temporally extended behavioral events, with individual neurons not necessarily sharing the same place preference as their parent assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 characterize CA1 assembly properties. Figure 5 and Figure 5\u2014figure supplement 1 provide spatial activity maps demonstrating place coding and behavioral event coding. Figure 4A shows the lag structure differences. The dissociation between single-unit and assembly place preferences is an interesting observation supported by the supplementary figure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C39"
+    ],
+    "result": "Detected assemblies in ACC spanned temporal precisions from ~10 ms to 1.5 s, comprised 10-16% of recorded neurons, often overlapped in membership, and showed selectivity for specific task events including lever presses, delays, and stimulus conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C39 describe ACC assembly characteristics. Figure 3A shows the assembly-assignment matrix with temporal scales and unit participation. Figure 3C and Figure 3\u2014figure supplement 1 demonstrate task event selectivity with statistical testing (paired t-tests, Bonferroni-corrected). The overlap observation is noted as differing from simulated disjoint assemblies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The temporal structure and precision of assemblies are closely related to area-specific computations, with CA1 processing precise spatial/temporal structure, ACC processing behavioral organization on slower timescales, and sequential assemblies appearing more frequently during structured tasks than exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 provide functional interpretation of the findings. While C41 is an inference, it is well-supported by the data (Figures 4-5) and grounded in established literature about these brain regions (C42-C45 cite appropriate prior work). The interpretation linking assembly properties to known functional roles is reasonable, though alternative explanations are not extensively discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Previous assembly detection methods adhere to specific theoretical conceptualizations or become computationally impractical, and the current findings suggest no universal cortical assembly code but rather area- and task-dependent temporal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 position the work relative to prior methods and synthesize the main conclusion. C47-C48 are supported by citations and comparison with existing approaches (discussed in Appendix). C49 integrates the experimental findings into a broader conclusion about cortical coding diversity, which is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The field of cell assembly research lacks a universal definition and statistical tools for extracting assemblies with arbitrary lag constellations at multiple scales, with ongoing controversy about temporal precision in neural coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C6-C11 establish the background and motivation. These are well-supported by extensive citations to prior work showing diverse uses of the term 'cell assembly' and different experimental observations. The controversy claim (C11) is documented with appropriate citations representing different perspectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The agglomerative assembly formation scheme is a fast heuristic proxy for evaluating all possible unit and lag combinations, similar to the apriori algorithm in machine learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 describes the algorithmic approach. This is supported by detailed pseudo-code in Materials and Methods, mathematical derivations, and comparison to established machine learning algorithms. The heuristic nature is acknowledged, including potential limitations (may miss configurations with non-significant subgroups).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Experimental data were obtained from previously published studies: ACC recordings from Hyman et al. (2012, 2013) with 16 tetrodes averaging 30-35 units per session, and hippocampal/EC recordings from Mizuseki et al. (2013) and Pastalkova et al. (2008) with multi-shank silicon probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 describe data sources and recording methods. These are factual statements about experimental procedures with appropriate citations. The use of previously published, publicly available datasets (CA1/EC data at crcns.org) enhances reproducibility, though this also means the authors did not control all aspects of data collection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Hebb's cell assembly concept has dominated neuroscience for 60 years as the fundamental unit of neural information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a historical statement about the influence of Hebb's concept. This is well-established in neuroscience and represents general knowledge, though the claim of 'domination like no other theoretical concept' is somewhat hyperbolic and difficult to quantify objectively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The methods could be applied more broadly to detect structure at multiple temporal scales in multivariate event count series in other scientific domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is speculative about potential applications beyond neuroscience. While the mathematical framework is general, no validation in other domains is provided. This is clearly marked as a note about potential future applications rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

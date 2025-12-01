@@ -1,0 +1,1485 @@
+{
+  "submission": {
+    "id": "7c246503-eb9c-48a8-98bc-bafef5b29752",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:43:40.045790Z",
+    "updated_at": "2025-11-30T23:43:40.045790Z"
+  },
+  "content": [
+    {
+      "id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "submission_id": "7c246503-eb9c-48a8-98bc-bafef5b29752",
+      "content_type": "manuscript",
+      "content_text": "# Emergence and evolution of an interaction between intrinsically disordered proteins\n\n## Authors\n\n- Greta Hultqvist<sup>1</sup> ([ORCID: 0000-0002-4136-6792](https://orcid.org/0000-0002-4136-6792)) \u2020\n- Emma \u00c5berg<sup>1</sup>\n- Carlo Camilloni<sup>2</sup>\n- Gustav N Sundell<sup>1</sup>\n- Eva Andersson<sup>1</sup>\n- Jakob Dogan<sup>1</sup>\n- Celestine N Chi<sup>6</sup> ([ORCID: 0000-0003-4154-2378](https://orcid.org/0000-0003-4154-2378))\n- Michele Vendruscolo<sup>2</sup> ([ORCID: 0000-0002-3616-1610](https://orcid.org/0000-0002-3616-1610)) \u2020\n- Per Jemth<sup>1</sup> ([ORCID: 0000-0003-1516-7228](https://orcid.org/0000-0003-1516-7228)) \u2020\n\n### Affiliations\n\n1. Department of Medical Biochemistry and Microbiology Uppsala University Uppsala Sweden\n2. Department of Chemistry University of Cambridge Cambridge United Kingdom\n3. Department of Chemistry Technische Universit\u00e4t M\u00fcnchen M\u00fcnchen Germany\n4. Institute for Advanced Study Technische Universit\u00e4t M\u00fcnchen M\u00fcnchen Germany\n5. Department of Biochemistry and Biophysics Stockholm University Stockholm Sweden\n6. Laboratory of Physical Chemistry Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich Z\u00fcrich Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein-protein interactions involving intrinsically disordered proteins are important for cellular function and common in all organisms. However, it is not clear how such interactions emerge and evolve on a molecular level. We performed phylogenetic reconstruction, resurrection and biophysical characterization of two interacting disordered protein domains, CID and NCBD. CID appeared after the divergence of protostomes and deuterostomes 450\u2013600 million years ago, while NCBD was present in the protostome/deuterostome ancestor. The most ancient CID/NCBD formed a relatively weak complex (Kd\u223c5 \u00b5M). At the time of the first vertebrate-specific whole genome duplication, the affinity had increased (Kd\u223c200 nM) and was maintained in further speciation. Experiments together with molecular modeling using NMR chemical shifts suggest that new interactions involving intrinsically disordered proteins may evolve via a low-affinity complex which is optimized by modulating direct interactions as well as dynamics, while tolerating several potentially disruptive mutations.\n\n## Introduction\n\nWhile the majority of proteins fold into well-defined structures to function, a substantial fraction of the proteome is made up by intrinsically disordered proteins (IDPs) (Uversky and Dunker, 2012). These IDPs, which can be fully disordered or contain disordered regions of variable size, play pivotal roles in biology, usually by participating in protein-protein interactions that govern key functions such as transcription and cell-cycle regulation (Uversky et al., 2008; Wright and Dyson, 2015). IDPs are present in all domains of life, but they are more common and have a unique profile in eukaryotes as compared to archea and bacteria (Peng et al., 2015). One particular problem with analyzing structure-function relationships in IDPs with regard to evolution is that IDPs appear to evolve faster than structured proteins and are more permissive to substitutions that do not apparently modulate function in either a positive or negative way (Brown et al., 2011). In addition, insertion and deletion of amino acids are more common in IDPs (Brown et al., 2010; Light et al., 2013), further complicating structure-function analysis. Thus, while analyses of protein sequences have shed light on the evolution of IDPs, few biophysical studies have directly addressed the evolution of IDPs on a molecular level.\n\nHere, we use an \u2018evolutionary biochemistry\u2019 approach (Bridgham et al., 2006; Harms and Thornton, 2013; McKeown et al., 2014), in which phylogenetic reconstruction of ancestral sequences is combined with biophysical experiments (Figure 1), to reconstruct the evolution of a particular protein-protein interaction. This interaction involves disordered protein domains from two different transcriptional coactivators: (i) the molten-globule-like (Kjaergaard et al., 2010a) nuclear co-activator binding domain (NCBD) present in the two paralogs CREB-binding protein (CREBBP, also known as CBP) and p300, and (ii) the highly disordered CREBBP-interacting domain (CID), found in the three mammalian paralogs NCOA1, 2 and 3 (also called SRC1, TIF2 and ACTR, respectively). The interaction between CID from NCOA3 (ACTR) and NCBD from CREBBP represents a classical example of coupled folding and binding of disordered protein domains (Demarest et al., 2002).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig1-v3.jpg)\n\n**Figure 1.:** Multiple sequence alignment forms the basis for the phylogeny, which is used to predict ancient variants of two interacting protein domains, CID and NCBD, respectively. The ancient variants are then resurrected by expression in Escherichia coli and purified to homogeneity. Finally, the resurrected as well as present-day variants of CID and NCBD are subjected to biophysical and computational characterization to assess the evolution of structure-function relationships.\n\nThe two paralogs CREBBP and p300, as well as the three paralogs NCOA1, 2 and 3, likely result from whole genome duplications. In general, a gene family is created by speciation events and genomic duplications. The general conclusion is that the ancestral vertebrate(s) went through two rounds of whole genome duplications (denoted 1R and 2R, respectively) prior to the origin of jawed vertebrates, and that teleost (bony) fish experienced a third whole genome duplication (3R) (Hughes and Liberles, 2008; Van de Peer et al., 2009). Thus, if no gene losses had occurred, vertebrates would have four copies and teleost fish eight copies of every gene. Genomic duplications are beneficial for inventing new biochemical functions (Ohno, 1970; N\u00e4svall et al., 2012). Therefore, the abundance of new genes following whole genome duplications creates multiple possibilities to evolve new functions on a large scale through point mutations and natural selection, and the 1R and 2R genome duplications have likely contributed to the broad repertoire of IDPs in vertebrates.\n\nIn the present paper, we track the evolutionary history during 600 million years (Myr) of two interacting IDPs, the older NCBD domain and the younger CID domain, with regard to sequence, affinity and structural properties. The two domains established a molecular interaction involved in regulation of transcriptional activation in the lineage leading to present day deuterostome animals, and may serve as a paradigmatic example of evolution of protein-protein interactions involving IDPs.\n\n## Results\n\n### Reconstruction of ancient sequences\n\nAs a first step in our study, ancestral versions of the amino acid sequences of the NCBD domain of CREBBP/p300 (NCBD) and the CID domain of NCOA (CID) were reconstructed by phylogenetic analyses (Figure 2, Figure 2\u2014figure supplements 1\u20134 and Figure 2\u2014source data 1 and 2) using a maximum likelihood method (Materials and methods). This analysis shows that NCBD is older than CID, as NCBD can be traced in deuterostomes, protostomes (including extant arthropods, nematodes and molluscs) and cnidarians, but not in more distantly related eukaryotes such as the choanoflagellate Monosiga brevicollis. Hence, NCBD arose in the animal lineage as a domain within the ancestral CREBBP/p300 protein. CID, on the other hand, appeared as an IDP domain within NCOA after the split of deuterostomes and protostomes, since it could not be identified in protostome NCOA. Furthermore, CID was present in an early deuterostome, before the first whole-genome duplication (1R), since it could be traced in extant sea urchins and acorn worms, in addition to vertebrates. Thus, we conclude that the CID/NCBD interaction emerged at the beginning of the deuterostome lineage around the Cambrian period, an era with a very dramatic evolutionary history.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig2-v3.jpg)\n\n**Figure 2.:** (A) Sequence alignments of extant and reconstructed ancient NCBD (top) and CID domains (bottom). The positions of helices are according to the NMR structure of the complex between extant CREBBP NCBD (blue) and NCOA3 CID (yellow). Free NCBD (protein data base code 2KKJ) and the CID/NCBD complex (1KBH) are NMR structures, whereas the picture of free CID is a hypothetical modified structure made from the NCOA1 CID/NCBD complex (2C52). The first residue in the NCBD alignment is referred to as position 2062 in the text and the first residue in the CID alignment as 1040. The color coding of the sequences reflects similarities in chemical properties of the amino acid side chains and is a guide for the eye to see patterns of conservation. (B) Schematic tree of life with selected animal groups depicting the evolution of the NCBD domain (blue) in both protostomes and deuterostomes and the CID domain (yellow) in the deuterostome lineage only. See Figure 2\u2014figure supplements 1\u20134 for detailed alignments and trees.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The whole CREBBP/p300 gene alignment was used to create the phylogenetic tree and then with the use of that tree the NCBD domain could be resurrected. The categories to the right should only be seen as guidelines to which group the individual species sequences belongs. Amino acids are colored based on chemical properties of the side chain according to eBioX standard. The tree in Figure 2\u2014figure supplement 3 has the correct grouping information.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The whole NCOA1-3 gene alignment was used to create the phylogenetic tree and then with the use of that tree the CID domain could be resurrected. The categories to the right should only be seen as guidelines to which group the individual species sequences belongs. Amino acids are colored based on chemical properties of the side chain according to eBioX standard. The tree in Figure 2\u2014figure supplement 4 has the correct grouping information.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The tree follows what is generally accepted regarding species evolution and whole genome duplications. Cnidarian CREBBP/p300 contains the NCBD domain. Since these species are distantly related to the other animals in the tree Cnidarian CREBBP/p300 proteins are used as outgroup in the analysis. After the divergence of Cnidaria from other metazoans, deuterostomes and protostomes diverged from each other. The node between the deuterostomes and protostomes (marked with a dark blue circle) is the oldest time point that we resurrect. Protostomes contain groups such as insects and molluscs, while deuterostomes contain all vertebrates. At the beginning of vertebrate evolution two whole genome duplications occurred. Thus, at this point all vertebrate genes were duplicated twice resulting in four copies, but many were rapidly lost. For CREBBP/p300, two copies remained, namely CREBBP and p300. The node corresponding to the ancestral CREBBP/p300 protein is marked with a green circle and referred to as 1R/2R in the text, since we cannot distinguish these events for CREBBP/p300. The most recent node that we resurrect is the separation of Teleost fish CREBBP from Tetrapod CREBBP (marked with a light blue circle). A third round of whole genome duplications later occurred in the fish lineage (not indicated) resulting in the two variants CREBBP1 and CREBBP2. The indicated resurrected nodes correspond to the same nodes as in the simplified Figure 2 in the main text.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The tree follows what is generally accepted regarding species evolution and whole genome duplications. The CID domain could be identified in Hemicordata and Echinodermata NCOA proteins, and since these species are more distantly related to the other animals in the tree they were used as outgroups in the analysis. After the divergence of these groups from the rest of the deuterostomes, the two vertebrate-specific whole genome duplications occurred. Our analysis suggests that the ancestral NCOA gene was first split into NCOA-1 and the ancestor of NCOA2 and 3, which were subsequently split into NCOA2 and NCOA3 in the second whole genome duplication. (The second copy of NCOA1 was lost from the genomes) The nodes are marked with a dark (1R) and light green circle (2R), respectively. The most recent node that we resurrected is the separation of Teleost fish NCOA3 from Tetrapod NCOA3 (marked with a light blue circle). A third round of whole genome duplications occurred later in the fish lineage (not marked) but the resulting NCOA proteins were not retained in the genome. The indicated resurrected nodes correspond to the same nodes as in the simplified Figure 2 in the main text.\n\nFor the oldest reconstructed version of NCBD, deuterostome/protostome (D/P) NCBD, there were several relatively uncertain positions with regard to amino acid identity (Figure 2\u2014source data 1). This was experimentally resolved by testing the effect of alternative residues at these positions in the context of one of the most likely D/P variants. The first position included in the NCBD domain (2062) was particularly problematic in this respect, with several amino acid identities with similar and low probability: Ile (0.19), Val (0.16), Thr (0.15), Met (0.13), etc. In addition, the probability numbers at this position were very sensitive to which extant sequences were included in the phylogenetic analysis. Because of this and to avoid a hydrophobic side-chain at the N-terminus, we chose Thr at position 2062 as the \u2018wild type\u2019 ancestral NCBD (referred to as D/P NCBD in the paper).\n\n### Do the intrinsically disordered domains in NCOA and CREBBP have a higher amino acid substitution rate than the ordered domains?\n\nPrevious studies have suggested that the amino acid sequence of IDPs display a higher substitution rate (following selection) than those of ordered proteins (Brown et al., 2011). Although limited to two proteins, NCOA and CREBBP/p300, our data set allowed comparison between ordered and disordered regions within the same protein and during time. We therefore assessed the number of substitutions in selected ordered and disordered domains, respectively, in both NCOA and CREBBP/p300. Clearly, amino acid sequences within linker regions between interaction domains have evolved such that no sequence similarity can be detected in most cases. For example, outside of the interacting regions of CID and NCBD, as defined by the NMR structures, it is impossible to align the sequences, even for closely related species. Thus, the domain boundaries were defined based on sequence conservation and available crystal or NMR structures. Based on how well we could define these boundaries and the confidence in the resurrection, which in some cases was low due to poor alignment quality, we selected four folded CREBBP domains (HAT, KIX, RING/PHD, TAZ1) and one folded NCOA domain (Pas-A) for the analysis. To make the comparison between folded and disordered protein interaction domains simple, we used the same alignments and phylogenetic trees used to reconstruct ancient CID and NCBD domains and reconstructed other domains from NCOA and CREBBP/p300, respectively. We then counted the number of amino acid substitutions and insertions/deletions in a particular sequence as compared to its predecessor. Thus, for domains from the CREBBP lineage, we compared the 1R/2R sequence with the D/P sequence, the ancestral fish/tetrapod (F/T) CREBBP with the 1R/2R, and present day human and zebrafish CREBBP with F/T CREBBP (Figure 3). In general, the amino acid substitution rates in NCOA and CREBBP/p300 are higher for all domains during the early times of animal evolution and up to the common ancestor of fish and tetrapods 390 Myr ago. Within CREBBP, the substitution rate of NCBD is similar to those of the ordered histone acetyltransferase (HAT) and RING/PHD domains, whereas KIX and TAZ1 have remained more conserved. For NCOA3 it was more difficult to define domain boundaries and we only compared CID to one folded domain, Pas-A. The overall substitution rate is only slightly higher for the CID domain, and the two domains have similar profiles. Thus, for CID and NCBD, functional constraints of the domains rather than disorder per se is probably determining amino acid substitution rate, similarly to a subset of disordered regions highlighted in earlier studies (Brown et al., 2011, 2010, 2002).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig3-v3.jpg)\n\n**Figure 3.:** The predicted ancient sequences for distinct domains in CREBBP/p300 (A and B) and NCOA (C) were used to calculate the number of substitutions and indels between each evolutionary node (Deuterostome/protostome, D/P; 1R; 2R; Fish/tetrapod, F/T; and present day) in a particular lineage (human and zebrafish CREBBP and human and zebrafish NCOA3, respectively). The alignment and trees used to resurrect HAT, KIX, RING/PHD and TAZ1 were the ones optimized for NCBD. Similarly, the alignment and trees used to resurrect Pas-A were the ones optimized for the CID domain. The number of substitutions plus indels were normalized against the number of amino acid residues in each domain and the accumulated fraction of sequence changes plotted versus historical time. Both 1R and 2R occurred around 450 million Myr ago and the distance between them in panel C (10 Myr) is arbitrary.\n\n### Structural context of the CID and NCBD sequences\n\nTo bring the analysis from the sequence level to the structural level, we considered the NMR structures of extant mouse CREBBP NCBD in complex with human NCOA1 CID (Waters et al., 2006) and NCOA3 CID (Demarest et al., 2002), respectively. A structural alignment shows that the NCBD domain aligns well in the two complexes but that only the first \u03b1-helix (C\u03b11) of NCOA1 CID and NCOA3 CID occupy similar positions (Figure 4). In fact, the third \u03b1-helix (C\u03b13) of NCOA1 CID aligns with the second \u03b1-helix (C\u03b12) of NCOA3 CID, while C\u03b12 of NCOA1 CID is non-binding and split into two smaller \u03b1-helices. The first \u03b1-helix of NCBD (N\u03b11) interacts with C\u03b11 in both complexes, but the conformation of the third \u03b1-helix (N\u03b13) is slightly different in the two complexes. Residues forming the N\u03b11/C\u03b11 interface in the CID/NCBD complex are conserved in the deuterostome lineage, while N\u03b13 has accumulated five substitutions (Figure 2A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig4-v3.jpg)\n\n**Figure 4.:** (A) Superimposition of the structures of two complexes solved by NMR: CREBBP NCBD (Light blue)-NCOA1 CID (Yellow) (2C52) and CREBBP NCBD (Dark blue)-NCOA3 CID (Red) (1KBH). The complexes contain a hydrophobic core formed by residues from the respective protein domain. (B) Superimposition of NCBD from the complexes shows that in particular N\u03b11 and N\u03b12 align very well. (C) Superimposition of the NCBD-bound conformations of NCOA1 CID and NCOA3 CID. Whereas C\u03b11 from both complexes align well, the C-terminal regions of the CID domains occupy different positions.\n\n### Determination of affinity between ancient and extant CID/NCBD variants\n\nThe next step in our approach was to \u2018resurrect\u2019 the sequences identified through our evolutionary analysis to analyze their biophysical properties. In these experimental studies, ancient and selected extant variants of CID and NCBD were expressed in E. coli, purified to homogeneity (see Materials and methods) and subjected to binding studies using isothermal titration calorimetry (ITC) to monitor changes in affinity over historical time. Strikingly, the affinity of deuterostome/protostome (D/P) NCBD for 1R CID, which is the oldest CID domain that we were able to resurrect with good confidence, was relatively low (5 \u00b5M) as compared to younger NCBD variants (Figure 5A and B, Table 1). Importantly, all tested ancestral D/P NCBD (Thr2062) variants measured with 1R CID yielded a relatively low affinity (Kd\u00a0values\u00a0=\u00a01.5 to 18 \u00b5M). The Kd values for D/P NCBD with Ile and Val at position 2062 were 2.0 and 2.2 \u00b5M, respectively, which is very close to that of 'wild-type' D/P NCBD with Thr2062 (3.0 \u00b5M) (Figure 5A and Figure 6). Thus, our conclusions in the paper hold irrespective of the nature of the amino acid residues at the uncertain positions in D/P NCBD.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig5-v3.jpg)\n\n**Figure 5.:** (A) Affinity of CID/NCBD complexes was measured by isothermal titration calorimetry (three examples are shown including the low-affinity D/P NCBD, 1R CID interaction). (B) The affinities (Kd values) were normalized against the interaction between extant human NCOA2 CID and p300 NCBD. The relative affinity for D/P NCBD, 1R CID was calculated using the average Kd values of all D/P NCBD variants (5\u00a0\u00b1\u00a02 \u00b5M). (C) Propensity for helix formation for ancient and extant CID domains as measured by circular dichroism at 222 nm upon addition of the helix stabilizer 1,1,1-trifluoroethanol. (D) Global stability of NCBD domains as measured by circular dichroism at 222 nm (reflecting the fraction folded NCBD) upon addition of the denaturant urea. Hsa, Homo sapiens; Dre, Danio rerio (zebrafish); Pme, Petromyzon marinus, (sea lamprey); Dmel, Drosophila melanogaster (fruit fly).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig6-v3.jpg)\n\n**Figure 6.:** Isothermal titration calorimeter and circular dichroism experiments of D/P NCBD with (A) Ile and (B) Val at position 2062. See Figure 5A for Thr2062 and Table 1 for Kd values.\n\n**Table 1.**\n Equilibrium dissociation (Kd\u00b1standard error) values for the interaction between NCBD and CID variants as determined by ITC.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Hsa NCOA1 CID (SRC1)</th>\n      <th>Hsa NCOA2 CID (TIF2)</th>\n      <th>Hsa NCOA3 CID (ACTR)</th>\n      <th>Fish/Tetrapod NCOA3 CID</th>\n      <th>2R CID</th>\n      <th>2R CID N1043S</th>\n      <th>2R CID G1080S</th>\n      <th>1R CID</th>\n      <th>1R CID S1058N</th>\n      <th>1R CID G1080S</th>\n      <th>1R CID S1078Q</th>\n      <th>Hsa p53TAD</th>\n      <th>Hsa ETS-2 PNT</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td colspan=\"13\">Kd ( \u00b5M)</td>\n    </tr>\n    <tr>\n      <td>Hsa CREBBP NCBD</td>\n      <td>0.33\u00a0\u00b1\u00a00.039</td>\n      <td>0.13\u00a0\u00b1\u00a00.011</td>\n      <td>0.35\u00a0\u00b1\u00a00.031</td>\n      <td></td>\n      <td>0.65\u00a0\u00b1\u00a00.024</td>\n      <td></td>\n      <td></td>\n      <td>0.38\u00a0\u00b1\u00a00.020</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>84\u00a0\u00b1\u00a02.3</td>\n      <td>0.76\u00a0\u00b1\u00a00.071</td>\n    </tr>\n    <tr>\n      <td>Hsa p300 NCBD</td>\n      <td>0.18\u00a0\u00b1\u00a00.015</td>\n      <td>0.071\u00a0\u00b1\u00a00.010</td>\n      <td>0.11\u00a0\u00b1\u00a00.010</td>\n      <td></td>\n      <td>0.28\u00a0\u00b1\u00a00.012</td>\n      <td></td>\n      <td></td>\n      <td>0.22\u00a0\u00b1\u00a00.024</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>9.2\u00a0\u00b1\u00a02.2</td>\n      <td>1.5\u00a0\u00b1\u00a00.077</td>\n    </tr>\n    <tr>\n      <td>Dre CREBBP NCBD</td>\n      <td>0.29\u00a0\u00b1\u00a00.032</td>\n      <td>0.23\u00a0\u00b1\u00a00.013</td>\n      <td>0.63\u00a0\u00b1\u00a00.057</td>\n      <td>0.57\u00a0\u00b1\u00a00.025</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pma NCBD</td>\n      <td>0.19\u00a0\u00b1\u00a00.023</td>\n      <td>0.044\u00a0\u00b1\u00a00.017</td>\n      <td>0.23\u00a0\u00b1\u00a00.030</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>1.0\u00a0\u00b1\u00a00.10</td>\n    </tr>\n    <tr>\n      <td>Dmel NCBD</td>\n      <td>5.2\u00a0\u00b1\u00a00.20</td>\n      <td>22\u00a0\u00b1\u00a01.6</td>\n      <td>37\u00a0\u00b1\u00a02.8</td>\n      <td></td>\n      <td>4.1\u00a0\u00b1\u00a00.93</td>\n      <td></td>\n      <td></td>\n      <td>9.7\u00a0\u00b1\u00a01.6</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>No detectable binding</td>\n    </tr>\n    <tr>\n      <td>Fish/Tetrapod CREBBP NCBD</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.41\u00a0\u00b1\u00a00.040</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>52\u00a0\u00b1\u00a05.2</td>\n      <td>1.3\u00a0\u00b1\u00a00.083</td>\n    </tr>\n    <tr>\n      <td>1R/2R NCBD</td>\n      <td>0.11\u00a0\u00b1\u00a00.042</td>\n      <td>0.045\u00a0\u00b1\u00a00.018</td>\n      <td>0.23\u00a0\u00b1\u00a00.040</td>\n      <td></td>\n      <td>0.28\u00a0\u00b1\u00a00.021</td>\n      <td>0.290\u00a0\u00b1\u00a00.035</td>\n      <td>0.33\u00a0\u00b1\u00a00.023</td>\n      <td>0.20\u00a0\u00b1\u00a00.016</td>\n      <td>0.22\u00a0\u00b1\u00a00.027</td>\n      <td>0.24\u00a0\u00b1\u00a00.024</td>\n      <td>0.25\u00a0\u00b1\u00a00.021</td>\n      <td>34\u00a0\u00b1\u00a04.0 nM</td>\n      <td>0.85\u00a0\u00b1\u00a00.046</td>\n    </tr>\n    <tr>\n      <td>1R/2R NCBD N2065S</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.11\u00a0\u00b1\u00a00.020</td>\n      <td>0.15\u00a0\u00b1\u00a00.013</td>\n      <td></td>\n      <td>0.13\u00a0\u00b1\u00a00.012</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1R/2R NCBD N2065S K2107R</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>0.18\u00a0\u00b1\u00a00.021</td>\n      <td>0.160\u00a0\u00b1\u00a00.011</td>\n      <td></td>\n      <td>0.17\u00a0\u00b1\u00a00.023</td>\n      <td></td>\n      <td>0.13\u00a0\u00b1\u00a00.018</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD</td>\n      <td>1.5\u00a0\u00b1\u00a00.088</td>\n      <td>0.52\u00a0\u00b1\u00a00.032</td>\n      <td>5.0\u00a0\u00b1\u00a00.22</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>3.0\u00a0\u00b1\u00a00.13</td>\n      <td>3.9\u00a0\u00b1\u00a00.16</td>\n      <td>4.8\u00a0\u00b1\u00a00.20</td>\n      <td>5.5\u00a0\u00b1\u00a00.21</td>\n      <td>43\u00a0\u00b1\u00a03.9</td>\n      <td>1.4\u00a0\u00b1\u00a00.051</td>\n    </tr>\n    <tr>\n      <td>D/P NCBD T2062I</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>2.0\u00a0\u00b1\u00a00.2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD T2062V</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>2.2\u00a0\u00b1\u00a00.6</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD P2063L</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>7.7\u00a0\u00b1\u00a00.53</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD Q2088H</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>1.5\u00a0\u00b1\u00a00.080</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD Q2088N</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>2.2\u00a0\u00b1\u00a00.070</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>D/P NCBD H2107Q</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>18\u00a0\u00b1\u00a01.2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hsa CREBBP NCBD A2106Q</td>\n      <td></td>\n      <td>0.10\u00a0\u00b1\u00a00.02</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hsa CREBBP NCBD Y2108Q</td>\n      <td></td>\n      <td>0.21\u00a0\u00b1\u00a00.06</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hsa CREBBP NCBD A2106Q/Y2108Q</td>\n      <td></td>\n      <td>0.22\u00a0\u00b1\u00a00.06</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAlready around the time of the two vertebrate-specific whole genome duplications (1R and 2R, respectively), NCBD had evolved an affinity toward the CID domain similar to that found today (\u223c200 nM). All tested alternative variants of 1R/2R NCBD, 1R CID and 2R CID yielded Kd values in the same range (100\u2013300 nM) (Table 1). Moreover, the affinities between extant NCBD domains and human CID domains were found to be surprisingly similar across several species. For example, CREBBP NCBD from sea lamprey and human, respectively, has similar affinity toward human NCOA3 CID. We also determined the affinity between ancient and extant NCBD domains and extant versions of other protein ligands for NCBD, namely the disordered transactivation domain (TAD)\u00a0of human p53 (p53TAD) and the globular pointed (PNT) domain from human ETS-2. In contrast to the CID domain, the affinities of p53TAD and PNT, respectively, were similar for ancient and extant NCBD (Table 1).\n\n### Structural stability of ancestral and extant variants of CID and NCBD\n\nThe NCOA3 CID domain from human displays a high degree of disorder (Ebert et al., 2008; Kjaergaard et al., 2010b) and all tested CID variants in the present study displayed a strikingly similar far-UV CD spectrum, typical of IDPs (Figure 7A\u2013C). However, the propensity to form \u03b1-helices may differ between variants, which could result in higher affinity (Ie\u0161mantavi\u010dius et al., 2014). Addition of 1,1,1-trifluoroethanol (TFE) induces \u03b1-helix formation and can be used to experimentally assess the \u03b1-helical propensity of any given polypeptide when there is a helix-coil equilibrium (Jasanoff and Fersht, 1994). TFE titrations (0\u201350%) were performed for ancient and extant CID domains (Figure 5C and Table 2). The similar shape and midpoints of the resulting sigmoidal curves (reflecting the helix-coil transition) demonstrates that the overall \u03b1-helical propensity for ancient and modern CID variants is virtually identical. Increased \u03b1-helical propensity would likely have increased the affinity for NCBD (Ie\u0161mantavi\u010dius et al., 2014), but at the cost of lower plasticity and flexibility. We note, however, that the stability for individual \u03b1-helices as predicted by the software AGADIR (Mu\u00f1oz and Serrano, 1994) has changed during evolution. For example, \u03b1-helix 1 of CID from human NCOA1 and 2 displays a higher \u03b1-helix propensity than \u03b1-helix 1 from human NCOA3 and the ancestral versions (Figure 8). Such local changes in \u03b1-helical propensity is a likely route to evolve an optimal affinity for short recognition motifs, which are common in intrinsically disordered regions (Fuxreiter et al., 2004).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig7-v3.jpg)\n\n**Figure 7.:** (A\u2013C) CD spectra of CID variants display a profile typical for disordered proteins. (D\u2013E) CD spectra of NCBD variants show a qualitatively similar shape for all variants. (G\u2013I) Thermal denaturations of NCBD variants show a similar apparent non-cooperative transition.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig8-v3.jpg)\n\n**Figure 8.:** (A) CID domains from extant human NCOA1, 2 and 3. (B) Ancestral CID domains: 1R, 2R and the fish/tetrapod ancestor.\n\n**Table 2.**\n Equilibrium parameters for CD-monitored trifluoroethanol (TFE) induced helix formation of CID variants determined in 20 mM sodium phosphate, pH 7.4, 150 mM NaCl, at 25\u00b0C.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>CID variant</th>\n      <th>[TFE]50%* (%)</th>\n      <th>[TFE]50%\u2020 (%)</th>\n      <th>mD-N\u2020 (%\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1R\u2021</td>\n      <td>8.5\u00a0\u00b1\u00a01.3</td>\n      <td>7.6\u00a0\u00b1\u00a02.3</td>\n      <td>0.15\u00a0\u00b1\u00a00.02</td>\n    </tr>\n    <tr>\n      <td>2R</td>\n      <td>10.7\u00a0\u00b1\u00a00.9</td>\n      <td>12.0\u00a0\u00b1\u00a00.2</td>\n      <td>0.22\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>Fish/tetrapod NCOA3</td>\n      <td>9.9\u00a0\u00b1\u00a00.7</td>\n      <td>10.0\u00a0\u00b1\u00a00.6</td>\n      <td>0.17\u00a0\u00b1\u00a00.01</td>\n    </tr>\n    <tr>\n      <td>Hsa NCOA1</td>\n      <td>-\u00a7</td>\n      <td>-\u00a7</td>\n      <td>0.15\u00a0\u00b1\u00a00.03</td>\n    </tr>\n    <tr>\n      <td>Hsa NCOA2</td>\n      <td>9.5\u00a0\u00b1\u00a01.7</td>\n      <td>-\u00a7</td>\n      <td>0.11\u00a0\u00b1\u00a00.02</td>\n    </tr>\n    <tr>\n      <td>Hsa NCOA3</td>\n      <td>5.6\u00a0\u00b1\u00a01.5</td>\n      <td>6.5\u00a0\u00b1\u00a00.9</td>\n      <td>0.18\u00a0\u00b1\u00a00.01</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The mD-N value was shared among the datasets in the curve fitting; mD-N\u00a0=\u00a00.17\u00a0\u00b1\u00a00.01 %\u22121.\u2020Free fitting of both [TFE]50% and mD-N.\u20211R, the node around the time of the first whole genome duplication in the vertebrate lineage; 2R, the node around the time of the second whole genome duplication in the vertebrate lineage; Fish/tetrapod, the node where fish diverged from tetrapods; Hsa, Homo sapiens; Dre, Danio rerio (zebrafish); Pme, Petromyzon marinus, (sea lamprey); Dmel, Drosophila melanogaster (fruit fly).\u00a7Not well determined in the curve fitting._\n\nWhile extant mammalian CREBBP NCBD has a small but well-defined hydrophobic core, it is a very dynamic protein domain in the absence of a bound CID domain as previously shown by NMR measurements (Ebert et al., 2008). We were therefore particularly interested in whether the global stability of NCBD changed when CID was recruited as binding partner. CD spectra (Figure 7D\u2013F) and thermal denaturations (Figure 7G\u2013I) were similar for all NCBD variants. The most ancient D/P NCBD variant was slightly less stable than historically subsequent variants in the deuterostome lineage, as determined by the midpoint from far UV CD-monitored urea denaturation experiments (Figure 5D and Table 3). However, despite high precision in experimental data, the broad unfolding transition of small protein domains such as NCBD leads to low accuracy in the estimates of the free energy of denaturation. Therefore, we refrain from making strong conclusions regarding the stability despite a clear shift in the urea midpoint for unfolding.\n\n**Table 3.**\n Equilibrium parameters for CD-monitored urea denaturation of NCBD variants determined in 20 mM sodium phosphate, pH 7.4, 150 mM NaCl, 1 M TMAO at 10\u00b0C.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>NCBD variant</th>\n      <th>[Urea]50%* (M)</th>\n      <th>\u25b3GD-N* (kcal mol\u22121)</th>\n      <th>[Urea]50%\u2020 (M)</th>\n      <th>mD-N\u2020 (kcal mol\u22121)</th>\n      <th>\u25b3GD-N\u2020 (kcal mol\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>D/P\u2021</td>\n      <td>2.4\u00a0\u00b1\u00a00.4</td>\n      <td>1.5\u00a0\u00b1\u00a00.3</td>\n      <td>2.2\u00a0\u00b1\u00a00.2</td>\n      <td>0.56\u00a0\u00b1\u00a00.04</td>\n      <td>1.2\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>D/P T2062I</td>\n      <td>3.3\u00a0\u00b1\u00a00.3</td>\n      <td>2.0\u00a0\u00b1\u00a00.3</td>\n      <td>3.4\u00a0\u00b1\u00a00.1</td>\n      <td>0.70\u00a0\u00b1\u00a00.08</td>\n      <td>2.4\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>1R/2R</td>\n      <td>4.4\u00a0\u00b1\u00a00.3</td>\n      <td>2.7\u00a0\u00b1\u00a00.3</td>\n      <td>4.4\u00a0\u00b1\u00a00.1</td>\n      <td>0.67\u00a0\u00b1\u00a00.05</td>\n      <td>3.0\u00a0\u00b1\u00a00.3</td>\n    </tr>\n    <tr>\n      <td>Fish/tetrapod CREBBP</td>\n      <td>4.0\u00a0\u00b1\u00a00.3</td>\n      <td>2.5\u00a0\u00b1\u00a00.3</td>\n      <td>4.0\u00a0\u00b1\u00a00.1</td>\n      <td>0.62\u00a0\u00b1\u00a00.05</td>\n      <td>2.5\u00a0\u00b1\u00a00.2</td>\n    </tr>\n    <tr>\n      <td>Hsa CREBBP</td>\n      <td>3.8\u00a0\u00b1\u00a00.3</td>\n      <td>2.3\u00a0\u00b1\u00a00.3</td>\n      <td>3.7\u00a0\u00b1\u00a00.2</td>\n      <td>0.46\u00a0\u00b1\u00a00.09</td>\n      <td>1.7\u00a0\u00b1\u00a00.4</td>\n    </tr>\n    <tr>\n      <td>Hsa p300</td>\n      <td>4.4\u00a0\u00b1\u00a00.3</td>\n      <td>2.7\u00a0\u00b1\u00a00.3</td>\n      <td>4.4\u00a0\u00b1\u00a00.3</td>\n      <td>0.66\u00a0\u00b1\u00a00.17</td>\n      <td>2.9\u00a0\u00b1\u00a00.8</td>\n    </tr>\n    <tr>\n      <td>Dre CREBBP1\u00a7</td>\n      <td>3.4\u00a0\u00b1\u00a00.3</td>\n      <td>2.1\u00a0\u00b1\u00a00.3</td>\n      <td>2.2\u00a0\u00b1\u00a01.6</td>\n      <td>0.33\u00a0\u00b1\u00a00.16</td>\n      <td>0.7\u00a0\u00b1\u00a00.6</td>\n    </tr>\n    <tr>\n      <td>Pma</td>\n      <td>4.1\u00a0\u00b1\u00a00.2</td>\n      <td>2.5\u00a0\u00b1\u00a00.3</td>\n      <td>4.2\u00a0\u00b1\u00a00.6</td>\n      <td>0.50\u00a0\u00b1\u00a00.22</td>\n      <td>2.1\u00a0\u00b1\u00a01.0</td>\n    </tr>\n    <tr>\n      <td>Dmel</td>\n      <td>1.6\u00a0\u00b1\u00a00.5</td>\n      <td>1.0\u00a0\u00b1\u00a00.3</td>\n      <td>2.6\u00a0\u00b1\u00a00.4</td>\n      <td>1.2\u00a0\u00b1\u00a00.7</td>\n      <td>3.3\u00a0\u00b1\u00a01.9</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The mD-N value was shared among the datasets in the curve fitting; mD-N\u00a0=\u00a00.61\u00a0\u00b1\u00a00.05 kcal mol\u22121M\u22121.\u2020Free fitting of both [Urea]50% and mD-N\u2021D/P, Deuterostome/protostome node; 1R/2R, the node(s) around the time of the two whole genome duplications in the vertebrate lineage; Fish/tetrapod, the node where fish diverged from tetrapods; Hsa, Homo sapiens; Dre, Danio rerio (zebrafish); Pme, Petromyzon marinus, (sea lamprey); Dmel, Drosophila melanogaster (fruit fly).\u00a7The bony fish lineage experienced a third whole-genome duplication and has two variants of CREBBP NCBD._\n\n### NMR and molecular modeling of ancient and extant CID/NCBD complexes\n\nWe next asked what happens on a molecular level when a new binding partner is recruited. To shed light on this question, we first subjected two ancient complexes (1R CID with D/P NCBD and 1R CID with 1R/2R NCBD, respectively) and one extant complex (human NCOA3 CID with human CREBBP NCBD) to NMR experiments and then used the chemical shifts assigned for C\u03b1, C\u03b2, H and N as restraints in molecular dynamics simulations using Metadynamic Metainference (Bonomi et al., 2016a, 2016b), a recently developed scheme that can optimally balance the information contents of experimental data with that of a priori physico-chemical information.\n\nStructural ensembles based on molecular dynamics simulations and NMR chemical shifts were obtained starting from the two available NMR structures, mouse CREBBP NCBD in complex with human NCOA1 CID (2C52) (Waters et al., 2006) and NCOA3 CID (1KBH) (Demarest et al., 2002), respectively. By using Metadynamic Metainference simulations (see Materials and methods), three complexes were analyzed: (i) 1R CID with, D/P NCBD, (ii) 1R CID with 1R/2R NCBD and (iii) extant human NCOA3 CID with CREBBP NCBD (Figure 9). The NMR data used as restraints in the simulations were of high quality and the peak assignment was close to 100% for all the three complexes (Figure 9\u2014figure supplement 1 and Figure 9\u2014source data 1). Comparison of the structural ensembles for the three complexes and their relative free-energy projections indicates that evolution of higher affinity correlates with a somewhat reduced conformational heterogeneity (Figure 9A). Indeed, the free-energy surfaces as a function of the fraction of the overall helix-content and the radius of gyration (Rg) show that the ancient complex is slightly less structured and more compact, with an average helical fraction of 0.41. This is reflected in the ensemble with more disordered N- and C-terminal helices for CID and a more disordered C-terminal helix N\u03b13 for NCBD. The younger 1R/2R complex is a little more structured in particular with respect to the C-terminal helix of NCBD, with an average helical fraction of 0.44. The extant human complex, finally, is again slightly more structured at the N- and C- terminal helices of CID, with an average helical fraction of 0.47. These results were confirmed by an independent analysis of the chemical shifts by \u03b42D (Camilloni et al., 2012a) (Figure 9B) that shows how the terminal helices obtain more structure in going from the ancient (blue), via the 1R/2R complex (green) and to the extant human complex (red); yet, the helix content of the second helix of CID decreases. The increase in helical structure at the terminal helices corresponds to a decrease in the average fluctuations as was confirmed by the analysis of the root mean square fluctuations (RMSF) (Figure 9C). The changes in the helical structure have an effect in terms of inter-domain contacts. Indeed, the most ancient complex appears to have more but less populated contacts than younger complexes, in line with a marginally more disordered interface (Figure 10). During evolution, the total number of possible contacts between the domains decreases while the average population of the formed contacts increases. To visualize the extent to which different residues in NCBD interact in the respective CID complex (most ancient, 1R/2R, and extant CREBBP NCBD/human NCOA3 CID), the normalized number of interface contacts per residue was analyzed (Figure 11). In this analysis, we also included two other complexes involving extant CREBBP NCBD, those with p53TAD and the \u2018interferon regulatory factor (IRF) interaction domain from IRF-3\u2019 (denoted as IRF-3 in the paper), respectively. Overall, the main effect observed along the evolution of the CID/NCBD complex is a decreased fraction of contacts formed by N-terminal residues correlating with increased helical structure of the N-terminal helix of CID (Figure 9) and an increased fraction of contacts formed by C-terminal residues of NCBD, correlating with increased helical structure of this region (Figure 9). In the C-terminal, there is an increase in fraction of contacts in particular at position 2108 that joins Arg2104 in binding Asp1068 from CID, and at position 2105 whose side chain forms multiple hydrophobic contacts with CID. However, there is a decrease in fraction of contacts at position Gln2103 while other positions show a less clear trend reflecting the complexity of the changes in the interaction surface. Of note is the similarity of the interface used by NCBD to bind CID with that of the NCBD/p53TAD complex, where for example Arg2104 makes a salt-bridge with Asp49 while the Tyr2108 makes a hydrogen bond with the backbone of Met44, and its difference with the structurally distinct NCBD/IRF-3 complex, where the same two residues are exposed to the solvent.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig9-v3.jpg)\n\n**Figure 9.:** (A) Free-energy surfaces (in kJ/mol) as a function of the fraction of helix content and the Rg, for the most ancient complex (D/P NCBD and 1R CID), the 1R/2R complex and one extant complex (human NCOA3 CID/CREBBP NCBD). For each free-energy surface, the position of the minimum and a set of representative structures are shown: CID in yellow and NCBD in blue. N- and C- termini (NT and CT, respectively) are labeled for the central ensemble. (B) Per residue helix population of the protein ensembles of the most ancient (blue circles), 1R/2R (green squares) and extant (red bars) variants as predicted by \u03b42D from the chemical shifts. (C) Average root-mean-square fluctuation for the three variants showing a weak correlation between historical age and conformational heterogeneity of the complex.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** The spectra were recorded such that either the CID domain was NMR active (panel A) or the NCBD was NMR active (panel B).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig10-v3.jpg)\n\n**Figure 10.:** The probability contact maps are shown for each pair of residues for (upper left) the most ancient complex (1R CID and D/P NCBD), (upper right) the 1R/2R complex and (lower right) the extant NCOA3 CID/CREBBP NCBD complex. Inter-domain contacts are framed by gray rectangles. Given two residues in a certain conformation, a contact is defined as a distance within 0.5 nm (excluding hydrogen atoms). Lower left panels: The total number of inter-domain contacts (left) and the inter-domain average contact formation (right) are reported as the number of residues with a contact populated more than 5% and the average over population for the same contacts, respectively.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig11-v3.jpg)\n\n**Figure 11.:** The normalized number of interface contacts per residue is calculated from the simulations of the three historical CID/NCBD complexes (upper three panels) and compared with two extant complexes formed by CREBBP NCBD and alternative protein ligands, p53TAD (pdb code 2L14) (Lee et al., 2010) and a binding domain from IRF-3 (pdb code 1ZOQ) (Qin et al., 2005), respectively. In the IRF-3 complex (bottom panel), NCBD adopts a distinct tertiary structure as compared to complexes with CID and p53. The Gly-Ser residues at the N-terminus of the NCBD sequences result from the expression construct used in the study.\n\n### The role of positions 2106 and 2108 in NCBD for increasing the affinity for the CID domain\n\nThe Metadynamic Metainference analysis highlighted a few positions that appeared prominent in the evolution of higher affinity in the CID/NCBD interaction and in particular position 2108, where the Q2108Y mutation makes the interaction stronger. To test this result and further probe the less conserved region at the end of N\u03b13 in NCBD, we made the two reverse mutations in human CREBBP NCBD (i.e. A2106Q, Y2108Q and the double mutant A2106Q/Y2108Q) and measured the affinity to human NCOA2 CID using ITC (Figure 12). The A2106Q mutation did not change the affinity for NCOA2 CID. The Y2108Q and the double mutation A2106Q/Y2108Q resulted in a slightly lower affinity (twofold) toward NCOA2 CID (Table 1), in support of the simulation. However, the mutations made the NCBD protein less soluble, which led to precipitation and less reliable data due to ill-defined native baselines in the titration experiments. Nevertheless, the limited effect of these reverse mutations in one extant complex underscores the high degree of plasticity in this region of the CID/NCBD complex and illustrates the permissive nature of IDPs toward mutations.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig12-v3.jpg)\n\n**Figure 12.:** (A) A2106Q, (B) Y2108Q and (C) A2106Q/Y2108Q. Below are CD spectra of the respective NCBD variant.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/16059/elife-16059-fig13-v3.jpg)\n\n**Figure 13.:** Free-energy plots along the dRMSD collective variable for the second half of the simulations are shown for (A) the most ancient complex (1R CID and D/P NCBD), (B) the 1R/2R complex and (C) the extant NCOA3 CID/CREBBP NCBD complex. The solid black curve is the final free energy obtained by averaging over the second half of the simulations. Overall, all the simulations are converged within 3 kJ/mol.\n\n## Discussion\n\nWe have used evolutionary biochemistry to reconstruct the evolutionary process by which the interaction between two disordered proteins has emerged from a low-affinity complex. By identifying and resurrecting the early ancestor partners, we show how a combination of direct interactions and structural heterogeneity contributed to optimizing the affinity of the CID/NCBD complex. In accordance, we observe a remarkably high tolerance to mutation in the interface of this particular protein-protein interaction in extant complexes. For example, in NCBD there are a number of substituted residues at the end of N\u03b13 forming the interface to CID, (Figure 2A). For the CID domain, there are also non-conserved residues in the CID/NCBD interface, for example Phe1055 in NCOA1 CID, which is Ala in NCOA2 CID, Leu in NCOA3 CID and Leu in the ancestor. Moreover, Lys1059 in NCOA1 CID forms part of the interface in the complex (PDB code 2C52), whereas the corresponding position in NCOA3 CID is a solvent exposed Thr (the ancestral residue) (PDB code 1KBH). In NCOA2 CID this residue is a Phe, which is likely part of the hydrophobic core of the NCBD/NCOA2 CID complex. A third non-conserved interacting residue is position 1053 in C\u03b11. Here, the ancestral residue is Asp, while in the human domains it is Val in NCOA1 CID, Tyr in NCOA2 CID and His in NCOA3 CID. These are all examples of substitutions, which could be expected to have a large impact on the protein-protein interaction and also on the structure of the complex. Nevertheless, these mutations in the CID domain have minor impact on the affinity for NCBD, illustrating the high tolerance to mutations in IDPs such as the CID domain, with regard to affinity. The tolerance to mutation is also reflected in the surprisingly similar affinities of human NCBD for CID domains from sea lamprey, zebra fish and human, respectively (Table 1). Based on the two available NMR structures of CID/NCBD complexes (Figure 4), one explanation is that the CID domain may adopt distinct conformations in the C-terminal region (corresponding to C\u03b12 and C\u03b13 in 1KBH) depending on amino acid sequence; however, the most populated simulated structures (Figure 9) are all relatively similar to the 1KBH structure. Some structural features appear important for maintaining the CID/NCBD interaction. We have previously shown that the initial native contacts formed during the binding reaction between human NCOA3 CID (ACTR) and CREBBP NCBD are made between residues in the respective \u03b11 of the two domains (Ie\u0161mantavi\u010dius et al., 2014; Dogan et al., 2013). Both C\u03b11 and N\u03b11 contain leucine-rich motifs, which are very common in protein-protein interactions (Kobe and Deisenhofer, 1994) and which are conserved in the CID/NCBD interaction (Figure 2). In contrast, in extant fruit fly (Drosophila melanogaster), a proteostome, the NCBD domain is preserved but, similarly to D/P NCBD it has a low affinity for the human CID domains (Table 1). The leucine-rich motif in C\u03b11 is mutated in fruit fly NCBD (Figure 2) and the C-terminal region is more similar to D/P NCBD. Thus, it is likely the combination of several amino acid substitutions, affecting both direct interactions and structural heterogeneity, that made the 1R/2R NCBD a high-affinity CID binder.\n\nOn a functional level there is much more to the interaction than affinity, for example cellular concentrations, solubility, spatial organisation of the proteins and competing ligands. NCBD is particularly interesting in this respect because it has several physiological ligands including the PNT domain from the transcription factor ETS-2 (Jayaraman et al., 1999), IRF-3 (Lin et al., 2001), and p53TAD. Any mutation that increases the affinity toward the CID domain must maintain the affinity for the other ligands. Intriguingly, in the complex between CREBBP NCBD and IRF-3 (Qin et al., 2005), NCBD adopts a completely different conformation as compared to the conformation with CID domains and p53TAD (Lee et al., 2010). Furthermore, NMR and folding experiments suggest that NCBD can adopt two different conformations in absence of ligand, one of which is the CID-bound conformation and the other possibly the IRF-3 bound conformation, although this has not been experimentally confirmed (Kjaergaard et al., 2010a, 2013; Dogan et al., 2016). Such functional conformational heterogeneity in NCBD would obviously put extra constraints on the evolutionary process. With these observations in mind, we note that the affinity of the extant human PNT domain of ETS-2 is similar for ancient and extant NCBD domains (\u223c1 \u00b5M, Table 1). Although we have not resurrected the ancient versions of the PNT domain, these results suggest that the PNT/NCBD interaction was present before, and preserved during the evolution of the CID/NCBD interaction. Consistently, the PNT domain is present in protostomes (e.g. D. melanogaster), while the CID domain is not. We observe a similar pattern for the affinity between extant human p53TAD and ancient and extant human NCBD variants. The limit to a further increase in affinity between CID and NCBD in the animal lineage leading to the species that experienced the 1R whole genome duplication could well be due to constraints imposed by the ancient versions of PNT, IRF-3 and p53TAD. On a residue level, it is clear that NCBD employs distinct residues for the interaction with IRF-3, which allows this interaction (and the alternative conformation of NCBD) to coexist with those of CID and p53TAD (Figure 11). For CID and p53TAD, similar residues have been used throughout evolution for interactions, albeit with different relative influences.\n\n## Materials and methods\n\n### Ancestral sequence resurrection\n\nCREBBP and p300 nucleotide sequences were downloaded from the Gene tree ENSGT00730000110623, automatically generated by Ensembl (Flicek et al., 2013) (www.ensembl.org). This collection was complemented with hits from tblastn (RRID:SCR:011822) searches from preEnsembl (RRID:SCR_006766) (pre.ensembl.org), EnsemblMetazoa (RRID:SCR_000800) (metazoa.ensembl.org), NCBI (www.ncbi.nlm.nih.gov) (Metazoa specific searches), Skatebase (RRID:SCR_005302) (Wang et al., 2012) (skatebase.org), JGI Genome Portal (RRID:SCR_002383) (Grigoriev et al., 2012) (genome.jgi.doe.gov), MOSAS amphixus (http://mosas.sysu.edu.cn/genome/), EchinoBase (RRID:SCR_007441) (http://spbase.org) (Cameron et al., 2009), Japanese lamprey genome project (http://jlampreygenome.imcb.a-star.edu.sg/) (Mehta et al., 2013) and OrcAE (http://bioinformatics.psb.ugent.be/orcae/) (Sterck et al., 2012). The same was done for NCOA1, 2 and 3 (Gene tree ENSGT00530000063109). A number of cycles with alignments and maximum likelihood tree analysis were performed to detect erroneous sequences or alignments. The erroneous sequences were manually edited where possible, by for instance removing or adding exons. If manual editing still did not result in a good alignment for that individual gene, the sequence was removed from the analysis. Sequences shorter than 500 amino acids were excluded from the CREBBP analysis (the whole length of the protein is roughly 2400 residues), while sequences shorter than 300 amino acids were excluded from the analysis for the roughly 1400 residues long NCOA proteins. Sequences lacking a complete NCBD or CID domain were also removed. The final sequences were aligned at Guidance (Penn et al., 2010) (guidance.tau.ac.il) using MAFFT (RRID:SCR_011811) and ClustalW (RRID:SCR_002909) with the codon model, and Muscle with amino acid model. The best alignment according to guidance alignment score was MAFFT and this alignment was therefore used for the continued analysis. Less reliable residues according to guidance (confidence score below 0.5) were masked as X. Masking residues is preferable to removing whole columns since more good data will be retained in the analysis (Privman et al., 2012). All columns without a guidance confidence score, as well as regions with few aligned sequences were also removed with Gap Strip/Squeeze v 2.1.0, which kept columns with less than 95% gap. The amino acid and nucleotide models that best describe the resulting alignment according to the Bayesian information criterion (BIC) (Schwarz, 1978), calculated with Mega 5.2.2 (Tamura et al., 2011), were JTT+ G+ I and GTR+ G+ I, respectively for CREBBP. For NCOA, the best amino acid model was JTT+G. Using the alignment, maximum likelihood (ML) trees were calculated both for the best nucleotide and amino acid model with PhyML3.0 (Guindon et al., 2010) with SPR and NNI tree improvement and with SH-aLRT branch support, which has been shown to perform better than traditional bootstrap. The cnidarian species were chosen as outgroups for the CREBBP tree and non-chordate deuterostomes as outgroups for the NCOA tree. The branches in the tree generated by amino acid alignment follow what has previously been suggested for the evolution of species (Letunic and Bork, 2011) and whole genome duplications, while a few branches in the nucleotide tree diverge from the species tree. Our conclusion is therefore that the amino acid model and tree best describe the actual evolution and further analyses were performed using this tree. For ancestral sequence reconstruction, it is very important to have the correct alignment and therefore we cut out the NCBD and CID domains, which should be resurrected, as well as 30 adjacent amino acid residues and realigned the respective set of sequences with MAFFT, Muscle, ClustalW and PRANK with the codon model at Guidance. Sequences that did not have a confidence score above 0.5, for example the urochordata (tunicates) were removed from the CREBBP tree. The final alignments contained 181 CREBBP protein sequences and 184 NCOA protein sequences. The highest guidance alignment score for both the NCBD and CID domains, respectively, were obtained with Muscle. However, for NCBD we obtained an even better alignment score by manually editing the alignment (alignment score of 0.97 versus 0.96 and lowest column score 0.85 versus 0.76). The manually edited NCBD alignment and the CID alignment (Figure 2\u2014figure supplements 1\u20132) were inserted into the respective original full length protein alignments and together with the previously obtained ML trees were used to resurrect the ancestral sequences at Mega 5.2.2, which uses an ML method that correctly deals with indels (Hall, 2011).\n\n### Expression and purification of protein domains\n\nThe cDNA corresponding to the most likely sequences at each evolutionary node (for both NCBD and CID) were purchased and subcloned into the pRSET vector used previously for expression of both NCBD and CID variants (Dogan et al., 2012). All NCBD and CID variants were expressed and purified as previously described using nickel affinity and reversed phase chromatography (Dogan et al., 2012). The selected nodes were (i) the fish/tetrapod (CREBBP NCBD and NCOA3 CID), (ii) 2R, (iii) 1R and (iv) deuterostome/proteostome (D/P), respectively. When the probability of the resurrected amino acid was lower than 0.7 (Figure 2\u2014source data 1 and 2) a construct with the second, third etc. most likely amino acid was produced to investigate possible effects of a different amino acid. In all cases in the present work, there was no significant effect of alternative residues (Table 1, Figure 6). The numbering of residues for CID domains is according to the splice variant NCOA3-002 (ENST00000371997) and the numbering of residues for NCBD domains according to human CREBBP. The PNT domain of ETS-2 and p53TAD were expressed and purified as previously described (Dogan et al., 2015).\n\n### Binding experiments using ITC\n\nAll ITC experiments were performed in 20 mM sodium phosphate, pH 7.4, 150 mM NaCl. Protein concentrations were measured either using the absorbance at 280 nm and calculated extinction coefficients or (if the variant lacked Trp and Tyr residues) with a direct detect IR spectrometer. The ITC measurements were performed at 25\u00b0C on an iTC200 (Malvern instruments) according to the instructions of the manufacturer. For each experiment, the respective NCBD and CID variant was dialysed against the same buffer to minimize artifacts due to buffer mismatch. The baseline of the experimental data was adjusted to get the lowest possible chi value in the curve fitting. For all high-affinity interactions (Kd<1 \u00b5M), good baselines were obtained and the binding stoichiometry was generally around 1. For the low-affinity interactions (Kd\u00a0=\u00a01\u201310 \u00b5M), only one baseline was obtained and the stoichiometry thus not well determined. For certain variants, the ITC measurements were repeated twice with the same sample (i.e. a technical replication) and in two cases the experiments were repeated with new samples (biological repetition). Both the biological and technical repetitions yielded highly similar results. ITC experiments are very sensitive to factors such as buffer mismatch and experiments with poor baselines jeopardizing curve fitting were excluded from the study. In the cases where a certain amino acid position was reconstructed with low probability (<0.7), the most likely variants were subjected to ITC experiments to rule out that the uncertainty affected the conclusions. For example, seven different variants of D/P NCBD were made and their affinities reported in Table 1. Three additional variants of 1R CID were also tested with D/P NCBD with virtually identical Kd values. In the case of D/P NCBD/1R CID, the average value of all 10 reported Kd values in Table 1 (5.1\u00a0\u00b1\u00a01.6 \u00b5M) were used to calculate the relative affinity shown in Figure 5B. Importantly, all variants tell the same story, namely that the affinity between 1R/2R NCBD and 1R CID (and 2R CID and later variants) is significantly higher than that between the ancestral D/P NCBD variants and 1R CID.\n\n### Urea and TFE experiments\n\nAll experiments were performed in 20 mM sodium phosphate, pH 7.4, 150 mM NaCl. Circular dichroism (CD) experiments were performed on a JASCO-810 spectropolarimeter with a Peltier temperature control system. Far-UV spectra of NCBD and CID variants were recorded from 260 nm to 200 nm at 4\u00b0C using 30 \u00b5M protein. To assess the global stability of NCBD, urea (0\u20138 M) was added to protein (30 \u00b5M)-buffer solutions containing 1 M trimethylamine N-oxide (TMAO) at 10\u00b0C and the CD signal at 222 nm was measured by taking the average of 61 individual recordings at each urea concentration. To assess the helix propensity of CID variants 1,1,1-trifluoroethanol (TFE) was added to protein (30 \u00b5M)-buffer solutions at 25\u00b0C and the CD signal at 222 nm was measured by taking the average of 61 individual recordings at each TFE concentration. Data from the urea and TFE experiments were fitted to the equation for a two-state process (folded state in equilibrium with the denatured state) to obtain the midpoint of the transition and the associated cooperativity factor (m value) (Fersht, 1999). Regarding the TFE titrations (little difference between variants) and urea titrations (perhaps a small difference), selected experiments were repeated (for example the D/P NCBD variant). The reported standard errors in Tables 2 and 3 come from the curve fitting but in this type of biophysical experiments, which we perform routinely in the lab, such errors are generally very similar to the error from three independent experiments. Figure 5D contains data from two independent experiments for urea-induced D/P NCBD denaturation, showing the high precision in these types of experiment. The largest source of error for the transition midpoint in this type of experiment is the concentration of TFE or urea, which are both determined with high accuracy. The urea concentration is double checked by measuring the refractive index. The largest source of error in the free energy of unfolding \u25b3GD-N derives from the error in the mD-N value (describing the 'cooperativity' of the transition). The error in the mD-N value is large because of the small size of the proteins in the present study, resulting in short baselines and low accuracy in the parameters derived from the curve fitting. However, similar to the ITC experiments, the results are clear insofar that there are only small insignificant differences between most variants. The D/P NCBD (and D. melanogaster NCBD) have a slightly lower midpoint for urea denaturation, and lamprey NCBD a slightly higher one, but given the error associated with mD-N, and the lack of well-defined baselines (due to the broad transition), we do not stress this apparent difference in \u25b3GD-N as a major finding.\n\n### NMR spectroscopy\n\nThe respective CID and NCBD domains were expressed as unlabeled (in rich medium) and 15N-13C doubly labeled (in minimal medium containing 15NH4Cl and 13C-D-glucose). Purification was as previously described for unlabeled protein (Dogan et al., 2012). After purification, the samples were lyophilized and stored at \u221220\u00b0C. Prior to use the lyophilized samples, they\u00a0were dissolved in a buffer containing 10 mM sodium phosphate pH 6.8, 150 mM NaCl and dialyzed against the same buffer overnight at 25\u00b0C. Protein complexes were formed by titrating saturating concentrations of the unlabeled (CID or NCBD) to labeled fractions (NCBD or CID). The final NMR samples contained 300\u2013500 \u00b5M of the labeled protein (bound) to which 0.01% NaN3 and 5% D2O was added. NMR experiments were acquired on Bruker 600, 700 and 900 MHz spectrometers equipped with triple resonance cryogenic probes at 25\u00b0C. For assignment purposes, standard 3D HNCACB and 15N-resolved NOESY-HSQC (Cavanagh et al., 2007) were recorded. All experiments were processed with NMRPipe (Delaglio et al., 1995) and analyzed with CcpNmr (Vranken et al., 2005). The backbone chemical shifts were used in the simulations as described in the next section.\n\n### Ensembles determination\n\nStructural ensembles of the CID/NCBD complexes were obtained using Metadynamic Metainference (Bonomi et al., 2016a, 2016b). Prior information contained in the Charmm22* force field (Piana et al., 2011) with explicit solvent. Chemical shifts (C\u03b1, C\u03b2, N and H) were included using Metainference in its Gaussian form (Bonomi et al., 2016a) using CamShift (Kohlhoff et al., 2009; Camilloni et al., 2012b) over N\u00a0=\u00a010 replicas, r. The Metainference energy was calculated as:\n\n$$\nE=\\sumr=1N{E_{ff}+k_{B}T\\sumi=1N_{d}[\\frac{(f_{i}(X)\u2212d_{i})^{2}}{2\\sigma_{r,i}^{2}}+0.5log2\\pi\\sigma_{r,i}+0.5log\\sigma_{r,i}]}\n$$\n\nwhere the first term is the sum the over the replicas and the second term is the sum over the experimental data. Eff is the energy of the force-field, kBT is the Boltzmann constant times the temperature, f(X) is the calculated chemical shift averaged over the replicas, d is the reference experimental value, \u03c3 is the error estimated on-the-fly that includes the standard error of the mean resulting from the averaging over a finite number of replicas as well as the error estimate for random, systematic and the intrinsic error of the forward model (i.e. CamShift). All simulations were run in GROMACS (Pronk et al., 2013) using PLUMED 2 (Tribello et al., 2014). Van der Waals and Coulomb interactions were implemented with a cutoff at 0.9 nm, and long-range electrostatic effects were treated with the particle mesh Ewald method on a grid with a mesh of 0.1 nm. All simulations were carried out in the canonical ensemble at constant volume and by thermosetting the system using a stochastic velocity rescaling (Bussi et al., 2007). The starting conformations were taken from the available NMR structures (PDB code 1KBH and 2C52) and mutated accordingly using Scwrl4 (Krivov et al., 2009). The structures were solvated with 5000 water molecules and ions were added to neutralize the total charge. Two preliminary 100 ns long simulations were run for each structure to equilibrate the system. Metadynamic Metainference simulations were performed using 10 replicas. The sampling of each replica was enhanced by Parallel Bias Metadynamics (Pfaendtner and Bonomi, 2015) along five collective variables (CVs) namely, the helix content of CID, the helix content of NCBD, the radius of gyration of the complex, the dRMSD from 1KBH calculated using only the C\u03b1 carbons and the AlphaBeta collective variable defined as one half of the sum over all residues of one plus the cosine of \u03c71 angles for all hydrophobic residues, except alanine. Gaussians deposition was performed with an initial rate of 0.2 kJ/mol/ps, where the \u03c3 values were set to 0.2, 0.1, 0.01, 0.05, and 0.5 for the five CVs, respectively. In order to keep under control the convergence of the simulations, we rescaled the height of the Gaussians using the well-tempered scheme with a bias-factor of 16 (Barducci et al., 2008). Furthermore, in order to limit the extent of accessible space along each collective variable and correctly treat the problem of the borders, intervals were set to 8\u201328, 18\u201338, 1.2\u20131.6, 0\u20130.6 and 0\u201324 for the five CVs, respectively (Baftizadeh et al., 2012). We set the bias as constant outside a defined interval for each CV. Each replica has been evolved for 150 ns. The sampling of the 10\u00a0replicas was combined using a simple reweighting scheme based on the final bias B where the weight of a conformation is given by w=exp(+B(X)/kBT), consistently with the quasi static behavior at convergence of well-tempered metadynamics. An analysis of the convergence of the simulations is shown in Figure 13.\n",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "2980d9c7-4908-4036-8e70-6c5e053e978a",
+      "submission_id": "7c246503-eb9c-48a8-98bc-bafef5b29752",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeffery W Kelly, The Scripps Research Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16059.027](https://doi.org/10.7554/eLife.16059.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Emergence and evolution of an interaction between intrinsically disordered proteins\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Jeffrey Kelly as the Reviewing Editor and Aviv Regev as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Rohit Pappu (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe authors pose a very interesting and important question regarding the evolution of IDPs that participate in protein-protein interactions. They combine systematic assessments of sequence alignments with ITC measurements and MD simulations to arrive at some interesting insights regarding the differences between the ancient and extant sequences, especially in relation to the impact of the differences on protein-protein interactions. Overall, this is an interesting study\n\nSummary:\n\nThis manuscript needs major revision to be seriously considered for eLife. Both reviewers agree that the big picture gets lost in the maze of all the details about specific residues and that we think this can potentially be remedied with some clever restructuring. The figures too need a lot of work. Many of the figures are just background figures and can be moved to the supplemental materials section. We find that the main assertions of the paper that hang mostly on the molecular dynamics simulations, could be better validated and are therefore not well supported. The MDS themselves suffer from a major drawback, which is the assumption that the reconstructed complexes have the same structure as extant ones. As a control, it might make sense for the authors to anchor their choice of structures in a suitable alignment of the structures adopted various bound IDPs as a function of sequence distance to establish the rationale for their assumption.\n\nEssential revisions:\n\n1) We urge caution regarding making pronouncements about the evolution of IDPs. I am familiar with the work that's been cited. Some skepticism regarding these pronouncements might be warranted. And indeed the authors are well poised to test the specific validity of the oft-quoted pronouncement regarding IDP evolution. They could set up a comparison between their two IDP sequences and two autonomously foldable counterparts of equivalent molecular weights. In fact, they can perform internal comparisons between the IDRs and well folded domains of NCBD.\n\n2) There is a second refrain that is often made in the field of IDPs that this work is perfectly situated to test and critique. It is often stated, without compelling evidence, that the sequences of IDPs evolve rapidly (cf., the citations to the evolutionary work made in the manuscript). However, it is also argued that the amino acid compositions show greater conservation than the actual sequences. To what extent is this separation between the degree of variation / composition true in the current exercise and what do the comparisons between the variations of composition vs. sequence tell us about the evolution of biases that determine the properties of CID and NCBD?\n\n3) The interpretation of the metadynamics results raises some questions. The data in Figure 12 are used to assert that CID/NCBD complexes \"become less dynamical upon evolution\". I see a different and potentially more interesting interpretation and would like the authors to consider this option as an alternative \u2013 at least as a comparative alternative. It appears, to the naked eye, that the projected free energy surface undergoes a bifuraction to generate bistable states as the sequences become more recent. Indeed, this bifurcation is manifest along the dRMSD axis and not along the Rg axis, which is not unreasonable. The simplest way to approach the bistability analysis is to fit a mixture of Gaussians to the free energy projection along the dRMSD axis and perform a numberical analysis of the quality of the fit using a K-L measure of divergence from a unimodal vs. a bimodal distribution. If the best description is a bimodal one, then it is likely that the ancient sequence sets up the symmetry breaking to generate a bistability that is adopted by the more recent sequences. As an additional point, the statement regarding increased heterogeneity (one should really call it this and not talk about dynamics because the use of the word dynamics without annotation by timescales is unsatisfying) needs to be quantified. There are several groups that have put forth elegant ideas for quantifying conformational heterogeneity. Stultz's group has used an information theoretic approach, Papoian's group has used a contact-based approach anchored in the tenets of spin glass theory, and Pappu's group has used an approach based on comparative assessments of dihedral angle distributions. The latter's PHI parameter seems well suited for making the point that the authors make in the current manuscript.\n\n4) There is a potentially erroneous simplification that bears scrutiny. The authors focus on the evolution of the affinity of CID-NCBD interactions. However, these affinities need to be placed in the broader context i.e., in the context of the affinity of NCBD for other ligands. The authors touch upon this in the Materials and methods section where they note that \"any mutation that increases the affinity toward the CID domain must maintain the affinity toward other ligands\". I think this logic need closer quantitative scrutiny. The overall sentiment of specificity being determined by the collection of comparative affinities is spot on. However, if the affinity \u2206G were to change for one complex, and the affinities for the other complexes remained invariant, then the specificity will change through evolution because the collection of \u2206\u2206G values will be such that a change in the affinity for one complex, while keep all others fixed will change the vector of \u2206\u2206G values, thus increasing the specificity of NCBD toward the CID domain and away from the others. Is this the idea that the authors wish to communicate? If yes, then the onus is on them to provide an evolutionary trace that shows how \u2206\u2206G changes as a function of mutations thus highlighting the impact of mutations on altered specificities without altering a whole host of affinities. On the other hand it is conceivable that the affinities change and do so in concert to ensure a conservation of specificities and this would point to neutral drift.\n\n5) The general comment about taking on lots of contacts that are weak within the ancient complexes that are swapped for fewer, tighter contacts does not appear to be supported by substantive quantitative analysis. This could be remedied in a revised version.\n\n6) The figures in the paper should be improved. We understand that eLife doesn't have strict limits on figure number, but I think the authors should carefully edit the figures. Some of them (e.g. Figures 3, 4, 5, 6) aren't readable because of the volume of data shown. These are probably better left for the supplement, and sensible summaries/reductions could be made into main figures (e.g. a sparser tree, etc.). Additionally, figures are cited in a non-linear order in the text and this is not acceptable. Ideally, the reader can move from one figure to the next, with minimal jumping around. Figure 2 is of very poor quality and none of the details are discernible. The color-coding of the positions in the alignment has to be properly explained. These alignments appear to be qualitative in that they lack the necessary quantitative annotation and an accompanying statistical model to provide one with a quantitative sense of the quality and or significance of the alignments. The same critique applies to Figures 3 and 4. We fully recognize the challenges posed by Figures 5 and 6. However, the criticism of a lack of clarity and illegibility stand for these figures as well. The average reader will not see any point to this figure. If it has to be included in the current format, then it has to go to the supplementary material. If it has to be included in the main text, then it needs a lot of work in order to make it legible. Additionally, a detailed caption will be required to walk the reader through the details.\n\n7) The MDS are based on two structures of extant complexes. The authors find that the ancient complex has more plasticity in the MDS. This could be an artifact of the assumption that the ancient complex has an identical structure as the two extant ones. This concern is especially salient because the authors discuss at various points the fact that other complexes formed by these proteins have different structures. Ideally, the ancient complexes would have structures, too.\n\n8) The conclusions based on the MDS are not corroborated with any experimental data. I know the authors tried with the two mutants they made, but the results there were inconclusive. None of the other experiments the authors did really supported the MDS, either. I think they need something (H-D exchange, light scattering, etc.) to validate the conclusions of the MDS.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Emergence and evolution of an interaction between intrinsically disordered proteins\" for further consideration at eLife. Your revised article has been favorably evaluated by Aviv Regev (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nReviewer #2:\n\nI have no major concerns. All of the issues that I raised have been addressed satisfactorily with considerable additional work. My hunch about possible bifurcations in the free energy surfaces of recent proteins has been properly invalidated by additional simulations that improve the statistical convergence. The new free energy surfaces reveal an interesting trend that is well supported by the experiments. The NMR data provide a very nice addition and helps make a complete story. I am fully satisfied and was always keen on seeing this published. This should, in my view, happen post haste.\n\nReviewer #3:\n\n1) The authors add an analysis of evolutionary rates in different domains of CREBP and NCOA. They conclude \"\u2026for CID and NCBD, functions of the domains\u2026 is probably the determining amino acid evolution rate.\" I don't think the authors have done enough to justify this conclusion (or any conclusion about evolutionary rate). They measure the rate of accumulation of nonsynonymous substitutions and indels. This quantity is related to evolutionary rate but does not take into account the mutation rate, which can differ between loci. Typically, the dN/dS statistic is used to account for mutation rate (for a primer see http://www.nature.com/nrg/journal/v16/n7/full/nrg3950.html). This is a serious technical flaw that must be amended.\n\n2) To deal with problems related to the MD simulations, the authors have included NMR chemical shift information in the simulations. This is a welcome addition, but I couldn't figure out from the text in the Results or the Materials and methods exactly what NMR data was collected. Is there data for all complexes shown in Figures 10/11? Please clarify.\n\n3) A second issue related to the NMR data is that the data are unavailable/not shown in a figure or supplementary table. I would have liked to be able to examine the chemical shift data (e.g. of the ancient vs extant complexes), and also would have appreciated some principled commentary on the quality of the data. I'm not a structural biologist, so I can't provide specific guidance on what exactly might be shown. Thus, I'll leave it to the other reviewer/the editor to decide whether this request is a reasonable one.\n\n4) On the Results section, the authors state \"Overall, the main effect observed\u2026 is an increase in the strength of the contacts formed by the C-terminal residues.\" I have two issues with this statement. First, what the authors actually measured was the normalized number of contacts in the simulations. Can the strength of the contacts actually be inferred by the number of contacts in the simulation? If so, it might help the less specialized reader to point this out and cite a reference for them to examine. If not, then the statement should be amended. The second issue I have is that the data seem more complex than the picture painted by this sentence and the next section of the results. For example, position 2105 has a big change but isn't discussed. Also, several positions in the N-terminus also undergo changes in the number of interface contacts. How should the reader think about those changes? Are they unimportant for some principled reason? Or, have the authors just chosen to avoid commenting on them for the sake of brevity?\n\n5) Related to point #4, one of my original concerns was that the conclusions of the MD simulations were not corroborated with experimental data. I appreciate that the authors collected NMR data, which made the MD simulations more accurate. However, they didn't address my original concern which was that the conclusions of the MD simulations aren't well corroborated. The analysis of the mutants, which appeared in the original submission, remains only partially convincing. Additional data to support the conclusions of the MDS (e.g. testing more hypotheses arising from the MDS by mutagenesis, etc.) would make the paper stronger.\n",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c5838afe-46fa-42cf-a3a6-97f823e82b15",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C1",
+      "claim": "Protein-protein interactions involving intrinsically disordered proteins are important for cellular function and common in all organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein-protein interactions involving intrinsically disordered proteins are important for cellular function and common in all organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that draws from established scientific knowledge about IDPs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "ef151e47-41f2-4a96-8f59-d681f2615a30",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C2",
+      "claim": "CID appeared after the divergence of protostomes and deuterostomes 450\u2013600 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "CID appeared after the divergence of protostomes and deuterostomes 450\u2013600 million years ago, while NCBD was present in the protostome/deuterostome ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic reconstruction data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "1d9e58f0-3adf-4daa-a70c-7a779a17adc2",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C3",
+      "claim": "NCBD was present in the protostome/deuterostome ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "CID appeared after the divergence of protostomes and deuterostomes 450\u2013600 million years ago, while NCBD was present in the protostome/deuterostome ancestor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic reconstruction data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "7e22a047-bd48-4147-96a7-03c826a4824a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C4",
+      "claim": "The most ancient CID/NCBD formed a relatively weak complex (Kd\u223c5 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "The most ancient CID/NCBD formed a relatively weak complex (Kd\u223c5 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "74130eff-aac9-4ba8-8349-a9609b640b68",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C5",
+      "claim": "At the time of the first vertebrate-specific whole genome duplication, the affinity had increased (Kd\u223c200 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of the first vertebrate-specific whole genome duplication, the affinity had increased (Kd\u223c200 nM) and was maintained in further speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "0ff9d806-ab90-403b-ad4d-b9d0f1f1c58d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C6",
+      "claim": "The affinity of CID/NCBD was maintained in further speciation after the first vertebrate-specific whole genome duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of the first vertebrate-specific whole genome duplication, the affinity had increased (Kd\u223c200 nM) and was maintained in further speciation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "033c65dd-ee44-4430-934f-bf087634246a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C7",
+      "claim": "New interactions involving intrinsically disordered proteins may evolve via a low-affinity complex which is optimized by modulating direct interactions as well as dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments together with molecular modeling using NMR chemical shifts suggest that new interactions involving intrinsically disordered proteins may evolve via a low-affinity complex which is optimized by modulating direct interactions as well as dynamics, while tolerating several potentially disruptive mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data (NMR, ITC) and molecular modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "5a95efda-33ba-4c2c-911d-1161ece5d854",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C8",
+      "claim": "Evolution of IDP interactions tolerates several potentially disruptive mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments together with molecular modeling using NMR chemical shifts suggest that new interactions involving intrinsically disordered proteins may evolve via a low-affinity complex which is optimized by modulating direct interactions as well as dynamics, while tolerating several potentially disruptive mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing similar affinities despite sequence variations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "2e361bc0-6f85-469a-ad07-51cf579973f5",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C9",
+      "claim": "A substantial fraction of the proteome is made up by intrinsically disordered proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of proteins fold into well-defined structures to function, a substantial fraction of the proteome is made up by intrinsically disordered proteins (IDPs) (Uversky and Dunker, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Uversky and Dunker, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "b1e4175d-78cb-481d-b9ad-28767144034f",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C10",
+      "claim": "IDPs play pivotal roles in biology by participating in protein-protein interactions that govern key functions such as transcription and cell-cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These IDPs, which can be fully disordered or contain disordered regions of variable size, play pivotal roles in biology, usually by participating in protein-protein interactions that govern key functions such as transcription and cell-cycle regulation (Uversky et al., 2008; Wright and Dyson, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Uversky et al., 2008 and Wright and Dyson, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "00622d33-6a91-4c52-bc3f-f1fc987937b0",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C11",
+      "claim": "IDPs are present in all domains of life.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs are present in all domains of life, but they are more common and have a unique profile in eukaryotes as compared to archea and bacteria (Peng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Peng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "fa289ad2-1418-4101-a337-51b65c6b6e2f",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C12",
+      "claim": "IDPs are more common and have a unique profile in eukaryotes as compared to archea and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "IDPs are present in all domains of life, but they are more common and have a unique profile in eukaryotes as compared to archea and bacteria (Peng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Peng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "0177a550-479c-46aa-9fd5-5c153717e92d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C13",
+      "claim": "IDPs appear to evolve faster than structured proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "One particular problem with analyzing structure-function relationships in IDPs with regard to evolution is that IDPs appear to evolve faster than structured proteins and are more permissive to substitutions that do not apparently modulate function in either a positive or negative way (Brown et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Brown et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "72d95045-d0e8-4c47-a079-bd7f1e997ea6",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C14",
+      "claim": "IDPs are more permissive to substitutions that do not apparently modulate function.",
+      "claim_type": "EXPLICIT",
+      "source": "One particular problem with analyzing structure-function relationships in IDPs with regard to evolution is that IDPs appear to evolve faster than structured proteins and are more permissive to substitutions that do not apparently modulate function in either a positive or negative way (Brown et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Brown et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "24310967-8fc8-4c1b-8e91-77e757a3dafb",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C15",
+      "claim": "Insertion and deletion of amino acids are more common in IDPs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, insertion and deletion of amino acids are more common in IDPs (Brown et al., 2010; Light et al., 2013), further complicating structure-function analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Brown et al., 2010 and Light et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4a3f6714-4140-4215-b508-b505b1206bc5",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C16",
+      "claim": "The two paralogs CREBBP and p300 likely result from whole genome duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "The two paralogs CREBBP and p300, as well as the three paralogs NCOA1, 2 and 3, likely result from whole genome duplications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on phylogenetic analysis and established knowledge of vertebrate genome duplications.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "f1c56c99-5057-4d81-aa3d-8d6a09a642ab",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C17",
+      "claim": "The three paralogs NCOA1, 2 and 3 likely result from whole genome duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "The two paralogs CREBBP and p300, as well as the three paralogs NCOA1, 2 and 3, likely result from whole genome duplications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on phylogenetic analysis and established knowledge of vertebrate genome duplications.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "a2afdf13-26c0-4835-802d-7e71de956da5",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C18",
+      "claim": "The ancestral vertebrate(s) went through two rounds of whole genome duplications (1R and 2R) prior to the origin of jawed vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The general conclusion is that the ancestral vertebrate(s) went through two rounds of whole genome duplications (denoted 1R and 2R, respectively) prior to the origin of jawed vertebrates, and that teleost (bony) fish experienced a third whole genome duplication (3R) (Hughes and Liberles, 2008; Van de Peer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hughes and Liberles, 2008 and Van de Peer et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "7fa42b36-593b-4d21-87a5-76e5d8891c79",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C19",
+      "claim": "Teleost (bony) fish experienced a third whole genome duplication (3R).",
+      "claim_type": "EXPLICIT",
+      "source": "The general conclusion is that the ancestral vertebrate(s) went through two rounds of whole genome duplications (denoted 1R and 2R, respectively) prior to the origin of jawed vertebrates, and that teleost (bony) fish experienced a third whole genome duplication (3R) (Hughes and Liberles, 2008; Van de Peer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hughes and Liberles, 2008 and Van de Peer et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "eca6c4b4-0adf-4923-8f22-e685215f6ce6",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C20",
+      "claim": "Genomic duplications are beneficial for inventing new biochemical functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic duplications are beneficial for inventing new biochemical functions (Ohno, 1970; N\u00e4svall et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ohno, 1970 and N\u00e4svall et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "11ddfe8c-0606-4cab-b63b-3a0956271b9d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C21",
+      "claim": "NCBD is older than CID.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that NCBD is older than CID, as NCBD can be traced in deuterostomes, protostomes (including extant arthropods, nematodes and molluscs) and cnidarians, but not in more distantly related eukaryotes such as the choanoflagellate Monosiga brevicollis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "97e63f02-c402-448b-aa4f-9329d9c393a5",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C22",
+      "claim": "NCBD can be traced in deuterostomes, protostomes and cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis shows that NCBD is older than CID, as NCBD can be traced in deuterostomes, protostomes (including extant arthropods, nematodes and molluscs) and cnidarians, but not in more distantly related eukaryotes such as the choanoflagellate Monosiga brevicollis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "12a80227-ec8a-4a58-8180-207c4214edc3",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C23",
+      "claim": "NCBD arose in the animal lineage as a domain within the ancestral CREBBP/p300 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, NCBD arose in the animal lineage as a domain within the ancestral CREBBP/p300 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on phylogenetic analysis showing NCBD presence in animals but not in more distantly related eukaryotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "886c86ca-a48f-4c4c-b258-894ce1e58eeb",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C24",
+      "claim": "CID appeared as an IDP domain within NCOA after the split of deuterostomes and protostomes.",
+      "claim_type": "EXPLICIT",
+      "source": "CID, on the other hand, appeared as an IDP domain within NCOA after the split of deuterostomes and protostomes, since it could not be identified in protostome NCOA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis showing CID absence in protostomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "09b1ee36-9943-467e-8e05-e8ba546e0f46",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C25",
+      "claim": "CID was present in an early deuterostome before the first whole-genome duplication (1R).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CID was present in an early deuterostome, before the first whole-genome duplication (1R), since it could be traced in extant sea urchins and acorn worms, in addition to vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis showing CID presence in sea urchins and acorn worms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "ba53c350-f481-4fe0-805a-004625af7b54",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C26",
+      "claim": "The CID/NCBD interaction emerged at the beginning of the deuterostome lineage around the Cambrian period.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the CID/NCBD interaction emerged at the beginning of the deuterostome lineage around the Cambrian period, an era with a very dramatic evolutionary history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on phylogenetic analysis and inference about when the two domains first co-existed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "40cd3a7a-8df1-413f-860e-52be9546a4b4",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C27",
+      "claim": "The affinity of deuterostome/protostome (D/P) NCBD for 1R CID was relatively low (5 \u00b5M) as compared to younger NCBD variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the affinity of deuterostome/protostome (D/P) NCBD for 1R CID, which is the oldest CID domain that we were able to resurrect with good confidence, was relatively low (5 \u00b5M) as compared to younger NCBD variants (Figure 5A and B, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Figure 5 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "80141919-5249-4bce-ac11-b493e7e49d2a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C28",
+      "claim": "All tested ancestral D/P NCBD variants measured with 1R CID yielded a relatively low affinity (Kd values = 1.5 to 18 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all tested ancestral D/P NCBD (Thr2062) variants measured with 1R CID yielded a relatively low affinity (Kd values = 1.5 to 18 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "69eca2f1-c4e7-45d8-9dc0-c021ea5d4e0f",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C29",
+      "claim": "Around the time of the two vertebrate-specific whole genome duplications (1R and 2R), NCBD had evolved an affinity toward the CID domain similar to that found today (\u223c200 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Already around the time of the two vertebrate-specific whole genome duplications (1R and 2R, respectively), NCBD had evolved an affinity toward the CID domain similar to that found today (\u223c200 nM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "a2498b47-f920-47df-8101-73d70eb3b042",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C30",
+      "claim": "All tested alternative variants of 1R/2R NCBD, 1R CID and 2R CID yielded Kd values in the same range (100\u2013300 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "All tested alternative variants of 1R/2R NCBD, 1R CID and 2R CID yielded Kd values in the same range (100\u2013300 nM) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "694f9ed1-be3c-44a1-965e-2aa9acf4b0eb",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C31",
+      "claim": "The affinities between extant NCBD domains and human CID domains were found to be surprisingly similar across several species.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the affinities between extant NCBD domains and human CID domains were found to be surprisingly similar across several species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "71b2d2d8-0e98-4f5a-9294-78b9343116d6",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C32",
+      "claim": "CREBBP NCBD from sea lamprey and human have similar affinity toward human NCOA3 CID.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, CREBBP NCBD from sea lamprey and human, respectively, has similar affinity toward human NCOA3 CID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "9ae03a6e-8530-43fb-8587-998328fbdd7c",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C33",
+      "claim": "The affinities of p53TAD and PNT for ancient and extant NCBD were similar.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the CID domain, the affinities of p53TAD and PNT, respectively, were similar for ancient and extant NCBD (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "7bb2bbd4-9af7-43c9-ad24-9746ba0f8e29",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C34",
+      "claim": "The NCOA3 CID domain from human displays a high degree of disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCOA3 CID domain from human displays a high degree of disorder (Ebert et al., 2008; Kjaergaard et al., 2010b) and all tested CID variants in the present study displayed a strikingly similar far-UV CD spectrum, typical of IDPs (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ebert et al., 2008 and Kjaergaard et al., 2010b, as well as CD data in Figure 7.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "dc91f9a0-0113-4864-9ca8-d5680a12eb47",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C35",
+      "claim": "All tested CID variants displayed a strikingly similar far-UV CD spectrum, typical of IDPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCOA3 CID domain from human displays a high degree of disorder (Ebert et al., 2008; Kjaergaard et al., 2010b) and all tested CID variants in the present study displayed a strikingly similar far-UV CD spectrum, typical of IDPs (Figure 7A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CD spectroscopy data shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "6e52cd2d-6b47-47d8-a103-75fe86798f97",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C36",
+      "claim": "The overall \u03b1-helical propensity for ancient and modern CID variants is virtually identical.",
+      "claim_type": "EXPLICIT",
+      "source": "The similar shape and midpoints of the resulting sigmoidal curves (reflecting the helix-coil transition) demonstrates that the overall \u03b1-helical propensity for ancient and modern CID variants is virtually identical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by TFE titration experiments reported in Figure 5C and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "86a9c4fd-12e1-401b-b0b3-b21633250b65",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C37",
+      "claim": "The stability for individual \u03b1-helices as predicted by AGADIR has changed during evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the stability for individual \u03b1-helices as predicted by the software AGADIR (Mu\u00f1oz and Serrano, 1994) has changed during evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by computational predictions using AGADIR software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "0224e8cc-915b-4a94-b41a-fc39862a71bf",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C38",
+      "claim": "\u03b1-helix 1 of CID from human NCOA1 and 2 displays a higher \u03b1-helix propensity than \u03b1-helix 1 from human NCOA3 and the ancestral versions.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, \u03b1-helix 1 of CID from human NCOA1 and 2 displays a higher \u03b1-helix propensity than \u03b1-helix 1 from human NCOA3 and the ancestral versions (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by AGADIR predictions shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4fb33c80-0f87-491f-9b23-1a88689ebd06",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C39",
+      "claim": "Extant mammalian CREBBP NCBD has a small but well-defined hydrophobic core.",
+      "claim_type": "EXPLICIT",
+      "source": "While extant mammalian CREBBP NCBD has a small but well-defined hydrophobic core, it is a very dynamic protein domain in the absence of a bound CID domain as previously shown by NMR measurements (Ebert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ebert et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "7f45080b-a21c-415c-a7bd-b265dd6cc07b",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C40",
+      "claim": "NCBD is a very dynamic protein domain in the absence of a bound CID domain.",
+      "claim_type": "EXPLICIT",
+      "source": "While extant mammalian CREBBP NCBD has a small but well-defined hydrophobic core, it is a very dynamic protein domain in the absence of a bound CID domain as previously shown by NMR measurements (Ebert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ebert et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "1c287d27-e274-46d3-b0b3-96fc7a47972b",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C41",
+      "claim": "CD spectra and thermal denaturations were similar for all NCBD variants.",
+      "claim_type": "EXPLICIT",
+      "source": "CD spectra (Figure 7D\u2013F) and thermal denaturations (Figure 7G\u2013I) were similar for all NCBD variants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CD spectroscopy data shown in Figure 7D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "2fce1409-b60e-43ec-b8d5-4d985d555cdf",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C42",
+      "claim": "The most ancient D/P NCBD variant was slightly less stable than historically subsequent variants in the deuterostome lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "The most ancient D/P NCBD variant was slightly less stable than historically subsequent variants in the deuterostome lineage, as determined by the midpoint from far UV CD-monitored urea denaturation experiments (Figure 5D and Table 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by urea denaturation experiments shown in Figure 5D and Table 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "5411c7be-b9b6-4154-9c48-c93baf63da92",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C43",
+      "claim": "Evolution of higher affinity correlates with a somewhat reduced conformational heterogeneity in CID/NCBD complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the structural ensembles for the three complexes and their relative free-energy projections indicates that evolution of higher affinity correlates with a somewhat reduced conformational heterogeneity (Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by molecular dynamics simulations and NMR data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "760873bc-205b-41c8-a77e-7adb6b0e0bfc",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C44",
+      "claim": "The ancient complex is slightly less structured and more compact, with an average helical fraction of 0.41.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the free-energy surfaces as a function of the fraction of the overall helix-content and the radius of gyration (Rg) show that the ancient complex is slightly less structured and more compact, with an average helical fraction of 0.41.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulations using NMR chemical shifts as restraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "f9b42f62-70aa-4bb2-b276-0c5afa4ab17b",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C45",
+      "claim": "The 1R/2R complex has an average helical fraction of 0.44.",
+      "claim_type": "EXPLICIT",
+      "source": "The younger 1R/2R complex is a little more structured in particular with respect to the C-terminal helix of NCBD, with an average helical fraction of 0.44.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulations using NMR chemical shifts as restraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "6fd4a53d-c91a-4851-87c0-3803400098a7",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C46",
+      "claim": "The extant human complex has an average helical fraction of 0.47.",
+      "claim_type": "EXPLICIT",
+      "source": "The extant human complex, finally, is again slightly more structured at the N- and C- terminal helices of CID, with an average helical fraction of 0.47.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulations using NMR chemical shifts as restraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4bfbee9e-3e88-4ad7-96a2-dd488c794ce7",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C47",
+      "claim": "The most ancient complex appears to have more but less populated contacts than younger complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the most ancient complex appears to have more but less populated contacts than younger complexes, in line with a marginally more disordered interface (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by contact analysis from molecular dynamics simulations shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4e8e39cc-e439-4a10-9936-a8d603e7d169",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C48",
+      "claim": "During evolution, the total number of possible contacts between the domains decreases while the average population of the formed contacts increases.",
+      "claim_type": "EXPLICIT",
+      "source": "During evolution, the total number of possible contacts between the domains decreases while the average population of the formed contacts increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by contact analysis from molecular dynamics simulations shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "934db806-f140-4ff3-8388-49f212546e6e",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C49",
+      "claim": "The A2106Q mutation did not change the affinity for NCOA2 CID.",
+      "claim_type": "EXPLICIT",
+      "source": "The A2106Q mutation did not change the affinity for NCOA2 CID.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "34933b39-591a-42fe-91ea-9719b0c07094",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C50",
+      "claim": "The Y2108Q and the double mutation A2106Q/Y2108Q resulted in a slightly lower affinity (twofold) toward NCOA2 CID.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y2108Q and the double mutation A2106Q/Y2108Q resulted in a slightly lower affinity (twofold) toward NCOA2 CID (Table 1), in support of the simulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "bbe08d8d-5c3b-4414-80dc-0c58a2e74ed1",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C51",
+      "claim": "The interaction between two disordered proteins has emerged from a low-affinity complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We have used evolutionary biochemistry to reconstruct the evolutionary process by which the interaction between two disordered proteins has emerged from a low-affinity complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined phylogenetic, biophysical, and computational data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "2fa630bd-994d-427a-aead-aab9d650cb97",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C52",
+      "claim": "A combination of direct interactions and structural heterogeneity contributed to optimizing the affinity of the CID/NCBD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "By identifying and resurrecting the early ancestor partners, we show how a combination of direct interactions and structural heterogeneity contributed to optimizing the affinity of the CID/NCBD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined biophysical and computational data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4103f1df-0acd-48f8-88aa-c74c7ce721f1",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C53",
+      "claim": "There is a remarkably high tolerance to mutation in the interface of the CID/NCBD protein-protein interaction in extant complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance, we observe a remarkably high tolerance to mutation in the interface of this particular protein-protein interaction in extant complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments showing similar affinities despite sequence variations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "67ec42e1-00a4-48c7-9ec0-4dba6c9ca38f",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C54",
+      "claim": "The initial native contacts formed during the binding reaction between human NCOA3 CID (ACTR) and CREBBP NCBD are made between residues in the respective \u03b11 of the two domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that the initial native contacts formed during the binding reaction between human NCOA3 CID (ACTR) and CREBBP NCBD are made between residues in the respective \u03b11 of the two domains (Ie\u0161mantavi\u010dius et al., 2014; Dogan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ie\u0161mantavi\u010dius et al., 2014 and Dogan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "3690bba4-2b1d-4c7d-b633-2ca96c3183e3",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C55",
+      "claim": "Both C\u03b11 and N\u03b11 contain leucine-rich motifs, which are very common in protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Both C\u03b11 and N\u03b11 contain leucine-rich motifs, which are very common in protein-protein interactions (Kobe and Deisenhofer, 1994) and which are conserved in the CID/NCBD interaction (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by sequence analysis and a citation to Kobe and Deisenhofer, 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "d79e1f62-d269-40ac-b544-f1ff27c75717",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C56",
+      "claim": "Leucine-rich motifs in C\u03b11 and N\u03b11 are conserved in the CID/NCBD interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Both C\u03b11 and N\u03b11 contain leucine-rich motifs, which are very common in protein-protein interactions (Kobe and Deisenhofer, 1994) and which are conserved in the CID/NCBD interaction (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "f7073a34-b20e-4ba3-ba43-1f95695d0210",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C57",
+      "claim": "Extant fruit fly (Drosophila melanogaster) NCBD has a low affinity for the human CID domains.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in extant fruit fly (Drosophila melanogaster), a proteostome, the NCBD domain is preserved but, similarly to D/P NCBD it has a low affinity for the human CID domains (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "71e5a087-5e75-4cd3-a02a-5162543350e0",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C58",
+      "claim": "The leucine-rich motif in C\u03b11 is mutated in fruit fly NCBD.",
+      "claim_type": "EXPLICIT",
+      "source": "The leucine-rich motif in C\u03b11 is mutated in fruit fly NCBD (Figure 2) and the C-terminal region is more similar to D/P NCBD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "e8e91068-0c59-4c8e-819c-1c312efabb15",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C59",
+      "claim": "The affinity of the extant human PNT domain of ETS-2 is similar for ancient and extant NCBD domains (\u223c1 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "With these observations in mind, we note that the affinity of the extant human PNT domain of ETS-2 is similar for ancient and extant NCBD domains (\u223c1 \u00b5M, Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC binding experiments reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "0aa1b6e0-2634-4e5e-830d-2c088034fe8d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C60",
+      "claim": "The PNT/NCBD interaction was present before, and preserved during the evolution of the CID/NCBD interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have not resurrected the ancient versions of the PNT domain, these results suggest that the PNT/NCBD interaction was present before, and preserved during the evolution of the CID/NCBD interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from binding affinity data and phylogenetic analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "1f17d9ed-09db-4741-810b-bbbe538963fc",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C61",
+      "claim": "The PNT domain is present in protostomes (e.g. D. melanogaster), while the CID domain is not.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the PNT domain is present in protostomes (e.g. D. melanogaster), while the CID domain is not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "8f4ff09f-cd3d-47de-a216-e6de22cccbe6",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C62",
+      "claim": "NCBD employs distinct residues for the interaction with IRF-3, which allows this interaction to coexist with those of CID and p53TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "On a residue level, it is clear that NCBD employs distinct residues for the interaction with IRF-3, which allows this interaction (and the alternative conformation of NCBD) to coexist with those of CID and p53TAD (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by contact analysis from molecular dynamics simulations shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "0df7b6c9-6b9b-4980-afbf-1ffc271c330f",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C63",
+      "claim": "For CID and p53TAD, similar residues have been used throughout evolution for interactions, albeit with different relative influences.",
+      "claim_type": "EXPLICIT",
+      "source": "For CID and p53TAD, similar residues have been used throughout evolution for interactions, albeit with different relative influences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by contact analysis from molecular dynamics simulations shown in Figure 11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "19c27db4-f15c-4d10-96d3-033f0847906e",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C64",
+      "claim": "In the complex between CREBBP NCBD and IRF-3, NCBD adopts a completely different conformation as compared to the conformation with CID domains and p53TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, in the complex between CREBBP NCBD and IRF-3 (Qin et al., 2005), NCBD adopts a completely different conformation as compared to the conformation with CID domains and p53TAD (Lee et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Qin et al., 2005 and Lee et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "6e4a4a33-b1bd-4c0d-bd1a-f253d2858bd4",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C65",
+      "claim": "NMR and folding experiments suggest that NCBD can adopt two different conformations in absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, NMR and folding experiments suggest that NCBD can adopt two different conformations in absence of ligand, one of which is the CID-bound conformation and the other possibly the IRF-3 bound conformation, although this has not been experimentally confirmed (Kjaergaard et al., 2010a, 2013; Dogan et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kjaergaard et al., 2010a, 2013 and Dogan et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "a14cf71a-e6d9-4938-a6fc-8ce1a7bd627a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C66",
+      "claim": "The interaction between NCBD from CREBBP and CID from NCOA3 (ACTR) represents a classical example of coupled folding and binding of disordered protein domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between CID from NCOA3 (ACTR) and NCBD from CREBBP represents a classical example of coupled folding and binding of disordered protein domains (Demarest et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Demarest et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "e59851c7-2ea9-42d4-8725-e29c95da278d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C67",
+      "claim": "NCBD is a molten-globule-like domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction involves disordered protein domains from two different transcriptional coactivators: (i) the molten-globule-like (Kjaergaard et al., 2010a) nuclear co-activator binding domain (NCBD) present in the two paralogs CREB-binding protein (CREBBP, also known as CBP) and p300",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kjaergaard et al., 2010a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "e6ac81ce-f4d7-4ddf-9cbf-caf31f851011",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C68",
+      "claim": "CID is a highly disordered domain.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) the highly disordered CREBBP-interacting domain (CID), found in the three mammalian paralogs NCOA1, 2 and 3 (also called SRC1, TIF2 and ACTR, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statement about CID that is consistent with CD data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "1528bcec-182c-4570-a8ad-61a342b9c5aa",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C69",
+      "claim": "The amino acid substitution rates in NCOA and CREBBP/p300 are higher for all domains during the early times of animal evolution and up to the common ancestor of fish and tetrapods 390 Myr ago.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the amino acid substitution rates in NCOA and CREBBP/p300 are higher for all domains during the early times of animal evolution and up to the common ancestor of fish and tetrapods 390 Myr ago.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "ff043c64-2ab1-4aa6-8b6f-1688d909005a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C70",
+      "claim": "Within CREBBP, the substitution rate of NCBD is similar to those of the ordered histone acetyltransferase (HAT) and RING/PHD domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Within CREBBP, the substitution rate of NCBD is similar to those of the ordered histone acetyltransferase (HAT) and RING/PHD domains, whereas KIX and TAZ1 have remained more conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "355f3dd1-0e22-4c73-8c09-666dbe8df7f4",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C71",
+      "claim": "KIX and TAZ1 domains have remained more conserved than NCBD, HAT, and RING/PHD.",
+      "claim_type": "EXPLICIT",
+      "source": "Within CREBBP, the substitution rate of NCBD is similar to those of the ordered histone acetyltransferase (HAT) and RING/PHD domains, whereas KIX and TAZ1 have remained more conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by phylogenetic analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "58181ee8-9010-4bcd-9485-4c266f3de13a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C72",
+      "claim": "For CID and NCBD, functional constraints of the domains rather than disorder per se is probably determining amino acid substitution rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, for CID and NCBD, functional constraints of the domains rather than disorder per se is probably determining amino acid substitution rate, similarly to a subset of disordered regions highlighted in earlier studies (Brown et al., 2011, 2010, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the substitution rate analysis and supported by citations to Brown et al., 2011, 2010, 2002.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "ed4ae3bc-1b43-4fc9-96ea-f4ad939c2f16",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C73",
+      "claim": "The first \u03b1-helix (C\u03b11) of NCOA1 CID and NCOA3 CID occupy similar positions in their respective complexes with NCBD.",
+      "claim_type": "EXPLICIT",
+      "source": "A structural alignment shows that the NCBD domain aligns well in the two complexes but that only the first \u03b1-helix (C\u03b11) of NCOA1 CID and NCOA3 CID occupy similar positions (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by structural analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "86a50726-1674-438d-9b9d-9e227ff24943",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C74",
+      "claim": "The third \u03b1-helix (C\u03b13) of NCOA1 CID aligns with the second \u03b1-helix (C\u03b12) of NCOA3 CID.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the third \u03b1-helix (C\u03b13) of NCOA1 CID aligns with the second \u03b1-helix (C\u03b12) of NCOA3 CID, while C\u03b12 of NCOA1 CID is non-binding and split into two smaller \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of NMR structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "576822c7-0ce0-49d7-ae8e-63bcc9de1867",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C75",
+      "claim": "C\u03b12 of NCOA1 CID is non-binding and split into two smaller \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the third \u03b1-helix (C\u03b13) of NCOA1 CID aligns with the second \u03b1-helix (C\u03b12) of NCOA3 CID, while C\u03b12 of NCOA1 CID is non-binding and split into two smaller \u03b1-helices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of NMR structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "6d5daec4-04f9-4713-9d1f-e432fc23b080",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C76",
+      "claim": "The first \u03b1-helix of NCBD (N\u03b11) interacts with C\u03b11 in both NCOA1 and NCOA3 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first \u03b1-helix of NCBD (N\u03b11) interacts with C\u03b11 in both complexes, but the conformation of the third \u03b1-helix (N\u03b13) is slightly different in the two complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of NMR structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "e179cbe2-3d82-488b-a077-c540ed8eeb82",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C77",
+      "claim": "The conformation of the third \u03b1-helix (N\u03b13) of NCBD is slightly different in the NCOA1 and NCOA3 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The first \u03b1-helix of NCBD (N\u03b11) interacts with C\u03b11 in both complexes, but the conformation of the third \u03b1-helix (N\u03b13) is slightly different in the two complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by structural analysis of NMR structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "038c5a4c-9799-4b92-a658-1dbc0d180a7d",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C78",
+      "claim": "Residues forming the N\u03b11/C\u03b11 interface in the CID/NCBD complex are conserved in the deuterostome lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues forming the N\u03b11/C\u03b11 interface in the CID/NCBD complex are conserved in the deuterostome lineage, while N\u03b13 has accumulated five substitutions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "28f43fb3-2365-460a-9f0f-196c4430632e",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "claim_id": "C79",
+      "claim": "N\u03b13 of NCBD has accumulated five substitutions during evolution in the deuterostome lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Residues forming the N\u03b11/C\u03b11 interface in the CID/NCBD complex are conserved in the deuterostome lineage, while N\u03b13 has accumulated five substitutions (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sequence alignment shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors reconstructed the evolutionary history of CID and NCBD domains through phylogenetic analysis, showing that NCBD is older than CID. NCBD was present in the protostome/deuterostome ancestor and can be traced in deuterostomes, protostomes, and cnidarians. CID appeared after the divergence of protostomes and deuterostomes (450-600 Mya) but was present in early deuterostomes before the first whole-genome duplication (1R). The CID/NCBD interaction emerged at the beginning of the deuterostome lineage around the Cambrian period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C21-C26 are supported by phylogenetic reconstruction data presented in Figure 2 and Figure 2\u2014figure supplements 1-4. The phylogenetic trees and sequence alignments provide clear evidence for the evolutionary timing and distribution of these domains across species. The methodology using maximum likelihood reconstruction is appropriate and the conclusions about domain age and distribution are well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors measured binding affinities between ancestral and extant CID/NCBD variants using ITC. The most ancient D/P NCBD formed a relatively weak complex with 1R CID (Kd ~5 \u00b5M), with all tested D/P NCBD variants yielding Kd values of 1.5-18 \u00b5M. By the time of the vertebrate-specific whole genome duplications (1R and 2R), the affinity had increased to ~200 nM, similar to present-day values, and was maintained in further speciation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C6, C27-C30 are well-supported by ITC binding experiments reported in Figure 5, Table 1, and Figure 6. Multiple variants of D/P NCBD were tested to address uncertainty in ancestral sequence reconstruction, and all showed consistently low affinity (~1.5-18 \u00b5M). The increase in affinity to ~200 nM by 1R/2R and maintenance in extant species is clearly demonstrated. The experimental approach is rigorous with appropriate controls and replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "fb82f229-d405-482e-8a78-59752ecb89b8",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors characterized the structural properties of ancestral and extant CID and NCBD variants using CD spectroscopy. All tested CID variants displayed similar far-UV CD spectra typical of IDPs, with virtually identical overall \u03b1-helical propensity as measured by TFE titrations. CD spectra and thermal denaturations were similar for all NCBD variants, though the most ancient D/P NCBD variant was slightly less stable than subsequent variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, C41, C42 are supported by CD spectroscopy data in Figures 5C-D, 7, and Tables 2-3. The TFE titration experiments show similar midpoints and curve shapes for CID variants, supporting the claim of identical overall helical propensity. The urea denaturation data for NCBD variants show similar profiles with a modest difference for D/P NCBD. The authors appropriately note the limitations in accuracy for free energy estimates due to broad transitions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "725f2cee-3bc5-4284-951c-0f29510a34d8",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors used NMR spectroscopy and molecular dynamics simulations with Metadynamic Metainference to characterize structural ensembles of three CID/NCBD complexes (ancient, 1R/2R, and extant). Evolution of higher affinity correlated with reduced conformational heterogeneity. The ancient complex was slightly less structured and more compact (helical fraction 0.41), the 1R/2R complex had helical fraction 0.44, and the extant complex had helical fraction 0.47. The ancient complex had more but less populated contacts than younger complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by NMR data (Figure 9\u2014figure supplement 1, Figure 9\u2014source data 1) and molecular dynamics simulations using NMR chemical shifts as restraints (Figures 9-10). The NMR peak assignment was close to 100% for all complexes, providing high-quality restraints. The Metadynamic Metainference approach appropriately balances experimental data with force field information. The convergence analysis (Figure 13) supports the reliability of the simulations. The trends in helical content and contact populations are consistent across the evolutionary trajectory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors conclude that new interactions involving intrinsically disordered proteins may evolve via a low-affinity complex which is optimized by modulating direct interactions and dynamics, while tolerating several potentially disruptive mutations. They demonstrate remarkably high tolerance to mutation in the interface of the CID/NCBD interaction in extant complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C51-C53 represent the main conclusions of the study and are supported by the combined phylogenetic, biophysical (ITC, CD, NMR), and computational (MD simulations) data. The progression from low-affinity (~5 \u00b5M) to high-affinity (~200 nM) complexes, the similar affinities despite sequence variations across species (Table 1), and the structural analysis showing optimization through both direct contacts and reduced conformational heterogeneity all support these conclusions. The tolerance to mutation is demonstrated by similar affinities for variants with different residues at uncertain positions and across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors found that affinities between extant NCBD domains and human CID domains were surprisingly similar across several species (e.g., sea lamprey and human CREBBP NCBD have similar affinity for human NCOA3 CID). In contrast, affinities of p53TAD and PNT for ancient and extant NCBD were similar (~1 \u00b5M for PNT), suggesting these interactions were present before and preserved during evolution of the CID/NCBD interaction. The PNT domain is present in protostomes while CID is not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C59-C61 are supported by ITC binding experiments in Table 1 and phylogenetic analysis. The similar affinities across species for CID/NCBD interactions demonstrate conservation of binding despite sequence divergence. The consistent affinities of p53TAD and PNT for ancient and extant NCBD variants suggest these interactions predated CID/NCBD and constrained NCBD evolution. The phylogenetic data showing PNT presence in protostomes but CID absence supports the evolutionary inference.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "4d78fa1a-1884-404f-b116-6fe9f4705bd4",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors tested reverse mutations in human CREBBP NCBD (A2106Q, Y2108Q, and A2106Q/Y2108Q) to probe the role of positions 2106 and 2108 in affinity evolution. The A2106Q mutation did not change affinity for NCOA2 CID, while Y2108Q and the double mutant resulted in slightly lower affinity (twofold).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C50 are supported by ITC data in Table 1 and Figure 12, but the authors note significant caveats: the mutations made NCBD less soluble, leading to precipitation and less reliable data with ill-defined native baselines. While the limited effect supports the computational predictions and demonstrates plasticity, the experimental quality issues prevent strong conclusions. The result is consistent with the overall narrative but cannot be considered definitively supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "241b175d-3be0-4f0d-9cc5-df30d91dc2e3",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors analyzed amino acid substitution rates across domains in NCOA and CREBBP/p300. Substitution rates were higher for all domains during early animal evolution up to the fish/tetrapod ancestor (390 Mya). Within CREBBP, the substitution rate of NCBD was similar to ordered domains (HAT, RING/PHD), while KIX and TAZ1 were more conserved. The authors conclude that functional constraints rather than disorder per se determine substitution rates for CID and NCBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C72 are supported by phylogenetic analysis shown in Figure 3. The methodology of counting substitutions and indels between ancestral nodes is appropriate. The finding that NCBD (disordered) has similar substitution rates to some ordered domains (HAT, RING/PHD) but different from others (KIX, TAZ1) supports the conclusion that functional constraints are more important than disorder status. The inference is reasonable and supported by citations to prior work (Brown et al.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "557d1250-009a-4cb0-b97e-c4be7425fd8a",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors used AGADIR software to predict that the stability of individual \u03b1-helices has changed during evolution. For example, \u03b1-helix 1 of CID from human NCOA1 and 2 displays higher \u03b1-helix propensity than \u03b1-helix 1 from human NCOA3 and ancestral versions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by AGADIR predictions shown in Figure 8. However, these are computational predictions rather than direct experimental measurements. The overall helical propensity measured by TFE titrations was similar across variants (C36), so the AGADIR predictions suggest local rather than global changes. The predictions are reasonable but represent a lower level of evidence than direct experimental measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "722cb173-887e-4eef-a70c-46ebd7e20814",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors analyzed how NCBD interacts with different ligands. NCBD employs distinct residues for interaction with IRF-3 (which adopts a completely different conformation) compared to CID and p53TAD. For CID and p53TAD, similar residues are used throughout evolution with different relative influences. NMR and folding experiments suggest NCBD can adopt two different conformations in absence of ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by contact analysis from MD simulations (Figure 11) and citations to prior structural and NMR studies (Qin et al. 2005, Lee et al. 2010, Kjaergaard et al. 2010a, 2013, Dogan et al. 2016). The distinct binding modes are well-established in the literature. The contact analysis clearly shows different residues involved in IRF-3 binding versus CID/p53TAD binding. The claim about conformational heterogeneity (C65) is appropriately qualified as not experimentally confirmed for the IRF-3-bound conformation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "d53b5a42-7f71-482e-b985-0841a398c724",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors analyzed structural differences between NCOA1 CID/NCBD and NCOA3 CID/NCBD complexes using available NMR structures. Only the first \u03b1-helix (C\u03b11) of NCOA1 and NCOA3 CID occupy similar positions, with C\u03b13 of NCOA1 aligning with C\u03b12 of NCOA3. The first \u03b1-helix of NCBD (N\u03b11) interacts with C\u03b11 in both complexes. Residues forming the N\u03b11/C\u03b11 interface are conserved in the deuterostome lineage, while N\u03b13 has accumulated five substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C79 are supported by structural analysis of NMR structures shown in Figure 4 and sequence alignments in Figure 2. The structural superposition clearly shows the different arrangements of helices in the two complexes. The sequence conservation analysis is straightforward and well-supported by the alignments. These observations provide important context for understanding the evolution of the interaction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    },
+    {
+      "id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc",
+      "content_id": "5769c498-d715-44a8-a4f6-beba4e292737",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors note that initial native contacts during binding between human NCOA3 CID and CREBBP NCBD are made between residues in the respective \u03b11 helices of the two domains. Both C\u03b11 and N\u03b11 contain conserved leucine-rich motifs common in protein-protein interactions. Extant fruit fly NCBD has low affinity for human CID domains, and the leucine-rich motif in C\u03b11 is mutated in fruit fly NCBD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by citations to prior work (Ie\u0161mantavi\u010dius et al. 2014, Dogan et al. 2013, Kobe and Deisenhofer 1994), sequence alignments in Figure 2, and ITC data in Table 1. The conservation of leucine-rich motifs and their importance for the interaction is well-established. The low affinity of fruit fly NCBD for human CID and the mutation of the leucine-rich motif provide supporting evidence for the importance of these structural features.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:43:40.045790Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ef151e47-41f2-4a96-8f59-d681f2615a30",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "1d9e58f0-3adf-4daa-a70c-7a779a17adc2",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "11ddfe8c-0606-4cab-b63b-3a0956271b9d",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "97e63f02-c402-448b-aa4f-9329d9c393a5",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "12a80227-ec8a-4a58-8180-207c4214edc3",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "886c86ca-a48f-4c4c-b258-894ce1e58eeb",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "09b1ee36-9943-467e-8e05-e8ba546e0f46",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "ba53c350-f481-4fe0-805a-004625af7b54",
+      "result_id": "1b8c6044-5ec0-404d-bc55-2a0edaf476b5"
+    },
+    {
+      "claim_id": "7e22a047-bd48-4147-96a7-03c826a4824a",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "40cd3a7a-8df1-413f-860e-52be9546a4b4",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "80141919-5249-4bce-ac11-b493e7e49d2a",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "69eca2f1-c4e7-45d8-9dc0-c021ea5d4e0f",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "a2498b47-f920-47df-8101-73d70eb3b042",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "74130eff-aac9-4ba8-8349-a9609b640b68",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "0ff9d806-ab90-403b-ad4d-b9d0f1f1c58d",
+      "result_id": "a80e9d14-5919-4983-8e3f-99ba1f92e5e0"
+    },
+    {
+      "claim_id": "dc91f9a0-0113-4864-9ca8-d5680a12eb47",
+      "result_id": "fb82f229-d405-482e-8a78-59752ecb89b8"
+    },
+    {
+      "claim_id": "6e52cd2d-6b47-47d8-a103-75fe86798f97",
+      "result_id": "fb82f229-d405-482e-8a78-59752ecb89b8"
+    },
+    {
+      "claim_id": "1c287d27-e274-46d3-b0b3-96fc7a47972b",
+      "result_id": "fb82f229-d405-482e-8a78-59752ecb89b8"
+    },
+    {
+      "claim_id": "2fce1409-b60e-43ec-b8d5-4d985d555cdf",
+      "result_id": "fb82f229-d405-482e-8a78-59752ecb89b8"
+    },
+    {
+      "claim_id": "5411c7be-b9b6-4154-9c48-c93baf63da92",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "760873bc-205b-41c8-a77e-7adb6b0e0bfc",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "f9b42f62-70aa-4bb2-b276-0c5afa4ab17b",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "6fd4a53d-c91a-4851-87c0-3803400098a7",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "4bfbee9e-3e88-4ad7-96a2-dd488c794ce7",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "4e8e39cc-e439-4a10-9936-a8d603e7d169",
+      "result_id": "725f2cee-3bc5-4284-951c-0f29510a34d8"
+    },
+    {
+      "claim_id": "033c65dd-ee44-4430-934f-bf087634246a",
+      "result_id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7"
+    },
+    {
+      "claim_id": "5a95efda-33ba-4c2c-911d-1161ece5d854",
+      "result_id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7"
+    },
+    {
+      "claim_id": "bbe08d8d-5c3b-4414-80dc-0c58a2e74ed1",
+      "result_id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7"
+    },
+    {
+      "claim_id": "2fa630bd-994d-427a-aead-aab9d650cb97",
+      "result_id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7"
+    },
+    {
+      "claim_id": "4103f1df-0acd-48f8-88aa-c74c7ce721f1",
+      "result_id": "cb84b924-8b9b-474c-abdd-fa9b4432cea7"
+    },
+    {
+      "claim_id": "694f9ed1-be3c-44a1-965e-2aa9acf4b0eb",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "71b2d2d8-0e98-4f5a-9294-78b9343116d6",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "9ae03a6e-8530-43fb-8587-998328fbdd7c",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "e8e91068-0c59-4c8e-819c-1c312efabb15",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "0aa1b6e0-2634-4e5e-830d-2c088034fe8d",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "1f17d9ed-09db-4741-810b-bbbe538963fc",
+      "result_id": "cd4fc4ed-1324-483d-b73c-a639f10acdb9"
+    },
+    {
+      "claim_id": "934db806-f140-4ff3-8388-49f212546e6e",
+      "result_id": "4d78fa1a-1884-404f-b116-6fe9f4705bd4"
+    },
+    {
+      "claim_id": "34933b39-591a-42fe-91ea-9719b0c07094",
+      "result_id": "4d78fa1a-1884-404f-b116-6fe9f4705bd4"
+    },
+    {
+      "claim_id": "1528bcec-182c-4570-a8ad-61a342b9c5aa",
+      "result_id": "241b175d-3be0-4f0d-9cc5-df30d91dc2e3"
+    },
+    {
+      "claim_id": "ff043c64-2ab1-4aa6-8b6f-1688d909005a",
+      "result_id": "241b175d-3be0-4f0d-9cc5-df30d91dc2e3"
+    },
+    {
+      "claim_id": "355f3dd1-0e22-4c73-8c09-666dbe8df7f4",
+      "result_id": "241b175d-3be0-4f0d-9cc5-df30d91dc2e3"
+    },
+    {
+      "claim_id": "58181ee8-9010-4bcd-9485-4c266f3de13a",
+      "result_id": "241b175d-3be0-4f0d-9cc5-df30d91dc2e3"
+    },
+    {
+      "claim_id": "86a9c4fd-12e1-401b-b0b3-b21633250b65",
+      "result_id": "557d1250-009a-4cb0-b97e-c4be7425fd8a"
+    },
+    {
+      "claim_id": "0224e8cc-915b-4a94-b41a-fc39862a71bf",
+      "result_id": "557d1250-009a-4cb0-b97e-c4be7425fd8a"
+    },
+    {
+      "claim_id": "8f4ff09f-cd3d-47de-a216-e6de22cccbe6",
+      "result_id": "722cb173-887e-4eef-a70c-46ebd7e20814"
+    },
+    {
+      "claim_id": "0df7b6c9-6b9b-4980-afbf-1ffc271c330f",
+      "result_id": "722cb173-887e-4eef-a70c-46ebd7e20814"
+    },
+    {
+      "claim_id": "19c27db4-f15c-4d10-96d3-033f0847906e",
+      "result_id": "722cb173-887e-4eef-a70c-46ebd7e20814"
+    },
+    {
+      "claim_id": "6e4a4a33-b1bd-4c0d-bd1a-f253d2858bd4",
+      "result_id": "722cb173-887e-4eef-a70c-46ebd7e20814"
+    },
+    {
+      "claim_id": "ed4ae3bc-1b43-4fc9-96ea-f4ad939c2f16",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "86a50726-1674-438d-9b9d-9e227ff24943",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "576822c7-0ce0-49d7-ae8e-63bcc9de1867",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "6d5daec4-04f9-4713-9d1f-e432fc23b080",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "e179cbe2-3d82-488b-a077-c540ed8eeb82",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "038c5a4c-9799-4b92-a658-1dbc0d180a7d",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "28f43fb3-2365-460a-9f0f-196c4430632e",
+      "result_id": "d53b5a42-7f71-482e-b985-0841a398c724"
+    },
+    {
+      "claim_id": "67ec42e1-00a4-48c7-9ec0-4dba6c9ca38f",
+      "result_id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc"
+    },
+    {
+      "claim_id": "3690bba4-2b1d-4c7d-b633-2ca96c3183e3",
+      "result_id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc"
+    },
+    {
+      "claim_id": "d79e1f62-d269-40ac-b544-f1ff27c75717",
+      "result_id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc"
+    },
+    {
+      "claim_id": "f7073a34-b20e-4ba3-ba43-1f95695d0210",
+      "result_id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc"
+    },
+    {
+      "claim_id": "71e5a087-5e75-4cd3-a02a-5162543350e0",
+      "result_id": "98bfa239-0a91-404a-9cd0-fc8db6c404cc"
+    }
+  ],
+  "comparisons": []
+}

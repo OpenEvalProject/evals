@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "GFP expression in SOM-GFP transgenic mice is a reliable marker for somatostatin-expressing cells in the dentate gyrus, with 94.1% of GFP+ cells expressing SOM and 62.8% of SOM+ cells expressing GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from confocal microscopy and antibody labeling in multiple mice and slices. The high specificity (94.1%) supports the reliability of GFP as a marker, though incomplete sensitivity (62.8%) is acknowledged and consistent with prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C20",
+      "C65"
+    ],
+    "result": "The dentate gyrus contains at least two morphologically distinct somatostatin-expressing interneuron types: HIPP cells with axons predominantly in the outer molecular layer (74.7%) and HIL cells with axons predominantly in the hilus (91.0%), confirmed by hierarchical cluster analysis and validated across mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11, C20, and C65 collectively demonstrate two distinct SOMI types through morphological reconstructions (6 cells each type), quantitative axonal distribution analysis, antibody validation (33/35 cells SOM+), strain-independent replication (SOM-tdT mice), and hierarchical clustering. The sample sizes are modest but consistent, and statistical comparisons support the distinctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "HIPP and HIL cells exhibit distinct intrinsic membrane properties: HIPP cells show slower membrane time constants (14.3 vs 9.3 ms), higher input resistance (317.9 vs 186.7 M\u03a9), longer action potential half-duration (0.86 vs 0.62 ms), lower maximal discharge frequency (111.4 vs 141.5 Hz), and stronger spike train adaptation (2.1 vs 1.6 ratio) compared to HIL cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 provide comprehensive electrophysiological characterization with appropriate statistical tests (t-tests, Mann-Whitney U) and adequate sample sizes (7-24 cells per group). The differences are statistically significant and physiologically coherent, supporting the functional distinction between cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C68"
+    ],
+    "result": "HIL cells, but not HIPP cells, form long-range projections to the medial septum, as demonstrated by retrograde tracing showing that 86.7% of DG-septal projecting SOMIs are HIL cells with axons in the hilus and none with axons in the outer molecular layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 and C68 provide converging anatomical evidence from viral tracing (rAAV-FLEX-GFP), Clarity imaging, retrograde labeling (RedRetroBead), and morphological reconstruction. The high specificity of viral expression (95.4%), colocalization with SOM (93.4%), and morphological identification (13/15 cells as HIL) strongly support this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Both HIPP and HIL cells receive mossy fiber inputs, but HIL cells are preferentially targeted by additional excitatory inputs likely from mossy cells, as evidenced by differential DCG-IV sensitivity (HIPP: 51.7% reduction; HIL: 32.6% reduction with high variability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 use pharmacological dissection with DCG-IV to identify input sources. The consistent DCG-IV effect in HIPP cells (10 cells, range 34.1-78.1%) versus variable effects in HIL cells (16 cells, range -2.4-96.0%, with 10/16 showing <20% effect) supports differential input organization. The interpretation is consistent with prior literature on mossy cell connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C69",
+      "C70"
+    ],
+    "result": "Associative burst frequency stimulation induces cell-type-specific long-term synaptic plasticity: LTD in HIPP cells (65.1% of baseline, 5/7 cells) and LTP in HIL cells (153.1% of baseline, 11/12 cells), both expressed presynaptically as indicated by changes in failure rates and CV analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43, C69-C70 demonstrate bidirectional plasticity with appropriate controls: stable input resistance (C39), independence from baseline EPSC amplitude (C40), changes in failure rates (C41-C42), and CV analysis (C43) supporting presynaptic expression. Statistical tests are appropriate (paired t-tests, Wilcoxon tests) and the plasticity is independent of DCG-IV sensitivity (C38), suggesting it depends on cell type rather than input source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "HIPP cells provide dendritic inhibition to granule cells and interneurons (small, slow IPSCs independent of stimulation location), while SOM+ axons in the hilus provide powerful perisomatic inhibition to interneurons (large, fast IPSCs with 6.9-fold amplitude difference and 18.3-fold larger amplitude in interneurons vs granule cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 use optogenetic stimulation with spatial control to dissect synapse location. The location-independent small IPSCs in granule cells (C44) versus location-dependent large perisomatic IPSCs in interneurons (C45-C46) are supported by confocal imaging of SOM+ boutons at PVI somata (C47) and quantitative comparisons (C48-C50). The 6-fold amplitude ratio difference (C50) provides strong evidence for differential targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HIL cells provide functional perisomatic inhibition to dentate gyrus interneurons including basket cells and other HIL cells, as demonstrated by paired recordings showing fast uIPSCs (latency 1.6 ms, rise time 0.6 ms, decay \u03c4 = 11.2 ms, amplitude 59.1 pA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide direct functional evidence from paired whole-cell recordings (4 HIL-interneuron pairs). The short latency, fast kinetics, and variable but substantial amplitude are consistent with perisomatic GABAergic transmission. Sample size is modest but appropriate for paired recordings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "DG-septal projecting SOMIs provide differential inhibition to medial septal neurons: strongest to putative glutamatergic cells (237.0 pA), ~12.8-fold weaker to PVIs (18.5 pA), and ~7.0-fold weaker to ChAT cells (33.8 pA), with anatomical evidence of synaptic contacts (gephyrin colocalization) on ChAT and PVI cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C61-C64 combine anatomical (confocal microscopy with gephyrin colocalization in 67 ChAT and 126 PVI cells) and functional (optogenetic stimulation with systematic intensity increases) evidence. The differential IPSC amplitudes are statistically significant (p<0.01) and pharmacologically validated (SR95531 block, C64). However, the lack of gephyrin at putative glutamatergic cells (C57) despite strong functional inhibition (C61) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Medial septal neurons comprise three electrophysiologically distinct populations: fast-spiking PVIs (31%, 191.2 Hz max frequency), slow-firing ChAT cells (47%, 32.8 Hz max frequency), and cluster-firing putative glutamatergic cells (22%, 35.8 Hz max frequency).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide comprehensive electrophysiological characterization of 104 medial septal neurons with immunohistochemical validation for PVIs and ChAT cells. The classification is consistent with prior literature (Markram and Segal 1990; Manseau et al. 2005) and uses appropriate statistical comparisons (p<0.0001 for PVI vs ChAT differences).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C90"
+    ],
+    "result": "The authors propose that LTD in HIPP cells may facilitate spatial information flow from entorhinal cortex to dentate gyrus, LTP in HIL cells may facilitate temporal coordination with medial septal activity patterns, and a bidirectional DG-septal interneuron loop may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 and C90 are explicitly speculative interpretations (\"may assist,\" \"may facilitate,\" \"we propose\") of the functional roles. While the speculation is reasonable given the anatomical and physiological data, these claims lack direct experimental validation of the proposed functions in behavior or network activity. They represent hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript provides extensive background on dentate gyrus function, pattern separation, GABAergic inhibition, HIPP cell anatomy, and hippocampal-septal connectivity based on established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C89 accurately summarize established scientific knowledge with appropriate citations. These background claims provide context for the current work and are well-supported by the cited literature. One claim (C83) cites a 2016 study showing optogenetic silencing effects, which is appropriately used as supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "HIPP cells are classical feedback inhibitory interneurons providing weak and slow dendritic inhibition, while HIL cells exert strong perisomatic inhibition onto local GABAergic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are summary statements supported by the collective evidence from optogenetic experiments (C44-C52), paired recordings (C53-C55), and morphological data (C4-C7). These integrate multiple lines of evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

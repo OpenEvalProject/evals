@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Lactic acid was identified as the active component in bacterial conditioned medium that induces [GAR+] in S. cerevisiae. Activity-guided fractionation of S. gallinarum conditioned medium, followed by HPLC purification, NMR, and mass spectrometry, revealed lactic acid as the inducing molecule. Both L- and D-isomers of lactic acid induced [GAR+] in a concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of lactic acid is well-supported by systematic purification (C45-C47), chemical characterization (C48), and functional validation (C49). The use of multiple orthogonal methods (HPLC, NMR, MS) and demonstration that pure lactic acid recapitulates the induction phenotype provides strong evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Lactic acid-induced glucose repression bypass exhibits the defining genetic and molecular properties of the [GAR+] prion. The trait shows dominance and semi-dominance in genetic crosses, non-Mendelian inheritance through meiosis, dependence on Hsp70 chaperone activity, and requirement for PMA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent genetic tests (C62-C65) demonstrate prion-like inheritance patterns. Chaperone dependence is shown through both dominant-negative Hsp70 curing (C68-C69) and chemical inhibition (C70). The PMA1 requirement (C73-C74) links the lactic acid-induced state to the known molecular basis of [GAR+]. These converging lines of evidence strongly support that lactic acid induces authentic [GAR+].",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Lactic acid induction of [GAR+] does not require metabolism or active transport of lactic acid. Deletion of genes involved in lactic acid metabolism (DLD1, DLD2, DLD3, CYB2) and active transport (JEN1) did not affect [GAR+] induction, and lactic acid did not serve as a carbon source under the experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic deletion experiments (C82, C84) provide clear evidence that neither active transport nor metabolism is required. Control experiments (C56, C57) rule out that yeast are simply using lactic acid as a nutrient. This mechanistic insight is well-supported by the data, though the positive mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "SOK2 is required for lactic acid induction of [GAR+], suggesting passive import is the dominant mechanism. Deletion of SOK2 abolished lactic acid induction, and since active transport (via JEN1) is not required, passive import likely mediates the signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for SOK2 (C87) combined with the lack of requirement for JEN1 (from previous result) provides strong support for passive import as the mechanism (C88). However, the inference about passive import (C88) relies on prior literature about SOK2's role and could benefit from more direct mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Different concentrations of lactic acid induce distinct heritable [GAR+] strains with different activity levels. Low concentrations (0.015-0.25%) induced 'weak' [GAR+] strains, while high concentrations (1%) induced 'strong' [GAR+] strains, and these phenotypes were maintained after ~75 generations of non-selective growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dose-response data (C89-C91) and heritability experiments (C95-C96) demonstrate that lactic acid concentration influences prion strain formation. The maintenance of distinct phenotypes after extensive propagation provides strong evidence for true strain differences rather than transient effects. This extends understanding of how environmental signals can specify epigenetic states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C103",
+      "C104",
+      "C106",
+      "C107"
+    ],
+    "result": "Lactic acid induces [GAR+]-like epigenetic states in the evolutionarily distant yeast D. bruxellensis. Physiological concentrations of lactic acid (0.02%) induced heritable glucose repression bypass in D. bruxellensis that was maintained for ~75 generations and was sensitive to Hsp70 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experiments in D. bruxellensis (C103-C104, C106) parallel those in S. cerevisiae and demonstrate conservation of the lactic acid response across 200 million years of evolution. The Hsp70 dependence (C106) suggests mechanistic similarity. This is strong evidence for evolutionary conservation of this cross-kingdom signaling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Lactic acid induces [GAR+] rather than selecting for pre-existing [GAR+] cells. Growth rate measurements showed no significant prion-dependent differences between [GAR+] and [gar\u2212] cells in the presence of lactic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The growth curve data (C58) directly addresses the alternative hypothesis of selection versus induction. The lack of growth advantage for pre-existing [GAR+] cells in lactic acid supports an induction mechanism (C59). This is an important control that strengthens the interpretation of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C108",
+      "C121",
+      "C124",
+      "C127"
+    ],
+    "result": "This study represents the first identification of a bacterial metabolite that potently induces a prion and extends prion biology to include targeted cross-species communication. The findings suggest lactic acid may provide a molecular mechanism for historical observations about fermentation failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the novelty claim (C9) appears reasonable based on the literature cited, the broader implications (C108, C121, C124, C127) are largely speculative. The connection to Pasteur's observations (C108) is plausible but not directly tested. The extension to other prions (C121) is speculation requiring future work. These represent important discussion points but are not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Other molecules may modulate [GAR+] induction by lactic acid. Induction kinetics were slightly faster with conditioned media than pure lactic acid, and some bacteria show species-specific induction patterns that cannot be fully explained by lactic acid alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observations (C115-C116) suggest additional factors may be involved, but this remains speculative (C114, C117, C119). The precedent from choanoflagellates (C118) supports the plausibility but does not constitute direct evidence. These observations point to interesting future directions but do not constitute a supported result from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background on S. cerevisiae glucose repression and the [GAR+] prion. S. cerevisiae exhibits strong glucose repression, which can be circumvented by the [GAR+] prion\u2014a heritable, protein-based epigenetic element that converts cells from metabolic specialists to generalists. [GAR+] can be induced by bacteria through a diffusible signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are supported by extensive citations to prior work, primarily from the authors' previous studies. This background is well-established in the literature and provides the foundation for the current study's investigation of the bacterial signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Background on lactic acid biology. Lactic acid exists as L- and D-isomers, is produced by lactic acid bacteria at physiologically relevant concentrations in fermentations, and can be imported into yeast via active (JEN1-mediated) and passive (SOK2-dependent) mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential biochemical and physiological context, all supported by appropriate citations to prior literature. This background information is necessary for interpreting the experimental findings and is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C18",
+      "C60",
+      "C61",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C122",
+      "C123",
+      "C125",
+      "C126"
+    ],
+    "result": "Broader context about cross-kingdom interactions, metabolic regulation, and prion biology. Small molecules mediate inter-species interactions across biology, glucose repression is widespread, prions can exist in multiple strains, and stress can modulate prion formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide general scientific context and are supported by appropriate citations. They frame the significance of the work within broader biological principles but do not represent findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The discovery of SOK2's role provides new insight into the initiation of cross-kingdom chemical communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim appropriately summarizes the mechanistic insight gained from the SOK2 experiments. It represents a valid inference from the experimental data showing SOK2 is required for lactic acid induction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "There is precedent for competition among bacterial inducers in quorum sensing systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by appropriate citations and provides context for speculation about multiple bacterial signals, but does not represent a finding from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1985 @@
+{
+  "submission": {
+    "id": "1131c2bc-ef3f-4430-a7f2-6e0a0ac8d49f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:28:15.189494Z",
+    "updated_at": "2025-11-30T22:28:15.189494Z"
+  },
+  "content": [
+    {
+      "id": "678201db-fa3d-4291-9301-2f684214341a",
+      "submission_id": "1131c2bc-ef3f-4430-a7f2-6e0a0ac8d49f",
+      "content_type": "manuscript",
+      "content_text": "# Targeting of the Fun30 nucleosome remodeller by the Dpb11 scaffold facilitates cell cycle-regulated DNA end resection\n\n## Authors\n\n- Susanne CS Bantele<sup>1</sup>\n- Pedro Ferreira<sup>2</sup>\n- Dalia Gritenaite<sup>1</sup>\n- Dominik Boos<sup>2</sup>\n- Boris Pfander<sup>1</sup> ([ORCID: 0000-0003-2180-5054](https://orcid.org/0000-0003-2180-5054)) \u2020\n\n### Affiliations\n\n1. DNA Replication and Genome Integrity Max Planck Institute of Biochemistry Martinsried Germany\n2. Centre for Medical Biotechnology, Molecular Genetics II University Duisburg-Essen Essen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDNA double strand breaks (DSBs) can be repaired by either recombination-based or direct ligation-based mechanisms. Pathway choice is made at the level of DNA end resection, a nucleolytic processing step, which primes DSBs for repair by recombination. Resection is thus under cell cycle control, but additionally regulated by chromatin and nucleosome remodellers. Here, we show that both layers of control converge in the regulation of resection by the evolutionarily conserved Fun30/SMARCAD1 remodeller. Budding yeast Fun30 and human SMARCAD1 are cell cycle-regulated by interaction with the DSB-localized scaffold protein Dpb11/TOPBP1, respectively. In yeast, this protein assembly additionally comprises the 9-1-1 damage sensor, is involved in localizing Fun30 to damaged chromatin, and thus is required for efficient long-range resection of DSBs. Notably, artificial targeting of Fun30 to DSBs is sufficient to bypass the cell cycle regulation of long-range resection, indicating that chromatin remodelling during resection is underlying DSB repair pathway choice.\n\n## Introduction\n\nDNA end resection \u2013 the nucleolytic digestion of the 5\u2019 strands of a DSB \u2013 is essential for the initiation of homologous recombination (HR) or related recombination-based mechanisms (reviewed in [Cejka, 2015; Symington, 2014; Symington and Gautier, 2011]). At the same time, resection interferes with ligation-based repair (non-homologous end-joining, NHEJ) and thus is the critical step for repair pathway choice. In mitotically dividing cells, recombination-based repair critically depends on the presence of a sister-chromatid. DSB repair pathway choice and accordingly DNA end resection are therefore highly regulated during the cell cycle: in G1 phase, little resection occurs and NHEJ is therefore favoured. Conversely, in S, G2 and M phase, resection is up-regulated and HR becomes more prevalent (Cejka, 2015; Ira et al., 2004; Symington, 2014; Symington and Gautier, 2011).\n\nThe nucleases that mediate resection can be subdivided into resection initiation (by Mre11-Rad50-Xrs2 and Sae2 in budding yeast) and long-range resection (by Exo1 or Dna2 with Sgs1-Top3-Rmi1 in budding yeast) pathways (Cannavo and Cejka, 2014; Cejka et al., 2010; Mimitou and Symington, 2008; Niu et al., 2010; Zhu et al., 2008). So far, Sae2 and Dna2 were shown to be cell cycle\u00a0- controlled by cyclin-dependent kinase (CDK) phosphorylation in yeast (Chen et al., 2011; Huertas et al., 2008) and EXO1 in human cells (Tomimatsu et al., 2014). Notably, however, a bypass of this control is not sufficient to allow efficient end\u00a0resection to occur in G1, suggesting that other factors may be involved in the cell cycle\u00a0control of DNA end resection.\n\nResection is also influenced by the surrounding chromatin. Nucleosomes themselves can be inhibitory to resection enzymes (Adkins et al., 2013). Additionally, nucleosome-associated proteins such as budding yeast Rad9 or its functional ortholog in humans, 53BP1, can inhibit resection (Bunting et al., 2010; Lazzaro et al., 2008; Trovesi et al., 2011). Consistent with a barrier function of chromatin and/or Rad9, nucleosome remodellers are recruited to DSBs and promote resection, although the mechanism is poorly understood (Bennett and Peterson, 2015; Bennett et al., 2013; Chai et al., 2005; Morrison et al., 2004; van Attikum et al., 2007, 2004). The Swr1-like family remodeller Fun30 (SMARCAD1 in humans) was found to be a critical regulator of resection (Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012). Fun30 localizes to chromatin surrounding DSBs and fun30\u25b3 mutant cells show a pronounced defect in long-range resection (Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012). Importantly, also SMARCAD1 promotes DNA end resection in human cells, suggesting evolutionary conservation (Costelloe et al., 2012). Fun30 itself is a substrate for CDK phosphorylation (Chen et al., 2012, 2016; Ubersax et al., 2003), but it has remained unclear by which mechanism Fun30 function is regulated during the cell cycle, how Fun30 is targeted to DNA lesions and if this regulation imposes a bottleneck in the regulation of DNA end resection.\n\nHere, we show that CDK phosphorylation enables Fun30 to form a complex with the phospho-protein-binding scaffold protein Dpb11 and the DNA damage sensor 9-1-1. Formation of this complex is required for proper localization of Fun30 and for efficient long-range resection in M phase cells. Notably, when we bypass the CDK requirement by directly fusing Fun30 to a subunit of the 9-1-1 complex, we observe long-range resection even in G1\u2013arrested cells. This suggests that the cell cycle regulation of long-range resection can be bypassed solely by artificially targeting Fun30 to DSBs. Finally, we show that also human SMARCAD1 binds to TOPBP1 (human ortholog of Dpb11) in a CDK phosphorylation-dependent manner that involves conserved interaction surfaces, suggesting that the formation of a Fun30-Dpb11 complex is a conserved mechanism of cell cycle regulation that could control DNA end resection and repair pathway choice throughout eukaryotes.\n\n## Results\n\n### Cell cycle-dependent targeting of Fun30 by Dpb11\n\nWe identified Fun30 in a two-hybrid screen for interactors of the scaffold protein Dpb11. Dpb11 is a critical regulator of genome stability in budding\u00a0yeast and as such is found in several distinct protein complexes (Gritenaite et al., 2014; Ohouo et al., 2010, 2013; Pfander and Diffley, 2011; Puddu et al., 2008; Tanaka et al., 2007; Zegerman and Diffley, 2007). Crucial for the formation of these complexes are the two tandem BRCT domains of Dpb11, which are phospho-protein binding modules (Leung and Glover, 2011) specific for discrete sets of phosphorylation-dependent interactors. In case of Fun30, the interaction is mediated by BRCT1+2, but not BRCT3+4 (Figure 1A, Figure 1\u2014figure supplement 1). Using Dpb11 expressed from the strong GPD promoter, we also observed an interaction between Fun303FLAG and Dpb11 in co-immunoprecipitation (Co-IP) experiments (Figure 1B). All Dpb11 complexes characterized so far are cell cycle-regulated (Gritenaite et al., 2014; Ohouo et al., 2013; Pfander and Diffley, 2011; Tanaka et al., 2007; Zegerman and Diffley, 2007). Thus, we tested the interaction between Dpb11 and Fun30 from cells at different cell\u00a0cycle stages. We observed that Fun30 interacted with Dpb11 only during late S to M phase, but not in G1 (Figure 1B\u2013C, Figure 1\u2014figure supplement 2) and this interaction was not influenced by DNA damage (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-v3.jpg)\n\n**Figure 1.:** (a) Two-hybrid assay with GAL4-AD and -BD constructs as indicated reveals a physical interaction between the N-terminal region of Fun30 (aa 1\u2013188) and the BRCT1+2 domain of Dpb11. Rad9 and Ddc1 represent known interactors of BRCT1+2 and BRCT3+4, respectively. (b\u2013e) Characterization of the Fun30-Dpb11 interaction by Fun303FLAG Co-IP experiments. Dpb11 was expressed from the strong, constitutive GPD promoter. (b) Fun303FLAG specifically binds Dpb11 in cells arrested in M but not G1 phase. (c) Fun303FLAG purified from cells synchronously progressing through the cell cycle binds Dpb11 only at 45\u2019 and 90\u2019 time points corresponding to late S and M phase (Figure 1\u2014figure supplement 2 for FACS analysis and western analysis of cell cycle progression). (d) No enhancement of the Fun30-Dpb11 interaction by CPT or phleomycin treatment as measured by Fun303FLAG Co-IP. For DNA damage treatment, 50 \u00b5M CPT or 50 \u00b5g/ml phleomycin were added to asynchronously dividing yeast cells. DNA damage checkpoint activation was measured by Rad53 phosphorylation in IP extracts (lowest blot panel). (e) CDK inhibition using the cdc28-as1 allele and 1-NMPP1 treatment diminishes the Fun303FLAG-Dpb11 interaction in M phase arrested cells. (f) Purified Fun30 interacts with a BRCT1+2 fragment of Dpb11 in the presence of CDK phosphorylation. Purified Fun303FLAG or the positive control MBPRad9 (Pfander and Diffley, 2011) were incubated with a model CDK and ATP before binding to bead-bound GSTDpb11 BRCT1+2. (g) Mapping analysis of the two-hybrid interaction between Fun30 and Dpb11 reveals a binding site close to the N-terminus of Fun30. (h\u2013i) Putative CDK sites on Fun30 (S20 and S28) are required for Dpb11 binding. (h) Two-hybrid assay as in (a) but in five-fold serial dilution and with WT, S20A, S28A and SS20,28AA variants of Gal4-AD-Fun301-188. (i) Co-IP as in (b) but with mutant variants of Fun303FLAG growing asynchronously. (j) Efficient Fun30 localization to damaged chromatin requires the Dpb11-Fun30 interaction. ChIP of Fun303FLAG to chromatin locations 3, 8, 10 and 15 kb distant of a non-repairable DSB induced at the MAT locus in M phase-arrested cells. fun30 mutants were expressed from the\u00a0endogenous promoter as only copy of FUN30. The FUN30-DPB11 fusion contains fun30-SSAA and dpb11\u25b3N mutations. WT, fun30-SSAA and FUN30-DPB11 fusion cells were crosslinked at indicated timepoints after DSB induction. Plotted values represent means from two independent experiments, error bars represent standard deviations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Two-hybrid constructs are detected with anti-Gal4-AD (AD-Fun30 1\u2013188, AD-Ddc1, AD-Rad9) and with anti-Gal4-BD (for BD-Dpb11 constructs) antibodies.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Left panel: DNA content measurements with FACS. Right panel: Western Blot analysis using S/M-phase (hyperphosphorylated Sld2) or M-phase (Clb2) markers. Asterisk indicates a cross reactive band.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Two-hybrid constructs are detected with anti-Gal4-AD (AD-Fun30 constructs) and with anti-lexA-BD (for BD-Dpb11 BRCT1\u00a0+2 construct) antibodies.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Two-hybrid constructs are detected with anti-Gal4-AD (AD-Fun30 1\u2013188 and mutant derivatives) and with anti-Gal4-BD (for BD-Dpb11 BRCT1\u00a0+2 constructs) antibodies.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** ChIP of Fun303FLAG to chromatin in proximity of a non-repairable DSB induced at the MAT locus in M phase arrested cells. Same experiment as in Figure 1J, using WT, fun30-SSAA and FUN30-DPB11 fusion cells, but here Fun30 ChIP is shown at additional loci (1.1, 3, 8, 10, 15 and 20 kb distance from break). Cells were crosslinked at distinct time points after DSB induction. Plotted values represent error bars from three independent experiments.\n\nSince Fun30 is phosphorylated by CDK (Chen et al., 2012, 2016; Ubersax et al., 2003) and Dpb11 was shown to bind several CDK targets (Gritenaite et al., 2014; Pfander and Diffley, 2011; Tanaka et al., 2007; Zegerman and Diffley, 2007), we tested if CDK phosphorylation mediates the Fun30-Dpb11 interaction. Indeed, upon CDK inhibition (using the cdc28-as1 allele and 1-NMPP1 inhibition) Dpb11 binding to Fun30 was strongly reduced (Figure 1E). Accordingly, purified Fun303FLAG was able to interact with GSTDpb11-BRCT1+2 in vitro but only after pre-phosphorylation by CDK (Figure 1F), suggesting that the Fun30-Dpb11 interaction as well as its regulation by CDK phosphorylation are direct. Therefore, we sought to identify the CDK phosphorylation sites on Fun30, which are relevant for Dpb11 binding. Interaction mapping using truncated constructs placed the Dpb11\u00a0interaction site close to the N-terminus of Fun30 (Figure 1G, Figure 1\u2014figure supplement 3). Within this region, we identified S20 as well as S28 as critical\u00a0residues for the Fun30-Dpb11 interaction by two-hybrid and Co-IP binding assays using non-phosphorylatable versions of Fun30 (Figure 1H\u2013I, Figure 1\u2014figure supplement 4). This suggests that phosphorylation of both residues may create a composite binding surface for Dpb11 BRCT1+2, perhaps similar to the Dpb11-binding surfaces on Rad9 and Sld3 (Pfander and Diffley, 2011; Tanaka et al., 2007; Zegerman and Diffley, 2007; Zegerman et al., 2010).\n\nIt seemed likely that Dpb11 is involved in targeting Fun30 to DNA lesions. We therefore tested recruitment of WT Fun303FLAG or the corresponding fun30-SSAA variant to a site-specific, non-repairable DSB using chromatin immunoprecipitation (ChIP). Indeed, we observed that Fun30-SSAA binding to regions distal of the DSB\u00a0was reduced compared to WT (8\u201320 kb, Figure 1J, Figure 1\u2014figure supplement 5), while both versions bound similarly to the immediate vicinity of the DSB (1\u20133 kb, Figure 1J, Figure 1\u2014figure supplement 5). This result thus confirms recent observations showing a DSB recruitment defect of fun30-S20A and fun30-S28A mutants (Chen et al., 2016).\n\nImportantly, we could expand these data by generating an experimental tool, which restores the Fun30-Dpb11 interaction\u00a0in a phosphorylation-independent manner. Since conventional phospho-mimetic mutations failed to promote binding (data not shown), we generated a covalent fusion of the Fun30-SSAA protein directly to Dpb11\u25b3N lacking BRCT1+2\u00a0(FUN30-AA-DPB11-276-C\u00a0expressed as the\u00a0only copy of Fun30 from the\u00a0endogenous promoter, referred to as FUN30-DPB11 fusion in the following). Importantly, the fusion protein localized efficiently to damaged chromatin and thus restored the defect of the fun30-SSAA mutation (Figure 1J, Figure 1\u2014figure supplement 5). This finding suggests that the interaction with Dpb11 is indeed involved in targeting Fun30 to DSBs and that the covalent fusion is sufficient to bypass the CDK regulation of Fun30. Notably, DSB recruitment of the Fun30-Dpb11 fusion protein was stronger than\u00a0Fun30 consistent with the replacement of a transient, PTM-dependent interaction by a covalent interaction. Therefore, we reason that the FUN30-DPB11 fusion deregulates Fun30 in two ways: first, it uncouples Fun30 from its cell cycle regulation. Second, it leads to enhanced DSB\u00a0localization to DSBs, thus potentially enhancing Fun30 activity at damaged chromatin.\n\nWe also note that the apparently normal recruitment of Fun30-SSAA to the immediate vicinity of the DSB could be explained by an additional CDK\u00a0phosphorylation-independent, but resection-dependent recruitment mechanism, such as via binding to RPA (Chen et al., 2012). Our data thus suggest the existence of two Fun30\u2013targeting mechanisms: one that is Dpb11-dependent and recruits Fun30 to sites of ongoing resection, and a second that is Dpb11-independent and tethers Fun30 to DNA that has already been resected.\n\n### The Fun30-Dpb11 complex is required for efficient long-range resection\n\nWe utilized our system of abolishing and constitutively forcing Fun30 binding to Dpb11 in order to investigate the biological function of the Dpb11-dependent Fun30 targeting mechanism and its role in regulating DNA end resection. We measured resection at an HO-induced, non-repairable DSB in M phase-arrested cells using the combined read-out of (a) the accumulation of the ssDNA-binding protein RPA (Figure 2A, upper panel) around the DSB by ChIP and (b) the specific DNA loss (occurring due to ssDNA formation, Figure 2A, lower panel). Indeed, compared to WT cells, fun30\u25b3 mutants showed a pronounced defect in long-range resection, visible by a reduced spreading of both RPA-ChIP and DNA loss, to regions greater than 10 kb away from the break (Figure 2A, Figure 2\u2014figure supplement 1), confirming previous observations (Chen et al., 2011, 2012; Costelloe et al., 2012; Eapen et al., 2012). Notably, the same defect in long-range resection was also observed in the Dpb11-binding\u00a0deficient fun30-SSAA mutant and was fully restored by the FUN30-DPB11 fusion (Figure 2A, Figure 2\u2014figure supplement 1). To corroborate these findings, we also analysed resection-dependent DSB repair in a single-strand annealing (SSA) assay, where cellular survival upon an HO-induced DSB in the absence of Rad51 critically depends on the efficient resection of 25 kb of DNA (Figure 2B, [Vaze et al., 2002]). In fact, Dpb11-binding\u00a0deficient fun30 mutants were deficient in SSA-mediated survival and this defect was completely rescued by covalent fusion\u00a0of\u00a0Fun30-SSAA to Dpb11 (Figure 2B). Thus, the CDK-regulated interaction between Fun30 and Dpb11 is required for efficient long-range\u00a0resection as well as subsequent resection-coupled repair.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig2-v3.jpg)\n\n**Figure 2.:** (a) Long-range resection of a DSB is dependent on the Fun30-Dpb11 interaction. A non-repairable DSB at MAT was induced in M phase-arrested WT, fun30\u25b3, fun30-SSAA and FUN30-DPB11 fusion strains and DNA end resection measured at indicated times. Upper panel: fold enrichment of a given locus in an RPA ChIP relative to undamaged control loci. Lower panel: DNA loss relative to control loci located in non-damaged chromatin. (b) Single-strand annealing (SSA) is dependent on the Fun30-Dpb11 interaction. FUN30 mutants as indicated were combined with the rad51\u25b3 deletion, a DSB at the leu2::HO cutsite was induced by plating cells on galactose. Cells need to resect 25 kb up to the homologous his4::leu2 locus in order to survive by SSA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Long-range resection of a site-specific DSB is partially deficient in CDK-phosphorylation site mutants that are deficient in the Fun30-Dpb11 interaction. A non-repairable DSB at MAT was induced in M-phase arrested WT, fun30-S20A3FLAG, fun30-S28A3FLAG, fun30-SSAA3FLAG and fun30\u2206 cells. DNA end resection was measured at indicated time points by RPA ChIP. Plotted is the fold enrichment of a given locus relative to three undamaged control loci.\n\nFun30 participates in chromatin organization in the absence of DNA damage (Neves-Costa et al., 2009) and previous studies could therefore not rule out the possibility that the DNA end resection defect of the fun30\u25b3 mutant is a consequence of general changes in chromatin organization (Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012). However, we found that the fun30-SSAA mutant (unlike the fun30\u25b3 mutant) did not display any defect in silencing at telomeres or at the silent mating type locus and thus differs from the fun30\u25b3 mutant (Figure 3). The fun30-SSAA mutant thus separates Fun30 functions and the associated resection phenotype of this mutant therefore provides strong support for a direct role of Fun30 and the Fun30-Dpb11 complex during DNA end resection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig3-v3.jpg)\n\n**Figure 3.:** The silencing defect of the fun30\u2206 mutant is not recapitulated by the fun30-SSAA mutant. Two silencing tester strains were used: the first (upper panels) had URA3 integrated in telomeric heterochromatin at the end of the left arm of chromosome VII, the second (lower panels) had URA3 integrated at the HML silent mating type locus. A silencing defect leads to enhanced growth on \u2013Ura medium and less growth on medium supplemented with 5-FOA (e.g. fun30\u2206). Shown is a spotting in 5-fold serial dilutions on non-selective medium, medium lacking uracil or containing 5-FOA.\n\nMutants with DNA end resection defects such as exo1\u25b3 sgs1\u25b3, sae2\u25b3 or fun30\u25b3 are hypersensitive towards the Top1 inhibitor camptothecin (CPT)\u00a0(Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012; Neves-Costa et al., 2009) (Figure 4A\u2013C), most likely because of repair defects of replication-borne DSBs at CPT-induced Top1 stall sites. Indeed, also the fun30-SSAA mutant showed hyper-sensitivity to CPT albeit not as strong as the fun30\u00a0deletion. Importantly, the CPT sensitivity of fun30-SSAA was rescued by expressing the covalent FUN30-DPB11 fusion (Figure 4A, Figure 4\u2014figure supplement 1), emphasizing again the importance of the Fun30-Dpb11 interaction for DSB repair.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig4-v3.jpg)\n\n**Figure 4.:** (a) The Fun30-Dpb11 interaction is required for the response towards CPT. WT, fun30\u25b3, fun30-SSAA and FUN30-DPB11 fusion were spotted in five-fold serial dilutions on plates containing indicated amounts of CPT and incubated at 37\u00b0C for two days. (b) A double mutant of exo1\u2206 and sgs1\u2206 is hyper-sensitive to low doses of CPT. Spotting in 5-fold serial dilutions was incubated for two days at 30\u00b0C. (c) The fun30\u2206/fun30-SSAA mutants enhance the CPT hyper-sensitivity of sae2\u2206 mutants. Cells were spotted in 5-fold serial dilutions and incubated for two days at 30\u00b0C. (d) A rad9\u2206 deletion rescues CPT hyper-sensitivity of fun30\u2206 and fun30-SSAA mutant alleles.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Spotting in 5-fold serial dilutions on medium containing indicated dosages of DNA damaging agents. Plates were incubated two days at 30\u00b0C.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Spotting of strains with indicated genotypes in 5-fold serial dilutions on CPT containing medium. The K603R mutation is located in the Walker A motif of Fun30. Plates were incubated for two days at 37\u00b0C.\n\nGenetic evidence suggests that Fun30 may promote DNA end resection by antagonizing the resection inhibitor Rad9 (Chen et al., 2012). Similar to what has been described for the fun30\u25b3 mutant, we observed that the CPT-hypersensitivity of the fun30-SSAA was suppressed by an additional rad9\u00a0deletion (Figure 4D), suggesting that the Fun30-Dpb11 complex antagonizes Rad9. Interestingly, Rad9 also binds to Dpb11, and Fun30 and Rad9 share the same interaction site on Dpb11 (Pfander and Diffley, 2011). While it is currently unknown whether Dpb11-associated Rad9 (in contrast to nucleosome-associated Rad9) contributes to the inhibition of DNA end resection, the overlapping binding site raised the possibility that Fun30 may interfere with Rad9 function via competition. Therefore, in order to exclude that the FUN30-DPB11 fusion rescues resection simply by blocking the Rad9-Dpb11 interaction, we inactivated the ATPase activity of Fun30 by a Walker A motif mutation (K603R) in the context of the FUN30-DPB11 fusion and found the K603R mutant fusion did not restore WT resistance to CPT (Figure 4\u2014figure supplement 2). Therefore, competition does not explain the effects of the FUN30-DPB11 fusion and the catalytic activity of Fun30 is required for the resection-promoting function of the Fun30-Dpb11 complex. Overall, these data thus suggest that cell cycle-regulated targeting of Fun30 by Dpb11 is required for efficient DNA end resection.\n\n### The 9-1-1 complex targets Fun30 to DSBs and \u2013 as artificial fusion with Fun30 - can be utilized to promote long-range resection in G1\n\nIn several organisms, recruitment of Dpb11 and its orthologs to DSBs has been shown to be facilitated by the 9-1-1 complex (Delacroix et al., 2007; Du et al., 2006; Furuya et al., 2004; Pfander and Diffley, 2011; Puddu et al., 2008), a signalling platform (Parrilla-Castellar et al., 2004) which is loaded at DNA damage sites. Given that 9-1-1 interacts with BRCT3+4 of Dpb11 (Wang and Elledge, 2002), we tested whether Dpb11 could simultaneously bind to Fun30 and 9-1-1. Indeed, Fun303FLAG co-precipitated the 9-1-1 subunits Mec3 and Ddc1 and this binding was absent in cells arrested in G1 or in the respective Dpb11\u00a0interaction-deficient mutants (ddc1-T602A or fun30-SSAA; Figure 5A\u2013B, Figure 5\u2014figure supplement 1). We thus conclude that Fun30, Dpb11 and 9-1-1 can form a ternary complex, which is regulated by the cell cycle\u00a0stage (model in Figure 5\u2014figure supplement 2). Moreover, we observed a reduction of the Fun30 binding in the proximity of a DSB by ChIP, when we interfered either with the 9-1-1-Dpb11 interaction (ddc1-T602A mutant) or with the Fun30-Dpb11 interaction (SLD3-DPB11\u2206N mutant strain, which expresses as only copy of DPB11 a truncated version of Dpb11 lacking the Fun30 binding site, Zegerman and Diffley, 2007), further supporting a role of 9-1-1 in targeting Fun30\u00a0to DSBs (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig5-v3.jpg)\n\n**Figure 5.:** (a) Fun30, Dpb11 and 9-1-1 form a ternary complex. The 9-1-1 subunit Mec3 interacts with Fun303FLAG when purified from M phase cells, where also Dpb11 binds to Fun30. (b) The ddc1-T602A mutation abolishes binding of Mec3 to Fun30-Dpb11 in Fun303FLAG Co-IPs, but leaves the Fun30-Dpb11 interaction intact. (c) Mutants disrupting the interaction between 9-1-1 and Dpb11 (ddc1-T602A) or Fun30 and Dpb11 (SLD3-dpb11\u2206N, lacks Fun30 binding site, only copy of Dpb11) impair efficient localization of Fun30 to DSBs in Fun303FLAG ChIPs of M\u00a0phase-arrested cells. Experiment performed as in Figure 1J, plotted values represent means of\u00a0two independent experiments, error bars represent standard deviations.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The fun30-SSAA mutation abolishes binding of Dpb11 and also Ddc19myc in Fun303FLAG Co-IPs. Cells were either left untreated or treated with 50 \u00b5g/ml phleomycin, which induced the DNA damage checkpoint (Rad53 activation), but did not influence Dpb11 or Ddc1 binding.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig5-figsupp2-v3.jpg)\n\nGiven that Dpb11 seems to function as an\u00a0adaptor between Fun30 and 9-1-1, we also generated a covalent fusion of Fun30-SSAA and the 9-1-1 subunit Ddc1 (referred to as DDC1-FUN30 fusion). Also this fusion rescued the CPT phenotype of the fun30-SSAA mutant in a manner that depended on the catalytic activity of Fun30 (Figure 6A, Figure 6\u2014figure supplement 1). The DDC1-FUN30 fusion targeted Fun30 even more efficiently to damaged chromatin than the FUN30-DPB11 fusion and, notably, the corresponding strain was able to survive at very high CPT concentrations, where little growth could be detected even for WT cells, indicating that the DDC1-FUN30 fusion promotes hyper-resistance to CPT (Figure 6A). It is thus possible to at least partially overcome the limits of cellular resistance to CPT by providing very efficient targeting of Fun30 to damaged chromatin and uncoupling it from cell cycle control.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig6-v3.jpg)\n\n**Figure 6.:** (a) The DDC1-FUN30 fusion confers cellular hyper-resistance to CPT. Spotting of indicated strains as in Figure 4A, but using CPT concentrations of up to 12 \u00b5g/ml. (b) The DDC1-FUN30 fusion localizes efficiently to a DSB in G1-arrested cells. Fun303FLAG ChIPs from WT, fun30-SSAA, FUN30-DPB11 and DDC1-FUN30 cells as in Figure 1J, but from G1 or M phase-arrested cells. Additional Fun303FLAG ChIP data can be found\u00a0in\u00a0Figure 6\u2014figure supplement 3. (c) The DDC1-FUN30 fusion enhances long-range resection in G1-arrested cells. Resection assay as in Figure 2A, but with G1 or M phase-arrested cells. Additional resection assay data can be found in Figure 6\u2014figure supplement 3.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** WT, fun30\u2206, DDC1-FUN30 fusion and DDC1-FUN30 (K603R) fusion mutants are spotted on CPT as in Figure 4A.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig6-figsupp2-v3.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Cells (WT, fun30\u2206 and DDC1-FUN30 fusion) were arrested in G1 or M phase prior to DSB induction. Fun30 localization was investigated by anti-FLAG ChIP after break induction (upper panels). DNA end resection was investigated by the combined read-out of RPA ChIP and DNA loss (lower panels).\n\nDNA end resection is up-regulated in S, G2, M phases of the cell cycle, thus shifting the DSB repair pathway choice from NHEJ to recombination-dependent mechanisms (Cejka, 2015; Symington and Gautier, 2011). Previous efforts to bypass this regulation have focussed on nucleases (Huertas et al., 2008). Thus, we tested if the CDK-regulation of Fun30 may contribute to the cell\u00a0cycle regulation of DNA end resection or may even be a limiting factor for this regulation. We used the DDC1-FUN30 fusion, which in contrast to WT Fun30 efficiently localized to a DSB in G1 (Figure 6B, Figure 6\u2014figure supplement 3). This indicates that the fusion may in principle allow Fun30 to act on damaged chromatin in G1, consistent with 9-1-1 being loaded to damaged chromatin in G1 (Barlow et al., 2008; Janke et al., 2010). Indeed, the DDC1-FUN30 fusion protein promoted resection in G1 to a significantly larger reach compared to WT Fun30, since RPA recruitment could be observed up to 25 kb distance from the DSB (Figure 6C, Figure 6\u2014figure supplement 3). Notably, the spreading of resection under the DDC1-FUN30 conditions was even more pronounced than in WT cells arrested in M phase (Figure 6C, Figure 6\u2014figure supplement 3). This effect is thus consistent with the very efficient targeting of Fun30 to DNA damage sites by the DDC1-FUN30 fusion. This hyperactivation of resection thus indicates that forced tethering of Fun30 to DSB sites is able to bypass the bottleneck that limits long-range resection in G1.\n\nIt needs to be pointed out that within the resected region the fold enrichment of RPA recruitment and the extent of DNA loss was not restored to similar levels as observed in M phase (Figure 6C). Moreover, precise ligation of a cut plasmid by NHEJ did not appear to be influenced by the DDC1-FUN30 fusion (Figure 7). These data thus suggest that the overall cell cycle regulation of DNA end resection was not bypassed completely, presumably because other resection proteins and in particular resection initiation are additional targets of cell cycle regulation (Albuquerque et al., 2008; Chen et al., 2011; Huertas et al., 2008; Pfander and Diffley, 2011; Zhang et al., 2009). We therefore compared G1 resection in the DDC1-FUN30 strain to another mutant \u2013 sae2-S267E \u2013 that is thought to at least partially bypass the CDK regulation of resection initiation (Cannavo and Cejka, 2014; Huertas, 2010). Notably, the sae2-S267E mutant showed no increase in the reach of resection and only led to a slight increase in the fold enrichment of the RPA ChIP, both in WT and DDC1-FUN30 background (Figure 8). Overall, these data are thus consistent with a model, whereby sae2-S267E partially bypasses the cell cycle regulation of resection initiation, while the DDC1-FUN30 fusion\u00a0bypasses the cell cycle regulation of long-range\u00a0resection. This highlights that chromatin has a barrier function towards resection and that formation of the Fun30-Dpb11 complex is the limiting step that needs to be up-regulated during recombination-permissive cell cycle phases in order to overcome this barrier.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig7-v3.jpg)\n\n**Figure 7.:** Precise re-ligation of BamHI-cut pRS316 as measured by cell viability on SC-Ura plates and subsequent sequencing of single colonies was dependent on Ku70 but not significantly affected in DDC1-FUN30 of fun30\u2206 mutant cells. Plotted are values from three independent experiments representing the viability rate of cells on SC-Ura plates relative to the total cell number and the transformation efficiency of the mock-digested plasmid. Error bars represent standard deviations.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig8-v3.jpg)\n\n**Figure 8.:** The sae2-S267E mutant has little effect on the spreading of DNA end resection in G1, but slightly stimulates the RPA fold enrichment in WT and the DDC1-FUN30 fusion mutant. This suggests that sae2-S267E in contrast to the DDC1-FUN30 fusion does not affect long-range resection. DNA end resection in the indicated strains was analysed by RPA ChIP as in Figure 5C but with G1 arrested cells.\n\n### Conservation of Fun30 regulation to human SMARCAD1\n\nFun30\u2019s role in promoting DNA end resection is conserved to its human ortholog SMARCAD1 (Costelloe et al., 2012; Densham et al., 2016). Strikingly, in an independent screen we identified an N-terminal fragment of SMARCAD1 (aa 55\u2013274) as interactor of TOPBP1 (using a TOPBP1 BRCT0-2 construct), the human ortholog of Dpb11. Furthermore, we found this interaction to require the phospho-protein\u00a0binding sites of TOPBP1 BRCT1+2 (Figure 9A, Figure 9\u2014figure supplement 1). We verified the SMARCAD1-TOPBP1 interaction in a pulldown approach using purified GST-TOPBP1-BRCT0/1/2 fragments and in vitro phosphorylation of cell extracts with purified CDK. GFP-SMARCAD1-55-445 bound efficiently to GST-TOPBP1-BRCT0/1/2, but only after addition of active CDK to the cell extract (Figure 9B). This suggests that CDK phosphorylation promotes the interaction, similar to the regulation in yeast. We therefore queried for the TOPBP1 interaction site on SMARCAD1 using mutagenesis of CDK consensus motifs. Using this approach, we found that the T71A variant, but none of the other S/TP site mutants tested caused strongly reduced TOPBP1 binding in two-hybrid and Co-IP (Figure 9C\u2013D, Figure 9\u2014figure supplement 2). These data therefore suggest that SMARCAD1 interacts with TOPBP1 via the CDK-site T71. To our surprise, we observed in two-hybrid experiments that human SMARCAD1 also interacted with yeast Dpb11 and in a manner that was dependent on the T71 phosphorylation site (Figure 9E, Figure 9\u2014figure supplement 3), despite low sequence conservation. This raised the possibility that SMARCAD1 and FUN30 could also functionally complement each other. Expression of SMARCAD1 from the inducible GAL-promoter lead only to a slight suppression of the CPT sensitivity of a fun30\u25b3 strain (data not shown), suggesting that there is an aspect of Fun30 function or regulation that is not recapitulated by SMARCAD1. In contrast, when we generated a SMARCAD1-Fun30 chimera lacking the Dpb11-binding region of Fun30 but containing the TOPBP1-binding region of SMARCAD1 (SMARCAD1-1-300-FUN30-30-C), this chimera was largely able to rescue the CPT sensitivity of the fun30\u25b3 mutant (Figure 9F, Figure 9\u2014figure supplement 5). In contrast, the Fun30-30-C fragment alone was unable to provide a rescue and showed reduced protein stability as well (without tag or GFP-tagged, figure Figure 9\u2014figure supplements 4,6). This experiment may thus indicate that the TOPBP1-binding region of SMARCAD1 could replace the Dpb11-binding region of Fun30 in vivo. Overall, we therefore conclude from the data in Figure 9 that the Fun30/SMARCAD1 interaction with Dpb11/TOPBP1, its regulation by CDK phosphorylation and the corresponding interaction surfaces show a remarkable conservation over more than a billion years of eukaryotic evolution.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-v3.jpg)\n\n**Figure 9.:** (a) SMARCAD1 and TOPBP1 interact and their interaction depends on functional phospho-binding pockets in BRCT1 and BRCT2 of TOPBP1. lexA-BD TOPBP1 1\u2013360 (harbouring BRCT0/1/2) or lexA-BD TOPBP1 1\u2013766 (harbouring BRCT0-5) were tested as WT versions or as K155E, KK154,155AM (affecting BRCT1) or K250E (affecting BRCT2) mutant derivatives. Interaction was tested against the Gal4-AD SMARCAD1 55\u2013274. 3AT was added to \u2013His plates to suppress auto-activation and to increase the stringency of the two-hybrid. Two-hybrid interactions with the lexA-BD TOPBP1 1\u2013360 construct were generally stronger compared to lexA-BD TOPBP1 1\u2013766, leading to milder effects of the K155E and K250E single-mutants, particularly at low 3AT concentrations. (b) SMARCAD1 interacts with TOPBP1 after CDK phosphorylation. GFPSMARCAD1 (55-445) was bound to a GSTTOPBP1 BRCT0/1/2 construct after phosphorylation with CDK. This CDK-dependent interaction was seen with several N-terminal SMARCAD1 constructs, but not with FL, perhaps due to low expression. (c\u2013d) Threonine 71 of SMARCAD1, a putative CDK phosphorylation site, is required for TOPBP1 binding. (c) Two-hybrid analysis of ADSMARCAD1 (1-220) and phospho-mutant derivatives to BDTOPBP1 BRCT0/1/2. (d) Co-IP as in (a), but additionally using a T71A variant of GFPSMARCAD1 (55-274). (e) Dpb11 can bind to human SMARCAD1, and T71 is important for the interaction. Two-hybrid analysis as in (b), but using a BDDpb11 BRCT1+2 construct. (f) A SMARCAD1-Fun30 chimera lacking the Dpb11-binding site of Fun30, but containing the TOPBP1-binding site of SMARCAD1 restores sensitivity to CPT. The SMARCAD1-Fun30 chimera is expressed from the pGAL1-10 promoter and induced by galactose. Spotting on CPT medium as in Figure 4A.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** Expression control for two-hybrid constructs in Figure 9A using anti-lexA-BD and anti-Gal4-AD antibodies.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp2-v3.jpg)\n\n**Figure 9\u2014figure supplement 2.:** Expression control for two-hybrid constructs in Figure 9C using anti-lexA-BD and anti-Gal4-AD antibodies.\n\n![Figure 9\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp3-v3.jpg)\n\n**Figure 9\u2014figure supplement 3.:** Expression control for two-hybrid constructs in Figure 9E using anti-Gal4-BD and anti-Gal4-AD antibodies.\n\n![Figure 9\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp4-v3.jpg)\n\n**Figure 9\u2014figure supplement 4.:** The SMARCAD1-FUN30 chimera, FUN30 30\u2013C and GFP-FUN30 30\u2013C constructs are expressed from the pGAL1-10 promoter and induced by galactose. Spotting on CPT medium as in Figure 4A.\n\n![Figure 9\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp5-v3.jpg)\n\n**Figure 9\u2014figure supplement 5.:** SMARCAD1-FUN30 3FLAG chimerais expressed from the GAL1-10 promoter by addition of galactose.\u00a0Fun30 3FLAG expressed from the endogenous promoter serves as control to visualize expression levels of the chimera.\n\n![Figure 9\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/21687/elife-21687-fig9-figsupp6-v3.jpg)\n\n**Figure 9\u2014figure supplement 6.:** SMARCAD1-FUN303FLAG chimera, FUN30-30-C and GFP-FUN30 30 C are expressed from the GAL1-10 promoter by addition of galactose, which however leads to a stronger expression of the chimera constructs than the truncated FUN30 fragment alone.\n\n## Discussion\n\nOur study reveals that the function of Fun30/SMARCAD1 at DSBs is cell cycle-regulated via interaction with Dpb11/TOPBP1. In budding yeast, this interaction seems to facilitate localization of Fun30 to damaged chromatin in a manner that depends on the 9-1-1 complex. Notably, other interactions may also contribute to Fun30 targeting or function, given that Fun30 was shown to interact with RPA and nucleases (Chen et al., 2012) and that SMARCAD1 was recently shown to interact with H2A-ubiquitin (Densham et al., 2016). Importantly, however, our data suggests that the interaction with Dpb11 and 9-1-1 is essential for the resection function of Fun30 during the cell cycle. In contrast to the Fun30-Dpb11 complex, the other interactions are seemingly cell cycle-independent and future research will need to show whether they are at all critical for Fun30/SMARCAD1 function.\n\nOnce recruited to a lesion, Fun30 will then promote the action of the long-range resection machinery by generating resection-permissive chromatin. It seems clear that Fun30 antagonizes the resection inhibitor Rad9 (Chen et al., 2012), but different, non-exclusive mechanisms remain possible. For example, Fun30 could directly remove Rad9 from DNA damage sites or render Rad9-containing chromatin resection-permissive, but also could interfere with Rad9 recruitment by changing chromatin composition. We predict that our system of forced targeting Fun30 to damaged chromatin will be useful to discriminate between these possibilities in the future.\n\nIt is furthermore possible that a direct competition for Dpb11 binding between Fun30 and Rad9 contributes to the functional antagonism, similar to what has been suggested for Slx4 and Rad9 (Cussiol et al., 2015; Dibitetto et al., 2016; Ohouo et al., 2013). Dpb11 thus interacts with pro-\u00a0and anti-resection factors, and the same is true for TOPBP1 (Cescutti et al., 2010; Moudry et al., 2016). It will thus be interesting to figure out in the future, how binding of potential antagonizing factors is balanced.\n\nOverall, our data suggest that at least two layers of cell cycle regulation of DNA end resection can be distinguished. First, nucleases and nuclease-associated factors are substrate for CDK phosphorylation (Chen et al., 2011; Huertas et al., 2008) and this may directly activate these enzymes, as has for example been shown for the endonuclease activity of MRX-Sae2 (Cannavo and Cejka, 2014). Second, chromatin and nucleosome remodellers may be regulated in a way that generates resection-permissive chromatin at damage sites in cell cycle phases when resection is favoured. The Fun30-Dpb11 complex clearly falls in this second category, as does perhaps Rad9/53BP1, the cell cycle regulation of which we are only beginning to understand (Cescutti et al., 2010; Pfander and Diffley, 2011). Notably, deregulation of the second layer such as in the experiments with the\u00a0DDC1-FUN30 fusion has so far been the most successful strategy to bypass the cell cycle regulation of DNA end resection (Figure 6). This emphasizes the importance of resection regulation by its chromatin substrate and suggests that chromatin (more specifically the Fun30 target on chromatin) is the factor that limits long-range resection in G1 phase cells.\n\nExperimentally manipulating DSB repair pathway choice is a key challenge for future research, because it may allow gene targeting in G1/post-mitotic cells, which are currently refractory to this type of approach, since HR is inefficient under these conditions (Orthwein et al., 2015). Notwithstanding the overall complexity of DSB repair pathway choice, our results suggest that modification of the DSB-surrounding chromatin by Fun30/SMARCAD1 should be explored further \u2013 particularly in higher eukaryotes \u2013 as a tool to experimentally channel DSBs into the HR pathway independently of cell cycle stage.\n\n## Materials\u00a0and\u00a0methods\n\n### Yeast strains, cell lines and plasmids\n\nAll yeast strains used in this study derive from W303 MATa (strains listed in Supplementary file 1A) and were constructed using standard methods (Janke et al., 2004). Cells were grown in YP glucose or YP raffinose media at 30\u00b0C. For sensitivity spottings on camptothecin, plates were incubated at 37\u00b0C for 2 days. The inhibitor-sensitive CDK allele cdc28-as1 (Bishop et al., 2000) was inhibited by supplementing 1NM-PP1 (final concentration 1.5 \u00b5M) to the medium. Cell cycle synchronization was performed using alpha-factor (5\u03bcg/ml)\u00a0or nocodazole (5\u03bcg/ml)\u00a0for 2\u20133 hr.\n\nHEK293-T cells were used in mammalian cell culture experiments. Cells were obtained from the cell services facility of CRUKs London Research Institute, authenticated using STR profiling (Promega\u00a0Mannheim, Germany) and species determination. They were also tested negative for mycoplasma contamination.\n\nFor molecular cloning, genes were amplified from yeast genomic DNA and inserted in plasmids using the In-Fusion HD cloning kit (Clontech\u00a0Saint-Germain-en-Laye, France). For site-directed mutagenesis, a PCR-based protocol with mutagenic oligonucleotides was used. All plasmids used in this study are listed in Supplementary file 1B.\n\n### Yeast two-hybrid interaction assays\n\nThe yeast two-hybrid analyses of the protein-protein interactions were performed using either the Gal4-based plasmid system (pGAD-C1, pGBD-C1 [James et al., 1996]) in PJ69-7a cells, or the lexA-based plasmid system (pBTM116, Clontech\u00a0Saint-Germain-en-Laye, France) in L40 cells (Invitrogen\u00a0Schwerte, Germany).\n\nTransformants were spotted in serial (1:5) or single dilution either on SC-Leu-Trp plates (control) or on SC-Leu-Trp-His plates (selection) and grown at 30\u00b0C for 2\u20134 days. For a specific interaction between TOPBP1 1\u2013360 and SMARCAD1 55\u2013247, spotting plates were supplemented with different concentrations of 3-Amino-1,2,4-triazole (3-AT) (2.5\u201310 mM). To assess the phosphorylation-specific interaction between SMARCAD1 and Dpb11, cells were additionally spotted on SC-Leu-Trp-His-Ade plates.\n\nAll experiments (Figure 1A,G and H; Figure 9A,C,E) were performed in three technical repetitions per biological repetition (spotting of the same yeast cultures on three separate selection plates) and each interaction was observed in several (2-10) independent experiments (a biological replicate corresponds to a fresh transformation of the Y2H expression vectors, raising of the transformed cells and spotting on selective plates).\n\n### Fun30 Co-Immunoprecipitation\n\nYeast cells were freshly transformed with pUK1 (pAG416 GPD-Dpb11) and grown to log-phase (OD600 0.5) in SC-Ura medium\u00a0+\u00a02% glucose (YPD) at 30\u00b0C. Cells were cell cycle synchronized as describe above, the arrest was controlled by flow cytometry. To release cells from G1 (Figure 1C, Figure 1\u2014figure supplement 2), BAR1+ cells were synchronized with 5 \u03bcg/ml alpha-factor, washed twice in pre-warmed SC-Ura medium and resuspended in pre-warmed SC-Ura medium supplemented with nocodazole.\n\nFor preparation of extracts, 300 OD yeast cells were harvested, washed in ice-cold sorbitol buffer (1 M sorbitol, 25 mM Hepes pH 7.6), and resuspended in 2 ml lysis buffer with protease and phosphatase inhibitors (100 mM Hepes, 200 mM KOAc, 0.1 % NP-40, 10% glycerol, 2 mM \u03b2-mercaptoethanol, 100 nM\u00a0ocadaic acid, 10 mM NaF, 20 mM \u03b2-glycerophosphate, 400 \u03bcM PMSF, 4 \u03bcM aprotinin, 4 mM benzamidin, 400 \u03bcM leupeptin, 300 \u03bcM pepstatin A) and prepared for lysis using a\u00a0Spex Sample Prep cryo mill. The extracts were cleared by centrifugation and incubated with anti\u2010FLAG agarose resin (Sigma\u00a0Munich, Germany) for 30 min (4\u00b0C, rotation). After six washes with lysis buffer, Fun30-3FLAG was eluted twice with 0.5 mg/ml 3X FLAG peptide (Sigma\u00a0Munich, Germany). The elutions were pooled and proteins were precipitated with TCA prior to analysis on 4\u201312% NuPAGE gradient gels (Invitrogen\u00a0Schwerte, Germany) and standard Western blotting.\n\nYeast in vivo co-immunoprecipitation experiments were not performed in technical replicates. The number of biological replicates (fresh transformation with the GPD-Dpb11 overexpressing plasmid, raising of the cells, lysis and IP) was two or more, with the exception of Figures 1C and 5B, Figure 5\u2014figure supplement 1.\n\n### Protein purification\n\n#### Purification of bacterially expressed CDK2/cycA\u2206N170\n\nCDK/cycA was purified as described previously (Brown et al., 1995).\n\n#### Purification of Fun30 from S. cerevisiae\n\nYSB784 was grown in 6 L YP medium\u00a0+\u00a02% raffinose at 30\u00b0C until mid-log phase before expression was induced by addition of 2% galactose. After 3 hr of induction, yeast cells were harvested and washed with 1 M Sorbitol\u00a0+\u00a025 mM HEPES pH 7.6. Cells were resuspended in 20 ml of Lysis Buffer (500 mM NaCl, 100 mM HEPES pH 7.6, 0.1% NP-40, 10% glycerol, 2 mM \u03b2-mercaptoethanol, 400 \u00b5M PMSF, 4 \u00b5M aprotinin, 4 mM benzamidin, 400 \u00b5M leupeptin, 300 \u00b5M pepstatin A, 1x complete protease inhibitor cocktail, EDTA-free) and frozen to drops in liquid nitrogen. Cells were lysed using a cryo mill (Spex Sample Prep). The lysate was thawed and cleared by centrifugation. The extract was incubated with 2 ml equilibrated slurry of anti-FLAG M2 resin (Sigma\u00a0Munich, Germany). After 2 hr of incubation, the resin was washed six times with 15 CV of lysis buffer. Two elution steps were performed by adding 2 ml 0.5 mg/mL 3FLAG peptide in lysis buffer and incubation for 30 min at 4\u00b0C. Next, Fun303FLAG was further purified using a 1 ml MonoQ column. To this end, Fun30 was first brought to 100 mM NaCl, bound to the column and eluted on a 100 mM to 1\u00a0M salt gradient over 20 CV. Fun30 containing fractions were pooled, snap-frozen and stored at \u221280\u00b0C.\n\n#### Purification of GST-Dpb11 1\u2013275 from E.coli\n\nGST-Dpb11-1-275 was purified as described previously (Pfander and Diffley, 2011).\n\n#### Purification of GST-TOPBP1-1-360 from E.coli\n\nGST-TOPBP1-1-360 was purified as described previously (Boos et al., 2011).\n\n### In vitro analysis of protein-protein interactions\n\nIn vitro experiments (Figure 1F; Figure 9B,D) as depicted were performed once, but confirmed in several different experimental setups (Figure 9B and D).\n\n### In vitro CDK phosphorylation and pulldown of Fun30\n\nFor in vitro pulldown of Fun30 with Dpb11 after in vitro CDK phosphorylation, GST-Dpb11-N or GST (approx. 18 \u03bcg per reaction) were immobilized on Sepharose beads for 1 hr at 4\u00b0C. The beads were washed twice in lysis buffer (200 mM KOAc, 100 mM HEPES KOH pH\u00a07.6, 10% glycerol, 0.1% NP-40, 2 mM \u03b2-mercaptoethanol) and resuspended in 100 \u03bcl lysis buffer per reaction. For phosphorylation of Fun30 and Rad9 (control), 5 \u03bcg purified protein per reaction were dialyzed against lysis buffer (4\u00b0C) and supplied with 4 mM ATP and 5 mM MgOAc. Buffer or CDK (2.5 \u03bcg per reaction) were added and the reactions were incubated for 30 min at 24\u00b0C. Then, the pre-bound Dpb11/GST-beads were added to the phosphorylated proteins and incubated for 1 hr at 4\u00b0C. The beads were washed five times in lysis buffer and eluted by boiling in 2x Laemmli buffer. Proteins were separated by SDS-PAGE and analyzed with standard Western Blotting techniques.\n\n### In vitro CDK phosphorylation and pulldown of SMARCAD1\n\nCDK-dependent pulldowns of SMARCAD1-TOPBP1 (Figure 9B and D) were carried out as described (Boos et al., 2011) for TRESLIN-TOPBP1 with modifications. HEK293T cells were transfected with pCS2-SMARCAD1-55-275 or pCS2-SMARCAD1-55-445 (carrying an N-terminal GFP tag) and native cell lysates were prepared by lysing the cell pellets in 5x lysis buffer (20 mM HEPES pH\u00a07.5, 250 mM KCl, 0.1% Triton X-100, 5 mM \u03b2-mercaptoethanol, 5% glycerol and Complete EDTA-free Protease Inhibitor Cocktail (Roche\u00a0Mannheim, Germany)). For CDK phosphorylation, the extract was supplemented with 5 mM ATP, 5 mM MgCl2 and approx. 67 ng/\u03bcl cycA/CDK2 or buffer (as control) and incubated for 5 min at 25\u00b0C. 200 \u03bcl of cell extract were incubated with approx. 10 \u03bcg immobilized GST-TopBP1-BRCT0/1/2 for 2 hr at 4\u00b0C. The beads were washed with lysis buffer and WCE and bound material were analysed by SDS PAGE, Western Blotting and ponceau staining.\n\n### Chromatin immunoprecipitation (ChIP) and qPCR analysis\n\nFor chromatin immunoprecipitation of Fun30 and RPA, cells were grown in YP-Raffinose to an OD of 0.5 and\u00a0-\u00a0as indicated for the individual experiments- cell cycle arrest was induced. A double-strand break was introduced by inducing the HO endonuclease from the galactose promoter by addition of galactose to the cultures (2% final). 100 ml samples were crosslinked with formaldehyde (final 1%) for 16 min at indicated timepoints and the reaction was quenched with glycine. Cells were harvested by centrifugation, washed in ice-cold PBS and snap-frozen (RPA ChIPs) or directly processed (Fun30-3FLAG ChIPs). For lysis, cell pellets were resuspended in 800 \u03bcl lysis buffer (50 mM HEPES KOH pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% Na-deoxycolate, 0.1% SDS) and grinded with zirconia beads using a bead beating device. The chromatin was sonified to shear the DNA to a size of 200\u2013500 bp. Subsequently the extracts were cleared by centrifugation, 1% was taken as input sample and 40% were incubated with either anti FLAG M2 magnetic beads (Sigma\u00a0Munich, Germany) for 2 hr (Fun30-3FLAG ChIPs) or 1.5 hr with anti RFA antibody (AS07-214, Agrisera\u00a0V\u00e4nn\u00e4s, Sweden) followed by 30 min with Dynabeads ProteinA (Invitrogen\u00a0Schwerte, Germany, for RPA ChIPs). The beads were washed 3x in lysis buffer, 2x in lysis buffer with 500 mM NaCl, 2x in wash buffer (10 mM Tris-Cl pH 8.0, 0.25 M LiCl, 1 mM EDTA, 0.5% NP-40, 0.5% Na-deoxycholate) and 2x in TE pH 8.0. DNA-protein complexes were eluted in 1% SDS, proteins were removed with Proteinase K (3 hr, 42\u00b0C) and crosslinks were reversed (8 hr or overnight, 65\u00b0C). The DNA was subsequently purified using phenol-chloroform extraction and ethanol precipitation and quantified by quantitative PCR (Roche LightCycler480 System, KAPA SYBR FAST 2x qpCR Master Mix, KAPA Biosystems\u00a0London, UK) at indicated positions with respect to the DNA double-strand break. As control, 2\u20133 control regions on other chromosomes were quantified\u00a0and used for normalization.\n\nChromatin Immunoprecipitation (ChIP) experiments were generally performed in technical replicates (on the qPCR level, each sample was measured three times). Our experimental design (excluding Figure 1J and figure Figure 1\u2014figure supplement 5) includes further replicates, which can be considered as technical as well as biological replicates: we took samples at different timepoints after induction of the DNA break, which showed a consistent trend over the experiment. Additionally, we measured signals with 15\u201320 qPCR primer pairs over the damaged chromosome including three control regions on unaffected chromosomes. Therefore, we plot results from single experiments and timepoints and do not include error bars. Nonetheless, 2\u20136 repetitions (independent cell growth and crosslinking) were performed for mutants analysed in Figure 2A; Figure 6B\u2013C; Figure 2\u2014figure supplement 1, Figure 8 with the exception of Figure 6\u2014figure supplement 3. The ChIP experiment in Figure 1J and figure Figure 1\u2014figure supplement 5 was performed three times, error bars represent the standard deviation.\n\n### Yeast growth assays\n\nYeast growth assays (DNA damage sensitivity spottings Figures 2B and 4A\u2013D; Figure 6A, 9F; Figure 4\u2014figure supplements 1,2; Figure 6\u2014figure supplement 1; Figure 9\u2014figure supplement 5 and URA3 silencing assay Figure 3) were performed in three technical repetitions per biological repetition (spotting of the same yeast cultures on three separate selection plates), biological replicates refer to raising of the mutant strains and spotting on plates with indicated conditions. The genotypes were additionally confirmed by comparing several clones of each strain. Each experiment was spotted with three technical replicates.\n\n#### Single strand annealing spotting assay\n\nDerivates of the YMV80 strain (Vaze et al., 2002) carrying a 25 kb spacer between a galactose-inducible HO cutsite and repair locus with a rad51\u25b3 deletion to prevent DSB repair by gene conversion were grown to stationary phase in YP-Raffinose and spotted in a 5-fold serial dilution on plates containing glucose or galactose. The plates were incubated for 2\u20133 days at 30\u00b0C.\n\n#### DNA damage sensitivity spotting assay\n\nCells were grown to stationary phase in YP-Glucose and spotted in a 5-fold serial dilution on plates containing camptothecin (concentrations as indicated, typically between 4 and 12 \u03bcg/ml) or other drugs at the indicated concentrations. The plates were incubated for 2 days at 30\u00b0C or 37\u00b0C (for camptothecin, if not indicated differently).\n\n### Plasmid re-ligation assay\n\nIn order to assay for precise non-homologous end-joining, 40 OD of transformation-competent yeast cells were transformed with 500 ng BamHI-linearized or mock-digested pRS316. Transformed cells were plated in a five-fold serial dilution on SC-Ura and SC-complete agar plates and grown for two days. Clones on plates containing 50\u2013200 clones were counted to calculate the re-ligation rate (ratio of clones from +BamHI \u2013Ura by +BamHI +Ura divided by the equivalent ratio of mock digested plasmid transformations). Each sample was plated in triplicates and the experiment was independently repeated three times. Error bars represent standard deviations.\n\n50\u201375 clones from the BamHI-digest transformation on \u2013Ura plates were sequenced to analyse the precise NHEJ event. We found that the majority of cells had precisely re-joined the BamHI overhangs, with a subset having added a single G-C basepair at the cutsite (shown as rate in %). yku70\u2206 cells are NHEJ-deficient and showed very low NHEJ rates with exclusively precisely re-joined plasmid sequences, indicating that this number represents the background of uncut plasmid in the reactions.\n",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "5453fd00-b60a-4950-905a-e64c08f21369",
+      "submission_id": "1131c2bc-ef3f-4430-a7f2-6e0a0ac8d49f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gregory Ira, Baylor College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21687.033](https://doi.org/10.7554/eLife.21687.033)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Targeting of the Fun30 nucleosome remodeler by the Dpb11 scaffold facilitates cell cycle-regulated DNA end resection\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom, Gregory Ira (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Jo Morris (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors identify a cell cycle-dependent interaction between Fun30 and Dpb11-BRCT domains that depends on CDK-mediated phosphorylation at Fun30 S20 and S28. This complex, together with 9-1-1 is important for long range resection in S-M phase. Fusion of Fun30 to a component of 9-1-1 complex or Dpb11 substitutes the need for Fun30 phosphorylation and even restores resection in G1 blocked cells. Evidence for a similar cell cycle control of resection and interaction between human orthologues (SMARCAD1:TOPBP1) is provided. Together this report uncovers new mechanism of cell cycle regulation of DSB ends resection and proposes a possible strategy to optimize gene targeting in G1/post-mitotic cells. The report is well written, timely and interesting.\n\nEssential revisions:\n\nAlthough the observations are interesting and important, the collective major comments that need to be addressed prior to publication are:\n\n1) The role of Fun30 phosphorylation by Cdk1 in the interaction with Dpb11 is clear. It is also entirely convincing that Dpb11-Fun30 or Ddc1-Fun30 fusion proteins can substitute the need for the Cdk1 dependent Fun30 phosphorylation. However, the strain carrying any of these fused proteins has several phenotypes that indicate hyperactivity of Fun30. These include better growth/faster recovery upon SSA when compared to WT (Figure 2B), surprisingly efficient resection in G1 cells, hyper-resistance to CPT (Figure 5C), higher recruitment at DSBs than wild type Fun30. Thus, the major concern is that Fun30 fused to Dpb11 has higher and/or even possibly different activity than the phosphorylated form of the Fun30. Testing phosphomimic mutants would address this question and complement shortcomings of fusion protein analysis. It is occasionally observed that phosphomimic mutants do not restore the activity of protein; if this is the case here the conclusions would need to be toned down. Considering surprisingly efficient resection of Fun30-Dpb11 cells in G1 cells (previously observed only in ku mutants) it would be good to test the efficiency of precise NHEJ in cells carrying Fun30-Dpb11 and Fun30-Ddc1. Work published so far does not indicate any role of yeast Fun30 in the initial resection that is important for the choice between NHEJ and HR. Thus, any role of fused proteins in regulation of NHEJ would point to a nonphysiological function of the fusion protein.\n\n2) The model proposed suggests a hierarchy of recruitment with both Ddc1 and 9-1-1 being upstream of Fun30. Testing Fun30 recruitment to DSBs (by ChIP) in a dpb11 mutant that does not interact with Fun30 or in a ddc1 mutant would greatly support this view. A decreased or no recruitment in these mutants is expected, if the model is correct.\n",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02bba2bb-9115-4993-a731-0cf48023b31d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C1",
+      "claim": "Fun30 was identified in a two-hybrid screen for interactors of the scaffold protein Dpb11.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified Fun30 in a two-hybrid screen for interactors of the scaffold protein Dpb11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript directly states that Fun30 was identified through a two-hybrid screen with Dpb11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "908c75da-fd13-4b42-884b-f47d2a3702fb",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C2",
+      "claim": "The interaction between Fun30 and Dpb11 is mediated by BRCT1+2 of Dpb11.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of Fun30, the interaction is mediated by BRCT1+2, but not BRCT3+4 (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding and references Figure 1A showing two-hybrid assay results demonstrating the interaction with BRCT1+2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "57dfc6cf-bec0-4ee5-8f72-aa3ce82d1104",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C3",
+      "claim": "Fun30 interacts with Dpb11 only during late S to M phase, but not in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Fun30 interacted with Dpb11 only during late S to M phase, but not in G1 (Figure 1B\u2013C, Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents Co-IP data from cells at different cell cycle stages showing cell cycle-dependent interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "47ab06bb-a725-47b1-bf7b-807c3c397b8c",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C4",
+      "claim": "The Fun30-Dpb11 interaction is not influenced by DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "and this interaction was not influenced by DNA damage (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding and references Figure 1D showing Co-IP results with and without DNA damage treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "ecba8b52-0001-4a21-a257-c80bcb85f285",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C5",
+      "claim": "CDK inhibition diminishes the Fun30-Dpb11 interaction in M phase arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, upon CDK inhibition (using the cdc28-as1 allele and 1-NMPP1 inhibition) Dpb11 binding to Fun30 was strongly reduced (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents Co-IP data showing reduced interaction upon CDK inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "30f7a9a1-e7b4-41f5-9026-ebc886f2bff3",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C6",
+      "claim": "Purified Fun30 interacts with Dpb11 BRCT1+2 in vitro only after pre-phosphorylation by CDK.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, purified Fun303FLAG was able to interact with GSTDpb11-BRCT1+2 in vitro but only after pre-phosphorylation by CDK (Figure 1F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents in vitro pulldown data showing CDK-dependent interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f560d102-8352-47c2-914f-9cdf8ff8399b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C7",
+      "claim": "The Fun30-Dpb11 interaction and its regulation by CDK phosphorylation are direct.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, purified Fun303FLAG was able to interact with GSTDpb11-BRCT1+2 in vitro but only after pre-phosphorylation by CDK (Figure 1F), suggesting that the Fun30-Dpb11 interaction as well as its regulation by CDK phosphorylation are direct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from in vitro data with purified proteins that the interaction is direct.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "ba7e117e-3c6b-4e36-86da-09c5e04f9484",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C8",
+      "claim": "The Dpb11 interaction site on Fun30 is located close to the N-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction mapping using truncated constructs placed the Dpb11 interaction site close to the N-terminus of Fun30 (Figure 1G, Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents two-hybrid mapping data with truncated Fun30 constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "1cbc733b-ba00-465b-b5e2-fef3c6950a2f",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C9",
+      "claim": "S20 and S28 are critical residues for the Fun30-Dpb11 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this region, we identified S20 as well as S28 as critical residues for the Fun30-Dpb11 interaction by two-hybrid and Co-IP binding assays using non-phosphorylatable versions of Fun30 (Figure 1H\u2013I, Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents two-hybrid and Co-IP data with S20A and S28A mutants showing loss of interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "bb8755de-4069-44cc-b185-cb28a21daf04",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C10",
+      "claim": "Phosphorylation of S20 and S28 may create a composite binding surface for Dpb11 BRCT1+2.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that phosphorylation of both residues may create a composite binding surface for Dpb11 BRCT1+2, perhaps similar to the Dpb11-binding surfaces on Rad9 and Sld3 (Pfander and Diffley, 2011; Tanaka et al., 2007; Zegerman and Diffley, 2007; Zegerman et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates based on the requirement for both residues and comparison to known Dpb11 interactions.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "041b2358-50b8-4d40-881f-d0df3dee47cc",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C11",
+      "claim": "Fun30-SSAA binding to regions distal of a DSB (8\u201320 kb) is reduced compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that Fun30-SSAA binding to regions distal of the DSB was reduced compared to WT (8\u201320 kb, Figure 1J, Figure 1\u2014figure supplement 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing reduced Fun30-SSAA recruitment at distal regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f0a33d09-74f8-4c97-8c77-1c31ba8de5c1",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C12",
+      "claim": "Both WT Fun30 and Fun30-SSAA bind similarly to the immediate vicinity of a DSB (1\u20133 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "while both versions bound similarly to the immediate vicinity of the DSB (1\u20133 kb, Figure 1J, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing similar recruitment at proximal regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "0183fc78-fd9f-4ed0-b97c-07367c14bd94",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C13",
+      "claim": "The FUN30-DPB11 fusion protein localizes efficiently to damaged chromatin and restores the defect of the fun30-SSAA mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the fusion protein localized efficiently to damaged chromatin and thus restored the defect of the fun30-SSAA mutation (Figure 1J, Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing efficient recruitment of the fusion protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "dcaf793b-7489-47b9-8b39-100c13f5c2a5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C14",
+      "claim": "The interaction with Dpb11 is involved in targeting Fun30 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that the interaction with Dpb11 is indeed involved in targeting Fun30 to DSBs and that the covalent fusion is sufficient to bypass the CDK regulation of Fun30.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the rescue of Fun30-SSAA localization by the fusion that Dpb11 interaction is involved in targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f618acf0-6e0c-4452-8472-9dab46fc144b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C15",
+      "claim": "The FUN30-DPB11 fusion uncouples Fun30 from its cell cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we reason that the FUN30-DPB11 fusion deregulates Fun30 in two ways: first, it uncouples Fun30 from its cell cycle regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reasons from the constitutive nature of the covalent fusion that it bypasses cell cycle regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "fcef1a13-826f-4604-9473-9fe126802d8b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C16",
+      "claim": "The FUN30-DPB11 fusion leads to enhanced DSB localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, it leads to enhanced DSB localization to DSBs, thus potentially enhancing Fun30 activity at damaged chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript observes stronger recruitment of the fusion compared to WT Fun30 in ChIP experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "6e80ba58-b056-49e7-8e15-70593d310a92",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C17",
+      "claim": "There exists a CDK phosphorylation-independent, resection-dependent recruitment mechanism for Fun30, such as via binding to RPA.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the apparently normal recruitment of Fun30-SSAA to the immediate vicinity of the DSB could be explained by an additional CDK phosphorylation-independent, but resection-dependent recruitment mechanism, such as via binding to RPA (Chen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the normal proximal recruitment of Fun30-SSAA and cites a previous study showing RPA binding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "00cd080f-53cb-4f8e-b3f4-3b583233d4b8",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C18",
+      "claim": "There are two Fun30-targeting mechanisms: one Dpb11-dependent that recruits Fun30 to sites of ongoing resection, and one Dpb11-independent that tethers Fun30 to already resected DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data thus suggest the existence of two Fun30\u2013targeting mechanisms: one that is Dpb11-dependent and recruits Fun30 to sites of ongoing resection, and a second that is Dpb11-independent and tethers Fun30 to DNA that has already been resected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this model based on the differential recruitment patterns observed in ChIP experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7fc7dd5b-7eec-4890-b0d0-2f0bca284609",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C19",
+      "claim": "fun30\u25b3 mutants show a pronounced defect in long-range resection at regions greater than 10 kb away from a DSB.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, compared to WT cells, fun30\u25b3 mutants showed a pronounced defect in long-range resection, visible by a reduced spreading of both RPA-ChIP and DNA loss, to regions greater than 10 kb away from the break (Figure 2A, Figure 2\u2014figure supplement 1), confirming previous observations (Chen et al., 2011, 2012; Costelloe et al., 2012; Eapen et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data showing reduced RPA recruitment and DNA loss in fun30\u25b3 mutants, and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "e2aa176e-d855-4d3b-8e9b-4e14cce6fb0d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C20",
+      "claim": "The fun30-SSAA mutant shows the same defect in long-range resection as fun30\u25b3.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the same defect in long-range resection was also observed in the Dpb11-binding deficient fun30-SSAA mutant and was fully restored by the FUN30-DPB11 fusion (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data comparing fun30-SSAA to fun30\u25b3 and the fusion rescue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "8c6db8b8-cf91-4b35-879e-a5aa258fd02a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C21",
+      "claim": "The FUN30-DPB11 fusion fully restores the long-range resection defect of fun30-SSAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the same defect in long-range resection was also observed in the Dpb11-binding deficient fun30-SSAA mutant and was fully restored by the FUN30-DPB11 fusion (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data showing restoration of resection in the fusion strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7b2660b1-f00d-4b81-8587-277c24d83563",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C22",
+      "claim": "Dpb11-binding deficient fun30 mutants are deficient in SSA-mediated survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, Dpb11-binding deficient fun30 mutants were deficient in SSA-mediated survival and this defect was completely rescued by covalent fusion of Fun30-SSAA to Dpb11 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents SSA survival assay data showing reduced survival in fun30-SSAA and rescue by the fusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f65e90a6-cd84-4b24-90c2-85e0c7286539",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C23",
+      "claim": "The CDK-regulated interaction between Fun30 and Dpb11 is required for efficient long-range resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CDK-regulated interaction between Fun30 and Dpb11 is required for efficient long-range resection as well as subsequent resection-coupled repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the resection and SSA defects of fun30-SSAA and their rescue by the fusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f5e01229-cfc5-436a-a1aa-ab0ff3a47f77",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C24",
+      "claim": "The fun30-SSAA mutant does not display any defect in silencing at telomeres or at the silent mating type locus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that the fun30-SSAA mutant (unlike the fun30\u25b3 mutant) did not display any defect in silencing at telomeres or at the silent mating type locus and thus differs from the fun30\u25b3 mutant (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents silencing assay data showing no defect in fun30-SSAA unlike fun30\u25b3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "22b76263-801a-4710-80a5-3b197b5795e9",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C25",
+      "claim": "The fun30-SSAA mutant separates Fun30 functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The fun30-SSAA mutant thus separates Fun30 functions and the associated resection phenotype of this mutant therefore provides strong support for a direct role of Fun30 and the Fun30-Dpb11 complex during DNA end resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the separation of silencing and resection phenotypes that Fun30 has a direct role in resection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "d294b563-eda6-4fd3-ad45-b40caa300d0a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C26",
+      "claim": "The fun30-SSAA mutant shows hyper-sensitivity to CPT.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, also the fun30-SSAA mutant showed hyper-sensitivity to CPT albeit not as strong as the fun30 deletion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents CPT sensitivity spotting data showing intermediate sensitivity of fun30-SSAA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "92f412b1-fa44-498f-8400-33497fcc2e5e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C27",
+      "claim": "The CPT sensitivity of fun30-SSAA is rescued by expressing the covalent FUN30-DPB11 fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the CPT sensitivity of fun30-SSAA was rescued by expressing the covalent FUN30-DPB11 fusion (Figure 4A, Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity spotting data showing rescue by the fusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "e8ba7a6a-0c96-44a9-83d8-132693d98f15",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C28",
+      "claim": "The Fun30-Dpb11 interaction is required for the response towards CPT.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the CPT sensitivity of fun30-SSAA was rescued by expressing the covalent FUN30-DPB11 fusion (Figure 4A, Figure 4\u2014figure supplement 1), emphasizing again the importance of the Fun30-Dpb11 interaction for DSB repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the CPT sensitivity and rescue data that the interaction is important for DSB repair.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f9c5a379-3c13-4757-8145-5e041aadaabc",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C29",
+      "claim": "The CPT-hypersensitivity of fun30-SSAA is suppressed by an additional rad9 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what has been described for the fun30\u25b3 mutant, we observed that the CPT-hypersensitivity of the fun30-SSAA was suppressed by an additional rad9 deletion (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity data showing suppression by rad9\u25b3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "d36a2ce6-9726-4b13-8d42-0f947eb0cdb4",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C30",
+      "claim": "The Fun30-Dpb11 complex antagonizes Rad9.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what has been described for the fun30\u25b3 mutant, we observed that the CPT-hypersensitivity of the fun30-SSAA was suppressed by an additional rad9 deletion (Figure 4D), suggesting that the Fun30-Dpb11 complex antagonizes Rad9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the genetic suppression that Fun30-Dpb11 antagonizes Rad9.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "6fbd9129-ecf0-4b61-ba8a-afdca01c9953",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C31",
+      "claim": "The K603R mutant fusion (Walker A motif mutation inactivating ATPase activity) does not restore WT resistance to CPT.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in order to exclude that the FUN30-DPB11 fusion rescues resection simply by blocking the Rad9-Dpb11 interaction, we inactivated the ATPase activity of Fun30 by a Walker A motif mutation (K603R) in the context of the FUN30-DPB11 fusion and found the K603R mutant fusion did not restore WT resistance to CPT (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity data showing no rescue by the catalytically inactive fusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "aa24dd35-0e46-491b-9a09-d43899aa1404",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C32",
+      "claim": "The catalytic activity of Fun30 is required for the resection-promoting function of the Fun30-Dpb11 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, competition does not explain the effects of the FUN30-DPB11 fusion and the catalytic activity of Fun30 is required for the resection-promoting function of the Fun30-Dpb11 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the K603R fusion data that catalytic activity is required.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f81dec65-eb09-43d4-befc-3d39b2e83c87",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C33",
+      "claim": "Cell cycle-regulated targeting of Fun30 by Dpb11 is required for efficient DNA end resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data thus suggest that cell cycle-regulated targeting of Fun30 by Dpb11 is required for efficient DNA end resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the combined resection, SSA, and CPT sensitivity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "86c6f71f-2bb8-4f24-af07-0b46f55084be",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C34",
+      "claim": "Fun30 co-precipitates the 9-1-1 subunits Mec3 and Ddc1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Fun303FLAG co-precipitated the 9-1-1 subunits Mec3 and Ddc1 and this binding was absent in cells arrested in G1 or in the respective Dpb11 interaction-deficient mutants (ddc1-T602A or fun30-SSAA; Figure 5A\u2013B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents Co-IP data showing co-precipitation of 9-1-1 subunits with Fun30.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "acc90b86-2f33-4b20-8461-fe66b3a555d1",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C35",
+      "claim": "The binding of 9-1-1 to Fun30 is absent in cells arrested in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Fun303FLAG co-precipitated the 9-1-1 subunits Mec3 and Ddc1 and this binding was absent in cells arrested in G1 or in the respective Dpb11 interaction-deficient mutants (ddc1-T602A or fun30-SSAA; Figure 5A\u2013B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents Co-IP data showing cell cycle-dependent binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "26c53cea-5373-49e1-8c9f-439d98d484c5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C36",
+      "claim": "The binding of 9-1-1 to Fun30 is absent in Dpb11 interaction-deficient mutants (ddc1-T602A or fun30-SSAA).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Fun303FLAG co-precipitated the 9-1-1 subunits Mec3 and Ddc1 and this binding was absent in cells arrested in G1 or in the respective Dpb11 interaction-deficient mutants (ddc1-T602A or fun30-SSAA; Figure 5A\u2013B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents Co-IP data showing Dpb11-dependent binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "1c2457df-2f96-4572-99fa-70fb15a53651",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C37",
+      "claim": "Fun30, Dpb11 and 9-1-1 can form a ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that Fun30, Dpb11 and 9-1-1 can form a ternary complex, which is regulated by the cell cycle stage (model in Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript concludes from the Co-IP data that a ternary complex forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "6084379f-6e1f-47fa-8836-4b5e7c7b2612",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C38",
+      "claim": "The ternary complex of Fun30, Dpb11 and 9-1-1 is regulated by the cell cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that Fun30, Dpb11 and 9-1-1 can form a ternary complex, which is regulated by the cell cycle stage (model in Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the cell cycle-dependent Co-IP data that the complex is cell cycle-regulated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f89dca38-6618-4a5c-926e-790afa3f2022",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C39",
+      "claim": "The ddc1-T602A mutation impairs efficient localization of Fun30 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed a reduction of the Fun30 binding in the proximity of a DSB by ChIP, when we interfered either with the 9-1-1-Dpb11 interaction (ddc1-T602A mutant) or with the Fun30-Dpb11 interaction (SLD3-DPB11\u2206N mutant strain, which expresses as only copy of DPB11 a truncated version of Dpb11 lacking the Fun30 binding site, Zegerman and Diffley, 2007), further supporting a role of 9-1-1 in targeting Fun30 to DSBs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing reduced Fun30 recruitment in ddc1-T602A mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "e72b0aa2-fc1a-4cd9-9c83-d736d716235d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C40",
+      "claim": "The SLD3-DPB11\u2206N mutation impairs efficient localization of Fun30 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed a reduction of the Fun30 binding in the proximity of a DSB by ChIP, when we interfered either with the 9-1-1-Dpb11 interaction (ddc1-T602A mutant) or with the Fun30-Dpb11 interaction (SLD3-DPB11\u2206N mutant strain, which expresses as only copy of DPB11 a truncated version of Dpb11 lacking the Fun30 binding site, Zegerman and Diffley, 2007), further supporting a role of 9-1-1 in targeting Fun30 to DSBs (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing reduced Fun30 recruitment in SLD3-DPB11\u2206N mutant.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f5eca37a-4463-47b0-8580-2bc962985f02",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C41",
+      "claim": "9-1-1 has a role in targeting Fun30 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed a reduction of the Fun30 binding in the proximity of a DSB by ChIP, when we interfered either with the 9-1-1-Dpb11 interaction (ddc1-T602A mutant) or with the Fun30-Dpb11 interaction (SLD3-DPB11\u2206N mutant strain, which expresses as only copy of DPB11 a truncated version of Dpb11 lacking the Fun30 binding site, Zegerman and Diffley, 2007), further supporting a role of 9-1-1 in targeting Fun30 to DSBs (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the ChIP data with 9-1-1-Dpb11 interaction mutants that 9-1-1 is involved in targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "84647092-2088-4a54-a84a-e04314036882",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C42",
+      "claim": "The DDC1-FUN30 fusion rescues the CPT phenotype of the fun30-SSAA mutant in a manner that depends on the catalytic activity of Fun30.",
+      "claim_type": "EXPLICIT",
+      "source": "Also this fusion rescued the CPT phenotype of the fun30-SSAA mutant in a manner that depended on the catalytic activity of Fun30 (Figure 6A, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity data showing rescue by DDC1-FUN30 but not by the K603R mutant version.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "72659b64-a664-49a7-9fcf-0f06da62687d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C43",
+      "claim": "The DDC1-FUN30 fusion targets Fun30 more efficiently to damaged chromatin than the FUN30-DPB11 fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The DDC1-FUN30 fusion targeted Fun30 even more efficiently to damaged chromatin than the FUN30-DPB11 fusion",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript compares ChIP data for the two fusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "5c1487dc-5357-4289-8315-96702692c780",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C44",
+      "claim": "The DDC1-FUN30 fusion strain is able to survive at very high CPT concentrations where little growth is detected even for WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and, notably, the corresponding strain was able to survive at very high CPT concentrations, where little growth could be detected even for WT cells, indicating that the DDC1-FUN30 fusion promotes hyper-resistance to CPT (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity data showing survival at 12 \u00b5g/ml CPT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "3e6d3c03-1dab-40b8-bd01-5b04fcc31948",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C45",
+      "claim": "The DDC1-FUN30 fusion promotes hyper-resistance to CPT.",
+      "claim_type": "EXPLICIT",
+      "source": "and, notably, the corresponding strain was able to survive at very high CPT concentrations, where little growth could be detected even for WT cells, indicating that the DDC1-FUN30 fusion promotes hyper-resistance to CPT (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the survival at high CPT concentrations that the fusion confers hyper-resistance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "45520d50-ba07-470d-ba14-6404cbb25c44",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C46",
+      "claim": "It is possible to at least partially overcome the limits of cellular resistance to CPT by providing very efficient targeting of Fun30 to damaged chromatin and uncoupling it from cell cycle control.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus possible to at least partially overcome the limits of cellular resistance to CPT by providing very efficient targeting of Fun30 to damaged chromatin and uncoupling it from cell cycle control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the hyper-resistance phenotype of the DDC1-FUN30 fusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "fcae7775-d7b3-42bf-9bc7-99b221381f16",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C47",
+      "claim": "The DDC1-FUN30 fusion efficiently localizes to a DSB in G1-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the DDC1-FUN30 fusion, which in contrast to WT Fun30 efficiently localized to a DSB in G1 (Figure 6B, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents ChIP data showing efficient G1 recruitment of the DDC1-FUN30 fusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "0f34901c-89d4-4bd9-a21a-a3956ab57886",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C48",
+      "claim": "The DDC1-FUN30 fusion protein promotes resection in G1 to a significantly larger reach compared to WT Fun30.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the DDC1-FUN30 fusion protein promoted resection in G1 to a significantly larger reach compared to WT Fun30, since RPA recruitment could be observed up to 25 kb distance from the DSB (Figure 6C, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data showing extended RPA recruitment in G1 with the fusion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "e78ce2ae-60c3-4b94-8e55-a37e855c38fc",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C49",
+      "claim": "The spreading of resection under the DDC1-FUN30 conditions is more pronounced than in WT cells arrested in M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the spreading of resection under the DDC1-FUN30 conditions was even more pronounced than in WT cells arrested in M phase (Figure 6C, Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data comparing DDC1-FUN30 in G1 to WT in M phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "c37b4b81-adc6-4f8f-b96a-675c96c5b02d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C50",
+      "claim": "Forced tethering of Fun30 to DSB sites is able to bypass the bottleneck that limits long-range resection in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "This hyperactivation of resection thus indicates that forced tethering of Fun30 to DSB sites is able to bypass the bottleneck that limits long-range resection in G1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the enhanced G1 resection with the DDC1-FUN30 fusion that Fun30 targeting is a limiting factor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "b1d30105-826d-4a9d-80d1-fc6a6445afce",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C51",
+      "claim": "Within the resected region, the fold enrichment of RPA recruitment and the extent of DNA loss in G1 with DDC1-FUN30 fusion are not restored to similar levels as observed in M phase.",
+      "claim_type": "EXPLICIT",
+      "source": "It needs to be pointed out that within the resected region the fold enrichment of RPA recruitment and the extent of DNA loss was not restored to similar levels as observed in M phase (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript notes this observation from the resection assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "abc7f15c-ed6d-419b-9437-d3ad4d39acc3",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C52",
+      "claim": "Precise ligation of a cut plasmid by NHEJ does not appear to be influenced by the DDC1-FUN30 fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, precise ligation of a cut plasmid by NHEJ did not appear to be influenced by the DDC1-FUN30 fusion (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents plasmid re-ligation assay data showing no significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "9d609108-7735-4842-8892-34b79ab73e78",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C53",
+      "claim": "The overall cell cycle regulation of DNA end resection is not bypassed completely by the DDC1-FUN30 fusion, presumably because other resection proteins and in particular resection initiation are additional targets of cell cycle regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus suggest that the overall cell cycle regulation of DNA end resection was not bypassed completely, presumably because other resection proteins and in particular resection initiation are additional targets of cell cycle regulation (Albuquerque et al., 2008; Chen et al., 2011; Huertas et al., 2008; Pfander and Diffley, 2011; Zhang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the incomplete restoration of resection levels and cites previous studies on cell cycle regulation of other resection factors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "eab20669-db24-4dba-b7b2-79f6b7be9cee",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C54",
+      "claim": "The sae2-S267E mutant shows no increase in the reach of resection in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the sae2-S267E mutant showed no increase in the reach of resection and only led to a slight increase in the fold enrichment of the RPA ChIP, both in WT and DDC1-FUN30 background (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data comparing sae2-S267E to WT and DDC1-FUN30.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "5e861ff5-af04-4dbc-8650-b0724758bb68",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C55",
+      "claim": "The sae2-S267E mutant only leads to a slight increase in the fold enrichment of the RPA ChIP in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the sae2-S267E mutant showed no increase in the reach of resection and only led to a slight increase in the fold enrichment of the RPA ChIP, both in WT and DDC1-FUN30 background (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents resection assay data showing slight increase in RPA fold enrichment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "fc101420-db57-4982-a6ed-17a483c2f39c",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C56",
+      "claim": "sae2-S267E partially bypasses the cell cycle regulation of resection initiation, while the DDC1-FUN30 fusion bypasses the cell cycle regulation of long-range resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data are thus consistent with a model, whereby sae2-S267E partially bypasses the cell cycle regulation of resection initiation, while the DDC1-FUN30 fusion bypasses the cell cycle regulation of long-range resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this model based on the different effects of the two mutations on resection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "2102ae7f-0898-4f04-a657-917e67ad6b0b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C57",
+      "claim": "Chromatin has a barrier function towards resection.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights that chromatin has a barrier function towards resection and that formation of the Fun30-Dpb11 complex is the limiting step that needs to be up-regulated during recombination-permissive cell cycle phases in order to overcome this barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the ability of Fun30 targeting to bypass G1 resection limits that chromatin is a barrier.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "2f41eed2-119d-431f-a55d-964f68b00112",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C58",
+      "claim": "Formation of the Fun30-Dpb11 complex is the limiting step that needs to be up-regulated during recombination-permissive cell cycle phases in order to overcome the chromatin barrier to resection.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights that chromatin has a barrier function towards resection and that formation of the Fun30-Dpb11 complex is the limiting step that needs to be up-regulated during recombination-permissive cell cycle phases in order to overcome this barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the G1 resection bypass experiments that Fun30-Dpb11 complex formation is limiting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "26ca68fb-6a74-47c9-8bdc-31202187e2b4",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C59",
+      "claim": "SMARCAD1 interacts with TOPBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in an independent screen we identified an N-terminal fragment of SMARCAD1 (aa 55\u2013274) as interactor of TOPBP1 (using a TOPBP1 BRCT0-2 construct), the human ortholog of Dpb11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states that SMARCAD1 was identified as a TOPBP1 interactor in a screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "bb681361-e911-4cd3-b22f-eb6df701a001",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C60",
+      "claim": "The SMARCAD1-TOPBP1 interaction requires the phospho-protein binding sites of TOPBP1 BRCT1+2.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found this interaction to require the phospho-protein binding sites of TOPBP1 BRCT1+2 (Figure 9A, Figure 9\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents two-hybrid data with BRCT pocket mutants showing loss of interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "c23bf83d-2574-42f2-9301-9264da8c13e0",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C61",
+      "claim": "GFP-SMARCAD1-55-445 binds efficiently to GST-TOPBP1-BRCT0/1/2 only after addition of active CDK to the cell extract.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-SMARCAD1-55-445 bound efficiently to GST-TOPBP1-BRCT0/1/2, but only after addition of active CDK to the cell extract (Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents pulldown data showing CDK-dependent binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "94bc3ed4-0ed5-4787-ba37-789b49d70f63",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C62",
+      "claim": "CDK phosphorylation promotes the SMARCAD1-TOPBP1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that CDK phosphorylation promotes the interaction, similar to the regulation in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the CDK-dependent pulldown that CDK phosphorylation promotes the interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "5a834dd8-8f32-4b95-9dee-60b54b034a5b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C63",
+      "claim": "The T71A variant of SMARCAD1 causes strongly reduced TOPBP1 binding in two-hybrid and Co-IP.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we found that the T71A variant, but none of the other S/TP site mutants tested caused strongly reduced TOPBP1 binding in two-hybrid and Co-IP (Figure 9C\u2013D, Figure 9\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents two-hybrid and Co-IP data showing reduced binding with T71A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "938150b3-12f3-482d-a113-9420945ff72e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C64",
+      "claim": "SMARCAD1 interacts with TOPBP1 via the CDK-site T71.",
+      "claim_type": "EXPLICIT",
+      "source": "These data therefore suggest that SMARCAD1 interacts with TOPBP1 via the CDK-site T71.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the T71A mutant data that T71 is the critical CDK site.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "d9997ff1-2ba9-4027-a80e-374db9922ce9",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C65",
+      "claim": "Human SMARCAD1 interacts with yeast Dpb11 in a manner that is dependent on the T71 phosphorylation site.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, we observed in two-hybrid experiments that human SMARCAD1 also interacted with yeast Dpb11 and in a manner that was dependent on the T71 phosphorylation site (Figure 9E, Figure 9\u2014figure supplement 3), despite low sequence conservation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents two-hybrid data showing cross-species interaction dependent on T71.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "cb3732fa-c72b-4e62-baeb-1bc061726a82",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C66",
+      "claim": "A SMARCAD1-Fun30 chimera lacking the Dpb11-binding region of Fun30 but containing the TOPBP1-binding region of SMARCAD1 is largely able to rescue the CPT sensitivity of the fun30\u25b3 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we generated a SMARCAD1-Fun30 chimera lacking the Dpb11-binding region of Fun30 but containing the TOPBP1-binding region of SMARCAD1 (SMARCAD1-1-300-FUN30-30-C), this chimera was largely able to rescue the CPT sensitivity of the fun30\u25b3 mutant (Figure 9F, Figure 9\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity data showing rescue by the chimera.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "648bb1c4-39fe-43f8-b026-baf22533dd6c",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C67",
+      "claim": "The Fun30-30-C fragment alone is unable to rescue CPT sensitivity and shows reduced protein stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Fun30-30-C fragment alone was unable to provide a rescue and showed reduced protein stability as well (without tag or GFP-tagged, figure Figure 9\u2014figure supplements 4,6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents CPT sensitivity and protein expression data for the truncated Fun30 fragment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "859bc4aa-ec26-4491-aff8-3cbc30d78dbf",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C68",
+      "claim": "The TOPBP1-binding region of SMARCAD1 can replace the Dpb11-binding region of Fun30 in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment may thus indicate that the TOPBP1-binding region of SMARCAD1 could replace the Dpb11-binding region of Fun30 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers from the chimera rescue that the TOPBP1-binding region can functionally replace the Dpb11-binding region.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "3d34fbae-9180-4ed8-b710-aff52cd4900a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C69",
+      "claim": "The Fun30/SMARCAD1 interaction with Dpb11/TOPBP1, its regulation by CDK phosphorylation and the corresponding interaction surfaces show remarkable conservation over more than a billion years of eukaryotic evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we therefore conclude from the data in Figure 9 that the Fun30/SMARCAD1 interaction with Dpb11/TOPBP1, its regulation by CDK phosphorylation and the corresponding interaction surfaces show a remarkable conservation over more than a billion years of eukaryotic evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the conservation of the interaction and its regulation between yeast and human that it is evolutionarily conserved.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "c61ca4ed-b68a-4ef6-9d84-deeafe3977b7",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C70",
+      "claim": "The function of Fun30/SMARCAD1 at DSBs is cell cycle-regulated via interaction with Dpb11/TOPBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study reveals that the function of Fun30/SMARCAD1 at DSBs is cell cycle-regulated via interaction with Dpb11/TOPBP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "0a247170-8782-4904-90a3-bc338aa82b0f",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C71",
+      "claim": "The interaction with Dpb11/TOPBP1 facilitates localization of Fun30 to damaged chromatin in a manner that depends on the 9-1-1 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, this interaction seems to facilitate localization of Fun30 to damaged chromatin in a manner that depends on the 9-1-1 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the finding about 9-1-1-dependent targeting in the Discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "1fd772eb-cfc7-4cd0-bebb-94e37aeeae5a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C72",
+      "claim": "The interaction with Dpb11 and 9-1-1 is essential for the resection function of Fun30 during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, our data suggests that the interaction with Dpb11 and 9-1-1 is essential for the resection function of Fun30 during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the resection defects of interaction mutants that the interaction is essential.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "04fe80f8-b059-4cd3-8197-b63edfdc869d",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C73",
+      "claim": "Once recruited to a lesion, Fun30 promotes the action of the long-range resection machinery by generating resection-permissive chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Once recruited to a lesion, Fun30 will then promote the action of the long-range resection machinery by generating resection-permissive chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this mechanism based on the resection defects and chromatin remodeling activity of Fun30.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f7fe2761-2304-4eda-bafb-3165bd6538d5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C74",
+      "claim": "Fun30 antagonizes the resection inhibitor Rad9.",
+      "claim_type": "EXPLICIT",
+      "source": "It seems clear that Fun30 antagonizes the resection inhibitor Rad9 (Chen et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this based on genetic suppression data and cites a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f20380e6-7eef-4423-9b69-655a6da486a5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C75",
+      "claim": "At least two layers of cell cycle regulation of DNA end resection can be distinguished: regulation of nucleases and nuclease-associated factors, and regulation of chromatin and nucleosome remodellers.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data suggest that at least two layers of cell cycle regulation of DNA end resection can be distinguished. First, nucleases and nuclease-associated factors are substrate for CDK phosphorylation (Chen et al., 2011; Huertas et al., 2008) and this may directly activate these enzymes, as has for example been shown for the endonuclease activity of MRX-Sae2 (Cannavo and Cejka, 2014). Second, chromatin and nucleosome remodellers may be regulated in a way that generates resection-permissive chromatin at damage sites in cell cycle phases when resection is favoured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this model based on the data and cites previous studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "06528058-fd09-42a7-a848-e45255cbc281",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C76",
+      "claim": "Deregulation of chromatin regulation (such as with the DDC1-FUN30 fusion) has been the most successful strategy to bypass the cell cycle regulation of DNA end resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, deregulation of the second layer such as in the experiments with the DDC1-FUN30 fusion has so far been the most successful strategy to bypass the cell cycle regulation of DNA end resection (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript compares the effectiveness of different bypass strategies based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "15c6a63d-5edc-4c17-a62c-81edac711fa9",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C77",
+      "claim": "Chromatin (more specifically the Fun30 target on chromatin) is the factor that limits long-range resection in G1 phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This emphasizes the importance of resection regulation by its chromatin substrate and suggests that chromatin (more specifically the Fun30 target on chromatin) is the factor that limits long-range resection in G1 phase cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes from the G1 resection bypass experiments that chromatin is the limiting factor.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "ba68bde9-862e-4691-bc31-716bd62f6393",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C78",
+      "claim": "Modification of the DSB-surrounding chromatin by Fun30/SMARCAD1 should be explored as a tool to experimentally channel DSBs into the HR pathway independently of cell cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Notwithstanding the overall complexity of DSB repair pathway choice, our results suggest that modification of the DSB-surrounding chromatin by Fun30/SMARCAD1 should be explored further \u2013 particularly in higher eukaryotes \u2013 as a tool to experimentally channel DSBs into the HR pathway independently of cell cycle stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript proposes this application based on the ability to bypass cell cycle regulation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "6c332d7e-e3e1-454f-9128-d943b34428ee",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C79",
+      "claim": "DNA end resection is essential for the initiation of homologous recombination or related recombination-based mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA end resection \u2013 the nucleolytic digestion of the 5' strands of a DSB \u2013 is essential for the initiation of homologous recombination (HR) or related recombination-based mechanisms (reviewed in [Cejka, 2015; Symington, 2014; Symington and Gautier, 2011]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge and cites reviews.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "5bbd4fd2-a0a7-481b-a77b-48755043fbdf",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C80",
+      "claim": "Resection interferes with ligation-based repair (NHEJ) and is the critical step for repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, resection interferes with ligation-based repair (non-homologous end-joining, NHEJ) and thus is the critical step for repair pathway choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "8dd0e2e1-723c-43a1-abdd-54983ba38b79",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C81",
+      "claim": "In G1 phase, little resection occurs and NHEJ is favoured.",
+      "claim_type": "EXPLICIT",
+      "source": "in G1 phase, little resection occurs and NHEJ is therefore favoured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about cell cycle regulation of DSB repair.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "a3df734a-be81-468f-a678-d800400a5fce",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C82",
+      "claim": "In S, G2 and M phase, resection is up-regulated and HR becomes more prevalent.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in S, G2 and M phase, resection is up-regulated and HR becomes more prevalent (Cejka, 2015; Ira et al., 2004; Symington, 2014; Symington and Gautier, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge and cites relevant studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "531ffc1e-2be3-4a50-91cc-332bb379383e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C83",
+      "claim": "Sae2 and Dna2 are cell cycle-controlled by CDK phosphorylation in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, Sae2 and Dna2 were shown to be cell cycle - controlled by cyclin-dependent kinase (CDK) phosphorylation in yeast (Chen et al., 2011; Huertas et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing CDK regulation of these nucleases.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "62a01e92-8400-4e91-bc5d-d0277a381aba",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C84",
+      "claim": "EXO1 is cell cycle-controlled by CDK phosphorylation in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and EXO1 in human cells (Tomimatsu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study showing CDK regulation of EXO1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "dc8397b4-8b62-49c2-9368-26ab68e47c41",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C85",
+      "claim": "A bypass of CDK control of nucleases is not sufficient to allow efficient end resection to occur in G1.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, a bypass of this control is not sufficient to allow efficient end resection to occur in G1, suggesting that other factors may be involved in the cell cycle control of DNA end resection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge suggesting additional regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "e6cd93ee-0e9f-40a4-80ce-27c87a01736a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C86",
+      "claim": "Nucleosomes can be inhibitory to resection enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes themselves can be inhibitory to resection enzymes (Adkins et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study showing nucleosome inhibition of resection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "efaf9713-ab45-48a9-8c6d-61f63d593530",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C87",
+      "claim": "Budding yeast Rad9 and its functional ortholog in humans, 53BP1, can inhibit resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, nucleosome-associated proteins such as budding yeast Rad9 or its functional ortholog in humans, 53BP1, can inhibit resection (Bunting et al., 2010; Lazzaro et al., 2008; Trovesi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing resection inhibition by these proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "d2db6f4a-bc44-43cd-aa17-238db904261b",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C88",
+      "claim": "Nucleosome remodellers are recruited to DSBs and promote resection.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a barrier function of chromatin and/or Rad9, nucleosome remodellers are recruited to DSBs and promote resection, although the mechanism is poorly understood (Bennett and Peterson, 2015; Bennett et al., 2013; Chai et al., 2005; Morrison et al., 2004; van Attikum et al., 2007, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing remodeller recruitment and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "853bd06c-f611-460f-98ff-7dca7c69532e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C89",
+      "claim": "Fun30 (SMARCAD1 in humans) is a critical regulator of resection.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swr1-like family remodeller Fun30 (SMARCAD1 in humans) was found to be a critical regulator of resection (Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies identifying Fun30/SMARCAD1 as a resection regulator.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "1ce7002d-2a89-4781-acce-1c0a53ae8cb8",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C90",
+      "claim": "Fun30 localizes to chromatin surrounding DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Fun30 localizes to chromatin surrounding DSBs and fun30\u25b3 mutant cells show a pronounced defect in long-range resection (Chen et al., 2012; Costelloe et al., 2012; Eapen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing Fun30 localization and function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "04386f53-b33a-4964-9f73-e0f24d533dd6",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C91",
+      "claim": "SMARCAD1 promotes DNA end resection in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, also SMARCAD1 promotes DNA end resection in human cells, suggesting evolutionary conservation (Costelloe et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study showing conservation of function to humans.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "8b0c0448-abf7-49e5-9bd4-9f3650a17b71",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C92",
+      "claim": "Fun30 is a substrate for CDK phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fun30 itself is a substrate for CDK phosphorylation (Chen et al., 2012, 2016; Ubersax et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing CDK phosphorylation of Fun30.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7be749eb-7896-4cce-8d0c-f4d4f62ee1ed",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C93",
+      "claim": "CDK phosphorylation enables Fun30 to form a complex with the phospho-protein-binding scaffold protein Dpb11 and the DNA damage sensor 9-1-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that CDK phosphorylation enables Fun30 to form a complex with the phospho-protein-binding scaffold protein Dpb11 and the DNA damage sensor 9-1-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the main finding in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "0e3d861e-f744-4441-beff-39ea833b322a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C94",
+      "claim": "Formation of the Fun30-Dpb11-9-1-1 complex is required for proper localization of Fun30 and for efficient long-range resection in M phase cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of this complex is required for proper localization of Fun30 and for efficient long-range resection in M phase cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the finding in the Abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "c276a159-57a0-48aa-b190-1198c37cd266",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C95",
+      "claim": "When Fun30 is directly fused to a subunit of the 9-1-1 complex, long-range resection is observed even in G1-arrested cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, when we bypass the CDK requirement by directly fusing Fun30 to a subunit of the 9-1-1 complex, we observe long-range resection even in G1\u2013arrested cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the finding in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "b0d066ee-643c-492c-a5be-2eaba3e6d6e5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C96",
+      "claim": "The cell cycle regulation of long-range resection can be bypassed solely by artificially targeting Fun30 to DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the cell cycle regulation of long-range resection can be bypassed solely by artificially targeting Fun30 to DSBs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the G1 resection with the DDC1-FUN30 fusion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "21c9f32d-6ddf-42b7-ac54-a43e2479e468",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C97",
+      "claim": "Human SMARCAD1 binds to TOPBP1 in a CDK phosphorylation-dependent manner that involves conserved interaction surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that also human SMARCAD1 binds to TOPBP1 (human ortholog of Dpb11) in a CDK phosphorylation-dependent manner that involves conserved interaction surfaces",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the finding in the Abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "45842c51-e0e7-4ffd-bf4f-903ca1a0f90c",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C98",
+      "claim": "The formation of a Fun30-Dpb11 complex is a conserved mechanism of cell cycle regulation that could control DNA end resection and repair pathway choice throughout eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the formation of a Fun30-Dpb11 complex is a conserved mechanism of cell cycle regulation that could control DNA end resection and repair pathway choice throughout eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the conservation data and speculates about broader implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "2495d154-194a-4647-a3eb-f824518b86e6",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "claim_id": "C99",
+      "claim": "Chromatin remodelling during resection is underlying DSB repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, artificial targeting of Fun30 to DSBs is sufficient to bypass the cell cycle regulation of long-range resection, indicating that chromatin remodelling during resection is underlying DSB repair pathway choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript concludes this from the ability to bypass cell cycle regulation by targeting Fun30.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "bd6fd62b-9d60-479b-a86e-276c752ba84e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Fun30 interacts with Dpb11 in a cell cycle-dependent manner mediated by CDK phosphorylation of S20 and S28 residues on Fun30, which bind to BRCT1+2 domains of Dpb11 during late S to M phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide converging evidence from two-hybrid screens (C1, C2), Co-IP experiments across cell cycle stages (C3, C4), CDK inhibition studies (C5), in vitro reconstitution with purified proteins (C6, C7), and mutagenesis of specific phosphorylation sites (C8, C9). The data consistently demonstrate a direct, CDK-regulated interaction between Fun30 and Dpb11.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "30d76ea2-1960-420a-8277-00f1a41f36f4",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Fun30-Dpb11 interaction is required for efficient recruitment of Fun30 to distal regions (8-20 kb) from DSBs, with two distinct targeting mechanisms: a Dpb11-dependent mechanism for distal recruitment and a Dpb11-independent mechanism (possibly RPA-mediated) for proximal recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C18 present ChIP data showing differential recruitment of Fun30-SSAA mutant versus WT at different distances from DSBs (C11, C12), rescue by FUN30-DPB11 fusion (C13), and propose a two-mechanism model (C17, C18). The data support the conclusion that Dpb11 interaction is critical for distal but not proximal Fun30 recruitment, though the RPA-mediated mechanism (C17) relies on citation rather than direct demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7c6bf4ca-2066-4db4-8767-8bb529840991",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The CDK-regulated Fun30-Dpb11 interaction is essential for efficient long-range DNA end resection (>10 kb from DSB) and subsequent resection-coupled repair via SSA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 demonstrate that fun30\u0394 and fun30-SSAA mutants show similar defects in long-range resection measured by RPA ChIP and DNA loss (C19, C20), which are rescued by the FUN30-DPB11 fusion (C21). SSA survival assays confirm the functional importance for repair (C22). The convergence of resection and repair phenotypes strongly supports the conclusion (C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "94639810-0b10-4a4b-96b9-acb7ceac34ac",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The fun30-SSAA mutant separates Fun30 functions, showing resection defects without silencing defects, providing evidence for a direct role of Fun30 in DNA end resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 show that fun30-SSAA lacks silencing defects at telomeres and HML (C24), unlike fun30\u0394, while retaining resection defects. This separation-of-function phenotype (C25) provides strong genetic evidence that the resection defect is not an indirect consequence of altered chromatin organization, supporting a direct role in resection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Fun30-Dpb11 interaction is required for cellular resistance to CPT-induced DNA damage, and Fun30 antagonizes the resection inhibitor Rad9 in a manner dependent on Fun30's catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 demonstrate CPT sensitivity of fun30-SSAA (C26), rescue by FUN30-DPB11 fusion (C27), genetic suppression by rad9\u0394 (C29, C30), and requirement for Fun30 ATPase activity shown by K603R mutation (C31, C32). The data support the conclusion that Fun30-Dpb11 complex formation is essential for DSB repair and antagonizes Rad9, though the mechanism of antagonism remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7d5e0752-0c76-439c-bdd8-d5db41e12457",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fun30, Dpb11, and the 9-1-1 complex form a cell cycle-regulated ternary complex that is required for efficient Fun30 localization to DSBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C41 provide Co-IP evidence for ternary complex formation (C34, C37) that is cell cycle-dependent (C35, C38) and requires Dpb11 interaction surfaces (C36). ChIP data with ddc1-T602A and SLD3-DPB11\u0394N mutants show reduced Fun30 recruitment (C39, C40), supporting the role of 9-1-1 in targeting (C41). The convergence of biochemical and ChIP data supports the ternary complex model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A DDC1-FUN30 fusion protein bypasses the need for CDK regulation, targets Fun30 very efficiently to DSBs, and confers hyper-resistance to CPT in a catalytic activity-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 show that the DDC1-FUN30 fusion rescues fun30-SSAA CPT sensitivity in a K603R-sensitive manner (C42), targets more efficiently than FUN30-DPB11 fusion (C43), and enables survival at CPT concentrations lethal to WT cells (C44, C45). The data support the conclusion that efficient Fun30 targeting can overcome cellular resistance limits (C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "06c1c0bc-f9f4-4b03-b5f8-6e6dace40de5",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The DDC1-FUN30 fusion bypasses the cell cycle regulation of long-range resection, promoting extensive resection in G1-arrested cells that exceeds even M phase WT levels, demonstrating that Fun30 targeting is the limiting factor for G1 resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 present ChIP data showing efficient G1 recruitment of DDC1-FUN30 fusion (C47), extended resection reach up to 25 kb in G1 (C48), exceeding M phase WT levels (C49). The hyperactivation phenotype strongly supports the conclusion that Fun30 targeting is the bottleneck limiting G1 resection (C50), representing a key mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "26e49303-945f-4b43-9638-2d3cc9dfe7f9",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DDC1-FUN30 fusion does not completely bypass cell cycle regulation of resection, as RPA fold enrichment and DNA loss levels in G1 remain below M phase levels, and NHEJ is not significantly affected, suggesting additional layers of cell cycle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 note that despite extended reach, the intensity of resection (RPA enrichment, DNA loss) in G1 with DDC1-FUN30 fusion remains below M phase levels (C51), NHEJ is unaffected (C52), and cite previous work on cell cycle regulation of other resection factors (C53). The data support the conclusion of incomplete bypass, though the interpretation relies partly on cited literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "858c0fd3-95be-47fa-baee-c958323f6a3c",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The sae2-S267E phospho-mimetic mutant slightly increases RPA fold enrichment but does not extend resection reach in G1, contrasting with DDC1-FUN30 fusion effects and suggesting distinct regulation of resection initiation versus long-range resection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 compare sae2-S267E effects (slight RPA enrichment increase, no reach extension; C54, C55) with DDC1-FUN30 effects, proposing a model where sae2-S267E affects initiation while DDC1-FUN30 affects long-range resection (C56). The differential effects support the two-layer model, though the sae2-S267E data show modest effects that could benefit from additional replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "f86c15a5-4d21-4977-97b0-52933c7aef34",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Chromatin acts as a barrier to DNA end resection, and formation of the Fun30-Dpb11 complex is the limiting step that must be upregulated during recombination-permissive cell cycle phases to overcome this barrier.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 synthesize the findings to conclude that chromatin is a resection barrier and Fun30-Dpb11 complex formation is the limiting step. This conclusion is well-supported by the G1 resection bypass experiments showing that forced Fun30 targeting overcomes the G1 resection block, directly demonstrating that Fun30 recruitment is rate-limiting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "17ea50f1-1327-4a84-a990-8462a728c96f",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Human SMARCAD1 interacts with TOPBP1 in a CDK phosphorylation-dependent manner via threonine 71 of SMARCAD1 and the phospho-binding pockets of TOPBP1 BRCT1+2, and this interaction is conserved across species as SMARCAD1 can also bind yeast Dpb11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C65 demonstrate SMARCAD1-TOPBP1 interaction by two-hybrid and pulldown (C59, C60, C61), CDK-dependence (C61, C62), identification of T71 as critical site by mutagenesis (C63, C64), and cross-species interaction with yeast Dpb11 (C65). The convergence of multiple approaches supports evolutionary conservation of the interaction mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "89430995-fe40-4bcd-a170-b263a9bffa98",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A SMARCAD1-Fun30 chimera containing the TOPBP1-binding region of SMARCAD1 fused to the catalytic domain of Fun30 rescues the CPT sensitivity of fun30\u0394, demonstrating functional conservation and suggesting the TOPBP1-binding region can replace the Dpb11-binding region of Fun30.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 show that the SMARCAD1-Fun30 chimera rescues CPT sensitivity (C66), while the Fun30 catalytic domain alone does not and shows instability (C67). The functional complementation supports the conclusion of conserved interaction surfaces (C68, C69), though the interpretation is somewhat cautious ('may indicate') and the Fun30-30-C instability complicates interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Fun30/SMARCAD1 function at DSBs is cell cycle-regulated via interaction with Dpb11/TOPBP1 and 9-1-1, which is essential for resection function, and Fun30 promotes long-range resection by generating resection-permissive chromatin and antagonizing Rad9.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C74 summarize the main findings in the Discussion. These conclusions are well-supported by the data presented in earlier claims, including the cell cycle-dependent interaction (C3-C7), 9-1-1 involvement (C34-C41), essentiality for resection (C19-C23), and Rad9 antagonism (C29-C30, C74). Claim C73 about generating resection-permissive chromatin is more inferential but consistent with Fun30's known chromatin remodeling activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "56276ef3-bc56-406a-9941-35a11ab0a434",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cell cycle regulation of DNA end resection operates through at least two layers: direct regulation of nucleases and regulation of chromatin remodelers, with chromatin (specifically the Fun30 target) being the limiting factor for long-range resection in G1, and deregulation of chromatin being the most successful strategy to bypass cell cycle control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 propose a two-layer model of resection regulation and identify chromatin as the G1-limiting factor. This model is well-supported by the comparison of DDC1-FUN30 fusion effects (extensive G1 resection bypass) versus sae2-S267E effects (minimal bypass), and by the overall data showing that Fun30 targeting is rate-limiting. The conclusion synthesizes the findings effectively.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "50b343b3-7cd9-4be2-99f9-0eb08bb8bb2f",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Modification of DSB-surrounding chromatin by Fun30/SMARCAD1 should be explored as a tool to experimentally channel DSBs into the HR pathway independently of cell cycle stage, particularly in higher eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78 proposes a future application based on the findings. While the data showing G1 resection bypass with DDC1-FUN30 fusion provide proof-of-principle, this is a speculative proposal for future work rather than a demonstrated result. The feasibility in higher eukaryotes and the practical implementation remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "9a004b59-4336-43cf-804a-dfb392394c5e",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background knowledge claims about DNA end resection, its role in repair pathway choice, cell cycle regulation, chromatin barriers, and Fun30/SMARCAD1 function based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C92 present established knowledge from the literature, appropriately cited. These provide context for the current study and are supported by the cited references. These are background claims rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    },
+    {
+      "id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8",
+      "content_id": "678201db-fa3d-4291-9301-2f684214341a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Summary claims from the Abstract stating the main findings: CDK-regulated Fun30-Dpb11-9-1-1 complex formation is required for Fun30 localization and long-range resection, artificial targeting bypasses cell cycle regulation, and the mechanism is conserved to human SMARCAD1-TOPBP1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C99 summarize the main findings presented in the Abstract. These are well-supported by the detailed data in the Results section as evaluated in the previous result groups. The claims accurately reflect the key conclusions of the study, including the mechanistic findings (C93-C94), the bypass experiments (C95-C96), and evolutionary conservation (C97-C98).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:15.189494Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02bba2bb-9115-4993-a731-0cf48023b31d",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "908c75da-fd13-4b42-884b-f47d2a3702fb",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "57dfc6cf-bec0-4ee5-8f72-aa3ce82d1104",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "47ab06bb-a725-47b1-bf7b-807c3c397b8c",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "ecba8b52-0001-4a21-a257-c80bcb85f285",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "30f7a9a1-e7b4-41f5-9026-ebc886f2bff3",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "f560d102-8352-47c2-914f-9cdf8ff8399b",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "ba7e117e-3c6b-4e36-86da-09c5e04f9484",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "1cbc733b-ba00-465b-b5e2-fef3c6950a2f",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "bb8755de-4069-44cc-b185-cb28a21daf04",
+      "result_id": "bd6fd62b-9d60-479b-a86e-276c752ba84e"
+    },
+    {
+      "claim_id": "041b2358-50b8-4d40-881f-d0df3dee47cc",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "f0a33d09-74f8-4c97-8c77-1c31ba8de5c1",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "0183fc78-fd9f-4ed0-b97c-07367c14bd94",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "dcaf793b-7489-47b9-8b39-100c13f5c2a5",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "f618acf0-6e0c-4452-8472-9dab46fc144b",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "fcef1a13-826f-4604-9473-9fe126802d8b",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "6e80ba58-b056-49e7-8e15-70593d310a92",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "00cd080f-53cb-4f8e-b3f4-3b583233d4b8",
+      "result_id": "30d76ea2-1960-420a-8277-00f1a41f36f4"
+    },
+    {
+      "claim_id": "7fc7dd5b-7eec-4890-b0d0-2f0bca284609",
+      "result_id": "7c6bf4ca-2066-4db4-8767-8bb529840991"
+    },
+    {
+      "claim_id": "e2aa176e-d855-4d3b-8e9b-4e14cce6fb0d",
+      "result_id": "7c6bf4ca-2066-4db4-8767-8bb529840991"
+    },
+    {
+      "claim_id": "8c6db8b8-cf91-4b35-879e-a5aa258fd02a",
+      "result_id": "7c6bf4ca-2066-4db4-8767-8bb529840991"
+    },
+    {
+      "claim_id": "7b2660b1-f00d-4b81-8587-277c24d83563",
+      "result_id": "7c6bf4ca-2066-4db4-8767-8bb529840991"
+    },
+    {
+      "claim_id": "f65e90a6-cd84-4b24-90c2-85e0c7286539",
+      "result_id": "7c6bf4ca-2066-4db4-8767-8bb529840991"
+    },
+    {
+      "claim_id": "f5e01229-cfc5-436a-a1aa-ab0ff3a47f77",
+      "result_id": "94639810-0b10-4a4b-96b9-acb7ceac34ac"
+    },
+    {
+      "claim_id": "22b76263-801a-4710-80a5-3b197b5795e9",
+      "result_id": "94639810-0b10-4a4b-96b9-acb7ceac34ac"
+    },
+    {
+      "claim_id": "d294b563-eda6-4fd3-ad45-b40caa300d0a",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "92f412b1-fa44-498f-8400-33497fcc2e5e",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "e8ba7a6a-0c96-44a9-83d8-132693d98f15",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "f9c5a379-3c13-4757-8145-5e041aadaabc",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "d36a2ce6-9726-4b13-8d42-0f947eb0cdb4",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "6fbd9129-ecf0-4b61-ba8a-afdca01c9953",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "aa24dd35-0e46-491b-9a09-d43899aa1404",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "f81dec65-eb09-43d4-befc-3d39b2e83c87",
+      "result_id": "bdf8f444-c90a-4de2-ac47-ede5fb58d7dd"
+    },
+    {
+      "claim_id": "86c6f71f-2bb8-4f24-af07-0b46f55084be",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "acc90b86-2f33-4b20-8461-fe66b3a555d1",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "26c53cea-5373-49e1-8c9f-439d98d484c5",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "1c2457df-2f96-4572-99fa-70fb15a53651",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "6084379f-6e1f-47fa-8836-4b5e7c7b2612",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "f89dca38-6618-4a5c-926e-790afa3f2022",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "e72b0aa2-fc1a-4cd9-9c83-d736d716235d",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "f5eca37a-4463-47b0-8580-2bc962985f02",
+      "result_id": "7d5e0752-0c76-439c-bdd8-d5db41e12457"
+    },
+    {
+      "claim_id": "84647092-2088-4a54-a84a-e04314036882",
+      "result_id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a"
+    },
+    {
+      "claim_id": "72659b64-a664-49a7-9fcf-0f06da62687d",
+      "result_id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a"
+    },
+    {
+      "claim_id": "5c1487dc-5357-4289-8315-96702692c780",
+      "result_id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a"
+    },
+    {
+      "claim_id": "3e6d3c03-1dab-40b8-bd01-5b04fcc31948",
+      "result_id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a"
+    },
+    {
+      "claim_id": "45520d50-ba07-470d-ba14-6404cbb25c44",
+      "result_id": "a4c57efb-01b5-40af-b0c0-b5cc42a5c28a"
+    },
+    {
+      "claim_id": "fcae7775-d7b3-42bf-9bc7-99b221381f16",
+      "result_id": "06c1c0bc-f9f4-4b03-b5f8-6e6dace40de5"
+    },
+    {
+      "claim_id": "0f34901c-89d4-4bd9-a21a-a3956ab57886",
+      "result_id": "06c1c0bc-f9f4-4b03-b5f8-6e6dace40de5"
+    },
+    {
+      "claim_id": "e78ce2ae-60c3-4b94-8e55-a37e855c38fc",
+      "result_id": "06c1c0bc-f9f4-4b03-b5f8-6e6dace40de5"
+    },
+    {
+      "claim_id": "c37b4b81-adc6-4f8f-b96a-675c96c5b02d",
+      "result_id": "06c1c0bc-f9f4-4b03-b5f8-6e6dace40de5"
+    },
+    {
+      "claim_id": "b1d30105-826d-4a9d-80d1-fc6a6445afce",
+      "result_id": "26e49303-945f-4b43-9638-2d3cc9dfe7f9"
+    },
+    {
+      "claim_id": "abc7f15c-ed6d-419b-9437-d3ad4d39acc3",
+      "result_id": "26e49303-945f-4b43-9638-2d3cc9dfe7f9"
+    },
+    {
+      "claim_id": "9d609108-7735-4842-8892-34b79ab73e78",
+      "result_id": "26e49303-945f-4b43-9638-2d3cc9dfe7f9"
+    },
+    {
+      "claim_id": "eab20669-db24-4dba-b7b2-79f6b7be9cee",
+      "result_id": "858c0fd3-95be-47fa-baee-c958323f6a3c"
+    },
+    {
+      "claim_id": "5e861ff5-af04-4dbc-8650-b0724758bb68",
+      "result_id": "858c0fd3-95be-47fa-baee-c958323f6a3c"
+    },
+    {
+      "claim_id": "fc101420-db57-4982-a6ed-17a483c2f39c",
+      "result_id": "858c0fd3-95be-47fa-baee-c958323f6a3c"
+    },
+    {
+      "claim_id": "2102ae7f-0898-4f04-a657-917e67ad6b0b",
+      "result_id": "f86c15a5-4d21-4977-97b0-52933c7aef34"
+    },
+    {
+      "claim_id": "2f41eed2-119d-431f-a55d-964f68b00112",
+      "result_id": "f86c15a5-4d21-4977-97b0-52933c7aef34"
+    },
+    {
+      "claim_id": "26ca68fb-6a74-47c9-8bdc-31202187e2b4",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "bb681361-e911-4cd3-b22f-eb6df701a001",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "c23bf83d-2574-42f2-9301-9264da8c13e0",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "94bc3ed4-0ed5-4787-ba37-789b49d70f63",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "5a834dd8-8f32-4b95-9dee-60b54b034a5b",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "938150b3-12f3-482d-a113-9420945ff72e",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "d9997ff1-2ba9-4027-a80e-374db9922ce9",
+      "result_id": "17ea50f1-1327-4a84-a990-8462a728c96f"
+    },
+    {
+      "claim_id": "cb3732fa-c72b-4e62-baeb-1bc061726a82",
+      "result_id": "89430995-fe40-4bcd-a170-b263a9bffa98"
+    },
+    {
+      "claim_id": "648bb1c4-39fe-43f8-b026-baf22533dd6c",
+      "result_id": "89430995-fe40-4bcd-a170-b263a9bffa98"
+    },
+    {
+      "claim_id": "859bc4aa-ec26-4491-aff8-3cbc30d78dbf",
+      "result_id": "89430995-fe40-4bcd-a170-b263a9bffa98"
+    },
+    {
+      "claim_id": "3d34fbae-9180-4ed8-b710-aff52cd4900a",
+      "result_id": "89430995-fe40-4bcd-a170-b263a9bffa98"
+    },
+    {
+      "claim_id": "c61ca4ed-b68a-4ef6-9d84-deeafe3977b7",
+      "result_id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e"
+    },
+    {
+      "claim_id": "0a247170-8782-4904-90a3-bc338aa82b0f",
+      "result_id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e"
+    },
+    {
+      "claim_id": "1fd772eb-cfc7-4cd0-bebb-94e37aeeae5a",
+      "result_id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e"
+    },
+    {
+      "claim_id": "04fe80f8-b059-4cd3-8197-b63edfdc869d",
+      "result_id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e"
+    },
+    {
+      "claim_id": "f7fe2761-2304-4eda-bafb-3165bd6538d5",
+      "result_id": "7f0fec3a-370f-4d6d-8e5b-700f6e88170e"
+    },
+    {
+      "claim_id": "f20380e6-7eef-4423-9b69-655a6da486a5",
+      "result_id": "56276ef3-bc56-406a-9941-35a11ab0a434"
+    },
+    {
+      "claim_id": "06528058-fd09-42a7-a848-e45255cbc281",
+      "result_id": "56276ef3-bc56-406a-9941-35a11ab0a434"
+    },
+    {
+      "claim_id": "15c6a63d-5edc-4c17-a62c-81edac711fa9",
+      "result_id": "56276ef3-bc56-406a-9941-35a11ab0a434"
+    },
+    {
+      "claim_id": "ba68bde9-862e-4691-bc31-716bd62f6393",
+      "result_id": "50b343b3-7cd9-4be2-99f9-0eb08bb8bb2f"
+    },
+    {
+      "claim_id": "6c332d7e-e3e1-454f-9128-d943b34428ee",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "5bbd4fd2-a0a7-481b-a77b-48755043fbdf",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "8dd0e2e1-723c-43a1-abdd-54983ba38b79",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "a3df734a-be81-468f-a678-d800400a5fce",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "531ffc1e-2be3-4a50-91cc-332bb379383e",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "62a01e92-8400-4e91-bc5d-d0277a381aba",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "dc8397b4-8b62-49c2-9368-26ab68e47c41",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "e6cd93ee-0e9f-40a4-80ce-27c87a01736a",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "efaf9713-ab45-48a9-8c6d-61f63d593530",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "d2db6f4a-bc44-43cd-aa17-238db904261b",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "853bd06c-f611-460f-98ff-7dca7c69532e",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "1ce7002d-2a89-4781-acce-1c0a53ae8cb8",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "04386f53-b33a-4964-9f73-e0f24d533dd6",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "8b0c0448-abf7-49e5-9bd4-9f3650a17b71",
+      "result_id": "9a004b59-4336-43cf-804a-dfb392394c5e"
+    },
+    {
+      "claim_id": "7be749eb-7896-4cce-8d0c-f4d4f62ee1ed",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "0e3d861e-f744-4441-beff-39ea833b322a",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "c276a159-57a0-48aa-b190-1198c37cd266",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "b0d066ee-643c-492c-a5be-2eaba3e6d6e5",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "21c9f32d-6ddf-42b7-ac54-a43e2479e468",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "45842c51-e0e7-4ffd-bf4f-903ca1a0f90c",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    },
+    {
+      "claim_id": "2495d154-194a-4647-a3eb-f824518b86e6",
+      "result_id": "8e1b3b03-62ae-4850-9d4f-40c177b13ee8"
+    }
+  ],
+  "comparisons": []
+}

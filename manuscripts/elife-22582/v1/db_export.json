@@ -1,0 +1,1544 @@
+{
+  "submission": {
+    "id": "4967c017-7ae7-4363-b25c-c89a6a2442e4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:15:48.433783Z",
+    "updated_at": "2025-11-30T23:15:48.433783Z"
+  },
+  "content": [
+    {
+      "id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "submission_id": "4967c017-7ae7-4363-b25c-c89a6a2442e4",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule observation of DNA compaction by meiotic protein SYCP3\n\n## Authors\n\n- Johanna L Syrj\u00e4nen<sup>1</sup>\n- Iddo Heller<sup>2</sup>\n- Andrea Candelli<sup>2</sup>\n- Owen R Davies<sup>4</sup> ([ORCID: 0000-0002-3806-5403](https://orcid.org/0000-0002-3806-5403))\n- Erwin J G Peterman<sup>2</sup>\n- Gijs J L Wuite<sup>2</sup>\n- Luca Pellegrini<sup>1</sup> ([ORCID: 0000-0002-9300-497X](https://orcid.org/0000-0002-9300-497X)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n2. Department of Physics and Astronomy Vrije Universiteit Amsterdam Amsterdam The Netherlands\n3. LaserLaB Vrije Universiteit Amsterdam Amsterdam The Netherlands\n4. Institute for Cell and Molecular Biosciences University of Newcastle Newcastle upon Tyne United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn a previous paper (Syrj\u00e4nen et al., 2014), we reported the first structural characterisation of a synaptonemal complex (SC) protein, SYCP3, which led us to propose a model for its role in chromosome compaction during meiosis. As a component of the SC lateral element, SYCP3 has a critical role in defining the specific chromosome architecture required for correct meiotic progression. In the model, the reported compaction of chromosomal DNA caused by SYCP3 would result from its ability to bridge distant sites on a DNA molecule with the DNA-binding domains located at each end of its strut-like structure. Here, we describe a single-molecule assay based on optical tweezers, fluorescence microscopy and microfluidics that, in combination with bulk biochemical data, provides direct visual evidence for our proposed mechanism of SYCP3-mediated chromosome organisation.\n\n## Introduction\n\nThe synaptonemal complex (SC) is a dynamic proteinaceous ultra-structure that mediates the synapsis of homologous chromosomes pairs during meiotic prophase I (Cahoon and Hawley, 2016; Fraune et al., 2016; Yang and Wang, 2009; Zickler and Kleckner, 2015). Morphologically, the SC is composed of three parts: lateral elements, transverse filaments and a central element. Lateral elements are protein scaffolds that extend along the entire length of each chromosome axis. They become linked together by transverse filaments, which connect the chromosomes in a homologous pair to the midline central element, to induce chromosome synapsis (Sch\u00fccker et al., 2015). The tripartite SC ultra-structure provides an essential three-dimensional scaffold for meiotic progression and its absence or defective formation can lead to failure of meiotic progression and infertility (Bolcun-Filas et al., 2007, 2009; de Vries et al., 2005; Hamer et al., 2008; Schramm et al., 2011; Yang et al., 2006; Yuan et al., 2000).\n\nThe lateral element is the first part of the synaptonemal complex to assemble. In most organisms, its formation coincides with the controlled induction of double-strand DNA breaks and subsequent homology searches that bring homologous chromosomes into alignment (Baudat et al., 2013). It is at this step that SYCP2 and SYCP3, the major protein components of the lateral element (Lammers et al., 1994; Offenberg et al., 1998; Schalk et al., 1998), assemble on the chromosome axis, in a manner dependent on each other and on the presence of meiosis-specific cohesin (Fukuda et al., 2014; Llano et al., 2012; Pelttari et al., 2001; Winters et al., 2014; Yang et al., 2006).\n\nCorrect SYCP3 function is crucial for fertility. Male mice lacking SYCP3 are infertile as their germ cells undergo apoptosis due to failure in meiotic progression (Yuan et al., 2002). In contrast, females are sub-fertile, with increased aneuploidy leading to fetal deaths during gestation. SYCP3 is regarded as an important architectural component of the lateral element, and its disruption in mice has consequences for the morphology and structural integrity of the meiotic chromosome: in SYCP3-deficient mice, the chromosome axis is twice the length of that in wild-type mice and cohesin disassembles prematurely (Kouznetsova et al., 2005; Yuan et al., 2002).\n\nThe large-scale architecture of the meiotic chromosome consists of a regular array of DNA loops that emanate from a chromosome axis consisting of conjoined sister chromatids (Zickler and Kleckner, 1999). Sister chromatid cohesion is enforced at the loop base by meiotic ring-like cohesin complexes (Rankin, 2015). In addition to SC components, other factors such as meiotic cohesins, condensins and HORMAD proteins localise to the chromosome axis and contribute to its organization (Novak et al., 2008; Wood et al., 2010; Zickler and Kleckner, 2015). Thus, it is likely that SYCP3\u2019s role is to provide local DNA compaction to modulate the existing axis-loop structure of the meiotic chromosome, in the specific manner required for efficient recombination between homologues.\n\nCrystallographic analysis shows that SYCP3 adopts a highly elongated tetrameric assembly of antiparallel \u03b1-helices, with flexible termini protruding from the helical core. The N-terminal sequences located at each end of the SYCP3 structure bind double-stranded (ds) DNA, suggesting that SYCP3 can act as a 20 nm-long physical strut to hold distinct regions of DNA together. In addition, SYCP3 can polymerise into regular supra-structures resembling the SC lateral element (Baier et al., 2007; Syrj\u00e4nen et al., 2014), in a self-assembly reaction that requires both N- and C-terminal motifs. These findings provide the basis for a possible explanation of SYCP3\u2019s role in shaping the architecture of meiotic chromosomes, whereby concurrent DNA bridging and self-association by SYCP3 would explain the observed SYCP3-dependent DNA compaction that is required for full SC assembly and meiotic progression.\n\nTo further assess this potential mechanism of SYCP3 function, we developed a single-molecule assay based on optical tweezers and fluorescence microscopy in a microfluidics flow cell. The results of the assay, in combination with bulk biochemical data, provide direct visual evidence for our proposed model of SYCP3-mediated chromosome compaction.\n\n## Results\n\nThe crystal structure of SYCP3 showed a tetrameric assembly with N-terminal DNA-binding domains located at both ends of the central helical core (Figure 1A). To investigate whether SYCP3 is able to bind simultaneously to distinct DNA molecules as predicted by the structure, we analysed the electrophoretic mobility of SYCP3-DNA complexes using different lengths of dsDNA (Figure 1B). To study the mechanism of DNA binding separately from higher-order assembly and alleviate the limited solubility of the full-length protein, we used a version of SYCP3 missing the last six amino acids, SYCP31-230(Baier et al., 2007; Syrj\u00e4nen et al., 2014). Hereafter we will refer to this construct simply as SYCP3, unless otherwise indicated.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig1-v1.jpg)\n\n**Figure 1.:** (A) Model of DNA binding by the SYCP3 tetramer. The crystal structure for the helical core of the SYCP3 tetramer is shown in ribbon representation, with each chain rainbow-coloured from the N- (blue) to the C-terminus (red). In the model, pairs of N-terminal SYCP3 regions form two distinct DNA-binding domains at both ends of the SYCP3 strut-like structure. (B) Result of the electrophoretic mobility shift assay (EMSA) for SYCP3 bound to dsDNA molecules of different lengths. Lanes 1 and 2 show the electrophoretic migration of free dsDNA 32mer and 60mer, respectively. Lane 3 and 4 show the mobility shifts of SYCP3-bound DNA 32mer and 60mer, respectively. Lane 5 shows the mobility shift of a SYCP3-DNA complex in the presence of both DNA 32mer and 60mer species. (C) Result of the pull-down assay, demonstrating DNA bridging by SYCP3. Above each gel lane, drawings illustrate sample content for each pulldown experiment. The 5\u2019 FAM-labelled DNA bound to SYCP3 was eluted from the beads in high salt and visualised under UV light after agarose gel electrophoresis (lane 2). Lane 3 shows the background retention level of fluorescently-labelled DNA due non-specific binding of the SYCP3-DNA complex to the streptavidin beads; lane 4 shows that the N-terminal region of SYCP3, known to mediate DNA binding, is necessary for pull-down of the fluorescently-labelled DNA.\n\nReconstitution of an SYCP3 complex with a DNA sample containing equal nucleotide concentrations of dsDNA 32- and 60mer yielded a species of intermediate mobility relative to the slower SYCP3-DNA 32mer and faster SYCP3-DNA 60mer complexes, consistent with the formation of an SYCP3-DNA complex containing both lengths of dsDNA (Figure 1B). To provide further evidence of multivalent DNA binding, we showed that SYCP3 can bridge between a fluorescently-labelled dsDNA and a distinct biotin-labelled dsDNA immobilised on streptavidin-coated\u00a0beads (Figure 1C).\n\nTo gain mechanistic insight into the mode and dynamics of DNA binding by SYCP3, we took a single-molecule approach using an experimental setup that has been successfully used for the study of protein-DNA interactions (Brouwer et al., 2016; Candelli et al., 2014; Heller et al., 2014a). In this system, the biotinylated ends of a bacteriophage \u03bb DNA molecule are tethered between two streptavidin-coated polystyrene beads that are controlled by focused laser beams acting as optical tweezers. A unique advantage of the use of optical tweezers is the high degree of control over the conformation and tension of the DNA. The experiment is performed in a multi-channel laminar flow cell that allows tethering of DNA to optically-trapped beads and moving the tethered DNA to parallel laminar-flow lanes containing, for example, the fluorescently-labelled components to be analysed (Figure 2A). Beam-scanning confocal fluorescence microscopy is then used to image the labelled DNA-bound proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig2-v1.jpg)\n\n**Figure 2.:** (A) The focused trapping laser beams hold two streptavidin-coated polystyrene beads in place, while the \u03bb DNA is tethered between the beads (right). A four-channel laminar flow cell on a mobile platform was used to perform the single-molecule experiments. The streptavidin-coated polystyrene beads were trapped with the lasers in Channel 1 and biotinylated \u03bb DNA was then captured in Channel 2, by tethering its ends to two beads. The flow cell was subsequently moved to Channel 4, to allow fluorescently-labelled SYCP3 to bind \u03bb DNA and, after an incubation time of 30 s, the beads were moved into Channel 3 for visualisation and analysis of DNA binding (left). (B) Residue L138 was replaced with cysteine for Alexa555-labelling of SYCP3 via maleimide chemistry. L138 was chosen because it is exposed to solvent and distant from the DNA-binding domains in the SYCP3 structure. (C) SDS-PAGE analysis of purified L138C SYCP31-230 both before (L138C sample) and after (L138C-A555 sample) conjugation to Alexa555. The proteins in the gel were visualized in the unstained gel (left) and after staining with Coomassie blue (right). (D) Mass-spectrometry analysis shows that the majority of L138C SYCP31-230 contains one Alexa555 label.\n\nWe exploited our knowledge of the SYCP3 structure and the absence of cysteines in its sequence to replace solvent-exposed residue L138, located in the helical core and distant from the N-terminal DNA-binding regions, with cysteine (Figure 2B). The engineered cysteine was linked to the fluorescent dye Alexa555 using maleimide chemistry (Figure 2C), yielding one fluorescent label per helical chain, or four fluorophores per SYCP3 tetramer. Mass spectrometry confirmed that all SYCP3 molecules were labelled with Alexa555, and that the majority of SYCP3 molecules had one label per helical chain (Figure 2D).\n\nBinding of fluorescently-labelled SYCP3 to \u03bb DNA in the single-molecule setup was readily observed by confocal fluorescence microscopy. Kymographs, acquired from repeated confocal line-scans along the DNA, revealed binding and one-dimensional diffusive behaviour of SYCP3 on dsDNA (Figure 3A). As a control, a construct lacking the N-terminal DNA-binding domain, SYCP391-230, did not interact with \u03bb DNA. In 'DNA compaction' experiments, we used the optical tweezers to control the end-to-end distance of the DNA and test the DNA-binding and bridging behaviour of SYCP3 on stretched versus conformationally relaxed DNA. We first incubated the DNA in the protein channel for 30 s, returning subsequently the DNA into the buffer channel, to prevent binding of additional SYCP3 molecules, where it was held in an extended conformation at a force of 5 pN and an end-to-end distance near to 16 \u00b5m. Next, we relaxed the conformation of the DNA by moving the beads closer together at constant speed of 0.6 \u00b5m/s, reducing the end-to-end distance to 8 \u00b5m. The beads were held at reduced distance for a period of 5.5 s, after which the trap lasers were moved apart, extending the DNA molecule again.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig3-v1.jpg)\n\n**Figure 3.:** Two representative kymographs are shown. (A) The kymograph shows the diffusive behaviour observed when SYCP3 was bound to a \u03bb DNA molecule kept in extended conformation by the laser-trapped beads. (B) The kymograph in the bottom panel shows clustering of SYCP3 in static aggregates upon relaxation of the \u03bb DNA molecule. The smaller panel shows details of SYCP3\u2019s diffusive behavior, over a period of 17.5 s and within a DNA region of 3750 nanometers.\n\nThe single-molecule analysis highlighted a striking correlation between DNA-binding behaviour of SYCP3 and the distance between the beads tethering the \u03bb DNA (Figure 3B). In the initial phase of the compaction experiment, when \u03bb DNA is in an extended conformation, the majority of SYCP3 molecules interacted with DNA in a diffusive manner, displaying a one-dimensional sliding motion along the DNA molecule. Mean-squared displacement analysis of diffusive trajectories revealed a 1D-diffusion constant of 0.16\u00a0\u00b1\u00a00.05 \u00b5m2/s (N\u00a0=\u00a08, see Materials\u00a0and\u00a0methods section \u20181D-Diffusion coefficient analysis\u2019). Intriguingly, when the DNA was temporarily relaxed and then pulled taut again, a drastic alteration in SYCP3\u2019s binding behaviour was observed: the majority of diffusing SYCP3 molecules co-localised in clusters that remained static and stable over time.\n\nThese findings indicate that SYCP3 has two different modes of binding to DNA. We hypothesise that the diffusive binding mode reflects the interaction with the extended \u03bb DNA of a single DNA-binding domain at one end of the rigid SYCP3 strut, allowing SYCP3 to slide along the DNA molecule (first-binding mode). Upon relaxation of the DNA substrate, DNA-bound SYCP3 would engage concurrently a distinct DNA site with its other DNA-binding domain, in a bridging interaction leading to formation of a DNA loop (second binding-mode). This transient juxtaposition of distinct DNA segments would facilitate bivalent DNA interactions of neighbouring SYCP3 molecules, stabilising the DNA loop and leading to the formation of a static cluster of DNA-bound SYCP3 molecules. Consistent with the presence of SYCP3-dependent loops in the DNA that might resist extension, higher forces were required to extend \u03bb DNA after the compaction step relative to naked DNA (Figure 4A). In our experiments, SYCP3-dependent DNA bridges did not exhibit extensive and distinct bond-rupture events (Figure 4\u2014figure supplement 1), as previously observed for DNA-bridging proteins H-NS and Alba1 (Dame et al., 2006; Laurens et al., 2012). The lack of pronounced rupture events suggests a comparatively high stability of SYCP3-compacted DNA, although further quantitative analysis would require quadruple optical trapping experiments (Heller et al., 2016).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig4-v1.jpg)\n\n**Figure 4.:** (A) Force-distance curves measured for SYCP3-free \u03bb DNA (blue curve), and during re-extension of SYCP3-compacted \u03bb DNA (purple curve). (B) Bee-swarm box plot showing the estimated number of SYCP3 tetramers present in the static SYCP3 clusters that form on \u03bb DNA during the compaction assay. The position of the box highlights the interquartile (50%) range. The median, minimum and maximum values are indicated with horizontal lines (line widths are arbitrary).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Force (top panels) and distance (bottom panels) traces acquired during re-extension of SYCP3-compacted DNA. No extensive rupture events or continuous molecular rearrangements are evident when applying tension of\u00a0~30 pN (A) and\u00a0~60 pN (B), implying a comparatively high stability of SYCP3-compacted DNA.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Kymographs were acquired at three different values of the excitation laser power. The average bleaching/unbinding rate (symbols) was obtained by fitting single exponentials to decaying fluorescence signals, obtained by integrating over the entire DNA molecule (cf. inset, data based on analysis of 12 kymographs). All other data in this work has been acquired at 6.4 \u00b5W laser power. Since the bleaching/unbinding rate at 2.9 \u00b5W laser power is reduced by a factor of 10 compared to that at 6.4 \u00b5W, we conclude that at 6.4 \u00b5W the experiment is limited by photobleaching. The dashed line indicates a quadratic laser power dependence, suggesting that photo bleaching is mediated by 2-photon processes induced by the 60 ps 20 MHz pulsed excitation source.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The experimental values for the length of free and SYCP-bound DNA, number of cluster per \u03bb DNA molecule and total number of SYCP3 tetramers per \u03bb DNA molecule are reported, together with the formula used in the calculation. A persistence length of 50 nm was used to approximate the size of the DNA loop connecting regions of DNA linked by bridging SYCP3 interactions in a SYCP3 cluster. The analysis was performed for 3 DNA molecules, and yielded a footprint size value of 2.7 nm\u00a0\u00b1\u00a01.2 nm.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a\u2013f) A single \u03bb DNA molecule was tethered between two beads, then incubated in a SYCP3-containing or DNA-containing buffer while maintaining a transverse flow at 8 \u00b5m end-to-end separation. The flow drag prevents a random coil conformation of tethered DNA molecules and allows formation of large SYCP3-bridged regions between parallel flow-extended DNA molecules. Panels in the bottom row show possible interpretations for the arrangement of the DNA molecules bound by SYCP3. (a) After initial incubation, SYCP3 is observed to accumulate downstream along the DNA. No bridging is assumed to occur. (b) SYCP3 is subsequently concentrated in a bright spot, suggestive of local DNA-bridging. (c) After re-incubation in a DNA-containing buffer and subsequently in SYCP3-containing buffer, a bright spot (arrow), 8 \u00b5m downstream of the large SYCP3-DNA-cluster, indicates that SYCP3 is capable of bridging two or more separate DNA molecules. Additionally, the DNA to the left of the large SYCP3 cluster (box i) is uniformly coated with SYCP3, indicating a potentially extended bridged region between two DNA molecules. (d\u2013f) Further SYCP3 incubation zips up the downstream tethered DNA over an increasingly long distance. (g) In a different experiment, multiple DNA molecules tethered and flow-stretched from a trapped bead appear uniformly bridged over their full parallel length. We estimated the number of SYCP3 molecules in boxes i-iv by calculating NSYCP3= (Ibox-Ibg)/(4Iref), where Ibox is the total photon count per box, Ibg is the total photon count in a box of the same size adjacent to the DNA-containing box, and Iref is the total photon count for a single fluorophore in a 2D image. Iref = A 2\u03c0 (s/d)2 = 16.8, with A\u00a0=\u00a01.5 as the amplitude of a Gaussian fit for a single A555 dye (see Materials\u00a0and\u00a0methods), s\u00a0=\u00a0100 nm the average standard deviation of the Gaussian fit and d\u00a0=\u00a075 nm the pixel size. The average SYCP3 footprint per box, calculated as the ratio of the length of the box over NSYCP3, was 4.1 nm, 3.6 nm, 3.4 nm, and 3.6 nm, for boxes i-iv respectively. 13 such analyses were performed, yielding an average footprint of 3.6 nm\u00a0\u00b1\u00a00.3 nm (sd, N\u00a0=\u00a013). For comparison, in supposedly non-bridged conformations such as in panel a, we found an apparent average footprint of 9nm\u00a0\u00b13 nm (sd, N\u00a0=\u00a07).\n\nThe more intense fluorescence signal of the static SYCP3 clusters, relative to the diffuse fluorescence of the mobile SYCP3 molecules before DNA compaction, suggests that they are comprised of numerous SYCP3 tetramers. To obtain a quantitative estimate of the number of SYCP3 tetramers in a cluster, we measured the fluorescence of distinct DNA-bound SYCP3 traces after compaction, by estimating the signal of a single Alexa555 fluorophore and assuming that each SYCP3 molecule bound to DNA as a tetrameric species (see Materials\u00a0and\u00a0methods, section \u2018SYCP3 cluster-size determination\u2019). After correction for bleaching (Figure 4\u2014figure supplement 2), we determined that the SYCP3 cluster size was distributed around a mean value of 67 tetramers per cluster, with individual clusters showing a range of 20 to 160 tetramers (Figure 4B).\n\nThese figures highlight SYCP3\u2019s propensity to self-assemble in large DNA-bound aggregates. Combining the quantification of the number of SYCP3 tetramers in a cluster with a measure of the reduction in DNA length caused by SYCP3-dependent compaction yielded an estimate of 2.7 nm\u00a0\u00b1\u00a01.7 nm (N = 3)\u00a0for the DNA-binding footprint of SYCP3 (see Materials\u00a0and\u00a0methods, section \u2018SYCP3 footprint calculation\u2019) (Figure 4\u2014figure supplement 3). In a different set of experiments, where flow drag was used to establish micrometer-long sections of DNA molecules bridged by SYCP3 (Figure 4\u2014figure supplement 4), we obtained an apparent footprint value of 3.6\u00a0\u00b1\u00a00.3 nm (N\u00a0=\u00a013). This footprint value, close to the size of one helical turn of DNA, is in broad agreement with the expected size of the SYCP3-binding site.\n\n## Discussion\n\nHere we have provided direct visual evidence in support of our proposed mechanism of DNA organisation by human SYCP3 (Syrj\u00e4nen et al., 2014). We have shown biochemically that SYCP3 is a multivalent DNA-binding protein and have developed a single-molecule assay to provide experimental evidence consistent with a mechanism of DNA compaction based on non-sequence specific bridging interaction by individual SYCP3 tetramers.\n\nThe observed tendency of SYCP3 to accumulate in discrete clusters on dsDNA might form the basis of its ability to compact chromosomal DNA in meiosis. How would transient bridging events account for the formation of stable SYCP3 clusters on dsDNA? Cooperative protein-protein interactions between DNA-bound SYCP3 tetramers might play a role, even in the recombinant SYCP3 protein used for the experiment, which lacked 6 C-terminal residues that are important for self-assembly in the absence of DNA.\n\nOf note, formation of a transient DNA loop by a single bridging event would by itself facilitate further bridging interactions of neighbouring SYCP3 tetramers, even in the absence of cooperative protein-protein interactions (Figure 5). Such a mechanism of DNA compaction, driven by the reduced entropic penalty of successive DNA-bridging events, has been predicted by molecular dynamics studies (Brackley et al., 2013; Cheng et al., 2015). Apparently cooperative DNA-binding behavior of DNA-bridging proteins has been attributed to the induced proximity of distinct protein-bound DNA sites in previous studies (Dame et al., 2006). The observed footprint size of SYCP3, corresponding approximately to one helical turn of DNA, is similar to that of the DNA-bridging protein H-NS that was found to bridge two parallel DNA molecules in register with the helical repeat (Dame et al., 2006). A preferential DNA-binding orientation correlated to the DNA helix is further supported by the observed value of the 1D-diffusion constant of SYCP3, which is in good agreement with rotation-coupled 1D-sliding along the DNA helix (Blainey et al., 2009).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22582/elife-22582-fig5-v1.jpg)\n\n**Figure 5.:** According to the model, SYCP3 has a diffusive DNA-binding mode, likely mediated by DNA interaction at one end of its strut-like structure, and a DNA-bridging mode, where SYCP3 engages two distinct sites on the DNA with its two DNA-binding domains. DNA bridging by a single SYCP3 molecules can nucleate a DNA loop, which facilitates successive DNA-bridging interactions by other SYCP3 molecules, leading to formation of a stable DNA-bound SYCP3 cluster.\n\nIn cells, SYCP3-dependent compaction of the meiotic chromosome takes place in the context of chromatin and in the presence of other essential components of chromosome architecture, such as other SC proteins, meiotic condensins and cohesins, which likely concur to define the extent of SYCP3-dependent DNA compaction during meiosis. Although here we limited ourselves to the study of the binary SYCP3-DNA interaction, our single-molecule setup is well-suited for analysing systems of increasing complexity, including for instance the addition of lateral element protein SYCP2 and core histones. The recent finding that the structure of mitotic chromosomes depends only on a limited number of protein components bodes well for future in vitro investigations of meiotic chromosome architecture (Shintomi et al., 2015).\n\n## Materials\u00a0and\u00a0methods\n\n### Mutagenesis, cloning, expression and purification\n\nThe human SYCP31-230 protein was prepared as described (Syrj\u00e4nen et al., 2014). The construct SYCP391-230 was PCR amplified from the full-length SYCP3 construct (Syrj\u00e4nen et al., 2014) and cloned into the bacterial expression plasmid pHAT4 (Per\u00e4nen et al., 1996) using unique NcoI and XhoI sites, for protein expression fused to a N-terminal TEV-cleavable 6xHis-tag. The SYCP3 mutants L138C SYCP31-230 and L138C SYCP391-230 were generated using overlap extension PCR of the full-length SYCP3 construct and cloned as above. All proteins were purified using an initial Ni-NTA capture step, followed by heparin affinity and ion-exchange chromatography, as previously described (Syrj\u00e4nen et al., 2014).\n\n### Electrophoretic mobility shift assay\n\nDouble-stranded DNA substrates were generated by annealing together complementary oligonucleotides 60_for, 60_rev and 32_for, 32_rev:\n\n60_for 5\u2019-ATGGTGTGTGTAGGTTAATGTGAGGAGGAGAGGTGAAGAAGGA\n\nGGAGAGAAGAAGGAGGC-3\u2019\n\n60_rev 5\u2019-GCCTCCTTCTTCTCTCCTCCTTCTTCACCTCTCCTCCTCACAT\n\nTAACCTACACACACCAT-3\u2019\n\n32_for 5\u2019-ATGGTCTGTCTAGGTTACTGTGAGGAGGACGA-3\u2019\n\n32_rev 5\u2019-TCGTCCTCCTCACAGTAACCTAGACAGACCAT-3\u2019\n\nSYCP31-230 was added to a final concentration of 6 \u00b5M (per tetramer) to DNA binding buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl) containing 320 \u00b5M (per base pair) of linear dsDNA 32mer or 60mer, in a total volume of 10 \u00b5l. In the mixed DNA sample, 160 \u00b5M of both the 32mer and 60mer were used, so that the total DNA concentration per base pair was 320 \u00b5M. DNA samples without added protein were also analysed. 2 \u00b5l of 50% glycerol was added to the samples as a loading agent. The electrophoretic mobility of the SYCP3 - DNA complexes were analysed by gel electrophoresis on a 1% (w/v) agarose gel in 0.5xTris-Borate running buffer (Invitrogen) at 4\u00b0C at 50 V for 4.5 hr, and visualised by ethidium bromide staining.\n\n### Pull-down assay\n\nThe DNA substrates were generated by PCR amplification, to create 5\u2019-FAM 187 bp and 5\u2019-biotin 91 bp DNA molecules. The PCR products were purified using the Thermo Scientific GeneJET PCR purification kit, according to manufacturer\u2019s guidelines. 10 \u00b5l of streptavidin-linked paramagnetic beads (Dynabeads MyOne Streptavidin T1, ThermoFisher Scientific) were resuspended in 400 \u00b5l high-salt buffer (20 mM Tris-HCl pH 8.0, 2\u00a0M KCl) and washed three times. The biotin-labelled DNA was immobilised by washing the beads in 40 \u00b5l of immobilisation buffer (20 mM Tris pH 8.0, 0.6 mg/ml BSA, 1 M KCl) and adding the biotinylated DNA to a final concentration of 0.1 \u00b5M (per molecule). After 30 min incubation with mixing, the supernatant was removed and the beads were washed with 200 \u00b5l immobilisation buffer and then with 200 \u00b5l of DNA-binding buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl, 0.6 mg/ml BSA). 40 \u00b5l of the binding reaction, containing 0.1 \u00b5M FAM-labelled DNA and 0.5 \u00b5M SYCP31-230 per tetramer in DNA-binding buffer, were added to the beads and the samples incubated with mixing for 15 min, protected from light. The samples were washed twice in 40 \u00b5l of DNA binding buffer, and the FAM-labelled DNA was then eluted by adding 40 \u00b5l of high-salt buffer and incubating the samples for 30 min, with mixing and protected from light. The eluted DNA was then buffer-exchanged into 10 mM Tris-HCl pH 8.0 using the Thermo Scientific GeneJET PCR purification kit, 2 \u00b5l of 50% glycerol was added to 10 \u00b5l of sample and the samples were run on a 1% (w/v) agarose gel in 0.5xTris-Borate running buffer (Invitrogen). The result of the pull-down experiment was visualised under UV light.\n\n### Alexa555-labelling of L138C SYCP31-230 and L138C SYCP391-230\n\nThe labelling buffer (50 mM Hepes-KOH pH 7.0, 250 mM KCl, 0.5 mM EDTA) was filtered and deoxygenated by bubbling with nitrogen gas for 30 min. The L138C SYCP31-230 protein was buffer-exchanged into the deoxygenated labelling buffer using a NAP-5 column (GE Healthcare). The maleimide derivative of Alexa555 (Thermo Fisher Scientific) in anhydrous DMSO was added drop-wise at a ratio of 5:1 dye molecules to one SYCP3 protomer. The reaction was protected from light and incubated for 2 hr at 4\u00b0C with mixing. 10 mM DTT was added to stop the reaction. The labelled protein was then buffer exchanged into 20 mM Tris pH 8.0, 200 mM KCl buffer on a NAP-5 column.\n\n### Single-molecule setup and DNA-compaction assay\n\nA single molecule of linear, double-stranded \u03bb DNA that had been labelled with biotin at both ends was tethered between streptavidin-coated polystyrene beads using optical trapping in a four-channel laminar flow cell, as described previously (Heller et al., 2013). 20 mM Tris-HCl pH 8.0, 150 mM KCl was used as the buffer in the flow cell; the protein channel was supplemented with 0.001 mg/ml BSA. Alexa555 L138C SYCP31-230 was used at a concentration of 14.2 nM and Alexa555 L138C SYCP391-230 was used at concentrations of 14.2 nM and 142 nM. Confocal fluorescence microscopy and kymograph recording were performed as previously described (Heller et al., 2013) (Candelli et al., 2014). Force-distance data were recorded using custom software written in LabView (National Instruments).\n\nAfter capture of a single molecule of \u03bb DNA between the optically trapped beads, the flow-cell stage was moved so that the beads were in the waypoint between the buffer and protein channels. The protein channel was opened for 30 s to allow binding of SYCP3 molecules to the DNA, and the flow cell was returned to the buffer channel for visualisation of DNA-bound SYCP3 molecules. Once in the buffer channel, the DNA molecule was held in extended conformation at a force of 5 pN, corresponding to an end-to-end separation near to 16 \u00b5m. One of the lasers was then steered towards its neighbour at a speed of 0.6 \u00b5m/s so that the beads moved closer to a distance of 8 \u00b5m, causing conformational relaxation in the \u03bb DNA. The beads were kept at this separation for approximately 5.5 s and were then moved apart again at 0.6 \u00b5m/s to a separation of 16 \u00b5m. No flow was applied during force-distance and fluorescence analysis.\n\n### SYCP3 cluster-size determination\n\nCustom software written in MATLAB (MathWorks) was used to analyse the recorded kymographs (available at http://www.nat.vu.nl/~iheller/download.html). The number of photons emitted per Alexa555 fluorophore was determined by fitting a Gaussian distribution to the summed rows of intensities in the bleaching step of a stable SYCP3 cluster. 34 bleaching steps in 10 DNA molecules were analysed in total. The average decrease in amplitude of the Gaussian fit associated with bleaching of a single Alexa555 was 1.5 photons (per confocal scan-line). This implies that the average amplitude of a Gaussian fit for a SYCP3 tetramer is 6.0 photons.\n\nTo quantify the number of fluorescent SYCP3 molecules present as stable clusters after DNA compaction, it was necessary to account for bleaching of the fluorophores. The total intensity in photons per pixel over the length of \u03bb DNA (Itotal) was measured at the start of the kymograph (time t\u00a0=\u00a00) and at a time point when stable clusters had formed (time t), and the ratio Itotal,t=0/Itotal,t was used as the bleaching correction factor. The correction makes the assumption that the observed reduction in fluorescence was caused by bleaching, with no dissociation of SYCP3 from the DNA in the experiment. Indeed, under experimental conditions of 6.4 \u00b5W excitation intensity, the experiment is dominated by bleaching, with a typical rate of 5\u00b710\u22125s\u22121\u00a0\u00b1\u00a01\u00b710\u22125 s\u22121 (sd) (Figure 4\u2014figure supplement 2). The number of SYCP3 tetramers in a stable cluster was determined by fitting a Gaussian distribution to measure its fluorescence intensity, dividing the amplitude of the Gaussian fit by 6.0 to account for the presence of 4 Alexa555 fluorophores in a tetramer and multiplying by the bleaching correction factor. 15 clusters belonging to four different DNA molecules were analysed in total.\n\n### SYCP3 footprint calculation\n\nTo estimate the SYCP3 footprint on DNA, several force-distance curves such as the one shown in Figure 4A were analysed. For each DNA molecule, the distance between the beads in the presence or absence of SYCP3 was measured at a force of 25 pN, which is sufficiently high to remove weaker, non-specific interactions of SYCP3 with the DNA and the beads. Thus, the difference in distance values was assumed to be caused solely by the compaction in the DNA resulting from SYCP3\u2019s DNA-bridging interactions.\n\nThe DNA footprint of each SYCP3 DNA-binding domain was calculated by subtracting from the length difference between free and SYCP3-bound DNA the DNA persistence length (50 nm) multiplied by the number of clusters present in the DNA (to account for the length of DNA at the end of each SYCP3-dependent DNA loop), and dividing the result by the total number of tetramers on the DNA molecule and by 2 (to account for two DNA-binding ends in each SYCP3 tetramer). The calculation was performed on 3 DNA molecules, and gave an average footprint length of 2.7\u00a0\u00b1\u00a01.7 nm (sd), corresponding approximately to one turn of B-form dsDNA. The experimental values for DNA length change, number of SYCP3 clusters per \u03bb DNA molecule and total number of SYCP3 tetramers per \u03bb DNA molecule are reported in Figure 4\u2014figure supplement 3.\n\n### 1D-Diffusion coefficient analysis\n\nTo extract the 1D-diffusion coefficient from our kymograph data, we tracked the diffusive trajectories using tracking software custom-written in Matlab (Mathworks) (available at http://www.nature.com/nmeth/journal/v5/n8/extref/nmeth.1237-S5.zip). We performed a mean-squared displacement analysis as described in Heller et al. (2014b) to obtain the 1D-diffusion constant D for each tracked trajectory. We tracked eight trajectories to find a mean D of 0.16\u00a0\u00b1\u00a00.05 \u00b5m2/s (sd). The average amplitude of a Gaussian fit to each scan line of the trajectories was 5\u00a0\u00b1\u00a02 photons (sd, N\u00a0=\u00a08). Using the calibrated intensity of 1.5 photons for a single dye (see Materials and methods section \u2018SYCP3 cluster-size determination\u2019), this corresponds to 3.3\u00a0\u00b1\u00a01.6 dyes per diffusing trajectory (sd, N\u00a0=\u00a08), consistent with the stoichiometry of a single tetramer, with a potential slight underestimation related to photobleaching.\n\n### Rotation-coupled diffusion calculation\n\nWe used equation (1) from Blainey et al. (2009) to estimate the 1D-diffusion coefficient D assuming rotation-coupled sliding along the DNA helix. A value of D\u00a0=\u00a00.16 \u00b5m2/s can be calculated using, for example, a displacement per helical turn b\u00a0=\u00a03.4 nm, an average free energy barrier for sliding of \u03b5\u00a0=\u00a01.33 kBT, and a protein radius of R\u00a0=\u00a010 nm, which results in a helical path with radius ROC= R + RDNA\u00a0=\u00a011 nm. Even though this highly simplified model is based on a spherical protein, unlike the elongated shape of SYCP3, the 1D-diffusion coefficient for pure translational motion along the DNA is\u00a0~20 fold larger than that for rotation-coupled sliding.\n",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "e5ae88b7-a420-4bac-956b-d63914976e1d",
+      "submission_id": "4967c017-7ae7-4363-b25c-c89a6a2442e4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Wollongong , Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22582.012](https://doi.org/10.7554/eLife.22582.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Single-molecule observation of DNA compaction by meiotic protein SYCP3\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Mark Williams and Micah McCauley (together contributed a single review report).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nSummary:\n\nThis manuscript builds upon a previous eLife paper from the same group that provided a structural description of the synaptonemal complex protein SYCP3. In the current manuscript, the authors combine single-molecule optical tweezers, fluorescence spectroscopy and microfluidics to study DNA binding by SYCP3. The ends of this tetrameric protein are shown to bind to and diffuse along DNA. This manuscript shows that multimers of this protein stabilize DNA loops, and suggests that this is done by bridging the sides of DNA loops and stabilizing them. The key quantitative findings of this paper reveal that the binding site size of a single tetramer is 3 nm, and that between 20 and 90 tetramers are found to stabilize each loop.\n\nEssential revisions:\n\nThis work is certainly of general interest, both the controls and experiments are well done, and the paper is clearly written. It should be noted that one reviewer raised serious concerns about the physiological relevance of the observations. However, we feel that the demonstration of DNA looping that was hypothesized in the 2014 paper is a sufficient novel advance to be considered for publication as a Research Advance. Before a decision can be made, a number of key shortcomings should be addressed in a revised manuscript (listed below), however. In particular, it will be necessary to provide additional experimental evidence that verifies the loop formation and growth model presented in the manuscript.\n\nAs noted by the authors, previous work (Yuan et al. 2002) showed that SYCP3-/- mice have chromosome axes that are roughly 2-fold longer than normal. This is inconsistent with the idea that SYCP3 is a major loop-forming protein \u2013 if it were, there would be essentially no axis-loop structure in a SYCP3 mutant, and the chromosomes would be much, much longer. Additionally, a large and growing body of data from cytological, biochemical, and chromosome conformation capture approaches indicates that cohesins bind the base of loops in interphase, mitotic, and meiotic chromosomes. Emerging models also suggest that cohesins actively form the loops, perhaps through an ATP-dependent extrusion activity. SYCP3 is not an ATPase, and simple multivalent DNA binding activity is not sufficient to explain the linear, regular array of loops observed in meiotic chromosomes. In some metazoans, it seems likely that SYCP3 interacts with cohesin-bound DNAs to create regular spacing between the bases of adjacent loops. Alternatively, SYCP3 may impact axis assembly by modulating interactions between cohesins and DNA. The authors should provide more discussion to argue that the evidence in this work implicates SYCP3 as the critical loop-forming protein of the axis, or indeed as a loop-forming protein. The same evidence (that SYCP3 has the ability to simultaneously bind 2 DNA molecules) could be used to argue that the protein mediates synapsis between homologous chromosomes, but it clearly is not in the right place to do this.\n\nThis optical trap approach offers great potential to reveal novel and quantitative insights into the organization/condensation of meiotic chromosomes. Optical tweezers might allow the authors to measure relevant biophysical parameters of DNA compaction by SYCP3 such as binding dynamics, typical cluster size or the critical force, as demonstrated by numerous previous studies (e.g. RT Dame, MC Noom, GJL Wuite. Nature, 2006 and many other studies cited in Heller et al. 2014). However, the authors fail to take advantage of their experimental design. In particular, Figure 4 shows one (!) force-extension curve for free and SYCP3-bound DNA, with a comment in the text that \"several\" such measurements were made. It is not clear from the manuscript how these (this?) force extension curves were acquired. If SYCP3 behaves as suggested by the authors, it should be possible to show stepwise extension of SYCP3-bound DNA using a constant-force regime in the optical trap. The authors should show such stepwise extension data or explain why their experiments did not visualize such behavior.\n\nOther important points to address:\n\nThe Methods section refers to Heller et al. 2014, which is a review article that does not include experimental details. Important parameters that should be described in detail include:\n\n1) What is the extension rate in their experiments (this is important, since different extension rates will result in different rupture forces)?\n\n2) How are DNA molecules attached to the beads?\n\n3) Do extension curves in Figure 4A show the same DNA molecule? Since they seem to be relying on absolute lengths for their analysis, are lengths of different DNA molecules identical?\n\nBased on the claim that most SYCP3 molecules are conjugated to a single dye molecule, it should be possible to demonstrate the number of molecules in each \"monovalent\" binding complex by photobleaching (the fluorescence should bleach in 4 equal, discrete steps). The authors should explain whether the fluorescence data can be used to arrive at conclusions related to stoichiometry.\n\nThe footprint calculation and comparison to theory should be more transparent since this was only done for three DNA molecules. What was the length change for each molecule and how many loops did each have? What was the error in the tetramers/cluster of Figure 4? The uncertainty shown is written as \"sdom\", which we assume means standard deviation of the mean. This is easily confused with standard deviation, so it is preferable to use \"sem\" for standard error of the mean. If this is what was used, was N taken to be the number of DNA molecules used or the number of clusters?\n\nThe authors should better justify their statement that, \"SYCP3 is regarded as the main architectural component of the lateral element?\" I think many investigators would dispute this idea, and would argue instead that cohesins are the most broadly conserved and thus most essential components.\n\nThe authors' model posits that multiple protein complexes merge to form a cluster instead of forming their own mini-bridges. For merging to occur, multiple protein complexes must diffuse to merge. The kymograph in Figure 3 during force reduction suggests that indeed diffusion and merging is happening but no quantification is given.\n\nThe beads were held at a short (loop forming) extension of 8 micrometers for 5.5 seconds. If this time were varied, the authors could conclusively determine whether SYCP3 traps a DNA loop of fixed size, which then does not change in time, or if the loop grows continuously with further protein migration along the DNA (as Figure 5 would seem to indicate).\n\nNo dissociation of SYCP3 is assumed during the cluster-size determination with photobleaching correction, though this dissociation rate is unknown. Was any effort made to justify this assumption, and to be certain that bleaching was the only reason for the decrease in intensity? One way to resolve this would be to turn the excitation laser off for the duration of an experiment after compaction, and then turn it on again.\n\nIn their previous paper, the authors showed that the protein aggregates into large assemblies in the absence of DNA. It is not clear to me how they use the observation of clusters on DNA and interpret these as associated with looping. How do they exclude cluster formation on DNA that is independent on looping? And if aggregation in the absence of DNA occurs, why do they not observe it in the experiment shown in the top panel of Figure 3?\n\nFigure 4 does not seem to support the conclusion in that it does not compare the DNA/protein state before and after a low-tension incubation.\n",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3715a3a7-9de5-4a3e-88c5-d572b46f69cf",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C1",
+      "claim": "SYCP3 is a component of the synaptonemal complex lateral element.",
+      "claim_type": "EXPLICIT",
+      "source": "As a component of the SC lateral element, SYCP3 has a critical role in defining the specific chromosome architecture required for correct meiotic progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by the broader context of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "3b862115-454c-4bf7-b5be-40cbb3a8f68e",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C2",
+      "claim": "SYCP3 has a critical role in defining the specific chromosome architecture required for correct meiotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "As a component of the SC lateral element, SYCP3 has a critical role in defining the specific chromosome architecture required for correct meiotic progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract supported by the experimental work described.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "988f22cf-ae95-443e-873b-2f81ea7136af",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C3",
+      "claim": "SYCP3 causes compaction of chromosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, the reported compaction of chromosomal DNA caused by SYCP3 would result from its ability to bridge distant sites on a DNA molecule with the DNA-binding domains located at each end of its strut-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data presented in the manuscript and references to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "db510001-3ece-49ab-9272-69c866a1ec83",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C4",
+      "claim": "SYCP3 bridges distant sites on a DNA molecule with DNA-binding domains located at each end of its strut-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, the reported compaction of chromosomal DNA caused by SYCP3 would result from its ability to bridge distant sites on a DNA molecule with the DNA-binding domains located at each end of its strut-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data and the single-molecule experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "ebd0f39d-b750-44cb-af59-a2419f2b0c5b",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C5",
+      "claim": "The synaptonemal complex mediates the synapsis of homologous chromosomes pairs during meiotic prophase I.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptonemal complex (SC) is a dynamic proteinaceous ultra-structure that mediates the synapsis of homologous chromosomes pairs during meiotic prophase I (Cahoon and Hawley, 2016; Fraune et al., 2016; Yang and Wang, 2009; Zickler and Kleckner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "cc3cc2d5-d6ce-4e76-b0e4-316f7004c9e2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C6",
+      "claim": "The SC is composed of three parts: lateral elements, transverse filaments and a central element.",
+      "claim_type": "EXPLICIT",
+      "source": "Morphologically, the SC is composed of three parts: lateral elements, transverse filaments and a central element.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established structural description of the SC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "dcef49df-cb7a-49ea-9f1b-1390687a1ceb",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C7",
+      "claim": "Lateral elements are protein scaffolds that extend along the entire length of each chromosome axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral elements are protein scaffolds that extend along the entire length of each chromosome axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "5886d68d-ea64-4a8e-ab8d-81afee131edb",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C8",
+      "claim": "Transverse filaments connect the chromosomes in a homologous pair to the midline central element.",
+      "claim_type": "EXPLICIT",
+      "source": "They become linked together by transverse filaments, which connect the chromosomes in a homologous pair to the midline central element, to induce chromosome synapsis (Sch\u00fccker et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "f8d6901b-b64c-4661-b8ae-4dde2c2f6276",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C9",
+      "claim": "The tripartite SC ultra-structure provides an essential three-dimensional scaffold for meiotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The tripartite SC ultra-structure provides an essential three-dimensional scaffold for meiotic progression and its absence or defective formation can lead to failure of meiotic progression and infertility (Bolcun-Filas et al., 2007, 2009; de Vries et al., 2005; Hamer et al., 2008; Schramm et al., 2011; Yang et al., 2006; Yuan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies showing the consequences of SC defects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "ae136662-0151-4561-9bee-abe0de2f4ec9",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C10",
+      "claim": "Absence or defective formation of the SC can lead to failure of meiotic progression and infertility.",
+      "claim_type": "EXPLICIT",
+      "source": "The tripartite SC ultra-structure provides an essential three-dimensional scaffold for meiotic progression and its absence or defective formation can lead to failure of meiotic progression and infertility (Bolcun-Filas et al., 2007, 2009; de Vries et al., 2005; Hamer et al., 2008; Schramm et al., 2011; Yang et al., 2006; Yuan et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "b63b42d6-ffa6-4b61-96ac-0db396573dd0",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C11",
+      "claim": "The lateral element is the first part of the synaptonemal complex to assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "The lateral element is the first part of the synaptonemal complex to assemble.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the temporal order of SC assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "9ce84034-6019-4979-a3e6-acb413895895",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C12",
+      "claim": "Lateral element formation coincides with the controlled induction of double-strand DNA breaks and subsequent homology searches.",
+      "claim_type": "EXPLICIT",
+      "source": "In most organisms, its formation coincides with the controlled induction of double-strand DNA breaks and subsequent homology searches that bring homologous chromosomes into alignment (Baudat et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "ba5e026d-0016-4940-81b1-7600d581d050",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C13",
+      "claim": "SYCP2 and SYCP3 are the major protein components of the lateral element.",
+      "claim_type": "EXPLICIT",
+      "source": "It is at this step that SYCP2 and SYCP3, the major protein components of the lateral element (Lammers et al., 1994; Offenberg et al., 1998; Schalk et al., 1998), assemble on the chromosome axis, in a manner dependent on each other and on the presence of meiosis-specific cohesin (Fukuda et al., 2014; Llano et al., 2012; Pelttari et al., 2001; Winters et al., 2014; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "7d36e4ec-627e-4b9d-8b6d-1a490fd60fc0",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C14",
+      "claim": "SYCP2 and SYCP3 assemble on the chromosome axis in a manner dependent on each other and on the presence of meiosis-specific cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "It is at this step that SYCP2 and SYCP3, the major protein components of the lateral element (Lammers et al., 1994; Offenberg et al., 1998; Schalk et al., 1998), assemble on the chromosome axis, in a manner dependent on each other and on the presence of meiosis-specific cohesin (Fukuda et al., 2014; Llano et al., 2012; Pelttari et al., 2001; Winters et al., 2014; Yang et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "54ef0374-b357-41d5-bf70-7d19b62aef49",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C15",
+      "claim": "Male mice lacking SYCP3 are infertile as their germ cells undergo apoptosis due to failure in meiotic progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice lacking SYCP3 are infertile as their germ cells undergo apoptosis due to failure in meiotic progression (Yuan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "a19bc79b-592b-4471-83cd-78904850c1b8",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C16",
+      "claim": "Female mice lacking SYCP3 are sub-fertile, with increased aneuploidy leading to fetal deaths during gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, females are sub-fertile, with increased aneuploidy leading to fetal deaths during gestation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the context of SYCP3 knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "8cc7bb6a-f2bb-4a88-acb3-f0ad677fa746",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C17",
+      "claim": "In SYCP3-deficient mice, the chromosome axis is twice the length of that in wild-type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "in SYCP3-deficient mice, the chromosome axis is twice the length of that in wild-type mice and cohesin disassembles prematurely (Kouznetsova et al., 2005; Yuan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "7913c7cc-0495-44c4-8a6a-cc9d7a38cdb2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C18",
+      "claim": "In SYCP3-deficient mice, cohesin disassembles prematurely.",
+      "claim_type": "EXPLICIT",
+      "source": "in SYCP3-deficient mice, the chromosome axis is twice the length of that in wild-type mice and cohesin disassembles prematurely (Kouznetsova et al., 2005; Yuan et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "660d9bd9-174f-457d-9d28-ae516834faa1",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C19",
+      "claim": "The large-scale architecture of the meiotic chromosome consists of a regular array of DNA loops that emanate from a chromosome axis consisting of conjoined sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "The large-scale architecture of the meiotic chromosome consists of a regular array of DNA loops that emanate from a chromosome axis consisting of conjoined sister chromatids (Zickler and Kleckner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d44811e7-1e4e-4840-badf-c1deaf043a59",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C20",
+      "claim": "Sister chromatid cohesion is enforced at the loop base by meiotic ring-like cohesin complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Sister chromatid cohesion is enforced at the loop base by meiotic ring-like cohesin complexes (Rankin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d828e304-9eb3-4371-a619-6acfbc2070f2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C21",
+      "claim": "SYCP3's role is to provide local DNA compaction to modulate the existing axis-loop structure of the meiotic chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is likely that SYCP3's role is to provide local DNA compaction to modulate the existing axis-loop structure of the meiotic chromosome, in the specific manner required for efficient recombination between homologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and functional data presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "12e4277d-9974-4b95-98df-9334d54a6001",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C22",
+      "claim": "SYCP3 adopts a highly elongated tetrameric assembly of antiparallel \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic analysis shows that SYCP3 adopts a highly elongated tetrameric assembly of antiparallel \u03b1-helices, with flexible termini protruding from the helical core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystallographic data from previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "7934def2-eb87-49d7-8943-963c0cd01f19",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C23",
+      "claim": "SYCP3 has flexible termini protruding from the helical core.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallographic analysis shows that SYCP3 adopts a highly elongated tetrameric assembly of antiparallel \u03b1-helices, with flexible termini protruding from the helical core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crystallographic data from previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "40225b03-eabf-4c9a-9a08-aabbe53e4692",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C24",
+      "claim": "The N-terminal sequences located at each end of the SYCP3 structure bind double-stranded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal sequences located at each end of the SYCP3 structure bind double-stranded (ds) DNA, suggesting that SYCP3 can act as a 20 nm-long physical strut to hold distinct regions of DNA together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "481b217a-627a-4cc8-b4ed-1acda6955015",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C25",
+      "claim": "SYCP3 can act as a 20 nm-long physical strut to hold distinct regions of DNA together.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal sequences located at each end of the SYCP3 structure bind double-stranded (ds) DNA, suggesting that SYCP3 can act as a 20 nm-long physical strut to hold distinct regions of DNA together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data showing DNA-binding domains at both ends.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "e19d272f-38c9-4ec1-a4ea-ca32f9a361e0",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C26",
+      "claim": "SYCP3 can polymerise into regular supra-structures resembling the SC lateral element.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SYCP3 can polymerise into regular supra-structures resembling the SC lateral element (Baier et al., 2007; Syrj\u00e4nen et al., 2014), in a self-assembly reaction that requires both N- and C-terminal motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "36a948dc-e547-43ac-9eaa-b8c90a1dbfb4",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C27",
+      "claim": "SYCP3 self-assembly requires both N- and C-terminal motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, SYCP3 can polymerise into regular supra-structures resembling the SC lateral element (Baier et al., 2007; Syrj\u00e4nen et al., 2014), in a self-assembly reaction that requires both N- and C-terminal motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "357fa6c8-4135-4a7d-b88f-1eb87e019aef",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C28",
+      "claim": "The crystal structure of SYCP3 shows a tetrameric assembly with N-terminal DNA-binding domains located at both ends of the central helical core.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of SYCP3 showed a tetrameric assembly with N-terminal DNA-binding domains located at both ends of the central helical core (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crystallographic data and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "8ae406ca-71a5-461e-9405-d2d0b19de659",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C29",
+      "claim": "SYCP31-230 is a version of SYCP3 missing the last six amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the mechanism of DNA binding separately from higher-order assembly and alleviate the limited solubility of the full-length protein, we used a version of SYCP3 missing the last six amino acids, SYCP31-230(Baier et al., 2007; Syrj\u00e4nen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the construct used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "df3725c5-251e-4e6b-a419-683d7dfe8c13",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C30",
+      "claim": "SYCP31-230 was used to study the mechanism of DNA binding separately from higher-order assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "To study the mechanism of DNA binding separately from higher-order assembly and alleviate the limited solubility of the full-length protein, we used a version of SYCP3 missing the last six amino acids, SYCP31-230(Baier et al., 2007; Syrj\u00e4nen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for using the truncated construct.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "129d58c3-6a72-48bd-bb16-046aa85f2214",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C31",
+      "claim": "Reconstitution of an SYCP3 complex with a DNA sample containing equal nucleotide concentrations of dsDNA 32- and 60mer yielded a species of intermediate mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution of an SYCP3 complex with a DNA sample containing equal nucleotide concentrations of dsDNA 32- and 60mer yielded a species of intermediate mobility relative to the slower SYCP3-DNA 32mer and faster SYCP3-DNA 60mer complexes, consistent with the formation of an SYCP3-DNA complex containing both lengths of dsDNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the electrophoretic mobility shift assay shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "778557d8-5db9-46fb-9bf8-51e0463a4dfb",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C32",
+      "claim": "The intermediate mobility species is consistent with the formation of an SYCP3-DNA complex containing both lengths of dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconstitution of an SYCP3 complex with a DNA sample containing equal nucleotide concentrations of dsDNA 32- and 60mer yielded a species of intermediate mobility relative to the slower SYCP3-DNA 32mer and faster SYCP3-DNA 60mer complexes, consistent with the formation of an SYCP3-DNA complex containing both lengths of dsDNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the EMSA data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "760b8bb2-a33d-4630-bec5-69fb6356385a",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C33",
+      "claim": "SYCP3 can bridge between a fluorescently-labelled dsDNA and a distinct biotin-labelled dsDNA immobilised on streptavidin-coated beads.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide further evidence of multivalent DNA binding, we showed that SYCP3 can bridge between a fluorescently-labelled dsDNA and a distinct biotin-labelled dsDNA immobilised on streptavidin-coated beads (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the pull-down assay shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "2d184dc6-97ae-4682-acb1-a8e8bbaee231",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C34",
+      "claim": "Binding of fluorescently-labelled SYCP3 to \u03bb DNA in the single-molecule setup was readily observed by confocal fluorescence microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of fluorescently-labelled SYCP3 to \u03bb DNA in the single-molecule setup was readily observed by confocal fluorescence microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d719b08d-20b3-4832-a3d3-02a807a49d7c",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C35",
+      "claim": "Kymographs revealed binding and one-dimensional diffusive behaviour of SYCP3 on dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Kymographs, acquired from repeated confocal line-scans along the DNA, revealed binding and one-dimensional diffusive behaviour of SYCP3 on dsDNA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the kymograph data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "6f15085f-f650-4b44-8229-e702248cab66",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C36",
+      "claim": "A construct lacking the N-terminal DNA-binding domain, SYCP391-230, did not interact with \u03bb DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control, a construct lacking the N-terminal DNA-binding domain, SYCP391-230, did not interact with \u03bb DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a control experiment demonstrating the importance of the N-terminal domain for DNA binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d255a49e-e729-4452-b068-14f5c5da0c22",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C37",
+      "claim": "When \u03bb DNA is in an extended conformation, the majority of SYCP3 molecules interacted with DNA in a diffusive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial phase of the compaction experiment, when \u03bb DNA is in an extended conformation, the majority of SYCP3 molecules interacted with DNA in a diffusive manner, displaying a one-dimensional sliding motion along the DNA molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the single-molecule observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "9cd5f9f3-ecb6-4382-95df-088521f71ab2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C38",
+      "claim": "SYCP3 displays a one-dimensional sliding motion along the DNA molecule when DNA is extended.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial phase of the compaction experiment, when \u03bb DNA is in an extended conformation, the majority of SYCP3 molecules interacted with DNA in a diffusive manner, displaying a one-dimensional sliding motion along the DNA molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the single-molecule observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "3d6ed87f-be33-4aab-b652-083ebaa744e2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C39",
+      "claim": "The 1D-diffusion constant of SYCP3 is 0.16 \u00b1 0.05 \u00b5m2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean-squared displacement analysis of diffusive trajectories revealed a 1D-diffusion constant of 0.16 \u00b1 0.05 \u00b5m2/s (N = 8, see Materials and methods section '1D-Diffusion coefficient analysis').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of the diffusive trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "96c13fad-f797-48ed-9e0c-59a50ca0fc22",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C40",
+      "claim": "When the DNA was temporarily relaxed and then pulled taut again, the majority of diffusing SYCP3 molecules co-localised in clusters that remained static and stable over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when the DNA was temporarily relaxed and then pulled taut again, a drastic alteration in SYCP3's binding behaviour was observed: the majority of diffusing SYCP3 molecules co-localised in clusters that remained static and stable over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key observation from the single-molecule experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "4868cbb1-7c43-45f8-887a-32074902d531",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C41",
+      "claim": "SYCP3 has two different modes of binding to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that SYCP3 has two different modes of binding to DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "01b4aeb0-b91a-4c33-b6d9-443128e82bed",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C42",
+      "claim": "The diffusive binding mode reflects the interaction with the extended \u03bb DNA of a single DNA-binding domain at one end of the rigid SYCP3 strut.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesise that the diffusive binding mode reflects the interaction with the extended \u03bb DNA of a single DNA-binding domain at one end of the rigid SYCP3 strut, allowing SYCP3 to slide along the DNA molecule (first-binding mode).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "77f45175-a97b-451d-be04-d45a9f0aae98",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C43",
+      "claim": "Upon relaxation of the DNA substrate, DNA-bound SYCP3 would engage concurrently a distinct DNA site with its other DNA-binding domain, in a bridging interaction leading to formation of a DNA loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon relaxation of the DNA substrate, DNA-bound SYCP3 would engage concurrently a distinct DNA site with its other DNA-binding domain, in a bridging interaction leading to formation of a DNA loop (second binding-mode).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "010df231-2cfd-426e-994d-b796e968a8db",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C44",
+      "claim": "Higher forces were required to extend \u03bb DNA after the compaction step relative to naked DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the presence of SYCP3-dependent loops in the DNA that might resist extension, higher forces were required to extend \u03bb DNA after the compaction step relative to naked DNA (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on force-distance measurements shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "a1b84138-e384-49dd-90c4-1aea6c97f4b4",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C45",
+      "claim": "SYCP3-dependent DNA bridges did not exhibit extensive and distinct bond-rupture events.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, SYCP3-dependent DNA bridges did not exhibit extensive and distinct bond-rupture events (Figure 4\u2014figure supplement 1), as previously observed for DNA-bridging proteins H-NS and Alba1 (Dame et al., 2006; Laurens et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the force-distance data and comparison to other DNA-bridging proteins.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "f5ffbb14-9dd3-40c0-9cc7-21fb4a357c04",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C46",
+      "claim": "The lack of pronounced rupture events suggests a comparatively high stability of SYCP3-compacted DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of pronounced rupture events suggests a comparatively high stability of SYCP3-compacted DNA, although further quantitative analysis would require quadruple optical trapping experiments (Heller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "52d2e0cf-17f4-44da-aa79-f0eb82e7fa67",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C47",
+      "claim": "The SYCP3 cluster size was distributed around a mean value of 67 tetramers per cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "After correction for bleaching (Figure 4\u2014figure supplement 2), we determined that the SYCP3 cluster size was distributed around a mean value of 67 tetramers per cluster, with individual clusters showing a range of 20 to 160 tetramers (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of the fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "4973a3e7-ab95-4088-85b9-f6ca53e82294",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C48",
+      "claim": "Individual SYCP3 clusters show a range of 20 to 160 tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "After correction for bleaching (Figure 4\u2014figure supplement 2), we determined that the SYCP3 cluster size was distributed around a mean value of 67 tetramers per cluster, with individual clusters showing a range of 20 to 160 tetramers (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis of the fluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "63c5a6c0-80cf-4c88-9146-6f8bd9b8947b",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C49",
+      "claim": "The DNA-binding footprint of SYCP3 is 2.7 nm \u00b1 1.7 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the quantification of the number of SYCP3 tetramers in a cluster with a measure of the reduction in DNA length caused by SYCP3-dependent compaction yielded an estimate of 2.7 nm \u00b1 1.7 nm (N = 3) for the DNA-binding footprint of SYCP3 (see Materials and methods, section 'SYCP3 footprint calculation') (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis combining cluster size and DNA compaction measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "20e3095b-662d-4db5-bcc6-ed9be05d54fb",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C50",
+      "claim": "In experiments where flow drag was used to establish micrometer-long sections of DNA molecules bridged by SYCP3, an apparent footprint value of 3.6 \u00b1 0.3 nm was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "In a different set of experiments, where flow drag was used to establish micrometer-long sections of DNA molecules bridged by SYCP3 (Figure 4\u2014figure supplement 4), we obtained an apparent footprint value of 3.6 \u00b1 0.3 nm (N = 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on a different experimental approach shown in Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "f5f8805e-93c7-4791-a342-1425e1f06d02",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C51",
+      "claim": "The footprint value of SYCP3 is close to the size of one helical turn of DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This footprint value, close to the size of one helical turn of DNA, is in broad agreement with the expected size of the SYCP3-binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the footprint measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "523d9dbf-f123-47e2-85da-b4837f28dd3c",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C52",
+      "claim": "Transient bridging events might form the basis of SYCP3's ability to compact chromosomal DNA in meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed tendency of SYCP3 to accumulate in discrete clusters on dsDNA might form the basis of its ability to compact chromosomal DNA in meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the in vitro observations to the in vivo function.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "53da56dd-d585-48a5-b745-9e2c38d4b8ee",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C53",
+      "claim": "Formation of a transient DNA loop by a single bridging event would facilitate further bridging interactions of neighbouring SYCP3 tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, formation of a transient DNA loop by a single bridging event would by itself facilitate further bridging interactions of neighbouring SYCP3 tetramers, even in the absence of cooperative protein-protein interactions (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic hypothesis supported by theoretical considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "3cf67008-3da1-4bb3-8bd8-0ed8049aa9db",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C54",
+      "claim": "A mechanism of DNA compaction driven by the reduced entropic penalty of successive DNA-bridging events has been predicted by molecular dynamics studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism of DNA compaction, driven by the reduced entropic penalty of successive DNA-bridging events, has been predicted by molecular dynamics studies (Brackley et al., 2013; Cheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "0ba29520-fbcd-429b-9bae-fe4ad0ee8c92",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C55",
+      "claim": "Apparently cooperative DNA-binding behavior of DNA-bridging proteins has been attributed to the induced proximity of distinct protein-bound DNA sites in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently cooperative DNA-binding behavior of DNA-bridging proteins has been attributed to the induced proximity of distinct protein-bound DNA sites in previous studies (Dame et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "e7f41a7a-70bf-4d2f-bcde-5b4cf1903ac9",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C56",
+      "claim": "The observed footprint size of SYCP3 is similar to that of the DNA-bridging protein H-NS.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed footprint size of SYCP3, corresponding approximately to one helical turn of DNA, is similar to that of the DNA-bridging protein H-NS that was found to bridge two parallel DNA molecules in register with the helical repeat (Dame et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to another DNA-bridging protein supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "619ea4d5-e51f-43d7-a256-31db1e23f153",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C57",
+      "claim": "A preferential DNA-binding orientation correlated to the DNA helix is supported by the observed value of the 1D-diffusion constant of SYCP3.",
+      "claim_type": "EXPLICIT",
+      "source": "A preferential DNA-binding orientation correlated to the DNA helix is further supported by the observed value of the 1D-diffusion constant of SYCP3, which is in good agreement with rotation-coupled 1D-sliding along the DNA helix (Blainey et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the diffusion constant measurement supported by citation to a theoretical framework.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "0e5005ff-06b6-49c7-b66f-eb2ea922ba01",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C58",
+      "claim": "In cells, SYCP3-dependent compaction of the meiotic chromosome takes place in the context of chromatin and in the presence of other essential components of chromosome architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, SYCP3-dependent compaction of the meiotic chromosome takes place in the context of chromatin and in the presence of other essential components of chromosome architecture, such as other SC proteins, meiotic condensins and cohesins, which likely concur to define the extent of SYCP3-dependent DNA compaction during meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the cellular context of SYCP3 function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "0d6a924b-5e63-46be-9ef7-a26e2d67dfca",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C59",
+      "claim": "Other SC proteins, meiotic condensins and cohesins likely concur to define the extent of SYCP3-dependent DNA compaction during meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells, SYCP3-dependent compaction of the meiotic chromosome takes place in the context of chromatin and in the presence of other essential components of chromosome architecture, such as other SC proteins, meiotic condensins and cohesins, which likely concur to define the extent of SYCP3-dependent DNA compaction during meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the complexity of the cellular system.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "4a32be0e-d251-4d42-b3c3-1a810e6d151e",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C60",
+      "claim": "The single-molecule setup is well-suited for analysing systems of increasing complexity, including the addition of lateral element protein SYCP2 and core histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Although here we limited ourselves to the study of the binary SYCP3-DNA interaction, our single-molecule setup is well-suited for analysing systems of increasing complexity, including for instance the addition of lateral element protein SYCP2 and core histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the experimental approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "08a0c49e-5aff-4115-9484-dbdb58475b15",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C61",
+      "claim": "The structure of mitotic chromosomes depends only on a limited number of protein components.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent finding that the structure of mitotic chromosomes depends only on a limited number of protein components bodes well for future in vitro investigations of meiotic chromosome architecture (Shintomi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "f19109bc-4ec6-4d27-9dc8-8dda9414a218",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C62",
+      "claim": "L138 was replaced with cysteine for Alexa555-labelling of SYCP3 via maleimide chemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploited our knowledge of the SYCP3 structure and the absence of cysteines in its sequence to replace solvent-exposed residue L138, located in the helical core and distant from the N-terminal DNA-binding regions, with cysteine (Figure 2B). The engineered cysteine was linked to the fluorescent dye Alexa555 using maleimide chemistry (Figure 2C), yielding one fluorescent label per helical chain, or four fluorophores per SYCP3 tetramer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the labeling strategy used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "50e82688-f4ba-4c0c-a698-0cb6eb82d880",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C63",
+      "claim": "L138 is exposed to solvent and distant from the DNA-binding domains in the SYCP3 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Residue L138 was replaced with cysteine for Alexa555-labelling of SYCP3 via maleimide chemistry. L138 was chosen because it is exposed to solvent and distant from the DNA-binding domains in the SYCP3 structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains the rationale for choosing L138 for labeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "c436d9fd-fb99-4da9-b64f-7125b3f575d6",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C64",
+      "claim": "The labeling strategy yielded one fluorescent label per helical chain, or four fluorophores per SYCP3 tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "The engineered cysteine was linked to the fluorescent dye Alexa555 using maleimide chemistry (Figure 2C), yielding one fluorescent label per helical chain, or four fluorophores per SYCP3 tetramer.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the stoichiometry of the labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "421d37c6-ebf2-4654-a1ef-abf5f16fa0ec",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C65",
+      "claim": "Mass spectrometry confirmed that all SYCP3 molecules were labelled with Alexa555.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry confirmed that all SYCP3 molecules were labelled with Alexa555, and that the majority of SYCP3 molecules had one label per helical chain (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "428794bf-b663-4b08-a8f5-d1d7c11978a6",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C66",
+      "claim": "The majority of SYCP3 molecules had one label per helical chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry confirmed that all SYCP3 molecules were labelled with Alexa555, and that the majority of SYCP3 molecules had one label per helical chain (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry analysis shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "30be2077-0da5-4196-bcfd-1eea98298fdf",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C67",
+      "claim": "The experimental setup uses optical tweezers, fluorescence microscopy and microfluidics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a single-molecule assay based on optical tweezers, fluorescence microscopy and microfluidics that, in combination with bulk biochemical data, provides direct visual evidence for our proposed mechanism of SYCP3-mediated chromosome organisation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "bf76df50-5d70-4918-bff5-c9d338314795",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C68",
+      "claim": "The biotinylated ends of a bacteriophage \u03bb DNA molecule are tethered between two streptavidin-coated polystyrene beads that are controlled by focused laser beams acting as optical tweezers.",
+      "claim_type": "EXPLICIT",
+      "source": "In this system, the biotinylated ends of a bacteriophage \u03bb DNA molecule are tethered between two streptavidin-coated polystyrene beads that are controlled by focused laser beams acting as optical tweezers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "efaa8beb-9dcd-487d-a917-46bd3e20296a",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C69",
+      "claim": "The experiment is performed in a multi-channel laminar flow cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiment is performed in a multi-channel laminar flow cell that allows tethering of DNA to optically-trapped beads and moving the tethered DNA to parallel laminar-flow lanes containing, for example, the fluorescently-labelled components to be analysed (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "927b46d1-2f67-4abb-9c2b-fcb1f7c1120b",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C70",
+      "claim": "Beam-scanning confocal fluorescence microscopy is used to image the labelled DNA-bound proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Beam-scanning confocal fluorescence microscopy is then used to image the labelled DNA-bound proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "3f1d1f85-dde1-4efd-81cc-04a1b29356f4",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C71",
+      "claim": "The average decrease in amplitude of the Gaussian fit associated with bleaching of a single Alexa555 was 1.5 photons per confocal scan-line.",
+      "claim_type": "EXPLICIT",
+      "source": "The average decrease in amplitude of the Gaussian fit associated with bleaching of a single Alexa555 was 1.5 photons (per confocal scan-line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of bleaching steps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d6fe94a9-3461-4319-9d3b-cb5f57db1cc6",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C72",
+      "claim": "The average amplitude of a Gaussian fit for a SYCP3 tetramer is 6.0 photons.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the average amplitude of a Gaussian fit for a SYCP3 tetramer is 6.0 photons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the single fluorophore intensity and the number of fluorophores per tetramer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "81152108-5765-43f6-a281-d38f2ee1bbf6",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C73",
+      "claim": "Under experimental conditions of 6.4 \u00b5W excitation intensity, the experiment is dominated by bleaching.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under experimental conditions of 6.4 \u00b5W excitation intensity, the experiment is dominated by bleaching, with a typical rate of 5\u00b710\u22125s\u22121 \u00b1 1\u00b710\u22125 s\u22121 (sd) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of bleaching rates at different laser powers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "c565f233-488e-4783-b770-2629566b76a4",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C74",
+      "claim": "The typical bleaching rate at 6.4 \u00b5W excitation intensity is 5\u00b710\u22125s\u22121 \u00b1 1\u00b710\u22125 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under experimental conditions of 6.4 \u00b5W excitation intensity, the experiment is dominated by bleaching, with a typical rate of 5\u00b710\u22125s\u22121 \u00b1 1\u00b710\u22125 s\u22121 (sd) (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on quantitative analysis shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "26f7cb0e-ebf4-4d56-bb7b-8f6469588c82",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C75",
+      "claim": "The average amplitude of a Gaussian fit to each scan line of diffusive trajectories was 5 \u00b1 2 photons.",
+      "claim_type": "EXPLICIT",
+      "source": "The average amplitude of a Gaussian fit to each scan line of the trajectories was 5 \u00b1 2 photons (sd, N = 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of diffusive trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "ab63413a-2b76-4a9e-ae42-1a0e13722ee7",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C76",
+      "claim": "The average amplitude of diffusive trajectories corresponds to 3.3 \u00b1 1.6 dyes per diffusing trajectory, consistent with the stoichiometry of a single tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the calibrated intensity of 1.5 photons for a single dye (see Materials and methods section 'SYCP3 cluster-size determination'), this corresponds to 3.3 \u00b1 1.6 dyes per diffusing trajectory (sd, N = 8), consistent with the stoichiometry of a single tetramer, with a potential slight underestimation related to photobleaching.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the fluorescence intensity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "cb806477-bc63-42eb-a518-4f4a3d1c3966",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C77",
+      "claim": "The 1D-diffusion coefficient for rotation-coupled sliding is consistent with the observed diffusion constant of SYCP3.",
+      "claim_type": "EXPLICIT",
+      "source": "A value of D = 0.16 \u00b5m2/s can be calculated using, for example, a displacement per helical turn b = 3.4 nm, an average free energy barrier for sliding of \u03b5 = 1.33 kBT, and a protein radius of R = 10 nm, which results in a helical path with radius ROC= R + RDNA = 11 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on theoretical calculations using a model for rotation-coupled diffusion.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "d847514e-0914-4d92-8bc7-c47f6e72e066",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "claim_id": "C78",
+      "claim": "The 1D-diffusion coefficient for pure translational motion along the DNA is ~20 fold larger than that for rotation-coupled sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though this highly simplified model is based on a spherical protein, unlike the elongated shape of SYCP3, the 1D-diffusion coefficient for pure translational motion along the DNA is ~20 fold larger than that for rotation-coupled sliding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of theoretical diffusion coefficients for different modes of motion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6f5f9c82-a786-451a-b01d-87ffe654e02f",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context and importance of SYCP3 as a component of the synaptonemal complex lateral element that is critical for meiotic chromosome architecture and progression. These claims describe the structure of the SC, the role of SYCP3 and SYCP2 in lateral element assembly, and the consequences of SYCP3 deficiency in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide well-established background information about the synaptonemal complex and SYCP3's role in meiosis, supported by multiple citations to prior literature. These claims accurately represent the current understanding of SC structure and SYCP3 function based on previous work, and are appropriately used to motivate the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "6336bad6-98fb-42e0-898a-3e35953e2819",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SYCP3 adopts a tetrameric strut-like structure approximately 20 nm long with DNA-binding domains at both ends, and can polymerize into higher-order structures. This structural organization suggests SYCP3 can bridge distant DNA sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 describe the crystal structure of SYCP3 from prior work (Syrj\u00e4nen et al., 2014) and are well-supported by citations. The structural model showing DNA-binding domains at both ends of the elongated tetramer provides the foundation for the DNA-bridging hypothesis tested in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "41676916-1827-46bb-b00e-8eba9d58ce75",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SYCP3 can simultaneously bind two distinct DNA molecules, as demonstrated by EMSA showing intermediate mobility species with mixed DNA lengths and pull-down assays showing bridging between fluorescently-labeled and biotin-labeled DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 present biochemical evidence for multivalent DNA binding by SYCP3. The EMSA data (C31-C32, Figure 1B) and pull-down assay (C33, Figure 1C) provide converging evidence that SYCP3 can engage two DNA molecules simultaneously, supporting the bridging model. The use of the truncated construct (C29-C30) is appropriately justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "dc656fb1-1317-475a-bb84-b04b5f557a7a",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors developed a single-molecule assay combining optical tweezers, fluorescence microscopy, and microfluidics, using fluorescently-labeled SYCP3 (L138C-Alexa555) with validated stoichiometry of four fluorophores per tetramer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 describe the experimental methodology and protein labeling strategy. The choice of L138 for labeling is well-justified based on structural considerations (C63), and mass spectrometry validation (C65-C66, Figure 2D) confirms the labeling stoichiometry. The single-molecule setup is clearly described and appropriate for the experimental goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "386c54cd-1a20-43e3-a111-580a01bbfe80",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "On extended DNA, SYCP3 exhibits one-dimensional diffusive behavior with a diffusion constant of 0.16 \u00b1 0.05 \u00b5m\u00b2/s, consistent with single tetramers sliding along DNA. A control construct lacking the N-terminal DNA-binding domain (SYCP3\u2089\u2081\u208b\u2082\u2083\u2080) does not bind DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C39, C75-C76 describe the diffusive binding mode observed on extended DNA. The kymograph data (Figure 3A) clearly shows diffusive behavior, the diffusion constant is quantified with appropriate analysis (N=8), and the fluorescence intensity (5\u00b12 photons) is consistent with single tetramers (3.3\u00b11.6 dyes). The negative control (C36) validates that DNA binding requires the N-terminal domain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "124219d3-be8a-4df8-b3fb-01bb2dab0be4",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Upon DNA relaxation and re-extension, SYCP3 transitions from diffusive binding to forming static clusters, indicating two binding modes: a monovalent diffusive mode on extended DNA and a bivalent bridging mode that forms stable clusters when DNA is relaxed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C41 describe the observed transition from diffusive to clustered binding (Figure 3B), which is well-documented. However, C42-C43 present mechanistic hypotheses about monovalent vs. bivalent binding modes that, while reasonable, are speculative interpretations not directly proven by the data. The authors appropriately use language like 'hypothesise' and 'would,' but the mechanism remains inferred rather than demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "c7162eae-84b7-40e2-9e06-220efc8a4160",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SYCP3-compacted DNA requires higher forces for extension compared to naked DNA, and lacks distinct bond-rupture events, suggesting high stability of SYCP3-DNA bridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 describe force-extension measurements (Figure 4A, Figure 4\u2014figure supplement 1). The observation that SYCP3-bound DNA requires higher forces for extension is clear evidence of DNA compaction. The lack of pronounced rupture events (C45) is appropriately compared to other DNA-bridging proteins, though the authors correctly note that full quantitative analysis would require additional experiments (C46).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "SYCP3 clusters contain an average of 67 tetramers (range 20-160), determined by quantitative fluorescence analysis with bleaching correction. The calibration shows 1.5 photons per Alexa555 dye and 6.0 photons per tetramer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48, C71-C74 describe the quantification of cluster size using fluorescence intensity measurements. The methodology is sound: single-dye intensity is calibrated from bleaching steps (C71), tetramer intensity is calculated (C72), and bleaching corrections are applied based on power-dependent measurements (C73-C74, Figure 4\u2014figure supplement 2). The analysis of 15 clusters from 4 DNA molecules provides reasonable statistics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "35be104c-d5ad-48ea-b3a2-a085f2f45555",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DNA-binding footprint of SYCP3 is estimated at 2.7 \u00b1 1.7 nm (N=3) from compaction experiments and 3.6 \u00b1 0.3 nm (N=13) from flow-drag experiments, both approximately one helical turn of DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C51 present footprint calculations from two different experimental approaches. While the values are in reasonable agreement and close to one DNA helical turn (C51), the calculation for C49 involves multiple assumptions (DNA persistence length, loop structure) and has very limited sample size (N=3). The flow-drag approach (C50) has better statistics (N=13) but involves different experimental conditions. The large error in C49 (\u00b11.7 nm on a 2.7 nm measurement) indicates substantial uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The clustering behavior of SYCP3 on DNA may result from entropy-driven cooperative bridging, where initial DNA loops facilitate subsequent bridging events. This mechanism is supported by comparison to other DNA-bridging proteins and consistency with molecular dynamics predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 present a mechanistic model for SYCP3 clustering supported by theoretical considerations and comparison to other systems. The entropy-driven cooperativity model (C53-C55) is supported by citations to molecular dynamics studies and prior work on H-NS. The footprint size similarity to H-NS (C56) and diffusion constant consistent with rotation-coupled sliding (C57) provide additional support, though these remain correlative rather than definitive proof.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "b3095843-6c10-4637-a39a-b5222baca5ee",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed 1D-diffusion coefficient of SYCP3 (0.16 \u00b5m\u00b2/s) is consistent with rotation-coupled sliding along the DNA helix rather than pure translational motion, based on theoretical calculations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 compare the experimental diffusion constant to theoretical predictions for different sliding modes. The calculation showing that rotation-coupled sliding can account for the observed value (C77) while pure translational motion would be ~20-fold faster (C78) provides support for helical tracking. However, the authors appropriately note that the model is simplified and assumes a spherical protein unlike the elongated SYCP3 structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    },
+    {
+      "id": "df446958-a2b3-4439-a9ab-a164f1660d77",
+      "content_id": "04ef26f6-510b-4453-8510-2c11afbb7ca0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SYCP3 causes DNA compaction through bridging interactions, though in cells this occurs in the context of chromatin and other chromosomal proteins. The single-molecule approach can be extended to more complex systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 summarize the main conclusion about SYCP3-mediated DNA compaction through bridging, which is well-supported by the experimental data. Claims C58-C59 appropriately acknowledge the complexity of the cellular environment and limitations of the in vitro system. Claims C60-C61 discuss future applications, which are reasonable but speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:15:48.433783Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3715a3a7-9de5-4a3e-88c5-d572b46f69cf",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "3b862115-454c-4bf7-b5be-40cbb3a8f68e",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "ebd0f39d-b750-44cb-af59-a2419f2b0c5b",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "cc3cc2d5-d6ce-4e76-b0e4-316f7004c9e2",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "dcef49df-cb7a-49ea-9f1b-1390687a1ceb",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "5886d68d-ea64-4a8e-ab8d-81afee131edb",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "f8d6901b-b64c-4661-b8ae-4dde2c2f6276",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "ae136662-0151-4561-9bee-abe0de2f4ec9",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "b63b42d6-ffa6-4b61-96ac-0db396573dd0",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "9ce84034-6019-4979-a3e6-acb413895895",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "ba5e026d-0016-4940-81b1-7600d581d050",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "7d36e4ec-627e-4b9d-8b6d-1a490fd60fc0",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "54ef0374-b357-41d5-bf70-7d19b62aef49",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "a19bc79b-592b-4471-83cd-78904850c1b8",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "8cc7bb6a-f2bb-4a88-acb3-f0ad677fa746",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "7913c7cc-0495-44c4-8a6a-cc9d7a38cdb2",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "660d9bd9-174f-457d-9d28-ae516834faa1",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "d44811e7-1e4e-4840-badf-c1deaf043a59",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "d828e304-9eb3-4371-a619-6acfbc2070f2",
+      "result_id": "6f5f9c82-a786-451a-b01d-87ffe654e02f"
+    },
+    {
+      "claim_id": "12e4277d-9974-4b95-98df-9334d54a6001",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "7934def2-eb87-49d7-8943-963c0cd01f19",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "40225b03-eabf-4c9a-9a08-aabbe53e4692",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "481b217a-627a-4cc8-b4ed-1acda6955015",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "e19d272f-38c9-4ec1-a4ea-ca32f9a361e0",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "36a948dc-e547-43ac-9eaa-b8c90a1dbfb4",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "357fa6c8-4135-4a7d-b88f-1eb87e019aef",
+      "result_id": "6336bad6-98fb-42e0-898a-3e35953e2819"
+    },
+    {
+      "claim_id": "8ae406ca-71a5-461e-9405-d2d0b19de659",
+      "result_id": "41676916-1827-46bb-b00e-8eba9d58ce75"
+    },
+    {
+      "claim_id": "df3725c5-251e-4e6b-a419-683d7dfe8c13",
+      "result_id": "41676916-1827-46bb-b00e-8eba9d58ce75"
+    },
+    {
+      "claim_id": "129d58c3-6a72-48bd-bb16-046aa85f2214",
+      "result_id": "41676916-1827-46bb-b00e-8eba9d58ce75"
+    },
+    {
+      "claim_id": "778557d8-5db9-46fb-9bf8-51e0463a4dfb",
+      "result_id": "41676916-1827-46bb-b00e-8eba9d58ce75"
+    },
+    {
+      "claim_id": "760b8bb2-a33d-4630-bec5-69fb6356385a",
+      "result_id": "41676916-1827-46bb-b00e-8eba9d58ce75"
+    },
+    {
+      "claim_id": "f19109bc-4ec6-4d27-9dc8-8dda9414a218",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "50e82688-f4ba-4c0c-a698-0cb6eb82d880",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "c436d9fd-fb99-4da9-b64f-7125b3f575d6",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "421d37c6-ebf2-4654-a1ef-abf5f16fa0ec",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "428794bf-b663-4b08-a8f5-d1d7c11978a6",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "30be2077-0da5-4196-bcfd-1eea98298fdf",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "bf76df50-5d70-4918-bff5-c9d338314795",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "efaa8beb-9dcd-487d-a917-46bd3e20296a",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "927b46d1-2f67-4abb-9c2b-fcb1f7c1120b",
+      "result_id": "dc656fb1-1317-475a-bb84-b04b5f557a7a"
+    },
+    {
+      "claim_id": "2d184dc6-97ae-4682-acb1-a8e8bbaee231",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "d719b08d-20b3-4832-a3d3-02a807a49d7c",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "6f15085f-f650-4b44-8229-e702248cab66",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "d255a49e-e729-4452-b068-14f5c5da0c22",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "9cd5f9f3-ecb6-4382-95df-088521f71ab2",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "3d6ed87f-be33-4aab-b652-083ebaa744e2",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "26f7cb0e-ebf4-4d56-bb7b-8f6469588c82",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "ab63413a-2b76-4a9e-ae42-1a0e13722ee7",
+      "result_id": "386c54cd-1a20-43e3-a111-580a01bbfe80"
+    },
+    {
+      "claim_id": "96c13fad-f797-48ed-9e0c-59a50ca0fc22",
+      "result_id": "124219d3-be8a-4df8-b3fb-01bb2dab0be4"
+    },
+    {
+      "claim_id": "4868cbb1-7c43-45f8-887a-32074902d531",
+      "result_id": "124219d3-be8a-4df8-b3fb-01bb2dab0be4"
+    },
+    {
+      "claim_id": "01b4aeb0-b91a-4c33-b6d9-443128e82bed",
+      "result_id": "124219d3-be8a-4df8-b3fb-01bb2dab0be4"
+    },
+    {
+      "claim_id": "77f45175-a97b-451d-be04-d45a9f0aae98",
+      "result_id": "124219d3-be8a-4df8-b3fb-01bb2dab0be4"
+    },
+    {
+      "claim_id": "010df231-2cfd-426e-994d-b796e968a8db",
+      "result_id": "c7162eae-84b7-40e2-9e06-220efc8a4160"
+    },
+    {
+      "claim_id": "a1b84138-e384-49dd-90c4-1aea6c97f4b4",
+      "result_id": "c7162eae-84b7-40e2-9e06-220efc8a4160"
+    },
+    {
+      "claim_id": "f5ffbb14-9dd3-40c0-9cc7-21fb4a357c04",
+      "result_id": "c7162eae-84b7-40e2-9e06-220efc8a4160"
+    },
+    {
+      "claim_id": "52d2e0cf-17f4-44da-aa79-f0eb82e7fa67",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "4973a3e7-ab95-4088-85b9-f6ca53e82294",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "3f1d1f85-dde1-4efd-81cc-04a1b29356f4",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "d6fe94a9-3461-4319-9d3b-cb5f57db1cc6",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "81152108-5765-43f6-a281-d38f2ee1bbf6",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "c565f233-488e-4783-b770-2629566b76a4",
+      "result_id": "cf8142d3-fce6-48db-bcf0-249ac36e6a9d"
+    },
+    {
+      "claim_id": "63c5a6c0-80cf-4c88-9146-6f8bd9b8947b",
+      "result_id": "35be104c-d5ad-48ea-b3a2-a085f2f45555"
+    },
+    {
+      "claim_id": "20e3095b-662d-4db5-bcc6-ed9be05d54fb",
+      "result_id": "35be104c-d5ad-48ea-b3a2-a085f2f45555"
+    },
+    {
+      "claim_id": "f5f8805e-93c7-4791-a342-1425e1f06d02",
+      "result_id": "35be104c-d5ad-48ea-b3a2-a085f2f45555"
+    },
+    {
+      "claim_id": "523d9dbf-f123-47e2-85da-b4837f28dd3c",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "53da56dd-d585-48a5-b745-9e2c38d4b8ee",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "3cf67008-3da1-4bb3-8bd8-0ed8049aa9db",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "0ba29520-fbcd-429b-9bae-fe4ad0ee8c92",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "e7f41a7a-70bf-4d2f-bcde-5b4cf1903ac9",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "619ea4d5-e51f-43d7-a256-31db1e23f153",
+      "result_id": "95cf44e5-a599-4c3e-943c-4e21ff08d1a2"
+    },
+    {
+      "claim_id": "cb806477-bc63-42eb-a518-4f4a3d1c3966",
+      "result_id": "b3095843-6c10-4637-a39a-b5222baca5ee"
+    },
+    {
+      "claim_id": "d847514e-0914-4d92-8bc7-c47f6e72e066",
+      "result_id": "b3095843-6c10-4637-a39a-b5222baca5ee"
+    },
+    {
+      "claim_id": "988f22cf-ae95-443e-873b-2f81ea7136af",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    },
+    {
+      "claim_id": "db510001-3ece-49ab-9272-69c866a1ec83",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    },
+    {
+      "claim_id": "0e5005ff-06b6-49c7-b66f-eb2ea922ba01",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    },
+    {
+      "claim_id": "0d6a924b-5e63-46be-9ef7-a26e2d67dfca",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    },
+    {
+      "claim_id": "4a32be0e-d251-4d42-b3c3-1a810e6d151e",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    },
+    {
+      "claim_id": "08a0c49e-5aff-4115-9484-dbdb58475b15",
+      "result_id": "df446958-a2b3-4439-a9ab-a164f1660d77"
+    }
+  ],
+  "comparisons": []
+}

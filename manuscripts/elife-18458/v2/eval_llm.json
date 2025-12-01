@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript reviews prior knowledge about Msn2 and Msn4, noting that they have been historically considered functionally redundant transcription factors that regulate stress responses, though some evidence suggests differential contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize the historical understanding and knowledge gaps in the field based on cited literature. These are background claims establishing context for the study and are appropriately supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors establish that Msn2/4 target promoters can be classified as having fast or slow activation kinetics, with PDCS2 and PSIP18 serving as representative examples that differ 5-fold in activation speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 describe prior work from the authors' laboratory that is well-cited and provides the foundation for the current study. The characterization of fast vs. slow promoters is established knowledge used as a framework for the new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Msn4 is required for induction of slow kinetics promoters (PSIP18, PTKL2) in response to transient inputs (30 min), but not for fast kinetics promoters (PDCS2, PDDR2). With prolonged inputs (60 min), Msn4 becomes dispensable for slow promoters, revealing that Msn4 is not redundant to Msn2 but plays a distinct, time-dependent role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C30 are supported by deletion experiments shown in Figure 1 across multiple promoters and stress conditions. The data clearly demonstrate differential requirements for Msn4 depending on promoter kinetics and input duration, challenging the historical view of functional redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Msn2 and Msn4 show similar temporal dynamics of nuclear translocation in single cells, but Msn4 exhibits higher cell-to-cell variability (higher CV) and lower absolute nuclear levels (~3-fold lower) than Msn2 across different stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C43 are supported by single-cell imaging data in Figure 2 and supplements. The normalization procedure (Figure 2\u2014supplement 1A) allows direct comparison of Msn2 and Msn4 levels. The observation that Msn4's higher CV is partly due to lower absolute levels (C40-C41) is appropriately qualified as interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C80",
+      "C81"
+    ],
+    "result": "For fast kinetics promoters (PDCS2, PDDR2), gene expression can be induced in most cells when either Msn2 or Msn4 is activated above a low threshold, showing similar graded relationships with both factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C80-C81 are supported by single-cell data in Figures 3A and 5A showing that fast promoters respond similarly to either TF. The data demonstrate redundant, graded regulation consistent with an 'OR' gate logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "For slow kinetics promoters (PSIP18), Msn2 functions as a low-threshold switch (~25% maximal level) required to turn on transcription, while Msn4 acts as a rheostat that linearly tunes the induction level. High Msn2 levels may compete with Msn4 for promoter binding, suppressing induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C65 are supported by extensive single-cell analysis in Figure 3B showing distinct relationships between gene expression and Msn2 (switch-like) vs. Msn4 (linear). The competing role of Msn2 (C50, C63) is supported by data showing decreased expression at high Msn2/Msn4 ratios (Figure 3\u2014supplement 3), though the mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C66",
+      "C67"
+    ],
+    "result": "The homolog-specific gene regulation depends on input dynamics: with prolonged inputs (60 min), slow promoters no longer specifically depend on Msn4 and behave like fast promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C66-C67 are supported by data in Figures 1C and 3\u2014supplement 4 showing that the requirement for Msn4 is abolished with longer input durations. This demonstrates that the logic gate architecture is dynamic and input-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Under natural stress conditions (osmotic stress with KCl, ethanol stress), slow promoter expression depends specifically on Msn4 activity in a linear fashion at the single-cell level, with Msn2 activated above threshold in most cells, enabling Msn4 to diversify gene expression within the population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 are supported by single-cell data under natural stress conditions in Figure 4. The results parallel the inhibitor experiments, demonstrating that the distinct regulatory roles extend to physiologically relevant conditions. The interpretation about population diversification (C79) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The slow kinetics promoter PTKL2 shows similar Msn2/Msn4-dependent regulation as PSIP18, suggesting the distinct functions might be applicable to other target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by data in Figure 5B showing that PTKL2 exhibits the same switch-like (Msn2) vs. linear (Msn4) relationships as PSIP18. This extends the findings beyond a single promoter, though the generalization remains tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "The distinct regulatory functions of Msn2 and Msn4 depend on promoter kinetics rather than specific promoter sequences: converting PSIP18 to fast kinetics (PSIP18-A4 mutant) or slowing PDCS2 (snf6\u0394 background) switches the regulatory logic accordingly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C88-C89 are supported by data in Figures 5C and 5D showing that altering promoter kinetics changes the regulatory logic. The PSIP18-A4 mutant behaves like a fast promoter, and PDCS2 in snf6\u0394 behaves like a slow promoter, demonstrating that kinetics, not sequence, determines the regulatory mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Msn2 and Msn4 implement logic gate-like regulation: fast promoters behave as 'OR' gates (either factor sufficient), while slow promoters behave as 'AND' gates (both factors required), with Msn2 as a switch and Msn4 as a rheostat.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92, C110-C112 synthesize the experimental findings into a logic gate framework illustrated in Figure 6A. This is a well-supported conceptual model that accurately captures the experimental observations across multiple promoters and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The logic gate scheme is dynamic and input-dependent: slow promoters switch from 'AND' gates (30-min input) to 'OR' gates (60-min input), with Msn2 able to compensate for Msn4 absence given sufficient time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 are supported by data in Figures 1B-C showing input duration-dependent changes in Msn4 requirement. The interpretation that Msn2 can function as a rheostat with prolonged inputs is consistent with cited prior work (Stewart-Ornstein et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A proposed mechanism involves sequential recruitment of chromatin remodeling factors, with Msn2 recruiting initiation factors followed by Msn4 recruiting specific remodelers. Consistent with this, Msn4 follows Msn2 in nuclear translocation with a 2-3 min delay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 are explicitly speculative mechanisms without direct experimental support in this study. Claim C96 provides correlative timing data (Figure 2\u2014supplement 1C) consistent with the model but does not test the proposed mechanism. The delay observation is supported, but the mechanistic interpretation requires future biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Fast kinetics promoters are enriched for metabolic/adaptation genes (carbohydrate metabolism, autophagy), while slow kinetics promoters are enriched for chronic stress resistance genes, suggesting temporal separation optimizes resource allocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 are supported by functional enrichment analysis shown in Figure 6\u2014supplement 1. The functional categorization is data-driven, though the interpretation about resource optimization (C103) is speculative but reasonable given the functional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Msn4-dependent regulation may represent a bet-hedging strategy where heterogeneous Msn4 activity creates subpopulations specialized for different stress scenarios, with cells lacking Msn4 unable to induce slow genes population-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C109 present an evolutionary/ecological interpretation of the heterogeneity data. While the heterogeneity is well-documented, the bet-hedging interpretation is speculative and not directly tested. The fitness consequences and evolutionary advantages proposed require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The time-dependent combinatorial regulation observed for Msn2/Msn4 may be widely applicable to other homologous or closely related TFs in eukaryotes, given the prevalence of dynamic TF regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C123 discuss broader implications and cite relevant literature about dynamic TF regulation in other systems. However, the generalization to other TF pairs is speculative and not tested. The cited examples (C120-C122) support the plausibility but do not validate the specific regulatory logic observed here.",
+    "result_type": "MINOR"
+  }
+]

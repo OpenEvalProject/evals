@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C90",
+      "C91"
+    ],
+    "result": "The study used a well-defined experimental protocol with 26 directions of 3D translation (45\u00b0 increments in azimuth and elevation), Gaussian velocity profiles (13 cm displacement, 0.1 g peak acceleration), and analyzed 579 neurons across 8 brain regions from 19 monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C90-C91 provide comprehensive methodological details about the stimulus design, neural data collection, and sample sizes. The experimental protocol is clearly described with specific quantitative parameters, and the data set composition is explicitly stated with neuron counts per region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The VAJ model provided good fits to neural responses (median R\u00b2 0.59-0.78 across regions), with otolith afferents best fit by acceleration-only or acceleration+jerk models (48% A, 33% AJ), while central neurons predominantly required the full VAJ model (60%) with velocity as the dominant component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 report quantitative model fitting results with confidence intervals and partial R\u00b2 values. The distribution of best-fitting models and component contributions are clearly documented, showing a fundamental transformation from peripheral to central processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C26",
+      "C32",
+      "C60"
+    ],
+    "result": "Otolith afferents exhibit spatially aligned, cosine-tuned responses to acceleration and jerk with high separability (median 0.98), where regular afferents encode pure acceleration while irregular afferents encode acceleration+jerk mixtures correlated with CV*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C26, C32, C60 collectively demonstrate the spatio-temporal separability of otolith afferents with quantitative evidence (7\u00b0 median angular difference, separability index 0.98). The relationship between firing regularity and temporal dynamics is well-documented with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C62"
+    ],
+    "result": "Otolith afferent response dynamics vary with firing regularity (CV*): irregular afferents (median CV* 0.06) have higher acceleration and jerk weights than regular afferents (median CV* 0.026, p=10\u207b\u00b3), with a small velocity component whose preferred direction correlates with CV*.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C20, C62 report statistically significant relationships between CV* and response components (p<10\u207b\u00b2). The novel finding of a velocity component in irregular afferents is supported by correlation analysis, though its magnitude is small (median 0.06).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Central neurons (VN/CN and cortex) exhibit non-linear mixed selectivity with dissimilar spatial tuning across velocity, acceleration, and jerk components, showing significantly lower separability (median 0.89, p<10\u207b\u00b9\u00b2) than otolith afferents, with velocity responses dominated by omnidirectional components while acceleration remains mostly cosine-tuned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C22-C23, C27-C28, C41-C43 provide converging evidence for the transformation from peripheral to central processing. Statistical comparisons show highly significant differences (p<10\u207b\u2078 to p<10\u207b\u00b9\u2074) in component weights and separability between otolith afferents and central neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C46",
+      "C50"
+    ],
+    "result": "Among central neurons, VN and CN show similar properties with no significant differences in component weights (p>0.28), while cortical areas show only moderate differences, with visual/vestibular multisensory areas (MSTd, VPS, VIP, FEF) having slightly greater velocity weights (median 0.39) than non-multisensory areas (median 0.32, p<10\u207b\u2079).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C46, C50 demonstrate that the major transformation occurs at the first synapse (afferents to VN/CN), with more modest changes across central areas. Statistical tests support the similarity between VN/CN and the small but significant differences between cortical area types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Response amplitude and baseline firing rate vary systematically across the vestibular hierarchy: otolith afferents have the smallest modulation (median 10 spk/s) but highest baseline (72 spk/s), VN/CN/PIVC have the largest modulation (58 spk/s) with intermediate baseline (45 spk/s), and multisensory cortical areas have moderate modulation (35 spk/s) with low baseline (12 spk/s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report highly significant differences (p<10\u207b\u00b9\u00b9 to p<10\u207b\u00b9\u00b3) in response properties across brain regions with clear confidence intervals. The systematic progression from high baseline/low modulation in afferents to low baseline/high modulation in central areas is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Central neurons encode position (displacement) in addition to velocity, acceleration, and jerk, with 55-84% of central neurons showing significant position contributions compared to only 4% of otolith afferents, and MSTd showing larger position contributions than PIVC and VIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C40 report position responses across brain regions, but the authors explicitly note in the Methods that position responses require longer pre- and post-stimulus recording periods for reliable quantification. The PVAJ model analysis is presented but acknowledged as preliminary, limiting confidence in these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C44",
+      "C45",
+      "C49",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The first synapse (otolith afferents to VN/CN) represents a key processing element that transforms cosine-tuned acceleration signals into mixed selectivity responses encoding both directional information and omnidirectional motion presence, which cannot be characterized with traditional sinusoidal stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C44-C45, C49, C78-C81 present the main conclusion supported by the comprehensive data showing dramatic transformation at the first synapse. The omnidirectional tuning components (broad responses orthogonal to PD) are well-documented and represent a fundamental difference from afferent cosine tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Prior literature established that otolith afferents are cosine-tuned with separable spatio-temporal properties encoding acceleration, varying in dynamics based on firing regularity, and cannot distinguish tilt from translation, while theoretical work predicted non-separable convergence properties in central neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C51-C52, C56-C59 accurately summarize established knowledge from cited literature. The citations are appropriate and the characterization of prior work on otolith afferent properties and theoretical predictions is consistent with the referenced studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C82",
+      "C83",
+      "C88"
+    ],
+    "result": "The observed spatio-temporal transformations may be linked to resolution of the tilt/translation ambiguity through otolith/canal convergence in VN/CN, as cortical neurons selective for inertial acceleration likely inherit this property from subcortical processing, and theoretical solutions require strong non-linearities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C55, C82-C83, C88 present speculative interpretations linking the observed transformations to tilt/translation disambiguation. While the citations to prior work are appropriate and the hypothesis is plausible, the authors explicitly state there is 'no direct evidence yet for such a link' (C83), making this interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The current study overcomes limitations of prior sinusoidal stimulation approaches (non-minimum phase properties, inability to separate velocity from jerk, requirement for multi-frequency testing) by using 3D transient stimuli, providing the first comprehensive quantification of spatio-temporal convergence properties across multiple brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C63, C68-C77 accurately characterize limitations of prior approaches and justify the methodological innovation. The novelty claim is supported by appropriate citations, and the advantages of transient stimuli over sinusoidal approaches for characterizing non-linear, non-separable responses are well-articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C89"
+    ],
+    "result": "Mixed selectivity in central neurons may facilitate complex computations by enabling high-dimensional representations that allow simple linear readouts to generate diverse responses, potentially supporting spatial cognition in cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C87, C89 cite theoretical work on mixed selectivity (Fusi et al., 2016) and speculate about functional implications. While the theoretical framework is appropriately cited, the connection to the observed vestibular transformations remains speculative without direct experimental evidence linking mixed selectivity to specific computational functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Response amplitude is highest in vestibular/cerebellar nuclei and PIVC/VPS (core vestibular areas) and lower in visual/vestibular multisensory areas (MSTd, VIP, FEF), consistent with a hierarchical processing pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 report systematic differences in response amplitude across brain regions with appropriate statistical support and citations to prior work characterizing the core vestibular system. The interpretation is consistent with the quantitative data presented in C29-C30.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Control experiments from prior studies verified that otolith afferents, VN, CN, and PIVC neurons are not sensitive to visual stimuli or eye movements, and that vestibular responses in MSTd, VPS, VIP, and FEF during fixation are similar to those in complete darkness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 cite multiple prior publications that established these control conditions. The citations are specific and appropriate, providing confidence that visual and eye movement confounds were adequately controlled across the different neuron types studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Prior theoretical work predicted non-separable spatio-temporal convergence in central neurons receiving otolith afferent input, with experimental evidence demonstrated in rodent VN and later in primate VN and CN using sinusoidal stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 accurately summarize the progression of theoretical predictions and experimental validation in prior literature. The citations are appropriate and the characterization of this prior work provides important context for the current findings.",
+    "result_type": "MINOR"
+  }
+]

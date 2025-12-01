@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The cardiac ganglion motor neurons (LCs) in Cancer borealis generate synchronous output despite having variable underlying conductances. This variability renders them vulnerable to perturbations: blocking high-threshold K+ currents with 25 mM TEA (~92% reduction) causes motor neurons to lose coordinated output and become divergent in their firing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C13 establish the foundational observation that LCs exhibit synchronous output despite conductance variability, and that TEA blockade disrupts this synchrony. These claims are well-supported by prior work (citations to Tazaki 1972, Ransdell et al. 2012, 2013a) and form the basis for the current study's experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "TEA exposure acutely desynchronizes LC output and increases excitability, but both synchrony and excitability recover toward baseline within 30-60 minutes. Waveform synchrony (R\u00b2) significantly decreased acutely after TEA but recovered to statistically indistinguishable from baseline by 1 hour. Multiple excitability measures (spikes per burst, spike frequency, burst depolarization, burst amplitude, SC-LC phase delay) showed significant acute increases followed by significant recovery toward baseline between 30-60 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C21 are strongly supported by experimental data in Figure 2, including intracellular recordings, extracellular recordings, and statistical analyses (paired t-tests, Wilcoxon signed rank tests). The time course of desynchronization and recovery is well-documented with appropriate controls and multiple measures of network function. Sample sizes (N=8-11) appear adequate based on power analyses reported in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C48"
+    ],
+    "result": "Blocking high-threshold K+ conductances triggers compensatory mechanisms that resynchronize the network and restore excitability through coordinated increases in both GA (A-type K+ conductance) and electrical coupling. Multi-component mechanisms are necessary for full compensation and act synergistically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C48 represent the central findings of the manuscript and are supported by converging evidence from modeling (C22-C27, C43-C45) and experiments (C30-C33, C38-C42). The synergistic interaction is demonstrated in Figure 7, showing that 70% increases in both GA and GC restore synchrony, whereas larger increases in either alone are less effective. This represents a novel mechanistic insight into network homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "A population of 27 model networks with variable conductances successfully recapitulated biological TEA responses. Modeling predicted that a two-fold increase in GA was the only single conductance change that significantly improved both spike synchrony and decreased action potentials. The model demonstrates that waveform synchrony translates to spike synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe the computational modeling approach and key predictions. The model development is detailed in Methods with appropriate selection criteria (R\u00b2 > 0.9 for synaptic drive response, proper activity termination requiring ICAN:ISKKCa ratio ~1:0.83). The prediction that GA increase is optimal among single conductance changes (C24-C25) is supported by systematic testing shown in Figure 3. However, the model's ability to truly recapitulate all aspects of biological compensation could benefit from more quantitative validation metrics beyond the qualitative matching described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Intrinsic compensation contributes to but is insufficient for full restoration of synchrony. When LCs are isolated and driven with identical stimuli, synchrony improves significantly within 1 hour of TEA exposure but remains significantly lower than control. Peak IA current increased by mean 56% after 1 hour TEA exposure, but compensated voltage responses differ significantly from original control responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are well-supported by experiments using sucrose block to isolate cells while allowing network compensation (Figure 4). The experimental design cleverly separates intrinsic from network-level mechanisms. Voltage clamp data (C32) confirms IA increase with appropriate statistics (p<0.05, n=6, Wilcoxon signed rank test). The finding that intrinsic compensation is insufficient (C31, C33) is critical for establishing the need for network-level mechanisms and is supported by statistical comparisons showing significant differences from control even after compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Model simulations show that increasing either chemical synapses or electrical coupling increases both synchrony and excitability. However, increasing chemical synaptic conductance increases LC spiking by ~25-30% (contrary to biological decrease in excitability), while increasing electrical coupling causes only ~9% change in spiking. Reducing either synaptic type decreased synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by systematic modeling experiments shown in Figure 5, testing incremental changes in synaptic strengths. The differential effects on excitability vs. synchrony provide important constraints that guide the interpretation toward electrical coupling as the primary network-level compensatory mechanism. Statistical analyses (One-Way ANOVA with Holm-Sidak post-hoc tests) are appropriate for the comparisons made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Electrical coupling between LCs increases during compensation. Dynamic clamp experiments show that artificial coupling conductance of 0.2 \u03bcS rescues synchrony to control levels. In intact networks, coupling coefficients increased 85% and coupling conductance (GC) between LC4-LC5 increased 49.5% after 1 hour TEA exposure, while input resistance remained unchanged, indicating that increased gap junctional conductance rather than changes in membrane leak underlies the increased coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide strong experimental evidence for increased electrical coupling as a compensatory mechanism. The dynamic clamp proof-of-principle (C38, Figure 6A) is followed by direct measurements of coupling changes in intact networks (C39, C42, Figure 6B-C). The control experiment showing no change in input resistance (C40) is critical for ruling out passive membrane changes as an alternative explanation (C41). Sample sizes (N=8-13) and statistics (p<0.01, Wilcoxon signed rank test) are appropriate. The measurement of coupling conductance between LC4-LC5 is particularly rigorous as these cells are close together, minimizing electrotonic distance artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Model simulations reveal synergistic interactions between GA and electrical coupling in restoring synchrony. Increasing GA alone up to +40% improved but could not fully restore synchrony. Electrical coupling alone required a 140% increase for full restoration. However, simultaneous 70% increases in both GA and GC produced spike synchrony indistinguishable from control, demonstrating synergistic efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by systematic modeling experiments shown in Figure 7, testing incremental changes in GA and GC both separately and together. The finding of synergistic interaction (C45) is quantitatively demonstrated: 70% increase in both conductances achieves what would require 140% increase in GC alone or is unachievable with GA alone. This represents a key mechanistic insight. However, the claim would be strengthened by experimental validation of the specific quantitative predictions (e.g., testing whether 70% increases in both parameters in biology produces the predicted restoration).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C46"
+    ],
+    "result": "This study represents one of the first direct demonstrations of physiological regulation of coupling conductance in a compensatory context and the first demonstration of coordinated homeostatic plasticity of intrinsic and electrical synaptic conductances in a comprehensive network-level example.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C46 assert the novelty of the findings. These claims are supported by appropriate citations to prior literature (C52-C57, C70-C74) that establish what was previously known about electrical coupling plasticity and homeostatic compensation. The authors correctly distinguish their work as examining coordinated plasticity across intrinsic and electrical synaptic mechanisms in an intact, functioning network with physiologically relevant compensation. The novelty claims appear justified based on the literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The computational model consists of two-compartment LC neurons (soma and axon) with 9 conductances in the soma. Model networks with variable conductances exhibited control synchrony scores (median 0.915) matching biological data. The model allows inference that waveform synchrony translates to spike synchrony, which cannot be directly measured in the biological preparation due to electrotonic distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 describe the model architecture and validation. The model structure is detailed in Methods with appropriate biophysical parameters (Tables 1-2). The validation showing model synchrony scores match biology (C67) provides confidence in the model's relevance. The inference about waveform-to-spike synchrony translation (C69) is reasonable given the model's biophysical basis, though this remains an inference that cannot be directly validated experimentally in this preparation (C68). The model development process appears rigorous with appropriate selection criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C75"
+    ],
+    "result": "Variability in intrinsic and synaptic conductances (up to five-fold range) is widespread across neural systems including CPGs, cerebellar Purkinje cells, globus pallidus neurons, and various mammalian brain regions. This variability may form part of compensatory mechanisms that endow networks with robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9, C11, and C75 establish the broader context of conductance variability across neural systems. These are well-supported by appropriate citations to established literature (Marder and Goaillard 2006, Schulz et al. 2006, Swensen and Bean 2005, G\u00fcnay et al. 2008, Nelson and Turrigiano 2008, Ransdell et al. 2012, and others). These claims provide important background but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Prior work in other systems shows that K+ currents can restore synchrony between electrically coupled neurons, and that operant conditioning in Aplysia involves coordinated changes in intrinsic excitability (via leak conductance) and coupling strength to modify motor output frequency and synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49-C51 describe relevant prior work that provides context for the current findings. These are appropriately cited (Pfeuty et al. 2003, Nargeot et al. 2007, 2009, Nargeot and Simmers 2011, Sieling et al. 2014) and help establish the conceptual framework. The comparison to Aplysia work is particularly relevant as it shows similar mechanisms operating in a different behavioral context (learning vs. homeostatic compensation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Electrical coupling promotes synchrony across many systems and plasticity of electrical synapses has been discovered in multiple mammalian brain regions (thalamic reticular nucleus, inferior olive, retina). In the thalamic reticular nucleus, compensatory changes in coupling may maintain network stability during developmental changes in excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 review prior literature on electrical coupling and its plasticity. These are well-supported by appropriate citations (Tazaki 1972, Bennett and Zukin 2004, Sz\u00fccs et al. 2000-2009, Landisman and Connors 2005, Haas et al. 2011, Lefler et al. 2014, Mathy et al. 2014, Kothmann et al. 2009, V\u00f6lgyi et al. 2013, Parker et al. 2009). This background establishes that electrical coupling plasticity is a known phenomenon, making the current study's contribution the demonstration of its role in acute homeostatic compensation in an intact network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Intrinsic conductances can be differentially affected by neuromodulation and temperature changes, and the effectiveness of electrical coupling can be affected by modulation of intrinsic cellular conductances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 describe how natural mechanisms can perturb conductances, providing physiological context for why compensatory mechanisms would be important. These are supported by appropriate citations (Marder 2011, 2012, Tang et al. 2012, Marder et al. 2015, Szabo et al. 2010). This contextualizes the TEA manipulation as a model for naturally occurring perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The cardiac ganglion network consists of 4 small cell pacemaker interneurons providing excitatory input to 5 large cell motor neurons. Anterior LCs exhibit strong local electrical and dye coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe the basic anatomy and connectivity of the cardiac ganglion system. These are established facts supported by citations (Tazaki and Cooke 1979, 1983) and provide necessary background for understanding the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Homeostatic plasticity has been reported in isolated neurons, cultured networks, and CNS slices. Cortical slices show coordinated plasticity of intrinsic conductances and chemical synapses, and Mauthner cells show coordinated changes in chemical and electrical components of mixed synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 review prior work on homeostatic plasticity in various preparations. These are well-supported by appropriate citations (Swensen and Bean 2005, Ransdell et al. 2012, Desai et al. 1999, Ibata et al. 2008, Karmarkar and Buonomano 2006, Lambo and Turrigiano 2013, Yang et al. 1990, Pereda and Faber 1996). This establishes that coordinated plasticity across mechanisms has been observed before, but not in the specific context of intrinsic + electrical coupling in an intact functional network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Degeneracy of ion channel properties has been proposed as a mechanism for network robustness, but this study suggests physiological limits to compensation. Compensated LCs never recapitulated their original voltage waveforms, and these limits may contribute to neurodegenerative disease pathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C76 is well-supported by citations (Tononi et al. 1999, Marder and Goaillard 2006). Claim C77 is supported by the experimental observation that compensated waveforms differ from control (C33, Figure 4E), though the broader implications for 'physiological limits' require more extensive investigation. Claim C78 is speculative and appropriately hedged ('may'), but the connection to neurodegenerative diseases is not directly tested and relies only on citations to other work. The limits observed here are in the context of a specific perturbation (TEA blockade) and may not generalize to all forms of network stress.",
+    "result_type": "MINOR"
+  }
+]

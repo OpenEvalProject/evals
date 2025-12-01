@@ -1,0 +1,1419 @@
+{
+  "submission": {
+    "id": "295ae137-9c73-4aab-9755-f15525931b35",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:42:07.637010Z",
+    "updated_at": "2025-11-30T23:42:07.637010Z"
+  },
+  "content": [
+    {
+      "id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "submission_id": "295ae137-9c73-4aab-9755-f15525931b35",
+      "content_type": "manuscript",
+      "content_text": "# Optical control of pain in vivo with a photoactive mGlu5 receptor negative allosteric modulator\n\n## Authors\n\n- Joan Font<sup>1</sup>\n- Marc L\u00f3pez-Cano<sup>4</sup>\n- Serena Notartomaso<sup>6</sup> ([ORCID: 0000-0003-4374-9233](https://orcid.org/0000-0003-4374-9233))\n- Pamela Scarselli<sup>6</sup> ([ORCID: 0000-0002-4245-0849](https://orcid.org/0000-0002-4245-0849))\n- Paola Di Pietro<sup>6</sup> ([ORCID: 0000-0003-1327-1961](https://orcid.org/0000-0003-1327-1961))\n- Roger Bresol\u00ed-Obach<sup>7</sup> ([ORCID: 0000-0002-7819-7750](https://orcid.org/0000-0002-7819-7750))\n- Giuseppe Battaglia<sup>6</sup> ([ORCID: 0000-0001-7571-3417](https://orcid.org/0000-0001-7571-3417))\n- Fanny Malhaire<sup>8</sup>\n- Xavier Rovira<sup>8</sup> ([ORCID: 0000-0002-9764-9927](https://orcid.org/0000-0002-9764-9927))\n- Juanlo Catena<sup>1</sup>\n- Jes\u00fas Giraldo<sup>2</sup> ([ORCID: 0000-0001-7082-4695](https://orcid.org/0000-0001-7082-4695))\n- Jean-Philippe Pin<sup>8</sup> ([ORCID: 0000-0002-1423-345X](https://orcid.org/0000-0002-1423-345X))\n- V\u00edctor Fern\u00e1ndez-Due\u00f1as<sup>4</sup> ([ORCID: 0000-0001-7834-2965](https://orcid.org/0000-0001-7834-2965))\n- Cyril Goudet<sup>8</sup> ([ORCID: 0000-0002-8255-3535](https://orcid.org/0000-0002-8255-3535))\n- Santi Nonell<sup>7</sup>\n- Ferdinando Nicoletti<sup>6</sup> ([ORCID: 0000-0003-0917-443X](https://orcid.org/0000-0003-0917-443X))\n- Amadeu Llebaria<sup>1</sup> ([ORCID: 0000-0002-8200-4827](https://orcid.org/0000-0002-8200-4827)) \u2020\n- Francisco Ciruela<sup>4</sup> ([ORCID: 0000-0003-0832-3739](https://orcid.org/0000-0003-0832-3739)) \u2020\n\n### Affiliations\n\n1. MCS, Laboratory of Medicinal Chemistry Institute for Advanced Chemistry of Catalonia (IQAC-CSIC) Barcelona Spain\n2. Institut de Neuroci\u00e8ncies Universitat Aut\u00f2noma de Barcelona Bellaterra Spain\n3. Unitat de Bioestad\u00edstica Universitat Aut\u00f2noma de Barcelona Bellaterra Spain\n4. Departament de Patologia i Terap\u00e8utica Experimental Facultat de Medicina i Ci\u00e8ncies de la Salut, IDIBELL, Universitat de Barcelona Barcelona Spain\n5. Institut de Neuroci\u00e8ncies Universitat de Barcelona Barcelona Spain\n6. I.R.C.C.S. Neuromed Pozzilli Italy\n7. Institut Qu\u00edmic de Sarri\u00e0 Universitat Ramon Llull Barcelona Spain\n8. IGF CNRS, INSERM, Univ. Montpellier Montpellier France\n9. Network Biomedical Research Center on Mental Health (CIBERSAM) Instituto de Salud Carlos III Madrid Spain\n10. Department of Physiology and Pharmacology University Sapienza Rome Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nLight-operated drugs constitute a major target in drug discovery, since they may provide spatiotemporal resolution for the treatment of complex diseases (i.e. chronic pain). JF-NP-26 is an inactive photocaged derivative of the metabotropic glutamate type 5 (mGlu5) receptor negative allosteric modulator raseglurant. Violet light illumination of JF-NP-26 induces a photochemical reaction prompting the active-drug\u2019s release, which effectively controls mGlu5 receptor activity both in ectopic expressing systems and in striatal primary neurons. Systemic administration in mice followed by local light-emitting diode (LED)-based illumination, either of the thalamus or the peripheral tissues, induced JF-NP-26-mediated light-dependent analgesia both in neuropathic and in acute/tonic inflammatory pain models. These data offer the first example of optical control of analgesia in vivo using a photocaged mGlu5 receptor negative allosteric modulator. This approach shows potential for precisely targeting, in time and space, endogenous receptors, which may allow a better management of difficult-to-treat disorders.\n\n## Introduction\n\nMetabotropic glutamate (mGlu) receptors are widely distributed along the pain neuraxis and modulate pain transmission (Kolber, 2015) at different anatomical levels. Hence, subtype-selective mGlu receptor ligands are considered as promising candidate drugs for the treatment of chronic pain. Accordingly, selective negative allosteric modulators (NAMs) of mGlu1 or mGlu5 receptors, and agonists or positive allosteric modulators (PAMs) of mGlu2 or mGlu4 receptors have consistently been shown to display analgesic activity in experimental animal models of chronic pain (Montana and Gereau, 2011). In particular, mGlu5 receptor NAMs (i.e. raseglurant) are under development for the treatment of neuropathic pain and migraine; however, their systemic use may be limited by mechanism-related adverse effects, such as hepatotoxicity, cognitive impairment and psychotomimetic effects (Friedmann et al., 1980; Gravius et al., 2005; Homayoun et al., 2004; Kinney et al., 2003).\n\nThe use of light in optogenetics (Tye and Deisseroth, 2012) and photopharmacology (Kramer et al., 2013; Lerch et al., 2016) to control activity of living neurons is a ground-breaking approach that is reaching a high impact in experimental neuroscience (Boyden, 2015) and drug discovery (Song and Kn\u00f6pfel, 2016). Photopharmacology is based on the use of photoactive drugs that can trigger biological responses upon light irradiation at appropriate wavelengths. Accordingly, temporal and spatial remote control of drug activity is possible with a highly precise regulation of its in vivo effects. Differently from optogenetics, the application of photoregulated ligands and optical techniques allows the modulation of native proteins without genetic manipulation, thus facilitating translation into therapeutics with protocols similar to those employed in conventional drug discovery and clinical practice. The potential application of this strategy to pain treatment is highlighted by the evidence that a photoisomerizable molecule entering nociceptive neurons through the TrpV1 ion channel causes analgesia by inhibiting voltage-gate ion channels in response to illumnation (Mourot et al., 2012). We developed alloswitch-1, a selective photoswitchable mGlu5 receptor NAM, which allowed the optical control of endogenous receptors (Pittolo et al., 2014), in an attempt to achieve a light-dependent control of mGlu5 receptors within the pain neuraxis. However, alloswitch-1 and related photoswitchable compounds show mGlu5 NAM activity in its natural trans configuration in the dark, thereby causing light-independent analgesic effects in animals (G\u00f3mez-Santacana et al., 2017). Therefore, we aimed to synthesize an inactive mGlu5 receptor NAM, which is converted into an effective analgesic drug upon illumination. An effective strategy to achieve this would consist of developing inactive photosensitive mGlu5 receptor-based drugs, which may thereafter be activated by light administration (photo-uncaging) exclusively in brain regions critically involved in the control of pain. This approach may allow the release of the active drug in an anatomically restricted fashion and with regulated dosing. The photodelivery of biologically active molecules has been usually addressed using either direct compound photolysis (Ellis-Davies, 2007) or light-triggered release from nanosystems (Fomina et al., 2012), although uncaging in vivo has been seldom used in rodents (Crowe et al., 2010; Takano et al., 2006). Here, we aimed to develop a photoactivatable mGlu5 receptor NAM, which upon local illumination in the hind paw or the thalamus would exert analgesic effects.\n\n## Results\n\nDesign and synthesis of a caged mGlu5 receptor NAM. We applied a caging strategy to generate a photocaged compound based on the chemical binding of the mGlu5 receptor NAM, raseglurant (ADX-10059), to a coumarinyl phototrigger (Figure 1). Thus, we synthesized JF-NP-26 (Figure 1) by modifying the aromatic amine group in raseglurant to generate a carbamate derivative of the violet-light absorbing coumarin DEACM in a one pot procedure (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig1-v4.jpg)\n\n**Figure 1.:** The synthesis of JF-NP-26 from raseglurant involves a one-pot procedure using raseglurant and 4-hydroxymethyl-7-diethylaminocoumarin (DEACM). In brief, a first reaction with triphosgene, NEt3 and toluene for 3 hr was followed by an incubation with DEACM, NaH and THF at 100\u00b0C for 12 hr (see Materials and methods). Upon irradiation with 405 nm visible light the irreversible photolytic reaction produced raseglurant. The following figure supplements are available for Figure 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig1-figsupp1-v4.jpg)\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig1-figsupp2-v4.jpg)\n\nTransformation of the amino group of raseglurant into the coumarinyl carbamate shifted its main UV-vis absorption band from 338 nm to around 313 nm, and a second absorption peak appeared at 386 nm due to the coumarinyl phototrigger (Figure 2A). Subsequently, we assessed the photochemical behaviour of JF-NP-26 upon exposure to 405 nm light (Figure 2B), which is safer than UV radiation for our in vivo biological experiments. The UV-visible absorption spectrum of JF-NP-26 showed dramatic changes upon 405 nm irradiation (Figure 2C), consistent with the photo-induced release of raseglurant and leaving the coumarinyl alcohol DEACM (Figure 2A). The photouncaging quantum yield was determined by potassium ferrioxalate actinometry (Kuhn et al., 1989), as \u03c6chem = 0.18 (Figure 2D). This process is likely involving the photolysis of the benzylic bond in JF-NP-26, thus generating a carbamic acid derivative that spontaneously decarboxylates to give raseglurant.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig2-v4.jpg)\n\n**Figure 2.:** (A) UV-visible absorption spectra of raseglurant (Ras), the coumarine DEACM, and JF-NP-26 (JF) in PBS. The sum of the free Ras and DEACM spectra shows important differences relative to that of their conjugate JF (B) Neuronal viability upon 405 nm irradiation. The neuronal viability was assessed using the 3-(4,5-dimethylthiazol-2-yl)\u22122,5-diphenyltetrazolium bromide (MTT) assay (see Supplementary Information). Cultured neurons were irradiated with 405 nm light during 5, 15 and 160 min before the MTT incubation 3% hydrogen peroxide (HP) was used a positive control of cell death. All values were normalized using intact neurons as a 100% of viability threshold and expressed as mean \u00b1 S.E.M. of three independent experiments performed in triplicate. (C) Changes in the absorption spectrum of JF-NP-26 upon illumination in PBS with 405 nm light. The spectrum of the irradiated sample shows an excellent match with the sum of the free Ras and DEACM spectra in panel A. (D) Determination of the quantum yield of raseglurant photouncaging by comparison of the rate of this process with the rate of a standard photochemical reaction, namely ferrioxalate photoreduction (\u03c6r = 1.14 at 405 nm, see Experimental Section).\n\n### Optical modulation of mGlu5 receptor activity with JF-NP-26 in cultured cells and in primary neurons\n\nSubsequently, we assessed the JF-NP-26-mediated negative allosteric modulation of mGlu5 receptor-induced responses to the orthosteric agonist quisqualate, by using an inositol phosphate (IP) accumulation assay (Figure 3A). Interestingly, while JF-NP-26 didn\u2019t show activity in dark conditions, its NAM activity was rescued upon 405 nm visible light illumination (pIC50\u00a0=\u00a07.1; Figure 3A). Thus, a light-dependent gain of function was demonstrated for JF-NP-26 in the mGlu5-mediated IP accumulation assay. In addition, we evaluated the ability of JF-NP-26 to photomodulate the mGlu5 receptor-mediated intracellular calcium accumulation in cultured cells ectopically expressing the receptor (Figure 3B). Agonist challenge induced a robust mGlu5 receptor-mediated intracellular calcium rise both in dark and under 405 nm illumination, which was blocked by raseglurant (Figure 3B). Interestingly, again while JF-NP-26 was unable to restrain agonist-mediated signalling in dark conditions, it abolished mGlu5 receptor-mediated intracellular calcium accumulation upon 405 nm irradiation (Figure 3C), thus demonstrating a light-dependent NAM activity. Next, we performed similar calcium experiments in cultured neurons from mouse striatum (Figure 3D) to assess the light-dependency of NAM activity in a native system (Figure 3E). Results (Figure 3F) were comparable to those obtained in heterologous expression systems (Figure 3C), thus indicating that optical modulation of JF-NP-26 could also be performed in a native receptor environment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig3-v4.jpg)\n\n**Figure 3.:** (A) Determination of mGlu5 receptor-mediated inositol phosphate accumulation in transiently transfected HEK-293T cells. Normalized dose-response of raseglurant (Ras)- and JF-NP-26 (JF)-mediated inhibition of quisqualate (1 \u00b5M)-induced IP accumulation in dark or upon irradiation at 405 nm (violet trace) in mGlu5 receptor expressing cells. Each data point corresponds to mean\u00b1 SEM of three independent experiments performed in triplicate. The pEC50 value determined for quisqualate was 7.52. (B) Transiently transfected HEK-293T cells with the mGlu5 receptor were pretreated with vehicle (veh), raseglurant (Ras) and JF-NP-26 (JF) at 1 \u00b5M in the dark (left panel) or upon 405 nm irradiation (right), and then challenged with quisqualate (Quis, 100 \u03bcM). (C) Quantification of mGlu5 receptor inhibition. The percentage of receptor inhibition is calculated as described in Materials and methods and expressed as mean \u00b1 S.E.M. (n\u00a0=\u00a010). ***p<0.001, one-way ANOVA with Dunnett\u2019s multiple comparison test using the Veh+dark condition as a control. (D) Expression of mGlu5 receptor in primary striatal neurons. Primary striatal neurons were fixed, permeabilized and immunostained using a rabbit anti-mGlu5 receptor (1 \u00b5g/ml) antibody. The primary antibody was detected using Cy3-conjugated donkey anti-rabbit antibody (1/200). Neurons were analyzed by single immunofluorescence with a confocal microscopy. Scale bar: 10 \u03bcm. (E) Determination of mGlu5 receptor-mediated intracellular calcium accumulation in primary striatal neurons. Neurons were incubated with vehicle (veh), raseglurant (Ras) or JF-NP-26 (JF), then kept in the dark (left panel) or irradiated at 405 nm (right panel) before being challenged with quisqualate (Quis) (see Materials and methods). (F) Quantification of mGlu5 receptor inhibition. The percentage of receptor inhibition is calculated as described in the Material and methods section and expressed as mean \u00b1 S.E.M. (n\u00a0=\u00a05\u201310). **p<0.005 and ***p<0.001, one-way ANOVA with Dunnett\u2019s multiple comparison test using the Veh+dark condition as a control.\n\n### Peripheral and central antinociceptive action of JF-NP-26 upon in vivo photoactivation\n\nWe assessed the in vivo analgesic activity of JF-NP-26 activated by light in two established models of pain in mice: the chronic constriction injury (CCI) model of neuropathic pain and the formalin test (Figure 4A) (Mogil, 2009).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig4-v4.jpg)\n\n**Figure 4.:** (A) Scheme showing the different LED-mediated irradiation points within the pain neuraxis (i.e. hind paw and thalamus) and pain triggering (i.e. hind paw formalin administration and chronic constriction injury -CCI- of the sciatic nerve). VPM, ventral posteromedial nucleus. (B) Chronic constriction injury (CCI) of the sciatic nerve causing mechanical allodynia. Mechanical thresholds were measured in 21 days post-surgery CCI mice. Thus, animals were intraperitoneally injected with vehicle (Veh, saline), raseglurant (Ras, 10 mg/kg) or JF-NP-026 (JF, 10 mg/kg) 20 min before the thalamus was irradiated at 405 nm (or dark) for 5 min. Subsequently, the mechanical thresholds were assessed before and after light irradiation. Values are means \u00b1 S.E.M. of 7\u20139 mice per group. **p<0.05, Student t test, JF-NP-26 dark vs. JF-NP-26 irradiated and raseglurant dark vs. Veh dark.\n\nFirst, we proved the validity of our approach in mice subjected to unilateral CCI of the sciatic nerve, in which we explored the contribution of central mGlu5 receptors by photomodulating these receptors in the ventrobasal thalamus, a pivotal relay and processing point for somatosensory information ascending from the spinal cord to the cerebral cortex (Kolber, 2015; Palazzo et al., 2014). Accordingly, we implanted optical fibers in the brain to allow precise light delivery into the ventrobasal thalamus (Figure 4A). Importantly, we used a LED lamp illumination system, not requiring the use of laser sources to achieve the photorelease of the active compound, and assessed mechanical pain thresholds by means of von Frey filaments (Figure 4A). Interestingly, a single injection of raseglurant (10 mg/kg, i.p.) significantly increased pain thresholds in CCI mice regardless of light irradiation (Figure 4B; data with raseglurant after irradiation are not shown). In contrast, systemic injection of JF-NP-26 (10 mg/kg, i.p.) significantly (p<0.01) increased pain thresholds in CCI mice only after thalamic irradiation (Figure 4B).\n\nOn the basis of this proof of principle success, we took advantage of a different mice model of pain to further investigate the analgesic activity of light-delivered JF-NP-26 either in the periphery or in ventrobasal thalamus. The formalin test, which allows an objective analysis of pain based on nocifensive behavior, displays a first phase of pain (5 min after formalin injection in the hind paw), which models acute inflammatory pain, and a second phase (20\u201330 min after formalin injection), which models chronic inflammatory pain and reflects the development of central sensitization (Mogil, 2009). Formalin injection into the mouse hind paw induced an innate licking behavior that was significantly reduced by systemic administration of raseglurant (10 mg/kg, i.p., Figure 5, middle panel), thus demonstrating an antinociceptive efficacy both in phase I (70 \u00b1 3%, p<0.001) and phase II (97 \u00b1 1%, p<0.001) of the formalin test. We then directly irradiated the ipsilateral hind paw with external 405 nm light (Figure 4A) following the experimental regimen shown in Figure 5 (upper panel). Noteworthy, while JF-NP-26 (10 mg/kg, i.p.) was unable to promote antinociception in dark conditions (Video 1), it elicited antinociception following direct hind paw irradiation both at phase I (54 \u00b1 5%, p<0.001) and phase II (34 \u00b1 5%, p<0.001) (Figure 5, middle panel; Video 2), demonstrating that JF-NP-26 was able to be peripherally photoactivated. Interestingly, under the same experimental conditions when the contralateral hind paw was irradiated no antinociceptive effect was observed (Figure 5, middle panel, column C), thus demonstrating that a non-site specific peripheral photoconversion of JF-NP-26 does not yield systemic raseglurant-mediated analgesia. On the other hand, we also evaluated the effects of JF-NP-26 by delivering light into the ventrobasal thalamus. As shown in Figure 5 (lower panel), implantation of the illumination system by itself did not affect nocifensive responses in the formalin test and did not alter the analgesic activity of raseglurant, as expected. While JF-NP-26 (10 mg/kg, i.p.) was inactive under basal conditions, it was able to cause substantial analgesia both in phase I (45 \u00b1 9%, p<0.01) and phase II (90 \u00b1 4%, p<0.001) of the formalin test in response to thalamic irradiation (Figure 5, lower panel). Importantly, under the same experimental conditions when the striatum was irradiated no antinociceptive effect was observed (Figure 5, lower panel, column S), indicating that a CNS region of the pain neuraxis must be specifically irradiated to obtain pain control by JF-NP-26. Significantlly, uncaging of JF-NP-26 in the thalamus produced a stronger analgesic effect in phase II of the formalin test, which reflects mechanisms of central sensitization. Finally, the thalamic irradiation effects of JF-NP-26 were obtained after intraperitoneal administration, demonstrating its effective brain penetration in mice. Overall, upon local and thalamic photoactivation, JF-NP-26 demonstrated analgesic effects in two different models of pain, thus raising the interesting possibility that localized light targeting of peripheral and thalamic mGlu5 receptors represent a valuable strategy for the treatment of pain diseases.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig5-v4.jpg)\n\n**Figure 5.:** In the upper panel a scheme of the irradiation regime at 405 nm light (violet rectangles) and liking recordings (green rectangles - Phase I and Phase II) in the formalin animal model of pain is shown. Thus, animals were intraperitoneally injected with vehicle (Veh, 20%DMSO\u00a0+\u00a020%tween80 in saline), raseglurant (Ras, 10 mg/kg) or JF-NP-026 (JF, 10 mg/kg) 20 min before the hind paw or the thalamus was irradiated at 405 nm (or dark) for 5 min. As a control, the contralateral hind paw (C) or the striatum (S) were also irradiated. Subsequently, the total hind paw licking was measured for 0\u20135 min (Phase I) and 15\u201330 min (Phase II) after intraplantar injection of 20 \u00b5l of formalin solution (2.5% paraformaldehide). The antinociceptive effect was calculated as the percentage of the maximum possible effect (mean \u00b1 S.E.M., n\u00a0=\u00a05\u20136 mice per group). **p<0.01 and ***p<0.001, one-way ANOVA with Dunnett\u2019s multiple comparison test using Veh+dark as a control.\n\n### Systemic administration and in vivo photoactivation of JF-NP-26 does not impair memory in mouse\n\nRaseglurant has been shown to possess effectiveness on migraine treatment (Keywood and Wakefield, 2008). However, despite good clinical efficacy, tolerability and safety in a 2-week double-blind, placebo-controlled, multicentre trial (Zerbib et al., 2011), the long-term administration of raseglurant in migraine patients resulted in a disappointing high incidence of hepatic transaminase abnormalities, thus halting any further clinical development (Marin and Goadsby, 2010). Hence, we aimed to assess if raseglurant and JF-NP-26 induced liver toxicity in mice. To this end, we determined serum levels of alanine aminotransferase (ALT) and aspartate aminotransferase (AST) after a 3-day high dose (i.e. 50 mg/kg) raseglurant and JF-NP-26 treatment, thus harsher conditions to that used in our antinociceptive experiments (i.e. single dose of 10 mg/kg, ip). Interestingly, while a 3-day acetaminophen treatment (300 mg/kg, ip) induced a significant increase in serum ALT and AST (Figure 6A), as described (Zhang et al., 2015), the 3-day raseglurant and JF-NP-26 treatment (50 mg/kg, ip) did not alter ALT and AST serum levels (Figure 6A). Thus, these results demonstrated that raseglurant and JF-NP-26 treatments used in our pain animal models were safe because no liver toxicity was observed.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23545/elife-23545-fig6-v4.jpg)\n\n**Figure 6.:** (A) Effect of Raseglurant and JF-NP-26 on serum transaminases. Mice were treated with vehicle (veh), acetaminophen treatment (APAP; 300 mg/kg, ip), raseglurant (Ras; 50 mg/kg, ip) or JF-NP-26 (JF; 50\u00a0mg/kg, ip) for three consecutive days. Serum levels of alanine aminotransferase (ALT) and aspartate aminotransferase (AST) were determined as described in Materials and methods. The results are expressed as means \u00b1 S.E.M. of three mice per group. **p<0.01, ***p<0.001 (One-Way ANOVA followed by Dunnett's post hoc test using the vehicle condition as a control. (B) Novel object recognition test. The time spent in exploring novel and familiar objects were measured 35 min after drug administration. Naive mice were intraperitoneally injected with vehicle (6% DMSO\u00a0+6% tween80 in saline) or raseglurant (10 or 20 mg/kg). Mice bilaterally implanted with optic fibers in the thalamus were injected with vehicle or JF-NP-26 3 (10 or 20 mg/kg) 15 min before light irradiatiation (405 nm for 5 min). Values are means \u00b1 S.E.M. of 4\u20137 mice per group. *p<0.05 (One-Way ANOVA + Fisher's LSD test) vs. the respective values of the time spent with the familiar object (F(7,38) = 7.28). Doses of 10 mg/kg of either raseglurant in naive mice or JF-NP-26 three in light-irradiated mice did not affect recognition memory. These data are not included in the graph.\n\n![Video 1.](https://cdn.elifesciences.org/articles/23545/elife-23545-media1.mp4.jpg)\n\n**Video 1.:** Mouse, in a glass beaker (15 cm \u00f8 x 20 cm height), was administered with JF-NP-26 (10 mg/kg, i.p.). After 20 min, the LED-based irradiation system was attached to the thalamic implanted optic fiber and mock irradiated (dark) during 5 min. Then, formalin solution (20 \u03bcL) was intraplantarly (i.pl.) injected and total licking or biting time of the hind paw was recorded. A 30 s\u2019 video fragment exemplifying the formalin test is shown.\n\n![Video 2.](https://cdn.elifesciences.org/articles/23545/elife-23545-media2.mp4.jpg)\n\n**Video 2.:** Mouse, in a glass beaker (15 cm \u00f8 x 20 cm height), was administered with JF-NP-26 (10 mg/kg, i.p.). After 20 min, the LED-based irradiation system was attached to the thalamic implanted optic fiber and irradiated with 405 nm visible light during 5 min. Then, formalin solution (20 \u03bcL) was intraplantarly (i.pl.) injected and total licking or biting time of the hind paw was recorded. A 30 s\u2019 video fragment exemplifying the formalin test is shown.\n\nOn the other hand, it has been reported that mGlu5 receptor NAMs may produce behavioural undesirable side effects. For instance, systemic administration of MPEP, a mGlu5 receptor NAM, reduced reference memory in rats (Christoffersen et al., 2008). Thus, we aimed to explore whether systemic administration and local photoactivation of JF-NP-26 circumvented raseglurant-associated adverse effects. To this end, we assessed the impact of raseglurant and JF-NP-26 in mouse working/reference memory by using the novel object recognition test. As expected, naive mice injected with vehicle spent significantly more time in exploring the novel object than the familiar object (Figure 6B). Interestingly, raseglurant impaired novel object recognition at the dose of 20 mg/kg (Figure 6B), although it was inactive at 10 mg/kg (not shown). Optic fiber implanted mice treated with vehicle or JF-NP-26 (10 or 20 mg/kg) and irradiated bilaterally at the ventrobasal thalamus (see above) showed a normal performance in the novel object recognition test (Figure 6A). Overall, these results demonstrated that neither the systemic administration nor the thalamic photoactivation of JF-NP-26 cause memory impairment in mice.\n\n## Discussion\n\nWe report a new pharmacological approach based on analgesic ligands endowed with light-dependent activity. This strategy allows the photocontrol of mGlu5 receptors at different stations of the pain neuraxis.\n\nTo our knowledge, JF-NP-26 is the first caged mGlu5 receptor NAM that has been shown to induce light-dependent analgesia in models of inflammatory and neuropathic pain in freely behaving animals. The ability to resolve analgesia with a fine resolution in time and space confers to our experimental approach a high significance for further development of new caged drugs acting at different levels of the pain neuraxis.\n\nRaseglurant is a mGlu5 receptor NAM that has been shown to possess efficacy on the treatment of migraine (Keywood and Wakefield, 2008). However, its clinical development was discontinued because of liver toxicity (Marin and Goadsby, 2010). Accordingly, we synthesized a caged compound (JF-NP-26) that upon illumination would release raseglurant only in the areas of interest, thus avoiding potential systemic undesired effects associated to mGlu5 receptor functioning (i.e. memory impairment). Of note, uncaging of JF-NP-26 was designed to be elicited with light pulses in the visible spectrum (405 nm). This property differentiates JF-NP-26 from the majority of caged compounds that require UV light for activation. This is highly advantageous for translational research because light within the visible spectrum has a good tissue penetration and causes less tissue damage with respect to UV light (Regan and Parrish, 1993). Remarkably our LED-based illumination allowed the effective transdermal uncaging of JF-NP-26 at the mouse hind paw, just where many noxious stimuli are detected and transduced by peripheral nociceptors. In fact, mGlu5 receptors are expressed in peripheral nociceptors, where they contribute to mechanisms of nociceptive sensitization by enhancing the activity of TRPV1 channels through a complex mechanism mediated by inositol phospholipid hydrolysis, prostaglandin formation, and protein kinase A-dependent phosphorylation of TRPV1 (Bhave et al., 2001; Karim et al., 2001; Neugebauer, 2001; Hu et al., 2002). Thus, raseglurant released from JF-NP-26 in response to light irradiation in the hind paw may interact with mGlu5 receptors present in peripheral nociceptors, thereby causing analgesia in the formalin test. In line with this, intraplantar JF-NP-26 uncaging showed higher antinociceptive efficacy in the first phase of the formalin test, which reflects the activation of peripheral nociceptors (Hunskaar and Hole, 1987).\n\nOne of the major findings of the present work consists of the local photoactivation of JF-NP-26 to give the active compound after its systemic (i.p.) administration. Accordingly, mice were systemically injected with JF-NP-26, and fast antinociceptive effects were produced by light irradiation in the ventrobasal thalamus, the main relay station of the ascending pain pathway modulating the sensory, cognitive, and emotional components of pain. Light-mediated delivery of raseglurant in the thalamus showed a greater antinociceptive efficacy during the second phase of the formalin test, which reflects the development of central sensitization to inflammatory pain. Hence, our data suggested that mGlu5 receptors located at two different stations of the pain neuraxis (i.e., peripheral nociceptors and ventrobasal thalamic nuclei) might be contributing differentially to acute inflammatory pain and mechanisms of central sensitization Importantly, JF-NP-26 also showed fast analgesic activity in the CCI model of neuropathic pain in response to thalamic irradiation. Neuropathic pain is characterized by a robust and long-lasting nociceptive sensitization that reflects a maladaptive process of activity-dependent synaptic plasticity (Basbaum et al., 2009). Interestingly, mGlu5 receptors participate on the expression of this pathological form of synaptic plasticity at different levels of the pain neuraxis, from the spinal cord to the regions of the pain matrix including the amygdala and cerebral cortex (Neugebauer et al., 2003; Li and Neugebauer, 2004; Hu et al., 2007; Hu and Gereau, 2011; Lin et al., 2015). Our data indicate that thalamic mGlu5 receptors are critical for the expression of nociceptive sensitization and can be specifically targeted by analgesic drugs in the treatment of neuropathic pain. Overall, our research provided valuable information regarding the contribution of mGlu5 receptors to the processing of nociceptive transmission at specific anatomic loci within the pain neuraxis (e.g., central vs. peripheral) as well as its participation in the modulation of both acute inflammatory and chronic neuropathic pain.\n\nIn conclusion, systemic administration of inactive drugs that are activated by light on demand may provide a powerful strategy to reach a rapid control of pain limiting the development of dose- and mechanism-related adverse effects that are typically encountered with conventional analgesic drugs. Our positive results constitute a proof of principle that mGlu5 receptor NAM uncaging may be a suitable therapeutic approach for the local control of pain, which could be applied in general to conditions of severe pain that are difficult to treat, and, in particular, to conditions of fast-onset severe pain that requires a rapid and highly localized treatment. However, the transition from pre- to clinical settings still has to solve a number of practical problems, including assessment of photoactive compound stability and toxicity, as well as the development of implantable and remotely controlled LEDs covering the photochemical needs to release the active compounds with light.\n\n## Materials and methods\n\n### Synthesis of drugs\n\nAll the chemicals and solvents were provided from commercial suppliers and used without purification, except the anhydrous solvents, which were treated previously through a system of solvent purification (PureSolv), degasified with inert gases and dried over alumina or molecular sieve (dimethyl formamide). Dry triethylamine was distilled over calcium hydride. Building blocks 2-bromo-4,6-dimethylpyridin-3-amine (OR7028) and 1-ethynyl-3-fluorobenzene (PC5956, 98%), were purchased from Apollo Scientific, bis(triphenylphosphine)palladium (II) dichloride (412740,\u00a0\u2265\u00a099% trace metal basis) and copper iodide (03140, purum,\u00a0\u226599,5%) from Sigma-Aldrich (St. Louis, MO, USA). DCEAM coumarin was obtained following the protocol reported in the literature1, starting from 7-diethylamino-4-methylcoumarin (M063,\u00a0\u226598%), purchased from TCI. Reactions were monitored by thin layer chromatography (60 F, 0.2 mm, Macherey-Nagel) by visualisation under 254 and/or 365 nm lamp. Reverse phase column chromatography KP-C18-HS 12g (Biotage), automated with Isolera One with UV-Vis detection (Biotage) using CV (Column volumes) as units for elution gradient, corresponding 1 CV to 1,28 min at 14 mL/min of flux. Flash column chromatography SNAP KP Sil 50 microns (Biotage), automated with IsoleraOnewith UV-Vis detection (Biotage). mp: melting point B-545 (B\u00fcchi), ramp 2 \u00b0C/min. NMR: Variant-Mercury 400 MHz (Agilent Technologies). Chemical shifts are reported in parts per million (ppm) against the reference compound tetramethysilane using the signal of the residual non-deuterated solvent (Chloroform \u03b4\u00a0=\u00a07.26 ppm (1H), \u03b4\u00a0=\u00a077.16 ppm (13C), DMSO \u03b4\u00a0=\u00a02.50 ppm (1H) Methanol \u03b4\u00a0=\u00a03.34 ppm (1H), \u03b4\u00a0=\u00a049 ppm (13C)). High-Performance Liquid Chromatography (HPLC) Alliance 2695 separation module (Waters) coupled to Waters 2996 photodiode detector (DAD) (Waters), 5 \u03bcL of sample 2.5 mM in DMSO was injected, using a KinetexC18 2.6 \u03bcm 4.6 \u00d7 50 mm (Phenomenex) column. The mobile phase used was a mixture of A = NaH2PO4/ Na2HPO4 aqueous buffer 10 mM pH\u00a0=\u00a07 and B = methanol, with the method described as follows: flow 1 mL/min 5%B-70%B 1 min, 70%B-80%B 1 min, 80%B-100%B 6 min, 100%B 1 min, runtime 15 min. Ultrahigh-Performance Liquid Chromatography (UPLC) Aquity(Waters) coupled to an Acquity TUV UV-Vis detector (Waters) and a LCT Premier Orthogonal Accelerated Time of Flight Mass Spectrometer (TOF) (Waters). HRMS: UPLC/MS chromatograms were obtained by injection of 2 \u2018L of sample 25 \u2018M in AcN/DMSO 99:1, using aAcquity UPLC BEH C18 1.7 'm 2.1 \u00d7 100 mm column (Waters). The mobile phase used was a mixture of A = aqueous formic acid 20 mM and B = formic acid 20 nM in acetonitrile, with the method described as follows: flow 0.3 mL/min 5\u201395%B 2.69 min, 95%B 6 min, runtime 14 min. Data from mass spectra were analyzed by electrospray ionization in positive and negative mode. Spectra were scanned between 50 and 1500 Da with values every 0.2 s and peaks are given m/z (% of basis peak). ESI were analyzed by FIA (flux injected analysis) with Acquity(Waters) coupled to LCT Premier Orthogonal Accelerated Time of Flight Mass Spectrometer (TOF) (Waters). Data were obtained in the same conditions as for samples of UPLC/MS.\n\nThe synthesis of 2-((3-fluorophenyl)ethynyl)\u22124,6-dimethylpyridin-3-amine, raseglurant (ADX-10059) (Figure 1) was previously described in the literature (Bolea et al., 2004) using a general conditions of Sonogashira reaction. A solution of 2-bromo-4,6-dimethylpyridin-3-amine (200 mg, 0.995 mmol), bis(triphenylphosphine)palladium (II) dichloride (35 mg,0,05 mmol) and copper iodide (10 mg, 0,05 mmol), previously purged with argon, in 1 mL of anhydrous DMF, 1-ethynyl-3-fluorobenzene (0,12 mL,1.094 mmol) and dry triethylamine (0,42 mL, 2.98 mmol) were added, and the reaction mixture was stirred at 40\u00b0C for 8 hr. After this time, 40 mL of ethyl acetate was added, and the mixture was washed with 40 mL of saturated solution of NaHCO3 and 40 mL of brine, the organic layer was dried over Na2SO4 filtered and evaporated under vacuum. The residue was purified trough flash column chromatography with ethyl acetate-hexane 1:4. A palid brown solid was isolated (197 mg, 83%). A portion of this compound was dissolved in ether and HCl 1N was added, the precipitate was collected by filtration, to give the hydrochloride salt as a yellow solid. 1H NMR (400 MHz, DMSO-d6) \u03b4 7.75\u20137.71 (m, 1H), 7.63 (dd, J\u00a0=\u00a07.6, 1.2 Hz, 1H), 7.56 (td, J\u00a0=\u00a08.0, 5.9 Hz, 1H), 7.50 (s, 1H), 7.39 (td, J\u00a0=\u00a08.6, 2.5 Hz, 1H), 4.00 (s, 4H), 2.54 (s, 3H), 2.34 (s, 3H). 13C NMR (101 MHz, DMSO- d6) \u03b4 162.92, 160.49, 145.61, 141.44, 140.80, 131.08, 131.00, 128.21, 128.18, 127.78, 122.66, 122.56, 118.59, 118.36, 117.57, 117.36, 113.15, 101.11, 79.92, 18.37, 17.88. HRMS (m/z): [M+H]+calcd. for C15H13FN2, 241.1141; found, 241.1112 HPLC/DAD: purity (abs\u00a0=\u00a0254 nm)=100%; RT\u00a0=\u00a03.34 min.\n\nThe synthesis of synthesis of (7-(diethylamino)-2-oxo-2H-chromen-4-yl)methyl (2-((3-fluorophenyl)ethynyl)-4,6-dimethylpyridin-3-yl)carbamate, JF-NP-26 (Figure 1), was performed using conventional chemical methods. A solution of triphosgene (100 mg, 0.336 mmol) in 2 mL of toluene, a mixture of 2-((3-fluorophenyl)ethynyl)-4,6-dimethylpyridin-3-amine (218 mg, 0.90 mmol) and dry triethylamine (0,22 mL, 1.68 mmol) in 2 mL of toluene was added, and the reaction mixture was stirred over 3 hr (the reaction was monitored by TLC).\n\nAfterwards, the reaction mixture was purged with a gentle flow of nitrogen over 20 min to remove the phosgene produced during the reaction, the crude residue was dissolved in 2 mL of toluene and a solution of 7-(diethylamino)-4-(hydroxymethyl)-2H-chromen-2-one (83 mg, 0.337 mmol) and sodium hydride (14 mg, 0.337 mmol) in 1 mL of THF previously stirred at room temperature for 10 min, was added and heated at 100\u00b0C overnight. The mixture was evaporated under vacuum and 40 mL of ethyl acetate were added, washed with 40 mL of brine, dried over Na2SO4, filtered and evaporated under vacuum. The residue was purified by flash column chromatography in ethyl acetate-hexane 3:2. A yellow-orange solid was obtained and it was purified again at isolerabiotage in reverse phase conditions: 4VC (H2O:Acetonitrile 95:5), 3VC (H2O:Acetonitrile 40:60), 10 VC (H2O:Acetonitrile 0:100), the crude was lyophilized overnight. A yellow solid was obtained (95 mg, 55%). Mp: 77\u201379\u00b0C,1H NMR (400 MHz, Methanol-d4) \u03b4 7.50 (s, 1H), 7.41\u20137.29 (m, 3H), 7.28\u20137.21 (m, 2H), 7.19\u20137.12 (m, 1H), 6.67 (d, J\u00a0=\u00a09.1 Hz, 1H), 6.53 (s, 1H), 6.19 (s, 1H), 5.42 (s, 2H), 3.46 (q, J\u00a0=\u00a07.1 Hz, 6H), 1.20 (t,J\u00a0=\u00a07.1 Hz,9H). 13C NMR (101 MHz, cd3od) \u03b4 163.55, 156.93, 156.10, 151.01, 147.16, 130.23, 130.14, 127.60, 127.57, 125.33, 124.78, 118.02, 117.78, 116.28, 116.07, 108.94, 105.74, 96.83, 44.15, 21.87, 16.38, 11.28. HRMS (m/z): [M+H]+calcd. for C30H28FN3O4, 514.2142; found, 514.2125 HPLC/DAD: purity (abs\u00a0=\u00a0254 nm)=100%; RT\u00a0=\u00a05.88 min.\n\n### Photochemical characterization\n\nThe absorption spectra of raseglurant and JF-NP-026 were recorded in DMSO solutions (100 \u03bcM) with a Varian Cary 300 UV-Vis spectrophotometer (Agilent Technologies). Full absorption spectra were obtained by scanning between 300 nm to 600 nm with an average time of 33 ms at 5 nm intervals. To determine the optimal illumination wavelength for uncaging, we recorded UV-Vis spectra plotting the values giving a maximum absorption at 385 nm for JF-NP-026. The photouncaging quantum yield (\u03c6chem) was measured by comparison of the rate of photouncaging (kchem) with the rate of potassium ferrioxalate photoreduction (kr) upon excitation at 405 nm. The solutions of JF-NP-26 and potassium ferrioxalate were optically-matched at 405 nm and the quantum yield of potassium ferrioxalate reduction was taken as \u03c6r = 1.14 (see [Kuhn et al., 1989]). Potassium ferrioxalate was synthesized as described elsewhere (Kl\u00e1n et al., 2013).\n\n### Cell culture\n\nHuman embryonic kindney (HEK) 293 T cells obtained from ATCC (CRL-321, RRID:CVCL_0063) were transiently transfected with the mGlu5 receptor either by polyethylenimine (PEI) method or by electroporation technique. Then, 24 hr after transfection cells were seeded in a 96-well plate (10.000 cells/well) using Dulbecco\u2019s modified eagles medium (Sigma-Aldrich) supplemented with 100 U/mL penicillin (Biowest), 100 \u03bcg/mL streptomycin (Biowest), 10% v/v fetal bovine serum (Invitrogen), 1 mM pyruvic acid (Biowest), non-essential aminoacids (Biowest) and 2 mM L-Glutamine (Biowest). After 24 hr, intracellular calcium determinations experiments were performed. Cells were kept at 5% CO2, 37\u00b0C, and 95% humidity conditions. Cells were tested for mycoplasma content, thus only mycoplasma-free cells were used.\n\n### Striatal primary neurons and immunocytochemistry\n\nPrimary neurons from striatum were cultured from E18 CD-1 mice embryos as previously described\u00a0(Gratacos et al., 2001). In brief, the dissected striatum was treated with 1.25% trypsin (Sigma-Aldrich) for 10 min before being mechanically dissociated with a flame polished Pasteur pipette. Neurons were plated onto poly-D-lysine (0.1 mg/mL)/laminin (0.01 mg/ml)-coated 96-well black plate at a density of 80,000 cells/cm2in minimum essential medium (Invitrogen) supplemented with 10% horse serum(Invitrogen), 10% bovine serum(Invitrogen), 1 mM pyruvic acid (Biowest), and 0.59% glucose\u00a0(Biowest). After 4\u201314 hr, the medium was substituted with Neurobasal medium (Invitrogen) supplemented with penicillin (100 U/mL) (Biowest), streptomycin (100 \u03bcg/mL) (Biowest), 0.59% glucose (Biowest), and B27 supplement (Invitrogen). Neurons were kept at 5% CO2, 37\u00b0C and 95% humidity for 21 days before the calcium determination experiments.\n\nFor immunocytochemistry, primary neurons from striatum growing on coverslips were fixed in 4% paraformaldehyde for 15 min and exposed to a rabbit anti-mGlu5 receptor antibody (1 \u00b5g/ml; Millipore, Billerica, MA, USA; RRID:AB_2295173). Primary antibodies were detected using a Cy3-conjugated donkey anti-rabbit antibody (1/200; Jackson ImmunoResearch Laboratories Inc., West Grove, PA, USA). Coverslips were rinsed for 30 min, mounted with Vectashield immunofluorescence medium (Vector Laboratories, Peterborough, UK) and examined using a Leica TCS 4D confocal scanning laser microscope (Leica Lasertechnik GmbH, Heidelberg, Germany) (Luj\u00e1n et al., 2001).\n\n### Neuronal viability\n\nThe neuronal viability upon irradiation with 405 nm was calculated using the 3-(4,5-dimethylthiazol-2-yl)\u22122,5-diphenyltetrazolium bromide (MTT) assay (adapted from [Lopachev et al., 2016]). In brief, cultured neurons in 96 well plates were irradiated with 405 nm light for different periods of time (5, 15 or 160 min) before the incubation with 0.5 mg/mL of MTT. Subsequently, the medium was removed and 100 \u03bcL of dimethylsulfoxide (DMSO) was added to each well. The absorbance at 540 nm wavelength of each sample was measured in a POLARstar Omega multi-mode microplate reader (BMG Labtech). All values were normalized using intact neurons as a 100% of viability threshold. 3% hydrogen peroxide (HP) was used a positive control of cell death.\n\n### Inositol phosphate determinations\n\nThe mGlu5-mediated inositol phosphate (IP) accumulation was determined using the FRET-based assay IP-One HTRF kit (Cisbio Bioassays) according to the manufacturer\u2019s instructions (Trinquet et al., 2006). Glutamate levels were maintained at minimal concentrations by co-expressing the excitatory amino acid transporter one (EAAC1). Importantly, all the mGlu5 receptor contained a haemagglutinin (HA) epitope tag in their N terminus to allow cell surface expression by ELISA for subsequent normalization. After transfection cells were seeded in black clear-bottom 96-well plates at a concentration of 1.5\u00a0\u00d7\u00a0105 cells/well. The medium was replaced by glutamate-free DMEM GlutaMAX-I (Invitrogen) after 6 hr. Next day cells were challenged with increasing concentrations of the test compounds in the presence of quisqualate EC80 (1 \u00b5M) for 30 min, at 37\u00b0C and 5% CO2 before we determined IP accumulation (Trinquet et al., 2006). When necessary the compounds were irradiated at 405 nm for 5 min before being added to the cells. Finally, the cells were washed once with stimulation buffer (Cisbio Bioassays) to remove any interfering chromophore and then the cells were lysed for IP determination. The IP associated fluorescence was determined in a RUBYstar multimode microplate reader (BMG Labtech).\n\n### Intracellular calcium determinations\n\nFluo-4 NW Calcium Assay Kit (ThermoFisher Scientific) was used to measure intracellular calcium accumulation. In brief, HEK-293T cells or striatal primary neurons grown in 96-well black plates were incubated with Fluo4 NW as indicated by the manufacturer. Subsequently, cells were pretreated for 5 min with vehicle (HBSS), raseglurant or JF-NP-26 (1 \u03bcM) and then maintained in the dark or irradiated at 405 nm for 5 min before being challenged with a saturating concentration (100 \u03bcM) of quisqualate. Real-time Fluo4 NW emission (i.e. 535 nm) was measured after 485 nm excitation in a POLARstar Omega multi-mode microplate reader.\n\nThe results were expressed as the percentage of mGlu5receptor inhibition induced by the treatments following the equation:\n\n$$\nInhibition(%)=[(AUC^{veh}\u2212AUC^{drug})/AUC^{veh}]\\times100\n$$\n\nWhere $AUC^{veh}$ and $AUC^{drug}$ represent the area under curve value in the vehicle- and drug-treated conditions, respectively.\n\n### Animals\n\nAnimals were housed and tested in compliance with the guidelines described in the Guide for the Care and Use of Laboratory Animals (Clark et al., 1996) and following the European Union directives (2010/63/EU). All efforts were made to minimize animal suffering and the number of animals used. For the formalin animal model of pain adult male CD-1 mice (Charles River Laboratories, L\u2019Arbresle, France; RRID:MGI:3785721) weighing 20\u201325 g were used and for the neuropathic pain animal model adult male C57BL/6J mice (Charles River, Calco, Italy; RRID:IMSR_JAX:000664) weighing 20\u201325 g were employed. All animals were housed in groups of five in standard cages with ad-libitum access to food and water and maintained under 12 hr dark/light cycle (starting at 7:30 AM), 22\u00b0C temperature, and 66% humidity (standard conditions). All animal experimentation was carried out by a researcher blind to drug treatments.\n\n### Brain optic fiber implantation\n\nMice were anesthetized with a combination of ketamine/xylacine (dose of 100 mg/kg body weight for ketamine and 10 mg/kg for xylacine) and implanted with optic fibers (TFC_400/475\u20130.53_3.5 mm_TSM4.0_B45, Doric Lenses Inc., Quebec, Canada) using dental cement and chirurgic screws (Agnthos, Liding\u00f6, Sweden) in a Kopf or Stoelting stereotaxic frame (Stoelting Co., Wood Dale, IL, USA). The site of implantation was either the left and right thalamus (coordinates: \u22121.8 mm posterior to the bregma,\u00a0\u00b11.5 mm lateral to the midline, 3.5 mm ventral from the surface of skull) or the left and right striatum (coordinates:\u00a0+1.2 X mm posterior to the bregma,\u00a0\u00b11.5 mm lateral to the midline, 3.5 mm ventral from the surface of skull), following to the atlas of Paxinos and Franklin\u00a0(Franklin and Paxinos, 2008). After optic fiber implantation mice were treated with Metacam (BoehringerIngelheim, Ingelheim am Rhein, Germany) during three days and they were checked routinely for one week.\n\n### Measurement of liver function\n\nSerum ALT and AST activities were determined by using an Olympus AU400 Automatic Biochemical Analyzer (Olympus, Tokyo, Japan) in the Clinical Veterinary Service at the Autonomous University of Barcelona.\n\n### Formalin animal model of pain\n\nThe formalin animal model of pain was performed as previously described (Lapa et al., 2009)\u00a0and explained in more detail at Bio-protocol (L\u00f3pez-Cano et al., 2017). In brief, mice (n\u00a0=\u00a05\u20136) were administered intraperitoneally (i.p.) with vehicle, raseglurant or JF-NP-26 20 min before a diluted formalin solution (20 \u00b5L of 2.5% formalin/0.92% formaldehyde, Sigma-Aldrich) was intraplantarly (i.pl.) injected in the mid-plantar surface of the right hind paw of the mouse. The formalin-induced nociceptive behaviour in dark and light conditions was quantified as the time spent licking or biting the injected paw during the 30 min after the injection of formalin. The initial acute phase (0\u20135 min; phase I), reflecting the acute peripheral pain, was followed by a relatively short quiescent period, which was then followed by a prolonged response (15\u201330 min; phase II) which is related to the development of central nociceptive sensitization. For the peripheral JF-NP-026 uncaging the hind paw was directly irradiated with a LED-based fiberoptic system (Doric Lenses Inc.) at 405 nm light (or dark) for 5 min before the recording of each phase. For the central nervous system uncaging both thalamic nuclei were irradiated through the brain implanted optic fibers (Doric Lenses Inc.) with 405 nm light (or dark) for 5 min before the recording of each phase. The 405 nm light was administered at 2000 mA intensity and 500 Hz frequency.\n\nThe antinociception induced by the treatments in the formalin test was calculated with the equation:\n\n$$\nAntinociceptiveeffect(%)=[(LTV\u2212LTD)/LTV]\\times100\n$$\n\nwhere $LTV$ and $LTD$ represent the licking/biting time in the vehicle- and drug-treated animals, respectively.\n\n### Mechanical allodynia assessment in a neuropathic pain animal model\n\nThe assessment of the mechanical allodynia in the chronic constriction injury (CCI) of the sciatic nerve model was explained in more detail at Bio-protocol (Notartomaso et al., 2018). In brief, the sciatic nerve CCI induction was carried out\u00a0under isoflurane anesthesia (5% for induction and 2% for maintenance), using a modified version of a previously described\u00a0method (Bennett and Xie, 1988). The biceps femoris and the gluteus superficialis were separated by blunt dissection, and the right sciatic nerve was exposed. CCI was produced by tying one ligature (6\u20130 silk, Ethicon, LLC, San Lorenzo, PR, USA) around the sciatic nerve. The ligature was tied loosely around the nerve, until it elicited a brief twitch in the respective hind limb, which prevented over-tightening of the ligation, taking care to preserve epineural circulation. The incision was cleaned and the skin was closed with 2\u20133 ligatures of 5\u20130 dermalon. After performing the ligature of the sciatic nerve, during the same anesthesia session, mice were implanted with optic fibers (see above). After surgery, mice returned to their home cages and checked routinely for 72 hr.\n\nMechanical allodynia was assessed 7, 14 and 21 days after surgery by measuring the hind paw withdrawal response to von Frey filament stimulation. Mice were placed in a dark box (20\u00a0x\u00a020 \u00d7 40 cm) with a wire grid bottom through which the von Frey filaments (North Coast Medical, Inc., San Jose, CA, USA), bending force range from 0.008 to 3.5 g, were applied by using a modified version of the up-down paradigm previously described (Chaplan et al., 1994). Briefly, lack of response to a filament indicated the next higher filament in the following stimulation, whereas a positive response indicated the next lower filament. Each filament was applied and pressed perpendicularly to the plantar surface of the hind paw until it bent for five times with a 3 min interval. The filament that evoked at least three paw withdrawals was assigned as the pain threshold in grams. Mice were treated either with raseglurant (10 mg/kg, i.p. in 6% DMSO, 6% Tween 80 in saline) orJF-NP-26, (10 mg/kg, i.p. in 6% DMSO, 6% Tween 80 in saline). Both thalamic nucleus were irradiated (or dark) through the brain implanted optic fibers (Doric Lenses Inc.) with 405 nm light (or dark) for 5 min, 20 min after drug administration. The light was administered at 2000 mA intensity and 500 Hz frequency and the mechanical thresholds were quantified before and after light irradiation.\n\n### Novel object recognition test\n\nTo evaluate reference memory, we performed the novel object recognition test as previously described (Christoffersen et al., 2008) with minor modifications. In brief, mice were divided into six subgroups: vehicle-injected mice, raseglurant (10 or 20 mg/kg, i.p.)-injected mice, vehicle-injected mice implanted with optic fibers and JF-NP-26 (10 or 20 mg/kg, i.p.)-injected mice implanted with optic fibers. All mice were injected 20 min before the training session. On the first three days, all mice were handled for 3 min once daily and 24 hr later they were habituated for 20 min to the empty arena. On day 5, mice underwent a 5 min training period. Afterwards, mice return to their home cages for 5 min, and were subsequently subjected to a 5 min retention test. The 405 nm light was administered at 2000 mA intensity and 500 Hz frequency in vehicle and JF-NP-26-injected mice 5 min immediately before the training session. Two identical objects were used as familiar objects during the training trial and the third object was used as novel object during the 5 min retention session. As an index of recognition memory, the time spent exploring the familiar and novel object was measured during the retention session.\n\n### Statistics\n\nThe number of samples (n) in each experimental condition is indicated in figure legends. When two experimental conditions were compared, statistical analysis was performed using an unpaired t test. Otherwise, statistical analysis was performed by one-way analysis of variance (ANOVA) followed by Bonferroni post-hoc test. In cell experiments and formalin test results Dunnett\u2019s multiple comparison post-hoc test was performed using Veh+dark as a control. Statistical significance was set as p<0.05.\n",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "a02207dd-8165-4106-9f7c-f7e3021350b1",
+      "submission_id": "295ae137-9c73-4aab-9755-f15525931b35",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23545.012](https://doi.org/10.7554/eLife.23545.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Optical control of pain in vivo with a photoactive mGlu5 receptor negative allosteric modulator\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Gary Westbrook as the Senior Editor and Reviewing Editor. The following individual involved in review of your submission has agreed to reveal his identity: Robert Gereau (Reviewer #1). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe demonstration of effective modulation of behavior with this photocaged compound in mice is exciting pending the inclusion of appropriate controls. However, both reviewers were surprised by the lack of mention of the prior literature relevant to this topic, including the authors' own work in Nature Chemical Biology and work on optical control of nociception. This is critical to put the new results in context. As a result, the authors have in essence oversold the novelty of the study, and must discuss this compound and approach in relation to previously published work. For example, the reasons to use this photocaged compound over a photoswitchable compound must be discussed. Both reviewers also raised a number of technical concerns as indicated in their comments below. It is essential that these issues are addressed in the revised version.\n\nReviewer #1:\n\nThis is a very interesting manuscript describing the development and characterization of a photo-activated mGlu5 NAM, JN-NP-26, a derivitized version of raseglurant, a previously characterized NAM of mGlu5. The authors demonstrate photoconversion of JN to raseglurant, and the analgesic efficacy of the compound, conditionally on photoconversion to raseglurant, in both central (thalamic) and peripheral (hindpaw) modes. The compound presents a potentially very useful tool for the field. Overall \u2013 this is a very interesting and potentially important report. The manuscript would be greatly strengthened by the inclusion of some key additional experiments and controls, as detailed below:\n\n1) Raseglurant is a systemically active mGlu5 NAM. The author demonstrates clearly photoconversion of JN-NP-26 to raseglurant, and that photoconversion of systemically applied JN-NP-26 with light applied to the thalamus or hindpaw leads to analgesia. What is not clear, is whether the effects of the converted JN-NP-26 are due to actions locally. That is \u2013 it is possible that the local photoconversion in the thalamus or hindpaw leads to systemically effective doses of raseglurant, and thus, does not indicate that they have achieved the \"precise targeting in time and space\" that they seek. Additional controls are necessary. What happens if the photostimulation is applied not to the hindpaw, but to (for example) the contralateral hindpaw, or back skin? In the brain \u2013 what happens if the light is applied not to the thalamus, but for example to a region of the brain not thought to be involved in pain \u2013 (who knows\u2026 cerebellum? Olfactory bulb?). This is critical for the interpretation of the data.\n\n2) Related \u2013 the authors have the stated goal of providing mGlu5 blockade-mediated analgesia without the undesired side effects seen with systemic administration of some mGlu5 NAMs. However \u2013 they never actually show that these side effects are absent with the JN-NP-26 photo conversion.\n\n3) Further related \u2013 the stated reason for discontinuation of raseglurant is liver tox \u2013 however, it is unlikely that liver toxicity is mGlu5 mechanism-based. Thus, it is entirely possible that JN-NP-26 may have the same issues with liver toxicity. This has not been tested here, and should be. A comparison of raseglurant to JN-NP-26 on liver tox screens.\n\n4) There is no mention in the manuscript (unless I missed it) as to whether the experiments were performed blind to treatment. This is a necessity.\n\nReviewer #2:\n\nIn this work, Font et al. characterize a photocaged derivative of raseglurant, a negative allosteric modulator the metabotropic glutamate receptor 5 (mGluR5). The compound, JF-NP-26, can be uncaged by illuminating with 405 nm light, both in vitro and in vivo, to reveal raseglurant with spatial and temporal precision, allowing local modulation of mGluR5 receptors. The authors show that JF-NP-26 can be intraperitoneally injected and readily diffuses throughout the mouse before local irradiation at either the paw or in the brain uncages the raseglurant. In two separate in vivo mouse models for pain, hind paw formalin injection and chronic constriction injury of the sciatic nerve, significant differences in antinociceptive effect were observed between irradiated and unirradiated JF-NP-26. This is a solid paper that moves the field forward, however, I don't think it passes the significance test as currently written.\n\n1) The Abstract claims this report to be the first example of optical control of analgesia in vivo, but that is not the case, see Mourot, A..\u2026 Kramer, R.H. \"Rapid optical control of nociception with an ion channel photoswitch\" Nat. Methods 2012.\n\n2) I am also baffled by the omission of discussion and citation of some of the authors own work in the field. Two of their recent papers (Pittolo, S..\u2026 Gorostiza, P. \"An allosteric modulator to control endogenous G protein-coupled receptors with light \" Nat. Chembio. 2014. And Rovira, X.\u2026 LLebaria, A. \" OptoGluNAM4.1, a Photoswitchable Allosteric Antagonist for Real-Time Control of mGlu4 Receptor Activity\" Cell Chem. Bio. 2016) report photoswitchable mGluR4 and mGluR5 negative allosteric modulators. The authors need to make a convincing case for why they are using the single use photocage compound JF-NP-26 instead one of their reversibly activatable compounds.\n\n3) My last major concern is with the penultimate paragraph in the Discussion, for example (\"Our data indicate that thalamic mGlu5 receptors are critical for the expression of nociceptive sensitization and can be specifically targeted by analgesic drugs in the treatment of neuropathic pain\"). Is it not possible/likely, that on the timescale of the formalin experiments (15 min diffusion followed by 5 min irradiation and diffusion) that uncaged raseglurant, whether originating in the foot or brain, will diffuse through the mouse at pharmacologically relevant concentrations, making it difficult to assess the impact of local uncaging?\n",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "48bed856-2d31-4b34-beb6-6afaf23cd74d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C1",
+      "claim": "JF-NP-26 is an inactive photocaged derivative of the metabotropic glutamate type 5 (mGlu5) receptor negative allosteric modulator raseglurant.",
+      "claim_type": "EXPLICIT",
+      "source": "JF-NP-26 is an inactive photocaged derivative of the metabotropic glutamate type 5 (mGlu5) receptor negative allosteric modulator raseglurant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the chemical structure and design of JF-NP-26 as a photocaged compound based on raseglurant, supported by synthesis data and characterization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "9b2ce32d-d3ee-46e2-a12d-d82afe654bab",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C2",
+      "claim": "Violet light illumination of JF-NP-26 induces a photochemical reaction prompting the active-drug's release.",
+      "claim_type": "EXPLICIT",
+      "source": "Violet light illumination of JF-NP-26 induces a photochemical reaction prompting the active-drug's release, which effectively controls mGlu5 receptor activity both in ectopic expressing systems and in striatal primary neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photochemical characterization data showing UV-visible absorption spectra changes upon 405 nm irradiation and quantum yield measurements support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "6ad03fb6-4147-4f1e-9255-b41a16fc1019",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C3",
+      "claim": "JF-NP-26 effectively controls mGlu5 receptor activity in ectopic expressing systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Violet light illumination of JF-NP-26 induces a photochemical reaction prompting the active-drug's release, which effectively controls mGlu5 receptor activity both in ectopic expressing systems and in striatal primary neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inositol phosphate accumulation assays and calcium imaging experiments in HEK-293T cells expressing mGlu5 receptors demonstrate light-dependent control of receptor activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "cb25a4af-b9a7-4016-b53b-16f7fe684fbe",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C4",
+      "claim": "JF-NP-26 effectively controls mGlu5 receptor activity in striatal primary neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Violet light illumination of JF-NP-26 induces a photochemical reaction prompting the active-drug's release, which effectively controls mGlu5 receptor activity both in ectopic expressing systems and in striatal primary neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calcium imaging experiments in cultured striatal neurons show light-dependent inhibition of mGlu5 receptor-mediated responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ebfe3124-46f4-4c67-ad1b-af3827df1709",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C5",
+      "claim": "Systemic administration of JF-NP-26 in mice followed by local LED-based illumination of the thalamus induces light-dependent analgesia in neuropathic pain models.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic administration in mice followed by local light-emitting diode (LED)-based illumination, either of the thalamus or the peripheral tissues, induced JF-NP-26-mediated light-dependent analgesia both in neuropathic and in acute/tonic inflammatory pain models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Chronic constriction injury (CCI) model data showing increased mechanical pain thresholds only after thalamic irradiation support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "9c36057f-9d53-4019-a564-bb2d4565ca0c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C6",
+      "claim": "Systemic administration of JF-NP-26 in mice followed by local LED-based illumination of peripheral tissues induces light-dependent analgesia in acute/tonic inflammatory pain models.",
+      "claim_type": "EXPLICIT",
+      "source": "Systemic administration in mice followed by local light-emitting diode (LED)-based illumination, either of the thalamus or the peripheral tissues, induced JF-NP-26-mediated light-dependent analgesia both in neuropathic and in acute/tonic inflammatory pain models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Formalin test data showing reduced nocifensive behavior after hind paw irradiation support this claim.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "d37b0eb3-5f98-4c13-96fe-aa96e0eedeaf",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C7",
+      "claim": "Metabotropic glutamate (mGlu) receptors are widely distributed along the pain neuraxis and modulate pain transmission at different anatomical levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabotropic glutamate (mGlu) receptors are widely distributed along the pain neuraxis and modulate pain transmission (Kolber, 2015) at different anatomical levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kolber, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "6e86f061-37a1-47c7-9314-8c35d3180e7a",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C8",
+      "claim": "Subtype-selective mGlu receptor ligands are considered as promising candidate drugs for the treatment of chronic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, subtype-selective mGlu receptor ligands are considered as promising candidate drugs for the treatment of chronic pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field and supported by subsequent citations about specific ligands.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "d1d112be-ca7a-455e-94d4-babfc610ce4c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C9",
+      "claim": "Selective negative allosteric modulators (NAMs) of mGlu1 or mGlu5 receptors display analgesic activity in experimental animal models of chronic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, selective negative allosteric modulators (NAMs) of mGlu1 or mGlu5 receptors, and agonists or positive allosteric modulators (PAMs) of mGlu2 or mGlu4 receptors have consistently been shown to display analgesic activity in experimental animal models of chronic pain (Montana and Gereau, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Montana and Gereau, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "5789d475-b4b8-4d91-9cf7-9f3428273013",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C10",
+      "claim": "Agonists or positive allosteric modulators (PAMs) of mGlu2 or mGlu4 receptors display analgesic activity in experimental animal models of chronic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, selective negative allosteric modulators (NAMs) of mGlu1 or mGlu5 receptors, and agonists or positive allosteric modulators (PAMs) of mGlu2 or mGlu4 receptors have consistently been shown to display analgesic activity in experimental animal models of chronic pain (Montana and Gereau, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Montana and Gereau, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "39cab825-b0d6-4f0f-8a88-04b57ae9b7e4",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C11",
+      "claim": "mGlu5 receptor NAMs (i.e. raseglurant) are under development for the treatment of neuropathic pain and migraine.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mGlu5 receptor NAMs (i.e. raseglurant) are under development for the treatment of neuropathic pain and migraine; however, their systemic use may be limited by mechanism-related adverse effects, such as hepatotoxicity, cognitive impairment and psychotomimetic effects (Friedmann et al., 1980; Gravius et al., 2005; Homayoun et al., 2004; Kinney et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about drug development status.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "de5b799a-798d-4f0e-8ce5-af314919a546",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C12",
+      "claim": "Systemic use of mGlu5 receptor NAMs may be limited by mechanism-related adverse effects, such as hepatotoxicity, cognitive impairment and psychotomimetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mGlu5 receptor NAMs (i.e. raseglurant) are under development for the treatment of neuropathic pain and migraine; however, their systemic use may be limited by mechanism-related adverse effects, such as hepatotoxicity, cognitive impairment and psychotomimetic effects (Friedmann et al., 1980; Gravius et al., 2005; Homayoun et al., 2004; Kinney et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Friedmann et al., 1980; Gravius et al., 2005; Homayoun et al., 2004; Kinney et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "5e6dfa9f-d52a-4025-af8a-9bf00449a85d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C13",
+      "claim": "Alloswitch-1 is a selective photoswitchable mGlu5 receptor NAM that allows optical control of endogenous receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed alloswitch-1, a selective photoswitchable mGlu5 receptor NAM, which allowed the optical control of endogenous receptors (Pittolo et al., 2014), in an attempt to achieve a light-dependent control of mGlu5 receptors within the pain neuraxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Pittolo et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "9240a402-871d-4e9d-b79a-4dc4f35f36dd",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C14",
+      "claim": "Alloswitch-1 shows mGlu5 NAM activity in its natural trans configuration in the dark, causing light-independent analgesic effects in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, alloswitch-1 and related photoswitchable compounds show mGlu5 NAM activity in its natural trans configuration in the dark, thereby causing light-independent analgesic effects in animals (G\u00f3mez-Santacana et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to G\u00f3mez-Santacana et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "b877dac7-10d0-47cf-9a95-9969f6a855b3",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C15",
+      "claim": "JF-NP-26 was synthesized by modifying the aromatic amine group in raseglurant to generate a carbamate derivative of the violet-light absorbing coumarin DEACM in a one pot procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we synthesized JF-NP-26 (Figure 1) by modifying the aromatic amine group in raseglurant to generate a carbamate derivative of the violet-light absorbing coumarin DEACM in a one pot procedure (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The synthesis procedure is described in the text and illustrated in Figure 1, with detailed chemical methods provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "4f3e1b6c-2ade-490e-889c-6372d588154d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C16",
+      "claim": "Transformation of the amino group of raseglurant into the coumarinyl carbamate shifted its main UV-vis absorption band from 338 nm to around 313 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Transformation of the amino group of raseglurant into the coumarinyl carbamate shifted its main UV-vis absorption band from 338 nm to around 313 nm, and a second absorption peak appeared at 386 nm due to the coumarinyl phototrigger (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "UV-visible absorption spectra data in Figure 2A demonstrate this spectral shift.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "aaa54566-4549-4fe3-b9d7-feb4b635fb36",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C17",
+      "claim": "A second absorption peak appeared at 386 nm due to the coumarinyl phototrigger in JF-NP-26.",
+      "claim_type": "EXPLICIT",
+      "source": "Transformation of the amino group of raseglurant into the coumarinyl carbamate shifted its main UV-vis absorption band from 338 nm to around 313 nm, and a second absorption peak appeared at 386 nm due to the coumarinyl phototrigger (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "UV-visible absorption spectra data in Figure 2A show this absorption peak.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "72d6f23f-9011-4515-836d-9eb22aa0ed40",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C18",
+      "claim": "The UV-visible absorption spectrum of JF-NP-26 showed dramatic changes upon 405 nm irradiation, consistent with the photo-induced release of raseglurant and leaving the coumarinyl alcohol DEACM.",
+      "claim_type": "EXPLICIT",
+      "source": "The UV-visible absorption spectrum of JF-NP-26 showed dramatic changes upon 405 nm irradiation (Figure 2C), consistent with the photo-induced release of raseglurant and leaving the coumarinyl alcohol DEACM (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2C shows the spectral changes upon irradiation, and the spectrum matches the sum of free raseglurant and DEACM spectra.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "e28242a0-fd38-4084-91e9-cc1c8d762436",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C19",
+      "claim": "The photouncaging quantum yield of JF-NP-26 was determined as \u03c6chem = 0.18.",
+      "claim_type": "EXPLICIT",
+      "source": "The photouncaging quantum yield was determined by potassium ferrioxalate actinometry (Kuhn et al., 1989), as \u03c6chem = 0.18 (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantum yield was measured experimentally using potassium ferrioxalate actinometry, as shown in Figure 2D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "58111627-cdca-40a1-83b2-4fe0693a095d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C20",
+      "claim": "JF-NP-26 didn't show NAM activity in dark conditions in the mGlu5-mediated IP accumulation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while JF-NP-26 didn't show activity in dark conditions, its NAM activity was rescued upon 405 nm visible light illumination (pIC50 = 7.1; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows dose-response curves demonstrating no inhibition in dark conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "f0911e96-f31b-43e5-8384-7f0a49933996",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C21",
+      "claim": "JF-NP-26's NAM activity was rescued upon 405 nm visible light illumination with pIC50 = 7.1 in the IP accumulation assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while JF-NP-26 didn't show activity in dark conditions, its NAM activity was rescued upon 405 nm visible light illumination (pIC50 = 7.1; Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows dose-response curves with calculated pIC50 value after illumination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "447a13ab-ff2f-4552-9890-c686a2739d46",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C22",
+      "claim": "JF-NP-26 was unable to restrain agonist-mediated signalling in dark conditions in calcium accumulation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, again while JF-NP-26 was unable to restrain agonist-mediated signalling in dark conditions, it abolished mGlu5 receptor-mediated intracellular calcium accumulation upon 405 nm irradiation (Figure 3C), thus demonstrating a light-dependent NAM activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C shows quantification of receptor inhibition with no effect in dark conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "0d22777e-8b24-4e6d-a281-67b9a0e8502c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C23",
+      "claim": "JF-NP-26 abolished mGlu5 receptor-mediated intracellular calcium accumulation upon 405 nm irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, again while JF-NP-26 was unable to restrain agonist-mediated signalling in dark conditions, it abolished mGlu5 receptor-mediated intracellular calcium accumulation upon 405 nm irradiation (Figure 3C), thus demonstrating a light-dependent NAM activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3C shows quantification demonstrating significant inhibition after 405 nm irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "6fd31323-e4e2-43b0-8e44-04f88800cc90",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C24",
+      "claim": "Optical modulation of JF-NP-26 can be performed in a native receptor environment in cultured striatal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Results (Figure 3F) were comparable to those obtained in heterologous expression systems (Figure 3C), thus indicating that optical modulation of JF-NP-26 could also be performed in a native receptor environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3F shows calcium imaging results in primary striatal neurons comparable to HEK cell results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "3c901aa0-9e6d-410d-b07f-9539e0665044",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C25",
+      "claim": "A single injection of raseglurant (10 mg/kg, i.p.) significantly increased pain thresholds in CCI mice regardless of light irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a single injection of raseglurant (10 mg/kg, i.p.) significantly increased pain thresholds in CCI mice regardless of light irradiation (Figure 4B; data with raseglurant after irradiation are not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4B shows mechanical threshold data for raseglurant treatment in CCI mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "18bd0dc7-92d4-4619-a193-e0c6bcbdb40d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C26",
+      "claim": "Systemic injection of JF-NP-26 (10 mg/kg, i.p.) significantly increased pain thresholds in CCI mice only after thalamic irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, systemic injection of JF-NP-26 (10 mg/kg, i.p.) significantly (p<0.01) increased pain thresholds in CCI mice only after thalamic irradiation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 4B shows mechanical threshold data demonstrating light-dependent analgesia with JF-NP-26.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "80c64f21-5d35-49bc-a872-7eec68d4a895",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C27",
+      "claim": "Formalin injection into the mouse hind paw induced an innate licking behavior that was significantly reduced by systemic administration of raseglurant (10 mg/kg, i.p.) in both phase I (70 \u00b1 3%, p<0.001) and phase II (97 \u00b1 1%, p<0.001) of the formalin test.",
+      "claim_type": "EXPLICIT",
+      "source": "Formalin injection into the mouse hind paw induced an innate licking behavior that was significantly reduced by systemic administration of raseglurant (10 mg/kg, i.p., Figure 5, middle panel), thus demonstrating an antinociceptive efficacy both in phase I (70 \u00b1 3%, p<0.001) and phase II (97 \u00b1 1%, p<0.001) of the formalin test.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 middle panel shows quantified antinociceptive effects of raseglurant in the formalin test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "bd484de5-23c8-4fde-9757-6e9b526e02f5",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C28",
+      "claim": "JF-NP-26 (10 mg/kg, i.p.) was unable to promote antinociception in dark conditions in the formalin test.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, while JF-NP-26 (10 mg/kg, i.p.) was unable to promote antinociception in dark conditions (Video 1), it elicited antinociception following direct hind paw irradiation both at phase I (54 \u00b1 5%, p<0.001) and phase II (34 \u00b1 5%, p<0.001) (Figure 5, middle panel; Video 2), demonstrating that JF-NP-26 was able to be peripherally photoactivated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 middle panel and Video 1 show lack of effect in dark conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "24e88611-295f-4b99-93a0-bcc1fe7f34cd",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C29",
+      "claim": "JF-NP-26 elicited antinociception following direct hind paw irradiation both at phase I (54 \u00b1 5%, p<0.001) and phase II (34 \u00b1 5%, p<0.001) of the formalin test.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, while JF-NP-26 (10 mg/kg, i.p.) was unable to promote antinociception in dark conditions (Video 1), it elicited antinociception following direct hind paw irradiation both at phase I (54 \u00b1 5%, p<0.001) and phase II (34 \u00b1 5%, p<0.001) (Figure 5, middle panel; Video 2), demonstrating that JF-NP-26 was able to be peripherally photoactivated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 middle panel and Video 2 show quantified antinociceptive effects after peripheral irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "16b5e71c-fe86-4c6e-8164-7c8a27548391",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C30",
+      "claim": "When the contralateral hind paw was irradiated, no antinociceptive effect was observed with JF-NP-26.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, under the same experimental conditions when the contralateral hind paw was irradiated no antinociceptive effect was observed (Figure 5, middle panel, column C), thus demonstrating that a non-site specific peripheral photoconversion of JF-NP-26 does not yield systemic raseglurant-mediated analgesia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 middle panel column C shows lack of effect with contralateral irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "149a85cb-6094-4db0-87b5-1599dcdf5130",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C31",
+      "claim": "JF-NP-26 (10 mg/kg, i.p.) was able to cause substantial analgesia both in phase I (45 \u00b1 9%, p<0.01) and phase II (90 \u00b1 4%, p<0.001) of the formalin test in response to thalamic irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "While JF-NP-26 (10 mg/kg, i.p.) was inactive under basal conditions, it was able to cause substantial analgesia both in phase I (45 \u00b1 9%, p<0.01) and phase II (90 \u00b1 4%, p<0.001) of the formalin test in response to thalamic irradiation (Figure 5, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 lower panel shows quantified antinociceptive effects after thalamic irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "d973ed2d-892a-4ede-9fee-bbc316ae7647",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C32",
+      "claim": "When the striatum was irradiated, no antinociceptive effect was observed with JF-NP-26.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, under the same experimental conditions when the striatum was irradiated no antinociceptive effect was observed (Figure 5, lower panel, column S), indicating that a CNS region of the pain neuraxis must be specifically irradiated to obtain pain control by JF-NP-26.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5 lower panel column S shows lack of effect with striatal irradiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "1bd56585-8eea-4ee8-bffb-14a0933c998a",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C33",
+      "claim": "Uncaging of JF-NP-26 in the thalamus produced a stronger analgesic effect in phase II of the formalin test, which reflects mechanisms of central sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantlly, uncaging of JF-NP-26 in the thalamus produced a stronger analgesic effect in phase II of the formalin test, which reflects mechanisms of central sensitization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of phase I and phase II effects in Figure 5 lower panel shows greater efficacy in phase II.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "88771629-2e91-4cc6-99f8-e8ff326dff5f",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C34",
+      "claim": "The thalamic irradiation effects of JF-NP-26 were obtained after intraperitoneal administration, demonstrating its effective brain penetration in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the thalamic irradiation effects of JF-NP-26 were obtained after intraperitoneal administration, demonstrating its effective brain penetration in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The successful thalamic photoactivation after systemic i.p. administration implies brain penetration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "c9c6ef93-03f2-4c6d-a4a3-011bb4d23358",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C35",
+      "claim": "A 3-day raseglurant treatment (50 mg/kg, ip) did not alter ALT and AST serum levels in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while a 3-day acetaminophen treatment (300 mg/kg, ip) induced a significant increase in serum ALT and AST (Figure 6A), as described (Zhang et al., 2015), the 3-day raseglurant and JF-NP-26 treatment (50 mg/kg, ip) did not alter ALT and AST serum levels (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6A shows serum transaminase levels after raseglurant treatment compared to vehicle and acetaminophen controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "3da01013-aee6-4c44-be82-a6ea3bffb77d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C36",
+      "claim": "A 3-day JF-NP-26 treatment (50 mg/kg, ip) did not alter ALT and AST serum levels in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while a 3-day acetaminophen treatment (300 mg/kg, ip) induced a significant increase in serum ALT and AST (Figure 6A), as described (Zhang et al., 2015), the 3-day raseglurant and JF-NP-26 treatment (50 mg/kg, ip) did not alter ALT and AST serum levels (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6A shows serum transaminase levels after JF-NP-26 treatment compared to vehicle and acetaminophen controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "f9612fa5-fd65-48de-bda1-4e0d1b01d701",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C37",
+      "claim": "A 3-day acetaminophen treatment (300 mg/kg, ip) induced a significant increase in serum ALT and AST in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while a 3-day acetaminophen treatment (300 mg/kg, ip) induced a significant increase in serum ALT and AST (Figure 6A), as described (Zhang et al., 2015), the 3-day raseglurant and JF-NP-26 treatment (50 mg/kg, ip) did not alter ALT and AST serum levels (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6A shows elevated serum transaminase levels after acetaminophen treatment, consistent with Zhang et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "e9ce9bd0-e4c2-4b0f-8f46-b6d523f8c5fc",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C38",
+      "claim": "Raseglurant impaired novel object recognition at the dose of 20 mg/kg in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, raseglurant impaired novel object recognition at the dose of 20 mg/kg (Figure 6B), although it was inactive at 10 mg/kg (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6B shows that mice treated with 20 mg/kg raseglurant did not show preference for the novel object.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "fc8426a8-50d5-40d9-9f4b-be138c29724a",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C39",
+      "claim": "Raseglurant was inactive in the novel object recognition test at 10 mg/kg.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, raseglurant impaired novel object recognition at the dose of 20 mg/kg (Figure 6B), although it was inactive at 10 mg/kg (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this explicitly, though data are not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "a2c6c4a4-d37a-43db-9d1b-4a063e572976",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C40",
+      "claim": "Optic fiber implanted mice treated with vehicle or JF-NP-26 (10 or 20 mg/kg) and irradiated bilaterally at the ventrobasal thalamus showed a normal performance in the novel object recognition test.",
+      "claim_type": "EXPLICIT",
+      "source": "Optic fiber implanted mice treated with vehicle or JF-NP-26 (10 or 20 mg/kg) and irradiated bilaterally at the ventrobasal thalamus (see above) showed a normal performance in the novel object recognition test (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6B shows that JF-NP-26 treated mice with thalamic irradiation maintained preference for the novel object.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "a9a1133c-9303-4914-bac5-327bf4bff263",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C41",
+      "claim": "Neither the systemic administration nor the thalamic photoactivation of JF-NP-26 cause memory impairment in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results demonstrated that neither the systemic administration nor the thalamic photoactivation of JF-NP-26 cause memory impairment in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the novel object recognition test results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "f4a89044-9414-4e6a-84c0-0d074e1de6ec",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C42",
+      "claim": "JF-NP-26 is the first caged mGlu5 receptor NAM that has been shown to induce light-dependent analgesia in models of inflammatory and neuropathic pain in freely behaving animals.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, JF-NP-26 is the first caged mGlu5 receptor NAM that has been shown to induce light-dependent analgesia in models of inflammatory and neuropathic pain in freely behaving animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "3af36f84-f574-487e-b239-4d0430b86896",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C43",
+      "claim": "Raseglurant is a mGlu5 receptor NAM that has been shown to possess efficacy on the treatment of migraine.",
+      "claim_type": "EXPLICIT",
+      "source": "Raseglurant is a mGlu5 receptor NAM that has been shown to possess efficacy on the treatment of migraine (Keywood and Wakefield, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Keywood and Wakefield, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "98c585ed-fb94-4180-9fc5-649a27c4d7da",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C44",
+      "claim": "The clinical development of raseglurant was discontinued because of liver toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, its clinical development was discontinued because of liver toxicity (Marin and Goadsby, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Marin and Goadsby, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "d609e441-8f6f-4e12-a535-40f765120c98",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C45",
+      "claim": "Light within the visible spectrum has a good tissue penetration and causes less tissue damage with respect to UV light.",
+      "claim_type": "EXPLICIT",
+      "source": "This is highly advantageous for translational research because light within the visible spectrum has a good tissue penetration and causes less tissue damage with respect to UV light (Regan and Parrish, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Regan and Parrish, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "615889b7-de17-424e-9cc3-fa55476d6664",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C46",
+      "claim": "mGlu5 receptors are expressed in peripheral nociceptors, where they contribute to mechanisms of nociceptive sensitization by enhancing the activity of TRPV1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, mGlu5 receptors are expressed in peripheral nociceptors, where they contribute to mechanisms of nociceptive sensitization by enhancing the activity of TRPV1 channels through a complex mechanism mediated by inositol phospholipid hydrolysis, prostaglandin formation, and protein kinase A-dependent phosphorylation of TRPV1 (Bhave et al., 2001; Karim et al., 2001; Neugebauer, 2001; Hu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Bhave et al., 2001; Karim et al., 2001; Neugebauer, 2001; Hu et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "2eddd1af-0e52-42f8-88f9-c81169682cdc",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C47",
+      "claim": "The enhancement of TRPV1 channel activity by mGlu5 receptors is mediated through a complex mechanism involving inositol phospholipid hydrolysis, prostaglandin formation, and protein kinase A-dependent phosphorylation of TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, mGlu5 receptors are expressed in peripheral nociceptors, where they contribute to mechanisms of nociceptive sensitization by enhancing the activity of TRPV1 channels through a complex mechanism mediated by inositol phospholipid hydrolysis, prostaglandin formation, and protein kinase A-dependent phosphorylation of TRPV1 (Bhave et al., 2001; Karim et al., 2001; Neugebauer, 2001; Hu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Bhave et al., 2001; Karim et al., 2001; Neugebauer, 2001; Hu et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "95b24cec-29c3-4bcf-a76a-fc5b8540567c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C48",
+      "claim": "The first phase of the formalin test reflects the activation of peripheral nociceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, intraplantar JF-NP-26 uncaging showed higher antinociceptive efficacy in the first phase of the formalin test, which reflects the activation of peripheral nociceptors (Hunskaar and Hole, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hunskaar and Hole, 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "432a4880-4bde-4418-a485-07bfdc594287",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C49",
+      "claim": "The ventrobasal thalamus is the main relay station of the ascending pain pathway modulating the sensory, cognitive, and emotional components of pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, mice were systemically injected with JF-NP-26, and fast antinociceptive effects were produced by light irradiation in the ventrobasal thalamus, the main relay station of the ascending pain pathway modulating the sensory, cognitive, and emotional components of pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about thalamic function in pain processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "8007fe5e-813c-49ec-ac60-c5f516047eac",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C50",
+      "claim": "The second phase of the formalin test reflects the development of central sensitization to inflammatory pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Light-mediated delivery of raseglurant in the thalamus showed a greater antinociceptive efficacy during the second phase of the formalin test, which reflects the development of central sensitization to inflammatory pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the formalin test phases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "9dca2021-234b-4386-ae34-a4286a330ec7",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C51",
+      "claim": "Neuropathic pain is characterized by a robust and long-lasting nociceptive sensitization that reflects a maladaptive process of activity-dependent synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuropathic pain is characterized by a robust and long-lasting nociceptive sensitization that reflects a maladaptive process of activity-dependent synaptic plasticity (Basbaum et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Basbaum et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "65aab0f4-a383-45f5-bac7-1fbf50627dbe",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C52",
+      "claim": "mGlu5 receptors participate in the expression of pathological synaptic plasticity at different levels of the pain neuraxis, from the spinal cord to the regions of the pain matrix including the amygdala and cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mGlu5 receptors participate on the expression of this pathological form of synaptic plasticity at different levels of the pain neuraxis, from the spinal cord to the regions of the pain matrix including the amygdala and cerebral cortex (Neugebauer et al., 2003; Li and Neugebauer, 2004; Hu et al., 2007; Hu and Gereau, 2011; Lin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations: Neugebauer et al., 2003; Li and Neugebauer, 2004; Hu et al., 2007; Hu and Gereau, 2011; Lin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "b0f9d9d3-2c4f-42fa-b9c0-2c4e383fb08e",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C53",
+      "claim": "Thalamic mGlu5 receptors are critical for the expression of nociceptive sensitization and can be specifically targeted by analgesic drugs in the treatment of neuropathic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that thalamic mGlu5 receptors are critical for the expression of nociceptive sensitization and can be specifically targeted by analgesic drugs in the treatment of neuropathic pain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results showing analgesic effects after thalamic photoactivation of JF-NP-26.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "9e1d2fdf-4ac0-4a78-9e71-1e542dda6cb7",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C54",
+      "claim": "405 nm light is safer than UV radiation for in vivo biological experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, we assessed the photochemical behaviour of JF-NP-26 upon exposure to 405 nm light (Figure 2B), which is safer than UV radiation for our in vivo biological experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about light safety and tissue damage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "eef251ce-2246-4c90-a01c-6c8c6404d32c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C55",
+      "claim": "The photolysis of the benzylic bond in JF-NP-26 generates a carbamic acid derivative that spontaneously decarboxylates to give raseglurant.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is likely involving the photolysis of the benzylic bond in JF-NP-26, thus generating a carbamic acid derivative that spontaneously decarboxylates to give raseglurant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the observed photochemical behavior and known chemistry of carbamates.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "2cec0df7-e86c-4ac6-9c7d-afd9b98f43a4",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C57",
+      "claim": "Systemic administration of inactive drugs that are activated by light on demand may provide a powerful strategy to reach a rapid control of pain limiting the development of dose- and mechanism-related adverse effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, systemic administration of inactive drugs that are activated by light on demand may provide a powerful strategy to reach a rapid control of pain limiting the development of dose- and mechanism-related adverse effects that are typically encountered with conventional analgesic drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results demonstrating light-dependent analgesia without memory impairment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "e3c82c39-9650-41a0-af0a-bd9a356b5c63",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C58",
+      "claim": "mGlu5 receptor NAM uncaging may be a suitable therapeutic approach for the local control of pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our positive results constitute a proof of principle that mGlu5 receptor NAM uncaging may be a suitable therapeutic approach for the local control of pain, which could be applied in general to conditions of severe pain that are difficult to treat, and, in particular, to conditions of fast-onset severe pain that requires a rapid and highly localized treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful demonstration of light-dependent analgesia in multiple pain models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "55f836c7-f466-42fc-867b-674459f25115",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C59",
+      "claim": "The transition from pre- to clinical settings still has to solve a number of practical problems, including assessment of photoactive compound stability and toxicity, as well as the development of implantable and remotely controlled LEDs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the transition from pre- to clinical settings still has to solve a number of practical problems, including assessment of photoactive compound stability and toxicity, as well as the development of implantable and remotely controlled LEDs covering the photochemical needs to release the active compounds with light.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future challenges for clinical translation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "12685028-a02b-41f6-9e24-21202baec2e8",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C60",
+      "claim": "mGlu5 receptors located at peripheral nociceptors and ventrobasal thalamic nuclei contribute differentially to acute inflammatory pain and mechanisms of central sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our data suggested that mGlu5 receptors located at two different stations of the pain neuraxis (i.e., peripheral nociceptors and ventrobasal thalamic nuclei) might be contributing differentially to acute inflammatory pain and mechanisms of central sensitization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the differential efficacy of peripheral vs. thalamic photoactivation in phase I vs. phase II of the formalin test.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ecccb665-e8f5-4562-a16e-183c27319b3f",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C61",
+      "claim": "A CNS region of the pain neuraxis must be specifically irradiated to obtain pain control by JF-NP-26.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, under the same experimental conditions when the striatum was irradiated no antinociceptive effect was observed (Figure 5, lower panel, column S), indicating that a CNS region of the pain neuraxis must be specifically irradiated to obtain pain control by JF-NP-26.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the lack of effect when non-pain-related brain regions (striatum) were irradiated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "240ed812-0e46-4ec2-b92e-41a38a371fbe",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C62",
+      "claim": "A non-site specific peripheral photoconversion of JF-NP-26 does not yield systemic raseglurant-mediated analgesia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, under the same experimental conditions when the contralateral hind paw was irradiated no antinociceptive effect was observed (Figure 5, middle panel, column C), thus demonstrating that a non-site specific peripheral photoconversion of JF-NP-26 does not yield systemic raseglurant-mediated analgesia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the lack of effect when the contralateral paw was irradiated.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "f7328961-0351-42da-af2c-2e37eed1fd60",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C63",
+      "claim": "Raseglurant released from JF-NP-26 in response to light irradiation in the hind paw may interact with mGlu5 receptors present in peripheral nociceptors, thereby causing analgesia in the formalin test.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, raseglurant released from JF-NP-26 in response to light irradiation in the hind paw may interact with mGlu5 receptors present in peripheral nociceptors, thereby causing analgesia in the formalin test.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the observed peripheral photoactivation effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "0d61d6f7-3209-4011-8cfb-b8e784da8f4b",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C64",
+      "claim": "The ability to resolve analgesia with a fine resolution in time and space confers to the experimental approach a high significance for further development of new caged drugs acting at different levels of the pain neuraxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to resolve analgesia with a fine resolution in time and space confers to our experimental approach a high significance for further development of new caged drugs acting at different levels of the pain neuraxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the broader implications of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ed10559c-dfcf-4441-9548-acaf08bb21f5",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C65",
+      "claim": "Localized light targeting of peripheral and thalamic mGlu5 receptors represents a valuable strategy for the treatment of pain diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, upon local and thalamic photoactivation, JF-NP-26 demonstrated analgesic effects in two different models of pain, thus raising the interesting possibility that localized light targeting of peripheral and thalamic mGlu5 receptors represent a valuable strategy for the treatment of pain diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the successful demonstration of analgesia in multiple pain models and anatomical sites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "be2628bc-9609-4a6c-b8f8-05bcd45081cc",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C67",
+      "claim": "The formalin test displays a first phase of pain (5 min after formalin injection in the hind paw), which models acute inflammatory pain.",
+      "claim_type": "EXPLICIT",
+      "source": "The formalin test, which allows an objective analysis of pain based on nocifensive behavior, displays a first phase of pain (5 min after formalin injection in the hind paw), which models acute inflammatory pain, and a second phase (20\u201330 min after formalin injection), which models chronic inflammatory pain and reflects the development of central sensitization (Mogil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mogil, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "fbe60d6a-7088-42f0-99b5-94fad7a6d063",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C68",
+      "claim": "The formalin test displays a second phase (20\u201330 min after formalin injection), which models chronic inflammatory pain and reflects the development of central sensitization.",
+      "claim_type": "EXPLICIT",
+      "source": "The formalin test, which allows an objective analysis of pain based on nocifensive behavior, displays a first phase of pain (5 min after formalin injection in the hind paw), which models acute inflammatory pain, and a second phase (20\u201330 min after formalin injection), which models chronic inflammatory pain and reflects the development of central sensitization (Mogil, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mogil, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "b54c94c2-ec77-477f-a2eb-2b16104eb4c2",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C69",
+      "claim": "Systemic administration of MPEP, a mGlu5 receptor NAM, reduced reference memory in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, systemic administration of MPEP, a mGlu5 receptor NAM, reduced reference memory in rats (Christoffersen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Christoffersen et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "c32b53b6-998b-4fe6-b701-74f8b8425920",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C70",
+      "claim": "Raseglurant had good clinical efficacy, tolerability and safety in a 2-week double-blind, placebo-controlled, multicentre trial.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite good clinical efficacy, tolerability and safety in a 2-week double-blind, placebo-controlled, multicentre trial (Zerbib et al., 2011), the long-term administration of raseglurant in migraine patients resulted in a disappointing high incidence of hepatic transaminase abnormalities, thus halting any further clinical development (Marin and Goadsby, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Zerbib et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "944a0fc7-f0d1-49f9-ad50-b50a0d0d879c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "claim_id": "C71",
+      "claim": "Long-term administration of raseglurant in migraine patients resulted in a high incidence of hepatic transaminase abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite good clinical efficacy, tolerability and safety in a 2-week double-blind, placebo-controlled, multicentre trial (Zerbib et al., 2011), the long-term administration of raseglurant in migraine patients resulted in a disappointing high incidence of hepatic transaminase abnormalities, thus halting any further clinical development (Marin and Goadsby, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Marin and Goadsby, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "377680e3-e311-49a7-a59c-294895f76c27",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "JF-NP-26 is a photocaged derivative of raseglurant synthesized by modifying the aromatic amine group to generate a carbamate derivative of DEACM coumarin. Upon 405 nm irradiation, JF-NP-26 undergoes photochemical uncaging with a quantum yield of 0.18, releasing raseglurant through photolysis of the benzylic bond followed by spontaneous decarboxylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C19 provide comprehensive chemical characterization including synthesis methods, UV-vis spectroscopy showing spectral changes upon irradiation, and quantum yield measurements. The photochemical mechanism (C55) is reasonably inferred from known carbamate chemistry and spectroscopic evidence. The use of 405 nm light (C54) is appropriately justified for safety.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "JF-NP-26 shows no mGlu5 receptor NAM activity in dark conditions but exhibits light-dependent NAM activity upon 405 nm irradiation in HEK-293T cells expressing mGlu5 receptors. This was demonstrated through inositol phosphate accumulation assays (pIC50 = 7.1 after illumination) and calcium imaging experiments showing complete abolishment of receptor-mediated calcium accumulation after irradiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 provide converging evidence from two independent functional assays (IP accumulation and calcium imaging) demonstrating light-dependent activity. The dose-response data with quantified pIC50 values and statistical significance (Figure 3A, 3C) strongly support the light-gated pharmacological activity. The lack of activity in dark conditions is clearly demonstrated as a critical control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "5ab092b6-757b-472d-9588-cdd06727e126",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "JF-NP-26 effectively controls mGlu5 receptor activity in cultured striatal primary neurons, demonstrating that optical modulation can be performed in a native receptor environment with results comparable to heterologous expression systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C24 are supported by calcium imaging data in primary striatal neurons (Figure 3F) showing light-dependent inhibition comparable to HEK cell results. The demonstration in native neurons is important for validating the approach in a more physiologically relevant context, though sample sizes (n=5-10) are modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ad12cf77-1f4b-40e8-953f-a24ac65f29d7",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Systemic administration of JF-NP-26 followed by thalamic irradiation produces light-dependent analgesia in the chronic constriction injury (CCI) model of neuropathic pain. JF-NP-26 significantly increased mechanical pain thresholds only after thalamic irradiation (p<0.01), while raseglurant increased thresholds regardless of light.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25-C26 are supported by von Frey filament testing data (Figure 4B) showing statistically significant light-dependent effects. The comparison with raseglurant (C25) provides an important positive control demonstrating that the released drug is active. The anatomical specificity of thalamic targeting is demonstrated, though the manuscript notes data with raseglurant after irradiation are not shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ff705f69-be68-44b9-9df0-85bdb8593090",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Systemic JF-NP-26 followed by peripheral hind paw irradiation produces site-specific, light-dependent analgesia in the formalin test. JF-NP-26 showed no effect in dark conditions but elicited significant antinociception after ipsilateral hind paw irradiation in both phase I (54\u00b15%, p<0.001) and phase II (34\u00b15%, p<0.001). Contralateral paw irradiation produced no effect, demonstrating spatial specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 provide strong evidence for spatially-restricted peripheral photoactivation with appropriate controls (dark, contralateral irradiation). The quantified effects with statistical significance and video documentation strengthen the findings. The interpretation that released raseglurant acts on peripheral mGlu5 receptors (C63) is reasonable given the spatial specificity, though direct receptor engagement is not demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "2d98d56a-7558-4b6b-8f12-ad4e13e5038d",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Systemic JF-NP-26 followed by thalamic irradiation produces substantial analgesia in both phases of the formalin test (phase I: 45\u00b19%, p<0.01; phase II: 90\u00b14%, p<0.001), with stronger effects in phase II reflecting central sensitization mechanisms. Striatal irradiation produced no effect, demonstrating that specific pain-related CNS regions must be targeted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33 are well-supported by quantified behavioral data with statistical significance. The anatomical specificity demonstrated by lack of effect with striatal irradiation (C32) is a critical control. The interpretation regarding central sensitization (C33) is reasonable given established knowledge about formalin test phases, though the differential phase effects could benefit from additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "70466d40-7694-42a3-aa3d-1c12907a17d6",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "JF-NP-26 demonstrates effective brain penetration in mice after intraperitoneal administration, as evidenced by successful thalamic photoactivation producing analgesic effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C34 is reasonably supported by the successful thalamic photoactivation experiments after systemic i.p. administration. However, direct pharmacokinetic measurements of brain levels are not provided. The inference of brain penetration is logical but indirect, based on functional outcomes rather than direct measurement of compound distribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "07be8091-2821-41f7-ba77-cc879a94b672",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Three-day treatment with raseglurant or JF-NP-26 (50 mg/kg, i.p.) did not alter serum ALT and AST levels in mice, while acetaminophen (300 mg/kg, i.p.) significantly increased both transaminases as expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by serum transaminase measurements (Figure 6A) with appropriate positive control (acetaminophen). The doses tested (50 mg/kg) are 5-fold higher than those used in pain experiments (10 mg/kg), providing a safety margin. However, the 3-day treatment duration is relatively short compared to the long-term clinical hepatotoxicity observed with raseglurant (C71), limiting translational relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "983577c3-c8a3-49df-b905-fdc76f98b54c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Raseglurant impaired novel object recognition at 20 mg/kg but not at 10 mg/kg. In contrast, JF-NP-26 (10 or 20 mg/kg) with bilateral thalamic irradiation did not impair memory performance, demonstrating that neither systemic administration nor thalamic photoactivation of JF-NP-26 causes memory impairment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 are supported by novel object recognition test data (Figure 6B) showing dose-dependent memory impairment with raseglurant but not with photoactivated JF-NP-26. This is an important finding demonstrating reduced side effects with the photocaged approach. However, the lack of data for 10 mg/kg raseglurant (C39, stated but not shown) is a minor limitation. Sample sizes (n=4-7) are modest but adequate for behavioral studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "ad2695e4-7da9-4aed-b992-dc4251cd665c",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "mGlu5 receptors at peripheral nociceptors and ventrobasal thalamic nuclei contribute differentially to acute inflammatory pain and central sensitization mechanisms, based on differential efficacy of peripheral versus thalamic photoactivation in different phases of the formalin test.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C60 is supported by the differential phase-specific effects observed with peripheral (greater phase I efficacy) versus thalamic (greater phase II efficacy) photoactivation. This interpretation is consistent with established knowledge about formalin test phases (C67-C68) and the known roles of these anatomical sites. However, this remains an inference from behavioral data rather than direct mechanistic demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "00083adf-8203-447a-bde9-56cf7b694833",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "JF-NP-26 represents the first caged mGlu5 receptor NAM demonstrating light-dependent analgesia in freely behaving animals. The approach provides spatiotemporal control of analgesia and may offer a strategy to limit adverse effects associated with systemic mGlu5 NAM administration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C57-C58, C64-C65 represent summary conclusions supported by the collective experimental evidence. The novelty claim (C42) appears justified given the literature context provided. The therapeutic potential (C57-C58) is reasonably inferred from the demonstrated efficacy and reduced side effects, though clinical translation remains speculative. These are appropriate concluding interpretations of the experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "1acfdecd-e4c7-411c-a1b0-d3e5f88e5b82",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Clinical translation of this photopharmacological approach requires solving practical problems including assessment of photoactive compound stability and toxicity, and development of implantable, remotely controlled LEDs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 appropriately acknowledges limitations and challenges for clinical translation. This is a reasonable assessment of the gap between proof-of-concept and clinical application. The statement is appropriately cautious and does not overstate the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the rationale for the study, including the role of mGlu receptors in pain, the therapeutic potential and limitations of mGlu5 NAMs like raseglurant, previous photopharmacological approaches, and established knowledge about pain models and mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C14, C43-C52, C67-C71 are background/contextual claims supported by appropriate citations to the literature. These establish the scientific rationale and context for the current work. The citations appear appropriate and the claims are consistent with established knowledge in the field. These provide essential context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    },
+    {
+      "id": "2ca54c2a-e644-4727-b830-f89d5c0d668e",
+      "content_id": "aa6a8b56-427e-45bf-8095-f27a9320deb3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Thalamic mGlu5 receptors are critical for nociceptive sensitization and can be specifically targeted by analgesic drugs for treating neuropathic pain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 is supported by the thalamic photoactivation experiments showing analgesic effects in both CCI and formalin models, with anatomical specificity demonstrated by lack of effect with striatal irradiation. However, the claim that thalamic mGlu5 receptors are 'critical' is somewhat strong given that this is based on pharmacological inhibition rather than genetic or other causal manipulations. The interpretation is reasonable but could be stated more cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:42:07.637010Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "48bed856-2d31-4b34-beb6-6afaf23cd74d",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "b877dac7-10d0-47cf-9a95-9969f6a855b3",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "4f3e1b6c-2ade-490e-889c-6372d588154d",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "aaa54566-4549-4fe3-b9d7-feb4b635fb36",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "72d6f23f-9011-4515-836d-9eb22aa0ed40",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "e28242a0-fd38-4084-91e9-cc1c8d762436",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "9e1d2fdf-4ac0-4a78-9e71-1e542dda6cb7",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "eef251ce-2246-4c90-a01c-6c8c6404d32c",
+      "result_id": "377680e3-e311-49a7-a59c-294895f76c27"
+    },
+    {
+      "claim_id": "9b2ce32d-d3ee-46e2-a12d-d82afe654bab",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "6ad03fb6-4147-4f1e-9255-b41a16fc1019",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "58111627-cdca-40a1-83b2-4fe0693a095d",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "f0911e96-f31b-43e5-8384-7f0a49933996",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "447a13ab-ff2f-4552-9890-c686a2739d46",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "0d22777e-8b24-4e6d-a281-67b9a0e8502c",
+      "result_id": "4f95cc43-a306-4bcf-b403-23d9c11c6af8"
+    },
+    {
+      "claim_id": "cb25a4af-b9a7-4016-b53b-16f7fe684fbe",
+      "result_id": "5ab092b6-757b-472d-9588-cdd06727e126"
+    },
+    {
+      "claim_id": "6fd31323-e4e2-43b0-8e44-04f88800cc90",
+      "result_id": "5ab092b6-757b-472d-9588-cdd06727e126"
+    },
+    {
+      "claim_id": "ebfe3124-46f4-4c67-ad1b-af3827df1709",
+      "result_id": "ad12cf77-1f4b-40e8-953f-a24ac65f29d7"
+    },
+    {
+      "claim_id": "3c901aa0-9e6d-410d-b07f-9539e0665044",
+      "result_id": "ad12cf77-1f4b-40e8-953f-a24ac65f29d7"
+    },
+    {
+      "claim_id": "18bd0dc7-92d4-4619-a193-e0c6bcbdb40d",
+      "result_id": "ad12cf77-1f4b-40e8-953f-a24ac65f29d7"
+    },
+    {
+      "claim_id": "9c36057f-9d53-4019-a564-bb2d4565ca0c",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "80c64f21-5d35-49bc-a872-7eec68d4a895",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "bd484de5-23c8-4fde-9757-6e9b526e02f5",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "24e88611-295f-4b99-93a0-bcc1fe7f34cd",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "16b5e71c-fe86-4c6e-8164-7c8a27548391",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "240ed812-0e46-4ec2-b92e-41a38a371fbe",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "f7328961-0351-42da-af2c-2e37eed1fd60",
+      "result_id": "ff705f69-be68-44b9-9df0-85bdb8593090"
+    },
+    {
+      "claim_id": "149a85cb-6094-4db0-87b5-1599dcdf5130",
+      "result_id": "2d98d56a-7558-4b6b-8f12-ad4e13e5038d"
+    },
+    {
+      "claim_id": "d973ed2d-892a-4ede-9fee-bbc316ae7647",
+      "result_id": "2d98d56a-7558-4b6b-8f12-ad4e13e5038d"
+    },
+    {
+      "claim_id": "1bd56585-8eea-4ee8-bffb-14a0933c998a",
+      "result_id": "2d98d56a-7558-4b6b-8f12-ad4e13e5038d"
+    },
+    {
+      "claim_id": "ecccb665-e8f5-4562-a16e-183c27319b3f",
+      "result_id": "2d98d56a-7558-4b6b-8f12-ad4e13e5038d"
+    },
+    {
+      "claim_id": "88771629-2e91-4cc6-99f8-e8ff326dff5f",
+      "result_id": "70466d40-7694-42a3-aa3d-1c12907a17d6"
+    },
+    {
+      "claim_id": "c9c6ef93-03f2-4c6d-a4a3-011bb4d23358",
+      "result_id": "07be8091-2821-41f7-ba77-cc879a94b672"
+    },
+    {
+      "claim_id": "3da01013-aee6-4c44-be82-a6ea3bffb77d",
+      "result_id": "07be8091-2821-41f7-ba77-cc879a94b672"
+    },
+    {
+      "claim_id": "f9612fa5-fd65-48de-bda1-4e0d1b01d701",
+      "result_id": "07be8091-2821-41f7-ba77-cc879a94b672"
+    },
+    {
+      "claim_id": "e9ce9bd0-e4c2-4b0f-8f46-b6d523f8c5fc",
+      "result_id": "983577c3-c8a3-49df-b905-fdc76f98b54c"
+    },
+    {
+      "claim_id": "fc8426a8-50d5-40d9-9f4b-be138c29724a",
+      "result_id": "983577c3-c8a3-49df-b905-fdc76f98b54c"
+    },
+    {
+      "claim_id": "a2c6c4a4-d37a-43db-9d1b-4a063e572976",
+      "result_id": "983577c3-c8a3-49df-b905-fdc76f98b54c"
+    },
+    {
+      "claim_id": "a9a1133c-9303-4914-bac5-327bf4bff263",
+      "result_id": "983577c3-c8a3-49df-b905-fdc76f98b54c"
+    },
+    {
+      "claim_id": "12685028-a02b-41f6-9e24-21202baec2e8",
+      "result_id": "ad2695e4-7da9-4aed-b992-dc4251cd665c"
+    },
+    {
+      "claim_id": "f4a89044-9414-4e6a-84c0-0d074e1de6ec",
+      "result_id": "00083adf-8203-447a-bde9-56cf7b694833"
+    },
+    {
+      "claim_id": "2cec0df7-e86c-4ac6-9c7d-afd9b98f43a4",
+      "result_id": "00083adf-8203-447a-bde9-56cf7b694833"
+    },
+    {
+      "claim_id": "e3c82c39-9650-41a0-af0a-bd9a356b5c63",
+      "result_id": "00083adf-8203-447a-bde9-56cf7b694833"
+    },
+    {
+      "claim_id": "0d61d6f7-3209-4011-8cfb-b8e784da8f4b",
+      "result_id": "00083adf-8203-447a-bde9-56cf7b694833"
+    },
+    {
+      "claim_id": "ed10559c-dfcf-4441-9548-acaf08bb21f5",
+      "result_id": "00083adf-8203-447a-bde9-56cf7b694833"
+    },
+    {
+      "claim_id": "55f836c7-f466-42fc-867b-674459f25115",
+      "result_id": "1acfdecd-e4c7-411c-a1b0-d3e5f88e5b82"
+    },
+    {
+      "claim_id": "d37b0eb3-5f98-4c13-96fe-aa96e0eedeaf",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "6e86f061-37a1-47c7-9314-8c35d3180e7a",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "d1d112be-ca7a-455e-94d4-babfc610ce4c",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "5789d475-b4b8-4d91-9cf7-9f3428273013",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "39cab825-b0d6-4f0f-8a88-04b57ae9b7e4",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "de5b799a-798d-4f0e-8ce5-af314919a546",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "5e6dfa9f-d52a-4025-af8a-9bf00449a85d",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "9240a402-871d-4e9d-b79a-4dc4f35f36dd",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "3af36f84-f574-487e-b239-4d0430b86896",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "98c585ed-fb94-4180-9fc5-649a27c4d7da",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "d609e441-8f6f-4e12-a535-40f765120c98",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "615889b7-de17-424e-9cc3-fa55476d6664",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "2eddd1af-0e52-42f8-88f9-c81169682cdc",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "95b24cec-29c3-4bcf-a76a-fc5b8540567c",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "432a4880-4bde-4418-a485-07bfdc594287",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "8007fe5e-813c-49ec-ac60-c5f516047eac",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "9dca2021-234b-4386-ae34-a4286a330ec7",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "65aab0f4-a383-45f5-bac7-1fbf50627dbe",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "be2628bc-9609-4a6c-b8f8-05bcd45081cc",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "fbe60d6a-7088-42f0-99b5-94fad7a6d063",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "b54c94c2-ec77-477f-a2eb-2b16104eb4c2",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "c32b53b6-998b-4fe6-b701-74f8b8425920",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "944a0fc7-f0d1-49f9-ad50-b50a0d0d879c",
+      "result_id": "0e633b92-3b0f-4e2e-a4be-c84d2964ef18"
+    },
+    {
+      "claim_id": "b0f9d9d3-2c4f-42fa-b9c0-2c4e383fb08e",
+      "result_id": "2ca54c2a-e644-4727-b830-f89d5c0d668e"
+    }
+  ],
+  "comparisons": []
+}

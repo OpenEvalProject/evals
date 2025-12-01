@@ -1,0 +1,376 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Prior anatomical and lesion studies establish that rodent visual cortex is organized into ventral-like and dorsal-like processing streams, with lateral areas implicated in pattern discrimination and dorsal areas specialized for motion processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by citations to prior work. These claims establish the anatomical and functional context for the current study, providing the rationale for investigating lateral extrastriate areas as a putative ventral-like pathway. The evidence is appropriately attributed to previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Behavioral and physiological evidence suggests rats possess cortical machinery for invariant visual object recognition, supported by their reliance on vision during navigation and visual dependence of hippocampal head-directional tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by multiple citations to behavioral and physiological studies. These claims provide additional motivation for the hypothesis that rodents possess a ventral-like object processing pathway, though they do not constitute findings of the current manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C45",
+      "C46",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study recorded 771 visually driven and stimulus informative units from 26 anesthetized rats across V1, LM, LI, and LL, using 10 visual objects transformed along five variation axes (380 total conditions), with cortical areas identified by retinotopic mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C45-C46, C50-C53 describe the core experimental design and data collection. The methodology is clearly described with appropriate sample sizes (>100 units per area from \u22658 rats each), adequate trial repetitions (~26.5 per stimulus), and validated area identification procedures. The use of anesthesia is acknowledged with discussion of implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Total stimulus information I(R;S) decreased significantly along the V1-LM-LI-LL progression (from ~0.12 to ~0.06 bits), with this trend robust across cortical layers, RF size matching, and spike isolation quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C17-C20 report a gradual decrease in total information with statistical support and extensive controls. The finding is validated across multiple conditions (cortical depth, RF size, spike quality), demonstrating robustness. Statistical tests are appropriate (Mann-Whitney U-test with Holm-Bonferroni correction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Sparseness of neuronal firing across 230 stimulus conditions was not statistically different between LL and V1 populations (median ~0.13 in both areas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 report a null result with appropriate statistical testing (Mann-Whitney U-test, p>0.05). The authors correctly interpret this as not implying absence of differences in object encoding, since sparseness conflates selectivity and tolerance. This control analysis strengthens the need for more sophisticated information-theoretic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Linear separability of object representations at the single-neuron level increased monotonically along the V1-LM-LI-LL progression, being ~4 times larger in LL than in V1/LM, with the fraction of linearly decodable invariant information increasing from ~55% in V1 to ~70% in LL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 report a systematic increase in linear separability with statistical support. The analysis uses appropriate cross-validation procedures and the results are quantified both as absolute performance and as fraction of total invariant information. The finding is consistent with ventral stream processing principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The ability of single neurons to support generalization to novel object views increased as steeply as linear separability along the areas' progression, with this growth widespread across cortical thickness and larger in deep than superficial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 demonstrate increased generalization performance with appropriate statistical support (two-way ANOVA). The laminar analysis (C27-C28) provides additional depth to the findings, showing the effect is not restricted to specific layers. The cross-validation procedure is appropriate for testing generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "RF size grew significantly along the V1-LM-LI-LL progression (median ~30\u00b0 in LL vs. ~15\u00b0 in V1), but when RF sizes were matched, LL and LI still showed significantly larger tolerance than V1 and LM, with generalization performance anti-correlated with RF size in LI and LL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 demonstrate that increased tolerance is not simply explained by larger RFs. The RF size matching analysis (C31) and anti-correlation findings (C32-C33) are critical controls showing that transformation tolerance emerges from representational format rather than receptive field properties alone. Statistical support is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "At the population level, linear separability of object pairs increased sharply with population size, with LL populations of 96 neurons achieving ~76% correct discrimination (~0.22 bits), significantly outperforming all other areas by 8-17 percentage points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate macroscopic differences in population-level object discrimination. The analysis uses appropriate methods (SVMs with linear kernels, cross-validation) and shows performance scaling with population size. Statistical significance is assessed at the level of individual object pairs, providing robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "For generalization across transformations, LL populations of 96 neurons approached 60% correct discrimination while V1, LM, and LI remained barely above 50% chance level, with LL significantly outperforming all other areas for all object pairs tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 demonstrate substantial population-level advantages for LL in generalization tasks. The performance differences are macroscopic and statistically robust across all tested object pairs. The challenging nature of the task (generalization from single views) makes the ~60% performance in LL particularly notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The findings provide compelling evidence for a ventral-like object-processing pathway in rat visual cortex, with V1, LI, and LL forming a functional hierarchy, while LM shows properties consistent with an intermediate routing stage similar to primate V2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 represent the main conclusions of the study. These are well-supported by the convergent evidence from multiple analyses (information theory, linear separability, generalization, population decoding). The interpretation is appropriately cautious regarding LM (C43) and supported by anatomical/functional comparisons (C44). The claims represent reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The increase in invariant object information per neuron does not imply increased total information per area due to the data processing inequality, reduced cortical surface area in higher areas (LM=31%, LI=3.5%, LL=2.1% of V1), and non-feedforward connectivity including bypass routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 provide important theoretical context and caveats for interpreting the results. The information-theoretic argument (C54-C55) is mathematically sound, the anatomical constraints (C56) are cited appropriately, and the connectivity patterns (C57-C60) are well-documented. The interpretation (C61) that increased per-neuron information makes object identity more explicit is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The similarity between rat and mouse visual cortex anatomy suggests mice can serve as powerful models for dissecting ventral stream computations given available genetic and molecular tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is a reasonable inference supported by citations regarding anatomical similarity and available tools in mice. This represents an appropriate extension of the findings to suggest future research directions, though it is speculative regarding functional similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study employed appropriate animal procedures (approved by Italian Ministry of Health), surgical techniques, recording methods (32-channel silicon probes, 25 kHz sampling), spike sorting (Wave Clus), response quantification (150 ms windows), and histological reconstruction procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C86 describe methodological details that are standard and appropriate for the study. Ethical approval is documented (C63), animal characteristics are specified (C64-C65), anesthesia and monitoring procedures are detailed (C66-C68), recording equipment and parameters are described (C69-C78), and histological methods are comprehensive (C79-C86). These methods are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The stimulus set consisted of 380 conditions (10 objects \u00d7 38 transformations) including position, size, rotation, and luminance changes, presented on a 47-inch LCD monitor at 30 cm distance using tangent screen projection to preserve object shape across positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C105 describe the visual stimuli and presentation methods. The stimulus design is comprehensive and appropriate for testing transformation tolerance. The tangent screen projection (C101-C105) is a sophisticated control to prevent confounding shape distortions with position changes. The viewing distance (C102-C103) is justified by citations to rat vision and prior behavioral work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Data analysis was restricted to visually driven and stimulus informative neurons, with 230 stimuli per neuron used in single-cell analyses (all 8 positions plus transformations at the position closest to RF center) and 19 transformations used in population analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 describe appropriate inclusion criteria and stimulus selection procedures. The criteria ensure neurons are responsive and carry information (C106-C108). The stimulus selection strategy (C109-C111) maximizes RF coverage while maintaining consistency across neurons, which is a reasonable compromise for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "RF analysis used 2D Gaussian fits (R\u00b2>0.5 threshold), RF luminance was computed as the dot product of RF map and stimulus luminance, RF contrast as standard deviation of RF-weighted luminance, with statistical comparisons using 1-tailed Mann-Whitney U-tests with Holm-Bonferroni correction based on a priori hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C121 describe RF analysis methods and statistical approaches. The RF fitting criterion (C113) is reasonable, the RF luminance and contrast metrics (C114-C116) are well-defined, spike isolation metrics (C118) are standard, and statistical methods (C119-C121) are appropriate. The justification for 1-tailed tests (C121) based on prior hypotheses is acceptable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Information theoretic analyses used 3 equi-populated response bins (~9 trials per bin), 23 luminance bins, permutation tests for significance (100 iterations), and Panzeri-Treves bias correction, with sufficient sampling to control bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 describe information-theoretic methodology. The discretization scheme (C122-C123) provides adequate sampling given trial numbers, the bias correction method (C129-C130) is appropriate and well-cited, and the permutation testing (C127-C128) is standard. The sampling is sufficient based on cited prior work (C124, C126).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132",
+      "C134",
+      "C136",
+      "C138",
+      "C139",
+      "C141",
+      "C142"
+    ],
+    "result": "Single-cell decoding used 5-fold cross-validation with quadratic discriminant analysis, performance measured as mutual information between actual and predicted labels, with 1000 iterations for generalization tests and chance-corrected performances for conservative estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C142 describe single-cell decoding methodology. The cross-validation procedure (C132) is appropriate, performance metrics (C134) are information-theoretic and suitable, the generalization procedure (C136, C138) tests the key hypothesis, and chance correction (C139, C141-C142) provides conservative estimates. The methods are sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C143",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Population decoding used pseudo-populations of 6-96 units with SVMs (linear kernel, SMO, C=1), 5-fold cross-validation, 50 resampling iterations, with chance performances computed by label shuffling and RF alignment achieved by excluding complementary position ranges for neurons with different RF centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C162 describe population decoding methodology. The pseudo-population approach (C143, C145) is necessary given non-simultaneous recordings, the SVM parameters (C146-C148) are standard, the cross-validation (C149) is appropriate, chance estimation (C154) is correct, and the RF alignment procedure (C160-C162) is a clever solution to combine neurons with different RF locations. The methods are well-designed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The passive viewing experimental design was inspired by established ventral stream approaches and allows probing feedforward object processing underlying rapid recognition, which is largely independent of top-down signals and task engagement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 justify the experimental approach with appropriate citations. The rationale for passive viewing is well-established in the primate literature and the interpretation regarding feedforward processing (C48-C49) is supported by cited work. This provides appropriate context for the methodological choices.",
+    "result_type": "MINOR"
+  }
+]

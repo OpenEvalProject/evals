@@ -1,0 +1,1665 @@
+{
+  "submission": {
+    "id": "c7caa6ff-71ff-42c7-b6e6-81c8015adecc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:23:06.224653Z",
+    "updated_at": "2025-11-30T23:23:06.224653Z"
+  },
+  "content": [
+    {
+      "id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "submission_id": "c7caa6ff-71ff-42c7-b6e6-81c8015adecc",
+      "content_type": "manuscript",
+      "content_text": "# Fail-safe control of translation initiation by dissociation of eIF2\u03b1 phosphorylated ternary complexes\n\n## Authors\n\n- Martin D Jennings<sup>1</sup>\n- Christopher J Kershaw<sup>1</sup>\n- Tomas Adomavicius<sup>1</sup>\n- Graham D Pavitt<sup>1</sup> ([ORCID: 0000-0002-8593-2418](https://orcid.org/0000-0002-8593-2418)) \u2020\n\n### Affiliations\n\n1. Division of Molecular and Cellular Function, Faculty of Biology Medicine and Health The University of Manchester Manchester United Kingdom\n2. Manchester Academic Health Science Centre The University of Manchester Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhosphorylation of eIF2\u03b1 controls translation initiation by restricting the levels of active eIF2-GTP/Met-tRNAi ternary complexes (TC). This modulates the expression of all eukaryotic mRNAs and contributes to the cellular integrated stress response. Key to controlling the activity of eIF2 are translation factors eIF2B and eIF5, thought to primarily function with eIF2-GDP and TC respectively. Using a steady-state kinetics approach with purified proteins we demonstrate that eIF2B binds to eIF2 with equal affinity irrespective of the presence or absence of competing guanine nucleotides. We show that eIF2B can compete with Met-tRNAi for eIF2-GTP and can destabilize TC. When TC is formed with unphosphorylated eIF2, eIF5 can out-compete eIF2B to stabilize TC/eIF5 complexes. However when TC/eIF5 is formed with phosphorylated eIF2, eIF2B outcompetes eIF5 and destabilizes TC. These data uncover competition between eIF2B and eIF5 for TC and identify that phosphorylated eIF2-GTP translation initiation intermediate complexes can be inhibited by eIF2B.\n\n## Introduction\n\nIn eukaryotic translation initiation, initiator tRNA (Met-tRNAi) recognises AUG start codons in mRNA as part of a larger complex bound to the 40\u00a0S ribosome. Eukaryotic translation initiation factor 2 (eIF2) is the key factor that delivers Met-tRNAi to ribosomes (Hinnebusch, 2014; Dever et al., 2016). eIF2 is a G-protein and binds GTP and Met-tRNAi forming a ternary complex (TC) (Schmitt et al., 2010). Together with other initiation factors the TC-bound ribosomal preinitiation complex (PIC) binds near the mRNA 5\u2019 cap and scans the mRNA usually to the first AUG codon where Met-tRNAi\u00a0anticodon/mRNA codon interactions help facilitate translation initiation. Hence TC is critical for delivering tRNAiMet to 40\u00a0S ribosomes, for scanning the 5\u2019UTR and AUG codon recognition (Hinnebusch, 2014; Dever et al., 2016; Ll\u00e1cer et al., 2015). Importantly, in all eukaryotes studied, translation initiation is controlled by regulating the activity of eIF2, see below. Met-tRNAi has a\u00a0~10 fold greater affinity for eIF2-GTP over eIF2-GDP (Kapp and Lorsch, 2004). Hence hydrolysis of eIF2-bound GTP and Pi release during AUG codon recognition, facilitates loss of eIF2-GDP from initiating ribosomes (Algire et al., 2005). This eIF2-GDP must be converted to an active GTP-bound form for continued active translation initiation. Reactivation of eIF2 relies on eIF2B, a multifunctional guanine nucleotide exchange factor (GEF) (Pavitt, 2005).\n\neIF2B GEF activity facilitates GDP release from eIF2-GDP complexes (Panniers et al., 1988; Pavitt et al., 1998) enabling GTP and Met-tRNAi binding to eIF2. However, the precise mechanism of eIF2B-mediated GEF action is not yet understood (Mohammad-Qureshi et al., 2008), see Figure 1A. One highly conserved form of translational control involves signalling to and activation of eIF2 kinases that each phosphorylate serine 51 of the eIF2\u03b1 subunit, for example during periods of cell stress (Pavitt, 2005) and known widely as the integrated stress response (ISR). In the ISR, the phosphorylated form of eIF2 [eIF2(\u03b1P)] binds eIF2B unproductively forming a GEF-inhibited complex that restricts TC levels (Rowlands et al., 1988; Pavitt et al., 1998) (Figure 1A). This causes a general reduction in protein synthesis initiation rates while at the same time activating translation of ISR-responsive mRNAs (Young and Wek, 2016). Genetic and biochemical evidence shows that phosphorylated eIF2\u03b1 binds to a regulatory site on eIF2B formed by the eIF2B\u03b1\u03b2\u03b4 subcomplex (Pavitt et al., 1997; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b). In contrast GEF function is provided by eIF2B\u03b5, which interacts with eIF2\u03b2 and the GDP/GTP-binding eIF2\u03b3 subunit (Gomez and Pavitt, 2000; Asano et al., 1999; Alone and Dever, 2006). The \u03b3 subunit of eIF2B binds to, and stimulates the GEF action of, eIF2B\u03b5 (Pavitt et al., 1998; Jennings et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig1-v2.jpg)\n\n**Figure 1.:** (A) Current model for eIF2 activation and inhibition by phosphorylated eIF2. Interactions and activities are explained in the introduction. (B). Overview of eIF2/eIF2B equilibrium binding assay. (C\u2013E). Affinity determined by mixing 2 nM eIF2 with increasing concentrations of eIF2B immobilised on anti-Flag resin. Flag resin was pelleted and the eIF2 remaining in each supernatant fraction was resolved by SDS-PAGE and immunoblotted with two eIF2 subunit antibodies (inset, eIF2\u03b1 and eIF2\u03b3). Fraction bound at equilibrium was determined by quantification: total (lane 0 nM eIF2B) minus fraction remaining in the supernatant (graphs) and used calculate the dissociation constants (nM \u00b1 standard error (SE)) indicated. Assays were done either without nucleotide (C) or in the presence of either 1 mM GDP (D) or 1 mM GTP (E). (F). Cartoon of figure conclusion.\n\nA second eIF2 regulatory factor is eIF5. eIF5 primarily functions as a GTPase activating protein (GAP) for eIF2-GTP within the 48S pre-initiation complex (PIC) (Paulin et al., 2001; Algire et al., 2005). GTP hydrolysis within eIF2-GTP and subsequent inorganic phosphate release are key events that signal AUG start codon recognition by initiating ribosomes (Algire et al., 2005). These events facilitate release of eIF2-GDP/eIF5 complexes from the initiation complex, enabling subsequent 60S joining. eIF5 binds inactive eIF2-GDP and active TC with similar affinity (Kd\u00a0=\u00a023 nM; [Algire et al., 2005]) and we found that eIF5 has a second activity with eIF2-GDP that impairs spontaneous release of GDP from eIF2. This GDP-dissociation inhibitor (GDI) function is important during the ISR when eIF2\u03b1 is phosphorylated and translation is attenuated as GDI prevents eIF2B independent release of GDP and ensures tight translational control (Jennings and Pavitt, 2010a, 2010b; Jennings et al., 2016). Under optimal cell growth conditions, when free eIF2B is available, we found that eIF2B (specifically eIF2B\u03b3\u03b5) actively displaces eIF5 from eIF2-GDP prior to its action as a GEF (Jennings et al., 2013). Thus the combined actions of eIF2B and eIF5 regulate eIF2 nucleotide status (Figure 1A).\n\nGEFs typically function to activate their cognate G protein partners by destabilizing the binding of Mg2+ and GDP prompting GDP release to a nucleotide free intermediate that allows GTP to bind. To promote nucleotide exchange GEFs have a higher affinity for nucleotide-free forms of their G protein partners than to the nucleotide bound forms (Bos et al., 2007). For example, translation elongation factor eEF1A/eEF1B affinity is 0.125 \u00b5M, while affinity of eEF1B for the nucleotide-bound forms of eEF1A are\u00a0>10 fold less stable (Kd\u00a0=\u00a01.5 \u00b5M) (Gromadski et al., 2007). For the prokaryotic EF-Tu and EF-Ts, the nucleotide free complex is 1000-fold more stable (Kd\u00a0=\u00a03 nM) than nucleotide bound forms (Kd\u00a0=\u00a02\u20136 \u00b5M) (Gromadski et al., 2002). eIF2\u03b3 is structurally conserved with the tRNA-binding elongation factors eEF1A and EF-Tu as well as aIF2 found in archaea and all bind to both GDP/GTP and to tRNAs (Schmitt et al., 2010). However, unlike the translation elongation factors, eIF2/aIF2 each have three subunits (\u03b1-\u03b3) and analyses indicate that both the eIF2\u03b1 and \u03b2 subunits also make important contacts with Met-tRNAi within the TC and modulate nucleotide binding to eIF2\u03b3 (Huang et al., 1997; Naveau et al., 2013; Ll\u00e1cer et al., 2015). eIF2\u03b1\u03b2 also influence interactions with eIF2B and eIF5, as indicated above.\n\nThe additional eIF2 and eIF2B subunit complexity over other translation G-proteins and GEFs suggested to us that eIF2B might not behave as a typical GEF. In addition a recent studies examining the EF-Tu interactions with its GEF, EF-Ts, suggest that EF-Ts can stimulate EF-Tu TC formation and can form an EF-Tu-GTP/tRNA/EF-Ts quaternary complex (Burnett et al., 2013, 2014). These findings prompted us to investigate the interplay between eIF2B and eIF5 with eIF2-GTP and Met-tRNAi during eIF2 activation and its control by eIF2(\u03b1P). We report the unexpected finding that eIF2B binding affinity for eIF2 at steady state is not influenced by guanine nucleotides. We also report an antagonistic ability of eIF2B, where eIF2B can destabilise TC and compete with tRNAi for eIF2. We show that these new antagonistic roles for eIF2B are counteracted by eIF5, wherein eIF5 stabilises TC preventing the destabilizing effects of eIF2B. Hence eIF5 is required for robust rates of TC formation and transition initiation. Together these findings suggest that the competition between eIF2B and eIF5 for eIF2 continues even after TC formation and that TC/eIF5 complexes represent a robust product of nucleotide exchange. Finally we demonstrate that eIF2B can better compete with eIF5 for binding to TC formed with eIF2(\u03b1P), leading to increased TC destabilization. We propose these new interactions of eIF2B with TC reveal a second step of translation initiation regulated by eIF2(\u03b1P) and that these events ensure tight control of translation initiation.\n\n## Results\n\n### The affinity of eIF2B and eIF2 is not influenced by guanine nucleotides\n\nGTP-binding protein interactions with their GEFs are typically modulated by the nucleotide bound to the G-protein, wherein the affinity for the nucleotide-free exchange intermediate is greatest and contributes to the forward direction of the G protein activation process (Bos et al., 2007). This preference has been found for translation elongation factors eEF1A and EF-Tu, that, like eIF2, also bind tRNAs during protein synthesis (Gromadski et al., 2002, 2007). We investigated eIF2/eIF2B complex formation and in contrast to our expectations we found that, at steady state, eIF2 bound eIF2B with equal affinity independent of its nucleotide status. Our assay used Flag affinity resin to immobilize purified Flag tagged eIF2B over a wide range of concentrations (0\u2013100 nM) incubated with limiting apo-eIF2 (2 nM eIF2 incubated to remove any co-purifying nucleotide, see Materials\u00a0and\u00a0methods) in the presence of 1 mM GDP, GTP or nucleotide free (Figure 1B). The fraction of eIF2 remaining unbound was quantified and used to calculate equilibrium dissociation constants (Kds). Kds showed minimal variations according to nucleotide status 26.6 nM (+GDP) to 32.2 nM (apo-eIF2) (Figure 1C\u2013E). eIF2B has recently been shown to be a dimer (Gordiyenko et al., 2014; Kashiwagi et al., 2016a) and so capable of binding two eIF2 molecules per dimer. Our analyses provided no evidence for co-operative binding and the data fit well to a model where a 5-subunit eIF2B monomer binds one eIF2 heterotrimer (see Materials and methods). So in these and all following experiments our eIF2B concentrations assume a 5-subumit monomer forming a 1:1 complex with eIF2 and differ by two-fold from values that would be obtained by an eIF2B dimer. The measured eIF2/eIF2B Kds are similar to the measured affinity between eIF5 and eIF2-GDP and between eIF5 and TC (both\u00a0~23 nM) (Algire et al., 2005). Hence neither regulator of eIF2 shows a preference for eIF2 nucleotide status. Both of these eIF2 regulatory proteins bind via interactions with both eIF2\u03b2 and \u03b3 (Asano et al., 1999; Mohammad-Qureshi et al., 2007a). As eIF5 has opposing GDI and GAP functions with different forms of eIF2, these observations open up the possibility that eIF2B has additional roles regulating eIF2-GTP.\n\n### Competition between eIF2B and Met-tRNAi for eIF2-GTP\n\nAs eIF2B does not have enhanced affinity for nucleotide-free eIF2 (Figure 1F) or a reduced affinity for GTP bound eIF2, the GEF step alone cannot provide a driving force for TC formation to promote rounds of protein synthesis initiation. We hypothesized that eIF2B binding to eIF2-GTP might impact on the ability of eIF2 to form TC with Met-tRNAi and therefore promote eIF2-TC formation. Indeed recent studies with bacterial EF-Tu showed that its GEF, EF-Ts, could accelerate both the formation and decay of EF-Tu TC via a transient quaternary complex (Burnett et al., 2014). We used BOP-N-Met-tRNAi (tRNA probes) in a fluorescence spectroscopy assay where increasing concentrations of eIF2 and excess nucleotides enabled us to monitor TC formation in solution. Consistent with recent studies (Jennings et al., 2016), eIF2-GTP TC formed readily (Kd tRNAi=1.13 nM), while eIF2-GDP significantly reduced Met-tRNAi binding by\u00a0~50 fold (Kd tRNAi=55.5 nM; Figure 2A). Surprisingly, we found that the addition of eIF2B significantly inhibited TC formation in a concentration dependent manner (Figure 2B). Our assays contained 20 nM eIF2 and even a ten fold lower amount of eIF2B antagonised TC formation. Importantly, this assay was performed without GDP and with an excess of GTP making eIF2B GDP/GTP exchange redundant for TC formation. This experiment reveals that eIF2B competes with Met-tRNAi for binding to eIF2-GTP. The inhibitory effect of eIF2B on TC formation observed here is greater than predicted by the individual binding affinities of Met-tRNAi and eIF2B for eIF2-GTP and a standard competitive inhibition model (Sch\u00f6n et al., 2011). The reasons for this are not yet clear. One idea is that despite GTP presence in vast excess, eIF2B binding to eIF2 may promote GTP release, as in the absence of bound Met-tRNAi, the rate of spontaneous GTP release from eIF2 is high (Figure 2\u2014figure supplement 1). Hence, as GTP loss impairs Met-tRNAi affinity significantly (Figure 2A), this could reduce the apparent affinity for Met-tRNAi in the presence of eIF2B.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig2-v2.jpg)\n\n**Figure 2.:** (A) Binding curves titrating 20 nM BOP-N-Met-tRNAi with eIF2 in the presence of 1 mM GTP or GDP. Dissociation constants (nM) \u00b1 SE are indicated (inset). ***p<0.001 two-tailed T-test. (B). As in A only in the presence of 1 mM GTP \u00b1 increasing concentrations of eIF2B (0\u2013200 nM). *p<0.05, **p<0.01, ***p<0.001 two-tailed T-test C). Supernatant depletion affinity capture as done in Figure 1 with 1 mM GTP\u00a0+2 nM Met-tRNAi with calculated affinity constants \u00b1 SE D). Dissociation curves for 20 nM BOP-N-Met-tRNAi pre-bound to eIF2 (20 nM) and saturating GTP (1 mM) upon titration of eIF2B (0\u2013300 nM) (blue triangles). eIF5 (20 nM) was added to some reactions (red circles). Calculated IC50 values \u00b1 SE for dissociation of TC are shown in inset box (nM). *p<0.05 two-tailed T-test. (E). Model for eIF2B competition with tRNA.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Fluorescent-BODIPY labelled GDP or GTP release from eIF2 (20 nM) in the presence of 1 mM \u2018dark\u2019 nucleotide \u00b1 eIF2B (5 nM). Calculated Koff \u00b1 SE is shown in the box. ***p<0.001, two-tailed T-test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Fluorescence binding assay in the absence of eIF2, showing eIF2B does not bind to or alter fluorescence of BOP-N-Met-tRNAi.\n\nIn contrast to the large negative effect of eIF2B on TC formation, monitoring eIF2/eIF2B interactions in the presence of GTP and Met-tRNAi revealed that Met-tRNAi only minimally weakened the eIF2-GTP/eIF2B interaction (Kd eIF2=45.2 nM; Figure 2C) compared with eIF2-GTP/eIF2B affinity (28.3 nM; Figure 1C). Importantly Met-tRNAi remained in the supernatant in our binding assay (Figure 2C) and excess eIF2B did not alter BOP-N-Met-tRNAi fluorescence (Figure 2\u2014figure supplement 2), indicating that eIF2B does not independently bind Met-tRNAi. To assess if eIF2B could disrupt pre-formed TC, we altered our assay set-up by pre-forming eIF2-TC to assess the ability of eIF2B to release BOP-N-Met-tRNAi. In the absence of added eIF2B, TC was stable during the course of our assays (0 nM eIF2B in Figure 2D), however the addition of eIF2B disrupted TC, altering tRNA fluorescence with an IC50\u00a0=\u00a053.4 nM (blue triangles, Figure 2D). Thus at steady-state, eIF2B impairs eIF2 TC formation rates and can disrupt pre-formed TC complexes. Hence eIF2B is a competitive inhibitor of TC formation. By analogy with EF-Ts (Burnett et al., 2014), one idea is that competition can be effected by formation of an unstable eIF2-TC/eIF2B intermediate (Figure 2E). These data suggest that eIF2 TC is not a final stable product of the eIF2B catalysed nucleotide exchange reaction and that an additional step is required to stabilize eIF2 TC.\n\n### eIF5 stabilizes TC formation, preventing antagonism by eIF2B\n\nIn models of translation initiation eIF2 TC interacts with eIF5 and with eIF1, \u22121A and \u22123 to stimulate TC binding to 40\u00a0S ribosomes (Hinnebusch, 2014). Hence, unlike the translation elongation factor G protein TCs that bind directly to translating 80\u00a0S ribosome A-sites, additional protein factors modulate eIF2 TC downstream functions in translation initiation. We hypothesized that eIF5 may be a good candidate factor to modulate the apparent negative/competitive interfering role of eIF2B in destabilizing eIF2 TC (Figure 2) because eIF5 binds TC (Algire et al., 2005) to promote its interaction with eIF3 (Singh et al., 2005) and eIF1 and eIF4G (Yamamoto et al., 2005; Luna et al., 2012) and within the 48\u00a0S PIC eIF5 promotes start codon recognition during scanning and eIF2-GTP hydrolysis steps (Huang et al., 1997; Luna et al., 2012). Potentially at odds with this idea, we previously showed that eIF2B could readily displace eIF5 from eIF2-GDP binary complexes via its GDI-displacement factor (GDF) function (IC50 eIF2B=15.1 nM) (Jennings et al., 2013) (Figure 1A). How Met-tRNAi binding to eIF2/eIF5 would impact eIF2B GDF was not known.\n\nWe therefore examined the impact of eIF5 on the ability of eIF2B to destabilize eIF2-GTP and eIF2-TC formation. Pre-binding eIF2-GTP to eIF5, using 20 nM eIF5 (a 10-fold excess over eIF2 concentration in our assay) had only minimal impact on the eIF2-GTP/eIF2B interaction (Kd\u00a0=\u00a037 nM, Figure 3A) compared to assays without eIF5 (Kd\u00a0=\u00a028 nM; Figure 1C). This result is consistent with our previous report characterising the eIF2B GDF function that disrupts eIF2/eIF5 complexes (Jennings et al., 2013). In contrast, addition of eIF5 and Met-tRNAi significantly impaired the ability of eIF2B to bind eIF2-GTP (Kd\u00a0=\u00a0223 nM; Figure 3B). Similarly, in assays monitoring the binding of Met-tRNAi to eIF2-GTP, whereas eIF2B reduced the affinity for BOP-N-Met-tRNAi affinity for eIF2 (Kd increased from 1.13 to 14.5 nM, Figure 3C), eIF2B and eIF5 together did not affect the Met-tRNAi affinity for eIF2 (Kd\u00a0=\u00a01.43). Similarly, eIF5 alone had no impact (Kd\u00a0=\u00a01.04). Finally, pre-incubation of TC with eIF5 effectively prevented TC destabilization by eIF2B (IC50\u00a0=\u00a0215 nM; Figure 2D). Together these data indicate that eIF2B can disrupt eIF2-GTP/eIF5 and TC (eIF2-GTP/Met-tRNAi) but not the quaternary complex of (eIF2-GTP/Met-tRNAi/eIF5). They suggest a model for eIF2 recycling and TC formation that requires an additional step over the currently accepted pathway: the formation of TC/eIF5 complex that enables Stabilization of TC (STC), Figure 3D. These experiments define STC as a role for eIF5 to promote directionality to eIF2 recycling. By preventing pathway reversal by eIF2B, eIF5 STC function should help ensure eIF2 recycling proceeds in a forward direction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig3-v2.jpg)\n\n**Figure 3.:** (A) eIF2/eIF2B equilibrium binding assay in the presence of eIF5 as described in legend to Figure 1. eIF2 (2 nM) was pre-bound (prior to mixing with eIF2B) with eIF5 (20 nM) and GTP (1 mM) then mixed with increasing concentrations of eIF2B immobilised on anti-Flag resin. (B). As in A, but with Met-tRNAi (20 nM) also added prior to eIF2B. (C). Binding curves titrating BOP-N-Met-tRNAi (20 nM) with eIF2 in the presence of GTP (1 mM) as in Figure 2A, but with eIF5 (20 nM), eIF2B (20 nM) or both eIF5 and eIF2B (20 nM each). Dissociation constants (nM) are indicated. ***p<0.001, two-tailed T-test. (D). Model for eIF5 stabilization of TC.\n\n### eIF5 STC function requires the eIF5-carboxyl terminal domain (CTD)\n\nNext we wished to define the eIF5 domain requirements for stabilization of eIF2-TC. eIF5 is a single polypeptide with separate functional domains. Its amino terminal domain (NTD; residues 1\u2013152) is required for GAP activity, while its carboxyl terminal domain (CTD; residues 241\u2013405) is responsible for promoting interactions with eIF2 and other factors within the PIC (Yamamoto et al., 2005; Luna et al., 2012). The eIF5 NTD and CTD are joined by a linker region (LR; residues 153\u2013240). The LR and CTD together are required for GDI activity (Jennings and Pavitt, 2010a). We assessed the ability of eIF5 domains to exhibit STC function in our TC formation assay. The eIF5-CTD alone was sufficient to prevent eIF2B destabilizing eIF2-TC equivalent to full-length eIF5 (Figure 4A and Figure 4\u2014source data 1A, left panel). In contrast, the NTD alone was not able to stop eIF2B destabilizing eIF2-TC, as expected because the N-terminal domain has poor affinity for eIF2 (Jennings and Pavitt, 2010a). This result provides a clear distinction between STC function that requires only the eIF5 CTD and the previously described eIF5 GDI function that requires the LR in addition to the CTD.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig4-v2.jpg)\n\n**Figure 4.:** (A) Kd measurements from eIF2-TC formation assays shown in Figure 4\u2014source data 1. Experiments were performed as in Figure 2A.\u00b120 nM eIF2B\u00a0\u00b120 nM eIF5, eIF5-NTD or eIF5-CTD. (B). As panel A except\u00a0\u00b15 nM or 20 nM of full eIF2B complex, eIF2B\u03b3\u03b5 subcomplexes or eIF2B epsilon alone. (C). Left, Serial dilution growth assay of gcn2\u2206 yeast cells bearing multi-copy plasmids overexpressing the indicated combination of tRNAi (IMT4) and eIF2B\u03b5 (GCD6), eIF2B\u03b3 (GCD1), eIF5 (TIF5) or eIF2B\u03b5\u03b3 (GCD6 + GCD1) grown on minimal and 3AT medium. Right, Western blot of strains used confirming overexpression of indicated proteins. (D). Model showing eIF2B\u03b5 antagonism of TC/eIF5 and TC. **p<0.01, ***p<0.001, NS non-significant (p\u22650.05), two-tailed T-test.\n\n### eIF2B\u03b5 alone destabilizes TC, even in the presence of eIF5\n\nAs indicated in the introduction, eIF2B is a large multi-subunit complex encoded by five different genes. We wished to determine which was responsible for destabilization of eIF2 TC. eIF2B GEF activity requires eIF2B\u03b5 and is boosted by complex formation with eIF2B\u03b3. Similarly both subunits are needed for GDF (Jennings et al., 2013). We found that both eIF2B\u03b5 alone and eIF2B\u03b3\u03b5 subcomplexes were as or more effective than full eIF2B complexes in competing with BOP-N-Met-tRNAi binding to eIF2-GTP (Figure 4B and Figure 4\u2014source data 1B). For example 20 nM eIF2B complexes reduced Met-tRNAi affinity by\u00a0~10 fold from 1.13 to 14.5 nM, while 20 nM eIF2B\u03b5 alone reduced Met-tRNAi affinity by\u00a0~20 fold (to 27 nM; Figure 4B). To further explore eIF5 and eIF2B antagonism we repeated these TC formation assays with 20 nM eIF2B subcomplexes and 20 nM eIF5. Here, eIF2B\u03b5 alone and eIF2B\u03b3\u03b5 subcomplexes behaved very differently to the presence of eIF5. eIF2B\u03b3\u03b5 subcomplexes were out-competed by eIF5 STC function and behaved like full eIF2B complexes. In contrast eIF2B\u03b5 was unaffected by eIF5 and was able to impair TC formation (Figure 4A and Figure 4\u2014source data 1A, right panel). This result suggests that an unexpected and novel function of eIF2B\u03b3 is to prevent eIF2B\u03b5 antagonising TC/eIF5 complexes and thereby facilitate eIF5 STC activity.\n\nIt was shown previously that overexpression of eIF2B\u03b5 in yeast cells caused an unexpected phenotype. Excess eIF2B\u03b5 gene dosage promotes Gcn2-independent activation of the general amino acid control response (GAAC), the yeast counterpart to the mammalian ISR (Richardson et al., 2004). Activation of GAAC under these conditions implies cells have reduced active eIF2-TC levels that in turn stimulate GCN4 translation to levels that can overcome an imposed amino acid limitation (Hinnebusch, 2005; Dever et al., 2016). This result is not expected from eIF2B\u03b5\u2019s known functions in eIF2 recycling, but is consistent with the results described above and shown in Figure 4A. Our data predict that by increasing Met-tRNAi gene dosage we might suppress the aberrant GAAC response by mass action. We therefore tested this idea, monitoring the growth of gcn2\u2206 cells on 3-aminotriazole containing medium (SD\u00a0+\u00a03AT) to assess GAAC activation. In accord with our prediction, increasing Met-tRNAi gene dosage suppressed the aberrant Gcn2-independent GAAC response associated with excess eIF2B\u03b5 gene dosage (Figure 4C, Compare rows 3 and 4). We also found that co-overexpressing eIF2B\u03b3 with \u03b5 resulted in the same Gcn2-independent growth and suppression by excess Met-tRNAi (rows 5 and 6). As expected expressing eIF2B\u03b3 alone did not confer the GAAC phenotype, (Figure 4C, rows 7 and 8), while excess eIF5 did (row 9). Excess eIF5 was previously shown to antagonise eIF2B\u03b5 (Singh et al., 2006) and in line with expectations this phenotype was not suppressed by excess Met-tRNAi gene dosage (row 10). Western Blotting confirmed that analysis excess Met-tRNAi did not alter protein overexpression levels (Figure 4C, right panels) and quantification indicated that eIF2B\u03b5 was overexpressed\u00a0~24 fold over wild-type, while eIF2B\u03b3 was overexpressed\u00a0~12 fold over wild-type levels. Hence the cells shown in rows 5 and 6 (Figure 4C) likely contain a mix of excess eIF2B\u03b3\u03b5 complexes and excess free eIF2B\u03b5 that both contribute to the observed phenotype. Together with the biochemical analyses, these data show that eIF2B\u03b5 alone can act as a rogue factor to antagonise TC and TC/eIF5 complex formation (Figure 4D). These results are consistent with the idea that eIF2B subunit complexity contributes to effective eIF2 recycling by reducing the ability of eIF2B\u03b5 to antagonise the recruitment of eIF2 TC by eIF5 and hence promote translation initiation.\n\n### eIF2B can disrupt eIF2(\u03b1P) TC/eIF5 complexes\n\nBecause phosphorylation of eIF2\u03b1 at serine 51 by eIF2\u03b1 kinases is a universal and potent inhibitor of protein synthesis, we investigated whether this would have any impact on these new activities of eIF2B and eIF5. As phosphorylated eIF2 [eIF2(\u03b1P)] can form a tight complex with eIF2B via binding to its regulatory \u03b1\u03b2\u03b4 subunits (Pavitt et al., 1998; Krishnamoorthy et al., 2001), we hypothesized that this may enable eIF2B to further antagonise eIF5/TC complexes. We used purified PKR to phosphorylate eIF2 and employed Phos-tag SDS-PAGE gel immunoblots to demonstrate that eIF2\u03b1 was phosphorylated to at least 80% (Figure 5\u2014figure supplement 1A). To assess the impact of phosphorylated \u03b1 on eIF2 kinetic parameters we repeated a large selection of our established assays with this new substrate. Importantly, eIF2(\u03b1P) did not alter the intrinsic Koff GDP observed in our assays, but did prevent eIF2B stimulation of BODIPY-GDP release in line with previous findings (Figure 5\u2014figure supplement 1B). In addition, eIF2(\u03b1P) exhibited a 8\u201310-fold enhanced affinity for eIF2B over non-phosphorylated eIF2, irrespective of eIF2 nucleotide status (Figure 5A and Figure 5\u2014source data 1 panels A-C). Phosphorylation did not impact the affinity of eIF2 for BOP-N-Met-tRNAi, either in the presence of GTP (Kd tRNA1.35 nM) or GDP (Kd tRNA49.3 nM) (Figure 5\u2014figure supplement 2). The lack of impact of phosphorylation on Met-tRNAi affinity eIF2 is in line with expectations given that structural analysis of eIF2-tRNA interactions indicates that there is no direct contact between the serine 51 of eIF2\u03b1 and Met-tRNAi (Ll\u00e1cer et al., 2015) and because in yeast mutations in eIF2 or eIF2B subunits permit cells to grow at normal rates with very high eIF2\u03b1P levels (Pavitt et al., 1997; Vazquez de Aldana and Hinnebusch, 1994; Vazquez de Aldana et al., 1993): experiments implying that eIF2\u03b1P inhibits eIF2B function only.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig5-v2.jpg)\n\n**Figure 5.:** (A) Kd measurements \u00b1 SE from eIF2(\u03b1P)/eIF2B complex formation assays shown in Figure 5\u2014source data 1 and compared with measurements made with non-phosphorylated eIF2 shown in previous figures. (B). Dissociation curves for 20 nM BOP-N-Met-tRNAi pre-bound to eIF2(\u03b1P) (20 nM) and saturating GTP (1 mM) upon titration of eIF2B (0\u2013300 nM) (red circles). eIF5 (20 nM) was added to some reactions (open circles). Data shown in Figure 2D is reproduced for comparison in gray symbols. Calculated IC50 values \u00b1 SE are shown in the box. (C). Model for eIF2B inhibition of eIF2(\u03b1P)-TC/eIF5 complexes. *p<0.05, ***p<0.001, two-tailed T-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Phos-Tag gel western blots of eIF2 \u00b1 PKR with total eIF2\u03b1 (left) and ser-51 phospho-specific (right) antibodies. (B). Fluorescent-BODIPY labelled GDP release from eIF2 or eIF2(\u03b1P) (20 nM) in the presence of 1 mM \u2018dark\u2019 nucleotide\u00a0\u00b15 nM eIF2B. Calculated Koff \u00b1 SE shown. ***p<0.001, NS non-significant (p\u22650.05), two-tailed T-test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Top, Cartoon descripting assay. Bottom: Fluorescence of 20 nM BOP-N-Met-tRNAi binding to 2 nM eIF2(\u03b1P) in the presence of 1 mM GDP or GTP. Calculated Kds \u00b1 SE shown in inset box. ***p<0.001, two-tailed T-test.\n\nTo examine completion between eIF2B, eIF5 and Met-tRNAi for eIF2(\u03b1P) we repeated our previous interaction assays. eIF2B had only a modest 1.2\u20131.4-fold enhanced affinity for eIF2(\u03b1P)-GTP over eIF2-GTP in the presence of excess Met-tRNAi or eIF5 alone (Figure 5A and Figure 5\u2014source data 1, panels D-E). In contrast when 10-fold molar excess of both Met-tRNAi and eIF5 over eIF2(\u03b1P) were both included in the binding assay, eIF2(\u03b1P)/eIF2B complexes formed with 4-fold enhanced affinity over non-phosphorylated eIF2 (Kd eIF2 =57 nM vs 223 nM for unphosphorylated eIF2/eIF2B (Figure 5A and Figure 5\u2014source data 1, panel F). These experiments suggest that eIF2B is better equipped to disrupt TC/eIF5 complexes when eIF2 is phosphorylated, than when non-phosphorylated. To quantify this we preformed TC with eIF2(\u03b1P) \u00b1 eIF5 and asked if eIF2B could disrupt Met-tRNAi binding to eIF2. As shown in Figure 5B, eIF2B is able to displace Met-tRNAi from eIF2(\u03b1P)-TC /eIF5 complexes (red open circles)\u00a0~4x as well as it can with non-phosphorylated TC / eIF5 (gray open circles). Indeed Met-tRNAi displacement from eIF2(\u03b1P)-TC/eIF5 complexes by eIF2B proceeded as effectively as Met-tRNAi displacement from TC complexes lacking eIF5 (gray filled circles in Figure 5B). Together these data are consistent with the idea that in addition to regulation of eIF2B GEF activity, eIF2B can also further inhibit translation initiation by disrupting eIF2(\u03b1P)-TC/eIF5 complexes and forming eIF2(\u03b1P)-GTP/eIF2B complexes (Figure 5C). Unlike bound GDP, GTP readily dissociates from eIF2(\u03b1P) (Figure 5\u2014figure supplement 1B) which should further impede Met-tRNAi re-acquisition. We propose that these inhibitory interactions with eIF2(\u03b1P)-GTP act as secondary \u2018fail-safe\u2019 mechanisms to ensure tight-regulation of translation by phosphorylation of eIF2.\n\n## Discussion\n\n### eIF2B does not preferentially bind nucleotide free eIF2\n\nWe have evaluated interactions between eIF2B and eIF2, Met-tRNAi and eIF5 in the formation and regulation of eIF2-GTP/Met-tRNAi ternary complexes. Our studies reveal five key novel findings about the mechanisms driving translation initiation and its regulation by eIF2\u03b1P, a key element of the ISR. Firstly we show that eIF2B affinity for eIF2 is not governed by the nucleotide bound (Figure 1). This is highly unusual as GEFs typically bind their G proteins with higher affinity for a nucleotide-free form. Such a binding mode helps drive the extraction of the inactive GDP and promote binding of GTP (Bos et al., 2007). This lack of specificity of eIF2B for nucleotide-free eIF2 is likely because eIF2 has additional subunits over other translational G proteins. It is known that eIF2\u03b2 is important for interacting with both regulatory factors (Asano et al., 1999), hence eIF2 regulator interactions are not dependent solely on the nucleotide-binding eIF2\u03b3 subunit. A likely consequence of a lack of preference for the nucleotide free form is that eIF2B-promoted GDP release and subsequent binding of GTP does not by itself provide a strong forward momentum to promote eIF2B release from eIF2-GTP and drive TC formation.\n\n### eIF2B competes with Met-tRNAi for eIF2-GTP\n\nWhen investigating the influence of eIF2B on eIF2-TC formation we found that eIF2B and Met-tRNAi compete for eIF2-GTP. eIF2B therefore paradoxically promotes translational activation via GEF action and also acts as a competitive inhibitor impeding TC formation. We assume that because eIF2B concentrations in vivo are lower than eIF2 and Met-tRNAi (Singh et al., 2007; von der Haar and McCarthy, 2002), that tRNAi abundance helps favour the forward reaction during times of optimal growth. The TC destabilizing activity of eIF2B appears important when translational down-regulation by eIF2 phosphorylation is required, (see later discussion). Hence the negative impact of eIF2B on TC formation is likely the price cells pay to permit tight regulation of TC levels by eIF2B. eIF2B\u00a0and\u00a0Met-tRNAi competition for eIF2 only requires eIF2B\u03b5 (Figure 4B). This is consistent with the idea that Met-tRNAi and eIF2B\u03b5 compete for an overlapping or shared binding site on eIF2 and that binding is mutually exclusive. Such competition between eIF2B and Met-tRNAi helps to explain why excess eIF2B\u03b5 aberrantly activates GCN4 translation. Although excess eIF2B\u03b5 enhances eIF2B GEF activity (Pavitt et al., 1998), this is not reflected by GCN4 activity in vivo which is elevated in cells lacking gcn2 but with excess eIF2B\u03b5. Gcn2-independent growth on 3AT medium is termed a Gcd- phenotype, which signals limiting active TC levels. Genetic suppression of the Gcd- phenotype by excess tRNAi gene dosage (Figure 4C) is in accord with a model where eIF2B\u03b5 and Met-tRNAi can compete for eIF2-GTP.\n\n### eIF5 stabilizes TC\n\neIF5 is known to promote eIF2-TC recruitment to other initiation factors (Asano et al., 2000; Yamamoto et al., 2005; Luna et al., 2012). Here we found that eIF5 stabilizes eIF2-TC, effectively preventing eIF2B releasing eIF2 from TC/eIF5 complexes (Figure 3). These data are consistent with free eIF5 providing a driving force stabilizing TC in preparation for translation initiation and preventing eIF2B antagonizing eIF2-TC. One interpretation of this data is that eIF2-TC/eIF5 complexes represent the final product of nucleotide exchange rather than TC itself. A further implication of our findings is that by down-regulating eIF5 levels or activity it may be possible to influence the availability of TC/eIF5 complexes for translation. eIF5 levels are regulated through uORFs in mammalian cells (Loughran et al., 2012), and eIF5 mimic proteins have been described that can antagonise eIF2/eIF5 functions, suggesting additional regulatory inputs could potentially control TC activity (Singh et al., 2011; Kozel et al., 2016). Only the eIF5-CTD was required to stabilize TC (Figure 4A). This is consistent with prior results that eIF5-CTD is critical for assembling the eIF2 multifactor complex and 43S PIC (Asano et al., 2000; Yamamoto et al., 2005) and shows that TC stabilization does not require the eIF5 linker-region, which is necessary for eIF5 GDI function with eIF2-GDP (Jennings and Pavitt, 2010b).\n\n### eIF2B\u03b3 plays critical roles to promote directionality to eIF2 recycling\n\nWe found recently that the eIF2B\u03b3\u03b5 subcomplex is necessary for eIF2B to actively dissociate eIF2 from eIF2/eIF5 complexes (Jennings et al., 2013). Neither eIF2B\u03b5 or eIF2B\u03b3 alone could stimulate eIF5 release. eIF2B\u03b3\u03b5 sub-complexes also have enhanced GEF activity compared with eIF2B\u03b5 alone, activity equivalent to eIF2B full complexes (Pavitt et al., 1998; Jennings et al., 2013). Here we show that eIF2B\u03b3 has a third important role, as it prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes (Figure 4A). We interpret these observations as indicating that eIF2B\u03b3 plays multiple critical roles ensuring efficient eIF2 recycling. Firstly it facilitates release of eIF2-GDP from eIF2-GDP/eIF5 complexes (GDF), next it boosts GDP release (GEF) and finally it prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes. Together these data show eIF2B\u03b3 is critical for efficient eIF2 recycling through multiple steps under conditions of active growth.\n\n### eIF2(\u03b1P)-GTP complexes can be regulated by eIF2B\n\neIF2(\u03b1P) inhibits eIF2B GEF activity (Pavitt et al., 1998; Jennings et al., 2013) by forming a tight complex between eIF2(\u03b1P)-GDP and eIF2B via binding eIF2\u03b1 to its regulatory \u03b1\u03b2\u03b4 subunits (Pavitt et al., 1998; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b). However our experiments provide evidence that eIF2B can also disrupt eIF2(\u03b1P)-GTP functions independently of blocking eIF2B nucleotide exchange. eIF2B can destabilize eIF2(\u03b1P)-TC/eIF5 complexes releasing both eIF5 (Figure 5\u2014source data 1, panel F) and Met-tRNAi (Figure 5B). We interpret these findings as evidence of a secondary control system, or \u2018failsafe\u2019 mechanism to enable free eIF2B to mop up any eIF2(\u03b1P) in its vicinity, even when the latter was bound to Met-tRNAi and eIF5. As shown in cartoon form in Figure 6, these activities likely allow eIF2B to wind-back initiation complex intermediates to boost eIF2(\u03b1P)/eIF2B complexes. Unlike its tight interaction with GDP, GTP-bound eIF2, is very unstable (Figure 2\u2014figure supplement 1). Release of GTP from inhibited complexes would further ensure tight control of translation. We envisage this mechanism as providing additional safeguard to rapidly limit protein synthesis upon the onset of eIF2(\u03b1P), rather than restricting protein synthesis inhibition to eIF2(\u03b1P)-GDP complexes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24542/elife-24542-fig6-v2.jpg)\n\n**Figure 6.:** A summary model of interactions between eIF2, eIF2B, eIF5 and Met-tRNAi to generate eIF2-TC/eIF5 complexes and their inhibition by eIF2(\u03b1P). See text for details.\n\nHow effective this additional mechanism of control is in vivo is not easy to evaluate, as there is no tool currently available to decouple regulation of GTP complexes from GDP complexes. eIF2B is generally thought present in limiting concentrations compared with eIF2, eIF5 and Met-tRNAi, and this is consistent both with maintaining active translation and limiting the ability of eIF2B to compete with Met-tRNAi when optimal growth and translation are required. Although it has been observed that eIF2B can be concentrated within cellular granules or bodies whose role is not clear, but which likely alter local relative eIF2:eIF2B ratios. For example eIF2B is found in diffusible cytoplasmic foci termed eIF2B bodies or filaments (Campbell et al., 2005; Taylor et al., 2010; Noree et al., 2010), the abundance of which has been shown to be regulated by some cell stresses (Petrovska et al., 2014). The eIF2 kinase Perk is an ER-membrane tethered kinase thought to preferentially regulate the translation of ER-localized protein synthesis during the unfolded protein response. In addition stress granules form upon a wide variety of cellular stresses in a variety of cell types including stresses that generate phosphorylated eIF2 (Buchan and Parker, 2009; Kedersha et al., 2013). The ratios of translation factors in these various granules likely differ from their overall relative abundances in the cytoplasm. Such variations may permit lower affinity interactions to be biologically meaningful. Together, these findings provide a functional framework to our understanding of eIF2B complexity and its multiple roles in eIF2 recycling and suggest additional eIF2(\u03b1P) controlled steps operate within the translation initiation pathway.\n\n## Materials\u00a0and\u00a0methods\n\n### Yeast genetics\n\nStrain GP7124 (MAT\u03b1 ura3-52 leu2-3 leu2-112 ino1 gcn2\u2206 sui3\u2206 trp1\u2206::hisG ura3-52::PHIS4-LacZ pAV2443 [Flag-SUI3 TRP1 CEN]) was grown in yeast extract peptone dextrose medium as described (Amberg et al., 2005) and transformed using lithium acetate method (Gietz and Woods, 2006) with plasmids pAV2330 [IMT4 URA3 2 \u00b5m], pAV1754 [GCD6 LEU2 2 \u00b5m], pAV1413 [GCD6 GCD1 LEU2 2 \u00b5m], pAV1875 [TIF5-FLAG LEU2 2 \u00b5m], pAV1162 [GCD1 LEU2 2 \u00b5m] or empty vector plasmid controls. Transformed strains were 10-fold serial diluted and spotted onto synthetic dextrose (SD) medium\u00a0\u00b110 mM 1,2,3-aminotriazole and grown at 30\u00b0C.\n\n### Cell-extracts, SDS-PAGE and immuno-blotting\n\nFor protein expression analysis, strains were grown in selective media to an A600 of 0.6 then harvested by centrifugation at 5000 x g. Cells were resuspended in lysis buffer (30 mM HEPES pH 7.4, 100 mM KCl, 0.1 mM MgCl2, 10% glycerol + EDTA-free protease inhibitors (Thermo Fisher Scientific, Loughborough, United Kingdom). 200 \u03bcl of acid washed glass beads (Sigma-Aldrich, Poole, United Kingdom were added and cells were lysed by using a FastPrep (MP Bio, Santa Ana, CA) for 3\u00a0\u00d7\u00a020 s at 6.5 ms\u22121 with cooling on iced water for 5 min between cycles. Cell debris was removed from the cell extract by centrifugation at 10,000 \u00d7 g for 15 min at 4\u00b0C. SDS-PAGE and immuno-blotting were performed as previously described (Jennings and Pavitt, 2010a) using specific antibodies for eIF2\u03b1, eIF2\u03b3, eIF2B\u03b5, eIF5, eIF2B\u03b3, Flag-M2 (Sigma-Aldrich, Poole, United Kingdom), PAB1 (Encor Biotechnology, Gainesville, FL), ser-51 phosphorylated eIF2\u03b1 (Abcam, Cambridge, UK), and eIF5. Secondary antibody probing and quantification was performed using IRDye 800CW goat anti-rabbit IgG with an Odyssey Fc imaging system (Li-Cor, Cambridge, United Kingdom).\n\n### Protein purification\n\neIF2 was purified from yeast strain GP3511 as previously described (Pavitt et al., 1998). To obtain apo-eIF2 free from nucleotide, eIF2 was dialysed with EDTA (30 mM HEPES, 100 mM KCl, 1 mM DTT, 1 mM EDTA, 10% glycerol, pH 7.4) then with magnesium (30 mM HEPES, 100 mM KCl, 1 mM DTT, 0.1 mM MgCl2, 10% glycerol, pH 7.4). GST-eIF5 was purified from Escherichia coli as described (Jennings and Pavitt, 2010a). Flag-eIF2B complexes, subunits and sub-complexes were purified from yeast, as described (Mohammad-Qureshi et al., 2007b) and (Jennings et al., 2013). Flag-PKR was also purified from yeast as previously described (Jennings et al., 2013)\n\n### eIF2 phosphorylation\n\nPurified eIF2 was phosphorylated using purified PKR. Typically, 5 \u03bcg of eIF2 was incubated with 0.3 \u03bcL PKR, 0.1 mM ATP, and 5 mM NaF for 15 min at room temperature. To assess the level of phosphorylation, samples were resolved by SuperSep Phos-tag\u00a0(Wako, Osako, Japan) SDS-PAGE to separate phosphorylated and nonphosphoylated eIF2\u03b1 prior to immunoblotting with eIF2\u03b1-specific antisera.\n\n### Steady state fluorescence\n\nTo monitor Met\u2013tRNAi binding to eIF2, 20 nM BOP-N-Met-tRNAi (tRNA Probes, College Station, TX) in 180 \u03bcl of assay buffer (30 mM HEPES, 100 mM KCl, 10 mM MgCl2, pH7.4) was measuring using a Fluoromax-4 spectrophotometer (Horiba, Stanmore, United Kingdom) (490 nm excitation, 509 nm emission). Change in fluorescence intensity was measured upon addition of increasing amounts of apo-eIF2, incubating for 5 min at room temperature each time. Each measurement was blanked against a control without nucleotide to account for any affect of eIF2 and data were corrected for dilution effects caused by volume addition and normalised to starting values before being fitted to a single site binding model: y\u00a0=\u00a01\u00a0+\u00a0[(\u2206Fmax - 1)*(x/(x + Kd))] to obtain the dissociation constant (Kd \u00b1 SE). To monitor dissociation of TC, 20 nM BOP-N-Met-tRNAi was premixed with eIF2 +/- eIF5 in 180 \u03bcl of assay buffer before monitoring fluorescence intensity. Change in intensity was then monitored upon addition of increasing amounts of eIF2B, incubating for 5 min at room temperature each time. Each measurement was blanked and volume corrected. Data from 7\u201313 individual experiments was fitted to an exponential curve to calculate IC50 values \u00b1 SE.\n\n### eIF2-eIF2B equilibrium binding assay\n\nTo monitor the interaction between eIF2 and eIF2B, increasing amounts of eIF2B was pre-bound to 50 \u00b5l of anti-Flag M2 resin (Sigma-Aldrich, Irvine, United Kingdom). 2 nM of apo eIF2 was added to the Flag resin (\u00b11 mM nucleotides, 20 nM eIF5, 2 nM met-tRNAi) in a total volume of 1 ml and bound for 1 hr at 4\u00b0C. Flag resin was pelleted and the eIF2 remaining in each supernatant fraction was concentrated (SpeedVac concentrator, Thermo Fisher Scientific, Loughborough, United Kingdom) then resolved by SDS-PAGE and immunoblotted with two eIF2 subunit antibodies (inset, eIF2\u03b1 and eIF2\u03b3). Fraction bound at equilibrium was determined by quantification and then subtracting the amount remaining upon addition of eIF2B from the total using a control where no eIF2B was added. Data from seven individual experiments were fitted to [(A*x)/(Kd+x)] to calculate the equilibrium dissociation constant (Kd) \u00b1 SE. eIF5 in the supernatant was also probed using a specific antibody. Met-tRNAi in the supernatant was monitored by semi-quantitative RT-PCR using the oligonucleotide primers IMTF (AGCGCCGTGGCGCAGTGGAAGCGCGCA) and IMTR (TAGCGCCGCTCGGTTTCGATCCGAG), Onestep RT-PCR Kit (Qiagen Ltd, Manchester, United Kingdom).\n\n### GDP dissociation assay\n\nFluorescent eIF2\u2022BODIPY-GDP binary complex was formed by incubating apo-eIF2 with a 2x excess of BODIPY-FL-GDP (Thermo Fisher Scientific, Loughborough, United Kingdom) for 20 min at room temperature. Excess nucleotide was removed by passing through a G-50 Sephadex column (GE Healthcare, Little Chalfont, United Kingdom). Labelling efficiency was calculated to exceed 90%. To measure GDP release, 20 nM eIF2\u2022BODIPY-GDP was quickly mixed with 1 mM of unlabelled GDP (\u00b1 eIF2B and \u00b1 GST-eIF5) in 180 \u00b5l of assay buffer (30 mM HEPES, 100 mM KCl, 10 mM MgCl2, pH 7.4) and fluorescence intensity was continuously measured using a Fluoromax-4 spectrophotometer (Horiba, Stanmore, United Kingdom) (490 nm excitation, 509 nm emission, 0.1 s integration time). 5 nM of eIF2B was added to stimulate nucleotide exchange. Experimental data were fitted to exponential dissociation curves to determine the rate constants (Koff) \u00b1 SE.\n\n### Statistics\n\nTo determine statistical significance, standard errors (SE) reported from nonlinear curve regression were compared. Degrees of freedom were calculated as the sum of the data points in each fit minus the sum of the variables fit (two variables per fit, totaling four in all cases). T Scores were calculated as T=(Fit1-Fit2)/\u221a(SE1+SE2). P values were then calculated based on a two-tailed T-test.\n",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "dc209521-f07c-4b0a-9619-8d9939678ae5",
+      "submission_id": "c7caa6ff-71ff-42c7-b6e6-81c8015adecc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nahum Sonenberg, McGill University , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24542.015](https://doi.org/10.7554/eLife.24542.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Fail-safe control of translation initiation by dissociation of eIF2\u03b1 phosphorylated ternary complexes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and James Manley as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Leos Shivaya Valasek (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses the mechanisms by which phosphorylation of eIF2 can control key mechanistic steps in translational control. The eIF2 combines with GTP and Met-tRNA(iMet) and is critical for ribosome selection of initiation codons. In the Integrated stress response (ISR), phosphorylation of eIF2 (\u03b1 subunit) in response to cellular stress conditions sharply reduces the ability of its exchange factor (eIF2B) to recycle eIF2-GDP to GTP, hence lowering translation initiation. This manuscript addresses two related questions that are central to the ISR. First, can phosphorylated eIF2 function in the ternary complex during translation initiation? Second, if phosphorylated eIF2 can function in translation initiation processes, can it regulate key features including selection of the context of initiation codon. The later question has been proposed to explain phosphorylated eIF2 induction of preferential translation of ISR genes via a single regulatory uORF. This manuscript argues persuasively that the answer to both questions is no. Importantly, the manuscript shows that in addition to the eIF2B exchange function that is subject to regulation by phosphorylated eIF2, eIF2B can bind with phosphorylated eIF2, restricting it from associating with eIF5 (GAP and GDI) and as a consequence destabilizing the eIF2 ternary complex. Hence the fail-safe control in the ISR that is mentioned in the title of the manuscript. To show these critical points, this manuscript uses effectively purified proteins and steady-state kinetics.\n\nSuggested revision:\n\nThis is a nicely written manuscript that addresses critical questions in translational control. The manuscript features some novel ideas in the field. The figures are aided by some effective illustrations of experimental designs and mechanisms. Supplemental material adds value, but does not contain core content. The work is of a high standard, well controlled, logically narrated, and significantly broadens our knowledge on regulation of gene expression.\n\nThe work could be very significantly bolstered by overexpressing eIF5, eIF2B-\u03b3 alone and in combination with eIF2B-\u03b5, if doable. High copy eIF5 or 2B-\u03b3 alone should have no effect on the observed Gcd- phenotype, whereas 2B-\u03b3 plus \u03b5 should antagonize it like high copy IMT does.\n",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "58589aad-de28-4d1b-8e32-8de6fe9d5ee5",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C1",
+      "claim": "eIF2 is a G-protein that binds GTP and Met-tRNAi forming a ternary complex (TC).",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic translation initiation factor 2 (eIF2) is the key factor that delivers Met-tRNAi to ribosomes (Hinnebusch, 2014; Dever et al., 2016). eIF2 is a G-protein and binds GTP and Met-tRNAi forming a ternary complex (TC) (Schmitt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Hinnebusch, 2014; Dever et al., 2016; Schmitt et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "42a5f536-0d22-4bf4-b781-2223f997fe7a",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C2",
+      "claim": "Met-tRNAi has a ~10 fold greater affinity for eIF2-GTP over eIF2-GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Met-tRNAi has a ~10 fold greater affinity for eIF2-GTP over eIF2-GDP (Kapp and Lorsch, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Kapp and Lorsch, 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "001ede1b-0569-4b65-b9c1-2fcf297a4713",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C3",
+      "claim": "eIF2B GEF activity facilitates GDP release from eIF2-GDP complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B GEF activity facilitates GDP release from eIF2-GDP complexes (Panniers et al., 1988; Pavitt et al., 1998) enabling GTP and Met-tRNAi binding to eIF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Panniers et al., 1988; Pavitt et al., 1998).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "74460694-6ffa-41d5-bbb3-a1dc30dd5079",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C4",
+      "claim": "Phosphorylated eIF2 [eIF2(\u03b1P)] binds eIF2B unproductively forming a GEF-inhibited complex that restricts TC levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ISR, the phosphorylated form of eIF2 [eIF2(\u03b1P)] binds eIF2B unproductively forming a GEF-inhibited complex that restricts TC levels (Rowlands et al., 1988; Pavitt et al., 1998) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Rowlands et al., 1988; Pavitt et al., 1998) and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "2ee37ea9-0d1a-4b62-b025-6766d6e79f5c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C5",
+      "claim": "Phosphorylated eIF2\u03b1 binds to a regulatory site on eIF2B formed by the eIF2B\u03b1\u03b2\u03b4 subcomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic and biochemical evidence shows that phosphorylated eIF2\u03b1 binds to a regulatory site on eIF2B formed by the eIF2B\u03b1\u03b2\u03b4 subcomplex (Pavitt et al., 1997; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pavitt et al., 1997; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "3155e809-01b7-472c-b295-4f06a1d47643",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C6",
+      "claim": "GEF function is provided by eIF2B\u03b5, which interacts with eIF2\u03b2 and the GDP/GTP-binding eIF2\u03b3 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast GEF function is provided by eIF2B\u03b5, which interacts with eIF2\u03b2 and the GDP/GTP-binding eIF2\u03b3 subunit (Gomez and Pavitt, 2000; Asano et al., 1999; Alone and Dever, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Gomez and Pavitt, 2000; Asano et al., 1999; Alone and Dever, 2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "a438a5f4-ff49-4aba-8887-57d44c5fe1da",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C7",
+      "claim": "The \u03b3 subunit of eIF2B binds to, and stimulates the GEF action of, eIF2B\u03b5.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b3 subunit of eIF2B binds to, and stimulates the GEF action of, eIF2B\u03b5 (Pavitt et al., 1998; Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pavitt et al., 1998; Jennings et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "90fa41ef-6198-41b7-ad20-e572ebff7067",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C8",
+      "claim": "eIF5 primarily functions as a GTPase activating protein (GAP) for eIF2-GTP within the 48S pre-initiation complex (PIC).",
+      "claim_type": "EXPLICIT",
+      "source": "A second eIF2 regulatory factor is eIF5. eIF5 primarily functions as a GTPase activating protein (GAP) for eIF2-GTP within the 48S pre-initiation complex (PIC) (Paulin et al., 2001; Algire et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Paulin et al., 2001; Algire et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b651033a-37c6-4c5b-968f-539f096b8cf4",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C9",
+      "claim": "eIF5 binds inactive eIF2-GDP and active TC with similar affinity (Kd = 23 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "eIF5 binds inactive eIF2-GDP and active TC with similar affinity (Kd = 23 nM; [Algire et al., 2005])",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Algire et al., 2005) that provides the specific Kd value.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b91301a4-eff5-45d3-ad6a-f209b289c272",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C10",
+      "claim": "eIF5 has a GDP-dissociation inhibitor (GDI) function that impairs spontaneous release of GDP from eIF2.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that eIF5 has a second activity with eIF2-GDP that impairs spontaneous release of GDP from eIF2. This GDP-dissociation inhibitor (GDI) function is important during the ISR when eIF2\u03b1 is phosphorylated and translation is attenuated as GDI prevents eIF2B independent release of GDP and ensures tight translational control (Jennings and Pavitt, 2010a, 2010b; Jennings et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Jennings and Pavitt, 2010a, 2010b; Jennings et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "3b220494-1472-4ffc-ab40-1360c718d61f",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C11",
+      "claim": "eIF2B actively displaces eIF5 from eIF2-GDP prior to its action as a GEF.",
+      "claim_type": "EXPLICIT",
+      "source": "Under optimal cell growth conditions, when free eIF2B is available, we found that eIF2B (specifically eIF2B\u03b3\u03b5) actively displaces eIF5 from eIF2-GDP prior to its action as a GEF (Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Jennings et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "48a087c8-d9c2-4ac5-a81a-139b6ab2c12c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C12",
+      "claim": "GEFs typically have a higher affinity for nucleotide-free forms of their G protein partners than to the nucleotide bound forms.",
+      "claim_type": "EXPLICIT",
+      "source": "To promote nucleotide exchange GEFs have a higher affinity for nucleotide-free forms of their G protein partners than to the nucleotide bound forms (Bos et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Bos et al., 2007).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "bd724eb0-e8da-42a1-baf3-5483aaa20a5a",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C13",
+      "claim": "For translation elongation factor eEF1A/eEF1B, the affinity is 0.125 \u00b5M, while affinity of eEF1B for the nucleotide-bound forms of eEF1A are >10 fold less stable (Kd = 1.5 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, translation elongation factor eEF1A/eEF1B affinity is 0.125 \u00b5M, while affinity of eEF1B for the nucleotide-bound forms of eEF1A are >10 fold less stable (Kd = 1.5 \u00b5M) (Gromadski et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Gromadski et al., 2007) that provides specific affinity values.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "8acbb4f4-10ec-42ce-a97e-4c4cdb04600c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C14",
+      "claim": "For the prokaryotic EF-Tu and EF-Ts, the nucleotide free complex is 1000-fold more stable (Kd = 3 nM) than nucleotide bound forms (Kd = 2\u20136 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "For the prokaryotic EF-Tu and EF-Ts, the nucleotide free complex is 1000-fold more stable (Kd = 3 nM) than nucleotide bound forms (Kd = 2\u20136 \u00b5M) (Gromadski et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Gromadski et al., 2002) that provides specific affinity values.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "f9fcf139-c53d-4c06-9f48-ec70b47135af",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C15",
+      "claim": "eIF2\u03b3 is structurally conserved with the tRNA-binding elongation factors eEF1A and EF-Tu as well as aIF2 found in archaea and all bind to both GDP/GTP and to tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2\u03b3 is structurally conserved with the tRNA-binding elongation factors eEF1A and EF-Tu as well as aIF2 found in archaea and all bind to both GDP/GTP and to tRNAs (Schmitt et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published literature (Schmitt et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6d4f593c-b88b-4873-bb45-18afa883286c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C16",
+      "claim": "Both the eIF2\u03b1 and \u03b2 subunits make important contacts with Met-tRNAi within the TC and modulate nucleotide binding to eIF2\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "However, unlike the translation elongation factors, eIF2/aIF2 each have three subunits (\u03b1-\u03b3) and analyses indicate that both the eIF2\u03b1 and \u03b2 subunits also make important contacts with Met-tRNAi within the TC and modulate nucleotide binding to eIF2\u03b3 (Huang et al., 1997; Naveau et al., 2013; Ll\u00e1cer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Huang et al., 1997; Naveau et al., 2013; Ll\u00e1cer et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "940fbbcc-d8a9-4d4d-901e-1115480fecb6",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C17",
+      "claim": "EF-Ts can stimulate EF-Tu TC formation and can form an EF-Tu-GTP/tRNA/EF-Ts quaternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition a recent studies examining the EF-Tu interactions with its GEF, EF-Ts, suggest that EF-Ts can stimulate EF-Tu TC formation and can form an EF-Tu-GTP/tRNA/EF-Ts quaternary complex (Burnett et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Burnett et al., 2013, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "bf5d55c6-f571-4755-92ce-22955def4c8c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C18",
+      "claim": "eIF2B binding affinity for eIF2 at steady state is not influenced by guanine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "We report the unexpected finding that eIF2B binding affinity for eIF2 at steady state is not influenced by guanine nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in Figures 1C-E showing similar Kd values (26.6-32.2 nM) regardless of nucleotide status.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "bbd908de-e81b-447c-a6b7-e56da64874d5",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C19",
+      "claim": "eIF2 bound eIF2B with equal affinity independent of its nucleotide status, with Kds ranging from 26.6 nM (+GDP) to 32.2 nM (apo-eIF2).",
+      "claim_type": "EXPLICIT",
+      "source": "Kds showed minimal variations according to nucleotide status 26.6 nM (+GDP) to 32.2 nM (apo-eIF2) (Figure 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C-E with specific Kd measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "2f2ab148-3186-4d1f-93c5-4ed8af323436",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C20",
+      "claim": "eIF2B has recently been shown to be a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B has recently been shown to be a dimer (Gordiyenko et al., 2014; Kashiwagi et al., 2016a) and so capable of binding two eIF2 molecules per dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Gordiyenko et al., 2014; Kashiwagi et al., 2016a).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "c48110f9-4996-409e-9423-dc03ec6ff4bf",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C21",
+      "claim": "The measured eIF2/eIF2B Kds are similar to the measured affinity between eIF5 and eIF2-GDP and between eIF5 and TC (both ~23 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "The measured eIF2/eIF2B Kds are similar to the measured affinity between eIF5 and eIF2-GDP and between eIF5 and TC (both ~23 nM) (Algire et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Algire et al., 2005) and comparison with experimental data from Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "a4015c04-7943-4eb7-b879-47b8ab1666a0",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C22",
+      "claim": "eIF2B binding to eIF2-GTP significantly inhibited TC formation in a concentration dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found that the addition of eIF2B significantly inhibited TC formation in a concentration dependent manner (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b6d35488-1890-4645-b445-96e07b4230d8",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C23",
+      "claim": "eIF2B competes with Met-tRNAi for binding to eIF2-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment reveals that eIF2B competes with Met-tRNAi for binding to eIF2-GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 2B showing inhibition of TC formation by eIF2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "e7f9ebbb-d6d3-4c3b-a77e-f2996cffa2f4",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C24",
+      "claim": "eIF2-GTP TC formed readily (Kd tRNAi=1.13 nM), while eIF2-GDP significantly reduced Met-tRNAi binding by ~50 fold (Kd tRNAi=55.5 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent studies (Jennings et al., 2016), eIF2-GTP TC formed readily (Kd tRNAi=1.13 nM), while eIF2-GDP significantly reduced Met-tRNAi binding by ~50 fold (Kd tRNAi=55.5 nM; Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A and citation to recent studies (Jennings et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6a2ba29f-9d62-45ff-b81e-6d0078a24e07",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C25",
+      "claim": "eIF2B can disrupt pre-formed TC complexes with an IC50 = 53.4 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of added eIF2B, TC was stable during the course of our assays (0 nM eIF2B in Figure 2D), however the addition of eIF2B disrupted TC, altering tRNA fluorescence with an IC50 = 53.4 nM (blue triangles, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D with specific IC50 measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "1f3c9b4c-930b-4dca-8232-9dc967c578f7",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C26",
+      "claim": "Met-tRNAi only minimally weakened the eIF2-GTP/eIF2B interaction (Kd eIF2=45.2 nM) compared with eIF2-GTP/eIF2B affinity (28.3 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the large negative effect of eIF2B on TC formation, monitoring eIF2/eIF2B interactions in the presence of GTP and Met-tRNAi revealed that Met-tRNAi only minimally weakened the eIF2-GTP/eIF2B interaction (Kd eIF2=45.2 nM; Figure 2C) compared with eIF2-GTP/eIF2B affinity (28.3 nM; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 2C and 1C with specific Kd measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "41b5d3d5-ecfa-43b5-9eaf-dc3a0f892189",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C27",
+      "claim": "Pre-binding eIF2-GTP to eIF5 had only minimal impact on the eIF2-GTP/eIF2B interaction (Kd = 37 nM) compared to assays without eIF5 (Kd = 28 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-binding eIF2-GTP to eIF5, using 20 nM eIF5 (a 10-fold excess over eIF2 concentration in our assay) had only minimal impact on the eIF2-GTP/eIF2B interaction (Kd = 37 nM, Figure 3A) compared to assays without eIF5 (Kd = 28 nM; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3A and 1C with specific Kd measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "78cab9eb-a9e5-4cba-839d-b59cabbdf72d",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C28",
+      "claim": "Addition of eIF5 and Met-tRNAi significantly impaired the ability of eIF2B to bind eIF2-GTP (Kd = 223 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, addition of eIF5 and Met-tRNAi significantly impaired the ability of eIF2B to bind eIF2-GTP (Kd = 223 nM; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B with specific Kd measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "2edb2fef-d6a1-4816-a803-840c2f6084a5",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C29",
+      "claim": "eIF2B and eIF5 together did not affect the Met-tRNAi affinity for eIF2 (Kd = 1.43).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in assays monitoring the binding of Met-tRNAi to eIF2-GTP, whereas eIF2B reduced the affinity for BOP-N-Met-tRNAi affinity for eIF2 (Kd increased from 1.13 to 14.5 nM, Figure 3C), eIF2B and eIF5 together did not affect the Met-tRNAi affinity for eIF2 (Kd = 1.43).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C with specific Kd measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "5e7d41aa-ae02-4b81-812c-367095acd0da",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C30",
+      "claim": "Pre-incubation of TC with eIF5 effectively prevented TC destabilization by eIF2B (IC50 = 215 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, pre-incubation of TC with eIF5 effectively prevented TC destabilization by eIF2B (IC50 = 215 nM; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D with specific IC50 measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "e960ea86-bede-4b8f-9071-b30f66879529",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C31",
+      "claim": "eIF2B can disrupt eIF2-GTP/eIF5 and TC (eIF2-GTP/Met-tRNAi) but not the quaternary complex of (eIF2-GTP/Met-tRNAi/eIF5).",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data indicate that eIF2B can disrupt eIF2-GTP/eIF5 and TC (eIF2-GTP/Met-tRNAi) but not the quaternary complex of (eIF2-GTP/Met-tRNAi/eIF5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figures 2 and 3 showing differential effects of eIF2B on different eIF2 complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "cdd637e3-6caa-48b0-bb1d-108b7c15f02d",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C32",
+      "claim": "The eIF5-CTD alone was sufficient to prevent eIF2B destabilizing eIF2-TC equivalent to full-length eIF5.",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF5-CTD alone was sufficient to prevent eIF2B destabilizing eIF2-TC equivalent to full-length eIF5 (Figure 4A and Figure 4\u2014source data 1A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A and Figure 4\u2014source data 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "1f5b3071-160b-40bc-8374-a81ac19a4cfd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C33",
+      "claim": "The eIF5 NTD alone was not able to stop eIF2B destabilizing eIF2-TC.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the NTD alone was not able to stop eIF2B destabilizing eIF2-TC, as expected because the N-terminal domain has poor affinity for eIF2 (Jennings and Pavitt, 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 4A and citation to published work (Jennings and Pavitt, 2010a).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "385dccab-0f3b-44ef-b828-a93f94b370d3",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C34",
+      "claim": "Both eIF2B\u03b5 alone and eIF2B\u03b3\u03b5 subcomplexes were as or more effective than full eIF2B complexes in competing with BOP-N-Met-tRNAi binding to eIF2-GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both eIF2B\u03b5 alone and eIF2B\u03b3\u03b5 subcomplexes were as or more effective than full eIF2B complexes in competing with BOP-N-Met-tRNAi binding to eIF2-GTP (Figure 4B and Figure 4\u2014source data 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and Figure 4\u2014source data 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "e10366af-0975-4313-a988-d4dc24c078f5",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C35",
+      "claim": "20 nM eIF2B complexes reduced Met-tRNAi affinity by ~10 fold from 1.13 to 14.5 nM, while 20 nM eIF2B\u03b5 alone reduced Met-tRNAi affinity by ~20 fold (to 27 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "For example 20 nM eIF2B complexes reduced Met-tRNAi affinity by ~10 fold from 1.13 to 14.5 nM, while 20 nM eIF2B\u03b5 alone reduced Met-tRNAi affinity by ~20 fold (to 27 nM; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B with specific affinity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "9c0a3433-9e90-4bff-9832-e73095ecf177",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C36",
+      "claim": "eIF2B\u03b3\u03b5 subcomplexes were out-competed by eIF5 STC function and behaved like full eIF2B complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, eIF2B\u03b5 alone and eIF2B\u03b3\u03b5 subcomplexes behaved very differently to the presence of eIF5. eIF2B\u03b3\u03b5 subcomplexes were out-competed by eIF5 STC function and behaved like full eIF2B complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 4A and Figure 4\u2014source data 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b86721e4-400e-4c51-bbf8-34d6de6df93e",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C37",
+      "claim": "eIF2B\u03b5 was unaffected by eIF5 and was able to impair TC formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast eIF2B\u03b5 was unaffected by eIF5 and was able to impair TC formation (Figure 4A and Figure 4\u2014source data 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A and Figure 4\u2014source data 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "d20eb8aa-e93a-4637-9c0a-b334d3770b85",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C38",
+      "claim": "Overexpression of eIF2B\u03b5 in yeast cells promotes Gcn2-independent activation of the general amino acid control response (GAAC).",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown previously that overexpression of eIF2B\u03b5 in yeast cells caused an unexpected phenotype. Excess eIF2B\u03b5 gene dosage promotes Gcn2-independent activation of the general amino acid control response (GAAC), the yeast counterpart to the mammalian ISR (Richardson et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Richardson et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "aa25e835-fce5-4804-ae19-ae2ddbd89d2d",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C39",
+      "claim": "Increasing Met-tRNAi gene dosage suppressed the aberrant Gcn2-independent GAAC response associated with excess eIF2B\u03b5 gene dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "In accord with our prediction, increasing Met-tRNAi gene dosage suppressed the aberrant Gcn2-independent GAAC response associated with excess eIF2B\u03b5 gene dosage (Figure 4C, Compare rows 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "e507d763-7e78-4152-84bb-1e9fa4780a57",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C40",
+      "claim": "eIF2(\u03b1P) exhibited a 8\u201310-fold enhanced affinity for eIF2B over non-phosphorylated eIF2, irrespective of eIF2 nucleotide status.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, eIF2(\u03b1P) exhibited a 8\u201310-fold enhanced affinity for eIF2B over non-phosphorylated eIF2, irrespective of eIF2 nucleotide status (Figure 5A and Figure 5\u2014source data 1 panels A-C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "a282ccd0-471b-49ca-bbb9-6d6d3de982ae",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C41",
+      "claim": "Phosphorylation did not impact the affinity of eIF2 for BOP-N-Met-tRNAi, either in the presence of GTP (Kd tRNA1.35 nM) or GDP (Kd tRNA49.3 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Phosphorylation did not impact the affinity of eIF2 for BOP-N-Met-tRNAi, either in the presence of GTP (Kd tRNA1.35 nM) or GDP (Kd tRNA49.3 nM) (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 2 with specific Kd measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "412962f9-2f4e-4d88-9311-e7dfacac7f3b",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C42",
+      "claim": "eIF2(\u03b1P) did not alter the intrinsic Koff GDP observed in assays, but did prevent eIF2B stimulation of BODIPY-GDP release.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, eIF2(\u03b1P) did not alter the intrinsic Koff GDP observed in our assays, but did prevent eIF2B stimulation of BODIPY-GDP release in line with previous findings (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "5d96ed0c-3370-4755-820b-f182603bcafa",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C43",
+      "claim": "eIF2B had only a modest 1.2\u20131.4-fold enhanced affinity for eIF2(\u03b1P)-GTP over eIF2-GTP in the presence of excess Met-tRNAi or eIF5 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B had only a modest 1.2\u20131.4-fold enhanced affinity for eIF2(\u03b1P)-GTP over eIF2-GTP in the presence of excess Met-tRNAi or eIF5 alone (Figure 5A and Figure 5\u2014source data 1, panels D-E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6e2e06d7-fe3c-49c5-8f78-6e4e8760bae9",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C44",
+      "claim": "When both Met-tRNAi and eIF5 were included in the binding assay, eIF2(\u03b1P)/eIF2B complexes formed with 4-fold enhanced affinity over non-phosphorylated eIF2 (Kd eIF2 =57 nM vs 223 nM for unphosphorylated eIF2/eIF2B).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast when 10-fold molar excess of both Met-tRNAi and eIF5 over eIF2(\u03b1P) were both included in the binding assay, eIF2(\u03b1P)/eIF2B complexes formed with 4-fold enhanced affinity over non-phosphorylated eIF2 (Kd eIF2 =57 nM vs 223 nM for unphosphorylated eIF2/eIF2B (Figure 5A and Figure 5\u2014source data 1, panel F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A and Figure 5\u2014source data 1 with specific Kd measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "71b414f5-fbb7-4061-a111-9f8312b3e7d3",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C45",
+      "claim": "eIF2B is able to displace Met-tRNAi from eIF2(\u03b1P)-TC /eIF5 complexes ~4x as well as it can with non-phosphorylated TC / eIF5.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B, eIF2B is able to displace Met-tRNAi from eIF2(\u03b1P)-TC /eIF5 complexes (red open circles) ~4x as well as it can with non-phosphorylated TC / eIF5 (gray open circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B comparing IC50 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "f559bc0d-9628-43ce-849c-c8e916d9b284",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C46",
+      "claim": "Met-tRNAi displacement from eIF2(\u03b1P)-TC/eIF5 complexes by eIF2B proceeded as effectively as Met-tRNAi displacement from TC complexes lacking eIF5.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed Met-tRNAi displacement from eIF2(\u03b1P)-TC/eIF5 complexes by eIF2B proceeded as effectively as Met-tRNAi displacement from TC complexes lacking eIF5 (gray filled circles in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B comparing IC50 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6a54dd49-eaec-4427-978f-b7275a6b0109",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C47",
+      "claim": "eIF2B can inhibit translation initiation by disrupting eIF2(\u03b1P)-TC/eIF5 complexes and forming eIF2(\u03b1P)-GTP/eIF2B complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data are consistent with the idea that in addition to regulation of eIF2B GEF activity, eIF2B can also further inhibit translation initiation by disrupting eIF2(\u03b1P)-TC/eIF5 complexes and forming eIF2(\u03b1P)-GTP/eIF2B complexes (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from Figure 5 and inference from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "3ed1dae7-62d8-48bd-bfd8-7d0baf8ef1a1",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C48",
+      "claim": "GTP readily dissociates from eIF2(\u03b1P).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike bound GDP, GTP readily dissociates from eIF2(\u03b1P) (Figure 5\u2014figure supplement 1B) which should further impede Met-tRNAi re-acquisition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "3d1092de-4a76-4fbd-9148-672056355f57",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C49",
+      "claim": "eIF2B affinity for eIF2 is not governed by the nucleotide bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly we show that eIF2B affinity for eIF2 is not governed by the nucleotide bound (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "ebd023cf-9eba-45cf-a0a6-4ea901f990cd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C50",
+      "claim": "eIF2B does not preferentially bind nucleotide free eIF2 because eIF2 has additional subunits over other translational G proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of specificity of eIF2B for nucleotide-free eIF2 is likely because eIF2 has additional subunits over other translational G proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data and comparison with other G proteins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "bb027ffc-febe-450d-aa50-9418dc100d98",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C51",
+      "claim": "eIF2\u03b2 is important for interacting with both regulatory factors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that eIF2\u03b2 is important for interacting with both regulatory factors (Asano et al., 1999), hence eIF2 regulator interactions are not dependent solely on the nucleotide-binding eIF2\u03b3 subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Asano et al., 1999).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "9a873454-97a1-4ca6-a7e3-57fc3ee951ee",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C52",
+      "claim": "eIF2B concentrations in vivo are lower than eIF2 and Met-tRNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "We assume that because eIF2B concentrations in vivo are lower than eIF2 and Met-tRNAi (Singh et al., 2007; von der Haar and McCarthy, 2002), that tRNAi abundance helps favour the forward reaction during times of optimal growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Singh et al., 2007; von der Haar and McCarthy, 2002).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "623faa0d-eb72-487c-b65d-b20013e24e37",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C53",
+      "claim": "eIF2B and Met-tRNAi competition for eIF2 only requires eIF2B\u03b5.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B and Met-tRNAi competition for eIF2 only requires eIF2B\u03b5 (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "e374f290-e57a-46d3-92c5-00b8f6b63f9b",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C54",
+      "claim": "eIF2B\u03b5 and Met-tRNAi compete for an overlapping or shared binding site on eIF2 and that binding is mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the idea that Met-tRNAi and eIF2B\u03b5 compete for an overlapping or shared binding site on eIF2 and that binding is mutually exclusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing competition between eIF2B\u03b5 and Met-tRNAi.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "2ff74537-1aaf-4820-af9e-c1dd03a75b95",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C55",
+      "claim": "eIF5 is known to promote eIF2-TC recruitment to other initiation factors.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF5 is known to promote eIF2-TC recruitment to other initiation factors (Asano et al., 2000; Yamamoto et al., 2005; Luna et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Asano et al., 2000; Yamamoto et al., 2005; Luna et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "113276dd-469d-42b2-9d46-4836ba0bf5fd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C56",
+      "claim": "eIF5 stabilizes eIF2-TC, effectively preventing eIF2B releasing eIF2 from TC/eIF5 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we found that eIF5 stabilizes eIF2-TC, effectively preventing eIF2B releasing eIF2 from TC/eIF5 complexes (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "272b1507-60a5-4e55-ab7a-5183a10ea2a1",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C57",
+      "claim": "eIF2-TC/eIF5 complexes represent the final product of nucleotide exchange rather than TC itself.",
+      "claim_type": "EXPLICIT",
+      "source": "One interpretation of this data is that eIF2-TC/eIF5 complexes represent the final product of nucleotide exchange rather than TC itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing eIF5 stabilization of TC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "26bff0f0-d96a-4b94-aaee-4ec92562633b",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C58",
+      "claim": "eIF5 levels are regulated through uORFs in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF5 levels are regulated through uORFs in mammalian cells (Loughran et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Loughran et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "a939bf81-b3b8-4227-8d07-2bedb7959380",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C59",
+      "claim": "eIF5 mimic proteins have been described that can antagonise eIF2/eIF5 functions.",
+      "claim_type": "EXPLICIT",
+      "source": "and eIF5 mimic proteins have been described that can antagonise eIF2/eIF5 functions, suggesting additional regulatory inputs could potentially control TC activity (Singh et al., 2011; Kozel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Singh et al., 2011; Kozel et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "0505158f-7b41-4011-b92e-82e8d6aaf8c6",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C60",
+      "claim": "eIF5-CTD is critical for assembling the eIF2 multifactor complex and 43S PIC.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with prior results that eIF5-CTD is critical for assembling the eIF2 multifactor complex and 43S PIC (Asano et al., 2000; Yamamoto et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Asano et al., 2000; Yamamoto et al., 2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "d530be1d-527f-4328-9a92-005e02b25e19",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C61",
+      "claim": "TC stabilization does not require the eIF5 linker-region, which is necessary for eIF5 GDI function with eIF2-GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "and shows that TC stabilization does not require the eIF5 linker-region, which is necessary for eIF5 GDI function with eIF2-GDP (Jennings and Pavitt, 2010b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Figure 4A and citation to published work (Jennings and Pavitt, 2010b).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "558badc6-80f8-4719-8002-2cec7d08b04c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C62",
+      "claim": "The eIF2B\u03b3\u03b5 subcomplex is necessary for eIF2B to actively dissociate eIF2 from eIF2/eIF5 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found recently that the eIF2B\u03b3\u03b5 subcomplex is necessary for eIF2B to actively dissociate eIF2 from eIF2/eIF5 complexes (Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Jennings et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "ed2738d6-4738-487d-8cce-e799ea9255d1",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C63",
+      "claim": "Neither eIF2B\u03b5 or eIF2B\u03b3 alone could stimulate eIF5 release.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither eIF2B\u03b5 or eIF2B\u03b3 alone could stimulate eIF5 release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published work (Jennings et al., 2013) mentioned in the previous sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b71385d1-d69c-452b-97fb-28a29e436819",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C64",
+      "claim": "eIF2B\u03b3\u03b5 sub-complexes have enhanced GEF activity compared with eIF2B\u03b5 alone, activity equivalent to eIF2B full complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B\u03b3\u03b5 sub-complexes also have enhanced GEF activity compared with eIF2B\u03b5 alone, activity equivalent to eIF2B full complexes (Pavitt et al., 1998; Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pavitt et al., 1998; Jennings et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "8d83263a-4d13-4025-996f-b2ed50dc5e4f",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C65",
+      "claim": "eIF2B\u03b3 prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that eIF2B\u03b3 has a third important role, as it prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "24d82906-931b-4054-a95a-f1523a76824c",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C66",
+      "claim": "eIF2B\u03b3 plays multiple critical roles ensuring efficient eIF2 recycling: it facilitates release of eIF2-GDP from eIF2-GDP/eIF5 complexes (GDF), boosts GDP release (GEF), and prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these observations as indicating that eIF2B\u03b3 plays multiple critical roles ensuring efficient eIF2 recycling. Firstly it facilitates release of eIF2-GDP from eIF2-GDP/eIF5 complexes (GDF), next it boosts GDP release (GEF) and finally it prevents eIF2B\u03b5 destabilizing TC/eIF5 complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "325ef52d-4340-431d-87af-64400d934ddd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C67",
+      "claim": "eIF2(\u03b1P) inhibits eIF2B GEF activity by forming a tight complex between eIF2(\u03b1P)-GDP and eIF2B via binding eIF2\u03b1 to its regulatory \u03b1\u03b2\u03b4 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2(\u03b1P) inhibits eIF2B GEF activity (Pavitt et al., 1998; Jennings et al., 2013) by forming a tight complex between eIF2(\u03b1P)-GDP and eIF2B via binding eIF2\u03b1 to its regulatory \u03b1\u03b2\u03b4 subunits (Pavitt et al., 1998; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pavitt et al., 1998; Jennings et al., 2013; Krishnamoorthy et al., 2001; Kashiwagi et al., 2016b).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "59353ed0-6a22-4332-beb7-0811139ff5a4",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C68",
+      "claim": "eIF2B can destabilize eIF2(\u03b1P)-TC/eIF5 complexes releasing both eIF5 and Met-tRNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "However our experiments provide evidence that eIF2B can also disrupt eIF2(\u03b1P)-GTP functions independently of blocking eIF2B nucleotide exchange. eIF2B can destabilize eIF2(\u03b1P)-TC/eIF5 complexes releasing both eIF5 (Figure 5\u2014source data 1, panel F) and Met-tRNAi (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B and Figure 5\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6e2330f2-7b45-4262-97d0-e863f00b344a",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C69",
+      "claim": "There is no direct contact between the serine 51 of eIF2\u03b1 and Met-tRNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of impact of phosphorylation on Met-tRNAi affinity eIF2 is in line with expectations given that structural analysis of eIF2-tRNA interactions indicates that there is no direct contact between the serine 51 of eIF2\u03b1 and Met-tRNAi (Ll\u00e1cer et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published structural analysis (Ll\u00e1cer et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "fd330626-b61f-4a20-b3f3-002e55c1e495",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C70",
+      "claim": "Mutations in eIF2 or eIF2B subunits permit yeast cells to grow at normal rates with very high eIF2\u03b1P levels.",
+      "claim_type": "EXPLICIT",
+      "source": "and because in yeast mutations in eIF2 or eIF2B subunits permit cells to grow at normal rates with very high eIF2\u03b1P levels (Pavitt et al., 1997; Vazquez de Aldana and Hinnebusch, 1994; Vazquez de Aldana et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Pavitt et al., 1997; Vazquez de Aldana and Hinnebusch, 1994; Vazquez de Aldana et al., 1993).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "dbdc2e0d-a2f5-4712-9ba3-c5263a165a31",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C71",
+      "claim": "eIF2\u03b1P inhibits eIF2B function only.",
+      "claim_type": "EXPLICIT",
+      "source": "experiments implying that eIF2\u03b1P inhibits eIF2B function only.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from cited experiments showing cells can grow with high eIF2\u03b1P levels when eIF2 or eIF2B are mutated.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "225f72ad-c1f8-4b0a-b301-f265a902de23",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C72",
+      "claim": "eIF2B is generally thought present in limiting concentrations compared with eIF2, eIF5 and Met-tRNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2B is generally thought present in limiting concentrations compared with eIF2, eIF5 and Met-tRNAi, and this is consistent both with maintaining active translation and limiting the ability of eIF2B to compete with Met-tRNAi when optimal growth and translation are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about relative protein concentrations in cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "ebf067d1-978b-4997-a953-9b00ef6fd7d3",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C73",
+      "claim": "eIF2B can be concentrated within cellular granules or bodies which likely alter local relative eIF2:eIF2B ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it has been observed that eIF2B can be concentrated within cellular granules or bodies whose role is not clear, but which likely alter local relative eIF2:eIF2B ratios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations and inference about the effect of eIF2B localization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "182c82f7-3d1b-4489-80ba-1e5aaedf15f8",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C74",
+      "claim": "eIF2B is found in diffusible cytoplasmic foci termed eIF2B bodies or filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "For example eIF2B is found in diffusible cytoplasmic foci termed eIF2B bodies or filaments (Campbell et al., 2005; Taylor et al., 2010; Noree et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Campbell et al., 2005; Taylor et al., 2010; Noree et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "f92ec0b9-8cd7-4d38-9fe1-f16066c3b9fd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C75",
+      "claim": "The abundance of eIF2B bodies has been shown to be regulated by some cell stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "the abundance of which has been shown to be regulated by some cell stresses (Petrovska et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to published work (Petrovska et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "b04d470f-a052-4b24-956c-ba8a2b5905f8",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C76",
+      "claim": "The eIF2 kinase Perk is an ER-membrane tethered kinase thought to preferentially regulate the translation of ER-localized protein synthesis during the unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF2 kinase Perk is an ER-membrane tethered kinase thought to preferentially regulate the translation of ER-localized protein synthesis during the unfolded protein response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Perk function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "9f203cd3-742d-4cf8-897d-c44103a7262d",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C77",
+      "claim": "Stress granules form upon a wide variety of cellular stresses in a variety of cell types including stresses that generate phosphorylated eIF2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition stress granules form upon a wide variety of cellular stresses in a variety of cell types including stresses that generate phosphorylated eIF2 (Buchan and Parker, 2009; Kedersha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Buchan and Parker, 2009; Kedersha et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "7809effc-a633-48e0-ac45-5ac20300d5b1",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C78",
+      "claim": "eIF2 was purified from yeast strain GP3511.",
+      "claim_type": "EXPLICIT",
+      "source": "eIF2 was purified from yeast strain GP3511 as previously described (Pavitt et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used and is supported by citation to published protocol (Pavitt et al., 1998).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "a1efa25c-ec98-4a28-ab7a-818ec7ea87b7",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C79",
+      "claim": "GST-eIF5 was purified from Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-eIF5 was purified from Escherichia coli as described (Jennings and Pavitt, 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used and is supported by citation to published protocol (Jennings and Pavitt, 2010a).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "4f737edd-1e2c-43f1-a713-15242cb944d2",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C80",
+      "claim": "Flag-eIF2B complexes, subunits and sub-complexes were purified from yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Flag-eIF2B complexes, subunits and sub-complexes were purified from yeast, as described (Mohammad-Qureshi et al., 2007b) and (Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental method used and is supported by citations to published protocols (Mohammad-Qureshi et al., 2007b; Jennings et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "2726c7da-d2be-48e2-9b40-cc7afdb6e2dd",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "claim_id": "C81",
+      "claim": "Purified eIF2 was phosphorylated to at least 80% using purified PKR.",
+      "claim_type": "EXPLICIT",
+      "source": "We used purified PKR to phosphorylate eIF2 and employed Phos-tag SDS-PAGE gel immunoblots to demonstrate that eIF2\u03b1 was phosphorylated to at least 80% (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e4d739c-2ff2-4dd5-a49d-1d226b6855a3",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "eIF2B binds eIF2 with equal affinity regardless of nucleotide status (GDP, GTP, or apo), with Kd values ranging from 26.6-32.2 nM. This finding contradicts the typical GEF behavior where nucleotide-free G-proteins are bound with higher affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18, C19, and C49 are well-supported by experimental data in Figures 1C-E showing consistent Kd measurements across different nucleotide conditions. The equilibrium binding assays with appropriate controls and replicates (n=7) provide robust evidence. Statistical analysis confirms minimal variation in binding affinity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "747aaf9a-7faa-496e-9ede-d0fbe502c328",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "eIF2B competes with Met-tRNAi for binding to eIF2-GTP, inhibiting TC formation in a concentration-dependent manner (IC50 = 53.4 nM) and can disrupt pre-formed TC complexes. Despite this strong inhibition of TC formation, Met-tRNAi only minimally weakens eIF2-GTP/eIF2B interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by fluorescence spectroscopy data in Figures 2A-D with appropriate controls and statistical analysis. The asymmetric competition (eIF2B strongly affects TC but tRNAi weakly affects eIF2B binding) is clearly demonstrated. However, the mechanism explaining why the inhibition exceeds predictions from individual binding affinities (mentioned in text) requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "eIF5 stabilizes TC and prevents eIF2B from disrupting TC/eIF5 quaternary complexes. While eIF2B can disrupt eIF2-GTP/eIF5 binary complexes (Kd = 37 nM) and TC alone, the presence of both eIF5 and Met-tRNAi together significantly impairs eIF2B binding (Kd = 223 nM) and prevents TC destabilization (IC50 increases from 53.4 to 215 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 and C56 are well-supported by systematic experimental data in Figures 2D and 3A-C comparing different combinations of factors. The data clearly demonstrate that eIF5 provides a stabilization function for TC that counteracts eIF2B antagonism. Statistical significance is properly assessed with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "261cc471-0edf-4e4a-8195-9ca4764e9128",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The eIF5 C-terminal domain (CTD) alone is sufficient to prevent eIF2B destabilization of TC, equivalent to full-length eIF5, while the N-terminal domain (NTD) cannot. This TC stabilization function does not require the linker region necessary for GDI function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by domain deletion experiments in Figure 4A with appropriate controls. The distinction between CTD-dependent TC stabilization and linker-dependent GDI function is clearly demonstrated. Claims C60-C61 provide supporting context from prior literature that is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "c1062100-4ed0-48cd-88dd-9719aed98b81",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "eIF2B\u03b5 alone is as or more effective than full eIF2B complexes in competing with Met-tRNAi for eIF2-GTP binding. At 20 nM, eIF2B\u03b5 alone reduced Met-tRNAi affinity ~20-fold (to 27 nM) compared to ~10-fold for full eIF2B complexes. Critically, eIF2B\u03b5 alone is unaffected by eIF5 and can impair TC formation even in eIF5's presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, C37, and C53 are supported by subcomplex experiments in Figure 4B and Figure 4\u2014source data 1. The data clearly show differential behavior of eIF2B\u03b5 versus eIF2B\u03b3\u03b5 subcomplexes in the presence of eIF5, with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "aa8ce6f0-9a22-427c-86ac-4eed6e07d7ab",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "eIF2B\u03b3 prevents eIF2B\u03b5 from destabilizing TC/eIF5 complexes. eIF2B\u03b3\u03b5 subcomplexes are out-competed by eIF5 and behave like full eIF2B complexes, while eIF2B\u03b5 alone remains unaffected by eIF5. This reveals that eIF2B\u03b3 plays multiple critical roles in eIF2 recycling: facilitating eIF5 release (GDF), boosting GDP release (GEF), and preventing eIF2B\u03b5 from antagonizing TC/eIF5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C65, and C66 are supported by experimental data in Figure 4A comparing different eIF2B subcomplexes. The interpretation that eIF2B\u03b3 has multiple sequential roles is a reasonable inference from the combined data, though the mechanistic details remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "30fa95da-6834-474b-8597-f945ee5463d9",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Overexpression of eIF2B\u03b5 in yeast activates the GAAC response independently of Gcn2, and this phenotype is suppressed by increasing Met-tRNAi gene dosage, consistent with eIF2B\u03b5 competing with Met-tRNAi for eIF2 in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by genetic experiments in Figure 4C showing growth on 3AT medium and Western blot confirmation of protein expression levels. The suppression by excess tRNAi provides in vivo validation of the biochemical competition observed in vitro. Controls and quantification are appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6303cd43-9f32-4049-9590-7b9b9dd26c60",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phosphorylated eIF2 [eIF2(\u03b1P)] exhibits 8-10-fold enhanced affinity for eIF2B compared to non-phosphorylated eIF2, regardless of nucleotide status. Phosphorylation does not affect Met-tRNAi binding affinity (Kd ~1.35 nM with GTP, ~49 nM with GDP) or intrinsic GDP dissociation rate, but prevents eIF2B-stimulated GDP release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 and C81 are supported by experiments with PKR-phosphorylated eIF2 (>80% phosphorylation confirmed by Phos-tag gels in Figure 5\u2014figure supplement 1A). Binding and nucleotide release assays in Figures 5A and 5\u2014figure supplements 1B and 2 provide comprehensive characterization with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "be701b64-b76c-4271-a686-bc6450773ef7",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "eIF2B can destabilize eIF2(\u03b1P)-TC/eIF5 complexes more effectively than non-phosphorylated TC/eIF5. When both Met-tRNAi and eIF5 are present, eIF2(\u03b1P)/eIF2B complexes form with 4-fold enhanced affinity over non-phosphorylated eIF2 (Kd = 57 vs 223 nM). eIF2B displaces Met-tRNAi from eIF2(\u03b1P)-TC/eIF5 ~4-fold better than from non-phosphorylated TC/eIF5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C68 are supported by systematic comparison experiments in Figure 5A-B and source data. The data clearly demonstrate that phosphorylation enhances eIF2B's ability to disrupt TC/eIF5 complexes, with appropriate statistical analysis showing significance. This represents a novel regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "7145d516-6e27-41fc-9eff-89dfcb7deca9",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "eIF2B can inhibit translation initiation by disrupting eIF2(\u03b1P)-TC/eIF5 complexes and forming eIF2(\u03b1P)-GTP/eIF2B complexes. GTP readily dissociates from eIF2(\u03b1P), which would further impede Met-tRNAi re-acquisition, providing a 'fail-safe' mechanism for translation control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 are supported by experimental data in Figure 5 and Figure 5\u2014figure supplement 1B showing rapid GTP dissociation from eIF2(\u03b1P). The interpretation as a 'fail-safe' mechanism is a reasonable inference from the combined data, though direct demonstration of this function in translation initiation would strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "6a24b66d-270d-4439-80c5-af58949cfba9",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The lack of nucleotide-dependent binding specificity of eIF2B for eIF2 is attributed to eIF2 having additional subunits (\u03b1 and \u03b2) beyond the nucleotide-binding \u03b3 subunit, with eIF2\u03b2 being important for interactions with both eIF2B and eIF5 regulatory factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is a reasonable inference from the experimental data and comparison with other G-protein/GEF systems. Claim C51 is supported by citation to established literature (Asano et al., 1999). The explanation is logical and consistent with structural knowledge of eIF2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "79e8ebe3-c39b-454e-8bd8-c1d6ae9e0b11",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "eIF2B\u03b5 and Met-tRNAi compete for an overlapping or shared binding site on eIF2 with mutually exclusive binding. eIF2-TC/eIF5 quaternary complexes, rather than TC alone, represent the final stable product of nucleotide exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a reasonable inference from the competition data showing eIF2B\u03b5 alone is sufficient for competition. Claim C57 is an interpretation of the eIF5 stabilization data. Both are logical conclusions from the experimental evidence, though direct structural or binding site mapping would provide stronger support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing the known functions of eIF2, eIF2B, and eIF5 in translation initiation and the integrated stress response, including eIF2's role as a G-protein forming TC, eIF2B's GEF activity, eIF5's GAP and GDI functions, and regulation by eIF2\u03b1 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C11 are background information supported by appropriate citations to established literature. These provide necessary context for the novel findings but do not represent new results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "68be0766-4132-44e1-8c00-5422650fb533",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about typical GEF behavior and structural relationships between eIF2\u03b3 and other translation factors, establishing the context for why eIF2B's nucleotide-independent binding is unexpected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 are background information from cited literature providing context for interpreting the novel findings. The citations appear appropriate and the information is used to establish expectations that the experimental results contradict or extend.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Additional background and contextual claims about cellular concentrations of translation factors, eIF5 functions and regulation, eIF2B\u03b3\u03b5 functions, effects of eIF2\u03b1 phosphorylation, cellular localization of eIF2B, and stress responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C77 provide background information and context supported by appropriate literature citations or represent reasonable inferences. These support the interpretation of results but do not constitute primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "bb3084d8-91a2-47da-b63e-4f8345b94986",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological claims describing protein purification procedures for eIF2, eIF5, and eIF2B complexes from yeast and E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 describe standard methods with appropriate citations to published protocols. These are necessary methodological details but not results per se.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    },
+    {
+      "id": "47a4fbb1-9a55-478b-b309-06fb2bd81b37",
+      "content_id": "134c3685-1c7e-44ef-9f37-f5643de09401",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "eIF2B exists as a dimer capable of binding two eIF2 molecules, and the measured eIF2/eIF2B Kd values (~27-32 nM) are similar to the affinity between eIF5 and eIF2 complexes (~23 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by citations to recent structural studies. Claim C21 compares measured affinities and is supported by the experimental data and cited literature. The authors note they report concentrations assuming 1:1 stoichiometry rather than dimeric eIF2B, which is clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:23:06.224653Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bf5d55c6-f571-4755-92ce-22955def4c8c",
+      "result_id": "1e4d739c-2ff2-4dd5-a49d-1d226b6855a3"
+    },
+    {
+      "claim_id": "bbd908de-e81b-447c-a6b7-e56da64874d5",
+      "result_id": "1e4d739c-2ff2-4dd5-a49d-1d226b6855a3"
+    },
+    {
+      "claim_id": "3d1092de-4a76-4fbd-9148-672056355f57",
+      "result_id": "1e4d739c-2ff2-4dd5-a49d-1d226b6855a3"
+    },
+    {
+      "claim_id": "a4015c04-7943-4eb7-b879-47b8ab1666a0",
+      "result_id": "747aaf9a-7faa-496e-9ede-d0fbe502c328"
+    },
+    {
+      "claim_id": "b6d35488-1890-4645-b445-96e07b4230d8",
+      "result_id": "747aaf9a-7faa-496e-9ede-d0fbe502c328"
+    },
+    {
+      "claim_id": "e7f9ebbb-d6d3-4c3b-a77e-f2996cffa2f4",
+      "result_id": "747aaf9a-7faa-496e-9ede-d0fbe502c328"
+    },
+    {
+      "claim_id": "6a2ba29f-9d62-45ff-b81e-6d0078a24e07",
+      "result_id": "747aaf9a-7faa-496e-9ede-d0fbe502c328"
+    },
+    {
+      "claim_id": "1f3c9b4c-930b-4dca-8232-9dc967c578f7",
+      "result_id": "747aaf9a-7faa-496e-9ede-d0fbe502c328"
+    },
+    {
+      "claim_id": "41b5d3d5-ecfa-43b5-9eaf-dc3a0f892189",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "78cab9eb-a9e5-4cba-839d-b59cabbdf72d",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "2edb2fef-d6a1-4816-a803-840c2f6084a5",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "5e7d41aa-ae02-4b81-812c-367095acd0da",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "e960ea86-bede-4b8f-9071-b30f66879529",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "113276dd-469d-42b2-9d46-4836ba0bf5fd",
+      "result_id": "3dc5d27a-3f98-4ec9-a256-aa716ca6e6cc"
+    },
+    {
+      "claim_id": "cdd637e3-6caa-48b0-bb1d-108b7c15f02d",
+      "result_id": "261cc471-0edf-4e4a-8195-9ca4764e9128"
+    },
+    {
+      "claim_id": "1f5b3071-160b-40bc-8374-a81ac19a4cfd",
+      "result_id": "261cc471-0edf-4e4a-8195-9ca4764e9128"
+    },
+    {
+      "claim_id": "0505158f-7b41-4011-b92e-82e8d6aaf8c6",
+      "result_id": "261cc471-0edf-4e4a-8195-9ca4764e9128"
+    },
+    {
+      "claim_id": "d530be1d-527f-4328-9a92-005e02b25e19",
+      "result_id": "261cc471-0edf-4e4a-8195-9ca4764e9128"
+    },
+    {
+      "claim_id": "385dccab-0f3b-44ef-b828-a93f94b370d3",
+      "result_id": "c1062100-4ed0-48cd-88dd-9719aed98b81"
+    },
+    {
+      "claim_id": "e10366af-0975-4313-a988-d4dc24c078f5",
+      "result_id": "c1062100-4ed0-48cd-88dd-9719aed98b81"
+    },
+    {
+      "claim_id": "b86721e4-400e-4c51-bbf8-34d6de6df93e",
+      "result_id": "c1062100-4ed0-48cd-88dd-9719aed98b81"
+    },
+    {
+      "claim_id": "623faa0d-eb72-487c-b65d-b20013e24e37",
+      "result_id": "c1062100-4ed0-48cd-88dd-9719aed98b81"
+    },
+    {
+      "claim_id": "9c0a3433-9e90-4bff-9832-e73095ecf177",
+      "result_id": "aa8ce6f0-9a22-427c-86ac-4eed6e07d7ab"
+    },
+    {
+      "claim_id": "8d83263a-4d13-4025-996f-b2ed50dc5e4f",
+      "result_id": "aa8ce6f0-9a22-427c-86ac-4eed6e07d7ab"
+    },
+    {
+      "claim_id": "24d82906-931b-4054-a95a-f1523a76824c",
+      "result_id": "aa8ce6f0-9a22-427c-86ac-4eed6e07d7ab"
+    },
+    {
+      "claim_id": "d20eb8aa-e93a-4637-9c0a-b334d3770b85",
+      "result_id": "30fa95da-6834-474b-8597-f945ee5463d9"
+    },
+    {
+      "claim_id": "aa25e835-fce5-4804-ae19-ae2ddbd89d2d",
+      "result_id": "30fa95da-6834-474b-8597-f945ee5463d9"
+    },
+    {
+      "claim_id": "e507d763-7e78-4152-84bb-1e9fa4780a57",
+      "result_id": "6303cd43-9f32-4049-9590-7b9b9dd26c60"
+    },
+    {
+      "claim_id": "a282ccd0-471b-49ca-bbb9-6d6d3de982ae",
+      "result_id": "6303cd43-9f32-4049-9590-7b9b9dd26c60"
+    },
+    {
+      "claim_id": "412962f9-2f4e-4d88-9311-e7dfacac7f3b",
+      "result_id": "6303cd43-9f32-4049-9590-7b9b9dd26c60"
+    },
+    {
+      "claim_id": "2726c7da-d2be-48e2-9b40-cc7afdb6e2dd",
+      "result_id": "6303cd43-9f32-4049-9590-7b9b9dd26c60"
+    },
+    {
+      "claim_id": "5d96ed0c-3370-4755-820b-f182603bcafa",
+      "result_id": "be701b64-b76c-4271-a686-bc6450773ef7"
+    },
+    {
+      "claim_id": "6e2e06d7-fe3c-49c5-8f78-6e4e8760bae9",
+      "result_id": "be701b64-b76c-4271-a686-bc6450773ef7"
+    },
+    {
+      "claim_id": "71b414f5-fbb7-4061-a111-9f8312b3e7d3",
+      "result_id": "be701b64-b76c-4271-a686-bc6450773ef7"
+    },
+    {
+      "claim_id": "f559bc0d-9628-43ce-849c-c8e916d9b284",
+      "result_id": "be701b64-b76c-4271-a686-bc6450773ef7"
+    },
+    {
+      "claim_id": "59353ed0-6a22-4332-beb7-0811139ff5a4",
+      "result_id": "be701b64-b76c-4271-a686-bc6450773ef7"
+    },
+    {
+      "claim_id": "6a54dd49-eaec-4427-978f-b7275a6b0109",
+      "result_id": "7145d516-6e27-41fc-9eff-89dfcb7deca9"
+    },
+    {
+      "claim_id": "3ed1dae7-62d8-48bd-bfd8-7d0baf8ef1a1",
+      "result_id": "7145d516-6e27-41fc-9eff-89dfcb7deca9"
+    },
+    {
+      "claim_id": "ebd023cf-9eba-45cf-a0a6-4ea901f990cd",
+      "result_id": "6a24b66d-270d-4439-80c5-af58949cfba9"
+    },
+    {
+      "claim_id": "bb027ffc-febe-450d-aa50-9418dc100d98",
+      "result_id": "6a24b66d-270d-4439-80c5-af58949cfba9"
+    },
+    {
+      "claim_id": "e374f290-e57a-46d3-92c5-00b8f6b63f9b",
+      "result_id": "79e8ebe3-c39b-454e-8bd8-c1d6ae9e0b11"
+    },
+    {
+      "claim_id": "272b1507-60a5-4e55-ab7a-5183a10ea2a1",
+      "result_id": "79e8ebe3-c39b-454e-8bd8-c1d6ae9e0b11"
+    },
+    {
+      "claim_id": "58589aad-de28-4d1b-8e32-8de6fe9d5ee5",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "42a5f536-0d22-4bf4-b781-2223f997fe7a",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "001ede1b-0569-4b65-b9c1-2fcf297a4713",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "74460694-6ffa-41d5-bbb3-a1dc30dd5079",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "2ee37ea9-0d1a-4b62-b025-6766d6e79f5c",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "3155e809-01b7-472c-b295-4f06a1d47643",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "a438a5f4-ff49-4aba-8887-57d44c5fe1da",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "90fa41ef-6198-41b7-ad20-e572ebff7067",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "b651033a-37c6-4c5b-968f-539f096b8cf4",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "b91301a4-eff5-45d3-ad6a-f209b289c272",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "3b220494-1472-4ffc-ab40-1360c718d61f",
+      "result_id": "1d95a6ca-1e31-4eba-85dc-fd957aa245ee"
+    },
+    {
+      "claim_id": "48a087c8-d9c2-4ac5-a81a-139b6ab2c12c",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "bd724eb0-e8da-42a1-baf3-5483aaa20a5a",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "8acbb4f4-10ec-42ce-a97e-4c4cdb04600c",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "f9fcf139-c53d-4c06-9f48-ec70b47135af",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "6d4f593c-b88b-4873-bb45-18afa883286c",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "940fbbcc-d8a9-4d4d-901e-1115480fecb6",
+      "result_id": "68be0766-4132-44e1-8c00-5422650fb533"
+    },
+    {
+      "claim_id": "9a873454-97a1-4ca6-a7e3-57fc3ee951ee",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "2ff74537-1aaf-4820-af9e-c1dd03a75b95",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "26bff0f0-d96a-4b94-aaee-4ec92562633b",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "a939bf81-b3b8-4227-8d07-2bedb7959380",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "558badc6-80f8-4719-8002-2cec7d08b04c",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "ed2738d6-4738-487d-8cce-e799ea9255d1",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "b71385d1-d69c-452b-97fb-28a29e436819",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "325ef52d-4340-431d-87af-64400d934ddd",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "6e2330f2-7b45-4262-97d0-e863f00b344a",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "fd330626-b61f-4a20-b3f3-002e55c1e495",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "dbdc2e0d-a2f5-4712-9ba3-c5263a165a31",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "225f72ad-c1f8-4b0a-b301-f265a902de23",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "ebf067d1-978b-4997-a953-9b00ef6fd7d3",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "182c82f7-3d1b-4489-80ba-1e5aaedf15f8",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "f92ec0b9-8cd7-4d38-9fe1-f16066c3b9fd",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "b04d470f-a052-4b24-956c-ba8a2b5905f8",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "9f203cd3-742d-4cf8-897d-c44103a7262d",
+      "result_id": "4f2f9c88-a034-40c2-bc76-3c34b4902dd2"
+    },
+    {
+      "claim_id": "7809effc-a633-48e0-ac45-5ac20300d5b1",
+      "result_id": "bb3084d8-91a2-47da-b63e-4f8345b94986"
+    },
+    {
+      "claim_id": "a1efa25c-ec98-4a28-ab7a-818ec7ea87b7",
+      "result_id": "bb3084d8-91a2-47da-b63e-4f8345b94986"
+    },
+    {
+      "claim_id": "4f737edd-1e2c-43f1-a713-15242cb944d2",
+      "result_id": "bb3084d8-91a2-47da-b63e-4f8345b94986"
+    },
+    {
+      "claim_id": "2f2ab148-3186-4d1f-93c5-4ed8af323436",
+      "result_id": "47a4fbb1-9a55-478b-b309-06fb2bd81b37"
+    },
+    {
+      "claim_id": "c48110f9-4996-409e-9423-dc03ec6ff4bf",
+      "result_id": "47a4fbb1-9a55-478b-b309-06fb2bd81b37"
+    }
+  ],
+  "comparisons": []
+}

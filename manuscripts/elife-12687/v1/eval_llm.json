@@ -1,0 +1,240 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors developed an acute rat model using sub-retinal MEA implants and intrinsic optical imaging of V1 to systematically compare visual and electrical stimulation. The model includes 35 Brown Norway rats with MEAs implanted between the pigmentary epithelium and photoreceptor layer, with ethical approval and appropriate recovery periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C17-C20, C81-C83 collectively describe a well-documented experimental approach with appropriate ethical oversight, clear surgical procedures, and validated imaging methods. The OCT imaging (C82) confirms anatomical integrity post-implantation, and the recovery period (C83) ensures functional viability before data acquisition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C57"
+    ],
+    "result": "Prosthetic stimulation activates V1 at retinotopically appropriate positions with positional errors comparable to visual stimulation. The cortical magnification factor was 22 \u00b5m/\u00b0, with positional errors of 0.32\u00b10.22 mm (visual), 0.46\u00b10.27 mm (SE), and 0.68\u00b10.47 mm (wMEA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C57 provide quantitative measurements with appropriate sample sizes and statistical comparisons. The retinotopic magnification factor (C21) is consistent with prior literature (Gias et al., 2004), providing validation. The positional accuracy demonstrates that electrical stimulation activates expected cortical locations, though with slightly higher variability than visual stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C62",
+      "C63"
+    ],
+    "result": "Electrical stimulation produces cortical activations 2.4-5.8 times larger than expected based on electrode size. wMEA stimulation increased activation extent by 2.9\u00b12.01-fold compared to visual stimulation in 94% of cases. The spatial resolution is approximately 1 mm of retinal space, requiring inter-electrode spacing of 0.8-1.2 mm to avoid overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31, C62-C63 provide extensive quantitative data with statistical significance testing (94% of cases, p-values reported). The linear relationship between visual stimulus size and cortical activation (C25: 81 \u00b5m/\u00b0) provides a calibrated benchmark. The conversion to equivalent visual angles (C30) is mathematically sound. The conclusion about required electrode spacing (C31) follows logically from the measured activation extents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SE stimulation produces elongated cortical activations (aspect ratio 1.66\u00b10.43 vs. 1.35\u00b10.19 for visual) with orientations organized radially toward the optic disk representation (median deviation 13.3\u00b0, p=0.02). Centers-of-mass deviate away from the optic disk (angular deviation -168\u00b0). wMEA shows no significant aspect ratio increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 present statistically significant findings with appropriate controls. The Monte Carlo simulation (C36) provides rigorous statistical validation that the radial organization is non-random (p=0.02). The systematic deviation of centers-of-mass (C37) provides converging evidence. The difference between SE and wMEA (C33) is explained by geometric considerations in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C34",
+      "C67",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The distorted activation profile (excessive size and elongation) is explained by a two-component model: passive electrical diffusion and activation of ganglion cell axons en passant. The model predicts equal contributions from both sources (\u03b1=1) and accounts for the observed radial organization and anisotropy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C34, C67, C76-C78 present a mechanistic model that quantitatively accounts for multiple independent observations: activation size, aspect ratio, radial organization, and center-of-mass displacement. The model makes testable predictions that are confirmed by data (C35-C37). The chronaxie argument (C78) provides biophysical plausibility for differential activation of axons vs. cell bodies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Electrical stimulation intensity modulates cortical activation amplitude with sigmoidal profiles similar to visual luminance. SE has lower semi-saturation threshold (20.29\u00b13.25 \u00b5A) than wMEA (52.66\u00b117.35 \u00b5A) but broader operating range (182.6\u00b1151.4 \u00b5A vs. 82.5\u00b188.4 \u00b5A), allowing finer intensity control. Increasing intensity increases both amplitude and size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44, C58-C61 provide Naka-Rushton fits to intensity-response functions with appropriate statistical comparisons. The finding that SE offers broader operating range (C59, C44) is well-supported by the fitted parameters. The conclusion that small electrodes enable finer intensity control (C60) follows logically. The coupling between size and amplitude (C61) is an important constraint for prosthesis design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Symmetric biphasic pulse polarity had no significant effect on activation extent. Asymmetric anodic-first pulses at 200 \u00b5A produced smaller activations (1.66\u00b10.71 mm, 17.12\u00b18.11\u00b0eq) but the reduction was not systematic (70% of cases) and small (20.43%\u00b154.32%). This contradicts predictions from McIntyre & Grill modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C68-C72 document systematic testing of pulse parameters with appropriate statistical analysis. The negative result for symmetric pulses (C45) and modest effect for asymmetric pulses (C47-C48) are clearly quantified with variability measures. The contradiction with prior modeling (C72) is appropriately noted. The high variability (C48) limits clinical utility of this approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C74",
+      "C75",
+      "C79"
+    ],
+    "result": "Impedance spectroscopy-adapted pulses systematically decreased activation extent (36\u00b132% at low voltage, 20.7\u00b129.2% at high voltage) in 100% and 88% of cases respectively, without changing amplitude at high voltage. This was the only method that reduced both extent and aspect ratio, mimicking visual activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C74-C75, C79 present the most promising solution with high success rates (100% and 88%) and systematic effects. The preservation of amplitude while reducing extent (C52, p=0.546) demonstrates independent control of size and intensity. The unique reduction in both extent and aspect ratio (C75) distinguishes this from other methods. The prior validation of the impedance spectroscopy method (C49, Pham et al., 2013) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C80"
+    ],
+    "result": "The optical imaging approach is validated by: (1) robust visual and electrical responses indicating functional integrity, (2) established correlation between optical signals and spiking activity, (3) evidence that cortical activation profiles bias percepts in awake primates, and (4) high correlation between Z-score and DI/I measures (r\u00b2=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C80 provide methodological justification through multiple lines of evidence. The working hypothesis (C54) is supported by extensive citations. The correlation between measurement methods (C80, r\u00b2=0.81, p=1.40e-45) demonstrates internal consistency. However, the link to perception (C56) is from a different species (monkey) and may not fully translate to anesthetized rats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Anesthesia affects the balance between excitation and inhibition rather than simply reducing inhibition. The effects of anesthesia on activation size are difficult to predict, but systematic visual-electrical comparisons under identical anesthesia levels control for this confound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C65 cite conflicting literature on anesthesia effects. While the authors argue that paired comparisons control for anesthesia (implicit in study design), the absolute magnitude of activation spread may differ from awake conditions. The relevance to human prosthesis function remains unclear. Claim C66 about Fransen et al.'s findings provides context but doesn't directly address the anesthesia concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12"
+    ],
+    "result": "Retinal prostheses are needed for irreversible blindness from AMD and RP affecting 45 million people. Current devices (Argus II, Alpha IMS) restore some function but with insufficient visual acuity. Prior animal studies did not systematically compare visual and prosthetic activation or characterize functional impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide appropriate background context supported by extensive citations. The epidemiological data (C1), clinical limitations (C6-C7), and gaps in prior animal studies (C9-C10) establish clear motivation for the current work. All claims are supported by appropriate citations to peer-reviewed literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Prosthetic stimulation generates functional activation at the expected retinotopic location and amplitude, but with significantly larger extent and aspect ratio than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 summarize the main findings that are detailed in other result groups. These are high-level conclusions supported by the quantitative data in C21-C37 and C62-C63. The claims accurately represent the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "Reverse-engineered electrical pulses based on impedance spectroscopy decrease both the extent and aspect-ratio of cortical activation, providing a promising solution for clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is a summary conclusion supported by detailed findings in C49-C52, C74-C76. The systematic reduction in activation spread (100% and 88% success rates) with preserved amplitude provides strong support. This represents the most clinically promising finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Current steering methods could improve spatial resolution up to single RGC activation with single action potential resolution, as demonstrated in in-vitro preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 accurately cites prior work (Jepson et al., 2013; Sekirnjak et al., 2008) on current steering methods. However, this is a literature citation rather than a finding from the current study. The claim is appropriately presented as a potential future direction rather than a tested solution in this work.",
+    "result_type": "MINOR"
+  }
+]

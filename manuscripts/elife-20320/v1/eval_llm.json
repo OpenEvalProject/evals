@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study analyzed 143,390 complete twin pairs from 40 cohorts in 20 countries, born between 1886 and 1994, with adult height measurements (ages 19.5-99.5 years). The sample was grouped into three geographic-cultural regions: Europe (87,116 pairs), North America and Australia (53,359 pairs), and East Asia (1,793 pairs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C85-C94 provide comprehensive methodological details about sample composition, inclusion/exclusion criteria, and regional grouping. The data cleaning procedures and sample sizes are clearly documented with specific numbers and criteria, supporting the validity of the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Mean height was greater in men than women and increased over birth cohorts in both sexes across all regions. Height variance was greater in men, lowest in East Asia, greatest in North America and Australia, and showed a general increasing trend over birth cohorts. The increase in mean height from 1940-1949 to 1980-1994 was substantially greater in East Asia than in other regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 present descriptive statistics supported by Table 1 and statistical testing (C27, C95). The patterns are clearly documented across sex, birth cohorts, and geographic regions with appropriate statistical comparisons (Welch's ANOVA).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C84"
+    ],
+    "result": "Genetic variance showed a generally increasing trend across birth cohorts, with statistically significant but modest increases when analyzed using gene-environment interaction models. In men, genetic variance increased from 1940-1949 onwards, especially in the latest cohorts. In women, genetic variance showed an increasing trend from the earliest cohort. The increase was 1.37 (95% CI 0.50-2.27) in men and 1.07 (95% CI 0.46-1.79) in women per 25 years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C33-C34, C39-C40, C47-C50, C84 are supported by variance decomposition analyses (Figure 1) and gene-environment interaction modeling. The statistical significance and effect sizes are reported with confidence intervals, though the authors characterize the increase as 'modest' despite statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38",
+      "C46",
+      "C8",
+      "C9"
+    ],
+    "result": "Heritability estimates ranged from 0.69-0.84 in men and 0.53-0.78 in women, but did not present any clear pattern of secular changes across birth cohorts. The findings do not support the hypothesis that heritability of height is lower in populations with low living standards or that heritability increases as living standards improve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C38, C46, C8-C9 represent the main conclusion of the study. The heritability estimates are supported by Table 2 and variance decomposition analyses. However, the interpretation that there is 'no clear pattern' is somewhat at odds with the finding of increasing genetic variance (C2, C84), suggesting the lack of pattern in heritability is due to concurrent increases in total variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C64"
+    ],
+    "result": "Shared environmental variance was significant in men from birth cohorts 1920-1929 to 1970-1979, being greatest from 1950-1969. In women, both shared and unique environmental factors explained variation in all cohorts, with shared environmental variance greater in the latest cohorts and unique environmental variance greatest in the earliest cohort. Part of the increase in total variance was due to increases in shared environmental variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C41-C43, C64 are supported by variance decomposition results in Figure 1 and Table 2. The patterns of environmental variance components across birth cohorts are clearly documented, though the interpretation of these patterns in relation to living standards is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C51"
+    ],
+    "result": "Total height variance was greatest in North America and Australia and lowest in East Asia. In North America and Australia, the pattern of genetic and environmental variances was less consistent across birth cohorts than in Europe. In East Asia, variance components fluctuated more due to smaller sample size. Genetic variance was generally greater in men than women across all three regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C31, C51-C55 describe regional differences in variance patterns supported by Figure 1 and Table 2. The authors appropriately acknowledge that the East Asian sample size (C93: 1,793 pairs vs. 87,116 in Europe) limits interpretation (C54, C70), which is a strength of the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Variance components differed between sexes in all birth cohorts (p<0.0001), though the relative contribution of genetic and environmental variance components did not differ by sex from 1930-1939 to 1960-1969. Sex-specific genetic effects were significant for some birth-year cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C107-C109 are supported by model comparison testing described in Materials and Methods. The statistical testing (p<0.0001) supports sex differences in absolute variance components, while relative proportions were similar in some periods. This justifies the sex-stratified presentation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The higher heritability in men in the earliest cohorts could be explained by selection effects, as infant mortality is higher in men and survivors may be genetically advantaged. The greater environmental effect on height in women, though unexpected given women's growth is considered more resistant to environmental influences, might indicate differential access to resources. Osteoporosis in older women may affect unique environmental factors in the earliest cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C63 are largely speculative interpretations (C57, C60, C62) supported by citations to prior work (C56, C61, C63) but not directly tested in this study. While the cited mechanisms are plausible, they remain hypotheses that would require additional data (e.g., mortality rates, resource access, bone density measurements) to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Both greater ethnic diversity and variation in living standards have contributed to the secular increase in height variation. Allelic frequencies and effects of genes affecting height may vary between geographic-cultural regions, as supported by findings that population genetic differences account for 24% of captured additive genetic variance across European countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65 and C67 are speculative interpretations of the variance patterns, while C66 cites external evidence. The study does not directly measure ethnic diversity, living standards, or genetic architecture, making these interpretations plausible but not directly supported by the presented data. The citation to Robinson et al. 2015 (C66) provides some support but is from a different study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study's main strength is its very large multinational sample with individual-based data avoiding publication bias. Limitations include unequal representation of regions (heavily weighted toward Westernized populations), inability to account for assortative mating due to lack of parental height data, and reliance on mostly self-reported height measurements. However, these biases are unlikely to explain the main finding of stable heritability across cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 provide a balanced assessment of strengths and limitations. The acknowledged limitations (C74-C75, C77, C79) are genuine concerns, though the authors reasonably argue (C81) that these would not systematically bias the temporal trends in heritability, which is the main research question. The self-report bias (C80) would inflate unique environmental variance but should be relatively constant across cohorts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C110",
+      "C111"
+    ],
+    "result": "The study used classic twin modeling based on linear structural equations to decompose height variance into additive genetic (A), shared environmental (C), and unique environmental (E) components. The ACE sex-limitation model was selected based on twin correlations, with adjustments for birth year and cohort. Model assumptions were tested and the shared environmental component could not be excluded. Gene-environment interaction modeling was conducted using birth year as a moderator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C111 describe the analytical methods with appropriate detail and citations. The model selection is justified based on the data (C102), assumptions are tested (C105-C106), and the inability to simultaneously estimate C and D components is acknowledged (C99). The use of OpenMx with maximum likelihood (C100) is standard practice. The preprocessing (C101) and model testing (C106-C110) are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior research has established height as highly heritable (~0.80), with genetic loci identified through GWAS. Environmental factors (nutrition, disease) and socioeconomic conditions affect height. Secular trends show increasing height over the 20th century, though this has slowed in northern Europe. A hypothesis suggests heritability may be lower in populations with low living standards, with some support from a Finnish twin study showing increased heritability as living standards improved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C23 accurately summarize prior literature with appropriate citations. These background claims establish the rationale for the current study. The Finnish twin study (C22-C23) is particularly relevant as it provides the main prior evidence for the hypothesis being tested, making replication in a larger international sample important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Previous studies showed heritability estimates were largely similar between Western and East Asian populations in adolescence and from ages 1-19, even when total variance differed. However, limited statistical power in the East Asian data prevents comparisons across birth cohorts in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 appropriately cite prior work and acknowledge a limitation of the current study. The small East Asian sample size (C93: 1,793 pairs) relative to Europe (87,116 pairs) and North America/Australia (53,359 pairs) is a genuine limitation that appropriately tempers conclusions about regional differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "There was no zygosity difference in height variance in a previous study from this database, so variance component estimates should not be affected by changes in the proportion of MZ to DZ twins across birth cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 cite prior work from the same research group (Jelenkovic et al., 2015) to address a potential confound. This is appropriate as changes in the MZ:DZ ratio across cohorts could theoretically affect variance estimates if the two groups had different variances. The citation provides empirical support that this is not a concern in this dataset.",
+    "result_type": "MINOR"
+  }
+]

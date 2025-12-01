@@ -1,0 +1,1953 @@
+{
+  "submission": {
+    "id": "558b8dbc-9d98-44c7-896e-985a1e596621",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:59:02.059097Z",
+    "updated_at": "2025-11-30T21:59:02.059097Z"
+  },
+  "content": [
+    {
+      "id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "submission_id": "558b8dbc-9d98-44c7-896e-985a1e596621",
+      "content_type": "manuscript",
+      "content_text": "# The angiopoietin-like protein ANGPTL4 catalyzes unfolding of the hydrolase domain in lipoprotein lipase and the endothelial membrane protein GPIHBP1 counteracts this unfolding\n\n## Authors\n\n- Simon Mysling<sup>1</sup>\n- Kristian K\u00f8lby Kristensen<sup>1</sup>\n- Mikael Larsson<sup>4</sup>\n- Oleg Kovrov<sup>5</sup>\n- Andr\u00e9 Bensadouen<sup>6</sup>\n- Thomas JD J\u00f8rgensen<sup>3</sup>\n- Gunilla Olivecrona<sup>5</sup>\n- Stephen G Young<sup>4</sup>\n- Michael Ploug<sup>1</sup> ([ORCID: 0000-0003-2215-4265](https://orcid.org/0000-0003-2215-4265)) \u2020\n\n### Affiliations\n\n1. Finsen Laboratory Rigshospitalet Copenhagen Denmark\n2. Biotech Research and Innovation Centre University of Copenhagen Copenhagen Denmark\n3. Department of Biochemistry and Molecular Biology University of Southern Denmark Odense Denmark\n4. Department of Medicine University of California, Los Angeles Los Angeles United States\n5. Department of Medical Biosciences Ume\u00e5 University Ume\u00e5 Sweden\n6. Division of Nutritional Science Cornell University Ithaca United States\n7. Department of Human Genetics University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLipoprotein lipase (LPL) undergoes spontaneous inactivation via global unfolding and this unfolding is prevented by GPIHBP1 (Mysling et al., 2016). We now show: (1) that ANGPTL4 inactivates LPL by catalyzing the unfolding of its hydrolase domain; (2) that binding to GPIHBP1 renders LPL largely refractory to this inhibition; and (3) that both the LU domain and the intrinsically disordered acidic domain of GPIHBP1 are required for this protective effect. Genetic studies have found that a common polymorphic variant in ANGPTL4 results in lower plasma triglyceride levels. We now report: (1) that this ANGPTL4 variant is less efficient in catalyzing the unfolding of LPL; and (2) that its Glu-to-Lys substitution destabilizes its N-terminal \u03b1-helix. Our work elucidates the molecular basis for regulation of LPL activity by ANGPTL4, highlights the physiological relevance of the inherent instability of LPL, and sheds light on the molecular defects in a clinically relevant variant of ANGPTL4.\n\n## Introduction\n\nThe intravascular hydrolysis of triglycerides in triglyceride-rich lipoproteins (TRLs) by lipoprotein lipase (LPL) is an efficient mechanism for delivering lipid nutrients to vital tissues (e.g., heart, skeletal muscle, adipose tissue). LPL is secreted into the interstitial spaces by myocytes and adipocytes but is then shuttled to the capillary lumen by an endothelial transporter, glycosylphosphatidylinositol-anchored high density lipoprotein\u2013binding protein 1 (GPIHBP1) (Fong et al., 2016). This endothelial cell LPL transporter is also required for the margination of TRLs along capillaries (Goulbourne et al., 2014). Disruption of LPL transport by either genetic ablation of GPIHBP1 in mice (Beigneux et al., 2007) or by loss-of-function missense mutations in humans leads to sustained elevations in plasma triglyceride levels\u2014a condition known as familial chylomicronemia (Ariza et al., 2016; Beigneux et al., 2015, 2009b; Olivecrona et al., 2010; Plengpanich et al., 2014).\n\nAppropriate distribution of lipid nutrients to tissues is, however, not only controlled by the availability of LPL and GPIHBP1, but is also tightly regulated by endogenous protein inhibitors of LPL activity (angiopoietin-like (ANGPTL) proteins 3, 4, and 8). Reciprocal regulation of ANGPTL4 expression in brown and white adipocytes with prolonged cold exposure results in high LPL activity in brown adipocytes and ensures the delivery of lipid nutrients for adaptive thermogenesis (Dijk et al., 2015). In the fed state, this balance is reversed, resulting in high LPL activity in white adipose tissue and allowing replenishment of lipid stores in white adipose tissue. The relevance of these inhibitors to LPL-mediated TRL processing in vivo is illustrated by lower plasma triglyceride levels with pharmacological inhibition or genetic ablation of ANGPTL3 or ANGPTL4 (Desai et al., 2007; Gusarova et al., 2015; K\u00f6ster et al., 2005). Additional evidence for their physiological importance are provided by genome-wide association studies (GWAS), which showed that a polymorphic variant of ANGPTL4, E40K (E15K in the mature protein) is associated with mild hypotriglyceridemia and reduced risk of coronary artery disease (Dewey et al., 2016; Helgadottir et al., 2016; Stitziel et al., 2016). Throughout this paper, we will use amino acid numbering starting at the amino terminus of the mature proteins.\n\nAlthough genetic and physiologic evidence emphasizes the importance of ANGPTL-mediated regulation of LPL-activity, our understanding of the biochemical and structural basis for this inhibitory activity remains incomplete. An early report suggested that the N-terminal coiled-coil domain of ANGPTL4 catalyzed the conversion of LPL homodimers to inactive LPL monomers (Sukonina et al., 2006). However, this conclusion has been challenged by a report suggesting that ANGPTL4 inhibits LPL by a reversible and noncompetitive mechanism (Lafferty et al., 2013). Thus far, this controversy is unsettled.\n\nIn the current study, we take advantage of hydrogen\u2013deuterium exchange mass spectrometry (HDX-MS) to probe the structural changes in LPL that accompany both spontaneous decay of LPL activity and ANGPTL-mediated inhibition of LPL activity. Our data show that ANGPTL4 does in fact catalyze the irreversible inactivation of LPL and does so by promoting unfolding of LPL\u00b4s hydrolase domain. Notably, we also document that the polymorphic variant ANGPTL4E15K has a lower capacity to inhibit LPL activity and lower capacity to catalyze the unfolding of LPL\u00b4s hydrolase domain, compared with wild-type ANGPTL4. This reduced activity is associated with destabilization and cooperative unfolding of the N-terminal \u03b1-helix in ANGPTL4, a region of ANGPTL4 that had previously been implicated in LPL inhibition (Lee et al., 2009; Yau et al., 2009).\n\n## Results\n\n### Spontaneous unfolding of LPL is catalyzed by ANGPTL4\n\nWe previously showed that LPL irreversibly loses catalytic activity by undergoing a time- and temperature-dependent global unfolding of its serine hydrolase domain (Mysling et al., 2016). In contrast, the C-terminal lipid-binding domain of LPL remains stably folded. Since LPL activity in vivo is regulated in an organ-specific manner by ANGPTL 3, 4, and 8 (Dijk et al., 2015; Dijk and Kersten, 2016; Wang et al., 2015, 2013a), we speculated that these proteins might catalyze the unfolding of LPL\u00b4s hydrolase domain. To explore this possibility, we incubated 10 \u00b5M bovine LPL, either alone or in the presence of 1 \u00b5M purified ANGPTL41\u2013159, at 25\u00b0C in 8.8 mM Na2HPO4, 0.7 mM HCOOH, and 150 mM NaCl, pH 6.9. The time-dependent unfolding of LPL\u00b4s hydrolase domain was probed by changes in hydrogen\u2013deuterium exchange profiles with short (10 s) exposures to D2O. Deuterium exchange was quenched by lowering the pH, and the deuterium uptake into different regions of LPL was assessed by on-line pepsin digestion and mass spectrometry (Mysling et al., 2016). This approach provides an imprint of regional changes in protein stability within LPL under variable conditions. Mass spectrometry revealed that 10 \u00b5M LPL undergoes a slow spontaneous transition into an unfolded state during the selected incubation time interval (0\u201330 min), with 29% of the LPL being unfolded after 30 min at 25\u00b0C (Figure 1). The amount of LPL unfolding was quantified by the gradual progression towards a bimodal signature in the isotope envelope for the \u2018diagnostic\u2019 peptic peptide 131\u2013165 from LPL\u00b4s hydrolase domain \u2013 Figure 1A (Mysling et al., 2016). Quantitative assessment of this distribution reveals that 7.0\u00a0\u00b1\u00a00.7% of LPL was in the unfolded state after 5 min. Adding 1 \u00b5M ANGPTL41\u2013159 to 10 \u00b5M LPL greatly accelerated the rate of LPL unfolding, with 60.3\u00a0\u00b1\u00a02.3% of the LPL being unfolded after 5 min (Figure 1B). Even though the amount of ANGPTL41\u2013159 added was substoichiometric relative to LPL (a molar ratio of 1:10), ANGPTL4 was responsible for unfolding\u00a0>50% of LPL molecules in 5 min. This noticeable amount of LPL unfolding by substoichiometric amounts of ANGPTL4 constitutes a strong argument in favor of the catalytic nature of ANGPTL4-mediated LPL inactivation (Sukonina et al., 2006). Because the kinetic profiles for LPL unfolding with 1 \u00b5M ANGPTL41\u2013159 suggested that substrate depletion occurred (Figure 1D), we also tested the ability of lower amounts of ANGPTL4 (0.5 \u00b5M, 0.25 \u00b5M) to unfold LPL. Those studies provided clear evidence for a dose-dependent inactivation of LPL by ANGPTL4 (Figure 1D). The lowest ANGPTL4 concentration tested resulted in 74\u00a0\u00b1\u00a06% LPL unfolding after 30 min compared to a spontaneous unfolding of 28.6\u00a0\u00b1\u00a01.3% in the buffer lacking ANGPTL4. Even though ANGPTL41\u2013159 was present at a molar ratio of 1:40 (relative to LPL), it nevertheless resulted in the unfolding of 50% of LPL molecules. From early time point measurements, where substrate depletion was negligible, we estimate that the unfolding efficacy of our ANGPTL41\u2013159 preparation was 1.6\u00a0\u00b1\u00a00.2 molecules of LPL per ANGPTL4 molecule per min at 25\u00b0C (Figure 1\u2014figure supplement 1). When identical incubations of LPL and ANGPTL4 were analyzed for lipolytic activity with [3H]triolein, we found a similar time- and dose-dependent inhibition of LPL catalytic activity by ANGPTL41\u2013159 (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig1-v1.jpg)\n\n**Figure 1.:** Unfolding of the hydrolase domain in LPL is revealed by the bimodality in the isotope envelopes for the peptide 131\u2013165, which contains two residues from LPL\u00b4s catalytic triad (Ser134 and Asp158). Time-resolved isotope signatures of this diagnostic peptide are shown for 10 \u00b5M LPL incubated alone (panel A) or in the presence of 1 \u00b5M ANGPTL41\u2013159 (panel B). The butterfly plot in panel C compares the spontaneous and ANGPTL4-catalyzed unfolding of LPL at conditions where 10\u201315% (orange curve) or 15\u201320% (black curve) bimodality for peptide 131\u2013165 is observed. The deuterium uptakes were calculated from the average mass of the bimodal isotope envelopes. The shaded gray area corresponds to the largest standard deviation in the data sets recorded for each peptide (triplicates). Transparent red and cyan colors on the left assign these peptides to LPL\u00b4s N-terminal hydrolase domain (NTD) or its C-terminal lipid-binding domain (CTD), respectively. The identities of the 92 peptic LPL peptides are found elsewhere (Mysling et al., 2016). Panel D shows the time-dependent unfolding of 10 \u00b5M LPL either alone (\u25b2) or in the presence of ANGPTL41\u2013159 (\u25a1) at 2, 1, 0.5, and 0.25 \u00b5M, as indicated by green, red, blue, and yellow coloring, respectively. This value is calculated as the ratio between the bimodal isotope envelopes of the folded and unfolded proteins. Panel E shows a homology model of LPL with the proposed head-to-tail homodimer formation indicated by the semitransparent LPL subunit (Kobayashi et al., 2002; Wang et al., 2013b). The red color highlights the regions in LPL showing bimodality of isotope envelopes (i.e., unfolding) by HDX-MS.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Panel A shows the unfolding of LPL caused by ANGPTL41\u2013159 (after subtracting the spontaneous unfolding observed with parallel LPL incubations). Data points from incubations with substantial substrate depletion were omitted from the analysis. The kinetics for three different concentrations of ANGPTL41\u2013159 are shown: 1 \u00b5M (red squares), 0.5 \u00b5M (blue squares), and 0.25 \u00b5M (yellow squares). LPL was maintained constant at 10 \u00b5M. Panel B shows the unfolding rates (slopes derived from panel A) as a function of ANGPTL41\u2013159 concentration using identical symbols. Linear regression defines the slope as 1.6\u00a0\u00b1\u00a00.2 LPL molecules per ANGPTL per min, which is the catalytic unfolding efficacy of ANGPTL41\u2013159 under these conditions.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Panel A shows the time-dependent inhibition of the lipolytic activity of 10 \u00b5M LPL incubated at 25\u00b0C with 2 \u00b5M or 0.5 \u00b5M ANGPTL4 for 0 to 15 min at 25\u00b0C (green and blue squares, respectively). Further inactivation was quenched by dilution into ice cold Tris buffer containing 5 mM DOC and 0.1 mM SDS. The residual LPL activity was measured with Intralipid containing [3H]triolein as substrate, and the activity is calculated relative to LPL activity without added ANGPTL4. Panel B compares protein unfolding measured with HDX-MS and enzymatic activity of 10 \u00b5M LPL incubated for 10 min with 2, 1, 0.5, and 0.25 \u00b5M ANGPTL4 for 10 min at 25\u00b0C (asterisks represent the individual measuring points).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Panel A shows a Coomassie blue-stained acrylamide gel after SDS-PAGE of purified ANGPTL41\u2013159, before and after reduction and alkylation. This gel was deliberately overloaded to aid in visualizing disulfide-linked oligomers. Optical scanning of lanes from a parallel SDS-PAGE analysis of two-fold serial dilutions reveals that the covalent ANGPTL4 dimer represents 10% of the total protein: M; monomer; D; dimer, and T; trimer. Panel B shows the isotope envelope for peptide 45\u201377 determined with mass spectrometry for a peptic digest of ANGPTL41\u2013159. Panel C shows the corresponding mass analyses of ANGPTL41\u2013159 reduced with 0.4 M TCEP in 1 M urea for 2 min on ice. The identity of the 45\u201377 fragment in panels B and C were confirmed by MS/MS fragmentation. A comparison of the unfolding of 10 \u00b5M LPL catalyzed by 1 \u00b5M ANGPTL41\u2013159 with an intact intramolecular disulfide bond and 1 \u00b5M ANGPTL41\u2013159 with reduced and alkylated thiols at Cys51 and Cys55 is shown in panel D. Alkylation of TECP reduced thiols was accomplished as described in Experimental Procedures.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** LPL (15 nM) was incubated on ice with ANGPTL4 in molar ratios of 1:0 (black circles); 2:1 (red circles); 1:1 (green squares); 1:3 (blue squares) and 1:10 (yellow triangles). All procedures were carried out in quadruplicates with DGGR as substrate as reported previously (Lafferty et al., 2013). Panel A shows that in the presence of 1 mM DOC we observed that inhibition appeared instantaneous with the lower ANGPTL4 concentrations (red and green), and this was likely caused the reduced DOC concentration during the subsequent measurement of LPL activity with the DGGR substrate, while the concentrations of ANGPTL4 were still high enough to cause inactivation of LPL. At higher ANGPTL4 concentrations (blue and yellow) we did observe a time-dependent progression in the loss of LPL activity, indicating that the protection of LPL by DOC during the pre-incubation step at 4\u00b0C was partly overcome by the high levels of ANGPTL4. Panel B shows inactivation of LPL under identical conditions as in panel A, except that DOC was omitted. In this setting, we observed a pronounced, time-dependent inactivation of LPL at all concentrations of ANGPTL4. The time-dependent loss of LPL activity in the presence of ANGPTL4 is compatible with a mode of action that results in an irreversible inactivation.\n\nTo compare the conformational changes associated with spontaneous and ANGPTL4-catalyzed inactivation of LPL, we examined the deuterium uptake values for all 92 peptic peptides recovered from LPL. To standardize the alignment of these data, we selected conditions that led to uniform and relatively low levels of bimodality in the \u2018diagnostic\u2019 peptide 131\u2013165. By compiling all data recorded for spontaneous and ANGPTL4-catalyzed unfolding, we generated two bins of data with 10\u201315% or 15\u201320% bimodality in the isotope envelopes for peptide 131\u2013165. In comparing the deuterium uptake across all LPL peptides, we observed no differences in the pattern of deuterium uptake into LPL molecules undergoing spontaneous or ANGPTL4-catalyzed unfolding (Figure 1C). Of note, all peptides showing bimodality were confined to the serine hydrolase domain of LPL (Figure 1E); none were in the C-terminal lipid-binding domain. Based on these data, we conclude that different means of LPL inactivation are mirrored by similar conformational endpoints whether they occur spontaneously or are catalyzed by ANGPTL4.\n\nSeveral reports show that ANGPTL4 is prone to various degrees of oligomerization via intermolecular disulfide bonds involving Cys51 and Cys55 in ANGPTL4\u00b4s N-terminal coiled-coil domain (Ge et al., 2004a, 2004b; Yin et al., 2009). Our ANGPTL41\u2013159 preparation also contained disulfide-linked oligomers, although they were predominantly in the form of dimers and comprised no more than 10% of the protein preparation (Figure 1\u2014figure supplement 3A). In monomeric ANGPTL4, we find that Cys51 and Cys55 are connected by an intramolecular disulfide bond, as demonstrated by masses of 3440.64 and 3442.64 Da for peptides corresponding to residues 45\u201377 in ANGPTL41\u2013159 before and after reduction with tris-(2-carboxyethyl) phosphine (TCEP) (Figure 1\u2014figure supplement 3B and C). To exclude the possibility that a minor fraction of disulfide-linked ANGPTL4 oligomers are responsible for all of ANGPTL4\u00b4s catalytic unfolding activity, we reduced and alkylated the disulfide-bonds in ANGPTL4 and then compared the LPL unfolding capacity with ANGPTL4 harboring intact disulfide bonds. As shown in Figure 1\u2014figure supplement 3D, the catalytic activity of 1 \u00b5M ANGPTL41\u2013159 was similar regardless of the integrity of the disulfide bond. In conclusion, a covalent oligomer of ANGPTL41\u2013159 is not essential for its catalytic LPL-unfolding activity in vitro. Nevertheless, we cannot formally exclude the possibility that a non-covalent assembly of ANGPTL41\u2013159 oligomers participates in LPL unfolding.\n\n### GPIHBP1 binding mitigates the ANGPTL4-catalyzed inactivation of LPL\n\nThe\u00a0proper expression of GPIHBP1 is critical for shuttling LPL to the capillary lumen, where margination and lipolytic processing of TRLs occurs (Beigneux et al., 2009a; Davies et al., 2010; Fong et al., 2016; Goulbourne et al., 2014). Recently, we uncovered a new functionality of GPIHBP1\u2014stabilizing LPL activity by limiting the spontaneous unfolding rate of LPL\u00b4s hydrolase domain (Mysling et al., 2016). These findings prompted us to ask whether the binding of GPIHBP1 to LPL would also protect LPL from ANGPTL4-catalyzed unfolding. To explore this possibility, we first incubated 10 \u00b5M LPL alone or with 30 \u00b5M GPIHBP1 for 2 min at 25\u00b0C; we then added 2 \u00b5M ANGPTL41\u2013159 and incubated the mixture for 10 min. In the absence of GPIHBP1, we observed 87\u00a0\u00b1\u00a02% unfolding of LPL versus only 8\u00a0\u00b1\u00a02% unfolding in the presence of GPIHBP11\u2013131 (Figure 2A). Comparable results were obtained with spontaneous unfolding of LPL (Figure 2B). Both the LU domain and the acidic domain of GPIHBP1 (Figure 2C) were required for protecting LPL against ANGPTL4; neither 30 \u00b5M GPIHBP134\u2013131 nor 30 \u00b5M GPIHBP11\u201333 substantially inhibited ANGPTL4-catalyzed unfolding of LPL (79\u00a0\u00b1\u00a07% and 69\u00a0\u00b1\u00a012% unfolding, respectively). A slightly different scenario emerged for spontaneous unfolding of LPL; the acidic domain of GPIHBP1 (GPIHBP11\u201333) was nearly as effective as full-length GPIHBP11\u2013131 in protecting LPL from unfolding (Figure 2B). To analyze this difference in more detail, we tested the potency of a mixture of two GPIHBP1 domains (30 \u00b5M GPIHBP11\u201333and 30 \u00b5M GPIHBP134\u2013131) on spontaneous and ANGPTL4-catalyzed LPL unfolding. The GPIHBP11\u201333/GPIHBP134\u2013131 mixture was less effective than full-length GPIHBP1 in protecting LPL from ANGPTL4-mediated unfolding (Figure 2A). In conclusion, it would appear that GPIHBP1\u00b4s acidic domain needs to be tethered to the LU domain to achieve GPIHBP1\u00b4s full protective effect against ANGPTL4-catalyzed LPL unfolding (Figure 2A). A covalent association of the two GPIHBP1 domains is less important for reducing the spontaneous unfolding of LPL (Figure 2B). In these studies, we also analyzed catalytic activity of LPL. The protection provided by the different GPIHBP1 proteins against ANGPTL4-mediated LPL unfolding was accompanied by preserved LPL catalytic activity towards [3H]triolein substrate hydrolysis (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig2-v1.jpg)\n\n**Figure 2.:** Panel A shows the degree of unfolding of 10 \u00b5M LPL incubated for 10 min at 25\u00b0C with 2 \u00b5M ANGPTL41\u2013159 alone or in the presence of 30 \u00b5M GPIHBP11\u2013131, 30 \u00b5M GPIHBP134\u2013131, 30 \u00b5M GPIHBP11\u201333, or a mixture of 30 \u00b5M GPIHBP134\u2013131 and 30 \u00b5M GPIHBP11\u201333 (gray bars). The loss in lipolytic LPL activity on samples treated identically is shown by green bars. These activity data were normalized relative to the initial LPL activity assuming a spontaneous decay of 15% during the experiment. Panel B shows the degree of spontaneous unfolding of 10 \u00b5M LPL before and after a 45 min incubation at 25\u00b0C either alone or in the presence of 10 \u00b5M GPIHBP1 in the same combinations used in panel A. The relative unfolding of LPL is calculated from the bimodal distribution of the isotope envelopes for peptide 131\u2013165. Panel C shows a molecular model for GPIHBP1 depicting the intrinsically disordered acidic domain (GPIHBP11\u201333) and the ordered LU domain (GPIHBP134\u2013131). The acidic residues in the N-terminal domain are highlighted by sticks as is the Arg33, which is exposed and prone to proteolysis (Mysling et al., 2016). The attachment site for the membrane anchor is indicated (GPI).\n\nTo further interrogate the mode of action of ANGPTL4-catalyzed LPL inhibition, we added 300 nM intact GPIHBP1 [12-fold above the KD for the GPIHBP1\u2022LPL interaction (Mysling et al., 2016)] to LPL (15 nM) that had been partially inactivated\u2014either by incubating the enzyme at 21\u00b0C (spontaneous inactivation) or by incubating the enzyme with 7.5 nM ANGPTL4 (catalyzed inactivation). As shown in Figure 3, adding GPIHBP1 to the partially inactivated LPL protected the remaining LPL from inactivation, but neither the spontaneously inactivated LPL nor the ANGPTL4-inactivated LPL was resurrected by GPIHBP1. These findings align with the HDX-MS data (Figure 1C) showing that both the spontaneous and ANGPTL4-mediated LPL inactivation pathways result in very similar (if not identical) conformational changes in LPL. Our studies further substantiates that ANGPTL4 catalyzes LPL unfolding/inactivation in an irreversible manner rather than acting as a noncompetitive and reversible inhibitor as previously suggested (Lafferty et al., 2013). If ANGPTL4-mediated inactivation of LPL were to be reversible, we would have expected to find reactivation of LPL during the incubation with GPIHBP1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig3-v1.jpg)\n\n**Figure 3.:** Panel A shows time-dependent loss of LPL catalytic activity after incubating LPL at 21\u00b0C alone or in the presence of GPIHBP1. The progressive loss in catalytic activity of LPL (15 nM) during the incubation is shown by red triangles; the protection provided by a pre-incubation with GPIHBP11\u2013131 (300 nM) is shown by black squares. Adding GPIHBP11\u2013131 (300 nM) to LPL that was incubated alone for 20 min (green arrow) prevented any further loss of LPL (green squares). Panel B shows inactivation of LPL catalytic activity by 7.5 nM ANGPTL41\u2013159 (red diamonds). The inhibition of LPL activity by ANGPTL4 was markedly reduced by the presence of 300 nM GPIHBP11\u2013131 (blue circles); however, a small amount of ANGPTL4-mediated inhibition probably still persisted during the incubation with GPIHBP1, given that LPL catalytic activity was greater when LPL was incubated with GPIHBP1 in the absence of ANGPTL41\u2013159 (black squares). When 300 nM GPIHBP11\u2013131 was added to LPL 10 min after the initiation of ANGPTL4-mediated LPL inactivation (green arrow), there was no further loss of LPL activity (green circles). However, the loss of LPL activity that had occurred during the first 10 min of incubation was not reversed (i.e. there was no resurrection of ANGPTL4-inactivated LPL). LPL activity measurements were performed in triplicated; data shown \u00b1 SD.\n\n### Unfolding properties of ANGPTLE15K\n\nGenetic studies have revealed that a polymorphic variant in ANGPTL4 (ANGPTL4E15K, with a\u00a0~3% prevalence in Caucasians) is associated with lower plasma triglyceride levels and reduced risk of coronary artery disease (Dewey et al., 2016; Helgadottir et al., 2016; Stitziel et al., 2016). We expressed and purified the coiled-coil domain of ANGPTL4E15K. The kinetic profile of LPL unfolding with ANGPTL4E15K was more complex and included a time-dependent decline in LPL-unfolding activity (using conditions in which substrate depletion was not rate-limiting) (Figure 4A). We were able to take advantage of the linear phases of the progress curves for LPL unfolding to estimate the unfolding efficacy of ANGPTL41\u2013159/E15K. The ANGPTL4 variant resulted in the unfolding of 0.6\u00a0\u00b1\u00a00.1 molecules LPL per ANGPTL4 molecule per min (Figure 4B and C), which is only 40% of the activity of wild-type ANGPTL4 (Figure 4C). We obtained consistent results when measuring LPL activity; the LPL incubated with ANGPTL41\u2013159/E15K retained 40\u201350% more catalytic activity than LPL incubated with wild-type ANGPTL4 (Figure 4D). The LPL unfolding curves (Figure 4A and B) suggested that ANGPTL41\u2013159/E15K lost activity more rapidly than wild-type ANGPTL4 during the LPL incubation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig4-v1.jpg)\n\n**Figure 4.:** Panel A shows the time-dependent unfolding of 10 \u00b5M LPL in the presence of 2, 1, and 0.5 \u00b5M ANGPTL41\u2013159/E15K, highlighted by black solid lines and the green, red and blue circles, respectively. For comparison the unfolding mediated by 0.5 \u00b5M ANGPTL41\u2013159/wt is shown by the gray solid line. The hatched line represents spontaneous LPL unfolding. The\u00a0corresponding data are shown in panel B after subtraction of spontaneous unfolding. The solid black lines show the data used to estimate the unfolding rates and their hatched extension illustrates nonlinearity at longer incubation times. The unfolding rates of ANGPTL41\u2013159/E15K (circles) and ANGPTL41\u2013159/wt (squares) are represented by the slopes of the lines in panel C. The difference in the inhibitory efficacies between ANGPTL41\u2013159/wt (gray bars) and ANGPTL41\u2013159/E15K (red bars) on LPL-mediated hydrolysis of [3H]triolein is shown in panel D (asterisks represent the individual measuring points).\n\n### Protein dynamics of ANGPTL4\n\nGiven the differences in the kinetics of LPL-unfolding catalyzed by ANGPTL4wt and ANGPTL4E15K, we embarked on determining the intrinsic protein dynamics of the two ANGPTL proteins with HDX-MS. We incubated 3 \u00b5M ANGPTL41\u2013159 in 10 mM Na2HPO4, 150 mM NaCl (pH 7.1) containing 70% (v/v) D2O for 10, 100, or 1000 s at 25\u00b0C. We recovered 41 peptides from ANGPTL41\u2013159 after on-line pepsin digestion (corresponding to 95.6% sequence coverage) (Figure 5\u2014figure supplement 1A and B). As illustrated by the heat maps for deuterium uptake, wild-type ANGPTL41\u2013159 contains two regions that are less dynamic (residues 19\u201343 and 85\u2013111). Both sequences are predicted by PSIPRED to form \u03b1-helices (Figure 5A). Of the two \u03b1-helices, the N-terminal \u03b1-helix of ANGPTL4 is less stable (i.e., has a greater deuterium uptake). The isotope envelopes reveal that the deuterium uptake in this particular region occurs via mixed EX1 and EX2 kinetics signifying some degree of cooperative unfolding (Weis et al., 2006).\n\nA comparison of the kinetics for deuterium uptake into ANGPTL41\u2013159/E15K and ANGPTL41\u2013159/wt revealed a conspicuous difference: peptides covering residues 19\u201343 exchanged more rapidly in ANGPTL41\u2013159/E15K (Figure 5A and C). The increased deuterium incorporation occurs predominantly via faster EX1 kinetics reflecting an increased propensity for cooperative unfolding of that region. Given that this region coincides with the predicted N-terminal \u03b1-helix in ANGPTL4, it is conceivable that the Glu-to-Lys substitution in the E15K variant compromises protein stability by reducing the \u03b1-helix propensity of the adjacent C-terminal sequence. Our findings are likely biological relevant, providing a plausible molecular explanation for the impaired LPL inactivation and lower plasma triglyceride levels in carriers of the E15K polymorphism.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig5-v1.jpg)\n\n**Figure 5.:** Purified ANGPTL41\u2013159 preparations (wt and E15K) were diluted to 10 \u00b5M with D2O-phosphate buffer at pH 7.1, and hydrogen\u2013deuterium exchange was monitored for 10, 100, and 1000 s at 25\u00b0C. Panel A provides a heat map of the deuterium uptake values (relative to a fully exchanged control) for peptic peptides from wt and E15K ANGPTL41\u2013159 as assessed by HDX-MS. The relative deuterium uptake values for these peptides are plotted on the primary protein sequence [ranging from blue (no deuterium uptake) to red (full deuterium uptake)]. The position of the specific epitope 1 (SE1) defined by the neutralizing mAb 14D12 is shown by the light green cylinder (Desai et al., 2007; Lee et al., 2009), and the sequence representing an active synthetic peptide is shown by the dark green cylinder (Yau et al., 2009). The secondary structure of ANGPTL4 wt was predicted by PSIPRED (Jones, 1999) and the positions of the two \u03b1-helices are shown by red cylinders. The position of E15K polymorphism is shown by the blue letter. Panel B shows the isotope envelopes recorded for peptide 20\u201341 of ANGPTL4 wt and E15K; it shows progressive deuterium uptake as a function of labeling time. Panel C visualizes the differences in the dynamics of wt and E15K ANGPTL41\u2013159 with a butterfly plot, showing differential deuterium uptake for the two proteins recorded after 10 s (orange), 100 s (red), and 1000 s (blue). The differential uptake for the full-deuterium exchange controls is shown for comparison (black). Peptides including residues 18\u201330 are highlighted by the transparent green box. The shaded gray area corresponds to the largest standard deviation in the data sets recorded for each peptide (triplicates). In panel A, note that the primary sequence starts with a methionine for the bacterial expression, but this is not included in the peptide numbering. In panel C, the presence of the methionine in a peptic peptide is denoted as\u00a0+1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Panel A provides an overview of the peptic peptides recovered after HDX and pepsin cleavage of ANGPTL41\u2013159. Only peptides recovered from both wt and E15K are shown. Panel B shows the identity of the 41 peptides analyzed by HDX-MS, which corresponds to 95.6% sequence coverage. The butterfly plot in panel C depicts the deuterium uptake for all peptides recovered for ANGPTL41\u2013159 wt and E15K after 10 s (orange), 100 s (red), 1000 s (blue), and 48 hr (black). The transparent green coloring shows peptic peptides covering the sequence 18\u201330 in ANGPTL4 whereas the shaded gray area corresponds to the largest standard deviation in the data sets recorded for each peptide (triplicates). The presence of an N-terminal methionine in ANGPTL4 (due to the bacterial expression) is shown in the peptide list in panel A but is not included in the peptide numbering. In panels B and C, the presence of this methionine in a given peptic peptide is marked by\u00a0+1.\n\n### Unfolding catalyzed by intact ANGPTL3\n\nSequence alignments of the different ANGPTL proteins implicated in triglyceride metabolism (ANGPTL3, ANGPTL4, ANGPTL8) reveal strong sequence conservation in the N-terminal region that is destabilized in ANGPTL4E15K (Figure 6A). Interestingly, this region constitutes a part of the epitopes on ANGPTL3 or ANGPTL4 for monoclonal antibodies that mitigate LPL inactivation in vivo (Lee et al., 2009). In view of these observations, we tested whether purified ANGPTL3 might also serve as a\u00a0catalyst for LPL unfolding. We found that ANGPTL3 also accelerates the unfolding of the catalytic triad peptide leading to inactivation of LPL, but at reduced efficacy compared with equimolar amounts of ANGPTL4 (Figure 6B and C). The ANGPTL3-catalyzed inactivation of LPL is abrogated by GPIHBP1 (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20958/elife-20958-fig6-v1.jpg)\n\n**Figure 6.:** Panel A shows a sequence alignment of the first 55 residues of fully processed human ANGPTL3, ANGPTL4, and ANGPTL8. Identical sequences are highlighted by blue letters. The filled red box highlights the two-residue acidic motif at the start of the N-terminal \u03b1-helix, followed by a conserved \u03b1-helical region (open box). The two cysteine residues unique to ANGPTL4 are shown in yellow boxes. Panel B shows the time-dependent unfolding of 10 \u00b5M LPL by 1 \u00b5M ANGPTL3 (green circles) as defined by the appearance of bimodality in the isotope envelopes for peptide 131\u2013165. For comparison the unfolding of LPL by 1 \u00b5M ANGPTL41\u2013159 is shown as solid (wild-type) and hatched (E15K) gray lines. Spontaneous unfolding is shown by black triangles. Panel C shows the residual lipolytic activity of 10 \u00b5M LPL incubated for 10 min alone or in the presence of 1 \u00b5M ANGPTL3, 1 \u00b5M ANGPTL3 and 30 \u00b5M GPIHBP1, or 1 \u00b5M ANGPTL41\u2013159.\n\n## Discussion\n\nThe intravascular hydrolysis of triglycerides by LPL is the central event in plasma lipoprotein metabolism, providing fatty acids that are used as fuel in striated muscle and brown adipose tissue or stored in the form of triglycerides in white adipose tissue. Normally, LPL activity is tightly regulated, facilitating the delivery of lipid nutrients according to the metabolic demand of tissues and the physiologic state of the organism (e.g., fasting, cold exposure, exercise). One of the most important mechanisms for regulating LPL activity relies on temporal and spatial repression by the inhibitors ANGPTL3, ANGPTL4, and ANGPTL8. The physiological importance of these inhibitors has come into focus as a result of genome-wide association studies and pharmacological and genetic studies in animal models (Desai et al., 2007; Dewey et al., 2016; Gusarova et al., 2015; Helgadottir et al., 2016; Wang et al., 2013a). However, uncertainty has persisted regarding the molecular mechanism(s) by which these inhibitors modulate LPL activity.\n\nIn the current study, we used HDX-MS analyses to study the inhibition of LPL by ANGPTL4. Our studies showed that ANGPTL4 induces a dose- and time-dependent unfolding of LPL\u00b4s hydrolase domain, and that these structural changes are accompanied by a parallel reduction in LPL\u2019s capacity to hydrolyze a lipid emulsion containing [3H]triolein. Importantly, the unfolding of LPL\u00b4s hydrolase domain occurred with substoichiometric amounts of ANGPTL4. Combined, our data infer that ANGPTL4 acts by accelerating the spontaneous unfolding of LPL (Mysling et al., 2016). Our data are closely aligned with and extend the notion that ANGPTL4 acts as an \u2018unfolding molecular chaperone\u2019 (Sukonina et al., 2006). They are however not compatible with the view that ANGPTL4 act as a reversible and non-competitive inhibitor of LPL activity (Lafferty et al., 2013). The studies that led to the latter model involved incubating LPL in the presence of 1\u20135 mM deoxycholate (DOC), an anionic detergent that is known to bind to and stabilize LPL activity (Bengtsson and Olivecrona, 1979). When we replicated those experiments in the absence of DOC, we found a time-dependent inactivation of LPL activity consistent with an irreversible mechanism (Figure 1\u2014figure supplement 4). We suspect that DOC changes the intrinsic dynamics of LPL\u2019s hydrolase domain, preventing it from visiting unstable conformations. In the absence of DOC, ANGPTL4 may bind transiently to LPL, stabilize a folding intermediate that \u2018guides\u2019 LPL towards irreversible unfolding, and ultimately cause permanent LPL inactivation. Whether this intermediate is an integrated part of the LPL homodimer or it represents a dissociated monomer is currently unclear. Importantly, our model for ANGPTL-catalyzed unfolding of LPL involves an ATP-independent mechanism unlike those generally employed by intracellular unfoldases (Prakash and Matouschek, 2004). Nevertheless, our model is not completely unprecedented as it bears some resemblance to the oligomerization of \u03b11-antitrypsin that is catalyzed by a monoclonal antibody raised against its pathogenic (E342K) Z-variant (Irving et al., 2015).\n\nSeveral studies have shown that ANGPTL4 undergoes a variable degree of oligomerization at or close to the cell surface via the formation of intermolecular disulfide bonds between Cys51 and Cys55 in different coiled-coil domains\u2014and that the covalent oligomerization is biologically significant (Ge et al., 2004a, 2004b; Makoveichuk et al., 2012; Yin et al., 2009). In the current study, we show that the redox states of Cys51 and Cys55 do not influence ANGPTL4-mediated catalysis of LPL unfolding. Consistent with our findings, an independent study showed that the LPL inhibitory potential of ANGPTL4 in vitro was not altered when Cys51 and Cys55 were changed to serine (Shan et al., 2009). The ability of ANGPTL4\u2014lacking disulfide bonds in the coiled-coil domain\u2014to inactivate LPL is consistent with recent studies showing that ANGPTL4 can inactivate LPL intracellularly and reduce its secretion from cells (Dijk et al., 2016). In this compartment ANGPTL4 does not form covalent oligomers (Makoveichuk et al., 2012). Rather than being important for the catalytic properties of ANGPTL4, the covalent oligomerization could serve to increase its biological stability and ensure a proper extracellular partitioning of the coiled-coil domain of ANGPTL4 in vivo (Yin et al., 2009).\n\nLPL-mediated hydrolysis of triglycerides occurs predominantly at discrete foci along the capillary bed where lipoproteins are sequestered by LPL\u2022GPIHBP1 complexes on the endothelial cell membrane (Fong et al., 2016; Goulbourne et al., 2014). Given that the majority of LPL in the capillaries is bound to GPIHBP1, as judged with immunohistochemistry, it becomes pertinent to evaluate the inhibitory property of ANGPTL4 in that context. In an earlier study (Sonnenburg et al., 2009), soluble GPIHBP1, but not heparin, protected LPL`s esterase activity from ANGPTL4-catalyzed inactivation. In our current study, we also found that GPIHBP1 protected LPL\u00b4s catalytic activity, and this protection was achieved by blocking ANGPTL4-catalyzed unfolding of LPL\u00b4s hydrolase domain (Figure 2). Noteworthy, full-length GPIHBP1 was required for robust protection of LPL from ANGPTL4; a mixture of GPIHBP1`s LU and acidic domains provided only a modest protection. In view of those observations, we propose a molecular model in which the LU domain of GPIHBP1 secures a tight binding to the carboxyl-terminal domain of LPL. This assembly allows an optimal positioning of GPIHBP1`s intrinsically disordered acidic domain close to the unstable catalytic domain of LPL protecting it from ANGPTL4-catalyzed unfolding.\n\nOne implication of our findings is that only GPIHBP1-bound LPL would be protected from ANGPTL4 in vivo. We predict that this selectivity is relevant for regulating lipid metabolism in several different compartments.\n\nFirst, in the secretory pathway of adipocytes, where GPIHBP1 is absent, we suspect that LPL would be more susceptible to ANGPTL4-mediated unfolding. Accordingly, recent studies of LPL production by mouse primary adipocytes and white adipose tissue explants indicate that ANGPTL4 interacts with LPL in the trans-Golgi network, targeting it for lysosomal degradation (Dijk et al., 2016). The endoplasmic reticulum has an efficient quality control system that targets thermodynamically unstable proteins for disposal via ERAD (Ellgaard and Helenius, 2003). Emerging evidence suggests that an equivalent quality control system may also exist in the trans-Golgi network. In Saccharomyces cerevisiae, the trafficking receptor Vps10p serves as a protein-folding sensor diverting misfolded proteins to vacuolar disposal (Hong et al., 1996). One of the Vps10p domain\u2013containing homologs in mammals, the sorting receptor SorLA, is known for its role in the intracellular trafficking of amyloid precursor proteins and for its association with neurodegenerative diseases (Andersen et al., 2016). Interestingly, SorLA is also expressed by adipocytes and myocytes and targets newly synthesized LPL for degradation in lysosomes (Klinger et al., 2011). One possibility\u2014which obviously needs experimental testing\u2014is that ANGPTL4-catalyzed unfolding of LPL in the trans-Golgi network primes an anterograde sorting of SorLA-LPL complexes towards the endolysosomal degradation pathway. Such a mechanism might account for the increased LPL secretion from Angptl4-/- adipocytes compared to wild-type adipocytes (Dijk et al., 2016). In keeping with the latter idea, we speculate that human adipocytes that express ANGPTL4 E15K polymorphism would secrete elevated levels of LPL.\n\nSecond, freshly secreted LPL\u2014loosely associated with heparan-sulfate proteoglycans (HSPG) in the interstitial spaces\u2014would also be prone to inhibition by ANGPTL4 (Olivecrona, 2016). It has been suggested that this compartment represents the primary target site for ANGPTL4-catalyzed inactivation of LPL (Nilsson et al., 2012). In this setting, translocation of LPL from the HSPG-bound reservoir to a GPIHBP1-bound state at the basolateral surface of endothelial cells would alleviate the inhibitor repression exerted by ANGPTL4. We propose that inhibition of LPL within the interstitial spaces by locally produced ANGPTL4 is important for regulating the amount of active LPL that actually reaches the surface of capillaries, thereby serving to match the efficiency of intravascular lipolysis to the metabolic requirements of nearby parenchymal cells.\n\nFinally, we propose that the resistance of GPIHBP1-bound LPL to ANGPTL4- and ANGPTL3-mediated inhibition serves to focus catalytically active LPL at the luminal surface of capillary endothelial cells. It is interesting, that human population studies have not uncovered a correlation between plasma ANGPTL4 levels and triglyceride concentrations (Robciuc et al., 2010; Smart-Halajko et al., 2010) implying that the regulation of LPL activity in this compartment is far more convoluted. The low-to-moderate concentrations of circulating ANGPTL4 and ANGPTL3 in the blood are obviously insufficient to inhibit LPL in the presence of triglyceride-rich lipoproteins (Nilsson et al., 2012). With that said, it is important to acknowledge that elevated plasma levels of ANGPTL4 protein achieved by transgenic overexpression or systemic administration clearly breached this protective barrier as these mice have increased plasma triglyceride levels and vastly reduced post-heparin LPL activity levels (K\u00f6ster et al., 2005; Lichtenstein et al., 2007; Nilsson et al., 2012). Similarly, the protection yielded by GPIHBP1-binding may also not be completely impregnable. With concentrations predicted to saturate LPL with GPIHBP1 (Figure 2A and Figure 3B), we did observe a minor increase in LPL unfolding/inactivation in the presence of large amounts of ANGPTL4 in vitro. Intravascular lipolysis is thus a highly tunable biological process where the net activity is critically dependent on a complex interplay between local concentrations of cognate activators and inhibitors and their partitioning between different compartments. Using selective inhibitor repression to focalize a given biological activity is not uncommon; for example, during fibrinolysis plasmin-bound to its substrate (polymerized fibrin) escapes inhibition by \u03b12-antiplasmin (Lijnen, 2001).\n\nGenome-wide association studies have shown that the common polymorphic variant ANGPTL4E15K (often denoted E40K) is linked to mild hypotriglyceridemia and reduced risk of coronary artery disease (Dewey et al., 2016; Helgadottir et al., 2016; Stitziel\u00a0et\u00a0al., 2016; Yin et al., 2009). While the impact of ANGPTL4E15K on lipid metabolism in humans is clear, the structure\u2013function relationship(s) responsible for its reduced biological activity have been unclear. Our studies combined with previously published studies, suggest that the Glu-to-Lys replacement in ANGPTL4 affects two properties. First, the E15K polymorphism reduces the ability of ANGPTL4 to inhibit LPL in vitro\u2014to the degree that ANGPTL4E15K functions no better than ANGPTL3 (Shan et al., 2009). With HDX-MS, we found that ANGPTL4E15K and ANGPTL3 catalyze LPL unfolding to a similar degree (Figure 6). Second, although the E15K polymorphism has no impact on protein synthesis, secretion, oligomerization, or secretion, it still limits extracellular accumulation of the coiled-coil domain of ANGPTL4 in cultured cell systems as well as in adenovirus-transfected mice (Yin et al., 2009). It has been hypothesized that the effects of the E15K polymorphism on plasma triglyceride levels relate to a short half-life of the ANGPTL4E15K oligomer (Yin et al., 2009). In the current study, we provide evidence supporting that idea\u2014by showing that the Glu-to-Lys substitution in ANGPTL4 causes protein destabilization via cooperative unfolding of the first \u03b1-helix in ANGPTL4\u00b4s coiled-coil domain (Figure 6). Negative charges at the N-terminus of \u03b1-helices generally stabilize coiled-coil domains via electrostatic interactions with the \u03b1-helix dipole moment (Johnson et al., 2014; Kohn et al., 1997). Accordingly, the charge-reversal in ANGPTL4E15K would be expected to lead to protein destabilization\u2014in agreement with our HDX-MS data (Figure 5). We suspect that this mechanism is a contributing factor to the lower half-life of ANGPTL4E15K.\n\nBy HDX-MS, we found that ANGPTL3 catalyzed the inactivation of LPL, although markedly less efficient compared with ANGPTL4 (Figure 6). GPIHBP1-binding also protected LPL from inactivation by ANGPTL3, suggesting that the mechanism that we proposed for ANGPTL4-mediated LPL inactivation also applies to ANGPTL3. Of note, ANGPTL3, ANGPTL4, and ANGPTL8 all share a two-residue acidic motif in their first \u03b1-helix along with a highly conserved GLLQGLG motif (Figure 6A). Intervention studies with mAbs recognizing this region in ANGPTL3 and ANGPTL4 reduce plasma triglyceride levels in animal models, emphasizing the functional importance of this region (Desai et al., 2007; Gusarova et al., 2015). In light of these observations, we suspect that the function of other ANGPTL proteins would be sensitive to missense mutations that introduce charge reversals and compromise conformational stability. Thus far, however, mutations comparable to the E15K substitution in ANGPTL4 have not been reported in ANGPTL3 or ANGPTL8.\n\n## Materials and methods\n\n### Purified proteins and reagents\n\nA recombinant secreted version of human GPIHBP1 was produced in Drosophila S2-cells (Invitrogen, CA) as a fusion protein with domain 3 (D3) of human uPAR (G\u00e5rdsvoll et al., 2007). For practical reasons, the recombinant GPIHBP1 was mutated within its N-terminal disordered region (Arg38\u2192Gly); that amino acid substitution provides a higher purification yield without altering LPL-binding properties (Mysling et al., 2016). Bovine LPL was purified from fresh bovine milk by heparin-Sepharose, hydroxyapatite, and Superdex HR200 size-exclusion chromatography (Cheng et al., 1985). The coiled-coil domain of wild-type human ANGPTL4 (ANGPTLwt) and ANGPTL4E15K (residues 1\u2013159 with an N-terminal methionine and a C-terminal 6\u00d7His-tag) was produced in E. coli BL21 (DE3) with a pet29a vector (Robal et al., 2012). Full-length ANGPTL3 produced in HEK293 cells was purchased from ProSpec (Ness-Ziona, Israel). A synthetic peptide corresponding to residues 1\u201333 of human GPIHBP1 was obtained at a purity of\u00a0>95% from TAG-Copenhagen A/S (Copenhagen, Denmark).\n\nFor HDX-MS experiments, purified ANGPTL41\u2013159 preparations were dialyzed for 18 hr at 4\u00b0C against 10 mM formic acid (pH 4.1) using 2000 MWCO Slide-A-Lyzer dialysis cassettes (Thermo Scientific). Protein concentrations were determined by absorbance at 280 nm.\n\n### ANGPTL4-mediated unfolding of LPL assessed by pulse-labeling HDX-MS\n\nTo determine the rates of spontaneous and ANGPTL4-catalyzed LPL unfolding, we incubated LPL alone or in the presence of ANGPTL4. In brief, 10 \u00b5M bovine LPL was incubated in 8.8 mM Na2HPO4, 0.7 mM HCOOH, 150 mM NaCl (pH 6.9) at 25\u00b0C with 300 RPM mixing, either alone or in the presence of different amounts of ANGPTL41\u2013159/wt (2 \u00b5M, 1 \u00b5M, 0.5 \u00b5M, 0.25 \u00b5M) or ANGPTL41\u2013159/E15K (2 \u00b5M, 1 \u00b5M, 0.5 \u00b5M). Identical volumes were added to ensure identical buffer compositions with different concentrations of ANGPTL4. Solutions were incubated for 0.5, 2.5, 5, 10, 15, or 30 min. The folding status of LPL was probed by adding D2O-buffer (10 mM Na2HPO4, 150 mM NaCl, pD 7.4) to 70% (v/v) D2O and allowing hydrogen\u2013deuterium exchange to occur for 10 s before quenching the exchange reaction by adding 1 vol ice-cold quench buffer (100 mM Na2HPO4, 0.8 M tris-(2-carboxyethyl) phosphine (TCEP), 2 M urea in H2O, pH 2.5). Quenched samples were incubated on ice for 2 min to reduce disulfide bonds and were subsequently snap-frozen in liquid N2 and stored at \u201380\u00b0C until analysis by MS. Labeling of all individual time points was replicated 2 to 4 times. The degree of unfolding of LPL\u2019s hydrolase domain was estimated by quantifying the bimodal isotope distribution for the \u2018diagnostic\u2019 peptic peptide 131\u2013165, which contains two residues of LPL\u00b4s catalytic triad. This was accomplished by fitting the bimodal isotope envelope to two Gaussian distributions and comparing the areas of the resultant fits.\n\n### Alkylation of cysteines in ANGPTL4wt\n\nTo reduce disulfide bonds and alkylate the free thiols in ANGPTL41\u2013159, the pH was adjusted to 6.5 by adding 3 volumes of 100 mM Bis-Tris, pH 6.5. After adding TCEP (10 mM final concentration), the reduction of disulfide bonds proceeded for 1 hr at room temperature. Subsequently, thiols were alkylated by adding 0.1 vol of 0.5 M iodoacetamide followed by a 4 hr incubation in the dark at room temperature. Alkylated samples were dialyzed overnight in 10 mM formic acid (pH 4.1) to adjust the pH and remove excess TCEP and iodoacetamide.\n\n### Impact of GPIHBP1 on ANGPTL4-catalyzed LPL-unfolding\n\nTo study the effect of purified GPIHBP1 on the unfolding of LPL by ANGPTL41\u2013159, we first formed LPL\u2022GPIHBP1 complexes by incubating 11 \u00b5M LPL with 33 \u00b5M GPIHBP11\u2013131, 33 \u00b5M GPIHBP134\u2013131, 33 \u00b5M GPIHBP11\u201333, or a mixture of 33 \u00b5M GPIHBP134\u2013131 and 33 \u00b5M GPIHBP11\u201333 for 2 min at 25\u00b0C. LPL (11 \u00b5M) without ligands was incubated in parallel. Unfolding was initiated by adding 10% (v/v) 20 \u00b5M ANGPTL41\u2013159 and allowing unfolding to proceed for 10 min in 10 mM Na2HPO4, 0.1 mM HCOOH, and 150 mM NaCl (pH 7.1) at 25\u00b0C. Similar data were recorded for spontaneous unfolding of 10 \u00b5M LPL, except that GPIHBP1 concentrations were reduced to 10 \u00b5M and the incubation time was increased to 45 min. Unfolding of LPL\u00b4s hydrolase domain was assessed with pulse-labeling in 70% D2O for 10 s, followed by quenching and reduction on ice for 2 min. Labeling of each sample was replicated between 3 and 6 times.\n\n### Determination of lipase activity\n\nBefore measuring lipase activity with Intralipid containing [3H]triolein, we took care to replicate the conditions used for the HDX-MS experiments (i.e., 10 \u00b5M LPL at 25\u00b0C, identical amounts of ANGPTL4 and GPIHBP1, and identical buffer conditions). The ANGPTL4-induced unfolding of LPL was quenched by 10-fold dilution in ice-cold 20 mM Tris (pH 8.5) containing 5 mM deoxycholic acid (DOC) and 0.1 mM sodium dodecyl sulfate (SDS) (DOC/SDS buffer). Lipase activities were determined by adding 5 \u00b5l of LPL (diluted 100-fold in DOC/ SDS buffer) to 195 \u00b5l of incubation mixtures containing Intralipid with incorporated [3H]triolein and with heat-inactivated rat serum as a\u00a0source of the activator apolipoprotein C-II (Larsson et al., 2013).\n\nIn some experiments, the protective effects of GPIHBP1 on lipase activity, were assessed in 96 well plates where 60 \u00b5l of 15 nM LPL in PBS buffer (pH 7.4) containing 0.01% (v/v) of Trition-X100 were pre-incubated in the presence or absence of 7.5 nM ANGPTL4 and 300 nM GPIHBP1 at 21\u00b0C and shaking at 600 rpm. To determine lipase activity at a given pre-incubation time, 90 \u00b5l incubation mixture containing Intralipid and human serum (as a\u00a0source of apolipoprotein C-II) were added and the incubation was continued for 25 min at room temperature. After terminating the reaction by adding Triton X-100 to a final concentration of 2.5% (v/v), the amount of lipase-generated, non-esterified fatty acids (NEFA) were quantified using a NEFA-HR(2) assay according to the\u00a0manufacturer\u2019s protocol (Wako Diagnostics). Measurements were performed in triplicates.\n\n### Protein dynamics of ANGPTL4 measured by HDX-MS\n\nLabeling with deuterium was initiated by 3.3-fold dilutions of 10 \u00b5M ANGPTL41\u2013159/wt or ANGPTL41\u2013159/E15K (in 10 mM Na2HPO4, 150 mM NaCl) into the equivalent deuterated buffer (pD 7.4), yielding the following exchange conditions: 70% (v/v) D2O, pH 7.1 (as measured with identical solutions prepared from protiated reagents). Solvent exchange was allowed to proceed for 10, 100 or 1000 s at 25\u00b0C with 300 RPM mixing. At the indicated time intervals, the exchange reaction was quenched with 1 vol ice-cold quench buffer and protein disulfides reduced for 2 min on ice. On-line digestion with pepsin yielded 41 peptides shared by ANGPTL4wt and ANGPTL4E15K, providing 96% sequence coverage. Full deuteration controls were prepared by allowing LPL samples to exchange in the same buffer for 48 or 72 hr at 37\u00b0C. No additional deuterium uptake could be observed after 48 hr.\n\n### MS analysis of HDX-labeled samples\n\nDeuterium incorporations into proteins was determined after on-line pepsin digestion of the samples with an HDX-modified reversed-phased chromatographic system coupled to a Synapt G2 electrospray ionization mass spectrometer (Waters, Milford, MA) (Mysling et al., 2016).\n",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "c06dfa5f-d5ae-424b-b093-49865ec1cc1b",
+      "submission_id": "558b8dbc-9d98-44c7-896e-985a1e596621",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Christopher K Glass, University of California, San Diego , United States\n\n## Review text\n\nDOI: [10.7554/eLife.20958.014](https://doi.org/10.7554/eLife.20958.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"ANGPTL4 catalyzes unfolding of the hydrolase domain in lipoprotein lipase and that unfolding is counteracted by GPIHBP1\" for consideration by eLife. Your article has been favorably evaluated by Harry Dietz (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Tobias C Walther (Reviewer #2); Joseph Witztum (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Mysling et al. reports an extension of their recent work in eLife on the regulation of structure and function of LPL. They again use MS analysis of hydrogen-deuterium exchange to follow time-dependent changes in LPL structure and correlate these changes with assays of lipase activity. They demonstrate that sub-stoichiometric amounts of ANGPTL4 accelerate unfolding of the serine hydrolase domain, but not lipid binding domain of LPL, and correspondingly reduce its enzymatic activity. The human ANGPTL4 E15K variant that is associated with reduced triglyceride levels is less active in catalyzing LPL unfolding. ANGPTL3 also catalyzes unfolding of the LPL serine hydrolase domain, but is less active than ANGPTL4. The effects of ANGPTL4 on LPL unfolding and catalytic activity are counteracted by the endothelial cell transporter, GPIHBP1. Collectively, these results provide a biochemical explanation for the restriction of LPL activity to the right place and an explanation for reduced activity of the ANGPTL4 variant. Overall there was a high degree of enthusiasm for the manuscript from the three reviewers, but there is one issue that needs to be addressed experimentally and several other points requiring further discussion.\n\nEssential Revisions:\n\n1) The authors describe an experimental system in which LPL unfolding is irreversible. However, there is data from Saskia Nehr's group that ANGPTL4 inhibits LPL in a reversible fashion. The studies are not directly comparable, but it certainly raises the issue as to whether irreversibility of LPL unfolding in these studies is a specific feature of the experimental conditions used. This question should be further addressed experimentally.\n\n2) Since GPIHBP1 binding to LPL stabilizes it and presumably protects it from inactivation by ANGPTL4 and ANGPTL3 \u2013 why then when heparin is given and LPL is released into the fluid phase plasma is it not totally inactivated by the combinations of ANGPTL3 and 4? Would it not be as in Figure 1 in solution and away from GPIHBP1? And how does for example, apoC-III, fit in here? This seems a major paradox. Does the heparin somehow change the LPL into a dimer that is then resistant to the ANGPTL proteins? Or is it all a matter of balance (stoichiometry) and numbers of molecules activating/inhibiting etc.? These questions should be discussed.\n\n3) It was recently demonstrated that ANGPTL4 mediated intracellular degradation of LPL in adipocytes. Do the authors think this is related? E.g. Could ANGPTL4 mediated unfolding lead to a degradation pathway? Would the described mutant therefore lead to enhanced adipose tissue release of functional LPL in the affected individual? These questions should be discussed.\n\n4) In vivo, LPL bound to GPIHBP1 interacts with a very large TRL and in the context of that binding, there is also bound apoC-II in the mix, and the different ANGPTL3/4/8 not to mention apoC-III. Can the authors discuss how they envision the described mechanism to play out in the context of LPL mediated hydrolysis of TG in a TRL?\n",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d58576ea-ad4b-4fca-a8ac-35db1c7a55e4",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C1",
+      "claim": "LPL undergoes spontaneous inactivation via global unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoprotein lipase (LPL) undergoes spontaneous inactivation via global unfolding and this unfolding is prevented by GPIHBP1 (Mysling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mysling et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e31e52c6-7e4e-4ee0-8c56-3df31a8e29d9",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C2",
+      "claim": "GPIHBP1 prevents spontaneous unfolding of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoprotein lipase (LPL) undergoes spontaneous inactivation via global unfolding and this unfolding is prevented by GPIHBP1 (Mysling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mysling et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e64b0b71-bac7-4a46-a184-68e85dda9c8a",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C3",
+      "claim": "ANGPTL4 inactivates LPL by catalyzing the unfolding of its hydrolase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show: (1) that ANGPTL4 inactivates LPL by catalyzing the unfolding of its hydrolase domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS experimental data showing time- and dose-dependent unfolding of LPL's hydrolase domain in the presence of ANGPTL4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "051fc048-10de-45cc-93bf-af9343d1f5be",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C4",
+      "claim": "Binding to GPIHBP1 renders LPL largely refractory to ANGPTL4 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) that binding to GPIHBP1 renders LPL largely refractory to this inhibition",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing reduced LPL unfolding in the presence of GPIHBP1 and ANGPTL4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "55f62559-11a6-4899-afbd-2a6ff2ac8c50",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C5",
+      "claim": "Both the LU domain and the intrinsically disordered acidic domain of GPIHBP1 are required for protection of LPL from ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) that both the LU domain and the intrinsically disordered acidic domain of GPIHBP1 are required for this protective effect",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing full-length GPIHBP1 with truncated versions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "cf1a13bb-9568-4712-a409-9e849ce0cf1c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C6",
+      "claim": "A common polymorphic variant in ANGPTL4 (E15K) results in lower plasma triglyceride levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic studies have found that a common polymorphic variant in ANGPTL4 results in lower plasma triglyceride levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e90fb33f-6994-4e34-a11f-c4fe4ecffcb7",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C7",
+      "claim": "The ANGPTL4 E15K variant is less efficient in catalyzing the unfolding of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) that this ANGPTL4 variant is less efficient in catalyzing the unfolding of LPL",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data showing reduced unfolding efficacy of ANGPTL4 E15K compared to wild-type",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "4d5ca723-f703-41a1-81ce-60b31bcf626b",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C8",
+      "claim": "The Glu-to-Lys substitution in ANGPTL4 E15K destabilizes its N-terminal \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) that its Glu-to-Lys substitution destabilizes its N-terminal \u03b1-helix",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data showing increased deuterium uptake in the N-terminal \u03b1-helix region of ANGPTL4 E15K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "017d23d2-524d-4133-b513-06a15986f309",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C9",
+      "claim": "LPL is secreted into the interstitial spaces by myocytes and adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "LPL is secreted into the interstitial spaces by myocytes and adipocytes but is then shuttled to the capillary lumen by an endothelial transporter, glycosylphosphatidylinositol-anchored high density lipoprotein\u2013binding protein 1 (GPIHBP1) (Fong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "61b57bba-1d60-4228-9490-5d9ccc24d49f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C10",
+      "claim": "GPIHBP1 shuttles LPL to the capillary lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "LPL is secreted into the interstitial spaces by myocytes and adipocytes but is then shuttled to the capillary lumen by an endothelial transporter, glycosylphosphatidylinositol-anchored high density lipoprotein\u2013binding protein 1 (GPIHBP1) (Fong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fong et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "b108e2f3-bc79-4a74-bd77-136d30d78659",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C11",
+      "claim": "GPIHBP1 is required for the margination of TRLs along capillaries.",
+      "claim_type": "EXPLICIT",
+      "source": "This endothelial cell LPL transporter is also required for the margination of TRLs along capillaries (Goulbourne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goulbourne et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "d0dce4d9-4595-402e-9cf8-b0f1403a3b57",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C12",
+      "claim": "Genetic ablation of GPIHBP1 in mice leads to sustained elevations in plasma triglyceride levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of LPL transport by either genetic ablation of GPIHBP1 in mice (Beigneux et al., 2007) or by loss-of-function missense mutations in humans leads to sustained elevations in plasma triglyceride levels\u2014a condition known as familial chylomicronemia (Ariza et al., 2016; Beigneux et al., 2015, 2009b; Olivecrona et al., 2010; Plengpanich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2854afcd-e779-4bf0-b804-9de86bfab269",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C13",
+      "claim": "Loss-of-function missense mutations in GPIHBP1 in humans lead to familial chylomicronemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of LPL transport by either genetic ablation of GPIHBP1 in mice (Beigneux et al., 2007) or by loss-of-function missense mutations in humans leads to sustained elevations in plasma triglyceride levels\u2014a condition known as familial chylomicronemia (Ariza et al., 2016; Beigneux et al., 2015, 2009b; Olivecrona et al., 2010; Plengpanich et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "04c26628-3e63-4764-acb3-1298b0a120af",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C14",
+      "claim": "LPL activity is regulated by endogenous protein inhibitors ANGPTL3, ANGPTL4, and ANGPTL8.",
+      "claim_type": "EXPLICIT",
+      "source": "Appropriate distribution of lipid nutrients to tissues is, however, not only controlled by the availability of LPL and GPIHBP1, but is also tightly regulated by endogenous protein inhibitors of LPL activity (angiopoietin-like (ANGPTL) proteins 3, 4, and 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "7713ab49-593e-4ade-a7e4-ea2aad1bff72",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C15",
+      "claim": "Reciprocal regulation of ANGPTL4 expression in brown and white adipocytes with prolonged cold exposure results in high LPL activity in brown adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocal regulation of ANGPTL4 expression in brown and white adipocytes with prolonged cold exposure results in high LPL activity in brown adipocytes and ensures the delivery of lipid nutrients for adaptive thermogenesis (Dijk et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dijk et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "ecac6c0f-fb75-4476-ad5b-239447b25a9c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C16",
+      "claim": "Pharmacological inhibition or genetic ablation of ANGPTL3 or ANGPTL4 results in lower plasma triglyceride levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevance of these inhibitors to LPL-mediated TRL processing in vivo is illustrated by lower plasma triglyceride levels with pharmacological inhibition or genetic ablation of ANGPTL3 or ANGPTL4 (Desai et al., 2007; Gusarova et al., 2015; K\u00f6ster et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "31807f5f-4c2e-4c87-9117-773594fefda5",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C17",
+      "claim": "The ANGPTL4 E40K polymorphic variant is associated with mild hypotriglyceridemia and reduced risk of coronary artery disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional evidence for their physiological importance are provided by genome-wide association studies (GWAS), which showed that a polymorphic variant of ANGPTL4, E40K (E15K in the mature protein) is associated with mild hypotriglyceridemia and reduced risk of coronary artery disease (Dewey et al., 2016; Helgadottir et al., 2016; Stitziel et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to GWAS studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "0817f8a6-775a-40a4-9d2d-b98aa0120aae",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C18",
+      "claim": "The N-terminal coiled-coil domain of ANGPTL4 catalyzes the conversion of LPL homodimers to inactive LPL monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "An early report suggested that the N-terminal coiled-coil domain of ANGPTL4 catalyzed the conversion of LPL homodimers to inactive LPL monomers (Sukonina et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sukonina et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "79bc25b8-a0a8-442e-aed8-44bb2b9d3253",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C19",
+      "claim": "ANGPTL4 inhibits LPL by a reversible and noncompetitive mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this conclusion has been challenged by a report suggesting that ANGPTL4 inhibits LPL by a reversible and noncompetitive mechanism (Lafferty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lafferty et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "405a42bd-95db-4a01-9e58-c212f26e0283",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C20",
+      "claim": "LPL irreversibly loses catalytic activity by undergoing a time- and temperature-dependent global unfolding of its serine hydrolase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that LPL irreversibly loses catalytic activity by undergoing a time- and temperature-dependent global unfolding of its serine hydrolase domain (Mysling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mysling et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "5937462f-081d-414e-9739-f00b6892413e",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C21",
+      "claim": "The C-terminal lipid-binding domain of LPL remains stably folded during spontaneous inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the C-terminal lipid-binding domain of LPL remains stably folded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by previous experimental data from Mysling et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "b677e8ab-3a33-42e9-9940-5be2adb5d71e",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C22",
+      "claim": "10 \u00b5M LPL undergoes a slow spontaneous transition into an unfolded state with 29% of the LPL being unfolded after 30 min at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry revealed that 10 \u00b5M LPL undergoes a slow spontaneous transition into an unfolded state during the selected incubation time interval (0\u201330 min), with 29% of the LPL being unfolded after 30 min at 25\u00b0C (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "87ff0a7f-d3bc-44c3-894b-b58570bc4151",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C23",
+      "claim": "7.0 \u00b1 0.7% of LPL was in the unfolded state after 5 min of spontaneous unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative assessment of this distribution reveals that 7.0 \u00b1 0.7% of LPL was in the unfolded state after 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative analysis of mass spectrometry data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "6b766dc9-f613-4120-84c6-1eee79752b34",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C24",
+      "claim": "Adding 1 \u00b5M ANGPTL41\u2013159 to 10 \u00b5M LPL greatly accelerated the rate of LPL unfolding, with 60.3 \u00b1 2.3% of the LPL being unfolded after 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding 1 \u00b5M ANGPTL41\u2013159 to 10 \u00b5M LPL greatly accelerated the rate of LPL unfolding, with 60.3 \u00b1 2.3% of the LPL being unfolded after 5 min (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "aa52cb19-16e8-4b28-8142-795b3b62845c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C25",
+      "claim": "Substoichiometric amounts of ANGPTL4 (molar ratio of 1:10) unfold >50% of LPL molecules in 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the amount of ANGPTL41\u2013159 added was substoichiometric relative to LPL (a molar ratio of 1:10), ANGPTL4 was responsible for unfolding >50% of LPL molecules in 5 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing dose-dependent unfolding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e31e2c58-427b-4c8d-a023-1c46de9a7dda",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C26",
+      "claim": "The unfolding of >50% of LPL molecules by substoichiometric amounts of ANGPTL4 constitutes a strong argument in favor of the catalytic nature of ANGPTL4-mediated LPL inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This noticeable amount of LPL unfolding by substoichiometric amounts of ANGPTL4 constitutes a strong argument in favor of the catalytic nature of ANGPTL4-mediated LPL inactivation (Sukonina et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data and citation to Sukonina et al., 2006",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "384455ea-4a7d-4b7c-9d68-087ae9a8cf5c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C27",
+      "claim": "Lower amounts of ANGPTL4 (0.5 \u00b5M, 0.25 \u00b5M) provide dose-dependent inactivation of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Those studies provided clear evidence for a dose-dependent inactivation of LPL by ANGPTL4 (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "07bd3e73-7d93-4f03-977a-75c11a1d391b",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C28",
+      "claim": "0.25 \u00b5M ANGPTL4 (molar ratio of 1:40 relative to LPL) resulted in 74 \u00b1 6% LPL unfolding after 30 min compared to 28.6 \u00b1 1.3% spontaneous unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest ANGPTL4 concentration tested resulted in 74 \u00b1 6% LPL unfolding after 30 min compared to a spontaneous unfolding of 28.6 \u00b1 1.3% in the buffer lacking ANGPTL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "60cd957d-f19e-443a-a030-f5eb935f2af9",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C29",
+      "claim": "The unfolding efficacy of ANGPTL41\u2013159 is 1.6 \u00b1 0.2 molecules of LPL per ANGPTL4 molecule per min at 25\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "From early time point measurements, where substrate depletion was negligible, we estimate that the unfolding efficacy of our ANGPTL41\u2013159 preparation was 1.6 \u00b1 0.2 molecules of LPL per ANGPTL4 molecule per min at 25\u00b0C (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic analysis of experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "8deebd21-cf19-4aaf-80c2-b8c49fc732a2",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C30",
+      "claim": "ANGPTL41\u2013159 causes time- and dose-dependent inhibition of LPL catalytic activity measured with [3H]triolein.",
+      "claim_type": "EXPLICIT",
+      "source": "When identical incubations of LPL and ANGPTL4 were analyzed for lipolytic activity with [3H]triolein, we found a similar time- and dose-dependent inhibition of LPL catalytic activity by ANGPTL41\u2013159 (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzymatic activity assay data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "4e266693-1bbd-4bbf-9b32-f3a8004c9bb8",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C31",
+      "claim": "Spontaneous and ANGPTL4-catalyzed unfolding of LPL result in similar conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparing the deuterium uptake across all LPL peptides, we observed no differences in the pattern of deuterium uptake into LPL molecules undergoing spontaneous or ANGPTL4-catalyzed unfolding (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HDX-MS data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9a01ed41-6205-4c06-910c-2570ba82a2ba",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C32",
+      "claim": "All peptides showing bimodality during LPL unfolding are confined to the serine hydrolase domain of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, all peptides showing bimodality were confined to the serine hydrolase domain of LPL (Figure 1E); none were in the C-terminal lipid-binding domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HDX-MS data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "1632b0f9-414b-490f-9515-4852cc134029",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C33",
+      "claim": "Different means of LPL inactivation are mirrored by similar conformational endpoints whether they occur spontaneously or are catalyzed by ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these data, we conclude that different means of LPL inactivation are mirrored by similar conformational endpoints whether they occur spontaneously or are catalyzed by ANGPTL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on HDX-MS data comparing spontaneous and ANGPTL4-catalyzed unfolding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "7557fa3b-f27d-4eac-ad2b-66c80ea30f29",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C34",
+      "claim": "ANGPTL4 is prone to various degrees of oligomerization via intermolecular disulfide bonds involving Cys51 and Cys55.",
+      "claim_type": "EXPLICIT",
+      "source": "Several reports show that ANGPTL4 is prone to various degrees of oligomerization via intermolecular disulfide bonds involving Cys51 and Cys55 in ANGPTL4\u00b4s N-terminal coiled-coil domain (Ge et al., 2004a, 2004b; Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "dbf1026c-0d57-4746-86b9-8b6eb2117a71",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C35",
+      "claim": "The ANGPTL41\u2013159 preparation contains disulfide-linked oligomers, predominantly in the form of dimers comprising no more than 10% of the protein preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ANGPTL41\u2013159 preparation also contained disulfide-linked oligomers, although they were predominantly in the form of dimers and comprised no more than 10% of the protein preparation (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SDS-PAGE analysis shown in Figure 1\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "3d18730d-4cce-44bc-8337-b6761d904d4b",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C36",
+      "claim": "In monomeric ANGPTL4, Cys51 and Cys55 are connected by an intramolecular disulfide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "In monomeric ANGPTL4, we find that Cys51 and Cys55 are connected by an intramolecular disulfide bond, as demonstrated by masses of 3440.64 and 3442.64 Da for peptides corresponding to residues 45\u201377 in ANGPTL41\u2013159 before and after reduction with tris-(2-carboxyethyl) phosphine (TCEP) (Figure 1\u2014figure supplement 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 1\u2014figure supplement 3B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "d685b857-7b53-44f5-8e1a-c34a1145c2c0",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C37",
+      "claim": "The catalytic activity of 1 \u00b5M ANGPTL41\u2013159 is similar regardless of the integrity of the disulfide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1\u2014figure supplement 3D, the catalytic activity of 1 \u00b5M ANGPTL41\u2013159 was similar regardless of the integrity of the disulfide bond.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "afab2303-d2be-4490-9d3f-afdee8a959c1",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C38",
+      "claim": "A covalent oligomer of ANGPTL41\u2013159 is not essential for its catalytic LPL-unfolding activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, a covalent oligomer of ANGPTL41\u2013159 is not essential for its catalytic LPL-unfolding activity in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data comparing reduced/alkylated and native ANGPTL4",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9c889c65-6adc-4eaf-b48b-5063029692f2",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C39",
+      "claim": "In the absence of GPIHBP1, 87 \u00b1 2% unfolding of LPL was observed after 10 min incubation with 2 \u00b5M ANGPTL41\u2013159.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of GPIHBP1, we observed 87 \u00b1 2% unfolding of LPL versus only 8 \u00b1 2% unfolding in the presence of GPIHBP11\u2013131 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "ad875c9e-740d-4cc4-bd16-a293292aff0a",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C40",
+      "claim": "In the presence of GPIHBP11\u2013131, only 8 \u00b1 2% unfolding of LPL was observed after 10 min incubation with 2 \u00b5M ANGPTL41\u2013159.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of GPIHBP1, we observed 87 \u00b1 2% unfolding of LPL versus only 8 \u00b1 2% unfolding in the presence of GPIHBP11\u2013131 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "872d680f-f427-4017-bd2f-42642b1f93cb",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C41",
+      "claim": "30 \u00b5M GPIHBP134\u2013131 does not substantially inhibit ANGPTL4-catalyzed unfolding of LPL (79 \u00b1 7% unfolding).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the LU domain and the acidic domain of GPIHBP1 (Figure 2C) were required for protecting LPL against ANGPTL4; neither 30 \u00b5M GPIHBP134\u2013131 nor 30 \u00b5M GPIHBP11\u201333 substantially inhibited ANGPTL4-catalyzed unfolding of LPL (79 \u00b1 7% and 69 \u00b1 12% unfolding, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "27135f95-e033-47a5-9c95-24fd4747fe45",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C42",
+      "claim": "30 \u00b5M GPIHBP11\u201333 does not substantially inhibit ANGPTL4-catalyzed unfolding of LPL (69 \u00b1 12% unfolding).",
+      "claim_type": "EXPLICIT",
+      "source": "Both the LU domain and the acidic domain of GPIHBP1 (Figure 2C) were required for protecting LPL against ANGPTL4; neither 30 \u00b5M GPIHBP134\u2013131 nor 30 \u00b5M GPIHBP11\u201333 substantially inhibited ANGPTL4-catalyzed unfolding of LPL (79 \u00b1 7% and 69 \u00b1 12% unfolding, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "06d42ce9-e71e-4e75-bb9e-6c0cf013ac5c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C43",
+      "claim": "The acidic domain of GPIHBP1 (GPIHBP11\u201333) is nearly as effective as full-length GPIHBP11\u2013131 in protecting LPL from spontaneous unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "A slightly different scenario emerged for spontaneous unfolding of LPL; the acidic domain of GPIHBP1 (GPIHBP11\u201333) was nearly as effective as full-length GPIHBP11\u2013131 in protecting LPL from unfolding (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "04bdb33b-ab9d-48d9-8b88-f1c39f6a1819",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C44",
+      "claim": "The GPIHBP11\u201333/GPIHBP134\u2013131 mixture is less effective than full-length GPIHBP1 in protecting LPL from ANGPTL4-mediated unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The GPIHBP11\u201333/GPIHBP134\u2013131 mixture was less effective than full-length GPIHBP1 in protecting LPL from ANGPTL4-mediated unfolding (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "7897712e-5597-49a6-9d83-adf4b9c80077",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C45",
+      "claim": "GPIHBP1\u00b4s acidic domain needs to be tethered to the LU domain to achieve GPIHBP1\u00b4s full protective effect against ANGPTL4-catalyzed LPL unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, it would appear that GPIHBP1\u00b4s acidic domain needs to be tethered to the LU domain to achieve GPIHBP1\u00b4s full protective effect against ANGPTL4-catalyzed LPL unfolding (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on experimental data comparing full-length GPIHBP1 with domain mixtures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "fba7140b-b5a4-45e6-a8d2-54b1932810c8",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C46",
+      "claim": "A covalent association of the two GPIHBP1 domains is less important for reducing the spontaneous unfolding of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "A covalent association of the two GPIHBP1 domains is less important for reducing the spontaneous unfolding of LPL (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on experimental data shown in Figure 2B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "bcdfab3e-8c82-4ec9-a182-bd95371fa719",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C47",
+      "claim": "The protection provided by different GPIHBP1 proteins against ANGPTL4-mediated LPL unfolding is accompanied by preserved LPL catalytic activity towards [3H]triolein substrate hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The protection provided by the different GPIHBP1 proteins against ANGPTL4-mediated LPL unfolding was accompanied by preserved LPL catalytic activity towards [3H]triolein substrate hydrolysis (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzymatic activity assay data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "d5fe988c-53a9-413f-8fd6-300efbbea0b9",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C48",
+      "claim": "Adding GPIHBP1 to partially inactivated LPL protects the remaining LPL from inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, adding GPIHBP1 to the partially inactivated LPL protected the remaining LPL from inactivation, but neither the spontaneously inactivated LPL nor the ANGPTL4-inactivated LPL was resurrected by GPIHBP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzymatic activity assay data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e380a557-7e7e-428b-931f-1a43119d4932",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C49",
+      "claim": "Neither spontaneously inactivated LPL nor ANGPTL4-inactivated LPL is resurrected by GPIHBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3, adding GPIHBP1 to the partially inactivated LPL protected the remaining LPL from inactivation, but neither the spontaneously inactivated LPL nor the ANGPTL4-inactivated LPL was resurrected by GPIHBP1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzymatic activity assay data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "f4a7ecec-64ee-4322-affe-482637557508",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C50",
+      "claim": "ANGPTL4 catalyzes LPL unfolding/inactivation in an irreversible manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies further substantiates that ANGPTL4 catalyzes LPL unfolding/inactivation in an irreversible manner rather than acting as a noncompetitive and reversible inhibitor as previously suggested (Lafferty et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data showing no resurrection of inactivated LPL by GPIHBP1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e0068d4c-9a5d-42ba-b115-fb3b986c2354",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C51",
+      "claim": "The ANGPTL4 variant ANGPTL4E15K results in the unfolding of 0.6 \u00b1 0.1 molecules LPL per ANGPTL4 molecule per min.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANGPTL4 variant resulted in the unfolding of 0.6 \u00b1 0.1 molecules LPL per ANGPTL4 molecule per min (Figure 4B and C), which is only 40% of the activity of wild-type ANGPTL4 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic analysis of experimental data shown in Figure 4B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "57ae2e40-e12c-4cb7-8634-69c11271d7b8",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C52",
+      "claim": "ANGPTL4E15K has only 40% of the unfolding activity of wild-type ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANGPTL4 variant resulted in the unfolding of 0.6 \u00b1 0.1 molecules LPL per ANGPTL4 molecule per min (Figure 4B and C), which is only 40% of the activity of wild-type ANGPTL4 (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by kinetic analysis of experimental data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "21e902ac-fd44-4af1-9f3c-ad2e8edaa5d5",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C53",
+      "claim": "LPL incubated with ANGPTL41\u2013159/E15K retained 40\u201350% more catalytic activity than LPL incubated with wild-type ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained consistent results when measuring LPL activity; the LPL incubated with ANGPTL41\u2013159/E15K retained 40\u201350% more catalytic activity than LPL incubated with wild-type ANGPTL4 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzymatic activity assay data shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "ce1af154-ff83-45be-b99e-866682f25a5f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C54",
+      "claim": "ANGPTL41\u2013159/E15K loses activity more rapidly than wild-type ANGPTL4 during LPL incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "The LPL unfolding curves (Figure 4A and B) suggested that ANGPTL41\u2013159/E15K lost activity more rapidly than wild-type ANGPTL4 during the LPL incubation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on kinetic data shown in Figure 4A and B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "863a58fa-3694-4d44-bb50-661039fe3dfa",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C55",
+      "claim": "Wild-type ANGPTL41\u2013159 contains two regions that are less dynamic (residues 19\u201343 and 85\u2013111).",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated by the heat maps for deuterium uptake, wild-type ANGPTL41\u2013159 contains two regions that are less dynamic (residues 19\u201343 and 85\u2013111).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9495a784-ff5a-4926-a293-c2cc165e438c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C56",
+      "claim": "Both less dynamic regions in ANGPTL4 (residues 19\u201343 and 85\u2013111) are predicted by PSIPRED to form \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Both sequences are predicted by PSIPRED to form \u03b1-helices (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by PSIPRED prediction shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "21bdffce-2775-49c5-b5bd-0c759cab1bfc",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C57",
+      "claim": "The N-terminal \u03b1-helix of ANGPTL4 is less stable than the C-terminal \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the two \u03b1-helices, the N-terminal \u03b1-helix of ANGPTL4 is less stable (i.e., has a greater deuterium uptake).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data showing greater deuterium uptake",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "03e10fc1-ad7a-410d-8bd3-de5c009753f8",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C58",
+      "claim": "The deuterium uptake in the N-terminal \u03b1-helix region of ANGPTL4 occurs via mixed EX1 and EX2 kinetics signifying some degree of cooperative unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The isotope envelopes reveal that the deuterium uptake in this particular region occurs via mixed EX1 and EX2 kinetics signifying some degree of cooperative unfolding (Weis et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data and citation to Weis et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "eeeba1b3-002d-4102-967d-4351d8c9ee96",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C59",
+      "claim": "Peptides covering residues 19\u201343 in ANGPTL41\u2013159/E15K exchange more rapidly than in wild-type ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of the kinetics for deuterium uptake into ANGPTL41\u2013159/E15K and ANGPTL41\u2013159/wt revealed a conspicuous difference: peptides covering residues 19\u201343 exchanged more rapidly in ANGPTL41\u2013159/E15K (Figure 5A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HDX-MS data shown in Figure 5A and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "6067bcb5-9433-4d43-a3bc-5184be5bba6e",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C60",
+      "claim": "The increased deuterium incorporation in ANGPTL4 E15K occurs predominantly via faster EX1 kinetics reflecting an increased propensity for cooperative unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased deuterium incorporation occurs predominantly via faster EX1 kinetics reflecting an increased propensity for cooperative unfolding of that region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by HDX-MS data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "777ba5ea-3746-46d2-bd48-52ca9c20ea71",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C61",
+      "claim": "The Glu-to-Lys substitution in the E15K variant compromises protein stability by reducing the \u03b1-helix propensity of the adjacent C-terminal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that this region coincides with the predicted N-terminal \u03b1-helix in ANGPTL4, it is conceivable that the Glu-to-Lys substitution in the E15K variant compromises protein stability by reducing the \u03b1-helix propensity of the adjacent C-terminal sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on HDX-MS data and structural predictions",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "b6c5131e-e673-4f82-a8f1-009cf7f53b1e",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C62",
+      "claim": "ANGPTL3, ANGPTL4, and ANGPTL8 show strong sequence conservation in the N-terminal region that is destabilized in ANGPTL4E15K.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignments of the different ANGPTL proteins implicated in triglyceride metabolism (ANGPTL3, ANGPTL4, ANGPTL8) reveal strong sequence conservation in the N-terminal region that is destabilized in ANGPTL4E15K (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "d0d3055d-d3fc-40e0-8850-31bb80612e89",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C63",
+      "claim": "ANGPTL3 accelerates the unfolding of the catalytic triad peptide leading to inactivation of LPL, but at reduced efficacy compared with equimolar amounts of ANGPTL4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that ANGPTL3 also accelerates the unfolding of the catalytic triad peptide leading to inactivation of LPL, but at reduced efficacy compared with equimolar amounts of ANGPTL4 (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "4664ed54-d25f-4e5a-953f-7de5d5eabcc4",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C64",
+      "claim": "ANGPTL3-catalyzed inactivation of LPL is abrogated by GPIHBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANGPTL3-catalyzed inactivation of LPL is abrogated by GPIHBP1 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "a85587a3-0c0b-4070-ada2-811274ebd944",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C65",
+      "claim": "GPIHBP1-bound LPL is protected from ANGPTL4 in vivo.",
+      "claim_type": "IMPLICIT",
+      "source": "One implication of our findings is that only GPIHBP1-bound LPL would be protected from ANGPTL4 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on in vitro experimental findings",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "59ea1aa4-4e67-4adf-b024-12df6dd8ff75",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C66",
+      "claim": "In the secretory pathway of adipocytes, where GPIHBP1 is absent, LPL would be more susceptible to ANGPTL4-mediated unfolding.",
+      "claim_type": "IMPLICIT",
+      "source": "First, in the secretory pathway of adipocytes, where GPIHBP1 is absent, we suspect that LPL would be more susceptible to ANGPTL4-mediated unfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and knowledge of GPIHBP1 expression",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9352874e-d6c9-4421-bfbf-400fa7366842",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C67",
+      "claim": "ANGPTL4 interacts with LPL in the trans-Golgi network, targeting it for lysosomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, recent studies of LPL production by mouse primary adipocytes and white adipose tissue explants indicate that ANGPTL4 interacts with LPL in the trans-Golgi network, targeting it for lysosomal degradation (Dijk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dijk et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "bdaa9b38-4cca-42b6-8782-bce9d876562f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C68",
+      "claim": "The endoplasmic reticulum has an efficient quality control system that targets thermodynamically unstable proteins for disposal via ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum has an efficient quality control system that targets thermodynamically unstable proteins for disposal via ERAD (Ellgaard and Helenius, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ellgaard and Helenius, 2003",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "34a37462-7181-4715-af87-156c75077ff6",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C69",
+      "claim": "In Saccharomyces cerevisiae, the trafficking receptor Vps10p serves as a protein-folding sensor diverting misfolded proteins to vacuolar disposal.",
+      "claim_type": "EXPLICIT",
+      "source": "In Saccharomyces cerevisiae, the trafficking receptor Vps10p serves as a protein-folding sensor diverting misfolded proteins to vacuolar disposal (Hong et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hong et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "f675c583-ad62-4634-88dd-7725ea8205c6",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C70",
+      "claim": "SorLA is expressed by adipocytes and myocytes and targets newly synthesized LPL for degradation in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SorLA is also expressed by adipocytes and myocytes and targets newly synthesized LPL for degradation in lysosomes (Klinger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klinger et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "db978a9c-4574-4f53-a88f-24b434ce6eed",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C71",
+      "claim": "ANGPTL4-catalyzed unfolding of LPL in the trans-Golgi network may prime an anterograde sorting of SorLA-LPL complexes towards the endolysosomal degradation pathway.",
+      "claim_type": "IMPLICIT",
+      "source": "One possibility\u2014which obviously needs experimental testing\u2014is that ANGPTL4-catalyzed unfolding of LPL in the trans-Golgi network primes an anterograde sorting of SorLA-LPL complexes towards the endolysosomal degradation pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and knowledge of protein quality control",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "a352cdab-9497-4b42-81d8-818ebacc22b1",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C72",
+      "claim": "Angptl4-/- adipocytes secrete increased levels of LPL compared to wild-type adipocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a mechanism might account for the increased LPL secretion from Angptl4-/- adipocytes compared to wild-type adipocytes (Dijk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dijk et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "3ba72a9c-08db-42ad-bd88-38d1a89d2af1",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C73",
+      "claim": "Human adipocytes that express ANGPTL4 E15K polymorphism would secrete elevated levels of LPL.",
+      "claim_type": "IMPLICIT",
+      "source": "In keeping with the latter idea, we speculate that human adipocytes that express ANGPTL4 E15K polymorphism would secrete elevated levels of LPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings about ANGPTL4 E15K reduced activity",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e2536d23-f50c-44be-ba83-39204d290ea7",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C74",
+      "claim": "Freshly secreted LPL loosely associated with heparan-sulfate proteoglycans in the interstitial spaces is prone to inhibition by ANGPTL4.",
+      "claim_type": "IMPLICIT",
+      "source": "Second, freshly secreted LPL\u2014loosely associated with heparan-sulfate proteoglycans (HSPG) in the interstitial spaces\u2014would also be prone to inhibition by ANGPTL4 (Olivecrona, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental findings and citation to Olivecrona, 2016",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "42dbaeb1-6f4a-4be2-915e-659bf41b5f29",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C75",
+      "claim": "The interstitial space represents the primary target site for ANGPTL4-catalyzed inactivation of LPL.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been suggested that this compartment represents the primary target site for ANGPTL4-catalyzed inactivation of LPL (Nilsson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nilsson et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "8541cfa1-2813-48ca-8f0d-3862fc19d8a3",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C76",
+      "claim": "Translocation of LPL from the HSPG-bound reservoir to a GPIHBP1-bound state at the basolateral surface of endothelial cells alleviates the inhibitor repression exerted by ANGPTL4.",
+      "claim_type": "IMPLICIT",
+      "source": "In this setting, translocation of LPL from the HSPG-bound reservoir to a GPIHBP1-bound state at the basolateral surface of endothelial cells would alleviate the inhibitor repression exerted by ANGPTL4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental findings about GPIHBP1 protection",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "fa5bae51-5cc6-4def-8084-9753d1d0e5ac",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C77",
+      "claim": "Inhibition of LPL within the interstitial spaces by locally produced ANGPTL4 is important for regulating the amount of active LPL that reaches the surface of capillaries.",
+      "claim_type": "IMPLICIT",
+      "source": "We propose that inhibition of LPL within the interstitial spaces by locally produced ANGPTL4 is important for regulating the amount of active LPL that actually reaches the surface of capillaries, thereby serving to match the efficiency of intravascular lipolysis to the metabolic requirements of nearby parenchymal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings and physiological reasoning",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "cbb4530b-ce4d-4401-8817-cea7c73ad762",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C78",
+      "claim": "The resistance of GPIHBP1-bound LPL to ANGPTL4- and ANGPTL3-mediated inhibition serves to focus catalytically active LPL at the luminal surface of capillary endothelial cells.",
+      "claim_type": "IMPLICIT",
+      "source": "Finally, we propose that the resistance of GPIHBP1-bound LPL to ANGPTL4- and ANGPTL3-mediated inhibition serves to focus catalytically active LPL at the luminal surface of capillary endothelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "df3226ed-3dfc-4b6b-805c-1a6fd75ee60f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C79",
+      "claim": "Human population studies have not uncovered a correlation between plasma ANGPTL4 levels and triglyceride concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting, that human population studies have not uncovered a correlation between plasma ANGPTL4 levels and triglyceride concentrations (Robciuc et al., 2010; Smart-Halajko et al., 2010) implying that the regulation of LPL activity in this compartment is far more convoluted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Robciuc et al., 2010 and Smart-Halajko et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "6bd37020-165a-4d92-865a-b1dba7a4fdc1",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C80",
+      "claim": "Low-to-moderate concentrations of circulating ANGPTL4 and ANGPTL3 in the blood are insufficient to inhibit LPL in the presence of triglyceride-rich lipoproteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The low-to-moderate concentrations of circulating ANGPTL4 and ANGPTL3 in the blood are obviously insufficient to inhibit LPL in the presence of triglyceride-rich lipoproteins (Nilsson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nilsson et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "dbc8d035-566e-46b8-a385-c0c0ee6c8195",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C81",
+      "claim": "Elevated plasma levels of ANGPTL4 protein achieved by transgenic overexpression or systemic administration result in increased plasma triglyceride levels and vastly reduced post-heparin LPL activity levels in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "With that said, it is important to acknowledge that elevated plasma levels of ANGPTL4 protein achieved by transgenic overexpression or systemic administration clearly breached this protective barrier as these mice have increased plasma triglyceride levels and vastly reduced post-heparin LPL activity levels (K\u00f6ster et al., 2005; Lichtenstein et al., 2007; Nilsson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "501c9b5c-ff7b-4c27-9431-dbd772429505",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C82",
+      "claim": "The E15K polymorphism in ANGPTL4 reduces the ability of ANGPTL4 to inhibit LPL in vitro to the degree that ANGPTL4E15K functions no better than ANGPTL3.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the E15K polymorphism reduces the ability of ANGPTL4 to inhibit LPL in vitro\u2014to the degree that ANGPTL4E15K functions no better than ANGPTL3 (Shan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shan et al., 2009 and experimental data",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "20a3d131-7eb1-4f3d-abc3-9e22d2d70373",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C83",
+      "claim": "The E15K polymorphism has no impact on ANGPTL4 protein synthesis, secretion, or oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although the E15K polymorphism has no impact on protein synthesis, secretion, oligomerization, or secretion, it still limits extracellular accumulation of the coiled-coil domain of ANGPTL4 in cultured cell systems as well as in adenovirus-transfected mice (Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yin et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2ef9c52c-a7c8-4a78-91e6-ea0569a6b725",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C84",
+      "claim": "The E15K polymorphism limits extracellular accumulation of the coiled-coil domain of ANGPTL4 in cultured cell systems and in adenovirus-transfected mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, although the E15K polymorphism has no impact on protein synthesis, secretion, oligomerization, or secretion, it still limits extracellular accumulation of the coiled-coil domain of ANGPTL4 in cultured cell systems as well as in adenovirus-transfected mice (Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yin et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "b8c2fc0c-068c-436b-aceb-6b96854ffa25",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C85",
+      "claim": "The effects of the E15K polymorphism on plasma triglyceride levels relate to a short half-life of the ANGPTL4E15K oligomer.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been hypothesized that the effects of the E15K polymorphism on plasma triglyceride levels relate to a short half-life of the ANGPTL4E15K oligomer (Yin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yin et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "455dbff4-aabd-4508-8c20-2ac94e0bbcc5",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C86",
+      "claim": "The Glu-to-Lys substitution in ANGPTL4 causes protein destabilization via cooperative unfolding of the first \u03b1-helix in ANGPTL4\u00b4s coiled-coil domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we provide evidence supporting that idea\u2014by showing that the Glu-to-Lys substitution in ANGPTL4 causes protein destabilization via cooperative unfolding of the first \u03b1-helix in ANGPTL4\u00b4s coiled-coil domain (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by HDX-MS data shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "1cdaef3a-ad9a-4026-a00c-462cb318d59c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C87",
+      "claim": "Negative charges at the N-terminus of \u03b1-helices generally stabilize coiled-coil domains via electrostatic interactions with the \u03b1-helix dipole moment.",
+      "claim_type": "EXPLICIT",
+      "source": "Negative charges at the N-terminus of \u03b1-helices generally stabilize coiled-coil domains via electrostatic interactions with the \u03b1-helix dipole moment (Johnson et al., 2014; Kohn et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Johnson et al., 2014 and Kohn et al., 1997",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "7f1b7a48-2bd0-4f5c-90b5-2407323d1327",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C88",
+      "claim": "The charge-reversal in ANGPTL4E15K leads to protein destabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the charge-reversal in ANGPTL4E15K would be expected to lead to protein destabilization\u2014in agreement with our HDX-MS data (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference based on HDX-MS data and established principles of protein structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2b72125f-fcaa-4f8c-8fc1-cab1c2895b25",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C89",
+      "claim": "Protein destabilization is a contributing factor to the lower half-life of ANGPTL4E15K.",
+      "claim_type": "IMPLICIT",
+      "source": "We suspect that this mechanism is a contributing factor to the lower half-life of ANGPTL4E15K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "1bfc2a17-6935-4654-93e3-c850b441fa12",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C90",
+      "claim": "GPIHBP1-binding protects LPL from inactivation by ANGPTL3.",
+      "claim_type": "EXPLICIT",
+      "source": "GPIHBP1-binding also protected LPL from inactivation by ANGPTL3, suggesting that the mechanism that we proposed for ANGPTL4-mediated LPL inactivation also applies to ANGPTL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "c9a0cd58-c7f3-4c80-b581-afd18d7bc71d",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C91",
+      "claim": "The mechanism proposed for ANGPTL4-mediated LPL inactivation also applies to ANGPTL3.",
+      "claim_type": "IMPLICIT",
+      "source": "GPIHBP1-binding also protected LPL from inactivation by ANGPTL3, suggesting that the mechanism that we proposed for ANGPTL4-mediated LPL inactivation also applies to ANGPTL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on experimental data showing similar protection by GPIHBP1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "1852dd13-348d-4fba-ac49-dd86c29aca62",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C92",
+      "claim": "ANGPTL3, ANGPTL4, and ANGPTL8 all share a two-residue acidic motif in their first \u03b1-helix along with a highly conserved GLLQGLG motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, ANGPTL3, ANGPTL4, and ANGPTL8 all share a two-residue acidic motif in their first \u03b1-helix along with a highly conserved GLLQGLG motif (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "46f07e49-b1d5-467d-ba07-3f6ed16b47a0",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C93",
+      "claim": "Intervention studies with mAbs recognizing the conserved region in ANGPTL3 and ANGPTL4 reduce plasma triglyceride levels in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "Intervention studies with mAbs recognizing this region in ANGPTL3 and ANGPTL4 reduce plasma triglyceride levels in animal models, emphasizing the functional importance of this region (Desai et al., 2007; Gusarova et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Desai et al., 2007 and Gusarova et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9b62c836-aa67-4b1f-99fe-15b8cafc3407",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C94",
+      "claim": "The function of other ANGPTL proteins would be sensitive to missense mutations that introduce charge reversals and compromise conformational stability.",
+      "claim_type": "IMPLICIT",
+      "source": "In light of these observations, we suspect that the function of other ANGPTL proteins would be sensitive to missense mutations that introduce charge reversals and compromise conformational stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings about ANGPTL4 E15K and sequence conservation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "ef4cf0dd-9bab-487c-9984-bcef59532d3b",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C95",
+      "claim": "Mutations comparable to the E15K substitution in ANGPTL4 have not been reported in ANGPTL3 or ANGPTL8.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus far, however, mutations comparable to the E15K substitution in ANGPTL4 have not been reported in ANGPTL3 or ANGPTL8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on absence of reports in the literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "e2d54fcc-89e7-48a2-a93b-8deb3ff0ffae",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C96",
+      "claim": "Bovine LPL was purified from fresh bovine milk by heparin-Sepharose, hydroxyapatite, and Superdex HR200 size-exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "Bovine LPL was purified from fresh bovine milk by heparin-Sepharose, hydroxyapatite, and Superdex HR200 size-exclusion chromatography (Cheng et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cheng et al., 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "92a48bb1-ab92-4aeb-9e3e-115f21873c32",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C97",
+      "claim": "The coiled-coil domain of wild-type human ANGPTL4 and ANGPTL4E15K (residues 1\u2013159) was produced in E. coli BL21 (DE3) with a pet29a vector.",
+      "claim_type": "EXPLICIT",
+      "source": "The coiled-coil domain of wild-type human ANGPTL4 (ANGPTLwt) and ANGPTL4E15K (residues 1\u2013159 with an N-terminal methionine and a C-terminal 6\u00d7His-tag) was produced in E. coli BL21 (DE3) with a pet29a vector (Robal et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Robal et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "bc0c5108-da7e-4bbd-bd0e-267fb92ed42d",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C98",
+      "claim": "A recombinant secreted version of human GPIHBP1 was produced in Drosophila S2-cells as a fusion protein with domain 3 of human uPAR.",
+      "claim_type": "EXPLICIT",
+      "source": "A recombinant secreted version of human GPIHBP1 was produced in Drosophila S2-cells (Invitrogen, CA) as a fusion protein with domain 3 (D3) of human uPAR (G\u00e5rdsvoll et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to G\u00e5rdsvoll et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "641c72a2-53bd-445c-a9eb-7b24bbe0b8af",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "claim_id": "C99",
+      "claim": "The recombinant GPIHBP1 was mutated within its N-terminal disordered region (Arg38\u2192Gly) to provide higher purification yield without altering LPL-binding properties.",
+      "claim_type": "EXPLICIT",
+      "source": "For practical reasons, the recombinant GPIHBP1 was mutated within its N-terminal disordered region (Arg38\u2192Gly); that amino acid substitution provides a higher purification yield without altering LPL-binding properties (Mysling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mysling et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "83baca8b-9476-46b2-9739-a7a5c91d5c52",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ANGPTL4 catalyzes the unfolding of LPL's hydrolase domain in a dose- and time-dependent manner. HDX-MS data show that substoichiometric amounts of ANGPTL4 (1:10 molar ratio) unfold >50% of LPL molecules in 5 min, with an unfolding efficacy of 1.6 \u00b1 0.2 LPL molecules per ANGPTL4 per minute at 25\u00b0C. The conformational changes induced by ANGPTL4-catalyzed unfolding are identical to those occurring during spontaneous LPL unfolding, both confined to the serine hydrolase domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C33 provide converging HDX-MS and enzymatic activity data demonstrating that ANGPTL4 catalyzes LPL unfolding in a dose- and time-dependent manner. The substoichiometric efficacy (C25-C26, C29) strongly supports the catalytic mechanism. The identical conformational endpoints between spontaneous and ANGPTL4-catalyzed unfolding (C31-C33) are well-documented by HDX-MS data across 92 peptides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "daa1651c-3604-4a7d-b367-9e66d605d46c",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GPIHBP1 binding protects LPL from ANGPTL4-catalyzed unfolding and inactivation. Full-length GPIHBP1 reduces LPL unfolding from 87 \u00b1 2% to 8 \u00b1 2% in the presence of ANGPTL4, and both the LU domain and acidic domain are required for full protection. GPIHBP1 protects remaining active LPL but does not resurrect already-inactivated LPL, confirming the irreversible nature of ANGPTL4-mediated inactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C39-C50 provide robust experimental evidence from HDX-MS and enzymatic assays showing GPIHBP1's protective effect. The domain requirement studies (C41-C46) are well-controlled, and the lack of LPL resurrection (C48-C49) provides strong evidence for irreversible inactivation. The data are internally consistent and support the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "723859ba-04d4-40d0-a14c-b11b814c654b",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ANGPTL4 E15K polymorphic variant has reduced LPL-unfolding activity compared to wild-type ANGPTL4. ANGPTL4E15K unfolds only 0.6 \u00b1 0.1 LPL molecules per ANGPTL4 per minute (40% of wild-type activity), and LPL incubated with ANGPTL4E15K retains 40-50% more catalytic activity than LPL incubated with wild-type ANGPTL4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C51-C54 provide consistent HDX-MS and enzymatic activity data demonstrating reduced efficacy of ANGPTL4E15K. The quantitative measurements are replicated and show good agreement between unfolding and activity assays. The observation that ANGPTL4E15K loses activity more rapidly (C54) adds mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The E15K substitution destabilizes the N-terminal \u03b1-helix of ANGPTL4 through cooperative unfolding. HDX-MS data show that peptides covering residues 19-43 in ANGPTL4E15K exchange more rapidly than in wild-type, predominantly via faster EX1 kinetics. This destabilization is consistent with the charge-reversal disrupting electrostatic stabilization of the \u03b1-helix dipole moment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C55-C61, C86-C88 provide detailed HDX-MS evidence for structural destabilization of the N-terminal \u03b1-helix in ANGPTL4E15K. The EX1 kinetics data (C58, C60) support cooperative unfolding. The mechanistic explanation invoking \u03b1-helix dipole stabilization (C87-C88) is supported by established structural principles and consistent with the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ANGPTL3 also catalyzes LPL unfolding, though with reduced efficacy compared to ANGPTL4, and GPIHBP1 protects LPL from ANGPTL3-mediated inactivation. ANGPTL3, ANGPTL4, and ANGPTL8 share conserved sequence motifs including a two-residue acidic motif and GLLQGLG sequence in their first \u03b1-helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C90-C92 provide experimental evidence that ANGPTL3 functions similarly to ANGPTL4 but with lower efficacy. The sequence conservation data (C62, C92) support a common mechanism. However, the ANGPTL3 data are less extensive than for ANGPTL4, with fewer dose-response and kinetic measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "169f1793-14b0-4722-9abe-55744afd2af0",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Covalent oligomerization of ANGPTL4 via disulfide bonds is not essential for its catalytic LPL-unfolding activity in vitro. The ANGPTL4 preparation contains ~10% disulfide-linked dimers, and Cys51-Cys55 form an intramolecular disulfide bond in monomeric ANGPTL4. Reduced and alkylated ANGPTL4 shows similar catalytic activity to native ANGPTL4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 provide mass spectrometry and functional data showing that disulfide bond integrity does not affect ANGPTL4's catalytic activity in vitro. The characterization of the intramolecular disulfide (C36) and comparison of reduced/alkylated vs. native protein (C37) are well-controlled experiments. The conclusion is appropriately limited to in vitro conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "0448f72c-87cf-4a56-8380-b28ff71dc399",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LPL undergoes spontaneous inactivation via time- and temperature-dependent global unfolding of its serine hydrolase domain, while the C-terminal lipid-binding domain remains stably folded. GPIHBP1 prevents this spontaneous unfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C20-C21 are supported by citations to prior work (Mysling et al., 2016) and are consistent with the current experimental data. These claims establish the foundation for the current study but represent prior knowledge rather than new findings in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "9a839903-9959-4426-a184-6f80f49f87e3",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The ANGPTL4 E15K polymorphism is associated with lower plasma triglyceride levels and reduced coronary artery disease risk in humans. Prior studies show that E15K reduces ANGPTL4's ability to inhibit LPL in vitro, limits extracellular accumulation of ANGPTL4, and may have a shorter half-life, though it does not affect protein synthesis, secretion, or oligomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C17, C82-C85 are supported by citations to GWAS and prior biochemical studies. These claims provide important context for the current work but represent established knowledge from the literature rather than new findings. The current study provides mechanistic insight into these prior observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "442bb009-e55b-480d-acd4-413814f58e38",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LPL is secreted by myocytes and adipocytes, shuttled to capillaries by GPIHBP1, and regulated by ANGPTL3, ANGPTL4, and ANGPTL8. Disruption of GPIHBP1 or its mutations cause familial chylomicronemia. Pharmacological or genetic inhibition of ANGPTL3/4 lowers plasma triglycerides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C16 are well-supported by multiple citations to established literature. These claims provide essential background on LPL biology and regulation but do not represent new findings from this study. They establish the physiological context for the mechanistic investigations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2ee768dc-4b01-49ba-8f41-aa024022a386",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior conflicting models exist for ANGPTL4's mechanism: one suggesting it catalyzes conversion of LPL homodimers to inactive monomers, another proposing reversible noncompetitive inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 accurately represent conflicting prior literature (Sukonina et al., 2006; Lafferty et al., 2013). These claims establish the controversy that the current study addresses. The current work resolves this controversy in favor of the catalytic unfolding mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose a physiological model where GPIHBP1-bound LPL is protected from ANGPTL4 in vivo, while LPL in the secretory pathway and interstitial spaces remains susceptible to ANGPTL4-mediated inactivation. This compartmentalization may regulate the amount of active LPL reaching capillaries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66, C71, C73-C78 are speculative extrapolations from in vitro findings to in vivo physiology. While the model is plausible and consistent with the experimental data, it lacks direct in vivo validation. The authors appropriately acknowledge this as speculation (C71: 'obviously needs experimental testing'), but the claims remain hypothetical without supporting in vivo experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "f21e9a88-67de-415c-87db-c913d81f4bb8",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ANGPTL4 may interact with LPL in the trans-Golgi network, targeting it for lysosomal degradation via SorLA, similar to quality control mechanisms in the endoplasmic reticulum. Angptl4-/- adipocytes secrete increased LPL levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C70, C72 are supported by citations to relevant literature on intracellular LPL trafficking and quality control. The proposed mechanism (C71) connecting ANGPTL4-catalyzed unfolding to SorLA-mediated degradation is speculative but builds logically on established cellular quality control principles and the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "2910e2ab-318e-4359-9719-a6bc66beeef7",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Human population studies show no correlation between plasma ANGPTL4 levels and triglyceride concentrations, and physiological concentrations of circulating ANGPTL4/ANGPTL3 are insufficient to inhibit LPL. However, elevated ANGPTL4 levels from transgenic overexpression or administration increase plasma triglycerides and reduce post-heparin LPL activity in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 are supported by citations to population studies and mouse experiments. These observations highlight the complexity of ANGPTL regulation in vivo and suggest that local tissue concentrations, rather than circulating levels, may be more important for LPL regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "29cc8159-29a9-4a23-b686-9be2a3d14b52",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that protein destabilization contributes to the lower half-life of ANGPTL4E15K and that other ANGPTL proteins may be sensitive to similar charge-reversal mutations affecting conformational stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89 and C94 are explicitly speculative. While C89 is a reasonable inference from the destabilization data, it lacks direct half-life measurements in the current study. C94 is a prediction about other ANGPTL proteins that remains untested. These are appropriate hypotheses for future work but are not demonstrated in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "33a63c23-912d-4a85-910b-af0cbb046f8f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Monoclonal antibodies targeting the conserved N-terminal region of ANGPTL3 and ANGPTL4 reduce plasma triglycerides in animal models. No mutations comparable to E15K have been reported in ANGPTL3 or ANGPTL8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93 and C95 are supported by citations and absence of reports in the literature, respectively. These observations emphasize the functional importance of the conserved region and the uniqueness of the E15K polymorphism in ANGPTL4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    },
+    {
+      "id": "0cf86df1-d328-4836-8613-8c91f7509e8f",
+      "content_id": "d4a645ed-4e89-4a14-aa6e-04a2991deb34",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Methodological details for protein purification: bovine LPL was purified from milk by chromatography; ANGPTL4 variants were produced in E. coli; GPIHBP1 was produced in Drosophila S2 cells with an Arg38\u2192Gly mutation that does not alter LPL-binding properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 describe standard methodological procedures supported by appropriate citations. The Arg38\u2192Gly mutation in GPIHBP1 (C99) is validated by prior work showing no effect on LPL binding. These are appropriate methods for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:59:02.059097Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e64b0b71-bac7-4a46-a184-68e85dda9c8a",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "b677e8ab-3a33-42e9-9940-5be2adb5d71e",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "87ff0a7f-d3bc-44c3-894b-b58570bc4151",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "6b766dc9-f613-4120-84c6-1eee79752b34",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "aa52cb19-16e8-4b28-8142-795b3b62845c",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "e31e2c58-427b-4c8d-a023-1c46de9a7dda",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "384455ea-4a7d-4b7c-9d68-087ae9a8cf5c",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "07bd3e73-7d93-4f03-977a-75c11a1d391b",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "60cd957d-f19e-443a-a030-f5eb935f2af9",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "8deebd21-cf19-4aaf-80c2-b8c49fc732a2",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "4e266693-1bbd-4bbf-9b32-f3a8004c9bb8",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "9a01ed41-6205-4c06-910c-2570ba82a2ba",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "1632b0f9-414b-490f-9515-4852cc134029",
+      "result_id": "83baca8b-9476-46b2-9739-a7a5c91d5c52"
+    },
+    {
+      "claim_id": "051fc048-10de-45cc-93bf-af9343d1f5be",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "9c889c65-6adc-4eaf-b48b-5063029692f2",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "ad875c9e-740d-4cc4-bd16-a293292aff0a",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "872d680f-f427-4017-bd2f-42642b1f93cb",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "27135f95-e033-47a5-9c95-24fd4747fe45",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "06d42ce9-e71e-4e75-bb9e-6c0cf013ac5c",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "04bdb33b-ab9d-48d9-8b88-f1c39f6a1819",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "7897712e-5597-49a6-9d83-adf4b9c80077",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "fba7140b-b5a4-45e6-a8d2-54b1932810c8",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "bcdfab3e-8c82-4ec9-a182-bd95371fa719",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "d5fe988c-53a9-413f-8fd6-300efbbea0b9",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "e380a557-7e7e-428b-931f-1a43119d4932",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "f4a7ecec-64ee-4322-affe-482637557508",
+      "result_id": "daa1651c-3604-4a7d-b367-9e66d605d46c"
+    },
+    {
+      "claim_id": "e90fb33f-6994-4e34-a11f-c4fe4ecffcb7",
+      "result_id": "723859ba-04d4-40d0-a14c-b11b814c654b"
+    },
+    {
+      "claim_id": "e0068d4c-9a5d-42ba-b115-fb3b986c2354",
+      "result_id": "723859ba-04d4-40d0-a14c-b11b814c654b"
+    },
+    {
+      "claim_id": "57ae2e40-e12c-4cb7-8634-69c11271d7b8",
+      "result_id": "723859ba-04d4-40d0-a14c-b11b814c654b"
+    },
+    {
+      "claim_id": "21e902ac-fd44-4af1-9f3c-ad2e8edaa5d5",
+      "result_id": "723859ba-04d4-40d0-a14c-b11b814c654b"
+    },
+    {
+      "claim_id": "ce1af154-ff83-45be-b99e-866682f25a5f",
+      "result_id": "723859ba-04d4-40d0-a14c-b11b814c654b"
+    },
+    {
+      "claim_id": "4d5ca723-f703-41a1-81ce-60b31bcf626b",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "863a58fa-3694-4d44-bb50-661039fe3dfa",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "9495a784-ff5a-4926-a293-c2cc165e438c",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "21bdffce-2775-49c5-b5bd-0c759cab1bfc",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "03e10fc1-ad7a-410d-8bd3-de5c009753f8",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "eeeba1b3-002d-4102-967d-4351d8c9ee96",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "6067bcb5-9433-4d43-a3bc-5184be5bba6e",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "777ba5ea-3746-46d2-bd48-52ca9c20ea71",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "455dbff4-aabd-4508-8c20-2ac94e0bbcc5",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "1cdaef3a-ad9a-4026-a00c-462cb318d59c",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "7f1b7a48-2bd0-4f5c-90b5-2407323d1327",
+      "result_id": "2a15611e-0490-4a2c-bc9d-cd7e8c3564c7"
+    },
+    {
+      "claim_id": "d0d3055d-d3fc-40e0-8850-31bb80612e89",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "4664ed54-d25f-4e5a-953f-7de5d5eabcc4",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "1bfc2a17-6935-4654-93e3-c850b441fa12",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "c9a0cd58-c7f3-4c80-b581-afd18d7bc71d",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "b6c5131e-e673-4f82-a8f1-009cf7f53b1e",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "1852dd13-348d-4fba-ac49-dd86c29aca62",
+      "result_id": "4b0ebab0-cfd4-42bc-9d83-4cde4e6b4784"
+    },
+    {
+      "claim_id": "7557fa3b-f27d-4eac-ad2b-66c80ea30f29",
+      "result_id": "169f1793-14b0-4722-9abe-55744afd2af0"
+    },
+    {
+      "claim_id": "dbf1026c-0d57-4746-86b9-8b6eb2117a71",
+      "result_id": "169f1793-14b0-4722-9abe-55744afd2af0"
+    },
+    {
+      "claim_id": "3d18730d-4cce-44bc-8337-b6761d904d4b",
+      "result_id": "169f1793-14b0-4722-9abe-55744afd2af0"
+    },
+    {
+      "claim_id": "d685b857-7b53-44f5-8e1a-c34a1145c2c0",
+      "result_id": "169f1793-14b0-4722-9abe-55744afd2af0"
+    },
+    {
+      "claim_id": "afab2303-d2be-4490-9d3f-afdee8a959c1",
+      "result_id": "169f1793-14b0-4722-9abe-55744afd2af0"
+    },
+    {
+      "claim_id": "d58576ea-ad4b-4fca-a8ac-35db1c7a55e4",
+      "result_id": "0448f72c-87cf-4a56-8380-b28ff71dc399"
+    },
+    {
+      "claim_id": "e31e52c6-7e4e-4ee0-8c56-3df31a8e29d9",
+      "result_id": "0448f72c-87cf-4a56-8380-b28ff71dc399"
+    },
+    {
+      "claim_id": "405a42bd-95db-4a01-9e58-c212f26e0283",
+      "result_id": "0448f72c-87cf-4a56-8380-b28ff71dc399"
+    },
+    {
+      "claim_id": "5937462f-081d-414e-9739-f00b6892413e",
+      "result_id": "0448f72c-87cf-4a56-8380-b28ff71dc399"
+    },
+    {
+      "claim_id": "cf1a13bb-9568-4712-a409-9e849ce0cf1c",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "31807f5f-4c2e-4c87-9117-773594fefda5",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "501c9b5c-ff7b-4c27-9431-dbd772429505",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "20a3d131-7eb1-4f3d-abc3-9e22d2d70373",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "2ef9c52c-a7c8-4a78-91e6-ea0569a6b725",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "b8c2fc0c-068c-436b-aceb-6b96854ffa25",
+      "result_id": "9a839903-9959-4426-a184-6f80f49f87e3"
+    },
+    {
+      "claim_id": "017d23d2-524d-4133-b513-06a15986f309",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "61b57bba-1d60-4228-9490-5d9ccc24d49f",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "b108e2f3-bc79-4a74-bd77-136d30d78659",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "d0dce4d9-4595-402e-9cf8-b0f1403a3b57",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "2854afcd-e779-4bf0-b804-9de86bfab269",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "04c26628-3e63-4764-acb3-1298b0a120af",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "7713ab49-593e-4ade-a7e4-ea2aad1bff72",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "ecac6c0f-fb75-4476-ad5b-239447b25a9c",
+      "result_id": "442bb009-e55b-480d-acd4-413814f58e38"
+    },
+    {
+      "claim_id": "0817f8a6-775a-40a4-9d2d-b98aa0120aae",
+      "result_id": "2ee768dc-4b01-49ba-8f41-aa024022a386"
+    },
+    {
+      "claim_id": "79bc25b8-a0a8-442e-aed8-44bb2b9d3253",
+      "result_id": "2ee768dc-4b01-49ba-8f41-aa024022a386"
+    },
+    {
+      "claim_id": "a85587a3-0c0b-4070-ada2-811274ebd944",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "59ea1aa4-4e67-4adf-b024-12df6dd8ff75",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "db978a9c-4574-4f53-a88f-24b434ce6eed",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "3ba72a9c-08db-42ad-bd88-38d1a89d2af1",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "e2536d23-f50c-44be-ba83-39204d290ea7",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "42dbaeb1-6f4a-4be2-915e-659bf41b5f29",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "8541cfa1-2813-48ca-8f0d-3862fc19d8a3",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "fa5bae51-5cc6-4def-8084-9753d1d0e5ac",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "cbb4530b-ce4d-4401-8817-cea7c73ad762",
+      "result_id": "04d14241-1af0-4bc6-b57e-1311b6d5edf6"
+    },
+    {
+      "claim_id": "9352874e-d6c9-4421-bfbf-400fa7366842",
+      "result_id": "f21e9a88-67de-415c-87db-c913d81f4bb8"
+    },
+    {
+      "claim_id": "bdaa9b38-4cca-42b6-8782-bce9d876562f",
+      "result_id": "f21e9a88-67de-415c-87db-c913d81f4bb8"
+    },
+    {
+      "claim_id": "34a37462-7181-4715-af87-156c75077ff6",
+      "result_id": "f21e9a88-67de-415c-87db-c913d81f4bb8"
+    },
+    {
+      "claim_id": "f675c583-ad62-4634-88dd-7725ea8205c6",
+      "result_id": "f21e9a88-67de-415c-87db-c913d81f4bb8"
+    },
+    {
+      "claim_id": "a352cdab-9497-4b42-81d8-818ebacc22b1",
+      "result_id": "f21e9a88-67de-415c-87db-c913d81f4bb8"
+    },
+    {
+      "claim_id": "df3226ed-3dfc-4b6b-805c-1a6fd75ee60f",
+      "result_id": "2910e2ab-318e-4359-9719-a6bc66beeef7"
+    },
+    {
+      "claim_id": "6bd37020-165a-4d92-865a-b1dba7a4fdc1",
+      "result_id": "2910e2ab-318e-4359-9719-a6bc66beeef7"
+    },
+    {
+      "claim_id": "dbc8d035-566e-46b8-a385-c0c0ee6c8195",
+      "result_id": "2910e2ab-318e-4359-9719-a6bc66beeef7"
+    },
+    {
+      "claim_id": "2b72125f-fcaa-4f8c-8fc1-cab1c2895b25",
+      "result_id": "29cc8159-29a9-4a23-b686-9be2a3d14b52"
+    },
+    {
+      "claim_id": "9b62c836-aa67-4b1f-99fe-15b8cafc3407",
+      "result_id": "29cc8159-29a9-4a23-b686-9be2a3d14b52"
+    },
+    {
+      "claim_id": "46f07e49-b1d5-467d-ba07-3f6ed16b47a0",
+      "result_id": "33a63c23-912d-4a85-910b-af0cbb046f8f"
+    },
+    {
+      "claim_id": "ef4cf0dd-9bab-487c-9984-bcef59532d3b",
+      "result_id": "33a63c23-912d-4a85-910b-af0cbb046f8f"
+    },
+    {
+      "claim_id": "e2d54fcc-89e7-48a2-a93b-8deb3ff0ffae",
+      "result_id": "0cf86df1-d328-4836-8613-8c91f7509e8f"
+    },
+    {
+      "claim_id": "92a48bb1-ab92-4aeb-9e3e-115f21873c32",
+      "result_id": "0cf86df1-d328-4836-8613-8c91f7509e8f"
+    },
+    {
+      "claim_id": "bc0c5108-da7e-4bbd-bd0e-267fb92ed42d",
+      "result_id": "0cf86df1-d328-4836-8613-8c91f7509e8f"
+    },
+    {
+      "claim_id": "641c72a2-53bd-445c-a9eb-7b24bbe0b8af",
+      "result_id": "0cf86df1-d328-4836-8613-8c91f7509e8f"
+    }
+  ],
+  "comparisons": []
+}

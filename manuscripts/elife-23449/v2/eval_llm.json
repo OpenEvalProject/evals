@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CMG can translocate over flush duplex DNA without unwinding it. The central channel of CMG is large enough to accommodate dsDNA, and CMG unwinds 5' tailed duplex but not flush duplex, indicating that CMG requires a tailed structure to initiate unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are well-supported by experimental data in Figure 2 showing differential unwinding of tailed vs. flush duplex substrates. The interpretation that CMG can track on dsDNA is consistent with the data and supported by comparison to prior DnaB studies and cellular observations of CMG formation at origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Dual biotin-streptavidin blocks on either the leading or lagging strand strongly inhibit CMG unwinding. Leading strand blocks reduce unwinding from 30% to ~2%, while lagging strand blocks reduce unwinding from 35% to 5%, contrary to expectations from the classic steric exclusion model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62, C68-C72 are strongly supported by experimental data in Figure 3A showing quantitative inhibition by dual blocks on both strands. The finding that lagging strand blocks inhibit CMG is unexpected and well-documented, with appropriate controls using monovalent streptavidin (C73-C74) ruling out DNA distortion artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Monovalent streptavidin blocks CMG unwinding to the same extent as tetravalent streptavidin, indicating that DNA duplex distortion from cross-linking is not responsible for the observed inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by experimental data in Figure 3\u2014figure supplement 6. This control experiment effectively rules out the alternative explanation that inhibition results from duplex distortion rather than steric blocking of CMG progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "E. coli DnaB helicase, which operates by classic steric exclusion, is strongly inhibited by dual biotin-streptavidin blocks on the tracking strand (lagging) but not on the non-tracking strand (leading), demonstrating that dual biotin blocks do not inherently impede helicases operating by steric exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by experimental data in Figure 3B. This control experiment with DnaB provides critical context showing that the CMG inhibition pattern differs from a known steric exclusion helicase, strengthening the conclusion that CMG does not operate by classic steric exclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Single biotin-streptavidin blocks partially inhibit CMG unwinding on both strands (leading: 25% to 8%; lagging: 33% to 16%), and the inhibition by dual blocks is approximately additive. Single blocks on both strands together strongly inhibit unwinding, even with monovalent streptavidin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are well-supported by experimental data in Figure 4. The additive behavior of blocks (C82) is a reasonable inference from the quantitative data. The monovalent streptavidin control (C84) again rules out cross-linking artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "CMG can displace streptavidin from single biotin blocks on the leading strand during unwinding. When CMG successfully unwinds past a leading strand block, streptavidin is displaced from all unwound strands, demonstrating that CMG translocates with sufficient force to disrupt the biotin-streptavidin interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by experimental data in Figure 5 using a biotin trap to distinguish displaced from retained streptavidin. The interpretation that CMG displaces streptavidin is well-supported by the gel shift data and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "CMG can bypass single biotin-streptavidin blocks on the lagging strand by two paths: ~75% of unwound products retain streptavidin (bypass without displacement) and ~25% have streptavidin displaced. Both products arise from single CMG unwinding events, as demonstrated by single-hit assays with RPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 are supported by experimental data in Figures 6A, 6B, and supplements. The two-product observation is clear from the gel data. The single-hit experiment with RPA (C94) effectively rules out the alternative explanation of sequential loading/unwinding events. Controls showing CMG cannot efficiently remove streptavidin from unannealed lagging strand ssDNA (C92-C93) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "A covalent M.HpaII-DNA adduct on the lagging strand forms a stringent block that isolated CMG cannot bypass. Heat treatment of the adduct to denature the protein provides measurable but inefficient bypass, suggesting that the close covalent attachment of a DNA-binding protein prevents bypass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by experimental data in Figure 7. The contrast between the inability to bypass the covalent adduct and the ability to bypass streptavidin blocks provides insight into the requirements for bypass. However, the mechanism of how heat treatment enables partial bypass is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C49",
+      "C51",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "A 6.2 \u00c5 cryoEM structure of CMG at a replication fork shows that dsDNA enters the N-tier central channel at a 28\u00b0 angle, unwinding occurs internally, and the leading strand ssDNA proceeds through the C-tier. The dsDNA appears tightly held and does not penetrate far before unwinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48-C49, C51, C53-C54, C56 describe structural features from a cited cryoEM study (Georgescu et al., 2017). These are well-supported by the cited structural data and Figure 1A. The interpretation that dsDNA is tightly held (C54) is a reasonable inference from the well-positioned DNA at a specific angle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C57"
+    ],
+    "result": "Structural features suggest that protruding OB fold loops might facilitate unwinding, CMG likely contacts both DNA strands to position the duplex rigidly, and the lagging strand is not visualized in the structure indicating mobility or multiple locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50, C55, C57 are speculative interpretations of structural features. While the observations (loops present, DNA well-positioned, lagging strand not visible) are supported by the cited structure, the mechanistic interpretations are uncertain. The absence of the lagging strand (C57) could have multiple explanations beyond mobility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C107",
+      "C111",
+      "C112"
+    ],
+    "result": "CMG operates by a modified steric exclusion mechanism in which dsDNA enters the central channel for internal unwinding, followed by exclusion of the lagging strand back out through the same opening rather than through a side channel. This model explains how lagging strand blocks inhibit unwinding while allowing bypass without streptavidin removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C100-C104, C107, C111-C112 present the main interpretive conclusion. This model is well-supported by the combination of structural data (dsDNA entry, internal unwinding) and biochemical data (inhibition by blocks on both strands, differential bypass behavior). The interpretation is logical and consistent with all experimental observations, though the exact mechanism of lagging strand exclusion remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Three possible mechanisms for CMG bypass of lagging strand blocks are proposed: (1) conversion to classic steric exclusion with external unwinding, (2) N-tier opening at a subunit interface, or (3) opening of both N- and C-tiers. The Mcm4/6 interface is suggested as a candidate for opening based on minimal buried surface area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116, C118-C120 present speculative mechanisms for block bypass. While these are reasonable hypotheses consistent with the data, they lack direct experimental support. The suggestion about the Mcm4/6 interface (C119) is based on structural analysis but remains speculative. These represent future directions rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "CMG must transition from encircling dsDNA at origins to encircling ssDNA for helicase activity, implying a gate exists for strand passage. Studies in Xenopus extracts show less inhibition by lagging strand blocks than isolated CMG, suggesting other replisome factors assist CMG in bypassing blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 is a logical inference about CMG activation but lacks direct experimental support in this study. Claims C122-C123 compare to prior Xenopus studies and propose additional factors, which is reasonable speculation but not directly tested. This represents an important hypothesis for future work but is not established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on helicase structure, function, and mechanisms: Replicative helicases are hexameric rings that use NTP hydrolysis for DNA unwinding. The eukaryotic CMG helicase consists of Mcm2-7, Cdc45, and GINS. Two main models exist: steric exclusion (external unwinding) and side channel extrusion (internal unwinding). Strand-specific blocks are used to distinguish these models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C15, C18-C23, C28-C32 provide established background knowledge supported by multiple citations. These are well-documented facts about helicase biology and the field's understanding of helicase mechanisms. The descriptions are accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Prior structural and biochemical studies of CMG: Earlier structures showed a second channel at the side of Mcm2-7, and strand-specific blocking studies in Xenopus extracts suggested steric exclusion. However, high-resolution structures show the second channel is filled in yeast CMG, and the proposed DNA-binding site in Cdc45 is occluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C24-C27, C33-C47 summarize prior work with appropriate citations. The authors accurately represent previous findings and their interpretations, including both supporting evidence for steric exclusion and structural features that complicate that model. The summary of conflicting evidence sets up the rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The CMG-forked DNA structure shows features contrary to classic steric exclusion (dsDNA entry, internal unwinding) but does not reveal a side channel or the lagging strand location. The structure positions polymerases appropriately: Pol \u03b1-primase at the N-tier face and Pol \u03b5 at the C-tier face. The lagging strand might exit through surface grooves between zinc fingers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C58-C61, C105-C106, C108-C110 describe and interpret the cryoEM structure. The structural observations are well-supported by the cited work. The positioning of polymerases (C58-C61) is supported by citations. The speculation about lagging strand exit through surface grooves (C110) is a reasonable hypothesis but lacks direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Cross-linking studies do not indicate a CMG-ssDNA interaction strong enough to disrupt the biotin-streptavidin interaction, which is one of the strongest non-covalent interactions known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a reasonable inference based on the known strength of the biotin-streptavidin interaction and the lack of evidence for exceptionally strong CMG-ssDNA interactions in prior studies. This helps rule out an alternative explanation for streptavidin displacement from the lagging strand.",
+    "result_type": "MINOR"
+  }
+]

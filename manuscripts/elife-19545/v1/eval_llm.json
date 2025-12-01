@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establish that Alu elements are abundant primate-specific retrotransposons (~1.2 million copies) that can form exons through minimal mutations, contain U-tracts due to their polyA-tail requirement, and are associated with human diseases when aberrantly included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C12) are well-supported by citations to prior literature and represent established knowledge about Alu elements. They provide necessary context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work established that hnRNPC binds U-tracts to repress Alu-exon splicing, with depletion experiments showing that hnRNPC (but not other RNA-binding proteins like TDP43, TIA, HuR, PTB, hnRNPA1) is crucial for preventing Alu-exonization, leading to inclusion of >1900 Alu-exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 accurately cite the authors' previous work (Zarnack et al., 2013) and other studies. These establish the foundation for the current investigation but are not new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Alu elements constitute 12.2% of intronic sequences but only 4% of exonic sequences (and <0.6% of constitutive exons), indicating strong bias toward alternative splicing. Genes containing Alu-exons show reduced expression across 16 human tissues, most pronounced for constitutive Alu-exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 are supported by analysis of UCSC annotations and Illumina BodyMap 2.0 data across tissues (Figure 1A). Statistical testing (ANOVA) confirms significant differences in expression levels, providing solid evidence for the regulatory control of Alu-exons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Upon hnRNPC depletion in HR1 cells, cryptic Alu-exons are included and their transcripts show decreased expression specifically in cytoplasmic (not nuclear) RNA, validated by qPCR for 9/9 genes tested, with 2/4 genes showing nuclear-cytoplasmic differences in Alu-exon transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are well-supported by RNAseq data from nuclear-cytoplasmic fractionation experiments (Figure 1B-C) with appropriate controls and validation by qPCR. The compartment-specific effects provide strong evidence for post-transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The cytoplasmic loss of Alu-exon transcripts does not result from a general mRNA export defect, as hnRNPC depletion did not alter overall mRNA distribution, kinetics of ERK-induced gene expression, or show patterns consistent with export blocks. NUP133 protein decline at later timepoints may explain previously reported export defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by multiple lines of evidence (Figure 1\u2014figure supplement 4A-E) including analysis of mRNA distribution, time-course experiments, and Western blots. The authors appropriately rule out alternative explanations and reconcile their findings with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Co-depletion of UPF1 with hnRNPC restores Alu-exon gene expression and shows synergistic increases in Alu-exon abundance (746 significantly regulated Alu-exons total), demonstrating that NMD and hnRNPC-mediated splicing repression cooperatively suppress Alu-exon expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are strongly supported by RNAseq data with appropriate controls (Figure 2A-B), DEXSeq analysis, and statistical validation (Spearman correlation p<2.2e-16). The synergistic effect and quantitative relationship between exon inclusion and gene expression provide compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Alu-exons are classified into three regulatory groups: 72 NMD-specific (10%), 465 hnRNPC-specific (62%), and 207 shared-target (28%). Approximately two-thirds of hnRNPC-sensitive Alu-exons are NMD-refractory. Shared-target Alu-exons are enriched in coding sequences (85%) with 65% introducing PTCs and 21% frameshifts. Overall, ~40% of PTC+ Alu-exons are NMD-sensitive, more efficient than other exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56, C136-C138 are supported by systematic DEXSeq analysis with clear classification criteria and computational PTC prediction (Figure 2D-E). The percentages are precisely stated and the comparison to non-Alu exons provides important context for the efficiency of NMD targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "While PTCs are more frequently located <55 nt from the next exon-exon junction in NMD-refractory versus NMD-sensitive exons (consistent with the 55-nt rule), only one-third of NMD-refractory Alu-exons can be explained by this rule, suggesting additional mechanisms control NMD sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C63 are supported by distance analysis (Figure 2F) and appropriately cite prior work establishing the 55-nt rule. The finding that two-thirds of NMD-refractory exons cannot be explained by this rule is an important observation warranting further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C93",
+      "C94"
+    ],
+    "result": "Alu-exons are coordinately regulated by both splicing repression and NMD, with NMD accounting for diminished expression in hnRNPC-depleted cells. However, a substantial number of PTC+ Alu-exons escape NMD. Since more than half of Alu-exons are repressed by only one pathway, both mechanisms are needed to safeguard gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C93-C94 represent well-supported conclusions synthesizing the experimental findings. The data clearly demonstrate complementary roles for the two pathways, though the mechanistic basis for NMD escape requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Intron retention flanking Alu-exons occurs in ~10% of cases upon hnRNPC (but not UPF1) depletion. These Alu-exons have weaker splice sites, and introns flanking Alu-exons are retained 3-4 times more frequently than other introns, indicating significant association between hnRNPC depletion and Alu-exon-associated intron retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by modified DEXSeq analysis (Figure 3A, Figure 3\u2014figure supplement 1) with appropriate statistical testing. The splice site strength analysis and frequency comparisons provide mechanistic insight into this phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C103",
+      "C104"
+    ],
+    "result": "Over 300 intron-retaining Alu transcripts are detected in cytoplasmic RNA (only introns flanking Alu-exons, not other introns). These transcripts are resistant to NMD despite harboring PTCs, are exported to the cytoplasm, and associate with polysomes, indicating that intron retention protects transcripts from NMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74, C103-C104 are supported by multiple experimental approaches: RT-PCR on fractionated RNA (Figure 3B-C, Figure 3\u2014figure supplement 2), polysome profiling (Figure 3D), and lack of nuclear accumulation. This is a surprising and well-documented finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Exonizing Alu elements have stronger splice sites and longer U-tracts (median 11 nt) than silent Alu elements (7 nt). With increased sequence divergence (evolutionary age), 3' splice site strength increases while U-tract length decreases, leading to reduced hnRNPC repression. PTC/frameshift frequency remains ~50% regardless of age, indicating Alu-exons escape hnRNPC repression by accumulating U-tract-shortening mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are supported by systematic analysis of Alu element divergence using RepeatMasker data and MaxEntScan predictions (Figure 4A-B, Figure 4\u2014figure supplement 2). The evolutionary trends are clear, though the interpretation of selection pressures involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Alu-exon age and 3' splice site strength weakly correlate with maximum inclusion levels (\u03c1=0.09, 0.1, p<0.05). With increasing age, Alu-exons are more frequently alternatively spliced between tissues, indicating transition toward higher and more tissue-specific inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by GTEx V6p data analysis (Figure 4D) with appropriate statistical testing (\u03c7\u00b2 test for trend). The weak correlations are honestly reported, and the trend toward tissue-specificity is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Cross-species analysis reveals that emerging Alu-exons have longer U-tracts as 3' splice sites strengthen toward the human lineage. The U-tract is a crucial regulatory element under selection during 3' splice site optimization. Long U-tracts couple emerging splice sites with hnRNPC repression, keeping Alu-exons cryptic. U-tract length and hnRNPC repression decline with evolutionary age despite persistent strong splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by comprehensive cross-species analysis across 5 primate genomes (Figure 5A-B, Figure 5\u2014figure supplement 1) with bootstrapped confidence intervals. The coupling of U-tract length with splice site evolution is a key finding, though distinguishing selection types remains challenging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Intra- and inter-species analyses reveal longest U-tracts (8-10 nt, at the lower limit for cooperative hnRNPC binding) at recently acquired 3' splice sites. Long U-tracts are selected as balancing elements at strengthening splice sites, preventing abrupt inclusion increases. This represents regulatory co-evolution of positive and negative splice elements occurring while Alu-exons are cryptic, potentially ensuring gradual evolutionary paths for emerging exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C120 synthesize the evolutionary findings into a coherent model supported by data from Figures 5-6. The proposal of regulatory co-evolution is well-reasoned, though some aspects (C115, C120) involve inference from the data and comparison to prior work on constitutive exons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C19",
+      "C134",
+      "C135"
+    ],
+    "result": "The study identified 3101 new Alu-exons in HR1 cells not found in previous HeLa cell studies. Combined with UCSC annotations, evidence exists for 6309 non-overlapping exonizing Alu elements within 4243 human genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C134-C135 are supported by systematic Cufflinks analysis and comparison with prior datasets (Figure 2\u2014figure supplement 1E). The comprehensive catalog represents a significant resource, though the exact numbers depend on computational predictions and detection thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "NMD efficiency varies under physiological conditions (decreased during stem cell differentiation, stress). Since many Alu-exons promote NMD, they may shape primate-specific mRNA decay regulation. Most exonizing Alu elements have not evolved to evade NMD, though examples like CD55 exon 10 show functional NMD-sensitive Alu-exons can generate important protein isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C99 mix established findings (C91-C92, C99 with data/citations) with speculation (C97-C98). While the speculation is reasonable given the data, the evolutionary and physiological significance of NMD-sensitive Alu-exons requires additional evidence beyond the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106"
+    ],
+    "result": "Even though most Alu-containing transcripts have PTCs, only ~40% are efficiently degraded by NMD (compared to ~8% of other PTC+ exons). This confirms that PTC distance >55 nt from downstream EJC is insufficient to predict NMD substrates. Intron retention triggering NMD is unexpected given prior studies, yet NMD-resistant Alu-exon transcripts associate with polysomes similarly to normal transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C105-C106 are supported by the study's data and appropriately cite prior work. The comparison between Alu-exons and other exons provides important context, and the polysome association data (Figure 3D, Figure 3\u2014figure supplement 2E) supports the unexpected NMD resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Three potential mechanisms could explain NMD resistance of intron-retaining Alu transcripts: (1) retained introns are longer than exons, increasing PTC-EJC distance; (2) splicing factors may remain bound preventing EJC assembly; (3) retained introns may contain NMD-inhibitory AU-rich sequences (introns have higher A/U content than exons/Alu elements).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C111 present plausible hypotheses (C107 is inference, C108-C109 are speculation) supported by prior literature (C110-C111 cite relevant studies). However, these remain untested mechanisms requiring experimental validation. The speculation is reasonable but not demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Regulatory co-evolution (coupling of evolving splice sites with regulatory RBP binding sites) maintains stable exon recognition, either in cryptic (U-tracts at Alu-exons) or constitutive (G-tracts) states. This process may enable evolutionary tinkering, allowing cryptic exons to acquire mutations reducing toxicity or recruiting tissue-specific regulators. The large number of cryptic Alu-exons could harbor disease-causing mutations disrupting repressive U-tracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C132 present a conceptual framework integrating this study with prior work (C121-C122 cite literature). While the model is well-reasoned and supported by observations (C128), several aspects are speculative (C125-C127, C132). The proposal for disease relevance (C131-C132) is logical but requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establish that inverted Alu repeats in 3' UTRs cause nuclear retention and most Alu-exons introduce PTCs, making them likely NMD targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 cite prior literature (C17) and represent reasonable inference based on established knowledge (C18). These provide context for investigating NMD's role but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "HR1 cells are a stable HEK293 derivative with inducible RAF1 kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is a straightforward methodological statement supported by citation and cell line documentation. This is standard methods reporting.",
+    "result_type": "MINOR"
+  }
+]

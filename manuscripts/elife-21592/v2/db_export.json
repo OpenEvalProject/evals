@@ -1,0 +1,1585 @@
+{
+  "submission": {
+    "id": "90adb63e-7b57-4f7b-9d52-a07bf4a7eaaa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:32:57.788787Z",
+    "updated_at": "2025-11-30T22:32:57.788787Z"
+  },
+  "content": [
+    {
+      "id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "submission_id": "90adb63e-7b57-4f7b-9d52-a07bf4a7eaaa",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial respiratory gene expression is suppressed in many cancers\n\n## Authors\n\n- Ed Reznik<sup>1</sup> ([ORCID: 0000-0002-6511-5947](https://orcid.org/0000-0002-6511-5947)) \u2020\n- Qingguo Wang<sup>1</sup>\n- Konnor La<sup>1</sup>\n- Nikolaus Schultz<sup>1</sup> \u2020\n- Chris Sander<sup>2</sup> \u2020\n\n### Affiliations\n\n1. Center for Molecular Oncology Memorial Sloan Kettering Cancer Center New York United States\n2. Department of Cell Biology Harvard Medical School Boston United States\n3. cBio Center Dana-Farber Cancer Institute Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe fundamental metabolic decision of a cell, the balance between respiration and fermentation, rests in part on expression of the mitochondrial genome (mtDNA) and coordination with expression of the nuclear genome (nuDNA). Previously we described mtDNA copy number depletion across many solid tumor types (Reznik et al., 2016). Here, we use orthogonal RNA-sequencing data to quantify mtDNA expression (mtRNA), and report analogously lower expression of mtRNA in tumors (relative to normal tissue) across a majority of cancer types. Several cancers exhibit a trio of mutually consistent evidence suggesting a drop in respiratory activity: depletion of mtDNA copy number, decreases in mtRNA levels, and decreases in expression of nuDNA-encoded respiratory proteins. Intriguingly, a minority of cancer types exhibit a drop in mtDNA expression but an increase in nuDNA expression of respiratory proteins, with unknown implications for respiratory activity. Our results indicate suppression of respiratory gene expression across many cancer types.\n\n## Introduction\n\nAre the mitochondria of tumors characteristically different from those in normal human tissues? Several recent reports have described somatic changes to the mitochondrial genome (mtDNA) in tumors, which have expanded our knowledge of cancer genetics as well as basic mitochondrial biology (Davis et al., 2014; Joshi et al., 2015; Ju et al., 2014; Stewart et al., 2015). In our own work (Reznik et al., 2016), we estimated mtDNA copy number for thousands of tumor samples sequenced by The Cancer Genome Atlas (TCGA) consortium and found that several cancer types appeared depleted of mtDNA relative to adjacent-normal tissue.\n\nA drop in mtDNA copy number can decrease the expression of critical (and necessary) proteins of the electron transport chain (ETC)/ATP synthase. Respirometry experiments indicate that cells typically harbor an excess of mitochondrial respiratory capacity, implying that a modest decrease in ETC protein levels will not impact the basal respiration rate of the cell (Brand and Nicholls, 2011). However, a sufficiently large reduction in the levels of proteins encoded by mtDNA (e.g. large or complete mtDNA depletion), will precipitate a drop in the rate of ATP generation via respiration. In these cases, cancer cells can partially compensate for lower respiratory ATP generation by increasing flux through glycolysis (i.e. the Warburg effect).\n\nThus, there remains a gap between the observation of mtDNA copy number changes and their propagation to a drop in respiration. Linking measurements of mtDNA copy number directly with respiratory flux remains difficult: flux studies of comparable sample size to contemporary genomic investigations are not available. However, one can lay a partial bridge between respiration and mtDNA ploidy by examination of mRNA expression of mtDNA\u00a0(mtRNA). Mitochondrial DNA serves as the template for the transcription of 13 protein-coding genes, each of which is a critical integral membrane subunit in the electron transport chain or ATP synthase. A synchronous change (increase or decrease) in both mtDNA copy number and mtRNA expression in tumors compared to normal tissue can therefore be used as complementary evidence for a change in respiratory flux, which can then be evaluated experimentally.\n\nHere, we use RNA-sequencing data of TCGA tumors to expand upon our prior study of mtDNA copy number variation in cancer (Figure 1). In part, our aim is to determine if tumor-associated changes in the levels of mtDNA-derived transcripts mirror changes in mtDNA copy number. More broadly, we propose using trio measurements of mtDNA copy number, mRNA transcribed from mtDNA, and mRNA transcribed from nuclear DNA (nuDNA)-encoded respiratory genes, to gauge the likelihood that a cancer type down-regulates respiration compared to normal tissue. In parallel, these data can be used to dissect the coordination of respiratory transcription, i.e. to compute the correlation between mtDNA and mtRNA levels, and to assess coordination of expression of respiratory genes from the mitochondrial and nuclear genome. As reported in detail below, our results using RNA-Seq data largely corroborate our earlier results using mtDNA copy number (Reznik et al., 2016) (with some important exceptions), and additionally offer a lens onto patterns of transcriptional coordination between the mitochondrial and nuclear genomes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig1-v2.jpg)\n\n**Figure 1.:** (A) RNA-sequencing reads from the TCGA are aligned, and reads mapping to the mitochondrial genome are retained. (B) Changes in the expression of mtRNAs in tumors compared to adjacent-normal tissue are compared to analogous changes in mtDNA copy number. (C) Quantitative estimates of the correlation between mtDNA copy number and mtRNA are determined. (D) A comparison is made between the tumor vs. normal differential expression of OXPHOS subunits encoded in mtDNA and nuDNA.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Top and bottom of each box indicate the 75th and 25 percentile of this ratio. The whisker corresponds to a distance 1.5 times the interquartile range. In the vast majority of samples, bona fide expression from mtDNA is 2\u20133 orders of magnitude greater than the expression of mtDNA pseudogenes.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Comparison of expression (in log2 normalized counts from limma voom) using featureCounts or RSEM. Each dot corresponds to a single mtRNA in a single cancer type.(B) Comparison of log-fold change estimates using featureCounts or RSEM. Each dot corresponds to the log2 ratio of expression in tumor compared to normal for a single mtRNA in a single cancer type.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The expression of MT-ND1 is depicted.\u00a0Expression of other mtRNAs is similar.\n\n## Results\n\n### Quantifying expression of mtRNAs across cancers\n\nMany reports have examined changes in metabolic gene expression in cancer (e.g. Gaude and Frezza, 2016), but no study to date has examined the expression of the 13 mRNAs encoded by the mitochondrial genome. While estimates of gene expression in samples profiled by the TCGA are publically available (e.g. through the Firehose data pipeline at the Broad Institute, http://firebrowse.org), the abundance of the 13 proteins encoded in mtDNA are not reported there. Therefore, to quantify expression from mtDNA, we re-aligned TCGA RNA sequencing data from thousands of the same tumors analyzed in our prior study of mtDNA copy number, and retained for analysis sequencing reads aligning to the mitochondrial chromosome. Estimates of mtRNA expression (in transcripts-per-million, TPM Wagner et al., 2012) across 6614 samples profiled is available in Supplementary file 2.\n\nAs in our prior study, we tested whether mitochondrial pseudogenes in the nuclear genome, also known as nuclear integrations of mitochondrial DNA (NUMTs), confounded our estimates of mitochondrial transcription. Previous work has shown that NUMTs are, in the vast majority of cases, integrated into intergenic/intronic regions of the nuclear genome, and are unlikely to be transcribed (Collura et al., 1996; Dayama et al., 2014). Nevertheless, to directly assess the contribution of NUMT RNA to our estimates of mtDNA expression, we implemented two measures: (1) examination of expression of mitochondrial pseudogenes annotated in Gencode (Harrow et al., 2012), and (2) comparison of two methods (featureCounts [Liao et al., 2014] and RSEM [Li and Dewey, 2011]) for quantifying expression levels, which treat differently those reads mapping to more than one genomic region. Results from both analyses support the notion that NUMTs do not confound our estimates of mtDNA expression (Materials and methods, Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2).\n\nAcross all tissues, mtRNAs were highly transcribed. However, we observed substantial differences in the abundance of any given mitochondrial (MT) transcript from one tissue to the next (as evaluated using TPM) (Figure 1\u2014figure supplement 3). For example, compared to other tissues, samples derived from the kidney (TCGA studies KICH, KIRC, and KIRP, see Materials\u00a0and\u00a0methods for TCGA abbreviations) had exceptionally high levels of mtRNAs, while samples from lung adenocarcinoma (LUAD) expressed comparatively low levels of mtRNAs. When comparing our results to a prior study of MT protein abundances from the mouse (Pagliarini et al., 2008), we found good agreement between protein and mtRNA levels with respect to their ordering across tissues, (i.e. mtRNA expression and protein levels of MT-ND6 were highest in kidney, at moderate levels in liver, colon, and stomach, and lowest in lung).\n\n### Differential expression of mtRNA in tumors compared to normal tissue\n\nIn (Reznik et al., 2016), we observed widespread mtDNA copy number depletion in tumors compared to matched adjacent normal tissue in a number of solid tumor types. Here, we first set out to test if expression of mtRNAs in these tumor types also was correspondingly lower. To do\u00a0so, we estimated the differential expression of mtRNA transcripts in tumor vs. normal tissues for each of 13 cancer types with adequate numbers of tumor and normal samples (Figure 2). The majority of cancer types have a tendency for lower levels of mtRNAs, and five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) have lower levels of all 13 protein-coding mtRNAs. Among the seven cancer types with statistically significant depletion of mtDNA content in our earlier report (Reznik et al., 2016), all seven had lower mtRNA levels in at least 4/13 genes, with no mtRNAs showing over-expression in these tumor types. We also observed that LUAD (lung adenocarcinoma), which we found to be the only cancer type with increased mtDNA copy number in Reznik et al. (2016), had lower expression of 6/13 mtRNAs, suggesting that any increase in mtDNA copy number in LUAD was compensated for at the transcriptional level. For one study, prostate cancer (PRAD), results were removed from analysis because differential expression using counts from featureCounts and RSEM produced differing results.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig2-v2.jpg)\n\n**Figure 2.:** Magnitude and statistical significance of differential expression evaluated by limma voom (see Materials and methods). The majority of mtRNAs are strongly down-regulated in several cancer types, including esophageal, breast, head and neck squamous, kidney clear cell, and liver cancers. One cancer type (kidney chromophobe), shows increases in the abundance of mtRNAs. All tumor types showing mtDNA copy number depletion in tumors relative to adjacent normal tissue (bottom annotation) show analogous depletion of mtRNAs. In contrast, mtDNA copy number changes in lung adenocarcinomas and kidney chromophobes are not reflected in differential expression of mtRNAs.\n\nBreaking the general trend, one cancer type, KICH (chromophobe renal cell carcinomas), had higher levels of mtRNAs in tumors compared to normal tissues. The over-expression phenotype was notably large: each of the 13 genes had greater than 2-fold over-expression in tumors compared to normal tissue (Figure 2). Importantly, KICH did not have appreciable accumulation of mtDNA copies in our prior study.\n\nThe role of mitochondrial dysfunction, and of a mitochondrial accumulation phenotype, in chromophobe renal cell carcinomas has been appreciated for some time (Nagy et al., 2002). Two recent publications have highlighted the role that mtDNA mutations have in the development of one substype of chromophobes, eosinophilic chromophobe renal cell carcinomas (Davis et al., 2014; Joshi et al., 2015). Eosinophilic KICH tumors have been proposed to arise from oncocytomas, a cancer type characterized by cytoplasms swollen with respiration-deficient mitochondria. This phenotype arises from two critical dysfunctions: somatic mtDNA mutations that render mitochondrial OXPHOS non-functional, and defective mitophagy that prevents clearance of dysfunctional mitochondria. Thus, it has been proposed that oncocytoma cells experience an energy crisis due to defective mitochondria/OXPHOS (perhaps sensed through AMPK), and respond by further upregulating the biogenesis of defective mitochondria (Zong et al., 2016). Thus, our observation of increased mtRNA levels in KICH tumors is likely to counterintuitively reflect a drop in respiration. As noted before, experimental respirometry measurements must be made to confirm this hypothesis.\n\nInterestingly, we also found differences in the tendency for any one mtDNA-encoded gene to be differentially expressed across cancer types, which likely arises from the molecular details of mitochondrial transcription. The mitochondrial genome is transcribed in a polycistronic fashion, with all mRNAs and tRNAs on a strand transcribed simultaneously. Following transcription, tRNAs are excised from the transcript, and the majority of the remaining mRNAs are polyadenylated (Pagliarini et al., 2008; Mercer et al., 2011). Polycistronic transcription ensures that mtRNAs are highly co-expressed, although it is clear from many studies that mtRNAs undergo a large degree of post-transcriptional regulation, resulting in uneven steady-state abundances (Rorbach and Minczuk, 2012). With regard to differential expression, most of the genes encoding subunits of Complex I were downregulated in the majority of cancer types. In contrast, genes encoding subunits of Complex V (ATP6 and ATP8) and to a lesser extent Complex IV (MT-CO1,MT-CO2,MT-CO3) were generally under-expressed in only the strongly mtDNA- and mtRNA-depleted cancer types.\n\n### Association of mtRNA with clinical parameters\n\nWe also evaluated the extent to which mtRNA levels were associated with clinical features (e.g.\u00a0the age, pathological stage, and overall survival of patients), using available clinical data from the TCGA consortium (Figure 3, full results available in Supplementary file 3). Among these, papillary renal cell carcinoma (KIRP), esophageal carcinoma (ESCA), and thyroid cancer (THCA) showed an association between high mtRNA expression and increased age. It is not clear whether this statistical association is a secondary result of a correlation between age and other clinical/genomic features, (e.g. in THCA, age is positively associated with increased mutational density), and merits further investigation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig3-v2.jpg)\n\n**Figure 3.:** Multiple-hypothesis-adjusted univariate p-values from Cox regression for each mtRNA are combined using Fisher\u2019s method for each cancer type. Several cancer types show an association between high mtRNA expression and improved outcome (negative Cox regression coefficient). Dashed line indicates threshold for statistical significance. Representative Kaplan-Meier plots are shown for overall survival in ACC (B) and KICH (C), partitioning patients into high expression vs. low expression groups based on median expression of MT-ND4.\n\nMore interestingly, we identified five cancer types (ACC,KICH,LGG,PAAD, and LIHC) in which higher mtRNA expression levels were associated with increased overall survival. Three of these cancer types (ACC,KICH, and LGG), showed similar associations in our prior analysis using mtDNA copy number (i.e. high mtDNA copy number was associated with better overall survival (Reznik et al., 2016). KIRP tumors also showed an association between higher mtRNA expression and less aggressive disease, as assessed by pathological stage (Supplementary file 3). Interestingly, these results echo similar findings by reported by Gaude and Frezza, who reported an association between down-regulation of nuclear-DNA-encoded mitochondrial transcripts and poor clinical outcome across many cancer types (Gaude and Frezza, 2016).\n\n### Correlation of mtDNA copy number and mRNA levels\n\nOur simultaneous quantification of mtDNA copy number and mtRNA expression enabled us to address a more basic biological question: what is the relationship between the number of copies of mtDNA in a cell and the expression of mtDNA-encoded genes? A number of factors, including but not limited to mtDNA copy number, ultimately determine the steady-state abundance of mtRNAs and derived proteins in a cell. At low mtDNA copy number, transcript expression of mitochondrial genes may be limited by the number of DNA templates available for active transcription. Alternatively, other proteins (e.g. mitochondrial transcription termination factors) can control the rate of transcription, while yet others can modulate mtRNA stability and degradation (Clemente et al., 2015). Thus, it remains unclear whether mtDNA copy number is correlated to, and may be used as a surrogate for, the abundance of mtRNA.\n\nTo evaluate the association between mtDNA copy number and mtRNA abundance, we calculated (separately for each mtRNA) the non-parametric Spearman correlation between mtDNA copy number and mtRNA levels (in RSEM counts), for all samples with available mtDNA copy number and mtRNA expression estimates (18 tumor types analyzed in total, Figure 4 and Figure 4\u2014figure supplement 1). We found that the correlation between mtDNA copy number and mtRNA expression was highly tissue-type-specific. Seven of eighteen tumor types (adrenocortical, breast, glioma, kidney clear cell, kidney papillary, liver, and thyroid) had strong (BH-corrected p-value <10\u22125) positive correlation across all or nearly all mtDNA-encoded genes (Figure 4\u2014figure supplement 1). Seven cancer types (bladder, colon, glioblastoma, head and neck, kidney chromophobe, lung adenocarcinoma, and stomach) had weak but still statistically significant correlation. The remaining four cancer types (endometrial, esophagus, pancreatic, prostate) showed no statistically significant correlation. Of the seven cancer types with mtDNA depletion in tumors relative to normal tissue, five (all but esophageal and head and neck) showed positive correlation between mtDNA copy number and expression. Some genes (e.g. MT-ND5 and MT-ND6) had recurrently weaker correlation with mtDNA copy number, which may result from their lower (and thus potentially noiser) abundance compared to other MT transcripts. Thus, the data support a plausible correlation between mtDNA copy number and \u2018steady-state\u2019 mtRNA abundance across many but not all tissues.\n\nFor one cancer type (kidney clear cell), the TCGA consortium (Creighton et al., 2013) used reverse-phase protein arrays (RPPA) to measure the protein abundance of one mtDNA-encoded protein (MT-CO2) in tumors only (not normal tissue). This data enabled us to assess directly, in this one case, whether variation in mtDNA copy number and mtRNA levels translates to changes in protein levels. We found that MT-CO2 protein levels were strongly correlated with MT-CO2 mRNA (Spearman $\u03c1$\u00a00.38, p-value <10\u221214), and to a lesser extent with mtDNA copy number (Spearman $\u03c1$ 0.18, p-value 0.003) (Figure 4\u2014figure supplement 2).\n\nInterestingly, correlations between mtDNA and mtRNA were not necessarily homogeneous between tumor and normal samples from the same tissue. Upon closer examination of samples from KICH (Figure 4\u2014figure supplement 3), we found that tumor and normal samples had strong but distinct patterns of correlation between mtDNA copy number and mtRNA levels. In particular, because KICH tumors only had increased mtRNA levels compared to normals (and not an increase in mtDNA copy number), the best-fit trend line between mtDNA and mtRNA appears shifted vertically when comparing tumor to normal tissue samples. Put another way, it appears as if KICH tumors had higher values of the steady-state mtRNA/mtDNA ratio. Given that many KICH tumors harbor mtDNA mutations, these observations suggest that compensation for such mitochondrial dysfunction in KICH may be via transcriptional mechanisms, rather than changes to mtDNA ploidy.\n\n### Patterns of nuOXPHOS and mtOXPHOS gene expression are not redundant\n\nThe mitochondrial genome encodes 13 polypeptides which serve as integral membrane subunits for 3 components of the electron transport chain and ATP synthase (herein referred to as mtOXPHOS proteins). The remaining $\u223c$80 OXPHOS subunits are encoded in the nuclear genome (herein referred to as nuOXPHOS proteins) (Calvo and Mootha, 2010). The protein levels of these subunits must be coordinated in order to maintain proper stoichoimetry of OXPHOS complexes (Cancer Genome Atlas Research Network et al., 2013). Intriguingly, a study of the coordination of mtOXPHOS and nuOXPHOS protein levels in S. cerevisae found that the primary mode of regulation was through rapid translational, rather than transcriptional, synchronization (Couvillion et al., 2016). This leaves open the possibility that patterns of transcriptional changes in mtOXPHOS and nuOXPHOS may be asynchronous or even opposite.\n\nTo see if the nuclear and mitochondrial genome experience analogous changes in respiratory gene expression in the course of tumorigenesis, we examined the differential expression of mtOXPHOS and nuOXPHOS subunits for all 13 cancer types with available expression data for both tumor and normal tissues\u00a0(Figure 5). We calculated a differential expression (DE) score for each cancer type, which captured the tendency for a set of genes to be down-regulated (corresponding to a score of \u22121) or up-regulated (a score of\u00a0+1) in tumors compared to normal tissue. In 9/13 cancer types, we observed agreement in DE scores between mtOXPHOS and nuOXPHOS subunits (e.g. see volcano plot of KIRC in\u00a0(Figure 5). More interestingly, we found that four cancer types (BLCA, BRCA, LUAD, and UCEC) have opposite patterns of differential expression in mtOXPHOS and nuOXPHOS genes. For example, in BRCA, while nearly all mtOXPHOS genes are down-regulated in tumors compared to normal tissue (mirroring the mtDNA copy number depletion in BRCA), nearly all nuOXPHOS genes actually had increased mRNA levels.\n\nFor a functional electron transport chain, subunits of each OXPHOS complex must assemble with compatible stoichiometries in a process that requires coordination of individual subunit protein levels (Mouchiroud et al., 2013). Taken together, the above findings speak to the potential shortcomings of transcriptional data as surrogates for OXPHOS protein abundance and respiratory activity. As mentioned above, several recent studies have reported on the critical role of translational processes in the coordination of respiration. One report by Wagner, Kitami, and colleagues found that treatment of differentiated C2C12 murine myotubes with certain drugs (including eukaryotic translation inhibitors) induced anti-correlated changes in nuOXPHOS and mtOXPHOS genes, respectively (Wagner et al., 2008). Separately, Couvillion and colleagues reported that the sudden shift of S. cerevisae to a non-fermentable carbon source led to rapid induction of transcriptional changes in nuOXPHOS, but not mtOXPHOS. Instead, rapid redistribution of mitochondrial ribosomes supported fast adapation to respiration (e.g. via an increase in translation efficiency of Complexes III and IV). Together, these two studies suggest that the examination of translational activity (e.g. by ribosome profiling) may be useful tools for examining an imbalance in mtOXPHOS and nuOXPHOS transcription.\n\n### Questions and future directions\n\nThe purpose of this study was to compare cancer-associated changes in mitochondrial transcript levels with changes in mtDNA copy number as reported in Reznik et al. (2016). An equally important goal, for all scientific studies but perhaps more so for \u2018replication\u2019 studies of the sort here, is to lay out the loose ends and unanswered questions, and to make explicit those findings which did not agree with prior results. Below we offer a reflection on our findings, which may steer future investigations towards interesting territory for future discovery.\n\nIn tandem with our prior study (Reznik et al., 2016), this work finds that several tumor types suppress the expression of genes involved in oxidative phosphorylation/respiration. Five cancer types (kidney clear cell, kidney papillary, head and neck squamous cell, liver, and esophageal) were mtDNA-depleted, under-expressed mtRNAs, and under-expressed nuOXPHOS genes, in comparison to normal tissue. Importantly, because cells harbor excess respiratory capacity, a drop in the protein expression of mtDNA-encoded OXPHOS subunits will not necessarily precipitate a drop in respiration unless it is sufficiently large. Experimental measurements, e.g. respirometry or measurements of flux will be necessary to determine if drops in mtRNA expression translate to a drop in oxygen consumption/respiration (Brand and Nicholls, 2011). A reasonable subset of cancer types to initially investigate for such experiments would be the five listed above to suppress OXPHOS gene expression.\n\nWhile changes in mtDNA copy number and mtRNA expression cannot be used as surrogates for changes in respiratory flux, several of the cancer types examined here are driven by genetic changes affecting mitochondrial respiration, suggesting that changes in mtRNA levels may reflect bona fide changes in respiration. For example, clear-cell renal cell carcinomas are driven by homozygous loss of VHL, which leads to activation of\u00a0hypoxia inducible factor (HIF), and subsequently increased transcription of glycolytic enzymes (Creighton et al., 2013). The signature of HIF activation is evident not only in gene expression data, but also in metabolomic measurements of KIRC tumors (Hakimi et al., 2016), and suggests that KIRC tumors experience a drop in respiration. In particular, KIRC tumors exhibit increased levels (compared to normal tissue) of metabolites upstream of SDH (succinate dehydrogenase, Complex II), i.e. citrate, cis-aconitate, and succinate, and decreased levels of metabolites downstream of SDH (fumarate and malate). This partitioning of changes in metabolite levels could arise by a decrease in the activity of the electron transport chain and SDH, which would induce a metabolic bottleneck and the accumulation (depletion) of metabolites upstream (downstream) of SDH.\n\nFurthermore, while our data suggests that several cancer types may decrease mitochondrial respiration, mitochondrial metabolism provides several other important services to the cell. In some cases, respiration may be critical to these processes; for example, aspartate biosynthesis is heavily reliant on electron acceptors produced by mitochondrial respiration, and respiration-deficient cells become limited by the availability of aspartate (Birsoy et al., 2015). Beyond the ETC, cytosolic acetyl-CoA utilized for lipogenesis is produced from the action of ATP-citrate lyase on mitochondrial citrate, and substantial evidence supports the critical role of mitochondrial metabolism in producing adequate one-carbon precursors for nucleotide biosynthesis (Ahn and Metallo, 2015). Finally, it should be noted that xenografted $\u03c1^{0}$ (depleted of mtDNA) breast cancer cells form tumors only after re-acquiring mtDNA from the host, emphasizing that some basal level of mitochondrial respiration is likely required for tumor viability and malignancy (Tan et al., 2015).\n\nWhen comparing the differential expression of mtRNA (tumor vs. adjacent-normal tissue) to changes in mtDNA copy number (tumor vs. adjacent-normal tissue), we found two cancer types (LUAD and KICH) had opposite changes in the two measures. To highlight a single example, lung adenocarcinomas were the only cancer type to accumulate mtDNA copies compared to normal tissue. Using mtRNA data, however, these tumors had lower mtRNA levels of 6/13 MT genes. We can speculate as to the source of this inconsistency: it may be that our inference from sequencing data of mtDNA copy number or mtRNA expression was erroneous for these tumor types. While this is a possibility, we would remind readers that the same analytical pipeline was applied to all cancer types, the majority of which had features consistent with our expectations, e.g. correlation of whole-exome and whole-genome estimates of mtDNA copy number in Reznik et al. (2016), correlation of mtDNA copy number with expression of mitochondrially-localized genes in Reznik et al. (2016), consistency of changes in mtDNA copy number and mtRNA expression across most cancer types in Figure 2 of this study. Alternatively, if one takes our calculations to be reasonably accurate estimates of mtDNA and mtRNA abundance, then the unexpected results become more intriguing. Regarding the inconsistency between mtDNA ploidy and mtRNA abundance described above, it is known that a number of proteins regulate mtDNA transcription, including transcription factors (TFAM,TFB1M), transcriptional termination factors (MTERFs), as well as mitochondrial biogenesis in general (NRF-1 and NRF-2, PGC1$\\alpha$,ERR$\\alpha$) (Scarpulla, 2008; Rorbach and Minczuk, 2012). A more detailed investigation of these proteins may reveal the factors driving inconsistency between changes in mtDNA copy number and mtRNA.\n\nThe coordinated expression of mtDNA- and nuDNA-encoded subunits of the respiratory chain is critical to efficient respiration. Prior studies of mitochondrial-nuclear (mitonuclear) protein imbalance in C. elegans claimed that it promotes longevity via activation of the mitochondrial unfolded protein response (UPRMT), a transcriptional response preserving mitochondrial function in the face of stress (Cancer Genome Atlas Research Network et al., 2013). Intriguingly, two recent studies reported activation of the UPRMT counterintuitively promoted tolerance of mutant mtDNA levels by activating mitochondrial biogenesis in an effort to recover OXPHOS activity (Lin et al., 2016; Gitschlag et al., 2016). If cancer cells indeed have substantial changes in mtDNA copy number and transcription (and mtDNA mutations), then activation of the mammalian UPR$^{M\u2062T}$ may be critical in supporting their proliferation in the face of increased mitochondrial stress.\n\nSeveral of our findings discussed above allude to intriguing tissue-specific patterns of variation in mtDNA and mtRNA. Both the accumulation/depletion of mitochondrial transcripts\u00a0(Figure 2,4,5) and their association with mtDNA ploidy were highly dependent on the cancer type. It is well-appreciated that the physiology and molecular constitution (Fern\u00e1ndez-Vizarra et al., 2011; Calvo and Mootha, 2010) of mitochondria varies substantially from one tissue to the next. Can some of the unexpected phenomena described here (e.g. inconsistent changes in mtDNA copy number and mtRNA expression, decoupling of nuOXPHOS and mtOXPHOS) be explained by the tissue-specific physiology of mitochondria? We expect that, in the pursuit of such questions, tools for profiling the morphologic and proteomic composition of mitochondria, in parallel with organelle-targeted transcriptomics and genomics, will yield valuable insights.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig4-v2.jpg)\n\n**Figure 4.:** Relative mtDNA copy number was correlated against mtRNA expression (log$_{2}$ normalized counts from limma voom). The expression of one gene, MT-ATP6, is depicted, although other mtDNA protein coding genes are similar. Lines indicate best fit linear trend between mtDNA copy number and log$_{2}$ MT-ATP6 expression. Cancer types titled with an asterisk indicate a statistically significant correlation (Spearman, BH-adjusted p-value <0.05). Double asterisk indicates an especially strong correlation (BH-adjusted p-value <10\u22125).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Radius of circle corresponds to BH-adjusted -log10 p-value, as assessed by Spearman correlation. Insignificant correlations are colored in grey. Correlations are calculated using all available (both tumor and adjacent-normal) samples.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Correlation of RPPA with (A) mtDNA copy number (Spearman $\u03c1$ 0.18, p-value 0.003) and (b) MT-CO2 RNA expression (Spearman $\u03c1$0.38, p-value <10\u221214) in KIRC.Blue lines indicate best-fit linear trend.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Separate colors and trend lines correspond to tumor and normal samples.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21592/elife-21592-fig5-v2.jpg)\n\n**Figure 5.:** (A) Differential expression scores for mtOXPHOS and nuOXPHOS across cancers. Red dashed boxes highlight cancer types with opposite trends in mtOXPHOS and nuOXPHOS differential expression. (B) Volcano plots highlighting differential expression of mtOXPHOS (red) and nuOXPHOS (blue) genes in BRCA and KIRC.\n\n## Materials\u00a0and\u00a0methods\n\n### RNA sequencing alignment, quantification, and quality control\n\nThe input of our analysis pipeline is raw sequencing reads (in FASTQ format). The raw reads of the RNA-seq samples were retrieved from the Cancer Genomics Hub (CGHub, https://cghub.ucsc.edu, Research Resource Identifier RRID:SCR_003193). When FASTQ files were not available, e.g. for stomach adenocarcinoma, we downloaded aligned sequence reads (in BAM format) and extracted reads from BAM files with the Java program ubu.jar (https://github.com/mozack/ubu) before processing samples using our pipeline. All acronyms for cancer types conform to the TCGA nomenclature (ACC: adrenocortical; BRCA:breast; BLCA: bladder; COAD: colon; ESCA: esophageal; GBM: glioblastoma; HNSC: head and neck squamous cell; KICH: kidney chromophobe; KIRC: kidney clear cell; KIRP: kidney papillary; LGG: low grade glioma; LIHC: liver, LUAD:lung adenocarcinoma; PAAD: pancreatic; PRAD: prostate; STAD: stomach; THCA: thyroid; UCEC: endometrial). Sample sizes for each cancer type are reported in Supplementary file 1.\n\nWe employed STAR aligner (Dobin et al., 2013), a fast accurate alignment software used widely in the NGS community, to map reads to UCSC human reference genome hg19 and reference transcriptome GENCODE (v19), using recommended parameters, e.g. \u2019\u2013outFilterType BySJout\u2019 and \u2019\u2013outFilterMultimapNmax 20\u2019, etc., which are also standard options of the ENCODE project for long RNA-seq pipeline. Samples with alignment rates less than 40% were excluded from further analysis.\n\nThe software tools RseQC (Wang et al., 2012) and mRIN (Feng et al., 2015) were used to evaluate sample quality. RNA degradation, as detected by mRIN (Feng et al., 2015), was present in some TCGA samples. Since degradation can bias expression level measurements and cause data misinterpretation, we excluded samples with evidence for degradation. Specifically, we used prostate cancer samples from the TCGA project as test data to decide on a degradation cutoff for mRIN. TCGA prostate samples had undergone extensive pathological, analytical, and quality control review and had been shown to include a significant portion of degraded samples (Clemente et al., 2015). We compared mRIN scores with RNA Integrity Numbers (RIN) calculated by TCGA for prostate samples and found they are highly negatively correlated (Pearson correlation\u00a0<\u22120.93). To filter degraded samples, TCGA used a cutoff 7.0 for RIN, which corresponds roughly to \u22120.11 for mRIN. We also manually examined other tumor types including bladder urothelial carcinoma and breast invasive carcinoma and a mRIN cutoff \u22120.11 worked reasonably well for these studies as well. Hence, we used \u22120.11 as the degradation threshold for mRIN throughout our study. Samples with mRIN\u00a0<\u22120.11 were regarded as degraded and, thus, excluded from further analysis.\n\nWhen running STAR, we specified an option \u2019\u2013quantMode TranscriptomeSAM\u2019 to make STAR output a file, Aligned.toTranscriptome.out.bam, which contains alignments translated into transcript coordinates. This file was then used with RSEM (Li and Dewey, 2011) to quantify mitochondrial gene expression. The program \u2019rsem-calculate-expression\u2019 in the RSEM package requires strand specificity of the data, which is estimated using software RseQC (Wang et al., 2012).\n\nTo ensure that reads aligning to the mtDNA are not derived from NUMTs/mitochondrial pseudogenes in the nuclear DNA, we implemented two quality control measures. First, we examined the expression (using RSEM, which handles multi-mapping reads, see next paragraph) of 175 regions annotated as mtDNA pseudogenes in GENCODE v19. While these genes are a subsample of the total number of NUMTs in the genome (on the order of 1000 [Dayama et al., 2014]), they are nevertheless useful for roughly estimating the genome-wide expression of NUMTs. Across all studies, we failed to see substantial expression of NUMT transcripts. In general across all cancer types, the vast majority of samples showed 100- to 1000-folder greater expression of bona fide mtDNA-encoded genes than expression of mitochondrial pseudogenes (Figure 1\u2014figure supplement 1).\n\nAs a second quality control measure, we compared estimates of expression counts produced from two computational approaches, RSEM and featureCounts. These methods differ fundamentally in the way that they count reads mapping to multiple regions in the genome (multi-mapping reads). RSEM handles multi-mapping reads using an expectation-maximization procedure, while featureCounts by default simply discards multi-mapping reads. Thus, if a read maps ambiguously to both mtDNA and a NUMT, then featureCounts will ignore this read while RSEM will not. For all 13 mtDNA-encoded mRNAs, we compared (1) the total expression (in counts) as reported by RSEM and featureCounts (Figure 1\u2014figure supplement 2A) and (2) the tumor vs. normal differential expression estimate (Figure 1\u2014figure supplement 2B). With the exception of a single study, we found excellent agreement between RSEM and featureCounts by both measures. In the PRAD study, we noted that the two approaches produced different results for differential expression of MT genes, and we therefore removed PRAD from our differential expression analysis. These data support the hypothesis, as reported by in prior work by others (Dayama et al., 2014; Collura et al., 1996), that NUMT expression is negligibly low and does not confound estimates of true mtDNA expression.\n\n### Differential expression analysis\n\nDifferential expression analysis was completed using the limma voom package (Law et al., 2014). TMM normalization was applied to counts before running differential expression analysis. Estimates of differential expression were compared against analogous estimates using publicly available data from the Broad Institute\u2019s TCGA Firehose using the RTCGAToolbox R package (Samur, 2014), with excellent agreement between the two (data not shown). Cancer types with fewer than five adjacent-normal tissue samples profiled by RNA-Seq were discarded. As mentioned in the above section, the TCGA cancer type PRAD was removed from differential expression analysis due to differences when comparing results for mtDNA differential expression from RSEM and featureCounts.\n\nDifferential expression score is defined as\n\n$$\nDE=\\frac{#\u00a0of\u00a0Genes\u00a0Overexpressed\u00a0in\u00a0Gene\u00a0Set\u2212#\u00a0of\u00a0Genes\u00a0Underexpressed\u00a0in\u00a0Gene\u00a0Set}{#\u00a0of\u00a0Genes\u00a0in\u00a0Gene\u00a0Set}\n$$\n\nA score of 1 indicates that all genes in the gene set are overexpressed in tumor compared to normal tissue, while a score of \u22121 indicates that all genes in the gene set are underexpressed.\n\nGenes included in the nuDNA OXPHOS geneset were derived from the MSigDB Reactome geneset file (Liberzon et al., 2015).\n\n### mtDNA copy number analysis\n\nAll data for mtDNA copy number analysis was derived from Supplementary file 1 of (Reznik et al., 2016).\n\n### Clinical association analysis\n\nAll data for clinical analysis was downloaded from the Broad Firehose. For survival calculations, Cox regression was used to associate log$_{2}$ TPM expression of each mtRNA with overall survival. For association with pathological stage or age, non-parametric Spearman correlations were calculated. For each clinical variable, association was calculated with each of the 13 mtDNA-encoded mRNAs. Then, p-values for the associations were corrected using the Benjamini-Hochberg procedure, and then combined using Fisher\u2019s method. Because Fisher\u2019s method assumes independent p-values (which is not the case in this analysis, as mtRNAs are transcribed polycistronically), we additionally report in Figure 3 the number of mtRNAs significantly associated (BH-adjusted p-value<0.05) with the clinical variable under examination.\n",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "81eeb7e8-1c63-432b-9742-db8167cb827e",
+      "submission_id": "90adb63e-7b57-4f7b-9d52-a07bf4a7eaaa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chi Van Dang, University of Pennsylvania , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21592.017](https://doi.org/10.7554/eLife.21592.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Mitochondrial Respiratory Gene Expression is Suppressed in Many Cancers\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom, Chi Van Dang, is a member of our Board of Reviewing Editors.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe manuscript by Reznik et al. reports alteration mitochondrial gene expression amongst human cancers, for which they have previously reported in eLife the spectrum of mtDNA alterations relative to normal tissues. Understanding somatic alterations of mitochondrial genome during tumorigenesis is critical for the next generation of cancer therapeutics. Several recent studies based on the TCGA specimens have revealed that mitochondria DNAs are altered in cancers, including mtDNA mutations as well as copy number changes. The authors previously reported that mtDNA copy number depletion in human cancers. In this follow-up study, they analyzed mitochondria gene expression using the TCGA RNA-seq profiles. They presented an expressional landscape of 13 mitochondria genes across >10 cancer types which have normal control specimens from the TCGA, and found that mtRNAs were dysregulated in cancers. This comprehensive mtRNA expression profile could contribute to better understanding both mitochondria biology and tumorigenesis.\n\nHowever, there is a similar recent paper in Nature Communications on this topic by Frezza and colleagues \"Tissue-specific and convergent metabolic transformation of cancer correlates with metastatic potential and patient survival\".\n\nFurther, the mitochondrial genomic changes documented in this manuscript do not provide any insight into what advantage decreasing respiratory genes will have on tumorigenesis.\n\nComplete loss of the respiratory chain impairs cancer cell proliferation and tumorigenesis. The authors do not observe a complete loss but a suppression of respiratory chain. What advantage does moderate suppression of respiratory chain provide for the cancer cells in vivo?\n\nAdditionally, two statements are not correct:\n\n\"Our results provide quantitative evidence for suppression of respiration across many cancer types.\" Any given cell only utilizes 10-30% of maximal respiratory capacity. Thus, a cell can have large drop in mtDNA without respiration being affected. The authors don't have any direct measurements that examine respiration.\n\n\"On the other hand, mtDNA depletion will not necessarily lead to a drop in respiration\". If cells have complete mtDNA depletion then they will be respiratory deficient. mtDNA encodes for critical subunits of the respiratory chain.\n\nOther omissions that detract from the paper include the following issues:\n\n1) Is there clinical significance of mtRNA dysregulation in cancers? E.g. are the expression levels of mtRNAs correlated with disease stage/grade, patients' age, outcome and other clinical factors?\n\n2) A detailed information for sample numbers of each cancer type needs to be provided, especially for the corresponding control specimens. Relatively small number of normal specimens may create biases for analyses.\n",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb45ef55-ad35-4f15-8df8-d63287901b9d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C1",
+      "claim": "The mitochondrial genome (mtDNA) encodes 13 protein-coding genes, each of which is a critical integral membrane subunit in the electron transport chain or ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial DNA serves as the template for the transcription of 13 protein-coding genes, each of which is a critical integral membrane subunit in the electron transport chain or ATP synthase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial genome composition and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "db3f9f40-79d0-49b1-b798-2abd9f619267",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C2",
+      "claim": "Several cancer types are depleted of mtDNA relative to adjacent-normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In our own work (Reznik et al., 2016), we estimated mtDNA copy number for thousands of tumor samples sequenced by The Cancer Genome Atlas (TCGA) consortium and found that several cancer types appeared depleted of mtDNA relative to adjacent-normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "6b53015d-b92f-44ff-bbf4-8bc55c0cbe77",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C3",
+      "claim": "Cells typically harbor an excess of mitochondrial respiratory capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Respirometry experiments indicate that cells typically harbor an excess of mitochondrial respiratory capacity, implying that a modest decrease in ETC protein levels will not impact the basal respiration rate of the cell (Brand and Nicholls, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Brand and Nicholls, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "50d71e0c-3b61-41ec-b69f-5b6f257333ad",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C4",
+      "claim": "A modest decrease in ETC protein levels will not impact the basal respiration rate of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Respirometry experiments indicate that cells typically harbor an excess of mitochondrial respiratory capacity, implying that a modest decrease in ETC protein levels will not impact the basal respiration rate of the cell (Brand and Nicholls, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation of excess respiratory capacity, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3e8d9865-28ef-4a88-b3e6-ae7265b495b9",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C5",
+      "claim": "A sufficiently large reduction in the levels of mtDNA-encoded proteins will precipitate a drop in the rate of ATP generation via respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a sufficiently large reduction in the levels of proteins encoded by mtDNA (e.g. large or complete mtDNA depletion), will precipitate a drop in the rate of ATP generation via respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge of mitochondrial function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "e273c630-0708-418b-8067-87c6fc34fe64",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C6",
+      "claim": "Cancer cells can partially compensate for lower respiratory ATP generation by increasing flux through glycolysis (the Warburg effect).",
+      "claim_type": "EXPLICIT",
+      "source": "In these cases, cancer cells can partially compensate for lower respiratory ATP generation by increasing flux through glycolysis (i.e. the Warburg effect).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of cancer metabolism and the Warburg effect.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "a4201f27-a904-4dbb-8e1b-df0c412c621f",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C7",
+      "claim": "The majority of cancer types have lower levels of mtRNAs in tumors compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of cancer types have a tendency for lower levels of mtRNAs, and five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) have lower levels of all 13 protein-coding mtRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential expression analysis presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "5a588ab4-6af5-4f59-b2e2-884bffef64ec",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C8",
+      "claim": "Five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) have lower levels of all 13 protein-coding mtRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of cancer types have a tendency for lower levels of mtRNAs, and five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) have lower levels of all 13 protein-coding mtRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "199c23ad-ea50-47f8-bf9f-60395fddc357",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C9",
+      "claim": "Among the seven cancer types with statistically significant depletion of mtDNA content, all seven had lower mtRNA levels in at least 4/13 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the seven cancer types with statistically significant depletion of mtDNA content in our earlier report (Reznik et al., 2016), all seven had lower mtRNA levels in at least 4/13 genes, with no mtRNAs showing over-expression in these tumor types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of current data with prior study results, as shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "afb9835a-423f-4334-8a1f-2b4f2aff8582",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C10",
+      "claim": "LUAD (lung adenocarcinoma) had lower expression of 6/13 mtRNAs despite being the only cancer type with increased mtDNA copy number.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that LUAD (lung adenocarcinoma), which we found to be the only cancer type with increased mtDNA copy number in Reznik et al. (2016), had lower expression of 6/13 mtRNAs, suggesting that any increase in mtDNA copy number in LUAD was compensated for at the transcriptional level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data in Figure 2 and comparison with prior study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "58aede33-af21-4b77-912a-7fdd09e6e3cc",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C11",
+      "claim": "KICH (chromophobe renal cell carcinomas) had higher levels of mtRNAs in tumors compared to normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Breaking the general trend, one cancer type, KICH (chromophobe renal cell carcinomas), had higher levels of mtRNAs in tumors compared to normal tissues.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "adfa9bb4-aaef-4c96-91dc-239486f2ddff",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C12",
+      "claim": "Each of the 13 mtDNA-encoded genes had greater than 2-fold over-expression in KICH tumors compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The over-expression phenotype was notably large: each of the 13 genes had greater than 2-fold over-expression in tumors compared to normal tissue (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "bb6654c2-644a-4ad7-98c7-2f55f6c9a3c5",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C13",
+      "claim": "KICH did not have appreciable accumulation of mtDNA copies in the prior study.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, KICH did not have appreciable accumulation of mtDNA copies in our prior study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to results from the prior study by Reznik et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "5ab05c7b-45f3-4b81-bf8e-c95923ed5d79",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C14",
+      "claim": "Eosinophilic chromophobe renal cell carcinomas have been proposed to arise from oncocytomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Eosinophilic KICH tumors have been proposed to arise from oncocytomas, a cancer type characterized by cytoplasms swollen with respiration-deficient mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research cited in the context.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "50186513-cb69-4706-8bae-0477bcbd5961",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C15",
+      "claim": "Oncocytomas are characterized by cytoplasms swollen with respiration-deficient mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Eosinophilic KICH tumors have been proposed to arise from oncocytomas, a cancer type characterized by cytoplasms swollen with respiration-deficient mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about oncocytomas.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "59f39058-6f36-4123-a307-32d8a7314431",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C16",
+      "claim": "The oncocytoma phenotype arises from somatic mtDNA mutations that render mitochondrial OXPHOS non-functional and defective mitophagy that prevents clearance of dysfunctional mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype arises from two critical dysfunctions: somatic mtDNA mutations that render mitochondrial OXPHOS non-functional, and defective mitophagy that prevents clearance of dysfunctional mitochondria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research about oncocytomas and chromophobe renal cell carcinomas.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "7b6bc586-debe-4bbf-aa28-c6c49b4ab451",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C17",
+      "claim": "Oncocytoma cells experience an energy crisis due to defective mitochondria/OXPHOS and respond by further upregulating the biogenesis of defective mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it has been proposed that oncocytoma cells experience an energy crisis due to defective mitochondria/OXPHOS (perhaps sensed through AMPK), and respond by further upregulating the biogenesis of defective mitochondria (Zong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zong et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "e290f422-5091-4c4e-a9c2-393773eb4a70",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C18",
+      "claim": "The increased mtRNA levels in KICH tumors likely reflect a drop in respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our observation of increased mtRNA levels in KICH tumors is likely to counterintuitively reflect a drop in respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biology of oncocytomas and chromophobe renal cell carcinomas.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "8c3c5ba7-de54-4e33-b49e-ef513c01d65c",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C19",
+      "claim": "The mitochondrial genome is transcribed in a polycistronic fashion, with all mRNAs and tRNAs on a strand transcribed simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial genome is transcribed in a polycistronic fashion, with all mRNAs and tRNAs on a strand transcribed simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3fc07afd-0328-4b91-83d8-dd7bee437a07",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C20",
+      "claim": "Following transcription, tRNAs are excised from the mitochondrial transcript, and the majority of the remaining mRNAs are polyadenylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Following transcription, tRNAs are excised from the transcript, and the majority of the remaining mRNAs are polyadenylated (Pagliarini et al., 2008; Mercer et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pagliarini et al., 2008 and Mercer et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "4cfdc9e5-ec2c-4187-b2f6-a3811aa3a4b8",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C21",
+      "claim": "Polycistronic transcription ensures that mtRNAs are highly co-expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycistronic transcription ensures that mtRNAs are highly co-expressed, although it is clear from many studies that mtRNAs undergo a large degree of post-transcriptional regulation, resulting in uneven steady-state abundances (Rorbach and Minczuk, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the mechanism of polycistronic transcription, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "91cdf387-7387-4495-936a-c65adf24fb03",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C22",
+      "claim": "mtRNAs undergo a large degree of post-transcriptional regulation, resulting in uneven steady-state abundances.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycistronic transcription ensures that mtRNAs are highly co-expressed, although it is clear from many studies that mtRNAs undergo a large degree of post-transcriptional regulation, resulting in uneven steady-state abundances (Rorbach and Minczuk, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rorbach and Minczuk, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3cbabd02-4404-4d5b-88b0-6fdd25d0548a",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C23",
+      "claim": "Most genes encoding subunits of Complex I were downregulated in the majority of cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "With regard to differential expression, most of the genes encoding subunits of Complex I were downregulated in the majority of cancer types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "15368f88-307d-4135-bd0c-90d53ddef9ab",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C24",
+      "claim": "Genes encoding subunits of Complex V (ATP6 and ATP8) and Complex IV (MT-CO1, MT-CO2, MT-CO3) were generally under-expressed only in the strongly mtDNA- and mtRNA-depleted cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, genes encoding subunits of Complex V (ATP6 and ATP8) and to a lesser extent Complex IV (MT-CO1,MT-CO2,MT-CO3) were generally under-expressed in only the strongly mtDNA- and mtRNA-depleted cancer types.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "cc545f38-065f-4ceb-a8e3-13238f850e16",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C25",
+      "claim": "Papillary renal cell carcinoma (KIRP), esophageal carcinoma (ESCA), and thyroid cancer (THCA) showed an association between high mtRNA expression and increased age.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, papillary renal cell carcinoma (KIRP), esophageal carcinoma (ESCA), and thyroid cancer (THCA) showed an association between high mtRNA expression and increased age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical association analysis using TCGA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "da816fc4-bf3e-4382-8e14-9267826922c6",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C26",
+      "claim": "Five cancer types (ACC, KICH, LGG, PAAD, and LIHC) showed an association between higher mtRNA expression levels and increased overall survival.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, we identified five cancer types (ACC,KICH,LGG,PAAD, and LIHC) in which higher mtRNA expression levels were associated with increased overall survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Cox regression analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "9ce9c5ea-dbc7-463d-bea8-dbc820a54064",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C27",
+      "claim": "Three cancer types (ACC, KICH, and LGG) showed associations between high mtDNA copy number and better overall survival in the prior analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of these cancer types (ACC,KICH, and LGG), showed similar associations in our prior analysis using mtDNA copy number (i.e. high mtDNA copy number was associated with better overall survival (Reznik et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to results from the prior study by Reznik et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "cac84c2d-e7d4-4669-bef6-338bc4c86b35",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C28",
+      "claim": "KIRP tumors showed an association between higher mtRNA expression and less aggressive disease, as assessed by pathological stage.",
+      "claim_type": "EXPLICIT",
+      "source": "KIRP tumors also showed an association between higher mtRNA expression and less aggressive disease, as assessed by pathological stage (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by clinical association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "275aabf8-6472-47df-933b-6bdc9f8e21bb",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C29",
+      "claim": "Down-regulation of nuclear-DNA-encoded mitochondrial transcripts is associated with poor clinical outcome across many cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these results echo similar findings by reported by Gaude and Frezza, who reported an association between down-regulation of nuclear-DNA-encoded mitochondrial transcripts and poor clinical outcome across many cancer types (Gaude and Frezza, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gaude and Frezza, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "a2c0fc3b-1c5e-4cce-9793-baa981633602",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C30",
+      "claim": "Seven of eighteen tumor types had strong positive correlation between mtDNA copy number and mtRNA expression across all or nearly all mtDNA-encoded genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of eighteen tumor types (adrenocortical, breast, glioma, kidney clear cell, kidney papillary, liver, and thyroid) had strong (BH-corrected p-value <10\u22125) positive correlation across all or nearly all mtDNA-encoded genes (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3e07d1f6-e8fc-4ae1-a598-60c095ebdf14",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C31",
+      "claim": "Seven cancer types had weak but statistically significant correlation between mtDNA copy number and mtRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven cancer types (bladder, colon, glioblastoma, head and neck, kidney chromophobe, lung adenocarcinoma, and stomach) had weak but still statistically significant correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "ee8cb293-915c-487f-8d08-d1f539f73fdf",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C32",
+      "claim": "Four cancer types (endometrial, esophagus, pancreatic, prostate) showed no statistically significant correlation between mtDNA copy number and mtRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining four cancer types (endometrial, esophagus, pancreatic, prostate) showed no statistically significant correlation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "d64c7156-12c7-4a04-847f-b57554ce2eee",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C33",
+      "claim": "Of the seven cancer types with mtDNA depletion in tumors relative to normal tissue, five showed positive correlation between mtDNA copy number and expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the seven cancer types with mtDNA depletion in tumors relative to normal tissue, five (all but esophageal and head and neck) showed positive correlation between mtDNA copy number and expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis and comparison with prior study results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "f310fc83-6647-44a1-a036-05fbae0076a0",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C34",
+      "claim": "Some genes (e.g. MT-ND5 and MT-ND6) had recurrently weaker correlation with mtDNA copy number, which may result from their lower abundance compared to other MT transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Some genes (e.g. MT-ND5 and MT-ND6) had recurrently weaker correlation with mtDNA copy number, which may result from their lower (and thus potentially noiser) abundance compared to other MT transcripts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on observed data patterns in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "96079b8d-c32e-4e4d-9fac-598f5df75d2c",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C37",
+      "claim": "KICH tumor and normal samples had strong but distinct patterns of correlation between mtDNA copy number and mtRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon closer examination of samples from KICH (Figure 4\u2014figure supplement 3), we found that tumor and normal samples had strong but distinct patterns of correlation between mtDNA copy number and mtRNA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "7ae71823-7953-42bb-a936-cee420ce1cef",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C38",
+      "claim": "KICH tumors had higher values of the steady-state mtRNA/mtDNA ratio compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, because KICH tumors only had increased mtRNA levels compared to normals (and not an increase in mtDNA copy number), the best-fit trend line between mtDNA and mtRNA appears shifted vertically when comparing tumor to normal tissue samples. Put another way, it appears as if KICH tumors had higher values of the steady-state mtRNA/mtDNA ratio.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from data shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "5b6069b5-e867-4a7e-8292-009f9c7c2d34",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C39",
+      "claim": "Compensation for mitochondrial dysfunction in KICH may be via transcriptional mechanisms, rather than changes to mtDNA ploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that many KICH tumors harbor mtDNA mutations, these observations suggest that compensation for such mitochondrial dysfunction in KICH may be via transcriptional mechanisms, rather than changes to mtDNA ploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed patterns in KICH tumors.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "b069490d-9ae5-460c-98bc-cc1f4d9e6274",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C40",
+      "claim": "The mitochondrial genome encodes 13 polypeptides which serve as integral membrane subunits for 3 components of the electron transport chain and ATP synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "The mitochondrial genome encodes 13 polypeptides which serve as integral membrane subunits for 3 components of the electron transport chain and ATP synthase (herein referred to as mtOXPHOS proteins).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mitochondrial genome composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "769071bd-1648-4da7-8f52-6ce98a5968ca",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C42",
+      "claim": "The protein levels of mtOXPHOS and nuOXPHOS subunits must be coordinated in order to maintain proper stoichiometry of OXPHOS complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein levels of these subunits must be coordinated in order to maintain proper stoichoimetry of OXPHOS complexes (Cancer Genome Atlas Research Network et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cancer Genome Atlas Research Network et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "1895d7ba-d12f-425b-b936-497d11608555",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C43",
+      "claim": "In S. cerevisiae, the primary mode of regulation of mtOXPHOS and nuOXPHOS protein levels is through rapid translational, rather than transcriptional, synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a study of the coordination of mtOXPHOS and nuOXPHOS protein levels in S. cerevisae found that the primary mode of regulation was through rapid translational, rather than transcriptional, synchronization (Couvillion et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Couvillion et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "35689f1f-5181-4e21-b133-aca7d1485f55",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C44",
+      "claim": "In 9/13 cancer types, there was agreement in differential expression scores between mtOXPHOS and nuOXPHOS subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In 9/13 cancer types, we observed agreement in DE scores between mtOXPHOS and nuOXPHOS subunits (e.g. see volcano plot of KIRC in (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "aeec9e7f-0e88-47a5-a62a-410f787f5e7d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C45",
+      "claim": "Four cancer types (BLCA, BRCA, LUAD, and UCEC) have opposite patterns of differential expression in mtOXPHOS and nuOXPHOS genes.",
+      "claim_type": "EXPLICIT",
+      "source": "More interestingly, we found that four cancer types (BLCA, BRCA, LUAD, and UCEC) have opposite patterns of differential expression in mtOXPHOS and nuOXPHOS genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "c2d76d87-6773-4cd4-a4db-9f3a857b4b6e",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C46",
+      "claim": "In BRCA, nearly all mtOXPHOS genes are down-regulated in tumors compared to normal tissue, while nearly all nuOXPHOS genes had increased mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in BRCA, while nearly all mtOXPHOS genes are down-regulated in tumors compared to normal tissue (mirroring the mtDNA copy number depletion in BRCA), nearly all nuOXPHOS genes actually had increased mRNA levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential expression analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "ac907a4a-46c1-4d9a-a4b5-5a8cf8b3eefa",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C47",
+      "claim": "For a functional electron transport chain, subunits of each OXPHOS complex must assemble with compatible stoichiometries in a process that requires coordination of individual subunit protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "For a functional electron transport chain, subunits of each OXPHOS complex must assemble with compatible stoichiometries in a process that requires coordination of individual subunit protein levels (Mouchiroud et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mouchiroud et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "bc068b4d-0979-4dc8-bb9a-ff33be595f92",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C48",
+      "claim": "Treatment of differentiated C2C12 murine myotubes with certain drugs (including eukaryotic translation inhibitors) induced anti-correlated changes in nuOXPHOS and mtOXPHOS genes.",
+      "claim_type": "EXPLICIT",
+      "source": "One report by Wagner, Kitami, and colleagues found that treatment of differentiated C2C12 murine myotubes with certain drugs (including eukaryotic translation inhibitors) induced anti-correlated changes in nuOXPHOS and mtOXPHOS genes, respectively (Wagner et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wagner et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "f9250541-ad19-4b94-914d-58c1d5e4053d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C49",
+      "claim": "The sudden shift of S. cerevisiae to a non-fermentable carbon source led to rapid induction of transcriptional changes in nuOXPHOS, but not mtOXPHOS.",
+      "claim_type": "EXPLICIT",
+      "source": "Separately, Couvillion and colleagues reported that the sudden shift of S. cerevisae to a non-fermentable carbon source led to rapid induction of transcriptional changes in nuOXPHOS, but not mtOXPHOS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to work by Couvillion and colleagues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "0149122a-fab2-4010-8067-42d6d9e0792d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C50",
+      "claim": "Rapid redistribution of mitochondrial ribosomes supported fast adaptation to respiration in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, rapid redistribution of mitochondrial ribosomes supported fast adapation to respiration (e.g. via an increase in translation efficiency of Complexes III and IV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to work by Couvillion and colleagues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "878bcf49-80cc-4fe0-b038-1ba624e91655",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C51",
+      "claim": "Five cancer types (kidney clear cell, kidney papillary, head and neck squamous cell, liver, and esophageal) were mtDNA-depleted, under-expressed mtRNAs, and under-expressed nuOXPHOS genes, in comparison to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Five cancer types (kidney clear cell, kidney papillary, head and neck squamous cell, liver, and esophageal) were mtDNA-depleted, under-expressed mtRNAs, and under-expressed nuOXPHOS genes, in comparison to normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple analyses in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "db30e552-0854-4376-b038-30f1f2c14f0f",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C52",
+      "claim": "A drop in the protein expression of mtDNA-encoded OXPHOS subunits will not necessarily precipitate a drop in respiration unless it is sufficiently large.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, because cells harbor excess respiratory capacity, a drop in the protein expression of mtDNA-encoded OXPHOS subunits will not necessarily precipitate a drop in respiration unless it is sufficiently large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge of excess respiratory capacity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3314ffd1-ba07-443f-891d-0e47c58264ee",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C53",
+      "claim": "Clear-cell renal cell carcinomas are driven by homozygous loss of VHL, which leads to activation of hypoxia inducible factor (HIF), and subsequently increased transcription of glycolytic enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, clear-cell renal cell carcinomas are driven by homozygous loss of VHL, which leads to activation of hypoxia inducible factor (HIF), and subsequently increased transcription of glycolytic enzymes (Creighton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Creighton et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "452e57e2-5d10-4800-962e-a7ec79a5c7a7",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C54",
+      "claim": "The signature of HIF activation is evident in gene expression data and metabolomic measurements of KIRC tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The signature of HIF activation is evident not only in gene expression data, but also in metabolomic measurements of KIRC tumors (Hakimi et al., 2016), and suggests that KIRC tumors experience a drop in respiration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hakimi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "45419162-96c8-4510-a734-cff82c0a90a6",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C55",
+      "claim": "KIRC tumors exhibit increased levels (compared to normal tissue) of metabolites upstream of SDH (succinate dehydrogenase, Complex II), i.e. citrate, cis-aconitate, and succinate, and decreased levels of metabolites downstream of SDH (fumarate and malate).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, KIRC tumors exhibit increased levels (compared to normal tissue) of metabolites upstream of SDH (succinate dehydrogenase, Complex II), i.e. citrate, cis-aconitate, and succinate, and decreased levels of metabolites downstream of SDH (fumarate and malate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to metabolomic data from Hakimi et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "c6ca82c4-17fc-40e9-8e04-d7c62b5605c4",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C56",
+      "claim": "The partitioning of changes in metabolite levels in KIRC could arise by a decrease in the activity of the electron transport chain and SDH, which would induce a metabolic bottleneck and the accumulation (depletion) of metabolites upstream (downstream) of SDH.",
+      "claim_type": "EXPLICIT",
+      "source": "This partitioning of changes in metabolite levels could arise by a decrease in the activity of the electron transport chain and SDH, which would induce a metabolic bottleneck and the accumulation (depletion) of metabolites upstream (downstream) of SDH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on metabolomic data patterns.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "81bf0dae-22b5-419d-8da5-ca3b712f7dce",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C57",
+      "claim": "Aspartate biosynthesis is heavily reliant on electron acceptors produced by mitochondrial respiration, and respiration-deficient cells become limited by the availability of aspartate.",
+      "claim_type": "EXPLICIT",
+      "source": "In some cases, respiration may be critical to these processes; for example, aspartate biosynthesis is heavily reliant on electron acceptors produced by mitochondrial respiration, and respiration-deficient cells become limited by the availability of aspartate (Birsoy et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Birsoy et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "fd4b3c0d-823b-4edc-a9d9-6802ed9fca34",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C58",
+      "claim": "Cytosolic acetyl-CoA utilized for lipogenesis is produced from the action of ATP-citrate lyase on mitochondrial citrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the ETC, cytosolic acetyl-CoA utilized for lipogenesis is produced from the action of ATP-citrate lyase on mitochondrial citrate, and substantial evidence supports the critical role of mitochondrial metabolism in producing adequate one-carbon precursors for nucleotide biosynthesis (Ahn and Metallo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ahn and Metallo, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "17289dbf-d7df-4249-b120-b68bd1326ab8",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C59",
+      "claim": "Mitochondrial metabolism plays a critical role in producing adequate one-carbon precursors for nucleotide biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond the ETC, cytosolic acetyl-CoA utilized for lipogenesis is produced from the action of ATP-citrate lyase on mitochondrial citrate, and substantial evidence supports the critical role of mitochondrial metabolism in producing adequate one-carbon precursors for nucleotide biosynthesis (Ahn and Metallo, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ahn and Metallo, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "2859ec11-d4af-42e1-a40a-045bd082e185",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C62",
+      "claim": "Lung adenocarcinomas were the only cancer type to accumulate mtDNA copies compared to normal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "To highlight a single example, lung adenocarcinomas were the only cancer type to accumulate mtDNA copies compared to normal tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to results from the prior study by Reznik et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "1f7a5b6d-f6e9-4499-8b02-b795bc928d9e",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C63",
+      "claim": "Lung adenocarcinomas had lower mtRNA levels of 6/13 MT genes using mtRNA data.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mtRNA data, however, these tumors had lower mtRNA levels of 6/13 MT genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential expression analysis in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "b7b5eea5-7d60-4e07-835e-d94e4e3775c5",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C65",
+      "claim": "Mitonuclear protein imbalance in C. elegans promotes longevity via activation of the mitochondrial unfolded protein response (UPRMT).",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies of mitochondrial-nuclear (mitonuclear) protein imbalance in C. elegans claimed that it promotes longevity via activation of the mitochondrial unfolded protein response (UPRMT), a transcriptional response preserving mitochondrial function in the face of stress (Cancer Genome Atlas Research Network et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cancer Genome Atlas Research Network et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "7ee558e6-d277-475a-b837-3a73efb04acd",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C66",
+      "claim": "Activation of the UPRMT promotes tolerance of mutant mtDNA levels by activating mitochondrial biogenesis in an effort to recover OXPHOS activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, two recent studies reported activation of the UPRMT counterintuitively promoted tolerance of mutant mtDNA levels by activating mitochondrial biogenesis in an effort to recover OXPHOS activity (Lin et al., 2016; Gitschlag et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lin et al., 2016 and Gitschlag et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "5472ec5f-e8ef-47e3-ace2-e5ec46d2020d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C67",
+      "claim": "The physiology and molecular constitution of mitochondria varies substantially from one tissue to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well-appreciated that the physiology and molecular constitution (Fern\u00e1ndez-Vizarra et al., 2011; Calvo and Mootha, 2010) of mitochondria varies substantially from one tissue to the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Fern\u00e1ndez-Vizarra et al., 2011 and Calvo and Mootha, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "01ca1e02-3f6c-41c7-a17e-6ac953786438",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C68",
+      "claim": "Across all tissues, mtRNAs were highly transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all tissues, mtRNAs were highly transcribed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation from the expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "61ba2c4c-c85d-42e8-b4fa-7a3f83fbe0de",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C69",
+      "claim": "Substantial differences in the abundance of any given mitochondrial transcript were observed from one tissue to the next.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed substantial differences in the abundance of any given mitochondrial (MT) transcript from one tissue to the next (as evaluated using TPM) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "b03fb5f9-63c2-4162-9985-f7ba60bcdf17",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C70",
+      "claim": "Samples derived from the kidney (TCGA studies KICH, KIRC, and KIRP) had exceptionally high levels of mtRNAs compared to other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared to other tissues, samples derived from the kidney (TCGA studies KICH, KIRC, and KIRP, see Materials and methods for TCGA abbreviations) had exceptionally high levels of mtRNAs, while samples from lung adenocarcinoma (LUAD) expressed comparatively low levels of mtRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "bb47cb57-becc-47d1-b53d-28afc982f93b",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C71",
+      "claim": "Samples from lung adenocarcinoma (LUAD) expressed comparatively low levels of mtRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared to other tissues, samples derived from the kidney (TCGA studies KICH, KIRC, and KIRP, see Materials and methods for TCGA abbreviations) had exceptionally high levels of mtRNAs, while samples from lung adenocarcinoma (LUAD) expressed comparatively low levels of mtRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "4b52188a-9af4-471a-a3c7-d4cda65b7bf9",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C72",
+      "claim": "There is good agreement between mtRNA expression and MT protein levels with respect to their ordering across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing our results to a prior study of MT protein abundances from the mouse (Pagliarini et al., 2008), we found good agreement between protein and mtRNA levels with respect to their ordering across tissues, (i.e. mtRNA expression and protein levels of MT-ND6 were highest in kidney, at moderate levels in liver, colon, and stomach, and lowest in lung).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with data from Pagliarini et al., 2008.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "7790c859-1c56-4d7f-8317-1ffdeaa76ccb",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C73",
+      "claim": "NUMTs are, in the vast majority of cases, integrated into intergenic/intronic regions of the nuclear genome, and are unlikely to be transcribed.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that NUMTs are, in the vast majority of cases, integrated into intergenic/intronic regions of the nuclear genome, and are unlikely to be transcribed (Collura et al., 1996; Dayama et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Collura et al., 1996 and Dayama et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "0a352e2b-f6c2-4f63-a666-f63bfe789c72",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C74",
+      "claim": "In the vast majority of samples, bona fide expression from mtDNA is 2\u20133 orders of magnitude greater than the expression of mtDNA pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the vast majority of samples, bona fide expression from mtDNA is 2\u20133 orders of magnitude greater than the expression of mtDNA pseudogenes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "91ce8f87-5e84-4b7a-9ad7-60e7c39a804e",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C75",
+      "claim": "The correlation between mtDNA copy number and mtRNA expression was highly tissue-type-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the correlation between mtDNA copy number and mtRNA expression was highly tissue-type-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of correlation analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "1d9b8149-0af4-4e3e-8193-85b067fbfafb",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C76",
+      "claim": "The data support a plausible correlation between mtDNA copy number and 'steady-state' mtRNA abundance across many but not all tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the data support a plausible correlation between mtDNA copy number and 'steady-state' mtRNA abundance across many but not all tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "d1bd68d6-2a88-4b8b-9eda-726075f6f483",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C77",
+      "claim": "Correlations between mtDNA and mtRNA were not necessarily homogeneous between tumor and normal samples from the same tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, correlations between mtDNA and mtRNA were not necessarily homogeneous between tumor and normal samples from the same tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from correlation analysis, particularly in KICH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "b88e6bca-2581-413d-b8cc-7044ba54f725",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C78",
+      "claim": "Several recent reports have described somatic changes to the mitochondrial genome (mtDNA) in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent reports have described somatic changes to the mitochondrial genome (mtDNA) in tumors, which have expanded our knowledge of cancer genetics as well as basic mitochondrial biology (Davis et al., 2014; Joshi et al., 2015; Ju et al., 2014; Stewart et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Davis et al., 2014; Joshi et al., 2015; Ju et al., 2014; Stewart et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "bd12062f-114e-4c81-bdce-fc61c4fb2a43",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C79",
+      "claim": "RNA-sequencing data was re-aligned from TCGA tumors to quantify mtDNA expression (mtRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use orthogonal RNA-sequencing data to quantify mtDNA expression (mtRNA), and report analogously lower expression of mtRNA in tumors (relative to normal tissue) across a majority of cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "4c2e7cf1-7651-4444-a0da-11bb3de9e97d",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C80",
+      "claim": "Lower expression of mtRNA in tumors (relative to normal tissue) was observed across a majority of cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use orthogonal RNA-sequencing data to quantify mtDNA expression (mtRNA), and report analogously lower expression of mtRNA in tumors (relative to normal tissue) across a majority of cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "5ef0d2b2-7c6f-471b-b1e0-67ddcc7674b6",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C81",
+      "claim": "Several cancers exhibit a trio of mutually consistent evidence suggesting a drop in respiratory activity: depletion of mtDNA copy number, decreases in mtRNA levels, and decreases in expression of nuDNA-encoded respiratory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Several cancers exhibit a trio of mutually consistent evidence suggesting a drop in respiratory activity: depletion of mtDNA copy number, decreases in mtRNA levels, and decreases in expression of nuDNA-encoded respiratory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from multiple analyses in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "82cdc12b-d215-4941-9919-24f33753c529",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C82",
+      "claim": "A minority of cancer types exhibit a drop in mtDNA expression but an increase in nuDNA expression of respiratory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, a minority of cancer types exhibit a drop in mtDNA expression but an increase in nuDNA expression of respiratory proteins, with unknown implications for respiratory activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of findings from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "87437d2b-343d-456e-a498-baad2ae8624f",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "claim_id": "C83",
+      "claim": "The results indicate suppression of respiratory gene expression across many cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate suppression of respiratory gene expression across many cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on multiple analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17e9e92b-c193-494d-a0b8-dfde3427897c",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors established that mtRNA quantification from RNA-seq is valid and not confounded by nuclear mitochondrial pseudogenes (NUMTs). They show that bona fide mtDNA expression is 2-3 orders of magnitude greater than NUMT expression, and two independent quantification methods (RSEM and featureCounts) produce concordant results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 provide strong quality control evidence that NUMTs do not confound mtRNA measurements. The comparison of two computational methods with different handling of multi-mapping reads (C79, Figure 1\u2014figure supplement 1-2) provides orthogonal validation. The methodology is sound and appropriately controlled.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "7edfddba-7a66-46a8-aa66-c9d62942036e",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "mtRNA expression varies substantially across tissue types, with kidney samples showing exceptionally high levels and lung adenocarcinoma showing low levels. This tissue-specific pattern is concordant with prior protein-level measurements in mouse tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 describe tissue-specific baseline expression patterns supported by Figure 1\u2014figure supplement 3. The concordance with mouse protein data (C72, Pagliarini et al., 2008) provides cross-species and cross-platform validation, strengthening confidence in the measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The majority of cancer types show lower mtRNA expression in tumors compared to normal tissue, with five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) showing decreased expression of all 13 mtDNA-encoded genes. Complex I genes are more frequently downregulated than Complex IV and V genes across cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C23-C24, and C80 are directly supported by differential expression analysis shown in Figure 2. The statistical analysis using limma voom with TMM normalization is appropriate. The concordance with prior mtDNA copy number findings (C9) provides independent validation. Sample sizes appear adequate for most cancer types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chromophobe renal cell carcinomas (KICH) uniquely show >2-fold overexpression of all 13 mtRNA genes in tumors compared to normal tissue, despite no increase in mtDNA copy number. The authors interpret this counterintuitive finding as reflecting compensatory upregulation in response to mitochondrial dysfunction, similar to the oncocytoma phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11-C13 are well-supported by data in Figure 2. However, the mechanistic interpretation (C14-C18) relies heavily on inference from prior literature about oncocytomas. The claim that increased mtRNA 'likely reflects a drop in respiration' (C18) is speculative without direct respiratory measurements. The authors appropriately note this requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "9bfa34ea-72d7-4fbe-8c8b-179470698840",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Higher mtRNA expression is associated with improved overall survival in five cancer types (ACC, KICH, LGG, PAAD, LIHC) and with less aggressive disease in KIRP. Three of these associations (ACC, KICH, LGG) were also observed with mtDNA copy number in prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 are supported by Cox regression analysis (Figure 3) with appropriate multiple hypothesis correction. The concordance with prior mtDNA copy number associations (C27) and with nuclear-encoded mitochondrial genes (C29, Gaude and Frezza 2016) provides convergent validity. Statistical methods are appropriate for survival analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The correlation between mtDNA copy number and mtRNA expression is highly tissue-specific. Seven cancer types show strong positive correlation (p<10\u207b\u2075), seven show weak but significant correlation, and four show no significant correlation. Among cancer types with mtDNA depletion, five of seven show positive correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 and C75-C76 are supported by comprehensive correlation analysis (Figure 4, Figure 4\u2014figure supplement 1) using appropriate non-parametric Spearman correlation with multiple testing correction. The tissue-specificity is clearly demonstrated. The observation about MT-ND5 and MT-ND6 (C34) is appropriately qualified as inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "a1d32eb7-dfac-43ac-96ef-559e8356a84b",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "In KICH, tumor and normal samples show distinct correlation patterns between mtDNA copy number and mtRNA levels, with tumors having higher steady-state mtRNA/mtDNA ratios. This suggests compensation for mitochondrial dysfunction occurs via transcriptional mechanisms rather than changes in mtDNA ploidy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by data in Figure 4\u2014figure supplement 3 showing distinct trend lines for tumor vs. normal samples. The interpretation (C39) is reasonable given the known prevalence of mtDNA mutations in KICH, though it remains inferential without direct mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "bfd8fe86-7894-4536-8376-855b050ffc59",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In 9 of 13 cancer types, mtDNA-encoded (mtOXPHOS) and nuclear-encoded (nuOXPHOS) respiratory genes show concordant differential expression patterns. However, four cancer types (BLCA, BRCA, LUAD, UCEC) show opposite patterns, with mtOXPHOS genes downregulated while nuOXPHOS genes are upregulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 are directly supported by differential expression analysis shown in Figure 5. The differential expression score methodology is clearly defined and appropriate. The identification of discordant cancer types is data-driven and statistically sound. The biological interpretation requires caution as transcription may not reflect protein levels or activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "3dfc9d4c-bd59-406c-8615-75a8d93d5d8f",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Five cancer types (kidney clear cell, kidney papillary, head and neck squamous cell, liver, and esophageal) show a consistent trio of evidence suggesting suppressed respiratory activity: mtDNA depletion, decreased mtRNA levels, and decreased nuOXPHOS gene expression. Overall, the results indicate suppression of respiratory gene expression across many cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C81, and C83 integrate multiple lines of evidence from the study. The convergence of three independent measures (mtDNA copy number from prior work, mtRNA expression, and nuOXPHOS expression) provides strong support for the conclusion. However, the authors appropriately note that actual respiratory flux measurements are needed for definitive confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "062a1532-b31f-43c4-a2c7-bddc9dc139a5",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lung adenocarcinoma (LUAD) shows discordant patterns: it is the only cancer type with increased mtDNA copy number (from prior study), yet shows decreased expression of 6 of 13 mtRNA genes, suggesting transcriptional compensation for increased mtDNA copy number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C62-C63 identify an important inconsistency between mtDNA copy number and mtRNA expression. The data supporting decreased mtRNA expression (C63, Figure 2) is solid. The interpretation of 'transcriptional compensation' (C10) is reasonable but speculative. The authors appropriately discuss this as an unexpected finding requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "87710070-8021-4942-a7d2-4fe7ff234d0c",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The mitochondrial genome encodes 13 protein-coding genes that are critical subunits of the electron transport chain and ATP synthase. These genes are transcribed polycistronically but undergo substantial post-transcriptional regulation resulting in uneven steady-state abundances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C19-C22, and C40 describe established knowledge about mitochondrial biology, appropriately supported by citations to primary literature (Pagliarini et al., 2008; Mercer et al., 2011; Rorbach and Minczuk, 2012). This provides necessary biological context for interpreting the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "b0121d54-3186-480b-8d86-984bfa3b6046",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work showed mtDNA depletion in several cancer types. Cells harbor excess respiratory capacity, so modest decreases in ETC protein levels may not impact basal respiration, but sufficiently large reductions will decrease respiratory ATP generation, which cancer cells can partially compensate for via increased glycolysis (Warburg effect).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6 and C52 appropriately cite prior work (Reznik et al., 2016; Brand and Nicholls, 2011) and established cancer biology. The logical framework connecting mtDNA depletion to potential respiratory changes is sound, though the authors correctly note that the magnitude of change required to affect respiration is uncertain without direct measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "287ccf54-0c32-4c02-b34a-993b82da1299",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Coordination of mtOXPHOS and nuOXPHOS protein levels is critical for proper OXPHOS complex stoichiometry. Studies in S. cerevisiae and C2C12 cells suggest that this coordination occurs primarily through translational rather than transcriptional mechanisms, which may explain discordant transcriptional patterns observed in some cancer types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 and C47-C50 appropriately cite relevant literature (Couvillion et al., 2016; Wagner et al., 2008; Mouchiroud et al., 2013). The authors use this prior work to contextualize their findings of discordant mtOXPHOS/nuOXPHOS transcription. The inference that translational regulation may explain transcriptional discordance is reasonable but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "c737a1be-1049-4934-af75-18d7ac2ba1bb",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Clear-cell renal cell carcinomas (KIRC) are driven by VHL loss leading to HIF activation and increased glycolysis. Metabolomic data show accumulation of metabolites upstream of Complex II and depletion downstream, consistent with decreased electron transport chain activity and suggesting that mtRNA changes may reflect actual respiratory changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 appropriately cite prior work (Creighton et al., 2013; Hakimi et al., 2016) and use metabolomic data to support the interpretation that mtRNA changes reflect functional respiratory changes. The metabolite pattern (C55) is consistent with the proposed mechanism (C56), though this remains correlative rather than causative evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "2b0755d5-55ad-4a94-9abd-546a4194e547",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Mitochondrial metabolism provides critical functions beyond ATP generation, including aspartate biosynthesis (which requires electron acceptors from respiration), acetyl-CoA for lipogenesis, and one-carbon precursors for nucleotide biosynthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 cite appropriate literature (Birsoy et al., 2015; Ahn and Metallo, 2015) describing established roles of mitochondrial metabolism. This provides important context for why cancer cells may not completely eliminate mitochondrial function despite suppressing respiratory gene expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "e5f08f12-d988-43d7-985b-0777d28600f5",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior studies in C. elegans showed that mitonuclear protein imbalance activates the mitochondrial unfolded protein response (UPR^MT), which can promote longevity and tolerance of mutant mtDNA by activating mitochondrial biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 appropriately cite relevant literature (Lin et al., 2016; Gitschlag et al., 2016). The authors use this to suggest a potential mechanism for how cancer cells might tolerate mitochondrial dysfunction, though they appropriately note this is speculative and requires investigation in mammalian cancer models.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    },
+    {
+      "id": "6926b9bf-5020-4275-98d8-9c54cd654319",
+      "content_id": "424a3305-5dba-49e2-8b28-b09c334a1009",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The physiology and molecular constitution of mitochondria varies substantially across different tissue types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 cites appropriate literature (Fern\u00e1ndez-Vizarra et al., 2011; Calvo and Mootha, 2010) establishing tissue-specific mitochondrial variation. This provides context for the tissue-specific patterns of mtDNA-mtRNA correlation and differential expression observed in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:32:57.788787Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7790c859-1c56-4d7f-8317-1ffdeaa76ccb",
+      "result_id": "17e9e92b-c193-494d-a0b8-dfde3427897c"
+    },
+    {
+      "claim_id": "0a352e2b-f6c2-4f63-a666-f63bfe789c72",
+      "result_id": "17e9e92b-c193-494d-a0b8-dfde3427897c"
+    },
+    {
+      "claim_id": "bd12062f-114e-4c81-bdce-fc61c4fb2a43",
+      "result_id": "17e9e92b-c193-494d-a0b8-dfde3427897c"
+    },
+    {
+      "claim_id": "01ca1e02-3f6c-41c7-a17e-6ac953786438",
+      "result_id": "7edfddba-7a66-46a8-aa66-c9d62942036e"
+    },
+    {
+      "claim_id": "61ba2c4c-c85d-42e8-b4fa-7a3f83fbe0de",
+      "result_id": "7edfddba-7a66-46a8-aa66-c9d62942036e"
+    },
+    {
+      "claim_id": "b03fb5f9-63c2-4162-9985-f7ba60bcdf17",
+      "result_id": "7edfddba-7a66-46a8-aa66-c9d62942036e"
+    },
+    {
+      "claim_id": "bb47cb57-becc-47d1-b53d-28afc982f93b",
+      "result_id": "7edfddba-7a66-46a8-aa66-c9d62942036e"
+    },
+    {
+      "claim_id": "4b52188a-9af4-471a-a3c7-d4cda65b7bf9",
+      "result_id": "7edfddba-7a66-46a8-aa66-c9d62942036e"
+    },
+    {
+      "claim_id": "a4201f27-a904-4dbb-8e1b-df0c412c621f",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "5a588ab4-6af5-4f59-b2e2-884bffef64ec",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "199c23ad-ea50-47f8-bf9f-60395fddc357",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "3cbabd02-4404-4d5b-88b0-6fdd25d0548a",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "15368f88-307d-4135-bd0c-90d53ddef9ab",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "4c2e7cf1-7651-4444-a0da-11bb3de9e97d",
+      "result_id": "96e640bb-9cf5-41e9-b6a1-9415859d1a13"
+    },
+    {
+      "claim_id": "58aede33-af21-4b77-912a-7fdd09e6e3cc",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "adfa9bb4-aaef-4c96-91dc-239486f2ddff",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "bb6654c2-644a-4ad7-98c7-2f55f6c9a3c5",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "5ab05c7b-45f3-4b81-bf8e-c95923ed5d79",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "50186513-cb69-4706-8bae-0477bcbd5961",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "59f39058-6f36-4123-a307-32d8a7314431",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "7b6bc586-debe-4bbf-aa28-c6c49b4ab451",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "e290f422-5091-4c4e-a9c2-393773eb4a70",
+      "result_id": "58867eb9-00fc-4cc5-a58e-d5e153b9b5b1"
+    },
+    {
+      "claim_id": "cc545f38-065f-4ceb-a8e3-13238f850e16",
+      "result_id": "9bfa34ea-72d7-4fbe-8c8b-179470698840"
+    },
+    {
+      "claim_id": "da816fc4-bf3e-4382-8e14-9267826922c6",
+      "result_id": "9bfa34ea-72d7-4fbe-8c8b-179470698840"
+    },
+    {
+      "claim_id": "9ce9c5ea-dbc7-463d-bea8-dbc820a54064",
+      "result_id": "9bfa34ea-72d7-4fbe-8c8b-179470698840"
+    },
+    {
+      "claim_id": "cac84c2d-e7d4-4669-bef6-338bc4c86b35",
+      "result_id": "9bfa34ea-72d7-4fbe-8c8b-179470698840"
+    },
+    {
+      "claim_id": "275aabf8-6472-47df-933b-6bdc9f8e21bb",
+      "result_id": "9bfa34ea-72d7-4fbe-8c8b-179470698840"
+    },
+    {
+      "claim_id": "a2c0fc3b-1c5e-4cce-9793-baa981633602",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "3e07d1f6-e8fc-4ae1-a598-60c095ebdf14",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "ee8cb293-915c-487f-8d08-d1f539f73fdf",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "d64c7156-12c7-4a04-847f-b57554ce2eee",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "f310fc83-6647-44a1-a036-05fbae0076a0",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "91ce8f87-5e84-4b7a-9ad7-60e7c39a804e",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "1d9b8149-0af4-4e3e-8193-85b067fbfafb",
+      "result_id": "2a4343a4-c60c-4170-a18e-c9df0b8853c9"
+    },
+    {
+      "claim_id": "96079b8d-c32e-4e4d-9fac-598f5df75d2c",
+      "result_id": "a1d32eb7-dfac-43ac-96ef-559e8356a84b"
+    },
+    {
+      "claim_id": "7ae71823-7953-42bb-a936-cee420ce1cef",
+      "result_id": "a1d32eb7-dfac-43ac-96ef-559e8356a84b"
+    },
+    {
+      "claim_id": "5b6069b5-e867-4a7e-8292-009f9c7c2d34",
+      "result_id": "a1d32eb7-dfac-43ac-96ef-559e8356a84b"
+    },
+    {
+      "claim_id": "35689f1f-5181-4e21-b133-aca7d1485f55",
+      "result_id": "bfd8fe86-7894-4536-8376-855b050ffc59"
+    },
+    {
+      "claim_id": "aeec9e7f-0e88-47a5-a62a-410f787f5e7d",
+      "result_id": "bfd8fe86-7894-4536-8376-855b050ffc59"
+    },
+    {
+      "claim_id": "c2d76d87-6773-4cd4-a4db-9f3a857b4b6e",
+      "result_id": "bfd8fe86-7894-4536-8376-855b050ffc59"
+    },
+    {
+      "claim_id": "878bcf49-80cc-4fe0-b038-1ba624e91655",
+      "result_id": "3dfc9d4c-bd59-406c-8615-75a8d93d5d8f"
+    },
+    {
+      "claim_id": "5ef0d2b2-7c6f-471b-b1e0-67ddcc7674b6",
+      "result_id": "3dfc9d4c-bd59-406c-8615-75a8d93d5d8f"
+    },
+    {
+      "claim_id": "87437d2b-343d-456e-a498-baad2ae8624f",
+      "result_id": "3dfc9d4c-bd59-406c-8615-75a8d93d5d8f"
+    },
+    {
+      "claim_id": "afb9835a-423f-4334-8a1f-2b4f2aff8582",
+      "result_id": "062a1532-b31f-43c4-a2c7-bddc9dc139a5"
+    },
+    {
+      "claim_id": "2859ec11-d4af-42e1-a40a-045bd082e185",
+      "result_id": "062a1532-b31f-43c4-a2c7-bddc9dc139a5"
+    },
+    {
+      "claim_id": "1f7a5b6d-f6e9-4499-8b02-b795bc928d9e",
+      "result_id": "062a1532-b31f-43c4-a2c7-bddc9dc139a5"
+    },
+    {
+      "claim_id": "eb45ef55-ad35-4f15-8df8-d63287901b9d",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "8c3c5ba7-de54-4e33-b49e-ef513c01d65c",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "3fc07afd-0328-4b91-83d8-dd7bee437a07",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "4cfdc9e5-ec2c-4187-b2f6-a3811aa3a4b8",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "91cdf387-7387-4495-936a-c65adf24fb03",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "b069490d-9ae5-460c-98bc-cc1f4d9e6274",
+      "result_id": "87710070-8021-4942-a7d2-4fe7ff234d0c"
+    },
+    {
+      "claim_id": "db3f9f40-79d0-49b1-b798-2abd9f619267",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "6b53015d-b92f-44ff-bbf4-8bc55c0cbe77",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "50d71e0c-3b61-41ec-b69f-5b6f257333ad",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "3e8d9865-28ef-4a88-b3e6-ae7265b495b9",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "e273c630-0708-418b-8067-87c6fc34fe64",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "db30e552-0854-4376-b038-30f1f2c14f0f",
+      "result_id": "b0121d54-3186-480b-8d86-984bfa3b6046"
+    },
+    {
+      "claim_id": "769071bd-1648-4da7-8f52-6ce98a5968ca",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "1895d7ba-d12f-425b-b936-497d11608555",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "ac907a4a-46c1-4d9a-a4b5-5a8cf8b3eefa",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "bc068b4d-0979-4dc8-bb9a-ff33be595f92",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "f9250541-ad19-4b94-914d-58c1d5e4053d",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "0149122a-fab2-4010-8067-42d6d9e0792d",
+      "result_id": "287ccf54-0c32-4c02-b34a-993b82da1299"
+    },
+    {
+      "claim_id": "3314ffd1-ba07-443f-891d-0e47c58264ee",
+      "result_id": "c737a1be-1049-4934-af75-18d7ac2ba1bb"
+    },
+    {
+      "claim_id": "452e57e2-5d10-4800-962e-a7ec79a5c7a7",
+      "result_id": "c737a1be-1049-4934-af75-18d7ac2ba1bb"
+    },
+    {
+      "claim_id": "45419162-96c8-4510-a734-cff82c0a90a6",
+      "result_id": "c737a1be-1049-4934-af75-18d7ac2ba1bb"
+    },
+    {
+      "claim_id": "c6ca82c4-17fc-40e9-8e04-d7c62b5605c4",
+      "result_id": "c737a1be-1049-4934-af75-18d7ac2ba1bb"
+    },
+    {
+      "claim_id": "81bf0dae-22b5-419d-8da5-ca3b712f7dce",
+      "result_id": "2b0755d5-55ad-4a94-9abd-546a4194e547"
+    },
+    {
+      "claim_id": "fd4b3c0d-823b-4edc-a9d9-6802ed9fca34",
+      "result_id": "2b0755d5-55ad-4a94-9abd-546a4194e547"
+    },
+    {
+      "claim_id": "17289dbf-d7df-4249-b120-b68bd1326ab8",
+      "result_id": "2b0755d5-55ad-4a94-9abd-546a4194e547"
+    },
+    {
+      "claim_id": "b7b5eea5-7d60-4e07-835e-d94e4e3775c5",
+      "result_id": "e5f08f12-d988-43d7-985b-0777d28600f5"
+    },
+    {
+      "claim_id": "7ee558e6-d277-475a-b837-3a73efb04acd",
+      "result_id": "e5f08f12-d988-43d7-985b-0777d28600f5"
+    },
+    {
+      "claim_id": "5472ec5f-e8ef-47e3-ace2-e5ec46d2020d",
+      "result_id": "6926b9bf-5020-4275-98d8-9c54cd654319"
+    }
+  ],
+  "comparisons": []
+}

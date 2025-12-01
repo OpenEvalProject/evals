@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "IL-2 production by Th cells in vivo is binary (digital) at the single-cell level, where increasing antigen dose increases the proportion of IL-2-producing cells but not the amount of IL-2 per cell. IL-2 expression peaks between 6-18 hours after immunization, and the IL-2 secretion assay detects up to 75% IL-2-producing Th cells at the highest antigen dose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from in vitro precedent (C1), in vivo dose-response experiments (C2-C4), kinetics (C5), and methodological validation (C6-C7) that IL-2 is produced in a binary fashion. The data show consistent patterns across multiple antigen doses and time points, with appropriate controls and method comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "CD25 and CD69 expression is graded (not binary) in vivo at both single-cell and population levels, with expression levels correlating with antigen dose. CD25 and high CD69 expression are preferentially upregulated via TCR-stimulated T cell activation in antigen-specific cells, while bystander CD69 expression occurs on endogenous cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C15 demonstrate graded expression of CD25 and CD69 through dose-response data (C8-C11), antigen-specificity experiments (C12-C14), and bystander activation observations (C15). The data contrast with some in vitro studies and provide clear evidence of graded expression patterns in vivo, supported by Figure 1B-C and supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "IL-2 secretion and CD25 expression reach maximum between 3-6 hours after immunization, with CD25 persisting longer than IL-2. CD25 expression is similar in IL-2-producing and IL-2-nonproducing cells, suggesting that antigen amount and paracrine (rather than autocrine) IL-2 action regulate CD25 expression in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 provide temporal kinetics data (C16-C17) and co-staining experiments (C18-C19) that support the conclusion about paracrine IL-2 action (C20). The observation that IL-2+ and IL-2- cells have similar CD25 expression levels is a key finding that challenges autocrine models, though the inference in C20 could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The probability of IL-2 production correlates with c-Fos amount per cell but is independent of NFATc2 amounts within their physiological range, consistent with the MEK/ERK/AP1 axis playing an important role in translating TCR signaling into proportional gene activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 present quartile analysis data from Figure 1\u2014figure supplement 4 showing differential correlation of c-Fos (but not NFATc2) with IL-2 production probability. C23 provides supporting literature context. The data are consistent with the proposed mechanism, though the quartile analysis approach and physiological range definition could be more explicitly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24"
+    ],
+    "result": "CD25 expression peaks between 12 and 24 hours after immunization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C24 is supported by citations to prior work (Lischke et al., 2012; Long and Adler, 2006) and is consistent with the kinetics data presented in the current study (C16-C17). This represents established knowledge confirmed by the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Computational modeling predicts that binary IL-2 expression (compared to graded) ensures a wide linear antigen response range for Th and Treg cells, with Treg cells always activated at lower antigen concentrations than Th cells. Binary secretion at the cellular level leads to graded activation at the population level, while graded secretion leads to switch-like population behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 and C62-C67 present computational modeling results comparing binary vs. graded IL-2 scenarios. The model predictions are internally consistent and based on reasonable assumptions about spatial distribution and diffusion. However, the model's predictive power depends on parameter choices and assumptions (detailed in Supplementary file 1), and some predictions (e.g., C26) await experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "STAT5 phosphorylation increases proportionally with antigen dose in both Th and Treg cells, with Treg cells showing much higher p-STAT5 levels than Th cells. At the highest antigen dose, only ~11% of Th cells are p-STAT5+ despite 75% secreting IL-2 and 95% expressing CD25, while ~50% of Treg cells are p-STAT5+. Endogenous Th cells show minimal p-STAT5, while both transgenic and endogenous Treg cells show similar STAT5 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 present p-STAT5 staining data from Figure 3C showing differential STAT5 activation between Th and Treg cells. The low p-STAT5 in Th cells despite high IL-2 production is a key observation. The authors acknowledge potential underestimation due to technical limitations (C30), and provide literature context (C32) for interpreting the results. The data are consistent across cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Antigen-specific Th cells are unresponsive to exogenous IL-2 treatment (in vivo or in vitro), likely due to negative crosstalk between antigen and IL-2 signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 present IL-2 treatment experiments (Figure 4) showing no increase in STAT5 activation in transgenic Th cells upon IL-2 treatment. The inference of negative crosstalk (C36) is supported by cited literature (Tkach et al., 2014; Villarino et al., 2007; Waysbort et al., 2013), though the mechanism is not directly demonstrated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "At low antigen amounts (<30 \u00b5g OVA), binary IL-2 expression preferentially activates a proportion of Treg cells, tailors the fraction of activated Treg cells proportionately to antigen amount, and ensures by spatial distribution that only Treg cells in close proximity to IL-2-producing Th cells are activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 integrate computational modeling predictions with experimental data to explain how binary IL-2 expression regulates Treg activation at low antigen doses. The conclusions are supported by the modeling results (Figure 3B, Figure 3\u2014figure supplement 1) and p-STAT5 data (Figure 3C), with additional support from cited literature (C39). The spatial distribution argument is particularly well-supported by the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "At low antigen concentrations (2-8 \u00b5g OVA), antigen-specific Th and Treg cells do not proliferate significantly above background (~10%). Above 8 \u00b5g OVA, both cell types proliferate proportionally to antigen dose, but Th cells show a stronger proliferative response than Treg cells (e.g., 94% vs. 65% dividing progenitors at 500 \u00b5g OVA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 present CFSE dilution data (Figure 5A-D) showing differential proliferation thresholds and responses between Th and Treg cells. The data are internally consistent and show clear dose-dependent patterns. The background proliferation level (C42) provides an important control. The stronger Th proliferation at high doses (C43-C45) contrasts with prior reports (Amado et al., 2013), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Antigen-specific Treg cells show less apoptosis than Th cells at low antigen concentrations (4-5% vs. 7-9% at 2-8 \u00b5g OVA), with Treg apoptosis increasing proportionally with antigen dose while Th apoptosis remains relatively constant. At low antigen concentrations, apoptosis does not significantly affect cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 present apoptosis data from Figure 5\u2014figure supplement 1 using two complementary assays (annexin V and FLICA). The differential apoptosis patterns between Th and Treg cells are clearly demonstrated. The conclusion that apoptosis is not a major factor at low doses (C49) is supported by comparison with cell count data, though the authors appropriately note that apoptosis represents a snapshot while proliferation data reflect cumulative history.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "At higher antigen concentrations (>8 \u00b5g OVA), living antigen-specific Th cells expand more than Treg cells, contrasting with a previous report using IL-2 reporter mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C50 integrates proliferation and apoptosis data (Figure 5B-D) to conclude differential expansion of Th vs. Treg cells at high antigen doses. The authors appropriately note the contrast with Amado et al., 2013, suggesting potential differences between experimental systems (adoptive transfer vs. IL-2 reporter mice). The conclusion is well-supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "IL-2 binding influences CD25 expression in Th cells, enhances TCR-induced CD25 upregulation at suboptimal stimulation, and is delivered to neighboring T cells via synapses. IL-2 production does not coincide with STAT5 phosphorylation, and IL-2 expression precedes CD25 expression in vivo (6-14 hr vs. 12-24 hr peaks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 synthesize prior literature (C68-C71) with the current study's kinetics data (C72) to establish the temporal and spatial relationship between IL-2 and CD25. The claims are well-supported by citations and consistent with the experimental observations. C72 represents an inference from the observed peak times that is consistent with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "IL-2 from strongly activated clones can co-opt weaker clones into activation and proliferation, and may act as a gatekeeper for T cell homeostasis by modulating effector T cell responses through Th-Treg interplay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 represent interpretations of the paracrine IL-2 action supported by multiple citations (Voisinne et al., 2015; Almeida et al., 2012, 2006; Amado et al., 2013; Reynolds et al., 2014). These claims integrate the current findings with established concepts in the field, though they are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The combination of binary IL-2 secretion and graded CD25 expression at the cellular level enables parallel control of single-cell activation probability and population heterogeneity by antigen amount. Binary IL-2 expression ensures a wide linear antigen response range and, at low antigen concentrations, safeguards selective STAT5 activation of closely adjacent Treg cells regardless of antigen specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 represent the main conclusions of the study, integrating experimental data (binary IL-2, graded CD25, p-STAT5 patterns) with computational modeling predictions. The conclusions are well-supported by the combined evidence, though some aspects (particularly the spatial distribution effects at low antigen doses) rely heavily on modeling predictions. The claims are internally consistent and represent a coherent mechanistic framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Recent studies show that IL-2-producing Th cells are at the center of Treg cell clusters with phosphorylated STAT5, reduced motility within clusters may secure IL-2 delivery, and IL-2R-dependent STAT5 activation is essential for Treg suppressor function in a TCR-independent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 summarize recent literature (Liu et al., 2015; Chinen et al., 2016) that provides context for the current findings. C81 represents an inference about the mechanism of IL-2 delivery in clusters. These claims appropriately cite prior work and integrate it with the current study's findings on binary IL-2 expression and spatial effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "There are substantial differences between in vitro and in vivo experimental data concerning IL-2 and CD25 expression and regulation, and computational modeling serves as a valuable tool to understand complex regulatory mechanisms in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 represent summary conclusions about methodological insights from the study. C84 is supported by the contrasts noted throughout (e.g., graded CD25/CD69 in vivo vs. conflicting in vitro reports). C85 is supported by the successful integration of modeling with experimental data to generate testable predictions and mechanistic insights. These are appropriate concluding statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "IL-2 is mainly produced by activated Th cells, mediates diverse pleiotropic actions including Th differentiation and Treg maintenance, acts both positively and negatively on Th cells, and individual T cells sense antigen affinity and frequency to tailor collective activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 represent established background knowledge supported by appropriate citations (Liao et al., 2013; Allison et al., 2016; Gottschalk et al., 2012; Kellogg et al., 2015; Miskov-Zivanov et al., 2013). These claims provide necessary context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Prior studies have examined IL-2 secretion kinetics, paracrine IL-2 action on STAT5, reciprocal regulation between Th and Treg cells, preferential STAT5 phosphorylation in Treg cells, and the importance of local IL-2 availability. Binary responses can filter noise and allow parallel control of activation probability and population heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 summarize relevant prior literature (Sojka et al., 2004; Long and Adler, 2006; O'Gorman et al., 2009; Sabatos et al., 2008; Amado et al., 2013; Liu et al., 2015; Kellogg et al., 2015; K\u00f6ck et al., 2014) that provides context and motivation for the current study. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  }
+]

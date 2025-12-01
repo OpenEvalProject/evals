@@ -1,0 +1,416 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The high-throughput bacterial surface-display assay recapitulates known kinase specificity trends. Initial screens showed ZAP-70 efficiently phosphorylates LAT and SLP-76 but not TCR\u03b6 ITAMs, while Lck efficiently phosphorylates ITAMs but not LAT or SLP-76. Results were consistent with in vitro kinetic measurements and prior cellular studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 collectively demonstrate validation of the screening platform. The assay results match known cellular specificity (C27, C33), correlate with purified kinase assays (C28), and correctly identify substrate preferences (C29-C30). The negative controls (C31-C32) further validate specificity. Multiple independent lines of evidence support the platform's validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ZAP-70 employs an electrostatic filter for substrate selection, requiring negatively-charged residues and excluding positively-charged residues near the phosphorylation site. The presence of lysine or arginine within seven residues of the substrate tyrosine severely compromises phosphorylation efficiency. ZAP-70 strongly prefers aspartate at the -1 position and shows modest preferences for glutamate or hydrophobic residues at +1 and hydrophobic residues at +3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C53 are strongly supported by comprehensive mutagenesis screens (Figure 5) and validated by purified peptide kinetic assays (C47-C48, Figure 5\u2014figure supplement 2). The electrostatic filter mechanism (C43) is demonstrated through systematic single and multiple mutations showing consistent effects. Position-specific preferences (C51-C53) align with known Syk family kinase preferences and are supported by multiple independent measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Lck exhibits distinct substrate preferences from ZAP-70, with modest preference for positively-charged residues, no requirement for aspartate at -1, and strong preference for bulky hydrophobic residues at -1. Lck recognizes residues primarily downstream of the phosphosite, while ZAP-70 recognizes both upstream and downstream residues. Negative charges downstream repel Lck but attract ZAP-70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C76 are supported by systematic mutagenesis screens (Figure 6) and validated by purified peptide kinetics (C70-C75, Figure 6\u2014figure supplement 1). The contrasting charge preferences between Lck and ZAP-70 are demonstrated through direct comparison of identical mutations (C72, C75). The mechanistic explanation for differential ITAM phosphorylation (C65) is supported by sequence analysis and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ZAP-70 possesses a uniquely positively-charged substrate binding region with at least ten lysine/arginine residues. Molecular dynamics simulations reveal stable interactions between the -1 aspartate and Lys 504, transient ion pairs between upstream glutamates (positions -5 to -7) and the FG loop lysines, and recognition of downstream negative charges through Arg 514.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C91 are supported by structural analysis (C77-C78) and five independent 500 ns molecular dynamics simulations (C79-C90, Figure 7\u2014figure supplements 2-6). The simulations show consistent formation of predicted interactions across all trajectories. Sequence comparison with Lck (C84, C91) provides mechanistic explanation for differential specificity. The computational predictions are validated by mutagenesis experiments (C92-C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Experimental validation confirms the functional importance of predicted ZAP-70-substrate interactions. The KKMK-to-AAMA FG loop mutation reduces LAT/SLP-76 phosphorylation but increases ITAM phosphorylation. Mutations of Arg 514 reduce LAT phosphorylation. Charge-altering mutations in LAT have opposite effects on ZAP-70 versus Lck phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 provide experimental validation of computational predictions through systematic mutagenesis of both kinase and substrate (Figure 7\u2014figure supplements 7-9). The reciprocal effects of mutations on substrate specificity (C92-C93) and the differential responses to substrate mutations by ZAP-70 versus Lck (C98-C100) strongly support the electrostatic mechanism. Multiple independent measurements confirm the trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Brownian dynamics simulations demonstrate long-range electrostatic steering of LAT peptides to the ZAP-70 active site, a feature not shared by Lck. ZAP-70 activity against LAT peptides is strongly dependent on ionic strength, confirming the importance of electrostatics for substrate recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by Brownian dynamics simulations showing differential peptide clustering around ZAP-70 versus Lck active sites (Figure 8B-C). The ionic strength dependence (C103, Figure 8\u2014figure supplement 1) provides experimental validation of the electrostatic recruitment mechanism. The contrast with Src-family kinase activation (C104) appropriately distinguishes substrate recognition from kinase regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A structural model for Src-family kinase autophosphorylation based on IGF1-R crystal structure (PDB 3LVP) reveals the FG loop docking on a hydrophobic patch between the G and EF helices of the substrate kinase. This model is energetically stable in molecular dynamics simulations and supported by mutagenesis showing E448Q mutation reduces Lck autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C119 present a homology model validated by multiple approaches: no steric clashes (C112), stable molecular dynamics trajectories (C118), and functional validation through mutagenesis (C119, Figure 9\u2014figure supplement 1). The model is based on a published crystal structure (C110-C111) and explains known features of Src-family kinase autophosphorylation (C105, C108-C109). The structural features are well-characterized (C113-C117).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "ZAP-70's positively-charged FG loop and Arg 514 are incompatible with the autophosphorylation complex geometry required for Src-family kinases. The absence of strong upstream selectivity in Lck correlates with small nonpolar FG loop residues necessary for autophosphorylation. ZAP-70 appears to have traded autophosphorylation capability for enhanced substrate selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C129 present a mechanistic explanation for ZAP-70's inability to autophosphorylate based on structural modeling. The incompatibility of charged residues with the autophosphorylation interface (C120, C123, C125-C126) is supported by sequence analysis (C122, C124) and the autophosphorylation model. The evolutionary trade-off hypothesis (C127-C129) logically connects substrate specificity with autophosphorylation capability and is supported by experimental validation (C130-C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Mutations that alter substrate specificity also affect autophosphorylation capability. The KKMK-to-AAMA mutation in ZAP-70's FG loop increases activation loop autophosphorylation. Conversely, introducing lysines into Lck and c-Src FG loops reduces their autophosphorylation. Mutations of Arg 514 in ZAP-70 enhance autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 provide direct experimental validation of the coupling between substrate specificity and autophosphorylation through reciprocal mutagenesis experiments (Figure 9B-C, Figure 9\u2014figure supplement 2). The consistent effects across multiple kinases (ZAP-70, Lck, c-Src) and multiple mutations strengthen the conclusion. Western blot data clearly demonstrate the predicted changes in autophosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Cell-based assays in HEK293 cells demonstrate that kinase domain sequence is the principal determinant of substrate specificity. ZAP-70 requires Lck for activation and phosphorylates LAT but not TCR\u03b6. Lck autophosphorylates and phosphorylates TCR\u03b6 but not LAT. Syk shows intermediate properties. FG loop mutations alter substrate specificity and autophosphorylation in cells consistent with in vitro observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C147 validate in vitro findings in a cellular context (Figure 10). The chimeric kinase experiments (C136) demonstrate that the kinase domain determines specificity. The FG loop mutations (C139-C146) show consistent effects in cells as observed in vitro. Syk's intermediate properties (C137-C138, C143-C147) support the mechanistic model. The cell-based data are consistent with prior literature (C147).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Bioinformatic analysis of ~1100 tyrosine kinase substrates reveals that LAT and SLP-76 phosphosites are distinctive in having both a -1 acidic residue and substantially negative net charge. Lck substrates are representative of typical tyrosine kinase substrates with near-neutral charge. These features are conserved in LAT sequences across vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 are supported by systematic analysis of the PhosphoSitePlus database (Figure 11A-B). The bioinformatic analysis clearly shows LAT/SLP-76 as outliers in the charge distribution (C151). Conservation analysis across vertebrates (C152) demonstrates evolutionary selection for these features. The comparison with typical substrates (C148-C150) provides context for the uniqueness of ZAP-70 substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "ZAP-70's positively-charged substrate binding region is highly conserved across ZAP-70 orthologs from fish to mammals but not in other human non-receptor tyrosine kinases. The ZAP-70 kinase domain has a predicted isoelectric point of ~9 and net charge of +7, making it an outlier among tyrosine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C158 are supported by comprehensive sequence analysis (Figure 11C-D). The conservation of positive charges in ZAP-70 orthologs (C153) contrasts with their absence in other kinases (C154), demonstrating evolutionary selection. The charge analysis (C155-C157) shows that even kinases with similar net charge lack the clustered positive charges near the substrate binding site. The conclusion that ZAP-70 is an outlier (C158) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The sequence of initial phosphorylation events in T cell receptor signaling is dictated by the substrate specificities of ZAP-70 and Lck kinase domains. ZAP-70's specialization for LAT and SLP-76 resulted in loss of autophosphorylation capability. This coupling, along with the electrostatic features of LAT and SLP-76, insulates these proteins from cross-talk with other signaling molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C163 synthesize the major findings into a coherent model supported by the comprehensive experimental and computational data presented. The substrate specificity dictating signaling order (C159-C161) is demonstrated by the screening data. The coupling between specialization and autophosphorylation loss (C162) is supported by structural modeling and mutagenesis. The insulation from cross-talk (C163) is a logical consequence supported by the specificity data and illustrated in Figure 12.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The electrostatic selection mechanism provides stringent control over kinase-substrate interactions while maintaining diversity of downstream signals. Each phosphosite on LAT and SLP-76 can bind distinct SH2 domain-containing proteins and have tunable phosphorylation rates without compromising kinase specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C167 describe functional implications of the electrostatic mechanism. The stringent control without restricting diversity (C164, C166) is supported by the observation that multiple negatively-charged sequences with different arrangements are all recognized by ZAP-70. The tunability of phosphorylation rates (C167) is demonstrated by the LAT Tyr 132 example (C55-C56). The SH2 domain binding diversity (C167) is supported by citation to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The electrostatic features in LAT and SLP-76 likely evolved through both positive selection for ZAP-70 phosphorylation and negative selection against phosphorylation by other kinases including Lck. This system-wide negative selection is analogous to that observed for SH3 domain-ligand interactions in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C170 present evolutionary hypotheses that are plausible given the data but are explicitly speculative (C168, C170 use 'presumably'). While the negative selection hypothesis is supported by analogy to yeast SH3 domains (C169), direct evidence for the evolutionary trajectory is not provided. The hypothesis is consistent with the observed specificity patterns but would require additional evolutionary or phylogenetic analysis to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "The tight regulation of ZAP-70 and its narrow substrate specificity are functionally important for faithful T cell receptor signaling. Active Lck exists in T cells prior to stimulation, and both Lck and LAT are membrane-bound, potentially in the same microdomains. The strict dependence on Lck for ZAP-70 activation ensures receptor triggering only occurs when peptide antigens are presented by MHC molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C179 integrate the molecular findings with T cell biology. The existence of active Lck and its threshold-setting role (C171-C172) are supported by citations to prior work. The membrane localization (C173, C176) is established knowledge. The functional importance arguments (C174-C175, C178-C179) are logical inferences well-supported by the specificity data and the known biology of T cell activation. The mechanistic explanation for MHC restriction (C176-C179) is consistent with established models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "B cells have an analogous pathway using Lyn, Syk, and BLNK, but with important differences. Unlike T cells, B cell activation does not require MHC presentation. Syk can slowly auto-activate and phosphorylate ITAMs, making Src-family kinases somewhat expendable. These differences underscore how signaling pathways have evolved to achieve varying degrees of control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C184 compare T and B cell signaling pathways, with all factual claims supported by citations to prior literature (C180-C183). The comparison appropriately contextualizes the T cell findings and highlights the functional significance of the differences in kinase regulation. The evolutionary perspective (C184) is a reasonable inference from the comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The high-throughput screening platform is robust and reproducible. Results were highly reproducible across replicates, independent of the specific antibody used, and showed strong correlation with purified peptide phosphorylation rates. Tyrosine-to-phenylalanine mutations provided appropriate negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 validate the technical quality of the screening platform. Reproducibility is demonstrated in Figure 5\u2014figure supplement 1 (C39). Antibody independence (C40) and correlation with kinetic measurements (C41, Figure 5B) demonstrate assay validity. The negative controls (C42) establish the detection limits. These technical validations are essential for trusting the screening results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "LAT Tyr 132 phosphorylation is essential for T cell function as it generates the PLC\u03b31 docking site. Gly 131 is highly conserved in mammals despite replacement with virtually any other residue improving ZAP-70 phosphorylation efficiency by up to 16-fold. This conservation may be important for kinetic proofreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are well-supported by functional data (C54, citation), mutagenesis screens (C55, Figure 5D), kinetic measurements (C56, Figure 5\u2014figure supplement 4), and sequence conservation analysis (C57, Figure 5\u2014figure supplement 5). The observation that PLC\u03b31 binding does not require glycine (C58) rules out one alternative explanation. However, C59 is explicitly speculative about kinetic proofreading and noted as requiring future studies, preventing full support of the functional interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on T cell receptor signaling establishes the biological context. TCR signaling involves hierarchical activation of Lck, ZAP-70, and Itk with specific substrate phosphorylation. The mechanism enforcing this sequence is unclear despite the pathway being well-established. The study addresses why ZAP-70 specifically phosphorylates LAT and SLP-76, why ZAP-70 cannot autophosphorylate, and why Lck does not phosphorylate LAT and SLP-76.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 provide established background knowledge supported by extensive citations to prior literature (C1, C4, C5, C7-C15, C17). The description of the signaling hierarchy (C2, C16) is supported by Figure 1 and prior work. The research questions (C18-C21) are clearly stated and well-motivated by the gap in understanding (C17). This background appropriately frames the study's objectives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study's main conclusions are that negatively-charged residues in LAT enable selection by ZAP-70 and prevent Lck phosphorylation through electrostatic interactions. ZAP-70 uses a uniquely positively-charged substrate binding region. ZAP-70's inability to autophosphorylate results from steric and electrostatic repulsion and appears to be a consequence of its substrate specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 summarize the main findings that are comprehensively supported by the experimental data, computational simulations, and mutagenesis experiments described in the detailed results. These summary claims accurately reflect the supported conclusions from the individual result groups. The mechanistic explanations (C24-C25) are validated by multiple independent approaches.",
+    "result_type": "MAJOR"
+  }
+]

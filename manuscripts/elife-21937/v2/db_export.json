@@ -1,0 +1,1991 @@
+{
+  "submission": {
+    "id": "f2a529d1-d265-49ce-947a-b2700c095e67",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:14:28.414245Z",
+    "updated_at": "2025-11-30T23:14:28.414245Z"
+  },
+  "content": [
+    {
+      "id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "submission_id": "f2a529d1-d265-49ce-947a-b2700c095e67",
+      "content_type": "manuscript",
+      "content_text": "# Peptidoglycan sensing by octopaminergic neurons modulates Drosophila oviposition\n\n## Authors\n\n- C Leopold Kurz<sup>1</sup>\n- Bernard Charroux<sup>1</sup> ([ORCID: 0000-0002-3359-4066](https://orcid.org/0000-0002-3359-4066))\n- Delphine Chaduli<sup>1</sup>\n- Annelise Viallat-Lieutaud<sup>1</sup>\n- Julien Royet<sup>1</sup> ([ORCID: 0000-0002-5671-4833](https://orcid.org/0000-0002-5671-4833)) \u2020\n\n### Affiliations\n\n1. Aix-Marseille Universit\u00e9, Centre National de la Recherche Scientifique, UMR 7288, Institut de Biologie du D\u00e9veloppement de Marseille Marseille Cedex France\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs infectious diseases pose a threat to host integrity, eukaryotes have evolved mechanisms to eliminate pathogens. In addition to develop strategies reducing infection, animals can engage in behaviors that lower the impact of the infection. The molecular mechanisms by which microbes impact host behavior are not well understood. We demonstrate that bacterial infection of Drosophila females reduces oviposition and that peptidoglycan, the component that activates Drosophila antibacterial response, is also the elicitor of this behavioral change. We show that peptidoglycan regulates egg-laying rate by activating NF-\u03baB signaling pathway in octopaminergic neurons and that, a dedicated peptidoglycan degrading enzyme acts in these neurons to buffer this behavioral response. This study shows that a unique ligand and signaling cascade are used in immune cells to mount an immune response and in neurons to control fly behavior following infection. This may represent a case of behavioral immunity.\n\n## Introduction\n\nAs infectious diseases pose a threat to the host integrity and to its reproductive fitness, eukaryotes have evolved sophisticated mechanisms that detect and mobilize defenses against pathogens. Innate immunity, which is common to all metazoans, serves as a first-line defense against microbes. Its hallmarks are the recognition of microorganisms by germline-encoded non-rearranging receptors followed by rapid effector mechanisms such as phagocytosis, proteolytic cascade activation and production of antimicrobial peptides (Hoffmann et al., 1999). Genetic screens have identified two NF-\u03baB-dependent pathways, IMD and Toll, as the main signaling cascades that control immune gene induction in Drosophila (Buchon et al., 2014; Lemaitre et al., 1995, 1996; Ferrandon et al., 2007). Both pathways are activated by a unique ligand, the bacterial cell wall peptidoglycan (PGN). PGN from Gram-negative bacteria and bacilli preferentially activates the IMD pathway via its detection by two members of the same PeptidoGlycan Recognition Protein (PGRP) family, PGRP-LC and PGRP-LE. While PGRP-LC functions as the transmembrane signaling receptor upstream of the IMD pathway, PGRP-LE is detecting PGN intracellularly (Bosco-Drayon et al., 2012; Choe et al., 2005; Gottar et al., 2002; R\u00e4met et al., 2002; Kaneko et al., 2006). PGN from Gram-positive bacteria rather engages a Toll-dependent response involving a circulating PGRP as sensor, PGRP-SA (Michel et al., 2001; Leulier et al., 2003). Indeed, in contrast to mammalian Toll-Like-Receptors, Drosophila Toll has no capacity to directly bind microbial motifs (Brough et al., 2008).\n\nIn addition to activate direct antimicrobial strategies, eukaryotes have developed behavioral mechanisms that facilitate the avoidance of pathogens or lower the impact of the infection. These phenotypes grouped under the term \u2018behavioral immunity\u2019 (de Roode and Lef\u00e8vre, 2012) or \u2018sickness behavior\u2019 (Hart, 1988) refer to a suite of neuronal mechanisms that allow organisms to detect the potential presence of disease-causing agents and to engage in behaviors which prevent contact with the invaders or reduce the consequences of the infection. Although such microbe-induced behavioral changes have been reported in Lepidoptera and Orthoptera, deciphering the molecular mechanisms involved is experimentally challenging in these insects (Sullivan et al., 2016; Kazlauskas et al., 2016; Adamo et al., 2007; Adamo, 2005). Indeed, such an analysis requires a model organism with genetic tools allowing the manipulation of actors and regulators of both the immune and neuronal systems. Recent reports, mainly in Drosophila, start to unravel some aspects of these peculiar host-microbe interactions. Stensmyr et al. demonstrated that Drosophila avoid food contaminated by pathogenic bacteria by using an olfactory pathway exquisitely tuned to a single microbial odor, Geosmin (Stensmyr et al., 2012). Produced by harmful microorganisms, Geosmin is detected by specific Drosophila olfactory sensory neurons which then transfer the message to higher brain centers. Activation of this olfactory circuit ultimately induces an avoidance response, and suppresses egg-laying and feeding behaviors, thereby reducing the infection risk of both the adult flies and their offspring. Drosophila not only modify their behavior to avoid contamination by microbes or parasites, but also once they have been contaminated in order to reduce the impact of infection. For instance, direct exposure to bacteria impacts sleep patterns and induces hygienic grooming (Kuo et al., 2010; Yanagawa et al., 2014). In addition, Drosophila plastically increases the production of recombinant offspring in response to parasite infection (Singh et al., 2015). Although certainly involving a neuro-immunological integration, these microbe-induced behavioral changes are rarely understood at the molecular level, namely with no information on the nature of the elicitor and on the cellular and molecular machineries that link bacteria detection to behavioral changes. Moreover, canonical immune signaling pathways were never reported as being involved in those processes.\n\nIn order to appreciate further the interactions between infecting microbes and the host nervous system, we studied the effects of bacterial infection on one specific Drosophila behavior, female oviposition. We show here that fly exposure to bacteria is sufficient to trigger an egg-laying reduction and identify bacteria cell wall PGN as the elicitor of this effect. We demonstrate that PGN-dependent NF\u2212\u03baB pathway activation in octopaminergic neurons is the molecular signal that triggers oviposition drop post-infection. Finally, we present data showing that this NF-\u03baB pathway activity in neurons is fine-tuned by a specific isoform of the PGN-degrading enzyme PGRP-LB, thereby modulating a process that would otherwise leads to an exacerbated and detrimental egg-laying decrease. Altogether, this study shows that detection of a unique microbe-associated pattern is not only protecting the infected individual via immune response activation but is also reducing the impact of the bacteria on the whole population by decreasing oviposition on contaminated environments. This could constitute a case of behavioral immunity.\n\n## Results\n\n### Bacteria infection decreases fly oviposition\n\nIn Drosophila, infection by extracellular bacteria triggers a battery of cellular and humoral immune responses among which the IMD/NF-\u03baB signaling cascade is of paramount importance. Direct recognition of bacterial peptidoglycan by membrane associated PGRP-LC or intracytoplasmic PGRP-LE triggers NF-\u03baB nuclear translocation and signaling (Figure 1A). By degrading PGN, amidases such as PGRP-LB prevent over-activation of the IMD pathway and adapt the response to the dynamic of infection (Figure 1A) (Zaidman-R\u00e9my et al., 2006). To test whether bacteria infection has physiological consequences other than strictly antimicrobial, we analyzed the egg-laying behavior of infected flies. Septic injury with a needle contaminated with the innocuous Gram-negative bacteria E. coli, induced a strong egg-laying drop within 6 hr following infection (Figure 1B and C and Figure 1\u2014figure supplement 1A). The difference in the number of eggs laid by infected versus non-infected wild-type females was no longer seen after 24 hr demonstrating that the effects are transient and reversible (Figure 1C and Figure 1\u2014figure supplement 1A). As for the immune response, bacteria-induced egg-laying drop was stronger and lasted longer in PGRP-LB mutants than in wild-type flies while the amount of bacteria within the animals were equivalent (Figure 1C and Figure 1\u2014figure supplements 1B, 2A and B) (Zaidman-R\u00e9my et al., 2006). This effect was dose-dependent and not observed after sterile wound or when flies were injected with water (Figure 1D and E). This demonstrates that the effects were due to the presence of the bacteria in the body cavity and not to cuticle wounding (Figure 1C and Figure 1\u2014figure supplement 1). Consequently, we thereafter used untreated animals as uninfected controls. Egg-laying reduction was also observed when flies were orally infected with bacteria and when flies mutant for another IMD pathway antagonist, Pirk, were infected (Figure 1\u2014figure supplement 2C and D). Altogether, these results demonstrate that bacteria infection induces an egg-laying decrease in wild-type flies that is exacerbated in PGRP-LB mutants.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic representation of the Drosophila IMD pathway. Peptidoglycan (PGN) released by bacteria is recognized at the cell membrane by PGRP-LC or inside the cell by PGRP-LE. This PGRP/PGN interaction triggers via IMD, FADD, DREDD, nuclear translocation of Relish. Extracellular PGRP with amidase activity, such as PGRP-LBPC, dampens this signaling by degrading PGN. (B) Septic injury impairs egg-laying capacity in wild-type females. Pictures of fly tubes seen from the top. The blue dye is used to facilitate quantification of the eggs that appear as white dots. (C) Septic injury transiently impairs egg-laying capacity in wild type and in PGRP-LB mutant females. The egg-laying ratio for a time window (6 hr or 24 hr) corresponds to the number of eggs laid by a female after infection over the number of eggs laid by control female of the same genotype. (D and E) Injection of highly purified PGN in wt (D, E) and PGRP-LB mutants (E) is sufficient to reduce egg laying. (F) Mutation in Relish or in Dredd is preventing egg laying decrease post-infection. (G) Epistatic analyses showing that mutations in PGRP-LE, NF-\u03baB or Dredd, but not in PGRP-LC are rescuing PGRP-LB mutant phenotype. For C, D, E, F and G; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus indicated controls.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The effect of bacterial infection on egg laying is dose-dependent and reversible. Egg-laying ratio of wt (A) and PGRP-LB mutants (B) quantified after septic injury with various E. coli concentrations. (B) The oviposition drop is not due to the cuticle injury since it is not observed after an aseptic injury (OD 0). For A and B; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus sterile injury.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) The exacerbated oviposition drop following bacterial infection in PGRP-LB mutant is also observed in transheterozygote PGRP-LB mutants. (B) The exacerbated phenotype observed in PGRP-LB mutant compared to controls is not due to different bacterial loads within genotypes. Following septic injury with E. coli at OD 200, colony-forming units were quantified from individual flies at various time points. (C) Feeding PGRP-LB mutants with bacteria induces an egg-laying drop. When adult flies were orally infected with the entomopathogenic bacteria Erwinia carotovora carotovora (Ecc), a robust egg-laying drop was observed in PGRP-LB mutant flies. (D). As for PGRP-LB, mutation in pirk leads to an exacerbated oviposition drop following septic injury. For A, C, and D; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001, n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus indicated control.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Diagram representing ovaries containing ovarioles and oocytes within a single ovariole. (B) Following septic injury, stage 14 oocytes accumulate in ovaries. Pictures of opened ovaries with oocytes of various stages depending on the treatment. At the indicated time, female ovaries were dissected in PBS and opened. (C) 6 hr following treatment, wt female ovaries were dissected and the number of oocytes of the different stages was quantified. Apoptotic events were quantified using immunostaining against activated caspase (DCP1+). (D) Representative pictures of ovaries stained with DAPI and with an antibody against activated DCP1 following various treatments. Apoptotic events are indicated with a white arrow. (E) Food intake is not impaired 6 hr post-septic injury. The ratio of blue dye in intestines and crops of infected versus non-infected females was quantified. For C, shown is the average number of events per ovary \u00b1 SEM from three independent experiments with at least 20 ovaries per condition used. For E, shown is average OD ratio \u00b1 SEM from at least two independent trials with at least 20 dissected intestines per genotype and condition used. ** indicates p<0.001, Tukey\u2019s multiple comparison test.\n\n### PGN blocks egg laying by activating NF-\u03baB pathway\n\nKnowing the role of PGRP-LB as a scavenging receptor for bacterial PGN and of PGN as an IMD pathway upstream ligand, we hypothesized that PGN could be the bacterial elicitor triggering egg-laying drop. Importantly, injection of highly purified E. coli PGN in both wild type and PGRP-LB mutants fully phenocopied the effects seen with injection of bacteria (Figure 1D and E). To further confirm the implication of the IMD pathway, we tested the effect of bacteria infection on egg-laying behavior of IMD pathway mutants. Mutants for the transcription factor Relish (RelE20) and for the caspase Dredd (DreddD55) did not present egg-laying drop 6 hr post-infection (Figure 1F). In addition, we performed epistasic analyses with PGRP-LB mutants and demonstrated that inactivation of, Relish, Dredd or the intracytoplasmic receptor PGRP-LE, but not the transmembrane protein PGRP-LC, completely suppressed the PGRP-LB-dependent egg-laying drop (Figure 1G). Altogether these results demonstrate that PGRP-LE-dependent PGN detection by the fly induces a reduction of female oviposition by triggering NF-\u03baB pathway activation.\n\n### Bacteria infection induces a temporary retention of oocytes within ovaries\n\nPrevious studies reported that flies infected with pathogenic bacteria (Salmonella typhimurium, Burkholderia cenocepacia and Serratia marcescens) present an oviposition defect consecutive to ovary degeneration (Brandt and Schneider, 2007). To identify the causes of the bacteria-induced egg-laying reduction, we dissected ovaries from untreated flies, flies stabbed only or injured with a needle contaminated with bacteria, and counted the numbers of oocytes of different maturation stages. Six hours post-exposure to E. coli, ovaries from wild-type flies contained three-times more mature stage 14 oocytes than uninfected animals and less stage 10 immature oocytes (Figure 1\u2014figure supplement 3A,B and C). Egg-laying drop was reversible by 24 hr suggesting that the exposure to bacteria does not prevent oocyte maturation in the ovaries but rather blocks egg release into the oviducts, leading to an accumulation of mature oocytes in ovaries of infected flies. Since an oviposition drop could be the result of a stage-specific oocyte apoptotic death, we tested this hypothesis. Antibody staining against activated-caspase (DCP1) did not reveal any sign of increased apoptosis in ovaries from infected females compared to controls (Figure 1\u2014figure supplement 3C and D). These results demonstrate that the presence of bacteria within the female body cavity induces a transient retention of mature oocytes within the ovaries leading to a drop of egg laying. We then tested whether the ovulation defect was not an indirect consequence of an infection-dependent reduced food intake. As shown Figure 1\u2014figure supplement 3E, bacterial infection did not impair adult feeding behavior in both wild-type and Relish mutants 6 hr after bacterial pricking.\n\n### Immune and behavioral responses to PGN are controlled by distinct PGRP-LB isoforms\n\nTo identify the tissue(s) in which IMD pathway activation modulate egg-laying behavior in response to infection, we looked for the site(s) of action of the PGRP-LB amidase. Indeed, as an exacerbated egg-laying drop post-infection might be detrimental, we hypothesized that the cells in which PGRP-LB is modulating the immune pathway could be the ones in which IMD activation is interfering with egg-laying. Interestingly, the PGRP-LB locus generates three protein isoforms (PGRP-LB PA, PC, PD) that all have in common the enzymatic amidase domain (Figure 2A). While the secreted PGRP-LBPC cleaves the PGN in the extracellular space (Paredes et al., 2011; Zaidman-R\u00e9my et al., 2006), the site and mode of action of the two other isoforms are unknown. In contrast to PGRP-LBPC, neither PGRP-LBPA nor PGRP-LBPD possess a signal peptide, suggesting that they could act intracellularly. PGRP-LBPA is made of the amidase domain only and PGRP-LBPD contains an additional short N-terminal peptide of unknown function (Figure 2A). To test the implication of these isoforms in immune and behavioral responses, we tested their ability to rescue PGRP-LB null mutant phenotypes. For that purpose, we cloned 3 Kb, 2.8 Kb and 3.8 Kb of genomic DNA upstream of the predicted transcription start site of each isoform upstream of the Gal4 coding sequences (Figure 2A). These lines (called pLB1Gal4, pLB2Gal4 and pLB3Gal4) were combined in vivo, with isoform specific UAS lines (called UAS-PGRP-LBPA, PC and PD) in a PGRP-LB mutant background. Surprisingly, out of the nine possible combinations, only pLB1Gal4/UAS-PGRP-LBPD was able to fully rescue the egg-laying defect of PGRP-LB-infected females (Figure 2B). This indicated that all PGRP-LB isoforms are not functionally equivalent as far as egg-laying control is concerned. In order to show that the three isoforms retain the ability to cleave PGN, we orally infected PGRP-LB mutants that ectopically expressed the different PGRP-LB isoforms in gut cells and monitored the expression of the IMD target gene Diptericin. The exacerbated Diptericin expression measured in PGRP-LB mutant was strongly reduced by expressing any of the three isoforms (Figure 2\u2014figure supplement 1A) (Zaidman-R\u00e9my et al., 2006). These results suggest that although PGRP-LB isoforms are functionally equivalent in the regulation of gut immune response to bacteria, they have specific roles in regulating bacteria-induced egg-laying phenotype. To further confirm the hypothesis that a single PGRP-LB isoform, PGRP-LBPD, was implicated in the control of egg-laying behavior during bacterial infection, we generated via the CRISPR-Cas9 technology, two PGRP-LBRDspecific alleles which delete part of the PGRP-LBRD specific exon (Figure 2\u2014figure supplement 1B). Although these mutants behave as wild-type flies as far as the immune response is concerned (Figure 2\u2014figure supplement 1C), their oviposition phenotype post-infection is identical to that of PGRP-LB null females (Figure 2C). These results demonstrate that by regulating PGN level, the PGRP-LB enzyme is adjusting both immune response intensity and egg-laying rate to infection levels. However, these two regulations are genetically distinct with egg laying probably controlled intracellularly in the pLB1-positive cells via the PGRP-LBPD isoform and immunity extracellularly by the PGRP-LBPC isoform.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig2-v2.jpg)\n\n**Figure 2.:** (A) PGRP-LB locus organization. Three PGRP-LB isoforms are produced from the locus. The green lines represent the cloned fragments used to generate the Gal4 constructs. (B) Egg-laying ratio of PGRP-LB females carrying various Gal4 drivers (pLB1Gal4, pLB2 Gal4, pLB3 Gal4) and UAS constructs allowing the overexpression of the three different PGRP-LB isoforms (PGRP-LBPA, PGRP-LBPC, PGRP-LBPD). A single Gal4-UAS combination (pLB1Gal4/UAS\u2013PGRP-LBPD) is rescuing the egg-laying drop seen in infected PGRP-LB mutant females. (C) Egg-laying ratio of PGRP-LB mutant females and CRISPR-Cas9-generated PGRP-LBPD only mutants. For B and C: shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann Whitney test versus wt animals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Quantification of Diptericin mRNA in wt and PGRP-LB mutant guts expressing the different PGRP-LB isoforms under the control of the gut specific Gal4 driver, NP1Gal4 and orally infected with Ecc15. (B) Amino acid sequence alignment showing the deletions in the PGRP-LBPD isoform-specific mutants generated. In bold are the amino acids specific of the PGRP-LBPD isoform. (C) Quantification of Diptericin mRNA in wt, PGRP-LB mutant and PGRP-LBPD isoform-specific mutants fat body orally infected with Ecc15.\n\n### NF-\u03baB pathway activation in pLB1 cells is required to modulate egg-laying post-infection\n\nThe results presented above suggest that PGRP-LBPD acts in pLB1 cells to prevent egg-laying reduction in infected PGRP-LB mutant females. To test if the effects of bacteria on egg-laying phenotype are a consequence of IMD pathway overactivation in this subset of cells, we blocked IMD pathway specifically in pLB1 cells. RNAi-mediated inactivation of either Relish or PGRP-LE in pLB1 cells was indeed sufficient to block the effect of bacteria on female egg-laying behavior (Figure 3A). Similar effects using RNAi-mediated inactivation of Fadd were observed in the PGRP-LB mutant background (Figure 3B). These results demonstrate that IMD pathway activation via PGRP-LE in pLB1 cells is responsible for the oviposition decrease post-infection.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig3-v2.jpg)\n\n**Figure 3.:** (A) Egg-laying ratio of wt females in which the IMD pathway has been inactivated in pLB1 cells only (pLB1Gal4/UAS-RelIR and pLB1Gal4/UAS-PGRP-LEIR)(B) Egg-laying ratio of PGRP-LB mutant females in which the IMD pathway has been inactivated in pLB1 cells only (pLB1Gal4/UAS-FaddIR). For A and B; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus controls.\n\n### NF-\u03baB acts in neurons to regulate infection-dependent egg laying\n\nTo elucidate how IMD pathway activation in pLB1 cells would block egg laying, we analyzed the expression pattern of a pLB1QF/QUAS-GFP reporter line. GFP staining was detected in neuronal-like fibers in the lateral and common oviducts where it seems to connect the oviduct to the basal part of the ovaries (Figure 4A\u2019\u2019\u2019). Projections were also specifically detected in the posterior part of the ventral nerve cord, in the abdominal ganglion and in the subesophageal ganglion of the brain (Figure 4A\u2019 and A\u2019\u2019). These results suggest that the effect of PGN on oviposition could be a consequence of NF\u2212\u03baB pathway activation in neurons controlling egg-laying behavior in flies. To validate this hypothesis, we first tested whether the exacerbated reduction of egg deposition in infected PGRP-LB mutant females could be rescued by providing PGRP-LBPD in neurons only. PGRP-LB females in which the UAS-PGRP-LBPD construct was driven by the pan-neuronal Gal4 driver (elavGal4) no longer show a drop in egg-laying post-infection (Figure 5A). In addition, RNAi-mediated inactivation of IMD pathway component Relish or Fadd completely suppressed egg-laying drop post-infection (Figure 5B). To further confirm the neuronal nature of the pLB1-positive cells controlling egg laying, we expressed proteins able to modulate neuronal activity in pLB1 cells. Specific expression of the Tetanous toxin (TTX) which cleaves synaptobrevin and impairs neurotransmitter secretion in neurons controlling ovulation has been shown to severely perturb oviposition in virgins as well as in mated females (Soller et al., 2006). When TTX was expressed in pLB1 cells of mated uninfected females, a strong defect in oviposition was observed (Figure 5C). This was not the case when TTX was expressed in pLB3-positive cells. We then tested whether increasing the excitability of the pLB1 cells via overexpression of the TRPA1 ion channel was sufficient to promote female oviposition. Expressing the TRPA1 channel in pLB1, pLB2 and pLB3 cells at the temperature at which TRPA1 is inactive (23\u00b0) did not modify egg-laying comportment of mated females (Figure 5D). In contrast, pLB1Gal4/UAS-TRPA1 females raised at permissive temperature (29\u00b0C) laid significantly more eggs than controls (Figure 5D). Such an effect of TRPA1 expression on oviposition was not observed when other pLBGal4 drivers were used (Figure 5D). Since TRPA1 is expressed in gut entero-endocrine cells were it mediates the effect of bacteria cell wall component, lipopolysaccharide, we tested if these specific gut cells are required for egg-laying response to infection. NF-\u03baB pathway inactivation using two entero-endocrine cells drivers, voila-Gal4 and prospero-Gal4, did not interfere with egg-laying behavior (Figure 5\u2014figure supplement 1). Taken together, these results demonstrate that pLB1 cells activity impacts oviposition and that in neurons, the IMD pathway is modulated by the PGRP-LBPD isoform to fine tune the oviposition drop following exposure to bacteria. These data provide a functional link between the neuronal networks that control oviposition and its regulation by the presence of bacteria.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig4-v2.jpg)\n\n**Figure 4.:** (A) Diagram summarizing pLB1 expression pattern (green lines) in the brain (A\u2019), the Ventral Nerve Cord (VNC) (A\u2019\u2019) and the ovaries (A\u2019\u2019\u2019). Expression pattern of pLB1QF/QUAS-GFP (pLB1>GFP) in females. In the brain (A\u2019), pLB1 is expressed in the Sub Oesophageal Ganglion (SOG). The area in the box corresponds to unspecific transgene expression seen in the QUAS-GFP strain alone. In A\u2019\u2019, the expression is restricted to the Abdominal Ganglia (AbdG) that corresponds to the posterior tip of the VNC. In A\u2019\u2019\u2019, lateral oviducts (LO) connecting ovaries (OV) to the central oviduct (CO) are shown. Staining is also observed in other tissues such as pericardiac cells, some enterocytes (data not shown). The scale bar corresponds to 50 \u00b5m.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig5-v2.jpg)\n\n**Figure 5.:** (A) Egg-laying ratio of PGRP-LB mutant females in which the pan-neuronal Gal4 drivers (Elav Gal4) is used to drive expression of the PGRP-LBPD isoform. Expression of the PGRP-LBPD isoform in neurons only is sufficient to rescue PGRP-LB mutant phenotype following septic injury. (B) RNAi-mediated inactivation of the NF-\u03baB pathway prevents egg-laying drop post-infection. (C) Expression of Tetanus Toxin (TTX) in pLB1, but not in pLB3-positive cells, is sufficient to decrease egg laying in non-infected mated females. pLB2Gal4/UAS-TTX flies are not viable (data not shown). (D) Expression of the transient receptor potential cation channel (TRPA1) in pLB1 but neither in pLB2 nor pLB3-positive cells stimulates egg laying in non-infected mated females. For A and B; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. For C; shown is the average number of eggs laid per fly per 24 hr \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. For D, shown is the average egg-laying ratio, the number of eggs laid by females raised at 29\u00b0C (permissive temperature for TPRA1) over the number of eggs laid at 23\u00b0C (restrictive), \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus controls (for A, B and C) and Dunn\u2019s multiple comparison test (for D).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Egg-laying ratio of wt mated females in which the IMD pathway has been specifically inactivated via UAS-FaddIR ectopic expression in ppk, Ilp7, prospero or voila-positive cells. (B) While expressing the SPR cDNA in ppk-positive cells fully rescue egg-laying defect seen in SPR-deficient females, this is not the case if SPR cDNA is expressed in pLB1-positive cells. For A; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. For B; shown is the average number of eggs laid per fly per 24 hr \u00b1 SEM with at least 10 females per genotype and condition used, the graph is representative of two independent experiments. ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus controls.\n\n### Bacterial infection modulates egg laying by interfering with the octopamine pathway\n\nTo identify the type of neuron involved, we tested the consequence of NF-\u03baB inactivation in two categories of cells previously implicated in controlling egg-laying behavior that are the ILP7 and ppk-positive neurons (Castellanos et al., 2013; Rez\u00e1val et al., 2012; Lee et al., 2016). However, as shown Figure 5\u2014figure supplement 1A, Fadd RNAi overexpression in these neurons did not prevent egg-laying drop post-infection. In addition, overexpression of the SPR cDNA under the pLB1Gal4 driver was not sufficient to rescue egg-laying behavior of SPR null mutants (Figure 5\u2014figure supplement 1B). Further insights came from looking at the phenotype of unfertilized females. Egg laying in mated females is mainly controlled by signals present in the sperm stored post-mating and the phenotype we observed could be the result of a regulation of this post-mating program (Kubli and Bopp, 2012). However, virgin females also produce unfertilized mature oocytes that they released regularly. Importantly, using PGRP-LB mutants, we noticed that bacterial infection was also affecting egg-laying behavior of virgin females (Figure 6A). Moreover, we could show that inactivation of pLB1, but not of pLB3 cells via TTX overexpression impacted wild-type virgin females oviposition rate (Figure 6B). Similar results with virgins were obtained using the inwardly-rectifying K+ channel Kir (2.1b) that inhibits neuronal activity (Figure 6\u2014figure supplement 1A). pLB1Gal4/UAS-TTX virgin females presented ovaries packed with stalled mature oocytes which led to an important increase of ovaries size and, in turn, of female abdomen (Figure 6\u2014figure supplement 1B and C). Both phenotypes are reminiscent of those seen in mutants for the octopamine pathway (T\u03b2HnM18, Figure 6\u2014figure supplement 1C) or in flies in which octopaminergic neurons are functionally inactivated (Monastirioti et al., 1995). The monoamine octopamine functions as a key neurotransmitter for ovulation in flies. It is synthesized from tyrosine by the sequential actions of Tyrosine decarboxylase (Tdc2) and Tyramine-\u03b2-hydroxylase (T\u03b2H). Females defective for Tdc2 or for T\u03b2H are sterile and display swollen ovaries where stalled mature eggs are not delivered into the oviducts, mainly due to defects in muscle contraction (Schwaerzel et al., 2003). Taken together, our results suggest that bacterial infection could trigger an IMD pathway activition in octopaminergic neurons that in turn would induce egg-laying drop by reducing octopamine signaling. To challenge this hypothesis, we tested whether inactivating the IMD pathway in octopaminergic neurons only, will prevent egg-laying drop after infection. As shown in Figure 6C and D, RNAi-mediated NF-\u03baB pathway inactivation in T\u03b2H-positive cells only, was sufficient to prevent the bacterially induced egg-laying drop in wild-type and PGRP-LB mutant background. Then, we asked whether NF-\u03baB pathway modulation by PGRP-LBPD was also taking place in the octopaminergic neurons. As shown Figure 6E, PGRP-LBPD ectopic expression under the Tdc and the T\u03b2H Gal4 drivers, was sufficient to rescue PGRP-LB mutant egg-laying phenotype. Finally, we tested whether the regulation of the oviposition following exposure to bacteria was modulated via the quantity of octopamine. Thus, we increased the amount of octopamine via T\u03b2HcDNA overexpression in pLB1 cells and measured the egg-laying drop phenotype of infected PGRP-LB mutants. Providing an excess of T\u03b2H in pLB1, but neither in pLB2 nor in pLB3 cells, was sufficient to fully rescue PGRP-LB oviposition drop following infection (Figure 6F). Altogether these results indicate that bacterial infection induces in neurons a NF-\u03baB-pathway-dependent regulation of octopaminergic signal which in turns modulates ovulation and triggers a reduction of female oviposition. These effects are fine-tuned in the octopaminergic neurons by one specific PGRP-LB isoform, PGRP-LBPD (Figure 7).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig6-v2.jpg)\n\n**Figure 6.:** (A) Septic injury reduces egg laying in PGRP-LB virgin females. Egg-laying ratio post-septic injury of wt and PGRP-LB mutant virgin females. (B) Functional inactivation of pLB1, but not of pLB3-positive cells, by UAS-TTX blocks egg laying in virgin females. Total eggs laid by wild-type virgins in which the TTX is expressed in pLB1 or pLB3 cells. (C and D) Egg-laying ratio of wt (C) or PGRP-LB mutant mated females (D) in which the IMD pathway has been specifically inactivated via UAS-FaddIR ectopic expression in T\u03b2H or Tdc2-positive cells. (E) Restoring PGRP-LBPD expression in cells that produce the enzymes required to synthesize octopamine (tdc2 and T\u03b2H) fully rescues the PGRP-LB mutant phenotype following septic injury. Egg-laying ratio of PGRP-LB mutant females in which the tdc2 Gal4 and T\u03b2HGal4 drivers are used to overexpress the PGRP-LBPD isoform. (F) Providing an excess of T\u03b2H in pLB1 cells is sufficient to rescue PGRP-LB mutant phenotypes. Egg-laying ratio of PGRP-LB mutant mated females in which the T\u03b2H level has been increased in pLB1, pLB2 or pLB3 cells. For A, C, D, E and F; shown is the average egg-laying ratio \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. For (B); shown is the average number of eggs laid per three virgins per 24 hr \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. * indicates p<0.01; ** indicates p<0.001; n.s. indicates p>0.05, unpaired two-tailed Mann-Whitney test versus indicated controls for A, B, C and D and versus UAS in wt background for E and F.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Functional inactivation of pLB1 cells using the inwardly-rectifying K+ channel Kir (2.1b) that inhibits neuronal activity blocks egg laying in virgin females. (B) Ovaries of pLB1Gal4/UAS-TTX virgin females are packed with fully mature (m) oocytes, in contrast to controls (pLB1Gal4) in which ovarioles contain both immature (im) and mature oocytes. (C) Functional inactivation of pLB1 cells phenocopies mutations in enzymes required to produce octopamine. Abdomens of pLB1Gal4/UAS-TTX virgin females are filled with ovaries packed with fully mature oocytes and resembles T\u03b2HnM18 mutant females. This is not the case in controls (pLB1Gal4) or in pLB3Gal4/UAS-TTX females. For A; shown is the average number of eggs laid per virgin per 24 hr \u00b1 SEM from at least two independent trials with at least 20 females per genotype and condition used. ** indicates p<0.001, unpaired two-tailed Mann-Whitney test versus indicated control.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21937/elife-21937-fig7-v2.jpg)\n\n## Discussion\n\nOur present data demonstrate that bacteria derived PGN entry into the fly body cavity has, at least, two physiological consequences (Figure 7). In addition to activate innate immune response in fat body cells, it also blocks mature egg delivery in oviduct and hence reduces egg laying of infected females. We further demonstrate that this bacterially induced behavioral change is due to an NF-\u03baB pathway-dependent modulation in octopaminergic neurons. We finally present evidence that both responses, that are potentially detrimental if not down-regulated, are fine-tuned by distinct and specific PGN degrading enzymes. We propose that by regulating the level of internal PGN, flies adapt their egg-laying behavior to environmental conditions. In standard environmental conditions, PGRP-LB ensures that low level of PGN does not affect egg laying. However, whenever PGN concentration reaches a certain threshold, which either reflects an infection status or the presence of a highly contaminated food supply, NF-\u03baB pathway activation in neurons is blocking egg release. As PGN of ingested bacteria is capable of reaching the internal fluid and triggering dedicated signaling cascades (Basset et al., 2000), one could imagine that such a mechanism prevents flies to lay their eggs in highly contaminated food in which their development and that of the hatching larvae could be impaired by microbes. In this context, PGRP-LB mediated PGN scavenging is crucial since a non-regulated behavioral immune response would lead to a severe drop in the amount of progeny which may not be in keeping with the real threat. Another possibility could be that a reduced egg production will favor immune effector production. Indeed, it is often considered that the energy cost of an acute innate immune response needs can be balanced by a decreased offspring production (Stahlschmidt and Adamo, 2013). Blocking the energy-consuming egg production in infected flies could be a way for them to mobilize resources required for full activation of innate immune defences. A similar depression of oviposition has recently been documented in females flies exposed to parasitoid wasps who lay their eggs in Drosophila larvae (Kacsoh et al., 2015). However, while visual perception of wasps by female flies induces a long-term decline in oviposition associated with an early stage-specific oocyte apoptosis, PGN effects are transient and rather lead to a late stage oocyte accumulation suggesting that although the final outcome is the same, the mechanisms differ.\n\nThe present data indicate that PGN sensing acts on egg-laying behavior via neuronal modulation. We identified NF-\u03baB pathway signaling in octopaminergic neurons as the actor of this PGN-dependent oviposition reduction. It would be informative to test whether bacterial infection is also affecting other octopamine-mediated behaviors such as reward in olfactory or visual learning, male-male courtship, male aggressive behavior (Unoki et al., 2006; Certel et al., 2007; Zhou et al., 2008) or sleep:wake regulation (Crocker et al., 2010). This would require to further characterize the nature of the octopamine neurons whose activation is modulated by infection and to consider that the phenotypes defined as being part of the sickness behaviours might be orchestrated directly by the immune system following the perception of microbes. Indeed, as shown above, our PGRP-LBPD reporter line is not only labeling cells in the reproductive tract but also in thoraco-abdominal ganglia and in the brain with projections to proboscis, wings and legs. Likewise, octopaminergic neurons have been shown to innervate numerous areas in the brain and in the thoraco-abdominal ganglion and to project to various reproductive structures such as ovaries, oviducts and uterus, further work will be needed to exactly pinpoint the identity of the affected octopaminergic neurons, their targets and their effect on fly behavior. In addition, the question remains as to how NF-\u03baB activation can modulate octopaminergic neurons activity. Among the possibilities is the modulation of octopamine neuron excitability, the regulation of octopamine production or its secretion. Knowing the NF-\u03baB protein itself is required for this behavioral response and that increasing the amount of available octopamine via overexpression of the T\u03b2H enzyme rescues the oviposition drop, it is expected that IMD pathway activation in neurons will have transcriptional consequences. However, other hypotheses might be considered since Dorsal, a member of the other Drosophila NF-\u03baB signaling cascade Toll, has been shown to function post-transcriptionally together with I\u03baB and IRAK at the post-synaptic membrane to specify glutamate receptor density (Heckscher et al., 2007). It should also be noticed that PGRP-LC has recently been shown to control presynaptic homeostatic plasticity in mouse (Harris et al., 2015). One of the future challenges will be to understand how NF-\u03baB activation is reducing octopaminergic signals.\n\nWe show here that Drosophila uses an unique bacteria associated molecular pattern to activate different processes related to host defence, namely the production of antimicrobial peptides and the modulation of oviposition behavior. Interestingly, it appears that in order to fine-tune these responses, different isoforms of the same PGN scavenging enzyme, PGRP-LB, are required. While the secreted PGRP-LBPC isoform certainly acts non cell-autonomously to dampen immune activation by circulating PGN (Zaidman-R\u00e9my et al., 2006), a putatively intracellular isoform PGRP-LBPD controls the effect of PGN on oviposition. Even more remarkable, this response is not transmitted via PGRP-LC but rather by the intracytoplasmic PGRP-LE receptor. Previous work has shown that PGRP-LE is also regulating response to bacteria in some part of the gut (Bosco-Drayon et al., 2012; Neyen et al., 2012). Thus, it will be important to understand how PGN is trafficking within and through cells, and how PGRP-LBPD modulates PGRP-LE-dependent IMD pathway activation and whether it is also required to modulate other PGN/PGRP-LE-dependent responses.\n\nIn essence, our results demonstrate that PGN, when ingested or introduced into the body cavity, not only activates antibacterial immune response but also influences neuronally controlled behaviors in flies. Importantly, the sickness behavior we deciphered does not appear to be a side effect of an energetically expensive immune response, but rather the result of a specific regulation. An orchestration of different processes required for the immune response was also exemplified by a recent report linking metabolism and immunity (Clark et al., 2013). Although not dissected to the molecular level, previous studies in mammals have suggested that similar interactions between PGN and neuronally controlled activities. For instance, PGN derived muropeptide MDP has been shown to display powerful somnogenic effect when injected into rabbit brain (Krueger et al., 1984). It has also been shown that PGN produced by symbiotic microbiota may \u2018leak\u2019 into the bloodstream and reach organs distant to the gut, such as the bones (Clarke et al., 2010). Finally, recent findings show that bacterial cell wall peptidoglycan traverses the murine placenta and reach the developing fetal brain where it triggers a TLR2-dependent fetal neuroproliferative response (Humann et al., 2016). A future challenge will be to test whether an NF-\u03baB-dependent response to PGN is also taking place in mammalian neurons and directly influences the animal behavior.\n\n## Material and methods\n\n### Bacteria\n\nThe bacterial strains used are Escherichia coli strain DH5\u03b1 (grown at 37\u00b0C) and Erwinia carotovora carotovora 15 2141 (Ecc, grown at 30\u00b0C). Strains were cultured in Luria-Bertani medium with shaker overnight. Bacterial cultures were centrifuged at 2500 g for 15 min at room temperature (RT) and re-suspended in fresh Luria-Bertani medium. OD at 600 nm was measured and bacteria were diluted in LB medium to the desired concentration.\n\n### Drosophila melanogaster strains and maintenance\n\nThe following strains were used in this work: PGRP-LE112 (Kaneko et al., 2004), PGRP-LC\u0394E12 (Gottar et al., 2002), DreddD55(Leulier et al., 2000), RelishE20 (Hedengren et al., 1999), pirkEY0073 (Lhocine et al., 2008), PGRP-LB\u2206(Paredes et al., 2011), Df(3R)ED5516 (BL#8968), Df(1)Excel6234 and T\u03b2HnM18 (kindly provided by Henrike Scholz). UAS-nlsGFP (BL#4775), UAS-IMD (Georgel et al., 2001), UAS-TTX (Sweeney et al., 1995), UAS-TRPA1 (Hamada et al., 2008), UAS-Kir2.1 (Hardie et al., 2001), QUAS-GFP (BL# 52264), UAS-T\u03b2H (kindly provided by Henrike Scholz) and UAS-FaddIR, (Khush et al., 2002) (Kindly provided by P. Meier), UAS-RelIR (BL#28943) and UAS-LEIR (BL#60038). Elav-Gal4 (BL# 8760), NP1-Gal4 (DGRC-Kyoto #112001), Tdc2-Gal4 and T\u03b2H-Gal4 (kindly provided by Henrike Scholz), ppk-Gal4 (kindly provided by Barry Dickson), ILp7-Gal4 (Kindly provided by Irene Miguel-Aliaga), prospero-Gal4 and Voila-Gal4 (kindly provided by Armel Gallet).\n\nFlies were grown at 25\u00b0C on a yeast/cornmeal medium in 12 hr/12 hr light/dark cycle controlled incubators. For 1\u00a0L of food, 8.2g of agar (VWR, cat. #20768.361), 80g of cornmeal flour (Westhove, Farigel maize H1) and 80\u00a0g of yeast extract (VWR, cat.#24979.413) were cooked for 10 min in boiling water. 5.2 g of Methylparaben sodium salt (MERCK, cat.#106756) and 4 ml of 99% propionic acid (CARLOERBA, cat. #409553) were added when the food had cooled down. For antibiotic treatment (ATB), standard medium was supplemented with Ampicillin, Kanamycin, Tetracyclin and Erythromycin at 50 \u03bcg/ml final concentrations.\n\n#### Transgenic lines generated\n\nUAS-PGRP-LBPA, UAS-PGRP-LBPC, UAS-PGRP-LBPD, pLB1Gal4, pLB2Gal4, pLB3Gal4, and pLB1QF. To generate the UAS-PGRP-LBPA and UAS-PGRP-LBPC lines, a DNA fragment corresponding to their respective ORF was PCR amplified from the GH21008 and the RE34140 DGRC EST clones. To construct the UAS-PGRP-LBPD, we first performed two PCR reactions using GH21008 and genomic DNA as template for common ORF and RD specific exon, respectively. The two resulting PCR products were then combined to generate the PGRP-LBPD ORF amplicon. Using Gateway Technology, the PGRP-LBRA, PGRP-LBRC and PGRP-LBRD fragments were cloned into the pTWG vector (C-terminal eGFP tag with a UAS promoter). To construct the pLB1Gal4, pLB2Gal4 and pLB3Gal4 lines, a DNA fragment corresponding to the respective determined promoter was PCR amplified from the BAC CH321-82G09. Using Gateway Technology, the pLB1, pLB2 and pLB3 fragments were cloned into the SMG4-Gal4 vector. For the pLB1QF line, the previously mentioned pLB1 PCR fragment was cloned into pattB-QF-hsp70 vector from Addgene (Plasmid #24368). Molecular details are available upon request.\n\n### Generation of CRISPR alleles\n\n#### Generation of the y1, w1118 P(3xP3-EGFP, vasa-cas9D10A)attP18 stock (by Kate Koles and Avi Roda at Brandeis University, USA)\n\nThe miniwhite marker in pBID-G (a gift from Brian McCabe; Addgene plasmid # 35195) was replaced by a 3xP3-EGFP cassette using the ApaI and NheI restriction sites, yielding pBID-3xP3-EGFP. 3xP3-EGFP was PCR amplified from pBSII-SK-3xP3-EGFP-vasa-dPhiC31attB (a gift of Drs. Johannes Bischof and Konrad Basler). The 3xP3-EGFP cassette drives strong EGFP expression under the artificial Pax-6/eyeless-derived promoter element in the nervous system. The HA-NLS-Cas9[D10A]-NLS sequence was PCR amplified from pX334-U6-DR-BB-DR-Cbh-NLS-hSpCas9n(D10A)-NLS-H1-shorttracr-PGK-puro (a gift from Feng Zhang, Addgene plasmid # 42333) and TOPO cloned to pENTR-D-TOPO vector. Subsequently, the 5\u2019 and 3\u2019 vasa gene regulatory elements (Bischof et al., 2007) were PCR amplified from pBSII-SK-3xP3-EGFP-vasa- dPhiC31attB and cloned into pENTR-D-TOPO-Cas9[D10A] vector yielding pENTR-D-TOPO-vasa5\u2019-Cas9[D10A]-vasa3\u2019. This was then Gateway LR cloned into pBID-3xP3-EGFP, yielding the final plasmid pBID-3xP3-EGFP-vasa-Cas9[D10A]. Rainbowgene was used to create the transgenic flies at docking site attP18Plasmid encoding two synthetic guide RNAs (sgRNAs) was injected (100 ng/\u00b5l) into preblastoderm embryos of nosPhiC31; attP40 flies. sgRNAs (sgRNA1: AGTTGGGCCAGAAGTGGAGA and sgRNA2: CCTCATGGACTCGGAGCAAT) were designed using the online CRISPR design tool (http://crispor.tefor.net) to target RD specific exon of PGRP-LB and were cloned into the pCFD4-U6:1_U6:3 vector (Addgene #49411; [Port et al., 2014]). Males transgenic flies were crossed with Cas9 nickase transgenic females flies. This strategy reduces off-target activity. We used the y1, w1118 P(3xP3-EGFP, vasa-cas9D10A)attP18 fly line\u200b . G0 founder flies were crossed with w1118;;MKRS/TM6b flies then the F1 progeny was screened for mutations (indels or larger deletions) by high resolution melting analysis.\n\n### Oviposition assays\n\nIn order to ease the quantification of the laid eggs, a blue food dye (E133, Le meilleur du chef) was incorporated (1%) into the antibiotic media used for the oviposition assays (Blue-ATB). The egg-laying index corresponds to the ratio between the number of eggs laid by a treated female and the average number of eggs per tube laid by the untreated animal during a specific period of time, 24 hr when not otherwise stated. An oviposition ratio of 1 indicates that the treatment did not impact the oviposition of the tested female during the time course of the experiment. Septic injury of mated females: One-day-old animals were harvested from ATB tubes kept at 25\u00b0C. Males and females were mixed in one tube with no more than 40 individuals per tube. Tubes were kept at 25\u00b0C and flies shifted to fresh tubes every 2 days. On day 5, females were used for septic injury. All the flies including control animals were anesthetized on CO2 pad. Untreated and treated animals were then transferred, one per fresh Blue-ATB tube and stored 24 hr at 25\u00b0C. Septic injuries were always performed between ZT0 and ZT6 with a tungsten needle dipped into a fresh solution of bacteria at OD200. PGN injections: As for septic injuries except that pure PGN was used and injected using a nanojector (Nanojet II, Drummond Scientific Company,\u00a0PA,\u00a0USA). PGN is from E. coli (Invivogen, ref 14C14-MM,\u00a0CA,\u00a0USA) and was resuspended in endotoxin-free water at 200\u00a0\u03bcg/mL. 9 nL of PGN solution was injected in the thorax. Feeding with bacteria: Five-day-old flies were pooled on 2% sucrose/LB/bacteria OD200 or 2% sucrose/LB in tubes without media containing at the bottom cotton filled with 1 mL of solution. Animals were kept 24 hr at 25\u00b0C in these tubes then individually shifted to ATB tubes. Eggs were counted for each tube 24 hr later. Assays with virgins: Virgins were harvested from ATB tubes kept at 25\u00b0C. Tubes were kept at 25\u00b0C, flies shifted in new tubes every 2 days. Five-\u00a0to\u00a0seven-day-old individuals were used for septic injury as described above except that 3 to 4 virgins were used per tube. Eggs were counted 24 hr later.\n\n### Quantitative real-time PCR\n\nmRNA from whole adults or dissected organs (n\u00a0=\u00a030) was extracted with RNeasy Mini Kit (QIAGEN, cat. #74106,\u00a0Germany). Quantitative real-time PCR, TaqMan, and SYBR Green analysis were performed as previously described [36]. Primers information can be obtained upon request. The amount of mRNA detected was normalized to control rp49 mRNA values. Normalized data were used to quantify the relative levels of a given mRNA according to cycling threshold analysis (\u0394Ct).\n\n### Ovaries content\n\nFlies were reared and harvested as for the oviposition assays except that 10 treated or untreated females were pooled by ATB tubes. At specific time points, after a 20 s EtOH bath, animals were dissected at RT in 1XPBS then ovaries gently opened on a glass slide in a 1XPBS drop. Four categories of stages from 8 to 14 were visually quantified per ovary using a Leica MZ6 binocular scope\u00a0(Germany). At least 10 ovaries per conditions were used.\n\n### DCP1 immunostaining\n\nFlies were reared and harvested as for the oviposition assays. After 6 hr, ovaries were dissected and fixed 1 hr in 4% paraformaldehyde. Anti-DCP1 (Cell signaling Technology , #9578) primary antibody was used.\n\n### Food-intake assay\n\nFlies were reared and harvested as for the oviposition assays except that after 6 hr, guts and crops were dissected in cold PBS. Five guts and crops were pooled and transferred to 1.5 mL canonical tubes (VWR #16466\u2013064) containing 0,75\u20131 mm glass beads (Retsch #22.222.0004,\u00a0Germany) and 50 \u00b5L PBS and ground automatically using a grinder (Precellys 24,\u00a0France). The lysates were then centrifuged at 15000 rpm and the OD 630 nm was measured using a Nanodrop (Thermo Scientific NanoDrop 1000,\u00a0DE,\u00a0USA).\n\n### Imaging\n\nAdult tissues were dissected in PBS, fixed for 20 min in 4% paraformaldehyde on ice and rinsed three times in PBT (PBS\u00a0+\u00a00.1% Triton X-100). The tissues were mounted in Vectashield (Vector Laboratories,\u00a0Ca,\u00a0USA) fluorescent mounting medium, with or without DAPI. Images were captured with either a Zeiss Stereo Discovery V12 microscope or an AxioImager APO Z1 apotome microscope (Zeiss,\u00a0Germany).\n\n### Statistical analyses and graphics\n\nThe Prism software (GraphPad) was used for statistical analyses. Our sets of data were tested for normality using the D'Agostino-Pearson omnibus test, and some of our data did not pass the normality test. Consequently, we used non-parametric tests for all the data sets and mainly the unpaired Mann-Whitney two-tailed test. Moreover, we do not show one experiment representative of the different biological replicates, but all the data generated during the independent experiments in one graph.\n",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "397e5758-17ab-4b0a-a17b-9bb215d9bd7a",
+      "submission_id": "f2a529d1-d265-49ce-947a-b2700c095e67",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mani Ramaswami, Trinity College Dublin , Ireland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21937.016](https://doi.org/10.7554/eLife.21937.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Peptidoglycan sensing by octopaminergic neurons modulates Drosophila oviposition\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Mani Ramaswami as the Reviewing Editor and Wendy Garrett as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Giovanni Bosco (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe work explores mechanisms through which Drosophila modulate oviposition in response to bacterial infection. An intriguing aspect of this study is that, in addition to physiological responses, Drosophila also exhibit behavioral changes in response to bacterial pathogens. The authors suggest this to be an example of a behavioral adaptation that facilitates both protection against the pathogen for the exposed individual as well as affecting fitness by modulating reproduction, e.g. \"behavioral immunity\". The evidence supports a model whereby octopaminergic neurons act directly on ovarian tissues to modulate egg laying in response to neuronal signaling elicited by bacterial infection. In a series of convincing loss- and gain-of function experiments, the authors establish that bacterially derived peptidoglycan acting through the NF-\u039aB (IMD) pathway is responsible for this effect, and describe novel isoform-specificity in the function of the PGN degrading enzyme PGRP-LB in this context. They then present some evidence that the IMD pathway exerts its effects on egg production in a subset of octopaminergic cells, some of which innervate the oviduct.\n\nThe text was clear and concisely written, and for the most part figures were easy to follow and data supported the interpretations presented in the text. This study presents a new and exciting link between the innate immune system and the nervous system that allows for a multi-system integration of physiological and behavior responses to relevant environmental challenges, such as infection.\n\nEssential revisions:\n\nIn general, it is important to strengthen the genetic experiments concerning neuronal manipulations in order to clarify the neuronal contribution to the described phenotypes.\n\n1) There is some confusion re: the neuronal site of NF-\u039aB activation. Based on the CNS neurites in the images provided, the pLB1-expressing cells seem to include peripheral sensory (taste?) neurons and sensory neurons in the oviduct, but not efferent oviduct-innervating neurons such as the octopaminergic neurons, with cell bodies located in the posterior tip of the VNC (see, for example, Monastirioti et al. (2003) Dev Biol PMID 14623230). Puzzlingly, the authors seem to imply that the octopaminergic neurons are a subset of pLB1 neurons \u2013 in fact, the subset that matters for the PGN effects on egg laying. To make matters more complicated, some of the drivers used in the study to demonstrate neuronal effects (e.g. elav-Gal4) also target enteroendocrine cells, recently shown to sense luminal bacteria (see Du et al. (2016) PLoS Genet doi: 10.1371/journal.pgen.1005773). While the authors are careful not to ascribe the observed effects to a specific neuronal subset, the paper will be greatly improved by experiments to restrict and better define the specific octopinergic responsible for the phenotype. The authors should use restricted genetic manipulations and detailed neuronal characterisation. For example, using drivers specific for oviduct sensing (ppk) or efferent (Ilp7, oct+) neurons should allow them to establish the whether the IMD pathway acts in sensory, efferent and/or other endocrine cells to mediate the egg laying reduction.\n\n2) Related to this point, the authors need to distinguish between a generic role for neurons in controlling egg laying, relaying the PGN-triggered signal or sensing it. In this regard, I see how presenting egg laying phenotypes as their ratio relative to control conditions makes comparisons visually straightforward, but can also mask \"constitutive\" phenotypes resulting from some genetic manipulations \u2013 especially those resulting from interfering with the activity of oviduct-innervating neurons. The authors should clarify which of their genetic manipulations have a strong effect on the constitutive egg laying ability of flies, and which are specific to septic injury responses.\n\n3) Based on the data provided, it also seems conceivable that the main effect of PGN is to transiently reduce food intake, which can indirectly impact egg production. Do any of the described genetic manipulations affect one phenotype without affecting the other one?\n\n4) The images of ovaries in Figure 1\u2014figure supplement 3 would be more useful if they were stained with a DNA dye that better revealed the mostly translucent very early stage egg chambers, i.e. it's otherwise very difficult to see stage 7/8 and younger egg chamber. Nevertheless, from these few images it is clear that the ovaries 6h post clean injury have vast numbers of very early (stages 2-5/6) whereas 6h post septic injury these early stages are almost completely absent. Because the figure only presents one ovary and the quantitation does not measure earlier stages it is impossible to know what the fate of these earlier stage egg chambers is in response to infection. This is an important point because the authors suggest (Discussion, end of first paragraph) that infection does not trigger oogenesis checkpoints that utilize apoptosis to eliminate early stage oocytes while allowing continued development of stage 8 and older oocytes. This claim is not supported by their observations since the increase in stage 14 oocytes could result from a combination of continued development of stage 7/8 and older oocytes AND apoptotic elimination of some stage 7/8 and earlier oocytes. I suggest the authors consider this possibility and change their language with respect to the exact stage of oocyst development or do a simple DAPI/caspase staining at different times after infection to quantitate all stages of egg chambers and report amount of early and mid-oogenesis apoptotic events. I understand that this analysis may be outside the scope of the present study and not necessarily critical. The authors may wish not to do this if they change the language so as to consider the possibility that younger oocytes may be eliminated (unless there is some other compelling argument that excludes this possibility).\n",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5b10b517-2bd7-44c2-8c32-d0742984d6f2",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C1",
+      "claim": "Bacterial infection of Drosophila females reduces oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that bacterial infection of Drosophila females reduces oviposition and that peptidoglycan, the component that activates Drosophila antibacterial response, is also the elicitor of this behavioral change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding, which is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "7aac6003-de28-422d-b222-961503c70af7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C2",
+      "claim": "Peptidoglycan is the elicitor of infection-induced oviposition reduction in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that bacterial infection of Drosophila females reduces oviposition and that peptidoglycan, the component that activates Drosophila antibacterial response, is also the elicitor of this behavioral change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this explicitly, and Figure 1D and E show that injection of purified PGN phenocopies bacterial infection effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "b8549605-c72a-43a5-ac26-f0f96b5b19b4",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C3",
+      "claim": "Peptidoglycan regulates egg-laying rate by activating NF-\u03baB signaling pathway in octopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that peptidoglycan regulates egg-laying rate by activating NF-\u03baB signaling pathway in octopaminergic neurons and that, a dedicated peptidoglycan degrading enzyme acts in these neurons to buffer this behavioral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this mechanism, supported by data in Figures 5 and 6 showing NF-\u03baB pathway involvement in octopaminergic neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "a3927f37-362a-4486-93e4-78e1b73ba76b",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C4",
+      "claim": "A dedicated peptidoglycan degrading enzyme acts in octopaminergic neurons to buffer the behavioral response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that peptidoglycan regulates egg-laying rate by activating NF-\u03baB signaling pathway in octopaminergic neurons and that, a dedicated peptidoglycan degrading enzyme acts in these neurons to buffer this behavioral response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this explicitly, and Figure 2 shows that PGRP-LBPD isoform specifically modulates this response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "26e076a2-cf26-43d8-a50d-4400aae78fc4",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C5",
+      "claim": "Innate immunity serves as a first-line defense against microbes in all metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "Innate immunity, which is common to all metazoans, serves as a first-line defense against microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9ebdd06c-8d05-48e1-9c67-c02a34c8cfb7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C6",
+      "claim": "Two NF-\u03baB-dependent pathways, IMD and Toll, are the main signaling cascades that control immune gene induction in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic screens have identified two NF-\u03baB-dependent pathways, IMD and Toll, as the main signaling cascades that control immune gene induction in Drosophila (Buchon et al., 2014; Lemaitre et al., 1995, 1996; Ferrandon et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "0e80e390-66b8-45a5-b7b2-e495f496140a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C7",
+      "claim": "Both IMD and Toll pathways are activated by bacterial cell wall peptidoglycan (PGN).",
+      "claim_type": "EXPLICIT",
+      "source": "Both pathways are activated by a unique ligand, the bacterial cell wall peptidoglycan (PGN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "921fd6e8-afd5-463a-a5f7-f6a164e40773",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C8",
+      "claim": "PGN from Gram-negative bacteria and bacilli preferentially activates the IMD pathway via PGRP-LC and PGRP-LE.",
+      "claim_type": "EXPLICIT",
+      "source": "PGN from Gram-negative bacteria and bacilli preferentially activates the IMD pathway via its detection by two members of the same PeptidoGlycan Recognition Protein (PGRP) family, PGRP-LC and PGRP-LE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "aa725130-aaa1-4c7f-8d25-3f9c0eb4b582",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C9",
+      "claim": "PGRP-LC functions as the transmembrane signaling receptor upstream of the IMD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "While PGRP-LC functions as the transmembrane signaling receptor upstream of the IMD pathway, PGRP-LE is detecting PGN intracellularly (Bosco-Drayon et al., 2012; Choe et al., 2005; Gottar et al., 2002; R\u00e4met et al., 2002; Kaneko et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "d8cf7c44-1679-4d7d-865f-144313a75e29",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C10",
+      "claim": "PGRP-LE detects PGN intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "While PGRP-LC functions as the transmembrane signaling receptor upstream of the IMD pathway, PGRP-LE is detecting PGN intracellularly (Bosco-Drayon et al., 2012; Choe et al., 2005; Gottar et al., 2002; R\u00e4met et al., 2002; Kaneko et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "de75fb57-089d-4632-b187-3abc2bdc9ec5",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C11",
+      "claim": "PGN from Gram-positive bacteria engages a Toll-dependent response involving PGRP-SA.",
+      "claim_type": "EXPLICIT",
+      "source": "PGN from Gram-positive bacteria rather engages a Toll-dependent response involving a circulating PGRP as sensor, PGRP-SA (Michel et al., 2001; Leulier et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1e138eab-679b-4c55-8371-149f9a3f8ce9",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C12",
+      "claim": "Drosophila Toll has no capacity to directly bind microbial motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in contrast to mammalian Toll-Like-Receptors, Drosophila Toll has no capacity to directly bind microbial motifs (Brough et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "63d10317-5614-4a20-a22a-098d9c29348c",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C13",
+      "claim": "Drosophila avoid food contaminated by pathogenic bacteria by using an olfactory pathway tuned to Geosmin.",
+      "claim_type": "EXPLICIT",
+      "source": "Stensmyr et al. demonstrated that Drosophila avoid food contaminated by pathogenic bacteria by using an olfactory pathway exquisitely tuned to a single microbial odor, Geosmin (Stensmyr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "e406915a-c3c6-4c01-b85f-44102985fa68",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C14",
+      "claim": "Geosmin is produced by harmful microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Produced by harmful microorganisms, Geosmin is detected by specific Drosophila olfactory sensory neurons which then transfer the message to higher brain centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the description of the Geosmin avoidance pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "e8528fa8-b74b-4790-8e74-0126901a69f8",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C15",
+      "claim": "Activation of the Geosmin olfactory circuit induces avoidance response and suppresses egg-laying and feeding behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of this olfactory circuit ultimately induces an avoidance response, and suppresses egg-laying and feeding behaviors, thereby reducing the infection risk of both the adult flies and their offspring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the description of the Geosmin avoidance pathway.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "24d82ce8-6bed-48e0-a9a9-f47738fcd821",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C16",
+      "claim": "Direct exposure to bacteria impacts sleep patterns and induces hygienic grooming in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, direct exposure to bacteria impacts sleep patterns and induces hygienic grooming (Kuo et al., 2010; Yanagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "b0faf86d-3909-4ce9-b27a-6faa607be75b",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C17",
+      "claim": "Drosophila plastically increases the production of recombinant offspring in response to parasite infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Drosophila plastically increases the production of recombinant offspring in response to parasite infection (Singh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "dcb40f74-233d-41d9-8d58-1ce4da7e7246",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C18",
+      "claim": "Septic injury with E. coli induces a strong egg-laying drop within 6 hr following infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Septic injury with a needle contaminated with the innocuous Gram-negative bacteria E. coli, induced a strong egg-laying drop within 6 hr following infection (Figure 1B and C and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data shown in Figure 1B, 1C, and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "c6b3959e-2770-4487-aa35-da0b6aeda8d7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C19",
+      "claim": "The difference in the number of eggs laid by infected versus non-infected wild-type females was no longer seen after 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in the number of eggs laid by infected versus non-infected wild-type females was no longer seen after 24 hr demonstrating that the effects are transient and reversible (Figure 1C and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1C and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1a126b78-5f9b-46e4-937f-0df29a663c73",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C20",
+      "claim": "Bacteria-induced egg-laying drop was stronger and lasted longer in PGRP-LB mutants than in wild-type flies.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the immune response, bacteria-induced egg-laying drop was stronger and lasted longer in PGRP-LB mutants than in wild-type flies while the amount of bacteria within the animals were equivalent (Figure 1C and Figure 1\u2014figure supplements 1B, 2A and B) (Zaidman-R\u00e9my et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1C and Figure 1\u2014figure supplements 1B, 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "6ef17060-6103-4a3c-bba3-aee468f86355",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C21",
+      "claim": "The egg-laying reduction effect was dose-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was dose-dependent and not observed after sterile wound or when flies were injected with water (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "47d8175a-2f7e-429b-b6e9-e1becba777cf",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C22",
+      "claim": "The egg-laying reduction effect was not observed after sterile wound or when flies were injected with water.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was dose-dependent and not observed after sterile wound or when flies were injected with water (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "88049070-1104-48d8-8ff5-dad4a9091c4a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C23",
+      "claim": "The effects of bacterial infection on egg-laying were due to the presence of bacteria in the body cavity and not to cuticle wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the effects were due to the presence of the bacteria in the body cavity and not to cuticle wounding (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1C and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "c52559d7-9937-4d4d-8036-cab45b61a606",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C24",
+      "claim": "Egg-laying reduction was observed when flies were orally infected with bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Egg-laying reduction was also observed when flies were orally infected with bacteria and when flies mutant for another IMD pathway antagonist, Pirk, were infected (Figure 1\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f39087a0-31f0-472b-9059-fc7fae4360ac",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C25",
+      "claim": "Egg-laying reduction was observed when flies mutant for Pirk were infected.",
+      "claim_type": "EXPLICIT",
+      "source": "Egg-laying reduction was also observed when flies were orally infected with bacteria and when flies mutant for another IMD pathway antagonist, Pirk, were infected (Figure 1\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "dcb55966-81f4-406e-b114-b05f1eb9ffdc",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C26",
+      "claim": "Injection of highly purified E. coli PGN in both wild type and PGRP-LB mutants fully phenocopied the effects seen with injection of bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, injection of highly purified E. coli PGN in both wild type and PGRP-LB mutants fully phenocopied the effects seen with injection of bacteria (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "5cf13a53-45a8-4e78-b049-565a60b36e93",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C27",
+      "claim": "Mutants for Relish (RelE20) did not present egg-laying drop 6 hr post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants for the transcription factor Relish (RelE20) and for the caspase Dredd (DreddD55) did not present egg-laying drop 6 hr post-infection (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "079c9863-2d7f-484b-b231-3be935d16954",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C28",
+      "claim": "Mutants for Dredd (DreddD55) did not present egg-laying drop 6 hr post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants for the transcription factor Relish (RelE20) and for the caspase Dredd (DreddD55) did not present egg-laying drop 6 hr post-infection (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "728b0ec8-1593-485d-ad17-908c9160e2ec",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C29",
+      "claim": "Inactivation of Relish, Dredd or PGRP-LE, but not PGRP-LC, completely suppressed the PGRP-LB-dependent egg-laying drop.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we performed epistasic analyses with PGRP-LB mutants and demonstrated that inactivation of, Relish, Dredd or the intracytoplasmic receptor PGRP-LE, but not the transmembrane protein PGRP-LC, completely suppressed the PGRP-LB-dependent egg-laying drop (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "4a5da9e6-0e3b-4b05-a2c5-7f215d874e4f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C30",
+      "claim": "PGRP-LE-dependent PGN detection induces a reduction of female oviposition by triggering NF-\u03baB pathway activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results demonstrate that PGRP-LE-dependent PGN detection by the fly induces a reduction of female oviposition by triggering NF-\u03baB pathway activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "5b44c2bf-79f7-48cc-9e12-35b458fd548c",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C31",
+      "claim": "Six hours post-exposure to E. coli, ovaries from wild-type flies contained three-times more mature stage 14 oocytes than uninfected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Six hours post-exposure to E. coli, ovaries from wild-type flies contained three-times more mature stage 14 oocytes than uninfected animals and less stage 10 immature oocytes (Figure 1\u2014figure supplement 3A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 3A, B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "450bb9ec-94fb-446e-8dde-5be9029f40c9",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C32",
+      "claim": "Six hours post-exposure to E. coli, ovaries from wild-type flies contained less stage 10 immature oocytes than uninfected animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Six hours post-exposure to E. coli, ovaries from wild-type flies contained three-times more mature stage 14 oocytes than uninfected animals and less stage 10 immature oocytes (Figure 1\u2014figure supplement 3A,B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 3A, B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "b6c516f4-44f8-4b84-8219-039eb493249d",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C33",
+      "claim": "Exposure to bacteria does not prevent oocyte maturation in the ovaries but rather blocks egg release into the oviducts.",
+      "claim_type": "EXPLICIT",
+      "source": "Egg-laying drop was reversible by 24 hr suggesting that the exposure to bacteria does not prevent oocyte maturation in the ovaries but rather blocks egg release into the oviducts, leading to an accumulation of mature oocytes in ovaries of infected flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that egg-laying recovers by 24 hr and that mature oocytes accumulate.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9c9c8d61-d8a8-48c3-baea-9bc7cbf0af2a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C34",
+      "claim": "Antibody staining against activated-caspase (DCP1) did not reveal any sign of increased apoptosis in ovaries from infected females compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibody staining against activated-caspase (DCP1) did not reveal any sign of increased apoptosis in ovaries from infected females compared to controls (Figure 1\u2014figure supplement 3C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1e7f9747-1b08-4b12-8f1f-2f72bce05310",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C35",
+      "claim": "The presence of bacteria within the female body cavity induces a transient retention of mature oocytes within the ovaries leading to a drop of egg laying.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the presence of bacteria within the female body cavity induces a transient retention of mature oocytes within the ovaries leading to a drop of egg laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "ab3057ad-3ab0-4f7c-b1fb-4bfeca7dec27",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C36",
+      "claim": "Bacterial infection did not impair adult feeding behavior in both wild-type and Relish mutants 6 hr after bacterial pricking.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown Figure 1\u2014figure supplement 3E, bacterial infection did not impair adult feeding behavior in both wild-type and Relish mutants 6 hr after bacterial pricking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 1\u2014figure supplement 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "21b96a1d-26d1-494c-8d1f-f21a48dc5057",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C37",
+      "claim": "The PGRP-LB locus generates three protein isoforms (PGRP-LB PA, PC, PD) that all have in common the enzymatic amidase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the PGRP-LB locus generates three protein isoforms (PGRP-LB PA, PC, PD) that all have in common the enzymatic amidase domain (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "efa3edc3-1741-45c9-b4a7-89ab0578c9b5",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C38",
+      "claim": "The secreted PGRP-LBPC cleaves the PGN in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "While the secreted PGRP-LBPC cleaves the PGN in the extracellular space (Paredes et al., 2011; Zaidman-R\u00e9my et al., 2006), the site and mode of action of the two other isoforms are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "706fdb1c-12dd-425d-9aab-71c3c32f7ad1",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C39",
+      "claim": "Neither PGRP-LBPA nor PGRP-LBPD possess a signal peptide, suggesting that they could act intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to PGRP-LBPC, neither PGRP-LBPA nor PGRP-LBPD possess a signal peptide, suggesting that they could act intracellularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference based on the absence of signal peptides.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "e8d6b98f-7bb1-4f59-acad-548d0a2d92d2",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C40",
+      "claim": "Only pLB1Gal4/UAS-PGRP-LBPD was able to fully rescue the egg-laying defect of PGRP-LB-infected females.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, out of the nine possible combinations, only pLB1Gal4/UAS-PGRP-LBPD was able to fully rescue the egg-laying defect of PGRP-LB-infected females (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9971faf5-8a9b-47a9-81a6-d34f2ca1aa5a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C41",
+      "claim": "All three PGRP-LB isoforms retain the ability to cleave PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to show that the three isoforms retain the ability to cleave PGN, we orally infected PGRP-LB mutants that ectopically expressed the different PGRP-LB isoforms in gut cells and monitored the expression of the IMD target gene Diptericin. The exacerbated Diptericin expression measured in PGRP-LB mutant was strongly reduced by expressing any of the three isoforms (Figure 2\u2014figure supplement 1A) (Zaidman-R\u00e9my et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "592b9c15-27ad-4855-b86a-9c38f69fa96a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C42",
+      "claim": "PGRP-LB isoforms are functionally equivalent in the regulation of gut immune response to bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that although PGRP-LB isoforms are functionally equivalent in the regulation of gut immune response to bacteria, they have specific roles in regulating bacteria-induced egg-laying phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "59712964-dd52-4b73-9df5-e3d0c60dcc7b",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C43",
+      "claim": "PGRP-LB isoforms have specific roles in regulating bacteria-induced egg-laying phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that although PGRP-LB isoforms are functionally equivalent in the regulation of gut immune response to bacteria, they have specific roles in regulating bacteria-induced egg-laying phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "405c26d9-1758-4246-8037-8aea951efbdc",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C44",
+      "claim": "PGRP-LBPD-specific mutants behave as wild-type flies as far as the immune response is concerned.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these mutants behave as wild-type flies as far as the immune response is concerned (Figure 2\u2014figure supplement 1C), their oviposition phenotype post-infection is identical to that of PGRP-LB null females (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f425fc05-1e05-4031-abdf-e3ca48e15ec5",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C45",
+      "claim": "PGRP-LBPD-specific mutants have an oviposition phenotype post-infection identical to that of PGRP-LB null females.",
+      "claim_type": "EXPLICIT",
+      "source": "Although these mutants behave as wild-type flies as far as the immune response is concerned (Figure 2\u2014figure supplement 1C), their oviposition phenotype post-infection is identical to that of PGRP-LB null females (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "254550b1-6375-4fe0-b19f-a39f0847e689",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C46",
+      "claim": "Egg laying is controlled intracellularly in the pLB1-positive cells via the PGRP-LBPD isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these two regulations are genetically distinct with egg laying probably controlled intracellularly in the pLB1-positive cells via the PGRP-LBPD isoform and immunity extracellularly by the PGRP-LBPC isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9ac4f156-1164-49b1-87a5-935152f3b021",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C47",
+      "claim": "Immunity is controlled extracellularly by the PGRP-LBPC isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these two regulations are genetically distinct with egg laying probably controlled intracellularly in the pLB1-positive cells via the PGRP-LBPD isoform and immunity extracellularly by the PGRP-LBPC isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "b84d6e28-7025-4c7d-8910-b3bc009551be",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C48",
+      "claim": "RNAi-mediated inactivation of either Relish or PGRP-LE in pLB1 cells was sufficient to block the effect of bacteria on female egg-laying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAi-mediated inactivation of either Relish or PGRP-LE in pLB1 cells was indeed sufficient to block the effect of bacteria on female egg-laying behavior (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "0253f6e2-f30e-495b-a1ff-4a178ee956f7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C49",
+      "claim": "RNAi-mediated inactivation of Fadd in pLB1 cells blocked the effect of bacteria on egg-laying in the PGRP-LB mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar effects using RNAi-mediated inactivation of Fadd were observed in the PGRP-LB mutant background (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "2c1cc32e-51e6-4900-ac1a-b17adc680660",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C50",
+      "claim": "IMD pathway activation via PGRP-LE in pLB1 cells is responsible for the oviposition decrease post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that IMD pathway activation via PGRP-LE in pLB1 cells is responsible for the oviposition decrease post-infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "eda27cc3-964e-423c-9143-b630f73138f7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C51",
+      "claim": "GFP staining from pLB1QF/QUAS-GFP reporter line was detected in neuronal-like fibers in the lateral and common oviducts.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP staining was detected in neuronal-like fibers in the lateral and common oviducts where it seems to connect the oviduct to the basal part of the ovaries (Figure 4A''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A'''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "8f7fb656-9181-4359-946b-ebc5daca85d3",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C52",
+      "claim": "pLB1 projections were specifically detected in the posterior part of the ventral nerve cord, in the abdominal ganglion and in the subesophageal ganglion of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Projections were also specifically detected in the posterior part of the ventral nerve cord, in the abdominal ganglion and in the subesophageal ganglion of the brain (Figure 4A' and A'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A' and A''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "43fa0db6-8aa2-48bc-8361-0c6100ee3aa6",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C53",
+      "claim": "PGRP-LB females in which the UAS-PGRP-LBPD construct was driven by the pan-neuronal Gal4 driver (elavGal4) no longer show a drop in egg-laying post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "PGRP-LB females in which the UAS-PGRP-LBPD construct was driven by the pan-neuronal Gal4 driver (elavGal4) no longer show a drop in egg-laying post-infection (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "d32f1aa7-f71b-45a0-96fb-1f815177e2e1",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C54",
+      "claim": "RNAi-mediated inactivation of IMD pathway component Relish or Fadd in neurons completely suppressed egg-laying drop post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RNAi-mediated inactivation of IMD pathway component Relish or Fadd completely suppressed egg-laying drop post-infection (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "815704fe-b4c8-4d97-aa53-ae3586935ea6",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C55",
+      "claim": "Expression of Tetanous toxin (TTX) in pLB1 cells of mated uninfected females caused a strong defect in oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "When TTX was expressed in pLB1 cells of mated uninfected females, a strong defect in oviposition was observed (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1607ff59-90f2-4640-a74b-faace606b24f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C56",
+      "claim": "Expression of TTX in pLB3-positive cells did not cause a defect in oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "This was not the case when TTX was expressed in pLB3-positive cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and can be inferred from Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "90d592e5-17ce-44c5-8a4e-cb4bd01516ee",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C57",
+      "claim": "Expressing the TRPA1 channel in pLB1 cells at permissive temperature (29\u00b0C) caused females to lay significantly more eggs than controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, pLB1Gal4/UAS-TRPA1 females raised at permissive temperature (29\u00b0C) laid significantly more eggs than controls (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "0b0d93e6-c8c1-4ae0-96ee-b582c35bf7e8",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C58",
+      "claim": "TRPA1 expression in pLB2 or pLB3 cells did not affect oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an effect of TRPA1 expression on oviposition was not observed when other pLBGal4 drivers were used (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "02b337b9-865a-4788-843a-a727dce3bba5",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C59",
+      "claim": "NF-\u03baB pathway inactivation using entero-endocrine cell drivers (voila-Gal4 and prospero-Gal4) did not interfere with egg-laying behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "NF-\u03baB pathway inactivation using two entero-endocrine cells drivers, voila-Gal4 and prospero-Gal4, did not interfere with egg-laying behavior (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1dcbd48d-0e63-4f5e-9e39-9dbd3fd8e44a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C60",
+      "claim": "In neurons, the IMD pathway is modulated by the PGRP-LBPD isoform to fine tune the oviposition drop following exposure to bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results demonstrate that pLB1 cells activity impacts oviposition and that in neurons, the IMD pathway is modulated by the PGRP-LBPD isoform to fine tune the oviposition drop following exposure to bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "dfed9d7e-6f88-45ed-bf64-306e7b316045",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C61",
+      "claim": "Fadd RNAi overexpression in ILP7 and ppk-positive neurons did not prevent egg-laying drop post-infection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as shown Figure 5\u2014figure supplement 1A, Fadd RNAi overexpression in these neurons did not prevent egg-laying drop post-infection.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "a10c4234-99e8-4998-9573-802505524c44",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C62",
+      "claim": "Overexpression of the SPR cDNA under the pLB1Gal4 driver was not sufficient to rescue egg-laying behavior of SPR null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, overexpression of the SPR cDNA under the pLB1Gal4 driver was not sufficient to rescue egg-laying behavior of SPR null mutants (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f5513aad-d924-419e-bba3-5ce0b150420a",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C63",
+      "claim": "Bacterial infection affects egg-laying behavior of virgin females.",
+      "claim_type": "EXPLICIT",
+      "source": "However, virgin females also produce unfertilized mature oocytes that they released regularly. Importantly, using PGRP-LB mutants, we noticed that bacterial infection was also affecting egg-laying behavior of virgin females (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "31d1f6f0-5193-465c-b519-a6729c70501b",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C64",
+      "claim": "Inactivation of pLB1 cells via TTX overexpression impacted wild-type virgin females oviposition rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we could show that inactivation of pLB1, but not of pLB3 cells via TTX overexpression impacted wild-type virgin females oviposition rate (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "0da2e54e-41ad-4d1a-b6e4-b9236539e63e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C65",
+      "claim": "pLB1Gal4/UAS-TTX virgin females presented ovaries packed with stalled mature oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "pLB1Gal4/UAS-TTX virgin females presented ovaries packed with stalled mature oocytes which led to an important increase of ovaries size and, in turn, of female abdomen (Figure 6\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "5a26ad2e-1389-4b3c-ba91-1a3d87342bb7",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C66",
+      "claim": "The phenotypes of pLB1Gal4/UAS-TTX virgin females are reminiscent of those seen in mutants for the octopamine pathway (T\u03b2HnM18).",
+      "claim_type": "EXPLICIT",
+      "source": "Both phenotypes are reminiscent of those seen in mutants for the octopamine pathway (T\u03b2HnM18, Figure 6\u2014figure supplement 1C) or in flies in which octopaminergic neurons are functionally inactivated (Monastirioti et al., 1995).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "95ea623e-c8d6-4f54-86fc-88b2df31b611",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C67",
+      "claim": "RNAi-mediated NF-\u03baB pathway inactivation in T\u03b2H-positive cells only was sufficient to prevent the bacterially induced egg-laying drop in wild-type and PGRP-LB mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6C and D, RNAi-mediated NF-\u03baB pathway inactivation in T\u03b2H-positive cells only, was sufficient to prevent the bacterially induced egg-laying drop in wild-type and PGRP-LB mutant background.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "dde85855-568b-4bb2-8ab0-25e4f1912666",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C68",
+      "claim": "PGRP-LBPD ectopic expression under the Tdc and the T\u03b2H Gal4 drivers was sufficient to rescue PGRP-LB mutant egg-laying phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown Figure 6E, PGRP-LBPD ectopic expression under the Tdc and the T\u03b2H Gal4 drivers, was sufficient to rescue PGRP-LB mutant egg-laying phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "7a5b5911-e189-4392-b644-f2f716686df8",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C69",
+      "claim": "Providing an excess of T\u03b2H in pLB1 cells was sufficient to fully rescue PGRP-LB oviposition drop following infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Providing an excess of T\u03b2H in pLB1, but neither in pLB2 nor in pLB3 cells, was sufficient to fully rescue PGRP-LB oviposition drop following infection (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by data in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "bee2f892-48b4-42e2-9027-5ade86b6a5bb",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C70",
+      "claim": "Bacterial infection induces in neurons a NF-\u03baB-pathway-dependent regulation of octopaminergic signal which in turns modulates ovulation and triggers a reduction of female oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether these results indicate that bacterial infection induces in neurons a NF-\u03baB-pathway-dependent regulation of octopaminergic signal which in turns modulates ovulation and triggers a reduction of female oviposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "e20063b0-b691-47dd-a1ed-84f9b85d20d0",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C71",
+      "claim": "Bacteria derived PGN entry into the fly body cavity activates innate immune response in fat body cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present data demonstrate that bacteria derived PGN entry into the fly body cavity has, at least, two physiological consequences (Figure 7). In addition to activate innate immune response in fat body cells, it also blocks mature egg delivery in oviduct and hence reduces egg laying of infected females.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "6a46d5d7-282a-4391-9cad-a67a13283ac4",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C72",
+      "claim": "Bacteria derived PGN entry into the fly body cavity blocks mature egg delivery in oviduct and reduces egg laying of infected females.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present data demonstrate that bacteria derived PGN entry into the fly body cavity has, at least, two physiological consequences (Figure 7). In addition to activate innate immune response in fat body cells, it also blocks mature egg delivery in oviduct and hence reduces egg laying of infected females.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion and illustrated in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "402034f5-0f0b-484e-96a4-70c27b27333e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C73",
+      "claim": "This bacterially induced behavioral change is due to an NF-\u03baB pathway-dependent modulation in octopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that this bacterially induced behavioral change is due to an NF-\u03baB pathway-dependent modulation in octopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "400ad2db-14a7-48b3-a684-17aafa9fe232",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C74",
+      "claim": "Both immune and behavioral responses are fine-tuned by distinct and specific PGN degrading enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "We finally present evidence that both responses, that are potentially detrimental if not down-regulated, are fine-tuned by distinct and specific PGN degrading enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion as a summary of findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "3c0762b5-dc41-4169-b28e-d5139e6d3cd4",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C75",
+      "claim": "By regulating the level of internal PGN, flies adapt their egg-laying behavior to environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that by regulating the level of internal PGN, flies adapt their egg-laying behavior to environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "070f76fd-4929-4f35-9d39-370f7bd8190e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C76",
+      "claim": "PGRP-LB ensures that low level of PGN does not affect egg laying in standard environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In standard environmental conditions, PGRP-LB ensures that low level of PGN does not affect egg laying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "d9fea254-a72e-4c6c-9a6d-cff07c7a1c30",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C77",
+      "claim": "When PGN concentration reaches a certain threshold, NF-\u03baB pathway activation in neurons blocks egg release.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whenever PGN concentration reaches a certain threshold, which either reflects an infection status or the presence of a highly contaminated food supply, NF-\u03baB pathway activation in neurons is blocking egg release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "2059a845-c940-4776-9252-d38be2cc85cc",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C78",
+      "claim": "PGN of ingested bacteria is capable of reaching the internal fluid and triggering dedicated signaling cascades.",
+      "claim_type": "EXPLICIT",
+      "source": "As PGN of ingested bacteria is capable of reaching the internal fluid and triggering dedicated signaling cascades (Basset et al., 2000), one could imagine that such a mechanism prevents flies to lay their eggs in highly contaminated food in which their development and that of the hatching larvae could be impaired by microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "07bc56b8-5fef-4d73-a11a-7976727c467b",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C79",
+      "claim": "PGRP-LB mediated PGN scavenging is crucial since a non-regulated behavioral immune response would lead to a severe drop in the amount of progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, PGRP-LB mediated PGN scavenging is crucial since a non-regulated behavioral immune response would lead to a severe drop in the amount of progeny which may not be in keeping with the real threat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "935fcd43-e72d-471b-ba6f-a80726f57642",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C80",
+      "claim": "Blocking the energy-consuming egg production in infected flies could be a way for them to mobilize resources required for full activation of innate immune defences.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking the energy-consuming egg production in infected flies could be a way for them to mobilize resources required for full activation of innate immune defences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "bf61e34d-2090-45f6-90e2-e676b58f10bf",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C81",
+      "claim": "A similar depression of oviposition has been documented in female flies exposed to parasitoid wasps.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar depression of oviposition has recently been documented in females flies exposed to parasitoid wasps who lay their eggs in Drosophila larvae (Kacsoh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "d0a2f6f7-d294-4f71-b502-032d8d015aac",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C82",
+      "claim": "Visual perception of wasps by female flies induces a long-term decline in oviposition associated with an early stage-specific oocyte apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while visual perception of wasps by female flies induces a long-term decline in oviposition associated with an early stage-specific oocyte apoptosis, PGN effects are transient and rather lead to a late stage oocyte accumulation suggesting that although the final outcome is the same, the mechanisms differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "36feb441-d932-47ff-9e75-fd868c0625a9",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C83",
+      "claim": "PGN effects on oviposition are transient and lead to a late stage oocyte accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while visual perception of wasps by female flies induces a long-term decline in oviposition associated with an early stage-specific oocyte apoptosis, PGN effects are transient and rather lead to a late stage oocyte accumulation suggesting that although the final outcome is the same, the mechanisms differ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to prior work and supported by experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "c75e2ea0-786e-45b1-a47a-c0156ed136f0",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C84",
+      "claim": "PGN sensing acts on egg-laying behavior via neuronal modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The present data indicate that PGN sensing acts on egg-laying behavior via neuronal modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f8266d5c-7073-4ff5-9a96-1bd067fe4011",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C85",
+      "claim": "NF-\u03baB pathway signaling in octopaminergic neurons is the actor of PGN-dependent oviposition reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified NF-\u03baB pathway signaling in octopaminergic neurons as the actor of this PGN-dependent oviposition reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "4768ebbd-0725-42dc-bc06-706e16c51d0f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C86",
+      "claim": "Octopaminergic neurons innervate numerous areas in the brain and in the thoraco-abdominal ganglion and project to various reproductive structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, octopaminergic neurons have been shown to innervate numerous areas in the brain and in the thoraco-abdominal ganglion and to project to various reproductive structures such as ovaries, oviducts and uterus, further work will be needed to exactly pinpoint the identity of the affected octopaminergic neurons, their targets and their effect on fly behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "034754b3-363e-4ab7-a838-2a47ebdd6bb2",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C87",
+      "claim": "The NF-\u03baB protein itself is required for the behavioral response to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowing the NF-\u03baB protein itself is required for this behavioral response and that increasing the amount of available octopamine via overexpression of the T\u03b2H enzyme rescues the oviposition drop, it is expected that IMD pathway activation in neurons will have transcriptional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "af1334c5-cf26-42bf-aea5-618ddea71fdf",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C88",
+      "claim": "Increasing the amount of available octopamine via overexpression of the T\u03b2H enzyme rescues the oviposition drop.",
+      "claim_type": "EXPLICIT",
+      "source": "Knowing the NF-\u03baB protein itself is required for this behavioral response and that increasing the amount of available octopamine via overexpression of the T\u03b2H enzyme rescues the oviposition drop, it is expected that IMD pathway activation in neurons will have transcriptional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the experimental findings shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "3d96a555-ca9b-45ec-865a-67f9471351da",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C89",
+      "claim": "Dorsal, a member of the Toll NF-\u03baB signaling cascade, has been shown to function post-transcriptionally together with I\u03baB and IRAK at the post-synaptic membrane to specify glutamate receptor density.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other hypotheses might be considered since Dorsal, a member of the other Drosophila NF-\u03baB signaling cascade Toll, has been shown to function post-transcriptionally together with I\u03baB and IRAK at the post-synaptic membrane to specify glutamate receptor density (Heckscher et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "3466baaf-8b66-4268-860d-4897848dcc4e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C90",
+      "claim": "PGRP-LC has been shown to control presynaptic homeostatic plasticity in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noticed that PGRP-LC has recently been shown to control presynaptic homeostatic plasticity in mouse (Harris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "4c2f5cb3-4ae7-43fc-9f76-264e891433d3",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C91",
+      "claim": "Drosophila uses a unique bacteria associated molecular pattern to activate different processes related to host defence.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that Drosophila uses an unique bacteria associated molecular pattern to activate different processes related to host defence, namely the production of antimicrobial peptides and the modulation of oviposition behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "5e0aab10-cdc4-4ea7-8480-ffc31785e67c",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C92",
+      "claim": "Different isoforms of the same PGN scavenging enzyme, PGRP-LB, are required to fine-tune immune and behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it appears that in order to fine-tune these responses, different isoforms of the same PGN scavenging enzyme, PGRP-LB, are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "2874413e-71b7-4798-a80e-bd31dae2cf9d",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C93",
+      "claim": "The secreted PGRP-LBPC isoform acts non cell-autonomously to dampen immune activation by circulating PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "While the secreted PGRP-LBPC isoform certainly acts non cell-autonomously to dampen immune activation by circulating PGN (Zaidman-R\u00e9my et al., 2006), a putatively intracellular isoform PGRP-LBPD controls the effect of PGN on oviposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9b138f0b-0eda-4d18-9ead-d6ce2e81861f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C94",
+      "claim": "A putatively intracellular isoform PGRP-LBPD controls the effect of PGN on oviposition.",
+      "claim_type": "EXPLICIT",
+      "source": "While the secreted PGRP-LBPC isoform certainly acts non cell-autonomously to dampen immune activation by circulating PGN (Zaidman-R\u00e9my et al., 2006), a putatively intracellular isoform PGRP-LBPD controls the effect of PGN on oviposition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "ec57fcde-a813-4b00-bac3-a60005dd5a1c",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C95",
+      "claim": "The behavioral response to infection is not transmitted via PGRP-LC but rather by the intracytoplasmic PGRP-LE receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Even more remarkable, this response is not transmitted via PGRP-LC but rather by the intracytoplasmic PGRP-LE receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "23b0bfa9-2753-4cc5-afbf-1268100ccaab",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C96",
+      "claim": "PGRP-LE is regulating response to bacteria in some part of the gut.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has shown that PGRP-LE is also regulating response to bacteria in some part of the gut (Bosco-Drayon et al., 2012; Neyen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "0b507ca1-5e02-4e5c-8acc-6ebb97e70840",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C97",
+      "claim": "PGN, when ingested or introduced into the body cavity, not only activates antibacterial immune response but also influences neuronally controlled behaviors in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, our results demonstrate that PGN, when ingested or introduced into the body cavity, not only activates antibacterial immune response but also influences neuronally controlled behaviors in flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f6c6316d-597b-47a0-b6e7-071c433b2183",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C98",
+      "claim": "The sickness behavior deciphered does not appear to be a side effect of an energetically expensive immune response, but rather the result of a specific regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the sickness behavior we deciphered does not appear to be a side effect of an energetically expensive immune response, but rather the result of a specific regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "4af90f39-a6f0-4239-b53b-096861ead05e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C99",
+      "claim": "PGN derived muropeptide MDP has been shown to display powerful somnogenic effect when injected into rabbit brain.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, PGN derived muropeptide MDP has been shown to display powerful somnogenic effect when injected into rabbit brain (Krueger et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "7accdb9e-94df-462b-b74c-14c223c6cbe8",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C100",
+      "claim": "PGN produced by symbiotic microbiota may 'leak' into the bloodstream and reach organs distant to the gut, such as the bones.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that PGN produced by symbiotic microbiota may 'leak' into the bloodstream and reach organs distant to the gut, such as the bones (Clarke et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "40314106-0dfc-4f92-84de-6f76224aaea6",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "claim_id": "C101",
+      "claim": "Bacterial cell wall peptidoglycan traverses the murine placenta and reaches the developing fetal brain where it triggers a TLR2-dependent fetal neuroproliferative response.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, recent findings show that bacterial cell wall peptidoglycan traverses the murine placenta and reach the developing fetal brain where it triggers a TLR2-dependent fetal neuroproliferative response (Humann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bacterial infection of Drosophila females reduces oviposition in a dose-dependent and transient manner. Septic injury with E. coli induces a strong egg-laying drop within 6 hours that is reversible by 24 hours in wild-type flies, with stronger and longer-lasting effects in PGRP-LB mutants. The effect is specific to bacterial presence in the body cavity, not cuticle wounding, and is observed with both septic injury and oral infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C18-C25 provide converging evidence from multiple experimental approaches (septic injury, oral infection, dose-response, time course, controls) demonstrating that bacterial infection reduces oviposition. The data include appropriate controls (sterile wound, water injection) and show the effect is specific, dose-dependent, and transient. The phenotype is consistently observed across different infection routes and genetic backgrounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "81a09a97-f3af-4337-8114-ba47bb2fed15",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Peptidoglycan (PGN) is the bacterial elicitor that triggers oviposition reduction through NF-\u03baB pathway activation. Injection of purified E. coli PGN phenocopies bacterial infection effects, and mutants for NF-\u03baB pathway components (Relish, Dredd) do not show egg-laying drop. Epistatic analysis demonstrates that PGRP-LE-dependent PGN detection, but not PGRP-LC, is required for the behavioral response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C26-C30 establish PGN as the elicitor through direct injection experiments and genetic epistasis. The use of purified PGN that phenocopies infection, combined with loss-of-function analysis of pathway components, provides strong mechanistic evidence. The differential requirement for PGRP-LE versus PGRP-LC is particularly informative about the intracellular nature of the response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "68a75bab-c223-459f-bef0-ada1d01fe715",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bacterial infection causes transient retention of mature oocytes in ovaries rather than preventing oocyte maturation or inducing apoptosis. Six hours post-infection, ovaries contain three-times more mature stage 14 oocytes and fewer immature stage 10 oocytes, with no increase in apoptosis. Feeding behavior is not impaired, indicating the effect is specific to egg release.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 characterize the cellular mechanism underlying reduced oviposition through ovary dissection, oocyte staging, apoptosis assays, and feeding behavior controls. The data demonstrate that the phenotype results from blocked egg release rather than reduced oocyte production, apoptosis, or general sickness. The reversibility by 24 hours supports the transient retention model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "1fd59c72-f8a7-4336-9497-2f63a29d8824",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The PGRP-LB locus generates three isoforms with distinct functions: PGRP-LBPD specifically controls egg-laying behavior while PGRP-LBPC regulates immune responses. Only the PGRP-LBPD isoform, which lacks a signal peptide and likely acts intracellularly in pLB1 cells, can rescue the egg-laying defect. CRISPR-generated PGRP-LBPD-specific mutants phenocopy PGRP-LB null mutants for oviposition but not immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C47 demonstrate isoform-specific functions through rescue experiments, gut immune assays, and CRISPR-generated alleles. The specificity of PGRP-LBPD for behavioral regulation versus PGRP-LBPC for immunity is well-supported by multiple complementary approaches. The genetic separation of these functions is a key finding, though the intracellular localization of PGRP-LBPD remains inferential based on lack of signal peptide.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "ffd23357-af09-4156-a8da-69d9145087ff",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IMD pathway activation via PGRP-LE in pLB1 cells is necessary and sufficient for infection-induced oviposition reduction. RNAi-mediated inactivation of Relish, PGRP-LE, or Fadd specifically in pLB1 cells blocks the bacterial effect on egg-laying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 use cell-type-specific RNAi to demonstrate that IMD pathway activity in pLB1 cells is required for the behavioral response. The experiments are well-controlled and the specificity of the pLB1 driver is validated by comparison with other drivers. This establishes the cellular locus of the behavioral regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "pLB1 cells are neurons that control oviposition, and NF-\u03baB pathway activity in these neurons regulates egg-laying behavior. The pLB1 reporter labels neuronal-like fibers in oviducts and projections in the ventral nerve cord and brain. Pan-neuronal expression of PGRP-LBPD or RNAi against IMD components rescues/prevents the oviposition phenotype. Functional manipulation of pLB1 cells with TTX or TRPA1 modulates oviposition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C60 establish the neuronal identity of pLB1 cells through anatomical characterization, pan-neuronal rescue experiments, and functional manipulation with TTX and TRPA1. The convergence of anatomical, genetic, and functional evidence strongly supports that these are neurons controlling egg-laying. The specificity controls (pLB2, pLB3, entero-endocrine drivers) strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Bacterial infection modulates egg-laying through NF-\u03baB pathway activation in octopaminergic neurons. The phenotype occurs in both mated and virgin females. Inactivation of pLB1 cells phenocopies octopamine pathway mutants (swollen ovaries with mature oocytes). RNAi against NF-\u03baB components in T\u03b2H-positive cells prevents infection-induced oviposition drop, and PGRP-LBPD expression in octopaminergic neurons rescues the phenotype. Overexpression of T\u03b2H in pLB1 cells rescues PGRP-LB mutant phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C63-C70, C73, C85 identify octopaminergic neurons as the specific neuronal population mediating the behavioral response through multiple complementary approaches: phenotypic similarity to octopamine mutants, cell-type-specific RNAi, isoform-specific rescue in octopaminergic neurons, and T\u03b2H overexpression rescue. The convergence of genetic, anatomical, and functional evidence strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Different PGRP-LB isoforms fine-tune immune and behavioral responses to infection. The secreted PGRP-LBPC isoform dampens immune activation by degrading extracellular PGN, while the putatively intracellular PGRP-LBPD isoform controls PGN effects on oviposition behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C74, C92-C94 synthesize the isoform-specific findings into a model of differential regulation. The evidence from rescue experiments, CRISPR mutants, and functional assays supports the conclusion that distinct isoforms regulate different physiological responses. The model is well-supported though the intracellular localization of PGRP-LBPD remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PGN entry into the fly body cavity has dual physiological consequences: activating immune responses in fat body cells and blocking egg delivery in oviducts. The authors propose that flies adapt egg-laying behavior to environmental PGN levels, with PGRP-LB ensuring low PGN levels don't affect egg-laying, while threshold PGN concentrations trigger NF-\u03baB-dependent egg release blockage. This represents a specific behavioral immune response rather than a side effect of energetically expensive immunity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C79, C91, C97-C98 present an integrative model supported by the experimental findings. The dual activation of immune and behavioral responses by PGN is well-documented. The threshold model and adaptive significance are reasonable interpretations of the data, though some aspects (e.g., the specific threshold, ecological relevance) remain speculative. The distinction from metabolic side effects is supported by the genetic separability of responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "a7a8e06b-91b8-4200-be60-5208baff9520",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The behavioral response to infection is transmitted via the intracytoplasmic PGRP-LE receptor rather than the transmembrane PGRP-LC receptor. PGRP-LE also regulates bacterial responses in some parts of the gut.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C96 are supported by the epistasis experiments showing PGRP-LE but not PGRP-LC is required for the behavioral response (Figure 1G). The gut regulation by PGRP-LE is cited from prior work. This differential receptor requirement is a key mechanistic finding distinguishing the behavioral response from canonical immune signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "775df546-bf0d-4c35-a8b1-390892cd2d0d",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ILP7-positive and ppk-positive neurons are not required for the infection-induced egg-laying response. Fadd RNAi in these neurons does not prevent egg-laying drop, and SPR overexpression in pLB1 cells does not rescue SPR mutant phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 provide negative results that help define the specificity of the neuronal populations involved. These controls strengthen the conclusion that octopaminergic neurons, rather than other egg-laying regulatory neurons, mediate the response. The data are clearly presented in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "3953ba5f-a2a0-4e85-934b-ee3fff6ec8b8",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss potential adaptive significance and compare their findings to wasp-induced oviposition depression. They suggest blocking egg production could mobilize resources for immune defense. Unlike wasp-induced long-term oviposition decline with early oocyte apoptosis, PGN effects are transient with late-stage oocyte accumulation, suggesting different mechanisms despite similar outcomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C83 present speculative interpretations and comparisons to prior work. The comparison to wasp-induced effects (C81-C82) is appropriately cited and the mechanistic differences are supported by the data (C83). However, the resource mobilization hypothesis (C80) is speculative without direct evidence of metabolic trade-offs or fitness consequences. These remain plausible interpretations requiring further testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "4e7e12e4-abae-412b-aacc-6f9fb8942286",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on Drosophila innate immunity: Two NF-\u03baB pathways (IMD and Toll) control immune responses, both activated by bacterial peptidoglycan. PGN from Gram-negative bacteria activates IMD via PGRP-LC (transmembrane) and PGRP-LE (intracellular), while Gram-positive PGN activates Toll via PGRP-SA. Drosophila Toll cannot directly bind microbial motifs unlike mammalian TLRs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12 present established background knowledge appropriately cited from prior literature. These provide necessary context for the current work and are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on behavioral immunity in Drosophila: Flies avoid contaminated food via Geosmin detection, bacterial exposure affects sleep and grooming, and parasite infection increases recombinant offspring production. These represent prior examples of microbe-induced behavioral changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 summarize prior work on behavioral immunity in Drosophila, appropriately cited. These provide context for the novelty of the current findings but are not results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "9c09808d-a940-419c-b0d1-4a2f3d246396",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Discussion of mechanisms: PGN sensing acts on egg-laying via neuronal modulation through NF-\u03baB in octopaminergic neurons. The authors note that octopaminergic neurons innervate multiple brain regions and reproductive structures. They discuss that NF-\u03baB is required and T\u03b2H overexpression rescues the phenotype, suggesting transcriptional consequences, though alternative post-transcriptional mechanisms are possible based on prior work with Dorsal and PGRP-LC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C90 synthesize the findings and discuss mechanistic possibilities. The core conclusions (C84-C85, C87-C88) are well-supported by the data. The discussion of anatomical complexity (C86) and alternative mechanisms (C89-C90) appropriately acknowledges limitations and cites relevant prior work. These represent reasonable interpretations of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    },
+    {
+      "id": "6c28c0c4-79bb-4b9c-bb42-3bb706ec2cc1",
+      "content_id": "09cc9845-ba6e-4702-bb4b-d2944d7d8e6b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of PGN effects in mammals: PGN-derived muropeptides have somnogenic effects in rabbits, microbiota-derived PGN can reach distant organs like bones, and bacterial PGN traverses the placenta to affect fetal brain development in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 cite prior mammalian studies to provide comparative context. These are appropriately referenced and suggest potential conservation of PGN-mediated neuromodulation, though they are not findings of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:14:28.414245Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b10b517-2bd7-44c2-8c32-d0742984d6f2",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "dcb40f74-233d-41d9-8d58-1ce4da7e7246",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "c6b3959e-2770-4487-aa35-da0b6aeda8d7",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "1a126b78-5f9b-46e4-937f-0df29a663c73",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "6ef17060-6103-4a3c-bba3-aee468f86355",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "47d8175a-2f7e-429b-b6e9-e1becba777cf",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "88049070-1104-48d8-8ff5-dad4a9091c4a",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "c52559d7-9937-4d4d-8036-cab45b61a606",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "f39087a0-31f0-472b-9059-fc7fae4360ac",
+      "result_id": "7a69cb87-7e4c-42b3-bd92-9a967ccdf74f"
+    },
+    {
+      "claim_id": "7aac6003-de28-422d-b222-961503c70af7",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "dcb55966-81f4-406e-b114-b05f1eb9ffdc",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "5cf13a53-45a8-4e78-b049-565a60b36e93",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "079c9863-2d7f-484b-b231-3be935d16954",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "728b0ec8-1593-485d-ad17-908c9160e2ec",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "4a5da9e6-0e3b-4b05-a2c5-7f215d874e4f",
+      "result_id": "81a09a97-f3af-4337-8114-ba47bb2fed15"
+    },
+    {
+      "claim_id": "5b44c2bf-79f7-48cc-9e12-35b458fd548c",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "450bb9ec-94fb-446e-8dde-5be9029f40c9",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "b6c516f4-44f8-4b84-8219-039eb493249d",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "9c9c8d61-d8a8-48c3-baea-9bc7cbf0af2a",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "1e7f9747-1b08-4b12-8f1f-2f72bce05310",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "ab3057ad-3ab0-4f7c-b1fb-4bfeca7dec27",
+      "result_id": "68a75bab-c223-459f-bef0-ada1d01fe715"
+    },
+    {
+      "claim_id": "21b96a1d-26d1-494c-8d1f-f21a48dc5057",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "efa3edc3-1741-45c9-b4a7-89ab0578c9b5",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "706fdb1c-12dd-425d-9aab-71c3c32f7ad1",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "e8d6b98f-7bb1-4f59-acad-548d0a2d92d2",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "9971faf5-8a9b-47a9-81a6-d34f2ca1aa5a",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "592b9c15-27ad-4855-b86a-9c38f69fa96a",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "59712964-dd52-4b73-9df5-e3d0c60dcc7b",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "405c26d9-1758-4246-8037-8aea951efbdc",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "f425fc05-1e05-4031-abdf-e3ca48e15ec5",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "254550b1-6375-4fe0-b19f-a39f0847e689",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "9ac4f156-1164-49b1-87a5-935152f3b021",
+      "result_id": "1fd59c72-f8a7-4336-9497-2f63a29d8824"
+    },
+    {
+      "claim_id": "b84d6e28-7025-4c7d-8910-b3bc009551be",
+      "result_id": "ffd23357-af09-4156-a8da-69d9145087ff"
+    },
+    {
+      "claim_id": "0253f6e2-f30e-495b-a1ff-4a178ee956f7",
+      "result_id": "ffd23357-af09-4156-a8da-69d9145087ff"
+    },
+    {
+      "claim_id": "2c1cc32e-51e6-4900-ac1a-b17adc680660",
+      "result_id": "ffd23357-af09-4156-a8da-69d9145087ff"
+    },
+    {
+      "claim_id": "eda27cc3-964e-423c-9143-b630f73138f7",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "8f7fb656-9181-4359-946b-ebc5daca85d3",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "43fa0db6-8aa2-48bc-8361-0c6100ee3aa6",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "d32f1aa7-f71b-45a0-96fb-1f815177e2e1",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "815704fe-b4c8-4d97-aa53-ae3586935ea6",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "1607ff59-90f2-4640-a74b-faace606b24f",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "90d592e5-17ce-44c5-8a4e-cb4bd01516ee",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "0b0d93e6-c8c1-4ae0-96ee-b582c35bf7e8",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "02b337b9-865a-4788-843a-a727dce3bba5",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "1dcbd48d-0e63-4f5e-9e39-9dbd3fd8e44a",
+      "result_id": "169e7aea-eccb-4a06-ba3e-6717649f0e2e"
+    },
+    {
+      "claim_id": "b8549605-c72a-43a5-ac26-f0f96b5b19b4",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "f5513aad-d924-419e-bba3-5ce0b150420a",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "31d1f6f0-5193-465c-b519-a6729c70501b",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "0da2e54e-41ad-4d1a-b6e4-b9236539e63e",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "5a26ad2e-1389-4b3c-ba91-1a3d87342bb7",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "95ea623e-c8d6-4f54-86fc-88b2df31b611",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "dde85855-568b-4bb2-8ab0-25e4f1912666",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "7a5b5911-e189-4392-b644-f2f716686df8",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "bee2f892-48b4-42e2-9027-5ade86b6a5bb",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "402034f5-0f0b-484e-96a4-70c27b27333e",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "f8266d5c-7073-4ff5-9a96-1bd067fe4011",
+      "result_id": "683d22f5-4fd8-40da-ac5b-b39e5959ee34"
+    },
+    {
+      "claim_id": "a3927f37-362a-4486-93e4-78e1b73ba76b",
+      "result_id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f"
+    },
+    {
+      "claim_id": "400ad2db-14a7-48b3-a684-17aafa9fe232",
+      "result_id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f"
+    },
+    {
+      "claim_id": "5e0aab10-cdc4-4ea7-8480-ffc31785e67c",
+      "result_id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f"
+    },
+    {
+      "claim_id": "2874413e-71b7-4798-a80e-bd31dae2cf9d",
+      "result_id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f"
+    },
+    {
+      "claim_id": "9b138f0b-0eda-4d18-9ead-d6ce2e81861f",
+      "result_id": "cb8c95bf-ce30-4264-86ec-6a5b01af953f"
+    },
+    {
+      "claim_id": "e20063b0-b691-47dd-a1ed-84f9b85d20d0",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "6a46d5d7-282a-4391-9cad-a67a13283ac4",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "3c0762b5-dc41-4169-b28e-d5139e6d3cd4",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "070f76fd-4929-4f35-9d39-370f7bd8190e",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "d9fea254-a72e-4c6c-9a6d-cff07c7a1c30",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "2059a845-c940-4776-9252-d38be2cc85cc",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "07bc56b8-5fef-4d73-a11a-7976727c467b",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "4c2f5cb3-4ae7-43fc-9f76-264e891433d3",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "0b507ca1-5e02-4e5c-8acc-6ebb97e70840",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "f6c6316d-597b-47a0-b6e7-071c433b2183",
+      "result_id": "00b6abb3-7e64-4f75-9ac7-91a09cad6098"
+    },
+    {
+      "claim_id": "ec57fcde-a813-4b00-bac3-a60005dd5a1c",
+      "result_id": "a7a8e06b-91b8-4200-be60-5208baff9520"
+    },
+    {
+      "claim_id": "23b0bfa9-2753-4cc5-afbf-1268100ccaab",
+      "result_id": "a7a8e06b-91b8-4200-be60-5208baff9520"
+    },
+    {
+      "claim_id": "dfed9d7e-6f88-45ed-bf64-306e7b316045",
+      "result_id": "775df546-bf0d-4c35-a8b1-390892cd2d0d"
+    },
+    {
+      "claim_id": "a10c4234-99e8-4998-9573-802505524c44",
+      "result_id": "775df546-bf0d-4c35-a8b1-390892cd2d0d"
+    },
+    {
+      "claim_id": "935fcd43-e72d-471b-ba6f-a80726f57642",
+      "result_id": "3953ba5f-a2a0-4e85-934b-ee3fff6ec8b8"
+    },
+    {
+      "claim_id": "bf61e34d-2090-45f6-90e2-e676b58f10bf",
+      "result_id": "3953ba5f-a2a0-4e85-934b-ee3fff6ec8b8"
+    },
+    {
+      "claim_id": "d0a2f6f7-d294-4f71-b502-032d8d015aac",
+      "result_id": "3953ba5f-a2a0-4e85-934b-ee3fff6ec8b8"
+    },
+    {
+      "claim_id": "36feb441-d932-47ff-9e75-fd868c0625a9",
+      "result_id": "3953ba5f-a2a0-4e85-934b-ee3fff6ec8b8"
+    },
+    {
+      "claim_id": "26e076a2-cf26-43d8-a50d-4400aae78fc4",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "9ebdd06c-8d05-48e1-9c67-c02a34c8cfb7",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "0e80e390-66b8-45a5-b7b2-e495f496140a",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "921fd6e8-afd5-463a-a5f7-f6a164e40773",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "aa725130-aaa1-4c7f-8d25-3f9c0eb4b582",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "d8cf7c44-1679-4d7d-865f-144313a75e29",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "de75fb57-089d-4632-b187-3abc2bdc9ec5",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "1e138eab-679b-4c55-8371-149f9a3f8ce9",
+      "result_id": "4e7e12e4-abae-412b-aacc-6f9fb8942286"
+    },
+    {
+      "claim_id": "63d10317-5614-4a20-a22a-098d9c29348c",
+      "result_id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36"
+    },
+    {
+      "claim_id": "e406915a-c3c6-4c01-b85f-44102985fa68",
+      "result_id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36"
+    },
+    {
+      "claim_id": "e8528fa8-b74b-4790-8e74-0126901a69f8",
+      "result_id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36"
+    },
+    {
+      "claim_id": "24d82ce8-6bed-48e0-a9a9-f47738fcd821",
+      "result_id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36"
+    },
+    {
+      "claim_id": "b0faf86d-3909-4ce9-b27a-6faa607be75b",
+      "result_id": "f58cb34e-35aa-48e0-894d-c9ecbaa43f36"
+    },
+    {
+      "claim_id": "c75e2ea0-786e-45b1-a47a-c0156ed136f0",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "4768ebbd-0725-42dc-bc06-706e16c51d0f",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "034754b3-363e-4ab7-a838-2a47ebdd6bb2",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "af1334c5-cf26-42bf-aea5-618ddea71fdf",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "3d96a555-ca9b-45ec-865a-67f9471351da",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "3466baaf-8b66-4268-860d-4897848dcc4e",
+      "result_id": "9c09808d-a940-419c-b0d1-4a2f3d246396"
+    },
+    {
+      "claim_id": "4af90f39-a6f0-4239-b53b-096861ead05e",
+      "result_id": "6c28c0c4-79bb-4b9c-bb42-3bb706ec2cc1"
+    },
+    {
+      "claim_id": "7accdb9e-94df-462b-b74c-14c223c6cbe8",
+      "result_id": "6c28c0c4-79bb-4b9c-bb42-3bb706ec2cc1"
+    },
+    {
+      "claim_id": "40314106-0dfc-4f92-84de-6f76224aaea6",
+      "result_id": "6c28c0c4-79bb-4b9c-bb42-3bb706ec2cc1"
+    }
+  ],
+  "comparisons": []
+}

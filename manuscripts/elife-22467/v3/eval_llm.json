@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C36"
+    ],
+    "result": "Microarray analysis identified 21 miRNAs upregulated in rat hippocampus 24 hours after contextual fear conditioning. Bioinformatic network analysis revealed that these miRNAs are predicted to target the vesicle exocytosis pathway, with miR-153 emerging as the top regulator with 12 predicted targets in this pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microarray data (C1) with three biological replicates provides solid evidence for miRNA upregulation. The bioinformatic predictions (C2, C3, C36) are appropriately presented as computational analyses with statistical validation. The network analysis methodology is described and uses established databases (TargetScan, miRBase). However, these are predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Fear-induced miRNAs segregate into three classes based on their induction patterns: Class I miRNAs (including miR-153) require associative learning (delayed shock only), Class II miRNAs show experience- and learning-dependent induction (both conditions with higher levels in delayed shock), and Class III miRNAs are experience-induced (both immediate and delayed shock).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immediate versus delayed shock paradigm (C37) is well-established for distinguishing associative learning from experience alone, with appropriate behavioral validation. RT-qPCR data (C5, C38, C39) with three biological replicates (pooled from 9 animals per condition) provides robust evidence for the classification. Statistical significance is reported for Class II differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "miR-153 expression is specifically induced in the dentate gyrus region of the hippocampus following both contextual fear conditioning (~10-fold increase) and LTP induction (3 hours post-stimulation), with little or no change in CA1-CA3 regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RT-qPCR data from dissected hippocampal subregions (C6) and LTP experiments in acute slices (C7) consistently demonstrate region-specific induction. The convergence of behavioral and electrophysiological paradigms strengthens the finding. Statistical significance is indicated (p<0.001 for fear conditioning). The LTP time point (3 hours) corresponds to late-phase LTP, which is mechanistically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "miR-153 is transcriptionally induced from an alternative promoter within the Ptprn2 host gene upon neuronal activation. ChIP experiments show dramatic enrichment of H3K4me3 (100-fold) at the internal promoter compared to the canonical Ptprn2 promoter (3-fold), along with increased PolII occupancy and binding of transcription factors CBP/p300, CREB, C/EBP\u03b2, and ATF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-qPCR data (C45, C46, C47) with tiling primers provides strong evidence for alternative promoter usage. The temporal dynamics of precursor versus mature miR-153 (C44) support rapid transcription and processing. H3K4me3 enrichment at an internal site (C42, C45) is consistent with alternative promoter activity. The transcription factor binding data (C47) identifies specific regulators. All experiments used appropriate controls and replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C48"
+    ],
+    "result": "Lentiviral-mediated knockdown of miR-153 in the dentate gyrus enhances contextual fear memory (increased freezing) but does not affect cued fear conditioning. Control behavioral tests show normal locomotion, anxiety, and nociception, indicating hippocampal-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral data (C9, C10) demonstrate task-specific memory enhancement with appropriate controls (scrambled sequence, cued conditioning). Statistical significance is reported (p=0.001 for contextual, n.s. for cued). The comprehensive behavioral control battery (C48) rules out confounding effects on motor function, anxiety, or pain sensitivity. Immunohistochemistry and FACS-sorted RT-qPCR confirm successful targeting and knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C50",
+      "C51"
+    ],
+    "result": "Overexpression of miR-153 in cultured hippocampal neurons reduces dendritic spine volume by approximately 50% through decreased spine head and neck widths, without affecting spine density or length. Knockdown of miR-153 shows minimal effects on average spine volume but cumulative distribution analysis reveals increased head width in a subset of spines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging analysis (C11, C12, C13) used appropriate quantification methods (Imaris software, n=14-23 neurons, >800 spines per condition) with statistical significance (p<0.01 for overexpression). The asymmetric effects of knockdown versus overexpression (C50, C51) are appropriately interpreted as reflecting low basal miR-153 levels in unstimulated neurons (C52). Cumulative distribution analysis (C51) reveals effects not apparent in averages, which is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "miR-153 directly targets Snap25, Vamp2, Snca, Trak2, Bsn, and Pclo as demonstrated by luciferase reporter assays showing >40% reduction in activity with wild-type 3'UTRs but not with mutated seed sequences. Overexpression in cultured neurons reduces mRNA levels for all targets except Trak2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase assays (C14, C15) in HEK-293T cells (which lack endogenous miR-153) provide strong evidence for direct targeting. Seed sequence mutation controls (C15) confirm specificity. The RT-qPCR data from neurons (C16) validate physiological relevance. The exception of Trak2 suggests context-dependent regulation. All experiments were performed in triplicate with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "CBP/p300, an immediate early gene transcription factor, is a direct target of miR-153, showing >70% reduction in luciferase activity that is abolished by seed sequence mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The luciferase data (C17) demonstrates direct targeting with appropriate controls (seed mutation). This finding suggests a negative feedback loop where miR-153 downregulates its own transcriptional activator. The magnitude of repression (>70%) is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C54"
+    ],
+    "result": "Following fear conditioning, expression of Pclo, Snca, Snap25, Trak2, and Vamp2 (but not Bsn) is reduced in the hippocampus. In vivo knockdown of miR-153 increases Pclo and Vamp2 expression 2-3 fold in GFP+ neurons, while Snap25 and Snca remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RT-qPCR data from trained versus na\u00efve rats (C18) shows target downregulation consistent with miR-153 induction. The FACS-sorted neuron analysis (C19, C54) provides single-cell resolution and identifies Pclo and Vamp2 as the primary in vivo targets. The differential effects on targets (C54) suggest context-dependent regulation or compensatory mechanisms. Technical controls (GFP- neurons, scramble) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "miR-153 regulates vesicle exocytosis and neurotransmitter release: knockdown increases FM4-64 dye depletion rate and [H3]-glutamate release (~50% increase), while overexpression decreases both FM4-64 depletion and glutamate release (~49% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FM4-64 imaging (C20, C21) and radioactive glutamate release assays (C22, C23) provide complementary functional evidence. Both gain- and loss-of-function experiments show consistent bidirectional effects. Statistical significance is reported (p<0.05). The KCl concentration dependence demonstrates that effects are specific to depolarization-induced release. Experiments were performed in triplicate with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "miR-153 inhibits transport of GluA1 AMPA receptors to the cell surface as demonstrated by reduced fluorescence recovery after photobleaching (FRAP) of SEP-GluA1, without affecting total GluA1 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FRAP experiments (C24) in N2A cells provide direct evidence for reduced receptor trafficking. The control showing unchanged total GluA1 levels (C25) by Western blot indicates that the effect is on trafficking rather than protein stability. The use of pH-sensitive GFP (SEP) is an established method for monitoring surface receptor delivery. Statistical significance is reported (p=0.028, n=5-8 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The manuscript establishes context by citing established knowledge about memory formation, synaptic plasticity, miRNA biology, and prior studies of activity-induced miRNAs in the hippocampus, noting that miR-153 is 100% conserved across vertebrates and that the dentate gyrus is critical for contextual fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C26-C35) are appropriately supported by citations to established literature. The conservation of miR-153 (C4) is cited to Mandemakers et al., 2013. The background on memory formation, LTP, and miRNA function (C26-C32) provides appropriate context with proper attribution. The statement about dentate gyrus function (C34) is presented as established knowledge, though without a specific citation in that sentence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The manuscript cites established knowledge about histone modifications, SNARE complex function in vesicle exocytosis, AMPA receptor trafficking during LTP, and the roles of VAMP2 and SNAP25 in both pre- and postsynaptic vesicle fusion, proposing that VAMP2 may be the major in vivo target for miR-153-mediated regulation of AMPA receptor exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims (C40, C53, C56-C60, C62, C63) are appropriately supported by citations to established literature, particularly S\u00fcdhof, 2013 for SNARE function and Jurado et al., 2013 for postsynaptic SNARE roles. The interpretation about VAMP2 as the major target (C61) is a reasonable inference based on the differential in vivo effects on VAMP2 versus SNAP25 shown in C19 and C54.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript compares miR-153 to miR-137, noting that miR-137 (which was not induced in their studies) regulates presynaptic SNARE components and impairs hippocampal learning when overexpressed, suggesting miR-137 plays a constitutive role while miR-153 is activity-induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to miR-137 (C64-C66) is appropriately cited to Wei et al., 2013 and Siegert et al., 2015. The negative result for miR-137 induction (C67) is supported by their microarray and RT-qPCR data. The interpretation about constitutive versus activity-dependent roles (C68) is a reasonable inference distinguishing the two miRNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The manuscript discusses conservation of vesicle exocytosis machinery across cell types and notes that miR-153 and Ptprn2 are also expressed in pancreatic beta cells where they regulate insulin secretion, with miR-153 targeting the same vesicle exocytosis components (Pclo, Snap25, Snca, Vamp2) but being controlled by the canonical Ptprn2 promoter rather than the alternative promoter used in hippocampal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about pancreatic expression and function (C70, C72, C73, C74) are appropriately cited to Mandemakers et al., 2013, Xu et al., 2015, Jacobsson et al., 1994, and Nishimura et al., 2009, 2010. The comparison of promoter usage (C74) contrasts published findings with the current study's data on alternative promoter usage in neurons. This provides important context for tissue-specific regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript proposes two speculative models for miR-153 function: (1) stabilizing firing rates and restoring baseline function by suppressing plasticity genes, and (2) setting a threshold for linking signal strength to synaptic changes. The authors note that activity-induced miRNAs likely have both positive and negative effects on memory, and that most fear-induced miRNAs identified have unknown roles in synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C75, C76) are explicitly speculative interpretations of the functional role of miR-153. While consistent with the data, they represent hypotheses rather than demonstrated findings. The statements about activity-induced miRNAs in general (C77, C78) are appropriately cited. The acknowledgment of unknown functions (C79) is accurate and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The manuscript discusses potential relevance to neurodegenerative disease, noting that miR-153 targets amyloid precursor protein and alpha-synuclein, and that several fear-induced miRNAs (miR-9, miR-338-3p, miR-29b, miR-181b) are dysregulated in Alzheimer's disease, Huntington's disease, ALS, or schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about miR-153 targets (C80, C81) and disease associations (C82-C85) are appropriately supported by citations to published literature. This discussion provides context for potential translational relevance but does not present new experimental findings about disease mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The manuscript cites established knowledge that LTP is a lasting form of synaptic plasticity implicated in learning and memory, exhibiting early (protein synthesis-independent) and late (transcription and protein synthesis-dependent) phases that parallel behavioral memory formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C86, C87) are appropriately supported by citations to foundational LTP literature (Bliss and Collingridge, 1993; Martin et al., 2000; Abraham and Otani, 1991; Abraham and Williams, 2003; Matthies et al., 1990; Ostroff et al., 2002; Raymond et al., 2000). This provides essential context for the LTP experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C52"
+    ],
+    "result": "miR-153 levels progressively increase during hippocampal neuron development in vitro, reaching maximum levels after 10 days when neurons are differentiated and synaptically active. The authors interpret smaller effects of miR-153 knockdown as reflecting low basal expression in unstimulated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental time course (C49) provides important context for the in vitro experiments and explains the timing of manipulations. The interpretation about basal expression levels (C52) is a reasonable inference that explains the asymmetry between knockdown and overexpression effects. RT-qPCR data supports the developmental regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C61"
+    ],
+    "result": "The authors interpret their findings to suggest that miR-153 downregulates components of both presynaptic (Pclo, Vamp2) and postsynaptic (Vamp2) vesicle exocytosis pathways, with VAMP2 potentially being the major in vivo target for AMPA receptor exocytosis regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretive claims (C55, C61) synthesize multiple experimental results (luciferase assays, in vivo expression changes, functional assays) into a coherent model. The interpretation is reasonable given that Vamp2 shows consistent regulation across multiple assays while other targets show context-dependent effects. The distinction between pre- and postsynaptic roles is supported by the literature cited.",
+    "result_type": "MINOR"
+  }
+]

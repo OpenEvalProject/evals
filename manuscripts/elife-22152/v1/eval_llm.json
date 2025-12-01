@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C26",
+      "C28",
+      "C40",
+      "C41",
+      "C68",
+      "C69"
+    ],
+    "result": "The study analyzed 2378 voltage- and calcium-dependent ion channel models from ModelDB coded in NEURON, classified them into five major ion channel classes (Kv, Nav, Cav, KCa, Ih) representing ~75% of models, identified 1132 unique models, and grouped them into 211 clusters with substantially different kinetics (Kv: 60, Nav: 38, Cav: 43, KCa: 44, Ih: 26 clusters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21, C26, C28, C40, C41, C68, and C69 collectively describe the main quantitative results of the clustering analysis. The numbers are consistent across claims and are supported by the methodology described (voltage-clamp protocols, PCA, Ward's clustering). The classification into five ion channel classes and the specific cluster numbers for each class are clearly stated and form the core contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C19"
+    ],
+    "result": "Metadata was manually extracted from journal articles for each ion channel model, including 74 different subtype labels across all classes, with prominent modeled neuron types being pyramidal, interneuron, granule cell, and basket cell, and prominent brain areas being hippocampus and cortex. Pedigree relations (ancestor-descendant relationships) were also cataloged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C29, C30, C31, and C19 describe the metadata collection methodology and results. The manual extraction process is clearly described, and the quantitative results (74 subtypes, prominent cell types and brain areas) are presented in Figure 2. The genealogy analysis is a key methodological component that is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C62"
+    ],
+    "result": "Five voltage-clamp simulation protocols were designed to probe activation, deactivation, inactivation, temporal dynamics during voltage ramping, and repeated action potentials. Principal component analysis was used to obtain a D-dimensional score for each ion channel model (accounting for at least 99% of variance), with dimensionality varying between 16 and 29 dimensions across the five ion channel classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C36, C37, C38, and C62 describe the core methodology for functional characterization. The voltage-clamp protocols are well-documented in the methods section and supplementary materials (Figure 3, Tables 1-2), and the PCA approach with 99% variance criterion is clearly specified. The dimensionality values for each class are explicitly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C94",
+      "C95"
+    ],
+    "result": "Ward's clustering method was used to establish an agglomerative hierarchy of ion channel model clusters, with the number of clusters determined using multiple cluster indexes (Silhouette criterion, Dunn index, Davies-Bouldin index, and Calinski-Harabasz measure).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C94, and C95 describe the clustering methodology. Ward's method is a well-established approach, properly cited, and the use of multiple cluster validation indexes is appropriate and well-documented in Figure 3 supplements 2-3. The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C42"
+    ],
+    "result": "Many ion channel models form large families with highly-cited hub models that have many descendants, while there are also many small families and singletons. Subtype labeling mapped well onto families, but family identity did not guarantee homogeneity of subtype or vice versa. Most ancestor-descendant families fell within one cluster, indicating consistency between family relations and ion channel model behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C34, and C42 describe findings from the genealogy analysis. These observations are supported by Figure 2E and Figure 4A-B, which visualize family relationships and their correspondence with clusters. The finding that most families fall within single clusters validates the consistency between genealogical and functional relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C53"
+    ],
+    "result": "A common subtype label did not guarantee a common cluster identity. The ~250 A-type-labeled Kv ion channel models fell into 14 clusters (with five clusters comprising over 90% of them), and A-type-labeled models used in pyramidal cells of the hippocampus (117 models) are found in nine clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, C45, and C53 describe the heterogeneity within subtype labels, using A-type Kv channels as a specific example. This is well-documented in Figure 4B and demonstrates that traditional nomenclature does not capture functional diversity. The quantitative results are specific and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The behavior of groups of ion channel models defined by common subtype, neuron type and brain area is often more diverse than that of models defined by a common cluster. There is no clear correspondence of any given cluster with categories such as brain area and neuron type, with nearly every cluster containing ion channel models used in pyramidal cells of both cortex and hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C52 describe the relationship between metadata-based groupings and functional clusters, supported by Figure 5A-B. The finding that functional similarity does not correspond to traditional biological categories is important for understanding ion channel diversity and is well-demonstrated by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C54",
+      "C55",
+      "C78"
+    ],
+    "result": "The IonChannelGenealogy (ICGenealogy) web interface provides an interactive resource for categorization of ion channel models and experimental recordings, with the underlying database freely and programmatically accessible via a web API. The analysis framework enables automated analysis of new ion channel models and experimental data, and acts as a complement to existing resources such as ModelDB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22, C54, C55, and C78 describe the web resource and its capabilities. The resource is demonstrated throughout the manuscript (Figure 7) and its functionality for analyzing new models and experimental data is shown in Figure 6. This represents a significant practical contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C24"
+    ],
+    "result": "An uncatalogued Kv model from a hippocampus CA1 pyramidal cell model (kad.mod from Hsu et al. 2015) was analyzed and found to fit well within a cluster of mostly pyramidal A-type-labeled ion channel models used in simulations of rodent hippocampus, thereby verifying the assumed characteristics of the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56 and C24 describe a validation example showing that the framework can correctly classify a new model. This is demonstrated in Figure 6B and provides evidence that the clustering captures meaningful functional relationships. The result validates the utility of the resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C25",
+      "C57",
+      "C96",
+      "C97"
+    ],
+    "result": "Experimental recordings from Drosophila Kenyon cells (known to be dominated by A-type K+ channels, particularly Shal/Kv4) revealed a close match to a mammalian Kv4 ion channel model (Kv4_csi, ModelDB ID no. 145672) when analyzed using the framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C25, C57, C96, and C97 describe the experimental validation using Drosophila recordings. The experimental methodology is properly described and cited (Murthy and Turner, 2013), and the results shown in Figure 6C demonstrate that the framework can match experimental data to appropriate models. This validates the biological relevance of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "Replacing the A-type potassium channel model in a layer 2/3 pyramidal neuron model with different A-type models from ModelDB changes the neuron's dynamics, sometimes dramatically. There are over 250 A-type potassium channel models on ModelDB spanning a range of behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C15, and C16 describe the motivating observation that identically-labeled models can produce different neuronal behaviors. This is demonstrated in Figure 1B-C using simulations of a pyramidal neuron model with different ion channel models. The result effectively motivates the need for the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Individual neurons of any given type display heterogeneity in ion channel expression and regulation. Characterizing an ionic current using the average response across a population may not be sufficient to capture appropriate behavior at the neuronal level. Diversity and variation in ionic currents within a single cell type may arise from mechanisms such as splice variants, differential subunit combination, and post-translational modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, and C49 describe biological context from the literature, supported by multiple citations (Marder and Goaillard 2006, Schulz et al. 2008, Golowasch et al. 2002, Prinz et al. 2004, Li et al. 2007, Campiglio and Flucher 2015, Levitan 1994, Misonou et al. 2004). These claims provide important biological context for interpreting the observed variability in ion channel models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The approach of combining metadata with kinetics-based analysis allowed detailed information regarding the identity of each ion channel model, filling in missing or ambiguous data and validating functional properties against nomenclature. The framework provides a unified characterization of ion channel function for large-scale comparison of models with each other and with experiments, enabling better experimentally-constrained modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, C79, C80, and C81 describe the overall contribution and impact of the work. These claims are supported by the demonstrated capabilities of the resource (metadata collection, functional clustering, experimental comparison) and represent reasonable conclusions about the utility of the framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A total of 3495 .mod files were collected from ModelDB, of which 366 were tools or other non-ion channel items, and the five ion channel groups (Kv, Nav, Cav, KCa, Ih) accounted for 2378 files. A substantial number of files (952) had to be slightly modified to work with the procedure, and 44 files were omitted due to problems with running the simulation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C85, C86, C87, and C88 describe the data collection and preprocessing steps. These are straightforward methodological details that are clearly documented. The modifications made to files are explicitly listed, and the number of excluded files is small relative to the total dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The partition of channel models into clusters does not imply that models in the same cluster are necessarily redundant, and intra-cluster differences may still be important depending on the particular simulation. The responses of different channels vary slowly and continuously rather than in discrete steps along the dimensions of the manifold of scores. The raw response data and scores have been made publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C72, and C73 provide important caveats about interpreting the clustering results and describe data availability. These are appropriate cautionary statements that acknowledge the limitations of the clustering approach while noting that the data structure is continuous. The public data availability is a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The variability in behavior of ionic currents suggests there is no clear answer to which ion channel model to use for a given neuronal simulation. Neuron model parameters should be viewed as regions rather than as individual representative points in parameter space. The variability at the level of individual ion channel models may cover regions in parameter space and organize into distinct 'solutions' to particular model behaviors. The database could be used for systematic analyses of co-variability of sets of published ion channel models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74, C75, C76, and C77 present interpretations and speculations about the implications of the observed variability. While C74 and C75 are supported by citations, C76 is explicitly speculative ('It may be possible that...'), and C77 describes a potential future application. These claims go beyond what is directly demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Ion channel models are the building blocks of computational neuron models, and their biological fidelity is crucial for the interpretation of simulations. However, the number of published models and lack of standardization make comparison difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C3 establish the foundational motivation for the study. These are well-established principles in computational neuroscience (C1, C2) and the difficulty of comparison (C3) is demonstrated by the analysis of ModelDB and the example in Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Ion channels play crucial roles in neuronal signal processing and plasticity. Interactions among different ion channels can lead to complex dynamics requiring computational modeling, as first demonstrated by Hodgkin and Huxley for action potential generation. NEURON is a simulation environment for creating biophysical neuron models, and ModelDB archives more than a thousand neuronal models and several thousand ion channel models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 provide background context about ion channels, computational modeling, and existing resources. All claims are supported by appropriate citations to the literature and represent established knowledge in the field. These provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "It is common for modelers to adapt previously published ion channel models for their own purposes. However, this may introduce experimentally unverified systematic changes or errors into later generations of models and may have dramatic effects on the biological interpretation of results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C18 describe modeling practices and potential consequences. C17 is supported by the genealogy analysis showing extensive model reuse (Figure 2E), while C18 is a logical inference about potential risks of model reuse. Together they motivate the need for systematic cataloging and comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Measuring kinetic responses allowed comparison of models regardless of their specific implementation. Simple step and ramp current pulses are sufficient to probe underlying kinetics of neurons, and the simplicity of the protocols makes experimental comparison easier. The study was limited to voltage-dependent and calcium-dependent ion channel models coded in NEURON, but the same protocols can be used to integrate models written for other simulators or simulator-independent formats like NeuroML.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe advantages and limitations of the methodology. The advantages (C63, C65) are logical consequences of the approach, C64 is supported by citation to Druckmann et al. 2011, and the limitations and potential extensions (C66, C67) are appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "For four of the five ion type classes (KCa being the exception), most isolated single-model clusters corresponded to genealogical singletons, supporting the idea that these ion channel models are indeed unique and do not appear isolated simply due to missing ancestor-descendant links.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 describes a finding that validates the genealogy analysis by showing that functionally isolated models are also genealogically isolated (except for KCa). This provides evidence that the genealogy collection was reasonably complete and that functional uniqueness corresponds to genealogical uniqueness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C89",
+      "C90",
+      "C93"
+    ],
+    "result": "A layer 2/3 pyramidal cell model was adapted from Traub et al. (2003), ModelDB ID no. 20756. Version 7.3 of the NEURON language was used to run simulation protocols on Ubuntu 12.04.5 on a single core of an Intel Core i7 @ 2.67 GHz with 24 Gigabytes of RAM. The maximum current amplitude was reasoned to depend on the number of channel models in a particular area and was thus not related to the kinetic behavior of the channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C89, C90, and C93 provide methodological details about the neuron model used for demonstration (C82), computational environment (C89, C90), and rationale for normalization (C93). These are straightforward methodological details that are adequately documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1881 @@
+{
+  "submission": {
+    "id": "e4b5d5f8-e399-4b41-af78-57a83f02bfc2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:00:01.496110Z",
+    "updated_at": "2025-11-30T22:00:01.496110Z"
+  },
+  "content": [
+    {
+      "id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "submission_id": "e4b5d5f8-e399-4b41-af78-57a83f02bfc2",
+      "content_type": "manuscript",
+      "content_text": "# Stimulus-dependent recruitment of lateral inhibition underlies retinal direction selectivity\n\n## Authors\n\n- Qiang Chen<sup>1</sup>\n- Zhe Pei<sup>1</sup>\n- David Koren<sup>1</sup>\n- Wei Wei<sup>1</sup> ([ORCID: 0000-0002-7771-5974](https://orcid.org/0000-0002-7771-5974)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology The University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe dendrites of starburst amacrine cells (SACs) in the mammalian retina are preferentially activated by motion in the centrifugal direction, a property that is important for generating direction selectivity in direction selective ganglion cells (DSGCs). A candidate mechanism underlying the centrifugal direction selectivity of SAC dendrites is synaptic inhibition onto SACs. Here we disrupted this inhibition by perturbing distinct sets of GABAergic inputs onto SACs \u2013 removing either GABA release or GABA receptors from SACs. We found that lateral inhibition onto Off SACs from non-SAC amacrine cells is required for optimal direction selectivity of the Off pathway. In contrast, lateral inhibition onto On SACs is not necessary for direction selectivity of the On pathway when the moving object is on a homogenous background, but is required when the background is noisy. These results demonstrate that distinct sets of inhibitory mechanisms are recruited to generate direction selectivity under different visual conditions.\n\n## Introduction\n\nEncoding of motion direction first appears in the inner plexiform layer (IPL) of mammalian retina (Barlow and Hill, 1963; Barlow and Levick, 1965; Oyster and Barlow, 1967), where positive- and negative-contrast motion stimuli are processed in anatomically distinct On and Off sublaminae. One of the main output neurons that signal motion direction from the retina to higher visual centers, the On-Off DSGC, has bistratified dendritic arbors that receive directionally tuned inhibition from On and Off subtypes of SACs at each of these sublamina (Figure 1A) (Famiglietti, 1983, 1992; Kittila and Massey, 1997; Taylor and Vaney, 2002). SACs are monostratified, axonless interneurons that release GABA and acetylcholine from varicosities at the distal ends of their dendritic arbors (Brecha et al., 1988; Famiglietti, 1991; Kosaka et al., 1988; O'Malley and Masland, 1989; Vaney and Young, 1988). Generating directionally tuned GABAergic inhibition onto DSGCs requires two mechanisms. First, GABAergic inputs preferentially originate from SAC dendritic sectors that extend in the anti-preferred (null) direction of On-Off DSGCs (Figure 1B, Briggman et al., 2011; Fried et al., 2002; Lee et al., 2010; Wei et al., 2011). Second, the dendritic sectors of SACs are electrotonically isolated and directionally tuned to motion in the centrifugal direction (from soma to dendritic tips) (Figure 1B, Euler et al., 2002). Since null-direction motion for a DSGC corresponds to centrifugal motion for its presynaptic SAC dendrites, maximal GABA release from SACs to DSGCs occurs during motion in the null direction (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic shows laminar organization of cell types involved in the direction selective circuit in the IPL. (B) Schematic shows the orientation of SAC and DSGC dendrites connected by GABAergic synapses. Black arrows indicate referred and null directions of DSGC. GABAergic inputs onto DSGC come from SAC dendritic quadrant (dark red) that extends to the null direction of the DSGC. Red arrows indicate centrifugal (CF) and centripetal (CP) direction of motion for the SAC quadrant. Maximal activation and GABA release occurs in the CF direction, while minimal activation occurs in the CP direction. (C) Schematic diagram shows transgenes involved in Slc32a1 KO mice. (D) Voltage clamp traces from reciprocal On SAC-SAC pairs in control mouse (CT) show IPSCs evoked in one SAC at \u221280 mV by depolarizing the other in the presence of glutamatergic and nicotinic receptor antagonists (see Experimental procedures). (E) As in D but for Slc32a1 KO mouse (Slc32a1 flox/flox CT).\n\nAlong with providing inhibition to DSGCs, SACs at each sublamina receive GABAergic lateral inhibition from neighboring SACs (Ding et al., 2016; Kostadinov and Sanes, 2015; Lee and Zhou, 2006) and other wide-field amacrine cells (Ding et al., 2016; Lee and Zhou, 2006). The role of this lateral inhibition in establishing the centrifugal preference of SACs remains controversial (Ding et al., 2016; Euler et al., 2002; Hausselt et al., 2007; Lee and Zhou, 2006; M\u00fcnch and Werblin, 2006; Oesch and Taylor, 2010). Centrifugal direction selectivity has also been attributed to other mechanisms such as patterned distribution of voltage-gated channels (Euler et al., 2002; Hausselt et al., 2007; Oesch and Taylor, 2010) and chloride transporters (Gavrikov et al., 2006), segregation of excitatory inputs from distinct bipolar cell types (Kim et al., 2014); but see Stincic et al., 2016), and skewed distribution of glutamatergic inputs along SAC dendrites (Vlasits et al., 2016). However, the relative contributions of these synaptic and intrinsic mechanisms to SAC centrifugal preference is unclear. Furthermore, the role that synaptic inhibition onto SACs plays in the direction selectivity of DSGCs has not yet been experimentally demonstrated.\n\nTo address these outstanding questions, we perturbed GABAergic inhibition onto SACs using two types of SAC-specific genetic manipulations. The first one disrupted GABA release from SACs by conditionally knocking out the vesicular GABA transporter (Vgat) gene Slc32a1 in SACs. This selectively removed reciprocal SAC-SAC inhibition and allowed us to determine its contribution to the centrifugal direction selectivity of SACs. The second manipulation blocked all GABAergic inputs onto SACs by removing their functional GABA receptors. This enabled us to determine the role that total GABAergic inhibition onto SACs plays in the direction selectivity of both SACs and On-Off DSGCs. Combining these genetic manipulations with pharmacology, we found that motion stimuli with different contrast and backgrounds recruit different sets of inhibitory mechanisms for the computation of motion direction.\n\n## Results\n\n### Direction selectivity of SAC dendrites persists in the absence of SAC-mediated GABA release during a simple moving bar stimulus\n\nTo eliminate reciprocal GABAergic inhibition among neighboring SACs, we used a conditional knockout (KO) mouse line in which Slc32a1 is selectively removed from SACs (Slc32a1 KO) to block GABA release from SACs. This line contains homozygous floxed Slc32a1 alleles (acronym: Slc32a1flox/flox) to replace the endogenous Slc32a1 gene, and a choline acetyltransferase (Chat)-IRES-Cre knockin allele for SAC-specific Cre expression (acronym: C). A floxed tdTomato transgene (acronym: T) was also included when SACs were targeted for electrophysiological recordings (Figure 1C). We have previously shown that these KO mice display disrupted GABAergic inhibition from SACs to DSGCs and no detectable developmental compensation (Pei et al., 2015). To confirm that GABAergic synapses between neighboring SACs are also lost in these mice, we performed paired recordings from neighboring SACs in the ganglion cell layer with intersoma distance of 50~100 um. Evoked GABAergic inhibitory postsynaptic currents (IPSCs) were measured from one SAC at holding potential of \u221280 mV while the other SAC was depolarized to 0 mV for 20 ms in voltage clamp configuration. We detected reciprocal inhibition between SACs in 9 out of 9 pairs in the control group (Figure 1D, mean peak amplitude 16.4\u00a0\u00b1\u00a02.8 pA, five mice), consistent with previous studies (Kostadinov and Sanes, 2015; Lee and Zhou, 2006). We did not detect any evoked IPSCs in the KO group (Figure 1E, n\u00a0=\u00a09 pairs, three mice), indicating that reciprocal SAC-SAC inhibition is abolished in Slc32a1 KO mice.\n\nNext, we examined centrifugal direction selectivity of SAC dendrites in these KO mice using two-photon imaging of the calcium indicator GCaMP6. We imaged calcium transients in varicosities located in the furthest distal 20 \u03bcm of GCaMP6-expressing SAC dendrites while a bright bar moved against a homogeneous dark background (Figure 2A). We term this stimulus \"simple moving bar stimulus\u201d. As expected, the leading edge of the bright bar evoked calcium transients in On SACs and the trailing edge evoked responses in Off SACs (Figure 2B, and Videos 1 and 2). We used the peak amplitude of the calcium transients in varicosities as a measure of the strength of dendritic activation. We quantified direction selectivity of responses using the direction selectivity index (DSI, see Experimental methods) and the vector sum. In control mice, dendritic calcium signals in both On and Off SACs show strong directional tuning to motion in the centrifugal direction (Figure 2B and C). In Slc32a1 KO mice, centrifugal direction selectivity (both DSI and vector sum) of On SACs is similar to that of control mice (Figure 2D). However, Off SACs exhibit a small, but statistically significant, increase in DSI and vector sum values (Figure 2F) due to decreased centripetal direction response (Figure 2\u2014figure supplement 1). Adding the GABAA receptor antagonist SR95531 to Slc32a1 KO retinas reduces these direction selectivity parameters for both On and Off SACs (Figure 2D\u20132G), indicating a role for GABAergic inhibition of SACs by non-SAC amacrine cells. Our results demonstrate that, for a simple moving bar stimulus, losing reciprocal SAC-SAC inhibition in Slc32a1 KO mice does not affect the direction selectivity of On SACs, and enhances the direction selectivity of Off SACs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig2-v2.jpg)\n\n**Figure 2.:** (A) Left: Schematic of simple moving bar stimulus used during calcium imaging of SAC dendrites. Red square indicates the\u00a0location of imaging window. Gray area indicates an\u00a0area within which the moving bar (white) was presented. For the varicosities in the imaging window, downward motion of the bar corresponds to centrifugal (CF) motion, and upward motion corresponds to centripetal (CP) motion. Right: maximal intensity projection of GCaMP6m fluorescence in distal varicosities of an On-SAC from a control (C) mouse infected with AAV-floxed GCaMP6m. Four example varicosities are labeled 1\u20134. Scale bar: 1 \u03bcm. (B) Example GCaMP6m fluorescence traces from varicosities of the On and Off SACs in control (C) and Slc32a1 KO (Slc32a1 flox/flox C) mice during CF and CP motion. Dark lines represent mean values and shaded areas represent standard deviations. Yellow bar at the\u00a0top indicates the\u00a0time window when the bar moved across the imaging area. Blue vertical lines indicate when a\u00a0leading edge reaches varicosities of On SAC and trailing edge reaches varicosities of Off SAC. (C) Example single sweeps of moving bar-evoked GCaMP6 fluorescence from varicosities 1\u20134 shown in (A). Polar plots of mean peak amplitude on right show centrifugal tuning of all four varicosities. (D) Summary bar graphs of DSI and vector sum values for On SACs in control (CTL) and Slc32a1 KO mice before and after adding SR95531. CTL: DSI 0.69\u00a0\u00b1\u00a00.01, vector sum 0.44\u00a0\u00b1\u00a00.01, n\u00a0=\u00a086 cells (1221 varicosities); Slc32a1 KO: DSI 0.73\u00a0\u00b1\u00a00.03, vector sum 0.48\u00a0\u00b1\u00a00.02, n\u00a0=\u00a020 cells (123 varicosities); Slc32a1 KO+SR: DSI 0.43\u00a0\u00b1\u00a00.05, vector sum 0.3\u00a0\u00b1\u00a00.05, n\u00a0=\u00a014 cells (86 varicosities). DSI CTL - Slc32a1 KO p=0.14; vector sum CTL- Slc32a1 KO p=0.66; ***p<0.0005; *p=0.008 (E) Pairwise comparison of DSI and vector sum values of individual On-SACs before and after adding SR95531 in Slc32a1 KO mice. Before adding SR95531: DSI 0.71\u00a0\u00b1\u00a00.04, vector sum 0.44\u00a0\u00b1\u00a00.04; After SR addition: DSI 0.43\u00a0\u00b1\u00a00.05, vector sum 0.3\u00a0\u00b1\u00a00.05. n\u00a0=\u00a014 cells (86 varicosities). ***p<0.0005; *p=0.015 (F). As in (D), summary bar graphs of DSI and vector sum values for Off-SACs. Control: DSI 0.72\u00a0\u00b1\u00a00.01, vector sum 0.48\u00a0\u00b1\u00a00.01, n\u00a0=\u00a035 cells (257 varicosities); Slc32a1 KO: DSI 0.83\u00a0\u00b1\u00a00.01, vector sum 0.59\u00a0\u00b1\u00a00.01; n\u00a0=\u00a033 cells (353 varicosities). Slc32a1 KO+SR: DSI 0.40\u00a0\u00b1\u00a00.05, vector sum 0.22\u00a0\u00b1\u00a00.04, n\u00a0=\u00a011 cells (178 varicosities). **p<0.005; ***p<0.0005. (G) As in (E), pairwise comparison of DSI and VS values of individual Off-SACs. Before adding SR95531: DSI 0.84\u00a0\u00b1\u00a00.02, vector sum 0.61\u00a0\u00b1\u00a00.02; After SR addition: DSI 0.4\u00a0\u00b1\u00a00.05, vector sum 0.22\u00a0\u00b1\u00a00.04. n\u00a0=\u00a011 cells (178 varicosities). ***p<0.0005. See also Figure 2\u2014figure supplement 1 for cumulative probability distributions of peak fluorescence in On and Off SACs of control and Slc32a1 KO mice during CP and CF motion.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Cumulative probability distributions of peak fluorescence in dendritic varicosities of On SACs during CF (left) and CP (right) motion in control and Slc32a1 KO mice. Mean \u00b1 SEM: On-CP: Control 199\u00a0\u00b1\u00a015%, KO 247\u00a0\u00b1\u00a057%, p=0.02; On-CF: Control 1021\u00a0\u00b1\u00a067%, KO 1091\u00a0\u00b1\u00a0142%, p=0.13. (B) As in A, cumulative probability distributions of peak fluorescence in dendritic varicosities of Off SACs. Mean \u00b1 SEM: Off-CP: Control 198\u00a0\u00b1\u00a033%, KO 94\u00a0\u00b1\u00a020%, *p=0.001; Off-CF: Control 1042\u00a0\u00b1\u00a0137%, KO 868\u00a0\u00b1\u00a091%, p=0.35.\n\n![Video 1.](https://cdn.elifesciences.org/articles/21053/elife-21053-media1.mp4.jpg)\n\n**Video 1.:** This video shows continuous real-time calcium imaging of an On SAC in the control group (C) in response to a bright bar moving in eight directions. Left: raw fluorescence video, scale bar: 5 \u03bcm. Upper right: mean fluorescence change of all varicosities in the video to the left. Lower right: schematic moving bar stimulus synchronized with the imaging video and the trace. Black filled circle indicates the area of the retina where the bar was presented. Green square in the middle indicates the location of the imaging window. Calcium responses are triggered by the leading edge of the moving bar.\n\n![Video 2.](https://cdn.elifesciences.org/articles/21053/elife-21053-media2.mp4.jpg)\n\n**Video 2.:** As in Video 1, this video shows continuous real-time calcium imaging of an Off SAC in the control group in response to the moving bar stimulus. Note that calcium responses are triggered by the trailing edge of the moving bar.\n\n### SAC-specific deletion of GABAA receptors\n\nThe GABAergic inhibition required for generating the centrifugal direction selectivity of On and Off SACs could come from two sources besides other SACs. The first is the GABAergic synapse onto presynaptic bipolar cells from other amacrine cell types (Hoggarth et al., 2015; Lee and Zhou, 2006). The second is direct GABAergic input onto SACs from non-SAC amacrine cells (Ding et al., 2016). To distinguish between these two possibilities, we examined the direction selectivity of SACs when GABAA receptors are removed from SACs but not from bipolar cells. If presynaptic inhibition from non-SAC amacrine cells onto bipolar cells is sufficient for direction selectivity, we would expect normal direction selectivity under this condition. In comparison, if non-SAC-mediated GABAergic inputs directly onto SACs are important, we would expect impaired direction selectivity.\n\nWe eliminated all direct GABAergic inhibition onto SACs by generating a conditional KO mouse line in which the \u03b12 subunit of GABAA receptors, Gabra2, is selectively knocked out from SACs (Gabra2 KO mice, Figure 3A). Gabra2 expression colocalizes with On and Off SAC dendrites in the IPL (Brandst\u00e4tter et al., 1995) and has been shown to be important for direction selectivity (Auferkorte et al., 2012). For targeted recording from these KOs, we also labeled SACs and a subtype of On-Off DSGCs that prefer motion in the posterior direction (pDSGCs) (Huberman et al., 2009) with tdTomato and GFP, respectively (Figure 3A). To confirm loss of functional GABAA receptors in SACs of Gabra2 KO mice, we recorded their spontaneous IPSCs and found that they are eliminated (Figure 3B and C). We also performed paired recordings from neighboring SACs, and found that none of the pairs showed evoked IPSCs (Figure 3D, n\u00a0=\u00a010 pairs, three mice). Therefore, GABAergic inputs onto SACs are abolished in Gabra2 KO mice.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic diagram shows transgenes involved in Gabra2 conditional KO mice. The KO mice carry homozygous floxed Gabra2 allele to replace the endogenous Gabra2 gene for Cre-dependent excision (acronym: Gabra2flox/flox), and Chat-IRES-Cre (C). The floxed tdTomato (T) and a Drd4-GFP transgene to label pDSGCs (D) were also included when SACs or pDSGCs were targeted for electrophysiological recordings. (B) Example traces of spontaneous IPSCs (sIPSCs) in On SACs from control (CT) and Gabra2 KO (Gabra2flox/flox CT) mice. (C) Summary bar graph of sIPSC frequency in control and KO groups. Control: 0.28\u00a0\u00b1\u00a00.07 Hz, n\u00a0=\u00a018 cells, five mice; KO: 0.02\u00a0\u00b1\u00a00.04 Hz, n\u00a0=\u00a016 cells, four mice. ***p<0.0005. (D) Example evoked IPSC traces from reciprocal On SAC-SAC pairs in Control and Gabra2 KO mice. (E) Voltage clamp traces from null-side and preferred-side SAC-DSGC pairs in control (CTD) and KO (Gabra2flox/floxCTD) mice showing cholinergic EPSCs (red inward) and GABAergic IPSCs (black outward) evoked in pDSGCs by depolarizing SACs. Schematic on left shows soma locations of the null and preferred side pairs. Black arrows indicate the pDSGC\u2019s preferred direction. (F) Summary bar graphs of IPSC and EPSC peak amplitudes in pDSGCs evoked by null (N) and preferred (P) side SACs in control and KO groups. IPSC: Control \u2013 N: 247.9\u00a0\u00b1\u00a040.8 pA, n\u00a0=\u00a014 cells, seven mice; Control \u2013 P: 43.0\u00a0\u00b1\u00a030.1 pA, n\u00a0=\u00a014 cells, seven mice; KO \u2013 N: 233.8\u00a0\u00b1\u00a043.7 pA, n\u00a0=\u00a07 cells, four mice; KO \u2013 P: 41.3\u00a0\u00b1\u00a010.0 pA, n\u00a0=\u00a08 cells, five mice, **p<0.005, ***p<0.0005; EPSC: Control \u2013 N: 165.2\u00a0\u00b1\u00a040.4 pA, n\u00a0=\u00a014 cells, seven mice; Control \u2013 P: 96.6\u00a0\u00b1\u00a032.2 pA, n\u00a0=\u00a014 cells, seven mice; KO \u2013 N: 127.4\u00a0\u00b1\u00a020.4 pA, n\u00a0=\u00a07 cells, four mice; KO \u2013 P: 175.0\u00a0\u00b1\u00a031.9 pA, n\u00a0=\u00a08 cells, five mice, one way ANOVA p=0.07. (G) Summary bar graphs of EPSC amplitudes and total charger transfer in pDSGCs evoked by onset and offset of a bright spot in control and KO mice. Peak amplitude: Control On, 224.6\u00a0\u00b1\u00a026.7 pA; KO On, 242.7\u00a0\u00b1\u00a019.5 pA, p=0.58; Control Off, 216.5\u00a0\u00b1\u00a023.8 pA; KO Off, 242.4\u00a0\u00b1\u00a025.9 pA, p=0.46. Charge Transfer: Control On, 42.3\u00a0\u00b1\u00a05.6 pA\u2219s; KO On, 52.2\u00a0\u00b1\u00a05.9 pA\u2219s, p=0.22; Control Off, 48.7\u00a0\u00b1\u00a04.2 pA\u2219s; KO Off, 49.4\u00a0\u00b1\u00a04.9 pA\u2219s, p=0.92. Control, n\u00a0=\u00a021 cells, nine mice; KO, n\u00a0=\u00a030 cells, 11 mice.\n\nAlthough multiple studies have demonstrated that the emergence of retinal direction selectivity occurs independent of neural activity (Elstrott et al., 2008; Hamby et al., 2015; Sun et al., 2011; Wei et al., 2011), we needed to rule out potential developmental changes in this circuit in Gabra2 KO mice. Therefore, we examined other critical synapses involved in direction selectivity: the GABAergic and cholinergic synapses between SACs and DSGCs. Using paired voltage-clamp recording, we depolarized SACs and measured evoked GABAergic IPSCs and cholinergic excitatory postsynaptic currents (EPSCs) in pDSGCs. We targeted SAC-pDSGC pairs with overlapping dendritic arbors and intersoma distances of 60\u201380 \u00b5m. In control mice, SACs from the null side provide strong GABAergic inputs onto pDSGCs while SACs from the preferred side provide weak GABAergic inputs. In Gabra2 KOs, this asymmetric wiring pattern remains unchanged (Figure 3E and F). Similarly, cholinergic transmission in the KO is unaffected (Figure 3E and F). Thus our results show that GABAergic and cholinergic synapses from SACs to DSGCs are not altered in the Gabra2 KO mice. In addition, the amplitude of EPSCs in pDSGCs evoked by a bright flashing spot is similar between control and Gabra2 KO groups (Figure 3G), indicating that both cholinergic and glutamatergic synapses onto pDSGCs are unaltered.\n\n### Centrifugal direction selectivity of off SACs is impaired in Gabra2 KO mice during the simple moving bar stimulus\n\nHow do SACs respond to visual motion when their direct ionotropic GABAergic inhibitory inputs are lost? To address this question, we measured centrifugal direction selectivity by monitoring GCaMP6 fluorescence in On and Off SACs of Gabra2 KO mice during the simple moving bar stimulus described above. We found that Off SACs in these KOs display a significant increase in centripetal-direction response (Figure 4A and B, Video 3), resulting in reduced direction selectivity (Figure 4C\u20134F). Therefore, direct GABAergic inputs onto Off SACs from non-SAC amacrine cells are important for centrifugal direction selectivity. In contrast, we found that On SACs in the KOs exhibit centrifugal preference similar to those of control mice (Figure 4, Video 4), suggesting that direct GABAergic inputs are not required for direction selectivity in On SACs during the simple moving bar stimulus. Bath application of SR95531 reduced direction selectivity of On SACs in KOs (Figure 4\u2014figure supplement 1), suggesting a role for presynaptic inhibition onto bipolar cells in generating direction selectivity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig4-v2.jpg)\n\n**Figure 4.:** (A) Example GCaMP6m fluorescence traces from varicosities of On (left) and Off (right) SACs in control (C) and KO (Gabra2flox/flox C) mice during CF and CP motion. Dark lines represent mean values and shaded areas represent standard deviations. Yellow bar at the\u00a0top indicates the\u00a0time window when the bar moved across the imaging area. Blue vertical lines indicate when a\u00a0leading edge reaches varicosities of On SAC and trailing edge reaches varicosities of Off SACs. (B) Cumulative probability distributions of peak fluorescence from dendritic varicosities in On (left) and Off (right) SACs of control and Gabra2 KO mice during CP and CF motion. (C) Cumulative probability distributions of DSI values from dendritic varicosities in On and Off SACs of control and KO mice. (D) Summary bar graph of DSI values from dendritic varicosities in On and Off SACs of control and KO mice: On SAC: Control 0.69\u00a0\u00b1\u00a00.01, KO 0.71\u00a0\u00b1\u00a00.02, p=0.22; Off SAC: Control 0.72\u00a0\u00b1\u00a00.01, KO 0.55\u00a0\u00b1\u00a00.02, ***p<0.0005. (E) Cumulative probability distributions of vector sum values from dendritic varicosities in On and Off SACs of control and KO mice. (F) Summary bar graph of vector sum values from dendritic varicosities in On and Off SACs of control and KO mice. On SAC: control 0.44\u00a0\u00b1\u00a00.01, KO 0.41\u00a0\u00b1\u00a00.01, p=0.26; Off SAC: control 0.48\u00a0\u00b1\u00a00.02, KO 0.35\u00a0\u00b1\u00a00.02, ***p<0.0005. Control On n\u00a0=\u00a086 cells (1221 varicosities); KO On n\u00a0=\u00a0124 cells (1467 varicosities); Control Off n\u00a0=\u00a035 cells (257 varicosities); KO Off n\u00a0=\u00a067 cells (897 varicosities). See also Figure 4\u2014figure supplement 1 for the effect of SR95531 on direction selectivity of On SACs in Gabra2 KO mice.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Pairwise comparison of DSI values of individual On SACs before and after adding SR95531 in Gabra2 KO mice. Paired t-test **p<0.005 (B) Summary bar graph of DSI values. Error bars represent standard error of the mean (SEM).Unpaired t-test ***p<0.0005. Baseline: 0.76\u00a0\u00b1\u00a00.01; + SR: 0.63\u00a0\u00b1\u00a00.03; n\u00a0=\u00a013 cells, three mice.\n\n![Video 3.](https://cdn.elifesciences.org/articles/21053/elife-21053-media3.mp4.jpg)\n\n**Video 3.:** As in Video 1, this video shows continuous real-time calcium imaging of an Off SAC in the Gabra2 KO group (Gabra2flox/flox C) in response to the moving bar stimulus.\n\n![Video 4.](https://cdn.elifesciences.org/articles/21053/elife-21053-media4.mp4.jpg)\n\n**Video 4.:** As in Video 1, this video shows continuous real-time calcium imaging of an On SAC in the Gabra2 KO group in response to the moving bar stimulus.\n\n### Off inhibitory inputs onto On-Off DSGCs display impaired direction selectivity in Gabra2 KO mice\n\nSince centrifugal preference of Off SAC dendrites is selectively impaired in Gabra2 KO mice, we would expect that the Off component of inhibitory inputs onto DSGCs would also display reduced direction selectivity. We tested this hypothesis by performing whole-cell voltage clamp recordings in pDSGCs to measure light-evoked IPSCs during the simple moving bar stimulus. To quantify direction selectivity of the inhibitory inputs onto DSGCs, we calculated DSI and vector sum of the peak amplitude and total charge transfer of IPSCs in response to the simple moving bar stimulus. In control mice, both On and Off components of IPSCs are direction selective (Figure 5A\u20135D). In Gabra2 KO mice, the Off component of IPSCs shows reduced selectivity (Figure 5C and D) but the On component does not (Figure 5A and B). Therefore, in the absence of GABAergic inputs onto SACs, the Off component of inhibitory inputs onto DSGCs displays impaired directional tuning.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig5-v2.jpg)\n\n**Figure 5.:** (A) Example IPSC traces of pDSGCs evoked by leading edge (On) of a bright bar moving in the preferred and null directions in control (CTD) and Gabra2 KO (Gabra2flox/flox CTD) mice. (B) Summary bar graphs of DSI values for peak amplitude and charge transfer of the On component of IPSCs in control and KO groups. Peak Amplitude: Control 0.49\u00a0\u00b1\u00a00.03, KO 0.44\u00a0\u00b1\u00a00.03, p=0.19; Charge Transfer: Control 0.53\u00a0\u00b1\u00a00.04, KO 0.49\u00a0\u00b1\u00a00.03, p=0.16. Control n\u00a0=\u00a032 cells, 13 mice; KO n\u00a0=\u00a033 cells, 18 mice. (C) As in (A), example IPSC traces of pDSGCs evoked by trailing edge (Off) of a bright moving bar. (D) As in (B), summary bar graphs for the Off component of IPSCs in pDSGCs. Control 0.72\u00a0\u00b1\u00a00.03, KO 0.58\u00a0\u00b1\u00a00.03, *p=0.01; Charge Transfer: Control 0.73\u00a0\u00b1\u00a00.03, KO 0.51\u00a0\u00b1\u00a00.03, **p<0.005.\n\n### Off component of On-Off DSGC spiking activity shows impaired direction selectivity in Gabra2 KO mice\n\nTo test if loss of lateral inhibition onto Off SACs impacts the ultimate output of the retinal direction selective circuit, we determined its effect on the spiking activity of DSGCs. We recorded the spiking activity of pDSGCs in loose-patch configuration, and compared the direction selectivity of the leading edge-evoked On response and the trailing edge-evoked Off response in control and Gabra2 KO mice during the simple moving bar stimulus. Consistent with the reduced directional tuning of IPSCs observed in the Off component, we found that the Off response of pDSGC spiking activity in Gabra2 KO mice shows less direction selectivity than that in control mice (Figure 6A and C). In contrast, the On responses in KOs display direction selectivity similar to that of controls (Figure 6A and B). To rule out the possibility that the Off response is influenced by prior activation of the On pathway, we reversed the contrast of the moving bar stimulus by presenting a dark bar against a bright background. We found that direction selectivity of the leading edge-evoked Off component in Gabra2 KOs was again less than that in controls (Figure 6D and F), while the trailing edge-evoked On response of KOs shows direction selectivity similar to controls (Figure 6D and E). Therefore, the Off component of pDSGC spiking activity becomes less directionally tuned in Gabra2 KO mice.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig6-v2.jpg)\n\n**Figure 6.:** (A \u2013 C) Spiking response of pDSGCs to a bright moving bar. Control n\u00a0=\u00a033 cells, 20 mice; Gabra2 KO n\u00a0=\u00a037 cells, 14 mice. (A) Example loose-patch recordings and polar plot for a pDSGC in a Gabra2 KO (Gabra2flox/flox CTD) mouse in response to a bright bar moving in 12 directions. Trace for each direction is the overlay of three trials. The leading edge-evoked On and trailing edge-evoked Off components of the spiking activity can be clearly separated. Mean spike counts for On (red) and Off (black) responses are shown on the polar plot. (B) Cumulative distributions (left) and summary bar graphs (right) of DSI and vector sum values for On responses of pDSGCs during the bright moving bar stimulus. DSI: Control 0.70\u00a0\u00b1\u00a00.03, KO 0.60\u00a0\u00b1\u00a00.04, p=0.14; vector sum: Control 0.43\u00a0\u00b1\u00a00.03; KO 0.36\u00a0\u00b1\u00a00.03, p=0.08. Control n\u00a0=\u00a059 cells, 20 mice; KO n\u00a0=\u00a046 cells, 14 mice. (C) As in (B), DSI and vector sum for Off responses of pDSGCs during the bright moving bar stimulus. DSI: Control 0.51\u00a0\u00b1\u00a00.04, KO 0.26\u00a0\u00b1\u00a00.03, ***p<0.0005; vector sum: Control 0.27\u00a0\u00b1\u00a00.02, KO 0.13\u00a0\u00b1\u00a00.01, ***p<0.0005. (D \u2013 F) Spiking response of pDSGCs to a dark moving bar. Control n\u00a0=\u00a019 cells, nine mice; KO n\u00a0=\u00a020 cells, nine mice. (D) As in (A), example loose-patch recordings and polar plot for a pDSGC in a Gabra2 KO (Gabra2flox/flox CTD) mouse in response to a dark bar moving in 12 directions. (E) As in (B), DSI and vector sum for On responses of pDSGCs during the dark moving bar stimulus. DSI: Control 0.69\u00a0\u00b1\u00a00.05, KO 0.57\u00a0\u00b1\u00a00.04, p=0.09; vector sum: Control 0.39\u00a0\u00b1\u00a00.04, KO 0.32\u00a0\u00b1\u00a00.03, p=0.23. Control n\u00a0=\u00a019 cells, nine mice; KO n\u00a0=\u00a020 cells, nine mice. (F) As in (C), DSI and vector sum for Off responses of pDSGCs during the dark moving bar stimulus. DSI: Control 0.52\u00a0\u00b1\u00a00.05, KO 0.28\u00a0\u00b1\u00a00.04, **p<0.005; VS: Control 0.29\u00a0\u00b1\u00a00.03, KO 0.16\u00a0\u00b1\u00a00.02, **p<0.005.\n\n### Lateral inhibition in the On pathway is required for direction selectivity on a noisy background\n\nIn the experiments above, we used a simple moving bar stimulus and found that direction selectivity of the Off pathway requires lateral inhibition onto Off SACs, but direction selectivity of the On pathway does not require direct GABAergic input onto On SACs. What, then, is the role of lateral inhibition in the On pathway? We hypothesized that our stimulus conditions did not optimally activate this inhibitory pathway. In particular, a noisy background may more effectively engage this inhibition and reveal its functional importance in direction selectivity. To test this idea, we measured the direction selectivity of pDSGCs in Gabra2 KO mice using a bright bar moving against a flickering checkerboard background. This flickering checkerboard provides \"white noise\" that is commonly used for mapping receptive fields in the spike-triggered average method (Chichilnisky, 2001). We set the brightness of this moving bar equal to that of our simple moving bar stimulus, and varied the brightness of the checker pattern from 0% to 100% of the moving bar intensity. In control mice, the pDSGC spiking response maintains direction selectivity over a wide range of checker intensities (Figure 7A\u20137C). Consistent with the earlier finding that lateral inhibition is crucial for direction selectivity of the Off component (Figure 6C and E), the direction selectivity of the Off response in Gabra2 KO mice is reduced regardless of checker intensity (Figure 7A and C). Interestingly, however, replacing the gray background with a flickering checkerboard also significantly reduces the On direction selectivity in KO mice (Figure 7A and B), indicating a functional contribution of lateral inhibition during more complex stimuli.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21053/elife-21053-fig7-v2.jpg)\n\n**Figure 7.:** (A) Visual stimulus (top) is a bright bar moving on a checkered background with different checker intensities, and loose-patch recordings (bottom) show pDSGC responses in control (CTD) and Gabra2 KO (Gabra2flox/flox CTD) mice in preferred and null directions. (B) Summary plot of DSI values of the On component of pDSGC spiking activity evoked by a bright bar moving against a flickering checkerboard background. Checker intensity is expressed as the percentage of the brightness of the moving bar. Bars below plot indicate the mean background intensity of the flickering checkerboard (top) and the equivalent contrast of the moving bar stimulus (bottom). Control, n\u00a0=\u00a012 cells, four mice; Gabra2 KO, n\u00a0=\u00a018 cells, four mice. (C) As in (B), summary plot of DSI of Off component of pDSGC spiking activity. (D) Summary bar graphs of DSI values from On and Off components of pDSGC spiking at different background illuminance and contrast levels during the simple moving bar stimulus against a homogeneous background. Bars below plots indicate the background intensity (x103 R*/rod/s) and contrast of the bar. On: Condition A: Control 0.63\u00a0\u00b1\u00a00.06, n\u00a0=\u00a017 cells from seven mice, KO 0.56\u00a0\u00b1\u00a00.07, n\u00a0=\u00a014 cells from six mice, p=0.31; Condition B: Control 0.60\u00a0\u00b1\u00a00.06, n\u00a0=\u00a08 cells from five mice, KO 0.58\u00a0\u00b1\u00a00.08, n\u00a0=\u00a010 cells from five mice, p=0.83; Condition C: Control 0.48\u00a0\u00b1\u00a00.05, n\u00a0=\u00a012 cells from five mice, KO 0.49\u00a0\u00b1\u00a00.05, n\u00a0=\u00a010 cells from five mice, p=0.95; Condition D: Control 0.61\u00a0\u00b1\u00a00.06, n\u00a0=\u00a014 cells from seven mice, KO 0.61\u00a0\u00b1\u00a00.04, n\u00a0=\u00a012 cells from five mice, p=0.73; Off: Condition A: Control 0.50\u00a0\u00b1\u00a00.06, KO 0.17\u00a0\u00b1\u00a00.04, p=0.004; Condition B: Control 0.47\u00a0\u00b1\u00a00.06, KO 0.24\u00a0\u00b1\u00a00.04, p=0.01; Condition C: Control 0.44\u00a0\u00b1\u00a00.05, KO 0.21\u00a0\u00b1\u00a00.05, p=0.004; Condition D: Control 0.42\u00a0\u00b1\u00a00.05, KO 0.22\u00a0\u00b1\u00a00.04, p=0.006. For (B-D), *p<0.05; **p<0.005; ***p<0.0005.\n\nThe flickering checkerboard not only adds noise to the visual stimuli, but also changes the average background illuminance and therefore the effective contrast of the moving bar. To test if changing either ambient illuminance or contrast alone can mimic the effect of introducing the flickering checkerboard, we measured the direction selectivity of pDSGCs in Gabra2 KO mice using the simple moving bar stimulus with different contrast and background illuminance levels that lie in the upper and lower range of the flickering checkerboard stimuli. We found that, similar to the results with our original simple bar stimulus (Figure 6), the On component of the pDSGC's spiking response displays normal direction selectivity, while the Off component shows reduced direction selectivity at all illuminance and contrast levels tested (Figure 7D). Therefore, the impaired direction selectivity seen in the On pathway in Gabra2 KO mice with the flickering checkboard background is not due to changes in stimulus contrast or ambient illuminance. Instead, the noise introduced by the flickering checkerboard is important for the functional recruitment of lateral inhibition in the On pathway.\n\n## Discussion\n\nHere we used synapse-specific genetic manipulations to distinguish the effects on the\u00a0retinal direction selectivity of GABAergic inhibition originating from different sources. We found that distinct sets of inhibitory mechanisms are recruited, depending on the properties of the background and the positive versus negative contrast of the moving object. The\u00a0optimal direction selectivity of a dark object, encoded by the Off pathway, requires lateral inhibition from non-SAC amacrine cells onto Off SACs. In contrast, direction selectivity of a bright object, encoded by the On pathway, does not require lateral inhibition onto On SACs when the moving bar stimulus lies on a homogeneous background, but does require it when the bar moves on a noisy background. Together, our results highlight the multiple levels of synaptic mechanisms that underlie direction selectivity under complex visual conditions.\n\n### Slc32a1 KO and Gabra2 KO mice display no detectable developmental compensations\n\nAlthough using conditional KO mice offers the unique advantage of achieving the\u00a0cell type and synapse specificity, a major concern of this genetic approach is that neural circuits may potentially be altered due to developmental compensations. In our study, we selectively remove from SACs the two genes involved in GABAergic transmission, Slc32a1 and Gabra2, during the early postnatal period (Xu et al., 2016). Therefore, we must verify that aside from loss of SAC-mediated GABA release in Slc32a1 KO mice and loss of GABAA receptors in SACs in Gabra2 KO mice, the rest of the direction selectivity circuit is not altered. To address this issue, we examined the other known synapse types that are involved in retinal direction selectivity, including the cholinergic and GABAergic synapses between SACs and DSGCs, as well as the glutamatergic inputs onto DSGCs from bipolar cells. We found that these synapses showed no detectable changes (Pei et al., 2015) and Figure 3), indicating that removing GABA release or GABA receptors from SACs does not lead to compensatory developmental changes at other synapses in the direction selective circuit. We cannot discount the possibility that developmental compensation has occurred at sites not examined in this study. However, our findings are consistent with multiple previous studies that demonstrate that the early development of retinal direction selectivity is highly resistant to changes in neural activity (Chan and Chiao, 2008; Elstrott et al., 2008; Hamby et al., 2015; Sun et al., 2011; Wei et al., 2011).\n\nAfter direction selectivity is established, visual experience has been shown to play a role in refining the clustered distribution of preferred directions of On-Off DSGCs (Bos et al., 2016). In both Slc32a1 KO and Gabra2 KO mice, visually evoked responses are present in all retinal neurons including SACs and pDSGCs. Furthermore, pDSGCs in both KO lines remain tuned to the posterior direction (Pei et al., 2015); data not shown). Given that all known synaptic connections in the direction selective circuit and their strengths are preserved in our conditional KO mice, we consider these mouse lines valuable tools for circuit analysis and for testing existing models.\n\n### The role of lateral inhibition with a simple moving bar stimulus\n\n#### The on pathway\n\nDuring object motion in the centripetal direction, lateral inhibition is thought to selectively suppress SAC dendritic activation via inhibitory inputs from the surround (Lee and Zhou, 2006). A major candidate source for this lateral inhibition is GABAergic input from neighboring SACs (Lee and Zhou, 2006). However, when a bar moves against a homogeneous dark background, we found that blocking GABA release or GABA receptors of On SACs does not affect their centrifugal preference. Therefore, under this stimulus condition, lateral inhibition is not necessary for centrifugal direction selectivity of On SACs, and other mechanisms (Hausselt et al., 2007; Kim et al., 2014; Oesch and Taylor, 2010; Vlasits et al., 2016) must act to maintain it.\n\n#### The off pathway\n\nUnlike On SACs, Off SACs are sensitive to lateral inhibition during the simple bar stimulus. Removing all GABAergic inputs onto Off SACs in Gabra2 KO mice reduces centrifugal preference. As a result, the Off component of pDSGC inhibitory inputs and spiking responses shows significantly impaired direction selectivity. This effect does not stem from SAC-SAC inhibition, since the\u00a0loss of this inhibition in Slc32a1 KO mice does not reduce direction selectivity of Off SACs, but rather slightly enhances it by decreasing centripetal-direction response. This indicates that the centrifugal preference of Off SAC dendrites requires additional GABAergic inputs onto Off SACs from non-SAC amacrine cells. These cells are presumably the wide-field amacrine cells that synapse onto the proximal dendrites of Off SACs and contribute about 8% of the total number of inhibitory synapses onto Off SACs identified by connectomic reconstruction (Ding et al., 2016). Though these synapses represent a small fraction of the synaptic inputs onto Off SACs, they may be sufficiently strong and efficient for shunting glutamatergic excitatory inputs that are also clustered in the proximal SAC dendrites (Vlasits et al., 2016).\n\nWe still do not know what mechanism underlies the improved selectivity of Off SACs in Slc32a1 KO mice, and if this improvement detected by calcium imaging impacts the spiking output of On-Off DSGCs. One possibility is that Off SACs also provide GABAergic inhibition to the above-mentioned non-SAC amacrine cells. In the absence of GABA release from SACs in Slc32a1 KO mice, these non-SAC amacrine cells might be disinhibited, thus providing stronger lateral inhibition to Off SACs to decrease their centripetal-direction response. Directly testing this hypothesis requires targeted recordings from pairs of Off SACs and non-SAC amacrine cells, an experiment that is currently hindered by a\u00a0lack of cell type-specific markers.\n\nWe have shown here that the direction selectivity of On and Off SACs is differentially affected in both Slc32a1 KO and Gabra2 KO mice. Thus, the direction selective circuitry is not merely mirrored in the On and Off layers of the IPL, but consists of distinct sets of mechanisms in each sublamina. Our study therefore adds to others that have demonstrated differences and interactions between the On and Off pathways of the direction selective circuit (Ackert et al., 2009; Taylor and Vaney, 2002; Vlasits et al., 2014) and of other retinal circuits (Geffen et al., 2007; Tikidji-Hamburyan et al., 2015). Moreover, our study shows that GABAergic inhibition onto SACs consists of multiple facets that are engaged differently during retinal processing of positive- and negative-contrast motion.\n\n### The role of lateral inhibition during a moving bar stimulus against a noisy background\n\nLateral inhibition plays an important role in feature selection in multiple sensory systems. One elaborated form, the reciprocal inhibition between inhibitory neurons, has been described in multiple brain areas such as retina, thalamus, midbrain and cortex (Lee and Zhou, 2006; Machens et al., 2005; Miller and Wang, 2006; Papadopoulou et al., 2011). In sensory and cognitive systems, lateral inhibition motifs have been implicated in selecting the target feature in an environment when other 'competitor' features are present (Mysore and Knudsen, 2012; Sharpee, 2012). In the visual system, moving objects in natural scenes have backgrounds that are rarely homogeneous and stationary, but rather are spatially and temporally noisy. These can serve as 'competitor' stimuli that pose challenges to the direction selective circuit for reliably detecting motion direction. We postulate that lateral inhibition onto On SACs functions to safeguard direction selectivity against a noisy environment. A noisy background increases activation of bipolar cells, which in turn provides stronger glutamatergic drive to the downstream amacrine cells including SACs. Under this condition, the lateral inhibitory network may be in a more 'primed' state to be efficiently recruited by the motion stimuli and to exert its function. In contrast, amacrine cells involved in lateral inhibition are less activated when bipolar cells adapt to the gray background, and thus the moving bar alone may not be sufficient to significantly recruit lateral inhibition in the On pathway. Consistent with this hypothesis, direction selectivity of the On response of DSGCs in Gabra2 KO mice is normal when the background is homogeneous but deteriorates as soon as white noise is introduced into the background. These findings represent an intriguing example in which additional neural mechanisms are recruited when the visual stimulus more closely resembles natural viewing conditions, but simpler visual stimuli involving only the feature of interest may not reveal the functional significance of these mechanisms (David et al., 2004; Felsen and Dan, 2005; Felsen et al., 2005; Turner and Rieke, 2016). A notable analogy has been reported in the visual cortex: a prominent inhibitory component in the receptive field of visual cortical neurons is uniquely revealed by more complex natural stimuli but is not observed with synthetic sinusoidal gratings (David et al., 2004).\n\n### Comparison to previous pharmacological results using GABA receptor antagonist\n\nThe role of lateral inhibition onto SACs in direction selectivity has been exclusively studied in On SACs using bath application of the GABAA receptor antagonist SR95531 with variable results (Ding et al., 2016; Euler et al., 2002; Gavrikov et al., 2006; Hausselt et al., 2007; Lee and Zhou, 2006; Oesch and Taylor, 2010; Vlasits et al., 2016). This variability may be due to a number of factors, such as species differences, conditions of visual stimulation, somatic recordings versus calcium imaging at the dendrites, and locations of varicosities along SAC dendrites. Furthermore, the effect of the antagonist cannot be attributed to specific type(s) of GABAergic synapses since GABAA receptors are extensively expressed in amacrine cells and bipolar cells in the IPL. Here, we combined pharmacology with the genetic dissection of the GABAergic circuitry to determine the synaptic loci that participate in direction selectivity. This approach allowed us to assign functional roles to different inhibitory synaptic components, and to identify a new component in the functional wiring diagram of the direction selective circuit: inhibitory inputs from non-SAC amacrine cells onto Off SACs.\n\nPharmacological experiments cannot establish the ultimate effect that lateral inhibition onto SACs has on the spiking output of DSGCs because SR95531 disrupts SAC-DSGC inhibition. However, by genetically eliminating GABAA receptors but not neurotransmitter release from SACs in Gabra2 KO mice, we preserved the critical synaptic connections between SACs and DSGCs, and determined the role that GABAergic inputs onto SACs play in the spiking output of DSGC\u2019s. We found that the direction selectivity of On-Off DSGC spiking decreases when SAC centrifugal preference is reduced. Therefore, the inhibitory mechanisms contributing to the centrifugal preference of SACs that we have studied here are functionally relevant for determining the signals that are relayed from the retina to the brain.\n\n## Materials and methods\n\n### Mice\n\nThe Gabra2flox/flox mouse line was a generous gift from Dr. Uwe Rudolph at Harvard Medical School. Slc32a1flox/flox mice (Slc32a1<tm1Lowl>/J), Chat-IRES-Cre mice (129S6-Chattm2(cre)Lowl/J) and floxed tdTomato mice (129S6-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J) were acquired from the\u00a0Jackson Laboratory. Drd4\u2013GFP mice were originally developed by MMRRC (http://www.mmrrc.org/strains/231/0231.html) in the Swiss Webster background, and were subsequently backcrossed to C57BL/6 background. All strains were backcrossed to the C57BL/6 background in our laboratory, and crossed to each other to create the lines used in this study. Mice of both sexes between postnatal days 18\u201335 were used for paired recording experiments, and those between postnatal days 24\u201335 were used for light response experiments. All procedures to maintain and use mice were in accordance with the University of Chicago Institutional Animal Care and Use Committee (Protocol number ACUP 72247) and in conformance with the NIH Guide for the Care and Use of Laboratory Animals and the Public Health Service Policy.\n\n### Preparation of isolated retina\n\nMice were anaesthetized with isoflurane and decapitated after dark adaptation. Under infrared illumination, retinas were isolated from the pigment epithelium at room temperature in oxygenated Ames\u2019 medium (Sigma-Aldrich, St. Louis, MO) for visual stimulation experiments or in artificial cerebrospinal fluid (ACSF) containing 119.0 mM NaCl, 26.2 mM NaHCO3, 11 mM D-glucose, 2.5 mM KCl, 1.0 mM K2HPO4, 2.5 mM CaCl2, and 1.3 mM MgCl2 for dual patch clamp recording. Isolated retinas were then cut into dorsal or ventral halves and mounted ganglion-cell-layer-up on top of a 1 mm2 hole in a small piece of filter paper (Millipore, Billerica, MA). The orientation of the preferred direction (posterior) of Drd4-GFP positive neurons was noted for each piece. Retinas were kept in darkness at room temperature in Ames\u2019 medium or ACSF bubbled with 95% O2/5% CO2 until use (0\u20137 hr).\n\n### Whole-cell voltage-clamp recording\n\nRecording electrodes of 3\u20135 M\u03a9 were filled with a cesium-based internal solution containing 110 mM CsMeSO4, 2.8 mM NaCl, 4 mM EGTA, 5 mM TEA-Cl, 4 mM adenosine 5\u2032-triphosphate (magnesium salt), 0.3 mM guanosine 5\u2032-triphosphate (trisodium salt), 20 mM HEPES, 10 mM phosphocreatine (disodium salt), 5 mM N-Ethyllidocaine chloride (QX314), 0.025 mM Alexa 488 (for SACs) and 0.025 mM Alexa 594 (for pDSGCs), pH 7.25. tdTomato-labeled SACs and GFP-labeled pDSGCs were identified with epifluorescence imaging (X-Cite) or two-photon microscopy (Bruker Nano Surfaces Division, Middleton,\u00a0WI) under a water immersion objective (60x, Olympus LUMPlanFl/IR). Data were acquired using PCLAMP 10 recording software and a Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, CA), low-pass filtered at 4 kHz and digitized at a sampling rate of 10 kHz. Light-evoked responses were recorded at a bath temperature of 32\u201333\u00b0C. Spontaneous IPSCs in SACs and paired SAC-SAC and SAC-pDSGC recordings were obtained at room temperature.\n\nDuring paired SAC-pDSGC recordings, the evoked IPSCs and EPSCs in pDSGCs were isolated by holding the cells at reversal potentials for these conductances (0 mV for GABAergic, \u221260 mV for cholinergic) in the presence of 0.05 mM D-AP5 and 0.05 mM DNQX disodium salt. The reversal potentials were calculated and then experimentally confirmed by obtaining current-voltage (I-V) relationships of pharmacologically isolated GABAergic and cholinergic currents in pDSGCs. To measure spontaneous IPSCs in SACs and evoked IPSCs in SAC-SAC paired recordings, 0.008 mM DH\u03b2E, 0.05 mM D-AP5 and 0.05 mM DNQX disodium salt were bath applied to the retinas to block NMDA-, AMPA/kainite- and nicotinic receptors. Since depolarizing SACs to 0 mV caused poorly controlled voltage-gated conductances at the beginning of the depolarizing step, we clamped the postsynaptic SACs at \u221280 mV to measure inward chloride currents while all excitatory channels were pharmacologically blocked. Reported potentials have been corrected for the liquid junction potential (~9 mV).\n\n### Analysis of whole-cell voltage clamp data\n\nLight-evoked IPSCs in pDSGCs were isolated by holding cells at 0 mV. Three repetitions of raw synaptic traces were recorded and averaged to obtain the mean response for each stimulus condition. The peak amplitude and total charge transfer of IPSCs evoked by the leading and trailing edges of the moving bar were used to calculate the direction selective index (DSI) and vector sum. DSI is defined as $|\\frac{P\u2212N}{P+N}|$, where P is the peak amplitude or charge transfer of IPSCs in the preferred direction, and N is that in the null direction.\n\n### Visual stimulation\n\nA white organic light-emitting display (OLEDXL, eMagin, Bellevue, WA; 800\u00a0\u00d7\u00a0600 pixel resolution, 60 Hz refresh rate) was controlled by an Intel Core Duo computer with a Windows seven operating system and was presented to the retina at a resolution of 1.1 \u03bcm/pixel. Moving bar stimuli were generated by MATLAB and the Psychophysics Toolbox (Brainard, 1997), and projected through the condenser lens of the two-photon microscope onto the photoreceptor layer. For the flashing spot stimulus in Figure 3G, we used 10 repetitions of a 110 \u00b5m radius white spot (2 s black, 2 s white, 2 s black) to test On and Off responses. For the simple moving bar stimulus, a positive-contrast bar (110 \u00b5m wide, 385 \u00b5m long) moved along the long axis in 8 or 12 pseudo-randomly chosen directions at a speed of 440 \u00b5m/sec over a 660\u00b5m-diameter field on the retina; and three to five trials were recorded for each direction. The percent stimulus contrast was calculated as (Lstimulus \u2013 Lbackground)/ (Lstimulus + Lbackground). Unless otherwise noted (i.e., Figure 7D), the intensity of the moving bar was\u00a0~6.3\u00d7104 isomerizations (R*)/rod/s, lying in the photopic range, and the background intensity was\u00a0~1800 R*/rod/s, lying at the lower end of the photopic range. Individual checker size was 55\u00d755 \u00b5m with each checker\u2019s intensity equal to either the background (0) or a white value (expressed as a percentage of the moving bar intensity) drawn from a binomial distribution. Checker pattern was updated at 15 Hz.\n\n### Two-photon calcium imaging of GCaMP6 fluorescence in SACs\n\nGenetically encoded calcium indicator CCaMP6m was expressed in sparse populations of On and Off SACs by intravitreal injection of an AAV vector carrying floxed GCaMP6m (University of Pennsylvania Vector Core) into control (C) and KO mice (Gabra2flox/flox C and Slc32a1 flox/flox C). GCaMP6 fluorescence of isolated retinas in oxygenated Ames at 32\u201333\u00b0C was imaged in a customized two-photon laser scanning fluorescence microscope (Bruker Nano Surfaces Division). GCaMP6 was excited by a Ti:sapphire laser (Coherent, Chameleon Ultra II, Santa Clara, CA) tuned to 920 nm, and the laser power was adjusted to avoid saturation of the fluorescent signal. Onset of laser scanning induces a transient On response in On SACs that adapts to the baseline in\u00a0~3 s. Therefore, to ensure the\u00a0complete adaptation of this laser-induced response and a stable baseline, visual stimuli were given after 10 s of continuous laser scanning. To separate the visual stimulus from GCaMP6 fluorescence, a band-pass filter (Semrock, Rochester, MA) was placed on the OLED to pass blue light peaked at 470 nm, while two notched filters (Bruker Nano Surfaces Division) were placed before the photomultiplier tubes to block light of the same wavelength. Imaging was performed in the\u00a0regions of the\u00a0retina that contain sparsely labeled SAC varicosities so that individual varicosities could be resolved and the orientation of the dendrites relative to the soma could be determined. The objective was a water immersion objective (60x, Olympus LUMPlanFl/IR). Time series of each imaging window (~20\u00d720 \u00b5m) were collected at 30\u201340 Hz.\n\n### Imaging analysis\n\nAnalysis was performed using ImageJ and MATLAB. Circular regions of interest (ROIs) corresponding to individual varicosities and a background region with no GCaMP6 expression were manually selected for each imaging window in ImageJ. The fluorescent time course of each ROI was determined by averaging all pixels within the ROI. The fluorescence of the background region was subtracted from the raw fluorescent signals of the ROIs in the same imaging window at each time frame. The resulting fluorescence measurements were then used to calculate the visually evoked responses in varicosities. The relative fluorescence change in each varicosity was taken as $\u0394F=\\frac{F\u2212F_{0}}{F_{0}}$, where F is the peak amplitude of fluorescence and $F_{0}$ is the baseline fluorescence level. Mean \u0394F was obtained by averaging 3\u20135 trials for each direction. To assess direction selectivity of SAC distal dendrites, we used the vector sum or direction selectivity index (DSI), defined as $|\\frac{\u0394F_{cf}\u2212\u00a0\u0394F_{cp}}{\u0394F_{cf}+\u00a0\u0394F_{cp}}|$, where $\u0394F_{cf}$ is the relative fluorescence change in centrifugal motion and $\u0394F_{cp}$ is that in centripetal motion. For statistical analysis, we compared variance across varicosities on the dendrites of the same SAC versus variance across varicosities of different SACs. Since the latter was larger, we averaged DSI and vector sum values of all the varicosities belonging to one SAC to get a single data point, and took N in the statistical analysis to be the number of cells, which approximately equals the number of imaging windows.\n\n### Two-photon targeted loose-attached recording of GFP-positive neurons for light response\n\nThe two-photon targeted recording of light responses was performed as in (Pei et al., 2015). Briefly, the retinas were perfused with oxygenated Ames at 32\u201333\u00b0C. Cells were visualized with infrared light (>900 nm) and an IR-sensitive video camera (Watec). Drd4-GFP-positive cells were identified using a two-photon microscope (Bruker Nano Surface Division) and a Ti:sapphire laser (Coherent Chameleon Ultra II) tuned to 920 nm. An electrode of 3\u20135 M\u03a9 was filled with Ames\u2019 medium for loose patch recordings of spikes. Then the electrode was carefully removed, and a new electrode filled with cesium-based internal solution and 25 \u03bcm Alexa 594 was used to fill the recorded cell. An image stack of the Alexa-488 filled pDSGC was acquired with the two-photon microscope at z intervals of 1.5 \u03bcm and was resampled three times for each z-plane using a 60x objective (Olympus LUMPlanFl/IR 60x/0.90W). Images were acquired to cover the entire dendritic field of the cell to verify the bistratified dendritic arbor and the cofasciculation with tdTomato-expressing SACs. Rarely, we encountered Drd4-GFP positive neurons that did not show the above two characteristics in both control and knockout groups. These mislabeled cells are not included in the analysis.\n\nData were analyzed using custom protocols in MATLAB. The number of spikes evoked by the leading (On) and trailing (Off) edges of the bar were counted using MATLAB and averaged across trials in each direction. Spiking DSI is defined as (Npref\u2212 Nnull)/ (Npref + Nnull) where N is the number of spikes evoked by the leading or trailing edge of the moving bar.\n\n### Statistical analysis\n\nGrouped data with error bars are presented as mean \u00b1 SEM and tested for normality. For Figures 2, 3, 5 and 7, statistical differences were examined using one-way analysis of variance and post hoc comparisons using Student\u2019s t-test with Bonferroni correction. For Figures 4 and 6, a two-sample Kolmogorov\u2013Smirnov test was used and multiple comparisons were corrected by Bonferroni correction.\n",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "92af7f59-aed3-42e4-84c5-6f98ea2698aa",
+      "submission_id": "e4b5d5f8-e399-4b41-af78-57a83f02bfc2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marla B Feller, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21053.015](https://doi.org/10.7554/eLife.21053.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Stimulus-dependent recruitment of lateral inhibition underlies retinal direction selectivity\" for consideration by eLife. Your article has been favorably evaluated by Andrew King (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal her identity: Yang Dan (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study provides key insights into the mechanisms underlying direction selectivity. The specific question addressed in this study concerns the role of lateral inhibition between starburst amacrine cells (SACs), the inhibitory interneurons that provide a source of directional inhibition onto direction selective ganglion cells. Using precise genetic manipulations to SACs, they provide direct evidence that the circuitries of ON and OFF SACs must indeed be different, as they rely on GABAergic input to very different degrees. The most exciting result of this study, however, is that SAC-SAC interactions render SAC direction selectivity more robust under more natural stimulus conditions, that is in the presence of noise. This is, to our knowledge, the first convincing demonstration of the long standing idea that different dendritic direction selectivity mechanisms supplement each other in order to render motion direction detection robust and as independent as possible from the stimulus.\n\nAll reviewers agree that this is a very nice, carefully conducted study with important results. The effects are clear and there are several controls based on paired recordings to assess the physiological impact of the knockouts.\n\nEssential revisions:\n\n1) The finding that lateral inhibition in the ON pathway is required for direction selectivity only with noisy background is intriguing, and the study would be greatly strengthened if the authors can expand on that point more. In particular, the authors are drawing this conclusion on a fairly small parameter set. Although they vary the contrast of the random checkerboards, they use only one bar velocity and one bar contrast for the primary stimulus. This is potentially dangerous since the changing checkerboard intensity is effectively changing the contrast between bar and background. This is particularly important for the recording conditions since at 32 \u00b0C (slightly below physiological temperatures) the photoreceptor responses are slower and 15 Hz noise refresh rate for the checkerboard might be equivalent to a gray background.\n\nWe recommend that the authors strengthen this particular aspect of the study. Since all the methods are in place, such additional experiments should be doable within a few weeks.\n\nA few suggestions would be:\n\nAlter the contrast and/or velocity of the stimulus and assess the impact of flickering background on tuning in WT and GABA-A \u03b12-ko.\n\nReport whether the noisy stimulus paradigm impacts the tuning in Vgat KO mice. This would greatly strengthen the argument (subsection \u201cThe role of lateral inhibition during a moving bar stimulus against a noisy background\u201d) that SAC-SAC inhibition is important for safeguarding direction selectivity in noisy environment.\n\nIn Figure 7B, control and KO showed no difference at 0% but a large difference at 3% checker intensity, so it seems like a sudden increase. It would be helpful to map that part of the curve a bit more to see the threshold at which inhibition starts playing a role.\n\n2) It would be helpful to add a bit more discussion on why lateral inhibition between starburst cells would be most effective in a noisy background.\n\n3) The reference list reads as if there was no research done on direction selectivity before the year 2000; in fact, the only reference to earlier work is a methods paper on visual stimulus software. This is particularly prominent in their Introduction. The authors should acknowledge earlier work appropriately.\n\n4) One mystery that is not completely explained is why a decrease in lateral inhibition leads to a decrease in SAC responses to centripetal motion, enhancing direction selectivity in the OFF pathway. The reason for this is not at all clear and would be helpful for the authors to postulate the reason for this.\n\n5) The figures are underselling the great quality of the data \u2013 the accessibility of the data could be much improved by cleaning up the figures and making them more consistent. Fonts are often too small, so are some of the illustrations; the use of colors is partially inconsistent, and repetitive, unnecessary text clutters the figures (e.g. Figure 6B-C,E-F). In addition, in some of the figures the use of abbreviations adds work for non-expert readers. For example, in Figure 2, \"CP\" and \"CF\" could have been spelled out the first time they are used since there is space. These terms are explained in the text, but one did have to spend time searching for them.\n\n6) Report light intensities used at the retina level. State explicitly whether the light stimulus conditions were in the photopic range.\n\n7) Report the bath temperature for the whole-cell voltage clamp recordings. Were they also at 32-33 \u00b0C?\n",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2486d7da-4a54-4736-bd03-85e7cc966506",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C1",
+      "claim": "The dendrites of starburst amacrine cells (SACs) in the mammalian retina are preferentially activated by motion in the centrifugal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The dendrites of starburst amacrine cells (SACs) in the mammalian retina are preferentially activated by motion in the centrifugal direction, a property that is important for generating direction selectivity in direction selective ganglion cells (DSGCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by citations throughout the manuscript (Euler et al., 2002).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c0b95f38-0031-4bdb-ade4-3fab9667c51f",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C2",
+      "claim": "Centrifugal direction selectivity of SAC dendrites is important for generating direction selectivity in direction selective ganglion cells (DSGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The dendrites of starburst amacrine cells (SACs) in the mammalian retina are preferentially activated by motion in the centrifugal direction, a property that is important for generating direction selectivity in direction selective ganglion cells (DSGCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental results showing that impaired SAC direction selectivity leads to impaired DSGC direction selectivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "a7392cc6-19fa-49be-9001-b9be69da7f8a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C3",
+      "claim": "Lateral inhibition onto Off SACs from non-SAC amacrine cells is required for optimal direction selectivity of the Off pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that lateral inhibition onto Off SACs from non-SAC amacrine cells is required for optimal direction selectivity of the Off pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results in Gabra2 KO mice showing reduced direction selectivity in Off SACs and Off pathway responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "3808c2a5-7e36-46bc-8940-a0b31fbe08a8",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C4",
+      "claim": "Lateral inhibition onto On SACs is not necessary for direction selectivity of the On pathway when the moving object is on a homogenous background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lateral inhibition onto On SACs is not necessary for direction selectivity of the On pathway when the moving object is on a homogenous background, but is required when the background is noisy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by calcium imaging and electrophysiology experiments showing normal On SAC direction selectivity in Gabra2 KO mice with simple moving bar stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4ae9ca76-72af-4c4d-8c13-e038cebc44a9",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C5",
+      "claim": "Lateral inhibition onto On SACs is required for direction selectivity when the background is noisy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, lateral inhibition onto On SACs is not necessary for direction selectivity of the On pathway when the moving object is on a homogenous background, but is required when the background is noisy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing impaired On pathway direction selectivity in Gabra2 KO mice when a flickering checkerboard background is used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "be6179c5-7ab6-4a98-a255-815ad5b1c358",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C6",
+      "claim": "Distinct sets of inhibitory mechanisms are recruited to generate direction selectivity under different visual conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that distinct sets of inhibitory mechanisms are recruited to generate direction selectivity under different visual conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the differential effects observed in On vs Off pathways and with different stimulus conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "02789c0d-98aa-4c6b-80e7-c4e78950ce7e",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C7",
+      "claim": "Encoding of motion direction first appears in the inner plexiform layer (IPL) of mammalian retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding of motion direction first appears in the inner plexiform layer (IPL) of mammalian retina (Barlow and Hill, 1963; Barlow and Levick, 1965; Oyster and Barlow, 1967), where positive- and negative-contrast motion stimuli are processed in anatomically distinct On and Off sublaminae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple classic citations in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "adcbf31b-fbd7-4b5c-beb0-039a53dea93a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C8",
+      "claim": "Positive- and negative-contrast motion stimuli are processed in anatomically distinct On and Off sublaminae in the IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding of motion direction first appears in the inner plexiform layer (IPL) of mammalian retina (Barlow and Hill, 1963; Barlow and Levick, 1965; Oyster and Barlow, 1967), where positive- and negative-contrast motion stimuli are processed in anatomically distinct On and Off sublaminae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in retinal neuroscience supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "7958a962-a078-4819-9354-e2524bf8ff20",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C9",
+      "claim": "On-Off DSGCs have bistratified dendritic arbors that receive directionally tuned inhibition from On and Off subtypes of SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main output neurons that signal motion direction from the retina to higher visual centers, the On-Off DSGC, has bistratified dendritic arbors that receive directionally tuned inhibition from On and Off subtypes of SACs at each of these sublamina (Figure 1A) (Famiglietti, 1983, 1992; Kittila and Massey, 1997; Taylor and Vaney, 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "b66563de-96fb-4f4f-9a4b-686e884a8e9a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C10",
+      "claim": "SACs are monostratified, axonless interneurons that release GABA and acetylcholine from varicosities at the distal ends of their dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "SACs are monostratified, axonless interneurons that release GABA and acetylcholine from varicosities at the distal ends of their dendritic arbors (Brecha et al., 1988; Famiglietti, 1991; Kosaka et al., 1988; O'Malley and Masland, 1989; Vaney and Young, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "5c0b27e4-acc3-4c3e-9b9d-c69cfe7f25a6",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C11",
+      "claim": "GABAergic inputs preferentially originate from SAC dendritic sectors that extend in the anti-preferred (null) direction of On-Off DSGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, GABAergic inputs preferentially originate from SAC dendritic sectors that extend in the anti-preferred (null) direction of On-Off DSGCs (Figure 1B, Briggman et al., 2011; Fried et al., 2002; Lee et al., 2010; Wei et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multiple citations and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "32fc9111-ad4a-47e1-b280-80341fe871d2",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C12",
+      "claim": "The dendritic sectors of SACs are electrotonically isolated and directionally tuned to motion in the centrifugal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the dendritic sectors of SACs are electrotonically isolated and directionally tuned to motion in the centrifugal direction (from soma to dendritic tips) (Figure 1B, Euler et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Euler et al., 2002 and illustrated in Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "bce0b565-0dfd-48c1-afab-651c72a7d695",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C13",
+      "claim": "Maximal GABA release from SACs to DSGCs occurs during motion in the null direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since null-direction motion for a DSGC corresponds to centrifugal motion for its presynaptic SAC dendrites, maximal GABA release from SACs to DSGCs occurs during motion in the null direction (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference from the spatial arrangement of SAC-DSGC connections and SAC directional tuning.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "f8b432a8-2fbe-4abb-8177-e121486f3297",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C14",
+      "claim": "SACs at each sublamina receive GABAergic lateral inhibition from neighboring SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with providing inhibition to DSGCs, SACs at each sublamina receive GABAergic lateral inhibition from neighboring SACs (Ding et al., 2016; Kostadinov and Sanes, 2015; Lee and Zhou, 2006) and other wide-field amacrine cells (Ding et al., 2016; Lee and Zhou, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "49fbc054-b8ea-411d-8984-0824314c49fe",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C15",
+      "claim": "SACs receive GABAergic lateral inhibition from other wide-field amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with providing inhibition to DSGCs, SACs at each sublamina receive GABAergic lateral inhibition from neighboring SACs (Ding et al., 2016; Kostadinov and Sanes, 2015; Lee and Zhou, 2006) and other wide-field amacrine cells (Ding et al., 2016; Lee and Zhou, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "67e5b7f0-9b2b-4bb0-8ffd-d9d235e6739b",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C16",
+      "claim": "Reciprocal GABAergic inhibition between SACs is abolished in Slc32a1 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not detect any evoked IPSCs in the KO group (Figure 1E, n = 9 pairs, three mice), indicating that reciprocal SAC-SAC inhibition is abolished in Slc32a1 KO mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by paired recordings showing no evoked IPSCs in Slc32a1 KO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "460879a7-61be-4173-b9b5-d855749cc017",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C17",
+      "claim": "In control mice, reciprocal inhibition between SACs was detected in 9 out of 9 pairs with mean peak amplitude 16.4 \u00b1 2.8 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected reciprocal inhibition between SACs in 9 out of 9 pairs in the control group (Figure 1D, mean peak amplitude 16.4 \u00b1 2.8 pA, five mice), consistent with previous studies (Kostadinov and Sanes, 2015; Lee and Zhou, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data from paired recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "3cdc984e-93a2-48ef-a76e-e2bdb9575db6",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C18",
+      "claim": "The leading edge of a bright bar evokes calcium transients in On SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the leading edge of the bright bar evoked calcium transients in On SACs and the trailing edge evoked responses in Off SACs (Figure 2B, and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figure 2B and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "bc5ee27b-1d90-4c16-b6fe-b1c8301b02cb",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C19",
+      "claim": "The trailing edge of a bright bar evokes calcium transients in Off SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the leading edge of the bright bar evoked calcium transients in On SACs and the trailing edge evoked responses in Off SACs (Figure 2B, and Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figure 2B and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "83003d60-2332-4c3a-b81b-69b39d4e552e",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C20",
+      "claim": "In control mice, dendritic calcium signals in both On and Off SACs show strong directional tuning to motion in the centrifugal direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, dendritic calcium signals in both On and Off SACs show strong directional tuning to motion in the centrifugal direction (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging data shown in Figures 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "0a72fe59-4469-4a19-a209-e79ad8b771ad",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C21",
+      "claim": "In Slc32a1 KO mice, centrifugal direction selectivity of On SACs is similar to that of control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In Slc32a1 KO mice, centrifugal direction selectivity (both DSI and vector sum) of On SACs is similar to that of control mice (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis of calcium imaging data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "640eb2b2-1b38-4d77-86cc-ad69d8dabcab",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C22",
+      "claim": "Off SACs in Slc32a1 KO mice exhibit a small but statistically significant increase in DSI and vector sum values.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Off SACs exhibit a small, but statistically significant, increase in DSI and vector sum values (Figure 2F) due to decreased centripetal direction response (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figure 2F and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "d6538e94-5213-4836-b468-e06b836e898e",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C23",
+      "claim": "The increased direction selectivity in Off SACs of Slc32a1 KO mice is due to decreased centripetal direction response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Off SACs exhibit a small, but statistically significant, increase in DSI and vector sum values (Figure 2F) due to decreased centripetal direction response (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by analysis of response amplitudes shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4a1a7854-35a0-46d2-aa3c-fb535c81f3b7",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C24",
+      "claim": "Adding SR95531 to Slc32a1 KO retinas reduces direction selectivity parameters for both On and Off SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the GABAA receptor antagonist SR95531 to Slc32a1 KO retinas reduces these direction selectivity parameters for both On and Off SACs (Figure 2D\u20132G), indicating a role for GABAergic inhibition of SACs by non-SAC amacrine cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological experiments shown in Figures 2D-2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c0e88fb5-805d-4cbe-af21-b5b6be78b420",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C25",
+      "claim": "GABAergic inhibition of SACs by non-SAC amacrine cells plays a role in direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding the GABAA receptor antagonist SR95531 to Slc32a1 KO retinas reduces these direction selectivity parameters for both On and Off SACs (Figure 2D\u20132G), indicating a role for GABAergic inhibition of SACs by non-SAC amacrine cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the effect of SR95531 in Slc32a1 KO mice where SAC-SAC inhibition is already absent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "0d5d10a2-90f0-44c7-a97b-5f86ec09ad92",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C26",
+      "claim": "For a simple moving bar stimulus, losing reciprocal SAC-SAC inhibition in Slc32a1 KO mice does not affect the direction selectivity of On SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that, for a simple moving bar stimulus, losing reciprocal SAC-SAC inhibition in Slc32a1 KO mice does not affect the direction selectivity of On SACs, and enhances the direction selectivity of Off SACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from the calcium imaging experiments in Slc32a1 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "0fa80116-31df-4e59-8168-5efb06ac6df0",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C27",
+      "claim": "For a simple moving bar stimulus, losing reciprocal SAC-SAC inhibition in Slc32a1 KO mice enhances the direction selectivity of Off SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that, for a simple moving bar stimulus, losing reciprocal SAC-SAC inhibition in Slc32a1 KO mice does not affect the direction selectivity of On SACs, and enhances the direction selectivity of Off SACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion drawn from the calcium imaging experiments in Slc32a1 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c400ac92-b7b2-481c-abcf-ea44b55e32e2",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C28",
+      "claim": "Gabra2 expression colocalizes with On and Off SAC dendrites in the IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Gabra2 expression colocalizes with On and Off SAC dendrites in the IPL (Brandst\u00e4tter et al., 1995) and has been shown to be important for direction selectivity (Auferkorte et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "73af97e5-775f-425a-b33d-4c2177687718",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C29",
+      "claim": "Gabra2 has been shown to be important for direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Gabra2 expression colocalizes with On and Off SAC dendrites in the IPL (Brandst\u00e4tter et al., 1995) and has been shown to be important for direction selectivity (Auferkorte et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Auferkorte et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "30a4d0be-ed19-4528-a5db-cc355855b6c3",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C30",
+      "claim": "Spontaneous IPSCs in SACs are eliminated in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm loss of functional GABAA receptors in SACs of Gabra2 KO mice, we recorded their spontaneous IPSCs and found that they are eliminated (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological recordings shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "21c85f1e-51c3-4870-8340-bd74c71e1aca",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C31",
+      "claim": "GABAergic inputs onto SACs are abolished in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, GABAergic inputs onto SACs are abolished in Gabra2 KO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the absence of spontaneous and evoked IPSCs in SACs of Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "ea58c606-dbb2-48ac-b669-7be4267fa149",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C32",
+      "claim": "In Gabra2 KO mice, the asymmetric wiring pattern of GABAergic inputs from SACs to pDSGCs remains unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, SACs from the null side provide strong GABAergic inputs onto pDSGCs while SACs from the preferred side provide weak GABAergic inputs. In Gabra2 KOs, this asymmetric wiring pattern remains unchanged (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by paired recording experiments shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "9db73bcc-e544-40c2-bd25-e1c1eddab8a5",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C33",
+      "claim": "Cholinergic transmission from SACs to pDSGCs is unaffected in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, cholinergic transmission in the KO is unaffected (Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by paired recording experiments shown in Figures 3E and 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "0f1ad023-0fb8-4050-b86e-60ba51629202",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C34",
+      "claim": "The amplitude of EPSCs in pDSGCs evoked by a bright flashing spot is similar between control and Gabra2 KO groups.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the amplitude of EPSCs in pDSGCs evoked by a bright flashing spot is similar between control and Gabra2 KO groups (Figure 3G), indicating that both cholinergic and glutamatergic synapses onto pDSGCs are unaltered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological recordings shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "a812e285-ea08-4c1e-8c32-549532ff8a97",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C35",
+      "claim": "Both cholinergic and glutamatergic synapses onto pDSGCs are unaltered in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the amplitude of EPSCs in pDSGCs evoked by a bright flashing spot is similar between control and Gabra2 KO groups (Figure 3G), indicating that both cholinergic and glutamatergic synapses onto pDSGCs are unaltered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the similar EPSC amplitudes in control and KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c934951e-5106-418a-ba1f-09db72cc4924",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C36",
+      "claim": "Off SACs in Gabra2 KO mice display a significant increase in centripetal-direction response.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Off SACs in these KOs display a significant increase in centripetal-direction response (Figure 4A and B, Video 3), resulting in reduced direction selectivity (Figure 4C\u20134F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figures 4A, 4B and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4a43ccd0-13fc-4b2a-a071-384cf895bde4",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C37",
+      "claim": "Off SACs in Gabra2 KO mice show reduced direction selectivity during the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Off SACs in these KOs display a significant increase in centripetal-direction response (Figure 4A and B, Video 3), resulting in reduced direction selectivity (Figure 4C\u20134F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantitative analysis shown in Figures 4C-4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c098954b-e705-441b-9075-9783030bc34a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C38",
+      "claim": "Direct GABAergic inputs onto Off SACs from non-SAC amacrine cells are important for centrifugal direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, direct GABAergic inputs onto Off SACs from non-SAC amacrine cells are important for centrifugal direction selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the reduced direction selectivity in Off SACs of Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "8a122422-54d8-4f36-a9a4-cef1bc52b2f4",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C39",
+      "claim": "On SACs in Gabra2 KO mice exhibit centrifugal preference similar to those of control mice during the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that On SACs in the KOs exhibit centrifugal preference similar to those of control mice (Figure 4, Video 4), suggesting that direct GABAergic inputs are not required for direction selectivity in On SACs during the simple moving bar stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by calcium imaging experiments shown in Figure 4 and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "929a6282-6b9e-405a-9ca5-c77bbcd21ff2",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C40",
+      "claim": "Direct GABAergic inputs are not required for direction selectivity in On SACs during the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we found that On SACs in the KOs exhibit centrifugal preference similar to those of control mice (Figure 4, Video 4), suggesting that direct GABAergic inputs are not required for direction selectivity in On SACs during the simple moving bar stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the normal direction selectivity of On SACs in Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "9cc7bd7f-4489-45e7-a752-9d02767e37ab",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C41",
+      "claim": "Bath application of SR95531 reduced direction selectivity of On SACs in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of SR95531 reduced direction selectivity of On SACs in KOs (Figure 4\u2014figure supplement 1), suggesting a role for presynaptic inhibition onto bipolar cells in generating direction selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "a8b882c7-c077-4b9e-a25d-38b85277bbd6",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C42",
+      "claim": "Presynaptic inhibition onto bipolar cells plays a role in generating direction selectivity in On SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bath application of SR95531 reduced direction selectivity of On SACs in KOs (Figure 4\u2014figure supplement 1), suggesting a role for presynaptic inhibition onto bipolar cells in generating direction selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the effect of SR95531 in Gabra2 KO mice where direct GABAergic inputs onto SACs are already absent.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c9085ba7-ceaa-4e5f-8a4a-9924cd5fd920",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C43",
+      "claim": "In control mice, both On and Off components of IPSCs in pDSGCs are direction selective.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, both On and Off components of IPSCs are direction selective (Figure 5A\u20135D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by voltage clamp recordings shown in Figures 5A-5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "2da86733-f198-4f6e-ba96-f6dd087c2467",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C44",
+      "claim": "In Gabra2 KO mice, the Off component of IPSCs in pDSGCs shows reduced selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gabra2 KO mice, the Off component of IPSCs shows reduced selectivity (Figure 5C and D) but the On component does not (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by voltage clamp recordings shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "2dceb88a-545e-4be9-82db-736e3d14e656",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C45",
+      "claim": "In Gabra2 KO mice, the On component of IPSCs in pDSGCs does not show reduced selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gabra2 KO mice, the Off component of IPSCs shows reduced selectivity (Figure 5C and D) but the On component does not (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by voltage clamp recordings shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "dab78cfd-e033-4280-9ea1-90fc2d7f83df",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C46",
+      "claim": "In the absence of GABAergic inputs onto SACs, the Off component of inhibitory inputs onto DSGCs displays impaired directional tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in the absence of GABAergic inputs onto SACs, the Off component of inhibitory inputs onto DSGCs displays impaired directional tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the reduced direction selectivity of Off IPSCs in Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c95ca507-99ef-402f-b02c-169e64fb270d",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C47",
+      "claim": "The Off response of pDSGC spiking activity in Gabra2 KO mice shows less direction selectivity than that in control mice during the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the reduced directional tuning of IPSCs observed in the Off component, we found that the Off response of pDSGC spiking activity in Gabra2 KO mice shows less direction selectivity than that in control mice (Figure 6A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "dddbe100-3f03-4596-9d4b-0d298b245247",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C48",
+      "claim": "The On responses of pDSGCs in Gabra2 KO mice display direction selectivity similar to that of controls during the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the On responses in KOs display direction selectivity similar to that of controls (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 6A and 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "1029b4a1-07b7-4f01-a07a-b4f4a9844ceb",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C49",
+      "claim": "Direction selectivity of the leading edge-evoked Off component in Gabra2 KOs was less than that in controls when using a dark bar against a bright background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that direction selectivity of the leading edge-evoked Off component in Gabra2 KOs was again less than that in controls (Figure 6D and F), while the trailing edge-evoked On response of KOs shows direction selectivity similar to controls (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 6D and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "ed290517-9cda-4458-80b4-660fb3533c57",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C50",
+      "claim": "The trailing edge-evoked On response of pDSGCs in Gabra2 KOs shows direction selectivity similar to controls when using a dark bar against a bright background.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that direction selectivity of the leading edge-evoked Off component in Gabra2 KOs was again less than that in controls (Figure 6D and F), while the trailing edge-evoked On response of KOs shows direction selectivity similar to controls (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 6D and 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "485b6769-4384-44a2-8e28-474ada1ede3a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C51",
+      "claim": "The Off component of pDSGC spiking activity becomes less directionally tuned in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Off component of pDSGC spiking activity becomes less directionally tuned in Gabra2 KO mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the spiking recordings with both bright and dark moving bars.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "30b7031b-431d-4a40-835d-fa581d2b5043",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C52",
+      "claim": "In control mice, the pDSGC spiking response maintains direction selectivity over a wide range of checker intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "In control mice, the pDSGC spiking response maintains direction selectivity over a wide range of checker intensities (Figure 7A\u20137C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings with flickering checkerboard backgrounds shown in Figures 7A-7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "5909301d-232f-4ed5-81a2-9ac96123079f",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C53",
+      "claim": "The direction selectivity of the Off response in Gabra2 KO mice is reduced regardless of checker intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the earlier finding that lateral inhibition is crucial for direction selectivity of the Off component (Figure 6C and E), the direction selectivity of the Off response in Gabra2 KO mice is reduced regardless of checker intensity (Figure 7A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 7A and 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "da1751ff-35c5-4ecc-8376-9a024637ee9b",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C54",
+      "claim": "Replacing the gray background with a flickering checkerboard significantly reduces the On direction selectivity in Gabra2 KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, replacing the gray background with a flickering checkerboard also significantly reduces the On direction selectivity in KO mice (Figure 7A and B), indicating a functional contribution of lateral inhibition during more complex stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figures 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "46f56954-224c-478b-a584-34d69aaf9a76",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C55",
+      "claim": "Lateral inhibition makes a functional contribution to On pathway direction selectivity during more complex stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, replacing the gray background with a flickering checkerboard also significantly reduces the On direction selectivity in KO mice (Figure 7A and B), indicating a functional contribution of lateral inhibition during more complex stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the reduced On direction selectivity in Gabra2 KO mice with flickering checkerboard backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4fc5446e-959f-4bbc-a453-a9ea00f4279c",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C56",
+      "claim": "The On component of the pDSGC's spiking response displays normal direction selectivity at all illuminance and contrast levels tested in Gabra2 KO mice using the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to the results with our original simple bar stimulus (Figure 6), the On component of the pDSGC's spiking response displays normal direction selectivity, while the Off component shows reduced direction selectivity at all illuminance and contrast levels tested (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "e23192bf-0bcb-4168-858b-34b84269e188",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C57",
+      "claim": "The Off component of the pDSGC's spiking response shows reduced direction selectivity at all illuminance and contrast levels tested in Gabra2 KO mice using the simple moving bar stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, similar to the results with our original simple bar stimulus (Figure 6), the On component of the pDSGC's spiking response displays normal direction selectivity, while the Off component shows reduced direction selectivity at all illuminance and contrast levels tested (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by loose-patch recordings shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "fa8edefa-eefe-4576-8d9e-5fab3da93053",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C58",
+      "claim": "The impaired direction selectivity seen in the On pathway in Gabra2 KO mice with the flickering checkerboard background is not due to changes in stimulus contrast or ambient illuminance.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the impaired direction selectivity seen in the On pathway in Gabra2 KO mice with the flickering checkboard background is not due to changes in stimulus contrast or ambient illuminance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments showing normal On direction selectivity at various contrast and illuminance levels with homogeneous backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "d2c59b89-5d5a-43f6-9aac-507140ebc949",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C59",
+      "claim": "The noise introduced by the flickering checkerboard is important for the functional recruitment of lateral inhibition in the On pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the noise introduced by the flickering checkerboard is important for the functional recruitment of lateral inhibition in the On pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential effects of flickering checkerboard vs. simple bar stimuli at matched contrast and illuminance levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "57b6e296-f806-4a6d-b2dd-6e07d0e4d72a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C60",
+      "claim": "The optimal direction selectivity of a dark object, encoded by the Off pathway, requires lateral inhibition from non-SAC amacrine cells onto Off SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimal direction selectivity of a dark object, encoded by the Off pathway, requires lateral inhibition from non-SAC amacrine cells onto Off SACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the experiments with Off pathway responses in Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "68aaf74c-8259-448c-b904-ed47284ba33a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C61",
+      "claim": "Direction selectivity of a bright object, encoded by the On pathway, does not require lateral inhibition onto On SACs when the moving bar stimulus lies on a homogeneous background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, direction selectivity of a bright object, encoded by the On pathway, does not require lateral inhibition onto On SACs when the moving bar stimulus lies on a homogeneous background, but does require it when the bar moves on a noisy background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the experiments with On pathway responses in Gabra2 KO mice under different stimulus conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "c2f716ef-392a-4430-a299-8f2839af7d6b",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C62",
+      "claim": "Direction selectivity of a bright object, encoded by the On pathway, requires lateral inhibition onto On SACs when the bar moves on a noisy background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, direction selectivity of a bright object, encoded by the On pathway, does not require lateral inhibition onto On SACs when the moving bar stimulus lies on a homogeneous background, but does require it when the bar moves on a noisy background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion from the experiments with On pathway responses in Gabra2 KO mice under different stimulus conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "e901edd9-ed9b-4c71-b151-4838fc3118c9",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C63",
+      "claim": "Slc32a1 KO and Gabra2 KO mice display no detectable developmental compensations in the direction selective circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that these synapses showed no detectable changes (Pei et al., 2015) and Figure 3), indicating that removing GABA release or GABA receptors from SACs does not lead to compensatory developmental changes at other synapses in the direction selective circuit.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the examination of multiple synapse types in the direction selective circuit.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "1c64b02c-dd02-40af-8227-2f2b3374b2fd",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C64",
+      "claim": "The early development of retinal direction selectivity is highly resistant to changes in neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our findings are consistent with multiple previous studies that demonstrate that the early development of retinal direction selectivity is highly resistant to changes in neural activity (Chan and Chiao, 2008; Elstrott et al., 2008; Hamby et al., 2015; Sun et al., 2011; Wei et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "22095805-dbc4-488d-8d52-9be51e0ebcd3",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C65",
+      "claim": "Visual experience plays a role in refining the clustered distribution of preferred directions of On-Off DSGCs after direction selectivity is established.",
+      "claim_type": "EXPLICIT",
+      "source": "After direction selectivity is established, visual experience has been shown to play a role in refining the clustered distribution of preferred directions of On-Off DSGCs (Bos et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bos et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "98655848-a092-4ca7-b670-3617be691641",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C66",
+      "claim": "pDSGCs in both Slc32a1 KO and Gabra2 KO lines remain tuned to the posterior direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, pDSGCs in both KO lines remain tuned to the posterior direction (Pei et al., 2015); data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "8ac5ae00-1b59-4981-9d31-feee03f04de9",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C67",
+      "claim": "Under the simple bar stimulus condition, lateral inhibition is not necessary for centrifugal direction selectivity of On SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when a bar moves against a homogeneous dark background, we found that blocking GABA release or GABA receptors of On SACs does not affect their centrifugal preference. Therefore, under this stimulus condition, lateral inhibition is not necessary for centrifugal direction selectivity of On SACs, and other mechanisms (Hausselt et al., 2007; Kim et al., 2014; Oesch and Taylor, 2010; Vlasits et al., 2016) must act to maintain it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments in Slc32a1 KO and Gabra2 KO mice with simple moving bar stimuli.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "5d5c7343-4937-4ff8-aaeb-d7fb3173646c",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C68",
+      "claim": "The centrifugal preference of Off SAC dendrites requires GABAergic inputs onto Off SACs from non-SAC amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the centrifugal preference of Off SAC dendrites requires additional GABAergic inputs onto Off SACs from non-SAC amacrine cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential effects in Slc32a1 KO vs Gabra2 KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "9bef2e87-453a-4ff6-b10a-67cedf0536b9",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C69",
+      "claim": "Wide-field amacrine cells synapse onto the proximal dendrites of Off SACs and contribute about 8% of the total number of inhibitory synapses onto Off SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are presumably the wide-field amacrine cells that synapse onto the proximal dendrites of Off SACs and contribute about 8% of the total number of inhibitory synapses onto Off SACs identified by connectomic reconstruction (Ding et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ding et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "b0b284bf-96f4-46c6-8071-86f05d098714",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C70",
+      "claim": "The direction selective circuitry is not merely mirrored in the On and Off layers of the IPL, but consists of distinct sets of mechanisms in each sublamina.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the direction selective circuitry is not merely mirrored in the On and Off layers of the IPL, but consists of distinct sets of mechanisms in each sublamina.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential effects observed in On vs Off pathways in the KO mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "cbeebc0a-7d79-4c75-9972-e40f6e62a35b",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C71",
+      "claim": "GABAergic inhibition onto SACs consists of multiple facets that are engaged differently during retinal processing of positive- and negative-contrast motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our study shows that GABAergic inhibition onto SACs consists of multiple facets that are engaged differently during retinal processing of positive- and negative-contrast motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the differential effects observed with different stimulus contrasts and backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "9877115b-c3b0-4d5b-a42e-285d0a6f8cc1",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C72",
+      "claim": "Lateral inhibition onto On SACs functions to safeguard direction selectivity against a noisy environment.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that lateral inhibition onto On SACs functions to safeguard direction selectivity against a noisy environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the differential effects of noisy vs homogeneous backgrounds.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "2b64a783-c753-41ab-8b5c-898e572bbc63",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C73",
+      "claim": "A noisy background increases activation of bipolar cells, which in turn provides stronger glutamatergic drive to the downstream amacrine cells including SACs.",
+      "claim_type": "EXPLICIT",
+      "source": "A noisy background increases activation of bipolar cells, which in turn provides stronger glutamatergic drive to the downstream amacrine cells including SACs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation proposed based on known circuit connectivity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "230c7cb7-0c38-4333-8ad3-8b56dc7d3a64",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C74",
+      "claim": "Under noisy background conditions, the lateral inhibitory network may be in a more 'primed' state to be efficiently recruited by the motion stimuli and to exert its function.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this condition, the lateral inhibitory network may be in a more 'primed' state to be efficiently recruited by the motion stimuli and to exert its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the recruitment of lateral inhibition under noisy conditions.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4fee0c9d-74c1-4abe-b3e7-dd7b60cef3de",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C75",
+      "claim": "Amacrine cells involved in lateral inhibition are less activated when bipolar cells adapt to the gray background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, amacrine cells involved in lateral inhibition are less activated when bipolar cells adapt to the gray background, and thus the moving bar alone may not be sufficient to significantly recruit lateral inhibition in the On pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain why lateral inhibition is not recruited with homogeneous backgrounds.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "0a9e5ffb-bb25-4cbc-858c-811dd6afc880",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C76",
+      "claim": "The moving bar alone may not be sufficient to significantly recruit lateral inhibition in the On pathway when bipolar cells adapt to a gray background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, amacrine cells involved in lateral inhibition are less activated when bipolar cells adapt to the gray background, and thus the moving bar alone may not be sufficient to significantly recruit lateral inhibition in the On pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "1b01ea83-603b-489a-83a2-56a199a0b962",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C77",
+      "claim": "Additional neural mechanisms are recruited when the visual stimulus more closely resembles natural viewing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings represent an intriguing example in which additional neural mechanisms are recruited when the visual stimulus more closely resembles natural viewing conditions, but simpler visual stimuli involving only the feature of interest may not reveal the functional significance of these mechanisms (David et al., 2004; Felsen and Dan, 2005; Felsen et al., 2005; Turner and Rieke, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "b35a0291-76b1-48c6-bfd0-9206397756d8",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C78",
+      "claim": "Simpler visual stimuli involving only the feature of interest may not reveal the functional significance of certain neural mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings represent an intriguing example in which additional neural mechanisms are recruited when the visual stimulus more closely resembles natural viewing conditions, but simpler visual stimuli involving only the feature of interest may not reveal the functional significance of these mechanisms (David et al., 2004; Felsen and Dan, 2005; Felsen et al., 2005; Turner and Rieke, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "3fc0f6aa-0fa5-4066-bf2f-866137069e2d",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C79",
+      "claim": "A prominent inhibitory component in the receptive field of visual cortical neurons is uniquely revealed by more complex natural stimuli but is not observed with synthetic sinusoidal gratings.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable analogy has been reported in the visual cortex: a prominent inhibitory component in the receptive field of visual cortical neurons is uniquely revealed by more complex natural stimuli but is not observed with synthetic sinusoidal gratings (David et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to David et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "f97e9206-35ba-4656-90b8-e75b5d7ee2a3",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C80",
+      "claim": "The effect of GABAA receptor antagonist SR95531 cannot be attributed to specific type(s) of GABAergic synapses since GABAA receptors are extensively expressed in amacrine cells and bipolar cells in the IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effect of the antagonist cannot be attributed to specific type(s) of GABAergic synapses since GABAA receptors are extensively expressed in amacrine cells and bipolar cells in the IPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitation of pharmacological approaches based on known receptor expression patterns.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "e04bd44a-4e84-4eb8-8d62-754e6a052117",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C81",
+      "claim": "Combining pharmacology with genetic dissection of the GABAergic circuitry allows determination of the synaptic loci that participate in direction selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we combined pharmacology with the genetic dissection of the GABAergic circuitry to determine the synaptic loci that participate in direction selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "17be48ec-9b19-4349-b3cb-77cc58d6432c",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C82",
+      "claim": "Pharmacological experiments cannot establish the ultimate effect that lateral inhibition onto SACs has on the spiking output of DSGCs because SR95531 disrupts SAC-DSGC inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological experiments cannot establish the ultimate effect that lateral inhibition onto SACs has on the spiking output of DSGCs because SR95531 disrupts SAC-DSGC inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitation of pharmacological approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "06ba8379-c5ce-49f8-a500-f6ebf2ecf6d7",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C83",
+      "claim": "By genetically eliminating GABAA receptors but not neurotransmitter release from SACs in Gabra2 KO mice, the critical synaptic connections between SACs and DSGCs are preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by genetically eliminating GABAA receptors but not neurotransmitter release from SACs in Gabra2 KO mice, we preserved the critical synaptic connections between SACs and DSGCs, and determined the role that GABAergic inputs onto SACs play in the spiking output of DSGC's.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantage of the genetic approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "ecc75526-112c-4523-83c6-5b77ece2ba77",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C84",
+      "claim": "The direction selectivity of On-Off DSGC spiking decreases when SAC centrifugal preference is reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the direction selectivity of On-Off DSGC spiking decreases when SAC centrifugal preference is reduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experiments in Gabra2 KO mice showing correlated reductions in SAC and DSGC direction selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "90115e2b-6456-4b0c-8669-6fd73e75241c",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C85",
+      "claim": "The inhibitory mechanisms contributing to the centrifugal preference of SACs are functionally relevant for determining the signals that are relayed from the retina to the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the inhibitory mechanisms contributing to the centrifugal preference of SACs that we have studied here are functionally relevant for determining the signals that are relayed from the retina to the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the final conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "a8c1ff97-3f14-4e24-8884-bbe5576e04c2",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C86",
+      "claim": "Mice of both sexes between postnatal days 18\u201335 were used for paired recording experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice of both sexes between postnatal days 18\u201335 were used for paired recording experiments, and those between postnatal days 24\u201335 were used for light response experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "3a5f47d3-cc1b-439f-b376-f97aa683cf59",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C87",
+      "claim": "Mice between postnatal days 24\u201335 were used for light response experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice of both sexes between postnatal days 18\u201335 were used for paired recording experiments, and those between postnatal days 24\u201335 were used for light response experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "1adc3a07-9345-4c76-8303-78c8af2f208d",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C88",
+      "claim": "The intensity of the moving bar was ~6.3\u00d710^4 isomerizations (R*)/rod/s, lying in the photopic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless otherwise noted (i.e., Figure 7D), the intensity of the moving bar was ~6.3\u00d7104 isomerizations (R*)/rod/s, lying in the photopic range, and the background intensity was ~1800 R*/rod/s, lying at the lower end of the photopic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the visual stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "e316f5a4-8ab4-43dd-a756-893a3847af19",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "claim_id": "C89",
+      "claim": "The background intensity was ~1800 R*/rod/s, lying at the lower end of the photopic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Unless otherwise noted (i.e., Figure 7D), the intensity of the moving bar was ~6.3\u00d7104 isomerizations (R*)/rod/s, lying in the photopic range, and the background intensity was ~1800 R*/rod/s, lying at the lower end of the photopic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the visual stimulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02cbbc87-770e-4a1a-8608-801809b585e7",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Reciprocal GABAergic inhibition between SACs is abolished in Slc32a1 KO mice. In control mice, reciprocal inhibition was detected in 9/9 pairs with mean peak amplitude 16.4 \u00b1 2.8 pA, while no evoked IPSCs were detected in Slc32a1 KO mice (n=9 pairs).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16 and C17 are directly supported by paired electrophysiological recordings (Figure 1D-E) showing complete loss of reciprocal SAC-SAC inhibition in Slc32a1 KO mice. The data include appropriate sample sizes and controls, with clear quantification of IPSC amplitudes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "7e9bc822-5851-4456-8f6c-cf83653668ce",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In Slc32a1 KO mice with simple moving bar stimuli, On SAC direction selectivity is preserved while Off SAC direction selectivity is slightly enhanced due to decreased centripetal responses. This demonstrates that reciprocal SAC-SAC inhibition is not required for On SAC direction selectivity under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 and C26 are supported by calcium imaging data (Figure 2) showing quantitative DSI and vector sum measurements. The statistical analyses are appropriate, with sufficient sample sizes (n=86 control On SACs, n=20 KO On SACs, n=35 control Off SACs, n=33 KO Off SACs). The conclusion is directly supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "d3bbe0a4-eb31-4afa-b93b-6ea24fe8ed73",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Adding GABAA receptor antagonist SR95531 to Slc32a1 KO retinas reduces direction selectivity in both On and Off SACs, indicating a role for GABAergic inhibition from non-SAC amacrine cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 are supported by pharmacological experiments (Figure 2D-G) with appropriate controls. Since SAC-SAC inhibition is already absent in Slc32a1 KO mice, the effect of SR95531 can be attributed to non-SAC sources. Sample sizes are adequate (n=14 On SACs, n=11 Off SACs).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "e29cf8f4-9638-4b64-8f17-e993d6544c51",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GABAergic inputs onto SACs are abolished in Gabra2 KO mice, as demonstrated by elimination of spontaneous IPSCs and absence of evoked IPSCs in paired recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 are supported by electrophysiological data (Figure 3B-D) showing complete loss of spontaneous IPSCs (control: 0.28 \u00b1 0.07 Hz, n=18; KO: 0.02 \u00b1 0.04 Hz, n=16, p<0.0005) and no evoked IPSCs in paired recordings (n=10 pairs). The genetic manipulation successfully eliminated functional GABAA receptors in SACs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "In Gabra2 KO mice, the asymmetric wiring pattern of GABAergic and cholinergic inputs from SACs to pDSGCs remains unchanged, and glutamatergic inputs to pDSGCs are unaltered, indicating no detectable developmental compensation in the direction selective circuit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C63 are supported by paired recording experiments (Figure 3E-G) showing preserved asymmetric GABAergic inputs (null vs preferred side), unchanged cholinergic transmission, and similar EPSC amplitudes between control and KO groups. This validates the genetic approach and rules out major developmental compensations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "6bc6673d-2d40-4323-8330-f0caccb31498",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Off SACs in Gabra2 KO mice display significantly increased centripetal-direction responses and reduced direction selectivity during simple moving bar stimuli, demonstrating that direct GABAergic inputs from non-SAC amacrine cells are required for Off SAC centrifugal direction selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 and C68 are supported by calcium imaging data (Figure 4) with adequate sample sizes (control n=35 cells, KO n=67 cells). The DSI and vector sum values show statistically significant reductions in KO mice (p<0.0005). The conclusion is strengthened by comparison with Slc32a1 KO results, which showed enhanced Off SAC selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "957c1e77-58e7-4f91-a872-4d6e742dc9ae",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "On SACs in Gabra2 KO mice exhibit normal centrifugal direction selectivity during simple moving bar stimuli, indicating that direct GABAergic inputs onto On SACs are not required for direction selectivity under these conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C67 are supported by calcium imaging data (Figure 4) showing no significant difference in DSI or vector sum between control and KO On SACs (control n=86, KO n=124, p>0.2). This is consistent with the Slc32a1 KO results and suggests other mechanisms maintain On SAC direction selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "7215ecbb-4a9f-4ada-917d-3cc2e46dddb4",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Bath application of SR95531 reduces direction selectivity of On SACs in Gabra2 KO mice, suggesting presynaptic inhibition onto bipolar cells contributes to On SAC direction selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by pharmacological data (Figure 4\u2014figure supplement 1) showing significant reduction in DSI after SR95531 application (n=13 cells, p<0.005). Since direct GABAergic inputs onto SACs are already absent in Gabra2 KO mice, the effect must be mediated by presynaptic inhibition onto bipolar cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "450ad13e-4065-4e37-9c08-452ebfd0d431",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In Gabra2 KO mice, the Off component of inhibitory inputs onto pDSGCs shows reduced direction selectivity while the On component remains normal, demonstrating that GABAergic inputs onto Off SACs are required for directionally tuned inhibition in the Off pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by voltage clamp recordings (Figure 5) with adequate sample sizes (control n=32, KO n=33). The Off component shows significant reductions in both DSI and charge transfer (p<0.01), while On component shows no significant change. This directly links Off SAC direction selectivity to DSGC inhibitory inputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The Off component of pDSGC spiking activity shows reduced direction selectivity in Gabra2 KO mice with both bright and dark moving bars, while On responses remain normal. This demonstrates that lateral inhibition onto Off SACs is functionally relevant for DSGC output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by loose-patch recordings (Figure 6) with adequate sample sizes (bright bar: control n=33, KO n=37; dark bar: control n=19, KO n=20). The Off component shows significant reductions in DSI and vector sum (p<0.005) regardless of stimulus polarity, while On responses are preserved. This validates the functional impact on retinal output.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "With flickering checkerboard backgrounds, On pathway direction selectivity is significantly reduced in Gabra2 KO mice while remaining normal with homogeneous backgrounds at matched contrast and illuminance. This demonstrates that lateral inhibition onto On SACs is recruited under noisy background conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55, C59, and C62 are supported by loose-patch recordings (Figure 7A-D) showing stimulus-dependent recruitment of lateral inhibition. The control experiments varying contrast and illuminance (Figure 7D) rule out these factors as explanations, supporting the conclusion that background noise is the critical factor. Sample sizes are adequate (n=12-18 cells).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "962a3385-853b-4200-826d-e87007c69e6a",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "At various illuminance and contrast levels with homogeneous backgrounds, On pathway direction selectivity remains normal in Gabra2 KO mice while Off pathway selectivity is consistently reduced, demonstrating that the impaired On pathway selectivity with flickering backgrounds is not due to changes in contrast or illuminance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by systematic experiments (Figure 7D) testing multiple conditions. The data show consistent Off pathway deficits and preserved On pathway function across all tested conditions, providing strong evidence that background noise rather than contrast or illuminance is the critical factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "5d40ac1d-cb16-4418-97f8-549583f038e3",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Lateral inhibition from non-SAC amacrine cells onto Off SACs is required for optimal direction selectivity of the Off pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C60 represent the main conclusion for the Off pathway, supported by converging evidence from SAC calcium imaging (C36-C38), DSGC inhibitory inputs (C44, C46), and DSGC spiking responses (C47, C49, C51) in Gabra2 KO mice. The conclusion is well-supported across multiple levels of the circuit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "1a8c7e12-b012-43f3-b110-c436dfdcf578",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Lateral inhibition onto On SACs is not necessary for direction selectivity with homogeneous backgrounds but is required with noisy backgrounds, demonstrating that distinct inhibitory mechanisms are recruited under different visual conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 and C61 represent the main conclusions for the On pathway, supported by the differential effects observed with simple bar stimuli (C39-C40) versus flickering checkerboard backgrounds (C54-C55). The systematic control experiments (C56-C58) strengthen this conclusion by ruling out alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "ede52abd-3d8d-489d-b39d-1e6da80a57c1",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The direction selective circuitry consists of distinct mechanisms in On and Off sublaminae, with GABAergic inhibition onto SACs having multiple facets engaged differently during processing of positive- and negative-contrast motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 are supported by the differential effects observed in On versus Off pathways across both Slc32a1 KO and Gabra2 KO mice. The data consistently show pathway-specific requirements for lateral inhibition, supporting the conclusion that the circuitry is not simply mirrored between sublaminae.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "28394b7a-caf6-405b-94d4-acd2b17f29f7",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors propose that lateral inhibition onto On SACs safeguards direction selectivity against noisy environments by being recruited when bipolar cells are more activated by background noise, creating a 'primed' state for the inhibitory network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C76 are mechanistic hypotheses proposed to explain the experimental observations but lack direct experimental validation. While the hypotheses are reasonable and consistent with known circuit properties, they remain speculative. Direct measurements of bipolar cell activity or amacrine cell activation states under different background conditions would be needed to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "5edb3a53-1ccb-4e6e-8a81-a7a29333f12c",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Direction selectivity of On-Off DSGC spiking decreases when SAC centrifugal preference is reduced, demonstrating that inhibitory mechanisms contributing to SAC direction selectivity are functionally relevant for signals relayed from retina to brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are supported by the correlated reductions in SAC direction selectivity (C36-C37) and DSGC spiking responses (C47, C51) in Gabra2 KO mice. This establishes the functional relevance of the circuit mechanisms studied, though the claim could be strengthened with more direct causal manipulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "4ff8ea11-f913-4440-aee7-825289fa08f6",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The early development of retinal direction selectivity is highly resistant to changes in neural activity, though visual experience can refine preferred direction clustering after direction selectivity is established. pDSGCs in both KO lines remain tuned to the posterior direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by citations to multiple previous studies and the observation that pDSGCs maintain posterior tuning in both KO lines. However, C64 relies primarily on prior work rather than new data from this study. The lack of developmental compensation (C63) provides additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "37754632-8fff-420f-b17a-d5b0fa4114bf",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The manuscript establishes the anatomical and functional organization of the retinal direction selective circuit, including SAC properties, DSGC connectivity, and sources of lateral inhibition onto SACs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C15 describe established knowledge in the field, supported by multiple citations to prior work and illustrated in Figure 1. These claims provide essential background context but do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "29dfac4d-d578-49aa-9c33-3da9e873fc66",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Additional neural mechanisms are recruited when visual stimuli more closely resemble natural viewing conditions, while simpler stimuli may not reveal the functional significance of these mechanisms. This principle has been observed in both retina and visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are supported by citations to previous studies and are consistent with the findings of this manuscript. The comparison to visual cortex (C79) provides a useful analogy. However, these represent general principles rather than specific findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "988187ac-c8d4-4299-9009-3976e69a8ff7",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The genetic approach of eliminating GABAA receptors from SACs while preserving neurotransmitter release overcomes limitations of pharmacological approaches, allowing determination of the role of GABAergic inputs onto SACs in DSGC output.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 describe the methodological advantages of the genetic approach used in this study. The logic is sound and the approach is validated by the preservation of SAC-DSGC connections (C32-C35). This represents an important methodological contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "be62b237-0c97-47c9-b499-62c9713a6624",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The manuscript describes methodological details including the response properties of On and Off SACs to moving bars, age ranges of mice used, and visual stimulus parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C86-C89 are methodological details directly stated in the manuscript. These are adequately documented and support the reproducibility of the experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    },
+    {
+      "id": "6daabb8e-03e3-41af-b406-56a8d3f03517",
+      "content_id": "d435c0e0-a08f-410b-9816-6c7aa2253a69",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Gabra2 colocalizes with SAC dendrites and is important for direction selectivity. Wide-field amacrine cells synapse onto proximal dendrites of Off SACs and contribute ~8% of inhibitory synapses onto Off SACs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C69 are supported by citations to prior work (Brandst\u00e4tter et al., 1995; Auferkorte et al., 2012; Ding et al., 2016). These provide important context for the genetic manipulation and interpretation of results, though they do not represent novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:00:01.496110Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "67e5b7f0-9b2b-4bb0-8ffd-d9d235e6739b",
+      "result_id": "02cbbc87-770e-4a1a-8608-801809b585e7"
+    },
+    {
+      "claim_id": "460879a7-61be-4173-b9b5-d855749cc017",
+      "result_id": "02cbbc87-770e-4a1a-8608-801809b585e7"
+    },
+    {
+      "claim_id": "83003d60-2332-4c3a-b81b-69b39d4e552e",
+      "result_id": "7e9bc822-5851-4456-8f6c-cf83653668ce"
+    },
+    {
+      "claim_id": "0a72fe59-4469-4a19-a209-e79ad8b771ad",
+      "result_id": "7e9bc822-5851-4456-8f6c-cf83653668ce"
+    },
+    {
+      "claim_id": "640eb2b2-1b38-4d77-86cc-ad69d8dabcab",
+      "result_id": "7e9bc822-5851-4456-8f6c-cf83653668ce"
+    },
+    {
+      "claim_id": "d6538e94-5213-4836-b468-e06b836e898e",
+      "result_id": "7e9bc822-5851-4456-8f6c-cf83653668ce"
+    },
+    {
+      "claim_id": "0d5d10a2-90f0-44c7-a97b-5f86ec09ad92",
+      "result_id": "7e9bc822-5851-4456-8f6c-cf83653668ce"
+    },
+    {
+      "claim_id": "4a1a7854-35a0-46d2-aa3c-fb535c81f3b7",
+      "result_id": "d3bbe0a4-eb31-4afa-b93b-6ea24fe8ed73"
+    },
+    {
+      "claim_id": "c0e88fb5-805d-4cbe-af21-b5b6be78b420",
+      "result_id": "d3bbe0a4-eb31-4afa-b93b-6ea24fe8ed73"
+    },
+    {
+      "claim_id": "30a4d0be-ed19-4528-a5db-cc355855b6c3",
+      "result_id": "e29cf8f4-9638-4b64-8f17-e993d6544c51"
+    },
+    {
+      "claim_id": "21c85f1e-51c3-4870-8340-bd74c71e1aca",
+      "result_id": "e29cf8f4-9638-4b64-8f17-e993d6544c51"
+    },
+    {
+      "claim_id": "ea58c606-dbb2-48ac-b669-7be4267fa149",
+      "result_id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd"
+    },
+    {
+      "claim_id": "9db73bcc-e544-40c2-bd25-e1c1eddab8a5",
+      "result_id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd"
+    },
+    {
+      "claim_id": "0f1ad023-0fb8-4050-b86e-60ba51629202",
+      "result_id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd"
+    },
+    {
+      "claim_id": "a812e285-ea08-4c1e-8c32-549532ff8a97",
+      "result_id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd"
+    },
+    {
+      "claim_id": "e901edd9-ed9b-4c71-b151-4838fc3118c9",
+      "result_id": "83bd9abf-992e-41b6-8712-82bffdb9b9bd"
+    },
+    {
+      "claim_id": "c934951e-5106-418a-ba1f-09db72cc4924",
+      "result_id": "6bc6673d-2d40-4323-8330-f0caccb31498"
+    },
+    {
+      "claim_id": "4a43ccd0-13fc-4b2a-a071-384cf895bde4",
+      "result_id": "6bc6673d-2d40-4323-8330-f0caccb31498"
+    },
+    {
+      "claim_id": "c098954b-e705-441b-9075-9783030bc34a",
+      "result_id": "6bc6673d-2d40-4323-8330-f0caccb31498"
+    },
+    {
+      "claim_id": "5d5c7343-4937-4ff8-aaeb-d7fb3173646c",
+      "result_id": "6bc6673d-2d40-4323-8330-f0caccb31498"
+    },
+    {
+      "claim_id": "8a122422-54d8-4f36-a9a4-cef1bc52b2f4",
+      "result_id": "957c1e77-58e7-4f91-a872-4d6e742dc9ae"
+    },
+    {
+      "claim_id": "929a6282-6b9e-405a-9ca5-c77bbcd21ff2",
+      "result_id": "957c1e77-58e7-4f91-a872-4d6e742dc9ae"
+    },
+    {
+      "claim_id": "8ac5ae00-1b59-4981-9d31-feee03f04de9",
+      "result_id": "957c1e77-58e7-4f91-a872-4d6e742dc9ae"
+    },
+    {
+      "claim_id": "9cc7bd7f-4489-45e7-a752-9d02767e37ab",
+      "result_id": "7215ecbb-4a9f-4ada-917d-3cc2e46dddb4"
+    },
+    {
+      "claim_id": "a8b882c7-c077-4b9e-a25d-38b85277bbd6",
+      "result_id": "7215ecbb-4a9f-4ada-917d-3cc2e46dddb4"
+    },
+    {
+      "claim_id": "c9085ba7-ceaa-4e5f-8a4a-9924cd5fd920",
+      "result_id": "450ad13e-4065-4e37-9c08-452ebfd0d431"
+    },
+    {
+      "claim_id": "2da86733-f198-4f6e-ba96-f6dd087c2467",
+      "result_id": "450ad13e-4065-4e37-9c08-452ebfd0d431"
+    },
+    {
+      "claim_id": "2dceb88a-545e-4be9-82db-736e3d14e656",
+      "result_id": "450ad13e-4065-4e37-9c08-452ebfd0d431"
+    },
+    {
+      "claim_id": "dab78cfd-e033-4280-9ea1-90fc2d7f83df",
+      "result_id": "450ad13e-4065-4e37-9c08-452ebfd0d431"
+    },
+    {
+      "claim_id": "c95ca507-99ef-402f-b02c-169e64fb270d",
+      "result_id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39"
+    },
+    {
+      "claim_id": "dddbe100-3f03-4596-9d4b-0d298b245247",
+      "result_id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39"
+    },
+    {
+      "claim_id": "1029b4a1-07b7-4f01-a07a-b4f4a9844ceb",
+      "result_id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39"
+    },
+    {
+      "claim_id": "ed290517-9cda-4458-80b4-660fb3533c57",
+      "result_id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39"
+    },
+    {
+      "claim_id": "485b6769-4384-44a2-8e28-474ada1ede3a",
+      "result_id": "b0429748-9fe4-46c5-a44c-4ecc66e7dc39"
+    },
+    {
+      "claim_id": "30b7031b-431d-4a40-835d-fa581d2b5043",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "5909301d-232f-4ed5-81a2-9ac96123079f",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "da1751ff-35c5-4ecc-8376-9a024637ee9b",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "46f56954-224c-478b-a584-34d69aaf9a76",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "d2c59b89-5d5a-43f6-9aac-507140ebc949",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "c2f716ef-392a-4430-a299-8f2839af7d6b",
+      "result_id": "16e804ab-e4ed-47df-a362-a5b5fd2e13f1"
+    },
+    {
+      "claim_id": "4fc5446e-959f-4bbc-a453-a9ea00f4279c",
+      "result_id": "962a3385-853b-4200-826d-e87007c69e6a"
+    },
+    {
+      "claim_id": "e23192bf-0bcb-4168-858b-34b84269e188",
+      "result_id": "962a3385-853b-4200-826d-e87007c69e6a"
+    },
+    {
+      "claim_id": "fa8edefa-eefe-4576-8d9e-5fab3da93053",
+      "result_id": "962a3385-853b-4200-826d-e87007c69e6a"
+    },
+    {
+      "claim_id": "a7392cc6-19fa-49be-9001-b9be69da7f8a",
+      "result_id": "5d40ac1d-cb16-4418-97f8-549583f038e3"
+    },
+    {
+      "claim_id": "57b6e296-f806-4a6d-b2dd-6e07d0e4d72a",
+      "result_id": "5d40ac1d-cb16-4418-97f8-549583f038e3"
+    },
+    {
+      "claim_id": "3808c2a5-7e36-46bc-8940-a0b31fbe08a8",
+      "result_id": "1a8c7e12-b012-43f3-b110-c436dfdcf578"
+    },
+    {
+      "claim_id": "4ae9ca76-72af-4c4d-8c13-e038cebc44a9",
+      "result_id": "1a8c7e12-b012-43f3-b110-c436dfdcf578"
+    },
+    {
+      "claim_id": "be6179c5-7ab6-4a98-a255-815ad5b1c358",
+      "result_id": "1a8c7e12-b012-43f3-b110-c436dfdcf578"
+    },
+    {
+      "claim_id": "68aaf74c-8259-448c-b904-ed47284ba33a",
+      "result_id": "1a8c7e12-b012-43f3-b110-c436dfdcf578"
+    },
+    {
+      "claim_id": "b0b284bf-96f4-46c6-8071-86f05d098714",
+      "result_id": "ede52abd-3d8d-489d-b39d-1e6da80a57c1"
+    },
+    {
+      "claim_id": "cbeebc0a-7d79-4c75-9972-e40f6e62a35b",
+      "result_id": "ede52abd-3d8d-489d-b39d-1e6da80a57c1"
+    },
+    {
+      "claim_id": "9877115b-c3b0-4d5b-a42e-285d0a6f8cc1",
+      "result_id": "28394b7a-caf6-405b-94d4-acd2b17f29f7"
+    },
+    {
+      "claim_id": "2b64a783-c753-41ab-8b5c-898e572bbc63",
+      "result_id": "28394b7a-caf6-405b-94d4-acd2b17f29f7"
+    },
+    {
+      "claim_id": "230c7cb7-0c38-4333-8ad3-8b56dc7d3a64",
+      "result_id": "28394b7a-caf6-405b-94d4-acd2b17f29f7"
+    },
+    {
+      "claim_id": "4fee0c9d-74c1-4abe-b3e7-dd7b60cef3de",
+      "result_id": "28394b7a-caf6-405b-94d4-acd2b17f29f7"
+    },
+    {
+      "claim_id": "0a9e5ffb-bb25-4cbc-858c-811dd6afc880",
+      "result_id": "28394b7a-caf6-405b-94d4-acd2b17f29f7"
+    },
+    {
+      "claim_id": "ecc75526-112c-4523-83c6-5b77ece2ba77",
+      "result_id": "5edb3a53-1ccb-4e6e-8a81-a7a29333f12c"
+    },
+    {
+      "claim_id": "90115e2b-6456-4b0c-8669-6fd73e75241c",
+      "result_id": "5edb3a53-1ccb-4e6e-8a81-a7a29333f12c"
+    },
+    {
+      "claim_id": "1c64b02c-dd02-40af-8227-2f2b3374b2fd",
+      "result_id": "4ff8ea11-f913-4440-aee7-825289fa08f6"
+    },
+    {
+      "claim_id": "22095805-dbc4-488d-8d52-9be51e0ebcd3",
+      "result_id": "4ff8ea11-f913-4440-aee7-825289fa08f6"
+    },
+    {
+      "claim_id": "98655848-a092-4ca7-b670-3617be691641",
+      "result_id": "4ff8ea11-f913-4440-aee7-825289fa08f6"
+    },
+    {
+      "claim_id": "2486d7da-4a54-4736-bd03-85e7cc966506",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "c0b95f38-0031-4bdb-ade4-3fab9667c51f",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "02789c0d-98aa-4c6b-80e7-c4e78950ce7e",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "adcbf31b-fbd7-4b5c-beb0-039a53dea93a",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "7958a962-a078-4819-9354-e2524bf8ff20",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "b66563de-96fb-4f4f-9a4b-686e884a8e9a",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "5c0b27e4-acc3-4c3e-9b9d-c69cfe7f25a6",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "32fc9111-ad4a-47e1-b280-80341fe871d2",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "bce0b565-0dfd-48c1-afab-651c72a7d695",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "f8b432a8-2fbe-4abb-8177-e121486f3297",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "49fbc054-b8ea-411d-8984-0824314c49fe",
+      "result_id": "37754632-8fff-420f-b17a-d5b0fa4114bf"
+    },
+    {
+      "claim_id": "1b01ea83-603b-489a-83a2-56a199a0b962",
+      "result_id": "29dfac4d-d578-49aa-9c33-3da9e873fc66"
+    },
+    {
+      "claim_id": "b35a0291-76b1-48c6-bfd0-9206397756d8",
+      "result_id": "29dfac4d-d578-49aa-9c33-3da9e873fc66"
+    },
+    {
+      "claim_id": "3fc0f6aa-0fa5-4066-bf2f-866137069e2d",
+      "result_id": "29dfac4d-d578-49aa-9c33-3da9e873fc66"
+    },
+    {
+      "claim_id": "f97e9206-35ba-4656-90b8-e75b5d7ee2a3",
+      "result_id": "988187ac-c8d4-4299-9009-3976e69a8ff7"
+    },
+    {
+      "claim_id": "e04bd44a-4e84-4eb8-8d62-754e6a052117",
+      "result_id": "988187ac-c8d4-4299-9009-3976e69a8ff7"
+    },
+    {
+      "claim_id": "17be48ec-9b19-4349-b3cb-77cc58d6432c",
+      "result_id": "988187ac-c8d4-4299-9009-3976e69a8ff7"
+    },
+    {
+      "claim_id": "06ba8379-c5ce-49f8-a500-f6ebf2ecf6d7",
+      "result_id": "988187ac-c8d4-4299-9009-3976e69a8ff7"
+    },
+    {
+      "claim_id": "3cdc984e-93a2-48ef-a76e-e2bdb9575db6",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "bc5ee27b-1d90-4c16-b6fe-b1c8301b02cb",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "a8c1ff97-3f14-4e24-8884-bbe5576e04c2",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "3a5f47d3-cc1b-439f-b376-f97aa683cf59",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "1adc3a07-9345-4c76-8303-78c8af2f208d",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "e316f5a4-8ab4-43dd-a756-893a3847af19",
+      "result_id": "be62b237-0c97-47c9-b499-62c9713a6624"
+    },
+    {
+      "claim_id": "c400ac92-b7b2-481c-abcf-ea44b55e32e2",
+      "result_id": "6daabb8e-03e3-41af-b406-56a8d3f03517"
+    },
+    {
+      "claim_id": "73af97e5-775f-425a-b33d-4c2177687718",
+      "result_id": "6daabb8e-03e3-41af-b406-56a8d3f03517"
+    },
+    {
+      "claim_id": "9bef2e87-453a-4ff6-b10a-67cedf0536b9",
+      "result_id": "6daabb8e-03e3-41af-b406-56a8d3f03517"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "ATAC-seq was performed on Drosophila embryos across 13 timepoints spanning NC11-NC13 with 3-minute temporal resolution, yielding 9824 accessible peaks. The experimental design included n\u22653 biological replicates per timepoint, temperature-controlled collection (21-24\u00b0C), and rigorous sample preparation protocols including specific PCR cycle optimization and sequencing depth requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific parameters (sample sizes, temperatures, PCR cycles, sequencing depth) and appropriate quality controls. The data deposition (C114) and detailed methods enable reproducibility. The experimental design is internally consistent and appropriate for the temporal resolution required.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Chromatin accessibility is established sequentially during early Drosophila development, with 31% of peaks open by NC11 (enriched for enhancers and Zelda binding) and 69% gaining accessibility during NC12-13 (enriched for promoters, insulators, and GAF binding). Statistical enrichment is highly significant (p<10^-19 for all associations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal classification is supported by quantitative data with appropriate statistical testing (Fisher's Exact Test). The enrichment patterns for transcription factors and genomic features are internally consistent and statistically robust. The sequential establishment model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Accessible peaks overlap with 19.9% of Vienna Fly Enhancers (854 enhancers), with early-opening peaks (NC11) significantly enriched for enhancers active in early embryos (p=1.1\u00d710^-7), while late-opening peaks are enriched for enhancers active later in development (p=1.13\u00d710^-7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overlap with validated enhancers provides external validation of the ATAC-seq data. The temporal correlation between chromatin accessibility and enhancer activity timing is statistically significant and biologically coherent, supporting the functional relevance of the accessibility patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C21",
+      "C22"
+    ],
+    "result": "Enhancer accessibility precedes promoter accessibility on both short (minutes) and long timescales at specific developmental loci. This temporal progression coincides with RNA Pol II recruitment at ZGA, supporting a model where promoter accessibility is the limiting factor for large-scale ZGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal precedence is demonstrated at multiple specific loci with figure support and is consistent with prior work on RNA Pol II recruitment (C21). The model is a reasonable inference from the data, though the causal relationship would require additional perturbation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Promoters for early embryonic patterning genes (gap, pair-rule, terminal, and dorsal-ventral genes) are generally accessible by NC11, while later-acting genes show variable timing, with segment polarity and head gap genes opening progressively from NC11 through NC13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The accessibility timing for specific developmental genes is consistent with established expression patterns (multiple citations in C23). The variable timing for later-acting genes is documented with specific examples and figure references, providing a comprehensive developmental timeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C50"
+    ],
+    "result": "The acquisition of chromatin accessibility at the MBT is controlled by two biological timers: N:C ratio-dependent (2630 peaks) and time-dependent (1658 peaks). Haploid embryos demonstrate that at equivalent N:C ratios, 84.8\u00b111.8% of dynamic peaks are accessible, compared to only 34.3\u00b18.1% at equivalent developmental times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The haploid/diploid comparison provides a clever experimental design to dissect the two timing mechanisms. The quantitative differences are substantial and statistically meaningful. The classification into two timing classes is well-supported by the data and consistent with prior knowledge about MBT timing (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Time-dependent loci are significantly enriched for enhancers (p=5.78\u00d710^-7) and Zelda binding (p=2.42\u00d710^-12), while N:C-ratio-dependent loci are enriched for promoters (p=5.66\u00d710^-17), insulators (p=2.42\u00d710^-4), and GAF binding (p=2.72\u00d710^-9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The enrichment patterns recapitulate the early/late dichotomy observed in diploid embryos, providing internal consistency. The statistical significance is robust for all associations. This links the timing mechanisms to specific transcription factors and genomic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Patterns of chromatin accessibility, once established, are maintained during both DNA replication and mitosis. Genome-wide, 73.5\u00b110% of peaks maintain accessibility during metaphase, indicating that mitotic condensation does not erase prior accessibility states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The maintenance of accessibility during metaphase is demonstrated genome-wide with quantitative data and specific examples. The authors appropriately address potential technical artifacts (Figure 1\u2014figure supplement 3). The conclusion about mitotic stability is well-supported, though the mechanism remains to be determined (acknowledged in C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Established open regions display cyclic accessibility patterns correlated with DNA replication, with minimum accessibility occurring 3 minutes post-mitosis (correlating with PCNA-EGFP foci). Despite transcriptional cessation and RNA Pol II eviction during metaphase, chromatin accessibility is maintained, suggesting DNA replication is the major constraint on chromatin architecture maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between accessibility cycles and DNA replication is supported by independent PCNA-EGFP measurements and MS2::MCP transcription data. The dissociation between transcription/Pol II occupancy and accessibility maintenance during metaphase is clearly demonstrated. The interpretation about replication being the major constraint is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Nucleosome-free regions (NFRs) at promoters undergo replication-associated disruption during NC11-12 but show strikingly reduced disruption during NC13. Recovery times decrease from 9 minutes in NC12 to 6 minutes in NC13, indicating a shift in the balance between replication-coupled disruption and regulatory factors maintaining accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleosome positioning analysis using NucleoATAC provides quantitative evidence for the disruption-recovery cycle. The reduced disruption in NC13 coincides with ZGA (cited). The recovery time measurements are specific and support the model of changing balance between disruption and maintenance. The interpretation is consistent with prior work (C79).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In haploid embryos, time-dependent promoters demonstrate attenuated NFR disruption one cell cycle earlier than N:C-ratio-dependent promoters, prior to S-phase remodeling. Zelda-associated promoters show increased resistance to replication-associated disruption compared to GAF-associated promoters, indicating resistance occurs independently of S-phase remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The haploid analysis provides critical evidence that resistance to replication-coupled disruption is linked to the initial establishment mechanisms (Zelda vs. GAF) rather than to S-phase remodeling per se. This is a key mechanistic insight supported by quantitative NFR measurements with statistical significance (asterisks in Figure 4B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose a model where chromatin accessibility is established in defined steps through competition between DNA replication machinery and cis-regulatory factors (Zelda, GAF). Mitotic stability of nucleosome positioning provides epigenetic inheritance, and establishment of stable states is limited by transcription factor availability, with this competition likely being a conserved mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model integrates multiple lines of evidence from the manuscript and is consistent with prior work (C86, C90, C91). While the model is inferential, it is well-reasoned and testable. The prediction about transcription factor availability (C88) follows logically from the competition model. The model provides a coherent framework for understanding the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C112",
+      "C113"
+    ],
+    "result": "Technical considerations for ATAC-seq in early embryos include high mitochondrial DNA content (50-99% of total DNA) that does not replicate until >6 hours, sequencing depth of ~10^7 reads (insufficient for footprinting but adequate for peak calling), and NucleoATAC analysis that failed to call nucleosomes for ~33% of promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors transparently acknowledge technical limitations including sequencing depth (C105), mitochondrial DNA contamination (C102-103), and incomplete nucleosome calling (C113). These are appropriately documented and do not undermine the main conclusions, which focus on peak calling and nucleosome positioning at successfully analyzed loci.",
+    "result_type": "MINOR"
+  }
+]

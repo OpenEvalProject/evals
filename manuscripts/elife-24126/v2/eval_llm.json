@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C25",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "A spontaneously arising S162R mutation in Mih1 (mih1-1) causes accelerated turnover of plasma membrane proteins through a mechanism independent of Cdc28/CDK activation. The mutation requires phosphatase activity for its phenotypic effects, and genetic experiments with swe1\u0394 demonstrate that the trafficking defects are not mediated through the canonical CDC25 target Cdc28/CDK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 establish the mutation identity through whole-genome sequencing and genetic reconstruction. C25 demonstrates phosphatase activity is required via the C320S catalytic mutant. C32, C34-C35 provide multiple lines of evidence (immunoblotting, genetic epistasis) that the mih1-1 effects are independent of Cdc28/CDK, ruling out the canonical CDC25 pathway. The convergent genetic and biochemical evidence strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "Mih1 physiologically regulates trafficking of a specific subset of plasma membrane proteins (Chs3, Mup1, Can1), with mih1-1 and mih1\u0394 alleles having opposing effects on protein processing and localization. Other plasma membrane proteins (Ftr1, Vps10, Snc1) are unaffected, indicating cargo selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide quantitative immunoblot data showing opposing effects of mih1-1 (increased processing) versus mih1\u0394 (decreased processing) on Chs3-GFP. C41-C42 extend this to Mup1 and Can1. C43 demonstrates selectivity by showing no effect on Ftr1, Vps10, or Snc1. The opposing phenotypes of gain-of-function and loss-of-function alleles (C39-C40) strongly support physiological regulation. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mih1 acts downstream of endocytosis in the endocytic recycling pathway, as demonstrated by epistasis experiments with the end4-1 endocytosis mutant that suppresses the mih1-1 vacuolar targeting phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 show that blocking endocytosis with end4-1 reduces vacuolar localization and GFP cleavage in mih1-1 cells, placing Mih1 function downstream of endocytosis. The epistasis analysis is appropriate and the conclusion (C49) logically follows from the data. This pathway ordering experiment is well-designed and the result is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Chs3 is exported from the endosome via a retromer-dependent recycling pathway, as deletion of retromer subunits (Vps26, Vps29, Vps35) or the SNX-BAR components (Vps5, Vps17) phenocopies the mih1-1 mutation with respect to CFW resistance and Chs3 vacuolar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52 demonstrate that multiple retromer component deletions confer CFW resistance similar to mih1-1. C53 shows Chs3-GFP vacuolar localization in retromer mutants. The genetic screen (C50) appropriately tested multiple sorting nexins, with only retromer components showing the phenotype. The phenocopy between mih1-1 and retromer deletions strongly supports a functional connection. C54's conclusion is well-supported by the convergent genetic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mih1 directly dephosphorylates Vps26 in vitro and in vivo. Phosphorylated Vps26 accumulates in mih1\u0394 cells, is reduced in mih1-1 cells, and purified Mih1 (but not the catalytically inactive C320S mutant) dephosphorylates immunopurified Vps26 in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C57 provide in vivo evidence from immunoprecipitation experiments showing opposite phosphorylation states in mih1\u0394 versus mih1-1. C60-C61 provide direct biochemical evidence from in vitro phosphatase assays with purified components, including the critical negative control (C320S). The convergence of in vivo and in vitro evidence, along with appropriate controls, strongly supports that Vps26 is a bona fide Mih1 substrate (C62). This establishes a direct molecular mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Phosphorylation of Vps26 loop 6 modulates retromer-mediated cargo recycling by controlling the affinity of Vps26 for cargo. Phosphomimetic mutations (glutamate substitutions) increase CFW sensitivity and cargo binding affinity (~4-fold, from KD 19 \u03bcM to 4-5 \u03bcM), while alanine substitutions decrease both, correlating binding affinity with sorting outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 provide systematic mutagenesis data showing that loop 6 deletion and phosphomimetic substitutions enhance CFW sensitivity (indicating increased recycling), while alanine substitutions have the opposite effect. C68 shows loop 6 deletion reduces Vps26 phosphorylation by ~50%. C89-C90 provide quantitative binding data showing phosphomimetic and deletion mutants have ~4-fold higher affinity for the Chs3 sorting signal. C91 appropriately correlates binding affinity with functional outcomes. The combination of genetic, cell biological, and biochemical data provides strong support for the gating mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The YYL sequence (amino acids 12-14) in the N-terminal cytoplasmic segment of Chs3 constitutes a retromer-dependent sorting signal that is directly recognized by Vps26 with a KD of 19 \u03bcM. Mutation of YYL to AAA abolishes high-affinity binding (KD >40 \u03bcM) and confers CFW resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 shows YYL\u2192AAA mutation causes CFW resistance (functional evidence). C79, C81 show GST-Chs3(1-52) captures Vps26 (and Vps35) from lysates, with Vps26 enriched. C84-C85 demonstrate direct binding of purified Vps26 to GST-Chs3(1-52) but not control GST. C86-C87 provide quantitative binding data showing wild-type has KD 19 \u03bcM while YYL\u2192AAA has KD >40 \u03bcM. The convergence of genetic, pulldown, and quantitative binding data strongly supports that YYL is a Vps26-recognized retromer sorting signal (C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "A phosphorylation-based gating mechanism controls cargo selection by yeast retromer, where loop 6 of Vps26 functions analogously to the finger loop of \u03b2-arrestin1, with phosphorylation displacing the loop to expose the cargo-binding surface and dephosphorylation by Mih1 restoring an auto-inhibited conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 propose a mechanistic model based on structural analogy to \u03b2-arrestin1, but this is explicitly speculative (evidence_type includes SPECULATION). While the functional data (phosphorylation increases binding affinity, loop deletion increases binding) are consistent with this model, the actual structural changes have not been demonstrated. The model is plausible and well-reasoned, but lacks direct structural evidence (e.g., crystal structures of phosphorylated vs. unphosphorylated Vps26, or structures bound to cargo). C96 extends this to broader implications that are also speculative. The mechanistic model requires additional structural validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C104",
+      "C111"
+    ],
+    "result": "This study establishes a functional precedent for CDC25 family phosphatases outside their canonical role in cell cycle regulation, showing that Mih1 controls trafficking of plasma membrane proteins affecting nutrient homeostasis and cell wall remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study demonstrates through multiple lines of evidence (C1, C2, C35, C62) that Mih1 regulates retromer function independently of Cdc28/CDK. C111 summarizes the broader finding that Mih1 controls trafficking of nutrient transporters and Chs3. This represents a genuinely novel function for CDC25 phosphatases beyond their established role in cell cycle control (C104). The evidence is strong and the conclusion is appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102"
+    ],
+    "result": "Multiple modes of cargo recognition exist for retromer, as Vps10 trafficking is unaffected by mih1 mutations while Chs3, Mup1, and Can1 are affected. This cargo selectivity suggests distinct retromer-containing complexes may form on endosome membranes depending on the cargo recognition mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 provides direct experimental evidence that Vps10 is unaffected by mih1 mutations, contrasting with the effects on Chs3, Mup1, and Can1. This differential effect strongly supports multiple cargo recognition modes (C98). C99 cites recent structural evidence for an alternative Snx3-Vps26 recognition mode. C100 appropriately connects this to the diversity of sorting nexins. C102 is a reasonable inference about distinct complexes, though more speculative. The core observation of cargo selectivity is solid and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Mih1 has additional targets beyond Vps26 loop 6 that affect the CFW growth response, as evidenced by epistasis between mih1\u0394 and Vps26 loop 6 alanine substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is based on epistasis data showing that mih1\u0394 is epistatic to Vps26-L6(A) substitutions, indicating Mih1 must have additional relevant targets. This is a valid inference from the genetic data. However, the nature of these additional targets is not identified, limiting the completeness of this result. The observation is sound but represents an incomplete finding that requires follow-up.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C51",
+      "C59",
+      "C63",
+      "C64",
+      "C76",
+      "C80",
+      "C82",
+      "C92",
+      "C101",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Background knowledge and established findings from prior literature about endocytosis, retromer structure and function, CDC25 phosphatases, Chs3 trafficking, and related cellular processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited and used to provide context for the current study. They are not novel findings of this work but are accurately presented. As background information, they support the interpretation of the novel results but do not constitute primary findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C106",
+      "C110",
+      "C113",
+      "C115"
+    ],
+    "result": "Speculative proposals about regulation of Mih1 by PKC, potential connections to cell wall stress responses, and possible implications for CDC25 function in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly identified as speculation (evidence_type: SPECULATION) and represent hypotheses rather than tested conclusions. C31 speculates about S162R affecting Mih1 regulation based on proximity to proposed PKC sites. C106, C110 speculate about PKC involvement and stress responses. C113, C115 speculate about implications for cancer. While these are reasonable hypotheses based on the findings, they lack experimental support in this study and should be considered discussion points rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C56",
+      "C65"
+    ],
+    "result": "Observations about mutation location, occasional detection of phosphorylated Vps35, and lack of effects on retromer protein localization/turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are valid observations but represent negative or ancillary findings. C24 notes S162R is outside the phosphatase motif (relevant context). C56 notes inconsistent detection of phospho-Vps35 (data not shown, limiting evaluation). C65 reports no effects on retromer localization/turnover (negative result, data not shown). While these observations inform the interpretation, they are supporting details rather than major findings.",
+    "result_type": "MINOR"
+  }
+]

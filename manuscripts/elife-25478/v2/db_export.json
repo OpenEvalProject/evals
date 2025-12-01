@@ -1,0 +1,2125 @@
+{
+  "submission": {
+    "id": "c64ef748-9f39-45b0-996e-685de59e48f6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:24:53.777439Z",
+    "updated_at": "2025-11-30T23:24:53.777439Z"
+  },
+  "content": [
+    {
+      "id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "submission_id": "c64ef748-9f39-45b0-996e-685de59e48f6",
+      "content_type": "manuscript",
+      "content_text": "# Structural basis of transcription arrest by coliphage HK022 Nun in an Escherichia coli RNA polymerase elongation complex\n\n## Authors\n\n- Jin Young Kang<sup>1</sup>\n- Paul Dominic B Olinares<sup>2</sup>\n- James Chen<sup>1</sup>\n- Elizabeth A Campbell<sup>1</sup>\n- Arkady Mustaev<sup>3</sup>\n- Brian T Chait<sup>2</sup>\n- Max E Gottesman<sup>6</sup>\n- Seth A Darst<sup>1</sup> ([ORCID: 0000-0002-8241-3153](https://orcid.org/0000-0002-8241-3153)) \u2020\n\n### Affiliations\n\n1. Laboratory of Molecular Biophysics The Rockefeller University New York City United States\n2. Laboratory of Mass Spectrometry and Gaseous Ion Chemistry The Rockefeller University New York City United States\n3. Public Health Research Institute Newark United States\n4. Department of Microbiology and Molecular Genetics Rutgers Biomedical and Health Sciences Newark United States\n5. Rutgers New Jersey Medical School Rutgers Biomedical and Health Sciences Newark United States\n6. Department of Microbiology and Immunology Columbia University Medical Center New York City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nColiphage HK022 Nun blocks superinfection by coliphage \u03bb by stalling RNA polymerase (RNAP) translocation specifically on \u03bb DNA. To provide a structural framework to understand how Nun blocks RNAP translocation, we determined structures of Escherichia coli RNAP ternary elongation complexes (TECs) with and without Nun by single-particle cryo-electron microscopy. Nun fits tightly into the TEC by taking advantage of gaps between the RNAP and the nucleic acids. The C-terminal segment of Nun interacts with the RNAP \u03b2 and \u03b2\u2019 subunits inside the RNAP active site cleft as well as with nearly every element of the nucleic acid scaffold, essentially crosslinking the RNAP and the nucleic acids to prevent translocation, a mechanism supported by the effects of Nun amino acid substitutions. The nature of Nun interactions inside the RNAP active site cleft suggests that RNAP clamp opening is required for Nun to establish its interactions, explaining why Nun acts on paused TECs.\n\n## Introduction\n\nBacteriophages are the most common and diverse entities in the biosphere. They represent the simplest systems that are capable of self-replication. Many of the paradigms of transcription regulation were originally discovered studying bacteriophages (Ptashne, 2005). Bacteriophage replication inside host bacterial cells involves coopting the cellular transcription machinery. Generally, this is achieved through small, phage-encoded proteins that bind to the host RNA\u00a0polymerase\u00a0(RNAP) and alter its properties. Elucidating these processes provides insight into the mechanism and regulation of bacterial transcription itself.\n\nThe 13 kDa Nun protein of coliphage HK022 has one known function, to exclude superinfection by the rival coliphage \u03bb (Robert et al., 1987) by arresting host Escherichia coli (Eco) RNAP transcription specifically on\u00a0\u03bb DNA (Hung and Gottesman, 1997; Vitiello et al., 2014). HK022 Nun competes with, and antagonizes the function of, the\u00a0\u03bb N antitermination protein (Robert et al., 1987). Like\u00a0\u03bb N, Nun achieves specificity by binding to the cis-acting boxB RNA hairpin within nut (N-utilization) RNA sequences in \u03bb nascent transcripts through an N-terminal arginine-rich motif, or ARM (Chattopadhyay et al., 1995; Faber et al., 2001; Sch\u00e4rpf et al., 2000). Unlike\u00a0\u03bb N, which suppresses transcription termination at terminators downstream of the nut sites, Nun provokes premature downstream termination (Robert et al., 1987; Robledo et al., 1991).\n\nAfter localization to specific ternary elongation complexes (TECs) containing the \u03bb nut sequence, the C-terminal segment of Nun interacts with the TEC to block RNAP translocation (forward or reverse) at intrinsic pause sites without affecting RNAP catalytic activity and without dissociating the complex (Hung and Gottesman, 1997; Vitiello et al., 2014). Nun-mediated transcription termination in vivo depends on the function of the Mfd protein, which can remove the arrested TECs from the DNA template (Washburn et al., 2003). At normal in vivo expression levels, Nun acts only on TECs containing the\u00a0\u03bb nut sequence, and Nun function is dependent on NusA, NusB, NusE, and NusG (Robert et al., 1987; Robledo et al., 1991). At high expression levels in vivo, Nun is toxic to Eco cells as it acts to arrest transcription elongation by the host RNAP nonspecifically (Uc-Mass et al., 2008). Nun alone arrests Eco TECs without\u00a0\u03bb N nut RNA elements and independent of Nus factors when present at high concentration in vitro (Hung and Gottesman, 1997).\n\nWe used single-particle cryo-electron microscopy (cryoEM) to determine structures of Eco TECs (4.1 and 4.4 \u00c5 resolution) and a Nun/TEC complex (3.7 \u00c5 resolution). The structures, combined with the biochemical effects of amino acid substitutions in Nun, explain how Nun blocks both forward and reverse translocation of the RNAP on the nucleic acids and also provides insight into why Nun acts primarily on paused TECs.\n\n## Results\n\n### Nun acts on an Eco TEC assembled from a minimized nucleic acid scaffold\n\nTo assemble Eco TECs suitable for structure determination and sensitive to Nun, we modified a 65-nucleotide (nt) nucleic acid scaffold (na-scaffold) sequence shown previously to respond to Nun in vitro (Vitiello et al., 2014) by shortening the DNA template to 29-nt (\u221215 to\u00a0+14, where +1 denotes the position corresponding to the 3\u2019-end of the pre-translocated RNA transcript) and engineering a stable, 10-nt transcription bubble (\u22129 to\u00a0+1) to accommodate a 9-nt post-translocated RNA transcript by introducing non-complementarity in the DNA non-template strand (nt-strand; Figure 1A). The final na-scaffold included a six base pair (bp) upstream DNA duplex (\u221215 to \u221210) and a 13 bp downstream DNA duplex (+2 to\u00a0+14).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-v2.jpg)\n\n**Figure 1.:** (A) Na-scaffold \u2013 Synthetic oligonucleotides used for Eco TEC reconstitution and the numbering scheme used throughout this manuscript. The DNA sequence, a shortened version of the na-scaffold used by (Vitiello et al., 2014), is derived from the T7 A1 transcription unit. The nt-strand DNA (colored yellow) contains an engineered non-complementary transcription bubble from \u22129 to\u00a0+1. TEC-9A was reconstituted using the 9A RNA (\u22129 to \u22121). TEC-20A was reconstituted using the 20A RNA (\u221220 to \u22121). (B) TEC-9A is sensitive to Nun. 32P-labeled RNAs were monitored by polyacrylamide gel electrophoresis and autoradiography. TEC-9A was assembled using 5\u2019-32P-labeled 9A RNA (lane 1). Addition of ATP, CTP, GTP, and UTP (NTPs) resulted in elongation into longer RNAs (lane 2). Nun/TEC-9A was form by the addition of a saturating concentration of Nun (lane 3). In the presence of all four NTPs, 9A RNA was extended to 10C RNA by the addition of C, but further elongation of the RNA was blocked by Nun (lane 4). The % transcription arrest efficiency was calculated as follows. transcription arrest efficiency (%)=100 x I10C/Itotal. where I10C is the integrated intensity of the band for the 10C RNA (quantitated by phosphorimagery). Itotal is the total integrated intensity over the whole lane. (C) Overall structure of X-Nun/TEC-20A. The color-coding is denoted in the legend (for the na-scaffold) or by the labels (proteins). The na-scaffold is shown in cartoon format. Eco core RNAP is shown as a transparent molecular surface. Nun is shown as CPK atoms. The downstream duplex DNA enters the RNAP from the right, the upstream duplex DNA exits the complex to the left.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Mass spectrum of TEC only (bottom) and TEC incubated with 3-fold molar excess of Nun (top) acquired under non-denaturing conditions. The full m/z range spectra are displayed in the inset panel. Samples were buffer-exchanged into 500 mM ammonium acetate, 0.01% Tween-20 prior to native MS characterization. The ion peak series assignments and the charge-state of the most intense peak for each peak series are indicated. For the TEC only sample, the dominant ion peak series corresponds to intact TEC, which is comprised of the core RNAP (\u03b12\u03b2\u03b2\u2019\u03c9 assembly), minimal scaffold ms12, and 9A RNA transcript (see Figure 2\u2014figure supplement 1 for the nucleotide sequences). Also observed is a low intensity peak series corresponding to the RNAP core complex that has lost the \u03c9 subunit (measured mass: 359,068\u00a0\u00b1\u00a014 Da). For the TEC + Nun sample, major peak series corresponding to TEC alone as well as TEC/Nun at 1:1 stoichiometry are observed. A low relative intensity ion peak series marked by (*) with an experimental mass of 409,432 Da\u00a0\u00b17 Da and corresponds to TEC with two copies of Nun (TEC:2Nun). Native MS analysis of RNAP core complex only (no DNA or RNA bound) incubated with a 3-fold molar excess Nun also showed a similar low intensity peak series for RNAP core with one copy of Nun (data not shown), indicating that there are likely low affinity, non-specific Nun interaction site(s) on the RNAP core.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) TEC-20A (lane 1) is active in transcription elongation (lane 2) but the presence of 20 \u00b5M Nun stalls elongation at 21C (lane 4). (B) SDS polyacrylamide gel of glutaraldehyde crosslinked Nun/TEC-20A (after gel filtration; stained with Coomassie blue). (C) Representative micrograph of X-Nun/TEC-20A in vitreous ice. (D) The twelve highest populated classes from 2D classification. (E) Angular distribution histogram for X-Nun/TEC-20A particle projections. (F) Gold standard FSC of X-Nun/TEC-20A. The gold standard FSC was calculated by comparing the two independently determined half-maps from RELION. The dotted line indicates the 0.143 FSC cutoff which corresponds to a nominal resolution of 3.7 \u00c5.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) SDS polyacrylamide gel of gluteraldehyde crosslinked Nun/TEC-20A (after gel filtration; stained with Coomassie blue). (B) Representative micrograph of X-TEC-20A in vitreous ice. (C) The fifteen highest populated classes from 2D classification. (D) Angular distribution histogram for X-TEC-20A particle projections. (E) Gold standard FSC of X-TEC-20A. The gold standard FSC was calculated by comparing the two independently determined half-maps from RELION. The dotted line indicates the 0.143 FSC cutoff which corresponds to a nominal resolution of 4.1 \u00c5.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Representative micrograph of TEC-20A in vitreous ice. (B) The fifteen highest populated classes from 2D classification. (C) Angular distribution histogram for TEC-20A particle projections. (D) Gold standard FSC of TEC-20A. The gold standard FSC was calculated by comparing the two independently determined half-maps from RELION. The dotted line indicates the 0.143 FSC cutoff which corresponds to a nominal resolution of 4.4 \u00c5.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) TEC-20A vs. X-TEC-20A (0.646 \u00c5 rmsd over 2750 C\u03b1 coordinates). (B) X-TEC-20A vs. X-Nun/TEC-20A (0.698 \u00c5 rmsd over 2806 C\u03b1 coordinates).\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** (A) The 3.74 \u00c5 resolution cryoEM density map of X-Nun/TEC-20A colored according to the legend at the top. The view on the right shows a cross section as indicated on the left. (B) Same views of the cryoEM density map but colored by local resolution (Cardone et al., 2013).\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig1-figsupp7-v2.jpg)\n\n**Figure 1\u2014figure supplement 7.:** (A) The 4.05 \u00c5 resolution cryoEM density map of X-TEC-20A colored according to the legend at the top. The view on the right shows a cross section as indicated on the left. (B) Same views of the cryoEM density map but colored by local resolution (Cardone et al., 2013).\n\nEco TECs assembled from purified Eco core RNAP and the na-scaffold with a 9-nt post-translocated RNA transcript (TEC-9A, since the RNA is 9-nt in length and contains A at the 3\u2019-end; Figure 1A ,\u00a09A RNA) were active in transcription elongation (Figure 1B, lane 2). Under the same conditions in the presence of a saturating concentration of Nun (20 \u00b5M), essentially 100% of the post-translocated 9A transcript was extended to 10C as expected (Vitiello et al., 2014), since this reaction did not require RNAP translocation on the template (Figure 1B, compare lanes 3 and 4). However, further extension of 10C was efficiently inhibited by Nun (Figure 1B, lane 4). We conclude that Nun alone efficiently binds the Eco TEC-9A and inhibits RNAP translocation, indicating that our reconstituted system captures Nun function.\n\n### The Nun:TEC stoichiometry is 1:1\n\nPrior crosslinking analyses left open the possibility of a Nun:TEC stoichiometry of 1:1 or 2:1 (Mustaev et al., 2016). To address this, we performed native mass spectrometry analysis of the TEC with and without addition of Nun. Two major charge-state series corresponding to experimental masses of 383,971\u00a0\u00b1\u00a08 Da and 396,705\u00a0\u00b1\u00a06 Da were observed in the mass spectrum of Nun/TEC (Figure 1\u2014figure supplement 1). The lower mass (384.0 kDa) matches the expected mass of the fully assembled TEC within the accuracy of the measurement (0.05%). Importantly, the difference between the two measured masses is 12,734 Da, which is close to the expected mass of Nun (12,732 Da), revealing that the 396.7-kDa assembly consists of TEC with one Nun bound.\n\n### Structure determination of the Eco TEC \u00b1 Nun\n\nWe used single-particle cryoEM to determine structures of Eco TECs with and without Nun. Preliminary cryoEM analyses led to the following insights: (1) TEC-9A exhibited disorder in the \u03b2-flap domain, possibly due to the absence of upstream RNA filling the RNA exit channel underneath (Lane and Darst, 2010a); (2) Density attributable to Nun was weak and fragmented, possibly due to dissociation during sample preparation, resulting in low occupancy. We used 20A RNA (Figure 1A) to assemble TEC-20A for cryoEM structure determination to fill the RNA exit channel with the upstream single-stranded RNA (ssRNA, \u221210 to \u221220; Figure 1A) and to visualize how the RNAP disrupts the RNA:DNA hybrid and directs the upstream ssRNA into the RNA exit channel (Korzheva et al., 1998; Richardson, 1975). TEC-20A, like TEC-9A, is active in elongation and Nun-mediated arrest (Figure 1\u2014figure supplement 2A). We used mild glutaraldehyde crosslinking to stabilize the Nun/TEC complex (Figure 1\u2014figure supplement 2B), resulting in high Nun occupancy.\n\nWe present three cryoEM reconstructions, glutaraldehyde crosslinked Nun/TEC-20A (X-Nun/TEC-20A; 3.7 \u00c5 overall resolution; Figure 1C, Figure 1\u2014figure supplement 2; Supplementary file 1), glutaraldehyde crosslinked TEC-20A (X-TEC-20A; 4.1 \u00c5 overall resolution; Figure 1\u2014figure supplement 3; Supplementary file 1), and TEC-20A without glutaraldehyde crosslinking (4.4 \u00c5 overall resolution; Figure 1\u2014figure supplement 4; Supplementary file 1). Superposition of all three structures by RNAP C\u03b1 positions resulted in root mean square deviations of\u00a0<0.7 \u00c5 over at least 2750 C\u03b1\u2019s (Supplementary file 2). From the structural correspondence between TEC-20A and X-TEC-20A, we conclude that the crosslinked structures are representative of the uncrosslinked solution structures (i.e. the crosslinking did not trap rare conformations; Figure 1\u2014figure supplement 5A). Moreover, most, if not all of the Nun molecules were crosslink free (note the presence of apparently stoichiometric non-crosslinked Nun evident in the sample; Figure 1\u2014figure supplement 2B), making it unlikely that the crosslinking introduced non-native contacts. From the structural correspondence between TEC-20A, X-TEC-20A, and X-Nun/TEC-20A, we conclude that the TEC accommodates Nun without global conformational changes (Figure 1\u2014figure supplement 5B). Localized conformational changes will be discussed below.\n\nThe overall resolution of the X-Nun/TEC-20A cryoEM density map was 3.7 \u00c5 (Figure 1\u2014figure supplement 2F) but local resolution calculations indicate much of the central core of the structure, including the active site, the 9 bp RNA/DNA hybrid, and much of the visible part of Nun, was determined to 3.3\u20133.6 \u00c5 resolution (Figure 1\u2014figure supplement 6). The overall resolution of the X-TEC-20A density map was 4.1 \u00c5 (Figure 1\u2014figure supplement 3F), but the central core of the structure was determined to 3.6\u20134.0 \u00c5 resolution (Figure 1\u2014figure supplement 7).\n\n### Eco TEC structure\n\nIn TEC-20A, the downstream duplex DNA enters the active site cleft and begins unwinding at\u00a0+1 (Figure 2A). The nt-strand G at\u00a0+1 binds in a G-specific pocket of the \u03b2-subunit (Figure 2\u2014figure supplement 1A) as observed in initiation complex structures (Bae et al., 2015; Zhang et al., 2012). A G at this position of the na-scaffold facilitates Nun-mediated translocation arrest (Figure 2\u2014figure supplement 1B). The t-strand passes over the bridge helix (BH) to position the\u00a0+1 t-strand base in the RNAP active site. The 9-bp RNA/DNA hybrid is in the post-translocated state, with the 3\u2019-end of the RNA at \u22121 (Figure 2A, Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig2-v2.jpg)\n\n**Figure 2.:** (A) (top) Overall view of the X-TEC-20A structure. The RNAP is shown as a transparent molecular surface, revealing the na-scaffold inside (shown in cartoon format). The boxed region is magnified below. (bottom) Magnified view of boxed region from overall view above. Most of the \u03b2 subunit has been removed to reveal the inside of the RNAP active site cleft. Most of the RNAP is shown as a molecular surface, with \u03b2 colored light cyan but with switch3 (\u03b2sw3) colored light blue, \u03b2\u2019 colored light pink but with the \u03b2\u2019zipper, \u03b2\u2019lid, and \u03b2\u2019rudder colored light magenta. The Bridge-Helix (BH) is also labeled. The \u03b2flap, which covers the RNA exit channel, is shown as a backbone worm. The na-scaffold is shown in stick format, color-coded as shown in the legend. The RNAP active-site Mg2+-ion is shown as a yellow sphere. (B) (top) Overall view of the X-Nun/TEC-20A structure. Nun is shown as a green molecular surface (bottom). Same as A\u00a0(bottom) except Nun is shown as a transparent\u00a0green molecular surface with an \u03b1-carbon backbone worm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Stereo view of the X-Nun/TEC-20A cryo-EM map (blue mesh) with the refined model superimposed (RNAP \u03b2 subunit, light cyan; Nun, green; nt-strand DNA, yellow). The view shows the binding pocket for\u00a0+1 nt-strand G and the interaction between Nun N105 and the phosphate backbone of \u22121 nt-strand. (B) C10 extension assays showing a\u00a0+\u00a01 nt-strand 5\u2019 overhang of G facilitates Nun function. (C) C10 extension assays showing a 2-nucleotide 5\u2019 nt-strand overhang facilitates Nun function.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Stereo view of the X-Nun/TEC-20A cryoEM map (blue mesh) around the RNAP active site showing the post-translocated na-scaffold.\n\nAt the upstream edge of the RNA/DNA hybrid, conserved structural features of the RNAP limit the extent of the hybrid and provide tracks to confine and direct the ssRNA and t-strand DNA away from each other (Figures 2A and 3). The \u03b2\u2019lid directly blocks the upstream extension of the RNA/DNA hybrid (Bernecky et al., 2016; Vassylyev et al., 2007; Westover et al., 2004). Conserved hydrophobic residues V253 and L255 (Figure 3\u2014figure supplement 1) interact with the face of the last upstream RNA/DNA bp at \u22129, possibly providing a \u2018greasy\u2019 surface for the bases to slip past during translocation. V253 appears to help track the upstream ssRNA towards the RNA exit channel (to the left of the\u00a0\u03b2\u2019lid in Figure 3). The RNA track is buttressed on the opposite side by the conserved \u03b2switch 3 (Figures 2A and 3; [Lane and Darst, 2010a]). Conserved R259 of the\u03b2\u2019lid (Figure 3\u2014figure supplement 1) directs the t-strand DNA away from the RNA (to the right of the \u03b2\u2019lid in Figure 3), which is buttressed on the opposite side by the \u03b2\u2019rudder (Figures 2A and 3). Conserved D256 (Figure 3\u2014figure supplement 1), at the top of the \u03b2\u2019lid, forms a salt bridge with conserved R841 descending from the \u03b2flap, which covers the top of the RNA exit channel (Figures 2A and 3). This and other interactions between the \u03b2flap and elements of the \u03b2\u2019\u00a0subunit seal off the nucleic acid tracks, preventing the upstream ssRNA and t-strand DNA from slipping over the top of the \u03b2\u2019lid and inappropriately displacing the nt-strand DNA to form an extended RNA/DNA hybrid (Naryshkina et al., 2006; Toulokhonov and Landick, 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig3-v2.jpg)\n\n**Figure 3.:** (top left) Overall view of the X-TEC-20A structure. The RNAP is shown as a transparent molecular surface, revealing the na-scaffold inside (shown in cartoon format). The boxed region is magnified below. (bottom right) Conserved structural elements of the RNAP (\u03b2sw3, light blue; \u03b2\u2019zipper, \u03b2\u2019lid, \u03b2\u2019rudder, light magenta) disrupt the RNA/DNA hybrid, direct the upstream ssRNA into the RNA exit channel, and direct the upstream t-strand DNA to form the upstream duplex DNA.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Bacterial \u2013 from an alignment of 814 bacterial RNAP sequences (Lane and Darst, 2010b). All \u2013 from an alignment of 1089 RNAP sequences (bacterial, plastid, archaeabacterial, eukaryotic RNAPs I, II, and III, and nuclear-cytoplasmic large double-stranded DNA virus RNAPs (Lane and Darst, 2010b).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Stereo view showing the 4.05 \u00c5 resolution X-TEC-20A cryoEM density map (blue mesh) with the superimposed refined model (\u03b2\u2019 subunit, pink; t-strand DNA, grey; nt-strand DNA, yellow) showing the upstream duplex DNA. (B) View of the X-TEC-20A upstream duplex DNA. (C) Stereo view showing the 3.74 \u00c5 resolution X-Nun/TEC-20A cryoEM density map (blue mesh) with the superimposed refined model (\u03b2\u2019 subunit, pink; \u03b2 subunit, light cyan; Nun, green; t-strand DNA, grey; nt-strand DNA, yellow) showing the upstream duplex DNA. (D) View of the X-Nun/TEC-20A upstream duplex DNA.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Two views of a model of the TEC containing extended upstream and downstream duplex DNA. Nun cryoEM density and Nun/TEC interactions. (A) The cryoEM density for Nun is shown (blue mesh) with the Nun molecular model (green) superimposed. Nun makes extensive interactions with the \u03b2\u2019zipper, lid, and rudder of the RNAP (extent of interactions shown schematically by pink ovals). Specific polar interactions (H-bonds and salt bridges) with RNAP residues and with the na-scaffold are denoted (dashed black lines), including the intramolecular Nun interaction between the Nun C-terminus (S109) and Nun R102. (B) Close-up view of interactions between Nun H93 and R94 with the upstream DNA duplex \u221210 bp. (C) Close-up view of interactions between Nun N97, H98, and H100 with residues of the \u03b2\u2019rudder, the RNA, and the t-strand DNA. Amino acid substitutions of the \u03b2\u2019 residues colored yellow (R322H or D264G) yield Nun-resistant RNAP in vivo (Robledo et al., 1991). (D) Close-up view of interactions between Nun Q101-S109 with residues of the RNAP \u03b2 subunit, the RNA, the nt-strand ssDNA, and the downstream duplex DNA. Amino acid substitutions of the \u03b2\u2019 residues colored yellow (D329G) yields Nun-resistant RNAP in vivo (Robledo et al., 1991).\n\nThe -10 t-strand nucleotide base pairs with the nt-strand DNA to begin the upstream DNA duplex with no single-stranded gap in the t-strand DNA (Figure 3). Density for the upstream DNA duplex is weak and noisy, indicative of mobility. The density maps and refinement results indicate that the -10 bp is distorted (Figure 3\u2014figure supplement 2A), consistent with the conclusions of (Turtola and Belogurov, 2016). Upstream of the\u00a0\u03b2\u2019lid, conserved R47 of the \u03b2\u2019zipper (Figure 3\u2014figure supplement 1) interacts with the nt-strand -12 backbone phosphate (Figure 3), helping to set the path of the upstream DNA duplex, which exits the complex without any steric clashes, subtending an angle of about 110\u00b0 with the entering downstream duplex DNA (Figure 3\u2014figure supplement 3).\n\n### Nun interacts with RNAP, DNA, and RNA\n\nAlthough the X-Nun/TEC-20A complex contained full-length Nun (Figure 1\u2014figure supplement 1), only the C-terminal 23 residues (residues 87\u2013109), which contain all known determinants for the translocation arrest activity of Nun (Henthorn and Friedman, 1996; Kim and Gottesman, 2004; Watnick et al., 2000), were visible in the structure (Figure 4A). Nun forms an extended structure that worms its way into the TEC active site cleft, interacting with the\u00a0\u03b2\u2019zipper, then squeezing through the nt-strand DNA track between the \u03b2\u2019lid and the \u03b2\u2019rudder, then between the \u03b2\u2019rudder and the RNA/DNA hybrid. The very C-terminal segment of Nun (residues 102\u2013109) binds in a pre-existing pocket next to the \u03b2\u2019rudder between the downstream duplex DNA and the RNA/DNA hybrid (Figure 2B).\n\nThe overall structure of the TEC is largely unchanged (Supplementary file 2, Figure 1\u2014figure supplement 5B), but Nun expands the narrow space between the \u03b2\u2019lid, the \u03b2\u2019rudder, and the beginning of the upstream duplex DNA by pushing the upstream DNA duplex outwards (away from the RNAP) about 3.5 \u00c5, a full bp step (Figure 3\u2014figure supplement 2). Nun residue H93 stacks on the exposed downstream face of the nt-strand DNA -10 base while R94 reaches to the major groove edge of the -10 bp, where it forms a hydrogen-bond (H-bond) with the O4 atom of the t-strand -10T (Figure 4B). This interaction is not likely to be sequence-specific since Nun R94 has the reach and flexibility to form a H-bond with a H-acceptor on the major groove edge of either the nt-strand or t-strand base. The presence of Nun in the vicinity of the upstream DNA duplex accounts for the Nun-dependent upstream toe-print (Vitiello et al., 2014).\n\nNun then squeezes between the \u03b2\u2019rudder and the RNA/DNA hybrid (Figure 4C), displacing some \u03b1-carbons of the rudder about 3 \u00c5 and altering some rudder/nucleic acid interactions. In particular, in the TEC, \u03b2\u2019R322 of the rudder makes polar interactions with the -6 and -7 RNA nucleotides, but in the Nun/TEC complex, \u03b2\u2019R322 is displaced and forms an Arg-His pair with Nun H98 (Heyda et al., 2010). Nun H98 in turn forms H-bonds with the 2\u2019-OH of the -7 and -8 RNA nucleotides (Figure 4C). We tested the validity of this observation by replacing the RNA -7A with deoxy-A (so disrupting the Nun H98/-7 RNA 2\u2019-OH interaction), which did not affect elongation in the absence of Nun in the C10 extension assay, but significantly reduced the transcription arrest efficiency of Nun (Figure 4\u2014figure supplement 1). The new position of\u00a0\u03b2\u2019R322 is stabilized by a salt bridge with \u03b2\u2019D264 at the base of the lid. This configuration is important since substitutions \u03b2\u2019R322H or \u03b2\u2019D264G lead to Nun resistance in vivo (Robledo et al., 1991). Along with H98, nearby Nun residues N97 and H100 complete a network of polar interactions with the RNA, the t-strand DNA, and the\u00a0\u03b2\u2019rudder (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0The cryoEM density for Nun is shown (blue mesh) with the Nun molecular model (green) superimposed. Nun makes extensive interactions with the \u03b2\u2019zipper, lid, and rudder of the RNAP (extent of interactions shown schematically by pink ovals). Specific polar interactions (H-bonds and salt bridges) with RNAP residues and with the na-scaffold are denoted (dashed black lines), including the intramolecular Nun interaction between the Nun C-terminus (S109) and Nun R102.\u00a0(B)\u00a0Close-up view of interactions between Nun H93 and R94 with the upstream DNA duplex -10 bp.\u00a0(C)\u00a0Close-up view of interactions between Nun N97, H98, and H100 with residues of the \u03b2\u2019rudder, the RNA, and the t-strand DNA. Amino acid substitutions of the \u03b2\u2019 residues colored yellow (R322H or D264G) yield Nun-resistant RNAP in vivo (Robledo et al., 1991). (D) Close-up view of interactions between Nun Q101-S109 with residues of the RNAP \u03b2' subunit, the RNA, the nt-strand ssDNA, and the downstream duplex DNA. Amino acid substitutions of the \u03b2' residues colored yellow (D329G) yields Nun-resistant RNAP in vivo (Robledo et al., 1991).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig4-figsupp1-v2.jpg)\n\nThe negatively-charged C-terminal carboxylate of Nun (S109) forms a salt bridge with Nun R102, resulting in an 8-residue non-covalent circle (Figure 4A). The substitution Nun R102A significantly reduced termination efficiency (Kim and Gottesman, 2004). Nun residues from N101 to the C-terminus form a network of polar interactions with the\u00a0\u03b2-subunit, the RNA (-6), the downstream duplex DNA (+4t,\u00a0+5t), and the nt-strand ssDNA (-1nt) (Figure 4D). The latter interaction (Figure 2\u2014figure supplement 1A) explains why a two nucleotide nt-strand non-complementary 5\u2019-overhang at the downstream fork of the transcription bubble is necessary for optimal Nun function (Figure 2\u2014figure supplement 1C). In addition to RNAP substitutions \u03b2\u2019R322H and D264G, the substitution \u03b2\u2019D329G leads to Nun resistance (Robledo et al., 1991).\u03b2\u2019D329 forms part of a pocket in the RNAP structure that accommodates Nun W108 (Figure 4D). The structure is consistent with previous findings that the C-terminus of Nun is within 15\u201320 \u00c5 of the downstream duplex DNA (Watnick and Gottesman, 1999). The location of the Nun C-terminus within the vicinity of the downstream duplex DNA, combined with the finding that normal Nun activity required an aromatic residue at Nun position 108 led to the proposal that Nun-mediated translocation arrest was facilitated by the intercalation of Nun W108 into the downstream DNA (Watnick and Gottesman, 1999) but this is not observed in the structure.\n\nA segment of Nun encompassing residues 44 to the C-terminus (residue 109) was found to crosslink to both the 5\u2019- and 3\u2019-ends of RNA transcripts (Mustaev et al., 2016). Nun 44-109 crosslinks to the RNA 5\u2019-end when the crosslinking moiety is placed at the -9 to -14 positions. These positions would not be able to crosslink to the Nun C-terminus (residues 87-109) visible in our structure, but Nun residues 44\u201386 exit the TEC near the RNA exit channel (Figure 1C) and could easily reach the upstream RNA, assuming some breathing/opening of the RNA exit channel.\n\nNun crosslinks to the RNA 3-\u2018end in a 2-nucleotide backtracked complex (Mustaev et al., 2016). Structures of both bacterial and eukaryotic TECs backtracked by 1-nucleotide place the backtracked nucleotide (+2 position) in the so-called \u2018P\u2019-site (Sekine et al., 2015; Wang et al., 2009). A eukaryotic 2-nucleotide backtracked complex shows the first backtracked nucleotide (+2) again in the P-site, while the second (3\u2019) backtracked nucleotide (+3) is disordered, consistent with molecular dynamics simulations showing the\u00a0+3 nucleotide sampling a large range of conformations (Wang et al., 2009). Thus, although the closest atom of Nun to the RNAP active site Mg2+ is 27 \u00c5 away, the flexible nature of the 2-nucleotide backtracked complex would allow the crosslinking moiety on the base of the RNA 3\u2019-nucleotide to reach Nun.\n\n### Nun mutants retain significant translocation arrest activity\n\nBased on our structural analyses, we generated single (and one double) amino acid substitutions in Nun and tested their activity in vitro. We substituted residues that appeared to make important interactions, including H93A and R94A (Figure 4B), N97D, H98A, and H100A (Figure 4C), and R102A, R102K, K106A, K107A, K106A/K107A, and W108A (Figure 4D). Nun N103 does not appear to make important interactions in the structure (Figure 4A), so the N103A substitution served as a control. The Nun substitutions that we tested here included all of the Nun mutants that have been identified as abrogating Nun activity in vivo (Kim and Gottesman, 2004; Watnick and Gottesman, 1999; Watnick et al., 2000). We determined the \u2018fractional Nun activity\u2019 for each mutant (at 20 \u00b5M Nun) with the in vitro C10 extension assay (Figure 1B) and normalized the results; 0 Nun activity corresponds to no Nun, 1.0 corresponds to the activity of wt-Nun at a saturating concentration (20 \u00b5M; Figure 5A). The Nun mutants displayed a wide range of activities (Figure 5\u2014figure supplement 1), from 21\u00a0\u00b1\u00a07(SEM)% for H98A to 96 \u00b1 4% for N103A (essentially wild-type, consistent with our structural analysis).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig5-v2.jpg)\n\n**Figure 5.:** (A) Semi-log plot showing fractional normalized Nun activity vs. Nun concentration for wt-Nun or Nun substitutions (color-coded as shown in the legend). (B) Table listing the apparent dissociation constant (Kd) and maximum activity (as a fraction of wt-Nun maximum activity) determined from fits of the titration curves shown in (A).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig5-figsupp1-v2.jpg)\n\nFor the functional mechanism of a transcription factor such as Nun, we can consider two extremes: (1) Binding of the factor to RNAP and the activity of the factor in modulating RNAP function may be inseparable, or (2) binding and activity may be uncoupled. Many examples of the latter case exist; for example, single amino acid substitutions of GreA or GreB severely abrogate their activity in stimulating endonucleolytic transcript cleavage but do not have a noticeable effect on RNAP binding (Laptenko et al., 2003; Opalka et al., 2003; Rutherford et al., 2007; Sosunova et al., 2003). To assess the differential effects of the Nun amino acid substitutions on RNAP binding vs. activity in stalling translocation, we used the C10 extension assay to measure the effect of the Nun mutants as a function of their concentration. The resulting isotherms (Figure 5A) yielded the effective dissociation constant (Kd) and the fractional Nun activity at saturation (normalized with respect to wt-Nun; Figure 5B). The effective Kd reveals the effect of the particular Nun substitution on RNAP binding, while the maximum activity reflects the effect of the substitution on Nun activity.\n\nThe binding and activity of the Nun mutants are not strictly correlated (Figure 5B), indicating that some substitutions have a strong effect on binding but not on activity (R94A), while others affect binding to a lesser degree but have a stronger effect on activity (H98A). Nevertheless, each of the tested mutants show significant translocation arrest activity (59% to 80% of wt-Nun) when assayed at saturating concentration despite widely varying effects on RNAP binding (Figure 5B).\n\n## Discussion\n\n### Nun takes advantage of TEC structural requirements dictated by translocation\n\nEfficient transcription elongation requires that the na-scaffold slide freely with respect to the RNAP at each step of translocation in a nucleic acid sequence-independent manner. As a consequence, the RNAP does not form tight, cognate interactions with most of the na-scaffold in the TEC (Figure 6). Nun establishes its interactions with the TEC by taking advantage of the loose RNAP/na-scaffold interactions, insinuating itself into the TEC in pre-existing gaps between the RNAP and the upstream duplex DNA (Figure 6A), the t-strand DNA connecting the upstream duplex DNA with the RNA/DNA hybrid (Figure 6B), and in a pocket next to the rudder between the RNA/DNA hybrid and the downstream duplex DNA (Figure 6C). The Nun/TEC interactions induce some small, localized conformational changes (such as in the upstream duplex, Figure 3\u2014figure supplement 2, or in the rudder, Figures 2 and 6C), but do not cause large-scale changes in the TEC (Supplementary file 2; Figure 1\u2014figure supplement 5B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig6-v2.jpg)\n\n**Figure 6.:** Views of the X-TEC-20A (left column) and X-Nun/TEC-20A (right column) structures. The RNAP is shown as a molecular surface (color coding shown in the legend below). Nucleic acids are shown in CPK format. Nun is shown as a backbone worm. (A) Nun enters the complex through a gap between the zipper and the upstream duplex DNA. (B) Nun takes advantage of a gap between the lid, the rudder, and the t-strand DNA. (C) The C-terminal part of Nun binds in a pre-existing pocket next to the RNA/DNA hybrid and the rudder.\n\n### Mechanism of Nun translocation arrest\n\nOur results reveal that the functionally critical C-terminal segment of Nun binds to the TEC in an extended conformation, interacting with conserved, functionally important elements of the RNAP (\u03b2\u2019zipper, \u03b2\u2019lid, \u03b2\u2019rudder) as well as with the \u03b2 subunit (Figure 4). At the same time, Nun interacts with nearly every element of the na-scaffold: the upstream duplex DNA, the RNA/DNA hybrid, the single-stranded nt-strand DNA within the transcription bubble, and the downstream duplex DNA (Figures 4 and 7). With this network of Nun/RNAP and Nun/na-scaffold interactions, Nun essentially mediates extensive crosslinking between the RNAP and the na-scaffold, preventing sliding of the na-scaffold with respect to the RNAP (i.e. preventing translocation). Note that this mechanism explains how Nun arrests both forward and reverse translocation (Vitiello et al., 2014). The finding that Nun establishes multiple interactions with both the RNAP and na-scaffold explains how single amino acid substitutions in Nun still retain significant translocation arrest function (Figure 5) since the disruption of one or a few interactions still leaves many other interactions that the TEC must overcome in order to translocate (Figure 7). Nun does not contain a functional center of critical amino acids for its translocation arrest activity; all of the Nun/TEC interactions contribute to its function.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25478/elife-25478-fig7-v2.jpg)\n\n**Figure 7.:** (A) View inside the RNAP active-site cleft where most of the \u03b2 subunit has been removed (similar to Figure 2). The RNAP (\u03b2, light cyan; \u03b2\u2019, light pink except the \u03b2\u2019zipper, \u03b2\u2019lid, and \u03b2\u2019rudder are light magenta), Nun (green), and the na-scaffold (ntDNA, yellow; tDNA, dark grey; RNA, red) are shown in cartoon format except residues or nucleotides that interact with Nun are shown as CPK atoms. The RNAP active-site Mg2+-ion is shown as a yellow sphere. (B) Schematic illustrating in vivo action of Nun in the context of a \u03bb nut TEC (carrying boxA and boxB RNA sequences) and Nus factors. The X-Nun/TEC structure determined here is contained within the dashed box (RNAP core, DNA template, Nun C-terminal segment). The N-terminal segment of Nun extends from the TEC, where the \u03b1-helical Nun-ARM interacts with the \u03bb nut boxB RNA hairpin (Chattopadhyay et al., 1995; Faber et al., 2001), localizing Nun specifically to \u03bb transcripts. Further upstream, the \u03bb nut boxA RNA sequence interacts with NusB/E, and together with NusA/G stabilize the Nun/TEC complex and stimulate translocation arrest (Hung and Gottesman, 1995).\n\nIn phage HK022 lysogens, the concentration of Nun ([Nun]) in the Eco cell is likely to be only\u00a0~100 nM (King et al., 2000). The Kd of wt-Nun for a non-specific TEC (i.e. not containing \u03bb nut boxB RNA) is\u00a0~300 nM (Figure 5), while the Kd for a TEC containing a boxB RNA hairpin would be expected to be lower. Nun function is stimulated in vivo and in vitro by NusA, NusB, NusE, and NusG, but only in the presence of \u03bb nut boxA RNA (Hung and Gottesman, 1995). The mechanism of Nus factor stimulation of Nun activity is unknown, but the Nus factors likely stabilize Nun binding to \u03bb nut TECs. These observations indicate that [Nun] in phage HK022 lysogens is precisely tuned to allow Nun to target \u03bb nut TECs but not cause general translocation arrest throughout the Eco genome (Figure 7B).\n\nNun mutants H98A, K106A/K107A, and W108A have been shown previously to be significantly (K106A/K107A) or totally (H98A, W108A) defective in Nun function both in vivo and in vitro (Kim and Gottesman, 2004; Watnick and Gottesman, 1999; Watnick et al., 2000). These results appear to contradict our results that, at saturating [Nun], these mutants exhibit significant translocation arrest activity (H98A, 59%; W108A, 66%; K106A/K107A,\u00a0>70%; Figure 5, Figure 5\u2014figure supplement 1). However, in previous studies, In vivo function was assessed using a \u03bb pL-nutL-lacZ chromosomal transcriptional fusion (Wilson et al., 1997) with very low expression levels of the Nun mutants. In vitro transcription reactions included between 50\u2013200 nM Nun mutants. In our study, significant activity of the Nun mutants was observed at saturating [Nun]\u00a0>250 \u00b5M (Figure 5). Thus, the previous studies assessed mutant Nun activity at [Nun] too low to overcome the binding defects introduced by the mutations.\n\n### Nun and transcriptional pausing\n\nIn the final state of the Nun/TEC complex determined here (Figure 1C), Nun forms extensive interactions with both the RNAP clamp domain, the na-scaffold, as well as with elements of the \u03b2 subunit apposing the clamp (Figure 7), tightening and immobilizing normally mobile elements of the TEC, suggesting why the X-Nun/TEC structure was determined to higher resolution than either the X-TEC or the TEC structures (Figure 1\u2014figure supplements 2\u20134). Nun fits tightly into the TEC without causing major conformational changes in the TEC by taking advantage of pre-existing gaps between the RNAP and the na-scaffold (Figure 6), but examination of the structure suggests that it would not be possible for Nun to establish itself in this binding mode with the clamp domain tightly closed; clamp opening appears to be required for Nun binding.\n\nThere is no clear consensus sequence for Nun-mediated translocation arrest, consistent with the Nun/TEC structure. Nevertheless, Nun does not arrest translocation at random sites on the DNA; Nun preferentially stalls translocation at pre-existing intrinsic transcription pause sites (Hung and Gottesman, 1995). Structural (Weixlbaumer et al., 2013) and functional (Hein et al., 2014) analysis of paused transcription complexes suggests that pausing is linked with a propensity for clamp opening. This provides an explanation for the action of Nun at intrinsic pause sites, since clamp opening is likely required for Nun entry. In addition to clamp opening, TEC pausing provides Nun with a sufficiently long-lived stationary target to establish its extensive network of interactions, which is likely a slow process (Hung and Gottesman, 1995).\n\n## Materials and methods\n\n### Protein expression and purification\n\nEco RNAP lacking the \u03b1CTDs was prepared as described previously (Twist et al., 2011). Glycerol was added to the purified RNAP to 15% (v/v), and the sample was aliquoted and flash-frozen in liquid nitrogen. The aliquots were stored at -80\u00b0C until use.\n\nFull-length HK022 Nun was cloned into the pET21d vector (Novagen/EMD Millipore, Billerica, MA) without any tag, and transformed into the Eco BL21-AI (arabinose inducible) strain. HK022 Nun was expressed by autoinduction system due to its high toxicity to cells (Studier, 2005). The transformed cells were inoculated into non-inducing media (MDAG-135 containing 100 \u00b5g/ml ampicillin) and grown overnight. The overnight culture was added to inducing media (ZYM-5052\u00a0+\u00a00.05% arabinose+100 \u00b5g/ml ampicillin) at a ratio of 1:500 and grown for 16 hr at 37\u00b0C. The harvested cells were resuspended in 50 mM Na-phosphate, pH 7.9, 200 mM NaCl, 1 mM DTT, Complete Protease Inhibitor (Roche, Branford, CT) buffer, and lysed in a continuous flow French Press (Avestin, Ottawa, Ontario, Canada). The lysate was centrifuged and the supernatant was loaded onto a HiTrapSP column (GE Healthcare Life Sciences, Pittsburgh, PA). The protein was washed with 50 mM Na-phosphate, pH 7.9, 200 mM NaCl, 1 mM DTT, and eluted with a NaCl gradient to 1 M. The eluted protein was diluted with 50 mM Na-phosphate, pH 7.9, to lower the NaCl concentration to 0.1 M and then loaded onto a MonoS column (GE Healthcare Life Sciences). The protein was eluted with a salt gradient, and the eluted protein was purified by gel filtration chromatography on a HiLoad Superdex75 column (GE Healthcare Life Sciences) with TGE buffer [10 mM Tris-HCl, pH 8, 0.1 mM EDTA, 5% (v/v) glycerol] containing 500 mM NaCl and 1 mM DTT. Nun single or double mutants were generated by overlap or inverse PCR and purified using the same procedure as wild-type Nun. Each Nun mutant was confirmed by mass spectrometry. In the case of Nun K106A/K107A, mass spectrometry showed that the initial sample was\u00a0>80% T-Nun (Nun with 13 C-terminal amino acids proteolytically removed; (Watnick and Gottesman, 1998). T-Nun elutes earlier on the MonoS column, so fractions from the tail-end of the Nun-K106A/K107A MonoS elution peak were analyzed by mass spectrometry and found to be\u00a0~50% T-Nun. T-Nun is totally inactive and does not bind RNAP (Watnick and Gottesman, 1998), so does not compete with Nun binding, so for the Nun-K106A/K107A assays (Figure 5\u2014figure supplement 1) we adjusted the concentration to compensate. The finding that Nun-K106A/K107A is highly susceptible to in vivo protease cleavage to yield inactive T-Nun may explain the previous result that Nun-K106A/K107A was inactive in vivo (Kim and Gottesman, 2004).\n\n### Nucleic acid preparation\n\nSynthetic DNA oligonucleotides were obtained from Integrated DNA Technologies (Coralville, IA), RNA oligonucleotides from GE Healthcare Dharmacon (Lafayette, CO). The nucleic acids were dissolved in RNase-free water (Ambion/ThermoFisher Scientific, Waltham, MA) at 1 mM concentration. To assemble the TEC, template DNA and RNA were mixed at 1:1 ratio, annealed by incubating at 95\u00b0C for 2 min, 75\u00b0C for 2 min, 45\u00b0C for 5 min, and then decreasing the temperature by 2\u00b0C for 2 min until reaching 25\u00b0C. The annealed template DNA:RNA hybrid was stored at - 20\u00b0C before use.\n\n### TEC preparation for CryoEM\n\nPurified Eco RNAP was buffer-exchanged over the Superose 6 INCREASE (GE Healthcare Life Sciences) column into 20 mM Tris-HCl, pH 8.0, 150 mM KCl, 5 mM MgCl2, 5 mM DTT. The eluted protein was mixed with template DNA:RNA hybrid at a molar raio of 1:1.3 and incubated for 15 min at room temperature. Non-template DNA was added and incubated for 10 min. The complex was concentrated by centrifugal filtration (VivaProducts, Littleton, MA) to 3 mg/ml RNAP concentration before grid preparation.\n\n### Glutaraldehyde Cross-linked TEC preparation for CryoEM\n\nPurified Eco RNAP was buffer-exchanged over the Superose 6 INCREASE (GE Healthcare Life Sciences) column into 20 mM HEPES, pH 7.5, 150 mM KCl, 5 mM MgCl2, 5 mM DTT. The eluted protein was mixed with template DNA:RNA hybrid at a molar raio of 1:1.3 and incubated for 15 min at room temperature. Non-template DNA was added and incubated for 10 min. The concentration of TEC was adjusted to\u00a0~0.5 \u00b5M then glutaraldehyde was added to a final concentration of 0.005% (w/v). The mixture was incubated for 7 min at room temperature and the crosslinking was quenched by adding Tris-HCl, pH 8.0, to 0.1 M. The mixture was centrifuged for 10 min at 4\u00b0C, concentrated by cetrifugal filtration, and purified by gel filtration on the Superose6 INCREASE column (GE Healthcare Life Sciences) equilibrated in 20 mM Tris-HCl, pH 8.0, 150 mM KCl, 5 mM MgCl2, 5 mM DTT. The eluted complex was concentrated to 3 mg/ml by centrifugal filtration (VivaProducts) before grid preparation.\n\n### Glutaraldehyde Cross-linked Nun/TEC Preparation for CryoEM\n\nPurified Eco RNAP and HK022 Nun were buffer-exchanged over the Superose 6 INCREASE column (GE Healthcare Life Sciences) equilibrated in 20 mM HEPES, pH 7.5, 150 mM KCl, 5 mM MgCl2, 5 mM DTT. The TEC was assembled as before, and HK022 Nun was added at a concentration of\u00a0>15 \u00b5M. Final steps of crosslinking and purification were the same as those for the TEC sample preparation.\n\n### CryoEM grid preparation\n\nBefore freezing, 8 mM CHAPSO was added to the samples. C-flat (Protochips, Morrisville, NC) CF-1.2/1.3 400 mesh copper grids or 300 mesh gold grids were glow-charged for 15 s prior to the application of 3.5 \u00b5l of the complex sample (2.0\u20133.0 mg/ml protein concentration), and plunge-freezing in liquid ethane using a Vitrobot mark IV (FEI, Hillsboro, OR) with 100% chamber humidity at 22\u00b0C.\n\n### CryoEM data acquisition and processing\n\nThe grids were imaged using a 300 keV Titan Krios (FEI) equipped with a K2 Summit direct electron detector (Gatan, Pleasanton, CA). Images were recorded with Serial EM (Mastronarde, 2005) in super-resolution counting mode with a super resolution pixel size of 0.65 \u00c5 and a defocus range of 0.8 to 2.6 \u00b5m. Data were collected with a dose of 8 to 10 electrons/physical pixel/s (1.3 \u00c5 pixel size at the specimen). Images were recorded with a 15 s exposure and 0.3 s subframes (50 total frames) to give a total dose of 71 to 89 electrons/\u00c52.\n\nDose fractionated subframes were 2 \u00d7 2 binned (giving a pixel size of 1.3 \u00c5), aligned and summed using Unblur (Grant and Grigorieff, 2015). The contrast transfer function was estimated for each summed image using CTFFIND4 (Rohou and Grigorieff, 2015). From the summed images, approximately 10,000 particles were manually picked and subjected to 2D classification in RELION (Scheres, 2012). Projection averages of the most populated classes were used as templates for automated picking in RELION. Autopicked particles were manually inspected, then subjected to 2D classification in RELION specifying 100 classes. Poorly populated classes were removed, resulting in datasets of 470,000 particles (X-Nun/TEC), 281,000 particles (X-TEC), and 305,000 particles (TEC). These particles were individually aligned using direct-detector-align_lmbfgs software (Rubinstein and Brubaker, 2015). Particles were 3D autorefined in RELION using a model of Eco core RNAP (PDB ID 4LJZ with\u25b31.1\u03c370 removed; Bae et al., 2013) low-pass filtered to 60 \u00c5 resolution using EMAN2 (Tang et al., 2007) as an initial 3D template. With this initial model, 3D classifications were performed without alignment with a soft mask excluding flexible regions of the complex for more robust classification. The soft mask excluded the\u00a0\u03b1II subunit, \u03b2i4, \u03b2i9, the \u03b2flap, \u03b2\u2019i6, the \u03b2\u2019jaw, and single-stranded nucleic acids. Among the 3D classes, the best-resolved class was 3D autorefined without the mask, and post-processed in RELION. Local resolution caculations were performed using blocres (Cardone et al., 2013).\n\n### Model building and refinement\n\nTo build initial models, Eco core enzyme (PDB ID 4LJZ with \u25b31.1\u03c370 removed; Bae et al., 2013), DNA:RNA hybrid and downstream duplex DNA (PDB ID 2O5J; Vassylyev et al., 2007), and nt-strand single-stranded DNA (PDB ID 4XLN; Bae et al., 2015) were fit into the electron density maps using Chimera (Pettersen et al., 2004). These initial models were real-space refined using Phenix (Adams et al., 2010). In the real-space refinement, domains in the core and nucleic acids were rigid-body refined, then subsequently refined with secondary structure restraints. Single-stranded RNA and Nun were built de novo in Coot, and real-space refined with the previously refined model.\n\n### Transcription assays\n\nTranscription assays were done as described previously (Vitiello et al., 2014). Briefly, synthetic RNA was 5\u2019-labeled with 32P-\u03b3-ATP using T4 polynucleotide kinase (NEB) and annealed with t-strand DNA as before. His-tagged Eco RNAP core was added to the radio-labeled DNA:RNA hybrid, incubated for 15 min at room temperature, and nt-strand DNA was added to the mixture. After 10 min incubation, the assembled TEC was added to Ni-NTA beads in transcription buffer (20 mM Tris-HCl, pH 8.0, 40 mM KCl, 5 mM MgCl2, 2 mM \u03b2-mercaptoethanol) and incubate for 20 min with shaking. Then, the immobilized TECs were washed with transcription buffer, transcription buffer containing 1 M KCl, then transcription buffer again. The TECs were then eluted with transcription buffer containing 200 mM imidazole (pH 8.0) with 0.1 mg/ml acetylated BSA. The eluted complexes were mixed with Nun (20 \u00b5M final concentration unless otherwise noted) or transcription buffer and used for transcription assays. The reactions were initiated by adding 1 mM or 0.1 mM rNTPs to the eluted TECs, and stopped by adding 2X stop buffer after 1 min or 5 min. Transcription products were resolved by 20% denaturing poly-acrylamide gel electrophoresis. The gels were exposed to phosphor screens and scanned using a Typhoon 9400 (GE Healthcare Life Sciences).\n\n### Native mass spectrometry\n\nThe samples were buffer-exchanged into native MS buffer (500 mM ammonium acetate, 0.01% Tween-20) using Zeba microspin desalting columns (ThermoFisher Scientific) with a 40 kDa molecular weight cut-off. An aliquot (2\u20133 \u00b5L) of the buffer-exchanged sample was loaded into an in-house fabricated gold-coated quartz capillary and introduced into an Exactive Plus EMR instrument (ThermoFisher Scientific) using a static nanospray source. The EMR instrument was calibrated using cesium iodide. The MS parameters used included spray voltage, 1.0\u20131.3 kV; capillary temperature, 100\u00b0C; in-source dissociation, 10 V; S-lens RF level, 200; resolving power, 17,500 at m/z of 200 corresponding to 64 ms analyzer transient duration; AGC target, 5 \u00d7 105; number of microscans, 5; maximum injection time, 200 ms; high energy collision (HCD), 150 V for minimal gas-phase dissociation; injection flatapole, 8 V; interflatapole, 4 V; bent flatapole, 4 V; ultrahigh vacuum pressure, 8\u20139\u00a0\u00d7\u00a010\u221210 mbar; total number of scans, 100. RAW files were processed and deconvolution was performed manually using Thermo Xcalibur Qual Browser (version 3.0.63). Experimental masses were reported as average mass \u00b1 standard deviation across all the calculated mass values obtained within the charge-state distribution. The accuracies of the measured masses were calculated as [(experimental mass \u2013 theoretical mass)/theoretical mass] and ranged from 0.005% to 0.06%.\n\n### Accession numbers\n\nThe cryoEM density maps have been deposited in the EM Data Bank with accession codes EMD-8584 (X-Nun/TEC), EMD-8585 (X-TEC), and EMD-8586 (TEC). Atomic coordinates have been deposited in the Protein Data Bank with accession codes 5UP6 (X-Nun/TEC), 5UPA (X-TEC), and 5UPC (TEC).\n",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "16a6eeb6-d775-47ec-8d83-cd864da24b5d",
+      "submission_id": "c64ef748-9f39-45b0-996e-685de59e48f6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nikolaus Grigorieff, Janelia Research Campus, Howard Hughes Medical Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25478.041](https://doi.org/10.7554/eLife.25478.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structural Basis of Transcription Arrest by Coliphage HK022 Nun in an Escherichia coli RNA Polymerase Elongation Complex\" for consideration by eLife. Your article has been favorably evaluated by Gisela Storz (Senior Editor) and three reviewers, one of whom, Nikolaus Grigorieff (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity:; Patrick Cramer (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors present high-resolution cryo-EM structures of bacterial RNA polymerase ternary elongation complexes (TECs) with and without the translocation-blocking factor Nun. In the Nun-TEC structure, the functionally important C-terminal 23 residues of Nun could be observed. The authors interpret previously existing data and provide new biochemical experiments in light of the observed Nun-nucleic acid and Nun-RNAP interactions. The Nun-TEC structure along with in vitro functional analysis of Nun mutants support a mechanism of translocation inhibition due to the formation of numerous Nun interactions with RNAP and nucleic acids, which would disfavor sliding of nucleic acids with respect to RNAP. For Nun to bind, the polymerase cleft needs to open slightly, consistent with a function of Nun during transcriptional pausing. This work establishes the molecular mechanism of Nun protein function in bacterial transcription.\n\nEssential revisions:\n\nWe recommend publication of this excellent manuscript in eLife after the following questions/comments have been addressed/discussed:\n\n1) Was glutaraldehyde cross-linking necessary to stabilize the TEC-20A construct (sample instability was only observed for the TEC-9A sample)?\n\n2) The authors mention in the Introduction that Nun function is dependent on NusA, NusB, NusE, and NusG. Do the new structures shed light on the mechanistic basis of this dependence?\n\n3) Is it possible that the cross-linking may have \"created\" some of the extensive contacts seen between Nun and the rest of the complex?\n\n4) Can the authors comment on the role of Nun's N-terminus in Nun loading, transcription termination, and prevention of non-specific interactions with non-\u03bb DNA?\n\n5) Nun Trp108 was found to be important for transcriptional arrest and termination, possibly by intercalating into downstream DNA (Watnick & Gottesman, Science 1999; Watnick et al., Genes Dev. 2000). An Ala or Leu substitution of Trp108 abrogated function in vivo (to <2% of wild-type), yet the authors report only a modest decrease in function in vitro (~66% relative to wild-type, Figure 5). There is additional evidence for contacts with DNA of Trp108 from crosslinking studies, which showed that a W108A variant did not crosslink to template, while wild-type did (Watnick & Gottesman, Science 1999). However, the authors state \"this [binding to DNA] was not observed in the structure.\" The authors should explain how their results could be reconciled with these previous reports.\n\n6) Related to the previous point, could the authors elaborate on a possible mechanism by which regulators whose binding and RNAP modulation activity are uncoupled (e.g. the Nun W108A and R94A) might work in this system?\n\n7) Some of the other in vitro data presented by the authors seem to be at odds with previously published in vivo data: a) H98A was shown to abolish termination activity (Watnick et al., Genes Dev. 2000); in the present study, this mutant retains 60% wild-type activity. b) W108A shows no in vivo activity (Watnick et al., Genes Dev. 2000); in the present study, the activity is 66% of wild-type. The authors should discuss these apparent discrepancies.\n\n8) The local resolution estimates generated by ResMap are very unreliable and can only be used to establish relative resolution differences between regions of the density, not absolute values (see for example, Zubcevic et al., Nat. Struct. Mol. Biol., 2016). The authors should provide other evidence to support their resolution claim or rephrase the relevant sections in the manuscript.\n",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1b3163b-8d5d-4db2-bc8f-3890892c0362",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C1",
+      "claim": "Coliphage HK022 Nun blocks superinfection by coliphage \u03bb by stalling RNA polymerase (RNAP) translocation specifically on \u03bb DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Coliphage HK022 Nun blocks superinfection by coliphage \u03bb by stalling RNA polymerase (RNAP) translocation specifically on \u03bb DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work (Robert et al., 1987; Hung and Gottesman, 1997; Vitiello et al., 2014) as indicated in the abstract and introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "f50ca851-8c9c-46cf-a528-313a2ff19b42",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C2",
+      "claim": "Structures of Escherichia coli RNAP ternary elongation complexes (TECs) with and without Nun were determined by single-particle cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "To provide a structural framework to understand how Nun blocks RNAP translocation, we determined structures of Escherichia coli RNAP ternary elongation complexes (TECs) with and without Nun by single-particle cryo-electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental approach used to determine the structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "eb353c8e-1d74-4341-9a35-04bbec3c362e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C3",
+      "claim": "Nun fits tightly into the TEC by taking advantage of gaps between the RNAP and the nucleic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun fits tightly into the TEC by taking advantage of gaps between the RNAP and the nucleic acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "fe09a9a1-7210-4857-817a-4e16611165f3",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C4",
+      "claim": "The C-terminal segment of Nun interacts with the RNAP \u03b2 and \u03b2' subunits inside the RNAP active site cleft as well as with nearly every element of the nucleic acid scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal segment of Nun interacts with the RNAP \u03b2 and \u03b2' subunits inside the RNAP active site cleft as well as with nearly every element of the nucleic acid scaffold, essentially crosslinking the RNAP and the nucleic acids to prevent translocation, a mechanism supported by the effects of Nun amino acid substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data and mutagenesis experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "14f52036-01db-476f-b2c1-c6176f0e19ba",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C5",
+      "claim": "Nun essentially crosslinks the RNAP and the nucleic acids to prevent translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal segment of Nun interacts with the RNAP \u03b2 and \u03b2' subunits inside the RNAP active site cleft as well as with nearly every element of the nucleic acid scaffold, essentially crosslinking the RNAP and the nucleic acids to prevent translocation, a mechanism supported by the effects of Nun amino acid substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is inferred from the structural data and supported by mutagenesis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "79687376-f965-4c03-b3a2-859807590d0d",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C6",
+      "claim": "The nature of Nun interactions inside the RNAP active site cleft suggests that RNAP clamp opening is required for Nun to establish its interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of Nun interactions inside the RNAP active site cleft suggests that RNAP clamp opening is required for Nun to establish its interactions, explaining why Nun acts on paused TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations and knowledge of TEC pausing mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "4439f8ec-d2da-451f-a93a-2562bb576be1",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C7",
+      "claim": "Nun acts on paused TECs because RNAP clamp opening is required for Nun to establish its interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of Nun interactions inside the RNAP active site cleft suggests that RNAP clamp opening is required for Nun to establish its interactions, explaining why Nun acts on paused TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explanation is based on structural inference and knowledge of pausing mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "adf761b7-6321-49da-903b-0a03525db2e3",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C8",
+      "claim": "The 13 kDa Nun protein of coliphage HK022 has one known function, to exclude superinfection by the rival coliphage \u03bb.",
+      "claim_type": "EXPLICIT",
+      "source": "The 13 kDa Nun protein of coliphage HK022 has one known function, to exclude superinfection by the rival coliphage \u03bb (Robert et al., 1987) by arresting host Escherichia coli (Eco) RNAP transcription specifically on \u03bb DNA (Hung and Gottesman, 1997; Vitiello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "c99b03c0-055f-48f4-9bc4-58cb0044d503",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C9",
+      "claim": "Nun arrests host Escherichia coli RNAP transcription specifically on \u03bb DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 13 kDa Nun protein of coliphage HK022 has one known function, to exclude superinfection by the rival coliphage \u03bb (Robert et al., 1987) by arresting host Escherichia coli (Eco) RNAP transcription specifically on \u03bb DNA (Hung and Gottesman, 1997; Vitiello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "1babde17-ada1-43a3-a485-3da222a85d02",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C10",
+      "claim": "HK022 Nun competes with, and antagonizes the function of, the \u03bb N antitermination protein.",
+      "claim_type": "EXPLICIT",
+      "source": "HK022 Nun competes with, and antagonizes the function of, the \u03bb N antitermination protein (Robert et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "08331a92-8f15-4a9b-929a-ce9a5b97845b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C11",
+      "claim": "Nun achieves specificity by binding to the cis-acting boxB RNA hairpin within nut (N-utilization) RNA sequences in \u03bb nascent transcripts through an N-terminal arginine-rich motif, or ARM.",
+      "claim_type": "EXPLICIT",
+      "source": "Like \u03bb N, Nun achieves specificity by binding to the cis-acting boxB RNA hairpin within nut (N-utilization) RNA sequences in \u03bb nascent transcripts through an N-terminal arginine-rich motif, or ARM (Chattopadhyay et al., 1995; Faber et al., 2001; Sch\u00e4rpf et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "515e5014-082a-40fc-892a-3076bcda8db2",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C12",
+      "claim": "Unlike \u03bb N, which suppresses transcription termination at terminators downstream of the nut sites, Nun provokes premature downstream termination.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike \u03bb N, which suppresses transcription termination at terminators downstream of the nut sites, Nun provokes premature downstream termination (Robert et al., 1987; Robledo et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "f5887751-102e-487f-aaf0-68bf9f28d262",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C13",
+      "claim": "After localization to specific ternary elongation complexes (TECs) containing the \u03bb nut sequence, the C-terminal segment of Nun interacts with the TEC to block RNAP translocation (forward or reverse) at intrinsic pause sites without affecting RNAP catalytic activity and without dissociating the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "After localization to specific ternary elongation complexes (TECs) containing the \u03bb nut sequence, the C-terminal segment of Nun interacts with the TEC to block RNAP translocation (forward or reverse) at intrinsic pause sites without affecting RNAP catalytic activity and without dissociating the complex (Hung and Gottesman, 1997; Vitiello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "8f830833-d7a1-48d7-96cc-79dc8f3de2f4",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C14",
+      "claim": "Nun-mediated transcription termination in vivo depends on the function of the Mfd protein, which can remove the arrested TECs from the DNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun-mediated transcription termination in vivo depends on the function of the Mfd protein, which can remove the arrested TECs from the DNA template (Washburn et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "7e0f116a-4b9d-4c5a-aa50-ba4b7529d9f8",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C15",
+      "claim": "At normal in vivo expression levels, Nun acts only on TECs containing the \u03bb nut sequence, and Nun function is dependent on NusA, NusB, NusE, and NusG.",
+      "claim_type": "EXPLICIT",
+      "source": "At normal in vivo expression levels, Nun acts only on TECs containing the \u03bb nut sequence, and Nun function is dependent on NusA, NusB, NusE, and NusG (Robert et al., 1987; Robledo et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "1c5ede07-1971-4aa2-80ec-366c9c3f0819",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C16",
+      "claim": "At high expression levels in vivo, Nun is toxic to Eco cells as it acts to arrest transcription elongation by the host RNAP nonspecifically.",
+      "claim_type": "EXPLICIT",
+      "source": "At high expression levels in vivo, Nun is toxic to Eco cells as it acts to arrest transcription elongation by the host RNAP nonspecifically (Uc-Mass et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "85a59ce0-54dd-452c-8c64-877a850047c9",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C17",
+      "claim": "Nun alone arrests Eco TECs without \u03bb N nut RNA elements and independent of Nus factors when present at high concentration in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun alone arrests Eco TECs without \u03bb N nut RNA elements and independent of Nus factors when present at high concentration in vitro (Hung and Gottesman, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "5ebed571-928c-4f75-b8f0-1d775e17c612",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C18",
+      "claim": "The X-Nun/TEC-20A structure was determined to 3.7 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present three cryoEM reconstructions, glutaraldehyde crosslinked Nun/TEC-20A (X-Nun/TEC-20A; 3.7 \u00c5 overall resolution; Figure 1C, Figure 1\u2014figure supplement 2; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the resolution achieved in the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "eae4227f-8592-44a2-aef2-921e0a631a3c",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C19",
+      "claim": "The X-TEC-20A structure was determined to 4.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "glutaraldehyde crosslinked TEC-20A (X-TEC-20A; 4.1 \u00c5 overall resolution; Figure 1\u2014figure supplement 3; Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the resolution achieved in the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "84919d28-65c9-45e5-81d5-2e5f2fadf242",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C20",
+      "claim": "The TEC-20A structure was determined to 4.4 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "TEC-20A without glutaraldehyde crosslinking (4.4 \u00c5 overall resolution; Figure 1\u2014figure supplement 4; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the resolution achieved in the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "83ee9a90-b245-41b5-b807-2576fff5c2aa",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C21",
+      "claim": "Superposition of all three structures by RNAP C\u03b1 positions resulted in root mean square deviations of <0.7 \u00c5 over at least 2750 C\u03b1's.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of all three structures by RNAP C\u03b1 positions resulted in root mean square deviations of <0.7 \u00c5 over at least 2750 C\u03b1's (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "a7a9eb78-f534-4606-8516-39658a73a98b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C22",
+      "claim": "The crosslinking did not trap rare conformations.",
+      "claim_type": "IMPLICIT",
+      "source": "From the structural correspondence between TEC-20A and X-TEC-20A, we conclude that the crosslinked structures are representative of the uncrosslinked solution structures (i.e. the crosslinking did not trap rare conformations; Figure 1\u2014figure supplement 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "7c07636a-1f51-48c6-9cc5-692c2a63bf2a",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C23",
+      "claim": "The TEC accommodates Nun without global conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "From the structural correspondence between TEC-20A, X-TEC-20A, and X-Nun/TEC-20A, we conclude that the TEC accommodates Nun without global conformational changes (Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d6bd4492-b273-4ada-bfd6-ded5f57dfc39",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C24",
+      "claim": "Much of the central core of the X-Nun/TEC-20A structure, including the active site, the 9 bp RNA/DNA hybrid, and much of the visible part of Nun, was determined to 3.3\u20133.6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall resolution of the X-Nun/TEC-20A cryoEM density map was 3.7 \u00c5 (Figure 1\u2014figure supplement 2F) but local resolution calculations indicate much of the central core of the structure, including the active site, the 9 bp RNA/DNA hybrid, and much of the visible part of Nun, was determined to 3.3\u20133.6 \u00c5 resolution (Figure 1\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on local resolution calculations from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "a3d23cc0-6f3e-4439-bc6b-7a8491cd0cce",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C25",
+      "claim": "In TEC-20A, the downstream duplex DNA enters the active site cleft and begins unwinding at +1.",
+      "claim_type": "EXPLICIT",
+      "source": "In TEC-20A, the downstream duplex DNA enters the active site cleft and begins unwinding at +1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d54ac23f-007c-47cb-8882-e5cf59106ab8",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C26",
+      "claim": "The nt-strand G at +1 binds in a G-specific pocket of the \u03b2-subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The nt-strand G at +1 binds in a G-specific pocket of the \u03b2-subunit (Figure 2\u2014figure supplement 1A) as observed in initiation complex structures (Bae et al., 2015; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure and is consistent with prior structural studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "652981fe-140f-44cf-b4dd-03ec0d781f3f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C27",
+      "claim": "A G at the +1 position of the na-scaffold facilitates Nun-mediated translocation arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "A G at this position of the na-scaffold facilitates Nun-mediated translocation arrest (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "463b31e0-356b-4481-a20a-04e6e686711b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C28",
+      "claim": "The 9-bp RNA/DNA hybrid is in the post-translocated state, with the 3'-end of the RNA at \u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "The 9-bp RNA/DNA hybrid is in the post-translocated state, with the 3'-end of the RNA at \u22121 (Figure 2A, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "2ffd2545-0f5a-4561-8f15-840f64f35e42",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C29",
+      "claim": "The \u03b2'lid directly blocks the upstream extension of the RNA/DNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2'lid directly blocks the upstream extension of the RNA/DNA hybrid (Bernecky et al., 2016; Vassylyev et al., 2007; Westover et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation consistent with prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "0a3dbccc-62d4-4be1-9567-8d4cb88025de",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C30",
+      "claim": "Conserved hydrophobic residues V253 and L255 interact with the face of the last upstream RNA/DNA bp at \u22129, possibly providing a 'greasy' surface for the bases to slip past during translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved hydrophobic residues V253 and L255 (Figure 3\u2014figure supplement 1) interact with the face of the last upstream RNA/DNA bp at \u22129, possibly providing a 'greasy' surface for the bases to slip past during translocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation with a speculative functional interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "c40c3792-def7-48d1-8075-bb2b62b04327",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C31",
+      "claim": "V253 appears to help track the upstream ssRNA towards the RNA exit channel.",
+      "claim_type": "EXPLICIT",
+      "source": "V253 appears to help track the upstream ssRNA towards the RNA exit channel (to the left of the \u03b2'lid in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural position of V253.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d9b4b751-92b2-4bb9-98f4-f8468e0e114b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C32",
+      "claim": "Conserved R259 of the \u03b2'lid directs the t-strand DNA away from the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved R259 of the\u03b2'lid (Figure 3\u2014figure supplement 1) directs the t-strand DNA away from the RNA (to the right of the \u03b2'lid in Figure 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "e026f5ab-0ebc-4a1b-8818-24d170589551",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C33",
+      "claim": "Conserved D256, at the top of the \u03b2'lid, forms a salt bridge with conserved R841 descending from the \u03b2flap.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved D256 (Figure 3\u2014figure supplement 1), at the top of the \u03b2'lid, forms a salt bridge with conserved R841 descending from the \u03b2flap, which covers the top of the RNA exit channel (Figures 2A and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation of a specific interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "50e045c8-4321-4c58-b67d-57aa6b7a7d82",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C34",
+      "claim": "Interactions between the \u03b2flap and elements of the \u03b2' subunit seal off the nucleic acid tracks, preventing the upstream ssRNA and t-strand DNA from slipping over the top of the \u03b2'lid and inappropriately displacing the nt-strand DNA to form an extended RNA/DNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "This and other interactions between the \u03b2flap and elements of the \u03b2' subunit seal off the nucleic acid tracks, preventing the upstream ssRNA and t-strand DNA from slipping over the top of the \u03b2'lid and inappropriately displacing the nt-strand DNA to form an extended RNA/DNA hybrid (Naryshkina et al., 2006; Toulokhonov and Landick, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional interpretation of structural observations, supported by prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "9695a99f-095f-41f5-870a-3878d446498e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C35",
+      "claim": "The -10 t-strand nucleotide base pairs with the nt-strand DNA to begin the upstream DNA duplex with no single-stranded gap in the t-strand DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The -10 t-strand nucleotide base pairs with the nt-strand DNA to begin the upstream DNA duplex with no single-stranded gap in the t-strand DNA (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "59ba1a61-5962-48e0-bbfb-acc0775ff2a9",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C36",
+      "claim": "Density for the upstream DNA duplex is weak and noisy, indicative of mobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Density for the upstream DNA duplex is weak and noisy, indicative of mobility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the quality of the cryoEM density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "5b813b66-12af-4607-af8e-919178a9a1c0",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C37",
+      "claim": "The -10 bp is distorted.",
+      "claim_type": "EXPLICIT",
+      "source": "The density maps and refinement results indicate that the -10 bp is distorted (Figure 3\u2014figure supplement 2A), consistent with the conclusions of (Turtola and Belogurov, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "dbc37433-a8ba-4c47-b0ed-35c4a4f9c9a2",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C38",
+      "claim": "Conserved R47 of the \u03b2'zipper interacts with the nt-strand -12 backbone phosphate, helping to set the path of the upstream DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream of the \u03b2'lid, conserved R47 of the \u03b2'zipper (Figure 3\u2014figure supplement 1) interacts with the nt-strand -12 backbone phosphate (Figure 3), helping to set the path of the upstream DNA duplex",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation with a functional interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "6f79a49b-37d0-4bb1-bd85-af76b8ad04a8",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C39",
+      "claim": "The upstream DNA duplex exits the complex without any steric clashes, subtending an angle of about 110\u00b0 with the entering downstream duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "which exits the complex without any steric clashes, subtending an angle of about 110\u00b0 with the entering downstream duplex DNA (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "e21201a5-8ef3-402e-9450-e702c9b1a2f2",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C40",
+      "claim": "Only the C-terminal 23 residues (residues 87\u2013109) of Nun were visible in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the X-Nun/TEC-20A complex contained full-length Nun (Figure 1\u2014figure supplement 1), only the C-terminal 23 residues (residues 87\u2013109), which contain all known determinants for the translocation arrest activity of Nun (Henthorn and Friedman, 1996; Kim and Gottesman, 2004; Watnick et al., 2000), were visible in the structure (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure, with citation to prior work on functional determinants.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "46733ba5-c760-4445-a8fe-1cb37582b542",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C41",
+      "claim": "The C-terminal 23 residues of Nun contain all known determinants for the translocation arrest activity of Nun.",
+      "claim_type": "EXPLICIT",
+      "source": "only the C-terminal 23 residues (residues 87\u2013109), which contain all known determinants for the translocation arrest activity of Nun (Henthorn and Friedman, 1996; Kim and Gottesman, 2004; Watnick et al., 2000), were visible in the structure (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "a28ef0ff-23de-40c4-a49a-45f6d6a354e2",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C42",
+      "claim": "Nun forms an extended structure that worms its way into the TEC active site cleft, interacting with the \u03b2'zipper, then squeezing through the nt-strand DNA track between the \u03b2'lid and the \u03b2'rudder, then between the \u03b2'rudder and the RNA/DNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun forms an extended structure that worms its way into the TEC active site cleft, interacting with the \u03b2'zipper, then squeezing through the nt-strand DNA track between the \u03b2'lid and the \u03b2'rudder, then between the \u03b2'rudder and the RNA/DNA hybrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the structural path of Nun through the TEC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "8f3a5f82-f427-42aa-802a-6df09434bed4",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C43",
+      "claim": "The very C-terminal segment of Nun (residues 102\u2013109) binds in a pre-existing pocket next to the \u03b2'rudder between the downstream duplex DNA and the RNA/DNA hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "The very C-terminal segment of Nun (residues 102\u2013109) binds in a pre-existing pocket next to the \u03b2'rudder between the downstream duplex DNA and the RNA/DNA hybrid (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "ccda414d-3e2f-480c-a864-750983ec81c6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C44",
+      "claim": "Nun expands the narrow space between the \u03b2'lid, the \u03b2'rudder, and the beginning of the upstream duplex DNA by pushing the upstream DNA duplex outwards (away from the RNAP) about 3.5 \u00c5, a full bp step.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure of the TEC is largely unchanged (Supplementary file 2, Figure 1\u2014figure supplement 5B), but Nun expands the narrow space between the \u03b2'lid, the \u03b2'rudder, and the beginning of the upstream duplex DNA by pushing the upstream DNA duplex outwards (away from the RNAP) about 3.5 \u00c5, a full bp step (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d39eaec9-b8f5-4bf7-9f08-a0f739810c1f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C45",
+      "claim": "Nun residue H93 stacks on the exposed downstream face of the nt-strand DNA -10 base.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun residue H93 stacks on the exposed downstream face of the nt-strand DNA -10 base while R94 reaches to the major groove edge of the -10 bp, where it forms a hydrogen-bond (H-bond) with the O4 atom of the t-strand -10T (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation of a specific interaction from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "a91ffb0f-101e-464c-bb8b-032df5b5dfd6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C46",
+      "claim": "Nun R94 reaches to the major groove edge of the -10 bp, where it forms a hydrogen-bond with the O4 atom of the t-strand -10T.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun residue H93 stacks on the exposed downstream face of the nt-strand DNA -10 base while R94 reaches to the major groove edge of the -10 bp, where it forms a hydrogen-bond (H-bond) with the O4 atom of the t-strand -10T (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation of a specific interaction from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "0d4fad22-8533-42be-ba65-2bf6448a10bc",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C47",
+      "claim": "The Nun R94 interaction with the -10 bp is not likely to be sequence-specific since Nun R94 has the reach and flexibility to form a H-bond with a H-acceptor on the major groove edge of either the nt-strand or t-strand base.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is not likely to be sequence-specific since Nun R94 has the reach and flexibility to form a H-bond with a H-acceptor on the major groove edge of either the nt-strand or t-strand base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural flexibility and reach of R94.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "2c90ca52-cf68-4163-87b4-bb3b6d53663e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C48",
+      "claim": "The presence of Nun in the vicinity of the upstream DNA duplex accounts for the Nun-dependent upstream toe-print.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Nun in the vicinity of the upstream DNA duplex accounts for the Nun-dependent upstream toe-print (Vitiello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural observation to prior experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "f1128345-d17d-48fd-85e0-e2be46f8b47d",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C49",
+      "claim": "Nun squeezes between the \u03b2'rudder and the RNA/DNA hybrid, displacing some \u03b1-carbons of the rudder about 3 \u00c5 and altering some rudder/nucleic acid interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun then squeezes between the \u03b2'rudder and the RNA/DNA hybrid (Figure 4C), displacing some \u03b1-carbons of the rudder about 3 \u00c5 and altering some rudder/nucleic acid interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d47ac080-951e-42ad-a43a-db6506ad17c1",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C50",
+      "claim": "In the TEC, \u03b2'R322 of the rudder makes polar interactions with the -6 and -7 RNA nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in the TEC, \u03b2'R322 of the rudder makes polar interactions with the -6 and -7 RNA nucleotides, but in the Nun/TEC complex, \u03b2'R322 is displaced and forms an Arg-His pair with Nun H98 (Heyda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation comparing TEC and Nun/TEC structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "84ddbf1b-d304-4f8a-9f3f-24aae3e3a8bf",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C51",
+      "claim": "In the Nun/TEC complex, \u03b2'R322 is displaced and forms an Arg-His pair with Nun H98.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, in the TEC, \u03b2'R322 of the rudder makes polar interactions with the -6 and -7 RNA nucleotides, but in the Nun/TEC complex, \u03b2'R322 is displaced and forms an Arg-His pair with Nun H98 (Heyda et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation with citation to prior work on Arg-His pairs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "f77d4233-3edf-4dc0-83ae-45a02859cc15",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C52",
+      "claim": "Nun H98 forms H-bonds with the 2'-OH of the -7 and -8 RNA nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun H98 in turn forms H-bonds with the 2'-OH of the -7 and -8 RNA nucleotides (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation of specific interactions from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "2ced7c70-ee4f-4311-8df7-8ca695c6613f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C53",
+      "claim": "Replacing the RNA -7A with deoxy-A significantly reduced the transcription arrest efficiency of Nun.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested the validity of this observation by replacing the RNA -7A with deoxy-A (so disrupting the Nun H98/-7 RNA 2'-OH interaction), which did not affect elongation in the absence of Nun in the C10 extension assay, but significantly reduced the transcription arrest efficiency of Nun (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data testing the functional importance of the observed interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "de7273e4-db71-4daf-8bcb-e80acca333fb",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C54",
+      "claim": "The new position of \u03b2'R322 is stabilized by a salt bridge with \u03b2'D264 at the base of the lid.",
+      "claim_type": "EXPLICIT",
+      "source": "The new position of \u03b2'R322 is stabilized by a salt bridge with \u03b2'D264 at the base of the lid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation of a specific interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "2ef0b3cf-f0e9-40d4-8e28-f1514101c4ef",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C55",
+      "claim": "Substitutions \u03b2'R322H or \u03b2'D264G lead to Nun resistance in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "This configuration is important since substitutions \u03b2'R322H or \u03b2'D264G lead to Nun resistance in vivo (Robledo et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "8c72ba01-346e-4d0e-8fb2-20fbb4755500",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C56",
+      "claim": "Nun residues N97 and H100 complete a network of polar interactions with the RNA, the t-strand DNA, and the \u03b2'rudder.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with H98, nearby Nun residues N97 and H100 complete a network of polar interactions with the RNA, the t-strand DNA, and the \u03b2'rudder (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation of multiple interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d7423c2d-2704-44a2-bc7b-4a22bc2bea65",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C57",
+      "claim": "The negatively-charged C-terminal carboxylate of Nun (S109) forms a salt bridge with Nun R102, resulting in an 8-residue non-covalent circle.",
+      "claim_type": "EXPLICIT",
+      "source": "The negatively-charged C-terminal carboxylate of Nun (S109) forms a salt bridge with Nun R102, resulting in an 8-residue non-covalent circle (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct observation of a specific intramolecular interaction from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "cd2f58f6-c7a1-4aaf-a915-eb74c6280980",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C58",
+      "claim": "The substitution Nun R102A significantly reduced termination efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitution Nun R102A significantly reduced termination efficiency (Kim and Gottesman, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "0335b0d6-1ecd-4c86-a116-c599fcc1dcfb",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C59",
+      "claim": "Nun residues from N101 to the C-terminus form a network of polar interactions with the \u03b2-subunit, the RNA (-6), the downstream duplex DNA (+4t, +5t), and the nt-strand ssDNA (-1nt).",
+      "claim_type": "EXPLICIT",
+      "source": "Nun residues from N101 to the C-terminus form a network of polar interactions with the \u03b2-subunit, the RNA (-6), the downstream duplex DNA (+4t, +5t), and the nt-strand ssDNA (-1nt) (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation of multiple interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "fddcbb34-045d-462f-9028-18893eee21cd",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C60",
+      "claim": "The interaction between Nun N105 and the nt-strand ssDNA (-1nt) explains why a two nucleotide nt-strand non-complementary 5'-overhang at the downstream fork of the transcription bubble is necessary for optimal Nun function.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter interaction (Figure 2\u2014figure supplement 1A) explains why a two nucleotide nt-strand non-complementary 5'-overhang at the downstream fork of the transcription bubble is necessary for optimal Nun function (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting a structural observation to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "ac157417-c97e-4f51-b7b4-cb93c909e4c4",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C61",
+      "claim": "The substitution \u03b2'D329G leads to Nun resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to RNAP substitutions \u03b2'R322H and D264G, the substitution \u03b2'D329G leads to Nun resistance (Robledo et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "eae295b9-1dfd-4a79-9f1d-47e3b2eff8da",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C62",
+      "claim": "\u03b2'D329 forms part of a pocket in the RNAP structure that accommodates Nun W108.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2'D329 forms part of a pocket in the RNAP structure that accommodates Nun W108 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d5f1bf8c-e22c-4e86-9a92-64abd577ffba",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C63",
+      "claim": "The structure is consistent with previous findings that the C-terminus of Nun is within 15\u201320 \u00c5 of the downstream duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure is consistent with previous findings that the C-terminus of Nun is within 15\u201320 \u00c5 of the downstream duplex DNA (Watnick and Gottesman, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the structure with prior experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "ba013b4b-e6a9-4424-9c20-63c878c5a29e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C64",
+      "claim": "Normal Nun activity required an aromatic residue at Nun position 108.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the Nun C-terminus within the vicinity of the downstream duplex DNA, combined with the finding that normal Nun activity required an aromatic residue at Nun position 108 led to the proposal that Nun-mediated translocation arrest was facilitated by the intercalation of Nun W108 into the downstream DNA (Watnick and Gottesman, 1999) but this is not observed in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "3863a287-7f38-402b-b4b9-459b58d1b6c1",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C65",
+      "claim": "Nun W108 does not intercalate into the downstream DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The location of the Nun C-terminus within the vicinity of the downstream duplex DNA, combined with the finding that normal Nun activity required an aromatic residue at Nun position 108 led to the proposal that Nun-mediated translocation arrest was facilitated by the intercalation of Nun W108 into the downstream DNA (Watnick and Gottesman, 1999) but this is not observed in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the structure that contradicts a prior hypothesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "bcc9efb2-62b0-436f-ae0d-702f7431a97c",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C66",
+      "claim": "A segment of Nun encompassing residues 44 to the C-terminus (residue 109) was found to crosslink to both the 5'- and 3'-ends of RNA transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "A segment of Nun encompassing residues 44 to the C-terminus (residue 109) was found to crosslink to both the 5'- and 3'-ends of RNA transcripts (Mustaev et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "f25b0827-e989-4ff5-bb33-f0e4ae31e981",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C67",
+      "claim": "Nun 44-109 crosslinks to the RNA 5'-end when the crosslinking moiety is placed at the -9 to -14 positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun 44-109 crosslinks to the RNA 5'-end when the crosslinking moiety is placed at the -9 to -14 positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of prior experimental results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "bd2162e4-2fa4-4205-9e46-fe51814d177f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C68",
+      "claim": "Nun residues 44\u201386 exit the TEC near the RNA exit channel and could easily reach the upstream RNA, assuming some breathing/opening of the RNA exit channel.",
+      "claim_type": "EXPLICIT",
+      "source": "These positions would not be able to crosslink to the Nun C-terminus (residues 87-109) visible in our structure, but Nun residues 44\u201386 exit the TEC near the RNA exit channel (Figure 1C) and could easily reach the upstream RNA, assuming some breathing/opening of the RNA exit channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structure and prior crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "ad22eaec-60fc-4692-aff6-832b5137e467",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C69",
+      "claim": "Nun crosslinks to the RNA 3'-end in a 2-nucleotide backtracked complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun crosslinks to the RNA 3-'end in a 2-nucleotide backtracked complex (Mustaev et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "9bfaa57b-c6e9-495b-81c1-80908cfebea6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C70",
+      "claim": "Structures of both bacterial and eukaryotic TECs backtracked by 1-nucleotide place the backtracked nucleotide (+2 position) in the so-called 'P'-site.",
+      "claim_type": "EXPLICIT",
+      "source": "Structures of both bacterial and eukaryotic TECs backtracked by 1-nucleotide place the backtracked nucleotide (+2 position) in the so-called 'P'-site (Sekine et al., 2015; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "7ac13409-22fd-4173-988f-2fff4f75dbff",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C71",
+      "claim": "A eukaryotic 2-nucleotide backtracked complex shows the first backtracked nucleotide (+2) again in the P-site, while the second (3') backtracked nucleotide (+3) is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "A eukaryotic 2-nucleotide backtracked complex shows the first backtracked nucleotide (+2) again in the P-site, while the second (3') backtracked nucleotide (+3) is disordered, consistent with molecular dynamics simulations showing the +3 nucleotide sampling a large range of conformations (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior structural and computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "b78693d7-90fe-49a2-be76-f8703d07bd57",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C72",
+      "claim": "The closest atom of Nun to the RNAP active site Mg2+ is 27 \u00c5 away.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although the closest atom of Nun to the RNAP active site Mg2+ is 27 \u00c5 away, the flexible nature of the 2-nucleotide backtracked complex would allow the crosslinking moiety on the base of the RNA 3'-nucleotide to reach Nun.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "34f1157f-db09-47cb-b75b-98caa524eed5",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C73",
+      "claim": "The flexible nature of the 2-nucleotide backtracked complex would allow the crosslinking moiety on the base of the RNA 3'-nucleotide to reach Nun.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although the closest atom of Nun to the RNAP active site Mg2+ is 27 \u00c5 away, the flexible nature of the 2-nucleotide backtracked complex would allow the crosslinking moiety on the base of the RNA 3'-nucleotide to reach Nun.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structure and knowledge of backtracked complex flexibility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "488bf7d9-a320-4d90-aba7-0213fe1d0faa",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C74",
+      "claim": "Nun mutants H93A, R94A, N97D, H98A, H100A, R102A, R102K, K106A, K107A, K106A/K107A, and W108A were generated and tested for activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our structural analyses, we generated single (and one double) amino acid substitutions in Nun and tested their activity in vitro. We substituted residues that appeared to make important interactions, including H93A and R94A (Figure 4B), N97D, H98A, and H100A (Figure 4C), and R102A, R102K, K106A, K107A, K106A/K107A, and W108A (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach to test the structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "204ac25f-79e7-4a1f-bfcf-3a9a06bb1865",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C75",
+      "claim": "Nun N103 does not appear to make important interactions in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun N103 does not appear to make important interactions in the structure (Figure 4A), so the N103A substitution served as a control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation used to justify the choice of a control mutation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "095ab009-525e-4745-a223-eeaecd882809",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C76",
+      "claim": "The Nun mutants displayed a wide range of activities, from 21 \u00b1 7(SEM)% for H98A to 96 \u00b1 4% for N103A.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nun mutants displayed a wide range of activities (Figure 5\u2014figure supplement 1), from 21 \u00b1 7(SEM)% for H98A to 96 \u00b1 4% for N103A (essentially wild-type, consistent with our structural analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the mutagenesis study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "1a987f6b-2da9-496c-9d1c-3bdb62907d8e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C77",
+      "claim": "The binding and activity of the Nun mutants are not strictly correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding and activity of the Nun mutants are not strictly correlated (Figure 5B), indicating that some substitutions have a strong effect on binding but not on activity (R94A), while others affect binding to a lesser degree but have a stronger effect on activity (H98A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an analysis of the experimental data from the mutagenesis study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "dc82a427-9953-452b-a53a-9a9a1f688423",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C78",
+      "claim": "Each of the tested Nun mutants show significant translocation arrest activity (59% to 80% of wt-Nun) when assayed at saturating concentration despite widely varying effects on RNAP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, each of the tested mutants show significant translocation arrest activity (59% to 80% of wt-Nun) when assayed at saturating concentration despite widely varying effects on RNAP binding (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental data from the mutagenesis study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "376f90c2-5a9a-4754-9b2e-5375fa8bcd5a",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C79",
+      "claim": "Efficient transcription elongation requires that the na-scaffold slide freely with respect to the RNAP at each step of translocation in a nucleic acid sequence-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient transcription elongation requires that the na-scaffold slide freely with respect to the RNAP at each step of translocation in a nucleic acid sequence-independent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge of transcription elongation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "0d5c9aec-0cc4-457b-9e97-f633d8c839ad",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C80",
+      "claim": "The RNAP does not form tight, cognate interactions with most of the na-scaffold in the TEC.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the RNAP does not form tight, cognate interactions with most of the na-scaffold in the TEC (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural requirements for translocation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "15dd71f6-09fc-42a7-b21c-c5afe4e0ed44",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C81",
+      "claim": "Nun establishes its interactions with the TEC by taking advantage of the loose RNAP/na-scaffold interactions, insinuating itself into the TEC in pre-existing gaps between the RNAP and the upstream duplex DNA, the t-strand DNA connecting the upstream duplex DNA with the RNA/DNA hybrid, and in a pocket next to the rudder between the RNA/DNA hybrid and the downstream duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun establishes its interactions with the TEC by taking advantage of the loose RNAP/na-scaffold interactions, insinuating itself into the TEC in pre-existing gaps between the RNAP and the upstream duplex DNA (Figure 6A), the t-strand DNA connecting the upstream duplex DNA with the RNA/DNA hybrid (Figure 6B), and in a pocket next to the rudder between the RNA/DNA hybrid and the downstream duplex DNA (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "927ce759-15a5-44e9-b342-a1e2885c7f50",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C82",
+      "claim": "The Nun/TEC interactions induce some small, localized conformational changes but do not cause large-scale changes in the TEC.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nun/TEC interactions induce some small, localized conformational changes (such as in the upstream duplex, Figure 3\u2014figure supplement 2, or in the rudder, Figures 2 and 6C), but do not cause large-scale changes in the TEC (Supplementary file 2; Figure 1\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of structural comparison data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "042dc743-7051-4d63-a509-b3288c96b5b9",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C83",
+      "claim": "Nun interacts with nearly every element of the na-scaffold: the upstream duplex DNA, the RNA/DNA hybrid, the single-stranded nt-strand DNA within the transcription bubble, and the downstream duplex DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, Nun interacts with nearly every element of the na-scaffold: the upstream duplex DNA, the RNA/DNA hybrid, the single-stranded nt-strand DNA within the transcription bubble, and the downstream duplex DNA (Figures 4 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "c4d6923a-9b8b-45c5-aa16-e480d23a34ff",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C84",
+      "claim": "With this network of Nun/RNAP and Nun/na-scaffold interactions, Nun essentially mediates extensive crosslinking between the RNAP and the na-scaffold, preventing sliding of the na-scaffold with respect to the RNAP (i.e. preventing translocation).",
+      "claim_type": "EXPLICIT",
+      "source": "With this network of Nun/RNAP and Nun/na-scaffold interactions, Nun essentially mediates extensive crosslinking between the RNAP and the na-scaffold, preventing sliding of the na-scaffold with respect to the RNAP (i.e. preventing translocation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "6b6d54a3-358c-43ec-979c-0a76941e6f0f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C85",
+      "claim": "This mechanism explains how Nun arrests both forward and reverse translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this mechanism explains how Nun arrests both forward and reverse translocation (Vitiello et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural mechanism to prior experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "4401b1a3-9937-4f2c-bb08-fe61b3e34925",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C86",
+      "claim": "The finding that Nun establishes multiple interactions with both the RNAP and na-scaffold explains how single amino acid substitutions in Nun still retain significant translocation arrest function.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that Nun establishes multiple interactions with both the RNAP and na-scaffold explains how single amino acid substitutions in Nun still retain significant translocation arrest function (Figure 5) since the disruption of one or a few interactions still leaves many other interactions that the TEC must overcome in order to translocate (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the structural observations to the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "18515c32-ebcd-4f25-a892-3678f4dffb14",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C87",
+      "claim": "Nun does not contain a functional center of critical amino acids for its translocation arrest activity; all of the Nun/TEC interactions contribute to its function.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun does not contain a functional center of critical amino acids for its translocation arrest activity; all of the Nun/TEC interactions contribute to its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "d666874b-2703-4532-9587-4863108b6c4e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C88",
+      "claim": "In phage HK022 lysogens, the concentration of Nun in the Eco cell is likely to be only ~100 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "In phage HK022 lysogens, the concentration of Nun ([Nun]) in the Eco cell is likely to be only ~100 nM (King et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "094b3354-ef30-44ba-a8d5-e9ac424f110f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C89",
+      "claim": "The Kd of wt-Nun for a non-specific TEC is ~300 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kd of wt-Nun for a non-specific TEC (i.e. not containing \u03bb nut boxB RNA) is ~300 nM (Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the binding studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "04d97a96-f0e0-4b76-b723-23d4fff7b75e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C90",
+      "claim": "The Kd for a TEC containing a boxB RNA hairpin would be expected to be lower than for a non-specific TEC.",
+      "claim_type": "IMPLICIT",
+      "source": "while the Kd for a TEC containing a boxB RNA hairpin would be expected to be lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known boxB-binding function of Nun.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "169b40f0-491b-4121-a37e-361f9e2e209f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C91",
+      "claim": "Nun function is stimulated in vivo and in vitro by NusA, NusB, NusE, and NusG, but only in the presence of \u03bb nut boxA RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun function is stimulated in vivo and in vitro by NusA, NusB, NusE, and NusG, but only in the presence of \u03bb nut boxA RNA (Hung and Gottesman, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "bf91850f-586a-480c-8553-b6e89001fda6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C92",
+      "claim": "The Nus factors likely stabilize Nun binding to \u03bb nut TECs.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism of Nus factor stimulation of Nun activity is unknown, but the Nus factors likely stabilize Nun binding to \u03bb nut TECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism of Nus factor stimulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "cc304d74-ef70-4303-8e52-a963a4b3e2a5",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C93",
+      "claim": "The concentration of Nun in phage HK022 lysogens is precisely tuned to allow Nun to target \u03bb nut TECs but not cause general translocation arrest throughout the Eco genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that [Nun] in phage HK022 lysogens is precisely tuned to allow Nun to target \u03bb nut TECs but not cause general translocation arrest throughout the Eco genome (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the binding data and knowledge of in vivo Nun concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "788077b5-8948-41b6-9e1b-18453b9117b4",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C94",
+      "claim": "Nun mutants H98A, K106A/K107A, and W108A have been shown previously to be significantly (K106A/K107A) or totally (H98A, W108A) defective in Nun function both in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun mutants H98A, K106A/K107A, and W108A have been shown previously to be significantly (K106A/K107A) or totally (H98A, W108A) defective in Nun function both in vivo and in vitro (Kim and Gottesman, 2004; Watnick and Gottesman, 1999; Watnick et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "dece017e-f428-4b09-adcd-79c3dffba1d3",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C95",
+      "claim": "At saturating [Nun], the mutants H98A, W108A, and K106A/K107A exhibit significant translocation arrest activity (H98A, 59%; W108A, 66%; K106A/K107A, >70%).",
+      "claim_type": "EXPLICIT",
+      "source": "These results appear to contradict our results that, at saturating [Nun], these mutants exhibit significant translocation arrest activity (H98A, 59%; W108A, 66%; K106A/K107A, >70%; Figure 5, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "bfc3adb5-68b0-49ac-b959-88e6f1858e3c",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C96",
+      "claim": "Previous studies assessed mutant Nun activity at [Nun] too low to overcome the binding defects introduced by the mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in previous studies, In vivo function was assessed using a \u03bb pL-nutL-lacZ chromosomal transcriptional fusion (Wilson et al., 1997) with very low expression levels of the Nun mutants. In vitro transcription reactions included between 50\u2013200 nM Nun mutants. In our study, significant activity of the Nun mutants was observed at saturating [Nun] >250 \u00b5M (Figure 5). Thus, the previous studies assessed mutant Nun activity at [Nun] too low to overcome the binding defects introduced by the mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference reconciling the current results with prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "e06e29eb-4e4a-4326-9798-3ef2ace34160",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C97",
+      "claim": "In the final state of the Nun/TEC complex, Nun forms extensive interactions with both the RNAP clamp domain, the na-scaffold, as well as with elements of the \u03b2 subunit apposing the clamp, tightening and immobilizing normally mobile elements of the TEC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the final state of the Nun/TEC complex determined here (Figure 1C), Nun forms extensive interactions with both the RNAP clamp domain, the na-scaffold, as well as with elements of the \u03b2 subunit apposing the clamp (Figure 7), tightening and immobilizing normally mobile elements of the TEC",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of structural observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "8475b271-8ce0-4676-b928-b290eecbd3ea",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C98",
+      "claim": "The tightening and immobilization of TEC elements by Nun suggests why the X-Nun/TEC structure was determined to higher resolution than either the X-TEC or the TEC structures.",
+      "claim_type": "EXPLICIT",
+      "source": "tightening and immobilizing normally mobile elements of the TEC, suggesting why the X-Nun/TEC structure was determined to higher resolution than either the X-TEC or the TEC structures (Figure 1\u2014figure supplements 2\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the structural observations to the resolution differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "26bcfcb8-9de3-43fb-92a9-656393514fd5",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C99",
+      "claim": "It would not be possible for Nun to establish itself in this binding mode with the clamp domain tightly closed; clamp opening appears to be required for Nun binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nun fits tightly into the TEC without causing major conformational changes in the TEC by taking advantage of pre-existing gaps between the RNAP and the na-scaffold (Figure 6), but examination of the structure suggests that it would not be possible for Nun to establish itself in this binding mode with the clamp domain tightly closed; clamp opening appears to be required for Nun binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on examination of the structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "c49ce20e-daa8-454b-9aea-840a043bc03c",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C100",
+      "claim": "There is no clear consensus sequence for Nun-mediated translocation arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no clear consensus sequence for Nun-mediated translocation arrest, consistent with the Nun/TEC structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation consistent with the structural data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "c8cac671-2b8d-4cb5-bd0e-81fbbaef67e6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C101",
+      "claim": "Nun does not arrest translocation at random sites on the DNA; Nun preferentially stalls translocation at pre-existing intrinsic transcription pause sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, Nun does not arrest translocation at random sites on the DNA; Nun preferentially stalls translocation at pre-existing intrinsic transcription pause sites (Hung and Gottesman, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "20faae83-67ab-4b6b-b1f9-c8bbc66712be",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C102",
+      "claim": "Structural and functional analysis of paused transcription complexes suggests that pausing is linked with a propensity for clamp opening.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural (Weixlbaumer et al., 2013) and functional (Hein et al., 2014) analysis of paused transcription complexes suggests that pausing is linked with a propensity for clamp opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "87285e5d-d425-4d7f-b323-007d3dbeb7ef",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C103",
+      "claim": "Clamp opening is likely required for Nun entry, providing an explanation for the action of Nun at intrinsic pause sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides an explanation for the action of Nun at intrinsic pause sites, since clamp opening is likely required for Nun entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the structural requirement for clamp opening to the preference for pause sites.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "941159be-f86e-4b91-a720-0ffbebff21e6",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C104",
+      "claim": "TEC pausing provides Nun with a sufficiently long-lived stationary target to establish its extensive network of interactions, which is likely a slow process.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to clamp opening, TEC pausing provides Nun with a sufficiently long-lived stationary target to establish its extensive network of interactions, which is likely a slow process (Hung and Gottesman, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference with citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "1fb983bc-60f5-4184-b9c5-0b136067ec3b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C105",
+      "claim": "The Nun:TEC stoichiometry is 1:1.",
+      "claim_type": "EXPLICIT",
+      "source": "Two major charge-state series corresponding to experimental masses of 383,971 \u00b1 8 Da and 396,705 \u00b1 6 Da were observed in the mass spectrum of Nun/TEC (Figure 1\u2014figure supplement 1). The lower mass (384.0 kDa) matches the expected mass of the fully assembled TEC within the accuracy of the measurement (0.05%). Importantly, the difference between the two measured masses is 12,734 Da, which is close to the expected mass of Nun (12,732 Da), revealing that the 396.7-kDa assembly consists of TEC with one Nun bound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from native mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "49a5ea8c-1c4b-4797-a3e8-cb4690d8eca5",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C106",
+      "claim": "Eco TECs assembled from purified Eco core RNAP and the na-scaffold with a 9-nt post-translocated RNA transcript (TEC-9A) were active in transcription elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Eco TECs assembled from purified Eco core RNAP and the na-scaffold with a 9-nt post-translocated RNA transcript (TEC-9A, since the RNA is 9-nt in length and contains A at the 3'-end; Figure 1A , 9A RNA) were active in transcription elongation (Figure 1B, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data demonstrating TEC activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "45e3adbf-dc14-496f-9308-8a7acc6f92e8",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C107",
+      "claim": "In the presence of a saturating concentration of Nun (20 \u00b5M), essentially 100% of the post-translocated 9A transcript was extended to 10C.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the same conditions in the presence of a saturating concentration of Nun (20 \u00b5M), essentially 100% of the post-translocated 9A transcript was extended to 10C as expected (Vitiello et al., 2014), since this reaction did not require RNAP translocation on the template (Figure 1B, compare lanes 3 and 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data demonstrating Nun does not inhibit catalysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "32a4adc8-4d48-45be-bff9-a47e08c5922d",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C108",
+      "claim": "Further extension of 10C was efficiently inhibited by Nun.",
+      "claim_type": "EXPLICIT",
+      "source": "However, further extension of 10C was efficiently inhibited by Nun (Figure 1B, lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data demonstrating Nun inhibits translocation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "7afc8a9b-b861-4ebc-b898-b3253841395b",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C109",
+      "claim": "Nun alone efficiently binds the Eco TEC-9A and inhibits RNAP translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Nun alone efficiently binds the Eco TEC-9A and inhibits RNAP translocation, indicating that our reconstituted system captures Nun function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "045389c4-9193-4d25-8f4b-1d9fbd1c5779",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C110",
+      "claim": "TEC-20A, like TEC-9A, is active in elongation and Nun-mediated arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "TEC-20A, like TEC-9A, is active in elongation and Nun-mediated arrest (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data demonstrating TEC-20A activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "479cc7a0-87bf-4f8c-b28f-fc002be12fda",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C111",
+      "claim": "Mild glutaraldehyde crosslinking was used to stabilize the Nun/TEC complex, resulting in high Nun occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "We used mild glutaraldehyde crosslinking to stabilize the Nun/TEC complex (Figure 1\u2014figure supplement 2B), resulting in high Nun occupancy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental approach to improve Nun occupancy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "ceb436c1-1595-474f-8604-6562b09824f3",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C112",
+      "claim": "The cryoEM density maps have been deposited in the EM Data Bank with accession codes EMD-8584 (X-Nun/TEC), EMD-8585 (X-TEC), and EMD-8586 (TEC).",
+      "claim_type": "EXPLICIT",
+      "source": "The cryoEM density maps have been deposited in the EM Data Bank with accession codes EMD-8584 (X-Nun/TEC), EMD-8585 (X-TEC), and EMD-8586 (TEC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "b8c0c32c-e1a6-4008-9751-a38d87794f17",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "claim_id": "C113",
+      "claim": "Atomic coordinates have been deposited in the Protein Data Bank with accession codes 5UP6 (X-Nun/TEC), 5UPA (X-TEC), and 5UPC (TEC).",
+      "claim_type": "EXPLICIT",
+      "source": "Atomic coordinates have been deposited in the Protein Data Bank with accession codes 5UP6 (X-Nun/TEC), 5UPA (X-TEC), and 5UPC (TEC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "96c680fc-91db-4529-9179-6c94d53879e7",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined cryo-EM structures of E. coli RNAP ternary elongation complexes (TECs) with and without Nun protein at resolutions of 3.7-4.4 \u00c5. The structures show that Nun binds to TEC in a 1:1 stoichiometry without causing global conformational changes, and that Nun inhibits RNAP translocation without affecting catalytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural determination is well-supported by appropriate methods (C2, C18-C20), validation through structural comparisons showing minimal RMSD (C21-C23), local resolution analysis (C24), native mass spectrometry confirming 1:1 stoichiometry (C105), and functional assays demonstrating translocation arrest without inhibiting catalysis (C106-C109). The use of crosslinking to stabilize complexes is validated by comparison with non-crosslinked structures (C22, C111).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "a8c211a3-8a6d-439b-9e36-4146adad6625",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nun fits into the TEC by exploiting gaps between RNAP and nucleic acids, with its C-terminal 23 residues (87-109) making extensive interactions with both RNAP subunits (\u03b2 and \u03b2') and nearly all elements of the nucleic acid scaffold. These interactions include specific contacts with the upstream DNA duplex, RNA/DNA hybrid, single-stranded DNA, and downstream duplex DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations are directly supported by high-resolution cryo-EM density (C40, C42-C46, C49-C52, C56-C57, C59, C62), validated by mutagenesis showing functional importance of key interactions (C53, C58), and consistent with prior biochemical data (C48, C55, C61, C63). The claim that Nun W108 does not intercalate into DNA (C65) directly contradicts a prior hypothesis but is supported by the structure. The extensive network of interactions is well-documented across multiple structural elements (C81-C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "73bfc334-bc0a-418e-ba2a-ac764c373553",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nun prevents RNAP translocation by essentially crosslinking the RNAP to the nucleic acid scaffold through its extensive network of interactions. This mechanism explains how Nun arrests both forward and reverse translocation and why single amino acid substitutions retain significant activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The proposed mechanism is well-supported by the structural data showing extensive Nun/RNAP and Nun/nucleic acid interactions (C84), consistency with prior observations of bidirectional translocation arrest (C85), and mutagenesis data showing that individual substitutions retain 59-80% activity (C86, C87). The interpretation that multiple distributed interactions contribute to function rather than a single critical site is consistent with the experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "16bd5785-ffa7-4932-890b-c328d15aaf5a",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Site-directed mutagenesis of Nun residues that make structural contacts shows a wide range of effects on binding affinity (Kd from 0.3 to 15 \u03bcM) but all tested mutants retain significant translocation arrest activity (59-80% of wild-type) at saturating concentrations. This reconciles apparent contradictions with prior studies that used lower Nun concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis experiments are well-designed based on structural observations (C74-C75), with appropriate controls (C75). The data show clear separation between binding and activity effects (C77), and the results are quantitatively reported with error estimates (C76, C78). The reconciliation with prior work (C94-C96) is logical and well-reasoned, explaining the apparent discrepancy through differences in experimental conditions (concentration ranges used).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The structural arrangement of Nun within the TEC suggests that RNAP clamp opening is required for Nun entry, providing a mechanistic explanation for why Nun preferentially acts at intrinsic transcription pause sites where clamp opening is more likely to occur.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The inference that clamp opening is required for Nun binding (C6, C99) is well-reasoned based on the structural constraints observed. The connection to pause site preference (C7, C103, C104) is supported by prior experimental observations (C101) and structural/functional studies linking pausing to clamp opening (C102). The lack of sequence specificity (C100) is consistent with the structural mechanism. While this is largely inferential, it represents a logical integration of structural observations with prior functional data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "9d46f0c0-d04d-45aa-894b-f19122e6840e",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The TEC structure reveals how conserved RNAP elements (\u03b2'lid, \u03b2'zipper, \u03b2'rudder, \u03b2flap) organize the nucleic acid scaffold, including a 9-bp post-translocated RNA/DNA hybrid, directing the upstream ssRNA into the exit channel and the t-strand DNA to form the upstream duplex with a distorted -10 base pair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural observations are directly supported by the cryo-EM density (C25-C28, C35, C37, C39) and are consistent with prior structural studies (C26, C29, C37). The functional interpretations of conserved residues (C30-C34, C38) are reasonable inferences based on their structural positions. The observation of weak density for the upstream duplex (C36) is appropriately interpreted as indicating mobility. The structural features are well-documented and consistent with established understanding of TEC architecture.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "9584573e-8b99-45e2-a157-38fde330996f",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The in vivo concentration of Nun in HK022 lysogens (~100 nM) is precisely tuned relative to its binding affinity for non-specific TECs (~300 nM Kd) and is further modulated by Nus factors and \u03bb nut sequences to achieve specificity for \u03bb transcripts while avoiding general toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The integration of in vivo Nun concentration (C88), measured binding affinity (C89), and known effects of boxB RNA and Nus factors (C90-C91) provides a coherent explanation for specificity (C93). While the mechanism of Nus factor stimulation is acknowledged as unknown (C92), the overall model is well-supported by combining structural, biochemical, and prior genetic data. The inference about concentration tuning (C93) is logical given the quantitative parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The structure is consistent with prior crosslinking data showing that Nun residues 44-109 can crosslink to both the 5' and 3' ends of RNA transcripts, with the N-terminal portion (44-86) positioned near the RNA exit channel and the 3'-end crosslinking explained by flexibility in backtracked complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reconciliation of the structure with prior crosslinking data (C66-C67, C69) is well-reasoned. The inference that Nun residues 44-86 could reach upstream RNA positions (C68) is logical given their exit point near the RNA exit channel. The explanation for 3'-end crosslinking (C72-C73) appropriately invokes prior structural studies of backtracked complexes (C70-C71) and the known flexibility of the backtracked nucleotide. This represents good integration of current structural data with prior biochemical observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "23042bf1-dd14-4b08-9a62-f4eb8da60dea",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The requirement for sequence-independent translocation necessitates loose RNAP/nucleic acid interactions in the TEC. Nun binding tightens and immobilizes normally mobile TEC elements, which may explain why the Nun/TEC structure achieved higher resolution than TEC-only structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reasoning about translocation requirements (C79) represents established knowledge. The inference about loose RNAP/nucleic acid interactions (C80) is well-supported by the structural observations. The observation that Nun tightens the complex (C97) is directly supported by structural data. The explanation for resolution differences (C98) is a reasonable inference connecting structural rigidity to improved resolution, though this is somewhat speculative. Overall, the claims form a coherent mechanistic framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work has established that Nun blocks \u03bb superinfection by arresting RNAP transcription specifically on \u03bb DNA through boxB RNA binding, blocks translocation at pause sites without affecting catalysis, and shows concentration-dependent specificity with Nus factor dependence at physiological levels but non-specific toxicity at high concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims summarize established prior work and are appropriately supported by citations (C1, C8-C17). They provide essential background context for the current structural study. The claims are presented as established knowledge rather than new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    },
+    {
+      "id": "5e9c32fb-aa83-4d06-9270-4e644307f697",
+      "content_id": "49bf12e4-48ac-40c1-bad9-821485cb9aa5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work showed that normal Nun activity required an aromatic residue at position 108, leading to a hypothesis of DNA intercalation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This accurately represents prior work and the hypothesis it generated, which is then contradicted by the current structural data (C65). This is appropriately cited and provides important context for interpreting the new structural findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:24:53.777439Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f50ca851-8c9c-46cf-a528-313a2ff19b42",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "5ebed571-928c-4f75-b8f0-1d775e17c612",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "eae4227f-8592-44a2-aef2-921e0a631a3c",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "84919d28-65c9-45e5-81d5-2e5f2fadf242",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "83ee9a90-b245-41b5-b807-2576fff5c2aa",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "a7a9eb78-f534-4606-8516-39658a73a98b",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "7c07636a-1f51-48c6-9cc5-692c2a63bf2a",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "d6bd4492-b273-4ada-bfd6-ded5f57dfc39",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "1fb983bc-60f5-4184-b9c5-0b136067ec3b",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "49a5ea8c-1c4b-4797-a3e8-cb4690d8eca5",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "45e3adbf-dc14-496f-9308-8a7acc6f92e8",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "32a4adc8-4d48-45be-bff9-a47e08c5922d",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "7afc8a9b-b861-4ebc-b898-b3253841395b",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "045389c4-9193-4d25-8f4b-1d9fbd1c5779",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "479cc7a0-87bf-4f8c-b28f-fc002be12fda",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "ceb436c1-1595-474f-8604-6562b09824f3",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "b8c0c32c-e1a6-4008-9751-a38d87794f17",
+      "result_id": "96c680fc-91db-4529-9179-6c94d53879e7"
+    },
+    {
+      "claim_id": "eb353c8e-1d74-4341-9a35-04bbec3c362e",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "fe09a9a1-7210-4857-817a-4e16611165f3",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "e21201a5-8ef3-402e-9450-e702c9b1a2f2",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "46733ba5-c760-4445-a8fe-1cb37582b542",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "a28ef0ff-23de-40c4-a49a-45f6d6a354e2",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "8f3a5f82-f427-42aa-802a-6df09434bed4",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "ccda414d-3e2f-480c-a864-750983ec81c6",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "d39eaec9-b8f5-4bf7-9f08-a0f739810c1f",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "a91ffb0f-101e-464c-bb8b-032df5b5dfd6",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "0d4fad22-8533-42be-ba65-2bf6448a10bc",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "2c90ca52-cf68-4163-87b4-bb3b6d53663e",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "f1128345-d17d-48fd-85e0-e2be46f8b47d",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "d47ac080-951e-42ad-a43a-db6506ad17c1",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "84ddbf1b-d304-4f8a-9f3f-24aae3e3a8bf",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "f77d4233-3edf-4dc0-83ae-45a02859cc15",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "2ced7c70-ee4f-4311-8df7-8ca695c6613f",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "de7273e4-db71-4daf-8bcb-e80acca333fb",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "2ef0b3cf-f0e9-40d4-8e28-f1514101c4ef",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "8c72ba01-346e-4d0e-8fb2-20fbb4755500",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "d7423c2d-2704-44a2-bc7b-4a22bc2bea65",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "cd2f58f6-c7a1-4aaf-a915-eb74c6280980",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "0335b0d6-1ecd-4c86-a116-c599fcc1dcfb",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "fddcbb34-045d-462f-9028-18893eee21cd",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "ac157417-c97e-4f51-b7b4-cb93c909e4c4",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "eae295b9-1dfd-4a79-9f1d-47e3b2eff8da",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "d5f1bf8c-e22c-4e86-9a92-64abd577ffba",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "3863a287-7f38-402b-b4b9-459b58d1b6c1",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "15dd71f6-09fc-42a7-b21c-c5afe4e0ed44",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "927ce759-15a5-44e9-b342-a1e2885c7f50",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "042dc743-7051-4d63-a509-b3288c96b5b9",
+      "result_id": "a8c211a3-8a6d-439b-9e36-4146adad6625"
+    },
+    {
+      "claim_id": "14f52036-01db-476f-b2c1-c6176f0e19ba",
+      "result_id": "73bfc334-bc0a-418e-ba2a-ac764c373553"
+    },
+    {
+      "claim_id": "c4d6923a-9b8b-45c5-aa16-e480d23a34ff",
+      "result_id": "73bfc334-bc0a-418e-ba2a-ac764c373553"
+    },
+    {
+      "claim_id": "6b6d54a3-358c-43ec-979c-0a76941e6f0f",
+      "result_id": "73bfc334-bc0a-418e-ba2a-ac764c373553"
+    },
+    {
+      "claim_id": "4401b1a3-9937-4f2c-bb08-fe61b3e34925",
+      "result_id": "73bfc334-bc0a-418e-ba2a-ac764c373553"
+    },
+    {
+      "claim_id": "18515c32-ebcd-4f25-a892-3678f4dffb14",
+      "result_id": "73bfc334-bc0a-418e-ba2a-ac764c373553"
+    },
+    {
+      "claim_id": "488bf7d9-a320-4d90-aba7-0213fe1d0faa",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "204ac25f-79e7-4a1f-bfcf-3a9a06bb1865",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "095ab009-525e-4745-a223-eeaecd882809",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "1a987f6b-2da9-496c-9d1c-3bdb62907d8e",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "dc82a427-9953-452b-a53a-9a9a1f688423",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "788077b5-8948-41b6-9e1b-18453b9117b4",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "dece017e-f428-4b09-adcd-79c3dffba1d3",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "bfc3adb5-68b0-49ac-b959-88e6f1858e3c",
+      "result_id": "16bd5785-ffa7-4932-890b-c328d15aaf5a"
+    },
+    {
+      "claim_id": "79687376-f965-4c03-b3a2-859807590d0d",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "4439f8ec-d2da-451f-a93a-2562bb576be1",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "26bcfcb8-9de3-43fb-92a9-656393514fd5",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "c49ce20e-daa8-454b-9aea-840a043bc03c",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "c8cac671-2b8d-4cb5-bd0e-81fbbaef67e6",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "20faae83-67ab-4b6b-b1f9-c8bbc66712be",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "87285e5d-d425-4d7f-b323-007d3dbeb7ef",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "941159be-f86e-4b91-a720-0ffbebff21e6",
+      "result_id": "69f77b92-e467-442e-b7b2-c7cb7ea6b316"
+    },
+    {
+      "claim_id": "a3d23cc0-6f3e-4439-bc6b-7a8491cd0cce",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "d54ac23f-007c-47cb-8882-e5cf59106ab8",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "652981fe-140f-44cf-b4dd-03ec0d781f3f",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "463b31e0-356b-4481-a20a-04e6e686711b",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "2ffd2545-0f5a-4561-8f15-840f64f35e42",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "0a3dbccc-62d4-4be1-9567-8d4cb88025de",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "c40c3792-def7-48d1-8075-bb2b62b04327",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "d9b4b751-92b2-4bb9-98f4-f8468e0e114b",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "e026f5ab-0ebc-4a1b-8818-24d170589551",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "50e045c8-4321-4c58-b67d-57aa6b7a7d82",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "9695a99f-095f-41f5-870a-3878d446498e",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "59ba1a61-5962-48e0-bbfb-acc0775ff2a9",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "5b813b66-12af-4607-af8e-919178a9a1c0",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "dbc37433-a8ba-4c47-b0ed-35c4a4f9c9a2",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "6f79a49b-37d0-4bb1-bd85-af76b8ad04a8",
+      "result_id": "9d46f0c0-d04d-45aa-894b-f19122e6840e"
+    },
+    {
+      "claim_id": "d666874b-2703-4532-9587-4863108b6c4e",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "094b3354-ef30-44ba-a8d5-e9ac424f110f",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "04d97a96-f0e0-4b76-b723-23d4fff7b75e",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "169b40f0-491b-4121-a37e-361f9e2e209f",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "bf91850f-586a-480c-8553-b6e89001fda6",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "cc304d74-ef70-4303-8e52-a963a4b3e2a5",
+      "result_id": "9584573e-8b99-45e2-a157-38fde330996f"
+    },
+    {
+      "claim_id": "bcc9efb2-62b0-436f-ae0d-702f7431a97c",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "f25b0827-e989-4ff5-bb33-f0e4ae31e981",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "bd2162e4-2fa4-4205-9e46-fe51814d177f",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "ad22eaec-60fc-4692-aff6-832b5137e467",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "9bfaa57b-c6e9-495b-81c1-80908cfebea6",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "7ac13409-22fd-4173-988f-2fff4f75dbff",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "b78693d7-90fe-49a2-be76-f8703d07bd57",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "34f1157f-db09-47cb-b75b-98caa524eed5",
+      "result_id": "2b75f744-68bd-4505-b4a4-6ea1414e80d3"
+    },
+    {
+      "claim_id": "376f90c2-5a9a-4754-9b2e-5375fa8bcd5a",
+      "result_id": "23042bf1-dd14-4b08-9a62-f4eb8da60dea"
+    },
+    {
+      "claim_id": "0d5c9aec-0cc4-457b-9e97-f633d8c839ad",
+      "result_id": "23042bf1-dd14-4b08-9a62-f4eb8da60dea"
+    },
+    {
+      "claim_id": "e06e29eb-4e4a-4326-9798-3ef2ace34160",
+      "result_id": "23042bf1-dd14-4b08-9a62-f4eb8da60dea"
+    },
+    {
+      "claim_id": "8475b271-8ce0-4676-b928-b290eecbd3ea",
+      "result_id": "23042bf1-dd14-4b08-9a62-f4eb8da60dea"
+    },
+    {
+      "claim_id": "d1b3163b-8d5d-4db2-bc8f-3890892c0362",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "adf761b7-6321-49da-903b-0a03525db2e3",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "c99b03c0-055f-48f4-9bc4-58cb0044d503",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "1babde17-ada1-43a3-a485-3da222a85d02",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "08331a92-8f15-4a9b-929a-ce9a5b97845b",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "515e5014-082a-40fc-892a-3076bcda8db2",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "f5887751-102e-487f-aaf0-68bf9f28d262",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "8f830833-d7a1-48d7-96cc-79dc8f3de2f4",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "7e0f116a-4b9d-4c5a-aa50-ba4b7529d9f8",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "1c5ede07-1971-4aa2-80ec-366c9c3f0819",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "85a59ce0-54dd-452c-8c64-877a850047c9",
+      "result_id": "6214c9c6-55a3-4322-b3fd-4fd6cf61ccd7"
+    },
+    {
+      "claim_id": "ba013b4b-e6a9-4424-9c20-63c878c5a29e",
+      "result_id": "5e9c32fb-aa83-4d06-9270-4e644307f697"
+    }
+  ],
+  "comparisons": []
+}

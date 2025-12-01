@@ -1,0 +1,2258 @@
+{
+  "submission": {
+    "id": "10b8707c-912c-43e9-a23a-dbb1013b2cd9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:46:14.688779Z",
+    "updated_at": "2025-11-30T22:46:14.688779Z"
+  },
+  "content": [
+    {
+      "id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "submission_id": "10b8707c-912c-43e9-a23a-dbb1013b2cd9",
+      "content_type": "manuscript",
+      "content_text": "# An aging-independent replicative lifespan in a symmetrically dividing eukaryote\n\n## Authors\n\n- Eric C Spivey<sup>1</sup> ([ORCID: 0000-0002-4080-8616](https://orcid.org/0000-0002-4080-8616))\n- Stephen K Jones<sup>1</sup>\n- James R Rybarski<sup>1</sup>\n- Fatema A Saifuddin<sup>1</sup>\n- Ilya J Finkelstein<sup>1</sup> ([ORCID: 0000-0002-9371-2431](https://orcid.org/0000-0002-9371-2431)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biosciences The University of Texas at Austin Austin United States\n2. Center for Systems and Synthetic Biology The University of Texas at Austin Austin United States\n3. Institute for Cellular and Molecular Biology The University of Texas at Austin Austin United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe replicative lifespan (RLS) of a cell\u2014defined as the number of cell divisions before death\u2014has informed our understanding of the mechanisms of cellular aging. However, little is known about aging and longevity in symmetrically dividing eukaryotic cells because most prior studies have used budding yeast for RLS studies. Here, we describe a multiplexed fission yeast lifespan micro-dissector (multFYLM) and an associated image processing pipeline for performing high-throughput and automated single-cell micro-dissection. Using the multFYLM, we observe continuous replication of hundreds of individual fission yeast cells for over seventy-five generations. Surprisingly, cells die without the classic hallmarks of cellular aging, such as progressive changes in size, doubling time, or sibling health. Genetic perturbations and drugs can extend the RLS via an aging-independent mechanism. Using a quantitative model to analyze these results, we conclude that fission yeast does not age and that cellular aging and replicative lifespan can be uncoupled in a eukaryotic cell.\n\n## Introduction\n\nAging is the progressive decrease of an organism\u2019s fitness over time. The asymmetric segregation of pro-aging factors (e.g., damaged proteins and organelles) has been proposed to promote aging in mitotically active yeast and higher eukaryotes (Bufalino et al., 2013; Erjavec et al., 2008; Henderson et al., 2014; Katajisto et al., 2015). In budding yeast, asymmetric division into mother and daughter cells ensures that a mother cell produces a limited number of daughters over its replicative lifespan (RLS) (Mortimer and Johnston, 1959). Aging mother cells increase in size, divide progressively more slowly, and produce shorter-lived daughters (Mortimer and Johnston, 1959; Bartholomew and Mittwer, 1953; Kennedy et al., 1994). Mother cell decline is associated with asymmetric phenotypes such as preferential retention of protein aggregates, dysregulation of vacuole acidity, and genomic instability (Henderson et al., 2014; Aguilaniu et al., 2003; Saka et al., 2013). By sequestering pro-aging factors in the mothers, newly born daughters reset their RLS (Henderson et al., 2014; Aguilaniu et al., 2003; Kwan et al., 2013). These observations raise the possibility that alternate mechanisms may be active in symmetrically dividing eukaryotic cells.\n\nThe fission yeast Schizosaccharomyces pombe is an excellent model system for investigating RLS and aging phenotypes in symmetrically dividing eukaryotic cells. Fission yeast cells are cylindrical, grow by linear extension, and divide via medial fission. After cell division, the two sibling cells each inherit one pre-existing cell tip (old-pole). The new tip is formed at the site of septation (new-pole). Immediately after division, new growth is localized at the old-pole end of the cell. Activation of growth at the new-pole cell tip occurs\u00a0~30% through the cell cycle (generally halfway through G2). This transition from monopolar to bipolar growth is known as new end take-off (NETO) (Mitchison and Nurse, 1985; Sveiczer et al., 1996; Martin and Chang, 2005). Prior studies of fission yeast have yielded conflicting results regarding cellular aging. Several papers reported aging phenotypes akin to those observed in budding yeast (e.g., mother cells become larger, divide more slowly, and have less healthy offspring as they age) (Erjavec et al., 2008; Barker and Walmsley, 1999). However, a recent report used colony lineage analysis to conclude that protein aggregates are not asymmetrically distributed, and that inheriting the old cell pole or the old spindle pole body during cell division does not lead to a decline in cell health (Coelho et al., 2013). However, this report tracked the first 7\u20138 cell divisions of microcolonies on agar plates and thus could not observe the RLS of single cells (Coelho et al., 2013). The controversy between these studies may partially stem from the difficulty in tracking visually identical cells for dozens of generations.\n\nReplicative lifespan assays require the separation of cells after every division. This is traditionally done via manual micro-dissection of sibling cells on agar plates, a laborious process that is especially difficult and error-prone for symmetrically dividing fission yeast. Extrinsic effects related to using a solid agar surface may confound observations made under these conditions (Mei and Brenner, 2015). Finally, recent work using high-throughput microfluidic devices to study individual budding yeast and bacterial cells (Lee et al., 2012; Crane et al., 2014; Wang et al., 2010; Liu et al., 2015; Jo et al., 2015; Nobs and Maerkl, 2014; Tian et al., 2013; Huberts et al., 2014; Minc and Chang, 2010) has shown that large sample sizes are needed to truly capture cellular lifespan accurately \u2013 populations less than\u00a0~100 cells do not reliably estimate the RLS (Huberts et al., 2014).\n\nHere, we report the first high-throughput characterization of both RLS and aging in fission yeast. To enable these studies, we describe a microfluidic device\u2014the multiplexed fission yeast lifespan microdissector (multFYLM)\u2014and a software analysis suite that capture and track individual S. pombe cells throughout their lifespan. Using this platform, we present the first quantitative replicative lifespan study in S. pombe, settling a long-standing controversy regarding whether this organism undergoes replicative aging (Erjavec et al., 2008; Barker and Walmsley, 1999; Coelho et al., 2013; Minois et al., 2006). The RLS of fission yeast is substantially longer than previously reported (Erjavec et al., 2008; Barker and Walmsley, 1999). Remarkably, cell death is stochastic and does not exhibit the classic hallmarks of cellular aging. Despite the lack of aging phenotypes, rapamycin and Sir2p overexpression both extend RLS, whereas increased genome instability decreases RLS. These results demonstrate that RLS can be extended without any aging phenotypes, a fact that has implications for the proposed mechanism of lifespan extension by these interventions. Using these results, we also describe a quantitative framework for analyzing how stochastic and age-dependent effects contribute to the experimentally measured replicative lifespan. This framework will be broadly applicable to future replicative lifespan studies of model organisms. We conclude that fission yeast dies primarily via a stochastic, age-independent mechanism.\n\n## Results\n\n### A high-throughput microfluidic assay for measuring the replicative lifespan of fission yeast\n\nReplicative lifespan assays require the separation of cells after every division. This is traditionally done via manual micro-dissection of sibling cells, a laborious process that is especially difficult for symmetrically dividing fission yeast. We recently developed a microfluidic platform for capturing and immobilizing individual fission yeast cells via their old cell tips (Spivey et al., 2014). However, our first-generation device could only observe a single strain per experiment, required an unconventional fabrication strategy, and suffered from frequent cell loss that ultimately shortened the observation time. To address these limitations, we developed a multiplexed fission yeast lifespan microdissector (multFYLM, Figure 1), along with a dedicated software package designed to streamline the analysis and quantification of raw microscopy data. Single cells are geometrically constrained within catch channels, preserving the orientation of the cell poles over multiple generations (Figure 1A\u2013B). The cells divide by medial fission, thereby ensuring that the oldest cell pole is retained deep within the catch channel. If new-pole tips are loaded initially, then these outward-facing tips become the old-pole tips after the first division.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig1-v3.jpg)\n\n**Figure 1.:** (A) Illustration of multFYLM (gray) loaded with fission yeast (orange). Blue arrows represent the\u00a0media flow though the multFYLM. (B) Left: Fission yeast cells initially grow from the old-pole end (magenta). After new end takeoff (NETO), growth begins at the new-pole end (green). Right: multFYLM permits tracking of the old-pole cell, as well as its most recent siblings. (C) Optical image of a multFYLM showing six independent subsystems. Arrows indicate direction of media flow. Scanning electron micrographs of (D) a multFYLM subsystem and (E) a single catch channel. The channel is long enough to accommodate the old-pole cell, as well as the most recent new-pole sibling. (F) White-light microscope image of a row of catch channels loaded with cells. (G) Time-lapse images (H) and single-cell traces of a replicating cell. The old-pole (magenta) is held in place while the new-pole (green) is free to grow. The old-pole of the most recent sibling (black) extends until it is removed by flow into the central trench (after\u00a0~2 hr 30 m).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The parallel subunits are designed to have the same fluidic resistance. This ensures similar flow rates through all devices when equal pressure is applied. (B) Detail showing the arrangement of central and side trenches of a single subunit. (C) Detail showing arrangement of the catch channels relative to the central and side trenches. (D) Detail showing the dimensions of one catch channel.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Loading efficiency of each subunit in the multFYLM. Error bars: S.D. of the mean of three loading experiments. (B) Retention efficiency of cells in the multFYLM under constant media flow. Three representative experiments shown, with the associated number of loaded cells. We observed retention efficiencies as high as 99% over 140 hr. (C) Image of a single field of view of one subunit. White triangles mark captured cells. Scale bar: 25 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic of experimental apparatus. Blue lines represent the\u00a0flow of media, red lines represent temperature control, and black lines represent computer-controlled mechanical processes. A syringe pump delivers a constant flow of fresh media to the multFYLM. (B) FYLM Critic software workflow. Image stacks are first registered to remove jitter associated with moving the microscope stage. The user then selects cells of interest with a graphical user interface (GUI), and the software generates kymographs. Kymographs are annotated via a semi-automated GUI with the user helping to trace the growth of each cell. The software then quantifies the trace data and exports associated white-light and fluorescence intensities for downstream processing in MATLAB.\n\nThe multFYLM consists of six closely spaced, independent microfluidic subsystems, with a total capacity of 2352 cells (Figure 1C, Figure 1\u2014figure supplement 1). To ensure equal flow rates throughout the device, each of the six subsystems is designed to have the same fluidic resistance. Each subsystem consists of eight parallel rows of 49 cell catch channels (Figure 1D). The catch channel dimensions were optimized for loading and retaining wild type fission yeast cells (Figure 1E, Figure 1\u2014figure supplement 2; (Spivey et al., 2014). The eight rows of cell catch channels are arranged between a large central trench (40 \u00b5m W x 1 mm L x 20 \u00b5m H) and a smaller side trench (20 \u00b5m W x 980\u00a0\u00b5m L x 20 \u00b5m H). Cells are drawn into the catch channels by flow from the central trench to the side trenches via a small (2 \u00b5m W x 5 \u00b5m L x\u00a0~12 \u00b5m H) drain channel (Figure 1F). We did not monitor all 2352 catch channels during our experiments, but we routinely filled\u00a0>80% of the 224 monitored catch channels in each of the six microfluidic sub-systems (Figure 1\u2014figure supplement 2A). A constant flow of fresh media supplies nutrients, removes waste, and ensures that cells are stably retained for the duration of the experiment. Once loaded, up to 98% of the cells could be retained in their respective catch channels for over 100 hr (Figure 1\u2014figure supplement 2B\u2013C, Video 1). As a cell grows and divides, the old-pole cell is maintained by flow at the end of the catch channel, while the new-pole cells grow towards the central trench. Eventually, the new-pole cells are pushed into the central trench, where they are washed out by constant media flow (Video 1). This allows for continuous, whole-lifetime observation of the old-pole cell as well as its newest siblings (Figure 1G\u2013H).\n\n![Video 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-media1.mp4.jpg)\n\n**Video 1.:** Time-lapse imaging of fission yeast in a single field of view of the multFYLM for approximately 140 hr. Scale bar is 20 \u00b5m.\n\nAn inverted fluorescence microscope with a programmable motorized stage allowed the acquisition of single cell data with high-spatiotemporal resolution (Figure 1\u2014figure supplement 3A). Following data collection, images are processed through the image analysis pipeline (see Supplemental Methods), which measures the\u00a0length and fluorescence information for each cell at each time point (Figure 1\u2014figure supplement 3B). These data are parsed to determine the cell\u2019s size, division times, growth rates, lifespan, and fluorescence information (if any). Cells within the multFYLM grew with kinetics and morphology similar to cells in liquid culture and showed growth and NETO rates (Figure 2\u2014figure supplement 1, Supplementary file 1A) similar to those reported previously (Coelho et al., 2013; Nobs and Maerkl, 2014; Forsburg and Rhind, 2006). In sum, the multFYLM allows high content, continuous observation of individual fission yeast cells over their entire lifespans.\n\n### The fission yeast replicative lifespan is not affected by aging\n\nWe used the multFYLM to measure the fission yeast RLS (Figure 2). From these data, we plotted the replicative survival curve (Figure 2A) and determined the survival function, S(g), which describes the probability of being alive after generation g. Using the survival data, we also computed the hazard function, \u03bb(g)=\u2212dS(g)dg*S(g)\u22121, which describes the instantaneous risk of death after cell division g (Figure 2B). The hazard rate (also called the death rate) can be calculated for any generational age using this function. Surprisingly, the fission yeast survival curve did not fit the traditional aging-dependent Gompertz model, (Gompertz, 1825; Greenwood, 1928; Wilson, 1993), which describes survival and hazard in terms of a generation-dependent (i.e., aging) and a generation-independent term (Equation (2) in Materials and methods). The RLS data were best described by a single exponential decay, corresponding to a generation-independent hazard rate. Strikingly, the hazard rate does not increase as the replicative age increases; instead, it remains steady at an average ~2% chance of death per cell per generation. For comparison, we also analyzed the survival data and hazard function for budding yeast (S. cerevisiae) grown in a microfluidic device (Jo et al., 2015). As expected, the budding yeast hazard function increases with each generation and fits the aging-dependent Gompertz model. Thus, the replicative age, g, strongly influences the probability of death in budding yeast, but not in fission yeast.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig2-v3.jpg)\n\n**Figure 2.:** (A) Survival curves for wild-type S. pombe (black) and wild-type S. cerevisiae (brown, data from Jo et al., 2015); both were grown in microfluidic microdissection devices. Numbers indicate the average lifespan. Red lines are a fit to a Gompertz (S. cerevisiae) and exponential decay (S. pombe) survival models. Shading indicates 95% confidence interval (C.I.). Dashed blue line: 50% survival. (B) Hazard rate curves for the data shown in (A). The hazard rate increases dramatically with increased replicative age for S. cerevisiae but not for S. pombe.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Histogram of the doubling times and (B) division lengths of wild-type S. pombe (h- 972) observed in the multFYLM. The doubling time was 2.05\u00a0\u00b1\u00a00.45 hr (mean \u00b1 S.D., n\u00a0=\u00a013,453 cells). The mean length at division was 16\u00a0\u00b1\u00a02.2 \u00b5m. (C) Four representative examples of new end take-off (NETO). Each graph shows the normalized increase in the length of a randomly selected cell over a normalized time comprising one generation. (D) Doubling time did not generally change with age. Horizontal error bars are the SD of the mean time at division for a given generation. Number of cells used ranged from n\u00a0=\u00a0517 at generation 1, to n\u00a0=\u00a0147 at generation 53. The number of cells declines due mostly to cell death during the experiment.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Survival curves of several wild-type strains. The replicative half-life is indicated in parenthesis. Red lines: exponential decay fit to the data. For the two particularly long-lived strains NCYC132 and JB760, we could only estimate a lower bound on the mean replicative lifespan. (B) Hazard functions of strains shown in (A). Inset: hazard rates normalized to the wild-type (h- 972) hazard rate (error bars indicate 95% CI). The constant hazard rates illustrate that none of the WT populations observed are aging.\n\nThe RLS is defined by the number of generations at which 50% of the starting cells are dead. We measured an RLS of 39.2 generations (95% C.I. 38.6\u201339.8, n\u00a0=\u00a0440, Figure 2A and Supplementary file 1) for the laboratory strain h-\u00a0972 grown in rich media (Leupold, 1970). To explore the effect of different genetic backgrounds on replicative lifespan, we determined survival curves, hazard functions, and replicative half-lives for three additional strains, including two wild fission yeast isolates with distinct morphologies and population\u00a0doubling times (Jeffares et al., 2015). Most laboratory fission yeast strains have three chromosomes, but the recently identified strain CBS2777 has a fourth chromosome that originated via a series of complex genomic rearrangements (Brown et al., 2014, 2011; Rhind et al., 2011). CBS2777 had the shortest RLS of 22.7 generations (95% CI 21.9\u201323.6 generations), consistent with its aberrant genome and altered genome maintenance (Brown et al., 2014). In contrast, strains NCYC132 and JB760 showed greater longevity with estimated RLS of\u00a0>50 and\u00a0>70 generations, respectively (Figure 2\u2014figure supplement 2, Supplementary file 1B). These RLS correspond to a hazard rate that is\u00a0~5 fold lower than strain h- 972 (Figure 2\u2014figure supplement 2B). The longevity of strain NCYC132 is consistent with an earlier manual microdissection study performed on solid media (Coelho et al., 2013). Each strain\u2019s survival curve was best described by an exponential decay function, resulting in a generation-independent hazard function. Thus, an aging-independent replicative lifespan is a feature of diverse fission yeasts isolates, and likely the entire species.\n\n### Aging-associated phenotypes do not correlate with death in fission yeast\n\nPrior RLS studies have identified three common phenotypes associated with cellular aging (Henderson et al., 2008; Piper, 2006). In budding yeast, aging mother cells increase in cell size, progressively slow their doubling times, and produce daughters with decreased fitness (Mortimer and Johnston, 1959; Bartholomew and Mittwer, 1953; Kennedy et al., 1994). Whether older fission yeast cells also undergo similar aging-associated phenotypes remains unresolved. To answer these outstanding questions, we examined time-dependent changes in morphology, doubling times, and sibling health in individual fission yeast cells as they approached death. Quantitative observation of cell length revealed two classes of dying cells: the majority (72%; n\u00a0=\u00a0234) died prior to reaching the normal division length (<16.2 \u00b5m, Figure 3A\u2013B). The remaining cells (28%; n\u00a0=\u00a092) showed an elongated phenotype and exceeded the average division time by more than three-fold. In S. pombe, cell length is strongly correlated with division time and cell length, indicating that cell cycle checkpoints were likely dysregulated in these dying cells (Mitchison and Nurse, 1985; Sveiczer et al., 1996; Wood and Nurse, 2015; Hachet et al., 2012). Despite these differences in length at death, most cells had normal doubling times throughout their lifespan (Figure 3C\u2013D). Next, we investigated whether there were any morphological changes in the generations preceding death. The majority of cells retained wild type cell lengths and doubling rates until the penultimate cell division. In the two generations immediately preceding death, there was a mild, but statistically significant change in the distributions of cell lengths (Figure 3E) and doubling times (Figure 3F). However, we did not observe any predictable trends for individual cells, arguing against a consistent pattern of age-related decline. In sum, S. pombe dies without any aging-associated morphological changes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig3-v3.jpg)\n\n**Figure 3.:** (A) Images of cells showing a short (top) and long (bottom) phenotype at death. Triangles indicate the old-pole, new-pole, and the new-pole of the previous division as in Figure 1G. Scale bar: 10 \u00b5m. (B) Histogram of cell length at death. The birth length was 8.3\u00a0\u00b1\u00a01.5 \u00b5m (mean \u00b1 st. dev., n\u00a0=\u00a0326) and the length at division was 16\u00a0\u00b1\u00a02.2 \u00b5m (n\u00a0=\u00a0326). (C) Cells dying with either short (top) or long (bottom) phenotype have normal length and (D) doubling times prior to death, as indicated by five representative cells. (E) Distribution of length and (F) doubling time at division in the five generations preceding death. Cells were post-synchronized to the time of death. The black bar shows the median value for each generation (n\u00a0>\u00a0290 cells for all conditions). Sequential generations were compared using the Kolmogorov-Smirnov test (* for p<0.05, ** for p<0.01).\n\nWe next determined the fate of the last sibling produced by dying cells. This is possible because the last siblings of dying cells also remain captured in the catch channels (Figure 4A). These are siblings that are produced by the final division of the old-pole cells. We categorized these siblings into three classes: (i) those that died without dividing, (ii) those that divided once and died, and (iii) those that divided two or more times (Figure 4A, Videos 2\u20134). The fate of the new-pole siblings was independent of the replicative age of the old-pole cells at death (Figure 4B). Most new-pole siblings of a dying cell (66%, n\u00a0=\u00a0135) never divided and typically did not grow, suggesting that the underlying cause of death was distributed symmetrically between the two sibling cells. Similarly, new-pole siblings that divided once and died (14%, n\u00a0=\u00a029) also typically did not grow. old-pole cells that died while hyper-elongated were more likely to have these unhealthy offspring (Figure 4C\u2013D). As elongated cells generally indicate the activation of a DNA damage checkpoint (Furnari et al., 1997), our findings suggest that genome instability in these cells may be the underlying cause of death in both the old cell and its most recent sibling. In new-pole siblings that divided two or more times (20%, n\u00a0=\u00a040), doubling times were indistinguishable from rapidly growing, healthy cells (2.1\u00a0\u00b1\u00a00.7 hr, n\u00a0=\u00a0208). These healthy new-pole cells were typically born from old-pole cells that did not elongate during their terminal division (Figure 4C\u2013D). These observations suggest that the cause of death was contained within the old-pole cell, thereby reducing the likelihood of death in the sibling. Taken together, our observations suggest that in 76% of cases, cell death impacts both sibling cells. However, in 24% of cells, death is localized to just one of the two siblings. Importantly, there was no correlation between the replicative age of the old-pole cell and survival probability of the last sibling cell. These observations are in stark contrast to S. cerevisiae, where aging factors are generally sequestered to younger mother cells (Henderson et al., 2014; Zhou et al., 2014). However, older S. cerevisiae mothers produce larger and slower-dividing daughter cells. Thus, we do not observe any aging-dependent outcomes for the fate of the new-pole sibling, further confirming that S. pombe does not age.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig4-v3.jpg)\n\n**Figure 4.:** (A) Last new-pole sibling continued to divide (top), died after one division (middle) or died without dividing (bottom). (B) The distribution of last-sibling phenotypes as a function of the old-pole replicative age (n\u00a0=\u00a0245). Error bars are st. dev. measured by bootstrap analysis. (C) The length at division and (D) the doubling time of the new-pole siblings. Vertical black lines and gray bars show the mean and standard deviation of the total cell population.\n\n![Video 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-media2.mp4.jpg)\n\n**Video 2.:** Time-lapse images of a cell where the last division produces a healthy new-pole cell that divides more than once. Scale bar is 20 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/20340/elife-20340-media3.mp4.jpg)\n\n**Video 3.:** Time-lapse images of a cell where the last division produces an unhealthy new-pole cell that divides once before dying. Scale bar is 20 \u00b5m.\n\n![Video 4.](https://cdn.elifesciences.org/articles/20340/elife-20340-media4.mp4.jpg)\n\n**Video 4.:** Time-lapse images of a cell where the last\u00a0new-pole cell does not divide. Scale bar is\u00a020 \u00b5m.\n\n### Genetic manipulation and rapamycin treatment extend replicative lifespan\n\nThe histone deacetylase Sir2p modulates lifespan and aging in a wide variety of organisms from yeasts to mice (Wierman and Smith, 2014; Donmez and Guarente, 2010; Ganley and Kobayashi, 2014). For example, sir2 deletion (sir2\u0394) in budding yeast reduces the replicative lifespan by\u00a0~50% (Jo et al., 2015; Kaeberlein et al., 1999), whereas Sir2p overexpression can increase the RLS by up to 30% (Kaeberlein et al., 1999). The S. pombe genome encodes three Sir2p homologs, one of which shares a high degree of sequence similarity and biochemical functions with the budding yeast Sir2p (Shankaranarayana et al., 2003; Freeman-Cook et al., 2005). Although S. pombe does not show aging phenotypes, we next investigated whether Sir2p still modulates the RLS. Deletion of Sir2p (sir2\u0394) reduced the RLS by 15% (33.4\u00a0\u00b1\u00a00.8 generations; n\u00a0=\u00a0329) relative to the wild type parental strain (39.2\u00a0\u00b1\u00a00.6 generations, n\u00a0=\u00a0440; Figure 5A). These results are consistent with prior observations that wild type and sir2\u0394 cells had similar growth rates when cultured without stressors (Erjavec et al., 2008). In contrast, constitutive 2-fold sir2 overexpression (sir2OE, Figure 5\u2014figure supplement 1) increased the RLS over 50%, with a mean replicative lifespan of\u00a0>60 generations (n\u00a0=\u00a0301; Figure 5A). Cells overexpressing Sir2p have a 2-fold lower hazard rate (total risk of death) than wild-type cells (Figure 5B and Figure 5\u2014figure supplement 2). In sum, overexpression of Sir2p increases the RLS of S. pombe, but does not affect aging.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig5-v3.jpg)\n\n**Figure 5.:** (A) Replicative lifespans and (B) hazard rates of strains normalized to the mean RLS and hazard rate of wild-type (h- 972) strain. Error bars: 95% C.I. on an exponential decay fit to the experimental survival curve. (C) Distribution of normalized doubling time in the five generations preceding death for Sir2p overexpression cells and (D) wild-type cells treated with 100 nM rapamycin. (E) Distribution of normalized length at division in the five generations preceding death for Sir2p overexpression cells and (F) wild-type cells treated with 100 nM rapamycin. Black bars show the median value. Sequential generations were compared using the Kolmogorov-Smirnov test (* for p<0.05, ** for p<0.01; n\u00a0>\u00a0144 cells for all conditions).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) sir2 mRNA transcript levels as measured by qPCR. The sir2\u0394 strain was included as a negative control. Error bars: normalized SEM of at least three replicates. (B) Sir2p protein levels as detected by an anti-Sir2p antibody. Actin is included as loading control. Sir2p-eGFP migrates slower than endogenous Sir2p. (C) Single cell fluorescence imaging confirms that Sir2p-eGFP is expressed and localizes to the nucleus. Scale bar: 20 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The replicative half-life is indicated in parenthesis. A lower bound is reported for the long-lived Sir2p overexpression strain. Red lines represent an exponential decay fit to the curve. (B) Hazard functions of strains shown in (A). The constant hazard rates illustrate that none of the WT strains are aging.\n\nThe target of rapamycin (TOR) pathway is the central regulator of cell growth and aging in eukaryotes (Johnson et al., 2013; Loewith and Hall, 2011). Rapamycin inhibits TOR proteins in eukaryotes (Kunz et al., 1993; Brown et al., 1994), reducing cell growth by altering translation initiation and repressing ribosome biogenesis. Rapamycin increases the RLS of budding yeast (Medvedik et al., 2007), and also increases the longevity of worms, flies and mice (Robida-Stubbs et al., 2012; Bjedov et al., 2010; Harrison et al., 2009). However, the effect of rapamycin on fission yeast RLS has not been reported. The\u00a0addition of 100 nM rapamycin to the flow medium increased the RLS by 41% (55.3 generations, 95% CI 53.1\u201357.6, n\u00a0=\u00a0184; Figure 5A). As with Sir2p overexpression, treating cells with rapamycin increased their longevity by reducing the aging-independent hazard rate (Figure 5B). Importantly, both rapamycin and Sir2p overexpression did not affect the lengths or doubling times of cells as they approached death. The cell length at division remained constant for the five generations preceding cell death, whereas the cell doubling time increased only in the last generation before death (Figure 5C\u2013F). These results are consistent with an aging-independent mechanism for RLS extension in S. pombe.\n\n### Ribosomal DNA (rDNA) instability contributes to sudden cell death\n\nRibosomal DNA (rDNA) is a repetitive, recombination-prone region in eukaryotic genomes. Defects in rDNA maintenance arise from the\u00a0illegitimate repair of the rDNA locus and have been proposed to be key drivers of cellular aging (Ganley and Kobayashi, 2014; Kobayashi, 2008). Fission yeast encodes\u00a0~117 rDNA repeats on the third chromosome, and incomplete rDNA segregation can activate the spindle checkpoint (Toda et al., 1984; Maleszka and Clark-Walker, 1993). If unresolved, this can result in chromosome fragmentation and genomic instability (Win et al., 2005). Indeed, we observed that 28% of dying cells were abnormally long, suggesting activation of a DNA-damage checkpoint (Figure 3B). Aberrant rDNA structures are processed by the RecQ helicase Rqh1p and mutations in the human Rqh1p homologs are implicated in cancer and premature aging-associated disorders (Croteau et al., 2014; Ellis et al., 1995; Yu et al., 1996; Kitao et al., 1999; Takahashi et al., 2011). Therefore, we sought to determine whether rDNA instability and loss of Rqh1p can contribute to stochastic death.\n\nWe visualized segregation of rDNA in cells using the nucleolar protein Gar2 fused to mCherry. Gar2 localizes to rDNA during transcription and has been used to monitor rDNA dynamics in live cells (Win et al., 2005). The strain expressing Gar2-mCherry at the native locus divided at approximately the same length and rate as wild-type cells (Figure 6\u2014figure supplement 1). Dividing cells mostly had equal Gar2 fluorescence in both sibling cell nuclei (Figure 6A\u2013B). However, 7% of cells (n\u00a0=\u00a088/1182) showed rDNA segregation defects that appear as multiple rDNA loci, asymmetric fluorescence distributions, or rDNA bridges (Figure 6A). The rDNA mis-segregation was similar to mis-segregation of a fluorescent marker on chromosome I (7% of cells; n\u00a0=\u00a020/278) and chromosome II (5% of cells; n\u00a0=\u00a019/370) (Figure 6\u2014figure supplement 2). Multi-punctate rDNA loci were nearly always lethal, whereas asymmetric rDNA segregation and rDNA bridges were lethal in 40% of cells (n\u00a0=\u00a031/78; Figure 6B). Importantly, 40% of cells (n\u00a0=\u00a056/141) showed rDNA defects immediately preceding death. In dying cells, rDNA instability was elevated relative to mis-segregation of chromosome I (16% of cells; n\u00a0=\u00a015/95) and chromosome II (13% of cells; n\u00a0=\u00a018/137) (Figure 6\u2014figure supplement 2). Loss of Rqh1p caused higher frequencies of spontaneous rDNA defects, a shorter RLS (5.3 generations, 95% CI 5.0\u20135.7), and a\u00a0>7 fold higher hazard rate (Figure 6\u2014figure supplement 3). rDNA defects were even more prevalent in dying rqh1\u0394 cells (Figure 6\u2014figure supplement 3). We next tested the influence of Sir2p over-expression or addition of rapamycin on the short RLS of rqh1\u0394 cells. The\u00a0addition of rapamycin showed a mild RLS extension, whereas the rqh1\u0394 sir2OE strain was extremely short lived (Figure 6\u2014figure supplement 3). These data suggest that the elevated rDNA instability cannot be rescued by Sir2p and is only partially rescued by rapamycin. In summary, the longevity of fission yeast is promoted by rDNA stability.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig6-v3.jpg)\n\n**Figure 6.:** (A) Images of cells exhibiting rDNA instability, as reported by gar2-mCherry, which binds to rDNA. (B) Likelihood of cell death following one of the defects observed in (A). (C) Dying cells exhibited elevated rDNA defects (outer ring) relative to healthy dividing cells (inner ring).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Histogram of doubling times of a strain expressing gar2-mCherry. The doubling time is 2.83\u00a0\u00b1\u00a00.87 hr (mean \u00b1 st. dev.; n\u00a0=\u00a01547). (B) Histogram of length at division. The length is 18.0\u00a0\u00b1\u00a02.3 \u00b5m (mean \u00b1 st. dev.; n\u00a0=\u00a01547).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) Chromosome loci were labeled with a 112-tetO repeat. TetR-tdTomato binds this array and allows live cell imaging of chromosome dynamics. Schematic adapted from Petrova et al. (2013). (B) Images of cells with chromosome I and chromosome II labeled with the tetO-TetR array. (C) Chromosome mis-segregation defects were characterized as in Figure 6. Norm: equal separation of fluorescent foci between siblings, Multi: multiple foci observed in single sibling, Uneq: unequal fluorescence between siblings, Bridge: foci remain connected post-division. Dying cells showed 2.3-fold elevated chromosome I and (D) 2.6-fold elevated chromosome II mis-segregation defects (outer ring) relative to healthy dividing cells (inner ring).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Survival curve of WT (black, 95% CI: 38.6\u201339.8 generations), rqh1\u0394 (green, 95% CI: 5.0\u20135.7), rqh1\u0394\u00a0+\u00a0100 nM rapamycin (blue, 95% CI: 6.2\u20137.2), and rqh1\u0394 sir2OE (orange). The extremely short lifetime of the rqh1\u0394 sir2OE strain precluded an accurate fit. (B) Hazard curves for the strains shown in (A). The number of cells, RLS, hazard rate, and goodness of fit parameters are summarized in Supplemental file 1. (C) The incidence of nucleolar defects for all divisions (center ring) and preceding death (outer ring) in rqh1\u0394 strain.\n\n## Discussion\n\nHere, we report the first study of fission yeast RLS in a high-throughput microfluidic device (Figure 1). The multFYLM provides a temperature-controlled growth environment for hundreds of individual cells for up to a week (>75 generations), facilitating tens of thousands of micro-dissections. We also developed an image-processing pipeline for quantitative phenotypic analysis of individual cell lineages. The blueprints for multFYLM, as well as the image analysis pipeline are both available via GitHub (see Materials and methods). We note that microfluidics-based lifespan measurements are free from potential extrinsic effects (e.g., secretion of small molecules onto the solid agar surface) which have been proposed to confound observations of RLS assays using manual microdissection (Mei and Brenner, 2015). Using the multFYLM, we set out to determine whether fission yeast undergoes replicative aging.\n\nTaken together, our data provide three sets of experimental evidence that fission yeast does not age. First, the RLS survival curves and corresponding hazard rates are qualitatively different between budding and fission yeasts (Figure 2). The budding yeast RLS is best described by a Gompertz model that includes both an age-dependent as well as an age-independent survival probability. In contrast, the fission yeast RLS is best described by a single exponential decay. This corresponds to a hazard function $\\lambda(g)$ that is constant with each generation, as would be expected for an organism that does not age. Second, we observed that cell volumes and division rates did not change until the penultimate cell division (Figure 3). Third, after the death of a cell, the health of the surviving sibling was also independent of age (Figure 4). These conclusions are also broadly consistent with a recent report that observed robust, aging-independent growth of the symmetrically dividing E. coli in a microfluidic device (Wang et al., 2010).\n\nOur results highlight a critical consideration when interpreting replicative lifespan curves. The experimentally determined RLS does not necessarily report on whether a population of cells is aging. This is because the RLS is affected by a combination of both age-independent and age-dependent biological processes\u2014cell may die randomly without aging. A mathematical model is required to further parse the relative contributions of aging-independent and aging-dependent mechanisms. The Gompertz function is an excellent model for understanding the replicative lifespan survival curve (Bansal et al., 2015). In this model, the replicative lifespan is dependent on just two parameters: (i) an age-independent hazard rate, and (ii) an age-dependent hazard rate, which determine how rapidly mortality increases as a function of the cell\u2019s age (Kirkwood, 2015). Together, these two parameters describe a population\u2019s likelihood of death at any age. Figure 7 illustrates that the experimentally observed RLS is dependent on both of these terms. An increased RLS is not sufficient to conclude that cells age more slowly. Indeed, our data indicate that a decreased RLS can also be achieved by increasing the age-independent hazard rate. To further illustrate this point, we include a Gompertz model analysis of the RLS of S. cerevisiae grown in a microfluidic device (Jo et al., 2015) and our own data from S. pombe. For all of our data, changes in RLS can be completely accounted for by changes in the age-independent hazard rate. In contrast, budding yeast have age-dependent hazard rates an order of magnitude higher than their age-independent rates (Figure 7). We anticipate that the development of the multFYLM, as well as a quantitative analysis framework, will continue to inform comparative RLS studies in model organisms.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20340/elife-20340-fig7-v3.jpg)\n\n**Figure 7.:** RLS contours were generated from experimentally determined ranges of Gompertz coefficients using Equation (7). Fission yeast strains examined in this study and budding yeast from an analogous study (Jo et al., 2015) were plotted on the chart based on the coefficient values from either a Gompertz or exponential decay fit. In all cases, the 95% CI of the coefficients was smaller than the marker size.\n\nWhat are the molecular mechanisms of stochastic cell death in a symmetrically dividing eukaryote? Strikingly, the RLS of S. pombe can be extended by up to 41% via rapamycin treatment and Sir2p over-expression without influencing aging-related phenotypes (Figure 5). This suggests that rapamycin and Sir2p both reduce the onset of sudden death. To our knowledge, this is the first evidence these interventions can extend the RLS in an organism that does not age. This suggests that both Sir2p and rapamycin may partially affect the RLS of aging organisms like S. cerevisiae via an aging-independent mechanism. Additional studies will be required to parse out the aging-dependent and aging-independent mechanisms of RLS extension.\n\nFor a subset of cells, genomic instability due to aberrant segregation of the rDNA locus may be one cause of death (Saka et al., 2013; Ganley and Kobayashi, 2014). Consistent with this hypothesis, rDNA segregation defects were highly elevated relative to general chromosome mis-segregation in wild type cells immediately prior to death (Figure 6). Ablating Rqh1p, a helicase that promotes rDNA stability and replication fork progression (Stewart et al., 1997; Murray et al., 1997; Doe et al., 2000), further increased rDNA defects while drastically reducing the RLS, independent of age. Recent studies also indicate that protein aggregation may be a second major cause of sudden death in rapidly dividing fission yeast cells (Coelho et al., 2013, 2014). These two mechanisms of death need not be mutually exclusive. Future studies will further define the molecular mechanisms of aging-independent death in fission yeast.\n\n## Materials and methods\n\n### multFYLM master structure photolithography\n\nMaster structures were fabricated using SU-8 3005 photoresist for the first layer and SU-8 2010 photoresist for the second layer, following standard photolithography techniques described in the product literature (Microchem, Westborough, MA). Photoresist was spun onto 100 mm-diameter, test-grade, P-doped silicon wafers (ID# 452, University Wafers). Photoresist thickness was 20\u201330 \u00b5m for the second layer (conduits, central and side trenches), and 5\u20136 \u00b5m for the first layer (catch and drain channels). Custom chrome on quartz photomasks (Compugraphics) were manufactured from designs created using the freeware integrated circuit layout editor Glade (www.peardrop.co.uk) or with OpenSCAD (www.openscad.org). A Suss MA-6 Mask Aligner (Suss MicroTec Lithography GmbH) was used for mask alignment and photoresist exposure.\n\n### multFYLM construction\n\nmultFYLM construction is described in more detail at Bio-protocol (Jones Jr et al., 2018).\u00a0Approximately 25 g of polydimethylsiloxane (PDMS, Sylgard 184, Dow Corning) was mixed at a weight ratio of 10:1 polymer:hardener, placed on a rotator for\u00a0>30 min, then centrifuged to remove bubbles. A tape barrier was applied to the edge of a silicon wafer bearing the multFYLM master structures, and 13 g of PDMS was poured onto the wafer, covering the surface. The wafer with PDMS was degassed for\u00a0~10 min (at 60\u201370 cmHg vacuum in a vacuum chamber) to remove additional bubbles, then placed in a 70\u00b0C oven for 15\u201317 min. The wafer was intentionally removed while the PDMS was still tacky to improve adhesion of the microfluidic connectors (nanoports). To create a source and drain interface for the device, nanoports (N-333\u201301, IDEX Health and Science, Oak Harbor, WA) were applied to the surface of the PDMS over the ends of the master structure of the multFYLM, then an additional 14 g of PDMS was poured over the surface, with care taken to avoid getting liquid PDMS inside the nanoports. The wafer with PDMS and nanoports was then degassed\u00a0>10 min to remove additional bubbles, and then returned to the 70\u00b0C oven for 3 hr to cure completely. The cured PDMS was then removed whole from the wafer after cooling to room temperature. A multFYLM with nanoports was trimmed from the cured PDMS disk to approximately 15 \u00d7 25 mm. A 1 mm diameter biopsy punch (Acu-punch, Accuderm) was used to make holes connecting the bottom of each nanoport to the conduits on the bottom surface of the PDMS. The multFYLM was then placed in isopropanol and sonicated for 30 min, removed, and placed to dry on a 70\u00b0C hotplate for 2 hr. Borosilicate glass coverslips (48 \u00d7 65 mm #1, Gold Seal) were concurrently prepared by cleaning for\u00a0>1 hr in a 2% detergent solution (Hellmannex II, Hellma Analytics), then rinsing thoroughly in deionized water and isopropanol before drying for\u00a0>2 hr on a 70\u00b0C hotplate. Cleaned multFYLM and coverslips were stored in a covered container until needed. To bond, the multFYLM and a coverslip were placed in a plasma cleaner (PDC-32G, Harrick Scientific) and cleaned for 20 s on the \u2018high\u2019 setting with oxygen plasma from ambient air (~21% oxygen). The multFYLM and glass coverslip were then gently pressed together to form a permanent bond. To make the microfluidic interface, PFA tubing (1512L, IDEX), with a 1/16\u201d outer diameter was used to connect a 100 mL luer lock syringe (60271, Veterinary Concepts, www.veterinaryconcepts.com) to the multFYLM, and to construct a drain line leading from the multFYLM to a waste container. The tubing was connected to the multFYLM nanoports using 10\u201332 coned nuts (F-332\u201301, IDEX) with ferrules (F-142N, IDEX). A two-way valve (P-512, IDEX) was placed on the drain line to allow for better flow control. For longer experiments, two syringes could be loaded in tandem, connected with a Y-connector (P-512, IDEX). The valve and Y-connector were connected to the tubing using \u00bc\u221228 connectors (P-235, IDEX) with flangeless ferrules (P-200, IDEX). The source line tubing was connected to the syringe with a Luer adapter (P-658, IDEX). The syringe(s) was/were then placed in a syringe pump (Legato 210, KD Scientific) for operation. A 2 \u00b5m inline filter (P-272, IDEX) was placed upstream of the multFYLM to reduce the chance of debris clogging the multFYLM during operation.\n\n### Loading the multFYLM with cells\n\nAs soon as possible after plasma bonding (usually within 15 min), the multFYLM was placed on the microscope stage and secured, then 15 \u00b5L of cells suspended in YES media with 2% BSA were gently injected into the source nanoport. The drain and source interface tubing (with drain valve closed) were then connected to the drain and source nanoports. The syringe pump was then started at 40 \u00b5L min\u22121, and the drain valve was opened to allow flow to start. The syringe pump was adjusted between 20\u201360 \u00b5L min\u22121 until flow was established, and catch channels were observed to be filling with cells, then a programmed flow cycle was established: 1\u20135 min at 50 \u00b5L min\u22121 followed by 10\u201314 min at 5 \u00b5L min\u22121 (average flow rate, 0.5\u20131.2 mL h\u22121).\n\n### Time-lapse imaging\n\nImages were acquired using an inverted microscope (Nikon Eclipse Ti) running NIS Elements and equipped with a 60X, 0.95 NA objective (CFI Plan Apo \u03bb, Nikon) and a programmable, motorized stage (Proscan III, Prior). The microscope was equipped with Nikon\u2019s \u2018Perfect Focus System\u2019 (PFS), which uses a feedback loop to allow consistent focus control over the multiple-day experiments. Images were acquired approximately every two minutes using a scientific-grade CMOS camera (Zyla 5.5, Andor). To improve contrast during image analysis, images were acquired both in the plane of focus and 3\u20134 \u00b5m below the plane of focus. Temperature control was maintained using an objective heater (Bioptechs) and a custom-built stage heater (Omega) calibrated to maintain the multFYLM at 30\u201331\u00b0C.\n\nFluorescence images were acquired with a white light LED excitation source (Sola II, Lumencorp) and a red filter set (49004, Chroma). Fluorescent images were acquired concurrently with white light images, but only every four minutes.\n\n### Media and strains\n\nAll strains were propagated in YES liquid media (Sunrise Scientific) or YES agar (2%) plates, except where otherwise noted. A complete list of strains is reported in Supplemental file 1. Deletion of sir2 in the wild-type h-\u00a0972 strain was completed by first generating a PCR product containing KANMX4 flanked by SIR2 5\u2019 and 3\u2019 untranslated regions. Competent IF30 cells were then transformed with the PCR product and selected on YES\u00a0+G418 agar plates. Deletion was confirmed by PCR. A SIR2 over-expression plasmid was generated via Gateway cloning (Life Technologies). First, SIR2 was integrated into the pDONR221 plasmid to yield pIF133. SIR2 was then swapped from pIF133 to pDUAL-GFH1 (Riken), yielding plasmid pIF200. pIF200 expresses SIR2 under the NMT1 promoter, and also labels the protein C-terminally with a eGFP-FLAG-His6 tags. Plasmid pIF200 was then transformed into strain IF140 for integration at the leu1 locus to generate clones IF230 and IF231(Matsuyama et al., 2006). Integration was checked by PCR and expression was determined by RT-qPCR. Wild-type h-\u00a0972 and Gar2-mCherry fusion protein expressing strains (Megan King) were transformed with a PCR product containing HPHMX6 (hygromycin resistance) flanked by rqh1 5\u2019 and 3\u2019 untranslated regions. Transformants were selected on YES+hygromycin agar plates, then confirmed by PCR. Chromsome I and II reporter strains were kindly provided by Christian Haering (strains CH2774 and CH3245) (Petrova et al., 2013).\n\n### Western blotting\n\nStrains IF235 (sir2\u0394), IF140 and IF230 (sir2 over-expression; sir2OE) were grown in synthetic complete media (Sunrise Scientific) to OD 1.0, and whole cell extracts were prepared by trichloroacetic acid precipitation with bead lysis (Keogh et al., 2006). These cell extracts were combined with loading buffer, boiled for 5 min at 95\u00b0C, and resolved via a 4\u201320% TGX SDS-PAGE gel (Bio-Rad). Proteins were transferred to a PVDF membrane, and then blocked with PBS Odyssey blocking buffer (Li-Cor, Inc.) for one hour with shaking at 22\u00b0C. The membrane was incubated overnight at 4\u00b0C while shaking in phosphate buffered saline\u00a0+0.05% Tween-20 (PBST) containing 1:1000 dilution of anti-\u03b2 actin antibody (mouse, ab8224, Abcam) and 1:500 dilution of an S. pombe-specific anti-Sir2p antibody (rabbit, generously provided by Dr. Allshire) (Buscaino et al., 2013). The membrane was washed once in PBST, and then agitated for 4 hr at 22\u00b0C with 1:10,000 dilution of goat anti-mouse IgG and 1:10,000 dilution of goat anti-rabbit IgG (IRDye 680RD and IRDye 800CW, respectively, Li-Cor, Inc.). The membrane was washed three times with PBST and imaged on an Odyssey CLx dual-channel imaging system (Li-Cor, Inc.).\n\n### FYLM Critic: An open-source image processing and quantification package\n\nTo analyze our single-cell data, we developed FYLM Critic\u2014a Python package for rapid and high-content quantification of the time-lapse microscopy data (github.com/finkelsteinlab/fylm). The FYLM Critic pipeline consists of two discrete stages: (i) pre-processing the raw microscope images to correct for stage drift, and (ii) quantification of cell phenotypes (e.g., length, doubling time, fluorescence intensity and spatial distribution).\n\n### Stage 1: Pre-processing the microscope images\n\nSeveral image pre-processing steps were taken to permit efficient quantification.\u00a0First, the angles of the four solid sections of PDMS on either side of the catch channels were measured relative to the vertical axis of the image, and a corrective rotation in the opposite direction was applied to all images in that field of view. This resulted in the long axis of each cell being completely horizontal in all subsequent analyses. The multFYLM was too large to be imaged in its entirety within a single field of view, so the microscope stage was programmed to move to eight different subsections of the device in a continuous cycle. Due to the imperfect motion of the microscope stage, subsequent images of the same field of view randomly translated by a few micrometers relative to the previous image at the same nominal location. Images were aligned to the first image of the sequence using a cross-correlation algorithm (Guizar-Sicairos et al., 2008). The exact location of each catch channel was manually specified, but only if a cell had already entered the channel at the beginning of the experiment.\n\n### Stage 2: Annotating individual cells within the multFYLM\n\nIn order to analyze cell lengths and phenotypes, kymographs were produced for each catch channel and then annotated semi-manually. To produce the kymographs, a line of pixels was taken along the center of each catch channel, starting from the center of the \u2018notch\u2019 and extending into the central trench. This kymograph captured information along the long axis of the cells. The time-dependent one-dimensional (1D) kymographs for each catch channel were stacked together vertically, producing a two-dimensional (2D) kymograph of each cell\u2019s growth and division. The out-of-focus image was used for this process as the septa and cell walls were much more distinct, as described previously (Nobs and Maerkl, 2014). The position of the old-pole and the leftmost septum were then manually annotated using a simple point-and-click interface to identify each cell division. Once all single-cell kymographs were annotated, this annotation was used to calculate a cell length for each time point. The final status of the cell (whether it died, survived to the end of the experiment, or was ejected) was determined by the user. Further analysis of the cell length, growth rates, and fluorescence intensities was performed in MATLAB (Mathworks). The local minima of the growth curves were used to determine division times and the replicative age of each cell.\n\nEjections and replacement of individual cells within the catch channels may confound our whole-lifespan tracking. Therefore, we optimizing cell loading, retention and imaging conditions to minimize the loss of individual cells throughout the course of each experiment. First, ejection of individual cells was minimized over the course of\u00a0~100 hr (Figure 1\u2014figure supplement 2B). Second, each cell was imaged once every two minutes, minimizing the amount of time during which a cell could conceivably be ejected and replaced by another from the central trench. If a cell were indeed replaced within our two-minute frame rate, we would expect an abrupt change in the captured cell length (indicated a re-loading event). All kymographs were carefully monitored for such events, and in the rare cases where this occurred, were discarded from the final analysis. In summary, our analysis ensures that cell ejection or re-capture is mitigated by both efficient cell capture and by analysis of the single-cell datasets.\n\n### Survival curves\n\nKaplan-Meier (Kaplan and Meier, 1958) survival function estimates were calculated in MATLAB. Due to the low number of lost cells (Figure 1\u2014figure supplement 2B) and the highest total number of total cells (n\u00a0\u2265\u00a0100 for all experiments), the survival curves did not include cells that were lost during the course of the experiment (i.e., there was no right censoring). Our analysis is consistent with similar studies in S. cerevisiae (Crane et al., 2014). The survival function estimates were fitted with either a simple exponential decay function\n\n$$\nS(g)=e^{\u2212\\alpha*g}\n$$\n\nor the Gompertz survival function (Gompertz, 1825; Greenwood, 1928)\n\n$$\nS(g)=e^{\\alpha/\\beta(1\u2212e^{\\betag})}\n$$\n\nWhere S is the fraction of the initial population surviving at generation $g$. The coefficients \u03b1 and \u03b2\u00a0are >0 and <1, and are further defined for the hazard function $\\lambda(g)$ below. The plotted survival data were weighted at $1/S(g)$ to increase the influence of older cells on the fit.\n\nThe hazard function $\\lambda(g)$ (the probability of cell death during a given generation) can be derived from the survival function:\n\n$$\n\\lambda(g)=\\frac{\u2212S.(g)}{S(g)}\n$$\n\nwhere $S.$ is the first derivative of $S$. For a survival curve fit to an exponential decay function, the corresponding hazard function is a constant:\n\n$$\n\\lambda(g)=\\alpha\n$$\n\nFor a survival curve fit to the Gompertz function, the hazard function simplifies to:\n\n$$\n\\lambda(g)=\\alpha\u2219e^{\\betag}\n$$\n\nWhere the coefficient $\\alpha\u00a0$amplitude-scales $\\lambda(g)$, and so has an age-independent influence on the hazard function, while the coefficient $\\beta\u00a0$time-scales $\\lambda(g)$, and so provides a compact method to describe the age-dependent increase in the probability of cell death (Figure 7). Note that as $\\beta\u21920$, Equation (5) approaches Equation (4).\n\nMean replicative lifespan (RLS) can be calculated by setting $S(g)\u00a0=\\frac{1}{2}$, and solving for $g$ (Simms, 1946). For exponential decay, RLS is simply the half-life of the decay function:\n\n$$\nRLS\u00a0=\u00a0ln(2)/\\alpha\n$$\n\nFor the Gompertz function, RLS is:\n\n$$\nRLS=\\frac{ln(1+(\\frac{\\betaln(2)}{\\alpha}))}{\\beta}\n$$\n\n### Statistical data analysis\n\nAll fitting and statistical data analysis were performed in MATLAB. Briefly, datasets were first tested for normality using the Anderson-Darling method, and parametric tests were used when possible. The\u00a0fitting of all data was performed in MATLAB using either the nonlinear least squares method or least squares method. Determination of whether a survival curve was fit to an exponential decay or Gompertz function was made primarily by selecting the fit with the highest adjusted r2 value.\n",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "af0fbef5-739f-4095-8d76-c1ab722b539f",
+      "submission_id": "10b8707c-912c-43e9-a23a-dbb1013b2cd9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeff Smith, University of Virginia , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20340.031](https://doi.org/10.7554/eLife.20340.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"An aging-independent replicative lifespan in a symmetrically dividing eukaryote\" for consideration by eLife. Your article has been favorably evaluated by a Senior Editor and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nOur decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nEach reviewer thought the study was technically well done and the results showing that S. pombe does not age were convincing. However, the major issue comes down to novelty. Two of the reviewers correctly pointed out that the microfluidic assay has already been published from your lab, and another group previously showed that S. pombe does not age, but using a microcolony-based assay. Your new high-throughput system is much better, but the conclusion that S. pombe does not age was already published, making the current findings less novel. After extensive debate, we decided the story does not reach the bar for novelty to be acceptable for publication eLife. I'm sorry for the disappointing news. The individual reviewer comments are included below.\n\nReviewer #1:\n\nThis manuscript by Spivey et al. describes a novel high-throughput microfluidic system for tracking the replicative lifespan (RLS) of the symmetrically dividing yeast, Schizosaccharomyces pombe. There have been conflicting reports of whether S. pombe actually ages or not, probably because of the difficulty in reliably following individual cells that have divided through fission. The multiplexed fission yeast lifespan microdissector (FYLM) solves this problem by forming a trap that traps and retains one cell pole and then allows new cell poles from the fission to flow away. The authors also developed a robust image analysis software package with the clever name \"FYLM Critic\". An earlier, single-channel version of this microfluidic system was previously described by the authors as a proof of principal, but this one appears to be much improved. FYLM is used in this study to demonstrate that S. pombe cells do not display age-associated changes in growth or morphology, and their rate of death does change with replicative age. Rather than fitting a Gompertz model for survival that takes into account age-dependent and age-independent contributions, the S. pombe data instead fits a model of single exponential decay. These cells apparently die stochastically, without any increased risk per generation.\n\nSir2 overexpression and rapamycin treatment, two conditions that extend S. cerevisiae RLS and lifespan of other model eukaryotes, actually extended S. pombe RLS as well. However, the effects remained independent of aging, and instead worked through aging-independent mechanisms. Deletion of the SIR2 gene had no effect on RLS, which was somewhat surprising given the positive effect of overexpression. SIR2 mRNA levels were increased 6-fold as measured by RT-PCR. However, this does not necessarily mean that the Sir2 protein level increased that much. Sir2 is epitope tagged in this strain, so the authors should look at Sir2 protein by western blotting.\n\nmCherry-tagged Gar2 was used to monitor rDNA locus dynamics/segregation in the live cells. There is appears to be a correlation between improper rDNA segregation and RLS. Furthermore, a very short-lived rqh1\u2206 helicase mutant displayed even more missegregation. The authors therefore conclude that Rqh1p promotes longevity by suppressing rDNA instability. However, the extremely short RLS of the rqh1\u2206 mutant could be caused by additional, more general chromosome segregation defects. Some kind of control for general chromosome segregation seems important, perhaps centromeres.\n\nSir2-dependent rDNA array stabilization is considered one of the key mediators of RLS regulation in S. cerevisiae. It would be interesting to test whether Sir2 overexpression or rapamycin prevents the rDNA dynamics defects in replicatively \"aging\" S. pombe cells. In other words, is the rDNA contributing to the aging-independent RLS extension by Sir2 overexpression or rapamycin?\n\nReviewer #2:\n\nThis manuscript investigates replicative lifespan (RLS) in S. pombe using a microfluidics device developed by the Finkelstein lab. This allows them to follow individual cells up to 75 divisions before more than 50% of a population of cells has died. The conclusions from the study are that S. pombe does not \"age\", i.e. the cells do not show the expected features commonly associated with aging, like a slower division time and larger cell volume in the last few divisions before death. Furthermore, the likelihood of death does not increase with increasing numbers of cell divisions. Also, the siblings of dead cells do not show an increased chance of death. The system is further characterized to recapitulate the fact that Sir2 overexpression and rapamycin treatment increase RLS, and that increasing rDNA recombination causes decreased lifespan.\n\nThe conclusions of this study are congruent with an earlier study from the lab of I. Tolic-Norrelykke (Coelho, Current Biology 2013), which also concluded that S. pombe does not age. The present work follows individual cells over a much longer period of divisions, whereas the Coelho study analysed microcolonies with up to eight cell divisions. Nonetheless, the conclusions are basically very similar.\n\nThis study extends the observations of Coelho by analysis of Sir2 overexpression and rapamycin, two interventions that were previously known to extend lifespan.\n\nFrom all I can tell, the data collection and analysis is sound. The novelty lies in the extent of data collection and the statistics, but the findings support earlier conclusions. Hence, it will be a judgment call as to whether this constitutes enough novelty for publication in eLife.\n\nReviewer #3:\n\nThe authors used a microfluidic device to trap individual fission yeast cells and monitored their growth and death patterns. The main conclusion is that fission yeast does not age, in terms of growth and death rates, with respect to replicative age. While the manuscript presents interesting, solid results, the microfluidic device (\"FYLM\") was published by the same group previously (Spivey et al., 2014) and the conclusion that S. pombe does not age was also published by another group (Coelho et al., 2013). The major contribution of the present work is the confirmation of the latter by extending the replicative age in the experiments by 5 to 10 fold. These recent advancements are reminiscent of the development in bacterial senescence several years ago (Wang et al., 2010 and references therein).\n\nComments:\n\n1) In Abstract, \"Nearly all RLS studies have used budding yeast[\u2026]\" -> \"Nearly all RLS studies of single-cell eukaryotes have used budding yeast[\u2026]\"\n\n2) Also in Abstract, \"Here, we describe a multiplexed fission yeast lifespan micro-dissector (FYLM); a microfluidic platform for performing high-throughput and automated single-cell micro- dissection.\" This sentence reads as if this is the first time the authors are reporting their microfluidic device, but it was already published in Spivey et al., 2014.\n\n3) The puns \"FYLM\", \"multiFYLM\", \"FYLM Critic\" are cute, but rather disingenuous. The Figure 1 in the manuscript and the figure in the Abstract in Spivey et al., 2014 remarkably resembles Figure 1 in Wang et al., 2010 for bacteria. Why invent a new name when the basic design of the device is essentially identical to what has been already published and widely adopted?\n\n4) Figure 2A. I suggest to plot from 0.1 to 1.0 for y-axis. Since the main result in this figure is the exponential decay of 'fraction surviving', the current range (0.01 to 1.0) puts unnecessary importance on what is less important.\n\n5) Figure 2B and in the main text. I suggest the authors call \"the hazard function\" a more easily understandable and straightforward \"death rate\".\n\n6) Figure 2\u2014Figure supplement 2; Figure 5\u2014figure supplement 2. The exponential decay and constant death rates are not as clear here. For 2B, the data is presented in a misleading manner. The range of y axis should be from 0 to 0.07. The red fit lines should not mask the data in both Figure 2A and Figure 2B.\n",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cad211e4-ce91-4665-b20a-42634cc0536a",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C1",
+      "claim": "The multFYLM consists of six closely spaced, independent microfluidic subsystems, with a total capacity of 2352 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The multFYLM consists of six closely spaced, independent microfluidic subsystems, with a total capacity of 2352 cells (Figure 1C, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by reference to Figure 1C and Figure 1\u2014figure supplement 1, which show the device structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "b052346c-c249-4328-aff2-bdd57313ee65",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C2",
+      "claim": "Each subsystem of the multFYLM consists of eight parallel rows of 49 cell catch channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subsystem consists of eight parallel rows of 49 cell catch channels (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 1D showing the subsystem structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8fc975b8-e9e2-420f-864f-1d3aacbf5ae7",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C3",
+      "claim": "More than 80% of the 224 monitored catch channels in each of the six microfluidic sub-systems were routinely filled.",
+      "claim_type": "EXPLICIT",
+      "source": "we routinely filled >80% of the 224 monitored catch channels in each of the six microfluidic sub-systems (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 1\u2014figure supplement 2A showing loading efficiency data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9f13c20e-3378-40b9-aa19-35ffaa65261f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C4",
+      "claim": "Up to 98% of the cells could be retained in their respective catch channels for over 100 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Once loaded, up to 98% of the cells could be retained in their respective catch channels for over 100 hr (Figure 1\u2014figure supplement 2B\u2013C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 1\u2014figure supplement 2B\u2013C and Video 1 showing retention efficiency data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "233b85a2-f7c0-4573-b5e1-e21b07cd3ea4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C5",
+      "claim": "Cells within the multFYLM grew with kinetics and morphology similar to cells in liquid culture.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells within the multFYLM grew with kinetics and morphology similar to cells in liquid culture and showed growth and NETO rates (Figure 2\u2014figure supplement 1, Supplementary file 1A) similar to those reported previously (Coelho et al., 2013; Nobs and Maerkl, 2014; Forsburg and Rhind, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2\u2014figure supplement 1, Supplementary file 1A, and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "21ea0641-59bc-42af-84fa-5b50d257479d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C6",
+      "claim": "The fission yeast survival curve did not fit the traditional aging-dependent Gompertz model.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the fission yeast survival curve did not fit the traditional aging-dependent Gompertz model, (Gompertz, 1825; Greenwood, 1928; Wilson, 1993), which describes survival and hazard in terms of a generation-dependent (i.e., aging) and a generation-independent term (Equation (2) in Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to the Gompertz model literature and reference to the mathematical equation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8f24053e-ff29-4b8d-8381-69780c0b1c23",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C7",
+      "claim": "The RLS data for fission yeast were best described by a single exponential decay.",
+      "claim_type": "EXPLICIT",
+      "source": "The RLS data were best described by a single exponential decay, corresponding to a generation-independent hazard rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the mathematical analysis of the survival data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "5fe82e34-fcd5-42d4-a61d-318f127033f3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C8",
+      "claim": "The hazard rate for fission yeast remains steady at an average ~2% chance of death per cell per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the hazard rate does not increase as the replicative age increases; instead, it remains steady at an average ~2% chance of death per cell per generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the hazard function analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a6d1de26-3a50-4018-8ff1-cd738e9e2ce3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C9",
+      "claim": "The budding yeast hazard function increases with each generation and fits the aging-dependent Gompertz model.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the budding yeast hazard function increases with each generation and fits the aging-dependent Gompertz model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by analysis of budding yeast survival data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "95354b5f-3d8a-437d-9b1d-0a3fd25dca72",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C10",
+      "claim": "The replicative lifespan (RLS) of strain h- 972 grown in rich media is 39.2 generations (95% C.I. 38.6\u201339.8, n = 440).",
+      "claim_type": "EXPLICIT",
+      "source": "We measured an RLS of 39.2 generations (95% C.I. 38.6\u201339.8, n = 440, Figure 2A and Supplementary file 1) for the laboratory strain h- 972 grown in rich media (Leupold, 1970).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2A and Supplementary file 1 showing the survival data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a13d4a0f-ff10-499c-a23d-c36b48c4617f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C11",
+      "claim": "Strain CBS2777 had the shortest RLS of 22.7 generations (95% CI 21.9\u201323.6 generations).",
+      "claim_type": "EXPLICIT",
+      "source": "CBS2777 had the shortest RLS of 22.7 generations (95% CI 21.9\u201323.6 generations), consistent with its aberrant genome and altered genome maintenance (Brown et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Brown et al., 2014 regarding the strain's genomic characteristics.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0078ee30-17f2-47c3-aa66-1632f6691ad6",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C12",
+      "claim": "Strains NCYC132 and JB760 showed greater longevity with estimated RLS of >50 and >70 generations, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, strains NCYC132 and JB760 showed greater longevity with estimated RLS of >50 and >70 generations, respectively (Figure 2\u2014figure supplement 2, Supplementary file 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2\u2014figure supplement 2 and Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "291633cd-4436-4f5e-b542-ed32c8c5cd1d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C13",
+      "claim": "Each strain's survival curve was best described by an exponential decay function, resulting in a generation-independent hazard function.",
+      "claim_type": "EXPLICIT",
+      "source": "Each strain's survival curve was best described by an exponential decay function, resulting in a generation-independent hazard function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the mathematical analysis of survival curves for multiple strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "1cc404bd-39e4-42ac-b188-5dd46ac6a7b3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C14",
+      "claim": "An aging-independent replicative lifespan is a feature of diverse fission yeasts isolates, and likely the entire species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an aging-independent replicative lifespan is a feature of diverse fission yeasts isolates, and likely the entire species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the observation that multiple diverse strains all show exponential decay survival curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "6459c84f-b535-4a43-95d5-47dcb988c9ef",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C15",
+      "claim": "The majority of dying cells (72%; n = 234) died prior to reaching the normal division length (<16.2 \u00b5m).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative observation of cell length revealed two classes of dying cells: the majority (72%; n = 234) died prior to reaching the normal division length (<16.2 \u00b5m, Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3A\u2013B showing cell length at death data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "7514b072-b61c-4022-8b99-522f76b526e6",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C16",
+      "claim": "28% of dying cells (n = 92) showed an elongated phenotype and exceeded the average division time by more than three-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining cells (28%; n = 92) showed an elongated phenotype and exceeded the average division time by more than three-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of cell length and division time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "31c12f13-ceac-47b8-99db-dcc8de2c7713",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C17",
+      "claim": "Most cells had normal doubling times throughout their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these differences in length at death, most cells had normal doubling times throughout their lifespan (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3C\u2013D showing doubling time data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "30a8b43a-ff51-44a8-b0f0-ba87a4a5d504",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C18",
+      "claim": "In the two generations immediately preceding death, there was a mild, but statistically significant change in the distributions of cell lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two generations immediately preceding death, there was a mild, but statistically significant change in the distributions of cell lengths (Figure 3E) and doubling times (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3E and 3F showing statistical analysis of cell length and doubling time distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3e10fe7b-6807-431d-8980-cf3bd157239c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C19",
+      "claim": "S. pombe dies without any aging-associated morphological changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, S. pombe dies without any aging-associated morphological changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of cell length and doubling time data throughout the lifespan.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "ddcda839-85a1-4caf-a3d9-20929f1c7a68",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C20",
+      "claim": "The fate of the new-pole siblings was independent of the replicative age of the old-pole cells at death.",
+      "claim_type": "EXPLICIT",
+      "source": "The fate of the new-pole siblings was independent of the replicative age of the old-pole cells at death (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 4B showing the distribution of last-sibling phenotypes as a function of old-pole replicative age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "e1b86e8b-51d2-4f8e-bee7-448e167036e9",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C21",
+      "claim": "Most new-pole siblings of a dying cell (66%, n = 135) never divided and typically did not grow.",
+      "claim_type": "EXPLICIT",
+      "source": "Most new-pole siblings of a dying cell (66%, n = 135) never divided and typically did not grow, suggesting that the underlying cause of death was distributed symmetrically between the two sibling cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of new-pole sibling fate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4b7fdd73-ca08-46f6-a6d3-44a3de0686b1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C22",
+      "claim": "New-pole siblings that divided once and died (14%, n = 29) also typically did not grow.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, new-pole siblings that divided once and died (14%, n = 29) also typically did not grow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of new-pole sibling fate data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a26e45cb-e1f0-406c-9530-323e70ee0521",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C23",
+      "claim": "Old-pole cells that died while hyper-elongated were more likely to have unhealthy offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "old-pole cells that died while hyper-elongated were more likely to have these unhealthy offspring (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 4C\u2013D showing the length and doubling time of new-pole siblings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "239954cf-3e49-4b78-ae63-db3b7a00ee61",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C24",
+      "claim": "In new-pole siblings that divided two or more times (20%, n = 40), doubling times were indistinguishable from rapidly growing, healthy cells (2.1 \u00b1 0.7 hr, n = 208).",
+      "claim_type": "EXPLICIT",
+      "source": "In new-pole siblings that divided two or more times (20%, n = 40), doubling times were indistinguishable from rapidly growing, healthy cells (2.1 \u00b1 0.7 hr, n = 208).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of doubling time data for healthy new-pole siblings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "f7bdd2f9-01dc-4121-9bd8-93d45d335e46",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C26",
+      "claim": "In 24% of cells, death is localized to just one of the two siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in 24% of cells, death is localized to just one of the two siblings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of new-pole sibling fate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "ad17daab-d0c8-44b6-a925-33d1db99f347",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C27",
+      "claim": "There was no correlation between the replicative age of the old-pole cell and survival probability of the last sibling cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no correlation between the replicative age of the old-pole cell and survival probability of the last sibling cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of new-pole sibling fate as a function of old-pole replicative age.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "b29fe98a-7647-4641-bcb2-2d9d7e04b806",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C28",
+      "claim": "Deletion of Sir2p (sir2\u0394) reduced the RLS by 15% (33.4 \u00b1 0.8 generations; n = 329) relative to the wild type parental strain (39.2 \u00b1 0.6 generations, n = 440).",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of Sir2p (sir2\u0394) reduced the RLS by 15% (33.4 \u00b1 0.8 generations; n = 329) relative to the wild type parental strain (39.2 \u00b1 0.6 generations, n = 440; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5A showing the survival curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4f0285d3-e593-4470-aa50-9025351781b7",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C29",
+      "claim": "Constitutive 2-fold sir2 overexpression (sir2OE) increased the RLS over 50%, with a mean replicative lifespan of >60 generations (n = 301).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, constitutive 2-fold sir2 overexpression (sir2OE, Figure 5\u2014figure supplement 1) increased the RLS over 50%, with a mean replicative lifespan of >60 generations (n = 301; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5A and Figure 5\u2014figure supplement 1 showing the survival curves and sir2 expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "319ef8e0-0614-46e4-a5c4-253338a8425d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C30",
+      "claim": "Cells overexpressing Sir2p have a 2-fold lower hazard rate (total risk of death) than wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells overexpressing Sir2p have a 2-fold lower hazard rate (total risk of death) than wild-type cells (Figure 5B and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5B and Figure 5\u2014figure supplement 2 showing the hazard rate data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "516e0f12-e90f-4cab-926c-66caeccd5427",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C31",
+      "claim": "Overexpression of Sir2p increases the RLS of S. pombe, but does not affect aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In sum, overexpression of Sir2p increases the RLS of S. pombe, but does not affect aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of survival curves, hazard rates, and aging-associated phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "eb869826-ab0f-4fe1-9d0c-5f8d9cdfb593",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C32",
+      "claim": "The addition of 100 nM rapamycin to the flow medium increased the RLS by 41% (55.3 generations, 95% CI 53.1\u201357.6, n = 184).",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of 100 nM rapamycin to the flow medium increased the RLS by 41% (55.3 generations, 95% CI 53.1\u201357.6, n = 184; Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5A showing the survival curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "00af094a-0de8-43e8-a861-12ff9b274c8f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C33",
+      "claim": "Treating cells with rapamycin increased their longevity by reducing the aging-independent hazard rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As with Sir2p overexpression, treating cells with rapamycin increased their longevity by reducing the aging-independent hazard rate (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5B showing the hazard rate data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9b9c4144-444a-4b9e-a5f2-c4aaa3b16b16",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C34",
+      "claim": "Both rapamycin and Sir2p overexpression did not affect the lengths or doubling times of cells as they approached death.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both rapamycin and Sir2p overexpression did not affect the lengths or doubling times of cells as they approached death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of cell length and doubling time data in the generations preceding death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "7e519e85-d965-4af3-90aa-8a10a5846655",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C35",
+      "claim": "The cell length at division remained constant for the five generations preceding cell death for Sir2p overexpression and rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell length at division remained constant for the five generations preceding cell death, whereas the cell doubling time increased only in the last generation before death (Figure 5C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 5C\u2013F showing the distribution of cell length and doubling time in the generations preceding death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "dccfe121-2646-49e2-af45-f66ee93c48d0",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C36",
+      "claim": "28% of dying cells were abnormally long, suggesting activation of a DNA-damage checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that 28% of dying cells were abnormally long, suggesting activation of a DNA-damage checkpoint (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3B showing the histogram of cell length at death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "369d7ee7-7333-4a06-8051-694afc477105",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C37",
+      "claim": "7% of cells (n = 88/1182) showed rDNA segregation defects that appear as multiple rDNA loci, asymmetric fluorescence distributions, or rDNA bridges.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 7% of cells (n = 88/1182) showed rDNA segregation defects that appear as multiple rDNA loci, asymmetric fluorescence distributions, or rDNA bridges (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6A showing images of cells with rDNA instability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "be8f9a4d-0008-48f7-baa8-53f4ac186e42",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C38",
+      "claim": "Multi-punctate rDNA loci were nearly always lethal, whereas asymmetric rDNA segregation and rDNA bridges were lethal in 40% of cells (n = 31/78).",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-punctate rDNA loci were nearly always lethal, whereas asymmetric rDNA segregation and rDNA bridges were lethal in 40% of cells (n = 31/78; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6B showing the likelihood of cell death following different types of rDNA defects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "c1024248-b9bd-45e2-b37b-aefd06c51ffe",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C39",
+      "claim": "40% of cells (n = 56/141) showed rDNA defects immediately preceding death.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 40% of cells (n = 56/141) showed rDNA defects immediately preceding death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of rDNA defects in dying cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "f13f00dc-69bf-4e44-be36-7ed8bd4b1ac9",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C40",
+      "claim": "Loss of Rqh1p caused higher frequencies of spontaneous rDNA defects, a shorter RLS (5.3 generations, 95% CI 5.0\u20135.7), and a >7 fold higher hazard rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Rqh1p caused higher frequencies of spontaneous rDNA defects, a shorter RLS (5.3 generations, 95% CI 5.0\u20135.7), and a >7 fold higher hazard rate (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 3 showing the survival curves and hazard rates for rqh1\u0394 strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9d88e04c-824a-4add-a19a-303e8f2c04cd",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C41",
+      "claim": "The addition of rapamycin showed a mild RLS extension in rqh1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of rapamycin showed a mild RLS extension, whereas the rqh1\u0394 sir2OE strain was extremely short lived (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 3 showing the survival curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "94cf4b88-8ec0-49bf-9bf1-dc17cf45781f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C42",
+      "claim": "The rqh1\u0394 sir2OE strain was extremely short lived.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of rapamycin showed a mild RLS extension, whereas the rqh1\u0394 sir2OE strain was extremely short lived (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 3 showing the survival curves.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "28bfb687-eaa6-441c-b0c6-d0460655d620",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C43",
+      "claim": "The longevity of fission yeast is promoted by rDNA stability.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the longevity of fission yeast is promoted by rDNA stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of rDNA defects and their correlation with cell death.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "6508f3ab-57df-46d8-9d2a-984ee52f11ab",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C44",
+      "claim": "Fission yeast does not age.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a quantitative model to analyze these results, we conclude that fission yeast does not age and that cellular aging and replicative lifespan can be uncoupled in a eukaryotic cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by the analysis of survival curves, hazard rates, and aging-associated phenotypes throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "26c864db-607d-4bc1-a9e1-9e99947705a3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C45",
+      "claim": "Cellular aging and replicative lifespan can be uncoupled in a eukaryotic cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a quantitative model to analyze these results, we conclude that fission yeast does not age and that cellular aging and replicative lifespan can be uncoupled in a eukaryotic cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by the observation that fission yeast has a replicative lifespan but does not show aging phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "5ad4d484-642b-4554-b6bf-ee460ffc40db",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C46",
+      "claim": "Cells die without the classic hallmarks of cellular aging, such as progressive changes in size, doubling time, or sibling health.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, cells die without the classic hallmarks of cellular aging, such as progressive changes in size, doubling time, or sibling health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by the analysis of cell length, doubling time, and sibling health data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "f2bab915-a2f1-4afb-b487-6d6b4d46cb2c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C47",
+      "claim": "Genetic perturbations and drugs can extend the RLS via an aging-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic perturbations and drugs can extend the RLS via an aging-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the abstract and supported by the analysis of Sir2p overexpression and rapamycin treatment effects on RLS and hazard rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0eda2fe6-fb2d-4acb-8d41-23d449e410ba",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C48",
+      "claim": "Fission yeast dies primarily via a stochastic, age-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that fission yeast dies primarily via a stochastic, age-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the introduction and supported by the analysis of survival curves, hazard rates, and aging-associated phenotypes throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "cc8c9b43-150a-4ca2-8faa-982c31a969f2",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C49",
+      "claim": "The asymmetric segregation of pro-aging factors has been proposed to promote aging in mitotically active yeast and higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric segregation of pro-aging factors (e.g., damaged proteins and organelles) has been proposed to promote aging in mitotically active yeast and higher eukaryotes (Bufalino et al., 2013; Erjavec et al., 2008; Henderson et al., 2014; Katajisto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "fd9279a0-298d-4394-8596-77180c4d2f10",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C50",
+      "claim": "In budding yeast, asymmetric division into mother and daughter cells ensures that a mother cell produces a limited number of daughters over its replicative lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, asymmetric division into mother and daughter cells ensures that a mother cell produces a limited number of daughters over its replicative lifespan (RLS) (Mortimer and Johnston, 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Mortimer and Johnston, 1959.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a2550037-105c-4a1f-a2f0-7b61dcf0ddd0",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C51",
+      "claim": "Aging mother cells in budding yeast increase in size, divide progressively more slowly, and produce shorter-lived daughters.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging mother cells increase in size, divide progressively more slowly, and produce shorter-lived daughters (Mortimer and Johnston, 1959; Bartholomew and Mittwer, 1953; Kennedy et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0b18ecda-b641-430a-aa38-f4d4e66281ff",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C52",
+      "claim": "Mother cell decline in budding yeast is associated with asymmetric phenotypes such as preferential retention of protein aggregates, dysregulation of vacuole acidity, and genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Mother cell decline is associated with asymmetric phenotypes such as preferential retention of protein aggregates, dysregulation of vacuole acidity, and genomic instability (Henderson et al., 2014; Aguilaniu et al., 2003; Saka et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a0525e84-3bb3-45cb-aa05-18b656b78f1f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C53",
+      "claim": "By sequestering pro-aging factors in the mothers, newly born daughters reset their RLS.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequestering pro-aging factors in the mothers, newly born daughters reset their RLS (Henderson et al., 2014; Aguilaniu et al., 2003; Kwan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "aaba8fcf-e4e1-44af-9bdb-9cbb64d8c9f4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C54",
+      "claim": "Fission yeast cells are cylindrical, grow by linear extension, and divide via medial fission.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast cells are cylindrical, grow by linear extension, and divide via medial fission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about fission yeast cell biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4ac8dffd-be7e-4d47-a8d5-51b710add31f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C55",
+      "claim": "After cell division, the two sibling cells each inherit one pre-existing cell tip (old-pole).",
+      "claim_type": "EXPLICIT",
+      "source": "After cell division, the two sibling cells each inherit one pre-existing cell tip (old-pole).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about fission yeast cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3fa1f29a-983f-435d-86a8-2177ea608ac5",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C56",
+      "claim": "The new tip is formed at the site of septation (new-pole).",
+      "claim_type": "EXPLICIT",
+      "source": "The new tip is formed at the site of septation (new-pole).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about fission yeast cell division.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "eee32103-f247-4558-9b00-2b6e7ff4e6a2",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C57",
+      "claim": "Immediately after division, new growth is localized at the old-pole end of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Immediately after division, new growth is localized at the old-pole end of the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about fission yeast cell growth.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "36aa5cec-bf3c-45af-acb1-3ef0425701ac",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C58",
+      "claim": "Activation of growth at the new-pole cell tip occurs ~30% through the cell cycle (generally halfway through G2).",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of growth at the new-pole cell tip occurs ~30% through the cell cycle (generally halfway through G2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about fission yeast cell growth.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "6ebfcc78-afe9-4c5c-9a49-f5ab3ae55ef3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C59",
+      "claim": "The transition from monopolar to bipolar growth is known as new end take-off (NETO).",
+      "claim_type": "EXPLICIT",
+      "source": "This transition from monopolar to bipolar growth is known as new end take-off (NETO) (Mitchison and Nurse, 1985; Sveiczer et al., 1996; Martin and Chang, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "e5f599d7-85d1-4440-ab11-2ba333b56739",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C60",
+      "claim": "Several papers reported aging phenotypes in fission yeast akin to those observed in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Several papers reported aging phenotypes akin to those observed in budding yeast (e.g., mother cells become larger, divide more slowly, and have less healthy offspring as they age) (Erjavec et al., 2008; Barker and Walmsley, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "5e146da9-845b-401d-a970-51435f31c196",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C61",
+      "claim": "A recent report used colony lineage analysis to conclude that protein aggregates are not asymmetrically distributed in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent report used colony lineage analysis to conclude that protein aggregates are not asymmetrically distributed, and that inheriting the old cell pole or the old spindle pole body during cell division does not lead to a decline in cell health (Coelho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Coelho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "468e8a8a-a612-40aa-b0f7-6fe978df7ae8",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C62",
+      "claim": "Inheriting the old cell pole or the old spindle pole body during cell division does not lead to a decline in cell health in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a recent report used colony lineage analysis to conclude that protein aggregates are not asymmetrically distributed, and that inheriting the old cell pole or the old spindle pole body during cell division does not lead to a decline in cell health (Coelho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Coelho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "44a8ec63-00a4-4c1e-85c4-d0d673b21ad4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C63",
+      "claim": "Coelho et al. tracked the first 7\u20138 cell divisions of microcolonies on agar plates and thus could not observe the RLS of single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this report tracked the first 7\u20138 cell divisions of microcolonies on agar plates and thus could not observe the RLS of single cells (Coelho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Coelho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "cbb3747b-ebe6-4abf-9d09-a454ffcfd011",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C64",
+      "claim": "Extrinsic effects related to using a solid agar surface may confound observations made under these conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Extrinsic effects related to using a solid agar surface may confound observations made under these conditions (Mei and Brenner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Mei and Brenner, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "bacbba23-9d1f-4bc3-b332-d60448eb7d19",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C65",
+      "claim": "Large sample sizes are needed to truly capture cellular lifespan accurately \u2013 populations less than ~100 cells do not reliably estimate the RLS.",
+      "claim_type": "EXPLICIT",
+      "source": "recent work using high-throughput microfluidic devices to study individual budding yeast and bacterial cells (Lee et al., 2012; Crane et al., 2014; Wang et al., 2010; Liu et al., 2015; Jo et al., 2015; Nobs and Maerkl, 2014; Tian et al., 2013; Huberts et al., 2014; Minc and Chang, 2010) has shown that large sample sizes are needed to truly capture cellular lifespan accurately \u2013 populations less than ~100 cells do not reliably estimate the RLS (Huberts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies, particularly Huberts et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "2969301d-37f6-47a1-b5a6-dd0f544bb1d3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C66",
+      "claim": "The histone deacetylase Sir2p modulates lifespan and aging in a wide variety of organisms from yeasts to mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone deacetylase Sir2p modulates lifespan and aging in a wide variety of organisms from yeasts to mice (Wierman and Smith, 2014; Donmez and Guarente, 2010; Ganley and Kobayashi, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "42681865-42c0-4b4f-b5cc-61d1008c8a62",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C67",
+      "claim": "sir2 deletion (sir2\u0394) in budding yeast reduces the replicative lifespan by ~50%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sir2 deletion (sir2\u0394) in budding yeast reduces the replicative lifespan by ~50% (Jo et al., 2015; Kaeberlein et al., 1999), whereas Sir2p overexpression can increase the RLS by up to 30% (Kaeberlein et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "f7588f71-74b5-48ba-b442-dd209bbaf021",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C68",
+      "claim": "Sir2p overexpression in budding yeast can increase the RLS by up to 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, sir2 deletion (sir2\u0394) in budding yeast reduces the replicative lifespan by ~50% (Jo et al., 2015; Kaeberlein et al., 1999), whereas Sir2p overexpression can increase the RLS by up to 30% (Kaeberlein et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "502bc52a-5c90-40f9-a69e-cf882c2b1abc",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C69",
+      "claim": "The S. pombe genome encodes three Sir2p homologs, one of which shares a high degree of sequence similarity and biochemical functions with the budding yeast Sir2p.",
+      "claim_type": "EXPLICIT",
+      "source": "The S. pombe genome encodes three Sir2p homologs, one of which shares a high degree of sequence similarity and biochemical functions with the budding yeast Sir2p (Shankaranarayana et al., 2003; Freeman-Cook et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "afb94bd9-4c25-4a28-8922-772927b9e76e",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C70",
+      "claim": "Wild type and sir2\u0394 cells had similar growth rates when cultured without stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with prior observations that wild type and sir2\u0394 cells had similar growth rates when cultured without stressors (Erjavec et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Erjavec et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "db7d99b5-ed07-4d03-a4ee-997067af0fd4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C71",
+      "claim": "The target of rapamycin (TOR) pathway is the central regulator of cell growth and aging in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The target of rapamycin (TOR) pathway is the central regulator of cell growth and aging in eukaryotes (Johnson et al., 2013; Loewith and Hall, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8d410a82-ce7a-458a-8ab2-73307affbef2",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C72",
+      "claim": "Rapamycin inhibits TOR proteins in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin inhibits TOR proteins in eukaryotes (Kunz et al., 1993; Brown et al., 1994), reducing cell growth by altering translation initiation and repressing ribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "78c759de-55b6-4069-9c90-f7048b4f3ad1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C73",
+      "claim": "Rapamycin increases the RLS of budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin increases the RLS of budding yeast (Medvedik et al., 2007), and also increases the longevity of worms, flies and mice (Robida-Stubbs et al., 2012; Bjedov et al., 2010; Harrison et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3cb61145-0dfc-4cfa-8671-cae63a1e883b",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C74",
+      "claim": "Rapamycin increases the longevity of worms, flies and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin increases the RLS of budding yeast (Medvedik et al., 2007), and also increases the longevity of worms, flies and mice (Robida-Stubbs et al., 2012; Bjedov et al., 2010; Harrison et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a79678fd-2e52-4ad4-a58b-77eecdbd9aad",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C75",
+      "claim": "Ribosomal DNA (rDNA) is a repetitive, recombination-prone region in eukaryotic genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomal DNA (rDNA) is a repetitive, recombination-prone region in eukaryotic genomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about rDNA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "93f9e69c-f092-446b-b10e-4699baf40fb1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C76",
+      "claim": "Defects in rDNA maintenance arise from the illegitimate repair of the rDNA locus and have been proposed to be key drivers of cellular aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in rDNA maintenance arise from the illegitimate repair of the rDNA locus and have been proposed to be key drivers of cellular aging (Ganley and Kobayashi, 2014; Kobayashi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "e9f9bd88-2c53-410b-972a-9dc79582763a",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C77",
+      "claim": "Fission yeast encodes ~117 rDNA repeats on the third chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast encodes ~117 rDNA repeats on the third chromosome, and incomplete rDNA segregation can activate the spindle checkpoint (Toda et al., 1984; Maleszka and Clark-Walker, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "12f97ae0-49c4-4cd2-b3d5-1ea23acc951e",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C78",
+      "claim": "Incomplete rDNA segregation can activate the spindle checkpoint in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Fission yeast encodes ~117 rDNA repeats on the third chromosome, and incomplete rDNA segregation can activate the spindle checkpoint (Toda et al., 1984; Maleszka and Clark-Walker, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "7e623b2c-528c-45f8-aa35-56d1371c31c3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C79",
+      "claim": "Unresolved rDNA segregation can result in chromosome fragmentation and genomic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "If unresolved, this can result in chromosome fragmentation and genomic instability (Win et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Win et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "175e1ae3-4193-436a-bfa2-8256e3e5491d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C80",
+      "claim": "Aberrant rDNA structures are processed by the RecQ helicase Rqh1p.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant rDNA structures are processed by the RecQ helicase Rqh1p and mutations in the human Rqh1p homologs are implicated in cancer and premature aging-associated disorders (Croteau et al., 2014; Ellis et al., 1995; Yu et al., 1996; Kitao et al., 1999; Takahashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "831a951d-9972-4826-beb9-02cddd018061",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C81",
+      "claim": "Mutations in the human Rqh1p homologs are implicated in cancer and premature aging-associated disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Aberrant rDNA structures are processed by the RecQ helicase Rqh1p and mutations in the human Rqh1p homologs are implicated in cancer and premature aging-associated disorders (Croteau et al., 2014; Ellis et al., 1995; Yu et al., 1996; Kitao et al., 1999; Takahashi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a40278c4-649d-46ec-a8d8-1814efbc6d5c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C82",
+      "claim": "The strain expressing Gar2-mCherry at the native locus divided at approximately the same length and rate as wild-type cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The strain expressing Gar2-mCherry at the native locus divided at approximately the same length and rate as wild-type cells (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 1 showing the doubling time and length at division data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "f233ef86-efca-4dba-bdc9-61920538776c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C83",
+      "claim": "Dividing cells mostly had equal Gar2 fluorescence in both sibling cell nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Dividing cells mostly had equal Gar2 fluorescence in both sibling cell nuclei (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6A\u2013B showing images and analysis of Gar2 fluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "ae355ca7-b54a-4db2-a24d-1f3c9af554e2",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C84",
+      "claim": "The rDNA mis-segregation was similar to mis-segregation of a fluorescent marker on chromosome I (7% of cells; n = 20/278) and chromosome II (5% of cells; n = 19/370).",
+      "claim_type": "EXPLICIT",
+      "source": "The rDNA mis-segregation was similar to mis-segregation of a fluorescent marker on chromosome I (7% of cells; n = 20/278) and chromosome II (5% of cells; n = 19/370) (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 2 showing chromosome mis-segregation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "82c9ec9d-157a-46b3-8388-dfe92794ab36",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C85",
+      "claim": "In dying cells, rDNA instability was elevated relative to mis-segregation of chromosome I (16% of cells; n = 15/95) and chromosome II (13% of cells; n = 18/137).",
+      "claim_type": "EXPLICIT",
+      "source": "In dying cells, rDNA instability was elevated relative to mis-segregation of chromosome I (16% of cells; n = 15/95) and chromosome II (13% of cells; n = 18/137) (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 6\u2014figure supplement 2 showing chromosome mis-segregation data in dying cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "2e8f74bb-4727-4a28-a07a-fe26b2719a5e",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C86",
+      "claim": "The multFYLM provides a temperature-controlled growth environment for hundreds of individual cells for up to a week (>75 generations).",
+      "claim_type": "EXPLICIT",
+      "source": "The multFYLM provides a temperature-controlled growth environment for hundreds of individual cells for up to a week (>75 generations), facilitating tens of thousands of micro-dissections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the description of the device capabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3f1e4fa8-9a2a-49f1-9899-11ebea7ffeb5",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C87",
+      "claim": "Microfluidics-based lifespan measurements are free from potential extrinsic effects which have been proposed to confound observations of RLS assays using manual microdissection.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that microfluidics-based lifespan measurements are free from potential extrinsic effects (e.g., secretion of small molecules onto the solid agar surface) which have been proposed to confound observations of RLS assays using manual microdissection (Mei and Brenner, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Mei and Brenner, 2015.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "c60f2ae0-c852-4bc9-84a6-07b22e37e2b1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C88",
+      "claim": "The experimentally determined RLS does not necessarily report on whether a population of cells is aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimentally determined RLS does not necessarily report on whether a population of cells is aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the mathematical analysis of survival curves and hazard functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8c6e555d-a090-415f-9628-f34db7901cf2",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C89",
+      "claim": "The RLS is affected by a combination of both age-independent and age-dependent biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the RLS is affected by a combination of both age-independent and age-dependent biological processes\u2014cell may die randomly without aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the mathematical analysis of survival curves and hazard functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "d0ba3ab9-4891-4ac5-acce-2d7a89254f79",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C90",
+      "claim": "A mathematical model is required to parse the relative contributions of aging-independent and aging-dependent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "A mathematical model is required to further parse the relative contributions of aging-independent and aging-dependent mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the use of the Gompertz model to analyze survival data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8cffa63d-6830-49b9-8f61-298a292a8237",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C91",
+      "claim": "The Gompertz function is an excellent model for understanding the replicative lifespan survival curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gompertz function is an excellent model for understanding the replicative lifespan survival curve (Bansal et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Bansal et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8d3b6e08-90be-4c8f-b078-e67dbf872467",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C92",
+      "claim": "In the Gompertz model, the replicative lifespan is dependent on an age-independent hazard rate and an age-dependent hazard rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the replicative lifespan is dependent on just two parameters: (i) an age-independent hazard rate, and (ii) an age-dependent hazard rate, which determine how rapidly mortality increases as a function of the cell's age (Kirkwood, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Kirkwood, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "d2498caf-448e-465e-8abb-83afb43a9e0d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C93",
+      "claim": "An increased RLS is not sufficient to conclude that cells age more slowly.",
+      "claim_type": "EXPLICIT",
+      "source": "An increased RLS is not sufficient to conclude that cells age more slowly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the mathematical analysis showing that RLS can be affected by age-independent factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "af441443-4a2b-4d99-9a7b-b46c5f744101",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C94",
+      "claim": "A decreased RLS can be achieved by increasing the age-independent hazard rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our data indicate that a decreased RLS can also be achieved by increasing the age-independent hazard rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of survival curves and hazard rates for different strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "d38a04e0-846c-4cba-8356-0de87fd63ad4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C95",
+      "claim": "For all fission yeast data, changes in RLS can be completely accounted for by changes in the age-independent hazard rate.",
+      "claim_type": "EXPLICIT",
+      "source": "For all of our data, changes in RLS can be completely accounted for by changes in the age-independent hazard rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the analysis of survival curves and hazard rates for different strains and conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3e5382f1-2b34-43c0-9830-864ed3db6c19",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C96",
+      "claim": "Budding yeast have age-dependent hazard rates an order of magnitude higher than their age-independent rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, budding yeast have age-dependent hazard rates an order of magnitude higher than their age-independent rates (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 7 showing the Gompertz model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9cced8a0-85e4-4dff-8d04-c5d238dfb71c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C97",
+      "claim": "Rapamycin and Sir2p may partially affect the RLS of aging organisms like S. cerevisiae via an aging-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that both Sir2p and rapamycin may partially affect the RLS of aging organisms like S. cerevisiae via an aging-independent mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the observation that these interventions extend RLS in fission yeast without affecting aging phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "79f50de3-4296-4a87-8eea-745913ebfab6",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C98",
+      "claim": "For a subset of cells, genomic instability due to aberrant segregation of the rDNA locus may be one cause of death.",
+      "claim_type": "EXPLICIT",
+      "source": "For a subset of cells, genomic instability due to aberrant segregation of the rDNA locus may be one cause of death (Saka et al., 2013; Ganley and Kobayashi, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies and the analysis of rDNA defects in dying cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "b2c9b4f8-4a6a-4679-a1a9-96c8c67c0470",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C99",
+      "claim": "Protein aggregation may be a second major cause of sudden death in rapidly dividing fission yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also indicate that protein aggregation may be a second major cause of sudden death in rapidly dividing fission yeast cells (Coelho et al., 2013, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "ae3c7b83-480e-4c68-abbf-f882fd2e5625",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C100",
+      "claim": "The doubling time of wild-type S. pombe (h- 972) observed in the multFYLM was 2.05 \u00b1 0.45 hr (mean \u00b1 S.D., n = 13,453 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "The doubling time was 2.05 \u00b1 0.45 hr (mean \u00b1 S.D., n = 13,453 cells).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2\u2014figure supplement 1A showing the histogram of doubling times.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "25232213-bf36-44b5-8ba5-17af450ed402",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C101",
+      "claim": "The mean length at division of wild-type S. pombe (h- 972) was 16 \u00b1 2.2 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean length at division was 16 \u00b1 2.2 \u00b5m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2\u2014figure supplement 1B showing the histogram of division lengths.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "bbce0429-3537-4559-a6b0-caba82708f15",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C102",
+      "claim": "Doubling time did not generally change with age in wild-type S. pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "Doubling time did not generally change with age.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 2\u2014figure supplement 1D showing doubling time as a function of generation number.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8fa7ec03-f5b8-42a2-8521-cff0fb2ea048",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C103",
+      "claim": "The birth length of wild-type S. pombe was 8.3 \u00b1 1.5 \u00b5m (mean \u00b1 st. dev., n = 326).",
+      "claim_type": "EXPLICIT",
+      "source": "The birth length was 8.3 \u00b1 1.5 \u00b5m (mean \u00b1 st. dev., n = 326) and the length at division was 16 \u00b1 2.2 \u00b5m (n = 326).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 3B showing the histogram of cell length at death.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "c4ef72a5-5dd3-4fee-b2ff-bdd5fd7e3b9b",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C104",
+      "claim": "The longevity of strain NCYC132 is consistent with an earlier manual microdissection study performed on solid media.",
+      "claim_type": "EXPLICIT",
+      "source": "The longevity of strain NCYC132 is consistent with an earlier manual microdissection study performed on solid media (Coelho et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Coelho et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0e5d8bb1-3c36-4c5b-b76f-6e1c282e26a6",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C105",
+      "claim": "Most laboratory fission yeast strains have three chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Most laboratory fission yeast strains have three chromosomes, but the recently identified strain CBS2777 has a fourth chromosome that originated via a series of complex genomic rearrangements (Brown et al., 2014, 2011; Rhind et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "a4626954-6d4d-4fe3-92e8-604839d3b8ff",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C106",
+      "claim": "Strain CBS2777 has a fourth chromosome that originated via a series of complex genomic rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Most laboratory fission yeast strains have three chromosomes, but the recently identified strain CBS2777 has a fourth chromosome that originated via a series of complex genomic rearrangements (Brown et al., 2014, 2011; Rhind et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9d0761f3-c641-49a2-8ddc-ef0aaa149d2e",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C107",
+      "claim": "The short RLS of CBS2777 is consistent with its aberrant genome and altered genome maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "CBS2777 had the shortest RLS of 22.7 generations (95% CI 21.9\u201323.6 generations), consistent with its aberrant genome and altered genome maintenance (Brown et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Brown et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0939642d-9ab6-4956-b611-2402b2c5f1c3",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C108",
+      "claim": "In S. pombe, cell length is strongly correlated with division time.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. pombe, cell length is strongly correlated with division time and cell length, indicating that cell cycle checkpoints were likely dysregulated in these dying cells (Mitchison and Nurse, 1985; Sveiczer et al., 1996; Wood and Nurse, 2015; Hachet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "8e5699ce-c32b-47cb-9b84-fb5154409869",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C109",
+      "claim": "Cell cycle checkpoints were likely dysregulated in elongated dying cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. pombe, cell length is strongly correlated with division time and cell length, indicating that cell cycle checkpoints were likely dysregulated in these dying cells (Mitchison and Nurse, 1985; Sveiczer et al., 1996; Wood and Nurse, 2015; Hachet et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies and the observation of elongated cells.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "b32b8c48-eb71-4be2-9bd6-40404f8fd7c1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C110",
+      "claim": "Elongated cells generally indicate the activation of a DNA damage checkpoint.",
+      "claim_type": "EXPLICIT",
+      "source": "As elongated cells generally indicate the activation of a DNA damage checkpoint (Furnari et al., 1997), our findings suggest that genome instability in these cells may be the underlying cause of death in both the old cell and its most recent sibling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citation to Furnari et al., 1997.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "0bfa14d3-bce3-4e37-8558-7fc4c81557d8",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C111",
+      "claim": "Genome instability may be the underlying cause of death in elongated cells and their most recent siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "As elongated cells generally indicate the activation of a DNA damage checkpoint (Furnari et al., 1997), our findings suggest that genome instability in these cells may be the underlying cause of death in both the old cell and its most recent sibling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the observation that elongated cells are more likely to have unhealthy offspring.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "c83a687a-f8a5-49a5-9a66-b97a56c33920",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C112",
+      "claim": "Healthy new-pole cells were typically born from old-pole cells that did not elongate during their terminal division.",
+      "claim_type": "EXPLICIT",
+      "source": "These healthy new-pole cells were typically born from old-pole cells that did not elongate during their terminal division (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is directly stated in the text and supported by Figure 4C\u2013D showing the length and doubling time of new-pole siblings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "474e3562-3cdd-493a-81a3-e55f81cf6018",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C113",
+      "claim": "The cause of death was contained within the old-pole cell in cases where new-pole siblings divided two or more times.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the cause of death was contained within the old-pole cell, thereby reducing the likelihood of death in the sibling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by the observation that some new-pole siblings are healthy and divide multiple times.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "28de7277-faae-4e1f-93b1-ce28838ff2dc",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C114",
+      "claim": "Older S. cerevisiae mothers produce larger and slower-dividing daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, older S. cerevisiae mothers produce larger and slower-dividing daughter cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and represents established knowledge about budding yeast aging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "62d41192-5d5a-4155-9bbd-e31dbd29fe9e",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "claim_id": "C115",
+      "claim": "Aging factors are generally sequestered to younger mother cells in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are in stark contrast to S. cerevisiae, where aging factors are generally sequestered to younger mother cells (Henderson et al., 2014; Zhou et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is directly stated in the text and supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The multFYLM is a microfluidic device consisting of six independent subsystems with 2352 total cell capacity, achieving >80% loading efficiency and up to 98% cell retention for over 100 hours, enabling observation of hundreds of cells for >75 generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C86 provide converging technical specifications and performance metrics for the multFYLM device, supported by figures showing device structure, loading efficiency, and retention data. The device capabilities are well-documented with appropriate sample sizes and statistical measures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "d9d602af-b4a3-480a-9721-85206ef74d97",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cells in the multFYLM exhibit normal growth characteristics with doubling time of 2.05 \u00b1 0.45 hr, division length of 16 \u00b1 2.2 \u00b5m, and age-independent doubling times, comparable to cells in liquid culture and previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C100-C102 demonstrate that the microfluidic environment does not alter fundamental cell biology, validated by comparison to literature values and large sample sizes (n=13,453 cells). This establishes the multFYLM as a valid experimental platform.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fission yeast survival curves fit an exponential decay model rather than the Gompertz aging model, with a constant hazard rate of ~2% per generation, demonstrating that fission yeast does not age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8, C13, C44, and C48 present the central finding using mathematical modeling of survival data. The exponential decay fit and constant hazard rate across multiple strains (C13) provide strong evidence for age-independent mortality. The comparison to budding yeast (C9) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "27d7222d-361b-44ef-9de4-8181aea4ed88",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Budding yeast (S. cerevisiae) exhibits age-dependent mortality with hazard rates increasing with generation number and fitting the Gompertz model, with age-dependent rates an order of magnitude higher than age-independent rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C96 provide comparative data from budding yeast that validates the analytical framework and highlights the distinction between aging and non-aging organisms. The use of published data (Jo et al., 2015) is appropriate for comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multiple fission yeast strains exhibit diverse replicative lifespans (22.7 to >70 generations) but all show exponential decay survival curves, indicating aging-independent mortality is a species-wide feature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 and C14 demonstrate that the aging-independent phenotype is conserved across genetically diverse strains. Sample sizes are adequate (n>100 for most strains), and the consistency with prior work (C104) validates the findings. The correlation of short RLS in CBS2777 with genomic instability (C11, C107) is appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "01e55823-61bf-4656-9cd4-af57041e3bde",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fission yeast cells die without progressive aging-associated morphological changes; 72% die at normal length, 28% show elongation, but most maintain normal doubling times throughout life with only mild changes in the final two generations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 and C46 provide detailed morphological analysis showing absence of progressive aging phenotypes. The statistical analysis (C18) appropriately identifies mild changes while noting lack of predictable individual trends. Large sample sizes (n=234 short, n=92 long) support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The fate of new-pole siblings is independent of old-pole replicative age; 66% die without dividing, 14% divide once and die, and 20% divide multiple times with normal kinetics, with no correlation between parental age and sibling survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24, C26-C27 demonstrate age-independent inheritance patterns distinct from budding yeast. The quantification of sibling fates with adequate sample sizes (n=135, 29, 40 for each category) and the lack of age correlation (C20, C27) strongly support the absence of aging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4336f007-bebc-4e99-8fe0-49d7c08585e9",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Sir2p deletion reduces RLS by 15% while 2-fold overexpression increases RLS >50% by reducing the age-independent hazard rate 2-fold, without affecting aging phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 demonstrate genetic modulation of lifespan through age-independent mechanisms. Sample sizes are adequate (n=329, 301, 440), expression levels are validated (Figure 5\u2014supplement 1), and the lack of aging phenotype changes (C34-C35) is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "aa735251-e72e-4f10-8468-996645ddd61d",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Treatment with 100 nM rapamycin increases RLS by 41% by reducing the age-independent hazard rate without affecting cell length or doubling time in the generations preceding death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 demonstrate pharmacological lifespan extension through age-independent mechanisms. The sample size (n=184) is adequate, and the morphological analysis (C34-C35) confirms absence of aging effects, paralleling the Sir2p results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "b76d8275-6c37-4e9b-bf58-bcad46957eae",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "rDNA segregation defects occur in 7% of dividing cells but 40% of dying cells, with multi-punctate loci nearly always lethal and asymmetric segregation/bridges lethal in 40% of cases, indicating rDNA stability promotes longevity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 and C43 identify rDNA instability as a mechanism of stochastic death. The elevated frequency in dying cells (40% vs 7%) with adequate sample sizes (n=88/1182 total, n=56/141 dying) and comparison to other chromosomes (C84-C85) provide strong evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4c50e971-8f32-4bd4-a3d1-308a1ac0e2b9",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loss of Rqh1p helicase causes elevated rDNA defects, dramatically shortened RLS (5.3 generations), and >7-fold higher hazard rate; rapamycin provides mild rescue while Sir2p overexpression in rqh1\u0394 is extremely detrimental.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 demonstrate the importance of rDNA maintenance machinery for lifespan. The dramatic phenotype of rqh1\u0394 and differential effects of interventions provide mechanistic insight, though the extremely short lifespan of rqh1\u0394 sir2OE (C42) warrants further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "2b4cfef6-5794-4339-b64e-374cba35e4ec",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cellular aging and replicative lifespan can be uncoupled in eukaryotes; RLS is affected by both age-independent and age-dependent processes, requiring mathematical modeling (Gompertz function) to distinguish contributions, and interventions can extend RLS through age-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47, C88-C95 establish the conceptual framework for interpreting RLS data. The mathematical analysis is sound, appropriately applied to both fission and budding yeast data, and the conclusion that all fission yeast RLS changes are age-independent (C95) is well-supported by the hazard rate analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "4fd4f01e-eee9-4ac1-9c75-6441f6a65378",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Gar2-mCherry reporter strain shows normal growth characteristics with equal rDNA fluorescence in most dividing cells; rDNA mis-segregation (7%) is similar to chromosome I and II mis-segregation but elevated in dying cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C85 validate the rDNA reporter system and provide baseline mis-segregation rates. The comparison across chromosomes with adequate sample sizes (n=278, 370 for chromosomes I and II) strengthens the conclusion that rDNA instability is specifically elevated in dying cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "23daa43a-ac25-4f0a-90ab-9066ab47275a",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Rapamycin and Sir2p may partially affect RLS in aging organisms like S. cerevisiae through age-independent mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 is speculative extrapolation from fission yeast to budding yeast. While the observation that these interventions work through age-independent mechanisms in non-aging fission yeast is well-supported, the claim about their mechanism in aging organisms requires direct experimental validation in those systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "af3a866b-7d37-431d-820e-52cbad81dc91",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Genomic instability from rDNA segregation defects and protein aggregation are proposed as major causes of stochastic death in fission yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 is supported by the rDNA data presented (C37-C40), while C99 relies on citations to prior work (Coelho et al., 2013, 2014). The integration of these mechanisms as complementary causes of stochastic death is reasonable, though protein aggregation was not directly examined in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "221c7e3a-a517-42a0-96ac-90d8fbccf719",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Elongated dying cells likely have dysregulated DNA damage checkpoints and genome instability affecting both siblings, while non-elongated dying cells often produce healthy offspring, suggesting localized versus distributed causes of death.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C109-C113 integrate morphological and sibling fate data to infer mechanisms. The correlation between elongation and unhealthy offspring (C23) and the association with DNA damage checkpoints (C110) are well-reasoned, though the mechanistic inferences (C111, C113) are appropriately presented as suggestions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "521a884c-f320-4e4a-bb35-4964de55d767",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Microfluidics-based lifespan measurements avoid potential extrinsic effects from solid agar surfaces that may confound manual microdissection assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 is a reasonable methodological advantage supported by citation (Mei and Brenner, 2015). The continuous flow of fresh media and removal of waste products are clear advantages over agar-based assays, though direct comparison experiments were not performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background knowledge claims about yeast biology, aging mechanisms, prior studies, and molecular pathways establish context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C81 and C105-C115 represent established knowledge from the literature, appropriately cited and accurately presented. These provide essential context for interpreting the novel findings but are not primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    },
+    {
+      "id": "31595dfc-6894-436d-bb5c-9cfde397d57c",
+      "content_id": "abd90d45-a5d4-4a91-9ffb-4820e3c9c44b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Birth length of wild-type S. pombe is 8.3 \u00b1 1.5 \u00b5m; the short RLS of CBS2777 is consistent with its aberrant genome and altered genome maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 provides a basic morphological measurement. Claim C107 makes a reasonable inference connecting genomic abnormalities to shortened lifespan, appropriately supported by citation (Brown et al., 2014), though the causal relationship is not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:46:14.688779Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cad211e4-ce91-4665-b20a-42634cc0536a",
+      "result_id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a"
+    },
+    {
+      "claim_id": "b052346c-c249-4328-aff2-bdd57313ee65",
+      "result_id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a"
+    },
+    {
+      "claim_id": "8fc975b8-e9e2-420f-864f-1d3aacbf5ae7",
+      "result_id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a"
+    },
+    {
+      "claim_id": "9f13c20e-3378-40b9-aa19-35ffaa65261f",
+      "result_id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a"
+    },
+    {
+      "claim_id": "2e8f74bb-4727-4a28-a07a-fe26b2719a5e",
+      "result_id": "d0e4f4c4-def2-40ff-b048-06f87a054c3a"
+    },
+    {
+      "claim_id": "233b85a2-f7c0-4573-b5e1-e21b07cd3ea4",
+      "result_id": "d9d602af-b4a3-480a-9721-85206ef74d97"
+    },
+    {
+      "claim_id": "ae3c7b83-480e-4c68-abbf-f882fd2e5625",
+      "result_id": "d9d602af-b4a3-480a-9721-85206ef74d97"
+    },
+    {
+      "claim_id": "25232213-bf36-44b5-8ba5-17af450ed402",
+      "result_id": "d9d602af-b4a3-480a-9721-85206ef74d97"
+    },
+    {
+      "claim_id": "bbce0429-3537-4559-a6b0-caba82708f15",
+      "result_id": "d9d602af-b4a3-480a-9721-85206ef74d97"
+    },
+    {
+      "claim_id": "21ea0641-59bc-42af-84fa-5b50d257479d",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "8f24053e-ff29-4b8d-8381-69780c0b1c23",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "5fe82e34-fcd5-42d4-a61d-318f127033f3",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "291633cd-4436-4f5e-b542-ed32c8c5cd1d",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "6508f3ab-57df-46d8-9d2a-984ee52f11ab",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "0eda2fe6-fb2d-4acb-8d41-23d449e410ba",
+      "result_id": "9be6e4fb-da89-41cf-8c87-f25fb6dd96c4"
+    },
+    {
+      "claim_id": "a6d1de26-3a50-4018-8ff1-cd738e9e2ce3",
+      "result_id": "27d7222d-361b-44ef-9de4-8181aea4ed88"
+    },
+    {
+      "claim_id": "3e5382f1-2b34-43c0-9830-864ed3db6c19",
+      "result_id": "27d7222d-361b-44ef-9de4-8181aea4ed88"
+    },
+    {
+      "claim_id": "95354b5f-3d8a-437d-9b1d-0a3fd25dca72",
+      "result_id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397"
+    },
+    {
+      "claim_id": "a13d4a0f-ff10-499c-a23d-c36b48c4617f",
+      "result_id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397"
+    },
+    {
+      "claim_id": "0078ee30-17f2-47c3-aa66-1632f6691ad6",
+      "result_id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397"
+    },
+    {
+      "claim_id": "1cc404bd-39e4-42ac-b188-5dd46ac6a7b3",
+      "result_id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397"
+    },
+    {
+      "claim_id": "c4ef72a5-5dd3-4fee-b2ff-bdd5fd7e3b9b",
+      "result_id": "7f54aa2f-0ed9-4116-8748-e5c4be5a5397"
+    },
+    {
+      "claim_id": "6459c84f-b535-4a43-95d5-47dcb988c9ef",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "7514b072-b61c-4022-8b99-522f76b526e6",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "31c12f13-ceac-47b8-99db-dcc8de2c7713",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "30a8b43a-ff51-44a8-b0f0-ba87a4a5d504",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "3e10fe7b-6807-431d-8980-cf3bd157239c",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "5ad4d484-642b-4554-b6bf-ee460ffc40db",
+      "result_id": "01e55823-61bf-4656-9cd4-af57041e3bde"
+    },
+    {
+      "claim_id": "ddcda839-85a1-4caf-a3d9-20929f1c7a68",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "e1b86e8b-51d2-4f8e-bee7-448e167036e9",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "4b7fdd73-ca08-46f6-a6d3-44a3de0686b1",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "a26e45cb-e1f0-406c-9530-323e70ee0521",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "239954cf-3e49-4b78-ae63-db3b7a00ee61",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "f7bdd2f9-01dc-4121-9bd8-93d45d335e46",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "ad17daab-d0c8-44b6-a925-33d1db99f347",
+      "result_id": "3d7ab360-54cd-4c03-a3b2-abd7169804f1"
+    },
+    {
+      "claim_id": "b29fe98a-7647-4641-bcb2-2d9d7e04b806",
+      "result_id": "4336f007-bebc-4e99-8fe0-49d7c08585e9"
+    },
+    {
+      "claim_id": "4f0285d3-e593-4470-aa50-9025351781b7",
+      "result_id": "4336f007-bebc-4e99-8fe0-49d7c08585e9"
+    },
+    {
+      "claim_id": "319ef8e0-0614-46e4-a5c4-253338a8425d",
+      "result_id": "4336f007-bebc-4e99-8fe0-49d7c08585e9"
+    },
+    {
+      "claim_id": "516e0f12-e90f-4cab-926c-66caeccd5427",
+      "result_id": "4336f007-bebc-4e99-8fe0-49d7c08585e9"
+    },
+    {
+      "claim_id": "eb869826-ab0f-4fe1-9d0c-5f8d9cdfb593",
+      "result_id": "aa735251-e72e-4f10-8468-996645ddd61d"
+    },
+    {
+      "claim_id": "00af094a-0de8-43e8-a861-12ff9b274c8f",
+      "result_id": "aa735251-e72e-4f10-8468-996645ddd61d"
+    },
+    {
+      "claim_id": "9b9c4144-444a-4b9e-a5f2-c4aaa3b16b16",
+      "result_id": "aa735251-e72e-4f10-8468-996645ddd61d"
+    },
+    {
+      "claim_id": "7e519e85-d965-4af3-90aa-8a10a5846655",
+      "result_id": "aa735251-e72e-4f10-8468-996645ddd61d"
+    },
+    {
+      "claim_id": "dccfe121-2646-49e2-af45-f66ee93c48d0",
+      "result_id": "b76d8275-6c37-4e9b-bf58-bcad46957eae"
+    },
+    {
+      "claim_id": "369d7ee7-7333-4a06-8051-694afc477105",
+      "result_id": "b76d8275-6c37-4e9b-bf58-bcad46957eae"
+    },
+    {
+      "claim_id": "be8f9a4d-0008-48f7-baa8-53f4ac186e42",
+      "result_id": "b76d8275-6c37-4e9b-bf58-bcad46957eae"
+    },
+    {
+      "claim_id": "c1024248-b9bd-45e2-b37b-aefd06c51ffe",
+      "result_id": "b76d8275-6c37-4e9b-bf58-bcad46957eae"
+    },
+    {
+      "claim_id": "28bfb687-eaa6-441c-b0c6-d0460655d620",
+      "result_id": "b76d8275-6c37-4e9b-bf58-bcad46957eae"
+    },
+    {
+      "claim_id": "f13f00dc-69bf-4e44-be36-7ed8bd4b1ac9",
+      "result_id": "4c50e971-8f32-4bd4-a3d1-308a1ac0e2b9"
+    },
+    {
+      "claim_id": "9d88e04c-824a-4add-a19a-303e8f2c04cd",
+      "result_id": "4c50e971-8f32-4bd4-a3d1-308a1ac0e2b9"
+    },
+    {
+      "claim_id": "94cf4b88-8ec0-49bf-9bf1-dc17cf45781f",
+      "result_id": "4c50e971-8f32-4bd4-a3d1-308a1ac0e2b9"
+    },
+    {
+      "claim_id": "26c864db-607d-4bc1-a9e1-9e99947705a3",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "f2bab915-a2f1-4afb-b487-6d6b4d46cb2c",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "c60f2ae0-c852-4bc9-84a6-07b22e37e2b1",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "8c6e555d-a090-415f-9628-f34db7901cf2",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "d0ba3ab9-4891-4ac5-acce-2d7a89254f79",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "8cffa63d-6830-49b9-8f61-298a292a8237",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "8d3b6e08-90be-4c8f-b078-e67dbf872467",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "d2498caf-448e-465e-8abb-83afb43a9e0d",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "af441443-4a2b-4d99-9a7b-b46c5f744101",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "d38a04e0-846c-4cba-8356-0de87fd63ad4",
+      "result_id": "2b4cfef6-5794-4339-b64e-374cba35e4ec"
+    },
+    {
+      "claim_id": "a40278c4-649d-46ec-a8d8-1814efbc6d5c",
+      "result_id": "4fd4f01e-eee9-4ac1-9c75-6441f6a65378"
+    },
+    {
+      "claim_id": "f233ef86-efca-4dba-bdc9-61920538776c",
+      "result_id": "4fd4f01e-eee9-4ac1-9c75-6441f6a65378"
+    },
+    {
+      "claim_id": "ae355ca7-b54a-4db2-a24d-1f3c9af554e2",
+      "result_id": "4fd4f01e-eee9-4ac1-9c75-6441f6a65378"
+    },
+    {
+      "claim_id": "82c9ec9d-157a-46b3-8388-dfe92794ab36",
+      "result_id": "4fd4f01e-eee9-4ac1-9c75-6441f6a65378"
+    },
+    {
+      "claim_id": "9cced8a0-85e4-4dff-8d04-c5d238dfb71c",
+      "result_id": "23daa43a-ac25-4f0a-90ab-9066ab47275a"
+    },
+    {
+      "claim_id": "79f50de3-4296-4a87-8eea-745913ebfab6",
+      "result_id": "af3a866b-7d37-431d-820e-52cbad81dc91"
+    },
+    {
+      "claim_id": "b2c9b4f8-4a6a-4679-a1a9-96c8c67c0470",
+      "result_id": "af3a866b-7d37-431d-820e-52cbad81dc91"
+    },
+    {
+      "claim_id": "a26e45cb-e1f0-406c-9530-323e70ee0521",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "8e5699ce-c32b-47cb-9b84-fb5154409869",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "b32b8c48-eb71-4be2-9bd6-40404f8fd7c1",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "0bfa14d3-bce3-4e37-8558-7fc4c81557d8",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "c83a687a-f8a5-49a5-9a66-b97a56c33920",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "474e3562-3cdd-493a-81a3-e55f81cf6018",
+      "result_id": "221c7e3a-a517-42a0-96ac-90d8fbccf719"
+    },
+    {
+      "claim_id": "3f1e4fa8-9a2a-49f1-9899-11ebea7ffeb5",
+      "result_id": "521a884c-f320-4e4a-bb35-4964de55d767"
+    },
+    {
+      "claim_id": "cc8c9b43-150a-4ca2-8faa-982c31a969f2",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "fd9279a0-298d-4394-8596-77180c4d2f10",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "a2550037-105c-4a1f-a2f0-7b61dcf0ddd0",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "0b18ecda-b641-430a-aa38-f4d4e66281ff",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "a0525e84-3bb3-45cb-aa05-18b656b78f1f",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "aaba8fcf-e4e1-44af-9bdb-9cbb64d8c9f4",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "4ac8dffd-be7e-4d47-a8d5-51b710add31f",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "3fa1f29a-983f-435d-86a8-2177ea608ac5",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "eee32103-f247-4558-9b00-2b6e7ff4e6a2",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "36aa5cec-bf3c-45af-acb1-3ef0425701ac",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "6ebfcc78-afe9-4c5c-9a49-f5ab3ae55ef3",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "e5f599d7-85d1-4440-ab11-2ba333b56739",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "5e146da9-845b-401d-a970-51435f31c196",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "468e8a8a-a612-40aa-b0f7-6fe978df7ae8",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "44a8ec63-00a4-4c1e-85c4-d0d673b21ad4",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "cbb3747b-ebe6-4abf-9d09-a454ffcfd011",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "bacbba23-9d1f-4bc3-b332-d60448eb7d19",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "2969301d-37f6-47a1-b5a6-dd0f544bb1d3",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "42681865-42c0-4b4f-b5cc-61d1008c8a62",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "f7588f71-74b5-48ba-b442-dd209bbaf021",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "502bc52a-5c90-40f9-a69e-cf882c2b1abc",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "afb94bd9-4c25-4a28-8922-772927b9e76e",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "db7d99b5-ed07-4d03-a4ee-997067af0fd4",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "8d410a82-ce7a-458a-8ab2-73307affbef2",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "78c759de-55b6-4069-9c90-f7048b4f3ad1",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "3cb61145-0dfc-4cfa-8671-cae63a1e883b",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "a79678fd-2e52-4ad4-a58b-77eecdbd9aad",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "93f9e69c-f092-446b-b10e-4699baf40fb1",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "e9f9bd88-2c53-410b-972a-9dc79582763a",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "12f97ae0-49c4-4cd2-b3d5-1ea23acc951e",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "7e623b2c-528c-45f8-aa35-56d1371c31c3",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "175e1ae3-4193-436a-bfa2-8256e3e5491d",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "831a951d-9972-4826-beb9-02cddd018061",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "0e5d8bb1-3c36-4c5b-b76f-6e1c282e26a6",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "a4626954-6d4d-4fe3-92e8-604839d3b8ff",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "0939642d-9ab6-4956-b611-2402b2c5f1c3",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "28de7277-faae-4e1f-93b1-ce28838ff2dc",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "62d41192-5d5a-4155-9bbd-e31dbd29fe9e",
+      "result_id": "3470e8e0-2ddf-4504-b6a4-de8ffca34e3f"
+    },
+    {
+      "claim_id": "8fa7ec03-f5b8-42a2-8521-cff0fb2ea048",
+      "result_id": "31595dfc-6894-436d-bb5c-9cfde397d57c"
+    },
+    {
+      "claim_id": "9d0761f3-c641-49a2-8ddc-ef0aaa149d2e",
+      "result_id": "31595dfc-6894-436d-bb5c-9cfde397d57c"
+    }
+  ],
+  "comparisons": []
+}

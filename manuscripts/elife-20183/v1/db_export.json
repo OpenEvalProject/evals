@@ -1,0 +1,1690 @@
+{
+  "submission": {
+    "id": "82240f1e-350f-46c1-876c-3a72c490e4b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:53:14.628861Z",
+    "updated_at": "2025-11-30T22:53:14.628861Z"
+  },
+  "content": [
+    {
+      "id": "c645fabd-2330-46ee-a481-907bae854328",
+      "submission_id": "82240f1e-350f-46c1-876c-3a72c490e4b4",
+      "content_type": "manuscript",
+      "content_text": "# Aberrant corticosteroid metabolism in tumor cells enables GR takeover in enzalutamide resistant prostate cancer\n\n## Authors\n\n- Jianneng Li<sup>1</sup>\n- Mohammad Alyamani<sup>1</sup>\n- Ao Zhang<sup>1</sup>\n- Kai-Hsiung Chang<sup>1</sup>\n- Michael Berk<sup>1</sup>\n- Zhenfei Li<sup>1</sup>\n- Ziqi Zhu<sup>1</sup>\n- Marianne Petro<sup>1</sup> ([ORCID: 0000-0003-3509-2999](https://orcid.org/0000-0003-3509-2999))\n- Cristina Magi-Galluzzi<sup>3</sup>\n- Mary-Ellen Taplin<sup>4</sup>\n- Jorge A Garcia<sup>5</sup>\n- Kevin Courtney<sup>6</sup>\n- Eric A Klein<sup>7</sup>\n- Nima Sharifi<sup>1</sup> ([ORCID: 0000-0003-1281-3474](https://orcid.org/0000-0003-1281-3474)) \u2020\n\n### Affiliations\n\n1. Department of Cancer Biology Lerner Research Institute Cleveland United States\n2. Department of Chemistry Cleveland State University Cleveland United States\n3. Pathology and Laboratory Medicine Institute Cleveland United States\n4. Lank Center of Genitourinary Oncology Dana-Farber Cancer Institute, Harvard Medical School Boston United States\n5. Department of Hematology and Oncology Taussig Cancer Institute Cleveland United States\n6. Division of Hematology and Oncology, Department of Internal Medicine University of Texas Southwestern Medical Center Dallas United States\n7. Department of Urology Glickman Urological and Kidney Institute Cleveland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nProstate cancer is driven by androgen stimulation of the androgen receptor (AR). The next-generation AR antagonist, enzalutamide, prolongs survival, but resistance and lethal disease eventually prevail. Emerging data suggest that the glucocorticoid receptor (GR) is upregulated in this context, stimulating expression of AR-target genes that permit continued growth despite AR blockade. However, countering this mechanism by administration of GR antagonists is problematic because GR is essential for life. We show that enzalutamide treatment in human models of prostate cancer and patient tissues is accompanied by a ubiquitin E3-ligase, AMFR, mediating loss of 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which otherwise inactivates cortisol, sustaining tumor cortisol concentrations to stimulate GR and enzalutamide resistance. Remarkably, reinstatement of 11\u03b2-HSD2 expression, or AMFR loss, reverses enzalutamide resistance in mouse xenograft tumors. Together, these findings reveal a surprising metabolic mechanism of enzalutamide resistance that may be targeted with a strategy that circumvents a requirement for systemic GR ablation.\n\n## Introduction\n\nMetastatic prostate cancer usually responds initially to medical or surgical castration, then eventually progresses as castration-resistant prostate cancer (CRPC), which is stimulated by intratumoral synthesis of testosterone and/or 5\u03b1-dihydrotestosterone (DHT) and activation of the androgen receptor (AR) (Attard et al., 2016; Chang et al., 2013; Mostaghel et al., 2014; Scher and Sawyers, 2005; Hearn et al., 2016). Enzalutamide is a potent next-generation AR antagonist and prolongs survival for patients with metastatic CRPC (Beer et al., 2014; Scher et al., 2012; Tran et al., 2009). Unfortunately, enzalutamide resistance almost always emerges, eventually leading to disease lethality.\n\nEmerging data suggest that potent AR inhibition with enzalutamide leads to a massive up-regulation of GR expression, which then permits the re-expression of about 50% of AR-responsive genes, in turn promoting tumor progression (Arora et al., 2013; Isikbay et al., 2014). A challenge has been reconciling these findings with the therapeutic effects of glucocorticoids in CRPC (Kach et al., 2015; Montgomery et al., 2014; Sartor et al., 2014). Furthermore, targeting such a mechanism with GR antagonists may be problematic because total and systemic GR blockade is incompatible with life (Sharifi, 2014). Treatment directed at a tumor-specific mechanism that regulates GR would therefore be desirable. We hypothesized that similar to metabolic mechanisms that elicit DHT synthesis, which in turn stimulate AR in CRPC (Chang et al., 2013; Knudsen and Penning, 2010; Sharifi, 2013), a role for GR in enzalutamide resistance would be accompanied by a tumor metabolic switch that provides sustained tissue cortisol concentrations that enable GR activation. Such a scenario and mechanism may furnish a tumor-specific pharmacologic target and thereby avoid adverse effects associated with systemic GR ablation.\n\nGR stimulation by cortisol in peripheral tissues is physiologically tightly regulated by 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which enzymatically converts cortisol to inactive cortisone in humans and corticosterone to 11-dehydrocorticosterone in mice (Figure 1A) (Chapman et al., 2013). For example, fetal and placental 11\u03b2-HSD2 expression shields against maternal cortisol, thereby restricting GR stimulation and blocking premature fetal maturation (Chapman et al., 2013). Here, we show that enzalutamide resistance is marked by sustained cortisol concentrations in the prostate tumor that are attributable to a profound loss of 11\u03b2-HSD2 and impaired conversion to cortisone, which together de-repress GR and stimulate glucocorticoid-dependent signaling. Mechanistically, 11\u03b2-HSD2 loss is mediated by the ubiquitin E3-ligase autocrine mobility factor receptor (AMFR). Finally, sustained 11\u03b2-HSD2 expression reverses the metabolic phenotype of enzalutamide resistance and reinstates the therapeutic response to enzalutamide in vivo.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig1-v1.jpg)\n\n**Figure 1.:** (A) Glucocorticoid metabolism in target tissues. Stimulation of GR by cortisol in humans is limited by 11\u03b2-HSD2, which oxidizes and converts cortisol to inactive cortisone. In mice, 11\u03b2-HSD2 converts active corticosterone to inactive 11-dehydrocorticosterone. (B) Enzalutamide (Enz) sustains cortisol levels by retarding inactivation in the LAPC4 and VCaP human prostate cancer cell lines. Cells were treated with the indicated concentrations of Enz or vehicle for 36 days (LAPC4) or 40 days (VCaP), and subsequently treated with [3H]-cortisol (100 nM) for the indicated times, followed by steroid extraction from media (above) and cells (below), steroid separation and quantitation with HPLC. The experiment was done in duplicate and repeated at least three times. (C) Cortisol inactivation is impaired in xenograft tumors treated with Enz. Fresh tumor tissues were harvested from LAPC4 or VCaP xenografts grown in orchiectomized mice and treated with Enz or chow alone (n\u00a0=\u00a05 tumors per treatment group). Tumors were treated with [3H]-cortisol (100 nM) for the indicated times and steroids were extracted from media and analyzed by HPLC. Error bars represent the SD. (D) Enz suppresses LAPC4 cell line proliferation. LAPC4 cells were treated with vehicle (Ctrl) or the indicated concentration of Enz for the designated number of days and cell viability was assessed using CellTiter-Glo. Cell viability was normalized to day 0, experiments were performed in triplicate and error bars represent the SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Short term Enz treatment does not affect cortisol metabolism. Previously untreated cells were treated with the indicated concentration of Enz or Vehicle and concomitantly with [3H]-cortisol (100 nM) for the indicated times and steroids were separated and quantitated by HPLC. (B) Enz suppresses expression of AR-regulated transcripts and has no acute effect on expression of GR, HSD11B2 or HSD11B1. LAPC4 cells were treated with the indicated concentration of Enz or Vehicle for 24 hr and the indicated transcripts were assessed by qPCR. Expression is normalized to Vehicle control and RPLP0. (C) The\u00a0viability of LAPC4 cells recovers with long-term Enz treatment. The\u00a0cells were treated with long-term (Enz D56), short-term (Ctrl + Enz) Enz (10 \u00b5M), or no treatment (Ctrl) for the indicated number of days and cell viability was assessed relative to day 0. Experiments were performed in triplicate and error bars represent the SD.\n\n## Results\n\n### Enzalutamide treatment triggers sustained cortisol levels\n\nWe determined the effect of enzalutamide treatment on metabolic conversion of [3H]-cortisol to inactive cortisone in the LAPC4 and VCaP human cell line models of CRPC. Long but not short (i.e., 24 hr) enzalutamide exposure sustains cortisol levels by retarding conversion to cortisone in cells and media (Figure 1B and Figure 1\u2014figure supplement 1A). Similarly, freshly harvested CRPC xenograft tumors grown in orchiectomized mice and treated with enzalutamide (Tran et al., 2009) have an impaired capability of inactivating [3H]-cortisol by conversion to cortisone, when compared to tumors from mice treated with orchiectomy alone (Figure 1C). Enzalutamide suppresses LAPC4 viability in vitro (Figure 1D) in association with suppression of AR-regulated genes (Figure 1\u2014figure supplement 1B). Growth recovers after sustained enzalutamide treatment (Figure 1\u2014figure supplement 1C).\n\n### Enzalutamide promotes 11\u03b2-HSD2 loss\n\nTo determine the mechanism underlying the metabolic phenotype of impeded cortisol inactivation, expression of 11\u03b2-HSD2 and 11\u03b2-HSD1, which catalyzes the reverse reaction, was assessed. Loss of 11\u03b2-HSD2 protein in AR-expressing LAPC4, VCaP and MDA-PCa-2b prostate cancer cell lines (but not an AR-negative prostate cancer cell line [Figure 2\u2014figure supplement 1A]) was observed with enzalutamide treatment, while no consistent effect on 11\u03b2-HSD1 was detectable (Figure 2A\u2013D and Figure 2\u2014figure supplement 1B). No suppression of HSD11B2 mRNA, which encodes 11\u03b2-HSD2, was observed with enzalutamide treatment, suggesting that 11\u03b2-HSD2 protein loss is not attributable to transcriptional suppression (Figure 2\u2014figure supplement 1C) and no direct 11\u03b2-HSD2 antagonism by enzalutamide was observed (Figure 2\u2014figure supplement 1D). Importantly, 11\u03b2-HSD2 loss is not attributable to GR stimulation (Figure 2\u2014figure supplement 1E). To address the clinical significance of these observations, we interrogated prostate tissues obtained or derived from patients and treated with enzalutamide (Figure 2E). Nine of 11 tissues treated with enzalutamide obtained from patients with prostate cancer (two metastatic CRPC, two local prostate tissues from patients treated neoadjuvantly with enzalutamide and seven fresh tissues treated with enzalutamide ex vivo) had a\u00a0loss of 11\u03b2-HSD2 with treatment. All post-treatment biopsies were obtained from patients who were maintained on enzalutamide treatment. Consistent with previously published observations (Arora et al., 2013), GR up-regulation was observed in a subset of clinical tissues (Figure 2\u2014figure supplement 1F), all of which had 11\u03b2-HSD2 loss in Figure 2E. These findings demonstrate the potential clinical relevance of 11\u03b2-HSD2 protein loss for patients treated with enzalutamide.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig2-v1.jpg)\n\n**Figure 2.:** (A) Enzalutamide (Enz) treatment results in the\u00a0loss of 11\u03b2-HSD2 protein that occurs concurrently with an increase in GR protein in the LAPC4 model of CRPC as assessed by Western blot. (B) 11\u03b2-HSD2 protein expression in Enz treated LAPC4 cells as assessed by immunocytochemistry. (C,D) Loss of 11\u03b2-HSD2 and increase in GR protein similarly occur with Enz treatment in the VCaP and MDA-PCa-2b models. (E) Enz induces loss of 11\u03b2-HSD2 protein in tissue from patients with prostate cancer. Local prostate biopsies were obtained from Patients #1 and #2 with image guidance in a neoadjuvant study before (Pre) and after (Post) two months of treatment with Enz and medical castration. Patients #3 and #4 had biopsies of metastatic CRPC from lymph nodes before and after three months (Patient #3) and 11 months (Patient #4) of treatment with Enz. Fresh tissues from Patients #5-#11 were obtained from surgical prostatectomy specimens and incubated with vehicle or Enz (10 \u00b5M) for 7\u20138 days prior to protein extraction and Western blot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Enz treatment does not change 11\u03b2-HSD2 protein expression in the AR-negative DU145 prostate cancer cell line. (B) Enz treatment does not change 11\u03b2-HSD1 protein expression in AR-expressing prostate cancer cell lines. Cells were treated with the indicated concentrations of Enz, whole cell protein lysates were obtained, separated and assessed with anti-11\u03b2-HSD1 and anti-\u03b2-actin antibodies. (C) GR transcript increases and HSD11B2 is unchanged with long-term Enz treatment of LAPC4 and VCaP cells. Expression is normalized to vehicle treated cells and RPLP0. (D) Enz does not directly antagonize 11\u03b2-HSD2. LAPC4 cells were transfected with a vector encoding 11\u03b2-HSD2, in the presence of the indicated concentration of Enz or Vehicle, and conversion from [3H]-cortisol (100 nM) to cortisone was assessed by HPLC. Experiments performed in biological duplicate. (E) 11\u03b2-HSD2 loss is not attributable to GR stimulation. LAPC4 cells were treated with dexamethasone (DEX; 100 nM) for the indicated durations, whole cell protein lysates were obtained and assessed with anti-11\u03b2-HSD2 and anti-\u03b2-actin antibodies. (F) GR protein expression is induced in a subset of the patient tissues from Figure 2E. All six tissues that have induction of GR expression exhibit loss of 11\u03b2-HSD2 in Figure 2.\n\n### 11\u03b2-HSD2 reinstatement reverses the metabolic phenotype of enzalutamide treatment\n\nIn order to investigate the metabolic effects of 11\u03b2-HSD2 replacement on cortisol levels, we artificially expressed 11\u03b2-HSD2 in the context of enzalutamide exposure (Figure 3A\u2013B and Figure 3\u2014figure supplement 1). 11\u03b2-HSD2 reinstatement with both stable expression and transient transfection studies reverted the glucocorticoid metabolic phenotype of enzalutamide treated cells back to rapid cortisol inactivation that is characteristic of enzalutamide-na\u00efve cells. Furthermore, the\u00a0effects of 11\u03b2-HSD2 replacement on transcription of PSA (Figure 3C), which is regulated by AR and GR, KLF9, which is regulated by GR only and PMEPA1, which is regulated by AR only (Arora et al., 2013), suggest that the effects are indeed specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig3-v1.jpg)\n\n**Figure 3.:** (A) Impeded conversion from cortisol to cortisone with Enz treatment is reversible with transient and (B) stable 11\u03b2-HSD2 expression. Cells expressing 11\u03b2-HSD2 or empty vector (control) were treated with the indicated concentration of Enz for 40 days, followed by treatment with [3H]-cortisol and analysis of steroids in media by HPLC. (C) With Enz treatment, only cortisol-induced GR signaling is specifically reversible with forced stable 11\u03b2-HSD2 expression. LAPC4 cells were treated with Enz for 36 days, starved with phenol-red-free medium containing 5% Charcoal:Dextran-stripped FBS for 48 hr and transfected with a plasmid expressing 11\u03b2-HSD2 and treated with the indicated conditions for 24 hr. Only cortisol induction of PSA expression, which is GR- and metabolism-dependent, is reversible by 11\u03b2-HSD2. Expression of KLF9, which is regulated only by GR, is induced by cortisol and dexamethasone, but only cortisol induction is reversible by 11\u03b2-HSD2. Expression of PMEPA1, which is regulated only by AR, is induced with DHT only and not reversible by 11\u03b2-HSD2. Expression is normalized to vehicle-treated cells (not shown) and RPLP0 expression. The experiment was performed four times. Error bars represent the SD of a representative experiment performed in triplicate.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig3-figsupp1-v1.jpg)\n\n### Reestablishing 11\u03b2-HSD2 expression restores sensitivity to enzalutamide therapy by depletion of active intratumoral glucocorticoids\n\nWe wished to determine if enzalutamide resistance is reversible with reinstatement of 11\u03b2-HSD2 expression. LAPC4 cells stably harboring a construct conferring forced 11\u03b2-HSD2 expression or vector alone (Figure 4\u2014figure supplement 1) were injected subcutaneously and xenograft tumors were grown in surgically orchiectomized mice that were also implanted with sustained-release DHEA pellets to mimic the human adrenal androgen milieu in CRPC. When tumors reached 100 mm3, mice in each group were randomized to enzalutamide in chow or chow alone (Figure 4A\u2013B). Tumors appeared to harbor significant resistance to treatment with enzalutamide, as evidenced by the\u00a0growth of Vector xenografts through enzalutamide therapy. Forced 11\u03b2-HSD2 expression significantly reversed enzalutamide-resistant growth and prolonged progression-free survival. In contrast, 11\u03b2-HSD2 expression had no significant effect on untreated tumors, supporting a model in which the effect of 11\u03b2-HSD2 on tumor growth is specific to the context of resistance to potent AR antagonist therapy. Reinstatement of sensitivity to enzalutamide treatment also occurred in a second (VCaP) xenograft model of CRPC (Figure 4C\u2013D). In contrast to humans, the mouse adrenal does not express 17\u03b1-hydroxylase/17,20 lyase and thus synthesizes corticosterone instead of cortisol as the dominant glucocorticoid (Figure 1A), which is similarly inactivated to 11-dehydrocorticosterone by 11\u03b2-HSD2 (Miller and Auchus, 2011). To validate if reversal of enzalutamide resistance with forced 11\u03b2-HSD2 expression is accompanied by the proposed intratumoral biochemical effect of depleting biologically active tumor glucocorticoids, we assessed corticosterone concentrations in enzalutamide-treated xenograft tissues by mass spectrometry (Figure 4E). 11\u03b2-HSD2 reinstatement depleted corticosterone concentrations by approximately two-thirds in enzalutamide-treated tumors (44.5 pmol/g in vector tumors vs. 15.1 pmol/g in 11\u03b2-HSD2 tumors; p=0.002), which otherwise harbor the capacity to metabolically sustain elevated concentrations of biologically active glucocorticoids. Tumor 11\u03b2-HSD2 expression also results in a significant decline in the percentage of tumor corticosterone (59% in vector tumors vs. 33% in 11\u03b2-HSD2 tumors; p<0.0001) when compared to the sum total of corticosterone plus 11-dehydrocorticosterone (Figure 4F). In contrast to the effects of 11\u03b2-HSD2 expression on tumor glucocorticoids in enzalutamide treated mice, there is no significant change in serum in the absolute concentration (873 pmol/ml in vector mice vs. 867 pmol/ml in 11\u03b2-HSD2 mice; p=0.49; Figure 4G) or percentage of corticosterone (99.87% in vector mice vs. 99.85% in 11\u03b2-HSD2 mice; p<0.93; Figure 4H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig4-v1.jpg)\n\n**Figure 4.:** (A) Expression of 11\u03b2-HSD2 reverses enzalutamide (Enz) resistant LAPC4 CRPC xenograft tumor growth. (B) Progression-free survival is prolonged by 11\u03b2-HSD2 expression in Enz-treated LAPC4 xenografts. N.S. = not significant. (C) 11\u03b2-HSD2 expression reverses Enz resistance in the VCaP xenograft model of CRPC as assessed by decreased tumor volume and (D) prolongation of progression-free survival. For both xenograft studies, cells expressing 11\u03b2-HSD2 or vector (control) were grown in orchiectomized mice supplemented with DHEA and arbitrarily assigned to Enz or chow (Ctrl). For the comparisons in tumor volume, the significance of the difference between 11\u03b2-HSD2/Enz and Vector/Enz was calculated with an unpaired and two-tailed t-test on day 24 (LAPC4) or day 23 (VCaP). For the comparisons in progression-free survival, the significance of the difference between 11\u03b2-HSD2/Enz and Vector/Enz was calculated with a log-rank test. (E) The absolute concentration of corticosterone is reduced in xenograft tumors expressing 11\u03b2-HSD2. (F) The percentage of corticosterone relative to 11-dehydrocorticosterone is reduced in tumors expressing 11\u03b2-HSD2. (G) The absolute concentration of corticosterone and (H) percentage of corticosterone relative to 11-dehydrocorticosterone in serum are unaffected in mice harboring tumors with restored 11\u03b2-HSD2 expression. P values in E-H were calculated with an unpaired and two-tailed t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig4-figsupp1-v1.jpg)\n\n### AMFR is required for 11\u03b2-HSD2 ubiquitination, the metabolic phenotype of retarded glucocorticoid inactivation and enzalutamide resistance\n\nWe previously described the role of AMFR, a ubiquitin E3-ligase in the endoplasmic reticulum associated degradation pathway, in regulation of another steroidogenic enzyme, 3\u03b2-hydroxysteroid dehydrogenase-1 (Chang et al., 2013). As 11\u03b2-HSD2 is also located in the endoplasmic reticulum, we hypothesized that AMFR is required for enzalutamide-induced loss of 11\u03b2-HSD2 protein. A physical association between 11\u03b2-HSD2 and AMFR is supported by immunoprecipitation of AMFR, followed by immunoblot for 11\u03b2-HSD2, as well as immunoprecipitation of 11\u03b2-HSD2, followed by immunoblot for AMFR (Figure 5A). Expression of 11\u03b2-HSD2, Ubiquitin-His, and AMFR-Myc-DDK, followed by Ni-agarose pull-down and anti-11\u03b2-HSD2 immunoblot demonstrates the AMFR-dependence of 11\u03b2-HSD2 ubiquitination (Figure 5B). Enzalutamide treatment did not consistently increase AMFR expression (Figure 5\u2014figure supplement 1A\u2013B). However, Erlin-2, which enables the AMFR-associated endoplasmic reticulum-associated degradation pathway (ERAD), was more consistently up-regulated, including in 8 of 11 patient tissues (Figure 5\u2014figure supplement 1A\u2013C) (Browman et al., 2006; Pearce et al., 2007). The functional consequence of 11\u03b2-HSD2 / AMFR interaction and 11\u03b2-HSD2 ubiquitination is evidenced by genetically silencing AMFR with stable shRNA expression, which promotes an increase in 11\u03b2-HSD2 protein (Figure 5C) but not transcript (Figure 5\u2014figure supplement 1D). Furthermore, the enzalutamide-induced metabolic phenotype that sustains cortisol concentrations by way of retarded inactivation is reversed with genetic ablation of AMFR (Figure 5D). Silencing both 11\u03b2-HSD2 and AMFR with enzalutamide treatment negates the effect of genetically silencing AMFR alone, suggesting that the effect of AMFR is mediated through 11\u03b2-HSD2 (Figure 5\u2014figure supplement 1E). Finally, the functional relevance and requirement for AMFR expression on enzalutamide resistance is suggested by suppressed xenograft growth and prolonged progression-free survival in enzalutamide-treated xenografts with stable AMFR knockdown (Figure 5E\u2013F). Tumors with AMFR knockdown were confirmed to have sustained 11\u03b2-HSD2 protein expression, thus impairing enzalutamide resistance (Figure 5G). Together, these findings suggest a model in which a physical association between AMFR and 11\u03b2-HSD2 enables enzalutamide to promote loss of 11\u03b2-HSD2, resulting in sustained cortisol concentrations that promote GR stimulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig5-v1.jpg)\n\n**Figure 5.:** (A) 11\u03b2-HSD2 and AMFR co-immunoprecipitate. Immunoprecipitation (IP) and immunoblot (IB) from endogenously expressed proteins in whole cell protein lysate from LAPC4 cells were performed with the indicated antibodies. The experiment was performed twice. (B) AMFR promotes 11\u03b2-HSD2 ubiquitination. Proteins were expressed in 293 cells, proteins tagged with ubiquitin-His, were pulled-down with Ni-agarose beads, and immunoblot was performed with the indicated antibodies. The experiment was performed twice. (C) Silencing AMFR expression with two independent shRNAs increases 11\u03b2-HSD2 protein. LAPC4 cells stably expressed shRNAs against AMFR (shAMFR) or non-silencing control expression vector. The experiment was performed three times. (D) Blockade of Enzalutamide (Enz)-mediated 11\u03b2-HSD2 loss by silencing AMFR reverses the metabolic phenotype that confers sustained cortisol concentrations. Cells were treated with the indicated concentration of Enz and subsequently were treated with [3H]-cortisol (100 nM) for the indicated times, followed by steroid extraction from media and cells, and steroid analysis by HPLC. Error bars represent the SD of biological triplicates. The experiment was performed three times. Enz treatment in panel D was for 38\u201342 days. (E) AMFR is required for tumor growth through enzalutamide therapy. Xenografts from LAPC4 cells expressing shAMFR or non-silencing control vector (shCtrl) were grown in surgically orchiectomized mice supplemented with DHEA and treated with Enz when tumors reached 100 mm3. The significance of the difference between shCtrl and shAMFR groups was calculated with an unpaired and two-tailed t-test on day 20. (F) Progression-free survival is increased in tumors lacking AMFR. The significance of the difference between shCtrl and shAMFR groups was determined with a log-rank test. (G) Xenograft tumors with genetic ablation of AMFR retain 11\u03b2-HSD2 protein expression. Xenograft tissues were collected at the end of the xenograft study and immunoblot was performed with the indicated antibodies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20183/elife-20183-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Erlin-2 but not AMFR is consistently up-regulated with Enz treatment of LAPC4 cells. (B) Erlin-2 is up-regulated in 8 of 11 human prostate tissues. Immunoblots were performed as described previously. (C) Erlin-2 overexpression (OE) suppresses expression of 11\u03b2-HSD2 protein in LAPC4 cells and Erlin-2 knockdown by siRNA increases 11\u03b2-HSD2 expression and activity in the long-term Enz-treated LAPC4 cells. (D) AMFR silencing does not regulate HSD11B2 transcript. qPCR was performed in triplicate and expression is normalized to shControl-expressing cells and RPLP0. (E) Reversal of the metabolic phenotype that sustains cortisol with Enz treatment by AMFR knockdown is reversed again by 11\u03b2-HSD2 knockdown (compare cortisol at 24 hr in shAMFR groups between siCTRL and siHSD11B2). The specificity of siHSD11B2 is shown by qPCR and immunoblot. LAPC4 cells stably expressing stably shCTRL or an shAMFR construct were treated with Enz as described for Figure 5, transiently transfected with siHSD11B2 or siCTRL and treated with [3H]-cortisol (100 nM). Experiments were performed in duplicate.\n\n## Discussion\n\nOur findings reveal a metabolic mechanism that is co-opted along with GR upregulation to stimulate enzalutamide resistance in prostate cancer. These findings indicate that systemic availability of GR agonists represents only one aspect of tumor GR stimulation in the setting of enzalutamide resistance. Local metabolic regulation of ligand availability by the tumor serves as a second critical aspect and can either oppose the effects of systemic glucocorticoids by spurring enzymatic inactivation, or instead allow unimpeded access to the tumor tissue, enabling sustained GR stimulation to promote tumor progression.\n\nGlucocorticoid administration has long been recognized to have a therapeutic effect in CRPC. Although the therapeutic effect of glucocorticoids is likely due in part to adrenal androgen suppression, the complete effects of glucocorticoids in prostate cancer have yet to be fully elucidated (Attard et al., 2012). Our observations move us closer to an understanding of the role of glucocorticoid pharmacology and physiology in prostate cancer. It has been recently recognized that GR stimulation may also contribute to prostate cancer progression. Our findings suggest yet another consideration that adds to the complexity of glucocorticoid signaling in prostate cancer, namely susceptibility of the administered glucocorticoid to metabolic inactivation, that is likely relevant to the increased GR expression that may occur alongside enzalutamide resistance and allows direct tumor-promoting effects of glucocorticoids in CRPC. For example, prednisolone is inactivated by 11\u03b2-HSD2 to prednisone but dexamethasone is generally thought to be impervious to inactivation by 11\u03b2-HSD2. This may be even more important prior to enzalutamide therapy and consequent suppression of 11\u03b2-HSD2 loss, because some data suggest that baseline GR expression prior to enzalutamide treatment, where 11\u03b2-HSD2 expression is intact, may be associated with enzalutamide resistance (Arora et al., 2013). Furthermore, early results from a neoadjuvant clinical trial of castration plus abiraterone suggest that tissue cortisol may be elevated specifically in prostate cancers that up-regulate GR (Efstathiou et al., 2015). Thus, it is possible that altered tumor glucocorticoid metabolism by way of the mechanism we have elucidated occurs not only with enzalutamide but also with abiraterone therapy.\n\nMetabolic regulation of GR stimulation by the tumor might also be a tumor-specific therapeutic vulnerability. Our data raise the possibility that blocking 11\u03b2-HSD2 protein loss, for example by blocking AMFR, or reinstatement of 11\u03b2-HSD2 expression in the tumor may be an appropriate strategy to reverse enzalutamide resistance without affecting the\u00a0systemic availability of glucocorticoids and resultant associated toxicities. Blocking AMFR may also increase 3\u03b2HSD1 protein, sustaining androgen synthesis (Chang et al., 2013). However, our in vivo studies with AMFR knockdown suggest that in the context of enzalutamide treatment, the net effect of AMFR ablation is therapeutic, probably because the AR ligand binding domain remains mainly occupied by enzalutamide and glucocorticoid signaling is a major driver of tumor progression.\n\nFinally, our findings may have general relevance to steroid-dependent disease processes that use alternative steroid receptors. For example, in addition to the involvement of GR in prostate cancer, GR and AR have been implicated in a\u00a0subtype-specific breast cancer progression (Kach et al., 2015; Ni et al., 2011). Our results suggest that a switch in steroid receptors that drives disease processes more broadly may be accompanied by perturbed local metabolic regulation of the availability of ligands that stimulate steroid receptor activation.\n\n## Materials and methods\n\n### Cell lines\n\nLAPC4 was a generous gift from Dr. Charles Sawyers (Memorial Sloan Kettering Cancer, New York, NY), which was maintained in Iscove\u2019s modified Dulbecco\u2019s medium (IMDM) with 10% fetal bovine serum and incubated in a 5% CO2 humidified incubator. VCaP was purchased from American Type Culture Collection (ATCC), which was cultured in Dulbecco's Modified Eagle Medium (DMEM) containing 10% fetal bovine serum and incubated in an 8% CO2 humidified incubator. MDA-PCa-2b was purchased from ATCC, which was cultured in BRFF-HPC1 (Athena ES) containing 20% fetal bovine serum and incubated in a 5% CO2 humidified incubator. FCIV1-11\u03b2-HSD2-FLAG (a gift from Moses Chao [Addgene plasmid # 24097]) (Jeanneteau et al., 2008) was used to generate the LAPC4 and VCaP stable cell line expressing human 11\u03b2-HSD2 by using a lentiviral system. The viral packaging and infection was performed as previously described (Chang et al., 2011, 2013). Briefly, 293T cells (ATCC) were cotransfected with 10 \u03bcg each of FCIV1-11\u03b2-HSD2-FLAG, pMD2.G, and psPAX2 vector for 48 hr to package the virus. Next, LAPC4 and VCaP cells were infected with the virus for 24 hr with the\u00a0addition of polybrene (6 mg/ml), followed by selection with 2 ug/ml puromycin for\u00a0~2 weeks. The AMFR knockdown LAPC4 stable cell line was established by employing the pGFP-C-shLenti vectors contain AMFR shRNA sequences (5\u2019-ACAAGACACCTCCTGTCCAACATGCAGAA-3\u2019 and 5\u2019-GGAGCCGCTTCTCCAAGTCTGCTGATGAG-3\u2019) (OriGene), The viral packaging, infection as well as selection procedures were carried out as described above. Enzalutamide (Enz) was obtained courtesy of Medivation (San Francisco, CA). All Enz and vehicle treated cells were maintained in medium containing 10 nM DHEA. Cell lines are authenticated using short tandem repeat characterization by DDC Medical every six months and routinely (every 1\u20133 months) screened for mycoplasma contamination as described (Li et al., 2015).\n\n### Cortisol metabolism\n\nCell line metabolism. Cells (~106 cells per well) were plated and maintained in 12 well plates coated with poly-DL-ornithine (Sigma-Aldrich) for overnight and then treated with [3H]-cortisol (1,000,000 counts per minute (c.p.m.) per well; PerkinElmer) and non-radiolabeled cortisol (100 nM final concentration). After incubation for the indicated time points, both media and cells were collected. Briefly, 300 \u00b5l media was collected; the cells were scraped and centrifuged at 10,000 x g for 2 min twice to remove all the media, then the cell pellets were resuspended with 300 \u00b5l PBS. Collected media and cells were incubated with 300 units of \u03b2-glucuronidase (Helix pomatia; Sigma-Aldrich) at 65\u00b0C for at least 2 hr, extracted with 600 \u00b5l 1:1 ethyl acetate:isooctane, and concentrated under a nitrogen stream.\n\nXenograft metabolism. LAPC4 or VCaP cells (~107) were injected subcutaneously with Matrigel (Corning) into surgically orchiectomized NSG mice that were implanted with DHEA pellets (5 mg/pellet, 90-day sustained-release, Innovative Research of America). Fresh xenografts were harvested and\u00a0~40 mg xenograft tissues were minced, and cultured in IMEM with 10% FBS at 37\u00b0C with a mixture of [3H]-cortisol and non-radiolabeled cortisol. Aliquots of media were collected at the indicated time points, steroids were extracted and concentrated as described above.\n\nFor HPLC analysis, the concentrated samples were dissolved in 50% methanol and injected on a Breeze 1525 system equipped with model 717 plus autoinjector (Waters Corp.). Steroid metabolites were separated by a Luna 150\u00d74.6 mm, 3 \u03bcM C18 reverse-phase column (Phenomenex) using methanol/water gradients at 30\u00b0C. The column effluent was analyzed using a \u03b2-RAM model three in-line radioactivity detector (IN/US Systems, Inc.) using Liquiscint scintillation mixture (National Diagnostics). All metabolism studies were performed in duplicate and repeated in independent experiments.\n\n### Gene expression and immunoblot\n\nLAPC4 cells were treated with Enz for 36 days and then seeded into 12 well plates coated with poly-DL-ornithine at 50% confluence. After incubation overnight, the cells were transfected with 11\u03b2-HSD2-FLAG plasmid for 48 hr by using the TransIT\u22122020 Transfection Reagent (Mirus) according to the protocol provided by the manufacturer, then maintained in phenol-red-free medium with 5% Charcoal:Dextran-stripped FBS for 48 hr before being treated with the indicated drugs. Total RNA was extracted with a GenElute Mammalian Total RNA miniprep kit (Sigma-Aldrich) and 1 \u03bcg RNA was reverse-transcribed to cDNA with the iScript cDNA Synthesis Kit (Bio-Rad). An ABI 7500 Real-Time PCR machine (Applied Biosystems) was used to perform the qPCR analysis, using iTaq Fast SYBR Green Supermix with ROX (Bio-Rad) in 96-well plates at a final reaction volume of 10 \u03bcl. The qPCR analysis was carried out in triplicate with the following primer sets: PSA (Forward: 5\u2019-GCATGGGATGGGGATGAAGTAAG-3\u2019; Reverse: 5\u2019-CATCAAATCTGAGGGTTGTCTGGA-3\u2019), FKBP5 (Forward: 5\u2019-CCCCCTATTTTAATCGGAGTAC-3\u2019; Reverse: 5\u2019-TTTTGAAGAGCACAGAACACCT-3\u2019), TMPRSS2 (Forward: 5\u2019-TGGTCCTGGATGATAAAAAAAGTTT-3\u2019; Reverse: 5\u2019-GACATACGCCCCACAACAGA-3\u2019), GR (Forward: 5\u2019-CTAATGGCTATTCAAGCCCCAGCAT-3\u2019; Reverse: 5\u2019-GTGCTGTCCTTCCACTGCTCT-3\u2019), HSD11B2 (Forward: 5\u2019-TGGATCGCGTTGTCCCG-3\u2019; Reverse: 5\u2019-GTTCAACTCCAATACGGTGGC-3\u2019), HSD11B1 (Forward: 5\u2019-GAGGTTCTCTCTGTGTGTCCT-3\u2019; Reverse: 5\u2019-GTAGTAGGCCATGAAGAGCCC-3\u2019), KLF9 (Forward: 5\u2019-AACACGCCTCCGAAAAGAGG-3\u2019; Reverse: 5\u2019- CGTCTGAGCGGGAGAACTTT-3\u2019), PMEPA1 (Forward: 5\u2019-GTGCAACTGCAAACGCTCTT-3\u2019; Reverse: 5\u2019- AGCTTGTAGTGGCTCAGCAG-3\u2019), the housekeeping gene large ribosomal protein P0 (RPLP0) (Forward: 5\u2019-CGAGGGCACCTGGAAAAC-3\u2019; Reverse: 5\u2019-CACATTCCCCCGGATATGA-3\u2019). Each mRNA transcript was quantitated by normalizing the sample values to RPLP0 and to vehicle treated cells (for steroid treated cells). All gene expression studies were repeated in independent experiments.\n\nFor protein analysis, immunoblots were performed as described previously (Li et al., 2013). Briefly, total cellular protein was extracted with ice cold RIPA lysis buffer (Sigma-Aldrich) containing protease inhibitors (Roche). 30\u201350 \u03bcg protein was separated by 8% SDS-PAGE gel and then transferred to a nitrocellulose membrane (Millipore). After incubating with the anti-11\u03b2-HSD2 antibody (Santa Cruz; 1:3000), anti-11\u03b2-HSD1 antibody (Santa Cruz; 1:1000), GR antibody (BD Biosciences; 1:1000), anti-Erlin-2 antibody (Cell Signaling Technology: 1:1000) or anti-AMFR antibody (Proteintech; 1:1000) overnight at 4\u00b0C, the appropriate secondary antibody was incubated for 1 hr at room temperature. The chemiluminescent detection system (Thermo Scientific) was used to detect the bands with peroxidase activity. An anti-\u03b2-actin antibody (Sigma-Aldrich; 1:5000) was used as a control for sample loading.\n\n### Gene expression and knockdown\n\nGene expression. The day before transfection, cells were plated into 12 well plates coated with poly-DL-ornithine (~7 x 105 cells/well), then an Erlin-2 expressing plasmid, Erlin-2-Myc-DDK-tagged (OriGene) or 11\u03b2-HSD2 expressing plasmid FCIV1-11\u03b2-HSD2-FLAG was introduced into the cells with Lipofectamine 3000 Reagent (ThermoFisher, Waltham, MA). After 48 hr transfection, the cells were collected and used for the detection of 11\u03b2-HSD2 and Erlin-2 by immunoblot, or treated with Enz for 24 hr to determine the cortisol metabolism by HPLC as described above.\n\nGene knockdown. Cells were seeded into 12 well plates coated with poly-DL-ornithine at 60\u201380% confluence. After incubation overnight, the cells were transfected with siRNA following the Lipofectamine RNAiMAX Reagent (ThermoFisher, Waltham, MA) protocol provided by the manufacturer for 48 hr. Cells were then used for qPCR and immunoblot analysis or cortisol metabolism analysis, as described previously. For 11\u03b2-HSD2 knockdown, the experiments were performed with Dhamarcon SMARTpool: ON-TARGETplus HSD11B2 siRNA, L-008983\u201300-0005 or ON-TARGET plus Non-targeting Pool, #D-001810\u201310-05 with a final concentration of 25 nM siRNA. For Erlin-2 knockdown, the siRNA sequence: 5\u2019-GCCTCTCCGGTACTAACAT-3\u2019 (Huber et al., 2013) was used.\n\n### Cell viability assay\n\nLAPC4 cells or the long-term Enz treated LAPC4 cells were plated in triplicate in 96 well plates coated with poly-DL-ornithine and incubated overnight, then treated with Enz and assayed in triplicate at the time points indicated using CellTiter-Glo (Promega). Viability is normalized to day 0.\n\n### Co-immunoprecipitation\n\nThe interaction between 11\u03b2-HSD2 and AMFR was analyzed using the Pierce Classic Magnetic IP/Co-IP Kit (Thermo Scientific) following the protocol provided by the manufacturer. Briefly,\u00a0~107 LAPC4 cells\u00a0were lysed in 1 ml Pierce IP Lysis/Wash Buffer with protease inhibitors added fresh, on ice for 1 hr. The cell lysates were centrifuged at 12,000 x g for 15 min at 4\u00b0C. 1\u20132 mg of protein was pre-cleaned with 30 \u00b5l pre-cleaned Protein A/G PLUS-Agarose (Santa Cruz) and 1 \u00b5g rabbit IgG (Millipore) for 1 hr and then incubated with rabbit IgG (3 \u00b5g), 11\u03b2-HSD2 antibody (4 \u00b5g) or AMFR antibody (3 \u00b5g) overnight at 4\u00b0C. The antibody/antigen/bead complex was washed with ice-cold Pierce IP Lysis/Wash Buffer containing protease inhibitors adequately and denatured in 40 \u00b5l freshly prepared 1x Lane Marker Sample Buffer at room temperature for 30 min with mixing. 20 \u00b5l IP products were used for the subsequent protein separation and detection of 11\u03b2-HSD2 or AMFR using their antibodies by immunoblot.\n\n### Mouse xenograft studies\n\nAll mouse studies were performed under a protocol approved by the Institutional Animal Care and Use Committee (IACUC) of the Cleveland Clinic Lerner Research Institute. All NSG male mice (6\u20138 weeks old) were purchased from the Jackson Laboratory and the number of mice used in this study was based on previously published mouse xenograft studies by our lab that determined effects of steroid pathway inhibition/augmentation on xenograft growth (Chang et al., 2011, 2013; Li et al., 2015). Mice were surgically orchiectomized and implanted with DHEA pellets to mimic human adrenal DHEA production in patients with CRPC. one week later, mice were prepared for cell injections.\n\nFor the evaluation of the 11\u03b2-HSD2 role in reversing enzalutamide resistance, either 107 vector control or 107 11\u03b2-HSD2 overexpressing LAPC4 or VCaP cells (100 \u00b5l in 50% matrigel and 50% growth media) were subcutaneously injected into mice. When tumors reached 100 or 150 mm3 (length \u00d7 width \u00d7 height\u00a0\u00d7\u00a00.52), for LAPC4 and VCaP xenografts, respectively, the mice were arbitrarily divided into two groups each for vector and 11\u03b2-HSD2 overexpressing cells: Enz diet 62.5 mg/kg and [as described in (Tran et al., 2009) or chow alone groups. Based on the daily chow consumption, approximately 0.3125 mg Enz was consumed per mouse per day. Enz in chow and chow alone were obtained from Medivation. Tumor volume was measured every other day, and progression-free survival was assessed as time to 3-fold (LAPC4) or 1.5-fold (VCaP) increase in tumor volume (from 100 or 150 mm3) from the time Enz or chow alone was initiated. The number of mice in the LAPC4 Vector/Ctrl, Vector/Enz, 11\u03b2-HSD2/Ctrl and 11\u03b2-HSD2/Enz groups were 9, 9, 10, and 11, respectively. The number of mice in the VCaP Vector/Ctrl, Vector/Enz, 11\u03b2-HSD2/Ctrl and 11\u03b2-HSD2/Enz groups were 6, 6, 5, and 8, respectively. Numbers of mice in each treatment group were determined by those that survived surgical procedures and had reached a tumor volume to initiate treatment.\n\nFor evaluation of the role of AMFR in reversing enzalutamide resistance, either 107 control or 107 AMFR knockdown LAPC4 cells (100 \u00b5l in 50% matrigel and 50%growth media) were subcutaneously injected into mice. The remaining procedures were performed as described above. The number of mice in the LAPC4 shCtrl/Enz and shAMFR/Enz groups were 6, and 10, respectively. AMFR and 11\u03b2-HSD2 protein in the shCtrl and control or shAMFR LAPC4 xenografts were analyzed by immunoblot. Briefly,\u00a0~40\u201350 mg xenograft tissue was minced into pieces and then added into soft tissue homogenizing CK14 tubes (Betin Technologies) with 150 \u03bcl RIPA buffer containing protease inhibitors. Xenograft tissues were homogenized with a homogenizer (Minilys, Betin Technologies) six times (40 s each time) at the highest speed. Tubes were incubated on the ice for 5\u201310 min between each homogenization to cool lysates. The lysates were then centrifuged for 30 min at 15,000 x g and the supernatants were used for immunoblot analysis.\n\n### Immunofluorescence staining\n\nLAPC4 cells treated with Enz or vehicle for 23 days were seeded into chamber slides (BD Biosciences) coated with poly-DL-ornithine at 60% confluence. After overnight culture, cells were washed with PBS and fixed with ice cold methanol for 15 min and the methanol was washed with PBS. Before applying primary antibodies, nonspecific binding sites were blocked with blocking buffer (Protein Block Serum Free, Dako). Anti-11\u03b2-HSD2 antibody (Santa Cruz), diluted at 1:300 with Antibody Diluent (Dako), was applied for incubation overnight at 4\u00b0C. After being rinsed with PBS, the slides were probed with Alexa Fluor 594 conjugated secondary antibody (goat anti-rabbit, Thermo Scientific) for 45 min at room temperature. VECTASHIELD HardSet Mounting Medium (Vector Laboratories) was used to mount the slides and counterstain the nucleus with DAPI.\n\n### Human tissue studies\n\nAll deidentified human tissues were obtained with informed consent using institutional review board (IRB)-approved protocols at each institution (Cleveland Clinic, UT Southwestern and Dana-Farber Cancer Institute). Pre- and post-Enz lymph node tissues were obtained from CT-guided biopsy of metastatic CRPC from Cleveland Clinic (Patient #3) and Dana-Farber Cancer Institute (Patient #4). Pathologic identification of tumor was done by an expert prostate cancer pathologist. Staining of tissues from Patient #4 was done with frozen section slides that were air dried at room temperature for 5 min, followed by rehydration with PBS. Immunofluorescence staining was performed as described above. H and E staining was completed by the imagine core of Biomedical Engineering Department in Lerner Research Institute of Cleveland Clinic.\n\nPaired pre-Enz treatment and post-Enz treatment tissues from Patient #1 and Patient #2 were obtained from patients with localized prostate cancer treated with Enz plus ADT for two months prior to the second biopsy in a clinical trial (NCT02064582) at the University of Texas Southwestern Medical Center. Biopsies were obtained using image-guidance with a Koelis Urostation. The biopsy cores were minced into pieces and then added into Soft tissue homogenizing CK14 tubes (Betin Technologies) with 100 \u03bcl 6M Urea buffer containing protease inhibitors (Sigma Aldrich). Tissue homogenization and immunoblot analysis were performed as described previously.\n\nSeven fresh prostate tissue cores (60\u201380 mg) from Patients #5-#11 were obtained from the peripheral zone of radical prostatectomy specimens at Cleveland Clinic, confirmed to have tumor in or in close proximity to cores by an expert prostate cancer pathologist, minced and aliquoted to two parts. One was treated with 10 nM DHEA plus vehicle, and the other was treated with 10 nM DHEA plus 10 \u03bcM Enz. Both tissues were maintained in 3 ml DMEM containing 10% fetal bovine serum and incubated in a 5% CO2 humidified incubator. After four days of culture, two more ml medium with DHEA plus either vehicle or Enz was added into each part. The tissues were collected after 7\u20138 days treatment. The same procedures were performed as described above for protein extraction and immunoblot.\n\n### Mass spectrometry\n\nXenograft analysis. At least 24 mg tumor tissue (n\u00a0=\u00a018) was homogenized with 1 ml LC-MS grade water (Fisher) by using homogenizer. The mixture was then centrifuged. 800 \u03bcl of the supernatant was transferred to a glass tube, followed by the addition of 80 \u03bcl of 10 ng/ml internal standard (corticosterone-d8) (Steraloids). The steroids and the internal standard were extracted with methyl tert butyl ether (Across) evaporated to dryness under N2 then reconstituted with 500 \u03bcl of 50% methanol.\n\nMouse serum analysis. At the endpoint of the xenograft study, mouse serum was collected. 20 \u00b5l of mouse serum and internal standard (corticosterone-d8) were precipitated with 200 \u03bcl methanol. After centrifugation, the supernatant was transferred to HPLC vials prior to mass spectrometry analysis.\n\nThe LC-MS/MS system contains an ultra-pressure liquid chromatography system (Shimadzu Corporation, Japan) which is consisted of two LC-30AD pumps, a DGU-20A5R degasser, a CTO-30A column oven, SIL-30AC autosampler, and a system controller CBM-20A and coupled with a Qtrap 5500 mass spectrometer (AB Sciex). Data acquisition and processing were performed using Analyst software (version 1.6.2) from ABSciex.\n\nSteroids were ionized using electrospray ionization in positive mode. Quantification of analytes was performed using multiple reaction monitoring. The mass transitions for corticosterone, 11-dehydrocorticosterone, and internal standard are 347.3/121.0, 345.3/121.0, and 355.3/125.0, respectively. Separation of steroids was achieved using a Zorbax Eclipse plus C18 column (Agilent) using a\u00a0mobile phase consisting of (A) 0.2% formic acid in water and (B) 0.2% formic acid in (methanol:acetonitrile, 60:40) with a gradient program at a flow rate of 0.2 ml/min. Sample injection volume was 10 \u03bcl.\n\n### Ubiquitination assay\n\nExperiments were conducted as previously described (Chang et al., 2013), with minor modifications. Briefly, HEK293T were transfected with the following plasmids: FCIV1-11\u03b2-HSD2-FLAG, pcDNA3-6xHis-ubiquitin and pLenti-AMFR-Myc-DDK (OriGene) for 36 hr. Transfected cells were collected by scraping with ice-cold PBS. Cell pellets were suspended in 200 \u03bcl PBS. For input analysis, 20 \u03bcl of cell suspension was pelleted and lysed with RIPA lysis buffer, followed by immunoblot analyses with anti-DDK (OriGene, 1:1000), anti-FLAG (Sigma-Aldrich, 1:1000) and anti-\u03b2-actin antibodies. The remaining cells were lysed with 4 ml lysis buffer (6 M guanidine-HCl, 0.1M Na2HPO4/NaH2PO4, 0.01MTris/HCl, pH 8.0, 10 mM imidazole, and 10 mM \u03b2-mercaptoethanol) and sonicated to reduce the viscosity. Protein complexes were pulled down by incubation with 30 \u03bcl Ni NTA magnetic agarose beads (QIAGEN) at room temperature for 2 hr and then successively washed with the buffer series: (1) 6 M guanidine-HCl, 0.1M Na2HPO4/NaH2PO4, 0.01M Tris/HCl, pH 8.0, 10 mM imidazole, and 10 mM \u03b2-mercaptoethanol; (2) 8 M Urea, 0.1 M Na2HPO4/NaH2PO4, 0.01 M Tris/HCl, pH 8.0, 20 mM imidazole, 10 mM \u03b2-mercaptoethanol plus 0.2% Triton X-100; (3) 8 M urea, 0.1 M Na2HPO4/NaH2PO4, 0.01 M Tris/HCl, pH 6.3, 10 mM \u03b2-mercaptoethanol (buffer A), 40 mM imidazole plus 0.4% Triton X-100, twice; (4) buffer A with 20 mM imidazole plus 0.2% Triton X-100; (5) buffer A with 10 mM imidazole plus 0.1% Triton X-100. After the washes, the protein complexes were eluted with 30 \u03bcl 2X SDS sample buffer containing 400 mM imidazole and 20 \u03bcl elution was then used for immunoblot analysis with anti-11\u03b2-HSD2 antibody (Santa Cruz; 1:3000).\n",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "89eb49e2-8264-42f6-b0d4-d777ee941816",
+      "submission_id": "82240f1e-350f-46c1-876c-3a72c490e4b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Ralph DeBerardinis, UT Southwestern Medical Center , United States\n\n## Review text\n\nDOI: [10.7554/eLife.20183.012](https://doi.org/10.7554/eLife.20183.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Aberrant tumor metabolism enables GR takeover in enzalutamide resistant prostate cancer\" for consideration by eLife. Your article has been favorably evaluated by Charles Sawyers as the Senior Editor and three reviewers, including Ralph DeBerardinis (Reviewer #1) - who is a member of our Board of Reviewing Editors - and Charles Ryan (Reviewer #3).\n\nI am pleased to say that the reviewers were positive about the paper. At this stage, the three reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary of work:\n\nLi et al. studied the role of glucocorticoid receptor (GR) expression in enzalutamide resistance in castration-resistant prostate cancer. This is an important question because up-regulation of GR and subsequent cortisol-mediated expression of a large number of androgen receptor responsive genes is believed to contribute to enzalutamide resistance. A key question is how to block cortisol's action locally, in the tumor, because systemic blockade of GR function is likely to be intolerably toxic. Here the authors show that enzalutamide causes a delay of cortisol conversion to cortisone in CPRC cell lines and xenografts. This is associated with increased GR expression and decreased expression of 11\u03b2-HSD2, a cortisol-metabolizing enzyme, in cells, primary tumor tissue and tumors treated ex vivo with enzalutamide. Enforced 11\u03b2-HSD2 expression is sufficient to decrease residual cortisol levels and decrease expression of cortisol-responsive genes in cell lines. It also reduces cortisosterone levels in xenografts and enhances the therapeutic effect of enzalutamide. Mechanistically, 11\u03b2-HSD2 physically interacts with AMFR, an ER-associated E3-ubiquitin ligase, and eliminating AMFR expression enhances 11\u03b2-HSD2 expression, increases conversion of cortisol to cortisone, and enhances the effect of enzalutamide on tumor growth. Overall, the authors provide evidence for a new concept in counteracting enzalutamide resistance by reducing local GR signaling in CRPC tumors.\n\nEssential Revisions:\n\n1) Enzalutamide's effects on cortisol metabolism are largely assessed in LAPC4 cells. Do these effects appear in some of other systems featured in the paper (other cell lines and/or prostate cancer samples treated ex vivo)?\n\n2) The mechanism of reduced 11\u03b2-HSD2 expression in enzalutamide-treated cells should be better defined. The data showing that Erlin-2 increases in enzalutamide-resistant cells is intriguing, but should be functionally linked to resistance. The authors should test whether Erlin-2 over-expression is sufficient to decrease cortisol metabolism and/or whether silencing Erlin-2 after long-term enzalutamide treatment potentiates conversion of cortisol to cortisone.\n\n3) If the mechanism of Dex and Pred's clinical effects in CRPC is solely through the suppression of adrenal steroid production, how can the investigators claim that altered Dex and Pred metabolism within a tumor cell mediates resistance? They might be better served by suggesting that Dex and Pred exert their clinical benefits in as-yet-unspecified mechanism, and that the new observations in the paper move us closer to understanding this. It may well be true that corticosteroids do not exert all of their clinical effects through suppression of adrenal androgens. The authors cite the Attard data but the interesting thing about these data is that patients with progression on abiraterone (with maximal adrenal androgen suppression already achieved) may still respond to dexamethasone. Thus, steroids may exert both clinical benefits in some settings but may also mediate resistance.\n\n4) The in vitro experiments are elegant and sufficiently support the hypothesis that alterations in 11\u03b2-HSD2 are mechanistically responsible for sustained glucocorticoid levels in the tumor cells. Do the authors think that this effect is specific to enzalutamide, a class effect of AR targeted drugs, or possibly a broader mechanism of CRPC development?\n\nTitle: For improved clarity, we suggest changing the title to \"Aberrant corticosteroid metabolism in tumor cells enables GR takeover in enzalutamide resistant prostate cancer.\"\n",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b8bb3cc6-708b-48ef-948f-d967a72fb354",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C1",
+      "claim": "Enzalutamide prolongs survival for patients with metastatic CRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzalutamide is a potent next-generation AR antagonist and prolongs survival for patients with metastatic CRPC (Beer et al., 2014; Scher et al., 2012; Tran et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Beer et al., 2014; Scher et al., 2012; Tran et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "b719fafc-5698-486a-a1a1-d3db64c68c69",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C2",
+      "claim": "Enzalutamide resistance almost always emerges, eventually leading to disease lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, enzalutamide resistance almost always emerges, eventually leading to disease lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established clinical knowledge about enzalutamide resistance in prostate cancer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "8c170a8c-2570-4cdb-9204-555afbc8b617",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C3",
+      "claim": "Potent AR inhibition with enzalutamide leads to a massive up-regulation of GR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging data suggest that potent AR inhibition with enzalutamide leads to a massive up-regulation of GR expression, which then permits the re-expression of about 50% of AR-responsive genes, in turn promoting tumor progression (Arora et al., 2013; Isikbay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Arora et al., 2013; Isikbay et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f5d1b16a-0815-4833-80c9-3f06c6153059",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C4",
+      "claim": "GR up-regulation permits the re-expression of about 50% of AR-responsive genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging data suggest that potent AR inhibition with enzalutamide leads to a massive up-regulation of GR expression, which then permits the re-expression of about 50% of AR-responsive genes, in turn promoting tumor progression (Arora et al., 2013; Isikbay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Arora et al., 2013; Isikbay et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "1cd0464b-2866-40ff-80e7-51a0faa75e99",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C5",
+      "claim": "Total and systemic GR blockade is incompatible with life.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, targeting such a mechanism with GR antagonists may be problematic because total and systemic GR blockade is incompatible with life (Sharifi, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a published study (Sharifi, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "61cc2897-baff-427c-8898-c59bd26078bd",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C6",
+      "claim": "11\u03b2-HSD2 enzymatically converts cortisol to inactive cortisone in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "GR stimulation by cortisol in peripheral tissues is physiologically tightly regulated by 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which enzymatically converts cortisol to inactive cortisone in humans and corticosterone to 11-dehydrocorticosterone in mice (Figure 1A) (Chapman et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation (Chapman et al., 2013) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "d78cc2b7-fae1-418c-b7a5-06ba3bcd050b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C7",
+      "claim": "11\u03b2-HSD2 converts corticosterone to 11-dehydrocorticosterone in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "GR stimulation by cortisol in peripheral tissues is physiologically tightly regulated by 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which enzymatically converts cortisol to inactive cortisone in humans and corticosterone to 11-dehydrocorticosterone in mice (Figure 1A) (Chapman et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation (Chapman et al., 2013) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "e8ec70ea-7810-4ebf-9e6d-6fc647d438b6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C8",
+      "claim": "Fetal and placental 11\u03b2-HSD2 expression shields against maternal cortisol.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, fetal and placental 11\u03b2-HSD2 expression shields against maternal cortisol, thereby restricting GR stimulation and blocking premature fetal maturation (Chapman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to a published study (Chapman et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "b3b82e43-1e75-4a79-8ac2-0d14c7a23bce",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C9",
+      "claim": "Long but not short (i.e., 24 hr) enzalutamide exposure sustains cortisol levels by retarding conversion to cortisone in cells and media.",
+      "claim_type": "EXPLICIT",
+      "source": "Long but not short (i.e., 24 hr) enzalutamide exposure sustains cortisol levels by retarding conversion to cortisone in cells and media (Figure 1B and Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "7263164b-ddd9-4dd8-b375-eaa78965867b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C10",
+      "claim": "Freshly harvested CRPC xenograft tumors treated with enzalutamide have an impaired capability of inactivating [3H]-cortisol by conversion to cortisone.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, freshly harvested CRPC xenograft tumors grown in orchiectomized mice and treated with enzalutamide (Tran et al., 2009) have an impaired capability of inactivating [3H]-cortisol by conversion to cortisone, when compared to tumors from mice treated with orchiectomy alone (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C and a citation (Tran et al., 2009).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "66cc6e44-aef5-4f01-9b05-531f13b0f8af",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C11",
+      "claim": "Enzalutamide suppresses LAPC4 viability in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzalutamide suppresses LAPC4 viability in vitro (Figure 1D) in association with suppression of AR-regulated genes (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "30fbe332-bdd7-440d-a7a6-daccf4e93232",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C12",
+      "claim": "Enzalutamide suppresses AR-regulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzalutamide suppresses LAPC4 viability in vitro (Figure 1D) in association with suppression of AR-regulated genes (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "b66fbf46-c6cc-4680-8743-a45daaa8c55f",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C13",
+      "claim": "Growth recovers after sustained enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth recovers after sustained enzalutamide treatment (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f5444829-0b21-4fcb-a6a1-a3877587ffc6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C14",
+      "claim": "Loss of 11\u03b2-HSD2 protein in AR-expressing LAPC4, VCaP and MDA-PCa-2b prostate cancer cell lines was observed with enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of 11\u03b2-HSD2 protein in AR-expressing LAPC4, VCaP and MDA-PCa-2b prostate cancer cell lines (but not an AR-negative prostate cancer cell line [Figure 2\u2014figure supplement 1A]) was observed with enzalutamide treatment, while no consistent effect on 11\u03b2-HSD1 was detectable (Figure 2A\u2013D and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A\u2013D and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "d2f68c33-c443-479a-b6cb-6990383a9a78",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C15",
+      "claim": "Enzalutamide treatment does not cause loss of 11\u03b2-HSD2 protein in an AR-negative prostate cancer cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of 11\u03b2-HSD2 protein in AR-expressing LAPC4, VCaP and MDA-PCa-2b prostate cancer cell lines (but not an AR-negative prostate cancer cell line [Figure 2\u2014figure supplement 1A]) was observed with enzalutamide treatment, while no consistent effect on 11\u03b2-HSD1 was detectable (Figure 2A\u2013D and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "78aea351-4ded-4b47-8828-08f61cea7499",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C16",
+      "claim": "No consistent effect on 11\u03b2-HSD1 was detectable with enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of 11\u03b2-HSD2 protein in AR-expressing LAPC4, VCaP and MDA-PCa-2b prostate cancer cell lines (but not an AR-negative prostate cancer cell line [Figure 2\u2014figure supplement 1A]) was observed with enzalutamide treatment, while no consistent effect on 11\u03b2-HSD1 was detectable (Figure 2A\u2013D and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A\u2013D and Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "e6d80ec0-221f-4c90-acf9-f9665418eef5",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C17",
+      "claim": "No suppression of HSD11B2 mRNA was observed with enzalutamide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No suppression of HSD11B2 mRNA, which encodes 11\u03b2-HSD2, was observed with enzalutamide treatment, suggesting that 11\u03b2-HSD2 protein loss is not attributable to transcriptional suppression (Figure 2\u2014figure supplement 1C) and no direct 11\u03b2-HSD2 antagonism by enzalutamide was observed (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "edff3bd4-5c22-4e02-84f2-b7ed4bbf8875",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C18",
+      "claim": "11\u03b2-HSD2 protein loss is not attributable to transcriptional suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "No suppression of HSD11B2 mRNA, which encodes 11\u03b2-HSD2, was observed with enzalutamide treatment, suggesting that 11\u03b2-HSD2 protein loss is not attributable to transcriptional suppression (Figure 2\u2014figure supplement 1C) and no direct 11\u03b2-HSD2 antagonism by enzalutamide was observed (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that HSD11B2 mRNA is not suppressed, shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "8341efa3-f279-456c-b2c6-3a470e926fe4",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C19",
+      "claim": "No direct 11\u03b2-HSD2 antagonism by enzalutamide was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "No suppression of HSD11B2 mRNA, which encodes 11\u03b2-HSD2, was observed with enzalutamide treatment, suggesting that 11\u03b2-HSD2 protein loss is not attributable to transcriptional suppression (Figure 2\u2014figure supplement 1C) and no direct 11\u03b2-HSD2 antagonism by enzalutamide was observed (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "a35fbdbe-b9c2-4420-9055-1b151ff77308",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C20",
+      "claim": "11\u03b2-HSD2 loss is not attributable to GR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, 11\u03b2-HSD2 loss is not attributable to GR stimulation (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "21ce8f01-8737-421a-9fa4-d3e3febb42c8",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C21",
+      "claim": "Nine of 11 tissues treated with enzalutamide obtained from patients with prostate cancer had a loss of 11\u03b2-HSD2 with treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine of 11 tissues treated with enzalutamide obtained from patients with prostate cancer (two metastatic CRPC, two local prostate tissues from patients treated neoadjuvantly with enzalutamide and seven fresh tissues treated with enzalutamide ex vivo) had a loss of 11\u03b2-HSD2 with treatment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from patient tissues shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "9f00cd8a-6f06-4e18-a818-8f0c0f243fba",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C22",
+      "claim": "GR up-regulation was observed in a subset of clinical tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously published observations (Arora et al., 2013), GR up-regulation was observed in a subset of clinical tissues (Figure 2\u2014figure supplement 1F), all of which had 11\u03b2-HSD2 loss in Figure 2E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2\u2014figure supplement 1F and a citation (Arora et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "292919f9-ed26-4022-ae6f-cdba78f06e76",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C23",
+      "claim": "All tissues that had GR up-regulation also exhibited 11\u03b2-HSD2 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously published observations (Arora et al., 2013), GR up-regulation was observed in a subset of clinical tissues (Figure 2\u2014figure supplement 1F), all of which had 11\u03b2-HSD2 loss in Figure 2E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E and Figure 2\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "a694e54a-471b-48cd-b9d7-b35a69bdcab2",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C24",
+      "claim": "11\u03b2-HSD2 reinstatement with both stable expression and transient transfection studies reverted the glucocorticoid metabolic phenotype of enzalutamide treated cells back to rapid cortisol inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "11\u03b2-HSD2 reinstatement with both stable expression and transient transfection studies reverted the glucocorticoid metabolic phenotype of enzalutamide treated cells back to rapid cortisol inactivation that is characteristic of enzalutamide-na\u00efve cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A\u2013B and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "72a58706-bed0-4785-b34e-4e0e2e31d414",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C25",
+      "claim": "The effects of 11\u03b2-HSD2 replacement are specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effects of 11\u03b2-HSD2 replacement on transcription of PSA (Figure 3C), which is regulated by AR and GR, KLF9, which is regulated by GR only and PMEPA1, which is regulated by AR only (Arora et al., 2013), suggest that the effects are indeed specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C and a citation (Arora et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "31fb2d96-aa5a-4b86-bfd8-e76e9dd56717",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C26",
+      "claim": "Forced 11\u03b2-HSD2 expression significantly reversed enzalutamide-resistant growth and prolonged progression-free survival in LAPC4 xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors appeared to harbor significant resistance to treatment with enzalutamide, as evidenced by the growth of Vector xenografts through enzalutamide therapy. Forced 11\u03b2-HSD2 expression significantly reversed enzalutamide-resistant growth and prolonged progression-free survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "c4a3e07f-882f-4bff-9860-1acf26fd027f",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C27",
+      "claim": "11\u03b2-HSD2 expression had no significant effect on untreated tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 11\u03b2-HSD2 expression had no significant effect on untreated tumors, supporting a model in which the effect of 11\u03b2-HSD2 on tumor growth is specific to the context of resistance to potent AR antagonist therapy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "3c3e5f62-01f0-46cd-9aa0-192e0688874e",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C28",
+      "claim": "Reinstatement of sensitivity to enzalutamide treatment also occurred in a second (VCaP) xenograft model of CRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Reinstatement of sensitivity to enzalutamide treatment also occurred in a second (VCaP) xenograft model of CRPC (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4C\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "2a6a6404-4c83-4876-84e6-6dcc57977ef5",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C29",
+      "claim": "11\u03b2-HSD2 reinstatement depleted corticosterone concentrations by approximately two-thirds in enzalutamide-treated tumors (44.5 pmol/g in vector tumors vs. 15.1 pmol/g in 11\u03b2-HSD2 tumors; p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "11\u03b2-HSD2 reinstatement depleted corticosterone concentrations by approximately two-thirds in enzalutamide-treated tumors (44.5 pmol/g in vector tumors vs. 15.1 pmol/g in 11\u03b2-HSD2 tumors; p=0.002), which otherwise harbor the capacity to metabolically sustain elevated concentrations of biologically active glucocorticoids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "30d9c18a-8cf1-4c48-a90d-59c0c8c7eea6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C30",
+      "claim": "Tumor 11\u03b2-HSD2 expression results in a significant decline in the percentage of tumor corticosterone (59% in vector tumors vs. 33% in 11\u03b2-HSD2 tumors; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor 11\u03b2-HSD2 expression also results in a significant decline in the percentage of tumor corticosterone (59% in vector tumors vs. 33% in 11\u03b2-HSD2 tumors; p<0.0001) when compared to the sum total of corticosterone plus 11-dehydrocorticosterone (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "4e31b850-a071-4c25-8cd8-dfbf28211125",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C31",
+      "claim": "There is no significant change in serum in the absolute concentration of corticosterone (873 pmol/ml in vector mice vs. 867 pmol/ml in 11\u03b2-HSD2 mice; p=0.49) with 11\u03b2-HSD2 expression in enzalutamide treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effects of 11\u03b2-HSD2 expression on tumor glucocorticoids in enzalutamide treated mice, there is no significant change in serum in the absolute concentration (873 pmol/ml in vector mice vs. 867 pmol/ml in 11\u03b2-HSD2 mice; p=0.49; Figure 4G) or percentage of corticosterone (99.87% in vector mice vs. 99.85% in 11\u03b2-HSD2 mice; p<0.93; Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "45325f8e-b482-4465-980b-d63ed1bf242c",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C32",
+      "claim": "There is no significant change in serum in the percentage of corticosterone (99.87% in vector mice vs. 99.85% in 11\u03b2-HSD2 mice; p<0.93) with 11\u03b2-HSD2 expression in enzalutamide treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the effects of 11\u03b2-HSD2 expression on tumor glucocorticoids in enzalutamide treated mice, there is no significant change in serum in the absolute concentration (873 pmol/ml in vector mice vs. 867 pmol/ml in 11\u03b2-HSD2 mice; p=0.49; Figure 4G) or percentage of corticosterone (99.87% in vector mice vs. 99.85% in 11\u03b2-HSD2 mice; p<0.93; Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mass spectrometry data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "18cd9c1a-8658-4e27-967b-74325daaa0d4",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C33",
+      "claim": "A physical association between 11\u03b2-HSD2 and AMFR is supported by immunoprecipitation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "A physical association between 11\u03b2-HSD2 and AMFR is supported by immunoprecipitation of AMFR, followed by immunoblot for 11\u03b2-HSD2, as well as immunoprecipitation of 11\u03b2-HSD2, followed by immunoblot for AMFR (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "94676e96-3afc-4d61-bd73-645171ae92aa",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C34",
+      "claim": "Expression of 11\u03b2-HSD2, Ubiquitin-His, and AMFR-Myc-DDK, followed by Ni-agarose pull-down and anti-11\u03b2-HSD2 immunoblot demonstrates the AMFR-dependence of 11\u03b2-HSD2 ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of 11\u03b2-HSD2, Ubiquitin-His, and AMFR-Myc-DDK, followed by Ni-agarose pull-down and anti-11\u03b2-HSD2 immunoblot demonstrates the AMFR-dependence of 11\u03b2-HSD2 ubiquitination (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "283b37d1-e06e-4937-a2fb-b2d7d272e940",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C35",
+      "claim": "Enzalutamide treatment did not consistently increase AMFR expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzalutamide treatment did not consistently increase AMFR expression (Figure 5\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "b7873e2b-3f93-4e37-8fca-592fcbf754c0",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C36",
+      "claim": "Erlin-2 was more consistently up-regulated with enzalutamide treatment, including in 8 of 11 patient tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Erlin-2, which enables the AMFR-associated endoplasmic reticulum-associated degradation pathway (ERAD), was more consistently up-regulated, including in 8 of 11 patient tissues (Figure 5\u2014figure supplement 1A\u2013C) (Browman et al., 2006; Pearce et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A\u2013C and citations (Browman et al., 2006; Pearce et al., 2007).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "4d56a2ac-b78d-4c61-ad48-b865daf111a2",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C37",
+      "claim": "Genetically silencing AMFR with stable shRNA expression promotes an increase in 11\u03b2-HSD2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional consequence of 11\u03b2-HSD2 / AMFR interaction and 11\u03b2-HSD2 ubiquitination is evidenced by genetically silencing AMFR with stable shRNA expression, which promotes an increase in 11\u03b2-HSD2 protein (Figure 5C) but not transcript (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "dbdda1fb-96fb-4532-82d4-cf8dcd0f0e04",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C38",
+      "claim": "Genetically silencing AMFR does not increase 11\u03b2-HSD2 transcript.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional consequence of 11\u03b2-HSD2 / AMFR interaction and 11\u03b2-HSD2 ubiquitination is evidenced by genetically silencing AMFR with stable shRNA expression, which promotes an increase in 11\u03b2-HSD2 protein (Figure 5C) but not transcript (Figure 5\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "3507439b-0288-4369-b5ef-e52706f8d38b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C39",
+      "claim": "The enzalutamide-induced metabolic phenotype that sustains cortisol concentrations by way of retarded inactivation is reversed with genetic ablation of AMFR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the enzalutamide-induced metabolic phenotype that sustains cortisol concentrations by way of retarded inactivation is reversed with genetic ablation of AMFR (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "0cad4475-90dd-4558-af56-5dca8b5d4f09",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C40",
+      "claim": "Silencing both 11\u03b2-HSD2 and AMFR with enzalutamide treatment negates the effect of genetically silencing AMFR alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing both 11\u03b2-HSD2 and AMFR with enzalutamide treatment negates the effect of genetically silencing AMFR alone, suggesting that the effect of AMFR is mediated through 11\u03b2-HSD2 (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "91262126-2521-4dca-b97a-a84f36c196d6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C41",
+      "claim": "The effect of AMFR is mediated through 11\u03b2-HSD2.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing both 11\u03b2-HSD2 and AMFR with enzalutamide treatment negates the effect of genetically silencing AMFR alone, suggesting that the effect of AMFR is mediated through 11\u03b2-HSD2 (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that silencing both 11\u03b2-HSD2 and AMFR negates the effect of AMFR silencing alone, shown in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "be86c60e-027a-4bc4-ac3b-581002a9cb9b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C42",
+      "claim": "Stable AMFR knockdown suppressed xenograft growth and prolonged progression-free survival in enzalutamide-treated xenografts.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the functional relevance and requirement for AMFR expression on enzalutamide resistance is suggested by suppressed xenograft growth and prolonged progression-free survival in enzalutamide-treated xenografts with stable AMFR knockdown (Figure 5E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "c2915986-4b43-4ad0-8c4d-5cec03588614",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C43",
+      "claim": "Tumors with AMFR knockdown were confirmed to have sustained 11\u03b2-HSD2 protein expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors with AMFR knockdown were confirmed to have sustained 11\u03b2-HSD2 protein expression, thus impairing enzalutamide resistance (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "6e8192c2-c7e7-4dc3-aac3-6a888f8cf05f",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C44",
+      "claim": "Metastatic prostate cancer usually responds initially to medical or surgical castration, then eventually progresses as castration-resistant prostate cancer (CRPC).",
+      "claim_type": "EXPLICIT",
+      "source": "Metastatic prostate cancer usually responds initially to medical or surgical castration, then eventually progresses as castration-resistant prostate cancer (CRPC), which is stimulated by intratumoral synthesis of testosterone and/or 5\u03b1-dihydrotestosterone (DHT) and activation of the androgen receptor (AR) (Attard et al., 2016; Chang et al., 2013; Mostaghel et al., 2014; Scher and Sawyers, 2005; Hearn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Attard et al., 2016; Chang et al., 2013; Mostaghel et al., 2014; Scher and Sawyers, 2005; Hearn et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "78abcf7a-b1e7-4431-959e-ef43a487af1b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C45",
+      "claim": "CRPC is stimulated by intratumoral synthesis of testosterone and/or 5\u03b1-dihydrotestosterone (DHT) and activation of the androgen receptor (AR).",
+      "claim_type": "EXPLICIT",
+      "source": "Metastatic prostate cancer usually responds initially to medical or surgical castration, then eventually progresses as castration-resistant prostate cancer (CRPC), which is stimulated by intratumoral synthesis of testosterone and/or 5\u03b1-dihydrotestosterone (DHT) and activation of the androgen receptor (AR) (Attard et al., 2016; Chang et al., 2013; Mostaghel et al., 2014; Scher and Sawyers, 2005; Hearn et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Attard et al., 2016; Chang et al., 2013; Mostaghel et al., 2014; Scher and Sawyers, 2005; Hearn et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "59308bb4-fe8d-42cd-81e9-678f3cc789e8",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C46",
+      "claim": "Enzalutamide is a potent next-generation AR antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzalutamide is a potent next-generation AR antagonist and prolongs survival for patients with metastatic CRPC (Beer et al., 2014; Scher et al., 2012; Tran et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published studies (Beer et al., 2014; Scher et al., 2012; Tran et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "bb21378c-9259-4b28-ac2d-a39a24cb3f6a",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C47",
+      "claim": "Enzalutamide treatment in human models of prostate cancer and patient tissues is accompanied by AMFR mediating loss of 11\u03b2-HSD2.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that enzalutamide treatment in human models of prostate cancer and patient tissues is accompanied by a ubiquitin E3-ligase, AMFR, mediating loss of 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which otherwise inactivates cortisol, sustaining tumor cortisol concentrations to stimulate GR and enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "265c2e06-43ef-41a8-be4b-78c3b89b6ef6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C48",
+      "claim": "11\u03b2-HSD2 otherwise inactivates cortisol.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that enzalutamide treatment in human models of prostate cancer and patient tissues is accompanied by a ubiquitin E3-ligase, AMFR, mediating loss of 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which otherwise inactivates cortisol, sustaining tumor cortisol concentrations to stimulate GR and enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about 11\u03b2-HSD2 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f1a4cc74-7765-4544-ad48-6d0be2b6e4a5",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C49",
+      "claim": "Loss of 11\u03b2-HSD2 sustains tumor cortisol concentrations to stimulate GR and enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that enzalutamide treatment in human models of prostate cancer and patient tissues is accompanied by a ubiquitin E3-ligase, AMFR, mediating loss of 11\u03b2-hydroxysteroid dehydrogenase-2 (11\u03b2-HSD2), which otherwise inactivates cortisol, sustaining tumor cortisol concentrations to stimulate GR and enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "77c8f0b4-67d5-4fb5-a88f-9e1ef19ddfd6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C50",
+      "claim": "Reinstatement of 11\u03b2-HSD2 expression reverses enzalutamide resistance in mouse xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, reinstatement of 11\u03b2-HSD2 expression, or AMFR loss, reverses enzalutamide resistance in mouse xenograft tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "52815fd4-2b87-4e7c-942f-22fb281eefba",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C51",
+      "claim": "AMFR loss reverses enzalutamide resistance in mouse xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, reinstatement of 11\u03b2-HSD2 expression, or AMFR loss, reverses enzalutamide resistance in mouse xenograft tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "a870a8e6-b2e9-4539-98df-49691fc372c2",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C52",
+      "claim": "Enzalutamide resistance is marked by sustained cortisol concentrations in the prostate tumor that are attributable to a profound loss of 11\u03b2-HSD2 and impaired conversion to cortisone.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that enzalutamide resistance is marked by sustained cortisol concentrations in the prostate tumor that are attributable to a profound loss of 11\u03b2-HSD2 and impaired conversion to cortisone, which together de-repress GR and stimulate glucocorticoid-dependent signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "04157fe0-6f5e-42e0-9a24-fb11e1fb86df",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C53",
+      "claim": "Sustained cortisol concentrations and impaired conversion to cortisone de-repress GR and stimulate glucocorticoid-dependent signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that enzalutamide resistance is marked by sustained cortisol concentrations in the prostate tumor that are attributable to a profound loss of 11\u03b2-HSD2 and impaired conversion to cortisone, which together de-repress GR and stimulate glucocorticoid-dependent signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing that 11\u03b2-HSD2 loss leads to sustained cortisol and GR stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "ebccdf06-2247-4cd8-beca-d1f51eebb34d",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C54",
+      "claim": "11\u03b2-HSD2 loss is mediated by the ubiquitin E3-ligase autocrine mobility factor receptor (AMFR).",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, 11\u03b2-HSD2 loss is mediated by the ubiquitin E3-ligase autocrine mobility factor receptor (AMFR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "1b14ef0b-8097-433d-a8a3-f546dbe217cb",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C55",
+      "claim": "Sustained 11\u03b2-HSD2 expression reverses the metabolic phenotype of enzalutamide resistance and reinstates the therapeutic response to enzalutamide in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, sustained 11\u03b2-HSD2 expression reverses the metabolic phenotype of enzalutamide resistance and reinstates the therapeutic response to enzalutamide in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "cd9a334c-5d2d-431e-86f5-aa9f21f5a7e9",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C56",
+      "claim": "Systemic availability of GR agonists represents only one aspect of tumor GR stimulation in the setting of enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that systemic availability of GR agonists represents only one aspect of tumor GR stimulation in the setting of enzalutamide resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the findings that local metabolic regulation of cortisol by 11\u03b2-HSD2 is critical for GR stimulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "db6d1316-bcd4-463a-b44e-a57750401ad4",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C57",
+      "claim": "Local metabolic regulation of ligand availability by the tumor serves as a second critical aspect of tumor GR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Local metabolic regulation of ligand availability by the tumor serves as a second critical aspect and can either oppose the effects of systemic glucocorticoids by spurring enzymatic inactivation, or instead allow unimpeded access to the tumor tissue, enabling sustained GR stimulation to promote tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the findings that 11\u03b2-HSD2 loss allows sustained cortisol levels in tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "81eac1bd-2532-47fd-8622-5dd240dedd9a",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C58",
+      "claim": "Glucocorticoid administration has long been recognized to have a therapeutic effect in CRPC.",
+      "claim_type": "EXPLICIT",
+      "source": "Glucocorticoid administration has long been recognized to have a therapeutic effect in CRPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established clinical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "d90fe776-92fa-4307-a53e-c747eb1ad561",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C59",
+      "claim": "The therapeutic effect of glucocorticoids is likely due in part to adrenal androgen suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the therapeutic effect of glucocorticoids is likely due in part to adrenal androgen suppression, the complete effects of glucocorticoids in prostate cancer have yet to be fully elucidated (Attard et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Attard et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "5a53f48c-0ac1-4e2b-a2e4-796151791400",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C60",
+      "claim": "Prednisolone is inactivated by 11\u03b2-HSD2 to prednisone.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prednisolone is inactivated by 11\u03b2-HSD2 to prednisone but dexamethasone is generally thought to be impervious to inactivation by 11\u03b2-HSD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about glucocorticoid metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "1cad74b9-b300-4807-b651-d16ba2f6a662",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C61",
+      "claim": "Dexamethasone is generally thought to be impervious to inactivation by 11\u03b2-HSD2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, prednisolone is inactivated by 11\u03b2-HSD2 to prednisone but dexamethasone is generally thought to be impervious to inactivation by 11\u03b2-HSD2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about glucocorticoid metabolism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "40d122b9-7001-4c42-8a0b-82217f1c4bff",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C62",
+      "claim": "Baseline GR expression prior to enzalutamide treatment, where 11\u03b2-HSD2 expression is intact, may be associated with enzalutamide resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be even more important prior to enzalutamide therapy and consequent suppression of 11\u03b2-HSD2 loss, because some data suggest that baseline GR expression prior to enzalutamide treatment, where 11\u03b2-HSD2 expression is intact, may be associated with enzalutamide resistance (Arora et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Arora et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "00d022d6-0e93-438d-90a3-dbd1cecc141a",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C63",
+      "claim": "Early results from a neoadjuvant clinical trial of castration plus abiraterone suggest that tissue cortisol may be elevated specifically in prostate cancers that up-regulate GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, early results from a neoadjuvant clinical trial of castration plus abiraterone suggest that tissue cortisol may be elevated specifically in prostate cancers that up-regulate GR (Efstathiou et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Efstathiou et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "dc76c46d-68ee-4d5c-85a3-86b1cdd177ad",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C64",
+      "claim": "Altered tumor glucocorticoid metabolism by way of the mechanism elucidated occurs not only with enzalutamide but also with abiraterone therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that altered tumor glucocorticoid metabolism by way of the mechanism we have elucidated occurs not only with enzalutamide but also with abiraterone therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the findings with enzalutamide.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "c9f8959a-b487-479d-be9f-d47eb2c2aab1",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C65",
+      "claim": "Blocking 11\u03b2-HSD2 protein loss, for example by blocking AMFR, or reinstatement of 11\u03b2-HSD2 expression in the tumor may be an appropriate strategy to reverse enzalutamide resistance without affecting the systemic availability of glucocorticoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data raise the possibility that blocking 11\u03b2-HSD2 protein loss, for example by blocking AMFR, or reinstatement of 11\u03b2-HSD2 expression in the tumor may be an appropriate strategy to reverse enzalutamide resistance without affecting the systemic availability of glucocorticoids and resultant associated toxicities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "aeb5fc1c-a1bc-4e31-a979-43cbf17de19c",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C66",
+      "claim": "Blocking AMFR may also increase 3\u03b2HSD1 protein, sustaining androgen synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking AMFR may also increase 3\u03b2HSD1 protein, sustaining androgen synthesis (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Chang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "0f108610-69f0-4920-a050-caf1d697f95b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C67",
+      "claim": "In the context of enzalutamide treatment, the net effect of AMFR ablation is therapeutic, probably because the AR ligand binding domain remains mainly occupied by enzalutamide and glucocorticoid signaling is a major driver of tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our in vivo studies with AMFR knockdown suggest that in the context of enzalutamide treatment, the net effect of AMFR ablation is therapeutic, probably because the AR ligand binding domain remains mainly occupied by enzalutamide and glucocorticoid signaling is a major driver of tumor progression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data shown in Figure 5E\u2013F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "9d93bfa9-134d-446d-90fe-a02e549787ba",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C68",
+      "claim": "GR and AR have been implicated in a subtype-specific breast cancer progression.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in addition to the involvement of GR in prostate cancer, GR and AR have been implicated in a subtype-specific breast cancer progression (Kach et al., 2015; Ni et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations (Kach et al., 2015; Ni et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "2e4eced9-5d54-47ff-80c7-3ba9fa9cb004",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C69",
+      "claim": "A switch in steroid receptors that drives disease processes more broadly may be accompanied by perturbed local metabolic regulation of the availability of ligands that stimulate steroid receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that a switch in steroid receptors that drives disease processes more broadly may be accompanied by perturbed local metabolic regulation of the availability of ligands that stimulate steroid receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the findings in prostate cancer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "2eebca5d-e8f1-4dac-83e8-f1c3c6d41572",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C70",
+      "claim": "The mouse adrenal does not express 17\u03b1-hydroxylase/17,20 lyase and thus synthesizes corticosterone instead of cortisol as the dominant glucocorticoid.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to humans, the mouse adrenal does not express 17\u03b1-hydroxylase/17,20 lyase and thus synthesizes corticosterone instead of cortisol as the dominant glucocorticoid (Figure 1A), which is similarly inactivated to 11-dehydrocorticosterone by 11\u03b2-HSD2 (Miller and Auchus, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation (Miller and Auchus, 2011) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "06c868bf-661c-4f9b-bcb1-5a759046cd58",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C71",
+      "claim": "Corticosterone is similarly inactivated to 11-dehydrocorticosterone by 11\u03b2-HSD2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to humans, the mouse adrenal does not express 17\u03b1-hydroxylase/17,20 lyase and thus synthesizes corticosterone instead of cortisol as the dominant glucocorticoid (Figure 1A), which is similarly inactivated to 11-dehydrocorticosterone by 11\u03b2-HSD2 (Miller and Auchus, 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation (Miller and Auchus, 2011) and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "8bb46935-7429-41fb-9a1b-33b1be7c59a9",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C72",
+      "claim": "AMFR is a ubiquitin E3-ligase in the endoplasmic reticulum associated degradation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously described the role of AMFR, a ubiquitin E3-ligase in the endoplasmic reticulum associated degradation pathway, in regulation of another steroidogenic enzyme, 3\u03b2-hydroxysteroid dehydrogenase-1 (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Chang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "84b2165d-5f45-4dac-8f3c-c7a8448f2123",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C73",
+      "claim": "AMFR regulates 3\u03b2-hydroxysteroid dehydrogenase-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously described the role of AMFR, a ubiquitin E3-ligase in the endoplasmic reticulum associated degradation pathway, in regulation of another steroidogenic enzyme, 3\u03b2-hydroxysteroid dehydrogenase-1 (Chang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Chang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "cbfe3089-0115-498e-ab8f-85435115ae69",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C74",
+      "claim": "11\u03b2-HSD2 is located in the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "As 11\u03b2-HSD2 is also located in the endoplasmic reticulum, we hypothesized that AMFR is required for enzalutamide-induced loss of 11\u03b2-HSD2 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about 11\u03b2-HSD2 localization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "5e0c162f-4078-43e5-99ec-7758e374297a",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C75",
+      "claim": "Erlin-2 enables the AMFR-associated endoplasmic reticulum-associated degradation pathway (ERAD).",
+      "claim_type": "EXPLICIT",
+      "source": "However, Erlin-2, which enables the AMFR-associated endoplasmic reticulum-associated degradation pathway (ERAD), was more consistently up-regulated, including in 8 of 11 patient tissues (Figure 5\u2014figure supplement 1A\u2013C) (Browman et al., 2006; Pearce et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations (Browman et al., 2006; Pearce et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "52a74173-a122-4549-a228-b57439dd20dd",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C76",
+      "claim": "A physical association between AMFR and 11\u03b2-HSD2 enables enzalutamide to promote loss of 11\u03b2-HSD2, resulting in sustained cortisol concentrations that promote GR stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest a model in which a physical association between AMFR and 11\u03b2-HSD2 enables enzalutamide to promote loss of 11\u03b2-HSD2, resulting in sustained cortisol concentrations that promote GR stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data presented in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "0e040ec7-11cf-49e6-b8e2-d071c7fdef47",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C77",
+      "claim": "PSA is regulated by AR and GR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effects of 11\u03b2-HSD2 replacement on transcription of PSA (Figure 3C), which is regulated by AR and GR, KLF9, which is regulated by GR only and PMEPA1, which is regulated by AR only (Arora et al., 2013), suggest that the effects are indeed specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Arora et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "cfc25cda-c579-4658-8d4f-535b7b589fd6",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C78",
+      "claim": "KLF9 is regulated by GR only.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effects of 11\u03b2-HSD2 replacement on transcription of PSA (Figure 3C), which is regulated by AR and GR, KLF9, which is regulated by GR only and PMEPA1, which is regulated by AR only (Arora et al., 2013), suggest that the effects are indeed specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Arora et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "790e54f5-f611-44e0-bdb0-db6746aa4909",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C79",
+      "claim": "PMEPA1 is regulated by AR only.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effects of 11\u03b2-HSD2 replacement on transcription of PSA (Figure 3C), which is regulated by AR and GR, KLF9, which is regulated by GR only and PMEPA1, which is regulated by AR only (Arora et al., 2013), suggest that the effects are indeed specific to glucocorticoid substrates of 11\u03b2-HSD2 (i.e., cortisol but not dexamethasone) and GR-responsive genes (i.e., PSA and KLF9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation (Arora et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "0ef768e7-5f0a-4ed8-928f-b3be8c4ecd8f",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "claim_id": "C80",
+      "claim": "The effect of 11\u03b2-HSD2 on tumor growth is specific to the context of resistance to potent AR antagonist therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 11\u03b2-HSD2 expression had no significant effect on untreated tumors, supporting a model in which the effect of 11\u03b2-HSD2 on tumor growth is specific to the context of resistance to potent AR antagonist therapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that 11\u03b2-HSD2 expression only affects tumor growth in the presence of enzalutamide treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dc53f2a5-6189-44f4-b01d-2a726721c374",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Enzalutamide treatment sustains cortisol levels by impairing conversion to cortisone in cell lines and xenograft models, and cell growth recovers after sustained enzalutamide treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, and C13 are supported by experimental data showing that long-term (but not short-term) enzalutamide exposure retards cortisol inactivation in LAPC4 and VCaP cells (Figure 1B) and xenografts (Figure 1C), and that cell viability recovers with prolonged treatment (Figure 1\u2014figure supplement 1C). These findings establish the metabolic phenotype associated with enzalutamide resistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "09529b95-bf5d-4274-965b-61f63fba1531",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Enzalutamide treatment causes loss of 11\u03b2-HSD2 protein in AR-expressing prostate cancer cell lines and patient tissues, but not through transcriptional suppression, direct antagonism, or GR stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 are well-supported by Western blot and immunofluorescence data from multiple cell lines (Figure 2A-D) and patient tissues (Figure 2E). The mechanism is shown to be post-transcriptional (C17-C18) and not due to direct enzyme inhibition (C19) or GR stimulation (C20). The clinical relevance is demonstrated in 9 of 11 patient samples (C21), with GR upregulation observed in a subset that also showed 11\u03b2-HSD2 loss (C22-C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "565f8f8d-e60e-4713-9fcb-1dbdc6698f18",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Reinstatement of 11\u03b2-HSD2 expression reverses the metabolic phenotype of enzalutamide treatment and specifically affects GR-responsive genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24 and C25 are supported by experimental data showing that both transient and stable 11\u03b2-HSD2 expression restore rapid cortisol inactivation (Figure 3A-B) and that the effects are specific to cortisol (not dexamethasone) and GR-responsive genes like PSA and KLF9 (Figure 3C). The specificity controls using PMEPA1 (AR-only regulated) strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "d4e60ad3-a67a-411c-9aec-832c68cce001",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Forced 11\u03b2-HSD2 expression reverses enzalutamide resistance in xenograft models by depleting intratumoral glucocorticoids without affecting systemic levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 are strongly supported by in vivo xenograft data showing that 11\u03b2-HSD2 expression significantly reduces tumor growth and prolongs progression-free survival in both LAPC4 and VCaP models treated with enzalutamide (Figure 4A-D), but has no effect on untreated tumors (C27). Mass spectrometry data confirm significant depletion of tumor corticosterone (C29-C30) without affecting serum levels (C31-C32), demonstrating tumor-specific metabolic effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f7e10806-a46a-4964-b8be-422b55320550",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AMFR physically interacts with 11\u03b2-HSD2, mediates its ubiquitination and degradation, and is required for the metabolic phenotype of enzalutamide resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C41 are supported by co-immunoprecipitation experiments (C33, Figure 5A), ubiquitination assays (C34, Figure 5B), and functional studies showing that AMFR knockdown increases 11\u03b2-HSD2 protein (C37) but not transcript (C38), reverses the metabolic phenotype (C39), and that the effect requires 11\u03b2-HSD2 (C40-C41, Figure 5\u2014figure supplement 1E). The mechanistic chain is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "6dc4de9e-5f0b-4c7d-aa56-b99258d22e49",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AMFR knockdown suppresses enzalutamide-resistant xenograft growth and prolongs progression-free survival by sustaining 11\u03b2-HSD2 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 are supported by in vivo data showing that AMFR knockdown significantly reduces tumor growth and extends progression-free survival in enzalutamide-treated xenografts (Figure 5E-F), with confirmation that these tumors retain 11\u03b2-HSD2 expression (Figure 5G). This validates AMFR as a therapeutic target.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "007c6f49-6c88-412b-bef8-f668f016612a",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Erlin-2, but not AMFR, is consistently upregulated with enzalutamide treatment in cell lines and patient tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35 and C36 are supported by Western blot data showing inconsistent AMFR upregulation (Figure 5\u2014figure supplement 1A-B) but consistent Erlin-2 upregulation in 8 of 11 patient tissues (Figure 5\u2014figure supplement 1A-C). This suggests Erlin-2 may be the primary driver of enhanced ERAD activity rather than increased AMFR expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "93b03e9c-f1c0-4a8c-933f-a34bdd511fb7",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Enzalutamide suppresses LAPC4 cell viability and AR-regulated gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 are supported by cell viability assays (Figure 1D) and qPCR data (Figure 1\u2014figure supplement 1B) showing that enzalutamide reduces cell viability and suppresses AR-regulated genes. These are expected effects that validate the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Enzalutamide is an effective AR antagonist that prolongs survival in metastatic CRPC, but resistance inevitably develops.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C44, C45, and C46 are background claims supported by multiple citations to established literature. These provide the clinical context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "d8b0bd9a-2535-4ae7-befe-2f0aa16cad02",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Enzalutamide-induced GR upregulation permits re-expression of AR-responsive genes, but systemic GR blockade is not viable therapeutically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, and C5 are supported by citations to prior work establishing the rationale for this study. These claims provide important context for why a tumor-specific metabolic approach is needed but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "7092f4f6-8553-41d6-b9b7-109cdd139a06",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "11\u03b2-HSD2 converts cortisol to cortisone in humans and corticosterone to 11-dehydrocorticosterone in mice, and is localized to the endoplasmic reticulum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C8, C48, C70, C71, and C74 are established biochemical facts supported by citations and illustrated in Figure 1A. These provide necessary background on glucocorticoid metabolism but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "3d27db42-eb93-443e-945f-46f23aaf0e7e",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study demonstrates that AMFR-mediated loss of 11\u03b2-HSD2 sustains tumor cortisol levels to drive GR-dependent enzalutamide resistance, which can be reversed by restoring 11\u03b2-HSD2 or blocking AMFR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C49-C55 are summary statements of the main findings, supported by the comprehensive experimental data throughout the manuscript. These integrate the mechanistic findings (AMFR-mediated 11\u03b2-HSD2 degradation), metabolic consequences (sustained cortisol), and therapeutic implications (reversibility of resistance).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "4beab290-8b12-41c8-9a64-ef11d74ed78e",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Local tumor metabolic regulation of glucocorticoid availability is a critical determinant of GR stimulation in addition to systemic glucocorticoid levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56 and C57 represent key conceptual conclusions supported by the finding that tumor-specific 11\u03b2-HSD2 expression depletes intratumoral glucocorticoids without affecting systemic levels (C29-C32). This establishes a new paradigm for understanding GR signaling in cancer.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "0d060909-29f1-4a32-a0b8-218cad3e0688",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Glucocorticoid pharmacology in prostate cancer is complex, with differential susceptibility to 11\u03b2-HSD2 inactivation and potential relevance to baseline GR expression and abiraterone therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are discussion points supported by citations to prior work. They contextualize the findings within existing clinical knowledge about glucocorticoid therapy in CRPC and suggest broader implications, but do not present new experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "8c05ea0d-cd2e-4d0c-a3b2-076ee53fea91",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The findings suggest potential therapeutic strategies targeting AMFR or 11\u03b2-HSD2 to reverse enzalutamide resistance without systemic toxicity, though AMFR inhibition may have complex effects on androgen synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C64-C67 are speculative proposals for future therapeutic approaches. While C67 is supported by the in vivo AMFR knockdown data (Figure 5E-F), claims C64-C66 are explicitly presented as possibilities requiring further investigation. The therapeutic potential is plausible but not yet validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "b1838d47-aa50-4d4b-968e-d0424b169ade",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mechanism of steroid receptor switching accompanied by altered local metabolic regulation may have broader relevance beyond prostate cancer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68 and C69 are speculative extensions of the findings to other disease contexts. While C68 is supported by citations about GR/AR in breast cancer, C69 is an inference that requires experimental validation in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "285863ee-23b5-46bb-9673-d5746428c103",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "AMFR is an E3 ubiquitin ligase in the ERAD pathway that regulates steroidogenic enzymes, and Erlin-2 enables AMFR-associated ERAD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C73, and C75 are supported by citations to prior work from the same laboratory and others. These establish the known functions of AMFR and Erlin-2 that provide the mechanistic basis for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "ff3fc7d6-39b2-429d-aaf8-b01c2fb184c9",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A model is proposed in which physical association between AMFR and 11\u03b2-HSD2 enables enzalutamide to promote 11\u03b2-HSD2 loss, resulting in sustained cortisol and GR stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is a mechanistic model inferred from the experimental data in Figure 5. The physical association (C33), ubiquitination (C34), and functional consequences (C37-C43) collectively support this model, though the precise mechanism by which enzalutamide triggers this process remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f3b775b5-2084-4dc8-b533-b00922001bc3",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "PSA is regulated by both AR and GR, KLF9 by GR only, and PMEPA1 by AR only.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79 are established facts about gene regulation supported by citation to prior work (Arora et al., 2013). These provide the basis for interpreting the specificity experiments in Figure 3C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    },
+    {
+      "id": "f93841fa-1928-4f49-b666-b3510f412d52",
+      "content_id": "c645fabd-2330-46ee-a481-907bae854328",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The effect of 11\u03b2-HSD2 on tumor growth is specific to the context of AR antagonist therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is an inference supported by the observation that 11\u03b2-HSD2 expression affects tumor growth only in enzalutamide-treated xenografts (C26) but not untreated tumors (C27, Figure 4A-B). This context-specificity is important for understanding the therapeutic implications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:53:14.628861Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b3b82e43-1e75-4a79-8ac2-0d14c7a23bce",
+      "result_id": "dc53f2a5-6189-44f4-b01d-2a726721c374"
+    },
+    {
+      "claim_id": "7263164b-ddd9-4dd8-b375-eaa78965867b",
+      "result_id": "dc53f2a5-6189-44f4-b01d-2a726721c374"
+    },
+    {
+      "claim_id": "b66fbf46-c6cc-4680-8743-a45daaa8c55f",
+      "result_id": "dc53f2a5-6189-44f4-b01d-2a726721c374"
+    },
+    {
+      "claim_id": "f5444829-0b21-4fcb-a6a1-a3877587ffc6",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "d2f68c33-c443-479a-b6cb-6990383a9a78",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "78aea351-4ded-4b47-8828-08f61cea7499",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "e6d80ec0-221f-4c90-acf9-f9665418eef5",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "edff3bd4-5c22-4e02-84f2-b7ed4bbf8875",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "8341efa3-f279-456c-b2c6-3a470e926fe4",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "a35fbdbe-b9c2-4420-9055-1b151ff77308",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "21ce8f01-8737-421a-9fa4-d3e3febb42c8",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "9f00cd8a-6f06-4e18-a818-8f0c0f243fba",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "292919f9-ed26-4022-ae6f-cdba78f06e76",
+      "result_id": "09529b95-bf5d-4274-965b-61f63fba1531"
+    },
+    {
+      "claim_id": "a694e54a-471b-48cd-b9d7-b35a69bdcab2",
+      "result_id": "565f8f8d-e60e-4713-9fcb-1dbdc6698f18"
+    },
+    {
+      "claim_id": "72a58706-bed0-4785-b34e-4e0e2e31d414",
+      "result_id": "565f8f8d-e60e-4713-9fcb-1dbdc6698f18"
+    },
+    {
+      "claim_id": "31fb2d96-aa5a-4b86-bfd8-e76e9dd56717",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "c4a3e07f-882f-4bff-9860-1acf26fd027f",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "3c3e5f62-01f0-46cd-9aa0-192e0688874e",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "2a6a6404-4c83-4876-84e6-6dcc57977ef5",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "30d9c18a-8cf1-4c48-a90d-59c0c8c7eea6",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "4e31b850-a071-4c25-8cd8-dfbf28211125",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "45325f8e-b482-4465-980b-d63ed1bf242c",
+      "result_id": "d4e60ad3-a67a-411c-9aec-832c68cce001"
+    },
+    {
+      "claim_id": "18cd9c1a-8658-4e27-967b-74325daaa0d4",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "94676e96-3afc-4d61-bd73-645171ae92aa",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "4d56a2ac-b78d-4c61-ad48-b865daf111a2",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "dbdda1fb-96fb-4532-82d4-cf8dcd0f0e04",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "3507439b-0288-4369-b5ef-e52706f8d38b",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "0cad4475-90dd-4558-af56-5dca8b5d4f09",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "91262126-2521-4dca-b97a-a84f36c196d6",
+      "result_id": "f7e10806-a46a-4964-b8be-422b55320550"
+    },
+    {
+      "claim_id": "be86c60e-027a-4bc4-ac3b-581002a9cb9b",
+      "result_id": "6dc4de9e-5f0b-4c7d-aa56-b99258d22e49"
+    },
+    {
+      "claim_id": "c2915986-4b43-4ad0-8c4d-5cec03588614",
+      "result_id": "6dc4de9e-5f0b-4c7d-aa56-b99258d22e49"
+    },
+    {
+      "claim_id": "283b37d1-e06e-4937-a2fb-b2d7d272e940",
+      "result_id": "007c6f49-6c88-412b-bef8-f668f016612a"
+    },
+    {
+      "claim_id": "b7873e2b-3f93-4e37-8fca-592fcbf754c0",
+      "result_id": "007c6f49-6c88-412b-bef8-f668f016612a"
+    },
+    {
+      "claim_id": "66cc6e44-aef5-4f01-9b05-531f13b0f8af",
+      "result_id": "93b03e9c-f1c0-4a8c-933f-a34bdd511fb7"
+    },
+    {
+      "claim_id": "30fbe332-bdd7-440d-a7a6-daccf4e93232",
+      "result_id": "93b03e9c-f1c0-4a8c-933f-a34bdd511fb7"
+    },
+    {
+      "claim_id": "b8bb3cc6-708b-48ef-948f-d967a72fb354",
+      "result_id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b"
+    },
+    {
+      "claim_id": "b719fafc-5698-486a-a1a1-d3db64c68c69",
+      "result_id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b"
+    },
+    {
+      "claim_id": "6e8192c2-c7e7-4dc3-aac3-6a888f8cf05f",
+      "result_id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b"
+    },
+    {
+      "claim_id": "78abcf7a-b1e7-4431-959e-ef43a487af1b",
+      "result_id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b"
+    },
+    {
+      "claim_id": "59308bb4-fe8d-42cd-81e9-678f3cc789e8",
+      "result_id": "6d10fba9-8006-4edf-bc41-ed1c3b1a656b"
+    },
+    {
+      "claim_id": "8c170a8c-2570-4cdb-9204-555afbc8b617",
+      "result_id": "d8b0bd9a-2535-4ae7-befe-2f0aa16cad02"
+    },
+    {
+      "claim_id": "f5d1b16a-0815-4833-80c9-3f06c6153059",
+      "result_id": "d8b0bd9a-2535-4ae7-befe-2f0aa16cad02"
+    },
+    {
+      "claim_id": "1cd0464b-2866-40ff-80e7-51a0faa75e99",
+      "result_id": "d8b0bd9a-2535-4ae7-befe-2f0aa16cad02"
+    },
+    {
+      "claim_id": "61cc2897-baff-427c-8898-c59bd26078bd",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "d78cc2b7-fae1-418c-b7a5-06ba3bcd050b",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "e8ec70ea-7810-4ebf-9e6d-6fc647d438b6",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "265c2e06-43ef-41a8-be4b-78c3b89b6ef6",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "2eebca5d-e8f1-4dac-83e8-f1c3c6d41572",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "06c868bf-661c-4f9b-bcb1-5a759046cd58",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "cbfe3089-0115-498e-ab8f-85435115ae69",
+      "result_id": "7092f4f6-8553-41d6-b9b7-109cdd139a06"
+    },
+    {
+      "claim_id": "bb21378c-9259-4b28-ac2d-a39a24cb3f6a",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "f1a4cc74-7765-4544-ad48-6d0be2b6e4a5",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "77c8f0b4-67d5-4fb5-a88f-9e1ef19ddfd6",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "52815fd4-2b87-4e7c-942f-22fb281eefba",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "a870a8e6-b2e9-4539-98df-49691fc372c2",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "04157fe0-6f5e-42e0-9a24-fb11e1fb86df",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "ebccdf06-2247-4cd8-beca-d1f51eebb34d",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "1b14ef0b-8097-433d-a8a3-f546dbe217cb",
+      "result_id": "3d27db42-eb93-443e-945f-46f23aaf0e7e"
+    },
+    {
+      "claim_id": "cd9a334c-5d2d-431e-86f5-aa9f21f5a7e9",
+      "result_id": "4beab290-8b12-41c8-9a64-ef11d74ed78e"
+    },
+    {
+      "claim_id": "db6d1316-bcd4-463a-b44e-a57750401ad4",
+      "result_id": "4beab290-8b12-41c8-9a64-ef11d74ed78e"
+    },
+    {
+      "claim_id": "81eac1bd-2532-47fd-8622-5dd240dedd9a",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "d90fe776-92fa-4307-a53e-c747eb1ad561",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "5a53f48c-0ac1-4e2b-a2e4-796151791400",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "1cad74b9-b300-4807-b651-d16ba2f6a662",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "40d122b9-7001-4c42-8a0b-82217f1c4bff",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "00d022d6-0e93-438d-90a3-dbd1cecc141a",
+      "result_id": "0d060909-29f1-4a32-a0b8-218cad3e0688"
+    },
+    {
+      "claim_id": "dc76c46d-68ee-4d5c-85a3-86b1cdd177ad",
+      "result_id": "8c05ea0d-cd2e-4d0c-a3b2-076ee53fea91"
+    },
+    {
+      "claim_id": "c9f8959a-b487-479d-be9f-d47eb2c2aab1",
+      "result_id": "8c05ea0d-cd2e-4d0c-a3b2-076ee53fea91"
+    },
+    {
+      "claim_id": "aeb5fc1c-a1bc-4e31-a979-43cbf17de19c",
+      "result_id": "8c05ea0d-cd2e-4d0c-a3b2-076ee53fea91"
+    },
+    {
+      "claim_id": "0f108610-69f0-4920-a050-caf1d697f95b",
+      "result_id": "8c05ea0d-cd2e-4d0c-a3b2-076ee53fea91"
+    },
+    {
+      "claim_id": "9d93bfa9-134d-446d-90fe-a02e549787ba",
+      "result_id": "b1838d47-aa50-4d4b-968e-d0424b169ade"
+    },
+    {
+      "claim_id": "2e4eced9-5d54-47ff-80c7-3ba9fa9cb004",
+      "result_id": "b1838d47-aa50-4d4b-968e-d0424b169ade"
+    },
+    {
+      "claim_id": "8bb46935-7429-41fb-9a1b-33b1be7c59a9",
+      "result_id": "285863ee-23b5-46bb-9673-d5746428c103"
+    },
+    {
+      "claim_id": "84b2165d-5f45-4dac-8f3c-c7a8448f2123",
+      "result_id": "285863ee-23b5-46bb-9673-d5746428c103"
+    },
+    {
+      "claim_id": "5e0c162f-4078-43e5-99ec-7758e374297a",
+      "result_id": "285863ee-23b5-46bb-9673-d5746428c103"
+    },
+    {
+      "claim_id": "52a74173-a122-4549-a228-b57439dd20dd",
+      "result_id": "ff3fc7d6-39b2-429d-aaf8-b01c2fb184c9"
+    },
+    {
+      "claim_id": "0e040ec7-11cf-49e6-b8e2-d071c7fdef47",
+      "result_id": "f3b775b5-2084-4dc8-b533-b00922001bc3"
+    },
+    {
+      "claim_id": "cfc25cda-c579-4658-8d4f-535b7b589fd6",
+      "result_id": "f3b775b5-2084-4dc8-b533-b00922001bc3"
+    },
+    {
+      "claim_id": "790e54f5-f611-44e0-bdb0-db6746aa4909",
+      "result_id": "f3b775b5-2084-4dc8-b533-b00922001bc3"
+    },
+    {
+      "claim_id": "0ef768e7-5f0a-4ed8-928f-b3be8c4ecd8f",
+      "result_id": "f93841fa-1928-4f49-b666-b3510f412d52"
+    }
+  ],
+  "comparisons": []
+}

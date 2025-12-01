@@ -1,0 +1,1749 @@
+{
+  "submission": {
+    "id": "678b729f-0044-44ac-9f6a-e19fb8ca7de2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:13:16.048714Z",
+    "updated_at": "2025-11-30T23:13:16.048714Z"
+  },
+  "content": [
+    {
+      "id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "submission_id": "678b729f-0044-44ac-9f6a-e19fb8ca7de2",
+      "content_type": "manuscript",
+      "content_text": "# Autocrine regulation of stomatal differentiation potential by EPF1 and ERECTA-LIKE1 ligand-receptor signaling\n\n## Authors\n\n- Xingyun Qi<sup>1</sup> ([ORCID: 0000-0003-1261-1362](https://orcid.org/0000-0003-1261-1362))\n- Soon-Ki Han<sup>1</sup>\n- Jonathan H Dang<sup>1</sup> ([ORCID: 0000-0002-0458-4010](https://orcid.org/0000-0002-0458-4010))\n- Jacqueline M Garrick<sup>1</sup>\n- Masaki Ito<sup>3</sup>\n- Alex K Hofstetter<sup>1</sup> ([ORCID: 0000-0002-3709-9783](https://orcid.org/0000-0002-3709-9783))\n- Keiko U Torii<sup>1</sup> ([ORCID: 0000-0002-6168-427X](https://orcid.org/0000-0002-6168-427X)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, University of Washington Seattle United States\n2. Department of Biology University of Washington Seattle United States\n3. Graduate School of Bioagricultural Sciences/Institute of Transformative Biomolecules (WPI-ITbM) Nagoya University Nagoya Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nDevelopment of stomata, valves on the plant epidermis for optimal gas exchange and water control, is fine-tuned by multiple signaling peptides with unique, overlapping, or antagonistic activities. EPIDERMAL PATTERNING FACTOR1 (EPF1) is a founding member of the secreted peptide ligands enforcing stomatal patterning. Yet, its exact role remains unclear. Here, we report that EPF1 and its primary receptor ERECTA-LIKE1 (ERL1) target MUTE, a transcription factor specifying the proliferation-to-differentiation switch within the stomatal cell lineages. In turn, MUTE directly induces ERL1. The absolute co-expression of ERL1 and MUTE, with the co-presence of EPF1, triggers autocrine inhibition of stomatal fate. During normal stomatal development, this autocrine inhibition prevents extra symmetric divisions of stomatal precursors likely owing to excessive MUTE activity. Our study reveals the unexpected role of self-inhibition as a mechanism for ensuring proper stomatal development and suggests an intricate signal buffering mechanism underlying plant tissue patterning.\n\n## Introduction\n\nDevelopmental patterning of multicellular organisms relies on positional cues as well as local cell-cell interactions. Development of stomata, turgor-driven cellular valves on the plant epidermis for optimal gas exchange while minimizing water loss, is coordinated by the intricate cell-cell signaling that impinges on the activity of cell-fate determinants (Pillitteri and Dong, 2013; Han and Torii, 2016). Stomatal development in Arabidopsis occurs through stereotypical cell-state transition events: a stomatal initial cell on the protoderm called a meristemoid mother cell (MMC) undergoes an asymmetric entry division to give rise to a meristemoid, a transient amplifying cell of the stomatal lineage. The meristemoid reiterates asymmetric divisions and renews itself, while creating surrounding stomatal lineage ground cells (SLGCs). Eventually, the meristemoid loses its stem-cell-like property and differentiates into a guard mother cell (GMC). The GMC executes a single round of symmetric division to form paired guard cells (GCs) surrounding a pore, thereby completing stomatal differentiation (Lau and Bergmann, 2012; Pillitteri and Torii, 2012; Han and Torii, 2016). These cell state transitions are directed by the sequential actions of three basic-helix-loop-helix (bHLH) proteins, SPEECHLESS (SPCH), MUTE, and FAMA, which determine the initiation and proliferation, meristemoid-to-GMC transition, and GMC-to-GC differentiation, respectively. These three bHLH proteins form heterodimers with the broadly expressed sister bHLH proteins SCREAM (SCRM: also known as ICE1) and SCRM2, both of which are absolutely required for the activities of SPCH-MUTE-FAMA (Lau and Bergmann, 2012; Pillitteri and Dong, 2013; Han and Torii, 2016).\n\nThe spatial control of stomatal differentiation processes is achieved by a family of secreted cysteine-rich peptides called EPIDERMAL PATTERNING FACTORS (EPFs) that are perceived by cell-surface receptors with extracellular leucine-rich repeat (LRR) domain: three ERECTA-family receptor kinases and their signal modulator LRR receptor-like protein TOO MANY MOUTHS (TMM) (Nadeau and Sack, 2002; Shpak et al., 2005; Hara et al., 2007, 2009; Hunt and Gray, 2009; Torii, 2012). These modules are conserved down to basal land plants (Caine et al., 2016). During the initiation of stomatal cell lineages, EPF2 peptide perception by ERECTA activates downstream intracellular signals mediated by the mitogen-activated protein kinase (MAP kinase) cascade, which inhibits the entry divisions of MMC by down-regulating SPCH protein (Lampard et al., 2008; Lee et al., 2012, 2015). As such, application of bioactive EPF2 peptide confers an epidermis solely composed of pavement cells, phenotypically identical to loss-of-function spch mutant (Lee et al., 2012). Recent studies established that EPF2 is a direct transcriptional target of SPCH and SCRM, therefore EPF2, ERECTA\u2022TMM, and SPCH\u2022SCRM modules constitute a negative feedback loop generating evenly distributed spatial patterns of stomatal initial cells (Lau et al., 2014; Horst et al., 2015). Furthermore, the decision of whether or not to enter the stomatal cell-lineage is fine-tuned by the competitive binding of EPF2 and its antagonistic peptide, EPF-LIKE9 (EPFL9), also known as Stomagen, to ERECTA (Kondo et al., 2010; Sugano et al., 2010; Lee et al., 2015). Unlike EPF2, the direct binding of Stomagen to ERECTA leads to the inhibition of receptor activation and signal transduction, therefore resulting in excessive stomatal clusters like erecta-family mutants (Lee et al., 2015).\n\nThe founding member of EPF/EPFL-family peptides, EPF1, enforces stomatal spacing and its loss-of-function mutation confers stomatal pairing and clustering (Hara et al., 2007). Both genetic and biochemical studies have placed ERECTA-LIKE1 (ERL1), a sister receptor of ERECTA, as well as TMM as a receptor module acting downstream of EPF1 (Hara et al., 2007; Lee et al., 2012). However, unlike EPF2, the exact action and function of EPF1 remain unclear. Early models predicted that the signal emanating from a meristemoid is perceived by the receptors in the neighboring cells to regulate stomatal patterning (Nadeau and Sack, 2003; Serna, 2004). However, both EPF1 and ERL1 promoter activities are the highest in the stomatal precursor cells, most notably in the late meristemoids and GMCs (Shpak et al., 2005; Hara et al., 2007). The inconsistency of their expression patterns and predicted functions adds to the conundrum as to how this ligand-receptor system operates. It is also unknown whether EPF1 signaling acts on any of the stomatal bHLH transcription factors. To address these questions, we investigated the in vivo dynamics and regulation of ERL1, the primary receptor of EPF1. We found that ERL1 and MUTE constitute a negative feedback loop, which, with co-expression of EPF1, elicits an autocrine inhibition of stomatal differentiation potential. Our study reveals the unexpected role of self-inhibition as a mechanism for ensuring timely transition of stomatal differentiation and proper stomatal patterning. Given that EPF1 peptide sources are shared by both autocrine and paracrine signaling, the intricate buffering mechanism may underpin proper stomatal patterning.\n\n## Results\n\n### ERL1 exhibits dynamic accumulation during asymmetric divisions of stomatal precursors and meristemoid-to-GMC transition\n\nTo clarify the role of EPF1-ERL1 signaling during stomatal development, we first examined the in vivo dynamics of ERL1-YFP fusion protein driven by its promoter expressed in erl1-2 null mutant background (ERL1pro::ERL1-YFP in erl1). This construct rescues the stomatal cluster phenotype in er erl1 erl2, indicating it is functional (Figure 1\u2014figure supplement 1). Consistently, the expression level of the\u00a0ERL1-YFP transgene is comparable to that of the endogenous ERL1 (Figure 1\u2014figure supplement 1D). In early stomatal-lineage cells, including rectangular MMCs and early meristemoids, ERL1-YFP is localized sharply at the plasma membrane (Figure 1A\u2013C,K,L; Video 1). During the asymmetric divisions of stomatal-lineage cells, ERL1-YFP exhibited striking accumulation at the newly-formed division site that separates the meristemoid and stomatal\u00a0lineage ground cell (SLGC) (Figure 1D,F,M; Video 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig1-v3.jpg)\n\n**Figure 1.:** Expression pattern of ERL1pro::ERL1-YFP. (A\u2013J) Time-lapse live imaging of developing abaxial cotyledon epidermis of the 1-day-old T4 seedling of ERL1pro::ERL1-YFP erl1-2. Time points after image collection are indicated in hours:(A) 0.0 hr; (B) 3.5 hr; (C) 13.0 hr; (D) 16.0 hr; (E) 24.5 hr; (F) 26.0 hr; (G) 36.0 hr;\u00a0(H) 50.5 hr; (I) 68.0 hr; and (J) 71.0 hr. Arrowheads point to two representative cells. Images for (A\u2013J) are taken at the same magnification. Scale bar, 10 \u00b5m. (K\u2013L) High resolution live images of stomatal precursors expressing ERL1-YFP. (K, L) meristemoid mother cells (MMC); (M) meristemoid (M); (N) late meristemoid (late M); (O) late meristemoid to guard mother cell transition (late M~GMC); (P) GMC; (Q) immature guard cells (im GC). Images for (K\u2013L) are taken at the same magnification. Scale bar, 7.5 \u00b5m. ERL1-YFP signals are detected at the plasma membrane from early meristemoids (A, K, L; arrowheads) and accumulate high at the asymmetric division site (e.g. D, F, M; cyan asterisks). ERL1-YFP signals boost during the late meristemoid-to-GMC transition (G, H, N, O; cyan plus), and diminishes after GMC symmetric division (I, J, P, Q; arrowheads). See accompanying Video 1. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a09.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Shown are confocal microscopy images of abaxial cotyledon epidermis from 4-day-old seedlings of: wild type (WT; top left); er erl1 erl2 (top right); ERL1pro::ERL1-YFP in er erl1 erl2 (bottom left); er erl2 (bottom right). Introduction of ERL1pro::ERL1-YFP rescues stomatal clustering phenotype of er erl1 erl2. T2 seedlings of ERL1pro::ERL1-YFP er erl1 erl2 were used for the analysis. Scale bars, 10 \u00b5m. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a015. (B) Stomatal index (SI) of the cotyledon abaxial epidermis from 7-day-old seedlings of respective genotypes. One-way ANOVA followed by Tukey's HSD test was performed for comparing all other genotypes and classify their phenotypes into three categories (a, b, and c). n\u00a0=\u00a06. (C) Stomatal cluster frequency histogram. Total seedlings analyzed; n\u00a0=\u00a06 for each genotype. (D) Expression level of ERL1-YFP transgene is comparable to that of the endogenous ERL1. RT-PCR analysis was performed three times and normalized against eIF4A. p=0.074 (Student's t-test, unpaired).\n\n![Video 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-media1.mp4.jpg)\n\n**Video 1.:** Projection of z-stack images of ERL1pro::ERL1-YFP from the abaxial cotyledon epidermis of the 1-day-old T4 seedling were shown in 30 min time interval. Time points after image collection are indicated in hours. Arrowheads point to two representative cells.\n\nFollowing the division, ERL1-YFP signals were detected in the plasma membrane of both the meristemoid and neighboring stomatal lineage ground cell (SLGC) (Figure 1E,G,N; Video 1). During the late meristemoid-to-GMC transition, ERL1-YFP showed transient yet high accumulation in the meristemoids while diminishing from the stomatal lineage ground cells (SLGCs), marking the late meristemoids the brightest (Figure 1G,H,N,O; Video 1). Expression of ERL1 disappears as the GMC divides symmetrically and differentiates into guard cells (Figure 1J,P,Q; Video 1).\n\n### ERL1 is a direct MUTE target\n\nIt has been reported that ERL1 is a high-confidence SPCH target gene (Lau et al., 2014). While this is consistent with the early stomatal-lineage expression of ERL1, it does not explain the rapid boost in accumulation of ERL1 during the meristemoid-to-GMC transition (Figure 1). The transition from meristemoids to GMCs is specified by SPCH\u2019s sister bHLH protein, MUTE (Pillitteri et al., 2007). We thus hypothesized that MUTE is driving the rapid increase of ERL1 in the late meristemoids. To address this, we first examined the MUTE and ERL1 proteins in the stomatal lineage cells using Arabidopsis lines co-expressing MUTE-tagRFP and ERL1-YFP driven by their own respective endogenous promoters (Figure 2A). As expected, early stomatal-lineage cells only express ERL1-YFP. However, all late meristemoids co-expressed MUTE-tagRFP in the nuclei and strong ERL1-YFP at the cell periphery (n\u00a0=\u00a0270; 12 seedlings analyzed) (Figure 2A,B). MUTE-tagRFP was driven by the identical promoter (\u22121989 bp) used to express MUTE-GFP (Pillitteri et al., 2007). Both MUTEpro::MUTE-GFP and MUTEpro::MUTE-tagRFP exhibited transient signals during late meristemoid-to-GMC transition (Figure 2\u2014figure supplement 1A), and their co-introduction into Arabidopsis seedlings further confirmed their co-expression (Figure 2\u2014figure supplement 1B). Thus, the\u00a0MUTE-tagRFP line accurately reflects the previously-documented MUTE dynamics.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig2-v3.jpg)\n\n**Figure 2.:** (A) Expression patterns of ERL1pro::ERL1-YFP and MUTEpro::MUTE-tagRFP from the abaxial true leaf epidermis of 7-day-old F1 seedlings. Co-expression of MUTE-tagRFP in nucleus and ERL1-YFP at the plasma membrane are detected in late meristemoids and GMCs (top; magenta asterisks) while only ERL1-YFP signals are visible in MMC, early meristemoid (+) and immature GCs (\u2227). Faint YFP signals are detected in the\u00a0stomatal lineage ground cell (SLGC) differentiating into a pavement cell (x). (Insets) representative images of stomatal precursor cells. Scale bars, 7.5 \u00b5m. (B) Quantitative analysis of the number of stomatal precursor cells (meristemoids-to-GMC, and immature GCs) expressing ERL1pro::ERL1-YFP (green) and/or MUTEpro::MUTE-tagRFP (magenta). Total of 510 cells were analyzed from 12 seedlings. (C) Quantitative RT-PCR analysis of the total MUTE transcripts from 4-day-old seedlings that were either mock- or estradiol-treated for induced MUTE overexpression (iMUTE) at the time indicated. Relative expression represents qRT-PCR expression normalized over that of ACTIN2. Values are Mean \u00b1 standard deviation of three technical replicates from one representative experiment. (D) Quantitative RT-PCR analysis of the endogenous ERL1 transcripts from 4-day-old seedlings that were either mock- or iMUTE at the time indicated. Relative expression represents qRT-PCR expression normalized over that of ACTIN2. Values are Mean \u00b1 standard deviation of three technical replicates from one representative experiment. See Figure 2\u2014figure supplement 2 for the two additional biological replicates. (E) Quantitative RT-PCR analysis of the endogenous EPF1 transcripts from 4-day-old seedlings that were either mock- or iMUTE at the time indicated. Relative expression represents qRT-PCR expression normalized over that of ACTIN2. Values are Mean \u00b1 standard deviation of three technical replicates from one representative experiment. See Figure 2\u2014figure supplement 2 for the two additional biological replicates. (F) Expression patterns of EPF1pro::erGFP and MUTEpro::MUTE-tagRFP in the abaxial true leaf epidermis from 7-day-old F1 seedlings. MUTE-tagRFP expression precedes that of EPF1. Strong co-expression of MUTE-tagRFP and EPF1 can be detected in the late meristemoids and GMCs (top; magenta asterisks), while only EPF1 signals are visible in immature GCs (\u2227). (Insets) representative images of stomatal precursor cells. Scale bars, 7.5 \u00b5m. (G) Quantitative analysis of the number of stomatal precursor cells (meristemoids-to-GMC, and immature GCs) expressing EPF1pro::erGFP (green) and/or MUTEpro::MUTE-tagRFP (magenta). Total of 307 cells were analyzed from five seedlings. (H) Quantitative PCR on ERL1 promoter region after chromatin Immunoprecipitation against anti-GFP antibody in Col and transgenic plants expressing MUTE-GFP in scrm-D. Values are Mean \u00b1 S.E.M. of percent-input DNA of three technical replicates from one representative experiment. See Figure 2\u2014figure supplement 1 for the other two biological replicates. NC, Negative Control; NC1, 5\u2019 intergenic region of ACTIN2; NC2, promoter region of AGAMOUS; a, b, c and d, the ERL1 loci indicated below in (D). For raw data, see Supplementary file 3. (I) Diagram of the ERL1 loci tested. Green lines (a,b,c and d) below the ERL1 schematic, regions amplified by qPCR; Red arrowhead, SPCH binding peak; gray line, intergenic region or intron; light gray box, 5\u2019 or 3\u2019 untranslated region; dark gray box, exon; black arrow, transcription start site. See Figure 2\u2014figure supplement 2 for the two additional biological replicates.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Shown are representative stomatal precursor cells expressing MUTEpro::MUTE-GFP (top) and MUTEpro::MUTE-tagRFP from T5 transgenic seedlings. In early meristemoid (early M; left), no signals are visible. MUTE protein accumulates in the nucleus of the late meristemoids (late M; left middle) and guard mother cells (GMC; right middle). MUTE signals disappear in immature guard cells (im GC) following the final symmetric division (right). Cell outline was counter-stained with FM4-64. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a06. (B) Co-expression of MUTE-GFP and MUTE-tagRFP signals. Shown are representative stomatal precursors from abaxial cotyledon epidermis of 5-day-old F1 seedlings co-expressing MUTEpro::MUTE-GFP and MUTEpro::MUTE-tagRFP. Signals were separately collected in green channel (Green) and red channel (red; false colored in magenta), and subsequently merged (Merged). Cell outline was counter-stained with FM4-64. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a06.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A and B) Quantitative PCR on ERL1 promoter region after chromatin Immunoprecipitation (CHIP) against anti-GFP antibody in Col and transgenic plants expressing MUTE-GFP in scrm-D. Values are Mean \u00b1 S.E.M. of percent-input DNA of three technical replicates from two independent experiments. NC, Negative Control; NC1, 5\u2019 intergenic region of ACTIN2; NC2, promoter region of AGAMOUS; a, b, c and d, the ERL1 loci indicated below in (D). (C) Quantitative PCR on ERL1 promoter region after ChIP against anti-GFP antibody in Col and transgenic plants expressing MUTE-GFP in mute, which exhibit normal (wild-type) phenotype. Values are Mean \u00b1 S.E.M. of percent-input DNA of three technical replicates. NC, Negative Control; NC1, 5\u2019 intergenic region of ACTIN2; NC2, promoter region of AGAMOUS; a, b, c and d, the ERL1 loci indicated below in (C). (D) Diagram of the ERL1 loci tested. (E) Quantitative RT-PCR analysis of the endogenous ERL1 and EPF1 transcripts from 4-day-old seedlings that were either mock- or estradiol-treated for induced MUTE overexpression (iMUTE) at the time indicated. Relative expression represents qRT-PCR expression normalized over that of ACTIN. Values are Mean \u00b1 standard deviation of three technical replicates from two independent experiments.\n\nNext, we used the estrogen receptor-based inducible overexpression system (XVE system) (Zuo et al., 2000) to address if ERL1 is upregulated by MUTE. The estradiol-inducible MUTE overexpression (iMUTE) line upregulates MUTE transcripts within two hours and remained high throughout the analyzed time course, with the maximum average fold increase of 1536\u00a0\u00b1\u00a079 after 8 hr (Figure 2C). iMUTE triggered rapid upregulation in ERL1 transcripts also within two hours, indicating that ERL1 is an early MUTE-induced gene (Figure 2D; Figure 2\u2014figure supplement 2E). To unequivocally address whether ERL1 is a direct MUTE target, a chromatin immunoprecipitation (ChIP) assay was performed. For this purpose, we took advantage of the Arabidopsis scrm-D enabled line that vastly increases the stomatal-lineage cell population thereby enhancing the signals for ChIP assays (Horst et al., 2015). Our previous study has shown that the scrm-D-enabled transcriptomic profiling of meristemoids accurately reflects the meristemoid-specific gene expression during normal epidermal development (Pillitteri et al., 2011), further supporting the use of this genetic background. We introduced functional MUTE-GFP protein driven by its own promoter (MUTEpro::MUTE-GFP) (Pillitteri et al., 2007), into scrm-D mutant background. A robust binding of MUTE was detected within the ERL1 promoter at the region overlapping with the known SPCH binding site (Lau et al., 2014), which contains the predicted bHLH-binding E-box (Figure 2H,I; Figure 2\u2014figure supplement 2A,B,D). Furthermore, the binding of MUTE-GFP at the ERL1 promoter region was also detected in the complemented genetic background, MUTEpro::MUTE-GFP expressed in mute, which exhibits wild-type phenotype (Pillitteri et al., 2007). As predicted, the fold-enrichment of signals were reduced in the absence of scrm-D mutation (Figure 2\u2014figure supplement 2C). The data demonstrate the binding of MUTE-GFP during normal epidermal development. Collectively, the results indicate that MUTE induces ERL1 expression by directly associating with the ERL1 promoter region.\n\n### Expression of EPF1, the primary ligand for ERL1, overlaps with MUTE during the developmental window of stomatal precursor cells\n\nIt has been reported that ERL1 primarily perceives EPF1 peptides (Hara et al., 2007; Lee et al., 2012). To clarify the spatiotemporal expression of EPF1 and MUTE, we next analyzed dual reporter seedlings expressing MUTEpro::MUTE-tagRFP and EPF1pro::erGFP. A population of meristemoids only exhibited nuclear RFP signals, suggesting that the onset of MUTE expression precedes that of EPF1 (14/180 cells expressed RFP only; from five seedlings) (Figure 2F,G). In the late meristemoids and GMCs, strong RFP and GFP signals co-exist, indicating that MUTE and EPF1 are co-expressed (Figure 2F,G). The EPF1 promoter activity remained very high in immature GCs, where MUTE-tagRFP signal was no longer detected (Figure 2F,G). We next analyzed whether EPF1 is also upregulated by MUTE. Unlike ERL1, however, iMUTE induction did not trigger any substantial changes in EPF1 expression (Figure 2E; Figure 2\u2014figure supplement 2E), suggesting that EPF1 is not likely a MUTE target.\n\n### EPF1-ERL1 signaling pathway inhibits MUTE\n\nOur finding that MUTE directly induces ERL1 expression during meristemoid-to-GMC transition (Figure 2) implies a previously-undescribed role of the ERL1 receptor kinase in differentiating GMCs. EPF1 overexpression or exogenous EPF1 peptide application confers arrested meristemoids, a phenotype resembling mute, in ERL1-dependent manner (Lee et al., 2012). To understand the ultimate target of this EPF1-ERL1 signaling, we examined the effects of excessive EPF1 on transcription factors driving GMC differentiation, MUTE and SCRM. For this purpose, we first made use of our estradiol-induced EPF1 overexpression (iEPF1) line that rapidly upregulates EPF1 transcript amounts to the maximum fold increase of 407\u00a0\u00b1\u00a046 at 5 hr after estradiol treatment (Figure 3\u2014figure supplement 1C). As reported (Hara et al., 2007; Lee et al., 2012), iEPF1 inhibits stomatal differentiation (Figure 3\u2014figure supplement 1A,B). iEPF1 conferred a loss of signals from both MUTE transcriptional (MUTEpro::nucYFP) and translational (MUTEpro::MUTE-GFP) reporters 4 days after induction when arrested meristemoid phenotypes are evident (Figure 3A). By contrast, signals for SCRM transcriptional (SCRMpro::nucGFP) and translational (SCRMpro::GFP-SCRM) reporters remained in arrested meristemoids even after 4 days (Figure 3B). The effects of EPF1 peptide application mirrored iEPF1 (Figure 3\u2014figure supplement 2). These results suggest that the EPF1 signal targets MUTE but not SCRM.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig3-v3.jpg)\n\n**Figure 3.:** (A) Representative confocal images of abaxial cotyledon epidermis from 4-day-old estradiol-inducible EPF1 seedlings carrying MUTEpro::nucYFP and MUTEpro::MUTE-GFP four days after mock-treated or estradiol-treated for induced EPF1 overexpression (iEPF1). F1 seedlings were used for the analysis. Scale bars, 25 \u00b5m. Experiments were repeated three times. Three seedlings were analyzed each time. (B) Representative confocal images of abaxial cotyledon epidermis from 4-day-old estradiol-inducible EPF1 seedlings carrying SCRMpro::nucGFP and SCRMpro::GFP-SCRM four days after mock-treated or estradiol-treated for induced EPF1 overexpression (iEPF1). F1 seedlings were used for the analysis. Scale bars, 25 \u00b5m. Experiments were repeated three times. Three seedlings were analyzed each time. (C) Representative Z-stack confocal image projection showing the MUTE-GFP levels after iEPF1 induction used for the quantitative analysis. Meristemoids accumulating MUTE-GFP are indicated by arrowheads. F1 seedlings were used for the analysis. Scale bars, 10 \u00b5m. Experiments were repeated three times. Three seedlings were analyzed each time. (D) Quantitative analysis of MUTE-GFP levels after iEPF1 induction at the time indicated on 3-day-old seedlings. Each dot represents the total intensity value of GFP signals from each nucleus expressing MUTE-GFP. To fully cover the entire nuclei expressing MUTE-GFP, serial Z-stack projection images were used for quantitative analysis (see Materials and methods). Mean value at each time point is connected by the line to visualize the average intensity change over time. Purple, initial values at time point 0; Cyan, mock treatment; Magenta, iEPF1 induction. Experiments were repeated three times; n = 6 for time point 0; n = 3 per subsequent time point. Total of 495 nuclei were analyzed. (E) Quantitative analysis of SCRMpro::nucGFP levels after iEPF1 induction at the time indicated on 3-day-old seedlings. Each dot represents the total intensity value of GFP signals from each nucleus expressing SCRMpro::nucGFP. To fully cover the entire nuclei expressing GFP, serial Z-stack projection images were used for quantitative analysis (see Materials and methods). Mean value at each time point is connected by the line to visualize the average intensity change over time. Green, initial values at time point 0; Cyan, mock treatment; Purple, iEPF1 induction. Experiments were repeated three times; n = 6 for time point 0; n = 3 per subsequent time point. Total of 817 nuclei were analyzed. (F) Quantitative analysis of GFP-SCRM levels after iEPF1 induction at the time indicated on 3-day-old seedlings. Each dot represents the total intensity value of GFP signals from each nucleus expressing SCRMpro:: GFP-SCRM. To fully cover the entire nuclei expressing GFP-SCRM, serial Z-stack projection images were used for quantitative analysis (see Materials and methods). Mean value at each time point is connected by the line to visualize the average intensity change over time. Purple, initial values at time point 0; Cyan, mock treatment; Magenta, iEPF1 induction. Experiments were repeated three times; n = 6 for time point 0; n = 3 per subsequent time point. Total of 368 nuclei were analyzed.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, B) Shown are confocal microscopy of cotyledon abaxial epidermis from 4-day-old T4 seedlings treated with control DMSO solution (A; mock) or 10 \u03bcM estradiol to induce EPF1 overexpression (B; iEPF1). Stomatal differentiation is inhibited by iEPF1, and arrested meristemoids are visible. Images are taken under the same magnification. Scale bar, 25 \u03bcm. Experiments were repeated three times. Three seedlings were analyzed each time. (C) Quantitative RT-PCR (qRT-PCR) analysis of EPF1 transcripts after inducing EPF1 overexpression (iEPF1) the identical time-course for the quantitative analysis of SPCH, MUTE, and SCRM transcriptional and translational reporter fluorescent protein accumulation in the nuclei. Relative expression represents qRT-PCR expression normalized over that of ACTIN2. Values are Mean \u00b1 standard deviation of three technical replicates from one representative experiment. The average fold increase in normalized EPF1 transcripts are: 137.1, 407.7, 347.6, 367.0, 269.1, and 257.5-fold increase in 2, 5, 10, 15, 20 and 24 hr after induction, respectively.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Shown are confocal microscopy images of abaxial cotyledon epidermis from 4-day-old T4 seedlings expressing MUTEpro::nucYFP, MUTEpro::MUTE-GFP, SCRMpro::nucGFP, or SCRMpro::GFP-SCRM that were either mock treated or treated with predicted mature EPF1 peptide (MEPF1) (10 \u00b5M) for 3 days. MEPF1 treatment results in reduced MUTE promoter activity and MUTE-GFP protein amounts. Experiments were repeated three times. Three seedlings were analyzed each time. (B) Quantitative analysis of MEPF1 bioactivity. Shown is the stomatal index (SI) of abaxial cotyledon epidermis from 5-day-old seedlings that were mock treated or treated with MEPF1 (2.5 \u00b5M) for 4 days. Cotyledon images from six seedlings were subjected to analysis. Welch's Two Sample T-test was performed. (C) Purified and refolded MEPF1 peptide used for the assays. Shown is an image of SDS-PAGE gel stained with CBB. Arrowhead, MEPF1 peptide. (D) HPLC chromatograph and mass-spec analysis of the two major peaks (I and II), both corresponds to MEPF1, most likely different in refolding.\n\nTo understand the kinetics of MUTE disappearance, we next performed quantitative analysis of MUTE-GFP levels upon iEPF1 induction hourly (Figure 3C,D). The MUTE-GFP signals started to diminish at 15 hr after the iEPF1 induction and became barely detectable by 20 hr after the induction. By 24 hr, MUTE-GFP signals were undetectable (Figure 3C,D). In the mock-treated control, robust MUTE-GFP signals were detected throughout the 24 hr time course (Figure 3C,D). The timeframe is consistent with iEPF1 transcript accumulation (Figure 3\u2014figure supplement 1C). Within the same timeframe, transcriptional and translational reporters of SCRM were not influenced by iEPF1 (Figure 3E,F). Gradual declines in GFP-SCRM signals were detected over time for both mock and iEPF1, which may be reflecting the developmental stage of the seedlings (Figure 3E,F).\n\nTo address the specificity of EPF1 signaling pathway, we further tested the effects of iEPF1 on SPCH promoter and SPCH-GFP protein accumulation. Strong GFP signals of both SPCHpro::nucGFP and SPCHpro::SPCH-GFP were detected even three days after iEPF1 overexpression (Figure 4A). By five days after iEPF1 overexpression, SPCH-GFP protein was no longer detected (Figure 4B). This likely reflects the developmental progression of all remaining stomatal-lineage cells beyond the SPCH-regulated steps. Further quantitative analysis of SPCH transcriptional and translational reporters showed that their signals are not changed by iEPF1 (Figure 4C,D). A steep decline in SPCHpro::nucGFP signals were detected within the first five hours in both mock and estradiol treatment for iEPF1 (Figure 4C). This may imply that SPCH promoter activity is sensitive to the liquid treatment. The\u00a0overall decline of signals may also reflect the developmental stage of the seedlings (Figure 4C,D). On the basis of these findings, we conclude that MUTE, but not SPCH, is the specific target of EPF1-mediated signaling.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig4-v3.jpg)\n\n**Figure 4.:** (A) Confocal microscopy images of abaxial cotyledon epidermis from 3-day-old estradiol-inducible EPF1 seedlings expressing SPCHpro::nucGFP (left) and SPCHpro::SPCH-GFP (right) that were either mock treated (top) or treated with estradiol (bottom) from germination for induced EPF1 overexpression (iEPF1). Both SPCH promoter activity and SPCH-GFP protein are robustly detected in arrested meristemoids (arrowheads) by iEPF1 at 3-days post germination (dpg). F1 seedlings were used for the analysis. Scale bars, 20 \u00b5m. Experiments were repeated three times. Three seedlings were analyzed each time. (B) Confocal microscopy images of abaxial cotyledon epidermis from 5-day-old estradiol-inducible EPF1 seedlings expressing SPCHpro::nucGFP (left) and SPCHpro::SPCH-GFP (right) that were either mock treated (top) or treated with estradiol (bottom) from germination for induced EPF1 overexpression (iEPF1). At 5-days post germination (dpg), SPCH-GFP proteins have diminished, reflecting the stomatal cell-lineages have past the early stage. F1 seedlings were used for the analysis. Scale bars, 20 \u00b5m. Experiments were repeated three times. Three seedlings were analyzed each time. (C) Quantitative analysis of SPCHpro::nucGFP levels after iEPF1 induction at the time indicated on 3-day-old seedlings. Each dot represents the total intensity value of GFP signals from each nucleus expressing SPCHpro::nucGFP. To fully cover the entire nuclei expressing GFP, serial Z-stack projection images were used for quantitative analysis (see Materials and methods). Mean value at each time point is connected by the line to visualize the average intensity change over time. Green, initial values at time point 0; Cyan, mock treatment; Purple, iEPF1 induction. Experiments were repeated three times; n = 6 for time point 0; n = 3 per subsequent time point. Total of 790 nuclei were analyzed. (D) Quantitative analysis of SPCH-GFP levels after iEPF1 induction at the time indicated on 3-day-old seedlings. Each dot represents the total intensity value of GFP signals from each nucleus expressing SPCHpro::SPCH-GFP. To fully cover the entire nuclei expressing SPCH-GFP, serial Z-stack projection images were used for quantitative analysis (see Materials and methods). Mean value at each time point is connected by the line to visualize the average intensity change over time. Purple, initial values at time point 0; Cyan, mock treatment; Magenta, iEPF1 induction. Experiments were repeated three times; n = 6 for time point 0; n = 3 per subsequent time point. Total of 403 nuclei were analyzed.\n\n### ERL1 mediates an autocrine inhibitory signaling of meristemoid-to-GMC differentiation\n\nOur results indicate that ERL1 mediates extrinsic EPF1 peptide signaling, which in turn inhibits MUTE. Paradoxically, however, expression of the endogenous EPF1 coincides with MUTE (Figure 2). We thus postulated that expressing ERL1 only in the MUTE-expressing cells may lead to a loss of stomatal fate, in other words, having a secreted peptide, its receptor and target transcription factor only in the same cells will auto-inhibit stomatal differentiation. To test this hypothesis, we expressed the functional ERL1-YFP under the control of the MUTE promoter. MUTEpro::ERL1-YFP was introduced into er erl1 erl2 triple null mutants in order to ensure that ERL1 will be the only existing receptor pool that will perceive and transduce the signal (Figure 5). er erl1 erl2 cotyledon epidermis develops stomatal clusters (Figure 5A; Video 2) (Shpak et al., 2005). Strikingly, the expression of MUTEpro::ERL1-YFP in er erl1 erl2 conferred massive clusters of arrested meristemoids in the leaf epidermis (Figure 5B; Video 3). Consistently, stomatal index (SI=total number of stomata/total number of epidermal cells x100) underwent 14-fold reduction from 42.6 \u00b1 5.3% to 2.9 \u00b1 2.1% (mean \u00b1 standard deviation) (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig5-v3.jpg)\n\n**Figure 5.:** Shown are confocal microscopy images of cotyledon abaxial epidermis from 7-day-old seedlings of the following genotypes: (A) er erl1 erl2; (B) MUTEpro::ERL1-YFP in er erl1 erl2; (D) er erl1 erl2 epf1 epf2; (E) MUTEpro::ERL1-YFP in er erl1 erl2 epf1 epf2; (F) MUTEpro::ERL1-YFP in er erl1 erl2 mock treated; (G) MUTEpro::ERL1-YFP in er erl1 erl2 treated with 5 \u00b5M Stomagen peptide; (H) er erl1 erl2 tmm; (I) MUTEpro::ERL1-YFP in er erl1 erl2 tmm. T1 transgenic seedlings of MUTEpro::ERL1-YFP er erl1 erl2; MUTEpro::ERL1-YFP er erl1 erl2 epf1 epf2; and MUTEpro::ERL1-YFP er erl1 erl2 tmm were used for the analysis. T2 seedlings of MUTEpro::ERL1-YFP er erl1 erl2 were used for the mock or Stomagen treatment. Scale bars, 10 \u00b5m (A, B, D, E, H, I), 25 \u00b5m (F, G). (C) Quantitative analysis. Stomatal index (SI) of the cotyledon abaxial epidermis from 7-day-old seedlings of respective genotypes. For each genotype, images from six seedlings were analyzed. Welch's Two Sample T-test was performed for mock vs. Stomagen application (Left). One-way ANOVA followed by Tukey's HSD test was performed for comparing all other genotypes and classify their phenotypes into three categories (a, b, and c).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Shown are confocal microscopy images of abaxial cotyledon epidermis from 4-day-old wild type seedlings with or without MUTEpro::ERL1-YFP. Introducing MUTEpro::ERL1-YFP into wild type does not cause arrested meristemoids. F1 seedlings were used for the analysis. Scale bars, 10 \u00b5m. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a017.\n\n![Video 2.](https://cdn.elifesciences.org/articles/24102/elife-24102-media2.mp4.jpg)\n\n**Video 2.:** Shown is a projection of z-stack images of er erl1 erl2 from the abaxial cotyledon epidermis of the 7-day-old seedling. Scale bar, 50 \u00b5m.\n\n![Video 3.](https://cdn.elifesciences.org/articles/24102/elife-24102-media3.mp4.jpg)\n\n**Video 3.:** Shown is a projection of z-stack images of MUTEpro::ERL1-YFP in er erl1 erl2 from the abaxial cotyledon epidermis of the 7-day-old T1 seedling. Numerous arrested meristemoids are visible with no stomatal differentiation. Scale bar, 50 \u00b5m.\n\nTo test whether the meristemoid arrests are caused by the ERL1 signaling activated by the endogenous EPF1 peptides, we introduced MUTEpro::ERL1-YFP er erl1 erl2 into a mutant lacking functional EPF1. The epf1 epf2 double mutant was chosen in order to circumvent the complex effects of EPF-family peptides (Figure 5D,E). Indeed, MUTEpro::ERL1-YFP in er erl1 erl2 epf1 epf2 quintuple mutant background was not able to suppress stomatal differentiation, resulting in increased stomatal index (SI) (Figure 5C,E). The results suggest that the endogenous EPF peptides are required to elicit the inhibition of stomatal differentiation potential. However, the additional epf1 epf2 mutation did not fully revert the stomatal differentiation (Figure 5C), implying the possibility of further redundancy by EPF/EPFL genes.\n\nThe EPF-family peptide Stomagen positively regulates stomatal development via directly competing with EPF2 for the binding to ERECTA receptor (Kondo et al., 2010; Sugano et al., 2010; Lee et al., 2015). The Stomagen peptide also associates with ERL1 in planta (Lee et al., 2015). This prompted us to further test whether the excessive amounts of Stomagen could revert the fate of arrested meristemoids in MUTEpro::ERL1-YFP in er erl1 erl2. As control, mock treated leaf epidermis showed meristemoid arrests (Figure 5F). By contrast, application of bioactive Stomagen peptide (5 \u03bcM) to MUTEpro::ERL1-YFP er erl1 erl2 seedlings conferred clusters of mature stomata (Figure 5G). Therefore, Stomagen counteracts the EPF1-ERL1 autocrine signaling, likely via competing with EPF1 for the ERL1 binding. TMM forms a heteromer with ERL1 and is required for EPF1-ERL1 mediated signaling (Hara et al., 2007; Lee et al., 2012). Consistently, loss-of-function tmm mutation fully reverted the arrested meristemoid phenotype of MUTEpro::ERL1-YFP in er erl1 erl2 (Figure 5C, H, I). In all these cases YFP signals are detected in a subset of arrested meristemoids, confirming that the restoration of stomatal differentiation by epf1 epf2, Stomagen application, and tmm mutation is not due to the reduced expression of MUTEpro::ERL1-YFP (Figure 5E\u2013I). On the basis of these findings, we conclude that the co-presence of EPF1, ERL1, and MUTE in the late meristemoids elicits autocrine inhibitory signaling, leading to a termination of stomatal fate.\n\nIt is well known that EPF1 signaling enforces asymmetric spacing division (Hara et al., 2007). To further address if the presence of the receptors in stomatal lineage ground cells (SLGCs) ameliorate the autocrine inhibition, we introduced MUTEpro::ERL1-YFP in seedlings that harbor wild-type copies of the three ERECTA-family genes. Indeed, the expression of MUTEpro::ERL1-YFP did not confer discernable phenotype (Figure 5\u2014figure supplement 1). Our findings suggest that both a meristemoid and its neighboring cell share the same source of EPF1 signaling peptides, and a disproportionate balance of receptor pools between these two cell types evoke the self-inhibition of stomatal fate.\n\n### Loss of the autocrine EPF1-ERL1 signaling results in high MUTE accumulation and accelerated, dysregulated stomatal differentiation\n\nWe have demonstrated that co-presence of EPF1, ERL1 and MUTE in the late meristemoids confers the developmental arrests of stomatal precursors (Figure 5). The important question, however, is the role of the EPF1-ERL1 autocrine inhibitory signaling during normal stomatal development. To address this question, a quantitative analysis of MUTE protein accumulation was performed in the presence or absence of TMM, which is required for the EPF1-ERL1 signal transduction. Specifically, we compared the MUTEpro::MUTE-tagRFP signals in the nuclei from the erl1 null mutant background fully rescued by ERL1pro::ERL1-YFP (hereafter referred to as \u2018wild-type (WT)\u2018) and those from the erl1 tmm double null mutant background rescued by ERL1pro::ERL1-YFP (referred to as \u2018tmm\u2019) (Figure 6). The ERL1pro::ERL1-YFP transgene was introduced into tmm via genetic crosses. As shown in Figure 6A and C, MUTE-tagRFP signal intensity in each nucleus is substantially higher in tmm, with over 2.5-fold higher average total intensity in each nucleus compared to wild type. The result supports the hypothesis that endogenous autocrine EPF1-ERL1 signaling in the meristemoids prevents excessive MUTE protein accumulation. Also, compared to the wild-type epidermis, more cells express MUTE protein in tmm, consistent with the increase in stomatal precursor cells by tmm mutation (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig6-v3.jpg)\n\n**Figure 6.:** (A) Quantitative analysis of RFP signal intensity from the nuclei expressing MUTEpro::MUTE-tagRFP. WT and tmm refers to MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 and MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 tmm, respectively. F3 seedlings were used for the analysis. Experiments were repeated three times. Total numbers of nuclei analyzed; n\u00a0=\u00a0120 (WT); n\u00a0=\u00a0135 (tmm). Welch's Two Sample T-test was performed. (B) Quantitative analysis of a duration of proliferation-to-differentiation transition during stomatal development (hours from last asymmetric division of a meristemoid to onset of GMC symmetric division). MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 was referred as WT and MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 tmm was referred as tmm. F3 seedlings were used for the analysis. n\u00a0=\u00a018 (WT); n\u00a0=\u00a028 (tmm). Welch's Two Sample T-test was performed. (C) Z-stack confocal microscopy image projections of true leaf abaxial epidermis from 7-day-old F3 seedlings expressing MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 ('WT'); and MUTEpro::MUTE-tagRFP ERL1pro::ERL1-YFP in erl1 tmm ('tmm'). For quantitative comparison, image acquisition and processing were performed using the identical settings. Scale bars, 10 \u03bcm. Top insets, a representative late meristemoid from 'WT' (left) and 'tmm' (right). (D) Time-lapse imaging of stomatal differentiation in F3 seedlings of \u2018wild type (WT)\u2019; ERL1pro::ERL1-YFP and MUTEpro::MUTE-tagRFP in erl1. The site of asymmetric entry and amplifying divisions are indicated in white asterisks. The MUTE protein accumulates in the nucleus of the late meristeoid and disappears as the GMC differentiates (magenta arrowheads). Time points after image collection are indicated in hours. See accompanying Video 4. Scale bar, 10 \u03bcm. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a09. (E) Time-lapse imaging of stomatal differentiation in F3 seedlings of \u2018tmm\u2019; ERL1pro::ERL1-YFP and MUTEpro::MUTE-tagRFP in erl1 tmm. Occasionally, a late meristemoid accumulating MUTE-tagRFP (white arrowhead) maintain MUTE accumulation after initial GMC symmetric division (*; in 11.0 hr), leading to an extra round of symmetric division (asterisks in 17.5 hr and 18.5 hr). Time points after image collection are indicated in hours. See accompanying Video 5. Scale bar, 10 \u03bcm. Experiments were repeated three times. Total seedlings analyzed; n\u00a0=\u00a09.\n\nNext, we investigated the developmental consequence of excessive MUTE protein accumulation due to the loss of EPF1-ERL1 autocrine signaling. For this purpose, time-lapse live imaging of wild-type and tmm seedlings co-expressing MUTEpro::MUTE-tagRFP and ERL1pro::ERL1-YFP during stomatal development was performed (Figure 6D,E; Videos 4 and 5). Notably, the duration of proliferation-to-differentiation transition (i.e. hours from the last asymmetric division to the onset of symmetric division of a given stomatal precursor cell) is significantly shorter in tmm, with averages of 18.9 hr in wild type (n\u00a0=\u00a018) vs. 14 hr in tmm (n\u00a0=\u00a028) (Figure 6B). Moreover, we observed instances in tmm whereby the meristemoid accumulating high MUTE-tagRFP signals undergoes a symmetric division, giving rise to two daughter cells, both expressing MUTE-tagRFP, and eventually differentiating into paired stomata (Figure 6E, Video 5). It is well known that TMM is required for the asymmetric spacing division of a neighboring stomatal lineage ground cell (SLGC) (Nadeau and Sack, 2002; Lau and Bergmann, 2012; Han and Torii, 2016). On the contrary, the role of TMM in suppressing the symmetric division of a meristemoid has been overlooked. Taken together, our data suggest that loss of the autocrine EPF1-ERL1 signaling during normal stomatal development causes accelerated and dysregulated stomatal differentiation, likely as a ramification of excessive MUTE accumulation.\n\n![Video 4.](https://cdn.elifesciences.org/articles/24102/elife-24102-media4.mp4.jpg)\n\n**Video 4.:** Projection of z-stack images of ERL1pro::ERL1-YFP and MUTEpro::MUTE-TagRFP from the abaxial cotyledon epidermis of an 1-day-old erl1 seedling were shown in 30 min time interval. Time points after image collection are indicated in hours. F3 seedlings were used for the analysis.\n\n![Video 5.](https://cdn.elifesciences.org/articles/24102/elife-24102-media5.mp4.jpg)\n\n**Video 5.:** Projection of z-stack images of ERL1pro::ERL1-YFP and MUTEpro::MUTE-TagRFP from the abaxial cotyledon epidermis of an 1-day-old erl1 tmm seedling were shown in 30 min time interval. Time points after image collection are indicated in hours. The arrowhead points to one cell, which develops into two parallel-aligned stomata due to an extra round of symmetric division. F3 seedlings were used for the analysis.\n\n## Discussion\n\nThe EPF-family of secreted cysteine-rich peptides regulates multiple aspects of stomatal development and other developmental processes through the ERECTA-family receptors (Torii, 2012; Lee and De Smet, 2016). In this study, we discovered an unexpected role for EPF1 and ERL1 in the autocrine regulation of stomatal differentiation potential. The key framework is a negative feedback loop between MUTE and ERL1 whereby MUTE directly upregulates ERL1 expression (Figure 2), and in turn, ERL1 mediates EPF1-peptide signaling leading to inhibition of MUTE activity (Figure 3). ERL1 is also induced by SPCH in earlier stomatal-lineage cells, including MMCs, early meristemoids, and SLGCs (Figure 1) (Lau et al., 2014). While EPF1 expression is not regulated by MUTE, EPF1 turns on during meristemoid-to-GMC transition (Figure 2). Based on these findings, we proposed a coincidence model where the overlapping expression of EPF1, ERL1, and MUTE during a narrow developmental window in the late meristemoids triggers downregulation of MUTE (Figure 7), thereby ensuring timely transition to stomatal differentiation mediated by FAMA.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24102/elife-24102-fig7-v3.jpg)\n\n**Figure 7.:** (A) Paracrine signaling model: Here, EPF1 peptide (cyan) emanating from a meristemoid is perceived by ERL1 (light green) and TMM (gray) localized at the plasma membrane of a neighboring stomatal lineage ground cell (SLGC). The activated signaling will in turn regulate asymmetric spacing division. (B) Autocrine signaling model: Facette and Smith (2012) proposed an alternate, autocrine signaling model based on the observations that EPF1, ERL1, and TMM all exhibit the highest expression in the meristemoid (Nadeau and Sack, 2002; Shpak et al., 2005; Hara et al., 2007). Here, EPF1 secreted from a meristemoid is perceived by ERL1-TMM on a surface of the same meristemoid. The downstream signaling leads to expression of a yet unidentified peptide (X: orange), which will be perceived by a yet unidentified receptor (Y: brown) on a surface of the neighboring stomatal lineage ground cell (SLGC). This triggers signal transduction regulating asymmetric spacing division. (C) Model based on the current study: Both ERL1 and TMM are expressed in a meristemoid and a stomatal lineage ground cell (SLGC), since they are both upregulated by SPCH at an earlier stage\u00a0(Lau et al., 2014; Horst et al., 2015). During the meristemoid-to-GMC transition, MUTE upregulates ERL1 expression and this causes high accumulation of ERL1 in the meristemoid over the stomatal lineage ground cell (SLGC). Meanwhile, EPF1 is expressed and secreted from the late meristemoid by an independent mechanism. A perception of EPF1 by the meristemoid-expressed ERL1 and TMM triggers signal transduction leading to downregulation of MUTE, thereby restricting MUTE activity via an autocrine mechanism. The same pool of EPF1 is also perceived by ERL1 and TMM expressed in the neighboring stomatal lineage ground cell (SLGC), which trigger downstream signal transduction to ensure asymmetric spacing division via a paracrine mechanism. Consequently, receptors in the meristemoids and stomatal lineage ground cells (SLGCs) buffer the pool of EPF1 ligands. Note that our model does not exclude the possibility that yet another unknown signals (like X and Y) operate simultaneously during the stomatal differentiation process.\n\nThe co-expression of EPF1 and ERL1 triggering autocrine signaling challenges a traditional view of plant secreted peptide hormones as intercellular signals (Murphy et al., 2012). Known EPF/EPFL peptides function in a non-cell autonomous manner. For example, EPFL9/Stomagen secreted from internal mesophyll tissues is perceived by ERECTA in the protoderm (Lee et al., 2015). EPFL4 and EPFL6 are inter cell-layer signals between the stem endodermis and phloem to promote inflorescence elongation via ERECTA (Uchida et al., 2012). Recently, we have reported that EPFL2 peptide promotes leaf serration as a ligand for ERECTA-family (Tameshige et al., 2016). Interestingly, EPFL2 and its primary receptor, ERL2, exhibit inverse expression patterns: ERL2 shows the highest expression at the leaf teeth tips where EPFL2 expression is excluded. Therefore, EPF/EPFL-family peptides mediate signals both in autocrine and paracrine manners.\n\nBoth epf1 mutation and a dominant-negative ERL1 receptor confer a violation of one-cell spacing rule (Hara et al., 2007; Lee et al., 2012). Based on this phenotype, a paracrine model was proposed initially, whereby a signal (EPF1) emanating from the meristemoids/GMCs will be perceived by receptors (ERL1 and TMM) in the neighboring stomatal lineage ground cell (SLGC) to orient asymmetric spacing division (Figure 7A). However, based on the high expression of EPF1, ERL1, and TMM in the meristemoids/GMCs, an alternative autocrine model has been described (Figure 7B) (Facette and Smith, 2012). Here, EPF1 peptide is perceived by ERL1/TMM in the meristemoids/GMCs. A subsequent downstream signal transduction promotes the expression of a yet unidentified ligand X, which will be secreted and perceived by a yet unidentified receptor Y on the surface of neighboring stomatal lineage ground cells (SLGCs). This eventually leads to the oriented asymmetric spacing division (Figure 7B) (Facette and Smith, 2012). Our findings revise these models and propose a buffered system, whereby the pool of EPF1 is shared by both the meristemoid and its neighboring stomatal lineage ground cell (SLGC) (Figure 7C). ERL1 and TMM also accumulates at the plasma membrane of stomatal lineage ground cells (SLGCs), albeit in lesser amounts (Figure 1) (Nadeau and Sack, 2002; Horst et al., 2015). ERL1 in the stomatal lineage ground cells (SLGCs) most likely perceives the EPF1 peptides emitted from neighboring meristemoids, and this EPF1-ERL1 paracrine signaling orients the asymmetric spacing divisions. Based on this model (Figure 7C), the paracrine action of EPF1 also limits the inhibitory activity of EPF1-ERL1 autocrine signals in the meristemoids, since ERL1 in the meristemoids and in neighboring stomatal lineage ground cells (SLGCs) both share the same source of EPF1 signals.\n\nIt is important to note that the absolute co-expression of ERL1 and MUTE conferred severe meristemoid arrests due to excessive activation of ERL1 signaling pathway, when all three endogenous ERECTA-family receptors are missing (Figure 5). Indeed, MUTEpro::ERL1-YFP does not confer any discernable phenotype if the wild-type copies of the three ERECTA-family genes are present (Figure 5\u2014figure supplement 1). It is therefore most likely that, in addition to ERL1, ERECTA and ERL2 receptor population expressed in stomatal lineage ground cells (SLGCs) buffer excessive EPF1 peptide ligands to ensure the proper and adequate level of MUTE inhibition. The idea of signal buffering by sister ERECTA-family receptors is supported by their known partial redundancy with complex genetic interactions (Shpak et al., 2004, 2005). Moreover, EPFL4/6 (CHAL/CLL1), which normally act as ligands for ERECTA-mediated inflorescence elongation, interfere with this buffering mechanism and confer stomatal clustering in the stems\u00a0the absence of TMM (Abrash and Bergmann, 2010; Abrash et al., 2011; Uchida et al., 2012). Very recently, a VST-family of membrane-associated proteins was reported as a modulator of ERECTA-family signaling, via specifically interacting with ERL2 (Ho et al., 2016). Such factors may contribute to fine-tuning the EPF1-ERL1 signaling.\n\nOur work also revealed that, while two paralogous ligand-receptor pairs, EPF2-ERECTA and EPF1-ERL1, enforce stomatal development via acting on the core stomatal bHLH proteins, the architectures of their regulatory framework are different. EPF2, but not its main receptor ERECTA, is the direct SPCH target (Lau et al., 2014; Horst et al., 2015). Conversely, ERL1, but not its main ligand EPF1, is the direct MUTE target (Figure 2). The biochemical mechanism of MUTE downregulation is unknown, but lines of evidence suggest the involvement of a MAP kinase cascade. First, YODA, MKK4/5, and MPK3/6 are genetically acting downstream of the three ERECTA-family RKs (Lampard et al., 2008; Bemis et al., 2013). Second, the expression of constitutively-active MKK4/5 by the MUTE promoter led to arrested meristemoids (Lampard et al., 2009), thus phenocopying EPF1 peptide application or overexpression (Hara et al., 2007; Lee et al., 2012). Unlike SPCH, however, MUTE does not possess a predicted MAP kinase target domain (Davies and Bergmann, 2014), raising a question of whether MUTE is a MPK3/6 substrate. In any event, functional specialization and re-wiring of regulatory circuits among the paralogs of EPF peptides, ERECTA-family receptor kinases, and stomatal bHLH transcription factors highlight the evolutionary mechanism underlying the sequential steps of stomatal differentiation steps.\n\nIntrinsic polarity of meristemoids and asymmetric daughter cell fates are regulated by BASL (Dong et al., 2009). Recent studies have revealed that polarized BASL in the stomatal lineage ground cells (SLGCs) enhances the MAP kinase activity, resulting in lowered SPCH abundance (Zhang et al., 2015, 2016). In the absence of EPF1, GFP-BASL occasionally exhibits improper polar localization to the 'wrong' site within a periphery of the stomatal lineage ground cells (SLGCs), which predicts the mis-oriented site of asymmetric spacing division (Dong et al., 2009). It would be an interesting future question to address how the\u00a0EPF1-ERL1 signaling pathway influences the location of BASL polarization and stomatal-lineage cell polarity.\n\nIt has become evident that plants make use of a myriad of peptide signals to regulate diverse developmental processes. Accumulating evidence suggest that plant peptide signals mediate both local cell-cell communications and long-distance root-to-shoot signaling (Brand et al., 2000; Searle et al., 2003; Hirakawa et al., 2008; Okamoto et al., 2013; Tabata et al., 2014). In most cases, however, the exact source and recipient cells of signals remains unclear. Previously studies have identified ligand-receptor systems that share the same expression domains. For instance, the tomato cysteine-rich secreted protein LAT52 and its receptor LRR-RK, LePRK2, are both expressed in pollen (Muschietti et al., 1998; Tang et al., 2002). It was speculated that pollen may monitor its germination state via LAT52-LePRKs autocrine signaling (Tang et al., 2002). Another example is CLE45-BAM3, a small secreted peptide ligand-LRR-RK pair: both CLE45 and BAM3 are expressed in protophloem tissue in roots, and their signal transduction leads to the inhibition of protophloem differentiation (Depuydt et al., 2013; Rodriguez-Villalon et al., 2014). It is not yet known whether these ligand-receptor signaling systems constitute feedback regulation with target transcription factors. In any event, the autocrine signaling may be a prevalent mode of peptide-receptor kinase signaling in plants. Here, focusing on stomatal development, where the differentiation potential of bipotent precursor cells can be monitored at a single cell resolution, one can decipher the contribution of autocrine peptide signaling and the buffering of autocrine vs. paracrine signals between two sister cells with different developmental fate. In animals, both paracrine and autocrine peptide signaling contributes to stem cell proliferation. For instance, Wnt, a key secreted cell-cell signal during animal development (Logan and Nusse, 2004), participates in the autocrine regulation of epidermal stem cell renewal in mice (Lim et al., 2013). A versatile use of peptide ligands for the maintenance and differentiation of adult stem cells may highlight yet another theme in the logic of development in multicellular organisms.\n\n## Materials and methods\n\n### Plant materials and growth condition\n\nArabidopsis thaliana Columbia (Col) accession was used as a wild type. The following mutants and reporter lines were reported previously: erl1-2, er-105 erl1-2 erl2-1 (Shpak et al., 2005); EPF1pro::erGFP, epf1, and tmm-KO (Hara et al., 2007); mute, MUTEpro::MUTE-GFP, SPCHpro::SPCH-GFP (Pillitteri et al., 2007); scrm-D, SCRMpro::GFP-SCRM (Kanaoka et al., 2008); epf1 epf2 er erl1 erl2 (Hara et al., 2009); ERL1pro::ERL1-YFP, Est::EPF1 (iEPF1) (Lee et al., 2012); and SCRMpro::nucGFP and SPCHpro::nucGFP (Horst et al., 2015). Plants were grown under the long-day condition.\n\n### Plasmid construction and generation of transgenic plants\n\nThe following plasmids were generated for this study: pAR202 (MUTE promoter), pAR205 (MUTE genomic sequence with no stop codon), pJSL105 (ERL1 genomic sequence with no stop codon), pBK5 (MUTEpro::ERL1-YFP), pJT163 (MUTEpro::MUTE-tagRFP), pLJP245 (Est::MUTE), and MUTEpro::nucYFP. To construct pBK5, three-way Gateway recombination was performed using pAR202, pJSL105, and R4L1pGWB540 (Nakagawa et al., 2008). To construct pJT163, three-way Gateway recombination was performed using pAR202, pAR205, and R4L1pGWB659 (Nakagawa et al., 2008). pGWB vectors are kind gift from Prof. Tsuyoshi Nakagawa (Shimane Univ.). For detailed information about the plasmids, see Supplementary file 1. Plasmids are transformed into Agrobacterium GV3101/pMP90 and subsequently to Arabidopsis by floral dipping. Over 10 lines were characterized for the phenotypes and reporter gene expressions. Established reporter lines were introduced into higher-order mutant backgrounds or dual reporter backgrounds via genetic crosses. The genetic crosses made in this study include: MUTEpro::MUTE-tagRFP x ERL1pro::ERL1-YFP erl1; MUTEpro::MUTE-tagRFP x EPF1pro::erGFP; MUTEpro::MUTE-GFP mute x MUTEpro::MUTE-tagRFP; Est::EPF1 x MUTEpro::nucYFP; Est::EPF1 x MUTEpro::MUTE-GFP mute; Est::EPF1 x SCRMpro::nucGFP; Est::EPF1 x SCRMpro::GFP-SCRM; Est::EPF1 x SPCHpro::nucGFP; Est::EPF1 x SPCHpro::SPCH-GFP spch; er erl1 erl2 x tmm; MUTEpro::ERL1-YFP er erl1 erl2 x Col-0 wild type; ERL1pro::ERL1-YFP erl1 tmm x MUTEpro::MUTE-tagRFP. The following transgenic lines in higher-order mutants were generated by floral dipping: ERL1pro::ERL1-YFP into er erl1 erl2; MUTEpro::ERL1-YFP into er erl1 erl2; MUTEpro::ERL1-YFP into epf1 epf2 er erl1 erl2; MUTEpro::ERL1-YFP into er erl1 erl2 tmm. For primer DNA sequence used for plasmid construction, see Supplementary file 2. Estradiol induction was performed as described previously (Lee et al., 2012).\n\n### Peptide expression, purification, refolding, and application\n\nEPF1 peptides were expressed, purified, and refolded as previously described (Lee et al., 2012, 2015). Stomagen peptide was custom synthesized (BioSynthesis, Lewisville, TX) and subjected to refolding. For quality control, the refolded peptides were analyzed by High Pressure Liquid Chromatography (Hewlett Packard 1100 Series) using ZORBAX 300 Extended-C18 column (Agilent), and each major peak was analyzed by Esquire-LC ion-trap mass spectrometer (Bruker Daltonics, Billerica, MA). The bioactivity of each refolded peptide batch was verified by seedling bioassays (Lee et al., 2015) prior to performing any experiments. For each peptide or mock treatment, at least three biological repeats were performed.\n\n### qRT-PCR\n\nHomozygous transgenic lines for iMUTE were grown on \u00bd MS agar media for 4 days. 40\u201350 seedlings for each replicate were bathed in a \u00bd MS liquid media containing 10 \u03bcM estradiol or DMSO (mock). Total RNA was isolated from the seedlings using RNeasy Plant Mini Kit (Qiagen, 74904) and DNase I digestion (Qiagen, 79254) was performed on column during the RNA extraction according to the instructions of the manufacturer. 1 \u03bcg of RNA was converted to cDNA using iScript cDNA synthesis kit (Bio-Rad, 1708891) according to the instructions of the manufacturer. First-strand cDNA was diluted 1:7 in double distilled water and used as template for Real-time qPCR. qRT-PCR was performed as described below (see Chromatin immunoprecipitation section). At least four 10-fold dilution series were amplified by the same primers to set standard curve and calculate the quantity of the gene expression. Relative expression was calculated by dividing ACT2 gene expression over the specific-gene expression. Three biological replicates were performed. See Supplementary file 2 for oligo DNA primer sequence used for qRT-PCR.\n\n### Chromatin Immunoprecipitation\n\n160 mg seeds were sown on \u00bd MS agar media and seedlings were collected at 42\u00a0~\u00a048 hr after germination in liquid nitrogen, which yields ca. 1.0 g of fresh weight. Frozen tissue was ground to fine powder and re-suspended in 20 ml of ChIP extraction buffer 1 (Bowler et al., 2004) containing 1% formaldehyde (Sigma, F1635). Samples were incubated at 4\u00b0C for 10 min for DNA-protein cross-linking. To quench the cross-linking 2 M glycine was added, then samples were incubated at 4\u00b0C for 5 min (Cui et al., 2016). The chromatin was extracted twice in ChIP extraction buffer 2 (Bowler et al., 2004). Isolated chromatin was lysed in 100 \u03bcl of Nuclei Lysis buffer on ice for 30 min with occasional stirring as described in Yamaguchi et al. (2014). Subsequently, volumes were brought up to 300 \u03bcl with ChIP dilution buffer with Triton X-100 (Yamaguchi et al., 2014). Sonication was performed to shear DNA using Bioruptor Plus UCD-300 sonicator (Diagenode), 30 s on/off cycles for 15 times at High power setting. After the sonication, samples were diluted up to 1 ml with ChIP dilution buffer with Triton and spun at full speed. The supernatant was precleared using Dynabeads protein G (Invitrogen, 10004D) for 1 hr at 4\u00b0C. Pre-cleared solution was subjected to overnight immunoprecipitation at 4\u00b0C. 2 \u03bcl of anti-GFP antibody (Ab290, Lot: GR278073-1) was added in 1 ml pre-cleared chromatin sample. Subsequent steps (capturing, washing, reverse cross-linking of immune-complex and DNA purification) were performed as described in Yamaguchi et al. (2014). Quantitative PCR (qPCR) was carried out using gene specific primers (Supplementary file 2). The qPCR was run using iTaq Universal SYBR Green Supermix on CFX96 real-time system (Bio-Rad, 1725121) with the following conditions: 95\u00b0C for 1 min; 45 cycles of 95\u00b0C for 5 s, 60\u00b0C for 30 s (Cycling Stage), 65\u201395\u00b0C 0.5\u00b0C increments at 5 s/step (Melting Curve Stage). At least three technical replicates were used for ChIP qPCR. Three biological replicates were performed. A dilution series of input was amplified simultaneously using the same primer pairs to calculate the quantity of the ChIPed DNA as % input (Yamaguchi et al., 2014).\n\n### Confocal microscopy and time-lapse imaging\n\nThe Zeiss LSM700 inverted confocal microscope (Thornwood, NY, USA) and the Leica SP5X-WLL inverted confocal microscope (Solms, Germany) were used for imaging. Time-lapse cotyledon imaging of ERL1-YFP was prepared as described previously with 20x/0.8 Apochromat lens (x1 zoom) on Zeiss LSM700 (Pillitteri et al., 2011; Peterson and Torii, 2012). For the multicolor images of YFP and RFP, transgenic seedlings were observed with a 63x/1.2 W Corr lens on Leica SP5X-WLL using Hy-D detector. 514 nm laser was used to excite YFP and 560 nm laser was used to excite RFP. The emission filter was 524\u2013550 nm for YFP and 594\u2013637 nm for RFP. For multicolor images of GFP and RFP, transgenic seedlings were observed with a 63x/1.2 W Corr lens on Leica SP5X-WLL using Hy-D detector. The 488 nm laser was used to excite GFP and the 560 nm laser was used to excite RFP. The emission filter was 500\u2013515 nm for GFP and 594\u2013637 nm for RFP. The Z-stack projection images were taken at the interval of 0.99 \u00b5m, covering the thickness of the entire cell. For qualitative image presentation, Adobe Photoshop CS6 was used to trim and uniformly adjust the contrast/brightness.\n\n### Quantitative analysis and statistics\n\nThe Leica LAS AF software and Imaris ver. 8.1.3 (Bitplane) were used for post-acquisition image processing. Quantitative analysis of MUTE signal intensity was performed using Imaris ver. 8.1.3 briefly as the following. An extensive series of Z-stack confocal images covering the entire meristemoids (~17 layers) were subjected to surface rendering in red or green channel to capture MUTE-tagRFP, MUTE-GFP, SPCH-GFP, GFP-SCRM, SPCHpro::nucGFP, or SCRMpro::nucGFP expressing nuclei in the 3-D space (for each time point for time course). Cut-off value was set as 0.85 for sphericity, which effectively removed objects with non-specific signals. Intensity sum and standard deviation for each nucleus were subsequently calculated. Statistical analyses were performed using R ver. 3.3.1. Graphs were generated using R ggplot2 package or Microsoft Excel. See Supplementary file 4 for raw data for R-based analyses and actual R scripts.\n",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "2c722f66-cff3-40f0-88a8-7a227e5a5f09",
+      "submission_id": "678b729f-0044-44ac-9f6a-e19fb8ca7de2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sheila McCormick, University of California-Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24102.024](https://doi.org/10.7554/eLife.24102.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Autocrine regulation of stomatal differentiation potential by EPF1 and ERECTA-LIKE1 ligand-receptor signaling\" for consideration by eLife. Your article has been favorably evaluated by Christian Hardtke (Senior Editor) and three reviewers, one of whom, Sheila McCormick (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Eugenia Russinova (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper deals with the role of the secreted cysteine-rich peptide EPF1 in stomatal development. The authors present data supporting a negative feedback loop between ERL1 and MUTE. MUTE upregulates ERL1 expression and ERL1-mediated EPF1 signaling inhibits MUTE to specify the meristemoid-to-GMC transition switch. They further show that loss of EPF1-ERL1 signaling results in MUTE accumulation and stomatal development defects. The authors used an elegant combination of quantitative microscopy and genetic experiments to support this model. The work is novel, provides a function for EPF1 and is of interest to plant (and other) communities. Nonetheless, some aspects of the work are oversold. The authors need to improve the manuscript before publication in the following aspects:\n\nEssential revisions:\n\n1) Perform expression analyses to show that MUTE is induced after estradiol application and that this induction correlates with the increase and the decrease in expression of ERL1 and EPF1 respectively, hours after induction (Figure 2G and H). The same for the control treatment. Regarding Figure 3 and Figure 4; carry out expression analyses to show that EPF1 is induced after estradiol application. As in Figure 3D, they should also quantify the expression of pSCRM-GFP and SCRM-GFP fusion proteins in the nuclei and for the data presented in Figure 3\u2014figure supplement 2 and Figure 4.\n\n2) Provide information as to how the marker lines were generated (transformation or crossing), plant generation used, expression levels of the respective tagged proteins and background used (wild type, mutant). It is not always clear what was the genetic background used to express the tagged proteins, for example in Figure 2A, are ERL1-YFP and MUTE-tagRFP expressed in the Col-0 or erl1 background? Similarly for Figure 2E.\n\n3) Fluorescently-tagged receptors are not always functional (sometimes they are only partially functional, for example BAK1, FLS2); therefore is important that the authors quantify the phenotypes of the rescued er erl1 erl2 triple mutant (Figure 5), in order to be more convincing that the ERL1-GFP fusion is functional (similar experiments were done for pMUTE::ERL1-YFP introduced in the er erl1 erl2 triple mutant). Also, the expression levels should be close to the endogenous, as even when using an endogenous promoter, overexpression of the transgene is frequently observed. Is the MUTE-GFP fusion functional?\n\n4) TagRFP is a slowly maturing protein (100 min, in contrast to 10 min for GFP) and this might affect the co-localization dynamics shown in Figure 2A and B, Figure 5. Provide data or discuss this possibility.\n\n5) It is not clear why MUTE-GFP in the scrm-D background was used for the ChIP assays and not MUTE-GFP in wild type. Is SCRM required for MUTE binding? Explain or discuss.\n",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "27891120-2548-4371-a492-0de5693a316b",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C1",
+      "claim": "EPF1 is a founding member of the secreted peptide ligands enforcing stomatal patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "EPIDERMAL PATTERNING FACTOR1 (EPF1) is a founding member of the secreted peptide ligands enforcing stomatal patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about EPF1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "b21562ed-4bcb-495a-ab92-665c6cedbf10",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C2",
+      "claim": "ERL1 is the primary receptor of EPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "EPF1 and its primary receptor ERECTA-LIKE1 (ERL1) target MUTE",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by genetic and biochemical studies referenced in the introduction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "2dc1ed06-e4d1-4248-8d7c-02245f839b2b",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C3",
+      "claim": "EPF1 and ERL1 target MUTE, a transcription factor specifying the proliferation-to-differentiation switch within the stomatal cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "EPF1 and its primary receptor ERECTA-LIKE1 (ERL1) target MUTE, a transcription factor specifying the proliferation-to-differentiation switch within the stomatal cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated through experimental data in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "dbba68cd-07da-4670-80af-802699e49722",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C4",
+      "claim": "MUTE directly induces ERL1.",
+      "claim_type": "EXPLICIT",
+      "source": "In turn, MUTE directly induces ERL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by ChIP data and qRT-PCR experiments showing MUTE binding to ERL1 promoter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "64f79f1e-e6c3-4136-ac06-85c39ef3b438",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C5",
+      "claim": "The absolute co-expression of ERL1 and MUTE, with the co-presence of EPF1, triggers autocrine inhibition of stomatal fate.",
+      "claim_type": "EXPLICIT",
+      "source": "The absolute co-expression of ERL1 and MUTE, with the co-presence of EPF1, triggers autocrine inhibition of stomatal fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and demonstrated through genetic experiments with MUTEpro::ERL1-YFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "6a1c2e5f-8656-483c-8cca-f4a421255ac4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C6",
+      "claim": "During normal stomatal development, autocrine inhibition prevents extra symmetric divisions of stomatal precursors likely owing to excessive MUTE activity.",
+      "claim_type": "EXPLICIT",
+      "source": "During normal stomatal development, this autocrine inhibition prevents extra symmetric divisions of stomatal precursors likely owing to excessive MUTE activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract and supported by time-lapse imaging data showing extra symmetric divisions in tmm mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "08e011af-2c09-4be3-a1fe-8b7bbbb9e5d6",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C7",
+      "claim": "ERL1-YFP is localized sharply at the plasma membrane in early stomatal-lineage cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In early stomatal-lineage cells, including rectangular MMCs and early meristemoids, ERL1-YFP is localized sharply at the plasma membrane (Figure 1A\u2013C,K,L; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed through confocal microscopy imaging of ERL1pro::ERL1-YFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "ab19c481-9fef-4a13-b976-df46ab1f7b57",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C8",
+      "claim": "ERL1-YFP exhibits striking accumulation at the newly-formed division site during asymmetric divisions of stomatal-lineage cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During the asymmetric divisions of stomatal-lineage cells, ERL1-YFP exhibited striking accumulation at the newly-formed division site that separates the meristemoid and stomatal lineage ground cell (SLGC) (Figure 1D,F,M; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed through time-lapse confocal microscopy imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "8fad1601-8754-4370-8666-ae070b873445",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C9",
+      "claim": "ERL1-YFP shows transient yet high accumulation during the late meristemoid-to-GMC transition.",
+      "claim_type": "EXPLICIT",
+      "source": "During the late meristemoid-to-GMC transition, ERL1-YFP showed transient yet high accumulation in the meristemoids while diminishing from the stomatal lineage ground cells (SLGCs), marking the late meristemoids the brightest (Figure 1G,H,N,O; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed through time-lapse confocal microscopy imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "855686a6-80de-448d-8297-f69d0c58f7b4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C10",
+      "claim": "Expression of ERL1 disappears as the GMC divides symmetrically and differentiates into guard cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of ERL1 disappears as the GMC divides symmetrically and differentiates into guard cells (Figure 1J,P,Q; Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly observed through time-lapse confocal microscopy imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "a2280b06-0e72-4249-8bbe-be3f2e6650a1",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C11",
+      "claim": "ERL1 is a high-confidence SPCH target gene.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that ERL1 is a high-confidence SPCH target gene (Lau et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "e3d114ad-5348-436a-b573-70ddfb12bb73",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C12",
+      "claim": "All late meristemoids co-expressed MUTE-tagRFP in the nuclei and strong ERL1-YFP at the cell periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, all late meristemoids co-expressed MUTE-tagRFP in the nuclei and strong ERL1-YFP at the cell periphery (n = 270; 12 seedlings analyzed) (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of dual reporter lines showing co-expression in 270 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "612f0955-d08d-4a2c-bb2d-ba470351f1f8",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C13",
+      "claim": "iMUTE triggered rapid upregulation in ERL1 transcripts within two hours.",
+      "claim_type": "EXPLICIT",
+      "source": "iMUTE triggered rapid upregulation in ERL1 transcripts also within two hours, indicating that ERL1 is an early MUTE-induced gene (Figure 2D; Figure 2\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through qRT-PCR analysis following estradiol-inducible MUTE overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d00fb259-86cb-412b-8c0d-18a9511a2ae0",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C14",
+      "claim": "MUTE binds to the ERL1 promoter region overlapping with the known SPCH binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "A robust binding of MUTE was detected within the ERL1 promoter at the region overlapping with the known SPCH binding site (Lau et al., 2014), which contains the predicted bHLH-binding E-box (Figure 2H,I; Figure 2\u2014figure supplement 2A,B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through ChIP-qPCR experiments using MUTE-GFP.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "413dc4c7-231d-4786-9b32-b834389fbb62",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C15",
+      "claim": "The onset of MUTE expression precedes that of EPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "A population of meristemoids only exhibited nuclear RFP signals, suggesting that the onset of MUTE expression precedes that of EPF1 (14/180 cells expressed RFP only; from five seedlings) (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through dual reporter analysis showing sequential expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "fb9cc47a-86e1-4fde-9720-6653378a2e16",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C16",
+      "claim": "MUTE and EPF1 are co-expressed in late meristemoids and GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the late meristemoids and GMCs, strong RFP and GFP signals co-exist, indicating that MUTE and EPF1 are co-expressed (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through dual reporter analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d4ad0ffb-0613-41ba-a5d8-acd0bd801337",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C17",
+      "claim": "iMUTE induction did not trigger any substantial changes in EPF1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike ERL1, however, iMUTE induction did not trigger any substantial changes in EPF1 expression (Figure 2E; Figure 2\u2014figure supplement 2E), suggesting that EPF1 is not likely a MUTE target.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through qRT-PCR analysis following MUTE overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "968d3480-cd94-4398-99af-71ba63c4dec8",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C18",
+      "claim": "EPF1 overexpression or exogenous EPF1 peptide application confers arrested meristemoids in ERL1-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "EPF1 overexpression or exogenous EPF1 peptide application confers arrested meristemoids, a phenotype resembling mute, in ERL1-dependent manner (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "2faa0e43-fb41-4c7e-82e9-41c01fb4854c",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C19",
+      "claim": "iEPF1 conferred a loss of signals from both MUTE transcriptional and translational reporters 4 days after induction.",
+      "claim_type": "EXPLICIT",
+      "source": "iEPF1 conferred a loss of signals from both MUTE transcriptional (MUTEpro::nucYFP) and translational (MUTEpro::MUTE-GFP) reporters 4 days after induction when arrested meristemoid phenotypes are evident (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of reporter lines following EPF1 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "cef417b8-6c8f-4bb5-bd4a-9fd729620d05",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C20",
+      "claim": "Signals for SCRM transcriptional and translational reporters remained in arrested meristemoids even after 4 days of iEPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, signals for SCRM transcriptional (SCRMpro::nucGFP) and translational (SCRMpro::GFP-SCRM) reporters remained in arrested meristemoids even after 4 days (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of reporter lines following EPF1 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "60bb43f4-5fbb-450e-ae39-0eab42638148",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C21",
+      "claim": "The MUTE-GFP signals started to diminish at 15 hr after the iEPF1 induction and became barely detectable by 20 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The MUTE-GFP signals started to diminish at 15 hr after the iEPF1 induction and became barely detectable by 20 hr after the induction. By 24 hr, MUTE-GFP signals were undetectable (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative time-course analysis of MUTE-GFP fluorescence intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d73f8eaa-2c09-480c-baf0-81cc8fdce472",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C22",
+      "claim": "Transcriptional and translational reporters of SCRM were not influenced by iEPF1 within the 24 hr timeframe.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the same timeframe, transcriptional and translational reporters of SCRM were not influenced by iEPF1 (Figure 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative time-course analysis of SCRM reporter fluorescence intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "e6ebae2c-6385-4229-9768-7e3b185e4d17",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C23",
+      "claim": "Strong GFP signals of both SPCHpro::nucGFP and SPCHpro::SPCH-GFP were detected even three days after iEPF1 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong GFP signals of both SPCHpro::nucGFP and SPCHpro::SPCH-GFP were detected even three days after iEPF1 overexpression (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of reporter lines following EPF1 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "bb26c874-8fa9-45d8-9060-b7e39b38487b",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C24",
+      "claim": "SPCH transcriptional and translational reporter signals are not changed by iEPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further quantitative analysis of SPCH transcriptional and translational reporters showed that their signals are not changed by iEPF1 (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative time-course analysis of SPCH reporter fluorescence intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "f3d7e9f0-0a70-4007-90e8-9bcf597d900a",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C25",
+      "claim": "MUTE, but not SPCH, is the specific target of EPF1-mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these findings, we conclude that MUTE, but not SPCH, is the specific target of EPF1-mediated signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from differential effects of EPF1 on MUTE vs SPCH reporters.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "8246be87-09a0-4b90-8016-8123d09f62f9",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C26",
+      "claim": "Expression of MUTEpro::ERL1-YFP in er erl1 erl2 conferred massive clusters of arrested meristemoids in the leaf epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the expression of MUTEpro::ERL1-YFP in er erl1 erl2 conferred massive clusters of arrested meristemoids in the leaf epidermis (Figure 5B; Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of transgenic lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "aa85a67f-e6d6-4884-af61-fd5f71c76055",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C27",
+      "claim": "Stomatal index underwent 14-fold reduction from 42.6 \u00b1 5.3% to 2.9 \u00b1 2.1% when MUTEpro::ERL1-YFP was expressed in er erl1 erl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, stomatal index (SI=total number of stomata/total number of epidermal cells x100) underwent 14-fold reduction from 42.6 \u00b1 5.3% to 2.9 \u00b1 2.1% (mean \u00b1 standard deviation) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of stomatal index from microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "441c8184-758d-4c54-8fbb-76019632a867",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C28",
+      "claim": "MUTEpro::ERL1-YFP in er erl1 erl2 epf1 epf2 quintuple mutant background was not able to suppress stomatal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, MUTEpro::ERL1-YFP in er erl1 erl2 epf1 epf2 quintuple mutant background was not able to suppress stomatal differentiation, resulting in increased stomatal index (SI) (Figure 5C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy and quantitative analysis of stomatal index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "676fe16b-ebff-4ed2-a578-a1e5206948d9",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C29",
+      "claim": "Application of bioactive Stomagen peptide to MUTEpro::ERL1-YFP er erl1 erl2 seedlings conferred clusters of mature stomata.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, application of bioactive Stomagen peptide (5 \u03bcM) to MUTEpro::ERL1-YFP er erl1 erl2 seedlings conferred clusters of mature stomata (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy following peptide treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "6f5bfc79-07fd-4a9d-9e1f-c7eeb8aae236",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C30",
+      "claim": "Loss-of-function tmm mutation fully reverted the arrested meristemoid phenotype of MUTEpro::ERL1-YFP in er erl1 erl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, loss-of-function tmm mutation fully reverted the arrested meristemoid phenotype of MUTEpro::ERL1-YFP in er erl1 erl2 (Figure 5C, H, I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy and quantitative analysis of stomatal index.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "39859124-1cd0-4047-b913-3c20522a62c4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C31",
+      "claim": "The co-presence of EPF1, ERL1, and MUTE in the late meristemoids elicits autocrine inhibitory signaling, leading to a termination of stomatal fate.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these findings, we conclude that the co-presence of EPF1, ERL1, and MUTE in the late meristemoids elicits autocrine inhibitory signaling, leading to a termination of stomatal fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from genetic experiments showing arrested meristemoids with MUTEpro::ERL1-YFP and rescue by removing EPF1, Stomagen, or TMM.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "0b422e87-0fc2-47f4-83a2-63656db2c156",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C32",
+      "claim": "Expression of MUTEpro::ERL1-YFP did not confer discernable phenotype in wild-type background with all three ERECTA-family genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the expression of MUTEpro::ERL1-YFP did not confer discernable phenotype (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of transgenic lines in wild-type background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d9ab3807-cfb0-4a31-a740-f677fbc98af2",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C33",
+      "claim": "MUTE-tagRFP signal intensity in each nucleus is substantially higher in tmm, with over 2.5-fold higher average total intensity compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A and C, MUTE-tagRFP signal intensity in each nucleus is substantially higher in tmm, with over 2.5-fold higher average total intensity in each nucleus compared to wild type.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of fluorescence intensity from confocal microscopy images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "16351b6b-302a-4ae8-92ee-dd21276c5abc",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C34",
+      "claim": "The duration of proliferation-to-differentiation transition is significantly shorter in tmm, with averages of 18.9 hr in wild type vs. 14 hr in tmm.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the duration of proliferation-to-differentiation transition (i.e. hours from the last asymmetric division to the onset of symmetric division of a given stomatal precursor cell) is significantly shorter in tmm, with averages of 18.9 hr in wild type (n = 18) vs. 14 hr in tmm (n = 28) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative analysis of time-lapse imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "3c669ffc-06ee-4429-84e5-0faeca7e6688",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C35",
+      "claim": "In tmm, meristemoids accumulating high MUTE-tagRFP signals undergo symmetric division, giving rise to two daughter cells both expressing MUTE-tagRFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed instances in tmm whereby the meristemoid accumulating high MUTE-tagRFP signals undergoes a symmetric division, giving rise to two daughter cells, both expressing MUTE-tagRFP, and eventually differentiating into paired stomata (Figure 6E, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through time-lapse confocal microscopy imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "18bc1714-1349-48c0-8af3-7c638467f5c3",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C36",
+      "claim": "Loss of the autocrine EPF1-ERL1 signaling causes accelerated and dysregulated stomatal differentiation, likely as a ramification of excessive MUTE accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data suggest that loss of the autocrine EPF1-ERL1 signaling during normal stomatal development causes accelerated and dysregulated stomatal differentiation, likely as a ramification of excessive MUTE accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from time-lapse imaging and quantitative analysis showing shorter transition time and extra symmetric divisions in tmm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "6e1face5-ba45-431a-8d24-c4d080cd7f58",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C37",
+      "claim": "EPF1 peptide is perceived by ERL1/TMM in the meristemoids/GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, EPF1 peptide is perceived by ERL1/TMM in the meristemoids/GMCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the autocrine model proposed in the discussion based on experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "ddb2f907-4d12-4b13-9b3c-8bde53561101",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C38",
+      "claim": "The pool of EPF1 is shared by both the meristemoid and its neighboring stomatal lineage ground cell (SLGC).",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings revise these models and propose a buffered system, whereby the pool of EPF1 is shared by both the meristemoid and its neighboring stomatal lineage ground cell (SLGC) (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings showing co-expression patterns and genetic interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "ccf35f9b-5a51-4b4d-8b09-a61672a294cc",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C39",
+      "claim": "ERL1 and TMM accumulate at the plasma membrane of stomatal lineage ground cells (SLGCs), albeit in lesser amounts.",
+      "claim_type": "EXPLICIT",
+      "source": "ERL1 and TMM also accumulates at the plasma membrane of stomatal lineage ground cells (SLGCs), albeit in lesser amounts (Figure 1) (Nadeau and Sack, 2002; Horst et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy and cited from previous publications.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "8bf1d24c-e30e-48af-afd1-3d252ca0c67b",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C40",
+      "claim": "ERECTA and ERL2 receptor population expressed in stomatal lineage ground cells (SLGCs) buffer excessive EPF1 peptide ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore most likely that, in addition to ERL1, ERECTA and ERL2 receptor population expressed in stomatal lineage ground cells (SLGCs) buffer excessive EPF1 peptide ligands to ensure the proper and adequate level of MUTE inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that MUTEpro::ERL1-YFP causes severe phenotype only when all three ERECTA-family receptors are missing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "a04e1561-e284-4d20-bf94-de2203b05757",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C41",
+      "claim": "YODA, MKK4/5, and MPK3/6 are genetically acting downstream of the three ERECTA-family RKs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, YODA, MKK4/5, and MPK3/6 are genetically acting downstream of the three ERECTA-family RKs (Lampard et al., 2008; Bemis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "2ea04699-f83b-42b2-88cd-561e9908f16f",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C42",
+      "claim": "Expression of constitutively-active MKK4/5 by the MUTE promoter led to arrested meristemoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the expression of constitutively-active MKK4/5 by the MUTE promoter led to arrested meristemoids (Lampard et al., 2009), thus phenocopying EPF1 peptide application or overexpression (Hara et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "15d3b2a1-5d2e-46ea-b624-9d0a0a22d9ee",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C43",
+      "claim": "MUTE does not possess a predicted MAP kinase target domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike SPCH, however, MUTE does not possess a predicted MAP kinase target domain (Davies and Bergmann, 2014), raising a question of whether MUTE is a MPK3/6 substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "5a98844e-5a2e-4ac4-b112-5daddb6eeaba",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C44",
+      "claim": "Intrinsic polarity of meristemoids and asymmetric daughter cell fates are regulated by BASL.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrinsic polarity of meristemoids and asymmetric daughter cell fates are regulated by BASL (Dong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "25743440-9ee9-4c70-8579-ee38b4af1873",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C45",
+      "claim": "Polarized BASL in the stomatal lineage ground cells (SLGCs) enhances the MAP kinase activity, resulting in lowered SPCH abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that polarized BASL in the stomatal lineage ground cells (SLGCs) enhances the MAP kinase activity, resulting in lowered SPCH abundance (Zhang et al., 2015, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "fe5a0435-a010-4e08-87a0-eee7f0798e20",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C46",
+      "claim": "In the absence of EPF1, GFP-BASL occasionally exhibits improper polar localization to the 'wrong' site within a periphery of the stomatal lineage ground cells (SLGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of EPF1, GFP-BASL occasionally exhibits improper polar localization to the 'wrong' site within a periphery of the stomatal lineage ground cells (SLGCs), which predicts the mis-oriented site of asymmetric spacing division (Dong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d89daf01-bc1b-4871-8a50-24a924b6d8cb",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C47",
+      "claim": "The tomato cysteine-rich secreted protein LAT52 and its receptor LRR-RK, LePRK2, are both expressed in pollen.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the tomato cysteine-rich secreted protein LAT52 and its receptor LRR-RK, LePRK2, are both expressed in pollen (Muschietti et al., 1998; Tang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d3c12b74-aaf4-4067-8b81-df6a296e57f9",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C48",
+      "claim": "Both CLE45 and BAM3 are expressed in protophloem tissue in roots, and their signal transduction leads to the inhibition of protophloem differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example is CLE45-BAM3, a small secreted peptide ligand-LRR-RK pair: both CLE45 and BAM3 are expressed in protophloem tissue in roots, and their signal transduction leads to the inhibition of protophloem differentiation (Depuydt et al., 2013; Rodriguez-Villalon et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "aac36f65-f073-4d8e-8176-42fe4f725dbe",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C49",
+      "claim": "Wnt participates in the autocrine regulation of epidermal stem cell renewal in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Wnt, a key secreted cell-cell signal during animal development (Logan and Nusse, 2004), participates in the autocrine regulation of epidermal stem cell renewal in mice (Lim et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "bba28a31-f578-46fd-9c1a-921de345c7f6",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C50",
+      "claim": "ERL1pro::ERL1-YFP rescues the stomatal cluster phenotype in er erl1 erl2.",
+      "claim_type": "EXPLICIT",
+      "source": "This construct rescues the stomatal cluster phenotype in er erl1 erl2, indicating it is functional (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through genetic complementation and phenotypic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "b653d3a6-3478-4ebf-b1c8-42ac5b9fb3bb",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C51",
+      "claim": "The expression level of the ERL1-YFP transgene is comparable to that of the endogenous ERL1.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the expression level of the ERL1-YFP transgene is comparable to that of the endogenous ERL1 (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through RT-PCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "1c9e8179-337c-4116-b442-70cd80b29489",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C52",
+      "claim": "The transition from meristemoids to GMCs is specified by SPCH's sister bHLH protein, MUTE.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from meristemoids to GMCs is specified by SPCH's sister bHLH protein, MUTE (Pillitteri et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "48b3e57c-756b-46eb-8bbc-2d81afa39e2a",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C53",
+      "claim": "EPF2 is a direct transcriptional target of SPCH and SCRM.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies established that EPF2 is a direct transcriptional target of SPCH and SCRM, therefore EPF2, ERECTA\u2022TMM, and SPCH\u2022SCRM modules constitute a negative feedback loop generating evenly distributed spatial patterns of stomatal initial cells (Lau et al., 2014; Horst et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "9eae7339-798b-4ad2-848c-6145440ada72",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C54",
+      "claim": "The decision of whether or not to enter the stomatal cell-lineage is fine-tuned by the competitive binding of EPF2 and its antagonistic peptide, EPF-LIKE9 (EPFL9), also known as Stomagen, to ERECTA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the decision of whether or not to enter the stomatal cell-lineage is fine-tuned by the competitive binding of EPF2 and its antagonistic peptide, EPF-LIKE9 (EPFL9), also known as Stomagen, to ERECTA (Kondo et al., 2010; Sugano et al., 2010; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "9511e953-6a5e-4d2a-9dce-cba283db419c",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C55",
+      "claim": "The direct binding of Stomagen to ERECTA leads to the inhibition of receptor activation and signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike EPF2, the direct binding of Stomagen to ERECTA leads to the inhibition of receptor activation and signal transduction, therefore resulting in excessive stomatal clusters like erecta-family mutants (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "f8d18231-903d-45f4-b295-69f70744905c",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C56",
+      "claim": "Loss-of-function mutation of EPF1 confers stomatal pairing and clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "The founding member of EPF/EPFL-family peptides, EPF1, enforces stomatal spacing and its loss-of-function mutation confers stomatal pairing and clustering (Hara et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "71f026f5-67f6-4676-bda2-196ce4b29628",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C57",
+      "claim": "Both genetic and biochemical studies have placed ERECTA-LIKE1 (ERL1) and TMM as a receptor module acting downstream of EPF1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both genetic and biochemical studies have placed ERECTA-LIKE1 (ERL1), a sister receptor of ERECTA, as well as TMM as a receptor module acting downstream of EPF1 (Hara et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "e50a4285-488a-4a74-8143-397b812e3293",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C58",
+      "claim": "Both EPF1 and ERL1 promoter activities are the highest in the stomatal precursor cells, most notably in the late meristemoids and GMCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both EPF1 and ERL1 promoter activities are the highest in the stomatal precursor cells, most notably in the late meristemoids and GMCs (Shpak et al., 2005; Hara et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "1690c22d-82ea-452f-9fd9-7bbac2cbc144",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C59",
+      "claim": "Stomatal development in Arabidopsis occurs through stereotypical cell-state transition events.",
+      "claim_type": "EXPLICIT",
+      "source": "Stomatal development in Arabidopsis occurs through stereotypical cell-state transition events: a stomatal initial cell on the protoderm called a meristemoid mother cell (MMC) undergoes an asymmetric entry division to give rise to a meristemoid, a transient amplifying cell of the stomatal lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about stomatal development cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "2dcaca1d-f794-4293-bec4-1c6fcf100c37",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C60",
+      "claim": "The meristemoid reiterates asymmetric divisions and renews itself, while creating surrounding stomatal lineage ground cells (SLGCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The meristemoid reiterates asymmetric divisions and renews itself, while creating surrounding stomatal lineage ground cells (SLGCs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about stomatal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "efaae3a7-1a8a-48b2-9633-dd3ad5bcd40d",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C61",
+      "claim": "The meristemoid loses its stem-cell-like property and differentiates into a guard mother cell (GMC).",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, the meristemoid loses its stem-cell-like property and differentiates into a guard mother cell (GMC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about stomatal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d7590407-24c1-4613-a242-52e41915da74",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C62",
+      "claim": "The GMC executes a single round of symmetric division to form paired guard cells (GCs) surrounding a pore.",
+      "claim_type": "EXPLICIT",
+      "source": "The GMC executes a single round of symmetric division to form paired guard cells (GCs) surrounding a pore, thereby completing stomatal differentiation (Lau and Bergmann, 2012; Pillitteri and Torii, 2012; Han and Torii, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about stomatal development cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "9bcd150a-68da-4728-88b7-b53df24dc587",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C63",
+      "claim": "Cell state transitions during stomatal development are directed by the sequential actions of three basic-helix-loop-helix (bHLH) proteins, SPEECHLESS (SPCH), MUTE, and FAMA.",
+      "claim_type": "EXPLICIT",
+      "source": "These cell state transitions are directed by the sequential actions of three basic-helix-loop-helix (bHLH) proteins, SPEECHLESS (SPCH), MUTE, and FAMA, which determine the initiation and proliferation, meristemoid-to-GMC transition, and GMC-to-GC differentiation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about stomatal development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "106a89c9-9c88-449b-8171-5269dffa4a67",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C64",
+      "claim": "SPCH, MUTE, and FAMA form heterodimers with the broadly expressed sister bHLH proteins SCREAM (SCRM) and SCRM2.",
+      "claim_type": "EXPLICIT",
+      "source": "These three bHLH proteins form heterodimers with the broadly expressed sister bHLH proteins SCREAM (SCRM: also known as ICE1) and SCRM2, both of which are absolutely required for the activities of SPCH-MUTE-FAMA (Lau and Bergmann, 2012; Pillitteri and Dong, 2013; Han and Torii, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "1d91614f-a5fb-4df3-b562-a3d0f07161b3",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C65",
+      "claim": "EPF2 peptide perception by ERECTA activates downstream intracellular signals mediated by the mitogen-activated protein kinase (MAP kinase) cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "During the initiation of stomatal cell lineages, EPF2 peptide perception by ERECTA activates downstream intracellular signals mediated by the mitogen-activated protein kinase (MAP kinase) cascade, which inhibits the entry divisions of MMC by down-regulating SPCH protein (Lampard et al., 2008; Lee et al., 2012, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "7093e001-fde9-46aa-871a-ba27324bb228",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C66",
+      "claim": "Application of bioactive EPF2 peptide confers an epidermis solely composed of pavement cells, phenotypically identical to loss-of-function spch mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, application of bioactive EPF2 peptide confers an epidermis solely composed of pavement cells, phenotypically identical to loss-of-function spch mutant (Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "80defa6b-7ee8-49c9-aad7-173efbde1be7",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C67",
+      "claim": "The Stomagen peptide associates with ERL1 in planta.",
+      "claim_type": "EXPLICIT",
+      "source": "The Stomagen peptide also associates with ERL1 in planta (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "f0255791-f73a-490e-b693-98e234eeacb0",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C68",
+      "claim": "TMM forms a heteromer with ERL1 and is required for EPF1-ERL1 mediated signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "TMM forms a heteromer with ERL1 and is required for EPF1-ERL1 mediated signaling (Hara et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "afb7a786-26b3-4843-9af6-062285f024d7",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C69",
+      "claim": "TMM is required for the asymmetric spacing division of a neighboring stomatal lineage ground cell (SLGC).",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that TMM is required for the asymmetric spacing division of a neighboring stomatal lineage ground cell (SLGC) (Nadeau and Sack, 2002; Lau and Bergmann, 2012; Han and Torii, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from multiple sources.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "a6a061fe-6692-4567-9e34-c4746fc881ff",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C70",
+      "claim": "A disproportionate balance of receptor pools between meristemoid and neighboring cell evoke the self-inhibition of stomatal fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that both a meristemoid and its neighboring cell share the same source of EPF1 signaling peptides, and a disproportionate balance of receptor pools between these two cell types evoke the self-inhibition of stomatal fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that MUTEpro::ERL1-YFP causes phenotype only in er erl1 erl2 background but not in wild-type.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "6b349b8a-e426-4e16-a6f7-a344eac9dcd7",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C71",
+      "claim": "Endogenous autocrine EPF1-ERL1 signaling in the meristemoids prevents excessive MUTE protein accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The result supports the hypothesis that endogenous autocrine EPF1-ERL1 signaling in the meristemoids prevents excessive MUTE protein accumulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observation that MUTE levels are higher in tmm mutants.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "f1a0cb1b-a0e1-4059-897d-47a7f209cabd",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C72",
+      "claim": "More cells express MUTE protein in tmm compared to wild-type epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, compared to the wild-type epidermis, more cells express MUTE protein in tmm, consistent with the increase in stomatal precursor cells by tmm mutation (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through confocal microscopy of dual reporter lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "a6bf7699-63fd-436b-9b3e-c61db7feaa6c",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C73",
+      "claim": "The role of TMM in suppressing the symmetric division of a meristemoid has been overlooked.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, the role of TMM in suppressing the symmetric division of a meristemoid has been overlooked.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation made by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "64611e57-5be0-4ddf-9893-3684eb93d1ac",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C74",
+      "claim": "MUTE and ERL1 constitute a negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The key framework is a negative feedback loop between MUTE and ERL1 whereby MUTE directly upregulates ERL1 expression (Figure 2), and in turn, ERL1 mediates EPF1-peptide signaling leading to inhibition of MUTE activity (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding of the study supported by multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "e2e0df2d-91a5-42b0-8673-cd1aa1f3030d",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C75",
+      "claim": "ERL1 is induced by SPCH in earlier stomatal-lineage cells, including MMCs, early meristemoids, and SLGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "ERL1 is also induced by SPCH in earlier stomatal-lineage cells, including MMCs, early meristemoids, and SLGCs (Figure 1) (Lau et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed through imaging and cited from previous publication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "1756ae78-5e74-4757-8b01-029634b14e7d",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C76",
+      "claim": "EPF1 expression is not regulated by MUTE.",
+      "claim_type": "EXPLICIT",
+      "source": "While EPF1 expression is not regulated by MUTE, EPF1 turns on during meristemoid-to-GMC transition (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through qRT-PCR showing no change in EPF1 upon MUTE induction, and dual reporter analysis showing EPF1 expression timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "86461a44-4155-4a0d-af45-b5db602d05b6",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C77",
+      "claim": "The overlapping expression of EPF1, ERL1, and MUTE during a narrow developmental window in the late meristemoids triggers downregulation of MUTE.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we proposed a coincidence model where the overlapping expression of EPF1, ERL1, and MUTE during a narrow developmental window in the late meristemoids triggers downregulation of MUTE (Figure 7), thereby ensuring timely transition to stomatal differentiation mediated by FAMA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "497062b8-0840-4d33-9345-00bf1987ca3d",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C78",
+      "claim": "EPF/EPFL-family peptides mediate signals both in autocrine and paracrine manners.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, EPF/EPFL-family peptides mediate signals both in autocrine and paracrine manners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the current study and comparison with other EPF/EPFL peptides.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "022c8db2-a010-48bd-b89f-6108ccd6f896",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C79",
+      "claim": "EPFL9/Stomagen secreted from internal mesophyll tissues is perceived by ERECTA in the protoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, EPFL9/Stomagen secreted from internal mesophyll tissues is perceived by ERECTA in the protoderm (Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "c053a916-eb12-4d43-857d-3815d5bd5bf4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C80",
+      "claim": "EPFL4 and EPFL6 are inter cell-layer signals between the stem endodermis and phloem to promote inflorescence elongation via ERECTA.",
+      "claim_type": "EXPLICIT",
+      "source": "EPFL4 and EPFL6 are inter cell-layer signals between the stem endodermis and phloem to promote inflorescence elongation via ERECTA (Uchida et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "5be41755-379d-486c-9f10-24490f1aaf40",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C81",
+      "claim": "EPFL2 peptide promotes leaf serration as a ligand for ERECTA-family.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we have reported that EPFL2 peptide promotes leaf serration as a ligand for ERECTA-family (Tameshige et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication by the same group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "4b0e3712-b3e2-4696-a89f-4deb041f6c0a",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C82",
+      "claim": "ERL2 shows the highest expression at the leaf teeth tips where EPFL2 expression is excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EPFL2 and its primary receptor, ERL2, exhibit inverse expression patterns: ERL2 shows the highest expression at the leaf teeth tips where EPFL2 expression is excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is from the authors' recent work on EPFL2.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "77100bb0-c4d8-49aa-97ae-0345d147d55c",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C83",
+      "claim": "Both epf1 mutation and a dominant-negative ERL1 receptor confer a violation of one-cell spacing rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Both epf1 mutation and a dominant-negative ERL1 receptor confer a violation of one-cell spacing rule (Hara et al., 2007; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d302b1c8-1ff9-4e44-a6e5-4435e26509ed",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C84",
+      "claim": "EPFL4/6 (CHAL/CLL1) interfere with the buffering mechanism and confer stomatal clustering in the stems in the absence of TMM.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, EPFL4/6 (CHAL/CLL1), which normally act as ligands for ERECTA-mediated inflorescence elongation, interfere with this buffering mechanism and confer stomatal clustering in the stems the absence of TMM (Abrash and Bergmann, 2010; Abrash et al., 2011; Uchida et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "91ac36d4-19f6-4c54-8ed2-8ee70c41f05d",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "claim_id": "C85",
+      "claim": "VST-family of membrane-associated proteins was reported as a modulator of ERECTA-family signaling, via specifically interacting with ERL2.",
+      "claim_type": "EXPLICIT",
+      "source": "Very recently, a VST-family of membrane-associated proteins was reported as a modulator of ERECTA-family signaling, via specifically interacting with ERL2 (Ho et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from previous publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ERL1-YFP exhibits dynamic spatiotemporal localization during stomatal development, with sharp plasma membrane localization in early stomatal-lineage cells, striking accumulation at asymmetric division sites, transient high accumulation during late meristemoid-to-GMC transition, and disappearance during GMC symmetric division. The ERL1pro::ERL1-YFP construct is functional and expressed at levels comparable to endogenous ERL1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 provide direct observational evidence from time-lapse confocal microscopy showing ERL1-YFP dynamics throughout stomatal development. Claims C50-C51 validate the reporter construct through genetic complementation and expression level analysis. The convergent evidence from imaging, genetic rescue, and molecular validation strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "5a2a5844-2df1-4e98-ac58-a6241ecf5194",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MUTE directly induces ERL1 expression. All late meristemoids co-express MUTE and ERL1, inducible MUTE triggers rapid ERL1 upregulation within two hours, and MUTE binds to the ERL1 promoter at a region overlapping with the SPCH binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 provide multiple lines of evidence: dual reporter analysis showing co-expression (C12), qRT-PCR demonstrating rapid transcriptional response (C13), and ChIP-qPCR confirming direct binding to the promoter (C14). The combination of expression analysis, induction kinetics, and direct binding evidence strongly supports that MUTE directly induces ERL1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "5adfb2d5-6e15-4ea0-ad97-977d8204c3be",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MUTE expression precedes EPF1 expression, but both are co-expressed in late meristemoids and GMCs. EPF1 is not a direct MUTE target, as MUTE induction does not trigger changes in EPF1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 and C76 provide consistent evidence from dual reporter analysis showing sequential then overlapping expression patterns, and qRT-PCR showing no EPF1 response to MUTE induction. The data clearly demonstrate temporal relationships and regulatory independence of EPF1 from MUTE.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EPF1-ERL1 signaling specifically targets MUTE but not SCRM or SPCH. EPF1 overexpression causes loss of MUTE reporter signals within 15-24 hours while SCRM reporters remain unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide quantitative time-course data showing selective loss of MUTE but not SCRM signals following EPF1 overexpression. Claims C23-C24 (referenced in C25) show SPCH is also unaffected. The specificity is demonstrated through parallel analysis of multiple transcription factors with consistent differential effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "5e082d2a-80f9-4e57-aeea-4d72d4248165",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Co-expression of EPF1, ERL1, and MUTE triggers autocrine inhibition of stomatal fate. Expression of MUTEpro::ERL1-YFP in er erl1 erl2 causes massive arrested meristemoids and 14-fold reduction in stomatal index, which is rescued by removing EPF1/EPF2, adding Stomagen peptide, or removing TMM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 provide strong genetic evidence: the arrested meristemoid phenotype with MUTEpro::ERL1-YFP (C26-C27), rescue by removing ligands (C28), competitive inhibition by Stomagen (C29), and rescue by removing the co-receptor TMM (C30). The multiple independent genetic manipulations that reverse the phenotype provide robust support for the autocrine inhibition model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "408f15e1-3784-4b50-adb2-d573c4078c5f",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The autocrine inhibition requires absence of other ERECTA-family receptors. MUTEpro::ERL1-YFP shows no phenotype in wild-type background, suggesting that ERECTA and ERL2 in neighboring cells buffer EPF1 ligands. A disproportionate balance of receptor pools between meristemoid and neighboring cells evokes self-inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 shows no phenotype in wild-type, while C26-C27 show severe phenotype in er erl1 erl2, demonstrating the buffering effect. Claims C39-C40 provide mechanistic explanation through receptor distribution. The genetic evidence clearly supports the buffering model, though the precise quantitative balance remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Loss of autocrine EPF1-ERL1 signaling in tmm mutants causes excessive MUTE accumulation (>2.5-fold increase), accelerated proliferation-to-differentiation transition (14 hr vs 18.9 hr), and dysregulated symmetric divisions of meristemoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 provide quantitative evidence from fluorescence intensity measurements and time-lapse imaging showing increased MUTE levels, shortened transition time, and aberrant symmetric divisions in tmm. The convergent phenotypic and molecular data support that autocrine signaling normally prevents excessive MUTE accumulation and ensures proper developmental timing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "49703f51-f947-4ffa-a2e5-674b478c4bb3",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MUTE and ERL1 constitute a negative feedback loop where MUTE directly upregulates ERL1, and ERL1 mediates EPF1 signaling to inhibit MUTE. The overlapping expression of EPF1, ERL1, and MUTE in late meristemoids triggers MUTE downregulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This integrative result is supported by the combination of C4 (MUTE induces ERL1), C3/C25 (EPF1-ERL1 inhibits MUTE), and the temporal expression data (C15-C16). The negative feedback loop model is well-supported by the molecular and genetic evidence, though the precise biochemical mechanism of MUTE inhibition remains unclear (C43).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge on stomatal development: ERL1 is a SPCH target, MUTE specifies meristemoid-to-GMC transition, EPF2 is a SPCH/SCRM target forming a negative feedback loop, Stomagen antagonizes EPF2 by binding ERECTA, EPF1 enforces stomatal spacing through ERL1/TMM receptors, and both EPF1 and ERL1 show highest expression in late meristemoids and GMCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge from prior publications (all marked as CITATION evidence). They provide essential context for interpreting the current findings but are not novel results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on stomatal development pathway: Stomatal development proceeds through stereotypical cell-state transitions (MMC\u2192meristemoid\u2192GMC\u2192guard cells) directed by sequential bHLH transcription factors (SPCH, MUTE, FAMA) that heterodimerize with SCRM/SCRM2. EPF2-ERECTA-MAP kinase signaling inhibits SPCH to regulate stomatal initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge providing developmental context. They are well-supported by prior literature but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "3997dcf1-88b6-485a-8e75-d7863dab27a9",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "YODA-MKK4/5-MPK3/6 MAP kinase cascade acts downstream of ERECTA-family receptors, and constitutively-active MKK4/5 expression causes arrested meristemoids. However, MUTE lacks a predicted MAP kinase target domain, raising questions about whether MUTE is a direct MPK3/6 substrate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 cite established genetic relationships. Claim C43 identifies an important gap in understanding the biochemical mechanism. This is well-supported background that highlights an unresolved mechanistic question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "4120ca4f-5394-4199-8383-73c758f65cdd",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BASL regulates meristemoid polarity and asymmetric cell fates. Polarized BASL in SLGCs enhances MAP kinase activity and lowers SPCH abundance. In epf1 mutants, BASL shows improper polar localization predicting mis-oriented asymmetric divisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims cite established knowledge about BASL function in stomatal development. They provide context for understanding how EPF1 signaling might influence cell polarity, though this connection is not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "c5763ca5-94ed-4e80-8548-dd0569566a67",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Examples of autocrine signaling in plants and animals: LAT52-LePRK2 in pollen, CLE45-BAM3 in protophloem, and Wnt in mouse epidermal stem cells all involve co-expression of ligand and receptor in the same cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims cite examples from literature to provide comparative context for autocrine signaling. They support the biological plausibility of the EPF1-ERL1 autocrine mechanism but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "76eda6fe-0d2f-498f-a26a-19d4f9508a6e",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "TMM forms heteromers with ERL1, is required for EPF1-ERL1 signaling, and is necessary for asymmetric spacing divisions of neighboring SLGCs. Stomagen peptide associates with ERL1 in planta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge about TMM and Stomagen function from prior publications. They provide important context for interpreting the genetic rescue experiments but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "EPF/EPFL-family peptides mediate both autocrine and paracrine signals. Examples include EPFL9/Stomagen (mesophyll to protoderm), EPFL4/6 (endodermis to phloem), and EPFL2-ERL2 (with inverse expression patterns in leaf serration).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a conclusion of the current study, while C79-C82 provide supporting examples from literature. The evidence supports that EPF/EPFL peptides can function in multiple signaling modes, though the relative contributions of autocrine vs paracrine signaling for each peptide vary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "83993e41-6d6c-4bf5-8d3f-35453b895e14",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Additional context on EPF signaling: epf1 and dominant-negative ERL1 mutations violate one-cell spacing rules, EPFL4/6 interfere with buffering and cause stomatal clustering in tmm stems, and VST proteins modulate ERECTA-family signaling through ERL2 interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims cite established knowledge providing additional context for understanding EPF signaling complexity and the buffering model. They are well-supported by prior literature but represent background rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "7d5fb384-9ed3-45d4-a247-4efdd92e9349",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "EPF1 is a founding member of secreted peptide ligands enforcing stomatal patterning, and ERL1 is its primary receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established facts from prior work that frame the study. Claim C1 is general knowledge, while C2 is supported by cited genetic and biochemical studies. These provide essential background but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "268a1511-4896-4fb4-b48f-4b9a936ea0bd",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In the autocrine model, EPF1 peptide is perceived by ERL1/TMM in the meristemoids/GMCs themselves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a key component of the proposed autocrine model, supported by the genetic evidence showing that co-expression of EPF1, ERL1, and MUTE in the same cells triggers self-inhibition (C5, C26-C31). The model is well-supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    },
+    {
+      "id": "8bdb70d6-cf81-486b-b887-8ae2970c5da4",
+      "content_id": "2212125c-3a09-4696-ba0d-68fc2d563dc9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The role of TMM in suppressing symmetric division of meristemoids has been overlooked in prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This observation is supported by the time-lapse imaging data showing extra symmetric divisions in tmm mutants (C35). While TMM's role in SLGC asymmetric divisions was well-known (C69), the current study reveals its additional role in preventing meristemoid symmetric divisions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:13:16.048714Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "08e011af-2c09-4be3-a1fe-8b7bbbb9e5d6",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "ab19c481-9fef-4a13-b976-df46ab1f7b57",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "8fad1601-8754-4370-8666-ae070b873445",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "855686a6-80de-448d-8297-f69d0c58f7b4",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "bba28a31-f578-46fd-9c1a-921de345c7f6",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "b653d3a6-3478-4ebf-b1c8-42ac5b9fb3bb",
+      "result_id": "a44f0c0b-23bd-44bc-bf59-fd58be43a8a8"
+    },
+    {
+      "claim_id": "dbba68cd-07da-4670-80af-802699e49722",
+      "result_id": "5a2a5844-2df1-4e98-ac58-a6241ecf5194"
+    },
+    {
+      "claim_id": "e3d114ad-5348-436a-b573-70ddfb12bb73",
+      "result_id": "5a2a5844-2df1-4e98-ac58-a6241ecf5194"
+    },
+    {
+      "claim_id": "612f0955-d08d-4a2c-bb2d-ba470351f1f8",
+      "result_id": "5a2a5844-2df1-4e98-ac58-a6241ecf5194"
+    },
+    {
+      "claim_id": "d00fb259-86cb-412b-8c0d-18a9511a2ae0",
+      "result_id": "5a2a5844-2df1-4e98-ac58-a6241ecf5194"
+    },
+    {
+      "claim_id": "413dc4c7-231d-4786-9b32-b834389fbb62",
+      "result_id": "5adfb2d5-6e15-4ea0-ad97-977d8204c3be"
+    },
+    {
+      "claim_id": "fb9cc47a-86e1-4fde-9720-6653378a2e16",
+      "result_id": "5adfb2d5-6e15-4ea0-ad97-977d8204c3be"
+    },
+    {
+      "claim_id": "d4ad0ffb-0613-41ba-a5d8-acd0bd801337",
+      "result_id": "5adfb2d5-6e15-4ea0-ad97-977d8204c3be"
+    },
+    {
+      "claim_id": "1756ae78-5e74-4757-8b01-029634b14e7d",
+      "result_id": "5adfb2d5-6e15-4ea0-ad97-977d8204c3be"
+    },
+    {
+      "claim_id": "2dc1ed06-e4d1-4248-8d7c-02245f839b2b",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "2faa0e43-fb41-4c7e-82e9-41c01fb4854c",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "cef417b8-6c8f-4bb5-bd4a-9fd729620d05",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "60bb43f4-5fbb-450e-ae39-0eab42638148",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "d73f8eaa-2c09-480c-baf0-81cc8fdce472",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "f3d7e9f0-0a70-4007-90e8-9bcf597d900a",
+      "result_id": "ab68832b-003e-4504-bf6e-6b1d57a1f84a"
+    },
+    {
+      "claim_id": "64f79f1e-e6c3-4136-ac06-85c39ef3b438",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "8246be87-09a0-4b90-8016-8123d09f62f9",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "aa85a67f-e6d6-4884-af61-fd5f71c76055",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "441c8184-758d-4c54-8fbb-76019632a867",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "676fe16b-ebff-4ed2-a578-a1e5206948d9",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "6f5bfc79-07fd-4a9d-9e1f-c7eeb8aae236",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "39859124-1cd0-4047-b913-3c20522a62c4",
+      "result_id": "5e082d2a-80f9-4e57-aeea-4d72d4248165"
+    },
+    {
+      "claim_id": "0b422e87-0fc2-47f4-83a2-63656db2c156",
+      "result_id": "408f15e1-3784-4b50-adb2-d573c4078c5f"
+    },
+    {
+      "claim_id": "ddb2f907-4d12-4b13-9b3c-8bde53561101",
+      "result_id": "408f15e1-3784-4b50-adb2-d573c4078c5f"
+    },
+    {
+      "claim_id": "ccf35f9b-5a51-4b4d-8b09-a61672a294cc",
+      "result_id": "408f15e1-3784-4b50-adb2-d573c4078c5f"
+    },
+    {
+      "claim_id": "8bf1d24c-e30e-48af-afd1-3d252ca0c67b",
+      "result_id": "408f15e1-3784-4b50-adb2-d573c4078c5f"
+    },
+    {
+      "claim_id": "a6a061fe-6692-4567-9e34-c4746fc881ff",
+      "result_id": "408f15e1-3784-4b50-adb2-d573c4078c5f"
+    },
+    {
+      "claim_id": "6a1c2e5f-8656-483c-8cca-f4a421255ac4",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "d9ab3807-cfb0-4a31-a740-f677fbc98af2",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "16351b6b-302a-4ae8-92ee-dd21276c5abc",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "3c669ffc-06ee-4429-84e5-0faeca7e6688",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "18bc1714-1349-48c0-8af3-7c638467f5c3",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "6b349b8a-e426-4e16-a6f7-a344eac9dcd7",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "f1a0cb1b-a0e1-4059-897d-47a7f209cabd",
+      "result_id": "a4df9a36-f2a6-4753-9161-8f9ed4e1f1bf"
+    },
+    {
+      "claim_id": "64611e57-5be0-4ddf-9893-3684eb93d1ac",
+      "result_id": "49703f51-f947-4ffa-a2e5-674b478c4bb3"
+    },
+    {
+      "claim_id": "e2e0df2d-91a5-42b0-8673-cd1aa1f3030d",
+      "result_id": "49703f51-f947-4ffa-a2e5-674b478c4bb3"
+    },
+    {
+      "claim_id": "86461a44-4155-4a0d-af45-b5db602d05b6",
+      "result_id": "49703f51-f947-4ffa-a2e5-674b478c4bb3"
+    },
+    {
+      "claim_id": "a2280b06-0e72-4249-8bbe-be3f2e6650a1",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "1c9e8179-337c-4116-b442-70cd80b29489",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "48b3e57c-756b-46eb-8bbc-2d81afa39e2a",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "9eae7339-798b-4ad2-848c-6145440ada72",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "9511e953-6a5e-4d2a-9dce-cba283db419c",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "f8d18231-903d-45f4-b295-69f70744905c",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "71f026f5-67f6-4676-bda2-196ce4b29628",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "e50a4285-488a-4a74-8143-397b812e3293",
+      "result_id": "d45a2f24-f30c-414b-b4d9-d3f8bbd3caec"
+    },
+    {
+      "claim_id": "1690c22d-82ea-452f-9fd9-7bbac2cbc144",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "2dcaca1d-f794-4293-bec4-1c6fcf100c37",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "efaae3a7-1a8a-48b2-9633-dd3ad5bcd40d",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "d7590407-24c1-4613-a242-52e41915da74",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "9bcd150a-68da-4728-88b7-b53df24dc587",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "106a89c9-9c88-449b-8171-5269dffa4a67",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "1d91614f-a5fb-4df3-b562-a3d0f07161b3",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "7093e001-fde9-46aa-871a-ba27324bb228",
+      "result_id": "30fee3f9-d39a-4ce9-b9bc-c1b256294b14"
+    },
+    {
+      "claim_id": "a04e1561-e284-4d20-bf94-de2203b05757",
+      "result_id": "3997dcf1-88b6-485a-8e75-d7863dab27a9"
+    },
+    {
+      "claim_id": "2ea04699-f83b-42b2-88cd-561e9908f16f",
+      "result_id": "3997dcf1-88b6-485a-8e75-d7863dab27a9"
+    },
+    {
+      "claim_id": "15d3b2a1-5d2e-46ea-b624-9d0a0a22d9ee",
+      "result_id": "3997dcf1-88b6-485a-8e75-d7863dab27a9"
+    },
+    {
+      "claim_id": "5a98844e-5a2e-4ac4-b112-5daddb6eeaba",
+      "result_id": "4120ca4f-5394-4199-8383-73c758f65cdd"
+    },
+    {
+      "claim_id": "25743440-9ee9-4c70-8579-ee38b4af1873",
+      "result_id": "4120ca4f-5394-4199-8383-73c758f65cdd"
+    },
+    {
+      "claim_id": "fe5a0435-a010-4e08-87a0-eee7f0798e20",
+      "result_id": "4120ca4f-5394-4199-8383-73c758f65cdd"
+    },
+    {
+      "claim_id": "d89daf01-bc1b-4871-8a50-24a924b6d8cb",
+      "result_id": "c5763ca5-94ed-4e80-8548-dd0569566a67"
+    },
+    {
+      "claim_id": "d3c12b74-aaf4-4067-8b81-df6a296e57f9",
+      "result_id": "c5763ca5-94ed-4e80-8548-dd0569566a67"
+    },
+    {
+      "claim_id": "aac36f65-f073-4d8e-8176-42fe4f725dbe",
+      "result_id": "c5763ca5-94ed-4e80-8548-dd0569566a67"
+    },
+    {
+      "claim_id": "80defa6b-7ee8-49c9-aad7-173efbde1be7",
+      "result_id": "76eda6fe-0d2f-498f-a26a-19d4f9508a6e"
+    },
+    {
+      "claim_id": "f0255791-f73a-490e-b693-98e234eeacb0",
+      "result_id": "76eda6fe-0d2f-498f-a26a-19d4f9508a6e"
+    },
+    {
+      "claim_id": "afb7a786-26b3-4843-9af6-062285f024d7",
+      "result_id": "76eda6fe-0d2f-498f-a26a-19d4f9508a6e"
+    },
+    {
+      "claim_id": "497062b8-0840-4d33-9345-00bf1987ca3d",
+      "result_id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4"
+    },
+    {
+      "claim_id": "022c8db2-a010-48bd-b89f-6108ccd6f896",
+      "result_id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4"
+    },
+    {
+      "claim_id": "c053a916-eb12-4d43-857d-3815d5bd5bf4",
+      "result_id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4"
+    },
+    {
+      "claim_id": "5be41755-379d-486c-9f10-24490f1aaf40",
+      "result_id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4"
+    },
+    {
+      "claim_id": "4b0e3712-b3e2-4696-a89f-4deb041f6c0a",
+      "result_id": "fc39dbda-6e22-4be3-ab5b-633c5548c1d4"
+    },
+    {
+      "claim_id": "77100bb0-c4d8-49aa-97ae-0345d147d55c",
+      "result_id": "83993e41-6d6c-4bf5-8d3f-35453b895e14"
+    },
+    {
+      "claim_id": "d302b1c8-1ff9-4e44-a6e5-4435e26509ed",
+      "result_id": "83993e41-6d6c-4bf5-8d3f-35453b895e14"
+    },
+    {
+      "claim_id": "91ac36d4-19f6-4c54-8ed2-8ee70c41f05d",
+      "result_id": "83993e41-6d6c-4bf5-8d3f-35453b895e14"
+    },
+    {
+      "claim_id": "27891120-2548-4371-a492-0de5693a316b",
+      "result_id": "7d5fb384-9ed3-45d4-a247-4efdd92e9349"
+    },
+    {
+      "claim_id": "b21562ed-4bcb-495a-ab92-665c6cedbf10",
+      "result_id": "7d5fb384-9ed3-45d4-a247-4efdd92e9349"
+    },
+    {
+      "claim_id": "6e1face5-ba45-431a-8d24-c4d080cd7f58",
+      "result_id": "268a1511-4896-4fb4-b48f-4b9a936ea0bd"
+    },
+    {
+      "claim_id": "a6bf7699-63fd-436b-9b3e-c61db7feaa6c",
+      "result_id": "8bdb70d6-cf81-486b-b887-8ae2970c5da4"
+    }
+  ],
+  "comparisons": []
+}

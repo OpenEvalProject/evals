@@ -1,0 +1,1136 @@
+{
+  "submission": {
+    "id": "b57b610a-5f6f-4edd-a773-a76f31fac452",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:26:10.412449Z",
+    "updated_at": "2025-11-30T22:26:10.412449Z"
+  },
+  "content": [
+    {
+      "id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "submission_id": "b57b610a-5f6f-4edd-a773-a76f31fac452",
+      "content_type": "manuscript",
+      "content_text": "# Cell assemblies at multiple time scales with arbitrary lag constellations\n\n## Authors\n\n- Eleonora Russo<sup>1</sup> ([ORCID: 0000-0002-6215-6305](https://orcid.org/0000-0002-6215-6305)) \u2020\n- Daniel Durstewitz<sup>1</sup> ([ORCID: 0000-0002-9340-3786](https://orcid.org/0000-0002-9340-3786)) \u2020\n\n### Affiliations\n\n1. Department of Theoretical Neuroscience Bernstein Center for Computational Neuroscience, Central Institute for Mental Health, Medical Faculty Mannheim, Heidelberg University Mannheim Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nHebb's idea of a cell assembly as the fundamental unit of neural information processing has dominated neuroscience like no other theoretical concept within the past 60 years. A range of different physiological phenomena, from precisely synchronized spiking to broadly simultaneous rate increases, has been subsumed under this term. Yet progress in this area is hampered by the lack of statistical tools that would enable to extract assemblies with arbitrary constellations of time lags, and at multiple temporal scales, partly due to the severe computational burden. Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization. Applying this methodology to multiple single unit recordings from various cortical areas, we find that there is no universal cortical coding scheme, but that assembly structure and precision significantly depends on the brain area recorded and ongoing task demands.\n\n## Introduction\n\nEven more than six decades after its conception, Hebb's (1949) fundamental idea of a cell assembly continues to play a key role in our understanding of how neural physiology may link up to cognitive function. Loosely, a cell assembly refers to a group of neurons which, by functionally organizing into a temporally coherent set, come to represent mental or perceptual entities, thereby forming the basis of neural coding and computation (Hebb, 1949). However, the term lacks a stringent and universally accepted definition, and has been used to denote anything from the precise zero-phase-lag spike synchronization in a defined subset of neurons (Abeles, 1991; Singer and Gray, 1995; Roelfsema et al., 1997; Diesmann et al., 1999; Harris et al., 2003) to temporally coherent changes in average firing rates on larger time scales (Goldman-Rakic, 1995; Durstewitz et al., 2000). Often the term is meant to imply precise millisecond coordination of spike times for a 'volley' of activity which repeats at regular or irregular intervals in relation to specific perceptual or motor events (Figure 1A,\u00a0I; e.g. [Riehle et al., 1997; Roelfsema et al., 1997; Harris et al., 2003; Fries et al., 2007]). Precise sequential patterns of spiking times (i.e., with time lags \u2260 0) have been reported as well (Figure 1A,\u00a0II), most commonly in the hippocampal formation where they may correspond to sequential orders of places (Skaggs and McNaughton, 1996; Buzs\u00e1ki and Draguhn, 2004), in the\u00a0visual cortex as a consequence of different activation levels (K\u00f6nig et al., 1995), or as possibly generated through synfire-chain-like structures (Abeles, 1991; Diesmann et al., 1999). More generally, neurons may contribute several spikes in any order to a fixed spatio-temporal pattern (Figure 1A,\u00a0III), as reported and linked to putative synaptic input motifs in vitro and in vivo (Ikegaya et al., 2004; Yuste et al., 2005). At a coarser temporal scale, neurons could fire with a specific temporal patterning to which each neuron may contribute 'bursts' of variable length (Figure 1A,\u00a0IV). Such temporally ordered transitions among coherent firing rate patterns across sets of simultaneously recorded neurons have been described in different cognitive tasks and systems (Seidemann et al., 1996; Beggs and Plenz, 2003; Jones et al., 2007; Lapish et al., 2008; Durstewitz et al., 2010). At a still broader temporal scale, sets of neurons jointly increasing their average rates for some period of time (Figure 1A,V), as during persistent activity in a working memory task, have also been linked to the cell assembly idea (Durstewitz et al., 2000).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig1-v1.jpg)\n\n**Figure 1.:** (A) Different assembly types in simulated non-stationary spike trains: I \u2013highly precise lag-0 synchronization; II \u2013 precise sequential pattern; III \u2013 precise spike-time pattern without clear sequential structure; IV \u2013 rate pattern with temporal structure; V \u2013 simultaneous rate increase.\u00a0(B) Assembly-assignment matrix, showing how the 50 simulated units were grouped into assemblies, at which lags $l$ to the leading unit they were so (color-coded), and at which bin widths \u0394 the corresponding assemblies were detected (sorted along abscissa). (C) Assembly retrieval score (fraction of correctly assigned units) as a\u00a0function of bin width for the different assembly types, averaged across 70 independent runs. Error bars = SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Assembly retrieval score as a\u00a0function of bin width for different choices of reference lag $l^{*}$. Synchronous assembly patterns in the form of (A) sharp spike time coincidences (type I assembly, spike times jittered with $\\epsilon\u223cN(0,\u00a06.4\u22c510^{\u22125})\u00a0s$) and (B) common rate modulations (type V assembly, duration: $0.3\u00a0s$) in spike time series of length $T=1400\u00a0s$, averaged across 45 independent runs. Error bars = SEM. Throughout this manuscript, $l^{*}=\u22122$ has been used for testing $l\u00af=0$. Note that at $l^{*}=\u22121$ the detection rates start to decline, while larger lags diminish the temporal sensitivity (for a given, non-confounded assembly, however, the most appropriate timescale may still be indicated through the p-levels associated with each $\u0394$; cf. sect. \u2018Recursive assembly agglomeration algorithm\u2019).\n\nThere is indeed an ongoing, sometimes heated, controversy about the degree of temporal precision and coordination present in neural activity and its relevance for neural coding, partly based on empirical (Shadlen and Movshon, 1999; London et al., 2010), partly on statistical arguments (Mokeichev et al., 2007). Based on this discussion, it seems at present premature and limiting to focus on a single specific assembly concept, theoretical idea, or particular time-scale. Here we develop a novel statistical approach for multi-cell recordings that treats the temporal scale, precision, and internal organization of coherent activity patterns as free parameters, to be determined from the data, and is thus open to a large family of possible assembly definitions (Figure 1A). By deriving a fast parametric test statistic for pairwise dependencies that automatically corrects for non-stationarity locally, computationally costly bootstrapping and sliding window analyses are avoided, reducing the\u00a0computational burden by factors of 100\u20131000 (see Materials and methods). Thus, in combination with a computationally efficient agglomeration scheme which recursively combines units into larger sets based on significant relations detected in the previous step, considerable speed-ups are achieved. This in turn enables screening for assemblies at all possible lag constellations and temporal scales, not accomplished (to this extent) by previous algorithms to our knowledge (see Materials and methods). We then apply this methodology to examine in multiple single-unit (MSU) recordings from different cortical areas whether these employ a kind of universal temporal coding scheme, or whether and how the\u00a0properties of the assembly code are adapted to the\u00a0area-specific computations and task demands.\n\n## Results\n\n### Theoretical framework for assembly detection\n\nFrom a statistical perspective, any of the assemblies from Figure 1A should reveal itself through recurring activity patterns in a set of simultaneously recorded spike trains, where a pattern can be any supra-chance constellation of unit activities with a specific distribution of time lags $l$ among them. The idea is to capture the multiple temporal scales introduced above through the width $\u0394$ used for binning the spike time series. We start from the relatively old notion of assessing the departure of the joint spike count distribution $p(A,B)$ of two units (or sets) A and B from independence (Gr\u00fcn et al., 2002a; Pipa et al., 2008). For two independent units with stationary spike trains, the joint distribution of spike occurrences at a specified time lag $l$ would factor into the single unit (\u2018marginal\u2019) distributions, $p(A,B)=p(A)p(B)$. Assume each recorded spike time series has been converted into a series ${c_{t}}$ of spike counts of length $T$ at bin width $\u0394$, with $#_{A}$ and $#_{B}$ denoting the total numbers of spikes emitted by units A and B, respectively. If $\u0394$ is small enough such that $c_{t}\\in{0,1}$ (binary counts), then, under the null hypothesis ($H_{0}$) of independence, the joint spike count $#_{AB,l}$ at time lag $l$ follows a hypergeometric distribution with mean $\\mu_{AB,l}=#_{A}#_{B}/(T\u2212l)$ and variance $\\sigma_{AB,l}^{2}$. If the binning is such that spike counts $c_{t}$ larger than one occur, the hypergeometric distribution is no longer directly applicable. We then split the series into several (mutually dependent) binary series (cf.\u00a0Figure 6A) for which we obtain a joint mean and variance as derived in the Materials and methods.\n\nThe mean $\\mu_{AB,l}$ and variance $\\sigma_{AB,l}^{2}$ could, in principle, be used to check for deviation from the $H_{0}$ of independence at lag $l$, but in practice such a statistic would be corrupted by non-stationarities like (coupled) changes in the underlying firing rate (see Materials and methods, Figure 7, and Appendix on the importance of accounting for non-stationarity). Sliding window (Gr\u00fcn et al., 2002b) or bootstrap-based (Fujisawa et al., 2008; Pipa et al., 2008; Picado-Mui\u00f1o et al., 2013) analyses have most commonly been used to deal with this issue, but come at the price of considerable data loss or computational burden. Here we suggest a simple remedy which corrects for non-stationarity locally by using the difference statistic $#_{ABBA,l}=#_{AB,l}\u2212#_{AB,\u2212l}$ (see Materials and methods,\u00a0Figure 6B). The idea is that this way non-stationarities in firing rates would cancel out locally, on a comparatively fine time scale ($\u2248l\u0394$), since they would affect $#_{AB,l}$ and $#_{AB,\u2212l}$ alike (for assessment of synchronous spiking, we use $#_{ABBA,0}=#_{AB,0}\u2212#_{AB,l^{*}}$, with $l^{*}=\u22122$; see sect. \u2018Choice of reference (correction) lag\u2019 for the motivation of this particular choice and a more general discussion of the reference statistics chosen). The statistic $Q_{l}\u2261#_{ABBA,l}^{2}/\\sigma^^{2}_{ABBA,l}$ finally is approximately F-distributed and can be used for fast parametric assessment of the $H_{0}$ (see Materials and methods and Figure 7; Figure 7\u2014figure supplements 1 and 2, for derivation and empirical confirmation using non-stationary synthetic data).\n\nHaving derived a fast, non-stationarity-corrected parametric test statistic for assessing the\u00a0independence of pairs, we designed an agglomerative, heuristic clustering algorithm for fusing significant pairs into higher-order assemblies (see Figure 6\u2014figure supplement 1 and Materials and methods for full derivation and pseudo-code). In essence, at each agglomeration step the algorithm treats each set of units fused in an earlier step just like a single unit with activation times defined through one of its member units. This allows for the same pair-wise test procedure on sets of units as defined for single units above, while at the same time effectively testing for higher-order dependencies based on the joint (set) distributions (see Materials and methods). Each pair is tested at all possible lags $l\\in{\u2212l_{max}\u2026l_{max}}$ (with $l_{max}$ provided by the user), which is a reasonably fast process given the parametric evaluation introduced above. Should a pair of unit-sets prove significant at several lags $l$ at any step, only the one associated with the minimum p-value is retained. The recursive set-fusing scheme stops if no more significant relationships among agglomerated sets and single units are detected. All subsets nested within larger sets are then discarded. This whole procedure is repeated for a set of user-provided bin widths $\u0394\\in{\u0394_{min}\u2026\u0394_{max}}$. For each formed assembly, the width $\u0394^{\u2217}$ associated with the lowest p-value may then be defined as its characteristic temporal precision. All tests are performed at a user-specified, strictly Bonferroni-corrected \u03b1-level (always set to 0.05 here; see Materials and methods for details).\n\n### Performance evaluation on simulated data\n\nThe agglomerative scheme described above is a fast heuristic proxy, similar in spirit to the apriori algorithm in machine learning (Hastie et al., 2009; Picado-Mui\u00f1o et al., 2013), for evaluation of all possible unit and lag combinations. To illustrate and evaluate its performance, synthetic data with known ground truth were created. Cell assembly structures with the different levels of temporal precision and internal organization (i.e., lag distributions) as\u00a0shown in Figure 1A were simultaneously embedded within inhomogenous (i.e., non-stationary) Poisson spike trains, with a\u00a0mean rate following an auto-regressive process (see Materials and methods). The assembly-assignment matrix in Figure 1B demonstrates that all five different types of assemblies (and only these, no false detections) were correctly identified with their associated temporal precision and lag distributions. Figure 1C illustrates the quality of \u2018assembly retrieval\u2019 (measured as fraction of assembly units correctly assigned) as a function of bin width \u0394: As expected, the retrieval quality steeply declines for the temporally precise assemblies as the bin width increases (types I and II), while it rises up to the appropriate temporal scale for the more broadly defined assemblies (types IV and V). For assembly-type III, defined by precise temporal relationships, yet extended across time without strictly sequential structure, both these time scales are revealed (leading to the local peak at ~300 ms). Also note that the correlated rate increases which define assemblies of types IV and V naturally can be discovered already at lower bin widths than the one which corresponds to the temporal extent of the whole pattern. We also investigated more systematically (Figure 2, see also Materials and methods) how assembly retrieval varies as a function of sample size and potential spike sorting errors. Assembly detection starts to significantly degrade only when their relative contribution to the spike series drops below ~4% (Figure 2A), or when more than ~30% of all spike times were corrupted by spike sorting errors (Figure 2B). More importantly, across a whole range of sample sizes, spike assignment errors, and assembly structures tested, the fraction of units falsely ascribed to any one assembly stayed uniformly low at about 0.5% (Figure 2C,D), indicating that our procedure is quite conservative and rarely returns false positives in the simulated scenarios.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig2-v1.jpg)\n\n**Figure 2.:** (A) Rand index $R(r,s)$, Equation 14, as a\u00a0function of the total number of occurrences of the assembly pattern in spike time series of length $T$=1400 s, averaged across 50 independent runs, for all five types of assemblies from Figure 1 (as indicated in the inset legend). Percentages at the half-width points of the $R(r,s)$-curves indicate the proportion of spikes in the time series contributed by the assembly structures at these points. (B) Rand index for all assembly types as a function of the fraction of incorrectly assigned spikes (\u2018sorting errors\u2019). (C) Fraction of units incorrectly assigned to an assembly across a range of assembly occurrence rates. (D) Fraction of units incorrectly assigned to an assembly as a function of the fraction of misattributed spikes. Error bars = SEM.\n\n### Area- and task-specific assembly configurations and time scales\n\nWe next examined assembly structure in different brain regions from which multiple single-unit recordings were obtained in previously published experiments, including the rat anterior cingulate cortex (ACC; [Hyman et al., 2012; Hyman et al., 2013]), hippocampal CA1 region, and entorhinal cortex (EC, [Pastalkova et al., 2008; Mizuseki et al., 2009, 2013]) (see Materials and methods for further specification). Figure 3A presents the assembly-assignment matrix from one of the\u00a0ACC data sets. Detected assemblies span a large range of temporal precisions, from ~10 ms to about 1.5\u2009s, with a variety of lag distributions, and are composed of about 10% (ACC) to 16% (CA1, EC) of the recorded neurons. Note that different from the clear-cut hypothetical examples (Figure 1B) which were strictly disjoint by design, many of the experimentally recorded assemblies partially overlap (i.e., share units; see also Materials and methods). Figure 3B also gives specific examples of assemblies with relatively high (top) and with lower (bottom) temporal precision. Finally, many of the unraveled assemblies were highly selective for specific task events as illustrated in Figure 3C, Figure 3\u2014figure supplement 1.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig3-v1.jpg)\n\n**Figure 3.:** (A) Assembly-assignment matrix for one ACC data set, with the\u00a0average firing rate of units indicated on the left. (B) Examples of detected assembly patterns at relatively precise (top; 50 ms) and broader (bottom; 200 ms) time scales. Insets on the right zoom in on detected assemblies with optimal binning \u0394 indicated by vertical lines. See Material\u00a0and\u00a0methods\u00a0for computation of assembly activation scores (\u2018activity\u2019) as shown in the lower panels. (C) Two examples of selective assembly activity discriminating between left (blue curves, n=39) and right (red curves, n=34) lever presses during actual lever press (top) or during delay (bottom). Times of lever press and nose poke are indicated by vertical red and black dashed lines, respectively. Periods of significant differentiation indicated by black bars above curves (two-tailed, paired t-test, *p<0.05, Bonferroni-corrected for number of bins tested, Figure 3\u2014source data 1). Shaded areas = SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Times of lever press and nose poke are indicated by vertical red and black dashed lines, respectively. (A) Examples of assemblies with right (red) vs. left (blue) lever-selectivity around the time of the lever press itself (top; right: n=14, left: n=14), during both nose poke and reward consumption, but with a change in preference (center; right: n=35, left: n=28), and during the whole nose poke - lever press - delay phase (bottom panel; right: n=34, left: n=39). (B) Examples of non-selective assemblies with preferential activation during specific task epochs (right: n=34, left: n=39). Periods of significant differentiation indicated by black bars above curves (two-tailed, paired t-test, *p<0.05, Bonferroni-corrected for number of bins tested). Shaded areas = SEM.\n\nA specific question one might ask is whether different brain areas host different types of assembly structures, and how these may depend on the behavioral task. These aspects are quantified in Figure 4A by plotting the distribution of all significant unit pairs as a function of bin width \u0394 and time lag l. Several features are noteworthy here: First, the joint (\u0394,l)-distribution changes dramatically as the animals move from unstructured, completely self-paced, little demanding environmental exploration (Figure 4A, left column) to a highly structured, demanding delayed alternation task (Figure 4A, right column). During the latter, a much larger number and richer repertoire of assembly structures turned out, as also indicated by the \u2018marginal\u2019 distributions of significant unit pairs across time scales \u0394 in Figure 4B. However, secondly, while these changes in ACC and CA1 were mostly focused on the larger timescales, in EC they appeared to run across all timescales, yet were overall less dramatic than in CA1 (Figure 4A, bottom; Figure 4B, bottom). Third, assemblies remarkably differ among the three brain regions in the range of temporal scales they occupy: While EC mainly harbors fine temporal structure with a precision of about 15\u201350 ms, in ACC broad rate change patterns in the 120\u2013700 ms range appear to dominate (Figure 4B). CA1, in contrast, expresses both temporal scales, or in fact a wide spectrum from about 30\u20131500 ms, of which the broader scales (>100 ms) only surface during delayed alternation. Overall, a much larger number of units engaged in any one assembly in CA1 (>90%) than in ACC (30\u201350%; Figure 4B). These observations indicate that the temporal composition and precision of assembly activity strongly depends on both the brain area and the behavioral setting.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig4-v1.jpg)\n\n**Figure 4.:** (A) Relative frequency histograms (color-coded) of all significant unit pairs, pooled across all detected assemblies, as a function of characteristic time scale $\u0394\\in{0.015\u2026\u00a01.5}$s\u00a0and lag $l\\in{\u221210\u202610}$, for the anterior cingulate cortex (ACC, top), CA1 region (center), and entorhinal cortex (EC, bottom) during environmental exploration (left; total numbers of pairs tested: 9316 [ACC], 7597 [CA1], 5024 [EC]) and delayed alternation (right; total numbers of pairs tested: 4090 [ACC], 9847 [CA1], 4183 [EC]).\u00a0Note that the aggregation at larger lags for ACC is partly due to the fact that the algorithm considered lags up to $l_{max}=10$, such that significant pairs with optimal lag $l>10$ have been assigned to $l_{max}$. All tests are Bonferroni-corrected for numbers of pairs and lags tested. (B) Marginal distributions of significant assembly-unit pairs across temporal scales \u0394 for ACC (top), CA1 (center), and EC (bottom). Blue curves = environmental exploration. Red curves = delayed alternation. Shaded areas = SEM.\n\nOn closer inspection, some of the temporally more precise 30\u201350 ms assemblies in CA1 were found to code for specific place fields (\u2018place assemblies\u2019) in the rat\u2019s environment (Figure 5A, Figure 5\u2014figure supplement 1). These assemblies mainly consisted of synchronous (lag-0) spiking units (Figure 4A). Meanwhile, the more broadly tuned assemblies in CA1 tended to code for temporally extended events which often appeared to have a specific behavioral meaning in the task context: For instance, these assemblies may become active during the reward event irrespective of its spatial location (Figure 5B), or for the whole correct choice path after a behavioral decision was made (Figure 5D). These temporally broader assemblies commonly also followed a more sequential (lag\u22600) layout (Figure 4A). Interestingly, the single cells constituting CA1 assemblies did not necessarily share the same place preference with their \u2018parent\u2019 assembly (Figure 5\u2014figure supplement 1). Similar as in CA1, broader assemblies in ACC were tuned to specific task phases and events (lever presses, delays, stimulus conditions) and reflected the task\u2019s sequential structure (Figure 3C, Figure 3\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig5-v1.jpg)\n\n**Figure 5.:** Color-coded activity maps for four CA1 assemblies during an environmental exploration task (A) and a delayed alternation task (B, C, D).\u00a0Below x-axis in each panel: Identities of neurons assigned to the assembly, associated time lags within an\u00a0assembly, and temporal scale of assembly.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Color-coded normalized (to area under curve) activity maps for two assemblies (top row,\u00a0Figure 5A and C) and their constituent single neurons (rows below) within an environmental exploration task (left) and a delayed alternation task (right). Average firing rates of the constituent single units indicated below each map.\n\n## Discussion\n\nHere we introduced a novel theoretical and statistical framework, based on fast parametric testing and computationally efficient agglomerative algorithms, which detects assembly structure at many different temporal scales, and with arbitrary internal organization, while at the same time accounting for non-stationarity on a fine time scale. This enables to readdress fundamental questions about the temporal structure and nature of neural representations in a largely unbiased way. One potential caveat to be noted here, however, is that the particular choice of reference bin for removing non-stationarity still entails a (mild) assumption about structure: For the present choice of pairing $#_{AB,l}$ with its time reverse, $#_{AB,\u2212l}$, it is that temporal dependencies are essentially directed (except for the synchronous case), i.e. do not simultaneously, within a given pair of time series, occur with exactly the same time lag in both directions. If in doubt about this, however, analyses may be repeated with another (not too large) reference lag (see sect. \u2018Choice of reference (correction) lag\u2019 for a discussion of alternative choices and factors to consider, including differences in sensitivity to non-stationarity implied by different lag spans covered by the test statistic).\u00a0Testing other reference lags may also help with types of non-stationarity that may violate the conditions defined below Equation 6.\n\nIllustrating this methodology on multiple single-unit recordings from ACC, CA1, and EC, it appeared as if the temporal structure and precision of the revealed assemblies were closely related to the computations performed by these brain areas: While the CA1 region processes precise spatial (O\u2019Keeffee and Nadel, 1978; Harris et al., 2003; Diba and Buzs\u00e1ki, 2007) and temporal (Eichenbaum, 2014) environmental structure, the ACC is much less concerned with finely-granulated details of the spatial world (Hyman et al., 2012). Rather, activity in ACC reflects behavioral organization, behavioral monitoring, overall context, and task structure, processes which typically unfold on much slower temporal scales (Lapish et al., 2008; Hyman et al., 2012). Likewise, in addition to spatial coding, the hippocampal CA1 region has also been reported to represent aspects of higher-order decision making, like paths to a defined goal state or choice outcomes (Lisman and Redish, 2009; Buzs\u00e1ki, 2015). These capacities may become relevant only when an animal is transferred from unstructured environmental exploration to a task which involves clearly defined goal states, reward-related choices, and possibly time delays between them. Consequently, sequential organization of assemblies at broader time scales was much more often observed in the latter than in the former task context.\n\nNumerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously (Gr\u00fcn et al., 2002a; Gr\u00fcn et al., 2002b; Pipa et al., 2008; Torre et al., 2016a), but most of these adhere to one or the other theoretical conceptualization of a cell assembly (cf. Figure 1A), or become computationally impractical for larger cell numbers or multiple lags (see Appendix for further discussion of both more recent and more 'traditional', cross-correlation-based, approaches). Also, none of these, to our knowledge, combines all of the features presented here. The statistical tools developed here may allow readdressing questions about the nature of neural coding in different brain areas, without requiring the researcher to commit to any particular assembly concept or theoretical framework a priori. Indeed, we observed that there may be not just one type of cortical assembly code, but that the temporal precision, scale, and sequential composition with which cortical neurons organize into coherent patterns strongly depends on the brain area and task context investigated. We further note that our methods are not specific to the neuroscientific domain, but could be used more widely in other scientific areas to detect structure at multiple temporal scales in multivariate event count series.\n\n## Materials and methods\n\n### Statistical test for pairwise interaction\n\nAssume we have recorded N spike trains, each divided into T bins of equal bin width \u0394, resulting in a spike count series { cK,t }, t=1\u2026T, for each recorded unit K. Bin width \u0394 sets the temporal precision at which unit interactions are to be detected. We would like to test for a range of time lags l\u2208{ \u2212lmax\u2026lmax } whether the joint spike count #AB,l of units A and B at lag l significantly exceeds of what would have been expected under the null hypothesis (H0) of independence of the two spiking processes. For clarity, note that #AB,l is computed by counting the number of times we have a spike in unit A and a corresponding spike in unit B l time bins later. From the range of all considered lags, we select the one which corresponds to the highest count #AB,l\u00af, i.e. l\u00af\u2261argmaxl(#AB,l). For deriving the proper distributional assumptions under the H0, spike count series { cK,t } are often thresholded (Gr\u00fcn et al., 2002a; Humphries, 2011; Shimazaki et al., 2012; Picado-Mui\u00f1o et al., 2013) such that binary {0,1}-series are obtained, presumably partially\u00a0since multivariate extensions of the binomial or hypergeometric distribution are not yet commonplace (see Teugels, 1990; Dai et al., 2013). Especially for larger bin widths \u0394\u00a0this implies a serious loss of information, however. Therefore, we sought a different approach to the problem that makes use of the full spike counts, based on the first two moments of a multivariate hypergeometric distribution. Instead of thresholding, we split each spike count series into a set of \u03b1=1\u2026MK binary processes as indicated in Figure 6A, where Mk\u2261max(cK,t) is the maximum spike count observed for unit K for the specified bin width. The first binary process is defined by having a \u20181\u2019 in all time bins for which spike count cK,t\u22651 (and \u20180\u2019 otherwise), the second process by having a \u20181\u2019 only in those time bins for which cK,t\u22652, and so on. For any two units A and B, defining M\u2261min(MA,MB), the total joint count #AB,l\u00af at selected lag l\u00af is now simply given by the sum of joint counts #AB,l\u00af\u03b1 across all pairs of binary subprocesses \u03b1=1\u2026M,(1)#AB,l\u00af=\u2211\u03b1=1M#AB,l\u00af\u03b1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig6-v1.jpg)\n\n**Figure 6.:** (A) For deriving a statistical test that works with any temporal bin width the spike count series were separated into an overlay of several (dependent) binary sub-processes.\u00a0See Materials and methods for further explanation. (B) Dealing with non-stationarity in the spike trains. In the case of non-stationarity in the form of a common rate increase in two units A and B (highlighted in gray), some spike co-occurrences caused by the rate increase might be incorrectly attributed to coupled activity (mutual dependence) at the finer timescale (bin width) at which coupling is investigated (at a lag of one in the illustrated example), even if there is not really any such coupling as assumed in this example. This corruption by non-stationarity may be removed by considering the difference count $#_{AB}\u2212#_{BA}$, in which spurious excess coincidences in one direction ($#_{AB}$: red arrows) would cancel out with those in the reverse direction ($#_{BA}$: blue arrows). It is important to note that if, on the other hand, the rate increase is on the timescale of interest, as it is the case for the \u2018rate assemblies\u2019 of type IV or V in Figure 1), subtracting off the reverse-lag count would not prevent assembly detection on that time scale.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (1) Binning: Spike trains are binned at some time scale $\u0394$ of interest. (2) Detection of pairwise interactions at chosen scale $\u0394$: For all unit pairs, test $#_{AB,l\u00af}\u2212#_{AB,\u2212l\u00af}$ for significance, with $l\u00af\u2261argmax_{l}(#_{AB,l})$. Significant unit pairs form elementary assemblies fed into the agglomerative recursion loop. (3) Assembly agglomeration: Test pairwise combinations of previously formed assemblies (with time stamps centered on first activated assembly unit) and single units for significance, and add latter to assembly set if significant. For this step, only units are considered which already are significantly related to at least one assembly member. (4) Recursive loop and pruning: All assemblies extended in the previous iteration are fed back into step 3. After each iteration, from all assemblies consisting of the same set of units but with different patterns of time lags only the one with the lowest p-value is retained. The loop is terminated if no units have been added to existing assemblies in the previous iteration. In a final pruning step all assemblies which are true subsets of larger assemblies are removed.\n\nSince each of the $M$ subprocesses is binary, each number $#_{AB,l\u00af}^{\\alpha}$ follows a hypergeometric distribution under the $H_{0}$ (since marginal counts $#_{A}^{\\alpha}$ and $#_{B}^{\\alpha}$ are fixed by the observed data, a binomial distribution is not appropriate [G\u00fctig et al., 2002]). From this, and noting that the $M$ binary processes are not independent since by construction each higher-rank process \u03b3 >\u03b1 can only have \u20181\u00a0s\u2019 where the lower-rank processes \u03b1 had as well (but not necessarily vice versa), one can derive the expectancy value and variance of $#_{AB,l\u00af}$, respectively, under the $H_{0}$ as\n\n$$\n\\mu_{AB,l\u00af}\u2261E[#_{AB,l\u00af}]=\\sum\\alpha=1M\\frac{#_{A}^{\\alpha}#_{B}^{\\alpha}}{T\u2212l\u00af}\n$$\n\n\n\n$$\n\\sigma_{AB,l\u00af}^{2}\u2261E[(#_{AB,l\u00af}\u2212E[#_{AB,l\u00af}])^{2}]=\\sum\\alpha=1Mvar(#_{AB,l\u00af}^{\\alpha})+2\\sum\\alpha=1M\u22121\\sum\\gamma>\\alphaMcov(#_{AB,l\u00af}^{\\alpha},#_{AB,l\u00af}^{\\gamma})=\\sum\\alpha=1M\\frac{#_{A}^{\\alpha}#_{B}^{\\alpha}}{T~}\\frac{(T~\u2212#_{A}^{\\alpha})(T~\u2212#_{B}^{\\alpha})}{T~(T~\u22121)}+2\\sum\\alpha=1M\u22121\\sum\\gamma>\\alphaM\\frac{#_{A}^{\\gamma}#_{B}^{\\gamma}}{T~}\\frac{(T~\u2212#_{A}^{\\alpha})(T~\u2212#_{B}^{\\alpha})}{T~(T~\u22121)}\u00a0with\u00a0T~=T\u2212l\u00af.\n$$\n\nA parametric test statistic, Sl\u00af\u2261(#AB,l\u00af\u2212\u03bc^AB,l\u00af)/\u03c3^AB,l\u00af (t-distributed with 2(T\u2212l\u00af)M\u22121 degrees of freedom), could be based directly on these moments under the null hypothesis of independence on all time scales (for all choices of \u0394), and if the data were truly stationary (by which we mean here that the joint probability distribution \u03c0AB,t,l(u,v)\u2261pr(cA,t=u\u2227cB,t+l=v) is time-invariant, i.e. \u03c0AB,t,l(u,v)=\u03c0AB,l(u,v) for all t). This will commonly not be the case with electrophysiological time series. Rather, there will be rate fluctuations on different temporal scales, as for instance induced by oscillatory drive or external stimuli (Quiroga-Lombard et al., 2013). Under these conditions, variance Equation 3 will usually be highly biased, often underestimating the true variation. Furthermore, the joint count #AB,l\u00af may not factor into the product of the marginal counts as in Equation 2 anymore, since, in general, E[#A]E[#B,l]\u2260(T\u2212l)\u2211t=1T\u2212lE[#A,t]E[#B,t+l] for any fixed non-stationary set { \u03c0AB,t,l(u,v),\u00a0t=1\u2026T\u2212l }. Finally, we are interested in testing for independence at a defined time scale \u0394, but may want to permit the processes to be coupled at other temporal scales, like for instance with common external or oscillatory drive. In this case the simple test statistic defined above (Sl\u00af) breaks down (Figure 7 left column). Hence, we would like to test against a stronger H0 which allows for uncoupled or coupled rate changes on broader temporal scales without corrupting our assessment of independence on finer scales.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig7-v1.jpg)\n\n**Figure 7.:** Comparison of non-corrected ($S_{l\u00af}$) and stationarity-corrected ($Q_{l\u00af}$) pairwise test statistics.Percentile-percentile plots showing agreement between the theoretical distributions for different test statistics considered in the text ($S_{l\u00af}$, $Q_{l\u00af}$ with $C$=1, and with $C$=100 segments) and the distributions empirically obtained, for the truly stationary case (top row), independent non-stationarity (center row), and non-stationarity coupled among the two units A and B (bottom row). Overlaid are distributions derived from 4000 simulation runs with spike time series analyzed for the three different lags\u00a0$l$= 0 (blue curves), 5 (yellow) and 10 (red). $\u0394$=100 in all cases. Simulations are with non-stationarity implemented as step-type rate-changes (see Materials and methods) with $m$=1 and $L$=75000. Identity line (bisectrix) is marked in gray. Results for test statistic used for all data analyses in this work highlighted by light-gray box.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Percentile-percentile plots showing agreement between the theoretical and empirical $Q_{l\u00af}$ distributions (computed based on segments of length $k$=100 bins, see Supplemental Experimental Procedures). Non-stationarity is implemented here via step-type rate changes with parameters as given in Materials and methods. Overlaid are distributions derived from 4000 simulation experiments with spike time series analyzed for the three different lags $l$ = 0 (blue), 5 (red), and 10 (yellow), and $\u0394$=3. Identity line (bisectrix) is marked in gray.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Agreement in theoretical vs. empirical $Q_{l\u00af}$\u00a0($C$=100) distributions (P-P-plots as in Figure 7\u2014figure supplement 1) under non-stationary conditions implemented through autoregressive processes (Equations 12\u201313). Denoting by $C=[dc,cd]$ the coupling matrix of the auto-regressive process, parameters were: $c$=0 (top row) and $d$=0.4,\u00a00.997,\u00a00.99999 (from left to right); $d$=0.4, $c$=0.5 (bottom-left), $d$=0.995, $c$=0.003 (bottom-center), $d$=0.9996, $c$=0.0004 (bottom-right). Overlaid are distributions derived from 4000 simulation experiments with spike time series analyzed for the three different lags $l$ = 0 (blue), 5 (red), and 10 (yellow), and $\u0394$=3. Identity line (bisectrix) is marked in gray.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19428/elife-19428-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** Two Poisson units with different mean rates were subjected to a common oscillatory drive. (A) Illustration of the two units\u2019 mean spike rates together with various spike trains drawn from this same process. (B) Detected fraction (from 0 to 1) of significant couplings among the two units as a function of bin width for the case where the units were just driven by the same oscillation but otherwise independent (gray curve) vs. the case where the units exhibited finer-time scale spike interactions on top (blue curve), averaged across n=100 independent runs. For the independent case, coupling is only detected at the time scale of the common oscillation, but not at finer scales. Error bars = SEM.\n\nIn the time series literature, the most common remedies for non-stationarity issues are bootstrap-based techniques (Fujisawa et al., 2008; Pipa et al., 2008; Picado-Mui\u00f1o et al., 2013; Torre et al., 2013) and sliding window analyses (Gr\u00fcn et al., 2002b).These two methods have, however, severe limitations. Bootstrap-based approaches are computationally quite demanding since essential steps of the algorithm may have to be repeated for a 100\u20131000 bootstrap replications. This may become outright prohibitive especially when multiple lag constellations are to be considered as in the present work. Sliding window analysis, on the other hand, uses only small fragments of the data set for estimation in each window, thus can be seriously plagued by low sample size issues (resulting in weak statistical power). Sometimes this is (partly) addressed by pooling across many trials, but this in turn requires (a) a sufficient number of trials, (b) stationarity across trials, and (c) clear external timestamps such that windows across trials are indeed comparable and can be aligned. In many tasks probing higher cognition, where just a handful of trials are not rare (e.g. [Lapish et al., 2008; Hyman et al., 2012]), or in self-paced tasks, these methods are thus not applicable.\n\nWe therefore propose a new approach to non-stationarity here.\u00a0Rather than testing $#_{AB,l\u00af}$ directly for significance, our approach focuses on the asymmetry between the occurrence rates of patterns $(AB,l)$ and $(BA,l)=(AB,\u2212l)$, respectively, defined through\n\n$$\n#_{ABBA,l\u00af}=#_{AB,l\u00af}\u2212#_{AB,\u2212l\u00af}.\n$$\n\nThe idea is that non-stationarity on slower time scales ($>l\u00af\u0394$, if $\u0394$ is the time scale considered), e.g. in the form of correlated rate changes, will, on average, cancel out in $#_{ABBA,l\u00af}$, since it will affect $#_{AB,l\u00af}$ and $#_{AB,\u2212l\u00af}$ alike (for clarity, note that $#_{AB,l\u00af}$ is accumulated across $t=1:T\u2212l\u00af$, while $#_{AB,\u2212l\u00af}$ runs across $t=l\u00af+1:T$; we also note that while differencing to remove non-stationarity is, in general, a more common practice in the \u2018classical\u2019 time series literature, e.g. (Box et al., 2013), here we use this technique in a very specific sense by forming the difference between one joint count series and its reverse). More precisely, the scenarios covered by our $H_{0}(\u0394)$ should be those where the two processes A and B are independent on the specified scale $\u0394$, in fact independent for all scales at least up to $l\u0394$, while they may be coupled and/or non-stationary on slower temporal scales of at least $l\u0394$. Our $H_{0}$ requires $E[#_{AB,l\u00af}^{\u0394}]=E[#_{AB,\u2212l\u00af}^{\u0394}]$ (where superscript $\u0394$ indicates that counts were taken at that temporal resolution), which strictly holds if\n\n$$\n\\sum\\alpha=1M\\sumt=1T\u2212lp(c_{A,t+l}^{\u0394,\\alpha}|c_{B,t}^{\u0394,\\alpha})p(c_{B,t}^{\u0394,\\alpha})=\\sum\\alpha=1M\\sum\\tau=1T\u2212lp(c_{A,\\tau}^{\u0394,\\alpha}|c_{B,\\tau+l}^{\u0394,\\alpha})p(c_{B,\\tau+l}^{\u0394,\\alpha})\n$$\n\nThe H0(\u0394) furthermore demands that this factorizes as\n\n$$\n\\sum\\alpha=1M\\sumt=1T\u2212lp(c_{A,t+l}^{\u0394,\\alpha})p(c_{B,t}^{\u0394,\\alpha})=\\sum\\alpha=1M\\sum\\tau=1T\u2212lp(c_{A,\\tau}^{\u0394,\\alpha})p(c_{B,\\tau+l}^{\u0394,\\alpha}).\n$$\n\nNow, if the two processes A and B are reasonably stationary at least on scales up to $l\u22c5\u0394$, we have $p(c_{A,t}^{\u0394,\\alpha})\u2248p(c_{A,t+l}^{\u0394,\\alpha})$ and $p(c_{B,t+l}^{\u0394,\\alpha})\u2248p(c_{B,t}^{\u0394,\\alpha})$ and the equalities above should (approximately) hold, even if the processes are non-stationary and/or coupled on broader temporal scales. Thus, under the $H_{0}$ of independence on the time scale fixed by precision $\u0394$, $E[#_{AB,l\u00af}^{\u0394}]=E[#_{AB,\u2212l\u00af}^{\u0394}]$ if (eq.\u00a06) holds exactly, and approximately otherwise.\n\nUnder the alternative hypothesis of dependence on the specific scale $\u0394$ considered, on the other hand, if pattern $(AB,l\u00af)$ occurs more frequently than expected by chance, e.g. because unit A excites unit B, it appears (mechanistically) rather unlikely that the same is true for the exact time reversed pattern $(AB,\u2212l\u00af)$, unless the two units are in perfect synchrony as treated below (but see sect. \u2018Choice of reference (correction) lag\u2019 where this issue and alternative choices of reference bin are further discussed); hence $#_{ABBA,l\u00af}$ would be expected to differ from zero.\n\nTo accommodate the strictly synchronous case ($l\u00af=0$), finally, we slightly modify Equation 4 to be\n\n$$\n#_{ABBA,0}=#_{AB,0}\u2212#_{AB,l^{*}},\n$$\n\nwith $l^{*}\\neq0$. While, in principle, different reference lags $l^{*}$ may be attempted for confirmatory purposes, here we suggest $l^{*}=\u22122$ as a tradeoff between potential \u2018spillover\u2019 issues and the effective timescale at which non-stationarity is removed, as discussed in more detail in the sect. \u2018Choice of reference (correction) lag\u2019 below (see also Figure 1\u2014figure supplement 1). Note that $#_{ABBA,0}>0$ if synchrony is the dominant pattern, while the sequential case $l\u00af=\u22122$ is tested separately by $#_{ABBA,\u22122}$. Again, under the $H_{0}$, $E[#_{AB,0}]=E[#_{AB,l^{\u2217}}]$, while under the $H_{1}$ of synchronous spiking $#_{ABBA,0}$ would be expected to be larger than zero (one may also define the symmetric quantity $#_{ABBA,0}=#_{AB,0}\u2212(#_{AB,l^{*}}+#_{AB,\u2212l^{*}})/2$, but it makes the computation of the variance, Equation 10 below, more cumbersome). Following the same lines laid out above in deriving Equations 2 and 3, for these modified, stationarity-corrected statistics we thus obtain for the mean $\\mu_{ABBA,l\u00af}$ and variance $\\sigma_{ABBA,l\u00af}^{2}$ under the $H_{0}$, respectively,\n\n$$\n\\mu_{ABBA,l\u00af}\u2261E[#_{AB,l\u00af}]\u2212E[#_{AB,\u2212l\u00af}]=0\n$$\n\nand\n\n$$\n\\sigma_{ABBA,l\u00af}^{2}\u2261E[(#_{ABBA,l\u00af}\u2212E[#_{ABBA,l\u00af}])^{2}]=2\\sigma_{AB,l\u00af}^{2}\u22122cov(#_{AB,l\u00af},#_{AB,\u2212l\u00af}),\n$$\n\nwhere $\\mu_{ABBA,l\u00af}=0$ will approximately hold even under non-stationarity (see above). If the process is strongly non-stationary, however, evaluating Equation 9 directly across the whole time series may still give an inaccurate estimate of variance. In general, we therefore divide the binned spike train into $C$ segments of $k$ time bins each, and combine the local, segment-wise variance estimates into the global estimate $\\sigma^_{ABBA,l\u00af}^{2}$ with\n\n$$\n\\sigma^_{AB,l\u00af}^{2}=var(#_{AB,l\u00af})=var(\\sumc=1C#_{AB,l\u00af}^{c})=\\sumc=1Cvar(#_{AB,l\u00af}^{c})+2\\sumc=1C\u22121\\sum\u03c2>cCcov(#_{AB,l\u00af}^{c},#_{AB,l\u00af}^{\u03c2}),cov(#_{AB,l\u00af},#_{AB,\u2212l\u00af})=\\sumc=1Ccov(#_{AB,l\u00af}^{c},#_{AB,\u2212l\u00af}^{c})+2\\sumc=1C\u22121\\sum\u03c2>cCcov(#_{AB,l\u00af}^{c},#_{AB,\u2212l\u00af}^{\u03c2}),andcov(#_{AB,l\u00af}^{c},#_{AB,\u2212l\u00af}^{c})=\\sum\\alpha=1M\\frac{#_{A}^{c,\\alpha}#_{B}^{c,\\alpha}}{k}\\frac{(k\u2212#_{A}^{c,\\alpha})(k\u2212#_{B}^{c,\\alpha})}{k(k\u22121)^{2}}++2\\sum\\alpha=1M\u22121\\sum\\gamma>\\alphaM\\frac{#_{A}^{c,\\gamma}#_{B}^{c,\\gamma}}{k}\\frac{(k\u2212#_{A}^{c,\\alpha})(k\u2212#_{B}^{c,\\alpha})}{k(k\u22121)^{2}}.\n$$\n\nFor smaller segment length $k$ (here we used $k$=100), this approximation will become more accurate (as within each short segment the process will approach stationarity), yet at the same time computationally more demanding. In practice, covariation among segments may often be negligible compared to the within-segment variance contributions (see below; e.g. if auto-correlations decay relatively fast), so to reduce the\u00a0computational burden one may evaluate the quantity $\\sigma^_{ABBA,l\u00af}^{2}\u22482\\sum_{c=1}^{C}var(#_{AB,l\u00af}^{c})\u22122\\sum_{c=1}^{C}cov(#_{AB,l\u00af}^{c},#_{AB,\u2212l\u00af}^{c})$. This is in fact the estimate we have used throughout this manuscript.\n\nBased on the estimates derived above, we can then define the following approximately F-distributed quantity which can be used for significance testing:\n\n$$\nQ_{l\u00af}\u2261\\frac{(#_{ABBA,l\u00af}\u2212\\mu_{ABBA,l\u00af})^{2}}{\\sigma^_{ABBA,l\u00af}^{2}}\u223cF_{1,v}\n$$\n\nwith 1 numerator and $v$ denominator degrees of freedom. We found these approximations to work reasonably well for $E[#_{AB,l\u00af}]>4$\u00a0(see Figure 7). For one numerator and large denominator d.f., the F distribution is known to converge to the $\u03c7_{1}^{2}$ distribution which could be used for testing instead. For smaller sample sizes and non-stationary scenarios (where the variance $\\sigma^_{ABBA,l\u00af}^{2}$ is not exact anymore but estimated from segments), however, the F distribution appeared more appropriate, although the exact denominator d.f. are unknown in this case. For all analysis reported here we have used $v=2(T\u2212l\u00af)M\u22121$, but more generally we recommend $v=T\u2212l\u00af$\u00a0which is more conservative for low sample size ($T<50$; the differences become negligible for $T>400$ as in the case of most analyses reported here).\u00a0Finally, all \u03b1-levels are Bonferroni-corrected for the number $R$ of tests performed (see pseudo-code below and sect. \u2018Recursive assembly agglomeration algorithm\u2019).\n\n### Limitations of parametric testing under non-stationarity\n\nTo examine the error made by the various approximations introduced above, we empirically studied different scenarios by simulation. In one set of simulations, discrete, step-like rate-changes were used. Within a total of $T$=106 \u2018elementary\u2019 time bins (not to be confused with bin width $\u0394$ used for assembly detection), low-rate states were randomly interspersed with $m$ high-rate states of duration $L$ (expressed in terms of numbers of elementary bins). For each elementary time bin, spikes were drawn from a Bernoulli process with probabilities \u03c0low and \u03c0high, respectively. Here, $L$ explicitly defines the time scale on which the two processes are non-stationary and, in some simulations, coupled. Simulations (with $\u0394$=100, $l$\u2208{0,5,10}) were performed with both relatively fast ($m$=25, $L$=3000, on the order of $2l_{max}\u0394$; Figure 7\u2014figure supplement 1, center column) and slow ($m$=1, $L$=75000; Figure 7\u2014figure supplement 1, right column) rate variations (both with the same number of high-rate bins), and with one independent scenario (Figure 7\u2014figure supplement 1, top row) and one where the rate variations were completely synchronized between the two processes (Figure 7\u2014figure supplement 1, bottom row). As the percentile-percentile plots in Figure 7\u2014figure supplement 1 reveal, in all these cases departures from the theoretical F distribution were relatively\u00a0mild. We emphasize that this was the case although the difference between the low and high rate states was assumed to be rather large in our simulations (\u03c0A,low=0.01 vs. \u03c0A,high=0.05, and \u03c0B,low=0.03 vs. \u03c0B,high=0.15), a larger violation of stationarity than one may actually expect empirically.\n\nIn another set of simulations, time-varying firing rates for the two neurons were drawn from a slowly varying auto-regressive process with Gaussian noise (or, equivalently, a joint multivariate Gaussian). Spike counts for each bin were then drawn from a Poisson distribution with the rate \u03bb determined by the auto-regressive process passed through a non-negative transform (\u2018link-function\u2019, see Equation 13 below). We simulated scenarios with both somewhat faster ($cov(\\lambda_{A,t},\\lambda_{A,t+2\u0394l_{max}})\u22480.8$; Figure 7\u2014figure supplement 2, center column) and very slowly decaying auto-correlations ($cov(\\lambda_{A,t},\\lambda_{A,t+2\u0394l_{max}})\u22480.99$; Figure 7\u2014figure supplement 2, right column), and without ($cov(\\lambda_{A,t},\\lambda_{B,t})=0$; Figure 7\u2014figure supplement 2, top row) or with ($cov(\\lambda_{A,t},\\lambda_{B,t})\u22480.7$; Figure 7\u2014figure supplement 2, bottom row) correlations among the two processes present. As Figure 7\u2014figure supplement 2 reveals, the results for these simulation experiments were very similar to those shown in Figure 7\u2014figure supplement 1, with the empirical $Q_{l\u00af}$ distribution deviating only slightly from the theoretical F distribution. We thus conclude that for empirically reasonable scenarios of non-stationarity and coupling on longer time scales, the parametric statistical procedure introduced above should return quite accurate results.\n\nIt is important to note that while coherent rate changes constitute a coupled non-stationarity from the viewpoint of smaller timescales $\u0394$, for which they will be removed by our difference statistic, they actually represent an assembly on their own characteristic scale (type V in Figure 1). They are indeed correctly identified as such in both simulated scenarios when the bin width is chosen to be about the same as the time-scale of the \u2018non-stationarity\u2019, i.e. $\u0394\u2248L$\u00a0($m$=75, $L$=1000; Figure 7\u2014figure supplements 1,2, left columns, blue curves in bottom graphs). Hence, non-stationarity, in the present definition, refers to somewhat slower (co-)variations that may mislead detection of coincident events on comparatively finer time scales. Both, the relevant time scale for assembly detection and the associated time scale of non-stationarity, are strictly defined by the experimenter by fixing $\u0394$. Whether the\u00a0detected temporal structure is interpreted as an assembly or as non-stationarity therefore depends on the timescale chosen, and is ultimately up to the experimenter and the research question posed. From this perspective, our method basically ensures that coincidence structure is not falsely attributed to a certain temporal precision $\u0394$\u00a0while it was really produced by slower (co-)variations, an issue that has frequently plagued the discussion about precise temporal coding in the nervous system in the past (eg., [Singer, 1999] vs. [Shadlen and Movshon, 1999]).\n\nAs another note of caution, we remark that while under the $H_{0}$ assumptions (independence and stationarity on scales $\\leql\u0394$) equality (Goldman-Rakic, 1995) will always hold (in expectancy), the size of the deviations from the $H_{0}$ in the case of true structure (and thus the test\u2019s sensitivity or power) may, in principle, depend on how exactly non-stationary processes interact with underlying structure-creating processes (e.g., linearly vs. non-linearly).\n\n### Oscillations\n\nFinally, as an example of a particularly common form of non-stationarity in neural data (e.g. [Quiroga-Lombard et al., 2013]), we considered oscillations (Buzs\u00e1ki and Draguhn, 2004). (Note that oscillations constitute a type of non-stationarity from the present neurophysiological perspective, although they may be considered stationary in the classical statistical definition with access to an infinite ensemble of time series starting at random phases (see [Fan and Yao, 2003]). We tested two scenarios here: One in which two neurons were spiking independently at the time scale considered, but were driven by a common oscillatory drive at the same frequency and phase, and one where on top the units exhibited supra-chance coincident patterns. Specifically, for both units A and B the firing probability was taken to follow a Poisson distribution with rate parameter $\\lambda_{{A,B}}(t)=5(sin(2\\pi\\thetat)0.6+a_{{A,B}})$, $a_{A}=1$, $a_{B}=0.5$, $\\theta=4Hz$, yielding mean firing rates of 5Hz and 2.5Hz, respectively. For the independent case, no structure is detected for smaller bin widths $\u0394$ up to \u224830 ms (Figure 7\u2014figure supplement 3A), while for larger bin widths (>50 ms) the algorithm picks up the coordinated rate changes. For the second scenario (finer time-scale dependence on top of oscillation), patterns are inserted on top with a spike in unit A followed by one in unit B 20 ms later, phase-locked to the underlying rhythm. Within a $T$=1500 s long simulation period, a total of 90 of such patterns were placed randomly with a 20 ms delay to the oscillation peak. Figure 7\u2014figure supplement 2B shows that these patterns are indeed correctly detected by our procedure at the smaller bin sizes ({5, 10} ms) tested. Thus, once again, this example illustrates that the detection of finer time scale spike time relations is not confounded by covariations at slower scales, while the slower covariations are flagged up as a\u00a0coherent structure at their own respective time scale (50\u2013120 ms).\n\n### Choice of reference (correction) lag\n\nTo eliminate non-stationarity as a confounding factor, we suggested computing the difference between the target-lag joint count $#_{AB,l}$ and its time inverse $#_{AB,\u2212l}$. Strictly, this implies that if there were precise repeats of spiking sequences in reverse order, both the forward and backward directions would go undetected as they would cancel each other. Although a few studies have suggested that reverse replay may indeed occur in hippocampus (Foster and Wilson, 2006; Diba and Buzs\u00e1ki, 2007), in general it seems unlikely that sequential patterns are replayed in reverse order with exactly the same time lag constellation and at the very same temporal scale as in the forward direction, such that the patterns would fully cancel (or at least this seems not more likely than constellations implied by any other choice of reference lags). Nevertheless, this brings up the more general question of whether there is a better choice of reference lag. Furthermore, the pairing of $l$ with its exact opposite, $\u2212l$, implies that non-stationarity will be removed at different timescales (with different levels of precision, $l\u0394$) for different lags, a potentially undesired effect if direct comparisons between structures with different lag sizes are sought.\n\nIndeed, in principle, any other lag might potentially be chosen as a reference. A general recommendation therefore might be to simply repeat the analyses with other reference lags if researchers suspect that there might be significant structure at both $l\u00af$ and $\u2212l\u00af$, or to fix the reference lag to be, e.g., $l^{*}=\\pm(l_{max}+1)$, with $l_{max}$ the maximum lag tested for, for all lags considered. Doing this for the ACC delayed alternation data set presented in Figure 4 as an example, we found that the overlap between assemblies detected with $l^{\u2217}=\u2212l\u00af$ and $l^{*}=\\pm(l_{max}+1)$ (fixed for all query lags) was on average \u224897% across all timescales (range 96\u201399%; as measured by the Rand index, Equation 14, defined across all matching pairs with significant [$r$] or non-significant [$s$] relation), including the synchronous ($l\u00af=0$) case.\n\nThis does not imply that the reference lag is arbitrary, however. In general, there are two factors to consider: The amount of non-stationarity permitted (loosely related to the type I error in statistical terms) vs. the true structure potentially removed by the choice of reference lag (related to the test\u2019s sensitivity or \u2018type II error\u2019). For instance, while choosing a directly neighboring bin as reference, $l^{\u2217}=l\u00af\u22121$, may, at first glance, appear like the ideal choice from the perspective of removing non-stationarity confounds most efficiently (since in this case we only require $p(c_{B,t}^{\u0394,\\alpha})\u2248p(c_{B,t+1}^{\u0394,\\alpha})$ for Equation 6 to hold), it may also imply the highest risk of removing true structure from both a physiological and statistical point of view (the more similar and temporally proximal target and reference statistics, the more likely they are to be correlated). This is illustrated for the important case of synchronous activity on simulated data (type I & V assemblies) in Figure 1\u2014figure supplement 1, where with $l^{\u2217}=l\u00af\u22121$ we find that the test starts to lose part of the structure due to spillover into neighboring bins, while for too large lags the test\u2019s temporal accuracy goes down, and with that, more generally, the false discovery rates due to non-stationarity would be expected to rise. Furthermore, given that by far most synaptic connections and physiological responses are unidirectional or at least asymmetrical (Markram et al., 1997), the scenario that a neuron A is correlated with a neuron B at a couple of different forward lags (e.g., due to bursting) appears more likely than a pair of asynchronous neurons strictly switching order multiple times. Finally, the strict symmetry implied by $l^{\u2217}=\u2212l\u00af$ makes the joint count statistics for target vs. reference lag strictly comparable (unspoiled, e.g., by possibly differing auto-correlations across the target vs. reference lag), and permits to interpret Equation 11 effectively as a two-sided test (with directionality indicated by the sign of $#_{ABBA,l\u00af}$).\n\nWhile the ideal choice of reference lag may be an issue of further theoretical and empirical investigation, we emphasize that a), in practice, the precise choice of reference lag should not be overly crucial (as supported by the analyses reported above and in Figure 1\u2014figure supplement 1), and b) analyses may always be repeated for a few different reference lags if in doubt about structure possibly missed by the initial choice of reference.\n\n### Recursive assembly agglomeration algorithm\n\nOur assembly agglomeration scheme starts from all significant pair-wise interactions, and then adds new elements only on the basis of the structures already formed, similar in spirit to the apriori-algorithm in machine learning (Hastie et al., 2009; Sastry and Unnikrishnan, 2010). This heuristic procedure drastically reduces the number of configurations to be tested, but may lose significant unit configurations with non-significant subgroups (Picado-Mui\u00f1o et al., 2013). For each pair of units A and B, the spike count $#_{AB,l}$ is obtained for each triplet $(AB,l)$, with $l\\in{\u2212l_{max}\u2026l_{max}}$, and the maximum count is tested for significance (Figure 6\u2014figure supplement 1, step 2). Since the marginal elementary processes $#_{A}^{\\alpha}$ and $#_{B}^{\\alpha}$ do not change for different lags $l$ (except for the small influence from the $l$ bins cut off), this selection procedure is formally equivalent to performing an explicit significance test for each lag $l$ and retaining the one associated with the lowest p value. In the next step, all significant configurations $(AB,l\u00af)$ are treated like single units, with the joint \u2018spike (activation) times\u2019 defined (arbitrarily) as those of unit A whenever it matches up with a spike in unit B separated by $l\u00af$ time steps (bins). Each significant pair $(AB)$ is then paired in turn with all single units C which had entertained a significant relationship with either A or B in the previous step (Figure 6\u2014figure supplement 1, step 3). Proceeding with composite pairs $((AB,l\u00af_{AB})C,l\u00af_{(AB)C})$ exactly as described above, higher-order structures are thus recursively built up. Note that this procedure effectively tests for higher order structure, rather than just aggregating pairwise information: After screening for pairwise relations in the first step, for instance, in the second iteration the algorithm tests for the factorization $P(A,B,C)=P(A,B)P(C)$\u00a0whenever a unit $C$ is considered for inclusion into the already formed set $(AB,l\u00af)$, rather than, e.g., $P(A,B,C)=P(A)P(B)P(C)$, or \u201c$P(A,B)=P(A)P(B)\u2228P(A,C)=P(A)P(C)\u2228P(B,C)=P(B)P(C)$\u201d. Likewise, higher order joint distributions are considered in all subsequent iterations.\n\nSignificance levels $\\alpha$\u00a0at each step of the agglomeration scheme are strictly Bonferroni-corrected as $\\alpha\u00af_{i}=\\alpha/R_{i}$ (using $\\alpha=0.05$ here), with $R_{i}$ the total number of tests performed. Specifically, for the first step, $R_{1}=N(N\u22121)(2l_{max}+1)/2$, where $N$ is the total number of single units (correcting for the total number of different pairs). For each subsequent step $i$, $R_{i,a}=N_{a,i}N_{u,a}(2l_{max}+1)$, where $N_{a,i}$ is the number of assemblies tested in iteration $i$, and $N_{u,a}$ the number of units tested in combination with that assembly $a$ (hence allowing an higher $\\alpha$-level for assemblies tested in conjunction with less different units). At any step, unit-sets with the same elementary units but different lag distributions may result. From all these, we select only the one associated with the lowest p-value, and discard all others. This whole procedure will stop when no units engage in significant relationships anymore with the already agglomerated sets (Figure 6\u2014figure supplement 1, step 4). All true subsets of larger sets are finally discarded (but may be retained if hierarchical nesting is of interest, see below). A pseudo-code for the agglomeration scheme is included below. To test for structure at different temporal resolutions (scales), the whole scheme is re-run for a range of user-provided bin widths $\u0394={\u0394_{min}\u2026\u0394_{max}}$. For each assembly pattern the width $\u0394^{\u2217}$ associated with the lowest p-value is defined as the characteristic time scale (or temporal precision) for that assembly.\n\nAs a final note, for very large $\u0394$, the binned spike counts may potentially fluctuate around a high mean level and never fall below some minimum count cfloor considerably larger than zero for the whole time series. In our count statistics, also spikes up to that baseline rate cfloor would contribute to the coincidence counts $#_{AB,l\u00af}$, although they are completely non-informative with respect to the coupled dynamics among units, thus potentially biasing the results for large\u00a0$\u0394$. In this case, since we are only interested in actual firing rate covariations, we suggest to subtract off the minima $min({c_{A}^{\u0394}}_{t})$ and $min({c_{B}^{\u0394}}_{t})$ from the two considered series A and B, respectively, thus removing the non-informative floor count before statistical testing. This procedure would not affect the evaluation of spike coincidences at reasonably small $\u0394s$ for which $min({c^{\u0394}}_{t})=0$, obviously.\n\n### Further assembly pruning\n\nFurther pruning may be applied to the set of assemblies returned by the algorithm if desired. This may sometimes help interpretability and visualization, but of course depends on the exact analysis goals. If, for instance, the interest is in whether the same assemblies are replayed at a different time scale (e.g. [Diba and Buzs\u00e1ki, 2007]), then one may want to keep more than just the one assembly associated with the lowest p-value across time scales $\u0394$. Here, solely for the purpose of visualization, in Figure 3A the full set of assemblies returned by the algorithm was pruned by selecting among all assemblies (across different\u00a0$\u0394$) with cosine distance <0.3 only the one with lowest p-value. In Figure 1B, again for clarity and visualization, pruning was performed by discarding across scales $\u0394$ any assembly which is a subset of another, larger assembly (by default this is always done within each time scale $\u0394$). No pruning was used for any of the other figures presented in here.\n\n### Assembly activation\n\nAn instance of assembly activation in the multivariate spike time series was registered whenever spikes in the elementary assembly units occurred in the order prescribed by the associated pattern of time lags, with the activation time point defined as that of the assembly unit spiking earliest. The total assembly activation score (as given in Figure 2B\u2013C) is then defined as the number of such activation instances within a given time bin of size $\u0394$. This can lead to activation scores much larger than one, especially for assemblies defined through rate changes on coarser time scales, since each set of single assembly unit spikes occurring in the right order is counted. (Alternatively, one may define assembly activation through the correlation of the average assembly spike count pattern with the observed spike count patterns along the series of binned spike counts at the respective assembly resolution $\u0394$. This would result, however, in a temporally much less well resolved activation score which otherwise would essentially return the same information.)\n\nA Matlab (MathWorks) implementation of the whole procedure is provided at https://www.zi-mannheim.de/en/research/departments-research-groups-institutes/theor-neuroscience-e/information-computational-neuroscience-e.html. To give an idea of the performance speed, on a 12-core, 2.5 GHz, workstation, for a set of 50 simulated units (see below), a time series of length $T$=1400 s, and with $\u0394={0.015,\u00a00.05,\u00a00.1,\u00a00.15,1}$s\u00a0and $l={\u221210,\u2026,10}$, this whole procedure took <50\u2009min for five embedded assemblies with five units each (scenario from Figure 1). Significant further improvements in performance speed may be obtained through an implementation in a more basic language like C++.\n\n### Pseudo-code for agglomerative assembly formation\n\n% N: total number of units \n% ui, i=1\u2026N: single units \n% Um: set of units and corresponding lags (assemblies)\n% r: set counter\n\nfor\u00a0i\u00a0=\u00a01:N,\u00a0Ui\u00a0\u2190\u00a0{(ui,\u00a00)} \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0% Initialize lists with single units ui\nfor all i\u00a0\u2264\u00a0N,\u00a0j\u00a0\u2264\u00a0N:\u00a0Zij\u00a0=\u00a0FALSE \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0% Initialize all single unit pair comparisons to be \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2003\u2018false\u2019 (= \u2018accept H0\u2019)\nr\u00a0=\u00a0N,\u00a0Lold\u00a0=\u00a00\n\nREPEAT\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2003\u2003\u2003\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2003\u2003\u2003% agglomeration procedure\n\nLnew\u00a0=\u00a0r\nfor\u00a0\u00a0\u00a0\u00a0m\u00a0=\u00a0Lold\u00a0+\u00a01:Lnew \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u2003\u2003\u2003% move through all lists formed in previous step \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0for all\u00a0us\u00a0\u2209\u00a0Um\u00a0|\u00a0m\u00a0<\u00a0s\u00a0\u2264\u00a0N\u00a0\u2228\u00a0(m\u00a0>\u00a0N\u00a0\u2227\u00a0\u2203\u00a0ul\u00a0\u2208\u00a0Um:Zsl\u00a0=\u00a0TRUE)\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0% in first step (m \u2264 N) probe Um with all other single units not yet tested, or (for \n\u2003\u2003\u00a0%\u00a0m>N) probe Um\u00a0with all other single units that occur in at least one\u00a0other \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0%\u00a0significant pair with a unit from Um\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0l\u00af\u00a0\u2261\u00a0argmaxl(#(um,us),l) % test for significance at lag l\u00af\u00a0with maximum pair-wise count:\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0if\u00a0Pr(Ql\u00af\u00a0\u2265\u00a0F1,(T\u2212l\u00af)M\u2212|1[Um,\u00a0us, l\u00af]|H0)\u00a0\u2264\u00a0\u03b1\u00a0/\u00a0R\u00a0with \u00a0R\u00a0=\u00a0(Lnew\u00a0\u2212\u00a0Lold)\u00a0\u00b7\u00a0|{us}|\u00a0\u00b7\u00a0(2lmax\u00a0+\u00a01):\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0r\u00a0\u2190\u00a0r\u00a0+\u00a01,\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Ur\u00a0\u2190\u00a0{Um,\u00a0(us, l\u00af)}\u00a0=\u00a0{(ur,1,\u00a00),\u00a0(ur,2, l\u00af2),\u00a0...\u00a0,\u00a0(ur,|Um|+1, l\u00af|Um|+1)}\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0if |Um|\u00a0=\u00a01,\u00a0Zsm\u00a0=\u00a0Zms\u00a0=\u00a0TRUE\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0% form new list where each l\u00afj\u00a0is defined relative to the activationtime point (\u20180\u2019) of \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0the first unit ur,1\u00a0in the ordered list; set pair-wise flag to \u2018true\u2019 if single-unit\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0comparison\nLold\u00a0\u2190\u00a0Lnew\nUNTIL Pr(Ql\u00af\u00a0\u2265\u00a0F[Um,\u00a0us, l\u00af]|H0)\u00a0>\u00a0\u03b1\u00a0/R for all m, s\n\n% Pruning steps:\u00a0\nDiscard all Um for which \u2203\u00a0n\u00a0\u2260\u00a0m:\u00a0Um\u00a0\u2282\u00a0UnFor all Un,\u00a0Um for which \u2200\u00a0us\u00a0\u2208\u00a0Un:us\u00a0\u2208\u00a0Um\u00a0:Remove Um if Pr(Ql\u00af\u00a0\u2265\u00a0F[Um]|H0)\u00a0>\u00a0Pr(Ql\u00af\u00a0\u2265\u00a0F[Un]|H0), and \u00a0Un otherwise\n\nIn the algorithm above |\u22c5| denotes the cardinality of a set, and all set-operations (\u2208, \u2282, etc.) are defined in terms only of the unit-elements composing a set (i.e., ignoring the associated lags with which their occur).\n\n### Alternative procedure\n\nIn the REPEAT-loop, instead of probing all pair-wise relations among the current lists (assemblies) and all single units from significant pairs, one could also check for significant relationships among pairs of lists $U_{n},U_{m}$. As in classical hierarchical, agglomerative cluster-analytic procedures (Gordon, 1999), at each step one may only fuse the pair $(U_{n},U_{m})$ associated with the lowest p-value, add this to the current set of lists while removing $U_{n},U_{m}$, and repeat until $Pr(Q_{l\u00af}\\geqF[U_{n},U_{m},l\u00af]|H_{0})>\\alpha/R$ for all $n$, $m$. This would yield a dendrogram-like representation and thus reveal strictly hierarchical nesting among the\u00a0assemblies. It comes at the cost, however, that a) many higher-order assemblies may go undetected, and b) partial overlap among assemblies, which one may expect if the\u00a0units in assemblies act like \u2018letters in words\u2019, would be prohibited by the\u00a0definition of the agglomerative procedure. Also note that hierarchical nesting, to the degree present, could also be revealed with the definition of the agglomeration scheme in the pseudo-code above if subsets of further agglomerated sets are not pruned away at the end.\n\n### Construction of synthetical \u2018ground-truth\u2019 data\n\nTo test the full assembly detection schemes developed above, artificial spike trains from 50 cells were created according to inhomogeneous Poisson processes by drawing inter-spike-intervals from an exponential distribution with rate parameter $\\lambda_{it}$ for each unit $i$. Instantaneous firing rates $\\lambda_{it}$ were governed by an underlying stable first-order autoregressive process\n\n$$\ns_{t+1}=Ds_{t}+\\epsilon_{t},\u00a0\u00a0\u00a0\u00a0\u00a0\\epsilon_{t}\u223cN(0,\\sigma_{s}^{2}I)\n$$\n\nwith coefficient matrix $D$, and $E[\\epsilon_{t}\\epsilon_{t^{\u2032}}^{T}]=0$ for all $t\\neqt^{'}$ (white noise process). (Note that although $D$ is set such that the autoregressive process itself is stationary, i.e. $max(|eig(D)|)<1$, it implies fluctuations in the firing rate which makes the Poisson spiking processes themselves non-stationary in our definition above). Since $s_{t}$, in principle, is unbounded (in particular, can assume negative values), it was pushed through a sigmoid non-linearity\n\n$$\n\\lambda_{t}=(1+erf(\u03c5\\frac{s_{t}\u2212s\u00af}{\\sigma_{s}}))\\lambda\u00af,\n$$\n\nwith erf the error function, and constant mean rate vector $\\lambda\u00af$. Finally, to ensure a refractory period, a constant delay $\\tau_{ref}$ is added to each inter-spike-interval. Where not indicated otherwise, parameters used for the simulations were $\\lambda\u00af=5Hz$ for all units, $\\tau_{ref}=15ms$, $D=0.9\u00a0I$, where\u00a0$I$ denotes the identity matrix, $\u03c5=0.2$, $\\sigma_{s}=0.01$.\n\nAssemblies of all five types illustrated in Figure 1A were embedded within the same set of 50 spike trains as disjunctive groups of 5 neurons each. Note that since our algorithm is aimed at detecting significant spike time patterns (rather than, for instance, underlying connectivity), explicit control of such patterns and spike train statistics with vivo-like characteristics is most important for a ground truth check, while adding more biophysical realism to the underlying simulation setup would not help in this case. For assembly type I, each occurrence is marked by five precisely synchronous spikes across the set of assembly neurons (e.g. [Harris et al., 2003; Miller et al., 2014]). For assembly type II, spikes follow a precise sequential pattern across the set of assembly neurons on each instance of activation (Lee and Wilson, 2002; Diba and Buzs\u00e1ki, 2007). Time lags between spikes were drawn from a uniform distribution [0 0.1] s, and then fixed for each occurrence. For assembly type III, spikes across the set of assembly neurons followed a precise temporal pattern, but did not exhibit a strict temporal order, i.e. each neuron could contribute one to several spikes to the assembly pattern without strictly leading or following others (e.g. [Ikegaya et al., 2004]). For the simulations, these patterns were generated by distributing a few spikes at a Poisson rate of 10\u2009Hz across a period of 0.2 s for each assembly neuron, but then keeping these patterns fixed on each occasion of assembly activation.\n\nFor the less precise assembly type IV, short windows of extra spikes for each assembly neuron were organized in a specific temporal pattern, with the exact occurrence of the extra spikes within the defined time windows determined randomly on each repetition (cf. Figure 1A; e.g. [Friedrich et al., 2004; Euston et al., 2007; Luczak et al., 2007; Peyrache et al., 2009; Adler et al., 2012]). Specifically, time windows of 0.3 s with extra spikes at a Poisson rate of 10\u2009Hz were (without loss of generality) arranged in a sequential order, with the time lag between these windows drawn from a uniform distribution, [0 0.4] s. While this sequential ordering of time windows was fixed, within each window spikes were drawn at random on each assembly repetition. Assembly type V, finally, was simply defined by an increase of the Poisson firing rate from 5\u2009Hz to 10\u2009Hz for periods of 1 s simultaneously within the set of assembly neurons, as, e.g., during the delay period of a working memory task (e.g. [Fuster, 1973]).\n\nFor all assembly patterns, all spikes from the background process were erased within a $\\pm15\u00a0ms$ window around each assembly spike to preserve the refractory period. Assembly activation times were distributed (uniformly) randomly across the whole spike time series.\n\n### Performance evaluation: Low sample size limit and corrupted spike trains\n\nTo evaluate the performance, statistical power, and potential biases of our assembly detection algorithm more systematically, we focused on two experimentally relevant scenarios: Low assembly occurrence rates and spike sorting errors. The Rand index (Rand, 1971) was used to quantify the match between predefined assemblies and those retrieved by the algorithm. The Rand index measures the agreement between two partitions, in our case of units into assemblies, and is defined as\n\n$$\nR(r,s)=\\frac{r+s}{n(n\u22121)/2}\u00a0\n$$\n\nwhere $r$ is the number of unit pairs correctly assigned to the same assembly in both partitions, $s$ the number of unit pairs correctly assigned to two different assemblies, and $n$ the total number of detected assembly units. $R(r,s)$ varies between 0 and 1, assuming 1 only if the assembly structure extracted by the algorithm exactly maps onto the one predefined. To obtain a clean picture on the algorithm\u2019s statistical performance for each assembly type, unconfounded by the presence of other assembly types, in these analyses each assembly type from Figure 1 was investigated separately (i.e., unlike the analyses described in the main text where the different assembly types were mixed in the same simulations).\n\nFigure 2A plots $R(r,s)$ for all five assembly types from Figure 1 as a function of total assembly occurrences (in spike time series of length $T$=1400 s). Obviously, assembly detection gradually degrades as these structures start to drown in the noise but, as Figure 2A reveals, this only happens when the occurrence rates drop below ~0.18 repetitions/sec. Likewise, as shown in Figure 2B, more than ~30% of all spike times need to be corrupted by spike sorting errors (assignment of assembly spikes to wrong units) before performance notably decays. In more detail, Figure 2A and B suggest that sequential assembly patterns (types II and IV) are more vulnerable to lower sample sizes than those assemblies defined through precisely or broadly, respectively, synchronous firing (types I and V). The likely\u00a0reason for this is that the binning procedure itself introduces some noise (as spikes may fall randomly into one or the other of two neighboring bins), which affects sequential assemblies more than simultaneous assemblies (for which, in the case of our simulations, it is guaranteed that aligned groups of spikes end up in the same bin). Considering just assembly types I and V, also note that assemblies defined by broader simultaneous rate increases are detected much more easily than those characterized by precise spiking. This is not surprising given that in absolute terms each incidence of an assembly of type V contributes much more spikes to the whole process than an assembly of type I, thus in turn causing assemblies of type V being detected across a much larger range of bin widths than assemblies of type I (cf. Figure 1C). Perhaps most importantly, however, as studied in Figure 2C\u2013D, our statistical framework is quite conservative and rarely produces false positives in the simulated scenarios, with a false discovery rate (fraction of units incorrectly assigned to an assembly) mostly remaining below or around 0.5% across all conditions examined.\n\n### Experimental procedures\n\nThe in-vivo recordings from the rat (Long-Evans) anterior cingulate cortex (ACC) were taken from two studies by Hyman et al. (Hyman et al., 2012; Hyman et al., 2013). In both studies, multiple single unit recordings were performed with a set of 16 simultaneously implanted tetrodes, with an average of 35 and 30 isolated (and artifact-free) units per recording session for the environmental exploration and delayed alternation task, respectively (with n=9 and n=11 sessions in total). In the environmental exploration task studied in Hyman et al. (Hyman et al., 2012), rats were offloaded in a novel environment which they were free to explore, with one to several transfers between two different environments. Each environment was analyzed separately by concatenating the spike trains associated with the repeated exposures to the same environment. The delayed alternation task studied in Hyman et al. (Hyman et al., 2013), a classical working memory paradigm, took place in a Skinner-box with two levers which the animals had to press in alternating fashion. A delay of 10 s was introduced between each lever press and a nose poke the animals had to perform on the side opposite to the levers before continuing with the next lever press.\n\nHippocampal and entorhinal cortex (EC) recordings on the exploration task, performed simultaneously within these two areas, were borrowed from (Mizuseki et al., 2013). Recordings were collected from three Long-Evans rats implanted with multi-shank (32 or 64 sites) silicon probes lowered into the CA1 hippocampal pyramidal layer and into layers 3\u20135 of entorhinal cortex. In this task (Mizuseki et al., 2009), rats were free to explore a 180 cm x 180 cm arena with water or Froot Loop items randomly dispersed throughout. Here we analyzed n=28 sessions (selecting always the longest session from each day) with on average 22 (CA1) and 19 (EC) artefact-free units per session, respectively. CA1 and EC recordings on the delayed alternation task come from (Pastalkova et al., 2008), who used the same animals employed on the exploration task (Mizuseki et al., 2009), from which we took n=23 sessions (again selecting the longest from each day) with on average 28 (CA1) and 22 (EC) isolated and reasonably artefact-free units. Animals had to alternate between the two arms of a figure-eight shaped maze to obtain reward at water spouts located at the rear of the arms. A delay of 10 or 20 s, respectively, spent in a running wheel, was inserted between trials for the two animals tested. For all analyses, all units with average firing rates below 0.2\u2009Hz were excluded. Please see original publications for further details on electrode placement, unit separation, and experimental design. CA1 and EC datasets are publicly available at www.crcns.org; ACC datasets will be made available at https://www.zi-mannheim.de/en/research/departments-research-groups-institutes/theor-neuroscience-e/information-computational-neuroscience-e.html.\n",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "588db9ab-8655-4f4d-aa7a-c12105aace5b",
+      "submission_id": "b57b610a-5f6f-4edd-a773-a76f31fac452",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marc Howard, Boston University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19428.022](https://doi.org/10.7554/eLife.19428.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell assemblies at multiple time scales with arbitrary lag distributions\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Marc Howard (Reviewer #1), is a member of our Board of Reviewing Editors and the evaluation has been overseen by David Van Essen as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Peter K\u00f6nig (Reviewer #2); Bruno Averbeck (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nNoting the many definitions of \u201ccell assembly\u201d the paper introduces a novel technique for measuring coordinated motifs of sequential firing. This method is computationally efficient and, because it makes minimal assumptions about scale, could be widely used to clarify the notion of cell assemblies, a much-needed theoretical development. Results from different brain regions in different behavioral tasks show a range of time scales suggesting that these reflect a diversity of mechanisms supporting sequences of firing patterns.\n\nEssential revisions:\n\n1) It is essential that a revision better discuss the filtering properties implicit in the method and address a specific concern:\n\nThe binning is equivalent to a boxcar average, i.e. temporal filtering with a rectangular window. I could say no window, see Press, W. H., & Teukolsky, S. A. (1988). Numerical recipes in C. Cambridge Figure 2.4.2. This implies that different frequencies are mapped to very different frequency bins. As here no Fourier analysis is performed, in itself it is not that bad. However, the comparison with the time reversed pattern is for different patterns at different distance. Thus, the implicit filtering is suddenly very important. At the very least, the sensitivity varies for patterns of different distance. Moreover, for the important case of perfect 0-lag synchrony, the choice of reference is important. Too close by might lead to a spill over, too far away might allow non stationarities to creep in.\n\nThis problem might be addressed either by a convolution with e.g. a Gaussian kernel before binning, in order to create well defined and better behaved temporal properties. And/or, a standard and uniform across tests distance to the reference bin could help. Alternatively, I'm open to very good arguments, why it is not a problem after all jointly with an investigation of sensitivity.\n\n2) A revision should better discuss the generality of the method. The method is advertised as a unified tool for all cases. Although I like it a lot, there might be a few gaps. Consider an avalanche model, where the avalanche might propagate in either one of the other direction. This creates a pair of above chance co-activation with reverse sequence, the present method is blind to. Such limitations have to be better discussed.\n",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e17d3678-ee46-4f4c-8947-ab19be2706fd",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C1",
+      "claim": "Hebb's idea of a cell assembly as the fundamental unit of neural information processing has dominated neuroscience for the past 60 years.",
+      "claim_type": "EXPLICIT",
+      "source": "Hebb's idea of a cell assembly as the fundamental unit of neural information processing has dominated neuroscience like no other theoretical concept within the past 60 years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the historical influence of Hebb's concept in neuroscience, drawing from established scientific knowledge and consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "60b7c421-ce80-442e-bd86-54e996583bfa",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C2",
+      "claim": "Progress in cell assembly research is hampered by the lack of statistical tools that would enable extraction of assemblies with arbitrary constellations of time lags and at multiple temporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet progress in this area is hampered by the lack of statistical tools that would enable to extract assemblies with arbitrary constellations of time lags, and at multiple temporal scales, partly due to the severe computational burden.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' assessment of the current state of the field and inference about methodological limitations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "841bca7a-4214-466d-a36c-4deb257606e7",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C3",
+      "claim": "The presented methodology detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present such a unifying methodological and conceptual framework which detects assembly structure at many different time scales, levels of precision, and with arbitrary internal organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the capabilities of the methodology developed in the manuscript, supported by the data and analyses presented throughout the paper.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "82297675-36dd-47fe-88d6-5e21e91c5c7d",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C4",
+      "claim": "There is no universal cortical coding scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this methodology to multiple single unit recordings from various cortical areas, we find that there is no universal cortical coding scheme, but that assembly structure and precision significantly depends on the brain area recorded and ongoing task demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from multiple cortical areas showing different assembly structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "3b93b55b-e494-4659-a474-1aa449835538",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C5",
+      "claim": "Assembly structure and precision significantly depends on the brain area recorded and ongoing task demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying this methodology to multiple single unit recordings from various cortical areas, we find that there is no universal cortical coding scheme, but that assembly structure and precision significantly depends on the brain area recorded and ongoing task demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing different brain areas and task conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "0fd84ae2-a9a6-41c0-8764-8fc4007923fa",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C6",
+      "claim": "The term 'cell assembly' lacks a stringent and universally accepted definition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the term lacks a stringent and universally accepted definition, and has been used to denote anything from the precise zero-phase-lag spike synchronization in a defined subset of neurons (Abeles, 1991; Singer and Gray, 1995; Roelfsema et al., 1997; Diesmann et al., 1999; Harris et al., 2003) to temporally coherent changes in average firing rates on larger time scales (Goldman-Rakic, 1995; Durstewitz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to various studies that have used the term differently.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "f89c7047-1afb-4ba0-8da5-161878aa9d1f",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C7",
+      "claim": "Precise millisecond coordination of spike times for a 'volley' of activity has been reported in relation to specific perceptual or motor events.",
+      "claim_type": "EXPLICIT",
+      "source": "Often the term is meant to imply precise millisecond coordination of spike times for a 'volley' of activity which repeats at regular or irregular intervals in relation to specific perceptual or motor events (Figure 1A, I; e.g. [Riehle et al., 1997; Roelfsema et al., 1997; Harris et al., 2003; Fries et al., 2007]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "f804b65d-09ba-412d-b6f4-36cc65618327",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C8",
+      "claim": "Precise sequential patterns of spiking times have been reported in the hippocampal formation where they may correspond to sequential orders of places.",
+      "claim_type": "EXPLICIT",
+      "source": "Precise sequential patterns of spiking times (i.e., with time lags \u2260 0) have been reported as well (Figure 1A, II), most commonly in the hippocampal formation where they may correspond to sequential orders of places (Skaggs and McNaughton, 1996; Buzs\u00e1ki and Draguhn, 2004), in the visual cortex as a consequence of different activation levels (K\u00f6nig et al., 1995), or as possibly generated through synfire-chain-like structures (Abeles, 1991; Diesmann et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous studies and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "592cfc31-38b9-4c84-bddf-716f0de8b5ed",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C9",
+      "claim": "Temporally ordered transitions among coherent firing rate patterns across sets of simultaneously recorded neurons have been described in different cognitive tasks and systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Such temporally ordered transitions among coherent firing rate patterns across sets of simultaneously recorded neurons have been described in different cognitive tasks and systems (Seidemann et al., 1996; Beggs and Plenz, 2003; Jones et al., 2007; Lapish et al., 2008; Durstewitz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "9b7b9552-e349-4f3c-bd8e-be0f58bb7ab5",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C10",
+      "claim": "Sets of neurons jointly increasing their average rates for some period of time during persistent activity in a working memory task have been linked to the cell assembly idea.",
+      "claim_type": "EXPLICIT",
+      "source": "At a still broader temporal scale, sets of neurons jointly increasing their average rates for some period of time (Figure 1A,V), as during persistent activity in a working memory task, have also been linked to the cell assembly idea (Durstewitz et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "49f49ddc-4405-4a8d-80a3-f56a4739d8a7",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C11",
+      "claim": "There is an ongoing controversy about the degree of temporal precision and coordination present in neural activity and its relevance for neural coding.",
+      "claim_type": "EXPLICIT",
+      "source": "There is indeed an ongoing, sometimes heated, controversy about the degree of temporal precision and coordination present in neural activity and its relevance for neural coding, partly based on empirical (Shadlen and Movshon, 1999; London et al., 2010), partly on statistical arguments (Mokeichev et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies representing different perspectives in the debate.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "01a7a997-a574-4f23-b79e-8a9b5cfe2479",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C12",
+      "claim": "The novel statistical approach treats the temporal scale, precision, and internal organization of coherent activity patterns as free parameters to be determined from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we develop a novel statistical approach for multi-cell recordings that treats the temporal scale, precision, and internal organization of coherent activity patterns as free parameters, to be determined from the data, and is thus open to a large family of possible assembly definitions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes a key feature of the methodology developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "cd997b65-8270-4d47-9c9a-0da2d196d0f5",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C13",
+      "claim": "The fast parametric test statistic automatically corrects for non-stationarity locally, avoiding computationally costly bootstrapping and sliding window analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "By deriving a fast parametric test statistic for pairwise dependencies that automatically corrects for non-stationarity locally, computationally costly bootstrapping and sliding window analyses are avoided, reducing the computational burden by factors of 100\u20131000 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the computational efficiency of the method, with specific performance metrics provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "d6fca502-93ca-4948-92c2-dc0ab58b3ac0",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C14",
+      "claim": "The computational burden is reduced by factors of 100\u20131000 compared to previous methods.",
+      "claim_type": "EXPLICIT",
+      "source": "By deriving a fast parametric test statistic for pairwise dependencies that automatically corrects for non-stationarity locally, computationally costly bootstrapping and sliding window analyses are avoided, reducing the computational burden by factors of 100\u20131000 (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides a quantitative comparison of computational efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "6f73e6ef-64ba-45b1-8ffd-928f2ae576f1",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C15",
+      "claim": "All five different types of assemblies were correctly identified with their associated temporal precision and lag distributions in simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly-assignment matrix in Figure 1B demonstrates that all five different types of assemblies (and only these, no false detections) were correctly identified with their associated temporal precision and lag distributions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the results shown in Figure 1B from simulated data with known ground truth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "dd644fc1-b9bc-48ee-bd10-d91e15b52102",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C16",
+      "claim": "No false detections occurred in the simulated data analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembly-assignment matrix in Figure 1B demonstrates that all five different types of assemblies (and only these, no false detections) were correctly identified with their associated temporal precision and lag distributions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the results shown in Figure 1B from simulated data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "9be969bf-39db-48ee-97e2-a060a69460aa",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C17",
+      "claim": "Assembly detection starts to significantly degrade only when the relative contribution to the spike series drops below approximately 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly detection starts to significantly degrade only when their relative contribution to the spike series drops below ~4% (Figure 2A), or when more than ~30% of all spike times were corrupted by spike sorting errors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by systematic testing shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "6ffac002-1bcc-47ab-9742-1102ae5f601f",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C18",
+      "claim": "Assembly detection starts to significantly degrade when more than approximately 30% of all spike times were corrupted by spike sorting errors.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly detection starts to significantly degrade only when their relative contribution to the spike series drops below ~4% (Figure 2A), or when more than ~30% of all spike times were corrupted by spike sorting errors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by systematic testing shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "5343b79f-382c-4f62-80c3-9ada97293ac7",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C19",
+      "claim": "The fraction of units falsely ascribed to any one assembly stayed uniformly low at about 0.5% across a whole range of sample sizes, spike assignment errors, and assembly structures tested.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, across a whole range of sample sizes, spike assignment errors, and assembly structures tested, the fraction of units falsely ascribed to any one assembly stayed uniformly low at about 0.5% (Figure 2C,D), indicating that our procedure is quite conservative and rarely returns false positives in the simulated scenarios.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the results shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "bb577fed-0207-476c-8c7f-5c3405e619c5",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C20",
+      "claim": "The procedure is quite conservative and rarely returns false positives in the simulated scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, across a whole range of sample sizes, spike assignment errors, and assembly structures tested, the fraction of units falsely ascribed to any one assembly stayed uniformly low at about 0.5% (Figure 2C,D), indicating that our procedure is quite conservative and rarely returns false positives in the simulated scenarios.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is an inference based on the low false positive rate shown in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "a3421452-150a-4ab2-96e8-6d58554d2b63",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C21",
+      "claim": "Detected assemblies in ACC span a large range of temporal precisions, from approximately 10 ms to about 1.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Detected assemblies span a large range of temporal precisions, from ~10 ms to about 1.5 s, with a variety of lag distributions, and are composed of about 10% (ACC) to 16% (CA1, EC) of the recorded neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of ACC data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "8f45f76a-1259-4d5e-a0c3-15c89c73ec96",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C22",
+      "claim": "Detected assemblies are composed of about 10% (ACC) to 16% (CA1, EC) of the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Detected assemblies span a large range of temporal precisions, from ~10 ms to about 1.5 s, with a variety of lag distributions, and are composed of about 10% (ACC) to 16% (CA1, EC) of the recorded neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides quantitative data about the proportion of neurons involved in assemblies across different brain regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "affed9ff-6aa5-4b4d-91f1-8fd6f444aef3",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C23",
+      "claim": "Many of the experimentally recorded assemblies partially overlap (i.e., share units).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that different from the clear-cut hypothetical examples (Figure 1B) which were strictly disjoint by design, many of the experimentally recorded assemblies partially overlap (i.e., share units; see also Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on observations from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "a86680a8-78eb-43b5-8ac6-0a99744eb2c7",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C24",
+      "claim": "Many of the unraveled assemblies were highly selective for specific task events.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, many of the unraveled assemblies were highly selective for specific task events as illustrated in Figure 3C, Figure 3\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "fac5123e-1501-4db6-b639-97636ba7b918",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C25",
+      "claim": "The joint (\u0394,l)-distribution changes dramatically as the animals move from unstructured environmental exploration to a highly structured delayed alternation task.",
+      "claim_type": "EXPLICIT",
+      "source": "Several features are noteworthy here: First, the joint (\u0394,l)-distribution changes dramatically as the animals move from unstructured, completely self-paced, little demanding environmental exploration (Figure 4A, left column) to a highly structured, demanding delayed alternation task (Figure 4A, right column).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the comparison shown in Figure 4A between different task conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "e16bdb10-e6bf-4440-802c-8e22ee7158b8",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C26",
+      "claim": "During the delayed alternation task, a much larger number and richer repertoire of assembly structures turned out compared to environmental exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "During the latter, a much larger number and richer repertoire of assembly structures turned out, as also indicated by the 'marginal' distributions of significant unit pairs across time scales \u0394 in Figure 4B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B comparing task conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "5c3928b8-108e-41b7-b780-42aebfa80fc2",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C27",
+      "claim": "Changes in ACC and CA1 assembly structures were mostly focused on the larger timescales when moving from exploration to delayed alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, secondly, while these changes in ACC and CA1 were mostly focused on the larger timescales, in EC they appeared to run across all timescales, yet were overall less dramatic than in CA1 (Figure 4A, bottom; Figure 4B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "1f2c082c-1064-467b-8cd6-bb37806912e5",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C28",
+      "claim": "In EC, changes in assembly structures appeared to run across all timescales but were overall less dramatic than in CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, secondly, while these changes in ACC and CA1 were mostly focused on the larger timescales, in EC they appeared to run across all timescales, yet were overall less dramatic than in CA1 (Figure 4A, bottom; Figure 4B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "38933e4d-22c7-4d5a-974f-3f172042153d",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C29",
+      "claim": "EC mainly harbors fine temporal structure with a precision of about 15\u201350 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, assemblies remarkably differ among the three brain regions in the range of temporal scales they occupy: While EC mainly harbors fine temporal structure with a precision of about 15\u201350 ms, in ACC broad rate change patterns in the 120\u2013700 ms range appear to dominate (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "06157fe2-f59e-41f1-a64e-0094e65c0d12",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C30",
+      "claim": "In ACC, broad rate change patterns in the 120\u2013700 ms range appear to dominate.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, assemblies remarkably differ among the three brain regions in the range of temporal scales they occupy: While EC mainly harbors fine temporal structure with a precision of about 15\u201350 ms, in ACC broad rate change patterns in the 120\u2013700 ms range appear to dominate (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "319e526f-12ab-42e8-95a8-269363c6aab6",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C31",
+      "claim": "CA1 expresses a wide spectrum of temporal scales from about 30\u20131500 ms, of which the broader scales (>100 ms) only surface during delayed alternation.",
+      "claim_type": "EXPLICIT",
+      "source": "CA1, in contrast, expresses both temporal scales, or in fact a wide spectrum from about 30\u20131500 ms, of which the broader scales (>100 ms) only surface during delayed alternation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the analysis of CA1 data across different task conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "f984708d-240f-48a0-83ca-2af5b4ea2453",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C32",
+      "claim": "A much larger number of units engaged in any one assembly in CA1 (>90%) than in ACC (30\u201350%).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, a much larger number of units engaged in any one assembly in CA1 (>90%) than in ACC (30\u201350%; Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim provides quantitative comparison of assembly participation across brain regions, supported by Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "be76ed5d-0f08-4a34-8ac8-67276beefb50",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C33",
+      "claim": "The temporal composition and precision of assembly activity strongly depends on both the brain area and the behavioral setting.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that the temporal composition and precision of assembly activity strongly depends on both the brain area and the behavioral setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the data comparing different brain areas and behavioral conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "53a14251-eac5-4a7d-b75b-725a5575e79f",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C34",
+      "claim": "Some of the temporally more precise 30\u201350 ms assemblies in CA1 were found to code for specific place fields in the rat's environment.",
+      "claim_type": "EXPLICIT",
+      "source": "On closer inspection, some of the temporally more precise 30\u201350 ms assemblies in CA1 were found to code for specific place fields ('place assemblies') in the rat's environment (Figure 5A, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5A and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "a8d62414-7576-436d-ba7d-92787d8880e9",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C35",
+      "claim": "The temporally more precise assemblies in CA1 mainly consisted of synchronous (lag-0) spiking units.",
+      "claim_type": "EXPLICIT",
+      "source": "These assemblies mainly consisted of synchronous (lag-0) spiking units (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "04ca0a2d-4a33-4f5d-a77c-3affdf747071",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C36",
+      "claim": "The more broadly tuned assemblies in CA1 tended to code for temporally extended events which often appeared to have a specific behavioral meaning in the task context.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the more broadly tuned assemblies in CA1 tended to code for temporally extended events which often appeared to have a specific behavioral meaning in the task context: For instance, these assemblies may become active during the reward event irrespective of its spatial location (Figure 5B), or for the whole correct choice path after a behavioral decision was made (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5B and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "f0ee49a5-dec3-403a-b4e7-3b636ea7bee6",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C37",
+      "claim": "The temporally broader assemblies in CA1 commonly followed a more sequential (lag\u22600) layout.",
+      "claim_type": "EXPLICIT",
+      "source": "These temporally broader assemblies commonly also followed a more sequential (lag\u22600) layout (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "6661a13b-ec5d-47b0-875d-648f90311b80",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C38",
+      "claim": "The single cells constituting CA1 assemblies did not necessarily share the same place preference with their 'parent' assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the single cells constituting CA1 assemblies did not necessarily share the same place preference with their 'parent' assembly (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "6974b86c-d00a-4fa5-b34d-88398133a35a",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C39",
+      "claim": "Broader assemblies in ACC were tuned to specific task phases and events (lever presses, delays, stimulus conditions) and reflected the task's sequential structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar as in CA1, broader assemblies in ACC were tuned to specific task phases and events (lever presses, delays, stimulus conditions) and reflected the task's sequential structure (Figure 3C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the data shown in Figure 3C and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "3016d3d0-4da4-4f53-9b2d-e0ee71b44aee",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C41",
+      "claim": "The temporal structure and precision of the revealed assemblies were closely related to the computations performed by different brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Illustrating this methodology on multiple single-unit recordings from ACC, CA1, and EC, it appeared as if the temporal structure and precision of the revealed assemblies were closely related to the computations performed by these brain areas: While the CA1 region processes precise spatial (O'Keeffee and Nadel, 1978; Harris et al., 2003; Diba and Buzs\u00e1ki, 2007) and temporal (Eichenbaum, 2014) environmental structure, the ACC is much less concerned with finely-granulated details of the spatial world (Hyman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data and supported by citations to previous work on the functions of these brain areas.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "595c6c60-e931-4eae-b598-c63edc04c309",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C42",
+      "claim": "The CA1 region processes precise spatial and temporal environmental structure.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CA1 region processes precise spatial (O'Keeffee and Nadel, 1978; Harris et al., 2003; Diba and Buzs\u00e1ki, 2007) and temporal (Eichenbaum, 2014) environmental structure, the ACC is much less concerned with finely-granulated details of the spatial world (Hyman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on CA1 function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "cb84766c-7877-4cba-adc5-9f62c2bab368",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C43",
+      "claim": "The ACC is much less concerned with finely-granulated details of the spatial world.",
+      "claim_type": "EXPLICIT",
+      "source": "While the CA1 region processes precise spatial (O'Keeffee and Nadel, 1978; Harris et al., 2003; Diba and Buzs\u00e1ki, 2007) and temporal (Eichenbaum, 2014) environmental structure, the ACC is much less concerned with finely-granulated details of the spatial world (Hyman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on ACC function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "d57e0a71-8a34-4618-abc8-c8e31bb3d756",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C44",
+      "claim": "Activity in ACC reflects behavioral organization, behavioral monitoring, overall context, and task structure, processes which typically unfold on much slower temporal scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, activity in ACC reflects behavioral organization, behavioral monitoring, overall context, and task structure, processes which typically unfold on much slower temporal scales (Lapish et al., 2008; Hyman et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on ACC function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "17782adf-867f-436c-b9fb-d61f6430293c",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C45",
+      "claim": "The hippocampal CA1 region has been reported to represent aspects of higher-order decision making, like paths to a defined goal state or choice outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, in addition to spatial coding, the hippocampal CA1 region has also been reported to represent aspects of higher-order decision making, like paths to a defined goal state or choice outcomes (Lisman and Redish, 2009; Buzs\u00e1ki, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on CA1 function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "760b667b-15d9-4392-94ba-5a75cfba7486",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C46",
+      "claim": "Sequential organization of assemblies at broader time scales was much more often observed in the delayed alternation task than in environmental exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, sequential organization of assemblies at broader time scales was much more often observed in the latter than in the former task context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the data comparing different task conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "7e5090f4-7011-4044-909b-9f791ff6bc51",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C47",
+      "claim": "Most previous statistical procedures for detecting assemblies adhere to one or the other theoretical conceptualization of a cell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous other statistical procedures for detecting assemblies or sequential patterns have been proposed previously (Gr\u00fcn et al., 2002a; Gr\u00fcn et al., 2002b; Pipa et al., 2008; Torre et al., 2016a), but most of these adhere to one or the other theoretical conceptualization of a cell assembly (cf. Figure 1A), or become computationally impractical for larger cell numbers or multiple lags (see Appendix for further discussion of both more recent and more 'traditional', cross-correlation-based, approaches).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citations to previous methods and comparison with the current approach.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "fd97ad26-d043-4f54-89b4-e3e01e69b0f5",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C48",
+      "claim": "None of the previous methods combine all of the features presented in this work.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, none of these, to our knowledge, combines all of the features presented here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' knowledge of the literature and comparison with existing methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "c43105ea-5092-45a4-aa8f-17a2df03f170",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C49",
+      "claim": "There may be not just one type of cortical assembly code, but the temporal precision, scale, and sequential composition with which cortical neurons organize into coherent patterns strongly depends on the brain area and task context investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that there may be not just one type of cortical assembly code, but that the temporal precision, scale, and sequential composition with which cortical neurons organize into coherent patterns strongly depends on the brain area and task context investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a conclusion based on the experimental data from multiple brain areas and task conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "fd061016-886a-477b-9a1c-9c328fef7e96",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C50",
+      "claim": "The methods are not specific to the neuroscientific domain, but could be used more widely in other scientific areas to detect structure at multiple temporal scales in multivariate event count series.",
+      "claim_type": "EXPLICIT",
+      "source": "We further note that our methods are not specific to the neuroscientific domain, but could be used more widely in other scientific areas to detect structure at multiple temporal scales in multivariate event count series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential broader applicability of the methods.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "9f491afe-cbbb-4494-a522-07107aa9d67a",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C55",
+      "claim": "The agglomerative scheme is a fast heuristic proxy for evaluation of all possible unit and lag combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "The agglomerative scheme described above is a fast heuristic proxy, similar in spirit to the apriori algorithm in machine learning (Hastie et al., 2009; Picado-Mui\u00f1o et al., 2013), for evaluation of all possible unit and lag combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the nature of the algorithm with reference to similar approaches in machine learning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "2fc16e6d-3c6c-4c61-9177-d0357c25f261",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C58",
+      "claim": "In-vivo recordings from the rat anterior cingulate cortex were taken from two studies by Hyman et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The in-vivo recordings from the rat (Long-Evans) anterior cingulate cortex (ACC) were taken from two studies by Hyman et al. (Hyman et al., 2012; Hyman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of experimental data used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "23c847b0-b398-40df-a585-eb8fe17c7d02",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C59",
+      "claim": "Multiple single unit recordings were performed with a set of 16 simultaneously implanted tetrodes in ACC, with an average of 35 and 30 isolated units per recording session for the environmental exploration and delayed alternation task, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In both studies, multiple single unit recordings were performed with a set of 16 simultaneously implanted tetrodes, with an average of 35 and 30 isolated (and artifact-free) units per recording session for the environmental exploration and delayed alternation task, respectively (with n=9 and n=11 sessions in total).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific details about the experimental recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "600f7dd8-57eb-400c-95f2-55006277be8a",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C60",
+      "claim": "Hippocampal and entorhinal cortex recordings on the exploration task were borrowed from Mizuseki et al. (2013).",
+      "claim_type": "EXPLICIT",
+      "source": "Hippocampal and entorhinal cortex (EC) recordings on the exploration task, performed simultaneously within these two areas, were borrowed from (Mizuseki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of experimental data used in the study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "4c782c5b-039a-49aa-a0ea-9d0b59159375",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "claim_id": "C61",
+      "claim": "Recordings were collected from three Long-Evans rats implanted with multi-shank (32 or 64 sites) silicon probes lowered into the CA1 hippocampal pyramidal layer and into layers 3\u20135 of entorhinal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were collected from three Long-Evans rats implanted with multi-shank (32 or 64 sites) silicon probes lowered into the CA1 hippocampal pyramidal layer and into layers 3\u20135 of entorhinal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides specific details about the experimental recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7b38602f-f252-4010-94c7-2e7430d8ebe7",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a novel statistical methodology that detects cell assembly structure at multiple temporal scales with arbitrary lag constellations, using a fast parametric test statistic that corrects for non-stationarity and reduces computational burden by factors of 100-1000 compared to previous methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C12, C13, and C14 describe the core methodological innovation. The methodology is extensively detailed in Materials and Methods with mathematical derivations (Equations 1-11), and computational efficiency is quantified. The approach is validated on simulated data (Figures 1, 2) and applied to real neural recordings (Figures 3-5).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "bca5df6b-3686-410a-9923-df8f6b4aca51",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The method successfully detected all five types of simulated assemblies with their correct temporal precision and lag distributions, with no false detections, and maintained low false positive rates (~0.5%) across varying sample sizes and spike sorting errors up to ~30%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C20 report validation results on simulated data with known ground truth. Figure 1B demonstrates perfect recovery of all five assembly types, and Figure 2 systematically characterizes performance degradation thresholds and false positive rates. The simulations provide controlled conditions for method validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "3b48982e-8b37-488a-af37-b371cced0969",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Assembly structure and temporal precision vary dramatically across brain areas (ACC, CA1, EC) and task conditions (exploration vs. delayed alternation), with EC showing fine temporal structure (15-50 ms), ACC showing broad rate patterns (120-700 ms), and CA1 expressing a wide spectrum (30-1500 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C25-C33 describe the main experimental findings comparing brain regions and tasks. Figure 4 provides comprehensive quantitative evidence showing distinct (\u0394,l)-distributions across areas and conditions. The data come from multiple recording sessions (n=9-28 sessions per condition) with 19-35 units per session, providing adequate sample sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "355bb908-6492-4a7c-96dc-50149fe77c46",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In CA1, temporally precise assemblies (30-50 ms) with synchronous spiking coded for specific place fields, while broader assemblies with sequential organization coded for temporally extended behavioral events, with individual neurons not necessarily sharing the same place preference as their parent assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 characterize CA1 assembly properties. Figure 5 and Figure 5\u2014figure supplement 1 provide spatial activity maps demonstrating place coding and behavioral event coding. Figure 4A shows the lag structure differences. The dissociation between single-unit and assembly place preferences is an interesting observation supported by the supplementary figure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "483db06e-fcf6-48af-902b-7f8eadb9649f",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Detected assemblies in ACC spanned temporal precisions from ~10 ms to 1.5 s, comprised 10-16% of recorded neurons, often overlapped in membership, and showed selectivity for specific task events including lever presses, delays, and stimulus conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C39 describe ACC assembly characteristics. Figure 3A shows the assembly-assignment matrix with temporal scales and unit participation. Figure 3C and Figure 3\u2014figure supplement 1 demonstrate task event selectivity with statistical testing (paired t-tests, Bonferroni-corrected). The overlap observation is noted as differing from simulated disjoint assemblies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The temporal structure and precision of assemblies are closely related to area-specific computations, with CA1 processing precise spatial/temporal structure, ACC processing behavioral organization on slower timescales, and sequential assemblies appearing more frequently during structured tasks than exploration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 provide functional interpretation of the findings. While C41 is an inference, it is well-supported by the data (Figures 4-5) and grounded in established literature about these brain regions (C42-C45 cite appropriate prior work). The interpretation linking assembly properties to known functional roles is reasonable, though alternative explanations are not extensively discussed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "b9dae8ab-bcbc-4605-a00b-c3b90d251d93",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Previous assembly detection methods adhere to specific theoretical conceptualizations or become computationally impractical, and the current findings suggest no universal cortical assembly code but rather area- and task-dependent temporal organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 position the work relative to prior methods and synthesize the main conclusion. C47-C48 are supported by citations and comparison with existing approaches (discussed in Appendix). C49 integrates the experimental findings into a broader conclusion about cortical coding diversity, which is well-supported by the data presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The field of cell assembly research lacks a universal definition and statistical tools for extracting assemblies with arbitrary lag constellations at multiple scales, with ongoing controversy about temporal precision in neural coding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C6-C11 establish the background and motivation. These are well-supported by extensive citations to prior work showing diverse uses of the term 'cell assembly' and different experimental observations. The controversy claim (C11) is documented with appropriate citations representing different perspectives.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "f5056172-060c-4309-afc9-8524fc030939",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The agglomerative assembly formation scheme is a fast heuristic proxy for evaluating all possible unit and lag combinations, similar to the apriori algorithm in machine learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 describes the algorithmic approach. This is supported by detailed pseudo-code in Materials and Methods, mathematical derivations, and comparison to established machine learning algorithms. The heuristic nature is acknowledged, including potential limitations (may miss configurations with non-significant subgroups).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "d3d3fc50-8691-4dd3-b851-eab256fc00e9",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Experimental data were obtained from previously published studies: ACC recordings from Hyman et al. (2012, 2013) with 16 tetrodes averaging 30-35 units per session, and hippocampal/EC recordings from Mizuseki et al. (2013) and Pastalkova et al. (2008) with multi-shank silicon probes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 describe data sources and recording methods. These are factual statements about experimental procedures with appropriate citations. The use of previously published, publicly available datasets (CA1/EC data at crcns.org) enhances reproducibility, though this also means the authors did not control all aspects of data collection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "3b6c6f27-1c67-4e6a-9495-57d8c8166e91",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Hebb's cell assembly concept has dominated neuroscience for 60 years as the fundamental unit of neural information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a historical statement about the influence of Hebb's concept. This is well-established in neuroscience and represents general knowledge, though the claim of 'domination like no other theoretical concept' is somewhat hyperbolic and difficult to quantify objectively.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    },
+    {
+      "id": "d575402a-c365-434e-ba87-0eeb9ce14ff1",
+      "content_id": "3776520c-10ed-4a8c-97bf-9102ef74752d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The methods could be applied more broadly to detect structure at multiple temporal scales in multivariate event count series in other scientific domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C50 is speculative about potential applications beyond neuroscience. While the mathematical framework is general, no validation in other domains is provided. This is clearly marked as a note about potential future applications rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:26:10.412449Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "841bca7a-4214-466d-a36c-4deb257606e7",
+      "result_id": "7b38602f-f252-4010-94c7-2e7430d8ebe7"
+    },
+    {
+      "claim_id": "01a7a997-a574-4f23-b79e-8a9b5cfe2479",
+      "result_id": "7b38602f-f252-4010-94c7-2e7430d8ebe7"
+    },
+    {
+      "claim_id": "cd997b65-8270-4d47-9c9a-0da2d196d0f5",
+      "result_id": "7b38602f-f252-4010-94c7-2e7430d8ebe7"
+    },
+    {
+      "claim_id": "d6fca502-93ca-4948-92c2-dc0ab58b3ac0",
+      "result_id": "7b38602f-f252-4010-94c7-2e7430d8ebe7"
+    },
+    {
+      "claim_id": "6f73e6ef-64ba-45b1-8ffd-928f2ae576f1",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "dd644fc1-b9bc-48ee-bd10-d91e15b52102",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "9be969bf-39db-48ee-97e2-a060a69460aa",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "6ffac002-1bcc-47ab-9742-1102ae5f601f",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "5343b79f-382c-4f62-80c3-9ada97293ac7",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "bb577fed-0207-476c-8c7f-5c3405e619c5",
+      "result_id": "bca5df6b-3686-410a-9923-df8f6b4aca51"
+    },
+    {
+      "claim_id": "82297675-36dd-47fe-88d6-5e21e91c5c7d",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "3b93b55b-e494-4659-a474-1aa449835538",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "fac5123e-1501-4db6-b639-97636ba7b918",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "e16bdb10-e6bf-4440-802c-8e22ee7158b8",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "5c3928b8-108e-41b7-b780-42aebfa80fc2",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "1f2c082c-1064-467b-8cd6-bb37806912e5",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "38933e4d-22c7-4d5a-974f-3f172042153d",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "06157fe2-f59e-41f1-a64e-0094e65c0d12",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "319e526f-12ab-42e8-95a8-269363c6aab6",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "f984708d-240f-48a0-83ca-2af5b4ea2453",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "be76ed5d-0f08-4a34-8ac8-67276beefb50",
+      "result_id": "3b48982e-8b37-488a-af37-b371cced0969"
+    },
+    {
+      "claim_id": "53a14251-eac5-4a7d-b75b-725a5575e79f",
+      "result_id": "355bb908-6492-4a7c-96dc-50149fe77c46"
+    },
+    {
+      "claim_id": "a8d62414-7576-436d-ba7d-92787d8880e9",
+      "result_id": "355bb908-6492-4a7c-96dc-50149fe77c46"
+    },
+    {
+      "claim_id": "04ca0a2d-4a33-4f5d-a77c-3affdf747071",
+      "result_id": "355bb908-6492-4a7c-96dc-50149fe77c46"
+    },
+    {
+      "claim_id": "f0ee49a5-dec3-403a-b4e7-3b636ea7bee6",
+      "result_id": "355bb908-6492-4a7c-96dc-50149fe77c46"
+    },
+    {
+      "claim_id": "6661a13b-ec5d-47b0-875d-648f90311b80",
+      "result_id": "355bb908-6492-4a7c-96dc-50149fe77c46"
+    },
+    {
+      "claim_id": "a3421452-150a-4ab2-96e8-6d58554d2b63",
+      "result_id": "483db06e-fcf6-48af-902b-7f8eadb9649f"
+    },
+    {
+      "claim_id": "8f45f76a-1259-4d5e-a0c3-15c89c73ec96",
+      "result_id": "483db06e-fcf6-48af-902b-7f8eadb9649f"
+    },
+    {
+      "claim_id": "affed9ff-6aa5-4b4d-91f1-8fd6f444aef3",
+      "result_id": "483db06e-fcf6-48af-902b-7f8eadb9649f"
+    },
+    {
+      "claim_id": "a86680a8-78eb-43b5-8ac6-0a99744eb2c7",
+      "result_id": "483db06e-fcf6-48af-902b-7f8eadb9649f"
+    },
+    {
+      "claim_id": "6974b86c-d00a-4fa5-b34d-88398133a35a",
+      "result_id": "483db06e-fcf6-48af-902b-7f8eadb9649f"
+    },
+    {
+      "claim_id": "3016d3d0-4da4-4f53-9b2d-e0ee71b44aee",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "595c6c60-e931-4eae-b598-c63edc04c309",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "cb84766c-7877-4cba-adc5-9f62c2bab368",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "d57e0a71-8a34-4618-abc8-c8e31bb3d756",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "17782adf-867f-436c-b9fb-d61f6430293c",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "760b667b-15d9-4392-94ba-5a75cfba7486",
+      "result_id": "33de6aaa-ea67-4fdb-94b6-6eb3e96a0939"
+    },
+    {
+      "claim_id": "7e5090f4-7011-4044-909b-9f791ff6bc51",
+      "result_id": "b9dae8ab-bcbc-4605-a00b-c3b90d251d93"
+    },
+    {
+      "claim_id": "fd97ad26-d043-4f54-89b4-e3e01e69b0f5",
+      "result_id": "b9dae8ab-bcbc-4605-a00b-c3b90d251d93"
+    },
+    {
+      "claim_id": "c43105ea-5092-45a4-aa8f-17a2df03f170",
+      "result_id": "b9dae8ab-bcbc-4605-a00b-c3b90d251d93"
+    },
+    {
+      "claim_id": "60b7c421-ce80-442e-bd86-54e996583bfa",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "0fd84ae2-a9a6-41c0-8764-8fc4007923fa",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "f89c7047-1afb-4ba0-8da5-161878aa9d1f",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "f804b65d-09ba-412d-b6f4-36cc65618327",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "592cfc31-38b9-4c84-bddf-716f0de8b5ed",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "9b7b9552-e349-4f3c-bd8e-be0f58bb7ab5",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "49f49ddc-4405-4a8d-80a3-f56a4739d8a7",
+      "result_id": "9caba9f6-aafc-48b0-adb8-2125e7bc0f4c"
+    },
+    {
+      "claim_id": "9f491afe-cbbb-4494-a522-07107aa9d67a",
+      "result_id": "f5056172-060c-4309-afc9-8524fc030939"
+    },
+    {
+      "claim_id": "2fc16e6d-3c6c-4c61-9177-d0357c25f261",
+      "result_id": "d3d3fc50-8691-4dd3-b851-eab256fc00e9"
+    },
+    {
+      "claim_id": "23c847b0-b398-40df-a585-eb8fe17c7d02",
+      "result_id": "d3d3fc50-8691-4dd3-b851-eab256fc00e9"
+    },
+    {
+      "claim_id": "600f7dd8-57eb-400c-95f2-55006277be8a",
+      "result_id": "d3d3fc50-8691-4dd3-b851-eab256fc00e9"
+    },
+    {
+      "claim_id": "4c782c5b-039a-49aa-a0ea-9d0b59159375",
+      "result_id": "d3d3fc50-8691-4dd3-b851-eab256fc00e9"
+    },
+    {
+      "claim_id": "e17d3678-ee46-4f4c-8947-ab19be2706fd",
+      "result_id": "3b6c6f27-1c67-4e6a-9495-57d8c8166e91"
+    },
+    {
+      "claim_id": "fd061016-886a-477b-9a1c-9c328fef7e96",
+      "result_id": "d575402a-c365-434e-ba87-0eeb9ce14ff1"
+    }
+  ],
+  "comparisons": []
+}

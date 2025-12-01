@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The MCMV protein m18 is necessary for RAE-1 induction during infection. Deletion mapping identified m18 (and possibly m19) within the m01-m22 region as required for Raet1 expression, and m18 expression in trans rescued Raet1 induction in cells infected with mutant viruses lacking m18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 provide systematic deletion mapping data (Figures 1A-F) demonstrating that m18 is necessary for RAE-1 induction. The data show progressive narrowing from the m1-22 region to individual ORFs, with rescue experiments confirming m18 specificity. The experimental design includes appropriate controls (IE-1 expression) to rule out general infection defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C45"
+    ],
+    "result": "The MCMV protein m18 is sufficient to induce RAE-1 expression and trigger NKG2D-dependent NK cell killing. Transfection of m18 alone induces both Raet1 mRNA and RAE-1 protein, and m18-expressing cells are lysed by NK cells in an NKG2D-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C45 demonstrate sufficiency through transfection experiments (Figure 2A-C) showing m18 expression alone induces RAE-1 at both transcript and protein levels, and functional NK killing assays confirm NKG2D-dependence. Tagged m18 constructs retain activity, validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The m18 protein is expressed early during infection (2 hours post-infection), appears at ~180 kDa (suggesting post-translational modification), and localizes primarily to the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 characterize m18 expression and localization using semi-quantitative PCR (Figure 2D), western blot (Figure 2E), and confocal microscopy (Figure 2F). The discrepancy between predicted (110 kDa) and observed (180 kDa) molecular weight reasonably suggests post-translational modification, though the specific modifications are not identified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "m18 activates the Raet1e promoter through a specific response element (m18RE) located between -95 and -85 bp from the transcription start site, which contains an Sp transcription factor binding site. E2F sites are dispensable for m18-mediated activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 use luciferase reporter assays with serial deletions and site-directed mutagenesis (Figures 3A-D) to map the m18RE. The data systematically narrow the critical region and identify the Sp binding site through computational analysis and functional validation. The E2F independence distinguishes this from proliferation-induced RAE-1 expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Sp3 transcription factor constitutively occupies the Raet1e promoter and is required for m18-mediated RAE-1 induction. m18 does not alter Sp3 binding levels, but Sp3 activity is necessary for m18 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 combine EMSA competition assays (Figure 3E), ChIP (Figure 3F), dominant-negative experiments (Figure 3G), and pharmacological inhibition with mithramycin (Figure 3H) to demonstrate Sp3's constitutive binding and functional requirement. The data converge to show Sp3 is necessary but not sufficient, and m18 acts through a mechanism other than recruiting Sp3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "HDAC3 represses RAE-1 expression in healthy cells through Sp3-mediated recruitment to the promoter. Chemical HDAC inhibitors, particularly HDAC3-specific inhibitors, induce RAE-1 expression in an Sp-dependent manner through the same m18RE element.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 establish HDAC3's role using chemical inhibitor profiling (Figure 4C), promoter assays (Figure 4A), and mithramycin treatment (Figure 4B). The specificity for HDAC3 (and HDAC1/3) inhibitors over HDAC1 or HDAC6/8 inhibitors, combined with the requirement for the Sp binding site, provides strong evidence. The connection to prior work on ULBP-1 (C58-C59) strengthens the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "m18 expression increases histone H3 acetylation globally and specifically at the Raet1e promoter, without affecting total H3 levels. This effect is specific to m18 and not due to transfection or fluorescent protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 demonstrate increased acetylation using western blot (Figure 5A), immunofluorescence with single-cell analysis (Figures 5B-C), and ChIP (Figure 5D). Appropriate controls (RFP alone, H3 levels) rule out artifacts. The data directly support the hypothesis that m18 functions as an HDAC inhibitor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "m18 directly interacts with casein kinase II (CK2), a constitutively active kinase that phosphorylates and activates HDAC3 at serine 424. CK2 is involved in multiple cellular processes including DNA damage signaling, apoptosis, and cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 identify the m18-CK2 interaction through affinity purification mass spectrometry with Z-score analysis and confirm it by IP-Western blot (Figure 6A). Claims C79-C84 establish CK2's role in HDAC3 activation through citations to prior work. The interaction is specific (highest Z-score) and provides a mechanistic link between m18 and HDAC3 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "m18 inhibits HDAC3 activity by binding to CK2 and reducing HDAC3 phosphorylation at serine 424. Chemical CK2 inhibition induces RAE-1 expression, and m18 expression reduces HDAC3 S424 phosphorylation without affecting total HDAC3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 complete the mechanistic model using CK2 inhibitor TBBt (Figure 6B), immunofluorescence quantification of HDAC3 pS424 (Figures 6C-D), and appropriate controls. The data show m18 reduces activating phosphorylation of HDAC3 without affecting HDAC3 protein levels, consistent with CK2 inhibition. The use of zVAD to prevent apoptosis during CK2 inhibition is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Despite high conservation of m18 across MCMV strains, m18 is dispensable for viral growth in vitro and in vivo at early time points (5 days post-infection) in both wild-type and immunodeficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 assess m18's role in viral fitness using plaque assays (Figure 7A) and in vivo infections in BALB/c and RAG-/-\u03b3C-/- mice (Figures 7B-C). The MCMVm18stop mutant controls for potential artifacts from large deletions. The lack of growth defect at early time points is surprising given m18's conservation, suggesting alternative functions at later stages or in different contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "HDAC-inhibiting proteins from human herpesviruses (IE1 from HCMV and ICP0 from HSV-1) also induce expression of the human NKG2D ligand ULBP-1, suggesting viral HDAC inhibition is a conserved mechanism for NKG2D ligand induction across herpesviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 extend the findings to human viruses using RT-qPCR (Figures 9A-B) showing IE1 and ICP0 induce ULBP-1. This cross-species validation strengthens the model's generalizability. However, the mechanism by which IE1 and ICP0 induce ULBP-1 is not directly demonstrated to involve HDAC3/CK2, only inferred from their known HDAC-inhibiting activities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors propose a model where RAE-1 is repressed by CK2-activated HDAC3 in healthy cells, and during MCMV infection, m18 inhibits CK2, reducing HDAC3 activity and de-repressing RAE-1 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 synthesize the experimental findings into a coherent model (Figure 8). The model is well-supported by the data showing: (1) HDAC3 represses RAE-1, (2) CK2 activates HDAC3, (3) m18 binds CK2, (4) m18 reduces HDAC3 phosphorylation, and (5) m18 increases histone acetylation and RAE-1 expression. The model logically integrates all major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on NK cells and NKG2D: NK cells are essential for controlling viral infection and cancer, express the activating receptor NKG2D that recognizes stress-induced ligands, and NKG2D surveillance protects against cancer and viral infections in mice and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C15 provide established background knowledge supported by appropriate citations. These claims contextualize the study but do not represent novel findings. The information is accurate and well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on NKG2D ligand regulation and herpesvirus interactions: NKG2D ligands are induced by various stresses (DNA damage, proliferation, PI3K/Ras signaling), herpesviruses induce but also evade NKG2D recognition, and these mechanisms are conserved between cancer and viral infection contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C27 provide relevant background on NKG2D ligand regulation and herpesvirus biology, all supported by appropriate citations. These establish the rationale for the study and connect to prior work by the authors (C27). The information accurately represents the field's understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Discussion of viral HDAC inhibitors: Many herpesvirus HDAC inhibitors are crucial for viral fitness, as HDACs repress viral gene expression and replication. HDAC inhibition can rescue replication defects and drive reactivation from latency. CK2 inhibitors enhance antiviral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C112 discuss the broader context of viral HDAC inhibitors and their roles in viral life cycles, all supported by citations. This contextualizes why viruses might encode HDAC inhibitors despite the cost of inducing NKG2D ligands. The discussion is speculative regarding m18's potential role in latency/reactivation but appropriately framed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Discussion of cancer relevance: HDAC3 and CK2 are upregulated in cancers, contributing to tumor suppressor repression and potentially NKG2D ligand evasion. HDAC inhibitors are being developed as anti-cancer drugs, potentially acting through NKG2D ligand induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 discuss cancer relevance supported by citations, while C118 is appropriately framed as speculation. The connection between the viral findings and cancer biology is reasonable given the shared mechanisms of NKG2D ligand regulation. The therapeutic implications are appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The authors conclude that active HDAC-mediated repression provides a mechanism for hosts to maintain NKG2D ligand silencing in healthy cells while allowing stress-induced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 represents the overarching conclusion drawn from the study's findings. This is well-supported by the data showing constitutive repression by HDAC3 that can be relieved by stress signals (viral HDAC inhibitors, chemical inhibitors). The conclusion appropriately synthesizes the findings.",
+    "result_type": "MAJOR"
+  }
+]

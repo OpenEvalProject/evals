@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C85"
+    ],
+    "result": "The cdz gene cluster is massively induced upon entry to stationary phase. RNA-Seq showed CCNA_03932 and CCNA_03933 increased nearly 50-fold in stationary phase, reaching the highest expression levels of all genes. A transcriptional reporter showed ~10-fold induction at OD600 of 1.0 and ~30-fold at OD600 of 1.2. Western blots confirmed CdzC, CdzD, and CdzI proteins were undetectable at OD600 of 0.1 or 0.6 but easily detected at OD600 of ~1.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C10, C12-C13, and C85 provide converging evidence from RNA-Seq, transcriptional reporters, and Western blots demonstrating strong stationary phase-specific induction of the cdz cluster. The quantitative measurements are consistent across multiple experimental approaches, and appropriate controls (RpoA loading control) were included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The cdz gene cluster encodes a type I secretion system (CdzAB) and two small bacteriocin-like proteins (CdzC and CdzD) with signal peptides, plus a putative immunity protein (CdzI) with three transmembrane domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 describe the bioinformatic characterization of the cdz cluster. Sequence homology analysis, computational predictions (KEGG, TM-HMM), and comparison to known systems provide consistent evidence for the proposed functions. The predictions are appropriately qualified and supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CdzC and CdzD remain cell-associated and do not function as secreted, diffusible toxins. Western blots detected CdzC/CdzD only in cell pellets, not supernatants. Cell-free supernatants, even when concentrated 2000X, showed no killing activity. Split-well experiments showed killing only with 8 \u00b5m pores (allowing cell passage) but not 0.4 \u00b5m pores. Boiled or gentamicin-killed producer cells did not kill indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C28-C33 provide multiple lines of evidence that CdzC/CdzD are not conventional secreted bacteriocins. The split-well experiments with different pore sizes (C30-C31) are particularly compelling, and controls with killed producer cells (C32-C33) rule out alternative explanations involving large secreted aggregates. The experimental logic is sound and controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C86"
+    ],
+    "result": "The Cdz system drives contact-dependent killing of cells lacking the cdz cluster. In co-culture, \u0394cdzABCDI indicator cells maintained a 1:1 ratio with wild-type producers until OD600 ~0.9, then dropped nearly four orders of magnitude within ~7 hours. Both CdzC and CdzD are required for killing, as are the secretion system components CdzA and CdzB. Exponential phase indicators were killed when mixed with stationary phase producers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 and C86 demonstrate robust killing activity through well-controlled competition experiments. Multiple deletion strains and complementation experiments (referenced in C18-C19) establish genetic requirements. Appropriate controls with different antibiotic markers and strain combinations were performed. The quantitative measurements of viability loss are substantial and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CdzI is necessary and sufficient for immunity to CdzC-CdzD. Any deletion including cdzI led to killing by producers, while other cdz genes were dispensable for immunity. A strain lacking only cdzI could not be generated, consistent with essentiality. Expression of cdzI alone in trans provided full resistance to wild-type producers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 establish CdzI as the immunity factor through systematic deletion analysis and complementation experiments. The inability to generate a \u0394cdzI strain (C22) is consistent with the immunity function, though this inference could be strengthened. The trans-complementation experiments (C23) provide strong evidence for sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C98"
+    ],
+    "result": "CdzC/D kill target cells by forming pores in membranes, leading to loss of membrane integrity and cell death. After 20 hr co-culture, >95% of \u0394cdzCDI indicator cells were propidium iodide-positive, compared to only ~10% of wild-type producers. By 71 hr, 70% of indicators were round, PI-positive lysed cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 and C98 use propidium iodide staining and microscopy to demonstrate membrane compromise and cell lysis. The time-course analysis shows progression from membrane permeabilization to complete lysis. Appropriate controls comparing different strain combinations were included. The mechanism is consistent with known bacteriocin mechanisms (C98).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CdzC forms large, insoluble aggregates that localize predominantly to the outer membrane. Western blots showed two CdzC bands in membrane fractions: full-length (~10 kDa) in inner membrane and a smaller processed form in outer membrane. Substantial CdzC remained in stacking gels, indicating high molecular weight aggregates (>220 kDa) that persisted even after boiling in SDS and \u03b2-mercaptoethanol. Aggregates were only solubilized by formic acid treatment. Aggregation was independent of CdzD but dependent on the CdzAB secretion system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C50 provide extensive biochemical characterization of CdzC localization and aggregation through multiple fractionation methods (Triton X-100, sucrose gradients), denaturing and native gels, and harsh solubilization conditions. The use of appropriate controls (RpoA, McpA, RsaFa) validates the fractionation. The dependence on CdzAB but not CdzD (C43-C44) provides mechanistic insight. The extreme stability of aggregates (C48-C49) is remarkable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CdzD localizes to membranes with both unprocessed and mature forms present, and the mature form is abundant in the outer membrane fraction. CdzD also forms high molecular weight aggregates, though these were more easily solubilized than CdzC aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 show CdzD has similar localization patterns to CdzC but with less stable aggregates. The fractionation experiments use the same validated methods as for CdzC. The observation that CdzD aggregates are more soluble (C53) is an important distinction from CdzC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C99"
+    ],
+    "result": "The immunity protein CdzI localizes primarily to the inner membrane, where it may directly antagonize CdzC/D function. This localization is similar to immunity proteins of other pore-forming bacteriocin systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C99 establish CdzI localization through the same validated fractionation methods used for CdzC/D. The inner membrane localization is consistent with known immunity proteins (citations provided in C54), supporting the proposed mechanism. The inference about direct antagonism (C99) is reasonable but not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CdzC localizes to the cell surface where it forms aggregates and fibrils (50-250 nm diameter) that mediate contact-dependent killing. Immunogold labeling showed CdzC on the surface of stationary phase cells but not exponential phase cells. CdzC was absent from \u0394cdzAB cells, but fibrils were still present, indicating CdzC associates with but is not the sole component of these structures. Immunofluorescence of unpermeabilized cells confirmed surface localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 use multiple imaging approaches (immunogold EM, immunofluorescence) to demonstrate surface localization. The growth phase-specific labeling (C56) and dependence on CdzAB (C59) are important controls. The observation that fibrils persist without CdzC (C60) suggests CdzC associates with pre-existing structures. The convergence of fractionation and imaging data (C61) strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C69"
+    ],
+    "result": "CdzC and CdzD are highly enriched in glycines and small hydrophobic residues (A, V, I), which constitute 75% of residues in the mature proteins. Both proteins harbor extended GxxxGxxxG 'glycine zipper' motifs spanning 24-25 amino acids with high predicted aggregation propensity. In these motifs, the x residues are exclusively small hydrophobic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C69 describe sequence features that explain the observed aggregation behavior. The quantitative amino acid composition (C63) and computational predictions using multiple algorithms (C64) are well-documented. The glycine zipper motifs (C65) and their unusual composition (C69) distinguish CdzC/D from other proteins with similar motifs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Cell-cell associations occur at ~12% frequency in stationary phase cultures and are not mediated by cdz genes themselves. The frequency of associations was similar for mixtures of two producers, producer and indicator, or two indicators. Similar frequencies were observed in exponential phase, indicating the attachment mechanism is not stationary phase-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 use flow cytometry to quantify cell-cell associations. The similar frequencies across different strain combinations (C35) demonstrate that cdz genes do not mediate attachment. The observation in exponential phase (C36) indicates a constitutive attachment mechanism that the Cdz system exploits. The experimental approach is appropriate and controls are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Epitope-tagged CdzC and CdzD were fully functional for killing, while epitope-tagged CdzI was partially functional as an immunity protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 validate the use of epitope-tagged proteins in localization studies. Competition experiments confirmed functionality. The partial functionality of tagged CdzI (C38) is a limitation but does not invalidate the localization data, as the tag may interfere with but not eliminate immunity function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The Cdz system can kill some but not all tested bacterial species. C. segnis and B. subvibrioides were killed by wild-type C. crescentus but not \u0394cdz strains, though killing of C. segnis was ~3 orders of magnitude weaker than killing of C. crescentus indicators. A. excentricus, R. sphaeroides, S. meliloti, A. tumefaciens, and E. coli were not inhibited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 demonstrate the spectrum of Cdz activity through competition experiments with diverse species. The weaker killing of C. segnis (C71) suggests partial susceptibility. The lack of killing of more distantly related species is consistent with a narrow-spectrum toxin. Appropriate controls with \u0394cdz strains were included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C114",
+      "C118"
+    ],
+    "result": "Cdz-like systems are widespread in bacteria, particularly \u03b3-proteobacteria. An iterative computational search identified 239 unique Cdz-like proteins with conserved features including predicted leader peptides, glycine-zipper motifs, and small size (60-151 residues). Systems were found in human pathogens (K. pneumoniae, P. aeruginosa, S. marcescens, B. cepacia) and plant pathogens (X. fastidiosa, Erwinia sp.). Most systems encode a single toxin protein (86%), with 14% having two and 5% having three. Many systems were likely horizontally acquired, as evidenced by flanking transposase genes and variable presence across isolates. Some genomic regions include cell-cell adhesion genes like thin aggregative fimbriae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83, C114, and C118 describe a comprehensive bioinformatic analysis using HMM profiles and iterative searches. The identification of 239 systems with specific conserved features (C76) is well-documented. The phylogenetic distribution (C77) and presence in pathogens (C78-C79) are significant findings. Evidence for horizontal transfer (C81-C82) and association with adhesion genes (C83) provides ecological context. The computational methods are appropriate and the results are presented with appropriate caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "An antisense RNA overlapping the 3' end of the cdzCDI operon was expressed during exponential phase but significantly less so during stationary phase, suggesting possible post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 identifies a potential regulatory mechanism based on RNA-Seq data. The differential expression pattern is consistent with the observed stationary phase induction of cdz genes. However, the functional significance of this antisense RNA is not tested, so the regulatory role remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "GxxxG glycine zipper motifs are found in diverse proteins including class IIb bacteriocins, transmembrane proteins, and amyloid-forming proteins. These motifs are thought to mediate oligomerization and membrane insertion in bacteriocins, and drive aggregation in amyloid proteins like A\u03b2 and PrP. Similar motifs are found in microcin MccE492 and phenol soluble modulins (PSM) from S. aureus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C107-C113 provide context from prior literature about glycine zipper motifs. All claims are supported by appropriate citations. This background information helps interpret the significance of the glycine zippers in CdzC/D, though these are knowledge claims rather than new experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C87",
+      "C117"
+    ],
+    "result": "The Cdz system represents a new type of contact-dependent inhibition system that differs from canonical bacteriocins and is the first CDI system using a type I secretion system. This discovery expands the repertoire of known contact-dependent inhibition mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C87, and C117 synthesize the experimental findings to position the Cdz system as a novel mechanism. The distinction from canonical bacteriocins (C84) is well-supported by the cell-association and contact-dependence data. The novelty of using type I secretion for CDI (C87) is supported by literature comparison. These are appropriate interpretive conclusions based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on bacteriocins and contact-dependent systems: Most bacteriocins are secreted via type I systems and form pores in target membranes. C. crescentus thrives in nutrient-poor aquatic conditions where secreted toxins would be washed away. Secreted toxins also create vulnerability to cheater cells. Known CDI systems use type V or type VI/VII secretion, but C. crescentus lacks homologs of these systems and has no previously described social behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C97 provide background context from prior literature and are supported by appropriate citations. These knowledge claims establish the rationale for why a contact-dependent system would be advantageous for C. crescentus and why the Cdz system is novel. All statements are accurately attributed to cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C115",
+      "C116"
+    ],
+    "result": "Mechanistic interpretations and speculation: The glycine zipper region may mediate both aggregation on producer cells and insertion into target membranes. The Cdz system may represent a special sub-class of type IIb bacteriocins. CdzD's role could be to promote CdzC secretion, seed aggregates, or form the pore-forming 'warhead'. CdzC/D may require leader peptide removal for activity. The fibrils may mediate cell adhesion that the Cdz system exploits. Cdz-like systems in pathogens could help outcompete commensals. The contact-dependent mechanism allows C. crescentus to avoid problems with secreted toxins in aquatic environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C106, C115-C116 are largely speculative interpretations of the data. While these hypotheses are reasonable and consistent with the observations, they lack direct experimental support. For example, the dual function of glycine zippers (C100) is plausible but not demonstrated. The role of CdzD (C102-C103) remains unclear despite the speculation. These are appropriate discussion points but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

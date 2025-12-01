@@ -1,0 +1,801 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Socs5-deficient mice exhibit increased disease severity following influenza infection, characterized by greater weight loss and elevated viral titers in the lungs starting from day 1 post-infection, prior to immune cell infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C48-C52 are directly supported by experimental data shown in Figure 1A-B. The weight loss and viral titer measurements demonstrate statistically significant differences between wild-type and Socs5\u2212/\u2212 mice, with the phenotype evident from day 1 post-infection. The early timing suggests an innate epithelial defect rather than an adaptive immune deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Bone marrow chimera experiments demonstrate that the Socs5-deficiency phenotype is primarily due to defects in non-hematopoietic tissues rather than immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by bone marrow transplantation experiments shown in Figure 1C-D. The phenotype tracks with the non-hematopoietic compartment (Socs5\u2212/\u2212 hosts with wild-type bone marrow show increased disease), providing strong evidence that the defect resides in structural lung cells rather than immune cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "SOCS5 is expressed in mouse lungs, particularly in airway epithelial cells, and is upregulated at day 2 post-infection, while SOCS4 shows minimal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by Q-PCR (Figure 1E), immunoprecipitation/immunoblotting (Figure 1F), and immunohistochemistry (Figure 1G) data. The multiple complementary techniques provide strong evidence for SOCS5 expression patterns and localization. The epithelial cell localization is consistent with the bone marrow chimera results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Socs5\u2212/\u2212 mice show elevated pro-inflammatory cytokines and chemokines (IL-6, G-CSF, KC, MCP-1, MIP-1\u03b2) in bronchoalveolar lavage at day 2 post-infection, but do not show increased type I or III interferons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by Bioplex and ELISA data in Figure 2A-B. The selective elevation of inflammatory mediators without increased interferons suggests SOCS5 deficiency affects inflammatory rather than antiviral interferon responses. Statistical significance is demonstrated for the elevated cytokines/chemokines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "Socs5\u2212/\u2212 mice exhibit increased total cell infiltration into airways at day 2 post-infection, driven specifically by neutrophil accumulation, with no changes in other immune cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 and C72 are supported by flow cytometry data in Figure 2C. The selective increase in neutrophils (Ly6G+) without changes in monocytes, T cells, or B cells is consistent with the elevated neutrophil-recruiting chemokines (KC, MCP-1). The specificity strengthens the conclusion about neutrophil-driven inflammation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Quantitative proteomic analysis reveals a neutrophil extracellular trap (NET) signature in Socs5\u2212/\u2212 lungs at day 2 post-infection, including elevated histones, neutrophil proteins, viral proteins, extracellular DNA, and citrullinated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77, C79-C80 are supported by mass spectrometry data (Figure 2D-E, Table 1) and DNA measurements (Figure 2\u2014figure supplement 2). The proteomic signature is consistent with NETs, and the detection of citrullinated modifications on lactotransferrin and neutrophil elastase provides additional biochemical evidence. The convergence of multiple markers strengthens the NET interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The heightened influenza susceptibility in Socs5\u2212/\u2212 mice results from an epithelial defect that leads to increased viral titers, which then initiates a neutrophil-driven inflammatory cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 integrate findings from bone marrow chimeras (epithelial defect), viral titers (increased virus), cytokine/chemokine data (inflammatory mediators), and flow cytometry (neutrophil infiltration). The temporal sequence (elevated virus at day 1, inflammation at day 2) and mechanistic connections support this model, though the causal relationship between virus and inflammation is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Primary Socs5\u2212/\u2212 mouse airway epithelial cells show increased susceptibility to influenza infection at low MOI and elevated viral titers over time, demonstrating an intrinsic epithelial cell defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by in vitro infection experiments shown in Figure 3B-C. The MOI-dependent effect (difference at low but not high MOI) and time-course data provide strong evidence for an intrinsic epithelial defect. This confirms the in vivo findings in an isolated cell system, eliminating confounding from immune cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Socs5\u2212/\u2212 primary mouse airway epithelial cells produce elevated cytokines and chemokines (IL-6, G-CSF, MCP-1, MIP-1\u03b1, RANTES) at 24h post-infection, with G-CSF and MCP-1 showing the greatest differential expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by Bioplex data in Figure 3D. The in vitro recapitulation of the in vivo cytokine/chemokine profile strengthens the conclusion that the inflammatory response originates from epithelial cells. The consistency between in vivo and in vitro data is notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Socs5\u2212/\u2212 lungs show altered EGFR and PI3K signaling, with increased PI3K p110\u03b1 in uninfected mice and increased EGFR, PI3K subunits, pAKT, and pSTAT3 at day 1 post-infection, while pMAPK and RIG-I remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C100 are supported by immunoblotting and densitometry data in Figure 4A-B. The differential regulation of signaling pathways (EGFR/PI3K/AKT/STAT3 increased, MAPK/RIG-I unchanged) provides mechanistic insight. The pre-infection increase in PI3K p110\u03b1 suggests a priming effect. Statistical significance is shown for key differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "SOCS5 forms a protein complex with PI3K subunits (p85, p85\u03b2, p110\u03b2) and SOCS box components, with interaction dependent on phosphorylation and requiring the SH2 domain and N-terminal region but not the SOCS box.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 are supported by mass spectrometry (Figure 5A, Table 2), co-immunoprecipitation with pervanadate treatment (Figure 5B), mutant analysis (Figure 5C), and endogenous protein interaction in A549 cells (Figure 5D). The multiple complementary approaches and domain mapping provide strong mechanistic evidence for SOCS5-PI3K interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "SOCS5 expression is elevated in healthy individuals following infection with H3N2, H1N1, and H11N9 influenza strains, but shows minimal induction in COPD patient cells, with significantly lower levels than healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 are supported by Q-PCR data in Figure 6A. The differential response between healthy and COPD cells is statistically significant and consistent across multiple viral strains. This provides a potential mechanistic link between SOCS5 deficiency and COPD susceptibility to influenza.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The highly pathogenic H5N1 virus dramatically suppresses SOCS5 expression relative to media control, in contrast to other influenza strains that induce SOCS5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C119 is supported by Q-PCR data in Figure 6B. The suppression of SOCS5 by H5N1 (rather than induction) is a striking finding that may explain the high pathogenicity of this strain. However, the mechanism of suppression is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "SOCS5 protein is induced in healthy cells post-infection but is consistently reduced in COPD patient cells at baseline and after infection, with SOCS5 levels inversely correlating with p110\u03b1, pEGFR, pAKT, and viral HA protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 are supported by immunoblotting data in Figure 6C-F and Figure 6\u2014figure supplement 1A-B. The inverse correlations between SOCS5 and multiple signaling/viral markers provide strong evidence for SOCS5 as a negative regulator. The consistency across multiple patients strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "SOCS5 depletion by siRNA in human airway epithelial cells increases PI3K p110\u03b1 levels (independently of virus), enhances viral-induced EGFR phosphorylation, and correlates with increased viral HA at 2h post-infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are supported by siRNA knockdown experiments shown in Figure 6E and Figure 6\u2014figure supplement 2. The virus-independent effect on p110\u03b1 and the early timing (2h) of HA changes suggest SOCS5 affects viral entry/early events. The causal manipulation strengthens conclusions beyond correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Forced SOCS5 overexpression in human airway epithelial cells reduces p110\u03b1, EGFR, pEGFR, pAKT, and viral HA levels, demonstrating that SOCS5 can restrict viral infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 are supported by overexpression experiments in Figure 6F and Figure 6\u2014figure supplements 1D and 2. The reciprocal effects of SOCS5 depletion and overexpression provide strong evidence for a causal role. The reduction in viral HA with SOCS5 overexpression is particularly important for therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Changes in viral HA levels occur within 2h post-infection (prior to viral replication), and both PI3K and EGFR inhibitors normalize the SOCS5-depletion effect, indicating SOCS5 impacts early viral entry events through EGFR-mediated PI3K activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are supported by the 2h timepoint data and inhibitor experiments in Figure 6\u2014figure supplement 3. The early timing and the ability of both inhibitors to normalize the phenotype provide strong mechanistic evidence. However, the specific early events (entry, trafficking, etc.) are inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "In vivo, PI3K inhibition reduces viral titers in both wild-type and Socs5\u2212/\u2212 mice but does not normalize the difference, while EGFR inhibition selectively reduces viral titers in Socs5\u2212/\u2212 mice to below wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 are supported by in vivo inhibitor experiments in Figure 7A. The differential effects of PI3K vs EGFR inhibition provide crucial mechanistic insight: EGFR activity (beyond its PI3K-activating function) is the primary target of SOCS5 regulation in vivo. The reversal of the phenotype with EGFR inhibition is particularly striking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "In primary mouse and human epithelial cells, PI3K inhibition reduces viral titers but does not normalize the SOCS5-deficiency difference, while EGFR inhibition normalizes viral titers between wild-type and SOCS5-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 are supported by in vitro inhibitor experiments in Figure 7B-C. The recapitulation of in vivo findings in isolated cells confirms the epithelial cell-intrinsic mechanism and eliminates confounding from immune cells. The consistency across mouse and human cells strengthens translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "PI3K signaling is important for viral fitness, but the increased susceptibility of Socs5\u2212/\u2212 mice to influenza is primarily due to altered EGFR signaling, with EGFR kinase activity predominating over EGFR-mediated PI3K activity in the context of SOCS5 deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C150 synthesize the inhibitor study results. The conclusion that EGFR (beyond PI3K) is the critical target is well-supported by the differential effects of inhibitors. However, the specific EGFR-dependent, PI3K-independent mechanisms are not fully elucidated and remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "SOCS5 does not regulate pEGFR or PI3K p110\u03b1 through proteasomal degradation, as evidenced by lack of effect of proteasome inhibitor MG132 and failure to demonstrate ubiquitination in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190 are supported by MG132 experiments (Figure 6\u2014figure supplement 4) and in vitro ubiquitination assays (Figure 6\u2014figure supplement 5). The negative results are important for ruling out the canonical SOCS protein mechanism and suggest alternative modes of regulation. However, the experiments do not definitively exclude all ubiquitination-dependent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C46",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "SOCS5 ameliorates influenza infection via inhibition of EGFR signaling, with SOCS5 acting as a negative regulator of both EGFR and PI3K, but with EGFR restriction being the primary mechanism limiting viral infection in lung epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6, C46, C155-C157 represent the main conclusions of the manuscript. These are well-supported by the convergence of multiple lines of evidence: Socs5\u2212/\u2212 mouse phenotype, epithelial cell localization, in vitro cell culture experiments, signaling pathway analysis, protein interaction studies, and differential effects of EGFR vs PI3K inhibition. The mechanistic model is coherent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C47"
+    ],
+    "result": "Reduced SOCS5 levels in COPD patient epithelial cells correlate with increased susceptibility to influenza and may explain the increased vulnerability of COPD patients to influenza infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C47 are supported by Q-PCR and immunoblotting data from COPD patient cells (Figure 6A, C-F). The correlation between reduced SOCS5 and increased viral markers is consistent. However, the causal link to clinical COPD susceptibility is inferred rather than directly demonstrated, and other COPD-related factors may contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C13",
+      "C204"
+    ],
+    "result": "Restoration of SOCS5 expression in COPD patient bronchial epithelial cells reduces viral entry, demonstrating that SOCS5 manipulation can restrict influenza infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C204 are supported by SOCS5 overexpression experiments in COPD cells (Figure 6F). The ability to rescue the phenotype by restoring SOCS5 provides strong evidence for a causal role and has important therapeutic implications. However, long-term effects and in vivo validation in COPD models are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C202",
+      "C203",
+      "C205"
+    ],
+    "result": "Manipulating SOCS5 expression and/or SOCS5 targets (EGFR, PI3K) might be novel therapeutic approaches to influenza, particularly for COPD patients and severe infections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C15, C202-C203, and C205 are speculative therapeutic proposals based on the experimental findings. While the mechanistic data support the potential, these claims lack direct therapeutic validation (efficacy, safety, delivery methods, etc.). The suggestions are reasonable extrapolations but require substantial additional work including in vivo therapeutic studies, dose optimization, and clinical trials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The increased viral levels in Socs5\u2212/\u2212 mice are comparable to SirpA-deficient mice (lacking NK, T, B cells, and ILCs) but less than Socs4\u2212/\u2212 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by comparative data in Figure 1\u2014figure supplement 1. The comparison provides context for the magnitude of the SOCS5 effect relative to other immune deficiencies. However, the mechanistic implications of these comparisons are limited since the defects occur in different compartments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "SOCS5 levels are differentially regulated in response to distinct influenza virus strains (H1N1, H3N2, H5N1, H11N9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by Q-PCR data in Figure 6A-B showing different SOCS5 expression patterns with different viral strains. The strain-specific regulation is interesting but the mechanisms and functional implications are not explored. The H5N1 suppression is particularly notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "PI3K p110\u03b1 levels are elevated in uninfected Socs5\u2212/\u2212 lungs, suggesting that exaggerated PI3K pathway activation might underlie increased viral susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by immunoblotting data from uninfected mice (Figure 4A-B). The pre-infection difference suggests a priming effect that could enhance susceptibility. However, the causal relationship between elevated p110\u03b1 and increased susceptibility is inferred rather than directly tested (e.g., by normalizing p110\u03b1 levels).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Changes in EGFR levels and AKT/STAT3 phosphorylation are influenza virus-induced effects that are dependent on SOCS5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by the observation that these differences only appear after infection (Figure 4A-B). The virus-induced, SOCS5-dependent nature distinguishes these from the constitutive p110\u03b1 changes. However, the specific mechanisms by which virus and SOCS5 interact to regulate these pathways are not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "EGFR and PI3K signaling complexes are direct targets for SOCS5 regulation, with PI3K recruitment mediated at least in part via canonical SOCS5-SH2:phosphotyrosine interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by co-immunoprecipitation data, pervanadate dependence, and SH2 domain mutant analysis (Figure 5). The evidence for direct interaction is strong. However, whether EGFR is also directly bound by SOCS5 or regulated indirectly through PI3K is not fully resolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C191",
+      "C194"
+    ],
+    "result": "SOCS5 has alternate ways to modulate protein function beyond proteasomal degradation, likely through its extended N-terminal region acting as a scaffold to regulate multiple proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C191 and C194 are speculative interpretations based on the negative ubiquitination results and the structural features of SOCS5. While the speculation is reasonable given the data, the actual alternative mechanisms are not demonstrated. Additional experiments (e.g., identifying scaffolding partners, testing kinase inhibition) would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "SOCS5 acts as a central switch point in influenza infection, with changes in SOCS5 levels/activity impacting disease outcome in susceptible individuals such as COPD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C159 synthesize the findings into a broader model. The characterization of SOCS5 as a 'central switch point' is supported by its regulation of multiple pathways (EGFR, PI3K, inflammation) and its relevance to COPD susceptibility. However, the clinical impact on disease outcomes in COPD patients is inferred from cell culture data rather than demonstrated in patients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "Socs5\u2212/\u2212 mice present a novel model of exacerbated human influenza with increased viral load, exaggerated cytokine production, and increased neutrophil trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 is supported by the comprehensive characterization in Figures 1-2. The model recapitulates key features of severe human influenza (high viral load, cytokine storm, neutrophilic inflammation) and provides a useful tool for studying influenza pathogenesis and testing interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about influenza epidemiology, mortality, and risk factors in vulnerable populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C16-C22 are general knowledge claims about influenza supported by citations. These provide context but are not novel findings of this study. The claims are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background claims about influenza virus entry mechanisms, innate immune sensing, and viral evasion strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C39 are established knowledge about influenza biology supported by citations. These provide important mechanistic context for understanding SOCS5's role but are not novel findings. The claims accurately represent current understanding of influenza-host interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Background claims about SOCS protein family function and the limited prior knowledge about SOCS5's physiological roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide background on SOCS proteins and acknowledge the limited prior understanding of SOCS5 function. These claims accurately represent the state of knowledge and justify the need for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "SOCS5 has a unique role in restraining the early phase of influenza A infection in airway epithelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by the early timepoint data (day 1) showing elevated virus before immune cell infiltration, the epithelial cell localization, and the in vitro epithelial cell experiments. The 'unique' characterization is justified by the distinct phenotype compared to other SOCS family members and the epithelial-specific function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C161",
+      "C162",
+      "C163",
+      "C165",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C192"
+    ],
+    "result": "Background claims about neutrophil biology, signaling pathways, and other SOCS proteins, supported by literature citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C161-C163, C165, C168-C174, and C192 are established knowledge from the literature that provide context for interpreting the results. These are appropriately cited and accurately represent current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Definition of neutrophil extracellular traps (NETs) as a mechanism of neutrophil-mediated pathogen trapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is an established definition of NETs supported by citations. This provides necessary background for interpreting the proteomic signature observed in Socs5\u2212/\u2212 lungs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Prior finding that PI3K activity is elevated in airway epithelial cells from COPD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 cites prior work showing elevated PI3K in COPD. This prior finding provides important context for the current study's findings about SOCS5 regulation of PI3K and COPD susceptibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C164"
+    ],
+    "result": "In Socs5\u2212/\u2212 mice, amplification of the inflammatory cascade occurs as neutrophils die via NETosis, releasing pro-inflammatory molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C164 is an inference based on the NET signature in the proteomic data. While the NET markers are present, the direct observation of NETosis and the causal role in amplifying inflammation are not demonstrated. The inference is reasonable but would benefit from additional validation (e.g., imaging, NET-specific interventions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C166"
+    ],
+    "result": "SOCS5 is identified as a key negative regulator of EGFR, PI3K, and AKT pathways in the context of influenza infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C166 synthesizes the signaling pathway data and positions SOCS5 as a central regulator. This is well-supported by the multiple lines of evidence showing SOCS5 effects on these pathways. The integration of these pathways in the context of COPD susceptibility is a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C167"
+    ],
+    "result": "Speculation that small differences in EGFR, PI3K, and AKT across the whole airways in COPD could lead to increased susceptibility to influenza.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C167 is a speculative extrapolation from cell culture data to whole organ/patient level. While the logic is reasonable (small per-cell effects could accumulate across many cells), this is not directly tested. The claim would require in vivo COPD models or patient studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Evidence that SOCS5 can target PI3K independently of EGFR, with potential priming effects through altered p110:p85 ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C177 are supported by the pre-infection p110\u03b1 elevation and the direct SOCS5-PI3K interaction in the absence of EGFR. The speculation about p110:p85 ratio effects is reasonable but not directly tested. The evidence for EGFR-independent PI3K regulation is solid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Reduced SOCS5 in human epithelial cells increases viral HA protein within 2h, indicating enhanced early viral life cycle events through EGFR-driven PI3K activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180 are supported by the 2h timepoint data and inhibitor experiments. The early timing and inhibitor effects provide strong evidence for effects on viral entry/trafficking. However, the specific early events affected are not directly measured (e.g., by measuring viral entry, endocytosis, or trafficking specifically).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R46",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Speculation about mechanisms by which SOCS5 might regulate virus-induced EGFR clustering and selective phosphorylation of PI3K docking sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C181-C184 are speculative mechanistic proposals based on the data and literature about EGFR activation. While the speculation is informed and reasonable, these specific mechanisms are not directly tested. Additional experiments (e.g., measuring EGFR clustering, site-specific phosphorylation) would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R47",
+    "claim_ids": [
+      "C185",
+      "C186"
+    ],
+    "result": "In vivo, SOCS5 regulates PI3K-independent EGFR effects required for restraining influenza infection, as evidenced by persistent viral elevation in Socs5\u2212/\u2212 mice despite PI3K inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C186 are supported by the differential effects of PI3K vs EGFR inhibition in vivo (Figure 7A). The persistence of elevated virus with PI3K inhibition but normalization with EGFR inhibition provides strong evidence for PI3K-independent EGFR functions. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R48",
+    "claim_ids": [
+      "C193"
+    ],
+    "result": "SOCS5 belongs to the sub-group of SOCS proteins with an extended N-terminal region (369 residues).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C193 is a factual statement about SOCS5 structure. This structural feature is relevant for understanding potential scaffolding functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R49",
+    "claim_ids": [
+      "C195",
+      "C196"
+    ],
+    "result": "Speculation about potential mechanisms of SOCS5 action, including inhibition of EGFR suppression of RIG-I-IFN production or switching EGFR signaling to increase viral EGFR dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C195-C196 are speculative proposals about SOCS5 mechanisms. While informed by the data, these specific mechanisms are not directly tested. The proposals are reasonable hypotheses for future investigation but lack experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R50",
+    "claim_ids": [
+      "C197"
+    ],
+    "result": "Larger differences in viral titers between SOCS5 wild-type and depleted cells are observed in the presence of PI3K inhibitor, with reversal in the presence of EGFR inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C197 is supported by the inhibitor data in Figure 7. This observation supports the model that EGFR has PI3K-independent functions that become more apparent when PI3K is inhibited. The reversal with EGFR inhibition is particularly striking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R51",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "SOCS5 has a unique role in regulating viral activation of EGFR in lung epithelial cells, distinct from its lack of effect on EGF-induced signaling in other contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C201 are supported by the lack of EGF-related phenotype in Socs5\u2212/\u2212 mice and fibroblasts, contrasted with the clear effects on viral-induced EGFR signaling in lung epithelium. This context-specificity is an important finding that suggests SOCS5 regulates virus-induced EGFR activation through distinct mechanisms from ligand-induced activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R52",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The mAEC culture results provide evidence for an intrinsic epithelial cell defect in Socs5\u2212/\u2212 cells responsible for the in vivo phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by the in vitro data showing increased viral replication in isolated Socs5\u2212/\u2212 epithelial cells. This confirms the bone marrow chimera results and establishes that the defect is cell-intrinsic rather than due to cell-cell interactions or systemic factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R53",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "SOCS5 expression is upregulated in response to influenza infection in human airway epithelial cells, suggesting an important role in modulating innate host defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 are supported by the Q-PCR and immunoblotting data showing SOCS5 induction. The inference that this upregulation indicates an important defensive role is reasonable given the phenotype of Socs5\u2212/\u2212 mice, though the specific signals inducing SOCS5 are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R54",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The highly pathogenic H5N1 virus actively suppresses SOCS5 expression, linking SOCS5 to influenza pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 are supported by the H5N1 data showing SOCS5 suppression. The link to pathogenesis is inferred from the known high pathogenicity of H5N1 and the protective role of SOCS5. However, whether SOCS5 suppression causally contributes to H5N1 pathogenicity is not directly tested.",
+    "result_type": "MAJOR"
+  }
+]

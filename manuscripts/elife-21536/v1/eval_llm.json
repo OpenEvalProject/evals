@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors demonstrate that EGR1 is induced by activation of a majority of protein kinase oncogenes. They cloned and expressed 37 wild-type RTKs and 217 mutants in 293T cells, finding that 30 wild-type RTKs (81%) and 154 mutants (71%) induced EGR1 expression. RTK activation (phosphorylation) correlated with EGR1 induction in 96% of cases, and the system responds to all recognized protein kinase oncogenes except JAK and MAPKK kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 provide comprehensive experimental evidence showing EGR1 induction by RTKs through immunoblot analyses (Figures 2-4). The correlation between RTK phosphorylation and EGR1 induction is quantitatively established (96%, C30), with appropriate controls including pseudokinases and kinase-dead mutants (C26, C29). The breadth of testing (254 variants) and systematic approach support the major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C59"
+    ],
+    "result": "The authors engineered an optimized EGR1 promoter-based reporter system through four rounds of optimization. They identified a critical 402nt D-E element (-799/-397 relative to TSS), and adding two copies enhanced FGF2 response by ~50%. The optimized pKrox24(2xD-E_inD)Luc reporter showed ~12-fold trans-activation and responded across multiple cell types, with activity peaking at 40 ng/ml FGF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C10-C16 present systematic promoter optimization data through dual-luciferase assays (Figures 1B-E, supplements). The dose-response characterization (C12-C13) and multi-cell-type validation (C14) provide strong evidence. The synthetic pKrox24(MapErk)Luc variant showed similar trans-activation but lower basal activity (C15-C16), demonstrating iterative improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors developed fluorescent reporter variants (dTomato and DsRed) that respond to FGF2 stimulation and constitutively active FGFR3 K650M mutant. Reporter expression induced by FGFR3 K650M was reversed by the FGFR inhibitor AZD1480.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by immunoblot and live cell imaging data (Figures 1F-I, supplement 8). The reversibility with AZD1480 provides important pharmacological validation. However, the fluorescent reporters are presented as proof-of-concept tools rather than extensively characterized systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "FGF2 induced endogenous EGR1 protein expression in seven different cell types, and this induction was dependent on ERK activation as demonstrated by inhibition with the MEK inhibitor PD0325901.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by immunoblot data across multiple cell types (Figure 1A, supplement 1A) and pharmacological inhibition experiments (supplement 1B). The ERK-dependence is clearly demonstrated, establishing the mechanistic basis for using EGR1 as a readout of RTK/ERK signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors identified LTK and INSR as novel targets for nilotinib through screening of BCR-ABL TKIs against 28 wild-type RTKs. Nilotinib inhibited LTK and INSR autophosphorylation, which had not been previously reported as nilotinib targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36, C58 present experimental evidence from pKrox24 reporter assays and immunoblot validation (Figure 5A, supplement 1E). The novelty is established by comparison to literature (Supplementary file 1E). However, C57 shows nilotinib also affects protein expression of FGFR2, MET, and RON at higher concentrations, which complicates interpretation of specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors identified LTK as a novel target for osimertinib, showing inhibition of both wild-type and disease-associated mutant forms (D535N, L844I, W831C, H608Y). Osimertinib activity was confirmed through suppression of LTK autophosphorylation in cells and inhibition of LTK-mediated STAT1 phosphorylation in cell-free kinase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40, C42-C43 provide multiple lines of evidence including reporter assays (Figure 5B), cellular autophosphorylation assays (Figure 5C), and cell-free kinase assays (Figure 5D). The testing of disease-associated mutants (C41) strengthens clinical relevance. The specificity is well-established by screening against 30 RTKs and 116 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Expression profiling of cells treated with FGF2 identified Egr1, Egr2, Nr4A2, Dusp6, and Rgs1 among the most strongly induced genes in multiple myeloma and rat chondrosarcoma cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by citations to prior expression profiling studies (Krejci et al., 2010; Buchtova et al., 2015). This represents background knowledge that motivated the current study rather than a novel finding. The claim accurately represents published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C45",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors provide background context on RTK signaling, CML biology, TKI development, and the challenges of targeting certain oncogenes like RAS. These claims establish the rationale for developing in-cell profiling methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C35, C37-C39, C45, C49-C50 are appropriately cited to published literature and represent established knowledge in the field. These claims provide important context but do not constitute novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors argue that in-cell profiling offers advantages over cell-free methods by evaluating RTKs in their natural cellular context with regulatory networks, post-translational modifications, and the potential to target protein-protein interactions or non-signaling states. They note that existing in-cell profiling toolkits provide only partial solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C46-C48, C51-C52, C54-C56 present conceptual arguments supported by appropriate citations (C47, C51-C52). While these are largely inferential claims about potential advantages, they are reasonable based on established principles of cell biology. Claims C55-C56 are more speculative about future applications but are appropriately framed as possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The authors propose that fluorescent pKrox24 reporters could improve high-throughput screening by enabling detection of false-positive hits caused by cell-toxic compounds through visual monitoring during screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is speculative and not directly tested in the manuscript. While the logic is sound\u2014that fluorescent reporters allow visual assessment of cell health\u2014no HTS experiments or systematic validation of this capability are presented. This represents a proposed future application rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The authors conclude that the pKrox24 reporter system is applicable to simple in-cell activity profiling of most protein kinase oncogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by the comprehensive testing of 30 RTKs, 154 active mutants, and 13 additional non-receptor kinases (C1, C22-C23, C31, Figure 4\u2014supplement 1). The breadth of validation across different kinase families and the high correlation between kinase activation and EGR1 induction (96%, C30) support this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

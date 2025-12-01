@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C46",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HSM-AD is a novel hyperspectral microscopy method that uses adaptive k-means clustering algorithms to automatically detect and quantify nanoparticles in tissue sections based on their spectral signatures. The method combines pre-processing steps (vignette correction, intensity-based segmentation) with adaptive classification using a spectral cluster library generated from k-means clustering, enabling automated detection of nanoparticles with high fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43-C46, C59-C70 collectively describe the development and validation of HSM-AD. The method is well-documented with clear descriptions of the algorithmic approach (k-means clustering with 4-5 spectral clusters), pre-processing steps, and classification scheme. Initial validation data (C69-C70) demonstrate that the algorithm correctly identifies LGNR-positive pixels based on their characteristic plasmonic peak at ~900 nm, supporting the technical soundness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C47",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "HSM-AD achieves high sensitivity (89.5-99.4%) and specificity (98.5-99.7%) for detecting nanoparticles in tissue sections, with capability for single nanoparticle detection. The method was characterized using three approaches: analysis of uninjected tissues for false positives, pure LGNR samples for false negatives, and blinded manual assessment of injected tissue samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C47, C71-C79 present comprehensive diagnostic evaluation data with multiple validation approaches. The reported sensitivity and specificity values are supported by quantitative pixel counts (Figure 2\u2014figure supplement 1) and cross-validation with manual assessment. The single-particle detection capability (C9, C79) is supported by analysis showing correlation with theoretical point spread functions (Figure 2\u2014figure supplement 8). The range of sensitivity values (89.5-99.4%) across different validation methods is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "HSM-AD was used to collect the first data on sub-organ distribution of large gold nanorods (LGNRs) in mice, revealing biodistribution patterns consistent with smaller gold nanorods (predominantly in liver and spleen). Quantitative analysis showed relative LGNR signals of 38.5\u00b14.5% in spleen, 7.5\u00b11.5% in liver, 4.8\u00b12.3% in kidney, with minimal uptake in lung (0.5\u00b10.1%) and muscle (0.8\u00b10.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C45, C50-C56, C80-C87 describe the whole-organ biodistribution study with clear experimental design (24 hr post-injection, standard histological preparation, hyperspectral imaging at 40x or 100x magnification). The quantitative data are presented with appropriate error estimates (mean \u00b1 s.e.m. from n=4 fields of view per organ). The comparison to published data for smaller gold nanorods (C83) provides context, though the authors appropriately note that conventional biodistribution data for LGNRs specifically has not been reported. The consistency between H&E-stained and unstained sections (C87) supports robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Sub-organ analysis revealed that LGNRs in kidney were concentrated in glomeruli (13-fold greater than convoluted tubules), consistent with size-dependent filtration. In liver, LGNRs showed 15-fold higher uptake in Kupffer cells (43.5\u00b112.0%) compared to hepatocytes (2.9\u00b11.1%), attributed to phagocytic function. Spectral hybridization from aggregation in Kupffer cells caused some LGNRs to remain undetected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C98 present detailed sub-organ localization data with quantitative comparisons and mechanistic interpretations. The glomerular localization pattern (C88-C90) is well-explained by particle size relative to filtration barriers, with appropriate citation (C90). The Kupffer cell localization (C93-C95) is supported by morphological consistency and functional rationale with citations. The authors appropriately acknowledge a limitation of their method\u2014spectral hybridization in aggregates (C96-C98)\u2014and provide evidence that these aggregates can be manually identified, demonstrating scientific rigor in reporting both capabilities and limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Sub-organ analysis of spleen showed 1.7-fold greater LGNR uptake in red pulp versus white pulp, with radial distribution suggesting marginal zone involvement. Lung tissue showed minimal LGNR accumulation consistent with its gas exchange function. In muscle tissue, LGNRs were localized to blood vessels rather than muscle fibers themselves, a distinction not possible with conventional biodistribution methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 present sub-organ localization data for spleen, lung, and muscle with appropriate quantitative comparisons and functional interpretations. The splenic distribution (C99-C101) is supported by comparison to published data for carbon nanomaterials (C100), though the authors appropriately note uncertainty about marginal zone identification (C101). The muscle tissue finding (C104-C106) demonstrates a key advantage of HSM-AD\u2014the ability to distinguish vascular from tissue localization\u2014which would be impossible with bulk tissue analysis methods like ICP-MS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "High-magnification (100x) HSM-AD imaging revealed cellular-level details of LGNR uptake, showing LGNRs within or near glomerular capillaries in kidney and within Kupffer cell cytoplasm (but not nuclei) in liver. Bright regions within Kupffer cells not detected as LGNRs were attributed to spectral hybridization from aggregation, possibly due to lysosomal acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 describe cellular-level observations enabled by higher magnification imaging. The cytoplasmic localization in Kupffer cells (C110-C111) is consistent with phagocytic uptake. The speculative explanation for undetected bright regions (C112) is appropriately qualified as expectation rather than proven fact, and is mechanistically plausible based on known lysosomal processing of phagocytosed materials. The observations are supported by the presented images (Figure 5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "HSM-AD successfully detected gold nanoshells, which are morphologically distinct from LGNRs and exhibit broader near-infrared spectra. Nanoshells showed related but distinct uptake patterns compared to LGNRs, including negligible kidney uptake and concentration in splenic white pulp. HSM-AD trained on mixtures of Nanoshells and LGNRs could distinguish between the two particle types with high sensitivity and specificity, though this was not tested in ex vivo tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C118 demonstrate the versatility of HSM-AD for detecting different nanoparticle types. The spectral differences between Nanoshells and LGNRs (C114) are clearly documented. The biodistribution differences (C116) are supported by quantitative data (Figure 6). The spectral unmixing capability (C117) is demonstrated with diagnostic evaluation showing 96.68% sensitivity and 99.16% specificity for both particle types in pure samples. The authors appropriately acknowledge the limitation that spectral unmixing was not tested in tissue samples (C118), which is an important caveat for the claimed capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "HSM-AD detected a third nanoparticle type (GNS@SiO2) with distinct properties (visible regime plasmonic peak ~550 nm) in unstained tissue sections. GNS@SiO2 showed time-dependent uptake in liver and spleen (2 and 24 hr post-injection), with localization to Kupffer cells in liver and marginal zone in spleen. HSM-AD measurements correlated well with ICP-MS but are more relative than absolute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C127 demonstrate HSM-AD's applicability to a third nanoparticle type with different spectral properties. The experimental design appropriately used unstained sections due to the visible-range plasmonic peak (C120). The time-course data (C123) adds temporal dimension to biodistribution analysis. The correlation with ICP-MS (C126) provides validation against an established method, while the authors appropriately acknowledge that HSM-AD provides relative rather than absolute quantification (C127), which is an important limitation for comparing to bulk tissue analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "HSM-AD revealed that anti-\u03b1V\u03b23-targeted LGNRs showed 7.4-fold greater uptake in U87MG tumor xenografts compared to isotype control LGNRs, with striking differences in localization patterns. Targeted LGNRs were concentrated around blood vessel edges (consistent with \u03b1V\u03b23 expression in angiogenic vasculature) and appeared in extravascular clusters, while non-targeted LGNRs showed no vascular association and were dispersed extravascularly, suggesting specific binding to \u03b1V\u03b23 on tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C139 present a well-designed comparative study of targeted versus non-targeted nanoparticles in tumors. The background on tumor angiogenesis and \u03b1V\u03b23 expression (C128-C131) is appropriately cited. The quantitative difference in uptake (C134) is supported by data from n=4-5 fields of view with statistical testing (p=0.0041). The key finding is the qualitative difference in localization patterns (C135-C138), which provides mechanistic insight beyond bulk uptake measurements. The interpretation distinguishing passive EPR effect from active targeting (C139) is reasonable given the observed patterns, though the authors appropriately use cautious language ('may have originated from').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "HSM-AD provides advantages over ICP-MS and electron microscopy for biodistribution studies. Unlike ICP-MS, which requires sample digestion and provides only bulk measurements, HSM-AD preserves spatial information at optical resolution. Unlike electron microscopy, which provides nanometer-scale resolution but requires ~460,000 images to cover the same area as one HSM-AD image (and >46 million for equivalent volumetric imaging), HSM-AD is tractable for large-scale studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 present comparative analysis of HSM-AD versus established methods. The limitations of ICP-MS (C140-C141) are well-established in the field. The quantitative comparison to TEM (C145-C146) is based on reasonable calculations comparing typical TEM field of view (~1\u00d71 \u03bcm) to the HSM-AD image in Figure 3c, and accounting for sample thickness differences. These calculations effectively illustrate the impracticality of using TEM for whole-organ studies, supporting the value proposition of HSM-AD for bridging scales between bulk analysis and single-cell imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "HSM-AD offers advantages over alternative biodistribution methods including radioactivity, photoacoustic, and fluorescence detection (~100-fold higher spatial resolution at ~1 \u03bcm vs ~100 \u03bcm), and imaging mass spectrometry (better spatial resolution of 1 \u03bcm vs 50 \u03bcm, enabling cellular-level studies). Single-particle detection sensitivity was not demonstrated by these alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C155 compare HSM-AD to multiple alternative biodistribution methods with appropriate citations. The spatial resolution comparisons (C148, C153) are quantitative and reasonable. The limitations of fluorescence methods (C149), radiolabeling (C150), and mass spectrometry (C153-C155) are supported by cited references. The claim about single-particle detection (C151) is a distinguishing feature of HSM-AD. However, the calculation for mass spectrometry sensitivity (C154) citing 'von Maltzahn et al., 2009' appears to be a citation error as this reference is about photothermal therapy, not mass spectrometry detection limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Mass spectrometry for gold nanoparticles is constrained to particles <10 nm and typically requires mass barcode molecules. HSM-AD successfully identified gold nanoparticles with different spectra, shape, size, and composition in tissues, and could distinguish Nanoshells from LGNRs in particle mixtures. While not directly tested, HSM-AD may be capable of distinguishing different nanoparticle types in tissues for multiplexed biodistribution studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C162 compare HSM-AD to mass spectrometry approaches and summarize the demonstrated capabilities. The limitations of mass spectrometry for gold nanoparticles (C156) are appropriately cited. The demonstrated capability to detect different nanoparticle types (C159-C160) is supported by the data for LGNRs, Nanoshells, and GNS@SiO2. The speculation about multiplexed detection in tissues (C161-C162) is appropriately qualified as not directly tested, representing a reasonable extrapolation from the demonstrated spectral unmixing in pure particle mixtures but requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Nanoparticle scattering spectra are heavily influenced by local refractive index, with ~80 nm spectral shifts observed between LGNRs in water (n=1) versus CytoSeal (n=1.5). Particle orientation may affect detection sensitivity for anisotropic particles like LGNRs, but this effect appears negligible based on empirically measured sensitivity values. Reliable spectral cluster libraries require training on images prepared similarly to test samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C167 address important technical considerations for spectral detection methods. The refractive index effects (C163-C164) are well-documented with quantitative data (Figure 2\u2014figure supplement 7) and appropriate citations. The recommendation for consistent sample preparation (C165) logically follows from the observed spectral shifts. The assessment of particle orientation effects (C166-C167) appropriately acknowledges a potential limitation while noting that the high empirically measured sensitivity values suggest this is not a major issue in practice. These represent important methodological considerations for reproducible application of HSM-AD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "HSM-AD cannot detect nanoparticles with markedly shifted spectra due to aggregation, particularly prominent in Kupffer cells, likely resulting in artificially low LGNR uptake measurements in liver. However, the absence of bright aggregates in uninjected tissues confirms their identity as LGNRs. Future efforts to detect aggregates should use unstained tissues to avoid spectral overlap with H&E staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C172 transparently acknowledge a significant limitation of the spectral detection approach\u2014inability to detect aggregated nanoparticles with hybridized plasmon resonances. The authors provide evidence supporting the identity of undetected aggregates (C170) and explain the mechanism (C171). The recommendation for future work (C172) is a reasonable approach to address this limitation. This represents appropriate scientific practice in clearly documenting method limitations and their implications for quantitative measurements, particularly the potential underestimation of liver uptake (C169).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors tested alternative machine learning approaches (SVM, logistic regression) and found that unsupervised k-means outperformed these methods when trained on tissue images containing nanoparticles. K-means offers additional advantages of ease of use and no need for pre-labeled samples, though certain studies may benefit from tailored learning methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C176 describe the rationale for choosing k-means clustering. The comparison to other methods (C173-C174) is supported by a citation, though the details of this comparison are not presented in the main manuscript. The stated advantages of k-means (C175) are reasonable\u2014unsupervised methods do not require labeled training data. The acknowledgment that other methods might be useful for specific applications (C176) shows appropriate scientific nuance. However, more detailed presentation of the method comparison would strengthen this justification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "HSM-AD simultaneously achieves excellent sensitivity and specificity with sub-cellular resolution, enables standardized high-throughput analysis, and does not require manual steps needed for Spectral Angle Mapping. The method can image millimeter-scale fields of view in <30 min with simple sample preparation, can be used for post-injection validation of nanoparticle localization, and is non-destructive allowing subsequent analysis by conventional microscopy techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C183 summarize the key advantages and capabilities of HSM-AD. The sensitivity, specificity, and resolution claims (C177) are supported by the diagnostic evaluation data. The comparison to Spectral Angle Mapping (C179) is supported by Figure 2\u2014figure supplement 15 showing the manual parameter tuning required for SAM. The practical advantages (C180) regarding imaging speed and sample preparation are reasonable based on the described methods. The non-destructive nature (C182) is an inherent property of optical microscopy. These claims collectively present a well-supported summary of the method's capabilities and advantages.",
+    "result_type": "MINOR"
+  }
+]

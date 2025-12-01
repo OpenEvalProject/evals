@@ -1,0 +1,1535 @@
+{
+  "submission": {
+    "id": "e1db860c-6bd0-4067-b762-8999279c5e16",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:28:53.297361Z",
+    "updated_at": "2025-11-30T23:28:53.297361Z"
+  },
+  "content": [
+    {
+      "id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "submission_id": "e1db860c-6bd0-4067-b762-8999279c5e16",
+      "content_type": "manuscript",
+      "content_text": "# Global reorganisation of cis-regulatory units upon lineage commitment of human embryonic stem cells\n\n## Authors\n\n- Paula Freire-Pritchett<sup>1</sup>\n- Stefan Schoenfelder<sup>1</sup>\n- Csilla V\u00e1rnai<sup>1</sup>\n- Steven W Wingett<sup>1</sup>\n- Jonathan Cairns<sup>1</sup>\n- Amanda J Collier<sup>2</sup>\n- Raquel Garc\u00eda-V\u00edlchez<sup>2</sup>\n- Mayra Furlan-Magaril<sup>1</sup>\n- Cameron S Osborne<sup>4</sup>\n- Peter Fraser<sup>1</sup>\n- Peter J Rugg-Gunn<sup>2</sup> \u2020\n- Mikhail Spivakov<sup>1</sup> ([ORCID: 0000-0002-0383-3943](https://orcid.org/0000-0002-0383-3943)) \u2020\n\n### Affiliations\n\n1. Nuclear Dynamics Programme Babraham Institute Cambridge United Kingdom\n2. Epigenetics Programme Babraham Institute Cambridge United Kingdom\n3. Wellcome Trust \u2013 Medical Research Council Cambridge Stem Cell Institute University of Cambridge Cambridge United Kingdom\n4. Department of Genetics and Molecular Medicine King's College London School of Medicine London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nLong-range cis-regulatory elements such as enhancers coordinate cell-specific transcriptional programmes by engaging in DNA looping interactions with target promoters. Deciphering the interplay between the promoter connectivity and activity of cis-regulatory elements during lineage commitment is crucial for understanding developmental transcriptional control. Here, we use Promoter Capture Hi-C to generate a high-resolution atlas of chromosomal interactions involving ~22,000 gene promoters in human pluripotent and lineage-committed cells, identifying putative target genes for known and predicted enhancer elements. We reveal extensive dynamics of cis-regulatory contacts upon lineage commitment, including the acquisition and loss of promoter interactions. This spatial rewiring occurs preferentially with predicted changes in the activity of cis-regulatory elements and is associated with changes in target gene expression. Our results provide a global and integrated view of promoter interactome dynamics during lineage commitment of human pluripotent cells.\n\n## Introduction\n\nCell fate decisions are associated with profound changes in chromatin organisation, which underlie the activation of lineage-specific and the silencing of lineage-inappropriate genes (Buecker and Wysocka, 2012; Bulger and Groudine, 2010; Calo and Wysocka, 2013; Hallikas et al., 2006; Ong and Corces, 2012). Cis-regulatory elements such as transcriptional enhancers play a key role in this process by integrating regulatory inputs from intrinsic and extracellular cues, and by mediating the recruitment of core activator and repressor complexes (Pennacchio et al., 2013; Shlyueva et al., 2014; Spitz and Furlong, 2012). The definition of chromatin signatures has enabled the genome-wide identification of enhancer elements across multiple human cell types (ENCODE Project Consortium, 2012; Heintzman et al., 2007, 2009; Pennacchio et al., 2006; Rada-Iglesias et al., 2011; Kundaje et al., 2015). Chromatin states can also provide a robust readout of cis-regulatory activity associated with poised and active enhancers and have been used to show that widespread changes in enhancer position and activity occur upon cell fate decisions such as the lineage commitment of pluripotent cells (Creyghton et al., 2010; Rada-Iglesias et al., 2011; Zentner et al., 2011).\n\nCis-regulatory elements are often considerable distances away from their target gene promoters and may not control their nearest genes (Carvajal et al., 2001; Jeong et al., 2006; Marini\u0107 et al., 2013; Pennacchio et al., 2006; Ruf et al., 2011; Sagai et al., 2005; Spitz et al., 2003). It is generally accepted that this long-range action is facilitated by DNA-looping interactions (Pennacchio et al., 2013; Shlyueva et al., 2014). However, specific determinants of chromosomal interactions are still not fully understood, which presents challenges for the high-confidence prediction of regulatory interactions from sequence and epigenetic information (Mora et al., 2016; Roy et al., 2015; Shlyueva et al., 2014; Whalen et al., 2016). As a result, the target genes of most cis-regulatory elements remain unknown. Furthermore, while it is generally accepted that many genes are controlled by multiple regulatory elements (Barolo, 2012; Miguel-Escalada et al., 2015) our understanding of multi-modular gene regulation remains limited, particularly in the context of mammalian development and stem cell differentiation.\n\nOver the last decade, chromosome conformation capture (3C) and derived methods have enabled the biochemical mapping of looping interactions to offer new insights into their architecture across different cell types (Dekker et al., 2013; de Laat and Duboule, 2013; Schmitt et al., 2016). In particular, Hi-C has allowed genome-wide characterisation of higher\u00a0order chromatin dynamics during differentiation at the level of contact domains, including A/B compartments and topologically associated domains (TADs) (Fraser et al., 2015; Dixon et al., 2015). The complexity of Hi-C samples creates challenges for a comprehensive identification of individual enhancer-promoter loops using this technology. However, analyses focusing on candidate-interacting regions or those bound by specific proteins (such as cohesin and RNA polymerase II) have made it possible to detect subsets of promoter-enhancer interactions at high resolution (Heidari et al., 2014; Li et al., 2015; Sanyal et al., 2012) and delineate their dynamics during cell differentiation and reprogramming. These studies provided evidence of interactions associated with transcriptional changes upon lineage commitment (Denholtz et al., 2013; Kieffer-Kwon et al., 2013; Phillips-Cremins et al., 2013; Zhang et al., 2013), as well as\u00a0revealed interactions formed in anticipation of changes in gene activity (Apostolou et al., 2013; Ghavi-Helm et al., 2014; Wei et al., 2013). However, despite these advances, the global and unbiased high-resolution mapping of promoter cis-regulatory interactions that form and remodel during development and stem cell differentiation is still lacking. This hampers an integrated understanding of the cis-regulatory logic underlying transcriptional decisions during lineage commitment.\n\nRecently, we developed Promoter Capture Hi-C that uses sequence capture to enrich Hi-C libraries for interactions involving the promoters of most annotated genes, providing a global view on promoter interactions that is independent of the activity of interacting regions and identity of proteins recruited to them (Mifsud et al., 2015; Schoenfelder et al., 2015a). Here, we use PCHi-C in human embryonic stem cells (ESCs) and ESC-derived neuroectodermal cells (NECs) (Bajpai et al., 2009) to create a high-resolution resource of promoter contacts and their dynamics during early lineage commitment in the context of extensive chromatin changes that occur at the interacting cis-regulatory regions as the cells differentiate (Rada-Iglesias et al., 2011). Our large-scale dataset links thousands of known and predicted enhancer elements with their putative target genes in human pluripotent and early lineage-committed cells, including those known to drive tissue-restricted reporter gene expression in transgene assays. We integrate the promoter interacting regions of each gene to define cis-regulatory units (CRUs) that provide a view of multi-modular gene regulation. We show that CRUs undergo extensive reorganisation during lineage commitment that involves both the \u2018rewiring\u2019 (acquisition or loss) of promoter interactions, as well as chromatin state changes at pre-existing interactions. Importantly, we demonstrate that this reorganisation is associated with changes in target gene expression, thereby providing insights into the transcriptional control of early human development.\n\n## Results\n\n### A high-resolution atlas of promoter interactions in human pluripotent and early lineage-committed cells\n\nWe used PCHi-C to profile the interactomes of 21,841 promoters in human ESCs and NECs (Figure 1A). We generated NECs using an established protocol (Rada-Iglesias et al., 2011) (Figure 1\u2014figure supplement 1A) and confirmed efficient differentiation by flow cytometry analysis and RNA-sequencing (Figure 1\u2014figure supplement 1B,C). PCHi-C data normalisation and signal detection using the CHiCAGO pipeline (Cairns et al., 2016) identified 75,795 significant cis-interactions between promoters and other genomic regions in ESCs and 75,624 in NECs. In addition, approximately 300 significant trans-interactions were detected in each cell type. As examples of this rich dataset, high-confidence interactions are shown for the SOX2 and PAX6 promoters (Figure 1B and Figure 1\u2014figure supplement 2A). These examples illustrate the multiple promoter-contacts observed, alongside the conventional Hi-C profiles additionally generated in this study that reveal higher-order genome topology over the same region. Overall, PCHi-C samples showed an 11 to 15-fold enrichment for promoter-containing interactions over conventional Hi-C. This data resource provides a global, high-resolution atlas of chromosomal interactions in human pluripotent and lineage-committed cells. Processed datasets have\u00a0been\u00a0made available through Open Science Framework (http://osf.io/sdbg4), and raw sequencing reads have been deposited to Gene Expression Omnibus (accession GSE86821).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig1-v2.jpg)\n\n**Figure 1.:** (A) Overview of the experimental design. Human embryonic stem cells (ESCs) and ESC-derived neuroectodermal progenitors (1) were analysed with Promoter Capture Hi-C to profile interactions involving 21,841 promoter-containing HindIII fragments (2). Signal detection with the CHiCAGO pipeline revealed\u00a0~75,000 high-confidence promoter interactions in each cell type (3). These data were integrated with histone modification and gene expression profiles in the same cells (4) to study chromatin and interaction dynamics during lineage commitment. Characterisation of ESCs and NECs is shown in Figure 1\u2014figure supplement 1. (B) Genome browser representation of the SOX2 promoter interactome in ESCs (upper) and NECs (lower). Significant interactions are shown as purple arcs, with one end of the interaction within the SOX2 promoter and the other end at a promoter-interacting region (PIR). ChIP-seq (H3K27me3, H3K27ac, H3K4me1, H3K4me3; from [Rada-Iglesias et al., 2011]) and mRNA-seq tracks are shown. Chromatin states for each genomic region were defined by ChromHMM (Ernst and Kellis, 2012) using ChIP-seq data (active chromatin, green; poised chromatin, orange; Polycomb-associated chromatin, red; intermediate, yellow; background, grey). Conventional Hi-C heatmaps of contact frequencies reveal chromatin topology over this region. As an additional example, the PAX6 promoter interactome is shown in Figure 1\u2014figure supplement 2. Read count interaction profiles for SOX2 and PAX6 are shown in Figure 1\u2014figure supplement 4. (C) PIRs are significantly enriched in regions that contain histone marks associated with putative regulatory functions, compared with promoter distance-matched control regions (permutation test p-value<0.01 for each mark) (ESCs, left; NECs, right). Blue bars show the number of overlaps observed in detected PIRs, and grey bars show the mean number of overlaps observed in distance-matched random regions over 100 permutations. Error bars show 95% confidence intervals across permutations. (D) Promoters and their associated PIRs show significant concordance in chromatin states. Heatmaps show the log2 odds ratios for the co-occurrence of each combination of promoter and PIR chromatin state compared with that expected at random. p-Values are from Pearson\u2019s \u03c72 test on the corresponding contingency tables. Clustering of chromatin states and additional examples of promoter interactomes are shown in Figure 1\u2014figure supplement 3.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Phase contrast images of undifferentiated ESC colonies (left) and day 7 NEC spheres (right). (B) Flow cytometry analysis of ESCs (blue) and NECs (red) using lineage-specific cell surface markers. CD56 is expressed by ESCs and NECs; EPCAM (CD326) is expressed by ESCs but not NECs (Gifford et al., 2013). Percent positive cells in each quadrant is shown. (C) Genome browser representations of RNA-seq data from our study and from (Rada-Iglesias et al., 2011) shows expression levels of the ESC-specific genes POU5F1 and NANOG; of SOX2 and CDH2, which are expressed by both ESCs and NECs, and of the NEC-specific genes ZIC4 and PAX6.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Genome browser representation of the PAX6 promoter interactome in ESCs (upper) and NECs (lower). Significant interactions are shown as purple arcs. ChIP-seq (H3K27me3, H3K27ac, H3K4me1, H3K4me3; from [Rada-Iglesias et al., 2011]) and mRNA-seq tracks are shown. Chromatin states for each genomic region were defined by ChromHMM (Ernst and Kellis, 2012) using ChIP-seq data (active chromatin, green; poised chromatin, orange; Polycomb-associated chromatin, red; intermediate, yellow; background, grey). Conventional Hi-C heatmaps of contact frequencies are shown for ESCs and NECs and reveal chromatin topology over this region. (B) PIRs in ESCs are significantly enriched in regions that contain CTCF binding sites, compared with promoter distance-matched random control regions (permutation test p-value<0.01). The blue bar shows the number of overlaps observed in detected PIRs, and the grey bar shows the mean number of overlaps observed in distance-matched random regions over 100 permutations. Error bars show 95% confidence intervals across permutations.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Definition of 16 ChromHMM emission states based on the relative presence or absence of signals from H3K27me3, H3K4me1, H3K27ac and H3K4me3 ChIP-seq data. Similar states were pooled to form six categories defined as active, poised, Polycomb, mixed, intermediate and background (see Materials and methods for details). (B) Integration of promoter interactions with chromatin states in ESCs (upper tracks) and NECs (lower tracks) for six different promoters. Purple arcs indicate significant interactions between the baited promoters and PIRs. Open circles denote background\u00a0interaction\u00a0signals and filled circles identify significant interactions (i.e. those exceeding the defined threshold CHiCAGO\u00a0score, see Materials and methods). Filled circles have been coloured according to the chromatin state of the PIR (active, green; poised, orange; Polycomb-associated, red; intermediate, yellow; background, grey). The arrows correspond to the transcriptional state of the baited gene in ESCs and NECs (sharp end, active; blunt end, inactive).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Plots show the read counts corresponding to the interactions of baited promoter fragments (grey line) with other HindIII fragments. Significant interactions detected by CHiCAGO (score\u00a0\u226512) are shown in red, and sub-threshold interactions (score\u00a0\u226511 in the cell type shown, and score\u00a0\u226512 in the other cell type) are shown in blue. (A) SOX2, from Figure 1B. (B) PAX6, from Figure 1\u2014figure supplement 2A. (C) POU3F2, from Figure 2A. (D) SNAI2, GLI2, PRDM1 and POU3F1, from Figure 3E\u2013H.\n\n### Identification of putative regulatory elements and their associated gene promoters\n\nTo gain insight into the chromatin properties of the promoter-containing interactions, we integrated the PCHi-C data with published genome-wide histone modification profiles in ESCs and NECs (Rada-Iglesias et al., 2011). In both cell types, promoter-interacting regions (PIRs) were significantly enriched for histone marks that are associated with regulatory functions (Figure 1C), including H3 lysine 4 monomethylation (H3K4me1) and H3 lysine 27 acetylation (H3K27ac), which can identify enhancers in human cell types, as well as H3 lysine four trimethylation (H3K4me3), which is associated with transcriptional activation, and H3 lysine 27 trimethylation (H3K27me3), which is associated with Polycomb-mediated transcriptional repression (Di Croce and Helin, 2013; Heintzman et al., 2007, 2009). PIRs were also significantly enriched for sites bound by the architectural protein CTCF (Figure 1\u2014figure supplement 2B; based on ENCODE data available for ESCs only), consistent with previous observations in other cell types (Jin et al., 2013; Phillips-Cremins et al., 2013; Sanyal et al., 2012).\n\nWe used ChromHMM (Ernst and Kellis, 2012) to integrate these histone marks and to define four combinatorial chromatin states in both ESCs and NECs, as follows: active (characterised by H3K4me3 and/or H3K27ac); Polycomb-associated (H3K27me3); poised (H3K4 methylation and H3K27me3); and background (no detectable signal for the tested histone modifications) (Figure 1\u2014figure supplement 3A; see Materials and methods for details). Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters. In addition, 25,727 PIRs in ESCs and 20,016 PIRs in NECs were in the background state.\n\nThe chromatin states of several example promoters, including those for the POU5F1, PRDM14 and CHD7 genes, together with each of their respective PIRs, are shown in Figure 1\u2014figure supplement 3B. When analysing the whole dataset, we found a significant concordance between the chromatin states at promoters and their PIRs (Figure 1D), which is in line with previous studies in other human cell types (Jin et al., 2013; Mifsud et al., 2015; Sanyal et al., 2012) and provides validation of our dataset. Notably, poised and Polycomb-associated promoters showed similar interaction preferences for PIRs in either of these two states (Figure 1D). This finding suggests that poised and Polycomb-associated regions are broadly interchangeable in terms of their interaction affinities, which is consistent with a key role for Polycomb-group proteins in mediating interactions in the poised state (Schoenfelder et al., 2015b).\n\nTaken together, these data provide a comprehensive resource that links many thousands of known and predicted regulatory elements with their putative target genes and will enable the investigation of regulatory contacts during human lineage commitment.\n\n### Promoter-interacting regions can function as tissue-restricted developmental enhancers\n\nThe enrichment of PIRs for specific chromatin regulatory features points to the presence of functional enhancer elements at these regions that could potentially provide inputs to the promoters they contact. To assess the enhancer activity of the identified PIRs, we examined whether they were known to efficiently drive reporter gene expression in embryonic day 11.5 mouse embryos based on information from the VISTA Enhancer Browser (Visel et al., 2007). As an initial example, we focused on the 39 PIRs detected in NECs that interact with the promoter of the neural transcription factor POU3F2. Strikingly, four out of the five POU3F2 PIRs tested experimentally in VISTA transgenic assays showed reporter activity exclusively in neural tissues, and one PIR was inactive (Figure 2A). Furthermore, the mRNA expression pattern of mouse Pou3f2 broadly matched the combined tissue-restricted pattern of the tested human POU3F2 PIRs (Figure 2A). These results highlight how PCHi-C can contribute to our understanding of the cis-regulatory networks for key developmental genes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig2-v2.jpg)\n\n**Figure 2.:** (A) A genome browser representation of the POU3F2 promoter interactome in NECs. Genome coordinates are shown underneath. Chromatin states are indicated (active chromatin, green; poised chromatin, orange; Polycomb-associated chromatin, red; intermediate, yellow; background, grey). Significant interactions are shown as coloured arcs. Five of the identified POU3F2 PIRs have been tested experimentally using a transgenic reporter assay as part of the VISTA Enhancer Browser (Visel et al., 2007). Of those five, four regions (indicated by blue arcs) can drive tissue-restricted LacZ expression in E11.5 mouse embryos. Representative images of X-gal stained mouse embryos are shown for each sequence. These show neural-restricted enhancer activity within the forebrain, midbrain, hindbrain and neural tube, which\u00a0are\u00a0tissues derived from NECs. The mRNA expression pattern of Pou3f2 in an E10.5 mouse embryo (EMAGE gene expression database; EMAGE:1689; [Richardson et al., 2014]) broadly matches the combined tissue-restricted pattern of its enhancers. One experimentally tested PIR (indicated by brown arc) is inactive at this developmental stage in mouse embryos. (B) PIRs identified in NECs are enriched for sequences that can drive reporter gene activity in neural tissues and other neuroectodermal derivatives (see also Figure 2\u2014figure supplement 1A). The barplot shows the distribution of tissue-specific reporter expression patterns for all experimentally tested PIRs identified in ESCs (n\u00a0=\u00a0219) and NECs (n\u00a0=\u00a0267). Embryo reporter assays and enhancer activity patterns are from the VISTA Enhancer Browser (Visel et al., 2007). The number of PIRs active within a particular tissue is shown above each bar. PIRs with an active chromatin state in NECs showed an even more pronounced enrichment for enhancer activity in neural tissues (Figure 2\u2014figure supplement 1B). (C) Representative images of X-gal stained mouse embryos from the VISTA Enhancer Browser (Visel et al., 2007) reveal neural-restricted reporter gene activity for six example NEC PIRs. Shown underneath is the gene promoter assignment for the associated enhancer in VISTA and in our PCHi-C dataset.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) In ESCs and NECs, PIRs are significantly enriched for VISTA-validated enhancer regions, compared to promoter distance-matched regions (p-value<0.001 for all six permutation tests based on 100 permutations). Black bars show the number of overlaps observed in PIRs, and light grey bars show the mean number of overlaps observed across the random samples. Error bars refer to 95% confidence intervals. (B) The barplot shows the distribution of tissue-specific reporter expression patterns for all experimentally tested PIRs with an active chromatin state in ESCs (n\u00a0=\u00a046) and NECs (n\u00a0=\u00a049). Embryo reporter assays and tissue expression patterns are from the VISTA Enhancer Browser (Visel et al., 2007). The number of PIRs active within a particular tissue is shown above each bar.\n\nWe next examined all putative enhancer elements and their PCHi-C-identified promoter targets. Overall, 219 PIRs in ESCs and 267 PIRs in NECs overlapped VISTA-annotated human elements (Supplementary file 2). Notably, we found that NEC PIRs were strongly enriched for sequences that could drive reporter-gene activity in neural tissues and in other neuroectodermal derivatives, such as the neural tube and cranial structures (z-score\u00a0=\u00a011, Figure 2B and Figure 2\u2014figure supplement 1A). In contrast, ESC PIRs were enriched for sequences active in neural (z-score\u00a0=\u00a06.7) and non-neural tissues (z-score\u00a0=\u00a04.5) at similar levels (Figure 2B and Figure 2\u2014figure supplement 1A). Interestingly, the enrichment of PIRs with neural enhancer activity in NECs relative to their enrichment in ESCs was even more pronounced when we focused on PIRs in an active chromatin state (Figure 2\u2014figure supplement 1B). Collectively, these results validate the function of several hundreds of PIRs as cell-type-specific developmental enhancers.\n\nWe next sought to link enhancers documented in the VISTA Enhancer Browser to their putative target genes on the basis of PCHi-C data. We detected the interactions of 267 VISTA-annotated human enhancers with 277 target gene promoters in NECs (Supplementary file 2). Of these, 122 PIRs (46%) interacted with their nearest gene, which is consistent with their current annotation in the VISTA Enhancer Browser. The remaining PIRs, however, did not interact with their nearest gene in NECs, but engaged with more distal promoters (Supplementary file 2). Figure 2C shows PCHi-C-based reassignment of enhancer targets for several examples of key neural regulators including SOX2, SOX4, and FZD3 (Figure 2C), and the full results are listed in Supplementary file 2.\n\nTaken together, these findings provide a functional validation of the detected human PIRs, and identify the putative promoter targets of multiple known enhancers.\n\n### The cis-regulatory unit: an integrated view of promoter interactions\n\nWe found interacting promoters to engage a median of four PIRs (Figure 3A), consistent with findings in other human cell types (Jin et al., 2013; Sanyal et al., 2012). To obtain an integrated view of promoter interactions, we considered PIRs connected to each promoter to jointly form a \u2018cis-regulatory unit\u2019 (CRU, Figure 3B). Focusing on protein-coding genes, and considering all promoters associated with at least one PIR, we defined 9008 CRUs in ESCs and 9361 in NECs, and studied their localisation, chromatin properties and dynamics during cell lineage commitment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig3-v2.jpg)\n\n**Figure 3.:** (A) Boxplot shows the distributions of the number of PIRs per interacting promoter in ESCs (n = 17955) and NECs (n = 18146). Promoters with no detected PIRs are not shown (4121 in ESCs; 3930 in NECs). The number of interactions per promoter showed only a minor dependence on transcriptional activity and promoter chromatin state (Figure 3\u2014figure supplement 1A,B). (B) A schematic illustrating the concept of a CRU as a collection of all PIRs together with their associated promoter. Note that it cannot be ruled out that some PIRs may provide alternative rather than concurrent interactions. (C) Boxplot shows the distributions of CRU span in ESCs and NECs. We observed a moderate dependence between the span and the number of PIRs (Figure 3\u2014figure supplement 1C). (D) CRUs are preferentially contained within an individual TAD. Line graph shows the percentage of CRUs with different proportions of interactions that reside within an individual TAD (purple) and the summary statistics (mean and 95% confidence error bars) obtained for 1000 random samples, keeping the same CRU structure (grey). There is a significant tendency for CRUs to be contained entirely within a TAD ( * denotes permutation test p-value<0.001). In addition, fewer CRUs span entirely over a TAD boundary (* denotes permutation test p-value<0.001). The 1000 random samples were generated by permutations of CRUs across all promoter fragments, retaining the same overall CRU structure. Error bars show 95% confidence intervals. Data shown are for ESCs (n = 9008 CRUs); data for NECs are shown in Figure 3\u2014figure supplement 1D. We found that CRUs crossing TAD and IN boundaries generally contained a higher number of PIRs (Figure 3\u2014figure supplement 1F,G). E\u2013H) Genome browser representations of CRUs in ESCs. Examples include the SNAI2 CRU (E) and GLI2 CRU (F), which both fit entirely within a TAD and INs; PRDM1 CRU (G), which fits entirely within a TAD but extends beyond INs, and POU3F1 CRU (H), which extends over a TAD boundary and also beyond an IN. (I) CRUs are preferentially contained within INs, but interactions can extend beyond IN boundaries. The line graph shows the percentage of CRUs with different proportions of interactions that reside within an individual IN in ESCs (coordinates obtained from [Ji et al., 2016]). There is a significant tendency for CRUs (purple) to be contained entirely within an IN, compared to random (grey) (* denotes p-value<0.001 from a permutation test done with 1000 random samples). In addition, fewer CRUs span entirely beyond an IN (* denotes p-value<0.001 from a permutation test done with 1000 random samples). Error bars show 95% confidence intervals. Promoters outside of a defined IN were excluded from the analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Boxplots showing the number of PIRs per promoter in ESCs (left) and NECs (right), separated by gene expression quartiles. (B) Number of PIRs per promoter in ESCs (left) and NECs (right), separated by promoter chromatin state. (C) Number of PIRs per CRU in ESCs (left) and NECs (right), separated by CRU span length. These variables are significantly positively correlated in both cell types according to Spearman\u2019s association test (\u03c1 = 0.063, correlation test p<0.001 in ESCs and \u03c1 = 0.111, correlation test p<0.001 in NEC). (D) CRUs are preferentially contained within an individual TAD in NECs (n = 9361 CRUs). Line graph shows the percentage of CRUs with different proportions of interactions that reside within an individual TAD (blue) and the summary statistics (mean and 95% confidence error bars) obtained for 1000 random samples, keeping same CRU structure (grey). There is a significant tendency for CRUs to be contained entirely within a TAD (* denotes permutation test p-value<0.001). In addition, fewer CRUs span entirely over a TAD boundary (* denotes permutation test p-value<0.001). The 1000 random samples were generated by permutations of CRUs across all promoter fragments, retaining the same overall CRU structure. Error bars show 95% confidence intervals. (E) Percentage of CRUs that cross TAD boundaries in ESCs and NECs. Orange bars show results for ESCs and NECs; grey bars show results for 1000 random permutations of CRUs across all promoter fragments, keeping the overall CRU structure. Error bars show 95% confidence intervals. For ESCs, we show the results obtained with TADs called by two different methods (left, Dixon et al., 2012; right, this study). Promoters overlapping TAD boundaries were excluded from this analysis, as were interactions where both ends were not included in any TAD. CRUs in both ESCs and NECs cross TAD boundaries less frequently than expected by random as the difference in height between the orange and grey bars is larger than the 95% confidence interval (permutation test, p-value<0.001). (F) Number of PIRs per CRU in ESCs (left) and NECs (right), separated by whether the CRU crosses a TAD boundary (\u2018Inter-TAD\u2019) or is contained within an individual TAD (\u2018Intra-TAD\u2019). In both cell types, CRUs crossing TAD boundaries have significantly more interactions than CRUs fully contained within a TAD (ESCs - p-value<0.001, NECs - p-value<0.001, according to two-sided Wilcoxon rank sum tests). (G) Number of PIRs per CRU in ESCs, separated by whether the CRU crosses an IN boundary or is contained within an IN. CRUs crossing IN boundaries have significantly more interactions than CRUs fully contained within INs (p-value<0.001 according to two-sided Wilcoxon rank sum test). (H) Strength of TAD boundaries, separated by whether they are crossed or not crossed by promoter interactions in ESCs (left) and NECs (right). (I) The line graph shows the percentage of CRUs with different proportions of interactions that reside within the largest span of each overlapping IN set (coordinates calculated from [Ji et al., 2016]). Fewer than 50% of CRUs, but significantly more than expected at random, were fully contained with the extremities of IN boundaries (* denotes permutation test p-value<0.001). In addition, fewer CRUs span entirely over an IN boundary (* denotes permutation test p-value<0.001). The 1000 random samples were generated by permutations of CRUs across all promoter fragments, retaining the same overall CRU structure. Error bars show 95% confidence intervals. Promoters outside of a defined IN were excluded from the analysis.\n\nCRUs spanned a median of ~230 kb (with a range of 1 kb-200Mb) in both cell types (Figure 3C). We assessed their localisation with respect to higher order features of chromosome architecture including TADs and Insulated Neighborhoods (INs) (Dixon et al., 2012; Ji et al., 2016; Nora et al., 2012; Sexton et al., 2012). We defined TADs in ESCs and NECs using Hi-C data for these cells generated as part of this study (see Materials and methods). Overall, ~75% of CRUs were fully contained within a TAD in ESCs and NECs, which was significantly higher than expected by random (Figure 3D\u2013G and Figure 3\u2014figure supplement 1D,E). In the remaining ~25% of CRUs, either some or all PIRs localised outside of the promoter-harbouring TAD (Figure 3H and Figure 3\u2014figure supplement 1D). We found that TAD boundaries crossed by promoter interactions were generally weaker than non-crossed boundaries (Wilcoxon test p-value=1.8e-14; Figure 3\u2014figure supplement 1H). However, the ranges of strength scores for \u2018crossed\u2019 and \u2018non-crossed\u2019 TAD boundaries were highly overlapping, and even some of the strongest boundaries were penetrable to interactions (Figure 3\u2014figure supplement 1H).\n\nFor INs, we used the published genomic coordinates (available for ESCs only) that were defined on the basis of cohesin ChIA-PET and CTCF-binding data (Ji et al., 2016). Just under 30% of CRUs were fully contained within IN boundaries, and this proportion increased to\u00a0~45% when considering the largest span of each overlapping set of INs as a single unit (Figure 3I and Figure 3\u2014figure supplement 1I). These numbers significantly exceeded the proportions expected at random (Figure 3I and Figure 3\u2014figure supplement 1I), but at the same time, also provided abundant examples of IN-spanning CRUs (Figure 3G,H). Taken together, these results suggest that CRUs are partially constrained by, but not fully contained within, higher\u00a0order topological structures such as TADs and INs.\n\n### ESC differentiation is associated with the dynamic reorganisation of CRUs\n\nTo investigate the potential regulatory features of CRUs, we first characterised their chromatin properties by considering the proportion of PIRs in each chromatin state within a CRU. Applying hierarchical clustering based on this property, we obtained eight distinct clusters of CRUs in both ESCs (Figure 4A) and NECs (Figure 4\u2014figure supplement 1), corresponding to different combinations of PIR chromatin states within CRUs. We found that CRUs within three prevalent clusters contained PIRs in one predominant, non-background, chromatin state (clusters 1\u20133; Figure 4A and Figure 4\u2014figure supplement 1A). In contrast to these \u2018uniform\u2019 CRUs, 18% of CRUs in ESCs and 24% in NECs contained combinations of PIRs in active, poised and Polycomb-associated chromatin states (clusters 4\u20137; Figure 4A and Figure 4\u2014figure supplement 1). Finally, CRUs in cluster 8 contained PIRs exclusively in the background state (Figure 4A and Figure 4\u2013figure supplement 1). Examples of genes in ESCs assigned to the different CRU clusters are shown in Figure 4B and Figure 4\u2014figure supplement 2. Notably, the chromatin state of each promoter generally matched that of the most prevalent CRU chromatin state (Figure 4A and Figure 4\u2014figure supplement 1). Overall, this classification provides a framework for exploring CRU properties.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig4-v2.jpg)\n\n**Figure 4.:** (A) CRUs from ESCs were clustered hierarchically according to the distribution and fractions of their PIRs that correspond to each chromatin state. Boxplots show the distribution of PIR fractions for each chromatin state (Act, active; Pois, poised; PcG, Polycomb-associated; Bg, background). Heatmaps show the log2 odds ratios of observing each promoter state associated with a CRU in each cluster (p<0.001, \u03c72 test on the contingency table). Data for NECs are shown in Figure 4\u2014figure supplement 1. (B) Genome browser representations of CRUs in ESCs. U2AF1 CRU from cluster 1 and TBX3 CRU from cluster 2, each exemplify cases where non-background PIRs within a CRU are associated with a uniform chromatin state. SUV39H2 CRU from cluster 6 and CDKN2B CRU from cluster 7, each exemplify cases where PIRs within a CRU are associated with multiple chromatin states. Interaction arcs are coloured according to PIR chromatin state (active, green; poised, orange; Polycomb-associated, red; background, grey). See Figure 4\u2014figure supplement 2 for additional examples, and Figure 4\u2014figure supplement 3 for read count interaction profiles.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** CRUs were hierarchically clustered according to their fractions of PIRs from different chromatin states in NECs. Boxplots depict the distribution of PIR fractions for each chromatin state (Act, active; Pois, poised; PcG, Polycomb-associated; Bg, background). Heatmaps coupled to boxplots show log2 odds-ratios of promoter states (p-value<0.001, \u03c72 test on the contingency tables).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Genome browser representations of CRUs in ESCs.\u00a0Interaction arcs are coloured according to PIR chromatin state (active, green; poised, orange; Polycomb-associated, red; background, grey).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Plots show the read counts corresponding to the interactions of baited promoter fragments (grey line) with other HindIII fragments. Significant interactions detected by CHiCAGO (score\u00a0\u226512) are shown in red, and sub-threshold interactions (score\u00a0\u226511 in the cell type shown and score\u00a0\u226512 in the other cell type) are shown in blue. (A) U2AF1, TBX3, SUV39H2 and CDKN2B from Figure 4B. (B) CARS, PAX9, CNPY1, RXRG and AGAP2 from Figure 4\u2014figure supplement 2. (C) RGMB, MAP2 and KCNE3 from Figure 5D\u2013F.\n\nWe set out to investigate CRU chromatin state transitions on ESC to NEC differentiation. For this analysis, and in each cell type, we classified CRUs into either single-state active (containing active, and possibly also background-state, PIRs), single-state repressed (containing poised and/or Polycomb-associated, and possibly also background-state PIRs), or background (containing only background-state PIRs). CRUs containing a combination of both active and repressed (Polycomb-associated/poised) PIRs were\u00a0classified\u00a0as dual-state. We found that 65% of the single-state CRUs in ESCs remained single-state CRUs in NECs, although approximately half of them switched their state (Figure 5A). In addition, similar proportions of CRUs lost (11%) and acquired (13%) a dual-state configuration on ESC to NEC differentiation. These findings demonstrate that considerable reorganisation of CRUs occurs during lineage commitment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig5-v2.jpg)\n\n**Figure 5.:** (A) Pie chart summarising CRU state transitions that occur upon ESC to NEC differentiation. The number of CRUs within each transition category are shown. Transitions that involve dual-state to single-state, and single-state to dual-state, are further subdivided into whether the single-state is classified as active or repressed (Polycomb-associated or poised). (B\u2013C) Heatmaps show the log2 odds ratios for CRU state transitions and associated changes in gene expression. (B) Single-state transitions showing a non-random segregation withgene expression changes (p-value=0.0031, Fisher\u2019s exact test); (C) dual-state transitions showing a non-random segregation with gene expression changes (p-value=0.0014, Fisher\u2019s exact test). Number of CRUs within each transition category are shown. Genes differentially expressed between ESCs and NECs were identified using DESeq2 (FDR < 0.05 and a log2 fold change of >1.5). Repressed state includes Polycomb-associated and poised states. (D\u2013F) Genome browser representations of CRU state transitions that occur upon the differentiation of ESCs (top image) to NECs (lower image). (D) RGMB provides an example of a CRU transitioning from a single repressed to a single active state and an associated increase in RGMB transcription. (E) MAP2 provides an example of a dual-state to a single active state CRU transition and an associated increase in MAP2 transcription. (F) KCNE3 provides an example of a single active state to a dual-state CRU transition and an associated decrease in KCNE3 transcription. Arcs are coloured according to PIR chromatin state (active, green; poised, orange; Polycomb-associated, red; background, grey).\n\nCRU state transitions associated significantly with changes in the expression of their target genes (p-value<0.005, Fisher\u2019s exact test; Figure 5B,C). In particular, genes that were transcriptionally upregulated upon ESC differentiation preferentially gained an active single-state in NECs, either through switching the chromatin state of a single-state CRU (Figure 5B) or through resolving a dual-state CRU (Figure 5C). Examples of CRUs undergoing each scenario include RGMB and MAP2, which are transcriptionally upregulated in NECs (Figure 5D,E). Pronounced chromatin changes were also detected at the CRUs of genes downregulated upon differentiation, including a loss of the active single-state and/or a transition to the repressed single-state ( Figure 5B,C;\u00a0example shown in Figure 5F). Taken together, these results suggest that the modulation of CRU chromatin state is associated with transcriptional changes upon ESC differentiation. This modulation might potentially underlie many transcriptional changes in early lineage commitment.\n\n### Rewiring and recolouring of promoter-interacting regions contribute jointly to gene expression dynamics upon lineage commitment\n\nTo investigate the underlying processes that drive changes in CRU organisation during cell lineage commitment, we studied the dynamics of promoter interactions and chromatin states at the individual PIRs. We refer to changes in PIR connectivity as \u2018rewiring\u2019, and to chromatin state changes at PIRs as \u2018recolouring\u2019, and note that they do not need to be mutually exclusive (Figure 6A). To distinguish between interactions that are rewired and retained on ESC differentiation at high confidence, we applied additional filters to the PCHi-C data, resulting in 1153 rewired (present in only one cell type) and 1258 retained (present in both ESCs and NECs) interactions (see Materials and methods for details).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig6-v2.jpg)\n\n**Figure 6.:** (A) A schematic of interaction dynamics during cell differentiation. In a \u2018recolouring\u2019 interaction (left)the PIR undergoes a change in chromatin colour (reflecting a change in chromatin state) between the two cell types. In a \u2018rewiring\u2019 interaction (right), an interaction is gained or lost upon cell differentiation. In a 'rewiring + recolouring' interaction, the loss or gain of an interaction is concomitant with changes in chromatin colour at the respective PIR. (B) Heatmap of log2 odds ratios showing the association between different PIR chromatin state transitions (recolouring) and PIR interaction dynamics (rewiring) on ESC to NEC differentiation (p-value<0.001, Fisher\u2019s exact test). (C\u2013D) Genome browser representations of interaction dynamics upon ESC to NEC differentiation. Note that only one interaction is shown for each example. Arcs are coloured according to PIR chromatin state (active, green; Polycomb-associated, red). (C) Rewiring and recolouring: upon differentiation, NR2F1 gains an interaction with a\u00a0PIR that is active in NECs, but repressed in ESCs. (D) Rewiring: the JAG1 promoter gains an interaction with an active PIR in NECs. Additional examples are shown in Figure 6\u2014figure supplement 1A,B. (E) Pie chart summarising the different scenarios in which an interaction is retained upon ESC to NEC differentiation. (F) Recolouring: the IRX3 promoter retains an interaction, but the PIR changes from repressed (in ESCs) to active (in NECs). (G) Boxplots revealing the transcriptional changes as a function of active PIR dynamics during recolouring (left) and rewiring (right) events. In either scenario, there was a significant association between the acquisition and loss of an active state and changes in gene expression (p-values<0.001 for both recolouring and rewiring according to one-sided Wilcoxon rank sum tests).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21926/elife-21926-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Genome browser representations of interaction dynamics upon ESC to NEC differentiation. Note that only one interaction is shown for each example. Arcs are coloured according to PIR chromatin state (active, green; background, grey). (A) Rewiring and recolouring: ZSCAN2 loses an interaction with a background PIR that was previously classified as active in ESCs. (B) Rewiring: HAPLN3 promoter loses an interaction with an active PIR. (C) Recolouring: RAB3B promoter retains an interaction, but the PIR changes from active to background.\n\nImportantly, we found that the co-occurrence of rewiring and recolouring interactions on ESC differentiation was significantly more common than expected at random (Figure 6B,\u00a0p-value<0.001, Fisher\u2019s exact test). Specifically, new interactions that were gained by NECs preferentially acquired the active state, or transitioned from the background to repressed state (Figure 6B, bottom row). Interactions that were lost on ESC differentiation were enriched for PIRs that transitioned from the active to poised/Polycomb-associated states, as well as for those switching to the background state (Figure 6B, middle row). Notably, the vast majority of rewiring events (99.7%) were not associated with larger-scale A/B compartment dynamics (not shown). Together, these observations indicate that lineage commitment associates with concerted changes in the connectivity and chromatin state of regulatory regions.\n\nInteractions at NR2F1 (Figure 6C) and ZSCAN2 (Figure 6\u2014figure supplement 1A) exemplify the preferential co-occurrence of rewiring and recolouring events, with interactions present in the cell type in which the respective PIR is in the active state. However, we also found examples of PIR rewiring that showed unchanged chromatin states in both cell types, such as those at the JAG1 and HAPL3 genes (Figure 6D and Figure 6\u2014figure supplement 1B). Finally, we observed that 25% of PIRs that were retained in both cell types undergo chromatin state recolouring (Figure 6E, red segment). These regions included, for example, PIRs associated with the IRX3 and RAB3B promoters (Figure 6F and Figure 6\u2014figure supplement 1C).\n\nWe asked how rewiring and recolouring events at PIRs contribute to gene expression dynamics on ESC to NEC differentiation. We found that the loss or gain of interactions with active-state PIRs associated significantly with changes in gene expression (Figure 6G), suggesting their functional contribution to transcriptional control. Notably, gene expression changes were detected at retained and recoloured PIRs (Figure 6G, left panel), and also when active-state PIRs were lost or gained through rewiring (Figure 6G, right panel).\n\nTaken together, these findings demonstrate that chromatin state changes and rewiring of interactions at PIRs contribute jointly to transcriptional regulation. Furthermore, our results show that promoter interaction dynamics preferentially co-occur with chromatin state dynamics upon cell lineage commitment.\n\n## Discussion\n\n### A comprehensive atlas of promoter interactions\n\nOur study presents an atlas of promoter interactions in human pluripotent and early lineage-committed cells, and offers new insights into the association between genome organisation and gene regulation. The high resolution of PCHi-C has enabled us to detect individual promoter-associated loops at a single restriction enzyme fragment resolution. We find that promoter-interacting regions in both cell types harbour multitudes of previously known and putative enhancer elements, which we link with their physically associated target genes. While the identified connections are predictive of regulatory relationships, it is important to note that the current data are correlative and will require functional validation using targeted genetic approaches and reporter assays. In addition to active enhancers, we find extensive promoter connectivity to regions associated with Polycomb-mediated repression and poising, reinforcing the role of Polycomb-group proteins in controlling chromosomal topology at transcriptionally inactive genes (Entrevan et al., 2016; Li et al., 2015; Schoenfelder et al., 2015b; Vieux-Rochas et al., 2015). Consistent with previous observations (Sanyal et al., 2012), we also detect large numbers of interactions between promoters of both active and inactive genes, and regions devoid of chromatin features. It is possible that such interactions are structural, rather than play gene regulatory roles. However, a regulatory function for some \u2018unmarked\u2019 PIRs also cannot be ruled out as recent mutagenesis experiments have identified functional elements that lack 'classic' chromatin annotations (Pradeepa et al., 2016; Rajagopal et al., 2016).\n\n### Reconfiguration of cis-regulatory units upon lineage commitment\n\nThe high-resolution promoter-interaction information has enabled the identification of cis-regulatory units (CRUs) as sets of interactions connected to the same promoter. Taking the view of CRUs, we consider jointly the dynamics of chromatin states and interactions as ESCs differentiate, and assess the potential contribution of these processes to changes in gene expression during development. We observe that CRUs reconfigure extensively upon cell differentiation. These include the CRUs of ESC- and NEC-specific genes, for which CRU reconfiguration associates with transcriptional changes upon differentiation, as well as the CRUs of genes that are not expressed in either cell type, consistent with the model of progressive chromatin changes at lineage-inappropriate genes during lineage commitment (Spivakov and Fisher, 2007).\n\nPrevious studies on candidate loci have proposed that cell-state changes are associated with two predominant models of enhancer\u2013promoter interaction dynamic that have been termed instructive and permissive (de Laat and Duboule, 2013). Instructive interactions are established de novo upon cell state change and are concomitant with target gene activity. In contrast, permissive interactions are already in place before the gene activation occurs and may therefore contribute to enhancer priming. Examples of instructive and permissive interactions have been described in pluripotent cell reprogramming and differentiation (Apostolou et al., 2013; Denholtz et al., 2013; Phillips-Cremins et al., 2013; Wei et al., 2013; Zhang et al., 2013), but little was known on a global scale about which model of enhancer-promoter interactions is predominant during lineage commitment. Here, we show that developmental changes at CRUs involve both the rewiring of \u2018instructive\u2019 interactions and the recolouring of the chromatin state of \u2018permissive\u2019 interacting regions. Notably, we find that these two processes tend to occur hand in hand, with the strongest association occurring between cell-type-specific promoter interactions and the active state of the respective PIRs. Importantly, CRU chromatin dynamics (at both rewired and preformed interactions) associates with consistent changes in gene expression, suggesting that both mechanisms are functionally important in mediating lineage-specific transcriptional programmes. The exact determinants of \u2018permissive\u2019 versus \u2018instructive\u2019 interactions remain to be elucidated and may depend on the identity of cis-acting factors recruited to the regulatory regions, as well as on local chromatin environments.\n\n### Implications for developmental gene regulation by multiple enhancers\n\nThe CRU view provides an opportunity to consider multi-modular gene regulation in early human development that has hitherto been studied on a limited number of genes, predominantly in model organisms (Barolo, 2012; Cannav\u00f2 et al., 2016; Hong et al., 2008). The \u2018single-state\u2019 architecture that we detect at the majority of CRUs is in line with observations of \u2018shadow enhancers\u2019 with overlapping activities in Drosophila (Hong et al., 2008). It has been suggested that this cis-regulatory organisation ensures the robustness of gene regulation and can buffer the effects of deleterious sequence variation, as well as providing opportunities for evolutionary innovation (Barolo, 2012; Cannav\u00f2 et al., 2016; Hong et al., 2008; Perry et al., 2010).\n\n\u2018Dual-state\u2019 CRUs, although representing a relative minority of the CRUs we analysed, offer additional insights into signal integration at promoters. Specifically, the fact that the chromatin state of the promoter largely associates with the predominant chromatin state of the connected PIRs suggests that promoters may integrate signals from remote elements based on \u2018majority vote logic\u2019. Mechanistically, this logic may be a consequence of largely independent enhancer action (potentially at both single-state and dual-state CRUs) that is consistent with the \u2018hit-and-run\u2019 model of transcriptional regulation (Schaffner, 1988; Varala et al., 2015), and provides a flexible way to fine-tune the expression of multi-enhancer genes (Guerrero et al., 2010; Lagha et al., 2012). However, this model also does not preclude the possibility that promoter chromatin states at \u2018dual-state\u2019 CRUs undergo a continuous turnover depending on the state of the PIR they contact. In this case, the observed \u2018majority-vote\u2019 promoter chromatin states would correspond to the predominant state detected at the population level.\n\nTheoretically, the generally independent enhancer action also enables activation signals from individual elements to quantitatively \u2018add up\u2019 (at least to some extent) to promote stronger transcriptional outputs (Arnold et al., 2013; Bothma et al., 2015; Lam et al., 2015; Spivakov, 2014). Our observation that the resolution of dual-state CRUs toward a uniformly active state generally results in increased expression (and vice versa) supports this model. However, analyses in Drosophila have identified exceptions to additive enhancer activity (Bothma et al., 2015) and have provided examples of enhancers that activate more than one promoter in a coordinated fashion (Fukaya et al., 2016), which is not immediately expected from the \u2018hit-and-run\u2019 looping model. Finally, there is also a possibility that multiple enhancers are jointly engaged in \u2018chromatin hubs\u2019 with promoters, rather than acting individually (Hanscombe et al., 1991; Jiang et al., 2016; Patrinos et al., 2004; Tolhuis et al., 2002; Wijgerde et al., 1995). These mechanistic questions go beyond the capabilities of Hi-C-based analyses of cell populations, and as such it is possible that multiple promoter interactions detected within a CRU take place either concurrently or simultaneously. The emerging studies at the single-molecule level (such as [Bartman et al., 2016; Fukaya et al., 2016]) will likely shed further light on the molecular mechanisms that underpin the principles of CRU organisation.\n\nPromoter \u2013 enhancer interactions are vitally important for gene regulation and their disruption may lead to pronounced developmental abnormalities (Epstein, 2009). The high-resolution resource of the promoter-interaction landscape in pluripotent and early lineage-committed cells presented here, therefore, provides a stepping stone to understanding the logic of gene regulation and its aberrations during human embryogenesis.\n\n## Materials and methods\n\n### Cell culture\n\nESCs (H9/WA09; obtained from WiCell\u00a0(Madison,\u00a0WI); RRID:CVCL_9773) were cultured at 37\u00b0C in 5% CO2 in air in Pluripro media and matrix (Cell Guidance Systems\u00a0(Cambridge,\u00a0UK)). Authentication of ESCs was achieved by confirming the expression of pluripotency genes and protein markers, and by SNP analysis of sequencing data. ESCs were routinely verified as mycoplasma-free using a PCR-based assay (Sigma\u00a0(St.\u00a0Louis,\u00a0MO)). The H9/WA09 line is not on the list of commonly misidentified cell lines (International Cell Line Authentication Committee). ESCs were differentiated into NECs using a previously described protocol (Rada-Iglesias et al., 2011) and samples were harvested on day 7.\n\n### Flow cytometry\n\nFollowing dissociation with accutase, ESCs and NECs were stained on ice for 45 min with CD326-AF647 (BioLegend\u00a0(London,\u00a0UK), Cat# 324212, RRID:AB_756086; 5 \u00b5L per million cells) and CD56-PE (BD Biosciences\u00a0(San Jose, CA), Cat# 345812, RRID:AB_2629216; 20 \u00b5L per million cells) antibodies in 100 \u00b5l PBS containing 2% FBS. After washing, DAPI was included at a final concentration of 5 \u00b5l/mL for live/dead cell discrimination, and flow cytometry analysis was performed using a BD LSRFortessa with subsequent data analysis using FlowJo V10.1.\n\n### Hi-C and promoter capture Hi-C (CHi-C)\n\nHi-C and Promoter CHi-C libraries were generated essentially as described (Mifsud et al., 2015; Schoenfelder et al., 2015a), with minor modifications. 3 to 4 \u00d7 107 cells (ESCs or NECs) were fixed in 2% formaldehyde (Agar Scientific\u00a0(Stansted,\u00a0UK)) for 10 min, after which the reaction was quenched with ice-cold glycine (0.125 M final concentration). Cells were collected by centrifugation (400 x g for 10 min at 4\u00b0C), and washed once with PBS (50 ml). After another centrifugation step (400 x g for 10 min at 4\u00b0C), the supernatant was completely removed and the cell pellets were immediately frozen in liquid nitrogen and stored at \u221280\u00b0C. After thawing, the cell pellets were incubated in 50 ml ice-cold lysis buffer (10 mM Tris-HCl pH 8, 10 mM NaCl, 0.2% Igepal CA-630, protease inhibitor cocktail (Roche\u00a0(Basel,\u00a0Switzerland)) for 30 min on ice. After centrifugation to pellet the cell nuclei (650 x g for 5 min at 4\u00b0C), nuclei were washed once with 1.25 x NEBuffer 2. The nuclei were then resuspended in 1.25 x NEBuffer 2, SDS was added (0.3% final concentration) and the nuclei were incubated at 37\u00b0C for 1\u00a0hr with agitation (950 rpm). Triton X-100 was added to a final concentration of 1.7% and the nuclei were incubated at 37\u00b0C for 1\u00a0hr with agitation (950 rpm). Restriction digest was performed overnight at 37\u00b0C with agitation (950 rpm) with HindIII (NEB; 1500 units per 7 million cells). Using biotin-14-dATP (Life Technologies\u00a0(Carlsbad,\u00a0CA)), dCTP, dGTP and dTTP (all at a final concentration of 30 \u00b5M), the HindIII restriction sites were then filled in with Klenow (NEB\u00a0(Ipswich,\u00a0MA)) for 75 min at 37\u00b0C. After addition of SDS (1.42% final concentration) and incubation at 65\u00b0C with agitation (950 rpm) for 20 min, ligation was performed for 4\u00a0hr at 16\u00b0C (50 units T4 DNA ligase (Life Technologies) per 7 million cells starting material) in a total volume of 8.2 ml ligation buffer (50 mM Tris-HCl, 10 mM MgCl2, 1 mM ATP, 10 mM DTT, 100 \u00b5g/ml BSA, 0.9% Triton X-100) per 7 million cells starting material. After ligation, reverse crosslinking (65\u00b0C overnight in the presence of Proteinase K (Roche)) was followed by RNase A (Roche) treatment and two sequential phenol/chloroform extractions. After DNA precipitation (sodium acetate 3 M pH 5.2 (1/10 volume) and ethanol (2.5 x volumes)) overnight at \u221220\u00b0C, the DNA was spun down (centrifugation 3200 x g for 30 min at 4\u00b0C). The pellets were resuspended in 400 \u00b5l TLE (10 mM Tris-HCl pH 8.0; 0.1 mM EDTA), and transferred to 1.5 ml eppendorf tubes. After another phenol/chloroform extraction and DNA precipitation overnight at \u221220\u00b0C, the pellets were washed three times with 70% ethanol, and the DNA concentration was determined using Quant-iT Pico Green (Life Technologies). The efficiency of biotin incorporation was assayed by amplifying a 3C ligation product (primers available upon request), followed by digest with HindIII or NheI.\n\nTo remove biotin from non-ligated fragment ends, 40 \u00b5g of Hi-C library DNA were incubated with T4 DNA polymerase (NEB) for 4 hr at 20\u00b0C, followed by phenol/chloroform purification and DNA precipitation overnight at \u221220\u00b0C. After a wash with 70% ethanol, sonication was carried out to generate DNA fragments with a size peak around 400 bp (Covaris E220 settings: duty factor: 10%; peak incident power: 140W; cycles per burst: 200; time: 55 s). After end repair (T4 DNA polymerase, T4 DNA polynucleotide kinase, Klenow (all NEB) in the presence of dNTPs in ligation buffer (NEB)) for 30 min at room temperature, the DNA was purified (Qiagen (Hilden,\u00a0Germany)\u00a0PCR purification kit). dATP was added with Klenow exo- (NEB) for 30 min at 37\u00b0C, after which the enzyme was heat-inactivated (20 min at 65\u00b0C). A double size selection using AMPure XP beads (Beckman Coulter,\u00a0Brea,\u00a0CA) was performed: first, the ratio of AMPure XP beads solution volume to DNA sample volume was adjusted to 0.6:1. After incubation for 15 min at room temperature, the sample was transferred to a magnetic separator (DynaMag-2 magnet; Life Technologies), and the supernatant was transferred to a new eppendorf tube, while the beads were discarded. The ratio of AMPure XP beads solution volume to DNA sample volume was then adjusted to 0.9:1 final. After incubation for 15 min at room temperature, the sample was transferred to a magnet (DynaMag-2 magnet; Life Technologies). Following two washes with 70% ethanol, the DNA was eluted in 100 \u00b5l of TLE (10 mM Tris-HCl pH 8.0; 0.1 mM EDTA). Biotinylated ligation products were isolated using MyOne Streptavidin C1 Dynabeads (Life Technologies) on a DynaMag-2 magnet (Life Technologies) in binding buffer (5 mM Tris pH8, 0.5 mM EDTA, 1 M NaCl) for 30 min at room temperature. After two washes in binding buffer and one wash in ligation buffer (NEB), PE adapters (Illumina, San Diego, CA) were ligated onto Hi-C ligation products bound to streptavidin beads for 2 hr at room temperature (T4 DNA ligase NEB, in ligation buffer, slowly rotating). After washing twice with wash buffer (5 mM Tris, 0.5 mM EDTA, 1 M NaCl, 0.05% Tween-20) and then once with binding buffer, the DNA-bound beads were resuspended in a final volume of 90 \u00b5l NEBuffer 2. Bead-bound Hi-C DNA was amplified with seven PCR amplification cycles using PE PCR 1.0 and PE PCR 2.0 primers (Illumina). After PCR amplification, the Hi-C libraries were purified with AMPure XP beads (Beckman Coulter). The concentration of the Hi-C libraries was determined by Bioanalyzer profiles (Agilent Technologies, Santa Clara, CA) and qPCR (Kapa Biosystems\u00a0(Wilmington,\u00a0MA)), and the Hi-C libraries were paired-end sequenced (HiSeq 1000, Illumina) at the Babraham Institute Sequencing Facility.\n\nFor Promoter Capture Hi-C, 500 ng of Hi-C library DNA was resuspended in 3.6 \u00b5l H2O, and custom hybridization blockers (Agilent Technologies) were added to the Hi-C DNA. Hybridization buffers and the custom-made RNA capture bait system (Agilent Technologies; designed as previously described (Mifsud et al., 2015): 37,608 biotinylated RNAs targeting the ends of 22,076 promoter-containing HindIII restriction fragments) were prepared according to the manufacturer\u2019s instructions (SureSelect Target Enrichment, Agilent Technologies). The Hi-C library DNA was denatured for 5 min at 95\u00b0C, and then incubated with hybridization buffer and the RNA capture bait system at 65\u00b0C. After 24 hr incubation at 65\u00b0C, biotin/streptavidin pulldown (MyOne Streptavidin T1 Dynabeads; Life Technologies) and washes were performed according to the SureSelect Target enrichment protocol (Agilent Technologies). After the final wash, the beads were resuspended in 30 \u00b5l NEBuffer 2. After a post-capture PCR (four amplification cycles using Illumina PE PCR 1.0 and PE PCR 2.0 primers), the Promoter CHi-C libraries were purified with AMPure XP beads (Beckman Coulter). The concentration of the Promoter CHi-C libraries was determined by Bioanalyzer profiles (Agilent Technologies) and qPCR (Kapa Biosystems), and the Promoter CHi-C libraries were paired-end sequenced (HiSeq 1000, Illumina) at the Babraham Institute Sequencing Facility.\n\n### Hi-C analysis and the definition of TADs, TAD boundaries and compartments\n\nRaw sequencing reads were processed using the HiCUP pipeline (Wingett et al., 2015), which mapped sequencing read pairs against the human genome (GRCh37), filtered out experimental artifacts such as circularized reads and re-ligations, and removed all duplicate read pairs. The aligned Hi-C data were analysed using HOMER v4.7 (http://homer.salk.edu/homer/) (Heinz et al., 2010). Coverage- and distance-related correction factors of the binned data were computed at 25 kb and 250 kb resolutions, based on the iterative correction algorithm (Imakaev et al., 2012). TADs were identified based on directionality indices (Dixon et al., 2012) of Hi-C interactions 1 Mb upstream and downstream from a 25 kb sliding window every 5 kb steps, which were then smoothed using a running average over a\u00a0\u00b1\u00a025 kb window. TADs were called between pairs of consecutive local maxima (TAD\u00a0start) and minima (TAD\u00a0end) of the smoothed directionality indices with a standard score difference (TAD \u2206Z score) above 2.0, and the TAD ends were extended outward to the genomic bins with no directionality bias. These TAD definitions were used to compute the fraction of significant PCHi-C interactions falling inside TADs, alongside TADs reported by Dixon et al., 2015. To assess the strength of the TAD boundaries crossed by promoter interactions, we defined a TAD boundary strength score (TADB \u2206Z score) as the difference between the smoothed directionality index values at the local maximum (end of the preceding TAD) and the local minimum (start of the following TAD). Defined this way, TADB \u2206Z scores (unlike the TAD \u2206Z scores) do not depend on the stringency of the opposite boundary of the respective TAD.\n\nA/B compartments were called by computing the principal components of the distance- and coverage-corrected interaction profile correlation matrix at 250 kb resolution (Lieberman-Aiden et al., 2009). Positive values of the principal component were aligned with H3K4me3 ChIP-seq signals for H9 human ESCs (Rada-Iglesias et al., 2011). For chromosomes 4 and X, we used the second principal component instead of the first, as the first component described the preferential contact pattern within chromosome arms rather than compartments. The principal component values ranged from \u221242 to 42. To quantify the compartment changes of significant interactions, each side of the interaction was classified as A or B compartment if the principal component of its 250 kb bin was above 10 or below \u221210, respectively. Interactions falling within the 250 bins that had the principal component scores between \u221210 and 10 were considered as falling outside either compartment.\n\n### PCHi-C interaction calling\n\nInteractions were called at the level of individual HindIII fragments using version 0.1.4 of the CHiCAGO pipeline (Cairns et al., 2016) based on two biological replicates for each cell type that were normalised and combined as part of the pipeline. CHiCAGO incorporates a convolution background model, which emcompasses the \u2018Brownian\u2019 (real, but expected interactions) and \u2018technical\u2019 (assay and sequencing artefacts) components, and a weighted multiple testing correction procedure trained on interaction distance. CHiCAGO interaction scores correspond to \u2013log-transformed, weighted p-values for each fragment read pair. A score threshold of 12 was used (equivalent to a threshold of 5 in Chicago v1.0.0+ due to a soft-thresholding procedure introduced in this version). This threshold was chosen empirically based on balancing the enrichment for chromatin marks at PIRs with the overall number of detected interactions. Additionally, interactions with scores between 11 and 12 were included in the analysis if they scored above 12 in the other cell type.\n\n### RNA-sequencing libraries and analysis\n\nTotal RNA was extracted from ESCs and NECs using an RNeasy Mini Kit (Qiagen). Indexed mRNA-seq libraries were constructed from 500 ng total RNA using the Tru-Seq RNA Library Prep Kit v2 (Illumina). Library fragment size and concentration was determined using an Agilent Bioanalyzer 2100 and KAPA Library Quantification Kit (KAPA Biosystems). Samples were sequenced on an Illumina HiSeq as single-end libraries at the Babraham Institute Sequencing Facility. Reads were trimmed using trim galore (http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) with default parameters to remove the standard Illumina adapter sequence. Reads were mapped to the GRCh37 assembly using tophat (Trapnell et al., 2009). BAM files were imported to Seqmonk (http://www.bioinformatics.babraham.ac.uk/projects/seqmonk/). Raw read counts per transcript were calculated using the RNA-seq quantitation pipeline on the Ensembl v70 gene set using non-directional counts. Differential analysis of gene expression was performed using the default settings in DESeq2 (Love et al., 2014) without independent filtering of the results. Differentially expressed genes were called at padj < 0.05 and log2 fold change above 1.5 or below \u22121.5.\n\n### ChIP data analysis and definition of chromatin states\n\nThe histone modification ChIP-seq data (H3K4me1, H3K4me3, H3K27ac and H3K27me3) for ESCs and NECs were from Rada-Iglesias et al., 2011, available in Gene Expression Omnibus under accession number GSE24447. Data were converted to GRCh37 using liftOver (Kent et al., 2002). CTCF ChIP-seq data were from ENCODE (ENCODE Project Consortium, 2012).\n\nChromatin segmentations were performed on the basis of multiple histone modification ChIP datasets using a Hidden Markov Model-based method implemented in ChromHMM (version 1.10) (Ernst and Kellis, 2012) with default settings. The segmentation was carried out jointly through providing \u2018concatenated\u2019 data for both cell types as input. The resulting 16 states were curated into four broad chromatin states based on analysing their enrichment for different histone marks (Figure 1\u2014figure supplement 3A) as follows. States 1\u20136 characterised by the presence of H3K4me3 and/or H3K27ac, and the absence of H3K27me3, were labelled \u2018active\u2019; states 7\u20139 showing a combination of H3K4 methylation and H3K27me3 were labelled \u2018poised\u2019; state 10 showing H3K27me3 and no H3K4 methylation was labelled \u2018Polycomb-associated\u2019; states 14\u201316 showing no detectable signal for the four tested histone modifications were labelled \u2018background\u2019. In addition, two more curated states were defined, but not considered further: states 11\u201312 were characterised by a \u2018mixed\u2019 pattern of both H3K27ac and H3K27me3, which likely arose from a technical issue such as heterogeneity within the samples; state 13 characterised by H3K4me1 alone was classified as \u2018intermediate enhancers\u2019, but the fraction of PIRs bearing this signature (~1%) was too small to analyse them as an individual category. HindIII fragments in the human genome (including baits and PIRs) were then classified according to the chromatin states detected within them. When more than one chromatin state was present, classification was resolved in the following manner: (i) any functional state (e.g. active, poised, Polycomb-associated) was prioritised above background; (ii) active, poised and Polycomb-associated states were prioritised above intermediate; (iii) poised state was prioritised above the Polycomb-associated state; (iv) active state together with any inactive state (i.e. poised or Polycomb-associated) was labelled as mixed. Based on these heuristics, we assigned a single chromatin state (including the background state) to 81% of PIRs in both cell types.\n\n### Tissue-specific enhancer activity\n\nTransgenic reporter assays for enhancer activity are described within the VISTA Enhancer Browser (Visel et al., 2007). The enhancer sequences from VISTA were overlapped with PIRs, and their putative target genes were defined according to the PCHi-C detected promoter-PIR interactions.\n\n### Integration with TADs and INs\n\nHindIII fragments were mapped to TADs defined as described above and INs obtained from Ji et al., 2016. Baited fragments overlapping TAD boundaries, and those mapping outside INs, were excluded from respective analyses. For each CRU, the percentage of interactions that map within the same TAD or IN was calculated and these values were collected into 12 bins,\u00a0The first and last bins contained the values of 0% and 100%, respectively, and the remaining bins contained all other values split into 10% intervals. These results were compared to 1000 random permutations of CRUs across all promoter fragments performed in a manner retaining the overall CRU structure.\n\n### Definition of CRU clusters\n\nEach CRU was categorised according to the fraction of PIRs in the active, poised and Polycomb-associated state. These fractions were used for hierarchical clustering based on Euclidian distances (method='Euclidian\u2019 in dist function in R) with the average agglomeration method (method='average\u2019 in hclust function in R). PIRs assigned intermediate or mixed chromatin states did not contribute to the clustering procedure, in the latter case because the states of the regulatory elements interacting with target promoters within these PIRs are not identifiable. CRUs containing only mixed or intermediate PIRs were not included in the analysis.\n\n### Definition of retained and rewired interactions\n\nFalse-negative rates associated with stringent signal thresholds drive down the observed overlap between conditions and may overestimate the proportion of cell-type-specific interactions. Therefore, we applied additional criteria to identify high-confidence subsets of rewired and retained interactions based on replicate-level CHiCAGO interaction calls. First, we required that rewired interactions have scores above 12 in both biological replicates of the same cell type, and below 12 in both replicates of the other cell type. We then binned the interactions satisfying these criteria into five groups of equal size according to their interaction scores in the merged samples. Interactions belonging to the top bin in one cell type and the bottom bin in the other cell type were considered as rewired. Interactions with scores above 12 in the two replicates of both cell types were considered as retained. Applying these criteria and filtering out interactions with PIRs in the mixed and intermediate states, we obtained high-confidence sets of 1258 retained and 1153 rewired interactions that were used in the analysis.\n\n### Data availability\n\nSequencing data have been deposited in Gene Expression Omnibus (GEO) with accession number GSE86821. Processed data including interaction peak calls in the WashU Genome Browser text format and RNA-seq raw read counts were deposited in the same GEO repository. CHiCAGO objects containing all detected interactions, ChromHMM segmentation data, DESeq2-processed RNA-seq data and the defitions of TADs have been made available through the Open Science Framework (http://osf.io/sdbg4).\n",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "63b157cd-4ce0-4b3c-8392-1b84f045ddbe",
+      "submission_id": "e1db860c-6bd0-4067-b762-8999279c5e16",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Job Dekker, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21926.031](https://doi.org/10.7554/eLife.21926.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Global reorganisation of cis-regulatory units upon lineage commitment of human embryonic stem cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Job Dekker (Reviewer#1), is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Fiona Watt as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Frank Alber (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. In the course of discussion the reviewers and editors decided that this work would be more appropriately reconsidered as a Tools and Resources (TR) paper rather than a Research Article (RA). The work appears to be a valuable resource but the primary research results are not considered sufficiently novel to warrant publication as an RA. Nonetheless, we hope you are willing to go forward with this in the category of a TR paper.\n\nSummary:\n\nFreire-Pritchett et al. employ Capture Hi-C to detect chromatin interactions between promoters and distal elements in ES cells and in ESC derived neuroectodermal cells (NECs). The authors report significant interactions between many promoters and different distal elements in ESCs and NECs. Analysis of the chromatin state of these elements indicates that these are functional elements including (poised) enhancers. Further, the connectivity between promoters and distal elements differs between ESCs and NECs and this relates to the transcriptional status of the genes and chromatin status of the distal elements. The authors then define cis-regulatory units (CRUs) as promoters and their associated distal elements. Although many of the CRUs are contained within TADs and INs, as had been expected based on earlier studies, the authors report that many can extend beyond TAD and IN boundaries.\n\nThe main impact of this paper is to announce the availability of a large data set of enhancer-promoter contacts identified via capture Hi-C. Many of the experimental technologies and statistical analysis methods are established and rely on previously published methodologies. That said the reviewers raise concerns about specific aspects of the analysis. Further, many of the reported correlations are already known and the results confirm earlier studies (e.g. promoters interact with multiple distal elements, these elements coincide with cell type-specific enhancer-like elements and these connections are equally cell type-specific, and enriched for intra-TAD interactions). The main new aspect of this work is the fact that a genome-wide promoter-anchored interaction atlas is described, and this resource could be of interest to the community given that many study these cells.\n\nEssential revisions:\n\nPlease address these main criticisms (more details are in the minor points section):\n\n1) Many of the correlations between looping, gene expression and chromatin state are not novel. Focus on the new things, and present the data as a large dataset or resource for the community.\n\n2) The reviewers raised issues related to the statistical analysis and computational methods to determine PIRs (and their hierarchical clustering), TADs, and CRUs (below). Please address all of them.\n\n3) Related to the previous point, the reviewers raised concerns about the claim that CRUs are distinct from INs, TADs. The main point to address is how the methods to determine these features compare and whether lack of overlap can be due to sensitivity of the computational methods.\n\nMinor points:\n\n1) One concern is that the CHiCAGO method identifies significant interactions using only the general distance decay of interactions into account. It does not take into account that any pair of interactions between loci located within a TAD or IN, or between loci located in a similar compartment (A, B or subcompartment types) are generally higher than loci located in different TADs/INs/Compartments. As a result, a number of significant interactions are not necessarily \"loops\" (specific point-to-point interactions). This is not to say that these loci do not interact more frequently than expected given their genomic distance, but these interactions can reflect general higher order structures such as domains etc. This can explain why many interacting loci appear to not have chromatin marks: these can be \"bystander\" interactions that are the result of a nearby structural feature. I recommend that the authors repeat their analysis using a background model that takes domains into consideration.\n\n2) The TAD calling procedure is quite simple. Is there any evidence that this procedure produces TAD calls of comparable quality to those produced by, for example, the HMM of Dixon et al. Nature 2012?\n\n3) The TAD and IN comparison is unsatisfying. The main conclusion seems to be that CRUs are not particularly aligned with TADs and INs. This could be because the two phenomena are more or less independent of each other, or because the TADs, INs and CRUs are each defined in a fairly arbitrary fashion. If, for example, the simple TAD calling scheme employed here is not working well, then it would lead to the observed discordance.\n\n4) The finding that CRUs can extend beyond TAD or IN boundaries is interesting, but the data is not sufficient to claim a new \"feature of genome architecture\". Further analyses are needed such as: when a CRU extends beyond a TAD boundary, is this a weak TAD boundary? It is well known that TADs are nested structures. Do CRUs remain within the larger nested domains? This seems to be the case for POUF2. Quantification of boundary strength is required, as it seems not inconsistent with the TAD/IN models of enhancer action if the authors find interactions across weak boundaries, but not strong boundaries. Also, are these interactions beyond the boundaries equally strong, or are they much lower in contact frequency\n\n5) The main text claims that the promoter capture Hi-C data was processed to identify \"significant cis-interactions.\" Looking at Methods, we learn that these contacts correspond to a threshold of 12, on a \"log-transformed, weighted p-value\" scale. This vague description makes it impossible to actually interpret the confidence associated with a threshold of 12, especially since we are told that the threshold corresponds to \"a threshold of 5 in Chicago v1.0.0+ due to a soft-thresholding procedure introduced in this version.\" The choice of threshold must be fully justified and described. The text claims that Chicago uses an FDR control procedure, so the interactions that are presented here should be reported along with their FDR threshold.\n\n6) The manuscript contains no details on precisely how ChromHMM was run. Details like software version numbers and any parameter settings should be given. Importantly, the text should specify whether the segmentation was carried out independently on each cell type, or jointly, and if the latter, whether the data tracks were \"stacked\" (i.e., 8 marks per position) or \"concatenated\" (4 marks per position, across two concatenated copies of the genome).\n\n7) Details of the \"curation\" of the 16 inferred states should also be provided. When the 16 states were collapsed to four states, what was the basis for this collapsing? It seems strange that some states were eliminated at this stage because they contained multiple marks.\n\n8) How are PIRs defined: at the level of individual restriction fragments, or are adjacent fragments that both score significant merged into a single PIR?\n\n9) The authors do not show many tracks of real data (only in one of the supplemental figures). Throughout they only show arcs to indicate significant contacts. This makes it difficult to assess the quality of the data.\n\n10) Promoters often interact with CTCF sites. Did the authors find this in their dataset as well?\n\n11) The authors focus on cis-interactions. Can the authors describe trans interactions as well? Given that trans-regulation is considered rare, this analysis will provide context for interpretation of the cis data.\n\n12) Did the authors detect any known enhancer-promoter pairs? Also, the authors imply that the distal elements that touch promoters are regulating these promoters, but beside correlations between interactions, transcription and chromatin state of the distal elements, no evidence for direct regulation is provided. This would require deletion of the elements, e.g. by CRISPR. The Vista analysis of the POUF2 interactions suggests that many PIRs are enhancers. That is similar in information as the observation that PIRs overlap loci with histone modifications associated with enhancers. The key thing to validate is that these enhancers indeed regulate the interacting promoter. The fact that the pattern of activity of these enhancers resembles POU3F2 expression is encouraging but not definitive. The authors should either provide direct evidence for functional relationships or clearly discuss the extent to which the current data predicts such relationships even though the data currently is correlative.\n\n13) The authors examine the dynamic rewiring and recoloring of interactions as cells differentiate from ESCs to NECs. They report gain and loss of interactions and these are related to gain or loss of chromatin marks. This is interesting, but what needs to be tested is whether this is related compartment changes (see above). This is not to say these interactions are not relevant, but it would be important to determine how they relate to larger scale compartment changes. One interesting implication could be that in fact cell type-specific compartment changes are driven by altered interactions between functional elements that are active in a cell type-specific manner.\n\n14) How do the authors interpret interactions that involve non-expressed genes?\n\n15) The hierarchical clustering of PIRs by the prevalence of different chromatin state labels is fairly uninformative. The fact that these different categories exist in the data is not surprising, and the claim that these eight labels somehow have \"potential implications for understanding the logic of signal integration at promoters\" is not well supported.\n\n16) In the Abstract, the sentence \"Here, we generate[\u2026]\" should mention what assay was employed.\n\n17).In the Introduction: \"The extreme combinatorial complexity of Hi-C[\u2026]\" The complexity is really only quadratic, not combinatorial.\n\n18). In the Results section: The URL for data availability should be included at the end of the sentence, \"This data resource[\u2026]\"\n\n19) Also in the Results section: \"NEC PIRs were strongly enriched\" This claim requires statistical support.\n\n20) New paragraph at \"We next sought[\u2026]\"\n\n21) Two of the observations offered in the Discussion do not seem to be supported by direct evidence in Results: \"we find extensive promoter connectivity to regions associated with Polycomb-associated repression and poising, and \"we[\u2026] detect large numbers of promoter interactions with regions devoid of chromatin features.\" These observations seem to be offered for the first time in Discussion.\n\n22) The work does not show whether all the interactions are present simultaneously in a cell, or if the promoter state may vary between cells, depending on the probability with which the promoter is interacting with any of the potential alternative enhancers of a given chromatin state. Please discuss this issue in the main text.\n\n23) Out of the ~21000 promoters, the authors focused their CRU analysis on only 16,000 protein-coding genes. Would the authors expect differences in the outcome if the other remaining promoters would be considered?\n\n24) Out of the 16,000 protein-coding promoters about 9000 were defined as CRU. It may be good to know the selection criteria (i.e. is it based on a minimum number of PIRs per promoter?).\n\n25) Figure 3B defines a CRU as a set of PIRs that seem to be concurrently interacting with the promoter in the same cell. Maybe the authors could indicate in the caption that it cannot be ruled out that some PIRs may provide alternative rather then concurrent interactions.\n",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d77cf082-a86c-4b22-aade-5838c5f2249b",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C1",
+      "claim": "Promoter Capture Hi-C was used to generate a high-resolution atlas of chromosomal interactions involving ~22,000 gene promoters in human pluripotent and lineage-committed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we use Promoter Capture Hi-C to generate a high-resolution atlas of chromosomal interactions involving ~22,000 gene promoters in human pluripotent and lineage-committed cells, identifying putative target genes for known and predicted enhancer elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the use of Promoter Capture Hi-C to generate the atlas, and this is supported by the experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "e8646e48-8f09-476c-81aa-d1db1fa01b0c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C2",
+      "claim": "Extensive dynamics of cis-regulatory contacts occur upon lineage commitment, including the acquisition and loss of promoter interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We reveal extensive dynamics of cis-regulatory contacts upon lineage commitment, including the acquisition and loss of promoter interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the PCHi-C data comparing ESCs and NECs presented in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "487e3b4f-a038-49a9-8b47-6a5aaad8ab46",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C3",
+      "claim": "Spatial rewiring of promoter interactions occurs preferentially with predicted changes in the activity of cis-regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial rewiring occurs preferentially with predicted changes in the activity of cis-regulatory elements and is associated with changes in target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the integration of PCHi-C data with chromatin state information and gene expression data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "2b68b2e1-7b8e-4c2e-9d73-3378af78871d",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C4",
+      "claim": "Spatial rewiring of promoter interactions is associated with changes in target gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial rewiring occurs preferentially with predicted changes in the activity of cis-regulatory elements and is associated with changes in target gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This association is demonstrated through the integration of interaction dynamics with RNA-seq data as shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8d183ce5-54d4-4f33-bb87-923981ec552e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C5",
+      "claim": "PCHi-C identified 75,795 significant cis-interactions between promoters and other genomic regions in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "PCHi-C data normalisation and signal detection using the CHiCAGO pipeline (Cairns et al., 2016) identified 75,795 significant cis-interactions between promoters and other genomic regions in ESCs and 75,624 in NECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the CHiCAGO pipeline analysis of the PCHi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "70aeead1-fd9f-4d7e-a613-0f4b44872d4c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C6",
+      "claim": "PCHi-C identified 75,624 significant cis-interactions between promoters and other genomic regions in NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "PCHi-C data normalisation and signal detection using the CHiCAGO pipeline (Cairns et al., 2016) identified 75,795 significant cis-interactions between promoters and other genomic regions in ESCs and 75,624 in NECs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the CHiCAGO pipeline analysis of the PCHi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "dfa0dc0c-730b-4aac-9d79-6d2e8ac247a6",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C7",
+      "claim": "Approximately 300 significant trans-interactions were detected in each cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, approximately 300 significant trans-interactions were detected in each cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is reported as a result from the CHiCAGO pipeline analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "53e0676e-7f7b-4c95-872a-226904ec6407",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C8",
+      "claim": "PCHi-C samples showed an 11 to 15-fold enrichment for promoter-containing interactions over conventional Hi-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, PCHi-C samples showed an 11 to 15-fold enrichment for promoter-containing interactions over conventional Hi-C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This enrichment is calculated by comparing PCHi-C data to conventional Hi-C data generated in the same study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "ffcb90b2-40b9-48d3-8ce1-a706b61d8f6c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C9",
+      "claim": "Promoter-interacting regions (PIRs) are significantly enriched for histone marks associated with regulatory functions in both ESCs and NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cell types, promoter-interacting regions (PIRs) were significantly enriched for histone marks that are associated with regulatory functions (Figure 1C), including H3 lysine 4 monomethylation (H3K4me1) and H3 lysine 27 acetylation (H3K27ac), which can identify enhancers in human cell types, as well as H3 lysine four trimethylation (H3K4me3), which is associated with transcriptional activation, and H3 lysine 27 trimethylation (H3K27me3), which is associated with Polycomb-mediated transcriptional repression (Di Croce and Helin, 2013; Heintzman et al., 2007, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This enrichment is demonstrated through permutation tests comparing PIRs to distance-matched control regions, as shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "dbb50e22-5906-4d1a-8502-9440bbfcfa15",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C10",
+      "claim": "H3K4me1 and H3K27ac can identify enhancers in human cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cell types, promoter-interacting regions (PIRs) were significantly enriched for histone marks that are associated with regulatory functions (Figure 1C), including H3 lysine 4 monomethylation (H3K4me1) and H3 lysine 27 acetylation (H3K27ac), which can identify enhancers in human cell types, as well as H3 lysine four trimethylation (H3K4me3), which is associated with transcriptional activation, and H3 lysine 27 trimethylation (H3K27me3), which is associated with Polycomb-mediated transcriptional repression (Di Croce and Helin, 2013; Heintzman et al., 2007, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on histone modifications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "97a2133a-3204-4a88-850e-cd8b6d87e621",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C11",
+      "claim": "H3K4me3 is associated with transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cell types, promoter-interacting regions (PIRs) were significantly enriched for histone marks that are associated with regulatory functions (Figure 1C), including H3 lysine 4 monomethylation (H3K4me1) and H3 lysine 27 acetylation (H3K27ac), which can identify enhancers in human cell types, as well as H3 lysine four trimethylation (H3K4me3), which is associated with transcriptional activation, and H3 lysine 27 trimethylation (H3K27me3), which is associated with Polycomb-mediated transcriptional repression (Di Croce and Helin, 2013; Heintzman et al., 2007, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on histone modifications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c9b1e410-4b5a-4dce-bf8a-c5b73b6bb8aa",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C12",
+      "claim": "H3K27me3 is associated with Polycomb-mediated transcriptional repression.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cell types, promoter-interacting regions (PIRs) were significantly enriched for histone marks that are associated with regulatory functions (Figure 1C), including H3 lysine 4 monomethylation (H3K4me1) and H3 lysine 27 acetylation (H3K27ac), which can identify enhancers in human cell types, as well as H3 lysine four trimethylation (H3K4me3), which is associated with transcriptional activation, and H3 lysine 27 trimethylation (H3K27me3), which is associated with Polycomb-mediated transcriptional repression (Di Croce and Helin, 2013; Heintzman et al., 2007, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on histone modifications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c7a64791-824b-4925-b72a-0fa32deef543",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C13",
+      "claim": "PIRs are significantly enriched for sites bound by the architectural protein CTCF in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "PIRs were also significantly enriched for sites bound by the architectural protein CTCF (Figure 1\u2014figure supplement 2B; based on ENCODE data available for ESCs only), consistent with previous observations in other cell types (Jin et al., 2013; Phillips-Cremins et al., 2013; Sanyal et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This enrichment is demonstrated through permutation tests using ENCODE CTCF ChIP-seq data, as shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "e05d79d7-2586-4b0f-8ec1-92f928355365",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C14",
+      "claim": "Just under 20,000 PIRs in each cell type harboured either active, Polycomb-associated, or poised chromatin state signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data integrated with PCHi-C data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8a055cfd-46ca-4a13-af44-8967e96a9da9",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C15",
+      "claim": "12,250 PIRs in ESCs harboured an active chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "2d93d59d-6938-4f2a-bb41-1aec2829377b",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C16",
+      "claim": "7,510 PIRs in NECs harboured an active chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "fb24adeb-a22b-473b-aa13-a7549629e4da",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C17",
+      "claim": "3,505 PIRs in ESCs harboured a Polycomb-associated chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "3427cb5a-6345-46f9-ab90-ed0608fc296e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C18",
+      "claim": "5,856 PIRs in NECs harboured a Polycomb-associated chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "2af038e4-d59e-44b3-b8b1-0427de543387",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C19",
+      "claim": "2,274 PIRs in ESCs harboured a poised chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "55360cf8-42c1-47e0-abd1-3108ee1f10cd",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C20",
+      "claim": "4,262 PIRs in NECs harboured a poised chromatin state signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we detected just under 20,000 PIRs in each cell type that harboured either active (12,250 in ESCs and 7510 in NECs), Polycomb-associated (3505 in ESCs and 5856 in NECs) or poised (2274 in ESCs and 4262 in NECs) chromatin state signatures, connecting a large set of putative regulatory sequences in human pluripotent and lineage committed cells to their target promoters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis of histone modification ChIP-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "83c5296e-cfb1-4a0c-9b93-eb915453b1cc",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C21",
+      "claim": "25,727 PIRs in ESCs were in the background chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 25,727 PIRs in ESCs and 20,016 PIRs in NECs were in the background state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis showing no detectable signal for tested histone modifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "dd6aa307-b582-4636-b3b5-f95c90bf2e61",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C22",
+      "claim": "20,016 PIRs in NECs were in the background chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 25,727 PIRs in ESCs and 20,016 PIRs in NECs were in the background state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ChromHMM analysis showing no detectable signal for tested histone modifications.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "ab07a71e-4603-438c-a1e1-d06e718cbb65",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C23",
+      "claim": "There is significant concordance between the chromatin states at promoters and their PIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "When analysing the whole dataset, we found a significant concordance between the chromatin states at promoters and their PIRs (Figure 1D), which is in line with previous studies in other human cell types (Jin et al., 2013; Mifsud et al., 2015; Sanyal et al., 2012) and provides validation of our dataset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This concordance is demonstrated through chi-squared tests on contingency tables as shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "272fc418-4013-4e13-bc61-90659b0af4b9",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C24",
+      "claim": "Poised and Polycomb-associated promoters show similar interaction preferences for PIRs in either of these two states.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, poised and Polycomb-associated promoters showed similar interaction preferences for PIRs in either of these two states (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 1D displaying log2 odds ratios for co-occurrence of chromatin states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "16dbb90f-f32d-496d-9ad6-4160da6678de",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C25",
+      "claim": "Poised and Polycomb-associated regions are broadly interchangeable in terms of their interaction affinities, consistent with a key role for Polycomb-group proteins in mediating interactions in the poised state.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that poised and Polycomb-associated regions are broadly interchangeable in terms of their interaction affinities, which is consistent with a key role for Polycomb-group proteins in mediating interactions in the poised state (Schoenfelder et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is based on the observed interaction patterns and supported by citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "48a92d73-038f-4c05-96ba-50843f9d5e96",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C26",
+      "claim": "Four out of five POU3F2 PIRs tested experimentally in VISTA transgenic assays showed reporter activity exclusively in neural tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, four out of the five POU3F2 PIRs tested experimentally in VISTA transgenic assays showed reporter activity exclusively in neural tissues, and one PIR was inactive (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on data from the VISTA Enhancer Browser showing tissue-specific reporter expression patterns.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "85d9f4f3-2e69-414c-be9b-559fd005bb8c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C27",
+      "claim": "The mRNA expression pattern of mouse Pou3f2 broadly matched the combined tissue-restricted pattern of the tested human POU3F2 PIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the mRNA expression pattern of mouse Pou3f2 broadly matched the combined tissue-restricted pattern of the tested human POU3F2 PIRs (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is based on EMAGE gene expression database data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8815c199-bc9b-48c1-b5c1-7e80eea1f4ac",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C28",
+      "claim": "219 PIRs in ESCs overlapped VISTA-annotated human elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 219 PIRs in ESCs and 267 PIRs in NECs overlapped VISTA-annotated human elements (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on overlap analysis between PIRs and VISTA enhancer sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "9474a736-a799-4d9f-bf24-78bcb6b3f3f9",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C29",
+      "claim": "267 PIRs in NECs overlapped VISTA-annotated human elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 219 PIRs in ESCs and 267 PIRs in NECs overlapped VISTA-annotated human elements (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on overlap analysis between PIRs and VISTA enhancer sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "01965154-682c-4d7e-9fc8-e786a4d923e8",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C30",
+      "claim": "NEC PIRs were strongly enriched for sequences that could drive reporter-gene activity in neural tissues and in other neuroectodermal derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, we found that NEC PIRs were strongly enriched for sequences that could drive reporter-gene activity in neural tissues and in other neuroectodermal derivatives, such as the neural tube and cranial structures (z-score = 11, Figure 2B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This enrichment is demonstrated through analysis of VISTA enhancer activity patterns as shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "08350602-cb72-4158-b4f6-fdbe0021a8e6",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C31",
+      "claim": "ESC PIRs were enriched for sequences active in neural (z-score = 6.7) and non-neural tissues (z-score = 4.5) at similar levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ESC PIRs were enriched for sequences active in neural (z-score = 6.7) and non-neural tissues (z-score = 4.5) at similar levels (Figure 2B and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of VISTA enhancer activity patterns shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "28c03aef-005e-425e-985c-d041dff9ebf5",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C32",
+      "claim": "The enrichment of PIRs with neural enhancer activity in NECs relative to their enrichment in ESCs was more pronounced when focusing on PIRs in an active chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the enrichment of PIRs with neural enhancer activity in NECs relative to their enrichment in ESCs was even more pronounced when we focused on PIRs in an active chromatin state (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of VISTA enhancer activity patterns for active-state PIRs in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "232d6a24-a1d9-4c5f-a931-49af0d427fd9",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C33",
+      "claim": "267 VISTA-annotated human enhancers interact with 277 target gene promoters in NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected the interactions of 267 VISTA-annotated human enhancers with 277 target gene promoters in NECs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on PCHi-C data showing interactions between VISTA enhancers and promoters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "cf8daa48-b464-479f-88f9-847b54d51043",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C34",
+      "claim": "122 PIRs (46%) interacted with their nearest gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 122 PIRs (46%) interacted with their nearest gene, which is consistent with their current annotation in the VISTA Enhancer Browser.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the distance between PIRs and their interacting promoters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "0a005f22-05c1-4af2-8414-646ba8cdd214",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C35",
+      "claim": "Interacting promoters engage a median of four PIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found interacting promoters to engage a median of four PIRs (Figure 3A), consistent with findings in other human cell types (Jin et al., 2013; Sanyal et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the boxplot in Figure 3A and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "01cf3489-d0e3-4d55-8b9a-2f3c09e96258",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C36",
+      "claim": "9,008 CRUs were defined in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on protein-coding genes, and considering all promoters associated with at least one PIR, we defined 9008 CRUs in ESCs and 9361 in NECs, and studied their localisation, chromatin properties and dynamics during cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the definition of CRUs as collections of PIRs connected to the same promoter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c0e2360e-867a-4d48-93eb-eafa5f81c939",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C37",
+      "claim": "9,361 CRUs were defined in NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Focusing on protein-coding genes, and considering all promoters associated with at least one PIR, we defined 9008 CRUs in ESCs and 9361 in NECs, and studied their localisation, chromatin properties and dynamics during cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the definition of CRUs as collections of PIRs connected to the same promoter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "3ba3c9bf-29f6-42f7-ae80-fcd31e74753a",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C38",
+      "claim": "CRUs spanned a median of ~230 kb in both cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "CRUs spanned a median of ~230 kb (with a range of 1 kb-200Mb) in both cell types (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the boxplot in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "494402cb-92f4-4880-9917-c935f0b23a0d",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C39",
+      "claim": "~75% of CRUs were fully contained within a TAD in ESCs and NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, ~75% of CRUs were fully contained within a TAD in ESCs and NECs, which was significantly higher than expected by random (Figure 3D\u2013G and Figure 3\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through permutation tests comparing observed CRU-TAD relationships to random expectations, as shown in Figure 3D and Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "dd938ee6-46f1-4d26-a4f2-62b1afc1d03e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C40",
+      "claim": "In ~25% of CRUs, either some or all PIRs localised outside of the promoter-harbouring TAD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the remaining ~25% of CRUs, either some or all PIRs localised outside of the promoter-harbouring TAD (Figure 3H and Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through analysis of CRU-TAD relationships and examples in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "09737cfd-4ea8-4715-93d2-301480c27c5c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C41",
+      "claim": "TAD boundaries crossed by promoter interactions were generally weaker than non-crossed boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that TAD boundaries crossed by promoter interactions were generally weaker than non-crossed boundaries (Wilcoxon test p-value=1.8e-14; Figure 3\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through statistical comparison of TAD boundary strength scores shown in Figure 3\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "487dd450-170e-47cc-857e-3fbb512e33f9",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C42",
+      "claim": "Just under 30% of CRUs were fully contained within IN boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "For INs, we used the published genomic coordinates (available for ESCs only) that were defined on the basis of cohesin ChIA-PET and CTCF-binding data (Ji et al., 2016). Just under 30% of CRUs were fully contained within IN boundaries, and this proportion increased to ~45% when considering the largest span of each overlapping set of INs as a single unit (Figure 3I and Figure 3\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CRU localization relative to published IN coordinates, as shown in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "b20e5c22-03d7-4fcc-b755-a8b94a5e3033",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C43",
+      "claim": "~45% of CRUs were fully contained when considering the largest span of each overlapping set of INs as a single unit.",
+      "claim_type": "EXPLICIT",
+      "source": "For INs, we used the published genomic coordinates (available for ESCs only) that were defined on the basis of cohesin ChIA-PET and CTCF-binding data (Ji et al., 2016). Just under 30% of CRUs were fully contained within IN boundaries, and this proportion increased to ~45% when considering the largest span of each overlapping set of INs as a single unit (Figure 3I and Figure 3\u2014figure supplement 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CRU localization relative to published IN coordinates, as shown in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "83373613-5692-427e-89a2-24083dc9208d",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C44",
+      "claim": "CRUs are partially constrained by, but not fully contained within, higher order topological structures such as TADs and INs.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that CRUs are partially constrained by, but not fully contained within, higher order topological structures such as TADs and INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the observation that while CRUs show preferential localization within TADs and INs, a substantial fraction extend beyond these boundaries.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "98e547ba-9a9d-471c-ba44-b54e205679c2",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C45",
+      "claim": "18% of CRUs in ESCs contained combinations of PIRs in active, poised and Polycomb-associated chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these 'uniform' CRUs, 18% of CRUs in ESCs and 24% in NECs contained combinations of PIRs in active, poised and Polycomb-associated chromatin states (clusters 4\u20137; Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on hierarchical clustering of CRUs according to their PIR chromatin state distributions, as shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "85de6824-8f08-4c7c-957c-f4599729e130",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C46",
+      "claim": "24% of CRUs in NECs contained combinations of PIRs in active, poised and Polycomb-associated chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to these 'uniform' CRUs, 18% of CRUs in ESCs and 24% in NECs contained combinations of PIRs in active, poised and Polycomb-associated chromatin states (clusters 4\u20137; Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on hierarchical clustering of CRUs according to their PIR chromatin state distributions, as shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "cf3a42bd-df1d-415d-94e9-80c4648ccb24",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C47",
+      "claim": "The chromatin state of each promoter generally matched that of the most prevalent CRU chromatin state.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the chromatin state of each promoter generally matched that of the most prevalent CRU chromatin state (Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmaps displaying log2 odds ratios of promoter states associated with each CRU cluster in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "7eb7df29-d82b-4665-8baa-7587fcccfb2f",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C48",
+      "claim": "65% of the single-state CRUs in ESCs remained single-state CRUs in NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 65% of the single-state CRUs in ESCs remained single-state CRUs in NECs, although approximately half of them switched their state (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CRU state transitions between ESCs and NECs, as shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "eba74a4c-bf33-452e-b155-66c579a1efd5",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C49",
+      "claim": "Approximately half of the single-state CRUs that remained single-state switched their state upon ESC to NEC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 65% of the single-state CRUs in ESCs remained single-state CRUs in NECs, although approximately half of them switched their state (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of CRU state transitions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "464c1fa0-e8ae-49a4-8ee5-35e31b8f1092",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C50",
+      "claim": "11% of CRUs lost a dual-state configuration on ESC to NEC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, similar proportions of CRUs lost (11%) and acquired (13%) a dual-state configuration on ESC to NEC differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of CRU state transitions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "f328d7bf-a191-4972-8594-961dfeaf3716",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C51",
+      "claim": "13% of CRUs acquired a dual-state configuration on ESC to NEC differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, similar proportions of CRUs lost (11%) and acquired (13%) a dual-state configuration on ESC to NEC differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of CRU state transitions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "ca792ba5-ba15-4956-84fd-0e24494f80b2",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C52",
+      "claim": "CRU state transitions associated significantly with changes in the expression of their target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CRU state transitions associated significantly with changes in the expression of their target genes (p-value<0.005, Fisher's exact test; Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This association is demonstrated through Fisher's exact tests on contingency tables shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "87375aa6-b691-46bf-aeea-8d4367f7ac70",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C53",
+      "claim": "Genes that were transcriptionally upregulated upon ESC differentiation preferentially gained an active single-state in NECs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, genes that were transcriptionally upregulated upon ESC differentiation preferentially gained an active single-state in NECs, either through switching the chromatin state of a single-state CRU (Figure 5B) or through resolving a dual-state CRU (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown through the heatmaps in Figure 5B,C displaying log2 odds ratios for CRU state transitions and gene expression changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "9229969a-9e03-4a15-a1ef-107e265d7de2",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C54",
+      "claim": "1,153 rewired interactions (present in only one cell type) were identified at high confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between interactions that are rewired and retained on ESC differentiation at high confidence, we applied additional filters to the PCHi-C data, resulting in 1153 rewired (present in only one cell type) and 1258 retained (present in both ESCs and NECs) interactions (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on stringent filtering criteria applied to PCHi-C data to identify high-confidence interaction dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8666d74f-806a-4981-9eac-d1cb985f0132",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C55",
+      "claim": "1,258 retained interactions (present in both ESCs and NECs) were identified at high confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between interactions that are rewired and retained on ESC differentiation at high confidence, we applied additional filters to the PCHi-C data, resulting in 1153 rewired (present in only one cell type) and 1258 retained (present in both ESCs and NECs) interactions (see Materials and methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on stringent filtering criteria applied to PCHi-C data to identify high-confidence interaction dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c52b8ea3-f8e5-48f4-bdca-771a9ef12fd0",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C56",
+      "claim": "The co-occurrence of rewiring and recolouring interactions on ESC differentiation was significantly more common than expected at random.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that the co-occurrence of rewiring and recolouring interactions on ESC differentiation was significantly more common than expected at random (Figure 6B, p-value<0.001, Fisher's exact test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Fisher's exact test on the contingency table shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c1b7bb4b-d954-45e3-a896-1d99e27986dd",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C57",
+      "claim": "New interactions that were gained by NECs preferentially acquired the active state, or transitioned from the background to repressed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, new interactions that were gained by NECs preferentially acquired the active state, or transitioned from the background to repressed state (Figure 6B, bottom row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 6B displaying associations between PIR chromatin state transitions and interaction dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "e856cae9-8fd2-4297-8d20-7386a401ab0e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C58",
+      "claim": "Interactions that were lost on ESC differentiation were enriched for PIRs that transitioned from the active to poised/Polycomb-associated states, as well as for those switching to the background state.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions that were lost on ESC differentiation were enriched for PIRs that transitioned from the active to poised/Polycomb-associated states, as well as for those switching to the background state (Figure 6B, middle row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the heatmap in Figure 6B displaying associations between PIR chromatin state transitions and interaction dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "5855d01c-22e5-478a-99cb-cfd4188243fc",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C59",
+      "claim": "99.7% of rewiring events were not associated with larger-scale A/B compartment dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the vast majority of rewiring events (99.7%) were not associated with larger-scale A/B compartment dynamics (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of rewiring events in the context of A/B compartment changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "3c27a80a-8e63-4d25-b2df-316d5f36a3dc",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C60",
+      "claim": "25% of PIRs that were retained in both cell types undergo chromatin state recolouring.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that 25% of PIRs that were retained in both cell types undergo chromatin state recolouring (Figure 6E, red segment).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the pie chart in Figure 6E summarizing retained interaction scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "69edaca2-8b7f-4ea1-a8ed-521b48a3faf4",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C61",
+      "claim": "The loss or gain of interactions with active-state PIRs associated significantly with changes in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the loss or gain of interactions with active-state PIRs associated significantly with changes in gene expression (Figure 6G), suggesting their functional contribution to transcriptional control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through Wilcoxon rank sum tests comparing gene expression changes for different PIR dynamics scenarios, as shown in Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "4ba07355-81fc-4d38-acdc-8a19129b2186",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C62",
+      "claim": "Gene expression changes were detected at retained and recoloured PIRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, gene expression changes were detected at retained and recoloured PIRs (Figure 6G, left panel), and also when active-state PIRs were lost or gained through rewiring (Figure 6G, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the boxplots in Figure 6G comparing gene expression changes for recolouring and rewiring scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "7c6ba174-447c-40fb-bfa1-48771424abbf",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C63",
+      "claim": "Gene expression changes were detected when active-state PIRs were lost or gained through rewiring.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, gene expression changes were detected at retained and recoloured PIRs (Figure 6G, left panel), and also when active-state PIRs were lost or gained through rewiring (Figure 6G, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the boxplots in Figure 6G comparing gene expression changes for recolouring and rewiring scenarios.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "ec87e5e1-bc6c-4463-8a68-157e88c75ec0",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C64",
+      "claim": "Chromatin state changes and rewiring of interactions at PIRs contribute jointly to transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings demonstrate that chromatin state changes and rewiring of interactions at PIRs contribute jointly to transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the observed associations between both recolouring and rewiring events with gene expression changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "b21301db-d406-4aea-b40c-edd577ee98ed",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C65",
+      "claim": "Promoter interaction dynamics preferentially co-occur with chromatin state dynamics upon cell lineage commitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our results show that promoter interaction dynamics preferentially co-occur with chromatin state dynamics upon cell lineage commitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the significant co-occurrence of rewiring and recolouring events shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "1f7304ae-61dc-45c1-bfab-c6131c2e80c8",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C66",
+      "claim": "Cell fate decisions are associated with profound changes in chromatin organisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell fate decisions are associated with profound changes in chromatin organisation, which underlie the activation of lineage-specific and the silencing of lineage-inappropriate genes (Buecker and Wysocka, 2012; Bulger and Groudine, 2010; Calo and Wysocka, 2013; Hallikas et al., 2006; Ong and Corces, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "19d287c4-634e-42e8-9f78-8ec6b8bd6f5e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C67",
+      "claim": "Cis-regulatory elements such as transcriptional enhancers play a key role in cell fate decisions by integrating regulatory inputs from intrinsic and extracellular cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Cis-regulatory elements such as transcriptional enhancers play a key role in this process by integrating regulatory inputs from intrinsic and extracellular cues, and by mediating the recruitment of core activator and repressor complexes (Pennacchio et al., 2013; Shlyueva et al., 2014; Spitz and Furlong, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature on enhancer function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "74823bba-7fa6-4d05-bea2-ad58b58e185b",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C68",
+      "claim": "Cis-regulatory elements are often considerable distances away from their target gene promoters and may not control their nearest genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Cis-regulatory elements are often considerable distances away from their target gene promoters and may not control their nearest genes (Carvajal et al., 2001; Jeong et al., 2006; Marini\u0107 et al., 2013; Pennacchio et al., 2006; Ruf et al., 2011; Sagai et al., 2005; Spitz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to studies demonstrating long-range enhancer-promoter interactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "05f1e4a3-c96a-4a91-9615-dc8456a1c2cb",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C69",
+      "claim": "Long-range action of cis-regulatory elements is facilitated by DNA-looping interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is generally accepted that this long-range action is facilitated by DNA-looping interactions (Pennacchio et al., 2013; Shlyueva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to reviews on enhancer-promoter interactions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "6ec52603-188c-49cc-9824-3a263fb39ce2",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C70",
+      "claim": "The target genes of most cis-regulatory elements remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the target genes of most cis-regulatory elements remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of challenges in predicting regulatory interactions from sequence and epigenetic information.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "291318f3-2167-4cdf-8848-2a4b853fe380",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C71",
+      "claim": "Many genes are controlled by multiple regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while it is generally accepted that many genes are controlled by multiple regulatory elements (Barolo, 2012; Miguel-Escalada et al., 2015) our understanding of multi-modular gene regulation remains limited, particularly in the context of mammalian development and stem cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to literature on multi-enhancer gene regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "52684f3f-1f6d-41c2-ad63-5e57f9107f7e",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C72",
+      "claim": "NECs were generated using an established protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated NECs using an established protocol (Rada-Iglesias et al., 2011) (Figure 1\u2014figure supplement 1A) and confirmed efficient differentiation by flow cytometry analysis and RNA-sequencing (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the use of a published differentiation protocol and validation through multiple assays.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "54c13665-ca0a-441b-85b0-056bf11bdb08",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C73",
+      "claim": "Efficient differentiation of ESCs to NECs was confirmed by flow cytometry analysis and RNA-sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated NECs using an established protocol (Rada-Iglesias et al., 2011) (Figure 1\u2014figure supplement 1A) and confirmed efficient differentiation by flow cytometry analysis and RNA-sequencing (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through flow cytometry data showing lineage marker expression and RNA-seq data showing appropriate gene expression changes, as shown in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "9b57ee39-1f19-41fc-95b9-c9f8c0e5bb88",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C74",
+      "claim": "Raw sequencing reads have been deposited to Gene Expression Omnibus (accession GSE86821).",
+      "claim_type": "EXPLICIT",
+      "source": "Processed datasets have been made available through Open Science Framework (http://osf.io/sdbg4), and raw sequencing reads have been deposited to Gene Expression Omnibus (accession GSE86821).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "a0b5dfc3-3873-4b9c-b7e7-30fe219d74dd",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "claim_id": "C75",
+      "claim": "Processed datasets have been made available through Open Science Framework.",
+      "claim_type": "EXPLICIT",
+      "source": "Processed datasets have been made available through Open Science Framework (http://osf.io/sdbg4), and raw sequencing reads have been deposited to Gene Expression Omnibus (accession GSE86821).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Promoter Capture Hi-C (PCHi-C) was used to generate a high-resolution atlas of chromosomal interactions involving ~22,000 gene promoters in human ESCs and NECs. The CHiCAGO pipeline identified 75,795 significant cis-interactions in ESCs and 75,624 in NECs, with approximately 300 trans-interactions in each cell type. PCHi-C showed an 11 to 15-fold enrichment for promoter-containing interactions over conventional Hi-C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C8 collectively describe the generation and quantification of the PCHi-C atlas. The methodology is clearly described, the CHiCAGO pipeline is appropriately cited, and the enrichment calculation is based on direct comparison with conventional Hi-C data generated in the same study. The numbers are specific and consistent throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Promoter-interacting regions (PIRs) are significantly enriched for histone marks associated with regulatory functions (H3K4me1, H3K27ac, H3K4me3, H3K27me3) and CTCF binding sites. These enrichments were demonstrated through permutation tests comparing PIRs to distance-matched control regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 describe the chromatin properties of PIRs. The enrichment analysis uses appropriate statistical methods (permutation tests) with distance-matched controls, which is a rigorous approach. The associations between histone marks and regulatory functions (C10-C12) are well-established in the literature and appropriately cited. The CTCF enrichment (C13) is based on ENCODE data and is consistent with previous observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "f3217983-eae5-414d-84e6-2dbf7a0c340f",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ChromHMM analysis identified approximately 20,000 PIRs in each cell type with active, Polycomb-associated, or poised chromatin state signatures. Specifically, ESCs had 12,250 active, 3,505 Polycomb-associated, and 2,274 poised PIRs, while NECs had 7,510 active, 5,856 Polycomb-associated, and 4,262 poised PIRs. Additionally, 25,727 PIRs in ESCs and 20,016 in NECs were in the background state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C22 provide detailed quantification of PIR chromatin states. The ChromHMM method is well-established and appropriately applied. The numbers are internally consistent (the sum of active, Polycomb-associated, and poised states equals 'just under 20,000' as stated in C14). The methodology for defining chromatin states is clearly described in the Materials and methods section.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "16650613-1438-4882-ad0a-4d9d5e76f381",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "There is significant concordance between the chromatin states at promoters and their PIRs, with poised and Polycomb-associated promoters showing similar interaction preferences for PIRs in either of these two states. This suggests that poised and Polycomb-associated regions are broadly interchangeable in terms of their interaction affinities, consistent with a key role for Polycomb-group proteins in mediating interactions in the poised state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 describe chromatin state concordance patterns. The statistical analysis (chi-squared tests on contingency tables) is appropriate for this type of data. The observation about poised and Polycomb-associated regions (C24-C25) is supported by the data in Figure 1D and is consistent with previous work on Polycomb-mediated interactions. The interpretation (C25) is reasonable given the data, though it remains correlative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Functional validation using VISTA transgenic assays showed that PIRs can function as tissue-restricted developmental enhancers. Four out of five tested POU3F2 PIRs showed neural-specific reporter activity matching the Pou3f2 expression pattern. Overall, 219 ESC PIRs and 267 NEC PIRs overlapped VISTA-annotated elements, with NEC PIRs strongly enriched for neural enhancer activity (z-score = 11) compared to ESC PIRs which showed similar enrichment for neural (z-score = 6.7) and non-neural tissues (z-score = 4.5). Of 267 VISTA enhancers interacting with promoters in NECs, only 46% interacted with their nearest gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C34 provide functional validation of PIRs as enhancers. The VISTA data are from an established external resource, providing independent validation. The enrichment analysis uses appropriate statistical methods (z-scores from permutation tests). The observation that only 46% of enhancers interact with their nearest gene (C34) is particularly important as it challenges the common assumption of nearest-gene regulation. The cross-species validation (C27) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "7a60fbe5-ef18-4d9b-bf8b-c813e1e2d8c2",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Promoters engage a median of four PIRs, forming cis-regulatory units (CRUs). The study defined 9,008 CRUs in ESCs and 9,361 CRUs in NECs, which spanned a median of ~230 kb in both cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 introduce the CRU concept and provide basic quantification. The median of four PIRs per promoter (C35) is consistent with previous studies and is clearly shown in Figure 3A. The CRU definition is logical and clearly described. The span measurements (C38) are straightforward descriptive statistics from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Approximately 75% of CRUs were fully contained within a TAD, which was significantly higher than expected by random. TAD boundaries crossed by promoter interactions were generally weaker than non-crossed boundaries. For Insulated Neighborhoods (INs), just under 30% of CRUs were fully contained within IN boundaries, increasing to ~45% when considering overlapping INs as single units. These results suggest that CRUs are partially constrained by, but not fully contained within, higher order topological structures such as TADs and INs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 describe the relationship between CRUs and higher-order chromatin structures. The statistical analysis uses appropriate permutation tests to establish significance. The observation that TAD boundaries crossed by interactions are weaker (C41) is supported by Wilcoxon test (p=1.8e-14), though the authors note substantial overlap in strength distributions. The conclusion (C44) is appropriately cautious, acknowledging that while CRUs show preferential localization within TADs/INs, a substantial fraction extend beyond these boundaries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "c2506cf4-7df8-43d8-98fc-ca2c4f8ff6a6",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Hierarchical clustering of CRUs based on PIR chromatin state distributions revealed that 18% of CRUs in ESCs and 24% in NECs contained combinations of PIRs in active, poised, and Polycomb-associated chromatin states ('dual-state' CRUs). The chromatin state of each promoter generally matched that of the most prevalent CRU chromatin state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 describe CRU chromatin state heterogeneity. The hierarchical clustering approach is appropriate for this analysis. The observation that promoter chromatin states match the most prevalent CRU state (C47) is shown through log2 odds ratios in Figure 4A and suggests a 'majority vote' model of promoter regulation. The percentages are clearly derived from the clustering analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "f7cd3d22-45e7-4d03-945f-1878ed881e35",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRU state transitions during ESC to NEC differentiation are extensive and significantly associated with changes in target gene expression. Of single-state CRUs in ESCs, 65% remained single-state in NECs, though approximately half switched their state. Similar proportions of CRUs lost (11%) and acquired (13%) dual-state configurations. Genes transcriptionally upregulated upon differentiation preferentially gained an active single-state in NECs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 describe CRU dynamics during differentiation. The quantification of state transitions (C48-C51) is clearly shown in Figure 5A. The association with gene expression changes (C52) is demonstrated through Fisher's exact tests (p<0.005), which is appropriate for categorical data. The specific observation about upregulated genes (C53) is supported by the heatmaps in Figure 5B,C showing log2 odds ratios. The statistical approach is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "36a1f6b3-d610-43fc-a569-2b092465abc7",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "High-confidence analysis identified 1,153 rewired interactions (present in only one cell type) and 1,258 retained interactions (present in both cell types). The co-occurrence of rewiring and recolouring (chromatin state changes) was significantly more common than expected at random (p<0.001). New interactions gained by NECs preferentially acquired the active state, while interactions lost on ESC differentiation were enriched for PIRs transitioning from active to repressed states. Notably, 99.7% of rewiring events were not associated with larger-scale A/B compartment dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 describe the coordinated dynamics of interaction rewiring and chromatin state recolouring. The stringent filtering criteria for defining high-confidence rewired and retained interactions (C54-C55) are clearly described in Materials and methods. The statistical analysis (Fisher's exact test, p<0.001) appropriately demonstrates the non-random co-occurrence of rewiring and recolouring (C56). The specific patterns (C57-C58) are shown in Figure 6B. The observation about A/B compartments (C59) is important for understanding the scale of these changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "8c5eb87f-965c-428f-a061-a6d186ae522d",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Among retained interactions, 25% of PIRs undergo chromatin state recolouring. The loss or gain of interactions with active-state PIRs associated significantly with changes in gene expression, both for retained and recoloured PIRs and for rewired interactions. These findings demonstrate that chromatin state changes and rewiring of interactions at PIRs contribute jointly to transcriptional regulation, with promoter interaction dynamics preferentially co-occurring with chromatin state dynamics upon cell lineage commitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 describe the functional consequences of interaction dynamics. The quantification of recolouring in retained interactions (C60) is shown in Figure 6E. The association with gene expression (C61-C63) is demonstrated through Wilcoxon rank sum tests shown in Figure 6G, which is appropriate for comparing continuous expression changes across categories. The conclusions (C64-C65) are well-supported by the data showing that both rewiring and recolouring associate with expression changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "e3474447-9bb8-4085-8124-8db2928e15b7",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Extensive dynamics of cis-regulatory contacts occur upon lineage commitment, including the acquisition and loss of promoter interactions. This spatial rewiring occurs preferentially with predicted changes in the activity of cis-regulatory elements and is associated with changes in target gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 represent the main conclusions of the study. These are well-supported by the detailed analyses described in other result groups, particularly the rewiring/recolouring analysis (C54-C65) and the CRU dynamics analysis (C48-C53). The integration of PCHi-C data with chromatin state information and gene expression data provides strong evidence for these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "470c00fa-759c-4e3f-9237-88474384f438",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background knowledge claims about chromatin organization, enhancer function, and gene regulation during cell fate decisions. These include: cell fate decisions are associated with profound changes in chromatin organization; enhancers play a key role by integrating regulatory inputs; enhancers are often distant from target genes and may not control nearest genes; long-range action is facilitated by DNA-looping; target genes of most enhancers remain unknown; and many genes are controlled by multiple regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C71 represent established knowledge from the literature, appropriately cited throughout. These provide the scientific context and motivation for the study. All claims are supported by multiple citations to established literature and represent consensus views in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "6b061fbd-a7a5-4444-89a4-8e76b67347bc",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "NECs were generated using an established protocol and efficient differentiation was confirmed by flow cytometry analysis and RNA-sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 describe the cell differentiation methodology. The use of an established protocol (Rada-Iglesias et al., 2011) is appropriate and well-cited. The validation through multiple orthogonal methods (flow cytometry for surface markers and RNA-seq for gene expression) is rigorous and shown in Figure 1\u2014figure supplement 1B,C. This provides confidence in the cell type identities used for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    },
+    {
+      "id": "177d0679-69ec-4d75-b915-3ee609f015a3",
+      "content_id": "d5e0429d-3d3c-48d4-9e67-bf4c659db0c6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Raw sequencing reads have been deposited to Gene Expression Omnibus (accession GSE86821) and processed datasets have been made available through Open Science Framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe data availability. These are straightforward statements about data deposition that can be verified through the provided accession numbers and URLs. Data availability is important for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:28:53.297361Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d77cf082-a86c-4b22-aade-5838c5f2249b",
+      "result_id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91"
+    },
+    {
+      "claim_id": "8d183ce5-54d4-4f33-bb87-923981ec552e",
+      "result_id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91"
+    },
+    {
+      "claim_id": "70aeead1-fd9f-4d7e-a613-0f4b44872d4c",
+      "result_id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91"
+    },
+    {
+      "claim_id": "dfa0dc0c-730b-4aac-9d79-6d2e8ac247a6",
+      "result_id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91"
+    },
+    {
+      "claim_id": "53e0676e-7f7b-4c95-872a-226904ec6407",
+      "result_id": "57e477dc-a81b-4921-8d7f-875f0b7f4e91"
+    },
+    {
+      "claim_id": "ffcb90b2-40b9-48d3-8ce1-a706b61d8f6c",
+      "result_id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d"
+    },
+    {
+      "claim_id": "dbb50e22-5906-4d1a-8502-9440bbfcfa15",
+      "result_id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d"
+    },
+    {
+      "claim_id": "97a2133a-3204-4a88-850e-cd8b6d87e621",
+      "result_id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d"
+    },
+    {
+      "claim_id": "c9b1e410-4b5a-4dce-bf8a-c5b73b6bb8aa",
+      "result_id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d"
+    },
+    {
+      "claim_id": "c7a64791-824b-4925-b72a-0fa32deef543",
+      "result_id": "8a895ff2-572c-44c9-9cad-2cc70aacdf5d"
+    },
+    {
+      "claim_id": "e05d79d7-2586-4b0f-8ec1-92f928355365",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "8a055cfd-46ca-4a13-af44-8967e96a9da9",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "2d93d59d-6938-4f2a-bb41-1aec2829377b",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "fb24adeb-a22b-473b-aa13-a7549629e4da",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "3427cb5a-6345-46f9-ab90-ed0608fc296e",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "2af038e4-d59e-44b3-b8b1-0427de543387",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "55360cf8-42c1-47e0-abd1-3108ee1f10cd",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "83c5296e-cfb1-4a0c-9b93-eb915453b1cc",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "dd6aa307-b582-4636-b3b5-f95c90bf2e61",
+      "result_id": "f3217983-eae5-414d-84e6-2dbf7a0c340f"
+    },
+    {
+      "claim_id": "ab07a71e-4603-438c-a1e1-d06e718cbb65",
+      "result_id": "16650613-1438-4882-ad0a-4d9d5e76f381"
+    },
+    {
+      "claim_id": "272fc418-4013-4e13-bc61-90659b0af4b9",
+      "result_id": "16650613-1438-4882-ad0a-4d9d5e76f381"
+    },
+    {
+      "claim_id": "16dbb90f-f32d-496d-9ad6-4160da6678de",
+      "result_id": "16650613-1438-4882-ad0a-4d9d5e76f381"
+    },
+    {
+      "claim_id": "48a92d73-038f-4c05-96ba-50843f9d5e96",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "85d9f4f3-2e69-414c-be9b-559fd005bb8c",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "8815c199-bc9b-48c1-b5c1-7e80eea1f4ac",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "9474a736-a799-4d9f-bf24-78bcb6b3f3f9",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "01965154-682c-4d7e-9fc8-e786a4d923e8",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "08350602-cb72-4158-b4f6-fdbe0021a8e6",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "28c03aef-005e-425e-985c-d041dff9ebf5",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "232d6a24-a1d9-4c5f-a931-49af0d427fd9",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "cf8daa48-b464-479f-88f9-847b54d51043",
+      "result_id": "c3e743b7-0bcc-43a1-bd04-fedf1f0edcd0"
+    },
+    {
+      "claim_id": "0a005f22-05c1-4af2-8414-646ba8cdd214",
+      "result_id": "7a60fbe5-ef18-4d9b-bf8b-c813e1e2d8c2"
+    },
+    {
+      "claim_id": "01cf3489-d0e3-4d55-8b9a-2f3c09e96258",
+      "result_id": "7a60fbe5-ef18-4d9b-bf8b-c813e1e2d8c2"
+    },
+    {
+      "claim_id": "c0e2360e-867a-4d48-93eb-eafa5f81c939",
+      "result_id": "7a60fbe5-ef18-4d9b-bf8b-c813e1e2d8c2"
+    },
+    {
+      "claim_id": "3ba3c9bf-29f6-42f7-ae80-fcd31e74753a",
+      "result_id": "7a60fbe5-ef18-4d9b-bf8b-c813e1e2d8c2"
+    },
+    {
+      "claim_id": "494402cb-92f4-4880-9917-c935f0b23a0d",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "dd938ee6-46f1-4d26-a4f2-62b1afc1d03e",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "09737cfd-4ea8-4715-93d2-301480c27c5c",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "487dd450-170e-47cc-857e-3fbb512e33f9",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "b20e5c22-03d7-4fcc-b755-a8b94a5e3033",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "83373613-5692-427e-89a2-24083dc9208d",
+      "result_id": "ed61f901-8638-45ee-b5fb-a8ec2654cf8c"
+    },
+    {
+      "claim_id": "98e547ba-9a9d-471c-ba44-b54e205679c2",
+      "result_id": "c2506cf4-7df8-43d8-98fc-ca2c4f8ff6a6"
+    },
+    {
+      "claim_id": "85de6824-8f08-4c7c-957c-f4599729e130",
+      "result_id": "c2506cf4-7df8-43d8-98fc-ca2c4f8ff6a6"
+    },
+    {
+      "claim_id": "cf3a42bd-df1d-415d-94e9-80c4648ccb24",
+      "result_id": "c2506cf4-7df8-43d8-98fc-ca2c4f8ff6a6"
+    },
+    {
+      "claim_id": "7eb7df29-d82b-4665-8baa-7587fcccfb2f",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "eba74a4c-bf33-452e-b155-66c579a1efd5",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "464c1fa0-e8ae-49a4-8ee5-35e31b8f1092",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "f328d7bf-a191-4972-8594-961dfeaf3716",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "ca792ba5-ba15-4956-84fd-0e24494f80b2",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "87375aa6-b691-46bf-aeea-8d4367f7ac70",
+      "result_id": "f7cd3d22-45e7-4d03-945f-1878ed881e35"
+    },
+    {
+      "claim_id": "9229969a-9e03-4a15-a1ef-107e265d7de2",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "8666d74f-806a-4981-9eac-d1cb985f0132",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "c52b8ea3-f8e5-48f4-bdca-771a9ef12fd0",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "c1b7bb4b-d954-45e3-a896-1d99e27986dd",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "e856cae9-8fd2-4297-8d20-7386a401ab0e",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "5855d01c-22e5-478a-99cb-cfd4188243fc",
+      "result_id": "36a1f6b3-d610-43fc-a569-2b092465abc7"
+    },
+    {
+      "claim_id": "3c27a80a-8e63-4d25-b2df-316d5f36a3dc",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "69edaca2-8b7f-4ea1-a8ed-521b48a3faf4",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "4ba07355-81fc-4d38-acdc-8a19129b2186",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "7c6ba174-447c-40fb-bfa1-48771424abbf",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "ec87e5e1-bc6c-4463-8a68-157e88c75ec0",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "b21301db-d406-4aea-b40c-edd577ee98ed",
+      "result_id": "8c5eb87f-965c-428f-a061-a6d186ae522d"
+    },
+    {
+      "claim_id": "e8646e48-8f09-476c-81aa-d1db1fa01b0c",
+      "result_id": "e3474447-9bb8-4085-8124-8db2928e15b7"
+    },
+    {
+      "claim_id": "487e3b4f-a038-49a9-8b47-6a5aaad8ab46",
+      "result_id": "e3474447-9bb8-4085-8124-8db2928e15b7"
+    },
+    {
+      "claim_id": "2b68b2e1-7b8e-4c2e-9d73-3378af78871d",
+      "result_id": "e3474447-9bb8-4085-8124-8db2928e15b7"
+    },
+    {
+      "claim_id": "1f7304ae-61dc-45c1-bfab-c6131c2e80c8",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "19d287c4-634e-42e8-9f78-8ec6b8bd6f5e",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "74823bba-7fa6-4d05-bea2-ad58b58e185b",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "05f1e4a3-c96a-4a91-9615-dc8456a1c2cb",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "6ec52603-188c-49cc-9824-3a263fb39ce2",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "291318f3-2167-4cdf-8848-2a4b853fe380",
+      "result_id": "470c00fa-759c-4e3f-9237-88474384f438"
+    },
+    {
+      "claim_id": "52684f3f-1f6d-41c2-ad63-5e57f9107f7e",
+      "result_id": "6b061fbd-a7a5-4444-89a4-8e76b67347bc"
+    },
+    {
+      "claim_id": "54c13665-ca0a-441b-85b0-056bf11bdb08",
+      "result_id": "6b061fbd-a7a5-4444-89a4-8e76b67347bc"
+    },
+    {
+      "claim_id": "9b57ee39-1f19-41fc-95b9-c9f8c0e5bb88",
+      "result_id": "177d0679-69ec-4d75-b915-3ee609f015a3"
+    },
+    {
+      "claim_id": "a0b5dfc3-3873-4b9c-b7e7-30fe219d74dd",
+      "result_id": "177d0679-69ec-4d75-b915-3ee609f015a3"
+    }
+  ],
+  "comparisons": []
+}

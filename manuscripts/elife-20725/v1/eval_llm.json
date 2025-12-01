@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "PERK signaling is a component of the DLK-mediated neuronal stress response. DLK-activating insults (nerve injury, neurotrophin deprivation) result in both JNK signaling and PERK/ISR-dependent upregulation of ATF4. Disruption of PERK signaling delays neurodegeneration without reducing JNK signaling. DLK is both sufficient for PERK activation and necessary for engaging the ISR subsequent to JNK-mediated retrograde injury signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively establish the central finding that PERK signaling is a novel component of the DLK stress response pathway. The data demonstrate necessity (DLK required for PERK activation), sufficiency (DLK overexpression activates PERK), independence from JNK (PERK disruption doesn't affect JNK), and functional consequence (PERK disruption delays neurodegeneration). Multiple experimental approaches (genetic knockouts, pharmacological inhibition, overexpression) converge on this conclusion across different injury models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "ISR-related gene expression changes are observed in both peripheral (SNC) and central (ONC) nervous system axonal injury models. Expression profiling revealed ISR-associated mRNAs (Atf4, Chac1, Eif4ebp1) in both models, with enrichment of ISR-related genes greater than expected by chance. Immunoblot analysis confirmed robust ATF4 elevation after injury, with more variable changes in p-PERK and p-eIF2\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 demonstrate ISR activation across multiple injury models using complementary approaches (microarray, immunoblot). The enrichment analysis (C23) provides statistical support for ISR engagement. The authors appropriately acknowledge limitations in detecting p-PERK and p-eIF2\u03b1 (C25), consistent with prior literature (Qi et al., 2011), while ATF4 serves as a robust readout. The convergence of findings across PNS and CNS models strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "NGF withdrawal from cultured embryonic DRG neurons induces both JNK signaling and the ISR (PERK and ATF4 activation). siRNA knockdown experiments demonstrate that PERK (Eif2ak3) is largely responsible for ATF4 upregulation following NGF deprivation. Knockdown of ATF4 enhances axon regeneration in adult sensory neurons in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 establish the NGF deprivation model as a valid system for studying ISR activation. The siRNA screen (C28) systematically tests all four eIF2\u03b1 kinases, providing strong evidence for PERK's primary role. The functional consequence of ATF4 knockdown on regeneration (C29) is supported by data in Figures 1i and supplement 3, though the authors acknowledge this effect doesn't translate to in vivo regeneration (Figure 1 supplements 4-5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ISR target genes show differential regulation and ATF4-dependence after nerve injury. Following SNC, Eif4ebp1 and Chac1 exhibit persistent upregulation and ATF4-dependence, while Ddit3 and Ppp1r15a show transient elevation without ATF4-dependence. ISRIB treatment confirms ISR-mediated regulation of specific targets. In NGF deprivation, all four mRNAs show ISRIB sensitivity, indicating context-dependent ISR regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 reveal important nuances in ISR-mediated gene regulation across different injury contexts. The use of ATF4-deficient mice (C33-C34) and ISRIB treatment (C35-C36, C38) provides orthogonal validation. The differential regulation between SNC and NGF deprivation models (C37-C38) is well-documented and suggests context-specific mechanisms. However, the ATF4-null mice used have a confounding phenotype (see Figure 2 supplement 1-2), which the authors acknowledge but may complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DLK is necessary for ISR activation following nerve injury. ISRIB treatment and ATF4 deficiency do not impact p-c-Jun levels, indicating ISR is not upstream of JNK signaling. Conversely, DLK deficiency prevents both c-Jun phosphorylation and ATF4 upregulation after SNC, with all ISR-related mRNAs (both ATF4-dependent and independent) showing DLK-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 establish the hierarchical relationship between DLK and PERK/ISR pathways. The bidirectional experiments (testing if ISR affects JNK vs. if DLK affects ISR) provide strong evidence for pathway ordering. Data from DLK-deficient mice (C41-C42) using both immunoblot and qPCR approaches converge on the conclusion that DLK is upstream of ISR activation. The finding that both ATF4-dependent and independent genes require DLK (C42) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "DLK activity is both necessary and sufficient for initiating PERK signaling and the ISR. Pharmacological DLK inhibition and genetic DLK deficiency prevent PERK phosphorylation and ATF4 upregulation following NGF withdrawal. DLK overexpression in non-neuronal cells is sufficient to activate PERK and ATF4, requiring DLK kinase activity. This establishes ISR activation as a novel component of the DLK-mediated stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 provide comprehensive evidence for DLK's role in PERK activation through multiple complementary approaches: pharmacological inhibition (C44), genetic knockout (C46), and gain-of-function experiments (C47-C49). The use of non-neuronal cells (HEK293) for sufficiency experiments (C47-C49) is particularly strong, as it demonstrates DLK can activate PERK in the absence of neuronal-specific factors. The kinase-dead mutant control (C49) confirms the requirement for DLK catalytic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "JNK signaling is necessary for ISR activation after injury, and ISR activation occurs after JNK-mediated retrograde signaling. JNK2/3 deficiency suppresses ATF4 upregulation after SNC. Sciatic nerve segments and isolated distal axons lack detectable p-PERK and ATF4. Campenot chamber experiments show that distal axonal NGF deprivation induces ATF4 in cell bodies, with JNK inhibition (but not ISRIB) effective in either compartment, while ISRIB only works centrally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 establish the spatial and temporal relationship between JNK and ISR activation. The JNK2/3 knockout data (C52) demonstrates necessity. The compartmentalized culture experiments (C54-C58) are particularly elegant, showing that ISR activation occurs in cell bodies after retrograde JNK signaling from axons. The differential effects of JNK inhibitors (effective in both compartments) vs. ISRIB (only effective centrally) provide strong evidence for the proposed sequence of events. The lack of clear ATF4/p-PERK in nerve segments (C54) is appropriately cautious given potential contributions from non-neuronal cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "DLK does not control ISR activation primarily through c-Jun-mediated transcriptional changes. Reducing c-Jun expression by siRNA does not reduce ATF4 induction upon NGF deprivation. This is consistent with translational control of ATF4 (ISRIB sensitivity) rather than transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 address a potential mechanism by which DLK might activate the ISR. The c-Jun knockdown experiment (C60, Figure 4e) provides direct evidence against c-Jun-mediated transcriptional control of ATF4. This conclusion is strengthened by the ISRIB sensitivity data (indicating translational control) and the modest transcriptional changes in Atf4 mRNA (Figure 1b). However, the knockdown appears incomplete (Figure 4 supplement 2), which could limit interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "RNA-seq profiling reveals that the ISR is a major component of the DLK-mediated stress response following NGF deprivation. ISR-related genes are enriched among NGF-responsive transcripts. About two-thirds of expression changes are DLK-dependent, with over 80% of upregulated RNAs showing DLK sensitivity. Approximately half of DLK-sensitive changes exhibit ISRIB sensitivity, and 85% of ISRIB-sensitive changes are also DLK-sensitive. However, substantial DLK-mediated changes (including apoptotic regulators like Bcl2l11 and Dusp16) show little ISR-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 provide comprehensive transcriptomic evidence for the DLK-ISR relationship. The RNA-seq approach with pharmacological inhibitors (DLKi and ISRIB) allows systematic assessment of pathway interactions. The quantitative estimates of overlap (C64-C65, C67, C70) are well-supported by the data (Figure 5c). Importantly, the authors acknowledge that substantial DLK-mediated changes are ISR-independent (C69), which is consistent with the partial neuroprotection observed with PERK/ISR disruption. The enrichment analysis (C62) provides statistical validation. Sample sizes (n=4-5) are adequate for RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "ISR activity contributes to neurodegeneration following NGF deprivation, though less potently than DLK/JNK inhibition. ISRIB treatment reduces axon degeneration at 16h (similar to DLK/JNK inhibition) but protection is not sustained at 20h. ISRIB delays activated Caspase-3 appearance, with effects similar to DLKi at 7h but less pronounced at 8h.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate functional consequences of ISR activation in neurodegeneration. The time-course experiments (C71-C73) reveal that ISR inhibition provides transient protection, consistent with the ISR controlling only a subset of DLK-mediated pro-degenerative pathways (as shown in RNA-seq data). The use of multiple readouts (axon integrity in explants, Caspase-3 in dissociated cultures) strengthens the conclusion. The authors appropriately interpret the partial/transient protection as consistent with ISR being one of multiple DLK-mediated degenerative pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DLK/JNK signaling is necessary for ISR activation following optic nerve crush, and neuronal PERK mediates the DLK-dependent ISR. Genetic disruption of DLK or JNK2/3 attenuates ATF4 protein and ISR-related mRNA upregulation. Neuronal PERK deficiency (Syn1-Cre/Eif2ak3lx/lx) suppresses Chac1 induction. ISRIB treatment and AAV-mediated Atf4 knockdown reduce ISR target gene expression without affecting Jun upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 extend the DLK-PERK-ISR pathway findings to the ONC model, demonstrating generalizability across injury types. The use of multiple approaches (genetic knockouts of DLK and JNK2/3, conditional PERK knockout, ISRIB treatment, AAV-mediated knockdown) provides robust validation. The neuronal-specific PERK knockout (C78-C79) is particularly important for establishing cell-autonomous effects. The validation of Syn1-Cre specificity in RGCs (Figure 7 supplement 2) strengthens interpretation. The partial suppression with AAV-Atf4 knockdown (C82) is appropriately attributed to incomplete transduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Neuronal PERK deficiency and ISRIB treatment provide partial but significant neuroprotection after optic nerve crush. PERK-deficient mice show increased RGC survival from 42% to 72% at two weeks post-ONC. Daily ISRIB dosing (10 mg/kg) for ten days also provides partial neuroprotection. These findings demonstrate that PERK-mediated ISR cell-autonomously contributes to DLK-mediated neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide functional validation of the pathway in vivo using the ONC model. The neuroprotection data from both genetic (PERK cKO) and pharmacological (ISRIB) approaches converge on the same conclusion. The quantification uses multiple methods (blind scoring and automated counting, C84), enhancing rigor. The partial nature of protection (42% to 72% survival) is consistent with ISR being one of multiple DLK-mediated degenerative pathways. The ISRIB dosing regimen is supported by pharmacokinetic data (Figure 8 supplement 1). The inability to test ATF4-deficient mice due to microphthalmia is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "JNK signaling and the ISR are tightly linked via DLK following acute neuronal injury. PERK activation represents a second functional component (along with JNK) of the DLK-driven stress response. Greater than 80% of ISRIB-sensitive expression changes are DLK-sensitive. Both c-Jun deficiency and PERK deficiency are partially neuroprotective after ONC, consistent with DLK controlling both pathways and the potent neuroprotection from DLK disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 synthesize the major findings into a coherent model. The quantitative estimate of pathway overlap (C90) is supported by RNA-seq data. The comparison of partial neuroprotection from c-Jun or PERK deficiency vs. complete protection from DLK deficiency (C91-C92) provides strong support for the model that DLK controls multiple pro-degenerative pathways. This is well-supported by citations to prior work on c-Jun (Fernandes et al., 2012) and DLK (Watkins et al., 2013; Welsbie et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on ISR/PERK and DLK/JNK pathways in neurodegeneration. PERK is one of four eIF2\u03b1 kinases that activates the ISR, leading to translational changes including ATF4 upregulation. PERK disruption is neuroprotective in protein aggregation disease models. DLK/JNK/c-Jun signaling is activated by neuronal insults and regulates both regeneration and degeneration. JNK/c-Jun deficiency provides partial neuroprotection after ONC, less than DLK deficiency, suggesting DLK controls additional pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 provide essential background context from prior literature. All claims are appropriately supported by citations to relevant primary literature. The observation that JNK/c-Jun deficiency provides less protection than DLK deficiency (C20) is a key motivation for the current study and is well-supported by citations (Fernandes et al., 2012; Watkins et al., 2013; Welsbie et al., 2013). These background claims establish the rationale for investigating additional DLK-mediated pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of mechanisms and implications. A PERK-independent UPR branch is only transiently activated after ONC, and protein synthesis inhibitors don't prevent PERK activation during ischemia. PERK activation occurs downstream of DLK/JNK retrograde signaling but is not c-Jun-dependent. PERK signaling can be triggered by DLK following acute insults. DLK activation is sufficient to activate PERK, suggesting ISR activation may be a common consequence of MAP kinase stress signaling in DLK-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 discuss mechanisms and broader implications. The citations to prior work (C93-C94) appropriately contextualize the findings. The mechanistic conclusions about pathway ordering (C95-C96) are well-supported by the Campenot chamber and c-Jun knockdown experiments. The speculation about ISR as a general consequence of DLK signaling (C99) is appropriately framed as a possibility rather than a definitive conclusion, supported by the sufficiency data in non-neuronal cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Therapeutic implications and future directions. JNK activation has been noted in many progressive neurodegeneration models. DLK activity may influence PERK signaling in these settings. Blocking DLK may provide a therapeutic strategy for targeting both PERK and JNK signaling, given DLK's neuronal restriction and the viability of DLK-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 discuss therapeutic implications and future directions. While C100 is supported by citation (Coffey, 2014), claims C101-C102 are speculative regarding DLK's role in chronic neurodegeneration. The therapeutic potential (C102) is reasonable given the data presented, but would require additional validation in chronic disease models. The viability of DLK-deficient mice is well-established (Watkins et al., 2013), but the therapeutic window and potential side effects of DLK inhibition remain to be determined.",
+    "result_type": "MINOR"
+  }
+]

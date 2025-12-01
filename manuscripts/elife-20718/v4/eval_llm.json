@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C28",
+      "C29"
+    ],
+    "result": "Co-evolution analysis predicts that TatA family proteins bind to TatC at the TM5/TM6 interface. Ten of the 12 most highly co-evolving sequence pairs map from one face of the TatA TMH to surface-exposed residues in TM5 and TM6 of TatC, with residues lying in the same order along the faces of the two proteins as expected of an authentic contact interface. Molecular dynamics simulations confirm that both TatA and TatB can stably bind at this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 present co-evolution analysis data showing specific contact predictions between TatA family proteins and TatC TM5/TM6. Claims C28-C29 provide computational validation through MD simulations showing stability of both TatAC and TatBC complexes at this interface. The combination of independent bioinformatics prediction and computational validation provides strong support for this binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A functionally important intramembrane polar cluster mediates TatA/TatB-TatC interactions. The polar residue at position 8 in TatA family proteins (E8 in TatB, Q8 in TatA) participates in hydrogen-bonding interactions with TatC residues M205, T208, and Q215. MD simulations show that deprotonated TatB E8 accepts hydrogen bonds from TatC T208 and Q215, while TatA Q8 accepts a hydrogen bond from TatC Q215 but not T208. Sequence analysis suggests this polar interaction is a general feature of the Tat system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 establish the sequence conservation patterns through sequence logo analysis. Claims C30-C37 describe specific hydrogen bonding interactions identified through MD simulations and sequence analysis. The combination of sequence conservation data, detailed MD simulation results showing specific hydrogen bonding patterns, and sequence analysis of alternative amino acid pairs provides strong support for the polar cluster's role in mediating protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The polar cluster is essential for Tat transport function. Alanine substitutions of the TMH polar residue in either TatA (Q8A) or TatB (E8A) abolish or severely compromise transport of Tat substrates. The triple TatC variant (M205A/T208A/Q215A) is unable to support Tat transport, while single substitutions show varying degrees of impairment. The combination of T208A with Q215A is sufficient to abolish transport, suggesting the hydrogen bonding network is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 present systematic mutagenesis data testing the functional importance of polar cluster residues. Multiple independent assays (CueO export and cell chaining phenotype) consistently show loss or severe impairment of function upon mutation of polar cluster residues. The observation that double mutations affecting hydrogen bonding (T208A/Q215A) abolish transport while single mutations retain some function provides strong evidence for the mechanistic importance of the hydrogen bonding network. Controls showing protein expression is maintained (C49) rule out protein stability issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In the resting Tat system, TatB occupies the polar cluster binding site on TatC, while TatA has a constitutive polar cluster-independent interaction with TatC. Co-immunoprecipitation experiments show that the native E. coli TatBC complex binds a small proportion of TatA molecules even without substrate activation. The TatC MTQ variant abolishes TatB binding but not constitutive TatA binding, and the TatB E8A variant loses TatC binding while TatA Q8A retains it, indicating TatB occupies the polar cluster site while TatA binds elsewhere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 present co-immunoprecipitation data at native expression levels with appropriate controls (FEA variant blocking substrate binding). The differential effects of polar cluster mutations on TatB versus constitutive TatA binding provide strong evidence for distinct binding modes. The use of the FEA variant to exclude substrate-induced interactions and the demonstration that TatA binding persists when TatB binding is disrupted provide compelling evidence for the proposed model. The experiments are internally consistent and use appropriate negative controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "TatA can bind to the polar cluster site on TatC when TatB is removed. When TatB binding is disrupted (E8A variant or \u0394tatB strain), increased amounts of TatA bind to TatC. This enhanced binding is blocked by TatA Q8A substitution or by disrupting the TatC polar cluster (MTQ or M205R variants), indicating TatA molecules are binding to the TM5/TM6 site vacated by TatB. MD simulations support that Q8A would weaken TatA interaction at this site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 present co-immunoprecipitation data showing increased TatA binding when TatB is removed, with appropriate controls demonstrating this enhanced binding requires both the TatA polar residue (Q8) and the TatC polar cluster. The observation that enhanced binding is blocked by mutations in either partner protein provides strong evidence for specific binding at the polar cluster site. MD simulations (C76) provide independent computational support. The experiments are well-controlled and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "The polar residue Q8 is not essential for TatA oligomerization but is important for Tat transport activity. TatC variants that prevent TatB binding (MTQ, M205R) cannot form TatA-YFP oligomers, while variants retaining TatBC interactions (T208A, Q215A) form oligomers. The TatA Q8A variant forms oligomers indistinguishable from wild-type when other Tat components are present, demonstrating Q8 is not required for oligomer assembly, though the variant shows reduced transport activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 establish that TatBC complex formation is required for TatA oligomerization. Claims C79-C82, C84-C85 demonstrate through fluorescence microscopy that TatA Q8A can oligomerize despite lacking the polar residue, with experiments performed both with and without TatE to control for potential complementation. The observation that Q8A oligomerizes but has reduced transport activity (C81-C82) indicates Q8 has a mechanistic role beyond oligomerization. The experiments include appropriate controls and multiple independent observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The polar cluster has a mechanistic role in Tat transport beyond enabling TatBC complex formation. MD simulations show that polar cluster variants (TatB E8A, TatC T208A, TatC Q215A) disrupt the tight association between TatB TMH and TatC. However, single alanine substitutions in TatC (T208A, Q215A) retain TatB binding despite being severely compromised in transport activity, indicating an additional mechanistic role for the polar cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 provides MD simulation data showing disruption of TatB-TatC association with polar cluster mutations. Claims C62-C64 present the key observation that some variants retain binding but lose transport function, indicating the polar cluster has roles beyond simply enabling complex formation. This is supported by comparing binding data (Figure 6B) with transport data (Figure 5A). The logic is sound and the data are internally consistent, though the specific additional mechanistic role is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "TatB interacts with TatC at a second site involving TatB V18 and TatC L21 (TM1). Co-evolution analysis predicts contacts between TatB position 18 and TatC TM1 position 21 with high confidence (precision >0.8). Tryptophan substitutions at these positions reduce CueO export and induce partial TatBC dissociation in LMNG detergent. Cysteine substitutions at V18 and L21 show strong disulfide crosslinking, confirming close proximity. The distance between the TM5/TM6 and TM1 sites suggests each TatB TMH is sandwiched between two TatC molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 present co-evolution predictions for a second TatB-TatC interface. Claims C96-C102 provide experimental validation through three independent approaches: tryptophan substitutions affecting transport and complex stability, cysteine crosslinking showing specific contact at the predicted residue pair, and functional analysis. The convergence of computational prediction with multiple experimental validations provides strong support. The structural interpretation (C95) that TatB is sandwiched between two TatC molecules is a reasonable inference from the distance constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Molecular models of the TatBC oligomeric complex show a hollow dome-shaped structure that is stable in MD simulations. The models, built by docking TatBTMHC heterodimers using co-evolution-predicted contacts, show concave TatC surfaces facing the interior. The complexes are stable over 100 ns simulations with either lipid-filled or water-filled central cavities, though water-filled cavities show higher mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 describe structural models built from co-evolution data and validated through MD simulations. The models are based on experimentally validated contact predictions (from earlier results) and show stability in simulations. The observation of differential stability between lipid-filled and water-filled cavities (C105) is appropriately cautious, noting this may indicate only lipid-supported cavities are stable over longer timescales. The structural models are well-supported by the underlying data, though they represent computational predictions rather than experimental structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TatA and TatB compete for a single binding site on TatC, with substrate binding triggering replacement of TatB by TatA to nucleate translocation complex assembly. In the resting system, TatB has higher affinity for the shared TM5/TM6 site, while substrate activation favors TatA binding. The recruited TatA molecule is proposed to nucleate uptake of further TatA molecules to form the transport-capable complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 present the central mechanistic model integrating multiple lines of evidence from earlier results: both TatA and TatB can bind the TM5/TM6 site (supported by co-evolution and MD simulations), TatB occupies this site in the resting state (supported by co-IP data), and TatA can displace TatB when TatB binding is weakened (supported by enhanced TatA binding experiments). Claim C109 proposes TatA nucleates oligomer formation, which is consistent with oligomerization data (C77-C85) but represents a mechanistic inference rather than direct demonstration. The model is well-supported by the experimental data, though the nucleation mechanism requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Signal peptide binding at TatC TM1 is proposed to trigger conformational changes that reduce TatB affinity for the TM5/TM6 site, explaining how certain TatB substitutions (E8K, F9Q) suppress defective signal peptides. These substitutions are proposed to work by reducing the activation barrier to TatB displacement, allowing even weakly binding signal peptides to trigger TatA uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 present a mechanistic model linking signal peptide binding to TatB displacement and interpret prior genetic data in light of the structural model. While the model is logical and consistent with the structural data showing TM1 contacts both signal peptide and TatB, it represents speculation about conformational changes that have not been directly observed. Claim C111 cites prior genetic data, but the mechanistic interpretation in C112 is an inference. The model is plausible and provides a satisfying explanation for puzzling genetic observations, but lacks direct experimental validation of the proposed conformational changes and their effects on binding affinities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The behavior of Tat variants is sensitive to protein expression levels. Previous studies reported TatB E8A as fully active and TatC M205R as not affecting TatBC assembly, contrasting with the current findings at native expression levels. When the same variants are overproduced, TatB co-immunoprecipitates with TatC, demonstrating that mutagenic destabilization of the TatBC interface can be overcome by increasing protein concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 document discrepancies with prior literature, while C88-C90 provide experimental data showing that overexpression rescues binding for variants that fail to bind at native levels. This is important for reconciling conflicting literature reports and demonstrates the importance of expression level in interpreting mutagenesis data. The experiments directly test the concentration-dependence hypothesis and provide a clear explanation for literature discrepancies. The result is well-supported but is methodological rather than mechanistic in nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The manuscript's central findings are that in the TatBC receptor complex, each TatB TMH is sandwiched between two TatC molecules with a functionally important polar cluster at one interface, and that TatA can also associate with TatC at the polar cluster site, leading to a model where substrate binding triggers replacement of TatB by TatA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C3-C6) represent the main conclusions stated in the abstract and are supported by the detailed experimental and computational results grouped in other result categories. Claim C3 is supported by co-evolution analysis, MD simulations, and experimental validation of both the TM5/TM6 and TM1 interfaces. Claim C4 is supported by mutagenesis showing the polar cluster is essential for function. Claim C5 is supported by co-IP experiments showing TatA can bind at the polar cluster site when TatB is removed. Claim C6 represents the mechanistic model integrating these findings, which is well-supported though some aspects remain to be fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on the Tat system establishes that it transports folded proteins across bacterial and chloroplast membranes, is assembled from TatA, TatB, and TatC proteins, and is essential for various cellular processes. The system recognizes substrates via twin-arginine signal peptides, with TatBC forming the receptor complex and TatA being recruited upon substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 present established background knowledge about the Tat system, supported by citations to prior work (C7-C10, C13-C16) or representing well-established structural knowledge (C1-C2, C11-C12, C17-C18). These claims provide necessary context for the study but do not represent new findings. They are appropriately supported by literature citations and established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C38",
+      "C39",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Supporting observations include that chloroplast TatA and TatB proteins have similar sequences yet distinct functions like their E. coli counterparts, polar contacts between membrane helices are rare and functionally significant, the plasmid expression system restores native Tat activity, and the TatC M205R variant (previously identified as transport-deficient) blocks TatBC complex formation due to the introduced arginine rather than loss of methionine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide supporting observations that strengthen the main conclusions. Claim C22 supports the idea that TatA and TatB can use the same binding site despite sequence similarity. Claim C38 provides context for the significance of the polar cluster. Claim C39 validates the experimental system. Claims C65-C69 provide additional validation of the polar cluster's importance through analysis of a previously characterized variant. All claims are supported by appropriate data or citations, though they are supporting rather than central findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Methodological details of MD simulations include testing both protonated and deprotonated states of TatB E8, with simulations settling to stable states after minor equilibration while preserving secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe computational methods and simulation behavior. These are straightforward methodological descriptions supported by the simulation data presented in Figure 4 and supplements. The consideration of both protonation states is appropriate given the pH-dependent nature of glutamic acid. These are well-supported methodological details rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C67",
+      "C90",
+      "C91"
+    ],
+    "result": "Crystal structures of CRM1 bound to eight additional NESs reveal diverse backbone conformations ranging from loop-like to all-helix. Analysis shows 5-6 distinct backbone conformations with only one conserved turn of helix binding the central CRM1 groove. The structures include class 3 all-helix NESs (mDia2NES, CDC7NES), a new class 4 helix-\u03b2-turn NES (X11L2NES), class 2 loop-like NESs (SMAD4NES, FMRPNES), and class 1b 310 helix-strand NES (FMRP-1bNES).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C42, C67, C90-C91 are well-supported by high-resolution crystal structures (2.1-2.4 \u00c5), electron density maps, binding affinity measurements (KDs 670 nM-20 \u03bcM), and structural analysis showing RMSD values and dihedral angles. The structural data in Figures 1-3 clearly demonstrate the diverse NES conformations and the conserved one-turn helix element. Mutagenesis data (C27, C92-C96) further validates the structural assignments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C86"
+    ],
+    "result": "All NESs participate in main chain hydrogen bonding with HsCRM1 Lys568, which acts as a specificity filter preventing binding of non-NES peptides. In (+) NESs, Lys568 hydrogen bonds with \u03a62+1 and \u03a63 carbonyls; in (\u2212) NESs, it bonds with N-terminal \u03b2-strand carbonyls. Lys568 mutations (K568A, K568M) reduce PKINES binding by 2-3 orders of magnitude and enable binding of false positive sequences (Hxk2pep, DEAF1pep) that are sterically blocked by wild-type Lys568.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C43-C49, C53, C56-C66, C86 are strongly supported by structural data showing hydrogen bonds in multiple NES structures, mutagenesis experiments demonstrating 100-1000-fold reduced binding affinity for K568A/K568M mutants, pull-down assays showing differential binding of false positive peptides to mutants, and crystal structures of false positive peptides bound to K579A mutant showing steric clashes with wild-type Lys568. The dual role of Lys568 as both hydrogen bond donor and steric filter is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C52",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The large conformational range of NES backbones explains the lack of a fixed pattern for 3-5 hydrophobic anchor residues and the broad sequence specificity of CRM1. NESs can use diverse backbone conformations to present hydrophobic anchors into CRM1 pockets (P0-P4, with P0/P4 sometimes unused), but conformation is constrained by the requirement for one turn of helix with helix-strand transition and by CRM1 groove constriction that imposes chain exit/termination or extended configuration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C50-C52, C72-C75 are supported by the comprehensive structural analysis of 13+ NES structures showing diverse conformations yet conserved structural features. The inference that conformational diversity explains sequence variability is logical and well-supported by the structural data. The constraints imposed by groove geometry and the requirement for the conserved helix turn are clearly demonstrated in the structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The \u03a64 anchor position is not used in class 3 NESs (mDia2NES, CDC7NES), and the number of \u03a6 anchor residues necessary for CRM1 binding can vary between 3-5. Mutagenesis shows mDia2NES(\u03a60A) retains binding (KD = 9.1 \u03bcM vs 1.7 \u03bcM WT) while PKINES(\u03a64A) loses binding (KD = 150 \u03bcM vs 35 nM WT), demonstrating that NESs with the same 3 Leu anchors bind very differently depending on context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C92-C97 are supported by structural data showing empty P4 pocket in mDia2NES and CDC7NES structures, and by quantitative binding measurements with confidence intervals for mutants. The differential effects of removing \u03a60 vs \u03a64 demonstrate context-dependent importance of anchor positions. Claim C97 about helical propensity compensation is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C35",
+      "C36"
+    ],
+    "result": "No other experimentally verified NES in databases unambiguously matches the class 1b pattern. An engineered class 1b NES (FMRP-1bNES) forms a 310 helix that favorably presents \u03a61 and \u03a62 into the CRM1 groove, and natural class 1b NESs are likely to bind similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is supported by database analysis citations. Claims C35-C36 are based on a single engineered NES structure, making the extrapolation to natural class 1b NESs speculative. The structural data for FMRP-1bNES is solid (C34), but without natural class 1b NES structures, the prediction remains uncertain. Additional validation of natural class 1b NESs would strengthen this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Structures of remaining NES classes can be inferred: class 1d NESs are likely \u03b1-helix-strand, and other (\u2212) NES classes are likely the reverse of their (+) counterparts. However, (\u2212) class 3 and 4 NESs, lacking \u03b2-strands to hydrogen bond with Lys568, may not be ideal NESs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C71 are speculative inferences based on patterns observed in solved structures. While the logic is reasonable given the symmetry of sequence patterns and the established (+)/(\u2212) directionality, these remain predictions without experimental validation. The speculation about (\u2212) class 3 and 4 NESs being non-ideal is based on the Lys568 hydrogen bonding requirement but lacks direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "CRM1-NES structures expanded NES patterns from six to eleven classes. The ever-expanding pattern set suggests no fixed hydrophobic pattern describes NESs. Current NES predictors have limited precision (50% at 20% recall), but the structural diversity and conserved one-turn helix element revealed here will enable development of structure-based rather than sequence-based NES predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C80-C81 are supported by citations to prior work and database analysis. Claim C79 is reasonable speculation based on increasing pattern diversity. Claim C82 about enabling future structure-based predictors is speculative about future applications, though the structural foundation is solid. The result accurately describes current limitations and potential future directions but cannot be fully evaluated without implementation of proposed methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Lys568 interacts electrostatically with HsCRM1 Glu571, which is mutated to glycine or lysine in chronic lymphocytic leukemia and lymphomas with poor prognosis. Disease mutations will abolish Glu571-Lys568 contacts and possibly affect NES binding and selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by structural data showing the Glu571-Lys568 interaction and by citations to disease studies documenting the mutations. Claim C89 is a reasonable inference based on the structural data, though the functional consequences remain speculative without experimental validation of the disease mutants. The connection to disease is well-established by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "CRM1 binds highly variable NESs in hundreds of cargoes using an invariant binding groove. NESs typically have 4-5 hydrophobic residues binding P0-P4 pockets in the CRM1 groove, arranged in ten consensus patterns. Previous structures showed virtually identical CRM1 grooves with NESs adopting helix-strand (SNUPNNES, PKINES) or extended (RevNES) conformations. Prior work established that CRM1 binds NESs in both (+) and (\u2212) polypeptide orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C17 accurately summarize prior work and general knowledge about the CRM1-NES system, supported by multiple citations to previous studies. These claims provide essential background context for the current work and are well-established in the literature. The citations are appropriate and the characterizations of previous findings are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The CRM1-NES recognition mechanism contrasts with other broadly specific peptide recognition systems: MHC I/II proteins use many main chain contacts with few side chain interactions, while Calmodulin uses a flexible fold to adapt to various helical ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 accurately describe other peptide recognition systems based on appropriate citations to prior work. These comparisons provide useful context for understanding the unique features of CRM1-NES recognition. The characterizations of MHC and Calmodulin systems are accurate and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "There is a need to identify more CRM1 cargoes, as apoptosis upon CRM1 inhibition by Selinexor and other inhibitors appears driven by nuclear accumulation of different NES-containing cargoes, but identities of most apoptosis-causing cargoes remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 accurately describe a knowledge gap in the field and the clinical relevance of CRM1 inhibition, supported by extensive citations to clinical trials and mechanistic studies. This establishes the broader significance of understanding NES recognition but does not constitute a result from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "The previous structure of RevNES suggested that its three prolines may constrain against a helical conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 accurately describes a speculation from prior work (G\u00fcttler et al., 2010) about the role of prolines in RevNES conformation. This is appropriately cited and provides context for the current finding that class 2 NESs with few/no prolines also adopt loop-like structures (C31).",
+    "result_type": "MINOR"
+  }
+]

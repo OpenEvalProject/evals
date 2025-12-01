@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ABIG1 is required for ABA-mediated growth inhibition but not for stomatal closure or germination. Loss-of-function abig1 mutants show normal germination and stomatal closure responses to ABA but are resistant to ABA-mediated inhibition of leaf production and petiole growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C56-C57, and C60-C63 provide converging evidence from multiple assays (germination, stomatal closure, growth measurements) with appropriate statistical analysis (2-way ANOVA, p<0.0001 for leaf number, p<0.02 for petiole length). The specificity of the phenotype (affecting growth but not stomatal closure/germination) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C112",
+      "C113"
+    ],
+    "result": "ABIG1 mRNA levels increase in response to both ABA treatment and drought stress, and this response is partially dependent on the core ABA signaling pathway component ABI1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C39-C43, C112-C113 demonstrate ABIG1 upregulation by both ABA and drought using Q-RTPCR with appropriate controls. The partial dependence on ABI1 is shown with statistical significance (p=0.0033, 2-way ANOVA in C41), establishing a mechanistic link to canonical ABA signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C65"
+    ],
+    "result": "ABA treatment causes growth inhibition and leaf yellowing in wild-type plants, while abig1 mutants remain greener and produce more leaves than wild-type when treated with ABA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C58-C59, and C65 are supported by visual observations, morphological measurements, and chlorophyll quantification shown in multiple figures. The phenotypic differences between wild-type and mutant are consistent across experiments and supported by statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C160"
+    ],
+    "result": "Under drought conditions, abig1 mutants exhibit a 'stay green' phenotype with fewer yellow/senesced leaves, maintain upright growth, produce more side branches, and have more extensive root systems compared to wild-type plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C70-C77, and C160 provide comprehensive phenotypic characterization of drought response with statistical support (p(treatment\u00d7genotype)=0.0008 for leaf yellowing, p=0.0114 for branching). Chlorophyll measurements (C71) and quantification of plant posture (100% vs 37.5% erect, n=9 each) provide objective metrics. The experiment was replicated multiple times.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C150"
+    ],
+    "result": "Inducible overexpression of ABIG1 is sufficient to mimic ABA treatment, causing growth inhibition and leaf yellowing. Additional ABA does not enhance the ABIG1 overexpression phenotype, suggesting ABA acts primarily through ABIG1 to regulate growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C64-C66, C68-C69, and C150 demonstrate sufficiency through gain-of-function experiments using an estradiol-inducible system. The epistasis experiment (C68) showing no additive effect of ABA on ABIG1 overexpression supports the proposed pathway, though alternative interpretations (saturation of downstream components) are possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C79",
+      "C80",
+      "C81",
+      "C85",
+      "C86",
+      "C87",
+      "C145"
+    ],
+    "result": "ABIG1 induction regulates 18 up-regulated and 14 down-regulated genes enriched for stress response functions. Down-regulated genes show enrichment for bHLH, MADS, and homeodomain transcription factor binding sites, while up-regulated genes are enriched for bZIP binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C79-C81, C85-C87, and C145 are supported by RNA-seq analysis with appropriate statistical filtering (p adjusted <0.01, |FC|>1.5, 2-way ANOVA interaction p<0.05). GO enrichment analysis and promoter motif analysis (P-Scan) provide mechanistic insights. However, the distinction between direct and indirect targets remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C95",
+      "C96",
+      "C97",
+      "C115",
+      "C151"
+    ],
+    "result": "ABIG1 regulates genes involved in hormone metabolism and signaling, including the ABA catabolic enzyme CYP707A3, senescence regulator GRF5, drought resistance gene ATHB5, and receptors/transcription factors in the ethylene and jasmonate pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C91-C92, C95-C97, C115, and C151 identify specific regulated genes from RNA-seq data. The regulation of CYP707A3 (ABA catabolism) is particularly well-supported and mechanistically important. However, the time course (0-120 min) may not distinguish direct from indirect targets, and some effects could be secondary to hormone crosstalk.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C98",
+      "C144",
+      "C146",
+      "C152",
+      "C155"
+    ],
+    "result": "The authors propose a model where drought increases ABA, which acts through ABI1 to increase ABIG1 transcription, which in turn restricts shoot growth and promotes leaf senescence by regulating stress response genes and altering hormone sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C12, C98, C144, C146, C152, and C155 present an integrated model. While individual components are supported (ABA increases ABIG1, ABIG1 affects growth/senescence, ABIG1 regulates hormone genes), the complete pathway remains speculative. The mechanism of ABA regulation of ABIG1 is indirect (no ABREs in promoter, C55, C147), and the proposed feedback loop (C152) requires validation. Direct binding targets of ABIG1 are not identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C127"
+    ],
+    "result": "ABIG1 acts as a transcriptional repressor based on its EAR domain interaction with TOPLESS co-repressor and the known ability of HD-ZIPII proteins to repress their own transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C127 are supported by domain structure analysis, protein-protein interaction data (published and unpublished), and analogy to other HD-ZIPII proteins. The inference that direct targets are among down-regulated genes (C85) is logical but not definitively proven without ChIP or other direct binding data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C52",
+      "C53"
+    ],
+    "result": "ABIG1 is expressed in vascular parenchyma cells associated with xylem tracheary elements, with highest expression in petioles, hypocotyl, and regions subtending the shoot apex. Expression increases in response to ABA treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 and C52-C53 are supported by GUS reporter analysis in gene trap lines with histological confirmation. The spatial pattern is consistent with sites of ABA biosynthesis during drought (C50). The observation that homozygotes show higher expression than heterozygotes (C52) supports negative autoregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C147"
+    ],
+    "result": "ABA likely acts indirectly to increase ABIG1 levels by interfering with ABIG1's negative autoregulation, as evidenced by the absence of ABRE elements in the ABIG1 promoter and differential GUS expression patterns in heterozygotes versus homozygotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C55 and C147 present a plausible mechanism for ABA regulation of ABIG1, but the evidence is largely circumstantial. The absence of ABREs (C55, C147) and the GUS expression patterns (C52-C53) are consistent with indirect regulation, but alternative mechanisms are not excluded. The proposed interference with autoregulation (C54) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "ABIG1 does not regulate SAG113/HAI1, a PP2C phosphatase involved in ABA-mediated senescence, suggesting ABA up-regulation of SAG113/HAI1 occurs through a parallel pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are supported by RNA-seq data showing no regulation of SAG113/HAI1 or its regulator AtNAP by ABIG1. This negative result is important for defining the boundaries of ABIG1 function and suggests pathway specificity, though it would be strengthened by additional time points or conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "abig1 mutants have elevated steady-state levels of the cytokinin biosynthetic gene CYP735A2, which decrease in response to ABA in the mutant but not in wild-type, indicating altered hormone homeostasis and novel ABA responses in the mutant background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 identify an interesting secondary effect on cytokinin metabolism. The differential response to ABA in mutant versus wild-type (C108) is well-documented. However, the effect is likely indirect (C107) based on timing, and the functional significance for the drought phenotype is unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C111"
+    ],
+    "result": "ABIG1/HAT22 is co-regulated with known ABA signaling genes PYL6 and CIPK12 by the REVOLUTA and KANADI transcription factors, suggesting functional connection to ABA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C111 are supported by prior published work (Reinhart et al., 2013) and Figure 1A. This co-regulation pattern provided the initial rationale for studying ABIG1 in ABA signaling context. The connection is correlative but led to productive experimental investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "ATHB17, another HD-ZIPII transcription factor, shares some properties with ABIG1 (ABA/drought induction, growth inhibition, ABA resistance in mutants) but differs in drought sensitivity and effects on chloroplast density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 compare ABIG1 to the related ATHB17 protein based on published literature. The comparison is accurate and highlights both similarities and differences between these HD-ZIPII family members. This contextualizes ABIG1 within the broader family but relies entirely on citations rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C78"
+    ],
+    "result": "Unlike previously characterized ABA-resistant mutants that are drought-sensitive due to impaired stomatal closure, abig1 mutants are both ABA-resistant and drought-resistant because stomatal closure and germination pathways remain intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 and C78 make an important distinction between abig1 and canonical abi mutants. The normal stomatal closure and germination responses (C56-C57) combined with drought resistance (C7, C70-C77) support the existence of parallel ABA signaling pathways. This is a key conceptual advance of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The abig1 mutant exhibits a 'stay green' phenotype similar to drought-resistant crop varieties, suggesting that screens for ABA resistance during vegetative growth could identify novel drought-resistant mutants for crop breeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C161 connect the findings to agricultural applications. While C160 is well-supported experimentally, C161 is speculative. The proposed screening strategy is reasonable but untested. The translation from Arabidopsis to crops and the agronomic value of this specific trait remain to be demonstrated.",
+    "result_type": "MINOR"
+  }
+]

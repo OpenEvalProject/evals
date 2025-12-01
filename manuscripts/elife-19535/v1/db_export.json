@@ -1,0 +1,2040 @@
+{
+  "submission": {
+    "id": "1a161286-3294-4bb2-abad-5defa0ecda33",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:27:58.970133Z",
+    "updated_at": "2025-11-30T22:27:58.970133Z"
+  },
+  "content": [
+    {
+      "id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "submission_id": "1a161286-3294-4bb2-abad-5defa0ecda33",
+      "content_type": "manuscript",
+      "content_text": "# Symbiont-induced odorant binding proteins mediate insect host hematopoiesis\n\n## Authors\n\n- Joshua B Benoit<sup>1</sup>\n- Aur\u00e9lien Vigneron<sup>2</sup>\n- Nichole A Broderick<sup>3</sup> ([ORCID: 0000-0002-6830-9456](https://orcid.org/0000-0002-6830-9456))\n- Yineng Wu<sup>2</sup>\n- Jennifer S Sun<sup>5</sup> ([ORCID: 0000-0002-4274-0504](https://orcid.org/0000-0002-4274-0504))\n- John R Carlson<sup>5</sup> ([ORCID: 0000-0002-0244-5180](https://orcid.org/0000-0002-0244-5180))\n- Serap Aksoy<sup>2</sup> ([ORCID: 0000-0001-9941-143X](https://orcid.org/0000-0001-9941-143X))\n- Brian L Weiss<sup>2</sup> ([ORCID: 0000-0003-1576-3556](https://orcid.org/0000-0003-1576-3556)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences University of Cincinnati Cincinnati United States\n2. Department of Epidemiology of Microbial Diseases Yale School of Public Health New Haven United States\n3. Department of Molecular and Cell Biology University of Connecticut Storrs United States\n4. Institute for Systems Genomics University of Connecticut Storrs United States\n5. Department of Molecular, Cellular and Developmental Biology Yale University New Haven United States\n6. Interdepartmental Neuroscience Program Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSymbiotic bacteria assist in maintaining homeostasis of the animal immune system. However, the molecular mechanisms that underlie symbiont-mediated host immunity are largely unknown. Tsetse flies (Glossina spp.) house maternally transmitted symbionts that regulate the development and function of their host\u2019s immune system. Herein we demonstrate that the obligate mutualist, Wigglesworthia, up-regulates expression of odorant binding protein six in the gut of intrauterine tsetse larvae. This process is necessary and sufficient to induce systemic expression of the hematopoietic RUNX transcription factor lozenge and the subsequent production of crystal cells, which actuate the melanotic immune response in adult tsetse. Larval Drosophila\u2019s indigenous microbiota, which is acquired from the environment, regulates an orthologous hematopoietic pathway in their host. These findings provide insight into the molecular mechanisms that underlie enteric symbiont-stimulated systemic immune system development, and indicate that these processes are evolutionarily conserved despite the divergent nature of host-symbiont interactions in these model systems.\n\n## Introduction\n\nMutualistic bacteria are functionally critical to the physiological well-being of their animal hosts. These microbes benefit their hosts by providing essential nutrients, aiding in digestion and maintaining intestinal equilibrium (Douglas, 2015; Marchesi et al., 2016). Additionally, mutualistic symbionts promote the development, differentiation and proper function of their host\u2019s immune system (Chu and Mazmanian, 2013; Khosravi et al., 2014; Gomez de Ag\u00fcero et al., 2016 ). Despite such an important role, the molecular mechanisms that underlie symbiont-mediated homeostasis of animal immunity remain largely unknown.\n\nInsect models are useful for studying host-microbe interactions because, relative to their mammalian counterparts, they generally house taxonomically simple bacterial communities that can be easily manipulated during their host\u2019s development. Tsetse flies (Glossina spp.) house two gut-associated bacterial symbionts, obligate Wigglesworthia glossinidia and commensal Sodalis glossinidius (Maltz et al., 2012; Wang et al., 2013). In adult flies Wigglesworthia resides within cells that collectively form a bacteriome organ that is attached to the anterior midgut. Sodalis can be found extracellularly in the gut lumen, or intracellularly within gut epithelial cells (Wang et al., 2013). Tsetse reproduce via adenotrophic viviparity, during which pregnant females give birth to one larva each reproductive, or \u2018gonotrophic\u2019 (GC), cycle. Individual larvae mature through three developmental instars within the uterus, all the while receiving nourishment in the form of a milk-like substance produced by a modified accessory gland (milk gland; Benoit et al., 2015). Both Wigglesworthia and Sodalis are also found extracellularly in tsetse milk, and these bacteria colonize the gut of developing intrauterine larvae as they imbibe this nutrient source (Attardo et al., 2008).\n\nTsetse that undergo larvagenesis in the absence of their indigenous microbiota are highly immuno-compromised as adults (Wang et al., 2013). These \u2018aposymbiotic\u2019 (hereafter referred to as \u2018GmmApo\u2019) flies exhibit a dysfunctional cellular immune system that is characterized by the conspicuous absence of hemocytes. This phenotype results from the disruption of hematopoiesis (blood cell differentiation) during larval development (Weiss et al., 2011, 2012). In insects, distinct hemocyte lineages mediate essential immune-related functions, including the phagocytosis and encapsulation of foreign invaders and the closing of cuticular wounds via the deposition of melanin at the site of injury (Lemaitre and Hoffmann, 2007; Hillyer and Strand, 2014; Lee and Miura, 2014). These immune mechanisms serve as the first line of defense following systemic challenge with exogenous organisms. Actuation of host immune system development represents an evolution driven mechanism that steadfastly links the tsetse fly with its symbiotic bacterial partners.\n\nIn this study we identify symbiont regulated genes and pathways in tsetse larvae using RNA-seq. Functional studies revealed that one symbiont induced gene, which encodes an odorant binding protein (OBP), regulates hematopoietic pathways during tsetse\u2019s larval development. We also demonstrate that Drosophila\u2019s indigenous microbiota regulates expression of an orthologous, functionally conserved OBP-encoding gene. Our findings detail a newly characterized, evolutionarily conserved component of a blood cell differentiation regulatory pathway that occurs in response to the presence of enteric symbionts.\n\n## Results\n\n### Enteric symbionts stimulate expression of odorant binding protein 6 in intrauterine tsetse larvae\n\nDrosophila hematopoiesis occurs primarily during early larval development (Evans and Banerjee, 2003). This process is likely similarly timed in wild-type tsetse, but fails to occur when larvae develop in the absence of their indigenous symbiotic bacteria (Weiss et al., 2011, 2012). We sequenced RNA transcripts from age-matched (first and second instar) GmmWT and GmmApo (generated as described in Materials and methods, Fly lines and bacteria) larvae in an effort to identify genes and pathways associated with hematopoiesis during tsetse larvagenesis. RNA-seq analysis revealed that 1166 genes exhibited a differential expression profile in GmmWT compared to GmmApo larvae, and approximately 76% of these genes were expressed at higher levels in GmmWT individuals (Figure 1A; Supplementary file 1). Gene ontogeny analysis revealed significant enrichment of genes functionally associated with B vitamin metabolism, larval development, organismal growth and chitin synthesis in the GmmWT compared to GmmApo larvae (Figure 1B). These genes likely underlie previously observed phenotypes associated with dysfunctional chitin generation and B vitamin metabolism in GmmApo flies (Weiss et al., 2013; Michalkova et al., 2014). Herein we found that specific orthologues putatively clustering within the \u2018hematopoiesis\u2019 gene ontology category (GOC) were enriched in GmmWT larvae compared to adult female and male flies (Figure 1\u2014figure supplement 1). However, genes associated with hematopoiesis were not significantly enriched in GmmWT compared to GmmApo larvae (Figure 1\u2014figure supplement 1; Supplementary file 2). Because our previous studies demonstrate that GmmApo larvae fail to develop hemocytes (Weiss et al., 2011, 2012), we hypothesized that factors not typically grouped within the hematopoiesis GOC likely induce hemocyte differentiation in GmmWT larvae.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig1-v1.jpg)\n\n**Figure 1.:** (A) Number of genes exhibiting significant differential expression, and a relative transcript abundance [in transcripts per million (TPM)] over 3, in GmmWT compared to GmmApo larvae. Significance is based on a Baggerly\u2019s test followed by a false detection rate correction (p<0.01). (B) Significantly enriched gene ontology categories, determined using a Fisher\u2019s exact test. (C) Genes exhibiting significant differential expression (measure as fold-change in gene expression) in GmmWT compared to GmmApo larvae, and a minimum TPM value of 1000. Significance was determined as in (A). (D) Enrichment analysis of odorant binding protein-encoding genes expressed in GmmWT adult males (purple) and females (yellow), and GmmWT larvae (green). (E) Relative expression (TPM) of tsetse odorant binding protein-encoding genes in GmmWT larvae, and their differential expression (measure as fold-change in gene expression) in GmmWT compared to GmmApo larvae. Significance was determined as in (A). (F) Relative obp6 expression in GmmWT larvae, as well as larvae derived from symbiont-cured moms fed a diet supplemented with yeast and Wigglesworthia-containing bacteriome extracts (Gmmbact/Wgm+), Wigglesworthia-free bacteriome extracts (Gmmbact/Wgm-), Sodalis cell extracts (GmmSgm+), and bacteriome extracts harvested from GmmApo females (Gmmbact/Apo). GmmWT and GmmApo flies served as controls. n\u00a0=\u00a06 biological replicates for groups GmmWT, Gmmbact/Wgm+ and GmmSgm+ samples, and n\u00a0=\u00a05 biological replicates for Gmmbact/Wgm-, Gmmbact/Apo and GmmApo samples. Replicates for all groups contain a mixture of four first and second instar larvae. Data are presented as mean \u00b1 SEM. Bars with different letters indicate a statistically significant difference (specific p values are listed in Figure 1\u2014source data 1) between samples. Statistical analysis = ANOVA followed by Tukey\u2019s HSD post-hoc analysis.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Ontology enrichment analyses were performed as described in the Materials and methods, under the \u2018Transcriptomics\u2019 sub-heading. Refer to Supplementary file 2 for a description of the enriched hematopoiesis-associated gene expressed specifically in GmmWT and GmmApo tsetse larvae.\n\nWhen our RNA-seq libraries were screened to identify highly abundant (TPM\u00a0\u2265\u00a0103) and differentially transcribed genes, we observed that tsetse odorant binding protein 6 (obp6) exhibited the ninth highest level of differential expression between all annotated genes present in the larval GmmWT and GmmApo libraries (Supplementary file 1). Specifically, GmmWT larvae expressed 22x more obp6 transcripts than did their GmmApo counterparts (Figure 1C; Supplementary file 1). Because chemosensory-related genes exhibit hematopoietic properties and immune system-associated expression profiles in other insects (Thomas et al., 2016; Shim et al., 2013a; Aguilar et al., 2005; Bartholomay et al., 2004; Sabatier et al., 2003), we investigated the functional relationship between obp6 and immune system maturation processes during tsetse larvagenesis. Obp6, which encodes a 145 amino acid protein (16kD) with an N-terminal secretion signal (Liu et al., 2010), is larvae-enriched (Figure 1D) and the only OBP-encoding gene expressed at significantly different levels between GmmWT and GmmApo individuals (Figure 1E; Supplementary file 1). Obp6 expression can be restored in GmmApo larvae when their symbiont-cured moms are fed a diet supplemented specifically with Wigglesworthia cell extracts (Figure 1F), thus demonstrating that expression of this gene is stimulated by a Wigglesworthia derived molecule(s). Furthermore, this stimulus is likely not a bacterium generated nutrient, as the vitamin rich yeast extract included with the supplements fails to elicit the same response in individuals of the other treatment and control groups.\n\n### RNAi-based trans-generational inhibition of obp6 expression in tsetse larvae\n\nGmmApo larvae express 22-fold fewer obp6 transcripts than do their GmmWT counterparts (Supplementary file 1), and GmmApo adults present a highly depleted population of hemocytes (Weiss et al., 2012). Equipped with this information, we set out to determine if obp6 influences larval hemocyte differentiation processes and the subsequent function of these cells during adulthood. To do so we experimentally reduced obp6 expression in intrauterine GmmWT larvae using a novel RNAi-based trans-generational gene knock down approach (a graphical representation of the experimental design is presented in Supplementary file 3). To coincide with larval eclosion and subsequent milk uptake, pregnant GmmWT females were injected with either anti-obp6 (two anti-obp6 siRNAs were used, one of which was conjugated to a Cy3 dye) or anti-gfp siRNAs on days 8 and 11 post-mating. siRNA-administered treatment (anti-obp6) and control (anti-gfp) moms, and their larval and adult offspring, are hereafter designated \u2018siOBP6\u2019 and \u2018siGFP\u2019, respectively.\n\nThree days after the second treatment, pregnant females were viewed under a fluorescent microscope and siRNA was observed to have diffused throughout their hemocoel (Supplementary file 4A, top left panel). Additionally, siRNAs were taken up by the maternal milk gland and imbibed by developing (First gonotrophic cycle, GC1) intrauterine larvae, which subsequently fluoresced orange (Supplementary file 4A, bottom left panel). Obp6 expression was reduced in GmmWT larvae by an average of 68% when they acquired corresponding siRNAs trans-generationally from their mother\u2019s milk (Supplementary file 4B). Finally, by the third gonotrophic cycle (26 days post-siRNA treatment), anti-obp6 siRNAs were no longer visible in treated moms or their offspring (Supplementary file 4A, top and bottom right panels, respectively), and larval obp6 expression had rebounded to levels equivalent to that found in GC1 control (siGFP) larvae (Supplementary file 4B). These recovered flies are hereafter designated \u2018siOBP6R\u2019.\n\n### Obp6 expression in larval tsetse does not regulate the production or function of phagocytic hemocytes\n\nThe capacity of an adult insect to survive systemic challenge with exogenous microbes depends largely on the efficacy of its cellular immune system, and more specifically, hemocyte-mediated phagocytosis (Hillyer and Strand, 2014; Vlisidou and Wood, 2015). We thus investigated the ability of siOBP6, siGFP and siOBP6R adults to survive following systemic challenge with 103 CFU of E. coli K12. We observed that 88% of siOBP6 adults, 12% siGFP adults and 4% of siOBP6R adults perished over the course of the experiment (Figure 2A). The lethal effect of E. coli K12 on siOBP6 adults, which is similar to that observed in GmmApo adults following exposure to the same challenge (Weiss et al., 2012), indicates that tsetse must express obp6 during larvagenesis in order for subsequent adults to survive following thoracic exposure to a needle-inoculated E. coli K12 challenge.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig2-v1.jpg)\n\n**Figure 2.:** (A) Survival following systemic challenge of siOBP6 and siGFP adults with 5\u00a0\u00d7\u00a0102 CFU of E. coli K12. Fly survival was monitored every other day for the duration of the 14 day experimental period. Survival assays were performed in triplicate, using 25 flies per replicate. Red curve depicts a statistically significant difference in infection outcome (p<0.0001, log-rank test). (B) Hemocyte abundance in siOBP6 and siGFP adults was quantified microscopically using a hemocytometer (Figure 2\u2014source data 1). (C) A representative micrograph of hemocyte-engulfed recE. coliGFP from siOBP6, siGFP and siOBP6R adults. Experiment was performed using hemolymph collected from four distinct flies per (Figure 2\u2014source data 2). Hemolymph was collected 12 hpc and fixed on glass slides using 2% paraformaldehyde. Magnification is x400. (D) E. coli densities (CFU/\u03bcl of hemolymph) in the hemolymph of siOBP6, siGFP and siOBP6R adults at 2 and 6 dpc (Figure 2\u2014source data 3). In (B) and (D), symbols represent one hemolymph sample per group, and bars represent the median hemocyte quantity (B) or bacterial density (D) per sample. Statistical analysis = ANOVA followed by Tukey\u2019s HSD post-hoc analysis.\n\nsiOBP6 adults perish unusually fast following subjection to a hemocoelic challenge with E. coli K12. We thus investigated whether these flies house a depleted population of phagocytic hemocytes, which compromise the majority of the collective hemocyte population (Kurucz et al., 2007). We discovered no significant difference in the number of circulating hemocytes present in the hemocoel of siOBP6 compared to siGFP and siOBP6R adults (1349\u00a0\u00b1\u00a056, 1365\u00a0\u00b1\u00a033 and 1413\u00a0\u00b1\u00a031 hemocytes per \u03bcl of hemolymph, respectively; Figure 2B), and microscopic examination of hemolymph revealed that hemocytes from adult individuals of all three groups actively engulfed E. coli cells (recE. coliGFP; Figure 2C). Finally, we observed that E. coli density initially increased during the first two days following injection into the hemocoel of siOBP6, siGFP and siOBP6R tsetse (3278\u00a0\u00b1\u00a0806, 3530\u00a0\u00b1\u00a0482 and 4085\u00a0\u00b1\u00a0442 CFU per \u03bcl of hemolymph, respectively), but by four days later, had decreased to levels below that of the initial inoculate (104\u00a0\u00b1\u00a019, 115\u00a0\u00b1\u00a029 and 111\u00a0\u00b1\u00a028 CFU per \u03bcl of hemolymph, respectively; Figure 2D). These findings indicate that adult siOBP6 tsetse perish following systemic challenge with E. coli K12, but that this phenotype is not due to a reduced or dysfunctional population of phagocytic hemocytes. Additionally, E. coli growth does not appear to cause death in these flies, as bacterial density within both siOBP6 and siGFP (which survive this systemic challenge) individuals is maintained at similar densities during the course of infection.\n\n### Larval tsetse must express obp6 in order for subsequent adults to produce melanin\n\nWe found that adult siOBP6 tsetse perish following systemic challenge with E. coli K12, but that this outcome surprisingly does not result from either a lack of functional phagocytic hemocytes or unimpeded bacterial replication. The insect cellular immune response also includes the synthesis of melanin, which is involved in the encapsulation of foreign organisms in the hemocoel as well as the deposition of melanin at the site of cuticular wounds (Babcock et al., 2008; Tang, 2009). We next investigated whether adult siOBP6 tsetse present a defective melanization cascade, and as such are unable to deposit melanin at the wound site inflicted during the systemic E. coli challenge procedure. We used a heat-sterilized glass needle to puncture the cuticle of siOBP6, siGFP and siOBP6R individuals, and monitored percent survival over time. Similar to their counterparts that were challenged with E. coli, the majority (92%) of siOBP6 adults perished after receiving a \u2018clean wound\u2019 to their thorax. Conversely, significantly fewer siGFP (8%) and siOBP6R (16%) controls died following this treatment (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig3-v1.jpg)\n\n**Figure 3.:** (A) Survival following administration of clean wounds to the thoracic cuticle of siOBP6, siGFP and siOBP6R adults. Survival assays were performed in triplicate, using 25 flies per replicate. Red curve depicts a statistically significant difference in infection outcome (p<0.0001, log-rank test). (B) A representative micrograph of the cuticle of siRNA treated adults 3 hr post-wounding (hpw) with a clean needle. Melanin deposited at the wound site of siGFP and siOBP6R controls, and hemolymph exudate from a siOBP6 treatment individual, are identified by black and red arrowheads, respectively. Scale bar\u00a0=\u00a0500 \u03bcm. Experiment was performed using four distinct flies per group (Figure 3\u2014source data 1). (C) Quantitation of PPO1 and PPO2 in the hemolymph of siOBP6, siGFP and siOBP6R adults three hpw with a clean needle. Shown is a representative Western blot analysis using Drosophila anti-PPO1 and anti-PPO2 antibodies. 8 \u03bcl of pooled hemolymph was run per gel lane. Hemolymph was collected and pooled from four individuals from each group. Western blots were repeated in triplicate [Figure 3\u2014source data 2 (for PPO1 westerns) and Figure 3\u2014source data 3 (for PPO2 westerns)]. (D) PO activity in the hemolymph of siOBP6, siGFP and siOBP6R adults at 0 and 3 hpw with a clean needle. n\u00a0=\u00a05 biological replicates per group per time point for pre-wound readings, and n\u00a0=\u00a08 biological replicates per group per time point for post-wound readings. Data are presented as mean \u00b1 SEM. Bars with different letters indicate a statistically significant difference between pre- and post-wound values (specific p values are listed in the Figure 3\u2014source data 4). Statistical test\u00a0=\u00a02 way ANOVA followed by Tukey\u2019s HSD post-hoc analysis.\n\nAdult siOBP6 tsetse perished after they were pricked with a clean needle while their siGFP and siOBP6R counterparts survived. We monitored the wound site of a select number of flies from each of these groups to determine if melanin was deposited at this location. Three hours post-treatment, melanin was observed at the wound site of siGFP and siOBP6R tsetse. Conversely, no melanin was present at the wound site of siOBP6 individuals at this time (Figure 3B), and, as the wound never fully healed, hemolymph continued to slowly exude from these flies for the entirety of the 2-week experimental period.\n\nMelanin deposition represents the end product of a complex biochemical cascade, several steps of which are catalyzed by the enzyme phenol oxidase (PO;\u00a0Eleftherianos and Revenis, 2011 ). Because toxic intermediates are produced as a byproduct of melanin production, catalytic PO is usually synthesized as an inactive zymogen called prophenoloxidase (PPO; Tang, 2009). We quantified PPO levels in hemolymph collected from siOBP6, siGFP and siOBP6R flies to determine if the different wound melanization phenotypes we observed reflected different quantities of this enzyme in the hemolymph of treatment versus control individuals. Western blots using anti-PPO1 and anti-PPO2 antibodies revealed that siOBP6 adults produced significantly less of these proteins than did age-matched siGFP and siOBP6R individuals (Figure 3C). We next employed a L-DOPA assay to measure PO activity in hemolymph collected from siOBP6, siGFP and siOBP6R adults at 0 and 3 hr after subjection to a clean needle wound. We observed a 9.0-fold and 13.7-fold increase in PO activity in siGFP and siOBP6R adults, respectively, 3 hr after cuticle penetration. Conversely, PO activity only increased 2-fold in clean wounded siOBP6 adults over the same time frame (Figure 3D). Taken together these results indicate that when intrauterine tsetse larvae express reduced levels of obp6 they present a dysfunctional melanization cascade during adulthood.\n\n### Obp6 mediates the crystal cell production pathway in larval tsetse\n\nIn Drosophila larvae, a specific subset of hemocytes called crystal cells produce the majority of PPO. Upon immunological stimulation, crystals cells rupture and release PPO into the hemolymph where enzymes convert it into PO that subsequently catalyzes melanin synthesis (Honti et al., 2014). Drosophila hemocytes originate in the fly\u2019s embryonic and larval lymph gland. This tissue is resorbed during metamorphosis, and evidence of prolific and prolonged de novo production of hemocytes in adult flies does not exist (Grigorian and Hartenstein, 2013). Assuming a similar situation occurs in tsetse, the absence of cuticular melanization in siOBP6 adults following wounding with a clean needle may reflect abnormal crystal cell development during embryogenesis and/or intrauterine larvagenesis. To investigate this hypothesis, we quantified this cell subtype in siRNA treated larvae by subjecting third instar individuals to a 65\u00b0C heat shock for 10 min. In Drosophila this treatment induces spontaneous activation of PPO in crystal cells, which are then visible as black melanotic spots on the larval cuticle (Binggeli et al., 2014). Following this treatment, we counted 7 (\u00b12.0), 58 (\u00b14.7) and 52 (\u00b15.7) melanized spots on siOBP6, siGFP and siOBP6R larvae, respectively (Figure 4A). These findings suggest that siOBP6 larvae house either a reduced number of crystal cells, or that these cells exhibit a dysfunctional PPO pathway.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig4-v1.jpg)\n\n**Figure 4.:** (A) Representative micrograph depicting spontaneous PPO activation in early third instar siGFP, siOBP6 and siOBP6R tsetse larvae following subjection to a 10 min heat shock at 65\u00b0C. Experiment was repeated using one larvae from five distinct moms from each group. Melanotic spots were quantitated microscopically. Statistical analysis = Kruskal-Wallis test followed by Dunn\u2019s post-hoc analysis (Figure 4\u2014source data 1). (B) RT-qPCR analysis of obp6, serpent and lozenge expression in embryos prior to maternal treatment with siRNA, and in siOBP6, siGFP and siOBP6R tsetse larvae from siRNA treated moms. Embryo replicates (n\u00a0=\u00a05) contain three embryos, larval replicates (n\u00a0=\u00a07 for siOBP6, n\u00a0=\u00a05 for siGFP and n\u00a0=\u00a06 for siOBP6R) contain a mixture of four first and second instar larvae. ND, not detectable. Data are presented as mean \u00b1 SEM. Bars with different letters indicate a statistically significant difference between samples (specific p values for larval samples are listed in the Figure 4\u2014source data 2). Statistical analysis\u00a0=\u00a02 way ANOVA followed by Tukey\u2019s HSD post-hoc analysis. (C) Representative image of obp6 and lozenge spatial expression patterns, determined using semi-quantitative RT-PCR, in the gut and carcass of second instar GmmWT larvae. Experiment was repeated using guts and carcasses from five distinct individuals (Figure 4\u2014source data 3).\n\nIn Drosophila\u2019s lymph gland, prohemocytes express the GATA factor serpent, and these cells subsequently differentiate into either functionally mature plasmatocyte (phagocytic hemocytes) or crystal cell lineages via induction of the hematopoietic transcription factors glial cells missing or lozenge, respectively (Lebestky et al., 2000; Ferjoux et al., 2007). Thus, serpent serves as an efficacious marker for determining the presence of hemocyte progenitors, while lozenge expression reflects differentiation of a pool of these precursors into functional members of the crystal cell lineage (Binggeli et al., 2014).\n\nIn an effort to determine why siOBP6 larvae present significantly fewer melanotic spots than do their siGFP and siOBP6R counterparts, we quantified transcript abundance of obp6, serpent and lozenge in tsetse embryos prior to maternal inoculation with siRNA, and then in first and second instar larvae from the three siRNA treated groups. We observed that obp6 and lozenge transcripts were undetectable during embryonic development, while serpent expression remained unchanged across groups (Figure 4B). This serpent expression profile presented by tsetse embryos mirrors the presence of prohemocytes, while the absence of lozenge transcripts in individuals of this developmental stage suggests that crystal cell differentiation has yet to commence. Subsequent analysis of larval offspring from siRNA treated moms revealed that obp6 and lozenge expression was significantly reduced in siOBP6 compared to siGFP and siOBP6R larvae, while serpent expression was similar in all individuals tested (Figure 5B). Serpent expression by siOBP6 larvae indicates maintenance of the hemocyte precursor pool throughout development of immature stages. However, fewer of these progenitors likely become crystal cells because siOBP6 larvae express significantly reduced levels of the lozenge transcription factor that actuates the differentiation process.\n\nIntestinal microbiota can exert their physiological influence at local epithelial surfaces or peripheral tissues (Round and Mazmanian, 2009; Clarke, 2014a). To determine the spatial dynamics of obp6 mediated induction of tsetse hematopoiesis, we analyzed the expression pattern of this gene, and lozenge, in gut and carcass tissues of second instar larvae. We detected obp6 and lozenge transcripts only in the larval gut and carcass, respectively (Figure 4C). These findings indicate that Wigglesworthia stimulates local expression of obp6, and that tsetse\u2019s hematopoietic niche is likely not attached to the larval gut. Thus, symbiont-induced obp6 regulates tsetse hematopoiesis on a systemic level.\n\n### Obp28a, Drosophila\u2019s orthologue of tsetse obp6, is also symbiont regulated and functionally conserved\n\nHematopoietic signaling pathways and their transcriptional regulators within the niche are functionally conserved across many animal taxa (Evans et al., 2003; Hartenstein, 2006; Makhijani and Br\u00fcckner, 2012). However, little is known about the evolutionary conservation of upstream, extra-niche factors that induce blood cell lineage commitment. Thus, for comparative purposes, we investigated whether Drosophila\u2019s indigenous microbiota regulate crystal cell differentiation, and thus the melanization response, within their host. To do so we measured expression levels of obp28a (which is orthologous to tsetse obp6 based on sequence similarity; OrthoDB; Kriventseva et al., 2015 ) and lozenge in conventionally reared and axenic (reared in the absence of their indigenous microbiota) Drosophila larvae. We noted that conventionally reared w1118 and Oregon-R larvae expressed significantly more obp28a and lozenge transcripts than did their axenic counterparts (Figure 5A). Additionally, conventionally reared larvae and adults presented more cuticular sessile crystal cells (following heat shock) and produced more PPO, respectively, than did age-matched axenic individuals (Figure 5B, Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig5-v1.jpg)\n\n**Figure 5.:** (A) Relative expression of obp28a and lozenge in conventionally reared (CR) and axenic (AX) Oregon-R and w1118 Drosophila larvae. n\u00a0=\u00a09 (Oregon-R) and 6 (w1118) biological replicates per group, each containing a mixture of thirty second and early-3rd instar larvae. Data are presented as mean \u00b1 SEM. Asterisks indicate statistical significance (specific p values are listed in the Figure 5\u2014source data 1). Statistical analysis = unpaired t-tests, corrected for multiple comparisons using the Holm-Sidak method. (B) AX larvae house fewer sessile crystal cells, and produce less PPO, than do and CR individuals. Top panels are representative micrographs depicting spontaneous PPO activation in AX and CR w1118 and Oregon-R larvae following subjection to a 10 min heat shock at 65\u00b0C. n\u00a0=\u00a05 larvae per group [Figure 5\u2014source data 2 (for Oregon-R larvae) and Figure 5\u2014source data 3 (for w1118 larvae)]. Bottom panels are representative Western blots using Drosophila anti-PPO1 antibodies. 8 \u03bcl of pooled hemolymph was run per gel lane. Hemolymph was collected and pooled from 15 individuals from each group. Western blots were repeated in triplicate (Figure 5\u2014source data 4). (C) Survival of obp28a RNAi knockdown Drosophila (tub-GAL4/UAS-obp28a RNAi) and knockout (Obp28a-) adults compared to controls (tub-GAL4, UAS-obp28a RNAi and wCs) following wounding with a clean needle. Experiment was performed in triplicate, n\u00a0=\u00a050 (RNAi) and n\u00a0=\u00a045 (knockout) per group per replicate. Red curve depicts a statistically significant difference in infection outcomes [p<0.0001 (RNAi) and p=0.0002 (knockout), log-rank test]. (D) A representative micrograph of the cuticle of obp28a knockdown, knockout and control Drosophila adults six hpw with a clean needle. Experiment was performed using two distinct experimental fly cohorts [n\u00a0=\u00a04 flies per group per experiment; Figure 5\u2014source data 5 (for RNAi flies) and Figure 5\u2014source data 6 (for deletion mutants)]. Wounds on the cuticle of control (melanized) and obp28a knockdown and knockout individuals (not melanized) are identified with black and red ovals, respectively.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** White ellipses demarcate an area of the larval cuticle that contains a high density of ruptured crystal cells.\n\nWe next investigated the wound healing phenotype of both a Drosophila RNAi line (GAL4/UAS-obp28a RNAi) that expresses reduced levels of obp28a and an obp28a mutant line (Obp28a-). Following thoracic injury with a clean needle, we observed that Drosophila tub-GAL4/UAS-obp28a RNAi and Obp28a- adults perished significantly faster than did control individuals [tub-GAL4 driver, UAS-obp28a RNAi and wCs (mutant) progenitor lines; Figure 5C]. Additionally, at 6 hr post-injury, melanin had deposited at the wound site of control Drosophila but not their obp28a knockdown or knockout counterparts (Figure 5D). Collectively these findings suggest that OBP-mediated hematopoiesis represents an evolutionarily conserved mechanism that benefits these flies by preventing dehydration and/or exposure to opportunistic infections with environmental microbes following cuticular injury.\n\n## Discussion\n\nTsetse flies must house their maternally transmitted enteric symbionts during larval development in order to present a functional cellular immune system as adults. In the absence of these microbes, tsetse larvae express reduced levels of the GATA and RUNX transcription factors serpent and lozenge. This inhibition prevents the production of blood cell progenitors and thus the differentiation of phagocyte and crystal cell lineages (Weiss et al., 2011, 2012). Herein, we characterize an obligate symbiont regulated tsetse gene that actuates a distinct component of the fly\u2019s hematopoietic program. Specifically, these microbes regulate obp6 transcript abundance in developing intrauterine larvae. The encoded protein subsequently induces expression of lozenge, which drives a pool of larval hemocyte precursors to differentiate into functional crystal cells. When adult tsetse house a depleted population of this hemocyte subtype, which initiates the melanization cascade via the release of prophenoloxidase, cuticular wounds fail to clot, thus leaving the fly exposed to dehydration and/or infection with opportunistic environmental microbes. This phenotype is similar to that observed when Wigglesworthia-free flies are exposed to cuticular wounds (Weiss et al., 2011; Figure 6). We further discovered that Drosophila\u2019s indigenous microbiota regulate orthologous components of their host\u2019s hematopoietic program. Taken together, these findings accentuate the functional relevance of symbiotic bacteria as they relate to hematopoiesis, and detail an evolutionarily conserved component of the insect innate immune system that coordinates a cellular process essential for survival.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19535/elife-19535-fig6-v1.jpg)\n\n**Figure 6.:** GmmWT larvae imbibe enteric symbiotic-containing milk gland secretions throughout their intrauterine developmental program. These bacteria colonize larval gut-associated tissues, including the bacteriome, and in doing so, induce the expression of obp6. OBP6 is either secreted directly into the hemolymph, or acts locally to induce expression of another unknown, (also secreted) protein. One of these molecules then acts systemically in the larval hematopoietic niche (hn) to stimulate lozenge (lz) expression in a small proportion of serpent (srp) expressing prohemocytes. These cells then become PPO-producing crystal cells [remaining prohemocytes become phagocytes after expressing glial cells missing (gcm)]. Finally, crystal cells are expelled from the hn, where they circulate in the hemolymph and are available to produce wound-healing melanin. Larvae that develop in the absence of symbiotic bacteria (GmmApo) fail to produce any hemocytes, while those that develop in the presence of reduced obp6 transcript abundance (GmmOBP6-) fail to express lozenge and thus likely fail to generate crystal cells. dv, dorsal vessel; hc, hemocoel; w, wound; ep, epithelial cells of midgut; bc, bacteriome; pm, peritrophic matrix; gl, gut lumen.\n\nWhen tsetse and Drosophila larvae express reduced levels of orthologous obp6 and obp28a, respectively, subsequent adults exhibit defective melanization cascades and thus perish unusually fast following wounding with a clean needle. These phenotypes result from reduced expression of hematopoietic lozenge and a consequently depleted population of PPO-producing crystal cells. In tsetse, obp6 expression is tightly linked with intrauterine larval recognition of obligate Wigglesworthia. Drosophila larvae are free-living and thus do not obtain bacteria trans-generationally. Instead, female Drosophila lay their eggs in decaying organic matter, and immediately following eclosion, larvae begin feeding on this substrate (Markow, 2015; Broderick and Lemaitre, 2012). Thus, the gut of larval Drosophila is colonized by a relatively diverse population of environmentally acquired bacteria (Chandler et al., 2011;Wong et al., 2013 ). Axenic Drosophila larvae develop slower and weigh less than wild-type individuals (Shin et al., 2011; Storelli et al., 2011), and adults exhibit reduced stem cell activity and epithelial turnover (Buchon et al., 2009; Broderick et al., 2014) and can be more susceptible to enteric viral and bacterial pathogens (Blum et al., 2013; Sansone et al., 2015). The immune-compromised phenotypes exhibited by axenic adult Drosophila may reflect a developmental deficiency that, similar to the situation in tsetse, occurs when larval stages mature in the absence of symbiotic bacteria. This scenario would suggest that Drosophila\u2019s indigenous microbiota also influences hematopoietic processes via a mechanism homologous to Wigglesworthia\u2019s influence on tsetse. These convergent mechanisms, which control crucial immune phenotypes that are coordinated by evolutionarily conserved genes and regulatory pathways, exist despite the divergent nature of these host-symbiont model systems. Specifically, the tsetse-Wigglesworthia symbiosis originated 50\u201380 million years ago (Chen et al., 1999), and due to the bacterium\u2019s strict vertical route of transmission, is highly steadfast in nature. Conversely, Drosophila\u2019s relationship with its microbiota is relatively transient and highly dependent on diet and local environmental factors (Blum et al., 2013; Broderick et al., 2014). The extent to which obp6 and obp28a orthologues are functionally conserved in other arthropods remains to be determined. Furthermore, although vertebrates lack direct obp6 and obp28a orthologues (Kriventseva et al., 2015), unrelated odorant binding proteins may present similar roles in these systems.\n\nInnate immunity is germ-line encoded and regulated by highly conserved pathways (Rubin et al., 2000; Lemaitre and Hoffmann, 2007), some of which are actuated by systemically derived signals. This type of molecular coordination is well characterized in Drosophila, where insulin secreted by insulin-producing cells in the brain, and essential amino acids emanating from the gut, promote Wingless signaling that maintains blood cell progenitors in the hematopoietic niche (Shim et al., 2012). Smell also contributes to progenitor maintenance in larval Drosophila. Specifically, olfactory receptor neurons, stimulated by the detection of small food-derived volatile molecules, secrete GABA into the larval hemocoel where it subsequently binds to blood cell progenitors in the lymph gland. This interaction increases cytosolic calcium concentrations that are necessary and sufficient to maintain the progenitor population. When larval Drosophila are reared on an odor-free diet, they fail to retain a pool of these cells (Shim et al., 2013a). These findings highlight the intriguing association between smell and homeostasis of innate immune-related activities. For the experiments performed herein, Drosophila and tsetse were reared in the absence of indigenous microbes, but on diets (sterilized) and in environments that emitted normal food odors. Under these conditions both flies presented dysfunctional hematopoietic programs, indicating that microbe-derived factors may also influence hematopoiesis. While the exact chemical structure of these molecules is currently unknown, they could take the form of microbe-associated molecular patterns (MAMPs), including bacterial cell wall components such as polysaccharide A, peptidoglycan and Nod-like receptor ligand, which in mammals actuate differentiation of T cell lineages (Mazmanian et al., 2005), enhance bone marrow-derived neutrophil killing (Clarke et al., 2010) and stimulate macrophage activity in lung tissues (Clarke, 2014b; Gauguet et al., 2015), respectively. Additionally, microbial metabolites mediate regulatory T cell abundance in colonic tissues, as germ-free mice that lack gut microbiota-derived fatty acids present fewer of this immune cell type (Smith et al., 2013; Furusawa et al., 2013). These findings accentuate the concept that general metabolic defects associated with dysbiosis can give rise to cellular immunity-related pathologies (Norata et al., 2015), including impairment of hematopoietic programs (Shim et al., 2012, 2013b).\n\nBacteria also release a wide variety of volatile compounds (Audrain et al., 2015), some of which, following chemosensory detection, influence animal immune phenotypes. A situation of this nature occurs when adult Drosophila detect geosmin, which is a microbial odorant that signals the presence of harmful microbes. This stimulus induces expression of olfactory receptor Or56a in olfactory sensory neurons, which leads to an aversion behavior, reduction in the activity of other olfactory pathways, and inhibition of positive chemotaxis, oviposition and feeding behavior (Stensmyr et al., 2012). A similar phenomenon occurs in the nematode Caenorhabditis elegans, which executes a protective avoidance behavior following chemosensory detection of the aromatic compounds phenazine-1-carboxamide and pyochelin that are produced by pathogenic Pseudomonas aeruginosa (Meisel et al., 2014). Drosophila detects and prefers specific odors produced by members of its microbiome (Fischer et al., 2016). As such, odorant molecules derived from tsetse and Drosophila enteric microbes could modulate the expression of obp6 and obp28a in the gut of larval flies, thus serving as the signal that activates hematopoiesis.\n\nIn larval tsetse Wigglesworthia is found exclusively within the gut-bacteriome axis (Balmand et al., 2013), and obp6 expression is restricted to this same environment. Conversely, lozenge transcripts are found solely in the carcass, indicating that the fly\u2019s hematopoietic niche is likely not attached to the gut. The spatial expression pattern of these genes indicates that OBP6 exerts a systemic effect on tsetse hematopoiesis, and this process could occur in one of two ways. First, this protein could act locally at the mucosal interface to induce the production and secretion of a distinct immuno-stimulatory molecule that subsequently acts in tsetse\u2019s hematopoietic niche. A mechanism of this nature occurs in mice, where enteric symbiont-derived molecules induce group three innate lymphoid cells in the intestine to increase production of the cytokine interleukin-17 (IL-17). Circulating IL-17 subsequently induces production of peripheral granulocyte colony-stimulating factor, which actuates neutrophil differentiation in bone marrow tissues (Deshmukh et al., 2014). Insect OBPs are widely believed to serve as vehicles that carry odorant molecules from sensory sensillum pores to corresponding dendritic odorant receptors (Leal, 2013). Based on this definition, tsetse OBP6 could also serve a carrier-like function following translocation from the fly\u2019s gut into its circulatory system. More specifically, this protein could complex with another hematopoietic molecule produced either in tsetse\u2019s gut or extra-intestinally, and then both together, or the latter molecule alone, stimulate hemocyte development in the hematopoietic niche. Notably, the function of insect OBPs was defined based on experiments performed in the chemosensory apparatus, and the role of these proteins in other insect tissue types is largely unknown. Interestingly, a recent study exploring the roles of OBPs in Drosophila sensilla found that deletion of obp28a did not reduce the magnitude of fly olfactory responses, suggesting a novel role for the encoded protein (Larter et al., 2016). As such, tsetse OBP6 could also function unconventionally by directly stimulating hematopoiesis following secretion into the larval hemocoel. Further studies are required to determine the specific cell type within larval tsetse\u2019s gut and/or bacteriome that express obp6. Additionally, identification of OBP6 target tissues will provide valuable insight into the immuno-stimulatory function of this protein.\n\nFinally, we speculate that our tsetse fly related findings reported herein are directly relevant to the transmission of vector-borne pathogens. Melanization is a cellular immune response that occurs across invertebrate taxa (Cerenius and S\u00f6derh\u00e4ll, 2011), and this mechanism influences the transmission of several pathogens through their respective insect vectors (Collins et al., 1986;\u00a0Zou et al., 2008; Bartholomay, 2014). Thus, an increased understanding of the physiological processes that regulate melanization may have translational implications pertinent to the development of pathogen-refractory insects.\n\n## Materials and methods\n\n### Fly lines and bacteria\n\nG. morsitans morsitans were maintained in Yale\u2019s insectary at 24\u00b0C with 50\u201355% relative humidity. All flies received defibrinated bovine blood (Hemostat Laboratories) every 48 hr through an artificial membrane feeding system. Aposymbiotic tsetse larvae (GmmApo) were derived from females fed a diet supplemented with tetracycline (20 \u03bcg per ml of blood) to clear their indigenous microbiota, and yeast extract (1% w/v) to rescue the sterile phenotype associated with the absence of Wigglesworthia (Alam et al., 2011). Thus, GmmApo offspring developed in the absence of all symbiotic bacteria. Embryos and 1st and second instar larvae for all experimental groups were age-matched by taking individual samples from pregnant females undergoing their second gonotrophic cycle (Attardo et al., 2014).\n\nAxenic Drosophila larvae (Oregon-R and w1118 strains) were generated as described previously (Broderick et al., 2014). Drosophila tub-GAL4 driver and UAS-obp28a RNAi progenitor lines were crossed, and resulting tub-GAL4/UAS-obp28a RNAi F1 offspring were used for experiments (Dietzl et al., 2007). Anti-obp28a RNAi target gene specificity, knockdown efficacy and accompanying phenotypic characterization, were determined previously (Swarup et al., 2011). Obp28a deletion mutants (Obp28a-) were generated from progenitor flies (CAS-0003; Kondo and Ueda, 2013) using the CRISPR-Cas9 system, and backcrossed to w Canton-S (wCs) for five generations (Larter et al., 2016). Flies were maintained on a cornmeal-yeast-agar medium (per liter of water: 50 g inactivated yeast, 70 g maize flour, 6 g agar, and 40 g of dextrose) at 25\u00b0C in ambient humidity.\n\nGFP-expressing E. coli K12 (recE. coliGFP) were produced via electroporation with pGFP-UV plasmid DNA (Clontech).\n\n### Transcriptomics\n\nFirst and second instar tsetse larvae (n\u00a0=\u00a05 of each) were collected from two distinct cohorts of pregnant GmmWT and GmmApo females 48 hr post-feeding. Total RNA from the above-mentioned tsetse larvae was extracted, DNAse treated and purified as described previously (Benoit et al., 2014). RNA-seq libraries were constructed using polyadenylated RNA and standard Illumina RNA-seq protocols. Libraries were sequenced at the McDonnel Genome Institute (Washington University). Read files have been deposited in the NCBI BioProject database (ID# PRJNA309164).\n\nFastQC analyses were performed on the RNA-seq datasets to assess read quality. Low quality reads and sequencing adaptors were removed with Trimmomatic (Bolger et al., 2014). Transcript expression levels were determined using CLC Genomics Workbench (CLC Bio, Cambridge, MA). Briefly, RNA-seq datasets were mapped directly to the tsetse fly genome (International Glossina Genome Initiative, 2014) with an algorithm that allowed only two mismatches and a maximum of 10 hits per read. Transcripts per million (TPM) was used as a proxy for gene expression. The predicted gene set associated with the genome was version 1.1 obtained from Vectorbase (Giraldo-Calder\u00f3n et al., 2015). The following samples were compared: GmmWT larvae against GmmApo larvae [Sequence Read Archive (SRA) IDs SRR3107831-SRR3107834 (BioProject ID PRJNA309164)], and GmmWT larvae against GmmWT male and female adults (BioProject IDs PRJNA295435 and PRJNA205861, respectively; Scolari et al., 2016; Benoit et al., 2014). SRA and BioProject sequence data is available at the NCBI website (http://www.ncbi.nlm.nih.gov/sra and http://www.ncbi.nlm.nih.gov/bioproject, respectively). Relative fold differences in gene expression between samples were determined as a ratio of each TPM. Significance was determined via Baggerly\u2019s test followed by a false detection rate at p<0.01 (Baggerly et al., 2003). In conjunction with the above-described analyses, we conducted a de novo assembly of the larval transcriptomes using Trinity (Grabherr et al., 2011 ), followed by RNA-seq analyses to identify additional differentially expressed genes of interest between GmmWT and GmmApo individuals. No additional targets were identified by this secondary analysis. Thus, subsequent functional studies focused on results obtained from the predicted genomic gene set.\n\nPredicted genes were annotated using tblastx, with an E-value cut-off of 1e\u221210 and bit score of 200, to a previously annotated Glossina transcriptome (Benoit et al., 2014). Another comparative analysis, using the same parameters, was performed with annotated protein sequences from D. melanogaster and Pediculus humanus from FlyBase and Vectorbase, respectively. Blast2GO was utilized to identify specific gene ontology (GO) terms that were enriched between treatments based on a Fisher\u2019s Exact Test (Conesa et al., 2005). Specific GO-based functional categories were developed based on comparison with associated D. melanogaster genes acquired from Flybase (Marygold et al., 2013; Attrill et al., 2016). These categories included those involved in B vitamin metabolism, hematopoiesis, midgut development, larval development, immunity, organismal growth and chitin associated. For these category assignments Drosophila and G. morsitans gene sets were compared, and a functional match was considered valid if the E-value was below 10\u221240 and the bit score was over 200. Enrichment for a specific GOC associated with each sample was determined with a Fisher\u2019s Exact Test. Specific analyses of the odorant binding protein genes were accomplished by obtaining predicted models for these genes from the G. morsitans genome.\n\n### RNA interference\n\nA cartoon summarizing temporal aspects of RNAi and subsequent functional experiments is shown in Supplementary file 3. Two cohorts (n\u00a0=\u00a0150 individuals per group) of virgin female tsetse were mated three days post-eclosion (dpe), and embryos (n\u00a0=\u00a03 in each of seven biological replicates) were collected five days later from a subset of individuals to obtain baseline serpent (srp) and lozenge (lz) expression values. Subsequently, pregnant female flies were subjected to thoracic microinjection (using glass needles and a Narashige IM300 micro-injector) with either anti-obp6 (treatment) or anti-gfp (control) siRNAs (siRNA sequences listed in Supplementary file 5) on days 8 and 11 post-mating. This window of time post-mating was chosen in an effort to expose feeding first and/or second instar larval tsetse to siRNAs (generated by Integrated DNA Technologies, Coralville, IA) taken up by the milk gland following inoculation into the maternal hemocoel. Anti-obp6 siRNA was coupled to a Cy3 dye (siOBP6Cy3) to track nucleic acid dissemination through the maternal hemocoel and into the developing intrauterine larvae. siOBP6Cy3 larvae were rigorously washed in PBS prior to stimulation with UV light to ensure Cy3 labeled siRNA was removed from the cuticular surface. All anti-obp6 and anti-gfp siRNA treated moms and their larval and adult offspring are designated \u2018siOBP6\u2019 and \u2018siGFP\u2019, respectively, throughout this study.\n\nsiRNA target specificity was confirmed in silico at VectorBase via BLAST analysis against a G. morsitans RNA-seq library, and a complete set of tsetse genomic scaffolds (both available on the VectorBase website; www.vectorbase.org).\n\n### PCR assays\n\nReal time quantitative real-time PCR (RT-qPCR) was performed as described previously (Weiss et al., 2012). All RT-qPCR results were normalized relative to tsetse's constitutively expressed \u03b2-tubulin or Drosophila\u2019s Rpl32 gene (determined from each corresponding sample). Replicate numbers and sample sizes are presented on figures or in their corresponding legends.\n\nFor semi-quantitative reverse transcription PCR (RT-PCR) analysis, second instar individuals were removed from pregnant females and an incision was made the length of the larval cuticle. The larval gut, which rapidly exudes following cuticular incision, and the corresponding carcass, were collected separately in PBS. RNA and cDNA were made from larval gut and carcass tissues as described previously (Weiss et al., 2012). Tsetse \u03b2-tubulin was used as a loading control.\n\nRT-qPCR and RT-PCR primers are listed in Supplementary file 6. Primer target specificity was confirmed in silico at VectorBase and FlyBase via BLAST analysis against G. morsitans and D. melanogaster RNA-seq libraries.\n\n### Infection and wounding experiments\n\nsiGFP and siOBP6 adult tsetse were subjected to systemic challenge with recE. coliGFP during adulthood. Percent survival was subsequently monitored over a two week period. For E. coli infections, tsetse were anesthetized on ice and subsequently injected with 5\u00a0\u00d7\u00a0102 colony forming units (CFU) of live bacterial cells using glass needles and a Narashige IM300 micro-injector.\n\n\u2018Clean\u2019 wounds were administered to siGFP, siOBP6 and siOBP6R adult tsetse, and tub-GAL4, UAS-obp28a RNAi, tub-GAL4/UAS-obp28a RNAi, Obp28- and wCs adult Drosophila, by pricking individual flies in the thorax with a heat sterilized glass needle. Injured tsetse were housed under normal insectary conditions, while injured Drosophila were maintained in a desiccated environment with no access to food or water. All tsetse survival experiments were performed in triplicate, using 25 flies per replicate. All Drosophila survival experiments were performed in triplicate using 50 flies per replicate.\n\n### Hemolymph extraction and hemocyte quantification and visualization\n\nHemolymph was collected by removing a fly leg with forceps and exerting gentle pressure on the abdomen, thus causing a hemolymph droplet to exude from the neck. Determination of circulating hemocyte abundance was performed using a Bright-Line hemocytometer.\n\nHemocyte phagocytic capacity of siOBP6 and siGFP adults was determined by injecting individuals with 5\u00a0\u00d7\u00a0102 CFU of live recE. coliGFP. Six hours post-inoculation, hemolymph was collected from three individuals and hemocytes monitored for the presence of engulfed GFP-expressing bacterial cells. Hemolymph samples were fixed on glass microscope slides via a 2 min incubation in 2% paraformaldehyde and then overlaid with VectaShield hard set mounting medium containing DAPI (Vector Laboratories, Burlingame, CA). Cells were visualized using a Zeiss Axioscope microscope.\n\n### Bacterial quantification\n\nTo quantify rec\u00a0E. coliGFP in siOBP6 and siGFP individuals at 2 and 6 days post-challenge (n\u00a0=\u00a05 per siRNA treatment per time point), 3 \u03bcl of hemolymph was serially diluted in 0.85% NaCl and plated on LB/agar supplemented with ampicillin (50 \u03bcg/ml). CFU per plate were counted manually.\n\n### Prophenoloxidase and phenoloxidase activity assays\n\nWestern blots were performed in triplicate, with each replicate containing 8 \u03bcl of hemolymph. For tsetse, 2 \u03bcl of hemolymph (collected by removing a leg at the proximal joint nearest the thorax) was pooled (and then immediately frozen) from four flies per group 3 hr post-wounding (hpw) with a clean glass needle. Adult Drosophila (n\u00a0=\u00a075 per group) were thoracically wounded with a sterilized tungsten needle. Three hpw, flies were chilled on ice and placed into Zymo-Spin IV columns (n\u00a0=\u00a015 flies per column; Zymo Research, Irvine, CA) preloaded with 0.5 mm glass beads (Scientific Industries, Bohemia, NY). Columns were centrifuged at 4\u00b0C for 15 min and hemolymph pooled in the column collection tube was frozen. Denatured (100\u00b0C for 5 min in protein loading buffer) hemolymph extracts were separated on a 10% polyacrylamide gel, transferred to nitrocellulose membranes, blocked with 3% bovine serum albumin (prepared in PBST buffer) for 1 hr at room temperature and incubated overnight at 4\u00b0C with rabbit anti-PPO1 or anti-PPO2 (generated against recombinant Drosophila PPO1 and PPO2, respectively; Nam et al., 2012) antibodies at a 1:1500 dilution. Blots were subsequently probed with an HRP conjugated goat anti-rabbit 2\u00b0 antibody (BioRad, Hercules, CA), and PPO protein bands were visualized using a SuperSignal West Pico Chemiluminescent Substrate kit according to the manufacturer\u2019s (Thermo Scientific, Waltham, MA) protocol.\n\nL-3,4-dihydroxyphenylalanine (L-DOPA; Sigma-Aldrich, St. Louis, MO) assays (performed as described in Perdomo-Morales et al., 2007; Binggeli et al., 2014) were used to quantify enzymatic phenoloxidase (PO) activity in 3 \u03bcl of hemolymph collected from siOBP6, siGFP and siOBP6R individuals immediately (0 hr; n\u00a0=\u00a05 individuals per group at this time point) and 3 hr post-wounding (n\u00a0=\u00a08 individuals per group at this time point) with a clean needle. Enzymatic activity of tsetse\u2019s melanization cascade was arrested by adding protease inhibitor at the time of hemolymph collection. Thus, values reflect in vivo PO at this time point. Values are represented as the mean (\u00b1SEM).\n\n### Larval crystal cell analysis\n\nIn Drosophila, sessile crystal cells attached to the hemocoelic side of the larval cuticle can be visualized as dark spots following spontaneous activation of PPO (Binggeli et al., 2014). This phenotype was induced in tsetse and Drosophila larvae by heating individuals to 65\u00b0C for 10 min. PPO spots were quantified visually using a dissecting microscope (Zeiss Discovery) equipped with a digital camera (Zeiss AxioCam MRc 5).\n\n### Bacterial complementation\n\nThree cohorts (n\u00a0=\u00a025 individuals/group) of pregnant female tsetse were fed a diet containing tetracycline (100 \u03bcg/ml of blood) every other day for 10 days to eliminate all indigenous bacteria. All blood meals (three per week), throughout the course of the entire experiment, also contained vitamin-rich yeast extract (1% w/v) to restore fertility associated with the absence of Wigglesworthia (Weiss et al., 2012). Ten days post-copulation, 4 cohorts of symbiont-cured females were regularly fed a diet supplemented with either 1) Wigglesworthia-containing bacteriome extracts (obtained by dissecting bacteriomes from GmmWT females), 2) Wigglesworthia-free bacteriome extracts (derived from the offspring of females fed a diet supplemented with ampicillin, which results in the production of progeny that lack Wigglesworthia but still harbor Sodalis; Pais et al., 2008; Weiss et al., 2011), 3) Sodalis cell extracts (derived from Sodalis maintained in culture; Hrusa et al., 2015), and 4) bacteriome extracts harvested from aposymbiotic females. Offspring (symbiont-free) of these extract supplemented females were designated Gmmbact/Wgm+, Gmmbact/Wgm-, GmmSgm+ and Gmmbact/Apo, respectively. Bacteriome supplemented females were fed one tissue equivalent per four females, and GmmSgm+ females were fed 4\u00a0\u00d7\u00a0107 Sodalis per ml of blood (these flies thus ingested\u00a0~1\u00a0\u00d7\u00a0106 Sodalis each time they fed). Control cohorts consisted of wild-type (GmmWT) and aposymbiotic (GmmApo) offspring.\n\nRT-qPCR was used to determine if complementation with bacterial extracts plus yeast altered the expression pattern of obp6 in aposymbiotic larvae (First and second instar) from the second gonotrophic cycle (these offspring were used to ensure that antibiotic treatment had cleared all maternal symbionts such that none were present for transmission to larvae) of symbiont-cured moms.\n\n### Replicates and statistics\n\nThroughout the manuscript, all replicates are \u2018biological\u2019, implying that data were obtained by repeating experiments using the indicated number of distinct samples. Replicates and sample sizes for all experiments are provided in the legend that corresponds to each representative figure (except for Figure 1, for which sample size is indicated in the \u2018Materials and methods section, subheading \u2018Transcriptomics\u2019). Statistical significance between treatments and controls is indicated on figures or in the corresponding figure legends. Tests used to determine statistical significance are indicated in figure legends. All statistical analyses were performed using GraphPad Prism software (v.6).\n",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8198a339-2a1b-46da-a178-c8162b675e06",
+      "submission_id": "1a161286-3294-4bb2-abad-5defa0ecda33",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Bruno Lema\u00eetre, Ecole Polytechnique F\u00e9d\u00e9rale de Lausanne , Switzerland\n\n## Review text\n\nDOI: [10.7554/eLife.19535.040](https://doi.org/10.7554/eLife.19535.040)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Symbiont-induced odorant binding proteins mediate insect host hematopoiesis\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior Editor) and three reviewers, one of whom, Bruno Lemaitre, is a member of our Board of Reviewing Editors.\n\nSummary:\n\nWe know that resident microorganisms play a very important role in the development of the immune system of mammals, but much of the detail remains to be resolved and the significance of microorganisms for the immune system development in other animals is largely unknown. Indeed, previous research of these authors showing that the bacterial symbiont Wigglesworthia or a cell-free extract of this bacterium is required for normal development of hemocytes in Tsetse flies (Weiss et al. 2012) provides one of the very few studies on the role of bacteria in maturation of the immune system of any invertebrate animal. This study is important because it demonstrates key elements of the molecular mechanism of the Wigglesworthia effect. It is genuinely intriguing that a single insect protein, OBP6 is necessary and sufficient for the effect, and that the effect is restricted to the differentiation of one type of hemocyte, the crystal cell.\n\nEssential revisions:\n\nAlthough the experimental set-up and work is highly appreciated, the presented data are in the view of the three reviewers not waterproof to fully support the claim that 1) the intrauterine larval recognition of the obligate Wigglesworthia symbiont regulates the expression of the larval OBP6 and 2) this is an evolutionary conserved component of the insect innate system. The three reviewers raised three important issues, each of them should be addressed before acceptance.\n\n1) Specificity\n\nThe authors claim that the regulation of the larval OBP6 expression and the subsequent production of the crystal cells are regulated by the obligate symbiont Wigglesworthia. This is based upon the sole observation that the deprived obp6 expression in 1st / 2nd instar larvae of aposymbiotic flies (= offspring of tetracycline-treated females that lack all microbiota i.e. Wigglesworthia, Sodalis and Wolbachia present in tsetse lab colonies) is restored by the supplementation of the blood meal given to the mother flies with a Wigglesworthia extract. This 'extract' is actually a homogenate of the bacteriome of WT flies that is a cocktail of the Wigglesworthia bacterium with cellular/molecular components of the tsetse anterior midgut. This means that the presented experimental work is only suggestive for a possible involvement of Wigglesworthia in the larval obp6 expression but is not conclusive. Moreover, it is not clear how Wigglesworthia or its components that are administered through a blood meal could finally reach the larva that is developing in the fly uterus. In previous work, the authors showed that Wigglesworthia cannot colonize aposymbiotic flies when administered this way (Weiss et al.2012). In previous work the authors used an ampicilline-treatment approach to have tsetse flies that produce offspring that is specifically cleared for Wigglesworthia but not for the other microbiota. The use of use this model for the experimental work could make the link between Wigglesworthia/OBP6/crystal cells more conclusive. Also, an additional experimental group where the blood meal is supplemented with the bacteriome of aposymbiotic tsetse (contain tsetse midgut components but devoid of Wigglesworthia) would be at least a more appropriate control group in experiment 1F.\n\n2) A better characterization of Tsetse crystal cell\n\nThe identification of crystal cells in the tsetse fly appears to be based entirely on the number of melanized spots in the cuticle after heat shock. Previous work by different authors used microscopical analysis of crystal cells to develop and validate the reliability of this assay for Drosophila. Microscopical demonstration of crystal cells in untreated tsetse and their depletion in aposymbiotic or RNAi-treated tsetse would give confidence in the reliability of the assay in tsetse.\n\n3) The part on Drosophila should be better documented\n\nThe part on Drosophila is really exciting, suggesting a conserved mechanism. Unfortunately, it is too short in the present version, and straightforward experiments should be added to reinforce the conclusion. The impact of microbiota on obp28a and lozenge expression should be repeated in another genetic background. The study will be strongly reinforced by the use of obp28a mutation (a temporally feasible with the advent of CRISPR), or at least the use of another independent RNAi to confirm the first one. In which tissues is obp28a expressed in larvae? The status of crystal cells could be tested by cooking the larvae and by the use of lz-gal4,uas-GFP transgene. Also, the presence of PPO could be analyzed by antibodies to decipher the nature of the defect. Survival of axenic and conventionally raised animal should be added to confirm the model.\n",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "02042306-3fd3-41d7-915a-006e98fc2bfc",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C1",
+      "claim": "Tsetse flies (Glossina spp.) house two gut-associated bacterial symbionts: obligate Wigglesworthia glossinidia and commensal Sodalis glossinidius.",
+      "claim_type": "EXPLICIT",
+      "source": "Tsetse flies (Glossina spp.) house two gut-associated bacterial symbionts, obligate Wigglesworthia glossinidia and commensal Sodalis glossinidius (Maltz et al., 2012; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous research (Maltz et al., 2012; Wang et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "87b8d167-0e09-4946-b405-db4948d4e607",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C2",
+      "claim": "In adult tsetse flies, Wigglesworthia resides within cells that collectively form a bacteriome organ attached to the anterior midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult flies Wigglesworthia resides within cells that collectively form a bacteriome organ that is attached to the anterior midgut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the localization of Wigglesworthia in adult tsetse flies, drawing from established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "17aad94a-2d43-41ef-b1e3-e13f163a544a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C3",
+      "claim": "Sodalis can be found extracellularly in the gut lumen or intracellularly within gut epithelial cells in tsetse flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Sodalis can be found extracellularly in the gut lumen, or intracellularly within gut epithelial cells (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "459829cf-aab8-4508-995d-277bec1860d6",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C4",
+      "claim": "Tsetse flies reproduce via adenotrophic viviparity, during which pregnant females give birth to one larva each gonotrophic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Tsetse reproduce via adenotrophic viviparity, during which pregnant females give birth to one larva each reproductive, or 'gonotrophic' (GC), cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about tsetse reproductive biology, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "264e0670-2458-42b9-974d-a1720a9dda2a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C5",
+      "claim": "Individual tsetse larvae mature through three developmental instars within the uterus while receiving nourishment from a milk-like substance produced by a modified accessory gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual larvae mature through three developmental instars within the uterus, all the while receiving nourishment in the form of a milk-like substance produced by a modified accessory gland (milk gland; Benoit et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Benoit et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "e521e73e-f9e0-4a9d-9fdf-9af1965c0158",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C6",
+      "claim": "Both Wigglesworthia and Sodalis are found extracellularly in tsetse milk and colonize the gut of developing intrauterine larvae as they imbibe this nutrient source.",
+      "claim_type": "EXPLICIT",
+      "source": "Both Wigglesworthia and Sodalis are also found extracellularly in tsetse milk, and these bacteria colonize the gut of developing intrauterine larvae as they imbibe this nutrient source (Attardo et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Attardo et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9a5dcd5f-19e2-40f3-9bf7-c1c49c9b873b",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C7",
+      "claim": "Tsetse that undergo larvagenesis in the absence of their indigenous microbiota are highly immuno-compromised as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "Tsetse that undergo larvagenesis in the absence of their indigenous microbiota are highly immuno-compromised as adults (Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "3061a9d9-f170-4428-bc19-99aeb6148f78",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C8",
+      "claim": "Aposymbiotic tsetse flies exhibit a dysfunctional cellular immune system characterized by the conspicuous absence of hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These 'aposymbiotic' (hereafter referred to as 'GmmApo') flies exhibit a dysfunctional cellular immune system that is characterized by the conspicuous absence of hemocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the phenotype of aposymbiotic tsetse flies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8c9993ab-4f24-4dad-a151-b54e6c09d35e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C9",
+      "claim": "The immuno-compromised phenotype in aposymbiotic tsetse results from the disruption of hematopoiesis during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype results from the disruption of hematopoiesis (blood cell differentiation) during larval development (Weiss et al., 2011, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Weiss et al., 2011 and 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "fb1f1fcb-7dc6-45a9-9ff2-c0e4e200e8aa",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C10",
+      "claim": "In insects, distinct hemocyte lineages mediate essential immune-related functions including phagocytosis, encapsulation of foreign invaders, and closing of cuticular wounds via melanin deposition.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, distinct hemocyte lineages mediate essential immune-related functions, including the phagocytosis and encapsulation of foreign invaders and the closing of cuticular wounds via the deposition of melanin at the site of injury (Lemaitre and Hoffmann, 2007; Hillyer and Strand, 2014; Lee and Miura, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lemaitre and Hoffmann, 2007; Hillyer and Strand, 2014; and Lee and Miura, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "ae11c0c1-d5d6-4698-aabe-b7fbc1301155",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C11",
+      "claim": "1166 genes exhibited differential expression in GmmWT compared to GmmApo larvae, with approximately 76% expressed at higher levels in GmmWT individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analysis revealed that 1166 genes exhibited a differential expression profile in GmmWT compared to GmmApo larvae, and approximately 76% of these genes were expressed at higher levels in GmmWT individuals (Figure 1A; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis presented in Figure 1A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "d593d227-8f9e-49f0-9d5f-7018de5cd1de",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C12",
+      "claim": "Gene ontogeny analysis revealed significant enrichment of genes functionally associated with B vitamin metabolism, larval development, organismal growth and chitin synthesis in GmmWT compared to GmmApo larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontogeny analysis revealed significant enrichment of genes functionally associated with B vitamin metabolism, larval development, organismal growth and chitin synthesis in the GmmWT compared to GmmApo larvae (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontogeny analysis data presented in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f686d9d3-3a69-483a-a98e-5661350f9112",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C13",
+      "claim": "Genes associated with hematopoiesis were not significantly enriched in GmmWT compared to GmmApo larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, genes associated with hematopoiesis were not significantly enriched in GmmWT compared to GmmApo larvae (Figure 1\u2014figure supplement 1; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data analysis presented in Figure 1\u2014figure supplement 1 and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "a5065ddd-3916-4d04-80f2-b101fc91655e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C14",
+      "claim": "Tsetse odorant binding protein 6 (obp6) exhibited the ninth highest level of differential expression between all annotated genes in GmmWT and GmmApo larval libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "When our RNA-seq libraries were screened to identify highly abundant (TPM \u2265 103) and differentially transcribed genes, we observed that tsetse odorant binding protein 6 (obp6) exhibited the ninth highest level of differential expression between all annotated genes present in the larval GmmWT and GmmApo libraries (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis presented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f8be0355-0945-42a4-bb6c-2910b08e8a75",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C15",
+      "claim": "GmmWT larvae expressed 22-fold more obp6 transcripts than GmmApo larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, GmmWT larvae expressed 22x more obp6 transcripts than did their GmmApo counterparts (Figure 1C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data presented in Figure 1C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "4d6ad85a-7ce6-4e42-b41b-fcd1b2c93151",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C16",
+      "claim": "Obp6 encodes a 145 amino acid protein (16kD) with an N-terminal secretion signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Obp6, which encodes a 145 amino acid protein (16kD) with an N-terminal secretion signal (Liu et al., 2010), is larvae-enriched (Figure 1D) and the only OBP-encoding gene expressed at significantly different levels between GmmWT and GmmApo individuals (Figure 1E; Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Liu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "6717c93a-f128-421a-a84d-36a1e941a0cf",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C17",
+      "claim": "Obp6 is larvae-enriched and the only OBP-encoding gene expressed at significantly different levels between GmmWT and GmmApo individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Obp6, which encodes a 145 amino acid protein (16kD) with an N-terminal secretion signal (Liu et al., 2010), is larvae-enriched (Figure 1D) and the only OBP-encoding gene expressed at significantly different levels between GmmWT and GmmApo individuals (Figure 1E; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 1D, Figure 1E, and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "c09f915c-1075-47dc-a316-7f8d60736d4b",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C18",
+      "claim": "Obp6 expression can be restored in GmmApo larvae when their symbiont-cured mothers are fed a diet supplemented specifically with Wigglesworthia cell extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Obp6 expression can be restored in GmmApo larvae when their symbiont-cured moms are fed a diet supplemented specifically with Wigglesworthia cell extracts (Figure 1F), thus demonstrating that expression of this gene is stimulated by a Wigglesworthia derived molecule(s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data presented in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "1061330c-dd4e-457c-a4b5-26b501f95031",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C19",
+      "claim": "Obp6 expression is stimulated by a Wigglesworthia-derived molecule(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Obp6 expression can be restored in GmmApo larvae when their symbiont-cured moms are fed a diet supplemented specifically with Wigglesworthia cell extracts (Figure 1F), thus demonstrating that expression of this gene is stimulated by a Wigglesworthia derived molecule(s).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental results showing that Wigglesworthia extracts restore obp6 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "22e53c11-d07b-4556-be97-47048b172838",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C20",
+      "claim": "The Wigglesworthia-derived stimulus for obp6 expression is likely not a bacterium-generated nutrient.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this stimulus is likely not a bacterium generated nutrient, as the vitamin rich yeast extract included with the supplements fails to elicit the same response in individuals of the other treatment and control groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that yeast extract does not restore obp6 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "47632cbe-214e-45f1-964e-25c11f5b1a18",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C21",
+      "claim": "Obp6 expression was reduced in GmmWT larvae by an average of 68% when they acquired corresponding siRNAs trans-generationally from their mother's milk.",
+      "claim_type": "EXPLICIT",
+      "source": "Obp6 expression was reduced in GmmWT larvae by an average of 68% when they acquired corresponding siRNAs trans-generationally from their mother's milk (Supplementary file 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data presented in Supplementary file 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8b15675a-1fe8-4190-b024-0ea11f713ec6",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C22",
+      "claim": "By the third gonotrophic cycle (26 days post-siRNA treatment), anti-obp6 siRNAs were no longer visible in treated mothers or their offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by the third gonotrophic cycle (26 days post-siRNA treatment), anti-obp6 siRNAs were no longer visible in treated moms or their offspring (Supplementary file 4A, top and bottom right panels, respectively), and larval obp6 expression had rebounded to levels equivalent to that found in GC1 control (siGFP) larvae (Supplementary file 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data presented in Supplementary file 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "fcce1307-a1e1-4fb5-bb39-9e51a4c9770c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C23",
+      "claim": "Larval obp6 expression rebounded to control levels by the third gonotrophic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by the third gonotrophic cycle (26 days post-siRNA treatment), anti-obp6 siRNAs were no longer visible in treated moms or their offspring (Supplementary file 4A, top and bottom right panels, respectively), and larval obp6 expression had rebounded to levels equivalent to that found in GC1 control (siGFP) larvae (Supplementary file 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data presented in Supplementary file 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "79394a2c-199f-401d-acd8-d76ad1686166",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C24",
+      "claim": "88% of siOBP6 adults, 12% of siGFP adults, and 4% of siOBP6R adults perished following systemic challenge with 10^3 CFU of E. coli K12.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 88% of siOBP6 adults, 12% siGFP adults and 4% of siOBP6R adults perished over the course of the experiment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival assay data presented in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "a76fbbb5-1565-4044-a0de-9fa194a0a315",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C25",
+      "claim": "Tsetse must express obp6 during larvagenesis in order for subsequent adults to survive following thoracic exposure to a needle-inoculated E. coli K12 challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "The lethal effect of E. coli K12 on siOBP6 adults, which is similar to that observed in GmmApo adults following exposure to the same challenge (Weiss et al., 2012), indicates that tsetse must express obp6 during larvagenesis in order for subsequent adults to survive following thoracic exposure to a needle-inoculated E. coli K12 challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the survival data and comparison with previous studies (Weiss et al., 2012).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "6e650be5-3bae-4be5-8f41-ea1753e98a2c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C26",
+      "claim": "There was no significant difference in the number of circulating hemocytes in siOBP6 compared to siGFP and siOBP6R adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We discovered no significant difference in the number of circulating hemocytes present in the hemocoel of siOBP6 compared to siGFP and siOBP6R adults (1349 \u00b1 56, 1365 \u00b1 33 and 1413 \u00b1 31 hemocytes per \u03bcl of hemolymph, respectively; Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by hemocyte quantification data presented in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9cec6fc0-be1e-4c52-bf3c-cf43ee4e2b1e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C27",
+      "claim": "Hemocytes from siOBP6, siGFP, and siOBP6R adults actively engulfed E. coli cells.",
+      "claim_type": "EXPLICIT",
+      "source": "microscopic examination of hemolymph revealed that hemocytes from adult individuals of all three groups actively engulfed E. coli cells (recE. coliGFP; Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data presented in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "b7518346-f0c3-4ad7-9b50-55660ebdada2",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C28",
+      "claim": "E. coli density initially increased during the first two days following injection into the hemocoel of siOBP6, siGFP and siOBP6R tsetse, but by four days later had decreased to levels below that of the initial inoculate.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed that E. coli density initially increased during the first two days following injection into the hemocoel of siOBP6, siGFP and siOBP6R tsetse (3278 \u00b1 806, 3530 \u00b1 482 and 4085 \u00b1 442 CFU per \u03bcl of hemolymph, respectively), but by four days later, had decreased to levels below that of the initial inoculate (104 \u00b1 19, 115 \u00b1 29 and 111 \u00b1 28 CFU per \u03bcl of hemolymph, respectively; Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial quantification data presented in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "e36a6cf9-addf-4337-a06e-1357b0f6b201",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C29",
+      "claim": "Adult siOBP6 tsetse perish following systemic challenge with E. coli K12, but this phenotype is not due to a reduced or dysfunctional population of phagocytic hemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that adult siOBP6 tsetse perish following systemic challenge with E. coli K12, but that this phenotype is not due to a reduced or dysfunctional population of phagocytic hemocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data showing normal hemocyte numbers and phagocytic activity despite high mortality.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "08719929-d759-497c-a410-8af0969abc6f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C30",
+      "claim": "E. coli growth does not appear to cause death in siOBP6 flies, as bacterial density within both siOBP6 and siGFP individuals is maintained at similar densities during the course of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, E. coli growth does not appear to cause death in these flies, as bacterial density within both siOBP6 and siGFP (which survive this systemic challenge) individuals is maintained at similar densities during the course of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the bacterial density data showing similar levels in both groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "31aedfe6-2fb1-4ec9-ad11-521906d0ff5c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C31",
+      "claim": "92% of siOBP6 adults perished after receiving a clean wound to their thorax, while significantly fewer siGFP (8%) and siOBP6R (16%) controls died following this treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to their counterparts that were challenged with E. coli, the majority (92%) of siOBP6 adults perished after receiving a 'clean wound' to their thorax. Conversely, significantly fewer siGFP (8%) and siOBP6R (16%) controls died following this treatment (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival assay data presented in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "461dd304-7452-4c45-9856-d8624eee7407",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C32",
+      "claim": "Three hours post-wounding, melanin was observed at the wound site of siGFP and siOBP6R tsetse, but no melanin was present at the wound site of siOBP6 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Three hours post-treatment, melanin was observed at the wound site of siGFP and siOBP6R tsetse. Conversely, no melanin was present at the wound site of siOBP6 individuals at this time (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data presented in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "d5820d5d-8bbc-46ef-b6d5-9bf8f626004f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C33",
+      "claim": "Hemolymph continued to slowly exude from siOBP6 flies for the entirety of the 2-week experimental period as the wound never fully healed.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, no melanin was present at the wound site of siOBP6 individuals at this time (Figure 3B), and, as the wound never fully healed, hemolymph continued to slowly exude from these flies for the entirety of the 2-week experimental period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on direct observation during the experimental period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9412bb74-95d2-4674-a4f0-93163fcc6da9",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C34",
+      "claim": "siOBP6 adults produced significantly less PPO1 and PPO2 proteins than age-matched siGFP and siOBP6R individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blots using anti-PPO1 and anti-PPO2 antibodies revealed that siOBP6 adults produced significantly less of these proteins than did age-matched siGFP and siOBP6R individuals (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data presented in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "706b7e78-97b0-4bfb-a85d-6e6b6476348c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C35",
+      "claim": "PO activity increased 9.0-fold and 13.7-fold in siGFP and siOBP6R adults, respectively, 3 hours after cuticle penetration, while PO activity only increased 2-fold in siOBP6 adults over the same time frame.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a 9.0-fold and 13.7-fold increase in PO activity in siGFP and siOBP6R adults, respectively, 3 hr after cuticle penetration. Conversely, PO activity only increased 2-fold in clean wounded siOBP6 adults over the same time frame (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by L-DOPA assay data presented in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "7385fbe3-7d51-4dc6-b5b3-886ba4723ef6",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C36",
+      "claim": "When intrauterine tsetse larvae express reduced levels of obp6, they present a dysfunctional melanization cascade during adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these results indicate that when intrauterine tsetse larvae express reduced levels of obp6 they present a dysfunctional melanization cascade during adulthood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data on PPO levels and PO activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "00a148a4-8e95-4e28-9f24-2b19b761573d",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C37",
+      "claim": "In Drosophila larvae, crystal cells produce the majority of PPO.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila larvae, a specific subset of hemocytes called crystal cells produce the majority of PPO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila hematopoiesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f1dc141d-afbf-44a4-9eb1-5106535cacab",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C38",
+      "claim": "Upon immunological stimulation, crystal cells rupture and release PPO into the hemolymph where enzymes convert it into PO that subsequently catalyzes melanin synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon immunological stimulation, crystals cells rupture and release PPO into the hemolymph where enzymes convert it into PO that subsequently catalyzes melanin synthesis (Honti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Honti et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "a3009fb5-2e2d-4001-b55f-e3640d8a193d",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C39",
+      "claim": "Drosophila hemocytes originate in the fly's embryonic and larval lymph gland, which is resorbed during metamorphosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila hemocytes originate in the fly's embryonic and larval lymph gland. This tissue is resorbed during metamorphosis, and evidence of prolific and prolonged de novo production of hemocytes in adult flies does not exist (Grigorian and Hartenstein, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Grigorian and Hartenstein, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "86902ca5-9a86-40c7-bb31-dc63a74c7ec7",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C40",
+      "claim": "Following heat shock treatment, 7 (\u00b12.0), 58 (\u00b14.7) and 52 (\u00b15.7) melanized spots were counted on siOBP6, siGFP and siOBP6R larvae, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this treatment, we counted 7 (\u00b12.0), 58 (\u00b14.7) and 52 (\u00b15.7) melanized spots on siOBP6, siGFP and siOBP6R larvae, respectively (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by crystal cell quantification data presented in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "774523f6-2171-4827-9078-08efad15dc6c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C41",
+      "claim": "siOBP6 larvae house either a reduced number of crystal cells or these cells exhibit a dysfunctional PPO pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that siOBP6 larvae house either a reduced number of crystal cells, or that these cells exhibit a dysfunctional PPO pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the reduced number of melanized spots observed in siOBP6 larvae.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "11dfe9e2-8f3c-4dec-8964-95d29c5ec9fe",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C42",
+      "claim": "In Drosophila's lymph gland, prohemocytes express the GATA factor serpent.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila's lymph gland, prohemocytes express the GATA factor serpent, and these cells subsequently differentiate into either functionally mature plasmatocyte (phagocytic hemocytes) or crystal cell lineages via induction of the hematopoietic transcription factors glial cells missing or lozenge, respectively (Lebestky et al., 2000; Ferjoux et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lebestky et al., 2000 and Ferjoux et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5df94642-cd97-4ddc-825b-a70a75756038",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C43",
+      "claim": "Prohemocytes differentiate into either functionally mature plasmatocytes or crystal cell lineages via induction of the hematopoietic transcription factors glial cells missing or lozenge, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila's lymph gland, prohemocytes express the GATA factor serpent, and these cells subsequently differentiate into either functionally mature plasmatocyte (phagocytic hemocytes) or crystal cell lineages via induction of the hematopoietic transcription factors glial cells missing or lozenge, respectively (Lebestky et al., 2000; Ferjoux et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lebestky et al., 2000 and Ferjoux et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "15151c85-47f1-4db2-8be6-6e360b83e8d8",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C44",
+      "claim": "Serpent serves as an efficacious marker for determining the presence of hemocyte progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, serpent serves as an efficacious marker for determining the presence of hemocyte progenitors, while lozenge expression reflects differentiation of a pool of these precursors into functional members of the crystal cell lineage (Binggeli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Binggeli et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "ed162227-99c1-4be8-909d-a6f93bcf3f35",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C45",
+      "claim": "Lozenge expression reflects differentiation of hemocyte precursors into functional members of the crystal cell lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, serpent serves as an efficacious marker for determining the presence of hemocyte progenitors, while lozenge expression reflects differentiation of a pool of these precursors into functional members of the crystal cell lineage (Binggeli et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Binggeli et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "a3dcccf2-dcb2-40cc-ad67-277c17c74768",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C46",
+      "claim": "Obp6 and lozenge transcripts were undetectable in tsetse embryos prior to maternal inoculation with siRNA, while serpent expression remained unchanged across groups.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that obp6 and lozenge transcripts were undetectable during embryonic development, while serpent expression remained unchanged across groups (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data presented in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "0119184c-7906-427b-8a00-4ab9f02eb9a9",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C47",
+      "claim": "The serpent expression profile in tsetse embryos mirrors the presence of prohemocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "This serpent expression profile presented by tsetse embryos mirrors the presence of prohemocytes, while the absence of lozenge transcripts in individuals of this developmental stage suggests that crystal cell differentiation has yet to commence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the serpent expression data and knowledge of its role as a prohemocyte marker.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9e935b5d-8522-4680-92be-715ba8fdaa77",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C48",
+      "claim": "The absence of lozenge transcripts in tsetse embryos suggests that crystal cell differentiation has yet to commence.",
+      "claim_type": "EXPLICIT",
+      "source": "This serpent expression profile presented by tsetse embryos mirrors the presence of prohemocytes, while the absence of lozenge transcripts in individuals of this developmental stage suggests that crystal cell differentiation has yet to commence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the absence of lozenge expression and knowledge of its role in crystal cell differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5077ec1f-a0ef-4eb6-add1-d7b660bfec0c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C49",
+      "claim": "Obp6 and lozenge expression was significantly reduced in siOBP6 compared to siGFP and siOBP6R larvae, while serpent expression was similar in all individuals tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent analysis of larval offspring from siRNA treated moms revealed that obp6 and lozenge expression was significantly reduced in siOBP6 compared to siGFP and siOBP6R larvae, while serpent expression was similar in all individuals tested (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data presented in Figure 5B (note: this appears to be a typo in the manuscript, should be Figure 4B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5c67b752-ce76-4483-9cf5-72309476122f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C50",
+      "claim": "Serpent expression by siOBP6 larvae indicates maintenance of the hemocyte precursor pool throughout development of immature stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Serpent expression by siOBP6 larvae indicates maintenance of the hemocyte precursor pool throughout development of immature stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the serpent expression data and knowledge of its role as a prohemocyte marker.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "471a1728-ad07-427d-976a-1bc9ea7781d0",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C51",
+      "claim": "Fewer prohemocytes in siOBP6 larvae likely become crystal cells because these larvae express significantly reduced levels of the lozenge transcription factor that actuates the differentiation process.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fewer of these progenitors likely become crystal cells because siOBP6 larvae express significantly reduced levels of the lozenge transcription factor that actuates the differentiation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the reduced lozenge expression and knowledge of its role in crystal cell differentiation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9d746379-09a3-45dd-8ff5-6460c0006919",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C52",
+      "claim": "Obp6 transcripts were detected only in the larval gut, while lozenge transcripts were detected only in the carcass.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected obp6 and lozenge transcripts only in the larval gut and carcass, respectively (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-PCR data presented in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "7f825d9a-eb97-4725-a24f-174ad2ada9a4",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C53",
+      "claim": "Wigglesworthia stimulates local expression of obp6 in the larval gut.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that Wigglesworthia stimulates local expression of obp6, and that tsetse's hematopoietic niche is likely not attached to the larval gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial expression pattern of obp6 in the gut and the previous finding that Wigglesworthia induces obp6 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "6b058062-02b9-40b4-9c13-82de0f3ad2dc",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C54",
+      "claim": "Tsetse's hematopoietic niche is likely not attached to the larval gut.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that Wigglesworthia stimulates local expression of obp6, and that tsetse's hematopoietic niche is likely not attached to the larval gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial expression pattern showing obp6 in the gut and lozenge in the carcass.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "07995f1e-ea33-442b-9421-395a295c81e3",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C55",
+      "claim": "Symbiont-induced obp6 regulates tsetse hematopoiesis on a systemic level.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, symbiont-induced obp6 regulates tsetse hematopoiesis on a systemic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial expression patterns showing obp6 in the gut and lozenge in the carcass.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5493411c-24a9-4779-8f1f-e620ce628063",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C56",
+      "claim": "Conventionally reared w1118 and Oregon-R Drosophila larvae expressed significantly more obp28a and lozenge transcripts than did their axenic counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that conventionally reared w1118 and Oregon-R larvae expressed significantly more obp28a and lozenge transcripts than did their axenic counterparts (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RT-qPCR data presented in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "4284635c-64b3-4a62-9c32-19e1f714fc49",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C57",
+      "claim": "Conventionally reared Drosophila larvae and adults presented more cuticular sessile crystal cells and produced more PPO, respectively, than did age-matched axenic individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, conventionally reared larvae and adults presented more cuticular sessile crystal cells (following heat shock) and produced more PPO, respectively, than did age-matched axenic individuals (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data presented in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "33c7f318-633f-4fdf-b922-0ebf8bd0f25b",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C58",
+      "claim": "Drosophila tub-GAL4/UAS-obp28a RNAi and Obp28a- adults perished significantly faster than control individuals following thoracic injury with a clean needle.",
+      "claim_type": "EXPLICIT",
+      "source": "Following thoracic injury with a clean needle, we observed that Drosophila tub-GAL4/UAS-obp28a RNAi and Obp28a- adults perished significantly faster than did control individuals [tub-GAL4 driver, UAS-obp28a RNAi and wCs (mutant) progenitor lines; Figure 5C].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by survival assay data presented in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "40088b01-7627-4a13-89df-a52b10c582aa",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C59",
+      "claim": "At 6 hours post-injury, melanin had deposited at the wound site of control Drosophila but not their obp28a knockdown or knockout counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, at 6 hr post-injury, melanin had deposited at the wound site of control Drosophila but not their obp28a knockdown or knockout counterparts (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by microscopy data presented in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "2da2da6a-09d4-4656-8acc-0987e79b5970",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C60",
+      "claim": "OBP-mediated hematopoiesis represents an evolutionarily conserved mechanism that benefits flies by preventing dehydration and/or exposure to opportunistic infections with environmental microbes following cuticular injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively these findings suggest that OBP-mediated hematopoiesis represents an evolutionarily conserved mechanism that benefits these flies by preventing dehydration and/or exposure to opportunistic infections with environmental microbes following cuticular injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined findings in both tsetse and Drosophila showing similar phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "ead81a82-00a3-45e6-972e-584a343ba679",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C61",
+      "claim": "Wigglesworthia regulates obp6 transcript abundance in developing intrauterine tsetse larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein, we characterize an obligate symbiont regulated tsetse gene that actuates a distinct component of the fly's hematopoietic program. Specifically, these microbes regulate obp6 transcript abundance in developing intrauterine larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing obp6 expression is restored by Wigglesworthia extracts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "1b52395e-d36f-453b-ae60-db274139c0d1",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C62",
+      "claim": "OBP6 induces expression of lozenge, which drives a pool of larval hemocyte precursors to differentiate into functional crystal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The encoded protein subsequently induces expression of lozenge, which drives a pool of larval hemocyte precursors to differentiate into functional crystal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined data showing reduced lozenge expression and crystal cells in obp6 knockdown larvae.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8fa429a1-2c7e-478d-be7b-e275ff04fe00",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C63",
+      "claim": "When adult tsetse house a depleted population of crystal cells, cuticular wounds fail to clot, leaving the fly exposed to dehydration and/or infection with opportunistic environmental microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "When adult tsetse house a depleted population of this hemocyte subtype, which initiates the melanization cascade via the release of prophenoloxidase, cuticular wounds fail to clot, thus leaving the fly exposed to dehydration and/or infection with opportunistic environmental microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the wound healing data and the role of crystal cells in melanization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "af68a944-fba7-4549-8694-f1954927d4ea",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C64",
+      "claim": "Drosophila's indigenous microbiota regulate orthologous components of their host's hematopoietic program.",
+      "claim_type": "EXPLICIT",
+      "source": "We further discovered that Drosophila's indigenous microbiota regulate orthologous components of their host's hematopoietic program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing obp28a and lozenge expression differences between conventionally reared and axenic Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "82580e9e-0c37-4ad4-bb10-7c7b92452dc7",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C65",
+      "claim": "Axenic Drosophila larvae develop slower and weigh less than wild-type individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "Axenic Drosophila larvae develop slower and weigh less than wild-type individuals (Shin et al., 2011; Storelli et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Shin et al., 2011 and Storelli et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "00aa9f26-3868-41fd-b32b-de17e7e944f1",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C66",
+      "claim": "Axenic adult Drosophila exhibit reduced stem cell activity and epithelial turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "and adults exhibit reduced stem cell activity and epithelial turnover (Buchon et al., 2009; Broderick et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Buchon et al., 2009 and Broderick et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "383d8d96-93d6-4bab-b24c-f30e07a750c9",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C67",
+      "claim": "Axenic adult Drosophila can be more susceptible to enteric viral and bacterial pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "and can be more susceptible to enteric viral and bacterial pathogens (Blum et al., 2013; Sansone et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Blum et al., 2013 and Sansone et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "0e478e1b-9efe-4425-b0c2-5c554af532d9",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C68",
+      "claim": "The tsetse-Wigglesworthia symbiosis originated 50-80 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the tsetse-Wigglesworthia symbiosis originated 50\u201380 million years ago (Chen et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chen et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "af189ec9-9058-4bb2-b7b4-a6c2ceecfee3",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C69",
+      "claim": "The tsetse-Wigglesworthia symbiosis is highly steadfast in nature due to the bacterium's strict vertical route of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "and due to the bacterium's strict vertical route of transmission, is highly steadfast in nature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about the transmission mode of Wigglesworthia.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "31c953e2-636c-459e-b514-1e43892a8319",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C70",
+      "claim": "Drosophila's relationship with its microbiota is relatively transient and highly dependent on diet and local environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, Drosophila's relationship with its microbiota is relatively transient and highly dependent on diet and local environmental factors (Blum et al., 2013; Broderick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Blum et al., 2013 and Broderick et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5c8855f5-ae86-45e2-8ed2-6217c285176f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C71",
+      "claim": "Vertebrates lack direct obp6 and obp28a orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although vertebrates lack direct obp6 and obp28a orthologues (Kriventseva et al., 2015), unrelated odorant binding proteins may present similar roles in these systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Kriventseva et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f368b03b-e16f-4a38-8dc2-fb5dc0153c36",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C72",
+      "claim": "Unrelated odorant binding proteins may present similar roles to obp6 and obp28a in vertebrate systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, although vertebrates lack direct obp6 and obp28a orthologues (Kriventseva et al., 2015), unrelated odorant binding proteins may present similar roles in these systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential functional conservation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "bd9fba4e-0050-4340-841f-7270f07e8292",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C73",
+      "claim": "In Drosophila, insulin secreted by insulin-producing cells in the brain and essential amino acids emanating from the gut promote Wingless signaling that maintains blood cell progenitors in the hematopoietic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "This type of molecular coordination is well characterized in Drosophila, where insulin secreted by insulin-producing cells in the brain, and essential amino acids emanating from the gut, promote Wingless signaling that maintains blood cell progenitors in the hematopoietic niche (Shim et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shim et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5079a1ec-ef2c-46af-8a7c-550faa676f6a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C74",
+      "claim": "Olfactory receptor neurons, stimulated by the detection of small food-derived volatile molecules, secrete GABA into the larval hemocoel where it subsequently binds to blood cell progenitors in the lymph gland.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, olfactory receptor neurons, stimulated by the detection of small food-derived volatile molecules, secrete GABA into the larval hemocoel where it subsequently binds to blood cell progenitors in the lymph gland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila olfactory signaling and hematopoiesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "e306eea4-229f-4d5e-bc4d-bdc4a6b51e6a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C75",
+      "claim": "GABA binding to blood cell progenitors increases cytosolic calcium concentrations that are necessary and sufficient to maintain the progenitor population.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction increases cytosolic calcium concentrations that are necessary and sufficient to maintain the progenitor population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of progenitor maintenance in Drosophila.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f54889ba-78e1-47e5-8177-3b5665dc8f7c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C76",
+      "claim": "When larval Drosophila are reared on an odor-free diet, they fail to retain a pool of blood cell progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "When larval Drosophila are reared on an odor-free diet, they fail to retain a pool of these cells (Shim et al., 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Shim et al., 2013a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "fc896642-f266-4893-b39a-65a49f3dc286",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C77",
+      "claim": "Microbe-derived factors may influence hematopoiesis in Drosophila and tsetse.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions both flies presented dysfunctional hematopoietic programs, indicating that microbe-derived factors may also influence hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that flies reared in the absence of microbes but with normal food odors still show hematopoietic defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "d0c90abe-758a-4787-8b7a-587d90e7c83f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C78",
+      "claim": "Microbe-derived factors that influence hematopoiesis could take the form of microbe-associated molecular patterns (MAMPs), including bacterial cell wall components.",
+      "claim_type": "EXPLICIT",
+      "source": "While the exact chemical structure of these molecules is currently unknown, they could take the form of microbe-associated molecular patterns (MAMPs), including bacterial cell wall components such as polysaccharide A, peptidoglycan and Nod-like receptor ligand, which in mammals actuate differentiation of T cell lineages (Mazmanian et al., 2005), enhance bone marrow-derived neutrophil killing (Clarke et al., 2010) and stimulate macrophage activity in lung tissues (Clarke, 2014b; Gauguet et al., 2015), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential molecular mechanisms, supported by citations to mammalian studies.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "183ce5ab-5077-4d91-ba35-f6a571842575",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C79",
+      "claim": "Microbial metabolites mediate regulatory T cell abundance in colonic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, microbial metabolites mediate regulatory T cell abundance in colonic tissues, as germ-free mice that lack gut microbiota-derived fatty acids present fewer of this immune cell type (Smith et al., 2013; Furusawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Smith et al., 2013 and Furusawa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "953d5619-25e1-479a-b2ec-6e17fa899f52",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C80",
+      "claim": "General metabolic defects associated with dysbiosis can give rise to cellular immunity-related pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings accentuate the concept that general metabolic defects associated with dysbiosis can give rise to cellular immunity-related pathologies (Norata et al., 2015), including impairment of hematopoietic programs (Shim et al., 2012, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Norata et al., 2015 and Shim et al., 2012, 2013b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "4205f192-6591-40b5-9fe1-b42d2a97c085",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C81",
+      "claim": "Adult Drosophila detect geosmin, a microbial odorant that signals the presence of harmful microbes.",
+      "claim_type": "EXPLICIT",
+      "source": "A situation of this nature occurs when adult Drosophila detect geosmin, which is a microbial odorant that signals the presence of harmful microbes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Drosophila chemosensory behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "4ceae689-f4c2-4e0d-847b-3df373dc3a87",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C82",
+      "claim": "Geosmin detection induces expression of olfactory receptor Or56a in olfactory sensory neurons, leading to aversion behavior, reduction in the activity of other olfactory pathways, and inhibition of positive chemotaxis, oviposition and feeding behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This stimulus induces expression of olfactory receptor Or56a in olfactory sensory neurons, which leads to an aversion behavior, reduction in the activity of other olfactory pathways, and inhibition of positive chemotaxis, oviposition and feeding behavior (Stensmyr et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stensmyr et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "ad56e978-2f65-4abb-ad95-c18cd19063f0",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C83",
+      "claim": "Caenorhabditis elegans executes a protective avoidance behavior following chemosensory detection of phenazine-1-carboxamide and pyochelin produced by pathogenic Pseudomonas aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar phenomenon occurs in the nematode Caenorhabditis elegans, which executes a protective avoidance behavior following chemosensory detection of the aromatic compounds phenazine-1-carboxamide and pyochelin that are produced by pathogenic Pseudomonas aeruginosa (Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Meisel et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "7a06530d-0f08-4ad4-894a-55e19a99a0aa",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C84",
+      "claim": "Drosophila detects and prefers specific odors produced by members of its microbiome.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila detects and prefers specific odors produced by members of its microbiome (Fischer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fischer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "a7d2cde4-d312-49a9-bbca-89e51a6eaf7a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C85",
+      "claim": "Odorant molecules derived from tsetse and Drosophila enteric microbes could modulate the expression of obp6 and obp28a in the gut of larval flies, serving as the signal that activates hematopoiesis.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, odorant molecules derived from tsetse and Drosophila enteric microbes could modulate the expression of obp6 and obp28a in the gut of larval flies, thus serving as the signal that activates hematopoiesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "7d7b456c-29e7-46b9-b5ed-2219a44eb8dc",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C86",
+      "claim": "In larval tsetse, Wigglesworthia is found exclusively within the gut-bacteriome axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In larval tsetse Wigglesworthia is found exclusively within the gut-bacteriome axis (Balmand et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Balmand et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "3cd306f5-e7ed-40e1-af32-93c20a030023",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C87",
+      "claim": "OBP6 could act locally at the mucosal interface to induce the production and secretion of a distinct immuno-stimulatory molecule that subsequently acts in tsetse's hematopoietic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "First, this protein could act locally at the mucosal interface to induce the production and secretion of a distinct immuno-stimulatory molecule that subsequently acts in tsetse's hematopoietic niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "4f193358-44c9-44f7-8445-55a161a42245",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C88",
+      "claim": "In mice, enteric symbiont-derived molecules induce group three innate lymphoid cells in the intestine to increase production of the cytokine interleukin-17 (IL-17), which subsequently induces production of peripheral granulocyte colony-stimulating factor that actuates neutrophil differentiation in bone marrow tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "A mechanism of this nature occurs in mice, where enteric symbiont-derived molecules induce group three innate lymphoid cells in the intestine to increase production of the cytokine interleukin-17 (IL-17). Circulating IL-17 subsequently induces production of peripheral granulocyte colony-stimulating factor, which actuates neutrophil differentiation in bone marrow tissues (Deshmukh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Deshmukh et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5d5e9672-de56-4961-a701-ccc8a8cdf9e4",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C89",
+      "claim": "Tsetse OBP6 could serve a carrier-like function following translocation from the fly's gut into its circulatory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this definition, tsetse OBP6 could also serve a carrier-like function following translocation from the fly's gut into its circulatory system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "ff0be960-9244-4914-8c2a-bad6aea06624",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C90",
+      "claim": "OBP6 could complex with another hematopoietic molecule produced either in tsetse's gut or extra-intestinally, and then both together, or the latter molecule alone, stimulate hemocyte development in the hematopoietic niche.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, this protein could complex with another hematopoietic molecule produced either in tsetse's gut or extra-intestinally, and then both together, or the latter molecule alone, stimulate hemocyte development in the hematopoietic niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "21bc3c4d-2c87-4361-88b4-0c3022675990",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C91",
+      "claim": "Deletion of obp28a in Drosophila did not reduce the magnitude of fly olfactory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study exploring the roles of OBPs in Drosophila sensilla found that deletion of obp28a did not reduce the magnitude of fly olfactory responses, suggesting a novel role for the encoded protein (Larter et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Larter et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "bdbac3e5-0716-424c-bfcd-11cded368d2e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C92",
+      "claim": "Tsetse OBP6 could function unconventionally by directly stimulating hematopoiesis following secretion into the larval hemocoel.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, tsetse OBP6 could also function unconventionally by directly stimulating hematopoiesis following secretion into the larval hemocoel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "29ffcdca-2b25-4ac8-b3be-90b9262f13f8",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C93",
+      "claim": "Melanization is a cellular immune response that occurs across invertebrate taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanization is a cellular immune response that occurs across invertebrate taxa (Cerenius and S\u00f6derh\u00e4ll, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cerenius and S\u00f6derh\u00e4ll, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "f46805a3-120f-4338-91ff-29c8d9b85e87",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C94",
+      "claim": "Melanization influences the transmission of several pathogens through their respective insect vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "and this mechanism influences the transmission of several pathogens through their respective insect vectors (Collins et al., 1986; Zou et al., 2008; Bartholomay, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Collins et al., 1986; Zou et al., 2008; and Bartholomay, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "d1cb38b9-9429-4407-becc-e59fc8b47a0a",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C95",
+      "claim": "An increased understanding of the physiological processes that regulate melanization may have translational implications pertinent to the development of pathogen-refractory insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, an increased understanding of the physiological processes that regulate melanization may have translational implications pertinent to the development of pathogen-refractory insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "67446c1d-71a1-4af7-9649-dfa9c08715b8",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C96",
+      "claim": "The obligate mutualist Wigglesworthia up-regulates expression of odorant binding protein six in the gut of intrauterine tsetse larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Herein we demonstrate that the obligate mutualist, Wigglesworthia, up-regulates expression of odorant binding protein six in the gut of intrauterine tsetse larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "179b0c14-6ccb-4559-9867-f1a705c5f7ee",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C97",
+      "claim": "Wigglesworthia-induced obp6 expression is necessary and sufficient to induce systemic expression of the hematopoietic RUNX transcription factor lozenge and the subsequent production of crystal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is necessary and sufficient to induce systemic expression of the hematopoietic RUNX transcription factor lozenge and the subsequent production of crystal cells, which actuate the melanotic immune response in adult tsetse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the combined experimental data showing the relationship between obp6, lozenge, and crystal cell production.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "232698cf-0c27-4730-adfc-a3af3bc9046c",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C98",
+      "claim": "Crystal cells actuate the melanotic immune response in adult tsetse.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is necessary and sufficient to induce systemic expression of the hematopoietic RUNX transcription factor lozenge and the subsequent production of crystal cells, which actuate the melanotic immune response in adult tsetse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the role of crystal cells in melanization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "55ebd40e-6467-4df5-8163-0998c5b0efa5",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C99",
+      "claim": "Larval Drosophila's indigenous microbiota, which is acquired from the environment, regulates an orthologous hematopoietic pathway in their host.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval Drosophila's indigenous microbiota, which is acquired from the environment, regulates an orthologous hematopoietic pathway in their host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data showing obp28a and lozenge regulation by microbiota in Drosophila.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8c0e6007-2cb2-4ee6-a03d-5cc4e4d5798b",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "claim_id": "C100",
+      "claim": "The molecular mechanisms underlying enteric symbiont-stimulated systemic immune system development are evolutionarily conserved despite the divergent nature of host-symbiont interactions in tsetse and Drosophila model systems.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings provide insight into the molecular mechanisms that underlie enteric symbiont-stimulated systemic immune system development, and indicate that these processes are evolutionarily conserved despite the divergent nature of host-symbiont interactions in these model systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the combined findings in both tsetse and Drosophila showing similar mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA-seq analysis of GmmWT versus GmmApo larvae identified 1166 differentially expressed genes, with obp6 showing 22-fold higher expression in GmmWT larvae. Obp6 is larvae-enriched and the only OBP-encoding gene significantly differentially expressed between the two groups, despite genes associated with hematopoiesis not being significantly enriched overall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 provide converging RNA-seq evidence that obp6 is highly and specifically upregulated in symbiont-containing larvae. The data are internally consistent, with appropriate statistical analysis (Baggerly's test, FDR correction p<0.01), and the finding that hematopoiesis genes are not enriched (C13) motivates the focus on obp6 as a non-canonical regulator.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "c86bc36e-2c67-4d0d-9023-645c5197f8e6",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Obp6 expression in GmmApo larvae can be restored by feeding symbiont-cured mothers a diet supplemented with Wigglesworthia cell extracts, demonstrating that obp6 expression is stimulated by a Wigglesworthia-derived molecule that is likely not a bacterium-generated nutrient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 describe a bacterial complementation experiment (Figure 1F) showing specific restoration of obp6 expression by Wigglesworthia extracts but not by yeast extract or other controls. This provides strong evidence for a Wigglesworthia-specific molecular signal, though the exact molecular identity remains unknown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "cfb8822d-4b6f-48f6-a02b-471075e23bd4",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Trans-generational RNAi delivery via maternal milk reduced obp6 expression in GmmWT larvae by 68%, with siRNA effects persisting through two gonotrophic cycles before expression rebounded to control levels by the third cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 describe the validation of a novel trans-generational RNAi approach with appropriate temporal controls (Supplementary file 4A-B). The transient nature of knockdown and recovery in siOBP6R flies provides important experimental controls for subsequent phenotypic analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "siOBP6 adults show 88% mortality following E. coli K12 challenge compared to 12% in controls, but this is not due to reduced hemocyte numbers or impaired phagocytic function, as hemocyte counts and bacterial clearance are similar across groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 present a paradoxical phenotype with strong survival data (Figure 2A) but normal hemocyte function (Figures 2B-D). The data are internally consistent and appropriately controlled with siOBP6R recovery flies. The inference that mortality is not due to phagocytic defects (C29-C30) is well-supported by the quantitative data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "cb89225a-9b0d-48e3-83ba-27029200cdac",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "siOBP6 adults show 92% mortality following clean needle wounding, fail to deposit melanin at wound sites, produce significantly less PPO1 and PPO2 proteins, and exhibit only 2-fold increase in PO activity compared to 9-13.7-fold in controls, indicating a dysfunctional melanization cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide converging evidence from survival assays (Figure 3A), microscopy (Figure 3B), Western blots (Figure 3C), and enzymatic assays (Figure 3D) that obp6 knockdown specifically impairs melanization. The multiple independent measures of the melanization pathway strengthen the conclusion (C36).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "21cc81ca-f6ea-45fe-9064-729e919bc318",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heat shock treatment revealed that siOBP6 larvae have dramatically fewer melanized spots (7\u00b12.0) compared to siGFP (58\u00b14.7) and siOBP6R (52\u00b15.7) controls, suggesting either reduced crystal cell numbers or dysfunctional PPO pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 present quantitative crystal cell data (Figure 4A) with appropriate statistical analysis and controls. The ~8-fold reduction in melanized spots is striking and consistent with the adult melanization defects. The alternative interpretations in C41 are appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Obp6 and lozenge are undetectable in embryos while serpent is expressed, indicating prohemocytes are present but crystal cell differentiation has not commenced. In larvae, siOBP6 individuals show reduced obp6 and lozenge expression but normal serpent levels, suggesting maintained prohemocyte pools but impaired crystal cell differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 present RT-qPCR data (Figure 4B) showing developmental timing and the specific effect of obp6 knockdown on lozenge but not serpent expression. The interpretation linking these expression patterns to hematopoietic stages (C47-C48, C50-C51) is well-grounded in established Drosophila hematopoiesis knowledge (C42-C45).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "b2a1589d-2199-40d2-9c13-645280e41b89",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Obp6 transcripts are detected only in larval gut while lozenge transcripts are found only in the carcass, indicating that Wigglesworthia stimulates local obp6 expression in the gut but the hematopoietic niche is not gut-associated, and obp6 regulates hematopoiesis systemically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 present spatial expression data (Figure 4C) that clearly demonstrate anatomical separation of obp6 expression (gut) from lozenge expression (carcass). The inferences about systemic regulation (C53-C55) are logical given this spatial separation, though the mechanism of systemic action remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "8764e2f6-3231-4a76-ac12-c805defa336b",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Conventionally reared Drosophila larvae express more obp28a and lozenge, have more crystal cells, and produce more PPO than axenic counterparts. Obp28a knockdown and knockout flies show increased mortality and lack melanin deposition after wounding, suggesting OBP-mediated hematopoiesis is evolutionarily conserved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 present parallel experiments in Drosophila (Figure 5A-D) that recapitulate the tsetse phenotypes. The use of both RNAi and genetic knockout (C58) strengthens the conclusions. The inference of evolutionary conservation (C60) is well-supported by the phenotypic similarities across divergent host-microbe systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "9261853d-3c44-426e-bcda-bcd716d2fd19",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Wigglesworthia regulates obp6 expression in intrauterine tsetse larvae, which induces lozenge expression and drives crystal cell differentiation. Crystal cells produce PPO that actuates the melanotic immune response, and their depletion leads to wound healing failure and exposure to dehydration/infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C96-C98 synthesize the main findings into a coherent mechanistic model. The pathway from Wigglesworthia \u2192 obp6 \u2192 lozenge \u2192 crystal cells \u2192 melanization is supported by the combined experimental evidence, though some mechanistic steps (particularly how OBP6 induces lozenge) remain to be elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "bcfce7c5-29ac-4e7b-b2f2-8d343866cb5e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Drosophila's indigenous microbiota regulate orthologous components of the hematopoietic program (obp28a and lozenge), and these molecular mechanisms underlying enteric symbiont-stimulated immune development are evolutionarily conserved despite divergent host-symbiont interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C99-C100 present the comparative biology conclusion. The parallel phenotypes in tsetse (obligate vertical symbiont) and Drosophila (environmental horizontal acquisition) support evolutionary conservation. However, the claim of conservation would be strengthened by testing in additional insect systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "76cf5972-faad-4d2f-8088-9c3734ea5ded",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Microbe-derived factors may influence hematopoiesis in both flies, potentially through MAMPs or odorant molecules that modulate obp6/obp28a expression, though the exact chemical structures are unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C78 and C85 are largely speculative about molecular mechanisms. While C77 is supported by the observation that axenic flies show defects, the specific molecular candidates proposed (MAMPs, odorants) in C78 and C85 are hypothetical and lack direct experimental evidence in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "c2473ad4-b683-4991-9d3d-3e80faa1a118",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "OBP6 could act through multiple potential mechanisms: inducing local production of a secreted immuno-stimulatory molecule, serving as a carrier protein for hematopoietic factors, or directly stimulating hematopoiesis after secretion into hemocoel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C90 and C92 present multiple mechanistic hypotheses for OBP6 function, appropriately framed as speculative. While C88 provides a relevant mammalian parallel, none of these mechanisms are directly tested. These represent reasonable hypotheses for future work but are not supported by data in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Tsetse flies house obligate Wigglesworthia and commensal Sodalis symbionts that are transmitted to intrauterine larvae via milk. Aposymbiotic tsetse are immuno-compromised due to disrupted hematopoiesis during larval development, resulting in absence of hemocytes that mediate essential immune functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 establish the biological context through citations to prior work. These are well-established facts about tsetse biology and symbiosis that provide necessary background. The claims about aposymbiotic phenotypes (C7-C9) cite the authors' previous work and set up the current study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In Drosophila, crystal cells produce PPO and release it upon stimulation to catalyze melanin synthesis. Hemocytes originate from the embryonic/larval lymph gland where prohemocytes express serpent and differentiate into plasmatocytes or crystal cells via glial cells missing or lozenge, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C42-C45 describe established Drosophila hematopoiesis biology, supported by appropriate citations. This background knowledge is essential for interpreting the experimental results and provides the conceptual framework for the transcription factor analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Axenic Drosophila show developmental and immune defects. The tsetse-Wigglesworthia symbiosis is ancient (50-80 MYA) and steadfast due to vertical transmission, while Drosophila's microbiota relationship is transient and environmentally dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 provide comparative context about the divergent nature of the two host-microbe systems, supported by appropriate citations. This contextualizes why finding conserved mechanisms (despite different symbiont acquisition modes) is significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "b91ef490-3d2a-4b3d-a3de-fb69420e147e",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "In Drosophila, systemic signals including insulin, amino acids, and olfactory-derived GABA regulate hematopoiesis by maintaining blood cell progenitors. Larvae reared on odor-free diets fail to retain progenitor pools.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C76 describe established mechanisms of systemic immune regulation in Drosophila, supported by appropriate citations. This provides precedent for the concept that gut-derived signals can systemically regulate hematopoiesis, supporting the plausibility of the obp6 mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Microbial metabolites and odorants influence immune cell populations and behavior in various systems. Examples include microbiota-derived fatty acids regulating T cells in mice, and chemosensory detection of microbial compounds triggering avoidance behaviors in Drosophila and C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 provide comparative examples from other systems showing microbe-immune and microbe-behavior interactions, all supported by appropriate citations. These examples contextualize the findings within broader host-microbe interaction biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "5ec3c40d-9dce-4473-ba34-7d3f27aecd4f",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "In larval tsetse, Wigglesworthia is found exclusively in the gut-bacteriome axis. Recent work shows that deletion of obp28a in Drosophila did not reduce olfactory responses, suggesting a novel non-olfactory role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C91 cite relevant prior work that supports the spatial localization of symbionts and provides evidence that OBPs can have non-canonical functions beyond olfaction, which is important for the mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "90434c3c-3025-4070-a127-977b47b632ba",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Melanization is a conserved invertebrate immune response that influences pathogen transmission through insect vectors. Understanding melanization regulation may have translational implications for developing pathogen-refractory insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C95 provide context about the broader significance of melanization in vector biology, with C93-C94 supported by citations and C95 presenting a reasonable translational perspective, though speculative about future applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    },
+    {
+      "id": "e295d068-72fb-4326-b1c0-e6acd4c60e52",
+      "content_id": "6b5cecdb-6014-42df-a3b8-8301da89a571",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Vertebrates lack direct obp6 and obp28a orthologues, though unrelated odorant binding proteins may present similar roles in these systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C71 is supported by citation to OrthoDB, but C72 is speculative about potential functional conservation in vertebrates without supporting evidence. The speculation is reasonable but untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:27:58.970133Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ae11c0c1-d5d6-4698-aabe-b7fbc1301155",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "d593d227-8f9e-49f0-9d5f-7018de5cd1de",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "f686d9d3-3a69-483a-a98e-5661350f9112",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "a5065ddd-3916-4d04-80f2-b101fc91655e",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "f8be0355-0945-42a4-bb6c-2910b08e8a75",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "6717c93a-f128-421a-a84d-36a1e941a0cf",
+      "result_id": "a2f1f8e0-2753-4a6c-a2f8-af8f71a91bf3"
+    },
+    {
+      "claim_id": "c09f915c-1075-47dc-a316-7f8d60736d4b",
+      "result_id": "c86bc36e-2c67-4d0d-9023-645c5197f8e6"
+    },
+    {
+      "claim_id": "1061330c-dd4e-457c-a4b5-26b501f95031",
+      "result_id": "c86bc36e-2c67-4d0d-9023-645c5197f8e6"
+    },
+    {
+      "claim_id": "22e53c11-d07b-4556-be97-47048b172838",
+      "result_id": "c86bc36e-2c67-4d0d-9023-645c5197f8e6"
+    },
+    {
+      "claim_id": "47632cbe-214e-45f1-964e-25c11f5b1a18",
+      "result_id": "cfb8822d-4b6f-48f6-a02b-471075e23bd4"
+    },
+    {
+      "claim_id": "8b15675a-1fe8-4190-b024-0ea11f713ec6",
+      "result_id": "cfb8822d-4b6f-48f6-a02b-471075e23bd4"
+    },
+    {
+      "claim_id": "fcce1307-a1e1-4fb5-bb39-9e51a4c9770c",
+      "result_id": "cfb8822d-4b6f-48f6-a02b-471075e23bd4"
+    },
+    {
+      "claim_id": "79394a2c-199f-401d-acd8-d76ad1686166",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "a76fbbb5-1565-4044-a0de-9fa194a0a315",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "6e650be5-3bae-4be5-8f41-ea1753e98a2c",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "9cec6fc0-be1e-4c52-bf3c-cf43ee4e2b1e",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "b7518346-f0c3-4ad7-9b50-55660ebdada2",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "e36a6cf9-addf-4337-a06e-1357b0f6b201",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "08719929-d759-497c-a410-8af0969abc6f",
+      "result_id": "7ceeee71-41d1-44b2-a18c-119223f8aaaa"
+    },
+    {
+      "claim_id": "31aedfe6-2fb1-4ec9-ad11-521906d0ff5c",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "461dd304-7452-4c45-9856-d8624eee7407",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "d5820d5d-8bbc-46ef-b6d5-9bf8f626004f",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "9412bb74-95d2-4674-a4f0-93163fcc6da9",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "706b7e78-97b0-4bfb-a85d-6e6b6476348c",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "7385fbe3-7d51-4dc6-b5b3-886ba4723ef6",
+      "result_id": "cb89225a-9b0d-48e3-83ba-27029200cdac"
+    },
+    {
+      "claim_id": "86902ca5-9a86-40c7-bb31-dc63a74c7ec7",
+      "result_id": "21cc81ca-f6ea-45fe-9064-729e919bc318"
+    },
+    {
+      "claim_id": "774523f6-2171-4827-9078-08efad15dc6c",
+      "result_id": "21cc81ca-f6ea-45fe-9064-729e919bc318"
+    },
+    {
+      "claim_id": "a3dcccf2-dcb2-40cc-ad67-277c17c74768",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "0119184c-7906-427b-8a00-4ab9f02eb9a9",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "9e935b5d-8522-4680-92be-715ba8fdaa77",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "5077ec1f-a0ef-4eb6-add1-d7b660bfec0c",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "5c67b752-ce76-4483-9cf5-72309476122f",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "471a1728-ad07-427d-976a-1bc9ea7781d0",
+      "result_id": "82b90be8-d878-40ea-bee9-2b9df9bed9d0"
+    },
+    {
+      "claim_id": "9d746379-09a3-45dd-8ff5-6460c0006919",
+      "result_id": "b2a1589d-2199-40d2-9c13-645280e41b89"
+    },
+    {
+      "claim_id": "7f825d9a-eb97-4725-a24f-174ad2ada9a4",
+      "result_id": "b2a1589d-2199-40d2-9c13-645280e41b89"
+    },
+    {
+      "claim_id": "6b058062-02b9-40b4-9c13-82de0f3ad2dc",
+      "result_id": "b2a1589d-2199-40d2-9c13-645280e41b89"
+    },
+    {
+      "claim_id": "07995f1e-ea33-442b-9421-395a295c81e3",
+      "result_id": "b2a1589d-2199-40d2-9c13-645280e41b89"
+    },
+    {
+      "claim_id": "5493411c-24a9-4779-8f1f-e620ce628063",
+      "result_id": "8764e2f6-3231-4a76-ac12-c805defa336b"
+    },
+    {
+      "claim_id": "4284635c-64b3-4a62-9c32-19e1f714fc49",
+      "result_id": "8764e2f6-3231-4a76-ac12-c805defa336b"
+    },
+    {
+      "claim_id": "33c7f318-633f-4fdf-b922-0ebf8bd0f25b",
+      "result_id": "8764e2f6-3231-4a76-ac12-c805defa336b"
+    },
+    {
+      "claim_id": "40088b01-7627-4a13-89df-a52b10c582aa",
+      "result_id": "8764e2f6-3231-4a76-ac12-c805defa336b"
+    },
+    {
+      "claim_id": "2da2da6a-09d4-4656-8acc-0987e79b5970",
+      "result_id": "8764e2f6-3231-4a76-ac12-c805defa336b"
+    },
+    {
+      "claim_id": "ead81a82-00a3-45e6-972e-584a343ba679",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "1b52395e-d36f-453b-ae60-db274139c0d1",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "8fa429a1-2c7e-478d-be7b-e275ff04fe00",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "67446c1d-71a1-4af7-9649-dfa9c08715b8",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "179b0c14-6ccb-4559-9867-f1a705c5f7ee",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "232698cf-0c27-4730-adfc-a3af3bc9046c",
+      "result_id": "9261853d-3c44-426e-bcda-bcd716d2fd19"
+    },
+    {
+      "claim_id": "af68a944-fba7-4549-8694-f1954927d4ea",
+      "result_id": "bcfce7c5-29ac-4e7b-b2f2-8d343866cb5e"
+    },
+    {
+      "claim_id": "55ebd40e-6467-4df5-8163-0998c5b0efa5",
+      "result_id": "bcfce7c5-29ac-4e7b-b2f2-8d343866cb5e"
+    },
+    {
+      "claim_id": "8c0e6007-2cb2-4ee6-a03d-5cc4e4d5798b",
+      "result_id": "bcfce7c5-29ac-4e7b-b2f2-8d343866cb5e"
+    },
+    {
+      "claim_id": "fc896642-f266-4893-b39a-65a49f3dc286",
+      "result_id": "76cf5972-faad-4d2f-8088-9c3734ea5ded"
+    },
+    {
+      "claim_id": "d0c90abe-758a-4787-8b7a-587d90e7c83f",
+      "result_id": "76cf5972-faad-4d2f-8088-9c3734ea5ded"
+    },
+    {
+      "claim_id": "a7d2cde4-d312-49a9-bbca-89e51a6eaf7a",
+      "result_id": "76cf5972-faad-4d2f-8088-9c3734ea5ded"
+    },
+    {
+      "claim_id": "3cd306f5-e7ed-40e1-af32-93c20a030023",
+      "result_id": "c2473ad4-b683-4991-9d3d-3e80faa1a118"
+    },
+    {
+      "claim_id": "4f193358-44c9-44f7-8445-55a161a42245",
+      "result_id": "c2473ad4-b683-4991-9d3d-3e80faa1a118"
+    },
+    {
+      "claim_id": "5d5e9672-de56-4961-a701-ccc8a8cdf9e4",
+      "result_id": "c2473ad4-b683-4991-9d3d-3e80faa1a118"
+    },
+    {
+      "claim_id": "ff0be960-9244-4914-8c2a-bad6aea06624",
+      "result_id": "c2473ad4-b683-4991-9d3d-3e80faa1a118"
+    },
+    {
+      "claim_id": "bdbac3e5-0716-424c-bfcd-11cded368d2e",
+      "result_id": "c2473ad4-b683-4991-9d3d-3e80faa1a118"
+    },
+    {
+      "claim_id": "02042306-3fd3-41d7-915a-006e98fc2bfc",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "87b8d167-0e09-4946-b405-db4948d4e607",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "17aad94a-2d43-41ef-b1e3-e13f163a544a",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "459829cf-aab8-4508-995d-277bec1860d6",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "264e0670-2458-42b9-974d-a1720a9dda2a",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "e521e73e-f9e0-4a9d-9fdf-9af1965c0158",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "9a5dcd5f-19e2-40f3-9bf7-c1c49c9b873b",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "3061a9d9-f170-4428-bc19-99aeb6148f78",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "8c9993ab-4f24-4dad-a151-b54e6c09d35e",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "fb1f1fcb-7dc6-45a9-9ff2-c0e4e200e8aa",
+      "result_id": "6ac911ce-7a42-4b8a-aaa3-b9bca7b7f511"
+    },
+    {
+      "claim_id": "00a148a4-8e95-4e28-9f24-2b19b761573d",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "f1dc141d-afbf-44a4-9eb1-5106535cacab",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "a3009fb5-2e2d-4001-b55f-e3640d8a193d",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "11dfe9e2-8f3c-4dec-8964-95d29c5ec9fe",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "5df94642-cd97-4ddc-825b-a70a75756038",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "15151c85-47f1-4db2-8be6-6e360b83e8d8",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "ed162227-99c1-4be8-909d-a6f93bcf3f35",
+      "result_id": "373729f3-4f9b-4e0c-9a19-ca99ad76c46e"
+    },
+    {
+      "claim_id": "82580e9e-0c37-4ad4-bb10-7c7b92452dc7",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "00aa9f26-3868-41fd-b32b-de17e7e944f1",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "383d8d96-93d6-4bab-b24c-f30e07a750c9",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "0e478e1b-9efe-4425-b0c2-5c554af532d9",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "af189ec9-9058-4bb2-b7b4-a6c2ceecfee3",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "31c953e2-636c-459e-b514-1e43892a8319",
+      "result_id": "e6287757-c473-4a7e-9df8-8532b4e5c8e2"
+    },
+    {
+      "claim_id": "bd9fba4e-0050-4340-841f-7270f07e8292",
+      "result_id": "b91ef490-3d2a-4b3d-a3de-fb69420e147e"
+    },
+    {
+      "claim_id": "5079a1ec-ef2c-46af-8a7c-550faa676f6a",
+      "result_id": "b91ef490-3d2a-4b3d-a3de-fb69420e147e"
+    },
+    {
+      "claim_id": "e306eea4-229f-4d5e-bc4d-bdc4a6b51e6a",
+      "result_id": "b91ef490-3d2a-4b3d-a3de-fb69420e147e"
+    },
+    {
+      "claim_id": "f54889ba-78e1-47e5-8177-3b5665dc8f7c",
+      "result_id": "b91ef490-3d2a-4b3d-a3de-fb69420e147e"
+    },
+    {
+      "claim_id": "183ce5ab-5077-4d91-ba35-f6a571842575",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "953d5619-25e1-479a-b2ec-6e17fa899f52",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "4205f192-6591-40b5-9fe1-b42d2a97c085",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "4ceae689-f4c2-4e0d-847b-3df373dc3a87",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "ad56e978-2f65-4abb-ad95-c18cd19063f0",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "7a06530d-0f08-4ad4-894a-55e19a99a0aa",
+      "result_id": "c186da75-c4af-4ac2-a1e4-2f3a63eb2943"
+    },
+    {
+      "claim_id": "7d7b456c-29e7-46b9-b5ed-2219a44eb8dc",
+      "result_id": "5ec3c40d-9dce-4473-ba34-7d3f27aecd4f"
+    },
+    {
+      "claim_id": "21bc3c4d-2c87-4361-88b4-0c3022675990",
+      "result_id": "5ec3c40d-9dce-4473-ba34-7d3f27aecd4f"
+    },
+    {
+      "claim_id": "29ffcdca-2b25-4ac8-b3be-90b9262f13f8",
+      "result_id": "90434c3c-3025-4070-a127-977b47b632ba"
+    },
+    {
+      "claim_id": "f46805a3-120f-4338-91ff-29c8d9b85e87",
+      "result_id": "90434c3c-3025-4070-a127-977b47b632ba"
+    },
+    {
+      "claim_id": "d1cb38b9-9429-4407-becc-e59fc8b47a0a",
+      "result_id": "90434c3c-3025-4070-a127-977b47b632ba"
+    },
+    {
+      "claim_id": "5c8855f5-ae86-45e2-8ed2-6217c285176f",
+      "result_id": "e295d068-72fb-4326-b1c0-e6acd4c60e52"
+    },
+    {
+      "claim_id": "f368b03b-e16f-4a38-8dc2-fb5dc0153c36",
+      "result_id": "e295d068-72fb-4326-b1c0-e6acd4c60e52"
+    }
+  ],
+  "comparisons": []
+}

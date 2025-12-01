@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C42",
+      "C44",
+      "C45",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The Template model, which computes VTC responses as a template-matching operation on V1-like filtered visual inputs, accurately predicts bottom-up responses in VWFA and FFA during the fixation task and outperforms simpler alternative models. The model has only three free parameters and is theoretically motivated by hierarchical visual processing theories, though it has acknowledged limitations in capturing certain response profiles and generalizing to broader stimulus sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C13, C16 provide converging evidence that the Template model successfully predicts VTC responses with high cross-validated accuracy and outperforms alternative models. The model architecture (C87, C88) is clearly described, and limitations (C44, C45, C84) are appropriately acknowledged. The theoretical grounding (C85) and parsimony (C86) strengthen the model's credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "VTC responses in VWFA and FFA are strongly modulated by both low-level stimulus properties (contrast, phase coherence) and cognitive task demands. Response amplitudes can vary by factors of 2-3\u00d7 based on contrast alone, and task-related modulation can be even larger, with low-contrast stimuli during demanding tasks producing responses exceeding high-contrast stimuli during passive viewing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C9, C10, C46, C47, C50 are all directly supported by experimental data shown in Figure 1d. The quantitative measurements are specific and consistent across claims. The observation that contrast-response functions can flip sign across tasks (C46, C47) is particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Top-down modulation during categorization and one-back tasks acts as a stimulus-specific scaling mechanism on bottom-up VTC representations, amplifying existing selectivity rather than adding new tuning. This scaling increases the distance of neural responses from decision boundaries, occurs for both preferred and non-preferred stimulus categories, and appears to operate via the same mechanism across different tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 are well-supported by visualization and analysis of neural responses in multi-dimensional space (Figure 3). The characterization of top-down effects as scaling rather than additive or category-specific is supported by both qualitative visualization (C18, C19) and quantitative modeling (addressed in separate result). The functional interpretation (C23, C25) is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C48",
+      "C49",
+      "C52"
+    ],
+    "result": "The intraparietal sulcus (IPS), specifically IPS-0/1 subdivisions, is identified as the source of top-down modulation to VTC through connectivity analysis. This is supported by anatomical evidence showing that the vertical occipital fasciculus (VOF) connects VWFA and FFA to the functionally identified IPS region. The amount of IPS modulation varies flexibly with stimulus properties and task demands despite constant spatial attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27 are supported by connectivity analysis (Figure 4b) showing IPS as the strongest correlate of top-down VTC modulation. Anatomical support (C28-C30) from diffusion tractography strengthens the case for direct IPS-VTC interaction. The extension beyond spatial attention (C49) is supported by the stimulus-specific nature of the modulation. However, the correlational nature of the connectivity analysis (acknowledged by authors) means causality is inferred rather than proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C43",
+      "C92"
+    ],
+    "result": "The IPS-scaling model, which multiplies bottom-up VTC responses by a scaled version of IPS activity, accurately predicts top-down modulation across both categorization and one-back tasks using a single set of parameters. The model demonstrates that IPS interacts with VTC multiplicatively rather than additively, and that this scaling is stimulus- and task-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32 show the IPS-scaling model achieves high cross-validated accuracy (Figure 5b). The model's ability to use a single parameter set across tasks (C32, C33) is particularly compelling. Model comparisons (C35, C36, C37) provide strong evidence for multiplicative over additive interactions and for stimulus/task specificity. The model architecture (C92) is clearly specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The Drift diffusion model links VTC sensory evidence to IPS decision-making processes, accurately predicting both reaction times and IPS responses during the categorization task. The model proposes that task difficulty arises from longer evidence accumulation times when sensory evidence is weak, and that top-down modulation is a consequence of fulfilling task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39 demonstrate the model achieves high cross-validated accuracy for both reaction times and IPS responses (Figure 6b). The conceptual framework (C95, C97) is grounded in established decision-making literature. The mechanistic explanation of task difficulty (C40) is a valuable contribution. However, the model is acknowledged as simplified (C96), lacking stochasticity and trial-to-trial variability, which limits its scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C56"
+    ],
+    "result": "The observed effects represent novel findings that cannot be explained by previous models of attention (response-gain, contrast-gain, or additive-shift models), as these models do not account for stimulus-specific scaling that varies with both stimulus properties and task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C56 are supported by comparison with existing attention models (C53-C55) and demonstration that the current findings show qualitatively different patterns (e.g., contrast-response functions that flip sign across tasks). The novelty claim is justified by the specific pattern of results that distinguish this work from prior attention literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "VWFA selectively responds to words and FFA selectively responds to faces, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5 are well-established findings from prior literature (Cohen et al., Kanwisher et al.) and serve as background for the current study. These are appropriately cited and not novel contributions of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The experimental design involved 9 subjects (after exclusions) performing three tasks on carefully controlled stimuli presented in 4-second trials. MRI data were acquired at 3T with specific parameters, and the physical stimulus sequence was held constant across tasks to isolate cognitive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C78 provide detailed methodological information that is clearly stated and internally consistent. The experimental design appropriately controls for stimulus differences across tasks (C74), which is critical for isolating top-down effects. Sample size (n=9) is modest but reasonable for fMRI studies with within-subject designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Behavioral data show high consistency in category judgments across subjects (>85% agreement). fMRI data were analyzed using GLMdenoise for noise reduction, and ROIs were defined using established methods (pRF for visual field maps, functional localizers for category-selective regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 describe standard and appropriate analysis methods. The high behavioral consistency (C79) validates that subjects performed the tasks as intended. The use of GLMdenoise (C80) and established ROI definition methods (C81-C83) are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors propose a working hypothesis that sensory information flows from VTC to IPS for evidence accumulation, followed by feedback to VTC. They acknowledge uncertainty about whether IPS induces scaling or sustainment of neural activity, and note that IPS is part of larger attention and decision-making networks requiring further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57, C58 are explicitly labeled as hypotheses and speculation by the authors. While the proposed information flow (C57) is consistent with the model architecture and data, the directionality and timing cannot be established from BOLD correlations alone. The acknowledgment of alternative mechanisms (C58) and need for future work (C60) is appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

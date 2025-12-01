@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "EPEC exhibits bimodal colony growth after activation. When EPEC is grown under activating conditions (DMEM at 37\u00b0C) and then plated on LB agar, colonies display a bimodal distribution of appearance times and sizes, with BIG and SMALL morphotypes. This bimodality is specific to EPEC and not observed in E. coli K-12 controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C31 are well-supported by ScanLag experimental data (Figure 1) showing bimodal distributions in EPEC but not K-12. The methodology is appropriate, with adequate replication (at least 4 biological replicates) and proper controls. The bimodality is demonstrated through multiple metrics (appearance time, growth rate, colony size).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C44"
+    ],
+    "result": "The SMALL morphotype exhibits stable inheritance over multiple generations during exponential growth. SMALL colonies give rise predominantly to SMALL colonies (96% \u00b1 3%), while BIG colonies produce a mixture (79% \u00b1 4% BIG, 21% \u00b1 4% SMALL). This pattern persists for at least four consecutive cycles, suggesting memory lasting tens of generations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C44 are supported by systematic re-plating experiments (Figure 2) with quantitative measurements and error estimates. The stability over four cycles provides strong evidence for long-term memory. However, the exact number of generations is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The bimodality is not caused by genetic differences but likely involves an epigenetic mechanism. Whole genome sequencing revealed identical sequences between BIG and SMALL colonies, with only a two-fold difference in EAF plasmid coverage. No specific phase variation differences were detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by whole genome sequencing data with high coverage. The conclusion of epigenetic mechanism (C40-C41) is a reasonable inference from the absence of genetic differences, though the mechanism itself is not identified. The plasmid copy number difference (C39) could be consequence rather than cause.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C50",
+      "C77",
+      "C117"
+    ],
+    "result": "Stationary phase resets the bimodal phenotype to a unimodal BIG population. When SMALL or BIG colonies are grown to stationary phase in LB broth and re-plated, the SMALL morphotype disappears in both cases, resetting the culture to unimodal distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C50, C77, C117 are consistently supported by experimental data (Figures 2F-H, 3B-C). The reset phenomenon is demonstrated under multiple conditions (LB growth, activating conditions). This is a key feature distinguishing the hysteretic switch from permanent genetic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C113",
+      "C121"
+    ],
+    "result": "Mathematical modeling reveals asymmetric switching rates between morphotypes. Under non-activating conditions, switching from BIG to SMALL (a = 0.021 h\u207b\u00b9) is ~10 times faster than SMALL to BIG (b = 0.0017 h\u207b\u00b9). Under activating conditions, the BIG to SMALL rate increases ~10-fold (a = 0.24 h\u207b\u00b9). The SMALL to BIG switching is extremely slow, requiring over 100 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C48, C113, C121 are supported by mathematical modeling fitted to experimental data (Figure 3). The model parameters are estimated with confidence intervals. However, the model assumes specific functional forms and the very low value of b may be at the limit of experimental detection. The biological interpretation of these rates is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The per operon is required for bimodality. Deletion of perA eliminates bimodality, producing only BIG colonies, while complementation with the perABC operon restores it. Other virulence regulators (Ler, GrlA, PerC) and virulence factors (T3SS, BFP) are not required for colony size bimodality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C56-C58 are well-supported by systematic genetic analysis (Figure 4). Multiple deletion mutants were tested with appropriate complementation controls. The specificity for perA among tested genes is clearly demonstrated. The experiments include at least two biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C97"
+    ],
+    "result": "Both PerA and PerB are necessary and sufficient for bimodality. Complementation with PerA-GFP or PerB-GFP alone produces unimodal colonies, while PerAB-GFP restores bimodality. Co-expression of PerA and PerB is sufficient to induce bimodality even in E. coli K-12, though the phenotype is milder without the EAF plasmid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C97 are supported by systematic complementation experiments (Figure 5) and heterologous expression in K-12. The necessity of both proteins is clearly demonstrated. The sufficiency in K-12 is particularly strong evidence. Microscopy confirms bimodal GFP expression correlates with bimodal growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Bimodal perABC expression during activation determines colony morphotype. Under activating conditions, perABC-gfp shows bimodal expression. FACS-sorted GFP-OFF bacteria produce BIG colonies, while GFP-ON bacteria generate almost exclusively SMALL colonies. GFP-OFF bacteria are larger and divide faster than GFP-ON bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by microscopy (Figure 6A), FACS sorting, and ScanLag analysis (Figure 6C-D). The correlation between perABC expression and colony morphotype is directly demonstrated. The experiment includes appropriate controls (pZS11*GFP) and multiple replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C118",
+      "C119"
+    ],
+    "result": "Ler expression is unimodal under activating conditions but becomes bimodal upon shift to non-activating conditions. Under activation, all bacteria express Ler due to redundant activation by GrlA and PerC. After shifting to non-activating conditions, Ler expression becomes bimodal, with uniform high expression in SMALL populations and bimodal expression in BIG populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73, C118-C119 are supported by ler-gfp reporter experiments (Figure 7) with flow cytometry and microscopy. The transition from unimodal to bimodal Ler expression is clearly demonstrated. The mechanistic explanation involving redundant regulation is a reasonable inference based on known regulatory architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C96",
+      "C115",
+      "C133"
+    ],
+    "result": "EPEC virulence is controlled by a hysteretic switch with long-term epigenetic memory. The per operon mediates stable co-existence of per-OFF and per-ON subpopulations. Per-ON bacteria maintain hypervirulent state (expressing both Ler and PerABC) for many generations in non-activating conditions, while per-OFF bacteria lose virulence expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C96, C115, C133 represent the main conclusion, integrating multiple lines of evidence from genetic, molecular, and modeling experiments. The hysteretic nature is demonstrated by the long-term stability and asymmetric switching rates. The term 'epigenetic' is justified by absence of genetic changes. This is the central finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Western blot analysis confirms differential virulence factor expression between morphotypes. SMALL colonies maintain high expression of BfpA, EspB, and Tir even after 20+ generations in non-activating conditions. BIG colonies show low virulence factor expression with residual levels consistent with ~20% SMALL variants. The \u0394perA mutant rapidly loses virulence factor expression upon shift to non-activating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are supported by Western blot data (Figure 8C-D) with appropriate loading controls. The protein expression patterns are consistent with the hysteretic switch model. The quantitative interpretation of residual expression in BIG colonies (C84) is reasonable but somewhat indirect. Experiments include at least two biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Per-ON bacteria show enhanced aggregation and attachment to host cells. SMALL colony bacteria rapidly aggregate via BFP, while BIG colony bacteria remain planktonic. In infection assays, per-ON (GFP-ON) bacteria form microcolonies that rapidly attach to HeLa cells, while per-OFF bacteria remain unattached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by time-lapse microscopy (Figure 9A-B, Videos 1-2). The differential behavior is clearly demonstrated. The aggregation is consistent with BFP expression. The attachment assays directly test infectivity differences between morphotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SMALL morphotype bacteria maintain high infectivity after many generations in non-activating conditions. SMALL bacteria form attached microcolonies, induce actin rearrangement, and invade HeLa cells. BIG bacteria show minimal microcolony formation and marginal actin rearrangement and invasiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by infection experiments with microscopy (Figure 9C-E, Videos 3-4) and gentamicin protection assays (Figure 9 supplements). The functional consequences of the hysteretic switch are clearly demonstrated. Multiple indicators of virulence (attachment, actin rearrangement, invasion) are assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103"
+    ],
+    "result": "EPEC differs from Salmonella in virulence expression patterns. Unlike Salmonella's bimodal T3SS expression under activation, all EPEC bacteria upregulate T3SS under activating conditions. However, EPEC shows bimodality in per-regulated genes, creating planktonic (per-OFF) and aggregative (per-ON) subpopulations with different infection abilities. Per-ON bacteria maintain virulence gene expression for tens of generations in non-activating conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99, C100, C102-C103 are supported by experimental data (Figures 7-9) and comparison with cited Salmonella literature. The distinction between EPEC and Salmonella virulence strategies is clearly articulated. The long-term maintenance of virulence in per-ON bacteria is a key distinguishing feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The per operon regulatory architecture involves PerA auto-activation, a network motif known to generate bimodality and hysteresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by the regulatory diagram (Figure 4A) and citations to previous literature on positive feedback loops. The connection between network architecture and phenotypic behavior is well-established in the literature. However, the specific mechanism by which PerB contributes is not elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C129"
+    ],
+    "result": "The perABC operon is conserved across diverse EPEC strains and contributes to disease severity. Most EPEC strains acquired both the LEE island and plasmids containing perABC. Strains with both LEE and perABC/bfp operons cause more severe disease. The findings suggest perABC enhances fitness by facilitating long-term memory and phenotypic bimodality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127, C129 are supported by citations to genomic surveys of EPEC strains and clinical observations. The evolutionary conservation argument is reasonable. However, the direct contribution of the hysteretic switch to disease severity (C127, C129) is inferred from correlation rather than demonstrated experimentally in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C101",
+      "C104",
+      "C106",
+      "C107",
+      "C134",
+      "C135"
+    ],
+    "result": "The hysteretic switch may have important biological consequences for pathogenesis. Potential benefits include persistent infection, enhanced host-to-host spreading through fecal-oral route, protection from immune system, bet-hedging under unpredictable conditions, and diversification within the per-ON subpopulation. This understanding may enable development of strategies to interfere with virulence-ON mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C101, C104, C106-C107, C134-C135 are speculative statements about potential biological significance and applications. While the speculation is reasonable and well-motivated by the experimental findings, these claims are not directly tested. The lack of an animal model (C130) prevents in vivo validation. These represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C55",
+      "C122",
+      "C123",
+      "C128",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Background knowledge and context from prior literature. These claims establish the scientific context including: general principles of bacterial phenotypic variation, virulence regulation in pathogens, phase variation mechanisms, growth rate bimodality, Salmonella T3SS bimodality, EPEC biology and virulence factors, and comparisons with related pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C26, C55, C122-C123, C128, C130-C132 are background claims supported by citations to established literature. These provide essential context but are not novel findings of this study. The citations appear appropriate and the background knowledge is accurately represented. Claim C130 acknowledges a limitation (no EPEC animal model).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Model predictions about the hysteretic switch. The mathematical model predicts: longer activation increases SMALL percentage, SMALL morphotype should express both BFP and T3SS after many generations in non-activating conditions, BIG colonies should contain ~20% hypervirulent bacteria, and perA deletion should eliminate hysteresis while preserving activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C78-C80 are predictions from the mathematical model that are subsequently validated experimentally (C48 in Figure 3B, C78-C80 in Figures 8-9). The predictions are logical consequences of the model structure and parameters. The experimental validation of these predictions strengthens confidence in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Trade-offs between morphotypes and bet-hedging interpretation. The SMALL morphotype infects rapidly but bears costs of virulence gene expression and immune exposure, while BIG grows faster and is less immunogenic. Bimodality is stable mainly under non-activating conditions, suggesting a bet-hedging strategy when environmental cues are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 involve interpretation of the biological significance. The growth rate difference is demonstrated (C109 supported by data), but the immunogenicity claim (C108-C109) is inferred rather than tested. The bet-hedging interpretation (C107, C110) is reasonable but speculative. These represent plausible hypotheses that would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

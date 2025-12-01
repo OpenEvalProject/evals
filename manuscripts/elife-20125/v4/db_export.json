@@ -1,0 +1,2259 @@
+{
+  "submission": {
+    "id": "46d32275-c84a-4820-b59b-e0df5175311b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:42:21.554583Z",
+    "updated_at": "2025-11-30T20:42:21.554583Z"
+  },
+  "content": [
+    {
+      "id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "submission_id": "46d32275-c84a-4820-b59b-e0df5175311b",
+      "content_type": "manuscript",
+      "content_text": "# Two locus inheritance of non-syndromic midline craniosynostosis via rare SMAD6 and common BMP2 alleles\n\n## Authors\n\n- Andrew T Timberlake<sup>1</sup> ([ORCID: 0000-0002-8926-9692](https://orcid.org/0000-0002-8926-9692))\n- Jungmin Choi<sup>1</sup>\n- Samir Zaidi<sup>1</sup>\n- Qiongshi Lu<sup>4</sup>\n- Carol Nelson-Williams<sup>1</sup>\n- Eric D Brooks<sup>3</sup>\n- Kaya Bilguvar<sup>1</sup>\n- Irina Tikhonova<sup>5</sup>\n- Shrikant Mane<sup>1</sup>\n- Jenny F Yang<sup>3</sup>\n- Rajendra Sawh-Martinez<sup>3</sup>\n- Sarah Persing<sup>3</sup>\n- Elizabeth G Zellner<sup>3</sup>\n- Erin Loring<sup>1</sup>\n- Carolyn Chuang<sup>3</sup>\n- Amy Galm<sup>6</sup>\n- Peter W Hashim<sup>3</sup>\n- Derek M Steinbacher<sup>3</sup>\n- Michael L DiLuna<sup>7</sup>\n- Charles C Duncan<sup>7</sup>\n- Kevin A Pelphrey<sup>8</sup>\n- Hongyu Zhao<sup>4</sup>\n- John A Persing<sup>3</sup>\n- Richard P Lifton<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics Yale University School of Medicine New Haven United States\n2. Howard Hughes Medical Institute, Yale University School of Medicine New Haven United States\n3. Section of Plastic and Reconstructive Surgery, Department of Surgery Yale University School of Medicine New Haven United States\n4. Department of Biostatistics Yale University School of Medicine New Haven United States\n5. Yale Center for Genome Analysis New Haven United States\n6. Craniosynostosis and Positional Plagiocephaly Support New York United States\n7. Department of Neurosurgery Yale University School of Medicine New Haven United States\n8. Child Study Center Yale University School of Medicine New Haven United States\n9. The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPremature fusion of the cranial sutures (craniosynostosis), affecting 1 in 2000 newborns, is treated surgically in infancy to prevent adverse neurologic outcomes. To identify mutations contributing to common non-syndromic midline (sagittal and metopic) craniosynostosis, we performed exome sequencing of 132 parent-offspring trios and 59 additional probands. Thirteen probands (7%) had damaging de novo or rare transmitted mutations in SMAD6, an inhibitor of BMP \u2013 induced osteoblast differentiation (p<10\u221220). SMAD6 mutations nonetheless showed striking incomplete penetrance (<60%). Genotypes of a common variant near BMP2 that is strongly associated with midline craniosynostosis explained nearly all the phenotypic variation in these kindreds, with highly significant evidence of genetic interaction between these loci via both association and analysis of linkage. This epistatic interaction of rare and common variants defines the most frequent cause of midline craniosynostosis and has implications for the genetic basis of other diseases.\n\n## Introduction\n\nThe cranial sutures are not fused at birth, allowing for doubling of brain volume in the first year of life and continued growth through adolescence (Persing et al., 1989). The metopic suture normally closes between 6 and 12 months, while the sagittal, coronal, and lambdoid sutures typically fuse in adulthood (Persing et al., 1989; Weinzweig et al., 2003). Premature fusion of any of these sutures can result in brain compression and suture-specific craniofacial dysmorphism (Figure 1). Studies of syndromic forms of craniosynostosis, each with prevalence of ~1/60,000 to 1/1,000,000 live births and collectively accounting for 15\u201320% of all cases, have implicated mutations in more than 50 genes (Twigg and Wilkie, 2015; Flaherty et al., 2016). For example, mutations that increase MAPK/ERK signaling (e.g. FGFR1-3 (Twigg and Wilkie, 2015; Flaherty et al., 2016), ERF [Twigg et al., 2013]) cause rare syndromic coronal or multisuture craniosynostosis, while mutations that perturb SMAD signaling (e.g. TGFBR1/2 [Loeys et al., 2005], SKI [Doyle et al., 2012], RUNX2 [Mefford et al., 2010; Javed et al., 2008]) cause rare syndromes involving the midline (sagittal and metopic) sutures. While the detailed pathophysiology of premature suture fusion has not been elucidated, aberrant signaling in cranial neural crest cells during craniofacial development has been suggested as a common mechanism (Mishina and Snider, 2014; Komatsu et al., 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig1-v4.jpg)\n\n**Figure 1.:** (a) Normal infant skull with patent sagittal (S) and metopic (M) sutures. (b) Three-dimensional reconstruction of computed tomography (3D CT) demonstrating premature fusion of both the sagittal and metopic sutures. (c) A three-month-old boy with sagittal craniosynostosis featuring scaphocephaly (narrow and elongated cranial vault), and frontal bossing. (d) 3D CT reconstruction of a one-month-old boy found to have sagittal craniosynostosis. (e) A six-month-old boy presenting with trigonocephaly (triangulation of the cranial vault, with prominent forehead ridge resulting from premature fusion of the metopic suture) and hypotelorism (abnormally decreased intercanthal distance, also a result of premature fusion of the metopic suture). 3D CT reconstruction demonstrated metopic craniosynostosis. (f) 3D CT reconstruction demonstrating premature fusion of the metopic suture with characteristic trigonocephaly and hypotelorism.\n\nDespite success in identifying the genes underlying rare syndromic craniosynostosis, mutations in these genes are very rarely found in their non-syndromic counterparts (Boyadjiev and International Craniosynostosis Consortium, 2007). Non-syndromic craniosynostosis of the midline sutures account for 50% of all craniosynostosis (Slater et al., 2008; Greenwood et al., 2014). A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants in a segment of a gene desert ~345 kb downstream of BMP2, and within an intron of BBS9; these risk alleles have unusually large effect (odds ratios > 4 at each locus) (Justice et al., 2012). Nonetheless, rare alleles with large effect have not been identified to date in non-syndromic sagittal or metopic craniosynostosis. We considered that the often sporadic occurrence of non-syndromic craniosynostosis might frequently be attributable to de novo mutation or incomplete penetrance of rare transmitted variants.\n\n## Results\n\n### Exome sequencing of non-syndromic midline craniosynostosis\n\nWe recruited a cohort of 191 probands with non-syndromic midline craniosynostosis, including 132 parent-offspring trios and 59 probands with one parent, along with selected extended family members (see Materials\u00a0and\u00a0methods). All probands had undergone reconstructive surgery for either isolated sagittal (n\u00a0=\u00a0113), metopic (n\u00a0=\u00a070) or combined sagittal and metopic (n\u00a0=\u00a08) craniosynostosis. Seventeen kindreds had 1 to 3 additional affected family members, including 7 parents, 12 siblings, 3 aunts/uncles and 4 more distant relatives of probands. DNA was prepared from buccal swab samples. Exome sequencing was performed as described in Materials and methods; summary data are shown in Supplementary file 1A. Variants were called using the GATK pipeline (see Materials and methods) and de novo mutations in parent-offspring trios were called using TrioDeNovo (Wei et al., 2015). The impact of identified missense variants on protein function was inferred using MetaSVM (Dong et al., 2015). All de novo calls were verified by in silico visualization of aligned reads (Figure 2\u2014figure supplement 1), and all calls contributing to significant results for individual genes were verified by direct Sanger sequencing.\n\nWe identified a total of 144 de novo mutations, providing a de novo mutation rate of 1.64 \u00d7 10\u20138 per base pair, and 1.09 de novo mutations in the coding region per offspring, consistent with prior experimental results and expectation (Ware et al., 2015; Homsy et al., 2015) (Table 1). Comparison of the observed distribution of mutation types to the expected from the Poisson distribution demonstrated significant enrichment of protein-altering mutations, predominantly accounted for by an excess of damaging missense mutations (MetaSVM D-mis; 28 observed D-mis compared to 14.5 expected, p=1.0 \u00d7 10\u20133, 1.93-fold enrichment), with a corresponding paucity of silent mutations (21 compared to 40.4 expected, p=3.0 \u00d7 10\u20134). From the difference in the observed vs. expected number of de novo protein-altering mutations per subject, we infer that these de novo mutations contribute to ~15% of non-syndromic midline craniosynostosis.\n\n**Table 1.**\n Enrichment of protein-altering de novo mutations in 132 subjects with sagittal and/or metopic craniosynostosis.Table 1\u2014source data 1.De novo mutations in 132 trios with sagittal and/or metopic craniosynostosis.Mutations highlighted in orange are likely loss of function mutations, those highlighted in blue are likely damaging missense mutations (D-mis) as called by MetaSVM, and those without highlight are predicted to be tolerated (T-mis) or are synonymous (syn).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"2\">Observed</th>\n      <th colspan=\"2\">Expected</th>\n      <th>Enrichment</th>\n      <th>p-value</th>\n    </tr>\n    <tr>\n      <th>Class</th>\n      <th>#</th>\n      <th>#/subject</th>\n      <th>#</th>\n      <th>#/subject</th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>All mutations</td>\n      <td>144</td>\n      <td>1.09</td>\n      <td>142.8</td>\n      <td>1.08</td>\n      <td>1.01</td>\n      <td>0.47</td>\n    </tr>\n    <tr>\n      <td>Synonymous</td>\n      <td>21</td>\n      <td>0.16</td>\n      <td>40.4</td>\n      <td>0.31</td>\n      <td>0.52</td>\n      <td>3.0 \u00d7 10\u22124</td>\n    </tr>\n    <tr>\n      <td>Protein altering</td>\n      <td>123</td>\n      <td>0.93</td>\n      <td>102.4</td>\n      <td>0.78</td>\n      <td>1.17</td>\n      <td>0.03</td>\n    </tr>\n    <tr>\n      <td>Total missense</td>\n      <td>110</td>\n      <td>0.83</td>\n      <td>89.7</td>\n      <td>0.68</td>\n      <td>1.23</td>\n      <td>0.02</td>\n    </tr>\n    <tr>\n      <td>T-mis</td>\n      <td>82</td>\n      <td>0.62</td>\n      <td>75.2</td>\n      <td>0.57</td>\n      <td>1.09</td>\n      <td>0.23</td>\n    </tr>\n    <tr>\n      <td>D-mis</td>\n      <td>28</td>\n      <td>0.21</td>\n      <td>14.5</td>\n      <td>0.11</td>\n      <td>1.93</td>\n      <td>1.0 \u00d7 10\u22123</td>\n    </tr>\n    <tr>\n      <td>Loss of function (LOF)</td>\n      <td>13</td>\n      <td>0.10</td>\n      <td>12.7</td>\n      <td>0.10</td>\n      <td>1.03</td>\n      <td>0.50</td>\n    </tr>\n    <tr>\n      <td>LOF + D-mis</td>\n      <td>41</td>\n      <td>0.31</td>\n      <td>27.1</td>\n      <td>0.21</td>\n      <td>1.51</td>\n      <td>7.8 \u00d7 10\u22123</td>\n    </tr>\n  </tbody>\n</table>\n\n_#, number of de novo mutations in 132 subjects; #/subject, number of de novo mutations per subject; Damaging and tolerated missense called by MetaSVM (D-mis, T-mis respectively); Loss of function denotes premature termination, frameshift, or splice site mutation. For mutation classes with enrichment compared to expectation, p-values represent the upper tail of the Poisson probability density function. For mutation classes in which we observed a paucity of mutations compared to expectation, p-values represent the lower tail._\n\n### De novo and transmitted mutations in SMAD6\n\nAnalysis of de novo mutation burden revealed that a single gene, SMAD6, harbored three de novo mutations, including two inferred loss of function (LOF) mutations (p.Q78fs*41 and p.E374*) and one D-mis mutation (p.G390C). All three were heterozygous and occurred in families in which the proband was the sole affected member. Two de novo mutations occurred in probands and one occurred in an unaffected mother of a proband (Figure 2). All three de novo mutations were confirmed by Sanger sequencing of PCR amplicons containing the putative mutation (Figure 2\u2014figure supplement 2). TTN, which encodes the largest human protein, was the only other gene with more than one protein altering de novo mutation, and both of these were predicted by MetaSVM to encode tolerated variants (p.I3580M, p.T19373S). From the prior probability of de novo mutation of each base in SMAD6 and the impact on the encoded protein (Samocha et al., 2014), the probability of seeing at least two de novo LOFs and one missense mutation by chance in a cohort of this size was 3.6 \u00d7 10\u20139\u00a0(Table 2). Similarly, observing two or more de novo LOF mutations in any gene in this cohort was not expected by chance (p=8.4 \u00d7 10\u20133, see Materials and methods). Lastly, SMAD6 is not unusually mutable, as we found no de novo SMAD6 mutations in 900 control trios comprising healthy siblings of individuals with autism (Iossifov et al., 2014; O'Roak et al., 2011; Sanders et al., 2012). These findings provide highly significant evidence implicating damaging mutations in SMAD6 as a cause of midline suture craniosynostosis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig2-v4.jpg)\n\n**Figure 2.:** (a) Domain structure of SMAD6 showing location of the MH1 and MH2 domains. The MH1 domain mediates DNA binding and negatively regulates the functions of the MH2 domain, while the MH2 domain is responsible for transactivation and mediates phosphorylation-triggered heteromeric assembly with receptor\u00a0SMADs. De novo or rare damaging mutations identified in craniosynostosis probands are indicated. Color of text denotes suture(s) showing premature closure. (b) Pedigrees harboring de novo (denoted by stars within pedigree symbols) or rare transmitted variants in SMAD6. Filled and unfilled symbols denote individuals with and without craniosynostosis, respectively. The SMAD6 mutation identified in each kindred is noted above each pedigree. Below each symbol, genotypes are shown first for SMAD6 (with 'D' denoting the damaging allele) and for rs1884302 risk locus downstream of BMP2, (with 'T' conferring protection from and 'C' conferring increased risk of craniosynostosis). All 17 subjects with craniosynostosis have SMAD6 mutations, and 14/17 have also inherited the risk allele at rs1884302, whereas only 3 of 16 SMAD6 mutation carriers without the rs1884302 risk allele have craniosynostosis.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The reference sequence of a segment of SMAD6 that includes base 15:67073502 (denoted by arrow) is shown in the top row, with red, blue, green and yellow squares representing A, C, G, T, respectively. Below, all independent reads that map to this interval are shown. The results show that the proband has 23 reads of reference \u2018G\u2019, and 10 reads of non-reference \u2018T\u2019. Only the reference \u2018G\u2019 is seen in both parents, providing evidence of a de novo mutation.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig2-figsupp2-v4.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Sanger sequencing traces of PCR amplicons containing SMAD6 mutations identified by exome sequencing are shown. Above each trace or set of traces, the kindred ID, mutation identified in the DNA sequence and its impact on SMAD6 protein is indicated. Above sequence traces, the inferred DNA sequence is shown, along with the inferred amino acid sequence (shown in single letter code). Heterozygous mutations are indicated beneath the wild-type sequence and non-reference amino acid sequences are shown in red. Deleted and inserted bases are denoted, and result in an overlap of wild-type and mutant sequences.\n\n**Table 2.**\n Probability of observed de novo mutations in SMAD6 and Sprouty genes occurring by chance in 132 subjects using gene-specific mutation probabilities.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene(s)</th>\n      <th>Mutations</th>\n      <th>Number of observed mutations</th>\n      <th>Number of expected mutations</th>\n      <th>p value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SMAD6</td>\n      <td>Loss of function</td>\n      <td>2</td>\n      <td>0.00026</td>\n      <td>3.31 \u00d7 10\u22128</td>\n    </tr>\n    <tr>\n      <td>SMAD6</td>\n      <td>Missense</td>\n      <td>1</td>\n      <td>0.0046</td>\n      <td>4.67 \u00d7 10\u22123</td>\n    </tr>\n    <tr>\n      <td>SPRY1, SPRY2, SPRY3, SPRY4</td>\n      <td>Nonsense, splice site, frameshift</td>\n      <td>2</td>\n      <td>0.001193</td>\n      <td>7.11 \u00d7 10\u22127</td>\n    </tr>\n  </tbody>\n</table>\n\n_Probabilities calculated from the Poisson distribution using DenovolyzeR. The probability of observing at least 2 LOF and 1 missense mutation in SMAD6 was 3.6\u00a0\u00d710\u22129 via Fisher\u2019s method._\n\nWe next considered the total burden of rare (prospectively specified allele frequency in ExAC database <2 \u00d7 10\u20135) LOF and D-mis mutations in each gene in probands. Among 191 probands, we found 1135 rare LOF and 3156 rare damaging (LOF + D-mis) alleles. The probability of the observed number of rare variants in each gene occurring by chance was calculated from the binomial distribution after adjusting for the length of each gene; Q-Q plots comparing the observed and expected P-value distributions are shown in Figure 3. The observed distribution conforms closely to expected with the exception of SMAD6. The expected number of rare LOF alleles in SMAD6 in probands was 0.05, and the observed number was 8 (p=1.1 \u00d7 10\u201315, 156-fold enrichment). Similarly, there were 13 rare damaging variants in SMAD6 compared to 0.14 expected (p=1.3 \u00d7 10\u201321, 91.4-fold enrichment). All of these SMAD6 variants were confirmed by direct Sanger sequencing (Figure 2\u2014figure supplement 2). All were heterozygous and different from one another (Figure 2\u2014source data 1); 11 were absent among >105 alleles in the ExAC database, while two were previously seen, each once in ExAC (p.E407* and p.R465C, ExAC allele frequencies 9.0\u00a0\u00d7 10\u20136 and 9.4 \u00d7 10\u20136 respectively). The results for SMAD6 remain highly significant after excluding de novo mutations and only analyzing transmitted variants (Figure 3\u2014figure supplement 1), demonstrating a\u00a0significant contribution of both de novo and transmitted variants (Table 3). The fact that eight of the 13 rare heterozygous damaging variants in SMAD6 seen in our cohort are frameshift (n = 5) or premature termination (n = 3) mutations, which are distributed throughout the encoded protein (Figure 2a), strongly supports haploinsufficiency as the mechanism of the genetic contribution of SMAD6 to craniosynostosis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig3-v4.jpg)\n\n**Figure 3.:** Rare (allele frequency <2 \u00d7 10\u20135\u00a0in the ExAC03 database) loss of function (LOF) and damaging missense (D-mis) variants were identified in 191 probands. The probability of the observed number of variants in each gene occurring by chance was calculated from the total number of observed variants and the length of the coding region of each gene using the binomial test. The distribution of observed P-values compared to the expected distribution is shown. (a) Q-Q plot for rare LOF variants in each gene from a total of 1135 LOF variants identified in probands. The distribution of observed p-values closely conforms to expectation with the exception of SMAD6, which shows p=1.1 \u00d7 10\u201315\u00a0and 156-fold enrichment in cases. (b) Q-Q plot for rare damaging (LOF + D-mis) variants in each gene from a total of 3156 damaging variants in probands. Again, SMAD6 deviates greatly from the expected distribution, with p<10\u201320 and 91-fold enrichment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** De novo variants were excluded from this analysis, leaving 1122 rare (ExAC allele frequency < 2 x10\u22125), transmitted LOF variants and 3115 transmitted damaging (LOF + D-mis) variants. All genes closely matched expectation, with the exception of SMAD6. (a) There were 6 transmitted SMAD6 LOF mutations, a 118-fold enrichment compared to the expected 0.05 (p=2.2 \u00d7 10\u201311). (b) Similarly, there were 10 transmitted damaging SMAD6 variants, a 71-fold enrichment compared to the expected 0.14 (p=7.0 \u00d7 10\u201316). The results demonstrate genome-wide significance of rare transmitted variants in SMAD6 independent of de novo mutations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Principal component analysis of exome sequence genotypes from 191 probands with sagittal, metopic, or combined sagittal and metopic craniosynostosis clustered along with HapMap subjects. Results identify 172 craniosynostosis subjects that cluster with HapMap European subjects. (b) Principal component analysis of genotypes from exome sequencing data of European autism parent controls (n\u00a0=\u00a03337) showing clustering with HapMap subjects. In both panels, subjects considered to be of European ancestry are circled.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig3-figsupp3-v4.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The frequency of rare (allele frequency < 2 \u00d7 10\u20135\u00a0in the ExAC03 database) loss of function and D-mis variants in each gene was compared in 172 European probands with midline craniosynostosis and 3337 European controls. The distribution of observed p-values conforms to expectation with the exception of SMAD6, which deviates significantly from expectation. Because exon 1 of SMAD6 was poorly captured using the V2 capture reagent (used in control samples), 3 damaging variants in exon 1 in cases were excluded from this analysis.\n\n**Table 3.**\n Enrichment of de novo and transmitted damaging variants in SMAD6 in craniosynostosis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Observed</th>\n      <th>Expected</th>\n      <th>Enrichment</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>De novo LOF and D-mis</td>\n      <td>3</td>\n      <td>0.0049</td>\n      <td>612</td>\n      <td>3.6 \u00d7 10\u22129</td>\n    </tr>\n    <tr>\n      <td>Transmitted LOF and D-mis</td>\n      <td>10</td>\n      <td>0.1404</td>\n      <td>71.2</td>\n      <td>7.0 \u00d7 10\u221216</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>13</td>\n      <td>0.1453</td>\n      <td>89.5</td>\n      <td>1.4 \u00d7 10\u221222</td>\n    </tr>\n  </tbody>\n</table>\n\n_LOF, loss of function; D-mis, damaging missense variants per MetaSVM; The total number of SMAD6 variants expected in this cohort was calculated by summing the expected number of de novo and transmitted variants. P-value combining probabilities from de novo and transmitted protein damaging SMAD6 variants was determined by Fisher\u2019s method._\n\nLastly, we compared the frequency of rare (allele frequency <2\u00a0\u00d7 10\u20135 in the ExAC database) damaging (LOF + D-mis) variants in all genes in 172 European probands and 3337 unrelated European controls, who were parents of autism probands sequenced to a similar depth of coverage and analyzed in a similar fashion (see Materials and methods, Supplementary file 1A). European ancestry was determined by principal component analysis of exome sequence data (Figure 3\u2014figure supplement 2). Q-Q plots showed that the observed distribution of Fisher\u2019s exact statistics comparing the frequency of damaging variants in cases and controls closely corresponded to the expected distribution, again with the exception of SMAD6, in which cases showed enrichment of damaging variants (p=6.3 \u00d7 10\u20138) and LOF variants (p=5.7 \u00d7 10\u20136) (Figure 3\u2014figure supplement 3). Significant enrichment was also seen in comparison to European NHLBI and ExAC controls (Figure 3\u2014source data 1). The odds ratios for association of all damaging variants in SMAD6 in cases vs. controls was consistent across control cohorts, ranging from 26.9 to 35.1; the odds ratios for LOFs ranged from 102.6 to infinity (owing to zero LOF\u2019s in autism controls).\n\nAside from SMAD6, no other single gene approached genome-wide significance in these analyses of dominant alleles. Analysis of recessive genotypes, considering alleles with frequency <10\u20133, identified no genes with more than one rare recessive genotype.\n\nCollectively, the significant burden of both de novo and rare transmitted mutations, along with significant association results in case-control analysis provide extremely strong evidence that rare damaging SMAD6 alleles impart large effects on risk of non-syndromic midline craniosynostosis.\n\nSMAD6 mutations were significantly more frequent in kindreds with any metopic craniosynostosis (10 of 78, 12.8%) compared to those with isolated sagittal craniosynostosis (3 of 113, 2.7%; p=8.1 \u00d7 10\u20133 by Fisher\u2019s exact test, odds ratio 5.3). These results suggest that mutations in SMAD6 confer greater risk for metopic suture closure. We found no significant correlation between the type of mutation (LOF vs. D-mis) or location within the gene of SMAD6 mutation and phenotypic class (Table 4).\n\n**Table 4.**\n Distribution of suture involvement in kindreds with and without rare (allele frequency < 2\u00a0\u00d7 10\u22125) de novo and transmitted damaging (LOF + D-mis) variants in SMAD6.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Total # kindreds</th>\n      <th>Total # SMAD6 mutations (%)</th>\n      <th># LOF (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sagittal</td>\n      <td>113</td>\n      <td>3 (2.7)</td>\n      <td>2 (1.8)</td>\n    </tr>\n    <tr>\n      <td>Metopic</td>\n      <td>70</td>\n      <td>7 (10)</td>\n      <td>3 (3.9)</td>\n    </tr>\n    <tr>\n      <td>Sagittal and Metopic</td>\n      <td>8</td>\n      <td>3 (37.5)</td>\n      <td>3 (37.5)</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>191</td>\n      <td>13 (6.8)</td>\n      <td>8 (4.2)</td>\n    </tr>\n  </tbody>\n</table>\n\nInterestingly, transmitted SMAD6 mutations were significantly enriched in kindreds with familial craniosynostosis, accounting for 4 of 17 kindreds with more than one affected subject (p=0.02, Fisher\u2019s exact test; odds ratio 5.6). In these kindreds, all four additional affected subjects carried the SMAD6 mutation found in the proband (Figure 2).\n\nSMAD6 is a member of the inhibitory-SMAD family. Activation of BMP receptors leads to phosphorylation of receptor SMADs, which can complex with SMAD4, translocate to the nucleus and partner with RUNX2 to induce transcription of genes that promote osteoblast differentiation (Javed et al., 2008; Hata et al., 1998) (Figure 4a). This process is inhibited by SMAD6 binding to phosphorylated receptor SMADs, forming an inactive complex. SMAD6 also inhibits BMP signaling by complexing with the ubiquitin ligase SMURF1, which ubiquitylates BMP receptors, receptor SMADs and RUNX2, leading to their proteasomal degradation (Figure 4b) (Murakami et al., 2003). This pathway plays a well-established role in the\u00a0development of the cranial vault and closure of cranial sutures. In mice, constitutive activity of BMPR1A in cranial neural crest results in SMAD-dependent development of metopic craniosynostosis (Komatsu et al., 2013), and genetic deficiency for the SMAD inhibitor SMURF1 causes midline craniosynostosis (Shimazu et al., 2016). Similarly, duplication of RUNX2 causes syndromic metopic craniosynostosis in humans (Mefford et al., 2010). Lastly, SMAD6 knockout mice are born with domed skulls and show anomalous bone deposition in the metopic suture; they also show an augmented and prolonged response to BMP2 stimulation (Estrada et al., 2011; Retting, 2008). These findings are consistent with haploinsufficiency as the mechanism of SMAD6 mutations in craniosynostosis, with loss of the inhibitory effect of SMAD6 promoting increased BMP signaling and premature closure of sutures.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig4-v4.jpg)\n\n**Figure 4.:** (a) BMP ligands activate BMP receptors, leading to phosphorylation of receptor-regulated SMADs (R-SMADs), which complex with SMAD4 and enter the nucleus, cooperating with RUNX2 to induce osteoblast differentiation. SMAD6 inhibits this signal by competing with SMAD4 for binding to R-SMADs, preventing nuclear translocation. (b) SMAD6 also cooperates with SMURF1, an E3 ubiquitin ligase, to induce ubiquitin-mediated proteasomal degradation of R-SMADs, BMP receptor complexes, and RUNX2.\n\nWe explored our kindreds for other mutations in this signaling pathway. Interestingly, we identified one de novo D-mis mutation in SMURF1 in a proband with sporadic metopic craniosynostosis (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig5-v4.jpg)\n\n**Figure 5.:** (a) Sanger sequence electropherogram of a PCR product amplified from the genomic DNA of a proband with metopic craniosynostosis, confirming a de novo R468W mutation in SMURF1, a SMAD6 binding partner. (b) Patient photographs of the proband, who presented with trigonocephaly and mild orbital abnormalities. 3D CT reconstruction demonstrates metopic craniosynostosis, trigonocephaly, and a patent sagittal suture.\n\n### Incomplete penetrance of SMAD6 mutations explained by a common variant near BMP2\n\nWithin the 13 kindreds harboring rare damaging SMAD6 variants, all 17 affected subjects had the SMAD6 mutation found in the proband (Figure 2). Nonetheless, SMAD6 mutations showed striking incomplete penetrance. In particular, zero of 10 parental SMAD6 mutation carriers had a diagnosis of, or showed evidence of craniosynostosis. Examination of Illumina read counts and Sanger sequence traces provided no suggestion that the mutations were mosaic in unaffected parents (mean/median of 52.9%/52.4% variant reads in transmitting parents, respectively; range 37.3% to 71.4%). There was no significant effect of gender on penetrance. From the data in these kindreds, the penetrance of SMAD6 mutations is estimated at 24% following exclusion of probands, who were ascertained for the presence of disease (57% if probands are included). The striking absence of craniosynostosis among transmitting parents suggests the possibility of purifying selection, with subjects having craniosynostosis less likely to have offspring.\n\nWe considered whether inheritance at other genetic loci might account for the striking incomplete penetrance of SMAD6 mutations in these kindreds. A previous GWAS of non-syndromic sagittal craniosynostosis implicated common variants ~345 kb downstream of the closest gene, BMP2 (encoding bone morphogenetic protein 2), with unusually large effect size (e.g., rs1884302, with risk allele frequency of 0.34 and odds ratio of 4.6). BMP2 is a ligand for BMP receptors upstream of SMAD signaling (Salazar et al., 2016) and is an inducer of osteogenesis. We posited that risk alleles at this locus might increase the penetrance of SMAD6 mutations by increasing BMP2 levels and further increasing SMAD signaling. Genotypes for rs1884302 are shown in Figure 2 and provide strong evidence of epistatic interaction between SMAD6 and BMP2 alleles. Fourteen individuals had both a SMAD6 mutation and the rs1884302 risk allele; 100% of these had craniosynostosis. In contrast, 16 subjects had a SMAD6 mutation but no rs1884302 risk allele; only 3 of these individuals (19%) had craniosynostosis. Lastly, 0 of 18 members of these kindreds who had only the rs1884302 risk allele had craniosynostosis. The relationship of these two genotypes to craniosynostosis in these kindreds was highly significant (p=1.4\u00a0\u00d7 10\u201310 by the Freeman-Halton extension of Fisher\u2019s exact test; Table 5).\n\n**Table 5.**\n Risk of craniosynostosis in SMAD6 mutation carriers in the presence or absence of a BMP2 risk allele.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>SMAD6/BMP2 Genotypes</th>\n      <th>Craniosynostosis (+)</th>\n      <th>Craniosynostosis (\u2212)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SMAD6 (+) / BMP2 risk allele (+)</td>\n      <td>14</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>SMAD6 (+) / BMP2 risk allele (\u2212)</td>\n      <td>3</td>\n      <td>13</td>\n    </tr>\n    <tr>\n      <td>SMAD6 (\u2212) / BMP2 risk allele (+)</td>\n      <td>0</td>\n      <td>18</td>\n    </tr>\n  </tbody>\n</table>\n\n_All members of kindreds found to have a mutation in SMAD6 were included. SMAD6(+) indicates the presence of a heterozygous LOF or D-mis allele. The reported BMP2 risk allele is \u2018C\u2019 at risk locus rs1884302, found within a gene desert ~345kb downstream of BMP2. p=1.4 \u00d7 10\u221210 by the Freeman-Halton extension of Fisher\u2019s exact test. Odds ratio in favor of disease was incalculable due to the absence of craniosynostosis in SMAD6 (\u2212) individuals in these kindreds._\n\nConfining analysis just to subjects with SMAD6 mutation, there was dramatically increased occurrence of craniosynostosis among those with the rs1884302 risk allele compared to those without (p=4.8 \u00d7 10\u20136 by Fisher\u2019s exact test). The presence of the rs1884302 risk allele increased the risk of craniosynostosis >5-fold with a very high odds ratio that includes infinity owing to 100% penetrance among those with risk genotypes at both loci. This two locus contribution is further supported by significant transmission disequilibrium, with rs1884302 risk alleles transmitted from heterozygous parents to affected offspring in 11 of 13 transmissions (p=0.013 by Chi-square, Supplementary file 1B). In sum, inheritance at rs1884302 explains nearly all of the variation in phenotype among subjects with SMAD6 mutations and demonstrates two locus transmission of craniosynostosis.\n\nIn contrast, common variants at the BBS9 locus that also showed strong association with midline craniosynostosis in case-control analysis (OR > 4) (Justice et al., 2012) showed no significant interaction with SMAD6 (TDT p=0.89; Supplementary file 1B), demonstrating specificity of the observed interaction of rare variants in SMAD6 and a common variant near BMP2.\n\nLastly, we compared the joint segregation of rare damaging SMAD6 and common BMP2 risk alleles to the segregation of craniosynostosis in a parametric two locus linkage model in these kindreds (see Materials and methods, Supplementary file 1C). The results provided extremely strong evidence supporting linkage under a two locus model, with a maximum lod score of 7.37 (odds ratio 2.3 \u00d7 107:1 in favor of linkage compared to the null hypothesis; family-specific lod scores are shown in Supplementary file 1D). The maximum likelihood model specified 100% penetrance of craniosynostosis when risk alleles at both loci are present, 9% penetrance when only a damaging SMAD6 allele is present, 0.08% or 0.32% penetrance when only one or two BMP2 risk alleles are present, and a 0.02% phenocopy rate, with zero recombination between trait and both marker loci. This two locus model was 1410 \u2013 fold more likely than than the best single locus model, in which damaging SMAD6 variants had penetrance of 20%. These results provide extremely strong statistical support for the two locus model by linkage and extends the genetic evidence beyond simple association to linkage within pedigrees, which is not susceptible to potential confounders such as population stratification, and is insensitive to misspecification of allele frequency.\n\n### Mutations in MAP kinase regulators\n\nPrevious research has implicated increased activity of the MAP kinase/ERK pathway in craniosynostosis (Twigg et al., 2013; Shukla et al., 2007). We identified one de novo LOF in both SPRY1 and SPRY4, developmental regulators of the MAP kinase/ERK pathway; these variants comprised two of only 11 de novo LOFs other than those in SMAD6. The SPRY4 mutation (p.E160*) arose de novo in a proband with sagittal craniosynostosis and no family history (Figure 6a). The SPRY1 mutation (p.Q6fs*8) was de novo in a woman with mild cranial dysmorphism who did not undergo surgery, and was transmitted to both of her children, who both had sagittal craniosynostosis (Figure 6b). The probability of observing two or more de novo LOF mutations in any of the 4 Sprouty genes by chance in this cohort surpassed genome-wide significance (p=7.1 \u00d7 10\u20137, Table 2). Consistent with a role for SPRY1 haploinsufficiency, a de novo microdeletion that included SPRY1 has previously been reported in a child with sagittal craniosynostosis (Fern\u00e1ndez-Ja\u00e9n et al., 2014). Moreover, in mice with TWIST1 haploinsufficiency, a model of syndromic craniosynostosis, overexpression of SPRY1 prevents suture fusion (Connerney et al., 2008). Lastly, protein altering de novo mutations were also identified in other regulators and mediators of MAP kinase signaling, including RASAL2, DUSP5, MAP3K8, KSR2, RPS6KA4, and RGS3. 5 of 6 occurred in probands with sagittal craniosynostosis (Table 1\u2014source data 1). Determining the significance of these findings will require further study.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20125/elife-20125-fig6-v4.jpg)\n\n**Figure 6.:** (a) Pedigree and Sanger sequencing traces for kindred SAG150, demonstrating a de novo nonsense mutation in SPRY4 (p.E160*) in the proband. (b) Pedigree and Sanger sequencing traces in a kindred with a de novo SPRY1 frameshift mutation (p.Q6fs*8) that was transmitted to two affected offspring.\n\n## Discussion\n\nThese findings implicate a two locus model of inheritance in non-syndromic midline craniosynostosis via epistatic interactions of rare heterozygous SMAD6 mutations and common risk alleles near BMP2. There is extremely strong evidence implicating each locus independently, along with highly significant evidence from both analysis of association and linkage that the risk of craniosynostosis is markedly increased in individuals carrying risk alleles at both loci compared to those with only a single risk allele at either locus. Rare damaging variants in SMAD6 alone impart very large effects on disease risk with low penetrance, with inheritance at BMP2 explaining nearly all of the variation in occurrence of craniosynostosis seen among SMAD6 mutation carriers. The results support a threshold effect model, with quantitative increases in SMAD signaling resulting from reduced inhibition of SMAD signaling by SMAD6, owing to haploinsufficiency (strongly supported by a plethora of LOF variants distributed across SMAD6), along with a putative increase in SMAD signaling owing to increased BMP2 expression via the risk SNP rs1884302 leading to accelerated closure of midline sutures. Consistent with this model, as articulated previously, substantial prior evidence in mouse and human has implicated BMP signaling via SMADs in closure of the midline sutures, and SMAD6 in inhibiting this pathway. Moreover, consistent with the common variant near BMP2 modifying BMP2 expression, duplication of a nearby limb-specific enhancer increased BMP2 expression, leading to a Mendelian limb defect (Dathe et al., 2009). While the genetic data provide unequivocal support for the role of these two loci in midline craniosynostosis, and for haploinsufficiency as the mechanism of SMAD6 contribution, further studies will be necessary to delineate the precise mechanism by which the risk genotypes cause disease.\n\nSMAD6 mutations with and without BMP2 risk alleles account for ~7% of probands in this cohort of non-syndromic midline craniosynostosis. This frequency is much greater than any other genotype causing syndromic midline craniosynostosis (e.g., TGFBR1/2, SKI, RUNX2), which are sufficiently rare that their prevalence has not been well-established. Moreover, because non-syndromic sagittal and metopic craniosynostosis comprise half of all craniosynostoses (Slater et al., 2008; Greenwood et al., 2014), SMAD6/BMP2 genotypes are inferred to account for ~3.5% of all craniosynostosis, and are likely rivaled in frequency only by mutations in FGFR2 as the most frequent cause of all craniosynostoses (Twigg and Wilkie, 2015).\n\nThese findings will be of immediate utility in clinical diagnosis and genetic counseling. The combination of a rare damaging SMAD6 mutation plus a common BMP2 risk allele conferred 100% risk of craniosynostosis in our cohort, while those with a SMAD6 mutation but no BMP2 risk allele were at markedly lower risk. Interestingly, these SMAD6 mutation-only cases thus far have all had isolated metopic craniosynostosis (Figure 2). Rare damaging SMAD6 mutations were found in nearly 25% of kindreds with recurrent midline craniosynostosis, and 37.5% of patients with combined sagittal and metopic craniosynostosis in our cohort. The precision of penetrance estimates and prevalence in specific disease subsets will improve with larger sample sizes.\n\nGiven the suggestion of a threshold for phenotypic effect, we also considered whether there might be additional SMAD6 alleles that impart phenotypic effect that have a\u00a0higher frequency than the 2 \u00d7 10\u20135 threshold that we used. We found only one additional SMAD6 damaging allele among parents in our cohort with allele frequency <0.001. Interestingly, this allele, p.E287K, (ExAC frequency 3.3 \u00d7 10\u20135) was transmitted to a proband with sagittal and metopic craniosynostosis along with two doses of the BMP2 risk allele, each inherited from a heterozygous parent.\n\nConsidering neurodevelopmental outcomes, 11 of 15 subjects with rare damaging SMAD6 variants who are more than one year of age (and hence can have neurodevelopmental evaluation) had some form of developmental delay (Supplementary file 1E). While early surgical intervention provides the best neurological outcomes (Patel et al., 2014), more than a third of patients with non-syndromic midline craniosynostosis have subtle learning disability (Magge et al., 2002; Shipster et al., 2003; Sidoti et al., 1996). BMP signaling plays an essential role in vertebrate brain development (Bier and De Robertis, 2015), raising the possibility that aberrant BMP signaling could contribute to neurodevelopmental outcome independent of its effect on craniosynostosis. The only other clinical finding observed in more than one subject with SMAD6 mutation was a\u00a0congenital inguinal hernia in 3 patients (16.7%; Supplementary file 1E).\n\nWhile SMAD6 was the only single gene showing genome-wide significant burden of de novo mutation, de novo protein-altering mutations are estimated to contribute to ~15% of cases. This estimated fraction is similar to estimates for autism and congenital heart disease, other diseases in which large-scale studies have shown a role for de novo mutations (Homsy et al., 2015; Iossifov et al., 2014; Sanders et al., 2012; Zaidi et al., 2013; De Rubeis et al., 2014). Also like autism and congenital heart disease, few individual genes were implicated after sequencing modest numbers of trios, implying that de novo mutation in a large number of genes are likely to contribute to sagittal and metopic craniosynostosis. This observation strongly supports sequencing substantially larger numbers of non-syndromic patients, an approach that has proved highly productive for discovery of genes and pathways underlying autism and CHD.\n\nLastly, these results provide a clear example of the epistatic (non-additive) interaction of very rare mutations at one locus with a common variant at a second, unlinked locus. This observation adds to the small number of two locus phenotypes that have been defined with robust genetic data (Lupski, 2012), and suggest that other common variants, particularly those with relatively large effect, may combine with rare alleles at one or more loci to produce genotypes with high penetrance that together may account for a substantial fraction of disease risk.\n\n## Materials and methods\n\n### Subjects and samples\n\nParticipants were ascertained from either the Yale Pediatric Craniofacial Clinic or by responding to an invitation posted on the Cranio Kids- Craniosynostosis Support and Craniosynostosis-Positional Plagiocephaly Support Facebook pages. All participants or their parents provided written informed consent to participate in a study of the\u00a0genetic causes of craniosynostosis in their family. Inclusion criteria included a\u00a0diagnosis of sagittal and/or metopic craniosynostosis in the absence of known syndromic forms of disease by a craniofacial plastic surgeon or pediatric neurosurgeon. All probands had undergone reconstructive surgery. Participating family members provided buccal swab samples (Isohelix SK-2S buccal swabs), craniofacial phenotype data, medical records, operative reports, and imaging studies. Written consent was obtained for publication of patient photographs. The study protocol was approved by the Yale Human Investigation Committee Institutional Review Board (IRB).\n\nControl cohorts comprised 3337 previously studied healthy European parents of probands with autism, Europeans found in the NHLBI Exome Sequencing Project database (NHLBI), and Non-Finnish Europeans found in the Exome Aggregation Consortium v0.3 database (ExAC).\n\n### Exome sequencing, risk allele genotyping, and analysis\n\nDNA was prepared from buccal swab samples according to the manufacturer\u2019s protocol. Exome sequencing was performed by exon capture using the Roche MedExome or Roche V2 capture reagent followed by 74 base paired-end sequencing on the Illumina HiSeq 2000 instrument as previously described (Zaidi et al., 2013). Samples were barcoded then captured and sequenced in multiplex. Quality metrics are shown in Supplementary file 1A.\n\nSequence reads were aligned to the GRCh37/hg19 human reference genome using BWA-Mem. Local realignment and quality score recalibration were performed using the GATK pipeline, after which variants were called using the Genome Analysis Toolkit Haplotype Caller. A Bayesian algorithm, TrioDeNovo, was used to call de novo mutations (Wei et al., 2015). VQSR \"PASS\" variants with ExAC allele frequency \u22640.001 sequenced to a depth of 8 or greater in the proband and 12 or greater in each parent with Phred-scaled genotype likelihood scores >30 and de novo quality scores (log10(Bayes factor)) >6 were considered. Independent aligned reads at variant positions were visualized in silico to remove false calls (Figure 2\u2014figure supplement 1). For de novo calls passing visual inspection, variants receiving the highest de novo genotype quality score (100) were deemed valid. Forty of these de novo mutations were selected at random for validation by bidirectional Sanger sequencing of the proband and both parents; 100% of these tests confirmed de novo mutation in the proband. The observed number of de novo variants identified per trio closely matched the expected Poisson distribution (Supplementary file 1F). All de novo variants named in the main text were confirmed by Sanger sequencing. Transmitted variants were similarly aligned and called as per above. All de novo and transmitted variants were annotated using ANNOVAR (Wang et al., 2010). Allele frequencies of identified variants were taken from the ExAC database. The impact of nonsynonymous variants was predicted using the MetaSVM rank score, with scores greater than 0.83357 serving as a threshold for predicting that the mutation was deleterious (MetaSVM 'D', D-mis) (Dong et al., 2015). For case control burden analysis of all protein coding genes, all GATK VQSR 'PASS' variants were considered.\n\nIn assessing the association of known risk alleles near BMP2 and within BBS9 with craniosynostosis in SMAD6 mutation carriers, genotypes for rs1884302 and rs10262453 were determined by direct Sanger sequencing.\n\nAll mutations reported in SMAD6, SMURF1, SPRY1, and SPRY4 were confirmed by direct bidirectional Sanger sequencing of the products of PCR amplification of segments containing putative mutations (Figure 2\u2014figure supplement 2, Figure 5, Figure 6). PCR primers are listed in Figure 2\u2014source data 2. Sanger sequencing electropherograms were manually inspected using Geneious after alignment to the reference genome sequence in GRCh37/hg19.\n\n### Burden of de novo mutations\n\nThe observed distribution of mutation type was compared to pre-computed expected values across the exome using Poisson statistics as described (Ware et al., 2015; Homsy et al., 2015). Pre-calculated gene-specific mutation probabilities were used to determine the probability of the observed number and type of de novo mutations in SMAD6 occurring by chance using denovolyzeR (Ware et al., 2015; Samocha et al., 2014).\u00a0To assess the probability of observing 3 protein damaging mutations, P values for observing 2 de novo LOF\u2019s and one de novo missense mutation were combined using the\u00a0Fisher\u2019s combined probability test. To assess the burden of de novo mutation in Sprouty genes, a gene set was curated in denovolyzeR including: SPRY1, SPRY2, SPRY3, SPRY4. The probability of observing 2 de novo LOF mutations in this gene set was calculated by comparing this number to expectation in denovolyzeR. The probability of observing more than one de novo LOF mutation in any gene in our cohort was determined using a permutation function- denovolyzeMultiHits() (Ware et al., 2015). In total, 13 de novo LOF variants were observed in our cohort. The probability of observing >1 de novo LOF in any gene by chance with a set of 13 mutations was determined by 1 million iterations in which these 13 \u2018hits\u2019 were sampled from all genes given the probability of de novo mutation in each (Homsy et al., 2015). The number of times any gene had more than one hit in an iteration was counted, and that number divided by 1 million represented the probability of observing more than one de novo LOF mutation in our cohort.\n\n### Contribution of de novo mutation to craniosynostosis\n\nWe infer that the number of probands with protein altering de novo mutations (n\u00a0=\u00a0123) in excess of expectation by chance (n\u00a0=\u00a0102.4) represents the number of subjects in whom these mutations confer craniosynostosis risk (n\u00a0=\u00a020.6). Comparing this fraction to the total number of trios (20.6/132) yields the fraction of patients in our cohort in whom we expect these mutations contribute to disease: ~15.6%.\n\n### Binomial test\n\nThe observed distribution of rare (ExAC frequency <2 \u00d7 10\u20135) LOF and D-mis alleles was compared to the expected distribution using the binomial test. The total number of LOF and D-mis alleles in 191 probands was tabulated, totaling 1135 LOF alleles and 2021 D-mis alleles (3156 total damaging alleles). The expected number of variants in each gene was calculated from the proportion of the exome comprising the coding region of each gene multiplied by the total number of alleles identified in cases. Enrichment was calculated as the number of observed mutations divided by the expected number.\n\n### Transmission disequilibrium test\n\nWe used a transmission disequilibrium test to compare the transmission (M1) and non-transmission (M2) of BMP2 and BBS9 risk alleles (rs1884302 and rs10262453 respectively) to affected offspring in kindreds with SMAD6 mutations. We tested for deviation from the expected transmission value of 50% by the binomial Chi-square test with 1 Df.\n\n### Case vs. control comparison\n\nA fisher exact test was used to compare the prevalence of LOF or LOF+D-mis variants in 172 craniosynostosis probands and 3337 controls, the latter comprising the unaffected parents of offspring with autism. Controls were exome sequenced on the Roche V2 capture reagent followed by sequencing on the Illumina platform (Sanders et al., 2012; Krumm et al., 2015; Iossifov et al., 2012). All control BAM files were processed with sequences aligned and variants called in parallel to aforementioned cases. Cases and controls, on average, both had ~94\u201395% of targeted bases read 8 or more times (Supplementary file 1A). We restricted cases and controls to European (CEU) ancestry using the EIGENSTRAT program, which compared single nucleotide polymorphism (SNP) genotypes from case and control subjects with individuals of known ancestry in HapMap3 (Frazer et al., 2007) (Figure 3\u2014figure supplement 2). To avoid bias, exons analyzed were restricted to those that intersected between the Roche V2 and MedExome capture reagents. For genes with more than 1 LOF or D-mis variant in cases, aligned reads were visualized in silico at all variant positions in both cases and controls. For genes displaying p<0.005, we compared the burden of mutated alleles in cases to European subjects in the NHLBI ESP and ExAC databases. The total number of alleles evaluated per gene was taken as the median of the allele numbers reported for all positions across a gene in NHLBI and ExAC respectively (Figure 3\u2014source data 1).\n\n### Two locus linkage analysis\n\nParametric two locus linkage analysis was performed comparing the segregation of rare damaging SMAD6 alleles and common BMP2 risk alleles at rs1884302 to the segregation of craniosynostosis in kindreds harboring rare damaging SMAD6 variants. Risk alleles at both loci were specified as showing zero recombination with underlying trait loci; risk/penetrance of each two locus genotype was estimated from their values at the maximum likelihood (Supplementary file 1C). A phenocopy rate of\u00a00.02% was specified from estimates of disease prevalence and the fraction of disease attributable to risk genotypes. Likelihood ratios of the observed results occurring under the specified model vs. the alternative of chance were calculated for each kindred, converted to lod scores (Supplementary file 1D) and the sum of lod scores across all kindreds was calculated. For kindreds (n = 2) with missing parental genotypes, the likelihood ratio of observed genotypes in offspring occurring under the parametric model compared to chance was estimated from ethnic-specific BMP2 genotype frequencies and frequencies of rare damaging SMAD6 alleles in missing parental genotypes. The likelihood ratio of the best two locus model was compared to that of the best single locus model considering only the segregation of rare damaging SMAD6 variants.\n\n### Kinship analysis\n\nKinship analysis was performed for all probands and controls using Plink. All trio structures were confirmed with parent-offspring pairs having PiHat values of 0.45\u20130.55.\n\n### URLs\n\nGATK: (https://www.broadinstitute.org/gatk); TrioDeNovo: (http://genome.sph.umich.edu/wiki/Triodenovo); DenovolyzeR: (http://denovolyzer.org); Plink: (http://pngu.mgh.harvard.edu/~purcell/plink); MetaSVM/ANNOVAR: (http://annovar.openbioinformatics.org); NHLBI ESP: (http://evs.gs.washington.edu/EVS); ExAC03: (http://exac.broadinstitute.org); Geneious: (www.geneious.com). Isohelix Buccal Swab DNA isolation: (http://www.isohelix.com/wp-content/uploads/2015/09/BuccalFixIsoKit.pdf).\n\n### Accession codes\n\nWhole-exome sequencing data have been deposited in the database of Genotypes and Phenotypes (dbGaP) under accession phs000744. NCBI RefSeq accessions for all named genes are listed in Table 1\u2014source data 1.\n",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "5ba885d8-0a1c-48c4-bfa9-91e64b6fbb70",
+      "submission_id": "46d32275-c84a-4820-b59b-e0df5175311b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Ginsburg, Howard Hughes Medical Institute, University of Michigan , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20125.028](https://doi.org/10.7554/eLife.20125.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nCongratulations: we are very pleased to inform you that your article, \"Two locus inheritance of non-syndromic midline craniosynostosis via rare SMAD6 and common BMP2 alleles\", has been accepted for publication in eLife. The Reviewing Editor for your submission was David Ginsburg. The additional reviewers, who have also agreed to reveal their identities were: Yuji Mishina and James Lupski.\n\nIf you have selected our \"Publish on Acceptance\" option, your PDF will be published within a few days; if you have opted out of the \"Publish on Acceptance\" option, your work will be published in about four weeks' time.\n\nThe reviewers concluded that: this manuscript reports very convincing data demonstrating epistatic interaction between rare loss of function mutations in SMAD6 and a common variant near the BMP2 locus as the genetic etiology of craniosynostosis in a subset of nonsyndromic patients. The data are of very high quality, the manuscript clearly written, and the conclusions convincingly supported by the data. The investigators performed whole exome sequencing (WES) of 132 parent-offspring trios and 59 additional probands. Seven percent of probands had damaging de novo or rare transmitted mutations in SMAD6; an inhibitor of BMP \u2013 induced osteoblast differentiation (P <10-20). Interestingly, SMAD6 mutations showed striking incomplete penetrance for the craniosynostosis trait (<60%). Genotypes of a common variant near BMP2, previously shown to be strongly associated with midline craniosynostosis, explained nearly all of the phenotypic variance in these kindred. Thus, these findings clearly documented digenic inheritance via epistatic interactions of rare and common variants as a defining feature of the most frequent cause of midline craniosynostosis. This work has very important implications for the genetic basis of other disease traits and reveals a potential mechanism for common variant genetic effects to markedly influence the manifestation of disease.\n\nNone of the reviewers had any major suggestions for required revision/correction. However, a few minor points/questions were raised, as listed below, which the reviewers all agreed could be addressed by minor changes to the text (or none), as the authors see fit.\n\nMinor points:\n\n1) Subsection \"Exome sequencing of non-syndromic midline craniosynostosis\": the authors \"infer that these de novo mutations contribute to ~15% of non-syndromic midline craniosynostosis\". How was this figure calculated?\n\n2) The authors note that SMAD6 knockout mice exhibit skull abnormalities reminiscent of craniosynostosis (Estrada et al., 2011 and Retting, 2008). Is there a heterozygous phenotype in the mice? Though clearly beyond the scope of the current manuscript, it will be interesting to see whether genetic interaction between BMP2 gain-of-function and SMAD6 haploinsufficiency can be demonstrated in the mouse.\n\n3) Though 2 previously identified GWAS hits for nonsyndromic craniosynostosis, one (BMP2) modifies SMAD6 haploinsufficiency, whereas the other (BBS9) does not, despite similar large effect sizes for both variants. Could the authors speculate about a potential similar epistatic interaction of BBS9 with rare variant in another gene(s) in a different subset of craniosynostosis patients?\n\n4) Though most of the identified SMAD6 mutations would generate clear loss-of-function, two of them are located near the C-terminus (i.e. R465C and I490T). Have any specific functions been ascribed to this region of the molecule?\n\n5) SMAD7 is another inhibitory Smad that affects both BMP and TGF-\u03b2 pathways. Although a craniofacial phenotype is not appreciated in Smad7 mutant mice, they show similar skeletal phenotypes to Smad6 knockouts. One would think mutations in SMAD7 might also interact with the BMP2 risk allele. Does the lack of SMAD7 mutations in their patient cohort, suggest a particularly unique role for SMAD6 in midline craniosynostosis?\n\n6) Discussion, paragraph 5: \"The only other clinical finding found[\u2026]\" could be reworded as \"finding present\" or \"observed\".\n",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "de7d8197-ea3b-43b7-ade9-7e20c17fd721",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C1",
+      "claim": "Craniosynostosis affects 1 in 2000 newborns.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature fusion of the cranial sutures (craniosynostosis), affecting 1 in 2000 newborns, is treated surgically in infancy to prevent adverse neurologic outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of disease prevalence presented in the abstract without supporting data in the manuscript itself.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "54b425d1-5e4b-4bf6-9d01-669ce5afd12b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C2",
+      "claim": "Craniosynostosis is treated surgically in infancy to prevent adverse neurologic outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature fusion of the cranial sutures (craniosynostosis), affecting 1 in 2000 newborns, is treated surgically in infancy to prevent adverse neurologic outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about clinical practice presented without specific supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ee5e480b-5537-447c-92cc-064e2903c5f4",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C3",
+      "claim": "Exome sequencing was performed on 132 parent-offspring trios and 59 additional probands with non-syndromic midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify mutations contributing to common non-syndromic midline (sagittal and metopic) craniosynostosis, we performed exome sequencing of 132 parent-offspring trios and 59 additional probands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and sample size of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "54e4f982-6244-4ce8-b478-d6f0efd5ad71",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C4",
+      "claim": "Thirteen probands (7%) had damaging de novo or rare transmitted mutations in SMAD6.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen probands (7%) had damaging de novo or rare transmitted mutations in SMAD6, an inhibitor of BMP \u2013 induced osteoblast differentiation (p<10\u221220).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the exome sequencing analysis with statistical support.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "355377b9-928b-41f5-be3f-0ad5cc649e13",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C5",
+      "claim": "SMAD6 is an inhibitor of BMP-induced osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen probands (7%) had damaging de novo or rare transmitted mutations in SMAD6, an inhibitor of BMP \u2013 induced osteoblast differentiation (p<10\u221220).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of SMAD6 based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3512402d-d3a4-4695-8787-47ab1f6889e6",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C6",
+      "claim": "The association between SMAD6 mutations and craniosynostosis is statistically significant with p<10^-20.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirteen probands (7%) had damaging de novo or rare transmitted mutations in SMAD6, an inhibitor of BMP \u2013 induced osteoblast differentiation (p<10\u221220).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the analysis of mutations in the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ef698007-f4bc-423f-b6d2-a5487be60205",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C7",
+      "claim": "SMAD6 mutations showed incomplete penetrance of less than 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD6 mutations nonetheless showed striking incomplete penetrance (<60%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the pedigree analysis of families with SMAD6 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ab653e62-208a-41ec-988f-9ba3b7a18cce",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C8",
+      "claim": "A common variant near BMP2 is strongly associated with midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotypes of a common variant near BMP2 that is strongly associated with midline craniosynostosis explained nearly all the phenotypic variation in these kindreds, with highly significant evidence of genetic interaction between these loci via both association and analysis of linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior GWAS findings and the current study's analysis of this variant in SMAD6 mutation carriers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3b10fd39-8ecb-4615-b97b-11bf139451d5",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C9",
+      "claim": "Genotypes of a common variant near BMP2 explained nearly all the phenotypic variation in kindreds with SMAD6 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotypes of a common variant near BMP2 that is strongly associated with midline craniosynostosis explained nearly all the phenotypic variation in these kindreds, with highly significant evidence of genetic interaction between these loci via both association and analysis of linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of BMP2 genotypes in families with SMAD6 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "b3237d31-6dd9-4e02-b12b-2e092bbea12a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C10",
+      "claim": "There is highly significant evidence of genetic interaction between SMAD6 and BMP2 loci via both association and linkage analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotypes of a common variant near BMP2 that is strongly associated with midline craniosynostosis explained nearly all the phenotypic variation in these kindreds, with highly significant evidence of genetic interaction between these loci via both association and analysis of linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from statistical analyses of genetic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c4b18fa1-14aa-40e2-be99-49dcd3cde338",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C11",
+      "claim": "The epistatic interaction of rare SMAD6 variants and common BMP2 variants defines the most frequent cause of midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This epistatic interaction of rare and common variants defines the most frequent cause of midline craniosynostosis and has implications for the genetic basis of other diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the frequency of these genotypes in the cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "7fc5ea81-ce5e-4a8a-9dfe-ccf42c8e711a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C12",
+      "claim": "Brain volume doubles in the first year of life.",
+      "claim_type": "EXPLICIT",
+      "source": "The cranial sutures are not fused at birth, allowing for doubling of brain volume in the first year of life and continued growth through adolescence (Persing et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about normal development supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "6a24ef13-5e9e-445f-9f2f-5bde8d4d07c1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C13",
+      "claim": "The metopic suture normally closes between 6 and 12 months.",
+      "claim_type": "EXPLICIT",
+      "source": "The metopic suture normally closes between 6 and 12 months, while the sagittal, coronal, and lambdoid sutures typically fuse in adulthood (Persing et al., 1989; Weinzweig et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about normal cranial development supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0a670b89-a35b-4088-b34d-52ca61b857b1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C14",
+      "claim": "The sagittal, coronal, and lambdoid sutures typically fuse in adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "The metopic suture normally closes between 6 and 12 months, while the sagittal, coronal, and lambdoid sutures typically fuse in adulthood (Persing et al., 1989; Weinzweig et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about normal cranial development supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "b4d3a3e3-90cd-41aa-a199-0f4017c151f3",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C15",
+      "claim": "Premature fusion of cranial sutures can result in brain compression and suture-specific craniofacial dysmorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Premature fusion of any of these sutures can result in brain compression and suture-specific craniofacial dysmorphism (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the consequences of craniosynostosis, with reference to Figure 1 showing examples.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "d5c6567c-29e7-42ab-9957-f3594ac17c6f",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C16",
+      "claim": "Syndromic forms of craniosynostosis have prevalence of approximately 1/60,000 to 1/1,000,000 live births.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of syndromic forms of craniosynostosis, each with prevalence of ~1/60,000 to 1/1,000,000 live births and collectively accounting for 15\u201320% of all cases, have implicated mutations in more than 50 genes (Twigg and Wilkie, 2015; Flaherty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about disease prevalence supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "75b57494-0026-4b5d-8336-bfcd483cb442",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C17",
+      "claim": "Syndromic craniosynostosis collectively accounts for 15-20% of all craniosynostosis cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of syndromic forms of craniosynostosis, each with prevalence of ~1/60,000 to 1/1,000,000 live births and collectively accounting for 15\u201320% of all cases, have implicated mutations in more than 50 genes (Twigg and Wilkie, 2015; Flaherty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the proportion of syndromic cases supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ceeee569-db30-49ba-a79b-4350cc72db21",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C18",
+      "claim": "More than 50 genes have been implicated in syndromic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of syndromic forms of craniosynostosis, each with prevalence of ~1/60,000 to 1/1,000,000 live births and collectively accounting for 15\u201320% of all cases, have implicated mutations in more than 50 genes (Twigg and Wilkie, 2015; Flaherty et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of prior research supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "28bfa7fe-a6d9-4b51-90f8-afffcf617c86",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C19",
+      "claim": "Mutations that increase MAPK/ERK signaling cause rare syndromic coronal or multisuture craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations that increase MAPK/ERK signaling (e.g. FGFR1-3 (Twigg and Wilkie, 2015; Flaherty et al., 2016), ERF [Twigg et al., 2013]) cause rare syndromic coronal or multisuture craniosynostosis, while mutations that perturb SMAD signaling (e.g. TGFBR1/2 [Loeys et al., 2005], SKI [Doyle et al., 2012], RUNX2 [Mefford et al., 2010; Javed et al., 2008]) cause rare syndromes involving the midline (sagittal and metopic) sutures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about genetic causes of syndromic craniosynostosis supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "62f3471a-1984-4d66-9f09-52f3d48fd3b9",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C20",
+      "claim": "Mutations in FGFR1-3 and ERF increase MAPK/ERK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations that increase MAPK/ERK signaling (e.g. FGFR1-3 (Twigg and Wilkie, 2015; Flaherty et al., 2016), ERF [Twigg et al., 2013]) cause rare syndromic coronal or multisuture craniosynostosis, while mutations that perturb SMAD signaling (e.g. TGFBR1/2 [Loeys et al., 2005], SKI [Doyle et al., 2012], RUNX2 [Mefford et al., 2010; Javed et al., 2008]) cause rare syndromes involving the midline (sagittal and metopic) sutures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular effects of specific mutations supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3b1bbd4d-dd1e-42b2-84fe-6d9c6fac945d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C21",
+      "claim": "Mutations that perturb SMAD signaling cause rare syndromes involving the midline (sagittal and metopic) sutures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations that increase MAPK/ERK signaling (e.g. FGFR1-3 (Twigg and Wilkie, 2015; Flaherty et al., 2016), ERF [Twigg et al., 2013]) cause rare syndromic coronal or multisuture craniosynostosis, while mutations that perturb SMAD signaling (e.g. TGFBR1/2 [Loeys et al., 2005], SKI [Doyle et al., 2012], RUNX2 [Mefford et al., 2010; Javed et al., 2008]) cause rare syndromes involving the midline (sagittal and metopic) sutures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about genetic causes of midline craniosynostosis supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "9e633b75-65a0-41c4-92a6-bf18fe2b9e88",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C22",
+      "claim": "Mutations in TGFBR1/2, SKI, and RUNX2 perturb SMAD signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, mutations that increase MAPK/ERK signaling (e.g. FGFR1-3 (Twigg and Wilkie, 2015; Flaherty et al., 2016), ERF [Twigg et al., 2013]) cause rare syndromic coronal or multisuture craniosynostosis, while mutations that perturb SMAD signaling (e.g. TGFBR1/2 [Loeys et al., 2005], SKI [Doyle et al., 2012], RUNX2 [Mefford et al., 2010; Javed et al., 2008]) cause rare syndromes involving the midline (sagittal and metopic) sutures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular effects of specific mutations supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0dbaf08d-d46d-4218-9875-87b05daca462",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C23",
+      "claim": "Aberrant signaling in cranial neural crest cells during craniofacial development has been suggested as a common mechanism for premature suture fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed pathophysiology of premature suture fusion has not been elucidated, aberrant signaling in cranial neural crest cells during craniofacial development has been suggested as a common mechanism (Mishina and Snider, 2014; Komatsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a proposed mechanism supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c1b46f9a-c2c0-4b61-8d0c-952f131e28e9",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C24",
+      "claim": "Mutations in genes causing syndromic craniosynostosis are very rarely found in non-syndromic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite success in identifying the genes underlying rare syndromic craniosynostosis, mutations in these genes are very rarely found in their non-syndromic counterparts (Boyadjiev and International Craniosynostosis Consortium, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the genetic differences between syndromic and non-syndromic forms supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3a66250b-0f6e-4375-b639-664600f578c1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C25",
+      "claim": "Non-syndromic craniosynostosis of the midline sutures accounts for 50% of all craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-syndromic craniosynostosis of the midline sutures account for 50% of all craniosynostosis (Slater et al., 2008; Greenwood et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about disease prevalence supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "de50219b-aa26-4b85-9fe9-59c6ca0ef688",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C26",
+      "claim": "A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants in a segment of a gene desert approximately 345 kb downstream of BMP2.",
+      "claim_type": "EXPLICIT",
+      "source": "A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants in a segment of a gene desert ~345 kb downstream of BMP2, and within an intron of BBS9; these risk alleles have unusually large effect (odds ratios > 4 at each locus) (Justice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior GWAS findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2a52dca0-ef47-4fce-8891-ee428ede575a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C27",
+      "claim": "A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants within an intron of BBS9.",
+      "claim_type": "EXPLICIT",
+      "source": "A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants in a segment of a gene desert ~345 kb downstream of BMP2, and within an intron of BBS9; these risk alleles have unusually large effect (odds ratios > 4 at each locus) (Justice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior GWAS findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "75f925c9-cd47-44e6-8af2-1aa3dbff114b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C28",
+      "claim": "Risk alleles near BMP2 and in BBS9 have unusually large effect with odds ratios greater than 4 at each locus.",
+      "claim_type": "EXPLICIT",
+      "source": "A GWAS of non-syndromic sagittal craniosynostosis has implicated common variants in a segment of a gene desert ~345 kb downstream of BMP2, and within an intron of BBS9; these risk alleles have unusually large effect (odds ratios > 4 at each locus) (Justice et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the effect size of genetic variants from prior GWAS supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8cd1d053-d19b-40f8-8a92-6ffeba860126",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C29",
+      "claim": "Rare alleles with large effect have not been identified to date in non-syndromic sagittal or metopic craniosynostosis prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, rare alleles with large effect have not been identified to date in non-syndromic sagittal or metopic craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to the current study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "88be6a1b-a43d-48ff-9020-af7af9bbfb6b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C30",
+      "claim": "The cohort included 191 probands with non-syndromic midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We recruited a cohort of 191 probands with non-syndromic midline craniosynostosis, including 132 parent-offspring trios and 59 probands with one parent, along with selected extended family members (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study cohort composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "e7524d8f-936c-4a38-b9cb-e252db1713ef",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C31",
+      "claim": "The cohort included 113 probands with isolated sagittal craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "All probands had undergone reconstructive surgery for either isolated sagittal (n = 113), metopic (n = 70) or combined sagittal and metopic (n = 8) craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotypic breakdown of the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "17c43085-a9a5-4247-b84c-4d1bc0c554a1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C32",
+      "claim": "The cohort included 70 probands with metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "All probands had undergone reconstructive surgery for either isolated sagittal (n = 113), metopic (n = 70) or combined sagittal and metopic (n = 8) craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotypic breakdown of the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2bb545fe-5d22-4f5b-89d0-8f2212bfe087",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C33",
+      "claim": "The cohort included 8 probands with combined sagittal and metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "All probands had undergone reconstructive surgery for either isolated sagittal (n = 113), metopic (n = 70) or combined sagittal and metopic (n = 8) craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the phenotypic breakdown of the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "d68c274e-d050-4dee-bb55-e460ae15c4e7",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C34",
+      "claim": "Seventeen kindreds had 1 to 3 additional affected family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventeen kindreds had 1 to 3 additional affected family members, including 7 parents, 12 siblings, 3 aunts/uncles and 4 more distant relatives of probands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the familial nature of some cases in the cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "48704812-f1a5-4940-a999-bd77bed38cd0",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C35",
+      "claim": "A total of 144 de novo mutations were identified in 132 trios.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 144 de novo mutations, providing a de novo mutation rate of 1.64 \u00d7 10\u20138 per base pair, and 1.09 de novo mutations in the coding region per offspring, consistent with prior experimental results and expectation (Ware et al., 2015; Homsy et al., 2015) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the exome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "838056da-8d07-457e-8f0d-8f043b9f9d10",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C36",
+      "claim": "The de novo mutation rate was 1.64 \u00d7 10^-8 per base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 144 de novo mutations, providing a de novo mutation rate of 1.64 \u00d7 10\u20138 per base pair, and 1.09 de novo mutations in the coding region per offspring, consistent with prior experimental results and expectation (Ware et al., 2015; Homsy et al., 2015) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated rate from the sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "dd189cbb-e055-4815-888b-e6c6f0da5707",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C37",
+      "claim": "There were 1.09 de novo mutations in the coding region per offspring.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 144 de novo mutations, providing a de novo mutation rate of 1.64 \u00d7 10\u20138 per base pair, and 1.09 de novo mutations in the coding region per offspring, consistent with prior experimental results and expectation (Ware et al., 2015; Homsy et al., 2015) (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated rate from the sequencing data that matches prior expectations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ec39c302-5b56-4889-b0b5-dbd8f64e73b7",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C38",
+      "claim": "There was significant enrichment of protein-altering mutations compared to expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the observed distribution of mutation types to the expected from the Poisson distribution demonstrated significant enrichment of protein-altering mutations, predominantly accounted for by an excess of damaging missense mutations (MetaSVM D-mis; 28 observed D-mis compared to 14.5 expected, p=1.0 \u00d7 10\u20133, 1.93-fold enrichment), with a corresponding paucity of silent mutations (21 compared to 40.4 expected, p=3.0 \u00d7 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from comparing observed to expected mutation distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ca4aeae1-267a-4e0f-9d93-468c5d3352e0",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C39",
+      "claim": "There were 28 observed damaging missense mutations compared to 14.5 expected (p=1.0 \u00d7 10^-3, 1.93-fold enrichment).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the observed distribution of mutation types to the expected from the Poisson distribution demonstrated significant enrichment of protein-altering mutations, predominantly accounted for by an excess of damaging missense mutations (MetaSVM D-mis; 28 observed D-mis compared to 14.5 expected, p=1.0 \u00d7 10\u20133, 1.93-fold enrichment), with a corresponding paucity of silent mutations (21 compared to 40.4 expected, p=3.0 \u00d7 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific statistical result from the mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "138304c2-9147-450f-b7b0-0cb60669c0a9",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C40",
+      "claim": "There were 21 silent mutations compared to 40.4 expected (p=3.0 \u00d7 10^-4).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the observed distribution of mutation types to the expected from the Poisson distribution demonstrated significant enrichment of protein-altering mutations, predominantly accounted for by an excess of damaging missense mutations (MetaSVM D-mis; 28 observed D-mis compared to 14.5 expected, p=1.0 \u00d7 10\u20133, 1.93-fold enrichment), with a corresponding paucity of silent mutations (21 compared to 40.4 expected, p=3.0 \u00d7 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific statistical result showing fewer silent mutations than expected.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "e9185d1f-5b68-4341-b873-ec7d3941e404",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C41",
+      "claim": "De novo mutations contribute to approximately 15% of non-syndromic midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "From the difference in the observed vs. expected number of de novo protein-altering mutations per subject, we infer that these de novo mutations contribute to ~15% of non-syndromic midline craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the excess of protein-altering de novo mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c8b38a07-d143-4ba8-b520-31be1336d89f",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C42",
+      "claim": "SMAD6 harbored three de novo mutations including two inferred loss of function mutations and one damaging missense mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of de novo mutation burden revealed that a single gene, SMAD6, harbored three de novo mutations, including two inferred loss of function (LOF) mutations (p.Q78fs*41 and p.E374*) and one D-mis mutation (p.G390C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the de novo mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0e0f4701-cbdf-4421-a6b5-e3ec88399fad",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C43",
+      "claim": "All three SMAD6 de novo mutations were heterozygous.",
+      "claim_type": "EXPLICIT",
+      "source": "All three were heterozygous and occurred in families in which the proband was the sole affected member.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the zygosity of the identified mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "91757e3d-f431-4a42-9d78-6cceeb8331d4",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C44",
+      "claim": "The three SMAD6 de novo mutations occurred in families in which the proband was the sole affected member.",
+      "claim_type": "EXPLICIT",
+      "source": "All three were heterozygous and occurred in families in which the proband was the sole affected member.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the family history of cases with de novo SMAD6 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0a1c0a5a-1b83-4d34-b2bf-251f573566f7",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C45",
+      "claim": "Two de novo SMAD6 mutations occurred in probands and one occurred in an unaffected mother of a proband.",
+      "claim_type": "EXPLICIT",
+      "source": "Two de novo mutations occurred in probands and one occurred in an unaffected mother of a proband (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes where the de novo mutations arose, with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c9cc3961-87d5-4dfa-9b07-5af1755f7ef1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C46",
+      "claim": "TTN was the only other gene with more than one protein altering de novo mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "TTN, which encodes the largest human protein, was the only other gene with more than one protein altering de novo mutation, and both of these were predicted by MetaSVM to encode tolerated variants (p.I3580M, p.T19373S).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the de novo mutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "32fdd357-8d49-4c46-901f-771233fdfdbd",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C47",
+      "claim": "Both TTN de novo mutations were predicted by MetaSVM to encode tolerated variants.",
+      "claim_type": "EXPLICIT",
+      "source": "TTN, which encodes the largest human protein, was the only other gene with more than one protein altering de novo mutation, and both of these were predicted by MetaSVM to encode tolerated variants (p.I3580M, p.T19373S).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from computational prediction of variant effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "654a3c4a-7df5-46f2-ac47-d987d0887348",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C48",
+      "claim": "The probability of seeing at least two de novo LOFs and one missense mutation in SMAD6 by chance was 3.6 \u00d7 10^-9.",
+      "claim_type": "EXPLICIT",
+      "source": "From the prior probability of de novo mutation of each base in SMAD6 and the impact on the encoded protein (Samocha et al., 2014), the probability of seeing at least two de novo LOFs and one missense mutation by chance in a cohort of this size was 3.6 \u00d7 10\u20139 (Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical calculation based on mutation probabilities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "9104a746-d3aa-43d1-a9cf-46f6d7dbb0c9",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C49",
+      "claim": "Observing two or more de novo LOF mutations in any gene in this cohort was not expected by chance (p=8.4 \u00d7 10^-3).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, observing two or more de novo LOF mutations in any gene in this cohort was not expected by chance (p=8.4 \u00d7 10\u20133, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from permutation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "01a89342-1fa7-44e6-9a14-45fe76ecef8f",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C50",
+      "claim": "SMAD6 is not unusually mutable.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SMAD6 is not unusually mutable, as we found no de novo SMAD6 mutations in 900 control trios comprising healthy siblings of individuals with autism (Iossifov et al., 2014; O'Roak et al., 2011; Sanders et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparison to control cohorts.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "d3585eec-5af8-4057-9f46-6c1a7d6649e0",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C51",
+      "claim": "No de novo SMAD6 mutations were found in 900 control trios comprising healthy siblings of individuals with autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SMAD6 is not unusually mutable, as we found no de novo SMAD6 mutations in 900 control trios comprising healthy siblings of individuals with autism (Iossifov et al., 2014; O'Roak et al., 2011; Sanders et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of control data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1ffcc57e-1651-4513-8ed4-cf54a7002bf5",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C52",
+      "claim": "Among 191 probands, there were 1135 rare LOF and 3156 rare damaging alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 191 probands, we found 1135 rare LOF and 3156 rare damaging (LOF + D-mis) alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the analysis of rare variants in probands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2f67365c-a917-42dd-8835-002b43d89a87",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C53",
+      "claim": "The expected number of rare LOF alleles in SMAD6 in probands was 0.05, and the observed number was 8 (p=1.1 \u00d7 10^-15, 156-fold enrichment).",
+      "claim_type": "EXPLICIT",
+      "source": "The expected number of rare LOF alleles in SMAD6 in probands was 0.05, and the observed number was 8 (p=1.1 \u00d7 10\u201315, 156-fold enrichment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the rare variant burden analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "411e4210-f861-46a7-a2b9-ef0218fc07b8",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C54",
+      "claim": "There were 13 rare damaging variants in SMAD6 compared to 0.14 expected (p=1.3 \u00d7 10^-21, 91.4-fold enrichment).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, there were 13 rare damaging variants in SMAD6 compared to 0.14 expected (p=1.3 \u00d7 10\u201321, 91.4-fold enrichment).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the rare variant burden analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1e786183-ccac-4345-94ce-c938d93fc7c1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C55",
+      "claim": "All SMAD6 variants were heterozygous and different from one another.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these SMAD6 variants were confirmed by direct Sanger sequencing (Figure 2\u2014figure supplement 2). All were heterozygous and different from one another (Figure 2\u2014source data 1); 11 were absent among >105 alleles in the ExAC database, while two were previously seen, each once in ExAC (p.E407* and p.R465C, ExAC allele frequencies 9.0 \u00d7 10\u20136 and 9.4 \u00d7 10\u20136 respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the characteristics of the identified SMAD6 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1c9be5dc-b5a4-464a-8946-1f268a6d09b6",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C56",
+      "claim": "Eleven SMAD6 variants were absent among >10^5 alleles in the ExAC database.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these SMAD6 variants were confirmed by direct Sanger sequencing (Figure 2\u2014figure supplement 2). All were heterozygous and different from one another (Figure 2\u2014source data 1); 11 were absent among >105 alleles in the ExAC database, while two were previously seen, each once in ExAC (p.E407* and p.R465C, ExAC allele frequencies 9.0 \u00d7 10\u20136 and 9.4 \u00d7 10\u20136 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rarity of the identified variants based on population databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "64a3e617-b6f3-471f-875d-38cb231fcfae",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C57",
+      "claim": "Two SMAD6 variants were previously seen once each in ExAC (p.E407* and p.R465C, with allele frequencies 9.0 \u00d7 10^-6 and 9.4 \u00d7 10^-6 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "All of these SMAD6 variants were confirmed by direct Sanger sequencing (Figure 2\u2014figure supplement 2). All were heterozygous and different from one another (Figure 2\u2014source data 1); 11 were absent among >105 alleles in the ExAC database, while two were previously seen, each once in ExAC (p.E407* and p.R465C, ExAC allele frequencies 9.0 \u00d7 10\u20136 and 9.4 \u00d7 10\u20136 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the frequency of two variants in population databases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "34d52b65-4049-4ca4-9751-a14970ab9745",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C58",
+      "claim": "Eight of the 13 rare heterozygous damaging variants in SMAD6 are frameshift or premature termination mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that eight of the 13 rare heterozygous damaging variants in SMAD6 seen in our cohort are frameshift (n = 5) or premature termination (n = 3) mutations, which are distributed throughout the encoded protein (Figure 2a), strongly supports haploinsufficiency as the mechanism of the genetic contribution of SMAD6 to craniosynostosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from characterizing the types of mutations identified.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "61029984-c418-4b77-8f1b-bb66e069070f",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C59",
+      "claim": "The distribution of LOF mutations throughout SMAD6 strongly supports haploinsufficiency as the mechanism of genetic contribution to craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that eight of the 13 rare heterozygous damaging variants in SMAD6 seen in our cohort are frameshift (n = 5) or premature termination (n = 3) mutations, which are distributed throughout the encoded protein (Figure 2a), strongly supports haploinsufficiency as the mechanism of the genetic contribution of SMAD6 to craniosynostosis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the types and distribution of mutations observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "d764eb8f-1b37-486a-a7d8-90180cd90cc2",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C60",
+      "claim": "All 17 affected subjects in kindreds with SMAD6 mutations had the SMAD6 mutation found in the proband.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 13 kindreds harboring rare damaging SMAD6 variants, all 17 affected subjects had the SMAD6 mutation found in the proband (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from segregation analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8e0060bb-a21d-47f9-bc7d-8665705502a3",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C61",
+      "claim": "Zero of 10 parental SMAD6 mutation carriers had a diagnosis of or showed evidence of craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, zero of 10 parental SMAD6 mutation carriers had a diagnosis of, or showed evidence of craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation demonstrating incomplete penetrance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "5703438d-03e0-4833-a942-5fdaa1eb03dc",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C62",
+      "claim": "The penetrance of SMAD6 mutations is estimated at 24% following exclusion of probands.",
+      "claim_type": "EXPLICIT",
+      "source": "From the data in these kindreds, the penetrance of SMAD6 mutations is estimated at 24% following exclusion of probands, who were ascertained for the presence of disease (57% if probands are included).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated estimate from the family data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "9ba66acd-ec73-4713-8693-f4b1647869fd",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C63",
+      "claim": "The penetrance of SMAD6 mutations is 57% if probands are included.",
+      "claim_type": "EXPLICIT",
+      "source": "From the data in these kindreds, the penetrance of SMAD6 mutations is estimated at 24% following exclusion of probands, who were ascertained for the presence of disease (57% if probands are included).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated estimate from the family data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1753c59e-1181-4ab3-b632-cbcb6452f448",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C64",
+      "claim": "There was no significant effect of gender on penetrance of SMAD6 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant effect of gender on penetrance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analysis of penetrance by gender.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "e36cdc20-ffcb-4b94-9134-829e5404ff39",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C65",
+      "claim": "The rs1884302 risk allele frequency is 0.34 with an odds ratio of 4.6 for sagittal craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous GWAS of non-syndromic sagittal craniosynostosis implicated common variants ~345 kb downstream of the closest gene, BMP2 (encoding bone morphogenetic protein 2), with unusually large effect size (e.g., rs1884302, with risk allele frequency of 0.34 and odds ratio of 4.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior GWAS findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "dc385a84-0a69-4ce3-a7fb-3dbc4b37450b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C66",
+      "claim": "BMP2 is a ligand for BMP receptors upstream of SMAD signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP2 is a ligand for BMP receptors upstream of SMAD signaling (Salazar et al., 2016) and is an inducer of osteogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of BMP2 supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "6bd737e3-6bdb-4c3f-9e65-1d361d4577bc",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C67",
+      "claim": "BMP2 is an inducer of osteogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP2 is a ligand for BMP receptors upstream of SMAD signaling (Salazar et al., 2016) and is an inducer of osteogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of BMP2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ce948f1c-d7f3-4f53-a972-be5ee7a8ce8c",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C68",
+      "claim": "Fourteen individuals had both a SMAD6 mutation and the rs1884302 risk allele, and 100% of these had craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourteen individuals had both a SMAD6 mutation and the rs1884302 risk allele; 100% of these had craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genotype-phenotype analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8d7405a1-3034-44fa-baf8-4114afc25420",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C69",
+      "claim": "Sixteen subjects had a SMAD6 mutation but no rs1884302 risk allele, and only 3 of these individuals (19%) had craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 16 subjects had a SMAD6 mutation but no rs1884302 risk allele; only 3 of these individuals (19%) had craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genotype-phenotype analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8cd67d67-1279-43de-9614-4fe76f2e3572",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C70",
+      "claim": "Zero of 18 members of these kindreds who had only the rs1884302 risk allele had craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, 0 of 18 members of these kindreds who had only the rs1884302 risk allele had craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genotype-phenotype analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2f909f3d-d1ff-424e-97d9-562eeec541a1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C71",
+      "claim": "The relationship of SMAD6 and BMP2 genotypes to craniosynostosis in these kindreds was highly significant (p=1.4 \u00d7 10^-10 by the Freeman-Halton extension of Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship of these two genotypes to craniosynostosis in these kindreds was highly significant (p=1.4 \u00d7 10\u201310 by the Freeman-Halton extension of Fisher's exact test; Table 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "385b817d-ce81-40ff-bf38-8fa43c0c437b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C72",
+      "claim": "Among SMAD6 mutation carriers, the presence of the rs1884302 risk allele dramatically increased the occurrence of craniosynostosis (p=4.8 \u00d7 10^-6 by Fisher's exact test).",
+      "claim_type": "EXPLICIT",
+      "source": "Confining analysis just to subjects with SMAD6 mutation, there was dramatically increased occurrence of craniosynostosis among those with the rs1884302 risk allele compared to those without (p=4.8 \u00d7 10\u20136 by Fisher's exact test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from association analysis restricted to SMAD6 mutation carriers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "37c50fdf-c1d8-4636-9681-0a599a563d6e",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C73",
+      "claim": "The presence of the rs1884302 risk allele increased the risk of craniosynostosis more than 5-fold in SMAD6 mutation carriers.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of the rs1884302 risk allele increased the risk of craniosynostosis >5-fold with a very high odds ratio that includes infinity owing to 100% penetrance among those with risk genotypes at both loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from calculating the effect of the BMP2 risk allele in SMAD6 mutation carriers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ee278006-abcb-4051-af36-5231d1f42298",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C74",
+      "claim": "There was significant transmission disequilibrium, with rs1884302 risk alleles transmitted from heterozygous parents to affected offspring in 11 of 13 transmissions (p=0.013 by Chi-square).",
+      "claim_type": "EXPLICIT",
+      "source": "This two locus contribution is further supported by significant transmission disequilibrium, with rs1884302 risk alleles transmitted from heterozygous parents to affected offspring in 11 of 13 transmissions (p=0.013 by Chi-square, Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from transmission disequilibrium test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "f65752e3-9447-43a6-aeaf-d8fce968257e",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C75",
+      "claim": "Common variants at the BBS9 locus showed no significant interaction with SMAD6 (TDT p=0.89).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, common variants at the BBS9 locus that also showed strong association with midline craniosynostosis in case-control analysis (OR > 4) (Justice et al., 2012) showed no significant interaction with SMAD6 (TDT p=0.89; Supplementary file 1B), demonstrating specificity of the observed interaction of rare variants in SMAD6 and a common variant near BMP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from transmission disequilibrium test showing no interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c5d7ad5b-eafd-4ebc-8dfd-603e73ab272d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C76",
+      "claim": "The two locus linkage model provided extremely strong evidence supporting linkage with a maximum lod score of 7.37.",
+      "claim_type": "EXPLICIT",
+      "source": "The results provided extremely strong evidence supporting linkage under a two locus model, with a maximum lod score of 7.37 (odds ratio 2.3 \u00d7 107:1 in favor of linkage compared to the null hypothesis; family-specific lod scores are shown in Supplementary file 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from parametric linkage analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "174fc198-3800-4a00-8f41-b53bd00ef452",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C77",
+      "claim": "The maximum likelihood model specified 100% penetrance of craniosynostosis when risk alleles at both SMAD6 and BMP2 loci are present.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum likelihood model specified 100% penetrance of craniosynostosis when risk alleles at both loci are present, 9% penetrance when only a damaging SMAD6 allele is present, 0.08% or 0.32% penetrance when only one or two BMP2 risk alleles are present, and a 0.02% phenocopy rate, with zero recombination between trait and both marker loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters of the maximum likelihood linkage model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "dd82331b-1df7-4cff-8f2f-acf631b3c1ce",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C78",
+      "claim": "The two locus model was 1410-fold more likely than the best single locus model.",
+      "claim_type": "EXPLICIT",
+      "source": "This two locus model was 1410 \u2013 fold more likely than than the best single locus model, in which damaging SMAD6 variants had penetrance of 20%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing linkage models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "21c57c9a-2584-4ce2-959c-7cfe5a2610d4",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C79",
+      "claim": "SMAD6 mutations were significantly more frequent in kindreds with any metopic craniosynostosis (10 of 78, 12.8%) compared to those with isolated sagittal craniosynostosis (3 of 113, 2.7%; p=8.1 \u00d7 10^-3 by Fisher's exact test, odds ratio 5.3).",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD6 mutations were significantly more frequent in kindreds with any metopic craniosynostosis (10 of 78, 12.8%) compared to those with isolated sagittal craniosynostosis (3 of 113, 2.7%; p=8.1 \u00d7 10\u20133 by Fisher's exact test, odds ratio 5.3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing mutation frequencies across phenotypic subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "86d1ca96-9180-4058-ba5d-0243898a77ae",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C80",
+      "claim": "SMAD6 mutations confer greater risk for metopic suture closure.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mutations in SMAD6 confer greater risk for metopic suture closure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the differential frequency of SMAD6 mutations in metopic vs. sagittal cases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "fa4bb4bf-35cf-4e34-be2a-2aa28738d4fd",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C81",
+      "claim": "There was no significant correlation between the type of mutation (LOF vs. D-mis) or location within SMAD6 and phenotypic class.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant correlation between the type of mutation (LOF vs. D-mis) or location within the gene of SMAD6 mutation and phenotypic class (Table 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from genotype-phenotype correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "f519b411-56e6-4926-823e-216b974e60ae",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C82",
+      "claim": "Transmitted SMAD6 mutations were significantly enriched in kindreds with familial craniosynostosis, accounting for 4 of 17 kindreds with more than one affected subject (p=0.02, Fisher's exact test; odds ratio 5.6).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, transmitted SMAD6 mutations were significantly enriched in kindreds with familial craniosynostosis, accounting for 4 of 17 kindreds with more than one affected subject (p=0.02, Fisher's exact test; odds ratio 5.6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing mutation frequencies in familial vs. sporadic cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "aceb8569-78a1-47f4-826e-cb990e20fba9",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C83",
+      "claim": "In kindreds with transmitted SMAD6 mutations, all four additional affected subjects carried the SMAD6 mutation found in the proband.",
+      "claim_type": "EXPLICIT",
+      "source": "In these kindreds, all four additional affected subjects carried the SMAD6 mutation found in the proband (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from segregation analysis in familial cases.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "a7a3d438-cbad-4a17-8e16-a2d3aa1deb31",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C84",
+      "claim": "SMAD6 is a member of the inhibitory-SMAD family.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD6 is a member of the inhibitory-SMAD family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the classification of SMAD6.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1c3569a4-4449-4bc4-a1dc-1a8929430d2a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C85",
+      "claim": "Activation of BMP receptors leads to phosphorylation of receptor SMADs, which can complex with SMAD4, translocate to the nucleus and partner with RUNX2 to induce transcription of genes that promote osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of BMP receptors leads to phosphorylation of receptor SMADs, which can complex with SMAD4, translocate to the nucleus and partner with RUNX2 to induce transcription of genes that promote osteoblast differentiation (Javed et al., 2008; Hata et al., 1998) (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the BMP signaling pathway supported by citations and illustrated in Figure 4a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2b078f3a-12b1-42d8-94ae-911e9e7fa2bb",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C86",
+      "claim": "SMAD6 inhibits BMP signaling by binding to phosphorylated receptor SMADs, forming an inactive complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is inhibited by SMAD6 binding to phosphorylated receptor SMADs, forming an inactive complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of SMAD6's inhibitory mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "8c5872be-e495-4a56-94b5-483fb897fdc1",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C87",
+      "claim": "SMAD6 also inhibits BMP signaling by complexing with the ubiquitin ligase SMURF1, which ubiquitylates BMP receptors, receptor SMADs and RUNX2, leading to their proteasomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD6 also inhibits BMP signaling by complexing with the ubiquitin ligase SMURF1, which ubiquitylates BMP receptors, receptor SMADs and RUNX2, leading to their proteasomal degradation (Figure 4b) (Murakami et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of another SMAD6 inhibitory mechanism supported by a citation and illustrated in Figure 4b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "72146981-2f33-4203-a87f-a9ab8385aa2d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C88",
+      "claim": "In mice, constitutive activity of BMPR1A in cranial neural crest results in SMAD-dependent development of metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, constitutive activity of BMPR1A in cranial neural crest results in SMAD-dependent development of metopic craniosynostosis (Komatsu et al., 2013), and genetic deficiency for the SMAD inhibitor SMURF1 causes midline craniosynostosis (Shimazu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mouse model findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "62510b57-b3d9-47de-b6f4-1a8a9a9dc9a5",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C89",
+      "claim": "Genetic deficiency for the SMAD inhibitor SMURF1 causes midline craniosynostosis in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice, constitutive activity of BMPR1A in cranial neural crest results in SMAD-dependent development of metopic craniosynostosis (Komatsu et al., 2013), and genetic deficiency for the SMAD inhibitor SMURF1 causes midline craniosynostosis (Shimazu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mouse model findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "82aaaa10-22d4-430c-bb0a-6772079ad732",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C90",
+      "claim": "Duplication of RUNX2 causes syndromic metopic craniosynostosis in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, duplication of RUNX2 causes syndromic metopic craniosynostosis in humans (Mefford et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about human genetic findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "db359f6c-317b-4ec1-b4ef-94f8a8452393",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C91",
+      "claim": "SMAD6 knockout mice are born with domed skulls and show anomalous bone deposition in the metopic suture.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SMAD6 knockout mice are born with domed skulls and show anomalous bone deposition in the metopic suture; they also show an augmented and prolonged response to BMP2 stimulation (Estrada et al., 2011; Retting, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mouse model findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "287ff66c-7fd7-4b6a-bb61-9cf126ed7e86",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C92",
+      "claim": "SMAD6 knockout mice show an augmented and prolonged response to BMP2 stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, SMAD6 knockout mice are born with domed skulls and show anomalous bone deposition in the metopic suture; they also show an augmented and prolonged response to BMP2 stimulation (Estrada et al., 2011; Retting, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mouse model findings supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "057fffa0-05ce-4629-9d1e-569a57d0e3be",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C93",
+      "claim": "One de novo damaging missense mutation in SMURF1 was identified in a proband with sporadic metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we identified one de novo D-mis mutation in SMURF1 in a proband with sporadic metopic craniosynostosis (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the exome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3d0bd1a0-49e9-49b7-91c0-9f803132e747",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C94",
+      "claim": "One de novo LOF mutation was identified in both SPRY1 and SPRY4.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified one de novo LOF in both SPRY1 and SPRY4, developmental regulators of the MAP kinase/ERK pathway; these variants comprised two of only 11 de novo LOFs other than those in SMAD6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the exome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "9a4aec10-2f45-4e15-b163-cd6454636d06",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C95",
+      "claim": "SPRY1 and SPRY4 are developmental regulators of the MAP kinase/ERK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified one de novo LOF in both SPRY1 and SPRY4, developmental regulators of the MAP kinase/ERK pathway; these variants comprised two of only 11 de novo LOFs other than those in SMAD6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the biological function of these genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "b761585f-fb4f-497d-a0c5-7bad9ce5403d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C96",
+      "claim": "The probability of observing two or more de novo LOF mutations in any of the 4 Sprouty genes by chance in this cohort surpassed genome-wide significance (p=7.1 \u00d7 10^-7).",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of observing two or more de novo LOF mutations in any of the 4 Sprouty genes by chance in this cohort surpassed genome-wide significance (p=7.1 \u00d7 10\u20137, Table 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from gene set analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1ff085a4-d3f7-4ee8-a922-4cd3c62f0a79",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C97",
+      "claim": "A de novo microdeletion that included SPRY1 has previously been reported in a child with sagittal craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for SPRY1 haploinsufficiency, a de novo microdeletion that included SPRY1 has previously been reported in a child with sagittal craniosynostosis (Fern\u00e1ndez-Ja\u00e9n et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior case report findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3a49b63b-469e-4640-b067-677abfda091b",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C98",
+      "claim": "In mice with TWIST1 haploinsufficiency, overexpression of SPRY1 prevents suture fusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in mice with TWIST1 haploinsufficiency, a model of syndromic craniosynostosis, overexpression of SPRY1 prevents suture fusion (Connerney et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about mouse model findings supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "52d9b9ea-72b9-4c5b-ace5-50a969efa78e",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C99",
+      "claim": "Protein altering de novo mutations were identified in other regulators and mediators of MAP kinase signaling, including RASAL2, DUSP5, MAP3K8, KSR2, RPS6KA4, and RGS3.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, protein altering de novo mutations were also identified in other regulators and mediators of MAP kinase signaling, including RASAL2, DUSP5, MAP3K8, KSR2, RPS6KA4, and RGS3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the exome sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1b2825a9-b9f2-4f9f-bf6d-326340aaf8de",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C100",
+      "claim": "Five of 6 de novo mutations in MAP kinase pathway genes occurred in probands with sagittal craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "5 of 6 occurred in probands with sagittal craniosynostosis (Table 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analyzing the phenotypes associated with these mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "5c3a661c-0a1a-4b85-8e0c-55716bc56032",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C101",
+      "claim": "SMAD6/BMP2 genotypes account for approximately 7% of probands in this cohort of non-syndromic midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "SMAD6 mutations with and without BMP2 risk alleles account for ~7% of probands in this cohort of non-syndromic midline craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation from the frequency of these genotypes in the cohort.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "31c6bfdd-49aa-4cf2-ab66-854c6c5c40b8",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C102",
+      "claim": "SMAD6/BMP2 genotypes are inferred to account for approximately 3.5% of all craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, because non-syndromic sagittal and metopic craniosynostosis comprise half of all craniosynostoses (Slater et al., 2008; Greenwood et al., 2014), SMAD6/BMP2 genotypes are inferred to account for ~3.5% of all craniosynostosis, and are likely rivaled in frequency only by mutations in FGFR2 as the most frequent cause of all craniosynostoses (Twigg and Wilkie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the frequency in midline cases and the proportion of midline cases among all craniosynostosis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "6cbbf7c7-530d-4627-8be3-ec2fb3ae0c9a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C103",
+      "claim": "The combination of a rare damaging SMAD6 mutation plus a common BMP2 risk allele conferred 100% risk of craniosynostosis in the cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of a rare damaging SMAD6 mutation plus a common BMP2 risk allele conferred 100% risk of craniosynostosis in our cohort, while those with a SMAD6 mutation but no BMP2 risk allele were at markedly lower risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genotype-phenotype analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ba9d3848-0946-4685-a9cf-0f450c8f995c",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C104",
+      "claim": "Subjects with a SMAD6 mutation but no BMP2 risk allele were at markedly lower risk of craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of a rare damaging SMAD6 mutation plus a common BMP2 risk allele conferred 100% risk of craniosynostosis in our cohort, while those with a SMAD6 mutation but no BMP2 risk allele were at markedly lower risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the genotype-phenotype analysis in families.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "69c11bf2-791c-49a2-a43c-26fe34058f34",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C105",
+      "claim": "SMAD6 mutation-only cases thus far have all had isolated metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these SMAD6 mutation-only cases thus far have all had isolated metopic craniosynostosis (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the phenotypic analysis of cases with SMAD6 mutations but no BMP2 risk allele.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "07d226c9-46f4-464c-a3dd-0936629ad8ea",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C106",
+      "claim": "Rare damaging SMAD6 mutations were found in nearly 25% of kindreds with recurrent midline craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rare damaging SMAD6 mutations were found in nearly 25% of kindreds with recurrent midline craniosynostosis, and 37.5% of patients with combined sagittal and metopic craniosynostosis in our cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analyzing mutation frequencies in specific phenotypic subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "9e18fa4b-4176-488a-9794-ce17af8f0986",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C107",
+      "claim": "Rare damaging SMAD6 mutations were found in 37.5% of patients with combined sagittal and metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rare damaging SMAD6 mutations were found in nearly 25% of kindreds with recurrent midline craniosynostosis, and 37.5% of patients with combined sagittal and metopic craniosynostosis in our cohort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from analyzing mutation frequencies in specific phenotypic subgroups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "e347586d-e18b-4e62-a1ae-2db106575cba",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C108",
+      "claim": "Eleven of 15 subjects with rare damaging SMAD6 variants who are more than one year of age had some form of developmental delay.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering neurodevelopmental outcomes, 11 of 15 subjects with rare damaging SMAD6 variants who are more than one year of age (and hence can have neurodevelopmental evaluation) had some form of developmental delay (Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from clinical evaluation of subjects with SMAD6 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0759a1b7-3195-4d86-8afd-db68f5cd3e1d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C109",
+      "claim": "More than a third of patients with non-syndromic midline craniosynostosis have subtle learning disability.",
+      "claim_type": "EXPLICIT",
+      "source": "While early surgical intervention provides the best neurological outcomes (Patel et al., 2014), more than a third of patients with non-syndromic midline craniosynostosis have subtle learning disability (Magge et al., 2002; Shipster et al., 2003; Sidoti et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about neurodevelopmental outcomes supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "5315f6ea-80f5-4315-89f9-3e414c8715b2",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C110",
+      "claim": "BMP signaling plays an essential role in vertebrate brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP signaling plays an essential role in vertebrate brain development (Bier and De Robertis, 2015), raising the possibility that aberrant BMP signaling could contribute to neurodevelopmental outcome independent of its effect on craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about BMP signaling in development supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1b865d45-e2eb-470b-9320-6a762b2967a5",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C111",
+      "claim": "Aberrant BMP signaling could contribute to neurodevelopmental outcome independent of its effect on craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "BMP signaling plays an essential role in vertebrate brain development (Bier and De Robertis, 2015), raising the possibility that aberrant BMP signaling could contribute to neurodevelopmental outcome independent of its effect on craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the role of BMP signaling in brain development.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "a6bf8192-9ec9-4b26-bca3-0bfbf90078e2",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C112",
+      "claim": "Congenital inguinal hernia was observed in 3 patients (16.7%) with SMAD6 mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The only other clinical finding observed in more than one subject with SMAD6 mutation was a congenital inguinal hernia in 3 patients (16.7%; Supplementary file 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from clinical evaluation of subjects with SMAD6 mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "f3782322-2023-4839-81c9-2b7dbde6683d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C113",
+      "claim": "De novo protein-altering mutations are estimated to contribute to approximately 15% of cases, similar to estimates for autism and congenital heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "While SMAD6 was the only single gene showing genome-wide significant burden of de novo mutation, de novo protein-altering mutations are estimated to contribute to ~15% of cases. This estimated fraction is similar to estimates for autism and congenital heart disease, other diseases in which large-scale studies have shown a role for de novo mutations (Homsy et al., 2015; Iossifov et al., 2014; Sanders et al., 2012; Zaidi et al., 2013; De Rubeis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of the contribution of de novo mutations across different diseases supported by citations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "b68ae71a-a277-4fd6-a9ae-f8aa29a5fb37",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C114",
+      "claim": "De novo mutation in a large number of genes are likely to contribute to sagittal and metopic craniosynostosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Also like autism and congenital heart disease, few individual genes were implicated after sequencing modest numbers of trios, implying that de novo mutation in a large number of genes are likely to contribute to sagittal and metopic craniosynostosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the pattern of de novo mutations observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "b95cbc28-9a97-42fc-8c51-f41bf0b6eeaf",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "claim_id": "C115",
+      "claim": "Duplication of a limb-specific enhancer near BMP2 increased BMP2 expression, leading to a Mendelian limb defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, consistent with the common variant near BMP2 modifying BMP2 expression, duplication of a nearby limb-specific enhancer increased BMP2 expression, leading to a Mendelian limb defect (Dathe et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about prior findings supported by a citation, used to support the proposed mechanism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3420cd4f-9f8b-4350-8425-7c391f950d5d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study cohort comprised 191 probands with non-syndromic midline craniosynostosis, including 132 parent-offspring trios and 59 additional probands. The cohort included 113 probands with isolated sagittal, 70 with metopic, and 8 with combined sagittal and metopic craniosynostosis. Seventeen kindreds had 1 to 3 additional affected family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C30-C34 provide a clear description of the study cohort composition and phenotypic breakdown. These are straightforward descriptive statistics about the study design and sample characteristics that are internally consistent and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "ca3c4d5e-23ed-4098-a425-99817735e95d",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Exome sequencing identified 144 de novo mutations in 132 trios, yielding a de novo mutation rate of 1.64 \u00d7 10^-8 per base pair and 1.09 de novo mutations in the coding region per offspring, consistent with prior expectations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 report basic sequencing metrics that match expected values from prior studies (supported by citations to Ware et al., 2015; Homsy et al., 2015). The consistency with established mutation rates provides validation of the sequencing quality and analysis pipeline.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2e78feab-f474-4bc9-b7b5-150354cd516f",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There was significant enrichment of protein-altering mutations compared to expectation, predominantly damaging missense mutations (28 observed vs. 14.5 expected, p=1.0 \u00d7 10^-3, 1.93-fold enrichment), with a corresponding paucity of silent mutations (21 vs. 40.4 expected, p=3.0 \u00d7 10^-4). From this excess, de novo mutations are inferred to contribute to approximately 15% of non-syndromic midline craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 present a statistically sound analysis comparing observed to expected mutation distributions using Poisson statistics. The enrichment of damaging mutations and depletion of silent mutations is statistically significant and the inference about disease contribution (15%) follows logically from the excess mutations observed. The methodology is appropriate and well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SMAD6 harbored three de novo mutations (two LOF and one damaging missense), all heterozygous. Two occurred in probands and one in an unaffected mother. The probability of observing this pattern by chance was 3.6 \u00d7 10^-9. TTN was the only other gene with multiple de novo mutations, but both were predicted tolerated. SMAD6 is not unusually mutable, with no de novo mutations found in 900 control trios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51 provide strong statistical evidence for SMAD6 as a disease gene. The probability calculation (C48) is based on established methods (Samocha et al., 2014), the permutation analysis (C49) appropriately controls for multiple testing, and the control comparison (C50-C51) demonstrates specificity. The finding that one de novo mutation occurred in an unaffected mother (C45) is important for understanding penetrance. All mutations were confirmed by Sanger sequencing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "bee97183-edf3-490a-95f1-0a90d50bf1c4",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Among 191 probands, there were 1135 rare LOF and 3156 rare damaging alleles. SMAD6 showed extreme enrichment with 8 observed rare LOF alleles vs. 0.05 expected (p=1.1 \u00d7 10^-15, 156-fold enrichment) and 13 rare damaging variants vs. 0.14 expected (p=1.3 \u00d7 10^-21, 91.4-fold enrichment). All variants were heterozygous and different from one another, with 11 absent from ExAC. Eight of 13 were frameshift or premature termination mutations distributed throughout the protein, strongly supporting haploinsufficiency as the mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C59 present compelling evidence for SMAD6 through rare variant burden analysis. The statistical significance is extremely strong (p<10^-20), the enrichment is massive (>90-fold), and the variants are appropriately rare (11/13 absent from >100,000 ExAC alleles). The predominance of LOF mutations distributed throughout the gene (C58-C59) provides strong mechanistic support for haploinsufficiency. The analysis methodology using binomial tests is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "85cb4ab4-9f60-4576-93f0-c945f516c954",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Within 13 kindreds with SMAD6 mutations, all 17 affected subjects carried the mutation, but zero of 10 parental carriers had craniosynostosis, demonstrating incomplete penetrance. Penetrance was estimated at 24% excluding probands (57% including probands), with no significant effect of gender. Overall, SMAD6 mutations showed incomplete penetrance of less than 60%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 and C7 document incomplete penetrance through family segregation data. The observation that 0/10 parental carriers are affected (C61) is striking and well-documented. The penetrance estimates (C62-C63) appropriately distinguish between calculations including vs. excluding probands to account for ascertainment bias. The lack of gender effect (C64) is noted. However, the small sample size (10 unaffected carriers) means penetrance estimates have wide confidence intervals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "1d3a2652-7113-48c9-8204-9b45070ad980",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A common variant near BMP2 (rs1884302, risk allele frequency 0.34, OR 4.6) explained nearly all phenotypic variation in SMAD6 mutation carriers. Among individuals with both SMAD6 mutations and the BMP2 risk allele, 100% (14/14) had craniosynostosis, compared to only 19% (3/16) with SMAD6 mutations alone and 0% (0/18) with only the BMP2 risk allele. This interaction was highly significant (p=1.4 \u00d7 10^-10 by Fisher's exact test; p=4.8 \u00d7 10^-6 restricted to SMAD6 carriers). Transmission disequilibrium testing showed significant overtransmission of the BMP2 risk allele (11/13 transmissions, p=0.013), while BBS9 variants showed no interaction (TDT p=0.89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C65-C75 provide extremely strong evidence for epistatic interaction between SMAD6 and BMP2. The 100% penetrance with both risk alleles vs. 19% with SMAD6 alone (C68-C69) is striking, though based on relatively small numbers. The statistical evidence is robust across multiple tests: Fisher's exact test (C71), restricted analysis (C72), and transmission disequilibrium test (C74). The specificity is demonstrated by lack of interaction with BBS9 (C75). The biological plausibility is strong given BMP2's role upstream of SMAD signaling (C66-C67). However, the 100% penetrance estimate may be inflated due to small sample size and ascertainment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "cc81627e-4b1a-4255-be90-c108195db87a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Parametric two-locus linkage analysis provided extremely strong evidence supporting linkage with a maximum LOD score of 7.37 (odds ratio 2.3 \u00d7 10^7:1 in favor of linkage). The maximum likelihood model specified 100% penetrance when risk alleles at both SMAD6 and BMP2 loci are present, 9% with only SMAD6, and 0.08-0.32% with only BMP2 alleles. This two-locus model was 1410-fold more likely than the best single-locus model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 provide strong statistical support for the two-locus model through linkage analysis. The LOD score of 7.37 (C76) far exceeds the threshold for genome-wide significance (typically 3.3). The penetrance parameters (C77) are consistent with the observed data. The 1410-fold improvement over single-locus models (C78) demonstrates the necessity of the two-locus model. However, the 100% penetrance estimate for the double-risk genotype may be overfit to the small sample and should be validated in independent cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "238723b9-2d71-44c0-b48f-720901a4a7e8",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SMAD6 mutations were significantly more frequent in kindreds with any metopic craniosynostosis (10/78, 12.8%) compared to isolated sagittal craniosynostosis (3/113, 2.7%; p=8.1 \u00d7 10^-3, OR 5.3), suggesting SMAD6 mutations confer greater risk for metopic suture closure. There was no significant correlation between mutation type or location and phenotypic class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 present a genotype-phenotype correlation analysis. The statistical comparison (C79) is appropriately conducted using Fisher's exact test and shows significant enrichment in metopic cases. The inference about greater risk for metopic closure (C80) follows logically. The lack of correlation with mutation type/location (C81) is noted, though this negative result may reflect limited power. The finding is biologically interesting but requires validation in larger cohorts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "3c922e3d-208f-4f4b-8af9-76f0a2377697",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Transmitted SMAD6 mutations were significantly enriched in familial craniosynostosis, accounting for 4 of 17 kindreds with multiple affected subjects (p=0.02, OR 5.6). In these kindreds, all four additional affected subjects carried the proband's SMAD6 mutation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 demonstrate enrichment of transmitted SMAD6 mutations in familial cases. The statistical test (C82) is appropriate and significant, and the perfect segregation in familial cases (C83) supports pathogenicity. However, the sample size is small (4 familial kindreds with SMAD6 mutations) and the p-value is marginal (p=0.02), so this finding should be considered suggestive pending replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "176efd2c-7727-4feb-92ec-5184f103bb70",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The epistatic interaction of rare SMAD6 variants and common BMP2 variants defines the most frequent cause of midline craniosynostosis, accounting for approximately 7% of probands in this cohort and an inferred 3.5% of all craniosynostosis. The combination of SMAD6 mutation plus BMP2 risk allele conferred 100% risk, while SMAD6 mutations alone conferred markedly lower risk. SMAD6 mutation-only cases have all had isolated metopic craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C101-C105 synthesize the main findings into clinical significance estimates. The 7% frequency in midline cases (C101) is directly calculated from 13/191 probands. The 3.5% estimate for all craniosynostosis (C102) requires the assumption that midline cases represent 50% of all cases (supported by C25). The 100% penetrance claim (C103) is supported by the data but based on small numbers. The observation about metopic-only presentation in SMAD6-only cases (C105) is interesting but based on only 3 cases. Overall, the frequency estimates are reasonable but have uncertainty due to cohort size and ascertainment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "7d210e17-5322-409f-821d-634adbbf1e3c",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "De novo LOF mutations were identified in both SPRY1 and SPRY4, developmental regulators of the MAP kinase/ERK pathway. The probability of observing two or more de novo LOF mutations in any of the 4 Sprouty genes by chance surpassed genome-wide significance (p=7.1 \u00d7 10^-7). Prior evidence supports a role for SPRY1, including a reported microdeletion in a child with sagittal craniosynostosis and mouse data showing SPRY1 overexpression prevents suture fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C98 present suggestive evidence for Sprouty genes. The gene-set analysis (C96) appropriately tests the four Sprouty genes together and achieves genome-wide significance. The supporting evidence from prior case reports (C97) and mouse models (C98) strengthens the biological plausibility. However, with only 2 LOF mutations across 4 genes in 132 trios, this finding requires replication in larger cohorts. The statistical approach of gene-set testing is appropriate given the functional relationship of these genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "c1a65380-b908-4ca6-9ec7-2304236debec",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "One de novo damaging missense mutation in SMURF1 was identified in a proband with sporadic metopic craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C93 reports a single de novo mutation in SMURF1, a SMAD6 binding partner. While biologically plausible given SMURF1's role in the pathway and mouse data showing SMURF1 deficiency causes craniosynostosis (C89), a single mutation provides insufficient statistical evidence for causality. This is an interesting observation requiring validation in larger cohorts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "a1708c61-73ad-453f-941b-7706b170e355",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Protein-altering de novo mutations were identified in other regulators and mediators of MAP kinase signaling (RASAL2, DUSP5, MAP3K8, KSR2, RPS6KA4, RGS3), with 5 of 6 occurring in probands with sagittal craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 report additional de novo mutations in MAP kinase pathway genes. While the phenotypic clustering in sagittal cases (C100) is suggestive, these are single mutations in different genes without statistical evidence of enrichment. This represents hypothesis-generating observations that require validation in larger cohorts. The biological pathway coherence is interesting but insufficient for causal claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Eleven of 15 subjects with SMAD6 variants over one year of age had developmental delay. More than a third of patients with non-syndromic midline craniosynostosis have subtle learning disability. BMP signaling plays an essential role in brain development, raising the possibility that aberrant BMP signaling could contribute to neurodevelopmental outcomes independent of craniosynostosis. Congenital inguinal hernia was observed in 3 patients (16.7%) with SMAD6 mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C108-C112 address clinical phenotypes beyond craniosynostosis. The developmental delay frequency (C108) is descriptive but lacks a control comparison to determine if this exceeds the baseline rate in craniosynostosis patients. The general statement about learning disability (C109) is supported by citations but doesn't specifically address SMAD6 carriers. The speculation about BMP signaling effects on brain development (C111) is appropriately presented as a possibility, not a conclusion. The inguinal hernia observation (C112) is interesting but based on small numbers (3/18). These findings are hypothesis-generating and require systematic phenotyping in larger cohorts with appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "055b066e-9cc3-4982-8ae0-a05ea9385683",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "De novo protein-altering mutations are estimated to contribute to approximately 15% of cases, similar to estimates for autism and congenital heart disease. Few individual genes were implicated after sequencing modest numbers of trios, implying that de novo mutations in a large number of genes likely contribute to sagittal and metopic craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C114 place the findings in context of other diseases with similar genetic architecture. The 15% estimate (C113) is derived from the excess of protein-altering mutations (C41) and the comparison to autism and CHD is supported by citations. The inference about genetic heterogeneity (C114) is reasonable given that only SMAD6 reached genome-wide significance despite 132 trios. This interpretation is consistent with the genetic architecture of other complex developmental disorders.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "0ad8be5b-9dbf-40a7-ab94-e7468445ac93",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Rare damaging SMAD6 mutations were found in nearly 25% of kindreds with recurrent midline craniosynostosis and 37.5% of patients with combined sagittal and metopic craniosynostosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C107 report enrichment in specific phenotypic subgroups. The 25% frequency in familial cases (C106) is calculated from 4/17 kindreds (consistent with C82). The 37.5% frequency in combined cases (C107) is 3/8 probands. While these enrichments are notable, the small denominators (17 and 8 respectively) mean these estimates have wide confidence intervals. These findings suggest SMAD6 mutations are particularly important in these subgroups but require validation in larger cohorts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "SMAD6 is an inhibitory SMAD that blocks BMP signaling through multiple mechanisms: binding phosphorylated receptor SMADs to form inactive complexes, and recruiting SMURF1 to ubiquitylate and degrade BMP receptors, receptor SMADs, and RUNX2. Multiple lines of evidence from mouse models support the role of this pathway in craniosynostosis: constitutive BMPR1A activity causes metopic craniosynostosis, SMURF1 deficiency causes midline craniosynostosis, RUNX2 duplication causes metopic craniosynostosis in humans, and SMAD6 knockout mice show domed skulls, anomalous bone deposition in the metopic suture, and augmented BMP2 response. Duplication of a limb-specific enhancer near BMP2 increased BMP2 expression, leading to a Mendelian limb defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C92 and C115 provide extensive biological context from prior literature. The description of SMAD6 function (C84-C87) is well-established and supported by citations. The mouse model data (C88-C92) from multiple independent studies provide strong support for the pathway's role in craniosynostosis. The enhancer duplication example (C115) supports the plausibility of the BMP2 variant affecting expression. This biological framework strongly supports the genetic findings and provides mechanistic insight. All claims are appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    },
+    {
+      "id": "e95ac4de-f5f3-4132-bd20-21c0b762174a",
+      "content_id": "96b0c954-c31f-46cb-aed6-b42c9a1db1c0",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background information on craniosynostosis epidemiology, normal cranial development, syndromic forms, and prior genetic findings. Craniosynostosis affects 1 in 2000 newborns and is treated surgically. The metopic suture normally closes between 6-12 months while other sutures fuse in adulthood. Syndromic forms (15-20% of cases) have implicated >50 genes, with MAPK/ERK pathway mutations causing coronal/multisuture forms and SMAD pathway mutations causing midline forms. Non-syndromic midline craniosynostosis accounts for 50% of all cases. Prior GWAS identified common variants near BMP2 and in BBS9 with large effects (OR>4), but rare alleles with large effect had not been identified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C29 provide background context from prior literature. These are appropriately cited statements about disease epidemiology, normal development, and prior genetic findings. The prevalence figures (C1, C16, C25), developmental timelines (C13-C14), and genetic findings (C16-C29) are all supported by citations. The statement that rare alleles with large effect had not been identified (C29) appropriately sets up the rationale for the current study. These background claims are well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:42:21.554583Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ee5e480b-5537-447c-92cc-064e2903c5f4",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "88be6a1b-a43d-48ff-9020-af7af9bbfb6b",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "e7524d8f-936c-4a38-b9cb-e252db1713ef",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "17c43085-a9a5-4247-b84c-4d1bc0c554a1",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "2bb545fe-5d22-4f5b-89d0-8f2212bfe087",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "d68c274e-d050-4dee-bb55-e460ae15c4e7",
+      "result_id": "3420cd4f-9f8b-4350-8425-7c391f950d5d"
+    },
+    {
+      "claim_id": "48704812-f1a5-4940-a999-bd77bed38cd0",
+      "result_id": "ca3c4d5e-23ed-4098-a425-99817735e95d"
+    },
+    {
+      "claim_id": "838056da-8d07-457e-8f0d-8f043b9f9d10",
+      "result_id": "ca3c4d5e-23ed-4098-a425-99817735e95d"
+    },
+    {
+      "claim_id": "dd189cbb-e055-4815-888b-e6c6f0da5707",
+      "result_id": "ca3c4d5e-23ed-4098-a425-99817735e95d"
+    },
+    {
+      "claim_id": "ec39c302-5b56-4889-b0b5-dbd8f64e73b7",
+      "result_id": "2e78feab-f474-4bc9-b7b5-150354cd516f"
+    },
+    {
+      "claim_id": "ca4aeae1-267a-4e0f-9d93-468c5d3352e0",
+      "result_id": "2e78feab-f474-4bc9-b7b5-150354cd516f"
+    },
+    {
+      "claim_id": "138304c2-9147-450f-b7b0-0cb60669c0a9",
+      "result_id": "2e78feab-f474-4bc9-b7b5-150354cd516f"
+    },
+    {
+      "claim_id": "e9185d1f-5b68-4341-b873-ec7d3941e404",
+      "result_id": "2e78feab-f474-4bc9-b7b5-150354cd516f"
+    },
+    {
+      "claim_id": "c8b38a07-d143-4ba8-b520-31be1336d89f",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "0e0f4701-cbdf-4421-a6b5-e3ec88399fad",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "91757e3d-f431-4a42-9d78-6cceeb8331d4",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "0a1c0a5a-1b83-4d34-b2bf-251f573566f7",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "c9cc3961-87d5-4dfa-9b07-5af1755f7ef1",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "32fdd357-8d49-4c46-901f-771233fdfdbd",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "654a3c4a-7df5-46f2-ac47-d987d0887348",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "9104a746-d3aa-43d1-a9cf-46f6d7dbb0c9",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "01a89342-1fa7-44e6-9a14-45fe76ecef8f",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "d3585eec-5af8-4057-9f46-6c1a7d6649e0",
+      "result_id": "d8a1a89b-07bc-4921-afe9-77d5cbe4ab11"
+    },
+    {
+      "claim_id": "1ffcc57e-1651-4513-8ed4-cf54a7002bf5",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "2f67365c-a917-42dd-8835-002b43d89a87",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "411e4210-f861-46a7-a2b9-ef0218fc07b8",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "1e786183-ccac-4345-94ce-c938d93fc7c1",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "1c9be5dc-b5a4-464a-8946-1f268a6d09b6",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "64a3e617-b6f3-471f-875d-38cb231fcfae",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "34d52b65-4049-4ca4-9751-a14970ab9745",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "61029984-c418-4b77-8f1b-bb66e069070f",
+      "result_id": "bee97183-edf3-490a-95f1-0a90d50bf1c4"
+    },
+    {
+      "claim_id": "d764eb8f-1b37-486a-a7d8-90180cd90cc2",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "8e0060bb-a21d-47f9-bc7d-8665705502a3",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "5703438d-03e0-4833-a942-5fdaa1eb03dc",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "9ba66acd-ec73-4713-8693-f4b1647869fd",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "1753c59e-1181-4ab3-b632-cbcb6452f448",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "ef698007-f4bc-423f-b6d2-a5487be60205",
+      "result_id": "85cb4ab4-9f60-4576-93f0-c945f516c954"
+    },
+    {
+      "claim_id": "ab653e62-208a-41ec-988f-9ba3b7a18cce",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "3b10fd39-8ecb-4615-b97b-11bf139451d5",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "b3237d31-6dd9-4e02-b12b-2e092bbea12a",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "e36cdc20-ffcb-4b94-9134-829e5404ff39",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "dc385a84-0a69-4ce3-a7fb-3dbc4b37450b",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "6bd737e3-6bdb-4c3f-9e65-1d361d4577bc",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "ce948f1c-d7f3-4f53-a972-be5ee7a8ce8c",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "8d7405a1-3034-44fa-baf8-4114afc25420",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "8cd67d67-1279-43de-9614-4fe76f2e3572",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "2f909f3d-d1ff-424e-97d9-562eeec541a1",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "385b817d-ce81-40ff-bf38-8fa43c0c437b",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "37c50fdf-c1d8-4636-9681-0a599a563d6e",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "ee278006-abcb-4051-af36-5231d1f42298",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "f65752e3-9447-43a6-aeaf-d8fce968257e",
+      "result_id": "1d3a2652-7113-48c9-8204-9b45070ad980"
+    },
+    {
+      "claim_id": "c5d7ad5b-eafd-4ebc-8dfd-603e73ab272d",
+      "result_id": "cc81627e-4b1a-4255-be90-c108195db87a"
+    },
+    {
+      "claim_id": "174fc198-3800-4a00-8f41-b53bd00ef452",
+      "result_id": "cc81627e-4b1a-4255-be90-c108195db87a"
+    },
+    {
+      "claim_id": "dd82331b-1df7-4cff-8f2f-acf631b3c1ce",
+      "result_id": "cc81627e-4b1a-4255-be90-c108195db87a"
+    },
+    {
+      "claim_id": "21c57c9a-2584-4ce2-959c-7cfe5a2610d4",
+      "result_id": "238723b9-2d71-44c0-b48f-720901a4a7e8"
+    },
+    {
+      "claim_id": "86d1ca96-9180-4058-ba5d-0243898a77ae",
+      "result_id": "238723b9-2d71-44c0-b48f-720901a4a7e8"
+    },
+    {
+      "claim_id": "fa4bb4bf-35cf-4e34-be2a-2aa28738d4fd",
+      "result_id": "238723b9-2d71-44c0-b48f-720901a4a7e8"
+    },
+    {
+      "claim_id": "f519b411-56e6-4926-823e-216b974e60ae",
+      "result_id": "3c922e3d-208f-4f4b-8af9-76f0a2377697"
+    },
+    {
+      "claim_id": "aceb8569-78a1-47f4-826e-cb990e20fba9",
+      "result_id": "3c922e3d-208f-4f4b-8af9-76f0a2377697"
+    },
+    {
+      "claim_id": "c4b18fa1-14aa-40e2-be99-49dcd3cde338",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "5c3a661c-0a1a-4b85-8e0c-55716bc56032",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "31c6bfdd-49aa-4cf2-ab66-854c6c5c40b8",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "6cbbf7c7-530d-4627-8be3-ec2fb3ae0c9a",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "ba9d3848-0946-4685-a9cf-0f450c8f995c",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "69c11bf2-791c-49a2-a43c-26fe34058f34",
+      "result_id": "176efd2c-7727-4feb-92ec-5184f103bb70"
+    },
+    {
+      "claim_id": "3d0bd1a0-49e9-49b7-91c0-9f803132e747",
+      "result_id": "7d210e17-5322-409f-821d-634adbbf1e3c"
+    },
+    {
+      "claim_id": "9a4aec10-2f45-4e15-b163-cd6454636d06",
+      "result_id": "7d210e17-5322-409f-821d-634adbbf1e3c"
+    },
+    {
+      "claim_id": "b761585f-fb4f-497d-a0c5-7bad9ce5403d",
+      "result_id": "7d210e17-5322-409f-821d-634adbbf1e3c"
+    },
+    {
+      "claim_id": "1ff085a4-d3f7-4ee8-a922-4cd3c62f0a79",
+      "result_id": "7d210e17-5322-409f-821d-634adbbf1e3c"
+    },
+    {
+      "claim_id": "3a49b63b-469e-4640-b067-677abfda091b",
+      "result_id": "7d210e17-5322-409f-821d-634adbbf1e3c"
+    },
+    {
+      "claim_id": "057fffa0-05ce-4629-9d1e-569a57d0e3be",
+      "result_id": "c1a65380-b908-4ca6-9ec7-2304236debec"
+    },
+    {
+      "claim_id": "52d9b9ea-72b9-4c5b-ace5-50a969efa78e",
+      "result_id": "a1708c61-73ad-453f-941b-7706b170e355"
+    },
+    {
+      "claim_id": "1b2825a9-b9f2-4f9f-bf6d-326340aaf8de",
+      "result_id": "a1708c61-73ad-453f-941b-7706b170e355"
+    },
+    {
+      "claim_id": "e347586d-e18b-4e62-a1ae-2db106575cba",
+      "result_id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd"
+    },
+    {
+      "claim_id": "0759a1b7-3195-4d86-8afd-db68f5cd3e1d",
+      "result_id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd"
+    },
+    {
+      "claim_id": "5315f6ea-80f5-4315-89f9-3e414c8715b2",
+      "result_id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd"
+    },
+    {
+      "claim_id": "1b865d45-e2eb-470b-9320-6a762b2967a5",
+      "result_id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd"
+    },
+    {
+      "claim_id": "a6bf8192-9ec9-4b26-bca3-0bfbf90078e2",
+      "result_id": "2c0cbdc6-d69f-42ba-903e-9ba2afec26dd"
+    },
+    {
+      "claim_id": "f3782322-2023-4839-81c9-2b7dbde6683d",
+      "result_id": "055b066e-9cc3-4982-8ae0-a05ea9385683"
+    },
+    {
+      "claim_id": "b68ae71a-a277-4fd6-a9ae-f8aa29a5fb37",
+      "result_id": "055b066e-9cc3-4982-8ae0-a05ea9385683"
+    },
+    {
+      "claim_id": "07d226c9-46f4-464c-a3dd-0936629ad8ea",
+      "result_id": "0ad8be5b-9dbf-40a7-ab94-e7468445ac93"
+    },
+    {
+      "claim_id": "9e18fa4b-4176-488a-9794-ce17af8f0986",
+      "result_id": "0ad8be5b-9dbf-40a7-ab94-e7468445ac93"
+    },
+    {
+      "claim_id": "a7a3d438-cbad-4a17-8e16-a2d3aa1deb31",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "1c3569a4-4449-4bc4-a1dc-1a8929430d2a",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "2b078f3a-12b1-42d8-94ae-911e9e7fa2bb",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "8c5872be-e495-4a56-94b5-483fb897fdc1",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "72146981-2f33-4203-a87f-a9ab8385aa2d",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "62510b57-b3d9-47de-b6f4-1a8a9a9dc9a5",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "82aaaa10-22d4-430c-bb0a-6772079ad732",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "db359f6c-317b-4ec1-b4ef-94f8a8452393",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "287ff66c-7fd7-4b6a-bb61-9cf126ed7e86",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "b95cbc28-9a97-42fc-8c51-f41bf0b6eeaf",
+      "result_id": "2b34cb4a-3188-4fed-8cc9-8dcdc0fc2349"
+    },
+    {
+      "claim_id": "de7d8197-ea3b-43b7-ade9-7e20c17fd721",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "54b425d1-5e4b-4bf6-9d01-669ce5afd12b",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "7fc5ea81-ce5e-4a8a-9dfe-ccf42c8e711a",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "6a24ef13-5e9e-445f-9f2f-5bde8d4d07c1",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "0a670b89-a35b-4088-b34d-52ca61b857b1",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "b4d3a3e3-90cd-41aa-a199-0f4017c151f3",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "d5c6567c-29e7-42ab-9957-f3594ac17c6f",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "75b57494-0026-4b5d-8336-bfcd483cb442",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "ceeee569-db30-49ba-a79b-4350cc72db21",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "28bfa7fe-a6d9-4b51-90f8-afffcf617c86",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "62f3471a-1984-4d66-9f09-52f3d48fd3b9",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "3b1bbd4d-dd1e-42b2-84fe-6d9c6fac945d",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "9e633b75-65a0-41c4-92a6-bf18fe2b9e88",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "0dbaf08d-d46d-4218-9875-87b05daca462",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "c1b46f9a-c2c0-4b61-8d0c-952f131e28e9",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "3a66250b-0f6e-4375-b639-664600f578c1",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "de50219b-aa26-4b85-9fe9-59c6ca0ef688",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "2a52dca0-ef47-4fce-8891-ee428ede575a",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "75f925c9-cd47-44e6-8af2-1aa3dbff114b",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    },
+    {
+      "claim_id": "8cd1d053-d19b-40f8-8a92-6ffeba860126",
+      "result_id": "e95ac4de-f5f3-4132-bd20-21c0b762174a"
+    }
+  ],
+  "comparisons": []
+}

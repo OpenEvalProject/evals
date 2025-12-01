@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "cd45060c-2256-4f18-8e00-5966a6c1d8ac",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:52:44.627848Z",
+    "updated_at": "2025-11-30T22:52:44.627848Z"
+  },
+  "content": [
+    {
+      "id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "submission_id": "cd45060c-2256-4f18-8e00-5966a6c1d8ac",
+      "content_type": "manuscript",
+      "content_text": "# Control of immune ligands by members of a cytomegalovirus gene expansion suppresses natural killer cell activation\n\n## Authors\n\n- Ceri A Fielding<sup>1</sup> ([ORCID: 0000-0002-5817-3153](https://orcid.org/0000-0002-5817-3153))\n- Michael P Weekes<sup>2</sup> ([ORCID: 0000-0003-3196-5545](https://orcid.org/0000-0003-3196-5545))\n- Luis V Nobre<sup>2</sup> ([ORCID: 0000-0003-0467-8989](https://orcid.org/0000-0003-0467-8989))\n- Eva Ruckova<sup>4</sup>\n- Gavin S Wilkie<sup>5</sup>\n- Joao A Paulo<sup>3</sup> ([ORCID: 0000-0002-4291-413X](https://orcid.org/0000-0002-4291-413X))\n- Chiwen Chang<sup>6</sup>\n- Nicol\u00e1s M Su\u00e1rez<sup>5</sup> ([ORCID: 0000-0001-8429-8374](https://orcid.org/0000-0001-8429-8374))\n- James A Davies<sup>1</sup>\n- Robin Antrobus<sup>2</sup> ([ORCID: 0000-0001-8608-4011](https://orcid.org/0000-0001-8608-4011))\n- Richard J Stanton<sup>1</sup> ([ORCID: 0000-0002-6799-1182](https://orcid.org/0000-0002-6799-1182))\n- Rebecca J Aicheler<sup>1</sup>\n- Hester Nichols<sup>1</sup> ([ORCID: 0000-0002-6814-4364](https://orcid.org/0000-0002-6814-4364))\n- Borek Vojtesek<sup>4</sup>\n- John Trowsdale<sup>6</sup> ([ORCID: 0000-0002-0150-5698](https://orcid.org/0000-0002-0150-5698))\n- Andrew J Davison<sup>5</sup> ([ORCID: 0000-0002-4991-9128](https://orcid.org/0000-0002-4991-9128))\n- Steven P Gygi<sup>3</sup>\n- Peter Tomasec<sup>1</sup> ([ORCID: 0000-0002-6745-6198](https://orcid.org/0000-0002-6745-6198))\n- Paul J Lehner<sup>2</sup> ([ORCID: 0000-0001-9383-1054](https://orcid.org/0000-0001-9383-1054))\n- Gavin W G Wilkinson<sup>1</sup> ([ORCID: 0000-0002-5623-0126](https://orcid.org/0000-0002-5623-0126)) \u2020\n\n### Affiliations\n\n1. Division of Infection and Immunity, School of Medicine Cardiff University Cardiff United Kingdom\n2. Cambridge Institute for Medical Research University of Cambridge Cambridge United Kingdom\n3. Department of Cell Biology Harvard Medical School Boston United States\n4. Regional Centre for Applied Molecular Oncology Masaryk Memorial Cancer Institute Brno Czech Republic\n5. MRC-University of Glasgow Centre for Virus Research University of Glasgow Glasgow United Kingdom\n6. Immunology Division, Department of Pathology University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe human cytomegalovirus (HCMV) US12 family consists of ten sequentially arranged genes (US12-21) with poorly characterized function. We now identify novel natural killer (NK) cell evasion functions for four members: US12, US14, US18 and US20. Using a systematic multiplexed proteomics approach to quantify ~1300 cell surface and ~7200 whole cell proteins, we demonstrate that the US12 family selectively targets plasma membrane proteins and plays key roles in regulating NK ligands, adhesion molecules and cytokine receptors. US18 and US20 work in concert to suppress cell surface expression of the critical NKp30 ligand B7-H6 thus inhibiting NK cell activation. The US12 family is therefore identified as a major new hub of immune regulation.\n\n## Introduction\n\nAt 236 kb the human cytomegalovirus (HCMV) genome is the largest of any characterized human virus and is comprised of long and short unique regions (UL and US), each flanked by inverted terminal repeats. HCMV codes for around of 170 canonical protein-coding genes with 39 herpesvirus \u2018core\u2019 genes concentrated in the center of the UL region (Dolan et al., 2004). The core genes mainly encode structural components of the virion and proteins required for virus DNA replication and have orthologues in the other human herpesviruses. The vast majority of the remaining HCMV genes are not essential for virus replication in vitro (Dunn et al., 2003) yet are replete with accessory functions, many of which have been implicated in suppressing host immune responses. Unusually, HCMV encodes 15 gene families of variable size that are often clustered on the genome (Davison et al., 2002; Holzerlandt et al., 2002; Chee et al., 1990; Dolan et al., 2004; Davison et al., 2003). Many of these gene families exhibit homology with cellular genes and are conserved to various extents in other primate CMVs. Consequently, these primate CMV gene families are likely to have arisen through gene capture and amplification driven by differential selective pressures in their various primate hosts over millennia (Davison et al., 2013, 2003).\n\nThe US12 gene family consists of 10 genes, designated US12 to US21, arranged sequentially in the US region and transcribed in the same orientation (Chee et al., 1990; Dolan et al., 2004). The genetic arrangement of the US12 family is reminiscent of \u2018accordion\u2019 gene expansions, which are generated when a cellular or virus resistance function is placed under strong selective pressure (Fil\u00e9e, 2013). Such an expansion was recently exemplified experimentally using a poxvirus interferon resistance function (Elde et al., 2012). The US12 family encodes a series of 7-transmembrane spanning proteins with low-level homology to the cellular transmembrane bax-inhibitor one motif-containing proteins (TMBIM). While not essential for virus replication, the US12 family has been implicated in HCMV tropism, virion maturation and immune evasion (Das and Pellett, 2007; Cavaletto et al., 2015; Bronzini et al., 2012; Hai et al., 2006; Gurczynski et al., 2014; Fielding et al., 2014).\n\nNatural Killer (NK) cells play a critical role in controlling HCMV infections, and the virus invests a substantial proportion of its coding capacity to inhibit NK cell activation (Wilkinson et al., 2013). We previously observed that US18 and US20 suppress cell surface expression of the NK cell-activating ligand MICA (Fielding et al., 2014) and posited that the synergistic action of US18 and US20 may be the vestige of an immune selective pressure that drove the original expansion of the US12 family. These data show that multiple US12 family members can co-operate to target the same cellular protein. Therefore individual functions, as identified with single gene viral mutants, may not be readily replicated by expressing these same viral genes in isolation, i.e. these viral genes may work more efficiently in the context of HCMV productive infection.\n\nTo investigate the function of all US12 family genes, we undertook a systematic functional analysis that showed four members were NK immunevasins. Conventional biochemical investigations on US12 family proteins are rendered problematic due to their extreme hydrophobicity. We therefore undertook multiplexed Tandem Mass Tag (TMT)-based proteomic analyses to systematically evaluate the capacity of all US12 family genes to modulate the cellular proteome, both individually and in concert. Such an approach has been enabled by our recent development of Plasma Membrane Profiling (PMP) to identify novel cell surface targets for the HCMV latency protein UL138 (Weekes et al., 2013) and individual viral immunevasins UL141 and US2 (Hsu et al., 2015).\u00a0Quantitative Temporal Viromics (QTV) allowed\u00a0>8000 cellular and 153 viral proteins to be tracked throughout the course of productive HCMV infection, thus\u00a0building a comprehensive picture of cellular control by the virus (Weekes et al., 2014).\u00a0Through comparative analysis of ~1300 cell surface and\u00a0~7200 cellular proteins during infection with HCMV US12 family deletion mutants, we now describe in detail\u00a0how this family has a profound influence not only on NK cell recognition but other key functions that impact on immunity including cellular adhesion and cytokine signalling.\n\n## Results\n\n### US12 family members differentially affect NK cell activation\n\nTo determine whether the US12 family has a broader role in modulating NK cell responses, a series of HCMV US12 family deletion mutants were generated (10 single deletion mutants and the US12-21 \u2018block\u2019 deletion). The HCMV genome was manipulated by DNA recombineering in a strain Merlin BAC that did not express RL13 and UL128 (Stanton et al., 2010). Viruses were generated by DNA transfection and the complete genomic sequence of the virus stocks was validated by deep sequencing (Table 1). In NK functional assays, the \u25b3US12-21 block deletion mutant induced substantially higher levels of NK cell degranulation compared to the parent HCMV with all four different donors tested (Figure 1B). Significantly increased levels of NK activation were detected in assays using deletion mutants of 5 different US12 family members: US12 (3 of 4 donors), US14 (1 of 4 donors, with a trend towards increased NK activation in the other three donors), US18 (3 of 4 donors), US20 (4 of 4 donors), US21 (4 of 4 donors) (Figure 1B), while three US12 family deletion mutants (US15, US16, US19) reduced the level of NK cell activation in some donors (Figure 1B). Although members of the US12 family are capable individually of either activating or suppressing NK cell function, the net effect of the complete US12 gene family is clearly to inhibit NK cell recognition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig1-v3.jpg)\n\n**Figure 1.:** (A) Fibroblasts (HF-TERTs) were mock infected or infected with the Merlin strain of HCMV or the series of US12 family deletion mutants for 72 hr. Infected cells were incubated with donor PBMC for 5 hr and NK degranulation assessed by % CD107+ cells within the CD3-, CD56+ population by flow cytometry. (B) CD107 assay results (mean and SD) are shown from four separate donors performed in duplicate or triplicate and analysed by unpaired ordinary one way ANOVA with Dunnett\u2019s test for multiple comparisons against the HCMV control *p<0.05, **p<0.01, ***p<0.005 ***p<0.001). Infected cells were assessed by the % cells with down-regulated MHC I compared to the mock-infected cells (for the experiment using donor #23 and # 385, HCMV 93%, \u0394US12 94%, \u0394US13 98%, \u0394US14 94%, \u0394US15 98%, \u0394US16 99%, \u0394US17 98%, \u0394US18 97%, \u0394US19 99%, \u0394US20 97%, \u0394US21 91%, \u0394US12-21 94%; for the experiment using donor #91 and # 285, HCMV 94%, \u0394US12 94%, \u0394US13 94%, \u0394US14 83%, \u0394US15 95%, \u0394US16 97%, \u0394US17 85%, \u0394US18 94%, \u0394US19 96%, \u0394US20 94%, \u0394US21 94%, \u0394US12-21 96%).\n\n**Table 1.**\n HCMV constructs used in the study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Virus</th>\n      <th>BAC #</th>\n      <th>Accession no.</th>\n      <th>Cassette used</th>\n      <th>Modification</th>\n      <th>Previous reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HCMV</td>\n      <td>1111</td>\n      <td>GU179001.1</td>\n      <td>None</td>\n      <td>RL13-, UL128-</td>\n      <td>Stanton et al. (2010)</td>\n    </tr>\n    <tr>\n      <td>\u25b3US12</td>\n      <td>1810</td>\n      <td>KU221097</td>\n      <td>GalK</td>\n      <td>US12 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US13</td>\n      <td>1831</td>\n      <td>KU221099</td>\n      <td>GalK</td>\n      <td>US13 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US14</td>\n      <td>1798</td>\n      <td>KU221093</td>\n      <td>GalK</td>\n      <td>US14 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US15</td>\n      <td>1800</td>\n      <td>KU221094</td>\n      <td>GalK</td>\n      <td>US15 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US16</td>\n      <td>1802</td>\n      <td>KU221095</td>\n      <td>GalK</td>\n      <td>US16 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US17</td>\n      <td>1804</td>\n      <td>KU221096</td>\n      <td>GalK</td>\n      <td>US17 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US18</td>\n      <td>1654</td>\n      <td>KU221091</td>\n      <td>RpsL-Neo-LacZ</td>\n      <td>US18 CDS deleted</td>\n      <td>Fielding et al. (2014)</td>\n    </tr>\n    <tr>\n      <td>\u25b3US19</td>\n      <td>1796</td>\n      <td>KU221092</td>\n      <td>RpsL-Neo-LacZ</td>\n      <td>US19 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US20</td>\n      <td>1595</td>\n      <td>KU221090</td>\n      <td>SacB-AmpR-LacZ</td>\n      <td>US20 CDS deleted</td>\n      <td>Fielding et al. (2014)</td>\n    </tr>\n    <tr>\n      <td>\u25b3US21</td>\n      <td>1871</td>\n      <td>KU221100</td>\n      <td>RpsL-Neo-LacZ</td>\n      <td>US21 CDS deleted</td>\n      <td>None</td>\n    </tr>\n    <tr>\n      <td>\u25b3US12-21</td>\n      <td>1815</td>\n      <td>KU221098</td>\n      <td>RpsL-Neo-LacZ</td>\n      <td>US12-21 deleted</td>\n      <td>None</td>\n    </tr>\n  </tbody>\n</table>\n\n### The US12 family targets plasma membrane proteins\n\nTo provide an unbiased systematic analysis of the entire US12 gene family, we employed 10-plex tandem-mass tags (TMT) with MS3/Multinotch mass spectrometry to quantify whole cell (WCL) and plasma membrane (PM) proteomes in fibroblasts infected with the panel of HCMV US12 family mutants. The proteomic analyses were performed in two parts to permit inclusion of appropriate controls. Samples analyzed in Proteomic Series 1 included mock-infected controls, the parental HCMV strain, the US12-21 block deletion and defined mutants in US18, US19 and US20 (Figure 2, Figure 3, Figure 4A). Mass spectrometry quantified 7215 WCL and 1281 PM proteins. The extremely dynamic modulation of the host cell proteome observed during productive HCMV infection was consistent with previous findings (Figure 3)(Weekes et al., 2014). The role of the entire US12 gene family was assessed by comparison of the HCMV US12-21 block deletion mutant with its parental virus. The impact was most noticeably focused on the PM, in that the majority of WCL proteins affected were also PM \u2018hits\u2019 (Figure 2). The heat map illustrating changes in protein abundance correspondingly appears more dynamic i.e. a higher proportion of proteins detected were regulated in response to the deletion of individual US12 family genes for the PM proteome than for the much larger set of proteins quantified in WCL samples (Figure 3). For a given PM protein modulated by the US12 gene family (Figure 4), comparable results were observed in WCL samples (Figure 5), suggesting that the US12 family regulates protein expression or stability of cell surface proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig2-v3.jpg)\n\n**Figure 2.:** Cells infected with HCMV (Merlin) or HCMV \u25b3US12-21 mutant were processed to give PM or WCL fractions and analyzed by TMT mass spectrometry. Scatter plot of proteins identified in the PM (panel A) or WCL fractions (panel B) respectively and quantified by 2 or more unique peptides. Fold change (\u25b3US12-21-infected fibroblasts/HCMV-infected cells) is shown as the log2 ratio on the x-axis and the signal:noise on the y-axis as log10. Proteins unaltered by the US21-21 deletion locate at the center of the plots (0 log2/1 fold-change), whereas proteins to the left or right of center represent proteins down- or up-regulated by the US12-21 deletion respectively. Significance B was used to estimate p values (Cox et al., 2009). The 2 different alleles of MICA present in HFs were detected by this analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig3-v3.jpg)\n\n**Figure 3.:** Zoomed regions are shown for clusters of interest.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig4-v3.jpg)\n\n**Figure 4.:** (A-B) Workflows of proteomic series 1 and 2 respectively. (C-E) Quantitation of PM proteins in enriched KEGG pathways identified using DAVID. Relative abundance of each protein is expressed relative to the sample with the highest abundance (set to 1). NQ \u2013 not quantified. A number of the US12-21 mutant targets were also regulated by the US18 and US20 mutants (B7-H6, ULBP2, IL6ST, KIT, KITLG JAM3, ACVR1, ACVRL1, IFNGR1, JAM3, MPZL1, CXADR, ALCAM, SDC4, CD99, SDC1). A subset of these proteins were also regulated by the US14 and/or US16 mutants (KIT, KITLG, ACVR1, IFNGR1, JAM3, MPZL1, CD99, SDC1). We estimated p values for the ratios of each mutant compared to HCMV Merlin using Benjamini-Hochberg corrected Significance B values (Cox and Mann, 2008): *p<0.05, **p<0.0001. For proteomic series 1, ratios were calculated as US12 family deletion mutant / average HCMV and for proteomic series 2, US12 family deletion mutant / HCMV. All proteins quantified by 2 or more peptides were included in this calculation. SDC1 was quantified by a single peptide in proteomic series 2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013C) Quantitation of key US12 family targets in WCL samples (proteomic series 1 and 2 - comparative analysis of these proteins from PM samples is shown in Figure 3). We generally observed similar results for proteins quantified in both PM and WCL samples. Relative abundance of each protein is expressed relative to the sample with the highest abundance (set to 1). NQ \u2013 not quantified. P values were calculated as described in Figure 4: *p<0.05, **p<0.0001. MICB was only quantified by 1 peptide in proteomic series 1, and MICA, JAM3 and SDC4 by one peptide in proteomic series 2.\n\nNK cells continually monitor the levels of inhibitory and activating ligands on the surface of potential targets, thus one of the roles of the US12 family in re-modeling the PM proteome is compatible with its role in directly impacting NK cell recognition. To gain an overview of pathways targeted, the online bioinformatics resource DAVID (Database for Annotation, Visualisation and Intergrated Discovery; https://david.ncifcrf.gov/) was used to perform a KEGG (Kyoto Encyclopedia of Genes and Genomes) pathway enrichment analysis on proteins rescued\u00a0>3 fold by the deletion of the US12-21 block (Dennis et al., 2003; Huang et al., 2009). Multiple KEGG pathways were significantly enriched (data not shown), including natural killer cell-mediated cytotoxicity (MICA, MICB, ULBP2, IFNGR1), cytokine-cytokine receptor interaction (IL6ST, KIT, KITLG, ACVRL1, ACVR1, IFNGR1) and cell adhesion molecules (CAMs; JAM3, ICOSLG, PTPRM, MPZL1, CXADR, ALCAM, SDC4, CD99, SDC1). The modulation of cell adhesion molecules and chemokines/cytokines may additionally impact NK cell recognition. A further NK ligand, B7-H6, was not identified by DAVID analysis, but was also regulated by the US12-21 mutant. While MICA is a recognized target of US18 and US20 (Fielding et al., 2014), the regulation of the NK cell activating ligands B7H6, MICB and ULBP2 by the US12 family are novel.\n\n### Functional independence and co-operation exerted by family members\n\nA substantial subset of the proteins regulated by the US12-21 block mutant were similarly modulated by US18 and US20 (Figure 4, Figure 5), whereas US19 specifically targeted RALGPS2 (Figure 6). To determine the contribution of each individual US12 family member to the overall effects observed with the \u2018block\u2019 deletion mutant, Proteomic Series two compared infection with all the single gene deletion mutants (except the US19 deletion) to the parent HCMV (Figure 4B). Mass spectrometry quantified 7156 whole cell and 1312 PM proteins. We re-examined key candidate molecules identified by bioinformatic analysis of the US12-21 block deletion (Figure 4C\u2013E). A striking feature of this data was that the majority of these target proteins were regulated by both US18 and US20, with a subset additionally regulated to a lesser degree by US14 and/or US16 (Figure 4C\u2013E). Other US12 family members also had important effects, with US12 and US13 mutants regulating the NKG2D ligands (NKG2DL) ULBP2 and MICB respectively, US14 mutant regulating PTPRM, and the US15 mutant regulating IL6ST (Figure 4C\u2013E and Figure 6). Overall, the contribution made by a given family member varied dramatically ranging from the highly focused impact of US13 and US19 (one cellular target each) to the exceptionally promiscuous US20 (54 cellular targets) (Figure 6). Where a given protein was quantified both in PM and WCL samples, generally similar changes were observed in both samples (Figure 4 and 5). Interestingly, MICA was regulated by the deletion of US12-21 block to a much greater extent than any of the single deletion mutants, implying that multiple US12 family members may need to act in concert to optimize control over certain cellular targets (Figure 4C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig6-v3.jpg)\n\n**Figure 6.:** Proteins that were rescued by deletion of each US12 family member in the PM fraction of proteomic Series 2 (i.e. not including US19) were analyzed to determine which were additionally targeted by one or more US12 family members. Proteins were plotted in a matrix with unique protein targets on the lower diagonal of the plot (US12 family member compared with itself) and common protein targets in intersections with other US12 members. To identify the highest confidence targets of the US12-21 family for the purposes of this analysis and to generate a shortlist of US12-21 family PM \u2018hits\u2019, we employed the following strategy: we included proteins (a) exhibiting at least 3-fold rescue upon deletion of a given US12 family member, quantified by at least two peptides and annotated by GO to indicate a PM location. (b) validated by a corresponding\u00a0>2 fold change in at least one of (i) deletion of the US12-21 block (proteomic series 1 or 3), (ii) the biological repeat of US18 or US20 in proteomic series 1, (iii) the corresponding gene deletion in WCL proteomic series 2. This strategy identified all proteins shown in Figure 3. *US19 data was used from proteomic series 1.\n\nInfection with the US21 deletion mutant resulted in selective impairment of many late phase Tp3 and Tp5 (Temporal protein profile 3 and 5) HCMV proteins (Weekes et al., 2014), for example UL32 and UL99/pp28, and elevated expression of pUS20, whereas the HCMV US12-21 block mutant did not recapitulate this effect (Figure 7, with further proteomic data searchable in Excel spreadsheet Supplemental file 1). Our data are consistent with deletion of the US21 structural gene impacting on the transcriptional control of US20 (data not shown), and may contribute to a potential growth defect observed for this particular mutant. Therefore the activation of NK cells in response to US21 mutant-infected targets cannot be assigned directly to an effect of US21 (Figure 1). A definitive assessment of the function of US21 will require an alternative approach.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig7-v3.jpg)\n\n**Figure 7.:** Quantitation of US20, UL32 and UL99 in proteomic series 1\u20133 in both PM and WCL. Abundance of each protein is expressed relative to the sample with the highest abundance (set to 1). For proteomic series 1 and 2, p values were calculated as described in Figure 4: *p<0.05, **p<0.0001. US20 was only quantified by one peptide in proteomic series 1, WCL experiment.\n\nOf all PM proteins regulated\u00a0>3 fold by a member of the US12-21 family, 29% were regulated by 2 or more family members and 6% by 3 or more family members (Figure 6), although using a stringent 3-fold cutoff may underestimate the true incidence of co-regulation. Such co-regulation may suggest evolutionary pressure underpins the expansion of this gene family.\n\n### Effect of lysosomal inhibition on US12 family targets\n\nThe majority of proteins that the US12 family down regulates from the PM are also lost from the WCL, consistent with post-translational proteolysis or an overall reduction in expression. We previously found that US20 targets the NKG2DL MICA for degradation in lysosomes (Fielding et al., 2014). The DAVID pathway analysis identified increases in lysosomal proteins within the PM fraction of \u25b3US20-infected cells; the list of lysosomal proteins included a number of cathepsins and ATPases (PSAP, CTSD, ATP6V1E1, ATP6V1H, NPC2) (data not shown). These data suggest a role for US20 in regulating intracellular endo-lysosomal vesicular transport.\n\nTo determine if this is a more general mechanism for the whole US12-21 family, HFFs were infected with HCMV, the US12-21 block deletion mutant or HCMV in the presence of the lysosomal protease inhibitor leupeptin for 12 hr prior to harvest, and protein expression was analyzed by 10-plex TMT at 24 hr, 48 hr and 72 hr post-infection (Proteomic Series 3, Figure 8A).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig8-v3.jpg)\n\n**Figure 8.:** (A) Workflow of Proteomic Series 3. (B) Number of proteins targeted by the US12-21 block and additionally rescued\u00a0>2 fold in the dataset by the \u25b3US12-21 deletion mutant or rescued\u00a0>2 fold or\u00a0>1.5 fold by leupeptin treatment for both WCL and PM. C. Comparable degree of rescue of US12-21 target proteins by US12-21 deletion and leupeptin treatment. Quantitation of a subset of these proteins is shown relative to the maximum abundance (set to 1). p-values were calculated as described in Figure 4, for the ratios of leupeptin treatment or US12-21 deletion virus infection at each time point compared to the matched wild-type Merlin-infected control. *p<0.05, **p<0.0001. SDC1 was only quantified by one peptide.\n\nThe \u25b3US12-21 \u2018block\u2019 deletion caused substantial shifts in WCL proteins, with\u00a0>80 proteins rescued\u00a0>2 fold at 48 hr, compared to the parent viral infection (Figure 8B). Of these, 26% were also rescued\u00a0>2 fold and 51%\u00a0>\u00a01.5 fold with leupeptin suggesting that the US12 family targets multiple host proteins to the lysosome. Leupeptin treatment had a more limited effect on rescuing PM proteins back to the the cell surface (Figure 8B), consistent with our previous observation of intracellular accumulation of MICA without protein relocalisation to the cell surface during treatment with leupeptin or other lysosomal inhibitors (Fielding et al., 2014). Of the 21 proteins identified in Figure 4 within the key categories \u2018natural killer cell-mediated cytotoxicity\u2019, \u2018cytokine-cytokine receptor interaction\u2019 and \u2018cell adhesion molecules\u2019, 11 were rescued\u00a0>2 fold by leupeptin, with the remainder exhibiting 1.3\u20132-fold rescue (Figure 8C). MICB was clearly rescued by leupeptin treatment (Figure 8C). Interestingly, control of MICB and ULBP2 levels correlated with regulation of UL16 by US13 and US12 (Figure 9). However, leupeptin rescue of ULBP2 and UL16 was less convincing than for MICB (Figure 9). Although many cellular substrates of the US12 family are clearly being targeted for lysosomal degradation, there may be additional mechanisms by which this family regulates the PM proteome.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig9-v3.jpg)\n\n**Figure 9.:** Quantitation of UL16 in proteomic series 1\u20133 in both PM and WCL. Relative abundance of each protein is expressed relative to the sample with the highest abundance (set to 1). For proteomic series 1 and 2, p values were calculated as described in Figure 4: *p<0.05, **p<0.0001.\n\n### Validation of PM protein regulation by US12 family members\n\nWe used flow cytometry to validate a proportion of the various PM protein targets that are regulated by the US12 family (Figure 10). Next, we examined NKG2DL MICA and MICB (Figure 10). We found that MICA expression was rescued to a greater degree with the US12-21 block mutant than with the individual US18 or 20 deletion mutants (Figure 10). This is consistent with our previous analysis showing that a combined US18 and US20 deletion had a greater effect on cell surface MICA than single gene deletion mutants (Fielding et al., 2014). The US13 deletion mutant caused a minor, but consistent, elevation in cell surface expression of MICB. Other US12 family genes may yet contribute to regulating MICB, as there was a further increase in the US12-21 block mutant (Figures 10 and 4C).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig10-v3.jpg)\n\n**Figure 10.:** Flow cytometry confirmed proteomic data for proteins representative of each category enriched in the DAVID analysis. Staining in mock/US12 family member deletion mutant infections (blue line) is shown relative to the parental HCMV infection (red line). Flow cytometry was carried out for cell surface expression of MHC I (W6/32) as a control for HCMC infection and isotype antibody staining controls (with directly PE-conjugated IgG1, IgG2a or IgG2b antibodies or for unconjugated antibodies mIgG and an anti-mouse-AF647 conjugated secondary antibody). Infected cells were assessed by the % cells with down-regulated MHC I compared to the mock-infected cells (HCMV 94%, \u0394US12 94%, \u0394US13 94%, \u0394US14 83%, \u0394US15 95%, \u0394US16 97%, \u0394US17 85%, \u0394US18 94%, \u0394US19 96%, \u0394US20 94%, \u0394US21 94%, \u0394US12-21 96%). Results are representative of at least two independent experiments.\n\n### B7-H6 is an NK cell activating ligand targeted by US18 and US20\n\nThe fact that, in addition to targeting MICA, US18 and US20 together are also implicated in targeting B7-H6 is extraordinary. B7-H6 is a known ligand for NKp30 and exogenous expression in fibroblasts increased NK degranulation (Figure 11A\u2013C). Ectopic expression of US20, and to a lesser extent US18, from adenovirus vectors reduced levels of exogenously expressed B7-H6 detected by immunoblotting (Figure 11D). Both PM and WCL expression of B7-H6 was induced by the HCMV US18, US20 and US12-21 deletion mutants but not by the parental virus (Figure 4C, Figure 5A), which was confirmed by flow cytometry and immunoblot (Figures 10 and 12A). B7-H6 is therefore induced as a \u2018stress ligand\u2019 during productive infection, but its expression is controlled by US18 and US20, acting in concert, to target it for proteolysis (Figure 8C). Being the dominant ligand for the NK activating receptor NKp30, B7-H6 is potentially a critical target for HCMV.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig11-v3.jpg)\n\n**Figure 11.:** (A) HF-CARs were infected with control (RAd-CTRL) or B7-H6-expressing (RAd-B7-H6) adenovirus vectors (MOI 5). Cells were harvested 48 h p.i. and used as targets in a CD107 degranulation assay with buffy-coat derived PBMC from 3 separate donors in duplicate or triplicate. Results (shown as mean and SD) were analyzed by unpaired two-tailed Student\u2019s T-test. ***p<0.001, ****p<0.0001. (B and C) HF-CARs were infected with control (RAd-CTRL) or B7-H6-expressing (RAd-B7-H6) adenovirus vectors (MOI 5). Cells were harvested 48 h p.i. and B7-H6 cell surface expression analyzed by flow cytometry (B) or western blot (C). Results are representative of at least 2 independent experiments. (D) HF-CARs were infected with adenovirus control (CTRL), US18-expressing adenovirus, US20-expressing adenovirus or a combination of both US18 and US20 (MOI 5 each, made up to a total MOI of 10 with RAd-CTRL). After 24 hr incubation, HF-CARs were infected with adenovirus control (CTRL) or B7-H6-expressing adenovirus (B7\u2013H6) at MOI 5 as indicated before incubation for a further 48 hr. Whole cell lysates were prepared and analysed by immunoblotting with the antibodies indicated. Results are representative of two independent experiments.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig12-v3.jpg)\n\n**Figure 12.:** (A) Whole cell lysates were prepared from mock, HCMV or the series of US12 family deletion mutant infected fibroblasts and analyzed by immunoblotting with antibodies specific for B7-H6 (CH31) or actin. Results are representative of two independent experiments. (B) An NKp30-responsive 2B4 reporter cell line containing a NFAT-GFP reporter construct (CT299) was incubated for 24 hr with mock, HCMV or the series of US12 family deletion mutant infected fibroblasts in triplicate. Fixed cells were then analyzed for GFP fluorescence by flow cytometry compared to cells incubated with no target fibroblasts. Results are expressed as the % GFP positive reporter cells (mean and SD) and were analyzed by unpaired two-tailed Student\u2019s T-test. Results are representative of two independent experiments. (C) HF-TERTs were transfected with control (C) or B7-H6 (B7) siRNAs for 24 hr prior to infection with the parent HCMV, \u25b3US18, \u25b3US20 or \u25b3US12-21 mutants for 72 hr. Cells were then incubated for 24 hr with CT299 NKp30 reporter cells in triplicate and GFP+ cells determined by flow cytometry, and analysed by unpaired two-tailed Student\u2019s t-test. Results (mean and SD) are representative of two independent experiments. (D)\u00a0HF-TERTs infected with HCMV, \u25b3US18, \u25b3US20 or \u25b3US12-21 mutants were incubated for 24 hr with CT299 NKp30 reporter cells, in the presence isotype control (C) or B7-H6 blocking antibodies (B7) in triplicate, GFP+ cells determined by flow cytometry and analyzed by unpaired two-tailed Student\u2019s t-test. Results (mean and SD) are representative of two independent experiments.\n\nWe investigated the effect of the US12 family members upon activation of an NKp30-responsive reporter cell line, and found that the presence of US18 and US20 was required to inhibit reporter activity (Figure 12B). Reporter cell fluorescence could be inhibited either by transfection of B7-H6 specific siRNA or by use of a B7-H6 specific blocking antibody (CH31) (Figure 12C and D respectively). The presence of both US18 and US20 was required to prevent B7-H6 activating the NKp30 reporter function.\n\nWe sought to differentiate the functional impact exerted by US18 and US20 on B7-H6 and MICA. B7-H6 knockdown in cells infected with HCMV US18 and US20 deletion mutants was correspondingly able to reduce donor NK cell activation (Figure 13A and B). The impact of B7-H6 knockdown on the HCMV US12-21 block mutant was more variable and consistent with the US12 gene family encoding additional NK modulating functions (Figure 13B, Figure 1). A B7-H6 blocking antibody had an even more pronounced effect, reducing NK activation in response to the US18, US20 and US12-21 deletion mutants to levels of the parental HCMV control (Figure 13C). These results are consistent with B7-H6 playing a major role in NK cell recognition of HCMV-infected cells, a function that is countered by the US12 family members US18 and US20.\n\n![Figure 13.](https://cdn.elifesciences.org/articles/22206/elife-22206-fig13-v3.jpg)\n\n**Figure 13.:** (A and B)\u00a0HF-TERTs were transfected with control (C) or B7-H6 (B7) siRNAs for 24 hr prior to infection with the parent HCMV, \u25b3US18, \u25b3US20 or \u25b3US12-21 mutants. Cells were harvested 72 h p.i. and B7-H6 cell surface expression analyzed by flow cytometry (E) or used as targets in a CD107 degranulation assay with donor-derived PBMC in triplicate (F). Results (mean and SD) were analyzed by unpaired two-tailed Student\u2019s t-test and are representative of two independent experiments using 2 separate donors in each. Infected cells were assessed by the % cells with down-regulated MHC I compared to the mock-infected cells (HCMV CTRL siRNA 95%, \u0394US18 CTRL siRNA 91%, \u0394US20 CTRL siRNA 93%, \u0394US12-21 CTRL siRNA 86%, HCMV B7-H6 siRNA 96%, \u0394US18 B7-H6 siRNA 84%, \u0394US20 B7-H6 siRNA 96%, \u0394US12-21 B7-H6 siRNA 79%). (C)\u00a0HF-TERTs infected with HCMV, \u25b3US18, \u25b3US20 or \u25b3US12-21 mutants were used as targets in a CD107 degranulation assay with donor-derived PBMC, in the presence isotype control (C) or B7-H6 (B7) blocking antibodies in triplicate. Results (mean and SD) were analyzed by unpaired two-tailed Student\u2019s t-test and are shown for two separate donors. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.\n\n## Discussion\n\nThe HCMV genome contains 15 gene families of various sizes that have been acquired during evolution to promote virus persistence. Clusters of US12-related genes can be detected in cytomegaloviruses of New World primates, i.e. Green Monkey and Owl Monkey CMVs, thus the capture and expansion of an ancestral precursor presumably took place over 41 million years ago (Davison et al., 2013). Within Cynomolgus and Rhesus macaques (Old World primates), chimpanzee and human CMVs, the US12 family is maintained as a well conserved contiguous tandem array of 10\u201311 genes located in the same relative position on each genome. Amongst circulating HCMV clinical strains, the US12 family exhibits relatively high levels of sequence conservation and genetic integrity (Sijmons et al., 2015).\n\nThe complexity of the HCMV genome, its restricted host range in vitro and protracted replication cycle has frustrated studies into HCMV gene function. However, the advent of high-resolution multiplexed proteomics is revolutionizing our understanding of how HCMV orchestrates host cell gene expression and evades host defenses (Weekes et al., 2014; Hsu et al., 2015). By systematically analyzing a bespoke panel of HCMV deletion mutants, we have discovered that the US12 family selectively targets a broad range of plasma membrane proteins that include, not only NK cell activating ligands, but also T-cell co-stimulatory molecules, cell adhesion molecules, and cytokine/cytokine receptors. The diversity of proteins targeted by many of the US12 family implies a broad strategy of redirecting cell surface receptors. A sizeable proportion of targeted plasma membrane proteins do not accumulate internally, but are degraded in lysosomes, as indicated by rescue with the inhibitor leupeptin. The overlap that exists between US12 gene family targets with those of the KSHV K5 viral E3 ubiquitin ligase (MICA, MICB, B7 family, ALCAM, IFNGR1, PTPRM, EPHA2, CD99, MPZL1/2) could represent convergent evolution and/or targeting of similar cellular pathways (Timms et al., 2013).\n\nThe US12 family has a major impact on NK cell recognition with four US12 family members US12, US14, US18 and US20 consistently contributing toward significant levels of NK cell protection. Although the HCMV US21 deletion mutant also scored in functional assays, this could be due to enhanced expression of pUS20 associated with this construct. The NKG2DL MICB and ULBP2 are strongly upregulated during HCMV infection, but fail to reach the cell surface as they are retained in the ER by the NK evasion function gpUL16 (Rolle et al., 2003). Our proteomic data reveal that deletion of US12, US13 and US20 leads to increased cell surface and intracellular expression of MICB, ULBP2 and UL16 itself (Figure 9). These observations are consistent with US12 family members acting in concert to direct UL16, MICB and ULBP2 towards proteolytic degradation, with leupeptin treatment clearly able to rescue MICB, and this may contribute to the NK evasion properties of US12 (Figure 1). They also imply that some of the effects of the US12 family could be the result of co-operation with other HCMV genes. There is some precedent for this situation, although not previously on such a wide scale, as co-operation between US2 and UL141 was observed in the proteasomal degradation of some protein targets e.g. CD112 (Hsu et al., 2015). None of the US14 targets are recognized NK cell ligands, suggesting that this gene product utilizes a novel NK evasion mechanism.\n\nB7-H6 is the major ligand identified for the natural cytotoxicity receptor (NCR) NKp30 and a tumor antigen (Brandt et al., 2009). Previously, B7-H6 expression was shown to be induced by inflammatory stimuli, for example pro-inflammatory cytokines and bacterial-derived toll-like receptor (TLR) ligands (Matta et al., 2013). We show here that B7-H6 expression is induced as a stress protein by HCMV infection (and potentially other virus infections) and that US18 and US20 act together to suppress cell surface expression of B7-H6 in the context of HCMV, thereby inhibiting NK cell activation. US18 and US20 were also able to regulate exogenously expressed B7-H6 when expressed individually. Therefore, they appear to target B7-H6 directly and not cellular pathways leading to the expression of B7-H6. The control of B7-H6 is likely to be of major significance as NKp30 is expressed on \u03b3\u03b4 T-cells (V\u03b42-) that are induced during HCMV infection post-transplantation and correlate with control of disease (Merville et al., 2000; Lafarge et al., 2001; Correia et al., 2011).\n\nThe US12 family clearly impacts on a broad range of cellular functions including adhesion molecules and cytokine receptors. Many of these adhesion molecules play roles in co-stimulation or immune synapse formation of T-cells e.g. ALCAM, ICOSLG, CXADR (Hassan et al., 2004; Wang et al., 2000; Witherden et al., 2010). The US12 family targets pro-inflammatory mediators, such as multiple members of the tumour necrosis factor receptor (TNFR) superfamily (TNFRSF8, TNFRSF12A, NGFR, LTBR), gp130 (IL6ST), the IL-6 receptor signaling receptor, pannexin-1 (PANX1) and the TLR4 ligand high-mobility group protein B1 (HMGB1) (Croft et al., 2013; Kanneganti et al., 2007; Park et al., 2004). IL6ST signaling may also have antiviral effects in the context of HCMV (Harwardt et al., 2016), which was suggested by the finding that disruption of gp130 STAT3 binding resulted in IFN-like signaling through STAT1(Costa-Pereira et al., 2002).\n\nThe closest cellular homologues to the US12 family are the TMBIM family with recognised functions in controlling apoptosis, ER stress, ROS production, actin production, glucose metabolism and protein trafficking (Rojas-Rivera and Hetz, 2015). The US12 family may have arisen through an \u2018accordion\u2019 gene expansion from a \u2018captured\u2019 ancestor TMBIM gene. Out of the entire US12 family, US21 displays the highest level of homology with TMBIM1/4, with the homologous region limited to the transmembrane domain and loops (unpublished observations, [Lesniewski et al., 2006; Holzerlandt et al., 2002]). The divergence of the US12 and TMBIM families is also reflected in their different membrane topologies, as TMBIM family have cytosolic N- and C-termini with six full transmembrane spanning regions, and US20 has a cytosolic N-terminus and lumenal C-terminus (Carrara et al., 2012; Cavaletto et al., 2015). The functional relevance of the US12 family/TMBIM homology remains unclear, although it may represent a \u2018functional scaffold\u2019 (Lesniewski et al., 2006), as a number of TMBIMs also target proteins for lysosomal degradation (Lee et al., 2012; Yamaji et al., 2010).\n\nOur data indicate that the US12 family targets multiple host immune ligands, consistent with the family having arisen, been selected and diverged in function as a consequence of immune selection. US12 family genes differ from the majority of characterised immune evasion viral genes, as they act together and do not exhibit single gene effects. The targeting of multiple proteins by a HCMV immunevasin or co-operation between HCMV gene products is not unprecedented, but was not previously observed on this scale or with this diversity of target proteins (Tomasec et al., 2005; Prod'homme et al., 2010; Smith et al., 2013; Hsu et al., 2015). The majority of US12 family targets contain an immunoglobulin-like domain, including the MHC I-related proteins, MICA and B7-H6. Our data highlight the importance that HCMV gene families are likely to play in terms of HCMV persistence in vivo and identifies the US12 family as a critical region for regulation of the host immune response.\n\n## Materials and methods\n\n### Ethics statement\n\nHealthy adult volunteers provided blood for this study following written informed consent (approved by the Cardiff University School of Medicine Ethics Committee Ref. no: 10/20) or buffy coats provided by the Welsh Blood Service, following informed consent.\n\n### Cell lines\n\nHuman foreskin fibroblasts (HFFs), HFFs immortalized by human telomerase (HF-TERT), HF-TERTs transfected with the Coxsackie-adenovirus receptor (HF-CAR), were maintained at 37\u00b0C in 5% CO2 in growth medium (Dulbecco\u2019s minimal essential medium (DMEM) supplemented with penicillin/streptomycin and 10% fetal calf serum (Invitrogen, Paisley, UK) (McSharry et al., 2001).\n\n### Viruses\n\nHCMV deletion mutants were generated by recombineering of the bacterial artificial chromosome (BAC) of HCMV strain Merlin (GenBank accession number GU179001.1), as described previously (Stanton et al., 2010). Strain Merlin contains the complete genetic complement of HCMV, and is frame shifted in two genes (RL13\u2013, UL128\u2013). Alterations to the BAC were monitored by local PCR and Sanger sequencing, and the entire genomes of the viruses were confirmed by Illumina sequencing as described previously (Murrell et al., 2016). Details of the viruses are provided in Table 1 and a list of primers used in their construction and local sequencing of the BACs are provided in Tables 2 and 3 respectively. Primers used in the construction of the HCMV \u25b3US18 and \u25b3US20 deletion mutants were detailed previously (Fielding et al., 2014).\n\n**Table 2.**\n Primers used in the construction of the HCMV US12 deletion mutants library.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer</th>\n      <th>Sequence (5\u2019\u00a0&gt;\u00a03\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>US12 GalK For</td>\n      <td>GCGGGGGACAAAGGACAGTACGACAGATTAGGTGATAGAAACGTTTTTTTCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US12 GalK Rev</td>\n      <td>AAACTTGCCGGGTACCTGAAGCCCCGACGACTGTTCGTCGAGCACCCG TCTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US12 Delete</td>\n      <td>GCGGGGGACAAAGGACAGTACGACAGATTAGGTGATAGAAACGTTTTTTTGACGGGTGCTCGACGAACAGTCGTCGGGGCTTCAGGTACCCGGCAAGTTT</td>\n    </tr>\n    <tr>\n      <td>US13 GalK For</td>\n      <td>CTTCAGGTACCCGGCAAGTTTTATAGAGAAAGGGGGACGATGGGTGGTGGCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US13 GalK Rev</td>\n      <td>GAAGACTCCACCGAGACGCTCACCCGTTCACTCGGGCGCATCACCCGC CTTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US13 Delete</td>\n      <td>CTTCAGGTACCCGGCAAGTTTTATAGAGAAAGGGGGACGATGGGTGGTGGAGGCGGGTGATGCGCCCGAGTGAACGGGTGAGCGTCTCGGTGGAGTCTTC</td>\n    </tr>\n    <tr>\n      <td>US14 GalK For</td>\n      <td>GAGTGAACGGGTGAGCGTCTCGGTGGAGTCTTCTTATAAACCAGCGGG TCCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US14 GalK Rev</td>\n      <td>CTGTAGCTTCGAGACCTTGCGGATACGCCGCCGGGCGCTGCGGTCCCG ACTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US14 Delete</td>\n      <td>GAGTGAACGGGTGAGCGTCTCGGTGGAGTCTTCTTATAAACCAGCGGGTCGTCGGGACCGCAGCGCCCGGCGGCGTATCCGCAAGGTCTCGAAGCTACAG</td>\n    </tr>\n    <tr>\n      <td>US15 GalK For</td>\n      <td>CTCCATGTCGGGACCGCAGCGCCCGGCGGCGTATCCGCAAGGTCTCGAAGCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US15 GalK Rev</td>\n      <td>CGGAACTGGTTTTCGGACAGAGCAGCCGTTTCCAGAGAACGCAGCGCA CCTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US15 Delete</td>\n      <td>CTCCATGTCGGGACCGCAGCGCCCGGCGGCGTATCCGCAAGGTCTCGAAGGGTGCGCTGCGTTCTCTGGAAACGGCTGCTCTGTCCGAAAACCAGTTCCG</td>\n    </tr>\n    <tr>\n      <td>US16 GalK For</td>\n      <td>CGTTCTCTGGAAACGGCTGCTCTGTCCGAAAACCAGTTCCGAACGAAAATCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US16 GalK Rev</td>\n      <td>CCCCACGGATCTCGCGTCTTAGACGCGCGGTCATATAGCCTCCGGCTG TCTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US16 Delete</td>\n      <td>CGTTCTCTGGAAACGGCTGCTCTGTCCGAAAACCAGTTCCGAACGAAAATGACAGCCGGAGGCTATATGACCGCGCGTCTAAGACGCGAGATCCGTGGGG</td>\n    </tr>\n    <tr>\n      <td>US17 GalK For</td>\n      <td>TTGGTGGAGACGGCCGGCGCGGCGGGTGGGGGAAACGACGAGTTTTTCCGCCTGTTGACAATTAATCATCGGCA</td>\n    </tr>\n    <tr>\n      <td>US17 GalK Rev</td>\n      <td>ACACTCTATAAACGGTTTCTCATACGCGCCTTTTGATAGCCACCGCCG TCTCAGCACTGTCCTGCTCCTT</td>\n    </tr>\n    <tr>\n      <td>US17 Delete</td>\n      <td>TTGGTGGAGACGGCCGGCGCGGCGGGTGGGGGAAACGACGAGTTTTTCCGGACGGCGGTGGCTATCAAAAGGCGCGTATGAGAAACCGTTTATAGAGTGT</td>\n    </tr>\n    <tr>\n      <td>US19 SacB For</td>\n      <td>CAGCACCCGGTTACCGCGGATTTGATTGACGTCACGAGTGTGGTCAAACCGTGGCGGCACCCTGTATCCGACCCGTCGCCTGTGACGGAAGATCACTTCG</td>\n    </tr>\n    <tr>\n      <td>US19 SacB Rev</td>\n      <td>GCTACGCCTCTATGTCGAAAATGTGGCTTTATTCATCGGCATGTACCATCTTCTGAGGCTCTGGTTGTGGAGCCCATGACTGAGGTTCTTATGGCTCTTG</td>\n    </tr>\n    <tr>\n      <td>US19 Delete</td>\n      <td>ACGTCACGAGTGTGGTCAAACCGTGGCGGCACCCTGTATCCGACCCGTCGGGCGACAAGCGCGGCTGCTGTGAAAACGGGCGCGGTTTTATAGGCATTAG</td>\n    </tr>\n    <tr>\n      <td>US21 SacB For</td>\n      <td>TGCGGCGCACCTACCCTTCTCTTATACACAAGCGAGCGAGTGGGGCACGGTGACGTGGTCACGCCGCGGACACGTCGACCTGTGACGGAAGATCACTTCG</td>\n    </tr>\n    <tr>\n      <td>US21 SacB Rev</td>\n      <td>CAGCGCCCACACTGCTCAGACGACGGTCGCTGCGACGGTCGCTGCCACAGCAGCGGCGTCGCCCCAGTTCGTCTCCTAACTGAGGTTCTTATGGCTCTTG</td>\n    </tr>\n    <tr>\n      <td>US21 Delete</td>\n      <td>CAAGCGAGCGAGTGGGGCACGGTGACGTGGTCACGCCGCGGACACGTCGAGGCGGCAACGCCGGCGGTTATCGCCGAGATTCGTCTAAATACACGAAGCG</td>\n    </tr>\n    <tr>\n      <td>US12-21 Delete</td>\n      <td>GCGGGGGACAAAGGACAGTACGACAGATTAGGTGATAGAAACGTTTTTTTGGCGGCAACGCCGGCGGTTATCGCCGAGATTCGTCTAAATACACGAAGCG</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 3.**\n Primers used in the local sequencing of the HCMV US12 deletion mutant library\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Primer</th>\n      <th>Sequence (5\u2019\u00a0&gt;\u00a03\u2019)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>US12 Seq For</td>\n      <td>CCCTGTCTAGACTCAAAAGCTG</td>\n    </tr>\n    <tr>\n      <td>US12 Seq Rev</td>\n      <td>ATCGTCCCCCTTTCTCTATA</td>\n    </tr>\n    <tr>\n      <td>US13 Seq For</td>\n      <td>GCCGAGTGGCTCGCC</td>\n    </tr>\n    <tr>\n      <td>US13 Seq Rev</td>\n      <td>CTGGGCACCTATCATCATTA</td>\n    </tr>\n    <tr>\n      <td>US14 Seq For</td>\n      <td>GGAGGGAAGCCCATTGC</td>\n    </tr>\n    <tr>\n      <td>US14 Seq Rev</td>\n      <td>TCATTACCTGTCTAGCCG</td>\n    </tr>\n    <tr>\n      <td>US15 Seq For</td>\n      <td>CGGACGCGGCTTCC</td>\n    </tr>\n    <tr>\n      <td>US15 Seq Rev</td>\n      <td>GTCGCTACAGCTCTTTATTA</td>\n    </tr>\n    <tr>\n      <td>US16 Seq For</td>\n      <td>GGGGCACGTAGATGACCG</td>\n    </tr>\n    <tr>\n      <td>US16 Seq Rev</td>\n      <td>CTCATTAGACAAACTCATCG</td>\n    </tr>\n    <tr>\n      <td>US17 Seq For</td>\n      <td>GTCTAAGACGCGAGATCCG</td>\n    </tr>\n    <tr>\n      <td>US17 Seq Rev</td>\n      <td>CCCAGTAGACAGACAGAACA</td>\n    </tr>\n    <tr>\n      <td>US19 Seq For</td>\n      <td>GGAGCGGCACGATGGTGACC</td>\n    </tr>\n    <tr>\n      <td>US19 Seq Rev</td>\n      <td>TCTGCCCACCTAACCAATGC</td>\n    </tr>\n    <tr>\n      <td>US21 Seq For</td>\n      <td>GCTGAAAGATGAAGATGGCG</td>\n    </tr>\n    <tr>\n      <td>US21 Seq Rev</td>\n      <td>ACCCGACCAGATGGGAGACG</td>\n    </tr>\n  </tbody>\n</table>\n\nThe replication-deficient adenovirus vector (RAd-CTRL, pAL1253) and adenovirus vectors expressing US18 (RAd-US18) and US20 (RAd-US20) from the Merlin strain of HCMV have been described previously (Fielding et al., 2014). A B7-H6 (NCR3LG1) expressing adenovirus was generated by synthesising the B7-H6 CDS (corresponding to Accession number NM_001202439.2, bases 209\u20131573 retaining the stop codon) with 5\u2019 and 3\u2019 arms of homology to the AdZ BAC (corresponding to the For and Rev primers used in the AdZ recombineering protocol) (Stanton et al., 2008) and flanking EcoRI sites (gene synthesis from Genscript, Piscataway, NJ). The cassette containing the B7-H6 CDS and both arms of homology was released from the pUC57 vector by EcoRI digest, gel purified and inserted into pAL1141 by recombineering to produce pAL1593. BAC DNA of pAL1593 purified by maxiprep (Macherey-Nagel, Dueren, Germany) was transfected into 293 TREX to generate the adenovirus, as previously described (Stanton et al., 2008).\n\n### HCMV infections\n\nFor proteomic analysis, 24 hr prior to each infection 1.5 \u00d7 107 HFFs were plated in a 150 cm2 flask. Cells were sequentially infected at multiplicity of infection 10 with HCMV strain Merlin\u00a0>90% of cells were routinely infected using this approach as assessed by MHC I down-regulation. Infections were staggered such that all flasks were harvested simultaneously. For NK cell degranulation, flow cytometry and western blot analyses, cells were seeded in growth medium at appropriate cell densities (1 \u00d7 106 cells for a 25 cm2 flask). The following day, the cells were infected with virus at the required multiplicity of infection in an appropriate volume of growth medium (2 ml for a 25 cm2 flask) for 2 hr on a rocker at 37\u00b0C in 5% CO2. The innoculum was then replaced with fresh growth medium (7 ml for a 25 cm2 flask), and the cells were incubated for the required times. Fetal calf serum was omitted from the growth medium for mock and HCMV infections. For inhibitor studies, cells were treated 12 hr prior to harvesting with lysosomal inhibitors (leupeptin 200 \u00b5M, Merck Millipore, Watford, UK; Cat. no. 108975) in DMEM. For siRNA experiments, cells were seeded in a 25 cm2 flask at 8 \u00d7 105 cells/flask 24 hr prior to transfection and then transfected in Optimem medium (Invitrogen) with 120 pmol B7-H6 (SI04761351, Hs_DKFZp686O24166_5, Qiagen, Manchester, UK\ufeff) or control siRNA (AllStar Negative Control siRNA, 1027281, Qiagen) using Lipofectamine RNAiMax (Invitrogen) for a further 24 hr before infection with HCMV (MOI 20) in serum free DMEM for a further 72 hr.\n\n### Adenovirus infections\n\nAdenovirus infections were carried out in HF-CAR (MOI 5). Cells were seeded in growth medium at appropriate cell densities (1 \u00d7 106 cells for a 25 cm2 flask). The following day, the cells were infected with virus at the required multiplicity of infection in an appropriate volume of growth medium (2 ml for a 25 cm2 flask) for 2 hr on a rocker at 37\u00b0C in 5% CO2. The inoculum was then replaced with fresh growth medium (7 ml for a 25 cm2 flask), and the cells were incubated for the required times.\n\n### Protein isolation, peptide labeling with tandem mass tags\n\nPreparation of PM and WCL protein and peptide samples was performed as described previously (Weekes et al., 2014). For PM analysis, 100% of each tryptic peptide sample was labeled with TMT reagent, and 6 fractions generated from combined peptide samples by tip-based strong cation exchange. For WCL analysis, cells were lysed in 6\u00a0M Guanidine/50 mM HEPES pH8.5 then processed as described (Weekes et al., 2014). Proteins were digested with LysC then Trypsin. Peptides were labeled with TMT reagent, and 12 fractions generated by high pH reversed phase HPLC.\n\n### Mass spectrometry and data analysis\n\nMass spectrometry and data analysis were performed as described previously (Weekes et al., 2014). Briefly, we performed mass spectrometry using an Orbitrap Fusion, and quantified TMT reporter ions from the MS3 scan (McAlister et al., 2012; Ting et al., 2011). Peptides were identified and quantified using a Sequest-based in-house software pipeline. A combined database was searched, consisting of: (a) human Uniprot, (b) Merlin strain HCMV Uniprot and (c) all additional novel HCMV ORFs (Stern-Ginossar et al., 2012). Peptides spectral matches (PSM) were filtered to a 1% peptide false discovery rate (FDR) using linear discriminant analysis (Huttlin et al., 2010). The resulting dataset was further collapsed to a final protein-level FDR of 1%. Protein assembly was guided by principles of parsimony. Where all PSM from a given HCMV protein could be explained either by a canonical gene or novel ORF, the canonical gene was picked in preference. Proteins were quantified by summing TMT reporter ion counts across all matching PSM after filtering based on isolation specificity (Pease et al., 2013). Reverse and contaminant proteins were removed, and protein quantitation values were exported for normalization and further analysis in Excel. Where all PSMs from a given HCMV protein could be explained either by a canonical gene or novel ORF, the canonical gene was picked in preference. For five viral proteins that had related novel ORFs (N-terminal extensions of the viral protein), some peptides could either have originated either from the canonical protein or the novel ORF. In these cases, each of the novel ORFs were quantified based only on unique peptides that could only have originated from that ORF. Peptides that could either have originated from the canonical protein or the novel ORF were assigned to the canonical protein. We estimated p values for the ratios of each mutant compared to HCMV Merlin or leupeptin-treated cells infected with HCMV Merlin to HCMV Merlin-infected cells, using Benjamini-Hochberg corrected Significance B values (Cox and Mann, 2008). Hierarchical clustering was performed using centroid linkage with Pearson correlation. The Database for Annotation, Visualization and Integrated Discovery (DAVID, RRID:SCR_001881) was used to determine protein family enrichment amongst KEGG pathways (Huang et al., 2009). A given cluster was always searched against a background of all proteins quantified within the relevant experiment.\n\nThe mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (Vizca\u00edno et al., 2014) via the PRIDE partner repository (Vizca\u00edno et al., 2016) with the dataset identifier PXD005883.\n\n### Flow cytometric analysis of cell surface marker expression\n\nFlow cytometry was performed as described previously (Fielding et al., 2014), except HF-TERTs were harvested using HyQtase (Thermo Fisher Scientific, Paisley, UK) for 3 min at 37\u00b0C, instead of Trypsin/EDTA. The following phycoerytherin (PE)-conjugated antibodies were used at the indicated dilutions (200 \u00b5l per stain): anti-CD166/ALCAM (Biolegend, London, UK, Clone 3A6, Cat. no. 343904, 1:80, RRID:AB_2289302), anti-EPHA2 (Biolegend, Clone SHM16, Cat. no. 356804, 1:80, RRID:AB_2561807), anti-CD323/JAM3 (Biolegend, Clone SHM33, Cat. no. 356704, 1:80, RRID:AB_2561802), anti-CD130/IL6ST (Biolegend, Clone 2E1B02, Cat. no. 362003, 1:80, RRID:AB_2563401), IgG1 isotype (Biolegend, Clone MOPC-21, Cat. no. 400112, 1:80, RRID:AB_326434), mouse IgG2a isotype (Biolegend, Clone MOPC-173, Cat. no. 400212, 1:160, RRID:AB_326460) and mouse IgG2b isotype (Biolegend, Clone MPC-11, Cat. no. 400314, 1:80, RRID:AB_326492). The following unconjugated antibodies were used at the indicated dilutions (200 \u00b5l per stain): anti-CXADR/CAR (Merck Millipore, Cat no. 05\u2013644, Clone RmcB, 1:500, RRID:AB_309871), anti-CD266/TWEAK R/TNFRSF12A (Biolegend, Clone ITEM-4, Cat. no. 314102, 1:200, RRID:AB_2240752), anti-MICA (BAMOMAB, Graefelfing, Germany, Cat. no. AM01, 1:400, RRID:AB_2636811), anti-MICB (BAMOMAB, Cat. no. BM02, 1:400, RRID:AB_2636812), anti-B7-H6 (Biotechne R and D Systems, Abingdon, UK, Clone 875001, Cat. no. MAB7144, 500 \u00b5g/ml, 1:50, RRID:AB_2636810), anti-MHC I (BioRAd/AbD Serotec, Kidlington, UK,\u00a0Clone W6/32, MCA81EL, 1:1000, RRID:AB_324063) and mouse IgG (Santa Cruz Biotechnology, Heidelberg, Germany, Cat. no. Sc-2025, 400 \u00b5g/ml, 1:40, RRID:AB_737182 or Sigma Aldritch, Gillingham, UK,\u00a0Cat. no. I-5381 1 mg/ml, 1:100, RRID:AB_1163670), followed by an Alexa Fluor 647 goat anti-mouse IgG secondary antibody (Thermo Fisher Scientific, Cat. no. A21237, 1:500, RRID:AB_2535806).\n\n### Immunoblotting\n\nWhole cell lysates were prepared in 1x Nupage gel sample buffer (Thermo Fisher Scientific) plus 10 mM DTT and samples were denatured at 95\u00b0C or 50\u00b0C (US18 and US20 adenovirus experiment) for 10\u00a0mins. SDS-PAGE and subsequent immunoblotting was carried out as previously described either using X-ray film or a\u00a0G:Box Chemix-xx6 GeneSys system (Syngene, Cambridge, UK) to visualise the blots (Fielding et al., 2014). Membranes were probed with antibodies directed against B7-H6 (non-commercial CH31 monoclonal, purified at 2 \u00b5g/ml final or hybridoma supernatant 1:5), anti-V5 antibody (BioRad/AbD Serotec, Cat. no. MCA1360, 1:2000, RRID:AB_322378) and actin (Sigma Aldritch, Cat. no A2066, 1:5000, RRID:AB_476693), followed by HRP-conjugated goat anti-mouse or anti-rabbit antibodies (BioRad/Ab Serotec, Cat. no. 170\u20136516, RRID:AB_11125547 and 170\u20136515, RRID:AB_11125142 respectively, both 1:5000).\n\n### NK degranulation assays\n\nNK degranulation assays were performed as described previously using anti-CD107a-FITC (Cat. no. 555800, BD Biosciences, Oxford, UK, RRID:AB_396134) or isotype control-FITC (Cat no. 555748, BD Biosciences, RRID:AB_396090) and anti-CD3-PE-Cy7 (Cat. no. 737657, Beckman Coulter, High Wycombe, UK RRID:AB_2636813) and anti-CD56-PE (Cat. no. A07788, Beckman Coulter, RRID:AB_2636814) antibodies and PBMC derived from buffy coats or donor blood, except that infected HF-TERTs were harvested using HyQtase for 3 min at 37\u00b0C, instead of Trypsin/EDTA (Prod'homme et al., 2007, 2010; Fielding et al., 2014). Blocking experiments were performed as previously described except using B7-H6 blocking antibody (CH31) or isotype IgG1 control antibody at 10 \u00b5g/ml (Biolegend, Cat. no. 401404, Clone MG1-45, RRID:AB_345426 or Biolegend, Cat no. 401402 Clone MG1-45, RRID:AB_345424) (Fielding et al., 2014).\n\n### NKp30 reporter assays\n\nHF-TERTs were seeded into 96-well plates and either mock-infected or infected with HCMV or US12 family deletion mutants (MOI 10) for 72 hr. The CT299 reporter line (2B4 cells stably transfected with an NFAT-GFP reporter and NKp30) was washed in complete RPMI and 50,000 reporter cells added per well (5:1 ratio of reporter to target cells). In some experiments, the B7-H6 blocking antibody (CH31) or isotype IgG1 control antibody (Biolegend, Cat. no. 401404, Clone MG1-45, RRID:AB_345426 or Biolegend Cat no. 401402 Clone MG1-45, RRID:AB_345424) at 10 \u00b5g/ml were also added to the wells. After 24 hr incubation, reporters were harvested, washed in FACS buffer and fixed with 2% paraformaldehyde before analysis by flow cytometry.\n",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "cf176ab4-2ceb-4201-89cc-5bd298ce96e2",
+      "submission_id": "cd45060c-2256-4f18-8e00-5966a6c1d8ac",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wayne M Yokoyama, Howard Hughes Medical Institute, Washington University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22206.022](https://doi.org/10.7554/eLife.22206.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Control of immune ligands by members of a cytomegalovirus gene expansion suppresses natural killer cell activation\" for consideration by eLife. Your article has been favorably evaluated by Wenhui Li (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Michael G Brown (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nHuman cytomegalovirus (HCMV) devotes a significant portion of its dsDNA genome to produce molecules that improve \"viral fitness,\" most often resulting in immune evasion. Here Fielding et al. focus on a region of the HCMV genome, termed US21 family (US12-US21). They took a comprehensive mass spectrometry approach to determine which molecules are affected by deleting these viral genes, using single and complete US21 family knockout viruses. The data strongly support the overall conclusion that these molecules affect NK cell activation against virus-infected cells. That the US21 family affects NKG2D ligands is not surprising but they also demonstrate nicely that US18 and US20 affect expression of B7-H6, that is induced upon viral infection with mutants lacking either one of these ORFs. Overall, the manuscript was favorably viewed but the reviewers felt that a number of issues need to be addressed.\n\nEssential revisions:\n\nWhile the comments of the reviewers are attached and should be addressed, the reviewers request that the authors specifically address the following major points in a revision.\n\n1) The regulation of B7-H6 by ectopic expression of US18 and/or US20. See reviewers #1 and #3.\n\n2) Explicit demonstration that US20 effect on MIC-A is impacted by US21. This is mentioned as data not shown but the reviewers would like the authors to show the data. See reviewer #3.\n\n3) The% infected cells should be included in each of the figure legends. See reviewer #3.\n\n4) The statistical analysis of the experiments. See reviewer #2.\n\nReviewer #1:\n\nIt would be informative to express US18 and US20 individually or together by transfection and determine their effects on B7-H6 expression. This will help to confirm that the data with the individual ko viruses are not due to some other effect on the viral genome, such as an inadvertent deletion of an unrecognized ORF in the ko viruses.\n\nFigure 11 shows upregulation of B7-H6 expression by control adenovirus infection, helping to make the case that viral infection induces B7-H6 expression. I don't believe this has been shown before, though there are some data indicating that B7-H6 is inducible (Blood 2013, 122:394). However, neither of these points was mentioned in the text which instead focused on the markedly higher levels of B7-H6 expression when the adenoviral vector contained B7-H6. It would be informative if the adenoviral vector contained US18, US20, or both to determine if B7-H6 expression is down-regulated only when both ORFs are ectopically expressed.\n\nFinally, it would be of interest to determine if cells constitutively expressing high levels of B7-H6 are affected by US18/US20. If not, the ORFs may be affecting the mechanisms leading to viral induction of B7-H6, rather than B7-H6 itself.\n\nReviewer #2:\n\nStrengths of the study include its innovative approach, in depth analysis of US12 related genes and their broad effect on host immune responses/proteomes, and follow up analyses of specific protein effects (e.g. B7H6). The work is technically excellent, with results effectively presented. The color scheme used to present data for comparison of various HCMV strains, and their effect on many different host molecules has transformed what would appear to be very complex data sets, into ones that are both manageable and elegant. Having implicated specific US12-targeted effects on host proteins, and that these molecules have evolved tag-team strategies to thwart NK cells, is highly interesting. Overall, the findings and conclusions are openly presented, and very compelling. They should generate considerable interest. Although effective strategies and cutoffs were implemented to focus on findings of high significance, there is some question and lingering concern about the use of statistical tests applied, or not, in some experiments.\n\nMain concern:\n\nMultiple comparisons performed in Figure 1B using a student's t test may be inappropriate. Also, it appears that statistical analyses were not performed in Figures 4, 5, 7C and 8. Why?\n\nReviewer #3:\n\nInterestingly, and somewhat of concern, deletion of US21 impacted the expression of many other viral genes, including US20 whereas this was not observed when the entire region US12-21 was deleted. The authors argue that this is likely due to the fact that the impact on US20 by US21 no longer occurs when both are deleted, but this is not explicitly shown. I suggest these data are included upon revision.\n\nInterestingly, they find that deletion of US12, US13 and US20 upregulates UL16 as well deletion of US12-21. Since UL16 prevents the intracellular transport of multiple NKG2D-ligands this result could imply that some of the observed changes in NK cell molecules could be an indirect consequence of US12 family members promoting the expression or stabilization of UL16 which in turn could decrease the lysosomal turnover of target proteins by retaining them in the ER. The possibility that the effects seen are indirect consequences of US12 proteins regulating other viral proteins should be acknowledged more explicitly in the text and it should be clearly stated that this is one of the caveats of the current study.\n\nThe authors next focus on one protein in particular, B7-H6, a ligand for the NK cell activating receptor NKp30 that is also found on \u03b3\u03b4T cells. Using adenoviral expression they demonstrate that B7-H6 activates NK cells. Furthermore, a B7-H6 dependent reporter cell line is activated by US18 and US20, as well as US12-21 deletions and this activation can be blocked by B7-H6 antibodies or siRNA. However, given the concerns above, it is quite possible that neither US18 or US20 directly impact B7-H6. This would be easy to test using the rAd-US18 and rAd-US20 previously described by the same group (Fielding 2014). Therefore, I suggest that an experiment is included that examines whether US18 and US20 affect B7-H6 expression directly upon ectopic expression.\n\nFor each experiment, the MHC-I downregulation results should be provided as supplemental data to demonstrate that a similar percentage of cells are infected when different mutants are compared.\n",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5e57fd71-d72b-4da3-8ca9-cc072fc8929d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C1",
+      "claim": "The human cytomegalovirus (HCMV) US12 family consists of ten sequentially arranged genes (US12-21).",
+      "claim_type": "EXPLICIT",
+      "source": "The human cytomegalovirus (HCMV) US12 family consists of ten sequentially arranged genes (US12-21) with poorly characterized function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and introduction of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "abb072cc-9411-48cb-b459-770c9ffbf04c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C2",
+      "claim": "US12, US14, US18 and US20 have novel natural killer (NK) cell evasion functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We now identify novel natural killer (NK) cell evasion functions for four members: US12, US14, US18 and US20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NK cell degranulation assays shown in Figure 1B and described in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3199fd2e-310f-42b3-8c83-6e863056094a",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C3",
+      "claim": "The US12 family selectively targets plasma membrane proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "we demonstrate that the US12 family selectively targets plasma membrane proteins and plays key roles in regulating NK ligands, adhesion molecules and cytokine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data shown in Figures 2, 3, and 4, demonstrating preferential targeting of PM proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f2779eb8-f0de-49dd-957f-fffd4c4e1171",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C4",
+      "claim": "US18 and US20 work in concert to suppress cell surface expression of B7-H6.",
+      "claim_type": "EXPLICIT",
+      "source": "US18 and US20 work in concert to suppress cell surface expression of the critical NKp30 ligand B7-H6 thus inhibiting NK cell activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data (Figures 4C, 5A), flow cytometry (Figure 10), western blot (Figures 11D, 12A), and functional assays (Figures 12B-D, 13).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "97103d56-a710-4fa3-8ad6-e8cdcf6307a4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C5",
+      "claim": "The HCMV genome is 236 kb in size.",
+      "claim_type": "EXPLICIT",
+      "source": "At 236 kb the human cytomegalovirus (HCMV) genome is the largest of any characterized human virus and is comprised of long and short unique regions (UL and US), each flanked by inverted terminal repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HCMV genome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "77e92ee7-8a49-4f5a-9ffd-adb26fcbaf87",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C6",
+      "claim": "HCMV codes for around 170 canonical protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "HCMV codes for around of 170 canonical protein-coding genes with 39 herpesvirus 'core' genes concentrated in the center of the UL region (Dolan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dolan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "6d2edf77-0fdf-4206-acde-a8c12cd04963",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C7",
+      "claim": "The majority of HCMV genes are not essential for virus replication in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of the remaining HCMV genes are not essential for virus replication in vitro (Dunn et al., 2003) yet are replete with accessory functions, many of which have been implicated in suppressing host immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dunn et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "4e8f36b2-55f5-4157-bab3-37a3e14e48a4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C8",
+      "claim": "HCMV encodes 15 gene families of variable size.",
+      "claim_type": "EXPLICIT",
+      "source": "Unusually, HCMV encodes 15 gene families of variable size that are often clustered on the genome (Davison et al., 2002; Holzerlandt et al., 2002; Chee et al., 1990; Dolan et al., 2004; Davison et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "e2f891d6-1638-4af2-802d-bab2d7dda6ec",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C9",
+      "claim": "The US12 gene family consists of 10 genes arranged sequentially in the US region and transcribed in the same orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The US12 gene family consists of 10 genes, designated US12 to US21, arranged sequentially in the US region and transcribed in the same orientation (Chee et al., 1990; Dolan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chee et al., 1990 and Dolan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "dcf37e8a-7e35-4577-b89c-28ec23330091",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C10",
+      "claim": "The US12 family encodes 7-transmembrane spanning proteins with low-level homology to cellular TMBIM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The US12 family encodes a series of 7-transmembrane spanning proteins with low-level homology to the cellular transmembrane bax-inhibitor one motif-containing proteins (TMBIM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the US12 family structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "b750bc8e-f346-4a85-91fc-9d78aeba5747",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C11",
+      "claim": "The US12 family is not essential for virus replication.",
+      "claim_type": "EXPLICIT",
+      "source": "While not essential for virus replication, the US12 family has been implicated in HCMV tropism, virion maturation and immune evasion (Das and Pellett, 2007; Cavaletto et al., 2015; Bronzini et al., 2012; Hai et al., 2006; Gurczynski et al., 2014; Fielding et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "596b3ecd-661a-49da-978b-3b8bf5e9ede0",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C12",
+      "claim": "NK cells play a critical role in controlling HCMV infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural Killer (NK) cells play a critical role in controlling HCMV infections, and the virus invests a substantial proportion of its coding capacity to inhibit NK cell activation (Wilkinson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wilkinson et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f6e208a9-c4ed-42cb-b824-908ce921836e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C13",
+      "claim": "US18 and US20 suppress cell surface expression of MICA.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously observed that US18 and US20 suppress cell surface expression of the NK cell-activating ligand MICA (Fielding et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fielding et al., 2014 and confirmed by data in Figure 10.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3f0db72a-2405-4a26-a3a3-0184a7cc98f3",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C14",
+      "claim": "The \u25b3US12-21 block deletion mutant induced substantially higher levels of NK cell degranulation compared to the parent HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "In NK functional assays, the \u25b3US12-21 block deletion mutant induced substantially higher levels of NK cell degranulation compared to the parent HCMV with all four different donors tested (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly shown in Figure 1B with data from four donors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "915a6b35-496c-4cb2-ac72-320f64dfae8f",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C15",
+      "claim": "Deletion of US12 resulted in significantly increased levels of NK activation in 3 of 4 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly increased levels of NK activation were detected in assays using deletion mutants of 5 different US12 family members: US12 (3 of 4 donors)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "bc4d478f-ff4c-4788-9d6d-c10aca33d334",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C16",
+      "claim": "Deletion of US14 resulted in significantly increased levels of NK activation in 1 of 4 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "US14 (1 of 4 donors, with a trend towards increased NK activation in the other three donors)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "a691c0f2-170a-4043-ab95-b95e1911fba4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C17",
+      "claim": "Deletion of US18 resulted in significantly increased levels of NK activation in 3 of 4 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "US18 (3 of 4 donors)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "7c67901a-78b6-4b93-b781-3fe382862fb9",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C18",
+      "claim": "Deletion of US20 resulted in significantly increased levels of NK activation in 4 of 4 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "US20 (4 of 4 donors)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8dd68ca1-8db7-470a-86a1-c4fa68d21866",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C19",
+      "claim": "Deletion of US21 resulted in significantly increased levels of NK activation in 4 of 4 donors.",
+      "claim_type": "EXPLICIT",
+      "source": "US21 (4 of 4 donors) (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "b12a4fab-a5bb-4a84-86ae-85c78a6188dd",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C20",
+      "claim": "Three US12 family deletion mutants (US15, US16, US19) reduced the level of NK cell activation in some donors.",
+      "claim_type": "EXPLICIT",
+      "source": "while three US12 family deletion mutants (US15, US16, US19) reduced the level of NK cell activation in some donors (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "d19503f3-1bce-42e3-ab21-ac40d999ec95",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C21",
+      "claim": "The net effect of the complete US12 gene family is to inhibit NK cell recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Although members of the US12 family are capable individually of either activating or suppressing NK cell function, the net effect of the complete US12 gene family is clearly to inhibit NK cell recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of individual deletion mutants versus the block deletion in Figure 1B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "85416f32-25f4-4e7d-942f-8223e38ce18c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C22",
+      "claim": "Mass spectrometry quantified 7215 WCL and 1281 PM proteins in Proteomic Series 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry quantified 7215 WCL and 1281 PM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing Proteomic Series 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "117429cb-e3b1-4149-9478-606dfaf9488b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C23",
+      "claim": "The impact of the US12 family was most noticeably focused on the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact was most noticeably focused on the PM, in that the majority of WCL proteins affected were also PM 'hits' (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 comparing PM and WCL proteomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "31c2a6b0-66d2-457d-bca9-8aa0a1ceead9",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C24",
+      "claim": "The US12 family regulates protein expression or stability of cell surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For a given PM protein modulated by the US12 gene family (Figure 4), comparable results were observed in WCL samples (Figure 5), suggesting that the US12 family regulates protein expression or stability of cell surface proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing PM and WCL data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "571525db-2ab5-4259-b90a-ed56298b425c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C25",
+      "claim": "Multiple KEGG pathways were significantly enriched among proteins rescued by the US12-21 deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple KEGG pathways were significantly enriched (data not shown), including natural killer cell-mediated cytotoxicity (MICA, MICB, ULBP2, IFNGR1), cytokine-cytokine receptor interaction (IL6ST, KIT, KITLG, ACVRL1, ACVR1, IFNGR1) and cell adhesion molecules (CAMs; JAM3, ICOSLG, PTPRM, MPZL1, CXADR, ALCAM, SDC4, CD99, SDC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DAVID pathway analysis of proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "a0907b2a-a8b1-4186-a416-bede5579b5bf",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C26",
+      "claim": "B7-H6 was regulated by the US12-21 mutant but not identified by DAVID analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A further NK ligand, B7-H6, was not identified by DAVID analysis, but was also regulated by the US12-21 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in proteomic data (Figures 4C, 5A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "04e3bbbf-f825-4f0e-982d-e46a88734e82",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C27",
+      "claim": "The regulation of B7H6, MICB and ULBP2 by the US12 family are novel findings.",
+      "claim_type": "EXPLICIT",
+      "source": "While MICA is a recognized target of US18 and US20 (Fielding et al., 2014), the regulation of the NK cell activating ligands B7H6, MICB and ULBP2 by the US12 family are novel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section and supported by proteomic and validation data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f6859ea9-cf17-4b3e-9ec1-901aaa753ab1",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C28",
+      "claim": "A substantial subset of proteins regulated by the US12-21 block mutant were similarly modulated by US18 and US20.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial subset of the proteins regulated by the US12-21 block mutant were similarly modulated by US18 and US20 (Figure 4, Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "9631129d-7bcb-4b86-baf1-f6603ff3d6f6",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C29",
+      "claim": "US19 specifically targeted RALGPS2.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas US19 specifically targeted RALGPS2 (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "db2b8a7d-0f07-42b6-a60a-7887fe9e58ed",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C30",
+      "claim": "Mass spectrometry quantified 7156 whole cell and 1312 PM proteins in Proteomic Series 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometry quantified 7156 whole cell and 1312 PM proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing Proteomic Series 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "b5500aca-4476-4d78-84d8-1879015ec83d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C31",
+      "claim": "The majority of target proteins were regulated by both US18 and US20.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking feature of this data was that the majority of these target proteins were regulated by both US18 and US20, with a subset additionally regulated to a lesser degree by US14 and/or US16 (Figure 4C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f29e42cc-f9cf-428f-9a90-bd16e9bcbc0d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C32",
+      "claim": "US12 and US13 mutants regulated the NKG2D ligands ULBP2 and MICB respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Other US12 family members also had important effects, with US12 and US13 mutants regulating the NKG2D ligands (NKG2DL) ULBP2 and MICB respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figures 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "6468cef8-897b-40e5-a405-7bf269cd2e11",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C33",
+      "claim": "US14 mutant regulated PTPRM.",
+      "claim_type": "EXPLICIT",
+      "source": "US14 mutant regulating PTPRM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results and shown in Figures 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3e8059d3-6269-4cc9-a837-fbd5de719989",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C34",
+      "claim": "US15 mutant regulated IL6ST.",
+      "claim_type": "EXPLICIT",
+      "source": "and the US15 mutant regulating IL6ST (Figure 4C\u2013E and Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4C-E and Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "2b725afe-8819-4812-90a5-cbda27766106",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C35",
+      "claim": "The contribution made by a given US12 family member varied dramatically from one cellular target (US13 and US19) to 54 cellular targets (US20).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the contribution made by a given family member varied dramatically ranging from the highly focused impact of US13 and US19 (one cellular target each) to the exceptionally promiscuous US20 (54 cellular targets) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "c4856dac-c9d4-4a3c-aa82-f9f481f5150d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C36",
+      "claim": "MICA was regulated by the deletion of US12-21 block to a much greater extent than any of the single deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MICA was regulated by the deletion of US12-21 block to a much greater extent than any of the single deletion mutants, implying that multiple US12 family members may need to act in concert to optimize control over certain cellular targets (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "fd7382bc-97e5-4514-a684-e58e52758f1a",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C37",
+      "claim": "Infection with the US21 deletion mutant resulted in selective impairment of many late phase Tp3 and Tp5 HCMV proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Infection with the US21 deletion mutant resulted in selective impairment of many late phase Tp3 and Tp5 (Temporal protein profile 3 and 5) HCMV proteins (Weekes et al., 2014), for example UL32 and UL99/pp28, and elevated expression of pUS20",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 7 and supported by citation to Weekes et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "9b6778b4-9e32-41c0-83a1-332e113b834d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C38",
+      "claim": "The HCMV US12-21 block mutant did not recapitulate the effect on late phase viral proteins observed with the US21 deletion mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the HCMV US12-21 block mutant did not recapitulate this effect (Figure 7, with further proteomic data searchable in Excel spreadsheet Supplemental file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "27e92b4e-f835-45dc-b511-da8c66e3a322",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C39",
+      "claim": "Deletion of the US21 structural gene impacts on the transcriptional control of US20.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are consistent with deletion of the US21 structural gene impacting on the transcriptional control of US20 (data not shown), and may contribute to a potential growth defect observed for this particular mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteomic data showing elevated pUS20 expression in the US21 deletion mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "bd101014-9b81-4663-a404-75de1e6ac2c1",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C40",
+      "claim": "The activation of NK cells in response to US21 mutant-infected targets cannot be assigned directly to an effect of US21.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore the activation of NK cells in response to US21 mutant-infected targets cannot be assigned directly to an effect of US21 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that US21 deletion affects US20 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "e3a238b8-38a5-4912-8434-cdd8bfd05e59",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C41",
+      "claim": "The majority of proteins that the US12 family down regulates from the PM are also lost from the WCL.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of proteins that the US12 family down regulates from the PM are also lost from the WCL, consistent with post-translational proteolysis or an overall reduction in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing PM and WCL proteomic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "050170fe-dcc1-4417-b59f-e19b35cb8985",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C42",
+      "claim": "US20 targets MICA for degradation in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously found that US20 targets the NKG2DL MICA for degradation in lysosomes (Fielding et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fielding et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "0fb73565-c206-4859-815a-29d434ed60a5",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C43",
+      "claim": "DAVID pathway analysis identified increases in lysosomal proteins within the PM fraction of \u25b3US20-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The DAVID pathway analysis identified increases in lysosomal proteins within the PM fraction of \u25b3US20-infected cells; the list of lysosomal proteins included a number of cathepsins and ATPases (PSAP, CTSD, ATP6V1E1, ATP6V1H, NPC2) (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on DAVID pathway analysis of proteomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3016b48c-282a-428e-b104-a5720c346866",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C44",
+      "claim": "US20 plays a role in regulating intracellular endo-lysosomal vesicular transport.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a role for US20 in regulating intracellular endo-lysosomal vesicular transport.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteomic data showing lysosomal protein changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8a290ca4-cd73-48e8-a575-19124f5112aa",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C45",
+      "claim": "The \u25b3US12-21 'block' deletion caused substantial shifts in WCL proteins, with >80 proteins rescued >2 fold at 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u25b3US12-21 'block' deletion caused substantial shifts in WCL proteins, with >80 proteins rescued >2 fold at 48 hr, compared to the parent viral infection (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8B from Proteomic Series 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8366bf48-1853-4bd5-abd3-c05c7c30e809",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C46",
+      "claim": "26% of proteins rescued by the US12-21 deletion were also rescued >2 fold with leupeptin.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 26% were also rescued >2 fold and 51% > 1.5 fold with leupeptin suggesting that the US12 family targets multiple host proteins to the lysosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 8B and 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3786c0a4-b3b0-48bf-8b74-d34e98cb25e1",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C47",
+      "claim": "Leupeptin treatment had a more limited effect on rescuing PM proteins back to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Leupeptin treatment had a more limited effect on rescuing PM proteins back to the the cell surface (Figure 8B), consistent with our previous observation of intracellular accumulation of MICA without protein relocalisation to the cell surface during treatment with leupeptin or other lysosomal inhibitors (Fielding et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8B and supported by citation to Fielding et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "cf8d6954-a7fe-4242-88ee-d08ca666de64",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C48",
+      "claim": "11 of 21 key proteins in categories 'natural killer cell-mediated cytotoxicity', 'cytokine-cytokine receptor interaction' and 'cell adhesion molecules' were rescued >2 fold by leupeptin.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 21 proteins identified in Figure 4 within the key categories 'natural killer cell-mediated cytotoxicity', 'cytokine-cytokine receptor interaction' and 'cell adhesion molecules', 11 were rescued >2 fold by leupeptin, with the remainder exhibiting 1.3\u20132-fold rescue (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "eeefffbf-78e3-4526-aac5-5627cfad642e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C49",
+      "claim": "MICB was clearly rescued by leupeptin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "MICB was clearly rescued by leupeptin treatment (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "d4de6a4e-3ee8-436d-b1a0-6d1107e28e52",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C50",
+      "claim": "Control of MICB and ULBP2 levels correlated with regulation of UL16 by US13 and US12.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, control of MICB and ULBP2 levels correlated with regulation of UL16 by US13 and US12 (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "fd8e0f48-b5ba-4c9e-bc5d-7883d7d57102",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C51",
+      "claim": "Many cellular substrates of the US12 family are being targeted for lysosomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although many cellular substrates of the US12 family are clearly being targeted for lysosomal degradation, there may be additional mechanisms by which this family regulates the PM proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the leupeptin rescue experiments shown in Figure 8.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "e5cd1100-f7d4-47c9-b07c-7f270b407ea4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C52",
+      "claim": "Flow cytometry validated a proportion of the PM protein targets regulated by the US12 family.",
+      "claim_type": "EXPLICIT",
+      "source": "We used flow cytometry to validate a proportion of the various PM protein targets that are regulated by the US12 family (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "e0529264-649f-4594-be89-cc17b41bc24f",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C53",
+      "claim": "MICA expression was rescued to a greater degree with the US12-21 block mutant than with the individual US18 or US20 deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that MICA expression was rescued to a greater degree with the US12-21 block mutant than with the individual US18 or 20 deletion mutants (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "bcd8e359-76ee-4dd7-ab92-d4acd3d81f30",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C54",
+      "claim": "A combined US18 and US20 deletion had a greater effect on cell surface MICA than single gene deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our previous analysis showing that a combined US18 and US20 deletion had a greater effect on cell surface MICA than single gene deletion mutants (Fielding et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fielding et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "cd8adf99-9766-4a19-a181-71390e39f59c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C55",
+      "claim": "The US13 deletion mutant caused a minor, but consistent, elevation in cell surface expression of MICB.",
+      "claim_type": "EXPLICIT",
+      "source": "The US13 deletion mutant caused a minor, but consistent, elevation in cell surface expression of MICB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "74fceea7-1c48-423d-b58b-5558a9db2d09",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C56",
+      "claim": "There was a further increase in MICB expression in the US12-21 block mutant compared to US13 deletion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Other US12 family genes may yet contribute to regulating MICB, as there was a further increase in the US12-21 block mutant (Figures 10 and 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 10 and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "04878f6d-d9dc-48fa-9c8d-ccdd96d08c9b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C57",
+      "claim": "B7-H6 is the major ligand identified for the natural cytotoxicity receptor NKp30.",
+      "claim_type": "EXPLICIT",
+      "source": "B7-H6 is the major ligand identified for the natural cytotoxicity receptor (NCR) NKp30 and a tumor antigen (Brandt et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Brandt et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "3e367a4a-ee5b-4269-a710-2f5c00ff563b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C58",
+      "claim": "B7-H6 expression was shown to be induced by inflammatory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, B7-H6 expression was shown to be induced by inflammatory stimuli, for example pro-inflammatory cytokines and bacterial-derived toll-like receptor (TLR) ligands (Matta et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Matta et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "73fd7a9d-3941-4eae-9900-dadefdaa1037",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C59",
+      "claim": "B7-H6 expression is induced as a stress protein by HCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "We show here that B7-H6 expression is induced as a stress protein by HCMV infection (and potentially other virus infections)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in proteomic data (Figures 4C, 5A), flow cytometry (Figure 10), and western blot (Figure 12A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "dab2f0b5-2795-440b-90cc-2a8f2f2ca27c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C60",
+      "claim": "Exogenous expression of B7-H6 in fibroblasts increased NK degranulation.",
+      "claim_type": "EXPLICIT",
+      "source": "B7-H6 is a known ligand for NKp30 and exogenous expression in fibroblasts increased NK degranulation (Figure 11A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 11A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "c5578141-0582-4d3d-95bc-21d39e28b6ec",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C61",
+      "claim": "Ectopic expression of US20, and to a lesser extent US18, reduced levels of exogenously expressed B7-H6.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic expression of US20, and to a lesser extent US18, from adenovirus vectors reduced levels of exogenously expressed B7-H6 detected by immunoblotting (Figure 11D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 11D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "1ab35c3d-af99-4bfe-815d-f63a51bbda5d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C62",
+      "claim": "Both PM and WCL expression of B7-H6 was induced by the HCMV US18, US20 and US12-21 deletion mutants but not by the parental virus.",
+      "claim_type": "EXPLICIT",
+      "source": "Both PM and WCL expression of B7-H6 was induced by the HCMV US18, US20 and US12-21 deletion mutants but not by the parental virus (Figure 4C, Figure 5A), which was confirmed by flow cytometry and immunoblot (Figures 10 and 12A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figures 4C, 5A, 10, and 12A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "5e169cf7-d7d6-4b75-b4ab-7006c5fa7675",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C63",
+      "claim": "US18 and US20 act in concert to target B7-H6 for proteolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "B7-H6 is therefore induced as a 'stress ligand' during productive infection, but its expression is controlled by US18 and US20, acting in concert, to target it for proteolysis (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 8C and supported by multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8b06577b-4488-45b1-85ed-c9e8ee540741",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C64",
+      "claim": "The presence of US18 and US20 was required to inhibit NKp30 reporter activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the effect of the US12 family members upon activation of an NKp30-responsive reporter cell line, and found that the presence of US18 and US20 was required to inhibit reporter activity (Figure 12B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 12B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "c2b753ba-8d7b-4760-9ae4-88df00841b03",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C65",
+      "claim": "Reporter cell fluorescence could be inhibited by transfection of B7-H6 specific siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter cell fluorescence could be inhibited either by transfection of B7-H6 specific siRNA or by use of a B7-H6 specific blocking antibody (CH31) (Figure 12C and D respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 12C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "848daad9-773d-400b-be7b-51a4292d0345",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C66",
+      "claim": "Reporter cell fluorescence could be inhibited by use of a B7-H6 specific blocking antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporter cell fluorescence could be inhibited either by transfection of B7-H6 specific siRNA or by use of a B7-H6 specific blocking antibody (CH31) (Figure 12C and D respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 12D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "239d59d9-f150-46dd-8e23-80fe86285824",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C67",
+      "claim": "B7-H6 knockdown in cells infected with HCMV US18 and US20 deletion mutants reduced donor NK cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "B7-H6 knockdown in cells infected with HCMV US18 and US20 deletion mutants was correspondingly able to reduce donor NK cell activation (Figure 13A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 13A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "6edadae3-42c7-4dd7-a1a3-a046e06f0c5e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C68",
+      "claim": "The impact of B7-H6 knockdown on the HCMV US12-21 block mutant was more variable.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of B7-H6 knockdown on the HCMV US12-21 block mutant was more variable and consistent with the US12 gene family encoding additional NK modulating functions (Figure 13B, Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 13B and inferred from Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "48bf8ff7-28b7-4ff3-9e1b-2082cfda9bf0",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C69",
+      "claim": "A B7-H6 blocking antibody reduced NK activation in response to the US18, US20 and US12-21 deletion mutants to levels of the parental HCMV control.",
+      "claim_type": "EXPLICIT",
+      "source": "A B7-H6 blocking antibody had an even more pronounced effect, reducing NK activation in response to the US18, US20 and US12-21 deletion mutants to levels of the parental HCMV control (Figure 13C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 13C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "369e7231-ba46-4780-b080-f6a06a8099bf",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C70",
+      "claim": "B7-H6 plays a major role in NK cell recognition of HCMV-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with B7-H6 playing a major role in NK cell recognition of HCMV-infected cells, a function that is countered by the US12 family members US18 and US20.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data in Figures 12 and 13.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "5e0fb3f5-84fa-4229-91e1-3f9746a48c89",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C71",
+      "claim": "Clusters of US12-related genes can be detected in cytomegaloviruses of New World primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters of US12-related genes can be detected in cytomegaloviruses of New World primates, i.e. Green Monkey and Owl Monkey CMVs, thus the capture and expansion of an ancestral precursor presumably took place over 41 million years ago (Davison et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Davison et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "aaa068a7-af42-46b4-bc5d-f5d9571a4e1e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C72",
+      "claim": "Within Cynomolgus and Rhesus macaques, chimpanzee and human CMVs, the US12 family is maintained as a well conserved contiguous tandem array of 10\u201311 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Cynomolgus and Rhesus macaques (Old World primates), chimpanzee and human CMVs, the US12 family is maintained as a well conserved contiguous tandem array of 10\u201311 genes located in the same relative position on each genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CMV evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "50b08ece-9084-4156-b219-8e4cddb78b8d",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C73",
+      "claim": "The US12 family exhibits relatively high levels of sequence conservation and genetic integrity amongst circulating HCMV clinical strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Amongst circulating HCMV clinical strains, the US12 family exhibits relatively high levels of sequence conservation and genetic integrity (Sijmons et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Sijmons et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "ca866b5e-520a-4d52-9a6c-effb2966b00b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C74",
+      "claim": "The US12 family targets T-cell co-stimulatory molecules, cell adhesion molecules, and cytokine/cytokine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "By systematically analyzing a bespoke panel of HCMV deletion mutants, we have discovered that the US12 family selectively targets a broad range of plasma membrane proteins that include, not only NK cell activating ligands, but also T-cell co-stimulatory molecules, cell adhesion molecules, and cytokine/cytokine receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data in Figures 2-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "c38fb4ba-3d3b-4c5c-ae8b-e600678d401b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C75",
+      "claim": "A sizeable proportion of targeted plasma membrane proteins are degraded in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A sizeable proportion of targeted plasma membrane proteins do not accumulate internally, but are degraded in lysosomes, as indicated by rescue with the inhibitor leupeptin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "239fbef0-f871-441f-833d-7ea8304ac45e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C76",
+      "claim": "The overlap between US12 gene family targets and KSHV K5 viral E3 ubiquitin ligase targets could represent convergent evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The overlap that exists between US12 gene family targets with those of the KSHV K5 viral E3 ubiquitin ligase (MICA, MICB, B7 family, ALCAM, IFNGR1, PTPRM, EPHA2, CD99, MPZL1/2) could represent convergent evolution and/or targeting of similar cellular pathways (Timms et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with published data, supported by citation to Timms et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "fe4dbc36-a77a-4438-8342-f64f4fedf55f",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C77",
+      "claim": "The NKG2DL MICB and ULBP2 are strongly upregulated during HCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The NKG2DL MICB and ULBP2 are strongly upregulated during HCMV infection, but fail to reach the cell surface as they are retained in the ER by the NK evasion function gpUL16 (Rolle et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rolle et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "03f7f553-ab16-4fe3-ad0e-709f4aae77a0",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C78",
+      "claim": "Deletion of US12, US13 and US20 leads to increased cell surface and intracellular expression of MICB, ULBP2 and UL16.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proteomic data reveal that deletion of US12, US13 and US20 leads to increased cell surface and intracellular expression of MICB, ULBP2 and UL16 itself (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "1a3e2cac-bc4e-4f07-b228-7536e9728dbe",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C79",
+      "claim": "US12 family members act in concert to direct UL16, MICB and ULBP2 towards proteolytic degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with US12 family members acting in concert to direct UL16, MICB and ULBP2 towards proteolytic degradation, with leupeptin treatment clearly able to rescue MICB, and this may contribute to the NK evasion properties of US12 (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the proteomic data in Figures 8 and 9, and NK functional data in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "85aeaa05-2063-4e4d-ae28-a493eee65e01",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C80",
+      "claim": "Some effects of the US12 family could be the result of co-operation with other HCMV genes.",
+      "claim_type": "EXPLICIT",
+      "source": "They also imply that some of the effects of the US12 family could be the result of co-operation with other HCMV genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of US12 family effects on UL16.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "5d10d0e2-5b44-4e9a-a31b-77a2f38cba10",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C81",
+      "claim": "Co-operation between US2 and UL141 was observed in the proteasomal degradation of CD112.",
+      "claim_type": "EXPLICIT",
+      "source": "There is some precedent for this situation, although not previously on such a wide scale, as co-operation between US2 and UL141 was observed in the proteasomal degradation of some protein targets e.g. CD112 (Hsu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hsu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "898d8775-6a82-49cc-b742-57e25f71514c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C82",
+      "claim": "None of the US14 targets are recognized NK cell ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the US14 targets are recognized NK cell ligands, suggesting that this gene product utilizes a novel NK evasion mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteomic data and NK functional assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "ef752696-96dc-44b1-b762-1768464f74e5",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C83",
+      "claim": "NKp30 is expressed on \u03b3\u03b4 T-cells (V\u03b42-) that are induced during HCMV infection post-transplantation.",
+      "claim_type": "EXPLICIT",
+      "source": "The control of B7-H6 is likely to be of major significance as NKp30 is expressed on \u03b3\u03b4 T-cells (V\u03b42-) that are induced during HCMV infection post-transplantation and correlate with control of disease (Merville et al., 2000; Lafarge et al., 2001; Correia et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Merville et al., 2000; Lafarge et al., 2001; Correia et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "b05c7e1f-812f-4e02-bb10-a258e5a27afb",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C84",
+      "claim": "Many adhesion molecules play roles in co-stimulation or immune synapse formation of T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these adhesion molecules play roles in co-stimulation or immune synapse formation of T-cells e.g. ALCAM, ICOSLG, CXADR (Hassan et al., 2004; Wang et al., 2000; Witherden et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hassan et al., 2004; Wang et al., 2000; Witherden et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "22235931-cd7a-4da9-af84-137f6302021e",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C85",
+      "claim": "The US12 family targets pro-inflammatory mediators including multiple members of the TNFR superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "The US12 family targets pro-inflammatory mediators, such as multiple members of the tumour necrosis factor receptor (TNFR) superfamily (TNFRSF8, TNFRSF12A, NGFR, LTBR), gp130 (IL6ST), the IL-6 receptor signaling receptor, pannexin-1 (PANX1) and the TLR4 ligand high-mobility group protein B1 (HMGB1) (Croft et al., 2013; Kanneganti et al., 2007; Park et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by proteomic data and citations to Croft et al., 2013; Kanneganti et al., 2007; Park et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "345b4446-5f14-4025-8e93-9f63b72ab3da",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C86",
+      "claim": "IL6ST signaling may have antiviral effects in the context of HCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "IL6ST signaling may also have antiviral effects in the context of HCMV (Harwardt et al., 2016), which was suggested by the finding that disruption of gp130 STAT3 binding resulted in IFN-like signaling through STAT1(Costa-Pereira et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Harwardt et al., 2016 and Costa-Pereira et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "92a0f004-7f3c-4591-87e2-c9f625147020",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C87",
+      "claim": "The closest cellular homologues to the US12 family are the TMBIM family.",
+      "claim_type": "EXPLICIT",
+      "source": "The closest cellular homologues to the US12 family are the TMBIM family with recognised functions in controlling apoptosis, ER stress, ROS production, actin production, glucose metabolism and protein trafficking (Rojas-Rivera and Hetz, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rojas-Rivera and Hetz, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "b62e02b5-47c5-4b69-b889-78de7fb358f0",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C88",
+      "claim": "The US12 family may have arisen through an 'accordion' gene expansion from a 'captured' ancestor TMBIM gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The US12 family may have arisen through an 'accordion' gene expansion from a 'captured' ancestor TMBIM gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on homology to TMBIM family.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "2a6cc456-2b43-417a-a499-df8db45cdb53",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C89",
+      "claim": "US21 displays the highest level of homology with TMBIM1/4 among the US12 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the entire US12 family, US21 displays the highest level of homology with TMBIM1/4, with the homologous region limited to the transmembrane domain and loops (unpublished observations, [Lesniewski et al., 2006; Holzerlandt et al., 2002]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lesniewski et al., 2006 and Holzerlandt et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "7d71b08f-07af-4b3c-8fe4-c1251c43f730",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C90",
+      "claim": "TMBIM family have cytosolic N- and C-termini with six full transmembrane spanning regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The divergence of the US12 and TMBIM families is also reflected in their different membrane topologies, as TMBIM family have cytosolic N- and C-termini with six full transmembrane spanning regions, and US20 has a cytosolic N-terminus and lumenal C-terminus (Carrara et al., 2012; Cavaletto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carrara et al., 2012 and Cavaletto et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f1c1b5a0-0633-4646-96cb-a01753dfba2b",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C91",
+      "claim": "US20 has a cytosolic N-terminus and lumenal C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "The divergence of the US12 and TMBIM families is also reflected in their different membrane topologies, as TMBIM family have cytosolic N- and C-termini with six full transmembrane spanning regions, and US20 has a cytosolic N-terminus and lumenal C-terminus (Carrara et al., 2012; Cavaletto et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Carrara et al., 2012 and Cavaletto et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8bf392de-e6ff-4f13-aca2-92a86d2096d4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C92",
+      "claim": "A number of TMBIMs target proteins for lysosomal degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional relevance of the US12 family/TMBIM homology remains unclear, although it may represent a 'functional scaffold' (Lesniewski et al., 2006), as a number of TMBIMs also target proteins for lysosomal degradation (Lee et al., 2012; Yamaji et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lesniewski et al., 2006; Lee et al., 2012; Yamaji et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "9eb9382a-ec46-4b1c-a539-d3699c97df0c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C93",
+      "claim": "The US12 family targets multiple host immune ligands consistent with having arisen through immune selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the US12 family targets multiple host immune ligands, consistent with the family having arisen, been selected and diverged in function as a consequence of immune selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comprehensive proteomic and functional data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "689f9e5e-e8a8-4999-a552-06bafccdf2e4",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C94",
+      "claim": "US12 family genes differ from the majority of characterised immune evasion viral genes in that they act together and do not exhibit single gene effects.",
+      "claim_type": "EXPLICIT",
+      "source": "US12 family genes differ from the majority of characterised immune evasion viral genes, as they act together and do not exhibit single gene effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the proteomic data showing overlapping targets among family members.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "530cfadd-17b0-42e7-920d-4877f7d95b9c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C95",
+      "claim": "The targeting of multiple proteins by a HCMV immunevasin or co-operation between HCMV gene products was not previously observed on this scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The targeting of multiple proteins by a HCMV immunevasin or co-operation between HCMV gene products is not unprecedented, but was not previously observed on this scale or with this diversity of target proteins (Tomasec et al., 2005; Prod'homme et al., 2010; Smith et al., 2013; Hsu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tomasec et al., 2005; Prod'homme et al., 2010; Smith et al., 2013; Hsu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "ba75ad94-0711-4ad6-92d0-67794cff0d37",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C96",
+      "claim": "The majority of US12 family targets contain an immunoglobulin-like domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of US12 family targets contain an immunoglobulin-like domain, including the MHC I-related proteins, MICA and B7-H6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of the target proteins identified in the proteomic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "20c6761d-ddf6-4fd0-9f47-f6b8d4259815",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C97",
+      "claim": "The US12 family is a critical region for regulation of the host immune response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data highlight the importance that HCMV gene families are likely to play in terms of HCMV persistence in vivo and identifies the US12 family as a critical region for regulation of the host immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comprehensive functional and proteomic data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "dd6c5446-ec69-4c0f-9093-6fcf6f94b961",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C98",
+      "claim": "Of all PM proteins regulated >3 fold by a member of the US12-21 family, 29% were regulated by 2 or more family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all PM proteins regulated >3 fold by a member of the US12-21 family, 29% were regulated by 2 or more family members and 6% by 3 or more family members (Figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "8b3bf02e-4ed8-4fa0-9617-5e692c01c460",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C99",
+      "claim": "6% of PM proteins regulated >3 fold by a member of the US12-21 family were regulated by 3 or more family members.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all PM proteins regulated >3 fold by a member of the US12-21 family, 29% were regulated by 2 or more family members and 6% by 3 or more family members (Figure 6)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "ba03417f-a21c-4dfb-ae1f-05ead5541a09",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "claim_id": "C100",
+      "claim": "Co-regulation of proteins by multiple US12 family members may suggest evolutionary pressure underpins the expansion of this gene family.",
+      "claim_type": "EXPLICIT",
+      "source": "Such co-regulation may suggest evolutionary pressure underpins the expansion of this gene family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the observed co-regulation patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The HCMV US12 gene family consists of 10 sequentially arranged genes (US12-21) encoding 7-transmembrane proteins with homology to TMBIM proteins. The family is evolutionarily conserved across primate CMVs and exhibits high sequence conservation among clinical HCMV strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C11, C71-C73 provide well-established background information about HCMV genome structure and the US12 family, supported by multiple citations to prior literature. These descriptive claims are consistently supported across the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "527a7c3c-8e52-4d80-80be-dcf664ceea89",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Four US12 family members (US12, US14, US18, US20) have NK cell evasion functions, with deletion mutants inducing significantly increased NK cell degranulation compared to parental HCMV. The net effect of the complete US12 family is to inhibit NK cell recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C14-C21 are directly supported by NK degranulation assays shown in Figure 1B across four independent donors. Statistical significance is demonstrated with appropriate controls (mock and parental HCMV), and the data consistently show that deletion of US12, US14, US18, and US20 increases NK activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "f8c81fe9-616f-47cc-bde8-4b1d70122454",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deletion of US21 affects expression of late-phase viral proteins and US20, confounding interpretation of US21's direct role in NK evasion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by proteomic data in Figure 7 showing that US21 deletion, but not US12-21 block deletion, impairs late viral proteins and elevates US20. This indirect effect is appropriately acknowledged as a confounding factor, demonstrating scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "39361745-1f48-413b-9390-ffb3ee6fe164",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The US12 family selectively targets plasma membrane proteins including NK ligands, T-cell co-stimulatory molecules, cell adhesion molecules, and cytokine receptors, regulating their expression or stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C24, C74 are strongly supported by comprehensive proteomic analysis (Figures 2-6) quantifying ~1300 PM and ~7200 WCL proteins. The preferential impact on PM proteins is clearly demonstrated, with concordant changes in PM and WCL fractions supporting regulation of protein expression/stability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "32f14ebc-50f4-469b-b3c7-bb162ad9dd5a",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "KEGG pathway analysis identified enrichment of proteins involved in NK cell-mediated cytotoxicity, cytokine-cytokine receptor interaction, and cell adhesion molecules among US12-21 targets. Novel NK ligands B7-H6, MICB, and ULBP2 were identified as US12 family targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by DAVID pathway analysis of proteomic data and validated by multiple orthogonal methods (flow cytometry, western blot). The identification of B7-H6, MICB, and ULBP2 as novel targets is well-documented across Figures 4, 5, 8, 10, and 12.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "28933634-0e18-4d9f-a1f8-dd68220a6e20",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual US12 family members show varying degrees of target specificity, from highly focused (US13, US19 with one target each) to promiscuous (US20 with 54 targets). US18 and US20 co-regulate the majority of targets, with 29% of targets regulated by \u22652 family members.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C36, C98-C99 are supported by comprehensive proteomic analysis in Series 2 (Figures 4-6) showing differential contributions of each family member. The quantitative data on target numbers and co-regulation patterns are clearly presented with appropriate statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "eec1aae9-e2b4-49ec-8156-552958adf867",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Many US12 family targets are degraded in lysosomes, as demonstrated by leupeptin rescue experiments. 26% of proteins rescued by US12-21 deletion were also rescued >2-fold by leupeptin treatment, though rescue was more limited for PM proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49, C51, C75 are supported by Proteomic Series 3 (Figure 8) showing leupeptin rescue of US12-21 targets. The differential rescue between WCL and PM fractions is appropriately noted, and the data support lysosomal degradation as a major but not exclusive mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "US12 family members (US12, US13, US20) regulate MICB, ULBP2, and the viral protein UL16, suggesting cooperation between US12 family and other HCMV genes in directing these proteins toward proteolytic degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C77-C80 are supported by proteomic data in Figure 9 and prior literature (C77). The coordinated regulation of UL16 and its ligands MICB/ULBP2 by US12 family members is clearly demonstrated, though the mechanistic inference of cooperation requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "4527d162-5687-4f2b-bad5-681d3bc8f952",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Flow cytometry validation confirmed proteomic findings for multiple PM targets. MICA expression was rescued more by US12-21 block deletion than by individual US18 or US20 deletions, consistent with synergistic action. US13 deletion caused minor but consistent MICB elevation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C56 are supported by flow cytometry data in Figure 10, which validates key proteomic findings using an orthogonal method. The synergistic effect on MICA is consistent with prior work (C54) and the current proteomic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "B7-H6, the major NKp30 ligand, is induced as a stress protein during HCMV infection but suppressed by US18 and US20 acting in concert. B7-H6 plays a major role in NK cell recognition of HCMV-infected cells, as demonstrated by siRNA knockdown and blocking antibody experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C57-C70 are extensively supported by multiple complementary approaches: proteomic analysis (Figures 4C, 5A, 8C), flow cytometry (Figure 10), western blot (Figures 11D, 12A), NKp30 reporter assays (Figure 12B-D), and NK functional assays with B7-H6 knockdown/blocking (Figure 13). The convergence of evidence from these diverse methods strongly supports the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The US12 family targets diverse immune-related proteins including adhesion molecules involved in T-cell co-stimulation, pro-inflammatory mediators (TNFR superfamily, IL6ST, PANX1, HMGB1), and proteins with potential antiviral effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C82-C86 are supported by proteomic data and extensive citations to prior literature establishing the functions of these targets. The breadth of immune-related targets is well-documented, though the functional significance of some targets (e.g., US14 targets, IL6ST) requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "4b3de27c-294a-4c10-9ea7-992471bde45c",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The US12 family shows structural homology to cellular TMBIM proteins and functional overlap with KSHV K5 targets, potentially representing convergent evolution. The evolutionary origin through 'accordion' gene expansion from a captured TMBIM ancestor is proposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C81, C87-C92 mix well-supported structural observations (C87, C89-C91 with citations) with speculative evolutionary interpretations (C88, C100). While the homology to TMBIM and overlap with K5 targets are documented, the evolutionary mechanism remains hypothetical and requires additional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    },
+    {
+      "id": "ef83a15a-79e6-457c-ae32-905829945d82",
+      "content_id": "a51e42cb-7d5e-423d-8b0a-d1cb97531daa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The US12 family represents a novel paradigm of viral immune evasion through coordinated action of multiple family members targeting diverse immune ligands, many containing immunoglobulin-like domains. This scale of cooperation and target diversity was not previously observed in HCMV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97, C100 synthesize the comprehensive findings into broader conclusions about US12 family function and significance. These interpretive claims are well-supported by the extensive proteomic and functional data presented, though some aspects (C96, C100) involve inference beyond direct experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:52:44.627848Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5e57fd71-d72b-4da3-8ca9-cc072fc8929d",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "97103d56-a710-4fa3-8ad6-e8cdcf6307a4",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "77e92ee7-8a49-4f5a-9ffd-adb26fcbaf87",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "6d2edf77-0fdf-4206-acde-a8c12cd04963",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "4e8f36b2-55f5-4157-bab3-37a3e14e48a4",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "e2f891d6-1638-4af2-802d-bab2d7dda6ec",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "dcf37e8a-7e35-4577-b89c-28ec23330091",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "b750bc8e-f346-4a85-91fc-9d78aeba5747",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "5e0fb3f5-84fa-4229-91e1-3f9746a48c89",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "aaa068a7-af42-46b4-bc5d-f5d9571a4e1e",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "50b08ece-9084-4156-b219-8e4cddb78b8d",
+      "result_id": "e1b2543a-8e74-4ea0-a9d0-f6b4fabc210a"
+    },
+    {
+      "claim_id": "abb072cc-9411-48cb-b459-770c9ffbf04c",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "3f0db72a-2405-4a26-a3a3-0184a7cc98f3",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "915a6b35-496c-4cb2-ac72-320f64dfae8f",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "bc4d478f-ff4c-4788-9d6d-c10aca33d334",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "a691c0f2-170a-4043-ab95-b95e1911fba4",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "7c67901a-78b6-4b93-b781-3fe382862fb9",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "8dd68ca1-8db7-470a-86a1-c4fa68d21866",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "b12a4fab-a5bb-4a84-86ae-85c78a6188dd",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "d19503f3-1bce-42e3-ab21-ac40d999ec95",
+      "result_id": "527a7c3c-8e52-4d80-80be-dcf664ceea89"
+    },
+    {
+      "claim_id": "fd7382bc-97e5-4514-a684-e58e52758f1a",
+      "result_id": "f8c81fe9-616f-47cc-bde8-4b1d70122454"
+    },
+    {
+      "claim_id": "9b6778b4-9e32-41c0-83a1-332e113b834d",
+      "result_id": "f8c81fe9-616f-47cc-bde8-4b1d70122454"
+    },
+    {
+      "claim_id": "27e92b4e-f835-45dc-b511-da8c66e3a322",
+      "result_id": "f8c81fe9-616f-47cc-bde8-4b1d70122454"
+    },
+    {
+      "claim_id": "bd101014-9b81-4663-a404-75de1e6ac2c1",
+      "result_id": "f8c81fe9-616f-47cc-bde8-4b1d70122454"
+    },
+    {
+      "claim_id": "3199fd2e-310f-42b3-8c83-6e863056094a",
+      "result_id": "39361745-1f48-413b-9390-ffb3ee6fe164"
+    },
+    {
+      "claim_id": "85416f32-25f4-4e7d-942f-8223e38ce18c",
+      "result_id": "39361745-1f48-413b-9390-ffb3ee6fe164"
+    },
+    {
+      "claim_id": "117429cb-e3b1-4149-9478-606dfaf9488b",
+      "result_id": "39361745-1f48-413b-9390-ffb3ee6fe164"
+    },
+    {
+      "claim_id": "31c2a6b0-66d2-457d-bca9-8aa0a1ceead9",
+      "result_id": "39361745-1f48-413b-9390-ffb3ee6fe164"
+    },
+    {
+      "claim_id": "ca866b5e-520a-4d52-9a6c-effb2966b00b",
+      "result_id": "39361745-1f48-413b-9390-ffb3ee6fe164"
+    },
+    {
+      "claim_id": "571525db-2ab5-4259-b90a-ed56298b425c",
+      "result_id": "32f14ebc-50f4-469b-b3c7-bb162ad9dd5a"
+    },
+    {
+      "claim_id": "a0907b2a-a8b1-4186-a416-bede5579b5bf",
+      "result_id": "32f14ebc-50f4-469b-b3c7-bb162ad9dd5a"
+    },
+    {
+      "claim_id": "04e3bbbf-f825-4f0e-982d-e46a88734e82",
+      "result_id": "32f14ebc-50f4-469b-b3c7-bb162ad9dd5a"
+    },
+    {
+      "claim_id": "f6859ea9-cf17-4b3e-9ec1-901aaa753ab1",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "9631129d-7bcb-4b86-baf1-f6603ff3d6f6",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "db2b8a7d-0f07-42b6-a60a-7887fe9e58ed",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "b5500aca-4476-4d78-84d8-1879015ec83d",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "f29e42cc-f9cf-428f-9a90-bd16e9bcbc0d",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "6468cef8-897b-40e5-a405-7bf269cd2e11",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "3e8059d3-6269-4cc9-a837-fbd5de719989",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "2b725afe-8819-4812-90a5-cbda27766106",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "c4856dac-c9d4-4a3c-aa82-f9f481f5150d",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "dd6c5446-ec69-4c0f-9093-6fcf6f94b961",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "8b3bf02e-4ed8-4fa0-9617-5e692c01c460",
+      "result_id": "28933634-0e18-4d9f-a1f8-dd68220a6e20"
+    },
+    {
+      "claim_id": "e3a238b8-38a5-4912-8434-cdd8bfd05e59",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "050170fe-dcc1-4417-b59f-e19b35cb8985",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "0fb73565-c206-4859-815a-29d434ed60a5",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "3016b48c-282a-428e-b104-a5720c346866",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "8a290ca4-cd73-48e8-a575-19124f5112aa",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "8366bf48-1853-4bd5-abd3-c05c7c30e809",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "3786c0a4-b3b0-48bf-8b74-d34e98cb25e1",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "cf8d6954-a7fe-4242-88ee-d08ca666de64",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "eeefffbf-78e3-4526-aac5-5627cfad642e",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "fd8e0f48-b5ba-4c9e-bc5d-7883d7d57102",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "c38fb4ba-3d3b-4c5c-ae8b-e600678d401b",
+      "result_id": "eec1aae9-e2b4-49ec-8156-552958adf867"
+    },
+    {
+      "claim_id": "d4de6a4e-3ee8-436d-b1a0-6d1107e28e52",
+      "result_id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a"
+    },
+    {
+      "claim_id": "fe4dbc36-a77a-4438-8342-f64f4fedf55f",
+      "result_id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a"
+    },
+    {
+      "claim_id": "03f7f553-ab16-4fe3-ad0e-709f4aae77a0",
+      "result_id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a"
+    },
+    {
+      "claim_id": "1a3e2cac-bc4e-4f07-b228-7536e9728dbe",
+      "result_id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a"
+    },
+    {
+      "claim_id": "85aeaa05-2063-4e4d-ae28-a493eee65e01",
+      "result_id": "7948223e-abc9-44a4-8ddb-7e1c5776c42a"
+    },
+    {
+      "claim_id": "e5cd1100-f7d4-47c9-b07c-7f270b407ea4",
+      "result_id": "4527d162-5687-4f2b-bad5-681d3bc8f952"
+    },
+    {
+      "claim_id": "e0529264-649f-4594-be89-cc17b41bc24f",
+      "result_id": "4527d162-5687-4f2b-bad5-681d3bc8f952"
+    },
+    {
+      "claim_id": "bcd8e359-76ee-4dd7-ab92-d4acd3d81f30",
+      "result_id": "4527d162-5687-4f2b-bad5-681d3bc8f952"
+    },
+    {
+      "claim_id": "cd8adf99-9766-4a19-a181-71390e39f59c",
+      "result_id": "4527d162-5687-4f2b-bad5-681d3bc8f952"
+    },
+    {
+      "claim_id": "74fceea7-1c48-423d-b58b-5558a9db2d09",
+      "result_id": "4527d162-5687-4f2b-bad5-681d3bc8f952"
+    },
+    {
+      "claim_id": "f2779eb8-f0de-49dd-957f-fffd4c4e1171",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "04878f6d-d9dc-48fa-9c8d-ccdd96d08c9b",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "3e367a4a-ee5b-4269-a710-2f5c00ff563b",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "73fd7a9d-3941-4eae-9900-dadefdaa1037",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "dab2f0b5-2795-440b-90cc-2a8f2f2ca27c",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "c5578141-0582-4d3d-95bc-21d39e28b6ec",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "1ab35c3d-af99-4bfe-815d-f63a51bbda5d",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "5e169cf7-d7d6-4b75-b4ab-7006c5fa7675",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "8b06577b-4488-45b1-85ed-c9e8ee540741",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "c2b753ba-8d7b-4760-9ae4-88df00841b03",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "848daad9-773d-400b-be7b-51a4292d0345",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "239d59d9-f150-46dd-8e23-80fe86285824",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "6edadae3-42c7-4dd7-a1a3-a046e06f0c5e",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "48bf8ff7-28b7-4ff3-9e1b-2082cfda9bf0",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "369e7231-ba46-4780-b080-f6a06a8099bf",
+      "result_id": "bb30be2b-72a8-4a8f-9cec-edfeece4dd44"
+    },
+    {
+      "claim_id": "596b3ecd-661a-49da-978b-3b8bf5e9ede0",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "f6e208a9-c4ed-42cb-b824-908ce921836e",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "898d8775-6a82-49cc-b742-57e25f71514c",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "ef752696-96dc-44b1-b762-1768464f74e5",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "b05c7e1f-812f-4e02-bb10-a258e5a27afb",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "22235931-cd7a-4da9-af84-137f6302021e",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "345b4446-5f14-4025-8e93-9f63b72ab3da",
+      "result_id": "1aefe2d3-5255-40e7-8b01-9a8bdca2b7bc"
+    },
+    {
+      "claim_id": "239fbef0-f871-441f-833d-7ea8304ac45e",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "5d10d0e2-5b44-4e9a-a31b-77a2f38cba10",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "92a0f004-7f3c-4591-87e2-c9f625147020",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "b62e02b5-47c5-4b69-b889-78de7fb358f0",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "2a6cc456-2b43-417a-a499-df8db45cdb53",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "7d71b08f-07af-4b3c-8fe4-c1251c43f730",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "f1c1b5a0-0633-4646-96cb-a01753dfba2b",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "8bf392de-e6ff-4f13-aca2-92a86d2096d4",
+      "result_id": "4b3de27c-294a-4c10-9ea7-992471bde45c"
+    },
+    {
+      "claim_id": "9eb9382a-ec46-4b1c-a539-d3699c97df0c",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    },
+    {
+      "claim_id": "689f9e5e-e8a8-4999-a552-06bafccdf2e4",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    },
+    {
+      "claim_id": "530cfadd-17b0-42e7-920d-4877f7d95b9c",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    },
+    {
+      "claim_id": "ba75ad94-0711-4ad6-92d0-67794cff0d37",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    },
+    {
+      "claim_id": "20c6761d-ddf6-4fd0-9f47-f6b8d4259815",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    },
+    {
+      "claim_id": "ba03417f-a21c-4dfb-ae1f-05ead5541a09",
+      "result_id": "ef83a15a-79e6-457c-ae32-905829945d82"
+    }
+  ],
+  "comparisons": []
+}

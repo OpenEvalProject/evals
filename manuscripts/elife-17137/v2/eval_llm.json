@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Neuroblastoma is a pediatric solid tumor arising from neural crest cells with ALK mutations identified as oncogenic drivers in familial and sporadic cases. The most frequently mutated ALK residues (R1275, F1174, F1245) account for 85% of mutations and cause constitutive activation of the receptor tyrosine kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide well-established background information about neuroblastoma and ALK mutations, supported by multiple external citations (Maris 2010, Smith et al. 2010, Chen et al. 2008, George et al. 2008, Bresler et al. 2014). This represents accepted knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Clinical trials of ALK inhibitors (crizotinib and ceritinib) showed limited efficacy in neuroblastoma patients with ALK mutations, with only 1 of 11 patients responding to crizotinib and 2 of 14 responding to ceritinib, despite these drugs showing marked clinical activity in other ALK-rearranged cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 summarize prior clinical trial results from external studies (Kwak et al. 2010, Moss\u00e9 et al. 2013, Marsilje et al. 2013, Shaw et al. 2014, Geoerger et al. 2015), establishing the clinical context and rationale for the current study. These are well-documented observations from the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ALK F1174L mutations confer resistance to ALK inhibitors through increased ATP-binding affinity, occur frequently in MYCN-amplified tumors, and define a subset of patients with particularly poor outcomes. ALK mutations are found equally in low- and high-risk neuroblastoma, suggesting cooperation with other oncogenic aberrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 synthesize prior literature (Friboulet et al. 2014, Sasaki et al. 2010, Bresler et al. 2011, 2014, Infarinato et al. 2016, Berry et al. 2012, Heukamp et al. 2012, Zhu et al. 2012) establishing the biological context for resistance mechanisms and co-occurrence patterns. This background information is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "MDM2 functions as an E3 ubiquitin ligase targeting p53 for degradation, and CGM097 exerts antitumor effects by stabilizing p53 and activating p53 pathways in tumors with wild-type TP53. TP53 mutations occur in less than 2% of neuroblastomas at diagnosis and 15% at relapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 describe established mechanisms of MDM2/p53 biology and CGM097's mechanism of action, supported by citations (Jeay et al. 2015, Weisberg et al. 2015, Carr-Wilkinson et al. 2010, Tweddle et al. 2003). This provides the scientific rationale for testing MDM2 inhibition in neuroblastoma.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C95"
+    ],
+    "result": "NB-1 cells carrying ALK amplification (but no ALK kinase domain mutations), MYCN amplification, and wild-type TP53 showed pronounced dose-dependent sensitivity to four ALK inhibitors (ceritinib, crizotinib, alectinib, PF06463922), with sensitivity matching the potency observed in Ba/F3 cells expressing wild-type EML4-ALK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C95 are supported by experimental data in Figure 1A-C and Table 1, showing dose-response curves, IC50 comparisons with published Ba/F3 data (Zou et al. 2015), and Western blot analysis of signaling inhibition. The characterization is thorough and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C96",
+      "C97",
+      "C109"
+    ],
+    "result": "Neuroblastoma cell lines harboring ALK F1174L mutation (SH-SY5Y, KP-N-RT-BM-1) showed reduced sensitivity to all four ALK inhibitors compared to NB-1 cells, with IC50 values 10-100 fold higher than Ba/F3 cells expressing EML4-ALK F1174L, suggesting additional pathways contribute to cell survival beyond ALK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C96-C97, C109 are supported by experimental data in Figures 1A-C and Table 1, comparing dose-response curves and IC50 values across cell lines and with published Ba/F3 data. The inference that other pathways contribute to survival is reasonable given the differential sensitivity compared to Ba/F3 cells with the same mutation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C38",
+      "C108",
+      "C110"
+    ],
+    "result": "Single-agent ceritinib treatment showed transient or limited efficacy in NB-1 and SH-SY5Y xenograft models, with tumors resuming growth 2 weeks after treatment initiation, suggesting that ALK inhibition alone is insufficient for durable responses and that combination therapy is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C38, C108, C110 are supported by in vivo data in Figure 3A showing tumor volume measurements over time. The observation of transient response followed by progression is clearly documented, and the inference about need for combination therapy is reasonable, though the conclusion would be strengthened by mechanistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C111"
+    ],
+    "result": "TP53 wild-type neuroblastoma cell lines showed significantly greater sensitivity to CGM097 (IC50 < 3.5 \u00b5M) compared to TP53 mutant cell lines (IC50 > 11 \u00b5M), but CGM097 monotherapy at 50 mg/kg/day showed no tumor growth inhibition in xenograft models, suggesting single-agent MDM2 inhibition is insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42, C111 are supported by in vitro data (Figure 2A) and in vivo data (Figure 3A). The differential sensitivity based on TP53 status is consistent with CGM097's mechanism of action. However, the lack of in vivo efficacy despite in vitro activity raises questions about dosing, pharmacokinetics, or tumor microenvironment effects that are not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Ceritinib and CGM097 combination at concentrations >100 nM showed synergistic growth inhibition in three TP53 wild-type cell lines (NB-1, SH-SY5Y, KP-N-RT-BM-1) by isobologram analysis, but showed no improved inhibition in TP53-mutated KELLY cells where CGM097 was completely ineffective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by dose matrix data (Figure 2B) and isobologram analysis (Figure 2C). The synergy analysis appears methodologically sound using established methods (Leh\u00e1r et al. 2009). The lack of effect in TP53-mutant cells serves as an appropriate negative control confirming mechanism dependence on p53 pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C89",
+      "C105"
+    ],
+    "result": "Ceritinib and CGM097 induced complementary, non-overlapping sets of anti-proliferative and pro-apoptotic proteins (CGM097: p53, p21, PUMA; ceritinib: p27, Bim), with only the combination causing significant cleaved PARP induction, indicating cell death through apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52, C89, C105 are supported by Western blot data in Figure 2D showing differential protein induction patterns. The complementary nature of the pathways provides a mechanistic explanation for synergy. However, cleaved PARP is a marker but not definitive proof of apoptosis; additional assays (e.g., annexin V staining, caspase activation) would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C88",
+      "C90",
+      "C91",
+      "C106",
+      "C107"
+    ],
+    "result": "Ceritinib plus CGM097 combination resulted in complete and durable tumor regressions in NB-1, SH-SY5Y, and NB-1643 xenografts throughout treatment, but tumor regrowth occurred 2-8 weeks after treatment cessation in some animals. No antitumor activity was observed in IMR-32 xenografts (wild-type ALK), confirming specificity for ALK-aberrant tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C53-C58, C88, C90-C91, C106-C107 are supported by comprehensive in vivo data (Figure 3A-B) showing tumor volume measurements, Western blot analysis of xenograft tissues, and appropriate controls. The IMR-32 negative control (wild-type ALK) strengthens the conclusion about mechanism. However, tumor regrowth after treatment cessation indicates incomplete eradication of residual disease, limiting clinical translatability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "RNA-Seq analysis of ceritinib-resistant NB-1 tumors revealed marked upregulation of genes encoding ribosomal proteins (RPS, RPL) and translation elongation factors, consistent with MYCN upregulation, which was confirmed by Western blot showing increased MYCN protein expression in resistant tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by RNA-Seq data (Figure 4A, Supplementary file 1) and Western blot validation (Figure 4B). The connection between ribosomal protein gene upregulation and MYCN is supported by literature (van Riggelen et al. 2010, Boon et al. 2001). However, the RNA-Seq analysis appears to use only 2 samples per group, which is underpowered for robust differential expression analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C84",
+      "C85",
+      "C103"
+    ],
+    "result": "NB-1 cells rapidly developed resistance to ceritinib in vitro despite initial high sensitivity (IC50 <50 nM), with resistant cells (NB-1R) showing markedly increased MYCN expression but strongly suppressed ALK signaling, suggesting MYCN upregulation drives proliferation despite ALK inhibition. This represents the first demonstration of MYCN upregulation as a resistance mechanism to ALK inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C64-C67, C84-C85, C103 are supported by dose-response data (Figure 5A), Western blots (Figure 5B, Figure 5\u2014supplement 1B), and resistance development experiments. The novelty claim (C84) appears justified as this mechanism has not been previously reported. However, the study does not exclude other potential resistance mechanisms or determine whether MYCN upregulation is the sole driver.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C101"
+    ],
+    "result": "shRNA-mediated MYCN knockdown restored ceritinib sensitivity in NB-1R cells without affecting viability in DMSO-treated cells, suggesting both ALK inhibition and MYCN reduction are required for growth inhibition. MYCN knockdown increased phospho-ALK levels but did not affect p53 or p21 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69, C101 are supported by cell viability data with doxycycline-inducible shRNA (Figure 5C-D) and Western blots (Figure 5\u2014supplement 2). The genetic validation strengthens the causal link between MYCN and resistance. However, the increase in phospho-ALK upon MYCN knockdown is unexplained and suggests complex feedback regulation that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C92",
+      "C104",
+      "C115"
+    ],
+    "result": "Ceritinib-resistant NB-1R cells showed strongly decreased p21 expression indicating impaired p53 signaling. CGM097 treatment restored p53 pathway activation (inducing p53, p21, MDM2, PUMA) and resensitized resistant cells to ceritinib/PF06463922, with the combination causing increased anti-proliferative activity and cleaved PARP induction, overcoming resistance in vitro and in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73, C92, C104, C115 are supported by Western blot data (Figure 5E-F), cell viability assays (Figure 5G, Figure 5\u2014supplement 1C), and in vivo tumor regression data (Figure 5H). The mechanistic link between p53 pathway restoration and resensitization is well-demonstrated. However, the claim that p53 signaling is 'impaired' (C104) is inferred from decreased p21 rather than direct measurement of p53 activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C102"
+    ],
+    "result": "In ceritinib-resistant NB-1 xenografts, CGM097 monotherapy was ineffective, but ceritinib plus CGM097 combination caused rapid tumor regressions. Resistance was prevented when combination treatment was initiated from the start, indicating both ALK inhibition and p53 activation are required for inhibiting resistant tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77, C102 are supported by in vivo tumor volume data (Figure 5H) showing multiple treatment arms including sequential and combination regimens. The experimental design with appropriate controls (monotherapy, sequential therapy, upfront combination) provides strong evidence for the necessity of dual targeting. This represents a key translational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Clinical and preclinical evidence indicates that ALK-mutated neuroblastoma responds less favorably to ALK inhibitors than other ALK-rearranged cancers, with resistance not solely attributable to F1174L mutations since R1275Q-mutant tumors also showed poor responses. Co-occurrence of ALK mutations with MYCN amplification may further limit single-agent ALK inhibitor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C112-C114 synthesize clinical trial data and preclinical observations from the literature and current study to explain limited clinical efficacy. The reasoning is logical and supported by multiple lines of evidence. However, these are primarily interpretive claims drawing connections between observations rather than direct experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Prior studies demonstrated that ALK inhibition synergizes with chemotherapy or CDK4 inhibition in neuroblastoma models, MDM2 antagonists suppress proliferation of TP53 wild-type neuroblastoma cells (especially MYCN-amplified), and MDM2 contributes to tumorigenesis in MYCN-driven transgenic models with haploinsufficiency reducing tumor incidence via p53-mediated apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 summarize prior literature (Krytska et al. 2016, Wood et al. 2016, Chen et al. 2015, Van Maerken et al. 2006, 2009, Gamble et al. 2012, Chen et al. 2009) establishing precedent for combination strategies and MDM2 inhibition in neuroblastoma. This provides important context but represents background rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "ALK F1174L mutations occur at higher frequency in MYCN-amplified tumors, and almost all ALK-amplified tumors are also MYCN-amplified, making durable responses unlikely with ALK inhibition alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 represent established knowledge from the literature about co-occurrence patterns of ALK and MYCN alterations. While important for contextualizing the study's rationale, these are not novel findings. The inference about limited durability of single-agent therapy is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Published IC50 values for ALK inhibitors in Ba/F3 cells expressing wild-type or F1174L-mutated EML4-ALK were: crizotinib (88 nM, 106 nM), ceritinib (25 nM, 40 nM), alectinib (39 nM, 28 nM), and PF06463922 (2.7 nM, 4.8 nM), respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 accurately report published data from Zou et al. 2015, which is used as a benchmark for comparing the neuroblastoma cell line sensitivities. This is appropriate use of literature data for comparative purposes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Cell line characterization showed NB-1643 carries ALK R1275Q mutation with MYCN amplification and wild-type TP53; IMR-32 carries wild-type ALK with MYCN amplification and wild-type TP53; KELLY carries ALK F1174L mutation with MYCN amplification and mutant TP53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 report genetic characterization data from Table 1. This represents standard cell line characterization essential for interpreting experimental results. The data appears consistent with known characteristics of these established cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Speculative mechanisms proposed include: PF06463922's partial growth inhibition in F1174L-mutated cells may be due to its high ALK specificity; mutationally activated ALK may suppress MYCN-induced apoptosis; and prolonged ALK inhibitor treatment may shift the pro-survival/pro-apoptotic equilibrium enabling tumor cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 represent speculative mechanistic explanations for observed phenomena. While these hypotheses are reasonable, they lack direct experimental validation in the current study. The speculation about PF06463922 specificity (C116) is particularly weak as no off-target activity data is provided. These would require additional experiments to validate.",
+    "result_type": "MINOR"
+  }
+]

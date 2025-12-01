@@ -1,0 +1,1719 @@
+{
+  "submission": {
+    "id": "af2cee3c-3620-4db7-852a-e6725293911b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:02:10.954748Z",
+    "updated_at": "2025-11-30T22:02:10.954748Z"
+  },
+  "content": [
+    {
+      "id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "submission_id": "af2cee3c-3620-4db7-852a-e6725293911b",
+      "content_type": "manuscript",
+      "content_text": "# Labeling proteins inside living cells using external fluorophores for microscopy\n\n## Authors\n\n- Kai Wen Teng<sup>1</sup>\n- Yuji Ishitsuka<sup>2</sup>\n- Pin Ren<sup>1</sup>\n- Yeoan Youn<sup>1</sup>\n- Xiang Deng<sup>4</sup>\n- Pinghua Ge<sup>3</sup>\n- Sang Hak Lee<sup>2</sup>\n- Andrew S Belmont<sup>1</sup>\n- Paul R Selvin<sup>1</sup> ([ORCID: 0000-0002-3658-4218](https://orcid.org/0000-0002-3658-4218)) \u2020\n\n### Affiliations\n\n1. Center for Biophysics and Quantitative Biology University of Illinois at Urbana-Champaign Urbana United States\n2. Center for Physics of Living Cell University of Illinois at Urbana-Champaign Urbana United States\n3. Department of Physics University of Illinois at Urbana-Champaign Urbana United States\n4. Department of Cell and Developmental Biology University of Illinois at Urbana-Champaign Urbana United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSite-specific fluorescent labeling of proteins inside live mammalian cells has been achieved by employing Streptolysin O, a bacterial toxin which forms temporary pores in the membrane and allows delivery of virtually any fluorescent probes, ranging from labeled IgG\u2019s to small ligands, with high efficiency (>85% of cells). The whole process, including recovery, takes 30 min, and the cell is ready to be imaged immediately. A variety of cell viability tests were performed after treatment with SLO to ensure that the cells have intact membranes, are able to divide, respond normally to signaling molecules, and maintains healthy organelle morphology. When combined with Oxyrase, a cell-friendly photostabilizer, a ~20x improvement in fluorescence photostability is achieved. By adding in glutathione, fluorophores are made to blink, enabling super-resolution fluorescence with 20\u201330 nm resolution over a long time (~30 min) under continuous illumination. Example applications in conventional and super-resolution imaging of native and transfected cells include p65 signal transduction activation, single molecule tracking of kinesin, and specific labeling of a series of nuclear and cytoplasmic protein complexes.\n\n## Introduction\n\nFluorescence microscopy of the living cells is often achieved through specific labeling of proteins by antibody, nanobody, or bio-specific ligand conjugated to a fluorophore. However, most of these bio-molecules and fluorophores are not able to cross the cell membrane of a living cell, making it challenging to image intracellular proteins. There are a few exceptions to this barrier, namely, by using few selected cell-permeant fluorophores that have been attached to membrane-permeant entities\u00a0(Lukinavi\u010dius et al., 2014; Grimm et al., 2015; Wombacher et al., 2010). These have obvious trade-offs of limited choice in emission wavelengths and available class of ligands that they can be covalently attached to and maintain their selectivity for the particular intracellular protein. There has also been mixed success in delivering fluorescent probes by appending a membrane-permeant small peptide such as the TAT-TAR HIV peptide\u00a0(Silhol et al., 2002; Richard et al., 2002). Another method to overcome the permeability issue is by transfecting the cells with plasmid DNA encoding the intracellular protein of interest appended to a fluorescent protein (FP). Nonetheless, there are many cases where such transfection is not possible or not desirable. In addition, the detection of FPs is less than optimal because of their limited photostability.\n\nOther methods that attempt to overcome this limitation include microinjection, electroporation and osmotic pinosomelysis (Okada and Rechsteiner, 1982; Crawford et al., 2013; Zhang et al., 1990; Kim et al., 2008). However, these techniques have significant drawbacks such as low throughput and the requirement of additional apparatus. Finally, two recently developed methods, such as \u2018biophotonic laser-assisted surgery tool (BLAST)\u2019 and \u2018cell squeezing\u2019 are promising techniques, although they require the cells to be cultured in specific platforms like fabricated surface or microfluidic channels (Wu et al., 2015; Kollmannsperger et al., 2016).\n\nIn this study, we make use of the well-known pore-forming bacterial toxin streptolysin O (SLO) to label intracellular proteins in mammalian cells for fluorescence microscopy applications. In the past, SLO has been used for delivering fluorescently labeled proteins\u2014but not targeted to specific proteins\u00a0(Walev et al., 2001). SLO has also been used with transfected cells to deliver a small lanthanide probe\u00a0(Rajapakse et al., 2010). It has also been used for labeling RNA with \u2018molecular beacons\u2019 or a streptavidin-RNA probe, and also to introduce (non-fluorescent) ligands through the membrane\u00a0(Nitin and Bao, 2008; Kano et al., 2000; Santangelo et al., 2009). Here, we present a general method for labeling intracellular proteins in transfected or non-transfected cells, in the nucleus or the cytoplasm, with probes ranging in size from small (~2 kDa) molecules to large proteins (up to 150 kDa), for either general or super-resolved fluorescence microscopy.\n\n## Results and discussion\n\n### Reversible permeabilization using pore-forming toxin for delivering fluorescent probes\n\nWe applied SLO to permeabilized the cells, creating pores of ~30 nm in size (Stewart et al., 2015) in order to deliver fluorescent probes for labeling intracellular proteins in a site-specific manner (Figure 1a). First, we permeabilized the cells with SLO at 37\u00b0C for 7\u201310 min depending on the cell confluency, followed by incubation with the fluorescent probes (i.e., fluorophores by themselves, or covalently attached to a ligand or a protein) for 5 min on ice. Excess probes were then removed by a washing step; then a \u2018complete medium\u2019, supplemented with ATP, GTP, and glucose, was added to reseal the membrane (see Materials\u00a0and\u00a0methods for specific details). The cells were then allowed to recover in the incubator at 37\u00b0C for 15\u201320 min. For super-resolution microscopy, namely direct-STORM (dSTORM), 4 mM glutathione and 0.5 U/mL of Oxyrase were added to create blinking fluorophores (Heilemann et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig1-v3.jpg)\n\n**Figure 1.:** (a) Schematic of permeabilization, delivery, for reversible permeabilization using streptolysin O (SLO) on live CHO-K1 cells.\u00a0Cells are exposed to SLO for 7\u201310 min before incubating with the three different fluorescent probes (DAPI, phalloidin-Alexa647, and anti-PMP70-ATTO488) on ice for 5 min. Recovery was initiated by adding 10% FBS DMEM supplemented with nucleotide ATP, GTP, and glucose. (b) Specific labeling of cellular structures by SLO delivered probes. Nucleus, peroxisome, and actin filaments are labeled by DAPI, Anti-PMP70-ATTO488, and phalloidin-Alexa647 respectively. The cells are then incubated with Texas red- 20 kDa dextran to check whether the membrane has recovered. The negative control (SLO-) shows no labeling of cellular structure. The negative control cells are then permeabilized by SLO to show the fluorescence of Texas Red in permeabilized cells. (DAPI is impermeant to CHO-K1 cells.) (c) p65 translocating from cytosol to nucleus after SLO permeabilization in HeLa cells. TNF-\u03b1 and Leptomycin B\u00a0(LMB) were used to stimulate nucleus import of the p65-GFP protein labeled by GBP-ATTO647N. The nucleus fluorescence of both GFP and ATTO647N channels increased 15 and 30 min after stimulation as shown in time series fluorescence images (Left). The percent increase of nucleus fluorescence was quantified (Right). (Red square = ATTO647N intensity in the nuclear after TNF-\u03b1 and LMB treatment, Green circle = GFP intensity after TNF-\u03b1 treatment [N = 4], Red circle =ATTO647N Intensity after TNF-\u03b1 treatment [N = 4]. Blue circle with dashed line is the GFP intensity after TNF-\u03b1 treatment for cells that have never been permeabilized by SLO [N = 4]. Green triangle = GFP intensity without TNF-\u03b1 and LMB treatments [N = 3]).\u00a0Scale bar denotes 10 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Propidium iodide assay performed on CHO-K1 cell after SLO permeabilization and recovery. The CHO-K1 cells were recovered in different buffers after permeabilization. Only recovery media and 10% FBS DMEM successfully excluded the cells from PI staining. Only recovery media and 10% FBS DMEM successfully resealed the cells to prevent PI staining. The recovery media is not significantly better than 10% DMEM in terms of repairing the cell membrane. We observed that there is an initial loss of some metabolites from inside the permeabilized cells. This is evident from the fact that a larger proportion of molecular motors were immobile along the microtubules in severely permeabilized cells (Figure 3\u2014figure supplement 3b). The effect from the lost metabolites can be rescued by using our recovery media which is supplemented with essential metabolites (ATP, GTP and glucose), but not with 10% FBS DMEM. Therefore, we emphasize the importance of considering replenishing metabolites for biological system that one is interested in. Scale bar denotes 50 \u03bcm. (b) CHO-K1 cells cultured on lettered fiduciary marker for 16 hr after delivering GBP-ATTO647N probes. The letter and number inside the red square assists us in locating the same area. The number of cells are counted in the region initially and after 16 hr. The number of cells increased by nearly 60% despite SLO treatment, suggesting cells were able to undergo cell division [N=2 regions of interest]. (c) HeLa cells expressing Halotag-GFP mitochondria membrane tag were imaged before and after delivery of Alexa647-halotag ligand. The morphology of mitochondria did not appear to differ after the permeabilization and labeling procedure. Scale bar denotes 10 \u00b5m.\n\nTo demonstrate specific labeling of intracellular structures, we delivered three different membrane impermeant fluorescent probes (DAPI, < 1 kDa; Phalloidin-Alexa647, 1.95 kDa; Anti-PMP70-ATTO488, ~150 kDa) simultaneously into live CHO-K1 cells that have been permeabilized with SLO (Figure 1b). Cells that are permeabilized by SLO and labeled by the fluorescent probes should show nucleus stained by DAPI, actin filament stained by phalloidin-Alexa647, and peroxisomes stained by anti-PMP70-ATTO488. Fluorescence images of SLO treated cells (Figure 1b) revealed 94% (15 out of 16 cells) of the cells in the field of view contains nuclear staining by DAPI, 88% of the cells contains clear and punctate structure of labeled peroxisomes, and 88% of the cells showed filamentous structure of the actin \u2013 a stark contrast to SLO untreated negative control cells (Figure 1b). In addition, field of views other than the one shown in Figure 1 were counted, and the result shows similar degree of permeabilization with a standard deviation of 8% (N = 49 cells). To confirm the membrane integrity after recovery, SLO-treated cells were incubated for 5 min with Texas Red dextran, (~20 kDa), a normally membrane-impermeant fluorescent molecule. The membrane of recovered cells efficiently excluded Texas Red dextran (Figure 1b). In contrast, the negative control cells that were not treated with SLO, showed no fluorescence signal until cells were permeabilized by SLO (Figure 1b). The health of the cells after permeabilization is a universal problem in any methods attempting to compromise the cell membrane. In this study, we performed several cell viability assays to demonstrate that the cells remain viable after recovering from SLO permeabilization (Figure 1\u2014figure supplement 1). We showed that close to 95% of cells had intact membrane after recovery when recovered in proper buffers (Figure 1\u2014figure supplement 1a); that the cells were able to divide (Figure 1\u2014figure supplement 1b); and the cellular organelle displayed comparable morphology before and after SLO treatment (Figure 1\u2014figure supplement 1c).\n\nAside from the cell viability tests performed above, we performed a translocation assay on the transcription factor p65 fused with GFP on the N-terminus, in human cancer cell line (HeLa). This would demonstrate that signal transduction events still occurred at a normal level after SLO treatment and fluorophore labeling\u00a0(Los et al., 2008). The cells were permeabilized and intracellular p65 was labeled with an anti-GFP single-domain antibody (known as GBP\u00a0[Ries et al., 2012]) (Figure 1c). When the protein TNF-\u03b1 is added to the media, p65 migrates into the nucleus; if the nuclear export inhibitor-Leptomycin B (LMB) is also added, the effect is enhanced\u00a0(Los et al., 2008). This is exactly what was quantitatively observed (Figure 1c). This p65-translocation result shows that the level of response to TNF-\u03b1 in SLO-treated cells is comparable to untreated cells. Hence, the technique may be applied to perform similar assay on primary culture or cell lines for high-throughput drug screening.\n\nTo test the possibility of using SLO for delivering fluorescent probes ranging from <1 kDa to ~150 kDa (Figure 2a), we transfected the cells with plasmid encoding Halotag-GFP-ActA, a protein that binds to the outer mitochondrial membrane. Consequently, Halotag and GFP are present facing outside of the mitochondrial membrane and are accessible to our fluorescent probes. Fluorescence image of the GFP on the mitochondrial membrane (mitochondrial-GFP) is shown in Figure 2b. The Halotag was labeled with a cell-impermeant dye conjugated to chloroalkane, or with a biotinylated chloroalkane bound to fluorescently labeled streptavidin. Alternatively, the GFP was labeled with a GBP (a 14 kDa single domain nanobody specific to GFP), or dye-labeled-antibody (IgG). With SLO permeabilization, all of the cell-impermeant probes tested\u2014chloroalkane-Alexa660 (<1 kDa), GBP-ATTO647N (~14 kDa), chloroalkane-biotin-streptavidin-ATTO647N (~56 kDa), and Anti-GFP IgG-labels (~150 kDa)\u2014which varied in size from <1\u00a0KDa to ~150 kDa\u2014were able to specifically label the mitochondrial membrane (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig2-v3.jpg)\n\n**Figure 2.:** (a) Delivery of different sized fluorescent probes for specific labeling of intracellular proteins. The drawings depicting the fluorescent probes are not to scale. (b) Cells are labeled by various SLO delivered probes (magenta) to compare with their intracellular or nucleus target, which is tagged with GFP (green). Chloroalkane labeling was performed on U2OS cells, and the rest were done on CHO-K1 cells. All the probes loaded, up to the ~150 kDa IgG, were successfully delivered by SLO and labeled target proteins. However, only small proteins such as GBP (14 kDa) were able to access the nuclear target. Scale bar denotes 10 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Size cut-off for nucleus accessibility determined using different sized FITC-dextran. We tested the molecular weight cutoff for nucleus entry with fluorescein dextran on CHO-K1 cells. We observed homogenous FITC fluorescence using 40 kDa-dextran, whereas 70 kDa-dextran the fluorescence was excluded in the nucleus. Scale bar denotes 10 \u03bcm.\u00a0(b) The Texas Red Dextran image (yellow) shows permeabilized cells displaying a haze of fluorescence across the whole cell. On the other hand, the chloroalkane-Alexa660 being <2 kDa only stains the cells expressing the GFP-halo protein; no fluorescence was observed in other permeabilized cells. Free chloroalkane-Alexa660 were washed out during our procedure.\n\nWe then tested the accessibility of the probes to nuclear protein using the SLO delivery method. Here, we used the Proliferating Cell Nuclear Antigen (PCNA), bound to GFP (Figure 2). We found that GBP-ATTO647N (~14 kDa) was able to passively diffuse across the nuclear membrane, or diffuse through the nucleus pore complex, in order to label the nuclear proteins PCNA-GFP. In a separate test we found that 40 kDa FITC-dextran was able to access nucleus as well. (The fluorescence of FITC-dextran is homogenously distributed across the nucleus and cytoplasm.) In contrast, probes larger than GBP, such as streptavidin (labeled SA, 53 kDa) or 70 kDa FITC-dextran (Figure 2\u2014figure supplement 1a), were not able to passively diffuse across the nuclear membrane. This cut-off for passive diffusion between 40\u201356 kDa is consistent with the known size-limit for diffusion into nuclear pores (Gr\u00fcnwald et al., 2011).\n\nSurprisingly, we discovered that using small probes, <2 kDa, resulted in background-free labeling\u2014that is, the unbound probe diffused out during the recovery phase. On the other hand, \u2018large\u2019 molecules, >20 kDa dextran or other similar-sized proteins, remained in the cytoplasm, creating evenly distributed fluorescence across the cytosol (Figure 2\u2014figure supplement 1b). Apparently, the pore formed by SLO allows the fluorescently labeled proteins free access to entering the cell, while allowing free access for exit only for relatively small (<2 kDa) proteins. To explain this observation, we hypothesize that some of the larger probes do get washed out, but not fast enough before the membrane starts to heal, and only smaller probes are given enough time to be diffuse out completely. This background-free staining makes permeabilization by SLO advantageous over other methods like microinjection or microporation, where free probes cannot be washed away (Hennig et al., 2015). In addition, the required concentration of fluorescent chloroalkane with SLO-treated cells was a factor of ten lower than that recommended by the manufacturer. This might be because the manufacturer\u2019s means of getting the ligand into the cell depends on setting up a concentration gradient across the cell membrane, whereas none is necessary with SLO.\n\n### Application of pore-forming toxin delivery in Super-Resolution imaging\n\nWe also demonstrate the ability to observe live cell dynamics with dSTORM (Heilemann et al., 2008) by looking at live U2OS human cancer cells with cell-impermeant Alexa647-Phalloidin. To cause photo-blinking necessary for dSTORM, the oxygen concentration must be kept low and a thiol-containing reducing agent must be present. 4 mM glutathione and the commercially available Oxyrase (an oxygen scavenger compatible with live cell imaging) were therefore added (Figure 3\u2014figure supplement 1a\u2013b). We measured actin dynamics for 20,000 frames at 100 ms time resolution, for a total time of 33 min (Figure 3b). Such tremendous photostability was the result of Oxyrase and glutathione; without them, fewer activations of Alexa647 were observed in response to a 405 nm laser. Finally, we observed a thick actin bundle split over the course of ~3 min into two separate strands, ~850 nm apart using this live super-resolution approach (Figure 3c, Video 1). Note that phalloidin is an actin stabilizer and certainly will interfere with the normal dynamic of actin. Here, we are using it as a proof-of-principle example to showcase the possibility of performing live-cell dSTORM using our technique. In addition to actin, we have also done super-resolution dSTORM imaging on Histone 2B and mitochondria labeled with Alexa647 and Alexa660 chloroalkane (Figure 3\u2014figure supplement 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig3-v3.jpg)\n\n**Figure 3.:** (a) The number of detected single molecule activation events per frame with and without the addition of glutathione in the recovery media. With the addition of 4 mM glutathione in the recovery media after SLO permeabilization, there are a greater number of activation events detected per frame, as well as a fewer number of detected events during illumination, suggesting that the added glutathione assists in turning off the fluorophore more efficiently. The insets show the first 50 frames of the images, where with each pulses of 405 nm laser new waves of single molecules are activated. (b) A dynamic dSTORM movie was acquired to examine large-scale actin dynamics. Each frame of the movie is composed of 500 frames, with a 250 frames moving average time window. The movie was recorded for a total of 20,000 frames at 100 ms exposure time, for a total acquisition time of over 30 min. Scale bar denotes 5 \u03bcm (c) A series of zoomed in images focusing on a small section of actins in (b) (yellow rectangle). A thick actin bundle can be seen to split into two thinner actin filaments. The actin filaments grew 230 nm apart after 1 min 40 s, and then 850 nm apart after another 1 min 40 s (Video 1). (d) U2OS cells expressing 2x-mCherry-kinesin (K560) and labeled by RBP-ATTO647N. After just 3 hr of expression, the cell is filled with over-expressed mCherry-kinesin, and it is not possible to track individual protein. Single kinesin molecules can easily be tracked by sparsely labeling mCherry-kinesin with Red fluorescent protein Binding Protein (RBP) conjugated to ATTO647N. (e) Tracking individual ATTO647N-RBP labeled kinesin. Majority of kinesin trajectory in the selected area can be seen to travel uni-directionally in a short distance (<5 \u03bcm). The trajectory enclosed in the red rectangle is an example trace of detected kinesin trajectory. (f) To quantify the kinesin behavior in vivo, velocity and run length of labeled kinesin were measured. The kinesins are moving at an average velocity of 1058 \u00b1 22 nm/s (Center \u00b1 SEM), and the average run length is 621 \u00b1 99 nm (Decay constant \u00b1 SE). The measurements were taken on a heated stage at 30\u00b0C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Representative images of Alexa647 de-activation. U2OS cells were fixed and labeled with Alexa647 to confirm the condition for photoactivation. The cells were fixed in 4% paraformaldehyde and permeabilized in 0.2% Triton X-100. After staining, the Alexa647 probes were deactivated using 640 nm laser. The fluorescence intensity enclosed in area depicted by the yellow line was analyzed and plotted in panel b. (b) Activation of Alexa647 in the presence and absence of Oxyrase. The experiment was performed in the presence and absence of 20 \u00b5L of Oxyrase stock with 20 mM of sodium lactate. Pulses of 405 nm lasers are applied to the either fixed or live cells with stained actin, and the intensity of the enclosed region as a function of frame number is plotted. If the probe reactivated, spikes of intensity increase would be observed. No reactivation was observed without addition of Oxyrase on fixed cell.\u00a0Activation of Alexa647 on actin in fixed cells and in live cells in the presence of Oxyrase.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** On the left is a dSTORM image of Histone 2B protein in the nucleus of HeLa cells. The H2B was labeled by Alexa647-chloroalkane. The image on the right hand side is a dSTORM image of mitochondria labeled with Alexa660-chloroalkane. These two chloroalkane probes were cell impermeant prior to SLO treatment.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20378/elife-20378-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (a) Improving the detection of proteins attached to fluorescent protein by using nanobody labeling. 6xHIS-GFP was immobilized on glass coverslip using the described schematic. ATTO647N-GBP was flowed into the glass coverslip chamber to label the GFP. (b) The photostability of GFP and ATTO647N was evaluated, and an increase of ~6x in total photon output was observed. (c) Demonstration of specific binding of nanobody to mCherry. U2OS cells were first transfected with plasmid encoding 2xmCherry kinesin, and were then permeabilized by SLO. RBP-ATTO647N was added after permeabilization. U2OS cells were recovered in 10% FBS DMEM without ATP, so that in heavily permeabilized cells, the ATP concentration was low after immediately after a 15 min recovery. mCherry Kinesin labeled with RBP-ATTO647N appear to be saturating the microtubule. Specific labeling was demonstrated in composite image. Scale bar denotes 10 \u03bcm. (d) Velocity measurement of kinesin in live U2OS cells at room temperature. The peak after Gaussian fitting shows a velocity of 541 \u00b1 16 nm/s (Center \u00b1 SEM). e) The average run length of kinesin is found to be 792 \u00b1 216 nm (Decay Const. \u00b1 SE).\n\n![Video 1.](https://cdn.elifesciences.org/articles/20378/elife-20378-media1.mp4.jpg)\n\n**Video 1.:** Real time is displayed at the bottom right hand corner of the movie in min:s.\n\nNext, we applied SLO permeabilization to enhance the signal-to-noise ratio (SNR) of the FP for in vivo single-particle tracking applications and to visualize individual fluorescent proteins amongst a large background of over-expressed FPs. FPs works very well for visualizing ensemble of proteins in cell, and constructs of FPs attached to numerous intracellular protein of interest have already been made. However, it remains difficult to study these proteins down to a single molecule level from the fluorescence signal of individual FPs due to low brightness and photostability. The goal here is to label FPs with nanobodies conjugated to dyes with photostability superior to the FPs. For instance, we show that the signal can be improved ~6-fold by detecting the signal of GBP-ATTO647N than the GFP itself (Figure 3\u2014figure supplement 3a\u2013b). Using this method, we can perform single molecule studies on a vast library of existing protein constructs with FP attached by using just FP binding nanobodies conjugated to a fluorophore with better photostability and brightness. Note that attaching multiple dyes per probe can potentially enhance the signal further; here, most of the nanobodies had one organic dye. Using this method, we tracked single kinesin molecules in the cytoplasm of U2OS cells (Figure 3d). We transfected the cells with 2x-mCherry-kinesin (K560), a truncated version of dimeric kinesin-1 with two mCherry\u2019s per kinesin monomer (Norris et al., 2015). Based on the fluorescence of mCherry alone, it is difficult to track a single kinesin protein in vivo, due to both the poor SNR of mCherry and the high background fluorescence created by out-of-focus FPs at different z-positions in the cytoplasm. Here, we enhance the kinesin signal by delivering RFP binding nanobody (RBP-ATTO647N), which binds specifically to mCherry (Figure 3\u2014figure supplement 3c). Labeled individual kinesins can now easily be detected; an example trace is shown in Figure 3e, and an example cell showing moving kinesins labeled with ATTO647N-RBP is shown Video 2. The average run length and velocity was determined to be 621 \u00b1 99 nm (Decay constant \u00b1 SE) and 1058 \u00b1 22 nm/s (Center \u00b1 SEM) at 30\u00b0C (Figure 3f). Both the run length and velocity agrees with the in vitro data on single kinesin at 30\u00b0C (Kawaguchi and Ishiwata, 2000). In addition, we have performed the experiment at room temperature, and indeed we observed a decrease in kinesin velocity (Figure 3\u2014figure supplement 3d\u2013e). Thus, using this technique we were able to track otherwise difficult to observe single molecules in vivo, and allowed us to study the biophysical properties of molecular motors in the cytoplasm of living cells.\n\n![Video 2.](https://cdn.elifesciences.org/articles/20378/elife-20378-media2.mp4.jpg)\n\n**Video 2.:** Real time is displayed at the bottom right hand corner of the movie in min:sec, the movie is played back in 3x the speed compared to real time.\n\n### Conclusion\n\nWe report the application of SLO permeabilization for high-throughput labeling of intracellular proteins, and the visualization of their dynamics in various biological systems. Importantly, we have applied SLO to label cells without transfection. This is achieved by labeling intracellular proteins with antibodies, nanobodies, and bio-specific ligands. This technique has tremendous application for avoiding artifacts caused by over-expression due to transfection. Furthermore, we create an environment for generating photoswitchable and photostable fluorophores in vivo for dSTORM, and enhance the signal of FPs for single particle tracking. Our SLO delivery technique can easily be combined with other signal enhancement techniques, such as \u2018spaghetti monster\u2019 (Viswanathan et al., 2015), for delivering otherwise membrane impermeant probes into living cells for labeling a single protein with numerous probes at once. Lastly, this technique is not limited to delivering of fluorescent probes; the technique can potentially be extended to other types of microscopy that relies on probe delivery, such as cryo-electron microscopy.\n\n## Material and methods\n\n### Cell culture\n\nCHO-K1 cells were grown in F12K (Fisher-Mediatech) supplemented with 10% heat inactivated fetal bovine serum (HI FBS; Life Technologies) and 100 U/mL of penicillin plus 10 \u00b5g/mL streptomycin (PS; Corning). The cells were subcultured at 90\u2013100% confluency by washing it 3x with PBS, incubate the cells with trypsin-EDTA (Corning) for 5 min, and dilute the trypsin four-fold with cell culture media. To prepare the samples for imaging, the main cell culture was subcultured, and cells were plated in a 35 mm glass bottomed dish with 14 mm micro-well cover glass (Cellvis). The culturing of U2OS and HeLa cells followed the aforementioned protocol, except that the base media was replaced with DMEM and MEM (Fisher-Mediatech). CHO-K1, HeLa, and U2OS cells were obtained from ATCC. After the first passage, the cells were aliquoted and frozen. Each aliquot was used for no more than 30 passages. The cells were cultured under aseptic techniques and periodic examination under bright field with a 20x or 100x objective. No testing of mycoplasma contamination was performed on these cells.\n\n### Reversible permeabilization and probe loading\n\nStreptolysin O (SLO, 25,000\u201350,000 U, Sigma-Aldrich) was dissolved in 1 mL of molecular biology grade water. The stock solution was aliquoted and stored at \u221280\u00b0C. A new aliquot was thawed prior to each experiment and used within 5 hr. An aliquot of SLO stock was reduced by 10 mM TCEP (Pierce) for 20 min at 37\u00b0C.\u00a0The SLO stock solution was further diluted to working concentration in DPBS supplemented with 1 mM MgCl2. Different batches of SLO may have different activity, and therefore the optimal SLO concentration should first be determined. The optimized working SLO concentration was determined by testing a range of SLO concentrations for each cell line to achieve >75% permeability to 10 kDa FITC-dextran, while keeping dead cells at a minimum (<10%). Different cell lines required different dosage of SLO; a table of SLO dilution to use for a few selected cell lines and confluency is included in Table 1.\n\n**Table 1.**\n Dilution and incubation time of SLO to use for cell lines used in this study at various confluency.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line</th>\n      <th>Confluency</th>\n      <th>Dilution of SLO stock</th>\n      <th>Incubation time (min)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CHO-K1</td>\n      <td>90\u2013100%</td>\n      <td>250x</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>CHO-K1</td>\n      <td>75%</td>\n      <td>334x</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>U2OS</td>\n      <td>80%</td>\n      <td>500x</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>U2OS</td>\n      <td>50%</td>\n      <td>774x</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>U2OS</td>\n      <td>30%</td>\n      <td>1000x</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>HeLa</td>\n      <td>90%</td>\n      <td>250x</td>\n      <td>10</td>\n    </tr>\n  </tbody>\n</table>\n\nThe cells, grown to 80\u2013100% confluency, were incubated in SLO containing buffer for 7\u201310 min at 37\u00b0C. Permeabilized cells were observed under phase contrast microscopy at 20x magnification after 5 min. Granules inside the cells become more distinctive in permeabilized cells. Fluorescent probes were diluted in Tyrode\u2019s buffer without calcium (140 mM NaCl, 5 mM KCl, 1 mM MgCl2, 10 mM HEPES, 10 mM glucose, pH 7.4). After SLO permeabilization, the cells were washed 2x with DPBS + 1 mM MgCl2. The cells were fluorescently labeled by incubating with the probes, such as DAPI, chloroalkane-Alexa660 (Promega), Alexa647-Phalloidin (RRID:AB_2620155, Thermo Scientific), nanobody-dye conjugate (RRID:AB_2629215, Chromotek), and labeled anti-PMP70-ATTO488 IgG (RRID:AB_1841112, P0090, Sigma-Aldrich), or labeled polyclonal anti-GFP Alexa647 IgG (RRID:AB_162553, A-31852, Thermo Scientific) at a final concentration of 300\u2013700 nM for 5 min on ice. In addition, the nanobody used in this work was either custom purified\u00a0(Wang et al., 2014) or purchased, and could be used interchangeably. The custom nanobody was labeled through the amine group and NHS-dye. Free dyes were purified using 6 kDa Micro Bio-Spin 6 (Bio-Rad) or 7 kDa Zeba Spin desalting column (Thermo Scientific). For preparation of chloroalkane-SA probe, SA was incubated with biotin-PEG-chloroalkane at 1:6 molar ratio for 10 min. Free SA binding sites were then saturated with excess free biotin for 5 min and the sample was purified by using an Amicon concentrator (30 kDa MW cutoff, EMD Millipore). If the probe is prone to cause non-specific binding on the coverslip or cell membrane, 40x dilution of 10X Casein (Vector Lab) was added to the Tyrode\u2019s buffer along with the probes. After labeling, the cells were washed 3x with Tyrode\u2019s buffer, and incubated with recovery medium (Phenol red (P/R) free DMEM with sodium pyruvate, 10% FBS, 2 mM ATP, 2 mM GTP, 2 mg/mL glucose, without antibiotic) for 20 min. The idea to replace lost nucleotide triphosphate and glucose was adapted from previous publication (Kano et al., 2012). To check whether the cell membrane has recovered, the cells were washed with PBS 3x, and incubated with 500 nM of 20 kDa Texas Red dextran diluted in DPBS with 1 mM MgCl2 for 5 min. As a negative control, another coverslip of cell underwent the same treatment except the addition of SLO was also imaged. The negative control was then exposed to SLO and consequently 20 kDa Texas Red dextran to show that the cells are permeant to 20 kDa Texas Red dextran if the cell membrane was still permeable.\n\n### Cell viability assays\n\nSeveral measures to ensure cell viability were performed on CHO-K1 cells after SLO permeabilization and recovery. The cells were recovered in different buffers such as recoveryM (10% FBS DMEM 2 mM ATP, 2 mM GTP, 2 mg/mL Glucose), 10% FBS DMEM, DMEM, Tyrode\u2019s buffer + 10% FBS, TyrodeCA (Tyrode\u2019s buffer + 2 mM CaCl2), Tyrode\u2019s buffer, and DPBS. The idea of supplementing the recovery medium with different component was previously reported (Kano et al., 2012). For propidium iodide (PI) assay, after permeabilization with SLO cells were incubated with 1 ug/mL for 5 min on ice. At the end of staining, the cells were washed with PBS 3x. PI stained cells were imaged using 561 nm excitation and 605 nm emission (Figure \u2014figure supplement 1a). A bright field image was recorded for the same region for cell counting purposes. % viability was calculated based on the number of propidium iodide stained cells over the number of cells counted in bright field.\n\nFor cell counting experiment, CHO-K1 cells were seeded on a lettered fiduciary marker coverslip (Figure \u2014figure supplement 1b). The manufacturing process for the coverslip is described in literature\u00a0Lee et al., 2012. The CHO-K1 cells were permeabilized following the protocol mentioned above with SLO. GBP-ATTO647N was delivered inside the cell without labeling any protein just to mark the cells that are permeabilized. An initial fluorescence and bright field image were recorded right after SLO permeabilization. After 16 hr, the same regions were located with the help of lettered fiduciary marker and another bright field and fluorescence image of the region was recorded. The number of cells present in this region was counted.\n\nTo examine the morphology of the cells before and after SLO permeabilization and labeling, HeLa cells were cultured on the lettered fiduciary coverslip described in the previous paragraph. The cells were transfected with plasmid encoding GFP-ActA-Halotag overnight. The cells were imaged before SLO treatment in both GFP and Alexa647 channel, and the same area was imaged after the cells were treated with SLO and the mitochondria labeled with\u00a0Alexa647-Halotag ligand (Figure 1\u2014figure supplement 1c).\n\n### Plasmid and transfection\n\nFor transfection, all cells were transiently transfected with Lipofectamine 2000 (Life Technologies) following the manufacturer\u2019s protocol, with plasmid DNA (pERB254) enconding GFP-ActA-Halotag, which is a mitochondrial membrane targeted protein. pERB254 was a gift from Michael Lampson from University of Pennsylvania (Addgene plasmid # 67762) (Ballister et al., 2015). For PCNA-GFP used in the study, pcDNA3_NLS_eGFP_hPCNA was derived from pENeGFPPCNA (Leonhardt et al., 2000); eGFP-PCNA was cut from pENeGFPPCNA with BamHI and XbaI and cloned into pcDNA3 cut with HindIII and XbaI using an adapter (AGCTTATGGCTTCGTGGGGATC) to reconstruct the correct start codon for eGFP-PCNA. Unless specified otherwise, the permeabilization procedure was done on cells after overnight transfection. 2xmCherry-K560 plasmid was a gift from Verhey Lab (U. Michigan).\n\n### Fluorescence microscopy\n\nFluorescence and super-resolution microscopy are performed on a Nikon Ti Eclipse microscope with 100X objective (CFI Apo TIRF 100x Oil, N.A. 1.49, Nikon). Excitation lasers (MLC400B, Agilent Technologies, 405 nm, 488 nm, 561 nm and 640 nm) were used for exciting different fluorescent probes. The images were recorded in an EMCCD (iXon DU-897E, Andor). A quad-band dichroic (ZT405-488-561-640RPC, Chroma) was used for reflectance of the excitation laser and transmission of fluorescence. The emission filter choices were 525/50 (DAPI, GFP, ATTO488), 600/50 (mCherry, Texas Red, PI), or 700/75 (Alexa647, ATTO647N). The live cell samples were imaged inside a 30\u00b0C temperature controlled chamber (InVivo Scientific) unless otherwise noted. The static conventional fluorescence images shown were averages of 10 frames taken at 50\u2013100 ms, except for the kinesin experiment, where the spots were rapidly moving so a single frame image was shown. The cells were imaged in 10% FBS DMEM P/R free medium on a glass-bottom dish.\n\n### p65 translocation assay\n\nFor p65 translocation assay, HeLa cell was transiently transfected with p65-GFP. 48 hr post-transfection, the cell was permeabilized with SLO, and the cells were labeled with and GBP-ATTO647N. After the cell recovered from SLO permeabilization, the cells were serum\u2014starved in DMEM for 4 hr prior to TNF-\u03b1 (10 ng/mL) and Leptomycin B (LMB, 2 \u00b5M) treatment.\n\n### dSTORM with cell impermeant probe\n\nU2OS cells were permeabilized using the protocol mentioned above. 330 nM of phalloidin-Alexa647 were loaded after permeabilization. The cells were recovered in recovery media plus 4 mM final concentration of glutathione. After the recovery from SLO permeabilization, 7.5 mL of complete media without phenol red was filled to the top of the glass bottom dish to reduce the contact of media with air. ~100 \u00b5L of Oxyrase stock solution (Oxyrase, Inc.) and 20 mM final concentration of sodium DL-lactate were added to the cell media. A series of images were recorded after the addition of Oxyrase up to a total of 2 hr. The activation laser was 405 nm (0.5 to 7.5 \u03bcW power post-objective), and Alexa647 was de-activated by shining 640 nm laser (600 \u03bcW power post-objective). For dynamic dSTORM movie, 20,000 frames were recorded per cell at 100 ms exposure time per frame. The single molecule detection analysis was done using Matlab-based algorithm, alivePALM\u00a0(Li et al., 2013).\n\n### Kinesin labeling and tracking in live cell\n\nU2OS cells were transiently transfected with plasmid DNA encoding 2xmCherry K560 for 2.5\u20134 hr. Post-transfection the cells were permeabilized with SLO as described above. The cells were then labeled with 150x dilution of stock red fluorescent protein binding nanobody (RBP-ATTO647N, Chromotek). For each cell, a 300 frames movie was recorded using 200 ms exposure time. Spots that move processively for \u22653 frames without running into another molecule were cropped from the movie. For localization, the point spread function was fit to a 2D Gaussian distribution, and the position is given by the center. Localization accuracy is typically ~20 nm. The kinesin positions are rotated to linearize the displacement in one dimension. The velocity and run length is determined from the position and time of the first to last frame. In majority of our traces, the kinesin travels for <10 frames without pauses.\n",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "c70122cb-1b88-421b-b0eb-70799e7a2db1",
+      "submission_id": "af2cee3c-3620-4db7-852a-e6725293911b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20378.013](https://doi.org/10.7554/eLife.20378.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Labeling Proteins Inside Living Cells Using External Fluorophores for Fluorescence Microscopy\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Richard Aldrich as the Reviewing Editor and the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this paper Teng at al. develop a simple reversible mammalian cell permeabilization assay to deliver various fluorescent reagents to living cells. By forming small pores with the toxin Streptolysin O the authors are able to introduce probes from the extracellular solution. The authors go to great lengths to show that the labeling is efficient and does not perturb the basic biology of the cells (cell division and organelle health). In general this method will be very useful for the microscopy and biophysics community. It could become a standard labeling method. There are many applications where an easy delivery method would be useful. These include microscopy of living cells, structural mapping of proteins with FRET, drug delivery, etc.\n\nThis paper is quite straightforward and well done and we really only have several relatively small criticisms and suggestions to improve the manuscript.\n\nEssential revisions:\n\n1) Do some of the data (e.g., viability results) depend on the batch or source of the SLO? Or does this need to be determined anew each time SLO was ordered? I was particularly interested in this since I noticed this afternoon some suppliers sell SLO by weight rather than by units (and don't provide the activity of their SLO).\n\n2) Can the authors comment about whether or not this method allows uptake of small quantum dots? The authors previously synthesized small quantum dots attached to nano bodies (see Wang et al., 2014) so it seems like this would be easy to test. A lot of people would be interested in ways to get Q-Dots inside live cells.\n\n3) We really don't like the last two sentences of the Conclusion since they refer to possible applications that aren't discussed in the present manuscript so the data can't be evaluated. Those sentences should be removed and replaced with something much less specific.\n\n4) The figure legends for the supplemental data need to be improved. Splitting each figure into individual, lettered panels would help.\n\n5) For Figure 3\u2014figure supplement 3. We are not sure that we agree that the authors enhanced the signal of a fluorescent protein using their method. The fluorescence of GFP was not improved, rather a protein harboring a completely different fluorophore was targeted to GFP, and it is expected that Atto647N would be much brighter than GFP. This is no different than targeting a fluorescently labeled antibody to any other protein.\n\n6) The authors state that one of the concerns about existing methods such as microinjection or electroporation is \"concern over the cell health\". Surely this is also a concern with any application of SLO as well? While the authors show data that their cells are healthy after every SLO treatment, I would think that this needs to be double-checked with every new cell type tested using this method.\n\n7) The images are quite small and hard to see. Because the main point of the paper is the quality and efficiency of labeling we would suggest showing larger images and larger fields of view. This is particularly important as the level of background labeling is a key issue in evaluating this work.\n\n8) Reference of Kollmannsperger et al. Nat. Comm 2015 seems relevant and missing. This new work should be compared to this \"cell squeezing\" labeling methods.\n",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a9c4f5b0-e149-4fa0-b6c2-83ad1118f56e",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C1",
+      "claim": "Streptolysin O (SLO) is a bacterial toxin which forms temporary pores in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Site-specific fluorescent labeling of proteins inside live mammalian cells has been achieved by employing Streptolysin O, a bacterial toxin which forms temporary pores in the membrane and allows delivery of virtually any fluorescent probes, ranging from labeled IgG's to small ligands, with high efficiency (>85% of cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a characteristic of SLO.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "4743d43f-1452-4bd7-a2a3-b57ec48ae59d",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C2",
+      "claim": "SLO allows delivery of virtually any fluorescent probes with high efficiency (>85% of cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Site-specific fluorescent labeling of proteins inside live mammalian cells has been achieved by employing Streptolysin O, a bacterial toxin which forms temporary pores in the membrane and allows delivery of virtually any fluorescent probes, ranging from labeled IgG's to small ligands, with high efficiency (>85% of cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides a specific quantitative measure of delivery efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "e9994e9b-27e5-49bc-aaed-11378345b828",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C3",
+      "claim": "The whole process, including recovery, takes 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole process, including recovery, takes 30 min, and the cell is ready to be imaged immediately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the total time required for the procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "1ec93de9-13de-41a6-9a71-ef8d0de021a3",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C4",
+      "claim": "When combined with Oxyrase, a ~20x improvement in fluorescence photostability is achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined with Oxyrase, a cell-friendly photostabilizer, a ~20x improvement in fluorescence photostability is achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides a quantitative measure of photostability improvement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8aa16dfa-074b-46cf-b074-2eb69d5c1e27",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C5",
+      "claim": "By adding glutathione, fluorophores are made to blink, enabling super-resolution fluorescence with 20\u201330 nm resolution over a long time (~30 min) under continuous illumination.",
+      "claim_type": "EXPLICIT",
+      "source": "By adding in glutathione, fluorophores are made to blink, enabling super-resolution fluorescence with 20\u201330 nm resolution over a long time (~30 min) under continuous illumination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract provides specific resolution and time measurements for super-resolution imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "3528ba48-c8d2-4439-ad0f-9385e6ae842c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C6",
+      "claim": "Most bio-molecules and fluorophores are not able to cross the cell membrane of a living cell.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of these bio-molecules and fluorophores are not able to cross the cell membrane of a living cell, making it challenging to image intracellular proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general limitation in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "727b8b2d-9b33-4821-9438-9fe2fbb301d1",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C7",
+      "claim": "Cell-permeant fluorophores attached to membrane-permeant entities have obvious trade-offs of limited choice in emission wavelengths and available class of ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "There are a few exceptions to this barrier, namely, by using few selected cell-permeant fluorophores that have been attached to membrane-permeant entities (Lukinavi\u010dius et al., 2014; Grimm et al., 2015; Wombacher et al., 2010). These have obvious trade-offs of limited choice in emission wavelengths and available class of ligands that they can be covalently attached to and maintain their selectivity for the particular intracellular protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "be95ae9c-aae1-489c-80d1-9a19a1e6e7ce",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C8",
+      "claim": "There has been mixed success in delivering fluorescent probes by appending a membrane-permeant small peptide such as the TAT-TAR HIV peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "There has also been mixed success in delivering fluorescent probes by appending a membrane-permeant small peptide such as the TAT-TAR HIV peptide (Silhol et al., 2002; Richard et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "bd0746ea-7292-4e94-9627-89080c99248d",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C9",
+      "claim": "Fluorescent proteins (FPs) have limited photostability.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the detection of FPs is less than optimal because of their limited photostability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of fluorescent proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8c276a1a-f637-448e-9f24-1986b05f3f06",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C10",
+      "claim": "Microinjection, electroporation and osmotic pinosomelysis have significant drawbacks such as low throughput and the requirement of additional apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "Other methods that attempt to overcome this limitation include microinjection, electroporation and osmotic pinosomelysis (Okada and Rechsteiner, 1982; Crawford et al., 2013; Zhang et al., 1990; Kim et al., 2008). However, these techniques have significant drawbacks such as low throughput and the requirement of additional apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of existing methods, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "007fa777-8399-4e80-abd9-3a31547c7cdd",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C11",
+      "claim": "BLAST and cell squeezing require cells to be cultured in specific platforms like fabricated surface or microfluidic channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, two recently developed methods, such as 'biophotonic laser-assisted surgery tool (BLAST)' and 'cell squeezing' are promising techniques, although they require the cells to be cultured in specific platforms like fabricated surface or microfluidic channels (Wu et al., 2015; Kollmannsperger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of these methods, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "4c56cbe1-a85b-4228-b5da-db25efce011e",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C12",
+      "claim": "SLO has been used in the past for delivering fluorescently labeled proteins\u2014but not targeted to specific proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the past, SLO has been used for delivering fluorescently labeled proteins\u2014but not targeted to specific proteins (Walev et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "d90f9917-a83b-44cc-b175-cc339868ca7c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C13",
+      "claim": "SLO has been used with transfected cells to deliver a small lanthanide probe.",
+      "claim_type": "EXPLICIT",
+      "source": "SLO has also been used with transfected cells to deliver a small lanthanide probe (Rajapakse et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "029b2735-c3e0-4b85-bff1-f2428c4ae875",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C14",
+      "claim": "SLO has been used for labeling RNA with 'molecular beacons' or a streptavidin-RNA probe, and also to introduce (non-fluorescent) ligands through the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been used for labeling RNA with 'molecular beacons' or a streptavidin-RNA probe, and also to introduce (non-fluorescent) ligands through the membrane (Nitin and Bao, 2008; Kano et al., 2000; Santangelo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "11a14970-46ff-41fc-a46c-b0acb07bafbd",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C15",
+      "claim": "SLO creates pores of ~30 nm in size.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied SLO to permeabilized the cells, creating pores of ~30 nm in size (Stewart et al., 2015) in order to deliver fluorescent probes for labeling intracellular proteins in a site-specific manner (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support the pore size.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "9cd64868-d69b-462c-9282-55ad2bbf0416",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C16",
+      "claim": "Cells were permeabilized with SLO at 37\u00b0C for 7\u201310 min depending on the cell confluency.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we permeabilized the cells with SLO at 37\u00b0C for 7\u201310 min depending on the cell confluency, followed by incubation with the fluorescent probes (i.e., fluorophores by themselves, or covalently attached to a ligand or a protein) for 5 min on ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "d272d6d6-02ac-412b-9021-e90c3a3dd5ac",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C17",
+      "claim": "Fluorescent probes were incubated for 5 min on ice after SLO permeabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we permeabilized the cells with SLO at 37\u00b0C for 7\u201310 min depending on the cell confluency, followed by incubation with the fluorescent probes (i.e., fluorophores by themselves, or covalently attached to a ligand or a protein) for 5 min on ice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "a951f790-366a-4543-ad82-ea06ba86da40",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C18",
+      "claim": "Cells were allowed to recover in the incubator at 37\u00b0C for 15\u201320 min after SLO treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells were then allowed to recover in the incubator at 37\u00b0C for 15\u201320 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "3e23ca3d-4543-45b6-8ace-0ede4db516d0",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C19",
+      "claim": "For super-resolution microscopy (dSTORM), 4 mM glutathione and 0.5 U/mL of Oxyrase were added to create blinking fluorophores.",
+      "claim_type": "EXPLICIT",
+      "source": "For super-resolution microscopy, namely direct-STORM (dSTORM), 4 mM glutathione and 0.5 U/mL of Oxyrase were added to create blinking fluorophores (Heilemann et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol used, with a citation for the dSTORM method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "f6c4f330-115d-4166-b2f0-5b6797255dee",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C20",
+      "claim": "94% (15 out of 16 cells) of SLO treated cells showed nuclear staining by DAPI.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence images of SLO treated cells (Figure 1b) revealed 94% (15 out of 16 cells) of the cells in the field of view contains nuclear staining by DAPI, 88% of the cells contains clear and punctate structure of labeled peroxisomes, and 88% of the cells showed filamentous structure of the actin \u2013 a stark contrast to SLO untreated negative control cells (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "e983af61-abe7-4e87-8edc-a4283c407cfc",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C21",
+      "claim": "88% of SLO treated cells showed clear and punctate structure of labeled peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence images of SLO treated cells (Figure 1b) revealed 94% (15 out of 16 cells) of the cells in the field of view contains nuclear staining by DAPI, 88% of the cells contains clear and punctate structure of labeled peroxisomes, and 88% of the cells showed filamentous structure of the actin \u2013 a stark contrast to SLO untreated negative control cells (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "4a3f0ee7-7e23-4832-b939-5af58cd0c870",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C22",
+      "claim": "88% of SLO treated cells showed filamentous structure of the actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence images of SLO treated cells (Figure 1b) revealed 94% (15 out of 16 cells) of the cells in the field of view contains nuclear staining by DAPI, 88% of the cells contains clear and punctate structure of labeled peroxisomes, and 88% of the cells showed filamentous structure of the actin \u2013 a stark contrast to SLO untreated negative control cells (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "b137f4a6-ca12-4f0c-8c8b-305d3ca4e3b7",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C23",
+      "claim": "The membrane of recovered cells efficiently excluded Texas Red dextran (~20 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the membrane integrity after recovery, SLO-treated cells were incubated for 5 min with Texas Red dextran, (~20 kDa), a normally membrane-impermeant fluorescent molecule. The membrane of recovered cells efficiently excluded Texas Red dextran (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 1b demonstrating membrane recovery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "a76d88ae-4954-473c-a6d5-1fb236c0f4da",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C24",
+      "claim": "Close to 95% of cells had intact membrane after recovery when recovered in proper buffers.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that close to 95% of cells had intact membrane after recovery when recovered in proper buffers (Figure 1\u2014figure supplement 1a); that the cells were able to divide (Figure 1\u2014figure supplement 1b); and the cellular organelle displayed comparable morphology before and after SLO treatment (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the viability assay shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "ce358aff-cb0c-4cf8-add2-a3f9ca9c8ce2",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C25",
+      "claim": "Cells were able to divide after SLO treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that close to 95% of cells had intact membrane after recovery when recovered in proper buffers (Figure 1\u2014figure supplement 1a); that the cells were able to divide (Figure 1\u2014figure supplement 1b); and the cellular organelle displayed comparable morphology before and after SLO treatment (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cell division assay shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "3e226494-9dd8-48ca-bae2-34249579c4a3",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C26",
+      "claim": "Cellular organelles displayed comparable morphology before and after SLO treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that close to 95% of cells had intact membrane after recovery when recovered in proper buffers (Figure 1\u2014figure supplement 1a); that the cells were able to divide (Figure 1\u2014figure supplement 1b); and the cellular organelle displayed comparable morphology before and after SLO treatment (Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the morphology comparison shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0ffa9e27-ad6b-4904-a448-e0adf318704e",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C27",
+      "claim": "The level of response to TNF-\u03b1 in SLO-treated cells is comparable to untreated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This p65-translocation result shows that the level of response to TNF-\u03b1 in SLO-treated cells is comparable to untreated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the p65 translocation assay data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "5ae2aedd-5a98-4f23-81f6-36b701221b82",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C28",
+      "claim": "GBP-ATTO647N (~14 kDa) was able to passively diffuse across the nuclear membrane to label the nuclear protein PCNA-GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that GBP-ATTO647N (~14 kDa) was able to passively diffuse across the nuclear membrane, or diffuse through the nucleus pore complex, in order to label the nuclear proteins PCNA-GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "841ca539-4f12-4110-979a-185fbd5e592f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C29",
+      "claim": "40 kDa FITC-dextran was able to access nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "In a separate test we found that 40 kDa FITC-dextran was able to access nucleus as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "4631eb4a-ecab-4044-bf96-f2694a370d96",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C30",
+      "claim": "Probes larger than GBP, such as streptavidin (labeled SA, 53 kDa) or 70 kDa FITC-dextran, were not able to passively diffuse across the nuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, probes larger than GBP, such as streptavidin (labeled SA, 53 kDa) or 70 kDa FITC-dextran (Figure 2\u2014figure supplement 1a), were not able to passively diffuse across the nuclear membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2 and Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "49890f02-1623-4a8e-85a6-07c5775e6642",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C31",
+      "claim": "The cut-off for passive diffusion into nuclear pores is between 40\u201356 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "This cut-off for passive diffusion between 40\u201356 kDa is consistent with the known size-limit for diffusion into nuclear pores (Gr\u00fcnwald et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0c7da03f-0fd6-4489-9ec1-c55e961eeff8",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C32",
+      "claim": "Using small probes (<2 kDa) resulted in background-free labeling because the unbound probe diffused out during the recovery phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we discovered that using small probes, <2 kDa, resulted in background-free labeling\u2014that is, the unbound probe diffused out during the recovery phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "313ec725-633c-40a9-9262-536ecc6de44e",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C33",
+      "claim": "Large molecules (>20 kDa dextran or other similar-sized proteins) remained in the cytoplasm, creating evenly distributed fluorescence across the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, 'large' molecules, >20 kDa dextran or other similar-sized proteins, remained in the cytoplasm, creating evenly distributed fluorescence across the cytosol (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "9890121c-c328-4c5b-b051-fd8b6cad2f1f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C34",
+      "claim": "The pore formed by SLO allows fluorescently labeled proteins free access to entering the cell, while allowing free access for exit only for relatively small (<2 kDa) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the pore formed by SLO allows the fluorescently labeled proteins free access to entering the cell, while allowing free access for exit only for relatively small (<2 kDa) proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observations about probe retention.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "cc6c8730-423c-4bcf-a276-69ce1b1eaf16",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C35",
+      "claim": "Some of the larger probes do get washed out, but not fast enough before the membrane starts to heal, and only smaller probes are given enough time to diffuse out completely.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain this observation, we hypothesize that some of the larger probes do get washed out, but not fast enough before the membrane starts to heal, and only smaller probes are given enough time to be diffuse out completely.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the observed differential retention of probes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "edee3927-fd7f-4cf1-8a67-f4777577f16f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C36",
+      "claim": "The required concentration of fluorescent chloroalkane with SLO-treated cells was a factor of ten lower than that recommended by the manufacturer.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the required concentration of fluorescent chloroalkane with SLO-treated cells was a factor of ten lower than that recommended by the manufacturer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments comparing to manufacturer recommendations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "1f37898a-5f79-41fe-b55d-dcb33bc76a78",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C37",
+      "claim": "The manufacturer's means of getting the ligand into the cell depends on setting up a concentration gradient across the cell membrane, whereas none is necessary with SLO.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be because the manufacturer's means of getting the ligand into the cell depends on setting up a concentration gradient across the cell membrane, whereas none is necessary with SLO.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference to explain the lower concentration requirement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "38ab44e8-01cd-469f-955b-04e3bf4e9bff",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C38",
+      "claim": "A thick actin bundle split over the course of ~3 min into two separate strands, ~850 nm apart using live super-resolution approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed a thick actin bundle split over the course of ~3 min into two separate strands, ~850 nm apart using this live super-resolution approach (Figure 3c, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the live dSTORM imaging shown in Figure 3c and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "e8f42139-29b1-4814-b0e0-beb259dc07c2",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C39",
+      "claim": "Phalloidin is an actin stabilizer and will interfere with the normal dynamic of actin.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that phalloidin is an actin stabilizer and certainly will interfere with the normal dynamic of actin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of phalloidin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "35a9eefc-076f-4d0d-9ab8-58122ffd7f96",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C40",
+      "claim": "The signal can be improved ~6-fold by detecting the signal of GBP-ATTO647N than the GFP itself.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we show that the signal can be improved ~6-fold by detecting the signal of GBP-ATTO647N than the GFP itself (Figure 3\u2014figure supplement 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 3\u2014figure supplement 3a\u2013b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "ea07b76a-732d-4ee3-96e1-dbf1ce7b3c4c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C41",
+      "claim": "The average run length and velocity of kinesin was determined to be 621 \u00b1 99 nm (Decay constant \u00b1 SE) and 1058 \u00b1 22 nm/s (Center \u00b1 SEM) at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The average run length and velocity was determined to be 621 \u00b1 99 nm (Decay constant \u00b1 SE) and 1058 \u00b1 22 nm/s (Center \u00b1 SEM) at 30\u00b0C (Figure 3f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the kinesin tracking experiment shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "6ea1e9f3-6e5c-4005-8ca7-4c3ee26ce6d9",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C42",
+      "claim": "The measured run length and velocity of kinesin agrees with the in vitro data on single kinesin at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the run length and velocity agrees with the in vitro data on single kinesin at 30\u00b0C (Kawaguchi and Ishiwata, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to published in vitro data, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "281080c5-1576-4db8-8e4c-9a7289df5812",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C43",
+      "claim": "A decrease in kinesin velocity was observed at room temperature compared to 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we have performed the experiment at room temperature, and indeed we observed a decrease in kinesin velocity (Figure 3\u2014figure supplement 3d\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3\u2014figure supplement 3d\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "43133364-45a0-4f31-be69-b32348212311",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C44",
+      "claim": "SLO has been applied to label cells without transfection by labeling intracellular proteins with antibodies, nanobodies, and bio-specific ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we have applied SLO to label cells without transfection. This is achieved by labeling intracellular proteins with antibodies, nanobodies, and bio-specific ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "88a24eda-f18d-4a96-b076-b18323f5bb02",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C45",
+      "claim": "The SLO delivery technique can easily be combined with other signal enhancement techniques, such as 'spaghetti monster', for delivering otherwise membrane impermeant probes into living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our SLO delivery technique can easily be combined with other signal enhancement techniques, such as 'spaghetti monster' (Viswanathan et al., 2015), for delivering otherwise membrane impermeant probes into living cells for labeling a single protein with numerous probes at once.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential application, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8089c797-3c5c-47ff-bbe7-3f1f2c4e66fe",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C46",
+      "claim": "The technique can potentially be extended to other types of microscopy that relies on probe delivery, such as cryo-electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, this technique is not limited to delivering of fluorescent probes; the technique can potentially be extended to other types of microscopy that relies on probe delivery, such as cryo-electron microscopy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential future application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "a0028f07-e629-4a62-b620-9fc40cbdebb1",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C47",
+      "claim": "Different batches of SLO may have different activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Different batches of SLO may have different activity, and therefore the optimal SLO concentration should first be determined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a practical consideration for the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8778a039-f996-4b43-b621-564fe470bef1",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C48",
+      "claim": "The optimized working SLO concentration was determined by testing a range of SLO concentrations for each cell line to achieve >75% permeability to 10 kDa FITC-dextran, while keeping dead cells at a minimum (<10%).",
+      "claim_type": "EXPLICIT",
+      "source": "The optimized working SLO concentration was determined by testing a range of SLO concentrations for each cell line to achieve >75% permeability to 10 kDa FITC-dextran, while keeping dead cells at a minimum (<10%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization criteria used in the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0dc3a393-3777-4335-8c3a-9b4a9e233b8b",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C49",
+      "claim": "Different cell lines required different dosage of SLO.",
+      "claim_type": "EXPLICIT",
+      "source": "Different cell lines required different dosage of SLO; a table of SLO dilution to use for a few selected cell lines and confluency is included in Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation, with specific data provided in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "f3a03f85-aefb-4819-b561-fac7ea413152",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C50",
+      "claim": "Permeabilized cells were observed under phase contrast microscopy at 20x magnification after 5 min, where granules inside the cells become more distinctive.",
+      "claim_type": "EXPLICIT",
+      "source": "Permeabilized cells were observed under phase contrast microscopy at 20x magnification after 5 min. Granules inside the cells become more distinctive in permeabilized cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation used to confirm permeabilization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "bd141a5e-35d9-419d-ba1b-3348bb572a51",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C51",
+      "claim": "The number of cells increased by nearly 60% after 16 hr despite SLO treatment, suggesting cells were able to undergo cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cells increased by nearly 60% despite SLO treatment, suggesting cells were able to undergo cell division [N=2 regions of interest].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the cell division assay shown in Figure 1\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "ef3c7f95-aca1-48b5-b123-0637381deeef",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C52",
+      "claim": "The morphology of mitochondria did not appear to differ after the permeabilization and labeling procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "The morphology of mitochondria did not appear to differ after the permeabilization and labeling procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the morphology comparison shown in Figure 1\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "11a51aa6-0ca0-436f-b0e5-7ad590430cd9",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C53",
+      "claim": "Only recovery media and 10% FBS DMEM successfully resealed the cells to prevent PI staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recovery media and 10% FBS DMEM successfully resealed the cells to prevent PI staining.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the propidium iodide assay shown in Figure 1\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "abc69820-dd0a-4962-b992-fdf3727032c0",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C54",
+      "claim": "There is an initial loss of some metabolites from inside the permeabilized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that there is an initial loss of some metabolites from inside the permeabilized cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "865d1431-751b-447b-ad3d-bf87b4fc576b",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C55",
+      "claim": "A larger proportion of molecular motors were immobile along the microtubules in severely permeabilized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is evident from the fact that a larger proportion of molecular motors were immobile along the microtubules in severely permeabilized cells (Figure 3\u2014figure supplement 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "71438b95-8a0e-49da-bc02-14967276957e",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C56",
+      "claim": "The effect from the lost metabolites can be rescued by using recovery media which is supplemented with essential metabolites (ATP, GTP and glucose), but not with 10% FBS DMEM.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect from the lost metabolites can be rescued by using our recovery media which is supplemented with essential metabolites (ATP, GTP and glucose), but not with 10% FBS DMEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments comparing different recovery media.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "f31704ad-cd65-43ed-a82c-197063605fb0",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C57",
+      "claim": "With the addition of 4 mM glutathione in the recovery media after SLO permeabilization, there are a greater number of activation events detected per frame.",
+      "claim_type": "EXPLICIT",
+      "source": "With the addition of 4 mM glutathione in the recovery media after SLO permeabilization, there are a greater number of activation events detected per frame, as well as a fewer number of detected events during illumination, suggesting that the added glutathione assists in turning off the fluorophore more efficiently.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "90d26650-905a-4025-88e8-2ba4fc67129a",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C58",
+      "claim": "The added glutathione assists in turning off the fluorophore more efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "With the addition of 4 mM glutathione in the recovery media after SLO permeabilization, there are a greater number of activation events detected per frame, as well as a fewer number of detected events during illumination, suggesting that the added glutathione assists in turning off the fluorophore more efficiently.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation of activation events shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8505ca5d-e727-4128-a350-7c7521144041",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C59",
+      "claim": "A dynamic dSTORM movie was recorded for a total of 20,000 frames at 100 ms exposure time, for a total acquisition time of over 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The movie was recorded for a total of 20,000 frames at 100 ms exposure time, for a total acquisition time of over 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the experiment shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "5eb8738c-66e4-4ba9-9903-9996c421f720",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C60",
+      "claim": "No reactivation of Alexa647 was observed without addition of Oxyrase on fixed cell.",
+      "claim_type": "EXPLICIT",
+      "source": "No reactivation was observed without addition of Oxyrase on fixed cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "36ebcddc-874b-43ab-9fbb-c7ef65d197c2",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C61",
+      "claim": "Activation of Alexa647 on actin occurred in fixed cells and in live cells in the presence of Oxyrase.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of Alexa647 on actin in fixed cells and in live cells in the presence of Oxyrase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "42ab28c6-38b1-46ae-8999-62d269a4519c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C62",
+      "claim": "An increase of ~6x in total photon output was observed when comparing GBP-ATTO647N to GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "The photostability of GFP and ATTO647N was evaluated, and an increase of ~6x in total photon output was observed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 3\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "b1fb61be-8c38-4946-b7cc-d8a253d911e9",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C63",
+      "claim": "The velocity of kinesin in live U2OS cells at room temperature was measured to be 541 \u00b1 16 nm/s (Center \u00b1 SEM).",
+      "claim_type": "EXPLICIT",
+      "source": "The peak after Gaussian fitting shows a velocity of 541 \u00b1 16 nm/s (Center \u00b1 SEM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 3\u2014figure supplement 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "b233c834-9870-4aeb-bd16-60a9031bc467",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C64",
+      "claim": "The average run length of kinesin at room temperature is found to be 792 \u00b1 216 nm (Decay Const. \u00b1 SE).",
+      "claim_type": "EXPLICIT",
+      "source": "The average run length of kinesin is found to be 792 \u00b1 216 nm (Decay Const. \u00b1 SE).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experiment shown in Figure 3\u2014figure supplement 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "9bc2dc12-b1df-431c-ac63-5bf9da8171dc",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C65",
+      "claim": "DAPI is impermeant to CHO-K1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "(DAPI is impermeant to CHO-K1 cells.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known property of DAPI in CHO-K1 cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0b1ded95-24d9-4d68-adfa-f5f707632faf",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C66",
+      "claim": "TNF-\u03b1 and Leptomycin B (LMB) were used to stimulate nucleus import of the p65-GFP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "TNF-\u03b1 and Leptomycin B (LMB) were used to stimulate nucleus import of the p65-GFP protein labeled by GBP-ATTO647N.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental treatment shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "736b45d5-d733-4e12-ace1-f005ac8147bf",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C67",
+      "claim": "The nucleus fluorescence of both GFP and ATTO647N channels increased 15 and 30 min after stimulation with TNF-\u03b1 and LMB.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleus fluorescence of both GFP and ATTO647N channels increased 15 and 30 min after stimulation as shown in time series fluorescence images (Left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the time series shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "afc42a55-7303-464c-924a-d028ae5036bc",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C68",
+      "claim": "All the probes loaded, up to the ~150 kDa IgG, were successfully delivered by SLO and labeled target proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "All the probes loaded, up to the ~150 kDa IgG, were successfully delivered by SLO and labeled target proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary observation from the experiments shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "966a7ac9-1db2-488f-897e-42fc238ca3ca",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C69",
+      "claim": "Only small proteins such as GBP (14 kDa) were able to access the nuclear target.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only small proteins such as GBP (14 kDa) were able to access the nuclear target.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "30628846-b588-451f-96e2-bc3ab27252e3",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C70",
+      "claim": "Homogenous FITC fluorescence was observed using 40 kDa-dextran, whereas with 70 kDa-dextran the fluorescence was excluded in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed homogenous FITC fluorescence using 40 kDa-dextran, whereas 70 kDa-dextran the fluorescence was excluded in the nucleus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "2d9322ce-a70f-4940-a0a5-37cc846620b8",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C71",
+      "claim": "The Texas Red Dextran image shows permeabilized cells displaying a haze of fluorescence across the whole cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The Texas Red Dextran image (yellow) shows permeabilized cells displaying a haze of fluorescence across the whole cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "7d14a0e0-ff32-4173-bcdc-01f381bb5dbd",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C72",
+      "claim": "Chloroalkane-Alexa660 being <2 kDa only stains the cells expressing the GFP-halo protein; no fluorescence was observed in other permeabilized cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the chloroalkane-Alexa660 being <2 kDa only stains the cells expressing the GFP-halo protein; no fluorescence was observed in other permeabilized cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 2\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "4be72506-8aa9-4ae2-9c05-d07409857c2f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C73",
+      "claim": "Free chloroalkane-Alexa660 were washed out during the procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Free chloroalkane-Alexa660 were washed out during our procedure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observation that only cells expressing the target protein showed fluorescence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "a5d26c00-10a1-4806-b6ed-14b17ca18fb3",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C74",
+      "claim": "The actin filaments grew 230 nm apart after 1 min 40 s, and then 850 nm apart after another 1 min 40 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The actin filaments grew 230 nm apart after 1 min 40 s, and then 850 nm apart after another 1 min 40 s (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the time series shown in Figure 3c and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "f1f9ad71-b940-43bd-bfc3-ef7bef91f881",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C75",
+      "claim": "After just 3 hr of expression, the cell is filled with over-expressed mCherry-kinesin, and it is not possible to track individual protein.",
+      "claim_type": "EXPLICIT",
+      "source": "After just 3 hr of expression, the cell is filled with over-expressed mCherry-kinesin, and it is not possible to track individual protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0d4e6eec-76f7-46ad-a742-005a7818090c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C76",
+      "claim": "Single kinesin molecules can easily be tracked by sparsely labeling mCherry-kinesin with Red fluorescent protein Binding Protein (RBP) conjugated to ATTO647N.",
+      "claim_type": "EXPLICIT",
+      "source": "Single kinesin molecules can easily be tracked by sparsely labeling mCherry-kinesin with Red fluorescent protein Binding Protein (RBP) conjugated to ATTO647N.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiment shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "bcfdbeee-caa8-4993-a045-97f71275ce20",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C77",
+      "claim": "Majority of kinesin trajectory in the selected area can be seen to travel uni-directionally in a short distance (<5 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "Majority of kinesin trajectory in the selected area can be seen to travel uni-directionally in a short distance (<5 \u03bcm).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the tracking data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "64de9d59-c474-44e2-b680-e54836d473be",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C78",
+      "claim": "The measurements of kinesin velocity and run length were taken on a heated stage at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The measurements were taken on a heated stage at 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for the measurements shown in Figure 3f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "d4cd3082-f2af-4101-ac0d-ccc104a66631",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C79",
+      "claim": "In majority of the traces, the kinesin travels for <10 frames without pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "In majority of our traces, the kinesin travels for <10 frames without pauses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a characteristic of the kinesin tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0610ae63-e666-4531-b2ac-c5d9c7a5ce49",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C80",
+      "claim": "Spots that move processively for \u22653 frames without running into another molecule were cropped from the movie for analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Spots that move processively for \u22653 frames without running into another molecule were cropped from the movie.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data selection criteria for the kinesin tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8f32ea20-898c-4931-aa5d-8a63aa68301f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C81",
+      "claim": "Localization accuracy is typically ~20 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Localization accuracy is typically ~20 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the precision of the single molecule localization method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "ef0d0c3c-25d9-4b37-8301-4bd135042573",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C82",
+      "claim": "The idea to replace lost nucleotide triphosphate and glucose was adapted from previous publication.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea to replace lost nucleotide triphosphate and glucose was adapted from previous publication (Kano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges the source of the recovery media formulation strategy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "feae75ed-4354-4cb6-8b96-3cc67780d610",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C83",
+      "claim": "The idea of supplementing the recovery medium with different component was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea of supplementing the recovery medium with different component was previously reported (Kano et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges prior work on recovery media formulation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "a04c0e63-172b-49b8-85e5-9f0b0e9676b9",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C84",
+      "claim": "CHO-K1, HeLa, and U2OS cells were obtained from ATCC.",
+      "claim_type": "EXPLICIT",
+      "source": "CHO-K1, HeLa, and U2OS cells were obtained from ATCC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the cell lines used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8269d4e3-f408-4f1f-9d3d-e608a4961d77",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C85",
+      "claim": "No testing of mycoplasma contamination was performed on these cells.",
+      "claim_type": "EXPLICIT",
+      "source": "No testing of mycoplasma contamination was performed on these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality control procedures used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "9b2ee0b1-c1fa-4c66-b804-9114f32419b1",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C86",
+      "claim": "pERB254 was a gift from Michael Lampson from University of Pennsylvania.",
+      "claim_type": "EXPLICIT",
+      "source": "pERB254 was a gift from Michael Lampson from University of Pennsylvania (Addgene plasmid # 67762) (Ballister et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the plasmid used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8b31c549-3d50-4998-8750-06393727925a",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C87",
+      "claim": "2xmCherry-K560 plasmid was a gift from Verhey Lab (U. Michigan).",
+      "claim_type": "EXPLICIT",
+      "source": "2xmCherry-K560 plasmid was a gift from Verhey Lab (U. Michigan).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source of the plasmid used.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "1bb4516e-4049-46d9-9378-34726201c05a",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C88",
+      "claim": "The single molecule detection analysis was done using Matlab-based algorithm, alivePALM.",
+      "claim_type": "EXPLICIT",
+      "source": "The single molecule detection analysis was done using Matlab-based algorithm, alivePALM (Li et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analysis method used, with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "bdc4433d-195c-4412-8036-7592e3eba89c",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "claim_id": "C89",
+      "claim": "pcDNA3_NLS_eGFP_hPCNA was derived from pENeGFPPCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For PCNA-GFP used in the study, pcDNA3_NLS_eGFP_hPCNA was derived from pENeGFPPCNA (Leonhardt et al., 2000); eGFP-PCNA was cut from pENeGFPPCNA with BamHI and XbaI and cloned into pcDNA3 cut with HindIII and XbaI using an adapter (AGCTTATGGCTTCGTGGGGATC) to reconstruct the correct start codon for eGFP-PCNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the construction of the plasmid used, with a citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SLO-mediated permeabilization enables efficient delivery of diverse fluorescent probes (from <1 kDa to ~150 kDa) into live mammalian cells with high efficiency (>85%), followed by membrane recovery that excludes impermeant molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C15-C18, C20-C23, and C68 collectively demonstrate that SLO creates temporary ~30 nm pores enabling delivery of probes ranging from small molecules to large antibodies with 88-94% labeling efficiency, and that recovered membranes exclude Texas Red dextran. The data are supported by quantitative measurements and visual evidence in Figure 1b showing specific labeling of multiple cellular structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "415f7d56-fc97-4887-b363-946762e5fa65",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SLO-treated cells maintain viability and normal cellular function, as demonstrated by membrane integrity (95%), cell division capacity (60% increase over 16 hr), preserved organelle morphology, and normal TNF-\u03b1 signaling response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27, C51-C53, C66-C67 provide converging evidence from multiple viability assays (PI exclusion, cell division, morphology, and functional signaling) that cells recover from SLO treatment. The p65 translocation assay (Figure 1c) demonstrates preserved signal transduction, and quantitative data show high viability when proper recovery buffers are used. However, the small sample size for cell division (N=2 regions) is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "0be237c5-1bbc-43db-86e5-96e262da2c5a",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Nuclear accessibility of delivered probes is size-dependent, with a cutoff between 40-56 kDa for passive diffusion through nuclear pores, consistent with known nuclear pore size limits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C69-C70 demonstrate that small probes (14 kDa GBP, 40 kDa dextran) access the nucleus while larger probes (53 kDa streptavidin, 70 kDa dextran) do not. This size cutoff is consistent with literature on nuclear pore diffusion limits (C31 cites Gr\u00fcnwald et al., 2011), providing independent validation of the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "e4251881-068a-4ade-b834-10085aa1e4ad",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Small probes (<2 kDa) diffuse out during membrane recovery resulting in background-free labeling, while larger probes (>20 kDa) are retained in the cytoplasm, creating a size-dependent differential retention phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37, C72-C73 describe a novel observation that small probes wash out during recovery while larger probes remain. The data in Figure 2\u2014figure supplement 1b visually demonstrate this differential retention. The proposed mechanism (C35) is speculative but reasonable. The 10-fold lower concentration requirement for chloroalkane (C36) provides additional support for efficient probe delivery without concentration gradients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Combining SLO delivery with Oxyrase and glutathione enables live-cell super-resolution dSTORM imaging with ~20x photostability improvement, achieving 20-30 nm resolution over 30 minutes of continuous imaging, as demonstrated by observing actin bundle splitting dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C19, C38, C57-C61, C74 demonstrate successful live-cell dSTORM. The ~20x photostability improvement (C4) is stated but the basis for this quantification is not clearly shown. The glutathione effect on blinking (C57-C58) is supported by Figure 3a data. The 30-minute imaging duration (C59) and observation of actin dynamics (C38, C74) are well-documented in Figure 3b-c and Video 1. However, C39 notes phalloidin stabilizes actin, which is a significant caveat for interpreting the biological relevance of observed dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SLO delivery of fluorescent nanobodies enables single-molecule tracking of overexpressed fluorescent proteins in live cells, with kinesin measurements (621\u00b199 nm run length, 1058\u00b122 nm/s velocity at 30\u00b0C) agreeing with in vitro data and showing expected temperature dependence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C62-C64, C75-C81 demonstrate that labeling FPs with brighter nanobody-dye conjugates (~6-fold signal improvement, C40, C62) enables single-molecule tracking that would otherwise be impossible due to high background (C75). The kinesin measurements (C41) match published in vitro data (C42), providing validation. Temperature-dependent velocity changes (C43, C63) further support the biological relevance. The localization accuracy (~20 nm, C81) and analysis criteria (C80) are clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "6309e575-d9c8-481f-a8bb-1b3db9e29876",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SLO permeabilization causes loss of cellular metabolites (ATP, GTP, glucose) that can be rescued by supplemented recovery media, as evidenced by restored molecular motor motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 describe metabolite loss and its rescue. The observation that molecular motors are immobile in severely permeabilized cells (C55) provides functional evidence for metabolite depletion. The rescue by ATP/GTP/glucose-supplemented media (C56) is logical and supported by prior work (C82-C83 cite Kano et al., 2012). However, the manuscript does not provide direct measurements of metabolite levels or quantitative analysis of motor motility differences between recovery conditions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "245bf602-61fa-4db4-8298-52f3cd3ac7ad",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The SLO delivery technique can label native (non-transfected) cells using antibodies, nanobodies, and ligands, and can potentially be combined with other signal enhancement techniques or extended to other microscopy modalities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C44 states that SLO was applied to non-transfected cells, which is an important capability, but the manuscript primarily shows examples with transfected cells expressing tagged proteins. Claims C45-C46 are explicitly speculative about future applications (combining with 'spaghetti monster' technique or extending to cryo-EM) without experimental demonstration. While plausible, these remain untested hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "602d6d5c-b9b0-48c7-ae44-ef5b28c0c870",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SLO activity varies between batches, requiring optimization for each cell line to achieve >75% permeability while maintaining >90% viability, with different cell lines requiring different SLO concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50 describe practical optimization considerations. Table 1 provides specific SLO dilutions for different cell lines and confluencies, supporting C49. The optimization criteria (C48) are clearly stated. The observation of granules in permeabilized cells (C50) provides a visual confirmation method. These are important methodological details for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "b556922f-72b0-4c95-9403-24b2c5bec198",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Existing methods for delivering probes into live cells have significant limitations including membrane impermeability, limited probe choices, low throughput, or requirement for specialized equipment, while prior SLO applications were limited to non-targeted protein delivery or RNA labeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C14 provide context by reviewing limitations of existing methods and prior SLO applications. These are well-supported by citations and represent accurate characterization of the field. The claims establish the motivation for the current work by identifying gaps in existing approaches. However, these are background claims rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "8c9ae18a-d4f2-47e5-8083-21ca406a3f65",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The complete SLO permeabilization, labeling, and recovery process takes 30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 states the total procedure time. This is supported by the detailed protocol (C16-C18) showing 7-10 min permeabilization, 5 min labeling, and 15-20 min recovery, totaling approximately 30 minutes. This is a straightforward procedural claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    },
+    {
+      "id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f",
+      "content_id": "16b95ad0-c321-4634-a5bd-c924bbcdb1b2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cell lines were obtained from ATCC without mycoplasma testing, plasmids were obtained from collaborators or constructed from existing vectors, and analysis used the alivePALM algorithm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 describe materials and methods provenance. These are straightforward statements about cell line sources, plasmid origins, and analysis software. The acknowledgment of no mycoplasma testing (C85) is an important transparency statement but represents a quality control limitation. These are standard methodological details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:02:10.954748Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a9c4f5b0-e149-4fa0-b6c2-83ad1118f56e",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "4743d43f-1452-4bd7-a2a3-b57ec48ae59d",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "11a14970-46ff-41fc-a46c-b0acb07bafbd",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "9cd64868-d69b-462c-9282-55ad2bbf0416",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "d272d6d6-02ac-412b-9021-e90c3a3dd5ac",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "a951f790-366a-4543-ad82-ea06ba86da40",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "f6c4f330-115d-4166-b2f0-5b6797255dee",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "e983af61-abe7-4e87-8edc-a4283c407cfc",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "4a3f0ee7-7e23-4832-b939-5af58cd0c870",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "b137f4a6-ca12-4f0c-8c8b-305d3ca4e3b7",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "afc42a55-7303-464c-924a-d028ae5036bc",
+      "result_id": "51cdea8c-605f-448c-a1bc-e87a580ee3d3"
+    },
+    {
+      "claim_id": "a76d88ae-4954-473c-a6d5-1fb236c0f4da",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "ce358aff-cb0c-4cf8-add2-a3f9ca9c8ce2",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "3e226494-9dd8-48ca-bae2-34249579c4a3",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "0ffa9e27-ad6b-4904-a448-e0adf318704e",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "bd141a5e-35d9-419d-ba1b-3348bb572a51",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "ef3c7f95-aca1-48b5-b123-0637381deeef",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "11a51aa6-0ca0-436f-b0e5-7ad590430cd9",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "0b1ded95-24d9-4d68-adfa-f5f707632faf",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "736b45d5-d733-4e12-ace1-f005ac8147bf",
+      "result_id": "415f7d56-fc97-4887-b363-946762e5fa65"
+    },
+    {
+      "claim_id": "5ae2aedd-5a98-4f23-81f6-36b701221b82",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "841ca539-4f12-4110-979a-185fbd5e592f",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "4631eb4a-ecab-4044-bf96-f2694a370d96",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "49890f02-1623-4a8e-85a6-07c5775e6642",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "966a7ac9-1db2-488f-897e-42fc238ca3ca",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "30628846-b588-451f-96e2-bc3ab27252e3",
+      "result_id": "0be237c5-1bbc-43db-86e5-96e262da2c5a"
+    },
+    {
+      "claim_id": "0c7da03f-0fd6-4489-9ec1-c55e961eeff8",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "313ec725-633c-40a9-9262-536ecc6de44e",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "9890121c-c328-4c5b-b051-fd8b6cad2f1f",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "cc6c8730-423c-4bcf-a276-69ce1b1eaf16",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "edee3927-fd7f-4cf1-8a67-f4777577f16f",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "1f37898a-5f79-41fe-b55d-dcb33bc76a78",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "7d14a0e0-ff32-4173-bcdc-01f381bb5dbd",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "4be72506-8aa9-4ae2-9c05-d07409857c2f",
+      "result_id": "e4251881-068a-4ade-b834-10085aa1e4ad"
+    },
+    {
+      "claim_id": "1ec93de9-13de-41a6-9a71-ef8d0de021a3",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "8aa16dfa-074b-46cf-b074-2eb69d5c1e27",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "3e23ca3d-4543-45b6-8ace-0ede4db516d0",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "38ab44e8-01cd-469f-955b-04e3bf4e9bff",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "f31704ad-cd65-43ed-a82c-197063605fb0",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "90d26650-905a-4025-88e8-2ba4fc67129a",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "8505ca5d-e727-4128-a350-7c7521144041",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "5eb8738c-66e4-4ba9-9903-9996c421f720",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "36ebcddc-874b-43ab-9fbb-c7ef65d197c2",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "a5d26c00-10a1-4806-b6ed-14b17ca18fb3",
+      "result_id": "e2e9c665-8d8e-4f10-8e2c-fda8b1ba2b83"
+    },
+    {
+      "claim_id": "35a9eefc-076f-4d0d-9ab8-58122ffd7f96",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "ea07b76a-732d-4ee3-96e1-dbf1ce7b3c4c",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "6ea1e9f3-6e5c-4005-8ca7-4c3ee26ce6d9",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "281080c5-1576-4db8-8e4c-9a7289df5812",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "42ab28c6-38b1-46ae-8999-62d269a4519c",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "b1fb61be-8c38-4946-b7cc-d8a253d911e9",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "b233c834-9870-4aeb-bd16-60a9031bc467",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "f1f9ad71-b940-43bd-bfc3-ef7bef91f881",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "0d4e6eec-76f7-46ad-a742-005a7818090c",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "bcfdbeee-caa8-4993-a045-97f71275ce20",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "64de9d59-c474-44e2-b680-e54836d473be",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "d4cd3082-f2af-4101-ac0d-ccc104a66631",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "0610ae63-e666-4531-b2ac-c5d9c7a5ce49",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "8f32ea20-898c-4931-aa5d-8a63aa68301f",
+      "result_id": "6dd0f4f5-5a5f-4434-90ad-62d0466974fb"
+    },
+    {
+      "claim_id": "abc69820-dd0a-4962-b992-fdf3727032c0",
+      "result_id": "6309e575-d9c8-481f-a8bb-1b3db9e29876"
+    },
+    {
+      "claim_id": "865d1431-751b-447b-ad3d-bf87b4fc576b",
+      "result_id": "6309e575-d9c8-481f-a8bb-1b3db9e29876"
+    },
+    {
+      "claim_id": "71438b95-8a0e-49da-bc02-14967276957e",
+      "result_id": "6309e575-d9c8-481f-a8bb-1b3db9e29876"
+    },
+    {
+      "claim_id": "ef0d0c3c-25d9-4b37-8301-4bd135042573",
+      "result_id": "6309e575-d9c8-481f-a8bb-1b3db9e29876"
+    },
+    {
+      "claim_id": "feae75ed-4354-4cb6-8b96-3cc67780d610",
+      "result_id": "6309e575-d9c8-481f-a8bb-1b3db9e29876"
+    },
+    {
+      "claim_id": "43133364-45a0-4f31-be69-b32348212311",
+      "result_id": "245bf602-61fa-4db4-8298-52f3cd3ac7ad"
+    },
+    {
+      "claim_id": "88a24eda-f18d-4a96-b076-b18323f5bb02",
+      "result_id": "245bf602-61fa-4db4-8298-52f3cd3ac7ad"
+    },
+    {
+      "claim_id": "8089c797-3c5c-47ff-bbe7-3f1f2c4e66fe",
+      "result_id": "245bf602-61fa-4db4-8298-52f3cd3ac7ad"
+    },
+    {
+      "claim_id": "a0028f07-e629-4a62-b620-9fc40cbdebb1",
+      "result_id": "602d6d5c-b9b0-48c7-ae44-ef5b28c0c870"
+    },
+    {
+      "claim_id": "8778a039-f996-4b43-b621-564fe470bef1",
+      "result_id": "602d6d5c-b9b0-48c7-ae44-ef5b28c0c870"
+    },
+    {
+      "claim_id": "0dc3a393-3777-4335-8c3a-9b4a9e233b8b",
+      "result_id": "602d6d5c-b9b0-48c7-ae44-ef5b28c0c870"
+    },
+    {
+      "claim_id": "f3a03f85-aefb-4819-b561-fac7ea413152",
+      "result_id": "602d6d5c-b9b0-48c7-ae44-ef5b28c0c870"
+    },
+    {
+      "claim_id": "3528ba48-c8d2-4439-ad0f-9385e6ae842c",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "727b8b2d-9b33-4821-9438-9fe2fbb301d1",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "be95ae9c-aae1-489c-80d1-9a19a1e6e7ce",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "bd0746ea-7292-4e94-9627-89080c99248d",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "8c276a1a-f637-448e-9f24-1986b05f3f06",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "007fa777-8399-4e80-abd9-3a31547c7cdd",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "4c56cbe1-a85b-4228-b5da-db25efce011e",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "d90f9917-a83b-44cc-b175-cc339868ca7c",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "029b2735-c3e0-4b85-bff1-f2428c4ae875",
+      "result_id": "b556922f-72b0-4c95-9403-24b2c5bec198"
+    },
+    {
+      "claim_id": "e9994e9b-27e5-49bc-aaed-11378345b828",
+      "result_id": "8c9ae18a-d4f2-47e5-8083-21ca406a3f65"
+    },
+    {
+      "claim_id": "a04c0e63-172b-49b8-85e5-9f0b0e9676b9",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    },
+    {
+      "claim_id": "8269d4e3-f408-4f1f-9d3d-e608a4961d77",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    },
+    {
+      "claim_id": "9b2ee0b1-c1fa-4c66-b804-9114f32419b1",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    },
+    {
+      "claim_id": "8b31c549-3d50-4998-8750-06393727925a",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    },
+    {
+      "claim_id": "1bb4516e-4049-46d9-9378-34726201c05a",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    },
+    {
+      "claim_id": "bdc4433d-195c-4412-8036-7592e3eba89c",
+      "result_id": "5e2cf16f-ed0e-48c9-b631-b3d29bd2534f"
+    }
+  ],
+  "comparisons": []
+}

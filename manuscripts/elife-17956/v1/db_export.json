@@ -1,0 +1,1618 @@
+{
+  "submission": {
+    "id": "54b35350-e35c-4ec1-bad5-d46ab0052d87",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:38:50.882900Z",
+    "updated_at": "2025-11-30T20:38:50.882900Z"
+  },
+  "content": [
+    {
+      "id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "submission_id": "54b35350-e35c-4ec1-bad5-d46ab0052d87",
+      "content_type": "manuscript",
+      "content_text": "# Presence versus absence of CYP734A50 underlies the style-length dimorphism in primroses\n\n## Authors\n\n- Cuong Nguyen Huu<sup>1</sup>\n- Christian Kappel<sup>1</sup> ([ORCID: 0000-0002-1450-1864](https://orcid.org/0000-0002-1450-1864))\n- Barbara Keller<sup>2</sup>\n- Adrien Sicard<sup>1</sup>\n- Yumiko Takebayashi<sup>3</sup>\n- Holger Breuninger<sup>4</sup>\n- Michael D Nowak<sup>2</sup>\n- Isabel B\u00e4urle<sup>1</sup> ([ORCID: 0000-0001-5633-8068](https://orcid.org/0000-0001-5633-8068))\n- Axel Himmelbach<sup>6</sup>\n- Michael Burkart<sup>7</sup>\n- Thomas Ebbing-Lohaus<sup>8</sup>\n- Hitoshi Sakakibara<sup>3</sup>\n- Lothar Altschmied<sup>6</sup>\n- Elena Conti<sup>2</sup>\n- Michael Lenhard<sup>1</sup> ([ORCID: 0000-0001-8661-6911](https://orcid.org/0000-0001-8661-6911)) \u2020\n\n### Affiliations\n\n1. Institute for Biochemistry and Biology University of Potsdam Potsdam-Golm Germany\n2. Department of Systematic and Evolutionary Botany University of Zurich Zurich Switzerland\n3. RIKEN Center for Sustainable Resource Science Yokohama Japan\n4. Department of Plant Science University of Oxford Oxford United Kingdom\n5. Natural History Museum University of Oslo Oslo Norway\n6. Leibniz Institute of Plant Genetics and Crop Plant Research Gatersleben Germany\n7. Botanical Garden University of Potsdam Potsdam Germany\n8. Gartenbau Ebbing-Lohaus Heiden Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeterostyly is a wide-spread floral adaptation to promote outbreeding, yet its genetic basis and evolutionary origin remain poorly understood. In Primula (primroses), heterostyly is controlled by the S-locus supergene that determines the reciprocal arrangement of reproductive organs and incompatibility between the two morphs. However, the identities of the component genes remain unknown. Here, we identify the Primula CYP734A50 gene, encoding a putative brassinosteroid-degrading enzyme, as the G locus that determines the style-length dimorphism. CYP734A50 is only present on the short-styled S-morph haplotype, it is specifically expressed in S-morph styles, and its loss or inactivation leads to long styles. The gene arose by a duplication specific to the Primulaceae lineage and shows an accelerated rate of molecular evolution. Thus, our results provide a mechanistic explanation for the Primula style-length dimorphism and begin to shed light on the evolution of the S-locus as a prime model for a complex plant supergene.\n\n## Introduction\n\nHeterostyly is a prominent, wide-spread adaptation to promote outbreeding (Barrett, 2002, 1992). Individuals of heterostylous species belong to two or three morphs with reciprocal reproductive-organ arrangement and intra-morph incompatibility (Barrett, 2002). Since Darwin\u2019s seminal book on The different forms of flowers on plants of the same species (Darwin, 1877), Primula (primroses) has been the prime model for studying heterostyly (Barrett, 1992; Gilmartin, 2015; Weller, 2009). Heterostyly in Primula is controlled by the S-locus supergene that likely comprises five tightly linked genes, determining style length (the so-called G locus), anther height, pollen size and male and female intra-morph\u00a0incompatibility (Figure 1A; Figure 1\u2014figure supplement 1) (Ernst, 1936; Lewis and Jones, 1992). The S-morph haplotype carries dominant alleles at all loci, resulting in short styles due to reduced cell elongation (Webster and Gilmartin, 2006) and anthers at the mouth of the flower; the L-morph haplotype carries the recessive alleles, causing long styles and low anthers. S-morphs are heterozygous for the two haplotypes, and L-morphs homozygous recessive; the absence of homozygotes for the S-morph haplotype likely results from a recessive lethal mutation on this haplotype (Kurian and Richards, 1997). Efficient fertilization is only possible in inter-morph crosses. A candidate for a causal distyly gene has been described from Fagopyrum (Yasui et al., 2012); also, S-locus linked sequences have been identified from Primula and Turnera (Labonne and Shore, 2011; Labonne et al., 2009; Li et al., 2007, 2015; Nowak et al., 2015). However, in Primula no causal distyly gene has been isolated, and no plausible mechanistic explanation for style length dimorphism is available in any species, hampering progress in understanding the evolution of the S-locus supergene.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig1-v1.jpg)\n\n**Figure 1.:** (A) Dissected P. veris L- (left) and S-morph flowers (right), showing reciprocal differences in style length and anther position (yellow arrowheads). Blue arrowheads indicate stigmas on top of styles. (B) Expression levels of CYP734A50 in P. veris based on RNA-seq (n\u00a0=\u00a03 biological replicates each). See also Figure 1\u2014source data 1. (C) Expression of CYP734A50 and TUBULIN in dissected floral organs. Full gel images and qRT-PCR quantification based on three biological replicates are shown in Figure 1\u2014figure supplement 2\u00a0and\u00a03.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic representation of L-morph (left) and S-morph flowers (right) and the classic model of corresponding S-locus genotypes, with the functions of individual genes indicated. Open ellipses represent anthers. The order of G, A and P at the S-locus is that suggested by Kurian and Richards (1997) for Primula sect. Primula; in Primula subgenus Auriculastrum the order appears to be GPA (Lewis and Jones, 1992). Also note that the positions of Gm and Pm relative to G and to P are unknown, respectively (indicated by a slash). (B) Schematic representation of three types of long homostyles and their S-locus genotypes arising from recombination within the S-locus (left), from mutation of the dominant G allele (middle), and from silencing the G and Gm genes (right). (C) Proposed model of the S-locus indicating the identity of CYP734A50 to the dominant G allele and its absence from the recessive haplotype.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Expression of CYP734A50 and TUBULIN in dissected floral organs of L- and S-morph plants of the indicated species as determined by RT-PCR. Three biological replicate sets of dissected flowers were analysed. Arrowhead marks 300 bp band in DNA-size standard.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Expression of CYP734A50 in dissected floral organs of L- and S-morph plants of P. veris (left) and P. vulgaris (right) as determined by qRT-PCR, normalized to \u03b1-TUBULIN. Values are mean \u00b1 SD from three biological replicates.\n\n## Results and discussion\n\nWe performed transcriptome sequencing on styles versus corolla tubes including fused stamens from P. veris L- and S-morphs. Candidates for the G locus were selected based on stronger expression in S-morph styles than S-morph corollas and both organs in L-morphs; this identified 11 genes, seven of which were almost exclusively expressed in S-morphs (Figure 1\u2014source data 1). We focussed on transcript DN148700_c0_g1, encoding CYP734A50 as a member of the cytochrome P450 CYP734A-family that degrade brassinosteroids (Ohnishi et al., 2006; Thornton et al., 2011), a class of plant hormones promoting cell elongation. No reads mapping to CYP734A50 were detected in L-morph samples (Figure 1B; Figure 1\u2014source data 1). RT-PCR confirmed specific expression in styles of S-morphs of P. veris and the closely related P. vulgaris (Figure 1C; Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3). Genotyping P. veris and P. vulgaris individuals indicated that the gene was present in each of 154 P. veris S-morphs from a natural population exhibiting very short linkage disequilibrium close to the S-locus (Nowak et al., 2015), while none of the five exons could be amplified in any of 151\u2009L-morph plants; the same was seen in 41\u2009S- and 40\u2009L-morph plants of P. vulgaris (Figure 2A,B; Figure 2\u2014figure supplement 1). A public genome-sequencing dataset of P. vulgaris contained essentially no reads mapping to CYP734A50 from L-morph samples; in S-morph samples, the read coverage of CYP734A50 exons was only half as deep as for a related CYP gene (see below) (Figure 2\u2014source data 1). Together, these observations indicate that the hemizygous CYP734A50 locus is only present on the S-morph haplotype in strict linkage to the dominant G allele.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C) PCR-genotyping of individuals with the indicated phenotypes of P. veris (A), P. vulgaris (B) and P. forbesii (C). \u2018Long homo (UK)\u2019 are naturally occurring long homostyles from England; \u2018long homo mutant\u2019 are long homostyles from the commercially grown population. \u2018Long homo\u2019 P. forbesii are long-homostylous putative recombinants found in our experimental population. Multiplex PCR amplified CYP734A50 exons (arrowheads) and ITS as an internal control. Enlarged arrowhead marks absence of exon 4 in the mutant. Asterisk in (B) marks a segregating L-morph individual. (D) Expression of CYP734A50 in dissected floral organs of naturally occurring long homostyles, S- and L-morphs of P. vulgaris, normalized to \u03b1-TUBULIN. Values are mean \u00b1 SD from three biological replicates. (E,F) PCR-genotyping of individuals with the indicated phenotypes from species in Primula sect. Primula (E) and Primula sect. Aleuritia (F). Long homostylous species are indicated in bold. Multiplex PCR was performed using primers to amplify exon 3 of CYP734A50 (arrowhead) and ITS as an internal control. Full gel images are shown in Figure 2\u2014figure supplement 2. Specificity of PCR amplification for CYP734A50 is shown in Figure 2\u2014figure supplement 3. Each set of plants was genotyped at least twice independently.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** PCR-genotyping of individuals with the indicated phenotypes of P. veris (left), P. vulgaris (middle) and P. forbesii (right). Multiplex PCR amplified CYP734A50 and ITS as an internal control. Arrowhead marks 300 bp band in DNA-size standard.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** PCR-genotyping of individuals with the indicated phenotypes from species in Primula sect. Primula (top) and Primula sect. Aleuritia (bottom). Long homostylous species are indicated in bold. Multiplex PCR was performed using primers to amplify exon 3 of CYP734A50 and ITS as an internal control.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Multiple-sequence alignments at the DNA (top) or protein (bottom) levels of the CYP734A50-specific fragments (see Figure 2E,F) amplified from the indicated species. PCR-products from two S-morph individuals were sequenced from each species. The corresponding region of CYP734A51 is included for comparison to show specificity of amplification of the CYP734A50 orthologues.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Phenotypes of naturally occurring long homostyles, L- and S-morph plants of P. vulgaris collected near Wanstrow (UK). Flowers were pressed before photographing. Blue arrowheads indicate the position of the stigma, yellow arrowheads indicate the position of anthers. Scale bar is 5 mm.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Phenotype of long homostyle mutant of P. x pruhoniciana. Blue arrowheads indicate the position of the stigma, yellow arrowheads indicate the position of anthers. Scale bar is 5 mm. (B) PCR-genotyping of S- and L-morph P. x pruhoniciana individuals, three long homostyle mutant P. x pruhoniciana plants and one long homostyle mutant P. vulgaris individual. Multiplex PCR was performed using primers to amplify the indicated CYP734A50 exons and ITS as an internal control. Arrowheads mark CYP734A50 specific bands; asterisks indicate exon-4 deletion in the mutants. Three different primer pairs were used to test for the presence of exon 4. Each genotyping PCR was performed twice independently. (C) Expression of full-length CYP734A50 transcript and of TUBULIN control in S- and L-morph plants, as well as the long homostyle exon-4 deletion mutant from the commercially grown P. vulgaris population. Fragment lengths of DNA-size standard are indicated. RT: reverse transcription.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig2-figsupp6-v1.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) Phenotypes of P. forbesii seedlings injected with empty TRV-vectors as negative control (left) and with PDS-containing TRV vectors (right) showing bleaching due to silencing of phytoene desaturase (PDS) expression. No phenotypic alteration is seen in the negative control seedlings compared to untreated plants. Scale bar is 1 cm. (B) Flower phenotypes from the indicated treatments. Mock indicates injection of the inflorescence stems with water. (C,D) Anther height (C) and style length (D) of plants from the indicated treatments. Numbers of flowers for stamen and style-length measurements are indicated. Values are mean \u00b1 SD. Means of indicated samples were compared using a two-sided t-test assuming unequal variance, followed by Bonferroni correction. ***p<0.001. (E) Expression of CYP734A50 in dissected styles of plants from the indicated treatments and phenotypes as determined by qRT-PCR, normalized to \u03b1-TUBULIN. Each sample (#1, #2, etc) is derived from pooling styles of one individual plant. Values are mean \u00b1 SD from three technical replicates per sample.\n\nHeterostyly evolved only once in the genus Primula (Mast et al., 2006). Thus, the same causal genes should co-segregate with morph phenotypes in all heterostylous Primula species. To test this for CYP734A50, we sequenced style transcriptomes of the distantly related P. forbesii S- and L-morphs (divergence time P. veris \u2013 P. forbesii ~20\u201325 Mya [de Vos et al., 2014]). Again, the P. forbesii CYP734A50 homologue was exclusively expressed in styles of S-, but not L-morphs (Figure 1C; Figure 1\u2014source data 1; Figure 1\u2014figure supplement 2). Each of its five exons was PCR-amplified from 10 P. forbesii S-morphs, but none of 10\u2009L-morphs (Figure 2C; Figure 2\u2014figure supplement 1). Genome sequencing of pooled S- versus L-morphs detected no CYP734A50-specific reads in L-morphs, and read coverage in S-morphs was only half that of a closely related gene (Figure 2\u2014source data 1). Thus, the presence/absence polymorphism of CYP734A50 has been maintained as a trans-specific polymorphism in strict linkage with the G locus over more than 20 million years of evolution, indicating that it is under strong balancing selection, as predicted for a causal heterostyly locus (Mast and Conti, 2006).\n\nThe hypothesis that CYP734A50 represents the G locus and limits cell expansion by degrading brassinosteroids makes three testable predictions. First, loss of CYP734A50 activity should lengthen styles; second, S-morph styles should contain lower\u00a0amounts\u00a0of active brassinosteroids than L-morph styles; third, cell expansion of S-morph styles should be rescued by brassinosteroid treatment.\n\nWe assayed the CYP734A50 genotype in seven derived long homostyles with independent evolutionary origins (Mast et al., 2006). Classic models predict that long homostyles originate via recombination in the S locus affecting both the G and the linked female-compatibility locus, hence they are self-compatible (Barrett, 1992; Lewis and Jones, 1992); by contrast, in self-incompatible long homostyles only the G locus should be affected by mutation or recombination (Figure 1\u2014figure supplement 1). Indeed, in Primula sect. Aleuritia (Mast et al., 2001; Richards, 2003), CYP734A50 was present in all tested S-, but none of the L-morphs of the heterostylous P. frondosa (n\u00a0=\u00a05 each) and P. farinosa (n\u00a0=\u00a05 each), and in none of the long-homostylous P. scotica (n\u00a0=\u00a08) and P. halleri (n\u00a0=\u00a09) (Figure 2F; Figure\u00a02\u2014figure supplement 2; Figure 2\u2014figure supplement 3). Similarly in Primula sect. Primula, CYP734A50 was present in all S-, but none of the L-morphs of the heterostylous P. elatior (n\u00a0=\u00a015 each) and P. juliae (n\u00a0=\u00a02 each), nor in the homostylous P. grandis (n\u00a0=\u00a011) (Figure 2E; Figure\u00a02\u2014figure supplement 2; Figure 2\u2014figure supplement 3). Our P. forbesii population included self-compatible long homostyles; as expected, none of these (n\u00a0=\u00a06) contained the CYP734A50 locus (Figure 2C; Figure 2\u2014figure supplement 1). Natural P. vulgaris populations including long-homostyles occur in two regions in southern England (Crosby, 1940, 1949) (Figure 2\u2014figure supplement 4). Unexpectedly, the CYP734A50 locus was present in all tested long homostyles and in the S-morphs, but in none of the L-morphs from both regions (Figure 2B). However, quantitative RT-PCR on RNA from styles of the three morphs indicated strongly reduced CYP734A50 expression in the long homostyles compared to S-morphs (Figure 2D). This suggests that a promoter mutation or epigenetic silencing of CYP734A50 is responsible for the long-style phenotype, providing an alternative route to the formation of self-compatible long homostyles in nature (Figure 1\u2014figure supplement 1). We newly identified long-homostylous, yet apparently self-incompatible mutants from commercially grown P. vulgaris and P. x pruhoniciana (Figure 3B,C; Figure 2\u2014figure supplement 5). Exon 4 of CYP734A50 was deleted in both, and no full-length transcript could be detected in the P. vulgaris mutants (Figure 2B; Figure 2\u2014figure supplement 5). Lastly, we used virus-induced gene silencing (VIGS) to downregulate CYP734A50 expression in P. forbesii (Figure 2\u2014figure supplement 6). Two treated S-morph individuals showed reduced CYP734A50 expression and formed longer styles than mock-treated or virus-treated S-morphs with unaffected CYP734A50 expression (Figure 2\u2014figure supplement 6). When the P. veris gene was overexpressed in tobacco, leaf and stem growth were not reduced as seen for other CYP734A family members (Ohnishi et al., 2006; Thornton et al., 2011), likely reflecting the considerable sequence divergence of the P. veris CYP734A50 protein (see below); this mirrors the failure of certain mouse SRY alleles to induce correct male development in a different genetic background (Albrecht et al., 2003). Thus, the CYP734A50 presence/absence polymorphism strictly cosegregates with the morph type in all heterostylous species sampled across the Primula phylogeny, and the gene is absent or inactivated in all seven cases of derived long homostyly. Together with the VIGS results, this strongly supports the conclusion that CYP734A50 is the G locus of the Primula heterostyly supergene that determines the style-length polymorphism.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig3-v1.jpg)\n\n**Figure 3.:** (A) Castasterone levels in styles of P. vulgaris. Values are mean \u00b1 SD from four biological replicates. (B) Anther height, style and style-cell lengths of plants with the indicated phenotypes after brassinolide (BL) treatment. Numbers of flowers used for stamen and style-length measurements are indicated in the bars. Six cells from 10 styles each were measured, except for long homostyle mutant (four styles). Values are mean \u00b1 SD. Samples were compared using a two-sided t-test assuming unequal variance, followed by Bonferroni correction. *p<0.05; **p<0.01; ***p<0.001. (C,D) Flower phenotypes (C) and style cells (D) from the indicated treatments. Representative cells are marked in yellow. Scale bars: 5 mm (C), 100 \u03bcm (D). A replicate experiment using P. forbesii is shown in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Anther height, style and style-cell lengths of plants with the indicated phenotypes after brassinolide (BL) treatment. Numbers of flowers for stamen and style-length measurements are indicated in the bars. Six cells from at least 10 styles each were measured. Values are mean \u00b1 SD. Means of indicated samples were compared using a two-sided t-test assuming unequal variance, followed by Bonferroni correction. *p<0.05; **p<0.01; ***p<0.001. (B) Flower phenotypes (top) and style cells (bottom) from the indicated treatments. Representative cells are filled for clarity. Scale bars are 1 mm (top) and 100 \u03bcm (bottom).\n\nIf CYP734A50 degrades brassinosteroids, S-morph styles should contain less active brassinosteroids than L-morph styles. While castasterone was present in L-morph styles, it was virtually undetectable in S-morph styles (Figure 3A); brassinolide was undetectable in styles of either morph. When treating developing P. vulgaris and P. forbesii flowers with brassinolide, treated S-morphs developed significantly longer styles in a concentration-dependent manner; by contrast, styles of L-morph plants did not show a consistent response, as did corolla-tubes in either morph, indicating that exogenous brassinolide treatment specifically enhances growth of S-morph styles (Figure 3B,C; Figure 3\u2014figure supplement 1). This effect was entirely due to increased cell elongation after brassinolide treatment (Figure 3D; Figure 3\u2014figure supplement 1).\n\nP. veris and P. forbesii genome and transcriptome sequences identified a closely related CYP734A50 paralogue, CYP734A51, in both morphs (Figure 2\u2014source data 1). A molecular phylogeny of angiosperm CYP734A proteins found in sequenced genomes indicated that CYP734A50 arose via a gene duplication specific to the Primula lineage (Figure 4; Figure 4\u2014figure supplement 1). Like the male sex-determining gene SRY in mammals (O'Neill and O'Neill, 1999; Tucker and Lundrigan, 1995), a causal heterostyly gene present on only one of the two homologous chromosomes in a non-recombining region should be subject to two opposing effects. The effective population size for such a gene is approximately one fourth that of unlinked diploid genes, resulting in reduced efficacy of selection and stronger drift, including the accumulation of repetitive elements (Uyenoyama, 2005); at the same time, purifying selection should maintain the function of the gene. Indeed, the four introns of P. veris CYP734A50 were exceptionally long and contained multiple transposon-derived repetitive sequences (Figure 4\u2014figure supplement 2). Comparing P. veris and P. forbesii CYP734A50 gave a Ka/Ks ratio of 0.56, considerably higher than that of CYP734A51 at 0.31. This difference was entirely due to a higher rate of non-synonymous substitutions for CYP734A50 (p<0.01), while the rate of synonymous substitutions was indistinguishable (Figure 4\u2014source data 1). Similarly, Tajima\u2019s relative rate test indicated that CYP734A50 had accumulated significantly more amino-acid exchanges than CYP734A51 since their duplication (Figure 4). We used branch-site tests 1 and 2 developed by Zhang et al., 2005 on the subtree shown in Figure 4 to determine whether this was likely due to relaxed constraints or to positive selection on CYP734A50 genes. No evidence for positive selection was found for the CYP734A50 branches or the branch separating the two CYP734A50 genes from their CYP734A51 paralogues based on likelihood ratio test 2 (Figure 4; Figure 4\u2014source data 2). By contrast, relaxed constraints were supported for the PfoCYP734A50 branch by test 1 (orange branch in Figure 4). While rigorously ruling out positive selection would likely require sequences of the paralogues from more Primula species, based on the above results we favour the explanation that the faster rate of molecular evolution of CYP734A50 proteins is due to a reduced efficacy of purifying selection as predicted by theory.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig4-v1.jpg)\n\n**Figure 4.:** Molecular phylogeny of CYP734A50-related proteins based on Neighbour Joining. The tree is drawn to scale, with branch lengths (below branches) measured as number of substitutions per site. Numbers next to nodes indicate percent support from bootstrap analysis (1000 replicates). Cyan brackets with asterisks show significant differences in evolutionary rates compared to CYP734A7 (bold) as outgroup as assessed by Tajima\u2019s relative rate test (p<0.01). CYP734A7 causes BR-deficient phenotypes when overexpressed (Ohnishi et al., 2006). The orange branch shows evidence for relaxed constraint, but not for positive selection based on branch-site tests 1 and 2. The full tree is shown in Figure 4\u2014figure supplement 1. Full results of branch-site tests 1 and 2 are shown in Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Molecular phylogeny of CYP734A50-related proteins based on Neighbour Joining. The tree is drawn to scale, with branch lengths proportional to number of substitutions per site. Numbers next to nodes indicate percent support from bootstrap analysis (1000 replicates). A. thaliana KLUH/CYP78A5 was used as outgroup. The subtree shown in Figure 4 is indicated by the orange box.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17956/elife-17956-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Density distribution of intron lengths in the P. veris genome. The four introns of the CYP734A50 locus are indicated by dashed red lines, as is the 99% quantile. CYP734A50 introns range from 6.2 to 19.3 kb, while the mean and median of P. veris intron sizes are 668 and 410 bp, respectively. This difference is significant at p<10\u20134 based on Wilcoxon rank sum test. (B) Annotation of transposable elements and repeats in CYP734A50 introns from P. veris according to GIRI. Grey areas in introns indicate stretches of unresolved sequences.\n\nThus, our combined evidence indicates that CYP734A50 represents the G locus in the Primula heterostyly supergene, whose expression in S-morph styles causes brassinosteroid degradation, limiting cell expansion and style elongation (Figure 1\u2014figure supplement 1). Evolutionarily, CYP734A50 arose via a lineage-specific gene duplication and presumably gain of style-specific expression. Two main models have been proposed to explain the evolutionary origin of distyly. While they differ in the sequence of events, assuming either that morphological features evolved first (Lloyd and Webb, 1992) or that intra-morph incompatibility arose first (Charlesworth and Charlesworth, 1979), they both postulate that the first morphological change was the reduction of style length by a dominant mutation. The proposed duplication and gain of style-specific expression of CYP734A50 in the ancestor of the Primulaceae likely represents this dominant style-shortening mutation. As such, CYP734A50 is a rare example of an identified causal locus in a supergene underlying an adaptive polymorphism (Schwander et al., 2014) that opens the way for understanding the evolutionary origin of the Primula S-locus as an iconic case of a complex supergene.\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nThe P. veris plants used for RNA-seq analysis were from a commercially grown line obtained from Jungpflanzen Braun (Kurzlipsdorf, Germany) and\u00a0were cultivated in the field in the Botanical Garden at the University of Potsdam. P. veris plants for testing co-segregation of the CYP734A50 presence/absence polymorphism with the S-locus genotype were from a semi-natural population in Park Sanssouci, Potsdam (Nowak et al., 2015).\n\nP. vulgaris plants for sampling styles for brassinosteroid measurements and for BR treatment experiments were commercially grown hybrids bred by Gartenbau Ebbing-Lohaus, Heiden, Germany and provided by G\u00e4rtnerei Schultz, Potsdam-Sacrow. For the duration of the BR treatment, these were grown in a glasshouse at 18\u00b0C. Flowers of naturally occurring long homostyles of P. vulgaris and of neighbouring L- and S-morphs were sampled in Somerset, UK, near Wyke Champflower (grid reference: ST656339; http://www.gridreferencefinder.com/), Wanstrow (ST718405) and Sparkford (ST620285); and in the Chilterns, UK, near Great Missenden (SP897014). Both the commercially grown and naturally occurring P. vulgaris plants were used for testing co-segregation of the CYP734A50 presence/absence polymorphism with the S-locus genotype. Samples for qRT-PCR analysis were collected near Great Missenden (long homostyles); as there were no S-morph individuals in this population, L- and S-morph control plants were collected near Oxford. The experiment shown in Figure 2D used material sampled in 2015. A replicate experiment using material sampled in 2016 confirmed this result. The long homostyle mutant of P. vulgaris carrying the exon-4 deletion was provided by Gartenbau Ebbing-Lohaus, Heiden, Germany, where it arose spontaneously as a single plant in a large P. vulgaris population; the exon-4 deletion mutant of P. x pruhoniciana (a hybrid of P. juliae and P. vulgaris) was found in a local garden center in Berlin. Therefore, both mutants were considered to be independently arisen.\n\nP. forbesii seeds were obtained from the Botanical Garden at the University of Zurich (accession 20050032) and grown in a growth room at 18\u00b0C, initially under short-day conditions (8\u2009hr light, 16\u2009hr dark) to stimulate flowering, then under long-day conditions (16\u2009hr light, 8\u2009hr dark). The long homostyle recombinants were found to segregate in this population.\n\nMaterial for the remaining species (P. elatior, P. juliae, P. grandis, P. frondosa, P. farinosa, P. scotica, P. halleri, and P. vulgaris) was sampled either from living plants cultivated at the Botanical Garden of the University of Zurich, or from material collected in the field. Primula elatior was collected from several (semi) natural populations in Switzerland by BK: Botanical Garden of Z\u00fcrich (ZH; 47\u00b021\u201929\u2019\u2019N, 8\u00b033\u201937\u2019\u2019E), Nieder\u00f6nz (BE; 47\u00b011\u201941\u2019\u2019N, 7\u00b041\u201937\u2019\u2019), Staufenbach (BE; 47\u00b008\u201958\u2019\u2019N, 7\u00b043\u201953\u2019\u2019E), and Allerheiligenberg (SO; 47\u00b020\u201958\u2019\u2019, 7\u00b048\u201950\u2019\u2019E). Primula farinosa was collected from a natural population at Alpe Campolungo (TI, Switzerland; 64\u00b028\u201915\u2019\u2019N, 8\u00b043\u201914\u2019\u2019E) by Jurriaan M. de Vos and seeds (accession IT0Z-20050747) were obtained from the Paradisia Alpine Botanical Garden (Cogne, Italy). Primula frondosa seeds (accession XX0Z-20070548) were obtained from the Botanical Garden Hamborn (Duisburg, Germany). Primula grandis seeds (accessions XX0Z-20110194 and XX0Z-20130917) were obtained from the Akureyri Botanical Garden (Akureyri, Island) and the Scottish Rock Garden Club, respectively. Primula halleri was collected from several natural populations across the Binntal (VS, Switzerland; 46\u00b022\u201946\u2019\u2019N, 8\u00b014\u201952\u2019\u2019E) by Jurriaan M. de Vos. Primula juliae was collected from a natural population in the Shzoma gorge (Lagodekhi, Georgia; 41\u00b052'27.5''N, 46\u00b019'47.0''E) by Rita Ganz. Primula scotica was collected from a natural population at Faraid Head (Sutherland, Scotland; 58\u00b037\u201900.05\u2019\u2019N, 4\u00b046\u201900.00\u2019\u2019W) by Jurriaan M. de Vos. Primula vulgaris was collected from two semi natural populations in Switzerland by BK: Botanical Garden of Z\u00fcrich (ZH; 47\u00b021\u201929\u2019\u2019N, 8\u00b033\u201937\u2019\u2019E) and Nieder\u00f6nz (BE; 47\u00b011\u201941\u2019\u2019N, 7\u00b041\u201937\u2019\u2019E).\n\n### RNA-seq\n\nStyles and petal tubes with attached anthers of L- and S-morph flowers of P. veris were sampled when petals were between 4 and 10\u2009mm long, corresponding to the time when the difference in style length and anther position develops (Stirling, 1932; Webster and Gilmartin, 2006). Three replicate samples were collected per morph and organ, pooling organs of 25 plants per sample. Similarly, styles of L- and S-morph flowers of P. forbesii were sampled from young, unopened flower buds. One sample per morph was collected. Tissue was immediately frozen in liquid nitrogen following manual dissection of the flowers. Total RNA was extracted using RNeasy Plant Mini Kit (Qiagen). TruSeq RNA libraries were generated according to the manufacturer\u2019s instructions (Illumina) and sequenced using the Illumina HiSeq2500 instrument (2\u00a0\u00d7\u00a0100 cycles), essentially as described (Mascher et al., 2013).\n\n### Primula forbesii genome sequencing\n\nGenomic DNA of S- and L-morph plants of P. forbesii was extractred using DNeasy Plant Mini Kit (Qiagen). For sequencing one NextSeq library each was generated per morph as described by the manufacturer (Illumina) and sequenced on a NextSeq500 instrument (paired-end mode, 2 \u00d7 150 cycles). In addition, a TruSeq DNA library was constructed for the S-morph as described by the manufacturer (Illumina); sequencing was performed using an Illumina HiSeq2500 instrument (paired-end mode, 2 \u00d7 100 bp reads), essentially as described (Mascher et al., 2013).\n\n### Bioinformatic analysis\n\nRNA-seq data were processed using Trimmomatic (Bolger et al., 2014) to remove adapter sequences. Quality control was done using FastQC (http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc). Transcriptome assembly was done separately for P. veris and P. forbesii using Trinity version 2.1.1 (Grabherr et al., 2011). Assemblies were further explored using Trinity downstream analysis scripts to estimate abundances using Kallisto (Bray et al., 2016) and to obtain differential gene expressions for P. veris samples by comparing all samples to S-morph style ones using DESeq2 (Love et al., 2014). Genes with higher expression in S-morph styles for all three comparisons having a p-value below 0.05 were considered as G locus candidates. Functional annotations for those genes were based on tblastx search against TAIR10 cDNA sequences. PveCYP734A50 exons were identified based on the P. veris draft genome (Nowak et al., 2015). The corresponding P. forbesii PfoCYP734A50 was identified by blastn and tblastx alignments. PveCYP734A50 and PfoCYP734A50 coding sequences were confirmed by Sanger sequencing and are included in Supplementary file 2.\u00a0They\u00a0are\u00a0also available in GenBank under accession numbers KX589238, KX589239, KX589240 and KX589241. PveCYP734A50 intron lengths were compared to genome-wide P. veris structural gene annotations (Nowak et al., 2015). Repeats and transposable elements in the PveCYP734A50 locus were identified by comparison to RepBase (Jurka et al., 2005) version 21.03 using CENSOR (Kohany et al., 2006). The CYP734A50 gene was named as such after consultation with Dr. David Nelson (http://drnelson.uthsc.edu/CytochromeP450.html).\n\nP. forbesii S-morph DNA-seq data obtained using HiSeq2500 sequencing were assembled using SOAPdenovo2 version 2.04 (Luo et al., 2012) to identify PfoCYP734A50 exons. Close CYP734A50 homologs for both P. veris and P. forbesii were identified by tblastx alignments against the corresponding genome and transcriptome assemblies.\n\nPublic P. vulgaris DNA-seq data from NCBI SRA projcect PRJEB9683 for L- and S-morphs were mapped against the PveCYP734A50 and PveCYP734A51 exons separated by stretches of 100 Ns using bwa mem (Li, 2013). Our P. forbesii DNA-seq data was mapped the same way against the PfoCYP734A50 and PfoCYP734A51 exons. Mapped reads were counted to obtain a relative abundance estimate.\n\n### Expression analysis\n\nTo determine gene expression in different floral organs, recently opened flowers of L- and S-morph plants were manually dissected and the tissue frozen immediately in liquid nitrogen. Total RNA was extracted using RNeasy Plant Mini Kit (Qiagen). Reverse transcription was performed using oligo(dT) priming and SuperScript III (Invitrogen). RT-PCR products were separated on agarose gels and visualized by ethidium bromide staining. Quantitative RT-PCR was performed using the Bioline SensiMix SYBR Low-ROX kit and a Roche LightCycler LC480. The Primula TUBULIN gene was used as a reference. Primers used for RT-PCR are indicated in Supplementary file 1.\n\n### Phylogenetic analysis of CYP734A50 homologues\n\nCYP homologs were identified within the Phytozome version 11 (https://phytozome.jgi.doe.gov) by aligning CYP734A50 and CYP734A51 sequences from P. veris and P. forbesii using blastp. Multiple sequence alignments were generated using MUSCLE. Sequences used and multiple-sequence alignments are available as Supplementary files 2\u20135.\u00a0The evolutionary history was inferred using the Neighbor-Joining method. The optimal tree with the sum of branch length = 14.64379199 is shown in Figure 4\u2014figure supplement 1. The percentage of replicate trees in which the associated taxa clustered together in the bootstrap test (1000 replicates) are shown next to the branches. The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree. The evolutionary distances were computed using the Poisson correction method and are in the units of the number of amino acid substitutions per site. The rate variation among sites was modeled with a gamma distribution (shape parameter = 1). The analysis involved 109 amino acid sequences (Supplementary files 2\u20135). All positions containing gaps and missing data were eliminated. There were a total of 183 positions in the final dataset. Pair-wise Ka/Ks ratios were determined from MUSCLE-generated multiple-sequence alignments of coding sequences using the Nei-Gojobori model with uniform rates and complete deletion of missing data. Number of substitutions were extracted and the total number of sites calculated from the Ka and Ks values and the absolute numbers of substitutions; these were used in the Fisher\u2019s exact tests in Figure 4\u2014source data 1. Qualitatively similar results were obtained when calculating Ka and Ks values using only pair-wise deletions. Evolutionary rates were compared between CYP734A50 and CYP734A51 using Tajima\u2019s relative rate test (Tajima, 1993). Evolutionary analyses were conducted in MEGA7 (Kumar et al., 2016).\n\nTo test for selection we performed branch-site tests 1 and 2 as described by Zhang et al. (2005), using codeml implemented in PAML (Yang, 2007) on the subtree shown in Figure 4. We performed a likelihood ratio test comparing model A with variable \u03c9 in the foreground branch to its null model with fixed \u03c9 value to identify positive selection. We did the same test comparing model A to model M1a to identify overall relaxed constraints or positive selection. Codon alignments were done using TranslatorX (Abascal et al., 2010) in combination with MUSCLE (Edgar, 2004). Full results of the tests are shown in Figure 4\u2014source data 2.\n\n### PCR-based genotyping\n\nGenomic DNA was extracted from leaf material using the DNeasy Plant Mini Kit (Qiagen). PCR-genotyping was performed using the primers indicated in Supplementary file 1. Primers for genotyping for presence/absence of CYP734A50 across the different species in Figure 2 were designed based on conservation between the P. veris and P. forbesii CYP734A50 sequences. To monitor successful PCR amplification, internal-control primers targeting ITS were included in each PCR reaction. PCR products were separated on agarose gels and visualized by ethidium bromide or UView 6x Loading Dye (Bio-Rad Laboratories, Inc) staining.\n\n### Brassinosteroid measurements and treatment\n\nStyles were sampled from mixed-stage unopened flower buds of L- and S-morph P. vulgaris plants, ranging from a petal length of about 10\u2009mm to buds just before opening. Tissue was frozen immediately in liquid nitrogen. After weighing, the tissue was freeze-dried. Extraction, semi-purification, and quantification of castasterone and brassinolide were carried out as described (Sawai et al., 2014). While castasterone was readily detectable in styles of L-morph plants, but virtually undetectable in styles of S-morph plants, brassinolide was undetectable in styles of either morph.\n\nFor the brassinosteroid treatment experiment, young flower buds of commercially grown P. vulgaris and of P. forbesii were injected every other day with solutions containing 1 nM, 100 nM or 10\u2009\u03bcM homobrassinolide (dissolved in DMSO), 0.1% Tween-20 or a mock solution containing 0.1% DMSO (corresponding to the DMSO concentration in the solution with 10\u2009\u03bcM homobrassinolide), 0.1% Tween. Injections were started on flower buds with petals of about 8 and 3\u2009mm length, respectively. Once fully opened, flowers were bisected, photographed and organ sizes were determined using ImageJ. Styles were excised and placed in 1x PBS for processing for confocal microscopy.\n\nTo measure cell lengths in styles, styles were briefly dewaxed in chloroform and stained with propidium iodide. Stained tissue was imaged with a Zeiss LSM 710 using a 488 nm excitation laser line while emission was detected at 560\u2013750 nm for FM4-64. Style-cell lengths were determined from digital micrographs using ImageJ.\n\n### Virus-induced gene silencing\n\nTo prepare vectors for virus-induced gene silencing (VIGS), a fragment containing exon 4 and exon 5 of CYP734A50 in P. forbesii was cloned and inserted into vector TRV2 (Liu et al., 2002) to produced TRV2-CYP734A50. As a control, a fragment of the PHYTOENE DESATURASE (PDS) gene was used. Primer sequences are provided in Supplementary file 1. Vectors TRV1 (Liu et al., 2002), TRV2-CYP734A50 and TRV2-PDS were then introduced into Agrobacterium tumefaciens strain GV3101. Preparation steps for VIGS assay were done as described (Padmanabhan and Dinesh-Kumar, 2009). P. forbesii plants were grown under long-day conditions (16\u2009hr light, 8\u2009hr dark) at 18\u00b0C. Agrobacterium cultures were infiltrated into inflorescence stems using a 2-ml syringe with needle. The treatment was repeated after one week. In total 22 plants were infected with Agrobacterium.\n\nFlowers from treated plants showing rescued style length were photographed. Style length and anther height were measured using ImageJ. 6\u20138 styles were dissected for total RNA extraction and the expression analysis was performed as described above with primers in Supplementary file 1.\n\n### Statistical analysis\n\nNo statistical methods were used to predetermine sample sizes; rather, the maximum number of available plants was used. The number of replicates performed is indicated in the respective figure legends. No data points were excluded. Trait values in the BL treatment and VIGS experiment departed from normality in some groups, based on a Shapiro-Wilk-test; also, variance were unequal between some of the groups. Student's t-test is robust to deviations from normality when sample sizes are large (n\u00a0>\u00a025) and comparable between the groups, both of which is the case here, and when using a two-sided test (Sawilowsky and Blair, 1992); also a correction for unequal variances is available. We therefore compared style lengths and anther heights of BL-treated to mock-treated groups using a two-sided t-test assuming unequal variances. Similarly, we compared style lengths and anther heights of VIGS-treated S-morph plants with mock-treated S-morph plants, and untreated S-morph plants with mock-treated S-morph plants using a two-sided t-test assuming unequal variances. The Bonferroni method was used to correct for multiple testing.\n",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "7c1271e5-166e-45ef-a669-d17794c0d8de",
+      "submission_id": "54b35350-e35c-4ec1-bad5-d46ab0052d87",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian S Hardtke, University of Lausanne , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17956.032](https://doi.org/10.7554/eLife.17956.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Presence versus absence of CYP734A50 underlies the style-length dimorphism in primroses\" for consideration by eLife. Your article has been favorably evaluated by Detlef Weigel as the Senior editor and three reviewers, one of whom is a member of our Board of Reviewing Editors. Two of the three reviewers have agreed to reveal their identity: Elena Kramer (Reviewer #2) and John Pannell (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAs you can see from their comments, all reviewers (and the Senior Editor) are very positive about your work and support publication. They have some suggestions for improvements, which should hopefully not too difficult to address. You can find those remarks in the reviews below.\n\nReviewer #1:\n\nThis manuscript by Lenhard and co-workers is an excellent piece of work that reports the identification of the causal variation within a supergene locus. Inherently, this is a difficult task because of the lack of recombination events within a supergene locus, but here the authors do a superb job in working around this. Basically, they were looking for presence-absence signs of gene expression in tissue-specific RNAseq experiments. This allowed them to home in on a candidate gene that codes for a brassinosteroid-degrading enzyme, which made sense because brassinosteroids are crucial for cell elongation and the heterostyly phenotypes of primula are due to differential cell elongation. Subsequently, they could show that the presence-absence of the pertinent CYP734A50 gene holds up in S- and L-morphs across several primula species as well as mutant lines, and follow up physiological assays support a direct role of CYP734A50 in the phenotype. Thus, despite the absence of a classic genetic linkage analysis, the identity of CYP734A50 as the causal locus has solid support from cross-species/variety mapping. There are only a few, minor improvements that I would like to ask for:\n\nIntroduction: \"Darwin's seminal book\". Maybe add the book's title here, I doubt many colleagues are aware of it. Also, the doi in the corresponding reference is missing.\n\nThe S-morph haplotype is dominant, but only exists in heterozygous state in nature, why is that? Because of incompatibility, or because of a detrimental dosage phenotype of CYP734A50 homozygosity?\n\nRegarding the amplification of CYP734A50 genes from different Primula species, was this initially done with degenerate primers? And then the genotyping was performed with specific primers based on the amplified fragments? I think the authors should provide a list of oligonucleotides used to amplify different fragments in different genotypes.\n\nRegarding the brassinosteroid deficiency in S-morphs, why did the authors only determine the castasterone level? Why not brassinolide itself? Is castasterone the main active brassinosteroid in Primula? And is it the direct substrate for CYP734A50, or is it brassinolide? Please specify and amend accordingly.\n\nReviewer #2:\n\nIn this manuscript, the authors provide a very thorough analysis of the genetic basis for style length differences segregating among individuals of Primula. This phenomenon, termed distyly, has only evolved once in this genus, although it has also evolved independently in other taxa. The authors used differential expression to identify a candidate gene, CYP734A50, that is only expressed in S-morphs. This cytochrome P450 is involved in degrading brassinosteroids, a class of hormones often associated with cell elongation. The authors further demonstrate that 1) style-specific expression of the gene is associated with the S-morph phenotype of multiple Primula species, 2) the presence/absence of the locus specifically segregrates with the S-morph phenotype in multiple species, 3) suppression of activity lengthens styles, 4) presence of activity results in lower brassinosteroid concentrations, 5) application of excess brassinosteroids can rescue the short style phenotype, and 6) presence/absence of the locus correlates with cell length. The data are clearly presented and discussed. I think that this is a really lovely paper that addresses a classic question in plant genetics and pollination biology. I have no suggestions for major revisions.\n\nReviewer #3:\n\nThis manuscript reveals the identity of the gene responsible for the expression of short styles in distylous species of the primrose family. The gene, CYP734A50, degrades brassinosteroids, which promote cell elongation. Absence of this gene leads to short short-styled individuals; indeed, the gene was found only in short-styled individuals of several species of the genus Primula, and estimates of transcript read coverage were consistent with the gene being hemizygous in short-styled individuals. Also consistent with the inference that CYP734A50 is indeed the gene responsible for style length in Primula is the fact that it was absent not only in typical long-styled individuals, but also in long homostyled individuals of P. forbesii or P. grandis (though interestingly not in those of P. vulgaris, suggesting that homostyly in the latter may have evolved via a different route). Virus-induced gene silencing of CYP734A50 showed reduced expression of the gene in short-styled plants, and the development of longer styles. Moreover, the brassinosteroid castasterone, which is degraded by CYP734A50, was present in L-morph but not S-morph styles. I am not qualified to comment on many of the methodological details behind these aspects of the study, but the case made by the authors seems convincing on the whole, and I found the study exciting. It is also very well written.\n\nThe authors carry out an analysis of sequence variation at CYP734A50 and find that its Ka/Ks ratio is twice as high as that found for its paralog CYP734A51. I would like to see the P-value for this analysis given in the text itself. The authors infer from this difference that there has been reduced purifying selection on CYP734A50, consistent with an hypothesis of its likely reduced effective population size. But how can they rule out the alternative hypothesis that the greater number of non-synonymous substitutions have in fact been driven by selection, e.g., in establishing the novel function of this gene in stylar tissue of the S-morph? It would be interesting to know when the substitutions actually occurred? Are they common to all species of Primula, i.e., did they occur at the base of the tree, or have different non-synonymous substitutions accumulated in different lineages during diversification of the genus? The latter possibility would perhaps be consistent with the authors' hypothesis of relaxed purifying selection, whereas the former would be more consistent with their fixation by selection. This would be well worth considering with more analytic rigour.\n\nThe main results of this paper are, I think, very exciting and represent an important advance. However, I feel the authors do not do their paper justice in their discussion of its evolutionary implications. It is commonly thought that distyly almost always evolves through the selection of a dominant mutation that suppresses stylar growth in the S-morph, and that, subsequently, anther lengths of the two morphs are adjusted, i.e., that the starting point is a population with approach herkogamy, and that the first step towards distyly is the spread of a dominant mutation that reduces style length. The authors' findings are entirely consistent with these theoretical explanations, yet they make too little of this fact. (Here, it would also be worth explaining briefly to the reader why the first mutation is more likely to be one that reduces rather than extends style length.) The authors might also stress the significance of the fact that the dominant action of CYP734A50 is nicely explained by the gene duplication that their study reveals.\n",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cbff5cec-9042-47fb-adcf-14bee75d57af",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C2",
+      "claim": "Individuals of heterostylous species belong to two or three morphs with reciprocal reproductive-organ arrangement and intra-morph incompatibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Individuals of heterostylous species belong to two or three morphs with reciprocal reproductive-organ arrangement and intra-morph incompatibility (Barrett, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barrett 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "29f8ce4c-beaa-4472-970c-8101d827923b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C3",
+      "claim": "Heterostyly in Primula is controlled by the S-locus supergene that likely comprises five tightly linked genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterostyly in Primula is controlled by the S-locus supergene that likely comprises five tightly linked genes, determining style length (the so-called G locus), anther height, pollen size and male and female intra-morph incompatibility (Figure 1A; Figure 1\u2014figure supplement 1) (Ernst, 1936; Lewis and Jones, 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Ernst 1936 and Lewis and Jones 1992, and by Figure 1A and Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "18ed6a30-c5f1-4fe6-ad06-e5daf5032c5c",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C4",
+      "claim": "The S-morph haplotype carries dominant alleles at all loci, resulting in short styles due to reduced cell elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "The S-morph haplotype carries dominant alleles at all loci, resulting in short styles due to reduced cell elongation (Webster and Gilmartin, 2006) and anthers at the mouth of the flower",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Webster and Gilmartin 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "9e0541ac-e177-4c27-a36b-3b3bee52907a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C5",
+      "claim": "The L-morph haplotype carries the recessive alleles, causing long styles and low anthers.",
+      "claim_type": "EXPLICIT",
+      "source": "the L-morph haplotype carries the recessive alleles, causing long styles and low anthers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genetic model of heterostyly described in the manuscript",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e11ac77e-7c19-4f28-be8c-22dac981e8b6",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C6",
+      "claim": "S-morphs are heterozygous for the two haplotypes, and L-morphs homozygous recessive.",
+      "claim_type": "EXPLICIT",
+      "source": "S-morphs are heterozygous for the two haplotypes, and L-morphs homozygous recessive",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic model of heterostyly",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d311cadb-c025-4f61-8ea3-25a378028e97",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C7",
+      "claim": "The absence of homozygotes for the S-morph haplotype likely results from a recessive lethal mutation on this haplotype.",
+      "claim_type": "EXPLICIT",
+      "source": "the absence of homozygotes for the S-morph haplotype likely results from a recessive lethal mutation on this haplotype (Kurian and Richards, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kurian and Richards 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "55506a38-cbe0-4d6e-97ef-77f7df55b544",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C8",
+      "claim": "Efficient fertilization is only possible in inter-morph crosses.",
+      "claim_type": "EXPLICIT",
+      "source": "Efficient fertilization is only possible in inter-morph crosses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of heterostyly",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "450bb9b5-3254-475f-8223-b4b94777f738",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C9",
+      "claim": "A candidate for a causal distyly gene has been described from Fagopyrum.",
+      "claim_type": "EXPLICIT",
+      "source": "A candidate for a causal distyly gene has been described from Fagopyrum (Yasui et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yasui et al. 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e27c5ad1-1925-474e-a8f9-1e76f4698a32",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C10",
+      "claim": "S-locus linked sequences have been identified from Primula and Turnera.",
+      "claim_type": "EXPLICIT",
+      "source": "also, S-locus linked sequences have been identified from Primula and Turnera (Labonne and Shore, 2011; Labonne et al., 2009; Li et al., 2007, 2015; Nowak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "41df96c5-8e14-460d-ad30-adb6693f1016",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C11",
+      "claim": "In Primula no causal distyly gene has been isolated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in Primula no causal distyly gene has been isolated",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the state of knowledge prior to this study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "fbe3ef0b-4e84-4b50-a630-50b1d90e7d1f",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C12",
+      "claim": "No plausible mechanistic explanation for style length dimorphism is available in any species.",
+      "claim_type": "EXPLICIT",
+      "source": "no plausible mechanistic explanation for style length dimorphism is available in any species",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the state of knowledge prior to this study",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d4819aed-67c9-42b5-98f9-167462d5c5f1",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C13",
+      "claim": "CYP734A50 encodes a putative brassinosteroid-degrading enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "We focussed on transcript DN148700_c0_g1, encoding CYP734A50 as a member of the cytochrome P450 CYP734A-family that degrade brassinosteroids (Ohnishi et al., 2006; Thornton et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Ohnishi et al. 2006 and Thornton et al. 2011",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "7282075e-3e13-4eaf-b05f-58506d91c297",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C14",
+      "claim": "No reads mapping to CYP734A50 were detected in L-morph samples of P. veris.",
+      "claim_type": "EXPLICIT",
+      "source": "No reads mapping to CYP734A50 were detected in L-morph samples (Figure 1B; Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RNA-seq data shown in Figure 1B and Figure 1\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "02c5c94a-aea1-43ca-8750-1960f000e0c1",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C15",
+      "claim": "RT-PCR confirmed specific expression of CYP734A50 in styles of S-morphs of P. veris and P. vulgaris.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-PCR confirmed specific expression in styles of S-morphs of P. veris and the closely related P. vulgaris (Figure 1C; Figure 1\u2014figure supplement 2; Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by RT-PCR data shown in Figure 1C and supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "777714d7-41c7-42ce-9f5e-9a3e403349c4",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C16",
+      "claim": "CYP734A50 was present in each of 154 P. veris S-morphs from a natural population.",
+      "claim_type": "EXPLICIT",
+      "source": "Genotyping P. veris and P. vulgaris individuals indicated that the gene was present in each of 154 P. veris S-morphs from a natural population exhibiting very short linkage disequilibrium close to the S-locus (Nowak et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data and citation to Nowak et al. 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "b49f69ac-ed3c-4920-8849-603ff696e50d",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C17",
+      "claim": "None of the five exons of CYP734A50 could be amplified in any of 151 L-morph P. veris plants.",
+      "claim_type": "EXPLICIT",
+      "source": "while none of the five exons could be amplified in any of 151 L-morph plants",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "91fac98d-0961-489e-bcb1-6ce2d96207ca",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C18",
+      "claim": "CYP734A50 was present in 41 S-morph P. vulgaris plants but absent in 40 L-morph plants.",
+      "claim_type": "EXPLICIT",
+      "source": "the same was seen in 41 S- and 40 L-morph plants of P. vulgaris (Figure 2A,B; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in Figure 2A,B and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "cff034ec-d204-4912-9db5-d86eca7d8182",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C19",
+      "claim": "A public genome-sequencing dataset of P. vulgaris contained essentially no reads mapping to CYP734A50 from L-morph samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A public genome-sequencing dataset of P. vulgaris contained essentially no reads mapping to CYP734A50 from L-morph samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of public genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "6df0c961-8df1-4349-88ee-d904869ce9d2",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C20",
+      "claim": "In S-morph P. vulgaris samples, the read coverage of CYP734A50 exons was only half as deep as for a related CYP gene.",
+      "claim_type": "EXPLICIT",
+      "source": "in S-morph samples, the read coverage of CYP734A50 exons was only half as deep as for a related CYP gene (see below) (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data shown in Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "85ebc1a8-3ac5-4fb3-810b-f8f2a40b1c46",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C21",
+      "claim": "The hemizygous CYP734A50 locus is only present on the S-morph haplotype in strict linkage to the dominant G allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations indicate that the hemizygous CYP734A50 locus is only present on the S-morph haplotype in strict linkage to the dominant G allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of genotyping and sequencing evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "944ebdfd-b678-4295-878e-5054ff78d157",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C22",
+      "claim": "Heterostyly evolved only once in the genus Primula.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterostyly evolved only once in the genus Primula (Mast et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mast et al. 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "4df44d5e-9917-4e20-8221-f6a9788e78a7",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C23",
+      "claim": "The same causal genes should co-segregate with morph phenotypes in all heterostylous Primula species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the same causal genes should co-segregate with morph phenotypes in all heterostylous Primula species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the single evolutionary origin of heterostyly in Primula",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "c354c937-5872-4dfe-8643-802898867ba6",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C24",
+      "claim": "The P. forbesii CYP734A50 homologue was exclusively expressed in styles of S-, but not L-morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the P. forbesii CYP734A50 homologue was exclusively expressed in styles of S-, but not L-morphs (Figure 1C; Figure 1\u2014source data 1; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptome sequencing data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "a053e941-3e98-4d0e-ba25-257305a41c47",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C25",
+      "claim": "Each of the five exons of CYP734A50 was PCR-amplified from 10 P. forbesii S-morphs, but none of 10 L-morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of its five exons was PCR-amplified from 10 P. forbesii S-morphs, but none of 10 L-morphs (Figure 2C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in Figure 2C and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "dc74c864-0a44-4195-a7fe-e6c53abc115b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C26",
+      "claim": "Genome sequencing of pooled P. forbesii S- versus L-morphs detected no CYP734A50-specific reads in L-morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome sequencing of pooled S- versus L-morphs detected no CYP734A50-specific reads in L-morphs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e1d555a8-a4f1-480d-84d3-5e2e2f201adf",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C27",
+      "claim": "Read coverage of CYP734A50 in P. forbesii S-morphs was only half that of a closely related gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and read coverage in S-morphs was only half that of a closely related gene (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome sequencing data shown in Figure 2\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "95203ad1-8d16-4fac-bce7-0ae2df66a4d0",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C28",
+      "claim": "The presence/absence polymorphism of CYP734A50 has been maintained as a trans-specific polymorphism in strict linkage with the G locus over more than 20 million years of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence/absence polymorphism of CYP734A50 has been maintained as a trans-specific polymorphism in strict linkage with the G locus over more than 20 million years of evolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genotyping data across divergent species and divergence time estimates",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e166b7cc-5725-4c65-b175-1b7c1490644c",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C29",
+      "claim": "The trans-specific polymorphism of CYP734A50 indicates that it is under strong balancing selection.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that it is under strong balancing selection, as predicted for a causal heterostyly locus (Mast and Conti, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the maintenance of the polymorphism and supported by citation to Mast and Conti 2006",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "1e76f86b-755b-431b-8353-9c31199b02e9",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C30",
+      "claim": "CYP734A50 was present in all tested S-morphs but none of the L-morphs of heterostylous P. frondosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in Primula sect. Aleuritia (Mast et al., 2001; Richards, 2003), CYP734A50 was present in all tested S-, but none of the L-morphs of the heterostylous P. frondosa (n = 5 each)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "2743adc4-c555-4de6-b299-558ef77b2ef2",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C31",
+      "claim": "CYP734A50 was present in all tested S-morphs but none of the L-morphs of heterostylous P. farinosa.",
+      "claim_type": "EXPLICIT",
+      "source": "and P. farinosa (n = 5 each)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "561c64a3-d29f-4a57-977e-487fad28f01a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C32",
+      "claim": "CYP734A50 was absent in all tested long-homostylous P. scotica plants.",
+      "claim_type": "EXPLICIT",
+      "source": "and in none of the long-homostylous P. scotica (n = 8)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "a9784c38-4f19-43dd-8f7f-51b966024c2c",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C33",
+      "claim": "CYP734A50 was absent in all tested long-homostylous P. halleri plants.",
+      "claim_type": "EXPLICIT",
+      "source": "and P. halleri (n = 9) (Figure 2F; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "7c0c1421-e734-4994-8d17-b8e7b31edeb0",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C34",
+      "claim": "CYP734A50 was present in all S-morphs but none of the L-morphs of heterostylous P. elatior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly in Primula sect. Primula, CYP734A50 was present in all S-, but none of the L-morphs of the heterostylous P. elatior (n = 15 each)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "109d2ad0-2b34-40d6-a580-4e464934230a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C35",
+      "claim": "CYP734A50 was present in all S-morphs but none of the L-morphs of heterostylous P. juliae.",
+      "claim_type": "EXPLICIT",
+      "source": "and P. juliae (n = 2 each)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "57f56f2a-9b30-4988-845c-ab505c05ed78",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C36",
+      "claim": "CYP734A50 was absent in homostylous P. grandis.",
+      "claim_type": "EXPLICIT",
+      "source": "nor in the homostylous P. grandis (n = 11) (Figure 2E; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "aac7711d-fb2f-4624-a52c-07ecb179dad9",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C37",
+      "claim": "None of the self-compatible long homostyles of P. forbesii contained the CYP734A50 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our P. forbesii population included self-compatible long homostyles; as expected, none of these (n = 6) contained the CYP734A50 locus (Figure 2C; Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "0b5be37c-e86f-4334-84af-c77bc3fd5c24",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C38",
+      "claim": "The CYP734A50 locus was present in all tested long homostyles and S-morphs, but in none of the L-morphs from two regions in southern England.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, the CYP734A50 locus was present in all tested long homostyles and in the S-morphs, but in none of the L-morphs from both regions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "fc1e41ff-7b05-4940-94a0-ed1d9a21d6e8",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C39",
+      "claim": "Quantitative RT-PCR indicated strongly reduced CYP734A50 expression in the long homostyles compared to S-morphs of P. vulgaris.",
+      "claim_type": "EXPLICIT",
+      "source": "However, quantitative RT-PCR on RNA from styles of the three morphs indicated strongly reduced CYP734A50 expression in the long homostyles compared to S-morphs (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "06f53c12-2a2e-4233-8c20-35d43a95fd10",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C40",
+      "claim": "A promoter mutation or epigenetic silencing of CYP734A50 is responsible for the long-style phenotype in naturally occurring P. vulgaris long homostyles.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that a promoter mutation or epigenetic silencing of CYP734A50 is responsible for the long-style phenotype, providing an alternative route to the formation of self-compatible long homostyles in nature (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the presence of the gene but reduced expression in long homostyles",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "ae33f92a-03ff-4db4-8dc6-649fda433b65",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C41",
+      "claim": "Exon 4 of CYP734A50 was deleted in long-homostylous mutants of P. vulgaris and P. x pruhoniciana.",
+      "claim_type": "EXPLICIT",
+      "source": "Exon 4 of CYP734A50 was deleted in both, and no full-length transcript could be detected in the P. vulgaris mutants (Figure 2B; Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genotyping and expression data shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "6bd5c8a9-def5-4fe6-aa78-604f6197c798",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C42",
+      "claim": "Two VIGS-treated P. forbesii S-morph individuals showed reduced CYP734A50 expression and formed longer styles than mock-treated or virus-treated S-morphs with unaffected CYP734A50 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Two treated S-morph individuals showed reduced CYP734A50 expression and formed longer styles than mock-treated or virus-treated S-morphs with unaffected CYP734A50 expression (Figure 2\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by VIGS experimental data shown in Figure 2\u2014figure supplement 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d66e7360-9548-4ef9-93eb-ca3ce99c0010",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C43",
+      "claim": "The CYP734A50 presence/absence polymorphism strictly cosegregates with the morph type in all heterostylous species sampled across the Primula phylogeny.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the CYP734A50 presence/absence polymorphism strictly cosegregates with the morph type in all heterostylous species sampled across the Primula phylogeny",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genotyping data across multiple species",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "758cad7c-6530-400d-abb0-258230ef64ea",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C44",
+      "claim": "CYP734A50 is absent or inactivated in all seven cases of derived long homostyly tested.",
+      "claim_type": "EXPLICIT",
+      "source": "and the gene is absent or inactivated in all seven cases of derived long homostyly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genotyping and expression data across multiple species",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d97deed9-defd-4fc4-badf-18b954840176",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C45",
+      "claim": "CYP734A50 is the G locus of the Primula heterostyly supergene that determines the style-length polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the VIGS results, this strongly supports the conclusion that CYP734A50 is the G locus of the Primula heterostyly supergene that determines the style-length polymorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of genetic, expression, and functional evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d1da827f-a165-4389-9dbc-ee97925743a8",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C46",
+      "claim": "Castasterone was present in L-morph styles of P. vulgaris.",
+      "claim_type": "EXPLICIT",
+      "source": "While castasterone was present in L-morph styles, it was virtually undetectable in S-morph styles (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by brassinosteroid measurement data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "85779ae8-083a-4b9b-97e5-82612a989636",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C47",
+      "claim": "Castasterone was virtually undetectable in S-morph styles of P. vulgaris.",
+      "claim_type": "EXPLICIT",
+      "source": "While castasterone was present in L-morph styles, it was virtually undetectable in S-morph styles (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by brassinosteroid measurement data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "fea1f424-5b3c-4176-b61c-e9501de55dd7",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C48",
+      "claim": "Brassinolide was undetectable in styles of either morph of P. vulgaris.",
+      "claim_type": "EXPLICIT",
+      "source": "brassinolide was undetectable in styles of either morph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brassinosteroid measurement data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "0fd5c6a0-8f48-4d9d-a12a-7e04421663f8",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C49",
+      "claim": "Brassinolide treatment caused S-morph P. vulgaris and P. forbesii to develop significantly longer styles in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "When treating developing P. vulgaris and P. forbesii flowers with brassinolide, treated S-morphs developed significantly longer styles in a concentration-dependent manner",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brassinolide treatment experimental data shown in Figure 3B,C and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "53f59084-fc7b-4440-9087-42b539af0095",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C50",
+      "claim": "Styles of L-morph plants did not show a consistent response to brassinolide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "by contrast, styles of L-morph plants did not show a consistent response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brassinolide treatment experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "f8446693-d499-4ad3-8616-372ec1917d7b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C51",
+      "claim": "Corolla-tubes in either morph did not show a consistent response to brassinolide treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "as did corolla-tubes in either morph",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by brassinolide treatment experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "7cf4d1ec-f27a-4b3e-a478-15fac7e954f3",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C52",
+      "claim": "Exogenous brassinolide treatment specifically enhances growth of S-morph styles.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that exogenous brassinolide treatment specifically enhances growth of S-morph styles (Figure 3B,C; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from differential response to brassinolide treatment between morphs and organs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "68f878fc-404d-4454-9d90-d122d9b72e09",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C53",
+      "claim": "The effect of brassinolide treatment on S-morph style length was entirely due to increased cell elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was entirely due to increased cell elongation after brassinolide treatment (Figure 3D; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell length measurement data shown in Figure 3D and Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "4afb7037-a7b2-4856-93da-3e1af75ea028",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C54",
+      "claim": "P. veris and P. forbesii genome and transcriptome sequences identified a closely related CYP734A50 paralogue, CYP734A51, in both morphs.",
+      "claim_type": "EXPLICIT",
+      "source": "P. veris and P. forbesii genome and transcriptome sequences identified a closely related CYP734A50 paralogue, CYP734A51, in both morphs (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome and transcriptome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "a48c49b7-959f-4270-835e-2d27ac5dd438",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C55",
+      "claim": "A molecular phylogeny of angiosperm CYP734A proteins indicated that CYP734A50 arose via a gene duplication specific to the Primula lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "A molecular phylogeny of angiosperm CYP734A proteins found in sequenced genomes indicated that CYP734A50 arose via a gene duplication specific to the Primula lineage (Figure 4; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by phylogenetic analysis shown in Figure 4 and Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "a9268238-d60e-478c-ae82-267180b86d87",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C56",
+      "claim": "The four introns of P. veris CYP734A50 were exceptionally long and contained multiple transposon-derived repetitive sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the four introns of P. veris CYP734A50 were exceptionally long and contained multiple transposon-derived repetitive sequences (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genomic sequence analysis shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "85152cae-f609-4615-9c20-a9d50bc44522",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C57",
+      "claim": "Comparing P. veris and P. forbesii CYP734A50 gave a Ka/Ks ratio of 0.56.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing P. veris and P. forbesii CYP734A50 gave a Ka/Ks ratio of 0.56",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by molecular evolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "98c3d66a-29db-4c24-9d54-21452c3f4dd6",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C58",
+      "claim": "Comparing P. veris and P. forbesii CYP734A51 gave a Ka/Ks ratio of 0.31.",
+      "claim_type": "EXPLICIT",
+      "source": "considerably higher than that of CYP734A51 at 0.31.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by molecular evolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "ba1432ba-f285-40db-bf47-219a8f80b61d",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C59",
+      "claim": "The difference in Ka/Ks ratio between CYP734A50 and CYP734A51 was entirely due to a higher rate of non-synonymous substitutions for CYP734A50.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference was entirely due to a higher rate of non-synonymous substitutions for CYP734A50 (p<0.01), while the rate of synonymous substitutions was indistinguishable (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by molecular evolution analysis shown in Figure 4\u2014source data 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "934a78df-c115-4c4c-a6a0-4212ae55f02d",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C60",
+      "claim": "Tajima's relative rate test indicated that CYP734A50 had accumulated significantly more amino-acid exchanges than CYP734A51 since their duplication.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Tajima's relative rate test indicated that CYP734A50 had accumulated significantly more amino-acid exchanges than CYP734A51 since their duplication (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Tajima's relative rate test shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "f16e3977-e002-4e48-911e-422a87fe89f1",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C61",
+      "claim": "No evidence for positive selection was found for the CYP734A50 branches based on likelihood ratio test 2.",
+      "claim_type": "EXPLICIT",
+      "source": "No evidence for positive selection was found for the CYP734A50 branches or the branch separating the two CYP734A50 genes from their CYP734A51 paralogues based on likelihood ratio test 2 (Figure 4; Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by branch-site test results shown in Figure 4 and Figure 4\u2014source data 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "9325034c-60d6-47be-8c84-32e3a0615308",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C62",
+      "claim": "Relaxed constraints were supported for the PfoCYP734A50 branch by test 1.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, relaxed constraints were supported for the PfoCYP734A50 branch by test 1 (orange branch in Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by branch-site test results shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e1bf0d12-b6ab-4348-a6c4-c6b8280ac71d",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C63",
+      "claim": "The faster rate of molecular evolution of CYP734A50 proteins is due to a reduced efficacy of purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "While rigorously ruling out positive selection would likely require sequences of the paralogues from more Primula species, based on the above results we favour the explanation that the faster rate of molecular evolution of CYP734A50 proteins is due to a reduced efficacy of purifying selection as predicted by theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from molecular evolution analyses and theoretical predictions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "dab5dc93-7266-45d0-8be2-68b490fede3a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C64",
+      "claim": "CYP734A50 expression in S-morph styles causes brassinosteroid degradation, limiting cell expansion and style elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our combined evidence indicates that CYP734A50 represents the G locus in the Primula heterostyly supergene, whose expression in S-morph styles causes brassinosteroid degradation, limiting cell expansion and style elongation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from multiple lines of genetic, expression, biochemical, and functional evidence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "1af179a7-5d09-4c0e-a88b-95fe08b46c32",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C65",
+      "claim": "CYP734A50 arose via a lineage-specific gene duplication and presumably gain of style-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily, CYP734A50 arose via a lineage-specific gene duplication and presumably gain of style-specific expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from phylogenetic analysis and expression data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "5e1a3ff6-70bd-4773-99d8-c35cf715cb4c",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C66",
+      "claim": "Two main models have been proposed to explain the evolutionary origin of distyly.",
+      "claim_type": "EXPLICIT",
+      "source": "Two main models have been proposed to explain the evolutionary origin of distyly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of existing theoretical models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "1a99c350-4ff3-4003-9eae-1440c7dfcddc",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C67",
+      "claim": "Both models postulate that the first morphological change was the reduction of style length by a dominant mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "While they differ in the sequence of events, assuming either that morphological features evolved first (Lloyd and Webb, 1992) or that intra-morph incompatibility arose first (Charlesworth and Charlesworth, 1979), they both postulate that the first morphological change was the reduction of style length by a dominant mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lloyd and Webb 1992 and Charlesworth and Charlesworth 1979",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "4c932c23-acc8-46e9-aa13-d8f1fa846b21",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C68",
+      "claim": "The proposed duplication and gain of style-specific expression of CYP734A50 in the ancestor of the Primulaceae likely represents the dominant style-shortening mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed duplication and gain of style-specific expression of CYP734A50 in the ancestor of the Primulaceae likely represents this dominant style-shortening mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the genetic and evolutionary evidence presented",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "1f7bc81b-552c-4fc2-afe9-56df528993a4",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C69",
+      "claim": "CYP734A50 is a rare example of an identified causal locus in a supergene underlying an adaptive polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, CYP734A50 is a rare example of an identified causal locus in a supergene underlying an adaptive polymorphism (Schwander et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schwander et al. 2014",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "3fff3b1f-8f9b-4e30-a542-593761a8d805",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C70",
+      "claim": "The identification of CYP734A50 opens the way for understanding the evolutionary origin of the Primula S-locus as an iconic case of a complex supergene.",
+      "claim_type": "EXPLICIT",
+      "source": "that opens the way for understanding the evolutionary origin of the Primula S-locus as an iconic case of a complex supergene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of the significance of the findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "bf9d15a6-060c-43de-b0d4-a8997d3250fb",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C71",
+      "claim": "The divergence time between P. veris and P. forbesii is approximately 20-25 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this for CYP734A50, we sequenced style transcriptomes of the distantly related P. forbesii S- and L-morphs (divergence time P. veris \u2013 P. forbesii ~20\u201325 Mya [de Vos et al., 2014]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to de Vos et al. 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "f378cbba-c6ea-45d4-89d9-5b3a75dfd3b2",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C72",
+      "claim": "Classic models predict that long homostyles originate via recombination in the S locus affecting both the G and the linked female-compatibility locus, hence they are self-compatible.",
+      "claim_type": "EXPLICIT",
+      "source": "Classic models predict that long homostyles originate via recombination in the S locus affecting both the G and the linked female-compatibility locus, hence they are self-compatible (Barrett, 1992; Lewis and Jones, 1992)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barrett 1992 and Lewis and Jones 1992",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "b16709ca-edab-41c8-8bd5-da6b1b9115a1",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C73",
+      "claim": "In self-incompatible long homostyles only the G locus should be affected by mutation or recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "by contrast, in self-incompatible long homostyles only the G locus should be affected by mutation or recombination (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from genetic models of heterostyly",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "64d38e80-0c00-4984-9c73-0e8bbf2efdf0",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C74",
+      "claim": "Natural P. vulgaris populations including long-homostyles occur in two regions in southern England.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural P. vulgaris populations including long-homostyles occur in two regions in southern England (Crosby, 1940, 1949) (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Crosby 1940 and 1949, and Figure 2\u2014figure supplement 4",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "63302149-b91c-4513-9402-3cedfeb7ec97",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C75",
+      "claim": "When the P. veris CYP734A50 gene was overexpressed in tobacco, leaf and stem growth were not reduced as seen for other CYP734A family members.",
+      "claim_type": "EXPLICIT",
+      "source": "When the P. veris gene was overexpressed in tobacco, leaf and stem growth were not reduced as seen for other CYP734A family members (Ohnishi et al., 2006; Thornton et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by overexpression experiment and citations to Ohnishi et al. 2006 and Thornton et al. 2011",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "ed3b0e4b-424f-4302-ac10-f87bfc411b1b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C76",
+      "claim": "The lack of growth reduction when P. veris CYP734A50 is overexpressed in tobacco likely reflects the considerable sequence divergence of the P. veris CYP734A50 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "likely reflecting the considerable sequence divergence of the P. veris CYP734A50 protein (see below)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the overexpression result and sequence divergence data",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "37570a07-3467-4631-984f-2996fa3c2e0d",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C77",
+      "claim": "The failure of P. veris CYP734A50 to function in tobacco mirrors the failure of certain mouse SRY alleles to induce correct male development in a different genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "this mirrors the failure of certain mouse SRY alleles to induce correct male development in a different genetic background (Albrecht et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Albrecht et al. 2003",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "830473ce-55f4-4056-8af9-efcee4661f80",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C78",
+      "claim": "A causal heterostyly gene present on only one of the two homologous chromosomes in a non-recombining region should be subject to reduced efficacy of selection and stronger drift.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the male sex-determining gene SRY in mammals (O'Neill and O'Neill, 1999; Tucker and Lundrigan, 1995), a causal heterostyly gene present on only one of the two homologous chromosomes in a non-recombining region should be subject to two opposing effects. The effective population size for such a gene is approximately one fourth that of unlinked diploid genes, resulting in reduced efficacy of selection and stronger drift, including the accumulation of repetitive elements (Uyenoyama, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to O'Neill and O'Neill 1999, Tucker and Lundrigan 1995, and Uyenoyama 2005",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "2fd2c98e-fb5a-4343-9ee4-457c744fc0dd",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "claim_id": "C79",
+      "claim": "Purifying selection should maintain the function of a causal heterostyly gene in a non-recombining region.",
+      "claim_type": "EXPLICIT",
+      "source": "at the same time, purifying selection should maintain the function of the gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on theoretical predictions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CYP734A50, a putative brassinosteroid-degrading enzyme, is specifically expressed in S-morph styles and is present only on the S-morph haplotype in strict linkage to the dominant G allele in P. veris and P. vulgaris.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C21 provide converging evidence from RNA-seq (C14), RT-PCR (C15), genotyping of large sample sizes (C16-C18), and genome sequencing (C19-C20) that CYP734A50 is S-morph specific and hemizygous. The multiple independent lines of evidence across different species and methodologies strongly support this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "311fd636-a6aa-4879-98f1-cdd63c74a07a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The CYP734A50 presence/absence polymorphism has been maintained as a trans-specific polymorphism across divergent Primula species for over 20 million years, indicating strong balancing selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 demonstrate that CYP734A50 segregates with morph type in P. forbesii (C24-C27), which diverged from P. veris ~20-25 Mya (C71). The maintenance of this polymorphism across such evolutionary time (C28) strongly supports balancing selection (C29), consistent with theoretical predictions for a causal heterostyly locus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "586660e2-78e8-48fb-a85e-806912572d77",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CYP734A50 presence/absence strictly cosegregates with morph type across all heterostylous Primula species tested and is absent or inactivated in all seven cases of derived long homostyly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C37 and C43-C44 provide extensive genotyping data across multiple Primula species in different sections (Aleuritia and Primula), showing perfect cosegregation with morph type in heterostylous species and absence in homostylous species. The consistency across independent evolutionary origins of homostyly strongly supports CYP734A50 as the G locus.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "91f1c865-0bdd-4e42-8936-b9e1be835f4b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Naturally occurring P. vulgaris long homostyles from England contain the CYP734A50 locus but show strongly reduced expression, suggesting promoter mutation or epigenetic silencing as an alternative mechanism for long-style formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 demonstrate an unexpected finding where the gene is present but not expressed (C38-C39), leading to the inference of regulatory changes (C40). The qRT-PCR data (C39) directly supports reduced expression, making the inference of promoter mutation or epigenetic silencing reasonable, though the specific mechanism remains to be determined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "952e91d1-1463-42a6-9bdc-bda64648ce11",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Long-homostylous mutants of P. vulgaris and P. x pruhoniciana carry a deletion of exon 4 in CYP734A50, eliminating full-length transcript production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by both genotyping showing exon 4 deletion and expression analysis showing absence of full-length transcript (Figure 2B and Figure 2\u2014figure supplement 5). This provides direct genetic evidence linking CYP734A50 loss-of-function to long-style phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "dc6cc4fa-1595-4f14-b863-5765d1c37376",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "VIGS-mediated knockdown of CYP734A50 in P. forbesii S-morphs resulted in longer styles compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by experimental data showing that two VIGS-treated individuals with reduced CYP734A50 expression developed longer styles (Figure 2\u2014figure supplement 6). However, the sample size is small (n=2 responsive individuals) and the effect appears partial, which limits the strength of this functional evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "13c820fb-f1ea-40bb-829a-fb2e1093672b",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CYP734A50 is the G locus of the Primula heterostyly supergene that determines the style-length polymorphism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 integrates multiple lines of evidence: perfect cosegregation across species (C43), loss/inactivation in all homostyles (C44), VIGS functional data (C42), and biochemical evidence (C46-C53). While individual experiments have limitations (small VIGS sample, heterologous expression failure C75), the convergence of genetic, evolutionary, and biochemical evidence strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "9932c436-41ac-437c-afd9-e502caef4b7e",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Castasterone is present in L-morph styles but virtually undetectable in S-morph styles of P. vulgaris, while brassinolide is undetectable in either morph.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 are supported by brassinosteroid measurement data (Figure 3A). The differential accumulation of castasterone between morphs is consistent with CYP734A50 functioning as a brassinosteroid-degrading enzyme in S-morphs. The absence of brassinolide in both morphs suggests castasterone is the relevant brassinosteroid in Primula styles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Exogenous brassinolide treatment specifically enhances S-morph style growth in a concentration-dependent manner through increased cell elongation, while L-morph styles and corolla tubes show no consistent response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are supported by brassinolide treatment experiments (Figure 3B-D, Figure 3\u2014figure supplement 1) showing significant, concentration-dependent style elongation in S-morphs but not L-morphs or other organs. Cell length measurements (C53) demonstrate the mechanism is cell elongation. Statistical analysis with appropriate corrections was performed, strengthening the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "e99a9c61-b111-463e-8c7f-aa391058bdb3",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CYP734A50 arose via a gene duplication specific to the Primula lineage, with a closely related paralogue CYP734A51 present in both morphs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by genome/transcriptome sequencing identifying CYP734A51 (C54) and phylogenetic analysis (C55, Figure 4). The phylogeny clearly shows CYP734A50 and CYP734A51 as sister genes within a Primula-specific clade, supporting a lineage-specific duplication event.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "3880262b-80d0-43c1-93a6-093f3702bf4f",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CYP734A50 shows an accelerated rate of molecular evolution compared to its paralogue CYP734A51, likely due to reduced efficacy of purifying selection rather than positive selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 provide multiple lines of molecular evolution evidence: exceptionally long introns with repetitive elements (C56), elevated Ka/Ks ratio (C57-C59), Tajima's relative rate test (C60), and branch-site tests showing relaxed constraints but not positive selection (C61-C62). The conclusion of reduced purifying selection (C63) is appropriately cautious, noting that more species would be needed to rigorously rule out positive selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "8aa3239e-e5e2-4e73-8273-1c02ec89b824",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CYP734A50 expression in S-morph styles causes brassinosteroid degradation, limiting cell expansion and style elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 synthesizes the mechanistic model from genetic (C13-C45), biochemical (C46-C48), and functional (C49-C53) evidence. The model is well-supported by the convergence of multiple independent lines of evidence showing: S-morph-specific expression, reduced brassinosteroid levels in S-morphs, and rescue of S-morph style length by exogenous brassinosteroid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "d167fcbd-30b8-4414-a907-8e60ce5ba86a",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CYP734A50 arose via lineage-specific gene duplication and gain of style-specific expression, likely representing the dominant style-shortening mutation predicted by evolutionary models of distyly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65 and C68 integrate phylogenetic evidence (C55) with expression data (C14-C15) and evolutionary theory (C66-C67). The inference that this duplication represents the initial dominant mutation is reasonable given the data, though C68 appropriately uses cautious language ('likely represents') as direct evidence for the ancestral state is not available.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "0b2758fb-3ef9-48bb-9248-3628df3ca400",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Overexpression of P. veris CYP734A50 in tobacco did not reduce growth as seen for other CYP734A family members, likely reflecting sequence divergence and context-dependent function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C75-C77 report a negative result from heterologous expression. While C75 is supported by the experimental data, the interpretation (C76-C77) is speculative. The failure could reflect sequence divergence, but could also indicate technical issues, improper expression, or other factors. This negative result does not undermine the main conclusions but limits direct functional validation in a heterologous system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "6cf95eeb-ca55-478d-98ed-8e680140ac69",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior to this study, heterostyly in Primula was known to be controlled by the S-locus supergene, but no causal distyly gene had been isolated and no mechanistic explanation for style length dimorphism was available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C12 accurately summarize the state of knowledge prior to this study, supported by appropriate citations. These claims establish the context and significance of the work, correctly identifying the gap in knowledge that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "b14303c3-a411-4077-8425-0fdb7f2cf108",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study's findings are interpreted within established evolutionary and genetic frameworks for heterostyly and supergene evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C66-C67, C71-C74, and C78-C79 accurately cite and apply established theoretical frameworks and prior empirical findings. The citations appear appropriate and the interpretations are consistent with the cited work. These claims provide important context for interpreting the significance of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    },
+    {
+      "id": "296bd34e-0be9-4d5e-8e27-4208007195dc",
+      "content_id": "131c6d5c-3000-4fb8-804f-ca739490e017",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "CYP734A50 represents a rare example of an identified causal locus in a supergene underlying an adaptive polymorphism, opening the way for understanding the evolutionary origin of the Primula S-locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 appropriately contextualize the significance of the findings. C69 is supported by citation to Schwander et al. 2014 on the rarity of identified supergene loci. C70 is a reasonable statement of future research directions enabled by this work, though it is somewhat speculative about what can be achieved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:38:50.882900Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d4819aed-67c9-42b5-98f9-167462d5c5f1",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "7282075e-3e13-4eaf-b05f-58506d91c297",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "02c5c94a-aea1-43ca-8750-1960f000e0c1",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "777714d7-41c7-42ce-9f5e-9a3e403349c4",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "b49f69ac-ed3c-4920-8849-603ff696e50d",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "91fac98d-0961-489e-bcb1-6ce2d96207ca",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "cff034ec-d204-4912-9db5-d86eca7d8182",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "6df0c961-8df1-4349-88ee-d904869ce9d2",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "85ebc1a8-3ac5-4fb3-810b-f8f2a40b1c46",
+      "result_id": "f01c04e6-1e72-4135-8b9c-277958e4a7bc"
+    },
+    {
+      "claim_id": "944ebdfd-b678-4295-878e-5054ff78d157",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "4df44d5e-9917-4e20-8221-f6a9788e78a7",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "c354c937-5872-4dfe-8643-802898867ba6",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "a053e941-3e98-4d0e-ba25-257305a41c47",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "dc74c864-0a44-4195-a7fe-e6c53abc115b",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "e1d555a8-a4f1-480d-84d3-5e2e2f201adf",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "95203ad1-8d16-4fac-bce7-0ae2df66a4d0",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "e166b7cc-5725-4c65-b175-1b7c1490644c",
+      "result_id": "311fd636-a6aa-4879-98f1-cdd63c74a07a"
+    },
+    {
+      "claim_id": "1e76f86b-755b-431b-8353-9c31199b02e9",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "2743adc4-c555-4de6-b299-558ef77b2ef2",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "561c64a3-d29f-4a57-977e-487fad28f01a",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "a9784c38-4f19-43dd-8f7f-51b966024c2c",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "7c0c1421-e734-4994-8d17-b8e7b31edeb0",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "109d2ad0-2b34-40d6-a580-4e464934230a",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "57f56f2a-9b30-4988-845c-ab505c05ed78",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "aac7711d-fb2f-4624-a52c-07ecb179dad9",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "d66e7360-9548-4ef9-93eb-ca3ce99c0010",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "758cad7c-6530-400d-abb0-258230ef64ea",
+      "result_id": "586660e2-78e8-48fb-a85e-806912572d77"
+    },
+    {
+      "claim_id": "0b5be37c-e86f-4334-84af-c77bc3fd5c24",
+      "result_id": "91f1c865-0bdd-4e42-8936-b9e1be835f4b"
+    },
+    {
+      "claim_id": "fc1e41ff-7b05-4940-94a0-ed1d9a21d6e8",
+      "result_id": "91f1c865-0bdd-4e42-8936-b9e1be835f4b"
+    },
+    {
+      "claim_id": "06f53c12-2a2e-4233-8c20-35d43a95fd10",
+      "result_id": "91f1c865-0bdd-4e42-8936-b9e1be835f4b"
+    },
+    {
+      "claim_id": "ae33f92a-03ff-4db4-8dc6-649fda433b65",
+      "result_id": "952e91d1-1463-42a6-9bdc-bda64648ce11"
+    },
+    {
+      "claim_id": "6bd5c8a9-def5-4fe6-aa78-604f6197c798",
+      "result_id": "dc6cc4fa-1595-4f14-b863-5765d1c37376"
+    },
+    {
+      "claim_id": "d97deed9-defd-4fc4-badf-18b954840176",
+      "result_id": "13c820fb-f1ea-40bb-829a-fb2e1093672b"
+    },
+    {
+      "claim_id": "d1da827f-a165-4389-9dbc-ee97925743a8",
+      "result_id": "9932c436-41ac-437c-afd9-e502caef4b7e"
+    },
+    {
+      "claim_id": "85779ae8-083a-4b9b-97e5-82612a989636",
+      "result_id": "9932c436-41ac-437c-afd9-e502caef4b7e"
+    },
+    {
+      "claim_id": "fea1f424-5b3c-4176-b61c-e9501de55dd7",
+      "result_id": "9932c436-41ac-437c-afd9-e502caef4b7e"
+    },
+    {
+      "claim_id": "0fd5c6a0-8f48-4d9d-a12a-7e04421663f8",
+      "result_id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc"
+    },
+    {
+      "claim_id": "53f59084-fc7b-4440-9087-42b539af0095",
+      "result_id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc"
+    },
+    {
+      "claim_id": "f8446693-d499-4ad3-8616-372ec1917d7b",
+      "result_id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc"
+    },
+    {
+      "claim_id": "7cf4d1ec-f27a-4b3e-a478-15fac7e954f3",
+      "result_id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc"
+    },
+    {
+      "claim_id": "68f878fc-404d-4454-9d90-d122d9b72e09",
+      "result_id": "f2798945-c8ca-4bc5-b287-e6cabdeeabdc"
+    },
+    {
+      "claim_id": "4afb7037-a7b2-4856-93da-3e1af75ea028",
+      "result_id": "e99a9c61-b111-463e-8c7f-aa391058bdb3"
+    },
+    {
+      "claim_id": "a48c49b7-959f-4270-835e-2d27ac5dd438",
+      "result_id": "e99a9c61-b111-463e-8c7f-aa391058bdb3"
+    },
+    {
+      "claim_id": "a9268238-d60e-478c-ae82-267180b86d87",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "85152cae-f609-4615-9c20-a9d50bc44522",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "98c3d66a-29db-4c24-9d54-21452c3f4dd6",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "ba1432ba-f285-40db-bf47-219a8f80b61d",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "934a78df-c115-4c4c-a6a0-4212ae55f02d",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "f16e3977-e002-4e48-911e-422a87fe89f1",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "9325034c-60d6-47be-8c84-32e3a0615308",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "e1bf0d12-b6ab-4348-a6c4-c6b8280ac71d",
+      "result_id": "3880262b-80d0-43c1-93a6-093f3702bf4f"
+    },
+    {
+      "claim_id": "dab5dc93-7266-45d0-8be2-68b490fede3a",
+      "result_id": "8aa3239e-e5e2-4e73-8273-1c02ec89b824"
+    },
+    {
+      "claim_id": "1af179a7-5d09-4c0e-a88b-95fe08b46c32",
+      "result_id": "d167fcbd-30b8-4414-a907-8e60ce5ba86a"
+    },
+    {
+      "claim_id": "4c932c23-acc8-46e9-aa13-d8f1fa846b21",
+      "result_id": "d167fcbd-30b8-4414-a907-8e60ce5ba86a"
+    },
+    {
+      "claim_id": "63302149-b91c-4513-9402-3cedfeb7ec97",
+      "result_id": "0b2758fb-3ef9-48bb-9248-3628df3ca400"
+    },
+    {
+      "claim_id": "ed3b0e4b-424f-4302-ac10-f87bfc411b1b",
+      "result_id": "0b2758fb-3ef9-48bb-9248-3628df3ca400"
+    },
+    {
+      "claim_id": "37570a07-3467-4631-984f-2996fa3c2e0d",
+      "result_id": "0b2758fb-3ef9-48bb-9248-3628df3ca400"
+    },
+    {
+      "claim_id": "cbff5cec-9042-47fb-adcf-14bee75d57af",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "29f8ce4c-beaa-4472-970c-8101d827923b",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "18ed6a30-c5f1-4fe6-ad06-e5daf5032c5c",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "9e0541ac-e177-4c27-a36b-3b3bee52907a",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "e11ac77e-7c19-4f28-be8c-22dac981e8b6",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "d311cadb-c025-4f61-8ea3-25a378028e97",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "55506a38-cbe0-4d6e-97ef-77f7df55b544",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "450bb9b5-3254-475f-8223-b4b94777f738",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "e27c5ad1-1925-474e-a8f9-1e76f4698a32",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "41df96c5-8e14-460d-ad30-adb6693f1016",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "fbe3ef0b-4e84-4b50-a630-50b1d90e7d1f",
+      "result_id": "6cf95eeb-ca55-478d-98ed-8e680140ac69"
+    },
+    {
+      "claim_id": "944ebdfd-b678-4295-878e-5054ff78d157",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "5e1a3ff6-70bd-4773-99d8-c35cf715cb4c",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "1a99c350-4ff3-4003-9eae-1440c7dfcddc",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "bf9d15a6-060c-43de-b0d4-a8997d3250fb",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "f378cbba-c6ea-45d4-89d9-5b3a75dfd3b2",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "b16709ca-edab-41c8-8bd5-da6b1b9115a1",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "64d38e80-0c00-4984-9c73-0e8bbf2efdf0",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "830473ce-55f4-4056-8af9-efcee4661f80",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "2fd2c98e-fb5a-4343-9ee4-457c744fc0dd",
+      "result_id": "b14303c3-a411-4077-8425-0fdb7f2cf108"
+    },
+    {
+      "claim_id": "1f7bc81b-552c-4fc2-afe9-56df528993a4",
+      "result_id": "296bd34e-0be9-4d5e-8e27-4208007195dc"
+    },
+    {
+      "claim_id": "3fff3b1f-8f9b-4e30-a542-593761a8d805",
+      "result_id": "296bd34e-0be9-4d5e-8e27-4208007195dc"
+    }
+  ],
+  "comparisons": []
+}

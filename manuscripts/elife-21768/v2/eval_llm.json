@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript provides background on dynein, dynactin, EB proteins, BICD2, and LIS1, establishing their known roles in cargo transport, microtubule organization, and plus-end tracking based on prior literature. These claims summarize established knowledge about the dynein motor system and its regulatory proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C28 are well-supported by extensive citations to prior literature and represent established knowledge in the field. These background claims provide appropriate context for the experimental work and accurately represent the current understanding of dynein function and regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "LIS1 strongly enhances dynein tracking at growing microtubule plus ends in the presence of EB1 and dynactin by increasing both the frequency and duration of tracking events (mean duration increased from ~4s to ~14s). LIS1 does not increase initial landing frequency at plus ends but prolongs association after recruitment. Notably, LIS1 specifically increases persistence at plus ends but not on the lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 are well-supported by quantitative data from Figure 2 showing statistically significant increases in tracking frequency and duration with LIS1. The site-specific effect (plus end vs lattice) is demonstrated with appropriate controls. Co-localization experiments confirm LIS1 presence on tracking complexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Human LIS1 does not increase the dwell time of individual dynein complexes on stabilized microtubule lattices at physiological concentrations (20-fold molar excess), contrasting with yeast LIS1 effects. However, at very high concentrations (300-fold excess), LIS1 increases dynein's landing rate on microtubules approximately 3-fold without affecting dwell time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are supported by quantitative data from Figure 3 showing no effect on dwell time at 20x or 300x LIS1 concentrations, but increased landing rate at 300x. The comparison with yeast studies is appropriately cited. This represents an important species-specific difference in LIS1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "EB1 biases the initiation of minus end-directed dynein-dynactin-BICD2N transport to microtubule plus ends (6-fold preference), but LIS1 does not alter this targeting. LIS1 enhances plus-end tracking frequency and duration in the presence of BICD2N but is not required for targeting. CLIP-170 does not affect transport initiation or tracking in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 are well-supported by quantitative data from Figure 4 and supplements showing the 6-fold bias with EB1 and lack of effect from LIS1 or CLIP-170 on targeting. The essential role of dynactin is confirmed by negative controls. Statistical tests support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Plus-end tracking dynein complexes rarely convert to minus end-directed transport (only 10% of transport events). Instead, 90% of minus end-directed movements initiate immediately upon engagement with the plus end. Approximately 40% of tracking complexes contain BICD2N but are not capable of minus end-directed movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by quantitative analysis in Figure 4C showing only 10% of transport events arise from tracking complexes. Co-localization data (Figure 4D,E) confirm BICD2N presence on ~40% of tracking complexes. The conclusion that tracking complexes represent non-motile populations is logically derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "LIS1 increases the proportion of dynein complexes undergoing minus end-directed motion from 45% to 70% in the presence of dynactin and BICD2N. At reduced BICD2N concentrations, LIS1 rescues transport that would otherwise not occur. LIS1 promotes assembly of the dynein-dynactin-BICD2N complex, as evidenced by increased BICD2N-dynein co-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are well-supported by quantitative data from Figure 5 showing increased motile fraction and rescue at low BICD2N concentrations. The co-localization data (Figure 5B,D) directly demonstrate increased complex assembly. The conclusion about LIS1 promoting complex formation is appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C119"
+    ],
+    "result": "LIS1 markedly increases the velocity of minus end-directed dynein-dynactin-BICD2N complexes (60-175% increase depending on conditions) without affecting run length. This velocity increase is not due to motor multimerization, as fluorescence intensity analysis shows no correlation between dynein copy number and velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 and C119 are supported by extensive quantitative data from Figure 6 showing statistically significant velocity increases across multiple conditions. The fluorescence intensity analysis (Figure 6E and supplement 2) appropriately rules out multimerization as the mechanism. Effect sizes are substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "LIS1 exhibits context-dependent effects on dynein: it inhibits microtubule gliding by surface-immobilized human dynein in a dose-dependent manner (similar to effects on yeast, porcine, and bovine dynein), but stimulates velocity of dynein-dynactin-BICD2N complexes. LIS1 does not directly bind microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C95 are supported by gliding assay data (Figure 6F, supplements, Videos 1-2) showing dose-dependent inhibition without affecting dynein surface density. The contrast with processive complex behavior is well-documented. This represents a key finding revealing context-dependent LIS1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "TMR-LIS1 co-transports with the vast majority of processive dynein-dynactin-BICD2N complexes. Minus end-directed complexes with LIS1 move significantly faster than those without LIS1 in the same chambers, demonstrating that LIS1 regulates velocity by direct association with transport complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are well-supported by co-localization data (Figure 7A,B) and velocity comparisons (Figure 7C) showing significant differences between LIS1-positive and LIS1-negative complexes within the same experiments. This provides direct evidence for LIS1's mechanism of velocity regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Dynein can track shrinking microtubule plus ends in a dynactin-dependent but EB1-independent manner. LIS1 significantly increases the frequency of dynein remaining associated with shrinking ends in several contexts. This tracking behavior is ATP hydrolysis-independent, as demonstrated by vanadate experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 are supported by quantitative data from Figure 8 showing tracking on shrinking ends and LIS1's context-dependent enhancement. The EB1-independence is demonstrated by appropriate controls (Figure 8C). Vanadate experiments (Figure 8D) appropriately test ATP-dependence with proper controls for transport inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The study demonstrates that LIS1 promotes dynactin-dependent tracking of dynein on both growing and shrinking plus ends, increases the frequency and velocity of processive dynein-dynactin-cargo adaptor movements, contrasting with its inhibitory effects on isolated dynein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 represent the main conclusions of the study and are well-supported by the comprehensive experimental data presented in Figures 2-8. The contrast between LIS1's effects in different contexts is a key finding substantiated by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors speculate about potential in vivo implications of their findings, including that persistent plus-end tracking may be intrinsic to the EB1/dynactin/dynein system, that LIS1 may contribute to high in vivo cargo velocities, and that additional factors may be required for converting tracking events to transport in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C121 represent speculative interpretations and potential in vivo implications that extend beyond the in vitro data. While these are reasonable hypotheses based on the findings, they require additional experimental validation in cellular contexts and therefore cannot be classified as supported by the current study.",
+    "result_type": "MINOR"
+  }
+]

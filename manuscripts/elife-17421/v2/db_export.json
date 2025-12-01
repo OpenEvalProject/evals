@@ -1,0 +1,1240 @@
+{
+  "submission": {
+    "id": "83facced-0d4c-48f6-921c-184c32f90032",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:19:45.782767Z",
+    "updated_at": "2025-11-30T20:19:45.782767Z"
+  },
+  "content": [
+    {
+      "id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "submission_id": "83facced-0d4c-48f6-921c-184c32f90032",
+      "content_type": "manuscript",
+      "content_text": "# Complementary mechanisms create direction selectivity in the fly\n\n## Authors\n\n- Juergen Haag<sup>1</sup>\n- Alexander Arenz<sup>1</sup>\n- Etienne Serbe<sup>1</sup>\n- Fabrizio Gabbiani<sup>2</sup>\n- Alexander Borst<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Max Planck Institute of Neurobiology Martinsried Germany\n2. Baylor College of Medicine Houston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow neurons become sensitive to the direction of visual motion represents a classic example of neural computation. Two alternative mechanisms have been discussed in the literature so far: preferred direction enhancement, by which responses are amplified when stimuli move along the preferred direction of the cell, and null direction suppression, where one signal inhibits the response to the subsequent one when stimuli move along the opposite, i.e. null direction. Along the processing chain in the Drosophila optic lobe, directional responses first appear in T4 and T5 cells. Visually stimulating sequences of individual columns in the optic lobe with a telescope while recording from single T4 neurons, we find both mechanisms at work implemented in different sub-regions of the receptive field. This finding explains the high degree of directional selectivity found already in the fly\u2019s primary motion-sensing neurons and marks an important step in our understanding of elementary motion detection.\n\n## Introduction\n\nFlies see the world through a hexagonal array of facets each equipped with its own small lens focusing the light onto 8 photoreceptors. Photoreceptors send their axons into the optic lobe, which consists of four consecutive layers of neuropil called lamina, medulla, lobula and lobula plate (Figure 1a). Each neuropil layer is made up of retinotopically organized columns together containing roughly 100 different neurons per column (Fischbach and Dittrich, 1989). Within the optic lobe, visual motion information is extracted in parallel pathways encoding light increments (ON) and decrements (OFF) (Joesch et al., 2010; Eichner et al., 2011; Joesch et al., 2013). Both pathways bifurcate in the lamina and lead, via a set of specific medulla interneurons, onto the dendrites of T4 and T5 cells, respectively (Takemura et al., 2013; Shinomiya et al., 2014). Both T4 and T5 cells exist in 4 subgroups tuned to one of the four cardinal directions of motion and project into four layers of the lobula plate (Maisak et al., 2013) (Figure 1b). There, they form monosynaptic cholinergic excitatory connections with the dendrites of the\u00a0large-field lobula plate tangential cells (Mauss et al., 2014; Schnell et al., 2012)\u00a0as well as with lobula plate intrinsic neurons. These intrinsic neurons, in turn, inhibit tangential cells in the adjacent layer (Mauss et al., 2015). Since none of the neurons upstream from T4 and T5 respond to visual motion in a direction-selective way (Behnia et al., 2014; Strother et al., 2014; Meier et al., 2014; Ammer et al., 2015; Serbe et al., 2016),\u00a0T4 and T5 cells are the first neurons in the processing chain where directional information is represented explicitly (Maisak et al., 2013; Fisher et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig1-v2.jpg)\n\n**Figure 1.:** (a) Circuit diagram of the ON and the OFF pathway of fly motion vision. Directionally selective signals are carried via T4 and T5 cells to four layers of the lobula plate, where T4 and T5 cells with the same preferred direction converge on the dendrites of the tangential cells (yellow). Inhibition is conveyed via local interneurons LPi (red). From Borst and Helmstaedter, 2015. (b) Confocal image of T4 and T5 cells and their directional tuning. The light green bands indicate the dendrites of T4 and T5 cells. The presynaptic terminals of both T4 and T5 cells form four distinct layers within the lobula plate. The inset shows the result of two-photon calcium imaging, revealing four subgroups of T4 and T5 cells tuned to the four cardinal directions. Scale bar, 20 \u03bcm. From Borst and Helmstaedter, 2015. (c) Continuous (top) versus apparent motion (bottom), shown as x-t-plots where the luminance distribution is shown along one spatial (x) and the time axis (t). During continuous motion at constant velocity, a luminance profile is smoothly drifting along one direction, giving rise to a slanted bar in the x-t-plot. During apparent motion, the luminance profile is stable for a while and then jumps to a new position. (d)\u00a0Two mechanisms proposed to account for direction selectivity. In each model, the signal from one photoreceptor is delayed by a temporal filter (\u03c4) and fed, together with the direct signal from the neighboring photoreceptor, into a nonlinearity. In case of preferred direction enhancement (left), the delayed signal (E) enhances the direct signal (D), e.g. by a multiplication (E\u00a0x\u00a0D), in case of the null direction suppression (right), the delayed signal (S) suppresses the direct signal (D), e.g. by a division (D/S). (e) Immunostaining of a single T4 dendrite in layer 10 of the medulla (green) covering multiple columns (counterstained against bruchpilot, purple). (f) Setup for telescopic stimulation of single lamina columns. Antidromic illumination of the eye (left) results in parallel beams from the 6+2 photoreceptors in neighboring facets with identical optical axes. These are focused in the back focal plane of the objective projected onto a CMOS camera. In addition, an AMOLED display is coupled into the beam path to precisely stimulate single lamina columns. Lower left inset: The fly eye and the principle of neural superposition. Light rays parallel to each other shown in the same color activate different photoreceptors in neighboring ommatidia that converge onto a single column in the lamina (\u2018neuro-ommatidium\u2019). Lower right inset: Picture from the CMOS camera, showing the far field radiation pattern of the Drosophila eye. Dot stimuli can be precisely positioned such as to stimulate single lamina columns.\n\nTo investigate the mechanism leading to direction selectivity in T4 cells, we applied apparent motion stimuli where, instead of continuously moving (Figure 1c, top), a bar is abruptly stepped from one location to a neighboring one (Figure 1c, bottom). These stimuli lend themselves well to discriminate between preferred direction (\u2018PD\u2019) enhancement (Hassenstein and Reichardt, 1956) (Figure 1d, left) and null direction (\u2018ND\u2019) suppression (Barlow and Levick, 1965) (Figure 1d, right) as the response to the sequence can be compared with the sum of the responses to the luminance pulses given in isolation (\u2018linear expectation\u2019): in case of preferred direction enhancement, the response to the sequence along the preferred direction is larger than the linear sum of responses to the isolated pulses and identical if the sequence is along the null direction; In case of null direction suppression, the response to the sequence along the preferred direction is identical to the linear sum of responses to the isolated pulses and smaller if the sequence is along the null direction.\n\nThe columnar organization of the optic lobes stretches from the laminar cartridges through the medulla and into the lobula and lobula plate. Individual T4 and T5 neurons extend their dendrites across multiple columns (Figure 1e) and receive synaptic inputs from different medulla cell types located in different columns relative to the home columns of the T4 or T5 neuron and to each other (Takemura et al., 2013; Shinomiya et al.; 2014). To understand the particular contribution of those inputs it seemed necessary to precisely place the stimuli onto the columnar raster of the fly\u2019s optic lobe.\n\nThe structure of the optical system and of the neuronal wiring in flies obeys the neural superposition principle (Kirschfeld, 1967; Braitenberg, 1967). Those photoreceptors R1-6 from 6 neighboring ommatidia that share the same optical axis converge on the same lamina cartridge, thus forming an optical column that represents the unit of spatial resolution (\u2018neuro-ommatidium\u2019). To visually stimulate these neuro-ommatidia precisely and in isolation, stimulation must consist of parallel rays at angles along the optical axes of those photoreceptors and aligned to the columnar raster. For this, we adopted a telescopic stimulation device (Franceschini, 1975; Schuling et al., 1989) (Figure 1f). As the fly rhabdomeric photoreceptors work as light guides, the raster of optical columns can be visualized by shining light from within the head capsule (antidromic illumination) to align the raster of neuro-ommatidia to the stimulation locations on a micro-display with the\u00a0help of a CMOS camera.\n\n## Results\n\nAs a proof of principle, we first expressed the genetically encoded calcium indicator GCaMP6m (Chen et al., 2013)\u00a0in lamina cells L2, recorded from their terminals in the medulla by 2-photon microscopy (Denk et al., 1990)\u00a0and stimulated them with light spots of 1176 ms duration covering a single optical column at various positions. L2 cells responded maximally to stimuli at a certain column, with less than 30% response amplitude to stimuli positioned on surrounding columns, and negligible responses (<12%) to stimuli positioned on columns in the next outer ring (Figure 2a). The slight activation of neighboring columns results directly from the optics of the fly\u2019s eye, where the visual fields of single ommatidia have Gaussian sensitivity profiles with an acceptance angle roughly matching the inter-ommatidial separation (G\u00f6tz, 1965). These experiments illustrate the specificity of the telescopic stimulation to single lamina cartridges and thus optic lobe column with minimal cross-stimulation of neighboring columns at the physical limit of the fly optical system.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig2-v2.jpg)\n\n**Figure 2.:** Three example traces from a single terminal (top, stimulated ommatidium indicated in black) and mean responses (bottom) of L2 cells (a, n\u00a0=\u00a023 cells from six flies) and T4 cells (b, n\u00a0=\u00a010 cells from 10 flies) to flicker stimuli presented at 19 different columnar positions. The\u00a0responses of individual cells were averaged after alignment to the maximum and normalization and are shown in false color code (left) as well as in 3D bar plots (right). In addition, responses are presented as bar plots along the three axes (dashed lines) of the hexagonal array (mean \u00b1 SEM). D = dorsal, V = ventral, L = lateral, F = frontal, DL = dorso-lateral, VF = ventro-frontal, VL = ventro-lateral, DF = dorso-frontal.\n\nWe next used a driver line specific for those T4 and T5 cells sending their axons into layer 3 of the lobula plate that are hence sensitive to upward motion. We recorded from single T4 cells by selecting individual processes in layer three of the lobula plate and confirmed their preference for luminance increments. Repeating the above experiment with T4 cells, we again found maximal responses to the stimulus placed in a single column. Compared to L2, however, the receptive field was found to be larger, with about 50% amplitude to the stimuli onto the six surrounding columns, and roughly 25% to the next outer ring (Figure 2b). This indicates that T4 neurons pool excitatory synaptic input from more than one column, consistent with their morphology (Figure 1e) and expected from a motion detector that is required to integrate information from spatially offset input.\n\nIn order to discriminate between preferred direction enhancement and null direction suppression, we tested T4 cells with three light pulses of 472 ms duration positioned along the dorso-ventral axis of the eye (Figure 3a, left). T4 cells responded to the\u00a0individual pulses with different amplitudes, depending on the position of the stimulus (Figure 3a, \u2018Flicker\u2019; see also Figure 2b). When stimulated sequentially from ventral to dorsal (Figure 3a, \u2018Sequence\u2019, top middle), the cell responded more strongly (thick blue line) than expected from the sum of the responses to the individual stimuli (thin blue line). The opposite was observed when we stimulated the cell sequentially from dorsal to ventral (Figure 3a, \u2018Sequence\u2019, bottom middle): now the cell responded more weakly (thick red line) than expected from the sum of the responses to the individual stimuli (thin red line). We then calculated the nonlinear response component by subtracting the linear expectation from the actual response and found that both preferred direction enhancement (Figure 3a, \u2018Sequence\u2019, top right) and null direction suppression (Figure 3a, \u2018Sequence\u2019, bottom right) contributes to the directionally selective responses of T4 cells.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig3-v2.jpg)\n\n**Figure 3.:** (a) Response of a single T4 cell recorded in a single sweep to three-step apparent motion stimuli. The image shows the position of the three stimuli. Left: Responses to individual light pulses (\u2018Flicker\u2019) delivered at the three different positions. The responses are shifted according to the stimulus protocol used for the subsequent apparent motion stimuli. Middle: Responses of T4 to apparent motion stimuli in preferred and null direction (thick line = measured response, thin line = linear expectation, i.e. sum of responses to the single light pulses). Right: Nonlinear response component defined as the difference between measured response and linear expectation. The\u00a0responses are the mean obtained from n\u00a0=\u00a03 stimulus repetitions. Similar data were obtained in 12 experiments. (b) Dependence of the nonlinear two-step response component on the position within the receptive field of T4 cells. Left: Responses to individual light pulses at the four positions. Middle: Stimulus arrangement. Right: Nonlinear response component. Data represent the mean \u00b1 SEM (n\u00a0= 15 cells in 11 flies). (c) Responses to 2-step apparent motion stimuli as a function of the onset time delay (top: preferred direction, location \u22121 -> 0; bottom: null direction, location 2 -> 0). Data represent the mean \u00b1 SEM (upper: n = 13 cells from 8 flies; lower: n = 7 cells from 7 flies). (d) Average responses to a flicker stimulus of the central neuro-ommatidium (black), to a two-step (red) and a three-step (green) null-direction apparent motion sequence (mean \u00b1 SEM, n = 11 T4 cells from eight flies). (e) Mean responses of T4 cells to pulses presented to the central column and simultaneously to one of the 18 surrounding columns. Responses were averaged after alignment to the receptive field center, normalized to the flicker response to the central column and are shown in false color code and as bar plots along the three axes of the hexagonal array (mean \u00b1 SEM, n = 10 T4 cells from 8 flies). Abbreviations as in Figure 2.\n\nWe then asked whether these two mechanisms occupied separate or overlapping receptive fields. For that, we presented pulses in four neighboring columns along the dorso-ventral axis, individually (Figure 3b, left) as well as sequences of pairs in adjacent columns (Figure 3b, middle). Stepping the stimulus up and down between the uppermost columns, we observed only null direction suppression but no preferred direction enhancement (Figure 3b, right top). The opposite was true for stimuli at the two lower most locations: here, only preferred direction enhancement was observed, but no null direction suppression (Figure 3b, right bottom). For sequences between the two inner locations, both phenomena were visible (Figure 3b, right middle). We conclude that the different mechanisms are offset in their receptive fields: preferred direction enhancement is shifted towards the \u2018null-side\u2019, and null direction suppression towards the \u2018preferred side\u2019 with respect to each other.\n\nTo assess the time-course of both mechanisms, we presented two pulses of 472\u00a0ms duration and delayed one with respect to the other by a variable time-lag (Figure 3c). When we placed the pulses onto the ventral part of the receptive field, delaying the upper with respect to the lower one (PD), responses peaked at a delay of about 500 ms (Figure 3c, top). When the pulses were placed onto the dorsal part of the receptive field, delaying the lower with respect to the upper one (ND), responses were suppressed and returned to base line at a delay larger than 500 ms (Figure 3c, bottom).\n\nWe also noticed that this null direction suppression builds up over longer sequences of steps (Figure 3d). When the stimulation of the central column was preceded by the stimulation of one directly adjacent column on the \u2018preferred side\u2019, the response to the central pulse was strongly suppressed as before (red trace). This suppression led to a response to the sequence that on average not only falls below the sum of both individual stimulations, but even below the flicker response to the central column (black trace), indicating inhibition. When this null-direction sequence was extended from two to three columns, the resulting response was even smaller (green trace).\n\nThe experiments shown in Figure 3c also revealed that for zero onset time differences, i.e. simultaneous stimulation of two columns, the response was suppressed as compared to stimulation of just one column. We tested the receptive field of this suppression of the central column systematically by simultaneously stimulating the central column together with one of the columns in the 2 rings surrounding it (Figure 3e). We normalized the response to the two stimulated columns with respect to the response to the isolated stimulation of the central column. The resulting response in the T4 neuron was found to be suppressed in comparison to the isolated central column response for simultaneous stimulation of the central column together with another one in the dorsal part of the receptive field.\n\nThis suggests that employing apparent motion with flicker stimuli of larger bars should only lead to small flicker responses, possibly occluding null-direction suppression. We tested this prediction by presenting bright horizontal bars of different spatial extent at different locations within the receptive field of individual T4 cells on an LED arena (Figure 4a,c). Using a bar size of 180\u00b0 \u00d7 4.5\u00b0, indeed, flicker responses of T4 cells were almost undetectable (Figure 4a). Apparent motion stimuli along the preferred direction led to pronounced responses, larger than the linear prediction, while null direction sequences did not suppress the negligible sum of flicker responses by a significant amount (Figure 4b). This was much different when repeating the same stimuli using bars of only 4.5\u00b0 \u00d7 3\u00b0 instead: now, as in the experiments employing telescopic stimulation of individual columns, strong flicker responses appeared (Figure 4c). Furthermore, in addition to the\u00a0preferred direction enhancement, pronounced null direction suppression was observed with peak sensitivity within the dorsal part of the receptive field (Figure 4d).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig4-v2.jpg)\n\n**Figure 4.:** (a)\u00a0Flicker responses of T4 cells to the presentation of a large horizontal bar (180\u02da \u00d7 4.5\u02da) at different elevations on a LED arena, aligned to the elevation evoking the maximum response (n = 17 cells from 5 flies). (b) Corresponding non-linear response components to two-step apparent motion sequences at different elevations on an LED arena in the preferred (blue) and null direction (red). (c,d)\u00a0as in (a,b) for small horizontal bars (4.5\u02da \u00d7 3\u02da) (n\u00a0= 18 cells from 5 flies).\n\nWhat is the virtue of having null direction suppression in addition to the\u00a0preferred direction enhancement? To address this question, we constructed a simple algorithmic model of a motion detector (Figure 5a). In this model, the motion detector receives 3 inputs. A central direct input (D)\u00a0is flanked by two low-pass filtered inputs: one enhancing input (E) implementing a multiplicative and one suppressing input (S) implementing a divisive non-linearity. This way, the detector is designed to combine a preferred direction enhancement on one and a null direction suppression on the other side within a single motion-sensing unit. Testing the model with single pulses, responses were only detected for positions \u22121 and 0 (Figure 5b, left). Stimulating the model with 2-pulse-sequences at positions \u22121 and 0 led to pronounced preferred direction enhancement but no null direction suppression (Figure 5b, top 2 rows). When the 2-pulse-sequences were delivered at positions 0 and 1, no pronounced preferred direction enhancement occurred, but null direction suppression was substantial (Figure 5b, bottom 2 rows). Thus, these simulation results qualitatively match the respective experimental data (compare with Figure\u00a03a and b). We next simulated an array of such units and calculated its responses to grating motion at different speeds and directions. We found that the model exhibits a high degree of directional selectivity over a broad range of velocities, with little responses to null direction motion (Figure 5c, middle left). In contrast, the model without null direction suppression revealed substantial null direction responses almost as large as its preferred direction responses (Figure 5c, middle center). The same was true for a model with no preferred direction enhancement (Figure 5c, middle right). Interestingly, no such qualitative differences were observed at the level of a model tangential cell, i.e. after subtraction of opponent units (Figure 5c, bottom). When we simulated the responses of the model to grating motion into different directions, we found the full model T4 cell to be more sharply tuned to its preferred direction than the one without preferred direction enhancement or the one without null direction suppression (Figure 5d). We conclude that combining preferred direction enhancement with null direction suppression leads to a strong direction selectivity of the primary motion-sensing unit.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig5-v2.jpg)\n\n**Figure 5.:** (a)\u00a0Model T4 cell combining preferred direction enhancement and null direction suppression (compare with Figure 1d). (b) Left: Responses to individual light pulses (\u2018Flicker\u2019) delivered at the three different positions. The responses are shifted according to the stimulus protocol used for the subsequent apparent motion stimuli. Middle: Responses of the model unit to apparent motion stimuli in preferred and null direction (thick line = measured response, thin line = linear expectation, i.e. sum of responses to the single light pulses). Right: Nonlinear response component defined as the difference between measured response and linear expectation. Preferred direction enhancement occurs only between positions \u22121 and 0, null direction suppression only between positions 0 and 1. (c) Comparison of three models (top row): a full model, as in (a), implementing preferred direction enhancement and null direction suppression (left), one with preferred direction enhancement only (center) and one with null direction suppression only (right). Temporal frequency tuning of model T4 cells (middle row) and tangential cells (bottom row) using motion of a sine-grating (spatial wavelength = 50\u00b0, contrast = 1.0) along the preferred (PD) and null direction (ND), based on those 3 models. (d) Directional tuning of an array of model T4 cells using the\u00a0motion of a sine-grating (spatial wavelength = 50\u00b0, contrast = 1.0, temporal frequency = 1.0) for the same 3 models.\n\nWe next investigated the direction selectivity of T4 and T5 cells by recording their responses to moving gratings presented on an LED arena moving at various speeds and directions. Over a wide range of velocities spanning more than two orders of magnitude, T4/T5 cells responded almost exclusively to upward motion, i.e. along their preferred direction, with little or no responses at all to motion along their null direction (Figure 6a). When stimulating the cells with 1\u2009Hz grating motion at various directions, we found a rather sharp directional tuning with about 90\u00b0 half-width around its preferred direction (Figure 6b; see also Figure 3g in Maisak et al., 2013). To rule out that the highest degree of directional selectivity in T4/T5 cells is achieved by a hitherto unknown reciprocal inhibition between T4/T5 cells with opposite preferred direction, e.g. via inhibitory lobula plate interneurons (Mauss et al., 2015) we blocked the synaptic output from all T4 and T5 cells by expression of tetanus toxin light-chain (Sweeney et al., 1995). Having confirmed the effectiveness of the block (Supplementary file 1), we repeated the above experiments. T4/T5 cells revealed the same high degree of directional selectivity as before (Figure 6c,d). From this, we conclude that the mechanism underlying the high degree of directional selectivity in T4 cells does not include the output of oppositely tuned T4 cells but rather originates in the dendrite of the cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17421/elife-17421-fig6-v2.jpg)\n\n**Figure 6.:** (a) Temporal frequency tuning of T4/T5 cells in control flies showing the normalized \u0394F/F responses to square-wave gratings in the preferred (up, blue) and null direction (down, red) (n = 15 flies). (b)\u00a0Directional tuning of T4/T5 cells to square-wave gratings moving at a temporal frequency of 1\u00a0Hz (n = 7). (c,d)\u00a0Temporal (c, n = 9) and directional tuning (d, n = 9) of T4/T5 cells with their synaptic output blocked by expression of the tetanus toxin light chain. All data represent the mean \u00b1 SEM (shaded).\n\n## Discussion\n\nIn the Hassenstein-Reichardt model (Hassenstein and Reichardt, 1956)\u00a0as well as in the Barlow-Levick model (Barlow and Levick, 1965)\u00a0direction selectivity emerges by a nonlinear interaction of asymmetrically filtered signals from adjacent image points: an enhancement along the preferred direction in the first, and a suppression along the null direction in the second model. Both models lead to weakly direction-selective signals in the first place, which, in the Hassenstein-Reichardt model, are improved downstream by subtraction of oppositely tuned components (for review, see Borst and Helmstaedter, 2015. Surprisingly, however, a high degree of directional selectivity is found already at the first stage where directional responses are observed, i.e. in T4 and T5 cells (Maisak et al., 2013) (Figure 6). This can now be explained by the fact that both preferred direction enhancement and null direction suppression are implemented in T4 cells. While the output of the full Hassenstein-Reichardt-correlator after the subtraction stage shows a high degree of directional\u00a0selectivity in the absence of null-direction suppression, the relatively small differences between large, but poorly tuned signals (see Figure 5c, middle panel) would be highly prone to noise. Improving the direction-tuning already at the level of the half-detectors by the additional null-direction suppression increases robustness to noise and might in addition be energetically less costly.\n\nA recent study addressing the mechanisms underlying the elementary motion detectors in Drosophila concluded preferred direction enhancement as the sole mechanism (Fisher et al. 2015). However, we find that their stimulation paradigm consisting of flashes at 2 positions simultaneously does not allow to discriminate between different mechanisms including lateral inhibition, adaptation and null direction suppression.\n\nSince the operations of preferred direction enhancement and null direction suppression have offset receptive fields, it requires the cells to collect their input from more than two adjacent image points, in line with anatomical observations (Figure 1e; Takemura et al., 2013; Shinomiya et al., 2014)\u00a0. In contrast to the cellular implementation of the motion detector proposed by Behnia et al, 2014\u00a0our findings also require that T4 cells receive input from more than two cell types. This again is in agreement with recent connectomic data (for T4 cells: Louis Scheffer, Janelia Research Campus, personal communication; for T5 cells: Shinomiya et al., 2014). Finally, functional studies where the synaptic input elements onto T4 and T5 neurons were blocked also suggested the involvement of more than two input elements in the ON- (Ammer et al., 2015)\u00a0as well as in the OFF-pathway (Serbe et al., 2016).\n\nConsidering the columnar nature of the input elements and the structure of the T4 dendrites covering multiple columns, we predict, that the inputs representing the enhancing, direct and suppressing input segregate on different sub-regions of the T4 dendrite, with enhancing inputs on the \u2018null-side\u2019 and the suppressing inputs on the \u2018preferred side\u2019 of the dendrite. Future experiments will have to map the different cell types of the medulla onto the proposed model (Figure 5a) as well as to identify the transmitter receptors, responsible for enhancing, exciting and inhibiting the dendrites of T4 and T5 cells.\n\n## Materials and methods\n\n### Flies\n\n(Drosophila melanogaster) were raised at 25\u00b0C and 60% humidity on a 12\u2009hr light/12\u2009hr dark cycle on standard cornmeal agar medium. For calcium imaging of T4/T5 cells, flies were used to\u00a0express the genetically-encoded calcium indicator GCaMP6m (Chen et al., 2013)\u00a0in T4/T5 neurons with axon terminals predominantly in layer 3 of the lobula plate (w-; Sp/cyo; VT50384-lexA, lexAop-GCaMP6m/TM6b). For the imaging experiments where synaptic output of T4/T5 activity was blocked, the above flies were crossed to flies driving expression of the tetanus toxin light chain in all T4/T5 cells (w-; R59E08-AD / UAS-TNT-E; R42F06-DBD / VT50384-lexA, lexAop-GCaMP6m). For imaging L2 cells, we used the 21D-Gal4 driver line (Joesch et al., 2010)\u00a0to express GCaMP6m.\n\n### Calcium imaging\n\nFly surgeries were performed, and the neuronal activity was measured from the left optical lobe on a custom-built 2-photon microscope as previously described (Maisak et al., 2013). Images were acquired at resolutions between 64 \u00d7\u00a064 and 256 \u00d7\u00a0256 pixels and frame rates between 1.88\u00a0and\u00a015\u00a0Hz with the ScanImage software (Pologruto et al., 2003) in Matlab.\n\n### Visual stimulation with telescope\n\nAntidromic illumination of the fly\u2019s head through the objective used for two-photon-microscopy visualizes the hexagonal mosaic of the optical axes of the ommatidia of a living Drosophila (Franceschini, 1975; Schuling et al., 1989). The far field radiation pattern (FFRP) visible in the back focal plane of the objective (LD Epiplan 50x/0,50, Zeiss) is projected onto a CMOS camera (DCC1545M, Thorlabs) via several lenses, a beam splitter (CM1-BP145B5, Thorlabs) and a diaphragm, to reduce stray light. Visual stimuli are generated on the AMOLED display (800 \u00d7\u00a0600 pixels, pixel size 15 \u00d7\u00a015\u2009\u03bcm, maximal luminance > 1500\u2009Cd/m2; lambda\u00a0=\u00a0530 nm; refresh rate 85\u2009Hz) (SVGA050SG, Olightek). Both stimulus pattern and FFRP can be visualized simultaneously by means of the beam splitter and a mirror with the CMOS camera. This allows to precisely position the stimuli onto the FFRP. In order to prevent stimulus light from entering the photomultiplier of the two-photon microscope, light generated by the AMOLED display was filtered with a long pass filter (514 LP, T: 529.4\u2013900 nm, AHF). The AMOLED display was controlled with MATLAB and the psychophysics toolbox (V 3.0.11; Brainard, 1997).\n\n### Experimental protocol\n\nWe determined the receptive field of T4 cells by stimulating single cartridges with light pulses of 472 ms duration at randomized positions. At each position, three stimulus presentations were delivered. The resulting responses were averaged and the peak of the averaged response was taken. We performed all experiments on T4 cells only. The cells were selected based on their response to light-on stimuli. While T4 cells respond to the onset of a light pulse (Figure 2b), the T5 cells respond to the light off. Apparent motion stimuli consisted either of consecutive light stimuli to two or three neighboring cartridges. The second stimulus was presented right after the first turned off, resulting in a delay from onset to onset of 472 ms.\n\n### Visual stimulation with LED arena\n\nThe LED arena subtended approximately 180\u00b0 in azimuth and 90\u00b0 in elevation with a resolution of 1.5\u00b0, based on a design modified from Reiser and Dickinson (2008)\u00a0as previously described (Maisak et al., 2013). Stimuli were presented with 3\u20135 repetitions per experiment in a randomized fashion. All stimuli were presented in full contrast. To measure the directional and temporal frequency tuning, square-wave gratings with a spatial wavelength of 24\u00b0 spanning the full extent of the stimulus arena were used. For the direction tuning those gratings were moved in 12 directions separated by 30\u00b0 at a temporal frequency of 1\u2009Hz. To determine the temporal frequency tuning, gratings were moved at temporal frequencies ranging 0.05 to 20\u2009Hz moving in the preferred and null direction. For the apparent motion experiments, either large (180\u00b0 wide \u00d7 4.5\u00b0 high) or small (4.5 \u00d7 3\u00b0) bright horizontal bars were presented for 400 ms either in isolation (flicker) or in sequences of 2 pulses (apparent motion) offset by 4.5\u00b0 in the preferred or null direction with a \u2206t, onset to onset, of 400 ms.\n\n### Data analysis\n\nData analysis was performed offline using custom-written routines in Matlab. Regions of interests (ROIs) were selected by hand in layer 3 of the lobula plate. The\u00a0time courses of relative fluorescence changes (\u0394F/F) were calculated from the raw imaging sequence. Responses to the stimulus were baseline-subtracted, averaged across repetitions, and quantified as the peak responses over the stimulus epochs. For T4 cells, the baseline was determined during one second before the stimulus, for L2 cells (Figure 2a), it was determined during the last second before luminance off-set. Those responses were averaged across experiments. Where indicated, responses were normalized to the maximum average response before averaging. For the apparent motion experiments, non-linear response components were calculated as the differences of the time-courses of the responses to the apparent motion stimuli and the sum of the appropriately time-shifted responses to flicker stimuli at the corresponding positions.\n\n### Model simulations\n\nVisual stimuli were represented as a two-dimensional array (200 x 300) at 1\u00b0 spatial and 10 ms temporal resolution, mapped onto a linear array of 40 visual columns. The signal amplitude ranged from 0 to 1. The input to the ON pathway, as represented by lamina neuron L1, was modeled as previously described (Eichner et al., 2011). Briefly, the local luminance signal was high-pass-filtered (1st order, \u03c4\u00a0=\u00a0250 ms), and 10% of the DC value was added with subsequent rectification. The T4 cell was then modeled as receiving input from three adjacent columns (Figure 5a): an enhancing signal E at position \u22121, representing the low-pass filtered signal of L1 (1st order, \u03c4\u00a0=\u00a0250 ms), a direct signal D at position 0 which is identical to L1, and a suppressing signal S again representing the low-pass filtered signal of L1 (1st order, \u03c4\u00a0=\u00a0250 ms). The response was calculated as the product of E and D, divided by S. Signals had the following weights k: kE = 5, kD = 5, kS = 10. To avoid division by zero and to account for flicker responses, a DC term of 1.0 was added to each signal. To simulate flicker and apparent motion stimuli (Figure 5b), light pulses of 450 ms length and amplitude 1.0 were delivered to selected columns and the response of an individual model T4 cell was evaluated. To simulate the responses to sine-gratings (Figure 5c,d), responses were calculated either as the summed responses of an array of such units (\u2018T4 response\u2019) or after subtracting the signals of oppositely tuned T4 cells (\u2018VS response\u2019). Simulations without null direction suppression or preferred direction enhancement were performed by setting either kE or kS to zero. Software was written in the\u00a0Python programming language and is available as source code.\n",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "9f29974b-2535-4c6a-a205-062129cdaf40",
+      "submission_id": "83facced-0d4c-48f6-921c-184c32f90032",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Fred Rieke, Howard Hughes Medical Institute, University of Washington , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17421.011](https://doi.org/10.7554/eLife.17421.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Complementary Mechanisms Create Direction Selectivity in the Fly\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Fred Rieke, is a member of our Board of Reviewing Editors and the evaluation has been overseen by David Van Essen as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Tom Baden (Reviewer #2); Vivek Jayaraman (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis is an interesting and timely paper investigating the mechanisms underlying motion detection in the fly visual system. The paper uses a powerful combination of two-photon calcium imaging and telescopic stimulus delivery, allowing greater spatial control of stimuli than more conventional approaches. All of the reviewers found the work of interest and the experiments generally well done. Several issues came up in the review process: (1) some cases in which the text stated results too strongly given a lack of direct experimental evidence; (2) a need to improve the clarity of the writing and figures. Four specific examples follow, agreed upon as most critical by all three reviewers; others examples are in the individual reviewers comments below.\n\n1) The paper concludes that distinct regions of the T4 dendrites implement different motion detection mechanisms. But there are no direct measures of dendritic signaling in the paper; without such measures, this conclusion should be stated less strongly.\n\n2) The paper suggests a role of inhibition in canceling signals for null direction motion. The evidence for this is based on sublinear summation of signals in the null direction \u2013 but this does not uniquely identify inhibition as the underlying mechanism. Was it possible to directly observe inhibition \u2013 e.g. to see a decrease in calcium when stimulating a single location in the T4 receptive field with flickering stimuli? Without a direct observation about inhibition this conclusion should also be stated less strongly.\n\n3) The telescopic illumination should be described in more detail. Particularly how effective is it in restricting input spatially? If there is spread beyond the single column targeted, how much could such spread impact the conclusions of the paper? Part of the confusion on this point originates because Figure 1e is difficult to interpret in present form (see point 4 and individual reviewer comments).\n\n4) The figures should be modified to specify exactly what is measured, particularly the optical configuration for each experiment. Specific examples are in the individual reviews below.\n\nReviewer #1:\n\nThis paper describes the origin of directional selectivity in the first cells in the fly visual system that exhibit directional responses. The combination of a telescopic stimulus delivery system to activate specific elements of the motion computation with functional calcium imaging is quite powerful. The results are clear and interesting. However, I found several aspects of the paper difficult to follow. Some specific suggestions to improve clarity follow.\n\n1) Manipulations of stimuli to specific spatial regions are crucial to the paper. But it is often hard to discern exactly what stimulus is used in a given experiment. This could be improved greatly by adding simple schematics to the figures, showing which specific columns are being activated. When those are present (e.g. Figure 2d) they help quite a bit. Figure 2b, e and f are specific examples in which this could help.\n\n2) The description of Figure 1e and f is quite minimal and hard to follow. Those figures made much more sense to me after I had read most of the paper, but when they first come up it is not clear what is important about the data, or even how the data was collected. The larger receptive field size of the T4 cells is important; that should get mentioned in the text where this data is described.\n\n3) Figure 3 models. It was not clear to me what the modified models were. Specifically, do the models lacking null direction suppression or preferred direction enhancement still consist of three inputs (as in Figure 3a) just with one arm disabled? Or are they models with two inputs only (in a more classic Reichardt configuration)? A schematic of these models added to Figure 3 could be helpful.\n\n4) Figure 3d. I am confused by the description of this figure. The legend does not have a panel d, but the legend for panel e suggests it is describing an array of model units, not a full T4 cell. That appears to make sense from comparing Figure 3c and d. But the main text describes a full model T4 cell. Because of these inconsistencies I could not evaluate that part of the paper.\n\nReviewer #2:\n\nIn their MS \"Complemetary Mechanisms Create Direction Selectivity in the Fly\", Haag et al. use a spatially precise optical setup capable of delivering single-ommatidial stimulation and with 2-photon calcium imaging to probe mechanisms driving selection selectivity in the visual system of the fruit fly. Focussing on T4 cells, the fly-visual system's \"ON-DS cells\", the authors show that both null-suppression as well as preferred direction enhancement appear to drive directionality in these neurons, computations that likely take place in different dendritic regions of T4s. They follow up their findings in a simple model, which in addition predicts that the 2 mechanisms in tandem yield a sharper spatial tuning than any one mechanism alone. They also demonstrate the \"sharp\" tuning in T4 cells experimentally (though they do no isolate the 2 mechansims in these experiments \u2013 something that I suspect would be quite difficult to do).\n\nOverall, the MS is timely and reports important and to my knowledge novel findings about direction selective visual circuits of the fly. The data is of high quality and the writing is clear and succinct. I only have minor comments\n\nReviewer #3:\n\nIn this tantalizing manuscript, Haag, Borst and colleagues explore the underlying basis of visual motion direction computations in the Drosophila optic lobe. In both the vertebrate retina and in the early visual system of flies, this computation has been studied in the framework of two classic models of visual motion direction: the Hassenstein-Reichardt (H-R) model and the Barlow-Levick (B-L) model. Mechanistically, both rely on combining input from spatially offset pathways, with input from an adjacent location temporally delayed relative to the central pathway. One (H-R) produces an excitatory \"preferred-direction\" (PD) response by multiplication with temporally delayed input from a preceding location, while the other (B-L) uses division by input from a temporally delayed location in the \"null direction\" (ND). Direct evidence for the latter has been obtained in direction-selective retinal ganglion cells (DSRGCs), where starburst amacrine cells provide the appropriate ND inhibition. In the Drosophila optic lobe, the H-R model has thus far been the mechanism most often proposed for direction selectivity for large field motion, with information from \"ON\" and \"OFF\" motion pathways represented by so-called T4 and T5 cells respectively being combined in vertical system (VS) and horizontal system (HS) lobula plate tangential cells (LPTCs). Recent anatomical and electron microscopy (EM) evidence has suggested a more complex picture at the level of the input to T4 and T5 neurons \u2013 their inputs comprise more cell types than previously believed. In this study, the authors use precise optical stimulation that takes into account the fly's neural superposition eye (Franceschini, 1975) along with two-photon calcium imaging to suggest that B-L-like inhibition may combine with H-R like excitation to shape the responses of T4 neurons. The results are interesting but the evidence provided is indirect and the picture still somewhat murky. Detailed comments follow.\n\nThe major claim of the paper is that precise stimulation of single lamina columns reveals PD and ND responses that localize to different sub-regions of the T4 neuron dendrites. However, this claim, which is highlighted in the abstract, goes beyond the evidence presented, which is entirely based on recordings in T4 axons. Unless the authors can present direct anatomical and physiological evidence for such localized dendritic input, I would suggest that this claim be removed or significantly tempered and moved to Discussion.\n\nSimilarly, the B-L model proposes inhibition of one signal by another for ND motion, but the authors present no direct evidence for such inhibition. What is shown instead is supra- or sub-linear summation upon sequential (PD vs ND) excitation of successive lamina columns. Why does this have to necessarily result from inhibition in T4 dendrites rather than have presynaptic origins? While it is true that medulla neurons are not known to be sensitive to motion-direction, such neurons are known to have suppressed responses to bars wider than their receptive field (T5 input neurons for OFF pathway; Serbe et al., 2016 from the Borst lab), so might a skewed sampling of such inputs by T4 perhaps confer the observed ND suppression?\n\nRelated to the above point, the model (Figure 3b) predicts that we should be able to directly observe inhibition (not just suppression of a strong excitatory response), even if it is not large, when the 'wrong' lamina column is illuminated in a flicker experiment. This seems never to be observed in the experiments shown (Figure 1a,b). What is seen instead is sub-linearity (or supra-linearity), which the authors call a non-linear response component. Is this a calcium indicator limitation even with the higher-baseline GCaMP6m? If there is inhibition, might it be easier to pick up directly in the dendrites of single T4 neuron or do the authors find this experimentally infeasible?\n\nIn Figure 1e, the authors state that their telescopic illumination allows them to illuminate only a single lamina column, but the lamina responses suggest that neighboring columns are also stimulated. In the manuscript (introduction section), these responses are described as 'negligible', but they seem to reach 50% of peak responses. This requires further discussion, because the study's results rely heavily on the high precision of optical illumination. If the responses reflect the limits of the illumination system, it would be useful to discuss how that might affect the interpretation of results. Also, on the same note, it would be great to see what a 'standard' localized stimulus presentation (i.e., targeting single ommatidia and sequences of ommatidia without using the telescopic refinement) would evoke in T4 neurons. This would highlight the importance of telescopic stimulus presentation for visual motion studies, which would be useful to the field.\n\nAlthough perhaps this is beyond the scope of this study, it would be very interesting to know what T5 neuron responses look like with telescopic stimulation. Do they also show B-L like ND suppression in the OFF pathway? Given that the authors have access to all the T5 inputs (Serbe et al., 2016), this could also provide an easier path to a more complete explanation in these neurons as opposed to T4, where the authors do not say much about what the potential inputs to these neurons might be and do not explore how they might act together to produce the observed response properties.\n\nLastly, it is still left unclear why T4 (and, perhaps T5) might need a potential B-L like mechanism in addition to H-R if there is no difference between the combination and pure H-R for LPTCs. Perhaps the authors could speculate on this in Discussion.\n",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88785eba-0fcd-4c2f-b74f-f162a657c76a",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C1",
+      "claim": "Two alternative mechanisms for direction selectivity have been discussed in the literature: preferred direction enhancement and null direction suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Two alternative mechanisms have been discussed in the literature so far: preferred direction enhancement, by which responses are amplified when stimuli move along the preferred direction of the cell, and null direction suppression, where one signal inhibits the response to the subsequent one when stimuli move along the opposite, i.e. null direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of motion detection, as indicated by the context of the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "927c99ce-7a3c-4ca1-992d-769c719607a3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C2",
+      "claim": "Directional responses first appear in T4 and T5 cells along the processing chain in the Drosophila optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Along the processing chain in the Drosophila optic lobe, directional responses first appear in T4 and T5 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research establishing T4 and T5 as the first direction-selective neurons.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "4e8721f2-70ac-4535-b6ec-79610250d4b4",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C3",
+      "claim": "Both preferred direction enhancement and null direction suppression mechanisms are implemented in different sub-regions of the receptive field of T4 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Visually stimulating sequences of individual columns in the optic lobe with a telescope while recording from single T4 neurons, we find both mechanisms at work implemented in different sub-regions of the receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "5d977f0f-4527-464c-b347-5a65fd5d870f",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C4",
+      "claim": "The fly optic lobe consists of four consecutive layers of neuropil called lamina, medulla, lobula and lobula plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Photoreceptors send their axons into the optic lobe, which consists of four consecutive layers of neuropil called lamina, medulla, lobula and lobula plate (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established anatomical knowledge about Drosophila visual system, also illustrated in Figure 1a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "d2cee402-cb28-4fe3-aa22-9cfd74c5fe5a",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C5",
+      "claim": "Each neuropil layer is made up of retinotopically organized columns containing roughly 100 different neurons per column.",
+      "claim_type": "EXPLICIT",
+      "source": "Each neuropil layer is made up of retinotopically organized columns together containing roughly 100 different neurons per column (Fischbach and Dittrich, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fischbach and Dittrich, 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "c7197e29-3705-437c-bd38-2a414e913d3a",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C6",
+      "claim": "Visual motion information is extracted in parallel pathways encoding light increments (ON) and decrements (OFF) within the optic lobe.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the optic lobe, visual motion information is extracted in parallel pathways encoding light increments (ON) and decrements (OFF) (Joesch et al., 2010; Eichner et al., 2011; Joesch et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "45de8265-b8e5-4278-8230-71bb3a2b60d3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C7",
+      "claim": "Both ON and OFF pathways bifurcate in the lamina and lead via specific medulla interneurons onto the dendrites of T4 and T5 cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Both pathways bifurcate in the lamina and lead, via a set of specific medulla interneurons, onto the dendrites of T4 and T5 cells, respectively (Takemura et al., 2013; Shinomiya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to connectomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "5f0a2b0f-6cf7-4ffe-813d-6e19d0744ae2",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C8",
+      "claim": "T4 and T5 cells exist in 4 subgroups tuned to one of the four cardinal directions of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Both T4 and T5 cells exist in 4 subgroups tuned to one of the four cardinal directions of motion and project into four layers of the lobula plate (Maisak et al., 2013) (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and illustrated in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "34b0fd52-57e2-4dea-b94f-6edddd42f614",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C9",
+      "claim": "T4 and T5 cells form monosynaptic cholinergic excitatory connections with the dendrites of the large-field lobula plate tangential cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There, they form monosynaptic cholinergic excitatory connections with the dendrites of the large-field lobula plate tangential cells (Mauss et al., 2014; Schnell et al., 2012) as well as with lobula plate intrinsic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "e2bd243c-8119-40c9-849c-f8df4a7fc344",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C10",
+      "claim": "Lobula plate intrinsic neurons inhibit tangential cells in the adjacent layer.",
+      "claim_type": "EXPLICIT",
+      "source": "These intrinsic neurons, in turn, inhibit tangential cells in the adjacent layer (Mauss et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Mauss et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "fbcf3338-cb26-47e1-94f9-5baafa9b8cdc",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C11",
+      "claim": "None of the neurons upstream from T4 and T5 respond to visual motion in a direction-selective way.",
+      "claim_type": "EXPLICIT",
+      "source": "Since none of the neurons upstream from T4 and T5 respond to visual motion in a direction-selective way (Behnia et al., 2014; Strother et al., 2014; Meier et al., 2014; Ammer et al., 2015; Serbe et al., 2016), T4 and T5 cells are the first neurons in the processing chain where directional information is represented explicitly (Maisak et al., 2013; Fisher et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "0072effc-d76a-4ef7-9ea2-7400b31e006d",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C12",
+      "claim": "T4 and T5 cells are the first neurons in the processing chain where directional information is represented explicitly.",
+      "claim_type": "EXPLICIT",
+      "source": "Since none of the neurons upstream from T4 and T5 respond to visual motion in a direction-selective way (Behnia et al., 2014; Strother et al., 2014; Meier et al., 2014; Ammer et al., 2015; Serbe et al., 2016), T4 and T5 cells are the first neurons in the processing chain where directional information is represented explicitly (Maisak et al., 2013; Fisher et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and follows logically from the previous claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "264ccf88-f075-4854-bc60-7b4ab0fa1793",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C13",
+      "claim": "In preferred direction enhancement, the response to the sequence along the preferred direction is larger than the linear sum of responses to the isolated pulses.",
+      "claim_type": "EXPLICIT",
+      "source": "in case of preferred direction enhancement, the response to the sequence along the preferred direction is larger than the linear sum of responses to the isolated pulses and identical if the sequence is along the null direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the preferred direction enhancement mechanism based on established models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "d032d227-091f-4cb7-864a-e8f2ad301e9e",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C14",
+      "claim": "In null direction suppression, the response to the sequence along the preferred direction is identical to the linear sum of responses to the isolated pulses and smaller if the sequence is along the null direction.",
+      "claim_type": "EXPLICIT",
+      "source": "In case of null direction suppression, the response to the sequence along the preferred direction is identical to the linear sum of responses to the isolated pulses and smaller if the sequence is along the null direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the null direction suppression mechanism based on established models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "07259442-1aae-4d8a-90c8-83a6bb98aa1f",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C15",
+      "claim": "Individual T4 and T5 neurons extend their dendrites across multiple columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual T4 and T5 neurons extend their dendrites across multiple columns (Figure 1e) and receive synaptic inputs from different medulla cell types located in different columns relative to the home columns of the T4 or T5 neuron and to each other (Takemura et al., 2013; Shinomiya et al.; 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1e showing T4 dendrite morphology and citations to connectomic studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "e665fbb2-9430-4afa-9847-d74d0b8996db",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C16",
+      "claim": "T4 and T5 neurons receive synaptic inputs from different medulla cell types located in different columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual T4 and T5 neurons extend their dendrites across multiple columns (Figure 1e) and receive synaptic inputs from different medulla cell types located in different columns relative to the home columns of the T4 or T5 neuron and to each other (Takemura et al., 2013; Shinomiya et al.; 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to connectomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "1999e1a7-4a04-4e70-86db-a7dd50f39250",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C17",
+      "claim": "The optical system and neuronal wiring in flies obeys the neural superposition principle.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the optical system and of the neuronal wiring in flies obeys the neural superposition principle (Kirschfeld, 1967; Braitenberg, 1967).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "bd4d9445-41a0-4187-ae07-376ca96d1601",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C18",
+      "claim": "Photoreceptors R1-6 from 6 neighboring ommatidia that share the same optical axis converge on the same lamina cartridge, forming an optical column.",
+      "claim_type": "EXPLICIT",
+      "source": "Those photoreceptors R1-6 from 6 neighboring ommatidia that share the same optical axis converge on the same lamina cartridge, thus forming an optical column that represents the unit of spatial resolution ('neuro-ommatidium').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the neural superposition principle in fly vision.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "fa16567c-a82e-4deb-b023-8327f21ff735",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C19",
+      "claim": "L2 cells responded maximally to stimuli at a certain column, with less than 30% response amplitude to stimuli positioned on surrounding columns.",
+      "claim_type": "EXPLICIT",
+      "source": "L2 cells responded maximally to stimuli at a certain column, with less than 30% response amplitude to stimuli positioned on surrounding columns, and negligible responses (<12%) to stimuli positioned on columns in the next outer ring (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from calcium imaging experiments shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "bec40225-97eb-4e7f-9c94-4b3bebb1a2ed",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C20",
+      "claim": "L2 cells showed negligible responses (<12%) to stimuli positioned on columns in the next outer ring.",
+      "claim_type": "EXPLICIT",
+      "source": "L2 cells responded maximally to stimuli at a certain column, with less than 30% response amplitude to stimuli positioned on surrounding columns, and negligible responses (<12%) to stimuli positioned on columns in the next outer ring (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from calcium imaging experiments shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "163818aa-4d5f-49d1-97fd-762067c047bf",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C21",
+      "claim": "The slight activation of neighboring columns results directly from the optics of the fly's eye, where visual fields of single ommatidia have Gaussian sensitivity profiles with an acceptance angle roughly matching the inter-ommatidial separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight activation of neighboring columns results directly from the optics of the fly's eye, where the visual fields of single ommatidia have Gaussian sensitivity profiles with an acceptance angle roughly matching the inter-ommatidial separation (G\u00f6tz, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on known optical properties of the fly eye, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "c08e6909-7977-48bb-a28f-147196924ec6",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C22",
+      "claim": "T4 cells have a larger receptive field than L2 cells, with about 50% amplitude to stimuli onto the six surrounding columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to L2, however, the receptive field was found to be larger, with about 50% amplitude to the stimuli onto the six surrounding columns, and roughly 25% to the next outer ring (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from calcium imaging experiments shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "7b5edbd0-bb33-42e3-8c00-c91d04a69249",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C23",
+      "claim": "T4 cells showed roughly 25% response amplitude to stimuli in the next outer ring of columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to L2, however, the receptive field was found to be larger, with about 50% amplitude to the stimuli onto the six surrounding columns, and roughly 25% to the next outer ring (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from calcium imaging experiments shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "109c0ca5-f66d-4051-8d38-acfc2963635a",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C24",
+      "claim": "T4 neurons pool excitatory synaptic input from more than one column.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that T4 neurons pool excitatory synaptic input from more than one column, consistent with their morphology (Figure 1e) and expected from a motion detector that is required to integrate information from spatially offset input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the receptive field data and consistent with morphological observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "b8060fc6-fa29-490b-accd-12f53dcf8f02",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C25",
+      "claim": "When T4 cells were stimulated sequentially from ventral to dorsal, the cell responded more strongly than expected from the sum of the responses to the individual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "When stimulated sequentially from ventral to dorsal (Figure 3a, 'Sequence', top middle), the cell responded more strongly (thick blue line) than expected from the sum of the responses to the individual stimuli (thin blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from apparent motion experiments shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "74e1fc22-430f-4887-9d5f-605ec44a6c72",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C26",
+      "claim": "When T4 cells were stimulated sequentially from dorsal to ventral, the cell responded more weakly than expected from the sum of the responses to the individual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The opposite was observed when we stimulated the cell sequentially from dorsal to ventral (Figure 3a, 'Sequence', bottom middle): now the cell responded more weakly (thick red line) than expected from the sum of the responses to the individual stimuli (thin red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from apparent motion experiments shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "8a25e849-8cbb-42f1-8c57-e7d0f962e0bc",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C27",
+      "claim": "Both preferred direction enhancement and null direction suppression contribute to the directionally selective responses of T4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We then calculated the nonlinear response component by subtracting the linear expectation from the actual response and found that both preferred direction enhancement (Figure 3a, 'Sequence', top right) and null direction suppression (Figure 3a, 'Sequence', bottom right) contributes to the directionally selective responses of T4 cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from experimental data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "43cb0a3b-df91-46e9-ac89-328367d1ecfe",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C28",
+      "claim": "Preferred direction enhancement is shifted towards the 'null-side' and null direction suppression towards the 'preferred side' with respect to each other in the receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the different mechanisms are offset in their receptive fields: preferred direction enhancement is shifted towards the 'null-side', and null direction suppression towards the 'preferred side' with respect to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data in Figure 3b showing spatial segregation of mechanisms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "a23273b7-c12f-4e69-8d2a-f91e4a1e8ba5",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C29",
+      "claim": "When pulses were placed onto the ventral part of the receptive field with the upper pulse delayed with respect to the lower one (PD), responses peaked at a delay of about 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "When we placed the pulses onto the ventral part of the receptive field, delaying the upper with respect to the lower one (PD), responses peaked at a delay of about 500 ms (Figure 3c, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from temporal delay experiments shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "ebd6d040-c253-487a-ab53-12dbe624d4c2",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C30",
+      "claim": "When pulses were placed onto the dorsal part of the receptive field with the lower pulse delayed with respect to the upper one (ND), responses were suppressed and returned to baseline at a delay larger than 500 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "When the pulses were placed onto the dorsal part of the receptive field, delaying the lower with respect to the upper one (ND), responses were suppressed and returned to base line at a delay larger than 500 ms (Figure 3c, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from temporal delay experiments shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "a449256d-3bbc-4a1c-bd29-883f40f81a14",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C31",
+      "claim": "Null direction suppression builds up over longer sequences of steps.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that this null direction suppression builds up over longer sequences of steps (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "693fe2d9-f766-47e5-a5fd-7bafea978fa0",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C32",
+      "claim": "When the stimulation of the central column was preceded by stimulation of one directly adjacent column on the 'preferred side', the response to the central pulse was strongly suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "When the stimulation of the central column was preceded by the stimulation of one directly adjacent column on the 'preferred side', the response to the central pulse was strongly suppressed as before (red trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "d88cd671-e33d-408e-bc06-5ec5e894d223",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C33",
+      "claim": "The suppression from null-direction sequences can lead to a response that falls below the flicker response to the central column, indicating inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression led to a response to the sequence that on average not only falls below the sum of both individual stimulations, but even below the flicker response to the central column (black trace), indicating inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data and interpretation shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "359746e4-57a1-43d1-9520-1834feeb58cd",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C34",
+      "claim": "When a null-direction sequence was extended from two to three columns, the resulting response was even smaller.",
+      "claim_type": "EXPLICIT",
+      "source": "When this null-direction sequence was extended from two to three columns, the resulting response was even smaller (green trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "55ea9735-90d9-483d-a49b-45475da0a48f",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C35",
+      "claim": "For zero onset time differences (simultaneous stimulation of two columns), the response was suppressed compared to stimulation of just one column.",
+      "claim_type": "EXPLICIT",
+      "source": "The experiments shown in Figure 3c also revealed that for zero onset time differences, i.e. simultaneous stimulation of two columns, the response was suppressed as compared to stimulation of just one column.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "f7d879ec-5031-4e00-b8d3-55bc7543d172",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C36",
+      "claim": "The response in T4 neurons was suppressed for simultaneous stimulation of the central column together with another one in the dorsal part of the receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting response in the T4 neuron was found to be suppressed in comparison to the isolated central column response for simultaneous stimulation of the central column together with another one in the dorsal part of the receptive field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the systematic receptive field mapping shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "014e48ac-36a2-4bf4-839d-b647d1588640",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C37",
+      "claim": "Using large horizontal bars (180\u00b0 \u00d7 4.5\u00b0), flicker responses of T4 cells were almost undetectable.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a bar size of 180\u00b0 \u00d7 4.5\u00b0, indeed, flicker responses of T4 cells were almost undetectable (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "02eda000-f48c-4bf3-a939-ef172bf1ecc4",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C38",
+      "claim": "With large bars, apparent motion stimuli along the preferred direction led to pronounced responses larger than the linear prediction, while null direction sequences did not suppress the negligible sum of flicker responses by a significant amount.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparent motion stimuli along the preferred direction led to pronounced responses, larger than the linear prediction, while null direction sequences did not suppress the negligible sum of flicker responses by a significant amount (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "ca2dc6c4-2174-430a-9de6-97e862dc97b3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C39",
+      "claim": "Using small bars (4.5\u00b0 \u00d7 3\u00b0), strong flicker responses appeared in T4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This was much different when repeating the same stimuli using bars of only 4.5\u00b0 \u00d7 3\u00b0 instead: now, as in the experiments employing telescopic stimulation of individual columns, strong flicker responses appeared (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "c67e82a1-75af-4ac0-903a-7236d2b7014d",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C40",
+      "claim": "With small bars, in addition to preferred direction enhancement, pronounced null direction suppression was observed with peak sensitivity within the dorsal part of the receptive field.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in addition to the preferred direction enhancement, pronounced null direction suppression was observed with peak sensitivity within the dorsal part of the receptive field (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "04934489-7d4c-4226-8caa-89ccb8c77596",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C41",
+      "claim": "The model combining preferred direction enhancement and null direction suppression exhibits a high degree of directional selectivity over a broad range of velocities, with little responses to null direction motion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the model exhibits a high degree of directional selectivity over a broad range of velocities, with little responses to null direction motion (Figure 5c, middle left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from computational modeling shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "5d616257-0820-4778-8b01-b6953de71310",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C42",
+      "claim": "The model without null direction suppression revealed substantial null direction responses almost as large as its preferred direction responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the model without null direction suppression revealed substantial null direction responses almost as large as its preferred direction responses (Figure 5c, middle center).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from computational modeling shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "f37156e0-5807-4117-99c3-65ca4f3aff91",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C43",
+      "claim": "The model without preferred direction enhancement revealed substantial null direction responses almost as large as its preferred direction responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The same was true for a model with no preferred direction enhancement (Figure 5c, middle right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from computational modeling shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "573e5bf3-2e0b-4889-a2e1-c12acea036b5",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C44",
+      "claim": "The full model T4 cell is more sharply tuned to its preferred direction than the one without preferred direction enhancement or the one without null direction suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "When we simulated the responses of the model to grating motion into different directions, we found the full model T4 cell to be more sharply tuned to its preferred direction than the one without preferred direction enhancement or the one without null direction suppression (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is data from computational modeling shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "39c9eae7-200a-44a3-bb40-f4bd969a0416",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C45",
+      "claim": "Combining preferred direction enhancement with null direction suppression leads to a strong direction selectivity of the primary motion-sensing unit.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that combining preferred direction enhancement with null direction suppression leads to a strong direction selectivity of the primary motion-sensing unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "00296c49-2aec-46b3-af3f-456d25090284",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C46",
+      "claim": "Over a wide range of velocities spanning more than two orders of magnitude, T4/T5 cells responded almost exclusively to upward motion along their preferred direction, with little or no responses to motion along their null direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Over a wide range of velocities spanning more than two orders of magnitude, T4/T5 cells responded almost exclusively to upward motion, i.e. along their preferred direction, with little or no responses at all to motion along their null direction (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from calcium imaging with moving gratings shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "5fbd164c-7cbf-4ea8-afcd-d11a8dbcd47d",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C47",
+      "claim": "When stimulated with 1 Hz grating motion at various directions, T4/T5 cells showed a rather sharp directional tuning with about 90\u00b0 half-width around its preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "When stimulating the cells with 1 Hz grating motion at various directions, we found a rather sharp directional tuning with about 90\u00b0 half-width around its preferred direction (Figure 6b; see also Figure 3g in Maisak et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 6b and supported by prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "6c25582e-05a9-4c4b-ba30-f3da19e1c185",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C48",
+      "claim": "T4/T5 cells with blocked synaptic output revealed the same high degree of directional selectivity as control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "T4/T5 cells revealed the same high degree of directional selectivity as before (Figure 6c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from tetanus toxin block experiments shown in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "4badb683-1c16-4c75-a292-70d9cac0140e",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C49",
+      "claim": "The mechanism underlying the high degree of directional selectivity in T4 cells does not include the output of oppositely tuned T4 cells but rather originates in the dendrite of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "From this, we conclude that the mechanism underlying the high degree of directional selectivity in T4 cells does not include the output of oppositely tuned T4 cells but rather originates in the dendrite of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the tetanus toxin block experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "2f1ca03b-459b-417f-9bd0-56f4a8f611d3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C50",
+      "claim": "The Hassenstein-Reichardt model leads to weakly direction-selective signals in the first place, which are improved downstream by subtraction of oppositely tuned components.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Hassenstein-Reichardt model (Hassenstein and Reichardt, 1956) as well as in the Barlow-Levick model (Barlow and Levick, 1965) direction selectivity emerges by a nonlinear interaction of asymmetrically filtered signals from adjacent image points: an enhancement along the preferred direction in the first, and a suppression along the null direction in the second model. Both models lead to weakly direction-selective signals in the first place, which, in the Hassenstein-Reichardt model, are improved downstream by subtraction of oppositely tuned components (for review, see Borst and Helmstaedter, 2015.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about motion detection models, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "a5b4f064-b3eb-41e7-b441-06f60f06f4de",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C51",
+      "claim": "A high degree of directional selectivity is found already at the first stage where directional responses are observed, i.e. in T4 and T5 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, a high degree of directional selectivity is found already at the first stage where directional responses are observed, i.e. in T4 and T5 cells (Maisak et al., 2013) (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "d5683d49-f61c-4075-be21-077b7e3995fb",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C52",
+      "claim": "Improving the direction-tuning already at the level of the half-detectors by additional null-direction suppression increases robustness to noise and might be energetically less costly.",
+      "claim_type": "EXPLICIT",
+      "source": "Improving the direction-tuning already at the level of the half-detectors by the additional null-direction suppression increases robustness to noise and might in addition be energetically less costly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about the functional advantages of the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "713bb8fe-71f1-4608-808d-6da7d8f5f32e",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C54",
+      "claim": "The findings require that T4 cells receive input from more than two cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the cellular implementation of the motion detector proposed by Behnia et al, 2014 our findings also require that T4 cells receive input from more than two cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "2b312f5f-d1c3-49fe-8005-b5407f1987bc",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C55",
+      "claim": "The requirement for more than two input cell types is in agreement with recent connectomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "This again is in agreement with recent connectomic data (for T4 cells: Louis Scheffer, Janelia Research Campus, personal communication; for T5 cells: Shinomiya et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by connectomic data from personal communication and citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "96d10622-63c7-4702-b979-b23619285b58",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C56",
+      "claim": "Functional studies where synaptic input elements onto T4 and T5 neurons were blocked suggested the involvement of more than two input elements in the ON- and OFF-pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, functional studies where the synaptic input elements onto T4 and T5 neurons were blocked also suggested the involvement of more than two input elements in the ON- (Ammer et al., 2015) as well as in the OFF-pathway (Serbe et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "48caa2e6-c3ea-431d-9907-e0b3317d44b3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C57",
+      "claim": "The inputs representing the enhancing, direct and suppressing input segregate on different sub-regions of the T4 dendrite, with enhancing inputs on the 'null-side' and suppressing inputs on the 'preferred side' of the dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the columnar nature of the input elements and the structure of the T4 dendrites covering multiple columns, we predict, that the inputs representing the enhancing, direct and suppressing input segregate on different sub-regions of the T4 dendrite, with enhancing inputs on the 'null-side' and the suppressing inputs on the 'preferred side' of the dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the experimental findings and anatomical considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "6672f05e-f9e6-49d7-b74a-64b132fc140c",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C58",
+      "claim": "The visual fields of single ommatidia have Gaussian sensitivity profiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight activation of neighboring columns results directly from the optics of the fly's eye, where the visual fields of single ommatidia have Gaussian sensitivity profiles with an acceptance angle roughly matching the inter-ommatidial separation (G\u00f6tz, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about fly optics, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "1a906011-f37c-4218-bebb-78f22390f37c",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C59",
+      "claim": "The acceptance angle of single ommatidia roughly matches the inter-ommatidial separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The slight activation of neighboring columns results directly from the optics of the fly's eye, where the visual fields of single ommatidia have Gaussian sensitivity profiles with an acceptance angle roughly matching the inter-ommatidial separation (G\u00f6tz, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about fly optics, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "f381f385-a89c-4e2a-b8ed-d14408344f5c",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C60",
+      "claim": "Flies see the world through a hexagonal array of facets each equipped with its own small lens focusing light onto 8 photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies see the world through a hexagonal array of facets each equipped with its own small lens focusing the light onto 8 photoreceptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge about fly visual system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "247a40dd-3264-42f3-be43-49e9c0fe9e8d",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C61",
+      "claim": "The relatively small differences between large, but poorly tuned signals in the Hassenstein-Reichardt correlator would be highly prone to noise.",
+      "claim_type": "EXPLICIT",
+      "source": "While the output of the full Hassenstein-Reichardt-correlator after the subtraction stage shows a high degree of directional selectivity in the absence of null-direction suppression, the relatively small differences between large, but poorly tuned signals (see Figure 5c, middle panel) would be highly prone to noise.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the modeling results shown in Figure 5c.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "9b45227f-fc46-4af8-8ab6-cd1f3ce7080b",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C62",
+      "claim": "A recent study concluded preferred direction enhancement as the sole mechanism underlying elementary motion detectors in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study addressing the mechanisms underlying the elementary motion detectors in Drosophila concluded preferred direction enhancement as the sole mechanism (Fisher et al. 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "97740338-9402-430a-bd3d-b64326dca110",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "claim_id": "C63",
+      "claim": "The stimulation paradigm used by Fisher et al. 2015 consisting of flashes at 2 positions simultaneously does not allow discrimination between different mechanisms including lateral inhibition, adaptation and null direction suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we find that their stimulation paradigm consisting of flashes at 2 positions simultaneously does not allow to discriminate between different mechanisms including lateral inhibition, adaptation and null direction suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical inference about the limitations of prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "21113923-33d6-43fb-b805-c4a34174f1e3",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Telescopic stimulation successfully targets individual optic lobe columns with minimal cross-talk. L2 cells show highly localized receptive fields (<30% response to adjacent columns), while T4 cells integrate input from multiple columns (50% response to adjacent columns, 25% to next ring), consistent with their role as motion detectors requiring spatially offset inputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide converging evidence from calcium imaging (Figure 2) showing column-specific stimulation works as intended. The L2 data validates the method's spatial precision, while T4 data demonstrates expected multi-column integration. The interpretation (C24) logically follows from the receptive field measurements and is consistent with known T4 morphology (C15).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "ee5c5359-e028-4d83-a02c-59268affab61",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "T4 neurons implement both preferred direction enhancement and null direction suppression mechanisms in spatially segregated receptive field regions. Sequential stimulation in the preferred direction (ventral-to-dorsal) produces supra-linear responses, while null direction stimulation produces sub-linear suppression. These mechanisms are spatially offset, with PD enhancement shifted toward the null-side and ND suppression toward the preferred-side, and exhibit temporal dynamics peaking around 500ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 form the core experimental finding, supported by apparent motion experiments (Figure 3a-c). The nonlinear response analysis comparing actual responses to linear predictions provides clear evidence for both mechanisms. The spatial segregation (C28) is directly demonstrated in Figure 3b, and temporal dynamics (C29-C30) are quantified. This is rigorous experimental work with appropriate controls (flicker responses as linear predictions).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "aeef353a-05a5-4105-9fa4-5ff183f037fc",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Null direction suppression exhibits cumulative properties and can produce inhibition below baseline. Sequential null-direction stimulation across multiple columns produces progressively stronger suppression, with responses falling below single-column flicker responses. Simultaneous stimulation of the central column with dorsal columns also produces suppression, indicating spatial antagonism within the receptive field.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 extend the characterization of ND suppression with systematic experiments (Figure 3d-e). The observation that responses fall below baseline (C33) provides strong evidence for active inhibition rather than passive filtering. The cumulative effect (C31, C34) and simultaneous suppression (C35-C36) are well-documented experimentally. However, the interpretation of 'inhibition' (C33) is inferential\u2014alternative mechanisms like adaptation or divisive normalization could produce similar effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "bf654d50-2724-43b7-858c-c63ccc217614",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The visibility of null direction suppression depends critically on stimulus spatial extent. Large horizontal bars (180\u00b0 \u00d7 4.5\u00b0) produce minimal flicker responses and obscure ND suppression, showing primarily PD enhancement. Small bars (4.5\u00b0 \u00d7 3\u00b0) reveal strong flicker responses and pronounced ND suppression localized to the dorsal receptive field, consistent with telescopic stimulation results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 demonstrate stimulus-dependency of mechanism visibility (Figure 4). This is important for reconciling different experimental paradigms and explains why prior studies may have missed ND suppression. The experiments are well-controlled (same cells, different stimulus sizes) and results are internally consistent with the telescopic stimulation findings. This addresses a key methodological issue in the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "468d40b4-21ec-40a1-9e24-5051085ca2c8",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Computational modeling demonstrates that combining PD enhancement and ND suppression produces sharper directional tuning than either mechanism alone. The full model exhibits high directional selectivity across broad velocity ranges with minimal null-direction responses, while models lacking either mechanism show substantial null-direction responses nearly matching preferred-direction responses. This combination increases robustness to noise compared to the classical Hassenstein-Reichardt correlator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 and C61 present modeling results (Figure 5) that support the functional significance of dual mechanisms. The model is clearly described with specific parameters, and comparisons between full and reduced models are systematic. However, the model is relatively simple (algorithmic rather than biophysically detailed), and the noise robustness claim (C61) is inferential rather than quantitatively demonstrated. The model successfully reproduces key experimental observations but doesn't constitute independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "b24c5714-2cb3-43f8-9606-4a39dc0d8fb5",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T4/T5 cells exhibit sharp directional tuning (90\u00b0 half-width) with strong preferred-direction responses and minimal null-direction responses across two orders of magnitude in velocity. This high directional selectivity persists when synaptic output is blocked with tetanus toxin, demonstrating that the mechanism originates in the dendrites rather than requiring feedback from oppositely-tuned cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49 characterize directional selectivity and test the mechanism's origin (Figure 6). The tetanus toxin experiment (C48) is a strong control that rules out network-level explanations involving reciprocal inhibition between oppositely-tuned T4 cells. The conclusion (C49) logically follows from the experimental manipulation. However, the effectiveness of the tetanus toxin block is referenced to supplementary material, and it's unclear if partial block could affect the interpretation. Sample sizes are provided (n=7-15 flies).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "b7c20ecc-9e66-46fa-8474-f77b8c4af8da",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The spatial segregation of PD enhancement and ND suppression mechanisms requires T4 cells to receive input from more than two cell types across multiple columns. This prediction is consistent with recent connectomic data and functional blocking studies. The authors predict that enhancing inputs localize to the 'null-side' and suppressing inputs to the 'preferred-side' of T4 dendrites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 present important mechanistic inferences and predictions. While the requirement for >2 input types (C54) follows logically from the spatial segregation findings, and is supported by connectomic (C55) and functional data (C56), the specific dendritic localization prediction (C57) remains speculative. The connectomic support includes unpublished personal communication, which cannot be independently verified. These are reasonable predictions requiring future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "75e9fb96-c4f7-4d03-ab61-9e614b3c2218",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors critique a recent study (Fisher et al. 2015) that concluded PD enhancement was the sole mechanism, arguing that the simultaneous two-position flash paradigm used cannot discriminate between ND suppression, lateral inhibition, and adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C63 address prior work. While C62 accurately cites Fisher et al. 2015, the critique in C63 is inferential and not experimentally demonstrated in this manuscript. The authors don't show data directly comparing their paradigm to Fisher et al.'s or demonstrate that the simultaneous flash paradigm is indeed ambiguous. This is a reasonable methodological critique but lacks direct experimental support within this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "d58df1f8-d415-4330-8299-043c0592e0c8",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript establishes context by reviewing established knowledge: two alternative mechanisms for direction selectivity (PD enhancement and ND suppression) have been proposed, T4/T5 are the first direction-selective neurons in the fly visual system, and classical models (Hassenstein-Reichardt, Barlow-Levick) produce weakly direction-selective signals requiring downstream processing. Surprisingly, T4/T5 cells already exhibit sharp directional tuning, which the current findings explain through combined mechanisms that may increase noise robustness and reduce energetic costs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C14, C50-C52 provide accurate background context supported by appropriate citations. The definitions of PD enhancement (C13) and ND suppression (C14) are standard. The observation that T4/T5 show unexpectedly sharp tuning (C51) is well-established (Maisak et al. 2013). The functional speculation about noise robustness and energetic efficiency (C52) is reasonable but not experimentally tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    },
+    {
+      "id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006",
+      "content_id": "37de1c11-4975-4299-ab8e-a465d12b69a1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript reviews established anatomical and organizational principles of the Drosophila visual system: the four-layer optic lobe structure, retinotopic columnar organization, parallel ON/OFF pathways, T4/T5 subgroups tuned to cardinal directions, synaptic connectivity patterns, and the neural superposition principle whereby photoreceptors from neighboring ommatidia with shared optical axes converge on single lamina cartridges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10, C15-C18, C58-C60 accurately summarize established anatomical knowledge with appropriate citations. These provide necessary context but are not novel findings. The information is consistent with current understanding of fly visual system organization and is well-supported by the cited literature (Fischbach & Dittrich 1989, Takemura et al. 2013, Shinomiya et al. 2014, etc.).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:19:45.782767Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fa16567c-a82e-4deb-b023-8327f21ff735",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "bec40225-97eb-4e7f-9c94-4b3bebb1a2ed",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "163818aa-4d5f-49d1-97fd-762067c047bf",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "c08e6909-7977-48bb-a28f-147196924ec6",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "7b5edbd0-bb33-42e3-8c00-c91d04a69249",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "109c0ca5-f66d-4051-8d38-acfc2963635a",
+      "result_id": "21113923-33d6-43fb-b805-c4a34174f1e3"
+    },
+    {
+      "claim_id": "b8060fc6-fa29-490b-accd-12f53dcf8f02",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "74e1fc22-430f-4887-9d5f-605ec44a6c72",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "8a25e849-8cbb-42f1-8c57-e7d0f962e0bc",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "43cb0a3b-df91-46e9-ac89-328367d1ecfe",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "a23273b7-c12f-4e69-8d2a-f91e4a1e8ba5",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "ebd6d040-c253-487a-ab53-12dbe624d4c2",
+      "result_id": "ee5c5359-e028-4d83-a02c-59268affab61"
+    },
+    {
+      "claim_id": "a449256d-3bbc-4a1c-bd29-883f40f81a14",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "693fe2d9-f766-47e5-a5fd-7bafea978fa0",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "d88cd671-e33d-408e-bc06-5ec5e894d223",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "359746e4-57a1-43d1-9520-1834feeb58cd",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "55ea9735-90d9-483d-a49b-45475da0a48f",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "f7d879ec-5031-4e00-b8d3-55bc7543d172",
+      "result_id": "aeef353a-05a5-4105-9fa4-5ff183f037fc"
+    },
+    {
+      "claim_id": "014e48ac-36a2-4bf4-839d-b647d1588640",
+      "result_id": "bf654d50-2724-43b7-858c-c63ccc217614"
+    },
+    {
+      "claim_id": "02eda000-f48c-4bf3-a939-ef172bf1ecc4",
+      "result_id": "bf654d50-2724-43b7-858c-c63ccc217614"
+    },
+    {
+      "claim_id": "ca2dc6c4-2174-430a-9de6-97e862dc97b3",
+      "result_id": "bf654d50-2724-43b7-858c-c63ccc217614"
+    },
+    {
+      "claim_id": "c67e82a1-75af-4ac0-903a-7236d2b7014d",
+      "result_id": "bf654d50-2724-43b7-858c-c63ccc217614"
+    },
+    {
+      "claim_id": "04934489-7d4c-4226-8caa-89ccb8c77596",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "5d616257-0820-4778-8b01-b6953de71310",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "f37156e0-5807-4117-99c3-65ca4f3aff91",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "573e5bf3-2e0b-4889-a2e1-c12acea036b5",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "39c9eae7-200a-44a3-bb40-f4bd969a0416",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "247a40dd-3264-42f3-be43-49e9c0fe9e8d",
+      "result_id": "468d40b4-21ec-40a1-9e24-5051085ca2c8"
+    },
+    {
+      "claim_id": "00296c49-2aec-46b3-af3f-456d25090284",
+      "result_id": "b24c5714-2cb3-43f8-9606-4a39dc0d8fb5"
+    },
+    {
+      "claim_id": "5fbd164c-7cbf-4ea8-afcd-d11a8dbcd47d",
+      "result_id": "b24c5714-2cb3-43f8-9606-4a39dc0d8fb5"
+    },
+    {
+      "claim_id": "6c25582e-05a9-4c4b-ba30-f3da19e1c185",
+      "result_id": "b24c5714-2cb3-43f8-9606-4a39dc0d8fb5"
+    },
+    {
+      "claim_id": "4badb683-1c16-4c75-a292-70d9cac0140e",
+      "result_id": "b24c5714-2cb3-43f8-9606-4a39dc0d8fb5"
+    },
+    {
+      "claim_id": "713bb8fe-71f1-4608-808d-6da7d8f5f32e",
+      "result_id": "b7c20ecc-9e66-46fa-8474-f77b8c4af8da"
+    },
+    {
+      "claim_id": "2b312f5f-d1c3-49fe-8005-b5407f1987bc",
+      "result_id": "b7c20ecc-9e66-46fa-8474-f77b8c4af8da"
+    },
+    {
+      "claim_id": "96d10622-63c7-4702-b979-b23619285b58",
+      "result_id": "b7c20ecc-9e66-46fa-8474-f77b8c4af8da"
+    },
+    {
+      "claim_id": "48caa2e6-c3ea-431d-9907-e0b3317d44b3",
+      "result_id": "b7c20ecc-9e66-46fa-8474-f77b8c4af8da"
+    },
+    {
+      "claim_id": "9b45227f-fc46-4af8-8ab6-cd1f3ce7080b",
+      "result_id": "75e9fb96-c4f7-4d03-ab61-9e614b3c2218"
+    },
+    {
+      "claim_id": "97740338-9402-430a-bd3d-b64326dca110",
+      "result_id": "75e9fb96-c4f7-4d03-ab61-9e614b3c2218"
+    },
+    {
+      "claim_id": "88785eba-0fcd-4c2f-b74f-f162a657c76a",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "927c99ce-7a3c-4ca1-992d-769c719607a3",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "fbcf3338-cb26-47e1-94f9-5baafa9b8cdc",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "0072effc-d76a-4ef7-9ea2-7400b31e006d",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "264ccf88-f075-4854-bc60-7b4ab0fa1793",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "d032d227-091f-4cb7-864a-e8f2ad301e9e",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "2f1ca03b-459b-417f-9bd0-56f4a8f611d3",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "a5b4f064-b3eb-41e7-b441-06f60f06f4de",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "d5683d49-f61c-4075-be21-077b7e3995fb",
+      "result_id": "d58df1f8-d415-4330-8299-043c0592e0c8"
+    },
+    {
+      "claim_id": "5d977f0f-4527-464c-b347-5a65fd5d870f",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "d2cee402-cb28-4fe3-aa22-9cfd74c5fe5a",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "c7197e29-3705-437c-bd38-2a414e913d3a",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "45de8265-b8e5-4278-8230-71bb3a2b60d3",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "5f0a2b0f-6cf7-4ffe-813d-6e19d0744ae2",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "34b0fd52-57e2-4dea-b94f-6edddd42f614",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "e2bd243c-8119-40c9-849c-f8df4a7fc344",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "07259442-1aae-4d8a-90c8-83a6bb98aa1f",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "e665fbb2-9430-4afa-9847-d74d0b8996db",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "1999e1a7-4a04-4e70-86db-a7dd50f39250",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "bd4d9445-41a0-4187-ae07-376ca96d1601",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "6672f05e-f9e6-49d7-b74a-64b132fc140c",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "1a906011-f37c-4218-bebb-78f22390f37c",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    },
+    {
+      "claim_id": "f381f385-a89c-4e2a-b8ed-d14408344f5c",
+      "result_id": "fa01c66d-04dc-4a6a-8e3a-20369ecce006"
+    }
+  ],
+  "comparisons": []
+}

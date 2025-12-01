@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The solution structure of Chd1 was determined using SAXS and PELDOR measurements. SAXS data showed Chd1 is monomeric in solution with the DBD and N-terminal residues contributing to a protrusion adjacent to the ATPase domains. PELDOR distance measurements between 16 site pairs, combined with two independent modeling approaches (Xplor-NIH and TagDock), yielded consistent models (RMSD 2.4 \u00c5) showing the relative orientation of the DBD and chromoATPase domains. The PELDOR-derived model is compatible with SAXS envelopes, and addition of missing loops improved the fit from \u03c7\u00b2=11.5 to \u03c7\u00b2=2.08.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are well-supported by complementary biophysical data. Multiple SAXS fragments were analyzed (C28-C34), PELDOR measurements were validated against known crystal structures (C37-C38), and two independent modeling approaches yielded consistent results (C47-C49). The improved fit after adding missing loops (C54) demonstrates internal consistency. The cys-free mutant retained activity (C35), validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The N-terminal region of Chd1 mediates interactions with the DNA-binding domain (DBD). Chemical crosslinking mass spectrometry identified crosslinks between the N-terminus and DBD (C55). Gel-filtration experiments showed that the isolated DBD forms an intermolecular complex with Chd1 1-1010 lacking the DBD (C57), but this interaction is lost when the N-terminal 133 amino acids are deleted (C58) or when just the acidic patch (residues 57-88) is deleted (C62). Sequence analysis revealed conservation of an acidic tract (57-88) followed by a basic region (90-120) in the N-terminus (C60-C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by multiple lines of evidence including crosslinking-MS (C55), gel-filtration with deletion mutants (C57-C58, C62), and sequence conservation analysis (C60-C61). The systematic deletion approach clearly identifies the acidic patch as critical for DBD interaction. The data are internally consistent and use appropriate biochemical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Mutations in the N-terminus have both positive and negative effects on Chd1 activity. Deletion of the acidic patch (\u039457-88) increased nucleosome sliding 2-fold (C64) and ATPase activity (C69-C70), primarily through increased Kcat, and enhanced nucleosome binding (C71). In contrast, deletion of the basic region (\u039490-120) abolished sliding activity (C65), and deletion of residues 1-35 reduced activity 20-fold (C67). Triple mutation of conserved lysines in the basic region reduced activity >10-fold (C68). Mutations that increased activity (\u039457-88, \u03941-133) reduced association between the ATPase and DBD domains (C73).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic mutagenesis with multiple functional assays (nucleosome repositioning, ATPase activity, nucleosome binding). The data show clear structure-function relationships with quantitative measurements. The correlation between reduced domain association and increased activity (C73) provides mechanistic insight, though this remains somewhat speculative. The kinetic analysis (C70) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The hyperactive Chd1 \u039457-88 mutant affects nucleosome spacing in vivo. In an isw1\u0394chd1\u0394 strain, nucleosome positioning is severely compromised and partially restored by reintegrating wild-type CHD1 (C75). The \u039457-88 mutant restored nucleosomal oscillation with slightly greater amplitude than wild-type (C76) and caused a 4 bp downstream offset at nucleosome +3 that incremented at subsequent nucleosomes (C77), consistent with increased inter-nucleosome spacing (C78). Overexpression of wild-type Chd1 (>3-fold) caused ~6 bp increased spacing (C79-C80), while overexpression of \u039457-88 caused ~26 bp increased spacing (C81), indicating that nucleosome spacing is influenced by Chd1 activity levels (C82-C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by genome-wide MNase-Seq data with appropriate controls and quantification. The dose-dependent effect of Chd1 levels on nucleosome spacing (C79-C82) strengthens the conclusion. Western blotting confirmed protein levels (C79). The data demonstrate physiological relevance of the in vitro findings. Triplicate biological replicates were performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Cryo-EM structure of the apo Chd1-nucleosome complex reveals minimal engagement. Chd1 1-1305 was studied with nucleosomes bearing symmetrical 25 bp linkers in the absence of ATP analogs (C87). 3D classification and refinement yielded a volume at ~20 \u00c5 resolution (C88) into which the solution model of Chd1 and a mononucleosome could be fitted (C89). A notable feature is that the engagement surface between Chd1 and the nucleosome is minimal (C90), suggesting Chd1 is bound through the DBD while the ATPase domains are not engaged (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by cryo-EM data with appropriate image processing. The resolution (~20 \u00c5) is modest but sufficient for domain-level interpretation. The minimal engagement surface (C90) is a direct observation from the structure. The interpretation that the DBD is bound while ATPase domains are not engaged (C91) is reasonable given the structural data, though it remains an inference. The structure is consistent with the solution studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Cryo-EM structure of the engaged Chd1-nucleosome complex reveals DNA unwrapping and domain reorientation. The hyperactive Chd1 \u039457-88 mutant was studied with nucleosomes bearing an 11 bp asymmetric linker in the presence of ADP-BeFx (C94). From 2450 movies and 280,000 particles (C95), 197,602 particles were classified (C96) yielding a final volume at 15 \u00c5 resolution (C97). The nucleosome and chromoATPase domains could be unambiguously positioned (C98-C99), with solvent masking revealing linker DNA trajectory (C100). Comparison with the solution structure shows a major change in DBD orientation relative to ATPase lobe 1 (C101), with the solution conformation incompatible with nucleosome binding due to steric clashes (C102). The nucleosomal DNA adjacent to the linker is unraveled from the octamer surface (C103-C104).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by high-quality cryo-EM data with extensive image processing (multiple rounds of 3D classification, particle movie correction, solvent masking). The 15 \u00c5 resolution is appropriate for the conclusions drawn. The DNA unwrapping (C103-C104) is directly observed in the structure. The conformational change (C101) is supported by comparison with the solution structure. The steric clash analysis (C102) validates the conformational change. The use of the hyperactive mutant and ADP-BeFx to stabilize the engaged state is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "FRET measurements confirm ATP-dependent DNA unwrapping. Fluorescent dyes were introduced at specific positions on nucleosomal DNA (C105). No FRET change was observed at F-71/F+14 with Chd1 1-1305 (C106), consistent with the 6 bp linker being too short for DBD binding on that side (C107). However, at F+2/R-66, Chd1 1-1305 with AMP-PNP reduced mean FRET efficiency from 0.5 to 0.3 (C108), consistent with DNA dissociation 9 bp from the nucleosome edge (C109). The \u039457-88 mutant showed similar FRET changes with both AMP-PNP and ADP-BeFx (C110). DNA dissociation did not extend deep into the nucleosome (R-60 unaffected, C111), but a larger FRET change was observed at R-85 (C112-C113). Kinetic analysis showed that AMP-PNP favored the unwrapped state through both increased unwrapping rate and decreased re-association rate (C114), confirming that DNA unwrapping occurs with wild-type Chd1 (C115) and is favored in the nucleotide-bound state (C116).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic single-molecule FRET measurements at multiple positions with appropriate controls. The data are consistent with the cryo-EM structure showing DNA unwrapping. The kinetic analysis (C114) provides mechanistic insight into the nucleotide-dependent conformational change. The use of multiple nucleotide analogs (AMP-PNP, ADP-BeFx) and both wild-type and mutant Chd1 strengthens the conclusions. The FRET data provide orthogonal validation of the structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Chd1 exists in an auto-inhibited state in solution that must be relieved for nucleosome engagement. The unfavorable alignment of the C-terminal DBD in solution contributes to an auto-inhibited state (C8). The predominant conformation in solution is not capable of binding nucleosomes in the fully engaged active conformation (C153), thus the apo protein is auto-inhibited (C154). Consistent with this, mutations that increase activity (including \u039457-88) have been reported in Chd1 and other remodeling ATPases (C155). Mutations to the N-terminus that increase activity reduce interactions between the DBD and chromoATPase (C156), suggesting that increased flexibility in domain orientation increases the opportunity for productive nucleosome engagement (C157). Regulation of accessory domain orientation represents a potent means of regulating remodeling ATPase activity (C158).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by the structural data showing incompatibility between the solution and engaged conformations (C153, C102), the mutagenesis data showing that disrupting domain interactions increases activity (C156, C64-C73), and the observation that the solution conformation cannot bind nucleosomes in the engaged state. The auto-inhibition model (C8, C154) is a reasonable interpretation of the data. The broader conclusion about regulation (C158) is well-supported by the data and consistent with findings in related enzymes (C155).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Chd1 engages nucleosomes in distinct conformations depending on nucleotide state. In the apo state, the DNA-binding domain contacts the edge of the nucleosome (C2). In the presence of ADP-beryllium fluoride, there are additional interactions between the ATPase domain and the adjacent DNA gyre 1.5 helical turns from the dyad axis (C3). Binding in the engaged conformation involves unraveling the outer turn of nucleosomal DNA (C4) and requires substantial reorientation of the DNA-binding domain with respect to the ATPase domains (C5). The orientation of the DNA-binding domain is mediated by sequences in the N-terminus (C6), and mutations to this region have positive and negative effects on Chd1 activity (C7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the major findings of the manuscript and are supported by the structural (cryo-EM, SAXS, PELDOR), biochemical (mutagenesis, activity assays), and biophysical (FRET) data described in the other results. The claims accurately reflect the experimental findings and are stated at an appropriate level of confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Chd1 can engage with nucleosomes in multiple conformations beyond those characterized. The study demonstrates that Chd1 engages nucleosomes in different modes (C118), but additional conformations likely exist with different linker lengths and ATP hydrolysis states (C119). Complexes with two Chd1 molecules per nucleosome can form but were not characterized (C120). Ensemble approaches may report on mixtures of different states (C121).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge the limitations of the study. The observation of multiple binding modes (C118) is directly supported by the apo and engaged structures. The speculation about additional conformations (C119) is reasonable given the complexity of the system. The statement about 2:1 complexes (C120) is supported by gel shift data showing super-shifted bands. The caveat about ensemble methods (C121) is a valid interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The DBD binds the first ~10 bp of linker DNA, and this interaction is functionally important. In the engaged complex, the DBD is bound close to the nucleosome edge interacting with the first 10 bp of linker DNA (C127). Previous studies showed that deleting the SANT-SLIDE domains greatly reduces activity (C128), but fusion to heterologous DNA-binding domains restores activity (C129). Optimal positioning for Chd1-AraC hybrids is +8 bp from the nucleosome boundary (C130), and for Chd1-streptavidin fusions is +11 bp (C131). These observations indicate that interaction with the first turn of DNA outside the nucleosome is functionally important (C132), and nucleosome repositioning is directed towards the bound linker (C133).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims integrate the structural findings (C127) with previous functional studies (C128-C131) to draw a well-supported conclusion about the functional importance of DBD positioning (C132-C133). The structural data are consistent with the optimal positioning determined in previous studies. The interpretation is reasonable and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The chromoATPase domain engages nucleosomal DNA at SHL 1.5, in a distinct arrangement from ISW2. ATP-dependent repositioning occurs through the chromoATPase domain engaging nucleosomal DNA centered 1.5 superhelical turns off the dyad (C138). This SHL 1.5 location is 90 bp from the bound linker on the linear sequence (C139) but in closer spatial proximity once DNA is wrapped (C140). This arrangement differs from ISW2, where the proximal dyad location is bound by the ATPase domains (C141-C142). The distinct topography raises the possibility that DNA translocation orientation differs from other enzymes (C143).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by the cryo-EM structure showing the position of the chromoATPase domain (C138-C140). The comparison with ISW2 (C141-C142) is based on published crosslinking data and is accurate. The speculation about translocation directionality (C143) is appropriately cautious and acknowledges that the resolution is insufficient to determine strand specificity (C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The cryo-EM structure has limitations but is consistent with recent crosslinking data. The resolution does not enable assignment of strand specificity of nucleic acid contacts (C144) or comment on rearrangements between domains during DNA engagement (C145). However, a recent crosslinking study (C146) identified major DNA contacts by the DBD, chromodomains, and ATPase domain that are consistent with the model (C147). The cryo-EM model is reinforced by orthogonal FRET and crosslinking data (C148).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately acknowledge the limitations of the structural data (C144-C145) while noting consistency with independent crosslinking data (C146-C147). The statement about orthogonal validation (C148) is well-supported by the FRET data and published crosslinking studies. This demonstrates scientific rigor in acknowledging limitations while highlighting strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "DNA unwrapping may prime the nucleosome for ATP-dependent remodeling. Loss of octamer contacts on the bound side reduces the energy required for dynamic alterations to nucleosomal DNA (C134) and may act as a priming step for subsequent ATP-dependent remodeling (C135). This priming step may distinguish initial ATP-dependent changes from subsequent cycles (C136). Consistent with this, 7 bp of DNA have been observed to be removed from nucleosomes by ISW2 and Isw1b followed by 3 bp movements (C137).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are speculative (C134-C136) and represent a mechanistic hypothesis rather than a directly demonstrated result. While the DNA unwrapping is clearly observed (C103-C104, C108-C116), the functional significance as a 'priming step' is inferred. The comparison with ISW2/Isw1b (C137) provides some support but does not directly test the priming hypothesis. Additional experiments would be needed to test this model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Large-scale nucleotide-dependent conformational changes have been observed in related enzymes. A large-scale conformational change in SNF2h has been reported (C149), involving repositioning of the SANT-SLIDE DBD from +20 bp to -25 bp (C150). This could involve redistribution from positions along the linker to high occupancy at the nucleosome boundary (C151). Evidence for conformational changes upon DNA binding has also been obtained for Drosophila ISWI by protease digestion (C152).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize published findings on related enzymes (C149-C152) and provide context for the Chd1 findings. The citations are appropriate and the interpretations are reasonable. This contextualizes the Chd1 results within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "Regulation of remodeling enzyme activity may be important for managing nuclear ATP levels. The combined abundance of chromatin remodeling enzymes could present a load on nuclear ATP levels (C159). Regulation allowing increased activity when chromatin organization is required would reduce energy expenditure (C160).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are speculative and not directly tested in the manuscript. While the auto-inhibition mechanism is well-supported (C153-C158), the physiological significance in terms of ATP management (C159-C160) is hypothetical. This represents an interesting hypothesis but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Chd1 activity may be influenced by linker length to achieve nucleosome spacing. The activity of Chd1 is anticipated to be influenced by the length of DNA between adjacent nucleosomes (C162). In the ISWI-related ACF complex, pause duration is shortened when linker lengths increase from 40-60 bp (C163), and the AutoN activation mutation impedes DNA length sensing (C164). This may function similarly to the hyperactive Chd1 \u039457-88 mutant (C165). However, there may be important differences between ISWI and Chd1 SANT-SLIDE domains (C166-C167). Yeast Chd1 organizes nucleosomes with relatively short 16 bp linkers (C168), and engagement with the first turn of extranucleosomal DNA provides a means of achieving activity within close-packed arrays (C169). Steric clashes would be anticipated when linker length falls below 20 bp, reducing activity (C170). Inhibition of repositioning at low linker lengths is sufficient to drive even spacing via a bidirectional statistical process (C171).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are largely speculative and represent a mechanistic model for how Chd1 might sense linker length to achieve nucleosome spacing. While the structural data (C169) and in vivo spacing data (C168, C74-C83) are well-supported, the specific mechanism of linker length sensing (C162, C170) is not directly tested. The comparisons with ACF/ISWI (C163-C167) provide context but do not validate the model for Chd1. The statistical spacing model (C171) is cited but not experimentally tested here.",
+    "result_type": "MINOR"
+  }
+]

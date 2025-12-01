@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript provides background on voltage-gated ion channels, their structure, function, and the phenomenon of VSD relaxation. These claims establish the scientific context for the study, describing the modular nature of voltage-gated channels, the role of VSDs, and prior observations of relaxation in various systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by extensive citations to established literature (C1-C23). They represent accepted knowledge in the field and provide appropriate context for the experimental work. The claims accurately summarize prior work on channel structure, VSD function, and relaxation phenomena.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Shaker-iVSD (isolated voltage sensing domain without pore) exhibits significantly altered gating kinetics, forms a cation-selective ion channel with strong proton preference, displays pronounced relaxation, and the development of ion conduction indicates allosteric influence of the pore domain on VSD conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These core findings are well-supported by extensive experimental data presented in Figures 1-5. The altered kinetics (C24), cation selectivity with proton preference (C25, demonstrated in Figure 2), allosteric influence (C26, inferred from identical sequence producing different phenotype), relaxation (C27, shown in Figure 5), and correlation between pore closing and relaxation (C28, Figure 5f) are all demonstrated with appropriate controls and multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Shaker-iVSD expressed in Xenopus oocytes and HEK293 cells produces ionic currents with weak voltage dependence at -90 mV holding potential and strong rectification at 0 mV holding potential, with appropriate controls showing no similar currents in Shaker-W434F or water-injected oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations are well-documented with appropriate controls (C35, C36) and replication in two expression systems (C29, C37). The voltage-dependent behavior (C32, C33, C38, C39) is clearly demonstrated in Figure 1c-g with quantitative I-V relationships. The controls effectively rule out endogenous currents and confirm the phenotype is specific to the iVSD construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Shaker-iVSD forms a cation-selective pore with strong proton selectivity (PH/PNMDG ~1400), showing pH-dependent shifts in reversal potential and permeability order P(H+) >> P(K+) \u2248 P(Na+) > P(NMDG+), with no significant anion permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ion selectivity characterization is thorough and well-controlled (Figure 2a-f). The pH-dependence experiments (C40, C41, C44, C45), ionic substitution experiments (C42, C43, C48), calculated permeability ratio (C46), and anion exclusion (C47, C50) provide converging evidence for the selectivity profile. The reversal potentials not reaching theoretical E(H+) (C41) is appropriately noted and discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The permeation pathway in Shaker-iVSD is similar to \u03c9-currents and Hv1 channels, as evidenced by Zn2+ sensitivity. Increasing Zn2+ concentrations (0-20 \u00b5M) progressively reduced ionic current while immobilizing voltage sensors (reduced relative fluorescence change) without altering FV relations or activation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Zn2+ blocking experiments (Figure 3a-e) provide strong evidence for the permeation pathway. The dose-dependent current reduction (C54), unchanged activation kinetics and FV relations (C55, C56), but reduced relative fluorescence change (C57, C58) indicate voltage sensor immobilization rather than simple pore block. The comparison to Hv1 (C53, C59) and structural alignment (C60) support the gating pore pathway hypothesis (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The D277H mutation in Shaker-iVSD increased Zn2+ affinity 40-fold (IC50 0.15 \u00b5M vs 6 \u00b5M), confirming ion permeation through the gating pore in the central voltage sensor domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The D277H mutant experiments (Figure 3g-i) provide strong confirmatory evidence for the permeation pathway. The 40-fold increase in Zn2+ affinity (C66) is clearly demonstrated with dose-response curves, and the authors appropriately interpret this as confirming the gating pore pathway (C67). The shift in voltage dependence (C65) is also documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Shaker-iVSD exhibits slower fluorescence kinetics than Shaker-W434F with holding potential-dependent behavior. At -90 mV holding, channels are constitutively open and close slowly upon depolarization with fluorescence not correlating with current. At 0 mV holding, both current and fluorescence develop with similar time constants at hyperpolarized potentials, indicating fluorescence change and conduction are independent steps with different rate-limiting transitions depending on holding potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic analysis (Figure 4a-c) is thorough and well-documented. The holding potential-dependent differences (C68-C77) are clearly demonstrated with simultaneous current and fluorescence measurements. The bi-exponential kinetics (C78), voltage-dependent time constants (C79), and correlation analysis (C80-C82) provide detailed mechanistic insights. The interpretation that fluorescence and conduction are independent steps (C73) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Shaker-iVSD displays much shallower voltage dependence than wild-type with unsaturated FV relations at extreme potentials. The FV relations show ~50 mV hysteresis between -90 mV and 0 mV holding potentials (relaxation/mode shift), with more pronounced shift in iVSD (-95 mV) compared to W434F (-31 mV), resolving whether relaxation is an intrinsic VSD property.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The voltage dependence characterization (Figure 4d, 5a-b) clearly demonstrates the shallow slope (C83, C84) and hysteresis (C85). The comparison with Shaker-W434F (C89, C91) and the observation that iVSD shows relaxation despite lacking a pore domain (C88) provides strong evidence that relaxation is an intrinsic VSD property, resolving a key question in the field (C86, C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Entry into mode shift in Shaker-iVSD follows mono-exponential kinetics (\u03c4 = 452 ms) compared to double-exponential recovery in Shaker-W434F (\u03c4 = 36 ms and 279 ms). The mode shift temporally coincides with ionic current onset, indicating the permeation pathway closes during VSD relaxation despite being open in both resting and activated states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic analysis of mode shift (Figure 5c-f) is well-executed with clear temporal correlation between relaxation and current development (C94). The mono-exponential kinetics for iVSD (C92) versus double-exponential for W434F (C93) are clearly demonstrated. The inference that the permeation pathway closes during relaxation (C95) is well-supported by the temporal correlation in Figure 5f.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The VSD of Shaker significantly alters behavior when expressed without the pore domain, exhibiting much shallower voltage dependence and assuming a different structural conformation. This is likely due to dispersion of the electric field when the hydrophobic plug/gating charge transfer center is no longer intact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The altered behavior (C96, C97) is clearly demonstrated throughout the results. The inference of different structural conformation (C98) is well-supported by the development of cation conduction. However, the mechanistic explanation (C99, C100) is appropriately presented as speculation ('probably related') with citation support, though it cannot be directly tested with the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A three-state model is proposed where resting and activated states are conducting while the relaxed state is non-conducting. Fluorescence changes report the fast resting-to-activated transition, while the activated-to-relaxed transition is silent in fluorescence. This model is supported by temporal correlation between relaxation and channel opening from 0 mV holding potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed model (C101, Figure 5g) effectively explains the experimental observations. The assignment of fluorescence to the resting-activated transition (C102) and the silent nature of the relaxation transition (C103) are consistent with all the kinetic data. The temporal correlation supporting the model (C104) is clearly demonstrated in Figure 5e. This represents a well-supported mechanistic interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The permeation pathway in Shaker-iVSD is likely similar to \u03c9-currents and Hv1, supported by Zn2+ block and residue positioning. In wild-type Shaker, arginines are coordinated by acidic residues (R3/R4/K5 by E247/E283/E293 in activated state, likely R1/R2 in resting state). Comparison with Hv1 structure suggests differences in acidic residue coordination patterns between the two channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparisons and mechanistic interpretations (C105-C114) are well-supported by citations to crystal structures and prior work. The Zn2+ blocking data (C106) provides experimental support for the pathway. The structural arguments about arginine coordination (C107-C109) and comparisons with Hv1 (C110, C113, C114) are appropriately cited and represent reasonable interpretations of available structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In Shaker-iVSD, salt bridges between S4 arginines and S1-S3 acidic residues must be broken by conformational change (no mutations in VSD core). Gating can be linked to VSD relaxation. In resting and activated states, iVSD forms a cation-selective pore that closes in the relaxed state, indicating acidic residues become inaccessible. Without the pore domain, C-type inactivation and open state stabilization cannot influence relaxation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference that salt bridges are broken by conformational change (C115) is logical given the experimental design. The link between gating and relaxation (C116) is well-supported by the temporal correlations. The state-dependent pore formation (C119, C120) is clearly demonstrated by the experimental data. The exclusion of pore-dependent effects on relaxation (C118) is a valid inference from the construct design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The pore domain provides essential stabilizing effects for native VSD function, as evidenced by cation pore development and slower kinetics despite identical primary sequence. Stabilization might involve direct protein-protein contacts or energetic interactions. The T1-domain may hold iVSD subunits together, but D277H Zn2+ sensitivity indicates this interaction doesn't form the permeation pathway, which passes through the gating pore center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion about pore domain stabilization (C122) is well-supported by the dramatic functional differences despite identical VSD sequence. The speculation about stabilization mechanisms (C123, C124) is appropriately presented as possibilities with citation support. The T1-domain discussion (C125, C126) is reasonable speculation, and the D277H data (C127) effectively rules out inter-subunit interactions forming the permeation pathway. The gating pore location (C128) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The complete system has a different energy landscape than isolated domains, as shown by different voltage ranges causing relaxation in W434F versus iVSD. The final assembly doesn't necessarily behave as the sum of components. Removing the pore domain creates a voltage-gated cation channel, suggesting closer structural links between Kv and Hv channels than previously thought, with potential implications for disease-causing truncation mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion about different energy landscapes (C129) is well-supported by the relaxation data. The general principle about macromolecular assemblies (C130) is appropriately stated. The observation about creating a cation channel (C131) is a clear experimental finding. The speculation about Kv-Hv relationships (C132) and disease implications (C133) are appropriately presented as possibilities requiring further investigation.",
+    "result_type": "MAJOR"
+  }
+]

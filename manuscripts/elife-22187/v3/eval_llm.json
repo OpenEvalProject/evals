@@ -1,0 +1,438 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "B16\u03c10 cells lack mtDNA, while B16\u03c10SC, B16\u03c10CTC, and B16\u03c10SCL cells contain host-origin mtDNA with homogeneous distribution and similar levels to parental B16 cells. The mtDNA in B16\u03c10SC cells is of host origin with >99.5% homoplasmy as determined by sc/ddPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C40-C42 are well-supported by multiple complementary techniques (sc/ddPCR, confocal microscopy, STED microscopy) shown in Figure 1A-B and Appendix 1-figure 2A-B. The sc/ddPCR assay provides high sensitivity (0.5% detection limit) for determining mtDNA origin, and microscopy confirms absence/presence and distribution of mtDNA across cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "B16\u03c10 cells lack the respirasome (CI/CIII/CIV supercomplex) but retain low amounts of sub-CV and fully assembled CII, consistent with CII being entirely nDNA-encoded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by NBGE data in Figure 1C showing absence of respirasome in B16\u03c10 cells while CII remains assembled. The interpretation is consistent with established knowledge that CII subunits are all nDNA-encoded (C27), making CII assembly independent of mtDNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "POLG1 binding to the mtDNA D-LOOP region is high in B16, B16\u03c10SC, B16\u03c10CTC, and B16\u03c10SCL cells but absent in B16\u03c10 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by mitoChIP assay data in Figure 1D. The absence of POLG1 binding in B16\u03c10 cells is expected given their lack of mtDNA (C21), while presence in other lines indicates active mtDNA replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "B16\u03c10 cells show complete loss of respiration, increased lactate production, decreased ATP production, and reduced mitochondrial enzyme activities (SDH, SQR, CS) compared to B16\u03c10SC, B16\u03c10CTC, and B16\u03c10SCL cells, which show respiration similar to parental B16 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 are well-supported by comprehensive metabolic characterization in Figure 1E-L. The data show consistent metabolic consequences of mtDNA loss (C31-C36) and recovery in derived cell lines (C30), with appropriate controls and multiple complementary assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C50"
+    ],
+    "result": "Mitochondrial function is fully restored in B16\u03c10SC cells derived from primary tumors, in contrast to 4T1\u03c10SC cells which show only partial recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C50 are supported by the comprehensive data in Figure 1 showing complete respiration recovery, respirasome assembly, and enzyme activity restoration in B16\u03c10SC cells. The comparison to 4T1 cells (C50) is supported by citation to previous work (Tan et al., 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "mtDNA-encoded transcript levels are low in B16\u03c10SC cells but higher in B16\u03c10CTC and B16\u03c10SCL cells, while SCAFI transcripts are similar across all lines and TFAM transcripts are low in B16\u03c10 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by transcript analysis data described in the text. The progressive increase in mtDNA-encoded transcripts from B16\u03c10SC to B16\u03c10CTC to B16\u03c10SCL is consistent with the timeline of mtDNA acquisition and expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "LC3AII levels are lower in B16\u03c10 cells, indicating stalled autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is supported by Western blot data in Appendix 1-figure 2C. However, the interpretation of 'stalled autophagy' based solely on LC3AII levels requires caution, as LC3AII levels can reflect either increased autophagosome formation or decreased autophagosome turnover.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Many nDNA-encoded mitochondrial proteins including respiratory complex subunits are unstable in B16\u03c10 cells (except SDHA and ATP\u03b2), likely due to absence of mtDNA-encoded binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by cycloheximide treatment data in Appendix 1-figure 2D. The interpretation that instability results from lack of mtDNA-encoded binding partners (C49) is reasonable speculation consistent with known protein complex assembly requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C103"
+    ],
+    "result": "All B16 sub-lines form tumors without delay except B16\u03c10 cells, which show >2 week delay. B16\u03c10SC cells show no delay compared to parental B16 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C103 are supported by tumor growth data in Figure 2A using ultrasound imaging. The data clearly show delayed tumor formation from B16\u03c10 cells and restoration of normal kinetics in B16\u03c10SC cells, consistent with respiration recovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Tumors derived from all five B16 sub-lines are melanomas with necrotic cells away from blood vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by histological examination in Figure 2B. The observation of necrosis away from blood vessels is consistent with hypoxia in poorly vascularized tumor regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Tumors derived from B16\u03c10 cells show higher respirasome levels and increased CI-dependent respiration and ETS compared to tumors from other B16 sub-lines, with restoration of tumorigenic potential correlating with respiration recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by NBGE (Figure 2C) and respiration measurements (Figure 2F) of tumor tissues. The increased CI-dependent respiration in B16\u03c10-derived tumors suggests compensatory upregulation. Normal liver tissue controls (C57) strengthen the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "NDUFV1 KD and SDHC KD cells show reduced proliferation and respiration. NDUFV1 KD specifically reduces CI-dependent respiration while SDHC KD reduces both CII- and CI-dependent respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by proliferation (Figure 3B) and respiration data (Figure 3C-D). The cross-talk between CII and CI suppression (C62) is interesting but the mechanism is not explored. Western blot validation of knockdowns (Figure 3A) strengthens the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C68",
+      "C69"
+    ],
+    "result": "Knockdown of NDUFV1 or SDHC severely impairs tumor formation, with NDUFV1 KD being more effective (only 1/5 mice formed tumors) than SDHC KD (4/6 mice formed tumors with delays). CI suppression is more detrimental than CII suppression for tumor formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C68-C69 are supported by tumor formation data in Figure 3E-F. The differential effects of CI vs CII knockdown are clearly demonstrated, though the mechanistic basis requires further investigation. Sample sizes are adequate (5-6 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Tumors from NDUFV1 KD and SDHC KD cells show better histological differentiation with less aggressive features compared to control tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by pathological examination in Figure 3G. The interpretation of 'less aggressive' based on morphological features is reasonable but somewhat subjective. Quantitative metrics would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C96",
+      "C112"
+    ],
+    "result": "Respiration is essential for efficient tumor formation, with severe suppression of CI- or CII-dependent respiration impairing tumor-forming ability and directly linking mitochondrial respiration to tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C96, C112 represent the major conclusion supported by the knockdown experiments (Figure 3) and are consistent with cited literature. The causal link between respiration and tumor formation is well-established by the functional genetic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mitochondria transfer from MSCs to B16\u03c10 cells in co-culture, but not to B16 cells or from B16 to B16\u03c10 cells, indicating regulated, selective transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by confocal microscopy data in Figure 4A and Appendix 1-figures 3A-B. The control experiments (C76) excluding dye diffusion and showing selectivity strengthen the conclusion of regulated transfer (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "DsRed mitochondria transfer from MSCs to \u03c10 cells via intracellular bridges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by microscopy data in Appendix 1-figure 3C showing physical connections between cells during mitochondrial transfer. This provides mechanistic insight into the transfer process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Double-positive cells containing both host mitochondria and tumor cell nuclei were found at 0.23\u00b10.18 frequency in BFP-positive populations, identifying mouse stromal cells as mitochondria donors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by flow cytometry sorting and confocal microscopy data (Figure 4B). The frequency measurement provides quantitative evidence for the transfer phenomenon in vivo. However, the standard deviation is quite large relative to the mean.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "B16\u03c10 DP cells contain fully formed mitochondrial cristae, mtDNA nucleoids, active POLG1 binding, recovered respiration, and form tumors without lag, demonstrating that intact mitochondria transfer restores function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are comprehensively supported by multiple techniques: TEM (Figure 4C), STED microscopy (Figure 4D), mitoChIP (Figure 4E), respiration assays (Figure 4F), and tumor formation (Figure 4G). This multi-modal characterization strongly supports the conclusion of functional mitochondrial transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C113"
+    ],
+    "result": "B16\u03c10 cells acquire mtDNA through transfer of whole mitochondria from host animals, leading to normalization of mitochondrial respiration and restoration of tumor-forming capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C5, C113 represent the central findings of the paper, supported by the transgenic mouse model (C57BL/6Nsu9-DsRed2), DP cell characterization (Figure 4), and functional assays throughout. The evidence converges from multiple independent approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The transient nature of dsRed expression in recipient cells rules out cell fusion and supports selective transfer of whole mitochondria as the mechanism, since dsRed cannot be replenished without nuclear transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 present a logical argument based on the genetic system design. The reasoning is sound: if cell fusion occurred, nuclear dsRed genes would transfer and maintain expression, but transient expression indicates mitochondria-only transfer. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "result": "Knockdown of NDUFV1 or SDHC in B16\u03c10 cells abolished or significantly retarded tumor formation, providing functional evidence for an essential role of oxidative phosphorylation in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C6 are supported by the knockdown experiments in Figure 3E-F. However, the claim that this provides evidence for 'an essential role of OXPHOS in cancer' (C6) is somewhat overstated, as this is specific to the B16 melanoma model and may not generalize to all cancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "B16\u03c10-derived tumors show higher CI-dependent respiration than B16 tumors. B16\u03c10SC cells show complete respiration recovery and no tumor formation delay, unlike 4T1\u03c10SC cells, possibly due to B16 cells' higher baseline respiration (~100 vs <20 pmol O2/s/10^6 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by respiration data (Figure 2F, Figure 1E) and comparison to previous work. The speculation about respiration thresholds (C104) is reasonable but requires further testing. The comparison between B16 and 4T1 systems provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C95"
+    ],
+    "result": "The acquisition of host mtDNA by tumor cells occurs through mtDNA transfer from host to tumor cells, with whole mitochondria transfer being the most plausible mechanism. B16\u03c10 cells do not form tumors unless they acquire mtDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, C95 are supported by the sc/ddPCR data showing host origin of mtDNA (Figure 1A) and tumor formation kinetics (Figure 2A). While C72 notes alternative explanations like cell fusion, the dsRed experiments (C107-C110) effectively rule this out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "CI is essential for respirasome assembly, which is needed for CI-dependent respiration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by citations to established literature (Moreno-Lastres et al., 2012; Ac\u00edn-P\u00e9rez et al., 2008; Lapuente-Brun et al., 2013). This provides mechanistic context for the differential effects of CI vs CII knockdown observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C116"
+    ],
+    "result": "Tunneling nanotubes are proposed as a plausible mechanism for intercellular mitochondrial transfer, suggesting potential therapeutic approaches targeting mitochondrial respiration or blocking mitochondrial transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111 and C116 are speculative statements about future research directions and therapeutic implications. While supported by citations, these mechanisms are not directly tested in this study. The therapeutic proposals (C116) are reasonable extrapolations but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "This paper is the first to show lasting functional consequences of a well-documented mitochondrial transfer event.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 represents the authors' assessment of novelty. The claim is reasonable given the comprehensive functional characterization (respiration recovery, tumor formation) following documented mitochondrial transfer, distinguishing this from previous reports that showed transfer without long-term functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing that cancer is characterized by mtDNA mutations and altered metabolism (Warburg effect), that OXPHOS is important for cancer despite glycolytic bias, and that \u03c10 cells form delayed tumors with mtDNA acquisition from the host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 represent established knowledge and prior work, supported by appropriate citations. These provide context for the current study. C18-C19 specifically reference the authors' previous work (Tan et al., 2015) that motivated the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C114",
+      "C115"
+    ],
+    "result": "Background claims about horizontal gene transfer, MSCs as mitochondrial donors, previous evidence for mitochondrial transfer in mammals, and consistency with emerging understanding of OXPHOS importance in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C87-C94, C114-C115 provide literature context supported by appropriate citations. These establish the broader significance of the findings and place them within the emerging field of horizontal mitochondrial transfer in cancer biology.",
+    "result_type": "MINOR"
+  }
+]

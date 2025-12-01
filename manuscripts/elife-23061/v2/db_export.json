@@ -1,0 +1,1685 @@
+{
+  "submission": {
+    "id": "520c8318-393e-4d45-bff5-620fe8441a58",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:47:01.080754Z",
+    "updated_at": "2025-11-30T22:47:01.080754Z"
+  },
+  "content": [
+    {
+      "id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "submission_id": "520c8318-393e-4d45-bff5-620fe8441a58",
+      "content_type": "manuscript",
+      "content_text": "# Modelling primaquine-induced haemolysis in G6PD deficiency\n\n## Authors\n\n- James Watson<sup>1</sup> ([ORCID: 0000-0001-5524-0325](https://orcid.org/0000-0001-5524-0325)) \u2020\n- Walter RJ Taylor<sup>1</sup>\n- Didier Menard<sup>3</sup> ([ORCID: 0000-0003-1357-4495](https://orcid.org/0000-0003-1357-4495))\n- Sim Kheng<sup>4</sup>\n- Nicholas J White<sup>1</sup> ([ORCID: 0000-0002-1897-1978](https://orcid.org/0000-0002-1897-1978))\n\n### Affiliations\n\n1. Mahidol Oxford Tropical Medicine Research Unit, Faculty of Tropical Medicine Mahidol University Bangkok Thailand\n2. Centre for Tropical Medicine and Global Health, Nuffield Department of Medicine University of Oxford Oxford United Kingdom\n3. Unit\u00e9 d'Epid\u00e9miologie Mol\u00e9culaire du Paludisme Institut Pasteur du Cambodge Phnom Penh Cambodia\n4. National Center for Parasitology, Entomology and Malaria Control Phnom Penh Cambodia\n\n\u2020 Corresponding author\n\n## Abstract\n\nPrimaquine is the only drug available to prevent relapse in vivax malaria. The main adverse effect of primaquine is erythrocyte age and dose-dependent acute haemolytic anaemia in individuals with glucose-6-phosphate dehydrogenase deficiency (G6PDd). As testing for G6PDd is often unavailable, this limits the use of primaquine for radical cure. A compartmental model of the dynamics of red blood cell production and destruction was designed to characterise primaquine-induced haemolysis using a holistic Bayesian analysis of all published data and was used to predict a safer alternative to the currently recommended once weekly 0.75 mg/kg regimen for G6PDd. The model suggests that a step-wise increase in daily administered primaquine dose would be relatively safe in G6PDd. If this is confirmed, then were this regimen to be recommended for radical cure patients would not require testing for G6PDd in areas where G6PDd Viangchan or milder variants are prevalent.\n\n## Introduction\n\n### Radical cure of vivax malaria in G6PD deficient patients\n\nPlasmodium vivax accounts for over half the world\u2019s malaria burden outside sub-Saharan Africa (Gething et al., 2012). The control and elimination of vivax malaria require both cure of the blood stage infection (the stage that causes acute illness) and the prevention of later relapses which derive from dormant hypnozoites in the liver (radical cure). Hypnozoites are formed from sporozoites, which do not develop immediately following mosquito inoculation but instead remain dormant in hepatocytes for weeks or months before developing and causing recurrent blood stage infections called relapses. In general, P. vivax infections in tropical regions are associated with frequent relapses (with intervals as short as three weeks) whilst relapses in P. vivax infections from Central America, Northern India and temperate regions are associated with longer intervals from acute infection to first relapse (White, 2011).\n\nPrimaquine, an 8-aminoquinoline, is currently the only widely available antimalarial drug for the radical cure of P. vivax infections. Primaquine causes predictable oxidant haemolysis in G6PD deficiency\u00a0(G6PDd) one of the most common genetic abnormalities of man (Cappellini and Fiorelli, 2008). Throughout Asia, the Mediterranean littoral and Africa, allele frequencies for this enzyme deficiency vary between 3% and 35% in the populations at risk from vivax malaria (Howes et al., 2013). As G6PDd has sex-linked inheritance, males are either deficient (hemizygotes) or normal, whereas women can be deficient (homozygotes), normal or partially deficient (heterozygotes) in proportions determined by the Hardy-Weinberg equilibrium. Because of Lyonisation, there is substantial variability in the proportion of red cells which are deficient in individual heterozygote females (Beutler et al., 1962).\n\nThe degree of haemolysis following primaquine depends on the dose administered and the severity of the enzyme deficiency (and in heterozygote females the proportion of erythrocytes which are deficient). The more severe G6PDd variants found in South\u00a0East\u00a0(SE) Asia (for\u00a0example, Viangchan, Mahidol, Coimbra, Union) and the Middle East/West Asia (for\u00a0example, Mediterranean) are generally associated with more severe haemolysis compared to the common African A- variant. For G6PD normal patients, the primaquine regimen for radical cure that is recommended in SE Asia and Oceania (where relapse rates are high) is 0.5 mg base/kg/day for 14 days. Elsewhere it is 0.25 mg/kg/day for 14 days. For patients with G6PDd, a weekly dose is recommended; 0.75 mg/kg/week given for a total of 8 doses. Unfortunately G6PDd testing is not widely available despite the recent introduction of point-of-care rapid diagnostic tests (RDTs) for G6PDd. These RDTs are currently too expensive to deploy on a wide scale and can be difficult to interpret, and thus are not generally available (Brito et al., 2016-08; Satyagraha et al., 2016; Oo et al., 2016). Thus, primaquine is commonly not given to patients to avoid the risk of haemolysis so the burden of vivax malaria remains high, causing considerable morbidity and economic loss (Price et al., 2007).\n\n### Mechanisms of red blood cell production\n\nThe mechanisms regulating red blood cell production and turnover have been well characterised. Red blood cells (RBCs) transport oxygen which is reversibly bound to the main red cell protein, haemoglobin. RBC production in the bone marrow is regulated to maintain oxygen carrying capacity. When the haemoglobin concentration in the\u00a0blood falls, this reduces oxygen carriage and RBC production is up-regulated, a process mediated largely by the renal hormone, erythropoietin. At times of increased bone marrow production, reticulocytes appear in increased numbers in the circulation (the upper limit of normal is $\u22481.5%$). Normal RBCs in healthy people have a very stable life expectancy of around 120 days. This is well modelled by a Gumbel distribution with low variance. In nucleated cells G6PD can be newly synthesised, but the\u00a0red cells lose their nucleus before leaving the bone marrow so very young red cells (reticulocytes) have the highest G6PD activity, and this declines as the RBCs age. In most G6PDd variants, the mutant enzyme degrades more rapidly compared to the normal enzyme. Older erythrocytes may have up to five times less G6PD activity than reticulocytes. G6PDd results in lowered NADPH and a reduced ability to regenerate reduced glutathione. Reduced glutathione protects normal RBCs against oxidant stresses such as the haemolytic effects of primaquine metabolites and certain foods, classically fava beans. G6PD is also important for the function of catalase, another oxidant defence mechanism. As these non-reusable oxidant defence reserves are \u2018used up\u2019, the aging erythrocyte becomes increasingly vulnerable to oxidant haemolysis (Beutler et al., 1954a;\u00a0Dern et al., 1954; Beutler, 2008; Recht et al., 2014).\n\n### Evidence from previous studies of oxidant haemolysis in G6PD deficiency\n\nAs young red cells have more functional enzyme than older cells, the degree of oxidant haemolysis depends on the genetic variant of G6PDd and the age distribution of the red cell population. Once the older cells have haemolysed, the remaining younger erythrocytes are essentially resistant to further damage by the same dosing regimen (that\u00a0is, drug exposure) (Beutler et al., 1954a). However, higher primaquine doses do cause further haemolysis. This explains the fall then rise in haemoglobin with continued daily primaquine administration in mild and moderate severity variants of G6PDd. This temporary primaquine insensitivity in G6PDd individuals with the\u00a0continued primaquine administration was characterised by Beutler and colleagues in a series of studies conducted over sixty years ago (Beutler et al., 1954a,1954b, 1955;\u00a0Dern et al., 1954; Beutler, 1959) and later exploited by Alving et al. to develop the once weekly regimen in G6PDd\u00a0(Alving et al., 1960.)\n\nBy experimenting with high-dose weekly regimens and low-dose daily regimens, Beutler and colleagues showed haemoglobin would first fall as a result of oxidant haemolysis and then rise despite continued exposure to the same doses of primaquine which had caused the initial haemolysis. This resulted from reactive erythropoiesis (reticulocytosis) that introduced a younger red cell population to the circulation which was essentially \u2018resistant\u2019 to the haemolytic effects of that primaquine dose. Intermittent primaquine administration resulted in progressively smaller cycles of haemolysis followed by reticulocytosis as the red cell population became younger. These results led to a recommendation for a high-dose, once weekly primaquine regimen for radical cure in vivax malaria patients with G6PDd (8 once weekly adult doses of 45 mg) (Alving et al., 1960). This regimen was devised based on studies in subjects with the African $A^{-}$ variant of G6PDd, which is one of the mildest deficiencies. Safety was not formally assessed in more severe deficiencies. A recent trial of this regimen in vivax malaria patients with the more severe Viangchan G6PDd variant from Cambodia showed a greater fall in haemoglobin and a delayed recovery from anaemia in G6PDd compared to G6PD normal patients with one patient requiring a blood transfusion (Kheng et al., 2015). These data suggest that weekly primaquine may not be the optimal regimen for the more severe G6PDd variants prevalent outside Africa.\n\nReconsideration of the detailed haematological studies that laid the foundation for the weekly regimen suggests that an ascending-dose regimen of primaquine, with a schedule that matches the dynamics of red blood cell production, could induce a safe \u2018slow burn\u2019 haemolysis, even in individuals with severe G6PDd variants, and would still deliver a total therapeutic dose for radical cure.\n\nAccordingly, our study had two objectives; first, to construct a compartmental model for red blood cell dynamics which could be used to analyse all available data from past studies of haemolysis in G6PDd individuals, and second to predict an optimal ascending dose regimen which would be safe and efficacious yet practical and could, therefore, be recommended without G6PD testing.\n\n## Results\n\n### Model fit\n\nFigure 1 shows hypothetical data simulated from the compartmental model with a primaquine regimen of 45\u00a0mg weekly for eight weeks fitted to data from adult G6PD deficient Cambodian patients.\u00a0Parameters were\u00a0randomly drawn from the Bayesian posterior distribution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig1-v2.jpg)\n\n**Figure 1.:** Left: reticulocyte response; Right: haemoglobin response.\n\nThe signal-to-noise ratio in the reticulocyte data is low and this is apparent from the median reticulocyte count which varies considerably during the 56 days.\u00a0In comparison, simulations from the mechanistic model show that a\u00a0substantial rise in the reticulocyte count should occur approximately one week after the first dose, with a peak after the third dose, and then return to normal slowly over the subsequent six weeks. The serial haemoglobin data on the other hand show a clear trend with a large fall after the first dose, a smaller fall after the second and then a gentle recovery with no major effect from subsequent primaquine doses. This trend is reproduced by the model and the posterior distribution also characterises satisfactorily the variance observed in steady state haemoglobin concentrations.\n\n### Predicted dose response\n\nCombining the data from Figures 2\u20134, it is possible to estimate a primaquine dose-haemoglobin response curve for G6PDd individuals whose severity is similar to the \u2018moderate severity\u2019 variants G6PDd Mahidol/Viangchan. The data at different dosing levels are sparse and the studies have been done in very different contexts; however, the strong mechanistic assumptions used to construct the compartmental model regularize the problem enough to compare the studies in a principled way. The data from G6PDd Mediterranean are excluded from this dose-response curve estimation because the haemolysis observed with this variant is considerably greater than for G6PDd Mahidol/Viangchan. However, the observed falls in haemoglobin after 5 daily doses of 30\u00a0mg in G6PDd Med Sardinians are shown by the red triangles in Figure 5, right plot, for comparison.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig2-v2.jpg)\n\n**Figure 2.:** Dosing periods are shaded in blue. The top two plots are for Mahidol and Viangchan variants, respectively. The bottom two plots are for the Mediterranean variant. From top left to bottom right: single 45\u00a0mg dose given to 7 G6PDd Mahidol Thais (Charoenlarp et al., 1972); 14 daily doses of 30\u00a0mg given to 15 G6PDd presumed Viangchan variant Khmer soldiers (only mean and extreme values reported) (Everett et al., 1977); 1 G6PDd Med Sardinian given two courses of daily 30 mg doses (Pannacciulli et al., 1965); 2 G6PDd Med Sardinians given 5 daily doses of 30\u00a0mg (Salvidio et al., 1967).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig3-v2.jpg)\n\n**Figure 3.:** Comparison between approximate model fits (red) and data (green) extracted from four primaquine studies on the same individual with G6PDd African $A^{-}$(Alving et al., 1960).Dosing periods are shaded in blue. The top two plots are for weekly dosing regimens (8 doses): left is 60\u00a0mg per week; right is 45\u00a0mg per week; the bottom two plots are daily dosing regimens (14 doses): left is 15\u00a0mg per day; right is 30\u00a0mg per day.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig4-v2.jpg)\n\n**Figure 4.:** Time series data of reticulocyte count (top row) and haemoglobin concentrations (bottom row) from the Cambodian study on G6PDd individuals ($n=18$, left column) and G6PD normals ($n=57$, right column) (Kheng et al., 2015).The faint green lines show individual patient data; the thick black lines represent the population median values at each time-point; the dashed black lines show the interquartile range.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig5-v2.jpg)\n\n**Figure 5.:** Left: estimates of the $log\u2061d$ parameter as a function of the\u00a0administered dose plotted with a linear regression curve (red cross: Viangchan; red circles: posterior estimates from model fitted to data from G6PDd Viangchan; blue cross: Mahidol; green crosses: African $A^{-}$). Right: dose-response curve (thick black line) with 90% credible intervals (dotted black lines) as measured by fall in haemoglobin ($y$-axis) after five days at a given dose ($x$-axis) based on draws from the posterior distribution. The red and green crosses are the estimated falls after five days from Viangchan and African $A^{-}$ studies, respectively (see Figures 2,3). The red triangles show the falls observed in G6PDd Med studies from Figure 2.\n\nThe posterior MCMC samples inferred from the Kheng data can be used to approximate model uncertainty around the median dose-response curve. The right plot of Figure 5 shows the posterior predictive dose-response curve with 90% credible intervals, where the \u2018response\u2019 is defined as the drop in haemoglobin after five days at a given dosing level. Overlaid are estimates of the falls in haemoglobin induced by 5 daily doses from studies in Figures 2,3, and an extrapolated estimate from the posterior distribution of the model fitted to data from weekly dosing in Viangchan variant.\n\nIt is of interest to compare the fitted dose-response relationship in Figure 5 (right: thick black line)\u2014corresponding to the more severe variants of G6PDd\u2014with the green crosses corresponding to observed and fitted haemolysis in G6PDd African $A^{-}$ (mild variant). As would be expected, for the mild variant the dose-response relationship has the same shape but is shifted to the right.\n\n### Safe optimal regimen\n\nThe currently recommended dose for the radical cure of vivax malaria in an adult in SE Asia and Oceania delivers 420\u00a0mg (that\u00a0is, 30 mg/d x 14 d) of primaquine and is very effective (John et al., 2012). The maximum primaquine dose administered in the weekly regimen is 360 mg (8 x 45 mg) but the efficacy of this regimen has only been reported in Afghan refugees in Pakistan, a country with a relatively low relapse rate (Leslie et al., 2008).\n\nThe primary objective of our research is to design a novel primaquine regimen that could be given safely to individuals with G6PDd or of unknown status without G6PD testing and deliver a total dose that would be efficacious. The scientific hypothesis is that the same total dose could be given safely with tolerated declines in Hb over a longer duration by starting with a lower initial dose which is increased gradually over time. The ascending dose regimen would allow for a steady adjustment of the age distribution of RBCs by both slow primaquine-induced haemolysis and the resulting increased erythropoiesis. These results only concern ascending dose regimens given over 20 days. There are two reasons for this; first, adherence to long course regimens is likely to be poor, and second, the first relapses emerge from the liver about 14 days after starting treatment so the primaquine regimen has to provide sufficient drug to prevent the\u00a0emergence or eliminate these parasites.\n\n#### Definition\n\nFor practical purposes, an acceptable ascending dose regimen is defined as a monotonic increasing dose regimen satisfying the following conditions: (i) the total dose is >380 mg ,\u00a0(current tablet sizes do not allow for a regimen to provide 420 mg easily to all adult patients\u2014and 380\u00a0mg is considered to give similar efficacy); (ii) every increment is a multiple of 2.5\u00a0mg; (iii) the minimum adult daily dose is 5 mg; and (iv) the maximum adult daily dose is 30 mg.\n\nThe optimal ascending-dose regimen is defined as the one resulting in the slowest haemolysis, where the rate of haemolysis is penalized by the squared gradient. The optimisation problem is non-convex for all ascending dose regimens, so the solution is approximated using a greedy search algorithm. An estimated optimal dosing regimen satisfying the criteria defined above is shown in Figure 6, plotted in red (left: haemolytic effect; right: daily dosing of the ascending regimen). This was found using the median Bayesian posterior parameter estimates and a dose-response relationship taken from a linear interpolation of all points in Figure 5 (left plot). In blue is a simplified version of this ascending-dose regimen, broken into four 5-day cycles at a fixed dose. The resulting haemolysis from the blue regimen is greater, and the drops in haemoglobin are more irregular (left plot). Video 1 in the supplementary materials illustrates the red blood cell dynamics over the course of this regimen.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig6-v2.jpg)\n\n**Figure 6.:** Left: haemolysis over time resulting from regimens. Blue: simplified regimen; red: idealized optimal regimen. Right: daily dosing construction for the two regimens. Total dose of blue regimen is 375\u00a0mg; total dose of red regimen is 382.5\u00a0mg.\n\n![Video 1.](https://cdn.elifesciences.org/articles/23061/elife-23061-media1.mp4.jpg)\n\nAlthough intuitively one might think that starting with a lower dose was safer, such a regimen can be in fact worse. This is shown in Figure 5 which compares the haemolysis resulting from four regimens given in Table 1. Regimen D delivers too little primaquine at the start (observe very small decreases in haemoglobin concentration) with a reticulocyte response that is too weak to render the RBCs 'resistant' to primaquine; the necessity to increase the PQ dose too fast to compensate for the slow start and to deliver an efficacious total dose results in a large drop in Hb on day 22.\n\n**Table 1.**\n Illustrative regimens. A is our proposed optimal ascending dose regimen; B is a slight variation on this regimen (accelerated); C is a slower ascending dose regimen (potentially suitable for more severe variants); D illustrates a very poor regimen.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Regimen</th>\n      <th colspan=\"6\">Day</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>1-5</th>\n      <th>6-10</th>\n      <th>11-15</th>\n      <th>16-20</th>\n      <th>21-25</th>\n      <th>26-30</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>7.5\u00a0mg</td>\n      <td>15\u00a0mg</td>\n      <td>22.5\u00a0mg</td>\n      <td>30\u00a0mg</td>\n      <td>-</td>\n      <td>-</td>\n      <td>A</td>\n    </tr>\n    <tr>\n      <td>7.5\u00a0mg x3\u00a0d;10\u00a0mg x 2\u00a0d</td>\n      <td>15\u00a0mg x 3\u00a0d; 17.5\u00a0mg x 2\u00a0d</td>\n      <td>20\u00a0mg</td>\n      <td>22.5\u00a0mg x 3\u00a0d; 25\u00a0mg x 2\u00a0d</td>\n      <td>-</td>\n      <td>-</td>\n      <td>B</td>\n    </tr>\n    <tr>\n      <td>5\u00a0mg</td>\n      <td>10\u00a0mg</td>\n      <td>15\u00a0mg</td>\n      <td>20\u00a0mg</td>\n      <td>25\u00a0mg</td>\n      <td>-</td>\n      <td>C</td>\n    </tr>\n    <tr>\n      <td>5\u00a0mg</td>\n      <td>5\u00a0mg x 2\u00a0d; 10\u00a0mg x 3\u00a0d</td>\n      <td>10\u00a0mg x 4\u00a0d; 15\u00a0mg x 1\u00a0d</td>\n      <td>15\u00a0mg</td>\n      <td>15\u00a0mg x 1d; 30\u00a0mg x 4d</td>\n      <td>30\u00a0mg x 3\u00a0d</td>\n      <td>D</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nPrimaquine is widely recommended for the radical cure of vivax malaria but it is often not given because testing for G6PD deficiency is not widely available outside large centres. This has deleterious consequences for vivax malaria affected communities because it is the multiple relapses of vivax malaria from liver hypnozoites that cause substantial morbidity.\n\nSeminal research conducted over 50 years ago characterized the biology of oxidant haemolysis caused by primaquine and provided an alternative once weekly regimen for patients who were G6PDd based on controlled haemolysis. This was shown to be safer in adult subjects with the 'mild' African $A^{-}$ variant of G6PDd, but was recommended for all G6PDd variants with variable adoption by countries since. In some countries (for\u00a0example, Iran) it is the standard radical treatment for all patients. The safety and effectiveness of the high dose weekly regimen have been studied little over the past five decades.\n\nUncomplicated malaria treatment recommendations are usually a trade-off between dosing precision and operational feasibility. A regimen which is long or complicated may be adhered to poorly. In this particular case it must also be able to prevent or suppress relapsing P. vivax or P. ovale parasites which begin to emerge from the liver as early as two weeks (becoming patent about one week later) in SE Asia and Oceania. This modelling exercise, based on all available data, sought to devise a primaquine regimen which would be safer in G6PDd patients, and, therefore, might be deployed without G6PD testing. It was calibrated against recent data in Cambodian patients most of whom had the Viangchan G6PDd variant. Thus, the model predictions of the degree of haemolysis and the tolerability and safety profile would be expected to hold for variants with similar or less severe enzyme abnormalities, but it would not necessarily hold for more severe variants such as G6PDd Mediterranean where more clinical research is required.\n\nUnder all circumstances, the ascending regimen proposed here would be expected to be safer than the current 14 day regimens in G6PDd hemizygous males and homozygous females, especially the 0.5 mg/kg regimen needed for frequent relapsing P. vivax. This is clinically relevant also for female heterozygotes. Even with current rapid testing methods (for\u00a0example, fluorescent spot test and RDTs) which generally detect patients with $\\leq30$% normal G6PD activity, the haemolytic risk in heterozygote females, who may be classified erroneously as 'G6PD normal', could still be substantial. Up to $\u224870$% of their erythrocytes may be G6PD deficient, and clinically significant haemolysis may result from daily higher dose primaquine regimens given to female heterozygotes (Chu et al., 2017).\n\nAlthough this compartmental model of RBC dynamics is highly simplified, it reproduces the essential dynamics of the body\u2019s response to primaquine-induced haemolysis in both healthy individuals and malaria patients. It can therefore help to guide the design of a Phase I study to evaluate its predictions, and thereby develop an optimal ascending dose regimen of PQ. An adaptive design protocol has been developed to test the simplified regimen (A) in G6PDd Mahidol healthy volunteers. A study in healthy G6PDd volunteers is essential to characterise the haemolytic response. Data from such a study can then be used to determine an optimal regimen which would then be tested for safety, and efficacy (that\u00a0is, radical cure) in vivax malaria patients in a Phase II (that\u00a0is, to define the PK-PD relationship in patients). Whether patients would adhere sufficiently to a longer regimen is an important operational concern so the optimised regimen would then need to be assessed for safety and effectiveness in larger field trials.\n\nThis use of mathematical modelling such as this could also be readily applied to the slowly eliminated 8-aminoquinoline tafenoquine, currently being tested for safety and efficacy in humans (Beck et al., 2016). Tafenoquine has the great advantage of being administered as a single dose for radical cure due to its long terminal elimination half-life. However, this means it could be dangerous in G6PD deficiency. Whereas the rapidly eliminated primaquine can be stopped if there is significant haemolysis, limiting the haemolytic effect, the haemolytic effect of the slowly eliminated tafenoquine cannot be readily reversed and so haemolysis will continue until all susceptible red cells are destroyed. Combined regimens for G6PDd patients in which primaquine is given initially to induce controlled haemolysis followed by tafenoquine might be possible, and would allow shorter total treatment durations. Data on the Hb response to different doses of tafenoquine would be necessary to calibrate the model.\n\nThe results of this study show how care will need to be taken when designing an ascending primaquine dose regimen in order to minimize falls in haemoglobin. This is shown by the toxic regimen D (Table 1 and Figure 7). This gives an insight into the \u2018memory\u2019 property of the ascending dose regimens. The effect of a 30 mg dose will entirely depend on which doses were given during the previous days. In conclusion, these results suggest that an ascending PQ dosing regimen for vivax radical cure might be well tolerated and effective in mild or moderately severe G6PDd variants. These predictions should now be tested in an adaptive phase I study.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23061/elife-23061-fig7-v2.jpg)\n\n**Figure 7.:** Left: Comparing the haemolytic effect of four regimens.\u00a0Thick black line: proposed optimal regimen; thick black dashed line: more conservative regimen with lower total dose; thin black dashed line: longer duration regimen for more severe variants; thick red line: bad choice regimen. Right: Posterior predictions for the proposed ascending dose for a given starting haemoglobin (steady state). Prediction using the median posterior values is shown by a\u00a0thick black line. Predictions for 100 random draws from the posterior are shown by dashed blue lines. The horizontal line at a haemoglobin concentration of 9 is a proposed conservative \u2018safety threshold\u2019. Horizontal line at a haemoglobin concentration of 8 is a proposed regimen\u00a0limiting toxicity threshold.\n\n## Materials\u00a0and\u00a0methods\n\n### Mathematical model\n\nThe structure of the model of red cell dynamics is similar to the compartmental model developed by (Savill et al., 2009). RBC dynamics are simulated by tracking the age distribution of the red blood cells in hourly blocks. The homeostatic dynamics, which maintain the number of red blood cells or haematocrit at a steady state are straightforward. At steady state, approximately 0.83% of RBCs are replaced each day and 1% of RBCs in the circulation are reticulocytes. Severe acute anaemia has two consequences in the bone marrow. Reticulocytes are released into the circulating blood at an earlier age and with increased erythropoiesis normoblasts may be released into the circulation (reported as nucleated RBCs) (Hillman, 1969). Previous iron turnover studies in humans following phlebotomy suggest sigmoid relationships for both of these processes (Hillman, 1969).\n\n#### Compartmental model of RBC dynamics\n\nThe steady state haemoglobin concentration is denoted $Hb^{\u2217}$. The time at which reticulocytes are released into circulation is a function of the haemoglobin concentration at time t, denoted Release\u00a0($Hb_{t}$). At steady state, when $Hb_{t}=Hb^{\u2217}$, the reticulocytes mature in the bone marrow for 3.5 days (that\u00a0is, Release\u00a0${Hb^{\u2217}}=3.5$) and then spend approximately one day in the circulation before becoming erythrocytes. In anaemia, release can occur after only one day (then the cells are reticulocytes for 3.5 days in the circulation). These relationships were shown from plasma iron turnover studies following phlebotomy (Hillman, 1969).\n\nBy modelling the number of circulating RBCs directly, it is possible to compute the haemoglobin concentration at each time point in the simulations. The steady state number of RBCs corresponds to steady state haemoglobin and steady state haematocrit. The relationship between haematocrit and haemoglobin is assumed to be linear (Lee et al., 2008). At steady state the body produces approximately $10^{8}$ RBCs per hour. In the model, this is used as the baseline production quantity, represented by a production factor of $\u03c1=1$. In extreme anaemia this can be increased fivefold or more, for\u00a0example, $\u03c1\\geq5$. Both Release\u00a0($Hb_{t}$) and $\u03c1(Hb_{t})$ are modelled as sigmoid functions:\n\n$$\n\u03c1(Hb_{t})=\\frac{\u03c1^{max}}{1+e^{\\lambda(Hb^{\u2217})(Hb_{t}\u2212Hb_{t}_{50}^{\u03c1})}}\n$$\n\n\n\n$$\nRelease(Hb_{t})=1+\\frac{2.5}{1+e^{\u2212k(Hb_{t}\u2212Hb_{t}_{50}^{R})}}\n$$\n\nwith $\\lambda(Hb^{\u2217})$ given by:\n\n$$\n\\lambda(Hb^{\u2217})=\\frac{log(\u03c1^{max}\u22121)}{Hb^{\u2217}\u2212Hb_{50}^{\u03c1}}\n$$\n\nwhere $Hb_{t}$ is the haemoglobin concentration at time $t$ (or equivalently the haematocrit); $\u03c1^{max}$ is the maximum fold increase in steady state RBC production; $Hb^{\u2217}$ is the steady state haemoglobin concentration; $Hb_{50}^{\u03c1}$ is the mid-point of the $\u03c1$ sigmoid function (the haemoglobin concentration at which production is equal to $\u03c1^{max}/2;$$k$\u00a0the Hill coefficient which regulates the steepness in response to perturbations in haemoglobin levels; $Hb_{50}^{R}$ the mid-point of the release function.\n\nFor simplicity, it is assumed that in the normal healthy state all red blood cells live exactly 120 days as erythrocytes, and therefore these two functions are sufficient to model the feedback loops which regulate perturbations to haemoglobin levels.\n\nThe following class of functions is used to model the red cell age-dependent primaquine-induced haemolysis:\n\n$$\nProbability(PMQinduceddeathataget)={e^{(t\u2212120)^{d}}t\\in[T_{min},120]0t\\leqT_{min}\n$$\n\nwhere $T_{min}$ is the age of the youngest red blood cells lysed by primaquine. This parameter varies as a function of the degree of G6PD deficiency (determined by the genetic variant of G6PDd). The data from (Pannacciulli et al., 1965) suggest cells as young as 16 days can be lysed with a daily primaquine dose of 30 mg in the severe Mediterranean variant, whereas in the less severe African A- variant haemolysis appears confined to cells older than 50 days (Beutler et al., 1954a). The steepness of this \u2018killing function\u2019 is regulated by the parameter $d$, with smaller values of $d$ giving a sharper drop in haemoglobin levels.\n\nDepending on the degree of severity of G6PD deficiency, haemolysis will be observed more or less quickly after the first dose of primaquine. To simulate this effect, a time lag component is added to the model, the value of which will depend on the genetic variant of G6PDd. The time lag component, denoted Tl\u2062a\u2062g, reduces the total haemolytic effect (as given in Equation 1 for the first Tl\u2062a\u2062g hours after the first dose of primaquine. A glossary of all parameters of the model alongside their units and interpretation is given in Table 2.\n\n**Table 2.**\n Parameters and functions of the compartmental model along with their interpretation.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Units</th>\n      <th>Meaning</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>d</td>\n      <td>unitless</td>\n      <td>Parameter of age-dependent killing function.</td>\n    </tr>\n    <tr>\n      <td>Hb\u2217</td>\n      <td>Hb</td>\n      <td>Steady state haemoglobin concentration.</td>\n    </tr>\n    <tr>\n      <td>Hbt</td>\n      <td>Hb</td>\n      <td>Haemoglobin concentration at time t.</td>\n    </tr>\n    <tr>\n      <td>\u03c1(Hb)</td>\n      <td>unitless</td>\n      <td>Fold-increase in production of RBCs as a function of haemoglobin concentration (at steady state \u03c1(Hb\u2217)=1).</td>\n    </tr>\n    <tr>\n      <td>\u03c1max</td>\n      <td>unitless</td>\n      <td>Maximum fold increase in RBC production, this will be reduced in anemia.</td>\n    </tr>\n    <tr>\n      <td>Hb50\u03c1</td>\n      <td>Hb</td>\n      <td>Haemoglobin concentration for which production is elevated to \u03c1max/2.</td>\n    </tr>\n    <tr>\n      <td>Release(Hbt)</td>\n      <td>days</td>\n      <td>Time of release of reticulocytes into circulation as a function of haemoglobin concentration.</td>\n    </tr>\n    <tr>\n      <td>k</td>\n      <td>unitless</td>\n      <td>Hill coefficient of sigmoid function Release(Hbt).</td>\n    </tr>\n    <tr>\n      <td>Hb50R</td>\n      <td>Hb</td>\n      <td>Haemoglobin concentration corresponding to the\u00a0mid-point of sigmoid describing reticulocyte release into circulation.</td>\n    </tr>\n    <tr>\n      <td>Tmin</td>\n      <td>hours</td>\n      <td>Earliest age of an RBC vulnerable to primaquine-induced haemolysis.</td>\n    </tr>\n    <tr>\n      <td>Tlag</td>\n      <td>hours</td>\n      <td>Time to reach the maximum haemolytic effect of primaquine.</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nAvailable data on primaquine induced haemolysis are sparse (these data are reviewed in detail in the next section). Thus, many of the free parameters such as $T_{l\u2062a\u2062g}$ and $T_{min}$ are fixed using expert opinion and their impact on the modelling evaluated by a sensitivity analysis shown in appendix Modelling primaquine-induced haemolysis in G6PD deficiency. A primary goal of this analysis was to parameterize the relationship between primaquine dose and haemolysis for a given severity of G6PD deficiency. Thus the dose-response curve varied with the different genetic mutations. A preliminary analysis (Figure 5) of the available historical data (Figure 2) suggests that the relationship between dose and age-dependent haemolysis as parameterised by the function in Equation 1 is logarithmic:\n\n$$\nlog\u2061d=\\alphaPMQ_{dose}+\\betax+c\n$$\n\nwhere $x$ are individual covariates of importance such the G6PDd variant and sex (the deficiency is X-linked) and $PMQ_{dose}$ is the dose of primaquine.\n\n#### Inputs and outputs of model\n\nThe goal of this compartmental model was to simulate haemolysis following primaquine administration to a G6PDd individual over a fixed period of time. In order to do this, the model needs as inputs the following elements.\n\nThe simulations output the haemoglobin concentration over time, the reticulocyte percentage over time, and the final age distribution of RBCs in both the bone marrow and in circulation.\n\nThe structure of the model also allows for the simulation of the effect of malaria within an individual by altering the age distribution as P. vivax invades young erythrocytes exclusively. It is assumed that healthy individuals with no history of haemolytic events in the last 4 months will have a uniform age distribution of RBCs. Simulations in P. vivax infections could be done by shifting the age distribution. Model code is available in Source\u00a0code\u00a01. Supplementary file 1 provides posterior MCMC samples from the model.\n\n### Data\n\n#### Historical studies\n\nAlthough primaquine was first tested in humans in 1944 and approved by the US FDA in 1952, there are very few precise data on its haemolytic effect in G6PDd individuals. Most of the studies only present sparse data, often limited to summary statistics, and with small sample sizes ($n\u22482$). This section presents an analysis of the most information-rich studies conducted over the last 60 years and shows how they can be used to design informative prior distributions for the compartmental model. An exhaustive review of all available data on the haemolytic effects of primaquine has been reported recently by Recht et al. (2014). There are however only five studies which present useful data on falls in haemoglobin concentrations over time. Throughout this section, for consistency in Figures 1\u20134, data are shown in green and the\u00a0model fits/predictions in red.\n\nThe data extracted\u00a0from past studies in healthy volunteers are shown in Figures 2,3. These figures compare least squares model fits with the data. The studies span four different variants of G6PD deficiency: Mediterranean, Mahidol, Viangchan\u00a0(The Khmer soldiers whose data are shown in Figure 2 are incorrectly referred to by Everett et al. (1977) as G6PDd Mahidol. They are in fact most likely to be G6PDd Viangchan, as the variant was discovered some ten years later [1988]) and African $A^{-}$. These can be categorised generally as severe, moderate, moderate and mild variants of G6PDd, respectively.\n\nThe deterministic compartmental model reproduces the essential patterns of the observed dynamics, namely, a more rapid decrease in haematocrit at the start of the regimen which then slows as the haemolysis becomes self-limiting. However, some aspects cannot be reproduced by the model. The bottom left plot of Figure 2 shows a sharp drop in haematocrit after the second round of primaquine administration. This is surprising, although the fact that it is outside the administration period may be an error in plotting in the original paper. The compartmental model cannot reproduce such a marked second drop after an initial fall of over 50% from baseline. In Figure 3, for the bottom two plots, the model predicts a faster initial decrease than observed for a similar nadir drop.\n\nThese data were used to select a plausible range of values for the parameter $d$ in Equation 1. This parameter governs the age-dependent haemolysis at different dosing levels.\n\n#### Weekly high-dose primaquine in G6PDd viangchan\n\nThe largest and most recent study of primaquine-induced haemolysis in G6PD deficiency is from Kheng et al. (2015). In this study, 75 Cambodian patients with vivax malaria were given primaquine 0.75 base mg/kg weekly for 8 weeks. Of these, 17 were G6PDd Viangchan (14 homozygous males and three heterozygous females) and 1 was a homozygous male with G6PDd Canton. Haemoglobin concentrations and reticulocyte counts were measured on days 0,1,2,3 and subsequently each week, before the next dose of primaquine. One patient had a marked drop of haemoglobin falling to 7.5 g/dL and required a blood transfusion. The data are shown in Figure 4. The variation in the measurement of haemoglobin was approximately 1 g/dL. For reticulocyte counts, the measurement error is much greater when done by microscopy (that\u00a0is, counting per 100 red blood cells).\n\n### Model fitting using MCMC\n\nThe historical (Figures 2,3) and Kheng (Figure 4) data were used to fit the compartmental model; the former were used to select suitable prior distributions for parameters. Bayesian model fitting via MCMC was then applied to the data from the weekly high-dose primaquine in Cambodia (Kheng et al., 2015). The likelihood of the parameters is defined by a deterministic simulation from the compartmental model for a given dosing regimen and assumes both the haemoglobin levels and reticulocyte counts are observed with Laplace distributed errors\u00a0(assuming Laplace errors is equivalent to minimizing absolute deviation). A Bayesian hierarchical structure was used for the steady state haemoglobin and the maximum increase in the production of red blood cells. This makes the assumption that each patient in the study is characterized by an individual steady state haemoglobin concentration $Hb^{\u2217}$ and a maximum production capacity $\u03c1^{max}$ drawn from a population distribution (normal distributions in both cases). Weekly informative priors were used for all parameters and the posterior distribution was estimated using MCMC with a Metropolis-Hastings proposal. Details of prior distributions and histograms of posterior distributions, together with convergence diagnostics and summary statistics are in the Appendix 1, \u2018Structure of hierarchical model and MCMC diagnostics'.\n",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "0639ab57-f68f-4c07-aee5-b71557303d75",
+      "submission_id": "520c8318-393e-4d45-bff5-620fe8441a58",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Prabhat Jha, Saint Michael's Hospital , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23061.019](https://doi.org/10.7554/eLife.23061.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Modelling primaquine-induced haemolysis in G6PD deficiency\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Prabhat Jha as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Dennis Shanks (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper needs to cite all available data and not the selected sources currently used. Some specifications about the genotypes and regimes need to be improved.\n\nEssential revisions:\n\nReviewer #1\n\nI've taken a quick look at the paper. It's not an area I know about, but the basic biology seems to have been described fairly clearly. The modelling is interesting and seems convincing but is a bit short on details. In particular I'd like to know:\n\na) More evidence that the five studies identified really capture the entirety of the useful literature \u2013 could they point to a recent literature review or even a commentary (or do a rapid review of their own)?\n\nb) More information about the model fit/validation in Figures 2,3, particularly since the data represent individuals with a range of G6PDd variants. What algorithm did they use for the fit (they mention least squares but that is just a vague term for a large class of fitting methods), what parameters were used (and what produced by the fit), and do the resulting parameters correspond to what we know about genetic variation (and indeed geographic variation in treatment etc.)?\n\nc) Given the variation in the historical studies, in what way were they used to generate priors for the MCMC algorithm? (It would be useful for the prior and posterior distributions to be shown, including the joint distributions and measures of association for the posteriors)\n\nd) For the results, it would be more useful to present them in probabilistic terms rather than show multiple lines on a graph (and in some cases ignore uncertainty entirely).\n\nReviewer #2\n\nThe manuscript reviewed concerns mathematical modeling of an important severe adverse event seen during vivax malaria treatment with primaquine. Unlike most modeling papers this manuscript has a firm, practical conclusion in the form of an alternative dosing regimen. I also found the paper much more accessible than other modeling papers however I would state that I am not a modeling expert and the editor should have the manuscript reviewed by someone with such expertise. The numbers match clinical reality as I perceive it, but someone needs to check how the figures were generated. The conclusion that the proposed regimen needs to be tested in a clinical trial is rational and fully supported. It seems likely that the large Mahidol Oxford group is already doing so and if a clinical trial has been initiated something to that effect should be inserted into the Discussion.\n\nIf possible, it is important to ground a model in reality which is done by using all the available data. The authors do so and the sparse data is rather a comment on how little has been done recently on primaquine. This model would not have been possible without the same group's recent weekly primaquine study (Kheng et al., 2015) done in Cambodia. The best available estimates from mass drug administration programs in China in the 1970s and returning US military in the 1950s suggest that the Severe Adverse Event (massive hemolysis) rate is about 1:10,000. Could the authors insert these historical studies into their model to determine if this estimated rate matches what the model generates using 22.5 mg daily for 10 days (China) and 15mg daily for 14 days (US military)? This is certainly not essential but would be a good addition if it was in the realm of statistical possibilities.\n\nIf the suggested revised primaquine regimen passes a clinical trial, then this particular modeling exercise will be exceptional in having delivered an actual advance in public health practice.\n\nReviewer #3\n\nThis paper addresses a pertinent limitation to the treatment of Plasmodium vivax malaria and proposes a novel treatment regimen for an existing licenced drug. The analysis revisits a largely forgotten idea previously suggested in the 1950s which could revolutionise how P. vivax radical cure is administered and potentially greatly increase access to treatment and hence reduce the burden of P. vivax malaria.\n\nThe paper presents a model framework which utilises the available historical data about the dynamics of primaquine-induced haemolysis in G6PD deficient patients. The parameterised model is then applied to simulate the haemolytic impact of different primaquine treatment regimens on G6PDd patients and concludes with a recommended optimal regimen which in most cases would not cross the limiting toxicity threshold (assuming the parameters defined here). The paper is clearly and logically presented, though I am not a modeller so may have missed some technical aspects of the model. I have a few remarks:\n\n1) Cambodia dataset genotypes: Specify the genotypes of the G6PDd patients from the Cambodian study. If any of these were heterozygous it would mask the full impact of the haemolysis on hemi- or homozygotes. Heterozygotes should be excluded from the model fitting to ensure that the resulting model is a \"worse case\" model for individuals with 100% G6PDd RBC.\n\n2) Anaemia: The recommended \"regimen A\" triggers an overall drop in Hb of 4g/dL. While this is a progressive drop, it is nevertheless considerable. The starting Hb* (steady state Hb conc.) has important implications for the safety of this haemolysis, and anaemia will be common among P. vivax patients. The Hb* conc. used in Figures 7 and 8 is the median value from the Kheng dataset, but Figure 4 shows there is wide variation around this. How are the Hb dynamics of the ascending regimens affected by a lower Hb*? Do the dynamics of the Hb drop differ or is it just a shift down the y-axis? The proposed \"safety threshold\" would be crossed if the starting Hb were 13g/dL or lower (which would be common), and an Hb*of <12g/dL could fall below the \"limiting toxicity threshold\". The issue of anaemia needs to be better addressed regarding the regimen's suitability for roll-out as a standard treatment.\n\n3) The recommended regimen A has a total dose of only 375mg, while the opening statement of the paragraph \"Safe optimal regimen\" indicates that 420mg are necessary for radical cure. Further justification needed regarding the rationale for this discrepancy.\n\n4) Aside from fears around drug-induced haemolysis, a major limitation to the current 14 day regimen is compliance. The proposed regimen A is 50% longer at 21 days. While this issue is beyond the scope of this paper, it should at least be acknowledged in the Discussion.\n",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5202a248-91b5-4c42-8008-b4f90ad68596",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C1",
+      "claim": "Plasmodium vivax accounts for over half the world's malaria burden outside sub-Saharan Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasmodium vivax accounts for over half the world's malaria burden outside sub-Saharan Africa (Gething et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gething et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "4555b9ec-f7bf-4ea9-afc9-6c6223e7ffab",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C2",
+      "claim": "Hypnozoites are formed from sporozoites which remain dormant in hepatocytes for weeks or months before developing and causing recurrent blood stage infections called relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Hypnozoites are formed from sporozoites, which do not develop immediately following mosquito inoculation but instead remain dormant in hepatocytes for weeks or months before developing and causing recurrent blood stage infections called relapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about P. vivax biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "2524e267-3a54-4d27-b8d6-cca846e282b6",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C3",
+      "claim": "P. vivax infections in tropical regions are associated with frequent relapses with intervals as short as three weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, P. vivax infections in tropical regions are associated with frequent relapses (with intervals as short as three weeks) whilst relapses in P. vivax infections from Central America, Northern India and temperate regions are associated with longer intervals from acute infection to first relapse (White, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "aee909d2-5dde-406a-95e7-f525931fcbbd",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C4",
+      "claim": "Primaquine is currently the only widely available antimalarial drug for the radical cure of P. vivax infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Primaquine, an 8-aminoquinoline, is currently the only widely available antimalarial drug for the radical cure of P. vivax infections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of antimalarial therapeutics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "82dbb69c-1c03-4117-8d51-16926cfd7509",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C5",
+      "claim": "Primaquine causes predictable oxidant haemolysis in G6PD deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Primaquine causes predictable oxidant haemolysis in G6PD deficiency (G6PDd) one of the most common genetic abnormalities of man (Cappellini and Fiorelli, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cappellini and Fiorelli, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "cb6f69fc-756d-4397-b8d9-bfc8fb9f43d1",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C6",
+      "claim": "G6PD deficiency is one of the most common genetic abnormalities of man.",
+      "claim_type": "EXPLICIT",
+      "source": "Primaquine causes predictable oxidant haemolysis in G6PD deficiency (G6PDd) one of the most common genetic abnormalities of man (Cappellini and Fiorelli, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cappellini and Fiorelli, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "7921d096-23f9-494f-8ae7-110bf22711e3",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C7",
+      "claim": "Allele frequencies for G6PD deficiency vary between 3% and 35% in populations at risk from vivax malaria throughout Asia, the Mediterranean littoral and Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout Asia, the Mediterranean littoral and Africa, allele frequencies for this enzyme deficiency vary between 3% and 35% in the populations at risk from vivax malaria (Howes et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Howes et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "f03a2614-d24b-4a95-b10a-2670b1feb04f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C8",
+      "claim": "G6PD deficiency has sex-linked inheritance, where males are either deficient or normal, and women can be deficient, normal or partially deficient in proportions determined by Hardy-Weinberg equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "As G6PDd has sex-linked inheritance, males are either deficient (hemizygotes) or normal, whereas women can be deficient (homozygotes), normal or partially deficient (heterozygotes) in proportions determined by the Hardy-Weinberg equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established genetic principles",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "ff3db38a-c02e-44bf-b269-0b794ee44030",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C9",
+      "claim": "There is substantial variability in the proportion of red cells which are deficient in individual heterozygote females due to Lyonisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of Lyonisation, there is substantial variability in the proportion of red cells which are deficient in individual heterozygote females (Beutler et al., 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Beutler et al., 1962",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "bab61990-ecb0-4a30-9f1a-0cdf14e8d29f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C10",
+      "claim": "The degree of haemolysis following primaquine depends on the dose administered and the severity of the enzyme deficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of haemolysis following primaquine depends on the dose administered and the severity of the enzyme deficiency (and in heterozygote females the proportion of erythrocytes which are deficient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established understanding of G6PD deficiency and primaquine effects",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "a9deac26-d166-4984-8c29-e8f37136368b",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C11",
+      "claim": "More severe G6PD deficiency variants found in South East Asia and the Middle East/West Asia are generally associated with more severe haemolysis compared to the common African A- variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The more severe G6PDd variants found in South East (SE) Asia (for example, Viangchan, Mahidol, Coimbra, Union) and the Middle East/West Asia (for example, Mediterranean) are generally associated with more severe haemolysis compared to the common African A- variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of G6PD variant severity",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "93bcdd1b-ab3f-4249-ac59-fc75fca03b72",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C12",
+      "claim": "The recommended primaquine regimen for radical cure in SE Asia and Oceania for G6PD normal patients is 0.5 mg base/kg/day for 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "For G6PD normal patients, the primaquine regimen for radical cure that is recommended in SE Asia and Oceania (where relapse rates are high) is 0.5 mg base/kg/day for 14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established treatment guidelines",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "e3dada04-bd47-4933-a828-12b05c557370",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C13",
+      "claim": "For patients with G6PD deficiency, a weekly dose of 0.75 mg/kg/week primaquine given for a total of 8 doses is recommended.",
+      "claim_type": "EXPLICIT",
+      "source": "For patients with G6PDd, a weekly dose is recommended; 0.75 mg/kg/week given for a total of 8 doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established treatment guidelines",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "4f35cc35-65c0-4602-8bd2-52fcfbca56e4",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C14",
+      "claim": "G6PD deficiency testing is not widely available despite the recent introduction of point-of-care rapid diagnostic tests.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately G6PDd testing is not widely available despite the recent introduction of point-of-care rapid diagnostic tests (RDTs) for G6PDd.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on current state of diagnostic availability",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "9a8e9464-812c-45b5-831d-07cd078c839f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C15",
+      "claim": "Current G6PD deficiency RDTs are too expensive to deploy on a wide scale and can be difficult to interpret.",
+      "claim_type": "EXPLICIT",
+      "source": "These RDTs are currently too expensive to deploy on a wide scale and can be difficult to interpret, and thus are not generally available (Brito et al., 2016-08; Satyagraha et al., 2016; Oo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Brito et al., 2016-08; Satyagraha et al., 2016; Oo et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "569afd7e-4220-4817-9549-d0c5d7811967",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C16",
+      "claim": "Primaquine is commonly not given to patients to avoid the risk of haemolysis, resulting in a high burden of vivax malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, primaquine is commonly not given to patients to avoid the risk of haemolysis so the burden of vivax malaria remains high, causing considerable morbidity and economic loss (Price et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Price et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c3e39b37-6c02-4531-a153-07077ca2518c",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C17",
+      "claim": "Red blood cell production in the bone marrow is regulated to maintain oxygen carrying capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "RBC production in the bone marrow is regulated to maintain oxygen carrying capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established physiological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "70a304ce-ecc8-4806-bf75-8b8640efe1ac",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C18",
+      "claim": "When haemoglobin concentration in the blood falls, RBC production is up-regulated through a process mediated largely by erythropoietin.",
+      "claim_type": "EXPLICIT",
+      "source": "When the haemoglobin concentration in the blood falls, this reduces oxygen carriage and RBC production is up-regulated, a process mediated largely by the renal hormone, erythropoietin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established physiological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "bd2f193c-408d-4850-9bd7-2ad3021480fb",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C20",
+      "claim": "Normal RBCs in healthy people have a very stable life expectancy of around 120 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal RBCs in healthy people have a very stable life expectancy of around 120 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established haematological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "e412ff9e-9b17-415d-8f48-6c29cc1b1ebe",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C21",
+      "claim": "Normal RBC lifespan is well modelled by a Gumbel distribution with low variance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is well modelled by a Gumbel distribution with low variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mathematical modelling of RBC lifespan",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "fcd48599-14b8-43cf-8955-84b0bdcbc436",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C22",
+      "claim": "Very young red cells (reticulocytes) have the highest G6PD activity, which declines as RBCs age.",
+      "claim_type": "EXPLICIT",
+      "source": "In nucleated cells G6PD can be newly synthesised, but the red cells lose their nucleus before leaving the bone marrow so very young red cells (reticulocytes) have the highest G6PD activity, and this declines as the RBCs age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of G6PD enzyme activity in RBCs",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "78efae14-2d0b-4c3a-a8a6-55ea071509fd",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C23",
+      "claim": "In most G6PD deficiency variants, the mutant enzyme degrades more rapidly compared to the normal enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In most G6PDd variants, the mutant enzyme degrades more rapidly compared to the normal enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of G6PD enzyme biochemistry",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "49399a55-e3c2-43f3-8dba-2855c44cadbb",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C24",
+      "claim": "Older erythrocytes may have up to five times less G6PD activity than reticulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Older erythrocytes may have up to five times less G6PD activity than reticulocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of G6PD enzyme activity decline",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "efbaba6c-419b-44cc-9f90-0a81c5b10e08",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C25",
+      "claim": "G6PD deficiency results in lowered NADPH and a reduced ability to regenerate reduced glutathione.",
+      "claim_type": "EXPLICIT",
+      "source": "G6PDd results in lowered NADPH and a reduced ability to regenerate reduced glutathione.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biochemical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "886e730a-ff81-42e8-9a69-df2e0d5583c8",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C26",
+      "claim": "Reduced glutathione protects normal RBCs against oxidant stresses such as the haemolytic effects of primaquine metabolites and certain foods.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced glutathione protects normal RBCs against oxidant stresses such as the haemolytic effects of primaquine metabolites and certain foods, classically fava beans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established biochemical knowledge and supported by citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "058ce773-9f5c-460a-96af-c9c31a09a394",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C27",
+      "claim": "As oxidant defence reserves are used up, the aging erythrocyte becomes increasingly vulnerable to oxidant haemolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "As these non-reusable oxidant defence reserves are 'used up', the aging erythrocyte becomes increasingly vulnerable to oxidant haemolysis (Beutler et al., 1954a; Dern et al., 1954; Beutler, 2008; Recht et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Beutler et al., 1954a; Dern et al., 1954; Beutler, 2008; Recht et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "cb11dd53-d8da-4375-9c02-8e55c20fd68e",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C28",
+      "claim": "The degree of oxidant haemolysis depends on the genetic variant of G6PD deficiency and the age distribution of the red cell population.",
+      "claim_type": "EXPLICIT",
+      "source": "As young red cells have more functional enzyme than older cells, the degree of oxidant haemolysis depends on the genetic variant of G6PDd and the age distribution of the red cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on logical inference from G6PD enzyme activity patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "30de0114-26de-4e2f-9954-4ff955a0d16d",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C29",
+      "claim": "Once older cells have haemolysed, the remaining younger erythrocytes are essentially resistant to further damage by the same primaquine dosing regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the older cells have haemolysed, the remaining younger erythrocytes are essentially resistant to further damage by the same dosing regimen (that is, drug exposure) (Beutler et al., 1954a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Beutler et al., 1954a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "560c7d96-481f-4b68-8c71-d4eca2ff8c03",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C30",
+      "claim": "Higher primaquine doses cause further haemolysis even after older cells have been destroyed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, higher primaquine doses do cause further haemolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established observations of dose-dependent haemolysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c3a89a43-65c1-494d-9561-e487bf06c6e2",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C31",
+      "claim": "Temporary primaquine insensitivity in G6PD deficient individuals with continued primaquine administration was characterised by Beutler and colleagues over sixty years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "This temporary primaquine insensitivity in G6PDd individuals with the continued primaquine administration was characterised by Beutler and colleagues in a series of studies conducted over sixty years ago (Beutler et al., 1954a,1954b, 1955; Dern et al., 1954; Beutler, 1959) and later exploited by Alving et al. to develop the once weekly regimen in G6PDd (Alving et al., 1960.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Beutler et al., 1954a,1954b, 1955; Dern et al., 1954; Beutler, 1959",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "faa45dd0-0caa-420b-982f-1281515d0fae",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C32",
+      "claim": "The once weekly primaquine regimen for G6PD deficiency was developed by Alving et al. in 1960.",
+      "claim_type": "EXPLICIT",
+      "source": "This temporary primaquine insensitivity in G6PDd individuals with the continued primaquine administration was characterised by Beutler and colleagues in a series of studies conducted over sixty years ago (Beutler et al., 1954a,1954b, 1955; Dern et al., 1954; Beutler, 1959) and later exploited by Alving et al. to develop the once weekly regimen in G6PDd (Alving et al., 1960.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alving et al., 1960",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "28b2febc-7eae-4b5e-8a96-d1e5f86e3213",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C33",
+      "claim": "Beutler and colleagues showed haemoglobin would first fall as a result of oxidant haemolysis and then rise despite continued exposure to the same doses of primaquine.",
+      "claim_type": "EXPLICIT",
+      "source": "By experimenting with high-dose weekly regimens and low-dose daily regimens, Beutler and colleagues showed haemoglobin would first fall as a result of oxidant haemolysis and then rise despite continued exposure to the same doses of primaquine which had caused the initial haemolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on historical experimental observations by Beutler and colleagues",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "79155996-a1ef-4ae7-bbf6-7ae69eee822f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C34",
+      "claim": "The rise in haemoglobin despite continued primaquine exposure resulted from reactive erythropoiesis that introduced a younger red cell population resistant to that primaquine dose.",
+      "claim_type": "EXPLICIT",
+      "source": "This resulted from reactive erythropoiesis (reticulocytosis) that introduced a younger red cell population to the circulation which was essentially 'resistant' to the haemolytic effects of that primaquine dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on mechanistic understanding from historical studies",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "4fcc469b-56df-4bb0-8cee-287ad55c6cc6",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C35",
+      "claim": "Intermittent primaquine administration resulted in progressively smaller cycles of haemolysis followed by reticulocytosis as the red cell population became younger.",
+      "claim_type": "EXPLICIT",
+      "source": "Intermittent primaquine administration resulted in progressively smaller cycles of haemolysis followed by reticulocytosis as the red cell population became younger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on historical experimental observations",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "e551d26d-1318-4d02-83ae-5772b69c52dd",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C36",
+      "claim": "The recommended high-dose once weekly primaquine regimen for radical cure in G6PD deficient vivax malaria patients is 8 once weekly adult doses of 45 mg.",
+      "claim_type": "EXPLICIT",
+      "source": "These results led to a recommendation for a high-dose, once weekly primaquine regimen for radical cure in vivax malaria patients with G6PDd (8 once weekly adult doses of 45 mg) (Alving et al., 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Alving et al., 1960",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "6318cd78-19fc-4b39-a49f-0690c8d68add",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C38",
+      "claim": "Safety of the weekly primaquine regimen was not formally assessed in more severe G6PD deficiencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Safety was not formally assessed in more severe deficiencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of historical studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "a0525d41-d565-48e1-b53a-63a0f9774253",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C39",
+      "claim": "A recent trial of weekly primaquine in vivax malaria patients with Viangchan G6PD deficiency from Cambodia showed a greater fall in haemoglobin and delayed recovery from anaemia in G6PD deficient compared to G6PD normal patients.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent trial of this regimen in vivax malaria patients with the more severe Viangchan G6PDd variant from Cambodia showed a greater fall in haemoglobin and a delayed recovery from anaemia in G6PDd compared to G6PD normal patients with one patient requiring a blood transfusion (Kheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kheng et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "03455ffe-5877-43c1-9844-7625fb8cf3ea",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C40",
+      "claim": "One patient in the Cambodian trial of weekly primaquine in Viangchan G6PD deficiency required a blood transfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent trial of this regimen in vivax malaria patients with the more severe Viangchan G6PDd variant from Cambodia showed a greater fall in haemoglobin and a delayed recovery from anaemia in G6PDd compared to G6PD normal patients with one patient requiring a blood transfusion (Kheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kheng et al., 2015 and represents data from the study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c3613c3b-a63a-4751-af09-726ad477a045",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C41",
+      "claim": "Weekly primaquine may not be the optimal regimen for the more severe G6PD deficiency variants prevalent outside Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that weekly primaquine may not be the optimal regimen for the more severe G6PDd variants prevalent outside Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the Cambodian trial data showing adverse outcomes",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "4420d213-0895-447b-baee-92a044c02355",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C42",
+      "claim": "An ascending-dose regimen of primaquine could induce a safe 'slow burn' haemolysis in individuals with severe G6PD deficiency variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Reconsideration of the detailed haematological studies that laid the foundation for the weekly regimen suggests that an ascending-dose regimen of primaquine, with a schedule that matches the dynamics of red blood cell production, could induce a safe 'slow burn' haemolysis, even in individuals with severe G6PDd variants, and would still deliver a total therapeutic dose for radical cure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation and inference from historical data",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "1e84160f-1e53-4018-b069-ba5a714f61fb",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C43",
+      "claim": "The compartmental model reproduces the essential dynamics of the body's response to primaquine-induced haemolysis in both healthy individuals and malaria patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this compartmental model of RBC dynamics is highly simplified, it reproduces the essential dynamics of the body's response to primaquine-induced haemolysis in both healthy individuals and malaria patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model validation against data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "49ef74f9-1145-471c-88c4-811a4201dbd4",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C44",
+      "claim": "At steady state, approximately 0.83% of RBCs are replaced each day.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, approximately 0.83% of RBCs are replaced each day and 1% of RBCs in the circulation are reticulocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established haematological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "6d98efa6-089b-4e3e-8809-4325bc9d8441",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C45",
+      "claim": "At steady state, 1% of RBCs in the circulation are reticulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, approximately 0.83% of RBCs are replaced each day and 1% of RBCs in the circulation are reticulocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established haematological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "a71e7aef-c744-4915-8426-06d005b07147",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C46",
+      "claim": "Severe acute anaemia causes reticulocytes to be released into the circulating blood at an earlier age.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute anaemia has two consequences in the bone marrow. Reticulocytes are released into the circulating blood at an earlier age and with increased erythropoiesis normoblasts may be released into the circulation (reported as nucleated RBCs) (Hillman, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hillman, 1969",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "393da30e-7a1a-4917-baf0-02044b633935",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C47",
+      "claim": "With increased erythropoiesis in severe acute anaemia, normoblasts may be released into the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Severe acute anaemia has two consequences in the bone marrow. Reticulocytes are released into the circulating blood at an earlier age and with increased erythropoiesis normoblasts may be released into the circulation (reported as nucleated RBCs) (Hillman, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hillman, 1969",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "293f68b7-3253-441a-8381-d44f2fcfb0ce",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C49",
+      "claim": "In anaemia, reticulocyte release can occur after only one day, after which the cells are reticulocytes for 3.5 days in the circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In anaemia, release can occur after only one day (then the cells are reticulocytes for 3.5 days in the circulation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established haematological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "3b2fc6c1-d8be-477b-bc30-04db6dcf9609",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C50",
+      "claim": "The relationship between haematocrit and haemoglobin is linear.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between haematocrit and haemoglobin is assumed to be linear (Lee et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "e37f770e-25fa-4e05-a2d4-185e4676fb45",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C53",
+      "claim": "Data from Pannacciulli et al. suggest cells as young as 16 days can be lysed with a daily primaquine dose of 30 mg in the severe Mediterranean variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from (Pannacciulli et al., 1965) suggest cells as young as 16 days can be lysed with a daily primaquine dose of 30 mg in the severe Mediterranean variant, whereas in the less severe African A- variant haemolysis appears confined to cells older than 50 days (Beutler et al., 1954a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pannacciulli et al., 1965",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c813c503-7fe6-4e00-a41b-1dda24ab49f9",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C54",
+      "claim": "In the African A- variant, haemolysis appears confined to cells older than 50 days.",
+      "claim_type": "EXPLICIT",
+      "source": "The data from (Pannacciulli et al., 1965) suggest cells as young as 16 days can be lysed with a daily primaquine dose of 30 mg in the severe Mediterranean variant, whereas in the less severe African A- variant haemolysis appears confined to cells older than 50 days (Beutler et al., 1954a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Beutler et al., 1954a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "33336a9d-4875-4576-bbec-05db9e0a77be",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C55",
+      "claim": "The Khmer soldiers in the Everett et al. study are most likely to be G6PD deficient Viangchan variant rather than Mahidol.",
+      "claim_type": "EXPLICIT",
+      "source": "The Khmer soldiers whose data are shown in Figure 2 are incorrectly referred to by Everett et al. (1977) as G6PDd Mahidol. They are in fact most likely to be G6PDd Viangchan, as the variant was discovered some ten years later [1988]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from timing of variant discovery and citation to Everett et al., 1977",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "41a89b62-beac-4280-bf10-ea8ad1b80797",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C56",
+      "claim": "In the Cambodian study by Kheng et al., 75 patients with vivax malaria were given primaquine 0.75 base mg/kg weekly for 8 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, 75 Cambodian patients with vivax malaria were given primaquine 0.75 base mg/kg weekly for 8 weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the study design from Kheng et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "df7d237c-ec62-4fa9-9e28-6e7e6350c570",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C57",
+      "claim": "Of the 75 patients in the Kheng et al. study, 17 were G6PD deficient Viangchan (14 homozygous males and three heterozygous females) and 1 was a homozygous male with G6PD deficient Canton.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 17 were G6PDd Viangchan (14 homozygous males and three heterozygous females) and 1 was a homozygous male with G6PDd Canton.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes patient characteristics from Kheng et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "42a8fa22-cebe-4a8a-87d4-52e27c250190",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C58",
+      "claim": "In the Kheng et al. study, haemoglobin concentrations and reticulocyte counts were measured on days 0,1,2,3 and subsequently each week before the next dose of primaquine.",
+      "claim_type": "EXPLICIT",
+      "source": "Haemoglobin concentrations and reticulocyte counts were measured on days 0,1,2,3 and subsequently each week, before the next dose of primaquine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the measurement schedule from Kheng et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "87d8ab5a-a9d0-4a48-99cc-19bd2ccc3e18",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C59",
+      "claim": "The variation in the measurement of haemoglobin was approximately 1 g/dL.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation in the measurement of haemoglobin was approximately 1 g/dL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on data analysis from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "d47414fd-a1af-49ea-a499-e6be5ced08b6",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C60",
+      "claim": "The currently recommended dose for radical cure of vivax malaria in an adult in SE Asia and Oceania delivers 420 mg of primaquine (30 mg/d x 14 d).",
+      "claim_type": "EXPLICIT",
+      "source": "The currently recommended dose for the radical cure of vivax malaria in an adult in SE Asia and Oceania delivers 420 mg (that is, 30 mg/d x 14 d) of primaquine and is very effective (John et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to John et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "5e4bdc71-043d-4199-ae26-d0317a2fb471",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C61",
+      "claim": "The maximum primaquine dose administered in the weekly regimen is 360 mg (8 x 45 mg).",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum primaquine dose administered in the weekly regimen is 360 mg (8 x 45 mg) but the efficacy of this regimen has only been reported in Afghan refugees in Pakistan, a country with a relatively low relapse rate (Leslie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on treatment regimen calculation",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "b98030c8-43c9-463e-a82c-2d92ace58fc2",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C62",
+      "claim": "The efficacy of the weekly primaquine regimen has only been reported in Afghan refugees in Pakistan, a country with a relatively low relapse rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum primaquine dose administered in the weekly regimen is 360 mg (8 x 45 mg) but the efficacy of this regimen has only been reported in Afghan refugees in Pakistan, a country with a relatively low relapse rate (Leslie et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leslie et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "acbc75c6-a0d1-44dd-ba02-ad687cd54b64",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C63",
+      "claim": "The ascending dose regimen would be expected to be safer than the current 14 day regimens in G6PD deficient hemizygous males and homozygous females.",
+      "claim_type": "EXPLICIT",
+      "source": "Under all circumstances, the ascending regimen proposed here would be expected to be safer than the current 14 day regimens in G6PDd hemizygous males and homozygous females, especially the 0.5 mg/kg regimen needed for frequent relapsing P. vivax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model predictions and speculation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "d1dd96a4-8259-4549-9f49-daf66e83955b",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C66",
+      "claim": "A study in healthy G6PD deficient volunteers is essential to characterise the haemolytic response to the ascending dose regimen.",
+      "claim_type": "EXPLICIT",
+      "source": "A study in healthy G6PDd volunteers is essential to characterise the haemolytic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on research design considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "4ed77cec-9d72-45ae-999e-060d28a9c0c2",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C67",
+      "claim": "Mathematical modelling could be readily applied to the slowly eliminated 8-aminoquinoline tafenoquine.",
+      "claim_type": "EXPLICIT",
+      "source": "This use of mathematical modelling such as this could also be readily applied to the slowly eliminated 8-aminoquinoline tafenoquine, currently being tested for safety and efficacy in humans (Beck et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Beck et al., 2016 and speculation about model application",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "68a90405-8337-4972-a6d5-791baa336927",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C68",
+      "claim": "Tafenoquine has the advantage of being administered as a single dose for radical cure due to its long terminal elimination half-life.",
+      "claim_type": "EXPLICIT",
+      "source": "Tafenoquine has the great advantage of being administered as a single dose for radical cure due to its long terminal elimination half-life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established pharmacological knowledge of tafenoquine",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "40d48955-a338-469f-86ff-c4ef94c1cf62",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C69",
+      "claim": "The rapidly eliminated primaquine can be stopped if there is significant haemolysis, limiting the haemolytic effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the rapidly eliminated primaquine can be stopped if there is significant haemolysis, limiting the haemolytic effect, the haemolytic effect of the slowly eliminated tafenoquine cannot be readily reversed and so haemolysis will continue until all susceptible red cells are destroyed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pharmacological reasoning about drug elimination",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "3c72745b-ce42-4290-80d5-57c19d8550f2",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C70",
+      "claim": "The haemolytic effect of the slowly eliminated tafenoquine cannot be readily reversed and haemolysis will continue until all susceptible red cells are destroyed.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the rapidly eliminated primaquine can be stopped if there is significant haemolysis, limiting the haemolytic effect, the haemolytic effect of the slowly eliminated tafenoquine cannot be readily reversed and so haemolysis will continue until all susceptible red cells are destroyed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on pharmacological reasoning about drug elimination",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "00328d76-c40e-4267-b3e0-d6ede8c12797",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C71",
+      "claim": "Combined regimens for G6PD deficient patients in which primaquine is given initially to induce controlled haemolysis followed by tafenoquine might be possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined regimens for G6PDd patients in which primaquine is given initially to induce controlled haemolysis followed by tafenoquine might be possible, and would allow shorter total treatment durations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on speculation about potential treatment strategies",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "6dace484-8b86-49d7-a5f2-dae49b81b5ca",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C72",
+      "claim": "An ascending primaquine dose regimen for vivax radical cure might be well tolerated and effective in mild or moderately severe G6PD deficiency variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results suggest that an ascending PQ dosing regimen for vivax radical cure might be well tolerated and effective in mild or moderately severe G6PDd variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model predictions and speculation",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "6d77807c-e92c-4329-a44b-8fba36de263a",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C73",
+      "claim": "The model predictions should be tested in an adaptive phase I study.",
+      "claim_type": "EXPLICIT",
+      "source": "These predictions should now be tested in an adaptive phase I study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on research recommendations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "51b5ceea-901e-4020-8d83-0d542016d710",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C74",
+      "claim": "The signal-to-noise ratio in the reticulocyte data is low.",
+      "claim_type": "EXPLICIT",
+      "source": "The signal-to-noise ratio in the reticulocyte data is low and this is apparent from the median reticulocyte count which varies considerably during the 56 days.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "2a38fb84-d763-4e8a-b6df-d733eaf26ca9",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C75",
+      "claim": "The mechanistic model shows that a substantial rise in the reticulocyte count should occur approximately one week after the first dose, with a peak after the third dose.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, simulations from the mechanistic model show that a substantial rise in the reticulocyte count should occur approximately one week after the first dose, with a peak after the third dose, and then return to normal slowly over the subsequent six weeks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model simulations shown in Figure 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "0675d1d0-c4da-4a9b-9550-2b47268d6506",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C76",
+      "claim": "The serial haemoglobin data show a clear trend with a large fall after the first dose, a smaller fall after the second and then a gentle recovery with no major effect from subsequent primaquine doses.",
+      "claim_type": "EXPLICIT",
+      "source": "The serial haemoglobin data on the other hand show a clear trend with a large fall after the first dose, a smaller fall after the second and then a gentle recovery with no major effect from subsequent primaquine doses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on data analysis shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "2db0ce75-91c4-4a7b-b7c4-bab476fd95a7",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C77",
+      "claim": "The model reproduces the trend in haemoglobin data and characterises satisfactorily the variance observed in steady state haemoglobin concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is reproduced by the model and the posterior distribution also characterises satisfactorily the variance observed in steady state haemoglobin concentrations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model fit to data shown in Figure 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "802d28c0-1af2-4827-bd66-36deaf8bdc9c",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C78",
+      "claim": "The deterministic compartmental model reproduces the essential patterns of observed dynamics, namely a more rapid decrease in haematocrit at the start of the regimen which then slows as haemolysis becomes self-limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "The deterministic compartmental model reproduces the essential patterns of the observed dynamics, namely, a more rapid decrease in haematocrit at the start of the regimen which then slows as the haemolysis becomes self-limiting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model fits shown in Figures 2 and 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "30e5c0c7-e6f5-4ef4-ab82-f2ebfd772dab",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C79",
+      "claim": "The model predicts a faster initial decrease in haemoglobin than observed for daily dosing regimens with similar nadir drop.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 3, for the bottom two plots, the model predicts a faster initial decrease than observed for a similar nadir drop.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on model fits shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "8cd3582f-7323-4b92-a8d4-88800b1fdcbe",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C80",
+      "claim": "For the mild G6PD deficiency variant, the dose-response relationship has the same shape but is shifted to the right compared to more severe variants.",
+      "claim_type": "EXPLICIT",
+      "source": "As would be expected, for the mild variant the dose-response relationship has the same shape but is shifted to the right.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on dose-response analysis shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "ed7e9197-d769-434a-a16f-fa148664947f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C81",
+      "claim": "An adaptive design protocol has been developed to test the simplified ascending dose regimen in G6PD deficient Mahidol healthy volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "An adaptive design protocol has been developed to test the simplified regimen (A) in G6PDd Mahidol healthy volunteers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on research planning",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "094d9bff-74e7-46fb-b3c4-2f8d845d9770",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C82",
+      "claim": "The model structure allows for simulation of the effect of malaria within an individual by altering the age distribution as P. vivax invades young erythrocytes exclusively.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the model also allows for the simulation of the effect of malaria within an individual by altering the age distribution as P. vivax invades young erythrocytes exclusively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model design and known biology of P. vivax",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "739577cb-06e6-4098-9cef-7443d8b28d39",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C83",
+      "claim": "It is assumed that healthy individuals with no history of haemolytic events in the last 4 months will have a uniform age distribution of RBCs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is assumed that healthy individuals with no history of haemolytic events in the last 4 months will have a uniform age distribution of RBCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model assumption",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "d2ad6a56-fb18-4f5a-821c-9f3fbe2a1736",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C84",
+      "claim": "There are very few precise data on primaquine's haemolytic effect in G6PD deficient individuals despite primaquine being first tested in humans in 1944 and approved by the US FDA in 1952.",
+      "claim_type": "EXPLICIT",
+      "source": "Although primaquine was first tested in humans in 1944 and approved by the US FDA in 1952, there are very few precise data on its haemolytic effect in G6PDd individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of historical literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "1d543a4c-59cc-4d10-b059-7b351f6c407d",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C86",
+      "claim": "An exhaustive review of all available data on the haemolytic effects of primaquine has been reported by Recht et al. in 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "An exhaustive review of all available data on the haemolytic effects of primaquine has been reported recently by Recht et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Recht et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "f3e5d8dd-f8bf-4c63-8606-9032540f621f",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C87",
+      "claim": "There are only five studies which present useful data on falls in haemoglobin concentrations over time following primaquine administration.",
+      "claim_type": "EXPLICIT",
+      "source": "There are however only five studies which present useful data on falls in haemoglobin concentrations over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on review of historical literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "5458111c-eb90-4b98-bc01-d9f47d0a600a",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C88",
+      "claim": "The model fitting used Bayesian hierarchical structure for steady state haemoglobin and maximum increase in RBC production.",
+      "claim_type": "EXPLICIT",
+      "source": "A Bayesian hierarchical structure was used for the steady state haemoglobin and the maximum increase in the production of red blood cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "32b20a17-cf0a-4686-8835-16eb75ab3779",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C90",
+      "claim": "The model assumes both haemoglobin levels and reticulocyte counts are observed with Laplace distributed errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The likelihood of the parameters is defined by a deterministic simulation from the compartmental model for a given dosing regimen and assumes both the haemoglobin levels and reticulocyte counts are observed with Laplace distributed errors (assuming Laplace errors is equivalent to minimizing absolute deviation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model methodology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c0482cfe-266b-42d3-bf38-432b7330fab9",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C91",
+      "claim": "The first relapses of P. vivax emerge from the liver about 14 days after starting treatment in SE Asia and Oceania.",
+      "claim_type": "EXPLICIT",
+      "source": "There are two reasons for this; first, adherence to long course regimens is likely to be poor, and second, the first relapses emerge from the liver about 14 days after starting treatment so the primaquine regimen has to provide sufficient drug to prevent the emergence or eliminate these parasites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of P. vivax relapse timing",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "f42dcb15-21fe-4c2f-bb14-9a9d7ffa14fc",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "claim_id": "C92",
+      "claim": "The model predictions of haemolysis degree and tolerability would be expected to hold for G6PD deficiency variants with similar or less severe enzyme abnormalities than Viangchan, but not necessarily for more severe variants such as Mediterranean.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the model predictions of the degree of haemolysis and the tolerability and safety profile would be expected to hold for variants with similar or less severe enzyme abnormalities, but it would not necessarily hold for more severe variants such as G6PDd Mediterranean where more clinical research is required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on model calibration and inference about generalizability",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "P. vivax malaria represents a major global health burden outside sub-Saharan Africa, with hypnozoite-induced relapses being a key contributor. Primaquine is the only widely available drug for radical cure, but is commonly not given due to safety concerns, perpetuating high disease burden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C16 establish the epidemiological context and therapeutic landscape for P. vivax malaria. These claims are well-supported by appropriate citations (Gething et al., 2012; White, 2011; Price et al., 2007) and represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Primaquine causes predictable oxidant haemolysis in G6PD deficiency, one of the most common genetic abnormalities globally. The severity of haemolysis depends on the dose, the specific G6PD variant, and in heterozygous females, the proportion of deficient erythrocytes due to Lyonisation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 describe the genetic and biochemical basis of primaquine-induced haemolysis in G6PD deficiency. These are well-established facts supported by appropriate citations (Cappellini and Fiorelli, 2008; Howes et al., 2013; Beutler et al., 1962) and represent foundational knowledge for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "d29fc6c7-77f6-4f39-a2c8-06f6b162bb17",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Current treatment guidelines recommend different primaquine regimens for G6PD normal (0.5 mg/kg/day for 14 days in SE Asia/Oceania) versus G6PD deficient patients (0.75 mg/kg/week for 8 weeks), but G6PD testing remains unavailable in most settings despite the introduction of rapid diagnostic tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 accurately describe current treatment guidelines and diagnostic limitations. The claims are supported by appropriate citations (Brito et al., 2016; Satyagraha et al., 2016; Oo et al., 2016) and establish the clinical problem motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Red blood cell production is regulated by erythropoietin to maintain oxygen carrying capacity. Normal RBCs have a stable 120-day lifespan, with approximately 0.83% replaced daily and 1% reticulocytes in circulation. Severe anaemia triggers earlier reticulocyte release and increased erythropoiesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C20-C21, C44-C47, and C49 describe established haematological physiology supported by appropriate citations (Hillman, 1969). These claims provide the biological foundation for the compartmental model and are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "G6PD activity is highest in young reticulocytes and declines as RBCs age, with older erythrocytes having up to five times less activity. In G6PD deficiency, the mutant enzyme degrades more rapidly, reducing NADPH and glutathione regeneration, making aging erythrocytes increasingly vulnerable to oxidant haemolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 describe the biochemical mechanism of age-dependent haemolysis in G6PD deficiency. These are well-supported by multiple citations (Beutler et al., 1954a; Dern et al., 1954; Beutler, 2008; Recht et al., 2014) and represent established biochemical knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "a0746129-5041-463b-809e-9ffd16377b2e",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Historical studies by Beutler and colleagues demonstrated that after older RBCs are haemolysed by primaquine, younger erythrocytes become resistant to the same dose due to reactive erythropoiesis. This led to the development of the once-weekly 45 mg regimen by Alving et al., though safety was not formally assessed in more severe G6PD deficiency variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 and C38 accurately describe historical research that forms the basis for current weekly primaquine regimens. These claims are well-supported by appropriate citations to the original studies (Beutler et al., 1954a,b, 1955; Dern et al., 1954; Beutler, 1959; Alving et al., 1960) and provide critical historical context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "86fad4e7-e3c7-4e97-9257-ce89af4358f3",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A recent trial in Cambodian vivax malaria patients with Viangchan G6PD deficiency showed that the weekly primaquine regimen caused greater haemoglobin falls and delayed anaemia recovery compared to G6PD normal patients, with one patient requiring transfusion, suggesting the regimen may not be optimal for severe G6PD variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 describe recent clinical trial data (Kheng et al., 2015) that motivates the current study. The claims accurately represent the study findings including the serious adverse event (transfusion requirement) and draw a reasonable inference about regimen optimization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "fa2494db-59d5-471c-9add-ee72b732d900",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "An ascending-dose primaquine regimen matching RBC production dynamics could induce safe 'slow burn' haemolysis even in severe G6PD deficiency variants while delivering therapeutic doses for radical cure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 represents the central hypothesis of the study but is speculative and based on inference from historical data. While the hypothesis is reasonable, it has not been tested clinically and remains unproven. The claim appropriately uses conditional language ('could induce').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "702e0d53-8047-47bd-9118-21e69896d3d6",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The compartmental model reproduces essential haemolysis dynamics in both healthy individuals and malaria patients, capturing the trend of large initial haemoglobin falls followed by recovery. However, the model shows limitations including low signal-to-noise in reticulocyte predictions and faster initial decreases than observed in some daily dosing regimens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C74-C79 describe model performance based on Figures 1-3. The model captures key dynamics but the authors appropriately acknowledge limitations. The evaluation is honest about model fit quality, noting both successes and discrepancies between predictions and observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Historical data show variant-specific haemolysis patterns: Mediterranean variant can lyse cells as young as 16 days with 30 mg daily primaquine, while African A- variant haemolysis is confined to cells >50 days old. The Cambodian study by Kheng et al. included 18 G6PD deficient patients (17 Viangchan, 1 Canton) with haemoglobin measurement variation of approximately 1 g/dL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C59 describe data characteristics from historical studies and the Kheng et al. study. These are supported by appropriate citations (Pannacciulli et al., 1965; Beutler et al., 1954a; Kheng et al., 2015). Claim C55 makes a reasonable inference about variant misidentification based on timing of variant discovery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "fdb6bb8c-03bd-48c2-855a-503a992acc82",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model assumes a linear relationship between haematocrit and haemoglobin, uses Bayesian hierarchical structure for steady-state parameters, and assumes Laplace-distributed observation errors. Dose-response relationships for mild G6PD variants show the same shape but are right-shifted compared to severe variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C80, C88, and C90 describe model assumptions and dose-response characteristics. The linear haematocrit-haemoglobin relationship is supported by citation (Lee et al., 2008). The statistical modeling choices are clearly stated, and the dose-response pattern (C80) is consistent with expected biology and shown in Figure 5.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "c80b85b1-56de-411e-b135-fa98545fa3f4",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The currently recommended primaquine dose for radical cure in SE Asia/Oceania delivers 420 mg total (30 mg/day \u00d7 14 days) and is very effective. The weekly regimen delivers maximum 360 mg (8 \u00d7 45 mg), but efficacy has only been reported in Afghan refugees in Pakistan, a low-relapse-rate region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 accurately describe current treatment regimens and their evidence base, supported by appropriate citations (John et al., 2012; Leslie et al., 2008). The limitation that weekly regimen efficacy data comes only from a low-relapse setting is an important caveat for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "aa5af2e4-547d-41b4-a0a2-37ec5f3509b6",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The ascending dose regimen is predicted to be safer than current 14-day regimens in G6PD deficient patients and might be well tolerated and effective in mild or moderately severe variants (similar to Viangchan), but predictions require testing in an adaptive Phase I study and may not hold for more severe variants like Mediterranean.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63, C72, C73, and C92 represent the main conclusions and recommendations of the study. While based on model predictions, these remain speculative until clinical validation. The authors appropriately use conditional language ('would be expected', 'might be') and explicitly call for clinical testing (C73). The limitation to specific variants (C92) is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "1b0fe968-be83-4446-8918-ec2bfefd14b2",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "A study in healthy G6PD deficient volunteers is essential to characterize haemolytic response to the ascending dose regimen, and an adaptive design protocol has been developed to test the simplified regimen in G6PD Mahidol healthy volunteers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66 and C81 describe necessary next steps and study planning. The need for healthy volunteer studies before patient trials is a reasonable and standard approach for safety evaluation. The existence of a developed protocol (C81) demonstrates concrete progress toward validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "37af6fda-00c6-40f7-be4f-e57cdeac9471",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mathematical modeling approach could be applied to tafenoquine, which has the advantage of single-dose administration due to long half-life but the disadvantage that haemolysis cannot be readily reversed once initiated. Combined primaquine-tafenoquine regimens might allow controlled haemolysis followed by shorter treatment durations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C71 discuss potential application to tafenoquine. While C68-C70 describe established pharmacological properties, C67 and C71 are speculative. The reasoning is sound but untested. Claim C67 is supported by citation to Beck et al., 2016, but the combined regimen concept (C71) is purely hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    },
+    {
+      "id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b",
+      "content_id": "c2a2aded-5ecc-4be9-93c4-441c36f1bfe9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model can simulate malaria effects by altering RBC age distribution since P. vivax invades young erythrocytes exclusively. Despite primaquine's long history (FDA approval 1952), there are very few precise haemolysis data, with only five studies presenting useful time-series haemoglobin data according to Recht et al.'s exhaustive review.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84, C86-C87, and C91 describe model capabilities and data limitations. The model's ability to simulate malaria (C82) is a reasonable extension based on known P. vivax biology. The scarcity of historical data (C84, C87) is well-documented and supported by citation to Recht et al., 2014 (C86).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:47:01.080754Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5202a248-91b5-4c42-8008-b4f90ad68596",
+      "result_id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1"
+    },
+    {
+      "claim_id": "4555b9ec-f7bf-4ea9-afc9-6c6223e7ffab",
+      "result_id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1"
+    },
+    {
+      "claim_id": "2524e267-3a54-4d27-b8d6-cca846e282b6",
+      "result_id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1"
+    },
+    {
+      "claim_id": "aee909d2-5dde-406a-95e7-f525931fcbbd",
+      "result_id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1"
+    },
+    {
+      "claim_id": "569afd7e-4220-4817-9549-d0c5d7811967",
+      "result_id": "6bcbe274-e05a-43eb-8838-627eaaefeaf1"
+    },
+    {
+      "claim_id": "82dbb69c-1c03-4117-8d51-16926cfd7509",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "cb6f69fc-756d-4397-b8d9-bfc8fb9f43d1",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "7921d096-23f9-494f-8ae7-110bf22711e3",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "f03a2614-d24b-4a95-b10a-2670b1feb04f",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "ff3db38a-c02e-44bf-b269-0b794ee44030",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "bab61990-ecb0-4a30-9f1a-0cdf14e8d29f",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "a9deac26-d166-4984-8c29-e8f37136368b",
+      "result_id": "e3b4c46a-487a-4286-8b5c-d0ec2d015aea"
+    },
+    {
+      "claim_id": "93bcdd1b-ab3f-4249-ac59-fc75fca03b72",
+      "result_id": "d29fc6c7-77f6-4f39-a2c8-06f6b162bb17"
+    },
+    {
+      "claim_id": "e3dada04-bd47-4933-a828-12b05c557370",
+      "result_id": "d29fc6c7-77f6-4f39-a2c8-06f6b162bb17"
+    },
+    {
+      "claim_id": "4f35cc35-65c0-4602-8bd2-52fcfbca56e4",
+      "result_id": "d29fc6c7-77f6-4f39-a2c8-06f6b162bb17"
+    },
+    {
+      "claim_id": "9a8e9464-812c-45b5-831d-07cd078c839f",
+      "result_id": "d29fc6c7-77f6-4f39-a2c8-06f6b162bb17"
+    },
+    {
+      "claim_id": "c3e39b37-6c02-4531-a153-07077ca2518c",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "70a304ce-ecc8-4806-bf75-8b8640efe1ac",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "bd2f193c-408d-4850-9bd7-2ad3021480fb",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "e412ff9e-9b17-415d-8f48-6c29cc1b1ebe",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "49ef74f9-1145-471c-88c4-811a4201dbd4",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "6d98efa6-089b-4e3e-8809-4325bc9d8441",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "a71e7aef-c744-4915-8426-06d005b07147",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "393da30e-7a1a-4917-baf0-02044b633935",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "293f68b7-3253-441a-8381-d44f2fcfb0ce",
+      "result_id": "1f7eb1a5-9cf6-43da-b36f-8b3ec1a43207"
+    },
+    {
+      "claim_id": "fcd48599-14b8-43cf-8955-84b0bdcbc436",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "78efae14-2d0b-4c3a-a8a6-55ea071509fd",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "49399a55-e3c2-43f3-8dba-2855c44cadbb",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "efbaba6c-419b-44cc-9f90-0a81c5b10e08",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "886e730a-ff81-42e8-9a69-df2e0d5583c8",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "058ce773-9f5c-460a-96af-c9c31a09a394",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "cb11dd53-d8da-4375-9c02-8e55c20fd68e",
+      "result_id": "de0477cf-d67a-401c-a1d5-4eb484b3b28b"
+    },
+    {
+      "claim_id": "30de0114-26de-4e2f-9954-4ff955a0d16d",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "560c7d96-481f-4b68-8c71-d4eca2ff8c03",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "c3a89a43-65c1-494d-9561-e487bf06c6e2",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "faa45dd0-0caa-420b-982f-1281515d0fae",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "28b2febc-7eae-4b5e-8a96-d1e5f86e3213",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "79155996-a1ef-4ae7-bbf6-7ae69eee822f",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "4fcc469b-56df-4bb0-8cee-287ad55c6cc6",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "e551d26d-1318-4d02-83ae-5772b69c52dd",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "6318cd78-19fc-4b39-a49f-0690c8d68add",
+      "result_id": "a0746129-5041-463b-809e-9ffd16377b2e"
+    },
+    {
+      "claim_id": "a0525d41-d565-48e1-b53a-63a0f9774253",
+      "result_id": "86fad4e7-e3c7-4e97-9257-ce89af4358f3"
+    },
+    {
+      "claim_id": "03455ffe-5877-43c1-9844-7625fb8cf3ea",
+      "result_id": "86fad4e7-e3c7-4e97-9257-ce89af4358f3"
+    },
+    {
+      "claim_id": "c3613c3b-a63a-4751-af09-726ad477a045",
+      "result_id": "86fad4e7-e3c7-4e97-9257-ce89af4358f3"
+    },
+    {
+      "claim_id": "4420d213-0895-447b-baee-92a044c02355",
+      "result_id": "fa2494db-59d5-471c-9add-ee72b732d900"
+    },
+    {
+      "claim_id": "1e84160f-1e53-4018-b069-ba5a714f61fb",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "51b5ceea-901e-4020-8d83-0d542016d710",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "2a38fb84-d763-4e8a-b6df-d733eaf26ca9",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "0675d1d0-c4da-4a9b-9550-2b47268d6506",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "2db0ce75-91c4-4a7b-b7c4-bab476fd95a7",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "802d28c0-1af2-4827-bd66-36deaf8bdc9c",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "30e5c0c7-e6f5-4ef4-ab82-f2ebfd772dab",
+      "result_id": "702e0d53-8047-47bd-9118-21e69896d3d6"
+    },
+    {
+      "claim_id": "e37f770e-25fa-4e05-a2d4-185e4676fb45",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "c813c503-7fe6-4e00-a41b-1dda24ab49f9",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "33336a9d-4875-4576-bbec-05db9e0a77be",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "41a89b62-beac-4280-bf10-ea8ad1b80797",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "df7d237c-ec62-4fa9-9e28-6e7e6350c570",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "42a8fa22-cebe-4a8a-87d4-52e27c250190",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "87d8ab5a-a9d0-4a48-99cc-19bd2ccc3e18",
+      "result_id": "13b3a2b8-6641-4550-a3ba-1d21d4f701f4"
+    },
+    {
+      "claim_id": "3b2fc6c1-d8be-477b-bc30-04db6dcf9609",
+      "result_id": "fdb6bb8c-03bd-48c2-855a-503a992acc82"
+    },
+    {
+      "claim_id": "8cd3582f-7323-4b92-a8d4-88800b1fdcbe",
+      "result_id": "fdb6bb8c-03bd-48c2-855a-503a992acc82"
+    },
+    {
+      "claim_id": "5458111c-eb90-4b98-bc01-d9f47d0a600a",
+      "result_id": "fdb6bb8c-03bd-48c2-855a-503a992acc82"
+    },
+    {
+      "claim_id": "32b20a17-cf0a-4686-8835-16eb75ab3779",
+      "result_id": "fdb6bb8c-03bd-48c2-855a-503a992acc82"
+    },
+    {
+      "claim_id": "d47414fd-a1af-49ea-a499-e6be5ced08b6",
+      "result_id": "c80b85b1-56de-411e-b135-fa98545fa3f4"
+    },
+    {
+      "claim_id": "5e4bdc71-043d-4199-ae26-d0317a2fb471",
+      "result_id": "c80b85b1-56de-411e-b135-fa98545fa3f4"
+    },
+    {
+      "claim_id": "b98030c8-43c9-463e-a82c-2d92ace58fc2",
+      "result_id": "c80b85b1-56de-411e-b135-fa98545fa3f4"
+    },
+    {
+      "claim_id": "acbc75c6-a0d1-44dd-ba02-ad687cd54b64",
+      "result_id": "aa5af2e4-547d-41b4-a0a2-37ec5f3509b6"
+    },
+    {
+      "claim_id": "6dace484-8b86-49d7-a5f2-dae49b81b5ca",
+      "result_id": "aa5af2e4-547d-41b4-a0a2-37ec5f3509b6"
+    },
+    {
+      "claim_id": "6d77807c-e92c-4329-a44b-8fba36de263a",
+      "result_id": "aa5af2e4-547d-41b4-a0a2-37ec5f3509b6"
+    },
+    {
+      "claim_id": "f42dcb15-21fe-4c2f-bb14-9a9d7ffa14fc",
+      "result_id": "aa5af2e4-547d-41b4-a0a2-37ec5f3509b6"
+    },
+    {
+      "claim_id": "d1dd96a4-8259-4549-9f49-daf66e83955b",
+      "result_id": "1b0fe968-be83-4446-8918-ec2bfefd14b2"
+    },
+    {
+      "claim_id": "ed7e9197-d769-434a-a16f-fa148664947f",
+      "result_id": "1b0fe968-be83-4446-8918-ec2bfefd14b2"
+    },
+    {
+      "claim_id": "4ed77cec-9d72-45ae-999e-060d28a9c0c2",
+      "result_id": "37af6fda-00c6-40f7-be4f-e57cdeac9471"
+    },
+    {
+      "claim_id": "68a90405-8337-4972-a6d5-791baa336927",
+      "result_id": "37af6fda-00c6-40f7-be4f-e57cdeac9471"
+    },
+    {
+      "claim_id": "40d48955-a338-469f-86ff-c4ef94c1cf62",
+      "result_id": "37af6fda-00c6-40f7-be4f-e57cdeac9471"
+    },
+    {
+      "claim_id": "3c72745b-ce42-4290-80d5-57c19d8550f2",
+      "result_id": "37af6fda-00c6-40f7-be4f-e57cdeac9471"
+    },
+    {
+      "claim_id": "00328d76-c40e-4267-b3e0-d6ede8c12797",
+      "result_id": "37af6fda-00c6-40f7-be4f-e57cdeac9471"
+    },
+    {
+      "claim_id": "094d9bff-74e7-46fb-b3c4-2f8d845d9770",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    },
+    {
+      "claim_id": "739577cb-06e6-4098-9cef-7443d8b28d39",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    },
+    {
+      "claim_id": "d2ad6a56-fb18-4f5a-821c-9f3fbe2a1736",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    },
+    {
+      "claim_id": "1d543a4c-59cc-4d10-b059-7b351f6c407d",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    },
+    {
+      "claim_id": "f3e5d8dd-f8bf-4c63-8606-9032540f621f",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    },
+    {
+      "claim_id": "c0482cfe-266b-42d3-bf38-432b7330fab9",
+      "result_id": "fd6c9f6f-a0fc-4556-962a-fd6784a7f54b"
+    }
+  ],
+  "comparisons": []
+}

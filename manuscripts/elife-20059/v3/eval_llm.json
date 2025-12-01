@@ -1,0 +1,498 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "MEF2C protein is enriched in NeuN-positive cortical neurons with >99% co-localization, indicating that MEF2C expression in the cortex is primarily restricted to neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are supported by immunostaining data in Figure 1A showing >99% co-localization of MEF2C with the neuronal marker NeuN. The quantification is clear and the inference that MEF2C is neuron-restricted is well-justified by the high co-localization percentage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The Mef2c cKO mouse model using Emx1-Cre shows selective and dramatic reduction of MEF2C protein in cortex and hippocampus but not in striatum or thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 are supported by Western blot data (Figure 1B) and citation to Iwasato et al., 2008 for Emx1-Cre expression pattern. The regional specificity of MEF2C reduction matches the expected Emx1-Cre expression pattern, validating the conditional knockout model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C12",
+      "C13"
+    ],
+    "result": "Mef2c cKO mice are viable and healthy with normal body weight, growth, Mendelian frequency, and gross brain morphology, but exhibit a slight (~10%) reduction in neocortical thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C12, and C13 are supported by body weight data (Figure 1\u2014figure supplement 1A), Nissl and NeuN staining (Figure 1\u2014figure supplement 1C,D), and cortical thickness measurements (Figure 1C). The phenotype is mild, suggesting MEF2C loss does not cause gross developmental defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Basal MEF2 transcriptional activity is reduced by ~35% in Mef2c cKO cortical neurons, but depolarization-induced MEF2 activity is normal, suggesting MEF2A and MEF2D can compensate for activity-dependent MEF2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by luciferase reporter assay data (Figure 1\u2014figure supplement 1B). The selective reduction in basal but not activity-dependent MEF2 activity provides strong evidence for functional compensation by other MEF2 family members during neuronal depolarization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Mef2c cKO mice show dramatic reduction (~90%) in UP state frequency, with shorter duration and smaller amplitude UP states, accompanied by small decreases in mEPSC frequency/amplitude and large increases in mIPSC frequency/amplitude, indicating reduced cortical network activity due to altered E/I balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 are supported by UP state recordings (Figure 2A) and patch-clamp data (Figure 2B,C). The convergent evidence from network activity (UP states) and synaptic transmission measurements (mEPSCs/mIPSCs) strongly supports the conclusion of reduced cortical network activity. However, C17 notes mEPSC frequency reduction did not reach significance (p=0.07), which slightly weakens the excitatory transmission component.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Mef2c cKO cortical pyramidal neurons have normal dendritic complexity but show a ~2-fold increase in GABAergic synapse density and significant reduction in dendritic spine density, suggesting MEF2C regulates both excitatory and inhibitory synapse densities in a non-compensatory manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by Sholl analysis (Figure 3\u2014figure supplement 1A,B), GABAergic synapse quantification (Figure 3A), and spine density measurements (Figure 3B). The bidirectional changes in E/I synapse density both reducing network activity argue against compensatory mechanisms, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sparse Cre-mediated deletion of Mef2c in individual cortical pyramidal neurons recapitulates the E/I synapse density changes observed in global cKO, with no effect on GABAergic synapse density in interneurons, demonstrating cell-autonomous and cell-type-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by sparse transfection experiments (Figure 3C-E). The experimental design with <1% transfection efficiency ensures that >99% of presynaptic inputs are wild-type, providing strong evidence for postsynaptic, cell-autonomous MEF2C function specifically in pyramidal neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MEF2C functions as a transcriptional repressor to regulate E/I synapse density: MEF2C-VP16 (constitutive activator) phenocopies MEF2C loss, while MEF2C-EN (dominant repressor) has no effect in wild-type but rescues both spine and GABAergic synapse density deficits in Mef2c cKO neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 are supported by gain-of-function and rescue experiments (Figure 3F-I). The logic is compelling: if MEF2C were an activator, MEF2C-VP16 and MEF2C loss would have opposite effects, but they produce the same phenotype. The rescue by MEF2C-EN (repressor form) strongly supports that endogenous MEF2C functions as a repressor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RNA-Seq identified 1076 differentially expressed genes (598 down-regulated, 478 up-regulated) in Mef2c cKO cortex, highly enriched for neuron-expressed genes, with no compensatory changes in Mef2a or Mef2d expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by RNA-Seq analysis with stringent cutoffs (|log2FC| > 0.3, FDR < 0.05). The enrichment for neuron-expressed genes is consistent with MEF2C's neuronal expression pattern (C1-C2). The lack of Mef2a/Mef2d compensation at the transcriptional level is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Gene ontology analysis reveals that up-regulated genes in Mef2c cKO are enriched for neuron differentiation and development processes, while down-regulated genes are enriched for synaptic transmission and ion transport, suggesting MEF2C functions as a repressor of developmental genes and activator of synaptic function genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by gene ontology enrichment analysis (Figure 4\u2014figure supplement 1C, Table 1). The enrichment patterns are consistent with MEF2C's dual role in suppressing developmental programs while promoting synaptic function, though the inference about direct vs. indirect effects requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Mef2c cKO DEGs show significant overrepresentation of ASD-risk genes (p=0.0007), synapse-linked genes (p=0.0004), and FMRP-associated RNAs (p=3\u00d710\u207b\u2077), including autism-linked genes Ntng1, Nlgn1, Nrxn1, Nrxn3, Pcdh19, Shank2, Shank3, Pten, and Htr1b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by hypergeometric test analysis (Figure 4B) with permutation validation. The statistical significance is strong, and the enrichment for multiple disorder-relevant gene sets positions MEF2C at a critical node in neurodevelopmental disorder pathways. The connection to FMRP is particularly interesting given prior work (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "qPCR validation confirms dysregulation of several Mef2c cKO DEGs in both P21 and adult tissue, including genes regulating GABAergic transmission (Gabra5, Nos1) and Pcdh10, previously implicated in MEF2/FMRP-dependent synapse elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by qPCR data (Figure 4C,D) validating RNA-Seq findings across developmental stages. The validation strengthens confidence in the RNA-Seq results, and the identification of GABAergic transmission regulators is consistent with the increased inhibitory synapse density phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "MEF2C influences a large, complex gene expression program affecting neuronal and synapse development and numerous autism-linked genes, either directly or indirectly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is a summary inference supported by the combined RNA-Seq analysis (C38-C55). The caveat about direct vs. indirect effects is appropriate, as RNA-Seq cannot distinguish primary from secondary transcriptional changes without additional experiments like ChIP-Seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mef2c cKO mice show dramatic abnormalities in ultrasonic vocalizations: adult males produce ~70% fewer USVs with increased latency, ~5-fold increase in unstructured calls, decreased complex calls, and reduced maximum frequency; juvenile pups also produce fewer distress calls but with normal call structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 are supported by comprehensive USV analysis (Figure 5, Figure 5\u2014figure supplement 1). The age-dependent differences (reduced number at both ages, but altered structure only in adults) suggest developmental progression of the phenotype. The quantification is thorough and statistically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Mef2c cKO mice show reduced social interaction with unfamiliar mice compared to controls, but retain preference for social over empty chamber and show normal olfactory recognition of social scents, indicating social deficits are not due to olfactory or novelty detection impairments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by social interaction tests (Figure 5E, Figure 5\u2014figure supplement 1K) and social smell tests (Figure 5F). The control experiments ruling out olfactory and novelty detection deficits strengthen the interpretation that the phenotype reflects genuine social interaction deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Mef2c cKO mice show deficits in multiple social-related behaviors (nest building, tube test dominance) and reduced sucrose preference without gustatory deficits (normal quinine avoidance), indicating impaired reward-related behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 are supported by nest building (Figure 5G), tube test (Figure 5H), and sucrose preference data (Figure 5I). The control experiment with quinine effectively rules out general gustatory deficits, supporting the interpretation of specific hedonic/reward deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Mef2c cKO mice show increased repetitive behaviors (~3-fold increase in jumping, increased fine motor stereotypies) and motor hyperactivity in novel environments, but normal motor coordination (rotarod) and no changes in grooming or digging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by behavioral observations (Figure 6A,B, Figure 6\u2014figure supplement 1A,B), rotarod testing (Figure 6C), and locomotor activity measurements (Figure 6D). The specificity of the repetitive behavior phenotype (some behaviors affected, others not) suggests selective circuit dysfunction rather than general motor impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Mef2c cKO mice show profound deficits in fear conditioning (reduced freezing during training, impaired contextual and cued fear memory) without alterations in shock or acoustic startle responses, indicating learning and memory deficits independent of sensory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by fear conditioning data (Figure 7C-E) and startle response controls (Figure 7A,B). The control experiments demonstrating normal sensory responses strengthen the interpretation that the deficits reflect genuine learning/memory impairments rather than sensory or motor confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The behavioral phenotypes in Mef2c cKO mice (repetitive behaviors, hyperactivity, social deficits, communication abnormalities, learning deficits) have potential relevance to human neurodevelopmental disorders including autism, intellectual disability, and schizophrenia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by the comprehensive behavioral characterization (C57-C86). The phenotypes map onto core and associated symptoms of ASD, ID, and SCZ. However, the translational relevance requires caution as mouse behaviors are only models of human symptoms, not direct equivalents.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Conditional embryonic deletion of Mef2c in Emx1-lineage neurons produces dramatic reduction in cortical network activity due to increased inhibitory and decreased excitatory synaptic transmission, with MEF2C functioning as a cell-autonomous transcriptional repressor to regulate E/I synapse density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 synthesize the major findings from electrophysiology (C14-C20), synapse density (C21-C29), and mechanism (C30-C37). The convergent evidence from multiple experimental approaches strongly supports these conclusions as the core findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of differential gene expression identified significant overlap with synapse- and autism-linked genes, and Mef2c mutant mice display behaviors reminiscent of autism, ID, and SCZ, suggesting that perturbing MEF2C function in neocortex can produce autistic- and ID-like behaviors in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 integrate the transcriptomic (C38-C56) and behavioral (C57-C88) findings. The convergent evidence from gene expression and behavioral phenotypes supports the conclusion, though the causal link between specific gene expression changes and behaviors remains correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background and context: E/I imbalance is an emerging theory for neurodevelopmental disorders; MEF2 family members regulate excitatory synapse density; MEF2C is linked to human ID with autistic features and SCZ risk; MEF2C is highly expressed in developing forebrain neurons, but its functional role in neocortex remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C106 establish the scientific context and rationale for the study. These are well-supported by citations to the literature and represent accurate characterization of the field's knowledge and gaps at the time of publication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior work shows MEF2C loss in forebrain excitatory neurons increases DG spine density, and postnatal deletion does not produce social/repetitive behaviors, suggesting cell-type specificity and/or that embryonic/early postnatal cortical MEF2C function is critical for the behavioral phenotypes observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 discuss prior work (Barbosa et al., 2008; Adachi et al., 2016) and speculate on implications. The citations are accurate, and the speculation about developmental timing and cell-type specificity is reasonable, though it remains speculative (C108, C111).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Discussion context: E/I imbalance is proposed for ASDs and SCZ; genetic studies reveal synapse-related mutations; both increased (Fmr1, Pten, Tsc1/2 mutants) and decreased (Nlgn3 R451C) inhibitory transmission can produce ASD-like behaviors; GABAergic synapse formation precedes and influences glutamatergic synapse development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 provide discussion context supported by appropriate citations. The synthesis of prior work on E/I imbalance and developmental timing of synapse formation is accurate and relevant to interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "MEF2C in postsynaptic cortical pyramidal neurons cell-autonomously modulates GABAergic synapse density, with no effect on interneurons, suggesting cell-type-specific function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 restate findings from C26-C29 in the discussion. The evidence from sparse transfection experiments (Figure 3C,E) strongly supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "RNA-Seq revealed ~1000 altered genes with nearly half up-regulated, consistent with MEF2C functioning as a transcriptional repressor on a subset of target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 restate RNA-Seq findings from C38-C40 in the discussion. The interpretation that up-regulation upon MEF2C loss indicates repressor function is logical, though it cannot distinguish direct from indirect effects without ChIP-Seq or other mechanistic experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "Reduced Cdkl5 expression in MEF2C cKO mice is consistent with reduced CDKL5 mRNA in human MEF2C mutation patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is supported by RNA-Seq data and citation to Zweier et al., 2010. This cross-species validation strengthens the translational relevance of the mouse model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Human MEF2C haploinsufficiency causes severe neurodevelopmental disorder with motor abnormalities, social impairments, communication deficits, and intellectual disability; mouse Mef2c heterozygotes show no behavioral phenotypes, suggesting species differences in penetrance possibly due to human-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 are supported by citations to human genetic studies and unpublished mouse heterozygote data. Claim C130 is speculation about species differences, which is reasonable but remains speculative without additional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "MEF2C plays an essential role in early cortical synaptic development, and reduction in MEF2C function in forebrain excitatory neurons can produce behaviors potentially relevant to multiple intellectual and developmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are summary conclusions supported by the comprehensive synaptic (C14-C37) and behavioral (C57-C88) findings. The qualification 'potentially relevant' appropriately acknowledges the limitations of mouse models for human disorders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Schizophrenia affects ~1% of the population with neurodevelopmental origins and overlapping risk genes with ASD; SCZ brains show cortical thinning and decreased spine density supporting excitatory hypofunction hypothesis; MEF2C was identified as a candidate SCZ risk gene by SNP meta-analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 provide context for SCZ relevance, supported by appropriate citations. The characterization of SCZ pathophysiology and genetic risk is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Mef2c cKO mice show cortical thinning, decreased spine density, and behavioral phenotypes reminiscent of cognitive and negative symptoms of SCZ (learning/memory deficits, anhedonia, reduced sociability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 connect the mouse phenotypes (C13, C23, C57-C88) to SCZ symptoms. The parallels are reasonable, though the translational relevance of mouse behaviors to human psychiatric symptoms requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Summary: Mef2c is required for proper synapse development on excitatory forebrain neurons; its embryonic loss produces behavior phenotypes reminiscent of neurodevelopmental disorders; behavior changes are associated with reduced cortical network activity and altered E/I synapse densities; MEF2C dysregulates hundreds of neuronal genes, positioning it at the nexus of neurodevelopmental disorder risk genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C144 provide the final summary of major findings. These are well-supported by the comprehensive experimental evidence throughout the study, integrating synaptic, transcriptomic, and behavioral findings into a coherent model.",
+    "result_type": "MAJOR"
+  }
+]

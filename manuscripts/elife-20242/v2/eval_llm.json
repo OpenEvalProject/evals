@@ -1,0 +1,464 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "The 10 most abundant Obps in the Drosophila antenna exhibit diverse spatial expression patterns across different morphological classes of sensilla. Four Obps are expressed in basiconic sensilla, four in trichoid sensilla, and two in coeloconic sensilla. Some Obps are expressed exclusively in one sensillum type, while two are expressed in both basiconic and trichoid sensilla. Obp19d and Obp56d are expressed in epidermal cells rather than in olfactory sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C46 are well-supported by in situ hybridization data shown in Figures 2A-C. The spatial expression patterns are documented with microscopy images, and the classification of Obps by sensillum type is consistent with both the imaging data and prior literature. The expression breadth correlates appropriately with RNA-Seq abundance data (C33-C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59"
+    ],
+    "result": "An Obp-to-sensillum map was constructed for the 10 basiconic sensillum types (ab1-ab10) using double-label analysis. Obp83a and Obp83b map to the same subset of basiconic sensilla (ab1, ab2, ab3, ab7, ab10), while Obp19a maps to a different subset. Notably, Obp28a is expressed in all 10 basiconic sensillum types, and ab8 expresses only a single abundant Obp (Obp28a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C59 are strongly supported by the systematic double-label analysis shown in Figure 3A-B, which combines Or-GAL4 drivers with Obp in situ probes. The mapping is comprehensive across all 10 basiconic types, and the finding that ab8 contains only one abundant Obp is particularly well-documented and critical for subsequent functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Obps are not expressed in neurons but rather in support cells of sensilla. Systematic double-label analysis revealed that Obps are expressed in thecogen and tormogen cells, with Obp84a specifically labeling thecogen cells and six Obps co-expressing with the tormogen marker. Many Obps likely label trichogen cells based on lack of co-labeling with thecogen or tormogen markers. Obp19a shows variable cell-type expression across different basiconic sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C78 are well-supported by multiple lines of evidence including lack of neuronal morphology in Obp-labeled cells (C61), systematic double-labeling with Or-GAL4 drivers (C62), and co-localization studies with cell-type markers nompA-GAL4 and ASE5-GAL4 (Figure 4). The inference that many Obps label trichogen cells (C72) is reasonable given the elimination of other cell types, though direct confirmation is acknowledged as lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A CRISPR/Cas9-mediated deletion of Obp28a was generated, outcrossed five times to a control background, and verified by PCR and qPCR analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe standard molecular biology methods that are well-documented in the Materials and Methods section and Figure 5\u2014figure supplement 1. The outcrossing strategy (C80) is appropriate for reducing background genetic effects. PCR verification before and after outcrossing (C81) and qPCR confirmation (C82) provide adequate validation of the deletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Deletion of Obp28a, the sole abundant Obp in ab8 sensilla, does not eliminate olfactory responses to 1-octanol. Surprisingly, the Obp28a mutant shows robust responses across a broad concentration range and exhibits greater peak responses than controls, particularly during the initial phase of odor response. Baseline firing rates are unchanged in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 are strongly supported by electrophysiology data in Figure 5A-B. The dose-response curves and PSTH analysis clearly demonstrate robust responses in the mutant (n=12). Statistical significance is appropriately assessed with p-values reported. The finding challenges the prevailing model that Obps are essential for odorant transport, making this a critical result. However, the interpretation (C87) that ab8 can maintain responses \"with little if any Obp\" assumes no compensation by low-abundance Obps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "During prolonged 30-second 1-octanol stimulation, the Obp28a mutant shows an enhanced initial response compared to controls, comparable sustained responses during the stimulus, and faster decline after stimulus termination. These findings argue against Obp28a playing an essential role in clearing odorant after intense stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 are supported by PSTH analysis in Figure 6A (n=18). The faster decline in the mutant (C94) is opposite to what would be expected if Obp28a were essential for odorant clearance, supporting the negative conclusion (C95). However, the statistical analysis could be more rigorous\u2014only some time bins show p<0.05, and the overall pattern interpretation relies on visual inspection of the PSTH.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "When 1-octanol pulses are superimposed on a sustained background, the Obp28a mutant maintains the same background firing rate as controls and responds robustly to superimposed pulses with a detection threshold between 10\u207b\u00b3 and 10\u207b\u00b2 dilutions. The mutant shows greater responses than controls at all doses above threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by electrophysiology data in Figure 6B-C (n=16). The experimental design tests an ecologically relevant scenario of detecting odor changes against a background. The finding that mutants show enhanced responses even under these conditions (C98) further supports that Obp28a is not essential for odorant detection and may play a modulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The Obp28a mutant responds robustly to more hydrophilic odorants (butyric acid and ethyl acetate) over broad concentration ranges. PSTH analysis reveals higher peak responses in the mutant for both odorants. Decay dynamics after stimulus termination are comparable for butyric acid but faster in the mutant for high-dose ethyl acetate, arguing against Obp28a being essential for odorant clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 are supported by dose-response curves and PSTH analysis in Figure 7A-D (n=12-13). Testing hydrophilic odorants (logP = 0.73-0.79) addresses whether Obp function depends on odorant hydrophobicity. The enhanced responses in mutants for some odorants (C105-C106) and faster decay for ethyl acetate (C109) are statistically significant and consistent with the 1-octanol results, strengthening the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "When tested against a diverse panel of eight odorants representing different chemical classes, the Obp28a mutant and control show very similar overall response profiles with the same rank order of stimuli. The mutant shows greater responses to a subset of compounds but never shows reduced responses compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 are supported by the odorant panel data in Figure 7E (n=12). The similarity in response profiles (C111, C113) argues against Obp28a selectively filtering certain odorants. The consistent finding that mutant responses are never lower than controls (C115) across all tested odorants is important for ruling out essential transport functions. However, the odorant panel is relatively small (8 compounds), and more extensive screening might reveal selective effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Elimination of the sole abundant Obp from ab8 sensilla does not reduce the magnitude of olfactory responses to tested odorants. This finding does not support the widespread belief that Obps are essential for odorant transport to receptors in all sensilla, suggesting that ab8 does not require an abundant Obp for odorant transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 represent the central conclusion of the functional analysis, synthesizing results from Figures 5-7. The conclusion is well-supported by robust responses across multiple odorants, concentrations, and stimulus paradigms. However, the interpretation (C134) that ab8 \"does not require an Obp\" is strong\u2014it's possible that low-abundance Obps or other mechanisms compensate. The authors acknowledge this limitation in the discussion but the claim as stated is somewhat overgeneralized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Pore tubules are tubular structures found in sensilla of diverse insects that extend from wall pores to dendritic membranes. In Drosophila basiconic sensilla, these structures (up to 1 \u03bcm long, 15-20 nm diameter, up to 83,000 per sensillum) consist of lipids and proteins and have been proposed as conduits for hydrophobic odorant transport. The results support the possibility that pore tubules provide an alternative mechanism to Obps for odorant transport in some sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C144 are supported by citations to established literature (Steinbrecht 1997, Keil 1982, etc.) and Figure 8B-C showing pore tubule structure. The proposal that pore tubules provide an alternative transport mechanism (C144) is a reasonable interpretation of the functional data showing robust responses without Obp28a. However, this remains speculative as no direct evidence is provided that pore tubules are actually mediating transport in the Obp28a mutant. The claim is appropriately framed as a possibility rather than a proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The Obp28a mutant shows greater initial responses to odor pulses and accelerated decline after prolonged stimulation, yet maintains similar overall response profiles to controls across diverse odorants. These findings argue against Obp28a functioning primarily to protect odorants, inactivate them after stimulation, or selectively filter them. The similarity in response profiles is consistent with empty neuron system results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C153 synthesize the functional phenotypes and evaluate them against alternative models of Obp function. The logic is sound: if Obp28a protected odorants, controls should show greater responses (opposite of C145); if it inactivated odorants, controls should show faster decline (opposite of C146); if it filtered odorants, response profiles should differ (opposite of C147). The consistency with empty neuron results (C151, C153) strengthens the interpretation. The reasoning is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C169",
+      "C170"
+    ],
+    "result": "The authors propose that Obp28a may buffer the olfactory system against sudden changes in odor level by binding odorant during sudden influx (reducing receptor activation) and releasing it after stimulus termination (prolonging response). This would constitute a molecular form of gain control that precedes cellular gain control mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C170 present a speculative model to explain the observed phenotypes. While the buffering model (C166) is consistent with the enhanced initial responses and prolonged decay in mutants, it remains hypothetical. No direct evidence is provided for Obp-odorant binding dynamics in vivo, odorant release kinetics, or the proposed buffering mechanism. The model is plausible and well-reasoned, but requires experimental validation through additional studies measuring odorant concentrations, binding kinetics, or computational modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Most abundant Obps are expressed in only one morphological class of sensillum, suggesting specialized functions. All basiconic sensillum types and most coeloconic and trichoid sensilla express at least one abundant Obp, consistent with Obps being essential for olfactory coding. However, functionally distinct sensilla can contain the same Obp subset, supporting that odor receptors rather than Obps dictate ORN response profiles. The ab3 sensillum used in empty neuron studies expresses all four abundant basiconic Obps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C131 synthesize the expression mapping results and draw conclusions about Obp organization and function. The observations are well-supported by Figures 2-3. The inference that Obps have specialized functions (C117) is reasonable but speculative. The conclusion that Obps don't dictate response profiles (C127) is supported by the observation that ab1 and ab2 have the same Obps but different functions (C126), and is consistent with empty neuron studies (C128-C129). The identification that ab3 contains all basiconic Obps (C130) is important for interpreting prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The authors acknowledge that the role of Obp28a in ab8 cannot be extrapolated to all Obps and sensilla. Different Obps likely have different functions, as evidenced by prior studies showing reduced olfactory function with Obp depletion and Obp involvement in taste inhibition. The most abundant Obp (Obp19d) is expressed in epidermal cells and unlikely to be secreted into sensillar lymph, suggesting some Obps may bind non-odorant ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C161 appropriately qualify the main findings and acknowledge limitations. The caveat that results may not generalize (C154) is important given Obp diversity. The observation that Obp19d is in epidermal cells (C159) is supported by Figure 2B and citation to Park et al. 2000. The speculation that some Obps bind non-odorant ligands (C161) is reasonable given expression outside olfactory sensilla. These claims demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The Drosophila antenna contains three main morphological classes of olfactory sensilla (basiconic, trichoid, coeloconic) with distinct functional specializations. Basiconic sensilla include 10 types (ab1-ab10) that detect different odorant subsets. Sensilla are perforated structures containing aqueous lymph, ORN dendrites, and support cells (thecogen, trichogen, tormogen).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide essential background on Drosophila olfactory anatomy and are well-supported by extensive prior literature (multiple citations) and Figure 1. These are established facts in the field that provide necessary context for the study. The claims are appropriately referenced and consistent with current knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Obps constitute a large, diverse family of 52 genes in Drosophila encoding abundant, small (~14 kDa) proteins with low sequence identity (20% average) but common structure. Many are found in sensillum lymph, bind odorants with varying affinity/selectivity, and show differential expression across sensilla and other chemosensory organs. Obps are widely believed to transport hydrophobic odorants and may accelerate response termination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C23 summarize established knowledge about Obps from prior literature, supported by numerous citations. These background claims are well-documented and provide essential context for understanding why the functional studies are important. The characterization of prevailing models (C21-C22) accurately represents the field's understanding prior to this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Obp76a (LUSH) is required for normal Or67d responses to the pheromone cVA in trichoid sensilla, though some responses occur without it. LUSH binds cVA in vitro but also binds other pheromones, short-chain alcohols, and phthalates, indicating broad ligand specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 accurately summarize prior work on LUSH, the best-characterized Obp in Drosophila, supported by multiple citations. The nuance that Or67d can respond to cVA without LUSH (C25) is important context for interpreting the current Obp28a results. The broad ligand binding (C27-C29) foreshadows the finding that Obps may not provide strict odorant selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "The localization of Obp84a and Obp59a to coeloconic sensilla is consistent with their absence in atonal mutants, which lack coeloconic sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 makes a logical inference connecting the in situ localization data with prior RNA-Seq analysis of atonal mutants (Menuz et al. 2014). This cross-validation between different experimental approaches strengthens confidence in the expression mapping. The reasoning is sound and the claim is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The Obp83b gene lies less than 1 kb from Obp83a and encodes a protein with 68% amino acid identity to Obp83a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe the genomic organization and sequence relationship of Obp83a and Obp83b, supported by citation to Hekmat-Scafe et al. 1997. This information is relevant for understanding why these two Obps show identical expression patterns (C49) and suggests they may have arisen by recent gene duplication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The mutually exclusive expression of Obps in coeloconic versus other sensilla may reflect the ancient origin of coeloconic sensilla, their unique double-walled architecture, their response to polar odorants, or their expression of IR receptors rather than Ors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C122 propose multiple speculative explanations for the observed expression pattern. While each possibility is supported by citations to relevant literature, no evidence is provided to distinguish among these alternatives. The claims are appropriately framed as possibilities (\"may reflect\") but remain untested hypotheses that would require additional experiments to evaluate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Obp28a could play a broad role in odor coding because it is expressed in all 10 types of basiconic sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is speculative, inferring function from expression pattern. While the broad expression (C57) is well-documented, the functional implication is uncertain. The subsequent deletion studies (Figures 5-7) actually suggest Obp28a may not be essential for basic odor detection, though it may play a modulatory role. The claim is appropriately tentative (\"could play\") but the specific function remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Obp76a is likely expressed in trichogen cells based on lack of co-labeling with thecogen or tormogen markers. Most Obp probes likely label trichogen cells based on labeling cells not marked by thecogen or tormogen markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 make reasonable inferences by process of elimination, but lack direct confirmation. The authors acknowledge the inability to confirm trichogen expression due to lack of suitable markers (C71). While the logic is sound\u2014if cells aren't neurons, thecogen, or tormogen, they're likely trichogen\u2014this remains indirect evidence. The claims are appropriately qualified as \"likely\" and \"seem likely.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The odorants tested have defined chemical properties: 1-octanol is highly hydrophobic (logP = 3.07) and found in citrus fruits, eliciting modest responses from ab8 neurons; ethyl acetate (logP = 0.73) and butyric acid (logP = 0.79) are more hydrophilic and elicit strong responses (>100 spikes/s) from ab8A and ab8B respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C99-C102 describe the chemical and biological properties of odorants used in the study. The logP values are stated as facts and the response properties are supported by citation to Hallem and Carlson 2006. This information is important for interpreting the functional results, as it allows testing whether Obp function depends on odorant hydrophobicity. The claims are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C162",
+      "C163"
+    ],
+    "result": "Sensilla are diverse in structure and function, as illustrated by the lack of visible pore tubules in Drosophila trichoid sensilla.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 note important structural diversity among sensilla types, supported by citation to Shanbhag et al. 1999. This observation is relevant for understanding why different sensilla might employ different mechanisms for odorant transport (Obps vs. pore tubules). The claims provide important context for interpreting the generalizability of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "The olfactory circuit employs cellular gain control via local interneuron inhibition of ORNs, which is critical for preventing saturation and improving discrimination. ORNs synapse onto projection neurons with non-linear firing relationships, and PNs respond most vigorously to odor onset. Therefore, even modest alterations in initial ORN firing could significantly affect CNS odor representation and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C175 summarize established principles of olfactory circuit function, supported by citations to Olsen and Wilson 2008, Root et al. 2008, and Wilson 2013. This background is important for contextualizing why the enhanced initial responses in Obp28a mutants (C145) could be functionally significant despite being modest in magnitude. The logic connecting ORN dynamics to behavioral output (C175) is well-supported by the cited literature.",
+    "result_type": "MINOR"
+  }
+]

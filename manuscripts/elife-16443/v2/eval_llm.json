@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript describes the established anatomical organization of the basal ganglia network, including the input structures (striatum and STN), their neurotransmitters (GABA and glutamate), and connectivity patterns with downstream structures (GPe, GPi/SNr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C20 describe well-established neuroanatomical facts about basal ganglia organization, supported by appropriate citations to anatomical literature (Parent and Hazrati, Carpenter et al., Hegeman et al.). These are foundational background claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript reviews established knowledge about Parkinson's disease pathophysiology, including dopamine depletion in the striatum, emergence of abnormal oscillations, and the clinical effectiveness of STN-DBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 summarize well-established facts about PD pathophysiology and treatment, appropriately cited to prior literature (Levy et al., Nini et al., Limousin et al., K\u00fchn et al.). These are background claims setting up the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The study used two female African vervet green monkeys trained in a temporal discounting classical conditioning task with immediate and delayed outcome conditions, followed by MPTP-induced parkinsonism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C123-C129 describe the experimental design and methods, which are clearly documented in the methods section and figures. The use of two animals is a limitation for statistical power, but the methods are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Animals learned cue values and differentiated between immediate and delayed outcomes, but the 6-second delay period likely compromised temporal predictability of outcome delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by behavioral data in Figure 1B showing appropriate anticipatory responses in the immediate condition but not during the delay period. The interpretation about compromised temporal predictability (C34) is reasonable given the behavioral data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Neuronal populations in the BG main axis exhibited persistent modulations of activity from cue onset to outcome delivery, with diverse patterns of increases and decreases in firing rate, contrasting with transient TAN responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C41 are supported by data in Figures 3, 4, and 5 showing persistent population responses and diverse temporal patterns. The finding that absolute responses exceeded relative responses (C38) supports the interpretation that neurons exhibit bidirectional modulations (C39), consistent with cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "During the delay period, the fraction of responsive neurons decreased in STN and downstream structures but remained unchanged for striatal MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by statistical analysis (one-way ANOVA, p<0.001) and data shown in Figure 5. The differential behavior of MSNs versus other BG structures is clearly demonstrated with appropriate post-hoc corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The increase/decrease balance of neuronal activity shifted across task periods: increases dominated during cue periods in all structures, but during the delay period, the I/D balance remained biased toward increases for MSNs while it was reduced in STN and reversed in GPe, GPi, and SNr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 are supported by data in Figure 6 with appropriate statistical testing (one-way ANOVA, p<0.001, Bonferroni correction). The interpretation that STN excitatory drive was reduced while striatal GABAergic drive remained unchanged (C49-C50) logically follows from the data, though it is an inference about synaptic drive rather than direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Subthalamic neuronal responses (both increases and decreases) were more strongly correlated with BG downstream neuronal responses than striatal MSN responses, as demonstrated by cross-correlation analysis showing systematic effects of BG input source (striatum vs. STN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by data in Figure 7 with appropriate statistical testing (\u03c7\u00b2 test, two-way ANOVA, p<0.001). The conclusion that STN responses correlate more strongly with downstream activity (C58) is a key finding, though the analysis is based on non-simultaneous recordings which introduces temporal uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Systemic MPTP treatment induced severe parkinsonism with large dopamine depletion in the dorsal striatum (confirmed by PET and immunohistochemistry) and all major motor signs of PD, rendering animals unable to perform the behavioral task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 and C90-C92 are supported by data in Figures 8 and 9, including PET imaging, immunohistochemistry, and clinical scoring. The justification for using severe MPTP treatment (C90) is reasonable given the goal of ensuring robust oscillatory activity, though this limits behavioral analysis in the parkinsonian state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93",
+      "C94"
+    ],
+    "result": "After MPTP treatment, abnormal 8-15 Hz oscillations emerged in spiking activity of STN, GPe, SNr, and striatal TANs, but not in striatal MSNs, despite MSNs being recorded in areas with TAN oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 and C93-C94 are supported by power spectral density analysis shown in Figures 10 and 11 with appropriate statistical testing (two-sample t-test, p<0.01). The absence of oscillations in MSNs despite their presence in TANs recorded from the same region is a key finding, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "After MPTP treatment, exaggerated 8-15 Hz LFP oscillations appeared in all BG structures including striatum, and spike-field coherence analysis revealed that spiking activity of STN, GPe, SNr, and TANs (but not MSNs) became phase-locked to these LFP oscillations, with neurons firing around the negative LFP peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C78 are supported by coherence analysis (Figures 12, 14, 16) and STA-LFP analysis with appropriate controls including spike train dilution to rule out firing rate confounds. The consistent lack of MSN phase-locking across multiple analysis methods strengthens the conclusion, though the underlying mechanism is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The strength of 8-15 Hz LFP oscillations did not correlate with the degree of spike-field coherence across BG structures, and MSN spiking failed to lock with LFP oscillations regardless of LFP oscillation strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by correlation analysis in Figure 15 showing no linear relationship between LFP power and spike-field coherence. This rules out the possibility that MSN phase-locking only occurs with strong LFP oscillations, strengthening the conclusion that MSNs fundamentally differ from other BG neurons in this regard.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The abnormal striatal synaptic inputs may not have been strong enough to depolarize MSNs above spike threshold. Contrary to classical rate model predictions, no robust increase in MSN firing rate was found after MPTP, though GPe firing decreased and STN firing increased as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is speculative and not directly tested. Claims C107-C110 are partially supported by firing rate data in Figure 17, but the lack of MSN firing rate increase (C108) contradicts one prior study (Liang et al., 2008) and the classical rate model (C107). The authors acknowledge this inconsistency but do not fully resolve it. The possibility of striatal contribution via D2-MSNs (C110) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Despite abnormal oscillating synaptic inputs in the striatum, MSNs failed to express oscillatory spiking activity, indicating that abnormal oscillations in PD resonate across the cortico-BG network through the STN rather than the striatum, supporting the view that STN is the driving force behind BG pathophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 represent the main conclusion of the parkinsonian state experiments, supported by the convergent evidence from oscillation analysis (Figures 10-16). The conclusion that oscillations propagate through STN rather than striatum (C113) is well-supported, though the study cannot definitively rule out all striatal contributions (acknowledged in C110).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The persistent population activity in the BG main axis may form an internal representation reflecting neuronal coupling between current state and upcoming behavioral response, with the heterogeneity of responses providing large information capacity for state-to-action mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are interpretive conclusions supported by the persistent activity data (Figures 3-5) and appropriately cited to working memory literature. The hypothesis about state-to-action coupling (C80) is reasonable given the task design and neural responses, though it remains a working hypothesis rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "STN activity fluctuations were concurrent with modifications in BG downstream network activity without parallel striatal modulations, suggesting that STN orchestrates the time-varying I/D balance in downstream structures and exerts powerful control over BG output commands prior to fine modulation by direct and indirect pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 represent a major interpretive conclusion supported by the correlation analysis (Figure 7) and I/D balance data (Figure 6). The conclusion is appropriately cited to functional models (Mink, Nambu et al.). However, C89 correctly notes this was only tested in one task paradigm, which is an important limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The lack of MSN oscillatory activity is consistent with unpublished human observations, while TANs exhibited oscillations reflecting weak MSN-TAN connectivity. Beta oscillations observed in the healthy state likely correspond to neuronal processes involved in state-to-action mapping, and their exaggeration in parkinsonism may compromise behavioral flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 are supported by the data and prior literature, but C95 relies on unpublished observations which cannot be evaluated. Claims C98-C101 involve interpretations about the functional role of beta oscillations that are plausible and appropriately cited (Brittain and Brown, Engel and Fries) but remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The dopamine-depleted striatum received pathological oscillatory inputs from afferent neurons, but these inputs only entrained TANs and not MSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by LFP and spike-field coherence data (Figures 10-16). This is a key finding that distinguishes between different striatal cell types and their responses to pathological inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Despite the pivotal role of STN, the striatum remains important in BG function through dopaminergic modulation of cortico-striatal efficacy and MSN excitability. The coincidence of cortical/thalamic and dopaminergic activity may be necessary for MSN spike generation, though this refined control was likely undetected in the population analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 are well-supported by cited literature. However, C118-C120 are speculative hypotheses about MSN spike generation that are not directly tested. C121 appropriately identifies the need for future work with moderately parkinsonian animals. C122 draws a reasonable conclusion about STN-DBS efficacy based on the findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Tim17 contains several evolutionarily conserved GxxxG motifs throughout its four predicted transmembrane segments, with residues clustering on the same sides of putative helices. All GxxxG motif mutants were viable, suggesting flexibility in transmembrane segment packing can be tolerated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 provide sequence analysis and structural predictions showing conserved GxxxG motifs. C38-C39 demonstrate viability of all mutants through experimental data (Figure 1B), supporting the inference about packing flexibility. The structural and functional data converge to support this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Six GxxxG motif mutants (G25L, G29L in TM1; G62L, G66L in TM2; G95L, G99L in TM3) displayed temperature-sensitive growth defects and impaired TIM23-dependent protein import, with defects correlating with growth phenotype severity. Import defects were specific to the TIM23 pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C53 provide comprehensive experimental evidence from growth assays (Figure 2A), Hsp60 accumulation (Figure 2B), and in vitro import assays (Figure 2\u2014figure supplement 1). The specificity control (C52-C53) showing normal AAC import strengthens the conclusion. Multiple independent assays support the temperature-sensitive phenotypes and import defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C102"
+    ],
+    "result": "Mutations in TM1 and TM2 of Tim17 impaired interaction with Tim23 and drastically reduced the 90 kDa Tim17-Tim23 core complex, while TM3 mutants maintained normal complex levels. This indicates TM1 and TM2 are involved in Tim23 interaction while TM3 has a minor role in core complex stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C54-C61 are supported by BN-PAGE analysis (Figure 2C) showing reduced complex formation in TM1/TM2 mutants but not TM3 mutants, combined with SDS-PAGE showing unchanged protein levels (C56-C57). The inference about differential TM roles (C58, C61, C102) is well-supported by the experimental data and consistent with prior work on Tim23 (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutations in TM3 of Tim17 (G95L, G99L) compromised binding of Tim44 to the TIM23 complex while maintaining normal Tim23 and Tim50 binding, as demonstrated by Ni-agarose pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C62-C67 are supported by pull-down experiments (Figure 2D) showing impaired Tim44 binding in TM3 mutants while Tim23 and Tim50 binding remained normal. The differential binding pattern provides strong evidence for TM3's specific role in Tim44 recruitment. The control with wild-type Tim17 (C62) validates the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Alanine scanning mutagenesis identified residues 104-108 as critical for Tim44 binding, with the conserved R105 residue being essential. The R105A mutant showed severe temperature-sensitive growth defects and impaired TIM23-dependent protein import, while maintaining normal Tim17 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 are supported by multiple experimental approaches: alanine scanning (Figure 3A), growth assays (Figure 3B), localization studies (Figure 3\u2014figure supplement 1A), and import assays (Figure 3\u2014figure supplement 1B). The convergence of evidence from different assays strongly supports the identification of R105 as critical for Tim44 binding and TIM23 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C92",
+      "C93"
+    ],
+    "result": "The R105K mutant (maintaining positive charge) showed similar phenotypes to R105A, indicating that the positive charge itself at position 105 is not sufficient for function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 and C92-C93 are supported by growth assays (Figure 3\u2014figure supplement 1C) and co-immunoprecipitation (Figure 3\u2014figure supplement 1D) showing R105K behaves similarly to R105A. This provides strong evidence that the specific arginine residue, not just positive charge, is functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In the R105A mutant, Tim44 interaction with the TIM23 complex was severely compromised, leading to dissociation of the Tim14-Tim16 pair, while Tim17-Tim23 interaction remained normal. This supports that Tim17 is the major component for Tim44 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by co-immunoprecipitation experiments (Figure 3C) showing loss of Tim44 binding in R105A mutants while Tim17-Tim23 interaction is maintained. The dissociation of Tim14-Tim16 (C88) is consistent with Tim44's role in connecting subcomplexes (C89), supported by prior work. The convergent evidence strongly supports Tim17's role in Tim44 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C105"
+    ],
+    "result": "Photo-crosslinking experiments with BPA at position 106 of Tim17 demonstrated direct proximity to Tim44, with crosslinking abolished in the R105A background, providing direct evidence for R105's involvement in Tim44 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by crosslinking experiments (Figure 3D, 3E, Figure 3\u2014figure supplement 1E) showing UV-dependent crosslinking between Tim17(106BPA) and Tim44, which is lost in the R105A mutant. The specificity controls (UV-dependence, Ni-agarose enrichment) and the loss of crosslinking in R105A/106BPA provide strong direct evidence for the Tim17-Tim44 interaction site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C100",
+      "C101",
+      "C103",
+      "C104"
+    ],
+    "result": "The transmembrane segments of Tim17 have functionally distinct roles, with TM1-2 involved in higher-order structure formation and Tim23 interaction, while TM3 and the matrix-facing region are involved in Tim44 recruitment. Unlike Tim23, TM1-2 of Tim17 are not sufficient for full protein function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C100-C101 are supported by the collective experimental data showing differential effects of mutations in different TM segments. C101 is directly supported by experimental data (Figure 4A) showing TM1-2 are insufficient. C103-C104 provide context from this and prior work about higher-order structure formation. The overall conclusion about functionally distinct roles is well-supported by the comprehensive mutagenesis and functional analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Tim17 may bridge the translocation channel and the import motor of the TIM23 complex, potentially guiding translocating proteins between the two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 are speculative conclusions ('may bridge', 'suggesting how') based on the experimental findings. While the data support Tim17's dual interactions with Tim23 and Tim44, the mechanistic model of protein guidance during translocation is not directly tested. This represents a reasonable hypothesis requiring further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "All experiments were performed with at least three biological replicates and repeated by multiple researchers, with some experiments repeated in different laboratories to ensure reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 describe the experimental methodology and reproducibility measures. These statements about experimental design are explicit and provide important context for evaluating the reliability of the results. The multi-researcher and multi-laboratory validation strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  }
+]

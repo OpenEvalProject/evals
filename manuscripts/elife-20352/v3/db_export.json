@@ -1,0 +1,1699 @@
+{
+  "submission": {
+    "id": "b699337e-8c81-419f-b9d7-448c68e0e2cf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:28:40.944183Z",
+    "updated_at": "2025-11-30T21:28:40.944183Z"
+  },
+  "content": [
+    {
+      "id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "submission_id": "b699337e-8c81-419f-b9d7-448c68e0e2cf",
+      "content_type": "manuscript",
+      "content_text": "# Computationally designed high specificity inhibitors delineate the roles of BCL2 family proteins in cancer\n\n## Authors\n\n- Stephanie Berger<sup>1</sup> ([ORCID: 0000-0002-3738-5907](https://orcid.org/0000-0002-3738-5907)) \u2020\n- Erik Procko<sup>2</sup>\n- Daciana Margineantu<sup>4</sup>\n- Erinna F Lee<sup>6</sup>\n- Betty W Shen<sup>11</sup>\n- Alex Zelter<sup>2</sup>\n- Daniel-Adriano Silva<sup>2</sup>\n- Kusum Chawla<sup>4</sup>\n- Marco J Herold<sup>9</sup>\n- Jean-Marc Garnier<sup>9</sup>\n- Richard Johnson<sup>13</sup>\n- Michael J MacCoss<sup>13</sup>\n- Guillaume Lessene<sup>9</sup> ([ORCID: 0000-0002-1193-8147](https://orcid.org/0000-0002-1193-8147))\n- Trisha N Davis<sup>2</sup> ([ORCID: 0000-0003-4797-3152](https://orcid.org/0000-0003-4797-3152))\n- Patrick S Stayton<sup>1</sup>\n- Barry L Stoddard<sup>11</sup>\n- W Douglas Fairlie<sup>6</sup>\n- David M Hockenbery<sup>4</sup>\n- David Baker<sup>2</sup> ([ORCID: 0000-0001-7896-6217](https://orcid.org/0000-0001-7896-6217)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering University of Washington Seattle United States\n2. Department of Biochemistry University of Washington Seattle United States\n3. Department of Biochemistry University of Illinois Urbana United States\n4. Clinical Research Division Fred Hutchinson Cancer Research Center Seattle United States\n5. Human Biology Division Fred Hutchinson Cancer Research Center Seattle United States\n6. Department of Chemistry and Physics LaTrobe Institute for Molecular Science Melbourne Australia\n7. Olivia Newton-John Cancer Research Institute Olivia Newton-John Cancer and Wellness Centre Heidelberg Australia\n8. School of Cancer Medicine La Trobe University Melbourne Australia\n9. The Walter and Eliza Hall Institute of Medical Research Parkville Australia\n10. Department of Medical Biology University of Melbourne Parkville Australia\n11. Basic Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n12. Institute for Protein Design University of Washington Seattle United States\n13. Department of Genome Sciences University of Washington Seattle United States\n14. Department of Pharmacology and Therapeutics University of Melbourne Parkville Australia\n15. Howard Hughes Medical Institute University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany cancers overexpress one or more of the six human pro-survival BCL2 family proteins to evade apoptosis. To determine which BCL2 protein or proteins block apoptosis in different cancers, we computationally designed three-helix bundle protein inhibitors specific for each BCL2 pro-survival protein. Following in vitro optimization, each inhibitor binds its target with high picomolar to low nanomolar affinity and at least 300-fold specificity. Expression of the designed inhibitors in human cancer cell lines revealed unique dependencies on BCL2 proteins for survival which could not be inferred from other BCL2 profiling methods. Our results show that designed inhibitors can be generated for each member of a closely-knit protein family to probe the importance of specific protein-protein interactions in complex biological processes.\n\n## Introduction\n\nProgrammed cell death is a tightly controlled process, involving both pro-survival and pro-apoptotic proteins that regulate permeability of the outer mitochondrial membrane. As cells enter apoptosis, mitochondrial membrane permeability increases, releasing mitochondrial factors such as cytochrome c that initiate destructive protease cascades in the cytosol. The key regulators of mitochondrial outer membrane permeability are B cell lymphoma-2 (BCL2) family proteins which are categorized functionally by their effect on cell fate, and structurally by the presence of BCL2 homology (BH) motifs. Pro-apoptotic effector proteins Bak and Bax have four distinct BH motifs and homo-oligomerize upon activation to form pores in the mitochondrial outer membrane, committing the cell to apoptosis. Pro-survival homologs (six in humans: Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1 and Bcl-B) are structurally similar, but oppose apoptosis by binding and inhibiting Bak and Bax, as well as sequestering pro-apoptotic BH3-only proteins (BOPs). BOPs can also activate effectors directly through transient binding interactions (Dai et al., 2011; Kim et al., 2009; Walensky et al., 2006) or indirectly by binding pro-survival proteins and out-competing bound effectors (Ku et al., 2011; Willis et al., 2007) or other direct activator BOPs (Kuwana et al., 2005; Letai et al., 2002; Figure 1). Interactions between BCL2 members are mediated by an amphipathic, helical BH3 motif that recognizes a conserved hydrophobic cleft present in the effectors and pro-survival proteins. The balanced network of interactions between pro-apoptotic and pro-survival members can be tipped toward cell death by cellular stress signals that induce transcription (Essafi et al., 2005; Nakano and Vousden, 2001) or post-translational modification of BOPs (Desagher et al., 2001; Fricker et al., 2010; reviewed in Shamas-Din et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig1-v3.jpg)\n\n**Figure 1.:** BCL2 proteins are categorized by their net effect on cell fate and the presence of shared structural domains. BH3-only proteins (BOPs) are sequestered by pro-survival homologs (labels 1 and 2), and some BOPs may activate the direct effectors Bak and Bax by disrupting their inhibition by pro-survival proteins (3a) and/or promoting their homo-oligomerization (3b). Pro-survival proteins, which are typically overexpressed in cancer, bind and inhibit Bak and Bax (4), which would otherwise homo-oligomerize upon activation (5) and form pores in the mitochondrial outer membrane (MOM; 6). MOM permeabilization allows the release of cytochrome c and other factors from the intermembrane space (IMS) and thus initiates the apoptotic signaling cascade (7). Designed inhibitors have a net pro-apoptotic effect by binding pro-survival proteins, which may both limit sequestration of BOPs (A) and disrupt inhibition of Bak and Bax (B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** BINDI, a de novo three-helix bundle inhibitor of BHRF1, was employed as a scaffold protein to engineer altered specificities toward each of six human pro-survival proteins. BINDI was first computationally docked into the binding groove of each BCL2 homolog and interface residues were computationally designed, yielding high affinity inhibitors with at least partial specificity. Some designs were further optimized for specificity and affinity via mutagenesis and in vitro evolution. Specific, optimized inhibitors were used to study BCL2 profiles of different cancers.\n\nPathology arises when apoptosis is dysregulated. Overexpression of one or more pro-survival homologs enables cancers to resist apoptosis, and different cancers have different profiles of pro-survival protein overexpression (Kelly and Strasser, 2011; Placzek et al., 2010). Small molecule and peptide therapeutics mimic BOPs by binding pro-survival proteins, inducing apoptosis by disrupting inhibition of Bak and Bax and limiting sequestration of BOPs. However, BH3-mimetics that non-specifically target multiple BCL2 proteins can cause harmful side effects by unnecessarily suppressing normal biological functions. For example, the small molecule ABT-737 (and related ABT-263) targeting Bcl-2, Bcl-xL and Bcl-w exhibits dose-limiting thrombocytopenia in treating Bcl-2-dependent chronic lymphocytic leukemia due to excessive inhibition of Bcl-xL, which has a role in platelet development (Mason et al., 2007; Roberts et al., 2012).\n\nDelineation of the roles of pro-survival homologs in a given cancer, termed BCL2 profiling, aims to reveal which homolog or homologs a tailored treatment should target to maximize anti-cancer activity and minimize toxicity. BCL2 profiling using natural BOPs, BH3-mimicking peptides or small molecules is complicated by their low specificity (Certo et al., 2006; Chen et al., 2005; DeBartolo et al., 2012; London et al., 2012). Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2 (Souers et al., 2013), Bcl-xL (Leverson et al., 2015a), Mcl-1 (Lee et al., 2008; Foight et al., 2014; Leverson et al., 2015b), and Bfl-1 (Dutta et al., 2013), and highly specific small molecule inhibitors of Bcl-2 and Bcl-xL (ABT-199 and A-1155463) have defined the dependency of ABT-263-sensitive cancer cell lines on Bcl-2, Bcl-xL or both (Leverson et al., 2015a). However, there are currently no highly specific inhibitors for Bcl-w and Bcl-B, and hence general mechanistic aspects of apoptotic regulation remain unclear. Here we describe the computational design and experimental characterization of specific, high affinity protein inhibitors for all six pro-survival BCL2 homologs (Figure 1\u2014figure supplement 1). The inhibitors exhibit high specificity in engineered cell lines, and in defined combinations they induce apoptosis in representative cancer cell lines. This comprehensive set of molecular probes should be useful to elucidate the molecular mechanisms of mitochondrial apoptotic pathways, determine BCL2 profiles of individual cancers, and provide a superior guide for tailored therapies.\n\n## Results\n\n### Computational design of BCL2 binding proteins\n\nWe recently described a de novo designed protein inhibitor of BHRF1, an Epstein-Barr viral BCL2 homolog. The three helix bundle protein, called BINDI, is complementary to the canonical BH3-binding groove of BHRF1. BINDI consists of a central BH3-like motif and two additional helices that both stabilize the BH3-motif and provide extra contacts for high affinity and specific binding (PDB 4OYD; Procko et al., 2014). Pro-survival BCL2 homologs share similar sequences (40\u201360% similarity between any two) and structures (approximately 3 \u00c5 RMSD), and hence achieving specific binding for each one is a challenging problem. We hypothesized that the expanded binding interface of the BINDI scaffold could enable design of specificity by contacting regions where BCL2 homolog sequences differ both within and outside of the conserved BH3 binding cleft (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig2-v3.jpg)\n\n**Figure 2.:** On and off rates were determined by BLI with multiple-concentration binding titrations for each computationally designed protein (A\u2013F) and optimized variants (G\u2013K; mean \u00b1 SD; n = 3). On-target interactions are indicated with red circles. Diagonal lines represent dissociation constants (KD) as labeled. Dashed lines indicate affinities at which binding signals were too weak to be accurately measured; dissociation constants for interactions not plotted are assumed to be greater than these thresholds. (L) KD values for computational designs before (gray) and after optimization (black). (M) KD values for final optimized inhibitors (mean \u00b1 SD; n = 3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) BINDI (gray) was docked to the hydrophobic binding groove of Bcl-xL (red) by alignment to a bound BH3 peptide (not shown). The docked pose undergoes successive rounds of design with ROSETTA, in which BINDI residues within 8 \u00c5 (C\u03b2 atoms indicated by yellow spheres) and then 12 \u00c5 (cyan spheres) of the interface are available for computational mutation, while hotspot residues (pink spheres) are held constant. (B) Hotspots (pink) are borrowed from native BH3 motifs or designed peptides, transferred to the BINDI scaffold and restricted from mutation during design (termed \u2018side chain grafting\u2019). (C) A novel motif-grafting method samples all possible docked configurations of the BINDI scaffold (multiple colors) in the Bcl-w (green) binding groove. (D) The docked position of Bcl-w-targeting design W-CDP03 (green cartoon) is shifted one helical turn relative to (E) BINDI (gray cartoon) and exhibits better shape complementarity to Bcl-w (green surface). (F) Selected computationally designed proteins (CDPs) are qualitatively compared with single-concentration BLI assays. Design M-CDP02 is partially specific for Mcl-1, and M-CDP04 is highly specific. (G) Binding constants (KD) are accurately determined with multiple-concentration BLI titrations. Biotinylated Mcl-1 was immobilized to a streptavidin-coated sensor and incubated with the indicated concentrations of soluble \u03b1MCL1. Raw data are purple, fitted curves are black. (H) KD values of CDPs, intermediate ECMs, and Bim BH3 (as a fusion to maltose binding protein) were determined with BLI (mean \u00b1 SD; n\u00a0=\u00a03), and binding constants of competing small molecule and peptide inhibitors (citations noted below). (I) Computationally designed proteins (all gray, except M-CDP04/\u03b1MCL1 in black which required no further optimization) and their optimized successors (ECMs dashed; better variants solid black) were denatured with guanidinium hydrochloride. The\u00a0CD signal at 222 nM was measured and loss of signal used to calculate the fraction folded. Mean CD signal \u00b1 SD from three scans. (1) Souers et al., 2013; (2) Leverson et al., 2015; (3) Leverson et al., 2015a; (4) Tse et al., 2008; (5) Dutta et al., 2010; (6) Foight et al., 2014; (7) Dutta et al., 2013.\n\nThe BINDI scaffold was docked into the hydrophobic binding cavities of crystal structures of the six pro-survival homologs bound to various ligands (Supplementary file 1A). If the target structure included a bound BH3 motif, this was used to structurally align the BH3-equivalent residues of BINDI in the binding groove. If the target structure was bound to an unnatural ligand, such as a small molecule or \u03b1/\u03b2-foldamer, the model of the pro-survival homolog was first aligned to an alternative structure bound to a helical BH3 motif, which then served as a guide for structural alignment of BINDI. One docked model was generated for each crystal structure. Key interfacial residues were transferred to the BINDI scaffold (Correia et al., 2010), borrowing side chains from each crystal structure\u2019s bound peptide ligand, and informed by peptide SPOT array data (DeBartolo et al., 2012) and the sequences of selective BOPs and BH3-mimetic peptides (Chen et al., 2005; Dutta et al., 2010; Supplementary file 1A).\n\nFollowing docking and side chain grafting, ROSETTA Monte Carlo sequence design calculations were carried out on BINDI residue positions within 8 \u00c5 of the target interface to minimize the energy of the bound complex (Leaver-Fay et al., 2011). Grafted residues and protein backbone conformations were kept fixed. Side chain rotamers of the target BCL2 homolog were allowed to sample alternative conformations compatible with the redesigned interface. In a second round of design calculations, the designable interface was expanded to include BINDI residues within 12 \u00c5 of the target, followed by rigid-body minimization. Five to 10 designs were generated for each initial docked configuration, and those with the most favorable binding energy, smallest number of buried polar atoms, and greatest shape complementarity to the target\u2019s surface were selected.\n\nGenes encoding the selected designs were synthesized, and nearly all the proteins were expressed and soluble in E. coli (summary in Supplementary file 1A; sequences in Supplementary file 1B). The purified proteins were screened with single-concentration biolayer interferometry (BLI; Figure 2\u2014figure supplement 1F) to qualitatively assess affinity and specificity for the target BCL2 protein. The\u00a0affinities of the most specific designs were quantitatively determined using multiple-concentration BLI (Figure 2\u2014figure supplement 1G). 2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).\n\nInitial Bcl-w-targeting designs, however, did not bind Bcl-w or any other BCL2 protein, likely because the designs were based on the crystal structure of Bcl-w bound to a ligand that is not BH3-like (PDB 4K5A), unlike successful designs that were based on BH3-liganded structures (Supplementary file 1A). Therefore, we generated helix-bound Bcl-w models by threading the Bcl-w sequence onto high-resolution structures of other homologs bound to BH3 peptides and sampled alternative superpositions of the BINDI scaffold onto the modeled BH3 peptide (Figure 2\u2014figure supplement 1C). Each docked conformation was then designed as described above, and 36 sequences passing design filters were pooled and expressed on the yeast cell surface as fusions with Aga2p. The yeast library was sorted by fluorescence-activated cell sorting (FACS) for binding to biotinylated Bcl-w in the presence of the other BCL2 pro-survival homologs as unlabeled competitors; this enriched designs with high affinity and specificity for Bcl-w. Enriched designs were expressed in E. coli and screened by BLI. Design W-CDP03 was the most specific, binding Bcl-w with nanomolar affinity and moderate specificity (Figure 2C, Figure 2\u2014figure supplement 1H). Notably, the location of the BH3-like motif in W-CDP03 is shifted by one \u03b1-helical turn relative to BINDI, perhaps to better accommodate the Bcl-w surface (Figure 2\u2014figure supplement 1D\u00a0and E).\n\n### The \u03b1MCL1\u2022Mcl-1 crystal structure is very similar to the design model\n\nThe computational design calculations succeeded in generating proteins that bound to each of the six human BCL2 homologs with nanomolar affinity and at least partial specificity. One design, M-CDP04 (subsequently called \u03b1MCL1, or anti-Mcl-1), was highly specific for Mcl-1 and bound with picomolar affinity. Cross-linking studies of \u03b1MCL1 with Mcl-1 were consistent with the designed binding interactions, supporting the structural model at low resolution (Figure 3\u2014figure supplement 1, Supplementary file 1D).\n\nThe crystal structure of the \u03b1MCL1\u2022Mcl-1 complex at 2.75 \u00c5 resolution reveals how high affinity and specificity were achieved (Figure 3, Supplementary file 1C). When Mcl-1 in the design model is superimposed on Mcl-1 in the crystal structure, \u03b1MCL1 crystal and design models closely align, highlighting the accuracy of our design calculations (2.1 \u00c5 average RMSD among the six separate complexes observed in the asymmetric unit; the N-terminal end of \u03b1MCL1 in the crystal structure lying slightly closer to Mcl-1 than in the design). The high specificity and affintiy result from many precisely positioned designed sidechains.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig3-v3.jpg)\n\n**Figure 3.:** (A) Alignment of the computational design model M-CDP04 (gray cartoon) and crystal structure (Mcl-1, purple surface; \u03b1MCL1, pink cartoon). (B) Buried contact surfaces on Mcl-1 bound to a BH3-like motif (designed peptide MB7; PDB 3KZ0) and \u03b1MCL1. (C\u2013F) Comparison of crystal structure (top panels) with the design model (bottom panels) highlights accuracy of design and shows how high specificity was achieved. (C) \u03b1MCL1 computationally designed residues E111, R108 and N104 complement nearby Mcl-1 residues. (D) \u03b1MCL1 residue 46 was redesigned from glutamate (BINDI scaffold) to isoleucine to accommodate the hydrophobic Mcl-1 binding pocket. (E) Designed residues R42, K43 and K44 promote long-range electrostatic complementarity to the negatively-charged loop region of Mcl-1. \u03b1MCL1 residue E47 (borrowed from Bim) makes ionic interactions with Mcl-1 residues S245 and R248. (F) Designed residues K68, Q69, and E72, and Bim residue N62, make polar interactions with the Mcl-1 backbone. Though the design model does not place \u03b1MCL1 near enough to Mcl-1 to make these interactions, the design calculations selected residues with long-range electrostatic complementarity.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Cross-linking studies of \u03b1MCL1 bound to Mcl-1 were consistent with the computational\u00a0design model and crystal structure. The protein complex was incubated with three different cross-linking agents; DSS and BS3 have spacer arms of 11.4 \u00c5, and DSG has a 7.7 \u00c5 spacer arm. These agents link lysine residues whose alpha carbons are within\u00a0~30 \u00c5 or\u00a0~26 \u00c5, respectively. The proteins were trypsin-digested and peptides analyzed by mass spectrometry. 38 of 44 cross-links mapped to the model are below the 30 \u00c5 limit for the cross-linking agents. In the crystal structure (chains A and B used for analysis; Mcl-1 is purple and \u03b1MCL1 is light pink in cartoon representation), electron density was observed for additional residues not included in the design model, allowing additional cross-links to be mapped to the structure. 41 out of 49 cross-links mapped to the crystal structure are below the 30 \u00c5 limit. As distances increase, residues are less likely to be linked by all three reagents. For residues linked by all three reagents, 20/20 agree with the crystal structure (18/18 agree with the model); for residues linked by two of the reagents, 10/11 agree with the crystal structure (10/11 agree with the model); and for residues linked by only one of the reagents, 11/18 agree with the crystal structure (10/15 agree with the model). Overall, cross-links with the greatest confidence (i.e. detected by at least two different cross-linking agents, shown as green lines) are in excellent agreement with the structure, and these data have insufficient resolution to distinguish the model from the crystal structure; only one of these cross-links (gray line) violates the 30 \u00c5 limit.\n\nNative BH3 motifs interact with pro-survival homologs via defined hotspot residues on five consecutive turns of the BH3 helix, denoted h0 through h4 (Figure 4A). The BH3-mimetic helix 2 of \u03b1MCL1 has three additional helix turns beyond h0 and h4 that have side chains close enough to interact with Mcl-1. These extra contacts, combined with those made by the peripheral helices, expand the classic BH3 interface by 534 \u00c52 (Figure 3B). While many residues in the \u03b1MCL1 BH3-mimetic helix were borrowed from pan-specific Bim (Supplementary file 1A), designed residues at the expanded interface provide tailored complementarity with Mcl-1 for improved affinity and specificity (Figure 3C\u2013F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig4-v3.jpg)\n\n**Figure 4.:** (A) Sequences of optimized inhibitors are aligned, excluding \u03b1BCLW, which binds to Bcl-w using a shifted interaction surface. The BH3-mimetic region of designed inhibitors is compared to natural BH3 sequences and synthetic peptides designed for indicated specificities. Non-consensus residues are shaded gray if similar to consensus and black if different. (B) Conservation was assessed by counting the number of unique categories of amino acids (polar, charged, etc.) represented across each position. Conservation scores were mapped onto each position of BINDI (surface) bound to BHRF1 (gray ribbon; PDB 4OYD). (C) Conservation scores from a sequence alignment of BCL2 proteins are mapped to BHRF1 (surface) bound to BINDI (gray ribbon). The designed proteins differ considerably from BOPs and previously designed peptides and contain many additional specificity-enhancing residues outside the BH3 region.\n\n### Affinity and specificity maturation\n\nTo improve the affinity and specificity of the designed inhibitors targeting other BCL2 homologs, the genes for 2-CDP06, X-CDP07, W-CDP03, F-CDP01 and B-CDP01 were diversified by site-directed saturation mutagenesis (SSM). Each codon was mutagenized to NNK (N is A, G, C or T; K is G or T) by overlap PCR (Procko et al., 2013), producing a library comprising all possible single amino acid substitutions. Each library was screened by yeast display for specific binding to labeled target homolog in the presence of unlabeled competitors (sort conditions in Supplementary file 1E). DNA from the na\u00efve and post-sort libraries was extracted and deep sequenced.\n\nThe enrichment or depletion of each sequence variant in the selected versus unselected pools is a measure of the variant\u2019s fitness with respect to affinity and/or specificity toward the target homolog (Figure 5\u2014figure supplement 1A). Enriching mutations were found on the central BH3-mimicking helix and at positions on the peripheral helices that contact the target. To assess the accuracy of the computational design in identifying optimal amino acids at the interface, we calculated the deviation of each designed residue\u2019s enrichment ratio from the maximum enrichment ratio at that position. For all CDPs, nearly all designed residues have enrichment ratios very close to the maximum (Figure 5A, Figure 5\u2014figure supplement 1B), on average deviating by 2.2 (2.2-fold worse enrichment) while the average deviation per position is 4.1 (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig5-v3.jpg)\n\n**Figure 5.:** (A) Deep sequencing analysis of the na\u00efve and sorted 2-CDP06 SSM library enabled quantitative analysis of the fitness of each single amino acid substitution for specificity and affinity toward Bcl-2. Per position, the enrichment ratio (abbreviated e-ratio; a fitness score) of each 2-CDP06 residue (gray) was compared to the average value for all 20 amino acids (normalized to zero). Maximum deviations from the\u00a0average are represented by dashed lines, positive values indicate the best score and negative the worst. SSM-guided mutations from 2-CDP06 to \u03b1BCL2 (blue) are starred. Gray shading indicates positions with insufficient sequencing data. (B) Deviation from maximum e-ratio was calculated for each designable residue of the five mutagenized CDPs, pooled, and the distribution of deviations plotted (gold; full SSM heatmaps in Figure 5\u2014figure supplement 1); distribution of average deviations from maximum for each designable residue is shown in gray.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) SSM libraries were generated based on the indicated CDPs and sorted for high affinity and specificity to each target BCL2 homolog. Sequence fitness landscapes show enriched mutations (blue) that favor high affinity and/or specific binding and depleted mutations (orange) that do not. Mutations selected for a combinatorial library are boxed. Red boxes indicate mutations present in the optimized variant from each combinatorial library, and green boxes indicate mutations present in the best optimized variants from epPCR libraries. (B) For each computationally designed protein (black) and optimized variant (corresponding colors), at each position, the designed protein residue\u2019s enrichment ratio was compared to the average value for all 20 amino acids, and this deviation from average is plotted. The x-axis represents the average enrichment ratio normalized to zero (deviation from average\u00a0=\u00a00), and the gray lines indicate the maximum and minimum deviation from average represented at each position. CDPs scored above average (> 0) at most positions, indicating that designed sequences were close to optimum. As expected, mutations incorporated in each optimized variant had more favorable enrichment ratios than their corresponding designed residues, except \u03b1BFL1 M53V, which could be preferred in context of other mutations. (C) An SSM library was generated based on the partially-specific Mcl-1-targeting design M-CDP02 (see Figure 2\u2014figure supplement 1F) and sorted for high affinity and specificity to each indicated BCL2 homolog. Sequence fitness landscapes show enriched (blue) and depleted (orange) mutations. Red boxes highlight the enrichment of aberrant mutations to proline and stop codons.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** CDPs were computationally docked into the canonical binding groove of each pro-survival BCL2 homolog, sampling both local (close to the input bound conformation) and global (entire protein surface) environments. Binding energy (ddG) and RMSD from the input bound conformation were calculated for each of the thousands of docked configurations and plotted (global docking models in gray, local in black). The average of the 100 lowest-scoring docked conformations were calculated for local (local minimum; black dashed line) and global (global minimum; gray dashed line) docking. Absolute binding energy (local minimum) and relative binding energy (difference between local and global minima) are plotted and compared to experimental binding data.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig5-figsupp3-v3.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Optimized, specific inhibitors were computationally docked into the canonical binding groove of each pro-survival BCL2 homolog, sampling both local (close to the input bound conformation) and global (entire protein surface) environments. Binding energy (ddG) and RMSD from the input bound conformation were calculated for each of thousands of docked configurations and plotted (global docking models in gray, local in black). The average of the 100 lowest-scoring docked conformations were calculated for local (local minimum; black dashed line) and global (global minimum; gray dashed line) docking. Absolute binding energy (local minimum) and relative binding energy (difference between local and global minima) are plotted and compared to experimental binding data.\n\nTo experimentally evaluate the contribution of computational design, we carried out control evolution experiments starting from a single, partially-specific Mcl-1-targeting design aiming for specificity toward each of the other pro-survival BCL2 proteins. An SSM library based on M-CDP02 was sorted as described above (sort conditions in Supplementary file 1E). Mutations that enhance the affinity of M-CDP02 for BCL2 members other than Mcl-1 include prolines in the first and third helical segments, substitutions of apolar to polar amino acids in the hydrophobic core, and premature stop codons in the third helix. These mutations likely cause unfolding of the helix bundle and expose the Bim-BH3-like motif in the second helix, thus converting a protein that binds Mcl-1 with high affinity and partial specificity to a pan-specific high-affinity binder similar to the Bim-BH3 motif (Figure 5\u2014figure supplement 1C). In contrast, none of these destabilizing mutations were enriched during the evolution of the individual computational designs explicitly targeting each BCL2 homolog. Thus, using our experimental approach, computational design is necessary to provide partially-specific starting points for evolution which are superior to a non-specific construct.\n\nFor X-CDP07, W-CDP03, F-CDP01 and B-CDP01, combinatorial libraries were constructed containing the mutations that produced the greatest increase in specificity (highlighted in Figure 5\u2014figure supplement 1A; Supplementary file 1F), and sorted by FACS for multiple rounds under increasingly stringent conditions (Supplementary file 1E). Each library converged on a small number of enriched combinatorial mutants (ECMs), which were screened by BLI. We anticipated that only a small number of substitutions in the moderately-specific 2-CDP06 design would be necessary to achieve high specificity for Bcl-2. Thus, in lieu of generating a combinatorial library, single amino acid mutants were screened with BLI, and three mutations improving both specificity and affinity were combined in \u03b1BCL2 (Figure 2G, Supplementary file 1F).\n\nWhile X-ECM04 and W-ECM01 (hereafter called \u03b1BCLXL and \u03b1BCLW) have high affinity and excellent specificity (Figure 2H\u2013I), F-ECM04 and B-ECM01 exhibited less than 100-fold specificity for their targets. These sequences were therefore diversified by error-prone PCR, evolved and screened as previously (Supplementary file 1E). Three additional specificity-enhancing mutations were identified per construct and combined in the final variants \u03b1BFL1 and \u03b1BCLB (Figure 2J\u2013K, Supplementary file 1F). Overall, the optimized designs exhibit slight to moderate decreases in stability compared to their predecessors based on chemical denaturation, but unfolding remains cooperative (Figure 2\u2014figure supplement 1I), suggesting a well-packed core.\n\nWe carried out computational docking experiments on partially specific CDPs and optimized variants to assess the robustness of our computational protocol (Figure 5\u2014figure supplements 2 and 3). Each CDP and optimized inhibitor was docked into the canonical binding groove of each BCL2 homolog, and thousands of docked configurations were sampled both locally (low RMSD to input configuration) and globally (entire protein surface). Overall, both the partially-specific CDPs and optimized, specific inhibitors exhibit more favorable absolute binding energy (local minimum ddG) and relative binding energy (local minimum versus global minimum ddG) when docked to on-target homologs compared to off-target homologs. These calculations resemble trends in the experimental binding data, but they do not discriminate between the highly specific, optimized inhibitors and partially specific precursors. Thus, while adding computational docking or multi-state design to computationally select against off-target homologs to our design protocol may improve the initial success rate of achieving high affinity and at least partially specific binding, the resolution of these calculations limits discrimination between variants with low versus high specificity.\n\n### Determinants of specificity\n\nThe crystal structure of the \u03b1BCL2\u2022Bcl-2 complex at 2.1 \u00c5 resolution together with the \u03b1MCL1\u2022Mcl-1 complex described above illuminate the structural basis for affinity and specificity achieved by both computational design and evolution. The sequence variability of the designed proteins complements that of the BCL2 proteins across the interface, indicating that the designed proteins gain specificity by taking advantage of regions where BCL2 homologs differ (Figure 4B\u2013C). Mutations that enhanced specificity localize to three regions: the interface periphery, the hydrophobic core, and the BH3-like region.\n\nMany mutations at the interface periphery change surface electrostatic potential to improve charge complementarity with the target or oppose interactions with off-target BCL2 proteins. For example, designed negatively charged residue E111 of \u03b1MCL1 complements a positively charged region of Mcl-1 and opposes negatively charged analogous regions of Bcl-2, Bcl-xL and Bfl-1. \u03b1BCL2, \u03b1BCLXL and \u03b1BFL1 each have designed (\u03b1BCL2) or evolved (\u03b1BCLXL, \u03b1BFL1) positively charged side chains at position 111, which likewise complement on-target binding and oppose binding to Mcl-1 (\u03b1MCL1\u2022Mcl-1 and \u03b1BCL2\u2022Bcl-2 crystal structures shown in Figure 6A; Bcl-xL and Bfl-1 comparison using structural alignment of existing models). Additional examples of designed and evolved electrostatic complementarity are illustrated in Figure 6B\u2013D.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig6-v3.jpg)\n\n**Figure 6.:** \u03b1MCL1\u2022Mcl-1 and \u03b1BCL2\u2022Bcl-2 crystal structures (upper panels, high complementarity) and non-cognate binding pairs modeled in Rosetta (lower panels, poor complementarity) were aligned. For select positions on the three-helix bundle scaffold, normalized enrichment of each mutant (indicated by amino acid code) toward specific binding to each homolog (indicated at the top of each column) are shown for comparison Black outlines indicate the identity of the homolog-specific CDP, and red outlines indicate the identity of the homolog-specific optimized inhibitor (if different from CDP). Stars indicate the identity of M-CDP04/\u03b1MCL1 (no in vitro evolution required, and thus no deep sequencing data available). Gray fill indicates positions with insufficient sequencing data. Analogous \u03b1BCLW residues were included for helix 2 (sequence shifted\u00a0+\u00a04 relative to others). (A) Designed \u03b1BCL2 residues E104 and R111 and \u03b1MCL1 N104 and E111 illustrate computational design success. Each contributes polar contact(s) with its target homolog, and deep sequencing data show these residues deplete binding toward one or more competitor homologs to improve specificity. \u03b1MCL1 E111 opposes Bcl-2 E114. SSM-guided \u03b1BCL2 mutation G107R contributes additional polar contacts with Bcl-2. (B) Designed \u03b1BCL2 residue R50 is tolerated by a more spacious Bcl-2 binding pocket and interacts with Bcl-2 E114. Designed \u03b1BCL2 residue D47 is partially satisfied by Bcl-2 R129. Both \u03b1BCL2 R50 and D47 fit poorly in the more hydrophobic analogous region of Mcl-1. (C) Evolved \u03b1BCL2 residue N57 introduces polar atoms in the hydrophobic interface but is partially satisfied by Bcl-2 D111. (D) Evolved \u03b1BCL2 residue R24 and designed Q55 make polar contacts with Bcl-2. \u03b1MCL1 R55, borrowed from Bim, caps an Mcl-1 helix and opposes Bcl-2 residue R139.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Alignment of the two non-crystallographic symmetry (NCS)-related Bcl-2 molecules show the binding modes of the two NCS-related \u03b1BCL2 molecules differ slightly (1.9 \u00c5 RMSD). (B) Alignment of Bcl-2 molecules of the design model and crystal structure (chain C) show that design model 2-CDP06 and crystal structure \u03b1BCL2 have significantly different binding modes (4.0 \u00c5 RMSD, average from crystal structure chains A and C). (C) Magnification of the Bcl-2 binding pocket. The design model Bcl-2, based on PDB 4LVT (Bcl-2 bound to small molecule inhibitor Navitoclax), has a binding pocket slightly closed relative to the Bcl-2 crystal structure (pink arrow), and 2-CDP06 is positioned further from Bcl-2 than the \u03b1BCL2 crystal structure (orange arrow). Bcl-2 backbone restriction during design likely prohibited Bcl-2-targeting designs from accessing the closer bound conformation. (D) The buried contact surfaces of Bcl-2 bound to a representative BH3 motif (BaxBH3; PDB 2XA0) and \u03b1BCL2.\n\nConservative mutations in the hydrophobic core may improve core packing or alter the backbone conformation for enhanced complementarity to the target surface. For example, the binding mode of \u03b1BCL2 in the hydrophobic cleft of Bcl-2 differs significantly between the crystal structure and backbone-constrained design model; after Bcl-2 alignment, C\u03b1 backbones of the \u03b1BCL2 crystal and design models deviate by 4.0 \u00c5 RMSD (average amongst the two complexes observed in the asymmetric unit; Figure 6\u2014figure supplement 1A\u2013C). The SSM-guided mutation of 2-CDP06 core residue G107R is likely responsible, requiring the first and third helices of \u03b1BCL2 to shift relative to the BH3-mimetic helix and positioning the third helix much further from Bcl-2 than the \u03b1MCL1\u2022Mcl-1 binding mode (Figure 6A). The \u03b1BCL2 binding mode enables electrostatic interactions between \u03b1BCL2 R107 and Bcl-2 residues D111 and E114.\n\nMutations within the hydrophobic center of the interface, formed by the BH3-like region of the designs, were generally conservative, but occasionally included substitutions of hydrophobic to polar residues. In particular, the position analogous to a conserved isoleucine within natural BH3 motifs (h3 in Figure 4A) is mutated to a polar residue in \u03b1BCL2 (N57), \u03b1BCLXL (H57), \u03b1BCLW (E61) and \u03b1BFL1 (H57). Mutation of this residue was not allowed during the design of \u03b1MCL1 or the design and evolution of \u03b1BCLB, which therefore both preserve the isoleucine hotspot. The \u03b1BCL2\u2022Bcl-2 crystal structure reveals that Bcl-2 residue D111 makes a hydrogen bond with \u03b1BCL2 N57, satisfying a polar atom that is likely buried in the interface when binding other homologs (Figure 6C). Specificity appears to be achieved in part by introducing a small number of mutations that universally reduce binding affinity but improve specificity at the interface center, like \u03b1BCL2 N57 which can be tolerated by Bcl-2 but likely reduces binding to other homologs, coupled with many specific, affinity-enhancing mutations at the interface periphery.\n\nEngineered BH3-mimetic peptides span residues analogous to the BH3-like core interface of the designed inhibitors. The specificity of small peptides thus depends on mutations within this limited region. Like \u03b1MCL1, \u03b1BCL2 expands the classic BH3 interface by 452 \u00c52 (Figure 6\u2014figure supplement 1D). While the designed proteins share some specificity-enhancing residues with designed peptides (Dutta et al., 2010, 2013), they also conserve non-specific residues at these positions; for example, aspartate at position h2\u00a0+\u00a01 of the MB1 peptide is thought to confer specificity to Mcl-1, but \u03b1MCL1 retains arginine as in pan-specific BOP Bim (Figure 4D). Further, several positions that contribute to the specificity of designed peptides and some BOPs are restricted in the designed proteins to conserved hydrophobic residues as they fall within the helix bundle\u2019s core (h1\u00a0+\u00a02, h2\u00a0+\u00a02, and h3\u00a0+\u00a03; Figure 4A). Our design strategy achieves specificity by employing a lower-affinity central interface and designing additional interactions over the expanded target-inhibitor interface.\n\n### Validation of binding specificity and mechanism in engineered cell lines\n\nWe investigated the BCL2 binding profiles and mechanism of action of the optimized inhibitors in mammalian cells, employing a suite of engineered mouse embryonic fibroblasts (MEFs). We tested whether our inhibitors could selectively induce a hallmark of apoptosis by monitoring cytochrome c release from mitochondria into the cytosol of MEFs with engineered dependence on a single pro-survival BCL2 homolog. Strikingly, permeabilized MEFs treated with each designed inhibitor induced cytochrome c release only in the cell line dependent on the corresponding target BCL2 protein. No cytochrome c release was observed in Bak-/-Bax-/- cells, confirming that mitochondrial outer membrane permeability following inhibitor treatment occurs specifically via the BCL2-regulated intrinsic pathway, as expected (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig7-v3.jpg)\n\n**Figure 7.:** (A) Western blot for cytochrome c in pelleted (P) and soluble (S) fractions of engineered MEFs after permeabilization and treatment with 10 mM BCL2 inhibitors. Bim-BH3, which binds all pro-survival homologs, is a positive control. Bim-BH3 peptide with four mutations to glutamate at interface residues (Bim4E) is a negative control. BOPs Bad and Noxa, and small molecule drugs tested have the indicated binding specificities in parentheses. (B) HeLa cells were transduced with constructs for designed inhibitor expression, and viability was assayed after 72 hr (mean \u00b1 SD; n\u00a0=\u00a02 for Bcl-2+ double and triple combinations, n\u00a0=\u00a03 for all others).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Long-term survival of engineered MEFs (pro-survival protein dependence as indicated) was assayed by counting colonies after seven to ten days of doxycycline-induced expression of \u03b1MCL1 or \u03b1BFL1 (mean \u00b1 SD; for \u03b1MCL1, n\u00a0=\u00a03; for \u03b1BFL1, n\u00a0=\u00a02). (B) Expression of FLAG-tagged designed inhibitors in transduced HeLa cells validated with Western blotting. (C) Bim coIP experiments in wild-type and engineered HeLa cells, with and without expression of \u03b1MCL1. Expression of \u03b1MCL1 caused a dramatic increase in the quantities of Mcl-1 protein present in all cell lines, consistent with previous studies showing increased Mcl-1 half-life in the presence of BH3-peptides (Lee et al., 2008). Bound \u03b1MCL1 may stabilize Mcl-1 or occlude Mule (Mcl-1 ubiquitin ligase E3), which binds and ubiquitinates Mcl-1 via a BH3 motif. Despite elevating Mcl-1 protein levels, \u03b1MCL1 expression potently induces apoptosis in the expected cell contexts.\n\nTo further validate binding specificity we examined the effect of a subset of inhibitors (\u03b1MCL1 and \u03b1BFL1) on long-term (i.e. seven day) colony survival in MEFs engineered to inducibly express each inhibitor. Consistent with binding profiles and cytochrome c release data, large effects were only seen with \u03b1MCL1 in the Mcl-1-dependent line, causing a 90\u00a0\u00b1\u00a011% decrease in survival, and with \u03b1BFL1 in the Bfl-1-dependent line, causing a 85\u00a0\u00b1\u00a06% decrease in survival (Figure 7\u2014figure supplement 1A). Minimal effects on cell survival were observed in lines expressing non-cognate pro-survival proteins. These data validate the specificity of the designed proteins and their capacity to functionally engage BCL2 family members in a cellular milieu.\n\nWhile engineered MEFs provided an excellent model system to study our designed proteins, we sought further mechanistic validation in a context relevant to their primary application: probing BCL2 family interactions and generating functional BCL2 dependency profiles in cancer. A representative cancer cell line (HeLa) was engineered to overexpress Mcl-1, Bcl-2 or Bcl-xL, and we assayed the activity of the designed inhibitors in each setting (Figure 7B). Previous studies revealed that HeLa cells are resistant to the expression of Noxa (which targets Mcl-1 and Bfl-1) and ABT-737 (Bcl-2 and Bcl-xL) independently, but are potently killed with the combination of Noxa with ABT-737 (van Delft et al., 2006). Likewise, single designed inhibitors had little effect on survival. More substantial cell death was induced by combinations of \u03b1MCL1 with \u03b1BCL2 (29 \u00b1 9% survival) and \u03b1MCL1 with \u03b1BCLXL (38 \u00b1 17%) than \u03b1BCL2 with \u03b1BCLXL (75 \u00b1 7%). These data, and similar results in Mcl-1-overexpressing (Mcl-1+) HeLa cells, suggest that Mcl-1 plays a more crucial role in wild-type HeLa survival than Bcl-2 or Bcl-xL.\n\nCompared to wild-type and Mcl-1+ HeLa cells, Bcl-xL-overexpressing (Bcl-xL+) cells are more resistant to the combination of \u03b1MCL1 with \u03b1BCL2, and likewise, Bcl-2-overexpressing (Bcl-2+) cells are more resistant to the combination of \u03b1MCL1 with \u03b1BCLXL. Thus, increased expression of a given BCL2 protein can compensate for the inhibition of others. The triple combination of \u03b1MCL1, \u03b1BCL2, and \u03b1BCLXL had greater efficacy than double combinations, indicating a contribution of each pro-survival protein to basal survival. Bcl-xL+ cells were generally more resistant than all other cell lines; the inability to completely inhibit Bcl-xL\u2019s survival function in Bcl-xL+ cells suggests that in this context, Bcl-xL may interact with proteins that are not displaced efficiently by \u03b1BCLXL.\n\nTo investigate potential mechanisms underlying these results, we assessed the binding profile of a representative BOP, Bim, to pro-survival homologs with co-immunoprecipitation (co-IP) experiments in wild-type and over-expressing cell lines, with and without added \u03b1MCL1 (Figure 7\u2014figure supplement 1C). In wild-type HeLa cells, Bim associated primarily with Mcl-1. Introduction of \u03b1MCL1 resulted in displacement of Bim from Mcl-1, with modest compensatory sequestration of Bim by Bcl-2. In Bcl-2+ cells, Bim is redistributed and preferentially binds Bcl-2 rather than Mcl-1, likely due to the stoichiometric excess of Bcl-2, and \u03b1MCL1 has no effect. The cell-killing activity of \u03b1MCL1 with \u03b1BCL2 in wild-type, Mcl-1+ and Bcl-2+ cells is consistent with these data; inhibition of both Mcl-1 and Bcl-2 in these settings likely overwhelms BOP sequestration, and a higher proportion of Bim and other activator BOPs may be free to interact with Bak and Bax, inducing apoptosis.\n\n### Designed inhibitors elucidate the dependence of human cancer cell lines on pro-survival BCL2 homologs\n\nNext, we set out to define functional BCL2 dependency profiles of other cancer cell lines using a larger set of our designed inhibitors. Apoptotic resistance in melanoma is thought to act via Bfl-1 (Hind et al., 2015), and likewise in glioblastoma via Bcl-2 (Weller et al., 1995) and Bcl-xL (Nagane et al., 2000). Further, oncogenic EGFR mutations in glioblastoma are associated with apoptotic resistance via increased Bcl-xL expression (Latha et al., 2013). Therefore, melanoma and EGFR-modified glioblastoma cell lines provide diverse contexts to test the BCL2-profiling capacity of the designed proteins.\n\nIn all cell lines, single inhibitors again were unable to induce apoptosis. While SK-MEL-5 were overall more resistant to apoptosis, LOX-IMVI melanoma cells were sensitive to double combinations that included \u03b1MCL1 and triple combinations (Figure 8A). \u03b1BFL1 with \u03b1BCL2 or \u03b1BCLXL had less effect, indicating that Mcl-1 plays a more critical role in survival than Bfl-1 in LOX-IMVI, in contrast to mRNA profiling suggesting the opposite (Hind et al., 2015). All glioblastoma cell lines showed similar trends in response to all combinations, while EGFR variants were in some instances more resistant than parental (Figure 8B). Sensitivity to many different double combinations suggests that in these contexts, pro-survival homologs may have more redundant biological function and resist apoptosis via 'mode 1' interactions with the pan- or partially-specific BOPs (Llambi et al., 2011).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig8-v3.jpg)\n\n**Figure 8.:** (A) Melanoma and (B) glioblastoma cell lines were transduced with constructs for designed inhibitor expression and viability was assayed after 72 hr (mean \u00b1 SD; for melanoma, n = 2 to 4; for glioblastoma, n = 4). See also Figure 9\u2014figure supplement 1D for Western blot analysis of pro-survival proteins.\n\nTo more fully assess the capacity of the designed inhibitors to determine BCL2 profiles, we tested them alongside existing, selective BH3-mimetics in a larger number of cell lines from one type of cancer. In previous studies, colon cancers showed a\u00a0variable response to small-molecule-mediated Bcl-xL inhibition, and RNAi experiments identified Mcl-1 as a resistance factor (Zhang et al., 2015). To determine whether the\u00a0Mcl-1 antagonism could render colon cancers sensitive to Bcl-xL neutralization and assess the influence of other pro-survival homologs on survival, we modified a panel of seven colon cancer lines to inducibly express either \u03b1MCL1 or \u03b1BFL1, and treated them with small molecules to selectively inhibit Bcl-2 (ABT-199), Bcl-xL (A-1331852), or Bcl-2 and Bcl-xL simultaneously (ABT-263).\n\nInhibiting a single pro-survival homolog had little effect on short-term survival; only SW48 cells showed greater than a 50% decrease in viability after treatment with A-1331852, consistent with a previous study showing SW48 is sensitive to Bcl-xL inhibition (Zhang et al., 2015; Figure 9A). Combined inhibition of both Mcl-1 and Bcl-xL caused nearly complete cell death after 24 hr in all colon cancers except HCT-116; further analyses showed that \u03b1MCL1-mediated Mcl-1 inhibition strongly sensitizes most colon cancers to A-1331852 (and to a lesser extent ABT-263), with a 4.6-fold or greater decrease in EC50 values observed in all cell lines except HCT-116 (Figure 9\u2014figure supplement 1A\u2013B). All other combinations had much smaller effects. Thus, in contrast to gliobastoma where pro-survival proteins appeared largely redundant, inhibition of two pro-survival proteins was required and sufficient for cell killing. These results suggest that in context of colon cancer, pro-survival proteins may resist apoptosis primarily via 'mode 2' inhibition of the direct effector Bak, which interacts preferentially with Mcl-1 and Bcl-xL (Llambi et al., 2011). As \u03b1MCL1 targets Mcl-1 in a manner more akin to a drug (i.e. antagonism) compared to RNAi, our data provide further evidence that treatment strategies involving Mcl-1 and Bcl-xL inhibition could be effective in these malignancies.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig9-v3.jpg)\n\n**Figure 9.:** (A) Colon cancers were treated with small molecule drugs (2 \u00b5M) and/or doxycycline to induce expression of designed inhibitors, as indicated, and viability was assayed after 24 hr (mean \u00b1 SD; n = 3). (B) Long-term survival was assessed after seven to ten days of doxycycline-induced expression of \u03b1MCL1 or \u03b1BFL1 (mean \u00b1 SD; n = 3).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/20352/elife-20352-fig9-figsupp1-v3.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) Drug titrations for EC50 determination of ABT-263 and A-1331852 in colon cancer lines, with (dotted lines) and without (solid lines) expression of \u03b1MCL1 (mean \u00b1 SD, n\u00a0=\u00a03). (B) Long-term survival of colon cancers was assayed by counting colonies after seven to ten days of doxycycline-induced expression of \u03b1MCL1 or \u03b1BFL1 (mean \u00b1 SD, n\u00a0=\u00a03). (C) Western blotting confirms expression of HA-tagged \u03b1MCL1 and \u03b1BFL1 in transformed cell lines (actin loading control). (D) Western blotting assays expression of pro-survival proteins in glioblastoma and melanoma cell lines.\n\nIn long-term survival assays, \u03b1MCL1 had negligible effect, but remarkably, \u03b1BFL1 caused a significant decrease in RKO cell survival (63\u00a0\u00b1\u00a04%\u00a0decrease;\u00a0Figure 9B). Thus, long-term assays detect sensitivities that short-term assays miss, on a timescale that may provide a more informative preview of therapy. Overall, these data show the utility and sensitivity of our inhibitors in establishing the critical survival factors in colon cancer.\n\n## Discussion\n\nThis work offers the first complete set of specific inhibitors for each of the six pro-survival BCL2 proteins, including the first reported specific inhibitors for Bcl-w and Bcl-B. Our designed inhibitors exhibit greater specificity and in many cases higher affinity than small molecule alternatives, and have advantages unique to their protein composition. For example, the designed proteins can be easily modified for added functionality, such as adding a mitochondrial targeting sequence, or fusing an E3 ligase to each design to catalyze degradation of their target BCL2 proteins. The designed protein inhibitors can be genetically encoded, enabling spatial and temporal control of expression, and have distinct advantages over broadly eliminating the target BCL2 protein using CRISPR- or RNAi-mediated knockdown or knockout. The designs can be used to probe mechanism; we show that specific inhibitors cause the redistribution of a representative BOP, Bim, and the approach can be used to probe other BOPs and compare 'mode 1' versus 'mode 2' inhibition of apoptosis (Llambi et al., 2011). Some BCL2 proteins translocate from the cytosol to the mitochondrial membrane in response to apoptotic stimuli, and the effect of inhibition in these different compartments can be probed by localizing the designed inhibitors with the appropriate targeting sequences and inducing expression before and after apoptotic stimuli. The designed proteins can also be used to distinguish interactions at sites other than the BH3-binding groove; for example, Bcl-xL is thought to interact with p53 at a site opposite the BH3-binding groove (Petros et al., 2004), and Bcl-2 is reported to interact with the IP3 receptor in the endoplasmic reticulum via Bcl-2\u2019s BH4-domain (Rong et al., 2009). These studies are simply impossible with CRISPR or RNAi strategies.\n\nOur computational design calculations using the stable de novo designed protein BINDI as a starting point enabled us to achieve, in the cases of Mcl-1 and Bcl-2, high specificity and affinity immediately following design, and in the cases of Bcl-xL, Bcl-w, Bfl-1 and Bcl-B, superior starting points for optimization compared to a single, pan-specific construct. Our success in designing not one but six specific inhibitors demonstrates the generality of the design method. We are not aware of any precedent among designed proteins or indeed in nature for two sets of six closely related proteins in which each protein in one set has the extremely high specificity (100\u2013100,000 fold) for a unique member of the other set.\n\nAs confirmed by biochemical analyses and X-ray crystal structures, the designed proteins engage the BH3-binding grooves of their specific target pro-survival BCL2 family members. The designs were used to determine the BCL2-dependence of different cancers, providing a more direct guide for therapy than knockdown/knockout strategies or mRNA analysis by mimicking the mechanism of action of BCL2-targeting small molecule drugs. While mRNA profiling suggests that Bfl-1 confers apoptotic resistance in SK-MEL-5 and LOX-IMVI melanomas (Hind et al., 2015), our combinatorial antagonism of pro-survival homologs indicates that Mcl-1 plays a more critical role and further discriminates between sensitive LOX-IMVI and resistant SK-MEL-5. We also provide further evidence that many colon cancers are dependent on Mcl-1 and Bcl-xL for survival; mRNA profiling indicates Mcl-1 and Bcl-xL are indeed more prevalent than other BCL2 homologs in many colon cancers, but resistant HCT-116 is indistinguishable from sensitive lines like Caco-2 and HT-29 (Placzek et al., 2010). Further, the detection of RKO sensitivity to Bfl-1 inhibition highlights the capacity of the designed inhibitors to illuminate unique\u00a0BCL2 profiles, even among cancers with similar general characteristics.\n\nMore generally, computationally designed inhibitors enable the investigation of the biological roles of specific protein interactions with the high spatio-temporal control that can be achieved with tissue-specific and inducible promoters. Competing approaches offer less control. The distribution of small molecules is difficult to spatially or temporally control in vivo, and broadly eliminating the protein of interest with CRISPR or RNAi cannot probe interactions with a specific interface or capture mechanistic intricacies. This work demonstrates that high affinity and specificity protein inhibitors can be designed for each member of a closely-knit protein family, providing a unique opportunity to probe the importance of individual protein interactions.\n\n## Materials and methods\n\n### Protein design and purification\n\nProteins were designed using the ROSETTA software suite, and genes for designed proteins and target Bcl-2 homologs were synthesized by oligo assembly or by commercial suppliers. All proteins were expressed in E. coli and purified via metal affinity chromatography followed by gel filtration. BCL2 homologs were enzymatically biotinylated in vitro with BirA. Purified designed proteins were screened for binding to BCL2 homologs with bio-layer interferometry.\n\n### Protein optimization\n\nDesigned proteins were optimized by yeast surface display. Gene sequences were diversified by overlapping PCR for SSM libraries (Procko et al., 2013), oligo assembly with degenerate primers for combinatorial libraries, or by error-prone PCR. Gene libraries were expressed in yeast for surface display and sorted for binding to labeled target homolog in the presence of unlabeled competitors (Chao et al., 2006). Deep sequencing analysis of sorted populations (using adapted scripts from Enrich; Fowler et al., 2011) informed manual optimization and combinatorial library design.\n\n### Cell line generation, authentication and mycoplasma testing\n\nMouse embryonic fibroblasts were generated from E13-E14.5 embryos derived from CreERT2/Bcl-xfl/fl/Mcl-1fl/fl C57BL/6 mice (Kelly et al., 2014) and immortalized (at passage 2\u20134) with SV40 large T antigen. HeLa cells (originally obtained from ATCC, RRID:CVCL_0030) were generously provided by Dusty Miller at the Fred Hutchinson Cancer Research Center (Seattle, WA). Melanoma cell lines (LOX-IMVI, RRID:CVCL_1381; SK-MEL-5, RRID:CVCL_0527) were purchased from the National Cancer Institute (NCI). Glioblastoma cells lines were generously provided by Paul Mischel at the Ludwig Institute for Cancer Research (San Diego, CA); U87 (originally obtained from ATCC; RRID:CVCL_0022) were modified to express EGFR and variant EGFRvIII as described by Wang et al. (2006). SW620 (originally obtained from ATCC, RRID:CVCL_0547), HCT-116 (ATCC, RRID:CVCL_0291), DLD1 (ATCC, RRID:CVCL_0248), RKO (ATCC, RRID:CVCL_0504), HT-29 (ATCC, RRID:CVCL_0320), Caco-2 (ATCC, RRID:CVCL_0025), and SW48 (ATCC, RRID:CVCL_1724) colon cancer cell lines were generously provided by John Mariadason at the Olivia Newton-John Cancer Research Institute.\n\nFor colon cancer cell lines, authentication was performed using the Promega StemElite ID System (Promega, Madison, WI) at the Queensland Institute of Medical Research (QMIR, Queensland, Australia) DNA Sequencing and Fragment Analysis Facility (January 2013). All colon cancer cell lines and parent MEF cell lines tested negative for mycoplasma by the MycoAlert Mycoplasma Detection Kit (Lonza). HeLa, melanoma and glioblastoma cell lines have not been authenticated in our hands, and each tested negative for mycoplasma by the MycoFluor Mycoplasma Detection Kit (Thermo Fisher Scientific, Waltham, MA).\n\nMEF and HeLa cells were retrovirally infected with constructs for constitutive expression of BCL2 pro-survival homologs and selected with FACS (MEF) or geneticin (HeLa). In MEFs, endogenous Mcl-1 and Bcl-xL were deleted via Cre-Lox recombination (Kelly et al., 2014). Engineered MEF and HeLa cells, colon cancer, glioblastoma and melanoma cells were lentivirally infected with constructs for constitutive or inducible expression of designed inhibitors (Aubrey et al., 2015). Infected cells were selected with antibiotics or FACS, and stable cell lines were cultured.\n\n### Survival assays\n\nFor short-term\ufeff survival assays, engineered MEFs and colon cancer cells were treated with doxycycline to induce designed protein expression and/or small molecule drugs at indicated final concentrations. Viability was assayed after 24 hr. Engineered HeLa, melanoma and glioblastoma cells were transiently transduced with designed inhibitors. Viability was assayed after 72 hr.\n\nTo assay long-term survival, MEF and colon cancers were sparsely plated, then treated with doxycycline to induce designed protein expression the next day and approximately every 48 hr for the next seven to ten days. Media was aspirated and colonies were stained and manually counted.\n\n### Additional methods\n\nPlease see the Appendix I for a more detailed description of methods.\n\n### Accession numbers\n\nThe crystal structure factors and coordinates of \u03b1MCL1\u2022Mcl-1 (PDB 5JSB) and \u03b1BCL2\u2022Bcl-2 (PDB 5JSN) have been deposited in the Protein Data Bank. Deep sequencing data, both raw and processed files, have been deposited in the National Center for Biotechnology Information Gene Expression Omnibus repository with accession number GSE80194.\n",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "79154d90-4913-41c9-9273-ce8a8c5c42c6",
+      "submission_id": "b699337e-8c81-419f-b9d7-448c68e0e2cf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.20352.030](https://doi.org/10.7554/eLife.20352.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Computationally designed, high specificity inhibitors delineate the roles of BCL2 family proteins in cancer\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison as the Senior Editor and three reviewers, including Brian Kuhlman (Reviewer #3) and Yibing Shan (Reviewer #1), who is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript builds upon previous computational design work and reports the design and characterization of a series of selective and high-affinity protein inhibitors of the anti-apoptotic BCl-2 family. This work serves as a good example of how computational design can be used with experimental screening and selection to engineer specific binders against individual members from a family of proteins that share high sequence and structure similarity. The target proteins, pro-survival BCL-2 family proteins, have been the subject of numerous previous studies aimed at designing peptide and small molecule inhibitors. This study presents specific inhibitors for all six homologs and shows how the panel of inhibitors can be used to probe cross-talk and redundancy between BCL-family proteins in human cancer cell lines. The set of probes generated by this work will be very useful for future studies aimed at profiling the roles of BCl-2 family proteins in disease, especially cancers.\n\nWhile recognizing the quality of the manuscript, the reviewers indicated a number of minor concerns that need to be addressed.\n\n1) In the Abstract there should be a brief mention of the protein engineering strategies that were used to design the specific binders.\n\n2) One interesting thing about the design pipeline is that no explicit negative design (except for the fact that \"native\" binding residues were kept in some cases) was used during the computational design step, but competition experiments were used at the bench to evolve greater specificity. In hindsight, would a computational technique like multi-state design could have been successfully used to identify mutations that convey specificity (instead of affinity)? For instance, the specific charge interactions that were identified at the edge of the interface. A discussion on this point would be helpful.\n\n3) If one computationally docks the final engineered proteins against the various family members is it possible to pick out which protein they bind to?\n\n4) It is challenging to figure out what is being shown in the various panels of Figure 5. Direct labeling of the panels to indicate what proteins are being shown and whether it is the target interaction or off-target interaction would be helpful. Figure 5 as is too dense. Using two figures to show the current Figure 5 data might be helpful as well.\n\n5) The various control mechanisms outlined in Figure 1 is difficult for non-experts in the area of BCL-2 proteins to follow. For instance, figuring out what the designed inhibitors bind to in the top panel was not straightforward \u2013 the dashed line from \"designed inhibitors\" passes through the activator BOPS and there is a separate dashed line that goes below the pro-survival proteins. It would be better to first present a simpler figure that outlines the design goals, and then in the Discussion present a more complete figure that helps illustrate the complicated set of positive and negative signals.\n\n6) Figure 2: the color scheme selected for the tables makes the dark blue cells illegible.\n\n7) Figure 6\u2014figure supplement 1C: It would be informative if the authors also probed for BCl-xL in the BIM co-IP.\n",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d3c22142-589c-4fc5-96c6-e64a5ab4a9b6",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C1",
+      "claim": "Many cancers overexpress one or more of the six human pro-survival BCL2 family proteins to evade apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Many cancers overexpress one or more of the six human pro-survival BCL2 family proteins to evade apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about cancer biology supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "304126c7-cb59-4632-b2ff-ca4ce962bbe6",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C2",
+      "claim": "Each computationally designed inhibitor binds its target with high picomolar to low nanomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Following in vitro optimization, each inhibitor binds its target with high picomolar to low nanomolar affinity and at least 300-fold specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Binding affinities were measured experimentally using biolayer interferometry as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "320a4320-8c71-42d1-89e3-9acf25e3c9d0",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C3",
+      "claim": "Each computationally designed inhibitor exhibits at least 300-fold specificity for its target.",
+      "claim_type": "EXPLICIT",
+      "source": "Following in vitro optimization, each inhibitor binds its target with high picomolar to low nanomolar affinity and at least 300-fold specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specificity was measured experimentally using biolayer interferometry comparing binding to target versus off-target BCL2 proteins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a8aa360e-35ec-4721-9a7f-00ad82c77fee",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C4",
+      "claim": "Expression of the designed inhibitors in human cancer cell lines revealed unique dependencies on BCL2 proteins for survival which could not be inferred from other BCL2 profiling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the designed inhibitors in human cancer cell lines revealed unique dependencies on BCL2 proteins for survival which could not be inferred from other BCL2 profiling methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cell viability assays in multiple cancer cell lines as shown in Figures 7-9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "4fd7a113-e6c1-4cf4-999a-3f3b7c5d6402",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C5",
+      "claim": "Pro-apoptotic effector proteins Bak and Bax have four distinct BH motifs and homo-oligomerize upon activation to form pores in the mitochondrial outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-apoptotic effector proteins Bak and Bax have four distinct BH motifs and homo-oligomerize upon activation to form pores in the mitochondrial outer membrane, committing the cell to apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the BCL2 family protein structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "7727c4a9-ff7f-4529-a1e5-fd9188fad057",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C6",
+      "claim": "There are six human pro-survival BCL2 homologs: Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1 and Bcl-B.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-survival homologs (six in humans: Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1 and Bcl-B) are structurally similar, but oppose apoptosis by binding and inhibiting Bak and Bax, as well as sequestering pro-apoptotic BH3-only proteins (BOPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the BCL2 family proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "7d8aa7a7-37bb-40f2-9097-96721cd3bae7",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C7",
+      "claim": "Pro-survival BCL2 homologs oppose apoptosis by binding and inhibiting Bak and Bax.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-survival homologs (six in humans: Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1 and Bcl-B) are structurally similar, but oppose apoptosis by binding and inhibiting Bak and Bax, as well as sequestering pro-apoptotic BH3-only proteins (BOPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BCL2 protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a1a08173-6f63-4055-96b7-ce0d9b36d648",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C8",
+      "claim": "Pro-survival BCL2 homologs oppose apoptosis by sequestering pro-apoptotic BH3-only proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-survival homologs (six in humans: Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1 and Bcl-B) are structurally similar, but oppose apoptosis by binding and inhibiting Bak and Bax, as well as sequestering pro-apoptotic BH3-only proteins (BOPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BCL2 protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "80bad164-380b-4ae6-8485-0a6d97a1964b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C9",
+      "claim": "BOPs can activate effectors directly through transient binding interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "BOPs can also activate effectors directly through transient binding interactions (Dai et al., 2011; Kim et al., 2009; Walensky et al., 2006) or indirectly by binding pro-survival proteins and out-competing bound effectors (Ku et al., 2011; Willis et al., 2007) or other direct activator BOPs (Kuwana et al., 2005; Letai et al., 2002; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "bbccdee0-04ad-4fe0-87e4-efdeda02d840",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C10",
+      "claim": "BOPs can activate effectors indirectly by binding pro-survival proteins and out-competing bound effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "BOPs can also activate effectors directly through transient binding interactions (Dai et al., 2011; Kim et al., 2009; Walensky et al., 2006) or indirectly by binding pro-survival proteins and out-competing bound effectors (Ku et al., 2011; Willis et al., 2007) or other direct activator BOPs (Kuwana et al., 2005; Letai et al., 2002; Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "deb47771-61a5-425e-93e5-76762948eeb3",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C11",
+      "claim": "Interactions between BCL2 members are mediated by an amphipathic, helical BH3 motif that recognizes a conserved hydrophobic cleft present in the effectors and pro-survival proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between BCL2 members are mediated by an amphipathic, helical BH3 motif that recognizes a conserved hydrophobic cleft present in the effectors and pro-survival proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BCL2 protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9ac5b8e1-5026-43dc-aae2-17fbb1107f62",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C12",
+      "claim": "The small molecule ABT-737 targets Bcl-2, Bcl-xL and Bcl-w.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the small molecule ABT-737 (and related ABT-263) targeting Bcl-2, Bcl-xL and Bcl-w exhibits dose-limiting thrombocytopenia in treating Bcl-2-dependent chronic lymphocytic leukemia due to excessive inhibition of Bcl-xL, which has a role in platelet development (Mason et al., 2007; Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "5b2ad38c-eed8-43f2-8c0b-36f746e0b85e",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C13",
+      "claim": "ABT-737 exhibits dose-limiting thrombocytopenia in treating Bcl-2-dependent chronic lymphocytic leukemia due to excessive inhibition of Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the small molecule ABT-737 (and related ABT-263) targeting Bcl-2, Bcl-xL and Bcl-w exhibits dose-limiting thrombocytopenia in treating Bcl-2-dependent chronic lymphocytic leukemia due to excessive inhibition of Bcl-xL, which has a role in platelet development (Mason et al., 2007; Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "b7488521-5252-48b1-82b1-5c0590209fbd",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C14",
+      "claim": "Bcl-xL has a role in platelet development.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the small molecule ABT-737 (and related ABT-263) targeting Bcl-2, Bcl-xL and Bcl-w exhibits dose-limiting thrombocytopenia in treating Bcl-2-dependent chronic lymphocytic leukemia due to excessive inhibition of Bcl-xL, which has a role in platelet development (Mason et al., 2007; Roberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a65fb18b-3a66-43f9-9a94-279130706c5e",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C15",
+      "claim": "BCL2 profiling using natural BOPs, BH3-mimicking peptides or small molecules is complicated by their low specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL2 profiling using natural BOPs, BH3-mimicking peptides or small molecules is complicated by their low specificity (Certo et al., 2006; Chen et al., 2005; DeBartolo et al., 2012; London et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "30a1d35f-6609-43bb-8360-230ed00b5556",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C16",
+      "claim": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2 (Souers et al., 2013), Bcl-xL (Leverson et al., 2015a), Mcl-1 (Lee et al., 2008; Foight et al., 2014; Leverson et al., 2015b), and Bfl-1 (Dutta et al., 2013), and highly specific small molecule inhibitors of Bcl-2 and Bcl-xL (ABT-199 and A-1155463) have defined the dependency of ABT-263-sensitive cancer cell lines on Bcl-2, Bcl-xL or both (Leverson et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "b3ea71a3-a1c8-4102-87f4-cbabdef8604f",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C17",
+      "claim": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2 (Souers et al., 2013), Bcl-xL (Leverson et al., 2015a), Mcl-1 (Lee et al., 2008; Foight et al., 2014; Leverson et al., 2015b), and Bfl-1 (Dutta et al., 2013), and highly specific small molecule inhibitors of Bcl-2 and Bcl-xL (ABT-199 and A-1155463) have defined the dependency of ABT-263-sensitive cancer cell lines on Bcl-2, Bcl-xL or both (Leverson et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8a94a207-05c9-4e7d-aae1-bb241f88aec8",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C18",
+      "claim": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Mcl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2 (Souers et al., 2013), Bcl-xL (Leverson et al., 2015a), Mcl-1 (Lee et al., 2008; Foight et al., 2014; Leverson et al., 2015b), and Bfl-1 (Dutta et al., 2013), and highly specific small molecule inhibitors of Bcl-2 and Bcl-xL (ABT-199 and A-1155463) have defined the dependency of ABT-263-sensitive cancer cell lines on Bcl-2, Bcl-xL or both (Leverson et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "48aed2f0-4467-43a7-8a67-749cc529de83",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C19",
+      "claim": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bfl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Designed peptides and small molecules have achieved high affinity and excellent specificity for Bcl-2 (Souers et al., 2013), Bcl-xL (Leverson et al., 2015a), Mcl-1 (Lee et al., 2008; Foight et al., 2014; Leverson et al., 2015b), and Bfl-1 (Dutta et al., 2013), and highly specific small molecule inhibitors of Bcl-2 and Bcl-xL (ABT-199 and A-1155463) have defined the dependency of ABT-263-sensitive cancer cell lines on Bcl-2, Bcl-xL or both (Leverson et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "6d0f6b49-02a4-4a98-a492-140509add918",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C20",
+      "claim": "There are currently no highly specific inhibitors for Bcl-w and Bcl-B.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are currently no highly specific inhibitors for Bcl-w and Bcl-B, and hence general mechanistic aspects of apoptotic regulation remain unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field at the time of publication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "b4fad230-4193-4e84-b086-a035285242f3",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C21",
+      "claim": "BINDI is a de novo designed protein inhibitor of BHRF1, an Epstein-Barr viral BCL2 homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently described a de novo designed protein inhibitor of BHRF1, an Epstein-Barr viral BCL2 homolog. The three helix bundle protein, called BINDI, is complementary to the canonical BH3-binding groove of BHRF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previously published work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8a7fb825-5f6c-4d48-8de4-8c4acdb14843",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C22",
+      "claim": "BINDI consists of a central BH3-like motif and two additional helices that both stabilize the BH3-motif and provide extra contacts for high affinity and specific binding.",
+      "claim_type": "EXPLICIT",
+      "source": "BINDI consists of a central BH3-like motif and two additional helices that both stabilize the BH3-motif and provide extra contacts for high affinity and specific binding (PDB 4OYD; Procko et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work and structural data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "268ae77c-2037-4b15-a433-99ba68bd38b9",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C23",
+      "claim": "Pro-survival BCL2 homologs share 40\u201360% sequence similarity between any two members.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-survival BCL2 homologs share similar sequences (40\u201360% similarity between any two) and structures (approximately 3 \u00c5 RMSD), and hence achieving specific binding for each one is a challenging problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about sequence similarity that can be verified from sequence databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "4a9eb315-402e-4e60-aa61-642ddce751b4",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C24",
+      "claim": "Pro-survival BCL2 homologs have structures with approximately 3 \u00c5 RMSD.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro-survival BCL2 homologs share similar sequences (40\u201360% similarity between any two) and structures (approximately 3 \u00c5 RMSD), and hence achieving specific binding for each one is a challenging problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative statement about structural similarity that can be verified from structural databases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "1a777d36-20e2-4212-9b81-93045fa8ce3b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C25",
+      "claim": "2-CDP06 bound Bcl-2 with highest affinity among initial designs.",
+      "claim_type": "EXPLICIT",
+      "source": "2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "fad5c1af-1126-4393-8311-393222040714",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C26",
+      "claim": "X-CDP07 bound Bcl-xL with highest affinity among initial designs.",
+      "claim_type": "EXPLICIT",
+      "source": "2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "6e8c5fb9-5875-4c16-800e-967a44135c48",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C27",
+      "claim": "M-CDP04 bound Mcl-1 with highest affinity among initial designs.",
+      "claim_type": "EXPLICIT",
+      "source": "2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "4e84aa1e-711e-409b-8afa-0cce0b4a7322",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C28",
+      "claim": "F-CDP01 bound Bfl-1 with highest affinity among initial designs.",
+      "claim_type": "EXPLICIT",
+      "source": "2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "43f8a9e7-b6c7-4bdc-a646-f4727d788817",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C29",
+      "claim": "B-CDP01's affinity to Bcl-B was second only to Mcl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "2-CDP06 (for Bcl-2-targeting Computationally Designed Protein), X-CDP07 (Bcl-xL), M-CDP04 (Mcl-1), and F-CDP01 (Bfl-1) bound their intended targets with highest affinity, while the affinity of B-CDP01 to its intended target Bcl-B was second only to Mcl-1 (Figure 2 and Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "0f7fb1e9-377f-4f8a-8f32-1622680a24f7",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C30",
+      "claim": "Initial Bcl-w-targeting designs did not bind Bcl-w or any other BCL2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Initial Bcl-w-targeting designs, however, did not bind Bcl-w or any other BCL2 protein, likely because the designs were based on the crystal structure of Bcl-w bound to a ligand that is not BH3-like (PDB 4K5A), unlike successful designs that were based on BH3-liganded structures (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental binding data and inference about the cause.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "03a70b11-c7e0-420f-a0cd-5c8816c8b33a",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C31",
+      "claim": "W-CDP03 bound Bcl-w with nanomolar affinity and moderate specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Design W-CDP03 was the most specific, binding Bcl-w with nanomolar affinity and moderate specificity (Figure 2C, Figure 2\u2014figure supplement 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9fd7ca1d-e4b2-4fed-8c5e-a4ca52ecdbb9",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C32",
+      "claim": "The location of the BH3-like motif in W-CDP03 is shifted by one \u03b1-helical turn relative to BINDI.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the location of the BH3-like motif in W-CDP03 is shifted by one \u03b1-helical turn relative to BINDI, perhaps to better accommodate the Bcl-w surface (Figure 2\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural analysis shown in Figure 2\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "2b822daa-34f8-4d5e-8852-8f6d6864d77a",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C33",
+      "claim": "M-CDP04 (\u03b1MCL1) was highly specific for Mcl-1 and bound with picomolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "One design, M-CDP04 (subsequently called \u03b1MCL1, or anti-Mcl-1), was highly specific for Mcl-1 and bound with picomolar affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental binding data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "96fcea90-cd68-4df1-80bd-1d4acb46e5de",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C34",
+      "claim": "The crystal structure of the \u03b1MCL1\u2022Mcl-1 complex was determined at 2.75 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the \u03b1MCL1\u2022Mcl-1 complex at 2.75 \u00c5 resolution reveals how high affinity and specificity were achieved (Figure 3, Supplementary file 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental structural data deposited in the PDB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a14a9095-c617-4a4c-9173-0f5e9b14587c",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C35",
+      "claim": "When Mcl-1 in the design model is superimposed on Mcl-1 in the crystal structure, \u03b1MCL1 crystal and design models closely align with 2.1 \u00c5 average RMSD.",
+      "claim_type": "EXPLICIT",
+      "source": "When Mcl-1 in the design model is superimposed on Mcl-1 in the crystal structure, \u03b1MCL1 crystal and design models closely align, highlighting the accuracy of our design calculations (2.1 \u00c5 average RMSD among the six separate complexes observed in the asymmetric unit; the N-terminal end of \u03b1MCL1 in the crystal structure lying slightly closer to Mcl-1 than in the design).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison of the design model to the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "7cb82766-8787-4f0d-b4c3-4c1de830e17f",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C36",
+      "claim": "\u03b1MCL1 expands the classic BH3 interface by 534 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "These extra contacts, combined with those made by the peripheral helices, expand the classic BH3 interface by 534 \u00c52 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the crystal structure shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d10c4b31-3991-4701-8879-86359f845951",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C37",
+      "claim": "For all CDPs, nearly all designed residues have enrichment ratios very close to the maximum, on average deviating by 2.2.",
+      "claim_type": "EXPLICIT",
+      "source": "For all CDPs, nearly all designed residues have enrichment ratios very close to the maximum (Figure 5A, Figure 5\u2014figure supplement 1B), on average deviating by 2.2 (2.2-fold worse enrichment) while the average deviation per position is 4.1 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis of deep sequencing data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "3419ebcc-3a25-4544-aded-e5410c6e2a91",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C38",
+      "claim": "The average deviation per position in enrichment ratios is 4.1.",
+      "claim_type": "EXPLICIT",
+      "source": "For all CDPs, nearly all designed residues have enrichment ratios very close to the maximum (Figure 5A, Figure 5\u2014figure supplement 1B), on average deviating by 2.2 (2.2-fold worse enrichment) while the average deviation per position is 4.1 (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis of deep sequencing data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d410666b-f26e-41fc-82a2-48be4205384b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C39",
+      "claim": "The crystal structure of the \u03b1BCL2\u2022Bcl-2 complex was determined at 2.1 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the \u03b1BCL2\u2022Bcl-2 complex at 2.1 \u00c5 resolution together with the \u03b1MCL1\u2022Mcl-1 complex described above illuminate the structural basis for affinity and specificity achieved by both computational design and evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental structural data deposited in the PDB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "f982fc36-bc6d-483f-8399-b8b4b11d477e",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C40",
+      "claim": "The binding mode of \u03b1BCL2 in the hydrophobic cleft of Bcl-2 differs significantly between the crystal structure and backbone-constrained design model with 4.0 \u00c5 RMSD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the binding mode of \u03b1BCL2 in the hydrophobic cleft of Bcl-2 differs significantly between the crystal structure and backbone-constrained design model; after Bcl-2 alignment, C\u03b1 backbones of the \u03b1BCL2 crystal and design models deviate by 4.0 \u00c5 RMSD (average amongst the two complexes observed in the asymmetric unit; Figure 6\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of the design model to the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "c07282fd-270b-4da8-b904-0353f6aab117",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C41",
+      "claim": "\u03b1BCL2 expands the classic BH3 interface by 452 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Like \u03b1MCL1, \u03b1BCL2 expands the classic BH3 interface by 452 \u00c52 (Figure 6\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the crystal structure shown in Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "62275495-515d-4fcc-9edc-6ffbb808b1ab",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C42",
+      "claim": "Permeabilized MEFs treated with each designed inhibitor induced cytochrome c release only in the cell line dependent on the corresponding target BCL2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, permeabilized MEFs treated with each designed inhibitor induced cytochrome c release only in the cell line dependent on the corresponding target BCL2 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "31e4762f-5b09-496c-ad68-75e5ff3766fa",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C43",
+      "claim": "No cytochrome c release was observed in Bak-/-Bax-/- cells after inhibitor treatment, confirming that mitochondrial outer membrane permeability occurs specifically via the BCL2-regulated intrinsic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "No cytochrome c release was observed in Bak-/-Bax-/- cells, confirming that mitochondrial outer membrane permeability following inhibitor treatment occurs specifically via the BCL2-regulated intrinsic pathway, as expected (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d40b346c-9f13-4ccf-80e8-c3d7af3c9f6b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C44",
+      "claim": "\u03b1MCL1 caused a 90 \u00b1 11% decrease in survival in Mcl-1-dependent MEFs in long-term colony survival assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with binding profiles and cytochrome c release data, large effects were only seen with \u03b1MCL1 in the Mcl-1-dependent line, causing a 90 \u00b1 11% decrease in survival, and with \u03b1BFL1 in the Bfl-1-dependent line, causing a 85 \u00b1 6% decrease in survival (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8eadca73-0043-478e-bad2-f4826203039c",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C45",
+      "claim": "\u03b1BFL1 caused a 85 \u00b1 6% decrease in survival in Bfl-1-dependent MEFs in long-term colony survival assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with binding profiles and cytochrome c release data, large effects were only seen with \u03b1MCL1 in the Mcl-1-dependent line, causing a 90 \u00b1 11% decrease in survival, and with \u03b1BFL1 in the Bfl-1-dependent line, causing a 85 \u00b1 6% decrease in survival (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "57edb88f-d552-4712-a399-9a300bd7ac3d",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C46",
+      "claim": "HeLa cells are resistant to the expression of Noxa and ABT-737 independently, but are potently killed with the combination of Noxa with ABT-737.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies revealed that HeLa cells are resistant to the expression of Noxa (which targets Mcl-1 and Bfl-1) and ABT-737 (Bcl-2 and Bcl-xL) independently, but are potently killed with the combination of Noxa with ABT-737 (van Delft et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "b1e1ea9c-76c4-43ca-83cf-d12345733a48",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C47",
+      "claim": "The combination of \u03b1MCL1 with \u03b1BCL2 resulted in 29 \u00b1 9% survival in wild-type HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More substantial cell death was induced by combinations of \u03b1MCL1 with \u03b1BCL2 (29 \u00b1 9% survival) and \u03b1MCL1 with \u03b1BCLXL (38 \u00b1 17%) than \u03b1BCL2 with \u03b1BCLXL (75 \u00b1 7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "503d25ae-ad4f-46f0-87e3-1a877c704360",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C48",
+      "claim": "The combination of \u03b1MCL1 with \u03b1BCLXL resulted in 38 \u00b1 17% survival in wild-type HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More substantial cell death was induced by combinations of \u03b1MCL1 with \u03b1BCL2 (29 \u00b1 9% survival) and \u03b1MCL1 with \u03b1BCLXL (38 \u00b1 17%) than \u03b1BCL2 with \u03b1BCLXL (75 \u00b1 7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "dc2265e7-5d1f-44ff-a610-dbd6b35656be",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C49",
+      "claim": "The combination of \u03b1BCL2 with \u03b1BCLXL resulted in 75 \u00b1 7% survival in wild-type HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "More substantial cell death was induced by combinations of \u03b1MCL1 with \u03b1BCL2 (29 \u00b1 9% survival) and \u03b1MCL1 with \u03b1BCLXL (38 \u00b1 17%) than \u03b1BCL2 with \u03b1BCLXL (75 \u00b1 7%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "6eff14a6-621f-44b6-a086-8992487be8fd",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C50",
+      "claim": "Mcl-1 plays a more crucial role in wild-type HeLa survival than Bcl-2 or Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, and similar results in Mcl-1-overexpressing (Mcl-1+) HeLa cells, suggest that Mcl-1 plays a more crucial role in wild-type HeLa survival than Bcl-2 or Bcl-xL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on cell survival with different inhibitor combinations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "5e3a7b46-885a-4d70-9046-17c1ab6cf45f",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C51",
+      "claim": "In wild-type HeLa cells, Bim associated primarily with Mcl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type HeLa cells, Bim associated primarily with Mcl-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 7\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "839b10cf-d9eb-4f31-b144-ea2571d8095a",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C52",
+      "claim": "Introduction of \u03b1MCL1 resulted in displacement of Bim from Mcl-1, with modest compensatory sequestration of Bim by Bcl-2 in wild-type HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of \u03b1MCL1 resulted in displacement of Bim from Mcl-1, with modest compensatory sequestration of Bim by Bcl-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 7\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a2b41291-7ba0-40f0-83e9-3dcd656fef38",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C53",
+      "claim": "Apoptotic resistance in melanoma is thought to act via Bfl-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic resistance in melanoma is thought to act via Bfl-1 (Hind et al., 2015), and likewise in glioblastoma via Bcl-2 (Weller et al., 1995) and Bcl-xL (Nagane et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "ac099e1d-c4fc-45f1-bbb2-d8a556e6681b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C54",
+      "claim": "Apoptotic resistance in glioblastoma is thought to act via Bcl-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic resistance in melanoma is thought to act via Bfl-1 (Hind et al., 2015), and likewise in glioblastoma via Bcl-2 (Weller et al., 1995) and Bcl-xL (Nagane et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "0d9cde13-4fcb-4149-a4f6-946bfc5b97e1",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C55",
+      "claim": "Apoptotic resistance in glioblastoma is thought to act via Bcl-xL.",
+      "claim_type": "EXPLICIT",
+      "source": "Apoptotic resistance in melanoma is thought to act via Bfl-1 (Hind et al., 2015), and likewise in glioblastoma via Bcl-2 (Weller et al., 1995) and Bcl-xL (Nagane et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "3b0a86f4-462e-41c0-8171-651fc43047b2",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C56",
+      "claim": "Oncogenic EGFR mutations in glioblastoma are associated with apoptotic resistance via increased Bcl-xL expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, oncogenic EGFR mutations in glioblastoma are associated with apoptotic resistance via increased Bcl-xL expression (Latha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "5af4b459-49a9-4b62-8254-0061580cc93c",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C57",
+      "claim": "LOX-IMVI melanoma cells were sensitive to double combinations that included \u03b1MCL1 and triple combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "While SK-MEL-5 were overall more resistant to apoptosis, LOX-IMVI melanoma cells were sensitive to double combinations that included \u03b1MCL1 and triple combinations (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "2695aa8b-a082-40bc-925f-fd97a7717f24",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C58",
+      "claim": "Mcl-1 plays a more critical role in survival than Bfl-1 in LOX-IMVI melanoma cells.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1BFL1 with \u03b1BCL2 or \u03b1BCLXL had less effect, indicating that Mcl-1 plays a more critical role in survival than Bfl-1 in LOX-IMVI, in contrast to mRNA profiling suggesting the opposite (Hind et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on cell survival with different inhibitor combinations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9c039dc8-b3c6-4c42-b6fb-b167f9560b94",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C59",
+      "claim": "In previous studies, colon cancers showed a variable response to small-molecule-mediated Bcl-xL inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, colon cancers showed a variable response to small-molecule-mediated Bcl-xL inhibition, and RNAi experiments identified Mcl-1 as a resistance factor (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "18f6ac89-2ca9-47db-8457-449c4da7828c",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C60",
+      "claim": "RNAi experiments identified Mcl-1 as a resistance factor in colon cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies, colon cancers showed a variable response to small-molecule-mediated Bcl-xL inhibition, and RNAi experiments identified Mcl-1 as a resistance factor (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9db6786b-aa29-487b-a134-c407a39fab82",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C61",
+      "claim": "SW48 cells showed greater than a 50% decrease in viability after treatment with A-1331852.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting a single pro-survival homolog had little effect on short-term survival; only SW48 cells showed greater than a 50% decrease in viability after treatment with A-1331852, consistent with a previous study showing SW48 is sensitive to Bcl-xL inhibition (Zhang et al., 2015; Figure 9A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "963c47bf-b336-4329-8c62-08281bb0fb3f",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C62",
+      "claim": "Combined inhibition of both Mcl-1 and Bcl-xL caused nearly complete cell death after 24 hr in all colon cancers except HCT-116.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined inhibition of both Mcl-1 and Bcl-xL caused nearly complete cell death after 24 hr in all colon cancers except HCT-116; further analyses showed that \u03b1MCL1-mediated Mcl-1 inhibition strongly sensitizes most colon cancers to A-1331852 (and to a lesser extent ABT-263), with a 4.6-fold or greater decrease in EC50 values observed in all cell lines except HCT-116 (Figure 9\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9 and Figure 9\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "1282352a-b2f9-4016-83d6-bcb86a8af1a9",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C63",
+      "claim": "\u03b1MCL1-mediated Mcl-1 inhibition strongly sensitizes most colon cancers to A-1331852 with a 4.6-fold or greater decrease in EC50 values observed in all cell lines except HCT-116.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined inhibition of both Mcl-1 and Bcl-xL caused nearly complete cell death after 24 hr in all colon cancers except HCT-116; further analyses showed that \u03b1MCL1-mediated Mcl-1 inhibition strongly sensitizes most colon cancers to A-1331852 (and to a lesser extent ABT-263), with a 4.6-fold or greater decrease in EC50 values observed in all cell lines except HCT-116 (Figure 9\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9\u2014figure supplement 1A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9bf1e84d-2160-4957-96ab-23bf5e488237",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C64",
+      "claim": "\u03b1BFL1 caused a 63 \u00b1 4% decrease in RKO cell survival in long-term survival assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In long-term survival assays, \u03b1MCL1 had negligible effect, but remarkably, \u03b1BFL1 caused a significant decrease in RKO cell survival (63 \u00b1 4% decrease; Figure 9B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "dde82913-6131-4867-b822-869b326251d9",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C65",
+      "claim": "This work offers the first complete set of specific inhibitors for each of the six pro-survival BCL2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This work offers the first complete set of specific inhibitors for each of the six pro-survival BCL2 proteins, including the first reported specific inhibitors for Bcl-w and Bcl-B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a183d1e4-c49e-415b-8c9d-9635d7f52cae",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C66",
+      "claim": "This work includes the first reported specific inhibitors for Bcl-w and Bcl-B.",
+      "claim_type": "EXPLICIT",
+      "source": "This work offers the first complete set of specific inhibitors for each of the six pro-survival BCL2 proteins, including the first reported specific inhibitors for Bcl-w and Bcl-B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d8b1ad64-0f32-4c99-9490-30c76168e634",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C67",
+      "claim": "The designed inhibitors exhibit greater specificity than small molecule alternatives in many cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our designed inhibitors exhibit greater specificity and in many cases higher affinity than small molecule alternatives, and have advantages unique to their protein composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of binding data in Figure 2\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "ef448077-f2f5-484e-a842-a8a663702d17",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C68",
+      "claim": "The designed inhibitors exhibit higher affinity than small molecule alternatives in many cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our designed inhibitors exhibit greater specificity and in many cases higher affinity than small molecule alternatives, and have advantages unique to their protein composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of binding data in Figure 2\u2014figure supplement 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8c2d603f-d05f-45ec-bc8d-856d437edaed",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C69",
+      "claim": "The designed proteins can be genetically encoded, enabling spatial and temporal control of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The designed protein inhibitors can be genetically encoded, enabling spatial and temporal control of expression, and have distinct advantages over broadly eliminating the target BCL2 protein using CRISPR- or RNAi-mediated knockdown or knockout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general property of protein-based tools.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "3b3befde-98e3-409d-9a9e-bc05c84e3139",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C70",
+      "claim": "Specific inhibitors cause the redistribution of Bim.",
+      "claim_type": "EXPLICIT",
+      "source": "The designs can be used to probe mechanism; we show that specific inhibitors cause the redistribution of a representative BOP, Bim, and the approach can be used to probe other BOPs and compare 'mode 1' versus 'mode 2' inhibition of apoptosis (Llambi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 7\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "880789cf-05cb-4477-b342-563cb6b03177",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C71",
+      "claim": "Bcl-xL is thought to interact with p53 at a site opposite the BH3-binding groove.",
+      "claim_type": "EXPLICIT",
+      "source": "The designed proteins can also be used to distinguish interactions at sites other than the BH3-binding groove; for example, Bcl-xL is thought to interact with p53 at a site opposite the BH3-binding groove (Petros et al., 2004), and Bcl-2 is reported to interact with the IP3 receptor in the endoplasmic reticulum via Bcl-2's BH4-domain (Rong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "2d720ac0-aebc-447e-adf4-6a80c00a587a",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C72",
+      "claim": "Bcl-2 is reported to interact with the IP3 receptor in the endoplasmic reticulum via Bcl-2's BH4-domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The designed proteins can also be used to distinguish interactions at sites other than the BH3-binding groove; for example, Bcl-xL is thought to interact with p53 at a site opposite the BH3-binding groove (Petros et al., 2004), and Bcl-2 is reported to interact with the IP3 receptor in the endoplasmic reticulum via Bcl-2's BH4-domain (Rong et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "a3e14215-64b7-4e9c-a185-f31503ac7c45",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C73",
+      "claim": "The computational design calculations using BINDI as a starting point enabled achievement of high specificity and affinity immediately following design for Mcl-1 and Bcl-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational design calculations using the stable de novo designed protein BINDI as a starting point enabled us to achieve, in the cases of Mcl-1 and Bcl-2, high specificity and affinity immediately following design, and in the cases of Bcl-xL, Bcl-w, Bfl-1 and Bcl-B, superior starting points for optimization compared to a single, pan-specific construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental binding data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "9acd733a-6669-4813-8e3f-90be15b802b0",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C74",
+      "claim": "The computational design calculations provided superior starting points for optimization compared to a single, pan-specific construct for Bcl-xL, Bcl-w, Bfl-1 and Bcl-B.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computational design calculations using the stable de novo designed protein BINDI as a starting point enabled us to achieve, in the cases of Mcl-1 and Bcl-2, high specificity and affinity immediately following design, and in the cases of Bcl-xL, Bcl-w, Bfl-1 and Bcl-B, superior starting points for optimization compared to a single, pan-specific construct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of evolution experiments starting from different designs shown in Figure 5\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "3cd07e0b-0697-4721-abe4-7c5d0636679b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C75",
+      "claim": "The designed proteins engage the BH3-binding grooves of their specific target pro-survival BCL2 family members.",
+      "claim_type": "EXPLICIT",
+      "source": "As confirmed by biochemical analyses and X-ray crystal structures, the designed proteins engage the BH3-binding grooves of their specific target pro-survival BCL2 family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by crystal structures and cross-linking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "ba079356-8931-4131-b8be-2ca60b33e192",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C76",
+      "claim": "mRNA profiling suggests that Bfl-1 confers apoptotic resistance in SK-MEL-5 and LOX-IMVI melanomas.",
+      "claim_type": "EXPLICIT",
+      "source": "While mRNA profiling suggests that Bfl-1 confers apoptotic resistance in SK-MEL-5 and LOX-IMVI melanomas (Hind et al., 2015), our combinatorial antagonism of pro-survival homologs indicates that Mcl-1 plays a more critical role and further discriminates between sensitive LOX-IMVI and resistant SK-MEL-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "f57bbecc-af85-43f0-8438-c809852adb13",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C77",
+      "claim": "Combinatorial antagonism of pro-survival homologs indicates that Mcl-1 plays a more critical role than Bfl-1 in melanomas and discriminates between sensitive LOX-IMVI and resistant SK-MEL-5.",
+      "claim_type": "EXPLICIT",
+      "source": "While mRNA profiling suggests that Bfl-1 confers apoptotic resistance in SK-MEL-5 and LOX-IMVI melanomas (Hind et al., 2015), our combinatorial antagonism of pro-survival homologs indicates that Mcl-1 plays a more critical role and further discriminates between sensitive LOX-IMVI and resistant SK-MEL-5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on cell survival with different inhibitor combinations shown in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d1626491-4c9f-4e22-a933-2f663d359154",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C78",
+      "claim": "mRNA profiling indicates Mcl-1 and Bcl-xL are more prevalent than other BCL2 homologs in many colon cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide further evidence that many colon cancers are dependent on Mcl-1 and Bcl-xL for survival; mRNA profiling indicates Mcl-1 and Bcl-xL are indeed more prevalent than other BCL2 homologs in many colon cancers, but resistant HCT-116 is indistinguishable from sensitive lines like Caco-2 and HT-29 (Placzek et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "68e474bc-daf8-4b68-88e7-c0e2a541e961",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C79",
+      "claim": "Resistant HCT-116 is indistinguishable from sensitive lines like Caco-2 and HT-29 by mRNA profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide further evidence that many colon cancers are dependent on Mcl-1 and Bcl-xL for survival; mRNA profiling indicates Mcl-1 and Bcl-xL are indeed more prevalent than other BCL2 homologs in many colon cancers, but resistant HCT-116 is indistinguishable from sensitive lines like Caco-2 and HT-29 (Placzek et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study and comparison with experimental data in Figure 9.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "829e3c77-8da0-47fa-abd9-001b88d24c0b",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C80",
+      "claim": "High affinity and specificity protein inhibitors can be designed for each member of a closely-knit protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, computationally designed inhibitors enable the investigation of the biological roles of specific protein interactions with the high spatio-temporal control that can be achieved with tissue-specific and inducible promoters. Competing approaches offer less control. The distribution of small molecules is difficult to spatially or temporally control in vivo, and broadly eliminating the protein of interest with CRISPR or RNAi cannot probe interactions with a specific interface or capture mechanistic intricacies. This work demonstrates that high affinity and specificity protein inhibitors can be designed for each member of a closely-knit protein family, providing a unique opportunity to probe the importance of individual protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful design of six specific inhibitors for the BCL2 family.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "e8e20bd4-5041-4691-86a4-2b37272bf1bf",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C81",
+      "claim": "Proteins were designed using the ROSETTA software suite.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteins were designed using the ROSETTA software suite, and genes for designed proteins and target Bcl-2 homologs were synthesized by oligo assembly or by commercial suppliers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "8b151487-ec40-4f35-8214-dcc1f147a6b0",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C82",
+      "claim": "All proteins were expressed in E. coli and purified via metal affinity chromatography followed by gel filtration.",
+      "claim_type": "EXPLICIT",
+      "source": "All proteins were expressed in E. coli and purified via metal affinity chromatography followed by gel filtration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "55338900-d0cf-4618-8eef-4533bc7473f7",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C83",
+      "claim": "The crystal structure factors and coordinates of \u03b1MCL1\u2022Mcl-1 have been deposited in the Protein Data Bank as PDB 5JSB.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure factors and coordinates of \u03b1MCL1\u2022Mcl-1 (PDB 5JSB) and \u03b1BCL2\u2022Bcl-2 (PDB 5JSN) have been deposited in the Protein Data Bank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "6000b0f1-2c3d-4172-b265-572b76f56534",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C84",
+      "claim": "The crystal structure factors and coordinates of \u03b1BCL2\u2022Bcl-2 have been deposited in the Protein Data Bank as PDB 5JSN.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure factors and coordinates of \u03b1MCL1\u2022Mcl-1 (PDB 5JSB) and \u03b1BCL2\u2022Bcl-2 (PDB 5JSN) have been deposited in the Protein Data Bank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "e8e95d3c-4386-4308-9789-b4463c5751c9",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "claim_id": "C85",
+      "claim": "Deep sequencing data have been deposited in the National Center for Biotechnology Information Gene Expression Omnibus repository with accession number GSE80194.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep sequencing data, both raw and processed files, have been deposited in the National Center for Biotechnology Information Gene Expression Omnibus repository with accession number GSE80194.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10aefc2d-36ec-4015-bf67-a614ac165408",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Computationally designed protein inhibitors bind their target BCL2 family proteins with high affinity (picomolar to low nanomolar) and high specificity (at least 300-fold). Initial designs achieved nanomolar to picomolar binding for most targets, with M-CDP04 (\u03b1MCL1) achieving picomolar affinity and high specificity for Mcl-1 immediately after design. Following optimization, all inhibitors exhibited superior or comparable affinity and specificity to existing small molecule alternatives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C25-C29, C31, C33 are supported by quantitative binding data from biolayer interferometry shown in Figure 2 and Figure 2\u2014figure supplement 1H. The affinity and specificity measurements are experimentally determined with appropriate replicates (n=3) and error bars. Claims C67-C68 comparing to small molecules are supported by direct comparison in Figure 2\u2014figure supplement 1H showing KD values for both designed inhibitors and existing small molecules/peptides.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "727d4ce0-312e-4081-9e90-b655ae1179dd",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Crystal structures of \u03b1MCL1\u2022Mcl-1 (2.75 \u00c5) and \u03b1BCL2\u2022Bcl-2 (2.1 \u00c5) validate the computational design approach and reveal the structural basis for high affinity and specificity. The \u03b1MCL1 design model closely matches the crystal structure (2.1 \u00c5 RMSD), while \u03b1BCL2 shows significant deviation (4.0 \u00c5 RMSD). Both inhibitors expand the classic BH3 interface by >450 \u00c5\u00b2 through additional contacts from peripheral helices.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36, C39-C41 are supported by crystallographic data deposited in the PDB (5JSB and 5JSN) with appropriate resolution and quantitative structural measurements shown in Figures 3 and 6. The RMSD values and interface area calculations are standard structural biology metrics. Claim C75 is supported by the crystal structures and cross-linking data (Figure 3\u2014figure supplement 1) confirming engagement of the BH3-binding groove.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "b3c938d8-572d-41b3-b05c-a5e67082d8ef",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Deep sequencing analysis of saturation mutagenesis libraries demonstrates that computational design accurately identified near-optimal residues at the interface. Designed residues deviated from maximum enrichment by only 2.2-fold on average (4.1-fold per position). Computational design provided superior starting points for optimization compared to a single pan-specific construct for all targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by quantitative deep sequencing analysis shown in Figure 5 with clear methodology. Claim C73 is supported by binding data in Figure 2 showing M-CDP04 and 2-CDP06 achieved high affinity/specificity immediately. Claim C74 is supported by comparison in Figure 5\u2014figure supplement 1C showing that evolution from pan-specific M-CDP02 toward other targets enriched destabilizing mutations, while target-specific designs did not.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "7ada74db-c06f-4680-9d68-9d8ff6511116",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Designed inhibitors specifically induce cytochrome c release in engineered MEFs dependent on their cognate BCL2 target protein, confirming functional engagement of the BCL2-regulated intrinsic apoptotic pathway. \u03b1MCL1 caused 90\u00b111% decrease in survival in Mcl-1-dependent MEFs, and \u03b1BFL1 caused 85\u00b16% decrease in Bfl-1-dependent MEFs in long-term colony survival assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 are supported by Western blot data in Figure 7A showing cytochrome c release only in cognate-dependent cell lines and no release in Bak-/-Bax-/- cells (appropriate negative control). Claims C44-C45 are supported by colony survival data in Figure 7\u2014figure supplement 1A with appropriate replicates and error bars. The specificity is validated across multiple engineered cell lines with defined BCL2 dependencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "037d581c-0f6a-4429-a433-3e33bd68b4ff",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Expression of designed inhibitors in human cancer cell lines revealed unique BCL2 dependencies that could not be inferred from mRNA profiling or other methods. In HeLa cells, Mcl-1 plays a more critical role than Bcl-2 or Bcl-xL. In melanomas, Mcl-1 is more critical than Bfl-1 despite mRNA profiling suggesting otherwise. In colon cancers, combined Mcl-1 and Bcl-xL inhibition caused near-complete cell death (except HCT-116), with \u03b1MCL1 sensitizing cells to Bcl-xL inhibitors by \u22654.6-fold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims are supported by cell viability data in Figures 7B, 8A, 9A-B with appropriate replicates and error bars. Claim C52 is supported by co-IP data in Figure 7\u2014figure supplement 1C showing Bim redistribution. Claims C62-C63 are supported by dose-response curves in Figure 9\u2014figure supplement 1A-B. The discrepancy with mRNA profiling (C58, C77) is demonstrated by direct comparison of functional data with cited prior studies, showing the designed inhibitors provide superior functional profiling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "f128ecfd-2c69-460a-bd1b-a114ab193a12",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This work provides the first complete set of specific inhibitors for all six human pro-survival BCL2 proteins, including the first reported specific inhibitors for Bcl-w and Bcl-B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 are supported by the comprehensive binding data in Figure 2 showing specific, high-affinity inhibitors for all six targets. Claim C20 (prior state of the field) is supported by the literature review in the Introduction citing existing inhibitors for Bcl-2, Bcl-xL, Mcl-1, and Bfl-1 but noting the absence of specific inhibitors for Bcl-w and Bcl-B. The novelty claim is validated by the experimental demonstration of W-CDP03/\u03b1BCLW and B-CDP01/\u03b1BCLB binding data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "34a100ee-eda3-4549-a840-1edeefa308d6",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Initial Bcl-w-targeting designs failed to bind any BCL2 protein, likely because they were based on a non-BH3-liganded crystal structure. A novel motif-grafting method sampling alternative docked configurations yielded W-CDP03, which binds Bcl-w with the BH3-like motif shifted by one \u03b1-helical turn relative to BINDI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by binding data showing no binding for initial designs and the inference about the structural basis is reasonable given the use of PDB 4K5A (non-BH3-liganded). Claim C32 is supported by structural analysis in Figure 2\u2014figure supplement 1D-E showing the shifted binding mode. The novel sampling method and its success are documented in the methods and results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "d14d9789-f1b8-4155-8178-ea356f056dab",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Designed inhibitors cause redistribution of the BH3-only protein Bim. In wild-type HeLa cells, Bim associates primarily with Mcl-1, and introduction of \u03b1MCL1 displaces Bim from Mcl-1 with modest compensatory sequestration by Bcl-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 and C70 are supported by co-immunoprecipitation data in Figure 7\u2014figure supplement 1C showing Bim binding partners with and without \u03b1MCL1 expression. The data demonstrate the mechanistic utility of the designed inhibitors for probing BOP redistribution. However, this is demonstrated for only one BOP (Bim) in one cell context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "127bf281-0923-4a47-8e7c-86c5661a81d8",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High affinity and specificity protein inhibitors can be designed for each member of a closely-knit protein family (40-60% sequence similarity, ~3 \u00c5 RMSD), providing unique opportunities to probe individual protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by the successful design of six specific inhibitors for the BCL2 family (C23-C24 establish the sequence/structural similarity). This represents a significant computational design achievement. The claim about providing unique opportunities is supported by the functional data showing capabilities beyond small molecules, CRISPR, or RNAi (C69, C70). However, generalization beyond the BCL2 family would require additional examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "936907c7-e1de-4857-81f9-7df63a6f15f3",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on BCL2 family proteins and the state of the field regarding existing inhibitors. The BCL2 family includes six human pro-survival proteins (Bcl-2, Bcl-xL, Bcl-w, Mcl-1, Bfl-1, Bcl-B) that oppose apoptosis by binding effectors Bak/Bax and sequestering BH3-only proteins. Many cancers overexpress pro-survival BCL2 proteins. Existing specific inhibitors exist for Bcl-2, Bcl-xL, Mcl-1, and Bfl-1, but not for Bcl-w and Bcl-B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established knowledge about BCL2 biology and the state of the field, supported by appropriate citations to prior literature (C9-C10, C12-C19) and general knowledge (C1, C5-C8, C11, C23-C24). Claims C21-C22 about BINDI are supported by citation to prior work (Procko et al., 2014, PDB 4OYD). These provide necessary context but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "24ea6fce-3704-4722-99ff-c5c3039b020e",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature on cancer dependencies and BCL2 protein interactions. Melanoma resistance acts via Bfl-1, glioblastoma via Bcl-2/Bcl-xL, colon cancers show variable response to Bcl-xL inhibition with Mcl-1 as a resistance factor. Bcl-xL interacts with p53 outside the BH3-binding groove, and Bcl-2 interacts with IP3 receptor via its BH4 domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by appropriate citations to prior studies (C53-C56, C59-C60, C71-C72, C76, C78-C79) and one prior study on HeLa cells (C46). These establish the context for the current work's findings but are not novel results. The authors appropriately cite the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "1ad373d3-d053-40ad-a6e7-9c4cbb417f8a",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Designed protein inhibitors can be genetically encoded, enabling spatial and temporal control of expression, with advantages over CRISPR/RNAi approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by general knowledge about protein-based tools and is demonstrated in practice by the lentiviral expression systems used in the cell-based assays (described in Methods). The inducible expression systems (doxycycline-inducible) demonstrate temporal control. However, spatial control is not explicitly demonstrated in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: proteins designed using ROSETTA, expressed in E. coli, purified by metal affinity chromatography and gel filtration. Crystal structures deposited as PDB 5JSB and 5JSN. Deep sequencing data deposited as GSE80194.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are straightforward methodological claims supported by the Materials and Methods section and data availability statements. The PDB and GEO accession numbers can be verified. These are necessary for reproducibility but not scientific results per se.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    },
+    {
+      "id": "2d4fe805-7d68-4d17-85b6-e02be2c81a5d",
+      "content_id": "b86db6bc-cba8-4328-884f-3db8cab2cbcf",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "SW48 colon cancer cells showed >50% decrease in viability after treatment with A-1331852 (Bcl-xL inhibitor), consistent with prior studies showing SW48 sensitivity to Bcl-xL inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C61 is supported by experimental data in Figure 9A and is consistent with cited prior work (Zhang et al., 2015). This validates the experimental system and provides a positive control for the subsequent combination experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:28:40.944183Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "304126c7-cb59-4632-b2ff-ca4ce962bbe6",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "320a4320-8c71-42d1-89e3-9acf25e3c9d0",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "1a777d36-20e2-4212-9b81-93045fa8ce3b",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "fad5c1af-1126-4393-8311-393222040714",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "6e8c5fb9-5875-4c16-800e-967a44135c48",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "4e84aa1e-711e-409b-8afa-0cce0b4a7322",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "43f8a9e7-b6c7-4bdc-a646-f4727d788817",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "03a70b11-c7e0-420f-a0cd-5c8816c8b33a",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "2b822daa-34f8-4d5e-8852-8f6d6864d77a",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "d8b1ad64-0f32-4c99-9490-30c76168e634",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "ef448077-f2f5-484e-a842-a8a663702d17",
+      "result_id": "10aefc2d-36ec-4015-bf67-a614ac165408"
+    },
+    {
+      "claim_id": "96fcea90-cd68-4df1-80bd-1d4acb46e5de",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "a14a9095-c617-4a4c-9173-0f5e9b14587c",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "7cb82766-8787-4f0d-b4c3-4c1de830e17f",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "d410666b-f26e-41fc-82a2-48be4205384b",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "f982fc36-bc6d-483f-8399-b8b4b11d477e",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "c07282fd-270b-4da8-b904-0353f6aab117",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "3cd07e0b-0697-4721-abe4-7c5d0636679b",
+      "result_id": "727d4ce0-312e-4081-9e90-b655ae1179dd"
+    },
+    {
+      "claim_id": "d10c4b31-3991-4701-8879-86359f845951",
+      "result_id": "b3c938d8-572d-41b3-b05c-a5e67082d8ef"
+    },
+    {
+      "claim_id": "3419ebcc-3a25-4544-aded-e5410c6e2a91",
+      "result_id": "b3c938d8-572d-41b3-b05c-a5e67082d8ef"
+    },
+    {
+      "claim_id": "a3e14215-64b7-4e9c-a185-f31503ac7c45",
+      "result_id": "b3c938d8-572d-41b3-b05c-a5e67082d8ef"
+    },
+    {
+      "claim_id": "9acd733a-6669-4813-8e3f-90be15b802b0",
+      "result_id": "b3c938d8-572d-41b3-b05c-a5e67082d8ef"
+    },
+    {
+      "claim_id": "62275495-515d-4fcc-9edc-6ffbb808b1ab",
+      "result_id": "7ada74db-c06f-4680-9d68-9d8ff6511116"
+    },
+    {
+      "claim_id": "31e4762f-5b09-496c-ad68-75e5ff3766fa",
+      "result_id": "7ada74db-c06f-4680-9d68-9d8ff6511116"
+    },
+    {
+      "claim_id": "d40b346c-9f13-4ccf-80e8-c3d7af3c9f6b",
+      "result_id": "7ada74db-c06f-4680-9d68-9d8ff6511116"
+    },
+    {
+      "claim_id": "8eadca73-0043-478e-bad2-f4826203039c",
+      "result_id": "7ada74db-c06f-4680-9d68-9d8ff6511116"
+    },
+    {
+      "claim_id": "a8aa360e-35ec-4721-9a7f-00ad82c77fee",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "b1e1ea9c-76c4-43ca-83cf-d12345733a48",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "503d25ae-ad4f-46f0-87e3-1a877c704360",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "dc2265e7-5d1f-44ff-a610-dbd6b35656be",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "6eff14a6-621f-44b6-a086-8992487be8fd",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "5e3a7b46-885a-4d70-9046-17c1ab6cf45f",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "839b10cf-d9eb-4f31-b144-ea2571d8095a",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "5af4b459-49a9-4b62-8254-0061580cc93c",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "2695aa8b-a082-40bc-925f-fd97a7717f24",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "963c47bf-b336-4329-8c62-08281bb0fb3f",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "1282352a-b2f9-4016-83d6-bcb86a8af1a9",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "9bf1e84d-2160-4957-96ab-23bf5e488237",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "f57bbecc-af85-43f0-8438-c809852adb13",
+      "result_id": "037d581c-0f6a-4429-a433-3e33bd68b4ff"
+    },
+    {
+      "claim_id": "dde82913-6131-4867-b822-869b326251d9",
+      "result_id": "f128ecfd-2c69-460a-bd1b-a114ab193a12"
+    },
+    {
+      "claim_id": "a183d1e4-c49e-415b-8c9d-9635d7f52cae",
+      "result_id": "f128ecfd-2c69-460a-bd1b-a114ab193a12"
+    },
+    {
+      "claim_id": "6d0f6b49-02a4-4a98-a492-140509add918",
+      "result_id": "f128ecfd-2c69-460a-bd1b-a114ab193a12"
+    },
+    {
+      "claim_id": "0f7fb1e9-377f-4f8a-8f32-1622680a24f7",
+      "result_id": "34a100ee-eda3-4549-a840-1edeefa308d6"
+    },
+    {
+      "claim_id": "9fd7ca1d-e4b2-4fed-8c5e-a4ca52ecdbb9",
+      "result_id": "34a100ee-eda3-4549-a840-1edeefa308d6"
+    },
+    {
+      "claim_id": "3b3befde-98e3-409d-9a9e-bc05c84e3139",
+      "result_id": "d14d9789-f1b8-4155-8178-ea356f056dab"
+    },
+    {
+      "claim_id": "5e3a7b46-885a-4d70-9046-17c1ab6cf45f",
+      "result_id": "d14d9789-f1b8-4155-8178-ea356f056dab"
+    },
+    {
+      "claim_id": "839b10cf-d9eb-4f31-b144-ea2571d8095a",
+      "result_id": "d14d9789-f1b8-4155-8178-ea356f056dab"
+    },
+    {
+      "claim_id": "829e3c77-8da0-47fa-abd9-001b88d24c0b",
+      "result_id": "127bf281-0923-4a47-8e7c-86c5661a81d8"
+    },
+    {
+      "claim_id": "d3c22142-589c-4fc5-96c6-e64a5ab4a9b6",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "4fd7a113-e6c1-4cf4-999a-3f3b7c5d6402",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "7727c4a9-ff7f-4529-a1e5-fd9188fad057",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "7d8aa7a7-37bb-40f2-9097-96721cd3bae7",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "a1a08173-6f63-4055-96b7-ce0d9b36d648",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "80bad164-380b-4ae6-8485-0a6d97a1964b",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "bbccdee0-04ad-4fe0-87e4-efdeda02d840",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "deb47771-61a5-425e-93e5-76762948eeb3",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "9ac5b8e1-5026-43dc-aae2-17fbb1107f62",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "5b2ad38c-eed8-43f2-8c0b-36f746e0b85e",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "b7488521-5252-48b1-82b1-5c0590209fbd",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "a65fb18b-3a66-43f9-9a94-279130706c5e",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "30a1d35f-6609-43bb-8360-230ed00b5556",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "b3ea71a3-a1c8-4102-87f4-cbabdef8604f",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "8a94a207-05c9-4e7d-aae1-bb241f88aec8",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "48aed2f0-4467-43a7-8a67-749cc529de83",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "b4fad230-4193-4e84-b086-a035285242f3",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "8a7fb825-5f6c-4d48-8de4-8c4acdb14843",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "268ae77c-2037-4b15-a433-99ba68bd38b9",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "4a9eb315-402e-4e60-aa61-642ddce751b4",
+      "result_id": "936907c7-e1de-4857-81f9-7df63a6f15f3"
+    },
+    {
+      "claim_id": "a2b41291-7ba0-40f0-83e9-3dcd656fef38",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "ac099e1d-c4fc-45f1-bbb2-d8a556e6681b",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "0d9cde13-4fcb-4149-a4f6-946bfc5b97e1",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "3b0a86f4-462e-41c0-8171-651fc43047b2",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "57edb88f-d552-4712-a399-9a300bd7ac3d",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "9c039dc8-b3c6-4c42-b6fb-b167f9560b94",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "18f6ac89-2ca9-47db-8457-449c4da7828c",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "880789cf-05cb-4477-b342-563cb6b03177",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "2d720ac0-aebc-447e-adf4-6a80c00a587a",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "ba079356-8931-4131-b8be-2ca60b33e192",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "d1626491-4c9f-4e22-a933-2f663d359154",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "68e474bc-daf8-4b68-88e7-c0e2a541e961",
+      "result_id": "24ea6fce-3704-4722-99ff-c5c3039b020e"
+    },
+    {
+      "claim_id": "8c2d603f-d05f-45ec-bc8d-856d437edaed",
+      "result_id": "1ad373d3-d053-40ad-a6e7-9c4cbb417f8a"
+    },
+    {
+      "claim_id": "e8e20bd4-5041-4691-86a4-2b37272bf1bf",
+      "result_id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36"
+    },
+    {
+      "claim_id": "8b151487-ec40-4f35-8214-dcc1f147a6b0",
+      "result_id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36"
+    },
+    {
+      "claim_id": "55338900-d0cf-4618-8eef-4533bc7473f7",
+      "result_id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36"
+    },
+    {
+      "claim_id": "6000b0f1-2c3d-4172-b265-572b76f56534",
+      "result_id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36"
+    },
+    {
+      "claim_id": "e8e95d3c-4386-4308-9789-b4463c5751c9",
+      "result_id": "bce1cf98-bc19-4594-b9cc-d74e18b85b36"
+    },
+    {
+      "claim_id": "9db6786b-aa29-487b-a134-c407a39fab82",
+      "result_id": "2d4fe805-7d68-4d17-85b6-e02be2c81a5d"
+    }
+  ],
+  "comparisons": []
+}

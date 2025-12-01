@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C17",
+      "C18",
+      "C19",
+      "C38",
+      "C53"
+    ],
+    "result": "Animals and humans can adapt their learning rates according to environmental volatility, but the neural mechanisms underlying this adaptive learning have remained unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17, C18, C19, C38, and C53 are well-supported by multiple experimental citations documenting adaptive learning abilities. Claims C2 and C8 appropriately identify the knowledge gap that motivates the study. These claims establish the empirical foundation and scientific context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37"
+    ],
+    "result": "Adaptation occurs over multiple timescales, with dynamics captured by power-law or multiple exponents rather than single exponents, and animals integrate reward history on multiple timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C37 are supported by extensive citations to experimental and theoretical work demonstrating multi-timescale adaptation. This establishes important background for understanding the limitations of single-timescale models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12"
+    ],
+    "result": "Standard learning models with a single learning rate fail to capture multiple timescales of adaptation and can only store memory on a single timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C12 present well-established theoretical limitations of single learning rate models, supported by citations and theoretical reasoning. This motivates the need for more sophisticated models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20"
+    ],
+    "result": "Chemical cascade processes in synapses operate on multiple timescales and can be captured by cascade models, but previous applications have been limited to passive memory storage problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by citations to experimental and theoretical work on synaptic cascade processes. Claim C20 appropriately notes the likely capability of cascade models while acknowledging limitations, setting up the need for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "There is a fundamental tradeoff in synaptic plasticity: high plasticity rates enable rapid adaptation but produce noisy estimates, while low plasticity rates provide stable estimates but prevent rapid adaptation to environmental changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are directly supported by simulation results shown in Figure 1B,C. The model demonstrates this tradeoff quantitatively with specific parameter values (\u03b1=0.002 vs \u03b1=0.2), providing clear evidence for this fundamental limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The cascade model of synapses with multiple plasticity states can encode reward history on multiple timescales and consolidate value information in stable environments through progressive reduction in plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe the cascade model structure following established work (Fusi et al., 2005). Claims C42-C44 are supported by simulation results in Figure 2B-D showing memory consolidation. The model's ability to encode multiple timescales is a direct consequence of its architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The cascade model fails to respond to sudden environmental changes, with adaptation time increasing proportionally to the duration of the previous stable environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are directly supported by simulation results in Figure 2B,D. The proportional relationship between prior stability duration and adaptation time is a critical limitation that motivates the surprise detection system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "A surprise detection system that compares unexpected and expected uncertainty across timescales can send signals to enhance synaptic plasticity, enabling the cascade model to achieve both memory consolidation and rapid adaptation to environmental changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 describe the surprise detection mechanism. Claims C50-C52 are supported by simulation results in Figure 2C,D,F,H showing successful consolidation and adaptation. The model demonstrates both capabilities that were previously mutually exclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C27",
+      "C82"
+    ],
+    "result": "A metaplastic synaptic model guided by a surprise detection system captures a wide range of experimental findings and performs as well as Bayes optimal models with minimal parameter tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, and C24 state the primary findings. Claims C27 and C82 provide supporting details. The evaluation is supported by multiple simulation results throughout the paper (Figures 2-5) showing agreement with experimental data and Bayesian models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model's effective learning rate is higher in volatile environments than stable ones and peaks after change points, consistent with experimental findings and Bayesian predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C56 describe model behavior supported by simulations. Claims C55 and C57 confirm consistency with experimental data (Behrens et al., 2007; Nassar et al., 2010) and Bayesian models. This demonstrates the model captures key adaptive learning phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The cascade model's learning rate is dynamically self-tuned to match the optimal rate for a given environment without assuming specific timescales or using optimization techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by simulation results in Figure 3B showing the cascade model's effective learning rate matches hand-tuned single-rate models across different block sizes. This demonstrates emergent optimization without explicit tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The cascade model with surprise detection significantly outperforms fixed learning rate models in environments with multiple timescales, with performance robust across a wide range of threshold values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by simulation results in Figure 3C showing superior reward collection. Claims C63-C64 explain the mechanism (trial-by-trial tuning) and demonstrate robustness. This shows practical advantages of the model in realistic scenarios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C88"
+    ],
+    "result": "The neural model performs as well as the Bayesian learner model in both fluctuation reduction and adaptation time across different conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are directly supported by simulation results in Figure 4A,B comparing the neural model to the Bayesian model. Claim C88 reiterates this finding. The model achieves near-optimal performance while providing neural implementation details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model accounts for spontaneous recovery of preference, showing persistent bias from initial sessions that is modulated by inter-session interval length, consistent with experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe experimental findings (Mazur, 1996). Claims C74-C76 show the model reproduces these phenomena in simulations (Figure 5). The model captures both the persistent bias and ISI modulation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Spontaneous recovery arises from metaplastic consolidation during stable sessions combined with partial forgetting during inter-session intervals, with the surprise system playing minimal role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide mechanistic explanations for the spontaneous recovery phenomenon supported by the model's behavior. The explanation is internally consistent with the cascade model's properties and the forgetting mechanism (Figure 7).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C67",
+      "C87"
+    ],
+    "result": "Previous computational studies of adaptive learning have been limited to Bayesian models that provide limited insight into neural circuit implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C67, and C87 identify limitations of prior Bayesian approaches, supported by citations. This appropriately contextualizes the contribution of providing a neural implementation that performs comparably to Bayesian models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C11",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C113"
+    ],
+    "result": "The decision-making network model has established properties including attractor dynamics, winner-take-all competition, and the ability to produce matching law behavior, with synaptic populations encoding reward rates on specific timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe well-established properties of the decision-making network model, all supported by citations to previous work (Soltani and Wang, 2006; Fusi et al., 2007; etc.). This provides the foundation for the current modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The model's approach of increasing learning rates when outcomes are unexpected connects to classical proposals by Pearce and Hall and to extensive work on change-point detection in learning theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 appropriately contextualize the current work within historical and contemporary theoretical frameworks, supported by extensive citations. Claim C85 correctly identifies the connection between the surprise mechanism and Pearce-Hall theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The surprise detection algorithm relates to previous proposals about ACC/OFC integration and neuromodulatory systems, with experimental evidence linking ACC to volatility/surprise and ACh/dopamine to plasticity and reward processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 connect the model to neurobiological substrates through citations to experimental work. These connections are appropriately tentative, suggesting potential neural implementations rather than claiming definitive mappings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The model predicts that synapses encoding action values should exhibit metaplasticity while synapses in the surprise detection system should not, providing testable predictions for experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 present clear, testable predictions that follow logically from the model's architecture and function. These predictions could distinguish between different synaptic populations and validate the model's mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "The model is robust to parameter changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 states robustness but provides limited quantitative evidence. While C64 mentions robustness for threshold values, systematic parameter sensitivity analysis is not presented. More comprehensive testing would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C21",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The surprise signal mechanism may extend beyond the tested scenarios to other learning contexts, psychiatric disorders, and context-dependent learning, though these applications remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21, C95-C100, and C108-C110 are explicitly speculative (evidence_type includes SPECULATION). While these extensions are plausible and appropriately presented as future directions, they lack empirical or simulation support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C28",
+      "C81"
+    ],
+    "result": "The model predicts that bias can develop over multiple sessions, supported by experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 states the model captures spontaneous recovery (supported by Figure 5). Claim C81 makes a prediction about multi-session bias development and cites supporting experimental data (Iigaya et al., 2013), though the authors note this will be presented formally elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Randomly connected 'mixed-selective' neurons in prefrontal cortex could enable context-dependent decision-making and memory partitioning across brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by citations to experimental and theoretical work (Rigotti et al., 2010, 2013; Roxin and Fusi, 2013). These are appropriately presented as potential extensions rather than tested components of the current model.",
+    "result_type": "MINOR"
+  }
+]

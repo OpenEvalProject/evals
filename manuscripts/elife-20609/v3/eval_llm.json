@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Neurons display atypically high levels of core-glycosylated proteins at their surface compared to other cell types, as demonstrated by ConA and GNA labeling. These surface proteins are EndoH-sensitive and expressed at levels comparable to mature N-glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (lectin labeling, far-western blotting, EndoH sensitivity) consistently demonstrate high surface core-glycosylation in neurons but not other cell types. The specificity is confirmed by kifunensine treatment and EndoH digestion controls. Quantification shows core-glycans at ~40% of mature glycan levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Major synaptic proteins including glutamate and GABA receptor subunits display diverse core-glycosylation patterns, with some proteins entirely core-glycosylated (GluN1, GABAAR \u03b23) while auxiliary proteins (TARP \u03b38, Neuroligin 1) are fully mature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EndoH sensitivity assays on purified surface proteins provide direct biochemical evidence for differential glycosylation. The complete EndoH sensitivity of GluN1 (10 N-glycosylation sites) is particularly compelling. Controls with TARP \u03b38 and NLG1 demonstrate specificity and validate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Surface proteins binding to ConA are EndoH-sensitive, demonstrating equivalence between ConA binding and EndoH sensitivity for neuronal surface proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The two-round purification strategy (ConA binding followed by EndoH digestion) provides strong evidence. Mannose competition and EndoH pre-treatment both abolish ConA binding, confirming specificity. This validates the use of ConA as a marker for surface core-glycosylated proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C68"
+    ],
+    "result": "Mass spectrometry identifies 227 protein groups (647 protein IDs) of core-glycosylated surface proteins, enriched for synaptic transmission, axon guidance, and disease-related pathways, with significant enrichment of ER but not Golgi proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The label-free quantification approach with multiple biological and technical replicates provides robust identification. The enrichment analysis shows appropriate controls (comparison to total proteome) and statistical rigor. The ER enrichment supports the Golgi-bypass hypothesis, though the mass spec approach may have some false positives from protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Surface core-glycan levels remain constant during neuronal development (1-9 weeks in vitro) while hybrid glycan levels progressively increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental time course (Figure 2D) shows clear statistical significance (R\u00b2=0.50, p<0.001 for RCA; R\u00b2=0.04, NS for ConA) with adequate sample sizes (N=27-28). This suggests distinct regulatory mechanisms for core versus mature glycosylation during development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "While complete blockade of N-glycosylation with tunicamycin severely impairs dendritic development, inhibition of glycan maturation with kifunensine, DMJ, or swainsonine does not affect dendritic growth, indicating core-glycosylated proteins are sufficient for dendritic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Sholl analysis and dendritic morphology measurements provide robust quantification (N=31-137 cells, 2-6 experiments). The stark difference between tunicamycin (severe impairment) and maturation inhibitors (no effect) is statistically significant and biologically meaningful. Lectin labeling confirms the drugs have expected effects on glycosylation profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Brefeldin A (BFA) treatment has no detectable effect on nascent protein surface expression in neurons but markedly reduces surface expression in COS cells, indicating neuronal secretory trafficking is less dependent on the Golgi apparatus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BONCAT approach provides direct measurement of nascent protein trafficking. The differential response between neurons and COS cells is clear and statistically significant. However, the authors appropriately acknowledge the caveat that their method may not be sensitive enough to detect subtle BFA effects in neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "BFA sensitivity of specific proteins (TARP \u03b38 > GluA2 > GluN1) inversely correlates with their core-glycosylation levels, suggesting core-glycosylated receptors use Golgi-independent trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inverse correlation between EndoH sensitivity and BFA sensitivity is compelling (R\u00b2=0.99, p=0.04). However, the authors appropriately note that protein turnover rates could confound interpretation. The lack of BFA effect on GluN1 (entirely core-glycosylated) is particularly strong evidence, though the correlation is based on only three proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "GluA2 surface expression requires N-glycosylation (blocked by tunicamycin) but not glycan maturation (unaffected by kifunensine, DMJ, or swainsonine), demonstrating core-glycans are sufficient for receptor surface delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of tunicamycin versus maturation inhibitors on GluA2 surface levels provide clear evidence. The experimental design appropriately controls for drug efficacy by showing effects on glycosylation profiles. This result directly supports the functional sufficiency of core-glycosylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Blocking core-glycan maturation with kifunensine for 48 hours has no detectable effect on spontaneous synaptic transmission (mEPSC frequency or amplitude), indicating mature N-glycans are largely dispensable for synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiology data (N=10 control, 7 Kf-treated cells) show no significant differences in amplitude, frequency, or input resistance. The blind recording and analysis strengthen confidence. However, the relatively small sample size and focus on spontaneous transmission (not evoked) are limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Kifunensine treatment alters postsynaptic calcium signaling kinetics, with shorter time-to-peak responses, suggesting core-glycosylation modulates synaptic signaling properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging with glutamate uncaging shows statistically significant effects on time-to-peak (p<0.01, N=29-31 synapses). The blind analysis is appropriate. However, the mechanistic interpretation is limited as multiple proteins could contribute to calcium dynamics, and the authors appropriately acknowledge this uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Core-glycosylated GluA2 exhibits substantially shorter half-life (3.4 hr) compared to mature GluA2 (21.1 hr), demonstrating accelerated turnover of core-glycosylated receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pulse-chase experiment with surface biotinylation provides direct measurement of protein stability. The ~6-fold difference in half-life is substantial and statistically significant (p<0.01). The ability to distinguish core versus mature forms by EndoH treatment is a strength. Sample sizes are adequate (N=6-8 in 4 experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Synaptic activity bidirectionally regulates surface expression of core-glycosylated proteins, with decreased activity (CNQX+AP5) increasing both GluA2 and total ConA-reactive glycan surface levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The activity manipulation experiments show statistically significant effects (p<0.05, N=7 in 4 experiments). The parallel changes in GluA2 and total ConA-reactive species support activity-dependent regulation of core-glycosylation. However, the 20-hour treatment duration makes it difficult to distinguish direct from indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44",
+      "C87",
+      "C88"
+    ],
+    "result": "AMPA receptor subunits and TARPs display distinct glycosylation profiles and BFA sensitivities despite being co-trafficked, indicating they use distinct secretory routes to reach the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential EndoH sensitivity and BFA response between GluA2 and TARP \u03b38 is well-documented. This challenges the assumption of obligate co-trafficking and suggests more complex trafficking mechanisms. The inference about distinct secretory routes is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Analysis of TARP \u03b38 knockout mice suggests core-glycosylated GluA2/3 receptors (33% of surface receptors) mediate 66% of synaptic transmission, representing ~4-fold enrichment at synapses, and are functional rather than ER-retained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretation relies on reanalysis of published data (Rouach et al., 2005) combined with the current findings. The calculation assumes that the 34% reduction in EPSP amplitude in TARP \u03b38 KO reflects loss of mature receptors only. However, this inference involves multiple assumptions about receptor distribution and function that are not directly tested. The logic is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "Altered EndoH sensitivity of receptors in schizophrenic patients likely reflects changes in functional surface receptors rather than just intracellular immature proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This reinterpretation of published findings (Tucholski et al., 2013a,b; Mueller et al., 2014) is logical given the current results showing functional core-glycosylated surface receptors. However, it remains speculative without direct examination of surface versus intracellular fractions in patient samples. The claim appropriately uses cautious language ('suggest').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C69"
+    ],
+    "result": "Unconventional secretory processing (Golgi bypass or hypo-function) is more widespread than anticipated in neurons and allows modulation of membrane protein properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The collective evidence (BFA insensitivity, EndoH sensitivity of surface proteins, ER enrichment in mass spec, paucity of dendritic Golgi) strongly supports widespread unconventional secretory processing. The functional consequences (altered turnover, signaling) demonstrate this is not merely a curiosity but a regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Unconventional glycosylation and resulting decreased protein lifetime may tune the spatial scale of local protein synthesis effects at synapses, with glycosylation status reflecting availability of secretory machinery in different subcellular compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative model connecting the observed phenomena (differential glycosylation, altered turnover) to spatial regulation of synaptic function. While the logic is sound and the model is testable, it represents a hypothesis rather than a demonstrated result. The authors appropriately use cautious language ('may tune', 'conceivable').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "The prevalence of core-glycosylated surface proteins in neurons may provide insights into regulation of N-glycan branching relevant to cancer, with immunological isolation of the brain playing a permissive role for atypical glycosylation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative connections to broader biological contexts. The enrichment of cancer and autoimmune disease-related proteins in the core-glycosylated dataset is documented, but the mechanistic insights and therapeutic implications are hypothetical. These represent interesting discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "ConA specifically labels core-glycans rather than hybrid glycans in neurons, as demonstrated by differential responses to glycosidase treatment and glycosylation inhibitors compared to RCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological validation is thorough, showing that ConA and RCA label distinct glycan populations with different EndoH sensitivities and responses to inhibitors. This is critical for interpreting the main results and is well-supported by multiple complementary experiments.",
+    "result_type": "MINOR"
+  }
+]

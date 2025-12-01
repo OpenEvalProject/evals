@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript presents background claims about neural resilience to damage, including that neurodegenerative diseases can remain asymptomatic for years, most strokes are silent, and partial lesions often fail to produce behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C7-C10) are well-supported by citations to prior literature (Morrison and Hof 1997; Leary and Saver 2003; Li et al. 2016) and represent established knowledge in the field. The claims provide appropriate context for the study's motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors propose the principle of optimal compensation, defined as the change in firing rates necessary to remain at the minimum of a loss function after neuron loss, which relies on redundancy in neural representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework (C3, C20-C22) is clearly defined and logically consistent. The definition of optimal compensation is mathematically precise, and the requirement for redundancy follows logically from the constraint that multiple firing rate combinations must represent the same signal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C15",
+      "C23",
+      "C24",
+      "C25",
+      "C28",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Optimal compensation can be implemented through balanced network dynamics without synaptic plasticity, where networks are wired such that firing rates evolve to minimize a loss function through spike-by-spike balance of excitation and inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical derivations (C84-C86) connecting spiking networks to loss function minimization are presented in detail in Materials and Methods. The claims are supported by prior theoretical work (Boerlin et al. 2013) and extended through quadratic programming with positivity constraints, providing a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In simulated spiking networks, when neurons are lost, the remaining neurons automatically increase their firing rates to restore excitatory-inhibitory balance, which guarantees continued accurate signal representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results (C30-C37) are demonstrated in Figures 1-2 with clear evidence of firing rate increases and balance restoration. The mathematical relationship between E/I balance and signal accuracy is proven in Materials and Methods, providing strong support for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C16",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C101",
+      "C102"
+    ],
+    "result": "Neural systems have a recovery boundary beyond which compensation fails, characterized by disruption of excitatory-inhibitory balance and inability to correct representation errors, occurring when neuron voltages run out of bounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recovery boundary concept (C6, C16, C39, C41-C43) is demonstrated through simulations in Figure 3 showing voltage aberrations and E/I ratio disruption. The theoretical characterization is consistent with the network dynamics, though experimental validation of the predictions (C101-C102) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Networks can withstand loss of many more neurons when knockout is random rather than systematic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is clearly demonstrated in Figure 3J showing that random knockout allows the network to maintain function until only a few neurons remain, compared to earlier failure with systematic knockout. The result is logical given that random knockout preserves representational diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C62"
+    ],
+    "result": "The positivity constraint on firing rates (neurons can only have positive firing rates) fundamentally alters compensation mechanisms and produces piecewise linear tuning curves with non-linearities, including polarity tuning in visual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims (C26-C27, C47-C50, C62) are well-supported through quadratic programming analysis shown in Figure 4 and mathematical derivations. The emergence of piecewise linear tuning curves and polarity tuning as consequences of positivity constraints is a novel theoretical insight with clear mathematical justification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Following neuron knockout, similarly-tuned neurons increase firing rates while dissimilarly-tuned neurons decrease firing rates, with neurons shifting tuning curves toward preferred directions of missing neurons, resulting in substantially better representation than without compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions (C51-C53) are clearly demonstrated in Figure 5 simulations, showing both the direction of firing rate changes and the improvement in representation error. The results are consistent with the optimal compensation principle and provide testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model predictions for the oculomotor system match experimental observations, including recruitment order of neurons and the ability to represent ipsilateral but not contralateral eye positions after unilateral inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to oculomotor data (C54-C57) from Aksay et al. (2000, 2007) shows good qualitative agreement between model predictions (Figure 6B) and experimental measurements (Figure 6A,C). The consistency supports the optimal compensation framework, though this is post-hoc model fitting rather than a priori prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The cricket cercal system shows no compensation after single neuron loss because the model has no redundancy, representing a system at the edge of the recovery boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cercal system analysis (C58-C60) is supported by experimental data (Libersat and Mizrahi 1996; Mizrahi and Libersat 1997) showing no firing rate changes after neuron loss. The interpretation that this reflects lack of redundancy (N=4, M=2) is consistent with the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "In a high-dimensional V1 sparse coding model, optimal compensation after orientation column silencing recovers image representation through widespread changes in firing rates and shifts in preferred directions throughout the population, including increases at anti-preferred directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The V1 model results (C61, C63-C67) are demonstrated in Figures 7-8 with clear evidence of representation recovery and tuning curve shifts. The complexity of high-dimensional compensation is well-characterized, though the model is simplified (positive sparse coding without some biological constraints).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The V1 model predictions are largely consistent with cat visual cortex experiments showing tuning curve shifts toward silenced directions, though the model does not capture all experimental observations (e.g., decreases in firing for some similarly-tuned neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparison to cat V1 data (C69-C76) from Crook et al. (1996-1998) shows broad qualitative agreement for three types of neurons, but the model fails to reproduce firing rate decreases observed experimentally (C75). The authors acknowledge this limitation and attribute it to model simplification. The agreement is compelling given few free parameters, but the mismatch indicates incomplete understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The theory predicts that compensation occurs through increased firing rates to signals that activated dead neurons, happens extremely fast (faster than spiking timescale) due to tight E/I balance, and can be tested experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions (C98-C100) follow logically from the theoretical framework and network dynamics. The speed prediction is supported by balanced network theory (citations provided). However, these remain untested predictions requiring future experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C97"
+    ],
+    "result": "Optimal compensation for neuron loss is a novel theoretical framework that differs from prevailing views emphasizing synaptic plasticity, providing a unifying explanation for multiple experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claims (C77-C79, C82, C97) are supported by the lack of prior work on instantaneous optimal compensation. The framework does provide a parsimonious explanation for diverse phenomena, though the claim of complete novelty should be tempered by related work on balanced networks and efficient coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C83"
+    ],
+    "result": "The work builds on efficient coding theory, which has successfully explained observations in vertebrate and invertebrate sensory systems, by connecting it to balanced network theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C12-C14, C83) are well-supported by extensive citations to prior literature. The connection between efficient coding and balanced networks is a genuine theoretical contribution, though both frameworks existed independently before this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Alternative network models that allow negative firing rates will show radically different compensation, and general balanced networks may compensate depending on connectivity, with tightness of balance determining compensation quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion of alternative models (C88-C94) is well-reasoned and supported by citations. The logical argument that oppositely-tuned neurons with negative firing rates would compensate differently is sound. The connection to balanced network theory is appropriate, though the claim about optimality increasing with balance tightness (C93) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The recovery boundary concept may explain disease progression in neurodegenerative conditions, where asymptomatic cell loss transitions to symptomatic states, and accumulated damage increases susceptibility by moving systems closer to the boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These speculative claims (C103-C106) about disease implications are explicitly labeled as speculation by the authors. While the recovery boundary concept is theoretically sound, its application to Alzheimer's disease and stroke progression lacks direct experimental support. The citations (C103) to E/I imbalance in epilepsy and schizophrenia provide only indirect support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "While optimal compensation is an idealization, the framework explains pharmacologically-induced changes across multiple experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge limitations (C95) while demonstrating broad applicability (C96) through comparisons to oculomotor, cercal, and V1 systems. This balanced assessment strengthens rather than weakens the work's credibility.",
+    "result_type": "MINOR"
+  }
+]

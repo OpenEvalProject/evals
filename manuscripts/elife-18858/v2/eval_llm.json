@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors characterized a test panel of 32 tetracycline-regulated aptazymes (Tc01 and 31 variants) that differ only in their communication modules. Tc01 exhibited low basal expression and a narrow 2.1-fold dynamic range, while the 32-aptazyme panel exhibited widely varying basal expression and Tc-induced fold changes in expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe the generation and characterization of a test panel of aptazymes with varying communication modules. The data in Figure 1C-E support these observations, showing measured basal expression, ligand-inhibited expression, and corrected dynamic ranges across the panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors developed a Weighted Hydrogen Bond Score (WHBS) and subsequently a Weighted Hydrogen-bond and Stacking Score (WHSS) that better correlates with basal expression than predicted communication-module annealing energy (\u0394GCM). The WHSS accounts for position-dependent effects of hydrogen bonding and base stacking in the communication module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 describe the development of scoring functions (WHBS and WHSS) that predict basal expression better than \u0394GCM. The data in Figures 2A-G and Figure 2\u2014figure supplement 1 support these correlations, with Spearman correlation coefficients showing WHSS (\u03c1=-0.94) outperforms \u0394GCM (\u03c1=-0.64) and WHBS (\u03c1=-0.91).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C37"
+    ],
+    "result": "The authors identified an inflection point in basal expression at WHSS value of 6.7, where additional energy from ligand-bound aptamer has maximal impact on dynamic range. Aptazymes with WHSS values of 6.7 \u00b1 0.3 consistently exhibited higher corrected dynamic ranges than those outside this range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C37 describe the identification of an optimal WHSS range for high dynamic range. Figure 2G shows the inflection point at WHSS 6.7, Figure 2H shows highest CDRs at WHSS values near 6.7 (Tc15 at 6.75, Tc12 at 6.92), and Figure 2L demonstrates that aptazymes within WHSS 6.7 \u00b1 0.3 have consistently higher CDRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors identified that Tc31 and Tc32 had lower-than-expected CDR values despite appropriate WHSS values, attributing this to weak aptamer-proximal base pairs (U-A and G-U) that may lower aptamer affinity for ligand or impair aptamer folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C36 identify outliers and propose mechanistic explanations. While Figure 2H-I show the outlier behavior and Figure 2I-K show the effect of aptamer-proximal base pairs, claims C35-C36 are explicitly stated as speculation without direct experimental validation of the proposed mechanisms (aptamer affinity or folding).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors validated their rational design approach by generating new Tc aptazymes with varying communication-module lengths (4-7 bp for Tc-P1, 4-5 bp for Tc-P2). All new Tc-P1 aptazymes with WHSS 6.3-7.0 had CDR >10-fold, and all Tc-P2 aptazymes except Tc39 (low WHSS 6.0) and Tc44 (weak aptamer-proximal base pair) exhibited high CDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe validation of the design principles across different aptazyme architectures. Figures 3A-D and Figure 3\u2014figure supplement 1B-C show that aptazymes with WHSS values in the optimal range consistently achieve high CDR (\u226510-fold), supporting the generality of the approach across communication-module lengths and fusion architectures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors demonstrated modularity by generating high-CDR aptazymes from theophylline and guanine aptamers. WHSS predicted basal expression across all aptazyme types, and all high-CDR aptazymes had WHSS values near the optimal range (6.7 \u00b1 0.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate the generality of the approach to different aptamers. Figures 3E-J show that theophylline and guanine aptazymes can be readily generated with high CDR, and that WHSS predicts basal expression and optimal CDR range across all aptazyme types tested, supporting the modularity claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors compared their rationally designed aptazymes to previously described aptazymes and demonstrated substantially superior performance. Tc40 showed 19.6-fold CDR versus 6.6-fold for 3'K19, Theo5 outperformed P1-F5, and Gua3 outperformed RzGuaM5 (both ~5-fold CDR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 compare new aptazymes to prior work. Figures 3K-N and Figure 3\u2014figure supplement 2A-D show direct comparisons demonstrating that the rationally designed aptazymes substantially outperform previously described aptazymes with the highest reported dynamic ranges, validating the superiority of the rational design approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors optimized aptazyme performance by combining Tc40 and Tc45 in tandem (Tc40\u00d745), achieving 44-fold CDR with 41% basal expression in transient transfection and wider dynamic range than single aptazymes in retroviral transduction. Regulation was reversible upon tetracycline withdrawal and functional with different reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe optimization through tandem aptazyme design. Figures 4B-E show that Tc40\u00d745 achieves superior performance (44-fold CDR) compared to single aptazymes, regulation is reversible (Figure 4D), and the system works with different reporters (GLuc and GFP), supporting the optimization strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors demonstrated that aptazymes function effectively in AAV vectors, with Tc40-3' working nearly as well as Tc40\u00d745 in this context. Tc40-3' dramatically reduced expression of therapeutically relevant proteins (Factor IX and etanercept) at clinically achievable tetracycline concentrations (30 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 demonstrate AAV vector compatibility and therapeutic potential. Figure 5A-C show that aptazymes work effectively in AAV vectors and can regulate clinically relevant transgenes at concentrations cited as clinically tolerable (C62, supported by citation). This establishes proof-of-concept for gene therapy applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors demonstrated aptazyme-mediated regulation in vivo in mice injected with AAV-Tc40\u00d745 vectors, achieving an average 6.9-fold dynamic range across two studies. This represents the first example of aptazyme-mediated regulation in primary animal tissues in vivo, though the in vivo dynamic range was lower than in cell culture, possibly due to tetracycline metabolism and tissue access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe in vivo validation. Figures 5D-E and Figure 5\u2014figure supplement 1 show statistically significant regulation (p<0.0001) in Tc40\u00d745 mice but not controls (C84-C85), achieving 6.9-fold average dynamic range. The lower in vivo performance is acknowledged, and C66 provides a speculative but citation-supported explanation. This is the first in vivo demonstration of aptazyme regulation in primary tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors empirically determined optimal weighting schemes for calculating WHBS and WHSS. Spearman correlation coefficients showed WHBS (\u03c1=-0.91) and WHSS (\u03c1=-0.94) better predict basal expression rank order than \u0394GCM (\u03c1=-0.64) or unweighted hydrogen bond number (\u03c1=-0.80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C100 describe the empirical optimization of scoring functions. The Materials and methods section and Figure 2\u2014figure supplement 1 provide the specific weighting schemes and correlation coefficients, demonstrating that the weighted scoring functions (WHBS and WHSS) better predict basal expression than simpler metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors discuss key advantages of aptazymes: small size (<200 bp), no requirement for immunogenic proteins, cis-acting specificity with few off-target effects, and modularity to different ligands including those safe in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 describe advantages of aptazymes. These are well-established properties supported by the data presented (C68-C69 are general knowledge, C70 is supported by comparison to Tet-Off system, C71-C72 follow from the cis-acting mechanism, and C73 is demonstrated by the data showing modularity across different aptamers and ligands).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors explain that while intuitive principles suggest communication-module stability affects aptazyme function, the poor correlation between \u0394GCM and dynamic range is due to position-dependent effects, where base pairs proximal to the ribozyme have disproportionate impact on enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide mechanistic interpretation of the results. C74-C75 state intuitive principles, while C76-C77 explain why simple annealing energy fails to predict function. This interpretation is supported by the data in Figures 2A-C showing position-dependent effects and poor \u0394GCM correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors conclude that their approach provides a general rational-design method for converting diverse aptamers into high-dynamic-range aptazymes in mammalian cells, and suggest the principles could extend to developing aptazyme on-switches using ligand-induced stem formation or stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C81 are supported by the demonstrated modularity across three different aptamers (Tc, theophylline, guanine) and multiple architectures. Claims C79-C80 are speculative extensions but are reasonable based on the established principles and are appropriately presented as speculation with supporting citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose potential applications including CRISPR/Cas9-mediated introduction of aptazymes into endogenous genes and transformation of gene therapy through controlled biologic dosing with well-tolerated drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83 describe potential future applications. While C83 is partially supported by the AAV data in Figure 5A-C demonstrating proof-of-concept, both claims are primarily speculative about future applications rather than demonstrated results. C82 has no experimental validation in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors provide background on aptazymes, including their development history, prior applications, and limitations. They establish that no aptazyme had been described to control gene expression in primary animal cells in vivo prior to this study, and that existing methods for generating aptazymes in mammalian cells have significant limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide literature context and establish the gap this study addresses. All claims are supported by appropriate citations to prior work. The claim that no aptazyme had controlled gene expression in primary animal cells in vivo (C13) is validated by the authors' own in vivo results (C67) representing the first such demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Statistical analysis showed significant differences (p<0.0001) between tetracycline- and PBS-treated groups in mice injected with Tc40\u00d745-regulated vectors, but not in control mice (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 report statistical significance of in vivo results. These are explicitly stated in the figure legend and supported by the data in Figure 5E. The use of two-sided t-tests is appropriate for comparing two treatment groups, though sample sizes and specific test details could be more thoroughly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors provide technical details about aptazyme architecture, prior ribozyme-based control systems, and therapeutic proteins used in validation studies, including structural information about the Tc aptamer and rationale for exploring P2 fusion architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C95 provide technical background and structural details. All are supported by appropriate citations (C86-C90) or are descriptive of the aptazyme structures shown in figures (C91-C94). C95 provides rationale for exploring Tc-P2 architecture based on aptamer structure, supported by citation.",
+    "result_type": "MINOR"
+  }
+]

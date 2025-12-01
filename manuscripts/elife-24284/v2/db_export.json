@@ -1,0 +1,1554 @@
+{
+  "submission": {
+    "id": "ce42552e-463e-4742-8aa9-dc7bc9780d18",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:55:08.122412Z",
+    "updated_at": "2025-11-30T23:55:08.122412Z"
+  },
+  "content": [
+    {
+      "id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "submission_id": "ce42552e-463e-4742-8aa9-dc7bc9780d18",
+      "content_type": "manuscript",
+      "content_text": "# Rapid evolution of the human mutation spectrum\n\n## Authors\n\n- Kelley Harris<sup>1</sup> ([ORCID: 0000-0003-0302-2523](https://orcid.org/0000-0003-0302-2523)) \u2020\n- Jonathan K Pritchard<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics Stanford University Stanford United States\n2. Department of Biology Stanford University Stanford United States\n3. Howard Hughes Medical Institute, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDNA is a remarkably precise medium for copying and storing biological information. This high fidelity results from the action of hundreds of genes involved in replication, proofreading, and damage repair. Evolutionary theory suggests that in such a system, selection has limited ability to remove genetic variants that change mutation rates by small amounts or in specific sequence contexts. Consistent with this, using SNV variation as a proxy for mutational input, we report here that mutational spectra differ substantially among species, human continental groups and even some closely related populations. Close examination of one signal, an increased TCC\u2192TTC mutation rate in Europeans, indicates a burst of mutations from about 15,000 to 2000 years ago, perhaps due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate. Our results suggest that mutation rates can evolve markedly over short evolutionary timescales and suggest the possibility of mapping mutational modifiers.\n\n## Introduction\n\nGermline mutations not\u00a0only\u00a0provide the raw material for evolution but also generate genetic load and inherited disease. Indeed, the vast majority of mutations that affect fitness are deleterious, and hence biological systems have evolved elaborate mechanisms for accurate DNA replication and repair of diverse types of spontaneous damage. Due to the combined action of hundreds of genes, mutation rates are extremely low\u2013in humans, about one point mutation per 100 MB or about 60 genome-wide per generation (Kong et al., 2012; S\u00e9gurel et al., 2014).\n\nWhile the precise roles of most of the relevant genes have not been fully elucidated, research on somatic mutations in cancer has shown that defects in particular genes can lead to increased mutation rates within very specific sequence contexts (Alexandrov et al., 2013; Helleday et al., 2014). For example, mutations in the proofreading exonuclease domain of DNA polymerase $\u03f5$ cause TCT$\u2192$TAT and TCG$\u2192$TTG mutations on the leading DNA strand (Shinbrot et al., 2014). Mutational shifts of this kind have been referred to as \u2018mutational signatures\u2019. Specific signatures may also be caused by nongenetic factors such as chemical mutagens, UV damage, or guanine oxidation (Ohno et al., 2014).\n\nTogether, these observations imply a high degree of specialization of individual genes involved in DNA proofreading and repair. While the repair system has evolved to be extremely accurate overall, theory suggests that in such a system, natural selection may have limited ability to fine-tune the efficacy of individual genes (Lynch, 2011; Sung et al., 2012). If a variant in a repair gene increases or decreases the overall mutation rate by a small amount\u2013for example, only in a very specific sequence context\u2013then the net effect on fitness may fall below the threshold at which natural selection is effective. (Drift tends to dominate selection when the change in fitness is less than the inverse of effective population size). The limits of selection on mutation rate modifiers are especially acute in recombining organisms such as humans because a variant that increases the mutation rate can recombine away from deleterious mutations it generates elsewhere in the genome.\n\nGiven these theoretical predictions, we hypothesized that there may be substantial scope for modifiers of mutation rates to segregate within human populations, or between closely related species. Most triplet sequence contexts have mutation rates that vary across the evolutionary tree of mammals (Hwang and Green, 2004), but evolution of the mutation spectrum over short time scales has been less well described. Weak natural mutators have recently been observed in yeast (Bui et al., 2017) and inferred from human haplotype data (Seoighe and Scally, 2017); if such mutators affect specific pathways of proofreading or repair, then we may expect shifts in the abundance of mutations within particular sequence contexts. Indeed, one of us has recently identified a candidate signal of this type, namely an increase in TCC$\u2192$TTC transitions in Europeans, relative to other populations (Harris, 2015); this was recently replicated (Mathieson and Reich, 2016). Here, we show that mutation spectrum change is much more widespread than these initial studies suggested: although the TCC$\u2192$TTC rate increase in Europeans was unusually dramatic, smaller\u00a0scale changes are so commonplace that almost every great ape species and human continental group has its own distinctive mutational spectrum.\n\n## Results\n\nTo investigate the mutational processes in different human populations, we classified each single nucleotide variants (SNV) in the 1000 Genomes Phase 3 data (Auton et al., 2015) in terms of its ancestral allele, derived allele, and 5\u2019 and 3\u2019 flanking nucleotides. We collapsed strand complements together to obtain 96 SNV categories. Since the detection of singletons may vary across samples, and because some singletons may result from cell-line or somatic mutations, we only considered variants seen in more than one copy. We further excluded variants in annotated repeats (since read mapping error rates may be higher in such regions) and in PhyloP conserved regions (to avoid selectively constrained regions) (Pollard et al., 2010). From the remaining sites, we calculated the distribution of derived SNVs carried by each Phase 3 individual. We used this as a proxy for the mutational input spectrum in the ancestors of each individual.\n\nTo explore global patterns of the mutation spectrum, we performed principal component analysis (PCA) in which each individual was characterized simply by the fraction of their derived alleles in each of the 96 SNV categories (Figure 1A). PCA is commonly applied to individual-level genotypes, in which case the PCs are usually highly correlated with geography (Novembre et al., 2008). Although the triplet mutation spectrum is an extremely compressed summary statistic compared to typical genotype arrays, we found that it contains sufficient information to reliably classify individuals by continent of origin. The first principal component separated Africans from non-Africans, and the second separated Europeans from East Asians, with South Asians and admixed native Americans (Figure 1\u2014figure supplement 2) appearing intermediate between the two.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-v2.jpg)\n\n**Figure 1.:** (A) Principal component analysis of individuals according to the fraction of derived alleles that each individual carries in each of 96 mutational types. (B)\u00a0Heatmaps showing, for pairs of continental groups, the ratio of the proportions of SNVs in each of the 96 mutational types. Each block corresponds to one mutation type; within blocks, rows indicate the 5\u2019 nucleotide, and columns indicate the 3\u2019 nucleotide. Red colors indicate a greater fraction of a given mutation type in the first-listed group relative to the second. Points indicate significant contrasts at p $<10^{\u22125}$. See Figure 1\u2014figure supplements 1, 2 and 3 for heatmap comparisons between additional population pairs as well as a description of PCA loadings and the p-valuesof all mutation class enrichments. Figure 1\u2014figure supplement 4 demonstrates that these patterns are unlikely to be driven by biased gene conversion. In Figure 1\u2014figure supplement 5, we see that this mutation spectrum structure replicates on both strands of the transcribed genome as well as the non-transcribed portion of the genome. Figure 1\u2014figure supplements 6, 7 and 8 show that most of this structure replicates across multiple chromatin states and varies little with replication timing.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Each of these plots compares the mutation spectra of two populations $P_{1}$ and $P_{2}$. Letting $f_{i}$ denote the fraction of SNVs in population $P_{i}$ that have a given triplet context, ancestral allele, and derived allele, the corresponding heat map square visualizes the enrichment ratio $f_{1}/f_{2}$. Black dots mark mutation types for which the difference between populations has a $\u03c7^{2}p$\u00a0p-value less than $10^{-5}$.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** All admixed North and South American individuals were omitted from Figure 1 in the main text to clarify the separation of other populations along an African vs non-African axis and an East vs West Eurasian axis. Here, admixed Americans are added in black. As expected, some African-Americans group with the Africans, while other admixed Americans fall within the variation of other East and West Eurasians. The accompanying heat maps show the mutation type loadings of the first two principal components, the second of which is heavily weighted toward the European TCC$\u2192$TTC signature.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Each left-hand plot shows all chi-squared p-values corresponding to the ratios from Figure 1A. In the absence of recent mutation spectrum evolution, only one out of 96 SNP categories is expected to have a p-value below 0.01 (lower dotted line). In contrast, the majority of p values meet the more stringent threshold $p<1e\u22125$. The corresponding right hand panel shows a closeup of the distribution of p-values greater than $1\u2062e-5$.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** When using segregating variation to study the mutation spectrum, one potential source of bias is that strong-to-weak mutations, where the ancestral allele is G or C and the derived allele is A or T, have a lower fixation probability than weak-to-strong mutations due to biased gene conversion (BGC). If this effect were sufficiently strong, it would inflate the apparent mutation fractions of weak-to-strong mutations, especially in populations with large effective sizes where natural selection is particularly efficient. Within humans, Africans have the largest long-term effective population size, while East Asians and Native Americans have the lowest. Therefore, if BGC has created differences in mutation spectra between populations, the fraction of weak-to-strong SNVs should be highest in Africans, intermediate in Europeans and South Asians, and lowest in East Asians and Native Americans. This violin plot reveals no such pattern, suggesting that BGC is not a strong driver of mutation spectrum differences between human populations. We do not observe either a direct correlation between in strong-to-weak mutation fraction and distance from Africa or an inverse correlation between weak-to-strong mutation fraction and distance from Africa.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Using the UCSC Genome Browser annotations of the human reference hg19, we determined whether each SNP occurs in a transcribed or non transcribed region. We further divided SNPs occurring in transcribed regions according to whether the ancestral A or C allele occurs on the (+)-strand or the (-)-strand. Panels A, B, and C all show the same population-specific mutation type enrichments that are observed in Figure 1B. Panel D plots the residuals between panels A and B, highlighting mutation types that show a modest difference in strand bias between populations.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp6-v2.jpg)\n\n**Figure 1\u2014figure supplement 6.:** To investigate whether any mutation spectrum shifts might be confined to particular chromatin states, we used chromHMM annotations of the human embryonic stem cell line HESC-H1 (Hoffman et al., 2013). Each heat map plots mutation spectrum comparisons for SNPs that are annotated as being part of the same chromatin state, and dots mark mutation types that show a significant enrichment in one population at the level p<0.01. Every chromatin state shows enrichment of the TCC$\u2192$TTC signature in Europe and South Asia. Some heat maps are noisy due to the small sample size of SNPs contained within these regions, but all showcase the same general patterns as Figure 1B.\n\n![Figure 1\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp7-v2.jpg)\n\n![Figure 1\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig1-figsupp8-v2.jpg)\n\n**Figure 1\u2014figure supplement 8.:** We partitioned the genome into 10 equal replication timing quantiles using data obtained from (Woodfine et al., 2004), then computed mutation spectrum differences within each quantile. Although most patterns from Figure 1B replicate within each replication timing bin, there are a few exceptions. CpG transitions, which occur most often in early-replicating regions, vary in population bias depending on replication timing. In addition, the deficit of ACA$\u2192$AAA and AAA$\u2192$ATA mutations in Africa compared to Europe and Asia is observed mainly in early-replicating regions.\n\nRemarkably, we found that the mutation spectrum differences among continental groups are composed of small shifts in the abundance of many different mutation types (Figure 1B). For example, comparing Africans and Europeans, 43 of the 96 mutation types are significant at a $p<10^{\u22125}$ threshold using a forward variable selection procedure. The previously described TCC$\u2192$TTC signature partially drives the difference between Europeans and the other groups, but most other shifts are smaller in magnitude and appear to be spread over more diffuse sets of related mutation types. East Asians have excess A$\u2192$T transversions in most sequence contexts, as well as about 10% more *AC$\u2192$*CC mutations than any other group. Compared to Africans, all Eurasians have proportionally fewer C$\u2192$* mutations relative to A$\u2192$* mutations.\n\n### Replication of mutation spectrum shifts\n\nOne possible concern is that batch effects or other sequencing artifacts might contribute to differences in mutational spectra. Therefore we replicated our analysis using 201 genomes from the Simons Genome Diversity Project (Mallick et al., 2016). The SGDP genomes were sequenced at high coverage, independently from 1000 Genomes, using an almost non-overlapping panel of samples. We found extremely strong agreement between the mutational shifts in the two data sets (Figure 2). For example, all of the 43 mutation types with a significant difference between Africa and Europe (at p<10\u22125) in 1000 Genomes also show a frequency difference in the same direction in SGDP (comparing Africa and West Eurasia). In both 1000 Genomes and SGDP, the enrichment of *AC\u2192*CC mutations in East Asia is larger in magnitude than any other signal aside from the previously described TCC\u2192TTC imbalance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig2-v2.jpg)\n\n**Figure 2.:** Each panel shows natural-log mutation spectrum ratios between a pair of continental groups, based on 1000 Genomes (x-axis) and SGDP (y-axis) data. Data points encoded by (+) symbols denote mutation types that are not significantly enriched in either population in the Figure 1 1000 Genomes analysis ($p<10^{\u22125}$). These heatmaps use the same labeling and color scale as in Figure 1. All 1000 Genomes ratios in this figure were estimated after projecting the 1000 Genomes site frequency spectrum down to the sample size of SGDP. See Figure 2\u2014figure supplements 1 and 2 for a complete set of SGDP heatmaps and regressions versus 1000 Genomes.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Here, each 1000 Genomes population is projected down to the sample size of the corresponding SGDP population in order to sample alleles with a similar distribution of ages and frequencies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig2-figsupp2-v2.jpg)\n\nThe greatest discrepancies between 1000 Genomes and SGDP involve transversions at CpG sites, which are among the rarest mutational classes. These discrepancies might result from data processing differences or random sampling variation, but might also reflect differences in the fine-scale ethnic composition of the two panels.\n\n### Evidence for a pulse of TCC\u2192TTC mutations in Europe and South Asia\n\nTo investigate the timescale over which the mutation spectrum change occurred, we analyzed the allele frequency distribution of TCC\u2192TTC mutations, which are highly enriched in Europeans (Figure 3A; p<1\u00d710\u2212300 for Europe vs. Africa) and to a lesser extent in South Asians. We calculated allele frequencies both in 1000 Genomes and in the larger UK10K genome panel (Walter et al., 2015). As expected for a signal that is primarily European, we found particular enrichment of these mutations at low frequencies. But surprisingly, the enrichment peaks around 0.6% frequency in UK10K, and there is practically no enrichment among the very lowest frequency variants (Figure 3B and Figure 3\u2014figure supplement 1). C\u2192T mutations on other backgrounds, namely within TCT, CCC and ACC contexts, are also enriched in Europe and South Asia and show a similar enrichment around 0.6% frequency that declines among rarer variants (Figure 3C). This suggests that these four mutation types comprise the signature of a single mutational pulse that is no longer active. No other mutation types show such a pulse-like distribution in UK10K, although several types show evidence of monotonic rate change over time (Figure 3\u2014figure supplements 3, 4 and 5).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-v2.jpg)\n\n**Figure 3.:** (A) Observed frequencies of TCC$\u2192$TTC variants in 1000 Genomes populations. (B) Fraction of TCC$\u2192$TTC variants as a function of allele frequency in different samples indicates that these peak around 1%. See Figure 3\u2014figure supplement 1 for distributions of TCC$\u2192$TTC allele frequency within all 1000 Genomes populations, and see Figure 3\u2014figure supplement 2 for the replication of this result in the Exome Aggregation Consortium Data. In the UK10K data, which has the largest sample size, the peak occurs at 0.6% allele frequency. (C) Other enriched C$\u2192$T mutations with similar context also peak at 0.6% frequency in UK10K. See Figure 3\u2014figure supplements 3, 4 and 5 for labeled allele frequency distributions of all 96 mutation types (most represented here as unlabeled grey lines). See Figure 3\u2014figure supplement 6 for heatmap comparisons of the 1000 Genomes populations partitioned by allele frequency, which provide a different view of these patterns. (D) A population genetic model supports a pulse of TCC$\u2192$TTC mutations from 15,000 to 2000 years ago. Inset shows the observed and predicted frequency distributions of this mutation under the inferred model.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** TCC$\u2192$TTC mutation fraction as a function of allele frequency in all 1000 Genomes populations.To enable better comparison with the 1000 Genomes data, the UK10K SNPs have been downsampled to 200 individuals. The age distribution of alleles of a given frequency varies as a function of the number of lineages being sampled\u2013this is why the UK10K pulse peaks around 0.6% frequency when measured in a dataset of thousands of lineages, but peaks around 2% in a subsample of only 400 lineages. Some African and East Asian population names have been omitted for clarity since the TCC$\u2192$TTC mutation fraction is so uniform within these continental groups. Red = European populations; Blue = South Asian; Orange = Americas; Purple = Africa; Green = East Asia.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Fraction of TCC$\u2192$TTC mutations as a function of allele frequency in ExAC.Lek et al. compiled data from 60,706 exomes to create the Exome Aggregation Consortium dataset, which enables the analysis of ultra-rare human variation (Lek et al., 2016). The overall fraction of TCC$\u2192$TTC mutations is slightly higher in exome data than in whole genome data because exons contain a skewed distribution of triplet contexts, but the pulse pattern from Figure 3B reproduces unmistakably.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The eleven panels in Figure 3\u2014figure supplements 2, 3 and 4 show the full dependence of mutation spectrum on allele frequency in the UK10K data. If we let $F\u2062(f,m)$ denote the fraction of SNVs of frequency $f$ that are of type $m$ and let $F\u2062(m)$ denote the fraction of all mutations that are of type $m$, the enrichment of mutation type $m$ as a function of frequency is $F\u2062(f,m)/F\u2062(m)$. This function is expected to fluctuate around $y=1$ unless the rate of $m$ has recently increased or decreased. All 96 mutation types are visualized in every panel, but most corresponding lines are greyed out to enhance readability. Some lines deviate from $y=1$ due to the effects of biased gene conversion (BGC)\u2013this occurs when one of the ancestral or derived alleles is a weak base (A or T, abbreviated W) and the other allele is a strong base (G or C, abbreviated S). W$\u2192$S mutations are more abundant at high allele frequencies, while S$\u2192$W mutations are more abundant at low frequencies. These effects are visible but modest in panels D, G, H, and I, but much more pronounced in panels B, C, and F, which focus on mutations in the CpG context. Transitions of the type CpA$\u2192$CpG, which create CpG motifs, are extremely enriched at high frequencies, and this pattern may be an artifact of ancestral misidentification (Hernandez et al., 2007). CpG motifs have such high mutation rates that CpG$\u2192$CpT transitions often happen at the same site in humans and chimps, and these low-frequency double mutations are misclassified as high-frequency CpT$\u2192$CpG mutations. Although it is not surprising to see a peak of CpT$\u2192$CpG transitions at high frequencies in panel F, it is somewhat surprising to see CpG$\u2192$GpG transversions peak in abundance at high frequencies in panel C. This might be a signature of recent declines in the rates of these mutations, since neither ancestral misidentification nor biased gene conversion is thought to produce such a pattern. In addition, neither of these processes can explain the strong enrichment of certain A$\u2192$T mutations at high frequencies that is observed in panel K.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The eleven panels in this three-part figure show the full dependence of mutation spectrum on allele frequency in the UK10K data.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp5-v2.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The 11 panels in this three-part figure show the full dependence of mutation spectrum on allele frequency in the UK10K data.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig3-figsupp6-v2.jpg)\n\n**Figure 3\u2014figure supplement 6.:** Each of these heatmaps shows a subset of the data used to construct Figure 1B, partitioned by allele frequency to show how rare variants are the most highly differentiated between populations. Black dots highlight mutation types that are significantly different in abundance between two populations in a particular frequency class at the $p<10^{\u22125}$ level according to a chi-square test.\n\nWe used the enrichment of TCC$\u2192$TTC mutations as a function of allele frequency to estimate when this mutation pulse was active. Assuming a simple piecewise-constant model, we infer that the rate of TCC$\u2192$TTC mutations increased dramatically $\u223c$15,000 years ago and decreased again $\u223c$2000 years ago. This time-range is consistent with results showing this signal in a pair of prehistoric European samples from 7000 and 8000 years ago, respectively (Mathieson and Reich, 2016). We hypothesize that this mutation pulse may have been caused by a mutator allele that drifted up in frequency starting 15,000 years ago, but that is now rare or absent from present day populations.\n\nAlthough low frequency allele calls often contain a higher proportion of base calling errors than higher frequency allele calls do, it is not plausible that base-calling errors could be responsible for the pulse we have described. In the UK10K data, a minor allele present at 0.6% frequency corresponds to a derived allele that is present in 23 out of 3854 sampled haplotypes and supported by 80 short reads on average (assuming 7x coverage per individual). When independently generated datasets of different sizes are projected down to the same sample size, the TCC$\u2192$TTC pulse spans the same range of allele frequencies in both datasets (Figure 3\u2014figure supplements 1 and 2), which would not be the case if the shape of the curve were a function of low-frequency errors.\n\n### Fine-scale mutation spectrum variation in other populations\n\nEncouraged by these results, we sought to find other signatures of recent mutation pulses. We generated heatmaps and PCA plots of mutation spectrum variation within each continental group, looking for fine-scale differences between closely related populations (Figure 4 and Figure 4\u2014figure supplement 1 through 6). In some cases, mutational spectra differ even between very closely related populations. For example, the *AC\u2192*CC mutations with elevated rates in East Asia appear to be distributed heterogeneously within that group, with most of the load carried by a subset of the Japanese individuals. These individuals also have elevated rates of ACA\u2192AAA and TAT\u2192TTT mutations (Figure 4A and Figure 4\u2014figure supplement 4). This signature appears to be present in only a handful of Chinese individuals, and no Kinh or Dai individuals. As seen for the European TCC mutation, the enrichment of these mutation types peaks at low frequencies, that\u00a0is, \u223c1%. Given the availability of only 200 Japanese individuals in 1000 Genomes, it is hard to say whether the true peak is at a frequency much lower than 1%.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-v2.jpg)\n\n**Figure 4.:** (A) PCA of east Asian samples from 1000 Genomes, based on the relative proportions of each of the 96 mutational types. See Figure 4\u2014figure supplement 2 through 6 for other finescale population PCAs. (B) Heatmaps showing, for pairs of east Asian samples, the ratio of the proportions of SNVs in each of the 96 mutational types. Points indicate significant contrasts at p $<10^{\u22125}$. See Figure 4\u2014figure supplement 1 for additional finescale heatmaps. (C) and (D) Relative enrichment of each mutational type in Japanese and Dai, respectively as a function of allele frequency. Six mutation types that are enriched in JPT are indicated. Populations: CDX=Dai, CHB=Han (Beijing); CHS=Han (south China); KHV=Kinh; JPT=Japanese.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Figure 4B of the main text shows heat map comparisons between East Asian populations, which display fine-scale differences that are exceptionally well defined. For completeness, this figure shows finescale heatmap comparisons within all 1 kG continental groups. We can see that CAC$\u2192$CCC and TAT$\u2192$TTT are heterogeneously distributed within multiple continents, but to the greatest extent in East Asia. In addition, the TCC$\u2192$TTC signature is somewhat heterogeneously distributed within Europe and South Asia, being depleted in Finns and enriched in the Punjabi and Gujarati. Each continental group in the 1000 Genomes data is divided into five sub-populations. These heat maps compare the mutation spectra of these fine-scale populations to each other. African populations are: MSL = Mende in Sierra Leone; LWK = Luhya in Webuye, Kenya; YRI = Yoruba in Ibadan, Nigeria; GWD = Gambian in Western Divisions; ESN = Esan in Nigeria. European populations are: IBS = Iberian Population in Spain; TSI = Toscani in Italia; GBR = British in England and Scotland; CEU = Utah Residents (CEPH) with Northern and Western Ancestry; FIN = Finnish in Finland. East Asian populations are: CDX = Chinese Dai in Xishuangbanna, China; JPT = Japanese in Tokyo, Japan; CHB = Han Chinese in Bejing, China; CHS = Southern Han Chinese; KHV = Kinh in Ho Chi Minh City, Vietnam. South Asian populations are: ITU = Indian Telugu from the UK; GIH = Gujarati Indian from Houston, Texas; PJL = Punjabi from Lahore, Pakistan; BEB = Bengali from Bangladesh; STU = Sri Lankan Tamil from the UK.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Population abbreviations are: CLM = Colombians from Medellin, Colombia; MXL = Mexican Ancestry from Los Angeles, USA; PUR = Puerto Ricans from Puerto Rico; PEL = Peruvians from Lima, Peru; ACB = African Caribbeans in Barbados; ASW = Americans of African Ancestry in SW USA. Admixed populations from the Americans show structure that mirrors the continental groups, with PC1 essentially measuring the ratio between African and non-African ancestry and PC2 measuring the ratio between European and Native American ancestry. The accompanying heat maps show the loadings of the first two principal components.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Population abbreviations are: MSL = Mende in Sierra Leone; LWK = Luhya in Webuye, Kenya; YRI = Yoruba in Ibadan, Nigeria; GWD = Gambian in Western Divisions; ESN = Esan in Nigeria.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Population abbreviations are: CDX = Chinese Dai in Xishuangbanna, China; JPT = Japanese in Tokyo, Japan; CHB = Han Chinese in Bejing, China; CHS = Southern Han Chinese; KHV = Kinh in Ho Chi Minh City, Vietnam.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Population abbreviations are: ITU = Indian Telugu from the UK; GIH = Gujarati Indian from Houston, Texas; PJL = Punjabi from Lahore, Pakistan; BEB = Bengali from Bangladesh; STU = Sri Lankan Tamil from the UK.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Population abbreviations are: IBS = Iberian Population in Spain; TSI = Toscani in Italia; GBR = British in England and Scotland; CEU = Utah Residents (CEPH) with Northern and Western Ancestry; FIN = Finnish in Finland.\n\nPCA reveals relatively little fine-scale structure within the mutational spectra of Europeans or South Asians (Figure 4\u2014figure supplements 5 and 6). However, Africans exhibit some substructure (Figure 4\u2014figure supplement 3), with the Luhya exhibiting the most distinctive mutational spectrum. Unexpectedly, a closer examination of PC loadings reveals that the Luhya outliers are enriched for the same mutational signature identified in the Japanese. Even in Europeans and South Asians, the first PC is heavily weighted toward *AC$\u2192$*CC, ACA$\u2192$AAA, and TAT$\u2192$TTT, although this signature explains less of the mutation spectrum variance within these more homogeneous populations. The sharing of this signature may suggest either parallel increases of a shared mutation modifier, or a shared aspect of environment or life history that affects the mutation spectrum.\n\n### Mutation spectrum variation among the great apes\n\nFinally, given our finding of extensive fine-scale variation in mutational spectra between human populations, we hypothesized that mutational variation between species is likely to be even greater. To compare the mutation spectra of the great apes in more detail, we obtained SNV data from the Great Ape Diversity Panel, which includes 78 whole genome sequences from six great ape species including human (Prado-Martinez et al., 2013). Overall, we find dramatic variation in mutational spectra among the great ape species (Figure 5 and Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig5-v2.jpg)\n\n**Figure 5.:** (A) Relative abundance of SNV types in 5 ape species compared to Bornean Orangutan; data from (Prado-Martinez et al., 2013). Boxes indicate labels in (B). For additional comparisons see Figure 5\u2014figure supplement 1.\u00a0(B) Schematic phylogeny of the great apes highlighting notable changes in SNV abundance.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24284/elife-24284-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** These heatmap comparisons demonstrate that closely related great apes such as Chimpanzees and Bonobos have more similar mutation spectra than more distantly related apes do.\n\nAs noted previously (Moorjani et al., 2016a), one major trend is a higher proportion of CpG mutations among the species closest to human, possibly reflecting lengthening generation time along the human lineage, consistent with previous indications that species closely related to humans have lower mutation rates than more distant species (Goodman, 1961; Li and Tanimura, 1987; Scally and Durbin, 2012). However, most other differences are not obviously related to known processes such as biased gene conversion and generation time change. The A$\u2192$T mutation rate appears to have sped up in the common ancestor of humans, chimpanzees, and bonobos, a change that appears consistent with a mutator variant that was fixed instead of lost. It is unclear whether this ancient A$\u2192$T speedup is related to the A$\u2192$T speedup in East Asians. Other mutational signatures appear on only a single branch of the great ape tree, such as a slowdown of A$\u2192$C mutations in gorillas.\n\n## Discussion\n\nThe widespread differences captured in Figures 1 and 2 may be footprints of allele frequency shifts affecting different mutator alleles. But in principle, other genetic and non-genetic processes may also impact the observed mutational spectrum. First, biased gene conversion (BGC) tends to favor C/G alleles over A/T, and BGC is potentially more efficient in populations of large effective size compared to populations of smaller effective size (Galtier et al., 2001). However, despite the bottlenecks that are known to have affected Eurasian diversity, there is no clear trend of an increased fraction of C/G$\u2192$A/T relative to A/T$\u2192$C/G in non-Africans vs Africans, or with distance from Africa (Figure 1\u2014figure supplement 7), and previous studies have also found little evidence for a strong genome-wide effect of BGC on the mutational spectrum in humans and great apes (Do et al., 2015; Moorjani et al., 2016a). For these reasons, we think that evolution of the mutational process is a better explanation than BGC or selection for differences that have been observed between the spectra of ultra-rare singleton variants and older human genetic variation (Carlson et al., 2017);\n\nIt is also known that shifts in generation time or other life-history traits may affect mutational spectra, particularly for CpG transitions (Martin and Palumbi, 1993; Amster and Sella, 2016). Most CpG transitions result from spontaneous methyl-cytosine deamination as opposed to errors in DNA replication. Hence the rate of CpG transitions is less affected by generation time than other mutations (Hwang and Green, 2004; Moorjani et al., 2016b; Gao et al., 2016). We observe that Europeans have a lower fraction of CpG variants compared to Africans, East Asians and South Asians (Figure 1B), consistent with a recent report of a lower rate of de novo CCG$\u2192$CTG mutations in European individuals compared to Pakistanis (Narasimhan et al., 2016). Such a pattern may be consistent with a shorter average generation time in Europeans (Moorjani et al., 2016b), although it is unclear that a plausible shift in generation-time could produce such a large effect. Apart from this, the other patterns evident in Figure 1 do not seem explainable by known processes.\n\nIn summary, we report here that, mutational spectra differ significantly among closely related human populations, and that they differ greatly among the great ape species. Our work shows that subtle, concerted shifts in the frequencies of many different mutation types are more widespread than dramatic jumps in the rate of single mutation types, although the existence of the European TCC$\u2192$TTC pulse shows that both modes of evolution do occur (Harris, 2015; Moorjani et al., 2016b; Mathieson and Reich, 2016).\n\nAt this time, we cannot exclude a role for nongenetic factors such as changes in life history or mutagen exposure in driving these signals. However, given the sheer diversity of the effects reported here, it seems parsimonious to us to propose that most of this variation is driven by the appearance and drift of genetic modifiers of mutation rate. This situation is perhaps reminiscent of the earlier observation that genome-wide recombination patterns are variable among individuals (Coop et al., 2008), and ultimate discovery of PRDM9 (Baudat et al., 2010); although in this case it is unlikely that a single gene is responsible for all signals seen here. As large datasets of de novo mutations become available, it should be possible to map mutator loci genome-wide. In summary, our results suggest the likelihood that mutational modifiers are an important part of the landscape of human genetic variation.\n\n## Materials\u00a0and\u00a0methods\n\n### Data availability\n\nAll datasets analyzed here are publicly available at the following websites:\n\n### Human mutation spectrum processing\n\nMutation spectra were computed using 1000 Genomes Phase 3 SNPs (Auton et al., 2015) that are biallelic, pass all 1000 Genomes quality filters, and are not adjacent to any N\u2019s in the hg19 reference sequence. Ancestral states were assigned using the UCSC Genome Browser alignment of hg19 to the PanTro2 chimpanzee reference genome; SNPs were discarded if neither the reference nor alternate allele matched the chimpanzee reference. To minimize the potential impact of ancestral misidentification errors, SNPs with derived allele frequency higher than 0.98 were discarded. We also filtered out regions annotated as \u2018conserved\u2019 based on the 100-way PhyloP conservation score (Pollard et al., 2010), download from http://hgdownload.cse.ucsc.edu/goldenPath/hg19/phastCons100way/, as well as regions annotated as repeats by RepeatMasker (Smit et al., 2013), downloaded from http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/nestedRepeats.txt.gz. To be counted as part of the mutation spectrum of population $P$ (which can be either a continental group or a finer-scale population from one city), a SNP should not be a singleton within population $P$\u2013at least two copies of the ancestral and derived alleles must be present within that population.\n\nAn identical approach was used to extract the mutation spectrum of the UK10K ALSPAC panel (Walter et al., 2015), which is not subdivided into smaller populations. The data were filtered as described in Field et al. (2016). The filtering procedure performed by Field et al. (2016) reduces the ALSPAC sample size to 1927 individuals.\n\nWe also computed mutation spectra of the Simons Genome Diversity Panel (SGDP) populations (Mallick et al., 2016). Four of the SGDP populations, West Eurasia, East Asia, South Asia, and Africa, were compared to their direct counterparts in the 1000 Genomes data. Three additional SGDP populations, Central Asia and Siberia, Oceania, and America, had no close 1000 Genomes counterparts and were not analyzed here (although each project contained a panel of people from the Americans, the composition of the American panels was extremely different, with the 1000 Genomes populations being much more admixed with Europeans and Africans). SGDP sites with more than 20% missing data were not utilized. All other data processing was done the same way described for the 1000 Genomes data.\n\nThe following table gives the same size of each population panel, as well as the total number of SNPs segregating in the panel that are used to compute mutation type ratios:\n\n### Great ape diversity panel data processing\n\nBiallelic great ape SNPs were extracted from the Great Ape Diversity Panel VCF (Prado-Martinez et al., 2013), which is aligned to the hg18 human reference sequence. Ancestral states were assigned using the Great Ape Genetic Diversity project annotation, which used the Felsenstein pruning algorithm to assign allelic states to internal nodes in the great ape tree. In the Great Ape Diversity Panel, the most recent common ancestor (MRCA) of the human species is labeled as node 18; the MRCAs of chimpanzees, bonobos, gorillas, and orangutans, respectively, are labeled as node 16, node 17, node 19, and node 15. We extracted the state of each MRCA at each SNP in the alignment and used it to polarize the ancestral and derived allele at that site; a SNP was discarded whenever the ancestral node was assigned an uncertain or polymorphic ancestral state. As with the human data, SNPs with derived allele frequency higher than 0.98 were not used, and both repeats and PhyloP-annotated conserved regions were filtered away.\n\n### Visual representation of mutation spectra\n\nThe mutation type of an SNP is defined in terms of its ancestral allele, its derived allele, and its two immediate 5\u2019 and 3\u2019 neighbors. Two mutation types are considered equivalent if they are strand-complementary to each other (e.g. ACG$\u2192$ATG is equivalent to CGT$\u2192$CAT). This scheme classifies SNPs into 96 different mutation types, each that can be represented with an A or C ancestral allele.\n\nTo compute the frequency $f_{P}\u2062(m)$ of SNP $m$ in population $P$, we count up all SNPs of type $m$ where the derived allele is present in at least one representative of population $P$ (which can be either a specific population such as YRI or a broader continental group such as AFR). After obtaining this count $C_{P}\u2062(m)$, we define $f_{P}\u2062(m)$ to be the ratio $C_{P}\u2062(m)/\\sum_{m^{\u2032}}C_{P}\u2062(m^{\u2032})$, where the sum in the denominator ranges over all 96 mutation types $m^{\u2032}$. The enrichment of mutation type $m$ in population $P_{1}$ relative to population $P_{2}$ is defined to be $f_{P_{1}}\u2062(m)/f_{P_{2}}\u2062(m)$; these enrichments are visualized as heat maps in Figures 1B, 3B and 4A.\n\nTo track changes in the mutational spectrum over time, we compute $f_{P}\u2062(m)$ in bins of restricted allele frequency. This involves counting the number of SNPs of type $m$ that are present at frequency $\u03d5$ in population $P$ to obtain counts $C_{P}\u2062(m,\u03d5)$ and frequencies $f_{P}\u2062(m,\u03d5)=C_{P}\u2062(m,\u03d5)/\\sum_{m^{\u2032}}C_{P}\u2062(m^{\u2032}\u2062\u03d5)$. Deviation of the ratio $f_{P}\u2062(m,\u03d5)/f_{P}\u2062(m)$ from one indicates that the rate of $m$ has fluctuated recently in the history of population $P$. To make the sampling noise approximately uniform across alleles of different frequencies, alleles of derived count greater than five were grouped into approximately log-spaced bins that each contained similar numbers of UK10K SNPs. More precisely, we defined a set of bin endpoints $b_{1},b_{2},\u2026$ such that the total number of SNPs ranging in derived allele count between $b_{i}$ and $b_{i+1}\u22121$ is greater than or equal to the number of 5-ton SNPs, while the total number of SNPs ranging in derived allele count from $b_{i}$ to $b_{i+1}-2$ is less than the number of 5-ton SNPs.\n\nIn some cases, for\u00a0example Figure 2, Figure 2\u2014figure supplement 1B and Figure 3\u2014figure supplement 1, site frequency spectra were projected down to a smaller sample size before counting SNPs in order to more accurately compare datasets of different sample sizes. A binomial sampling approach was used to project a sample of $N$ haplotypes does to a smaller sample size $n$. Letting $C_{P}^{(N)}\u2062(m,\u03d5)$ denote the SNP counts in the large sample of $N$ haplotypes, effective SNP counts $C_{P}^{(n)}\u2062(m,\u03d5)$ in a sample of $n$ haplotypes are computed as follows:\n\n$$\nC_{P}^{(n)}\u2062(m,k/n)=(nk)\u2062\\sum\u2113=1N-1(\u2113/N)^{k}\u2062(1-\u2113/N)^{n-k}\u2062C_{P}^{(N)}\u2062(m,\u2113/N)\n$$\n\n### Significance testing\n\nOne central goal of this paper is to test whether many mutation types differ in rate between human populations or whether mutation spectrum shifts have been rare events affecting only a small proportion of mutation types. A simple statistical method for answering this question would be to perform 96 separate chi-square tests, one for each triplet-context-dependent mutation type, as follows:\n\nLet $S_{i}$ denote the total number of SNPs segregating in population $P_{i}$, and let $S_{i}^{(m)}$ denote the number of SNPs of mutation type $m$. If mutation type $m$ is more prevalent in population $P_{1}$ than in population $P_{2}$, a chi-square test provides a natural way of assessing the significance of this difference. As described in Harris (2015), this test is performed on the following two-by-two contingency table:\n\nIt would be appealing to conclude that every mutation type \u2018passing\u2019 this chi-square test is a mutation type that has changed in rate during recent human history. However, if we were to perform the full set of 96 tests, they would not be independent. A sufficiently large increase in the rate of one mutation type $m_{1}$ in population $P_{1}$ after divergence from $P_{2}$ could cause another mutation type $m_{2}$, whose rate has remained constant, to comprise significantly different fractions of the SNPs from $P_{1}$ and $P_{2}$. To minimize this effect, we formulate the following iterative procedure of conditionally independent tests: first, compute a chi-square significance value $p_{unordered}\u2062(m)$ for each mutation type $m$ using the two-by-two chi-square table above. We then use these values to order the SNPs from lowest p value to highest and compute a set of ordered $p$ values $p_{ordered}\u2062(m)$. For the mutation type $m_{0}$ with the lowest unordered $p$ value, $p_{unordered}\u2062(m_{0})=p_{ordered}\u2062(m_{0})$. For mutation type $m_{i}$, which has the $i$th lowest unordered $p$ value and $i<96$, $p_{ordered}\u2062(m_{i})$ is computed from the following contingency table:\n\nFor mutation type $m_{96}$, which has the highest unordered $p$ value, the ordered $p$ value is computed from the contingency table\n\nThis procedure is guaranteed to find fewer mutation types to differ significantly in rate between populations compared to separate chi-square tests.\n\n### Principal component analysis\n\nThe python package matplotlib.mlab.PCA was used to perform PCA on the complete set of 1000 Genomes diploid genomes. First, the triplet mutational spectrum of each haplotype $h$ was computed as a 96-element vector encoding the mutation frequencies $(f_{h}\u2062(m))_{m}$ of the non-singleton derived alleles present on that haplotype.\u00a0The mutational spectrum of each diploid genome was then computed by averaging together the spectra of its two constituent haplotypes. In the same way, a separate PCA was performed on each of the five continental groups to reveal finescale components of mutation spectrum variation.\n\n### Dating of the TCC\u2192T mutation pulse\n\nWe estimated the duration and intensity of TCC$\u2192$T rate acceleration in Europe by fitting a simple piecewise-constant rate model to the UK10K frequency data. To specify the parameters of the model, we divide time into discrete log-spaced intervals bounded by time points $t_{1},\u2026,t_{d}$, assigning each interval a TCC$\u2192$T mutation rate $r_{0},\u2026\u2062r_{d}$. In units of generations before the present, the time discretization points were chosen to be: 20, 40, 200, 400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000, 8000, 12,000, 16,000, 20,000, 24,000, 28,000, 32,000, 36,000, 40,000. We assume that the total rate $r$ of mutations other than TCC$\u2192$T stays constant over time (a first-order approximation).\n\nIn terms of these rate variables, we can calculate the expected shape of the TCC$\u2192$T pulse shown in Figure 2B of the main text. The shape of this curve depends on both the mutation rate parameters $r_{i}$ and the demographic history of the European population, which determines the joint distribution of allele frequency and allele age. To account for the effects of demography, we use Hudson\u2019s ms program to simulate 10,000 random coalescent trees under a realistic European demographic history inferred from allele frequency data (Tennessen et al., 2012) and condition our inference upon this collection of trees as follows:\n\nLet $A\u2062(m,t)$ be the function for which $\\int_{t_{i}}^{t_{i+1}}A\u2062(m,t)\u2062d\u2062t$ equals the coalescent tree branch length, averaged over the sample of simulated trees, that is ancestral to exactly $m$ lineages and falls between time $t_{i}$ and $t_{i+1}$. Given this function, which can be empirically estimated from a sample of simulated trees, the expected frequency spectrum entry $k/n$ is\n\n$$\nE\u2062(k/n)=\\frac{\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(k,t)\u2062d\u2062t}{\\sum_{j=1}^{n}\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(j,t)\u2062d\u2062t}\n$$\n\nand the expected fraction of TCC$\u2192$T mutations in allele frequency bin $k/n$ is\n\n$$\nE\u2062(f_{TCC\u2192T}\u2062(k/n))=\\frac{\\sum_{i=1}^{d}r_{i}\u2062\\int_{t_{i-1}}^{t_{i}}A\u2062(k,t)\u2062d\u2062t}{r\u2062\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(k,t)\u2062d\u2062t}.\n$$\n\nThe expected value of the TCC$\u2192$T enrichment ratio being plotted in Figure 2B is\n\n$$\nE\u2062(r_{TCC\u2192T}\u2062(k/n))=\\frac{\\sum_{i=1}^{d}r_{i}\u2062\\int_{t_{i-1}}^{t_{i}}A\u2062(k,t)\u2062d\u2062t\u22c5\\sum_{j=1}^{n}\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(j,t)\u2062d\u2062t}{\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(k,t)\u2062d\u2062t\u22c5\\sum_{j=1}^{n}\\sum_{i=1}^{d}r_{i}\u2062\\int_{t_{i-1}}^{t_{i}}A\u2062(j,t)\u2062d\u2062t}\n$$\n\nIn Figure 2B, enrichment ratios are not computed for every allele frequency in isolation, but for allele frequency bins that each contain similar numbers of SNPs. Given integers $1\\leqk_{m}<k_{m+1}\\leqn$, the expected TCC$\u2192$T enrichment ratio averaged over all SNPs with allele frequency between $k_{m}/n$ and $k_{m+1}/n$ is:\n\n$$\nE\u2062(r_{TCC\u2192T}\u2062(k_{m}/n))=\\frac{\\sum_{i=1}^{d}r_{i}\u2062\\int_{t_{i-1}}^{t_{i}}\\sum_{k=k_{m}}^{k_{m+1}}A\u2062(k,t)\u2062d\u2062t\u22c5\\sum_{j=1}^{n}\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}A\u2062(j,t)\u2062d\u2062t}{\\sum_{i=1}^{d}\\int_{t_{i-1}}^{t_{i}}\\sum_{k=k_{m}}^{k_{m+1}}A\u2062(k,t)\u2062d\u2062t\u22c5\\sum_{j=1}^{n}\\sum_{i=1}^{d}r_{i}\u2062\\int_{t_{i-1}}^{t_{i}}A\u2062(j,t)\u2062d\u2062t}\n$$\n\nWe optimize the mutation rates $r_{1},\u2026,r_{d}$ using a log-spaced quantization of allele frequencies $k_{1}/n,\u2026,k_{m}/n$ defined such that all bins contain similar numbers of SNPs. The chosen allele count endpoints $k_{1},\u2026,k_{m}$ are: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 3000, 4000. Given this quantization of allele frequencies, we optimize $r_{1},\u2026,r_{d}$ by using the BFGS algorithm to minimize the least squares distance $D\u2062(r_{0},\u2026,r_{d})$ between $E\u2062(r_{TCC\u2192T}\u2062(k_{m}/n))$ and the empirical ratio $r_{TCC\u2192T}\u2062(k_{m}/n)$ computed from the UK10K data. This optimization is subject to a regularization penalty that minimizes the jumps between adjacent mutation rates $r_{i}$ and $r_{i+1}$:\n\n$$\nD\u2062(r_{0},\u2026,r_{d})=\\summ=1d(E\u2062(r_{TCC\u2192T}\u2062(k_{m}/n))-r_{TCC\u2192T}\u2062(k_{m}/n))^{2}+0.25\u2062\\sqrt{\\sumi=1d(r_{i-1}-r_{i})^{2}}\n$$\n\nAlthough the underlying model of mutation rate change assumed here is very simple, it still represents an advance over the method used in (Harris, 2015) to estimate of the timing of the TCC$\u2192$TTC mutation rate increase. That method relied upon explicit estimates of allele age from a dataset of less than 100 individuals, which are much noisier than integration of a joint distribution of allele age and frequency across a sample of thousands of haplotypes.\n",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "4418ad62-8a19-4641-8d99-36f8e4192ad3",
+      "submission_id": "ce42552e-463e-4742-8aa9-dc7bc9780d18",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gilean McVean, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24284.043](https://doi.org/10.7554/eLife.24284.043)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rapid evolution of the human mutation spectrum\" for consideration by eLife. Your article has been favorably evaluated by Detlef Weigel (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: Aylwyn Scally (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThere are often discrepancies in mutation rates and spectra inferred from short term observations and long term comparisons. One potential explanation is that these rates and spectra are not fixed, but vary in the course of evolution. This paper makes an important contribution, by documenting changes in the mutation spectrum during human evolution. It presents an analysis of population differences in the spectrum of context-dependent single nucleotide polymorphism, focused on humans and great apes. A previous observation about differences in mutation spectrum between human populations is replicated here and a hypothesis about a historical burst of mutation is presented. Many additional, weaker differences are also seen but replicated across data sets, which argues for biological, rather than experimental explanations. Very substantial differences among great apes are described.\n\nEssential revisions:\n\nThe original reviews are below. In terms of revision, the only major issue that we wish to see addressed concerns the analysis of the burst hypothesis. Specifically, there is a potential concern about whether certain artefacts could explain the apparent lack of evidence for the population-specific bias among the most recent mutations and questions about differences among populations in the relationship between allele frequency and age. There are also suggestions about how to look at patterns along the genome to hunt for clues as to possible causes.\n\nWe have left the full reviews in as we think there are other ideas here that you may wish to pick up on, but pursuing them is not essential for the revision. We look forward to seeing the revision.\n\nReviewer #1:\n\nThis paper presents an analysis of population differences in the spectrum of context-dependent single nucleotide polymorphism, primarily focused on humans, but also analysing data from great apes. One of the authors previously reported a substantial difference in one particular type. This is replicated here and augmented with a large number of other, much weaker findings. These are replicated across data sets, which argues for biological, rather than experimental explanations. Very substantial differences among great apes are described. One specific hypothesis, about an apobec mutation is assessed and some \u2013 moderately weak \u2013 evidence for association is seen.\n\nThe analyses presented are basically well done and reasonably compelling that there are repeatable differences in mutational spectra. The obvious \u2013 and I think rather important \u2013 criticism is that this works moves us no further along in terms of identifying causal factors. The authors argue for a contribution of transient mutator phenotypes. However, it is not clear how plausible this model is \u2013 most models of mutator suggest that they tend not to persist in sexually reproducing populations. This could potentially be explored by simulation. The authors argue that non-genetic factors \u2013 e.g. environmental exposure \u2013 are unlikely to explain the phenomena \u2013 though no hard evidence is given, although I agree that the great ape differences are compatible with a substantial genetic component.\n\nThe only other substantial comment I have is around the analysis that fits the burst of TCC-to-TTC mutations. My concern is that sequencing data sets will have higher error rates at low frequencies and likely differential discovery based on sequence context due to systematic fluctuation in sequencing depth (true for both UK10k and 1000G). Hence, I have a concern that the most recent TCC->TTC mutations could be being lost/swamped in such a way that leads to an apparent burst, when the process is still active.\n\nReviewer #2:\n\nThis is a nice paper on a topic of current interest and relevance in human genetics and genomics. It points to important evidence for recent variability over time in at least some aspects of the human mutation rate, something which until now we have only been able to speculate about, and which has potentially broad implications for human evolutionary genetics.\n\nI have listed below a few thoughts and comments, including some things I think the authors should address. However, I found the paper well written and well presented, and have no major issues to raise.\n\nIt would be good to get a sense of the raw numbers involved. What do the relative differences between populations mean in terms of actual numbers of variants? For example, what actual density of additional derived T alleles are there in Europe compared to Africa for the TCC->TTC signal?\n\nIs there an issue with ascertainment bias due to demography, in that the allele frequency spectrum varies between populations due to their differing demographic histories, and this might differentially affect the ascertainment of variants in different spectral classes, depending on their relative abundance?\n\nIt would be interesting to know how the structure presented in Figure 1 varies with the age of the variants used to construct it (or, as a proxy, their allele frequency). Presumably one would expect the differences between populations to disappear as one excludes more recent variants, as older ones are more likely to be shared. Is this the case?\n\nI think the procedure used to estimate statistical significance, referred to as 'a forward variable selection procedure' needs a better description and motivation. It's not wholly clear to me how the procedure adopted achieves its goal of minimising the interdependence of the tests for each mutation type. It looks to me like some form of partitioned chi-squared test for comparing multiple proportions, but I don't know this statistical literature well \u2013 can you cite a useful reference or else explain how you arrived at it? I'd be happy with just testing for a significant overall difference in spectrum between two populations \u2013 is testing for significance of individual components of the spectrum really necessary?\n\nFor the differences within the great ape tree, did you also compare with an outgroup such as macaque or gibbon? It wasn't clear how you polarise the C-T rate difference as an increase on the Pongine branch, and the CpG rate difference as an increase in Hominines.\n\nReviewer #3:\n\nThis article extends previous knowledge on heterogeneity of mutational spectra between populations. It detailed differences in frequencies of specific mutation types between diverse population groups. Moreover, authors date TCC->TTC mutational pulse for the European population. The arguments supporting the main conclusion of the study seem convincing, although the discussion of possible importance of evolutionary forces other than mutation would be helpful (e.g. interaction between BGC and demographic history). There is a noticeable overlap with the earlier work, and the manuscript would strongly benefit from additional analyses of the observed mutational patterns.\n\nFor example, are the relative increases of mutation types uniformly distributed along the genome or enriched in specific genomic locations? Are they associated with epigenomic features or display asymmetry with respect to transcription or replication? Are they dependent on local recombination rate? Any analysis suggesting of a mechanistic hypothesis underlying the observation would strengthen the paper.\n\nIn contrast to the main result of the manuscript, I am skeptical about the conjecture related to the APOBEC-induced mutagenesis. It is not statistically sound and based on arbitrary thresholds. Is it possible to compare replication asymmetry of APOBEC-like mutations (TC[A/T]-> [C/G]) between populations with different frequencies of variants associated with breast or bladder cancer?\n",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8de22502-f669-4fb4-95e4-404afd026822",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C1",
+      "claim": "DNA replication, proofreading, and damage repair involve the action of hundreds of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This high fidelity results from the action of hundreds of genes involved in replication, proofreading, and damage repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about DNA fidelity mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "acfb266f-592a-4230-8112-598e776cb0f8",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C2",
+      "claim": "Mutational spectra differ substantially among species.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, using SNV variation as a proxy for mutational input, we report here that mutational spectra differ substantially among species, human continental groups and even some closely related populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "0e383012-bed0-4f42-b48a-d2631ba35675",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C3",
+      "claim": "Mutational spectra differ substantially among human continental groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, using SNV variation as a proxy for mutational input, we report here that mutational spectra differ substantially among species, human continental groups and even some closely related populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "69f93e2c-352c-4da3-95b8-120ffbbd0489",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C4",
+      "claim": "Mutational spectra differ substantially among some closely related populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, using SNV variation as a proxy for mutational input, we report here that mutational spectra differ substantially among species, human continental groups and even some closely related populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding reported in the abstract based on the study's analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "bd5efae9-695d-4769-af22-8cce93fff99e",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C5",
+      "claim": "There was an increased TCC\u2192TTC mutation rate in Europeans.",
+      "claim_type": "EXPLICIT",
+      "source": "Close examination of one signal, an increased TCC\u2192TTC mutation rate in Europeans, indicates a burst of mutations from about 15,000 to 2000 years ago, perhaps due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding reported in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "6dcbd107-337f-42e8-8194-6edc445fbb1f",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C6",
+      "claim": "The increased TCC\u2192TTC mutation rate in Europeans represents a burst of mutations from about 15,000 to 2000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "Close examination of one signal, an increased TCC\u2192TTC mutation rate in Europeans, indicates a burst of mutations from about 15,000 to 2000 years ago, perhaps due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal inference based on allele frequency data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ae8eba65-c24c-4e84-931d-71e17178ce13",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C7",
+      "claim": "The TCC\u2192TTC mutation burst in Europeans may have been caused by the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Close examination of one signal, an increased TCC\u2192TTC mutation rate in Europeans, indicates a burst of mutations from about 15,000 to 2000 years ago, perhaps due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "c62efe4f-6781-48c2-90a6-667a6d0d51a4",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C8",
+      "claim": "Mutation rates can evolve markedly over short evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that mutation rates can evolve markedly over short evolutionary timescales and suggest the possibility of mapping mutational modifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "16c6c86d-df40-494a-8377-a9d976d2162b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C9",
+      "claim": "It is possible to map mutational modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that mutation rates can evolve markedly over short evolutionary timescales and suggest the possibility of mapping mutational modifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a speculative possibility based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "7679cc8f-db0f-4e5a-9847-099578236ef4",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C10",
+      "claim": "The vast majority of mutations that affect fitness are deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the vast majority of mutations that affect fitness are deleterious, and hence biological systems have evolved elaborate mechanisms for accurate DNA replication and repair of diverse types of spontaneous damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in evolutionary biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "864e3e81-3e46-4d9d-bc03-ec47e605466a",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C11",
+      "claim": "In humans, the mutation rate is about one point mutation per 100 MB per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the combined action of hundreds of genes, mutation rates are extremely low\u2013in humans, about one point mutation per 100 MB or about 60 genome-wide per generation (Kong et al., 2012; S\u00e9gurel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "abfcf9f3-6b0c-4731-8fcc-7d097beae5df",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C12",
+      "claim": "In humans, there are about 60 point mutations genome-wide per generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the combined action of hundreds of genes, mutation rates are extremely low\u2013in humans, about one point mutation per 100 MB or about 60 genome-wide per generation (Kong et al., 2012; S\u00e9gurel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "300c26ac-ab54-4c52-8cc9-012d8ac6dd1d",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C13",
+      "claim": "Defects in particular genes can lead to increased mutation rates within very specific sequence contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "While the precise roles of most of the relevant genes have not been fully elucidated, research on somatic mutations in cancer has shown that defects in particular genes can lead to increased mutation rates within very specific sequence contexts (Alexandrov et al., 2013; Helleday et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to cancer mutation research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "c0886aab-62c1-458f-bb4d-49b576e829e9",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C15",
+      "claim": "Natural selection may have limited ability to fine-tune the efficacy of individual DNA repair genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the repair system has evolved to be extremely accurate overall, theory suggests that in such a system, natural selection may have limited ability to fine-tune the efficacy of individual genes (Lynch, 2011; Sung et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "0eeb32e5-a140-4770-8ca7-170f6e513554",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C16",
+      "claim": "Drift tends to dominate selection when the change in fitness is less than the inverse of effective population size.",
+      "claim_type": "EXPLICIT",
+      "source": "(Drift tends to dominate selection when the change in fitness is less than the inverse of effective population size).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of population genetics theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "0be40656-6a92-4879-b39e-49d41cb0c24a",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C17",
+      "claim": "A variant that increases the mutation rate can recombine away from deleterious mutations it generates elsewhere in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The limits of selection on mutation rate modifiers are especially acute in recombining organisms such as humans because a variant that increases the mutation rate can recombine away from deleterious mutations it generates elsewhere in the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation based on population genetics principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "f4a96b02-b903-4c0f-b1f0-0c652d8d169d",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C18",
+      "claim": "Most triplet sequence contexts have mutation rates that vary across the evolutionary tree of mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Most triplet sequence contexts have mutation rates that vary across the evolutionary tree of mammals (Hwang and Green, 2004), but evolution of the mutation spectrum over short time scales has been less well described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "6a8ef82c-77f9-47ce-a4db-b5f565d449cb",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C19",
+      "claim": "Weak natural mutators have recently been observed in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak natural mutators have recently been observed in yeast (Bui et al., 2017) and inferred from human haplotype data (Seoighe and Scally, 2017);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a yeast study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "803714b1-227f-48e0-9c93-617ce6515ccc",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C20",
+      "claim": "Weak natural mutators have been inferred from human haplotype data.",
+      "claim_type": "EXPLICIT",
+      "source": "Weak natural mutators have recently been observed in yeast (Bui et al., 2017) and inferred from human haplotype data (Seoighe and Scally, 2017);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a human genetics study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "e2c35853-f811-4fce-9c7f-5620d5431b8f",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C25",
+      "claim": "The first principal component of mutation spectra separated Africans from non-Africans.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component separated Africans from non-Africans, and the second separated Europeans from East Asians, with South Asians and admixed native Americans (Figure 1\u2014figure supplement 2) appearing intermediate between the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the PCA analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "dd3f8c03-ed9f-4039-882b-ceab62dea447",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C26",
+      "claim": "The second principal component of mutation spectra separated Europeans from East Asians.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component separated Africans from non-Africans, and the second separated Europeans from East Asians, with South Asians and admixed native Americans (Figure 1\u2014figure supplement 2) appearing intermediate between the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the PCA analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "9c144bcd-80a5-4bfd-94ed-c75c034caf69",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C27",
+      "claim": "South Asians appear intermediate between Europeans and East Asians in mutation spectrum PCA.",
+      "claim_type": "EXPLICIT",
+      "source": "The first principal component separated Africans from non-Africans, and the second separated Europeans from East Asians, with South Asians and admixed native Americans (Figure 1\u2014figure supplement 2) appearing intermediate between the two.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "0ff97f4e-94c3-4cf5-a7e1-a7af56b02f8c",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C32",
+      "claim": "All of the 43 mutation types with a significant difference between Africa and Europe in 1000 Genomes also show a frequency difference in the same direction in SGDP.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all of the 43 mutation types with a significant difference between Africa and Europe (at p<10\u22125) in 1000 Genomes also show a frequency difference in the same direction in SGDP (comparing Africa and West Eurasia).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a replication result comparing two independent datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "32df15c2-4dd5-4195-ac21-ade293894ab9",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C33",
+      "claim": "In both 1000 Genomes and SGDP, the enrichment of *AC\u2192*CC mutations in East Asia is larger in magnitude than any other signal aside from the TCC\u2192TTC imbalance.",
+      "claim_type": "EXPLICIT",
+      "source": "In both 1000 Genomes and SGDP, the enrichment of *AC\u2192*CC mutations in East Asia is larger in magnitude than any other signal aside from the previously described TCC\u2192TTC imbalance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the analysis of both datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "53dfba15-0ca3-4a97-ae08-bd613ccd0213",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C34",
+      "claim": "TCC\u2192TTC mutations are highly enriched in Europeans (p<1\u00d710^-300 for Europe vs. Africa).",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the timescale over which the mutation spectrum change occurred, we analyzed the allele frequency distribution of TCC\u2192TTC mutations, which are highly enriched in Europeans (Figure 3A; p<1\u00d710\u2212300 for Europe vs. Africa) and to a lesser extent in South Asians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "fe587b55-6128-4d85-a98b-a29fc79600bf",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C35",
+      "claim": "TCC\u2192TTC mutations are enriched to a lesser extent in South Asians compared to Europeans.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the timescale over which the mutation spectrum change occurred, we analyzed the allele frequency distribution of TCC\u2192TTC mutations, which are highly enriched in Europeans (Figure 3A; p<1\u00d710\u2212300 for Europe vs. Africa) and to a lesser extent in South Asians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative finding from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "6470c0a1-e2ed-44fb-abe8-c91694aca92f",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C36",
+      "claim": "The enrichment of TCC\u2192TTC mutations peaks around 0.6% frequency in UK10K.",
+      "claim_type": "EXPLICIT",
+      "source": "But surprisingly, the enrichment peaks around 0.6% frequency in UK10K, and there is practically no enrichment among the very lowest frequency variants (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the allele frequency analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "b224e619-c58b-45d8-ac57-f2ec1693ec4a",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C37",
+      "claim": "There is practically no enrichment of TCC\u2192TTC mutations among the very lowest frequency variants.",
+      "claim_type": "EXPLICIT",
+      "source": "But surprisingly, the enrichment peaks around 0.6% frequency in UK10K, and there is practically no enrichment among the very lowest frequency variants (Figure 3B and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the allele frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "5110163e-5295-4e90-b35e-353a1eef3ed3",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C38",
+      "claim": "C\u2192T mutations within TCT, CCC and ACC contexts are enriched in Europe and South Asia.",
+      "claim_type": "EXPLICIT",
+      "source": "C\u2192T mutations on other backgrounds, namely within TCT, CCC and ACC contexts, are also enriched in Europe and South Asia and show a similar enrichment around 0.6% frequency that declines among rarer variants (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mutation spectrum analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "bd079d3b-4b49-4a30-a7fb-d1b54c90a2bc",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C39",
+      "claim": "C\u2192T mutations within TCT, CCC and ACC contexts show a similar enrichment around 0.6% frequency that declines among rarer variants.",
+      "claim_type": "EXPLICIT",
+      "source": "C\u2192T mutations on other backgrounds, namely within TCT, CCC and ACC contexts, are also enriched in Europe and South Asia and show a similar enrichment around 0.6% frequency that declines among rarer variants (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the allele frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ab1898e3-adba-468e-964c-7527fb9fe152",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C40",
+      "claim": "The four mutation types (TCC\u2192TTC, TCT\u2192TTT, CCC\u2192CTC, ACC\u2192ATC) comprise the signature of a single mutational pulse that is no longer active.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these four mutation types comprise the signature of a single mutational pulse that is no longer active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similar allele frequency patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "1effaa0c-6ed3-4755-959e-16623ab12400",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C43",
+      "claim": "The TCC\u2192TTC signal is present in prehistoric European samples from 7000 and 8000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "This time-range is consistent with results showing this signal in a pair of prehistoric European samples from 7000 and 8000 years ago, respectively (Mathieson and Reich, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to ancient DNA studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "bbcaf422-988b-4fc0-bdd6-f424527e9c3c",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C44",
+      "claim": "The mutation pulse may have been caused by a mutator allele that drifted up in frequency starting 15,000 years ago, but that is now rare or absent from present day populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that this mutation pulse may have been caused by a mutator allele that drifted up in frequency starting 15,000 years ago, but that is now rare or absent from present day populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis to explain the observed pattern.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "3446b583-b83e-47de-88f9-eed169d79a65",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C45",
+      "claim": "The *AC\u2192*CC mutations with elevated rates in East Asia appear to be distributed heterogeneously within that group, with most of the load carried by a subset of the Japanese individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the *AC\u2192*CC mutations with elevated rates in East Asia appear to be distributed heterogeneously within that group, with most of the load carried by a subset of the Japanese individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fine-scale population analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "95def732-1fc4-4f98-9ea5-4347cd7f63b4",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C46",
+      "claim": "Japanese individuals have elevated rates of ACA\u2192AAA and TAT\u2192TTT mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These individuals also have elevated rates of ACA\u2192AAA and TAT\u2192TTT mutations (Figure 4A and Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fine-scale population analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "a3c14adb-9240-41bd-bd2b-025147d48400",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C47",
+      "claim": "The enrichment of *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT mutations in Japanese peaks at low frequencies (~1%).",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for the European TCC mutation, the enrichment of these mutation types peaks at low frequencies, that is, \u223c1%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the allele frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "7321d436-0730-4bff-9f3c-29634da34a54",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C48",
+      "claim": "The Luhya exhibit the most distinctive mutational spectrum among Africans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Africans exhibit some substructure (Figure 4\u2014figure supplement 3), with the Luhya exhibiting the most distinctive mutational spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fine-scale PCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "6db27592-3c2d-4236-8bc3-96a7a44e60b6",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C49",
+      "claim": "The Luhya outliers are enriched for the same mutational signature identified in the Japanese.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, a closer examination of PC loadings reveals that the Luhya outliers are enriched for the same mutational signature identified in the Japanese.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing PC loadings across populations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "9d95e78e-e202-43cf-8c0a-a3d78499689c",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C50",
+      "claim": "There is dramatic variation in mutational spectra among the great ape species.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find dramatic variation in mutational spectra among the great ape species (Figure 5 and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the great ape analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "65223a07-38ec-4378-a012-4596407907eb",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C51",
+      "claim": "There is a higher proportion of CpG mutations among the species closest to human.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted previously (Moorjani et al., 2016a), one major trend is a higher proportion of CpG mutations among the species closest to human, possibly reflecting lengthening generation time along the human lineage, consistent with previous indications that species closely related to humans have lower mutation rates than more distant species (Goodman, 1961; Li and Tanimura, 1987; Scally and Durbin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "9c9cd858-e416-47b6-a0c9-17332fb2a516",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C52",
+      "claim": "The higher proportion of CpG mutations in species closest to human possibly reflects lengthening generation time along the human lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted previously (Moorjani et al., 2016a), one major trend is a higher proportion of CpG mutations among the species closest to human, possibly reflecting lengthening generation time along the human lineage, consistent with previous indications that species closely related to humans have lower mutation rates than more distant species (Goodman, 1961; Li and Tanimura, 1987; Scally and Durbin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "e8c10ec2-4a98-48cc-9103-f386ec9563ef",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C56",
+      "claim": "The lower fraction of CpG variants in Europeans may be consistent with a shorter average generation time in Europeans.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pattern may be consistent with a shorter average generation time in Europeans (Moorjani et al., 2016b), although it is unclear that a plausible shift in generation-time could produce such a large effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation with uncertainty.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "780a1186-52ed-4d00-ae9e-28279d87a8c8",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C59",
+      "claim": "Most of the variation in mutation spectra is likely driven by the appearance and drift of genetic modifiers of mutation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given the sheer diversity of the effects reported here, it seems parsimonious to us to propose that most of this variation is driven by the appearance and drift of genetic modifiers of mutation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as the authors' interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "2a737a01-eddb-40ee-825c-0e2ab0728c8b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C60",
+      "claim": "Mutational modifiers are likely an important part of the landscape of human genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results suggest the likelihood that mutational modifiers are an important part of the landscape of human genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "3dd79e72-2a15-4379-86fc-022c54cd08f3",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C61",
+      "claim": "The triplet mutation spectrum contains sufficient information to reliably classify individuals by continent of origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the triplet mutation spectrum is an extremely compressed summary statistic compared to typical genotype arrays, we found that it contains sufficient information to reliably classify individuals by continent of origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the PCA analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ef1ec9b9-98db-4585-bc79-7495e3c99dc8",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C62",
+      "claim": "PCA is commonly applied to individual-level genotypes, in which case the PCs are usually highly correlated with geography.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA is commonly applied to individual-level genotypes, in which case the PCs are usually highly correlated with geography (Novembre et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "0156c36a-900c-493c-b132-e8302a58f87e",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C63",
+      "claim": "Biased gene conversion tends to favor C/G alleles over A/T.",
+      "claim_type": "EXPLICIT",
+      "source": "First, biased gene conversion (BGC) tends to favor C/G alleles over A/T, and BGC is potentially more efficient in populations of large effective size compared to populations of smaller effective size (Galtier et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "18efac73-8df2-49c5-b1de-ab4887df21b3",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C64",
+      "claim": "BGC is potentially more efficient in populations of large effective size compared to populations of smaller effective size.",
+      "claim_type": "EXPLICIT",
+      "source": "First, biased gene conversion (BGC) tends to favor C/G alleles over A/T, and BGC is potentially more efficient in populations of large effective size compared to populations of smaller effective size (Galtier et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "f4f499fd-031d-4f92-8fb3-f4f7722a97eb",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C67",
+      "claim": "Most CpG transitions result from spontaneous methyl-cytosine deamination as opposed to errors in DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Most CpG transitions result from spontaneous methyl-cytosine deamination as opposed to errors in DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CpG mutation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "4459f721-1f9a-4956-b0d0-0ccc411145f8",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C68",
+      "claim": "The rate of CpG transitions is less affected by generation time than other mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the rate of CpG transitions is less affected by generation time than other mutations (Hwang and Green, 2004; Moorjani et al., 2016b; Gao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "91fdae5e-d562-4b76-b56a-94e6b0bd145b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C69",
+      "claim": "Genome-wide recombination patterns are variable among individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation is perhaps reminiscent of the earlier observation that genome-wide recombination patterns are variable among individuals (Coop et al., 2008), and ultimate discovery of PRDM9 (Baudat et al., 2010);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "8e206842-3bc7-4f55-b157-c40a08cdc1ee",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C70",
+      "claim": "PRDM9 was discovered as a gene affecting recombination patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation is perhaps reminiscent of the earlier observation that genome-wide recombination patterns are variable among individuals (Coop et al., 2008), and ultimate discovery of PRDM9 (Baudat et al., 2010);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the PRDM9 discovery.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ef27bb60-baff-4e6d-a0e7-c762d75c3748",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C71",
+      "claim": "It is unlikely that a single gene is responsible for all mutation spectrum signals observed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "although in this case it is unlikely that a single gene is responsible for all signals seen here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diversity of observed signals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "69204b46-6819-47ee-ba41-18fa2007f49b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C72",
+      "claim": "As large datasets of de novo mutations become available, it should be possible to map mutator loci genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "As large datasets of de novo mutations become available, it should be possible to map mutator loci genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction about future research possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "426cc99b-e4c5-43bf-af0e-d581dbe93647",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C73",
+      "claim": "The mutation spectrum differences among continental groups are composed of small shifts in the abundance of many different mutation types.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we found that the mutation spectrum differences among continental groups are composed of small shifts in the abundance of many different mutation types (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the heatmap analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ff670d9a-3a42-48d8-a829-ef77d28b5420",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C76",
+      "claim": "The mutation spectrum structure replicates on both strands of the transcribed genome as well as the non-transcribed portion of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 1\u2014figure supplement 5, we see that this mutation spectrum structure replicates on both strands of the transcribed genome as well as the non-transcribed portion of the genome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "3365e89c-9246-44ee-99d3-793db78ba854",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C77",
+      "claim": "Most of the mutation spectrum structure replicates across multiple chromatin states.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplements 6, 7 and 8 show that most of this structure replicates across multiple chromatin states and varies little with replication timing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "7995fb6b-8c62-47ee-a593-ad1682d1659e",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C78",
+      "claim": "The mutation spectrum structure varies little with replication timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplements 6, 7 and 8 show that most of this structure replicates across multiple chromatin states and varies little with replication timing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "83a6e91d-97ee-4b44-990d-4c7b69821879",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C79",
+      "claim": "The patterns of mutation spectrum differences are unlikely to be driven by biased gene conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1\u2014figure supplement 4 demonstrates that these patterns are unlikely to be driven by biased gene conversion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption and shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "5ff944aa-620a-4a75-a70b-cf69c5e1bc6f",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C80",
+      "claim": "The greatest discrepancies between 1000 Genomes and SGDP involve transversions at CpG sites, which are among the rarest mutational classes.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest discrepancies between 1000 Genomes and SGDP involve transversions at CpG sites, which are among the rarest mutational classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the two datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "9069a6f1-1742-41dd-a03b-6b752823cf72",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C81",
+      "claim": "Discrepancies between 1000 Genomes and SGDP might result from data processing differences or random sampling variation.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies might result from data processing differences or random sampling variation, but might also reflect differences in the fine-scale ethnic composition of the two panels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as possible explanations for observed discrepancies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "4441d7c5-ea1a-4940-849b-c4a4399ba441",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C82",
+      "claim": "Discrepancies between 1000 Genomes and SGDP might reflect differences in the fine-scale ethnic composition of the two panels.",
+      "claim_type": "EXPLICIT",
+      "source": "These discrepancies might result from data processing differences or random sampling variation, but might also reflect differences in the fine-scale ethnic composition of the two panels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a possible explanation for observed discrepancies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "71e8a883-c879-4cda-b85d-50dbf633043b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C83",
+      "claim": "In the UK10K data with the largest sample size, the TCC\u2192TTC peak occurs at 0.6% allele frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK10K data, which has the largest sample size, the peak occurs at 0.6% allele frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the allele frequency analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "fc2790f9-a301-4f5b-a86e-169cfb43c189",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C84",
+      "claim": "No other mutation types show a pulse-like distribution in UK10K similar to TCC\u2192TTC.",
+      "claim_type": "EXPLICIT",
+      "source": "No other mutation types show such a pulse-like distribution in UK10K, although several types show evidence of monotonic rate change over time (Figure 3\u2014figure supplements 3, 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the allele frequency analysis shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ea284fbe-9591-4928-b093-5ee271f1f877",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C85",
+      "claim": "Several mutation types show evidence of monotonic rate change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "No other mutation types show such a pulse-like distribution in UK10K, although several types show evidence of monotonic rate change over time (Figure 3\u2014figure supplements 3, 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the allele frequency analysis shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ffd7b958-f4b6-4ae6-a96e-c1f687328afe",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C86",
+      "claim": "It is not plausible that base-calling errors could be responsible for the TCC\u2192TTC pulse.",
+      "claim_type": "EXPLICIT",
+      "source": "Although low frequency allele calls often contain a higher proportion of base calling errors than higher frequency allele calls do, it is not plausible that base-calling errors could be responsible for the pulse we have described.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument against a technical artifact explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "bf650ad8-f12f-42e9-92d7-c9bca0b4d4a9",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C87",
+      "claim": "In the UK10K data, a minor allele present at 0.6% frequency corresponds to a derived allele that is present in 23 out of 3854 sampled haplotypes and supported by 80 short reads on average.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UK10K data, a minor allele present at 0.6% frequency corresponds to a derived allele that is present in 23 out of 3854 sampled haplotypes and supported by 80 short reads on average (assuming 7x coverage per individual).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the UK10K data properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "47f49aa2-694e-4066-934d-ba5d26f50376",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C89",
+      "claim": "The *AC\u2192*CC signature appears to be present in only a handful of Chinese individuals, and no Kinh or Dai individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "This signature appears to be present in only a handful of Chinese individuals, and no Kinh or Dai individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fine-scale population analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "1e3a9a92-98fa-41e9-a197-fc94979ffcb6",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C90",
+      "claim": "Europeans and South Asians show relatively little fine-scale structure within their mutational spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA reveals relatively little fine-scale structure within the mutational spectra of Europeans or South Asians (Figure 4\u2014figure supplements 5 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fine-scale PCA analysis shown in the supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "4ed00d2e-3cc3-4e77-a7fd-bc035c8714d9",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C92",
+      "claim": "The sharing of the *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT signature across populations may suggest either parallel increases of a shared mutation modifier, or a shared aspect of environment or life history that affects the mutation spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The sharing of this signature may suggest either parallel increases of a shared mutation modifier, or a shared aspect of environment or life history that affects the mutation spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as possible explanations for the shared signature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "dbc3b4ad-1baa-47cd-bed0-51e8968381fe",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C93",
+      "claim": "The Great Ape Diversity Panel includes 78 whole genome sequences from six great ape species including human.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the mutation spectra of the great apes in more detail, we obtained SNV data from the Great Ape Diversity Panel, which includes 78 whole genome sequences from six great ape species including human (Prado-Martinez et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "b0c0b140-dfe3-4b1b-96b1-fcbc81bb96f5",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C96",
+      "claim": "Evolution of the mutational process is a better explanation than BGC or selection for differences observed between the spectra of ultra-rare singleton variants and older human genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "For these reasons, we think that evolution of the mutational process is a better explanation than BGC or selection for differences that have been observed between the spectra of ultra-rare singleton variants and older human genetic variation (Carlson et al., 2017);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the authors' interpretation supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "10e44458-c6c4-4697-bf8e-7540f512aa14",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C97",
+      "claim": "Shifts in generation time or other life-history traits may affect mutational spectra, particularly for CpG transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also known that shifts in generation time or other life-history traits may affect mutational spectra, particularly for CpG transitions (Martin and Palumbi, 1993; Amster and Sella, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "583cf337-3c67-4aed-8604-116489fe1890",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "claim_id": "C98",
+      "claim": "It is unclear that a plausible shift in generation-time could produce the large effect on CpG variants observed in Europeans.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pattern may be consistent with a shorter average generation time in Europeans (Moorjani et al., 2016b), although it is unclear that a plausible shift in generation-time could produce such a large effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This expresses uncertainty about the generation time explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10d931b1-7d50-4159-b580-cc506dfba15d",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mutational spectra differ substantially among human continental groups and closely related populations. PCA analysis of 96 mutation types successfully separates individuals by continent of origin, with PC1 distinguishing Africans from non-Africans and PC2 separating Europeans from East Asians. These differences are composed of small shifts in the abundance of many different mutation types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4, C25-C27, C61, and C73 collectively demonstrate that mutation spectra vary across human populations. The PCA analysis (C25-C27, C61) provides strong statistical evidence for population-level differences, and the heatmap analysis (C73) shows these differences involve many mutation types. The findings are replicated in independent datasets (C32), strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "f5302960-8540-4c7b-871f-401f97725f68",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TCC\u2192TTC mutations show a dramatic enrichment in Europeans (p<1\u00d710^-300) that peaks at ~0.6% allele frequency in UK10K data, with practically no enrichment among the lowest frequency variants. Similar patterns are observed for C\u2192T mutations in TCT, CCC, and ACC contexts, suggesting these four mutation types comprise a single mutational pulse that is no longer active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C34-C40, and C83 provide converging evidence for a temporal mutation pulse. The allele frequency distribution analysis (C36-C37, C83) demonstrates the pulse pattern, and the similar behavior of related mutation types (C38-C40) supports a common underlying cause. The extremely significant p-value (C34) and replication across datasets strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "23c4beba-b4a0-4f6e-87c7-31cedefb5f04",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The TCC\u2192TTC mutation burst in Europeans occurred from approximately 15,000 to 2,000 years ago, possibly due to the appearance, drift, and ultimate elimination of a genetic modifier of mutation rate. This timing is consistent with the signal being present in prehistoric European samples from 7,000-8,000 years ago.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C7, C43, and C44 present a temporal model for the mutation pulse. While the allele frequency data (C6) and ancient DNA evidence (C43) support the timeframe, the proposed mechanism (C7, C44) remains speculative. The dating relies on a piecewise-constant model with demographic assumptions that may not fully capture the complexity of the process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "b59020f8-22ec-4f06-b8a1-245ecc33584e",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mutation spectrum differences between populations replicate strongly between the 1000 Genomes and SGDP datasets. All 43 mutation types significantly different between Africa and Europe in 1000 Genomes show differences in the same direction in SGDP. The *AC\u2192*CC enrichment in East Asia is the second-largest signal after TCC\u2192TTC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 demonstrate strong replication across independent datasets, which is critical for validating the findings. The consistency across datasets (C32) and the identification of the second-largest signal (C33) provide robust evidence. Minor discrepancies (C80-C82) are acknowledged and attributed to technical or sampling factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "dde5545b-ccbc-400b-a6f0-bf14e26be48e",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT mutations show elevated rates in a subset of Japanese individuals, with enrichment peaking at low frequencies (~1%). This signature appears in only a handful of Chinese individuals and no Kinh or Dai individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C89 identify a population-specific mutation signature with a temporal pattern similar to the European TCC\u2192TTC pulse. The fine-scale population analysis (C45, C89) and allele frequency distribution (C47) provide converging evidence. However, the limited sample size for Japanese individuals (noted in text) introduces some uncertainty about the precise frequency peak.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "16f39751-494a-4b85-84c3-038b34047739",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Luhya population exhibits the most distinctive mutational spectrum among Africans and is enriched for the same *AC\u2192*CC, ACA\u2192AAA, and TAT\u2192TTT signature identified in Japanese individuals. This sharing may suggest either parallel increases of a shared mutation modifier or a shared environmental/life history factor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 identify an unexpected sharing of mutation signatures across geographically distant populations. The PCA analysis (C48) and PC loading comparison (C49) provide evidence for this pattern. The proposed explanations (C92) are speculative but reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "d574a4a9-0222-4543-9aaf-4c40dc1aea47",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Great ape species show dramatic variation in mutational spectra. A major trend is a higher proportion of CpG mutations in species closest to humans, possibly reflecting lengthening generation time along the human lineage, consistent with lower mutation rates in species more closely related to humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 demonstrate mutation spectrum variation across species. The analysis of the Great Ape Diversity Panel (C93) provides the data foundation. The CpG enrichment pattern (C51) is well-documented, and the generation time explanation (C52) is supported by citations to previous work, though presented as a possible rather than definitive explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "2288b933-6dba-4b16-b17f-9cb9c8641869",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Mutation rates can evolve markedly over short evolutionary timescales, and most variation in mutation spectra is likely driven by the appearance and drift of genetic modifiers of mutation rate. Mutational modifiers are likely an important part of the landscape of human genetic variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C59, and C60 represent the main conclusions of the study. These are well-supported by the extensive evidence of population-specific mutation spectrum differences (C2-C4), temporal patterns (C6, C40), and replication across datasets (C32). However, the genetic modifier hypothesis (C59) remains the most parsimonious explanation rather than definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ea87bd16-ea47-44d8-93af-ff63e515d305",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutation spectrum structure replicates across both strands of transcribed and non-transcribed DNA, across multiple chromatin states, and varies little with replication timing. The patterns are unlikely to be driven by biased gene conversion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C79 address potential confounding factors and demonstrate the robustness of the mutation spectrum differences. The analysis across genomic contexts (C76-C78) and the explicit test for biased gene conversion (C79) strengthen the interpretation that the observed differences reflect genuine mutation rate variation rather than artifacts or selection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "f3cf6bac-2a24-41fa-82fa-514457ac5cfb",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No other mutation types show a pulse-like distribution in UK10K similar to TCC\u2192TTC, although several mutation types show evidence of monotonic rate change over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 provide important context by showing that the TCC\u2192TTC pulse is unique in its temporal pattern, while other mutation types show different evolutionary dynamics. This is supported by the comprehensive allele frequency analysis shown in supplementary figures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "ee9e595e-ff01-4878-ba87-5362a69abeec",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Base-calling errors are not plausible as an explanation for the TCC\u2192TTC pulse. In UK10K, a minor allele at 0.6% frequency corresponds to 23 out of 3,854 haplotypes supported by ~80 reads on average, and the pulse pattern is consistent across datasets of different sizes when projected to the same sample size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 address a critical alternative explanation. The calculation of read support (C87) and the consistency across datasets provide strong evidence against technical artifacts. This is an important validation of the biological interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "9cfdc39d-3d6a-4830-8fb1-5f46716b1216",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Europeans and South Asians show relatively little fine-scale structure within their mutational spectra compared to other continental groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by the fine-scale PCA analysis shown in supplementary figures. This finding provides context for understanding the distribution of mutation spectrum variation across populations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "73d1247a-9a9c-4a20-b611-6e1f383bc3e0",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Biased gene conversion (BGC) is unlikely to explain the observed mutation spectrum differences. BGC favors C/G over A/T alleles and is more efficient in large populations, but no clear trend is observed with population size or distance from Africa. Evolution of the mutational process is a better explanation than BGC or selection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64, C79, and C96 systematically address BGC as an alternative explanation. The lack of expected patterns (C79, C96) and the explicit analysis (Figure 1\u2014supplement 4) provide strong evidence against BGC as the primary driver of the observed differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Europeans have a lower fraction of CpG variants compared to other populations, which may be consistent with a shorter average generation time. However, it is unclear whether a plausible shift in generation time could produce such a large effect. CpG transitions result from spontaneous methyl-cytosine deamination and are less affected by generation time than other mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56, C67-C68, C97-C98 address the CpG pattern in Europeans. While the observation is supported by data (C56), the generation time explanation is presented with uncertainty (C98). The mechanistic understanding of CpG mutations (C67-C68) is well-established, but the quantitative relationship to generation time remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "395430fd-4d98-43c1-9e52-247f6e32dd4b",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "It may be possible to map mutational modifiers genome-wide as large datasets of de novo mutations become available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9 and C72 represent speculative future directions. While the existence of mutation spectrum variation suggests the possibility of mapping modifiers, this remains to be demonstrated. The claims are appropriately presented as possibilities rather than established facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge and theoretical framework: DNA replication involves hundreds of genes, most fitness-affecting mutations are deleterious, human mutation rate is ~1 per 100 MB per generation (~60 genome-wide), defects in specific genes cause context-specific mutation rate increases, natural selection has limited ability to fine-tune individual repair genes, and mutation rates vary across mammalian evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C13, C15-C20, C62, C69-C70 establish the background knowledge and theoretical framework. These are well-supported by citations to previous work and represent established knowledge in the field. They provide essential context for interpreting the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    },
+    {
+      "id": "4dcb1300-2fa9-42d9-9131-bf83376277b4",
+      "content_id": "804121b3-0508-41e5-807b-6c645a7d6c69",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "It is unlikely that a single gene is responsible for all mutation spectrum signals observed in this study, given the diversity of effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 is a reasonable inference based on the diversity of mutation spectrum patterns observed across populations and mutation types. This is appropriately presented as an inference rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:55:08.122412Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "acfb266f-592a-4230-8112-598e776cb0f8",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "0e383012-bed0-4f42-b48a-d2631ba35675",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "69f93e2c-352c-4da3-95b8-120ffbbd0489",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "e2c35853-f811-4fce-9c7f-5620d5431b8f",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "dd3f8c03-ed9f-4039-882b-ceab62dea447",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "9c144bcd-80a5-4bfd-94ed-c75c034caf69",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "3dd79e72-2a15-4379-86fc-022c54cd08f3",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "426cc99b-e4c5-43bf-af0e-d581dbe93647",
+      "result_id": "10d931b1-7d50-4159-b580-cc506dfba15d"
+    },
+    {
+      "claim_id": "bd5efae9-695d-4769-af22-8cce93fff99e",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "6dcbd107-337f-42e8-8194-6edc445fbb1f",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "53dfba15-0ca3-4a97-ae08-bd613ccd0213",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "fe587b55-6128-4d85-a98b-a29fc79600bf",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "6470c0a1-e2ed-44fb-abe8-c91694aca92f",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "b224e619-c58b-45d8-ac57-f2ec1693ec4a",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "5110163e-5295-4e90-b35e-353a1eef3ed3",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "bd079d3b-4b49-4a30-a7fb-d1b54c90a2bc",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "ab1898e3-adba-468e-964c-7527fb9fe152",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "71e8a883-c879-4cda-b85d-50dbf633043b",
+      "result_id": "f5302960-8540-4c7b-871f-401f97725f68"
+    },
+    {
+      "claim_id": "6dcbd107-337f-42e8-8194-6edc445fbb1f",
+      "result_id": "23c4beba-b4a0-4f6e-87c7-31cedefb5f04"
+    },
+    {
+      "claim_id": "ae8eba65-c24c-4e84-931d-71e17178ce13",
+      "result_id": "23c4beba-b4a0-4f6e-87c7-31cedefb5f04"
+    },
+    {
+      "claim_id": "1effaa0c-6ed3-4755-959e-16623ab12400",
+      "result_id": "23c4beba-b4a0-4f6e-87c7-31cedefb5f04"
+    },
+    {
+      "claim_id": "bbcaf422-988b-4fc0-bdd6-f424527e9c3c",
+      "result_id": "23c4beba-b4a0-4f6e-87c7-31cedefb5f04"
+    },
+    {
+      "claim_id": "0ff97f4e-94c3-4cf5-a7e1-a7af56b02f8c",
+      "result_id": "b59020f8-22ec-4f06-b8a1-245ecc33584e"
+    },
+    {
+      "claim_id": "32df15c2-4dd5-4195-ac21-ade293894ab9",
+      "result_id": "b59020f8-22ec-4f06-b8a1-245ecc33584e"
+    },
+    {
+      "claim_id": "5ff944aa-620a-4a75-a70b-cf69c5e1bc6f",
+      "result_id": "b59020f8-22ec-4f06-b8a1-245ecc33584e"
+    },
+    {
+      "claim_id": "9069a6f1-1742-41dd-a03b-6b752823cf72",
+      "result_id": "b59020f8-22ec-4f06-b8a1-245ecc33584e"
+    },
+    {
+      "claim_id": "4441d7c5-ea1a-4940-849b-c4a4399ba441",
+      "result_id": "b59020f8-22ec-4f06-b8a1-245ecc33584e"
+    },
+    {
+      "claim_id": "3446b583-b83e-47de-88f9-eed169d79a65",
+      "result_id": "dde5545b-ccbc-400b-a6f0-bf14e26be48e"
+    },
+    {
+      "claim_id": "95def732-1fc4-4f98-9ea5-4347cd7f63b4",
+      "result_id": "dde5545b-ccbc-400b-a6f0-bf14e26be48e"
+    },
+    {
+      "claim_id": "a3c14adb-9240-41bd-bd2b-025147d48400",
+      "result_id": "dde5545b-ccbc-400b-a6f0-bf14e26be48e"
+    },
+    {
+      "claim_id": "47f49aa2-694e-4066-934d-ba5d26f50376",
+      "result_id": "dde5545b-ccbc-400b-a6f0-bf14e26be48e"
+    },
+    {
+      "claim_id": "7321d436-0730-4bff-9f3c-29634da34a54",
+      "result_id": "16f39751-494a-4b85-84c3-038b34047739"
+    },
+    {
+      "claim_id": "6db27592-3c2d-4236-8bc3-96a7a44e60b6",
+      "result_id": "16f39751-494a-4b85-84c3-038b34047739"
+    },
+    {
+      "claim_id": "4ed00d2e-3cc3-4e77-a7fd-bc035c8714d9",
+      "result_id": "16f39751-494a-4b85-84c3-038b34047739"
+    },
+    {
+      "claim_id": "9d95e78e-e202-43cf-8c0a-a3d78499689c",
+      "result_id": "d574a4a9-0222-4543-9aaf-4c40dc1aea47"
+    },
+    {
+      "claim_id": "65223a07-38ec-4378-a012-4596407907eb",
+      "result_id": "d574a4a9-0222-4543-9aaf-4c40dc1aea47"
+    },
+    {
+      "claim_id": "9c9cd858-e416-47b6-a0c9-17332fb2a516",
+      "result_id": "d574a4a9-0222-4543-9aaf-4c40dc1aea47"
+    },
+    {
+      "claim_id": "dbc3b4ad-1baa-47cd-bed0-51e8968381fe",
+      "result_id": "d574a4a9-0222-4543-9aaf-4c40dc1aea47"
+    },
+    {
+      "claim_id": "c62efe4f-6781-48c2-90a6-667a6d0d51a4",
+      "result_id": "2288b933-6dba-4b16-b17f-9cb9c8641869"
+    },
+    {
+      "claim_id": "780a1186-52ed-4d00-ae9e-28279d87a8c8",
+      "result_id": "2288b933-6dba-4b16-b17f-9cb9c8641869"
+    },
+    {
+      "claim_id": "2a737a01-eddb-40ee-825c-0e2ab0728c8b",
+      "result_id": "2288b933-6dba-4b16-b17f-9cb9c8641869"
+    },
+    {
+      "claim_id": "ff670d9a-3a42-48d8-a829-ef77d28b5420",
+      "result_id": "ea87bd16-ea47-44d8-93af-ff63e515d305"
+    },
+    {
+      "claim_id": "3365e89c-9246-44ee-99d3-793db78ba854",
+      "result_id": "ea87bd16-ea47-44d8-93af-ff63e515d305"
+    },
+    {
+      "claim_id": "7995fb6b-8c62-47ee-a593-ad1682d1659e",
+      "result_id": "ea87bd16-ea47-44d8-93af-ff63e515d305"
+    },
+    {
+      "claim_id": "83a6e91d-97ee-4b44-990d-4c7b69821879",
+      "result_id": "ea87bd16-ea47-44d8-93af-ff63e515d305"
+    },
+    {
+      "claim_id": "fc2790f9-a301-4f5b-a86e-169cfb43c189",
+      "result_id": "f3cf6bac-2a24-41fa-82fa-514457ac5cfb"
+    },
+    {
+      "claim_id": "ea284fbe-9591-4928-b093-5ee271f1f877",
+      "result_id": "f3cf6bac-2a24-41fa-82fa-514457ac5cfb"
+    },
+    {
+      "claim_id": "ffd7b958-f4b6-4ae6-a96e-c1f687328afe",
+      "result_id": "ee9e595e-ff01-4878-ba87-5362a69abeec"
+    },
+    {
+      "claim_id": "bf650ad8-f12f-42e9-92d7-c9bca0b4d4a9",
+      "result_id": "ee9e595e-ff01-4878-ba87-5362a69abeec"
+    },
+    {
+      "claim_id": "1e3a9a92-98fa-41e9-a197-fc94979ffcb6",
+      "result_id": "9cfdc39d-3d6a-4830-8fb1-5f46716b1216"
+    },
+    {
+      "claim_id": "0156c36a-900c-493c-b132-e8302a58f87e",
+      "result_id": "73d1247a-9a9c-4a20-b611-6e1f383bc3e0"
+    },
+    {
+      "claim_id": "18efac73-8df2-49c5-b1de-ab4887df21b3",
+      "result_id": "73d1247a-9a9c-4a20-b611-6e1f383bc3e0"
+    },
+    {
+      "claim_id": "83a6e91d-97ee-4b44-990d-4c7b69821879",
+      "result_id": "73d1247a-9a9c-4a20-b611-6e1f383bc3e0"
+    },
+    {
+      "claim_id": "b0c0b140-dfe3-4b1b-96b1-fcbc81bb96f5",
+      "result_id": "73d1247a-9a9c-4a20-b611-6e1f383bc3e0"
+    },
+    {
+      "claim_id": "e8c10ec2-4a98-48cc-9103-f386ec9563ef",
+      "result_id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8"
+    },
+    {
+      "claim_id": "f4f499fd-031d-4f92-8fb3-f4f7722a97eb",
+      "result_id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8"
+    },
+    {
+      "claim_id": "4459f721-1f9a-4956-b0d0-0ccc411145f8",
+      "result_id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8"
+    },
+    {
+      "claim_id": "10e44458-c6c4-4697-bf8e-7540f512aa14",
+      "result_id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8"
+    },
+    {
+      "claim_id": "583cf337-3c67-4aed-8604-116489fe1890",
+      "result_id": "05a01843-5dd0-40ab-bbb1-98b421ba43f8"
+    },
+    {
+      "claim_id": "16c6c86d-df40-494a-8377-a9d976d2162b",
+      "result_id": "395430fd-4d98-43c1-9e52-247f6e32dd4b"
+    },
+    {
+      "claim_id": "69204b46-6819-47ee-ba41-18fa2007f49b",
+      "result_id": "395430fd-4d98-43c1-9e52-247f6e32dd4b"
+    },
+    {
+      "claim_id": "8de22502-f669-4fb4-95e4-404afd026822",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "7679cc8f-db0f-4e5a-9847-099578236ef4",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "864e3e81-3e46-4d9d-bc03-ec47e605466a",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "abfcf9f3-6b0c-4731-8fcc-7d097beae5df",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "300c26ac-ab54-4c52-8cc9-012d8ac6dd1d",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "c0886aab-62c1-458f-bb4d-49b576e829e9",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "0eeb32e5-a140-4770-8ca7-170f6e513554",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "0be40656-6a92-4879-b39e-49d41cb0c24a",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "f4a96b02-b903-4c0f-b1f0-0c652d8d169d",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "6a8ef82c-77f9-47ce-a4db-b5f565d449cb",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "803714b1-227f-48e0-9c93-617ce6515ccc",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "ef1ec9b9-98db-4585-bc79-7495e3c99dc8",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "91fdae5e-d562-4b76-b56a-94e6b0bd145b",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "8e206842-3bc7-4f55-b157-c40a08cdc1ee",
+      "result_id": "963b7d8b-017a-4c72-b22c-05cb1080f9a5"
+    },
+    {
+      "claim_id": "ef27bb60-baff-4e6d-a0e7-c762d75c3748",
+      "result_id": "4dcb1300-2fa9-42d9-9131-bf83376277b4"
+    }
+  ],
+  "comparisons": []
+}

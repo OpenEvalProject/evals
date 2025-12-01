@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "DKO mice with enhanced pf-Pk LTD exhibit impaired VOR-increase learning at 1 Hz training frequency, but normal learning at 0.6 Hz and normal VOR-decrease learning at both frequencies. Baseline VOR and oculomotor behaviors are normal, indicating a specific learning mechanism deficit rather than sensory or motor impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from prior work (C1), experimental data at multiple frequencies (C2-C4), and baseline controls (C5). The frequency-dependent impairment and normal baseline performance strongly support a specific learning deficit. Statistical significance is reported for the 1 Hz impairment (C2), and the pattern matches previous LTD-impaired mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The learning impairment in DKO mice is attributable to loss of H2-Db in Purkinje cells and can be rescued by virally-mediated H2-Db expression specifically in adult floccular Purkinje cells. This rescue is specific to VOR-increase learning and does not affect VOR-decrease learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 demonstrate cell-type specificity (C7), adult rescue capability (C8), and task specificity (C9). The viral rescue experiment provides strong causal evidence that H2-Db in Purkinje cells is necessary and sufficient for normal VOR-increase learning. The specificity to VOR-increase but not VOR-decrease learning aligns with the known role of pf-Pk LTD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C17"
+    ],
+    "result": "The saturation hypothesis proposes that the lower LTD threshold in DKO mice allows basal activity to aberrantly recruit LTD, depleting LTD-eligible synapses before training and rendering the circuit unable to support new LTD-dependent learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C11 and C17 present a mechanistic hypothesis to explain the impaired learning phenotype. While this is a plausible explanation consistent with the data, it remains speculative (as indicated by evidence_type SPECULATION and INFERENCE). The hypothesis requires direct experimental validation of synaptic saturation state, which is not provided in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Optogenetic climbing fiber stimulation in WT mice for 30 minutes induces non-specific LTD that blocks subsequent VOR-increase learning but not VOR-decrease learning, without affecting baseline VOR amplitude. This recapitulates the DKO phenotype and supports the saturation hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 provide experimental evidence that artificial LTD induction can reproduce the DKO learning phenotype in WT mice. The specificity to VOR-increase learning (C12, C18) but not VOR-decrease learning (C13, C19), combined with normal baseline VOR (C14, C15), strongly supports the saturation hypothesis. Statistical significance is reported (C12), and the phenocopy of DKO mice (C20) provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "VOR-decrease pre-training reverses the learning impairment in DKO mice, enabling enhanced learning relative to WT mice. This effect is specific to associative VOR-decrease training and does not occur with vestibular-only pre-training. Pre-training has opposite effects in WT (impairment) versus DKO (enhancement) mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 demonstrate a remarkable reversal of the learning phenotype through behavioral pre-training. The experimental data (C23-C25) show statistically significant effects, and the specificity to associative training (C26) rules out non-specific habituation effects. The opposite effects in WT versus DKO mice (C24-C25) provide strong evidence for a history-dependent mechanism. The mechanistic basis (C21-C22) is supported by prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The enhanced learning phenotype in DKO mice after pre-training shares key features with the impaired learning phenotype: both are frequency-dependent (1.0 Hz but not 0.6 Hz), both are rescued by H2-Db expression in Purkinje cells, suggesting a common mechanism involving the same synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 establish important commonalities between the enhanced and impaired phenotypes. The frequency dependence (C28) and rescue by H2-Db (C29) are supported by experimental data. The inference of a common mechanism (C30) is reasonable given these shared features, though the exact mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C44",
+      "C45"
+    ],
+    "result": "Classical synaptic plasticity models (binary and linear multistate) fail to reproduce the observation of impaired learning with enhanced plasticity. These models incorrectly predict enhanced learning across all parameter values, independent of activity history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C44-C45 provide computational modeling evidence that classical models are insufficient. The mathematical analysis showing that enhanced plasticity leads to enhanced learning across the entire parameter space (C32, C45) is a strong theoretical result. This negative result is important for constraining the properties required of successful models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C46",
+      "C47"
+    ],
+    "result": "Models with history-dependent plasticity (serial model, cascade model, multistate model with metaplasticity) can account for both impaired and enhanced learning phenotypes. These models require that repeated LTD changes synapses into less labile states, allowing saturation effects to dominate over enhanced intrinsic plasticity rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C37-C38, and C46-C47 demonstrate that models incorporating metaplasticity can reproduce the key experimental observations. The serial model (C33-C35) and other history-dependent models (C37) successfully predict the divergent learning outcomes. The theoretical requirement for history-dependent plasticity (C46) is well-justified by the modeling results and provides a testable prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "The serial model predicts that with extended VOR-increase training, the learning advantage of pre-trained DKO mice over WT mice should disappear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 is a model prediction that has not been experimentally tested. While it follows logically from the model structure, it requires empirical validation. The prediction is testable and could provide important support for or against the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "History-dependent plasticity has been documented in hippocampal synapses, and the models predict that similar history-dependence should exist in cerebellar pf-Pk synapses, which can be tested in future experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C40 cites prior evidence from hippocampus, but C41 acknowledges this is a prediction for cerebellum that requires future testing. While the hippocampal evidence provides some support, the key prediction for cerebellar synapses remains untested. This is an important prediction but not yet validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C63",
+      "C64"
+    ],
+    "result": "The same animals with enhanced plasticity can exhibit either enhanced or impaired learning depending on recent experience history. Learning capacity is determined by dynamic interplay between plasticity threshold and recent activity, demonstrating that synaptic plasticity and learning are not isomorphic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C63-C64 synthesize the main findings. The experimental evidence clearly demonstrates history-dependent learning outcomes (C42), and the conclusion about non-isomorphism between plasticity and learning (C64) is well-supported by the data showing opposite learning outcomes from the same plasticity manipulation under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The saturation hypothesis provides an alternative explanation for impaired learning with enhanced plasticity: under-recruitment of plasticity at appropriate synapses due to saturation, rather than over-recruitment at inappropriate synapses. In DKO mice, saturation may occur from basal activity alone, without training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C53-C55 present a novel mechanistic framework. The similarity of deficits in enhanced and impaired LTD mice (C48) supports the saturation explanation. The novelty of this hypothesis (C53) and its ability to explain the DKO phenotype (C54-C55) are well-argued. The experimental evidence from climbing fiber stimulation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Learning capacity can be rapidly modulated (within tens of minutes) by manipulating circuit activity. Climbing fiber stimulation impairs learning in WT mice, with recovery occurring over tens of minutes. Behavioral pre-training reverses saturation in DKO mice within 30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 demonstrate the temporal dynamics of saturation and recovery. The experimental data show that 30 minutes of manipulation is sufficient to alter learning capacity (C57, C59), and recovery occurs on a similar timescale (C58). This temporal specificity strengthens the saturation hypothesis and has important implications for understanding plasticity dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The dependence on recent activity history may explain differences between in vivo and in vitro results in DKO mice, and may account for variable learning outcomes in different cerebellar regions with different spontaneous activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C62 propose explanations for apparent discrepancies in the literature. While these are plausible hypotheses based on the current findings, they remain speculative (as indicated by evidence_type). The in vivo/in vitro difference (C61) and regional differences (C62) require direct experimental testing to confirm these explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The findings suggest that synaptic plasticity enhancers may be most effective when combined with strategies to control basal neural activity. Suppression of activity before training may prime enhanced learning, and behavioral therapy could provide an alternative to drugs for patients with altered plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 propose clinical applications based on the findings. While these are reasonable extrapolations from the mouse data, they are explicitly speculative (evidence_type SPECULATION). Translation to human patients requires substantial additional validation. These represent important potential applications but are not yet supported by clinical evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The saturation mechanism may be broadly relevant across brain regions. Previous work has shown that enhanced plasticity can impair learning in multiple regions, and saturation has been observed after behavioral training or artificial stimulation. Neural circuits may have evolved to optimize plasticity thresholds to balance preventing saturation with enabling learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C51-C52, and C68-C70 discuss the broader implications and generalizability of the findings. While prior work (C49, C51-C52, C68) supports the relevance of saturation in other contexts, the generalization to all brain regions (C69) and the evolutionary speculation (C70) go beyond the current data. These are important considerations but require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background and methodological context: pf-Pk LTD contributes selectively to high-frequency VOR-increase learning but not to VOR-decrease learning or low-frequency VOR-increase learning. The VOR is an eye movement reflex that stabilizes images during head motion. MHCI molecules are expressed in cerebellar Purkinje cells, and climbing fiber stimulation induces LTD at active pf-Pk synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C83 provide essential background information and methodological context. These claims are well-supported by extensive prior literature (multiple citations) and established knowledge about the VOR system and cerebellar physiology. This contextual information is necessary for interpreting the main findings but represents established knowledge rather than novel discoveries.",
+    "result_type": "MINOR"
+  }
+]

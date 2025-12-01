@@ -1,0 +1,2515 @@
+{
+  "submission": {
+    "id": "dbd7765d-4e8b-4a0b-91c9-306da9cd1127",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:51:22.098894Z",
+    "updated_at": "2025-11-30T21:51:22.098894Z"
+  },
+  "content": [
+    {
+      "id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "submission_id": "dbd7765d-4e8b-4a0b-91c9-306da9cd1127",
+      "content_type": "manuscript",
+      "content_text": "# Physical basis of large microtubule aster growth\n\n## Authors\n\n- Keisuke Ishihara<sup>1</sup> ([ORCID: 0000-0002-8481-8680](https://orcid.org/0000-0002-8481-8680)) \u2020\n- Kirill S Korolev<sup>3</sup> \u2020\n- Timothy J Mitchison<sup>1</sup> ([ORCID: 0000-0001-7781-1897](https://orcid.org/0000-0001-7781-1897))\n\n### Affiliations\n\n1. Department of Systems Biology Harvard Medical School Boston United States\n2. Cell Division Group Marine Biological Laboratory Woods Hole United Sates\n3. Department of Physics and Graduate Program in Bioinformatics Boston University Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrotubule asters - radial arrays of microtubules organized by centrosomes - play a fundamental role in the spatial coordination of animal cells. The standard model of aster growth assumes a fixed number of microtubules originating from the centrosomes. However, aster morphology in this model does not scale with cell size, and we recently found evidence for non-centrosomal microtubule nucleation. Here, we combine autocatalytic nucleation and polymerization dynamics to develop a biophysical model of aster growth. Our model predicts that asters expand as traveling waves and recapitulates all major aspects of aster growth. With increasing nucleation rate, the model predicts an explosive transition from stationary to growing asters with a discontinuous jump of the aster velocity to a nonzero value. Experiments in frog egg extract confirm the main theoretical predictions. Our results suggest that asters observed in large fish and amphibian eggs are a meshwork of short, unstable microtubules maintained by autocatalytic nucleation and provide a paradigm for the assembly of robust and evolvable polymer networks.\n\n## Introduction\n\nAnimal cells use asters, radial arrays of microtubules, to spatially organize their cytoplasm (Wilson, 1896). Specifically, astral microtubules transport organelles (Grigoriev et al., 2008; Wang et al., 2013; Waterman-Storer and Salmon, 1998), support cell motility by mediating mechanical and biochemical signals (Etienne-Manneville, 2013), and are required for proper positioning of the nucleus, the mitotic spindle, and the cleavage furrow (Field et al., 2015; Grill and Hyman, 2005; Neum\u00fcller and Knoblich, 2009; Tanimoto et al., 2016; Wilson, 1896). Within asters, individual microtubules undergo dynamic instability (Mitchison and Kirschner, 1984): They either grow (polymerize) or shrink (depolymerize) at their plus ends and stochastically transition between these two states. The\u00a0collective behavior of microtubules is less well understood, and it is not clear how dynamic instability of individual microtubules controls aster growth and function.\n\nThe standard model of aster growth posits that centrosomes nucleate and anchor all microtubules at their minus ends while the plus ends polymerize outward via dynamic instability (Brinkley, 1985). As a result, aster growth is completely determined by the dynamics of individual microtubules averaged over the growing and shrinking phases. In particular, the aster either expands at a velocity given by the net growth rate of microtubules or remains stationary if microtubules are unstable and tend to depolymerize (Belmont et al., 1990; Dogterom and Leibler, 1993; Verde et al., 1992).\n\nThe standard model of aster growth is being increasingly challenged by reports of microtubules with their minus ends located far away from centrosomes (Akhmanova and Steinmetz, 2015; Keating and Borisy, 1999). Some of these microtubules may arise simply by detachment from centrosomes (Keating et al., 1997; Waterman-Storer et al., 2000) or severing of pre-existing microtubules (Roll-Mecak and McNally, 2010). However, new microtubules could also arise due to a nucleation process independent of centrosomes (Clausen and Ribbeck, 2007; Efimov et al., 2007; Petry et al., 2013) and contribute to both aster growth and its mechanical properties. Indeed, we recently observed that centrosomal nucleation is insufficient to explain the large number of growing plus ends found in asters (Ishihara et al., 2014). Moreover, the standard model demands a decrease in microtubule density at aster periphery, which is inconsistent with aster morphology in frog and fish embryos (W\u00fchr et al., 2008, 2010). To resolve these inconsistencies, we proposed an autocatalytic nucleation model, where microtubules or microtubule plus ends stimulate the nucleation of new microtubules at the aster periphery (Ishihara et al., 2014a, 2014b; W\u00fchr et al., 2009). This mechanism generates new microtubules necessary to maintain a constant density as the aster expands. We also hypothesized that autocatalytic nucleation could effectively overcome extinction of individual microtubules, and allow rapid growth of large asters made of short, unstable microtubules. However, we did not provide a quantitative model that can be compared to the experiments or even show that the proposed mechanism is feasible.\n\nHere, we develop a quantitative biophysical model of aster growth with autocatalytic nucleation. It predicts that asters can indeed expand even when individual microtubules turn over and disappear by depolymerization. In this regime, aster expansion is driven by the increase in the total number of microtubules, and the resulting aster is a network of short interconnected microtubules. The transition from stationary to growing asters depends on the balance between polymerization dynamics and nucleation. At this transition, our theory predicts a minimum rate at which asters grow, which we define as the gap velocity. This gap velocity arises due to the dynamic instability of microtubule polymerization and excludes a wide class of alternative models. More importantly, this mode of aster growth allows the cell to assemble asters with varying polymer densities at consistently large speeds. Using a cell-free reconstitution approach (Field et al., 2014; Nguyen et al., 2014), we perform biochemical perturbations and observe the slowing down and eventual arrest of aster growth with a substantial gap velocity at the transition. By combining theory and experiments, we provide a quantitative framework for how the cell cycle may regulate the balance between polymerization dynamics and nucleation to control aster growth. We propose that the growth of large interphase asters is an emergent property of short microtubules that constantly turnover and self-amplify.\n\n## Results\n\n### Conceptual model for aster growth based on polymerization dynamics and autocatalytic nucleation\n\nAsters are large structures comprised of thousands of microtubules. How do the microscopic dynamics of individual microtubules determine the collective properties of asters such as their morphology and growth rate? Can asters sustain growth when individual microtubules are unstable? To address these questions, we develop a theoretical framework that integrates polymerization dynamics and autocatalytic nucleation (Figure 1A). Our main goal is to determine the distribution of microtubules within asters and the velocity at which asters grow:(1)V=dRadiusdt.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig1-v2.jpg)\n\n**Figure 1.:** (A) We propose that asters grow via two microscopic processes: polymerization and nucleation. Individual microtubules follow the standard dynamic instability with a growing state with polymerization rate $v_{g}$ and a shrinking state with depolymerization rate $v_{s}$. Transitions between the states occur at rates $f_{c\u2062a\u2062t}$ and $f_{r\u2062e\u2062s}$, which model catastrophe and rescue events, respectively. New microtubules are added at a rate $r$ via a nucleation at pre-existing plus ends in the growing state. (B) Individual vs. collective growth of asters. In the standard model of \u2018individual growth\u2019, asters increase their radius at rate $V=\\frac{d\u2062R\u2062a\u2062d\u2062i\u2062u\u2062s}{d\u2062t}$ only via a net polymerization from the centrosome (yellow). Thus, this model predicts that the rate of aster growth equals the mean polymerization rate $V=J$, the number of microtubules is constant, and their density decreases away from the centrosomes. In the collective growth model, the microtubule density is constant and the number of microtubules increases. Autocatalytic nucleation makes asters grow faster than the net polymerization rate $J$ and can sustain growth even when individual microtubules are unstable $J<0$.\n\nBeyond being the main experimental readout, the aster velocity is crucial for cell physiology because it allows large egg cells to divide its cytoplasm rapidly.\n\nPolymerization dynamics of plus ends is an individual property of microtubules. To describe plus end dynamics, we adopt the two-state model of microtubule dynamic instability (Figure 1A, left). In this model, a single microtubule is in one of the two states: (i) the growing state, where plus ends polymerize at rate vg and (ii) the shrinking state, where plus ends depolymerize at rate vs. A growing microtubule may transition to a shrinking state (catastrophe event) with rate fc\u2062a\u2062t. Similarly, the shrinking to growing transition (rescue event) occurs at rate fr\u2062e\u2062s. For large asters growing in Xenopus egg cytoplasm, we provide estimates of these parameters in Table 1.\n\n**Table 1.**\n Model parameters used to describe large aster growth reconstituted in interphase Xenopus egg extract.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Quantity</th>\n      <th>Symbol</th>\n      <th>Value</th>\n      <th>Comment</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Polymerization rate</td>\n      <td>vg</td>\n      <td>30 \u03bcm/min</td>\n      <td>Measured from growing plus ends and EB1 comets</td>\n    </tr>\n    <tr>\n      <td>Depolymerization rate</td>\n      <td>vs</td>\n      <td>42 \u03bcm/min</td>\n      <td>Measured from shrinking plus ends (Ishihara et al., 2014a)</td>\n    </tr>\n    <tr>\n      <td>Catastrophe rate</td>\n      <td>fc\u2062a\u2062t</td>\n      <td>3.3 min\u22121</td>\n      <td>Measured from EB1 comet lifetimes (see Materials\u00a0and\u00a0methods)</td>\n    </tr>\n    <tr>\n      <td>Rescue rate</td>\n      <td>fr\u2062e\u2062s</td>\n      <td>2.0\u00b10.3 min\u22121</td>\n      <td>Estimated from Equations (4) and (6)</td>\n    </tr>\n    <tr>\n      <td>Autocatalytic nucleation rate</td>\n      <td>r</td>\n      <td>2.1\u00b10.2 min\u22121</td>\n      <td>Estimated from Equations (4) and (6)</td>\n    </tr>\n    <tr>\n      <td>Carrying capacity of growing ends</td>\n      <td>K</td>\n      <td>0.4 \u03bcm\u22122</td>\n      <td>Estimated from comparing Cgb\u2062u\u2062l\u2062k to predicted (see SI)</td>\n    </tr>\n    <tr>\n      <td>Mean microtubule length</td>\n      <td>\u27e8l\u27e9</td>\n      <td>16 \u00b1 2 \u03bcm</td>\n      <td>Estimated from from dynamics parameters (see SI)</td>\n    </tr>\n    <tr>\n      <td>Aster velocity</td>\n      <td>V</td>\n      <td>22.3\u00b12.6 \u03bcm/min</td>\n      <td>Measured from rate of aster radius increase</td>\n    </tr>\n    <tr>\n      <td>Gap velocity</td>\n      <td>Vg\u2062a\u2062p</td>\n      <td>12.8\u00b11.7 \u03bcm/min</td>\n      <td>Measured from aster growth at 320 nM MCAK-Q710</td>\n    </tr>\n    <tr>\n      <td>Bulk growing plus end density</td>\n      <td>Cgb\u2062u\u2062l\u2062k</td>\n      <td>0.053\u00b10.030 \u03bcm\u22122</td>\n      <td>Measured from EB1 comet density (Ishihara et al., 2014a)</td>\n    </tr>\n  </tbody>\n</table>\n\nPlus end dynamics can be conveniently summarized by the time-weighted average of the polymerization and depolymerization rates (Dogterom and Leibler, 1993; Verde et al., 1992):\n\n$$\nJ=\\frac{v_{g}\u2062f_{r\u2062e\u2062s}-v_{s}\u2062f_{c\u2062a\u2062t}}{f_{r\u2062e\u2062s}+f_{c\u2062a\u2062t}}.\n$$\n\nThis parameter describes the tendency of microtubules to grow or shrink. When $J<0$, microtubules are said to be in the bounded regime because their length inevitably shrinks to zero, i.e. microtubule disappears. When $J>0$, microtubules are said to be in the unbounded regime, because they have a nonzero probability to become infinitely long. Parameter $J$ also determines the mean elongation rate of a very long microtubule that persists over many cycles of catastrophe and rescue. The dynamics of short microtubules, however, depends on their length and initial state (growing vs. shrinking) and should be analyzed carefully.\n\nThe standard model posits that asters are produced by the expansion of individual microtubules, so the transition from small mitotic asters to large interphase asters is driven by a change in the sign of $J$\u00a0(Dogterom and Leibler, 1993; Verde et al., 1992) (Figure 1B left, \u2018individual growth\u2019). With bounded dynamics $J<0$, the standard model predicts that every microtubule shrinks to zero length and disappears. This microtubule loss is balanced by nucleation of new microtubules at the centrosomes, the only place where nucleation is allowed in the standard model. As a result, asters remain in the stationary state and are composed of a few short microtubules, and the aster velocity is thus $V=0$. With unbounded dynamics $J>0$, the standard model predicts an aster that has a constant number of microtubules and increases its radius at a rate equal to the elongation rate of microtubules (i.e. $V=J$).\n\nBelow, we add autocatalytic microtubule nucleation (Figure 1A, right) to the standard model and propose the regime of \u2018collective growth\u2019 (Figure 1B, right). In this regime, asters grow ($V>0$) although individual microtubules are bounded ($J<0$) and are, therefore, destined to shrink and disappear. The growth occurs because more microtubules are nucleated than lost, and new microtubules are typically nucleated further along the expansion direction. Indeed, when a new microtubule is nucleated, it is in a growing state and starts expanding outward before its inevitable collapse. During its lifetime, this microtubule can nucleate a few more microtubules all of which are located further along the expansion direction. As we show below, this self-amplifying propagation of microtubules is possible only for sufficiently high nucleation rates necessary to overcome microtubule loss and sustain collective growth.\n\nSpecifically, we assume that new microtubules nucleate at locations away from centrosomes at rate $Q$. This rate could depend on the local density of growing plus ends if they serve as nucleation sites or the local polymer density if nucleation occurs throughout a microtubule. The new microtubules have zero length and tend to grow radially due to mechanical interactions with the existing microtubule network. These non-centrosomal microtubules disappear when they shrink back to their minus ends. Our assumptions are broadly consistent with known microtubule physiology (Clausen and Ribbeck, 2007; Petry et al., 2013), and we found strong evidence for nucleation away from centrosomes in egg extract by microtubule counting in growing asters (Ishihara et al., 2014a). Below, we consider plus-end-stimulated nucleation and the analysis for the polymer-stimulated nucleation is summarized in the SI.\n\nWithout negative feedback, autocatalytic processes lead to exponential growth, but there are several lines of evidence for an apparent \u2018carrying capacity\u2019 of microtubules in a given cytoplasmic volume (Clausen and Ribbeck, 2007; Ishihara et al., 2014a; Petry et al., 2013). Saturation is inevitable since the building blocks of microtubules are present at a fixed concentration. In our model, we impose a carrying capacity by expressing autocatalytic nucleation as a logistic function of the local density of growing plus ends, which is qualitatively consistent with local depletion of nucleation factors such as the gamma-tubulin ring complex. Other forms of negative feedback (e.g. at the level of polymerization dynamics) are possible as well. In SI, we show that the type of negative feedback does not affect the rate of aster growth, which is determined entirely by the dynamics at the leading edge of a growing aster where the microtubule density is small and negative feedback can be neglected.\n\n### Mathematical model of autocatalytic growth of asters\n\nAssuming a\u00a0large number of microtubules, we focus on the mean-field or deterministic dynamics (SI) and formalize our model as a set of partial differential equations. Specifically, we let $\u03c1_{g}\u2062(t,x,l)$ and $\u03c1_{s}\u2062(t,x,l)$ denote respectively the number of growing and shrinking microtubules of length $l$ with their minus ends at distance $x>0$ from the centrosome. The number of newly nucleated microtubules is given by $Q\u2062(x)=r\u2062C_{g}\u2062(t,x)\u2062(1-C_{g}\u2062(t,x)/K)$, where $r$ is the nucleation rate, $K$ is the carrying capacity controlling the maximal plus end density, and $C_{g}\u2062(t,x)$ is the local density of the growing plus ends at point $x$. The polymerization dynamics and nucleation are then described by,\n\n$$\n{\\frac{\u2202\u03c1_{g}}{\u2202t}=\u2212v_{g}\\frac{\u2202\u03c1_{g}}{\u2202l}\u2212f_{cat}\u03c1_{g}+f_{res}\u03c1_{s}+Q(x)\u22c5\\delta(l)\\frac{\u2202\u03c1_{s}}{\u2202t}=+v_{s}\\frac{\u2202\u03c1_{s}}{\u2202l}+f_{cat}\u03c1_{g}\u2212f_{res}\u03c1_{s}.\n$$\n\nNote that polymerization and depolymerization changes the microtubule length $l$, but not the minus end position $x$. Equations at different $x$ are nevertheless coupled due to the nucleation term, which depends on $x$ through $C_{g}$.\n\nTo understand this system of equations, consider the limit of no nucleation ($r=0$). Then, the equations at different $x$ become independent and we recover the standard model that reduces aster growth to the growth of individual microtubules (Dogterom and Leibler, 1993; Verde et al., 1992). With nucleation, aster growth is a collective phenomenon because microtubules of varying length and minus end positions contribute to $C_{g}\u2062(t,x)$, which can be expressed as a convolution of $\u03c1_{g}$ (see SI). The delta-function $\\delta\u2062(l)$ ensures that newly nucleated microtubules have zero length.\n\nFinally, we need to specify what happens when microtubules shrink to zero length. In our model, microtubules originating from centrosomes rapidly switch from shrinking to growth (i.e. re-nucleate), while non-centrosomal microtubules disappears completely (i.e. no re-nucleation occurs). We further assume that mother and daughter microtubules disappear without affecting each other. Indeed, if the collapse of the mother microtubule triggered the collapse of the daughter microtubule (or vice versa), then no net increase in the number of microtubules would be possible in the bounded regime. One consequence of this assumption is that the minus end of a daughter microtubule becomes detached from any other microtubules in the aster following the collapse of the mother microtubule. As a result, minus ends need to be stabilized after nucleation possibly by some additional factors (Akhmanova and Hoogenraad, 2015) and mechanical integrity of the aster should rely on microtubule bundling (Ishihara et al., 2014a).\n\n### Asters can grow as spatially propagating waves with constant bulk density\n\nTo check if our model can describe aster growth, we solved Equation (3) numerically using finite difference methods in an 1D planar geometry. With relatively low nucleation rates and J<0, microtubule populations reached a steady-state profile confined near the centrosome reminiscent of an aster in the standard model with bounded microtubule dynamics (Figure 2A left). When the nucleation rate was increased, the microtubule populations expanded as a traveling wave with an approximately invariant shape and constant microtubule density at the periphery (Figure 2A right) consistent with the growth of interphase asters in our reconstitution experiments (Figure 2B and Ishihara et al., 2014a). Thus, our model predicted two qualitatively different states: stationary and growing asters.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig2-v2.jpg)\n\n**Figure 2.:** (A) Time evolution of growing plus end density predicted by our model, which we solved via numerical simulations in 1D geometry. In the stationary regime, the microtubule population remained near the centrosome $v_{g}=30$, $v_{s}=40$, $f_{c\u2062a\u2062t}=3$, $f_{r\u2062e\u2062s}=1$, and $r=1.0$ (left). In contrast, outward expansion of the microtubule population was observed when the nucleation rate was increased to $r=2.5$, above the critical nucleation rate $r_{c}$ (right). For both simulations, microtubules are in the bounded regime $J<0$. (B) Experimental measurements confirm that asters expand at a constant rate with time-invariant profiles of the plus end density, as predicted by our model. The plus end densities were estimated as EB1 comet density during aster growth as previously described (Ishihara et al., 2014a).\n\n### Analytical solution for aster velocity and critical nucleation\n\nNext, we solved Equation (3) exactly and obtained the following analytical expression for the aster velocity in terms of model parameters:\n\n$$\nV=\\frac{v_{g}(v_{g}f_{res}\u2212v_{s}f_{cat})^{2}}{(v_{g}(v_{g}f_{res}\u2212v_{s}f_{cat})(f_{res}+f_{cat})+(v_{g}+v_{s})(v_{g}f_{res}+v_{s}f_{cat})r\u22122(v_{g}+v_{s})\\sqrt{v_{g}f_{cat}f_{res}r(v_{g}f_{res}\u2212v_{s}f_{cat}+v_{s}r)})},\n$$\n\nwhich holds for the parameter range $r_{c}<r<f_{cat}$. The details of the calculation, including the definition of $r_{c}$ are summarized in SI.\n\nUsing this expression, we summarize how aster velocity V is affected by the mean polymerization rate J (Figure 3A) and nucleation rate r (Figure 3B). In the absence of autocatalytic nucleation (r=0), our model reduces to the standard model and predicts that asters only grow when J>0 with V=J (Figure 3A blue line). When nucleation is allowed (r>0), the aster velocity increases with r and asters can grow even when individual microtubules are unstable J<0 (Figure 3A and B). During this collective growth, the aster expands radially because more microtubules are nucleated than lost at the front. In the aster bulk, nucleation is reduced from the carrying capacity, and the aster exists in the dynamic balance between microtubule gain due to nucleation and loss due to depolymerization. Since microtubules are in the bounded regime, their lifetime is short, and they disappear before reaching an\u00a0appreciable length. In sharp contrast to the standard model, we predict that asters are a dynamic network of short microtubules with properties independent from the distance to the centrosome. Thus, nucleation not only increases the number of microtubules, but also controls the growth rate and spatial organization of asters enabling them to span length scales far exceeding the length of an individual microtubule.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig3-v2.jpg)\n\n**Figure 3.:** Analytical solution (lines) and numerical simulations (dots) predict that asters either remain stationary or expand at a constant velocity, which increases with the net polymerization rate $J$ (A) and nucleation rate $r$ (B). The transition to a growing state is accompanied by a\u00a0finite jump in the expansion velocity labeled as $V_{g\u2062a\u2062p}$. (A) The behavior in the standard model ($r=0$) is shown in blue and our model ($r=1.5$) in red. Note that aster growth commences at $J<0$ in the presence of nucleation and occurs at a minimal velocity $V_{g\u2062a\u2062p}$. Although spatial growth can occur for both $J>0$ and $J<0$ the properties of the resulting asters could be very different (see SI). Here, $v_{g}=30,v_{s}=30,f_{cat}=3$. (B) If $J<0$, critical nucleation $r_{c}$ is required to commence aster growth. Blue line corresponds to $J>0(v_{g}=30,v_{s}=15,f_{cat}=3,f_{res}=3)$ and red line to $J<0(v_{g}=30,v_{s}=15,f_{cat}=3,f_{res}=1)$. See Materials and methods and SI for the details of the analytical solution and numerical simulations.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Time evolution of growing plus end density similar to the simulations in 1D planar geometry as in Figure 2. This example represents a scenario where the nucleation rate is above the critical nucleation rate ($v_{g}=30,v_{s}=40,f_{cat}=3,f_{res}=1,r=2.5$) resulting in aster growth. (B) Analytical solution (lines) and numerical simulations (dots) predict aster velocity as a function of nucleation rate similar to Figure 3A. Blue line corresponds to $J>0(v_{g}=30,v_{s}=15,f_{cat}=3,f_{res}=3)$ and red line to $J<0(v_{g}=30,v_{s}=15,f_{cat}=3,f_{res}=1)$.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Time evolution of growing plus end density similar to Figure 2A. Below the critical nucleation rate, asters are stationary (left, $v_{g}=30,v_{s}=40,f_{cat}=3,f_{res}=1,p=0.07$). Above the critical nucleation rate, asters grow in radius (right, $p=0.18$) even when microtubules are unstable ($J<0$). Here, the critical polymer nucleation rate $p_{c}=0.0964...$ as predicted by Equation (A59). (B) Numerical simulations predict aster velocity as a function of $J$ ($f_{r\u2062e\u2062s}$ was varied while keeping $v_{g}=30,v_{s}=15,f_{cat}=3,p=0.04$). (C) Numerical simulations predict aster velocity as a function of polymer-stimulated nucleation rate $p$ ($p$ was varied while keeping $v_{g}=30,v_{s}=15,f_{cat}=3,f_{res}=0.3$). Dashed vertical lines indicate the predicted critical transitions from Equation (A59).\n\nWhen $J<0$, a critical nucleation rate is required for aster growth (Figure 3B). Indeed, microtubules constantly disappear as their length shrinks to zero, and the nucleation of new microtubules needs to occur frequently enough to overcome the microtubule loss. Consistent with this argument, our analytical solution predicts no aster growth below a certain value of nucleation (SI), termed critical nucleation rate $r_{c}$:\n\n$$\nr_{c}=f_{cat}\u2212\\frac{v_{g}}{v_{s}}f_{res}.\n$$\n\nThe right hand side of this equation is the inverse of the average time that a microtubule spends in the growing state before shrinking to zero-length and disappearing (SI). Thus, aster growth requires, on average, a microtubule to nucleate at least one new microtubule during its lifetime.\n\nThe dependence of the critical nucleation rate on model parameters is very intuitive. Increasing the parameters in favor of polymerization ($v_{g}$ and $f_{r\u2062e\u2062s}$), lowers the threshold level of nucleation required for aster growth, while increasing the parameters in favor of depolymerization ($v_{s}$ and $f_{c\u2062a\u2062t}$) has the opposite effect. We also find that $r_{c}=0$ when J\u00a0=\u00a00, suggesting that there is no critical nucleation rate for $J\\geq0$. This limit is consistent with the standard model with $J>0$ and $r=0$ where the aster radius increases albeit with radial dilution of microtubule density (Figure 1B). The critical nucleation rate conveys the main implication of our theory: the balance between polymerization dynamics and autocatalytic nucleation defines the quantitative condition for continuous aster growth.\n\n### Explosive transition to growth with a \u2018gap velocity\u2019\n\nAt the critical nucleation rate $r=r_{c}$, the aster velocity $V$ takes a positive, nonzero value (Figure 3), which we refer to as the \u2018gap velocity\u2019 (SI):\n\n$$\nV_{gap}\u2261limr\u2192r_{c}V=\\frac{\u2212v_{g}v_{s}(v_{g}f_{res}\u2212v_{s}f_{cat})}{v_{g}^{2}f_{res}+v_{s}^{2}f_{cat}}.\n$$\n\nThis finite jump in the aster velocity is a consequence of microtubules with finite length undergoing dynamic instability and is in sharp contrast to the behavior of reaction-diffusion systems, where traveling fronts typically become infinitesimally slow before ceasing to propagate (Chang and Ferrell, 2013; Hallatschek and Korolev, 2009; M\u00e9ndez et al., 2007; van Saarloos, 2003). One can understand the origin of $V_{g\u2062a\u2062p}>0$ when microtubules are eliminated after a catastrophe event ($f_{res}=0,J=\u2212v_{s}$). In this limit, plus ends always expand with the velocity $v_{g}$ until they eventually collapse. Below $r_{c}$, this forward expansion of plus ends fails to produce aster growth because the number of plus ends declines on average. Right above $r_{c}$, the number of plus ends is stable, and the aster grows at the same velocity as every individual microtubule. Indeed, Equation (6) predicts that $V_{g\u2062a\u2062p}=v_{g}$ when $f_{r\u2062e\u2062s}=0$. The dynamics are similar for $f_{r\u2062e\u2062s}>0$. At the transition, nucleation stabilizes a subpopulation of microtubules expanding forward, and their average velocity sets the value of $V_{g\u2062a\u2062p}$. We also find that the magnitude of $V_{g\u2062a\u2062p}$ is inversely proportional to the mean length of microtubules in the system (SI). Thus, the shorter the microtubules, the more explosive this transition becomes.\n\nIn the SI, we also show that microtubule density inside the aster is proportional to $r-r_{c}$. Thus, the density is close to zero during the transition from stationary to growing asters, but quickly increases as the nucleation rate becomes larger. As a result, cells can achieve rapid aster growth while keeping the density of the resulting microtubule network sufficiently low. The low density might be beneficial because of its mechanical properties or because it simply requires less tubulin to produce and energy to maintain. In addition, the explosive transition to growth with $V_{g\u2062a\u2062p}>0$ allows the cell to independently control the aster density and growth speed.\n\nModel parameters other than the nucleation rate can also be tuned to transition asters from growth to no growth regimes. Similar to Equation (5) and (6), one can define the critical parameter value and gap velocity to encompass all such transitions (Appendix 4\u2014table 1). In all cases, we find that the onset of aster growth is accompanied by a\u00a0discontinuous increase in the aster velocity. The finite jump in aster velocity is similarly predicted in a wide range of alternative scenarios including (i) feedback regulation of plus end dynamics (SI and Figure 3\u2014figure supplement 1) and (ii) aster growth by microtubule polymer-stimulated nucleation (SI and Figure 3\u2014figure supplement 2). In summary, the gap velocity is a general prediction of the collective behavior of microtubules that are short-lived.\n\n### Titration of MCAK slows then arrests aster growth with evidence for a gap velocity\n\nBased on our theory, we reasoned that it would be possible to transform a growing interphase aster to a small, stationary aster by tuning polymerization dynamics and/or nucleation via biochemical perturbations in Xenopus egg extract. To this end, we performed reconstitution experiments in undiluted interphase cytoplasm supplied with anti-Aurora kinase A antibody coated beads, which nucleate microtubules and initiate aster growth under the coverslip (Field et al., 2014; Ishihara et al., 2014a). We explored perturbation of various regulators for plus end dynamics and nucleation. We settled on perturbation of MCAK/KIF2C, classically characterized as the main catastrophe-promoting factor in the extract system (Kinoshita et al., 2001; Walczak et al., 1996), and imaged aster growth.\n\nIn control reactions, aster radius, visualized by the plus end marker EB1-mApple, increased at velocities of 20.3\u00b13.1\u00a0\u03bcm/min (n\u00a0=\u00a021 asters). We saw no detectable changes to aster growth with the\u00a0addition of the wild type MCAK protein. In contrast, addition of MCAK-Q710 (Moore and Wordeman, 2004) decreased aster velocity (Figure 4A and B). At concentrations of MCAK-Q710 above 320 nM, most asters had small radii with very few microtubules growing from the Aurora A beads. In our model, this behavior is consistent with any change of parameter(s) that reduces the aster velocity (Equation 4) and arrests growth.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig4-v2.jpg)\n\n**Figure 4.:** (A) Addition of MCAK-Q710 results in smaller interphase asters assembled by Aurora A beads in Xenopus egg extract. Images were obtained 20 min post initiation with the plus end marker EB1-mApple. Dotted lines indicate the approximate outline of asters. (B) Aster velocity decreases with MCAK-Q710 concentration and then abruptly vanishes as predicted by the model. Note a clear gap in the values of the observed velocities and bimodality near the transition, which support the existence of $V_{g\u2062a\u2062p}$. Quantification methods are described in methods and Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Measuring aster growth velocities from time-lapse images of asters visualized with the plus end marker EB1-mApple. A linear region is chosen in the radial outward direction (left). The raw fluorescent intensity profiles (center) are subjected to a low pass filter (right), and the half-max position was manually selected to define the radius of the aster at different time points. Blue to red lines indicate profiles at two minute intervals. (B) At the critical concentration of 320 nM MCAK-Q710, some asters assembled from Aurora A beads showed slow growth (top) while others contained few microtubules which gradually decreased over time (bottom). The latter was scored as zero growth velocity. The reaction was started at time zero by the addition of calcium and beads to the extract. Scale bars 100 \u03bcm. (C) Aster growth velocities measured at increasing MCAK-Q710 concentrations. Biological replicate of the same experiment as in Figure 4B.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Asters assembled by Tetrahymena pellicles as the nucleating center showed aster growth which was slowed down by MCAK-Q710 (top). At higher MCAK-Q710 concentrations, stationary asters that did not change its radius for over 60 min (bottom). (B) EB1-mApple fluorescence intensity profile of the stationary aster in panel A for time intervals 70\u201384 min post calcium addition. Such asters were scored as zero velocity. (C) Pellicle aster growth velocities at different MCAK-Q710 concentrations.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Measurements were made by imaging and tracking EB1 comets in growing interphase asters assembled by Aurora A beads (see Materials\u00a0and\u00a0methods). (A) Distribution of plus end polymerization rates at different MCAK-Q710 concentrations. (B) Distribution of EB1 comet lifetimes at different MCAK-Q710 concentrations. Inset shows the same data plotted on a semilog scale. (C) Summary of measurements from EB1 tracking analysis. The table shows the number of movies (or asters) and total number of tracks analyzed for each condition. Errors indicate standard error. The catastrophe rate $f_{c\u2062a\u2062t}$ was derived from a linear fit to the semilog plots of the lifetime distributions in the intervals 5\u201360 s. Its mean and standard error were calculated by bootstrapping.\n\nAt 320 nM MCAK-Q710 concentration, we observed bimodal behavior. Some asters increased in radius at moderate rates, while other asters maintained a stable size before disappearing, presumably due to the decrease of centrosomal nucleation over time (Figure 4\u2014figure supplement 1 and Ishihara et al., 2014a). In particular, we observed no asters growing at velocities between 0 and 9\u00a0\u03bcm/min (Figure 4B and Figure 4\u2014figure supplement 1). This gap in the range of possible velocities is consistent with the theoretical prediction that growing asters expand above a minimal rate $V_{g\u2062a\u2062p}$.\n\nTo confirm that the failure of aster growth at high concentrations of MCAK-Q710 is caused by the changes in aster growth rather than nucleation from the beads, we repeated the experiments with Tetrahymena pellicles as the initiating centers instead of Aurora A beads. Pellicles are pre-loaded with a high density of microtubule nucleating sites, and are capable of assembling large interphase asters (Ishihara et al., 2014a). We found pellicle initiated asters to exhibit a similar critical concentration of MCAK-Q710 compared to Aurora A bead asters. While the majority of Aurora A beads subjected to the highest concentration of MCAK-Q710 lost growing microtubules over time, a significant number of microtubules persisted on pellicles even after 60 min (Figure 4\u2014figure supplement 2). The radii of these asters did not change, consistent with our prediction of stationary asters. Thus, the pellicle experiments confirmed our main experimental result of small, stationary asters and that the nature of transition is consistent with the existence of a gap velocity.\n\nFinally, we asked which parameters in our model were altered in the MCAK-Q710 perturbation. To this end, we measured the polymerization and catastrophe rates in interphase asters assembled by Aurora A beads at various MCAK-Q710 concentrations. We imaged EB1 comets at high spatiotemporal resolution, and analyzed their trajectories by tracking-based image analysis (Applegate et al., 2011; Matov et al., 2010, Materials\u00a0and\u00a0methods). Neither the polymerization nor the catastrophe rate changed at the MCAK-Q710 concentrations corresponding to the transition between growing and stationary asters (Figure 4\u2014figure supplement 3). MCAK-Q710 has been reported to reduce microtubule polymer levels in cells (Moore and Wordeman, 2004), but its precise effect on polymerization dynamics and/or nucleation remains unknown. Our data are consistent with the following three scenarios for how MCAK-Q710 antagonizes microtubule assembly: (i) increased depolymerization rate, (ii) decreased rescue rate, and/or (iii) decreased nucleation rate.\n\n## Discussion\n\n### An autocatalytic model of aster growth\n\nIt has not been clear whether the standard model of aster growth can explain the morphology of asters observed in all animal cells, including those of extreme size (Mitchison et al., 2015). To resolve this question, we constructed a biophysical framework that incorporates microtubule polymerization dynamics and autocatalytic nucleation. Numerical simulations and analytical solutions (Figures 2 and 3, and Figure 3\u2014figure supplements 1 and 2) recapitulated both stationary and continuously growing asters in a parameter-dependent manner. Interestingly, the explosive transition from \u2018growth\u2019 to \u2018no growth\u2019 was predicted to involve a finite aster velocity, which we confirmed in biochemical experiments (Figure 4).\n\nOur biophysical model offers a biologically appealing explanation to aster growth and allows us to estimate parameters that are not directly accessible: the rescue and autocatalytic nucleation rates. For example, if we assume that MCAK-Q710 decreases the nucleation rate, we may use the $V_{g\u2062a\u2062p}$ equation for $r\u2192r_{c}$ (Equation (6)), the equation for aster velocity V (Equation (4)), and our measurements of $v_{g}$, $v_{s}$, $f_{c\u2062a\u2062t}$, $V$, and $V_{g\u2062a\u2062p}$ (Table 1) to simultaneously estimate $f_{r\u2062e\u2062s}$ and $r$. These results are summarized in Table 1. Our inferred value of autocatalytic nucleation r\u00a0=\u00a02.1\u00a0min\u22121 is comparable to previous estimates: 1.5 min\u22121(Clausen and Ribbeck, 2007) and 1 min\u22121\u00a0(Petry et al., 2013) in meiotic egg extract supplemented with RanGTP. In the alternative scenarios, where MCAK-Q710 decreases the catastrophe rate or increases the depolymerization rate, our estimates of $r$ and $f_{r\u2062e\u2062s}$ are essentially the same (Appendix 8\u2014table 1). Thus, our model recapitulates aster growth with reasonable parameter values and offers a new understanding for how asters grow to span large cytoplasms even when individual microtubules are unstable.\n\nTo date, few studies have rigorously compared the mechanistic consequences of plus-end-stimulated vs. polymer-stimulated nucleation. Above, we presented the theoretical predictions for aster growth by plus-end stimulated nucleation. In the SI, we also provide the results for polymer-stimulated nucleation including the critical nucleation rate Equation A59. Both models of nucleation have qualitatively similar behavior including the gap velocity and recapitulate experimental observations of asters growing as traveling waves. Thus, in our case, the qualitative conclusions do not depend on the precise molecular mechanism of autocatalytic nucleation. In particular, the explosive transition characterized by the gap velocity is a general prediction of modeling microtubules as self-amplifying elements whose lifetime depends on their length.\n\nBy carefully defining and quantifying autocatalytic nucleation, future studies may be able to distinguish its precise mechanism. With plus-end-stimulated nucleation, the nucleation rate $r$ has units of min\u22121 and describes the number of new microtubules generated per existing plus end per minute. With polymer-stimulated nucleation, the nucleation rate has units of \u03bcm\u22121\u00a0min\u22121, and describes the number of new microtubules generated per micron of existing microtubule per minute. This difference has important implications for the structural mechanism of microtubule nucleation and for the prediction of cell-scale phenomena. For the issue of large aster growth, we propose specific experiments that might be able distinguish these scenarios (SI).\n\n### Phase diagram for aster growth\n\nHow do large cells control aster size during rapid divisions? We summarize our theoretical findings with a phase diagram for aster growth in Figure 5. Small mitotic asters are represented by stationary asters found in the regime of bounded polymerization dynamics J<0 and low nucleation rates. These model parameters must change as cells transition from mitosis to interphase to produce large growing asters. Polymerization dynamics becomes more favorable to elongation during interphase (Belmont et al., 1990; Verde et al., 1992). This may be accompanied by an increased autocatalytic nucleation of microtubules.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19145/elife-19145-fig5-v2.jpg)\n\n**Figure 5.:** Aster morphology is determined by the balance of polymerization dynamics and autocatalytic nucleation. Small, stationary asters ($V=0$), as observed during mitosis, occur at low nucleation $r$ and net depolymerization of individual microtubules ($J<0$). Net polymerization ($J>0$) without nucleation ($r=0$) produces asters that expand at rate $V=J$ with dilution of microtubule density at the periphery and are thus inconsistent with experimental observations. The addition of nucleation to the individual growth regime changes these dynamics only marginally (yellow region); see SI. Alternatively, the transition from stationary to growing asters can be achieved by increasing the nucleation rate, $r$, while keeping $J$ negative. Above the critical nucleation rate $r_{c}$ starts the regime of collective growth ($V$ as in Equation (4), which is valid for $r<f_{cat}$) that produces asters composed of relatively short microtubules (red region). The transition from stationary aster to collective growth may be achieved by crossing the curve at any location, but always involves an explosive jump in aster velocity, $V_{g\u2062a\u2062p}$. The\u00a0reverse transition recapitulates the results of our experimental perturbation of MCAK activity (Figure 4) and mitotic entry (solid arrows). We propose this unified biophysical picture as an explanation for the cell cycle dependent changes of aster morphology in vivo.\n\nAccording to the standard model, increasing $J$ to a positive value with no nucleation leads to asters in the 'individual growth' regime. A previous study suggested the interphase cytoplasm is in the unbounded polymerization dynamics $J>0$\u00a0(Verde et al., 1992), but our measurements of parameters used to calculate $J$ differ greatly (Table 1). The\u00a0individual growth regime is also inconsistent with the steady-state density of microtubules at the periphery of large asters in both fish and frog embryos (Ishihara et al., 2014a; W\u00fchr et al., 2008, 2010). Experiments in egg extracts further confirm the addition of new microtubules during aster growth (Ishihara et al., 2014a) contrary to the predictions of the standard model. Furthermore, the presence of a high density of growing plus ends in the interior of growing asters in egg extract suggests that microtubules must be short compared to aster radius, and $J$ must be negative, at least in the aster interior (Ishihara et al., 2014a).\n\nBy constructing a model that incorporates autocatalytic nucleation $r>0$, we discovered a new regime, in which continuous aster growth is supported even when microtubules are unstable ($J<0$). We call this the \u2018collective growth\u2019 regime because individual microtubules are much shorter (estimated mean length of 16 \u03bcm \u00b1 2 \u03bcm, Table 1) than the aster radius (hundreds of microns). Predictions of this model are fully confirmed by the biochemical perturbation via MCAK-Q710. The finite jump in the aster velocity (Figure 4) is in sharp contrast to the prediction of the standard models of spatial growth (Fisher, 1937; Kolmogorov and Petrovskii, 1937; Skellam, 1951; van Saarloos, 2003). Spatial growth is typically modeled by reaction-diffusion processes that account for birth events and random motion, which, in the context of microtubules, correspond to the nucleation and dynamic instability of plus ends. Reaction-diffusion models, however, neglect internal dynamics of the agents such as the length of a microtubule. As a result, such models inevitably predict a continuous, gradual increase in the aster velocity as the model parameters are varied (Chang and Ferrell, 2013; Hallatschek and Korolev, 2009; M\u00e9ndez et al., 2007; van Saarloos, 2003). The observation of finite velocity jump provides a strong support for our model and rules out a very wide class of models that reproduce the overall phenomenology of aster growth including the constant velocity and profile shape (Figure 2). In particular, the observation of $V_{g\u2062a\u2062p}$ excludes the model that we previously proposed based on the analogy of aster growth and the Fisher-Kolmogorov equation (Ishihara et al., 2014b). The implications of $V_{g\u2062a\u2062p}$ for model selection are further discussed in SI.\n\n### Collective growth of cytoskeletal structures\n\nOur theory allows for independent regulation of aster growth rate and microtubule density through the control of the nucleation rate and microtubule polymerization. Thus, cells have a lot of flexibility in optimizing aster properties and behavior. The existence of a gap velocity results in switch-like transition from quiescence to rapid growth and allows cells to drastically alter aster morphology with a small change of parameters. Importantly, the rapid growth does not require high microtubule density inside asters, which can be tuned independently.\n\nCollective growth produces a meshwork of short microtubules with potentially desirable properties. First, the network is robust to microtubule severing or the spontaneous detachment from the centrosome. Second, the network can span arbitrarily large distances yet disassemble rapidly upon mitotic entry. Third, the structure, and therefore the mechanical properties, of the network do not depend on the distance from the centrosome. As a speculation, the physical interconnection of the microtubules may facilitate the transduction of mechanical forces across the cell in a way unattainable in the radial array predicted by the standard model (Tanimoto et al., 2016; W\u00fchr et al., 2010).\n\nThe regime of collective growth parallels the assembly of other large cellular structures from short, interacting filaments (Pollard and Borisy, 2003) and is particularly reminiscent of how meiosis-II spindles self-assemble (Burbank et al., 2007; Brugu\u00e9s et al., 2012; Brugu\u00e9s and Needleman, 2014). Due to such dynamic architecture, spindles are known to have unique physical properties such as self-repair, fusion (Gatlin et al., 2009) and scaling (Good et al., 2013; Hazel et al., 2013; W\u00fchr et al., 2008), which could allow for greater robustness and evolvability (Kirschner and Gerhart, 1998). Perhaps, collective growth is one of the most reliable ways for a cell to assemble cytoskeletal structures that exceed the typical length scales of individual filaments.\n\n## Materials and methods\n\n### Numerical simulations\n\nWe implemented a finite difference method with fixed time steps to numerically solve the continuum model (Equation 3). The\u00a0forward Euler\u2019s discretization scheme was used except exact solutions of advection equations was used to account for the gradient terms. Specifically, the plus end positions were simply shifted by $+v_{g}\u2062\\delta\u2062t$ for growing microtubules and by $-v_{s}\u2062\\delta\u2062t$ for shrinking microtubules. Nucleation added new growing microtubules of zero length at a position-dependent rate given by $Q\u2062(x)$. The algorithm was implemented using MATLAB (Mathworks).\n\n### Analytical solution\n\nWe linearized Equation 3 for small $C_{g}$ and solved it using Laplace transforms in both space and time. The inverse Laplace transform was evaluated using the saddle point method (Bender and Orszag, 1999). We found the aster velocity as in Equation 4. The details of this calculation are summarized in the Supporting Text (SI).\n\n### Aster velocity measurements\n\nInterphase microtubule asters were reconstituted in Xenopus egg extract as described previously with use of p150-CC1 to inhibit dynein mediated microtubule sliding (Field et al., 2014; Ishihara et al., 2014a). Fluorescence microscopy was performed on a Nikon 90i upright microscope equipped with a Prior Proscan II motorized stage. EB1-mApple was imaged every 2 min with a 10x Plan Apo 0.45 N.A. or a 20x Plan Apo 0.75 N.A. objective. For the analysis of the aster growth front, a linear region originating from the center of asters was chosen (Figure 4\u2014figure supplement 1). A low pass filter was applied to the fluorescence intensity profile and the half-max position, corresponding to the aster edge, was determined manually. The analysis was assisted by scripts written in ImageJ and MATLAB (Mathworks). Univariate scatter plots were generated with a template from (Weissgerber et al., 2015). EB1-mApple were purified as in (Petry et al., 2011), used at a final concentration of 100 nM. In some experiments, MCAK or MCAK-Q710-GFP (Moore and Wordeman, 2004) proteins were added to the reactions. Protein A Dynabeads coated with anti-Aurora kinase A antibody (Tsai and Zheng, 2005) or Tetrahymena pellicles were used as microtubule nucleating sites.\n\n### Catastrophe rate measurements\n\nInterphase asters were assembled as described above. Catastrophe rates and plus end polymerization rates were estimated from time lapse images of EB1 comets that localize to growing plus ends (Matov et al., 2010). The distributions of EB1 track durations were fitted to an exponential function to estimate the catastrophe rate. Spinning disc confocal microscopy was performed on a Nikon Ti motorized inverted microscope equipped with Perfect Focus, a Prior Proscan II motorized stage, Yokagawa CSU-X1 spinning disk confocal with Spectral Applied Research Aurora Borealis modification, Spectral Applied Research LMM-5 laser merge module with AOTF controlled solid state lasers: 488 nm (100 mW), 561 nm (100 mW), and Hamamatsu ORCA-AG cooled CCD camera. EB1-mApple was imaged every 2 s with a 60x Plan Apo 1.40 N.A. objective with 2\u00d72 binning. EB1 tracks were analyzed with PlusTipTracker (Applegate et al., 2011).\n\n### Video\u00a0abstract\n\nA 2 min video abstract of this paper is available at https://youtu.be/jfjA2S-fE9U.\n",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "41d8a513-5563-45ad-9c78-abb15f7155f7",
+      "submission_id": "dbd7765d-4e8b-4a0b-91c9-306da9cd1127",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19145.016](https://doi.org/10.7554/eLife.19145.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Physical basis of large microtubule aster growth\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Arup Chakraborty as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour paper describing a quantitative biophysical model of aster growth with autocatalytic nucleation has been seen by two reviewers. We feel this new model for growth of large microtubule asters is a major advance for the microtubule field. It also will have an important impact on conceptual thinking about polymer dynamics in the cytoskeletal field. Both reviewers, who although making different points, reach the same overall conclusion, which is that many of the assumptions are not sufficiently explored or described so as to be able to constrain your model. While the prediction from the model is straightforward (Vgap), the experimental validation is often not sufficient to test the predictions.\n\nEssential revisions:\n\nThe applicability of the Equation for J in Figure 1A for nucleated microtubule dynamics needs to be better clarified early in the Results. In a number of places in the manuscript, it is stated that on average the microtubules are \"shrinking\". Yet, collectively the aster is growing enormously by the mechanism modeled here. So how can microtubules be on average shrinking while the aster is growing? By the Equation of J they are on average \"shrinking\", but since all microtubules within the expanded aster are nucleated, why is the Equation for J in Figure 1A applicable to this analysis? The equation in Figure 1A does not include the influence of the nucleation site in stopping depolymerization; how is this geometrical constraint implemented in the analysis?\n\nOne reviewer noted, \"Here is an example of my confusion. Suppose there is nucleated microtubule growth, no spontaneous rescue and rescue occurs only by depolymerization to the initial nucleation site. Say Vg = 20 um/min, tg = 1 min, and Vs = 200 um/min. So the plot of MT dynamic instability is almost saw-toothed because Vs >> Vg. So, on a time average, the microtubules are mainly growing, because shortening is so fast. However, the value of J = 0, because length gained in growth is always lost in shortening. If the constraints from nucleation are neglected, with no spontaneous rescue, the value of J from the equation in Figure 1A is <<0, which is of course a lot of shrinking\".\n\nAlso with respect to nucleation, it is represented by the term Q, which depends on the nucleation rate r, the carrying capacity K and the local density of growing microtubule plus ends Cg. There are several problems with this definition:\n\nr is not measured / cannot be measured, but interfered with the aster growth velocity equation.\n\nK is estimated by comparing Cgbulk from experiments to predicted values.\n\nCg and Cgbulk are both derived from EB1 tracks, which are growing microtubule ends. This term should be changed to the local density of all microtubules rather than growing microtubule plus ends. Or is there any evidence that microtubule-dependent microtubule nucleation exclusively happens on growing microtubules?\n\nThe reviewers feel that there is not sufficient discussion of parameters that have not been measured. For instance, \"We explored perturbation of various dynamics regulators, seeking one whose effect was restricted to influencing a single parameter in our model. This was challenging since proteins that regulate polymerization dynamics tend to also regulate nucleation\u2026\".\n\nIn the paper, you state that the only dynamic parameter that has been actually quantified is fcat. This seems a bit misleading, as fcat was not measured directly. We feel that, all dynamic parameters should be measured to be sure that treatment with MCAK-Q710 indeed only changes fcat, or if not, an explanation as to why not.\n\nfcat is the predominant dynamic parameter of microtubules that has the power to dramatically change microtubule behavior. Therefore, the authors need to reliably quantify fcat by an appropriate method (e.g. speckle microscopy) and in addition measure all other dynamic parameters.\n\nIn addition, the reference given is misleading: In \"Tirnauer, J. S., Salmon, E. D., and Mitchison, T. J. (2004). Microtubule plus-end dynamics in Xenopus egg extract spindles. Molecular biology of the cell, 15(4):1776{1784}.\" Microtubule growth and depolymerization velocity is measured, but not fcat.\n",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "225a2b04-0b05-4e7e-b453-b667d6650e7a",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C1",
+      "claim": "Microtubule asters play a fundamental role in the spatial coordination of animal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule asters - radial arrays of microtubules organized by centrosomes - play a fundamental role in the spatial coordination of animal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established fact about aster function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "d859dbda-acbf-4a55-9e3f-6c94342ad80d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C2",
+      "claim": "The standard model of aster growth assumes a fixed number of microtubules originating from the centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard model of aster growth assumes a fixed number of microtubules originating from the centrosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the standard model cited from existing literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "6bbcef40-881c-4421-8f36-138d5fb2beb8",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C3",
+      "claim": "Aster morphology in the standard model does not scale with cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aster morphology in this model does not scale with cell size, and we recently found evidence for non-centrosomal microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the standard model based on inference from the model's predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f2022a17-8017-478e-8d53-24f6bb9c1d3e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C4",
+      "claim": "There is evidence for non-centrosomal microtubule nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, aster morphology in this model does not scale with cell size, and we recently found evidence for non-centrosomal microtubule nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous findings by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f41e3fa0-4599-4d2d-a72d-c6c62499e026",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C5",
+      "claim": "The biophysical model combining autocatalytic nucleation and polymerization dynamics predicts that asters expand as traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model predicts that asters expand as traveling waves and recapitulates all major aspects of aster growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c0ce67cc-feb4-4566-8e77-566e75bf6fac",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C6",
+      "claim": "With increasing nucleation rate, the model predicts an explosive transition from stationary to growing asters with a discontinuous jump of the aster velocity to a nonzero value.",
+      "claim_type": "EXPLICIT",
+      "source": "With increasing nucleation rate, the model predicts an explosive transition from stationary to growing asters with a discontinuous jump of the aster velocity to a nonzero value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "99045a0b-6230-412b-8a24-8e9b0506e8cf",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C7",
+      "claim": "Experiments in frog egg extract confirm the main theoretical predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in frog egg extract confirm the main theoretical predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "11bd9365-0ead-4811-8d1a-497852785dde",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C8",
+      "claim": "Asters observed in large fish and amphibian eggs are a meshwork of short, unstable microtubules maintained by autocatalytic nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that asters observed in large fish and amphibian eggs are a meshwork of short, unstable microtubules maintained by autocatalytic nucleation and provide a paradigm for the assembly of robust and evolvable polymer networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the model and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1017bc61-13d4-4ba5-9a59-5c8e3bf6983a",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C9",
+      "claim": "Animal cells use asters to spatially organize their cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal cells use asters, radial arrays of microtubules, to spatially organize their cytoplasm (Wilson, 1896).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wilson, 1896.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c5eb8730-7ca0-4faa-94a9-c284ca46ed6c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C10",
+      "claim": "Astral microtubules transport organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, astral microtubules transport organelles (Grigoriev et al., 2008; Wang et al., 2013; Waterman-Storer and Salmon, 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e4c5602e-4990-402f-b87d-5ef74ae2fd74",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C11",
+      "claim": "Astral microtubules support cell motility by mediating mechanical and biochemical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "support cell motility by mediating mechanical and biochemical signals (Etienne-Manneville, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "878f4dc6-33bb-4a88-bc70-f607cf2523d7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C12",
+      "claim": "Astral microtubules are required for proper positioning of the nucleus, the mitotic spindle, and the cleavage furrow.",
+      "claim_type": "EXPLICIT",
+      "source": "and are required for proper positioning of the nucleus, the mitotic spindle, and the cleavage furrow (Field et al., 2015; Grill and Hyman, 2005; Neum\u00fcller and Knoblich, 2009; Tanimoto et al., 2016; Wilson, 1896).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "d595bf9b-22dd-4eee-9fe5-8ed7f6c910dd",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C13",
+      "claim": "Individual microtubules undergo dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Within asters, individual microtubules undergo dynamic instability (Mitchison and Kirschner, 1984): They either grow (polymerize) or shrink (depolymerize) at their plus ends and stochastically transition between these two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mitchison and Kirschner, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "df0e3054-89d0-4cce-9cc1-5a206aced137",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C14",
+      "claim": "The standard model of aster growth posits that centrosomes nucleate and anchor all microtubules at their minus ends while the plus ends polymerize outward via dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard model of aster growth posits that centrosomes nucleate and anchor all microtubules at their minus ends while the plus ends polymerize outward via dynamic instability (Brinkley, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the standard model supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "9519ac55-c79d-4d3a-92cd-c9a6d5349a3d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C15",
+      "claim": "In the standard model, aster growth is completely determined by the dynamics of individual microtubules averaged over the growing and shrinking phases.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, aster growth is completely determined by the dynamics of individual microtubules averaged over the growing and shrinking phases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the standard model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "aece7e3b-3f48-42f9-9565-20ca17b27717",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C16",
+      "claim": "In the standard model, the aster either expands at a velocity given by the net growth rate of microtubules or remains stationary if microtubules are unstable and tend to depolymerize.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the aster either expands at a velocity given by the net growth rate of microtubules or remains stationary if microtubules are unstable and tend to depolymerize (Belmont et al., 1990; Dogterom and Leibler, 1993; Verde et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "7677b9f7-73b9-47e5-9b9d-699499e6f107",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C17",
+      "claim": "The standard model of aster growth is being increasingly challenged by reports of microtubules with their minus ends located far away from centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard model of aster growth is being increasingly challenged by reports of microtubules with their minus ends located far away from centrosomes (Akhmanova and Steinmetz, 2015; Keating and Borisy, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f0dd9271-540c-4db2-9142-4425798db7db",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C18",
+      "claim": "Some non-centrosomal microtubules may arise by detachment from centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of these microtubules may arise simply by detachment from centrosomes (Keating et al., 1997; Waterman-Storer et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "728448b0-7b55-4f8e-ba8a-d75da9d204f1",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C19",
+      "claim": "Some non-centrosomal microtubules may arise by severing of pre-existing microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "or severing of pre-existing microtubules (Roll-Mecak and McNally, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "4483cf84-8c5e-461b-9e0a-7efa6837ee82",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C20",
+      "claim": "New microtubules could arise due to a nucleation process independent of centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, new microtubules could also arise due to a nucleation process independent of centrosomes (Clausen and Ribbeck, 2007; Efimov et al., 2007; Petry et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "6fdb12e8-87c9-4fa1-83dc-9e89f343f3eb",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C21",
+      "claim": "Centrosomal nucleation is insufficient to explain the large number of growing plus ends found in asters.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we recently observed that centrosomal nucleation is insufficient to explain the large number of growing plus ends found in asters (Ishihara et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "45359685-6e39-484e-b338-e5f65b9172f8",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C22",
+      "claim": "The standard model demands a decrease in microtubule density at aster periphery, which is inconsistent with aster morphology in frog and fish embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the standard model demands a decrease in microtubule density at aster periphery, which is inconsistent with aster morphology in frog and fish embryos (W\u00fchr et al., 2008, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "08d00acc-9de4-407b-977d-202e93096817",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C23",
+      "claim": "An autocatalytic nucleation model was proposed where microtubules or microtubule plus ends stimulate the nucleation of new microtubules at the aster periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve these inconsistencies, we proposed an autocatalytic nucleation model, where microtubules or microtubule plus ends stimulate the nucleation of new microtubules at the aster periphery (Ishihara et al., 2014a, 2014b; W\u00fchr et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "b4337ae5-3439-414d-b2d3-7f8e396a3c50",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C24",
+      "claim": "Autocatalytic nucleation generates new microtubules necessary to maintain a constant density as the aster expands.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanism generates new microtubules necessary to maintain a constant density as the aster expands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "b78c3aa6-c55f-4af5-a571-fea34123b83d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C25",
+      "claim": "Autocatalytic nucleation could effectively overcome extinction of individual microtubules and allow rapid growth of large asters made of short, unstable microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "We also hypothesized that autocatalytic nucleation could effectively overcome extinction of individual microtubules, and allow rapid growth of large asters made of short, unstable microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that is tested in the current work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1fb92c74-df76-45d0-9578-47e20337e30e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C26",
+      "claim": "The quantitative biophysical model predicts that asters can expand even when individual microtubules turn over and disappear by depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "It predicts that asters can indeed expand even when individual microtubules turn over and disappear by depolymerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "5bf01525-26c5-4348-9b23-f7f1ee8d4699",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C27",
+      "claim": "In the collective growth regime, aster expansion is driven by the increase in the total number of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regime, aster expansion is driven by the increase in the total number of microtubules, and the resulting aster is a network of short interconnected microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0d4a6250-9292-42e2-a6a3-4e7e5f8503a7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C28",
+      "claim": "The transition from stationary to growing asters depends on the balance between polymerization dynamics and nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition from stationary to growing asters depends on the balance between polymerization dynamics and nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f7147e7a-f89f-44f4-bd8e-b0a35a2cd840",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C29",
+      "claim": "At the transition from stationary to growing asters, the theory predicts a minimum rate at which asters grow, defined as the gap velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "At this transition, our theory predicts a minimum rate at which asters grow, which we define as the gap velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "457af674-02db-4a3b-b4ba-22d6cb07670e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C30",
+      "claim": "The gap velocity arises due to the dynamic instability of microtubule polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "This gap velocity arises due to the dynamic instability of microtubule polymerization and excludes a wide class of alternative models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "20e490a9-598d-43d3-9da8-05658006ade7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C31",
+      "claim": "The gap velocity excludes a wide class of alternative models.",
+      "claim_type": "EXPLICIT",
+      "source": "This gap velocity arises due to the dynamic instability of microtubule polymerization and excludes a wide class of alternative models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing the model predictions to alternative models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0d7027e4-65a7-4bc2-8661-a76207385681",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C32",
+      "claim": "The mode of aster growth allows the cell to assemble asters with varying polymer densities at consistently large speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, this mode of aster growth allows the cell to assemble asters with varying polymer densities at consistently large speeds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8e44c02a-deaf-44ef-a38f-e55f2bb6444e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C33",
+      "claim": "Biochemical perturbations in cell-free reconstitution experiments show slowing down and eventual arrest of aster growth with a substantial gap velocity at the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cell-free reconstitution approach (Field et al., 2014; Nguyen et al., 2014), we perform biochemical perturbations and observe the slowing down and eventual arrest of aster growth with a substantial gap velocity at the transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0207904a-dad6-4484-a2d3-5f3c83927314",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C34",
+      "claim": "The growth of large interphase asters is an emergent property of short microtubules that constantly turnover and self-amplify.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the growth of large interphase asters is an emergent property of short microtubules that constantly turnover and self-amplify.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from combining theory and experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "936b2c66-ddea-4a11-b2fa-aa81af7ec712",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C35",
+      "claim": "The polymerization rate vg for large asters growing in Xenopus egg cytoplasm is 30 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerization rate\tvg\t30 \u03bcm/min\tMeasured from growing plus ends and EB1 comets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "b93ecb3a-2a16-498e-872e-5ae270285bb4",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C36",
+      "claim": "The depolymerization rate vs for large asters growing in Xenopus egg cytoplasm is 42 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Depolymerization rate\tvs\t42 \u03bcm/min\tMeasured from shrinking plus ends (Ishihara et al., 2014a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "a72c88ec-ffe2-4702-a5bc-0e3c73cea24e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C37",
+      "claim": "The catastrophe rate fcat for large asters growing in Xenopus egg cytoplasm is 3.3 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Catastrophe rate\tfc\u2062a\u2062t\t3.3 min\u22121\tMeasured from EB1 comet lifetimes (see Materials and methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8339ebd0-3a81-425c-8dce-43f299ae6304",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C38",
+      "claim": "The rescue rate fres for large asters growing in Xenopus egg cytoplasm is 2.0\u00b10.3 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Rescue rate\tfr\u2062e\u2062s\t2.0\u00b10.3 min\u22121\tEstimated from Equations (4) and (6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from theoretical equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "95da7817-7a4a-4647-8ca1-ef76eb7f7035",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C39",
+      "claim": "The autocatalytic nucleation rate r for large asters growing in Xenopus egg cytoplasm is 2.1\u00b10.2 min\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Autocatalytic nucleation rate\tr\t2.1\u00b10.2 min\u22121\tEstimated from Equations (4) and (6)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from theoretical equations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "575c330b-f125-491f-829a-abbb11d3c193",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C40",
+      "claim": "The carrying capacity of growing ends K for large asters growing in Xenopus egg cytoplasm is 0.4 \u03bcm\u22122.",
+      "claim_type": "EXPLICIT",
+      "source": "Carrying capacity of growing ends\tK\t0.4 \u03bcm\u22122\tEstimated from comparing Cgb\u2062u\u2062l\u2062k to predicted (see SI)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from comparing data to model predictions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "a3ab0c8b-a5f7-422e-9ba3-f1e2eefa64c2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C41",
+      "claim": "The mean microtubule length for large asters growing in Xenopus egg cytoplasm is 16 \u00b1 2 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Mean microtubule length\t\u27e8l\u27e9\t16 \u00b1 2 \u03bcm\tEstimated from from dynamics parameters (see SI)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from dynamics parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "a9444c01-9dab-4822-ad18-18cd1ce11a48",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C42",
+      "claim": "The aster velocity V for large asters growing in Xenopus egg cytoplasm is 22.3\u00b12.6 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Aster velocity\tV\t22.3\u00b12.6 \u03bcm/min\tMeasured from rate of aster radius increase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "630d34a5-245c-4a05-8084-c5ada9dbae2e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C43",
+      "claim": "The gap velocity Vgap for large asters growing in Xenopus egg cytoplasm is 12.8\u00b11.7 \u03bcm/min.",
+      "claim_type": "EXPLICIT",
+      "source": "Gap velocity\tVg\u2062a\u2062p\t12.8\u00b11.7 \u03bcm/min\tMeasured from aster growth at 320 nM MCAK-Q710",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "149b0f52-10df-4471-a54b-ce6b8bdcbdf3",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C44",
+      "claim": "The bulk growing plus end density Cgbulk for large asters growing in Xenopus egg cytoplasm is 0.053\u00b10.030 \u03bcm\u22122.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk growing plus end density\tCgb\u2062u\u2062l\u2062k\t0.053\u00b10.030 \u03bcm\u22122\tMeasured from EB1 comet density (Ishihara et al., 2014a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "4adbdd2b-111e-4ecb-99e8-d18d16d1bcd5",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C45",
+      "claim": "Parameter J describes the tendency of microtubules to grow or shrink.",
+      "claim_type": "EXPLICIT",
+      "source": "This parameter describes the tendency of microtubules to grow or shrink.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the parameter J.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "ba86d42a-10c9-4043-8443-aa7b06b32962",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C51",
+      "claim": "In the standard model with bounded dynamics, microtubule loss is balanced by nucleation of new microtubules at the centrosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This microtubule loss is balanced by nucleation of new microtubules at the centrosomes, the only place where nucleation is allowed in the standard model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the standard model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "052893cb-1300-45b4-bec6-4a5d35600a72",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C55",
+      "claim": "In the collective growth regime, growth occurs because more microtubules are nucleated than lost, and new microtubules are typically nucleated further along the expansion direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth occurs because more microtubules are nucleated than lost, and new microtubules are typically nucleated further along the expansion direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism in the new model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "fcfaa801-4949-42ac-837d-ee701eccbaf8",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C56",
+      "claim": "Self-amplifying propagation of microtubules is possible only for sufficiently high nucleation rates necessary to overcome microtubule loss and sustain collective growth.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show below, this self-amplifying propagation of microtubules is possible only for sufficiently high nucleation rates necessary to overcome microtubule loss and sustain collective growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the model that is demonstrated later.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "21babc9a-e967-4241-ba99-2d49f4ae5eef",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C58",
+      "claim": "The nucleation rate could depend on the local density of growing plus ends if they serve as nucleation sites or the local polymer density if nucleation occurs throughout a microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate could depend on the local density of growing plus ends if they serve as nucleation sites or the local polymer density if nucleation occurs throughout a microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes possible mechanisms for nucleation in the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "30f4ddb3-6b3a-4f4e-b8e2-83aad8792d41",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C59",
+      "claim": "New microtubules have zero length and tend to grow radially due to mechanical interactions with the existing microtubule network.",
+      "claim_type": "EXPLICIT",
+      "source": "The new microtubules have zero length and tend to grow radially due to mechanical interactions with the existing microtubule network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "fd1d77a9-0917-402d-9024-a12633d90e70",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C60",
+      "claim": "Non-centrosomal microtubules disappear when they shrink back to their minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "These non-centrosomal microtubules disappear when they shrink back to their minus ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "22089ff6-8922-4f4f-9b91-1e6d279c802c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C61",
+      "claim": "The model assumptions are broadly consistent with known microtubule physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assumptions are broadly consistent with known microtubule physiology (Clausen and Ribbeck, 2007; Petry et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "7cc4edb1-ada3-444e-a7b2-ff47973d35c7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C62",
+      "claim": "There is strong evidence for nucleation away from centrosomes in egg extract by microtubule counting in growing asters.",
+      "claim_type": "EXPLICIT",
+      "source": "and we found strong evidence for nucleation away from centrosomes in egg extract by microtubule counting in growing asters (Ishihara et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "5b3c9031-668d-4d6f-b551-6edb4cfb2033",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C63",
+      "claim": "Without negative feedback, autocatalytic processes lead to exponential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Without negative feedback, autocatalytic processes lead to exponential growth, but there are several lines of evidence for an apparent 'carrying capacity' of microtubules in a given cytoplasmic volume (Clausen and Ribbeck, 2007; Ishihara et al., 2014a; Petry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about autocatalytic processes, with citations supporting the existence of carrying capacity.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0ee5409b-0b13-4d85-bc97-f15d1f5203f4",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C64",
+      "claim": "There is evidence for an apparent 'carrying capacity' of microtubules in a given cytoplasmic volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Without negative feedback, autocatalytic processes lead to exponential growth, but there are several lines of evidence for an apparent 'carrying capacity' of microtubules in a given cytoplasmic volume (Clausen and Ribbeck, 2007; Ishihara et al., 2014a; Petry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cc62e135-3686-4b23-a99a-a8d23ac8ab1d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C65",
+      "claim": "Saturation is inevitable since the building blocks of microtubules are present at a fixed concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Saturation is inevitable since the building blocks of microtubules are present at a fixed concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on biological constraints.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "d25662f7-31db-4579-a06d-545aa7f82d19",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C66",
+      "claim": "Autocatalytic nucleation is expressed as a logistic function of the local density of growing plus ends, which is qualitatively consistent with local depletion of nucleation factors such as the gamma-tubulin ring complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, we impose a carrying capacity by expressing autocatalytic nucleation as a logistic function of the local density of growing plus ends, which is qualitatively consistent with local depletion of nucleation factors such as the gamma-tubulin ring complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a modeling choice consistent with biological mechanisms.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1d1ac04d-6616-491c-ae2d-0bbb79d8ad42",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C67",
+      "claim": "The type of negative feedback does not affect the rate of aster growth, which is determined entirely by the dynamics at the leading edge of a growing aster where the microtubule density is small and negative feedback can be neglected.",
+      "claim_type": "EXPLICIT",
+      "source": "In SI, we show that the type of negative feedback does not affect the rate of aster growth, which is determined entirely by the dynamics at the leading edge of a growing aster where the microtubule density is small and negative feedback can be neglected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the theoretical analysis in the SI.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "187d2ca2-6e2a-4dc3-af8a-7a3b83fb89ee",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C68",
+      "claim": "With relatively low nucleation rates and J<0, microtubule populations reached a steady-state profile confined near the centrosome reminiscent of an aster in the standard model with bounded microtubule dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "With relatively low nucleation rates and J<0, microtubule populations reached a steady-state profile confined near the centrosome reminiscent of an aster in the standard model with bounded microtubule dynamics (Figure 2A left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from numerical simulations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "d4e67b2e-86e4-4202-b636-fd655ebffe07",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C69",
+      "claim": "When the nucleation rate was increased, the microtubule populations expanded as a traveling wave with an approximately invariant shape and constant microtubule density at the periphery.",
+      "claim_type": "EXPLICIT",
+      "source": "When the nucleation rate was increased, the microtubule populations expanded as a traveling wave with an approximately invariant shape and constant microtubule density at the periphery (Figure 2A right)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from numerical simulations shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "887b24b1-dda3-41ca-a052-9af108ddff41",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C70",
+      "claim": "The traveling wave behavior is consistent with the growth of interphase asters in reconstitution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the growth of interphase asters in our reconstitution experiments (Figure 2B and Ishihara et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e983d57b-d21b-413a-b8c8-fb405f3ce740",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C71",
+      "claim": "The model predicted two qualitatively different states: stationary and growing asters.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model predicted two qualitatively different states: stationary and growing asters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the numerical simulations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "62d16b26-5471-43d5-87bb-53ab7a1fb98c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C72",
+      "claim": "Asters expand at a constant rate with time-invariant profiles of the plus end density.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental measurements confirm that asters expand at a constant rate with time-invariant profiles of the plus end density, as predicted by our model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by experimental measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cbd63c31-3b4d-47e9-a5d8-4b197026e5ce",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C73",
+      "claim": "The plus end densities were estimated as EB1 comet density during aster growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The plus end densities were estimated as EB1 comet density during aster growth as previously described (Ishihara et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "3e0c32aa-2d5a-4009-b97f-13ef2fee6dfb",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C74",
+      "claim": "In the absence of autocatalytic nucleation (r=0), the model reduces to the standard model and predicts that asters only grow when J>0 with V=J.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of autocatalytic nucleation (r=0), our model reduces to the standard model and predicts that asters only grow when J>0 with V=J (Figure 3A blue line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and is a result from the analytical solution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "bec58d1d-a296-4587-80ca-00b4b82b818c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C75",
+      "claim": "When nucleation is allowed (r>0), the aster velocity increases with r and asters can grow even when individual microtubules are unstable J<0.",
+      "claim_type": "EXPLICIT",
+      "source": "When nucleation is allowed (r>0), the aster velocity increases with r and asters can grow even when individual microtubules are unstable J<0 (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 3A and B and is a result from the analytical solution.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "5fd61775-60cf-47f0-8a95-6840722c8db3",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C76",
+      "claim": "During collective growth, the aster expands radially because more microtubules are nucleated than lost at the front.",
+      "claim_type": "EXPLICIT",
+      "source": "During this collective growth, the aster expands radially because more microtubules are nucleated than lost at the front.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "989e57ef-ad8a-42e7-9917-36a12036072a",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C77",
+      "claim": "In the aster bulk, nucleation is reduced from the carrying capacity, and the aster exists in the dynamic balance between microtubule gain due to nucleation and loss due to depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "In the aster bulk, nucleation is reduced from the carrying capacity, and the aster exists in the dynamic balance between microtubule gain due to nucleation and loss due to depolymerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e8c698d7-3e6f-481d-9fe5-af52aa2eaa22",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C78",
+      "claim": "Since microtubules are in the bounded regime, their lifetime is short, and they disappear before reaching an appreciable length.",
+      "claim_type": "EXPLICIT",
+      "source": "Since microtubules are in the bounded regime, their lifetime is short, and they disappear before reaching an appreciable length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the bounded regime definition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "b08b3892-422d-4ee7-963c-47a5d225b3a6",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C79",
+      "claim": "Nucleation not only increases the number of microtubules, but also controls the growth rate and spatial organization of asters enabling them to span length scales far exceeding the length of an individual microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, nucleation not only increases the number of microtubules, but also controls the growth rate and spatial organization of asters enabling them to span length scales far exceeding the length of an individual microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "5b4b8654-712e-4076-b927-baded08dcd9c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C81",
+      "claim": "Microtubules constantly disappear as their length shrinks to zero, and the nucleation of new microtubules needs to occur frequently enough to overcome the microtubule loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, microtubules constantly disappear as their length shrinks to zero, and the nucleation of new microtubules needs to occur frequently enough to overcome the microtubule loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the critical nucleation rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "59dd6965-a8c8-4a01-8d5b-67c3e23db963",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C82",
+      "claim": "The right hand side of the critical nucleation rate equation is the inverse of the average time that a microtubule spends in the growing state before shrinking to zero-length and disappearing.",
+      "claim_type": "EXPLICIT",
+      "source": "The right hand side of this equation is the inverse of the average time that a microtubule spends in the growing state before shrinking to zero-length and disappearing (SI).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the critical nucleation rate equation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8810a0bf-f92c-47fd-8ffc-5cc2ad1447d8",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C83",
+      "claim": "Aster growth requires, on average, a microtubule to nucleate at least one new microtubule during its lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aster growth requires, on average, a microtubule to nucleate at least one new microtubule during its lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the critical nucleation rate condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "49c9b097-08ee-4fea-a2ee-6a98fd7e6de5",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C87",
+      "claim": "The critical nucleation rate conveys the main implication of the theory: the balance between polymerization dynamics and autocatalytic nucleation defines the quantitative condition for continuous aster growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The critical nucleation rate conveys the main implication of our theory: the balance between polymerization dynamics and autocatalytic nucleation defines the quantitative condition for continuous aster growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the theoretical findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "ae4e65eb-e625-475c-b798-05ffc05e597f",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C89",
+      "claim": "The finite jump in the aster velocity is a consequence of microtubules with finite length undergoing dynamic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "This finite jump in the aster velocity is a consequence of microtubules with finite length undergoing dynamic instability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the gap velocity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cbc80626-1cc1-429b-b13a-c404bb61efb3",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C90",
+      "claim": "The finite jump in aster velocity is in sharp contrast to the behavior of reaction-diffusion systems, where traveling fronts typically become infinitesimally slow before ceasing to propagate.",
+      "claim_type": "EXPLICIT",
+      "source": "and is in sharp contrast to the behavior of reaction-diffusion systems, where traveling fronts typically become infinitesimally slow before ceasing to propagate (Chang and Ferrell, 2013; Hallatschek and Korolev, 2009; M\u00e9ndez et al., 2007; van Saarloos, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other models with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c32985e7-613d-4bcf-9d27-dff7b89aa6ea",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C97",
+      "claim": "The shorter the microtubules, the more explosive the transition becomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the shorter the microtubules, the more explosive this transition becomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the relationship between Vgap and microtubule length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "afbc01bc-1100-4faa-a50c-508abc8f9a84",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C99",
+      "claim": "The density is close to zero during the transition from stationary to growing asters, but quickly increases as the nucleation rate becomes larger.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the density is close to zero during the transition from stationary to growing asters, but quickly increases as the nucleation rate becomes larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the relationship between density and r-rc.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f5e66081-4118-437e-be8f-c231248cbcb2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C100",
+      "claim": "Cells can achieve rapid aster growth while keeping the density of the resulting microtubule network sufficiently low.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, cells can achieve rapid aster growth while keeping the density of the resulting microtubule network sufficiently low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "48dcdab6-4946-4714-860e-a5bc47736806",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C101",
+      "claim": "The low density might be beneficial because of its mechanical properties or because it simply requires less tubulin to produce and energy to maintain.",
+      "claim_type": "EXPLICIT",
+      "source": "The low density might be beneficial because of its mechanical properties or because it simply requires less tubulin to produce and energy to maintain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological significance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "ef66bd94-a725-4f1c-a4c3-d1b7610cc20e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C103",
+      "claim": "In all cases of parameter tuning, the onset of aster growth is accompanied by a discontinuous increase in the aster velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, we find that the onset of aster growth is accompanied by a discontinuous increase in the aster velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general result from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1b733eb5-9579-4bc8-9551-c15addc811b0",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C104",
+      "claim": "The finite jump in aster velocity is predicted in a wide range of alternative scenarios including feedback regulation of plus end dynamics and aster growth by microtubule polymer-stimulated nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "The finite jump in aster velocity is similarly predicted in a wide range of alternative scenarios including (i) feedback regulation of plus end dynamics (SI and Figure 3\u2014figure supplement 1) and (ii) aster growth by microtubule polymer-stimulated nucleation (SI and Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in supplementary figures and is a result from additional theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "04d0b536-8129-49b1-93f3-97b658ea9187",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C105",
+      "claim": "The gap velocity is a general prediction of the collective behavior of microtubules that are short-lived.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the gap velocity is a general prediction of the collective behavior of microtubules that are short-lived.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the theoretical findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "9188fdb9-5fb0-4c0c-836b-742be330d23b",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C106",
+      "claim": "It is possible to transform a growing interphase aster to a small, stationary aster by tuning polymerization dynamics and/or nucleation via biochemical perturbations in Xenopus egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our theory, we reasoned that it would be possible to transform a growing interphase aster to a small, stationary aster by tuning polymerization dynamics and/or nucleation via biochemical perturbations in Xenopus egg extract.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the theory that is tested experimentally.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1c3548b2-2c8e-42c1-ac9c-3ec5b336f8d7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C107",
+      "claim": "Reconstitution experiments were performed in undiluted interphase cytoplasm supplied with anti-Aurora kinase A antibody coated beads, which nucleate microtubules and initiate aster growth under the coverslip.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we performed reconstitution experiments in undiluted interphase cytoplasm supplied with anti-Aurora kinase A antibody coated beads, which nucleate microtubules and initiate aster growth under the coverslip (Field et al., 2014; Ishihara et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "03d7a8b1-5040-4447-921e-e5253871c3ec",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C108",
+      "claim": "MCAK/KIF2C is classically characterized as the main catastrophe-promoting factor in the extract system.",
+      "claim_type": "EXPLICIT",
+      "source": "We settled on perturbation of MCAK/KIF2C, classically characterized as the main catastrophe-promoting factor in the extract system (Kinoshita et al., 2001; Walczak et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cb1038d7-4e1a-4192-a55d-af03cb929d27",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C109",
+      "claim": "In control reactions, aster radius increased at velocities of 20.3\u00b13.1 \u03bcm/min (n = 21 asters).",
+      "claim_type": "EXPLICIT",
+      "source": "In control reactions, aster radius, visualized by the plus end marker EB1-mApple, increased at velocities of 20.3\u00b13.1 \u03bcm/min (n = 21 asters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "af3cdb50-2b26-4907-a1f9-fe4e3a2341d8",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C110",
+      "claim": "No detectable changes to aster growth were observed with the addition of the wild type MCAK protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw no detectable changes to aster growth with the addition of the wild type MCAK protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "234af20f-5e72-409c-95a7-d24bc372028e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C111",
+      "claim": "Addition of MCAK-Q710 decreased aster velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, addition of MCAK-Q710 (Moore and Wordeman, 2004) decreased aster velocity (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4A and B and is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "938bfcd8-38c2-4afe-a822-b0d18f085a9a",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C112",
+      "claim": "At concentrations of MCAK-Q710 above 320 nM, most asters had small radii with very few microtubules growing from the Aurora A beads.",
+      "claim_type": "EXPLICIT",
+      "source": "At concentrations of MCAK-Q710 above 320 nM, most asters had small radii with very few microtubules growing from the Aurora A beads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f469cf0e-a50e-4b3e-bca6-450504fdd982",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C113",
+      "claim": "The behavior at high MCAK-Q710 concentrations is consistent with any change of parameter(s) that reduces the aster velocity and arrests growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, this behavior is consistent with any change of parameter(s) that reduces the aster velocity (Equation 4) and arrests growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results in the context of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e57d01e0-ed22-41d7-9984-d9928284867b",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C114",
+      "claim": "At 320 nM MCAK-Q710 concentration, bimodal behavior was observed with some asters increasing in radius at moderate rates while other asters maintained a stable size before disappearing.",
+      "claim_type": "EXPLICIT",
+      "source": "At 320 nM MCAK-Q710 concentration, we observed bimodal behavior. Some asters increased in radius at moderate rates, while other asters maintained a stable size before disappearing, presumably due to the decrease of centrosomal nucleation over time (Figure 4\u2014figure supplement 1 and Ishihara et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "55f3c822-899f-4747-9eed-2dc0263c3621",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C115",
+      "claim": "No asters were observed growing at velocities between 0 and 9 \u03bcm/min at 320 nM MCAK-Q710.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed no asters growing at velocities between 0 and 9 \u03bcm/min (Figure 4B and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in Figure 4B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "02a83e77-2cac-4425-b847-b3009450ddd0",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C117",
+      "claim": "Experiments with Tetrahymena pellicles as initiating centers confirmed that the failure of aster growth at high concentrations of MCAK-Q710 is caused by changes in aster growth rather than nucleation from the beads.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the failure of aster growth at high concentrations of MCAK-Q710 is caused by the changes in aster growth rather than nucleation from the beads, we repeated the experiments with Tetrahymena pellicles as the initiating centers instead of Aurora A beads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "39cdd08e-faba-45d1-a3a4-968cacd575e0",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C118",
+      "claim": "Pellicle initiated asters exhibited a similar critical concentration of MCAK-Q710 compared to Aurora A bead asters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found pellicle initiated asters to exhibit a similar critical concentration of MCAK-Q710 compared to Aurora A bead asters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0584730e-2393-4d54-8a0f-38ae2d87d59e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C119",
+      "claim": "A significant number of microtubules persisted on pellicles even after 60 min at the highest concentration of MCAK-Q710, while the majority of Aurora A beads lost growing microtubules over time.",
+      "claim_type": "EXPLICIT",
+      "source": "While the majority of Aurora A beads subjected to the highest concentration of MCAK-Q710 lost growing microtubules over time, a significant number of microtubules persisted on pellicles even after 60 min (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "d40eb1b4-b858-43e3-b356-72081e436992",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C120",
+      "claim": "The radii of pellicle asters at high MCAK-Q710 concentrations did not change, consistent with the prediction of stationary asters.",
+      "claim_type": "EXPLICIT",
+      "source": "The radii of these asters did not change, consistent with our prediction of stationary asters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation consistent with the model prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "62c76886-5f7b-475f-b834-9a200d98f6a7",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C121",
+      "claim": "The pellicle experiments confirmed the main experimental result of small, stationary asters and that the nature of transition is consistent with the existence of a gap velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pellicle experiments confirmed our main experimental result of small, stationary asters and that the nature of transition is consistent with the existence of a gap velocity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f3c51142-5650-4b75-920d-aa101dd051ef",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C122",
+      "claim": "Neither the polymerization nor the catastrophe rate changed at the MCAK-Q710 concentrations corresponding to the transition between growing and stationary asters.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither the polymerization nor the catastrophe rate changed at the MCAK-Q710 concentrations corresponding to the transition between growing and stationary asters (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "f2c80139-ad40-431b-a891-210e568533fa",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C123",
+      "claim": "MCAK-Q710 has been reported to reduce microtubule polymer levels in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MCAK-Q710 has been reported to reduce microtubule polymer levels in cells (Moore and Wordeman, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "7f101cc1-9be5-40d9-9b95-8d6dadffa707",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C124",
+      "claim": "The precise effect of MCAK-Q710 on polymerization dynamics and/or nucleation remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "but its precise effect on polymerization dynamics and/or nucleation remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "b7dd49e8-c989-4eab-a166-03a0ea67ff06",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C125",
+      "claim": "The experimental data are consistent with three scenarios for how MCAK-Q710 antagonizes microtubule assembly: increased depolymerization rate, decreased rescue rate, and/or decreased nucleation rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are consistent with the following three scenarios for how MCAK-Q710 antagonizes microtubule assembly: (i) increased depolymerization rate, (ii) decreased rescue rate, and/or (iii) decreased nucleation rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "9f9dac08-439a-4561-9f9d-ef0d10ec93a6",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C126",
+      "claim": "The standard model of aster growth may not explain the morphology of asters observed in all animal cells, including those of extreme size.",
+      "claim_type": "EXPLICIT",
+      "source": "It has not been clear whether the standard model of aster growth can explain the morphology of asters observed in all animal cells, including those of extreme size (Mitchison et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about uncertainty in the field with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "84cef3fd-64a0-41f9-a312-c6eed9626685",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C127",
+      "claim": "A biophysical framework incorporating microtubule polymerization dynamics and autocatalytic nucleation was constructed.",
+      "claim_type": "EXPLICIT",
+      "source": "To resolve this question, we constructed a biophysical framework that incorporates microtubule polymerization dynamics and autocatalytic nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the work done in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c88ca8ef-d4ca-4e82-ae17-472c03476c4e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C128",
+      "claim": "Numerical simulations and analytical solutions recapitulated both stationary and continuously growing asters in a parameter-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical simulations and analytical solutions (Figures 2 and 3, and Figure 3\u2014figure supplements 1 and 2) recapitulated both stationary and continuously growing asters in a parameter-dependent manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the figures and is a result from the theoretical work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "52355018-73da-46a2-b1b6-bea00ba2de14",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C129",
+      "claim": "The explosive transition from 'growth' to 'no growth' was predicted to involve a finite aster velocity, which was confirmed in biochemical experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the explosive transition from 'growth' to 'no growth' was predicted to involve a finite aster velocity, which we confirmed in biochemical experiments (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4 and combines theoretical predictions with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1b5917af-697d-4bd3-86c6-99839c6ca4a5",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C130",
+      "claim": "The biophysical model offers a biologically appealing explanation to aster growth and allows estimation of parameters that are not directly accessible: the rescue and autocatalytic nucleation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our biophysical model offers a biologically appealing explanation to aster growth and allows us to estimate parameters that are not directly accessible: the rescue and autocatalytic nucleation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's utility.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0a3de8d8-cbbd-4b30-8356-db4b09ee84a9",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C131",
+      "claim": "The inferred value of autocatalytic nucleation r = 2.1 min\u22121 is comparable to previous estimates: 1.5 min\u22121 and 1 min\u22121 in meiotic egg extract supplemented with RanGTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our inferred value of autocatalytic nucleation r = 2.1 min\u22121 is comparable to previous estimates: 1.5 min\u22121(Clausen and Ribbeck, 2007) and 1 min\u22121 (Petry et al., 2013) in meiotic egg extract supplemented with RanGTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the estimated parameter to values from the literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "a8909a83-c3d5-43a6-ab6c-1b9114512bed",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C133",
+      "claim": "The model recapitulates aster growth with reasonable parameter values and offers a new understanding for how asters grow to span large cytoplasms even when individual microtubules are unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model recapitulates aster growth with reasonable parameter values and offers a new understanding for how asters grow to span large cytoplasms even when individual microtubules are unstable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model's achievements.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e8175b80-7347-46a5-807a-1a5742b3576e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C134",
+      "claim": "Both plus-end-stimulated and polymer-stimulated nucleation models have qualitatively similar behavior including the gap velocity and recapitulate experimental observations of asters growing as traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models of nucleation have qualitatively similar behavior including the gap velocity and recapitulate experimental observations of asters growing as traveling waves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing different versions of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "29a31cee-2a13-4e16-bb2f-b9c0306cc80c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C135",
+      "claim": "The qualitative conclusions do not depend on the precise molecular mechanism of autocatalytic nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in our case, the qualitative conclusions do not depend on the precise molecular mechanism of autocatalytic nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing different models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e945d692-83c7-4472-8587-53fe3320a39d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C136",
+      "claim": "The explosive transition characterized by the gap velocity is a general prediction of modeling microtubules as self-amplifying elements whose lifetime depends on their length.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the explosive transition characterized by the gap velocity is a general prediction of modeling microtubules as self-amplifying elements whose lifetime depends on their length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion from the theoretical work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8acf2272-6ffa-4e09-a5a9-eec26b327b4b",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C138",
+      "claim": "With polymer-stimulated nucleation, the nucleation rate has units of \u03bcm\u22121 min\u22121, and describes the number of new microtubules generated per micron of existing microtubule per minute.",
+      "claim_type": "EXPLICIT",
+      "source": "With polymer-stimulated nucleation, the nucleation rate has units of \u03bcm\u22121 min\u22121, and describes the number of new microtubules generated per micron of existing microtubule per minute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the parameter in the alternative model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "9c5b8c87-5289-4f13-9807-a99a736a25d6",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C139",
+      "claim": "The difference between plus-end-stimulated and polymer-stimulated nucleation has important implications for the structural mechanism of microtubule nucleation and for the prediction of cell-scale phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference has important implications for the structural mechanism of microtubule nucleation and for the prediction of cell-scale phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the significance of distinguishing the mechanisms.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "691aa5bd-ddaf-4737-a461-1a32fddae5b6",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C140",
+      "claim": "Small mitotic asters are represented by stationary asters found in the regime of bounded polymerization dynamics J<0 and low nucleation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Small mitotic asters are represented by stationary asters found in the regime of bounded polymerization dynamics J<0 and low nucleation rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the phase diagram in Figure 5.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "bcd57c8c-e9ac-4a14-a92a-b2a3f6234eb2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C141",
+      "claim": "Model parameters must change as cells transition from mitosis to interphase to produce large growing asters.",
+      "claim_type": "EXPLICIT",
+      "source": "These model parameters must change as cells transition from mitosis to interphase to produce large growing asters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model about cell cycle regulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0d711998-2684-4d9c-9f0a-484773f4de65",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C142",
+      "claim": "Polymerization dynamics becomes more favorable to elongation during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerization dynamics becomes more favorable to elongation during interphase (Belmont et al., 1990; Verde et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "26922332-143e-405d-9972-e1912822d4cf",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C143",
+      "claim": "The change in polymerization dynamics during interphase may be accompanied by an increased autocatalytic nucleation of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be accompanied by an increased autocatalytic nucleation of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about cell cycle regulation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cadbf20d-c034-446f-9ea7-10108e30646e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C146",
+      "claim": "The individual growth regime is inconsistent with the steady-state density of microtubules at the periphery of large asters in both fish and frog embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "The individual growth regime is also inconsistent with the steady-state density of microtubules at the periphery of large asters in both fish and frog embryos (Ishihara et al., 2014a; W\u00fchr et al., 2008, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e5168eb5-24c7-49e9-adef-1a2ecefba32b",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C147",
+      "claim": "Experiments in egg extracts confirm the addition of new microtubules during aster growth contrary to the predictions of the standard model.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments in egg extracts further confirm the addition of new microtubules during aster growth (Ishihara et al., 2014a) contrary to the predictions of the standard model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "de80cc7a-8659-4f28-885a-67f11646b2bb",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C150",
+      "claim": "The collective growth regime is called so because individual microtubules are much shorter (estimated mean length of 16 \u03bcm \u00b1 2 \u03bcm) than the aster radius (hundreds of microns).",
+      "claim_type": "EXPLICIT",
+      "source": "We call this the 'collective growth' regime because individual microtubules are much shorter (estimated mean length of 16 \u03bcm \u00b1 2 \u03bcm, Table 1) than the aster radius (hundreds of microns).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the terminology with reference to data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "aba1071b-4997-4af1-a6f6-6c0559e1cd78",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C151",
+      "claim": "Predictions of the collective growth model are fully confirmed by the biochemical perturbation via MCAK-Q710.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions of this model are fully confirmed by the biochemical perturbation via MCAK-Q710.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "e48dda82-29c0-44f4-94ea-aafc15be672e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C152",
+      "claim": "The finite jump in the aster velocity is in sharp contrast to the prediction of the standard models of spatial growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The finite jump in the aster velocity (Figure 4) is in sharp contrast to the prediction of the standard models of spatial growth (Fisher, 1937; Kolmogorov and Petrovskii, 1937; Skellam, 1951; van Saarloos, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison to other models with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "5c93e920-bcf3-4638-ad03-03e3c531de8e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C153",
+      "claim": "Spatial growth is typically modeled by reaction-diffusion processes that account for birth events and random motion, which, in the context of microtubules, correspond to the nucleation and dynamic instability of plus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial growth is typically modeled by reaction-diffusion processes that account for birth events and random motion, which, in the context of microtubules, correspond to the nucleation and dynamic instability of plus ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of standard models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "984922f1-db3a-44a8-b26d-73ba04495625",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C154",
+      "claim": "Reaction-diffusion models neglect internal dynamics of the agents such as the length of a microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "Reaction-diffusion models, however, neglect internal dynamics of the agents such as the length of a microtubule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critique of standard models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c2a10f8c-9573-4599-83f1-45128e648921",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C155",
+      "claim": "Reaction-diffusion models inevitably predict a continuous, gradual increase in the aster velocity as the model parameters are varied.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, such models inevitably predict a continuous, gradual increase in the aster velocity as the model parameters are varied (Chang and Ferrell, 2013; Hallatschek and Korolev, 2009; M\u00e9ndez et al., 2007; van Saarloos, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the behavior of reaction-diffusion models with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "4c5e8d71-030b-41ad-8d8e-3edd18563ae2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C156",
+      "claim": "The observation of finite velocity jump provides strong support for the current model and rules out a very wide class of models that reproduce the overall phenomenology of aster growth including the constant velocity and profile shape.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of finite velocity jump provides a strong support for our model and rules out a very wide class of models that reproduce the overall phenomenology of aster growth including the constant velocity and profile shape (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion about model validation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "1a00c028-d614-420a-8bdc-28de96284496",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C158",
+      "claim": "The theory allows for independent regulation of aster growth rate and microtubule density through the control of the nucleation rate and microtubule polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theory allows for independent regulation of aster growth rate and microtubule density through the control of the nucleation rate and microtubule polymerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "41367879-079f-4260-8efe-2aa577e590c2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C159",
+      "claim": "Cells have a lot of flexibility in optimizing aster properties and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cells have a lot of flexibility in optimizing aster properties and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "27227d57-86c0-46c8-8d73-e1d51566730c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C160",
+      "claim": "The existence of a gap velocity results in switch-like transition from quiescence to rapid growth and allows cells to drastically alter aster morphology with a small change of parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a gap velocity results in switch-like transition from quiescence to rapid growth and allows cells to drastically alter aster morphology with a small change of parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "25b66c32-4e5b-4306-8e19-1657bf4acea5",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C161",
+      "claim": "The rapid growth does not require high microtubule density inside asters, which can be tuned independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the rapid growth does not require high microtubule density inside asters, which can be tuned independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model properties.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "c5d2d281-78ef-4422-903c-8ea8c4d96765",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C162",
+      "claim": "Collective growth produces a meshwork of short microtubules with potentially desirable properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Collective growth produces a meshwork of short microtubules with potentially desirable properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "6a6e473a-cc0f-4935-9662-8eac8d07c3f2",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C163",
+      "claim": "The network is robust to microtubule severing or the spontaneous detachment from the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the network is robust to microtubule severing or the spontaneous detachment from the centrosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predicted property of the collective growth regime.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "cc4414a3-7dfb-4219-ab7e-3c66d2c8b14d",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C164",
+      "claim": "The network can span arbitrarily large distances yet disassemble rapidly upon mitotic entry.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the network can span arbitrarily large distances yet disassemble rapidly upon mitotic entry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predicted property of the collective growth regime.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "2c59d04a-e3da-4e9d-ae9b-a5c64a7d8578",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C165",
+      "claim": "The structure, and therefore the mechanical properties, of the network do not depend on the distance from the centrosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the structure, and therefore the mechanical properties, of the network do not depend on the distance from the centrosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a predicted property of the collective growth regime.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "eda6345a-f028-4a63-a2a1-150a2a81da53",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C166",
+      "claim": "The physical interconnection of the microtubules may facilitate the transduction of mechanical forces across the cell in a way unattainable in the radial array predicted by the standard model.",
+      "claim_type": "EXPLICIT",
+      "source": "As a speculation, the physical interconnection of the microtubules may facilitate the transduction of mechanical forces across the cell in a way unattainable in the radial array predicted by the standard model (Tanimoto et al., 2016; W\u00fchr et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional significance with citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "29744414-48fc-4a05-9f8b-cbc7168bdefc",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C167",
+      "claim": "The regime of collective growth parallels the assembly of other large cellular structures from short, interacting filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "The regime of collective growth parallels the assembly of other large cellular structures from short, interacting filaments (Pollard and Borisy, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to other biological systems with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "4eb5f9a0-0a7c-4caa-b1ea-4f9bdc1c6346",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C168",
+      "claim": "The regime of collective growth is particularly reminiscent of how meiosis-II spindles self-assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "and is particularly reminiscent of how meiosis-II spindles self-assemble (Burbank et al., 2007; Brugu\u00e9s et al., 2012; Brugu\u00e9s and Needleman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to spindle assembly with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "11cf9362-7feb-4e4f-81dd-d15ce381c5d5",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C169",
+      "claim": "Due to dynamic architecture, spindles are known to have unique physical properties such as self-repair, fusion and scaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to such dynamic architecture, spindles are known to have unique physical properties such as self-repair, fusion (Gatlin et al., 2009) and scaling (Good et al., 2013; Hazel et al., 2013; W\u00fchr et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "742ce31a-fd6c-45fa-8d70-08ac4ae77cfb",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C170",
+      "claim": "Dynamic architecture could allow for greater robustness and evolvability.",
+      "claim_type": "EXPLICIT",
+      "source": "which could allow for greater robustness and evolvability (Kirschner and Gerhart, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "833513e3-1c4e-4f4d-9b92-6c85610fec18",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "claim_id": "C171",
+      "claim": "Collective growth is one of the most reliable ways for a cell to assemble cytoskeletal structures that exceed the typical length scales of individual filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps, collective growth is one of the most reliable ways for a cell to assemble cytoskeletal structures that exceed the typical length scales of individual filaments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding speculation about the general significance of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "145ee609-aa84-4c4b-9f36-b2f2a9927466",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The theoretical model combining autocatalytic nucleation and polymerization dynamics predicts that asters can expand as traveling waves even when individual microtubules are unstable (J<0), with an explosive transition from stationary to growing asters characterized by a discontinuous jump in velocity (gap velocity). This collective growth regime requires a critical nucleation rate and is a general prediction independent of the precise molecular mechanism of autocatalytic nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The theoretical predictions are well-supported by analytical solutions (C74, C75, Equation 4), numerical simulations (C68, C69, C128), and are shown to be robust across different model variants (C104, C134, C135). The gap velocity emerges from the mathematical structure of the model (C89, C136) and is demonstrated in multiple parameter regimes (C103). The critical nucleation rate is derived analytically (C81-C83, C87) with clear physical interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Biochemical perturbation experiments using MCAK-Q710 in Xenopus egg extract confirm the theoretical predictions, showing slowing and eventual arrest of aster growth with a substantial gap velocity at the transition. The experiments demonstrate bimodal behavior at the critical concentration with no asters growing at intermediate velocities (0-9 \u03bcm/min), consistent with the predicted explosive transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental observations (C111, C112, C114, C115) directly confirm the theoretical predictions (C129, C151). The gap in observed velocities (C115) provides strong evidence for the gap velocity prediction. Control experiments with Tetrahymena pellicles (C117-C121) rule out alternative explanations related to bead nucleation. The bimodal behavior (C114) is consistent with the explosive transition predicted by theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The biophysical model allows estimation of parameters not directly accessible experimentally (rescue rate fres = 2.0\u00b10.3 min\u207b\u00b9 and autocatalytic nucleation rate r = 2.1\u00b10.2 min\u207b\u00b9) using measured values of polymerization dynamics and aster velocity. The inferred nucleation rate is comparable to previous estimates in meiotic egg extract.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The parameter estimation approach is sound, using measured values (C35-C37, C42, C43) combined with theoretical equations (C38, C39) to infer inaccessible parameters. The estimated nucleation rate (C39) is validated by comparison to independent measurements in related systems (C131), providing confidence in the model. The mean microtubule length estimate (C41) is consistent with the bounded regime assumption.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Large interphase asters in fish and amphibian eggs are proposed to be meshworks of short (16\u00b12 \u03bcm), unstable microtubules maintained by autocatalytic nucleation, representing an emergent collective growth phenomenon. This architecture provides potentially desirable properties including robustness to severing, rapid disassembly, and uniform mechanical properties independent of distance from the centrosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conclusion is well-supported by the combination of theoretical predictions (C27, C78, C162) and experimental observations (C41, C150). The estimated mean microtubule length (16\u00b12 \u03bcm) is much shorter than aster radii (hundreds of microns), supporting the collective growth interpretation (C150). The predicted properties (C163-C165) follow logically from the model structure, though they remain to be tested experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "dce2a77c-0260-4289-ab84-44c3682620aa",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The observation of a finite gap velocity distinguishes the autocatalytic nucleation model from reaction-diffusion models, which predict continuous, gradual changes in velocity. This provides strong support for the model and rules out a wide class of alternative models that neglect internal dynamics such as microtubule length.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to reaction-diffusion models is well-founded (C153-C155) with appropriate citations. The key distinction\u2014that reaction-diffusion models neglect length-dependent dynamics (C154)\u2014is correctly identified as the source of qualitatively different predictions. The experimental observation of the gap velocity (C115, C156) provides strong discriminatory power between model classes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0740fa22-4e6a-4c86-a62b-6687d7b88680",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MCAK-Q710 perturbation does not change polymerization or catastrophe rates at concentrations corresponding to the transition, suggesting that MCAK-Q710 affects aster growth through increased depolymerization rate, decreased rescue rate, and/or decreased nucleation rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental measurements (C122) rule out changes in polymerization and catastrophe rates, narrowing the possible mechanisms. The three proposed scenarios (C125) are consistent with the data and the model structure. However, the precise mechanism remains uncertain (C124), which is appropriately acknowledged. The conclusion is appropriately cautious given the available data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model predicts that cells can independently regulate aster growth rate and microtubule density through control of nucleation rate and polymerization dynamics. The gap velocity enables switch-like transitions between stationary and rapidly growing asters with small parameter changes, while maintaining low microtubule density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The independent regulation of velocity and density (C158, C161) follows from the model structure where density scales with (r-rc) while velocity has a finite minimum (C99, C160). The switch-like behavior (C160) is a direct consequence of the gap velocity. The biological advantages (C100, C101) are reasonable inferences, though speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "0f9c1d42-e745-4548-9e10-b0a41b64cc97",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The phase diagram suggests that small mitotic asters correspond to stationary asters with bounded dynamics (J<0) and low nucleation, while the transition to large interphase asters requires changes in polymerization dynamics and possibly increased autocatalytic nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The interpretation of the phase diagram (C140, C141) is consistent with the model predictions and known cell cycle changes in polymerization dynamics (C142). The speculation about increased nucleation during interphase (C143) is reasonable but remains to be tested. The framework provides a unified explanation for cell cycle-dependent aster morphology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "050dddd2-58db-48e1-a590-11b0b2382995",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The standard model of aster growth, which assumes a fixed number of centrosomally-nucleated microtubules, fails to explain aster morphology in large cells, predicts density decrease at the periphery inconsistent with observations in fish and frog embryos, and cannot account for the addition of new microtubules during growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The limitations of the standard model are well-documented through citations to experimental observations (C22, C146, C147) and logical analysis of model predictions (C3, C15, C16). The inconsistencies between standard model predictions and experimental observations in large embryos provide strong motivation for the alternative model. The critique is appropriately supported by prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "849883dd-834b-437f-a6c8-e9fcddd66489",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Collective growth of asters parallels the assembly of other large cellular structures from short filaments, particularly meiosis-II spindles, which exhibit unique properties such as self-repair, fusion, and scaling that may confer greater robustness and evolvability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to other cytoskeletal systems (C167, C168) is well-supported by citations. The parallel to spindle assembly is particularly apt given similar dynamic architecture (C169). The speculation about robustness and evolvability (C170, C171) is reasonable but remains to be tested. This provides useful context for the broader significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "3870bd6d-d426-498c-981f-ad651a495a5e",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model incorporates biologically plausible assumptions including autocatalytic nucleation dependent on local microtubule density, logistic growth with carrying capacity, and disappearance of non-centrosomal microtubules upon complete depolymerization. These assumptions are broadly consistent with known microtubule physiology and evidence from egg extract experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The model assumptions are well-justified by citations to relevant literature (C61, C62, C63, C64) and biological constraints (C65). The logistic growth formulation (C66) is qualitatively consistent with depletion of nucleation factors. The analysis showing that the type of negative feedback does not affect growth rate (C67) strengthens the model by demonstrating robustness to specific mechanistic details.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    },
+    {
+      "id": "6e45891e-4ad7-4a70-9878-86e3bd10500c",
+      "content_id": "2a8996f3-1985-4b1e-9509-f92983ab990a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The distinction between plus-end-stimulated nucleation (rate in min\u207b\u00b9) and polymer-stimulated nucleation (rate in \u03bcm\u207b\u00b9 min\u207b\u00b9) has important implications for the structural mechanism of nucleation and prediction of cell-scale phenomena, though both mechanisms produce qualitatively similar behavior including the gap velocity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The distinction between nucleation mechanisms is clearly defined (C138) and the implications are appropriately noted (C139). The claim that both mechanisms produce similar qualitative behavior (C134) is supported by supplementary analysis. However, the manuscript does not provide experimental tests to distinguish between these mechanisms, which would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:51:22.098894Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f41e3fa0-4599-4d2d-a72d-c6c62499e026",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "c0ce67cc-feb4-4566-8e77-566e75bf6fac",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "1fb92c74-df76-45d0-9578-47e20337e30e",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "5bf01525-26c5-4348-9b23-f7f1ee8d4699",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "0d4a6250-9292-42e2-a6a3-4e7e5f8503a7",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "f7147e7a-f89f-44f4-bd8e-b0a35a2cd840",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "457af674-02db-4a3b-b4ba-22d6cb07670e",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "187d2ca2-6e2a-4dc3-af8a-7a3b83fb89ee",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "d4e67b2e-86e4-4202-b636-fd655ebffe07",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "e983d57b-d21b-413a-b8c8-fb405f3ce740",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "3e0c32aa-2d5a-4009-b97f-13ef2fee6dfb",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "bec58d1d-a296-4587-80ca-00b4b82b818c",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "5fd61775-60cf-47f0-8a95-6840722c8db3",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "989e57ef-ad8a-42e7-9917-36a12036072a",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "e8c698d7-3e6f-481d-9fe5-af52aa2eaa22",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "b08b3892-422d-4ee7-963c-47a5d225b3a6",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "5b4b8654-712e-4076-b927-baded08dcd9c",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "59dd6965-a8c8-4a01-8d5b-67c3e23db963",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "8810a0bf-f92c-47fd-8ffc-5cc2ad1447d8",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "49c9b097-08ee-4fea-a2ee-6a98fd7e6de5",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "ae4e65eb-e625-475c-b798-05ffc05e597f",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "c32985e7-613d-4bcf-9d27-dff7b89aa6ea",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "ef66bd94-a725-4f1c-a4c3-d1b7610cc20e",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "1b733eb5-9579-4bc8-9551-c15addc811b0",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "04d0b536-8129-49b1-93f3-97b658ea9187",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "c88ca8ef-d4ca-4e82-ae17-472c03476c4e",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "e8175b80-7347-46a5-807a-1a5742b3576e",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "29a31cee-2a13-4e16-bb2f-b9c0306cc80c",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "e945d692-83c7-4472-8587-53fe3320a39d",
+      "result_id": "145ee609-aa84-4c4b-9f36-b2f2a9927466"
+    },
+    {
+      "claim_id": "99045a0b-6230-412b-8a24-8e9b0506e8cf",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "8e44c02a-deaf-44ef-a38f-e55f2bb6444e",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "887b24b1-dda3-41ca-a052-9af108ddff41",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "62d16b26-5471-43d5-87bb-53ab7a1fb98c",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "cbd63c31-3b4d-47e9-a5d8-4b197026e5ce",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "1c3548b2-2c8e-42c1-ac9c-3ec5b336f8d7",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "cb1038d7-4e1a-4192-a55d-af03cb929d27",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "af3cdb50-2b26-4907-a1f9-fe4e3a2341d8",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "234af20f-5e72-409c-95a7-d24bc372028e",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "938bfcd8-38c2-4afe-a822-b0d18f085a9a",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "f469cf0e-a50e-4b3e-bca6-450504fdd982",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "e57d01e0-ed22-41d7-9984-d9928284867b",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "55f3c822-899f-4747-9eed-2dc0263c3621",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "02a83e77-2cac-4425-b847-b3009450ddd0",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "39cdd08e-faba-45d1-a3a4-968cacd575e0",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "0584730e-2393-4d54-8a0f-38ae2d87d59e",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "d40eb1b4-b858-43e3-b356-72081e436992",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "62c76886-5f7b-475f-b834-9a200d98f6a7",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "52355018-73da-46a2-b1b6-bea00ba2de14",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "aba1071b-4997-4af1-a6f6-6c0559e1cd78",
+      "result_id": "31a608f9-92e4-4c40-afb1-0d3e53b6e869"
+    },
+    {
+      "claim_id": "936b2c66-ddea-4a11-b2fa-aa81af7ec712",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "b93ecb3a-2a16-498e-872e-5ae270285bb4",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "a72c88ec-ffe2-4702-a5bc-0e3c73cea24e",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "8339ebd0-3a81-425c-8dce-43f299ae6304",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "95da7817-7a4a-4647-8ca1-ef76eb7f7035",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "575c330b-f125-491f-829a-abbb11d3c193",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "a3ab0c8b-a5f7-422e-9ba3-f1e2eefa64c2",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "a9444c01-9dab-4822-ad18-18cd1ce11a48",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "630d34a5-245c-4a05-8084-c5ada9dbae2e",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "149b0f52-10df-4471-a54b-ce6b8bdcbdf3",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "1b5917af-697d-4bd3-86c6-99839c6ca4a5",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "0a3de8d8-cbbd-4b30-8356-db4b09ee84a9",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "a8909a83-c3d5-43a6-ab6c-1b9114512bed",
+      "result_id": "8edcd0d1-0871-4c21-b8c7-7aa776dcc64f"
+    },
+    {
+      "claim_id": "11bd9365-0ead-4811-8d1a-497852785dde",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "0207904a-dad6-4484-a2d3-5f3c83927314",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "de80cc7a-8659-4f28-885a-67f11646b2bb",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "c5d2d281-78ef-4422-903c-8ea8c4d96765",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "6a6e473a-cc0f-4935-9662-8eac8d07c3f2",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "cc4414a3-7dfb-4219-ab7e-3c66d2c8b14d",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "2c59d04a-e3da-4e9d-ae9b-a5c64a7d8578",
+      "result_id": "a3431a1c-2bf9-4f5a-a6ed-7ea3f32c76ef"
+    },
+    {
+      "claim_id": "cbc80626-1cc1-429b-b13a-c404bb61efb3",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "e48dda82-29c0-44f4-94ea-aafc15be672e",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "5c93e920-bcf3-4638-ad03-03e3c531de8e",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "984922f1-db3a-44a8-b26d-73ba04495625",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "c2a10f8c-9573-4599-83f1-45128e648921",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "4c5e8d71-030b-41ad-8d8e-3edd18563ae2",
+      "result_id": "dce2a77c-0260-4289-ab84-44c3682620aa"
+    },
+    {
+      "claim_id": "f3c51142-5650-4b75-920d-aa101dd051ef",
+      "result_id": "0740fa22-4e6a-4c86-a62b-6687d7b88680"
+    },
+    {
+      "claim_id": "f2c80139-ad40-431b-a891-210e568533fa",
+      "result_id": "0740fa22-4e6a-4c86-a62b-6687d7b88680"
+    },
+    {
+      "claim_id": "7f101cc1-9be5-40d9-9b95-8d6dadffa707",
+      "result_id": "0740fa22-4e6a-4c86-a62b-6687d7b88680"
+    },
+    {
+      "claim_id": "b7dd49e8-c989-4eab-a166-03a0ea67ff06",
+      "result_id": "0740fa22-4e6a-4c86-a62b-6687d7b88680"
+    },
+    {
+      "claim_id": "afbc01bc-1100-4faa-a50c-508abc8f9a84",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "f5e66081-4118-437e-be8f-c231248cbcb2",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "48dcdab6-4946-4714-860e-a5bc47736806",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "1a00c028-d614-420a-8bdc-28de96284496",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "41367879-079f-4260-8efe-2aa577e590c2",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "27227d57-86c0-46c8-8d73-e1d51566730c",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "25b66c32-4e5b-4306-8e19-1657bf4acea5",
+      "result_id": "4c94676e-ee74-407c-8f2e-4d0ec7dbe9be"
+    },
+    {
+      "claim_id": "691aa5bd-ddaf-4737-a461-1a32fddae5b6",
+      "result_id": "0f9c1d42-e745-4548-9e10-b0a41b64cc97"
+    },
+    {
+      "claim_id": "bcd57c8c-e9ac-4a14-a92a-b2a3f6234eb2",
+      "result_id": "0f9c1d42-e745-4548-9e10-b0a41b64cc97"
+    },
+    {
+      "claim_id": "0d711998-2684-4d9c-9f0a-484773f4de65",
+      "result_id": "0f9c1d42-e745-4548-9e10-b0a41b64cc97"
+    },
+    {
+      "claim_id": "26922332-143e-405d-9972-e1912822d4cf",
+      "result_id": "0f9c1d42-e745-4548-9e10-b0a41b64cc97"
+    },
+    {
+      "claim_id": "d859dbda-acbf-4a55-9e3f-6c94342ad80d",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "6bbcef40-881c-4421-8f36-138d5fb2beb8",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "df0e3054-89d0-4cce-9cc1-5a206aced137",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "9519ac55-c79d-4d3a-92cd-c9a6d5349a3d",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "aece7e3b-3f48-42f9-9565-20ca17b27717",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "45359685-6e39-484e-b338-e5f65b9172f8",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "9f9dac08-439a-4561-9f9d-ef0d10ec93a6",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "cadbf20d-c034-446f-9ea7-10108e30646e",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "e5168eb5-24c7-49e9-adef-1a2ecefba32b",
+      "result_id": "050dddd2-58db-48e1-a590-11b0b2382995"
+    },
+    {
+      "claim_id": "29744414-48fc-4a05-9f8b-cbc7168bdefc",
+      "result_id": "849883dd-834b-437f-a6c8-e9fcddd66489"
+    },
+    {
+      "claim_id": "4eb5f9a0-0a7c-4caa-b1ea-4f9bdc1c6346",
+      "result_id": "849883dd-834b-437f-a6c8-e9fcddd66489"
+    },
+    {
+      "claim_id": "11cf9362-7feb-4e4f-81dd-d15ce381c5d5",
+      "result_id": "849883dd-834b-437f-a6c8-e9fcddd66489"
+    },
+    {
+      "claim_id": "742ce31a-fd6c-45fa-8d70-08ac4ae77cfb",
+      "result_id": "849883dd-834b-437f-a6c8-e9fcddd66489"
+    },
+    {
+      "claim_id": "833513e3-1c4e-4f4d-9b92-6c85610fec18",
+      "result_id": "849883dd-834b-437f-a6c8-e9fcddd66489"
+    },
+    {
+      "claim_id": "21babc9a-e967-4241-ba99-2d49f4ae5eef",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "30f4ddb3-6b3a-4f4e-b8e2-83aad8792d41",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "fd1d77a9-0917-402d-9024-a12633d90e70",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "22089ff6-8922-4f4f-9b91-1e6d279c802c",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "7cc4edb1-ada3-444e-a7b2-ff47973d35c7",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "5b3c9031-668d-4d6f-b551-6edb4cfb2033",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "0ee5409b-0b13-4d85-bc97-f15d1f5203f4",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "cc62e135-3686-4b23-a99a-a8d23ac8ab1d",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "d25662f7-31db-4579-a06d-545aa7f82d19",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "1d1ac04d-6616-491c-ae2d-0bbb79d8ad42",
+      "result_id": "3870bd6d-d426-498c-981f-ad651a495a5e"
+    },
+    {
+      "claim_id": "8acf2272-6ffa-4e09-a5a9-eec26b327b4b",
+      "result_id": "6e45891e-4ad7-4a70-9878-86e3bd10500c"
+    },
+    {
+      "claim_id": "9c5b8c87-5289-4f13-9807-a99a736a25d6",
+      "result_id": "6e45891e-4ad7-4a70-9878-86e3bd10500c"
+    }
+  ],
+  "comparisons": []
+}

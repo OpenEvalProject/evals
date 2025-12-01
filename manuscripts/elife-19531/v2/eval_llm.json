@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "FAC-induced early transcriptomic responses are highly variable among closely related Nicotiana species. Two species (N. obtusifolia and N. miersii) showed little response to FAC, while four species showed both high JA levels and significant transcriptomic changes. Despite this variation, 34 genes were induced by FAC in all six species, representing conserved stress response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C40 are well-supported by RNA-seq data (Figure 1), qPCR validation (C35), and differential expression analysis (C34, C36). The data consistently show species-specific variation in FAC responses with a small conserved core of 34 genes. The qPCR validation strengthens confidence in the RNA-seq results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "A co-expressed gene module (M4) was identified that shows the highest correlation with HAE-induced JA accumulations. The M4 module contains genes that are significantly induced by FAC in species showing JA accumulation, with significantly higher intra-modular connectivity in FAC-induced samples, and most genes show transient expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C41-C47 are supported by WGCNA analysis (Figure 2), correlation analysis (C42), differential expression analysis (C43-C44), statistical testing of network connectivity (C45, p=0.0002), and expression kinetics from published microarray data (C46). The multiple lines of evidence converge to support the identification and characterization of the M4 module.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The M4 module is induced independently of JA signaling. More than 53% of M4 genes were induced in N. pauciflora before JA accumulation, and more than 87% of M4 genes induced in WT plants were also induced in JA-deficient (irAOC) plants, placing M4 regulation downstream of HAE perception but upstream or parallel to JA signaling activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C58 are strongly supported by temporal analysis (C48-C49), microarray data from JA-deficient plants (C51, C54-C55), and comparison between RNA-seq and microarray (C52-C53, 81.2% overlap). The convergence of temporal and genetic evidence (JA-deficient mutants) provides robust support for JA-independent induction of M4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C78"
+    ],
+    "result": "The level of M4 module gene induction correlates with the specificity of HAE-induced defense responses within species. In N. attenuata, all three elicitors (FAC, OSMs, OSSl) induced similar M4 responses, while in N. pauciflora, OSSl induced fewer M4 genes and failed to activate defenses. In N. obtusifolia and N. miersii, the pattern was reversed with OSSl being more effective than FAC/OSMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66, C68-C69, C78 are supported by differential expression analysis across multiple elicitor treatments in four species (Figure 4). The data show consistent correlations between M4 induction levels and defense activation across different species-elicitor combinations. The identification of eight genes with differential responses to OSMs vs FAC (C69) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "NaJAR1.1, a member of the JAR1 gene family, shows lower expression in response to OSMs than FAC in both N. attenuata and N. pauciflora. NaJAR1.1 shares >85% sequence identity with NaJAR4/6 and has the conserved amino acid conjugation domain, suggesting involvement in JA metabolism. The authors hypothesize that an unknown component in OSMs suppresses NaJAR1.1 expression to regulate JA metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C76 are supported by sequence analysis and differential expression data. However, C77 is explicitly speculative (\"We hypothesize\") and lacks experimental validation. The functional role of NaJAR1.1 remains unknown (C76), and the hypothesis about OSMs suppression requires testing. The sequence similarity and domain conservation suggest but do not prove functional involvement in JA metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The M4 module is conserved among different Nicotiana species. Z-summary scores for module preservation are all above 20 (p<2.2E-16) for all pairwise species comparisons. The \u03c9 values of 94.5% of M4 genes are significantly less than 1 (median \u03c9=0.19), indicating strong purifying selection, with no difference from genome-wide patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 are well-supported by WGCNA module preservation analysis (Table 1), permutation tests (C81), and Ka/Ks ratio analysis (C82-C84). The high Z-summary scores (>20, threshold is 10) and significant p-values provide strong statistical support. The \u03c9 analysis shows purifying selection without divergent selection between species, supporting conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The M4 module contains 1274 genes enriched for defense-related GO terms. Among these, 782 genes were significantly induced by FAC in three species showing JA accumulation at 30 min, representing the core HAE-induced EDS network that includes 75 protein kinases and 96 transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by WGCNA analysis (C87), GO enrichment analysis (C88, Figure 5\u2014figure supplement 1), co-expression analysis of JA biosynthetic genes (C89-C90), and differential expression analysis (C91). The inference that 782 genes represent the core EDS network (C92) is reasonable given their consistent induction across species, though \"core\" is a functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "NaLRRK1 is a hub gene of the M4 module encoding a putative leucine-rich repeat receptor kinase localized to plasma membrane and nuclei. NaLRRK1 expression is co-upregulated with JA signaling among six Nicotiana species and is specifically induced by HAE but not by the pathogen-associated elicitor flg22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C100, C102-C106 are supported by network analysis (C6, C100), sequence analysis and domain prediction (C102), subcellular localization experiments (C103, Figure 6a), RNA-seq data (C105, Figure 6b), and qPCR measurements with different elicitors (C106, Figure 6c). The multiple lines of evidence provide strong support for NaLRRK1 characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "NaLRRK1 forms a negative feedback loop with JA signaling. NaLRRK1 is induced by FAC independently of JA (induced in irAOC and irCOI plants at 30 min), but JA-Ile negatively regulates NaLRRK1 transcript levels at later timepoints. Increased JA-Ile levels decreased NaLRRK1 transcripts, and NaLRRK1 was higher in plants with reduced JA-Ile signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C107-C110, C112-C113, C115-C116 are supported by qPCR measurements in JA-deficient mutants (C107, C109-C110), JA-Ile treatment experiments (C113, Figure 6g), and transgenic plants with altered JA metabolism (C115, Figure 6\u2014figure supplement 1). The temporal and dose-dependent relationships provide strong evidence for the negative feedback loop, though the molecular mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C160",
+      "C161",
+      "C163",
+      "C164",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "VIGS of NaLRRK1 (>88% knockdown) resulted in increased OPDA levels and biosynthesis gene expression, increased hydroxylated JA-Ile and NaCYP94B3-like1/2 expression, but no change in JA/JA-Ile levels. VIGS-NaLRRK1 plants showed higher expression of defense genes (NaMYB8, NaTD2, NaTPI), higher TPI activity, increased soluble sugars and invertase activity, and reduced M. sexta larval growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C168 are supported by qPCR validation of knockdown (C152, Figure 7\u2014figure supplement 1), phytohormone measurements (C153, C156-C157, Figure 7g-k), gene expression analysis (C154, C163-C164, Figure 7a-f, i-o), enzyme activity assays (C164, C166, Figure 7o, Figure 7\u2014figure supplement 2), and insect bioassays (C167, Figure 7p). The comprehensive functional characterization provides strong support for NaLRRK1's role in regulating JA metabolism and defenses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C169",
+      "C170",
+      "C171",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Gene duplications, particularly from the Solanaceae whole genome triplication (WGT), shaped the evolution of the HAE-induced EDS network. 79.5% of M4 genes were retained after duplication (significantly higher than genome-wide average, p<2.2E-16), with 51.5% originating from the Solanaceae WGT (significantly enriched, p=1.79E-10). Only ~8% originated from Nicotiana lineage-specific duplications (not enriched).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C169-C177 are supported by phylogenomic analysis using species reconciliation (Table 2), statistical testing showing significant enrichment of duplicated genes (C170, C174) and WGT-derived genes (C174-C175) in the M4 module, and synteny analysis (C175). The convergence of multiple analytical approaches provides strong support for the role of WGT in EDS network evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C117",
+      "C118"
+    ],
+    "result": "Duplicated genes were preferentially retained in the M4 module after WGT. Among gene pairs from Solanaceae WGT, 120 pairs had both members in M4, significantly higher than expected by chance (p<2.2E-16). More than 30.8% of these retained pairs are transcription factors or protein kinases, significantly higher than the genome-wide proportion (2.56%, p<2.2E-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C180, C117-C118 are supported by analysis of WGT-derived gene pairs and statistical testing (\u03c7\u00b2-test and binomial test). The significant enrichment of both gene pairs with both members retained (C179) and transcription factors/protein kinases among retained pairs (C118) provides strong evidence for preferential retention, consistent with the dosage compensation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Most previously characterized M4 module genes in N. attenuata (NaHER1, NaCDPK4/5, NaMEK2, NaETR1, NaJAR4/6, NaACO1/2) evolved from the Solanaceae WGT event. Their Arabidopsis homologs are involved in EDS, suggesting ancestral copies were already involved in EDS. Gene pairs NaHER1/2, NaCDPK4/5, NaJAR4/6, and NaACO1/2 are highly co-expressed with all members retained in M4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 are supported by phylogenomic analysis (C119, Figure 8), citations to functional studies in Arabidopsis (C120), and co-expression analysis (C122). The inference about ancestral function (C121) is reasonable given conservation in Arabidopsis but remains indirect. The data strongly support that WGT contributed to EDS network evolution through retention of functionally related gene pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C137",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The enrichment of transcription factors and protein kinases among retained WGT duplicates in M4 (30.8%, p<2.2E-16) is consistent with the dosage compensation hypothesis. Long-term retention of duplicated gene pairs (since WGT 91-52 Mya) suggests benefits from increased network complexity and robustness. Functional studies show that NaCDPK4/5 provide robustness (individual silencing has no effect, double silencing increases JA 3-fold with fitness costs), while NaJAR4/6 show additive effects on JA-Ile levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137, C142-C147 are supported by statistical analysis (C137), co-expression data showing long-term retention (C141-C142), and citations to functional studies (C143-C146). The dosage compensation interpretation (C137) is well-supported by the enrichment data and cited literature. The functional examples of NaCDPK4/5 and NaJAR4/6 provide concrete evidence for different retention mechanisms (robustness vs. additive effects).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151"
+    ],
+    "result": "Insertions of DTT-NIC1, a Solanaceae-specific MITE family containing the stress-inducible W-box, into 5' regulatory regions are significantly enriched among HAE-induced EDS network genes (p=0.00049). The authors speculate that genome-wide DTT-NIC1 expansions may have facilitated gene recruitment into the EDS network by introducing cis-regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C150 is supported by statistical analysis of TE insertions (p=0.00049, Appendix 1). However, C151 is explicitly speculative (\"We speculate\") and the authors acknowledge that alternative mechanisms could explain the observation. The enrichment is significant but causality is not established\u2014correlation does not prove that TE insertions caused gene recruitment. Experimental manipulation of TE insertion sites would be needed to test this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C181",
+      "C182"
+    ],
+    "result": "Comparison of microarray and RNA-seq data showed that fewer FAC-induced genes were detected by microarray (771) than RNA-seq (1752), but more than 81.2% of microarray-detected genes were also found by RNA-seq, indicating overall consistency and the expected higher power and sensitivity of RNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C181-C182 are supported by direct comparison of the two methods. The 81.2% overlap (C53, C181) demonstrates consistency, while the difference in total numbers (C52) supports the inference about RNA-seq's higher sensitivity (C182). This is a standard methodological validation that strengthens confidence in the RNA-seq results used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "Among the 782 core EDS genes, only 28.2% and 11.7% were elicited by FAC in N. obtusifolia and N. miersii respectively, but at least 67.6% were induced by OSSl in each species. This suggests the signaling network remains intact in these species despite lack of FAC response, likely due to changes in FAC perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 are supported by differential expression analysis (Figure 4). The data show that the same genes can be activated by different elicitors in species that don't respond to FAC, supporting the inference that the network is intact (C132). However, the conclusion about \"changes in FAC-perception\" (C132) is speculative\u2014the data show differential elicitor responses but don't directly demonstrate altered perception mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and context claims establishing that herbivore-induced defenses are widespread and mediated by HAE-induced EDS including JA accumulation, that JA can activate or impair defenses with associated fitness costs, that various genes regulate JA accumulation, that gene duplications contribute to network evolution, and that Nicotiana species show specific HAE-induced defenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C28 are primarily background knowledge supported by extensive citations to previous research. These establish the scientific context for the study. C1-C2 are general statements about plant defense. C10-C17 describe JA's role in defense with specific citations. C18-C24 cover gene duplication and network evolution principles. C25-C28 describe the Nicotiana system. All are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C88"
+    ],
+    "result": "Functional annotations of the M4 module were consistent with roles in early defense signaling (EDS), with enrichment for GO terms including 'regulation of defense responses', 'jasmonic acid metabolism', 'response to insects', and 'protein modification'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C88 are supported by gene ontology enrichment analysis (Figure 5\u2014figure supplement 1). The GO terms are appropriate for an EDS network and the enrichment provides functional validation of the M4 module's biological role. However, GO enrichment is descriptive rather than mechanistic\u2014it shows what the genes are annotated to do, not direct experimental evidence of function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101"
+    ],
+    "result": "Previously characterized genes in the EDS network include: NaWIPK (positive regulator of JA biosynthesis and defense), NaWRKY6 (differentiates wounding from herbivore attack), NaACO2/NaACS3a/NaETR1 (ET biosynthesis and perception), NaLecRK (inhibits SA accumulation), and NaHER1 (suppresses ABA metabolism, activates JA accumulation and defenses).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98, C101 are supported by citations to previous functional studies. These claims establish that the identified M4 network contains genes with known roles in defense signaling, providing validation that the network analysis captured biologically relevant genes. However, these are not new findings from this study\u2014they serve to validate the network identification approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C77",
+      "C136",
+      "C162"
+    ],
+    "result": "Several speculative hypotheses are proposed: (1) OSMs might contain elicitors that suppress JA responses, (2) an unknown OSMs component might suppress NaJAR1.1 to regulate JA metabolism, (3) increased NaLRRK1 expression may lower defenses but increase fitness by reducing costs of JA signaling, and (4) NaLRRK1 potentially suppresses defense responses elicited by JA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67, C77, C136, C162 are explicitly speculative (\"we reasoned\", \"We hypothesize\", \"may\", \"potentially\"). While these hypotheses are reasonable based on the data, they lack direct experimental validation. C67 and C77 about OSMs suppression are based on differential gene expression but don't identify the suppressive component. C136 about fitness benefits is logical but untested. C162 is partially supported by the VIGS data but the mechanism remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C9",
+      "C123",
+      "C171"
+    ],
+    "result": "The study concludes that genome-wide duplications are important in the evolution of adaptive traits in plants, specifically that gene duplications and preferential retention after WGT shaped the evolution of HAE-induced EDS networks in Nicotiana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C123, C171 are high-level conclusions supported by the phylogenomic analysis showing significant enrichment of WGT-derived genes in the M4 module (C169-C177), preferential retention of gene pairs (C178-C180), and functional examples (C119-C122, C143-C147). While the data strongly support the role of WGT in EDS network evolution in Nicotiana, the broader claim about \"adaptive traits in plants\" (C9) extrapolates beyond the specific system studied.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C35",
+      "C78",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Molecular dynamics simulations reveal that the Trp434Ind mutation causes Asp447 to 'flip out' toward the extracellular environment, increasing the distance between these residues in all four subunits. This conformational change allows water to penetrate the space behind the selectivity filter and alters local electrostatic potential by reorienting the negatively charged Asp447.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, C27-C31, C34-C35, and C78 are supported by MD simulation data shown in Figure 1. The simulations were performed for 500 ns (C101) using appropriate methodology (C98-C100) based on the Kv1.2/Kv2.1 crystal structure with 87% sequence identity to Shaker (C99). The water occupancy maps (Figure 1D) and distance measurements (Figure 1C) provide direct evidence for the conformational changes and their effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The MD simulations suggest that Asp447 reorientation increases the likelihood of the 'flipped out' conformation, which may accelerate C-type inactivation by altering water accessibility and electrostatic properties that impact potassium ion occupancy in the selectivity filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32, C36-C37, C77, C79-C82 are largely speculative interpretations (marked as SPECULATION/INFERENCE in evidence_type) of the simulation data. While the simulations show structural changes, the direct link to C-type inactivation mechanism and ion occupancy effects are inferred rather than demonstrated. The authors acknowledge this limitation in C85.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A novel ERret-intein protein engineering approach was developed that enables stoichiometric control of Shaker channel subunits. Split inteins flanked by ER retention motifs were incorporated into Shaker monomers, allowing formation of functional tetrameric channels only when complementary fragments are co-expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38-C50 are well-supported by experimental data in Figure 2. The approach successfully prevents surface expression of individual monomers (C43-C44) while enabling robust current expression upon co-expression of complementary fragments (C45). The stable current levels across cRNA concentrations (C47, Figure 2B) support the functionality of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C83"
+    ],
+    "result": "The ERret-intein system enabled incorporation of two Ind residues within a single Shaker tetramer, demonstrating dose-dependent acceleration of C-type inactivation. Breaking two hydrogen bonds (\u03c4=142\u00b114 ms) accelerated inactivation more than breaking one (\u03c4=529\u00b1141 ms) compared to WT (\u03c4=3900\u00b10.2 ms) at +20 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C51-C57, and C83 are strongly supported by experimental data in Figure 3 and Table 1. The dose-dependent effect on inactivation kinetics with one versus two Ind incorporations provides clear evidence for the role of hydrogen bond number in controlling C-type inactivation rate. Voltage dependence of activation remained unchanged (C54), indicating specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The ERret-intein approach was successfully applied to NaV1.4 sodium channels by splitting the channel into DI-II and DIII-IV fragments. Co-expression of the fragments produced functional full-length channels with biophysical properties indistinguishable from WT (p>0.01), as confirmed by both electrophysiology and Western blot analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 are well-supported by data in Figure 4 and Table 1. Western blot shows formation of ~250 kDa full-length band (C66, Figure 4B), and control experiments (C68) rule out post-lysis ligation. Electrophysiological recordings demonstrate functional channels (C63-C64) with properties matching WT. This demonstrates generalizability of the approach beyond potassium channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C95",
+      "C96"
+    ],
+    "result": "The ERret-intein approach overcomes the compounded inefficiency problem of dual nonsense suppression by rescuing each transcript independently before ligation. Dual suppression at Tyr401 and Phe1304 in split NaV1.4 fragments yielded functional channels with WT-like gating, demonstrating the method enables incorporation of multiple ncAAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76, C95-C96 are supported by experimental data in Figure 5 and Table 1. The successful dual suppression (C74-C75) with specificity controls (C76) validates the approach. However, C96 regarding future applications to multiple stop sites is somewhat speculative, though reasonably inferred from the dual suppression success.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C23"
+    ],
+    "result": "Background on C-type inactivation mechanism and prior work establishing the role of the Trp434-Asp447 hydrogen bond network in controlling inactivation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C15, C18-C19, and C23 are well-supported by extensive citations to prior literature and the authors' previous work (Pless et al., 2013). These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Previous attempts to use nonsense suppression with concatenated Shaker channels were limited by low expression levels, preventing incorporation of multiple ncAAs or measurement of gating currents from non-conducting mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C20-C26, C86-C89 accurately describe technical limitations of prior approaches based on the authors' previous work and general knowledge of nonsense suppression. These claims establish the motivation for developing the ERret-intein method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The authors acknowledge that while hydrogen bond breakage accelerates inactivation, the data do not reveal the detailed molecular movements or the nature of the final non-conducting state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 appropriately acknowledge limitations of the study. C84 is speculative about mechanism, while C85 explicitly states what the data cannot address. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "Discussion of the broader applicability of the ERret-intein approach and comparison to other methods for encoding multiple ncAAs, with speculation about future applications including FRET.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91, C93-C94 are supported by appropriate citations. Claims C92 and C97 are speculative about future applications but are reasonable extrapolations from the demonstrated results. These provide appropriate context for the significance of the method.",
+    "result_type": "MINOR"
+  }
+]

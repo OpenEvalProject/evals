@@ -1,0 +1,263 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C79"
+    ],
+    "result": "The authors established that mtRNA quantification from RNA-seq is valid and not confounded by nuclear mitochondrial pseudogenes (NUMTs). They show that bona fide mtDNA expression is 2-3 orders of magnitude greater than NUMT expression, and two independent quantification methods (RSEM and featureCounts) produce concordant results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 provide strong quality control evidence that NUMTs do not confound mtRNA measurements. The comparison of two computational methods with different handling of multi-mapping reads (C79, Figure 1\u2014figure supplement 1-2) provides orthogonal validation. The methodology is sound and appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "mtRNA expression varies substantially across tissue types, with kidney samples showing exceptionally high levels and lung adenocarcinoma showing low levels. This tissue-specific pattern is concordant with prior protein-level measurements in mouse tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 describe tissue-specific baseline expression patterns supported by Figure 1\u2014figure supplement 3. The concordance with mouse protein data (C72, Pagliarini et al., 2008) provides cross-species and cross-platform validation, strengthening confidence in the measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C23",
+      "C24",
+      "C80"
+    ],
+    "result": "The majority of cancer types show lower mtRNA expression in tumors compared to normal tissue, with five cancer types (breast, esophageal, head and neck, kidney clear cell, and liver) showing decreased expression of all 13 mtDNA-encoded genes. Complex I genes are more frequently downregulated than Complex IV and V genes across cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C23-C24, and C80 are directly supported by differential expression analysis shown in Figure 2. The statistical analysis using limma voom with TMM normalization is appropriate. The concordance with prior mtDNA copy number findings (C9) provides independent validation. Sample sizes appear adequate for most cancer types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Chromophobe renal cell carcinomas (KICH) uniquely show >2-fold overexpression of all 13 mtRNA genes in tumors compared to normal tissue, despite no increase in mtDNA copy number. The authors interpret this counterintuitive finding as reflecting compensatory upregulation in response to mitochondrial dysfunction, similar to the oncocytoma phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C13 are well-supported by data in Figure 2. However, the mechanistic interpretation (C14-C18) relies heavily on inference from prior literature about oncocytomas. The claim that increased mtRNA 'likely reflects a drop in respiration' (C18) is speculative without direct respiratory measurements. The authors appropriately note this requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Higher mtRNA expression is associated with improved overall survival in five cancer types (ACC, KICH, LGG, PAAD, LIHC) and with less aggressive disease in KIRP. Three of these associations (ACC, KICH, LGG) were also observed with mtDNA copy number in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by Cox regression analysis (Figure 3) with appropriate multiple hypothesis correction. The concordance with prior mtDNA copy number associations (C27) and with nuclear-encoded mitochondrial genes (C29, Gaude and Frezza 2016) provides convergent validity. Statistical methods are appropriate for survival analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C75",
+      "C76"
+    ],
+    "result": "The correlation between mtDNA copy number and mtRNA expression is highly tissue-specific. Seven cancer types show strong positive correlation (p<10\u207b\u2075), seven show weak but significant correlation, and four show no significant correlation. Among cancer types with mtDNA depletion, five of seven show positive correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C75-C76 are supported by comprehensive correlation analysis (Figure 4, Figure 4\u2014figure supplement 1) using appropriate non-parametric Spearman correlation with multiple testing correction. The tissue-specificity is clearly demonstrated. The observation about MT-ND5 and MT-ND6 (C34) is appropriately qualified as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In KICH, tumor and normal samples show distinct correlation patterns between mtDNA copy number and mtRNA levels, with tumors having higher steady-state mtRNA/mtDNA ratios. This suggests compensation for mitochondrial dysfunction occurs via transcriptional mechanisms rather than changes in mtDNA ploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by data in Figure 4\u2014figure supplement 3 showing distinct trend lines for tumor vs. normal samples. The interpretation (C39) is reasonable given the known prevalence of mtDNA mutations in KICH, though it remains inferential without direct mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In 9 of 13 cancer types, mtDNA-encoded (mtOXPHOS) and nuclear-encoded (nuOXPHOS) respiratory genes show concordant differential expression patterns. However, four cancer types (BLCA, BRCA, LUAD, UCEC) show opposite patterns, with mtOXPHOS genes downregulated while nuOXPHOS genes are upregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are directly supported by differential expression analysis shown in Figure 5. The differential expression score methodology is clearly defined and appropriate. The identification of discordant cancer types is data-driven and statistically sound. The biological interpretation requires caution as transcription may not reflect protein levels or activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C81",
+      "C83"
+    ],
+    "result": "Five cancer types (kidney clear cell, kidney papillary, head and neck squamous cell, liver, and esophageal) show a consistent trio of evidence suggesting suppressed respiratory activity: mtDNA depletion, decreased mtRNA levels, and decreased nuOXPHOS gene expression. Overall, the results indicate suppression of respiratory gene expression across many cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C81, and C83 integrate multiple lines of evidence from the study. The convergence of three independent measures (mtDNA copy number from prior work, mtRNA expression, and nuOXPHOS expression) provides strong support for the conclusion. However, the authors appropriately note that actual respiratory flux measurements are needed for definitive confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C62",
+      "C63"
+    ],
+    "result": "Lung adenocarcinoma (LUAD) shows discordant patterns: it is the only cancer type with increased mtDNA copy number (from prior study), yet shows decreased expression of 6 of 13 mtRNA genes, suggesting transcriptional compensation for increased mtDNA copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C62-C63 identify an important inconsistency between mtDNA copy number and mtRNA expression. The data supporting decreased mtRNA expression (C63, Figure 2) is solid. The interpretation of 'transcriptional compensation' (C10) is reasonable but speculative. The authors appropriately discuss this as an unexpected finding requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C40"
+    ],
+    "result": "The mitochondrial genome encodes 13 protein-coding genes that are critical subunits of the electron transport chain and ATP synthase. These genes are transcribed polycistronically but undergo substantial post-transcriptional regulation resulting in uneven steady-state abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C19-C22, and C40 describe established knowledge about mitochondrial biology, appropriately supported by citations to primary literature (Pagliarini et al., 2008; Mercer et al., 2011; Rorbach and Minczuk, 2012). This provides necessary biological context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C52"
+    ],
+    "result": "Prior work showed mtDNA depletion in several cancer types. Cells harbor excess respiratory capacity, so modest decreases in ETC protein levels may not impact basal respiration, but sufficiently large reductions will decrease respiratory ATP generation, which cancer cells can partially compensate for via increased glycolysis (Warburg effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 and C52 appropriately cite prior work (Reznik et al., 2016; Brand and Nicholls, 2011) and established cancer biology. The logical framework connecting mtDNA depletion to potential respiratory changes is sound, though the authors correctly note that the magnitude of change required to affect respiration is uncertain without direct measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Coordination of mtOXPHOS and nuOXPHOS protein levels is critical for proper OXPHOS complex stoichiometry. Studies in S. cerevisiae and C2C12 cells suggest that this coordination occurs primarily through translational rather than transcriptional mechanisms, which may explain discordant transcriptional patterns observed in some cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 and C47-C50 appropriately cite relevant literature (Couvillion et al., 2016; Wagner et al., 2008; Mouchiroud et al., 2013). The authors use this prior work to contextualize their findings of discordant mtOXPHOS/nuOXPHOS transcription. The inference that translational regulation may explain transcriptional discordance is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Clear-cell renal cell carcinomas (KIRC) are driven by VHL loss leading to HIF activation and increased glycolysis. Metabolomic data show accumulation of metabolites upstream of Complex II and depletion downstream, consistent with decreased electron transport chain activity and suggesting that mtRNA changes may reflect actual respiratory changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 appropriately cite prior work (Creighton et al., 2013; Hakimi et al., 2016) and use metabolomic data to support the interpretation that mtRNA changes reflect functional respiratory changes. The metabolite pattern (C55) is consistent with the proposed mechanism (C56), though this remains correlative rather than causative evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mitochondrial metabolism provides critical functions beyond ATP generation, including aspartate biosynthesis (which requires electron acceptors from respiration), acetyl-CoA for lipogenesis, and one-carbon precursors for nucleotide biosynthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 cite appropriate literature (Birsoy et al., 2015; Ahn and Metallo, 2015) describing established roles of mitochondrial metabolism. This provides important context for why cancer cells may not completely eliminate mitochondrial function despite suppressing respiratory gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Prior studies in C. elegans showed that mitonuclear protein imbalance activates the mitochondrial unfolded protein response (UPR^MT), which can promote longevity and tolerance of mutant mtDNA by activating mitochondrial biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 appropriately cite relevant literature (Lin et al., 2016; Gitschlag et al., 2016). The authors use this to suggest a potential mechanism for how cancer cells might tolerate mitochondrial dysfunction, though they appropriately note this is speculative and requires investigation in mammalian cancer models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "The physiology and molecular constitution of mitochondria varies substantially across different tissue types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 cites appropriate literature (Fern\u00e1ndez-Vizarra et al., 2011; Calvo and Mootha, 2010) establishing tissue-specific mitochondrial variation. This provides context for the tissue-specific patterns of mtDNA-mtRNA correlation and differential expression observed in the study.",
+    "result_type": "MINOR"
+  }
+]

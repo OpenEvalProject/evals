@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Fus3 can be retargeted to phosphorylate and degrade a YFP reporter through the use of modular interaction domains (PDZ ligand-mPDZ) and a functional Tec1-derived phosphodegron. The system requires both a functional phosphodegron and matching interaction domains, as demonstrated by controls where mutation of phospho-acceptor residues, kinase inactivation, or mismatched interaction domains abolished degradation. The approach works with both overexpressed and endogenous Fus3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide comprehensive experimental evidence with appropriate controls demonstrating necessity and sufficiency of the two-component system. The ~3.7-fold degradation (C10), negative controls (C11-C13), proteasome inhibitor sensitivity (C15), and endogenous kinase retargeting (C16) collectively support the conclusion (C17). The controls are well-designed and address alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The retargeting approach is generalizable to multiple interaction domain pairs including naturally occurring (SH3-SH3 ligand, ~10.1-fold degradation) and synthetic (SYNZIP, ~4.7-fold degradation) constitutive domains, as well as inducible domains (ABI-PYL, requiring \u22651 \u03bcM ABA). However, the identity of the interaction domain influences steady-state reporter fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 demonstrate modularity with multiple interaction domain pairs tested with appropriate controls. The quantitative degradation measurements and dose-response data for ABA (C21) support the conclusions. The caveat about steady-state fluorescence differences (C22) is appropriately noted, though the mechanism is not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Two orthogonal MAPK-substrate pairs can operate in parallel in the same cell, with selective activation by \u03b1-factor (targeting mCherry via constitutive mPDZ) or ABA plus \u03b1-factor (targeting YFP via inducible ABI-PYL). However, the presence of parallel systems or competing kinases/substrates moderately reduces the efficiency of degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 demonstrate orthogonality with appropriate experimental design. The selective degradation patterns (C23-C24) support independent operation. The observed reduction in efficiency (C25-C27) is documented but the mechanistic explanation involving competition is somewhat speculative, though reasonable. Competition experiments provide supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Degradation dynamics can be modulated by varying the number of phosphodegrons fused to the reporter. Increasing from one to three phosphodegrons increases degradation rate, but adding more than three provides no further benefit. Increasing phosphodegron number also decreases steady-state expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 show systematic variation of phosphodegron number with clear trends. The saturation effect at three copies (C29) is well-documented. The proposed mechanism for decreased steady-state expression (C30) involving unphosphorylated degron interactions is speculative but reasonable. Time-course data support the kinetic differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Two phosphodegron sequence variants designed to more closely match the Cdc4 consensus motif showed decreased degradation rates compared to the Tec1-derived phosphodegron, despite theoretical predictions that they should be more efficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 presents an unexpected result that contradicts the consensus motif predictions. The experimental data support the observation, though the result highlights limitations in current understanding of phosphodegron design. The comparison is valid but the mechanistic explanation is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The mammalian MAPK ERK2 (constitutively active MEK1-ERK2 fusion) can be retargeted to degrade a YFP reporter containing an MKP1-derived phosphodegron using the same modular interaction domain approach. Controls demonstrate that both interaction domains and functional phosphodegron are necessary, suggesting broad applicability across MAPKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate generalizability beyond yeast Fus3. The near-background fluorescence with functional system (C34) and elevated fluorescence in controls (C35) provide strong evidence. The conclusion about broad applicability (C37) is reasonable but based on only two MAPKs (Fus3 and ERK2), so some caution is warranted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Synthetic negative feedback loops created by retargeting Fus3 to degrade scaffold protein Ste5 or kinase Ste7 reduce maximal pathway activation by ~60% and ~45%, respectively. The apparent Hill coefficient increased from 1.5 to 1.9 when Ste5 was targeted but remained at 1.6 when Ste7 was targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate functional rewiring of endogenous pathway components with quantitative measurements. The dose-response data support the conclusions. However, the authors note that protein fusions alone can alter pathway sensitivity, which complicates interpretation. The increase in Hill coefficient for Ste5 targeting is surprising and mechanistically unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "An incoherent feed-forward loop created by having Fus3 both activate and inhibit transcription factor Ste12 results in complete elimination of downstream YFP expression at all induction levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 shows that the inhibitory arm dominates in this circuit configuration. The result is clearly demonstrated but represents a somewhat trivial outcome where one arm completely overwhelms the other. The biological insight is limited compared to the band-pass filter result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "A hybrid incoherent feed-forward loop with YFP expression under pFUS1 promoter control and targeted degradation by Fus3 creates a concentration-based band-pass filter, with maximal YFP fluorescence at ~1 \u03bcM \u03b1-factor and decreased fluorescence at higher concentrations. Control experiments confirm this behavior requires targeted YFP degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate a sophisticated emergent behavior from the engineered circuit. The dose-response data clearly show band-pass filtering. The control with broken phosphodegron (C44) showing normal amplification confirms the mechanism. This represents a successful application of the retargeting approach to create novel signaling behaviors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The authors conclude that simple colocalization of an active MAPK with a protein bearing a compatible phospho-motif is sufficient for functional regulation, and that evolution of new MAPK connections is constrained only by the appearance of accessible phospho-motifs and protein-protein interactions for colocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 represent broad conclusions drawn from the experimental results. While the data support that colocalization plus phospho-motif are sufficient in the engineered contexts tested, the evolutionary implications (C46) are more speculative. The claims are reasonable interpretations but extend beyond what is directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establishing that MAPKs are ubiquitous eukaryotic signaling elements with diverse functions enabled by evolutionary expansion, that phospho-motifs and colocalization are important for kinase-substrate interactions, and that Tec1 is a substrate for both Fus3 and Cdc4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are background knowledge supported by appropriate citations to prior literature. These establish the conceptual framework for the study. The claims are well-supported by the cited references and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "The proteomes of S. cerevisiae and humans contain ~3,500 and >50,000 phosphorylation sites respectively, and many human SNPs create or destroy phospho-motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 provide context about the prevalence of phosphorylation sites and their evolutionary/medical relevance. These are supported by appropriate citations and help motivate the significance of understanding how kinase-substrate connections form.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Background information about the yeast mating pathway: Fus3 is the terminal MAPK, \u03b1-factor signals through a surface receptor to activate the cascade, phosphodegrons recruit Cdc4 and the SCF ubiquitin ligase complex, and Cdc4 acts primarily in the nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide essential background about the biological system used in the study. These are supported by appropriate citations and accurately describe established knowledge about the yeast mating pathway and ubiquitin-mediated degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "In yeast constitutively expressing fluorescent protein, fluorescence strongly correlates with cell size, and normalizing by cell size reduces coefficient of variation by ~67% (untreated) or ~41% (treated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 describe an important methodological consideration for flow cytometry analysis. The normalization approach is well-justified and the quantitative improvements in CV are documented. This is a minor but important technical detail for data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Swapping the interaction domains between kinase and substrate (Fus3-mPDZ with YFP-PDZ ligand instead of Fus3-PDZ ligand with YFP-mPDZ) results in qualitatively similar degradation but approximately half the fold-change at three hours post-induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 demonstrates that the approach has some modularity but is not completely orientation-independent. The reduced efficiency with swapped domains suggests that protein fusion architecture matters, likely due to effects on expression or steric constraints. This is an important limitation to note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background claims that Fus3 and Kss1 share some targets but have distinct substrates due to docking domain preferences, and that scaffolded signaling cascades are sensitive to scaffold concentration, with reduced scaffold increasing cascade sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide relevant background from prior literature to help interpret the experimental results, particularly the unexpected increase in Hill coefficient when Ste5 is targeted. These are appropriately cited and represent established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Background information that native ERK2 regulates protein stability via phosphodegrons, including targeting of MKP1 for ubiquitin-mediated degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide relevant background establishing that ERK2 naturally uses phosphodegron-mediated regulation, which motivates its use as a test case for the retargeting approach. Appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Methodological details: all strains used W303a background with constructs integrated at URA, HIS, TRP, or LEU loci, and expression was driven by the constitutive TDH3 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 describe basic methodological details necessary for reproducibility. These are straightforward experimental design choices that are clearly stated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors compiled a large dataset from Frontiers journals containing information about 9000+ editors, 43,000+ reviewers, and 126,000+ authors across ~41,000 articles. Gender was successfully assigned to 87% of unique identifiers using a name-based algorithm with 96% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C61-C63, C66-C67 provide comprehensive documentation of data collection and processing methods. The dataset size is well-documented, gender assignment methodology is validated (C64), and the scale comparison to prior work (C2) is supported by supplementary materials. The methods are transparent and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C68",
+      "C69",
+      "C82"
+    ],
+    "result": "Network analysis demonstrates that the Frontiers peer-review system forms a mature, topologically stable, and integrated community with giant components reaching 93-95% of network size and average path lengths of 12 steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C68-C69, C82 are supported by network metrics presented in Figure 1\u2014figure supplement 1. The giant component sizes, path lengths, and temporal stability metrics provide convergent evidence for network maturity. Standard graph-theoretic measures are appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Women are underrepresented across all roles in the peer-review process, with contributions of 37% for authors, 28% for reviewers, and 26% for editors. This underrepresentation worsens ascending the peer-review hierarchy and is consistent across most journals and countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8-C10, C70-C75 present consistent descriptive statistics showing gender disparities. The data is well-documented with specific percentages and ranges across journals. Figure 1b-c and supplementary figures provide visual evidence. The hierarchical pattern (37%\u219228%\u219226%) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Linear extrapolation predicts gender parity would be achieved by 2027 for authoring, 2034 for reviewing, and 2042 for editing. These rates (0.9-1.2% per year) are consistent with trends reported in other scientific contexts (0.1-3.8% per year depending on field and role).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C27-C32 present projections based on linear extrapolation from 2012-2015 data. While the comparison to literature trends (C27-C31) provides context, linear extrapolation over 15-35 years is methodologically questionable given potential non-linear dynamics, changing policies, and limited baseline period. The projection should be treated as illustrative rather than predictive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Women's underrepresentation in peer review cannot be explained solely by their lower numerical representation. Permutation testing shows that women contribute significantly less than expected by chance, particularly for multiple contributions, while single-time contributions exceed chance levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe rigorous permutation testing that controls for numerical representation. The null hypothesis approach (gender-shuffling while preserving network structure) is appropriate. Figure 1b shows data falling outside 95% confidence intervals since 2009-2011, and Figure 2 demonstrates the distribution pattern. The statistical methodology is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Both male and female editors exhibit significant same-gender preference (homophily) in reviewer appointments. Male editors appoint male reviewers 73% of the time, while female editors appoint female reviewers 33% of the time\u2014both significantly above chance expectations. Similar patterns exist in reviewer-to-author networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C19 present clear evidence of homophily using appropriate null hypothesis testing. The percentages (C16-C17) are compared to network-topology-based expectations (C18), demonstrating statistical significance. Figure 3a-b shows temporal consistency. The methodology properly accounts for baseline network structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C80",
+      "C81"
+    ],
+    "result": "Homophily persists across scientific fields and at local neighborhood levels, demonstrating 'inbreeding homophily' (active same-gender preference) beyond 'baseline homophily' (structural bias from network heterogeneity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C80-C81 demonstrate homophily through multiple control analyses. Field-specific analysis (C20, Figure 3c) rules out disciplinary effects. Local neighborhood analysis (C21, Figure 3d) controls for network structure within 5 links. The distinction between inbreeding and baseline homophily is conceptually sound and empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The mechanisms of homophily are gender-dependent: male editors show widespread moderate homophily across most individuals, while female editors' homophily is driven by a small number of highly homophilic individuals. Removing the most homophilic female editors eliminates the effect, but male editor bias persists across all thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C22-C26 present sophisticated analysis using the \u03a6hom index to quantify individual-level homophily. Figure 3e-f demonstrates differential distributions and pruning effects. The statistical approach is rigorous, comparing to gender-shuffled networks. The interpretation that male homophily is widespread while female homophily is concentrated is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Homophily will persist even if numerical parity between genders is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is a forward-looking prediction not directly tested by the data. While the analysis of inbreeding homophily (C23-C26) suggests mechanisms independent of numerical representation, the manuscript does not present simulations or analyses at gender parity. This conclusion is plausible but speculative given the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The Frontiers dataset is representative of broader scientific publishing patterns. Female participation rates (39% authors, 28% editors, 30% reviewers) and homophily patterns (33% female-to-female vs 27% male-to-female appointments) are consistent with other published studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide systematic comparison to literature. The Frontiers percentages fall within ranges reported by other studies (C48-C52), and the homophily patterns match previous reports (C52-C53). Supplementary file 2 provides detailed comparisons. This supports generalizability, though differences in open vs. blind review are acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The manuscript contextualizes findings within extensive prior literature on gender bias in science, including productivity differences, career trajectories, implicit associations, hiring and funding disparities, and acceptance of bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 appropriately cite relevant literature to contextualize findings. These are literature review claims that support the discussion but are not primary findings of this study. The citations appear appropriate and the characterizations of prior work are reasonable, though individual claims would require verification of source material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gender homophily is a well-documented phenomenon across social contexts including children's play groups, adult friendships, work environments, and voluntary organizations, with documented gender differences in homophily patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 cite established sociological literature on homophily. These contextual claims appropriately ground the peer-review findings in broader social science theory. The citations to classic studies (Park & Burgess 1921, Lazarsfeld & Merton 1954) and more recent work are appropriate for establishing the ubiquity of homophily.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Inbreeding homophily negatively affects science because greater involvement of women would increase scientific quality. Gender bias is pervasive and unconscious, will not self-resolve, and likely extends beyond manuscript peer review to grant evaluation, hiring, and mentoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C85-C88 make normative and predictive statements that extend beyond the data. While C60 cites literature supporting diversity benefits, the causal claim about quality improvement requires stronger evidence. Claims C85-C88 about persistence and broader applicability are reasonable inferences but speculative. These are discussion points rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Since men and women have similar propensities to accept review invitations, increasing invitations to female reviewers would proportionally increase female reviews, and the low number of female reviews is partly caused by fewer invitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 make reasonable inferences from cited literature (C39: Fox et al. 2016, Lerback & Hanson 2017) showing similar acceptance rates. The logical inference that invitation rates drive review rates is sound given equal acceptance propensities. However, this is an inference from others' work rather than a direct finding of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Raising awareness is the most promising route to combat homophily, as it is a state of mind not amenable to external enforcement. Blind review has limitations, and editorial management software could direct editors' attention to homophily patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 present recommendations and opinions about interventions. While C90 correctly notes limitations of blind review, claims about the effectiveness of awareness-raising (C89) and software interventions (C91) are speculative. These are reasonable suggestions but lack empirical support within this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The gender assignment algorithm achieved 96% accuracy on validation, comparing favorably to the 92% accuracy (8% error rate) reported by Larivi\u00e8re et al. (2013).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide methodological validation. The 96% accuracy is based on manual verification of 924 individuals (88% of 1053 sampled), which is a reasonable validation sample. The comparison to Larivi\u00e8re et al. provides appropriate context. The validation methodology is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Peer review is the cornerstone of scholarly publishing where reviewers should be appointed based on expertise alone, but reviewer identities are typically confidential. Frontiers journals uniquely disclose reviewer and editor identities, enabling this analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 establish the context and rationale for the study. These are accurate characterizations of peer review principles (C76-C77), standard practices (C78), and Frontiers' unique approach (C79). The claims appropriately frame why this dataset enables novel analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed a RIP-seq approach to identify Pol V-associated transcripts genome-wide, identifying 4502 high-confidence transcripts with strong enrichment within annotated regions and high reproducibility between biological replicates (r=0.719, p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 collectively demonstrate successful genome-wide identification of Pol V transcripts using RIP-seq. The high correlation between replicates (C32), validation by RT-qPCR (C33), and clear enrichment within predicted regions (C30-C31) provide strong convergent evidence for the quality and reliability of the transcript calling approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pol V-associated RNAs identified by RIP-seq are produced by Pol V transcribing genomic DNA, as evidenced by overlap with Pol V ChIP-seq binding sites and Pol V-dependent CHH methylation, with RIP-seq being more sensitive than ChIP-seq for detecting Pol V-transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide multiple lines of evidence that RIP-seq identifies bona fide Pol V transcripts: spatial overlap with Pol V chromatin binding (C34-C35), presence of RdDM hallmarks (C36), superior sensitivity compared to ChIP-seq (C37), and consistency with in vitro data (C38). The convergence of RIP-seq, ChIP-seq, and DNA methylation data strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Pol V transcription is controlled by preexisting chromatin modifications within transcribed regions, including CG methylation and H3K9me2, though CG methylation alone is not sufficient for Pol V recruitment and does not regulate transcription levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C52 demonstrate that Pol V transcription overlaps with repressive chromatin marks (C41, C43, C46) and requires MET1-dependent CG methylation at some loci (C48), but CG methylation levels don't predict transcription intensity (C42, C44) and body-methylated genes lack Pol V transcription despite having CG methylation (C50-C52). This indicates CG methylation is necessary but not sufficient, supporting the model of internal chromatin-based control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pol V is controlled by internal promoters rather than external sequence elements, as evidenced by bidirectional transcription, shifted strand initiation sites (~51 bp), and the presence of multiple transcription initiation/termination sites within annotated regions (median length 689 bp but actual RNAs ~196-205 nt).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 provide converging evidence for internal promoter control: bidirectional transcription (C53), shifted strand positions (C54), discrepancy between annotated and actual RNA lengths (C55-C57), and multiple initiation sites (C57). The paired-end sequencing analysis predicting shorter RNAs than annotated transcripts (C55-C56) is particularly compelling evidence for multiple initiation sites within regions, supporting the internal promoter model (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AGO4 associates with most if not all Pol V transcripts genome-wide in a Pol V-dependent manner, as demonstrated by significant enrichment of AGO4 RIP-seq signal on Pol V transcripts and strong correlation between Pol V and AGO4 RIP-seq signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C61-C64 demonstrate widespread AGO4-Pol V transcript association through multiple lines of evidence: significant enrichment of AGO4 RIP signal on Pol V transcripts (C61), Pol V-dependence of this binding (C62), presence of signal on most transcripts (C63), and significant correlation between datasets (C64). The genome-wide nature of this association is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "AGO4 does not slice Pol V transcripts but instead enhances Pol V transcription or stabilizes Pol V transcripts, as evidenced by decreased (rather than increased) Pol V transcript accumulation in ago4 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C67-C69 provide clear evidence against AGO4 slicing activity on Pol V transcripts. The key observation is that Pol V transcript levels decrease in ago4 mutants (C67) rather than increase as would be expected if AGO4 were cleaving them. This directly contradicts the slicing hypothesis and supports a stabilization or enhancement role (C69). The logic is sound and the data interpretation is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "IDN2, like AGO4, enhances Pol V transcription or increases stability of Pol V transcripts on both strands, with effects in ago4 and idn2 mutants being correlated and not attributable to general RNA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 demonstrate that IDN2 has similar effects to AGO4 on Pol V transcript accumulation. The reduction of Pol V transcripts in idn2 (C70), correlation with ago4 effects (C72), and specificity to Pol V transcripts rather than mRNAs (C72) support the conclusion that IDN2 enhances transcription or stability (C71) rather than promoting degradation (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "RdDM features including CHH methylation, siRNAs, and AGO4 chromatin binding are tightly restricted to Pol V-transcribed regions, indicating that Pol V transcripts work in cis to mediate repressive chromatin modifications exclusively within transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C74-C81 demonstrate tight spatial restriction of RdDM to Pol V-transcribed regions through multiple independent datasets: CHH methylation (C74-C76), siRNAs (C77-C78), and AGO4 chromatin binding (C79). The convergence of these different RdDM features all showing the same spatial restriction (C80) strongly supports the conclusion that Pol V transcripts work in cis (C81). The data quality and consistency across multiple assays make this a well-supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C101"
+    ],
+    "result": "Pol V transcripts mediate establishment of CHH methylation on both strands of DNA without strand preference, despite potential strand bias in siRNAs or Pol V transcripts themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C101 demonstrate lack of strand bias in DNA methylation through strand-specific analysis. The observation that both DNA strands are equally methylated regardless of strand preference in siRNAs or Pol V transcripts (C82, C101) is well-supported by the data and leads to the logical conclusion that Pol V transcripts mediate methylation on both strands (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CHH methylation more closely follows AGO4 binding to Pol V transcripts (RIP) than AGO4 binding to DNA (ChIP), with AGO4 ChIP signal enriched outside heterochromatic domains correlating with nucleosome density, suggesting AGO4-RNA interaction is the primary event directing RdDM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 provide evidence for the primacy of AGO4-RNA interactions in RdDM through spatial analysis at heterochromatic domains. The observation that CHH methylation patterns match AGO4 RIP better than AGO4 ChIP (C84), combined with the correlation between AGO4 ChIP exclusion and nucleosome density (C86), supports the model that AGO4-transcript interaction is primary (C85). However, the speculative nature of C85 and potential confounding factors (chromatin remodeling complexes acknowledged by authors) introduce some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Pol V transcription is preferentially enriched at the edges of transposable elements, particularly large TEs (>4 kb), where Pol V transcribes into TEs with strand bias (sense at 5' ends, antisense at 3' ends), while Pol IV transcription shows edge enrichment without strand bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C87-C93 demonstrate preferential Pol V transcription at TE edges through size-dependent analysis (C87-C88), depletion inside large TEs (C89), and strand-specific analysis showing directional transcription into TEs (C92-C93). The contrast with Pol IV (C90) strengthens the conclusion. The data clearly support edge enrichment and directional transcription, though the functional significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C94"
+    ],
+    "result": "Pol V may play a key role in determining heterochromatin boundaries by transcribing into silenced regions at TE edges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C94 propose a role for Pol V in heterochromatin boundary determination based on edge enrichment and directional transcription. While the observational data supporting edge enrichment and directional transcription are solid (covered in previous result), the causal role in boundary determination remains speculative. The authors acknowledge this is a proposal, and direct experimental evidence for boundary determination function is lacking. Additional experiments manipulating Pol V activity and measuring boundary effects would be needed to support this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "AGO4 association with RNAs produced by polymerases other than Pol V does not lead to RdDM and may represent a non-RdDM function of AGO4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 identify Pol V-independent AGO4-bound transcripts that lack RdDM hallmarks (CHH methylation, siRNAs, AGO4 chromatin binding). The absence of RdDM features at these loci (C65) supports the conclusion that Pol V-independent AGO4 binding doesn't trigger RdDM (C66). However, whether this represents a genuine alternative function or non-specific binding remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SUVH2 and SUVH9 are required for Pol V binding to chromatin and transcription, and since these proteins bind methylated DNA through SRA domains, preexisting DNA methylation may serve as a Pol V promoter equivalent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 synthesize published literature (C95-C96) with the current study's findings to propose that DNA methylation serves as a Pol V promoter equivalent (C97). While C95-C96 are well-supported by citations, C97 is an inference that reasonably connects the requirement for SUVH2/9 with their methylation-binding activity. This is consistent with the study's findings but relies heavily on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Pol V transcription is limited to TE edges while DNA methylation spans entire TEs, and Pol V behaves like Pol III in being controlled by features within transcribed regions rather than external promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 synthesize observations about Pol V behavior. The edge-specific transcription versus full-length methylation (C98) is well-supported by the TE analysis data. The comparison to Pol III (C99) is a reasonable inference from the internal promoter evidence, though the mechanistic similarity to Pol III remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The RdDM effector complex includes AGO4 throughout the genome, with base pairing between siRNAs and Pol V transcripts likely occurring in close proximity to the Pol V complex, consistent with AGO4's physical interaction with Pol V's C-terminal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C102-C107 synthesize multiple observations to propose a model of the RdDM effector complex. The genome-wide AGO4 inclusion (C104) is well-supported by data. The inference that siRNA-lncRNA base pairing occurs near Pol V (C106) is reasonably drawn from spatial restriction of methylation. The speculation about double-stranded DNA as DRM2 substrate (C102) and siRNA-lncRNA base pairing (C103) are plausible but remain unproven. The citation of AGO4-Pol V interaction (C107) supports the proximity model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on RNA-mediated transcriptional gene silencing and the RdDM pathway in plants, including the roles of Pol IV, Pol V, siRNAs, AGO4, IDN2, and DRM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C27 provide established background knowledge about RdDM, all supported by appropriate citations to published literature. These are well-accepted facts in the field and serve as context for the current study rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Transposons are silenced by three pathways (MET1-dependent CG methylation, CMT2/CMT3-dependent non-CG methylation, and de novo RdDM), with evidence from maize that RdDM components affect heterochromatin boundary spreading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide background on transposon silencing mechanisms, all supported by citations to published work. The maize study on boundary spreading (C111) provides relevant context for the authors' proposal about Pol V's role in boundary determination, though it doesn't directly validate the current study's findings in Arabidopsis.",
+    "result_type": "MINOR"
+  }
+]

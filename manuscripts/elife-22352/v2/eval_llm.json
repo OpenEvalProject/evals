@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors developed a high-resolution morphological characterization pipeline for STG neurons using confocal microscopy, immunohistochemistry, and custom Python-based computational tools. Four neuron types (GM, LG, LP, PD) from Cancer borealis were physiologically identified, dye-filled with Lucifer Yellow, imaged at 63x magnification with z-steps of 0.12-1.01 \u00b5m, and reconstructed using Amira, Imaris, or KNOSSOS software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C125-C132 provide comprehensive methodological details that are internally consistent and follow established neuroscience protocols. The methods are sufficiently detailed for reproducibility, including specific imaging parameters, software tools, and data availability statements. The physiological identification approach (C126) ensures accurate cell-type assignment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33"
+    ],
+    "result": "Basic anatomical features of the four STG neuron types were characterized. GM neurons have 3-5 axons projecting to alns and dvn, while LG, LP, and PD neurons each project single axons down the dvn. Soma diameters averaged 125.8 \u00b1 47.5 \u00b5m across all 16 neurons, with 75% located on the posterior side of the neuropil, though soma positions varied within and across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe straightforward anatomical observations directly measurable from the confocal images and reconstructions. The quantitative measurements (soma diameter, positions) are clearly stated with appropriate statistics. The variability in soma positions (C33) is consistent with Figure 1C showing scattered distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Qualitative structural features distinguish some neuron types. Hand-like structures (thick segments sending off secondary neurites from thin primary neurites) were observed in all GM and LG neurons but not in LP neurons, with half of PD neurons showing hand-like features. Hair-like neurites (<1 \u00b5m diameter, >50 \u00b5m length) were present in all neurons examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe qualitative morphological features with clear definitions and consistent observations across the sample. The hand-like structure provides a distinguishing feature for LP neurons (C37), which is a reasonable inference from the binary presence/absence pattern. These observations are supported by Figure 1D and the confocal images.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Total wiring length and path numbers varied substantially across neurons and cell types. All 16 neurons had >10 mm of neurite with high variability (mean \u00b1 SD = 37,515 \u00b1 27,498 \u00b5m; CV = 0.73). GM neurons showed significantly greater total wiring (74,890 \u00b1 26,581 \u00b5m) and soma-to-tip paths than LG, LP, and PD neurons (ANOVA p=0.0029 and p=0.0052, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 present quantitative morphometric data with appropriate statistical tests (ANOVA with Tukey HSD post-hoc). The sample size (n=4 per cell type) is modest but reasonable for this labor-intensive approach. The high CV (0.73) supports the variability claim. Statistical significance is properly reported with F-statistics and p-values, and data are shown in Figure 2A-B and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Sholl analysis and spatial density analysis revealed no consistent cell-type-specific patterns in macroscopic branching. Some neurons showed multi-modal Sholl distributions suggesting distance-dependent branching, but no trends emerged across or within cell types. GM neurons showed distinct high-density regions while PD neurons were more uniformly distributed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe negative results (no apparent trends) which are appropriately qualified. The multi-modal observation (C45) and GM vs PD distinction (C47) are supported by Figures 2D and 3. The lack of stereotypy is a key finding consistent with the overall variability theme. The adapted Sholl analysis for unipolar neurons is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Branch point numbers and angles were quantified across neurons. GM neurons had significantly more branch points than other cell types (ANOVA p=0.0053). Branch angle distributions were similar across cell types and neurons, with the majority falling between 0-100 degrees and mean angles around 70 degrees for all cell types (GM: 70.7\u00b0, LG: 70.6\u00b0, LP: 68.6\u00b0, PD: 70.3\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 present quantitative data with appropriate statistics. The branch angle similarity across cell types (C49) contrasts with the branch point number differences (C48), suggesting different aspects of morphology vary independently. The ~70\u00b0 mean angles are consistent across all cell types, supporting the similarity claim. Data are shown in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Branch point complexity was characterized by counting daughter neurites. Bifurcations were most common across all neurons, but higher-order multi-furcations (>2 daughters) were present in all neurons examined. GM neurons displayed more multi-furcations with >4 daughter neurites, though differences in proportions across cell types were small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe the distribution of branch point types with appropriate qualification that differences are small (C58). The presence of multi-furcations in all neurons (C56) challenges assumptions about predominantly bifurcating trees. The observations are supported by Figure 5, which clearly shows the distribution of branch point types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Symmetry indices (SI) at bifurcations were calculated to assess branch length asymmetry. Mean SI values were 0.48 \u00b1 0.11 (GM), 0.44 \u00b1 0.11 (LG), 0.55 \u00b1 0.05 (LP), and 0.66 \u00b1 0.03 (PD). PD neurons showed significantly more symmetrical arborizations than other cell types (ANOVA p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 present quantitative symmetry data with appropriate statistics. The SI metric is well-defined in the methods. PD neurons' higher symmetry (closer to 1.0) is statistically significant and represents one of the few distinguishing features between cell types. The full distributions shown in Figure 6C support the mean values, and the statistical test is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Subtree numbers (secondary branches from the primary neurite) varied from 2 to 80 across neurons. GM neurons had significantly more subtrees (47 \u00b1 23) than LP (18 \u00b1 6) and PD (6 \u00b1 6) neurons (ANOVA p=0.0041), with substantial variability within each cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 present subtree quantification with appropriate statistics. The wide range (2-80) and high within-type variability (C63) are consistent with the overall morphological variability theme. The statistical test properly identifies GM neurons as having more subtrees. Data are shown in Figure 7A and Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Bootstrap analysis of subtree spatial organization revealed non-random tiling of the neuropil. In 13/16 neurons, actual subtree neuritic fields showed less overlap than scrambled-tip populations. Mean subtree neuritic field radii were significantly smaller in actual neurons than scrambled controls (p<0.01 for all neurons), suggesting subtrees are organized to minimize overlap and tile distinct spatial fields, unlikely to arise from random tip distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present a sophisticated computational analysis with appropriate statistical controls (bootstrap with 2000 iterations). The comparison to scrambled tip distributions provides a rigorous null model. The consistent finding across 13/16 neurons and significant p-values (<0.01) strongly support the non-random organization conclusion. This is a key finding suggesting space-filling organization. Data shown in Figure 7G-H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Soma-to-tip neurite lengths ranged from 5 to 1,778 \u00b5m across all neurons, with most branches between 200-800 \u00b5m. No significant cell-type-specific differences were found in neurite length distributions (ANOVA p=0.2698).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 present straightforward quantitative measurements with appropriate statistical testing. The lack of cell-type differences (C70) is properly reported as a negative result with the non-significant p-value. The wide range supports the variability theme. Data shown in Figure 8A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Neurite diameters decreased significantly with branch order when all cell types were pooled (ANOVA p<<0.001). Mean primary neurite diameter was 18.7 \u00b1 11.1 \u00b5m and mean tip diameter was 1.5 \u00b1 1.5 \u00b5m. However, substantial variability existed within each neurite class (CVs: 0.6 for 1\u00b0, 0.9 for 2\u00b0, 1.4 for 3\u00b0, 1.0 for tips).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 present diameter measurements with appropriate statistics. The significant decrease with branch order (C71) is expected from cable theory, but the high CVs within each class (C73) indicate substantial variability. The measurements were made manually from 2D slices, which is appropriate given the flattened morphology noted in methods. Data shown in Figure 8C-D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Rall powers at branch points were highly variable and deviated from the optimal 3/2 value. Mean initial Rall powers were uniformly <3/2 across cell types, suggesting secondary branches have large diameters relative to primary neurites. Primary-secondary, secondary-tertiary, and terminal branch points showed variable Rall powers within and across cell types, indicating branch points do not present optimal parent-daughter radius ratios for current transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present Rall power analysis with clear interpretation. The deviation from 3/2 (C74, C77) is a key finding suggesting these neurons don't optimize for current transfer as predicted by cable theory. The measurements are based on manual diameter measurements (18-20 branch points per category), which is reasonable. The interpretation (C75) about large secondary branches is logical. Data shown in Figure 9 and Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Tortuosity analysis revealed inefficient wiring. Tortuosity distributions spanned beyond values of 3, with mean tortuosities >1 for all cell types (GM: 3.8, LG: 4.7, LP: 3.2, PD: 2.7). This indicates neurite paths are measurably longer than optimal Euclidean distances. No significant differences in mean tortuosities were found across cell types (ANOVA p=0.3509).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 present tortuosity measurements with clear interpretation. Tortuosity >1 indicates non-optimal wiring, and values of 3-5 suggest highly inefficient paths. The lack of cell-type differences (C81) is properly reported. This is a key finding supporting the main conclusion about deviation from wiring optimization. Data shown in Figure 10B and Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Comparison to minimal spanning trees (MSTs) generated with varying balancing factors (bf = 0.1-0.6) revealed that no single bf value could recapitulate all morphological features (neurite length, branch order, tortuosity distributions) of actual STG neurons. This discrepancy was observed across all 16 neurons, preventing confident bf assignment and suggesting the wiring cost equation is insufficient to comprehensively recapitulate STG neuronal structures. STG neurons may not adhere to wiring optimization principles enforced by this equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 present a rigorous computational comparison using established MST methods (TREES toolbox). The inability to find a single bf value that fits all metrics (C83-C84) across all 16 neurons is a strong negative result. The conclusion (C85-C86) is appropriately qualified as 'insufficient' and 'plausible.' The analysis is thorough, comparing multiple morphological features. Data shown in Figure 11 and supplements 1-4, with simulation parameters in Table 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "STG neuronal morphologies are highly variable across animals, with macroscopic branching patterns and fine cable properties varying within and across neuron types. No single metric or combination of metrics distinguished the four neuron types except that GM neurons had significantly longer total cable lengths and more branch points, and PD neurons showed slightly more symmetrical arborizations. Despite this morphological variability, STG cell types show highly conserved physiological waveforms across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C94-C96 synthesize the major findings. The variability is supported by high CVs, lack of cell-type-specific patterns in most metrics, and the few statistically significant differences noted. The contrast between morphological variability and conserved physiology (C96) is a key interpretive point, though the physiological conservation is cited from prior work rather than demonstrated here. The morphological variability is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C101",
+      "C102"
+    ],
+    "result": "STG neurons do not adhere to prevailing wiring optimization principles. Tortuosity measurements and MST comparisons provided within-neuron measures of wiring inefficiency, with mean tortuosities ranging from 1 to 7, suggesting highly inefficient wiring. The expansive and complex neuronal structures do not conform to hypotheses regarding wiring optimization principles thought to govern developmental growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C88, C101-C102 present the central conclusion of the paper. This is supported by multiple lines of evidence: high tortuosities (C78-C81), failure of MST models to fit (C82-C86), deviation of Rall powers from optimal values (C74-C77), and non-random but space-filling subtree organization (C64-C68). The conclusion is well-supported by converging evidence from multiple independent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose that STG neuronal structures are governed by a space-filling mechanism that outweighs wiring economy. Subtrees appear to grow to fill and tile distinct spatial fields in the neuropil, potentially to maximize surface area for reception of neuromodulatory substances diffusely released in the hemolymph and by descending inputs. In development, space-filling may outweigh wiring economy expected if decrement of synaptic events were critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C122-C124 present a speculative mechanistic interpretation. While the space-filling observation is supported by the subtree analysis (C64-C68), the proposed purpose (maximizing neuromodulator reception, C123) is speculative and not directly tested. The claim relies on prior knowledge about neuromodulation (C16, C26) but doesn't provide direct evidence linking morphology to neuromodulator reception. This is appropriately framed as speculation in the text but represents an untested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C108",
+      "C109",
+      "C110",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose that electrotonic compactness of STG neurons masks morphological variability at the physiological level. STG neurons are electrotonically compact (from prior work), so slow voltage events undergo minimal electrotonic decrement and are resilient to variable morphologies. This, combined with sparse distribution of synaptic contacts across the neurite tree, could effectively mask animal-to-animal morphological variability and compensate for complex and variable morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C22, C108-C110, C114-C115 present a mechanistic explanation for how morphological variability is tolerated. The electrotonic compactness (C20) is cited from prior work (Otopalik et al., 2017) rather than demonstrated here. The inference that this masks morphological variability (C22, C110) is logical but not directly tested. The synaptic distribution claims (C111-C114) cite old EM studies (King 1976) that may not reflect current understanding. This is a reasonable hypothesis but lacks direct experimental support in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The current study's neurons are more expansive with greater neurite lengths than previously reported in other STG studies, likely due to higher imaging resolution and more precise reconstruction methods that visualized smaller processes. However, key findings are consistent with earlier work: soma positions vary across animals, and most neuron types are indistinguishable by soma position, maximum branch order, and total cable lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 appropriately contextualize the findings relative to prior work. The explanation for differences (higher resolution, C98) is reasonable and acknowledges methodological improvements. The consistency with earlier findings (C99) despite quantitative differences strengthens confidence in the results. The comparison is fair and acknowledges both differences and similarities with prior studies (Wilensky et al., 2003; Bucher et al., 2007; Thuma et al., 2009).",
+    "result_type": "MINOR"
+  }
+]

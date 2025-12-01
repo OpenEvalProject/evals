@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C38",
+      "C99"
+    ],
+    "result": "The crystal structure of Munc13-1 C1C2BMUN reveals a 19.5 nm-long multi-helical structure containing 26 \u03b1-helices, with the C1 and C2B domains packed at the N-terminal end. The MUN domain starts at residue 828 and contains five additional helices (H6-H10) compared to previous structures, and there are five helices (H1-H5) preceding the MUN domain with extensive contacts between domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28, C31-C36, C38, and C99 are directly supported by crystallographic data including structural coordinates, measurements, and electron density maps. The structure was determined at 3.35 \u00c5 resolution with appropriate refinement statistics (Rwork=25.4%, Rfree=29.0%), and the domain arrangements are clearly observable in the crystal structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The similar orientations of the DAG-binding site of the C1 domain and the Ca2+-binding site of the C2B domain suggest cooperative binding to the plasma membrane, providing a mechanism for synergy between DAG and Ca2+ in enhancing release probability during repetitive stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C42-C44 are supported by structural modeling incorporating the Ca2+-binding loops into the C1C2BMUN structure, showing spatial proximity of the binding sites. This structural inference is further validated by functional data from mutations disrupting the C1-C2B interface (C73, C95-C96) and PDBu experiments (C70-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C118"
+    ],
+    "result": "The C1C2BMUN structure imposes key constraints for models of neurotransmitter release and suggests that Munc13-1 may function as a rigid or semi-rigid unit that bridges vesicle and plasma membranes from the periphery of the membrane-membrane interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C39, C40, and C118 are supported by the elongated structure (~19.5 nm length comparable to vesicle radius), the similarity between two molecules in the asymmetric unit suggesting limited flexibility, and the overall domain architecture. However, the specific bridging model remains partially speculative as it requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C57",
+      "C59",
+      "C62",
+      "C64"
+    ],
+    "result": "The V549E,L554E mutation in helix H1 increases mEPSC frequency and vesicular release probability while decreasing RRP size by ~50%, but fully rescues evoked release, demonstrating differential effects on spontaneous versus evoked release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C57, C59, C62, and C64 are directly supported by electrophysiological measurements in Munc13-1/2 DKO neurons rescued with mutant protein. The data show statistically significant increases in mEPSC frequency and Pvr, with corresponding changes in paired-pulse depression, all measured with appropriate controls and sample sizes (n=51-54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C60",
+      "C63",
+      "C65"
+    ],
+    "result": "The R750E,K752E mutation in the C1-C2B interface and the N940W mutation in the C2B-MUN interface impair Ca2+-triggered release with distinct effects: R750E,K752E shows normal vesicle priming despite reduced evoked response, while N940W causes ~40% reduction in RRP size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C60, C63, and C65 are supported by electrophysiological data showing differential effects on EPSC amplitude and RRP size. The measurements include appropriate controls and statistical analyses, though the differences in Pvr for these mutants versus WT were not statistically significant, indicating the mutations affect different aspects of release.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C69",
+      "C83",
+      "C84",
+      "C100"
+    ],
+    "result": "The three mutations (V549E,L554E, R750E,K752E, N940W) differentially regulate vesicle priming, release probability, and activity-dependent changes, demonstrating that domain interfaces play distinct roles in regulating the efficiency of the vesicle fusion process and synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C69, C83, C84, and C100 are supported by comprehensive electrophysiological characterization showing each mutation has unique effects across multiple parameters (evoked release, RRP, Pvr, high-frequency stimulation, PDBu response). The data provide compelling evidence for functional importance of the domain interfaces observed in the crystal structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C101"
+    ],
+    "result": "During 10 Hz stimulation trains, the V549E,L554E and R750E,K752E mutations cause more pronounced depression than expected from initial release probability, while N940W causes less depression, demonstrating that each mutation uniquely alters the normal relationship between release probability and steady-state depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C101 are supported by direct electrophysiological measurements during repetitive stimulation. The data show clear deviations from the expected correlation between Pvr and steady-state EPSC amplitude established in WT neurons at various Ca2+ concentrations, indicating roles in activity-dependent vesicle re-priming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C102"
+    ],
+    "result": "PDBu-induced potentiation is differentially affected by the three mutations: N940W shows enhanced potentiation, V549E,L554E shows reduced potentiation, and R750E,K752E shows severely impaired potentiation, supporting the critical role of the C1-C2B interface in DAG-dependent plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C102 are supported by direct measurements of PDBu effects on EPSC amplitude. The strong impairment by R750E,K752E despite minimal effect on basal Pvr provides particularly compelling evidence that the C1-C2B interface is critical for cooperative activation by DAG and Ca2+ during plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "After 10 Hz stimulation trains, WT Munc13-1 shows increased release probability without significant RRP changes, while the three mutations show distinct patterns: V549E,L554E and R750E,K752E fail to potentiate Pvr (explaining their enhanced depression), whereas N940W shows enhanced Pvr potentiation (explaining reduced depression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by systematic measurements of RRP and EPSC amplitude before and after 10 Hz trains. The data demonstrate that the mutations differentially affect activity-dependent potentiation of release probability rather than vesicle replenishment, providing mechanistic insight into the depression phenotypes observed during trains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In reconstituted liposome fusion assays, the R750E,K752E mutation strongly impairs fusion (especially with T-liposomes containing only DAG or only PIP2), and this impairment is partially rescued by a reversal quadruple mutant, supporting that the C1-C2B interface is important for cooperative membrane binding and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 are supported by direct measurements of lipid and content mixing in reconstitution assays. The partial rescue by the reversal mutant (R750E,K752E,E582R,E584K) provides strong evidence that the effects are due to disruption of the C1-C2B interface rather than non-specific structural perturbations. The correlation with electrophysiology data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The C1-C2B region contains abundant basic residues that could mediate membrane binding in alternative orientations in the absence of DAG and Ca2+, suggesting that increased DAG and Ca2+ may alter release probability by promoting a different, more efficient orientation of Munc13-1 with respect to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45, C46, and C106-C108 are based on structural observations of basic residues but remain speculative regarding the proposed mechanism of orientation-dependent activation. While the structural data support the presence of basic residues and the functional data support activation by DAG and Ca2+, direct evidence for distinct membrane-binding orientations is lacking. This model requires validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Helix H1 packs against the MUN domain with its N-terminus pointing toward the center, suggesting that N-terminal sequences (such as the calmodulin-binding region and C2A domain) could regulate MUN domain activity through intramolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is directly supported by the crystal structure, but claims C48-C50 and C52 regarding regulatory mechanisms by N-terminal sequences are speculative. While the structural arrangement is consistent with these models and some functional data from the literature support regulatory roles, direct experimental evidence for the proposed mechanisms is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The V549E,L554E mutation strongly destabilizes the C1C2BMUNC2C fragment in vitro (preventing expression of sufficient soluble protein), but the mutant is expressed at comparable levels to WT in neurons, possibly due to stabilizing interactions with other cellular components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86 and C87 are supported by direct observations from protein expression experiments. Claim C88 provides a reasonable speculative explanation for the discrepancy between in vitro and in vivo expression, supported by Western blot data showing comparable expression levels in neurons. This highlights important differences between reconstituted and cellular systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The V549E,L554E mutation resembles the H567K C1 domain mutation in its effects on RRP and release probability, suggesting both mutations may disrupt coupling between C-terminal and N-terminal regions and partially mimic activation during repetitive stimulation, though V549E,L554E prevents activity-dependent Pvr increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is supported by comparison with cited literature showing similar functional effects. However, claims C110 and C111 are speculative interpretations based on functional similarities and unpublished data. Claim C112 is supported by direct measurement but indicates the mutations affect different aspects of function, making the mechanistic interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The C2B-MUN interface packing is important for normal vesicle priming and single action potential-evoked release, but the N940W mutation favors an activated state generated during repetitive stimulation, causing larger increases in release probability after trains than WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 are supported by the combined electrophysiological data showing N940W impairs basal function but enhances activity-dependent potentiation. The interpretation that the mutation favors an activated state is a reasonable inference from the data, though the molecular mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The C1C2BMUN structure does not support models of direct intramolecular inhibition by C1/C2B domains on the MUN domain. Instead, the data are more consistent with models where Munc13-1 remains bound to the SNARE complex after assembly, located at the periphery of the membrane interface, with distinct roles in docking-priming and fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is supported by the spatial separation of C1/C2B from the MUN domain's functional NF sequence. However, claims C124-C129 proposing alternative models are speculative and based on inference from functional data rather than direct structural evidence. While the models are consistent with the data and provide reasonable explanations for the differential mutant effects, they require validation through additional structural and functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C97"
+    ],
+    "result": "The reconstitution experiments with DAG and PIP2 in T-liposomes likely recapitulate an activated state during repetitive stimulation rather than the basal state for single action potential-evoked release, as evidenced by the strong effect of R750E,K752E and the Ca2+ dependence arising from the C2B domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 and C97 are supported by the correlation between reconstitution and electrophysiology data, particularly the strong impairment by R750E,K752E in both systems during activated conditions. The interpretation is further supported by cited literature showing the C2B domain mediates Ca2+ dependence in reconstitutions and is important for plasticity but not necessarily basal evoked release in neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C37",
+      "C41",
+      "C51",
+      "C85",
+      "C89",
+      "C90",
+      "C103",
+      "C104",
+      "C116",
+      "C119",
+      "C131",
+      "C132"
+    ],
+    "result": "Background claims establishing the known roles of SNAREs, Munc18-1, and Munc13s in neurotransmitter release, including their involvement in membrane fusion, SNARE complex assembly, docking-priming, and various forms of presynaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C27, C29-C30, C37, C41, C51, C85, C89-C90, C103-C104, C116, C119, C131-C132) are established knowledge supported by appropriate citations to the literature. They provide necessary context for interpreting the current study's findings and are not primary results of this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C130",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors acknowledge limitations and future directions, noting that interpretation of the C1C2BMUN structure in terms of specific release mechanisms is necessarily speculative without knowing how Munc13-1 interacts with other proteins, and that the structure provides a fundamental framework for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117, C130, C139-C143 appropriately acknowledge the limitations of the current data and the speculative nature of mechanistic models. These statements demonstrate scientific rigor in distinguishing between what is demonstrated versus what is inferred, and appropriately identify areas requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Speculative mechanistic models for how Munc13-1 might function in membrane fusion, including proposals about membrane bridging, SNARE complex assembly, and the role of membrane tension in fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C123 and C133-C135 present speculative models for fusion mechanisms that are consistent with the structural and functional data but lack direct experimental validation. While these models provide useful frameworks for thinking about Munc13-1 function and are constrained by the structural data, they remain hypothetical and require testing through additional experiments.",
+    "result_type": "MINOR"
+  }
+]

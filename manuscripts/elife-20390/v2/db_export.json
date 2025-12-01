@@ -1,0 +1,2123 @@
+{
+  "submission": {
+    "id": "fe38cffc-b61a-438f-b273-76c3b68d61ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:04:44.551213Z",
+    "updated_at": "2025-11-30T22:04:44.551213Z"
+  },
+  "content": [
+    {
+      "id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "submission_id": "fe38cffc-b61a-438f-b273-76c3b68d61ee",
+      "content_type": "manuscript",
+      "content_text": "# Experimental reconstitution of chronic ER stress in the liver reveals feedback suppression of BiP mRNA expression\n\n## Authors\n\n- Javier A Gomez<sup>1</sup>\n- D Thomas Rutkowski<sup>2</sup> ([ORCID: 0000-0001-6586-4449](https://orcid.org/0000-0001-6586-4449)) \u2020\n\n### Affiliations\n\n1. Graduate Program in Molecular and Cellular Biology University of Iowa Carver College of Medicine Iowa City United States\n2. Departments of Anatomy and Cell Biology and Internal Medicine University of Iowa Carver College of Medicine Iowa City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEndoplasmic reticulum (ER) stress is implicated in many chronic diseases, but very little is known about how the unfolded protein response (UPR) responds to persistent ER stress in vivo. Here, we experimentally reconstituted chronic ER stress in the mouse liver, using repeated injection of a low dose of the ER stressor tunicamycin. Paradoxically, this treatment led to feedback-mediated suppression of a select group of mRNAs, including those encoding the ER chaperones BiP and GRP94. This suppression was due to both silencing of the ATF6\u03b1 pathway of UPR-dependent transcription and enhancement of mRNA degradation, possibly via regulated IRE1-dependent decay (RIDD). The suppression of mRNA encoding BiP was phenocopied by ectopic overexpression of BiP protein, and was also observed in obese mice. Our findings suggest that persistent cycles of UPR activation and deactivation create an altered, quasi-stable setpoint for UPR-dependent transcriptional regulation\u2014an outcome that could be relevant to conditions such as metabolic syndrome.\n\n## Introduction\n\nThe western obesity epidemic has exposed one of the consequences of modernity: the increasing prevalence of non-infectious chronic diseases that progress down increasingly irreversible paths over the course of years to decades. Diabetes, atherosclerosis, hypertension, steatohepatitis, and the like join neurodegenerative disorders, cancers, lung disease and other chronic diseases in driving morbidity and mortality in the western world (Ezzati et al., 2002). As a class, these diseases necessarily entail a gradual deterioration of cellular and organ function, rather than an acute collapse. Thus, treating or reversing them requires understanding how persistent but otherwise modest stimuli alter the activity of key cellular pathways.\n\nOne cellular pathway increasingly implicated in the progression of a number of chronic diseases is the Unfolded Protein Response (UPR). The UPR is activated by disruption of the protein folding capacity of the endoplasmic reticulum, otherwise known as \u2018ER stress\u2019 (Walter and Ron, 2011). Unremitted ER stress and/or a dysregulated UPR appear to contribute to hepatic steatosis and steatohepatitis (Malhi and Kaufman, 2011), atherosclerosis (Zhou and Tabas, 2013), colitis and inflammatory bowel disease (Kaser et al., 2013), hypertension (Young and Davisson, 2015), and many others. As an organelle that carries out several essential cellular processes (protein processing, calcium storage, lipogenesis, certain metabolic steps, etc.) and that is physically and functionally intertwined with many other critical cellular pathways, the ER is sensitive to a range of diverse stimuli. For example, ER stress is observed in the livers of obese mice (Ozcan et al., 2004), and this response has been attributed to an excess load of nascent client proteins in the organelle due to nutrient-mediated stimulation of mTOR activity (Ozcan et al., 2008). Other physiological stimuli that elicit ER stress include nutritional status and the activity of metabolic pathways (Oyadomari et al., 2008; Tyra et al., 2012; Shao et al., 2014), differentiation cues (Iwakoshi et al., 2003; van Anken et al., 2003; Lee et al., 2005), inflammatory signals (Zhang et al., 2006; Hotamisligil, 2010), and many others. While the UPR is capable of responding to excessive ER stress by initiating cell death cascades (Sano and Reed, 2013), chronic stress is instead likely to result not in cell death (at least not for most cells, most of the time), but instead in a persistent burden on ER function that must be accommodated by the UPR. And yet, for many chronic diseases in which ER stress is implicated, it is not clear whether disease results from a UPR that becomes progressively dysregulated and thus responds inappropriately; or whether the UPR becomes progressively neutered and simply becomes increasingly unresponsive.\n\nExperimental manipulation of the UPR has sketched the framework of a canonical UPR that is initiated by three ER-resident proteins and that culminates in transcriptional augmentation of the ER protein processing capacity and other non-transcriptional mechanisms to alleviate ER load. The inositol-requiring enzyme 1\u03b1 (IRE1\u03b1) pathway results in both the production of the XBP1 transcription factor (Yoshida et al., 2001; Calfon et al., 2002; Lee et al., 2002) and the degradation of ER-associated mRNAs in a process known as Regulated IRE1-Dependent Decay via the IRE1 endonuclease activity (Hollien and Weissman, 2006; Hollien et al., 2009). The PKR-like endoplasmic reticulum kinase (PERK) stimulates production of the ATF4 transcription factor (Harding et al., 2000) and also transiently reduces ER protein load by phosphorylation of the translation initiation factor eIF2\u03b1 (Shi et al., 1998; Harding et al., 1999). ATF6 (comprising both \u03b1 and \u03b2 paralogs) initiates the third pathway when ATF6 is itself cleaved by regulated intramembrane proteolysis in the Golgi, liberating a transcriptionally active N-terminal fragment (Ye et al., 2000). These pathways are all robustly activated by acute exposure of cells to high doses of ER stress-inducing drugs, which is an effective tool for understanding what the system is capable of but not as effective for understanding how the cellular response to chronic stress differs from these canonical pathways.\n\nEvidence for the involvement of ER stress in chronic diseases in general comes from two lines of investigation: detecting markers of ER stress in the affected tissues of human patients or mouse models thereof, and observing disease-like phenotypes in mice with genetic ablations of UPR signaling pathways. Yet while studies of this sort provide prima facie evidence for UPR involvement, they do not address how the UPR becomes dysregulated during chronic disease, if in fact it even does. Further, animal models of chronic diseases such as those associated with obesity tend to influence innumerable cellular pathways and make it difficult to isolate the effects of ER stress per se from the many other confounding factors.\n\nWith these considerations in mind, we set out to address how the UPR responds to chronic stress in vivo. Following the example of our previous work in vitro (Rutkowski et al., 2006), here we describe how UPR signaling in the liver becomes altered during repeated exposure to stress, the mechanisms by which these alterations occur, and their potential relevance to liver dysfunction during obesity.\n\n## Results\n\n### The liver adapts to persistent ER stress\n\nOur first step in experimentally reconstituting chronic ER stress was to identify conditions that were as specific as possible in perturbing ER function with minimal pleiotropic effects, and were sufficient to activate the UPR without causing overt toxicity. In doing so, we hoped to be able to understand how the UPR responds to chronic stress, divorced from the confounding influences of chronic diseases on other cellular pathways. Toward this end, we used tunicamycin (TM) to induce ER stress in vivo; TM blocks N-linked glycosylation, an ER-specific protein modification. It has few known off-target effects, most prominently targets the kidneys and the liver, and is not lethal in wild-type animals at even relatively high doses (Foufelle and Fromenty, 2016). Its effects on the liver can also be mimicked, albeit less readily, by other agents that elicit ER stress in that organ (Rutkowski et al., 2008; Chikka et al., 2013), further justifying its use here. Following an approach analogous to one we described previously in cultured cells (Rutkowski et al., 2006), we looked for a dose of TM that was capable of inducing the UPR, but that was significantly less toxic than the common experimental dose of 1 mg/kg\u2014which is known to elicit hepatocellular death and inflammation (Foufelle and Fromenty, 2016). Using qRT-PCR to detect changes in expression of the UPR sentinel genes Hspa5 (encoding BiP) and Ddit3 (encoding CHOP), we found that doses of TM below 0.1 mg/kg were capable of eliciting attenuated UPR activation (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig1-v2.jpg)\n\n**Figure 1.:** (A) Livers from wild-type mice collected 8 hr after injection with the indicated concentrations of TM (in mg/kg) were probed by qRT-PCR for expression of Hspa5 (encoding BiP) and Ddit3 (encoding CHOP). n\u00a0=\u00a02\u20133 animals/group. Significance was determined by one-way ANOVA. Here and elsewhere, ***, p<0.001; **, p<0.01; *, p<0.05.; NS = not significant (B) Livers were harvested after treatment for 8 hr with vehicle or 0.025 mg/kg TM and protein lysates were probed by immunoblot to detect BiP or CHOP. Calnexin was used as a loading control. For all blots and gels in this paper, each lane represents a separate animal. Hairlines are used for visual clarity only. (C) Chronic stress treatment schematic. Mice were weighed and then injected daily with 0.025 mg/kg TM (red arrows); liver samples were collected at the indicated times (blue arrows) for downstream analysis. The naming convention is as follows: \u2018D\u2019 indicates the number of daily injections received while \u2018h\u2019 indicates the time of tissue collection after the last injection. Here and elsewhere, not treated animals (NT) received injections of vehicle at the same times that D5-24h mice received TM. (D) Formalin-fixed liver sections from animals treated as in (C) were collected, fixed, and stained by H and E at the indicated times. For each condition, representative images from two separate mice are shown. Note the extensive cytoplasmic vacuolization in the D1-24h animals. (E, F) Protein lysates from animals treated as in (C) were isolated and probed for expression of the ER-resident glycoprotein TRAP\u03b1 (E) and BiP, CHOP, ADRP, and \u03b1-actin (loading control) (F).\n\nBased on this finding, we chose 0.025 mg/kg as the dose most likely to be tolerated long-term by mice without leading to significant toxicity, and we used it as the basis for induction of chronic stress. As expected, acute treatment (8 hr) with this dose of TM was sufficient to lead to upregulation of both BiP and CHOP at the protein level (Figure 1B), although for CHOP this induction was much more modest than commonly elicited by higher doses of TM. To test the effects of chronic treatment with 0.025 mg/kg TM, we injected animals with this dose (or with vehicle) every day for five days (or longer), as shown in Figure 1C. Animals were sacrificed approximately 24 hr after the most recent dose (i.e., immediately before the next injection would have taken place). After sacrifice, livers were harvested and analyzed for molecular and histological markers of ER stress.\n\nThe predominant acute effect of TM on the liver, as revealed by hematoxylin and eosin staining, was the formation of intracellular vacuoles in hepatocytes (Figure 1D) that correspond to accumulated lipid droplets resulting from impaired lipid metabolism (Rutkowski et al., 2008). These vacuoles were abundant in animals administered a single dose of 0.025 mg/kg TM, but, remarkably, were absent by the end of the fifth day of challenge. Other than these changes, there were few signs of gross liver damage such as necrosis or fibrosis (data not shown). Thus, at least by these histological criteria, animals are capable of maintaining liver function in the face of ongoing stress. The apparent normalization of liver histology could be explained if animals became resistant to TM over time. However, persistent underglycosylation of the ER-resident glycoprotrein TRAP\u03b1 at day five confirmed that the drug remained active upon repeated dosing (Figure 1E).\n\nIn order to test whether ER stress persisted in the chronic condition despite the apparent normalization of liver histology, we examined expression of BiP and CHOP proteins. Immunoblotting showed that BiP upregulation persisted throughout the time-course (Figure 1F), as did upregulation of the ER chaperone GRP94 (not shown). In contrast, and consistent with the effects of chronic stress on cultured cells (Rutkowski et al., 2006), upregulation of the highly labile CHOP protein was lost even by D1-24h, and remained mostly undetectable in animals treated for 5\u00a0days (Figure 1F). We also monitored the lipid droplet marker protein ADRP, the expression of which correlates with lipid droplet content. Consistent with histological data (Figure 1D), ADRP expression\u2014and therefore intracellular lipid accumulation\u2014was elevated in animals treated for one day, but returned to basal levels in animals treated for five days (Figure 1F). Of note, we also performed a similar experiment in which the chronic treatment was extended to 15 days. Results were similar to the 5 day treatment (not shown; see also Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig2-v2.jpg)\n\n**Figure 2.:** (A) Mice were injected with 0.025 mg/kg TM daily for up to 18 days, and livers were collected 24 hr after the last injection as indicated. Expression of Hspa5 and Ddit3 was measured by qRT-PCR. Expression is given relative to vehicle-treated control mice. Data for all qRT-PCR experiments is shown on a log scale. n\u00a0=\u00a02\u20133 animals/group (B) Expression of Hspa5 using an alternate primer pair spanning a different exon/intron junction confirms results from (A). (C) qRT-PCR of a group of UPR target genes from animals treated with vehicle or TM for 5d. n\u00a0=\u00a08 animals/group from two experiments. (D) Expression of the indicated metabolic genes was determined by qRT-PCR from an experiment similar to (C), except injections were performed for 7d. n\u00a0=\u00a04 animals/group.\n\nTaken together, these data indicate that chronic TM treatment caused persistent ER stress in the liver without permanently perturbing liver anatomy. They suggest that, as with cultured cells, hepatocytes in vivo are capable of adapting to long-term disruption of ER function if the stress is sufficiently mild. Thus, we used these conditions to investigate how the UPR is regulated during such adaptation.\n\n### Chronic stress suppresses select UPR targets\n\nAs the UPR is fundamentally a gene regulatory program, we examined the effects of chronic stress on UPR-dependent transcription. Despite Ddit3 mRNA being upregulated by acute stress (Figure 1A), its expression returned to basal levels by 24 hr (D1-24h) and remained at similar levels at every subsequent time point, even after 18d of repeated treatment (Figure 2A). This finding mirrored the behavior of CHOP protein (Figure 1F). Surprisingly, however, Hspa5 mRNA levels\u2014while elevated by acute stress (Figure 1A)\u2014were significantly diminished below basal levels by 24 hr and continued to diminish further through the first five days, remaining suppressed thereafter (Figure 2A). Similar results were obtained using qRT-PCR primers bridging a separate pair of exons in Hspa5 mRNA, demonstrating that this suppression reflected total Hspa5 mRNA levels rather than alternate splicing (Figure 2B).\n\nUsing the D5-24h point as representative of chronic stress conditions, we next surveyed other UPR-regulated gene targets. While the expression of most mRNAs, including Ddit3, was not significantly different in the chronic condition, a subset displayed a similar downregulation to Hspa5. These included mRNAs encoding the ER-associated degradation factor Herpud1 and Hsp90b1 (encoding the ER chaperone GRP94). (Figure 2C). We also assessed the expression of metabolic genes that we and others have previously shown to be suppressed by ER stress in the liver (Rutkowski et al., 2008; Yamamoto et al., 2010; Arensdorf et al., 2013a). While each of these was downregulated in the acute condition as expected (not shown), none was significantly suppressed in the chronic condition (Figure 2D). This finding provides evidence that the suppression of Hspa5 and other mRNAs during chronic ER stress is mechanistically distinct from the pathways that suppress metabolic gene expression during acute stress.\n\n### Chronic stress is associated with suppression of UPR-dependent transcriptional pathways\n\nThe observation that all of the assessed UPR targets either were unregulated or were suppressed in the chronic condition suggested that, despite persistent upregulation of at least some proteins such as BiP, transcriptional regulation was a more dynamic process and might be suppressed during chronic stress, at least by the 24 hr that elapsed between each chronic stress time point and its most proximate dose of TM. One of the commonalities among the genes that were suppressed below basal levels (Hspa5, Herpud1, Hsp90b1) is that each has been identified as a target of the ATF6\u03b1 pathway of the UPR (Yoshida et al., 2001; Yamamoto et al., 2004; Wu et al., 2007). Thus, we hypothesized that UPR-dependent transcription must not only be deactivated to basal (i.e., unstressed) levels in the chronic condition, but also that at least ATF6\u03b1 activity would be even further suppressed.\n\nTo test this hypothesis, we first assessed expression of the key UPR transcriptional regulators by immunoblot from liver nuclei. As a positive control, acute stress (8 hr treatment with 0.025 mg/kg TM as in Figure 1A) led to elevated expression of ATF4, XBP1spl and ATF6\u03b1cl; however, all three were undetectable in the chronic condition (Figure 3A). This result was mirrored in a chromatin-immunoprecipitation (ChIP) experiment. For this experiment, the Hspa5 promoter was recovered by an ATF6\u03b1 antibody following 8 hr of treatment served as expected (Yoshida et al., 1998). In contrast, no ATF6\u03b1 binding above background was detected in the chronic condition (Figure 3B). These ChIP data suggested that transcription of Hspa5 was completely lost in the chronic condition, which was confirmed by ChIP directed against RNA Polymerase 2 (Pol2) at the Hspa5 locus: As expected, Pol2 was recovered near the Hspa5 transcriptional start site (\u2212215 to\u00a0+0), and this binding was unaffected by the presence or absence of ER stress (Figure 3C). This binding reflects Pol2 that is poised at the Hspa5 promoter waiting to be engaged during the transcriptional activation process (Muse et al., 2007). In contrast, while Pol2 was abundantly recovered from the body of the Hspa5 locus during acute stress (Intron 7, or\u00a0+2727 to\u00a0+2906, which reflects elongating polymerase), this binding was completely lost in the chronic condition (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig3-v2.jpg)\n\n**Figure 3.:** (A) After treatment of mice with 0.025 mg/kg TM for either 8 hr or 5d, nuclei were isolated from liver lysates and probed with antibodies against ATF4, XBP1, or ATF6\u03b1. Specificity of all antibodies was confirmed by immunoblot from knockout or overexpression cells or liver lysates (not shown). The loading control for ATF4 and XBP1 blots was PARP. The loading control for the ATF6\u03b1 immunblot is a nonspecific background band (*). (B) After TM treatment as in (A), control Ig or antibodies against ATF6\u03b1 were used to immunopurify the Hspa5 promoter region, which was then amplified by qPCR using primers directed against two overlapping regions in the promoter containing the ER stress elements (ERSEs) or a control sequence. Number is given relative to the transcriptional start site. n\u00a0=\u00a03\u20134 animals/group (C) Same as (B), except ChIP was performed using antibodies against RNA Polymerase 2. The \u2212215 to\u00a0+\u00a08 regions detects poised polymerase and so Pol2 binding does not change, while the Intron seven region (+2727 to+2906) detects elongating Pol2. (D) Wild-type or Atf6-/- mice were treated with 0.025 mg/kg TM or vehicle for 5d. qRT-PCR expression of Hspa5 in the liver was assessed using both primer sets. Hspa5 expression was suppressed to comparable levels by either chronic stress or deletion of ATF6\u03b1, but chronic stress had no effect in Atf6-/- animals. n\u00a0=\u00a03\u20135 animals/group.\n\nTaken together, these results demonstrate that ATF6\u03b1-dependent transcription (and possibly XBP1- and ATF4-dependent transcription as well) is silenced in the chronic condition. However, for this inhibition of transcription to result in suppression of Hspa5 mRNA expression compared to untreated animals, ATF6\u03b1 must contribute not only to stress-dependent transcription of Hspa5 but also to the basal regulation of Hspa5. Confirming this prediction, we found that the basal expression of Hspa5 in animals lacking ATF6\u03b1 was reduced by approximately 50 percent relative to wild-type animals, and that chronic stress then had no further effect on Hspa5 expression (Figure 3D). Thus, loss of ATF6\u03b1 alone was sufficient to mimic chronic stress treatment. From these data, we conclude that at least the ATF6\u03b1 pathway of the UPR is engaged in the liver absent exogenous stress, and that even this basal component can be inhibited upon chronic stress.\n\n### Chronic stress is marked by cycles of activation and deactivation that suppress UPR-dependent transcription but possibly maintain RIDD\n\nTo this point, our data establish that under conditions of chronic stress, UPR-dependent transcription is attenuated, including, apparently, the contribution of ATF6\u03b1 to basal Hspa5 expression. This attenuation could come about in either of two ways. One possibility is that some fundamental feature of chronic stress renders the UPR increasingly refractory. This means that after 5 days of activation by successive bouts of stress the UPR would no longer be responsive; this is a \u2018preconditioning\u2019 model. The other possibility is an \u2018augmented deactivation\u2019 model in which the UPR is activated in full or nearly so upon each exposure to stress, but the temporal dynamics of its activation and resolution become progressively altered. In other words, the question is whether chronic stress mutes the activation of the UPR (preconditioning) or enhances its deactivation (augmented deactivation).\n\nTo distinguish between these possibilities, we examined the temporal response of the UPR in animals exposed to either the first dose of TM or the fifth dose (Figure 4A). Rather than following the production of UPR-regulated transcription factors as in Figure 3, we instead monitored activation of the UPR sensor IRE1\u03b1, which serves as a direct, robust, and sensitive readout for the capacity of the UPR to be activated. IRE1\u03b1 was monitored using Xbp1 mRNA splicing (Figure 4B). This experiment demonstrated that the UPR remained essentially as stress-responsive on the fifth day as on the first; splicing of Xbp1 8 hr after the first injection and 8 hr after the fifth were induced to comparable levels. Supporting the idea that the UPR remained responsive, repeated TM treatment continued to induce short-term lipid dysregulation, as evidenced by abundant cytoplasmic vacuoles in D5-8h livers (Figure 4C). Yet the deactivation of the UPR, or at least the Xbp1 splicing activity of IRE1\u03b1, proceeded more rapidly on day five than on day 1; substantial Xbp1 splicing was seen 14 hr after the first injection but not 14 hr after the fifth (Figure 4B). Likewise, as shown in Figure 1D, lipid dysregulation was observed 24 hr after the first injection but not 24 hr after the fifth. We also monitored Hspa5 mRNA expression over a similar time course, and found that its expression mirrored this pattern\u2014namely, that Hspa5 expression was well-induced after both treatments, but that its attenuation proceeded more rapidly in the chronic condition (Figure 4D). Similar results were also obtained for Hsp90b1 (encoding GRP94) mRNA (not shown). Collectively, our data support the augmented deactivation model described above. Thus, the chronic treatment opens a window into the mechanisms of UPR deactivation, about which relatively little is known since ER stress is usually studied in the context of stresses sufficiently severe as to kill cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic showing treatment protocol; livers were harvested 8, 14, or 20\u201324 hr after either the first TM injection or the fifth. (B) Conventional RT-PCR was used to distinguished spliced (spl) from unspliced (us) Xbp1 mRNA in samples treated as in (A). Image is inverted black-to-white for greater visual clarity. Each lane represents a separate animal. (C) H and E staining of liver sections harvested at the D1-8h or D5-8h timepoints. (D) Hspa5 mRNA expression was assessed by qRT-PCR from samples treated as in (B). n\u00a0=\u00a03\u20134 animals per group (E) Primary hepatocytes were isolated from a wild-type mouse, and treated with TM in the presence or absence of actinomycin D (ActD) to inhibit transcription as described in Materials and methods. Hspa5 half-life was calculated from these data. n\u00a0=\u00a03 plates/group (F) Wild-type or Ern1-/- (lacking IRE1\u03b1) mouse embryonic fibroblasts (MEFs) were treated with TM for 8 hr and expression of the RIDD target Bloc1s1 was determined by qRT-PCR. n\u00a0=\u00a03 plates/group (G) Animals were treated as in (A) and Bloc1s1 expression was detected by qRT-PCR. (H) Animals were treated for 8 hr or 5d with 0.025 mg/kg TM. Expression of Fn1 was determined by qRT-PCR. n\u00a0=\u00a04 animals/group.\n\nThese experiments also yielded an additional insight, which was that the rapid loss of Hspa5 mRNA by the fifth day might not be accounted for solely by the loss of Hspa5 transcription. Hspa5 mRNA levels decreased more than 30-fold between 8 hr and 24 hr on the fifth day, for a half-life of approximately 3 hr (Figure 4D). However, by monitoring Hspa5 expression after treatment of primary hepatocytes with the transcription inhibitor Actinomycin D, we measured Hspa5 mRNA half-life as 8.2 hr after treatment with TM (Figure 4E), consistent with our previous measurement in MEFs (Rutkowski et al., 2006). The simplest explanation for these results is that deactivation of the UPR is accompanied by stimulated degradation of Hspa5 mRNA, for even the loss of Hspa5 that occurs on the first day of treatment (Figure 4D) is too rapid to be accounted for by inhibition of transcription alone.\n\nA candidate pathway for stimulated degradation of Hspa5 mRNA is Regulated IRE1-Dependent Decay (RIDD), which is the process by which activated IRE1 directly degrades ER-associated mRNAs (Hollien et al., 2009). This process is thought to be counter-adaptive, facilitating cell death during severe ER stress (Han et al., 2009; Upton et al., 2012). However, it has also been implicated in metabolic regulation in the liver (Cretenet et al., 2010; So et al., 2012), implying that perhaps its function is more nuanced. Hspa5, Hsp90b1, and Herpud1 mRNAs would be expected to localize to the ER by virtue of encoding proteins bearing ER targeting signals. Hspa5 at least has also been proposed to be a RIDD target, though with unclear functional significance (Han et al., 2009).\n\nTo test whether RIDD was active in the chronic stress condition, we assessed the expression of the well-validated RIDD target Bloc1s1 (aka Blos1). Among putative RIDD targets, only Bloc1s1 has been documented in multiple reports, and in highly diverse cell types (Bright et al., 2015). We confirmed that Bloc1s1 is a bona fide RIDD target in MEFs lacking IRE1\u03b1, in which its downregulation by ER stress was completely lost (Figure 4F). As expected, Bloc1s1 expression was reduced in the liver by acute (8 hr) TM treatment (Figure 4G). Furthermore, while Bloc1s1 expression returned to normal levels 24 hr after the first TM treatment, it remained suppressed 24 hr after the fifth treatment (Figure 4G). Suppression of a RIDD target in the chronic condition was also seen for Fn1, which we found to be a potential RIDD target in the liver based on microarray data from wild-type and liver-specific Ern1-/- (encoding IRE1\u03b1) mice treated with TM (Zhang et al., 2011) (Figure 4H).\n\nThe behavior of Bloc1s1 and Fn1 is in contrast to genes such as Ddit3, Wars, etc., that were transcriptionally induced by acute ER stress, but which did not remain induced in the chronic condition (Figure 2C), as well as to metabolic genes that are transcriptionally repressed by acute ER stress, which did not remain repressed in the chronic condition (Figure 2D). Computational modeling suggests that mRNAs whose expression is regulated by stimulated degradation should return to basal expression levels much more rapidly than those whose regulation is transcriptional, when both mechanisms are deactivated (Arensdorf et al., 2013b). Thus, this persistence of Bloc1s1 and Fn1 suppression might suggest that, in contrast to the pathways of transcriptional regulation, RIDD activity persists through the cycles of UPR activation and deactivation that characterize the chronic stress state, even while the Xbp1 splicing activity of IRE1\u03b1 is attenuated. Conclusively demonstrating that RIDD is active under these conditions will ultimately require replacement of endogenous IRE1\u03b1 by a form in which the Xbp1 splicing and RIDD activities can be separated and modulated (Han et al., 2009). Thus, while the hypothesis that RIDD activity reduces the expression of Hspa5 and other genes is an appealing possible mechanism, other degradative pathways are possible.\n\n### Overexpression of BiP is sufficient to suppress Hspa5 (BiP) and Hsp90b1 mRNA\n\nOur results to this point suggest that with each successive exposure to stress, the UPR becomes more efficient at deactivation, even to the point of overshooting, while still retaining its activation capacity. The mechanisms of deactivation, however, are poorly understood. One pathway by which the UPR is deactivated is upregulation of BiP, which turns off the response in two ways: by improving ER protein folding (in concert with the many other factors regulated by the UPR); and by directly binding to the UPR stress sensors (IRE1\u03b1, ATF6\u03b1, and PERK) and repressing their activation (Bertolotti et al., 2000; Shen et al., 2002).\n\nIn the chronic condition, Hspa5 mRNA was suppressed despite ongoing upregulation of BiP protein (Figure 1F); the same was true for GRP94 (not shown). Given the repeated cycles of activation that characterize the chronic response (Figure 4), it is perhaps unsurprising that BiP accumulates to the extent that it does; we have previously measured the half-life of BiP protein in MEFs at approximately two days (Rutkowski et al., 2006), and it appears to also be long-lived in hepatocytes (not shown). This persistent BiP protein expression thus provides a potential means by which UPR deactivation could be accelerated.\n\nTo test this hypothesis, we ectopically overexpressed BiP protein in the liver using recombinant adenovirus (ad-BiP, aka AdGRP78) (Young et al., 2012). After injection of ad-BiP, we observed a significant increase in BiP protein expression compared to ad-GFP expressing animals (Figure 5A). qRT-PCR confirmed the efficacy of exogenous BiP overexpression (Figure 5B). Using primers that detect the 5\u2019 UTR of Hspa5 mRNA (and thus amplify only endogenous Hspa5 and not exogenous), we found that, like chronic stress, BiP protein overexpression suppressed Hspa5 mRNA expression (Figure 5C). Similar results were obtained for Hsp90b1, while overexpression had no effect on Ddit3 expression (Figure 5C). Surprisingly, Bloc1s1 expression was also suppressed under these conditions, again mirroring the chronic condition (Figure 5D). This finding hints that the apparent persistence of RIDD in the chronic condition (Figure 4G,H) might reflect a unique sustainment of that activity of IRE1\u03b1 by BiP during recovery from stress when the transcriptional limbs of the UPR are suppressed.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig5-v2.jpg)\n\n**Figure 5.:** (A) Animals were injected with recombinant adenovirus expressing either GFP or BiP. 5d after injection, mice were sacrificed and BiP was probed by immunoblot. Loading control was calnexin. (B) Both primer sets detected elevated Hspa5 expression in ad-BiP mice, which is attributable to the contribution of the exogenous Hspa5. n\u00a0=\u00a08 animals/group for regular Hspa5 primers and 3\u20134 animals/group for Hspa5 alternate primers. (C, D) Expression of endogenous Hspa5 from the genomic locus (gen-Hspa5), Hsp90b1, or Ddit3 (C) or Bloc1s1 (D) was assessed in ad-GFP and ad-BiP animals by qRT-PCR. n\u00a0=\u00a08 animals/group from two experiments. (E) Wild-type animals were treated for 10d with 500 mg/kg TUDCA, and then for 8 hr with 0.025 mg/kg TM, and expression of the indicated genes was detected by qRT-PCR. TUDCA was sufficient to reduce stress-induced expression of these genes approximately two-fold or more, but not to suppress basal Hspa5 expression. n\u00a0=\u00a03\u20136 animals/group.\n\nThe effects of BiP overexpression on Hspa5 and Hsp90b1 mRNA could be due either to enhanced protein folding in the ER or to direct effects of BiP on the UPR sensors independent of the protein folding capacity. We found that treating mice with the pharmacological chaperone TUDCA (Ozcan et al., 2006)\u2014which reduced upregulation of ER stress markers by TM approximately 2-fold\u2014had no effect on its own on any UPR gene tested (Figure 5E). These data show that improved ER protein folding capacity was not sufficient to suppress Hspa5 expression. While they do not completely rule out the possibility that improved ER protein folding ultimately drives Hspa5 suppression in the chronic condition, they nonetheless lead us to favor a model whereby BiP directly modulates the activities of at least ATF6\u03b1 and IRE1\u03b1.\n\n### Suppression of Hspa5 expression and activation of RIDD are mirrored in the livers of genetically obese animals\n\nTo what extent are the regulatory events described here relevant to physiological chronic stresses? Repeated dosing with TM, while effective as a tool for inducing ER stress, is nonetheless doubtless much more robust and focal a stress than anything commonly encountered physiologically. However, the cyclic nature of the stimulus\u2014bouts of stress followed by periods of recovery\u2014might to some extent mirror the stress caused by metabolic flux, which is tied to feeding and fasting cycles and is thus by its nature cyclic. The notion that overnutrition\u2014i.e., consumption of too much food per meal and/or too many meals\u2014might represent a chronic ER stress was first suggested in 2004, in seminal work demonstrating that ER stress was observed in the livers of obese mice, and was tied to hepatic insulin resistance (Ozcan et al., 2004). Thus, we considered the possibility that feeding is capable of eliciting the same changes in gene regulation as seen in the TM-induced chronic condition.\n\nConsistent with previous reports (Oyadomari et al., 2008; Pfaffenbach et al., 2010), we found that feeding elicited ER stress in mouse livers (Figure 6A). Interestingly, at least at this timepoint the effect was much more robust for some targets (Hspa5, Hsp90b1, and Xbp1) than others; in fact, targets of the PERK pathway (Ddit3, Ppp1r15a [encoding GADD34], and Wars) were not upregulated to a statistically significant extent under these conditions. Feeding also elicited splicing of Xbp1 mRNA as measured by qRT-PCR using primers that preferentially amplify only the spliced form (Xbp1(s), Figure 6A), albeit to a very modest extent (once the change in total Xbp1 levels is accounted for). While it has been proposed that a high fat diet is intrinsically stress-inducing (Ozcan et al., 2004), at least in this instance we found no difference between the level of stress induced by diets containing either high fat or no fat (Figure 6A). This result indicates that nutrient intake itself elicits ER stress, and is consistent with the idea that the stress is driven by increased anabolism (Ozcan et al., 2008) rather than fat per se. As we speculated, this stress is modest compared to that induced by TM, for which most UPR targets were induced to an extent that was at least an order of magnitude greater than feeding (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig6-v2.jpg)\n\n**Figure 6.:** (A) Wild-type animals were fasted overnight, and then provided food containing either 45% fat or no fat for 4 hr. Expression of the indicated genes was assessed by qRT-PCR. n\u00a0=\u00a03 animals/group (B) Wild-type animals were treated with 1 mg/kg TM for 4 hr, and the same genes as in (A) were detected by qRT-PCR. #; p<0.1. n\u00a0=\u00a03 animals/group (C\u2013E) Livers from five month-old female Lepob/ob or Leprdb/db mice or age-matched wild-type mice were probed for expression of genes that were suppressed by chronic stress (C) or not-suppressed (D), or of the RIDD target Bloc1s1 and the putative RIDD target Fn1 (E). n\u00a0=\u00a04 animals/group.\n\nIf feeding represents an ER stress, then repeated feeding should represent a chronic stress, particularly if it outpaces the ability of the organelle to compensate. Thus, we examined gene expression in Lepob/ob or Leprdb/db mice, which are obese due to mutations in leptin or the leptin receptor, respectively, that compromise appetite control and lead to overfeeding (Campfield et al., 1995; Halaas et al., 1995; Pelleymounter et al., 1995; Chen et al., 1996; Lee et al., 1996). We observed a similar pattern of gene regulation in these animals as in animals treated with chronic TM; Hspa5 and Hsp90b1 were both significantly suppressed (Figure 6C), while other UPR targets were not suppressed (and, indeed, appeared to be upregulated; Figure 6D). In addition, again mirroring the results seen in TM-treated animals, expression of Bloc1s1 was reduced in Leprdb/db mice and potentially in Lepob/ob mice as well, and Fn1 was strongly suppressed in both (Figure 6E). These results suggest that suppression of the mRNA expression of Hspa5 and Hsp90b1 characterizes both pharmacological and dietary models of chronic stress. Though they do not yet establish that suppression proceeds by the same mechanism in both, they highlight the potential for the experimental induction of chronic ER stress to be a useful tool for understanding how gene regulatory patterns are altered by chronic physiological stresses.\n\n## Discussion\n\nIn this paper, we have described the first, to our knowledge, experimental reconstitution of chronic, tractable ER stress in a mammal in vivo. This work builds upon previous efforts to recreate chronic ER stress in fish larvae (Cinaroglu et al., 2011), and to elicit chronic ER stress in mammals by overexpression of misfolded ER client proteins or deletion of ER chaperones (e.g., [Ji et al., 2011; Zode et al., 2011; Kawasaki et al., 2015]). We have used this system as a tool to probe how UPR signaling becomes altered during persistent and/or repeated activation. Our investigation has several novel implications for the mechanisms of UPR signaling.\n\nThe data presented here lead us to propose a working model to account for the altered expression of Hspa5 (Bip) and other UPR transcriptional targets during chronic stress (Figure 7). In the basal (i.e., nominally \u2018unstressed\u2019) state, activation of ATF6\u03b1 contributes to the expression of Hspa5 mRNA. We arrive at this conclusion because expression of Hspa5 was diminished in the absence of ATF6\u03b1 even without an exogenous stress (Figure 3D). This finding implies that normal physiological function in the liver entails periods of UPR activation\u2014perhaps not surprisingly, given that feeding itself activates the UPR (Figure 6A). BiP is one of the most abundant proteins in the ER lumen (Gething, 1999), and other non-stress-dependent mechanisms contribute to its basal regulation as well (Resendez et al., 1988). Upon exposure to a conventional ER stress, all three limbs of the UPR are activated (Rutkowski et al., 2006), leading to robust production of stress-specific target transcripts such as Ddit3 (Chop), as well as augmentation of transcripts encoding ER chaperones, such as Hspa5 and Hsp90b1 (Grp94). The attendant improvement of ER protein folding then presents a problem for the cell: how to avoid overproduction of UPR targets. As the UPR stress-sensing molecules become deactivated, naturally labile factors such as CHOP (both mRNA and protein) are readily lost (Rutkowski et al., 2006). However, ER chaperones such as BiP and GRP94 are long-lived at both the protein and mRNA levels (Rutkowski et al., 2006), and continued overproduction of these proteins would presumably greatly tax cellular resources and potentially constitute their own burden on the organelle. Thus, BiP overexpression appears to initiate a negative feedback loop, both suppressing UPR activity (including the basal activity of ATF6\u03b1) and also indirectly stimulating the degradation of its own mRNA. In the context of incidental exposure to stress, or of the low-level stresses that occur during normal physiological function, we presume that this depression of Hspa5 mRNA levels is transient. However, during repeated stress, we propose that it constitutes a resetting to a new quasi-stable setpoint for UPR transcriptional regulation.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/20390/elife-20390-fig7-v2.jpg)\n\n**Figure 7.:** See Discussion for details.\n\nOne of the founding observations of the UPR field was that activation of the ER stress sensing molecules required their dissociation from BiP in both yeast and mammals (Bertolotti et al., 2000; Shen et al., 2002). Originally, the purpose attributed to BiP binding was to hold the stress sensors in a quiescent state and so to play a role in UPR activation. However, the suggestion that at least yeast Ire1p can be activated by direct binding to unfolded proteins (Kimata et al., 2004; Gardner and Walter, 2011; Gardner et al., 2013) has cast doubt on this model. Our data raise the possibility that perhaps the role of BiP binding is to instead modulate UPR deactivation.\n\nThe objective of this work from the outset was to develop an experimental system for eliciting chronic ER stress specifically, in order to be able to determine how the regulation and output of the response changed under such conditions and so identify fingerprints of chronic ER stress associated with disease states. An important caveat is that most agents other than TM that specifically induce ER stress in vitro fail to do so easily or effectively in vivo. While relatively specific in inducing ER stress due to its blockage of N-linked glycosylation, TM also is capable of disrupting carbohydrate metabolism (Olden et al., 1979) and protein palmitoylation (Patterson and Skene, 1995), although whether it does so at the doses used here is unclear. In addition, it is conceivable that the chronic stress phenotype is caused not by the ER stress-inducing effect of TM, but by underglycosylation of some specific key protein. However, we do not favor this alternative explanation in part because the degree of protein underglycosylation under these conditions is relatively modest (e.g., Figure 1E), and also because of the ability of BiP overexpression to phenocopy Hspa5 downregulation (Figure 5).\n\nIn addition, the strikingly similar phenotype in Lepob/ob and Leprdb/db mice vouches for this approach. One difference between the chronic condition on one hand and the steady-state in obese mice on the other is that the latter do not appear to express elevated BiP protein levels (not shown), which at face value seems at odds with the idea that elevated BiP protein is needed to both suppress ATF6\u03b1 and activate or perpetuate RIDD. However, as we have demonstrated, the magnitude of ER stress elicited by feeding is considerably lower than that elicited by tunicamycin (Figure 6; also compare Figure 6A with Figure 4D), yet also much more repetitive than the once-daily TM challenge. It is plausible that the less robust but more constant stimulus of overfeeding results in modest alterations in expression of BiP protein that have little effect on Hspa5 mRNA over the course of meals or days but great effect over the course of months\u2014essentially that small increases in BiP protein levels could produce small decreases in BiP mRNA expression that accumulate over time. It is possible that further moderating the dose of TM and lengthening its extent (from days to weeks/months) would more closely mimic the phenotype observed in obese animals, although this would be experimentally cumbersome. It is also worth noting that the suppression of Hspa5 and Hsp90b1 mRNAs might be achieved by other mechanisms that suppress ATF6\u03b1 activation while perpetuating RIDD. For instance, it has been reported that ATF6\u03b1 expression is lost in obese animals (Wang et al., 2009). Along these lines, we observed that Atf6 mRNA is also significantly downregulated by chronic stress, albeit not as robustly as Hspa5 (not shown), raising the possibility of a positive feedback loop for suppressing Hspa5 expression even as BiP protein levels subside. Alternatively, posttranslational modifications that alter BiP\u2019s interactions with its binding partners (Chambers et al., 2012; Wang et al., 2014; Preissler et al., 2015) might also play a role. Ultimately, the clearest way to test whether the mechanism we describe here is at work in obese animals might be to intercross these animals with Atf6-/- animals; as when given repeated TM injections, these animals should have basally suppressed Hspa5 mRNA expression even at an early age, but then there should be no further suppression as the animals age and become obese. Even if the mechanism turns out to be entirely distinct, the description here of suppressed expression of Hspa5, and Hsp90b1 and potentially elevated RIDD activity in these animals has potential implications for their ability to maintain ongoing ER homeostasis. It is conceivable that an altered UPR \u2018setpoint\u2019 with reduced expression of Hspa5 and other UPR mRNA targets could render the animals more sensitive to ER stress-induced cell death and exacerbate the hepatic inflammation associated with obesity (Gregor and Hotamisligil, 2011).\n\nA surprising conclusion from this work is that RIDD might remain active in the chronic condition, even as UPR-dependent transcriptional signaling is shut off. Admittedly, conclusively demonstrating RIDD activity in vivo is challenging; here we have relied on repression of the well-documented RIDD target Bloc1s1 as the primary readout for RIDD activity. Bloc1s1 expression was repressed in the chronic condition (Figure 4G), upon BiP overexpression (Figure 5D), and in Leprdb/db animals (Figure 6E). Phos-tag immunoblotting showed substantial phosphorylation of IRE1\u03b1 only in animals treated with a high acute dose of TM, and antibodies purported to be specific for phospho-IRE1 did not produce bands that were absent in cells lacking IRE1\u03b1 in control experiments (not shown). These limitations made it impossible to directly test whether IRE1\u03b1 remained phosphorylated in the chronic condition. In addition, there is as yet no functional assay for confirming that RIDD is active in vivo. Rather, substrates are generally identified as putative RIDD targets based on an in vitro assay using purified IRE1\u03b1 (Hollien and Weissman, 2006; Hollien et al., 2009). Then, their RIDD dependence is confirmed by their suppression during ER stress in an IRE1\u03b1-dependent XBP1-independent manner. However, Hspa5 and Hsp90b1 are both also transcriptionally upregulated by XBP1 (Lee et al., 2003), which would likely confound analysis of their regulation in animals lacking IRE1\u03b1. In any case, our data hint at a previously unappreciated role for RIDD, which has generally been considered an anti-adaptive signaling mechanism to this point (Han et al., 2009; Lerner et al., 2012; Upton et al., 2012; Maurel et al., 2014). The purpose of the clearance of ER-resident proteins might not so much be to neuter the organelle and hasten its dysfunction during severe stress (Maurel et al., 2014) as to help turn the response off once stress has been overcome. If RIDD is indeed active under these conditions, such a role could help explain the previously puzzling finding that Hspa5 is a potential RIDD target (Han et al., 2009).\n\nAssuming RIDD is active during chronic stress, our data provide further evidence that the Xbp1 splicing and RIDD activities of IRE1\u03b1 can be dissociated (Lin et al., 2007; Han et al., 2008). They raise the possibility that this dissociation occurs not necessarily to separate adaptive from apoptotic outputs so much as to separate activation from deactivation. Given that most stresses encountered by most cells most of the time are likely to be mild and transient\u2014such as that encountered by feeding\u2014the death-accelerating function of RIDD might simply be a byproduct of a normal physiological role in restoring the UPR rheostat. Indeed, a parallel can be drawn with the UPR-regulated transcription factor CHOP which, though it clearly promotes cell death during severe stress (Zinszner et al., 1998) also might promote normal cellular function during milder stress both by potentiating the dephosphorylation of eIF2\u03b1 (Marciniak et al., 2004) and by regulating lipid metabolism (Tyra et al., 2012; Chikka et al., 2013) toward the ultimate improvement of ER function.\n\nThe approach we took to experimentally reconstituting chronic ER stress in vivo was conceptually analogous to our earlier reconstitution of chronic stress in vitro in MEFs (Rutkowski et al., 2006). However, neither MEFs nor even cultured hepatocytes showed the same suppression of Hspa5 expression as seen in vivo. This discrepancy points to the existence of other as yet unappreciated factors that influence UPR output in the liver. Indeed, it is now becoming clear that, overlaid atop the structural framework of the canonical UPR lie modulatory pathways for altering UPR sensitivity and output, with potential implications for signaling during chronic stress. These include posttranslational modifications either of the stress sensors\u2014such as S-nitrosylation of IRE1\u03b1 (Yang et al., 2015)\u2014or of ER chaperones, such as ADP ribosylation (Chambers et al., 2012) or AMPylation (Preissler et al., 2015) of BiP. It will be interesting to test whether any of these modifications is active during the chronic condition.\n\nFinally, our results underscore the remarkable capacity of the UPR to adapt to chronic stress. While the severe experimental stresses that lead to massive cell death and organ dysfunction have proven useful in elucidating the signaling capabilities of the UPR when activated to its maximum, they yield little about the ebb and flow of the response at it is most likely to be activated in physiological scenarios. We hope that our approach will stimulate further efforts to more closely mimic physiological stresses in vivo, as these will be essential in linking chronic ER stress to human disease.\n\n## Materials and methods\n\n### Animal experiments\n\nAll protocols for animal use were reviewed and approved by the University Committee on Use and Care of Animals at the University of Iowa. Animals were fed standard rodent chow and housed in a controlled environment with 12 hr light and dark cycles. Animals used were of both genders unless otherwise noted, with control and experimental groups having similar composition. Animal numbers needed for each experiment were determined based on previous experiments. Animals were fasted for 4 hr prior to sacrifice, which was carried out during the lights-on period. Atf6-/- (RRID:MGI:3723589) (Wu et al., 2007) animals have been backcrossed into the C57BL/6J strain (RRID:IMSR_JAX:000664) for\u00a0>10 generations. For chronic TM (EMD Millipore,\u00a0Billerica,\u00a0MA) treatment, 8 to 12 week old C57BL/6J or Atf6-/- mice were injected once per day (~1 hr after lights-on) intraperitoneally with vehicle or the indicated dose of Tunicamycin dissolved in 150 mM dextrose or PBS and were sacrificed at various timepoints after last injection. For TUDCA (EMD Millipore) treatment, animals were injected IP with vehicle or 500 mg/kg TUDCA in PBS once daily, 1 hr after lights-on for 10 days prior to sacrifice. 8 hr prior to sacrifice (3 hr after lights-on), animals were injected with TM or vehicle. For high fat/no fat feeding, animals were habituated for 5d to a standard defined diet (D12450B, Research Diets, New Brunswick, NJ), fasted 20 hr, and then either injected with 1 mg/kg TM for 4 hr or provided access to a high fat diet (D12451, 45% fat) or a no-fat diet (D10062804, 0% fat) for 4 hr. Lepob/ob and Leprdb/db samples were taken from five month-old female mice.\n\nHarvested liver tissue pieces were either frozen immediately for RNA or protein analysis, fixed in formalin (for histology), processed for nuclear isolation, or minced and fixed in formaldehyde (for ChIP). Nuclei were isolated as described (Rutkowski et al., 2008). For histological analysis, formalin-fixed tissues were embedded in paraffin, sectioned, and stained with hematoxylin and eosin. Antibodies used for immunoblot were as in (Chikka et al., 2013), and additionally as follows: ATF4 (sc200, Santa Cruz, Dallas,\u00a0TX;\u00a0RRID:AB_2058752); XBP1 (sc7160, Santa Cruz; RRID:AB_794171); ATF6\u03b1 (courtesy of R. Kaufman). Antibodies were generally incubated on blots in TBS-Tween\u00a0+\u00a05% milk at room temperature for 1 hr except for ATF6\u03b1 antibody, which was incubated in PBS + milk (no Tween-20) at 4\u00b0C overnight.\n\n### Cell experiments\n\nMEFs were harvested as described previously (Lee et al., 2002) from Ern1-/- or Ern1+/+ mouse embryos (RRID:MGI:3723591). Genotype was confirmed by PCR. Isolation of primary hepatocytes was as in (Fan et al., 2004) with minor modifications. Hepatocytes were isolated from C57BL/6J mice. Mice were anesthetized with isofluorane. The liver was perfused through the portal vein first with Perfusion Buffer Solution and then with Liver Digest Medium. Formulations were as follows: Liver Perfusion Media: HBSS, no calcium, no magnesium, no phenol red (Life Technologies,\u00a0Carlsbad,\u00a0CA), 0.5 mM EGTA, 0.5 mM EDTA, 25 mM HEPES, Penicillin-Streptomycin (10,000 U/mL) (Life Technologies) and 0.2% BSA (Research Products International,\u00a0Mt.\u00a0Prospect,\u00a0IL); Liver Digest Media (50 mL for 25g mouse): HBSS, calcium, magnesium, no phenol red (Life Technologies), 0.25 mM HEPES, Penicillin-Streptomycin (10,000 U/mL) (Life Technologies), 3.6 mg Trypsin Inhibitor (Sigma,\u00a0St.\u00a0Louis,\u00a0MO), 28 mg Collagenase Type IV (Life Technologies) added fresh. Digest flow rates were 5 mL/min for 5 min for perfusion and 10 min for digest. The liver was then quickly dispersed and filtered through a sterile 100 \u00b5m mesh. Hepatocyte suspensions were then centrifuged at 50x g for 3 min and resuspended to a density of 5\u00d7106 cells/ml in DMEM. Viable hepatocytes in the pellet were washed three times and then plated on collagen-coated tissue culture plates in DMEM with 10% calf serum and 100 \u00b5g/ml penicillin and streptomycin. After overnight culture, the medium was replaced with F-12 medium containing insulin (10 \u00b5g/ml), dexamethasone (67 ng/ml), triiodothyronine (67.3 ng/ml), penicillin (100 units/ml), and streptomycin (0.1 mg/ml). Primary hepatocytes were treated with 5 \u00b5g/mL of TM for 4 hr before addition of ActinomycinD (ActD; Sigma) to 5 \u00b5g/mL. Cells were collected in triplicate 15 min after addition (considered time 0), 2 hr 15m, and 4 hr 15m after treatment. As all in vitro experiments involved primary cells, cells were not mycoplasma tested.\n\n### Adenovirus experiments\n\nAd-BiP was created as described (Young et al., 2012) and amplified by the University of Iowa Gene Transfer Vector Core. Control virus expressing GFP only (ad-GFP) was also obtained from the Vector Core. 3\u00d7109 pfu/mouse were administered through tail vein injections for hepatic expression. Experiments were performed five days later.\n\n### Molecular analysis\n\nRNA and protein analyses were performed as described (Rutkowski et al., 2006). Immunoblots were imaged using the ChemiDoc-It imaging system (UVP, LLC, Upland, CA) with on-chip integration and empirically derived exposure settings. Membranes were sliced into appropriate molecular weight ranges for blotting; membranes were never stripped and reprobed. Images were processed using Adobe Photoshop. Black hairlines are solely to aid in visual assessment. All contrast adjustments were performed uniformly. Primer sequences and methods utilized for real-time PCR analysis have been published previously (Rutkowski et al., 2006, 2008; Arensdorf et al., 2013a). Xbp1 RT-PCR was as described (Tyra et al., 2012). Additional primers are described here: Xbp1(s): Fwd GAGTCCGCAGCAGGTG, Rev GTGTCAGAGTCCATGGGA; genomic Hspa5 Primer (5\u2019 UTR of Hspa5 gene) Fwd TAAGACTCCTGCCTGACTGC, Rev GGAATAGGTGGTCCCCAAG; ChIP primers: Hspa5 Promoter (\u2212215 to\u00a0+8 bp) Fwd CATTGGTGGCCGTTAAGAATGACCAG, Rev AGTATCGAGCGCGCCGTCGC; Hspa5 Intron 7 (+2727 to\u00a0+2906) Fwd GGGAGGACTGTTGCTTTAGG, Rev TGAATGAACTCTTGCCATCTTC.\n\n### Chromatin immunoprecipitation\n\nChIP was performed as in (Arensdorf and Rutkowski, 2013; Chikka et al., 2013) with minor modifications. Formaldehyde-fixed liver tissues were weighed out after being quenched with 1.5M Tris-HCl and pulverized in a metal mortar and pestle. Samples were sonicated using a Covaris E220 sonicator. Chromatin was immunoprecipitated using ATF6\u03b1 (sc-22799x, Santa Cruz; RRID:AB_2242950) or Pol II (sc-899x, Santa Cruz; RRID:AB_632359) antibodies or non-specific IgG (12\u2013370, Millipore; RRID:AB_145841) overnight at 4\u00b0C. DNA was purified using a standard phenol/chloroform extraction protocol. Samples were then analyzed by quantitative real-time PCR with an annealing temperature of 58\u00b0C.\n\n### Rigor and reproducibility\n\nGroups were compared by one-way ANOVA. All quantitative data are presented as means \u00b1 S.E.M. Tukey\u2019s Post-Hoc analysis was used when comparing multiple conditions for the same readout. Statistical comparisons for qRT-PCR and qPCR data were carried out prior to transforming data out of the log scale. All replicates were biological rather than technical, and \u2018n\u2019 numbers are given in figure legends; for animal experiments, this refers to number of animals. For cell culture experiments, this refers to numbers of independently-treated plates. Each experiment was performed at least twice, and some experiments (such as chronic stress treatments) were performed many times. There was no removal of outliers; no data were discarded unless there was an unambiguous indication that the experiment failed for technical reasons.\n",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "59e10093-c526-424b-88a2-92c4e6fe513d",
+      "submission_id": "fe38cffc-b61a-438f-b273-76c3b68d61ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Ramanujan S Hegde, MRC Laboratory of Molecular Biology , United Kingdom\n\n## Review text\n\nDOI: [10.7554/eLife.20390.017](https://doi.org/10.7554/eLife.20390.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Experimental Reconstitution of Chronic ER Stress in the Liver Reveals Feedback Suppression of Bip mRNA Expression\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Erik Snapp and a member of our Board of Reviewing Editors, and the evaluation has been overseen by Randy Schekman as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study has aimed to design and characterize an experimental paradigm for chronic low-level ER stress in mammals. The reason this is of importance is because many disease states have been correlated with chronic ER stress, but the mechanistic and causal relationships between the stress and disease progression have been challenging to dissect. Characterization of an experimentally tractable system is expected to provide the tools and insights to examine the more complex disease situations. The authors use daily low-dose tunicamycin injections as the paradigm, following up their earlier work in cultured cells with a similar strategy. Analysis of liver at different times by a number of methods (histology, stress pathway activation status, transcriptional status, promoter occupancy, etc.) provides a description of what is happening. The primary discovery is that in the chronic state, levels of mRNA for BiP (and some other UPR targets) are suppressed despite the fact that BiP protein is high and the UPR continues to be responsive to each new dose of tunicamycin. Additional experiments indicate that a signature feature of the chronic stress state is a UPR that is comparably responsive, but more rapidly deactivated. It is proposed that the more rapid deactivation is due to the high levels of BiP protein suppressing UPR sensor activity, and that the low levels of BiP mRNA are due to its degradation, possibly by RIDD. Using this information, the authors provide evidence that a model of obesity (which is associated with low-level ER stress in the liver) shows similar signatures.\n\nOverall, the study's strengths are that it is among the first to try to characterize the chronic ER stress state in vivo, and it appears to have discovered a new homeostatic 'set-point' in which the UPR behaves differently in terms of its kinetics of deactivation. The link to the obesity model is an intriguing observation that appears to have justified their approach.\n\nEssential revisions:\n\nAfter discussion of the merits and weaknesses of this study, the referees felt that some of the conclusions were not yet fully justified or entirely convincing. In some cases, this could be handled with moderating the claims, while others might require additional experimentation. The following points would need to be addressed.\n\n1) The central concern, voiced by all three referees, was that the causal connections between increased BiP protein, changes in BiP mRNA, and increased RIDD are not established and would require extensive further study. Conclusions to this effect should be tempered, and limited to the Discussion section where it is can be clearly indicated as speculation. It would be more appropriate to simply indicate that, based on Bloc1s analysis, there would seem to be evidence for increased RIDD, but that this conclusion and its potential connection to BiP protein and BiP mRNA remains to be investigated in future mechanistic studies.\n\n2) One of the key results of a new set-point is in Figure 4, where the kinetics of Xbp1 deactivation in chronically stressed liver are faster. Not all the referees were convinced by this experiment, and it would be reassuring to provide an indicator of its reproducibility and robustness. Are the three samples shown at each time point completely independent experimental samples, and has the entire experiment been reproduced with comparable results?\n\n3) Some figures do not compare equivalent timepoints: in the early (acute) studies, 8hr endpoints are compared to 24hr timepoints later (i.e., at D5 and D15). If equivalent timepoint samples are available, it would be informative to know what the chronic state (e.g., D5 or D15) looks like at 8 hrs, and what the acute state (e.g., D1) is like at 24 hrs. This would address questions such as the vacuolization status or changes in ADRP on the later days at the 8 hr time points (in Figure 1) or changes in transcriptional status (in Figure 3). In other words, are the acute changes resolving at comparative timepoints, or are they different?\n",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a7535f7f-d568-4c9f-b327-3cadb4b993c9",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C1",
+      "claim": "Tunicamycin (TM) blocks N-linked glycosylation, an ER-specific protein modification.",
+      "claim_type": "EXPLICIT",
+      "source": "TM blocks N-linked glycosylation, an ER-specific protein modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text as a known property of tunicamycin.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "94304fd6-ed4e-468d-ae79-45da6a7bc762",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C2",
+      "claim": "Tunicamycin has few known off-target effects and most prominently targets the kidneys and the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "It has few known off-target effects, most prominently targets the kidneys and the liver, and is not lethal in wild-type animals at even relatively high doses (Foufelle and Fromenty, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Foufelle and Fromenty, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "cb0b5651-de00-4116-ab4a-19a7c811b5cc",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C3",
+      "claim": "Tunicamycin is not lethal in wild-type animals at even relatively high doses.",
+      "claim_type": "EXPLICIT",
+      "source": "It has few known off-target effects, most prominently targets the kidneys and the liver, and is not lethal in wild-type animals at even relatively high doses (Foufelle and Fromenty, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Foufelle and Fromenty, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9a7bb6ee-5c7b-4db9-9e9a-91a4995c3fdb",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C4",
+      "claim": "The effects of tunicamycin on the liver can be mimicked by other agents that elicit ER stress in that organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Its effects on the liver can also be mimicked, albeit less readily, by other agents that elicit ER stress in that organ (Rutkowski et al., 2008; Chikka et al., 2013), further justifying its use here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rutkowski et al., 2008 and Chikka et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "55eb5efd-bc53-4ca3-8626-424f0a501cad",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C5",
+      "claim": "Doses of TM below 0.1 mg/kg are capable of eliciting attenuated UPR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using qRT-PCR to detect changes in expression of the UPR sentinel genes Hspa5 (encoding BiP) and Ddit3 (encoding CHOP), we found that doses of TM below 0.1 mg/kg were capable of eliciting attenuated UPR activation (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "2b9ca27d-f3ef-4bc0-88bb-cefb386aa67a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C6",
+      "claim": "Acute treatment (8 hr) with 0.025 mg/kg TM is sufficient to lead to upregulation of both BiP and CHOP at the protein level.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, acute treatment (8 hr) with this dose of TM was sufficient to lead to upregulation of both BiP and CHOP at the protein level (Figure 1B), although for CHOP this induction was much more modest than commonly elicited by higher doses of TM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "36f1b0e6-9c24-43e4-a124-57c21c17112b",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C7",
+      "claim": "CHOP induction by 0.025 mg/kg TM is much more modest than commonly elicited by higher doses of TM.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, acute treatment (8 hr) with this dose of TM was sufficient to lead to upregulation of both BiP and CHOP at the protein level (Figure 1B), although for CHOP this induction was much more modest than commonly elicited by higher doses of TM.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1B and comparison to known effects of higher doses.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "c46f0ca0-f292-4a08-8f86-f725054050b1",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C8",
+      "claim": "The predominant acute effect of TM on the liver is the formation of intracellular vacuoles in hepatocytes that correspond to accumulated lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant acute effect of TM on the liver, as revealed by hematoxylin and eosin staining, was the formation of intracellular vacuoles in hepatocytes (Figure 1D) that correspond to accumulated lipid droplets resulting from impaired lipid metabolism (Rutkowski et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H&E staining data shown in Figure 1D and a citation to Rutkowski et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7d7b0eb5-44cf-4533-9794-3b5b4a059061",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C9",
+      "claim": "Intracellular vacuoles in hepatocytes result from impaired lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The predominant acute effect of TM on the liver, as revealed by hematoxylin and eosin staining, was the formation of intracellular vacuoles in hepatocytes (Figure 1D) that correspond to accumulated lipid droplets resulting from impaired lipid metabolism (Rutkowski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rutkowski et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "977927c2-1f04-4bff-853a-929365d0e33c",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C11",
+      "claim": "Persistent underglycosylation of TRAP\u03b1 at day five confirms that tunicamycin remained active upon repeated dosing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, persistent underglycosylation of the ER-resident glycoprotrein TRAP\u03b1 at day five confirmed that the drug remained active upon repeated dosing (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "bd7e6bb4-acd7-40e5-998a-10608ee255e5",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C12",
+      "claim": "BiP upregulation persists throughout the chronic stress time-course.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting showed that BiP upregulation persisted throughout the time-course (Figure 1F), as did upregulation of the ER chaperone GRP94 (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "28449b3c-0f9c-4b67-9a27-c299a0466e49",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C13",
+      "claim": "GRP94 upregulation persists throughout the chronic stress time-course.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunoblotting showed that BiP upregulation persisted throughout the time-course (Figure 1F), as did upregulation of the ER chaperone GRP94 (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the text but data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "febdaa64-3827-45ba-86d5-6cf82418cef4",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C14",
+      "claim": "Upregulation of CHOP protein was lost by D1-24h and remained mostly undetectable in animals treated for 5 days.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, and consistent with the effects of chronic stress on cultured cells (Rutkowski et al., 2006), upregulation of the highly labile CHOP protein was lost even by D1-24h, and remained mostly undetectable in animals treated for 5 days (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1F and a citation to Rutkowski et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "c049f1a7-6e6c-42fa-9a69-0647dcab60b6",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C15",
+      "claim": "ADRP expression correlates with lipid droplet content.",
+      "claim_type": "EXPLICIT",
+      "source": "We also monitored the lipid droplet marker protein ADRP, the expression of which correlates with lipid droplet content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ADRP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "ca0304b6-f2a9-405a-8d1a-878734b6d000",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C16",
+      "claim": "ADRP expression was elevated in animals treated for one day, but returned to basal levels in animals treated for five days.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with histological data (Figure 1D), ADRP expression\u2014and therefore intracellular lipid accumulation\u2014was elevated in animals treated for one day, but returned to basal levels in animals treated for five days (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data shown in Figure 1F and histological data in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "5222d033-39a3-472b-bd50-6e5058b848cb",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C17",
+      "claim": "Ddit3 mRNA is upregulated by acute stress but its expression returns to basal levels by 24 hr and remains at similar levels at every subsequent time point, even after 18d of repeated treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite Ddit3 mRNA being upregulated by acute stress (Figure 1A), its expression returned to basal levels by 24 hr (D1-24h) and remained at similar levels at every subsequent time point, even after 18d of repeated treatment (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 1A and 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f435c387-0c0e-4a50-a594-1762a22102d4",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C18",
+      "claim": "Hspa5 mRNA levels were significantly diminished below basal levels by 24 hr and continued to diminish further through the first five days, remaining suppressed thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, Hspa5 mRNA levels\u2014while elevated by acute stress (Figure 1A)\u2014were significantly diminished below basal levels by 24 hr and continued to diminish further through the first five days, remaining suppressed thereafter (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figures 1A and 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "79e575f3-9873-446e-b065-e3cfcb721725",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C19",
+      "claim": "The suppression of Hspa5 mRNA reflects total Hspa5 mRNA levels rather than alternate splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained using qRT-PCR primers bridging a separate pair of exons in Hspa5 mRNA, demonstrating that this suppression reflected total Hspa5 mRNA levels rather than alternate splicing (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data using alternate primers shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "a4cffbf0-8dd8-4c57-8a82-028e88a36a99",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C20",
+      "claim": "Herpud1 and Hsp90b1 mRNAs display similar downregulation to Hspa5 in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "These included mRNAs encoding the ER-associated degradation factor Herpud1 and Hsp90b1 (encoding the ER chaperone GRP94). (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6746eb2c-a41c-42ba-bdaf-66c9b13d0ff2",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C21",
+      "claim": "Metabolic genes that are suppressed by acute ER stress in the liver are not significantly suppressed in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "While each of these was downregulated in the acute condition as expected (not shown), none was significantly suppressed in the chronic condition (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f10dedff-615d-427b-ad5e-485351878103",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C22",
+      "claim": "The suppression of Hspa5 and other mRNAs during chronic ER stress is mechanistically distinct from the pathways that suppress metabolic gene expression during acute stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding provides evidence that the suppression of Hspa5 and other mRNAs during chronic ER stress is mechanistically distinct from the pathways that suppress metabolic gene expression during acute stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential behavior of these gene sets in chronic vs acute stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "be6f8ebc-ebf9-49b5-8cda-6b6eaa8e05e0",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C23",
+      "claim": "Hspa5, Herpud1, and Hsp90b1 have been identified as targets of the ATF6\u03b1 pathway of the UPR.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the commonalities among the genes that were suppressed below basal levels (Hspa5, Herpud1, Hsp90b1) is that each has been identified as a target of the ATF6\u03b1 pathway of the UPR (Yoshida et al., 2001; Yamamoto et al., 2004; Wu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yoshida et al., 2001; Yamamoto et al., 2004; Wu et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "12514af6-eb5b-47a9-a908-c07e0214c062",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C24",
+      "claim": "Acute stress (8 hr treatment with 0.025 mg/kg TM) leads to elevated expression of ATF4, XBP1spl and ATF6\u03b1cl in liver nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, acute stress (8 hr treatment with 0.025 mg/kg TM as in Figure 1A) led to elevated expression of ATF4, XBP1spl and ATF6\u03b1cl; however, all three were undetectable in the chronic condition (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data from nuclear extracts shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6ad13e84-b65e-4864-9960-2967935e15cd",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C25",
+      "claim": "ATF4, XBP1spl and ATF6\u03b1cl are undetectable in liver nuclei in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, acute stress (8 hr treatment with 0.025 mg/kg TM as in Figure 1A) led to elevated expression of ATF4, XBP1spl and ATF6\u03b1cl; however, all three were undetectable in the chronic condition (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunoblot data from nuclear extracts shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7f99da5e-24c6-41e3-a735-e9d5e1636c00",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C26",
+      "claim": "ATF6\u03b1 binds to the Hspa5 promoter following 8 hr of treatment with TM.",
+      "claim_type": "EXPLICIT",
+      "source": "For this experiment, the Hspa5 promoter was recovered by an ATF6\u03b1 antibody following 8 hr of treatment served as expected (Yoshida et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP data and a citation to Yoshida et al., 1998.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6cd9b38b-1ffc-49dd-a20e-3cedaff19b96",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C27",
+      "claim": "No ATF6\u03b1 binding above background is detected at the Hspa5 promoter in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no ATF6\u03b1 binding above background was detected in the chronic condition (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "39db9e2f-cd56-4a6b-8c5a-dd50fe828aa7",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C28",
+      "claim": "RNA Polymerase 2 is poised at the Hspa5 promoter and this binding is unaffected by the presence or absence of ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Pol2 was recovered near the Hspa5 transcriptional start site (\u2212215 to +0), and this binding was unaffected by the presence or absence of ER stress (Figure 3C). This binding reflects Pol2 that is poised at the Hspa5 promoter waiting to be engaged during the transcriptional activation process (Muse et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP data shown in Figure 3C and a citation to Muse et al., 2007.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "2ec2da36-f144-4cef-8752-606a47cfbc09",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C29",
+      "claim": "Pol2 is abundantly recovered from the body of the Hspa5 locus during acute stress but this binding is completely lost in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while Pol2 was abundantly recovered from the body of the Hspa5 locus during acute stress (Intron 7, or +2727 to +2906, which reflects elongating polymerase), this binding was completely lost in the chronic condition (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "af7fc95d-4efb-49a7-a700-fca62710ddb5",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C30",
+      "claim": "The basal expression of Hspa5 in animals lacking ATF6\u03b1 is reduced by approximately 50 percent relative to wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this prediction, we found that the basal expression of Hspa5 in animals lacking ATF6\u03b1 was reduced by approximately 50 percent relative to wild-type animals, and that chronic stress then had no further effect on Hspa5 expression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from Atf6-/- mice shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "bbbde7ae-1a8e-4523-8d1a-cd72caf6a337",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C31",
+      "claim": "Chronic stress has no further effect on Hspa5 expression in animals lacking ATF6\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirming this prediction, we found that the basal expression of Hspa5 in animals lacking ATF6\u03b1 was reduced by approximately 50 percent relative to wild-type animals, and that chronic stress then had no further effect on Hspa5 expression (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from Atf6-/- mice shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "a1b7ef90-c2d8-474a-9673-a5fd5726d3a7",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C32",
+      "claim": "Loss of ATF6\u03b1 alone is sufficient to mimic chronic stress treatment with respect to Hspa5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loss of ATF6\u03b1 alone was sufficient to mimic chronic stress treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing that Atf6-/- mice have suppressed Hspa5 expression similar to chronic stress.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f0f76429-9222-48b9-bf19-09a283604ce8",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C33",
+      "claim": "The ATF6\u03b1 pathway of the UPR is engaged in the liver absent exogenous stress.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we conclude that at least the ATF6\u03b1 pathway of the UPR is engaged in the liver absent exogenous stress, and that even this basal component can be inhibited upon chronic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Atf6-/- mice have reduced basal Hspa5 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6de13f05-2eee-4566-b55e-315c687e8cf4",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C34",
+      "claim": "The basal component of ATF6\u03b1 activity can be inhibited upon chronic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we conclude that at least the ATF6\u03b1 pathway of the UPR is engaged in the liver absent exogenous stress, and that even this basal component can be inhibited upon chronic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing suppression of Hspa5 in chronic stress conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "d89d1a7b-a578-41c0-be18-caa7cb1d5e25",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C35",
+      "claim": "The UPR remains essentially as stress-responsive on the fifth day as on the first day of TM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment demonstrated that the UPR remained essentially as stress-responsive on the fifth day as on the first; splicing of Xbp1 8 hr after the first injection and 8 hr after the fifth were induced to comparable levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Xbp1 splicing data comparing D1-8h and D5-8h timepoints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "100dc386-bd84-4b1e-8bfc-00582ef4e766",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C36",
+      "claim": "Splicing of Xbp1 8 hr after the first injection and 8 hr after the fifth injection are induced to comparable levels.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment demonstrated that the UPR remained essentially as stress-responsive on the fifth day as on the first; splicing of Xbp1 8 hr after the first injection and 8 hr after the fifth were induced to comparable levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Xbp1 splicing data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3e6f8b37-b470-4df1-af5b-98db590ded92",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C37",
+      "claim": "The deactivation of Xbp1 splicing activity of IRE1\u03b1 proceeds more rapidly on day five than on day 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the deactivation of the UPR, or at least the Xbp1 splicing activity of IRE1\u03b1, proceeded more rapidly on day five than on day 1; substantial Xbp1 splicing was seen 14 hr after the first injection but not 14 hr after the fifth (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Xbp1 splicing data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "484f5185-8161-429f-a7bb-67029038b4ed",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C38",
+      "claim": "Repeated TM treatment continues to induce short-term lipid dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting the idea that the UPR remained responsive, repeated TM treatment continued to induce short-term lipid dysregulation, as evidenced by abundant cytoplasmic vacuoles in D5-8h livers (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H&E staining data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "b017cfa9-d23e-4a0b-bab0-07e9457fefb0",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C39",
+      "claim": "Hspa5 expression is well-induced after both the first and fifth TM treatments, but its attenuation proceeds more rapidly in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also monitored Hspa5 mRNA expression over a similar time course, and found that its expression mirrored this pattern\u2014namely, that Hspa5 expression was well-induced after both treatments, but that its attenuation proceeded more rapidly in the chronic condition (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "fed99b54-3cca-4659-a3c5-9ec5b090bebc",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C40",
+      "claim": "Hsp90b1 (encoding GRP94) mRNA expression is well-induced after both the first and fifth TM treatments, but its attenuation proceeds more rapidly in the chronic condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were also obtained for Hsp90b1 (encoding GRP94) mRNA (not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the text but data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "233984e4-8099-4823-b236-4836b942a7d3",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C41",
+      "claim": "Hspa5 mRNA half-life is 8.2 hr after treatment with TM in primary hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, by monitoring Hspa5 expression after treatment of primary hepatocytes with the transcription inhibitor Actinomycin D, we measured Hspa5 mRNA half-life as 8.2 hr after treatment with TM (Figure 4E), consistent with our previous measurement in MEFs (Rutkowski et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by actinomycin D chase data shown in Figure 4E and a citation to Rutkowski et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "ad43777a-db1b-4379-bd43-0c88fd2c6d8b",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C42",
+      "claim": "Deactivation of the UPR is accompanied by stimulated degradation of Hspa5 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest explanation for these results is that deactivation of the UPR is accompanied by stimulated degradation of Hspa5 mRNA, for even the loss of Hspa5 that occurs on the first day of treatment (Figure 4D) is too rapid to be accounted for by inhibition of transcription alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the discrepancy between the measured mRNA half-life and the observed rate of Hspa5 mRNA decline.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "8c1078db-e35b-4092-b48a-3c5bcf52a9a5",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C43",
+      "claim": "Regulated IRE1-Dependent Decay (RIDD) is the process by which activated IRE1 directly degrades ER-associated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "A candidate pathway for stimulated degradation of Hspa5 mRNA is Regulated IRE1-Dependent Decay (RIDD), which is the process by which activated IRE1 directly degrades ER-associated mRNAs (Hollien et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hollien et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9c4e2802-9ea3-4c4f-bbd5-9894a68a09bd",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C44",
+      "claim": "RIDD is thought to be counter-adaptive, facilitating cell death during severe ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is thought to be counter-adaptive, facilitating cell death during severe ER stress (Han et al., 2009; Upton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Han et al., 2009 and Upton et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6561ffe4-2028-4282-b0b9-90fd2ae6e544",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C45",
+      "claim": "RIDD has been implicated in metabolic regulation in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has also been implicated in metabolic regulation in the liver (Cretenet et al., 2010; So et al., 2012), implying that perhaps its function is more nuanced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Cretenet et al., 2010 and So et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "63a973fd-1a51-45f9-93ce-7b270f5b6bd6",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C46",
+      "claim": "Hspa5 has been proposed to be a RIDD target.",
+      "claim_type": "EXPLICIT",
+      "source": "Hspa5 at least has also been proposed to be a RIDD target, though with unclear functional significance (Han et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Han et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "eb3525ca-cc4c-4fc4-996e-bb22538c3cbd",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C47",
+      "claim": "Bloc1s1 is a bona fide RIDD target in MEFs lacking IRE1\u03b1, in which its downregulation by ER stress is completely lost.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that Bloc1s1 is a bona fide RIDD target in MEFs lacking IRE1\u03b1, in which its downregulation by ER stress was completely lost (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from Ern1-/- MEFs shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f807b2b9-09da-4dcd-ac58-0294b2c503ee",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C48",
+      "claim": "Bloc1s1 expression is reduced in the liver by acute (8 hr) TM treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Bloc1s1 expression was reduced in the liver by acute (8 hr) TM treatment (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "fd7a318b-064e-421f-b42c-7a91b15dd272",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C49",
+      "claim": "Bloc1s1 expression returns to normal levels 24 hr after the first TM treatment, but remains suppressed 24 hr after the fifth treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while Bloc1s1 expression returned to normal levels 24 hr after the first TM treatment, it remained suppressed 24 hr after the fifth treatment (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "c9b3aef1-4d03-4a6a-a596-ced93bbf4666",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C50",
+      "claim": "Fn1 is a potential RIDD target in the liver based on microarray data from wild-type and liver-specific Ern1-/- mice treated with TM.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of a RIDD target in the chronic condition was also seen for Fn1, which we found to be a potential RIDD target in the liver based on microarray data from wild-type and liver-specific Ern1-/- (encoding IRE1\u03b1) mice treated with TM (Zhang et al., 2011) (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microarray data from Zhang et al., 2011 and qRT-PCR data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "97102265-6517-45c1-9f43-a86cb295f7a6",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C51",
+      "claim": "BiP protein overexpression suppresses Hspa5 mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Using primers that detect the 5' UTR of Hspa5 mRNA (and thus amplify only endogenous Hspa5 and not exogenous), we found that, like chronic stress, BiP protein overexpression suppressed Hspa5 mRNA expression (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from ad-BiP treated mice shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f2e021f3-2d4f-49af-b600-1b3131c83624",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C52",
+      "claim": "BiP protein overexpression suppresses Hsp90b1 mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for Hsp90b1, while overexpression had no effect on Ddit3 expression (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from ad-BiP treated mice shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "976fecc2-8fb3-4961-8e82-fbb1b6ba80f0",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C53",
+      "claim": "BiP protein overexpression has no effect on Ddit3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained for Hsp90b1, while overexpression had no effect on Ddit3 expression (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from ad-BiP treated mice shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7554d83c-7988-4a51-a8d1-6885567b5535",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C54",
+      "claim": "Bloc1s1 expression is suppressed by BiP overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, Bloc1s1 expression was also suppressed under these conditions, again mirroring the chronic condition (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from ad-BiP treated mice shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "e9e1dfad-e124-4859-880c-2a7e45af8a55",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C55",
+      "claim": "Treatment with TUDCA reduces stress-induced expression of Hspa5, Hsp90b1, and Ddit3 approximately two-fold or more.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that treating mice with the pharmacological chaperone TUDCA (Ozcan et al., 2006)\u2014which reduced upregulation of ER stress markers by TM approximately 2-fold\u2014had no effect on its own on any UPR gene tested (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from TUDCA-treated mice shown in Figure 5E and a citation to Ozcan et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6b88e397-ac43-4b85-86a6-5d0cd1a4afc8",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C56",
+      "claim": "TUDCA treatment has no effect on basal Hspa5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that treating mice with the pharmacological chaperone TUDCA (Ozcan et al., 2006)\u2014which reduced upregulation of ER stress markers by TM approximately 2-fold\u2014had no effect on its own on any UPR gene tested (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from TUDCA-treated mice shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "16e22650-6b3f-4790-bcae-f7ce925a09c1",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C57",
+      "claim": "Improved ER protein folding capacity is not sufficient to suppress Hspa5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that improved ER protein folding capacity was not sufficient to suppress Hspa5 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the TUDCA data showing no effect on basal Hspa5 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "583853be-b990-4631-bfbc-8bac6fdadd9c",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C58",
+      "claim": "Feeding elicits ER stress in mouse livers.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Oyadomari et al., 2008; Pfaffenbach et al., 2010), we found that feeding elicited ER stress in mouse livers (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 6A and citations to Oyadomari et al., 2008 and Pfaffenbach et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "44940f61-7a8e-4119-9524-191954f965e3",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C59",
+      "claim": "Feeding-induced ER stress is much more robust for Hspa5, Hsp90b1, and Xbp1 than for targets of the PERK pathway (Ddit3, Ppp1r15a, and Wars).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, at least at this timepoint the effect was much more robust for some targets (Hspa5, Hsp90b1, and Xbp1) than others; in fact, targets of the PERK pathway (Ddit3, Ppp1r15a [encoding GADD34], and Wars) were not upregulated to a statistically significant extent under these conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by qRT-PCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "1a37358b-4868-4243-a6d5-bd2380fd718b",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C60",
+      "claim": "There is no difference between the level of ER stress induced by diets containing either high fat or no fat.",
+      "claim_type": "EXPLICIT",
+      "source": "While it has been proposed that a high fat diet is intrinsically stress-inducing (Ozcan et al., 2004), at least in this instance we found no difference between the level of stress induced by diets containing either high fat or no fat (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data comparing high fat and no fat diets shown in Figure 6A and a citation to Ozcan et al., 2004.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9076469f-b25f-44d3-8f26-0a3a04b03eab",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C61",
+      "claim": "Nutrient intake itself elicits ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This result indicates that nutrient intake itself elicits ER stress, and is consistent with the idea that the stress is driven by increased anabolism (Ozcan et al., 2008) rather than fat per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that both high fat and no fat diets induce similar ER stress and supported by a citation to Ozcan et al., 2008.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "be23ebe7-f7d4-4095-9774-62eb1458a730",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C62",
+      "claim": "Feeding-induced ER stress is modest compared to that induced by TM.",
+      "claim_type": "EXPLICIT",
+      "source": "As we speculated, this stress is modest compared to that induced by TM, for which most UPR targets were induced to an extent that was at least an order of magnitude greater than feeding (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparing qRT-PCR data from Figure 6A and Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "513555ee-1f77-48c4-9ae5-2666bc85823e",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C63",
+      "claim": "Hspa5 and Hsp90b1 are both significantly suppressed in Lepob/ob and Leprdb/db mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar pattern of gene regulation in these animals as in animals treated with chronic TM; Hspa5 and Hsp90b1 were both significantly suppressed (Figure 6C), while other UPR targets were not suppressed (and, indeed, appeared to be upregulated; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from obese mice shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f6a5a9b8-6200-4dd3-8650-1b34e839c57d",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C64",
+      "claim": "Other UPR targets are not suppressed in Lepob/ob and Leprdb/db mice and appear to be upregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar pattern of gene regulation in these animals as in animals treated with chronic TM; Hspa5 and Hsp90b1 were both significantly suppressed (Figure 6C), while other UPR targets were not suppressed (and, indeed, appeared to be upregulated; Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from obese mice shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "73fdf77a-4ea0-4f6f-b956-198ea368873d",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C65",
+      "claim": "Bloc1s1 expression is reduced in Leprdb/db mice and potentially in Lepob/ob mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, again mirroring the results seen in TM-treated animals, expression of Bloc1s1 was reduced in Leprdb/db mice and potentially in Lepob/ob mice as well, and Fn1 was strongly suppressed in both (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from obese mice shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3e29d9b9-0991-4d28-bd27-5b7032311f30",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C66",
+      "claim": "Fn1 expression is strongly suppressed in both Lepob/ob and Leprdb/db mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, again mirroring the results seen in TM-treated animals, expression of Bloc1s1 was reduced in Leprdb/db mice and potentially in Lepob/ob mice as well, and Fn1 was strongly suppressed in both (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by qRT-PCR data from obese mice shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "5c82596c-e69e-40e4-961c-59a9536d52d2",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C67",
+      "claim": "Suppression of Hspa5 and Hsp90b1 mRNA expression characterizes both pharmacological and dietary models of chronic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that suppression of the mRNA expression of Hspa5 and Hsp90b1 characterizes both pharmacological and dietary models of chronic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similar patterns observed in TM-treated and obese mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "10b9d54c-54f9-4eb2-bc5e-6806704b1e14",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C68",
+      "claim": "In the basal state, activation of ATF6\u03b1 contributes to the expression of Hspa5 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the basal (i.e., nominally 'unstressed') state, activation of ATF6\u03b1 contributes to the expression of Hspa5 mRNA. We arrive at this conclusion because expression of Hspa5 was diminished in the absence of ATF6\u03b1 even without an exogenous stress (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that Atf6-/- mice have reduced basal Hspa5 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "686c6441-2073-4170-bd95-e0a1f6195d33",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C69",
+      "claim": "Normal physiological function in the liver entails periods of UPR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding implies that normal physiological function in the liver entails periods of UPR activation\u2014perhaps not surprisingly, given that feeding itself activates the UPR (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the basal ATF6\u03b1 activity and the observation that feeding activates the UPR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "88782568-bb1b-44b3-9b8d-f93809b11323",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C70",
+      "claim": "BiP is one of the most abundant proteins in the ER lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "BiP is one of the most abundant proteins in the ER lumen (Gething, 1999), and other non-stress-dependent mechanisms contribute to its basal regulation as well (Resendez et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Gething, 1999 and Resendez et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "5ca1554e-feeb-4aad-921e-56ecfc8f7776",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C71",
+      "claim": "Non-stress-dependent mechanisms contribute to BiP's basal regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "BiP is one of the most abundant proteins in the ER lumen (Gething, 1999), and other non-stress-dependent mechanisms contribute to its basal regulation as well (Resendez et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Resendez et al., 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "13475e5f-f28f-4777-8491-77ebe766adb9",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C72",
+      "claim": "Upon exposure to a conventional ER stress, all three limbs of the UPR are activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon exposure to a conventional ER stress, all three limbs of the UPR are activated (Rutkowski et al., 2006), leading to robust production of stress-specific target transcripts such as Ddit3 (Chop), as well as augmentation of transcripts encoding ER chaperones, such as Hspa5 and Hsp90b1 (Grp94).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rutkowski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "0f320a1f-644f-4182-ab38-3d590ff1f102",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C73",
+      "claim": "CHOP (both mRNA and protein) is naturally labile and readily lost as UPR stress-sensing molecules become deactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "As the UPR stress-sensing molecules become deactivated, naturally labile factors such as CHOP (both mRNA and protein) are readily lost (Rutkowski et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rutkowski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3834c0c3-9923-4e25-9888-de0d10fcab6e",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C74",
+      "claim": "ER chaperones such as BiP and GRP94 are long-lived at both the protein and mRNA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ER chaperones such as BiP and GRP94 are long-lived at both the protein and mRNA levels (Rutkowski et al., 2006), and continued overproduction of these proteins would presumably greatly tax cellular resources and potentially constitute their own burden on the organelle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Rutkowski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9c6656df-2054-4508-8957-0bf7aa36b639",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C75",
+      "claim": "BiP overexpression initiates a negative feedback loop, both suppressing UPR activity and indirectly stimulating the degradation of its own mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, BiP overexpression appears to initiate a negative feedback loop, both suppressing UPR activity (including the basal activity of ATF6\u03b1) and also indirectly stimulating the degradation of its own mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the data showing BiP overexpression suppresses Hspa5 mRNA and ATF6\u03b1 activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "ae6cecd4-8457-4ad3-b90c-dc28bb0f9d80",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C76",
+      "claim": "During repeated stress, suppression of Hspa5 mRNA constitutes a resetting to a new quasi-stable setpoint for UPR transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during repeated stress, we propose that it constitutes a resetting to a new quasi-stable setpoint for UPR transcriptional regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the chronic stress data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f21544c5-b044-4a59-b61f-2db90c02e9ee",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C77",
+      "claim": "Activation of the ER stress sensing molecules requires their dissociation from BiP in both yeast and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the founding observations of the UPR field was that activation of the ER stress sensing molecules required their dissociation from BiP in both yeast and mammals (Bertolotti et al., 2000; Shen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bertolotti et al., 2000 and Shen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "686f86bb-5c1d-488c-a225-604fa2205fc6",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C78",
+      "claim": "Yeast Ire1p can be activated by direct binding to unfolded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the suggestion that at least yeast Ire1p can be activated by direct binding to unfolded proteins (Kimata et al., 2004; Gardner and Walter, 2011; Gardner et al., 2013) has cast doubt on this model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kimata et al., 2004; Gardner and Walter, 2011; Gardner et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6919513d-5151-4b92-9990-84f37564a6d7",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C79",
+      "claim": "The role of BiP binding to UPR stress sensors is to modulate UPR deactivation rather than activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data raise the possibility that perhaps the role of BiP binding is to instead modulate UPR deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the data showing BiP's role in chronic stress.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9b6848de-ceeb-4a61-82be-ec5bd5f43f7a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C80",
+      "claim": "Tunicamycin is capable of disrupting carbohydrate metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "While relatively specific in inducing ER stress due to its blockage of N-linked glycosylation, TM also is capable of disrupting carbohydrate metabolism (Olden et al., 1979) and protein palmitoylation (Patterson and Skene, 1995), although whether it does so at the doses used here is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Olden et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9fdfcd31-20de-4354-961d-469a933eece1",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C81",
+      "claim": "Tunicamycin is capable of disrupting protein palmitoylation.",
+      "claim_type": "EXPLICIT",
+      "source": "While relatively specific in inducing ER stress due to its blockage of N-linked glycosylation, TM also is capable of disrupting carbohydrate metabolism (Olden et al., 1979) and protein palmitoylation (Patterson and Skene, 1995), although whether it does so at the doses used here is unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Patterson and Skene, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "ca3090ea-ce97-4e56-b7ab-9d4280825baf",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C82",
+      "claim": "The magnitude of ER stress elicited by feeding is considerably lower than that elicited by tunicamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as we have demonstrated, the magnitude of ER stress elicited by feeding is considerably lower than that elicited by tunicamycin (Figure 6; also compare Figure 6A with Figure 4D), yet also much more repetitive than the once-daily TM challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparing qRT-PCR data from feeding experiments and TM experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "6d6eef4e-d258-4f66-bda2-fc1a03de3db1",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C83",
+      "claim": "Atf6 mRNA is significantly downregulated by chronic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Along these lines, we observed that Atf6 mRNA is also significantly downregulated by chronic stress, albeit not as robustly as Hspa5 (not shown), raising the possibility of a positive feedback loop for suppressing Hspa5 expression even as BiP protein levels subside.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated in the text but data is not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "a7242074-e699-4350-9059-6173dd350730",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C84",
+      "claim": "RIDD might remain active in the chronic condition, even as UPR-dependent transcriptional signaling is shut off.",
+      "claim_type": "EXPLICIT",
+      "source": "A surprising conclusion from this work is that RIDD might remain active in the chronic condition, even as UPR-dependent transcriptional signaling is shut off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the persistent suppression of RIDD targets in the chronic condition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "2aaee500-fe00-4597-8fcc-87b1fbdcb653",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C85",
+      "claim": "The purpose of RIDD-mediated clearance of ER-resident proteins might be to help turn the UPR off once stress has been overcome.",
+      "claim_type": "EXPLICIT",
+      "source": "The purpose of the clearance of ER-resident proteins might not so much be to neuter the organelle and hasten its dysfunction during severe stress (Maurel et al., 2014) as to help turn the response off once stress has been overcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of RIDD function based on the chronic stress data and a citation to Maurel et al., 2014.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3fb1331d-7a3f-4a83-8ad0-4acc6acfbc1f",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C87",
+      "claim": "The dissociation of Xbp1 splicing and RIDD activities occurs to separate activation from deactivation rather than to separate adaptive from apoptotic outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "They raise the possibility that this dissociation occurs not necessarily to separate adaptive from apoptotic outputs so much as to separate activation from deactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the functional significance of IRE1\u03b1 activity dissociation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "28041b5b-598d-4382-8924-0a1bbdff7e86",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C88",
+      "claim": "CHOP promotes cell death during severe stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a parallel can be drawn with the UPR-regulated transcription factor CHOP which, though it clearly promotes cell death during severe stress (Zinszner et al., 1998) also might promote normal cellular function during milder stress both by potentiating the dephosphorylation of eIF2\u03b1 (Marciniak et al., 2004) and by regulating lipid metabolism (Tyra et al., 2012; Chikka et al., 2013) toward the ultimate improvement of ER function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zinszner et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "186504df-370b-4cc7-9749-19eb3fbbcf90",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C89",
+      "claim": "CHOP might promote normal cellular function during milder stress by potentiating the dephosphorylation of eIF2\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a parallel can be drawn with the UPR-regulated transcription factor CHOP which, though it clearly promotes cell death during severe stress (Zinszner et al., 1998) also might promote normal cellular function during milder stress both by potentiating the dephosphorylation of eIF2\u03b1 (Marciniak et al., 2004) and by regulating lipid metabolism (Tyra et al., 2012; Chikka et al., 2013) toward the ultimate improvement of ER function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Marciniak et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "380c7031-5b69-47ce-b868-987489fccacb",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C90",
+      "claim": "CHOP might promote normal cellular function during milder stress by regulating lipid metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a parallel can be drawn with the UPR-regulated transcription factor CHOP which, though it clearly promotes cell death during severe stress (Zinszner et al., 1998) also might promote normal cellular function during milder stress both by potentiating the dephosphorylation of eIF2\u03b1 (Marciniak et al., 2004) and by regulating lipid metabolism (Tyra et al., 2012; Chikka et al., 2013) toward the ultimate improvement of ER function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tyra et al., 2012 and Chikka et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "ce1de48c-f3ef-4e4d-827c-dae489fade29",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C91",
+      "claim": "Neither MEFs nor cultured hepatocytes show the same suppression of Hspa5 expression as seen in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither MEFs nor even cultured hepatocytes showed the same suppression of Hspa5 expression as seen in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from experiments not shown in detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "8ca23320-8e40-459a-9a7b-8aae8e452365",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C92",
+      "claim": "There exist unappreciated factors that influence UPR output in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "This discrepancy points to the existence of other as yet unappreciated factors that influence UPR output in the liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference between in vitro and in vivo results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "06979f55-0bb6-4843-8030-59552863a1e5",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C93",
+      "claim": "Overlaid atop the structural framework of the canonical UPR lie modulatory pathways for altering UPR sensitivity and output.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is now becoming clear that, overlaid atop the structural framework of the canonical UPR lie modulatory pathways for altering UPR sensitivity and output, with potential implications for signaling during chronic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as emerging knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "21d5021d-fd21-495d-9b56-48448bc1e58e",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C94",
+      "claim": "S-nitrosylation of IRE1\u03b1 is a posttranslational modification that can alter UPR output.",
+      "claim_type": "EXPLICIT",
+      "source": "These include posttranslational modifications either of the stress sensors\u2014such as S-nitrosylation of IRE1\u03b1 (Yang et al., 2015)\u2014or of ER chaperones, such as ADP ribosylation (Chambers et al., 2012) or AMPylation (Preissler et al., 2015) of BiP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "f94fda87-a41d-4aba-a731-c84a7cc833a3",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C95",
+      "claim": "ADP ribosylation of BiP is a posttranslational modification that can alter UPR output.",
+      "claim_type": "EXPLICIT",
+      "source": "These include posttranslational modifications either of the stress sensors\u2014such as S-nitrosylation of IRE1\u03b1 (Yang et al., 2015)\u2014or of ER chaperones, such as ADP ribosylation (Chambers et al., 2012) or AMPylation (Preissler et al., 2015) of BiP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Chambers et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "33a0f4b2-2313-4b4f-9bc0-480bb4429d0a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C96",
+      "claim": "AMPylation of BiP is a posttranslational modification that can alter UPR output.",
+      "claim_type": "EXPLICIT",
+      "source": "These include posttranslational modifications either of the stress sensors\u2014such as S-nitrosylation of IRE1\u03b1 (Yang et al., 2015)\u2014or of ER chaperones, such as ADP ribosylation (Chambers et al., 2012) or AMPylation (Preissler et al., 2015) of BiP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Preissler et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "e1714b0c-a8a3-4b0e-9275-958823353bbb",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C97",
+      "claim": "The UPR has a remarkable capacity to adapt to chronic stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results underscore the remarkable capacity of the UPR to adapt to chronic stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary interpretation of the overall findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "74d7dba7-dff8-463b-8234-fcbdd2052808",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C98",
+      "claim": "Chronic ER stress is implicated in many chronic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Endoplasmic reticulum (ER) stress is implicated in many chronic diseases, but very little is known about how the unfolded protein response (UPR) responds to persistent ER stress in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7585005a-2dfd-4381-8127-e6a59f1f5f18",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C99",
+      "claim": "Repeated injection of a low dose of tunicamycin experimentally reconstitutes chronic ER stress in the mouse liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we experimentally reconstituted chronic ER stress in the mouse liver, using repeated injection of a low dose of the ER stressor tunicamycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental approach described in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "b17de72a-84b3-4329-b2e7-771096d210e8",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C100",
+      "claim": "Chronic ER stress treatment leads to feedback-mediated suppression of mRNAs encoding BiP and GRP94.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, this treatment led to feedback-mediated suppression of a select group of mRNAs, including those encoding the ER chaperones BiP and GRP94.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "639bd138-7a25-4dbb-ba27-b066349b9b89",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C101",
+      "claim": "The suppression of BiP and GRP94 mRNAs during chronic stress is due to both silencing of the ATF6\u03b1 pathway and enhancement of mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression was due to both silencing of the ATF6\u03b1 pathway of UPR-dependent transcription and enhancement of mRNA degradation, possibly via regulated IRE1-dependent decay (RIDD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic finding stated in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "452e1b8d-2e3d-4c11-866f-8ab9ef5714bd",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C102",
+      "claim": "The suppression of BiP mRNA is phenocopied by ectopic overexpression of BiP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of mRNA encoding BiP was phenocopied by ectopic overexpression of BiP protein, and was also observed in obese mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3eda7404-21a4-47c9-803c-7a65e6ac55ed",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C103",
+      "claim": "The suppression of BiP mRNA is observed in obese mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression of mRNA encoding BiP was phenocopied by ectopic overexpression of BiP protein, and was also observed in obese mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "165f2faa-4adf-4881-84b6-3ee63f958ffe",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C104",
+      "claim": "Persistent cycles of UPR activation and deactivation create an altered, quasi-stable setpoint for UPR-dependent transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that persistent cycles of UPR activation and deactivation create an altered, quasi-stable setpoint for UPR-dependent transcriptional regulation\u2014an outcome that could be relevant to conditions such as metabolic syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "370cab87-d31a-49cd-86a6-e36401ab6ac6",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "claim_id": "C105",
+      "claim": "The altered UPR setpoint could be relevant to conditions such as metabolic syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that persistent cycles of UPR activation and deactivation create an altered, quasi-stable setpoint for UPR-dependent transcriptional regulation\u2014an outcome that could be relevant to conditions such as metabolic syndrome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication stated in the abstract.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a9a50d40-26a1-4031-8ab8-eb41a0711adb",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Tunicamycin (TM) is characterized as a specific ER stress inducer that blocks N-linked glycosylation with few off-target effects, primarily targeting the liver and kidneys without lethality at high doses in wild-type animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 establish the rationale for using tunicamycin as an experimental tool. The properties are supported by appropriate citations (Foufelle and Fromenty, 2016; Rutkowski et al., 2008; Chikka et al., 2013) and represent established knowledge about this compound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "a4a7fd7c-48c1-45ff-bba8-7fc158e1b34a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Low doses of TM (below 0.1 mg/kg, specifically 0.025 mg/kg) elicit attenuated UPR activation with modest upregulation of BiP and CHOP proteins after 8 hours of acute treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are supported by qRT-PCR data (Figure 1A) and immunoblot data (Figure 1B). The dose-response relationship is clearly demonstrated, and the observation that CHOP induction is more modest than at higher doses provides important context for the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chronic treatment with 0.025 mg/kg TM for 5 days causes persistent ER stress (evidenced by BiP and GRP94 upregulation and TRAP\u03b1 underglycosylation) but leads to adaptation characterized by resolution of lipid accumulation and loss of CHOP protein expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C16 are supported by multiple complementary data types: H&E staining (Figure 1D), immunoblots for TRAP\u03b1, BiP, CHOP, and ADRP (Figures 1E-F), and citations to prior work. The data demonstrate that while TM remains active (TRAP\u03b1 underglycosylation), the liver adapts to chronic stress with normalization of histology and selective loss of CHOP expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chronic ER stress leads to selective suppression of specific UPR target mRNAs (Hspa5, Herpud1, Hsp90b1) below basal levels while other UPR targets (Ddit3) and metabolic genes return to baseline, indicating mechanistically distinct regulatory pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are supported by qRT-PCR data from Figures 2A-D using multiple primer sets. The differential regulation of gene subsets is clearly demonstrated with appropriate statistical analysis (n=8 animals for key experiments). The inference that suppression mechanisms differ from acute metabolic gene regulation is reasonable given the distinct patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "bbd64167-e82d-4910-bd05-3940620f185e",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Chronic stress silences ATF6\u03b1-dependent transcription: nuclear ATF6\u03b1, XBP1spl, and ATF4 are undetectable in chronic conditions, ATF6\u03b1 binding to the Hspa5 promoter is lost, and RNA Polymerase 2 elongation at the Hspa5 locus is abolished despite maintained promoter-proximal Pol2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 are supported by nuclear immunoblots (Figure 3A), ChIP data for ATF6\u03b1 and Pol2 (Figures 3B-C), and appropriate citations. The ChIP experiments distinguish between poised and elongating polymerase, providing mechanistic insight. The loss of transcriptional activity is convincingly demonstrated through multiple orthogonal approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "1146b634-2799-4ae7-9e69-c64136116a0a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ATF6\u03b1 contributes to basal Hspa5 expression in unstressed liver, and loss of ATF6\u03b1 alone is sufficient to mimic the suppression of Hspa5 observed during chronic stress, demonstrating that basal ATF6\u03b1 activity can be inhibited by chronic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 are supported by qRT-PCR data from Atf6-/- mice (Figure 3D) showing ~50% reduction in basal Hspa5 expression and no further suppression with chronic stress. This genetic evidence strongly supports the conclusion that ATF6\u03b1 is both basally active and specifically inhibited during chronic stress. The experimental design appropriately tests the hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "3efa7459-a750-4b50-b0ee-d5670d588aa0",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The UPR remains fully responsive to stress on day 5 (comparable Xbp1 splicing and Hspa5 induction at 8h), but deactivation proceeds more rapidly in the chronic condition (faster loss of Xbp1 splicing, Hspa5 mRNA, and lipid dysregulation by 14-24h), supporting an 'augmented deactivation' rather than 'preconditioning' model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 are supported by time-course data comparing day 1 and day 5 responses: Xbp1 splicing (Figure 4B), H&E staining (Figure 4C), and qRT-PCR for Hspa5 (Figure 4D). The experimental design directly tests two competing models and the data clearly support augmented deactivation. Sample sizes are adequate (n=3-4 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "00e5c7ba-1042-4eff-bd80-f2049f763f3b",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The rapid loss of Hspa5 mRNA during UPR deactivation (half-life ~3h in vivo on day 5) cannot be explained by transcriptional inhibition alone given the measured mRNA half-life of 8.2 hours in primary hepatocytes, suggesting stimulated mRNA degradation accompanies UPR deactivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is supported by actinomycin D chase experiments in primary hepatocytes (Figure 4E). Claim C42 is a reasonable inference from the discrepancy between measured half-life (8.2h) and observed decay kinetics (~3h effective half-life). The logic is sound, though the inference relies on comparing in vitro and in vivo measurements which may have inherent differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RIDD (Regulated IRE1-Dependent Decay) is implicated in chronic stress adaptation: the validated RIDD target Bloc1s1 and putative target Fn1 remain suppressed 24h after the fifth TM treatment (but not after the first), suggesting persistent RIDD activity during chronic stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 establish RIDD background via citations. Claims C47-C50 provide experimental evidence: Bloc1s1 is validated as IRE1\u03b1-dependent in Ern1-/- MEFs (Figure 4F), and both Bloc1s1 and Fn1 show differential suppression patterns in chronic vs acute conditions (Figures 4G-H). The data support RIDD involvement, though the authors appropriately note that conclusive demonstration would require additional genetic tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "148ee71e-f1e1-4b24-811b-309c760b814f",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ectopic BiP overexpression via adenovirus phenocopies chronic stress by suppressing endogenous Hspa5 and Hsp90b1 mRNA expression and the RIDD target Bloc1s1, but has no effect on Ddit3 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 are supported by qRT-PCR data from ad-BiP vs ad-GFP treated mice (Figures 5C-D) with adequate sample sizes (n=8). The use of primers specific to endogenous Hspa5 (5' UTR) is methodologically sound. The selective effects on different gene targets strengthen the conclusion that BiP overexpression specifically mimics aspects of chronic stress.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7874ade3-1bf8-4d0f-bf0e-616cd166eed1",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The pharmacological chaperone TUDCA reduces TM-induced ER stress marker expression ~2-fold but has no effect on basal Hspa5 expression, demonstrating that improved ER protein folding capacity alone is insufficient to suppress Hspa5 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by qRT-PCR data (Figure 5E). The experimental design appropriately tests whether improved folding capacity (via TUDCA) can mimic BiP overexpression effects. The negative result for basal Hspa5 suppression is informative and supports the conclusion that BiP's effects are not solely through improved folding capacity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Feeding elicits modest ER stress in mouse liver with preferential activation of ATF6\u03b1/IRE1\u03b1 targets (Hspa5, Hsp90b1, Xbp1) over PERK targets (Ddit3, Ppp1r15a, Wars), and this stress is independent of dietary fat content, suggesting nutrient intake itself drives the response at levels ~10-fold lower than TM-induced stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by qRT-PCR data comparing fasted vs fed mice with high-fat or no-fat diets (Figures 6A-B). The differential activation of UPR branches is clearly demonstrated. The comparison to TM-induced stress provides important context. Sample sizes are adequate (n=3) for this exploratory experiment, though the conclusion about fat independence should be interpreted cautiously given the single timepoint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9973b351-fdb7-4ca9-999f-3a44a69ff937",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genetically obese mice (Lepob/ob and Leprdb/db) exhibit suppression of Hspa5 and Hsp90b1 mRNAs and RIDD targets (Bloc1s1, Fn1) similar to chronic TM treatment, while other UPR targets appear upregulated, suggesting that suppression of these specific mRNAs characterizes both pharmacological and dietary models of chronic ER stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 are supported by qRT-PCR data from obese mice (Figures 6C-E) with adequate sample sizes (n=4). The parallel between TM-induced chronic stress and genetic obesity strengthens the physiological relevance of the findings. The selective pattern of gene suppression is consistent across models, though the authors appropriately note that mechanisms may differ.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "38245bc0-401c-44e9-81c5-45b3f6c748ce",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "In basal conditions, ATF6\u03b1 contributes to Hspa5 expression, implying that normal liver function involves periods of UPR activation (consistent with feeding-induced stress). BiP is highly abundant and long-lived, and upon acute stress, all three UPR limbs activate to produce both labile factors (CHOP) and stable chaperones (BiP, GRP94).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C74 synthesize experimental findings (C68-C69 inferred from Atf6-/- data) with established knowledge supported by appropriate citations (C70-C74). The integration of basal ATF6\u03b1 activity with feeding-induced stress provides a coherent model. The characterization of BiP and CHOP stability is well-supported by prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "7d6e0e4e-09b4-47f2-a1d0-9e97c29f876b",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "BiP overexpression initiates a negative feedback loop that suppresses UPR activity (including basal ATF6\u03b1) and stimulates degradation of its own mRNA. During repeated stress, this constitutes resetting to a new quasi-stable setpoint for UPR regulation, and BiP binding may modulate UPR deactivation rather than activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C75 is reasonably inferred from the BiP overexpression data, though the mechanism remains incompletely defined. Claims C76 and C79 are explicitly speculative interpretations. While the model is consistent with the data, key mechanistic details (how BiP suppresses ATF6\u03b1 activity, whether BiP directly stimulates RIDD) remain unproven. The 'quasi-stable setpoint' concept is a useful framework but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "9ac90915-d03b-47a3-a1f2-e6215ee96779",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Historical models proposed that UPR sensor activation requires dissociation from BiP, but recent evidence suggests yeast Ire1p can be activated by direct binding to unfolded proteins, casting doubt on the BiP dissociation model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 accurately represent the evolution of understanding in the field, supported by appropriate citations (Bertolotti et al., 2000; Shen et al., 2002; Kimata et al., 2004; Gardner and Walter, 2011; Gardner et al., 2013). This provides important context for the authors' reinterpretation of BiP's role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "569646de-474f-4801-9c49-b51d8a08ed7a",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Tunicamycin can disrupt carbohydrate metabolism and protein palmitoylation in addition to blocking N-linked glycosylation, though whether these off-target effects occur at the low doses used in this study is unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by appropriate citations (Olden et al., 1979; Patterson and Skene, 1995) and the authors appropriately acknowledge uncertainty about whether these effects occur at their experimental doses. This represents appropriate scientific caution about potential confounding factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "72407f5a-eaf5-4c1e-9c53-79b6a71bc2f0",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Feeding-induced ER stress is considerably lower in magnitude than TM-induced stress but more repetitive. Atf6 mRNA is downregulated by chronic stress (though less robustly than Hspa5), suggesting a positive feedback loop for suppressing Hspa5 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C82 is supported by comparing data from Figures 6A and 4D. However, claim C83 states that data are 'not shown,' making it impossible to evaluate the quality or statistical significance of this observation. The proposed positive feedback loop is speculative without the supporting data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "e20435cc-836e-4a60-9a6c-3717145acc39",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "RIDD might remain active during chronic stress even as transcriptional signaling is shut off, potentially serving to help turn off the UPR after stress resolution rather than to promote cell death. The dissociation of Xbp1 splicing and RIDD activities may separate activation from deactivation rather than adaptive from apoptotic outputs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84, C85, and C87 are explicitly speculative interpretations. While the persistent suppression of RIDD targets (Bloc1s1, Fn1) in chronic conditions is demonstrated, direct evidence for sustained RIDD activity (e.g., IRE1\u03b1 phosphorylation, endonuclease activity assays) is lacking. The authors acknowledge these limitations. The reinterpretation of RIDD function is provocative but requires further experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "272f941a-5d1d-4c21-bc9a-2d5ef5db84ef",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "CHOP promotes cell death during severe stress but might promote normal cellular function during milder stress by potentiating eIF2\u03b1 dephosphorylation and regulating lipid metabolism, drawing a parallel to the proposed dual role of RIDD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C90 are supported by appropriate citations (Zinszner et al., 1998; Marciniak et al., 2004; Tyra et al., 2012; Chikka et al., 2013). This represents established knowledge used to support the authors' argument by analogy that stress response components can have context-dependent functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "b6ce8a62-560d-4dd7-9d8e-8705762b129d",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Neither MEFs nor cultured hepatocytes show the same Hspa5 suppression as seen in vivo, pointing to unappreciated factors that influence UPR output in the liver.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C92 describe negative results from experiments that are not shown in detail. Without seeing the data, it's impossible to evaluate whether appropriate conditions were tested, whether the experiments were adequately powered, or whether technical issues might explain the discrepancy. The inference about 'unappreciated factors' is reasonable but the supporting evidence is insufficient.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "95494965-de9b-4c2d-bbc9-53f5bc57a399",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Modulatory pathways overlay the canonical UPR framework to alter sensitivity and output, including posttranslational modifications such as S-nitrosylation of IRE1\u03b1 and ADP ribosylation or AMPylation of BiP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C96 represent emerging knowledge in the field, supported by appropriate recent citations (Yang et al., 2015; Chambers et al., 2012; Preissler et al., 2015). This provides important context for understanding the complexity of UPR regulation beyond the canonical model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    },
+    {
+      "id": "61aa9072-8365-4bed-8392-f4913c5f3100",
+      "content_id": "90f38e08-3b7c-482e-a160-a866a9051d27",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "The study demonstrates the UPR's remarkable capacity to adapt to chronic stress. Repeated low-dose TM treatment experimentally reconstitutes chronic ER stress in mouse liver, leading to feedback-mediated suppression of BiP and GRP94 mRNAs through ATF6\u03b1 pathway silencing and enhanced mRNA degradation (possibly via RIDD). This suppression is phenocopied by BiP overexpression and observed in obese mice, suggesting persistent UPR activation/deactivation cycles create an altered setpoint for transcriptional regulation potentially relevant to metabolic syndrome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C105 represent the study's main conclusions as stated in the abstract and discussion. The core findings (C99-C103) are well-supported by the experimental data reviewed above. The mechanistic insights (C101) are supported though some aspects remain incompletely defined. The broader implications (C104-C105) are appropriately framed as suggestions rather than definitive conclusions. The work represents a significant advance in understanding chronic ER stress responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:04:44.551213Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7535f7f-d568-4c9f-b327-3cadb4b993c9",
+      "result_id": "a9a50d40-26a1-4031-8ab8-eb41a0711adb"
+    },
+    {
+      "claim_id": "94304fd6-ed4e-468d-ae79-45da6a7bc762",
+      "result_id": "a9a50d40-26a1-4031-8ab8-eb41a0711adb"
+    },
+    {
+      "claim_id": "cb0b5651-de00-4116-ab4a-19a7c811b5cc",
+      "result_id": "a9a50d40-26a1-4031-8ab8-eb41a0711adb"
+    },
+    {
+      "claim_id": "9a7bb6ee-5c7b-4db9-9e9a-91a4995c3fdb",
+      "result_id": "a9a50d40-26a1-4031-8ab8-eb41a0711adb"
+    },
+    {
+      "claim_id": "55eb5efd-bc53-4ca3-8626-424f0a501cad",
+      "result_id": "a4a7fd7c-48c1-45ff-bba8-7fc158e1b34a"
+    },
+    {
+      "claim_id": "2b9ca27d-f3ef-4bc0-88bb-cefb386aa67a",
+      "result_id": "a4a7fd7c-48c1-45ff-bba8-7fc158e1b34a"
+    },
+    {
+      "claim_id": "36f1b0e6-9c24-43e4-a124-57c21c17112b",
+      "result_id": "a4a7fd7c-48c1-45ff-bba8-7fc158e1b34a"
+    },
+    {
+      "claim_id": "c46f0ca0-f292-4a08-8f86-f725054050b1",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "7d7b0eb5-44cf-4533-9794-3b5b4a059061",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "977927c2-1f04-4bff-853a-929365d0e33c",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "bd7e6bb4-acd7-40e5-998a-10608ee255e5",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "28449b3c-0f9c-4b67-9a27-c299a0466e49",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "febdaa64-3827-45ba-86d5-6cf82418cef4",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "c049f1a7-6e6c-42fa-9a69-0647dcab60b6",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "ca0304b6-f2a9-405a-8d1a-878734b6d000",
+      "result_id": "b84684b8-c442-48a6-b3cb-ad7696bc95aa"
+    },
+    {
+      "claim_id": "5222d033-39a3-472b-bd50-6e5058b848cb",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "f435c387-0c0e-4a50-a594-1762a22102d4",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "79e575f3-9873-446e-b065-e3cfcb721725",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "a4cffbf0-8dd8-4c57-8a82-028e88a36a99",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "6746eb2c-a41c-42ba-bdaf-66c9b13d0ff2",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "f10dedff-615d-427b-ad5e-485351878103",
+      "result_id": "5a99893d-54c0-4d4a-b41d-9b7086dd08a9"
+    },
+    {
+      "claim_id": "be6f8ebc-ebf9-49b5-8cda-6b6eaa8e05e0",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "12514af6-eb5b-47a9-a908-c07e0214c062",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "6ad13e84-b65e-4864-9960-2967935e15cd",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "7f99da5e-24c6-41e3-a735-e9d5e1636c00",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "6cd9b38b-1ffc-49dd-a20e-3cedaff19b96",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "39db9e2f-cd56-4a6b-8c5a-dd50fe828aa7",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "2ec2da36-f144-4cef-8752-606a47cfbc09",
+      "result_id": "bbd64167-e82d-4910-bd05-3940620f185e"
+    },
+    {
+      "claim_id": "af7fc95d-4efb-49a7-a700-fca62710ddb5",
+      "result_id": "1146b634-2799-4ae7-9e69-c64136116a0a"
+    },
+    {
+      "claim_id": "bbbde7ae-1a8e-4523-8d1a-cd72caf6a337",
+      "result_id": "1146b634-2799-4ae7-9e69-c64136116a0a"
+    },
+    {
+      "claim_id": "a1b7ef90-c2d8-474a-9673-a5fd5726d3a7",
+      "result_id": "1146b634-2799-4ae7-9e69-c64136116a0a"
+    },
+    {
+      "claim_id": "f0f76429-9222-48b9-bf19-09a283604ce8",
+      "result_id": "1146b634-2799-4ae7-9e69-c64136116a0a"
+    },
+    {
+      "claim_id": "6de13f05-2eee-4566-b55e-315c687e8cf4",
+      "result_id": "1146b634-2799-4ae7-9e69-c64136116a0a"
+    },
+    {
+      "claim_id": "d89d1a7b-a578-41c0-be18-caa7cb1d5e25",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "100dc386-bd84-4b1e-8bfc-00582ef4e766",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "3e6f8b37-b470-4df1-af5b-98db590ded92",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "484f5185-8161-429f-a7bb-67029038b4ed",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "b017cfa9-d23e-4a0b-bab0-07e9457fefb0",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "fed99b54-3cca-4659-a3c5-9ec5b090bebc",
+      "result_id": "3efa7459-a750-4b50-b0ee-d5670d588aa0"
+    },
+    {
+      "claim_id": "233984e4-8099-4823-b236-4836b942a7d3",
+      "result_id": "00e5c7ba-1042-4eff-bd80-f2049f763f3b"
+    },
+    {
+      "claim_id": "ad43777a-db1b-4379-bd43-0c88fd2c6d8b",
+      "result_id": "00e5c7ba-1042-4eff-bd80-f2049f763f3b"
+    },
+    {
+      "claim_id": "8c1078db-e35b-4092-b48a-3c5bcf52a9a5",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "9c4e2802-9ea3-4c4f-bbd5-9894a68a09bd",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "6561ffe4-2028-4282-b0b9-90fd2ae6e544",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "63a973fd-1a51-45f9-93ce-7b270f5b6bd6",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "eb3525ca-cc4c-4fc4-996e-bb22538c3cbd",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "f807b2b9-09da-4dcd-ac58-0294b2c503ee",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "fd7a318b-064e-421f-b42c-7a91b15dd272",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "c9b3aef1-4d03-4a6a-a596-ced93bbf4666",
+      "result_id": "8efb47f4-421a-4a26-9e63-eb5298f02b0e"
+    },
+    {
+      "claim_id": "97102265-6517-45c1-9f43-a86cb295f7a6",
+      "result_id": "148ee71e-f1e1-4b24-811b-309c760b814f"
+    },
+    {
+      "claim_id": "f2e021f3-2d4f-49af-b600-1b3131c83624",
+      "result_id": "148ee71e-f1e1-4b24-811b-309c760b814f"
+    },
+    {
+      "claim_id": "976fecc2-8fb3-4961-8e82-fbb1b6ba80f0",
+      "result_id": "148ee71e-f1e1-4b24-811b-309c760b814f"
+    },
+    {
+      "claim_id": "7554d83c-7988-4a51-a8d1-6885567b5535",
+      "result_id": "148ee71e-f1e1-4b24-811b-309c760b814f"
+    },
+    {
+      "claim_id": "e9e1dfad-e124-4859-880c-2a7e45af8a55",
+      "result_id": "7874ade3-1bf8-4d0f-bf0e-616cd166eed1"
+    },
+    {
+      "claim_id": "6b88e397-ac43-4b85-86a6-5d0cd1a4afc8",
+      "result_id": "7874ade3-1bf8-4d0f-bf0e-616cd166eed1"
+    },
+    {
+      "claim_id": "16e22650-6b3f-4790-bcae-f7ce925a09c1",
+      "result_id": "7874ade3-1bf8-4d0f-bf0e-616cd166eed1"
+    },
+    {
+      "claim_id": "583853be-b990-4631-bfbc-8bac6fdadd9c",
+      "result_id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81"
+    },
+    {
+      "claim_id": "44940f61-7a8e-4119-9524-191954f965e3",
+      "result_id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81"
+    },
+    {
+      "claim_id": "1a37358b-4868-4243-a6d5-bd2380fd718b",
+      "result_id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81"
+    },
+    {
+      "claim_id": "9076469f-b25f-44d3-8f26-0a3a04b03eab",
+      "result_id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81"
+    },
+    {
+      "claim_id": "be23ebe7-f7d4-4095-9774-62eb1458a730",
+      "result_id": "54d2fbb3-0cf4-4f94-a1cb-483d69ed8d81"
+    },
+    {
+      "claim_id": "513555ee-1f77-48c4-9ae5-2666bc85823e",
+      "result_id": "9973b351-fdb7-4ca9-999f-3a44a69ff937"
+    },
+    {
+      "claim_id": "f6a5a9b8-6200-4dd3-8650-1b34e839c57d",
+      "result_id": "9973b351-fdb7-4ca9-999f-3a44a69ff937"
+    },
+    {
+      "claim_id": "73fdf77a-4ea0-4f6f-b956-198ea368873d",
+      "result_id": "9973b351-fdb7-4ca9-999f-3a44a69ff937"
+    },
+    {
+      "claim_id": "3e29d9b9-0991-4d28-bd27-5b7032311f30",
+      "result_id": "9973b351-fdb7-4ca9-999f-3a44a69ff937"
+    },
+    {
+      "claim_id": "5c82596c-e69e-40e4-961c-59a9536d52d2",
+      "result_id": "9973b351-fdb7-4ca9-999f-3a44a69ff937"
+    },
+    {
+      "claim_id": "10b9d54c-54f9-4eb2-bc5e-6806704b1e14",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "686c6441-2073-4170-bd95-e0a1f6195d33",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "88782568-bb1b-44b3-9b8d-f93809b11323",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "5ca1554e-feeb-4aad-921e-56ecfc8f7776",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "13475e5f-f28f-4777-8491-77ebe766adb9",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "0f320a1f-644f-4182-ab38-3d590ff1f102",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "3834c0c3-9923-4e25-9888-de0d10fcab6e",
+      "result_id": "38245bc0-401c-44e9-81c5-45b3f6c748ce"
+    },
+    {
+      "claim_id": "9c6656df-2054-4508-8957-0bf7aa36b639",
+      "result_id": "7d6e0e4e-09b4-47f2-a1d0-9e97c29f876b"
+    },
+    {
+      "claim_id": "ae6cecd4-8457-4ad3-b90c-dc28bb0f9d80",
+      "result_id": "7d6e0e4e-09b4-47f2-a1d0-9e97c29f876b"
+    },
+    {
+      "claim_id": "6919513d-5151-4b92-9990-84f37564a6d7",
+      "result_id": "7d6e0e4e-09b4-47f2-a1d0-9e97c29f876b"
+    },
+    {
+      "claim_id": "f21544c5-b044-4a59-b61f-2db90c02e9ee",
+      "result_id": "9ac90915-d03b-47a3-a1f2-e6215ee96779"
+    },
+    {
+      "claim_id": "686f86bb-5c1d-488c-a225-604fa2205fc6",
+      "result_id": "9ac90915-d03b-47a3-a1f2-e6215ee96779"
+    },
+    {
+      "claim_id": "9b6848de-ceeb-4a61-82be-ec5bd5f43f7a",
+      "result_id": "569646de-474f-4801-9c49-b51d8a08ed7a"
+    },
+    {
+      "claim_id": "9fdfcd31-20de-4354-961d-469a933eece1",
+      "result_id": "569646de-474f-4801-9c49-b51d8a08ed7a"
+    },
+    {
+      "claim_id": "ca3090ea-ce97-4e56-b7ab-9d4280825baf",
+      "result_id": "72407f5a-eaf5-4c1e-9c53-79b6a71bc2f0"
+    },
+    {
+      "claim_id": "6d6eef4e-d258-4f66-bda2-fc1a03de3db1",
+      "result_id": "72407f5a-eaf5-4c1e-9c53-79b6a71bc2f0"
+    },
+    {
+      "claim_id": "a7242074-e699-4350-9059-6173dd350730",
+      "result_id": "e20435cc-836e-4a60-9a6c-3717145acc39"
+    },
+    {
+      "claim_id": "2aaee500-fe00-4597-8fcc-87b1fbdcb653",
+      "result_id": "e20435cc-836e-4a60-9a6c-3717145acc39"
+    },
+    {
+      "claim_id": "3fb1331d-7a3f-4a83-8ad0-4acc6acfbc1f",
+      "result_id": "e20435cc-836e-4a60-9a6c-3717145acc39"
+    },
+    {
+      "claim_id": "28041b5b-598d-4382-8924-0a1bbdff7e86",
+      "result_id": "272f941a-5d1d-4c21-bc9a-2d5ef5db84ef"
+    },
+    {
+      "claim_id": "186504df-370b-4cc7-9749-19eb3fbbcf90",
+      "result_id": "272f941a-5d1d-4c21-bc9a-2d5ef5db84ef"
+    },
+    {
+      "claim_id": "380c7031-5b69-47ce-b868-987489fccacb",
+      "result_id": "272f941a-5d1d-4c21-bc9a-2d5ef5db84ef"
+    },
+    {
+      "claim_id": "ce1de48c-f3ef-4e4d-827c-dae489fade29",
+      "result_id": "b6ce8a62-560d-4dd7-9d8e-8705762b129d"
+    },
+    {
+      "claim_id": "8ca23320-8e40-459a-9a7b-8aae8e452365",
+      "result_id": "b6ce8a62-560d-4dd7-9d8e-8705762b129d"
+    },
+    {
+      "claim_id": "06979f55-0bb6-4843-8030-59552863a1e5",
+      "result_id": "95494965-de9b-4c2d-bbc9-53f5bc57a399"
+    },
+    {
+      "claim_id": "21d5021d-fd21-495d-9b56-48448bc1e58e",
+      "result_id": "95494965-de9b-4c2d-bbc9-53f5bc57a399"
+    },
+    {
+      "claim_id": "f94fda87-a41d-4aba-a731-c84a7cc833a3",
+      "result_id": "95494965-de9b-4c2d-bbc9-53f5bc57a399"
+    },
+    {
+      "claim_id": "33a0f4b2-2313-4b4f-9bc0-480bb4429d0a",
+      "result_id": "95494965-de9b-4c2d-bbc9-53f5bc57a399"
+    },
+    {
+      "claim_id": "e1714b0c-a8a3-4b0e-9275-958823353bbb",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "74d7dba7-dff8-463b-8234-fcbdd2052808",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "7585005a-2dfd-4381-8127-e6a59f1f5f18",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "b17de72a-84b3-4329-b2e7-771096d210e8",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "639bd138-7a25-4dbb-ba27-b066349b9b89",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "452e1b8d-2e3d-4c11-866f-8ab9ef5714bd",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "3eda7404-21a4-47c9-803c-7a65e6ac55ed",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "165f2faa-4adf-4881-84b6-3ee63f958ffe",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    },
+    {
+      "claim_id": "370cab87-d31a-49cd-86a6-e36401ab6ac6",
+      "result_id": "61aa9072-8365-4bed-8392-f4913c5f3100"
+    }
+  ],
+  "comparisons": []
+}

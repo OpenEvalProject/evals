@@ -1,0 +1,1556 @@
+{
+  "submission": {
+    "id": "1a60caea-9141-4760-b1a3-0775a82c22a6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:25:08.932092Z",
+    "updated_at": "2025-11-30T20:25:08.932092Z"
+  },
+  "content": [
+    {
+      "id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "submission_id": "1a60caea-9141-4760-b1a3-0775a82c22a6",
+      "content_type": "manuscript",
+      "content_text": "# Physical limits to magnetogenetics\n\n## Authors\n\n- Markus Meister<sup>1</sup> ([ORCID: 0000-0003-2136-6506](https://orcid.org/0000-0003-2136-6506)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThis is an analysis of how magnetic fields affect biological molecules and cells. It was prompted by a series of prominent reports regarding magnetism in biological systems. The first claims to have identified a protein complex that acts like a compass needle to guide magnetic orientation in animals (Qin et al., 2016). Two other articles report magnetic control of membrane conductance by attaching ferritin to an ion channel protein and then tugging the ferritin or heating it with a magnetic field (Stanley et al., 2015; Wheeler et al., 2016). Here I argue that these claims conflict with basic laws of physics. The discrepancies are large: from 5 to 10 log units. If the reported phenomena do in fact occur, they must have causes entirely different from the ones proposed by the authors. The paramagnetic nature of protein complexes is found to seriously limit their utility for engineering magnetically sensitive cells.\n\n## Introduction\n\nThere has been renewed interest recently in the effects of magnetic fields on biological cells. On the one hand we have the old puzzle of magnetosensation: How do organisms sense the Earth\u2019s magnetic field for the purpose of navigation? The biophysical basis for this ability is for the most part unresolved. On the other hand lies the promise of 'magnetogenetics': the dream of making neurons and other cells responsive to magnetic fields for the purpose of controlling their activity with ease. The two are closely linked, because uncovering Nature\u2019s method for magnetosensation can point the way to effectively engineering magnetogenetics.\n\nThe physical laws by which magnetic fields act on matter are taught to science students in college (Feynman et al., 1963). Obviously those principles impose some constraints on what biological mechanisms are plausible candidates, for both magnetosensation and magnetogenetics. A recent spate of high-profile articles has put forward audacious proposals in this domain without any attempt at such reality checks. My goal here is to offer some calculations as a supplement to those articles, which makes them appear in a rather different light. These arguments should also help in evaluating future hypotheses and in engineering new molecular tools.\n\n## Results\n\n### A molecular biocompass?\n\nGenerally speaking, magnetic fields interact only weakly with biological matter. The reason magnetic fields are used for whole-body medical imaging, and why they have such appeal for magnetogenetics, is that they penetrate through tissues essentially undisturbed. The other side of this coin is that evolution had to develop rather special mechanisms to sense a magnetic field at all, especially one as weak as the Earth\u2019s field.\n\nThis mechanism is well understood in just one case: that of magnetotactic bacteria (Bazylinski and Frankel, 2004). These organisms are found commonly in ponds, and they prefer to live in the muck at the bottom rather than in open water. When the muck gets stirred up they need to return to the bottom, and they accomplish this by following the magnetic field lines down. For that purpose, the bacterium synthesizes ferrimagnetic crystals of magnetite and arranges them in a chain within the cell. This gives the bacterium a permanent magnetic moment, and allows it to act like a small compass needle. The cell\u2019s long axis aligns with the magnetic field and flagella in the back of the cell propel it along the field lines. It has been suggested that magnetosensation in animals similarly relies on a magnetite mechanism, for example by coupling the movement of a small magnetic crystal to a membrane channel (Kirschvink et al., 2001). A competing proposal for magnetosensation suggests that the magnetic field acts on single molecules in certain biochemical reactions (Ritz et al., 2010). In this so-called 'radical pair mechanism' the products of an electron transfer reaction depend on the equilibrium between singlet and triplet states of a reaction intermediate, and this equilibrium can be biased by an applied magnetic field. These two hypotheses and their respective predictions for magnetosensation have been reviewed extensively (Johnsen and Lohmann, 2005; Kirschvink et al., 2010).\n\nOn this background, a recent article by Qin et al. (2016) introduces a new proposal. As for magnetotactic bacteria, the principle is that of a compass needle that aligns with the magnetic field, but here the needle consists of a single macromolecule. This putative magnetic receptor protein was isolated from the fruit fly and forms a rod-shaped multimeric complex that includes 40 iron atoms. The authors imaged individual complexes by electron microscopy on a sample grid. They claim (1) that each such rod has an intrinsic magnetic moment, and (2) that this moment is large enough to align the rods with the earth\u2019s magnetic field: \u201cabout 45% of the isolated rod-like protein particles oriented with their long axis roughly parallel to the geomagnetic field\u201d. We will see that neither claim is plausible based on first principles:\n\n#### Could the protein complex have a permanent dipole moment?\n\nThe smallest iron particles known to have a permanent magnetic moment at room temperature are single-domain crystals of magnetite (Fe3O4), about 30 nm in size (Dunlop, 1972). Those contain about 1 million iron atoms, closely packed to produce high exchange interaction, which serves to coordinate their individual magnetic moments (Feynman et al., 1963; Ch 37). The protein complex described by Qin et al. (2016) contains only 40 Fe atoms, and those are spread out over a generous 24 nm. There is no known mechanism by which these would form a magnetic domain and thus give the complex a permanent magnetic moment. Despite intense interest in making single-molecule magnets, their blocking temperature \u2013 above which the magnetic moment fluctuates thermally \u2013 is still below 14 degrees Kelvin (Demir et al., 2015). So the amount of iron in this putative molecular compass seems too small by about 5 log units.\n\n#### Could individual complexes align with the earth's field?\n\nLet us suppose generously that the 40 Fe atoms could in fact conspire \u2013 by a mechanism unknown to science \u2013 to align their individual spins perfectly, and to make a single molecule with a permanent magnetic moment at room temperature. How well would this miniature compass needle align with the earth\u2019s magnetic field? This is a competition between the magnetic force that aligns the particle and thermal forces that randomize its orientation. What is that balance?\n\nAn atom with n unpaired electrons has an effective magnetic moment of\n\n$$\n\\mu_{eff}=\\sqrt{n(n+2)}\\mu_{B},\n$$\n\nwhere (In the spirit of order-of-magnitude calculations, I will use single-digit precision for all quantities)\n\n$$\n\\mu_{B}=Bohrmagneton=9\\times10^{\u221224}\\frac{J}{T},\n$$\n\nFor iron atoms, n is at most 5, and a complex of 40 aligned Fe atoms would therefore have a magnetic moment of at best\n\n$$\nm=40\\times\\sqrt{5(5+2)}\\mu_{B}=2\\times10^{\u221221}\\frac{J}{T}.\n$$\n\nThe interaction energy of that moment with the earth's field (about 50 \u00b5T) is at most\n\n$$\nm\u00a0B_{Earth}=1\\times10^{\u221225}J.\n$$\n\nMeanwhile the thermal energy per degree of freedom is\n\n$$\nk\u00a0T=4\\times10^{\u221221}J.\n$$\n\nThe ratio between those is\n\n$$\n\\frac{m\u00a0B_{Earth}}{k\u00a0T}=2\\times10^{\u22125}.\n$$\n\nThat is the degree of alignment one would expect for the protein complex. Instead, the authors claim an alignment of 0.45. Again, this claim exceeds by about 5 log units the prediction from basic physics, even allowing for an unexplained coordination of the 40 Fe spins. Clearly the reported observations must arise from some entirely different cause, probably unrelated to magnetic fields.\n\n### An ion channel gated by magnetic force?\n\nWith the goal of controlling the activity of neurons, Wheeler et al. (2016) reported the design of a molecular system intended to couple magnetic fields to ionic current across the cell membrane. Their single-component protein consists of a putative mechano-sensitive cation channel (TRPV4) fused on the intracellular face to two subunits of ferritin. The hope was that \u201cthe paramagnetic protein would enable magnetic torque to tug open the channel to depolarize cells\u201d. Indeed, the report includes experimental results from several preparations suggesting that neural activity can be modulated by static magnetic fields (There is a similar claim in Stanley et al. (2015); but the evidence is scant and hard to interpret: only 18 of ~2000 cells 'responded' (their Supplementary Figure 10)). What could be the underlying biophysical mechanism?\n\nFerritin is a large protein complex with 24 subunits that forms a spherical shell about 12 nm in diameter. Wheeler et al. (2016) suppose optimistically that the two subunits of ferritin attached to the channel protein are able to nucleate an entire 24-subunit ferritin complex. The hollow core of this particle can be filled with iron in the form of a ferric hydroxide (Arosio et al., 2009). At room temperature ferritin has no permanent magnetization: it is strictly paramagnetic or superparamagnetic (Papaefthymiou, 2010). Unlike the magnetite particles in magnetotactic bacteria, the iron core of ferritin is too small (~5 nm) to sustain a permanent dipole moment (blocking temperature ~40 K). Instead the direction of the Fe spins in the core fluctuates thermally. An external magnetic field biases these fluctuations, producing a magnetic moment $m$ proportional to the field $B$ of\n\n$$\nm=\u00a0\u03beB,\n$$\n\nwhere $\u03be$ is the magnetizability of a ferritin particle. This quantity can be derived from bulk measurements of ferritin magnetic susceptibility (see Methods) at\n\n$$\n\u03be=2.4\\times10^{\u221222}\\frac{J}{T^{2}}.\n$$\n\nI will consider four scenarios by which such a ferritin particle might be manipulated with an external magnetic field. In the first, the magnetic field has a gradient, and the particle is pulled in the direction of higher field strength. In the second, the force arises from interactions among neighboring ferritins through their induced magnetic moments. In the third, the magnetic field exerts a torque assuming that the ferritin core is anisotropic, with a preferred axis of magnetization. Finally, the collective pull of many ferritins on the cell membrane may induce a stress that opens stretch-activated channels.\n\n#### A magnetic field gradient pulls on ferritin (Figure 1a)\n\nParamagnetic particles experience a force that is proportional to the magnetic field gradient and the induced magnetic moment (Feynman et al., 1963; Ch 35; Pankhurst et al., 2003). In the experiments of Wheeler et al. (2016) the field strength was ~0.05 T and the field gradient ~6.6 T/m (their Supplementary Figure 2). What is the resulting force on a ferritin particle?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17210/elife-17210-fig1-v3.jpg)\n\n**Figure 1.:** The magnetic field B induces a moment m in the ferritin core, leading to a force F or a torque N on the ferritin particle, and resulting forces tugging on the channel. See text for details.\n\nThe interaction energy between the moment and the magnetic field is\n\n$$\nU=\u2212\\frac{1}{2}mB,\n$$\n\nwhere the factor of $1/2$ arises because the moment $m$ is in turn induced by the field (Jackson, 1998; Ch 5.16). The force produced by the field gradient is the spatial derivative of that energy, namely\n\n$$\nF_{1}=\u2212\\frac{d}{dx}U=\u03be\u00a0B\\frac{dB}{dx}=2\\times10^{\u221222}\\times0.05\\times7N=7\\times10^{\u221223}N.\n$$\n\nThis would be the force exerted by one ferritin complex on its linkage under the reported experimental conditions.\n\nHow does this compare to the force needed to open an ion channel? That has been measured directly for the force-sensitive channels in auditory hair cells (Howard and Hudspeth, 1988), and amounts to about $2\\times10^{\u221213}N$. So this mechanism for pulling on ferritin seems at least 9 log units too weak to provide an explanation.\n\n#### Two ferritins pull on each other (Figure 1b)\n\nAs proposed by Davila et al. (2003), neighboring paramagnetic particles linked to the cell membrane could tug on each other by the interaction between their magnetic moments, rather than by each being drawn into a magnetic field gradient. If the field is oriented parallel to the cell membrane, then nearby ferritins will have induced magnetic moments that are collinear and thus attract each other. If the field is perpendicular to the membrane their magnetic moments will repel (Figure 1b). These dipole-dipole interactions decline very rapidly with distance. For example, in the attractive configuration the force between two dipoles of equal magnetic moment $m$ at distance $d$ is given by\n\n$$\nF=\\frac{3\\mu_{0}}{2\\pi}\u00a0\\frac{m^{2}}{d^{4}},\n$$\n\nwhere\n\n$$\n\\mu_{0}=4\\pi\\times10^{\u22127}\u2009\\frac{N}{A^{2}}\n$$\n\nis the vacuum permeability. The strongest interaction will be between two ferritins that are nearly touching, so that $d=2R=12nm$. In that situation one estimates that\n\n$$\nF_{2}=\\frac{3\\mu_{0}}{2\\pi}\u00a0\\frac{(\u03be\u00a0B)^{2}}{(2R)^{4}}=3\\times10^{\u221221}N.\n$$\n\nUnfortunately we are again left with an exceedingly tiny force, about 8 log units weaker than the gating force of the hair cell channel.\n\nWhat if the mechano-sensitive channel used in this study is simply much more sensitive to tiny forces than the channel in auditory hair cells? An absolute limit to sensitivity is given by thermal fluctuations. Whatever molecular linkage the ferritin is pulling on, it needs to provide at least kT of energy to that degree of freedom to make any difference over thermal motions. Because of the steep distance dependence, the force between ferritins drops dramatically if they move just one radius apart. The free energy gained by that motion compared to the thermal energy is approximately\n\n$$\n\\frac{F_{2}R}{k\u00a0T}=\\frac{3\\times10^{\u221221}\\times6\\times10^{\u22129}}{4\\times10^{\u221221}}=4\\times10^{\u22129},\n$$\n\nagain 8 log units too small to have any noticeable effect.\n\n#### The magnetic field exerts a torque on the ferritin (Figure 1c)\n\nAlthough at room temperature ferritin has no permanent magnetic moment, its induced moment may exhibit some anisotropy. In general this means that the iron core is more easily magnetized in the 'easy' direction than orthogonal to it. For example, this may result from an asymmetric shape of the core. While the exact value of that anisotropy is unknown, we can generously suppose it to be infinite, so the ferritin particle has magnetizability $\u03be$ in one direction and zero in the orthogonal directions. Thus the induced magnetic moment may point at an angle relative to the field (Figure 1c), resulting in a torque on the ferritin particle that could tug on the linkage with the channel protein.\n\nHowever, the magnitude of such effects is again dwarfed by thermal fluctuations: The interaction energy between the moment and a magnetic field pointing along the easy axis is\n\n$$\nU_{\u2225}=\u2212\\frac{1}{2}mB=\u2212\\frac{1}{2}\u03be\u00a0B^{2}=\u22123\\times10^{\u221225}J\n$$\n\nand zero with the field orthogonal. This free energy difference is about 4 log units smaller than the thermal energy. Following the same logic as for Qin et al\u2019s compass needle, the magnetic field can bias the alignment of the ferritins by only an amount of 10\u20134. Another way to express this is that any torque exerted by the ferritin on its ion channel linkage will be 10,000 times smaller than the thermal fluctuations in that same degree of freedom.\n\n#### Many ferritins exert a stress that gates mechanoreceptors in the membrane (Figure 1d)\n\nPerhaps the magnetic responses are unrelated to the specific linkage between ferritin and a channel protein. Instead one could imagine that a large number of ferritins exert a collective tug on the cell membrane, deforming it and opening some stress-activated channels in the process. The membrane stress required to gate mechanoreceptors has been measured directly by producing a laminar water flow over the surface of a cell: For TRPV4 channels it amounts to ~20 dyne/cm2 (Soffe et al., 2015); for Piezo1 channels ~50 dyne/cm2 (Ranade et al., 2014). Suppose now that the membrane is decorated with ferritins attached by some linkage, and instead of viscous flow tugging on the surface one applies a magnetic field gradient to pull on those ferritins with force $F_{1}$ (Equation 10). The density of ferritins one would need to generate the required membrane stress is\n\n$$\n\\frac{20dyn/cm^{2}}{7\\times10^{\u221223}N}=3\\times10^{10}\\frac{ferritins}{\\mum^{2}}\n$$\n\nUnfortunately, even if the membrane is close-packed with ferritin spheres, one could fit at most $10^{4}$\u00a0on a square micron. So this hypothetical mechanism produces membrane stress at least 6 log units too weak to open any channels.\n\n### An ion channel gated by magnetic heating?\n\nFor a different mode of activating membrane channels, Stanley et al. (2015) combined the expression of ferritin protein with that of the temperature-sensitive membrane channel TRPV1. The hope was that a high-frequency magnetic field could be used to heat the iron core of ferritin, leading to a local temperature increase sufficient to open the TRPV1 channels, allowing cations to flow into the cell. Stanley et al. (2015) compared three different options for interaction between the ion channels in the plasma membrane and the ferritin protein: In one case the ferritin was expressed in the cytoplasm, in another it was targeted to the membrane by a myristoyl tail, and in the third it was tethered directly to the channel protein by a camelid antibody linkage. The direct one-to-one linkage between ferritin and ion channel worked best for generating Ca influx via high-frequency magnetic fields, leading the authors to conclude that \u201cBecause temperature decays as the inverse distance from the particle surface, heat transfer is likely to be most efficient for this construct, suggesting that heat transfer from the particle could be limiting the efficiency of the other constructs.\u201d Here I consider whether heat transfer from the ferritin particle is a likely source of thermal activation for the TRPV1 channel at all.\n\nMagnetic heating of nanoparticles is indeed a very active area of research (Pankhurst et al., 2003). A sample biomedical application is to inject nanoparticles into cancerous tissue, and then damage the tumor selectively by magnetic heating (Hergt et al., 2006; Maier-Hauff et al., 2011). Typical nanoparticles of interest are made of magnetite or maghemite, sometimes doped with other metals, and measure some tens of nanometers in size (Hergt et al., 2006). A typical heating apparatus for small preparations \u2013 like in the experiments of Stanley et al. (2015) \u2013 consists of an electric coil with a few windings, several centimeters in diameter, that carries a large oscillating current. The magnetic fields generated inside the coil are on the order of tens of kA/m at frequencies of several 100 kHz (The literature sometimes refers misleadingly to heating by \u201cradio waves\u201d or \u201celectromagnetic radiation\u201d. At these frequencies the wavelength of a radio wave is about a kilometer, so of no practical relevance to the experiments. There is no radiation involved in the interaction between the solenoid coil and the nanoparticle).\n\nOwing to the small size of the nanoparticles, the physics of heating are quite different from the processes in our kitchen. A microwave oven heats water primarily by flipping molecular dipoles in an oscillating electric field. And an induction stove works by inducing electric eddy currents in the pot\u2019s bottom with an oscillating magnetic field. Neither of these electric effects plays any role for nanoparticles. Instead the heat is generated purely by magnetic forces (Hergt et al., 2006). Part of this comes from reorienting the magnetization of the material at high frequency, which is opposed by the particle\u2019s magnetic anisotropy, causing dissipation and heat. For larger nanoparticles, the oscillating magnetic field may also make the particle move, with resulting dissipation from external friction in the surrounding medium. These physical processes have been modeled in great detail, and there is a large experimental literature to determine the heating rates that can be accomplished with different kinds of nanoparticles. A figure of merit is the \u201cspecific loss power (SLP)\u201d, namely the heating power that can be generated per unit mass of the magnetic material (see Materials\u00a0and\u00a0methods). What sort of heating rate would we expect for the ferritin particles used by Stanley et al. (2015)?\n\nGiven the long-standing interest in ferritin for medical engineering (Babincova et al., 2000), the extensive research on its magnetic properties (Papaefthymiou, 2010), and the ease with which magnetic heating can be measured, it is surprisingly difficult to find any published evidence for magnetic heating in ferritin. One report on the subject concludes simply that there is none: ferritin shells reconstituted with a magnetite core produced no measurable magnetic heating (SLP < 0.1 W/g), whereas doping the iron with varying amounts of cobalt did produce some modest heating rates (Fantechi et al., 2014). Why is native ferritin such a poor heater? Both theory and experiment show that the efficiency of heating magnetic nanoparticles depends strongly on the particle size, and plummets steeply below 10 nm (Fortin et al., 2007; Purushotham and Ramanujan, 2010). Magnetite particles smaller than 8 nm are not considered useful for magnetic hyperthermia (Fantechi et al., 2015). The iron core of ferritin measures only 5\u20136 nm in diameter. Furthermore, the ferric hydroxide material in native ferritin has much lower magnetic susceptibility than magnetite (~8-fold, Zborowski et al., 1996).\n\nSo, based on the literature, the heating rate for ferritin is too low to be measurable. Obviously this casts doubt on the claims of Stanley et al. (2015) that they activated ion channels through heating ferritin. For the sake of keeping the argument alive, and to evaluate potential future developments, let us instead suppose that ferritin could be engineered to produce a specific heating rate of\n\n$$\nP=30\\frac{W}{g\u00a0of\u00a0metal}\n$$\n\nThis is the highest value obtained by filling the ferritin shell with cobalt-doped magnetite (Fantechi et al., 2014) and thus a generous estimate of what might be accomplished by future engineering of ferritin complexes inside cells. Assuming this specific heating rate, a single ferritin particle with 2400 iron atoms generates heat at a rate of\n\n$$\nQ=7\\times10^{\u221218}W\n$$\n\nThis heat flux will produce a temperature gradient in the surrounding medium (Figure 2).\u00a0As Stanley et al. (2015) state, the temperature indeed decays as the inverse distance $r$ from the particle (Feynman et al., 1963, Ch 12), namely\n\n$$\nT(r)=\\frac{Q}{4\\pi\u03ba}\\frac{1}{r}\n$$\n\nwhere\n\n$$\n\u03ba=0.61\u00a0\\frac{W}{m\u22c5K}\n$$\n\nis the thermal conductivity of water. Right at the surface of the ferritin sphere the temperature increase is highest, namely\n\n$$\nT_{ferritin}=T(6\u00a0nm)=1.5\\times10^{\u221210}K\n$$\n\nThis is a very tiny increase. Activation of a TRPV1 channel requires about 5 K of increase relative to body temperature (Cao et al., 2013). So the temperature increase expected, even from a futuristic optimized ferritin, is more than 10 orders of magnitude too small.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17210/elife-17210-fig2-v3.jpg)\n\n**Figure 2.:** The same argument applies to a ferritin sphere heated from its magnetic core (top) and a spherical cell with a large number of heated ferritins on its surface (bottom).\n\nThe assumption underlying Equation (19) is that thermal transport from the magnetic particle to the surrounding medium follows Fourier\u2019s Law, in which the heat flux is proportional to the temperature gradient. This is a good approximation, as long as the length scales of the problem are large compared to the mean free path of the heat carriers, which are phonons in the current problem. In water, the phonon mean free path is ~0.3 nm, about the size of a water molecule (Rabin, 2002). Indeed, all the relevant dimensions are at least 10-fold larger than that, namely the size of the ferritin particle, the size of the ion channel protein, and the distance from ferritin to ion channel. One therefore expects that non-Fourier heat transport will make only small corrections to the above results, on the order of 10% or less (Chen, 1996).\n\nAnother effect resulting from thermal physics at small scales is the thermal resistance to heat flow at the boundary between two materials. A given heat flux across the boundary will produce a discontinuous step in temperature between the two materials. How large is this step for heated nanoparticles? Ge et al. (2004) followed thermal transfer between a metal nanoparticle with organic coating and the surrounding water, and observed a thermal conductance of\n\n$$\nG=2\\times10^{8}\\frac{W}{m^{2}\u22c5K},\n$$\n\nlargely independent of particle size. With the heat flux produced by our ferritin particle the resulting temperature step would be\n\n$$\n\u0394T_{ferritin}=\\frac{Q}{4\\piR^{2}}\\frac{1}{G}=7\\times10^{\u221211}K.\n$$\n\nAgain, an exceedingly tiny contribution.\n\nIt appears that there is no possibility of raising the temperature by several degrees near a single nanoparticle, even if the heating rate were 1000-fold higher. While there have been isolated reports of such magnetic heating effects near synthetic nanoparticles (Huang et al., 2010; Riedinger et al., 2013; Pi\u00f1ol et al., 2015), they have met a good amount of skepticism. As has been pointed out repeatedly, there is no known physical mechanism for such an effect (Rabin, 2002; Keblinski et al., 2006; Gupta et al., 2010), and it has been suggested that the underlying methods of thermometry should be reevaluated (Dutz and Hergt, 2013; 2014).\n\nMoving on from single-particle heating one may ask whether the many other ferritins expressed on the same cell, though they are at greater distance, might contribute to heating the local environment. Suppose one can express $N_{ferritins}=10,000$\u00a0TRPV1-ferritin complexes on the surface of a spherical cell with $r_{cell}=5\\mum$\u00a0radius. That is about 10-fold the natural expression level in sensory neurons. One can treat the heat production of those 10,000 ferritins as distributed evenly over the surface of the cell. Then the temperature gradient outside the cell again follows a 1/r profile (Figure 2). At the surface of the cell the resulting temperature increase will be\n\n$$\nT_{cell}=\\frac{Q\u00a0N_{ferritins}}{4\\pi\u00a0\u03ba\u00a0r_{cell}}=1.7\\times10^{\u22129}K\n$$\n\nUnfortunately this is still too low by 9 orders of magnitude. So one cannot achieve activation of single neurons this way, which is of course a central goal of genetically expressed activators.\n\nSuppose now that one expresses this number of ferritin-TRPV1 complexes on every neuron in the brain. Would that perhaps be sufficient to heat the entire organ? At that density, the heating rate per unit mass of brain will be\n\n$$\nP_{brain}=\\frac{Q\u00a0N_{ferritins}}{\\frac{4}{3}\\pi\u00a0\u00a0r_{cell}^{3}}\\frac{1}{\u03c1_{brain}}=1.2\\times10^{\u22124}\\frac{W}{g},\n$$\n\nwhere $\u03c1_{brain}=1.03\u00a0g/cm^{3}$ is the specific density. For comparison, the resting metabolic rate of brain tissue is ~$1.2\\times10^{\u22122}\u00a0W/g$, and the resulting heat is carried away and regulated by the processes that keep the organ\u2019s temperature stable. Heating of ferritin throughout the entire brain would therefore contribute only a 1% increase to the heat already being generated from basal activity: this will not overwhelm the homothermic regulation mechanisms sufficiently to open TRPV1 channels.\n\nIn summary, it seems very unlikely that the effects reported in Stanley et al. (2015) have anything to do with heating ferritin. The available evidence says that native ferritin produces no measurable magnetic heating at all. Even if we ignore that and assume a generous heating rate, namely the largest reported using a custom metal alloy for the ferritin core, the resulting effects are too small to matter by enormous factors of 1010 (single-channel activation) and 109 (for single-neuron activation).\n\n## Discussion\n\nThe calculations presented here evaluate the mechanisms that might underlie recent observations on a molecular compass (Qin et al., 2016) and neural activation with static magnetic fields (Wheeler et al., 2016) or high-frequency magnetic fields (Stanley et al., 2015). These calculations show that none of the biophysical schemes proposed in these articles is even remotely plausible, and a few additional proposals were eliminated along the way. The forces or torques or temperatures they produce are too small by many orders of magnitude for the desired effects on molecular orientation or on membrane channels. If the phenomena occurred as described, they must rely on some entirely different mechanism. Barring dramatic new discoveries about the structure of biological matter, the proposed routes to magnetogenetics, based on either pulling or heating a ferritin/channel complex with magnetic fields, have no chance of success.\n\nOne does have to ask why none of these authors attempted a back-of-the-envelope estimate to bolster the claims in their papers. Neither, it seems, did the referees who reviewed the manuscripts, nor the authors of three pieces that heralded these articles (Leibiger and Berggren, 2015; Lewis, 2016; Lohmann, 2016). Why is it important to do so? First of all, claims that violate the known laws of physics often turn out to be wrong (Maddox et al., 1988). There is, of course, always a small chance of discovering new physics, but only if one understands what the old physics predicts and recognizes the discrepancy. If any of the claims in these articles were substantiated \u2013 a room-temperature molecular magnet or measurable forces and heating from ferritin \u2013 their implications for our basic understanding of nanoscale matter would far outweigh their biological significance.\n\nMore importantly though, calculations are most useful when done ahead of time, to guide the design of experiments. For example, Stanley et al. (2015) and Wheeler et al. (2016) evoke an image in which the magnetic field pulls on the ferritin particles. This is possible only if the magnetic field has a strong gradient (Figure 1a, Equation 10). None of their experiments on animals were designed to produce a strong gradient, nor do the articles report what it was. It is in fact possible to pull on cells that express lots of ferritin, and this has been exploited for magnetic separation (Owen and Lindsay, 1983). It requires very high magnetic fields, and separation columns with a meshwork of fine steel fibers that produce strong gradients on a microscopic scale. Inserting such a wire mesh into the brain would of course negate the goal of non-invasive control.\n\nTwo other hypothetical mechanisms for the ferritin effects require a strong field but no gradient. This would be of great experimental value, because a homogeneous magnetic field could then deliver the same control signal throughout an extended volume, like the brain of a mouse. Among these, the dipole interaction between ferritins (Figure 1b, Equation 14) offers little hope. Even with a 100-fold larger field (5 T), these forces are still 4 log units too small to open a channel. That field strength represents a practical limit: Small movements of the animal, or switching of the field, will cause inductive eddy currents that activate the brain non-specifically, a phenomenon experienced also by MRI subjects (Schenck et al., 1992).\n\nOn the other hand, exploiting anisotropy of the ferritin particle (Figure 1c, Equation 15) may be within range of utility. A 100-fold larger field could produce torque comparable with the thermal energy, which when applied to thousands of channels might have a noticeable effect on membrane currents. To enhance the shape anisotropy of the magnetic particles, perhaps one could engineer the ferritin shell into an elongated shape. More fundamentally, it is clear that the weak effects computed here are a consequence of ferritin\u2019s paramagnetism. A particle with a permanent magnetic moment, such as the magnetosomes made by bacteria (Bazylinski and Frankel, 2004), could exert much larger forces, torques, and temperatures (Hergt et al., 2006), and may offer a physically realistic route to magnetogenetics.\n\nWith an eye towards such future developments, it is unfortunate that these three questionable claims were published, especially in high-profile journals, because that discourages further innovation. Now that the prize for magnetogenetics has seemingly been taken, what motivates a young scientist to focus on solving the problem for real? There is an important function here for post-publication peer review: It can make up for pre-publication failures and thus reopen the claimed intellectual space for future pioneers.\n\n## Materials and methods\n\n### Magnetizability of native ferritin\n\nCentral to the arguments about magnetogenetics is the proportionality factor $\u03be$ between the magnetic moment $m$ of a single ferritin molecule and the magnetic field $B$,\n\n$$\nm=\u00a0\u03beB.\n$$\n\nExperimental measurements are usually performed on bulk samples of ferritin and report the magnetic susceptibility $\u03c7$, defined by\n\n$$\nM=\u00a0\u03c7H=\u03c7B/\\mu_{0},\n$$\n\nwhere $M$ is the magnetization of the material, namely the magnetic moment per unit volume, and\n\n$$\n\\mu_{0}=4\\pi\\times10^{\u22127}\\frac{N}{A^{2}}\n$$\n\nis the vacuum permeability. Therefore\n\n$$\n\u03be=\\frac{\u03c7}{\u03c1\\mu_{0}},\n$$\n\nwhere $\u03c1$ is the number of ferritin particles per unit volume. In practice, we will see that the reported measurements of magnetization are more often normalized by the iron content of the sample or by the mass, rather than by volume. Then the choice of $\u03c1$ must be adjusted accordingly.\n\n### Magnetic heating of nanoparticles\n\nTable 1 summarizes some published measurements on magnetic heating of small nanoparticles with diameter below 10 nm. The loss power per unit mass (SLP) depends on the apparatus used for heating. Over the range of conditions considered here, a good approximation is that SLP varies proportionally to the frequency of the alternating magnetic field and to the square of the field strength (Hergt et al., 2004). The table therefore corrects all the SLP numbers to the conditions used by Stanley et al. (2015): field strength H=B/\u03bc0=25.5kA/m and frequency f=465kHz.\n\n**Table 1.**\n Published measurements of specific loss power (SLP) for various magnetic particles of diameter d, taken at a magnetic field strength H and frequency f. The values in the column \u201cSLP corr\u201d are corrected for the field and frequency used by Stanley et al. (2015).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reference</th>\n      <th>Material</th>\n      <th>d [nm]</th>\n      <th>H [kA/m]</th>\n      <th>f [kHz]</th>\n      <th>SLP [W/g]</th>\n      <th>SLP corr [W/g]</th>\n      <th>Notes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Fortin et al. (2007)</td>\n      <td>Fe2O3</td>\n      <td>5.3</td>\n      <td>24.8</td>\n      <td>700</td>\n      <td>4</td>\n      <td>2.8</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fortin et al. (2007)</td>\n      <td>Fe2O3</td>\n      <td>6.7</td>\n      <td>24.8</td>\n      <td>700</td>\n      <td>14</td>\n      <td>10</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fortin et al. (2007)</td>\n      <td>Fe2O3</td>\n      <td>8</td>\n      <td>24.8</td>\n      <td>700</td>\n      <td>37</td>\n      <td>26</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fantechi et al. (2015)</td>\n      <td>Fe3O4</td>\n      <td>8</td>\n      <td>12</td>\n      <td>183</td>\n      <td>6.5</td>\n      <td>75</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hergt et al. (2004)</td>\n      <td>Fe2O3</td>\n      <td>7</td>\n      <td>15</td>\n      <td>410</td>\n      <td>15</td>\n      <td>49</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fantechi et al. (2014)</td>\n      <td>ferritin with Fe3O4</td>\n      <td>6</td>\n      <td>12.4</td>\n      <td>183</td>\n      <td>&lt;0.01</td>\n      <td>&lt;0.1</td>\n      <td>per mass of only the metal ions</td>\n    </tr>\n    <tr>\n      <td>Fantechi et al. (2014)</td>\n      <td>ferritin with Co0.15Fe2.85O4</td>\n      <td>6.8</td>\n      <td>12.4</td>\n      <td>183</td>\n      <td>2.81</td>\n      <td>30</td>\n      <td>per mass of only the metal ions</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "25d66e85-84c0-46b1-8392-9b0df4c806bd",
+      "submission_id": "1a60caea-9141-4760-b1a3-0775a82c22a6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E Clapham, Howard Hughes Medical Institute, Boston Children's Hospital , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17210.006](https://doi.org/10.7554/eLife.17210.006)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Physical limits to magnetogenetics\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and four reviewers, one of whom, David E Clapham (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Alan P. Jasanoff (Reviewer #2) and Baron Chanda (Reviewer #4).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn 'Physical limits to magnetogenetics', Meister introduces a welcome degree of caution into the growing popular field of magnetogenetics, in which Fe-containing particles are engineered into proteins, in particular ion channels. He shows through a straightforward set of calculations that the field strengths, in particular, the magnetic field gradient across small regions, is much too small to induce movement of parts of channel gating proteins. The relevant comparator is background thermal energy, or kT, which the particle has to overcome to produce structural rearrangements in the proteins of interest. All reviewers agreed that the work merits publications, and have made a number of relatively minor suggestions to insure accuracy.\n\nEssential revisions:\n\nOne of the reviewers suggested several modifications of wording, definitions, and equations in order that the commentary be technically accurate.\n\nIn his manuscript \u201cPhysical limits to magnetogenetics\u201d Prof. Markus Meister undergoes a series of back-of-the-envelope calculations that put into question physical mechanisms of magnetically- driven cell signaling proposed in a number of recent reports. First of all, I would like to applaud Prof. Meister for standing up for basic physics in light of recent articles that propose bio- magnetic mechanisms that are challenging to reconcile with the laws of magnetism. Given the recent interest in magnetoreception and magnetogenetics, I am confident that this is a timely article that should serve as a guide to the community. I do believe, however, that a number of minor improvements can be made to enhance the value of the manuscript. Below are a few suggestions for further clarification:\n\n1) The manuscript would benefit from simple diagrams that illustrate forces and fields involved in all of the discussed scenarios. Simple figures would help our colleagues to develop conceptual understanding of magnetostatics.\n\n2) It would be clearer if all the equations were first spelled out symbolically prior to plugging in the numbers, as it would help our colleagues to use those equations in their own future calculations.\n\nFor example: Eq. (1) \u03bceff=\u00a0n(n+2)\u03bcB=\u00a05(5+2)\u03bcB where n = number of unpaired electrons\n\n3) Subsection \u201c2. Individual complexes align with the earth's field\u201d: \u201c\u2026the complex of 20 aligned Fe atoms\u2026\u201d should be \u201c40 aligned Fe atoms\u201d, to be consistent with the first sentence of the aforementioned subsection, as well as Eq. (3).\n\n4) Magnetization and magnetic moment should not be confused. M \u2013 is magnetization measured in A/m, magnetic moment m is measured in Am2 (=J/T \u2013 not a standard unit).\n\n5) Eq. (7) is not technically correct. It should be: M = XvH, where M is magnetization. In case of an isolated magnetic moment in air, in SI units one can write: M=Xv\u00a0B\u03bco, where \u03bco=4\u03c0x10\u22127[NA2=\u00a0T.mA=\u00a0JA2.m] is permeability of free space.\n\n6) The calculation of the susceptibility in the Methods section is rather confusing. When discussing the susceptibility, the author refers to volumetric susceptibility (Xv \u2013 a unitless quantity), while what he appears to mean is molar susceptibility (Xm in m3/mol (SI)). There are some typos in text and ambiguity in equations associated with this.\n\nUnit conversion for volumetric susceptibility is as follows: XSIv=4\u03c0XCGSvUnit conversion for molar susceptibility is: XSIm[m3mol]=4\u03c0\u00a0x\u00a010\u22126\u00a0XmCGS[cm3mol] (not vice versa as stated in Methods section.)\n\nIf the author had indeed used volumetric (unitless) susceptibility the units would not work out and a factor of volume would emerge as expected for the distinction between magnetization and magnetic moment.\n\nMichaelis et al. measure ferritin molar susceptibility in CGS units as:XmCGS=5.9\u00a0x\u00a0\u00a010\u22123[cm3mol]\n\nThe susceptibility per Fe atom in SI units is then:\n\nXSIFe=\u00a0XmSINA=\u00a04\u03c0\u00a0x\u00a010\u22126\u00a0XmCGSNA=\u00a04\u03c0\u00a0x\u00a010\u22126\u00a0x\u00a05.9\u00a0x10\u22123\u00a06.02\u00a0x\u00a01023\u00a0\u22481.2\u00a0x\u00a010\u221231[m3atom]Where NA is the Avodagros number.\n\nIf ferritin included 2400 Fe atoms, the moment per complex as a function of applied field B (paramagnetic material does not have an inherent moment in the absence of applied field) in free space would be:mmic=\u00a0NFe\u22c5XSIFe\u22c5B\u03bc0=2400\u00a0\u22c5XSIFe\u03bc0\u00a0B=\u00a0XSIMic\u03bc0\u00a0B\n\nIn calculations of magnetic moment according to m=\u00a0Xm\u00a0B\u03bc0, the author seems to inherently include dividing susceptibility by the permeability of free space into the definition of susceptibility, leading to unusual units:\n\nXSIMic\u03bc0=\u00a02400x1.2x10\u221231[m3]4\u03c0\u00a0x\u00a010\u22127[JA2m]=\u00a02.9x10\u221228[m3]4\u03c0\u00a0x\u00a010\u22127[JA2m]=2.3\u00a0x\u00a010\u221222\u00a0[A2m4J=JA2m4J21T2=JT2]7) Introduction, second paragraph: Feynman\u2019s Lectures on Physics is an excellent physics reference, but the citation itself may require some editing. Profs. Leighton and Sands helped compile Feynman\u2019s lectures into a written volume and are typically also credited with authorship, and since Feynman sadly passed away in 1988, a 2011 date without mention of the edition number may confuse some readers.\n\n8) Subsection \u201c1. The protein complex has a permanent dipole moment\u201d: \u201cThose contain about 1 million iron atoms, closely packed to produce high exchange interaction, which serves to lock their individual magnetic moments in parallel (Feynman, 2011).\u201d\n\nThis statement could use some clarification. Magnetite is ferrimagnetic, so the moments are not all parallel, and the ordering arises from superexchange mediated by oxygen. This does not subtract from point being made about scale and blocking temperature, but the author should carefully evaluate all instances of the term \u201cferromagnetic.\u201d\n\n9) Subsection \u201cA magneto-sensitive channel?\u201d: \u201cThe hollow core of this particle can be filled with iron oxide (Arosio et al., 2009)\u201d Upon examining this reference, it seems that ferritin may not store iron directly as iron oxide, but rather: \u201cThe main in vitro reaction of any ferritin type is to react with Fe(II) and induce its oxidation and deposition inside the cavity in a ferric oxyhydroxide core which is structurally similar to the mineral ferrihydrite.\u201d (p. 590, Arosio et al.) Michaelis et al. (1943), as well as Papaefthymiou (2010) seem to generally agree on this point as well.\n\n10) The statement that \u201cAt room temperature, ferritin is strictly paramagnetic\u201d seems to be supported by Michaelis et al. (1943) and other literature. However, the justification that follows is somewhat unclear. A \u201cstrict\u201d paramagnet should not exhibit magnetic ordering at any scale without an applied field. In contrast, superparamagnetic particles can retain their local magnetic order above their blocking temperature, while the direction of magnetization undergoes rapid thermal fluctuation. A Langevin curve is observed for bulk measurements of such materials, but low field susceptibility is large (\u201csuper\u201d) compared to strict paramagnets because the magnetic moments responding to the external field are coming from comparatively large, magnetically ordered clusters. As noted in the Methods section of this manuscript, consistent measurements have been performed on biologically derived ferritin that seem to indicate paramagnetism at room temperature. However, for perspective, it may be useful to direct readers to some work that discusses the possibility of ferrimagnetic ferrihydrite phases such as Michel et al. (2010). PNAS: 107 (7) 2787-2792 doi: 10.1073/pnas.0910170107\n\n11) Eq. (8) does not express susceptibility in units that correspond to susceptibility. Rather, it is an estimate of the moment of a ferritin when multiplied by B. The following correction should be considered (see comment 6 above for the Methods section):m=\u00a0NFe\u22c5XSIFe\u22c5B\u03bc0=\u00a0(2.4\u00a0x\u00a010\u221222JT2)\u22c5B\n\nWhere NFe is the number of Fe per ferritin.\n\n12) Eq. (9) does not seem correct if M actually represents a magnetic moment m\u21c0. See Feynman, Vol 2, equation 15.4. The energy of a magnetized dipole in a field is:U=\u00a0\u2212m\u2192\u22c5B\u2192=\u00a0\u2212\u00a0NFe\u22c5XSIFe\u22c5B2\u03bc0\n\nThe justification for the factor of \u00bd should be clarified if retained.\n\n13) Suggested correction for Eq. (10):F1=\u00a0\u2212\u00a0ddx\u00a0U=2\u00a0NFe\u22c5XSIFe\u22c5B\u03bc0\u22c5dBdx\n\nThe numerical estimate should come out to be the same, but the physical reasoning is clearer, at least to this reviewer. Nonstandard representations of susceptibility should be avoided if possible.\n\n14) In Eq. (11), magnetization and moment are again confused. Simply substitute m for M and the same or similar numerical result should be obtained. Is the author using the same assumption of applied field B as in the previous example? Two paramagnetic bodies should not exhibit attraction without an applied field.\n\n15) For Eq. (15), see the comment on Eq. (9), paying attention to sign. The energy of the particle in the field aligned with its easy axis should be negative, so that it is less than that of the particle with B applied along the hard axis. Otherwise the torque will be in an unphysical direction.\n\nAnother important point, but only strongly encouraged, not required:\n\n\"For the sake of completeness, it might also be a good idea to add a subsection on the physicality of the RF heating approach proposed by the Stanley et al. team in their 2015 paper and a more recent 2016 paper (Nature 531: 647-50). This is the one biophysical mechanism in the magnetogenetics papers that is not yet treated in the current manuscript. At the least, it would be worth commenting briefly on the validity of the RF heating approach in the Discussion section.\"\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Physical limits to magnetogenetics\" for further consideration at eLife. Your revised article has been favorably evaluated by Eve Marder (Senior Editor), a Reviewing editor, and one of the original reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below from Reviewer 3:\n\n\"The revised version of the manuscript \u2018Physical limits to magnetogenetics\u2019 addresses my comments to the earlier version. The added discussion of heating in magnetic nanomaterials, however, would benefit from substantial clarification, particularly in light of recent experimental observations of unexpected nanoscale heating effects. My specific suggestions are outlined below:\n\n1) Magnetic nanoparticle (MNP) heating with low-radio frequency alternating magnetic fields has been an active area of research for 5 decades, and a number of comprehensive reviews are dedicated to the subject. Citing one of these reviews (e.g. Pankhurst, J. Phys. D Appl. Phys. 2003 or 2009) would be useful for the community. Most applications of MNP heating are in the field of cancer hyperthermia, and in fact these materials have been used in clinical trials to extend life span of glioblastoma patients by triggering tumor cell necrosis through bulk heating (Maier-Hauff, J. Neurooncol. 2011). Many of these nanomaterials are indeed based on synthetic magnetite, and its transition-metal-doped derivatives with dimensions in the range 6-60 nm. Citations to cancer hyperthermia reviews/ clinical trials should be mentioned in addition to those chosen by the author.\n\n2) Specific loss power (SLP) is indeed the main figure of merit used to compare MNP heating efficacy, however, the reference to Hergt should be updated because linear-response theory (LRT) has a limited range of validity. It approximates the Ne\u00e9l relaxation time as independent of the applied field magnitude, an approximation that is most valid for MNPs with coercive field significantly exceeding the amplitude of AMF. This is not the case for many MNPs in 10s kA/m fields. Recent articles by Carrey, Mamiya and colleagues (Carrey, J. Appl. Phys. 2011; Mamiya, Sci. Rep. 2011) offer a dynamic hysteresis theory (DHT) for heat dissipation by MNPs in AMFs. According to DHT, the particle loss per cycle is predicted to saturate at large fields rather than growing without bound as LRT suggests. For quantitative experimental evidence, see (Mehdaoui, Adv. Funct. Mater. 2011; Christiansen et al. Appl. Phys. Lett. 2014). Achieving non-negligible SLPs with small particles is sometimes possible by simply increasing the AMF frequency. This exact principle has been applied by Pralle and colleagues, who used AMF with an amplitude 2 kA/m and frequency 40 MHz to heat 6 nm MnFe2O4 MNPs and actuate TRPV1 (Huang, Nat. Nanotechnol. 2010). Prolonged operation at such frequencies, however, is not advisable due to the inductive heating of the biological tissue observed for field-frequency products in excess of 5\u00d7109 kA m-1 s-1 (Hergt and Dutz, J. Magn. Magn. Mater. 2007). Bearing this constraint in mind, larger particles with wider hysteresis loop areas are frequently chosen as more effective at reasonable field-frequency conditions.\n\n3) When talking about heat dissipation, the author also mentions Brown relaxation in addition to Ne\u00e9l relaxation (described by DHT) in passing. Brown relaxation, i.e. physical rotation of the particles, is only applicable to MNPs with coercive fields significantly greater than the amplitude of the applied field for which the rate of magnetization reversal is significantly lower. In the fourth paragraph of the subsection \u201cAn ion channel gated by magnetic heating?\u201d, it is stated that the organic shell surrounding ferritin would interfere with physical rotation, and this implicitly assumes particles with large magnetic anisotropy and high coercive field. Such an assumption could be made for the sake of argument, but should be made explicit.\n\n4) The validity of bulk heat transport from a spherical object at the nanoscale requires some careful motivation. The result of applying this reasoning to synthetic MNPs that heat much more effectively than ferritin (larger, several hundred W/g) still yields a predicted temperature increase at the surface of nanoparticle of no more than 10-6-10-5 K. This simple model, however, fails to explain several recent experiments that indicate a temperature increase of several degrees K or even tens of degrees K that sharply declines within nanometers from MNP surfaces (e.g. Riedinger et al., Nano Lett. 2013; Yoo et al., Angew. Chem. Int. Ed. 2013; Dong and Zink, ACS Nano, 2014). While these works do not supply a satisfying theoretical explanation for these results, these experiments along with the wealth of studies from the field of nano-electronics indicate that phonon transport, rather than simple diffusion, must be considered to explain heat dissipation at these scales. However, even these models do not seem able to fully account for the magnitude of the discrepancy (G. Chen, 1996. J. Heat Transfer 118(3), 539-545). Due to the absence of a satisfactory physical model of heat transport at the MNP surface, the author is encouraged to discuss the heat dissipation from a perspective of existing experimental data. In the case of ferritin, the heating is implausible simply due to its negligible SLPs at the conditions reported by Stanley et al. and Wheeler et al.\n\n5) Subsection \u201c1. The protein complex has a permanent dipole moment\u201d: Does the author really mean \"blocking temperature\" here? That is a characteristic of superparamagnetic particles and the temperature at which the \"spins become locked to the molecular axes\" sounds like an exchange interaction. So this is confusing.\n\n6) Subsection \u201cAn ion channel gated by magnetic heating?\u201d, third paragraph: Reorienting is accomplished by relaxation processes, not opposed by them. It would be better to say \"opposed by magnetic anisotropy of the particles\".\n\n7) Subsection \u201cAn ion channel gated by magnetic heating?\u201d, fifth paragraph: \"Zero\" is perhaps a bit extreme. It would be more precise to say that the heating rate is too low to be measurable.\n\n8) Subsection \u201cAn ion channel gated by magnetic heating?\u201d, fifth paragraph: \"C\" is a confusing choice for thermal conductivity because specific heat is typically represented as C. \"k\" or \"kappa\" might be better.\n\n9) Subsection \u201cMagnetic heating of nanoparticles\u201d: \"SLP varies proportionally to the frequency\" This is not, strictly speaking, correct for superparamagnetic particles in either the framework of LRT or DHT. It should be made clear that this is an estimate perhaps reasonable for small adjustments and back of the envelope calculations, but not universally true.\"\n",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c59bcd25-d3a7-45c0-aab9-36cf7a4c018e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C1",
+      "claim": "Magnetotactic bacteria synthesize ferrimagnetic crystals of magnetite and arrange them in a chain within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For that purpose, the bacterium synthesizes ferrimagnetic crystals of magnetite and arranges them in a chain within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bazylinski and Frankel, 2004, which is established literature on magnetotactic bacteria.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "6ed33ea5-db2e-4768-a8a8-62bc660f1d06",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C2",
+      "claim": "Magnetotactic bacteria use their magnetic moment to align with magnetic field lines and propel themselves along those lines using flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "This gives the bacterium a permanent magnetic moment, and allows it to act like a small compass needle. The cell's long axis aligns with the magnetic field and flagella in the back of the cell propel it along the field lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bazylinski and Frankel, 2004, which describes the mechanism of magnetotactic bacteria.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "abe105d7-bfe3-42c7-ad44-dbe99d390df1",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C3",
+      "claim": "The smallest iron particles known to have a permanent magnetic moment at room temperature are single-domain crystals of magnetite about 30 nm in size containing about 1 million iron atoms.",
+      "claim_type": "EXPLICIT",
+      "source": "The smallest iron particles known to have a permanent magnetic moment at room temperature are single-domain crystals of magnetite (Fe3O4), about 30 nm in size (Dunlop, 1972). Those contain about 1 million iron atoms, closely packed to produce high exchange interaction, which serves to coordinate their individual magnetic moments (Feynman et al., 1963; Ch 37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dunlop, 1972 and Feynman et al., 1963, which are established references on magnetic properties of materials.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c7667ef9-a28b-43dd-a292-c19cae1d7b17",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C4",
+      "claim": "The protein complex described by Qin et al. (2016) contains only 40 Fe atoms spread over 24 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein complex described by Qin et al. (2016) contains only 40 Fe atoms, and those are spread out over a generous 24 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the composition of the protein complex reported in the cited paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "1836f866-e04a-495b-8005-be0b68cf18d0",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C5",
+      "claim": "There is no known mechanism by which 40 Fe atoms spread over 24 nm would form a magnetic domain and give the complex a permanent magnetic moment.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no known mechanism by which these would form a magnetic domain and thus give the complex a permanent magnetic moment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of magnetic domain formation and the comparison with known single-domain particles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "675a5735-e7c8-4724-af3d-ec1f2098d884",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C6",
+      "claim": "The blocking temperature of single-molecule magnets is still below 14 degrees Kelvin.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite intense interest in making single-molecule magnets, their blocking temperature \u2013 above which the magnetic moment fluctuates thermally \u2013 is still below 14 degrees Kelvin (Demir et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Demir et al., 2015, which reports on single-molecule magnets.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "07bd2ca5-d4e1-4858-91f6-c81eb863e242",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C7",
+      "claim": "The amount of iron in the putative molecular compass is too small by about 5 log units compared to known permanent magnets at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "So the amount of iron in this putative molecular compass seems too small by about 5 log units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on calculation comparing 40 Fe atoms to the ~1 million Fe atoms in known single-domain magnetite crystals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "3553a929-a2a4-4424-b295-38259548fe71",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C10",
+      "claim": "For iron atoms, n is at most 5.",
+      "claim_type": "EXPLICIT",
+      "source": "For iron atoms, n is at most 5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the electronic configuration of iron atoms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "671f275e-4006-435f-b150-3758f101a62a",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C12",
+      "claim": "The Earth's magnetic field is about 50 \u00b5T.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction energy of that moment with the earth's field (about 50 \u00b5T)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-known value for Earth's magnetic field strength.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "3a55f581-40d6-4fb8-9251-07d99b540c3a",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C16",
+      "claim": "The expected degree of alignment for the protein complex with Earth's magnetic field is 2\u00d710^-5.",
+      "claim_type": "EXPLICIT",
+      "source": "That is the degree of alignment one would expect for the protein complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the ratio of magnetic to thermal energy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "82cc2b33-58dc-401f-ad6e-472cc2d0eaf9",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C17",
+      "claim": "Qin et al. claim an alignment of 0.45 for the protein complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the authors claim an alignment of 0.45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what Qin et al. reported in their paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "92d92e5a-b365-4130-a2fc-9d921f7ca5fa",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C18",
+      "claim": "The claimed alignment by Qin et al. exceeds the prediction from basic physics by about 5 log units.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this claim exceeds by about 5 log units the prediction from basic physics, even allowing for an unexplained coordination of the 40 Fe spins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the claimed alignment (0.45) to the predicted alignment (2\u00d710^-5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "2bc6f97e-11c4-43ee-ae81-95f8b6993dad",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C19",
+      "claim": "The reported observations by Qin et al. must arise from some entirely different cause, probably unrelated to magnetic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly the reported observations must arise from some entirely different cause, probably unrelated to magnetic fields.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large discrepancy between predicted and claimed alignment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "0c4611e3-9cd1-4a84-bea1-a44a3e47f0a1",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C20",
+      "claim": "Wheeler et al. (2016) designed a molecular system consisting of TRPV4 fused to two subunits of ferritin to couple magnetic fields to ionic current across the cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Their single-component protein consists of a putative mechano-sensitive cation channel (TRPV4) fused on the intracellular face to two subunits of ferritin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design reported in Wheeler et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "d30ce163-4603-4fa8-ad86-34ff431995f1",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C21",
+      "claim": "Wheeler et al. hoped that the paramagnetic protein would enable magnetic torque to tug open the channel to depolarize cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The hope was that \"the paramagnetic protein would enable magnetic torque to tug open the channel to depolarize cells\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quote from Wheeler et al.'s stated hypothesis.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c3e4f693-5b2e-4c96-bf3f-fe92d6dcbdd6",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C22",
+      "claim": "Ferritin is a large protein complex with 24 subunits that forms a spherical shell about 12 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Ferritin is a large protein complex with 24 subunits that forms a spherical shell about 12 nm in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ferritin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "4a5fe0c4-79bd-48a5-a687-fd8c13f44ff4",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C23",
+      "claim": "The hollow core of ferritin can be filled with iron in the form of ferric hydroxide.",
+      "claim_type": "EXPLICIT",
+      "source": "The hollow core of this particle can be filled with iron in the form of a ferric hydroxide (Arosio et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Arosio et al., 2009.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "3f04dcaf-6104-4363-b584-56c4973d5923",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C24",
+      "claim": "At room temperature ferritin has no permanent magnetization and is strictly paramagnetic or superparamagnetic.",
+      "claim_type": "EXPLICIT",
+      "source": "At room temperature ferritin has no permanent magnetization: it is strictly paramagnetic or superparamagnetic (Papaefthymiou, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Papaefthymiou, 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "4dcaaa60-e401-43ee-b7a4-a9641dcad7d4",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C25",
+      "claim": "The iron core of ferritin is too small (~5 nm) to sustain a permanent dipole moment, with a blocking temperature of ~40 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the magnetite particles in magnetotactic bacteria, the iron core of ferritin is too small (~5 nm) to sustain a permanent dipole moment (blocking temperature ~40 K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of magnetic nanoparticle properties.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "5212ecfc-b460-46eb-ba92-bfb1c7bf6072",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C27",
+      "claim": "Paramagnetic particles experience a force proportional to the magnetic field gradient and the induced magnetic moment.",
+      "claim_type": "EXPLICIT",
+      "source": "Paramagnetic particles experience a force that is proportional to the magnetic field gradient and the induced magnetic moment (Feynman et al., 1963; Ch 35; Pankhurst et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Feynman et al., 1963 and Pankhurst et al., 2003.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c3e0f294-7788-440e-a8d8-21f984e2c4d0",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C28",
+      "claim": "In the experiments of Wheeler et al. (2016), the field strength was ~0.05 T and the field gradient ~6.6 T/m.",
+      "claim_type": "EXPLICIT",
+      "source": "In the experiments of Wheeler et al. (2016) the field strength was ~0.05 T and the field gradient ~6.6 T/m (their Supplementary Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the experimental conditions reported in Wheeler et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "be376412-dd1a-4987-8071-a150fb8c44ac",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C32",
+      "claim": "The magnetic field gradient mechanism for pulling on ferritin is at least 9 log units too weak to open an ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "So this mechanism for pulling on ferritin seems at least 9 log units too weak to provide an explanation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the force from ferritin (7\u00d710^-23 N) to the force needed to open channels (2\u00d710^-13 N).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "abd9cdc3-736c-434e-bf86-917d579791a0",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C36",
+      "claim": "The dipole-dipole interaction mechanism produces a force about 8 log units weaker than the gating force of the hair cell channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately we are again left with an exceedingly tiny force, about 8 log units weaker than the gating force of the hair cell channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the dipole-dipole force (3\u00d710^-21 N) to the channel gating force (2\u00d710^-13 N).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "25da233d-e988-46d3-b8b8-39659abe9813",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C38",
+      "claim": "The dipole-dipole mechanism is too small by 8 log units to have any noticeable effect over thermal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "again 8 log units too small to have any noticeable effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the calculation of free energy compared to thermal energy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "6e535208-195e-4544-a9a2-1be36301d417",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C40",
+      "claim": "The free energy difference from ferritin anisotropy is about 4 log units smaller than thermal energy.",
+      "claim_type": "EXPLICIT",
+      "source": "This free energy difference is about 4 log units smaller than the thermal energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the interaction energy (-3\u00d710^-25 J) to thermal energy (4\u00d710^-21 J).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "26085328-7f28-4749-8b59-5a061d668d08",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C41",
+      "claim": "The magnetic field can bias the alignment of ferritins by only an amount of 10^-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the same logic as for Qin et al's compass needle, the magnetic field can bias the alignment of the ferritins by only an amount of 10\u20134.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the ratio of magnetic interaction energy to thermal energy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ae5a21e1-df74-4dce-b860-8a8f94e586bf",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C42",
+      "claim": "Any torque exerted by ferritin on its ion channel linkage will be 10,000 times smaller than thermal fluctuations in that same degree of freedom.",
+      "claim_type": "EXPLICIT",
+      "source": "Another way to express this is that any torque exerted by the ferritin on its ion channel linkage will be 10,000 times smaller than the thermal fluctuations in that same degree of freedom.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from the ratio of magnetic to thermal energy being 10^-4.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "5c0a5823-9eb1-41c1-99c9-1ed560c7b4d7",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C43",
+      "claim": "The membrane stress required to gate TRPV4 channels is ~20 dyne/cm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "For TRPV4 channels it amounts to ~20 dyne/cm2 (Soffe et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Soffe et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "d3ff6573-ed3c-4813-baef-091259498abf",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C44",
+      "claim": "The membrane stress required to gate Piezo1 channels is ~50 dyne/cm^2.",
+      "claim_type": "EXPLICIT",
+      "source": "for Piezo1 channels ~50 dyne/cm2 (Ranade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ranade et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "8377fa72-d921-4fd2-8195-55218b075c89",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C47",
+      "claim": "The collective membrane stress mechanism produces stress at least 6 log units too weak to open any channels.",
+      "claim_type": "EXPLICIT",
+      "source": "So this hypothetical mechanism produces membrane stress at least 6 log units too weak to open any channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the achievable ferritin density (10^4/\u03bcm^2) to the required density (3\u00d710^10/\u03bcm^2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "56eb4a0d-bfca-4d1f-97a2-9b4cdba898b2",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C48",
+      "claim": "Stanley et al. (2015) combined expression of ferritin protein with TRPV1 channel to enable magnetic heating activation.",
+      "claim_type": "EXPLICIT",
+      "source": "For a different mode of activating membrane channels, Stanley et al. (2015) combined the expression of ferritin protein with that of the temperature-sensitive membrane channel TRPV1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design reported in Stanley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "e52c6b2e-729d-40f0-b534-51de7b45c19a",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C49",
+      "claim": "Stanley et al. hoped that a high-frequency magnetic field could heat the iron core of ferritin to open TRPV1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The hope was that a high-frequency magnetic field could be used to heat the iron core of ferritin, leading to a local temperature increase sufficient to open the TRPV1 channels, allowing cations to flow into the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the hypothesis of Stanley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c1fadc80-4cc9-48da-8981-91af5277151b",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C50",
+      "claim": "Stanley et al. concluded that direct one-to-one linkage between ferritin and ion channel worked best for generating Ca influx via high-frequency magnetic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct one-to-one linkage between ferritin and ion channel worked best for generating Ca influx via high-frequency magnetic fields, leading the authors to conclude that \"Because temperature decays as the inverse distance from the particle surface, heat transfer is likely to be most efficient for this construct, suggesting that heat transfer from the particle could be limiting the efficiency of the other constructs.\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quote from Stanley et al.'s conclusions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "7d3987cf-022a-41f1-8b35-6cc635e5f8c5",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C51",
+      "claim": "Typical nanoparticles for magnetic heating are made of magnetite or maghemite and measure tens of nanometers in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Typical nanoparticles of interest are made of magnetite or maghemite, sometimes doped with other metals, and measure some tens of nanometers in size (Hergt et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hergt et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "49171fa0-27c1-489a-a46c-96d6c437b6b2",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C52",
+      "claim": "Typical magnetic heating apparatus generates fields on the order of tens of kA/m at frequencies of several 100 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "The magnetic fields generated inside the coil are on the order of tens of kA/m at frequencies of several 100 kHz",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes typical experimental conditions for magnetic heating.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "73bc67ea-8a0c-4e81-9ae3-708ed39c02e5",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C53",
+      "claim": "For nanoparticles, heat is generated purely by magnetic forces, not by electric effects like in microwave ovens or induction stoves.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of these electric effects plays any role for nanoparticles. Instead the heat is generated purely by magnetic forces (Hergt et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hergt et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "4561a2de-e3aa-450d-8d5b-2b3760067fa1",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C54",
+      "claim": "Ferritin shells reconstituted with a magnetite core produced no measurable magnetic heating (SLP < 0.1 W/g).",
+      "claim_type": "EXPLICIT",
+      "source": "One report on the subject concludes simply that there is none: ferritin shells reconstituted with a magnetite core produced no measurable magnetic heating (SLP < 0.1 W/g), whereas doping the iron with varying amounts of cobalt did produce some modest heating rates (Fantechi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fantechi et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c6f9972d-a59d-4f53-88ed-9ff70e2db066",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C55",
+      "claim": "The efficiency of heating magnetic nanoparticles depends strongly on particle size and plummets steeply below 10 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Both theory and experiment show that the efficiency of heating magnetic nanoparticles depends strongly on the particle size, and plummets steeply below 10 nm (Fortin et al., 2007; Purushotham and Ramanujan, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fortin et al., 2007 and Purushotham and Ramanujan, 2010.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "07979dad-9cea-4ec4-b27f-55c27ea98dda",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C56",
+      "claim": "Magnetite particles smaller than 8 nm are not considered useful for magnetic hyperthermia.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetite particles smaller than 8 nm are not considered useful for magnetic hyperthermia (Fantechi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fantechi et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "6b9e00cb-e74c-4210-bf12-ac674c5d8853",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C57",
+      "claim": "The iron core of ferritin measures only 5-6 nm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "The iron core of ferritin measures only 5\u20136 nm in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ferritin structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "324f88eb-06f8-4484-8182-b942abfc926e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C58",
+      "claim": "The ferric hydroxide material in native ferritin has much lower magnetic susceptibility than magnetite (~8-fold).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ferric hydroxide material in native ferritin has much lower magnetic susceptibility than magnetite (~8-fold, Zborowski et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zborowski et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "10477500-d879-4de3-8f23-1698ac97c52e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C59",
+      "claim": "Based on the literature, the heating rate for ferritin is too low to be measurable.",
+      "claim_type": "EXPLICIT",
+      "source": "So, based on the literature, the heating rate for ferritin is too low to be measurable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited literature on ferritin magnetic heating.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "2faef84a-e9c2-4ee7-8cce-3adb4d7139ca",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C60",
+      "claim": "The highest specific heating rate obtained by filling ferritin shell with cobalt-doped magnetite is 30 W/g of metal.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the highest value obtained by filling the ferritin shell with cobalt-doped magnetite (Fantechi et al., 2014) and thus a generous estimate of what might be accomplished by future engineering of ferritin complexes inside cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fantechi et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "fe1554a7-bf68-4055-85c6-b12e12869fb5",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C65",
+      "claim": "Activation of a TRPV1 channel requires about 5 K of increase relative to body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of a TRPV1 channel requires about 5 K of increase relative to body temperature (Cao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cao et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "f525d40f-210a-4c0c-8ddf-a256940c2bb8",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C66",
+      "claim": "The temperature increase from an optimized ferritin is more than 10 orders of magnitude too small to activate TRPV1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "So the temperature increase expected, even from a futuristic optimized ferritin, is more than 10 orders of magnitude too small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the expected temperature increase (1.5\u00d710^-10 K) to the required increase (5 K).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "027a5553-8ed0-4c45-a35d-8b95d3182d9e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C67",
+      "claim": "In water, the phonon mean free path is ~0.3 nm, about the size of a water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "In water, the phonon mean free path is ~0.3 nm, about the size of a water molecule (Rabin, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rabin, 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "dddcf122-eeb8-42ba-b95b-2fa0d914bdbf",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C68",
+      "claim": "Non-Fourier heat transport will make only small corrections to the heat transfer results, on the order of 10% or less.",
+      "claim_type": "EXPLICIT",
+      "source": "One therefore expects that non-Fourier heat transport will make only small corrections to the above results, on the order of 10% or less (Chen, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen, 1996.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "f65150ae-3f3c-480b-a74b-0906d108cc49",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C71",
+      "claim": "There is no possibility of raising the temperature by several degrees near a single nanoparticle, even if the heating rate were 1000-fold higher.",
+      "claim_type": "EXPLICIT",
+      "source": "It appears that there is no possibility of raising the temperature by several degrees near a single nanoparticle, even if the heating rate were 1000-fold higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calculations showing temperature increases many orders of magnitude too small.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "3c1e7214-c723-46b1-9380-5863b16c3b27",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C72",
+      "claim": "There is no known physical mechanism for large temperature increases near single heated nanoparticles.",
+      "claim_type": "EXPLICIT",
+      "source": "As has been pointed out repeatedly, there is no known physical mechanism for such an effect (Rabin, 2002; Keblinski et al., 2006; Gupta et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rabin, 2002; Keblinski et al., 2006; and Gupta et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ab5f45e4-813f-40eb-88ca-2d96191f14ed",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C74",
+      "claim": "The temperature increase from 10,000 ferritins on a cell surface is too low by 9 orders of magnitude to activate channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately this is still too low by 9 orders of magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the expected temperature increase (1.7\u00d710^-9 K) to the required increase (5 K).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "e30a1ce8-c3d1-49f3-a50c-82840a1098fe",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C77",
+      "claim": "Heating of ferritin throughout the entire brain would contribute only a 1% increase to the heat already being generated from basal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Heating of ferritin throughout the entire brain would therefore contribute only a 1% increase to the heat already being generated from basal activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the ferritin heating rate (1.2\u00d710^-4 W/g) to the basal metabolic rate (1.2\u00d710^-2 W/g).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "7edef76b-c315-4026-8c5c-49b93f9497b9",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C78",
+      "claim": "It is very unlikely that the effects reported in Stanley et al. (2015) have anything to do with heating ferritin.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, it seems very unlikely that the effects reported in Stanley et al. (2015) have anything to do with heating ferritin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calculations showing heating effects too small by many orders of magnitude.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "43dedb7a-932f-4d03-af01-1eb403214050",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C79",
+      "claim": "Even assuming a generous heating rate, the resulting effects are too small to matter by enormous factors of 10^10 for single-channel activation and 10^9 for single-neuron activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Even if we ignore that and assume a generous heating rate, namely the largest reported using a custom metal alloy for the ferritin core, the resulting effects are too small to matter by enormous factors of 1010 (single-channel activation) and 109 (for single-neuron activation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the temperature increases compared to the required activation temperature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ea3b4c17-3849-458e-be03-570e9c2fb4b6",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C80",
+      "claim": "None of the biophysical schemes proposed in the articles by Qin et al. (2016), Wheeler et al. (2016), and Stanley et al. (2015) is remotely plausible.",
+      "claim_type": "EXPLICIT",
+      "source": "These calculations show that none of the biophysical schemes proposed in these articles is even remotely plausible, and a few additional proposals were eliminated along the way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all the calculations presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "76cff0b1-01c1-4569-b45c-51a90489070d",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C81",
+      "claim": "The forces, torques, or temperatures produced by the proposed mechanisms are too small by many orders of magnitude for the desired effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The forces or torques or temperatures they produce are too small by many orders of magnitude for the desired effects on molecular orientation or on membrane channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the quantitative findings from the calculations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "fbf2a15b-ded0-432b-861b-96b514b9e948",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C82",
+      "claim": "If the phenomena occurred as described, they must rely on some entirely different mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "If the phenomena occurred as described, they must rely on some entirely different mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the large discrepancies between predicted and claimed effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "cc388ff4-3b3a-442a-b6dd-313483f58ba3",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C83",
+      "claim": "The proposed routes to magnetogenetics based on pulling or heating ferritin/channel complexes have no chance of success.",
+      "claim_type": "EXPLICIT",
+      "source": "Barring dramatic new discoveries about the structure of biological matter, the proposed routes to magnetogenetics, based on either pulling or heating a ferritin/channel complex with magnetic fields, have no chance of success.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the author's conclusion based on the physical calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "027f5cd6-a2d9-4e75-8100-6f2dce4dc4f1",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C84",
+      "claim": "Claims that violate the known laws of physics often turn out to be wrong.",
+      "claim_type": "EXPLICIT",
+      "source": "First of all, claims that violate the known laws of physics often turn out to be wrong (Maddox et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maddox et al., 1988, and general scientific experience.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "608fd992-dc3a-4fb2-8653-57f0fdb05a44",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C85",
+      "claim": "None of the experiments by Stanley et al. (2015) and Wheeler et al. (2016) on animals were designed to produce a strong magnetic field gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "None of their experiments on animals were designed to produce a strong gradient, nor do the articles report what it was.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual observation about the experimental designs in the cited papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "84f11197-58c1-47fb-b5a8-fa0336b044d6",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C86",
+      "claim": "It is possible to pull on cells that express lots of ferritin using magnetic separation with high fields and steel fiber meshwork.",
+      "claim_type": "EXPLICIT",
+      "source": "It is in fact possible to pull on cells that express lots of ferritin, and this has been exploited for magnetic separation (Owen and Lindsay, 1983). It requires very high magnetic fields, and separation columns with a meshwork of fine steel fibers that produce strong gradients on a microscopic scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Owen and Lindsay, 1983.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "4ce80eaf-b1cc-434c-b552-29ef6f6c92ad",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C87",
+      "claim": "Inserting a wire mesh into the brain would negate the goal of non-invasive control.",
+      "claim_type": "EXPLICIT",
+      "source": "Inserting such a wire mesh into the brain would of course negate the goal of non-invasive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the practical implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "f46ea071-d5d7-4838-9126-db39207a21cf",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C88",
+      "claim": "Even with a 100-fold larger field (5 T), dipole interaction forces between ferritins are still 4 log units too small to open a channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with a 100-fold larger field (5 T), these forces are still 4 log units too small to open a channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by scaling the forces with field strength squared.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "63d79d3f-a3c8-4f1a-b066-ea06355037c8",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C89",
+      "claim": "A field strength of 5 T represents a practical limit because movements or field switching will cause inductive eddy currents that activate the brain non-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "That field strength represents a practical limit: Small movements of the animal, or switching of the field, will cause inductive eddy currents that activate the brain non-specifically, a phenomenon experienced also by MRI subjects (Schenck et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schenck et al., 1992.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "c2a2ef57-50c7-41bb-bbb1-c775ff378b0e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C90",
+      "claim": "A 100-fold larger field exploiting ferritin anisotropy could produce torque comparable with thermal energy.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, exploiting anisotropy of the ferritin particle (Figure 1c, Equation 15) may be within range of utility. A 100-fold larger field could produce torque comparable with the thermal energy, which when applied to thousands of channels might have a noticeable effect on membrane currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by scaling the interaction energy with field strength squared.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "bee606b2-28b3-4883-9d11-ea26e8e90cda",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C91",
+      "claim": "Engineering the ferritin shell into an elongated shape could enhance the shape anisotropy of magnetic particles.",
+      "claim_type": "EXPLICIT",
+      "source": "To enhance the shape anisotropy of the magnetic particles, perhaps one could engineer the ferritin shell into an elongated shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion for future engineering.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "8125268a-02ad-4bc5-8841-88181f44c54e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C92",
+      "claim": "The weak effects computed are a consequence of ferritin's paramagnetism.",
+      "claim_type": "EXPLICIT",
+      "source": "More fundamentally, it is clear that the weak effects computed here are a consequence of ferritin's paramagnetism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calculations showing that paramagnetic effects are too weak.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ff1ce9dc-f93a-4a11-a3a2-0ddb31f1eab3",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C93",
+      "claim": "A particle with a permanent magnetic moment, such as bacterial magnetosomes, could exert much larger forces, torques, and temperatures and may offer a realistic route to magnetogenetics.",
+      "claim_type": "EXPLICIT",
+      "source": "A particle with a permanent magnetic moment, such as the magnetosomes made by bacteria (Bazylinski and Frankel, 2004), could exert much larger forces, torques, and temperatures (Hergt et al., 2006), and may offer a physically realistic route to magnetogenetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative suggestion based on the known properties of magnetosomes, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "72765736-9bb0-4a76-8089-459d222c150b",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C94",
+      "claim": "Publication of questionable claims in high-profile journals discourages further innovation.",
+      "claim_type": "EXPLICIT",
+      "source": "With an eye towards such future developments, it is unfortunate that these three questionable claims were published, especially in high-profile journals, because that discourages further innovation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the author's opinion about the impact of these publications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "f0601145-c1d3-4d81-ae31-2d12bf0df80e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C95",
+      "claim": "Post-publication peer review can make up for pre-publication failures and reopen claimed intellectual space for future pioneers.",
+      "claim_type": "EXPLICIT",
+      "source": "There is an important function here for post-publication peer review: It can make up for pre-publication failures and thus reopen the claimed intellectual space for future pioneers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the author's opinion about the value of post-publication review.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "6bb5d28d-24a2-4bbd-b5ee-032ae2250520",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C97",
+      "claim": "The specific loss power (SLP) of magnetic nanoparticles varies proportionally to the frequency and to the square of the field strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the range of conditions considered here, a good approximation is that SLP varies proportionally to the frequency of the alternating magnetic field and to the square of the field strength (Hergt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hergt et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "8abd5adf-cfe8-4ad1-89e0-1ad56a9b0143",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C98",
+      "claim": "Qin et al. (2016) claim that about 45% of isolated rod-like protein particles oriented with their long axis roughly parallel to the geomagnetic field.",
+      "claim_type": "EXPLICIT",
+      "source": "They claim (1) that each such rod has an intrinsic magnetic moment, and (2) that this moment is large enough to align the rods with the earth's magnetic field: \"about 45% of the isolated rod-like protein particles oriented with their long axis roughly parallel to the geomagnetic field\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct quote from Qin et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ddff7f82-2498-4966-baae-dbdbb44787c4",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C99",
+      "claim": "Stanley et al. (2015) report that only 18 of ~2000 cells 'responded' to magnetic fields.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a similar claim in Stanley et al. (2015); but the evidence is scant and hard to interpret: only 18 of ~2000 cells 'responded' (their Supplementary Figure 10)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the data reported in Stanley et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ca1db9b1-adb1-4317-b5b3-27af7593dc19",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C100",
+      "claim": "Magnetic fields penetrate through tissues essentially undisturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason magnetic fields are used for whole-body medical imaging, and why they have such appeal for magnetogenetics, is that they penetrate through tissues essentially undisturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about magnetic field interactions with biological tissue.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "fe75d04a-67a4-4c8d-968a-c570b127c7d2",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C101",
+      "claim": "Magnetotactic bacteria prefer to live in the muck at the bottom of ponds rather than in open water.",
+      "claim_type": "EXPLICIT",
+      "source": "These organisms are found commonly in ponds, and they prefer to live in the muck at the bottom rather than in open water.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about magnetotactic bacteria behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "0054521e-61f0-4352-bc3e-9ccbff10930b",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C102",
+      "claim": "The radical pair mechanism proposes that magnetic fields affect the equilibrium between singlet and triplet states of a reaction intermediate.",
+      "claim_type": "EXPLICIT",
+      "source": "In this so-called 'radical pair mechanism' the products of an electron transfer reaction depend on the equilibrium between singlet and triplet states of a reaction intermediate, and this equilibrium can be biased by an applied magnetic field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the radical pair mechanism as proposed in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "0719362e-cac8-4d14-b9cc-7effa6a47e72",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "claim_id": "C103",
+      "claim": "The two main hypotheses for magnetosensation (magnetite mechanism and radical pair mechanism) have been reviewed extensively.",
+      "claim_type": "EXPLICIT",
+      "source": "These two hypotheses and their respective predictions for magnetosensation have been reviewed extensively (Johnsen and Lohmann, 2005; Kirschvink et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Johnsen and Lohmann, 2005 and Kirschvink et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d47880e7-4f08-42b2-a7ed-b539560bafd3",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The protein complex described by Qin et al. (2016) containing 40 Fe atoms spread over 24 nm cannot function as a magnetic compass. The complex is too small by ~5 orders of magnitude to form a permanent magnetic moment at room temperature, and the predicted alignment with Earth's magnetic field (2\u00d710^-5) is ~5 orders of magnitude smaller than the claimed alignment (0.45).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculations are based on well-established physics principles (C3, C6, C10, C12) and correctly apply thermal energy considerations. The comparison between known single-domain magnetite particles (~1 million Fe atoms, 30 nm) and the protein complex (40 Fe atoms, 24 nm) is quantitatively sound (C4, C7). The thermal energy calculation showing expected alignment of 2\u00d710^-5 versus claimed 0.45 represents a clear 5 log unit discrepancy (C16-C18).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The magnetic field gradient mechanism proposed by Wheeler et al. (2016) to pull ferritin-linked TRPV4 channels open produces forces at least 9 orders of magnitude too weak. Under experimental conditions (0.05 T field, 6.6 T/m gradient), the force on ferritin is ~7\u00d710^-23 N, compared to the ~2\u00d710^-13 N required to gate mechanosensitive channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation correctly applies the force equation for paramagnetic particles in field gradients (C27) using established ferritin properties (C22-C25). The experimental parameters are taken directly from Wheeler et al.'s supplementary data (C28). The comparison to measured channel gating forces from auditory hair cells provides an appropriate benchmark. The 9 log unit discrepancy is mathematically sound (C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "a95729d8-c0fe-4c66-84e5-1786ea38c9ca",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dipole-dipole interaction mechanism between neighboring ferritins produces forces ~8 orders of magnitude too weak to gate ion channels. The force between two touching ferritins is ~3\u00d710^-21 N, compared to the required ~2\u00d710^-13 N.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The dipole-dipole force calculation uses standard electromagnetic theory with appropriate distance dependence (1/d^4). The analysis correctly considers the most favorable case (ferritins nearly touching at 12 nm separation) and compares both to channel gating forces and thermal energy scales. The 8 log unit discrepancy is consistent across both comparisons (C36, C38).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "a5ffe1ff-c490-4dfe-a65d-923e100e6549",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Magnetic torque from ferritin anisotropy is ~4 orders of magnitude too weak to overcome thermal fluctuations. The interaction energy (-3\u00d710^-25 J) is 10,000-fold smaller than thermal energy (4\u00d710^-21 J), producing only 10^-4 alignment bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation assumes maximal (infinite) anisotropy, making this a generous upper bound. The comparison to thermal energy (kT) is the appropriate metric for determining whether magnetic effects can influence molecular orientation. The 4 log unit discrepancy and resulting 10^-4 alignment bias are correctly calculated (C40-C42).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "7e8faf8f-5df3-40d1-b3c2-fc1fb7cbdc5b",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Collective membrane stress from many ferritins is at least 6 orders of magnitude too weak to gate mechanosensitive channels. Achieving the required 20-50 dyne/cm^2 membrane stress would require 3\u00d710^10 ferritins/\u03bcm^2, but only ~10^4/\u03bcm^2 can physically fit on a membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculation uses measured membrane stress thresholds for TRPV4 and Piezo1 channels from appropriate citations (C43, C44). The geometric constraint on ferritin packing density is physically sound. The 6 log unit discrepancy between required and achievable ferritin density is correctly calculated (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "fba82908-b303-4c3f-a820-0903e08ddf16",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Magnetic heating of ferritin to activate TRPV1 channels is physically implausible. Native ferritin produces no measurable heating (SLP < 0.1 W/g). Even assuming an optimized heating rate of 30 W/g (from cobalt-doped ferritin), a single ferritin produces only 1.5\u00d710^-10 K temperature increase, more than 10 orders of magnitude below the ~5 K required for TRPV1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The analysis correctly identifies that ferritin's small size (5-6 nm core) and ferric hydroxide composition make it a poor magnetic heater (C54-C58). The heating calculation uses the most generous published value (30 W/g from engineered ferritin) and applies proper heat diffusion physics (C60). The comparison to the measured TRPV1 activation threshold (5 K) from appropriate literature shows a clear 10+ log unit discrepancy (C65-C66).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "348d0aea-7001-474f-8411-9d590f350e9d",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fourier heat diffusion analysis is appropriate for ferritin heating calculations. The phonon mean free path in water (~0.3 nm) is much smaller than relevant length scales (ferritin size, channel dimensions), making non-Fourier corrections negligible (~10%). No known physical mechanism exists for large localized temperature increases near single nanoparticles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The phonon mean free path comparison correctly validates the Fourier approximation (C67-C68). The conclusion that single nanoparticle heating cannot produce degree-scale temperature increases is supported by multiple literature citations (C72) and is consistent with the physics community consensus. This addresses potential objections to the heat diffusion calculations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "ede070fa-ffc4-46e3-95f5-48fa059393ac",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Collective heating from multiple ferritins cannot activate channels or neurons. Even with 10,000 ferritins per cell, the temperature increase is only 1.7\u00d710^-9 K (9 orders of magnitude too small). Heating all ferritins in the entire brain would contribute only 1% to basal metabolic heat production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The calculations properly scale from single-particle to collective effects using realistic expression levels (10,000 complexes per cell, ~10-fold above natural levels). The comparison to basal brain metabolism (1.2\u00d710^-2 W/g) provides appropriate context. The 9-10 log unit discrepancies are consistently calculated across different scales (C74, C79).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "f30628af-2954-4f60-a205-3be955b23f28",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "None of the biophysical mechanisms proposed by Qin et al. (2016), Wheeler et al. (2016), and Stanley et al. (2015) are physically plausible. The forces, torques, and temperatures produced are too small by 4-10 orders of magnitude. If the reported phenomena occurred, they must rely on entirely different mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This synthesis conclusion is well-supported by the systematic quantitative analysis of all proposed mechanisms. The consistent finding of 4-10 log unit discrepancies across multiple independent calculations strengthens the overall conclusion. The statement that alternative mechanisms must be responsible if the phenomena are real is a logical inference from the physical impossibility of the proposed mechanisms (C80-C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental designs in Stanley et al. and Wheeler et al. lacked critical controls and appropriate field configurations. The experiments did not produce strong magnetic field gradients required for the proposed pulling mechanisms, and achieving sufficient gradients would require invasive wire meshes incompatible with the goal of non-invasive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation that field gradients were neither designed for nor reported is a valid methodological criticism (C85). The comparison to magnetic cell separation methods that do work (requiring high fields and steel fiber meshes) provides appropriate context (C86). The practical limitation of 5 T fields due to eddy current effects is supported by MRI literature (C89).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "0856289d-7fa8-4e3b-a603-030ce7859c26",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Future magnetogenetics approaches might exploit ferritin anisotropy with 100-fold stronger fields (~5 T) or use particles with permanent magnetic moments like bacterial magnetosomes. Ferritin's paramagnetism fundamentally limits its utility for magnetic control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative suggestions for future work rather than evaluated results. While the suggestion that permanent magnetic moments would be more effective is physically sound (C92-C93), and the anisotropy mechanism might work at higher fields (C90), these remain untested hypotheses. The proposals are reasonable but lack experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "5e6cf043-538d-4aaf-ba9e-5c7b1cf9fb78",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Publication of these questionable claims in high-profile journals discourages innovation, but post-publication peer review can reopen the intellectual space for future pioneers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are opinion statements about scientific sociology rather than testable scientific claims. While the concern about premature claims blocking future work is reasonable, the actual impact on the field cannot be objectively evaluated from the manuscript. This represents the author's perspective on scientific publishing practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on magnetotactic bacteria and magnetosensation mechanisms is accurately presented. Magnetotactic bacteria use magnetite crystals (~30 nm, ~1 million Fe atoms) to align with magnetic fields. Two main hypotheses for animal magnetosensation are the magnetite mechanism and radical pair mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are well-supported by appropriate citations to established literature (Bazylinski and Frankel 2004, Dunlop 1972, Johnsen and Lohmann 2005, Kirschvink et al. 2010). The descriptions of magnetotactic bacteria behavior and the two competing magnetosensation hypotheses are consistent with the scientific consensus. This provides appropriate context for evaluating the challenged papers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "8883b139-1668-423c-b809-ed6065af1d90",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The specific loss power (SLP) of magnetic nanoparticles varies proportionally to frequency and to the square of field strength over the range of conditions considered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This relationship is supported by citation to Hergt et al. 2004 and is used appropriately to normalize heating rates from different experimental conditions to allow fair comparisons. This is a standard approximation in the magnetic hyperthermia literature for the relevant parameter ranges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    },
+    {
+      "id": "16de25c6-8763-46a1-be35-043b8e99e366",
+      "content_id": "7e15b950-f84e-4321-aaf4-d4b32990f115",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Stanley et al. (2015) reported that only 18 of ~2000 cells responded to magnetic fields, representing scant and hard-to-interpret evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is a factual statement about the data reported in Stanley et al.'s Supplementary Figure 10. The low response rate (0.9%) does raise questions about the robustness and specificity of the claimed effect, supporting the author's skepticism about the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:25:08.932092Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "abe105d7-bfe3-42c7-ad44-dbe99d390df1",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "c7667ef9-a28b-43dd-a292-c19cae1d7b17",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "1836f866-e04a-495b-8005-be0b68cf18d0",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "675a5735-e7c8-4724-af3d-ec1f2098d884",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "07bd2ca5-d4e1-4858-91f6-c81eb863e242",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "3553a929-a2a4-4424-b295-38259548fe71",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "671f275e-4006-435f-b150-3758f101a62a",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "3a55f581-40d6-4fb8-9251-07d99b540c3a",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "82cc2b33-58dc-401f-ad6e-472cc2d0eaf9",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "92d92e5a-b365-4130-a2fc-9d921f7ca5fa",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "2bc6f97e-11c4-43ee-ae81-95f8b6993dad",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "8abd5adf-cfe8-4ad1-89e0-1ad56a9b0143",
+      "result_id": "d47880e7-4f08-42b2-a7ed-b539560bafd3"
+    },
+    {
+      "claim_id": "0c4611e3-9cd1-4a84-bea1-a44a3e47f0a1",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "d30ce163-4603-4fa8-ad86-34ff431995f1",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "c3e4f693-5b2e-4c96-bf3f-fe92d6dcbdd6",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "4a5fe0c4-79bd-48a5-a687-fd8c13f44ff4",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "3f04dcaf-6104-4363-b584-56c4973d5923",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "4dcaaa60-e401-43ee-b7a4-a9641dcad7d4",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "5212ecfc-b460-46eb-ba92-bfb1c7bf6072",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "c3e0f294-7788-440e-a8d8-21f984e2c4d0",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "be376412-dd1a-4987-8071-a150fb8c44ac",
+      "result_id": "0369e3ce-73b4-43ec-ab3c-611b8db2d13e"
+    },
+    {
+      "claim_id": "abd9cdc3-736c-434e-bf86-917d579791a0",
+      "result_id": "a95729d8-c0fe-4c66-84e5-1786ea38c9ca"
+    },
+    {
+      "claim_id": "25da233d-e988-46d3-b8b8-39659abe9813",
+      "result_id": "a95729d8-c0fe-4c66-84e5-1786ea38c9ca"
+    },
+    {
+      "claim_id": "6e535208-195e-4544-a9a2-1be36301d417",
+      "result_id": "a5ffe1ff-c490-4dfe-a65d-923e100e6549"
+    },
+    {
+      "claim_id": "26085328-7f28-4749-8b59-5a061d668d08",
+      "result_id": "a5ffe1ff-c490-4dfe-a65d-923e100e6549"
+    },
+    {
+      "claim_id": "ae5a21e1-df74-4dce-b860-8a8f94e586bf",
+      "result_id": "a5ffe1ff-c490-4dfe-a65d-923e100e6549"
+    },
+    {
+      "claim_id": "5c0a5823-9eb1-41c1-99c9-1ed560c7b4d7",
+      "result_id": "7e8faf8f-5df3-40d1-b3c2-fc1fb7cbdc5b"
+    },
+    {
+      "claim_id": "d3ff6573-ed3c-4813-baef-091259498abf",
+      "result_id": "7e8faf8f-5df3-40d1-b3c2-fc1fb7cbdc5b"
+    },
+    {
+      "claim_id": "8377fa72-d921-4fd2-8195-55218b075c89",
+      "result_id": "7e8faf8f-5df3-40d1-b3c2-fc1fb7cbdc5b"
+    },
+    {
+      "claim_id": "56eb4a0d-bfca-4d1f-97a2-9b4cdba898b2",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "e52c6b2e-729d-40f0-b534-51de7b45c19a",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "c1fadc80-4cc9-48da-8981-91af5277151b",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "7d3987cf-022a-41f1-8b35-6cc635e5f8c5",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "49171fa0-27c1-489a-a46c-96d6c437b6b2",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "73bc67ea-8a0c-4e81-9ae3-708ed39c02e5",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "4561a2de-e3aa-450d-8d5b-2b3760067fa1",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "c6f9972d-a59d-4f53-88ed-9ff70e2db066",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "07979dad-9cea-4ec4-b27f-55c27ea98dda",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "6b9e00cb-e74c-4210-bf12-ac674c5d8853",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "324f88eb-06f8-4484-8182-b942abfc926e",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "10477500-d879-4de3-8f23-1698ac97c52e",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "2faef84a-e9c2-4ee7-8cce-3adb4d7139ca",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "fe1554a7-bf68-4055-85c6-b12e12869fb5",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "f525d40f-210a-4c0c-8ddf-a256940c2bb8",
+      "result_id": "fba82908-b303-4c3f-a820-0903e08ddf16"
+    },
+    {
+      "claim_id": "027a5553-8ed0-4c45-a35d-8b95d3182d9e",
+      "result_id": "348d0aea-7001-474f-8411-9d590f350e9d"
+    },
+    {
+      "claim_id": "dddcf122-eeb8-42ba-b95b-2fa0d914bdbf",
+      "result_id": "348d0aea-7001-474f-8411-9d590f350e9d"
+    },
+    {
+      "claim_id": "f65150ae-3f3c-480b-a74b-0906d108cc49",
+      "result_id": "348d0aea-7001-474f-8411-9d590f350e9d"
+    },
+    {
+      "claim_id": "3c1e7214-c723-46b1-9380-5863b16c3b27",
+      "result_id": "348d0aea-7001-474f-8411-9d590f350e9d"
+    },
+    {
+      "claim_id": "ab5f45e4-813f-40eb-88ca-2d96191f14ed",
+      "result_id": "ede070fa-ffc4-46e3-95f5-48fa059393ac"
+    },
+    {
+      "claim_id": "e30a1ce8-c3d1-49f3-a50c-82840a1098fe",
+      "result_id": "ede070fa-ffc4-46e3-95f5-48fa059393ac"
+    },
+    {
+      "claim_id": "7edef76b-c315-4026-8c5c-49b93f9497b9",
+      "result_id": "ede070fa-ffc4-46e3-95f5-48fa059393ac"
+    },
+    {
+      "claim_id": "43dedb7a-932f-4d03-af01-1eb403214050",
+      "result_id": "ede070fa-ffc4-46e3-95f5-48fa059393ac"
+    },
+    {
+      "claim_id": "ea3b4c17-3849-458e-be03-570e9c2fb4b6",
+      "result_id": "f30628af-2954-4f60-a205-3be955b23f28"
+    },
+    {
+      "claim_id": "76cff0b1-01c1-4569-b45c-51a90489070d",
+      "result_id": "f30628af-2954-4f60-a205-3be955b23f28"
+    },
+    {
+      "claim_id": "fbf2a15b-ded0-432b-861b-96b514b9e948",
+      "result_id": "f30628af-2954-4f60-a205-3be955b23f28"
+    },
+    {
+      "claim_id": "cc388ff4-3b3a-442a-b6dd-313483f58ba3",
+      "result_id": "f30628af-2954-4f60-a205-3be955b23f28"
+    },
+    {
+      "claim_id": "027f5cd6-a2d9-4e75-8100-6f2dce4dc4f1",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "608fd992-dc3a-4fb2-8653-57f0fdb05a44",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "84f11197-58c1-47fb-b5a8-fa0336b044d6",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "4ce80eaf-b1cc-434c-b552-29ef6f6c92ad",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "f46ea071-d5d7-4838-9126-db39207a21cf",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "63d79d3f-a3c8-4f1a-b066-ea06355037c8",
+      "result_id": "7a1e2768-1aa0-441b-a00b-95753c5ec9ad"
+    },
+    {
+      "claim_id": "c2a2ef57-50c7-41bb-bbb1-c775ff378b0e",
+      "result_id": "0856289d-7fa8-4e3b-a603-030ce7859c26"
+    },
+    {
+      "claim_id": "bee606b2-28b3-4883-9d11-ea26e8e90cda",
+      "result_id": "0856289d-7fa8-4e3b-a603-030ce7859c26"
+    },
+    {
+      "claim_id": "8125268a-02ad-4bc5-8841-88181f44c54e",
+      "result_id": "0856289d-7fa8-4e3b-a603-030ce7859c26"
+    },
+    {
+      "claim_id": "ff1ce9dc-f93a-4a11-a3a2-0ddb31f1eab3",
+      "result_id": "0856289d-7fa8-4e3b-a603-030ce7859c26"
+    },
+    {
+      "claim_id": "72765736-9bb0-4a76-8089-459d222c150b",
+      "result_id": "5e6cf043-538d-4aaf-ba9e-5c7b1cf9fb78"
+    },
+    {
+      "claim_id": "f0601145-c1d3-4d81-ae31-2d12bf0df80e",
+      "result_id": "5e6cf043-538d-4aaf-ba9e-5c7b1cf9fb78"
+    },
+    {
+      "claim_id": "c59bcd25-d3a7-45c0-aab9-36cf7a4c018e",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "6ed33ea5-db2e-4768-a8a8-62bc660f1d06",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "abe105d7-bfe3-42c7-ad44-dbe99d390df1",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "ca1db9b1-adb1-4317-b5b3-27af7593dc19",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "fe75d04a-67a4-4c8d-968a-c570b127c7d2",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "0054521e-61f0-4352-bc3e-9ccbff10930b",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "0719362e-cac8-4d14-b9cc-7effa6a47e72",
+      "result_id": "6ec4094e-2017-44ab-a336-fbcd87ec71a3"
+    },
+    {
+      "claim_id": "6bb5d28d-24a2-4bbd-b5ee-032ae2250520",
+      "result_id": "8883b139-1668-423c-b809-ed6065af1d90"
+    },
+    {
+      "claim_id": "ddff7f82-2498-4966-baae-dbdbb44787c4",
+      "result_id": "16de25c6-8763-46a1-be35-043b8e99e366"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1272 @@
+{
+  "submission": {
+    "id": "34965538-8d11-4dec-99b1-393129d8b312",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:43:07.740258Z",
+    "updated_at": "2025-11-30T21:43:07.740258Z"
+  },
+  "content": [
+    {
+      "id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "submission_id": "34965538-8d11-4dec-99b1-393129d8b312",
+      "content_type": "manuscript",
+      "content_text": "# Postprandial sleep mechanics in Drosophila\n\n## Authors\n\n- Keith R Murphy<sup>1</sup>\n- Sonali A Deshpande<sup>1</sup>\n- Maria E Yurgel<sup>2</sup>\n- James P Quinn<sup>1</sup>\n- Jennifer L Weissbach<sup>1</sup>\n- Alex C Keene<sup>2</sup>\n- Ken Dawson-Scully<sup>2</sup>\n- Robert Huber<sup>4</sup>\n- Seth M Tomchik<sup>3</sup>\n- William W Ja<sup>1</sup> ([ORCID: 0000-0002-4003-7356](https://orcid.org/0000-0002-4003-7356)) \u2020\n\n### Affiliations\n\n1. Department of Metabolism and Aging The Scripps Research Institute Jupiter United States\n2. Program in Integrative Biology and Neuroscience Florida Atlantic University Jupiter United States\n3. Department of Neuroscience The Scripps Research Institute Jupiter United States\n4. Radcliffe Institute for Advanced Study Harvard University Cambridge United States\n5. JP Scott Center for Neuroscience, Mind and Behavior Bowling Green State University Bowling Green United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nFood consumption is thought to induce sleepiness. However, little is known about how postprandial sleep is regulated. Here, we simultaneously measured sleep and food intake of individual flies and found a transient rise in sleep following meals. Depending on the amount consumed, the effect ranged from slightly arousing to strongly sleep inducing. Postprandial sleep was positively correlated with ingested volume, protein, and salt\u2014but not sucrose\u2014revealing meal property-specific regulation. Silencing of leucokinin receptor (Lkr) neurons specifically reduced sleep induced by protein consumption. Thermogenetic stimulation of leucokinin (Lk) neurons decreased whereas Lk downregulation by RNAi increased postprandial sleep, suggestive of an inhibitory connection in the Lk-Lkr circuit. We further identified a subset of non-leucokininergic cells proximal to Lkr neurons that rhythmically increased postprandial sleep when silenced, suggesting that these cells are cyclically gated inhibitory inputs to Lkr neurons. Together, these findings reveal the dynamic nature of postprandial sleep.\n\n## Introduction\n\nDespite accumulating evidence of interactions between sleep and metabolism, few studies have documented an\u00a0increased propensity for sleep that animals might\u00a0experience after meals. Results on human postprandial behavior have shown an\u00a0increased sleep propensity following a meal, a lagging response, or no effect at all (Orr et al., 1997; Zammit et al., 1995; Wells et al., 1998; Harnish et al., 1998; Stahl et al., 1983). It has been proposed that postprandial sleep is not invariable; it may be absent in particular individuals or heavily dependent on specific food properties (Stahl et al., 1983). While the behavior likely exists, these intrinsic variabilities have limited our ability to study its molecular basis. A thorough examination of this behavior would be facilitated by use of an animal model although, at present, no clear model exists (Watson, 2014).\n\nIn Drosophila there is a well-documented sleep-metabolism interaction in which flies suppress sleep or increase locomotion when starved (Lee and Park, 2004; Thimgan et al., 2010; Keene et al., 2010). However, the acute effects of food consumption on sleep have not been tested, largely because there is no system available to do so. Here we establish a system for simultaneous measurement of discrete feeding events and sleep, allowing us to examine the mechanisms underlying their interaction.\n\n## Results\n\nTo simultaneously measure sleep and feeding of individual adult flies, we designed the Activity Recording CAFE (ARC), a system that couples machine vision tracking of capillary-based food consumption and animal motion (Figure 1A\u2013C) (Ja et al., 2007; Donelson et al., 2012; Deshpande et al., 2014). Previous studies have shown that flies inactive for 5 min exhibit multiple hallmarks of sleep (Shaw et al., 2000; Huber et al., 2004; Hendricks et al., 2000). Using this standard, we extracted sleep parameters by defining sleep as periods of inactivity\u00a0>5 min. Despite different housing and food consistency, we found sleep architecture to be similar to previous studies using high resolution object tracking, a method which has greater resolution of total sleep and sleep duration than the infrared-beam based alternative (Figure 1C, Figure 1\u2014figure supplement 1A\u2013D) (Donelson et al., 2012). Flies appeared to move less after meals than before\u2014an effect more pronounced with larger meals\u2014suggesting that sleep might also be greater after eating (Figure 1D). Animals also positioned themselves closer to the food following each meal (Figure 1E\u2013F), consistent with observations that isolated flies sleep close to food (Hendricks et al., 2000) and the spatial tendency of flies driven to sleep by activation of neurons expressing short neuropeptide F, a satiety signaling hormone (Shang et al., 2013; Lee et al., 2004).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of ARC apparatus. Independent computer-controlled cameras record images of capillaries for feeding measurements and of flies for activity and sleep determination. (B) Raw image (one out of 1440 taken over 24 hr) of capillaries containing liquid food (top). Capillaries have an external reference mark and an internal dyed oil band overlaid the aqueous food. Images are thresholded to binary, from which cumulative pixel distances between the reference mark and dye band can be calculated from the image series (bottom). \u0394pixels per frame reveals individual feeding events, selected as events greater than 3.5 standard deviations above noise (red dashed line). (C) Activity, sleep (black shading) and feeding (\u00b5l) of an individual fly (activity and feeding in 1 min bins, sleep in 30 min bins). (D) Example motion traces of individuals before (black) and after (red) a meal (yellow circle). Motion traces and averages associated with small (<0.06 \u00b5l) or large (\u22650.06 \u00b5l) meals are shown. n\u00a0=\u00a0661 meals from 30 flies, w1118; *p<0.05, ***p<0.001, Wilcoxon matched-pairs sign rank test. (E) Raw and convolved spatial heat map showing time spent at each pixel coordinate in the 20 min before and after meals (291 feeding events from 15 w1118 flies, Gaussian convolution). (F) Kymograph of average vertical position in time relative to meals (shaded line represents mean \u00b1 s.e.m.). The\u00a0inset graph shows the\u00a0average position over 20 min pre-meal (\u221220) and post-meal (+20) with the axis scaled to the parent graph. ***p<0.001, Wilcoxon matched-pairs sign rank test. All bars represent mean \u00b1 s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Illustration of motion estimation using the Drosophila Activity Monitor in which the number of times a fly breaks an infrared beam in a glass tube is counted. (B) Illustration of motion quantification by first detecting an object and determining the frame-frame distance of the object centroids. (C) A comparison of circadian sleep profiles derived from the Drosophila Activity Monitor versus object tracking reveals general conservation of sleep patterning between systems. (D) Measurement of total sleep and sleep duration are lower using video tracking, indicating a higher resolution of waking motion. 25\u201327 flies per condition, **p<0.01, ***p<0.001, Student\u2019s t-test.\n\nTo examine the acute effects of feeding on sleep, we quantified the probability of sleep (Psleep) relative to individual feeding events. The\u00a0animals experienced a sharp decline in Psleep in the time approaching each meal, as expected since flies cannot sleep and feed simultaneously. Subsequent to the meal, Psleep rose rapidly and exceeded the respective pre-meal Psleep (Figure 2A). To quantify changes in sleep subsequent to each meal, we calculated the change in Psleep of respective time points before and after each event (i.e. t+1 \u2013 t\u22121, t+2 \u2013 t\u22122, \u2026). This analysis revealed a rise in sleep lasting approximately 20\u201340 min with a maximum \u0394Psleep amplitude of 0.15 and 0.2 for the control strains, w1118 and Canton-S, respectively (Figure 2B). The effect was observed in both males and females (Figure 2\u2014figure supplement 1A). While the duration of sleep events prior to a meal is inherently limited by the time until an animal wakes to eat, sleep initiation is not limited and was more probable following a meal (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig2-v1.jpg)\n\n**Figure 2.:** (A) Probability of sleep (Psleep) preceding or following each meal (t\u00a0=\u00a00) in Canton-S (top) or w1118 (bottom) males. Data are shown as averages of 1 min bins. \u0394Psleep is defined as the difference between postprandial Psleep and the corresponding time-matched pre-meal Psleep (i.e. t1 \u2013 t\u22121, t2 \u2013 t\u22122, \u2026). For clarity, a mirror image of pre-meal Psleep is replotted in the postprandial period (dashed line). Inset graphs show average Psleep (\u00b1 s.e.m.) for the 20 min before (\u221220) and after (+20) meals, with the axis scaled to the parent graph. n\u00a0=\u00a0757 meals from 50 flies, Canton-S; 661 meals from 30 flies, w1118; ***p<0.001, Wilcoxon matched-pairs sign rank test. (B) \u0394Psleep calculated from data in A. (C) Diagram of stimulus delivery system showing shaft-less vibration motors attached to the back of ARC chamber. Increasing vibrations are delivered to the chamber via a microcontroller using pulse width modulation. (D) Arousal threshold shows an\u00a0initial increase with the time an animal is inactive. 180 flies, 11,479 arousal events, Canton-S; 5 min bins, circles represent mean \u00b1 s.e.m., a secondorder polynomial trendline is shown. (E) Superimposition of time inactive (blue) over Psleep (black) relative to meals during periodic vibrational stimuli. The\u00a0inset graph shows Psleep and time inactive in the 20 min before and after each meal. n\u00a0=\u00a02245 meals from 180 flies, Canton-S; ***p<0.001, Wilcoxon matched-pairs sign rank test. (F) Stimulus response from 0\u201320, 20\u201340, and 40\u201360 min pre- and post-meal (red) superimposed onto Psleep (black). Arousal events are filtered to 5 min intervals for prior time inactive to control for sleep depth (0\u20135 mins shown, minimum 1 s inactivity). Circles represent mean \u00b1 s.e.m.; n\u00a0=\u00a02245 meals from 180 flies, Canton-S; *p<0.05, **p<0.01, Mann Whitney test. (G) Percent of calculated sleep that is actual immobility versus grooming. The\u00a0inset graph shows the\u00a0percent grooming in the 20 min before and after each meal. n\u00a0=\u00a055 meals from seven flies, Canton-S; p=0.69, Wilcoxon matched-pairs sign rank test. (H) Comparison of Psleep before and after meals calculated using immobility criteria \"I\" versus immobility criteria paired with grooming criteria \"I, -G\". Inset shows average Psleep (\u00b1 s.e.m.) in the 20 min before and after each meal. ***p<0.001, Wilcoxon matched-pairs sign rank test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Canton-S males (blue) and females (red) demonstrate similar increases in postprandial sleep. n\u00a0=\u00a0672 meals from 30 males; 730 meals from 30 females; ***p<0.001, Wilcoxon matched-pairs sign rank test. (B) Probability of sleep initiation in 1 min windows surrounding feeding events for Canton-S (gray) and w1118 (red), with a quantification of sleep bout frequency in the 20 min before (+20) and after (\u221220) feeding events. ***p<0.001, Wilcoxon matched-pairs sign rank test.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Stimulus response from 0\u201320, 20\u201340, and 40\u201360 min pre- and post-meal (red) superimposed onto Psleep (black) representing the\u00a0entire data set. Arousal events are filtered to 5-min intervals for prior time inactive (0\u20135 min duplicated from Figure 2) to control for sleep depth. (B) Correlation between Psleep and arousal threshold for 0\u201320, 20\u201340, and 40\u201360 min bins surrounding feeding events (Pearson correlation, six time-bins derived from 2245 meals from 180 flies, Canton-S).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Ethograms of individual fly behavior in the 20 min before and after each meal, including immobility (purple), sleep (grey), grooming (blue), and recalculated sleep (red). n\u00a0=\u00a055 meals from seven flies, Canton-S.\n\nIn addition to periods of quiescence, increased arousal threshold is regularly used to demonstrate sleep in flies. To test if arousal threshold is increased after a meal, we adapted methodology from the Drosophila arousal tracking system in which animals are exposed to a series of increasing vibrational stimuli (0.8\u20133.2 g) once every hour in order to measure the intensity at which inactive animals respond (Figure 2C) (van Alphen et al., 2013; Faville et al., 2015). Consistent with previous studies, we found that arousal threshold initially increases with the amount of time that a fly is inactive, with the greatest change occurring in the first 5 min (Figure 2D) (Shaw et al., 2000; Huber et al., 2004; van Alphen et al., 2013; Faville et al., 2015). Since the maximum duration of inactivity is lower following a meal, irrespective of sleep probability (Figure 2E), we filtered arousal events to compare animals in similar stages of sleep. While animals inactive for more than 5 min are experiencing change in sleep depth, animals inactive for 0\u20135 min are transitioning into sleep. In this transition state animals showed a significantly greater arousal threshold in the 20, 40, and 60 min post-meal compared to animals during the respective pre-meal times (Figure 2F). Interestingly, the correlation between arousal threshold and postprandial sleep grew weaker when comparing animals in deeper stages of sleep (Figure 2\u2014figure supplement 2A\u2013B). This suggests that food intake transiently influences sleep induction rather than depth, which might be shaped solely by the amount of time that an animal is inactive.\n\nWe further considered the possibility that increases in immobility-derived sleep and arousal threshold could be artifacts of grooming behavior. To test this, we manually scored videos of animals during an ARC recording and annotated grooming events. Falsely calculated sleep, in which animals were grooming rather than immobile, accounted for\u00a0~7% of sleep surrounding meals and had statistically indistinguishable occurrence before and after a meal (Figure 2G, Figure 2\u2014figure supplement 3). Re-analysis of sleep surrounding a meal, where sleep was defined as periods of immobility and a lack of grooming exceeding 5 min, lowered total sleep but did not alter the rise in postprandial sleep (Figure 2H).\n\nWe next asked how the quantity of food consumed might influence postprandial sleep. We plotted Psleep or \u0394Psleep for different consumption volumes and found that sleep following meals increased as a function of meal size, while pre-prandial sleep did not (Figure 3A, Figure 3\u2014figure supplement 1A). Since average postprandial sleep lasted between 20\u201340 min, and since arousal threshold differences were most apparent in the first 20 min, we re-calculated \u0394Psleep for the 20 min surrounding each meal. We found a significant correlation between \u0394Psleep and consumption volume when meals were analyzed individually (Figure 3\u2014figure supplement 1B) or binned (Figure 3B). Since this analysis used individual meals rather than individual animals, we tested whether animals that consumed meals more frequently could bias the observed effect. We performed a Monte Carlo simulation by iteratively recapitulating the analysis with an equal number of randomly selected meals from each animal and found that equal sampling accurately portrays the full data set (Figure 3\u2014figure supplement 2A\u2013B). Since sleep is derived from periods of inactivity, we considered whether increased consumption could affect mobility, which might in turn appear to be sleep. The change in movement rate after a meal (\u0394speed) showed a much weaker correlation to meal size than \u0394Psleep (Figure 3\u2014figure supplement 2C). Since speed is a strong indicator of mobility, we reasoned that immobility is not likely responsible for the sleep effect.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sleep probability of Canton-S and w1118 surrounding meals of varying size (lines represent mean; color grading corresponds to meal size). Only groupings with n\u00a0>\u00a07 are shown for visualization. (B) 20 min \u0394Psleep as a function of meal size for each grouping (Pearson correlation: p<0.001 for Canton-S and w1118.) Shaded lines represent mean \u00b1 s.e.m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Time-course of \u0394Psleep for meals grouped by volume (0.01 \u00b5l meal groupings, circles represent 1 min binned averages, lines represent spline fit). (B) Correlation between meal size and \u0394Psleep in 20 min after feeding events for Canton-S and w1118 (Spearman rank-order correlation: p=9.0 \u00d7 10\u221214, Canton-S; p=4.1 \u00d7 10\u22128, w1118).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Monte Carlo simulation of \u0394Psleep as a function of meal size using fixed sampling frequency from individual flies. Simulations contained 3000 trials of randomly sampled meals, where thin black lines represent individual trials, and the\u00a0red line represents the\u00a0entire data set (three samples/fly, Canton-S; eight samples/fly, w1118; 0.01 \u00b5l meal groupings). (B) Histogram of linear regression slope for each trial fit with a Gaussian distribution (red line). The black arrow indicates the\u00a0slope value of the entire data set. (C) Average \u0394speed for the 20 min relative to meals versus meal size (Spearman rank-order correlation: p=0.0096, Canton-S; p=0.0095, w1118).\n\nAlthough meal size has an apparent impact on postprandial sleep, the standard diet contains numerous physiological and nutritive components. To determine the potential contribution of individual components to postprandial sleep, we designed a paradigm that allowed us to test a range of feeding volumes or of ingested nutrients. To test volumetric effects, animals were fed a low protein concentration food (0.25% tryptone) to elicit feeding without impacting baseline sleep, since sucrose and sweet tasting substances have been shown to modulate sleep (Keene et al., 2010; Linford et al., 2012). We found a highly significant correlation between meal volume and 20 min \u0394Psleep (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B). Larger meal volumes are also associated with a strong but transient increase in \u0394Psleep amplitude (Figure 4A, Figure 4\u2014figure supplement 2A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig4-v1.jpg)\n\n**Figure 4.:** (A) Average 20 min \u0394Psleep as a function of each meal component (Canton-S, Pearson correlation: p<0.001, volume; p<0.001, protein; p<0.005, salt; p=0.065, sucrose). Shaded lines represent mean \u00b1 s.e.m. (B) Histograms representing the\u00a0distribution of volume and protein consumed in each meal for data from A.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Scatter plots representing individual meals showing 20 min \u0394Psleep versus meal volume or consumed protein, salt (NaCl), or sucrose. Non-normal data in each plot can arise from the tendency for fully awake animals to stay awake (\u0394Psleep = 0) and from low variation in nutrient consumption within animals given a low nutrient, fixed diet (protein, NaCl, or sucrose consumption\u00a0=\u00a00 \u00b5g). Spearman rank-order correlation: p=1.52 \u00d7 10\u221225, volume; p=1.73 \u00d7 10\u221219, protein; p=6.84 \u00d7 10\u22126, NaCl; p=0.055, sucrose). (B) Time-courses of sleep probability for component groupings (lines represent mean for each grouping).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Time-course analysis of \u0394Psleep for meals of graded volume, protein, or salt consumption (circles represent 1 min binned averages, lines represent spline fit). n\u00a0=\u00a0811 meals, volume; 714, protein; 478, salt; 1131, sucrose. (B) \u0394Psleep amplitude for gradings of volume, protein, and salt plotted against\u00a0total \u0394Psleep during the decay phase 20 min following the maximum.\n\nTo determine if individual nutrients could modulate postprandial sleep, we fed animals a concentration series of protein (tryptone), salt (NaCl), or sucrose. All diets contained a base of 0.25% protein to induce feeding while minimizing effects on baseline sleep that might arise by differences in sucrose consumption. Within each series we compared nutrient consumption within a narrow volume range (0.02\u20130.04 \u00b5l, representing 33\u201338% of recorded meals) to limit the contribution of ingested volume on sleep. We found that \u0394Psleep was significantly correlated to both protein and salt ingestion (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B). Interestingly, despite reported effects of sucrose on total sleep (Keene et al., 2010; Linford et al., 2012), we found no correlation between ingested sucrose and \u0394Psleep (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B). For all analyses, only the meal parameter of interest varied, while all others were kept within a restricted range (Figure 4B). To compare the kinetics of \u0394Psleep for each effective driver, we quantified maximum \u0394Psleep amplitude and the total \u0394Psleep during its decay. For any given increase in total \u0394Psleep during the decay, meal volume induced a greater rise in amplitude than protein or salt (Figure 4\u2014figure supplement 2B). We hypothesize that multiple mechanisms operating on different time scales might underlie postprandial sleep regulation by the various drivers.\n\nWe next sought to identify a neuronal mechanism by which feeding drives postprandial sleep. A previous study showed that Lk was involved in meal size regulation, suggesting\u00a0that this system acts rapidly during feeding to signal a behavioral shift (Al-Anzi et al., 2010). To test if Lk signaling regulates postprandial sleep, a subset of Lkr neurons labeled by the line, R65C07 (hereafter referred to as LkrGAL4), were silenced by overexpressing Kir2.1, an inward rectifying K+ channel (Johns et al., 1999). This manipulation eliminated any rise in postprandial sleep and instead caused slight arousal (Figure 5A). There was no significant change in postprandial activity (\u0394motion for 20 min after meal: Kir2.1 / wCS, \u22120.006\u00a0\u00b1\u00a00.003; LkrGAL4 / wCS, \u22120.001\u00a0\u00b1\u00a00.002; Kir2.1 / LkrGAL4, 0.004\u00a0\u00b1\u00a00.004; p=0.28, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). The expression pattern of LkrGAL4 recapitulates that of Lkr neurons which were found to regulate meal size (Al-Anzi et al., 2010), revealing several cell populations stemming from the lateral horn which innervate the dorsal fan-shaped body of the central complex\u2014a region of the brain which functions in sleep homeostasis, visuomotor function, and hunger-related behavior (Figure 5B) (Donlea et al., 2011, 2014; Seelig and Jayaraman, 2013; Krashes et al., 2009). This circuitry suggests that the Lk system may act directly on the sleep and motor controllers of the fly brain to regulate postprandial sleep.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig5-v1.jpg)\n\n**Figure 5.:** (A) Overexpression of Kir2.1 channel in cells labeled by LkrGAL4 (R65C07) results in a defective postprandial sleep response (20 flies per genotype, n\u00a0=\u00a0697 meals, Kir2.1 / wCS; 762, LkrGAL4 / wCS; 450, Kir2.1 / LkrGAL4; *p<0.05; ***p<0.001, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (B) LkrGAL4 drives mCD8-GFP expression in neurons innervating the dorsal fan-shaped body, stemming from cell bodies in the lateral horn (scale bar\u00a0=\u00a050 \u00b5m). (C) Average 20 min \u0394Psleep for Kir2.1-silenced LkrGAL4 animals and controls given low nutrient food (1% sucrose, 0.25% tryptone) for observing volumetric effects (n\u00a0=\u00a01589\u20131736 meals per genotype). (D) Average 20 min \u0394Psleep for Kir2.1-silenced LkrGAL4 animals and controls given salt (2.5% sucrose\u00a0+\u00a01% salt) or protein (2.5% sucrose\u00a0+\u00a01.7% tryptone) diet to test meal component influences on postprandial sleep. The silenced line shows a negative response to protein supplemented diet (***p<0.001, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). n\u00a0=\u00a0257\u2013444 meals per genotype. (E) Expression of Kir2.1 can be restricted by using temperature-sensitive GAL80ts to suppress GAL4 activity at 21\u00b0C throughout development. (F) Silencing of LkrGAL4-labeled cells in adulthood (30\u00b0C) is sufficient to reduce postprandial sleep (24 flies per genotype, n\u00a0=\u00a0493 meals, TubGAL80ts; Kir2.1/ wCS; 499, LkrGAL4/ wCS; 528, TubGAL80ts; Kir2.1/ LkrGAL4; *p<0.05; **p<0.01, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Total sleep, (B) meal size, and\u00a0(C) feeding of LkrGAL4 / Kir2.1 and controls on sucrose + protein diet (Student\u2019s t-test or one-way ANOVA followed by Tukey-Kramer post hoc test for multiple comparisons). Points represent individual animals and lines represent mean \u00b1 s.e.m.\n\nWe hypothesized that Lkr circuitry could receive convergent signals from volume, protein, and salt to drive postprandial sleep. Alternatively, it could specifically relay the signals of a single driver to some point of convergence. We first tested whether the subset of Lkr neurons labeled by LkrGAL4mediated the sleep response to meal volume by feeding a low nutrient diet to LkrGAL4-silenced animals. Silenced animals and their controls showed similar \u0394Psleep in response to ingested volume, indicating that the LkrGAL4 neurons are not responsible for the\u00a0volumetric modulation of postprandial sleep (Figure 5C). To test the role of Lkr neurons in the postprandial sleep response mediated by nutrients, we supplemented a sucrose diet with either salt or tryptone. LkrGAL4-silenced animals and their controls showed statistically indistinguishable \u0394Psleep responses to salt manipulation (Figure 5D). In contrast, while protein ingestion increased postprandial sleep in controls, LkrGAL4-silenced animals showed a strong waking response, or a negative shift in postprandial sleep (Figure 5D). Interestingly, this waking response exceeded that of control animals on sucrose alone, indicating that protein can also drive wakefulness in the absence of LkrGAL4 neuronal activity. We did not observe changes in meal size, total sleep, or total consumption, indicating that these behaviors are independent of Lkr influence on postprandial sleep (Figure 5\u2014figure supplement 1A\u2013C). To test whether this phenotype was caused by changes in development, we conditionally silenced the cells by co-expressing a temperature sensitive GAL4 suppressant protein, GAL80ts,\u00a0throughout development (Figure 5E). Inactivation of GAL80ts to silence LkrGAL4-labeled cells in adulthood was sufficient to induce a postprandial sleep defect (Figure 5F).\n\nSubsets of Lk neurons have been found in the lateral horn, with the\u00a0diffuse puncta in close proximity to the\u00a0cell bodies of the Lkr neurons, suggesting a\u00a0neuromodulatory connection between these cells (Al-Anzi et al., 2010; de Haro et al., 2010; Cavey et al., 2016). Recent findings also show that incubating Lkr neurons with Lk inhibits their response to the cholinergic agonist carbachol, suggesting that Lk inhibits Lkr neuronal activity (Cavey et al., 2016). We first sought to confirm that cells labeled by the LkGAL4 driver express Lk. Indeed, immunostaining of Lk overlapped with LkGAL4-labeled cells in the lateral horn, as well as in two cells in the suboesophageal ganglion (SOG) (Figure 6A). Using thermogenetic activation of these cells with the transient receptor potential channel TrpA, we found that postprandial sleep was significantly reduced upon activation (Figure 6B), furthering the notion that these cells inhibit Lkr neurons. To see if Lk was necessary to drive this inhibitory effect, we used two independent RNAi lines to knockdown Lk in cells labeled by LkGAL4. We found that this knockdown increased postprandial sleep, consistent with the idea that expression of Lk in LkGAL4-labeled cells is necessary for the inhibitory effect on Lkr neuronal activity (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig6-v1.jpg)\n\n**Figure 6.:** (A) Confocal reconstruction of immunostaining for anti-Lk (magenta) in the brain of LkGAL4>mCD8::GFP reveals Lk co-localization with GFP-expressing neurons (green) in the lateral horn (LHLK) and suboesophageal ganglion (SELK). The neuropil marker nc82 (gray) is used as background (scale bar\u00a0=\u00a050 \u00b5m). (B) Stimulation of Lk neurons at 30\u00b0C by expressing Transient receptor potential channel, TrpA, causes a reduction in postprandial sleep in comparison to the unstimulated state at 18\u00b0C (10 flies per genotype, 30\u00b0C, n\u00a0=\u00a083 meals, TrpA/ wBerlin; 63, LkGAL4 / wBerlin; 25, LkGAL4 / TrpA; *p<0.05, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (C) Downregulation of Lk in LkGAL4-labeled cells, using two independent RNAi lines, increases postprandial sleep. (60 flies per genotype, n\u00a0=\u00a0893 meals, LkGAL4 / GD60000; 841, LkGAL4 / LkRNAi (VDRC); 953, LkGAL4 /mCherryRNAi; 1060, LkGAL4 / LkRNAi (TRIP); **p<0.01, ***p<0.001 Mann-Whitney test).\n\nThe broad arborizations of the Lkr neurons suggest that these cells might receive inputs from a number of spatially or type distinguished cells in the brain. R20G03 (20G03), a line expressing GAL4 driven by an enhancer fragment 316 base pairs upstream of Lk, labels cell bodies in the lateral horn and SOG, as well as a subset of mushroom body output neurons (MBONs) (Figure 7A), all of which coincide with Lkr neurons labeled by the LkrGAL4driver (Figure 7B). The cholinergic MBONs of 20G03 have been shown to play a role in short-term appetitive memory following food intake (Aso et al., 2014). These features, paired with their neuroanatomical distribution, suggested that these cells might play a role in postprandial sleep. To test this, we again employed electrical silencing with Kir2.1 and found that constitutive and adult-restricted silencing of these neurons increased postprandial sleep, suggesting that these cells might directly inhibit the activity of proximal Lkr neurons (Figure 7C\u2013D). Interestingly, immunostaining of Lk did not co-localize with any of the 20G03 cells, nor did downregulation of Lk in these cells affect postprandial sleep (Figure 7\u2014figure supplement 1A\u2013B), suggesting that their inhibitory action stems from an alternative neuropeptide or neurotransmitter. By analyzing behavior throughout a 24 hr period, we found that the increase in postprandial sleep driven by 20G03 silencing was most pronounced at ZT 12 (Figure 7E\u2013F). Closer examination within this period showed that, rather than raising sleep evenly within ZT 10\u201314, the sleep after but not before each meal was increased (Figure 7G), implying that these cells activate in response to food intake.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig7-v1.jpg)\n\n**Figure 7.:** (A) 20G03GAL4 drives mCD8-GFP expression in neurons with cell bodies positioned proximal to cell arborizations of those\u00a0labeled\u00a0by\u00a0LkrGAL4. (B) Overlaid images of 20G03GAL4 and LkrGAL4 expression show close proximity between cell types in the lateral horn and SOG. (C) Overexpression of Kir2.1 channel in\u00a020G03GAL4-labeled cells results in an\u00a0enhanced postprandial sleep response (30 flies per genotype, n\u00a0=\u00a0805 meals, Kir2.1 / w1118; 488, 20G03GAL4 / w1118; 285, Kir2.1 / 20G03GAL4; **p<0.01; ***p<0.001, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (D) Conditional silencing of 20G03GAL4-labeled cells in adulthood is sufficient to increase postprandial sleep (24 flies per genotype, n\u00a0=\u00a0493 meals, TubGAL80ts; Kir2.1/ wCS; 575, 20G03GAL4 / wCS; 528, TubGAL80ts; Kir2.1/20G03GAL41; *p<0.05; **p<0.01, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (E) Time-course of postprandial sleep reveals that effect of 20G03GAL4 silencing is most prominent from ZT 10\u201314 (time-course partitioned into 4 hr bins, shaded region indicates dark period; *p<0.05, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (F) Conditional silencing effects are also stronger at dusk ZT 10\u201314 (**p<0.01, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (G) Comparison of Psleep in the 20 min before and after each meal for both 20G03GAL4 manipulations (color codes from C and D; *p<0.05; **p<0.01, ***p<0.001, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons). (H) Proposed model for regulation of postprandial sleep by dietary components and neuronal circuitry. Meal volume, ingested salt, and protein drive postprandial sleep. Sleep induced by ingested protein acts through Lkr neurons. Protein also induces a waking response independent of Lkr neuronal activity. Leucokininergic (Lk) or non-leucokininergic (20G03) cell populations can independently inhibit postprandial sleep, possibly through modulation of Lkr neuronal activity.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19334/elife-19334-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Confocal reconstruction of 20G03GAL4>mCD8::GFP. GFP-expressing neurons (green) with immunostaining for anti-Lk (magenta) and neuropil marker nc82 (gray), shows no co-localization of Lk in 20G03GAL4-labeled neurons. (B) RNAi of Lk in 20G03GAL4 neurons does not affect postprandial sleep (60 flies per genotype; n\u00a0=\u00a01118 meals, 20G03GAL4 / mCherryRNA; 1249, 20G03GAL4 / LkRNAi [TRIP]).\n\n## Discussion\n\nThe ARC is the first platform capable of simultaneously measuring sleep and resolving discrete feeding events in individual flies. Using this tool, we found that flies exhibit a rise in sleep following a meal. Interestingly, consumption of a meal did not necessarily affect the depth of sleep when controlling for time inactive. There are many instances in which genes or neural processes have been found to influence particular features of sleep while leaving others unaffected (Harbison et al., 2009; Shi et al., 2014; Shang et al., 2011). Similarly, our work suggests that sleep probability and sleep depth can also be dissociated. By further examination of the shift in sleep probability, we found that it increased as a function of meal size. This may be paralleled in humans where cranial EEG power increases with meal size and during certain stages of sleep (Reyner et al., 2012).\n\nIn examining individual meal components, we identified volume, protein, and salt as effectors of postprandial sleep. While human studies have been unable to resolve a link between meal volume and measures of wakefulness (Landstr\u00f6m et al., 2001), artificial distension of the gut has been shown to increase sleep in rats (Lorenz et al., 1998). Although there are no studies on the effect of protein on postprandial sleep, protein consumption modulates sleep in Drosophila and positively correlates with napping in humans (Catterson et al., 2010; Grandner et al., 2010). Similarly, although there are no studies on the influence of salt on postprandial sleep, salt intake increases mammalian oxytocin signaling, which has been implicated in sleep-wake behavior (Krause et al., 2011; Lancel et al., 2003). Sucrose has been shown to play a critical role in long-term sleep homeostasis and architecture in flies (Keene et al., 2010; Linford et al., 2012), although our findings indicate that it does not modulate postprandial sleep. Although we demonstrate the effectiveness of these dietary components in isolation, we note that meals typically incorporate multiple elements. Thus, further work is necessary to identify the mechanisms by which each constituent is sensed and the potential interactions between them. Lipids are also present in many fly food sources and future examination of their influence on postprandial sleep might be facilitated by adding fat solubilizers to the liquid food used in the ARC.\n\nWe demonstrate that the Lk system plays a role in postprandial sleep (Figure 7H). A subset of Lkr neurons were necessary to initiate postprandial sleep in the presence of protein. While we expected that animals defective in protein sensing would experience postprandial sleep similar to that of animals fed only sucrose, we found instead that they had a waking response. This suggests that ingested protein promotes both sleep and wakefulness, and that the wakefulness is normally counterbalanced by Lkr neuronal activity. While this study does not specifically identify the waking output for protein, it was previously shown that Translin acts through Lk-expressing cells to drive wakefulness in response to sucrose starvation (Murakami et al., 2016). While this does not explain rapid wake promotion in response to protein ingestion, it does demonstrate that Lk-expressing cells are capable of promoting wakefulness.\n\nAnother recent finding identified Lkr neurons as circadian output neurons, which modulate activity rhythmically. The same study found that incubation of Lkr cells with Lk shunts their calcium response to the cholinergic agonist carbachol (Cavey et al., 2016), suggesting an inhibitory connection between Lk and downstream Lkr neurons. By stimulating these same Lk neurons, we observed a reduction of postprandial sleep matching the effect of Lkr silencing, providing additional evidence that the lateral horn harbors an inhibitory node between Lk and Lkr neurons. We also found that knockdown of Lk in these cells increased postprandial sleep, supporting this notion. However, it has been suggested that Lk may have additional\u00a0receptors (Terhzaz et al., 1999), and there is still a lack of definitive evidence for the inhibitory mechanism between Lk and Lkr neuronal activity in the lateral horn. Additional genetic tools, including lines with restricted expression patterns, will be needed to fully uncover the genetic interactions and neuronal connectivity of this system.\n\nWe also found a subset of cells labeled by 20G03 that modulate postprandial sleep during the period near \u2018dusk\u2019 or \u2018lights-off\u2019. Interestingly, the subset harbors acetylcholine MBONs\u2014cells necessary for the short-term associative memory between sucrose consumption after starvation and an odor\u00a0(Aso et al., 2014). This suggests that these cells activate following a feeding event, in agreement with our results. This is further supported by the anatomical distribution of cells in the SOG, a region of the fly brain that regulates feeding behavior. The distribution also shows overlap with Lkr neurons and regions of the neuronal clock network, suggesting a diversity of regulatory inputs and outputs. Further studies might employ GFP reconstitution across synaptic partners (GRASP) (Gordon and Scott, 2009) or neuronal co-labeling to demonstrate these connections. The apparent diversity of neuronal modulators of postprandial sleep opens the door to future work on determining the various genes and circuits involved.\n\nThe tachykinin family to which Lk belongs has been implicated in the regulation of satiety and sleep, however any physiological connections between these behavioral outputs has not been explored (Massi et al., 1988; Zielinski et al., 2015). The orexin system is regulated by a diversity of signaling molecules (Scammell and Winrow, 2011) and has already shown promise as a target for sleep therapeutics. Such genetic diversity and therapeutic potential may also be true of systems governing postprandial sleep. Accordingly, the ARC provides a platform\u00a0for future studies aimed at uncovering additional genes, circuitry, and physiological roles of postprandial sleep. Furthermore, the ability to measure both sleep and feeding in individual animals may shed new light on the fundamental relationship\u00a0between these behaviors in other paradigms.\n\n## Materials and methods\n\n### Drosophila lines and culture\n\nFlies were developed in 6 oz. bottles on a standard cornmeal-sucrose-yeast medium consisting of (w/v) 5.8% cornmeal, 3.1% active dry yeast, 0.7% agar, 1.2% sucrose, and (v/v) 1% propionic acid and 0.22% Tegosept (w/v, pre-dissolved in ethanol). Typically,\u00a0males were collected 0\u20132 days after eclosion under gentle CO2 anesthesia and maintained on standard diet at\u00a0~20 flies per vial (Polystyrene, 25\u00a0\u00d7\u00a095 mm). All flies were maintained in a humidity and temperature controlled incubator at 25\u00b0C and 65% relative humidity under a 12/12 hr light/dark cycle. All experiments were carried out with 5\u20139 day old males. R20G03 (20G03, RRID:BDSC_48907) and LkrGAL4 (R65C07, RRID:BDSC_39344) neuronal driver expression patterns were identified by and obtained from Janelia Farm (Jenett et al., 2012) via the Bloomington stock center. UAS-Kir2.1(Baines et al., 2001) and\u00a0TubGAL80ts (McGuire et al., 2004) were previously described. LkRNAi (TRIP, RRID:BDSC_25798) was obtained from the Bloomington Stock Center. LkRNAi (VDRC, 14091) was obtained from the Vienna Drosophila Resource Center. UAS-TRPA was provided by Ulrike Heberlein. LkGAL4 and the anti-Lk antibody were provided by Bader Al-Anzi.\n\n### Diets\n\nLiquid diets were prepared by boiling ingredients in 100 ml ddH2O followed by filtration (0.2 \u00b5m cellulose acetate syringe filter, VWR,\u00a0Radnor,\u00a0PA). Listed percentages of Bacto Tryptone, Bacto yeast extract, sucrose, or NaCl were calculated as weight/volume. All reagents were obtained from Fisher Scientific (Waltham, MA) or VWR. Feeding behavior was recorded on a standard liquid diet of 2.5% sucrose\u00a0+\u00a02.5% yeast extract unless otherwise noted.\n\n### ARC behavioral chamber\n\nAnimals were housed in a plastic chamber (acrylonitrile butadiene styrene) containing small half-cylindrical cells (7 mm wide, 4.5 mm depth, 1.15 mm spacing) fit with a 2 mm thick clear acrylic panel for visualization. Strips of infrared led lights were placed\u00a0~16 cm behind each chamber on a heat sink to provide backlighting for feeding and motion tracking. Each animal was given access to a capillary filled with liquid food. Above the chambers was a 2 mm gap with a small overhang allowed for a sliding gate (5 mm\u00a0\u00d7\u00a02 mm) to seal individual fly cells. The gate contained evenly spaced 2.5 mm vertically oriented holes above the center of each fly cell. This allowed for the insertion of tightly fitting 200 \u00b5l pipette tip sleeves that were cut to hold the food-containing capillaries (5 \u00b5l glass capillaries, VWR). Sleeves were made by cutting the narrow end of 200 \u00b5l pipette tips to fit capillaries tightly. The dye used for liquid meniscus tracking was composed of 75% mineral oil, 25% dodecane, and 1% Copper (II) 1,4,8,11,15,18,22,25-octabutoxy-29H,31H-phthalocyanine (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO). Dye solution was vortexed for 1 min and centrifuged briefly. Supernatant dye was collected and re-dispensed into 1.5 ml tubes and vortexed for 1 min. Dye solution was loaded into each capillary to make a 1 mm plug before loading liquid diet. Food was loaded until dye bands were approximately 0.5 mm below the capillary reference mark. To improve visualization of the dye and reference mark, thin white construction paper was gently attached to the back of capillaries using double-sided tape.\n\n### Feeding behavioral capture and analysis\n\nFor ARC serial image capture, we used a Lifecam 1080p HD webcam (Microsoft, Redmond, WA) with the infrared filter replaced by an infrared pass filter. The camera was mounted with a custom bracket at equal height to the base of the capillaries. PhenoCapture software was used to capture one image per min using the time-lapse image capture tool (www.phenocapture.net). Each capillary had an exterior reference mark and was pre-loaded with an oil-based dye band, marking the meniscus of the liquid food. ImageJ was used for image processing\u00a0(Schneider et al., 2012). Images were cropped to include all capillaries and dye bands. The\u00a0images were background subtracted using the built-in subtract background function with a rolling ball radius of five and disabled smoothing. The\u00a0images were then thresholded manually until the dye bands and reference marks were faithfully displayed without background noise. The\u00a0images were split to contain image stacks of individual capillaries and tracked using a custom ImageJ plugin. The relative distance between the food meniscus and the reference mark was calculated at each frame using the custom plugin. We used a meal selection algorithm that estimates noise by an iterative filtration of distal values 4.0 s.d. above the \u0394pixel mean (see Supplementary file 1). Meals were then selected as values which were 3.5 s.d. above the estimated noise, based on the one frame/min sampling rate. In a setup tracking 30 capillaries, this method provides 10 nL resolution although greater resolution can be achieved by increasing camera resolution and sampling rate. Though infrequent, temporally adjacent feeding bouts were combined and time stamped with the latter meal time. Thus, feeding bouts followed by at least 1 min of non-feeding were considered meals. Each feeding event was corrected for effects of evaporation and luminance fluctuation on observed meal size by subtracting the average noise value from all non-feeding frames. Meal output contains meal associated time and corrected volume.\n\n### Positional tracking\n\nBehavioral tracking was carried out with a custom, freeware, cross-platform analysis framework (JavaGrinders Library, available for free download at http://iEthology.com/). This library utilizes and extends machine vision functions provided by the OpenCV project for high-resolution analysis of spatial and behavioral data. With an integrated interface for standard USB video device class (UVC) cameras, the software implements multi-stage object detection and analysis for 8-bit grayscale/32-bit color frame sequences in real-time. Following the subtraction of a reference frame, the tracker locates the frame coordinate with the highest remaining pixel value. Provided this value exceeds the object's threshold, the detection algorithm proceeds outwards until it identifies a starting point along the object's thresholded border. By following this edge until it returns to the starting point, the detection algorithm characterizes the object's outline as a polygonal shape. The object's center location is estimated by the polygon's centroid, directional attributes (e.g., long axis) which are obtained via a Singular Value Decomposition of the polygon's outline. The projected size is represented by the shape's area. The size of a fly tracked in the ARC measured approximately 15\u201320 pixels in length. The present study used a Microsoft Lifecam Studio camera with the infrared filter replaced by an infrared pass filter. Although much higher rates are possible within this system, a reduced sampling rate of 1 Hz was chosen as it proved sufficient for identifying the extended periods of inactivity indicative of sleep. The\u00a0maximum frame rate capability depends on a number of factors, including the video's resolution, the object's size, the performances of processor and graphics card, and the specifications of the hardware drivers used to interface with the camera. Distance traveled was obtained from Euclidean measures between object centers in consecutive frames. Motion values less than 50% of the fly body length (FBL) were discarded. Dropped positions were reset to the last known location for motion and sleep calculation purposes. This system has been previously tested for Drosophila tracking sufficiency and demonstrated enhanced motion/sleep characterization compared to alternative methods (Donelson et al., 2012). An animal was considered sleeping during any period of immobility exceeding 5 min, based on previous studies showing that this period of inactivity is highly correlated with hallmarks of sleep (Shaw et al., 2000; Huber et al., 2004). Speed of each motion event was calculated as the distance traveled during that event divided by its uninterrupted duration. This is the first time, to our knowledge, that sleep has been measured in vertically oriented chambers, and on a liquid diet. However, we found sleep patterning in the ARC to be in line with the more commonly used Drosophila Activity Monitor (TriKinetics, Waltham, MA). Notably, object detection provides a higher resolution for sleep bout duration\u00a0(Figure 1\u2014figure supplement 1D).\n\n### ARC experimental design\n\nEach fly well was loaded with 300 \u00b5l of 1% (w/v) Bacto agar to allow ad libitum access to water. Flies were loaded into chambers using a standard mouth aspirator to avoid behavioral perturbation from CO2 anesthetization. After loading each fly, a sleeve and capillary were quickly inserted to prevent escape. Flies were habituated in the recording chamber for 20\u201324 hr with access to high nutrient food (5% sucrose\u00a0+\u00a05% yeast extract) to obviate the need for more than one food change every 24 hr. All experiments had daily food changes from Zeitgeber time (ZT) 0\u20130.5 hr. Infrequently, food consumption exceeded the volume administered requiring an additional food change at ZT 8\u201312.\n\n### Behavioral data analysis\n\nMotion and feeding data were analyzed using custom python-based software and custom or built-in Matlab functions (The Mathworks, Natick, Massachusetts, USA). Instructions and 3D print files for ARC setup and data analysis software are available upon request.\n\nProbability of sleep is calculated as the population mean of sleep\u00a0probability/unit time. 1-min bins were used for all Psleep plots. \u0394Psleep represents a comparison of pre-meal to post-meal sleep by calculating the difference in Psleep between post-meal time bins and their respective pre-meal time bins (i.e. (t0\u20131 min post-meal) \u2013 (t0\u20131 min pre-meal), (t1\u20132 min post-meal) \u2013 (t1\u20132 min pre-meal)\u2026). This was either calculated in 1-min bins for time-course analysis, or in 20-min time bins following the meal. The 20-min bin was selected since this length of time covered the mean duration of postprandial sleep for both Canton-S and w1118.\n\n### Arousal threshold analysis\n\nTo test arousal threshold, we adapted methodology previously used for quantifying sleep and sleep depth (van Alphen et al., 2013; Faville et al., 2015). Animals were exposed hourly to a series of vibrations of increasing intensity ranging from 0.8 to 3.2 g, in steps of 0.6 g. Stimuli trains were composed of 200 ms vibration with 800 ms inter-vibration interval and 15 s inter-stimuli train interval. Stimulation intensity and timing were controlled using pulse-width modulation via an Arduino UNO and shaft-less vibrating motors (Precision Microdrives, model 312\u2013110) (Figure 2C). Arousal to a given stimulus was assigned when an animal (1) was inactive at the time of the stimulus, (2) satisfied a given inactivity criteria at the time of the stimulus, and (3) moved within the inter-stimuli train period (15 s) of that stimulus.\n\n### Grooming analysis\n\nTo determine the impact of grooming behavior on calculated sleep, we simultaneously recorded video of flies during a normal ARC experiment using equipment and videocapture methods previously described (King et al., 2016). Grooming start and stop times were manually noted, where the observer was blind with respect to feeding times. Times were then computer annotated as a binary (grooming\u00a0=\u00a01, not grooming\u00a0=\u00a00) for all time points within the experiment. Individual housing precluded the need for annotation of courtship behaviors.\n\n### Meal size, volume, and nutrient grading\n\nFor meal volume gradings, animals were fasted for 20 hr and then placed on a 0.25% tryptone diet. Feeding events were recorded for 24 hr. This paradigm provided a high range of feeding volumes while maintaining a small but sufficient amount of nutrients to elicit feeding. Meal volumes and associated sleep events were grouped into 0.01 \u00b5l bins according to volume consumed. Bins greater than the 97th percentile were excluded to maintain sufficient sample size for each bin. Alternative experiments for testing volumetric effects used small amounts of sucrose (1%) or both sucrose and tryptone (1% sucrose\u00a0+\u00a00.25% tryptone) and gave similar results (data not shown). For sucrose grading, the same paradigm was used with a low tryptone diet (0.25%) supplemented with varying concentrations of sucrose (0, 1, 5, 15, and 25%). Feeding events were then filtered to include volumes within the range 0.02\u20130.04 \u00b5l which included 37% of all recorded meals (1131/3038 meals). This range was chosen to maintain a small and narrow volumetric input, and because all dietary groups maintained meal volumes within this range. Meals were grouped into 1.333 \u00b5g bins of sucrose consumed during the meal (meal volume \u00d7 nutrient concentration). Salt grading was performed similarly but with varying concentrations of salt (0, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75, and 1%) and 0.05 \u00b5g bins, and included 33% of all recorded meals (478/1446 meals). Protein grading was performed by providing diets of varying concentrations of tryptone (0.25, 1, 2.5, 3, 4, and 5%) and analyzed similarly to sucrose and salt experiments using 0.333 \u00b5g bins, and included 38% of all recorded meals (714/1872 meals).\n\n### LkrGAL4 dietary manipulations\n\nFor LkrGAL4 silencing experiments, flies were fed standard liquid diets: 2.5% sucrose\u00a0+\u00a02.5% yeast extract, respectively. To test volume response deficiency, animals were fed a low nutrient (1% sucrose\u00a0+\u00a00.25% tryptone) food which elicited a large range and frequency of meals. To test protein response deficiency, animals were fed 2.5% sucrose supplemented with the standard diet equivalent of protein (1.67% tryptone). The standard diet contained a negligible amount of salt (with respect to inducing a postprandial sleep response). To test a salt response deficiency, animals were fed 2.5% sucrose supplemented with 1% NaCl. Average meal size between groups did not differ\u2014hence, meal size filtering was not applied.\n\n### Immunohistochemistry\n\nBrains were imaged as described previously (Murakami et al., 2016).\n\n### Statistics\n\nStatistical analysis was performed using Matlab statistical toolbox or GraphPad Prism version 5.04 (GraphPad Software, La Jolla, CA). All reported values are mean \u00b1 s.e.m. Shapiro-Wilk test was used to determine data normality. Data were analyzed using either Wilcoxon matched-pairs sign rank test for comparisons of non-parametric Psleep of animals before and after meals, Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons for non-parametric comparisons of \u0394Psleep, or the Mann-Whitney test when comparing two non-parametric groups, non-paired observations. Comparisons of meal size to given features were analyzed using Spearman rank correlation, due to non-parametric distribution, while binned data were analyzed using Pearson correlation.\n",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "c2ba0ab4-00aa-4975-b976-c255306fc22a",
+      "submission_id": "34965538-8d11-4dec-99b1-393129d8b312",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19334.021](https://doi.org/10.7554/eLife.19334.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Postprandial sleep mechanics in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe following individual involved in the review of your submission has agreed to reveal his identity: Paul Shaw (peer reviewer).\n\nAlthough all three reviewers found the work of high quality and potentially interesting, the consensus opinion was that there was still a great deal of work required to support the conclusions of the manuscript. In particular, the studies of the role of leucokinin and LKR require additional experiments. Given the time it would take to perform these lengthy additional experiments, we felt it would be most fair to return the paper to you. If, in the future, you feel you can address these concerns, we would be open to receiving a new manuscript on the topic and would make every effort to return this to the same reviewers.\n\nReviewer #1:\n\nThis manuscript examines interactions between feeding and sleep in Drosophila and proposes that there is an increase in sleep post-feeding. The authors show decreased locomotion post-feeding, increased startle response, and that volume consumed and nutrient affects sleep probability. They further show that silencing a subset of LKR neurons decreased sleep whereas silencing LK neurons increased sleep, and interpreted this to suggest that LK has multiple roles in promoting and inhibiting sleep. Overall, there are intriguing findings in this manuscript; in particular the notion the feeding increases sleep is very exciting. The data, however, seem preliminary and more suitable for publication in a specialty journal. My main reservations are the following:\n\n1) The role of LKR and LK is unclear. The nature of the lines used is not well-described. Do these lines really label a subset of all LKR neurons and all LK neurons? By what criteria, Ab staining?\n\n2) The function of LK and LKR neurons is not clear. The observation that silencing LK neurons increased sleep and silencing LKR decreased sleep needs to be explained. Use of multiple RNAi lines to knock down LK and LKR, and use of multiple LK-Gal4 and LKR-Gal4 lines would be important to resolve this. Does RNAi against LK and LKR pan-neuronally increase sleep? Do different LKR and LK Gal4 lines show consistent behavioral phenotypes?\n\n3) What is the evidence that the decreased locomotion is sleep? Flies may significantly increase grooming after feeding, leading to decreased movement overall. This, in principle, could influence startle and depend on ingested compound. High resolution monitoring of behavior would be important to rule out that feeding influences the probability of other behaviors.\n\nReviewer #2:\n\nIn this manuscript the authors study the impact of food intake on subsequent sleep. They report that the probability of sleeping is increased following meals which was correlated with the meal content. In addition, they report that silencing Leucokininreceptor expressing neurons reduces postprandial sleep. Similarly, silencing Leucokininneurons increase postprandial sleep.\n\nAll in all, I thought this was a well written and fun manuscript. The authors do a nice job of presenting the data and the results are solid. My main critique is that virtually all of the data is presented as a probability. While this may very well be the best way to present the data it leaves the reader without any way to assess the magnitude of the effect or compare it with changes in sleep reported in the literature in response to other manipulations.\n\nWith that in mind, it seems important to show some data that shows the changes in sleep in minutes and to describe other sleep parameters such as average sleep bout duration (if this data was included, I apologize but I couldn't find it). Small effects can have large consequences so there shouldn't be any hesitation about showing more data. Similarly, nobody has recorded sleep in flies maintained in a vertical environment. It would be great to see what the pattern of sleep looked like compared to the typical experiment.\n\nTo my knowledge yeast also contain lipids but there wasn't any attempt to determine how lipids changed postprandial sleep. This decision should be discussed.\n\nIn summary, I am very enthusiastic about this manuscript even though I am quite not sure if it will be functionally relevant for the animal.\n\nReviewer #3:\n\nPostprandial sleepiness is a phenomenon that most can easily recognize, but has been difficult to objectively document. In this manuscript, Murphy et al. develop a novel assay combining the CAFE assay with video measurements of locomotor activity, in order to simultaneously assess feeding and sleep in Drosophila. Using this ARC assay, they find that larger meals, and protein and salt meals promote sleepiness, while sucrose meals do not. They also suggest that the Leuc/LKR pathway, previously implicated in regulating feeding in flies, modulates post-prandial sleepiness in response to protein intake.\n\nOverall, the work is interesting and generally carefully done, and the ARC assay is likely to provide new insights into the dynamic relationship between feeding and sleep. However, the manuscript still needs additional work to justify its publication in a journal with broad impact and scope, like eLife.\n\n1) The characterization of post-prandial sleepiness using the ARC assay has been carefully done. However, the novelty and impact of this work lies with the use of this assay to identify molecular or cellular mechanisms that mediate this process. To this point, the authors have significant work to do to make a convincing argument regarding the role of LKR and Leuc neurons in this post-prandial sleepiness.\n\na) The authors use a single LKR RNAi to knockdown LKR. QPCR data should be provided demonstrating effective knockdown of LKR and another independent RNAi strain (or alternative genetic approach) should be used to ensure specificity of phenotype.\n\nb) The authors also use a single LKR-Gal4 line (R65C07) in their experiments. Has this driver been previously characterized, in terms of number of LKR+ cells vs LKR- cells, as well as precisely which LKR+ cells are present? As is the case with the RNAi line, an additional Gal4 line containing LKR cells (such as the original Lkr-Gal4-, AI-Anzi et al., 2010) would help to strengthen their claims. Similar issues exist with the authors' use of a single Leuc-Gal4 line (R20G03).\n\nc) Given that they are examining adult behavior, it would be better to use conditional silencing approaches (e.g., Kir2.1, tubGal80ts) to bypass effects on development in assessing the role of LKR and Leuc neurons in post-prandial sleepiness. Also, does activation of LKR and Leuc neurons result in a postprandial phenotype opposite to that seen with silencing?\n\nd) The authors make the unexpected finding that Leuc neurons (or at least a subset of them) seem to promote post-prandial arousal. In the absence of a better understanding of how the Leuc and LKR neurons interact to regulate sleep/wake, the Leuc data could be removed from the manuscript, as it does not add much.\n\ne) Do the LKR or Leuc neurons show changes in activity with feeding? If they play a physiological role in post-prandial sleepiness, one would expect their activity levels to change with feeding (and with protein feeding in particular).\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your article \"Postprandial sleep mechanics in Drosophila\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Paul Shaw (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript examines interactions between feeding and sleep in Drosophila and uncovers a role for LK in regulating postprandial sleep. In their resubmitted manuscript, Murphy et al. have performed a number of control experiments and focused their analysis of mechanisms underlying postprandial sleep to Leuc and LKR circuits. Since their last submission, Cavey et al. (2016) have published a description of Leuc/LKR neurons acting downstream of clock neurons to regulate locomotion and sleep, and also provide evidence for an inhibitory action of Leuc on LKR neurons, which helps to resolve the opposing effects of Leuc and LKR circuits on postprandial sleep previously seen by Murphy et al. Although the manuscript has considerably improved, questions remain about the Gal4 lines used and the roles of LK and LKR.\n\nEssential revisions:\n\n1) The Gal4 lines used for LK and LKR are Rubin transgenic lines that contain 3 Kb fragments of LK and LKR non-coding regions (these are not enhancer traps). Many times these fragments do not recapitulate endogenous gene expression. The Cavey study nicely validated the LKR line by showing that the neurons respond to LK. The LK line has not been validated and LK Ab staining with the Gal4 line used is required.\n\n2) The authors removed the RNAi studies shown in the previous version, but these are important. Two RNAi lines for LK and LKR should be used to test the role of these genes in LK and LKR neurons (the Rubin Gal4 lines used in this study). If the LKR RNAi data conflicts with the model presented, then the model should be modified.\n",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bc85c192-5239-4194-9ad1-366a297b7c82",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C1",
+      "claim": "The Activity Recording CAFE (ARC) is a system that couples machine vision tracking of capillary-based food consumption and animal motion.",
+      "claim_type": "EXPLICIT",
+      "source": "To simultaneously measure sleep and feeding of individual adult flies, we designed the Activity Recording CAFE (ARC), a system that couples machine vision tracking of capillary-based food consumption and animal motion (Figure 1A\u2013C) (Ja et al., 2007; Donelson et al., 2012; Deshpande et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development and design of the ARC system with specific references to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "e8887930-f14a-479d-a4f5-752ccfffea1d",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C2",
+      "claim": "Flies inactive for 5 min exhibit multiple hallmarks of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that flies inactive for 5 min exhibit multiple hallmarks of sleep (Shaw et al., 2000; Huber et al., 2004; Hendricks et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3e400be4-5052-4698-9e0c-e84a9770b963",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C3",
+      "claim": "Sleep architecture in the ARC is similar to previous studies using high resolution object tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite different housing and food consistency, we found sleep architecture to be similar to previous studies using high resolution object tracking, a method which has greater resolution of total sleep and sleep duration than the infrared-beam based alternative (Figure 1C, Figure 1\u2014figure supplement 1A\u2013D) (Donelson et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by comparison to previous studies and data shown in figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "c93b8fc4-35c9-438d-b3e1-1739411c6372",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C4",
+      "claim": "Flies move less after meals than before, with the effect being more pronounced with larger meals.",
+      "claim_type": "EXPLICIT",
+      "source": "Flies appeared to move less after meals than before\u2014an effect more pronounced with larger meals\u2014suggesting that sleep might also be greater after eating (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3d4ad76f-3771-407a-a425-30fbaf76c52a",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C5",
+      "claim": "Animals position themselves closer to food following each meal.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals also positioned themselves closer to the food following each meal (Figure 1E\u2013F), consistent with observations that isolated flies sleep close to food (Hendricks et al., 2000) and the spatial tendency of flies driven to sleep by activation of neurons expressing short neuropeptide F, a satiety signaling hormone (Shang et al., 2013; Lee et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data in figures and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "7be58640-3999-4941-bc37-8e1b0c3c50c6",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C6",
+      "claim": "The probability of sleep (Psleep) declines sharply in the time approaching each meal.",
+      "claim_type": "EXPLICIT",
+      "source": "The animals experienced a sharp decline in Psleep in the time approaching each meal, as expected since flies cannot sleep and feed simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data analysis and logical inference about the incompatibility of sleep and feeding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "2f1bfe19-a130-4897-b8f9-4ed88f5ab600",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C7",
+      "claim": "Psleep rises rapidly after a meal and exceeds the respective pre-meal Psleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent to the meal, Psleep rose rapidly and exceeded the respective pre-meal Psleep (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "cdb41f4f-4435-4770-a9f2-fe9b302649a0",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C8",
+      "claim": "Postprandial sleep lasts approximately 20\u201340 min with a maximum \u0394Psleep amplitude of 0.15 and 0.2 for w1118 and Canton-S, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed a rise in sleep lasting approximately 20\u201340 min with a maximum \u0394Psleep amplitude of 0.15 and 0.2 for the control strains, w1118 and Canton-S, respectively (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "d53a4179-0305-41e8-ace9-b00b444c8cef",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C9",
+      "claim": "The postprandial sleep effect is observed in both males and females.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect was observed in both males and females (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "861344c9-3e3e-43b7-8f6a-bfa5d58040fe",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C10",
+      "claim": "Sleep initiation is more probable following a meal.",
+      "claim_type": "EXPLICIT",
+      "source": "While the duration of sleep events prior to a meal is inherently limited by the time until an animal wakes to eat, sleep initiation is not limited and was more probable following a meal (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "7b4cb565-d916-4f7a-9a9d-bd56ebfbb273",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C11",
+      "claim": "Arousal threshold initially increases with the amount of time that a fly is inactive, with the greatest change occurring in the first 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that arousal threshold initially increases with the amount of time that a fly is inactive, with the greatest change occurring in the first 5 min (Figure 2D) (Shaw et al., 2000; Huber et al., 2004; van Alphen et al., 2013; Faville et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data in Figure 2D and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "15467b5e-1b92-4fdf-925b-3f9e62651f69",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C12",
+      "claim": "Animals inactive for 0\u20135 min show a significantly greater arousal threshold in the 20, 40, and 60 min post-meal compared to respective pre-meal times.",
+      "claim_type": "EXPLICIT",
+      "source": "In this transition state animals showed a significantly greater arousal threshold in the 20, 40, and 60 min post-meal compared to animals during the respective pre-meal times (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2F with statistical significance indicated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "ea48dee3-2a80-4b18-83d2-2a70ab13e98f",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C13",
+      "claim": "Food intake transiently influences sleep induction rather than depth.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that food intake transiently influences sleep induction rather than depth, which might be shaped solely by the amount of time that an animal is inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the correlation data between arousal threshold and postprandial sleep.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "61be883f-0b5d-4cb3-95bc-2e6ef670ff34",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C14",
+      "claim": "Falsely calculated sleep due to grooming accounts for ~7% of sleep surrounding meals and has statistically indistinguishable occurrence before and after a meal.",
+      "claim_type": "EXPLICIT",
+      "source": "Falsely calculated sleep, in which animals were grooming rather than immobile, accounted for ~7% of sleep surrounding meals and had statistically indistinguishable occurrence before and after a meal (Figure 2G, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by manual scoring data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "53632723-4726-4d65-bdd0-c60731a1cdda",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C15",
+      "claim": "Re-analysis of sleep where sleep was defined as periods of immobility and lack of grooming exceeding 5 min lowered total sleep but did not alter the rise in postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-analysis of sleep surrounding a meal, where sleep was defined as periods of immobility and a lack of grooming exceeding 5 min, lowered total sleep but did not alter the rise in postprandial sleep (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by re-analysis data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "58b2e2d8-8d95-4cfc-a040-2c88b54eb66a",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C16",
+      "claim": "Sleep following meals increases as a function of meal size.",
+      "claim_type": "EXPLICIT",
+      "source": "We plotted Psleep or \u0394Psleep for different consumption volumes and found that sleep following meals increased as a function of meal size, while pre-prandial sleep did not (Figure 3A, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "967b491f-c174-4ab9-b01f-72b39e6bdeed",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C17",
+      "claim": "There is a significant correlation between \u0394Psleep and consumption volume when meals are analyzed individually or binned.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a significant correlation between \u0394Psleep and consumption volume when meals were analyzed individually (Figure 3\u2014figure supplement 1B) or binned (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "0ea23f30-a754-4205-94e6-d6e6d7a1f844",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C18",
+      "claim": "The change in movement rate after a meal (\u0394speed) shows a much weaker correlation to meal size than \u0394Psleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in movement rate after a meal (\u0394speed) showed a much weaker correlation to meal size than \u0394Psleep (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "f254db09-9348-4958-a1b3-329e43fdb5fe",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C19",
+      "claim": "There is a highly significant correlation between meal volume and 20 min \u0394Psleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a highly significant correlation between meal volume and 20 min \u0394Psleep (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "5cbd43a4-bce0-4292-b670-ebfc0a233b2e",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C20",
+      "claim": "\u0394Psleep is significantly correlated to both protein and salt ingestion.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that \u0394Psleep was significantly correlated to both protein and salt ingestion (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "c3237512-c541-44b3-8775-216bb296cd12",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C21",
+      "claim": "There is no correlation between ingested sucrose and \u0394Psleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, despite reported effects of sucrose on total sleep (Keene et al., 2010; Linford et al., 2012), we found no correlation between ingested sucrose and \u0394Psleep (Figure 4A, Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in figures and contrasts with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "1ea80b8c-fe55-4af6-b9d4-f78524a7c082",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C22",
+      "claim": "Meal volume induces a greater rise in \u0394Psleep amplitude than protein or salt for any given increase in total \u0394Psleep during the decay.",
+      "claim_type": "EXPLICIT",
+      "source": "For any given increase in total \u0394Psleep during the decay, meal volume induced a greater rise in amplitude than protein or salt (Figure 4\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by kinetic analysis shown in a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "e23e8f6b-ee66-4290-a897-9d11e8da19ce",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C23",
+      "claim": "Silencing of Lkr neurons labeled by LkrGAL4 by overexpressing Kir2.1 eliminates any rise in postprandial sleep and instead causes slight arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "This manipulation eliminated any rise in postprandial sleep and instead caused slight arousal (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "62df1855-e262-4a2b-911b-c87625354cca",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C24",
+      "claim": "LkrGAL4 drives expression in neurons innervating the dorsal fan-shaped body, stemming from cell bodies in the lateral horn.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression pattern of LkrGAL4 recapitulates that of Lkr neurons which were found to regulate meal size (Al-Anzi et al., 2010), revealing several cell populations stemming from the lateral horn which innervate the dorsal fan-shaped body of the central complex\u2014a region of the brain which functions in sleep homeostasis, visuomotor function, and hunger-related behavior (Figure 5B) (Donlea et al., 2011, 2014; Seelig and Jayaraman, 2013; Krashes et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by anatomical data shown in Figure 5B and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "6cfbc435-6099-432e-87ec-7002f2e949ae",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C25",
+      "claim": "LkrGAL4-silenced animals and their controls show similar \u0394Psleep in response to ingested volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Silenced animals and their controls showed similar \u0394Psleep in response to ingested volume, indicating that the LkrGAL4 neurons are not responsible for the volumetric modulation of postprandial sleep (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "fec19811-7ffb-4d2f-af12-c257bb94f70c",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C26",
+      "claim": "LkrGAL4-silenced animals and their controls show statistically indistinguishable \u0394Psleep responses to salt manipulation.",
+      "claim_type": "EXPLICIT",
+      "source": "LkrGAL4-silenced animals and their controls showed statistically indistinguishable \u0394Psleep responses to salt manipulation (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "5cd056e6-9e66-4279-b9ff-2cd41c372400",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C27",
+      "claim": "While protein ingestion increases postprandial sleep in controls, LkrGAL4-silenced animals show a strong waking response.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, while protein ingestion increased postprandial sleep in controls, LkrGAL4-silenced animals showed a strong waking response, or a negative shift in postprandial sleep (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "79c2ecee-b261-47a8-9d94-6d82eb7e73d3",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C28",
+      "claim": "Protein can drive wakefulness in the absence of LkrGAL4 neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this waking response exceeded that of control animals on sucrose alone, indicating that protein can also drive wakefulness in the absence of LkrGAL4 neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data comparing responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "c180dddc-2636-44af-b424-28d14276af76",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C29",
+      "claim": "Inactivation of GAL80ts to silence LkrGAL4-labeled cells in adulthood is sufficient to induce a postprandial sleep defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Inactivation of GAL80ts to silence LkrGAL4-labeled cells in adulthood was sufficient to induce a postprandial sleep defect (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by conditional silencing data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "33fc698c-1b09-4319-a5aa-bb431da6db14",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C30",
+      "claim": "Immunostaining of Lk overlaps with LkGAL4-labeled cells in the lateral horn and in two cells in the suboesophageal ganglion (SOG).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, immunostaining of Lk overlapped with LkGAL4-labeled cells in the lateral horn, as well as in two cells in the suboesophageal ganglion (SOG) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "08273e5f-b55f-456a-9a87-993e63c05207",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C31",
+      "claim": "Thermogenetic activation of LkGAL4-labeled cells with TrpA significantly reduces postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Using thermogenetic activation of these cells with the transient receptor potential channel TrpA, we found that postprandial sleep was significantly reduced upon activation (Figure 6B), furthering the notion that these cells inhibit Lkr neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by thermogenetic activation data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "f5e83a75-52c5-412f-8b55-b78e910b1c48",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C32",
+      "claim": "Knockdown of Lk in LkGAL4-labeled cells using two independent RNAi lines increases postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that this knockdown increased postprandial sleep, consistent with the idea that expression of Lk in LkGAL4-labeled cells is necessary for the inhibitory effect on Lkr neuronal activity (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNAi knockdown data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "ab270233-2d9d-448f-9659-deb6b52e4ecf",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C33",
+      "claim": "20G03 labels cell bodies in the lateral horn and SOG, as well as a subset of mushroom body output neurons (MBONs).",
+      "claim_type": "EXPLICIT",
+      "source": "R20G03 (20G03), a line expressing GAL4 driven by an enhancer fragment 316 base pairs upstream of Lk, labels cell bodies in the lateral horn and SOG, as well as a subset of mushroom body output neurons (MBONs) (Figure 7A), all of which coincide with Lkr neurons labeled by the LkrGAL4driver (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by anatomical data shown in Figures 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "e697be6b-3478-487a-9499-28c23765418c",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C34",
+      "claim": "The cholinergic MBONs of 20G03 play a role in short-term appetitive memory following food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "The cholinergic MBONs of 20G03 have been shown to play a role in short-term appetitive memory following food intake (Aso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "bdd0e3df-2dc8-4ba6-8574-09d73a96a477",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C35",
+      "claim": "Constitutive and adult-restricted silencing of 20G03 neurons increases postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we again employed electrical silencing with Kir2.1 and found that constitutive and adult-restricted silencing of these neurons increased postprandial sleep, suggesting that these cells might directly inhibit the activity of proximal Lkr neurons (Figure 7C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by silencing data shown in Figures 7C and 7D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "028316a2-4906-433a-a113-a5fe8fe8c9bc",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C36",
+      "claim": "Immunostaining of Lk does not co-localize with any of the 20G03 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, immunostaining of Lk did not co-localize with any of the 20G03 cells, nor did downregulation of Lk in these cells affect postprandial sleep (Figure 7\u2014figure supplement 1A\u2013B), suggesting that their inhibitory action stems from an alternative neuropeptide or neurotransmitter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunostaining and RNAi data shown in supplementary figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "d1408bff-7404-4c48-9501-ece15d06b75b",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C37",
+      "claim": "The increase in postprandial sleep driven by 20G03 silencing is most pronounced at ZT 12.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing behavior throughout a 24 hr period, we found that the increase in postprandial sleep driven by 20G03 silencing was most pronounced at ZT 12 (Figure 7E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-course analysis shown in Figures 7E and 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "7f9f6e1d-7335-490d-80c6-84d0f1e8edbb",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C38",
+      "claim": "20G03 silencing increases sleep after but not before each meal within ZT 10\u201314.",
+      "claim_type": "EXPLICIT",
+      "source": "Closer examination within this period showed that, rather than raising sleep evenly within ZT 10\u201314, the sleep after but not before each meal was increased (Figure 7G), implying that these cells activate in response to food intake.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by detailed analysis shown in Figure 7G and inference about cell activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "e43cf1a3-6c9b-403a-88fc-83a466a80399",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C39",
+      "claim": "The ARC is the first platform capable of simultaneously measuring sleep and resolving discrete feeding events in individual flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The ARC is the first platform capable of simultaneously measuring sleep and resolving discrete feeding events in individual flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the novelty of the ARC system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "b842584d-6991-4915-8246-e6701b7ad3cf",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C40",
+      "claim": "Flies exhibit a rise in sleep following a meal.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this tool, we found that flies exhibit a rise in sleep following a meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding supported by data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "4f293ab5-29c0-44e9-b2b9-e55bf39dadf5",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C41",
+      "claim": "Consumption of a meal does not necessarily affect the depth of sleep when controlling for time inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, consumption of a meal did not necessarily affect the depth of sleep when controlling for time inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of arousal threshold data controlling for inactivity duration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "6e76de12-3cf9-4092-8542-c837a554eace",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C42",
+      "claim": "Sleep probability and sleep depth can be dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, our work suggests that sleep probability and sleep depth can also be dissociated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that meal consumption affects sleep probability but not depth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "054f90df-9522-4321-a61c-3d3e56f8f7ef",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C43",
+      "claim": "Cranial EEG power increases with meal size and during certain stages of sleep in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be paralleled in humans where cranial EEG power increases with meal size and during certain stages of sleep (Reyner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a human study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "7bd2af07-062c-4a0e-99b3-1470c69595c3",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C44",
+      "claim": "Artificial distension of the gut increases sleep in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "While human studies have been unable to resolve a link between meal volume and measures of wakefulness (Landstr\u00f6m et al., 2001), artificial distension of the gut has been shown to increase sleep in rats (Lorenz et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "65b3d483-773f-4b7a-bd27-093ce61d1876",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C45",
+      "claim": "Protein consumption modulates sleep in Drosophila and positively correlates with napping in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are no studies on the effect of protein on postprandial sleep, protein consumption modulates sleep in Drosophila and positively correlates with napping in humans (Catterson et al., 2010; Grandner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "020960c4-1117-4893-ba9d-286d4bfdcd11",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C46",
+      "claim": "Salt intake increases mammalian oxytocin signaling, which has been implicated in sleep-wake behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, although there are no studies on the influence of salt on postprandial sleep, salt intake increases mammalian oxytocin signaling, which has been implicated in sleep-wake behavior (Krause et al., 2011; Lancel et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "e9b4e8c8-497a-445f-a591-127606431835",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C47",
+      "claim": "Sucrose plays a critical role in long-term sleep homeostasis and architecture in flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Sucrose has been shown to play a critical role in long-term sleep homeostasis and architecture in flies (Keene et al., 2010; Linford et al., 2012), although our findings indicate that it does not modulate postprandial sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies and contrasted with the current findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3199b600-7e24-4adc-be47-0e13d8e8e5a6",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C48",
+      "claim": "The Lk system plays a role in postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the Lk system plays a role in postprandial sleep (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary statement supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "4aa3873e-64e6-4366-ac23-cf6a9563aad5",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C49",
+      "claim": "A subset of Lkr neurons is necessary to initiate postprandial sleep in the presence of protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of Lkr neurons were necessary to initiate postprandial sleep in the presence of protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the silencing experiments showing that LkrGAL4 neurons are required for protein-induced postprandial sleep.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "d7db0a1a-879b-45a2-bbf3-e85893adb3ec",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C50",
+      "claim": "Ingested protein promotes both sleep and wakefulness, and the wakefulness is normally counterbalanced by Lkr neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that ingested protein promotes both sleep and wakefulness, and that the wakefulness is normally counterbalanced by Lkr neuronal activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that LkrGAL4-silenced animals show a waking response to protein.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "85c0a7a3-aec5-48df-bf00-5408271a3d88",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C51",
+      "claim": "Translin acts through Lk-expressing cells to drive wakefulness in response to sucrose starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "While this study does not specifically identify the waking output for protein, it was previously shown that Translin acts through Lk-expressing cells to drive wakefulness in response to sucrose starvation (Murakami et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "eb93a80c-cbe7-42d5-be9c-cabc6e7d4da2",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C52",
+      "claim": "Lkr neurons are circadian output neurons that modulate activity rhythmically.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent finding identified Lkr neurons as circadian output neurons, which modulate activity rhythmically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a recent finding, though the specific citation is not provided in this sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "0ca362ab-60c8-412b-bf6b-e6871e640888",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C53",
+      "claim": "Incubation of Lkr cells with Lk shunts their calcium response to the cholinergic agonist carbachol.",
+      "claim_type": "EXPLICIT",
+      "source": "The same study found that incubation of Lkr cells with Lk shunts their calcium response to the cholinergic agonist carbachol (Cavey et al., 2016), suggesting an inhibitory connection between Lk and downstream Lkr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "c8738474-7788-4dfa-b0d0-ec291169a9ac",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C54",
+      "claim": "Stimulation of Lk neurons reduces postprandial sleep, matching the effect of Lkr silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "By stimulating these same Lk neurons, we observed a reduction of postprandial sleep matching the effect of Lkr silencing, providing additional evidence that the lateral horn harbors an inhibitory node between Lk and Lkr neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the thermogenetic activation experiments shown in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "0b001ef0-8522-4cef-875d-82fba56252d6",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C55",
+      "claim": "Knockdown of Lk in LkGAL4-labeled cells increases postprandial sleep, supporting the notion of an inhibitory connection.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that knockdown of Lk in these cells increased postprandial sleep, supporting this notion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the RNAi experiments shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3e7ec66a-73bc-4123-a84e-711f05120908",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C56",
+      "claim": "A subset of cells labeled by 20G03 modulates postprandial sleep during the period near 'dusk' or 'lights-off'.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a subset of cells labeled by 20G03 that modulate postprandial sleep during the period near 'dusk' or 'lights-off'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the time-course analysis shown in Figures 7E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3f28af3b-e1b9-404a-964d-9c532d70b8ca",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C57",
+      "claim": "The subset of 20G03 cells harbors acetylcholine MBONs that are necessary for short-term associative memory between sucrose consumption after starvation and an odor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the subset harbors acetylcholine MBONs\u2014cells necessary for the short-term associative memory between sucrose consumption after starvation and an odor (Aso et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "700760c0-0dd2-4550-aeef-2944c2d7a722",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C58",
+      "claim": "20G03 cells activate following a feeding event.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that these cells activate following a feeding event, in agreement with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that silencing these cells increases postprandial but not pre-meal sleep.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "4c594501-a6d7-4798-9022-f64b8218e022",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C59",
+      "claim": "The tachykinin family to which Lk belongs has been implicated in the regulation of satiety and sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "The tachykinin family to which Lk belongs has been implicated in the regulation of satiety and sleep, however any physiological connections between these behavioral outputs has not been explored (Massi et al., 1988; Zielinski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "545b969d-be2b-4c37-a61f-69c6b655f7f9",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C60",
+      "claim": "The orexin system is regulated by a diversity of signaling molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The orexin system is regulated by a diversity of signaling molecules (Scammell and Winrow, 2011) and has already shown promise as a target for sleep therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "a5a0531b-1105-4867-a239-5539542b7ea1",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C61",
+      "claim": "The ARC provides a platform for future studies aimed at uncovering additional genes, circuitry, and physiological roles of postprandial sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the ARC provides a platform for future studies aimed at uncovering additional genes, circuitry, and physiological roles of postprandial sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the potential applications of the ARC system.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "2d93729d-eb98-49af-83a8-9940a36402a6",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "claim_id": "C62",
+      "claim": "The ability to measure both sleep and feeding in individual animals may shed new light on the fundamental relationship between these behaviors in other paradigms.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the ability to measure both sleep and feeding in individual animals may shed new light on the fundamental relationship between these behaviors in other paradigms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "61e5a60d-71a0-4063-be84-335fae67c622",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed the Activity Recording CAFE (ARC), a novel system that simultaneously measures sleep and discrete feeding events in individual Drosophila. The system uses machine vision tracking of capillary-based food consumption and animal motion, with sleep defined as periods of inactivity >5 min based on established criteria. Sleep architecture in the ARC is similar to previous high-resolution tracking studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C39 collectively establish the ARC as a validated novel platform. The system design is clearly described (C1), uses established sleep criteria (C2), produces results consistent with prior methods (C3), and represents the first platform capable of simultaneous sleep and feeding measurements in individual flies (C39). The validation against existing methods strengthens the technical claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Flies exhibit a transient rise in sleep following meals, lasting approximately 20-40 min with maximum \u0394Psleep amplitudes of 0.15-0.2. This postprandial sleep effect is characterized by decreased movement after meals (more pronounced with larger meals), positioning closer to food, a sharp decline in sleep probability before meals, and rapid rise in sleep probability after meals. The effect is observed in both males and females, with increased sleep initiation probability post-meal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 and C40 provide converging evidence for postprandial sleep through multiple behavioral measures. The quantitative characterization (C8), sex-independence (C9), and multiple behavioral correlates (C4-C7, C10) provide robust support. Statistical significance is reported for key comparisons, and the logical inference about sleep-feeding incompatibility (C6) is reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Food intake transiently influences sleep induction (probability) rather than sleep depth. Arousal threshold increases with inactivity duration (greatest change in first 5 min), and animals inactive for 0-5 min show significantly greater arousal threshold 20-60 min post-meal compared to pre-meal. However, this correlation weakens in deeper sleep stages, suggesting meal consumption affects sleep probability but not depth when controlling for time inactive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C41-C42 demonstrate dissociation between sleep probability and depth through arousal threshold measurements. The experimental design appropriately controls for inactivity duration (C12), and the inference that food affects induction rather than depth (C13, C41) is supported by the weakening correlation in deeper sleep stages. This represents a novel mechanistic insight, though the arousal threshold methodology could benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "fc7464ab-4724-4f91-8130-6011b0cb52fd",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Grooming behavior does not confound postprandial sleep measurements. Manual scoring revealed that falsely calculated sleep due to grooming accounts for ~7% of sleep surrounding meals with statistically indistinguishable occurrence before and after meals. Re-analysis excluding grooming lowered total sleep but did not alter the rise in postprandial sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C15 address a critical methodological concern through manual validation. The finding that grooming occurs equally before and after meals (C14) and that excluding it doesn't change the postprandial sleep effect (C15) strengthens confidence in the primary findings. However, the sample size for manual scoring (7 flies, 55 meals) is relatively small compared to the main dataset.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "2e6cf112-1074-4ba9-8577-e6a9f9b202a8",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Postprandial sleep increases as a function of meal size. There is a significant correlation between \u0394Psleep and consumption volume when meals are analyzed individually or binned. The change in movement rate (\u0394speed) shows much weaker correlation to meal size than \u0394Psleep, indicating the effect is specific to sleep rather than general immobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 establish meal size as a quantitative modulator of postprandial sleep. The correlation analyses are appropriate, and the comparison with movement rate (C18) helps distinguish sleep from simple immobility. The Monte Carlo simulation mentioned in the text (not explicitly claimed) addresses potential sampling bias, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "6c3dde1e-e5d6-4af5-b9ea-7ef00f9d04eb",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Postprandial sleep is modulated by specific meal components: volume, protein, and salt show significant positive correlations with \u0394Psleep, while sucrose shows no correlation. Meal volume induces greater \u0394Psleep amplitude than protein or salt for any given increase in total \u0394Psleep during decay, suggesting different temporal dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 identify specific dietary modulators through systematic manipulation. The experimental design appropriately controls for confounding variables (narrow volume ranges, base diet composition). The lack of sucrose effect (C21) is notable given prior literature on sucrose and long-term sleep. The kinetic differences (C22) suggest multiple mechanisms, though further mechanistic work is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A subset of leucokinin receptor (Lkr) neurons is necessary for protein-induced postprandial sleep but not for volume or salt responses. Silencing LkrGAL4 neurons eliminates postprandial sleep and causes slight arousal. These neurons innervate the dorsal fan-shaped body from the lateral horn. Protein ingestion promotes both sleep (through Lkr neurons) and wakefulness (independent of Lkr activity), with the wakefulness normally counterbalanced by Lkr neuronal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29, C49-C50 establish nutrient-specific neural circuitry through genetic silencing experiments. The specificity for protein (C27) versus volume (C25) and salt (C26) is well-demonstrated. The conditional silencing (C29) rules out developmental effects. The inference of dual protein effects (C28, C50) is supported by the observation that silenced animals show waking response exceeding sucrose-only controls. Anatomical characterization (C24) provides circuit context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "586e6637-b5d7-403f-bf27-7dc3631710aa",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The leucokinin (Lk) system plays an inhibitory role in postprandial sleep. Lk immunostaining overlaps with LkGAL4-labeled cells in the lateral horn and SOG. Thermogenetic activation of Lk neurons reduces postprandial sleep, while Lk knockdown increases it, consistent with Lk neurons inhibiting Lkr neurons. Prior work shows Lk shunts calcium responses in Lkr cells to cholinergic agonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C48, C53-C55 establish an inhibitory Lk-Lkr connection through multiple approaches: immunostaining (C30), thermogenetic activation (C31), RNAi knockdown with two independent lines (C32), and integration with prior calcium imaging data (C53). The convergent evidence from gain-of-function (C31, C54) and loss-of-function (C32, C55) experiments strongly supports the inhibitory model, though direct demonstration of synaptic connectivity is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "556a85aa-20aa-455c-8586-4544834f5620",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A subset of non-leucokininergic cells labeled by 20G03 modulates postprandial sleep in a circadian manner, with effects most pronounced at ZT 12 (dusk). These cells include mushroom body output neurons (MBONs) involved in appetitive memory and are anatomically proximal to Lkr neurons. Silencing increases sleep after but not before meals, suggesting activation in response to feeding. Lk does not co-localize with 20G03 cells, indicating an alternative inhibitory neurotransmitter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38, C56-C58 identify a second inhibitory input to the postprandial sleep circuit with temporal specificity. The anatomical characterization (C33), functional validation through silencing (C35), temporal analysis (C37-C38), and negative Lk staining (C36) are well-documented. The inference of feeding-evoked activation (C38, C58) is reasonable given the meal-specific effect. The connection to appetitive memory circuits (C34, C57) provides interesting context, though the functional relationship remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "78a4f33c-63df-42e6-aca5-29c9af7ba981",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors contextualize their findings with prior work in mammals and flies. They cite studies showing cranial EEG power increases with meal size in humans, gut distension increases sleep in rats, protein consumption modulates sleep in Drosophila and correlates with napping in humans, salt intake increases oxytocin signaling linked to sleep-wake behavior, and sucrose affects long-term sleep homeostasis in flies but not postprandial sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 appropriately cite relevant prior literature to contextualize findings. The citations appear accurate and relevant. The contrast between sucrose's role in long-term sleep homeostasis (C47) versus lack of effect on postprandial sleep (C21) is particularly interesting and well-noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "3ea1bbad-b81a-4083-a3f6-c67450bcb810",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors discuss broader context of the leucokinin/tachykinin system and related neuropeptide systems. They cite work showing Translin acts through Lk-expressing cells to drive starvation-induced wakefulness, Lkr neurons function as circadian output neurons, the tachykinin family regulates satiety and sleep, and the orexin system is regulated by diverse signals and represents a therapeutic target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C59-C60 appropriately integrate the findings with broader neurobiology literature. The citations provide useful context for understanding the Lk system's multiple roles and potential translational relevance. These are accurate representations of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    },
+    {
+      "id": "8339fdef-ed8c-410e-8581-148604819c0a",
+      "content_id": "f2f46547-11a2-4ce7-bfeb-3397a272da53",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that the ARC provides a platform for future studies on postprandial sleep genetics, circuitry, and physiology, and may illuminate fundamental relationships between sleep and feeding in other paradigms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C62 are speculative statements about future applications. While the ARC platform is well-validated and the potential is reasonable, these are forward-looking statements rather than demonstrated results. The evaluation is uncertain because the future utility depends on work not yet performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.740258Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "bc85c192-5239-4194-9ad1-366a297b7c82",
+      "result_id": "61e5a60d-71a0-4063-be84-335fae67c622"
+    },
+    {
+      "claim_id": "e8887930-f14a-479d-a4f5-752ccfffea1d",
+      "result_id": "61e5a60d-71a0-4063-be84-335fae67c622"
+    },
+    {
+      "claim_id": "3e400be4-5052-4698-9e0c-e84a9770b963",
+      "result_id": "61e5a60d-71a0-4063-be84-335fae67c622"
+    },
+    {
+      "claim_id": "e43cf1a3-6c9b-403a-88fc-83a466a80399",
+      "result_id": "61e5a60d-71a0-4063-be84-335fae67c622"
+    },
+    {
+      "claim_id": "c93b8fc4-35c9-438d-b3e1-1739411c6372",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "3d4ad76f-3771-407a-a425-30fbaf76c52a",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "7be58640-3999-4941-bc37-8e1b0c3c50c6",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "2f1bfe19-a130-4897-b8f9-4ed88f5ab600",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "cdb41f4f-4435-4770-a9f2-fe9b302649a0",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "d53a4179-0305-41e8-ace9-b00b444c8cef",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "861344c9-3e3e-43b7-8f6a-bfa5d58040fe",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "b842584d-6991-4915-8246-e6701b7ad3cf",
+      "result_id": "040ad871-f9c1-4fcf-bf49-c0dd7ede5b9e"
+    },
+    {
+      "claim_id": "7b4cb565-d916-4f7a-9a9d-bd56ebfbb273",
+      "result_id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0"
+    },
+    {
+      "claim_id": "15467b5e-1b92-4fdf-925b-3f9e62651f69",
+      "result_id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0"
+    },
+    {
+      "claim_id": "ea48dee3-2a80-4b18-83d2-2a70ab13e98f",
+      "result_id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0"
+    },
+    {
+      "claim_id": "4f293ab5-29c0-44e9-b2b9-e55bf39dadf5",
+      "result_id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0"
+    },
+    {
+      "claim_id": "6e76de12-3cf9-4092-8542-c837a554eace",
+      "result_id": "a4413e8b-85f2-4845-a6dc-dfa7779089c0"
+    },
+    {
+      "claim_id": "61be883f-0b5d-4cb3-95bc-2e6ef670ff34",
+      "result_id": "fc7464ab-4724-4f91-8130-6011b0cb52fd"
+    },
+    {
+      "claim_id": "53632723-4726-4d65-bdd0-c60731a1cdda",
+      "result_id": "fc7464ab-4724-4f91-8130-6011b0cb52fd"
+    },
+    {
+      "claim_id": "58b2e2d8-8d95-4cfc-a040-2c88b54eb66a",
+      "result_id": "2e6cf112-1074-4ba9-8577-e6a9f9b202a8"
+    },
+    {
+      "claim_id": "967b491f-c174-4ab9-b01f-72b39e6bdeed",
+      "result_id": "2e6cf112-1074-4ba9-8577-e6a9f9b202a8"
+    },
+    {
+      "claim_id": "0ea23f30-a754-4205-94e6-d6e6d7a1f844",
+      "result_id": "2e6cf112-1074-4ba9-8577-e6a9f9b202a8"
+    },
+    {
+      "claim_id": "f254db09-9348-4958-a1b3-329e43fdb5fe",
+      "result_id": "6c3dde1e-e5d6-4af5-b9ea-7ef00f9d04eb"
+    },
+    {
+      "claim_id": "5cbd43a4-bce0-4292-b670-ebfc0a233b2e",
+      "result_id": "6c3dde1e-e5d6-4af5-b9ea-7ef00f9d04eb"
+    },
+    {
+      "claim_id": "c3237512-c541-44b3-8775-216bb296cd12",
+      "result_id": "6c3dde1e-e5d6-4af5-b9ea-7ef00f9d04eb"
+    },
+    {
+      "claim_id": "1ea80b8c-fe55-4af6-b9d4-f78524a7c082",
+      "result_id": "6c3dde1e-e5d6-4af5-b9ea-7ef00f9d04eb"
+    },
+    {
+      "claim_id": "e23e8f6b-ee66-4290-a897-9d11e8da19ce",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "62df1855-e262-4a2b-911b-c87625354cca",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "6cfbc435-6099-432e-87ec-7002f2e949ae",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "fec19811-7ffb-4d2f-af12-c257bb94f70c",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "5cd056e6-9e66-4279-b9ff-2cd41c372400",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "79c2ecee-b261-47a8-9d94-6d82eb7e73d3",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "c180dddc-2636-44af-b424-28d14276af76",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "4aa3873e-64e6-4366-ac23-cf6a9563aad5",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "d7db0a1a-879b-45a2-bbf3-e85893adb3ec",
+      "result_id": "0e6b640e-4f9f-40e9-b790-1d4624e0a0cf"
+    },
+    {
+      "claim_id": "33fc698c-1b09-4319-a5aa-bb431da6db14",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "08273e5f-b55f-456a-9a87-993e63c05207",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "f5e83a75-52c5-412f-8b55-b78e910b1c48",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "3199b600-7e24-4adc-be47-0e13d8e8e5a6",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "0ca362ab-60c8-412b-bf6b-e6871e640888",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "c8738474-7788-4dfa-b0d0-ec291169a9ac",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "0b001ef0-8522-4cef-875d-82fba56252d6",
+      "result_id": "586e6637-b5d7-403f-bf27-7dc3631710aa"
+    },
+    {
+      "claim_id": "ab270233-2d9d-448f-9659-deb6b52e4ecf",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "e697be6b-3478-487a-9499-28c23765418c",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "bdd0e3df-2dc8-4ba6-8574-09d73a96a477",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "028316a2-4906-433a-a113-a5fe8fe8c9bc",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "d1408bff-7404-4c48-9501-ece15d06b75b",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "7f9f6e1d-7335-490d-80c6-84d0f1e8edbb",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "3e7ec66a-73bc-4123-a84e-711f05120908",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "3f28af3b-e1b9-404a-964d-9c532d70b8ca",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "700760c0-0dd2-4550-aeef-2944c2d7a722",
+      "result_id": "556a85aa-20aa-455c-8586-4544834f5620"
+    },
+    {
+      "claim_id": "054f90df-9522-4321-a61c-3d3e56f8f7ef",
+      "result_id": "78a4f33c-63df-42e6-aca5-29c9af7ba981"
+    },
+    {
+      "claim_id": "7bd2af07-062c-4a0e-99b3-1470c69595c3",
+      "result_id": "78a4f33c-63df-42e6-aca5-29c9af7ba981"
+    },
+    {
+      "claim_id": "65b3d483-773f-4b7a-bd27-093ce61d1876",
+      "result_id": "78a4f33c-63df-42e6-aca5-29c9af7ba981"
+    },
+    {
+      "claim_id": "020960c4-1117-4893-ba9d-286d4bfdcd11",
+      "result_id": "78a4f33c-63df-42e6-aca5-29c9af7ba981"
+    },
+    {
+      "claim_id": "e9b4e8c8-497a-445f-a591-127606431835",
+      "result_id": "78a4f33c-63df-42e6-aca5-29c9af7ba981"
+    },
+    {
+      "claim_id": "85c0a7a3-aec5-48df-bf00-5408271a3d88",
+      "result_id": "3ea1bbad-b81a-4083-a3f6-c67450bcb810"
+    },
+    {
+      "claim_id": "eb93a80c-cbe7-42d5-be9c-cabc6e7d4da2",
+      "result_id": "3ea1bbad-b81a-4083-a3f6-c67450bcb810"
+    },
+    {
+      "claim_id": "4c594501-a6d7-4798-9022-f64b8218e022",
+      "result_id": "3ea1bbad-b81a-4083-a3f6-c67450bcb810"
+    },
+    {
+      "claim_id": "545b969d-be2b-4c37-a61f-69c6b655f7f9",
+      "result_id": "3ea1bbad-b81a-4083-a3f6-c67450bcb810"
+    },
+    {
+      "claim_id": "a5a0531b-1105-4867-a239-5539542b7ea1",
+      "result_id": "8339fdef-ed8c-410e-8581-148604819c0a"
+    },
+    {
+      "claim_id": "2d93729d-eb98-49af-83a8-9940a36402a6",
+      "result_id": "8339fdef-ed8c-410e-8581-148604819c0a"
+    }
+  ],
+  "comparisons": []
+}

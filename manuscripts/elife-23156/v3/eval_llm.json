@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C39",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C54",
+      "C55",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Tite-Seq is a novel experimental method that measures binding titration curves and dissociation constants (KD) for thousands of antibody variants in parallel by combining yeast display, FACS sorting at multiple antigen concentrations, and high-throughput sequencing. The method was demonstrated on CDR1H and CDR3H libraries of a fluorescein-binding scFv antibody, yielding an average of 2.6\u00d710^6 sequences per bin across 48 bins in three independent replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C39, C44-C47, C49, C54-C55, C71-C79 collectively describe the Tite-Seq methodology and its implementation. The experimental design is clearly documented with specific parameters (11 antigen concentrations, 4 bins, paired-end Illumina sequencing), and the data collection is quantified (2.6\u00d710^6 sequences per bin). Three independent biological replicates strengthen reproducibility. The method builds logically on established Sort-Seq technology (C32-C33) and is supported by detailed figures (Figures 1-3) showing the workflow and data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C63",
+      "C94",
+      "C95",
+      "C96",
+      "C121",
+      "C125",
+      "C126"
+    ],
+    "result": "Tite-Seq eliminates confounding effects of antibody expression level and specific activity on affinity measurements by measuring full titration curves rather than single-concentration enrichment. The authors demonstrate that OPT and WT scFvs differ 2-fold in specific activity at saturating antigen concentrations, which would confound single-concentration measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38, C63, C94-C96, C121, C125-C126 establish a key advantage of Tite-Seq. The 2-fold difference in specific activity between OPT and WT (Figure 4\u2014figure supplement 6, C94-C95) provides direct experimental evidence that sequence affects both affinity and specific activity. Figure 4\u2014figure supplement 5 (C126) shows poor correlation between single-concentration enrichment and measured KD values, demonstrating that full titration curves are necessary. The logic is sound: sigmoidal binding curves allow deconvolution of affinity from expression/activity effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C78",
+      "C82",
+      "C83",
+      "C89"
+    ],
+    "result": "Tite-Seq KD measurements were validated against low-throughput flow cytometry measurements for 19 clones, showing strong agreement (R\u00b2=0.89, P=1.0\u00d710^-9) across a ~4 log range of affinities. At least three replicate binding curves were measured for each validation clone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C78, C82-C83, C89 describe the validation experiments. Figure 4C shows strong quantitative agreement between Tite-Seq and flow cytometry measurements with appropriate statistical analysis. The validation includes clones spanning the full dynamic range (WT, OPT, \u0394, and 16 variants). The main discrepancy for clones c22 and c102 (C89) is acknowledged and discussed. Three or more replicates per clone (C83) provide statistical rigor. The validation is comprehensive and supports the accuracy of Tite-Seq measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C137"
+    ],
+    "result": "Mutations in CDR3H have larger effects on binding affinity than mutations in CDR1H. In both regions, most mutations (1H: 88%; 3H: 93%) weaken antigen binding, with many increasing KD above the detection threshold (1H: 36%; 3H: 52%). Single mutations in 3H increased KD more than in 1H (1H median KD=10^-6.84; 3H median KD\u227310^-5.0; P=4.7\u00d710^-4, Mann-Whitney U test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105, C137 describe the differential effects of mutations in CDR1H vs CDR3H on affinity. The data are presented in Figure 5A-B with quantitative percentages and statistical testing (Mann-Whitney U test, P=4.7\u00d710^-4). The finding that CDR3H is more sensitive to mutations than CDR1H (C103-C105) is consistent with established knowledge (citations to Xu and Davis 2000; Liberman et al. 2013). The statistical analysis is appropriate for comparing two distributions. Multiple random mutations further reduce affinity (C102, Figure 5\u2014figure supplement 2A), supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "CDR1H is more optimized for protein expression than CDR3H, with fewer beneficial expression mutations observed in 1H than 3H. This unexpected finding suggests that secondary CDR regions like CDR1H may be evolutionarily optimized for antibody stability, freeing CDR3H to encode antigen specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110, C138-C140 present an interesting hypothesis about differential optimization of CDR regions. The observation that 3H shows larger variance in expression effects (P=9.9\u00d710^-16, Levene's test) and more beneficial mutations (Figure 5C-D) is data-supported. However, the evolutionary interpretation (C139-C140) is speculative and based on a single antibody system. The hypothesis is plausible and supported by citations (Liberman et al. 2013; Xu and Davis 2000), but requires validation across multiple antibody-antigen systems. The data support the observation but not definitively the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Affinity sensitivity (SK) at each position correlates strongly with the number of intramolecular contacts (R\u00b2=0.46, P=0.001) but not with distance to antigen (R\u00b2=0.01, P=0.647). Expression sensitivity (SE) shows no significant correlation with either structural feature. This suggests that affinity is governed by networks of interdependent residues rather than direct antigen contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113, C142-C144 describe structure-function relationships. Figure 6B-E provides quantitative correlations with appropriate statistical tests. The strong correlation between SK and number of contacts (R\u00b2=0.46, P=0.001) is statistically significant, while the lack of correlation with distance to antigen (R\u00b2=0.01, P=0.647) is also well-supported. The absence of SE correlations (Figure 6D-E) provides an important control showing specificity of the SK-contacts relationship. The interpretation about interdependent residue networks (C144) is appropriately presented as conditional ('if our observation were to hold for other antibodies').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C149",
+      "C152"
+    ],
+    "result": "A simple additive matrix model correctly predicts that OPT has higher affinity than WT (predicted KD=10^-9.16 M). Simulations show that only 4.7\u00d710^-5 of random 6-mutation variants would achieve affinity at or below the predicted OPT affinity, consistent with OPT mutations being selected for increased affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149 and C152 describe validation of Tite-Seq measurements through computational modeling. The matrix model correctly predicts the direction of affinity change (OPT > WT), though not the exact magnitude (predicted 10^-9.16 M vs actual 10^-12.6 M). The discrepancy is appropriately explained: OPT has 14 mutations total (only 6 in assayed regions), one mutation (W108L) is below detection limits, and the additive model ignores epistasis. The simulation showing rarity of high-affinity 6-mutation variants (4.7\u00d710^-5) provides additional validation that the measurements capture biologically meaningful selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Simulations and analysis of synonymous variants suggest that the primary source of noise in Tite-Seq experiments is inefficient post-sort DNA recovery rather than insufficient sorted cells or sequencing reads. Improvements to DNA recovery protocols could substantially improve Tite-Seq resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 identify the main source of experimental noise. Figure 4\u2014figure supplement 3 shows analysis of synonymous variants quantifying measurement error, and Figure 4\u2014figure supplement 8 shows simulations exploring the effect of read depth. The conclusion that DNA recovery is the limiting factor is supported by these analyses. The suggestion for improvement (C120) is appropriately speculative. This represents good experimental practice in identifying and documenting sources of measurement uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study used the well-characterized 4-4-20 scFv antibody system (KD=1.2 nM for fluorescein) with known crystal structure and an ultra-high-affinity variant (4m5.3, KD=270 fM). Libraries were constructed covering CDR1H (600 single, 1100 double, 150 triple mutants) and CDR3H (analogous composition) variable regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 describe the experimental system and library design. The choice of the 4-4-20 scFv is well-justified with citations (Boder and Wittrup 1997; Gai and Wittrup 2007; Whitlow et al. 1995; Boder et al. 2000). The crystal structure (Figure 2A) and known affinity values provide important validation benchmarks. The library composition is clearly specified (Figure 2D) with exact numbers of variants. This represents appropriate experimental design using a well-characterized model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establish that antibodies are central to adaptive immunity and biotechnology, with specificity governed by six CDRs (~10 aa each). CDR3H is most variable and contributes most to antigen specificity, while roles of other CDRs are less clear. Much remains unknown about quantitative sequence-affinity relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C18 provide established background knowledge about antibody structure and function. These are well-supported by the scientific literature and represent consensus understanding in immunology. The statements about CDR structure (C13-C14), V(D)J recombination (C15), somatic hypermutation (C16), and CDR3H dominance (C17) are textbook knowledge. The motivation that much remains unknown about quantitative sequence-affinity relationships (C2) appropriately frames the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior work has developed high-throughput antibody optimization methods (phage display, yeast display, etc.) and deep mutational scanning (DMS) assays, but no DMS assay has provided absolute quantitative binding affinity measurements (KD in molar units). Existing methods like SORTCERY provide rank-order affinities but require separate calibration, and methods measuring fold-changes have limited dynamic range (10-fold) and are vulnerable to confounding effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C31 accurately characterize prior work with appropriate citations. The statement that no prior DMS assay provides absolute KD values (C23, C27) is supported by discussion of specific methods: Fowler et al. 2010 (C24), Reich et al. 2015 (C25, C28-C29), Kowalsky and Whitehead 2016 (C31). The limitations of each method are fairly described with citations. This establishes the gap that Tite-Seq fills and appropriately credits prior work while distinguishing the current contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Tite-Seq builds on Sort-Seq, which combines FACS with high-throughput sequencing for massively parallel measurements of cellular fluorescence. Sort-Seq was originally developed for studying bacterial transcriptional regulatory sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 accurately describe the Sort-Seq foundation with appropriate citation (Kinney et al. 2010). This establishes the methodological lineage and credits the prior work that Tite-Seq extends. The description is accurate and appropriately brief.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C128",
+      "C129",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Tite-Seq provides a potentially powerful method for studying antibody affinity maturation and can be readily applied to any protein binding assay compatible with yeast display and FACS, or adapted for other platforms like mammalian cell display. The experimental parameters (11 concentrations, 4 bins) were chosen for convenience and have not been systematically optimized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118, C128-C129, C134-C136 discuss potential applications and generalizability. The statements about potential applications (C116, C134) and adaptability to other systems (C136) are appropriately speculative. The acknowledgment that parameters were chosen for convenience and not optimized (C117-C118) is honest and appropriate. However, the claim that Tite-Seq 'can be readily applied' (C134) is not directly demonstrated\u2014only one antibody-antigen system is tested. The speculation is reasonable but requires experimental validation across diverse systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Tite-Seq fills a large gap in measuring critical aspects of the adaptive immune system and provides a general solution for disentangling sequence effects on affinity from effects on expression and specific activity in massively parallel protein-ligand binding studies. The work illustrates the importance of designing assays that can disentangle multiple biochemical effects of sequence changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C131-C133 make broader statements about the significance and generalizability of the work. The claim that Tite-Seq 'fills a large gap' (C8) is supported by the thorough documentation of limitations in prior methods (C23-C31) and the demonstration that Tite-Seq overcomes these limitations. The statement about providing a 'general solution' (C133) is supported by the method's design principles, though full generalization requires testing on additional systems. The emphasis on disentangling multiple biochemical effects (C131-C132) is well-supported by the data showing confounding effects (Figure 4\u2014figure supplements 5-6).",
+    "result_type": "MINOR"
+  }
+]

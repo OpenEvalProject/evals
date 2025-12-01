@@ -1,0 +1,174 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior experimental work established that L99A T4 lysozyme displays millisecond-timescale conformational exchange between a ground state (G) and a minor excited state (E) populated at ~3%, with the cavity inaccessible to solvent in both states yet capable of rapid ligand binding. The E state structure was previously determined by CS-ROSETTA using NMR chemical shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C12-C13 collectively describe well-established prior experimental findings from multiple cited studies (Mulder et al., Eriksson et al., Feher et al., Bouvignies et al.). These claims provide essential background context for the current computational work and are appropriately supported by citations to peer-reviewed literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Metadynamics simulations reveal a free energy landscape with a deep, narrow basin at Spath=0.2 corresponding to the G state and a broader, shallow basin at Spath=0.6-0.8 corresponding to the E state, with a complex, rough two-dimensional landscape containing multiple free energy minima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 describe computational results directly shown in Figure 2. The free energy landscape features are clearly visualized and the characterization of basin shapes (deep/narrow vs. broad/shallow) is consistent with the data presented. The identification of multiple minima is evident from the 2D landscape visualization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The calculated free energy difference between G and E states for L99A is 3.5 kcal/mol (experimental: 2.1 kcal/mol), and for the triple mutant is -1.6 kcal/mol (experimental: -1.9 kcal/mol). The G113A/R119P mutations shift the G-E free energy by 5.1 kcal/mol in simulations versus 4.0 kcal/mol experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 present thermodynamic calculations from metadynamics simulations (Figure 3, Table 1) compared to experimental NMR values. The agreement is within ~1-1.4 kcal/mol for individual measurements and ~1 kcal/mol for the mutation effect, representing reasonable accuracy for force field-based calculations. The convergence of simulations is demonstrated in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "The triple mutant (L99A/G113A/R119P) has the minor state structure of L99A dominating with 96% population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 describes prior experimental NMR data showing population inversion in the triple mutant. This is appropriately cited and provides validation context for the computational predictions. The claim is well-supported by the referenced experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "InMetaD simulations calculate transition rates for L99A (\u03c4G\u2192E = 175\u00b156 ms, \u03c4E\u2192G = 1.4\u00b10.6 ms) and the triple mutant (\u03c4G\u2192E = 2.0\u00b11.7 ms, \u03c4E\u2192G = 14.3\u00b18.3 ms), which agree with experimental NMR rates within a factor of 10, corresponding to ~1 kcal/mol accuracy in barrier heights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 present kinetic calculations from InMetaD simulations (Table 1) with appropriate error estimates. The agreement with experimental rates is within the stated factor of 10, and Kolmogorov-Smirnov tests validate the Poisson distribution assumption. The independent calculation of \u0394G from rate ratios provides internal consistency checks. The large uncertainties for some values (e.g., C32, C34) are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "CS-restrained MD simulations of the E state show a distribution of conformations in good agreement with the broad free energy profile obtained from unbiased metadynamics simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 describes agreement between two independent computational approaches (Figure 4). The CS-restrained simulations use experimental data as restraints while metadynamics does not, making their agreement a meaningful validation. The result is tested with two different force fields (CHARMM22* and Amber ff99SB*-ILDN) and shows robustness to simulation parameters (Figure 4 supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Reconnaissance metadynamics simulations reveal multiple routes connecting G and E states, including direct G\u2194E transitions where F114 rotates internally, and indirect G\u2194I0.36\u2194E routes where F114 becomes transiently solvent-exposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe mechanistic insights from reconnaissance metadynamics (Figure 5, Videos 1-4). The identification of multiple pathways is supported by trajectory analysis and projection onto the free energy surface. The distinction between direct and indirect routes based on F114 solvent exposure is quantified by SASA calculations (Figure 5 supplement 3). The mechanistic interpretations are appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Simulations reveal structures with transient cavity exposure in the I0.36 basin. CAVER3 analysis identifies multiple tunnels connecting the cavity to the protein surface, with the dominant tunnel (tunnel#1) having entrance between helices HF and HI, maximal bottleneck radius ~2.5 \u00c5, average bottleneck radius ~1.3 \u00c5, and average length ~11.2 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 describe tunnel analysis using established CAVER3 software with parameters documented in appendices. The structural characterization is quantitative and reproducible. The identification of I0.36 as the region with cavity exposure is supported by trajectory analysis and mapping onto the free energy surface. The tunnel dimensions are precisely reported with appropriate significant figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Comparison with ligand-bound X-ray structures shows that the maximal bottleneck radius in crystal structures (1.8 \u00c5 for n-hexylbenzene complex) is slightly smaller than in I0.36 simulation structures (~2.5 \u00c5), but the tunnel location is consistent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide validation by comparing simulation-derived tunnels to experimentally observed ligand-induced openings (Merski et al., 2015). The CAVER3 analysis is applied consistently to both simulation and crystal structures. The slight difference in tunnel size is noted appropriately, and the consistency in tunnel location provides support for the biological relevance of the simulated structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "ABMD simulations show that in 15 of 20 ligand unbinding events, benzene escapes via tunnel#1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 presents results from ABMD simulations (Figure 6 supplement 4, Appendix table 6) showing the dominant escape pathway. The result is tested at two different force constants (50 and 20 KJ\u00b7mol\u207b\u00b9\u00b7nm\u207b\u00b2) to ensure the pathway is not an artifact of the biasing potential. The quantitative reporting (15/20 events) provides appropriate statistical context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The study demonstrates that modern simulation methods can characterize conformational exchange processes with ~1 kcal/mol accuracy in free energies and good agreement in kinetics. The E state is conformationally broad, a transiently opened tunnel connects the cavity to solvent, and intrinsic protein motions may play important roles in ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 represent the main conclusions synthesizing results from multiple computational approaches validated against experimental data. The accuracy estimates (~1 kcal/mol) are supported by comparisons in C21-C26. The characterization of the E state as broad is supported by C14-C16 and C37. The tunnel discovery (C58) and its potential functional role (C59) are supported by C42-C53. The inference about intrinsic motions (C59) is appropriately cautious ('may play').",
+    "result_type": "MAJOR"
+  }
+]

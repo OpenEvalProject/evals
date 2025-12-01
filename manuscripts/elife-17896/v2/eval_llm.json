@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a fluorescence-based assay to track paternal mitochondria in early mouse embryos using PhAM mice expressing mitochondrially-targeted Dendra2. Paternal mitochondria are visible as a linear cluster at 12 hr post-fertilization, begin to disperse at 36 hr, and progressively decrease in content between 60-84 hr, with the majority of embryos losing all paternal mitochondria by 84 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 describe the development and validation of the paternal mitochondria tracking assay. The experimental observations are supported by multiple figures (1A-G) showing time-course imaging and quantification. The progressive loss of paternal mitochondria is reproducibly quantified and visualized, providing strong evidence for the temporal dynamics of paternal mitochondrial elimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Maternal mitochondrial content remains stable between 60 and 84 hr post-fertilization in embryos with fluorescent maternal mitochondria, demonstrating that the loss of mitochondria is specific to paternal mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by Figure 1H and Figure 1\u2014figure supplement 1, which show that maternal mitochondria do not decrease during the same time period when paternal mitochondria are eliminated. This control experiment is critical for establishing specificity of the paternal mitochondrial elimination process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Disruption of core autophagy genes (Atg3 knockdown or bafilomycin treatment) causes embryonic arrest at the four-cell stage and persistence of paternal mitochondria at 84 hr, but the early developmental arrest prevents definitive conclusions about the specific role of autophagy in paternal mitochondrial elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 show that core autophagy disruption leads to both embryonic arrest and paternal mitochondria persistence. However, the authors explicitly acknowledge that the early developmental arrest prevents them from concluding whether autophagy has a specific role in paternal mitochondrial elimination. This limitation motivates their subsequent focus on mitophagy-specific genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Embryos injected with lentivirus encoding shRNA against Parkin show loss of paternal mitochondria by 84 hr after fertilization, suggesting that PARKIN alone is not essential for the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by Figure 1M and is an important negative result that motivates the subsequent discovery of MUL1/PARKIN redundancy. The observation is clearly documented and leads to the key insight that another E3 ligase may compensate for PARKIN loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors developed an OXPHOS-induced mitophagy assay in MEFs using a Cox8-EGFP-mCherry reporter. Under OXPHOS-inducing conditions (glucose-free, acetoacetate-containing medium), cells exhibit numerous red puncta representing mitochondria in acidic compartments. These red puncta co-localize with LC3B and LAMP1, and their formation is dependent on core autophagy machinery (Atg3). P62 localizes to mitochondria only under OXPHOS conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 describe the development and characterization of the OXPHOS-induced mitophagy assay. The results are well-supported by multiple figures (2A-G) showing the pH-sensitive fluorescence reporter, co-localization with autophagy markers, and dependence on Atg3. The assay provides a robust system for identifying mitophagy genes that can then be tested in embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "MEFs deficient in mitochondrial fusion genes (Mfn1, Mfn2, Mfn-dm, Opa1) are competent for mitophagy, with Mfn-dm and Opa1-/- cells showing substantial mitophagy even under glycolytic conditions. Among fission-deficient cell lines, Drp1-/- and Mff-/- cells show normal levels of mitophagy under OXPHOS conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57-C58 are supported by Figure 3A and are consistent with prior literature (C53-C54 cite Gomes et al., 2011; Rambold et al., 2011). These results establish that mitochondrial fusion and certain fission proteins are not required for OXPHOS-induced mitophagy, narrowing the focus to FIS1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "FIS1, TBC1D15, and P62 are essential for OXPHOS-induced mitophagy in MEFs. Fis1-/- cells and Tbc1d15 knockdown cells have dramatically reduced mitophagy and failure of LC3 and P62 to co-localize with mitochondria. P62 knockdown and knockout cells are also deficient for mitophagy. Rescue experiments with shRNA-resistant constructs restore mitophagy, and the results place FIS1 and TBC1D15 upstream of P62.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C70 are well-supported by Figures 3A-E and supplementary figures. The genetic requirements are demonstrated through loss-of-function and rescue experiments. The epistasis analysis (C70) is a reasonable inference from the co-localization data showing that FIS1/TBC1D15 loss prevents P62 localization to mitochondria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PINK1 and PARKIN/MUL1 coordinately regulate OXPHOS-induced mitophagy. Pink1-/- cells show substantial reduction in mitophagy, but Parkin knockout MEFs have normal mitophagy. Knockdown of Mul1 in Parkin knockout cells abolishes mitophagy, while Mul1 knockdown alone does not inhibit mitophagy, revealing redundant functions of MUL1 and PARKIN. This redundancy extends to CCCP-induced mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 describe a key discovery of PARKIN/MUL1 redundancy. The results are supported by Figures 4A-C and supplementary figures. The genetic epistasis experiments are well-designed with appropriate controls (two independent shRNAs for Mul1). The observation that PINK1 loss reduces mitophagy while PARKIN loss does not, combined with the synthetic effect of PARKIN/MUL1 double loss, provides strong evidence for redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Mitochondria from cells grown in OXPHOS media are ubiquitinated approximately six-fold more than cells grown in glycolytic media. Loss of MUL1 or PARKIN alone has modest or no effect on mitochondrial ubiquitination, but loss of both MUL1 and PARKIN, or PINK1 alone, substantially reduces ubiquitination. The data suggest that MUL1 and PARKIN act in concert to ubiquitinate mitochondrial substrates, and that a threshold level of ubiquitination may be required to trigger mitophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by Figures 4D-E showing Western blot quantification of mitochondrial ubiquitination. The biochemical data complement the functional mitophagy assays and support the model of PARKIN/MUL1 redundancy. Claim C85 (threshold hypothesis) is appropriately presented as speculation ('may be required') based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Embryos expressing shRNA against p62, Tbc1d15, or Pink1 show strong suppression of paternal mitochondrial loss, with the majority retaining substantial paternal mitochondria at 84 hr post-fertilization. Depletion of either Parkin or Mul1 alone modestly reduces elimination, but depletion of both has a severe and highly significant effect, with over 60% of embryos retaining paternal mitochondria at 84 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are supported by Figures 5A-B and source data. The embryo experiments validate the findings from the MEF system, showing that the same genetic requirements apply to paternal mitochondrial elimination. Statistical analysis is provided (Chi-squared test, p-values reported), and the redundancy of PARKIN/MUL1 is confirmed in the physiological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Expression of a dominant-negative FIS1 construct (FIS1-DN) lacking the mitochondrial targeting sequence strongly inhibits OXPHOS-induced mitophagy in MEFs and paternal mitochondrial elimination in embryos, with the majority of embryos retaining substantial paternal mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by Figures 5C-D and Figure 5\u2014figure supplement 1. The dominant-negative approach circumvents the limitation that shRNA can only target newly synthesized proteins, allowing the authors to test the role of sperm-contributed FIS1. The results are consistent with the FIS1 knockout data in MEFs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Paternal mitochondria undergo selective depolarization during early embryonic development. Sperm mitochondria and paternal mitochondria at 18 hr post-fertilization show robust TMRE staining, indicating intact membrane potential. However, paternal mitochondria gradually lose TMRE staining over the next 36 hr, with nearly all failing to stain by 48 hr and later. Maternal mitochondria maintain TMRE staining throughout, indicating selective loss of membrane potential in paternal mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by Figures 6A-C showing TMRE staining and line scan analysis. The temporal correlation between depolarization (48 hr) and subsequent elimination (60-84 hr) is consistent with depolarization being an early event in the degradation pathway. The specificity for paternal mitochondria is demonstrated by the maintained TMRE staining of maternal mitochondria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Photo-conversion experiments show that maternal mitochondria undergo fusion (photo-converted signal spreads widely), while paternal mitochondria do not fuse with other mitochondria in the embryo (photo-converted signal does not diffuse). The authors speculate that this segregation is likely important for eventual degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by Figure 6\u2014figure supplement 1 showing photo-conversion experiments with quantification. The differential behavior of maternal versus paternal mitochondria is clearly demonstrated. Claim C105 is appropriately presented as speculation about the functional significance of this segregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C106",
+      "C108",
+      "C114",
+      "C115",
+      "C118"
+    ],
+    "result": "The study demonstrates that cultured mouse fibroblasts and pre-implantation embryos use a common mitophagy pathway for elimination of mitochondria. The E3 ubiquitin ligases PARKIN and MUL1 play redundant roles in both OXPHOS-induced mitophagy and paternal mitochondrial elimination. The genetic requirements for paternal mitochondrial elimination in embryos mirror those of MEFs undergoing mitophagy, providing functional evidence that mitophagy is the mechanism underlying paternal mitochondrial elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21, C26-C27, C106, C108, C114-C115, C118 represent the major conclusions of the study. These are well-supported by the convergent evidence from both the MEF and embryo systems. The parallel genetic requirements (FIS1, TBC1D15, P62, PINK1, PARKIN/MUL1) in both systems provide strong support for a common mechanism. The discovery of PARKIN/MUL1 redundancy is a novel and significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Elimination of paternal mitochondria is associated with depolarization and requires FIS1, P62, and PINK1 kinase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 summarize key requirements for paternal mitochondrial elimination. C22 (depolarization) is supported by the TMRE experiments (C97-C102). C23-C25 (FIS1, P62, PINK1 requirements) are supported by the embryo knockdown experiments (C87-C96). These claims accurately reflect the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Both PARKIN and MUL1 regulate the levels of ubiquitin on mitochondria in response to OXPHOS conditions in MEFs, and removal of both is necessary to cause a substantial reduction of ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by the Western blot data in Figures 4D-E. The biochemical evidence complements the functional mitophagy data and supports the model that PARKIN and MUL1 work together to ubiquitinate mitochondrial substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors speculate that the redundant function of MUL1 likely explains why PARKIN knockout mice show mild and inconsistent mitochondrial phenotypes, and may explain why PARKIN is dispensable for paternal mitochondrial elimination in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 are appropriately presented as speculation ('likely explains', 'may also explain') based on the findings. The speculation is reasonable given the demonstrated redundancy and is supported by citations to relevant literature. This represents a valuable insight that could guide future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The authors find that paternal mitochondria lose membrane potential shortly after entering the oocyte and speculate that this depolarization may trigger mitochondrial degradation. Previous studies show PARKIN is recruited to mitochondria upon depolarization, and the current results suggest PARKIN and MUL1 work together to degrade depolarized mitochondria. However, the authors acknowledge they lack direct evidence that membrane depolarization has a functional role in paternal mitochondrial degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C123 present the depolarization findings and associated speculation. While the temporal correlation between depolarization and elimination is documented (C119), the authors appropriately acknowledge (C123) that they lack direct functional evidence linking depolarization to degradation. The speculation (C120) is reasonable but requires further experimental validation, such as preventing depolarization and testing effects on elimination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The authors discuss the physiological function of uniparental inheritance, noting that one hypothesis is to prevent heteroplasmy. While mice with equal proportions of two mtDNA haplotypes show abnormalities, the relevance to natural paternal mitochondrial elimination is unclear because sperm contain at least 1000-fold fewer mitochondria than oocytes, so resulting heteroplasmy would be very low.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 present a thoughtful discussion of the physiological significance of the findings. The authors appropriately note the uncertainty (C126) about whether experimental heteroplasmy models are relevant to the natural situation. The quantitative argument about mitochondrial numbers (C127-C128) is a valid point that questions the heteroplasmy-avoidance hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The introduction provides background on maternal inheritance of mitochondria, its biomedical implications, and prior work on paternal mitochondrial elimination in invertebrates and mammals, including the controversy about whether autophagy or passive dilution is responsible in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 summarize established knowledge and prior work from the literature. These are appropriately cited and provide necessary context for the study. The controversy between autophagy-based and passive dilution mechanisms (C13-C16) motivates the current functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C42",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C73",
+      "C74",
+      "C86",
+      "C107",
+      "C111",
+      "C116",
+      "C117",
+      "C121"
+    ],
+    "result": "The manuscript cites relevant prior work on mitophagy mechanisms, including the roles of PINK1, PARKIN, MUL1, FIS1, TBC1D15, and the controversy about autophagy in paternal mitochondrial elimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C55-C56, C61-C62, C73-C74, C86, C107, C111, C116-C117, C121 cite prior literature to support background statements and contextualize findings. The citations appear appropriate and accurate based on the claims made.",
+    "result_type": "MINOR"
+  }
+]

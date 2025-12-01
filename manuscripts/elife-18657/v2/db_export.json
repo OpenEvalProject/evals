@@ -1,0 +1,1363 @@
+{
+  "submission": {
+    "id": "88ddb058-bb63-4b18-b88b-959d0326b2fa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:37:42.861740Z",
+    "updated_at": "2025-11-30T21:37:42.861740Z"
+  },
+  "content": [
+    {
+      "id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "submission_id": "88ddb058-bb63-4b18-b88b-959d0326b2fa",
+      "content_type": "manuscript",
+      "content_text": "# Cell-wall remodeling drives engulfment during Bacillus subtilis sporulation\n\n## Authors\n\n- Nikola Ojkic<sup>1</sup>\n- Javier L\u00f3pez-Garrido<sup>3</sup>\n- Kit Pogliano<sup>3</sup> \u2020\n- Robert G Endres<sup>1</sup> ([ORCID: 0000-0003-1379-659X](https://orcid.org/0000-0003-1379-659X)) \u2020\n\n### Affiliations\n\n1. Department of Life Sciences Imperial College London London United Kingdom\n2. Centre for Integrative Systems Biology and Bioinformatics Imperial College London London United Kingdom\n3. Division of Biological Sciences University of California, San Diego La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen starved, the Gram-positive bacterium Bacillus subtilis forms durable spores for survival. Sporulation initiates with an asymmetric cell division, creating a large mother cell and a small forespore. Subsequently, the mother cell membrane engulfs the forespore in a phagocytosis-like process. However, the force generation mechanism for forward membrane movement remains unknown. Here, we show that membrane migration is driven by cell wall remodeling at the leading edge of the engulfing membrane, with peptidoglycan synthesis and degradation mediated by penicillin binding proteins in the forespore and a cell wall degradation protein complex in the mother cell. We propose a simple model for engulfment in which the junction between the septum and the lateral cell wall moves around the forespore by a mechanism resembling the \u2018template model\u2019. Hence, we establish a biophysical mechanism for the creation of a force for engulfment based on the coordination between cell wall synthesis and degradation.\n\n## Introduction\n\nTo survive starvation, the Gram-positive bacterium Bacillus subtilis forms durable endospores\u00a0(Tan and Ramamurthi, 2014). The initial step of sporulation is the formation of an asymmetrically positioned septum (polar septation), which produces a larger mother cell and a smaller forespore (Figure 1A). After division, the mother cell engulfs the forespore in a phagocytosis-like manner. Engulfment entails a dramatic reorganization of the sporangium, from two cells that lie side by side to a forespore contained within the cytoplasm of the mother cell. The internalized forespore matures and is ultimately released to the environment upon mother cell lysis. After engulfment, the forespore is surrounded by two membranes within the mother cell cytoplasm, sandwiching a thin layer of peptidoglycan (PG)\u00a0(Tocheva et al., 2013). While a number of molecular players for engulfment have been identified, the mechanism of force generation to push or pull the mother cell membrane around the forespore remains unknown (Higgins and Dworkin, 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig1-v2.jpg)\n\n**Figure 1.:** (A) Morphological changes during spore formation. Peptidoglycan shown in grey, membrane in red. (1) Vegetative cell. (2) The first morphological step in sporulation is asymmetric cell division, producing a smaller forespore and a larger mother cell. (3) The septum curves and protrudes towards the mother cell. (4) The mother cell membrane migrates towards the forespore pole. The different modules contributing to membrane migration are shown in the inset (see Introduction for details). During engulfment, the septal PG is extended around the forespore (Tocheva et al., 2013). (5) Fully engulfed forespore surrounded by two membranes sandwiching a thin layer of PG. (B) Snapshots of engulfing sporangia from time-lapse movies in the absence of antibiotics, or in the presence of cephalexin or bacitracin. Cells were stained with fluorescent membrane dye FM 4\u201364 and imaged in medial focal plane. In the absence of antibiotics (top) the septum curves and grows towards the mother cell without significant forward movement of the engulfing membrane for \u223c20 min. After that, the LE of the engulfing membrane starts migrating and reaches the forespore pole in \u223c1 hr. When PG precursor delivery system is blocked with bacitracin (50 \u03bcg/ml): (I) LE migration is stopped or (II) engulfment proceeds asymmetrically. Similar results are obtained when cells are treated with cephalexin (50 \u03bcg/ml). However, in this case the asymmetric engulfment phenotype observed at later time points is due to rotation of the engulfment cup (C) rather than to asymmetric movement forward of the engulfing membrane (D). (E) FM 4\u201364 average kymograph of\u00a0$n$\u00a0=\u00a024 engulfing cells (see Materials and methods, Appendix 1). Average fluorescent intensity along forespore contour vs time in the mother-forespore reference frame as shown in top inset. All cells are aligned in time based on time 0\u2019 (0 min). Time 0\u2019 is assigned to the onset of curving septum (Figure 1\u2014figure supplement 3). Bottom inset is average kymograph represented as heat map. (F\u2013G) Average kymograph for cells treated with cephalexin ($n$\u00a0=\u00a018) (F) or bacitracin ($n$\u00a0=\u00a026).\u00a0(G) When drug was added analyzed cells had (55 \u00b1 5)% engulfment (red arrow). The percentage of engulfment is calculated as total angle of forespore covered with mother membrane divided by full angle. All cells had fully curved septum. Non-engulfed part of the forespore is represented as the black regions in kymographs. (H) In untreated sporangia, gap starts to close \u223c20 min after onset of membrane curving. In antibiotic-treated cells gap does not close. Sample size as in (F\u2013G). Red arrow points when drug is added. Average \u00b1 SEM. Scale bar 1 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Microscopy pictures of cells sporulating before antibiotic treatment (t2), or 2 hr later (t4) after treatment with antibiotics blocking different steps on the PG biosynthetic pathway: synthesis of cytoplasmic PG intermediates (D-cycloserine), recycling of undecaprenyl-P (bacitracin), cross-linking of the glycan strands (vancomycin), or PBP activity (amoxicillin, cephalexin, cloxacillin, oxacillin and penicillin V). Cells were stained with Mitotracker Green (green, membrane permeable) and FM 4\u201364 (red, membrane impermeable) to visualize membranes. When engulfment is completed, the forespore membranes are only stained by Mitotracker green, but not by FM 4\u201364 (Sharp and Pogliano, 1999). (B) Graphs showing the percentage of cells that have undergone polar septation (% sporangia) and the percentage of sporangia that have completed engulfment (% engulfed sporangia) at different time points after sporulation induction, in cultures treated with different antibiotics that block PG synthesis. Antibiotics were added 2 hr after sporulation induction (red arrows). Samples were taken every hour for 5 hr, stained with MTG and FM 4\u201364 and visualized under the microscope. More than 300 cells were quantified per time point and antibiotic concentration. (C) Table showing the Minimal Inhibitory Concentration (MIC) of antibiotics blocking PG synthesis during vegetative growth (Vegetative MIC), and the estimated MIC during sporulation (Sporulation MIC). The Sporulation MIC was defined as the concentration or concentration interval that block the formation of new polar septa, and was inferred from the graphs in B. Scale bar 1 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Fraction of cell division events per cell observed during the first 90 min and 150 min of imaging in timelapse movies of sporulating cultures treated with bacitracin (50 \u03bcg/ml), cephalexin (50 \u03bcg/ml), or untreated. At least 296 vegetative cells were tracked over time for every condition. The total number of division events observed after 90 min or 150 min was divided by the number of cells tracked in each case.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Time course of septum curvature. The horizontal dashed grey line corresponds to inverse cell-wall radius (FM 4\u201364) measured at the cell middle ($1/R=(2.3\\pm0.4)\\mum^{\u22121}$, $n=$14). (B) Time course of mother-cell area. (C\u2013D) FM 4\u201364 kymographs of partially engulfed forespores ($n$\u00a0=\u00a06 with (55 \u00b1 5)% of engulfment;=\u00a07 with (70 \u00b1 5)% of engulfment, respectively). This is a control analysis of non-treated cells for the experiment when partially engulfed cells treated with drugs stop engulfment (see Figure 1F\u2013G). Average \u00b1 SEM.\n\nThe cellular machinery for engulfment is complex, presumably to add robustness for survival (Figure 1A, inset). First, the forespore protein SpoIIQ and the mother cell protein SpoIIIAH interact in a zipper-like manner across the septum (Blaylock et al., 2004), and mediate the fast engulfment observed in the absence of cell wall (Broder and Pogliano, 2006; Ojkic et al., 2014). This complex is static and is proposed to act as a Brownian ratchet to prevent backwards movement of the engulfing membrane, contributing to the robustness of engulfment in intact cells (Sun et al., 2000; Broder and Pogliano, 2006). Second, the SpoIID, SpoIIM and SpoIIP complex (DMP) localizes at the leading edge (LE) of the mother cell engulfing membrane and is essential and rate limiting for membrane migration (Abanes-De Mello et al., 2002; Gutierrez et al., 2010). The complex contains two enzymes that degrade PG in a processive manner: SpoIIP removes stem peptides, and SpoIID degrades the resulting denuded glycan strands (Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Morlot et al., 2010; Gutierrez et al., 2010). Mutants with reduced SpoIID or SpoIIP activity or protein levels engulf asymmetrically, with the engulfing membrane migrating faster on one side of the forespore (Abanes-De Mello et al., 2002; Gutierrez et al., 2010). Third, blocking PG precursor synthesis with antibiotics impairs membrane migration in mutants lacking the Q-AH zipper, suggesting that PG synthesis at the LE of the engulfing membrane contributes to engulfment (Meyer et al., 2010; Tocheva et al., 2013). However, the mechanistic details of membrane migration and for the coordination between PG synthesis and degradation remain unclear.\n\nThe biophysical principles of cell wall remodeling in Gram-positive bacteria are not well understood. In Bacillus subtilis, the cell wall is about 20\u201340 nm thick, and is likely organized into multiple (20\u201330) PG layers (Morlot et al., 2010; Reith and Mayer, 2011; Lee and Huang, 2013; Misra et al., 2013; Dover et al., 2015). In contrast, cryo-electron tomography has demonstrated that a thin PG layer is present between the septal membranes throughout engulfment, appearing to form continuous attachments with the old cell wall (Tocheva et al., 2011, 2013). The outer cell wall of Gram-positive bacteria also contains a significant amount of teichoic acids, important for cell morphology, phosphates, and antibiotic resistance (Grant, 1979; Brown et al., 2013) but largely absent in spores (Chin et al., 1968; Johnstone et al., 1982). Engulfment entails extensive cell wall remodeling, with peptidoglycan precursors, newly synthesized PG and the sporulation specific PG degradation machinery localizing at the LE of the engulfing membrane (Meyer et al., 2010; Tocheva et al., 2013; Abanes-De Mello et al., 2002). However, since engulfment occurs at high turgor pressure within the cramped confines of the thick outer cell wall, we expect that membrane movement is severely reduced by steric hindrance (Lizunov and Zimmerberg, 2006). Hence, we anticipate that peptidoglycan remodeling is a critical step in engulfment, which may either act as a force generator or simply create room for engulfment by the mother cell membrane.\n\nHere, we provide a biophysical mechanism for engulfment in which PG synthesis and degradation move the junction between the septal PG and the lateral cell wall around the forespore, making room for the engulfing membrane to move by entropic forces. Using antibiotics that block different steps in PG synthesis, we demonstrate that PG synthesis is essential for membrane migration in all conditions and contributes to the localization of SpoIIDMP at the LE. We also show that components of the PG biosynthetic machinery, including several penicillin binding proteins (PBPs) and the actin-like proteins MreB, Mbl and MreBH track the LE of the engulfing membrane when produced in the forespore, but not when produced in the mother cell. We implement a biophysical model for PG remodeling at the LE of the engulfing membrane, based on the \u2018template mechanism\u2019 of vegetative cell growth and implemented by stochastic Langevin simulations. These simulations reproduce experimentally observed engulfment dynamics, forespore morphological changes, and asymmetric engulfment when PG synthesis or degradation is perturbed. Taken together, our results suggest that engulfment entails coordination of PG synthesis and degradation between the two compartments of the sporangium, with forespore-associated PBPs synthesizing PG ahead of the LE and the mother-cell DMP complex degrading this PG to drive membrane migration.\n\n## Results\n\n### PG synthesis is essential for membrane migration\n\nIn contrast to previous studies (Meyer et al., 2010), we attempted to find conditions that completely blocked PG synthesis in sporulating cultures (Figure 1\u2014figure supplement 1). To estimate the sporulation minimal inhibitory concentration (sMIC) of antibiotics, we monitored the percentage of cells that had undergone polar septation over time in batch cultures. Polar septation depends on PG synthesis and is easy to track visually (Pogliano et al., 1999), which makes it a good indicator for efficient inhibition. We assayed nine antibiotics inhibiting different steps in the PG biosynthesis pathway, and found concentrations that blocked the formation of new polar septa for seven of them (Figure 1\u2014figure supplement 1B,C). In most cases, the antibiotic concentration that blocked polar septation also inhibited completion of engulfment (Figure 1\u2014figure supplement 1B). Only two drugs, fosfomycin and D-cycloserine, failed to completely block polar cell division. These drugs inhibit production of PG precursors that, during starvation conditions, might be obtained by recycling rather than de novo synthesis (Reith and Mayer, 2011), potentially from cells that lyse during sporulation, as has been observed in studies of B. subtilis cannibalism (Gonz\u00e1lez-Pastor et al., 2003; Straight and Kolter, 2009; Lamsa et al., 2012), or from cells that lyse due to antibiotic treatment (Lamsa et al., 2016). These results demonstrate that the later stages in PG synthesis are essential for engulfment in wild type sporangia.\n\nTo investigate the role played by PG synthesis, we selected two antibiotics for further characterization: cephalexin, which inhibits PBP activity, and bacitracin, which blocks cell-wall precursor delivery (recycling of undecaprenyl phosphate). Using time-lapse microscopy (see Materials and methods for details), we monitored membrane dynamics during engulfment in the medial focal plane using the fluorescent membrane dye FM 4\u201364 (Figure 1B, Video 1). In these 2\u20135 hour-long movies we observed occasional cell division events occurred with bacitracin (0.08 division events/cell after 90 min, compared to 0.28 division events/cell in untreated cultures, Figure 1\u2014figure supplement 2), indicating that PG synthesis was not completely blocked under these conditions. However, negligible cell divisions occurred with cephalexin, indicating that PG synthesis was indeed completely blocked (Figure 1\u2014figure supplement 2).\n\n![Video 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-media1.mp4.jpg)\n\n**Video 1.:** The left panel shows untreated cells, the middle panel cephalexin-treated cells (50 \u03bcg/ml), and the right panel bacitracin-treated cells (50 \u03bcg/ml). Cells were imaged in agarose pads supplemented with the appropriate antibiotics (see Materials and methods for details). Pictures were taken every 5 min. Total time 2.5 hr.\n\nTo better monitor LE dynamics we used two image analysis approaches (see Materials and methods for details). First, we created kymographs along forespore membranes (Figure 1E\u2013G). The angular position of forespore pixels was calculated relative to the mother-forespore frame of reference (Figure 1E, inset). All cells were aligned in time based on the onset of septum curving (Figure 1\u2014figure supplement 3), and for a given angle, the average fluorescence of different cells was calculated and plotted over time. Second, we measured the decrease in the distance between the two LEs of the engulfing membrane in the focal plane (the gap arc length), in order to directly assess movement of the LE around the forespore (Figure 1H).\n\nThese analyses demonstrated that in untreated sporangia (Figure 1B, top row), the septum curves and the forespore grows into the mother cell without significant forward movement of the LE for \u223c20 min after polar septation (at 30\u00b0C, Figure 1H). Subsequently, the LE of the engulfing membrane moves towards the forespore pole and engulfment completes within \u223c60 min (Figure 1E,H). In sporangia treated with cephalexin (Figure 1B, middle row I), the septum curves and extends towards the mother cell, but there is no forward membrane migration (Figure 1F,H). Sometimes the LE retracted on one side while advancing slightly on the other (typically occurred after 90 min of imaging; Figure 1B, middle row II), which appears to be the rotation of the \u2018cup\u2019 formed by the engulfing membranes relative to the lateral cell wall (Figure 1C).\n\nSimilar to cephalexin, in most sporangia treated with bacitracin (Figure 1B, bottom row I), the forespore extended into the mother cell without significant membrane migration (Figure 1G,H). However, in \u223c20% of the sporangia, the engulfing membrane migrated asymmetrically, with one side moving faster than the other, although usually it failed to completely surround the forespore (Figure 1B, bottom row II; Figure 1D). The continued engulfment under bacitracin treatment might be related to the fact that PG synthesis is not completely blocked in bacitracin-treated cells under time-lapse conditions (Figure 1\u2014figure supplement 2). Taken together, these results suggest that PG synthesis is not only essential for the final stage of engulfment (membrane fission) in wild type cells (Meyer et al., 2010), but also for migration of the LE of the engulfing membrane around the forespore.\n\n### PBPs accumulate at the leading edge of the engulfing membrane\n\nIt has been previously shown that there is an accumulation of membrane-bound PG precursors at the LE of the engulfing membrane (Meyer et al., 2010). Furthermore, staining with fluorescent D-amino acids has demonstrated that new PG is synthesized at or close to the LE (Tocheva et al., 2013). To investigate if there is a concomitant accumulation of PBPs at the LE, we stained sporangia with BOCILLIN-FL, a commercially available derivative of penicillin V that has a broad affinity for multiple PBPs in B. subtilis (Lakaye et al., 1994; Zhao et al., 1999; Kocaoglu et al., 2012). We observed continuous fluorescent signal around the mother cell membrane that was enriched at the LE (Figure 2A). To better monitor localization of PBPs during engulfment, we plotted fluorescence intensities along the forespores for the membrane and BOCILLIN-FL fluorescent signals as a function of the engulfment stage (Figure 2B). Clearly, the LE is always enriched with PBPs throughout membrane migration.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig2-v2.jpg)\n\n**Figure 2.:** (A) Sporulating cells stained with a green fluorescent derivative of penicillin V (BOCILLIN-FL). Bright foci are observed at the LE of the engulfing membrane. Membranes were stained with FM 4\u201364 (red). (B) Average BOCILLIN-FL (green) and FM 4\u201364 (red) fluorescence intensities along forespore contours plotted as a function of the degree of engulfment. Cells are binned according to percentage of engulfment. BOCILLIN-FL signal is enriched at the LE throughout engulfment ($n$\u00a0=\u00a0125). (C) Cell-specific localization of the peptidoglycan biosynthetic machinery. GFP tagged versions of different B. subtilis PBPs and actin-like proteins (ALPs) were produced from mother cell- (MC) or forespore- (FS) specific promoters. (D) Six different localization patterns were observed upon cell-specific localization of PBPs and ALPs. For each pair of images, left panel shows overlay of membrane and GFP fluorescence, while the right panel only shows GFP fluorescence. Pictures of representative cells displaying the different patterns are shown (top, GFP fusion proteins transcribed from spoIIR promoter for forespore-specific expression, and from spoIID promoter for mother cell-specific expression). The six different patterns are depicted in the bottom cartoon and proteins assigned to each one are indicated. Membranes were stained with FM 4\u201364. See Figure 2\u2014figure supplement 1 for cropped fields of all PBPs we assayed. Transglycosylase (TG), transpetidase (TP), carboxipetidase (CP), endopeptidase (EP), actin-like protein (ALP). (E) TIRF microscopy of forespore-produced GFP-MreB in four different forespores (i to iv). In every case, the leftmost picture is an overlay of the forespore membranes (shown in white) and the tracks followed by individual TIRF images of GFP-MreB (color encodes time, from blue to red). Sporangia are oriented with the forespores up. For the first sporangia (i), snapshots from TIRF timelapse experiments taken 8 s apart are shown. Arrows indicate GFP-MreB foci and are color coded to match the trace shown in the left panel. Rightmost panel for each forespore shows a kymograph representing the fluorescence intensity along the line joining the leading edges of the engulfing membrane over time (from top to bottom; total time 100 s). Average focus speed (n\u00a0=\u00a014) is indicated at the bottom. Timelapse movies of the examples presented here and additional sporangia are shown in Video 2. (F) Localizaiton of GFP-SpoIIP in untreated sporangia, or in sporangia treated with bacitracin (50 \u03bcg/ml) or cephalexin (50 \u03bcg/ml). (G) Fraction of GFP-SpoIIP fluorescence at LE of the engulfing membrane. Bars represent the average and standard error of 85 untreated sporangia, 38 sporangia treated with bacitracin (50 \u03bcg/ml), and 67 sporangia treated with cephalexin (50 \u03bcg/ml). (H) Model for PG synthesis and degradation at the LE of the engulfing membrane. New PG is synthesized ahead of the LE of the engulfing membrane by forespore-associated PG biosynthetic machinery, and is subsequently degraded but the mother-cell DMP complex. We propose that DMP has specificity for the peptide cross-links that join the newly synthesized PG with the lateral cell wall (orange), which leads to the extension of the septal PG around the forespore. Scale bars 1 \u03bcm.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** GFP was fused to the N-terminus of PBPs and actin-like proteins. The fusion proteins where produced in the forespore or in the mother cell after polar septation by placing the fusion genes under the control of either the forespore specific promoters (PspoIIQ or PspoIIR, for stronger or weaker expression, respectively) or the mother-cell specific promoter PspoIID. With the exception of GFP-PbpE, all the fusions localize to the membrane. GFP-MreB and GFP-Mbl associate to the membrane when produced in the forespore, while GFP-MreBH only shows a week membrane association. When produced in the mother cell, GFP-Mbl and GFP-MreBH remain mostly cytoplasmic, and GFP-MreBH forms some foci distributed around the membrane. Membranes were stained with FM 4\u201364. The different localization patterns are summarized in Figure 2D.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** GFP-PonA and GFP-PbpA were produced specifically in the forespore after polar septation by placing the fusion genes under the control of PspoIIR. The localization of both proteins was determined in wild-type background and in different mutants lacking specific sporulation proteins. GFP-PonA and GFP-PbpA still track the leading edge of the engulfing membrane or localize to the interception between the septal peptidoglycan and the lateral cell wall in all the mutant backgrounds tested. Membranes were stained with FM 4\u201364. Scale bar, 1 \u03bcm.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Localizaiton of GFP-SpoIIP in untreated sporangia, or in sporangia treated with bacitracin (50 \u03bcg/ml), amoxicillin (500 \u03bcg/ml), cephalexin (50 \u03bcg/ml), cloxacillin (500 \u03bcg/ml), oxacillin (50 \u03bcg/ml), or penicillin V (500 \u03bcg/ml). Membranes were stained with FM 4\u201364. (B) Fraction of GFP-SpoIIP fluorescence at LE of the engulfing membrane. Bars represent the average and standard error of 85 untreated sporangia, 38 sporangia treated with bacitracin (50 \u03bcg/ml), 37 treated with amoxicillin (500 \u03bcg/ml), 67 treated with cephalexin (50 \u03bcg/ml), 43 treated with cloxacillin (500 \u03bcg/ml), 36 treated with oxacillin (50 \u03bcg/ml), and 39 treated with penicillin V (500 \u03bcg/ml).\u00a0(C,D) Localization of GFP-SpoIID (C) and GFP-SpoIIM (D) in untreated sporangia or in sporangia treated with bacitracin (\u03bcg/ml) or cephalexin (50 \u03bcg/ml). Membranes were stained with FM 4\u201364. (E,F) Fraction of GFP-SpoIID (E) or GFP-SpoIIM (F) at LE. Bars represent the average and standard error of 106 untreated sporangia, 110 bacitracin-treated sporangia and 126 cephalexin-treated sporangia for GFP-SpoIID (E), and 86 untreated, 79 bacitracin-treated and 63 cephalexin-treated sporangia for GFP-SpoIIM (F). Scale bars, 1 \u03bcm.\n\n### PG biosynthetic machinery tracks the leading edge of the engulfing membrane from the forespore\n\nOne possible explanation for the requirement of PG synthesis for engulfment is that PG polymerization by PBPs associated with the LE of the engulfing membrane creates force to pull the engulfing membrane around the forespore. If so, we would expect the PBPs to be located in the mother cell membrane as they polymerize PG. To test this possibility, we assessed the localization of components of the PG biosynthetic machinery in the mother cell or forespore by producing GFP-tagged fusion proteins from promoters that are only active in the mother cell (Ps\u2062p\u2062o\u2062I\u2062I\u2062D) or in the forespore (the stronger Ps\u2062p\u2062o\u2062I\u2062I\u2062Q and the weaker Ps\u2062p\u2062o\u2062I\u2062I\u2062R) after polar septation (Figure 2C,D, Figure 2\u2014figure supplement 1). One prior study tested the localisation of several PBPs during sporulation (Scheffers, 2005), but most of them were produced before polar separation and it was not possible to determine which cell compartment they were in. We successfully determined the cell-specific localization of 16 proteins involved in PG synthesis (Figure 2\u2014figure supplement 1), including all class A and four class B high-molecular-weight (HMW) PBPs, five low-molecular-weight (LMW) PBPs (four endopeptidases and one carboxipeptidase), and all three MreB paralogues (actin-like proteins, ALPs). Surprisingly, only PonA (PBP1a/b) showed a weak enrichment at the LE of the engulfing membrane when produced in the mother cell (Figure 2D). However, ten PBPs, including PonA and all the class B HMW PBPs and LMW PBPs tested, and all the MreB paralogues were able to track the LE only when produced in the forespore (Figure 2D, Figure 2\u2014figure supplement 1). To follow the dynamics of the forespore PG biosynthetic machinery at the LE, we monitored the movement of GFP-MreB using TIRF microscopy (Garner et al., 2011; Dom\u00ednguez-Escobar et al., 2011). Forespore GFP-MreB foci rotate around the forespore, coincident with the leading edge of the engulfing membrane, with speeds consistent with those previously reported (Figure 2E, Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/18657/elife-18657-media2.mp4.jpg)\n\n**Video 2.:** The movie shows the movement forespore GFP-MreB in eight different sporangia, determined by TIRF microscopy. A static membrane picture is shown to the left, and the TIRF microscopy of the corresponding GFP-MreB is shown immediately to the right. TIRF pictures were taken every 4 s, and the total duration of the movie is 100 s. The first four sporangia correspond to the examples (i) to (iv) shown in Figure 2.\n\nIt is unclear how the PBPs recognize the LE, as localization of forespore produced GFP-PonA and GFP-PbpA did not depend on candidate proteins SpoIIB, SpoIID, SpoIIM, SpoIIP, SpoIIQ, SpoIIIAH, SpoIVFAB, or GerM (Aung et al., 2007; Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Blaylock et al., 2004; Rodrigues et al., 2016) (Figure 2\u2014figure supplement 2). However, these results indicate that the forespore plays a critical role in PG synthesis, and point to an engulfment mechanism that does not depend on pulling the engulfing membrane by mother cell-directed peptidoglycan synthesis.\n\n### PG synthesis is required for SpoIIDMP localization at the leading edge of the engulfing membrane\n\nThe observation that multiple PBPs can track the LE of the engulfing membrane from the forespore opens the possibility that PG synthesis happens ahead of the LE, preceding PG degradation by the mother cell DMP complex. In this context, PG synthesis might be required for proper activity and/or localization of the DMP complex, which is the only other essential engulfment module described so far. The DMP complex localizes at the LE throughout engulfment (Gutierrez et al., 2010). To determine if PG synthesis is required for proper localization of DMP, we studied the localization of a GFP-SpoIIP fusion protein when PG synthesis was inhibited by different antibiotics (Figure 2F,G). GFP-SpoIIP shows a well-defined localization at the LE, with \u223c70% of the total GFP fluorescence at LE in native conditions (Figure 2F,G). However, when PG biosynthesis is inhibited, there is a delocalization of GFP-SpoIIP, which is almost total in cells treated with bacitracin and partial when antibiotics targeting later stages of PG synthesis are used (Figure 2F,G; Figure 2\u2014figure supplement 3). Equivalent results were obtained with GFP-SpoIID and GFP-SpoIIM fusions (Figure 2\u2014figure supplement 3).\u00a0These results are consistent with a model in which PG is synthesized ahead of the LE by forespore-associated PBPs specify the site of PG degradation by the DMP complex\u00a0(Figure 2H).\n\n### A biophysical model to describe leading edge migration\n\nOur data indicate that engulfment proceeds through coordinated PG synthesis and degradation at the LE. To explain how this coordination leads to engulfment, we propose a minimal biophysical mechanism based on the \u2018template mechanism\u2019 of vegetative cell growth assuming that glycans are oriented perpendicular to the long axis of the cell (Figure 3A) (Koch and Doyle, 1985; H\u00f6ltje, 1998; Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011; Beeby et al., 2013; Dover et al., 2015), without requiring any further assumptions about the outer cell wall structure of Gram-positive bacteria, which is still unclear (Hayhurst et al., 2008; Beeby et al., 2013; Dover et al., 2015). In this mechanism, a new glycan strand is inserted using both the septal glycan and leading forespore-proximal glycan strand of the lateral wall as template strands to which the new PG strand is cross linked. Subsequently, peptide cross-links between the two template strands are removed from the mother-cell proximal side by the DMP complex. Specifically, in this complex SpoIIP has well documented endopeptidase activity (Morlot et al., 2010). Note, similar \u2018make-before-break\u2019 mechanisms were proposed to allow vegetative cell wall growth without reducing cell wall integrity (Koch and Doyle, 1985; H\u00f6ltje, 1998). A more detailed mechanism that requires the insertion of multiple new glycan strands to account for glycan removal by SpoIID is shown in Figure 3\u2014figure supplement 1. In either model, synthesis of new PG at the LE likely occurs before degradation, thereby naturally preventing cell lysis during engulfment.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cell cross-section with glycan strands in the plane perpendicular to the long axis of the cell. One strand from old cell wall (blue) and one strand from newly synthesized germ-cell wall (green) are used as a template for new glycan insertion. Coordination between glycan insertion (orange arrow) and peptide cross-link degradation (black cross) drives LE forward. (B) 3D model of stochastic glycan insertion by insertion-degradation complex (IDC) with transpeptidase and transglycosylase activity. Probability of IDC to start inserting new glycan from old glycan end and repair end defect is $p_{rep}$. (C) New inserted glycan shown in dark green. Probability of IDC to continue glycan insertion when it encounters gap in old cell wall is probability of processivity $p_{pro}$. (Inset) Horizontal (between old and new glycan strands) and vertical (between new glycan strands) peptide links are shown in red. In our coarse-grained model glycans are simulated as semi-flexible filaments consisting of beads (green) connected with springs (green). Peptides are simulated as springs (red) connecting neighboring glycan beads.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Here we further explore possible mechanisms considering the fact that SpoIID protein of DMP complex shows transglycosylase activity (Morlot et al., 2010). (A) In the two-for-one mechanism two new glycan strands are added and the newly inserted glycan strand at the LE is degraded (H\u00f6ltje, 1998). Similarly, the three-for-one mechanism would also work (Scheffers and Pinho, 2005). (B) One new glycan strand is added and the innermost cell-wall glycan of the thick old cell wall is degraded. Similar to images of electron microscopy (Tocheva et al., 2013). However, in these models cell-wall degradation without high level of coordination could affect cell-wall integrity and induce cell lysis. All these models share the \u2019make-before-break\u2019 strategy promoting robustness of the remodeling process (Koch and Doyle, 1985).\n\nThe coordination between PG insertion from the forespore and removal by DMP in the mother cell could lead to movement of the junction between the septal peptidoglycan and the lateral peptidoglycan around the forespore to mediate successful engulfment. Based on this proposed mechanism, we created a model whereby insertion and degradation happens, for simplicity, simultaneously by an insertion-degradation complex (IDC), also reflecting the high degree of coordination suggested by the template mechanism. In this model IDC recognizes the leading edge and inserts glycan polymers perpendicular to the long axis of the cell (Figure 3B). Additionally, the model proposes that IDC can recognize glycan ends and initiate glycan polymerization from the end defect with probability of repair prep. During glycan insertion, when an IDC encounters a gap in the outer cell wall strands, it continues polymerization with probability of processivity ppro (Figure 3C). A systematic exploration of the above model parameters showed that intact spores form for prep and ppro>>\u00a00.8 with a marginal dependence on the number of IDCs (Figure 4G, Figure 4\u2014figure supplement 1). However, to compare the model with microscopy data we require a 3D dynamic implementation of this model that reflects the stochasticity of underlying molecular events.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-v2.jpg)\n\n**Figure 4.:** (A) Effective spring constants in our model represent coarse-grained PG network. Here the angle between neighboring stem peptides that belong to a single glycan is assumed to be 90\u00b0. Therefore, every other stem peptide is in plane with glycan sheet\u00a0(Nguyen et al., 2015, Huang et al., 2008). The role of effective glycan persistence length on engulfment is negligible (see Figure 4\u2014figure supplement 3). (B) Simulations for different values of effective peptide $k_{pep}$ and glycan $k_{gly}$ spring constants are compared with experimentally measured forespore surface area, volume and engulfment using mutual $\u03c7^{2}$ statistics (Equation 2). Arrows point to effective literature $k_{pep}$ and $k_{gly}$\u00a0(Nguyen et al., 2015). Dark blue region corresponds to simulation parameters that best fit experimental data (Figure 4\u2014figure supplement 4, Video 3). For large enough $k_{gly}$\u00a0$>$ 200 pN/nm mutual $\u03c7^{2}$ is almost independent of $k_{gly}$. (C) Snapshots of WT simulations for parameters ($k_{gly}$\u00a0=\u00a0200 pN/nm,\u00a0$k_{pep}$\u00a0=\u00a025 pN/nm,\u00a0$N_{IDC}$\u00a0=\u00a05) marked with \u2019$\\times$\u2019 in panel (B) (Video 2). The thick septum is treated as outer cell wall, and is assumed degraded once IDCs move along. (D\u2013E) Time traces of experimentally measured engulfment, forespore surface area and forespore volume (green) in comparison with results from a single simulation (orange). Parameters used in simulation are marked with \u2019$\\times$\u2019 in panel (B). For all other parameters see Appendix 2, Appendix-table 1. (F) Snapshots of fully engulfed forespores for various peptidoglycan elastic constants. (G) For various values of independent parameters $p_{rep}$ and $p_{pro}$ roughness of the LE is calculated at the end of stochastic simulations (see Figure 4\u2014figure supplement 1, and Video 4). Here 0 roughness correspond to perfectly symmetric LE; for high enough $p_{rep}=p_{pro}$\u00a0$>$ 0.8 LE forms symmetric profiles. (H) Simulation for asymmetric engulfment is obtained for same parameter as WT except\u00a0$p_{rep}=p_{pro}$\u00a0=\u00a00.7 (marked with \u2019$\\times$\u2019 in panel (G)). Average \u00b1 SD. Scale bars 1 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A\u2013D) Stochastic insertion at the LE of discretized cell circumference with 1570 segments. The details are explained in the Materials and Methodes SI section (2.1). Simulations are run until the LE reaches 500 glycans in height. For obtained LE profiles roughness and their widths are calculated. For each set of independent parameters $p_{rep}$, $p_{pro}$ and $N_{IDC}$ we run 100 simulations and plot the average roughness and width. Parameters $p_{rep}$ and $p_{pro}$ are varied in steps of 0.1. (A,C) For\u00a0$N_{IDC}$\u00a0=\u00a010 smooth LEs are obtained for $p_{rep}$ and $p_{pro}>$ 0.80. For such parameters changing $N_{IDC}$ by an order of magnitude marginally affects LE width while keeping LE roughness within 10%.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Histogram of all peptide link lengths during one engulfment ($k_{pep}$\u00a0=\u00a025 pN/nm,$k_{gly}$\u00a0=\u00a0200 pN/nm,$\u0394\u2062p$\u00a0=\u00a086.31 kPa). Black arrow points to the linear extension regime (i.e. where each peptide is extended <1 nm or <50% of its equilibrium length of 2 nm) (Nguyen et al., 2015). (B) Percentage of peptide links in simulations that are extended in linear regime as a function of time during the process of engulfment. Dashed vertical line is same as in Figure 4D,E.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) $\u03c7^{2}$ (defined in Materials and methods) is used to quantify the impact of effective glycan persistence length ($l_{p}$) on engulfment dynamics. In weakly crosslinked bundles $l_{p}=n\u2062l_{p0}$, where $n$ is the number of glycans in the bundle and $l_{p0}$ is the persistence length of a single glycan; in strongly cross-linked bundles $l_{p}=n^{2}\u2062l_{p0}$\u00a0(Claessens et al., 2006; Piechocka et al., 2010). Since our simulated filaments represent bundles of seven glycans (Figure 4B), the effective persistence length can reach \u223c2 \u03bcm ($l_{p0}$\u00a0=\u00a040 nm). (B\u2013C) Engulfment, forespore surface area and forespore volume are not affected even for high values of effective glycan persistence length ($l_{p}=4\u2062\\mu$m).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A\u2013C) Simulation snapshots for three different sets of PG elastic constants marked with \u2019$\\times$\u2019 in panel B (A: $k_{pep}$=\u00a0$k_{gly}$\u00a0=\u00a050 pN/nm; B:\u00a0$k_{pep}$\u00a0=\u00a025 pN/nm,$k_{gly}$\u00a0=\u00a0200 pN/nm C;\u00a0$k_{pep}$\u00a0=\u00a025 pN/nm,$k_{gly}$\u00a0=\u00a05 570 pN/nm ). Elastic constants in C are obtained from molecular dynamic simulations (Nguyen et al., 2015).\u00a0$\u0394\u2062T$\u00a0=\u00a00.28 hr; scale bar 1 \u03bcm. (D) Same as Figure 4B, repeated here for clarity. (E) Relative forespore curvature at the end of engulfment where $\u03ba_{0}$ is the curvature of spherical cap. At the end of engulfment curvature was experimentally measured with $\\sigma\u2062(\u03ba)/\u03ba\u223c0.15$, where $\\sigma\u2062(\u03ba)$ is the standard deviation (see Figure 1\u2014figure supplement 3A). Therefore, curvatures in , B, and C are within the experimentally measured standard deviation. (F) Snapshots of fully engulfed forespores for various PG elastic constants.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/18657/elife-18657-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (A) Simulation snapshots for different values of time delay $\\tau_{delay}$. Newly inserted glycans are separated from the old cell wall by cutting connecting peptides with typical $\\tau_{delay}$. Double arrow shows distance between synthesis and membrane leading edge. (B) Euclidian distance between insertion and degradation (ID separation) vs time for different values of $\\tau_{delay}$. Average over five insertion complexes is plotted vs time. (C) Exploration of delay model when degradation erroneously cuts vertical peptide bonds with probability $p_{pcut}$. (D) For relatively small $p_{pcut}=$ 0.1, an irregular peptidoglycan meshwork is formed. (E\u2013F) Exploration of role of random peptide degradation when synthesis is stopped. (E) Simulation snapshots for various random peptide degradation rates\u00a0$p_{rpep}$\u00a0=\u00a02.2, 22, and 33 min\u22121. (F) Forespore volume vs time for different peptide degradation rates after synthesis is stopped. Scale bars 1 \u03bcm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/18657/elife-18657-media3.mp4.jpg)\n\n**Video 3.:** Parameters are the same ($k_{pep}$\u00a0=\u00a025 pN/nm,\u00a0$k_{gly}$\u00a0=\u00a0200 pN/nm,\u00a0$N_{IDC}$\u00a0=\u00a05) except for WT engulfment $p_{rep}$\u00a0=$p_{pro}$\u00a0=\u00a01 and for asymmetric engulfment $p_{rep}$=$p_{pro}$\u00a0=\u00a00.7. For full exploration of stochastic insertion parameters see Video 4 and Figure 4\u2014figure supplement 1. Front opening of the forespore is not shown for clarity.\n\n![Video 4.](https://cdn.elifesciences.org/articles/18657/elife-18657-media4.mp4.jpg)\n\n**Video 4.:** Simulations for different values of elastic peptidoglycan (PG) parameters $k_{pep}$ and $k_{gly}$.PG spring constants drastically affect forespore morphologies. By decreasing $k_{pep}$ forespores elongate, while by increasing $k_{pep}$ forespores shrink, as measured along the long axis of the cell. Changing $k_{gly}$ has only minor effects on volume and surface area. The main effect is on forespore curvature (see Figure 4\u2014figure supplement 4): high $k_{gly}$ increases the curvature of forespore ends (making them more pointy), while low $k_{gly}$ decreases the curvature of the forespore ends. Septum is not shown for clarity.\n\n### Langevin simulations reproduce observed phenotypes\n\nTo simulate stochastic insertion at the leading edge we used Langevin dynamics of a coarse-grained PG meshwork (see Materials and methods). Briefly, glycan strands are modeled as semi-flexible filaments consisting of beads connected with springs, while peptide bridges are modeled as springs connecting glycan beads (Figure 3C) (Laporte et al., 2012; Tang et al., 2014; Huang et al., 2008). Typical length of inserted glycan polymer is \u223c1 \u03bcm (\u223c1/3 cell circumference) (Hayhurst et al., 2008) and in our model the peptide bridges between newly inserted glycan strands are in a relaxed state. Glycan beads experience forces due to glycan elastic springs ($k_{gly}$), glycan persistence length ($l_{p}$), elastic peptide links ($k_{pep}$), stochastic thermal fluctuations, and pressure difference ($\u0394\u2062p$) between forespore and mother cell (see Equation 1 and Appendix 2). Glycan strands in the PG layer are connected with neighboring glycans by stem peptides (Figure 4A). In our model, the angle between neighboring stem peptides that belong to the same glycan strand is assumed to be 90\u00b0(Nguyen et al., 2015; Huang et al., 2008). Therefore, every other stem peptide is in plane with the glycan sheet. In our model $\u0394\u2062p$ originates from the packing of the B. subtilis chromosome (\u223c4.2 Mbp) in the small forespore compartment (Errington, 1993; Perez et al., 2000; Bath et al., 2000; Yen Shin et al., 2015).\n\nTo systematically explore the peptidoglycan parameters, we compared our simulations with actual changes in forespore volume, forespore surface area, and percentage of engulfment extracted from time-lapse movies, using \u03c72 fitting (Figure 4B, Equation 2, Materials and methods). Parameters that best fit experimental measurements belong to dark blue region in agreement with molecular dynamic simulations (Nguyen et al., 2015). For a single peptide bond, the linear elasticity regime is valid for extensions that are less than 1 nm (Nguyen et al., 2015) and this elastic regime is maintained in the regions with low \u03c72 (Figure 4\u2014figure supplement 2). For large enough glycan stiffness (kgly>>\u00a0300 pN/nm) \u03c72 becomes independent of kgly (Figure 4B). A typical simulation shown in Figure 4C matches experimental measurements of time-dependent engulfment, volume, and surface area (Figure 4D,E). PG spring constants drastically affect forespore morphologies. By decreasing kpep forespores elongate, while by increasing kpep forespores shrink, as measured along the long axis of the cell. Changing kgly has only minor effects on volume and surface area. However, the main effect is on forespore curvature (see Figure 4\u2014figure supplement 4): high kgly increases the curvature of forespore ends (making them more pointy), while low kgly decreases the curvature of the forespore ends. Our simulations successfully reproduce asymmetric engulfment (Figure 4F,G; Video 5). For prep and ppro\u2a7d0.8 we obtained asymmetric engulfment that reproduces the phenotypes observed when PG synthesis or degradation is partially blocked. When defects in the peptidoglycan meshwork are not repaired, different parts of the leading edge extend in an uncoordinated manner, producing asymmetric engulfment.\n\n![Video 5.](https://cdn.elifesciences.org/articles/18657/elife-18657-media5.mp4.jpg)\n\n**Video 5.:** Simulations for different values of stochastic parameters $p_{rep}$ and $p_{pro}$.Decreasing $p_{rep}$ and $p_{pro}$ below 0.8 results in asymmetric engulfment. For full exploration of stochastic insertion parameter see Figure 4\u2014figure supplement 1.\n\nSince our simulations correctly reproduced engulfment dynamics we used simulation parameters to estimate glycan insertion velocities $V_{IDC}$ of IDC (see Appendix 2). Using this method we estimated a lower bound on product $N_{IDC}\u22c5V_{IDC}$\u00a0\u223c\u00a0110 nm/s, where $N_{IDC}$ is the number of insertion complexes. Similarly, by estimating the total amount of newly inserted material in the forespore within \u223c0.8 hr without any pausing we obtain $N_{IDC}\u22c5V_{IDC}$\u00a0\u223c\u00a0117 nm/s. For circumferentially processive PBPs (PbpA and PbpH), the absolute velocity measured using TIRF microscopy is \u223c20\u201340 nm/s during vegetative cell growth (Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011), which is in agreement with the speed of forespore GFP-MreB determined from our TIRF experiments ((28 \u00b1 8) nm/s,\u00a0$n$\u00a0=\u00a014; Figure 2E). Using this estimate for $V_{IDC}$, we obtain a lower bound 3\u20136 on the number of active, highly processive PBP molecules. However, the actual number of proteins could be higher for other nonprocessive PBPs (Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011).\n\n## Discussion\n\nThe results presented here suggest that engulfment involves coordinated PG synthesis and degradation processes that are segregated between different cell types: first, PG is synthesized in front of the LE of the engulfing membrane by a forespore-associated PG biosynthetic machinery that rotates following the LE of the engulfing membrane. Then this new PG is targeted for degradation by the mother cell-associated PG degradation machinery comprised of the DMP complex (Figure 2H). The delocalization of DMP when PG synthesis is inhibited with antibiotics (Figure 2, Figure 2\u2014figure supplement 3) indicates that the DMP either forms an actual complex with the PG biosynthetic machinery across the septal PG (to form a single insertion degradation complex (IDC), as shown in Figure 3) or that DMP targets the new PG synthesized at the LE of the engulfing membrane. In the latter, DMP might specifically target the cross-links that attach the old lateral cell wall to the new PG synthesized at the LE of the engulfing membrane (Figure 2H, orange). Since those cross-links join old, modified PG from the lateral cell wall to newly synthesized PG at the LE, those peptide bridges might have a unique chemical composition or structural arrangement that could be specifically recognized by DMP. Hence, either approach provides a safety mechanism during engulfment, since it would prevent DMP from degrading the old PG of the lateral cell wall, which could lead to cell lysis.\n\nWe have conceptualized these results in a biophysical model in which a PG insertion-degradation complex (IDC), representing PBPs for PG synthesis and DMP proteins for PG degradation, catalyzes PG remodeling at the LE of the engulfing membrane. Specifically, we propose that new glycan strands are inserted ahead of the LE of the engulfing membrane and PG is degraded on the mother cell proximal side to create space for forward movement of the LE (Figure 3). This is similar to the \u2018make-before-break\u2019 model of vegetative cell-wall growth, which postulates that the vegetative cell wall is elongated by inserting new PG strands prior to degrading old strands (Koch and Doyle, 1985) (although bacteria can also make a de novo cell wall\u00a0(Ranjit and Young, 2013, Kawai et al., 2014). The make-before-break mechanism also accounts for the directional movement of the LE towards the forespore pole, since the substrate for DMP is new PG synthesized by forespore PBPs, which is always ahead of the LE of the engulfing membrane.\n\nUsing Langevin simulations we successfully reproduced the dynamics of engulfment, forespore volume, and surface area. Additionally, our model correctly reproduced asymmetric engulfment observed with reduced IDC activity, and we estimated that with only a handful of highly processive PBP molecules are necessary to reproduce the observed LE dynamics. A more general model without strong coupling between the PG biosynthetic and PG degradation machineries also leads to successful engulfment (Appendix 2, Figure 4\u2014figure supplement 5, Video 6). However, DMP has to be guided to degrade only the peptide cross-links between old and new glycan strands, and should also prevent detachment of the septal peptidoglycan from the old cell wall.\n\n![Video 6.](https://cdn.elifesciences.org/articles/18657/elife-18657-media6.mp4.jpg)\n\n**Video 6.:** New glycans are released from the old cell wall with typical delay time $\\tau_{delay}$. Simulations for four different values of $\\tau_{delay}=$ 0, 0.9, 9, and 18 min (from left to right). For longer $\\tau_{delay}$ the larger is separation between synthesis and membrane leading edge that is shown as red cylinder.\n\nSince our simple mechanism in Figure 3A entails hydrolysis of certain peptide bonds but no glycan degradation, we explored additional mechanisms since the SpoIID protein of the DMP complex shows transglycosylase activity (Morlot et al., 2010). First, it is possible that engulfment entails a two-for-one mechanism, with two new glycan strands are added and the newly inserted glycan strand at the LE is degraded (H\u00f6ltje, 1998) (Figure 3\u2014figure supplement 1A). Similarly, the three-for-one mechanism would also work (Scheffers and Pinho, 2005). Second, one new glycan strand might be added and the inner most cell-wall glycan of the thick, lateral cell wall degraded (Figure 3\u2014figure supplement 1B). This would make the lateral cell wall thinner as the engulfing membrane moves forward (Tocheva et al., 2013). Finally, it is possible that insertion and degradation are not intimately coupled, and that there is simply a broad region in which PG is inserted ahead of the engulfing membrane, to create multiple links between the septal PG and the lateral cell wall (as shown in Figure 2H), and that the DMP complex has a preference for newly synthesized PG. All of these models require the spatial coordination between cell wall degradation and synthesis to avoid compromising cell wall integrity and inducing cell lysis, and all share a common \u2018make-before-break\u2019 strategy to promote robustness of the otherwise risky PG remodeling process (Koch and Doyle, 1985). In order to waste as little energy as possible, a more stringent \u2018make-just-before-break\u2019 strategy may even apply, motivating more intimate coupling between the PG biosynthetic and degradation machineries.\n\nOur simple biophysical mechanism postulates that engulfment does not rely on pulling or pushing forces for membrane migration. Instead, cell wall remodeling makes room for the mother cell membrane to expand around the forespore by entropic forces. During engulfment the mother-cell surface area increases by \u223c2 \u03bcm2\u00a0(\u223c25%, see Figure 1\u2014figure supplement 3), and this excess of membrane could simply be accommodated around the forespore by remodeling the PG at the LE. However, our model does not include all potential contributors to engulfment. For instance, the SpoIIQ-AH zipper, which is dispensable for engulfment in native conditions (Broder and Pogliano, 2006), might prevent membrane backward movement, and might also help localize the IDC components toward the LE. Interestingly, SpoIIQ-AH interaction is essential for engulfment in Clostridium difficile where the SpoIIQ ortholog posseses endopeptidase activity (Crawshaw et al., 2014; Serrano et al., 2016; Fimlaid et al., 2015). The model also does not consider the impact of the tethering of the LE of the engulfing membrane to the forespore via interactions between the mother cell membrane anchored DMP complex at the LE and forespore synthesized PG. Future experiments and modeling should address the role of these and other potential contributors to LE migration, which will allow us to refine our biophysical model and obtain a comprehensive view of membrane dynamics during engulfment. Furthermore, understanding the cooperation between PBPs and DMP will provide valuable clues about the structure of the cell wall in Gram-positive bacteria.\n\n## Materials and methods\n\n### Strains and culture conditions\n\nAll the strains used in this study are derivatives of B.\u00a0subtilis PY79. Complete lists of strains, plasmids, and oligonucleotides see Appendix 3. Detailed descriptions of plasmid construction are provided in Supplementary\u00a0file\u00a01. For each experiment we had at least two biological replicas, and each one contains at least three technical replicas. Averages of individual cells, but not the averages of different replicas are reported. Sporulation was induced by resuspension (Sterlini and Mandelstam, 1969), except that the bacteria were grown in 25% LB prior to resuspension, rather than CH medium. Cultures were grown at 37\u00b0C for batch culture experiments, and at 30\u00b0C for timelapse experiments.\n\n### Fluorescence microscopy\n\nCells were visualized on an Applied Precision DV Elite optical sectioning microscope equipped with a Photometrics CoolSNAP-HQ2 camera and deconvolved using SoftWoRx v5.5.1 (Applied Precision). When appropriate, membranes were stained with 0.5 \u03bcg/ml FM 4\u201364 (Life Technologies,\u00a0Waltham,\u00a0Massachusetts) or 1 $\\mu$g/ml Mitotracker green (Life Technologies). Cells were transferred to 1.2% agarose pads for imaging. The median focal plane is shown.\n\n### Timelapse fluorescent microscopy\n\nSporulation was induced at 30\u00b0C. 1.5 hr after sporulation induction, 0.5 \u03bcg/ml FM 4\u201364 was added to the culture and incubation continued for another 1.5 hr. Seven \u03bcl samples were taken 3 hr after resuspension and transferred to agarose pads prepared as follows: 2/3 vol of supernatant from the sporulation culture; 1/3 vol 3.6% agarose in fresh A+B sporulation medium; 0.17 \u03bcg/ml FM 4\u201364. When appropriated, cephalexin (50 \u03bcg/ml) or bacitracin (50 \u03bcg/ml) was added to the pad. Pads were partially dried, covered with a glass slide and sealed with petroleum jelly to avoid dehydration during timelapse imaging. Petroleum jelly is not toxic and cannot be metabolized by B. subtilis, which poses an advantage over other commonly used sealing compounds, such as glycerol, which can be used as a carbon source and inhibit the initiation of sporulation. Pictures were taken in an environmental chamber at 30\u00b0C every 5 min for 5 hr. Excitation/emission filters were TRITC/CY5. Excitation light transmission was set to 5% to minimize phototoxicity. Exposure time was 0.1 s.\n\n### Forespore GFP-MreB tracking experiments\n\nMreB tracking experiments were performed using the strain JLG2411, which produced GFP-MreB in the forespore after polar septation from spoIIQ promoter. Sporulation and agarose pads were done as described in Timelapse fluorescent microscopy, except that FM 4\u201364 was only added to the agarose pads and not to the sporulating cultures. A static membrane picture was taken at the beginning of the experiment, and was used as a reference to determine the position of the GFP-MreB foci. GFP-MreB motion at the cell surface was determined by TIRF microscopy (Garner et al., 2011; Dom\u00ednguez-Escobar et al., 2011), taking pictures every 4 s for 100 s. Imaging was performed at 30\u00b0C. We used two different microscopes to perform TIRF microscopy: (i) An Applied Precision Spectris optical sectioning microscope system equipped with an Olympus IX70 microscope, a Photometrics CoolSNAP HQ digital camera and a 488 nm argon laser. To perform TIRF in this microscope, we used an Olympus 1003 1.65 Apo objective, immersion oil\u00a0$n$\u00a0=\u00a01.78 (Cargille Laboratories), and sapphire coverslips (Olympus). Laser power was set to 15%, and exposure time was 200 ms. (ii) An Applied Precision OMX Structured Illumination microscopy equipped with a Ring-TIRF system and a UApoN 1.49NA objective, immersion oil\u00a0$n$\u00a0=\u00a01.518. Exposure time was 150 ms.\n\nImages were analyzed using the ImageJ-based FIJI package. Sporangia were aligned vertically using the rotation function in FIJI. GFP-MreB foci were tracked using the TrackMate pluging (Tinevez et al., 2016), using the LoG detector, estimated blob diameter of 300 nm, simple LAP tracked and linking max distance of 300 nm. Only tracks that contained more than four points were used to determine the MreB foci speed.\n\n### Image analysis\n\nWe used the semi-automated active contour software JFilament available as ImageJ plugin to extract fluorescently labeled membrane position over time (Smith et al., 2010). Membrane position obtained from the medial focal plane is used in custom built Mathematica software to calculate 3D volume and surface area by assuming rotational symmetry around the axis connecting the center of masses of mother cell and forespore. For available code and example see Supplementary\u00a0file\u00a02 . Kymographs as in Figure 1E were created by collecting intensities along the forespore contours. Subsequently, pixel angles were determined using pixel position relative to the mother-forespore frame as defined in inset of Figure 1E. Forespore fluorescent intensities along angles are normalized and interpolated using third-order polynomials. For a given angle the population intensity average of different cells is calculated and plotted over time. Time 0\u2019 is the onset of septum curving.\n\n### Quantification of GFP-SpoIID, GFP-SpoIIM and GFP-SpoIIP fraction at LE\n\nAntibiotics were added 2 hr after resuspension, and samples were taken one hour later for imaging. Exposure times and image adjustments were kept constant throughout the experiment. To determine the fraction of GFP signal at the LE, GFP pixel intensities of seven optical sections covering a total thickness of 0.9 \u03bcm were summed. GFP intensities at the LE ($I_{LE}$) and in the rest of the mother cell ($I_{MC}$) were determined separately by drawing polygons encompassing the LE or the MC. After subtraction of the average background intensity, the fraction of GFP fluorescence at LE ($\\frac{I_{LE}}{I_{LE}+I_{MC}}$) was determined for each sporangium.\n\n### Langevin dynamics\n\nThe Langevin dynamic equation of the $i^{th}$ bead at position $\ud835\udc2b_{i}$ is given by:\n\n$$\n\u03b6_{i}\u2062\\frac{d\u2062\ud835\udc2b_{i}}{d\u2062t}=\ud835\udc05_{i}^{spr}+\ud835\udc05_{i}^{bend}+\ud835\udc05_{i}^{pep}+\ud835\udc05_{i}^{stoch}+\ud835\udc05_{i}^{\u0394\u2062p}+\ud835\udc05_{i}^{wall},\n$$\n\nwhere the left-hand side depends on the drag coefficient $\u03b6_{i}\u22484\u2062\\pi\u2062\u03b7_{med}\u2062l_{0}$\u00a0(Howard, 2001), with $\u03b7_{med}$ is the medium viscosity and $l_{0}$ equilibrium distance between neighbouring beads (see Appendix 1). On the right-hand side of Equation 5 we have contributions of glycan elastic spring, glycan bending, peptide elastic links, stochastic thermal fluctuations, pressure difference $\u0394\u2062p$ between forespore and mother, and excluded volume from the old cell wall, respectively.\n\n### \u03c72\u00a0fitting of parameters\n\nTo compare simulations with experiments we measured forespore volume ($V_{i}$), forespore surface area ($S_{i}$) and engulfment ($E_{i}$) and constructed a quality-of-fit function as:\n\n$$\n\u03c7^{2}=\\sumi[\\frac{(V_{i}^{exp}-V_{i}^{sim})^{2}}{\\sigma^{2}\u2062(V_{i}^{exp})}+\\frac{(S_{i}^{exp}-S_{i}^{sim})^{2}}{\\sigma^{2}\u2062(S_{i}^{exp})}+\\frac{(E_{i}^{exp}-E_{i}^{sim})^{2}}{\\sigma^{2}\u2062(E_{i}^{exp})}],\n$$\n\nwhere index $i$ corresponds to $i^{th}$ time point, and $\\sigma$ is the standard deviation (Spitzer et al., 2006).\n",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "0a5d2d60-5487-4f36-917c-a45dd2451266",
+      "submission_id": "88ddb058-bb63-4b18-b88b-959d0326b2fa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Avigdor Eldar, Tel Aviv University , Israel\n\n## Review text\n\nDOI: [10.7554/eLife.18657.031](https://doi.org/10.7554/eLife.18657.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell wall remodeling drives engulfment during Bacillus subtilis sporulation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor and Naama Barkai as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWe find the manuscript interesting, insightful and well written. The experimental data provide a wealth of novel insights and the synthesis provided by the modeling scheme nicely fit engulfment dynamics of the wild-type and mutant phenotypes. Nevertheless, there are multiple points which need further clarifications both on the experimental and theoretical sides. We therefore recommend acceptance with major revisions that will answer the concerns of the reviewers and the Reviewing Editor.\n\nOverview of the manuscript:\n\nPrevious works showed that peptidoglycan (PG) production occur at the leading edge of the engulfing membrane and that this leading edge of the mother-cell (MC) membrane seem to invade below the old cell wall made prior to asymmetric septation (Tocheva et al., 2013). In addition, reduced PG synthesis was also shown to affect engulfment (Meyer et al., 2010). The current work goes beyond the previous works and show that: 1) A block of PG synthesis halts engulfment completely. 2) PG synthesis at the leading edge (LE) is primary guided by PBPs localized to the leading edge at the forespore side. 3) SpoIIP localization to the LE is dependent on PG synthesis.\n\nThe authors present a biophysical model of PG synthesis which recapitulates the observed membrane dynamics of wild-type and mutant phenotypes by assuming that PG synthesis from the forespore (FS) is followed by degradation of the links between the old (pre-septation) and new (forespore dependent) PG layers, allowing the MC membrane to fill this gap.\n\nEssential revisions:\n\nThe comments are both on the experimental and modeling parts of the manuscript.\n\nExperimental work:\n\nThe major requests of the reviewers and the Reviewing Editor are the following:\n\n1) PBP localization. Reviewer #1 expressed concerns regarding the mechanism of localization of PBPs. One of the options is that this localization is guided by other forespore specific proteins which interact with the leading edge. Specifically, as was raised during the discussion, we ask that the localization of PBPs will be studied in mutants of the FS-MC channel composed of spoIIQ, spoIIIAH and GerM.\n\n2) Reviewer #2 suggests that real time monitoring of PBPs processive activity as was done for MreB (Dom\u00ednguez-Escobar et al., 2011; Garner et al., 2011) would enable direct comparison with the model predictions.\n\nModeling:\n\nThe mathematical model has multiple underlying assumptions. We ask that you will further discuss these assumptions and extend the modeling scheme to further understand which of those is necessary. The major specific concerns raised are:\n\n1) How does the model fit to the Gram positive envelope with its multiple layers, the presence of techioic acid and the unclear arrangement of PG strands (Reviewer #1)? Specifically, the model is very different than the one presented in Nguyen et al., 2015. Can the authors discuss these differences?\n\n2) Discuss and simulate the validity of the assumption that the forespore-dependent synthesis of PG results in a difference between the new and old PG structure that enable specific breakage of the connecting peptide bond (Reviewer #1 and Reviewing Editor).\n\n3) The presence of a tight insertion-degradation complex (IDC) is speculative. Compare simulation results of tight IDC activity (shown now) with simulations where synthesis and degradation are not coupled into a complex but are more weakly associated (as in Figure 2G).\n\n4) Further illuminate the functional importance of the 'make before break' model for this process (see further elaboration of this point below in the section \"Comments on modeling raised during discussion\").\n\nComments on modeling raised during discussion:\n\n1) 'Make before break' and cell wall integrity. It is not clear to me whether the make before break process in the model is really needed for maintaining cell-wall integrity, as the model anyway assumes that the DMP complex is not effective in breaking the old cell wall and therefore does not jeopardize its integrity. It seems to me that the 'make' part is only necessary to ensure the specificity of the 'break' part. That is, to ensure that a forespore specific layer will be produced that allows the specific degradation of its connections with the old pre-forespore layer above it.\n\n2) \"Make just before break\" vs. \"make before break\". Is localization to the LE critical or just more economic? It is not clear to me that the process would not have worked if the new layer would have been produced everywhere and then hydrolyzed specifically at the LE. It would be illuminating to see a simulation where it is assumed that there is no localization and the difference between cases discussed.\n\n3) The role of the DMP complex in the simulations. The simulations seem only to show the making of the forespore inner layer of PG, but does not say anything about the interaction between this layer and the old layer and the corresponding mechanism of degradation of links between the two layers by the DMP complex. In effect, it seems that the DMP complex has no role in the IDC in the simulation. This might be OK, if one assumes that there is an IDC, but the authors claim in the Discussion that similar behavior would be observed if the two are not tightly linked. Can the authors present a more general model where spatial association is not tight (as shown in Figure 2G and discussed in the Discussion section)?\n\nReviewer #1:\n\nThe manuscript by Ojkic et al. presents a wealth of data on the mechanisms of endosporulation in Bacillus subtilis. In particular, they used fluorescence microscopy to observe the process of engulfment in the presence and absence of drugs inhibiting peptidoglycan synthesis. The data confirm previous studies concluding that both, peptidoglycan synthesis and hydrolysis are needed for membrane migration during engulfment. Multiple PBPs localized to the leading edge of engulfment. They present a model of how a biosynthetic complex and hydrolytic enzymes together facilitate engulfment by remodelling the peptidoglycan layer. Although a lot of data are presented in this impressive work I do have problems with the modelling. In my view the modelling goes too far and is quite speculative. Key aspects of the model are not supported by experimental data.\n\nMy specific points are as follows:\n\n1) Introduction, statement about the \"Gram-negative like PG layers in Bacillus subtilis\" and modelling of the peptidoglycan. The architecture of PG is still a matter of debate, most data are available for E. coli and these support a single disordered layer made of relatively short glycan chains connected by peptide cross-links. However, although the Jensen lab hypothesized based on cryo-EM imaging that Gram-positive species stack multiple of such layers, there is not really good evidence that this model is correct. Other models have been proposed for example the one presented in Nguyen et al., 2015, which is quoted only for the glycan chain length but not for the Bacillus peptidoglycan model. The model presented in Nguyen et al., 2015 presents a more complicated arrangement of glycan chain bundles and was based on AFM images (Foster lab). The peptidoglycan from B. subtilis has significantly longer glycan chains than that from E. coli, and in B. subtilis the peptidoglycan is loaded with a significant amount of wall teichoic acid. Hence, we currently do not know the precise architecture of the peptidoglycan-wall teichoic acid in B. subtilis. The model presented here for the peptidoglycan architecture at the site of engulfment cannot be tested with any current technology and has therefore limited value.\n\n2) Subsection \u201cPG synthesis is essential for membrane migration\u201d, first paragraph. Because fosfomycin and D-cycloserine failed to completely block polar division, they concluded that peptidoglycan might be obtained by recycling during starvation conditions. However, this is a quite speculative assumption which does not seem to be logical, because recycling requires peptidoglycan turnover, which occurs to significant extent only in growing bacteria. Does the mother cell grow during asymmetric septation, or where would the recycling material come from?\n\n3) Discussion, first paragraph. It is not clear what is meant by the 'unique chemical composition of the peptide bridges' that are recognized by DMP. This would imply that the same PBPs, which were found at the leading edge of engulfment and which synthesize the peptidoglycan of the lateral wall or septum during vegetative growth, produce peptide bridges with different composition when they are active during engulfment. This is a highly speculative assumption.\n\n4) Discussion, second paragraph. The PG-insertion-degradation complex (IDC). This is another speculation that is not based on evidence, as they do not present any interaction data between the different peptidoglycan enzymes (PBPs and hydrolases) and other engulfment proteins.\n\nReviewer #2:\n\nThe manuscript describes several experimental findings that advance understanding of engulfment during Bacillus sporulation. The new insights are used to formulate a mathematical model that reproduces experimentally observed engulfment phenotypes. Together, the experimental and modeling results are an important contribution since engulfment is crucial for endospore formation but a mechanistic understanding has been lacking.\n\nThe main experimental findings are 1) peptidoglycan synthesis appears to be essential for migration of the leading edge (LE) of the engulfing mother cell membrane and for localization of SpoIIP (a protein in a peptidoglycan degradation complex) to the LE, based on results obtained with inhibitors of peptidoglycan synthesis, and 2) peptidoglycan-binding proteins (PBPs), which synthesize peptidoglycan, localize to the LE, in most cases only if the PBP is expressed in the forespore. Based on these findings, the authors propose that peptidoglycan synthesis and degradation by forespore PBPs and the mother cell SpoIIP-containing complex, respectively, causes the junction between septal peptidoglycan and the lateral cell wall to move, creating space into which the LE of the mother cell membrane moves by entropic forces.\n\nThe authors formulate a model based on the \"template mechanism\" of vegetative cell growth, in which existing glycan strands serve as a \"template\" for synthesis and peptide cross-linking of a new glycan strand prior to degradation of \"old\" peptide cross-links and perhaps some of the \"old\" glycan strands. Dynamic simulations with the model produce engulfment with timing, and with forespore area and volume, that match the experimental observations. Simulations in which the probability of the modeled \"insertion-degradation complex\" initiating and continuing polymerization at glycan ends is too low result in asymmetric engulfment, as observed experimentally when inhibitors of peptidoglycan synthesis are added.\n\nI support publication in eLife based on the fundamental biological insight provided, the convincing data, and the excellent presentation which is suitable for a broad audience.\n\nThat said, the manuscript could be strengthened as follows:\n\n1) Provide direct evidence for peptidoglycan synthesis at the LE (e.g., using fluorescent D-amino acids). The data do not completely rule out a mechanism involving only degradative remodeling of the lateral cell wall to create the germ cell wall, if the peptidoglycan synthesis inhibitors used unexpectedly inhibit degradation.\n\n2) Track forespore-expressed GFP-PBP fusions (as for GFP fusions to MreB isoforms in Dom\u00ednguez-Escobar et al., 2011and Garner et al., 2011). If the predicted circumferential motions were observed, and, if it were possible to measure their number and speed, predictions of the modeling made in the last paragraph of Results could be tested.\n\n3) For completeness, do parallel experiments on localization of SpoIID and SpoIIM, to those reported on SpoIIP, since the three proteins are expected to form a complex.\n\n4) Clarify whether the probability of initiating glycan polymerization from an end defect (pdef in subsection \u201cA biophysical model to describe leading edge migration\u201d) is different from the probability of inserting new glycan from an old glycan end and repairing the end defect (prep in Figure 3B legend).\n",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "41662134-a70e-4155-ba0b-2f6f1335b609",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C1",
+      "claim": "Bacillus subtilis forms durable spores for survival when starved.",
+      "claim_type": "EXPLICIT",
+      "source": "When starved, the Gram-positive bacterium Bacillus subtilis forms durable spores for survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about B. subtilis biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "f61aa470-094f-4ea2-ace8-bd7911c25243",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C2",
+      "claim": "Sporulation initiates with an asymmetric cell division, creating a large mother cell and a small forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporulation initiates with an asymmetric cell division, creating a large mother cell and a small forespore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge about sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "c8475e7b-1004-4f40-a19d-91327c900718",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C3",
+      "claim": "The mother cell membrane engulfs the forespore in a phagocytosis-like process after asymmetric division.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the mother cell membrane engulfs the forespore in a phagocytosis-like process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is established knowledge about sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b05bbaed-9629-4de9-bc9d-210ad21c003e",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C4",
+      "claim": "The force generation mechanism for forward membrane movement during engulfment was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the force generation mechanism for forward membrane movement remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as the knowledge gap this study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "069a5211-dc4e-4ce6-a9fd-f48d5c8bd6d4",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C5",
+      "claim": "Membrane migration during engulfment is driven by cell wall remodeling at the leading edge of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that membrane migration is driven by cell wall remodeling at the leading edge of the engulfing membrane, with peptidoglycan synthesis and degradation mediated by penicillin binding proteins in the forespore and a cell wall degradation protein complex in the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study as stated in the abstract, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "a3c43d4b-6006-4802-8a86-e4b55f9eb0a0",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C6",
+      "claim": "Peptidoglycan synthesis during engulfment is mediated by penicillin binding proteins in the forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that membrane migration is driven by cell wall remodeling at the leading edge of the engulfing membrane, with peptidoglycan synthesis and degradation mediated by penicillin binding proteins in the forespore and a cell wall degradation protein complex in the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by localization data showing forespore-produced PBPs track the leading edge (Figure 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "d9fc22a5-285b-4d3f-9dcb-18e7e034669e",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C7",
+      "claim": "Peptidoglycan degradation during engulfment is mediated by a cell wall degradation protein complex in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that membrane migration is driven by cell wall remodeling at the leading edge of the engulfing membrane, with peptidoglycan synthesis and degradation mediated by penicillin binding proteins in the forespore and a cell wall degradation protein complex in the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and refers to the DMP complex discussed throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b95cafe5-5ecf-4159-bc20-ee073c5ea9dc",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C8",
+      "claim": "The junction between the septum and the lateral cell wall moves around the forespore by a mechanism resembling the 'template model'.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose a simple model for engulfment in which the junction between the septum and the lateral cell wall moves around the forespore by a mechanism resembling the 'template model'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the proposed model stated in the abstract, based on inference from experimental observations and modeling.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "020bb524-1515-4d18-a5b6-47430a05fc9c",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C9",
+      "claim": "Engulfment entails a dramatic reorganization of the sporangium, from two cells that lie side by side to a forespore contained within the cytoplasm of the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Engulfment entails a dramatic reorganization of the sporangium, from two cells that lie side by side to a forespore contained within the cytoplasm of the mother cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as established knowledge about sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "1994bec6-c36c-415b-a713-c142c4bc7e35",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C11",
+      "claim": "The mechanism of force generation to push or pull the mother cell membrane around the forespore was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While a number of molecular players for engulfment have been identified, the mechanism of force generation to push or pull the mother cell membrane around the forespore remains unknown (Higgins and Dworkin, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citation, establishing the knowledge gap.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "21fed517-fe56-484a-aab6-dd36b54fb74f",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C12",
+      "claim": "The forespore protein SpoIIQ and the mother cell protein SpoIIIAH interact in a zipper-like manner across the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the forespore protein SpoIIQ and the mother cell protein SpoIIIAH interact in a zipper-like manner across the septum (Blaylock et al., 2004), and mediate the fast engulfment observed in the absence of cell wall (Broder and Pogliano, 2006; Ojkic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "280e0023-7d54-47a9-a751-0c24430510f0",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C13",
+      "claim": "The SpoIIQ-SpoIIIAH complex mediates fast engulfment observed in the absence of cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the forespore protein SpoIIQ and the mother cell protein SpoIIIAH interact in a zipper-like manner across the septum (Blaylock et al., 2004), and mediate the fast engulfment observed in the absence of cell wall (Broder and Pogliano, 2006; Ojkic et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b352c9b1-d975-4e9c-a82a-b8be5e172ab5",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C14",
+      "claim": "The SpoIIQ-AH complex is static and is proposed to act as a Brownian ratchet to prevent backwards movement of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex is static and is proposed to act as a Brownian ratchet to prevent backwards movement of the engulfing membrane, contributing to the robustness of engulfment in intact cells (Sun et al., 2000; Broder and Pogliano, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "175e6278-2f7a-4ab9-a309-4dbc21eb540d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C15",
+      "claim": "The SpoIID, SpoIIM and SpoIIP complex (DMP) localizes at the leading edge of the mother cell engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the SpoIID, SpoIIM and SpoIIP complex (DMP) localizes at the leading edge (LE) of the mother cell engulfing membrane and is essential and rate limiting for membrane migration (Abanes-De Mello et al., 2002; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "e4d1d117-563a-4682-9cb7-8cf9b70969db",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C16",
+      "claim": "The DMP complex is essential and rate limiting for membrane migration during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the SpoIID, SpoIIM and SpoIIP complex (DMP) localizes at the leading edge (LE) of the mother cell engulfing membrane and is essential and rate limiting for membrane migration (Abanes-De Mello et al., 2002; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "5da0b0d2-4fc4-4aed-a56a-719d9779719d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C17",
+      "claim": "SpoIIP removes stem peptides from peptidoglycan in a processive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex contains two enzymes that degrade PG in a processive manner: SpoIIP removes stem peptides, and SpoIID degrades the resulting denuded glycan strands (Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Morlot et al., 2010; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "71ca9e99-d2bf-44b6-8131-94af0e326d43",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C18",
+      "claim": "SpoIID degrades denuded glycan strands in a processive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex contains two enzymes that degrade PG in a processive manner: SpoIIP removes stem peptides, and SpoIID degrades the resulting denuded glycan strands (Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Morlot et al., 2010; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "9b46fa7f-4f59-4433-ae7a-8e7a2f0f2b73",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C19",
+      "claim": "Mutants with reduced SpoIID or SpoIIP activity or protein levels engulf asymmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants with reduced SpoIID or SpoIIP activity or protein levels engulf asymmetrically, with the engulfing membrane migrating faster on one side of the forespore (Abanes-De Mello et al., 2002; Gutierrez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "9e19e455-0f03-492f-9c35-d49fe453c56d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C20",
+      "claim": "Blocking PG precursor synthesis with antibiotics impairs membrane migration in mutants lacking the Q-AH zipper.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, blocking PG precursor synthesis with antibiotics impairs membrane migration in mutants lacking the Q-AH zipper, suggesting that PG synthesis at the LE of the engulfing membrane contributes to engulfment (Meyer et al., 2010; Tocheva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "1caa4268-1455-4b42-a6c9-56825867e48c",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C21",
+      "claim": "The cell wall of Bacillus subtilis is about 20\u201340 nm thick.",
+      "claim_type": "EXPLICIT",
+      "source": "In Bacillus subtilis, the cell wall is about 20\u201340 nm thick, and is likely organized into multiple (20\u201330) PG layers (Morlot et al., 2010; Reith and Mayer, 2011; Lee and Huang, 2013; Misra et al., 2013; Dover et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "c2deeb94-949c-4e6e-8de3-ae8c9836f09e",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C22",
+      "claim": "The cell wall of Bacillus subtilis is likely organized into multiple (20\u201330) PG layers.",
+      "claim_type": "EXPLICIT",
+      "source": "In Bacillus subtilis, the cell wall is about 20\u201340 nm thick, and is likely organized into multiple (20\u201330) PG layers (Morlot et al., 2010; Reith and Mayer, 2011; Lee and Huang, 2013; Misra et al., 2013; Dover et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "5db071c8-19bc-418f-bac1-3c525966fc90",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C23",
+      "claim": "A thin PG layer is present between the septal membranes throughout engulfment, appearing to form continuous attachments with the old cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cryo-electron tomography has demonstrated that a thin PG layer is present between the septal membranes throughout engulfment, appearing to form continuous attachments with the old cell wall (Tocheva et al., 2011, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work using cryo-electron tomography.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "3211f8ea-d8f8-41f8-ae84-676c93edac29",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C24",
+      "claim": "The outer cell wall of Gram-positive bacteria contains a significant amount of teichoic acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer cell wall of Gram-positive bacteria also contains a significant amount of teichoic acids, important for cell morphology, phosphates, and antibiotic resistance (Grant, 1979; Brown et al., 2013) but largely absent in spores (Chin et al., 1968; Johnstone et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "e632c334-efae-4e12-bb5b-1e25da4f2222",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C25",
+      "claim": "Teichoic acids are largely absent in spores.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer cell wall of Gram-positive bacteria also contains a significant amount of teichoic acids, important for cell morphology, phosphates, and antibiotic resistance (Grant, 1979; Brown et al., 2013) but largely absent in spores (Chin et al., 1968; Johnstone et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "a286f4d3-a210-432e-9a6f-f1dcfed1d676",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C26",
+      "claim": "Peptidoglycan precursors localize at the LE of the engulfing membrane during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Engulfment entails extensive cell wall remodeling, with peptidoglycan precursors, newly synthesized PG and the sporulation specific PG degradation machinery localizing at the LE of the engulfing membrane (Meyer et al., 2010; Tocheva et al., 2013; Abanes-De Mello et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "282aea8a-cc05-4d81-847b-b570509be45d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C27",
+      "claim": "Newly synthesized PG localizes at the LE of the engulfing membrane during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Engulfment entails extensive cell wall remodeling, with peptidoglycan precursors, newly synthesized PG and the sporulation specific PG degradation machinery localizing at the LE of the engulfing membrane (Meyer et al., 2010; Tocheva et al., 2013; Abanes-De Mello et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "eb8cd9e8-f707-4881-a9ac-f44ea3d22842",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C28",
+      "claim": "The sporulation specific PG degradation machinery localizes at the LE of the engulfing membrane during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Engulfment entails extensive cell wall remodeling, with peptidoglycan precursors, newly synthesized PG and the sporulation specific PG degradation machinery localizing at the LE of the engulfing membrane (Meyer et al., 2010; Tocheva et al., 2013; Abanes-De Mello et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "4c06b5d5-2060-4382-857a-b9936a92e070",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C29",
+      "claim": "Membrane movement during engulfment is severely reduced by steric hindrance due to high turgor pressure within the thick outer cell wall.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since engulfment occurs at high turgor pressure within the cramped confines of the thick outer cell wall, we expect that membrane movement is severely reduced by steric hindrance (Lizunov and Zimmerberg, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction as an expectation based on physical principles and cited work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "32f53c44-66c0-4363-a0e0-1bef0b75a466",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C30",
+      "claim": "Seven antibiotics inhibiting different steps in the PG biosynthesis pathway were found at concentrations that blocked the formation of new polar septa.",
+      "claim_type": "EXPLICIT",
+      "source": "We assayed nine antibiotics inhibiting different steps in the PG biosynthesis pathway, and found concentrations that blocked the formation of new polar septa for seven of them (Figure 1\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "547b1a09-1022-43f2-9c56-86a1a13d9993",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C31",
+      "claim": "In most cases, the antibiotic concentration that blocked polar septation also inhibited completion of engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, the antibiotic concentration that blocked polar septation also inhibited completion of engulfment (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "5e55beaf-2ac2-4508-a5b6-47dd33d41316",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C32",
+      "claim": "Fosfomycin and D-cycloserine failed to completely block polar cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Only two drugs, fosfomycin and D-cycloserine, failed to completely block polar cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "2e3fae69-07d6-46e6-9383-a2212558fcd8",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C33",
+      "claim": "The later stages in PG synthesis are essential for engulfment in wild type sporangia.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the later stages in PG synthesis are essential for engulfment in wild type sporangia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the antibiotic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "96e078c6-1631-4860-b0cf-a0676f509e57",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C34",
+      "claim": "In untreated sporangia, the septum curves and the forespore grows into the mother cell without significant forward movement of the LE for approximately 20 min after polar septation at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses demonstrated that in untreated sporangia (Figure 1B, top row), the septum curves and the forespore grows into the mother cell without significant forward movement of the LE for \u223c20 min after polar septation (at 30\u00b0C, Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1B and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "5b8dd014-133a-46fb-a709-58c1f178c7d8",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C35",
+      "claim": "In untreated sporangia, the LE of the engulfing membrane moves towards the forespore pole and engulfment completes within approximately 60 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the LE of the engulfing membrane moves towards the forespore pole and engulfment completes within \u223c60 min (Figure 1E,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1E and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "d4f0cf6a-d138-4430-b294-5fd08b2de054",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C36",
+      "claim": "In sporangia treated with cephalexin, the septum curves and extends towards the mother cell, but there is no forward membrane migration.",
+      "claim_type": "EXPLICIT",
+      "source": "In sporangia treated with cephalexin (Figure 1B, middle row I), the septum curves and extends towards the mother cell, but there is no forward membrane migration (Figure 1F,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1B, 1F, and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "3a7f52d8-0693-470b-ab0b-f0e732def462",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C37",
+      "claim": "In most sporangia treated with bacitracin, the forespore extended into the mother cell without significant membrane migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to cephalexin, in most sporangia treated with bacitracin (Figure 1B, bottom row I), the forespore extended into the mother cell without significant membrane migration (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1B, 1G, and 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "670e259e-f614-4ca4-b2cf-db58f2b68fec",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C38",
+      "claim": "In approximately 20% of sporangia treated with bacitracin, the engulfing membrane migrated asymmetrically.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in \u223c20% of the sporangia, the engulfing membrane migrated asymmetrically, with one side moving faster than the other, although usually it failed to completely surround the forespore (Figure 1B, bottom row II; Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1B and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "ebf63262-1245-4614-bd85-26e84c9fe34b",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C39",
+      "claim": "PG synthesis is essential for migration of the LE of the engulfing membrane around the forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that PG synthesis is not only essential for the final stage of engulfment (membrane fission) in wild type cells (Meyer et al., 2010), but also for migration of the LE of the engulfing membrane around the forespore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section as a conclusion from the antibiotic experiments, with citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "7ca70964-befa-4c0c-a831-485e40e34b13",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C40",
+      "claim": "There is an accumulation of membrane-bound PG precursors at the LE of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously shown that there is an accumulation of membrane-bound PG precursors at the LE of the engulfing membrane (Meyer et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "df1ec677-595b-4ff0-a1cd-b1cb80b70955",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C41",
+      "claim": "New PG is synthesized at or close to the LE during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, staining with fluorescent D-amino acids has demonstrated that new PG is synthesized at or close to the LE (Tocheva et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "a1fe85a6-9cc5-4ca1-9f37-2687e6099924",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C42",
+      "claim": "BOCILLIN-FL has a broad affinity for multiple PBPs in B. subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate if there is a concomitant accumulation of PBPs at the LE, we stained sporangia with BOCILLIN-FL, a commercially available derivative of penicillin V that has a broad affinity for multiple PBPs in B. subtilis (Lakaye et al., 1994; Zhao et al., 1999; Kocaoglu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "f94711b3-f887-43f1-9440-30114531b192",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C43",
+      "claim": "Continuous fluorescent signal of BOCILLIN-FL was observed around the mother cell membrane that was enriched at the LE.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed continuous fluorescent signal around the mother cell membrane that was enriched at the LE (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "4949c0a0-bc91-4728-8be3-5387a2972052",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C44",
+      "claim": "The LE is enriched with PBPs throughout membrane migration during engulfment.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, the LE is always enriched with PBPs throughout membrane migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section based on analysis of BOCILLIN-FL fluorescence data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "d6828626-96d4-4928-aa51-439708fe1b98",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C45",
+      "claim": "Ten PBPs, including PonA and all the class B HMW PBPs and LMW PBPs tested, and all the MreB paralogues were able to track the LE only when produced in the forespore.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ten PBPs, including PonA and all the class B HMW PBPs and LMW PBPs tested, and all the MreB paralogues were able to track the LE only when produced in the forespore (Figure 2D, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2D and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "f473c0bd-8695-481e-9f3e-d3bb23d8f86f",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C46",
+      "claim": "Only PonA showed a weak enrichment at the LE of the engulfing membrane when produced in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, only PonA (PBP1a/b) showed a weak enrichment at the LE of the engulfing membrane when produced in the mother cell (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "35131975-8409-4108-8c15-93b3af841c7b",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C47",
+      "claim": "Forespore GFP-MreB foci rotate around the forespore, coincident with the leading edge of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Forespore GFP-MreB foci rotate around the forespore, coincident with the leading edge of the engulfing membrane, with speeds consistent with those previously reported (Figure 2E, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by TIRF microscopy data in Figure 2E and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b8749792-5ac1-410b-9fe2-e262aaa87ce2",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C49",
+      "claim": "Localization of forespore produced GFP-PonA and GFP-PbpA did not depend on SpoIIB, SpoIID, SpoIIM, SpoIIP, SpoIIQ, SpoIIIAH, SpoIVFAB, or GerM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear how the PBPs recognize the LE, as localization of forespore produced GFP-PonA and GFP-PbpA did not depend on candidate proteins SpoIIB, SpoIID, SpoIIM, SpoIIP, SpoIIQ, SpoIIIAH, SpoIVFAB, or GerM (Aung et al., 2007; Abanes-De Mello et al., 2002; Chastanet and Losick, 2007; Blaylock et al., 2004; Rodrigues et al., 2016) (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "0d8638f0-e449-4013-927d-50fd32a9eab5",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C50",
+      "claim": "GFP-SpoIIP shows a well-defined localization at the LE, with approximately 70% of the total GFP fluorescence at LE in native conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-SpoIIP shows a well-defined localization at the LE, with \u223c70% of the total GFP fluorescence at LE in native conditions (Figure 2F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2F and 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "2adb4770-231d-4150-85b5-3a38716d525d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C51",
+      "claim": "When PG biosynthesis is inhibited, there is a delocalization of GFP-SpoIIP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when PG biosynthesis is inhibited, there is a delocalization of GFP-SpoIIP, which is almost total in cells treated with bacitracin and partial when antibiotics targeting later stages of PG synthesis are used (Figure 2F,G; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2F, 2G, and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b63714cb-63cd-4699-a2a5-59260352ee5f",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C52",
+      "claim": "Equivalent delocalization results were obtained with GFP-SpoIID and GFP-SpoIIM fusions when PG biosynthesis is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Equivalent results were obtained with GFP-SpoIID and GFP-SpoIIM fusions (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "0b6cc47a-7828-41ce-ae3d-d31e5655119c",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C53",
+      "claim": "PG is synthesized ahead of the LE by forespore-associated PBPs that specify the site of PG degradation by the DMP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with a model in which PG is synthesized ahead of the LE by forespore-associated PBPs specify the site of PG degradation by the DMP complex (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section as a model consistent with the experimental data, shown in Figure 2H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "1ac49194-966f-405b-a665-ca1adc39e4d5",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C54",
+      "claim": "Intact spores form for prep and ppro >> 0.8 with a marginal dependence on the number of IDCs.",
+      "claim_type": "EXPLICIT",
+      "source": "A systematic exploration of the above model parameters showed that intact spores form for prep and ppro>> 0.8 with a marginal dependence on the number of IDCs (Figure 4G, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by modeling data in Figure 4G and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "d8a6d51e-4900-467b-b74d-b4cb5d5dd65b",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C57",
+      "claim": "Engulfment involves coordinated PG synthesis and degradation processes that are segregated between different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here suggest that engulfment involves coordinated PG synthesis and degradation processes that are segregated between different cell types: first, PG is synthesized in front of the LE of the engulfing membrane by a forespore-associated PG biosynthetic machinery that rotates following the LE of the engulfing membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "1fb5035a-a95b-4da4-b4ce-26083cf27aef",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C58",
+      "claim": "PG is synthesized in front of the LE of the engulfing membrane by a forespore-associated PG biosynthetic machinery that rotates following the LE of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here suggest that engulfment involves coordinated PG synthesis and degradation processes that are segregated between different cell types: first, PG is synthesized in front of the LE of the engulfing membrane by a forespore-associated PG biosynthetic machinery that rotates following the LE of the engulfing membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "c4b72c40-be3d-466c-8834-122f47393999",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C59",
+      "claim": "New PG synthesized at the LE is targeted for degradation by the mother cell-associated PG degradation machinery comprised of the DMP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Then this new PG is targeted for degradation by the mother cell-associated PG degradation machinery comprised of the DMP complex (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion as a summary of the findings, with reference to Figure 2H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "fcceadd4-f287-4cfc-95ca-a1a22e131c00",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C60",
+      "claim": "The delocalization of DMP when PG synthesis is inhibited with antibiotics indicates that the DMP either forms an actual complex with the PG biosynthetic machinery across the septal PG or that DMP targets the new PG synthesized at the LE of the engulfing membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The delocalization of DMP when PG synthesis is inhibited with antibiotics (Figure 2, Figure 2\u2014figure supplement 3) indicates that the DMP either forms an actual complex with the PG biosynthetic machinery across the septal PG (to form a single insertion degradation complex (IDC), as shown in Figure 3) or that DMP targets the new PG synthesized at the LE of the engulfing membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion as an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "3f770f69-123a-4fcf-b2f6-645abfe3841c",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C61",
+      "claim": "Langevin simulations successfully reproduced the dynamics of engulfment, forespore volume, and surface area.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Langevin simulations we successfully reproduced the dynamics of engulfment, forespore volume, and surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "12bdbebb-859b-4785-90fa-cdabddb2055b",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C62",
+      "claim": "The model correctly reproduced asymmetric engulfment observed with reduced IDC activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our model correctly reproduced asymmetric engulfment observed with reduced IDC activity, and we estimated that with only a handful of highly processive PBP molecules are necessary to reproduce the observed LE dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a summary of the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "553e3ec5-3fc0-47c0-8b00-ea10abcb19a6",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C63",
+      "claim": "Only a handful of highly processive PBP molecules are necessary to reproduce the observed LE dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, our model correctly reproduced asymmetric engulfment observed with reduced IDC activity, and we estimated that with only a handful of highly processive PBP molecules are necessary to reproduce the observed LE dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a conclusion from the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "c18b4ec6-7a75-4986-ba37-3b0a8b7e5870",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C64",
+      "claim": "The SpoIID protein of the DMP complex shows transglycosylase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our simple mechanism in Figure 3A entails hydrolysis of certain peptide bonds but no glycan degradation, we explored additional mechanisms since the SpoIID protein of the DMP complex shows transglycosylase activity (Morlot et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "6e500157-3e47-4499-9c0e-d554f5f1d766",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C65",
+      "claim": "All proposed engulfment models require the spatial coordination between cell wall degradation and synthesis to avoid compromising cell wall integrity and inducing cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these models require the spatial coordination between cell wall degradation and synthesis to avoid compromising cell wall integrity and inducing cell lysis, and all share a common 'make-before-break' strategy to promote robustness of the otherwise risky PG remodeling process (Koch and Doyle, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a general principle with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "9a2a182c-270b-4471-aac9-8bdb38a9dccd",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C66",
+      "claim": "The biophysical mechanism postulates that engulfment does not rely on pulling or pushing forces for membrane migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simple biophysical mechanism postulates that engulfment does not rely on pulling or pushing forces for membrane migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a key feature of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "64a64304-6888-4b7e-b994-10ccb3e13976",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C67",
+      "claim": "Cell wall remodeling makes room for the mother cell membrane to expand around the forespore by entropic forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, cell wall remodeling makes room for the mother cell membrane to expand around the forespore by entropic forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion as a key feature of the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "09794b1c-d3ce-4160-829e-e195aeab44ad",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C68",
+      "claim": "During engulfment the mother-cell surface area increases by approximately 2 \u03bcm\u00b2 (approximately 25%).",
+      "claim_type": "EXPLICIT",
+      "source": "During engulfment the mother-cell surface area increases by \u223c2 \u03bcm2 (\u223c25%, see Figure 1\u2014figure supplement 3), and this excess of membrane could simply be accommodated around the forespore by remodeling the PG at the LE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Discussion and supported by data in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "52b8cf8f-e363-4cb6-b610-155e9cb91b6c",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C69",
+      "claim": "The SpoIIQ-AH zipper is dispensable for engulfment in native conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the SpoIIQ-AH zipper, which is dispensable for engulfment in native conditions (Broder and Pogliano, 2006), might prevent membrane backward movement, and might also help localize the IDC components toward the LE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "e9d62714-c1b7-4b3d-9445-f7940e3f2a37",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C70",
+      "claim": "The SpoIIQ ortholog in Clostridium difficile possesses endopeptidase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SpoIIQ-AH interaction is essential for engulfment in Clostridium difficile where the SpoIIQ ortholog posseses endopeptidase activity (Crawshaw et al., 2014; Serrano et al., 2016; Fimlaid et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "85ef6ef4-1e60-403d-b9db-4a3093528b93",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C71",
+      "claim": "All strains used in this study are derivatives of B. subtilis PY79.",
+      "claim_type": "EXPLICIT",
+      "source": "All the strains used in this study are derivatives of B. subtilis PY79.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "cfe3b910-bebe-4db9-8db3-9c98629e6f95",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C72",
+      "claim": "Sporulation was induced by resuspension.",
+      "claim_type": "EXPLICIT",
+      "source": "Sporulation was induced by resuspension (Sterlini and Mandelstam, 1969), except that the bacteria were grown in 25% LB prior to resuspension, rather than CH medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "3a810f25-51d9-4c27-ac36-8ec4d9196db0",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "claim_id": "C73",
+      "claim": "Cultures were grown at 37\u00b0C for batch culture experiments, and at 30\u00b0C for timelapse experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cultures were grown at 37\u00b0C for batch culture experiments, and at 30\u00b0C for timelapse experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context of B. subtilis sporulation, describing the asymmetric cell division that creates a mother cell and forespore, followed by engulfment of the forespore by the mother cell membrane. The force generation mechanism for this membrane migration was previously unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C9, and C11 provide well-established background knowledge about B. subtilis sporulation and clearly identify the knowledge gap addressed by this study. These claims are supported by appropriate citations and represent accepted understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b905fc6e-4900-4e40-856b-e38d189e5ab8",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PG synthesis is essential for membrane migration during engulfment. Seven antibiotics blocking different steps in PG biosynthesis were found to inhibit both polar septation and engulfment completion. Time-lapse microscopy showed that blocking PG synthesis with cephalexin or bacitracin prevents forward membrane migration, with bacitracin allowing asymmetric engulfment in ~20% of sporangia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C39 are well-supported by experimental data shown in Figure 1 and supplements. The antibiotic experiments systematically demonstrate that PG synthesis is required for membrane migration, with appropriate controls and quantification. The time-lapse data clearly shows the phenotypic effects of blocking PG synthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "PBPs accumulate at the leading edge of the engulfing membrane throughout membrane migration. BOCILLIN-FL staining revealed continuous enrichment of PBPs at the LE during engulfment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by prior work (C40-C42) and new experimental data using BOCILLIN-FL staining (C43-C44). Figure 2A-B provides clear evidence of PBP enrichment at the LE throughout engulfment, with appropriate quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "f500cc87-e394-464f-aa8e-56a0b373a48d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ten PBPs and all MreB paralogues track the LE only when produced in the forespore, not the mother cell. Only PonA showed weak LE enrichment when produced in the mother cell. Forespore GFP-MreB foci rotate around the forespore coincident with the LE at speeds of ~28 nm/s. The mechanism of PBP recognition of the LE is unclear and does not depend on several candidate proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 and C49 are strongly supported by cell-specific localization experiments shown in Figure 2D-E and supplements. The TIRF microscopy data provides direct evidence of MreB dynamics. The negative results for candidate proteins (C49) are appropriately documented, though they leave the mechanism unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "825633e2-c27a-4fb0-b454-31ad881d9d7d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The DMP complex (SpoIIP, SpoIID, SpoIIM) localizes to the LE with ~70% of fluorescence concentrated there in native conditions. When PG biosynthesis is inhibited, DMP delocalizes, with complete delocalization in bacitracin-treated cells and partial delocalization with other antibiotics. This supports a model where PG is synthesized ahead of the LE by forespore PBPs, specifying the site of degradation by the mother cell DMP complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are well-supported by experimental data in Figure 2F-G and supplements. The quantification of DMP localization and its dependence on PG synthesis provides strong evidence for the coordination between synthesis and degradation. The proposed model (C53) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Membrane migration during engulfment is driven by coordinated cell wall remodeling at the LE, with PG synthesis by forespore PBPs and degradation by the mother cell DMP complex. The mechanism resembles the 'template model' where the junction between septum and lateral cell wall moves around the forespore. DMP either forms a complex with PG biosynthetic machinery or specifically targets newly synthesized PG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C57-C60 represent the main conclusions of the study. They are well-supported by the collective experimental evidence from antibiotic experiments, localization studies, and the dependence of DMP localization on PG synthesis. The proposed mechanism is consistent with all observations, though alternative models are acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "53810e5e-8858-48e9-9c13-d78603006d99",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Langevin simulations of the proposed mechanism successfully reproduced engulfment dynamics, forespore volume, and surface area. The model correctly reproduced asymmetric engulfment with reduced IDC activity and estimated that only 3-6 highly processive PBP molecules are necessary for observed LE dynamics. Intact spores form for prep and ppro > 0.8 with marginal dependence on IDC number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C61-C63 are supported by the computational modeling shown in Figure 4 and supplements. The simulations match experimental measurements well (\u03c7\u00b2 fitting), reproduce key phenotypes including asymmetric engulfment, and provide quantitative estimates consistent with TIRF measurements of MreB speed. The parameter exploration is systematic.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "b5636a70-83f6-4ef9-a7e7-da8603cde2b9",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The proposed biophysical mechanism does not rely on pulling or pushing forces for membrane migration. Instead, cell wall remodeling makes room for the mother cell membrane to expand around the forespore by entropic forces. The mother cell surface area increases by ~2 \u03bcm\u00b2 (~25%) during engulfment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 present the key conceptual advance of the study. The mechanism is well-supported by the experimental and modeling data. The surface area measurement (C68) is documented in Figure 1\u2014figure supplement 3. The entropic force mechanism is a logical inference from the coordination of synthesis and degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior knowledge about engulfment machinery including the SpoIIQ-AH zipper, the DMP complex, cell wall structure, and the role of PG synthesis. This establishes the context for the current work and identifies gaps in understanding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C29, C64, C65, C69, and C70 accurately represent prior work with appropriate citations. These claims establish the scientific context and are consistent with the cited literature. They provide essential background for understanding the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    },
+    {
+      "id": "bc594546-40f4-4621-9335-6435607b024d",
+      "content_id": "e686b4c0-1ca4-40d8-886f-fd1ee6a00dbb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "All strains used are derivatives of B. subtilis PY79. Sporulation was induced by resuspension, with cultures grown at 37\u00b0C for batch experiments and 30\u00b0C for time-lapse experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe basic methodological details that are clearly stated in the Materials and methods section. These are straightforward experimental conditions that are appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:37:42.861740Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "41662134-a70e-4155-ba0b-2f6f1335b609",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "f61aa470-094f-4ea2-ace8-bd7911c25243",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "c8475e7b-1004-4f40-a19d-91327c900718",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "b05bbaed-9629-4de9-bc9d-210ad21c003e",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "020bb524-1515-4d18-a5b6-47430a05fc9c",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "1994bec6-c36c-415b-a713-c142c4bc7e35",
+      "result_id": "06fb8bf2-ebac-4d78-a52d-ba9c4af9d4e1"
+    },
+    {
+      "claim_id": "32f53c44-66c0-4363-a0e0-1bef0b75a466",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "547b1a09-1022-43f2-9c56-86a1a13d9993",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "5e55beaf-2ac2-4508-a5b6-47dd33d41316",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "2e3fae69-07d6-46e6-9383-a2212558fcd8",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "96e078c6-1631-4860-b0cf-a0676f509e57",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "5b8dd014-133a-46fb-a709-58c1f178c7d8",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "d4f0cf6a-d138-4430-b294-5fd08b2de054",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "3a7f52d8-0693-470b-ab0b-f0e732def462",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "670e259e-f614-4ca4-b2cf-db58f2b68fec",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "ebf63262-1245-4614-bd85-26e84c9fe34b",
+      "result_id": "b905fc6e-4900-4e40-856b-e38d189e5ab8"
+    },
+    {
+      "claim_id": "7ca70964-befa-4c0c-a831-485e40e34b13",
+      "result_id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7"
+    },
+    {
+      "claim_id": "df1ec677-595b-4ff0-a1cd-b1cb80b70955",
+      "result_id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7"
+    },
+    {
+      "claim_id": "a1fe85a6-9cc5-4ca1-9f37-2687e6099924",
+      "result_id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7"
+    },
+    {
+      "claim_id": "f94711b3-f887-43f1-9440-30114531b192",
+      "result_id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7"
+    },
+    {
+      "claim_id": "4949c0a0-bc91-4728-8be3-5387a2972052",
+      "result_id": "402ea69d-eda3-4f50-8e06-c668d3ca15b7"
+    },
+    {
+      "claim_id": "d6828626-96d4-4928-aa51-439708fe1b98",
+      "result_id": "f500cc87-e394-464f-aa8e-56a0b373a48d"
+    },
+    {
+      "claim_id": "f473c0bd-8695-481e-9f3e-d3bb23d8f86f",
+      "result_id": "f500cc87-e394-464f-aa8e-56a0b373a48d"
+    },
+    {
+      "claim_id": "35131975-8409-4108-8c15-93b3af841c7b",
+      "result_id": "f500cc87-e394-464f-aa8e-56a0b373a48d"
+    },
+    {
+      "claim_id": "b8749792-5ac1-410b-9fe2-e262aaa87ce2",
+      "result_id": "f500cc87-e394-464f-aa8e-56a0b373a48d"
+    },
+    {
+      "claim_id": "0d8638f0-e449-4013-927d-50fd32a9eab5",
+      "result_id": "825633e2-c27a-4fb0-b454-31ad881d9d7d"
+    },
+    {
+      "claim_id": "2adb4770-231d-4150-85b5-3a38716d525d",
+      "result_id": "825633e2-c27a-4fb0-b454-31ad881d9d7d"
+    },
+    {
+      "claim_id": "b63714cb-63cd-4699-a2a5-59260352ee5f",
+      "result_id": "825633e2-c27a-4fb0-b454-31ad881d9d7d"
+    },
+    {
+      "claim_id": "0b6cc47a-7828-41ce-ae3d-d31e5655119c",
+      "result_id": "825633e2-c27a-4fb0-b454-31ad881d9d7d"
+    },
+    {
+      "claim_id": "069a5211-dc4e-4ce6-a9fd-f48d5c8bd6d4",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "a3c43d4b-6006-4802-8a86-e4b55f9eb0a0",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "d9fc22a5-285b-4d3f-9dcb-18e7e034669e",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "b95cafe5-5ecf-4159-bc20-ee073c5ea9dc",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "d8a6d51e-4900-467b-b74d-b4cb5d5dd65b",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "1fb5035a-a95b-4da4-b4ce-26083cf27aef",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "c4b72c40-be3d-466c-8834-122f47393999",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "fcceadd4-f287-4cfc-95ca-a1a22e131c00",
+      "result_id": "2aa314ae-f1a0-4398-91c9-8041d90adc7d"
+    },
+    {
+      "claim_id": "1ac49194-966f-405b-a665-ca1adc39e4d5",
+      "result_id": "53810e5e-8858-48e9-9c13-d78603006d99"
+    },
+    {
+      "claim_id": "3f770f69-123a-4fcf-b2f6-645abfe3841c",
+      "result_id": "53810e5e-8858-48e9-9c13-d78603006d99"
+    },
+    {
+      "claim_id": "12bdbebb-859b-4785-90fa-cdabddb2055b",
+      "result_id": "53810e5e-8858-48e9-9c13-d78603006d99"
+    },
+    {
+      "claim_id": "553e3ec5-3fc0-47c0-8b00-ea10abcb19a6",
+      "result_id": "53810e5e-8858-48e9-9c13-d78603006d99"
+    },
+    {
+      "claim_id": "9a2a182c-270b-4471-aac9-8bdb38a9dccd",
+      "result_id": "b5636a70-83f6-4ef9-a7e7-da8603cde2b9"
+    },
+    {
+      "claim_id": "64a64304-6888-4b7e-b994-10ccb3e13976",
+      "result_id": "b5636a70-83f6-4ef9-a7e7-da8603cde2b9"
+    },
+    {
+      "claim_id": "09794b1c-d3ce-4160-829e-e195aeab44ad",
+      "result_id": "b5636a70-83f6-4ef9-a7e7-da8603cde2b9"
+    },
+    {
+      "claim_id": "21fed517-fe56-484a-aab6-dd36b54fb74f",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "280e0023-7d54-47a9-a751-0c24430510f0",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "b352c9b1-d975-4e9c-a82a-b8be5e172ab5",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "175e6278-2f7a-4ab9-a309-4dbc21eb540d",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "e4d1d117-563a-4682-9cb7-8cf9b70969db",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "5da0b0d2-4fc4-4aed-a56a-719d9779719d",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "71ca9e99-d2bf-44b6-8131-94af0e326d43",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "9b46fa7f-4f59-4433-ae7a-8e7a2f0f2b73",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "9e19e455-0f03-492f-9c35-d49fe453c56d",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "1caa4268-1455-4b42-a6c9-56825867e48c",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "c2deeb94-949c-4e6e-8de3-ae8c9836f09e",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "5db071c8-19bc-418f-bac1-3c525966fc90",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "3211f8ea-d8f8-41f8-ae84-676c93edac29",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "e632c334-efae-4e12-bb5b-1e25da4f2222",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "a286f4d3-a210-432e-9a6f-f1dcfed1d676",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "282aea8a-cc05-4d81-847b-b570509be45d",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "eb8cd9e8-f707-4881-a9ac-f44ea3d22842",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "4c06b5d5-2060-4382-857a-b9936a92e070",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "c18b4ec6-7a75-4986-ba37-3b0a8b7e5870",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "6e500157-3e47-4499-9c0e-d554f5f1d766",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "52b8cf8f-e363-4cb6-b610-155e9cb91b6c",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "e9d62714-c1b7-4b3d-9445-f7940e3f2a37",
+      "result_id": "7d3bb9f5-b713-4c5f-8de1-52b743b8bd8d"
+    },
+    {
+      "claim_id": "85ef6ef4-1e60-403d-b9db-4a3093528b93",
+      "result_id": "bc594546-40f4-4621-9335-6435607b024d"
+    },
+    {
+      "claim_id": "cfe3b910-bebe-4db9-8db3-9c98629e6f95",
+      "result_id": "bc594546-40f4-4621-9335-6435607b024d"
+    },
+    {
+      "claim_id": "3a810f25-51d9-4c27-ac36-8ec4d9196db0",
+      "result_id": "bc594546-40f4-4621-9335-6435607b024d"
+    }
+  ],
+  "comparisons": []
+}

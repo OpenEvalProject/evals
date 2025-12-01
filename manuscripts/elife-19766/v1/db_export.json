@@ -1,0 +1,1495 @@
+{
+  "submission": {
+    "id": "c41c2794-c266-4b50-a80a-27bf9954c25d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:21:51.560397Z",
+    "updated_at": "2025-11-30T21:21:51.560397Z"
+  },
+  "content": [
+    {
+      "id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "submission_id": "c41c2794-c266-4b50-a80a-27bf9954c25d",
+      "content_type": "manuscript",
+      "content_text": "# Live imaging reveals the progenitors and cell dynamics of limb regeneration\n\n## Authors\n\n- Frederike Alwes<sup>1</sup>\n- Camille Enjolras<sup>1</sup>\n- Michalis Averof<sup>1</sup> ([ORCID: 0000-0002-6803-7251](https://orcid.org/0000-0002-6803-7251)) \u2020\n\n### Affiliations\n\n1. Institut de G\u00e9nomique Fonctionnelle de Lyon (IGFL), \u00c9cole Normale Sup\u00e9rieure de Lyon Lyon France\n2. Centre National de la Recherche Scientifique (CNRS) France\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegeneration is a complex and dynamic process, mobilizing diverse cell types and remodelling tissues over long time periods. Tracking cell fate and behaviour during regeneration in active adult animals is especially challenging. Here, we establish continuous live imaging of leg regeneration at single-cell resolution in the crustacean Parhyale hawaiensis. By live recordings encompassing the first 4-5 days after amputation, we capture the cellular events that contribute to wound closure and morphogenesis of regenerating legs with unprecedented resolution and temporal detail. Using these recordings we are able to track cell lineages, to generate fate maps of the blastema and to identify the progenitors of regenerated epidermis. We find that there are no specialized stem cells for the epidermis. Most epidermal cells in the distal part of the leg stump proliferate, acquire new positional values and contribute to new segments in the regenerating leg.\n\n## Introduction\n\nMany animals have the ability to regenerate parts of their body after suffering a severe injury. Like embryonic development, regeneration is a complex process, mobilising large numbers of cells in a regulated fashion to restore the missing parts to their original form and function. However, compared with embryonic development, regeneration is more difficult to study because it occurs in species and life stages that are less genetically tractable and accessible for continuous observation. Live imaging is particularly challenging for two reasons: first, regeneration is a lengthy process, unfolding on a timescale of weeks, and second, it occurs in larval and adult stages when animals tend to be large and highly mobile. These factors severely limit our ability to observe regenerating organs continuously, at sufficient temporal and spatial resolution. As a result, until now most regenerative studies have had to painstakingly reconstruct the dynamics of regeneration from series of static images, captured at different stages and across several individuals (e.g. Emmel, 1910). Recently, progress has been made in imaging the behaviour of stem cells in the context of physiological tissue turnover, repair and regeneration (Lo Celso et al., 2009; Xie et al., 2009; Eilken et al., 2009; Rompolas et al., 2012; Mateus et al., 2012; Ritsma et al., 2014; Bradshaw et al., 2015; Barbosa et al., 2015; Webster et al., 2016; Gurevich et al., 2016), but in all cases continuous imaging over long timescales has been challenging.\n\nWe recently introduced the small amphipod crustacean Parhyale hawaiensis as an experimental model for regenerative studies (Konstantinides and Averof, 2014) (Figure 1A), joining the ranks of previously established models such as fish, amphibians, flatworms and hydrozoans (Goss, 1969; Reddien et al., 2004; Plickert et al., 2012; Gemberling et al., 2013). Adult Parhyale can fully regenerate their limbs throughout their lifetime. A range of genetic approaches have been established in this species, including transgenesis, CRISPR-mediated gene editing, gene knockdown, gene mis-expression, mosaic analysis and gene trapping (Pavlopoulos and Averof, 2005; Pavlopoulos et al., 2009; Liubicich et al., 2009; Ozhan-Kizil et al., 2009; Kontarakis et al., 2011; Konstantinides and Averof, 2014; Serano et al., 2016; Martin et al., 2016). Genomic resources include comprehensive transcriptomes and a draft assembly of the Parhyale genome (http://www.ncbi.nlm.nih.gov/genome/15533). Using these tools we started to investigate the process of limb regeneration in Parhyale (Konstantinides and Averof, 2014). Using clonal markers, we traced the contribution of different cell lineages to regenerated limbs, demonstrating that regenerated tissues arise from separate ectodermal and mesodermal progenitors, which reside locally in the amputated limb (Konstantinides and Averof, 2014). In the mesoderm, we discovered a population of Pax3/7-expressing satellite-like cells that can serve as muscle progenitors during leg regeneration (Konstantinides and Averof, 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig1-v1.jpg)\n\n**Figure 1.:** (A) Amputated Parhyale adult mounted for imaging. The body of the animal is glued onto a coverslip, using a small piece of broken coverslip as a spacer (asterisk). The immobilized leg was amputated as marked with the dashed line. (B) Mounting of the coverslip carrying live Parhyale in a chamber for live imaging (see Materials and methods). (C) Outline of Parhyale thoracic leg (T4 or T5); individual podomeres are highlighted and the position of amputations marked with a dashed line. (D\u2013D\u2019\u2019\u2019) Cellular organization at the distal part of the amputated leg stump. Leg of a mosaic individual expressing H2B-EGFP specifically in the ectoderm (Konstantinides and Averof, 2014); fixed 63\u2009hr post amputation and stained with antibodies for EGFP and acetylated tubulin to reveal ectodermal nuclei and neurons, respectively, and DAPI to label all nuclei. (E) 3-dimensional reconstruction of the same leg stump. (F) Single frame from live recording #04, showing histone-EGFP-labelled nuclei on the leg stump, 52\u2009hr post amputation. Arrowheads and circles mark dividing cells in metaphase and telophase, respectively. (G) Leg stump of a mosaic individual expressing lyn-tdTomato and H2B-EGFP specifically in the mesoderm, 20\u2009hr post amputation. Muscles persist in the proximal part of the leg stump but degenerate in the distal part (top right). The distal part of the leg stump contains a thin strand of interconnected mesodermal cells.\n\nParhyale has a number of attributes that make it well suited for live imaging of regenerating limbs. First, limb regeneration in Parhyale is relatively rapid, requiring as little as one week for young adults to fully regenerate their legs. Second, the Parhyale exoskeleton (cuticle) is transparent and the limbs are less than 100 \u00b5m in diameter, allowing us to image with single-cell resolution through their entire thickness. Third, the chitinous exoskeleton provides a robust support for immobilizing the amputated limb, while protecting the underlying tissues; we can glue the exoskeleton to a solid support without influencing the regenerative process that occurs inside the limb stump. Finally, the transgenic tools that we have established in Parhyale allow us to label the cells of the limb using a range of genetically-encoded fluorescent reporters.\n\nHere we develop a method for immobilizing the amputated legs of active (non-anaesthetized) individuals, which allows us to image regeneration at cellular resolution, continuously over several days (Video 1, based on Konstantinides and Averof, 2014). Using transgenic lines expressing fluorescent proteins localized to nuclei or cell membranes, we are able to track individual cells, to trace their cell lineage and to observe their dynamic behaviours during the course of leg regeneration (Videos 2\u201310). Based on live imaging and cell tracking, we describe distinct phases of regeneration, characterized by different cell behaviours, we identify the progenitor cells for the regenerated epidermis of the leg, and present fate maps relating the position of cell progenitors in the regenerating limb bud (blastema) to their ultimate fate in the patterned, regenerated leg. Our method also provides an opportunity to re-evaluate the centuries-old concepts of epimorphosis and morphallaxis (Morgan, 1901) based on a direct observation of cell fates.\n\n![Video 1.](https://cdn.elifesciences.org/articles/19766/elife-19766-media1.mp4.jpg)\n\n**Video 1.:** Video of the individual shown in Figure 1A, moving extensively while an amputated leg remains immobilised on the coverslip. The amputated limb is marked by an arrowhead in the first frame of the movie.\n\n![Video 2.](https://cdn.elifesciences.org/articles/19766/elife-19766-media2.mp4.jpg)\n\n**Video 2.:** This mosaic individual has an insertion of an EGFP-expressing transgene specifically in the Mav lineage, labelling haemocytes. We can observe bleeding and adherence of haemocytes to the wound surface. This individual was anaesthetised using clove oil and imaged without our usual mounting procedure.\n\n![Video 3.](https://cdn.elifesciences.org/articles/19766/elife-19766-media3.mp4.jpg)\n\n**Video 3.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. We can observe melanization of the wound at the distal end of each leg stump (arrowheads).\n\n![Video 4.](https://cdn.elifesciences.org/articles/19766/elife-19766-media4.mp4.jpg)\n\n**Video 4.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after heat shock. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #07. We can observe the rapid motility of some cells, probably macrophages, and the slower movement of epithelial cells towards the wound site, located at the bottom of the frame (~15\u201340 hpa). The video was assembled from three separate clips (0:50\u20133:50, 4:20\u201318:20 and 18:55\u2013 66:55 hpa) captured with different settings.\n\n![Video 5.](https://cdn.elifesciences.org/articles/19766/elife-19766-media5.mp4.jpg)\n\n**Video 5.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Maximum projection of green fluorescence channel, from recording #03. The amputation plane is at the top-right corner of the frame.\n\n![Video 6.](https://cdn.elifesciences.org/articles/19766/elife-19766-media6.mp4.jpg)\n\n**Video 6.:** DsRed is expressed from the DC5>DsRed transgene. Maximum projection of red fluorescence channel, from recording #03 (same recording as Video 2).\n\n![Video 7.](https://cdn.elifesciences.org/articles/19766/elife-19766-media7.mp4.jpg)\n\n**Video 7.:** Histone-EGFP is expressed from the PhHS>H2B-EGFP transgene after a heat shock. Arrowheads highlight two apoptotic nuclei. Maximum projection of focal planes capturing the surface of the leg epithelium, from recording #04. The amputation plane is to the right of the frame.\n\n![Video 8.](https://cdn.elifesciences.org/articles/19766/elife-19766-media8.mp4.jpg)\n\n**Video 8.:** Nuclei are marked by histone-EGFP (PhHS>H2B-EGFP transgene, in green) and neurons are marked by DsRed (DC5>DsRed transgene, in red). Starting around 35\u2009hr post amputation (hpa), a fragment of DsRed-labelled debris becomes engulfed by macrophages (arrowhead). Maximum projection of multiple focal planes, from recording #05.\n\n![Video 9.](https://cdn.elifesciences.org/articles/19766/elife-19766-media9.mp4.jpg)\n\n**Video 9.:** Cells in the S, G2 and M phases of the cell cycle are marked by EGFP-PhGemN (PhHS>EGFP-PhGemN transgene, in green) and all nuclei are marked by histone-mRuby (PhHS>H2B-mRuby transgene, in red) following a heat shock. The loss of the EGFP-PhGemN after mitosis can be seen clearly in a cell marked by an arrowhead. Maximum projection of several focal planes, from recording #13. The amputation plane is at the top-right corner of the frame.\n\n![Video 10.](https://cdn.elifesciences.org/articles/19766/elife-19766-media10.mp4.jpg)\n\n**Video 10.:** Two adjacent legs are imaged in a mosaic individual expressing lyn-tdTomato (in white) and H2B-EGFP (in red) specifically in the mesoderm. Muscles at the proximal part of the legs persist, but those near the amputation plane (to the right) degenerate and the inner space of the stump becomes populated by proliferating mesenchymal cells. Maximum projection of multiple focal planes from recording #11. The amputation planes are at the right edge of the frame.\n\n## Results\n\n### Imaging Parhyale leg regeneration\n\nConfocal microscopy on fixed specimens reveals the basic organization of regenerating Parhyale legs. During the first 3 days post amputation, within the exoskeleton of the amputated leg we observe that cells are organized in two distinct layers: an outer epithelial layer and an inner mass of loosely arranged cells. By clonally labelling the ectoderm with EGFP (as described in Konstantinides and Averof, 2014) we can see that the outer layer consists of ectodermal cells whereas the inner cell mass contains mostly mesodermal cells and a few ectodermal cells (Figure 1D\u2013D\u2019\u2019 and E). The latter are likely to represent neurons and glia, as they are associated with nerves, stained using antibodies for acetylated-tubulin (Figure 1D\u2019\u2019\u2019). Muscles are no longer visible near the amputation site, but remain intact in more proximal parts of the leg (Figure 1G).\n\nTo study the dynamics of leg regeneration we turned to live imaging. A major challenge for achieving this was finding a way to immobilize regenerating legs under the microscope, while keeping the animals alive. Parhyale adults are active, needing to move their limbs to feed and to generate water currents that facilitate breathing; long-term anaesthesia or immobilising whole animals in a solid matrix were therefore unlikely to succeed. We chose to immobilize individual thoracic legs for imaging by glueing them to the surface of a coverslip, using surgical glue (2-octyl cyanoacrylate) (Schwade, 2008). This approach allows us to continuously image the immobilized leg, through the coverslip, while allowing other parts of the animal to move freely (Figure 1A,B, Video 1). Approximately 80% of animals survive this procedure and release themselves from the coverslip with fully regenerated legs during their subsequent moult.\n\nTo visualize individual cells and to track their behaviour we employed transgenes that express fluorescent proteins specifically localised to the nuclei and mitotic chromosomes of cells (H2B-EGFP) or to the cell membrane (lyn-tdTomato), under the ubiquitously-expressed heat-inducible PhHS promoter (Pavlopoulos et al., 2009). The T2A ribosome skipping sequence (Trichas et al., 2008) also\u00a0allowed us to express both fluorescent proteins from the same transgene (PhHS>lyn-tdTomato-2A-H2b-EGFP). These transgenes allow us to track the position of each cell and to detect mitoses (Figure 1F, Video 7) and apoptotic events (seen as fragmenting nuclei, Video 7) throughout the leg, with single cell resolution. Haemocytes can be observed transiently, passing through the inner space of the leg (visible in single timelapse frames), and motile phagocytic cells (\u2018macrophages\u2019) can be seen engulfing cellular debris (Video 8). A separate transgenic line, DC5>DsRed, expressing DsRed specifically in neurons (Konstantinides and Averof, 2014), reveals that neurons are present in the regenerating leg stump at all stages of regeneration. Nerves can be seen retracting from the distal tip of the amputated leg while at the same time extending new processes towards it (Video 6).\n\nUsing these transgenic markers we captured 13 high-resolution recordings spanning the first 4.5 days of regeneration (summarized in Figure 2 and Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig2-v1.jpg)\n\n**Figure 2.:** For each recording (numbered #1 to #13) we indicate the time period covered relative to the time of amputation (hpa, hours post amputation), the onset of cell proliferation, molting events and survival. Further details on each recording are given in Table 1.\n\n**Table 1.**\n Summary of live recordings by confocal microscopy.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>#</th>\n      <th>Transgenes</th>\n      <th>Start of recording\u00a0(hpa)</th>\n      <th>Duration\u00a0of recording\u00a0(hours)</th>\n      <th>Timelapse interval\u00a0(min)</th>\n      <th>Number of\u00a0z slices</th>\n      <th>Step ofz slices\u00a0(\u00b5m)</th>\n      <th>Videos and Figures</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>01</td>\n      <td>PhHS&gt;H2B-EGFP</td>\n      <td>24</td>\n      <td>40</td>\n      <td>30</td>\n      <td>22</td>\n      <td>4.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>02</td>\n      <td>PhHS&gt;H2B-EGFP</td>\n      <td>24</td>\n      <td>8</td>\n      <td>15</td>\n      <td>25</td>\n      <td>4.6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>03</td>\n      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>\n      <td>48</td>\n      <td>63</td>\n      <td>45</td>\n      <td>22</td>\n      <td>3.1</td>\n      <td>Figure 5, 6A Videos 5, 6</td>\n    </tr>\n    <tr>\n      <td>04</td>\n      <td>PhHS&gt;H2B-EGFP</td>\n      <td>46</td>\n      <td>64</td>\n      <td>30</td>\n      <td>28</td>\n      <td>2.1</td>\n      <td>Figures 1F, 6B Video 7</td>\n    </tr>\n    <tr>\n      <td>05</td>\n      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>\n      <td>24</td>\n      <td>62*</td>\n      <td>30</td>\n      <td>19</td>\n      <td>3.5</td>\n      <td>Video 8</td>\n    </tr>\n    <tr>\n      <td>06</td>\n      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>\n      <td>26</td>\n      <td>63</td>\n      <td>30</td>\n      <td>16</td>\n      <td>2.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>07</td>\n      <td>PhHS&gt;H2B-EGFP</td>\n      <td>1</td>\n      <td>66</td>\n      <td>10, 15, 30</td>\n      <td>29</td>\n      <td>4.5</td>\n      <td>Video 4</td>\n    </tr>\n    <tr>\n      <td>08</td>\n      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (unilateral ectoderm and mesoderm mosaic)</td>\n      <td>5</td>\n      <td>65</td>\n      <td>30</td>\n      <td>22</td>\n      <td>4.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>09</td>\n      <td>PhHS&gt;EGFP-PhGemN, PhHS&gt;H2B-mRuby</td>\n      <td>25</td>\n      <td>64</td>\n      <td>25</td>\n      <td>23</td>\n      <td>3.6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>10</td>\n      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (mesoderm mosaic)</td>\n      <td>3</td>\n      <td>68</td>\n      <td>30</td>\n      <td>21</td>\n      <td>3.5</td>\n      <td>Figure 1G</td>\n    </tr>\n    <tr>\n      <td>11</td>\n      <td>PhHS&gt;lyn-tdTomato-2A-H2B-EGFP (mesoderm mosaic)</td>\n      <td>2</td>\n      <td>92*</td>\n      <td>30</td>\n      <td>24</td>\n      <td>3.5</td>\n      <td>Video 10</td>\n    </tr>\n    <tr>\n      <td>12</td>\n      <td>PhHS&gt;H2B-EGFP, DC5&gt;DsRed</td>\n      <td>24</td>\n      <td>68*</td>\n      <td>30</td>\n      <td>21</td>\n      <td>3.5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>13</td>\n      <td>PhHS&gt;EGFP-PhGemN, PhHS&gt;H2B-mRuby</td>\n      <td>6</td>\n      <td>88</td>\n      <td>30</td>\n      <td>20</td>\n      <td>3.8</td>\n      <td>Figure 6C Video 9</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Animal died during the recording (see Figure 2)._\n\n### Distinct cell behaviours underpin different phases of leg regeneration\n\nA specific sequence of events and cell behaviours unfolds during the course of regeneration at the distal 100\u2013200 \u00b5m of the regenerating limb stump. Based on these events, we can subdivide the regenerative process into distinct phases (Figure 3). Each phase does not occur at precisely the same time in every individual, but the succession of phases is always the same.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig3-v1.jpg)\n\n**Figure 3.:** Three phases of regeneration are defined based on distinct cellular events and behaviours observed by live imaging (see text). Immediately after amputation, haemocytes adhere to the wound surface and close the wound (phase 1). In the hours that follow, a melanized scab (shown in brown) forms at the site of the wound, surrounding the haemocytes (early phase 2). The leg epithelium (depicted as a thin line surrounding the leg) then closes over the wound, under the surface of the melanized scab. Muscles (shown in red) at the distal part of the limb stump usually detach and degenerate, while those in proximal parts remain intact. During phase 2 we observe very limited or no cell proliferation. Phase 3 is marked by the onset of extensive cell proliferation and cell movements, leading to extensive growth and morphogenesis. This phase results in the formation of an elongated and patterned leg primordium within the amputated limb stump. Mesodermal cells, haemocytes and macrophages (shown in red), as well as nerves (in blue), are present in the inner spaces of the leg stump throughout the regenerative process.\n\nThe first event that takes place when a leg is amputated is wound closure (phase 1). Using two mosaic animals with EGFP-expressing haemocytes (with a PhHS>EGFP transgene integrated in the haemocyte lineage, but not in other cells of the amputated leg), we could observe bleeding immediately after leg amputation and very rapid closure of the wound through the adhesion of haemocytes to the wound surface (Figure 4A\u2013A\u2019\u2019, Video 2); these events take place within minutes after amputation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013A\u2019\u2019) Mosaic Parhyale expressing EGFP in haemocytes show the role of these cells in the early stages of wound closure (same individual as in Video 2). (A) EGFP-labelled haemocytes in the leg prior to amputation; the outline of the leg and the amputation plane are highlighted. (A\u2019) In the first few minutes post amputation we observe bleeding (haemocytes marked by arrowhead) and haemocytes adhering to the wound. (A\u2019\u2019) 15 min post amputation the bleeding has stopped and the wound is plugged by a mass of adhering haemocytes. (B\u2013B\u2019\u2019) Epithelial closure and wound melanization followed live in a transgenic animal expressing H2B-EGFP in all cells (still images from Video 3). (B) Amputated leg prior to epithelial closure and melanization; the amputation plane is marked with a dashed line. (B\u2019) 5\u2009hr post amputation (hpa) a new epithelial layer has formed under the wound (arrowhead); more distally, the mass of haemocytes is not yet melanized (curly bracket). (B\u2019\u2019) 9\u2009hr post amputation, the distal part of the stump has been melanized; the haemocytes are embedded in the melanized scab and their fluorescence is no longer visible.\n\nWithin the next 24\u2009hr (phase 2), two processes contribute to further closing the wound. First, the surface of the wound becomes covered by a thick melanized scab (Figure 4B\u2013B\u2019\u2019, Video 3), a typical wounding reaction of arthropods mediated by blood cells (Theopold et al., 2004). Second, the epidermis of the leg migrates under the surface of the wound/scab, re-establishing an intact epithelial barrier between the scab and the inner tissues of the leg (Figure 4B\u2013B\u2019\u2019).\n\nThese events are followed by a \u2018quiescent\u2019 period, when epidermal cells continue to migrate slowly towards the site of the wound (Figure 5B,B\u2019, Video 4) but no other activity can be seen under the microscope (late phase 2). During this period we observe almost no cell proliferation (Video 4), consistent with the very small number of EdU-incorporating cells detected during the first 1\u20132 days post amputation (Konstantinides and Averof, 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig5-v1.jpg)\n\n**Figure 5.:** (A) Cell lineages at the distal leg stump, tracked 48\u2013111\u2009hr post amputation (hpa) in recording #03. Vertical lines depict individual cells of the outer (blue) or inner (in red) cell layers tracked at successive timepoints. Cell divisions are depicted as lineage bifurcations and marked by a black dot. Incomplete lines indicate when a cell was not tracked throughout the recording. (A\u2019) Histogram depicting the number of cell divisions observed at each timepoint. (B\u2013B\u2019\u2019\u2019) Tracks of individual epidermal cells during successive 15-hr time intervals, from recording #03 (Video 5), depicting cell movements at the distal leg stump. The amputation plane is at the top right corner of each panel. Each cell track is colour-coded such that the position of each cell at the start and the end of the given time interval are depicted in blue and red, respectively. (B, B\u2019) Before the onset of extensive cell proliferation (48\u201378 hpa) cells show limited movements towards the wound surface or no movement. (B\u2019\u2019\u2013B\u2019\u2019\u2019) After the start of cell proliferation (78\u2013108 hpa) epidermal cells participate in extensive morphogenetic movements. The length of the coloured bars corresponds to 50 microns.\n\nThis quiescent period is followed by a phase of extensive cell proliferation, cell movement and apoptosis (phase 3), starting around 1\u20133 days post amputation (Figures 1F, 2 and 5, Videos 5 and 7). The transition is abrupt: within a few hours a large number of cells at the distal part of the stump start to divide (Figure 5A\u2019\u2013A). Based on our tracking of ectodermal cells, we estimate that the initial division rate is in the order of 0.4 cell divisions per cell per day, compared to <0.03 cell divisions per cell per day in the same cell lineages tracked during the quiescent phase (see Materials and methods). This initial burst of cell proliferation persists for approximately 20\u2009hr, after which proliferation continues at lower levels (Figures 5A,A\u2019 and 7B).\n\nTo visualize the transition from quiescence to cell proliferation we generated a cell-cycle reporter inspired by the vertebrate Fucci reporters (Sakaue-Sawano et al., 2008; Sugiyama et al., 2009). The reporter consists of EGFP fused to the N-terminus of Parhyale Geminin (PhGemN), marking cells at the S, G2 and M phases of the cell cycle when the EGFP-PhGemN fusion protein is stable. The fusion protein is rapidly degraded just after mitosis (see arrowhead in Video 9) due to cell-cycle-dependent degradation mediated by PhGemN. Recording #13 captures the initial burst of cell proliferation, involving a large number of cells at the distal end of the regenerating leg stump (Video 9).\n\nConcurrent with cell proliferation, the regenerating leg also starts to display extensive morphogenetic movements (Figure 5B\u2019\u2019\u2013B\u2019\u2019\u2019): epidermal cells undergo complex cell rearrangements, which ultimately result in the formation of an elongated leg that becomes segmented (Videos 5 and 7).\n\nTwo mosaic animals, in which the PhHS>lyn-tdTomato-2A-H2B-EGFP transgene was specifically introduced in mesodermal lineages, allowed us to observe more specifically the behaviour of mesodermal cells (recordings #10 and #11). In the distal part of the limb stump we observe a population of mesenchymal cells that is particularly active during regeneration (Video 10). These cells are connected to each other, forming strands that run along the length of the leg stump, they proliferate and have active filopodial protrusions that extend in the inner space of the leg stump (Video 10).\n\n### Fate maps and ectodermal progenitors\n\nBy tracking individual cells in our live recordings, we are able to trace the fate of cells during leg regeneration and to establish fate maps that connect the initial position of each cell in the regenerative bud (blastema) to its ultimate fate in the patterned leg.\n\nUsing mosaic animals in which the marker transgene has been incorporated specifically in mesodermal cell lineages (recordings #10 and #11) we observe that the inner and the outer cell layers of the leg stump do not mix during the course of regeneration. As expected from our previous mosaic analysis (Konstantinides and Averof, 2014), we did not observe any cells moving from the mesoderm to the epidermis.\n\nWithin the epidermal layer, we were able to track 54 cell lineages continuously in three independent recordings, over 25\u201364\u2009hr periods, from the quiescent phase to segmented legs (recordings #03, #04 and #13, Figure 6). Many more lineages were partially tracked. We find that most of these cells divide and contribute small (2\u20138 cell) clones to the epithelium of the newly patterned leg, irrespective of their initial location in the epithelium of the blastema (Figure 6A\u2013C). Thus, it appears that there is no specialized population of progenitor cells with the task of regenerating the epidermis; in Parhyale legs, most epidermal cells have the ability to serve as epidermal progenitors.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013C) Tracked cells and their clonal progeny are shown from three separate recordings, #03, #04 and #13, respectively. The illustrations depict the outline of the regenerating leg epithelium (grey line) at the start (left) and the end (right) of cell tracking. Individual nuclei and their clonal progeny are colour coded. The leg stumps are shown with their distal end to the right and ventral side down. The outline of the surrounding exoskeleton is depicted by a black line. (A\u2019\u2013C\u2019) Same tracking data, colour-coded according to the proximo-distal location of each nucleus at the start of cell tracking. In panel 6B, two podomeres, the carpus (Ca) and the propodus (Pr), are labelled.\n\nNext, we asked how the position of these cells in the epidermis of the limb stump relates to the position and contributions of their progeny in the patterned, regenerated leg. We find that the relative position of cells along the proximo-distal axis of the leg is roughly maintained from blastema to patterned leg. Although their spatial relationships become partly scrambled during morphogenesis, we observe that, on average, distally-located progenitors contribute to more distal portions of the regenerating leg than proximally-located progenitors (Figure 6A\u2019\u2013C\u2019). In order to generate new distal segments, epidermal cells change their positional identity and become re-assigned to new leg segments (podomeres). For example, in recording #04, cells originating from the carpus of the amputated leg contribute both to the carpus and to the propodus of the regenerated leg (Figure 6B).\n\n### Morphogenesis of the leg\n\nWithin two days from the onset of cell proliferation, the amputated limb stump is transformed into an elongated leg bearing the series of podomeres typical of Parhyale legs (see leg outlines in Figure 6). Our live recordings and cell tracking provide the first opportunity to investigate cell behaviours during this morphogenetic process. We focused on leg elongation. During the proliferative and morphogenetic phase of leg regeneration (phase 3, Figure 3), the length:width ratio of the proliferating epidermis increases by more than 2-fold. Individual cell elongation does not appear to be the basis for leg elongation (data not shown), but oriented cell division and/or cell rearrangements could be involved. To address this point, we directly measured the orientation of all epidermal cell divisions in recording #04. We find no evidence for a bias in the orientation of cell divisions, at any stage in the recording (Figure 7A). We therefore suggest that elongation is largely driven by cell rearrangements.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/19766/elife-19766-fig7-v1.jpg)\n\n**Figure 7.:** (A) Orientation of cell divisions occurring during the proliferative phase in recording #04 (46\u2013110\u2009hr post amputation). Each point represents a cell division; divisions occurring along the direction of the proximo-distal axis of the leg are at 0\u02da. (B) Number of cell divisions occurring in successive 2-hr time intervals, in the same dataset (recording #04). (C) Overall shape of regenerating leg before and after elongation (from recording #04). The outer black line shows the exoskeleton of the amputated leg that constrains the regenerating leg. Arrows highlight the detachment of the epidermis from the exoskeleton and the retraction of the leg proximally. Coloured circles depict the proximal movement of four cell clones (taken from Figure 6B) in the proximal part of the blastema.\n\nIn most arthropods, regenerating limbs have to grow within a limited space, constrained by the unyielding exoskeleton that surrounds the amputated limb stump (Goss, 1969; Maruzzo et al., 2013). Our recordings provide some insights into how this is achieved. First, the epidermis detaches from the cuticle and the proximal, non-proliferating parts of the leg retract slowly towards the body wall, making space for the growth of more distal regenerating tissues (Figure 7C, Video 7). As the epidermis of proximal leg segments detaches, motile cells, likely phagocytes, can be seen transiently in the space between the exoskeleton and the epidermis (data not shown). Second, the regenerating leg becomes folded to accommodate the elongating proximo-distal axis into the available space (Videos 5 and 7). The legs do not immediately grow to their full size; they require additional moults to reach the size of equivalent non-amputated legs. For the type of amputations that we performed, legs reach 80\u201390% of the length of controls at the first moult after regeneration.\n\n## Discussion\n\nOur results show that Parhyale offers unprecedented opportunities for studying regeneration through live imaging at single-cell resolution. Live imaging has allowed us to follow the temporal dynamics of regeneration, capturing the behaviour of individual cells \u2013 in an organ that consists of a few hundred cells \u2013 over several days. The knowledge gained by this approach could not have been reached by imaging fixed samples.\n\nFirst, we have gained an understanding of the temporal dynamics of leg regeneration. The most surprising observation is the sharp transition from a quiescent phase, during which there is hardly any cell proliferation, to a phase where the majority of cells at the distal part of the leg stump divide. This coordinated transition suggests that cells are responding to a common temporal signal. Since the onset of proliferation does not occur at a set time after amputation, but varies among individuals (Figure 2), we think it is unlikely to depend on a pre-set cell-autonomous timing mechanism. Rather, we favour the idea that it is triggered by a non-autonomous signal that coordinates this response among all the cells of the blastema. The nature and source of that signal are questions to probe in the future.\n\nA second major gain from live imaging has been the opportunity to observe the behaviour of different cell types during regeneration. Notably, our recordings have allowed us to identify a previously unknown population of mesodermal cells, which proliferate and extend filopodial protrusions in the inner space of the blastema (Video 10). Though we are currently unable to determine whether these cells derive from satellite-like cells or from de-differentiating muscle fibres, we know that at least some satellite-like cells are present in the blastema during these stages (Konstantinides and Averof, 2014). The behaviour of these mesodermal cells resembles that of activated myogenic progenitors during muscle repair in mammals and zebrafish (Webster et al., 2016; Gurevich et al., 2016) and it is tempting to speculate that they too include the progenitors of regenerating muscle.\n\nLive imaging has also allowed us to observe the complex behaviour (retraction and regrowth) of nerves and to visualize the movement of macrophages in the blastema (Videos 6 and 8).\n\nThird, by single cell tracking we have been able to determine the cell genealogies and fates of more than 50 epidermal cells. We find that almost every epidermal cell that we tracked in the blastema contributes as a progenitor to the regenerated epidermis (Figure 6). This contrasts with our previous findings in the mesoderm, showing that muscle fibres arise from a set-aside population of stem cells (Konstantinides and Averof, 2014). Our current recordings do not allow us to trace the progenitors of other differentiated cell types, such as tendons, neurons and glia; tracing these would require longer recordings and markers for each of these cell types. But our live imaging method establishes a clear approach for unravelling these cell lineages in the future.\n\nCell tracking has also allowed us to investigate how the initial position of progenitor cells in the blastema relates to the position and contributions of their progeny in the regenerated limb. Based on the characteristic shapes of each leg segment, we are able to assign cells to specific podomeres of the leg. We observe that epidermal cell clones tend to preserve their relative positions along the proximo-distal axis of the leg. However, to re-establish the entire proximo-distal axis, cells need to be re-assigned to new podomeres (Figure 6B). This re-specification of positional identities brings to mind the old concept of morphallaxis.\n\nThe concepts of epimorphosis and morphallaxis have influenced regenerative studies for more than a century (Morgan, 1901). Morphallaxis describes a mode of regeneration where the regenerated tissues largely derive from re-patterning of existing cells, in the absence of cell proliferation \u2013 a mode exemplified by head regeneration in hydra. In contrast, epimorphosis describes a mode where regenerated tissues derive largely from new cells generated by cell proliferation in the blastema \u2013 exemplified by salamander limb regeneration. As noted by others, epimorphosis and morphallaxis are likely to represent extreme paradigms in a continuum that includes many intermediates (Agata et al., 2007; Galliot and Ghila, 2010). Our results demonstrate that Parhyale leg regeneration represents an intermediate case where both re-patterning and growth (by cell proliferation) play important roles.\n\nFinally, our work uncovers events that resemble processes occurring during regeneration in other phyla. The role of haemocytes in wound closure, the migration of macrophages towards the wound and apoptosis taking place in the blastema echo similar observations from other animals, where these processes play important roles in regeneration (Bohn, 1975; Babcock et al., 2008; Godwin et al., 2013; Tseng et al., 2007; Chera et al., 2009; Li et al., 2010; Morata et al., 2011). The continuous presence of neural projections in the blastema would also be consistent with a functional role of nerves in regeneration, as suggested by classic microsurgical experiments performed in diverse animals (Singer, 1952; Kumar and Brockes, 2012; Needham, 1945). In the future, it will be interesting to compare these processes across phyla in detail to pinpoint similarities and differences in the mechanisms of regeneration.\n\n## Materials and methods\n\n### Constructs, transgenic lines and mosaics\n\nThe PhHS>H2B-EGFP reporter, expressing the coding sequence of Drosophila histone 2B fused with EGFP under the PhHS cis-regulatory sequence (Pavlopoulos et al., 2009), was kindly provided by A. Pavlopoulos in plasmid pMi(3xP3>DsRed; PhHS>H2B-EGFP). A similar construct was used for histone 2B fused with mRuby (PhHS>H2B-mRuby).\n\nTo generate the PhHS>lyn-tdTomato-2A-H2B-EGFP reporter, we cloned the coding sequence of lyn-tdTomato from plasmid pCS2+_lyn-tdTomato (kindly provided by M. Handberg-Thorsager) in frame with the 2A-H2B-EGFP coding sequence from plasmid pCS2-TdTomato-2A-GFP (Trichas et al., 2008), downstream of the PhHS cis-regulatory sequence in plasmid pSL(PhHS-DsRed) (Pavlopoulos et al., 2009), replacing DsRed. The PhHS>lyn-tdTomato-2A-H2B-EGFP construct (see Supplementary file 1) was then cloned into pMi(3xP3-EGFP) (Pavlopoulos et al., 2004) using AscI, to generate plasmid pMi(3xP3>EGFP; PhHS>lyn-tdTomato-2A-H2B-EGFP).\n\nTo generate the DC5>DsRed reporter, we cloned an EcoRI fragment containing the DC5 cis-regulatory sequence from pSLfa(DC5)GFPfa (Blanco et al., 2005) into a derivative of plasmid pSL(PhHS-DsRed) (Pavlopoulos et al., 2009) that lacks the first 845 nucleotides of the PhHS sequence (lacking the putative HSF binding sites but retaining the putative core promoter of PhHS, see Kontarakis et al., 2011). This combines the DC5 element with the PhHS core promoter and the DsRed coding sequence (DC5>DsRed). The DC5>DsRed construct (see Supplementary file 1) was then cloned into pMi(3xP3-DsRed) (Pavlopoulos and Averof, 2005) using AscI, to generate plasmid pMi(3xP3>DsRed; DC5>DsRed).\n\nTo generate the cell cycle reporter, we identified a Parhyale Geminin orthologue in the Parhyale transcriptome and generated a construct where the 5\u2019 end of the Parhyale Geminin coding sequence (PhGemN, encoding amino acids 1\u2013142) was placed downstream of the EGFP coding sequence (sequence accession KX130867) by gene synthesis (Biomatik, Canada). A NcoI-NotI fragment containing the EGFP-PhGemN sequence was then cloned downstream of the PhHS regulatory sequence in pSL(PhHS-DsRed) (Pavlopoulos et al., 2009), replacing DsRed. The PhHS>EGFP-PhGemN construct (see Supplementary file 1) was then cloned into pMi(3xP3-DsRed) (Pavlopoulos and Averof, 2005) using AscI, to generate plasmid pMi(3xP3>DsRed; PhHS>EGFP-PhGemN).\n\nPlasmids pMi(3xP3>DsRed; PhHS>H2B-EGFP), pMi(3xP3>EGFP; PhHS>lyn-tdTomato-2A-H2B-EGFP), pMi(3xP3>DsRed; DC5>DsRed) and pMi(3xP3>DsRed; PhHS>EGFP-PhGemN) were microinjected into Parhyale embryos to generate stable transgenic lines and mosaics using established methods (Pavlopoulos and Averof, 2005; Konstantinides and Averof, 2014).\n\n### Live imaging\n\nFor live imaging, adult animals were subjected to heat-shock for 45 min at 37\u02daC to induce transgene expression via the PhHS promoter (Pavlopoulos et al., 2009) 24\u2009hr before starting to record. To immobilize legs for live imaging we used surgical glue (2-octyl cyanoacrylate, Dermabond). The anesthetized animal was positioned laterally onto a round coverslip (\u00d8 30\u00a0mm #1, Thermo Fisher Scientific, USA) with its T4 and/or T5 legs glued onto the surface of the glass; a piece of broken coverslip was used as a spacer, glued to the body of the animal and to the round coverslip (Figure 1A, Video 1). The animal was allowed to recover in artificial seawater for at least 2\u2009hr prior to amputation. The immobilized T4 or T5 leg was then amputated at the carpus (position shown in Figure 1C) using a micro knife (Fine Science Tools GmbH, Germany). The coverslip bearing the animal was placed into the lid of a 50\u2009ml Falcon tube where a large circular window had been cut out, fixed by screwing the top end of the Falcon tube and sealed with vaseline (Figure 1B). The resulting chamber was filled with ~3\u2009ml of artificial seawater (specific gravity 1.018).\n\nImaging was performed on a cLSM Zeiss 780 inverted confocal microscope using a 20x objective (EC Plan-Neofluar) at ambient temperature (20\u201324\u02daC). Z-stacks spanning the entire depth of the leg were captured at 2\u20135 \u00b5m steps, every 10\u201345 min with an image resolution of 1024 \u00d7\u00a01024 pixels (see Table 1).\n\nThe images shown in Figures 1A, 4A\u2019\u2019\u2013A and Videos 1 and 2 were captured on a Zeiss Axio Zoom V16 microscope. The images shown in Figure 4B\u2013B\u2019\u2019 and Video 3 were captured on a Leica M205FA stereoscope; the still images were processed using the HeliconFocus software to combine images taken at different focal planes.\n\n### Cell tracking, estimate of division rates\n\nThe timelapse recordings were cropped (and merged when necessary) in one multi-image TIFF hyperstack using Fiji (Schindelin et al., 2012). Nuclei were manually tracked in Fiji using the TrackMate plug-in (http://fiji.sc/TrackMate).\n\nTo estimate the division rate of epidermal cells we counted the number of cell divisions occurring in tracked ectodermal cell lineages in recording #03 (Figure 5A) and measured the time sampled by these lineages in the quiescent and proliferative phases (48\u201381 and 81\u2013111 hpa, respectively): in the quiescent phase we counted 1 cell division per 828\u2009hr of cell tracking (0.03 divisions per cell per day), in the proliferative phase we counted 17 divisions per 999\u2009hr of cell tracking (0.41 divisions per cell per day). The latter measurement is consistent with rough estimates of division rates derived from the total number of cell divisions observed in recording #04 (Figure 7A\u2013B, 0.3 to 0.6 divisions per cell per day) and from the size of cell clones tracked in recordings #03, #04 and #13 (Figure 6, 0.3 to 0.7 divisions per cell per day).\n",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "072e36a6-8009-419b-91ef-fd0389ddc40b",
+      "submission_id": "c41c2794-c266-4b50-a80a-27bf9954c25d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- K VijayRaghavan, Tata Institute of Fundamental Research , India\n\n## Review text\n\nDOI: [10.7554/eLife.19766.021](https://doi.org/10.7554/eLife.19766.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nCongratulations, we are pleased to inform you that your article, \"Live imaging reveals the progenitors and cell dynamics of limb regeneration\", has been accepted for publication in eLife. If you have selected our \"Publish on Acceptance\" option, your PDF will be published within a few days; if you have opted out of the \"Publish on Acceptance\" option, your work will be published in about four weeks' time. Please take note of the points below and we hope you will continue to support eLife going forwards.\n\nSubstantive Comments:\n\nThe Reviewers were all very positive and had no major revisions to suggest. This consolidated comment is somewhat repetitive, only to convey the uniformity of opinion. Congratulations.\n\nOne Reviewer wrote: In this manuscript Alwes et al. assess the process of limb regeneration in the small crustacean, Parhyale hawaiensis, using live recordings over several days, with single cell resolution. The ability to follow the cell dynamics of appendage regeneration using such high resolution imaging over the entire regenerative process is unprecedented, and very powerful. In the article the authors have been able to track cell lineages and follow division planes over long periods of time. They also show that regeneration begins with a variable time of proliferation stasis, followed by a high proliferative phase, associated with the overt morphogenesis of the regenerated new limb. Based on their findings, the authors suggest that limb regeneration in P. hawaiensis involves a mixture of epimorphosis and morphallaxis, whereby proliferation occurs and patterning occurs or is finalized after. Although the article is largely descriptive, this work warrants high visibility as it further raises this model organism as an extremely valuable and tractable system to use to investigate the mechanism of appendage regeneration. At present, P. hawaiensis remains a significantly underused and under-appreciated model system for regeneration research. This article and many of the others published by the Averof group should raise awareness of this powerful system, so that it becomes more generally adopted and supported by the regeneration community.\n\nThe other two had similar views: This is an interesting manuscript. The authors establish live imaging in a new model organism for limb regeneration. The movies are very impressive, documenting prolifertion, movement and fate determination of different cell types. Solid conclusions are drawn about the mechanisms of cell and tissue morphogenesis and differentiation, which will allow rich comparisons across species that can and cannot perform tissue regeneration. Given the importance of stem cell biology and regenerative medicine, a new model system such as this will add tremendous value to the field. This work establishes the use of live imaging to study leg regeneration in Parhyale, with single cell detail and high temporal resolution. The methodology developed allowed the authors to describe the regeneration dynamics of multiple cell types in this organ and in particular to demonstrate that there are no specialised progenitor cells involved in regenerating the leg epidermis; most epidermal cells can act as epidermal progenitors. The experiments are carefully designed and the data supports the conclusions. While the work is largely descriptive it is likely to have a significant impact in the field as it shows that Parhyale has a huge potential to study regeneration in arthropods and reveals cell and tissue behaviours that have parallels in other species. The technical advances and results presented in this manuscript will stimulate further work that will contribute for the understanding of regeneration not only in Parhyale and related arthropods but also in other phyla.\n",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ad54b4f-fe49-4fc8-931e-72952116fef4",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C1",
+      "claim": "Parhyale hawaiensis was recently introduced as an experimental model for regenerative studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently introduced the small amphipod crustacean Parhyale hawaiensis as an experimental model for regenerative studies (Konstantinides and Averof, 2014) (Figure 1A), joining the ranks of previously established models such as fish, amphibians, flatworms and hydrozoans (Goss, 1969; Reddien et al., 2004; Plickert et al., 2012; Gemberling et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Konstantinides and Averof, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "6376fec7-08fc-4fea-95b5-ffab11704543",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C2",
+      "claim": "Adult Parhyale can fully regenerate their limbs throughout their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult Parhyale can fully regenerate their limbs throughout their lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript, supported by the broader context of the study and previous work cited.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "d31361f9-2658-43b6-9c1f-0d21970d5dc4",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C3",
+      "claim": "A range of genetic approaches have been established in Parhyale hawaiensis, including transgenesis, CRISPR-mediated gene editing, gene knockdown, gene mis-expression, mosaic analysis and gene trapping.",
+      "claim_type": "EXPLICIT",
+      "source": "A range of genetic approaches have been established in this species, including transgenesis, CRISPR-mediated gene editing, gene knockdown, gene mis-expression, mosaic analysis and gene trapping (Pavlopoulos and Averof, 2005; Pavlopoulos et al., 2009; Liubicich et al., 2009; Ozhan-Kizil et al., 2009; Kontarakis et al., 2011; Konstantinides and Averof, 2014; Serano et al., 2016; Martin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2224aaf3-46e7-4517-b4b9-f03725436af5",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C4",
+      "claim": "Genomic resources for Parhyale include comprehensive transcriptomes and a draft assembly of the Parhyale genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic resources include comprehensive transcriptomes and a draft assembly of the Parhyale genome (http://www.ncbi.nlm.nih.gov/genome/15533).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a reference to a publicly available genomic resource.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "1fdff20d-a69d-4027-b363-85e5fa86ad58",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C5",
+      "claim": "Regenerated tissues in Parhyale arise from separate ectodermal and mesodermal progenitors, which reside locally in the amputated limb.",
+      "claim_type": "EXPLICIT",
+      "source": "Using clonal markers, we traced the contribution of different cell lineages to regenerated limbs, demonstrating that regenerated tissues arise from separate ectodermal and mesodermal progenitors, which reside locally in the amputated limb (Konstantinides and Averof, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "5a060e82-6301-4265-8b03-1687fecfefc3",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C6",
+      "claim": "A population of Pax3/7-expressing satellite-like cells can serve as muscle progenitors during leg regeneration in Parhyale.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mesoderm, we discovered a population of Pax3/7-expressing satellite-like cells that can serve as muscle progenitors during leg regeneration (Konstantinides and Averof, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "7dd1dd4c-d64f-495d-ac56-dfd88dd76bd4",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C7",
+      "claim": "Limb regeneration in Parhyale is relatively rapid, requiring as little as one week for young adults to fully regenerate their legs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, limb regeneration in Parhyale is relatively rapid, requiring as little as one week for young adults to fully regenerate their legs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript based on the authors' observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "74c4a31f-ce83-415c-917f-8946e792867f",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C8",
+      "claim": "The Parhyale exoskeleton (cuticle) is transparent.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the Parhyale exoskeleton (cuticle) is transparent and the limbs are less than 100 \u00b5m in diameter, allowing us to image with single-cell resolution through their entire thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript based on the authors' observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "fcb457c3-c7d4-4812-a279-907e65f80851",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C9",
+      "claim": "Parhyale limbs are less than 100 \u00b5m in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the Parhyale exoskeleton (cuticle) is transparent and the limbs are less than 100 \u00b5m in diameter, allowing us to image with single-cell resolution through their entire thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript based on the authors' observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "830bf5ec-b0ec-4762-a1fb-84e1543b718e",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C10",
+      "claim": "The chitinous exoskeleton provides a robust support for immobilizing the amputated limb while protecting the underlying tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the chitinous exoskeleton provides a robust support for immobilizing the amputated limb, while protecting the underlying tissues; we can glue the exoskeleton to a solid support without influencing the regenerative process that occurs inside the limb stump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript based on the authors' observations and experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "0489aa85-441f-4de7-8b48-a603a05f7bd7",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C11",
+      "claim": "The exoskeleton can be glued to a solid support without influencing the regenerative process that occurs inside the limb stump.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the chitinous exoskeleton provides a robust support for immobilizing the amputated limb, while protecting the underlying tissues; we can glue the exoskeleton to a solid support without influencing the regenerative process that occurs inside the limb stump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript based on the authors' experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "bc9c4954-2e55-4718-a72b-45e204faa41a",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C12",
+      "claim": "The outer layer of the regenerating leg stump consists of ectodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By clonally labelling the ectoderm with EGFP (as described in Konstantinides and Averof, 2014) we can see that the outer layer consists of ectodermal cells whereas the inner cell mass contains mostly mesodermal cells and a few ectodermal cells (Figure 1D\u2013D'' and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from clonal labeling experiments shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "d0a6be1a-b072-4638-9cad-2367e721aae4",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C13",
+      "claim": "The inner cell mass of the regenerating leg stump contains mostly mesodermal cells and a few ectodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By clonally labelling the ectoderm with EGFP (as described in Konstantinides and Averof, 2014) we can see that the outer layer consists of ectodermal cells whereas the inner cell mass contains mostly mesodermal cells and a few ectodermal cells (Figure 1D\u2013D'' and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data from clonal labeling experiments shown in Figure 1D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "5a620e9d-9ae6-4135-8006-4d66147c20e8",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C14",
+      "claim": "Ectodermal cells in the inner cell mass are likely to represent neurons and glia, as they are associated with nerves.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter are likely to represent neurons and glia, as they are associated with nerves, stained using antibodies for acetylated-tubulin (Figure 1D''').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from antibody staining data shown in Figure 1D'''.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "0ef685d1-4094-49be-9f63-1dac1b49091e",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C15",
+      "claim": "Muscles are no longer visible near the amputation site during the first 3 days post amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscles are no longer visible near the amputation site, but remain intact in more proximal parts of the leg (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "899a6c78-5b02-4efa-99f0-82011a49e57b",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C16",
+      "claim": "Muscles remain intact in more proximal parts of the leg during the first 3 days post amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "Muscles are no longer visible near the amputation site, but remain intact in more proximal parts of the leg (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "e638bdc2-dca0-406c-a42d-515d2f0accf4",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C17",
+      "claim": "Approximately 80% of animals survive the immobilization procedure and release themselves from the coverslip with fully regenerated legs during their subsequent moult.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 80% of animals survive this procedure and release themselves from the coverslip with fully regenerated legs during their subsequent moult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement based on the authors' experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "598f8816-7122-437f-bed1-3dfab81ec587",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C18",
+      "claim": "Haemocytes can be observed transiently, passing through the inner space of the leg.",
+      "claim_type": "EXPLICIT",
+      "source": "Haemocytes can be observed transiently, passing through the inner space of the leg (visible in single timelapse frames), and motile phagocytic cells ('macrophages') can be seen engulfing cellular debris (Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations from live imaging data shown in Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "daa141fe-ec83-41ac-97ca-08a3c42d4cf3",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C19",
+      "claim": "Motile phagocytic cells ('macrophages') can be seen engulfing cellular debris.",
+      "claim_type": "EXPLICIT",
+      "source": "Haemocytes can be observed transiently, passing through the inner space of the leg (visible in single timelapse frames), and motile phagocytic cells ('macrophages') can be seen engulfing cellular debris (Video 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations from live imaging data shown in Video 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "921c4f35-3908-43ba-b397-f765ba4de3ae",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C20",
+      "claim": "Neurons are present in the regenerating leg stump at all stages of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "A separate transgenic line, DC5>DsRed, expressing DsRed specifically in neurons (Konstantinides and Averof, 2014), reveals that neurons are present in the regenerating leg stump at all stages of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from transgenic reporter experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "b94901d6-108d-4904-b149-5ac14763dacf",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C21",
+      "claim": "Nerves can be seen retracting from the distal tip of the amputated leg while at the same time extending new processes towards it.",
+      "claim_type": "EXPLICIT",
+      "source": "Nerves can be seen retracting from the distal tip of the amputated leg while at the same time extending new processes towards it (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations from live imaging data shown in Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "3efbbfcb-87e5-407e-9628-31f3a35d3d74",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C22",
+      "claim": "13 high-resolution recordings spanning the first 4.5 days of regeneration were captured.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these transgenic markers we captured 13 high-resolution recordings spanning the first 4.5 days of regeneration (summarized in Figure 2 and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the summary in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "8f69dd0e-b07e-4e7c-a0f2-c18cfd867499",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C23",
+      "claim": "Wound closure occurs within minutes after leg amputation through the adhesion of haemocytes to the wound surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Using two mosaic animals with EGFP-expressing haemocytes (with a PhHS>EGFP transgene integrated in the haemocyte lineage, but not in other cells of the amputated leg), we could observe bleeding immediately after leg amputation and very rapid closure of the wound through the adhesion of haemocytes to the wound surface (Figure 4A\u2013A'', Video 2); these events take place within minutes after amputation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 4A-A'' and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "131a76b8-ed90-4003-b714-f1a29b6be80d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C24",
+      "claim": "Within the next 24 hr after amputation, the surface of the wound becomes covered by a thick melanized scab.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the next 24 hr (phase 2), two processes contribute to further closing the wound. First, the surface of the wound becomes covered by a thick melanized scab (Figure 4B\u2013B'', Video 3), a typical wounding reaction of arthropods mediated by blood cells (Theopold et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 4B-B'' and Video 3, and is consistent with known arthropod wounding reactions cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ea97fd32-8b37-4eb5-b6d1-19752b36fa3c",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C25",
+      "claim": "Melanization of the wound is a typical wounding reaction of arthropods mediated by blood cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the surface of the wound becomes covered by a thick melanized scab (Figure 4B\u2013B'', Video 3), a typical wounding reaction of arthropods mediated by blood cells (Theopold et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Theopold et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "5dd13647-594d-437d-af85-4c07a572ecab",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C26",
+      "claim": "The epidermis of the leg migrates under the surface of the wound/scab, re-establishing an intact epithelial barrier between the scab and the inner tissues of the leg.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the epidermis of the leg migrates under the surface of the wound/scab, re-establishing an intact epithelial barrier between the scab and the inner tissues of the leg (Figure 4B\u2013B'').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 4B-B''.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "0fa087da-1790-4a99-ab92-9d8556f0c9db",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C27",
+      "claim": "During the quiescent period, epidermal cells continue to migrate slowly towards the site of the wound.",
+      "claim_type": "EXPLICIT",
+      "source": "These events are followed by a 'quiescent' period, when epidermal cells continue to migrate slowly towards the site of the wound (Figure 5B,B', Video 4) but no other activity can be seen under the microscope (late phase 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 5B,B' and Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ccbe8a6c-8061-4db3-af47-e4609a4dad8d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C28",
+      "claim": "During the quiescent period, almost no cell proliferation is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "During this period we observe almost no cell proliferation (Video 4), consistent with the very small number of EdU-incorporating cells detected during the first 1\u20132 days post amputation (Konstantinides and Averof, 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Video 4 and is consistent with previous EdU incorporation data cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "d98495ef-7702-4c1a-9ac0-820e40f8346f",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C29",
+      "claim": "A phase of extensive cell proliferation, cell movement and apoptosis starts around 1\u20133 days post amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "This quiescent period is followed by a phase of extensive cell proliferation, cell movement and apoptosis (phase 3), starting around 1\u20133 days post amputation (Figures 1F, 2 and 5, Videos 5 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figures 1F, 2, 5 and Videos 5, 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "14d93383-4e7d-434a-8c25-3c603f0c4100",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C30",
+      "claim": "The transition from quiescence to proliferation is abrupt, occurring within a few hours.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition is abrupt: within a few hours a large number of cells at the distal part of the stump start to divide (Figure 5A'\u2013A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 5A-A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "86e0a042-f247-4b8b-a824-3dca64f68b21",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C31",
+      "claim": "The initial division rate during the proliferative phase is in the order of 0.4 cell divisions per cell per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our tracking of ectodermal cells, we estimate that the initial division rate is in the order of 0.4 cell divisions per cell per day, compared to <0.03 cell divisions per cell per day in the same cell lineages tracked during the quiescent phase (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of cell tracking data described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2afa74e5-c8be-499e-8ba2-617f080520c8",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C32",
+      "claim": "The division rate during the quiescent phase is less than 0.03 cell divisions per cell per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our tracking of ectodermal cells, we estimate that the initial division rate is in the order of 0.4 cell divisions per cell per day, compared to <0.03 cell divisions per cell per day in the same cell lineages tracked during the quiescent phase (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on quantitative analysis of cell tracking data described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2d1642ea-680b-4792-9ffd-0f48f0448291",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C33",
+      "claim": "The initial burst of cell proliferation persists for approximately 20 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial burst of cell proliferation persists for approximately 20 hr, after which proliferation continues at lower levels (Figures 5A,A' and 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figures 5A,A' and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "1ad5378d-bd45-4944-a59e-531ef395a7c5",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C34",
+      "claim": "The EGFP-PhGemN fusion protein is rapidly degraded just after mitosis due to cell-cycle-dependent degradation mediated by PhGemN.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion protein is rapidly degraded just after mitosis (see arrowhead in Video 9) due to cell-cycle-dependent degradation mediated by PhGemN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations from live imaging data shown in Video 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "9bee0526-8684-4770-a4ab-bbc17b24ec6d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C35",
+      "claim": "Concurrent with cell proliferation, the regenerating leg displays extensive morphogenetic movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent with cell proliferation, the regenerating leg also starts to display extensive morphogenetic movements (Figure 5B''\u2013B'''): epidermal cells undergo complex cell rearrangements, which ultimately result in the formation of an elongated leg that becomes segmented (Videos 5 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 5B''-B''' and Videos 5, 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "b959928c-fe66-4784-af49-ac816eceeda6",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C36",
+      "claim": "Epidermal cells undergo complex cell rearrangements, which ultimately result in the formation of an elongated leg that becomes segmented.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent with cell proliferation, the regenerating leg also starts to display extensive morphogenetic movements (Figure 5B''\u2013B'''): epidermal cells undergo complex cell rearrangements, which ultimately result in the formation of an elongated leg that becomes segmented (Videos 5 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 5B''-B''' and Videos 5, 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "3cbd46ff-fa81-4684-8547-d91560db0366",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C37",
+      "claim": "In the distal part of the limb stump, a population of mesenchymal cells is particularly active during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the distal part of the limb stump we observe a population of mesenchymal cells that is particularly active during regeneration (Video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Video 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "9125cc94-d19f-4afd-8a6d-502be4cfa029",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C38",
+      "claim": "Mesenchymal cells are connected to each other, forming strands that run along the length of the leg stump.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are connected to each other, forming strands that run along the length of the leg stump, they proliferate and have active filopodial protrusions that extend in the inner space of the leg stump (Video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Video 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "1ea2658a-ebe0-4a06-a39b-13e6431908b1",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C39",
+      "claim": "Mesenchymal cells proliferate and have active filopodial protrusions that extend in the inner space of the leg stump.",
+      "claim_type": "EXPLICIT",
+      "source": "These cells are connected to each other, forming strands that run along the length of the leg stump, they proliferate and have active filopodial protrusions that extend in the inner space of the leg stump (Video 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Video 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "a41528ff-10f1-435c-bd2b-1b1d7ba957c9",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C40",
+      "claim": "The inner and the outer cell layers of the leg stump do not mix during the course of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using mosaic animals in which the marker transgene has been incorporated specifically in mesodermal cell lineages (recordings #10 and #11) we observe that the inner and the outer cell layers of the leg stump do not mix during the course of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by observations from mosaic animals in recordings #10 and #11.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "a1c8121c-15fc-4161-b2a7-5758b4f88935",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C41",
+      "claim": "No cells were observed moving from the mesoderm to the epidermis during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from our previous mosaic analysis (Konstantinides and Averof, 2014), we did not observe any cells moving from the mesoderm to the epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by observations from the current study and is consistent with previous mosaic analysis cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2493bd75-6fa4-4100-8a20-c605af4dbe92",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C42",
+      "claim": "54 cell lineages were tracked continuously over 25\u201364 hr periods, from the quiescent phase to segmented legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the epidermal layer, we were able to track 54 cell lineages continuously in three independent recordings, over 25\u201364 hr periods, from the quiescent phase to segmented legs (recordings #03, #04 and #13, Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "c957a312-4c45-42a8-8ab8-bf08604f8000",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C43",
+      "claim": "Most epidermal cells divide and contribute small (2\u20138 cell) clones to the epithelium of the newly patterned leg, irrespective of their initial location in the epithelium of the blastema.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that most of these cells divide and contribute small (2\u20138 cell) clones to the epithelium of the newly patterned leg, irrespective of their initial location in the epithelium of the blastema (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 6A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "f518d20d-fc00-41d5-a25b-67a27f6a9f41",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C44",
+      "claim": "There is no specialized population of progenitor cells with the task of regenerating the epidermis in Parhyale legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that there is no specialized population of progenitor cells with the task of regenerating the epidermis; in Parhyale legs, most epidermal cells have the ability to serve as epidermal progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the cell tracking data showing that most epidermal cells contribute to regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "f4c48174-015e-4757-961f-ae04f43c4173",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C45",
+      "claim": "Most epidermal cells have the ability to serve as epidermal progenitors in Parhyale legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it appears that there is no specialized population of progenitor cells with the task of regenerating the epidermis; in Parhyale legs, most epidermal cells have the ability to serve as epidermal progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the cell tracking data showing that most epidermal cells contribute to regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "8e640d28-e78c-4db1-b53d-f158900b9edf",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C46",
+      "claim": "The relative position of cells along the proximo-distal axis of the leg is roughly maintained from blastema to patterned leg.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the relative position of cells along the proximo-distal axis of the leg is roughly maintained from blastema to patterned leg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of cell tracking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ee3e1ee2-ab4e-4bf6-b07e-fb76ef2ae0d7",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C47",
+      "claim": "Distally-located progenitors contribute to more distal portions of the regenerating leg than proximally-located progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their spatial relationships become partly scrambled during morphogenesis, we observe that, on average, distally-located progenitors contribute to more distal portions of the regenerating leg than proximally-located progenitors (Figure 6A'\u2013C').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 6A'-C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "e2dee8aa-1e16-4274-95b5-c293153dbc9f",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C49",
+      "claim": "Cells originating from the carpus of the amputated leg contribute both to the carpus and to the propodus of the regenerated leg.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in recording #04, cells originating from the carpus of the amputated leg contribute both to the carpus and to the propodus of the regenerated leg (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell tracking data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "d272a823-8438-4839-a255-a31e95096726",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C50",
+      "claim": "Within two days from the onset of cell proliferation, the amputated limb stump is transformed into an elongated leg bearing the series of podomeres typical of Parhyale legs.",
+      "claim_type": "EXPLICIT",
+      "source": "Within two days from the onset of cell proliferation, the amputated limb stump is transformed into an elongated leg bearing the series of podomeres typical of Parhyale legs (see leg outlines in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by observations shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ff3bc959-dbc9-4500-9d4c-5f50ed275577",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C51",
+      "claim": "During the proliferative and morphogenetic phase of leg regeneration, the length:width ratio of the proliferating epidermis increases by more than 2-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "During the proliferative and morphogenetic phase of leg regeneration (phase 3, Figure 3), the length:width ratio of the proliferating epidermis increases by more than 2-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on measurements from the live imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "c78fb8e3-71b4-409e-b91a-b12ac1c1c7ed",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C52",
+      "claim": "There is no evidence for a bias in the orientation of cell divisions at any stage during leg regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this point, we directly measured the orientation of all epidermal cell divisions in recording #04. We find no evidence for a bias in the orientation of cell divisions, at any stage in the recording (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell division orientation shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "f260edfa-aa53-41d8-bc96-7d7f82d535d1",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C53",
+      "claim": "Elongation of the regenerating leg is largely driven by cell rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore suggest that elongation is largely driven by cell rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the lack of oriented cell divisions and the observation of cell rearrangements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "120c3132-1dea-42ac-adfc-9f5ac564cf38",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C54",
+      "claim": "The epidermis detaches from the cuticle and the proximal, non-proliferating parts of the leg retract slowly towards the body wall, making space for the growth of more distal regenerating tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the epidermis detaches from the cuticle and the proximal, non-proliferating parts of the leg retract slowly towards the body wall, making space for the growth of more distal regenerating tissues (Figure 7C, Video 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Figure 7C and Video 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "3df54ce7-6de2-4c0b-bec2-e6c07b7d6831",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C55",
+      "claim": "The regenerating leg becomes folded to accommodate the elongating proximo-distal axis into the available space.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the regenerating leg becomes folded to accommodate the elongating proximo-distal axis into the available space (Videos 5 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by live imaging data shown in Videos 5 and 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "c9f153dc-4b60-4f10-af48-6a32c56719d7",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C56",
+      "claim": "Regenerating legs do not immediately grow to their full size; they require additional moults to reach the size of equivalent non-amputated legs.",
+      "claim_type": "EXPLICIT",
+      "source": "The legs do not immediately grow to their full size; they require additional moults to reach the size of equivalent non-amputated legs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement based on the authors' observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "36c03290-37b9-44c3-8883-1b872aa78bc1",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C57",
+      "claim": "For the type of amputations performed, legs reach 80\u201390% of the length of controls at the first moult after regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "For the type of amputations that we performed, legs reach 80\u201390% of the length of controls at the first moult after regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement based on the authors' measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "c7703f9d-5ea2-4075-8973-01f194af1a5f",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C58",
+      "claim": "The coordinated transition from quiescence to proliferation suggests that cells are responding to a common temporal signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This coordinated transition suggests that cells are responding to a common temporal signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation of coordinated cell behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "7718f8a4-166f-41ee-8855-0dac549608ce",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C59",
+      "claim": "The onset of proliferation is unlikely to depend on a pre-set cell-autonomous timing mechanism because it does not occur at a set time after amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the onset of proliferation does not occur at a set time after amputation, but varies among individuals (Figure 2), we think it is unlikely to depend on a pre-set cell-autonomous timing mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from the variability in timing shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "9c3abdae-cfed-445f-9b4c-79bd996f0ca6",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C60",
+      "claim": "The transition from quiescence to proliferation is likely triggered by a non-autonomous signal that coordinates this response among all the cells of the blastema.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, we favour the idea that it is triggered by a non-autonomous signal that coordinates this response among all the cells of the blastema.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the coordinated nature of the transition.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "dbf25ec3-c2a7-4fb1-b375-f72e1846674d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C61",
+      "claim": "The behaviour of mesodermal cells resembles that of activated myogenic progenitors during muscle repair in mammals and zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "The behaviour of these mesodermal cells resembles that of activated myogenic progenitors during muscle repair in mammals and zebrafish (Webster et al., 2016; Gurevich et al., 2016) and it is tempting to speculate that they too include the progenitors of regenerating muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with cited studies on muscle repair in other organisms.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "00bb6caf-13fa-48dc-839e-39f795ce1466",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C62",
+      "claim": "Mesodermal cells may include the progenitors of regenerating muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "The behaviour of these mesodermal cells resembles that of activated myogenic progenitors during muscle repair in mammals and zebrafish (Webster et al., 2016; Gurevich et al., 2016) and it is tempting to speculate that they too include the progenitors of regenerating muscle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is explicitly speculative, based on similarity to other systems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ce780922-6a15-4b8c-8b23-b4e529589e2c",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C63",
+      "claim": "In the mesoderm, muscle fibres arise from a set-aside population of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with our previous findings in the mesoderm, showing that muscle fibres arise from a set-aside population of stem cells (Konstantinides and Averof, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ad210411-b627-419a-a023-e46380274e64",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C64",
+      "claim": "Epimorphosis and morphallaxis are likely to represent extreme paradigms in a continuum that includes many intermediates.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted by others, epimorphosis and morphallaxis are likely to represent extreme paradigms in a continuum that includes many intermediates (Agata et al., 2007; Galliot and Ghila, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to other authors who have made this observation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "d646828f-65be-4e11-8f8c-59de360fb528",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C65",
+      "claim": "Parhyale leg regeneration represents an intermediate case where both re-patterning and growth (by cell proliferation) play important roles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that Parhyale leg regeneration represents an intermediate case where both re-patterning and growth (by cell proliferation) play important roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' findings showing both cell proliferation and re-patterning during regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "953ca171-d156-4067-a27b-e3304894be0a",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C66",
+      "claim": "The role of haemocytes in wound closure, the migration of macrophages towards the wound and apoptosis taking place in the blastema echo similar observations from other animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our work uncovers events that resemble processes occurring during regeneration in other phyla. The role of haemocytes in wound closure, the migration of macrophages towards the wound and apoptosis taking place in the blastema echo similar observations from other animals, where these processes play important roles in regeneration (Bohn, 1975; Babcock et al., 2008; Godwin et al., 2013; Tseng et al., 2007; Chera et al., 2009; Li et al., 2010; Morata et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies in other animals showing similar processes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "9ace7124-823c-4f66-a98c-a7cfc04ed33a",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C67",
+      "claim": "The continuous presence of neural projections in the blastema would be consistent with a functional role of nerves in regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The continuous presence of neural projections in the blastema would also be consistent with a functional role of nerves in regeneration, as suggested by classic microsurgical experiments performed in diverse animals (Singer, 1952; Kumar and Brockes, 2012; Needham, 1945).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the authors' observations and is consistent with classic experiments cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "6448b5f7-ab92-4bbc-b221-289e0eb40c69",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C68",
+      "claim": "There are no specialized stem cells for the epidermis in Parhyale leg regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there are no specialized stem cells for the epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from cell tracking data showing that most epidermal cells contribute to regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "f6439a81-df00-4af6-b5f0-100b04e09bf2",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C69",
+      "claim": "Most epidermal cells in the distal part of the leg stump proliferate, acquire new positional values and contribute to new segments in the regenerating leg.",
+      "claim_type": "EXPLICIT",
+      "source": "Most epidermal cells in the distal part of the leg stump proliferate, acquire new positional values and contribute to new segments in the regenerating leg.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on cell tracking data showing cell proliferation, re-patterning, and contribution to new segments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "fe7e351c-7093-4b09-b250-671012b1514d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C70",
+      "claim": "Continuous live imaging of leg regeneration at single-cell resolution was established in the crustacean Parhyale hawaiensis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we establish continuous live imaging of leg regeneration at single-cell resolution in the crustacean Parhyale hawaiensis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the main methodological achievement of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "c8bcd9b7-5f8a-4d7a-abb9-f54c63a2fccd",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C71",
+      "claim": "Live recordings encompassing the first 4-5 days after amputation capture the cellular events that contribute to wound closure and morphogenesis of regenerating legs with unprecedented resolution and temporal detail.",
+      "claim_type": "EXPLICIT",
+      "source": "By live recordings encompassing the first 4-5 days after amputation, we capture the cellular events that contribute to wound closure and morphogenesis of regenerating legs with unprecedented resolution and temporal detail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the study's achievement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "e04f8fcb-adbd-46c7-ae4f-b32aa6c66f80",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "claim_id": "C72",
+      "claim": "Using live recordings, the authors are able to track cell lineages, to generate fate maps of the blastema and to identify the progenitors of regenerated epidermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these recordings we are able to track cell lineages, to generate fate maps of the blastema and to identify the progenitors of regenerated epidermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of the study's achievements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b6f4dc48-a60a-4623-9d75-b6aec5293967",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Parhyale hawaiensis has been established as a regeneration model with available genetic tools and genomic resources, and adult animals can fully regenerate limbs throughout their lifetime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by multiple citations to published work establishing Parhyale as a model system. The claims describe prior work that provides the foundation for the current study, and the evidence consists of appropriate citations to the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "a614bf1e-b9cc-4abf-a7f8-c107790e6bc8",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Previous work demonstrated that regenerated tissues arise from separate ectodermal and mesodermal progenitors residing locally in the amputated limb, with muscle arising from Pax3/7-expressing satellite-like stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, and C63 are supported by citations to the authors' previous work (Konstantinides and Averof, 2014). These claims establish the prior knowledge foundation for the current study and are appropriately attributed to published work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "40c55136-8ab0-4365-b534-41fa8ab5b4af",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Parhyale limbs have several attributes that make them suitable for live imaging: rapid regeneration (one week), transparent exoskeleton, small diameter (<100 \u00b5m), and the ability to immobilize limbs without affecting regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 describe the biological and technical advantages of the Parhyale system. These are supported by the authors' direct observations and the successful implementation of the imaging method described in the manuscript, with 80% survival rate (C17) providing validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "199fceb4-0349-4faa-91bb-5da087c70cc9",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors established continuous live imaging of leg regeneration at single-cell resolution in Parhyale, capturing 13 high-resolution recordings over 4-5 days that enable cell tracking, fate mapping, and identification of epidermal progenitors, with ~80% animal survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72, C17, and C22 describe the main methodological achievement. The 13 recordings are documented in Table 1 and Figure 2, the survival rate is stated, and the subsequent results demonstrate successful cell tracking and fate mapping. This represents a major technical advance for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2daabc76-d91f-4b18-9f75-80fac253e6f5",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The regenerating leg stump consists of an outer ectodermal layer and an inner mass containing mostly mesodermal cells and some ectodermal cells (likely neurons and glia), with muscles degenerating near the amputation site but remaining intact proximally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16 are supported by clonal labeling experiments and imaging data shown in Figure 1D-G. The identification of ectodermal cells in the inner mass as neurons/glia (C14) is appropriately qualified as inference based on acetylated-tubulin staining.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ea7ae6e4-fe4e-4fac-bc74-0c401557d2ea",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wound closure occurs in two stages: immediate closure within minutes via haemocyte adhesion (phase 1), followed within 24 hours by melanized scab formation and epithelial migration under the wound surface (phase 2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by live imaging data in mosaic animals (Figure 4, Videos 2-3). The melanization process is appropriately contextualized with citation to arthropod wound responses (C25). The temporal dynamics are directly observed in the recordings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Regeneration includes a quiescent period with minimal cell proliferation (<0.03 divisions/cell/day) and slow epidermal migration, followed by an abrupt transition to extensive proliferation (0.4 divisions/cell/day initially for ~20 hours) starting 1-3 days post-amputation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by cell tracking data (Figure 5, Videos 4-5, 7) and quantitative analysis described in Materials and methods. The division rates are calculated from tracked lineages, and the abrupt transition is clearly documented. The consistency with previous EdU data (C28) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "05003c20-643a-408d-929e-a2bbb4e711e0",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During the proliferative phase, cells undergo extensive morphogenetic movements and complex rearrangements that result in formation of an elongated, segmented leg, visualized using a cell-cycle reporter showing rapid EGFP-PhGemN degradation after mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by live imaging data (Figure 5B''-B''', Videos 5, 7, 9). The cell-cycle reporter behavior (C34) is directly observed in Video 9, and the morphogenetic movements are extensively documented in the recordings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Active mesenchymal cells in the distal limb stump form interconnected strands, proliferate, and extend filopodial protrusions; their behavior resembles myogenic progenitors in mammals and zebrafish, suggesting they may include muscle progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C37-C39 describing mesenchymal cell behavior are supported by Video 10. However, C61-C62 regarding their identity as muscle progenitors are explicitly speculative (C62 states 'tempting to speculate'). The comparison to other systems (C61) is based on behavioral similarity, not molecular or functional validation. Additional experiments would be needed to confirm their identity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "1dc092c0-c90b-40ab-8967-fc712b4ad008",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The inner (mesodermal) and outer (ectodermal) cell layers do not mix during regeneration, with no cells observed moving from mesoderm to epidermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are supported by observations from mosaic animals (recordings #10 and #11) where transgenes were specifically integrated in mesodermal lineages. This is consistent with previous mosaic analysis (Konstantinides and Averof, 2014) and demonstrates lineage restriction during regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "2973d91d-86d0-4607-915d-6b73a2cbe125",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cell tracking of 54 epidermal lineages reveals that most epidermal cells divide and contribute small clones (2-8 cells) to the regenerated leg regardless of initial position, indicating there is no specialized epidermal stem cell population and most epidermal cells can serve as progenitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C68-C69 are supported by extensive cell tracking data from three independent recordings (Figure 6). The conclusion that there are no specialized epidermal stem cells (C44, C68) is a reasonable inference from the observation that most tracked cells contribute to regeneration. However, the authors appropriately qualify this as 'it appears' (C44), acknowledging this is based on the cells they could track.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "498e1572-5522-4e68-8121-3832c94a8b02",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cells maintain rough proximo-distal positional relationships from blastema to patterned leg, with distally-located progenitors contributing to more distal portions, though cells can be re-assigned to new segments (e.g., carpus cells contributing to both carpus and propodus); within two days of proliferation onset, the stump transforms into an elongated, segmented leg.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47, C49-C50 are supported by cell tracking data (Figure 6). The fate mapping demonstrates both maintenance of relative position and re-specification of positional identity, providing direct evidence for a morphallactic component to regeneration. The example in C49 clearly illustrates segment boundary crossing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "3ef0baf3-99e6-43f6-aed4-40b181459a82",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Leg elongation (>2-fold increase in length:width ratio) is driven primarily by cell rearrangements rather than oriented cell divisions, with no bias in division orientation detected; elongation is accommodated by epidermal detachment from cuticle, proximal leg retraction, and folding of the regenerating leg.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C55 are supported by quantitative analysis of cell division orientation (Figure 7A) and live imaging observations (Figure 7C, Videos 5, 7). The conclusion that elongation is driven by cell rearrangements (C53) is appropriately stated as a suggestion based on the absence of oriented divisions and observed rearrangements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "dafd1783-1eb7-49c7-8b26-305e4790fc5b",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Regenerated legs do not immediately reach full size, requiring additional molts; for the amputations performed, legs reach 80-90% of control length at the first post-regeneration molt.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 are based on the authors' direct measurements and observations. While specific data are not shown, these are straightforward observational claims about the final size of regenerated legs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "18347ec6-a107-491a-a3fc-1b33a914b5b3",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The coordinated transition from quiescence to proliferation suggests cells respond to a common temporal signal; this is unlikely to be cell-autonomous given inter-individual timing variability, and is likely triggered by a non-autonomous signal coordinating the blastema response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is a reasonable inference from the coordinated behavior observed. Claim C59 is supported by the timing variability shown in Figure 2. However, C60 is explicitly speculative ('we favour the idea'), and no experimental evidence is provided to test the nature of the signal. The reasoning is logical but the mechanism remains undemonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "9fe2683c-3a9e-4a3a-8e3f-76e7794da32a",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Parhyale leg regeneration represents an intermediate case between epimorphosis and morphallaxis, where both re-patterning of existing cells and growth by cell proliferation play important roles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 is supported by citations to others who have noted the continuum between these paradigms. Claim C65 is well-supported by the authors' data showing both extensive cell proliferation (phase 3) and re-specification of positional identities (cells contributing to new segments). This represents a significant conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    },
+    {
+      "id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5",
+      "content_id": "c676e373-c1c5-4dd0-b0f8-bdbed72f8c07",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Various cell types and processes observed during Parhyale regeneration resemble those in other animals: transient haemocytes, phagocytic macrophages engulfing debris, persistent neurons with retracting and regrowing nerves; these echo processes important in regeneration across phyla and are consistent with a functional role for nerves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by direct observations in live imaging (Videos 6, 8). Claims C66-C67 appropriately contextualize these findings with extensive citations to similar processes in other animals. The suggestion of a functional role for nerves (C67) is appropriately qualified as consistent with, rather than proven by, the observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:21:51.560397Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ad54b4f-fe49-4fc8-931e-72952116fef4",
+      "result_id": "b6f4dc48-a60a-4623-9d75-b6aec5293967"
+    },
+    {
+      "claim_id": "6376fec7-08fc-4fea-95b5-ffab11704543",
+      "result_id": "b6f4dc48-a60a-4623-9d75-b6aec5293967"
+    },
+    {
+      "claim_id": "d31361f9-2658-43b6-9c1f-0d21970d5dc4",
+      "result_id": "b6f4dc48-a60a-4623-9d75-b6aec5293967"
+    },
+    {
+      "claim_id": "2224aaf3-46e7-4517-b4b9-f03725436af5",
+      "result_id": "b6f4dc48-a60a-4623-9d75-b6aec5293967"
+    },
+    {
+      "claim_id": "1fdff20d-a69d-4027-b363-85e5fa86ad58",
+      "result_id": "a614bf1e-b9cc-4abf-a7f8-c107790e6bc8"
+    },
+    {
+      "claim_id": "5a060e82-6301-4265-8b03-1687fecfefc3",
+      "result_id": "a614bf1e-b9cc-4abf-a7f8-c107790e6bc8"
+    },
+    {
+      "claim_id": "ce780922-6a15-4b8c-8b23-b4e529589e2c",
+      "result_id": "a614bf1e-b9cc-4abf-a7f8-c107790e6bc8"
+    },
+    {
+      "claim_id": "7dd1dd4c-d64f-495d-ac56-dfd88dd76bd4",
+      "result_id": "40c55136-8ab0-4365-b534-41fa8ab5b4af"
+    },
+    {
+      "claim_id": "74c4a31f-ce83-415c-917f-8946e792867f",
+      "result_id": "40c55136-8ab0-4365-b534-41fa8ab5b4af"
+    },
+    {
+      "claim_id": "fcb457c3-c7d4-4812-a279-907e65f80851",
+      "result_id": "40c55136-8ab0-4365-b534-41fa8ab5b4af"
+    },
+    {
+      "claim_id": "830bf5ec-b0ec-4762-a1fb-84e1543b718e",
+      "result_id": "40c55136-8ab0-4365-b534-41fa8ab5b4af"
+    },
+    {
+      "claim_id": "0489aa85-441f-4de7-8b48-a603a05f7bd7",
+      "result_id": "40c55136-8ab0-4365-b534-41fa8ab5b4af"
+    },
+    {
+      "claim_id": "fe7e351c-7093-4b09-b250-671012b1514d",
+      "result_id": "199fceb4-0349-4faa-91bb-5da087c70cc9"
+    },
+    {
+      "claim_id": "c8bcd9b7-5f8a-4d7a-abb9-f54c63a2fccd",
+      "result_id": "199fceb4-0349-4faa-91bb-5da087c70cc9"
+    },
+    {
+      "claim_id": "e04f8fcb-adbd-46c7-ae4f-b32aa6c66f80",
+      "result_id": "199fceb4-0349-4faa-91bb-5da087c70cc9"
+    },
+    {
+      "claim_id": "e638bdc2-dca0-406c-a42d-515d2f0accf4",
+      "result_id": "199fceb4-0349-4faa-91bb-5da087c70cc9"
+    },
+    {
+      "claim_id": "3efbbfcb-87e5-407e-9628-31f3a35d3d74",
+      "result_id": "199fceb4-0349-4faa-91bb-5da087c70cc9"
+    },
+    {
+      "claim_id": "bc9c4954-2e55-4718-a72b-45e204faa41a",
+      "result_id": "2daabc76-d91f-4b18-9f75-80fac253e6f5"
+    },
+    {
+      "claim_id": "d0a6be1a-b072-4638-9cad-2367e721aae4",
+      "result_id": "2daabc76-d91f-4b18-9f75-80fac253e6f5"
+    },
+    {
+      "claim_id": "5a620e9d-9ae6-4135-8006-4d66147c20e8",
+      "result_id": "2daabc76-d91f-4b18-9f75-80fac253e6f5"
+    },
+    {
+      "claim_id": "0ef685d1-4094-49be-9f63-1dac1b49091e",
+      "result_id": "2daabc76-d91f-4b18-9f75-80fac253e6f5"
+    },
+    {
+      "claim_id": "899a6c78-5b02-4efa-99f0-82011a49e57b",
+      "result_id": "2daabc76-d91f-4b18-9f75-80fac253e6f5"
+    },
+    {
+      "claim_id": "8f69dd0e-b07e-4e7c-a0f2-c18cfd867499",
+      "result_id": "ea7ae6e4-fe4e-4fac-bc74-0c401557d2ea"
+    },
+    {
+      "claim_id": "131a76b8-ed90-4003-b714-f1a29b6be80d",
+      "result_id": "ea7ae6e4-fe4e-4fac-bc74-0c401557d2ea"
+    },
+    {
+      "claim_id": "ea97fd32-8b37-4eb5-b6d1-19752b36fa3c",
+      "result_id": "ea7ae6e4-fe4e-4fac-bc74-0c401557d2ea"
+    },
+    {
+      "claim_id": "5dd13647-594d-437d-af85-4c07a572ecab",
+      "result_id": "ea7ae6e4-fe4e-4fac-bc74-0c401557d2ea"
+    },
+    {
+      "claim_id": "0fa087da-1790-4a99-ab92-9d8556f0c9db",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "ccbe8a6c-8061-4db3-af47-e4609a4dad8d",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "d98495ef-7702-4c1a-9ac0-820e40f8346f",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "14d93383-4e7d-434a-8c25-3c603f0c4100",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "86e0a042-f247-4b8b-a824-3dca64f68b21",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "2afa74e5-c8be-499e-8ba2-617f080520c8",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "2d1642ea-680b-4792-9ffd-0f48f0448291",
+      "result_id": "8474e21c-c5d3-4b98-b08b-fb59d40108d3"
+    },
+    {
+      "claim_id": "1ad5378d-bd45-4944-a59e-531ef395a7c5",
+      "result_id": "05003c20-643a-408d-929e-a2bbb4e711e0"
+    },
+    {
+      "claim_id": "9bee0526-8684-4770-a4ab-bbc17b24ec6d",
+      "result_id": "05003c20-643a-408d-929e-a2bbb4e711e0"
+    },
+    {
+      "claim_id": "b959928c-fe66-4784-af49-ac816eceeda6",
+      "result_id": "05003c20-643a-408d-929e-a2bbb4e711e0"
+    },
+    {
+      "claim_id": "3cbd46ff-fa81-4684-8547-d91560db0366",
+      "result_id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d"
+    },
+    {
+      "claim_id": "9125cc94-d19f-4afd-8a6d-502be4cfa029",
+      "result_id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d"
+    },
+    {
+      "claim_id": "1ea2658a-ebe0-4a06-a39b-13e6431908b1",
+      "result_id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d"
+    },
+    {
+      "claim_id": "dbf25ec3-c2a7-4fb1-b375-f72e1846674d",
+      "result_id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d"
+    },
+    {
+      "claim_id": "00bb6caf-13fa-48dc-839e-39f795ce1466",
+      "result_id": "67be82eb-e108-4a95-8c5b-20ae6ef9580d"
+    },
+    {
+      "claim_id": "a41528ff-10f1-435c-bd2b-1b1d7ba957c9",
+      "result_id": "1dc092c0-c90b-40ab-8967-fc712b4ad008"
+    },
+    {
+      "claim_id": "a1c8121c-15fc-4161-b2a7-5758b4f88935",
+      "result_id": "1dc092c0-c90b-40ab-8967-fc712b4ad008"
+    },
+    {
+      "claim_id": "2493bd75-6fa4-4100-8a20-c605af4dbe92",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "c957a312-4c45-42a8-8ab8-bf08604f8000",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "f518d20d-fc00-41d5-a25b-67a27f6a9f41",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "f4c48174-015e-4757-961f-ae04f43c4173",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "6448b5f7-ab92-4bbc-b221-289e0eb40c69",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "f6439a81-df00-4af6-b5f0-100b04e09bf2",
+      "result_id": "2973d91d-86d0-4607-915d-6b73a2cbe125"
+    },
+    {
+      "claim_id": "8e640d28-e78c-4db1-b53d-f158900b9edf",
+      "result_id": "498e1572-5522-4e68-8121-3832c94a8b02"
+    },
+    {
+      "claim_id": "ee3e1ee2-ab4e-4bf6-b07e-fb76ef2ae0d7",
+      "result_id": "498e1572-5522-4e68-8121-3832c94a8b02"
+    },
+    {
+      "claim_id": "e2dee8aa-1e16-4274-95b5-c293153dbc9f",
+      "result_id": "498e1572-5522-4e68-8121-3832c94a8b02"
+    },
+    {
+      "claim_id": "d272a823-8438-4839-a255-a31e95096726",
+      "result_id": "498e1572-5522-4e68-8121-3832c94a8b02"
+    },
+    {
+      "claim_id": "ff3bc959-dbc9-4500-9d4c-5f50ed275577",
+      "result_id": "3ef0baf3-99e6-43f6-aed4-40b181459a82"
+    },
+    {
+      "claim_id": "c78fb8e3-71b4-409e-b91a-b12ac1c1c7ed",
+      "result_id": "3ef0baf3-99e6-43f6-aed4-40b181459a82"
+    },
+    {
+      "claim_id": "f260edfa-aa53-41d8-bc96-7d7f82d535d1",
+      "result_id": "3ef0baf3-99e6-43f6-aed4-40b181459a82"
+    },
+    {
+      "claim_id": "120c3132-1dea-42ac-adfc-9f5ac564cf38",
+      "result_id": "3ef0baf3-99e6-43f6-aed4-40b181459a82"
+    },
+    {
+      "claim_id": "3df54ce7-6de2-4c0b-bec2-e6c07b7d6831",
+      "result_id": "3ef0baf3-99e6-43f6-aed4-40b181459a82"
+    },
+    {
+      "claim_id": "c9f153dc-4b60-4f10-af48-6a32c56719d7",
+      "result_id": "dafd1783-1eb7-49c7-8b26-305e4790fc5b"
+    },
+    {
+      "claim_id": "36c03290-37b9-44c3-8883-1b872aa78bc1",
+      "result_id": "dafd1783-1eb7-49c7-8b26-305e4790fc5b"
+    },
+    {
+      "claim_id": "c7703f9d-5ea2-4075-8973-01f194af1a5f",
+      "result_id": "18347ec6-a107-491a-a3fc-1b33a914b5b3"
+    },
+    {
+      "claim_id": "7718f8a4-166f-41ee-8855-0dac549608ce",
+      "result_id": "18347ec6-a107-491a-a3fc-1b33a914b5b3"
+    },
+    {
+      "claim_id": "9c3abdae-cfed-445f-9b4c-79bd996f0ca6",
+      "result_id": "18347ec6-a107-491a-a3fc-1b33a914b5b3"
+    },
+    {
+      "claim_id": "ad210411-b627-419a-a023-e46380274e64",
+      "result_id": "9fe2683c-3a9e-4a3a-8e3f-76e7794da32a"
+    },
+    {
+      "claim_id": "d646828f-65be-4e11-8f8c-59de360fb528",
+      "result_id": "9fe2683c-3a9e-4a3a-8e3f-76e7794da32a"
+    },
+    {
+      "claim_id": "598f8816-7122-437f-bed1-3dfab81ec587",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    },
+    {
+      "claim_id": "daa141fe-ec83-41ac-97ca-08a3c42d4cf3",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    },
+    {
+      "claim_id": "921c4f35-3908-43ba-b397-f765ba4de3ae",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    },
+    {
+      "claim_id": "b94901d6-108d-4904-b149-5ac14763dacf",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    },
+    {
+      "claim_id": "953ca171-d156-4067-a27b-e3304894be0a",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    },
+    {
+      "claim_id": "9ace7124-823c-4f66-a98c-a7cfc04ed33a",
+      "result_id": "ee7ce3b9-9ade-4dd9-b4ed-36addee7bef5"
+    }
+  ],
+  "comparisons": []
+}

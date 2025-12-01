@@ -1,0 +1,2053 @@
+{
+  "submission": {
+    "id": "77c9e1cc-5813-41f8-8d78-5bdd4f0203b7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:43:07.404048Z",
+    "updated_at": "2025-11-30T21:43:07.404048Z"
+  },
+  "content": [
+    {
+      "id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "submission_id": "77c9e1cc-5813-41f8-8d78-5bdd4f0203b7",
+      "content_type": "manuscript",
+      "content_text": "# A dynamic mode of mitotic bookmarking by transcription factors\n\n## Authors\n\n- Sheila S Teves<sup>1</sup> ([ORCID: 0000-0002-1220-2414](https://orcid.org/0000-0002-1220-2414))\n- Luye An<sup>1</sup>\n- Anders S Hansen<sup>1</sup>\n- Liangqi Xie<sup>1</sup>\n- Xavier Darzacq<sup>1</sup> \u2020\n- Robert Tjian<sup>1</sup> ([ORCID: 0000-0003-0539-8217](https://orcid.org/0000-0003-0539-8217)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California Berkeley United States\n2. CIRM Center of Excellence University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute, University of California, Berkeley Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring mitosis, transcription is shut off, chromatin condenses, and most transcription factors (TFs) are reported to be excluded from chromosomes. How do daughter cells re-establish the original transcription program? Recent discoveries that a select set of TFs remain bound on mitotic chromosomes suggest a potential mechanism for maintaining transcriptional programs through the cell cycle termed mitotic bookmarking. Here we report instead that many TFs remain associated with chromosomes in mouse embryonic stem cells, and that the exclusion previously described is largely a fixation artifact. In particular, most TFs we tested are significantly enriched on mitotic chromosomes. Studies with Sox2 reveal that this mitotic interaction is more dynamic than in interphase and is facilitated by both DNA binding and nuclear import. Furthermore, this dynamic mode results from lack of transcriptional activation rather than decreased accessibility of underlying DNA sequences in mitosis. The nature of the cross-linking artifact prompts careful re-examination of the role of TFs in mitotic bookmarking.\n\n## Introduction\n\nA key component of cell identity is the epigenetic maintenance of cell-type specific transcription programs. However, this maintenance is challenged during each cell cycle. In mitosis, the global transcriptional machinery is inactivated via a cell cycle-dependent phosphorylation cascade (Prescott and Bender, 1962; Rhind and Russell, 2012; Taylor, 1960). Interphase chromatin organizes into highly condensed mitotic chromosomes (Koshland and Strunnikov, 1995), and the nuclear envelope is disassembled (Terasaki et al., 2001). Furthermore, most transcription factors (TFs) have been shown to be excluded from mitotic chromosomes (Gottesfeld and Forbes, 1997; John and Workman, 1998; Mart\u00ednez-Balb\u00e1s et al., 1995; Rizkallah and Hurt, 2009), leading to the conclusion that mitotic chromosomes may be inaccessible to DNA binding and exclude most TFs. Following mitosis, how then do the new daughter cells faithfully re-establish the cell-type specific transcription program?\n\nSeveral mechanisms have been proposed to play important roles in re-establishing transcription following mitosis (Lodhi et al., 2016). These include maintenance of DNA methylation patterns for heritable silencing and the\u00a0propagation of histone modifications, although a model to account for targeted modifications in the absence of TFs has been elusive. Moreover, there are indications that DNA methylation and histone modifications are not sufficient to maintain transcription profiles through the cell cycle. For example, DNase I hypersensitive sites on the human hsp70 locus were shown to be maintained in mitotic chromosomes (Mart\u00ednez-Balb\u00e1s et al., 1995) implying the presence of a \u2018bookmarker\u2019 to keep the region accessible to nuclease digestion. Similarly, the transcription start sites (TSSs) of certain genes scheduled for reactivation following mitosis were shown to remain sensitive to permanganate oxidation in mitosis, suggesting a conformationally privileged structure at the TSSs of these genes (Michelotti et al., 1997). It was thus proposed that some unknown factors must escape the exclusion from mitotic chromosomes and bookmark these regions, yet none have been shown to remain bound on chromosomes. It was therefore a significant step in resolving this conundrum when HSF2 was shown to bind at the hsp70i locus during mitosis (Xing et al., 2005). Since then, and coincident with the advent of live-cell microscopy, a few other TFs have been discovered to associate with mitotic chromosomes (Caravaca et al., 2013; Kadauke et al., 2012; Lodhi et al., 2016), beginning a re-emergence of an appreciation for TFs in propagating transcription programs through mitosis. For instance, GATA1, a major regulator of the erythroid lineage, has previously been reported to be excluded from mitotic chromosomes by immunofluorescence (Xin et al., 2007). Subsequently, the Blobel group has shown, by live-cell imaging and chromatin immunoprecipitation analysis, that GATA1 actually remained bound on its target regions during mitosis (Kadauke et al., 2012). TFs such as GATA1 seem to act as the elusive \u2018bookmark\u2019 that maintain chromatin architecture at regulatory regions, and thus have been termed mitotic bookmarkers. Despite several recent examples of TFs that have been identified as potential mitotic bookmarkers (Lodhi et al., 2016), these have generally been regarded as special cases while most of the literature document robust eviction of TFs from chromosomes during mitosis.\n\nUsing a combination of in vitro biochemical assays, genome editing, and fixed versus live-cell imaging, we report that contrary to decades of published literature, most TFs we tested remain associated with mitotic chromosomes. The widely observed exclusion of TFs from mitotic chromosomes is due primarily to a formaldehyde-based cross-linking artifact. Sox2, for example, appears excluded from chromosomes after chemical fixation, but is highly enriched on mitotic chromosomes as determined by live-cell imaging. This enrichment of TFs at mitotic chromosomes is facilitated by both the DNA binding domain of Sox2 and by active nuclear import. Using orthogonal imaging approaches such as single particle tracking and fluorescence recovery after photobleaching, we show that Sox2 binds dynamically to mitotic chromosomes, and that this dynamic behavior relates to the absence of transcriptional activation rather than a global inaccessibility of DNA in condensed chromosomes. These findings led us to investigate how chemical fixation may alter the localization of TFs in mitotic cells. We present a model for the mechanistic action of formaldehyde-based cross-linkers on transcription factor localization, and consider the overarching implications of this cell fixation artifact on interpreting experiments designed to study many biological processes and particularly transcriptional bookmarking.\n\n## Results\n\n### Many transcription factors associate with mitotic chromosomes\n\nWe initially hypothesized that Sox2, one of the key pluripotency TFs in embryonic stem cells, may function as a mitotic bookmarker to maintain the ES cell state. To examine whether Sox2 binds to mitotic chromosomes, we synchronized cells at various stages of the cell cycle and obtained about 95% pure mitotic population. (Figure 1\u2014figure supplement 1). We then performed biochemical fractionation to assess the chromatin-bound fraction on the asynchronous (A), mitotic (M), G2- and S- phase cells (Figure 1\u2014figure supplement 2). We detected Sox2 on chromatin fractions from synchronized populations, including mitotic cells (Figure 1A), providing initial evidence that Sox2 may associate with mitotic chromosomes. Similarly, TBP fractionated with mitotic chromosomes whereas Pol II did not (Figure 1\u2014figure supplement 2). To biochemically assess the strength of this association, we performed salt fractionation on asynchronous and mitotic cells (Figure 1\u2014figure supplement 2). Nuclear transcription factors elute from chromatin at the salt concentration that overcomes their binding strength to DNA. In the asynchronous population, the majority of Sox2 fractionated at high salt and in the micrococcal nuclease-digested chromatin, suggesting a strong interaction of Sox2 with chromatin (Figure 1B). In contrast, Oct4 fractionated with much lower salt concentrations (Figure 1B), consistent with its more dynamic association with chromatin (Chen et al., 2014). Sox2 displayed a similar salt fractionation profile in synchronized mitotic cells, albeit with a somewhat reduced signal in the digested chromatin (Figure 1B). TBP also showed a\u00a0strong association with mitotic chromosomes whereas Pol II was primarily cytoplasmic (Figure 1\u2014figure supplement 2). Taken together with the biochemical fractionation assay, these data suggest that Sox2 likely associates with mitotic chromosomes in a manner that is qualitatively weaker than its association with interphase chromatin.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-v5.jpg)\n\n**Figure 1.:** (A) Biochemical fractionation of asynchronous (A) mouse ES cells and synchronized populations at mitosis (M), G2, and S phases was performed to isolate the chromatin-associated fraction. Sox2 and H3 were detected by Western blot analysis. (B) Salt fractionation of asynchronous (A) and mitotic (M) mouse ES cells. Sox2 and Oct4 were detected by Western blot analysis. Cyt, Cytoplasmic fraction. Chr, Chromatin fraction. (C) Immunofluorescence with \u03b1-Sox2 of mouse ES cells stably expressing H2B-GFP using confocal microscopy showing exclusion of Sox2 from mitotic chromosomes (D) Live-cell imaging using confocal microscopy of mouse ES cells stably expressing H2B-GFP with overexpressed Halo-Sox2 (Halo-Sox2 OE, top) and endogenously tagged Halo-Sox2 (Halo-Sox2 KI, bottom) (E) Epi-fluorescence time-lapse imaging of mouse ES cells stably expressing H2B-GFP and endogenously-tagged Halo-Sox2 KI (F) Live cells with overexpressed Halo-Sox2 (top) or endogenously-tagged Halo-Sox2 (bottom) were labeled with JF549 dye and subjected to standard immunofluorescence by fixation with 4% PFA and detection with \u03b1-Sox2. (G) Strategy for quantifying TF chromosome enrichment. (H) Chromosome enrichment levels for overexpressed and endogenously-tagged Halo-Sox2. n\u00a0=\u00a040 cells (I). Chromosome enrichment levels for indicated Halo-tagged transcription factors. n\u00a0=\u00a040 cells. Data are represented as mean \u00b1 SEM. Scale bars, 5 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-figsupp1-v5.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Time-course strategy for synchronizing mouse ES cells. Thymidine at 2 mM is added to cells for 6 hr followed by release with fresh media for 6 hr. This cycle of thymidine block and release is repeated, and followed by Nocodazole treatment (100 ng/\u00b5L) for 6 hr. Mitotic cells are collected by shake off. (B) Flow cytometry analysis of asynchronous (A) cells and synchronized populations as S, G2, and mitosis (M) phases. DAPI is used to mark DNA content, and an antibody against phosphorylated H3 is used to mark mitotic cells. This analysis shows fairly pure populations of synchronized cells. (C) Asynchronous and Mitotic cells are stained with DAPI and immunostained with antibody against phosphorylated H3, and visualized on a confocal microscope. By counting the H3-phosphorylated positive cells over total cells as marked by DAPI, we can measure the efficiency of mitotic enrichment by the synchronization strategy to be about 95%, providing an orthogonal measurement for the purity of mitotic cells.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-figsupp2-v5.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) For biochemical fractionation, asynchronous mouse ES cells or synchronized populations are swelled with hypotonic buffer and lysed by gentle shearing to separate nuclei from cytoplasmic fraction. The nuclei are washed repeatedly with EDTA-containing no-salt buffer to lyse the nuclei and remove the soluble nuclear fraction. The remaining chromatin-bound fraction is collected. (B) For salt fractionation, asynchronous mouse ES cells or synchronized mitotic cells are swollen with hypotonic buffer and lysed by gentle shearing to separate nuclei from cytoplasmic fraction as before. The nuclei are then incubated in low salt buffer containing 75 mM NaCl for 1 hr at 4\u00b0C. The nuclei are pelleted and the supernatant containing 75 mM soluble fraction is collected. The nuclei are then incubated in 150 mM salt buffer for 1 hr at 4\u00b0C. The nuclei are similarly pelleted and the supernatant containing the 150 mM soluble fraction is collected. This regime is repeated for 300 mM NaCl salt buffer. The final insoluble chromatin is resuspended in 300 mM NaCl buffer and incubated overnight at 37\u00b0C with 1 U of Micrococcal nuclease (MNase) to digest and solubilize chromatin. After overnight incubation, the insoluble material is pelleted by high speed centrifugation, and the soluble chromatin fraction is collected. (C) Biochemical fractionation of asynchronous (A) mouse ES cells and synchronized populations at mitosis (M), G2, and S phases was performed to isolate the chromatin-associated fraction. TBP (Abcam #ab51841) and Pol II (8WG16) were detected by Western blot analysis. (D) Salt fractionation of asynchronous (A) and mitotic (M) mouse ES cells. TBP and Pol II were detected by Western blot analysis. Cyt, Cytoplasmic fraction. Chr, Chromatin fraction.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-figsupp3-v5.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) We obtained three independent clones with homozygous knock-in of HaloTag to the Sox2 locus. We performed Western blot analysis of cell lysates from wild type ES cells (WT) and each individual knock-in clone for \u03b1-Sox2 and \u03b1-TBP for loading control. All of Sox2-detected molecules for each clone are migrating higher than the wild-type Sox2 suggesting that all molecules contain the HaloTag. Quantification of Western blot analysis is shown on the right. (B) Live-cell imaging of the three homozygous knock-in clones with cells labeled with Halo-dye JF549. (C) Halo-Sox2 KI cells were injected into SCID-Beige mice. Thirty days post inoculation kidney and testis tumors were harvested. Histological analyses of tumors show small areas of differentiated cells, representing endoderm (gland), mesoderm (blood vessel), and ectoderm (epidermal tissue).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-figsupp4-v5.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Mouse ES cells stably expressing H2B-GFP are transfected with the indicated Halo-tagged TF. Cells were labeled with Halo dye JF549 and imaged using a confocal microscope under live conditions or after 15 min of fixation with 4% PFA. Quantification of chromosome enrichment is shown on Figure 1I.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig1-figsupp5-v5.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) To ensure that the results were not biased by the HaloTag, we expressed mCherry-tagged Sox2, Oct4, or NLS in mouse ES cells stably expressing H2B-GFP and performed live and fixed imaging as before. mCherry-tagged factors are enriched on mitotic chromosomes in a similar manner as Halo-tagged factors. Quantification for chromosome enrichment as described in Figure 1G is shown. (B) We also performed fixation using 1% formaldehyde and 100% methanol on endogenously-tagged Halo-Sox2 KI cells. Quantification of chromosome enrichment is shown. Data is represented as mean \u00b1 SEM.\n\nTo visualize Sox2 in mitotic cells, we performed immunofluorescence analysis of Sox2 in standard formaldehyde-fixed mouse ES cells stably expressing H2B-GFP. In contrast to our biochemical data, we found that Sox2 is largely excluded from mitotic chromosomes (Figure 1C). However, when we over-expressed Halo-tagged Sox2 (Halo-Sox2 OE) in mouse ES cells stably expressing H2B-GFP and imaged mitotic cells under live-cell conditions, we observed that Halo-Sox2 is highly enriched on mitotic chromosomes (Figure 1D). To resolve the discrepancy between the fixed immunofluorescence data versus the over-expressed live-cell imaging, we sought to endogenously knock-in the HaloTag at the Sox2 locus using the CRISPR/Cas9 system such that all endogenous Sox2 molecules could be visualized. We obtained three independent clones that were homozygously tagged (Halo-Sox2 KI), and confirmed that the tagging has no detectable effect on Sox2 function as Halo-Sox2 KI ES cells maintain pluripotency (Figure 1\u2014figure supplement 3). Imaging under live-cell conditions, we confirmed that Halo-Sox2 KI is indeed highly enriched on mitotic chromosomes (Figure 1D). Furthermore, using time-lapse microscopy, we detected strong enrichment of Halo-Sox2 KI to chromosomes throughout all stages of mitosis (Figure 1E). To validate that the signal is indeed from the endogenous Sox2 and not an artifact of the knock-in, we first labeled the Halo-Sox2 KI in live cells followed by fixation and standard immunofluorescence using \u03b1-Sox2. The signal for the HaloTag and \u03b1-Sox2 co-localized, confirming that the HaloTag is fused correctly with Sox2 (Figure 1F). Surprisingly, both the HaloTag and the \u03b1-Sox2 signals in these fixed cell preparations were found to be excluded from mitotic chromosomes as marked by H2B-GFP (Figure 1F) in contrast to the live-cell imaging results. We performed the same fixation experiment on ES cells over-expressing Halo-Sox2 and observed the same chromosome exclusion phenomenon typically reported for TFs (Figure 1F). We quantified the change in enrichment on mitotic chromosomes by taking the log2 ratio of the mean intensity on chromosomes over the whole cell intensity, using the H2B-GFP as a mask for chromosomes (Figure 1G). Positive values correspond to enrichment on mitotic chromosomes whereas negative values signify exclusion from chromosomes. With this metric, both Halo-Sox2 OE and Halo-Sox2 KI switched from positive enrichment under live-cell imaging conditions to exclusion after fixation (Figure 1H), suggesting that fixation by paraformaldehyde results in the exclusion of Sox2 from mitotic chromosomes. This result is reminiscent of a previous study showing that HMGB proteins become excluded from mitotic chromosomes after fixation (Pallier et al., 2003). The authors argue that formaldehyde may uniquely alter the structure of HMGB proteins and thus result in exclusion, which may be consistent with Sox2 as it contains an HMG domain. However, because most of the evidence for TF exclusion derives from fixed cell immunofluorescence analysis, we wondered how general this artifact might be. We generated stable cell lines expressing a variety of Halo-tagged TFs in mouse ES cells, including Oct4, Esrrb, Klf4, Sp1, Foxo1, Foxo3a, Stat3, and Hsf1, and performed the same quantitative analysis of live versus fixed images. In all cases, the level of enrichment on mitotic chromosomes dramatically decreased after fixation, resulting in an apparent exclusion of all TFs examined (Figure 1I and Figure 1\u2014figure supplement 4). When imaged under live-cell conditions, however, the majority of these factors exhibited varying levels on mitotic chromosomes, from highly enriched to uniform levels. This is consistent with a study showing a large number of TFs associated with mitotic chromosomes in chicken DT40 cells (Ohta et al., 2010). We found two TFs that are excluded from mitotic chromosomes under live-cell conditions, Stat3 and Hsf1 (Figure 1I), both of which are known to require external signals to translocate into the nucleus during interphase. We have also tested other commonly used fixation methods and have varied the fused tag, and all the results suggest that chemical fixation somehow evicts TFs from mitotic chromosomes (Figure 1\u2014figure supplement 5). This surprising finding suggests that a large body of literature spanning several decades of studying TFs during mitosis, from their widely accepted exclusion from mitotic chromosomes to the apparent uniqueness of certain select TFs as specialized \u2018mitotic bookmarkers\u2019, may have been founded in large part on a fixation artifact.\n\n### Dissection of Sox2 interaction with mitotic chromosomes\n\nGiven the varying levels of TFs on mitotic chromosomes, we next investigated the intrinsic TF properties that might determine the\u00a0association with mitotic chromosomes. Sox2, for example, is composed primarily of two domains, the N-terminal high mobility group (HMG) DNA binding domain and the C-terminal trans-activation domain (TAD) (Figure 2A). The HMG domain contains sequence-specific DNA binding residues as well as nuclear localization signals (NLS), whereas the TAD is integral to protein-protein interactions with Sox2 partner proteins, including Oct4 and p300 (Cox et al., 2010). To address which regions are important for mitotic enrichment, we expressed truncations of Sox2 as HaloTag fusions in ES cells stably expressing H2B-GFP. Halo-Sox2 HMG became highly enriched on mitotic chromosomes whereas Halo-Sox2 TAD was mostly cytoplasmic (Figure 2B). When we quantified the chromosome enrichment of the truncations, we observed that the HMG domain is sufficient to render mitotic chromosome localization (Figure 2B). We next tested whether sequence-specific binding and/or the NLS within the HMG domain is necessary for mitotic enrichment. We mutated five amino acid residues that have been shown to contact the DNA minor groove (N48A, N70A, S71A, S74A, Y112A)\u00a0(Rem\u00e9nyi et al., 2003), and fused this to the HaloTag (Halo-Sox2 DBD5M). Expressed in ES cells, mutations of DNA binding residues resulted in exclusion from mitotic chromosomes under live-cell imaging conditions (Figure 2B). A separate study has shown that mutating three distinct residues (M47G, F50G, M51G) also abolished DNA binding (Chen et al., 2014). Expressing this construct (Halo-Sox2 DBD3M) also showed exclusion from mitotic chromosomes (Figure 2B), confirming that DNA binding is necessary for mitotic enrichment. We next tested what role Sox2 NLS might play on mitotic enrichment. Sox2 contains two NLS, a bipartite signal located at residues 43\u201346 (VKRP) and 57\u201360 (QRRK), and a monopartite signal located at residues 114\u2013117 (PRRK) (Polakova et al., 2014). To abolish the NLS completely, we introduced mutations at both NLS elements, specifically K44A, R45A, R58A, R59A, R115A, R116A, and K117A. Surprisingly, mutations to the NLS also resulted in exclusion from mitotic chromosomes (Figure 2B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig2-v5.jpg)\n\n**Figure 2.:** (A) Schematic of Sox2 domains. HMG, High Mobility Group domain. TAD, Transactivation Domain. NLS, Nuclear Localization Signal. (B) Live-cell imaging of mouse ES cells stably expressing H2B-GFB and various Halo-tagged Sox2 truncations or mutations. Bottom, chromosome enrichment quantification for the various Halo-tagged Sox2 over-expressing (OE) constructs. Halo-Sox2 HMG construct is a truncation of Halo-Sox2 with the TAD region deleted. Halo-Sox2 TAD is a truncation of Halo-Sox2 with the HMG domain deleted. Halo-Sox2-DBD5M and Halo-Sox2 DBD3M are the full length Halo-Sox2 with 5 and 3 point mutations to abrogate DNA binding, respectively. Halo-Sox2 NLSM is the full length Halo-Sox2 with point mutations to abolish NLS function. n\u00a0=\u00a040 cells. (C) Live-cell imaging of mouse ES cells stably expressing H2B-GFP and HaloTag fused to SV40 NLS, plant-specific NLS, or by itself. Right, chromosome enrichment levels for the indicated HaloTag constructs. n\u00a0=\u00a040 cells. Data are represented as mean \u00b1 SEM. Scale bars, 5 \u00b5m.\n\nAlthough the Sox2 NLS is in close proximity to the DNA binding residues and as such, mutations to the NLS may affect DNA binding, some indication for the role of nuclear import in the\u00a0mitotic enrichment of TFs has recently been shown. For instance, mutants of HNF1B become enriched on mitotic chromosomes following cold shock, and that this enrichment is dependent on nuclear import (Lerner et al., 2016). We therefore wondered if an NLS is sufficient to confer enrichment on mitotic chromosomes. We expressed a fusion of the HaloTag and the SV-40 NLS in mouse ES cells stably expressing H2B-GFP. When imaged under live conditions, we discovered that the NLS enriched the HaloTag protein in mitotic chromosomes (Figure 2C). In contrast, HaloTag protein alone is excluded from mitotic chromosomes (Figure 2C). There are two potential mechanisms that could enrich an NLS-containing protein on mitotic chromosomes. The first is that highly positive residues on NLSs, generally lysines and arginines, interact non-specifically with the negatively charged chromosomes. In the case of the SV-40 NLS, the sequence is PKKKRKV. The second potential mechanism is that the nuclear import machinery actively enriches nuclear factors on mitotic chromosomes. To distinguish between these two possibilities, we expressed the fusion of a plant-specific NLS with the HaloTag in mouse ES cells stably expressing H2B-GFP. The plant NLS contains positively charged residues (SVLGKRKFA), but is functional only in plants (Kosugi et al., 2009). When imaged under live-cell conditions, we observed no enrichment of Halo-Plant NLS on mitotic chromosomes (Figure 2C). These results suggest that both sequence-specific binding and active nuclear import likely contribute to the enrichment of TFs on mitotic chromosomes.\n\n### Sox2 interaction with mitotic chromosomes is highly dynamic\n\nWe next examined the interaction dynamics of TFs on mitotic chromosomes using Sox2 as a model through fluorescence recovery after photobleaching (FRAP) (Figure 3A). Quantifying intensities at the bleach spot over time shows that Halo-Sox2 recovery is faster in mitotic cells than during interphase, but significantly slower than Halo-NLS (Figure 3B). The average time for Halo-Sox2 to reach 90% recovery in interphase is 19.7 s, whereas 90% recovery in mitosis is 4.3 s on average (Figure 3C). In contrast, Halo-NLS reaches 90% recovery in 0.9 s for both interphase and mitotic cells (Figure 3C). These results suggest that the interaction of Sox2 with mitotic chromosomes is more dynamic than its interaction with interphase chromatin. As an orthogonal approach to FRAP, we performed single particle tracking (SPT) with long exposure times (500 ms) to determine residence times of Halo-Sox2 in mitosis relative to interphase (Videos 1 and 2). The long exposure times allow for a \u2018blurring out\u2019 of fast moving molecules while immobile, 'stably' bound molecules appear as bright diffraction-limited spots as previously reported for Sox2 (Chen et al., 2014). We plotted the semi-log histogram of Halo-Sox2 dwell times, the amount of time each molecule remains detected, for interphase and mitotic cells (Figure 3D). A two-component exponential decay model, representing specific versus non-specific binding events, was fit to the dwell time histograms as previously reported to extract the residence times of bound molecules (Chen et al., 2014). After correction for photobleaching, the residence time of specific Halo-Sox2 binding events during mitosis is 54% relative to interphase (Figure 3D inset). The decreased residence times for specific Sox2 interactions in mitosis relative to interphase is comparable with the faster FRAP recovery of Sox2 during mitosis. We next investigated whether there is also a change in the total fraction of molecules that are bound versus freely diffusing by performing SPT at faster imaging frequencies (223 Hz) (Videos 3 and 4). For each tracked molecule, we measured the displacement of individual molecules between frames (jump length), and plotted the histogram of jump lengths for interphase and mitotic cells (Figure 3E). We then fitted a 2-state model to the probability distribution of jump lengths as previously reported (Mazza et al., 2012) to extract the fraction of molecules that are bound versus freely diffusing. We performed the same analysis for H2B-Halo and Halo-NLS to distinguish bound (short jump lengths) and freely diffusing (large jump lengths) states, respectively (Figure 3\u2014figure supplement 1). In interphase, 30.9% of Halo-Sox2 molecules are bound, whereas 18.3% of Halo-Sox2 molecules are bound in mitosis (Figure 3E inset), an almost two-fold decrease in bound population. This total bound fraction includes both short- and long-lived binding events. Taken together with the slow tracking SPT analysis, these data suggest that there are fewer Sox2 molecules bound during mitosis, and that these bound molecules experience a faster off-rate in mitosis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig3-v5.jpg)\n\n**Figure 3.:** (A) FRAP analysis of HaloSox2 KI and HaloSox2 HMG cells for interphase and mitosis. (B) Quantification of fluorescence recovery at the bleach spot for the indicated Halo-tagged construct in interphase and mitosis. n\u00a0=\u00a030 cells. (C) From (B), the average time to reach 90% recovery for the indicated (color-coded) Halo-tagged construct. (D) Dwell time histogram of the fraction of endogenously-tagged Halo-Sox2 molecules remaining bound for interphase (gray) and mitotic (red) cells. Representative images are shown. Inset, quantification of the relative Sox2 residence time as percentage of interphase cells. n\u00a0=\u00a030 cells. (E) Jump length histogram for three consecutive images (\u0394t\u00a0=\u00a013.5 ms) of the endogenously-tagged Halo-Sox2 molecules for interphase (gray) and mitotic (red) cells. A 2-state model is used to fit the histogram (solid line), and the fraction bound is calculated (inset). n\u00a0=\u00a024 cells. Data are represented as mean \u00b1 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig3-figsupp1-v5.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) For photobleaching corrections, we performed slow-tracking SPT for H2B-Halo in interphase (gray) and mitosis (red) and plotted the semi-log histogram of H2B-Halo dwell times. These results show little difference in H2B-Halo residence time between interphase and mitotic cells. (B) Probability distribution of jump lengths for H2B-Halo, Halo-Sox2 KI, and Halo-NLS in interphase (gray) and mitosis (red) at \u25b3t\u00a0=\u00a013.5 ms.\n\n![Video 1.](https://cdn.elifesciences.org/articles/22280/elife-22280-media1.mp4.jpg)\n\n**Video 1.:** Related to Figure 3.\u00a0Imaging immobile Halo-Sox2 molecules in interphase ES cells at 2 Hz. Movie fps\u00a0=\u00a020. one pixel\u00a0=\u00a0160 nm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/22280/elife-22280-media2.mp4.jpg)\n\n**Video 2.:** Related to Figure 3.\u00a0Imaging immobile Halo-Sox2 molecules in mitotic ES cells at 2 Hz. Movie fps\u00a0=\u00a020. one pixel\u00a0=\u00a0160 nm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/22280/elife-22280-media3.mp4.jpg)\n\n**Video 3.:** Related to Figure 3.\u00a0Imaging fast Halo-Sox2 molecules in interphase ES cells at 223 Hz. Movie fps\u00a0=\u00a020. one pixel\u00a0=\u00a0160 nm.\n\n![Video 4.](https://cdn.elifesciences.org/articles/22280/elife-22280-media4.mp4.jpg)\n\n**Video 4.:** Related to Figure 3.\u00a0Imaging fast Halo-Sox2 molecules in mitotic ES cells at 223 Hz. Movie fps\u00a0=\u00a020. one pixel\u00a0=\u00a0160 nm.\n\nWhy is Sox2 interaction with mitotic chromosomes more dynamic than with interphase chromatin? By examining truncations of Sox2, we have discovered that the HMG domain of Sox2 is important for mitotic enrichment, but what are the contributions of the TAD on the dynamics of this interaction? To answer this question, we performed FRAP analysis on mouse ES cells expressing Halo-Sox2 HMG in interphase and mitotic cells. Compared to full length Halo-Sox2, the Halo-Sox2 HMG showed faster FRAP recovery both in interphase and mitosis (Figure 3B\u2013C). Quantification of fluorescence intensities over time at the bleach spot shows that Halo-Sox2 HMG in interphase and mitosis resemble that of Halo-Sox2 in mitosis (Figure 3C). Indeed, the average time for Halo-Sox2 HMG to reach 90% recovery in both interphase and mitosis is 6.6 s, comparable to Halo-Sox2 in mitosis (4.3 s) (Figure 3C). These results suggest that the TAD plays a significant role in stabilizing Sox2 interactions with interphase chromatin. The TAD region participates in interactions with partner proteins, including Oct4 and p300, to activate transcription (Cox et al., 2010). Given these results, one possible model is that the HMG domain of Sox2 allows for initial contact with target DNA sites, and transcriptional activation by the TAD stabilizes Sox2 at the main target sites via protein-protein interactions with partner factors, perhaps in the assembled pre-initiation complex (PIC). During mitosis, transcription is shut off globally, and therefore, the full length Sox2 now interacts with mitotic chromosomes primarily through its DNA binding domain, rendering the TAD inactive.\n\n### Global DNA accessibility is unaltered during mitosis\n\nThe lack of transcriptional activation during mitosis may contribute to the more dynamic interaction of Sox2 with mitotic chromosomes, but another possibility is that the highly condensed nature of mitotic chromosomes also decreases the ability of Sox2 to access its binding sites. To test if mitotic chromosomes have decreased accessibility, we utilized Assay for Transposase-Accessible Chromatin using sequencing (ATAC-seq) analysis where the integration of sequencing-compatible adapters by the Tn5 transposase is directly correlated with the accessibility of genomic regions (Buenrostro et al., 2013). We performed ATAC-seq in asynchronous cells as well as in Nocodazole-synchronized mitotic cells in two biological replicates each. Synchronized mitotic cells remain mitotic throughout the ATAC-seq protocol, and biological replicates for both asynchronous and mitotic cells were highly correlated with each other and were therefore combined in subsequent analyses (Figure 4\u2014figure supplement 1). The length distribution profile of sequenced fragments from asynchronous cell populations and synchronized mitotic cells revealed near super-imposable patterns in Tn5 integration (Figure 4A), including the 10 bp periodicity patterns that mark DNA helical pitch (Figure 4A inset). These nearly identical integration patterns and sequencing read counts (Figure 4\u2014figure supplement 1) suggest that Tn5 transposase may access mitotic chromosomes as equally well as interphase chromatin. Indeed, when we mapped the sequenced reads and visualized them on the genome, we observed nearly identical patterns and intensities of peaks (Figure 4B). We further parsed the reads computationally based on length, with short reads (under 100 bp) representing sub-nucleosomal DNA regions, and reads between 180\u2013247 bp representing mono-nucleosome sized fragments (Figure 4A inset). We then mapped these size classes separately and obtained distinct genomic profiles (Figure 4C). Similar to the total mapped reads, there is little qualitative difference in peak patterns and intensities between asynchronous and mitotic cells when we analyze both the short reads and the mono-nucleosome sized fragments (Figure 4C). To quantitatively assess the level of concordance between asynchronous and mitotic cells, we called peaks individually for both samples and combined unique peaks. We then measured the intensities of each called peak for both asynchronous and mitotic samples and plotted the values as a log-scale scatter plot heatmap (Figure 4D). This analysis shows a near perfect symmetry along the diagonal, suggesting that the\u00a0peak intensities between asynchronous and mitotic cells are concordant. Indeed, linear regression analysis shows the slope of the fit at 0.965, with an R2 value of 0.991 (Figure 4D). Performing the same analysis on the short reads (Figure 4E) and mono-nucleosome sized fragments (Figure 4F) also yields symmetrical patterns along the diagonal, with linear fits close to one. These quantitative analyses indicate that mitotic chromosomes are accessed by the Tn5 transposase in nearly the same manner as it accesses interphase chromatin, suggesting that the massive condensation of mitotic chromosomes has little effect on DNA accessibility.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig4-v5.jpg)\n\n**Figure 4.:** (A) Fragment length distribution of ATAC-seq reads for asynchronous (blue) and mitotic (red) cells. Inset, magnification of fragment length distribution under 300 bp showing size cut-offs for short reads (under 100 bp) and mono-nucleosome sized fragments (180\u2013247 bp). (B) Asynchronous and mitotic ATAC-seq profiles for an 800 kb region in chromosome 6. (C) Comparison of total, short, and mono-nucleosome sized reads for asynchronous and mitotic samples in a 40 kb region in chromosome 6. (D\u2013F) Heatmap scatter plots of peak intensities for asynchronous vs mitotic samples in total reads (D), short reads (E), and mono-nucleosome sized reads (F). Linear regression fit and R2 values are shown.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig4-figsupp1-v5.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Time lapse imaging of Nocodazole-arrested mouse ES cells expressing H2B-GFP during the 30 min incubation with Tn5 transposase of ATAC-seq experiment. The cells remain mitotic throughout the tagmentation procedure. (B) ATAC-seq profiles at a locus in chromosome six for replicates 1 and 2 of asynchronous and mitotic samples show close concordance of each replicates. (C) Heatmap scatter plot of peak intensities for replicates of asynchronous (left) and mitotic (right) samples.\n\n### DNA accessibility of Sox2 binding sites is maintained in mitosis\n\nGlobal analysis of DNA accessibility shows no marked difference between interphase chromatin and mitotic chromosomes, but what about at specific TF binding sites such as those of Sox2? We examined total ATAC-seq reads as well as short and mono-nucleosome sized fragments on the well-characterized Oct4 distal enhancer (DE) that contains binding sites for Sox2 (Figure 5A). We observed a prominent peak in short reads centered at the DE that is flanked by well-defined nucleosomes in asynchronous cells. Importantly, the peak of ATAC-seq reads in between the two well-positioned nucleosomes is maintained in mitosis (Figure 5A). To assess accessibility for all bound Sox2 sites, we collated significantly bound Sox2 regions from published ChIP-seq experiments for Sox2 in mouse ES cells (Chen et al., 2008), and analyzed ATAC-seq data at and surrounding these binding sites in asynchronous and mitotic samples. The heatmap of ATAC-seq signal on a 4 kb region centered at the Sox2 peaks shows a prominent region of accessibility at the peak center in asynchronous cells that is maintained albeit at somewhat reduced levels in mitotic cells (Figure 5B, left). Averaging the integration density at all Sox2 bound sites shows that mitosis integration density is roughly 60% of the integration density in asynchronous cells (Figure 5B, right). This significant decrease in integration density at Sox2 bound regions may reflect the reduced residence time of Sox2 at these sites during mitosis (Figure 2D), and is consistent with a previous study showing decreased accessibility at enhancer regions (Hsiung et al., 2015). However, this result may not reflect the ability of Sox2 to physically access the full repertoire of binding regions during mitosis. To assess whether Sox2 can sample its binding sites during mitosis, we collated regions of the genome containing the Sox2 binding motif. We averaged the integration density at single base resolution in an 80 bp region centered at the Sox2 motif to precisely define the footprint of Sox2 in asynchronous and mitotic cells (Figure 5C). This footprinting analysis shows nearly identical integration\u00a0patterns and footprinting depth for asynchronous and mitotic cells that is absent in matching random genomic sites, suggesting that Sox2 can sample binding sites as equally well in mitotic as in asynchronous cells. This interpretation is consistent with the similar binding dynamics of the Sox2 HMG domain in interphase and in mitosis (Figure 3B), lending further support for the model that Sox2 scans its binding sites relatively quickly through its DNA binding domain and is stabilized through the TAD when transcription is activated.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig5-v5.jpg)\n\n**Figure 5.:** (A) Comparison of total, short, and mononucleosome sized reads for asynchronous and mitotic samples at the Pou5f1 gene. The boxed region centered at the distal enhancer (DE) is shown in greater detail on the right. (B) Heatmaps using the short reads were for asynchronous and mitotic ATAC-seq samples for all Sox2 bound sites (Chen et al., 2008) GEO Accession number GSE11431. Right, the average integration density for all Sox2 binding sites is plotted for asynchronous (blue) and mitotic (red) samples. (C) Aggregate ATAC-seq footprint for Sox2 (left) and for matched random genomic regions (right).\n\n### Potential mechanism of chemical fixation artifact\n\nOur surprising discovery of a formaldehyde fixation artifact prompted us to examine a potential mechanism for the artificial eviction of TFs. To capture this artifact in action, we performed time-lapse two-color imaging at 2 Hz of mitotic Halo-Sox2 KI cells stably expressing H2B-GFP as we added 1% paraformaldehyde (PFA) to the cells (Figure 6A and Video 5). At 2 s before 1% PFA is added, Halo-Sox2 is highly concentrated on mitotic chromosomes as marked by H2B-GFP. Within 10 s after PFA addition, Halo-Sox2 levels at the chromosomes are visibly reduced, and becomes almost indistinguishable from the\u00a0cytoplasmic signal by 60 s after PFA addition (Figure 6A). These results point to a robust effect of PFA in inducing the apparent eviction of TFs from mitotic chromosomes. A potential mechanistic model through which PFA could produce such an artifact is as follows (Figure 7). As PFA molecules cross the cell membrane, they rapidly cross-link to the nearest protein available. This would result in a steep gradient of cross-linking that moves inward as more and more PFA molecules cross the membrane. The non-uniform rate and directionality of cross-linking would likely deplete the cytoplasmic pool of TFs that could associate with chromosomes. Furthermore, the initial cross-linking of the cytoplasmic pool would result in an effective decrease in kon\u00a0of TFs on mitotic chromosomes. We note that recent studies have shown, using live-cell single molecule tracking and FRAP experiments, that most TFs have a residence time of under 20 s and are thus quite dynamic even during interphase (Chen et al., 2014; Elf et al., 2007; Gebhardt et al., 2013; Mueller et al., 2008; Swinstead et al., 2016). At least in the case of Sox2, residence time is also decreased in mitosis. This increase in effective koff of TFs superimposed on this moving gradient of cross-linking would result in the apparent exclusion of TFs from mitotic chromosomes. This model predicts that the rate of artifact manifestation would increase as a function of PFA concentration. To test this, we performed time-lapse imaging on Halo-Sox2 KI cells while adding varying concentrations of PFA, from 0.25% to 4%, and quantified over time the chromosome enrichment of Halo-Sox2 using H2B-GFP as chromosomal mask. At 60 s post PFA addition, chromosome enrichment of Halo-Sox2 decreased as the concentration of PFA added is increased (Figure 6B), confirming that the fixation artifact is dose-dependent. A second prediction based on the model is that TFs with lower koff (more stably bound) would be more resistant to PFA-induced mis-localization. One TF that has been shown to be stably bound to its target sites is TBP (Chen et al., 2002). We imaged Halo-TBP expressing cells before and after fixation and quantified the level of chromosome enrichment as before. Compared to the highly dynamic Halo-NLS, Halo-TBP is resistant to PFA mis-localization (Figure 6C). Furthermore, whereas active nuclear import is required for chromosome enrichment, it had no effect on PFA-induced mis-localization as Halo-Plant NLS also becomes excluded from mitotic chromosomes after fixation, in contrast to Halo-only control (Figure 6C). A corollary of the second prediction based on the proposed mechanistic model is that if diffusion is reduced while allowing for PFA to equilibrate throughout the cell, the artifact should be reduced. We tested this hypothesis by performing high pressure freezing (HPF) followed by freeze substitution (FS), a method commonly used for preparing samples for electron microscopy. First, the cells are rapidly chilled to liquid nitrogen temperatures in sub-millisecond time scale and under high pressure (2100 bar) to better preserve molecular structures and localization. The cells are then immersed in PFA dissolved in an\u00a0organic solvent at low temperatures over time to allow for a gradual substitution of water molecules with PFA-containing organic solvent. As temperatures warm, the equilibrated PFA molecules begin to crosslink molecules in the cell. We performed this experiment on Halo-Sox2 KI cells labeled with dye immediately before HPF-FS and imaged the cells after HPF-FS (Figure 6D). Under these conditions, we partially rescued the localization of Halo-Sox2 on mitotic chromosomes, suggesting that the HPF-FS method can somewhat counteract the PFA-induced artifact. Taken together, these results point to a robust artifact caused by formaldehyde based cross-linking, and support a model whereby highly dynamic TFs are more susceptible to PFA-induced mis-localization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig6-v5.jpg)\n\n**Figure 6.:** (A) Time-lapse two color imaging of endogenously tagged Halo-Sox2 mouse ES cells stably expressing H2B-GFP after adding 1% PFA. (B) Quantification of chromosome enrichment at 60 s after PFA addition with the indicated concentrations of PFA. n\u00a0=\u00a010 cells. (C) Quantification of chromosome enrichment of indicated HaloTag-fused constructs and HaloTag only in live and fixed conditions. n\u00a0=\u00a030 cells. (D) High Pressure Freezing and Freeze Substitution was performed on Halo-Sox2 KI cells stably expressing H2B-GFP. Comparison of chromosome enrichment quantification for HPF samples with live and fixed cells are shown. n\u00a0=\u00a010 cells. Data are represented as mean \u00b1 SEM. Scale bars, 5 \u00b5m.\n\n![Video 5.](https://cdn.elifesciences.org/articles/22280/elife-22280-media5.mp4.jpg)\n\n**Video 5.:** Related to Figure 6.\u00a0Mitotic Halo-Sox2 KI cells were imaged at 2 Hz. 1% PFA was added after 10 s of imaging. Movie fps\u00a0=\u00a020. one pixel\u00a0=\u00a0160 nm.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22280/elife-22280-fig7-v5.jpg)\n\n**Figure 7.:** In live mitotic cells, TFs interact dynamically with mitotic chromosomes with intrinsic kon and koff rates, but can also sample the entire cellular space. During fixation, formaldehyde molecules enter the cell membrane and immediately cross-link with the nearest protein, resulting in a wave of cross-linking gradient that moves from the cell membrane inward. Such a gradient would cross-link cytoplasmic TFs first and result in an effective decrease in kon\u00a0rates. As the gradient moves to the center, the result is an apparent exclusion of TFs from mitotic chromosomes.\n\n## Discussion\n\nWe initiated our studies by testing whether Sox2 acts as a mitotic bookmarker to maintain the ES cell state. Indeed, we have found that Sox2 is dynamically enriched on mitotic chromosomes and that this interaction is mediated by both the DNA binding domain and the NLS. Furthermore, mitotic chromosomes remain highly accessible, ensuring that TFs such as Sox2 can efficiently and directly sample its binding sites. With these results alone, we might have concluded that Sox2 is one of the few privileged TFs that act as mitotic bookmarkers.\n\nIn the process of tracking the behavior of Sox2 during mitosis, however, we unexpectedly discovered that most TFs we sampled continue to associate with mitotic chromosomes in varying levels, in direct contrast to the established literature documenting the eviction of most transcription factors from mitotic chromosomes. Surprisingly, we have found that the previously reported exclusion of TFs from mitotic chromosomes is caused by a chemical crosslinking-based artifact. By combining the dynamic properties of TFs with the chemical properties of formaldehyde, we have described a potential mechanistic model for how the artifact might be produced. Formaldehyde molecules rapidly cross-link to the nearest protein as they cross the cell membrane, resulting in a cross-linking gradient that moves from the cell membrane inward. In mitotic cells, TFs have intrinsic kon and koff rates with respect to mitotic chromosomes, but with the breakdown of the nuclear envelope, can also sample the entire cellular space. The advancing gradient of cross-linking would result in depletion of cytoplasmic TF molecules as they are cross-linked first, reducing the effective kon rates. As the cross-linking gradient moves inward, this effect, combined with the mitotic-specific increase in koff, would result in an apparent exclusion of TFs from mitotic chromosomes (Figure 7). We have presented evidence that support specific predictions based on this model. In particular, the rate of artifact manifestation is correlated with PFA concentration. Furthermore, highly dynamic TFs are more susceptible to PFA-induced mis-localization compared to stably bound factors. Indeed, some indications of this latter point exist in the literature. For example, factors such as CTCF, the cohesin complex, and DNA topoisomerases, all of which exhibit stable binding, have been shown by fixed immunofluorescence to remain bound on mitotic chromosomes (Burke et al., 2005; Christensen et al., 2002; Losada and Hirano, 2001; Nakahashi et al., 2013). The existence of a formaldehyde based artifact, and the potential mode of its action, have several implications. The most direct implication is that it questions decades of research built upon the model that most TFs are evicted and excluded from mitotic chromosomes. Although TFs display varying levels on mitotic chromosomes, from highly enriched to uniform levels, the majority of TFs tested do not exhibit the reported exclusion from mitotic chromosomes, suggesting as yet unknown functions for most TFs during mitosis. The reported TF exclusion has also been implicated in studies of cellular differentiation and nuclear reprogramming (Egli et al., 2008), which, in light of our findings reported here, may benefit from reconsideration. A far-reaching implication of the formaldehyde artifact is that many molecular biology techniques aimed at studying dynamics that are dependent on formaldehyde-based fixation may have to be revisited. Chromatin immunoprecipitation (ChIP) studies reliant on formaldehyde cross-linking may underestimate the total binding space of any given TF. Furthermore, studies designed to measure the\u00a0dynamics of TFs through time-course cross-linked chromatin immunoprecipitation experiments (Lickwar et al., 2012) may be susceptible to formaldehyde-based artifacts. Indeed, previous examples of this limitation in ChIP have been documented (Schmiedeberg et al., 2009). As technological advances in live-cell and single molecule techniques increase, we can begin to study dynamic processes more accurately.\n\nThe visual compaction of chromatin into condensed mitotic chromosomes has led to the general perception that the underlying DNA in mitotic chromosomes is largely inaccessible. However, several experiments point to the idea that DNA remains accessible to some extent in the highly condensed mitotic chromosomes. For example, TFs of the RNA Polymerase I machinery have been shown to rapidly exchange on and off ribosomal DNA clusters during mitosis through FRAP analysis (Chen et al., 2005). Diffusion of EGFP molecules is delayed but not hindered through mitotic chromosomes as measured by pair correlation function, suggesting that molecules can freely cross chromosomes during mitosis (Hinde et al., 2011). More recently, the Blobel group has performed DNase I hypersensitivity assay coupled with sequencing in mitotic and asynchronous mouse erythroblast cells and has shown that, although there is a global decrease in DNase-seq signals during mitosis, overall patterns of DNase I HS patterns are preserved (Hsiung et al., 2015). Our ATAC-seq analysis shows that the levels of integration globally are quantitatively similar for asynchronous and mitotic cells. Taken together, these studies suggest that DNA in mitotic chromosomes is as accessible as in interphase chromatin.\n\nThe altered dynamic behavior of Sox2 binding with mitotic chromosomes relative to interphase chromatin implies that TF interactions with target DNA sites are likely cell cycle-dependent. During interphase, Sox2 target search and binding is dominated by three factors: 3D diffusion, protein-DNA contacts, and protein-protein interactions. Our fast-tracking SPT experiments have revealed that, at any given time during interphase, roughly 70% of Sox2 molecules are undergoing diffusion while 30% are bound. Previous studies have shown that bound molecules of Sox2 can be classified further as engaged in fast, non-specific interactions, or stable, site-specific binding (Chen et al., 2014). Here, we have confirmed that the interphase long-lived stable binding events are highly dependent on the TAD-mediated protein-protein interactions that occur during transcriptional activation (Chen et al., 2014). During mitosis when the nuclear envelope is disassembled and DNA becomes highly condensed, we have observed an increase in the fraction of freely diffusing Sox2 molecules to an average of 82%. Although this greater proportion of freely diffusing molecules could be attributed to an effective increase in total explorable space during mitosis, this effect would have resulted in a cytoplasmic rather than chromosome accumulation of Sox2 during mitosis. Live-cell imaging clearly shows that Sox2 molecules are concentrated at mitotic chromosomes, and that only a small proportion of molecules explore the whole cytoplasmic region. Thus, the majority of Sox2 molecules that are observed on mitotic chromosomes are actually sampling cognate binding sites dynamically. Interestingly, the 18% of Sox2 molecules that are bound on mitotic chromosomes exhibit decreased residence times relative to bound Sox2 molecules in interphase. Indeed, Sox2 dynamics in mitosis mimics the behavior of interphase Sox2 without its transcriptional activation domain, suggesting that Sox2 protein-protein interactions dependent on transcriptional activation are severely abrogated in mitosis. Therefore, in contrast to interphase cells, Sox2 behavior during mitosis appears to be dominated by two main factors, 3D diffusion and protein-DNA contacts. Similarly, FoxA1, another TF that has been described as a mitotic bookmarker, has also been shown to bind to mitotic chromosomes in a more dynamic manner than to interphase chromatin (Caravaca et al., 2013). Such cell cycle dependent behavior, as dictated by the changes in global transcriptional status, may be common for many TFs.\n\nWe have shown that TF enrichment on mitotic chromosomes is facilitated by a functional NLS, which was surprising given the nuclear envelope breakdown in mitosis. How might the active nuclear import mechanism function to enrich TFs on mitotic chromosomes? During interphase, the canonical nuclear import mechanism employs three main proteins, importins \u03b1 and \u03b2, and the small regulatory GTPase Ran (Freitas and Cunha, 2009). Importin \u03b1 recognizes the NLS-containing protein and binds to importin \u03b2 to form a cargo complex. Upon import, nuclear Ran-GTP binds to importin \u03b2 and induces cargo dissociation and the release of the NLS-containing protein. To maintain the directionality of the import mechanism, Ran-GTP must be present at higher concentrations in the nucleus while Ran-GDP must be predominantly cytoplasmic (Harel and Forbes, 2004). This compartmentalization is established by the chromatin associated Ran GTP-exchange factor, RCC1, and by the Ran GTPase-activating protein (Ran-GAP), which is localized to the cytoplasmic periphery of the nuclear envelope. Despite nuclear envelope breakdown during mitosis, RCC1 remains localized at mitotic chromosomes, thereby maintaining the Ran-GTP gradient in mitosis (Moore et al., 2002). This Ran-GTP gradient has recently been shown to be vital in accurate formation of the spindle assembly during mitosis through the re-purposing of the canonical import proteins (Forbes et al., 2015). One possible mechanism for mediating the NLS-dependent enrichment of TFs on mitotic chromosomes is that the maintained Ran-GTP gradient allows importins to retain their ability to transport NLS-containing proteins to mitotic chromosomes. Indeed, the\u00a0accumulation of NLS containing proteins on chromosomes was hypothesized and modeled previously (Caudron\u00a0et\u00a0al., 2005) and a drug-dependent block of nuclear import resulted in exclusion of a TF mutant from mitotic chromosomes (Lerner et al., 2016). This postulated active shuttling of nuclear proteins to the chromosomes serves two potential functions. First, such a mechanism would facilitate the accumulation of high local concentrations of nuclear factors near the chromosomes to ensure an efficient re-establishment of the nuclear environment immediately following mitosis when the nuclear envelope reforms. Secondly, the increased local concentration of TFs on mitotic chromosomes may contribute to maintaining the accessibility of DNA regulatory regions, the original definition of mitotic bookmarking, even under the highly condensed state of mitotic chromosomes by facilitating increased TF-chromosome interactions. This model is supported by the near perfect concordance of ATAC-seq profiles for asynchronous and mitotic samples, indicating that mitotic chromosomes are as accessible to TFs as interphase chromatin. Therefore, most TFs can and do interact with mitotic chromosomes and thus function as general mitotic bookmarkers.\n\n## Materials and methods\n\n### Cell culture\n\nFor all experiments, we used the mouse ES cell line JM8.N4 (RRID: CVCL_J962) obtained from the KOMP repository (https://www.komp.org/pdf.php?cloneID=8669) and tested negative for mycoplasma. ES cells were cultured on gelatin-coated plates in ESC media Knockout D-MEM (Invitrogen,\u00a0Waltham,\u00a0MA) with 15% FBS, 0.1 mM MEMnon-essential amino acids, 2 mM GlutaMAX, 0.1 mM 2-mercaptoethanol (Sigma) and 1000 units/ml of ESGRO (Chem- icon). ES cells are fed daily and passaged every two days by trypsinization. Mitotic cells were synchronized by adding 100 ng/mL of Nocodazole for 6 hr followed by shake-off. Synchronization for other cell cycle stages were performed using the following regime. Cells were incubated in 2 mM Thymidine for 6 hr followed by 6 hr of fresh media. This cycle was repeated twice and cells synchronized in S phase were collected. The double thymidine block was followed by incubation with 100 ng/mL of Nocodazole for 6 hr. Mitotic cells were collected by shake-off, and remaining adherent cells were collected as G2-phase cells. To generate HaloTag-fused TFs, coding sequence of each TF were cloned into a Piggybac vector containing 3X-Flag-Halo-TEV construct upstream of a multiple cloning site. Stably expressing cell-lines were generated by transfecting the Halo-TF Piggybac construct together with the Super Piggybac transposase using Lipofectamine 3000. After 24 hr, stable integration of construct was selected with 1 mg/mL of G418. A similar method was used to generate stable expression of H2B-GFP under puromycin selection at 5 \u00b5g/mL.\n\n### Cas9 nuclease plasmid construction\n\nThe\u00a0design of the guide RNA was performed using the CRISPR Design Tool (http://crispr.mit.edu) (Hsu et al., 2013). The following oligonucleotide pair (5\u2019 CACCGCTGTGGGGGCCGCGCTCG and 5\u2019 AAACCGAGCGCGGCCCCCACAGC) was cloned into a modified pX330 vector. The modification involves the\u00a0inclusion of the Venus coding sequence upstream of the gRNA, driven under the PGK promoter. Venus expression can then be used to sort transfection positive cells. The final vector encoded the gRNA, Venus, and the Cas9 nuclease.\n\n### Design and construction of donor repair vectors\n\nThe left homology arm (LHA), HaloTag, and right homology arm (RHA) DNA sequence was constructed using overlapping PCR. LHA and RHA were amplified from genomic DNA using the following primer pairs. LHA: 5\u2019 GCGCGGTACCGCCAATATTCCGTAGCATGG and 5\u2019 CTTTTGCCTTGTTCTCAGCGCTAGCCATGCGGGCGCTGGGCGGGCG. RHA: 5\u2019 GAAAGTCCCTGTGTGCGAACCAAGTGGTACGCGTTATAACATGATGGAGACGGAG and 5\u2019 GATATCTAGACCTCGGACTTGACCACAGAG. We introduced silent mutations within the Cas9 nuclease binding region of the right homology arm. The HaloTag was amplified using the following primers to create overlap with LHA and RHA: 5\u2019 CGCCCGCCCAGCGCCCGCATGGCTAGCGCTGAGAACAAGGCAAAAG and 5\u2019 CTCCGTCTCCATCATGTTATAACGCGTACCACTTGGTTCGCACACAGGGACTTTC. The final 3-way overlapping PCR was performed with all 3 PCR products as a\u00a0template and using the following primer pair: 5\u2019 GCGCGGTACCGCCAATATTCCGTAGCATGG and 5\u2019 GATATCTAGACCTCGGACTTGACCACAGAG. The final PCR product was cloned into the pUC19 vector.\n\n### Transfection, clone selection, and screening\n\nMouse ES cells were transfected with of nuclease (0.5 \u00b5g) and donor (1 \u00b5g) vectors using Lipofectamine 3000. After 24 hr, cells were trypsinized into single-cell suspension and sorted for Venus expression. Sorted cells were grown on gelatin-coated plates under dilute conditions to obtain individual clones. After one week, individual clones were isolated and were used for direct cell lysis PCR using Viagen DirectPCR solution (cat #302 C) and the following primers: 5\u2019 ACCACGTCCGCTTCATGGAT and 5\u2019 GCCGTAAGGCATCATTGGAC. PCR positive clones were further grown on gelatin-coated plates and cell lysates were obtained for Western blot analysis using \u03b1-Sox2 (Millipore Cat# AB5603 RRID:AB_2286686). Three independent homozygous knock-in clones were obtained and further verified by immunofluorescence using \u03b1-Sox2. Halo-Sox2 KI C3 (clone 3) was further tested by teratoma assay and was performed by Applied Stem Cell.\n\n### Live cell imaging and fixed sample immunofluorescence\n\nFor all live-cell imaging experiments including FRAP, cells were grown on gelatin-coated glass bottom microwell dishes (MatTek #P35G-1.5\u201314-C) and labeled with the Halo-ligand dye JF549 at 100 nM concentration for 30 min. Cells were washed 3x with fresh media for 5 min each to remove unbound ligand. Live-cell imaging was performed using a Zeiss LSM 710 confocal microscope equipped with temperature and CO2 control. For fixed imaging, labeled cells were fixed with 4% PFA for 10 min and were washed with 1x PBS prior to imaging. Standard immunofluorescence was performed on labeled cells using 4% PFA. Quantification of chromosome enrichment was performed using Fiji. Epi-fluorescence time lapse imaging was performed on Nikon Biostation IM-Q equipped with a 40x/0.8 NA objective, temperature, humidity and CO2 control, and an external mercury illuminator. Images were collected every 2 min for 12 hr.\n\n### FRAP\n\nFRAP was performed on Zeiss LSM 710 confocal microscope with a 40x/1.3 NA oil-immersion objective and a 561 nm laser. Bleaching was performed using 100% laser power and images were collected at 1 Hz for the indicated time. FRAP data analysis was performed as previously described (Mueller et al., 2008). For each cell line, we collected 10 cells for technical replicates in one experiment, which was repeated for a total of three biological replicates (30 cells total).\n\n### Single-molecule microscopy\n\nFor all single molecule tracking experiments, indicated cells were grown on gelatin-coated glass bottom microwell dishes (MatTek #P35G-1.5\u201314-C). For experiments imaging at slow frame rates, cells were labeled with JF549 at 10 pM for 30 min and washed as before. Cells were imaged in ESC media without phenol-red. A total of 600 frames were collected for imaging experiments and were repeated 3x for biological replicates, with each experiment consisting of 10 cells for technical replicates each. Data are represented as mean over experimental replicates (30 cells total) \u00b1 SEM. For experiments imaging at fast frame rates, cells were labeled with JF646 at 25 nM as before. Cells were imaged in ESC media without phenol-red. A total of 20,000 frames were collected for fast-tracking imaging experiments and were repeated 3x for biological replicates, with each experiment consisting of eight cells of technical replicates. Data are represented as mean over experimental replicates (24 cells total) \u00b1 standard error of means.\n\n### Single particle tracking\n\nSingle particle tracking experiments were performed at either a slow frame rate (2 Hz; dye: JF549) to measure residence times or at a high frame-rate (225 Hz; dye: PA-JF646) to measure the displacement distribution and the fraction bound. Imaging experiments were conducted on a custom-built Nikon TI microscope equipped with a 100x/NA 1.49 oil-immersion TIRF objective (Nikon apochromat CFI Apo SR TIRF 100x Oil), EM-CCD camera (Andor iXon Ultra 897), a perfect focusing system (Nikon) and a motorized mirror to achieve HiLo-illumination (Tokunaga et al., 2008). To image PA-JF646 dyes (Grimm et al., 2015; 2016), a multi-band dichroic (405 nm/488 nm/561 nm/633 nm BrightLine quad-band bandpass filter, Semrock) was used to reflect a 633 nm laser (1 W, Coherent, Genesis) and 405 nm laser (140 mW, Coherent, Obis) into the objective, and emission light was filtered using a bandpass emission filter (FF01 676/37 Semrock). To image JF549 (Grimm et al., 2015), the same multi-band dichroic (405 nm/488 nm/561 nm/633 nm quad-band bandpass filter, Semrock) was used to reflect a 561 nm laser (1 W, Coherent, Genesis) into the objective and emission light was filtered using a bandpass emission filter (Semrock 593/40 nm). The laser intensity was controlled using an acousto-optic transmission filter. For JF549 experiment at 2 Hz, a low constant laser intensity was used to minimize photobleaching. For experiments at 225 Hz, stroboscopic pulses of 1 ms 633 nm laser per frame were used at maximal laser intensity to minimize motion-blurring.\n\n### Single particle tracking: Residence time measurements\n\nWhen imaging single molecules at long exposure times (500 ms, 2 Hz) fast-moving molecules motion-blur into the background and mostly bound molecules appear as single diffraction limited spots (Chen et al., 2014). Thus, bound Sox2 molecules were identified using SLIMfast\u00a0(Normanno et al., 2015) (Source code 1), a custom-written MATLAB implementation of the MTT algorithm (Serg\u00e9 et al., 2008) using the following algorithm settings: Localization error: 10\u22126; deflation loops: 1; Blinking (frames); 1; maximum number of competitors: 3; maximal expected diffusion constant (\u00b5m2/s): 0.1. The length of each bound trajectory, corresponding to the time before unbinding or photobleaching, was determined and used to generate a survival curve (fraction still bound) as a function of time. The survival curve was then fitted to a two-exponential function:\n\n$$\nP(t)=Fe^{\u2212k_{off,emp,ns}t}+(1\u2212F)e^{\u2212k_{off,emp,s}t}\n$$\n\nas previously described for Sox2 (Chen et al., 2014), where $k_{off,emp,ns}$ corresponds to the empirical off rate for non-specific binding and $k_{off,s}$ corresponds to the empirical off rate for specific binding. The measured empirical off rate is the sum of the photobleaching rate and the actual off rate for unbinding of Sox2 from chromatin:\n\n$$\nk_{off,emp,s}=k_{photobleach}+k_{off,s}\n$$\n\nThe photobleaching rate was measured using an ES cell line stably expressing H2b-Halo. Since H2b-Halo displays minimal unbinding (e.g. no FRAP recovery), any apparent unbinding was interpreted as photobleaching. Thus, to determine $k_{photobleach}$ the SPT experiment was repeated using identical settings and the apparent off-rate of H2b-Halo determined using two-exponential fitting, where $k_{photobleach}$ corresponds to the slow component. Finally, the Sox2 residence time is then simply given by the inverse of the photobleaching-corrected off rate: $\\tau_{s}=\\frac{1}{k_{off,s}}$.\n\n### Single particle tracking: Fraction bound measurements\n\nAs with the experiments at 2 Hz, single molecules were localized and tracked using SLIMfast, a custom-written MATLAB implementation of the MTT algorithm (Serg\u00e9 et al., 2008), using the following algorithm settings: Localization error: 10\u22126.25; deflation loops: 0; Blinking (frames); 1; maximum number of competitors: 3; maximal expected diffusion constant (\u00b5m2/s): 20. To determine the fraction bound from the single particle tracking measurements at 225 Hz, the displacements (\u2018jump lengths\u2019) at several \u0394\u03c4 (4.5 ms, 9.0 ms, \u2026, 31.5 ms) where fit to a steady-state model consisting of a free Sox2 population (with diffusion constant DFREE) and a bound Sox2 population (with diffusion constant DBOUND) using a modeling approach similar to what has been previously described by Mazza et al. (2012), but with some modifications. The combined displacement histograms at several \u0394\u03c4 (4.5 ms, 9.0 ms, \u2026, 31.5 ms) were fitted to:\n\n$$\nP(r,\u0394\\tau)=F_{BOUND}\\frac{r}{2(D_{BOUND}\u0394\\tau+\\sigma^{2})}e^{\\frac{r^{2}}{4(D_{BOUND}\u0394\\tau+\\sigma^{2})}}+Z_{CORR}(\u0394\\tau)(1\u2212F_{BOUND})\\frac{r}{2(D_{FREE}\u0394\\tau+\\sigma^{2})}e^{\\frac{r^{2}}{4(D_{FREE}\u0394\\tau+\\sigma^{2})}}\n$$\n\nwhere:\n\n$$\nZ_{CORR}(\u0394\\tau)=\\frac{1}{\u0394z}\\int\u2212\u0394z/2\u0394z/2{1\u2212\\sumn=0\u221e(\u22121)^{n}[erfc(\\frac{\\frac{(2n+1)\u0394z}{2}\u2212z}{\\sqrt{4D_{FREE}\u0394\\tau}})+erfc(\\frac{\\frac{(2n+1)\u0394z}{2}+z}{\\sqrt{4D_{FREE}\u0394\\tau}})]}dz\n$$\n\nand:\n\n$$\n\u0394z=0.700\u00a0\\mum+\u00a00.15716s^{\u22121/2}\\sqrt{D}+0.20811\u00a0\\mum\n$$\n\nusing custom-written least-squares fitting software (MATLAB). The above model contains three fitted parameters (DBOUND, DFREE and FBOUND). The localization error, \u03c3, was roughly 35 nm. $Z_{CORR}(\u0394\\tau)$ corrects for free molecules moving out of the axial detection slice (out-of-focus; axial detection slice experimentally measured to be\u00a0~0.7 \u00b5m). The $Z_{CORR}(\u0394\\tau)$ expression assumes absorbing boundaries, which overestimates the fraction of molecules moving out of focus (Kues and Kubitscheck, 2002). To correct of this, Monte Carlo simulations were performed to determine a corrected \u0394$z$, which is shown above. Full details on modeling displacements will be published elsewhere (Hansen et al.) and is available upon request.\n\n### ATAC-seq\n\nATAC-seq was performed on 50,000 asynchronous and mitotic cells as previously described (Buenrostro et al., 2013) with the following modifications. For both asynchronous and mitotic samples, Nocodazole was added to cells at 100 ng/mL concentration and incubated at 37 C for 6 hr, and mitotic cells were collected by careful shake off. After PBS wash, cells were immediately resuspended in the transposase reaction mix (25 \u00b5L 2x TD buffer, 2.5 \u00b5L transposase, and 22.5 \u00b5L nuclease-free water). Transposition and DNA purification was performed as described (Buenrostro et al., 2013). For PCR amplification, we determined the linear range to be between 10\u201316 cycles and performed amplification for library preparation using 12 cycles for all subsequent samples. We performed two replicates, and each sample and replicate was sequenced using one lane of Illumina Hi-Seq 2500 for 50 bp paired-end reads.\n\n### ATAC-seq data analysis\n\nSequenced paired mates were mapped on mm10 genome build using Bowtie2 with the following parameters: --no-unal --local --very-sensitive-local --no-discordant --no-mixed --contain --overlap --dovetail --phred33 \u2013I 10 \u2013X 2000. Raw mapped reads were visualized using Integrative Genomics Viewer (IGV). From the length distribution of sequenced reads, two size classes were used: short reads (under 100 bp) and mono-nucleosome sized reads (180\u2013247 bp). Fragment sizes corresponding to these size classes were mapped separately using the same parameters as above. Peak calling was performed using the Homer suite package for asynchronous and mitotic samples, and using either total reads, or each size class. Peaks for asynchronous and mitotic samples were merged for the corresponding size classes. Peak intensity scatter heatmap was plotted using the MATLAB package Heatscatter with the\u00a0number of bins set at 100. Sox2 binding sites were collated from published ChIP-seq data sets (Chen et al., 2008) with GEO Accession number GSE11431. ATAC-seq read densities from the short reads size class were calculated in a 4 kb region centered at each peak in 25 bp bins were calculated using a\u00a0Homer suite package (Heinz et al., 2010), and visualized using Java TreeView (Saldanha, 2004). Sox2 motif and associated position weight matrix were obtained from JASPAR core 2014 database, and genomic locations containing Sox2 motif was generated using PWMTools with a cut-off p-value of 10\u22124. The short read size class was used to calculate the read density at single base resolution for footprinting analysis. Footprinting was performed similarly for matched random genomic regions. Sequencing data are deposited into GEO under the accession number GSE85184.\n\n### Time lapse imaging\u2014quantification of PFA movies\n\nHalo-Sox2 KI cells stably expressing H2B-GFP were grown on gelatin-coated chambered coverglass (Lab-Tek #155411), labeled with JF-549 at 100 nM, and washed as described above. Time lapse imaging was performed with Zeiss LSM 710 confocal microscope as described above, with images collected at 2 Hz for 2.5 min. PFA at varying concentrations were added 10 s after the start of image collection. Quantification of chromosome enrichment was performed using an in-house Matlab code (Source code 2). Briefly, for each frame, the H2B-GFP was thresholded to generate a mask for chromosomes. The mask was applied to the JF549 channel to calculate the\u00a0mean intensity at the chromosomes, which was normalized to the\u00a0total cell intensity. The normalized chromosome intensity at 60 s post PFA-addition was obtained for each experiment and plotted as mean \u00b1 SEM.\n",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "53536ce3-a257-4904-9e72-32a36a81924e",
+      "submission_id": "77c9e1cc-5813-41f8-8d78-5bdd4f0203b7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Karen Adelman, Harvard Medical School , United States\n\n## Review text\n\nDOI: [10.7554/eLife.22280.028](https://doi.org/10.7554/eLife.22280.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"A Dynamic Mode of Mitotic Bookmarking by Transcription Factors\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis very nice manuscript from the Tjian laboratory clearly has the impact and level of interest to merit publication in eLife. In this work, the authors address the nature of mitotic bookmarking, and the traditional presumption that condensation of mitotic chromatin renders it inaccessible to binding by transcription factors. This view has been changing recently, and this work represents an important step towards defining how transcriptional memory is retained across mitosis and the ways in which protein-DNA interactions are altered through the cell cycle.\n\nThe primary biological findings in this work are: i) that Sox2, Oct4 and Esrrb, all factors important for maintenance of the ES cell state, are able to interact with mitotic chromatin, and ii) that the overall accessibility of mitotic chromatin is only modestly lower than during interphase. Further, the authors reveal and explore a technical artifact that has been noted over the years, but never fully understood: they show that formaldehyde cross-linking creates the appearance of exclusion of transcription factors from mitotic chromatin, likely due to the fast koff of factors from mitotic DNA and trapping of dissociated factors in the nucleoplasm as formaldehyde crosslinks interfere with positive DNA-binding surfaces and/or nuclear localization signals. This fixation artifact leads to the apparent exclusion from mitotic chromatin of factors such as Sp1, Klf4, Foxo1and Foxo3a that are evenly distributed through the nucleoplasm in live mitotic cells. Thus, the authors conclude that the use of formaldehyde crosslinking has perpetuated the notion that mitotic chromatin is unavailable for transcription factor binding, when in fact, factors are fully able to explore their binding sites. Finally, the authors propose that it is the absence of stabilizing interactions with the transcription machinery, rather than an inherent decrease in accessibility that underlies the reduced residence time of transcription factors on mitotic chromatin.\n\nEssential revisions:\n\nMost of the data are quite convincing and the findings are very significant for our understanding of gene regulation. However, there remain some issues that the authors should clarify through additional experimentation and through further discussion in the text.\n\n1) Even in live cell imaging experiments, most TFs investigated do not show any enrichment on mitotic chromatin, and those that do are lineage-specifying factors. Transcription factors Sp1 and Foxo have no apparent enrichment on mitotic chromatin, and HSF1 and Stat3 are considered 'de-enriched'. In this way, the current manuscript is in agreement with a good deal of previously published literature showing that pioneer, or lineage-specifying factors have a greater propensity to interact with mitotic chromatin that other factors. However, the authors seem to be arguing against this idea in the discussion, which is confusing. In addition, it isn't clear how significant the level of binding observed for factors like Sp1 is as compared to factors that are truly not associated with mitotic chromatin.\n\nThus, we suggest two improvements to Figure 1 and its discussion:i) Figure 1A should be accompanied by negative controls for proteins that should not be present on mitotic chromosomes to assess the level of contamination of the mitotic chromatin by chromatin from other cell cycle stages and the level of background in the assay. Cell synchronization was done using nocodazole and shake off, but mouse cells are known to have a leaky response to nocodazole and so some will likely slip through the block during the 6 hours. The same applies to Figure 1B \u2013 +ve and -ve controls for the cytoplasmic and chromatin fractions need to be included in the immunoblotting.ii) The authors should clarify in the Results and Discussion that even using live cell techniques, not all factors interact in the same manner with mitotic chromatin, and that their findings in this regard are generally in line with previous work indicating a preference for lineage-specifying, 'pioneer' factors to be enriched on chromatin during mitosis.\n\n2) The similarity in the pattern of ATAC-sequencing data between mitotic and interphase cells is potentially very significant, since it is the best indication that the TFs bind their correct recognition sites in mitotic chromosomes rather than just being non-specifically associated. However, much of the discussion of the ATAC-seq does not match the data presented, which is confusing. First and foremost, in order to quantitatively compare accessibility between two different conditions that may have dramatically different chromatin structure, the ATAC-seq experiments must include an internal control (e.g. spike-in with nuclei of another species, such as Drosophila).\n\nAlso, the number of cells used per reaction should be stated. Given the contamination of the mitotic fraction with some interphase cells, there is some concern that the ATAC-seq signals are coming from this \u2013 albeit small \u2013 fraction of contaminating interphase cells rather than from the mitotic chromosomes.\n",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "62bff25d-9b13-486f-80ee-c9ae361fb379",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C1",
+      "claim": "Sox2 is detected on chromatin fractions from synchronized populations, including mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected Sox2 on chromatin fractions from synchronized populations, including mitotic cells (Figure 1A), providing initial evidence that Sox2 may associate with mitotic chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by biochemical fractionation data shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "43b517cf-cc55-4ca9-be11-be132bab2081",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C2",
+      "claim": "TBP fractionates with mitotic chromosomes whereas Pol II does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, TBP fractionated with mitotic chromosomes whereas Pol II did not (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by biochemical fractionation data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "c585ce23-45df-4675-8bc1-ff55d981350c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C3",
+      "claim": "In asynchronous populations, the majority of Sox2 fractionates at high salt and in the micrococcal nuclease-digested chromatin, suggesting a strong interaction of Sox2 with chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the asynchronous population, the majority of Sox2 fractionated at high salt and in the micrococcal nuclease-digested chromatin, suggesting a strong interaction of Sox2 with chromatin (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by salt fractionation data shown in Figure 1B and interpreted based on the principle that nuclear transcription factors elute at salt concentrations that overcome their binding strength to DNA",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "97adaf3b-5838-4be1-9df1-f6dd4ac55685",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C4",
+      "claim": "Oct4 fractionates with much lower salt concentrations than Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Oct4 fractionated with much lower salt concentrations (Figure 1B), consistent with its more dynamic association with chromatin (Chen et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by salt fractionation data shown in Figure 1B and consistent with published literature on Oct4 dynamics",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "80289a05-1e2e-4869-b838-e45a1e7f8ed6",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C5",
+      "claim": "Sox2 displays a similar salt fractionation profile in synchronized mitotic cells as in asynchronous cells, albeit with a somewhat reduced signal in the digested chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Sox2 displayed a similar salt fractionation profile in synchronized mitotic cells, albeit with a somewhat reduced signal in the digested chromatin (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by salt fractionation data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b5c084bf-51f1-43e3-b8a1-4096a9155508",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C6",
+      "claim": "Sox2 likely associates with mitotic chromosomes in a manner that is qualitatively weaker than its association with interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the biochemical fractionation assay, these data suggest that Sox2 likely associates with mitotic chromosomes in a manner that is qualitatively weaker than its association with interphase chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from biochemical fractionation and salt fractionation data showing reduced signal in mitotic chromatin",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "174dc674-f52d-4c2a-ac5a-036ecf5177df",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C7",
+      "claim": "Sox2 is largely excluded from mitotic chromosomes when analyzed by immunofluorescence in standard formaldehyde-fixed mouse ES cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to our biochemical data, we found that Sox2 is largely excluded from mitotic chromosomes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "201260cd-9b09-49b3-90b6-f95d75731ccf",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C8",
+      "claim": "Overexpressed Halo-tagged Sox2 is highly enriched on mitotic chromosomes when imaged under live-cell conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we over-expressed Halo-tagged Sox2 (Halo-Sox2 OE) in mouse ES cells stably expressing H2B-GFP and imaged mitotic cells under live-cell conditions, we observed that Halo-Sox2 is highly enriched on mitotic chromosomes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "8dd03272-2364-463d-b58d-32e149fdc579",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C9",
+      "claim": "Endogenously tagged Halo-Sox2 KI is highly enriched on mitotic chromosomes under live-cell conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging under live-cell conditions, we confirmed that Halo-Sox2 KI is indeed highly enriched on mitotic chromosomes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "968c7b63-1727-4a00-86fd-812bf10825cc",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C10",
+      "claim": "Strong enrichment of Halo-Sox2 KI to chromosomes is detected throughout all stages of mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, using time-lapse microscopy, we detected strong enrichment of Halo-Sox2 KI to chromosomes throughout all stages of mitosis (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse microscopy data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b8484ce0-9087-41f8-b141-42c40cc578a5",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C11",
+      "claim": "Both the HaloTag and \u03b1-Sox2 signals in fixed cell preparations are excluded from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, both the HaloTag and the \u03b1-Sox2 signals in these fixed cell preparations were found to be excluded from mitotic chromosomes as marked by H2B-GFP (Figure 1F) in contrast to the live-cell imaging results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by fixed cell imaging data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "df032c06-ca53-40d7-ab3c-b92932715c04",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C12",
+      "claim": "Both Halo-Sox2 OE and Halo-Sox2 KI switch from positive enrichment under live-cell imaging conditions to exclusion after fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "With this metric, both Halo-Sox2 OE and Halo-Sox2 KI switched from positive enrichment under live-cell imaging conditions to exclusion after fixation (Figure 1H), suggesting that fixation by paraformaldehyde results in the exclusion of Sox2 from mitotic chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis of chromosome enrichment shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "9aaecbb9-b326-403d-9e22-b335630e065b",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C13",
+      "claim": "Formaldehyde may uniquely alter the structure of HMGB proteins and thus result in exclusion from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is reminiscent of a previous study showing that HMGB proteins become excluded from mitotic chromosomes after fixation (Pallier et al., 2003). The authors argue that formaldehyde may uniquely alter the structure of HMGB proteins and thus result in exclusion, which may be consistent with Sox2 as it contains an HMG domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pallier et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "3409e35f-288e-45e1-9987-c4d49f73f406",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C14",
+      "claim": "The level of enrichment on mitotic chromosomes dramatically decreases after fixation for all tested TFs including Oct4, Esrrb, Klf4, Sp1, Foxo1, Foxo3a, Stat3, and Hsf1.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the level of enrichment on mitotic chromosomes dramatically decreased after fixation, resulting in an apparent exclusion of all TFs examined (Figure 1I and Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 1I and Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "e84c7ee0-feb7-43a3-baa6-23339c827e29",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C15",
+      "claim": "When imaged under live-cell conditions, the majority of tested TFs exhibit varying levels on mitotic chromosomes, from highly enriched to uniform levels.",
+      "claim_type": "EXPLICIT",
+      "source": "When imaged under live-cell conditions, however, the majority of these factors exhibited varying levels on mitotic chromosomes, from highly enriched to uniform levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "23c5d0e8-62cc-485c-b852-8657d8a78ec3",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C16",
+      "claim": "Stat3 and Hsf1 are excluded from mitotic chromosomes under live-cell conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found two TFs that are excluded from mitotic chromosomes under live-cell conditions, Stat3 and Hsf1 (Figure 1I), both of which are known to require external signals to translocate into the nucleus during interphase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 1I and known biological properties of Stat3 and Hsf1",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "ad71364a-61ff-4b0f-beef-efff92c28fae",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C17",
+      "claim": "A large number of TFs are associated with mitotic chromosomes in chicken DT40 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with a study showing a large number of TFs associated with mitotic chromosomes in chicken DT40 cells (Ohta et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ohta et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "8949ade3-ad18-4539-b710-bffdf8d5b7c1",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C18",
+      "claim": "Chemical fixation evicts TFs from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also tested other commonly used fixation methods and have varied the fused tag, and all the results suggest that chemical fixation somehow evicts TFs from mitotic chromosomes (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "3dd15536-67cc-482a-bbce-13380fb3127d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C19",
+      "claim": "A large body of literature spanning several decades of studying TFs during mitosis may have been founded in large part on a fixation artifact.",
+      "claim_type": "EXPLICIT",
+      "source": "This surprising finding suggests that a large body of literature spanning several decades of studying TFs during mitosis, from their widely accepted exclusion from mitotic chromosomes to the apparent uniqueness of certain select TFs as specialized 'mitotic bookmarkers', may have been founded in large part on a fixation artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that chemical fixation causes TF exclusion from mitotic chromosomes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "84c1b0f3-4fad-467b-8c9d-80b511170fb4",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C20",
+      "claim": "The HMG domain of Sox2 is sufficient to render mitotic chromosome localization.",
+      "claim_type": "EXPLICIT",
+      "source": "When we quantified the chromosome enrichment of the truncations, we observed that the HMG domain is sufficient to render mitotic chromosome localization (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis of Sox2 truncations shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "2a85f9f1-5fc5-48bd-ab5c-c0200d6d55ae",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C21",
+      "claim": "Halo-Sox2 TAD is mostly cytoplasmic.",
+      "claim_type": "EXPLICIT",
+      "source": "Halo-Sox2 HMG became highly enriched on mitotic chromosomes whereas Halo-Sox2 TAD was mostly cytoplasmic (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "753baf5e-3839-4d0c-9564-8d5f6eea1ac6",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C22",
+      "claim": "Mutations of DNA binding residues in Sox2 result in exclusion from mitotic chromosomes under live-cell imaging conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressed in ES cells, mutations of DNA binding residues resulted in exclusion from mitotic chromosomes under live-cell imaging conditions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b14fc151-944a-4f6a-81f6-0954d0b8c6f3",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C23",
+      "claim": "DNA binding is necessary for mitotic enrichment of Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "Expressing this construct (Halo-Sox2 DBD3M) also showed exclusion from mitotic chromosomes (Figure 2B), confirming that DNA binding is necessary for mitotic enrichment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b2d5cfe9-23e4-49f0-a453-2b4d403dd3aa",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C24",
+      "claim": "Mutations to the NLS of Sox2 result in exclusion from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, mutations to the NLS also resulted in exclusion from mitotic chromosomes (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "baae8b53-cba7-44c6-a556-e650b77f377c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C25",
+      "claim": "Mutants of HNF1B become enriched on mitotic chromosomes following cold shock, and this enrichment is dependent on nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, mutants of HNF1B become enriched on mitotic chromosomes following cold shock, and that this enrichment is dependent on nuclear import (Lerner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lerner et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "fdb1fb10-2db2-404d-8b65-bf6e2cc3d440",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C26",
+      "claim": "The SV-40 NLS enriches the HaloTag protein in mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When imaged under live conditions, we discovered that the NLS enriched the HaloTag protein in mitotic chromosomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "c07c0b99-0522-469b-8aee-14b3c86bb536",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C27",
+      "claim": "HaloTag protein alone is excluded from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HaloTag protein alone is excluded from mitotic chromosomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d212dfd8-f9b3-4532-b0c5-34c5ed71d7f8",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C28",
+      "claim": "Halo-Plant NLS shows no enrichment on mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "When imaged under live-cell conditions, we observed no enrichment of Halo-Plant NLS on mitotic chromosomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "8fe8b07e-d016-4214-ae76-5a6de149087c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C29",
+      "claim": "Both sequence-specific binding and active nuclear import likely contribute to the enrichment of TFs on mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that both sequence-specific binding and active nuclear import likely contribute to the enrichment of TFs on mitotic chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experiments showing that DNA binding mutations and NLS mutations both result in exclusion, and that functional NLS is required for enrichment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "88fd0af6-28c0-4cb0-bc79-5d7c493a81f8",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C30",
+      "claim": "Halo-Sox2 recovery is faster in mitotic cells than during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantifying intensities at the bleach spot over time shows that Halo-Sox2 recovery is faster in mitotic cells than during interphase, but significantly slower than Halo-NLS (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRAP data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "64cedb25-5630-43f6-a978-73ca0f95e2dd",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C31",
+      "claim": "The average time for Halo-Sox2 to reach 90% recovery in interphase is 19.7 s, whereas 90% recovery in mitosis is 4.3 s on average.",
+      "claim_type": "EXPLICIT",
+      "source": "The average time for Halo-Sox2 to reach 90% recovery in interphase is 19.7 s, whereas 90% recovery in mitosis is 4.3 s on average (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRAP data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d34d8b9a-6f76-4649-9e78-7763bbe5705f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C32",
+      "claim": "Halo-NLS reaches 90% recovery in 0.9 s for both interphase and mitotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Halo-NLS reaches 90% recovery in 0.9 s for both interphase and mitotic cells (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRAP data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b88f0486-a190-4f4a-9cc0-be305449cd91",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C33",
+      "claim": "The interaction of Sox2 with mitotic chromosomes is more dynamic than its interaction with interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the interaction of Sox2 with mitotic chromosomes is more dynamic than its interaction with interphase chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data showing faster recovery in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "1f511e5e-face-43a9-be43-9d92d687f1c6",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C34",
+      "claim": "The residence time of specific Halo-Sox2 binding events during mitosis is 54% relative to interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "After correction for photobleaching, the residence time of specific Halo-Sox2 binding events during mitosis is 54% relative to interphase (Figure 3D inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single particle tracking data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "13c0aac5-2071-46e2-a67c-00dd1961eed2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C35",
+      "claim": "In interphase, 30.9% of Halo-Sox2 molecules are bound, whereas 18.3% of Halo-Sox2 molecules are bound in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In interphase, 30.9% of Halo-Sox2 molecules are bound, whereas 18.3% of Halo-Sox2 molecules are bound in mitosis (Figure 3E inset), an almost two-fold decrease in bound population.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by single particle tracking data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "cac03a61-6287-4d93-8166-355c2f0cc086",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C36",
+      "claim": "There are fewer Sox2 molecules bound during mitosis, and these bound molecules experience a faster off-rate in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with the slow tracking SPT analysis, these data suggest that there are fewer Sox2 molecules bound during mitosis, and that these bound molecules experience a faster off-rate in mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from single particle tracking data showing decreased bound fraction and decreased residence time in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "4543043d-a886-42a4-9e22-dd6a581b8088",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C37",
+      "claim": "Halo-Sox2 HMG shows faster FRAP recovery both in interphase and mitosis compared to full length Halo-Sox2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to full length Halo-Sox2, the Halo-Sox2 HMG showed faster FRAP recovery both in interphase and mitosis (Figure 3B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRAP data shown in Figure 3B-C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "8aa2e9fa-b2ee-4271-8027-ec5b51549bbf",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C38",
+      "claim": "The average time for Halo-Sox2 HMG to reach 90% recovery in both interphase and mitosis is 6.6 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the average time for Halo-Sox2 HMG to reach 90% recovery in both interphase and mitosis is 6.6 s, comparable to Halo-Sox2 in mitosis (4.3 s) (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FRAP data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "5a6e840c-1b0d-4ddd-bac3-37dffe39b44f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C39",
+      "claim": "The TAD plays a significant role in stabilizing Sox2 interactions with interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the TAD plays a significant role in stabilizing Sox2 interactions with interphase chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data showing that Sox2 HMG (lacking TAD) has faster recovery in interphase similar to full-length Sox2 in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "92a9530b-a700-4443-917c-32d41d6c0361",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C40",
+      "claim": "The TAD region participates in interactions with partner proteins, including Oct4 and p300, to activate transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The TAD region participates in interactions with partner proteins, including Oct4 and p300, to activate transcription (Cox et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cox et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d5abf1cc-ffb6-4652-bcc4-1c1ff9d69623",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C41",
+      "claim": "During mitosis, transcription is shut off globally, and therefore, the full length Sox2 now interacts with mitotic chromosomes primarily through its DNA binding domain, rendering the TAD inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "During mitosis, transcription is shut off globally, and therefore, the full length Sox2 now interacts with mitotic chromosomes primarily through its DNA binding domain, rendering the TAD inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data and known biology of mitotic transcriptional shutdown",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "0b50a7f0-9855-40b6-9a9f-033bc69c219c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C42",
+      "claim": "The length distribution profile of sequenced fragments from asynchronous cell populations and synchronized mitotic cells revealed near super-imposable patterns in Tn5 integration.",
+      "claim_type": "EXPLICIT",
+      "source": "The length distribution profile of sequenced fragments from asynchronous cell populations and synchronized mitotic cells revealed near super-imposable patterns in Tn5 integration (Figure 4A), including the 10 bp periodicity patterns that mark DNA helical pitch (Figure 4A inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "206d8f47-f835-4275-99c5-a6c531417d55",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C43",
+      "claim": "Tn5 transposase may access mitotic chromosomes as equally well as interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These nearly identical integration patterns and sequencing read counts (Figure 4\u2014figure supplement 1) suggest that Tn5 transposase may access mitotic chromosomes as equally well as interphase chromatin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from ATAC-seq data showing similar integration patterns and read counts",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b9419558-3174-4bd4-af72-338123489fb8",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C44",
+      "claim": "There is little qualitative difference in peak patterns and intensities between asynchronous and mitotic cells when analyzing both the short reads and the mono-nucleosome sized fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the total mapped reads, there is little qualitative difference in peak patterns and intensities between asynchronous and mitotic cells when we analyze both the short reads and the mono-nucleosome sized fragments (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "e83b23a2-e98b-426d-ae1e-fbc1df1fff4d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C45",
+      "claim": "Linear regression analysis of peak intensities between asynchronous and mitotic cells shows the slope of the fit at 0.965, with an R2 value of 0.991.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, linear regression analysis shows the slope of the fit at 0.965, with an R2 value of 0.991 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "c446ea64-2d1e-497d-b1b5-0d57f952864e",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C46",
+      "claim": "Mitotic chromosomes are accessed by the Tn5 transposase in nearly the same manner as it accesses interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "These quantitative analyses indicate that mitotic chromosomes are accessed by the Tn5 transposase in nearly the same manner as it accesses interphase chromatin, suggesting that the massive condensation of mitotic chromosomes has little effect on DNA accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ATAC-seq data showing similar integration patterns and intensities between asynchronous and mitotic cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "ae40e624-970f-4473-a83e-79273b16a672",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C47",
+      "claim": "The peak of ATAC-seq reads in between the two well-positioned nucleosomes at the Oct4 distal enhancer is maintained in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the peak of ATAC-seq reads in between the two well-positioned nucleosomes is maintained in mitosis (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "14c88006-33a2-453c-99e1-5e448daea45f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C48",
+      "claim": "Mitosis integration density at Sox2 bound sites is roughly 60% of the integration density in asynchronous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging the integration density at all Sox2 bound sites shows that mitosis integration density is roughly 60% of the integration density in asynchronous cells (Figure 5B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "a9d0f1ae-6b97-44e9-8a25-6174546ce26e",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C49",
+      "claim": "The significant decrease in integration density at Sox2 bound regions may reflect the reduced residence time of Sox2 at these sites during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This significant decrease in integration density at Sox2 bound regions may reflect the reduced residence time of Sox2 at these sites during mitosis (Figure 2D), and is consistent with a previous study showing decreased accessibility at enhancer regions (Hsiung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ATAC-seq data and single particle tracking data, and consistent with published literature",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "33e25177-b452-4ed3-8d1b-5a3594551725",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C50",
+      "claim": "Footprinting analysis shows nearly identical integration patterns and footprinting depth for asynchronous and mitotic cells at Sox2 motif sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This footprinting analysis shows nearly identical integration patterns and footprinting depth for asynchronous and mitotic cells that is absent in matching random genomic sites, suggesting that Sox2 can sample binding sites as equally well in mitotic as in asynchronous cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ATAC-seq footprinting data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "abc12e9f-9db7-4b29-93ae-8b86d2646b51",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C51",
+      "claim": "Sox2 can sample binding sites as equally well in mitotic as in asynchronous cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This footprinting analysis shows nearly identical integration patterns and footprinting depth for asynchronous and mitotic cells that is absent in matching random genomic sites, suggesting that Sox2 can sample binding sites as equally well in mitotic as in asynchronous cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ATAC-seq footprinting data showing similar patterns in mitotic and asynchronous cells",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "fb08eadf-e1f5-4424-b4ba-faa341f26c60",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C52",
+      "claim": "Sox2 scans its binding sites relatively quickly through its DNA binding domain and is stabilized through the TAD when transcription is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is consistent with the similar binding dynamics of the Sox2 HMG domain in interphase and in mitosis (Figure 3B), lending further support for the model that Sox2 scans its binding sites relatively quickly through its DNA binding domain and is stabilized through the TAD when transcription is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ATAC-seq footprinting data and FRAP data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "0001844a-a276-4045-8db6-0baf6dc6f58a",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C53",
+      "claim": "Within 10 s after PFA addition, Halo-Sox2 levels at the chromosomes are visibly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 10 s after PFA addition, Halo-Sox2 levels at the chromosomes are visibly reduced, and becomes almost indistinguishable from the cytoplasmic signal by 60 s after PFA addition (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse imaging data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "30143c25-ca36-4d51-a2e4-160110c7814d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C54",
+      "claim": "At 60 s post PFA addition, chromosome enrichment of Halo-Sox2 decreased as the concentration of PFA added is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "At 60 s post PFA addition, chromosome enrichment of Halo-Sox2 decreased as the concentration of PFA added is increased (Figure 6B), confirming that the fixation artifact is dose-dependent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse imaging data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "f68b2699-25eb-4b6d-bbbf-9e82888cb78e",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C55",
+      "claim": "Halo-TBP is resistant to PFA mis-localization compared to the highly dynamic Halo-NLS.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the highly dynamic Halo-NLS, Halo-TBP is resistant to PFA mis-localization (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "95429da7-8da1-4e48-b2ce-a38e87a462f4",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C56",
+      "claim": "Active nuclear import had no effect on PFA-induced mis-localization as Halo-Plant NLS also becomes excluded from mitotic chromosomes after fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, whereas active nuclear import is required for chromosome enrichment, it had no effect on PFA-induced mis-localization as Halo-Plant NLS also becomes excluded from mitotic chromosomes after fixation, in contrast to Halo-only control (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "3bac4284-1bd8-4051-b570-2a82d434a08b",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C57",
+      "claim": "High pressure freezing followed by freeze substitution partially rescues the localization of Halo-Sox2 on mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we partially rescued the localization of Halo-Sox2 on mitotic chromosomes, suggesting that the HPF-FS method can somewhat counteract the PFA-induced artifact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by imaging data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d7f3da84-c98a-43c5-8e6f-7c8242044431",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C58",
+      "claim": "Highly dynamic TFs are more susceptible to PFA-induced mis-localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results point to a robust artifact caused by formaldehyde based cross-linking, and support a model whereby highly dynamic TFs are more susceptible to PFA-induced mis-localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data showing dose-dependent effects and differential susceptibility based on TF dynamics",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "958ef751-08fa-4975-8e62-5786db507ed2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C59",
+      "claim": "During mitosis, transcription is shut off, chromatin condenses, and most transcription factors are reported to be excluded from chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "During mitosis, transcription is shut off, chromatin condenses, and most transcription factors (TFs) are reported to be excluded from chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents established knowledge in the field as stated in the abstract",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "f8d1613e-6d95-4aac-88c6-91c4026a7810",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C60",
+      "claim": "Many TFs remain associated with chromosomes in mouse embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report instead that many TFs remain associated with chromosomes in mouse embryonic stem cells, and that the exclusion previously described is largely a fixation artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by live-cell imaging data throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "9c27d937-e84a-449b-a366-b92f72966c15",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C61",
+      "claim": "The exclusion of TFs from mitotic chromosomes previously described is largely a fixation artifact.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report instead that many TFs remain associated with chromosomes in mouse embryonic stem cells, and that the exclusion previously described is largely a fixation artifact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of live-cell imaging versus fixed cell imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "fb64ddc3-f5d2-4e78-996e-c17223274a7d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C62",
+      "claim": "Most TFs tested are significantly enriched on mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, most TFs we tested are significantly enriched on mitotic chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by live-cell imaging data shown in Figure 1I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "854075c5-d297-4f71-8b69-fa441f8899c4",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C63",
+      "claim": "The mitotic interaction of Sox2 is more dynamic than in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies with Sox2 reveal that this mitotic interaction is more dynamic than in interphase and is facilitated by both DNA binding and nuclear import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP and single particle tracking data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "496ef692-e0d2-43d1-883a-cf8c8edf5694",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C64",
+      "claim": "The mitotic interaction of Sox2 is facilitated by both DNA binding and nuclear import.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies with Sox2 reveal that this mitotic interaction is more dynamic than in interphase and is facilitated by both DNA binding and nuclear import.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments with DNA binding mutants and NLS mutants shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "3e41d96e-3dc5-4293-b923-6cde50950cc2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C65",
+      "claim": "The dynamic mode of Sox2 interaction with mitotic chromosomes results from lack of transcriptional activation rather than decreased accessibility of underlying DNA sequences in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this dynamic mode results from lack of transcriptional activation rather than decreased accessibility of underlying DNA sequences in mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP data showing Sox2 HMG (lacking TAD) behaves similarly in interphase and mitosis, and ATAC-seq data showing maintained accessibility",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "ac7cc28c-3448-49ee-bd9f-9576d56ecfdf",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C66",
+      "claim": "In mitosis, the global transcriptional machinery is inactivated via a cell cycle-dependent phosphorylation cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "In mitosis, the global transcriptional machinery is inactivated via a cell cycle-dependent phosphorylation cascade (Prescott and Bender, 1962; Rhind and Russell, 2012; Taylor, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Prescott and Bender, 1962; Rhind and Russell, 2012; Taylor, 1960",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "c5fb72bb-e7e1-4c99-92a8-773e1711879e",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C67",
+      "claim": "Interphase chromatin organizes into highly condensed mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interphase chromatin organizes into highly condensed mitotic chromosomes (Koshland and Strunnikov, 1995), and the nuclear envelope is disassembled (Terasaki et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Koshland and Strunnikov, 1995; Terasaki et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "541fb969-925b-4237-a500-8d87cd6d84a7",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C68",
+      "claim": "The nuclear envelope is disassembled during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interphase chromatin organizes into highly condensed mitotic chromosomes (Koshland and Strunnikov, 1995), and the nuclear envelope is disassembled (Terasaki et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Terasaki et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "6dd3c19a-c870-4b8f-b3a8-efbf65504826",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C69",
+      "claim": "Most transcription factors have been shown to be excluded from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, most transcription factors (TFs) have been shown to be excluded from mitotic chromosomes (Gottesfeld and Forbes, 1997; John and Workman, 1998; Mart\u00ednez-Balb\u00e1s et al., 1995; Rizkallah and Hurt, 2009), leading to the conclusion that mitotic chromosomes may be inaccessible to DNA binding and exclude most TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gottesfeld and Forbes, 1997; John and Workman, 1998; Mart\u00ednez-Balb\u00e1s et al., 1995; Rizkallah and Hurt, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "bc65eb6f-8a51-45c0-ac2d-d682588dc818",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C70",
+      "claim": "DNase I hypersensitive sites on the human hsp70 locus were shown to be maintained in mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, DNase I hypersensitive sites on the human hsp70 locus were shown to be maintained in mitotic chromosomes (Mart\u00ednez-Balb\u00e1s et al., 1995) implying the presence of a 'bookmarker' to keep the region accessible to nuclease digestion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mart\u00ednez-Balb\u00e1s et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "ac52ac74-1109-4901-93b9-1913aea1d757",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C71",
+      "claim": "The transcription start sites of certain genes scheduled for reactivation following mitosis were shown to remain sensitive to permanganate oxidation in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the transcription start sites (TSSs) of certain genes scheduled for reactivation following mitosis were shown to remain sensitive to permanganate oxidation in mitosis, suggesting a conformationally privileged structure at the TSSs of these genes (Michelotti et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Michelotti et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d4088f7d-6d53-48dc-93f2-bb596b7f85b5",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C72",
+      "claim": "HSF2 was shown to bind at the hsp70i locus during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "It was therefore a significant step in resolving this conundrum when HSF2 was shown to bind at the hsp70i locus during mitosis (Xing et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xing et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "30f4f0f0-fdea-49e1-8746-af65a94f2b72",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C73",
+      "claim": "GATA1 has previously been reported to be excluded from mitotic chromosomes by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, GATA1, a major regulator of the erythroid lineage, has previously been reported to be excluded from mitotic chromosomes by immunofluorescence (Xin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Xin et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "78828d18-bc08-4c38-b88b-d21882c0e5fe",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C74",
+      "claim": "GATA1 actually remained bound on its target regions during mitosis as shown by live-cell imaging and chromatin immunoprecipitation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the Blobel group has shown, by live-cell imaging and chromatin immunoprecipitation analysis, that GATA1 actually remained bound on its target regions during mitosis (Kadauke et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kadauke et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "0773644c-fbac-41b6-b320-a67f9d2bc5c6",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C75",
+      "claim": "TFs such as GATA1 act as the elusive 'bookmark' that maintain chromatin architecture at regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "TFs such as GATA1 seem to act as the elusive 'bookmark' that maintain chromatin architecture at regulatory regions, and thus have been termed mitotic bookmarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that GATA1 remains bound during mitosis",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d4f4dc20-073b-4382-8fba-c3e698d67681",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C76",
+      "claim": "The synchronization strategy achieves about 95% pure mitotic population.",
+      "claim_type": "EXPLICIT",
+      "source": "We synchronized cells at various stages of the cell cycle and obtained about 95% pure mitotic population. (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by flow cytometry and immunofluorescence data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "bd3756dd-d3fd-4bb4-bc10-4cb4225248e2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C77",
+      "claim": "All of Sox2-detected molecules for each Halo-Sox2 KI clone are migrating higher than the wild-type Sox2 suggesting that all molecules contain the HaloTag.",
+      "claim_type": "EXPLICIT",
+      "source": "All of Sox2-detected molecules for each clone are migrating higher than the wild-type Sox2 suggesting that all molecules contain the HaloTag.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 1\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "0be79f65-4e48-45cb-bfaf-d84eedb2b994",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C78",
+      "claim": "Halo-Sox2 KI cells maintain pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained three independent clones that were homozygously tagged (Halo-Sox2 KI), and confirmed that the tagging has no detectable effect on Sox2 function as Halo-Sox2 KI ES cells maintain pluripotency (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by teratoma assay data shown in Figure 1\u2014figure supplement 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "a4364458-6277-4be2-85bf-e27ee4ecf3bd",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C79",
+      "claim": "TFs of the RNA Polymerase I machinery have been shown to rapidly exchange on and off ribosomal DNA clusters during mitosis through FRAP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, TFs of the RNA Polymerase I machinery have been shown to rapidly exchange on and off ribosomal DNA clusters during mitosis through FRAP analysis (Chen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chen et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "9f6f5370-82cb-4d48-8cce-1df27d1f0cf9",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C80",
+      "claim": "Diffusion of EGFP molecules is delayed but not hindered through mitotic chromosomes as measured by pair correlation function.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion of EGFP molecules is delayed but not hindered through mitotic chromosomes as measured by pair correlation function, suggesting that molecules can freely cross chromosomes during mitosis (Hinde et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hinde et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "a509aaf7-6f52-4ad7-bcf7-48766d8f897a",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C81",
+      "claim": "Although there is a global decrease in DNase-seq signals during mitosis, overall patterns of DNase I HS patterns are preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, the Blobel group has performed DNase I hypersensitivity assay coupled with sequencing in mitotic and asynchronous mouse erythroblast cells and has shown that, although there is a global decrease in DNase-seq signals during mitosis, overall patterns of DNase I HS patterns are preserved (Hsiung et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hsiung et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "9376ab0d-0e8e-44ae-af18-c3e1679ff3c3",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C82",
+      "claim": "DNA in mitotic chromosomes is as accessible as in interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these studies suggest that DNA in mitotic chromosomes is as accessible as in interphase chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple studies including ATAC-seq data and published literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "84e1c324-2a17-4c34-a1fb-224d8b572dcf",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C83",
+      "claim": "At any given time during interphase, roughly 70% of Sox2 molecules are undergoing diffusion while 30% are bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Our fast-tracking SPT experiments have revealed that, at any given time during interphase, roughly 70% of Sox2 molecules are undergoing diffusion while 30% are bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single particle tracking data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "03b71507-52e4-4e0e-8fd4-a7c3cbb7fa58",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C84",
+      "claim": "The interphase long-lived stable binding events of Sox2 are highly dependent on the TAD-mediated protein-protein interactions that occur during transcriptional activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have confirmed that the interphase long-lived stable binding events are highly dependent on the TAD-mediated protein-protein interactions that occur during transcriptional activation (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data and citation to Chen et al., 2014",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "ba72fdef-1ea9-4590-a102-d535594dc95d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C85",
+      "claim": "During mitosis, an average of 82% of Sox2 molecules are freely diffusing.",
+      "claim_type": "EXPLICIT",
+      "source": "During mitosis when the nuclear envelope is disassembled and DNA becomes highly condensed, we have observed an increase in the fraction of freely diffusing Sox2 molecules to an average of 82%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from single particle tracking data showing 18.3% bound in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d30b52d7-2ede-4b53-8dbc-4757d651909a",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C86",
+      "claim": "The 18% of Sox2 molecules that are bound on mitotic chromosomes exhibit decreased residence times relative to bound Sox2 molecules in interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 18% of Sox2 molecules that are bound on mitotic chromosomes exhibit decreased residence times relative to bound Sox2 molecules in interphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by single particle tracking data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "66d3e64e-6cbf-4f16-9664-873cc79d5cc0",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C87",
+      "claim": "Sox2 dynamics in mitosis mimics the behavior of interphase Sox2 without its transcriptional activation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, Sox2 dynamics in mitosis mimics the behavior of interphase Sox2 without its transcriptional activation domain, suggesting that Sox2 protein-protein interactions dependent on transcriptional activation are severely abrogated in mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by FRAP data showing similar recovery times for Sox2 HMG in interphase and full-length Sox2 in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "d7cf5f0d-767a-4efe-b653-f3310ef57b68",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C88",
+      "claim": "Sox2 behavior during mitosis appears to be dominated by two main factors, 3D diffusion and protein-DNA contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in contrast to interphase cells, Sox2 behavior during mitosis appears to be dominated by two main factors, 3D diffusion and protein-DNA contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from FRAP and single particle tracking data showing loss of TAD-mediated stabilization in mitosis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "220ae74f-491a-46d8-a5e3-7b132121dba8",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C89",
+      "claim": "FoxA1 has been shown to bind to mitotic chromosomes in a more dynamic manner than to interphase chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, FoxA1, another TF that has been described as a mitotic bookmarker, has also been shown to bind to mitotic chromosomes in a more dynamic manner than to interphase chromatin (Caravaca et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Caravaca et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "1c4aa582-a6ce-4707-8fa1-5ad7607247c1",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C90",
+      "claim": "RCC1 remains localized at mitotic chromosomes, thereby maintaining the Ran-GTP gradient in mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite nuclear envelope breakdown during mitosis, RCC1 remains localized at mitotic chromosomes, thereby maintaining the Ran-GTP gradient in mitosis (Moore et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Moore et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "235b7454-c539-4341-b181-72cdc40a6d98",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C91",
+      "claim": "The Ran-GTP gradient has been shown to be vital in accurate formation of the spindle assembly during mitosis through the re-purposing of the canonical import proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ran-GTP gradient has recently been shown to be vital in accurate formation of the spindle assembly during mitosis through the re-purposing of the canonical import proteins (Forbes et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Forbes et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b294158a-1a53-4655-8785-9c2d9e057966",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C92",
+      "claim": "The accumulation of NLS containing proteins on chromosomes was hypothesized and modeled previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the accumulation of NLS containing proteins on chromosomes was hypothesized and modeled previously (Caudron et al., 2005) and a drug-dependent block of nuclear import resulted in exclusion of a TF mutant from mitotic chromosomes (Lerner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Caudron et al., 2005 and Lerner et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "3090003e-c110-4f79-a6c0-6f390ed75942",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C93",
+      "claim": "A drug-dependent block of nuclear import resulted in exclusion of a TF mutant from mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the accumulation of NLS containing proteins on chromosomes was hypothesized and modeled previously (Caudron et al., 2005) and a drug-dependent block of nuclear import resulted in exclusion of a TF mutant from mitotic chromosomes (Lerner et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lerner et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "c3eca52b-dfd5-461c-b4f6-548722215d19",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C94",
+      "claim": "Active shuttling of nuclear proteins to the chromosomes would facilitate the accumulation of high local concentrations of nuclear factors near the chromosomes to ensure an efficient re-establishment of the nuclear environment immediately following mitosis when the nuclear envelope reforms.",
+      "claim_type": "EXPLICIT",
+      "source": "This postulated active shuttling of nuclear proteins to the chromosomes serves two potential functions. First, such a mechanism would facilitate the accumulation of high local concentrations of nuclear factors near the chromosomes to ensure an efficient re-establishment of the nuclear environment immediately following mitosis when the nuclear envelope reforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on the maintained Ran-GTP gradient and nuclear import machinery during mitosis",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "a18ead02-9b73-4455-94b1-1ad5476436d3",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C95",
+      "claim": "The increased local concentration of TFs on mitotic chromosomes may contribute to maintaining the accessibility of DNA regulatory regions by facilitating increased TF-chromosome interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the increased local concentration of TFs on mitotic chromosomes may contribute to maintaining the accessibility of DNA regulatory regions, the original definition of mitotic bookmarking, even under the highly condensed state of mitotic chromosomes by facilitating increased TF-chromosome interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning based on the observed enrichment of TFs on mitotic chromosomes and maintained DNA accessibility",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "f27f2e10-57a2-42a6-b58a-1a09342ad02e",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C96",
+      "claim": "Most TFs can and do interact with mitotic chromosomes and thus function as general mitotic bookmarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, most TFs can and do interact with mitotic chromosomes and thus function as general mitotic bookmarkers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from live-cell imaging data showing most TFs associate with mitotic chromosomes and ATAC-seq data showing maintained accessibility",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "cfadf96a-132b-4e18-8d9a-53f8c8560d7c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C97",
+      "claim": "Factors such as CTCF, the cohesin complex, and DNA topoisomerases exhibit stable binding and have been shown by fixed immunofluorescence to remain bound on mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, some indications of this latter point exist in the literature. For example, factors such as CTCF, the cohesin complex, and DNA topoisomerases, all of which exhibit stable binding, have been shown by fixed immunofluorescence to remain bound on mitotic chromosomes (Burke et al., 2005; Christensen et al., 2002; Losada and Hirano, 2001; Nakahashi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Burke et al., 2005; Christensen et al., 2002; Losada and Hirano, 2001; Nakahashi et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "23b57b4e-5fe1-41a8-a91f-51db8d2893a3",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C98",
+      "claim": "ChIP studies reliant on formaldehyde cross-linking may underestimate the total binding space of any given TF.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation (ChIP) studies reliant on formaldehyde cross-linking may underestimate the total binding space of any given TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that formaldehyde fixation causes TF exclusion from mitotic chromosomes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "7b15749a-11dc-4642-891a-2e36db94a439",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C99",
+      "claim": "Studies designed to measure the dynamics of TFs through time-course cross-linked chromatin immunoprecipitation experiments may be susceptible to formaldehyde-based artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, studies designed to measure the dynamics of TFs through time-course cross-linked chromatin immunoprecipitation experiments (Lickwar et al., 2012) may be susceptible to formaldehyde-based artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the finding that formaldehyde fixation causes TF exclusion and speculative reasoning about implications for ChIP experiments",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b05dbc5b-8d4d-4387-91f0-0bb686b7cdd2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C100",
+      "claim": "Previous examples of limitations in ChIP due to formaldehyde have been documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous examples of this limitation in ChIP have been documented (Schmiedeberg et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schmiedeberg et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "f978af00-c9be-4e84-b278-81cfbbf0e21d",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C101",
+      "claim": "Formaldehyde molecules rapidly cross-link to the nearest protein as they cross the cell membrane, resulting in a cross-linking gradient that moves from the cell membrane inward.",
+      "claim_type": "EXPLICIT",
+      "source": "Formaldehyde molecules rapidly cross-link to the nearest protein as they cross the cell membrane, resulting in a cross-linking gradient that moves from the cell membrane inward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanistic model based on chemical properties of formaldehyde and observed effects",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "0230a230-79aa-43b1-95cd-fadbd6b05e78",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C102",
+      "claim": "The advancing gradient of cross-linking would result in depletion of cytoplasmic TF molecules as they are cross-linked first, reducing the effective kon rates.",
+      "claim_type": "EXPLICIT",
+      "source": "The advancing gradient of cross-linking would result in depletion of cytoplasmic TF molecules as they are cross-linked first, reducing the effective kon rates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanistic model based on the cross-linking gradient hypothesis",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "acf1ff7d-8787-463c-9b00-a83ddc08b1fa",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "claim_id": "C103",
+      "claim": "Most TFs have a residence time of under 20 s and are thus quite dynamic even during interphase.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that recent studies have shown, using live-cell single molecule tracking and FRAP experiments, that most TFs have a residence time of under 20 s and are thus quite dynamic even during interphase (Chen et al., 2014; Elf et al., 2007; Gebhardt et al., 2013; Mueller et al., 2008; Swinstead et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen et al., 2014; Elf et al., 2007; Gebhardt et al., 2013; Mueller et al., 2008; Swinstead et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "14b061fc-3639-434a-a41d-8dba71eebd5f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sox2 associates with mitotic chromosomes through biochemical fractionation and salt fractionation assays, showing a qualitatively weaker association compared to interphase chromatin. TBP also fractionates with mitotic chromosomes while Pol II does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 are supported by biochemical fractionation (Figure 1A, Figure 1\u2014figure supplement 2) and salt fractionation data (Figure 1B). The interpretation that Sox2 associates more weakly with mitotic chromosomes is based on reduced signal in digested chromatin fractions. The experimental approach is appropriate and the data directly support the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "531463c0-13a4-4f3f-b012-fea03830f712",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sox2 appears excluded from mitotic chromosomes in fixed cells but is highly enriched on mitotic chromosomes throughout all mitotic stages when imaged live, revealing that the previously reported exclusion is a fixation artifact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C12 are strongly supported by direct comparison of fixed versus live-cell imaging (Figures 1C-H). The use of both overexpressed and endogenously-tagged Sox2 (C8, C9) strengthens the conclusion. Quantitative analysis (C12, Figure 1H) demonstrates the switch from enrichment to exclusion upon fixation. This is a central finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "99f8edde-93aa-4117-a442-d5b8978a76d0",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Most tested transcription factors (Oct4, Esrrb, Klf4, Sp1, Foxo1, Foxo3a) are enriched on mitotic chromosomes under live-cell conditions but appear excluded after fixation. Only Stat3 and Hsf1 are excluded under live conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are supported by systematic live versus fixed imaging of multiple TFs (Figure 1I, Figure 1\u2014figure supplement 4). The finding that most TFs show enrichment in live cells but exclusion after fixation is consistent across multiple factors. The exceptions (Stat3, Hsf1) are appropriately noted and explained by their known requirement for external signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "34709355-4cdb-4669-b94c-6194f558e1e8",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The widely accepted exclusion of transcription factors from mitotic chromosomes, established over decades of research, may be largely founded on a fixation artifact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 is a major interpretive conclusion supported by the systematic demonstration that fixation causes TF exclusion (C7-C18). The claim appropriately references prior literature (C59, C69) showing TF exclusion was based on fixed cell studies. While bold, this conclusion is logically supported by the presented data showing the artifact is general across multiple TFs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "83df15a8-2cd1-4ab3-918e-8b425258966b",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The HMG domain of Sox2 is sufficient for mitotic chromosome localization, and both DNA binding and nuclear localization signals are necessary for mitotic enrichment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by domain deletion and point mutation experiments (Figure 2B). The TAD deletion (C20, C21) and DNA binding mutations (C22, C23) show clear loss of enrichment. The NLS mutation result (C24) is more complex as it could affect DNA binding, but is supported by additional experiments with isolated NLS sequences (C26-C28).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b8f73ec0-0f19-4257-b966-e6b98a482844",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A functional nuclear localization signal is sufficient to enrich proteins on mitotic chromosomes, and both sequence-specific DNA binding and active nuclear import contribute to TF enrichment on mitotic chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by experiments showing SV-40 NLS enriches HaloTag on mitotic chromosomes while plant NLS does not (Figure 2C). This demonstrates specificity for functional nuclear import machinery. The conclusion (C29) that both DNA binding and nuclear import contribute is well-supported by the combined evidence from Sox2 mutants and NLS experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "7ac1b939-effa-4ceb-b584-328af1489f75",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sox2 recovery after photobleaching is faster in mitotic cells (4.3 s to 90% recovery) than in interphase (19.7 s), indicating more dynamic interaction with mitotic chromosomes compared to interphase chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by FRAP data (Figure 3B-C) with appropriate controls (Halo-NLS). The quantitative measurements are clearly presented with error bars. The conclusion that Sox2 interaction is more dynamic in mitosis is directly supported by the faster recovery times. Sample sizes (n=30) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "34144aa5-fddf-417f-8137-ead47440983c",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single particle tracking reveals that Sox2 residence time in mitosis is 54% of interphase, and the bound fraction decreases from 30.9% in interphase to 18.3% in mitosis, indicating fewer bound molecules with faster off-rates during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by single particle tracking data (Figure 3D-E). The residence time measurements (C34) are corrected for photobleaching using H2B-Halo controls. The bound fraction analysis (C35) uses appropriate modeling of jump length distributions. The conclusion (C36) logically follows from the combined SPT data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The TAD domain stabilizes Sox2 interactions with interphase chromatin through protein-protein interactions during transcriptional activation. In mitosis, when transcription is shut off, Sox2 dynamics resemble the HMG domain alone, suggesting Sox2 behavior during mitosis is dominated by DNA binding and 3D diffusion rather than TAD-mediated stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by FRAP data showing Sox2 HMG has similar recovery times in both interphase and mitosis, matching full-length Sox2 in mitosis (Figure 3B-C). The interpretation that TAD-mediated stabilization is lost in mitosis due to transcriptional shutdown is logical and supported by the data. The model (C88) is well-reasoned based on the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "66d7e23d-6b64-479c-8294-48d7398e5872",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ATAC-seq analysis reveals that global DNA accessibility is maintained in mitotic chromosomes, with nearly identical Tn5 integration patterns, peak intensities (R\u00b2=0.991, slope=0.965), and fragment length distributions between asynchronous and mitotic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are strongly supported by comprehensive ATAC-seq analysis (Figure 4). The quantitative comparisons show high concordance between asynchronous and mitotic samples. Linear regression analysis (C45) provides strong statistical support. The conclusion that DNA accessibility is maintained (C46, C82) is well-supported by the data, though the interpretation that condensation has \"little effect\" may be slightly overstated given some quantitative differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "At Sox2 binding sites, ATAC-seq integration density in mitosis is ~60% of asynchronous cells, but footprinting analysis shows nearly identical patterns, suggesting Sox2 can sample binding sites equally well in mitosis despite reduced residence time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 are supported by ATAC-seq analysis at Sox2 binding sites (Figure 5). The decreased integration density (C48) is appropriately interpreted as reflecting reduced residence time rather than decreased accessibility. The footprinting analysis (C50) provides strong evidence that Sox2 can access binding sites in mitosis. The model (C52) integrating FRAP and ATAC-seq data is well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "412e964f-12bc-4051-928f-9d7878d8708f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Time-lapse imaging during fixation reveals that Sox2 is rapidly evicted from mitotic chromosomes in a dose-dependent manner, with visible reduction within 10 seconds of PFA addition. This supports a model where formaldehyde creates a cross-linking gradient from the membrane inward, depleting cytoplasmic TFs and reducing effective kon rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 are supported by time-lapse imaging during fixation (Figure 6A-B). The dose-dependent effect (C54) supports the proposed mechanism. However, the mechanistic model (C101-C102) is speculative and not directly tested. While the model is plausible and consistent with the observations, it remains a hypothesis requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "b78b680d-1eeb-48fc-9be1-e9d0d484b532",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TBP is resistant to PFA-induced mis-localization compared to dynamic factors like Halo-NLS, and high-pressure freezing followed by freeze substitution partially rescues Sox2 localization on mitotic chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by imaging data (Figure 6C-D). The differential susceptibility based on TF dynamics (C55) supports the proposed mechanism. The HPF-FS partial rescue (C57) provides additional evidence that the artifact is related to the fixation process. However, the HPF-FS rescue is only partial, suggesting additional complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "148d45cb-83d7-4b69-a6b8-fc597aa3c1c2",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The synchronization strategy achieves ~95% pure mitotic population, and endogenously-tagged Halo-Sox2 KI cells maintain pluripotency with all Sox2 molecules containing the HaloTag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by flow cytometry (Figure 1\u2014figure supplement 1), Western blot (Figure 1\u2014figure supplement 3A), and teratoma assay data (Figure 1\u2014figure supplement 3C). These are important methodological validations ensuring the quality of the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "43ab1570-7b9a-4614-95b7-8d718fe65dcc",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Single particle tracking reveals that during interphase, ~70% of Sox2 molecules are diffusing while 30% are bound, and during mitosis, ~82% are freely diffusing while 18% are bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C85 are supported by fast-tracking SPT data (Figure 3E). The measurements use appropriate modeling of jump length distributions. The values are internally consistent (30% bound in interphase, 18% bound in mitosis equals 82% free). Sample sizes (n=24 cells) are adequate for SPT experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The maintained Ran-GTP gradient during mitosis may facilitate active nuclear import to mitotic chromosomes, potentially serving to accumulate high local concentrations of TFs near chromosomes and maintain DNA accessibility. Most TFs can interact with mitotic chromosomes and function as general mitotic bookmarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C93 appropriately cite prior literature on the Ran-GTP gradient and nuclear import. However, claims C94-C96 are largely speculative. While the model is plausible and consistent with the data showing NLS-dependent enrichment, the proposed functions (C94, C95) are not directly tested. The conclusion that most TFs function as \"general mitotic bookmarkers\" (C96) is a strong interpretive claim that extends beyond the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "88649a88-2653-4674-8526-84d48a1acf6f",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "ChIP studies reliant on formaldehyde cross-linking may underestimate TF binding and be susceptible to artifacts, particularly in time-course experiments designed to measure TF dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C99 are logical inferences from the demonstrated fixation artifact, but are not directly tested in this manuscript. The implications for ChIP experiments are speculative, though plausible. Claim C100 appropriately cites prior documentation of ChIP limitations. These claims represent important discussion points but lack direct experimental support in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    },
+    {
+      "id": "409cd78f-aed3-48a8-a70e-b786de83acba",
+      "content_id": "c9f30bce-a18f-4ac4-9fbe-c258522f1e12",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The manuscript appropriately contextualizes findings within prior literature on mitotic transcription, chromosome condensation, TF dynamics, and mitotic bookmarking, including studies on HMGB proteins, GATA1, FoxA1, and other factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent appropriate citations to prior literature that contextualize the current findings. The citations appear accurate and relevant. The manuscript appropriately acknowledges prior work showing some TFs remain bound during mitosis (e.g., GATA1, C73-C75) while challenging the general model of TF exclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:43:07.404048Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "62bff25d-9b13-486f-80ee-c9ae361fb379",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "43b517cf-cc55-4ca9-be11-be132bab2081",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "c585ce23-45df-4675-8bc1-ff55d981350c",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "97adaf3b-5838-4be1-9df1-f6dd4ac55685",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "80289a05-1e2e-4869-b838-e45a1e7f8ed6",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "b5c084bf-51f1-43e3-b8a1-4096a9155508",
+      "result_id": "14b061fc-3639-434a-a41d-8dba71eebd5f"
+    },
+    {
+      "claim_id": "174dc674-f52d-4c2a-ac5a-036ecf5177df",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "201260cd-9b09-49b3-90b6-f95d75731ccf",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "8dd03272-2364-463d-b58d-32e149fdc579",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "968c7b63-1727-4a00-86fd-812bf10825cc",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "b8484ce0-9087-41f8-b141-42c40cc578a5",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "df032c06-ca53-40d7-ab3c-b92932715c04",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "f8d1613e-6d95-4aac-88c6-91c4026a7810",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "9c27d937-e84a-449b-a366-b92f72966c15",
+      "result_id": "531463c0-13a4-4f3f-b012-fea03830f712"
+    },
+    {
+      "claim_id": "3409e35f-288e-45e1-9987-c4d49f73f406",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "e84c7ee0-feb7-43a3-baa6-23339c827e29",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "23c5d0e8-62cc-485c-b852-8657d8a78ec3",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "ad71364a-61ff-4b0f-beef-efff92c28fae",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "8949ade3-ad18-4539-b710-bffdf8d5b7c1",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "fb64ddc3-f5d2-4e78-996e-c17223274a7d",
+      "result_id": "99f8edde-93aa-4117-a442-d5b8978a76d0"
+    },
+    {
+      "claim_id": "3dd15536-67cc-482a-bbce-13380fb3127d",
+      "result_id": "34709355-4cdb-4669-b94c-6194f558e1e8"
+    },
+    {
+      "claim_id": "958ef751-08fa-4975-8e62-5786db507ed2",
+      "result_id": "34709355-4cdb-4669-b94c-6194f558e1e8"
+    },
+    {
+      "claim_id": "6dd3c19a-c870-4b8f-b3a8-efbf65504826",
+      "result_id": "34709355-4cdb-4669-b94c-6194f558e1e8"
+    },
+    {
+      "claim_id": "84c1b0f3-4fad-467b-8c9d-80b511170fb4",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "2a85f9f1-5fc5-48bd-ab5c-c0200d6d55ae",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "753baf5e-3839-4d0c-9564-8d5f6eea1ac6",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "b14fc151-944a-4f6a-81f6-0954d0b8c6f3",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "b2d5cfe9-23e4-49f0-a453-2b4d403dd3aa",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "496ef692-e0d2-43d1-883a-cf8c8edf5694",
+      "result_id": "83df15a8-2cd1-4ab3-918e-8b425258966b"
+    },
+    {
+      "claim_id": "baae8b53-cba7-44c6-a556-e650b77f377c",
+      "result_id": "b8f73ec0-0f19-4257-b966-e6b98a482844"
+    },
+    {
+      "claim_id": "fdb1fb10-2db2-404d-8b65-bf6e2cc3d440",
+      "result_id": "b8f73ec0-0f19-4257-b966-e6b98a482844"
+    },
+    {
+      "claim_id": "c07c0b99-0522-469b-8aee-14b3c86bb536",
+      "result_id": "b8f73ec0-0f19-4257-b966-e6b98a482844"
+    },
+    {
+      "claim_id": "d212dfd8-f9b3-4532-b0c5-34c5ed71d7f8",
+      "result_id": "b8f73ec0-0f19-4257-b966-e6b98a482844"
+    },
+    {
+      "claim_id": "8fe8b07e-d016-4214-ae76-5a6de149087c",
+      "result_id": "b8f73ec0-0f19-4257-b966-e6b98a482844"
+    },
+    {
+      "claim_id": "88fd0af6-28c0-4cb0-bc79-5d7c493a81f8",
+      "result_id": "7ac1b939-effa-4ceb-b584-328af1489f75"
+    },
+    {
+      "claim_id": "64cedb25-5630-43f6-a978-73ca0f95e2dd",
+      "result_id": "7ac1b939-effa-4ceb-b584-328af1489f75"
+    },
+    {
+      "claim_id": "d34d8b9a-6f76-4649-9e78-7763bbe5705f",
+      "result_id": "7ac1b939-effa-4ceb-b584-328af1489f75"
+    },
+    {
+      "claim_id": "b88f0486-a190-4f4a-9cc0-be305449cd91",
+      "result_id": "7ac1b939-effa-4ceb-b584-328af1489f75"
+    },
+    {
+      "claim_id": "854075c5-d297-4f71-8b69-fa441f8899c4",
+      "result_id": "7ac1b939-effa-4ceb-b584-328af1489f75"
+    },
+    {
+      "claim_id": "1f511e5e-face-43a9-be43-9d92d687f1c6",
+      "result_id": "34144aa5-fddf-417f-8137-ead47440983c"
+    },
+    {
+      "claim_id": "13c0aac5-2071-46e2-a67c-00dd1961eed2",
+      "result_id": "34144aa5-fddf-417f-8137-ead47440983c"
+    },
+    {
+      "claim_id": "cac03a61-6287-4d93-8166-355c2f0cc086",
+      "result_id": "34144aa5-fddf-417f-8137-ead47440983c"
+    },
+    {
+      "claim_id": "d30b52d7-2ede-4b53-8dbc-4757d651909a",
+      "result_id": "34144aa5-fddf-417f-8137-ead47440983c"
+    },
+    {
+      "claim_id": "4543043d-a886-42a4-9e22-dd6a581b8088",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "8aa2e9fa-b2ee-4271-8027-ec5b51549bbf",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "5a6e840c-1b0d-4ddd-bac3-37dffe39b44f",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "92a9530b-a700-4443-917c-32d41d6c0361",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "d5abf1cc-ffb6-4652-bcc4-1c1ff9d69623",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "3e41d96e-3dc5-4293-b923-6cde50950cc2",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "03b71507-52e4-4e0e-8fd4-a7c3cbb7fa58",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "66d3e64e-6cbf-4f16-9664-873cc79d5cc0",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "d7cf5f0d-767a-4efe-b653-f3310ef57b68",
+      "result_id": "915fe63c-6f39-40b1-b1f4-c5b6ac844fcf"
+    },
+    {
+      "claim_id": "0b50a7f0-9855-40b6-9a9f-033bc69c219c",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "206d8f47-f835-4275-99c5-a6c531417d55",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "b9419558-3174-4bd4-af72-338123489fb8",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "e83b23a2-e98b-426d-ae1e-fbc1df1fff4d",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "c446ea64-2d1e-497d-b1b5-0d57f952864e",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "9376ab0d-0e8e-44ae-af18-c3e1679ff3c3",
+      "result_id": "66d7e23d-6b64-479c-8294-48d7398e5872"
+    },
+    {
+      "claim_id": "ae40e624-970f-4473-a83e-79273b16a672",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "14c88006-33a2-453c-99e1-5e448daea45f",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "a9d0f1ae-6b97-44e9-8a25-6174546ce26e",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "33e25177-b452-4ed3-8d1b-5a3594551725",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "abc12e9f-9db7-4b29-93ae-8b86d2646b51",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "fb08eadf-e1f5-4424-b4ba-faa341f26c60",
+      "result_id": "45dd7b55-94c4-46ec-a744-a4d237b3edb1"
+    },
+    {
+      "claim_id": "0001844a-a276-4045-8db6-0baf6dc6f58a",
+      "result_id": "412e964f-12bc-4051-928f-9d7878d8708f"
+    },
+    {
+      "claim_id": "30143c25-ca36-4d51-a2e4-160110c7814d",
+      "result_id": "412e964f-12bc-4051-928f-9d7878d8708f"
+    },
+    {
+      "claim_id": "d7f3da84-c98a-43c5-8e6f-7c8242044431",
+      "result_id": "412e964f-12bc-4051-928f-9d7878d8708f"
+    },
+    {
+      "claim_id": "f978af00-c9be-4e84-b278-81cfbbf0e21d",
+      "result_id": "412e964f-12bc-4051-928f-9d7878d8708f"
+    },
+    {
+      "claim_id": "0230a230-79aa-43b1-95cd-fadbd6b05e78",
+      "result_id": "412e964f-12bc-4051-928f-9d7878d8708f"
+    },
+    {
+      "claim_id": "f68b2699-25eb-4b6d-bbbf-9e82888cb78e",
+      "result_id": "b78b680d-1eeb-48fc-9be1-e9d0d484b532"
+    },
+    {
+      "claim_id": "95429da7-8da1-4e48-b2ce-a38e87a462f4",
+      "result_id": "b78b680d-1eeb-48fc-9be1-e9d0d484b532"
+    },
+    {
+      "claim_id": "3bac4284-1bd8-4051-b570-2a82d434a08b",
+      "result_id": "b78b680d-1eeb-48fc-9be1-e9d0d484b532"
+    },
+    {
+      "claim_id": "d4f4dc20-073b-4382-8fba-c3e698d67681",
+      "result_id": "148d45cb-83d7-4b69-a6b8-fc597aa3c1c2"
+    },
+    {
+      "claim_id": "bd3756dd-d3fd-4bb4-bc10-4cb4225248e2",
+      "result_id": "148d45cb-83d7-4b69-a6b8-fc597aa3c1c2"
+    },
+    {
+      "claim_id": "0be79f65-4e48-45cb-bfaf-d84eedb2b994",
+      "result_id": "148d45cb-83d7-4b69-a6b8-fc597aa3c1c2"
+    },
+    {
+      "claim_id": "84e1c324-2a17-4c34-a1fb-224d8b572dcf",
+      "result_id": "43ab1570-7b9a-4614-95b7-8d718fe65dcc"
+    },
+    {
+      "claim_id": "ba72fdef-1ea9-4590-a102-d535594dc95d",
+      "result_id": "43ab1570-7b9a-4614-95b7-8d718fe65dcc"
+    },
+    {
+      "claim_id": "1c4aa582-a6ce-4707-8fa1-5ad7607247c1",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "235b7454-c539-4341-b181-72cdc40a6d98",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "b294158a-1a53-4655-8785-9c2d9e057966",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "3090003e-c110-4f79-a6c0-6f390ed75942",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "c3eca52b-dfd5-461c-b4f6-548722215d19",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "a18ead02-9b73-4455-94b1-1ad5476436d3",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "f27f2e10-57a2-42a6-b58a-1a09342ad02e",
+      "result_id": "1f2a9c5e-4109-4e65-97e4-9b03cf294a45"
+    },
+    {
+      "claim_id": "23b57b4e-5fe1-41a8-a91f-51db8d2893a3",
+      "result_id": "88649a88-2653-4674-8526-84d48a1acf6f"
+    },
+    {
+      "claim_id": "7b15749a-11dc-4642-891a-2e36db94a439",
+      "result_id": "88649a88-2653-4674-8526-84d48a1acf6f"
+    },
+    {
+      "claim_id": "b05dbc5b-8d4d-4387-91f0-0bb686b7cdd2",
+      "result_id": "88649a88-2653-4674-8526-84d48a1acf6f"
+    },
+    {
+      "claim_id": "9aaecbb9-b326-403d-9e22-b335630e065b",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "ac7cc28c-3448-49ee-bd9f-9576d56ecfdf",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "c5fb72bb-e7e1-4c99-92a8-773e1711879e",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "541fb969-925b-4237-a500-8d87cd6d84a7",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "bc65eb6f-8a51-45c0-ac2d-d682588dc818",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "ac52ac74-1109-4901-93b9-1913aea1d757",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "d4088f7d-6d53-48dc-93f2-bb596b7f85b5",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "30f4f0f0-fdea-49e1-8746-af65a94f2b72",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "78828d18-bc08-4c38-b88b-d21882c0e5fe",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "0773644c-fbac-41b6-b320-a67f9d2bc5c6",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "a4364458-6277-4be2-85bf-e27ee4ecf3bd",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "9f6f5370-82cb-4d48-8cce-1df27d1f0cf9",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "a509aaf7-6f52-4ad7-bcf7-48766d8f897a",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "220ae74f-491a-46d8-a5e3-7b132121dba8",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "cfadf96a-132b-4e18-8d9a-53f8c8560d7c",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    },
+    {
+      "claim_id": "acf1ff7d-8787-463c-9b00-a83ddc08b1fa",
+      "result_id": "409cd78f-aed3-48a8-a70e-b786de83acba"
+    }
+  ],
+  "comparisons": []
+}

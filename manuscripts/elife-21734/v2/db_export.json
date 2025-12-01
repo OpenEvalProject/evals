@@ -1,0 +1,2003 @@
+{
+  "submission": {
+    "id": "b86bfa26-c615-496f-bdd4-f70990329502",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:23:07.158483Z",
+    "updated_at": "2025-11-30T21:23:07.158483Z"
+  },
+  "content": [
+    {
+      "id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "submission_id": "b86bfa26-c615-496f-bdd4-f70990329502",
+      "content_type": "manuscript",
+      "content_text": "# Release-dependent feedback inhibition by a presynaptically localized ligand-gated anion channel\n\n## Authors\n\n- Seika Takayanagi-Kiya<sup>1</sup>\n- Keming Zhou<sup>1</sup>\n- Yishi Jin<sup>1</sup> ([ORCID: 0000-0002-9371-9860](https://orcid.org/0000-0002-9371-9860)) \u2020\n\n### Affiliations\n\n1. Section of Neurobiology, Division of Biological Sciences University of California, San Diego San Diego United States\n2. Howard Hughes Medical Institute University of California, San Diego San Diego United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPresynaptic ligand-gated ion channels (LGICs) have long been proposed to affect neurotransmitter release and to tune the neural circuit activity. However, the understanding of their in vivo physiological action remains limited, partly due to the complexity in channel types and scarcity of genetic models. Here we report that C. elegans LGC-46, a member of the Cys-loop acetylcholine (ACh)-gated chloride (ACC) channel family, localizes to presynaptic terminals of cholinergic motor neurons and regulates synaptic vesicle (SV) release kinetics upon evoked release of acetylcholine. Loss of lgc-46 prolongs evoked release, without altering spontaneous activity. Conversely, a gain-of-function mutation of lgc-46 shortens evoked release to reduce synaptic transmission. This inhibition of presynaptic release requires the anion selectivity of LGC-46, and can ameliorate cholinergic over-excitation in a C. elegans model of excitation-inhibition imbalance. These data demonstrate a novel mechanism of presynaptic negative feedback in which an anion-selective LGIC acts as an auto-receptor to inhibit SV release.\n\n## Introduction\n\nCys-loop Ligand-gated ion channels (LGICs) participate in rapid regulation of neurotransmission by changing the\u00a0plasma membrane conductance upon ligand binding (Keramidas et al., 2004). While LGICs at postsynaptic sites have been extensively studied in many neural circuits, our knowledge for LGICs acting at the presynaptic terminals remains fragmentary (Engelman and MacDermott, 2004; Rudomin and Schmidt, 1999). For example, classical electrophysiological recordings from cat spinal cord showed that activation of flexor afferent neurons caused decreased excitatory transmission of extensor afferent neurons onto extensor motor neurons (Eccles et al., 1961, 1963; Frank and Fuortes, 1957). This effect was blocked by picrotoxin, an antagonist of ionotropic GABA receptors, implying that GABAA receptors may be involved in inhibition of presynaptic release (Eccles et al., 1963). Ultrastructural studies later revealed that the extensor afferent neuron terminals receive axo-axonal connections from GABAergic interneurons that are activated by flexor afferent neurons (Pierce and Mendell, 1993; Destombes et al., 1996), suggesting the presence of GABA-gated LGICs in presynaptic axons. Electrophysiological recordings from crayfish opener muscles, which are innervated by excitatory and inhibitory motor neurons, also provided some evidence for the\u00a0function of presynaptic LGICs. It was shown that stimulation of inhibitory motor neurons caused decreased neurotransmission from excitatory motor neurons, and that statistical analysis of excitatory transmitter quanta suggested a likely presynaptic effect (Dudel and Kuffler, 1961). Addition of exogenous GABA at these neuromuscular junctions caused similar effects, which was relieved by picrotoxin (Takeuchi and Takeuchi, 1966, 1969), suggesting this presynaptic inhibition involves GABA-gated LGICs in the presynaptic axons. Studies in the past decades have subsequently identified several ionotropic glycine receptors and GABAA receptors acting in the presynaptic cells to regulate synaptic transmission in the mammalian central nervous system (Kullmann et al., 2005; Engelman and MacDermott, 2004). However, despite substantial molecular characterizations, there remains a large gap in our knowledge concerning the type and the\u00a0subcellular specificity of presynaptic LGICs with respect to their physiological roles in tuning neuronal communication.\n\nIn C. elegans locomotor circuit, acetylcholine provides major excitatory inputs to the body wall muscles (Richmond and Jorgensen, 1999). Studies of cholinergic transmission at the neuromuscular junctions have identified conserved molecules and elucidated mechanisms regulating fast neurotransmitter release (Rand and Nonet, 1997; Richmond, 2005). Upon Ca2+ influx under stimulation, docked synaptic vesicles fuse with the\u00a0plasma membrane through rapid action involving synaptotagmins, soluble N-ethylmaleimide\u2013sensitive factor attachment protein receptor (SNARE) proteins, and voltage-gated calcium channels. C. elegans genome encodes a large number of LGICs, many of which are known or predicted to be responsive to acetylcholine (Hobert, 2013; Jones and Sattelle, 2008), but whether they regulate SV release at presynaptic terminals is not known. Here, we report in vivo evidence for the ligand-gated anion channel LGC-46 (Ligand Gated ion Channel -46) in regulating SV release kinetics as a presynaptic auto-receptor. LGC-46 localizes close to SV release sites in cholinergic motor neurons. Loss of lgc-46 specifically affects the decay phase, but not the rise phase, of evoked release to cause prolonged neurotransmitter release, without altering endogenous neuronal activity. Gain-of-function of LGC-46, caused by a missense mutation in the pore-lining transmembrane domain, accelerates decay kinetics to dampen synaptic transmission. We further show that LGC-46-mediated presynaptic inhibition ameliorates the seizure phenotype of a C. elegans mutant that displays excitation-inhibition imbalance in the locomotor circuit. Our results reveal a mechanism by which a presynaptic terminal-localized anion LGIC acts in a rapid feedback inhibition of neural activity.\n\n## Results\n\n### LGC-46 localizes to presynaptic terminals of cholinergic motor neurons\n\nlgc-46 is a member of the acetylcholine gated chloride (ACC) channel subfamily in C. elegans (Figure 1\u2014figure supplement 1A\u2013C) (Putrenko et al., 2005). ACC channels are Cys-loop LGICs, and their pore-lining transmembrane region of this family has extensive homology to GABA- and glycine-gated chloride channels (Figure 1A). Members of the family show selective response to acetylcholine and conduct anions when expressed in Xenopus oocytes (Putrenko et al., 2005; Ringstad et al., 2009).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig1-v2.jpg)\n\n**Figure 1.:** (A) Alignment of TM2 of LGC-46 with other anion channels. * marks Met314, which is mutated to Ile in LGC-46(ju825). \u00a7 marks PAR motif, a signature of ionotropic anion channels. (B\u2013F) LGC-46::GFP localizes to presynaptic terminals of cholinergic motor neurons. (B) Left panel shows a schematic of a cholinergic motor neuron in L1 animals. Right panel shows a confocal image of LGC-46::GFP from Punc-17\u03b2-LGC-46(WT)::GFP(juSi295)IV showing punctate localization in the dorsal nerve cord. (C)\u00a0Left panel shows a schematic of DA9 cholinergic motor neuron in the tail of L4 animals. Right panel shows LGC-46::GFP expressed in DA9 neuron, from Pitr-1-LGC-46(WT)::GFP(juEx6843), showing punctate localization in the dorsal axon. (B,\u00a0C): Ax: Axon. D: Dendrite. (D, E) LGC-46::GFP colocalizes with active zone protein UNC-10/RIM and synaptic vesicles in cholinergic motor neurons. Images of dorsal nerve cord are shown above, linescan analyses of fluorescent signal intensities below. (D) Conformal images of anti-GFP for LGC-46 (green) and anti-UNC-10 (red) from an animal carrying Punc-17\u03b2-LGC-46(WT)::GFP(juSi295)IV. (E) Presynaptic protein mCherry::RAB-3 expressed in cholinergic motor neurons overlapped with LGC-46::GFP signals. Images are from Punc-17\u03b2-LGC-46(WT)::GFP(juSi295)IV; Pacr-2-mCherry::RAB-3(juEx7053). Scale bar: 5 \u00b5m. (F) Mander\u2019s overlap coefficient showing the extent of pixel colocalization of LGC-46 and preaynaptic marker protein signals (open bar). As negative controls, Mander\u2019s overlap coefficient from shuffled images are shown (Filled bar). n\u00a0=\u00a010 per genotype. Data shown as mean \u00b1 SD. Statistics: one way ANOVA followed by Tukey\u2019s post-hoc test. ***p<0.001.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gene and protein structure of lgc-46. The\u00a0positions of the deletion alleles and the M314I mutation described in the text are noted. ok2900 removes TM2 and TM3 and generates a premature stop codon, and ok2949 generates an in-frame deletion which removes TM3. Arrows indicate the position of the\u00a0primers used to amplify cDNA. Four transmembrane domains and the sites of mutations are noted in protein structure as well. For protein localization analysis, GFP was inserted at the cytoplasmic loop between TM3 and TM4. (B) Phylogenetic tree of LGICs shows that LGC-46 is a member of the ACC family of proteins from C. elegans (ACC-1 to ACC-4, LGC-46 to LGC-49). Generated by ClustalX2 using the neighbor-joining method (Larkin et al., 2007). (C) Amino acid sequence alignment of the\u00a0Cys-loop region, and regions corresponding to the ligand-binding loops of nAChR. (D) (Left) Illustration of Plgc-46 transcriptional reporter. (Right) Plgc-46-GFP expression in a L4 animal is seen in the nervous system including the ventral nerve cord. (E) Expression of Plgc-46-GFP overlaps with cholinergic motor neuron-specific (Punc-17-mCherry) and GABAergic motor neuron-specific (Pttr-39-mCherry) markers.\n\nTo dissect the function of lgc-46, we first determined its cellular expression using a transcriptional reporter, and observed a broad expression in the nervous system, including motor neurons (Figure 1\u2014figure supplement 1D). Co-expression of Plgc-46-GFP with markers for cholinergic (Punc-17-mCherry) and GABAergic (Pttr-39-mCherry) neurons revealed that lgc-46 was strongly expressed in cholinergic motor neurons, and weakly expressed in GABAergic motor neurons (Figure 1\u2014figure supplement 1E). To examine the subcellular localization of LGC-46 in cholinergic motor neurons, we generated functional LGC-46::GFP, in which GFP was inserted in-frame in the cytoplasmic loop between TM3 and TM4 (Figure 1\u2014figure supplement 1A, and later), and expressed the transgene as a single-copy insertion (Supplementary file 1). In the\u00a0first larval (L1) stage animals, cholinergic motor neurons form synapses onto dorsal body wall muscles (Sulston, 1976; White et al., 1978), and we observed LGC-46::GFP only in the dorsal nerve cords (Figure 1B). We also expressed LGC-46::GFP in a single cholinergic motor neuron DA9, which synapses onto dorsal body wall muscles, and found LGC-46::GFP was detected only in the dorsal side of L4 and adult animals (Figure 1C). These results indicate that LGC-46 primarily localizes to the axonal compartment of cholinergic motor neurons.\n\nTo determine if the punctate pattern of LGC-46::GFP corresponded to presynaptic terminals, we co-immunostained LGC-46::GFP together with endogenous active zone protein RIM/UNC-10 (Figure 1D). LGC-46::GFP displayed a high degree of overlap with UNC-10. Quantitative analyses of colocalization indicate that LGC-46 localizes to the release sites of synaptic vesicles (SVs) (Figure 1F). Additionally, we found that LGC-46::GFP showed co-localization with a synaptic vesicle marker mCherry::RAB-3 expressed in cholinergic motor neurons (Figure 1E\u2013F). To our knowledge LGC-46 is the first reported LGIC localized to presynaptic terminals in C. elegans.\n\n### Loss of LGC-46 function prolongs synaptic transmission dependent on evoked acetylcholine release\n\nTo analyze the function of lgc-46, we examined two genetic deletion alleles ok2900 and ok2949, both predicted to result in non-functional proteins (Figure 1\u2014figure supplement 1A), and hereafter designated lgc-46(0). Cholinergic synapse morphology and density in lgc-46(0) mutants were comparable to those in wild type (Figure 2\u2014figure supplement 1A\u2013B), and lgc-46(0) animals displayed normal growth, reproduction and locomotion. We assessed cholinergic transmission at the neuromuscular junction using pharmacological assays (Mahoney and Luo, 2006). lgc-46(0) animals were hypersensitive to aldicarb, an inhibitor of acetylcholine esterase, while they showed normal sensitivity to levamisole, an agonist for the postsynaptic acetylcholine receptors on muscles (Figure 3\u2014figure supplement 1A\u2013B). The hypersensitivity to aldicarb was rescued by specific expression of LGC-46 in cholinergic motor neurons (Figure 3\u2014figure supplement 1A), suggesting that LGC-46 likely represses cholinergic motor neuron activities.\n\nTo directly examine how LGC-46 regulates synaptic vesicle release, we next performed electrophysiological recordings on muscle cells (Figure 2). Evoked excitatory post-synaptic currents (eEPSCs) represent depolarization-triggered simultaneous release of hundreds of SVs, and the kinetics of the rise and decay phase of eEPSC reflect the onset and duration of SV release, respectively. We found that the amplitude of eEPSCs in lgc-46(0) animals was comparable to that in wild type (Figure 2A,C). The rise phase of eEPSCs was similar to wild type, suggesting the onset of evoked cholinergic transmission is not affected (Figure 2B,D). However, the analysis of release kinetics revealed that eEPSCs in lgc-46(0) were prolonged and displayed a significantly slower decay than that of wild type. We calculated the cumulative charge transfer during SV release. In wild type, the cumulative charge transfer during evoked release of SVs showed a burst within 15 ms after stimulation, and a slower sustained increase afterwards. The slower decay of eEPSCs in lgc-46(0) mutants led to a significant increase in cumulative charge transfer (Figure 2E). Specifically, lgc-46(0) mutants displayed a normal early phase of SV release (21.33\u00a0\u00b1\u00a02.50 pC, compared to 18.41\u00a0\u00b1\u00a01.68 pC in wild type), but exhibited a large increase in the late phase (18.06\u00a0\u00b1\u00a02.19 pC, compared to 11.35\u00a0\u00b1\u00a01.35 pC in wild type). Both the slow decay of eEPSCs and the increased late phase of SV release were rescued by expression of LGC-46 in cholinergic motor neurons (Figure 2A\u2013E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig2-v2.jpg)\n\n**Figure 2.:** (A and B) Average traces (A) and normalized average traces (B) of eEPSCs. (C) Mean amplitude of eEPSCs. (D) Rise tau and decay tau of eEPSCs. (E) Average traces of cumulative charges of eEPSCs, and charge transfers after stimulation. (F) Representative traces, mean frequency and mean amplitude of endogenous EPSCs. wild type (n\u00a0=\u00a011), lgc-46(ok2900) (n\u00a0=\u00a010), and lgc-46(ok2900); PACh-LGC-46 (n\u00a0=\u00a011). Animals were recorded at 20 degrees in 1.2 mM Ca2+ bath solutions. Statistics, one-way ANOVA, Bonferroni\u2019s post hoc test. *p<0.05. Error bars indicate SEM.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative images of mCherry::RAB-3 puncta in the dorsal nerve cord from each genotype. Scale bar: 5 \u03bcm. (B) Quantification of the puncta density and width show no significant differences between the wild type, lgc-46(ok2900) and lgc-46(ju825gf) backgrounds. Data shown as mean \u00b1 SEM, n\u00a0=\u00a06 animals (20 \u03bcm per animal) per genotype. Scale bar: 5 \u03bcm. (CD) 25%\u201375% rise time (C) and 75%\u201325% decay time (D) of endogenous EPSCs. n\u00a0=\u00a010 to 12 for all animals. Statistics, one way ANOVA and Bonferroni\u2019s post hoc test. Error bars indicate SEM.\n\nTo distinguish the presynaptic or postsynaptic contribution underlying the kinetic change, we recorded endogenous EPSCs in muscle cells, triggered by the\u00a0spontaneous SV release from cholinergic motor neurons. The frequency of endogenous EPSCs in lgc-46(0) mutants was comparable to that in wild type (Figure 2F), indicating that cholinergic transmission in the resting condition was not affected. The amplitude and kinetics of endogenous EPSCs were normal in lgc-46(0) mutants (Figure 2F; Figure 2\u2014figure supplement 1C\u2013D), confirming that the slow decay of evoked release was not due to altered kinetics of postsynaptic receptor response on muscles. As LGC-46 resides in the presynaptic terminals of cholinergic motor neurons, these data support a conclusion that LGC-46 acts as an auto-receptor to inhibit presynaptic activities upon synaptic vesicle release.\n\n### A missense mutation in TM2 of LGC-46 causes gain-of-function and ameliorates cholinergic over-excitation\n\nCholinergic motor neurons express the ACR-2 ACh-gated cation channel in their dendrites and soma (Jospin et al., 2009; Qi et al., 2013). We previously characterized an acr-2(gf) mutation that contains a missense mutation in the transmembrane domain 2, similar to those found in CHNR2B of human epilepsy patients (Phillips et al., 2001). ACR-2(gf) increases channel activity and causes hyperactivity of cholinergic motor neurons. acr-2(gf) animals show distinctive spontaneous convulsions, due to\u00a0an altered ratio of excitation and inhibition in the locomotor circuit (Jospin et al., 2009; Qi et al., 2013; Stawicki et al., 2013). By screening for suppressors of the acr-2(gf) convulsion behavior (see Materials and methods), we isolated a lgc-46(ju825) mutation that strongly suppressed the convulsion of acr-2(gf) (Figure 3A). We determined that the lgc-46(ju825) mutation causes a substitution of methionine to isoleucine (M314I) in the pore-lining transmembrane TM2 domain (Figure 1A). lgc-46(0) did not show significant effects on acr-2(gf) convulsion (Figure 3A). In addition, transgenic overexpression of LGC-46(M314I), but not LGC-46(WT), driven by lgc-46 promoter strongly suppressed acr-2(gf) convulsion. These data indicate that lgc-46(ju825) is a gain-of-function mutation, designated as lgc-46(gf) hereafter.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig3-v2.jpg)\n\n**Figure 3.:** (A) Quantification of convulsion frequencies. lgc-46(ju825), but not lgc-46(0), suppresses acr-2(gf) convulsions. Overexpression of LGC-46(M314I) under its own promoter also strongly suppresses convulsion. Data shown as mean \u00b1 SEM; n\u00a0\u2265\u00a016. (B) Overexpression of LGC-46(M314I) in cholinergic motor neurons can suppress acr-2(gf) convulsions. Data shown as mean \u00b1 SEM; n\u00a0\u2265\u00a016. Promoters used to drive expression are, Prgef-1 for neurons, Punc-17\u03b2for cholinergic motor neurons, Punc-25 for GABAergic motor neurons, Pmyo-3 for muscles (See Supplementary file 1,2). (A and B) Statistics: one-way ANOVA followed by Dunnett\u2019s post-hoc test. **p<0.01, ***p<0.001. (C) (Top) Amino acid sequences of LGC-46 wild type, M314I, and PAR motif mutant M314I. (Bottom) Convulsion frequencies of each genotype are shown. Cholinergic motor neuron-specific expression of LGC-46(M314I) suppresses acr-2(gf) convulsions, whereas the PAR motif mutant LGC-46(P301\u0394 A302E M314I) does not. Data shown as mean \u00b1 SEM; n\u00a0=\u00a024, 16, 16, respectively. Statistics: one way ANOVA followed by Dunnet\u2019s post-hoc test. *p<0.05, ***p<0.001. (D) Off-food velocities for each genotype. Statistics: one-way ANOVA followed by Bonferroni\u2019s post-hoc test. Data shown as mean \u00b1 SEM. **p<0.01, ***p<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) lgc-46(ok2900) is hypersensitive to aldicarb hypersensitivity, which is suppressed by cholinergic motor neuron-specific expression of functional LGC-46::GFP. (B) lgc-46(0) alleles do not affect levamisole sensitivity. (C,D) lgc-46(M314I) partially suppresses the aldicarb hypersensitivity (C) but not levamisole hypersensitivity (D) of acr-2(gf). Results are from three independent trials. n\u00a0=\u00a015 for one group per trial. Mean rate of paralysis at each time point are shown. Error bars indicate SEM. Statistics: **: p<0.01, *: p<0.05 by two-way ANOVA and Bonferroni post-hoc test.\n\nBy expressing lgc-46 in a cell-type specific manner, we found that pan-neuronal and cholinergic LGC-46(M314I) expression suppressed acr-2(gf) convulsions whereas its expression in muscles or GABAergic motor neurons had no effect (Figure 3B). acr-2(gf) shows hypersensitivity to both aldicarb and levamisole (Jospin et al., 2009). lgc-46(ju825) partially suppressed the aldicarb hypersensitivity, but not the levamisole sensitivity of acr-2(gf) (Figure 3\u2014figure supplement 1C\u2013D), suggesting that lgc-46(ju825) likely affects presynaptic activity of cholinergic neurons. Consistently, expression of LGC-46(M314I) in cholinergic motor neurons also fully suppressed the aldicarb hypersensitivity of lgc-46(0) (Figure 3\u2014figure supplement 1A). These data show that lgc-46 acts cell-autonomously to suppress cholinergic neuron activities.\n\nLGC-46 is predicted to be an anion-conducting channel, and the presence of the PAR motif preceding TM2 is crucial for ion selectivity (Galzi et al., 1992; Keramidas et al., 2000; Jensen et al., 2005). To address if anion selectivity of LGC-46(M314I) is required for its activity, we generated mutations in the PAR motif by deleting P301 and replacing A302 with glutamate (Figure 3C). When expressed in cholinergic motor neurons, PAR-mutant LGC-46(M314I) did not suppress acr-2(gf) convulsions (Figure 3C), consistent with LGC-46 acting as an anion-selective channel.\n\n### lgc-46(gf) accelerates the decay phase of synaptic transmission\n\nThe M314I mutation does not alter LGC-46 localization as functional GFP-tagged LGC-46(M314I) showed restricted expression at presynaptic terminals, similar to wild type (). We next investigated how LGC-46(M314I) alters the\u00a0presynaptic release by electrophysiological recordings. lgc-46(gf) mutants showed significantly reduced amplitudes of eEPSCs and release kinetics with much shorter decay phase compared to wild type, whereas the time constant of the rise phase of eEPSCs was not affected (Figure 4A\u2013D). Consequently, the charge transfer during eEPSCs was significantly reduced in lgc-46(gf) mutants, indicating the\u00a0inhibition of SV release (Figure 4E). We also recorded endogenous release and found that, similar to lgc-46(0), the amplitude and kinetics of endogenous EPSCs were not affected in lgc-46(gf) mutants (Figure 4F; Figure 4\u2014figure supplement 1G\u2013H). However, lgc-46(gf) significantly reduced the frequency of endogenous EPSCs, suggesting the\u00a0lower excitability in cholinergic motor neurons compared to wild type (Figure 4F). Expression of LGC-46(M314I) in lgc-46(0) mutant background mimicked the characteristics of reduced amplitude and shortened decay of evoked release from the lgc-46(gf) animals (Figure 4A\u2013F). These results suggest that LGC-46(M314I) can function as an overactive anion channel, thereby suppressing SV release more efficiently than wild type LGC-46.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig4-v2.jpg)\n\n**Figure 4.:** (A and B) Average traces (A) and normalized average traces (B) of eEPSCs. (C) Mean amplitude of eEPSCs. (D) Rise tau and decay tau of eEPSCs. (E) Average traces of cumulative charges of eEPSCs, and charge transfers after stimulation. (F) Representative traces, mean frequency and mean amplitude of endogenous EPSCs. wild type (n\u00a0=\u00a012), lgc-46(ju825gf) (n\u00a0=\u00a010), and lgc-46(0);Plgc-46-LGC-46(M314I) (n\u00a0=\u00a012). Animals were recorded at 20 degrees in 1.2 mM Ca2+ bath solutions. Statistics, one-way ANOVA, Bonferroni\u2019s post hoc test. ***p<0.001, **p<0.01, *p<0.05. Error bars indicate SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-D) Confocal images of animals expressing LGC-46(M314I)::GFP in cholinergic motor neurons. (A) (Left panel) Schematic of a cholinergic motor neuron in L1 animals. (Right panel) LGC-46(M314I)::GFP shows punctate localization on the dorsal process of cholinergic motor neurons of L1 animals. Images are from Punc-17\u03b2-LGC-46(M314I)(juSi282)IV. (B) (Left panel) Schematic of a cholinergic motor neuron DA9 in L4 animals. (Right panel) LGC-46(M314I)::GFP expressed in DA9 neuron shows punctate signals in the dorsal process in L4 animals, indicating their axonal localization. Images are from Pitr-1-LGC-46(M314I)::GFP(juEx6845). (C,D) Presynaptic proteins colocalize with LGC-46(M314I)::GFP in cholinergic motor neurons. Images taken from the\u00a0dorsal nerve cord are shown. Lower panels show the linescan of fluorescent signal intensities. (C) Anti-GFP and anti-UNC-10 signals from an animal carrying Punc-17\u03b2-LGC-46(M314I)(juSi282)IV. (D) Presynaptic protein mCherry::RAB-3 expressed in cholinergic motor neurons overlapped with LGC-46(M314I)::GFP signals. Images are from Punc-17\u03b2-LGC-46(M314I) (juSi282)IV; Pacr-2- mCherry::RAB-3(juEx7053). (E) Mander\u2019s overlap coefficient showing the extent of pixel colocalization of LGC-46 and preaynaptic marker protein signals (open bar). As negative controls, Mander\u2019s overlap coefficient from shuffled images are shown (Filled bar). For each genotype, 10 images were analyzed. Data shown as mean \u00b1 SD. Statistics: one way ANOVA followed by Tukey\u2019s post-hoc test. ***: p<0.001. (F) Single copy insertion allele Punc-17\u03b2-LGC-46(M314I)(juSi282)IV can significantly suppress the acr-2(gf) convulsion frequency. Data shown as mean \u00b1 SEM; n\u00a0=\u00a020, 16, 16, respectively. (G\u2013H) 25%\u201375% rise time (G) and 75%\u201325% decay time (H) of endogenous EPSCs. n\u00a0=\u00a010 to 12 for all animals. Statistics, one way ANOVA and Bonferroni\u2019s post hoc test. Error bars indicate SEM.\n\n### LGC-46 function requires ACC-4 that also localizes to presynaptic terminals\n\nSome ACC family proteins can form homomeric or heteromeric channels, which respond to acetylcholine when expressed in Xenopus oocytes (Putrenko et al., 2005). Similar studies of LGC-46 have not yet revealed ACh-gated channel activity (Joseph Dent, personal communication), or responsiveness to other neurotransmitters (Ringstad et al., 2009), suggesting that LGC-46 may require additional subunits or accessory factors to form a functional channel. To identify potential interacting partners, we took advantage of a behavioral phenotype of lgc-46(gf). These animals display a\u00a0curly body posture and slow locomotion (Figure 3D). Expression of LGC-46(M314I) under its own promoter in lgc-46(0) background mimicked the locomotion phenotypes, indicating that LGC-46(M314I) is responsible for the phenotype. We systematically examined null mutations in seven other ACC genes (acc-1 to acc-4 and lgc-47 to lgc-49) and observed that all single mutants showed grossly normal movement. We then made double mutants with lgc-46(gf), and found that acc-4(0) showed a specific suppression of the lgc-46(gf) phenotype such that double mutant animals regained normal locomotion (Figure 5\u2014figure supplement 1A). acc-4 was also required for the suppression of acr-2(gf) convulsion by lgc-46(gf) (Figure 5A). ACC-4 is expressed in all cholinergic motor neurons (Pereira et al., 2015). Transgenic expression of acc-4, driven by its own promoter, or of an acc-4 cDNA in cholinergic motor neurons rescued the effects of acc-4(0) in lgc-46(gf) acc-4(0); acr-2(gf) background (Figure 5A), indicating that both ACC-4 and LGC-46 function in the cholinergic motor neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig5-v2.jpg)\n\n**Figure 5.:** (A) Frequency of convulsion in animals of indicated genotypes. Loss of function in acc-4 reverses the suppression effect by lgc-46(ju825) on acr-2(gf). The\u00a0expression of acc-4(+) under the endogenous promoter or cholinergic motor neuron-specific promoter can rescue the effect. Data shown as mean \u00b1 SEM; n\u00a0\u2265\u00a016. Statistics: one way ANOVA followed by Dunnet\u2019s post-hoc test. **p<0.01, ***p<0.001. (BD) ACC-4::GFP localizes to presynaptic terminals of cholinergic motor neurons, similar to LGC-46::GFP. Images are from lgc-46(gf) acc-4(0); acr-2(gf); Punc-17b-acc-4::GFP(juEx7438). (B) Upper panel shows a schematic of a cholinergic motor neuron in L1 animals. The\u00a0lower panel shows a confocal image of ACC-4::GFP showing punctate localization in the dorsal nerve cord. (C) ACC-4::GFP colocalizes with active zone protein UNC-10/RIM. (D) Mander\u2019s overlap coefficient showing the extent of pixel colocalization of ACC-4 and UNC-10 (open bar) from immunostaining. As negative controls, Mander\u2019s overlap coefficient from shuffled images are shown (Filled bar). For each genotype, 10 images were analyzed. Data shown as mean \u00b1 SD. Statistics: Student\u2019s t-test. ***p<0.001. (E) The punctate localization of LGC-46 is maintained in the acc-4(ok2371) null mutants. (F and G) Average traces of evoked release (eEPSC) from wild type (n\u00a0=\u00a010), acc-4(0) (n\u00a0=\u00a010), lgc-46(gf) (n\u00a0=\u00a010), and lgc-46(gf);acc-4(0) (n\u00a0=\u00a010). (H) Mean amplitude of eEPSC. (I) Rise tau and decay tau of eEPSC. Animals were recorded at 17\u00b0C in 2 mM Ca+ bath solutions. Statistics, one-way ANOVA. Bonferroni\u2019s post hoc test for eEPSC comparisons. **p<0.01; *p<0.05. Error bars indicate SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21734/elife-21734-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Locomotion observed in double mutants of lgc-46(ju825gf) and acc group genes. (B) Gene and protein structure of acc-4. Arrows indicate the position of the\u00a0primers used to amplify cDNA. In ACC-4::GFP, the box filled with purple indicates the region where the GFP-tagged intracellular loop of LGC-46 was inserted.\n\nTo examine the localization of ACC-4, we generated a functional GFP-tagged ACC-4 using a chimeric approach, as direct tagging to the intracellular loop of ACC-4 impaired its function. We replaced the ACC-4 intracellular loop 3 with GFP-inserted intracellular loop 3 of LGC-46 (Figure 5\u2014figure supplement 1B). The resulting ACC-4::GFP protein produced a functional subunit, as its expression in cholinergic motor neurons resulted in suppression on the convulsion frequency of lgc-46(gf); acc-4(0); acr-2(gf) (Figure 5A). ACC-4::GFP showed axonal punctate localization at presynaptic terminals (Figure 5B\u2013D), similar to LGC-46::GFP. acc-4(0) did not affect the punctate localization of LGC-46 (Figure 5E). These results suggest that ACC-4 and LGC-46 are independently trafficked to the presynaptic site.\n\nWe further examined how ACC-4 regulates the\u00a0SV release by electrophysiological recordings. acc-4(0) single mutants showed normal amplitudes of eEPSCs, but significantly increased eEPSC amplitudes in lgc-46(gf) background (Figure 5F\u2013H), indicating that loss of ACC-4 abolished the gain-of-function effects of LGC-46(M314I). The time constants of the rise phase were not affected in acc-4(0) (Figure 5I). However, acc-4(0) prolonged the decay phase in wild type or in lgc-46(gf) background, similar to lgc-46(0) (Figure 5I). Together, these data support a conclusion that LGC-46 and ACC-4 function together in cholinergic motor neurons to regulate the\u00a0SV release kinetics following neuronal activation. As LGC-46 and ACC-4 both belong to the ACC protein family, it is possible that the proteins may form a heteromeric channel. Alternatively, they may interact indirectly and co-regulate cholinergic release. Future experiments will determine their mode of interaction, as well as other components and channel property of this LGIC.\n\n## Discussion\n\nThe notion of presynaptically acting LGICs in synaptic transmission is long known, with extensive evidence primarily from classical electrophysiological recordings and pharmacology. However, few previous studies have addressed subcellular localization of anionic LGICs in presynaptic release sites (Belenky et al., 2003; Hruskova et al., 2012; Sur et al., 1995), partly because of limitations in available reagents and in detection methodology to directly examine the function and localization of presynaptic LGICs. Here, using genetic, molecular, cell biological and physiological tools in C. elegans , we have provided multiple lines of evidence to demonstrate that a presynaptic anion-selective ion channel acts as an auto-receptor to ensure tight control of neurotransmitter release in the motor circuit. LGC-46 localizes to the presynaptic release sites in cholinergic motor neurons. Loss of lgc-46 specifically affects evoked SV release in the late phase, without affecting endogenous SV release. A gain-of-function mutation LGC-46(M314I) affects both endogenous and evoked SV release. As both loss- and gain- of function lgc-46 mutants specifically affect the decay phase, but not the rise phase, of eEPSC, our data support a model where upon a burst of ACh release, opening of LGC-46 channels limits further SV release in the sustained late phase. LGC-46(gf) also exhibits a\u00a0strong inhibitory effect on synaptic release under elevated neuronal activity, suggesting that the mutant channel could have increased sensitivity to ligands, higher channel conductance or prolonged open state, thereby affecting the\u00a0basal activity of the cholinergic motor neurons.\n\nRapid feedback inhibition of SV release upon stimulation can contribute to temporal resolution of neural activity within the circuit. A tightly regulated sharp decay of evoked EPSCs can ensure transient and adequate release of neurotransmitter to match high-frequency stimuli, possibly without triggering desensitization of postsynaptic receptors. Sharpening of synaptic activities by presynaptic LGICs can minimize unwanted cross-talks between synapses and neurons, allowing accurate information encoding in high frequency. Such mode of neural control can contribute to the overall circuit performance and may be particularly suited for synapses with graded potential, such as the case in C. elegans and those in the retina of vertebrates.\n\nAcetylcholine is well known for its action to trigger fast excitatory response through cation channels and to modulate neuronal activity via metabotropic receptors. However, classical electrophysiological studies from Aplysia have also shown that acetylcholine can induce inhibitory responses. Injection of acetylcholine to pleural ganglia caused rapid inhibitory postsynaptic potential in a chloride concentration-dependent manner, suggesting the presence of ACh-gated anion channels (Kehoe, 1972a, 1972b; Kehoe and McIntosh, 1998). The identity of these channels in Aplysia remains unknown. The discovery of C. elegans ACC proteins has provided molecular evidence for ACh-gated chloride channels (Putrenko et al., 2005). Our understanding of ACC channel properties and their in vivo functions is only beginning. Several ACC channels are recently shown to display the\u00a0differential expression in neurons (Pereira et al., 2015). ACC-2 has been implicated in regulation of reversal behavior, presumably as a postsynaptic receptor (Li et al., 2014). Our data support a conclusion that ACC-4 acts as a functional partner of LGC-46 at the presynaptic release site. Increasing presynaptic inhibition using lgc-46(gf) dampens overexcitation in the acr-2(gf) seizure model. The molecular nature and functional properties of acr-2(gf) show similarities to gain of function mutations in human CHRNB2, the \u03b22 subunit of neuronal nicotinic receptors, which have been identified as causal in autosomal dominant nocturnal frontal lobe epilepsy (Phillips et al., 2001). Studies using cell lines and transgenic mouse models show that these mutant CHRNB2 proteins result in hyperactive channels, and can alter the\u00a0local circuit activity (Manfredi et al., 2009). Our observations that the hyper-excitation in acr-2(gf) animals can be suppressed by increasing presynaptic inhibition suggest alternative ideas to manage circuit dysfunction. Growing evidence highlights the importance of presynaptic anion LGICs. For example, malfunction of presynaptic glycine channel can partially contribute to startle disease (hyperekplexia) in a mouse model (Xiong et al., 2014). These findings suggest ionotropic anion channels should be considered potential targets for modulating neuronal circuit function and in treatments for neurological disorders.\n\n## Materials and methods\n\n### C. elegans genetics, transgenes and strains\n\nC. elegans\u00a0strains were grown at 22.5\u00b0C following standard procedures. Supplementary file 1 lists all the strains and transgene information. Whole-genome sequence analysis of CZ21292 lgc-46(ju825); acr-2(gf) was performed using Galaxy platform (Giardine et al., 2005). Molecular biology was performed following standard methods. Gateway recombination technology (Invitrogen, CA) was used for generating expression constructs. Supplementary file 2\u00a0describes the details of DNA constructs generated in this study.\u00a0The promoters used are: Prgef-1 for pan-neuronal (Altun-Gultekin et al., 2001), Pmyo-3 for body muscles\u00a0(Okkema et al., 1993). Pitr-1 for DA9 neuron\u00a0(Klassen and Shen, 2007).\n\n### Molecular biology, RNA analyses and transgenes\n\nHigh-copy transgenic arrays were generated following standard protocols. Single-copy insertion lines of Punc-17\u03b2-LGC-46(WT)::GFP and Punc-17\u03b2-LGC-46(M314I)::GFP were made at cxTi10882 site on Chromosome IV (Fr\u00f8kj\u00e6r-Jensen et al., 2012)\u00a0using modified vectors. Briefly, N2 animals were injected with following three constructs: a construct carrying the Punc-17\u03b2-LGC-46(WT)::GFP sequence with cxTi10882 homology arms and a copy of hygromycin resistance gene; a construct which drives expression in the germline of Cas9 and sgRNA targeted for the cxTi10882 region, and a fluorescent coinjection marker. F2 animals resistant to hygromycin were selected. Loss of the fluorescent coinjection marker indicated the loss of extrachromosomal array. Insertion of single copy in the genomic locus was confirmed by PCR using primers outside of the homology arms. The single copy insertion strains were outcrossed twice before use in further experiments. Generally, we found that expression levels of transgenes using the Punc-17\u03b2\u00a0promoter to be comparable to those by Plgc-46.\n\nTo verify lgc-46 transcripts in wild type and mutants, we isolated mRNA from animals of mixed stages using Trizol (ThermoFisher Scientific), and generated cDNAs using SuperScript III (ThermoFisher Scientific), following the manufacturer\u2019s protocol. lgc-46 cDNA was amplified using following primers:\n\nYJ11741: 5\u2019ATGCAATATCTGCAATTCCT3\u2019\n\nYJ11742: 5\u2019TTATATTTATTATCATTCGTTGACTAG3\u2019.\n\nSequence analyses of cDNAs from ok2949 and ok2900 showed neither allele would produce any functional protein. lgc-46 cDNAs from N2 and lgc-46(ju825); acr-2(n2420) were cloned into Topo PCR8 vector (Invitrogen). acc-4 cDNA from N2 was amplified using following primers:\n\nYJ11811: 5\u2019ATGCGACTAATCATATTAGTAATCTCCATTC3\u2019\n\nYJ11812: 5\u2019CTTAGATAGTTCTAACCAATAGTTTTCCGAG3\u2019\n\nThe amplified fragment was cloned into Topo PCR8 vector.\n\n### Locomotion, convulsion behavior, and pharmacology analyses\n\nFor video recording of locomotion, L4 larvae were transferred to NGM plates seeded with OP50. On the next day, young adults were transferred to fresh plates without OP50, allowed to crawl away from bacteria, and were then transferred to assay plates without OP50. Videos of the animals were captured for 5 min at 3 fps using Pixelink camera and analyzed using a multi-worm tracking custom software. Average velocities of 10 animals per strain were obtained; and the\u00a0experiment was repeated three times per strain. Quantification of convulsion and pharmacological analysis were performed as previously described (Jospin et al., 2009; Stawicki et al., 2013).\n\n### Immunocytochemistry and imaging of GFP reporters\n\nWhole-mount immunostaining was performed essentially as previously described (Van Epps et al., 2010). Confocal images of fluorescent markers were collected under identical settings using Zeiss LSM 710 confocal microscope (63x objective). The\u00a0adult animals were immobilized using 0.05 \u00b5m polystyrene beads (Polysciences) and placed on 10% agarose pads with the\u00a0dorsal side facing the coverslip. Larvae at the designated stage were anesthetized using 1 mM levamisole and placed on 4% agarose pads. Maximum-intensity Z stack images were obtained from 3 sections at 0.5 \u00b5m intervals. Images were processed using ImageJ software. Linescan analyses were performed using MetaMorph (Molecular Devices Corp.). For fluorescent puncta analysis in Figure 2\u2014figure supplement 1B, signal intensities obtained from linescan analyses were imported to IGOR Pro (WaveMetrics, Lake Oswego, OR) and processed as previously described (Zhou et al., 2013). Linescans from dorsal nerve cords (20 \u03bcm per animal) from six animals per genotype were analyzed. For quantification of colocalization of LGC-46 and presynaptic proteins, 10 images per genotype were processed by ImageJ plugin Intensity Correlation Analysis and Mander\u2019s overlap coefficients were obtained (Manders et al., 1993). In order to examine whether the correlation occurred by chance, images from red and green channels were shuffled and correlation of pixels between animals were obtained as controls (shuffled control).\n\n### Electrophysiology\n\nNeuromuscular dissection and recording methods were adapted from previous studies (Richmond et al., 1999; Zhou et al., 2013). The recipes of bath solution and pipette solution were adapted from (Madison et al., 2005). Adult worms were immobilized on Sylgard-coated cover slips with cyanoacrylate glue. After dissection, conventional whole-cell recordings from muscle cells were performed.\n\nThe bath solution contains (in mM): 127 NaCl, 5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 4 MgCl2, 10 glucose and sucrose to 340 mOsm with indicated CaCl2 concentrations, bubbled with 5% CO2, 95% O2 at 20\u00b0C. The pipette solution contains (in mM): 120 CH3O3SCs, 4 CsCl, 15 CsF, 4 MgCl2, 5 EGTA, 0.25 CaCl2, 10 HEPES and 4 Na2ATP, adjusted to pH 7.2 with CsOH. Conventional whole-cell recordings from muscle cells were performed with 2.5\u20133.5 M\u03a9 pipettes. An EPC-10 patch-clamp amplifier was used together with the Patchmaster software package (HEKA Electronics, Lambrecht, Germany). Endogenous EPSCs were recorded at \u221260 mV. For recording evoked EPSCs, a second glass pipet filled with bath solutions was put on the ventral nerve cord as stimulating electrode. The stimulating electrode gently touched the anterior region of ventral nerve cord to form loose patch configuration, which is around 1 muscle distance from recording pipets. A 0.5 ms, 85 \u03bcA square current pulse was generated by the isolated stimulator (WPI A320RC) as stimulus. Series resistance was compensated to 70% for the evoked EPSC recording. All current traces were imported to IGOR Pro (WaveMetrics, Lake Oswego, OR) for further analysis. A single exponential equation was used to fit the rise phase or decay phase of eEPSCs. The traces for the\u00a0cumulative transferred charge were obtained by integration of eEPSCs.\n\n### Data analyses and statistics\n\nStatistical analyses were performed using Graphpad Prism v5. One-way ANOVA, Two-way ANOVA, Dunnet\u2019s tests, Bonferroni tests were used.\n",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b1d97009-4a57-4e9a-a1c0-e0efe2421b04",
+      "submission_id": "b86bfa26-c615-496f-bdd4-f70990329502",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21734.014](https://doi.org/10.7554/eLife.21734.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Release-dependent feedback inhibition by a presynaptically localized ligand-gated anion channel\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Oliver Hobert as Reviewing Editor and Eve Marder as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Jeremy S Dittman (Reviewer #1); Shawn Xu (Reviewer #2).\n\nYou will see the complete reviews at the end of this message. After discussion among the reviewers and reviewing editor, we decided that only minimal revisions are required for this manuscript:\n\n1) While the ACC-4 data should be kept in the manuscript as is, we would like to see the caveats of the present analysis pointed out at the very end of the last paragraph of the Result section. Those caveats are nicely summarized by reviewer #2 and should be mentioned.\n\n2) Figures 2F and 4F should include summary graphs of the endogenous EPSC amplitude in addition to the frequency data shown.\n\nReviewer #1:\n\nThis is a nice study using a combination of genetics and electrophysiology to explore the physiological role of a presynaptic ligand-gated ion channel using C. elegans. The authors investigate LGC-46, which is likely to be a chloride channel gated by ACh (the major neuromuscular junction transmitter) based on sequence homology. Based mainly on a gain of function mutation in the lgc-46 gene, the authors conclude that synapses are normally inhibited when high levels of activation elevate ACh and open a presynaptic chloride conductance (ie a negative feedback loop). Strengths of this work include nice imaging to demonstrate presynaptic localization, beautiful electrophysiology of the NMJ, and solid genetics. The weaknesses are mainly that there does not seem to be much impact on the animal when LGC-46 is removed (perhaps redundancy issues) and a basic characterization of the LGC-46 channel properties is lacking. Although the lack of a pronounced behavioral phenotype in the null mutant (and subtle electrophysiological phenotype) may be considered a serious drawback to this study, the gain-of-function experiments still provide compelling and interesting insights into the biology of lgc-46. In fact, if this is a redundant regulatory system at the synapse, the gain-of-function approach is a more informative one until all of the players are identified. Of perhaps more concern, there is no functional characterization of the lgc-46 gene product. Much of the interpretation for the gain-of-function M314I mutation and the PAR motif mutations in LGC-46 would be stronger if we knew that LGC-46 is truly an ACh-gated chloride channel and that the point mutations do what we think they do. For example, this has been done for the worm ACC subunits (Dent lab) and other LGC subunits (Horwitz lab). Is it okay to rely on studies of homologous ionotropic receptors? It's probably not fair or reasonable to ask for everything in one study. That concern aside, I do not have any major concerns about the technical quality of the data and I think that the development of a genetic approach to understanding the role of inhibitory ionotropic receptors in the presynaptic terminal is a significant advance in the field. I support going forward with this manuscript.\n\nReviewer #2:\n\nThe role of LGICs in SV release has most been characterized postsynaptically. Here, the authors demonstrate a novel role for ACh-gated chloride channels which act at the presynaptic site to negatively inhibit synaptic vesicle release. They record evoked and spontaneous EPSCs from in vivo muscle cells to show that LGC-46, an ACh-gated anion-selective channel, accelerates the decay phase of eEPSCs. LGC-46 colocalizes to presynaptic markers and loss-of-function mutations are hypersensitive to aldicarb but not levamisole, indicating presynaptic function. Gain-of-function mutations accelerate the decay phase of the EPSC and reduces severity of an ACh-related over-excitation behavioral phenotype. The authors also show that ACC-4 localizes to presynaptic terminals and fund that ACC-4 may form a heteromeric channel with LGC-46. ACC-4 is also shown to regulate the evoked release kinetics of synaptic vesicles at cholinergic motor neuron synapses. Overall, this is an interesting study and will significantly advance our understanding of how LGICs presynaptically modulate SV release at the molecular and cellular levels.\n\nThe authors present strong evidence supporting that ACC-4 and LGC-46 function together. The simplest explanation is that they function as a heteromeric channel because they both are pore-forming subunits (not auxiliary subunit-like), but the authors did not provide any direct evidence supporting one way or the other. Instead, they simply avoid touching on this notion, but the readers will not. This leaves behind a series of unanswered questions. For example, do they physically interact? Do they form a functional channel when expressed in a heterologous system? I understand that the authors may not have the expertise to perform such experiments. If so, my suggestion is to remove ACC-4 data. The data on LGC-46 may stand on its own. This would not affect the integrity of the paper.\n\nFigures 2F and 4F should include summary graphs of the endogenous EPSC amplitude in addition to the frequency data shown.\n",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff696318-f63b-42bd-b881-a1408a935584",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C1",
+      "claim": "LGC-46 is a member of the Cys-loop acetylcholine (ACh)-gated chloride (ACC) channel family.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that C. elegans LGC-46, a member of the Cys-loop acetylcholine (ACh)-gated chloride (ACC) channel family, localizes to presynaptic terminals of cholinergic motor neurons and regulates synaptic vesicle (SV) release kinetics upon evoked release of acetylcholine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this directly in the abstract and provides phylogenetic analysis in Figure 1\u2014figure supplement 1B showing LGC-46 clustering with ACC family members.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "382a6a39-f134-48a5-bdc9-927e277ebef8",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C2",
+      "claim": "LGC-46 localizes to presynaptic terminals of cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we report that C. elegans LGC-46, a member of the Cys-loop acetylcholine (ACh)-gated chloride (ACC) channel family, localizes to presynaptic terminals of cholinergic motor neurons and regulates synaptic vesicle (SV) release kinetics upon evoked release of acetylcholine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in abstract and demonstrated through imaging data in Figure 1B-F showing LGC-46::GFP punctate localization in dorsal nerve cord and colocalization with presynaptic markers UNC-10 and RAB-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "2467f4ba-7b08-4ebf-b2ca-fd69fa78bcc4",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C3",
+      "claim": "Loss of lgc-46 prolongs evoked release without altering spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of lgc-46 prolongs evoked release, without altering spontaneous activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and supported by electrophysiology data in Figure 2 showing prolonged decay phase of eEPSCs in lgc-46(0) mutants while endogenous EPSC frequency and amplitude remain normal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e2ae586a-5ba5-470e-9fd2-d8498b586f08",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C4",
+      "claim": "A gain-of-function mutation of lgc-46 shortens evoked release to reduce synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a gain-of-function mutation of lgc-46 shortens evoked release to reduce synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated by electrophysiology data in Figure 4 showing reduced amplitude and shortened decay phase of eEPSCs in lgc-46(gf) mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e6a77ba7-5641-4666-8977-1eb3789cb6c0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C5",
+      "claim": "The inhibition of presynaptic release by LGC-46 requires the anion selectivity of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibition of presynaptic release requires the anion selectivity of LGC-46, and can ameliorate cholinergic over-excitation in a C. elegans model of excitation-inhibition imbalance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated in Figure 3C showing that PAR motif mutant LGC-46(M314I) does not suppress acr-2(gf) convulsions, while wild-type PAR motif LGC-46(M314I) does.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4c592e35-2605-4b21-8ea4-2f032e66ab3a",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C6",
+      "claim": "LGC-46 can ameliorate cholinergic over-excitation in a C. elegans model of excitation-inhibition imbalance.",
+      "claim_type": "EXPLICIT",
+      "source": "This inhibition of presynaptic release requires the anion selectivity of LGC-46, and can ameliorate cholinergic over-excitation in a C. elegans model of excitation-inhibition imbalance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in abstract and demonstrated in Figure 3A showing lgc-46(ju825) suppresses acr-2(gf) convulsions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ff75f730-f4cb-472a-980a-a4dd1a918529",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C7",
+      "claim": "Cys-loop LGICs participate in rapid regulation of neurotransmission by changing plasma membrane conductance upon ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Cys-loop Ligand-gated ion channels (LGICs) participate in rapid regulation of neurotransmission by changing the plasma membrane conductance upon ligand binding (Keramidas et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about LGIC function supported by a citation to Keramidas et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "347bf771-90d0-45cc-81dc-94e374026faa",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C8",
+      "claim": "Classical electrophysiological recordings from cat spinal cord showed that activation of flexor afferent neurons caused decreased excitatory transmission of extensor afferent neurons onto extensor motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, classical electrophysiological recordings from cat spinal cord showed that activation of flexor afferent neurons caused decreased excitatory transmission of extensor afferent neurons onto extensor motor neurons (Eccles et al., 1961, 1963; Frank and Fuortes, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This historical finding is supported by citations to Eccles et al., 1961, 1963 and Frank and Fuortes, 1957.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "05551f37-0421-4b71-9f0a-5e68b06dee2f",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C9",
+      "claim": "The effect of flexor afferent neuron activation on extensor afferent transmission was blocked by picrotoxin.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was blocked by picrotoxin, an antagonist of ionotropic GABA receptors, implying that GABAA receptors may be involved in inhibition of presynaptic release (Eccles et al., 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by citation to Eccles et al., 1963.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "c4de805f-4ad8-4914-8a4d-0cb98b6f1f72",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C10",
+      "claim": "Picrotoxin is an antagonist of ionotropic GABA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was blocked by picrotoxin, an antagonist of ionotropic GABA receptors, implying that GABAA receptors may be involved in inhibition of presynaptic release (Eccles et al., 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the context of describing historical experiments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b909d393-9fed-47de-886b-995bb92d9af0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C11",
+      "claim": "Extensor afferent neuron terminals receive axo-axonal connections from GABAergic interneurons that are activated by flexor afferent neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultrastructural studies later revealed that the extensor afferent neuron terminals receive axo-axonal connections from GABAergic interneurons that are activated by flexor afferent neurons (Pierce and Mendell, 1993; Destombes et al., 1996), suggesting the presence of GABA-gated LGICs in presynaptic axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by citations to Pierce and Mendell, 1993 and Destombes et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ffbb8d72-629b-4b06-90c1-89d47b0d8353",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C12",
+      "claim": "Stimulation of inhibitory motor neurons in crayfish opener muscles caused decreased neurotransmission from excitatory motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that stimulation of inhibitory motor neurons caused decreased neurotransmission from excitatory motor neurons, and that statistical analysis of excitatory transmitter quanta suggested a likely presynaptic effect (Dudel and Kuffler, 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by citation to Dudel and Kuffler, 1961.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "960317e5-4935-4a0a-93ec-a33c0b2dfadb",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C13",
+      "claim": "Addition of exogenous GABA at crayfish neuromuscular junctions caused effects similar to inhibitory motor neuron stimulation, which was relieved by picrotoxin.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of exogenous GABA at these neuromuscular junctions caused similar effects, which was relieved by picrotoxin (Takeuchi and Takeuchi, 1966, 1969), suggesting this presynaptic inhibition involves GABA-gated LGICs in the presynaptic axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by citations to Takeuchi and Takeuchi, 1966, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "8488bd9a-40c0-4972-85d7-15e61eb43c90",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C14",
+      "claim": "Several ionotropic glycine receptors and GABAA receptors act in presynaptic cells to regulate synaptic transmission in the mammalian central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies in the past decades have subsequently identified several ionotropic glycine receptors and GABAA receptors acting in the presynaptic cells to regulate synaptic transmission in the mammalian central nervous system (Kullmann et al., 2005; Engelman and MacDermott, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is supported by citations to Kullmann et al., 2005 and Engelman and MacDermott, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "68cc9cbb-6509-4b03-ade7-65aa8ce6d807",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C15",
+      "claim": "Acetylcholine provides major excitatory inputs to the body wall muscles in the C. elegans locomotor circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans locomotor circuit, acetylcholine provides major excitatory inputs to the body wall muscles (Richmond and Jorgensen, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Richmond and Jorgensen, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "936a9429-8026-43b1-b75d-ba696a6e324c",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C16",
+      "claim": "C. elegans genome encodes a large number of LGICs, many of which are known or predicted to be responsive to acetylcholine.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans genome encodes a large number of LGICs, many of which are known or predicted to be responsive to acetylcholine (Hobert, 2013; Jones and Sattelle, 2008), but whether they regulate SV release at presynaptic terminals is not known.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hobert, 2013 and Jones and Sattelle, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "dfcb4db3-008b-4efe-8716-5c834684aedc",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C17",
+      "claim": "lgc-46 is strongly expressed in cholinergic motor neurons and weakly expressed in GABAergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of Plgc-46-GFP with markers for cholinergic (Punc-17-mCherry) and GABAergic (Pttr-39-mCherry) neurons revealed that lgc-46 was strongly expressed in cholinergic motor neurons, and weakly expressed in GABAergic motor neurons (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by colocalization experiments shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "c2e4bf89-8b7f-4071-a7ef-365aeb89da8d",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C18",
+      "claim": "LGC-46::GFP was detected only in the dorsal nerve cords in L1 stage animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first larval (L1) stage animals, cholinergic motor neurons form synapses onto dorsal body wall muscles (Sulston, 1976; White et al., 1978), and we observed LGC-46::GFP only in the dorsal nerve cords (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed and shown in Figure 1B, with supporting citations about cholinergic motor neuron anatomy.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "956b631c-57e9-4dea-9e18-b8b5fa9fca43",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C19",
+      "claim": "LGC-46::GFP expressed in DA9 neuron was detected only in the dorsal side of L4 and adult animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We also expressed LGC-46::GFP in a single cholinergic motor neuron DA9, which synapses onto dorsal body wall muscles, and found LGC-46::GFP was detected only in the dorsal side of L4 and adult animals (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4c63dfa1-7205-4219-b8bd-d36e4089068e",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C20",
+      "claim": "LGC-46 primarily localizes to the axonal compartment of cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that LGC-46 primarily localizes to the axonal compartment of cholinergic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that LGC-46::GFP is only detected in dorsal nerve cords where cholinergic motor neurons form synapses.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "c1c9f94d-bc6f-404b-8215-2fce61f783b0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C21",
+      "claim": "LGC-46::GFP displayed a high degree of overlap with UNC-10.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if the punctate pattern of LGC-46::GFP corresponded to presynaptic terminals, we co-immunostained LGC-46::GFP together with endogenous active zone protein RIM/UNC-10 (Figure 1D). LGC-46::GFP displayed a high degree of overlap with UNC-10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by colocalization imaging in Figure 1D and quantified in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e8e11649-e7a8-4183-b43d-e41318f861ea",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C22",
+      "claim": "LGC-46::GFP showed co-localization with synaptic vesicle marker mCherry::RAB-3 expressed in cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that LGC-46::GFP showed co-localization with a synaptic vesicle marker mCherry::RAB-3 expressed in cholinergic motor neurons (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by colocalization imaging in Figure 1E and quantified in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "81bafb26-e7ce-4d2c-919a-bd8d7fdafaef",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C23",
+      "claim": "LGC-46 is the first reported LGIC localized to presynaptic terminals in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge LGC-46 is the first reported LGIC localized to presynaptic terminals in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b23c0169-b1cc-4836-89ed-bc5eef04fcd5",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C24",
+      "claim": "Cholinergic synapse morphology and density in lgc-46(0) mutants were comparable to those in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic synapse morphology and density in lgc-46(0) mutants were comparable to those in wild type (Figure 2\u2014figure supplement 1A\u2013B), and lgc-46(0) animals displayed normal growth, reproduction and locomotion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by quantification shown in Figure 2\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "255d7f67-1eca-46aa-a56f-d27a2e93d205",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C25",
+      "claim": "lgc-46(0) animals displayed normal growth, reproduction and locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic synapse morphology and density in lgc-46(0) mutants were comparable to those in wild type (Figure 2\u2014figure supplement 1A\u2013B), and lgc-46(0) animals displayed normal growth, reproduction and locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the authors' experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "05fbbba4-554b-4bd3-bb8e-e8285ea367ed",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C26",
+      "claim": "lgc-46(0) animals were hypersensitive to aldicarb.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(0) animals were hypersensitive to aldicarb, an inhibitor of acetylcholine esterase, while they showed normal sensitivity to levamisole, an agonist for the postsynaptic acetylcholine receptors on muscles (Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological assays shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "95e68491-f511-46ac-9282-dcfc7e86327c",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C27",
+      "claim": "lgc-46(0) animals showed normal sensitivity to levamisole.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(0) animals were hypersensitive to aldicarb, an inhibitor of acetylcholine esterase, while they showed normal sensitivity to levamisole, an agonist for the postsynaptic acetylcholine receptors on muscles (Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological assays shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "bc46cff9-a628-4e66-b3ae-16c84af59a2d",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C28",
+      "claim": "Aldicarb is an inhibitor of acetylcholine esterase.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(0) animals were hypersensitive to aldicarb, an inhibitor of acetylcholine esterase, while they showed normal sensitivity to levamisole, an agonist for the postsynaptic acetylcholine receptors on muscles (Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the drug.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "be3566f6-32ae-40b1-83fd-1c356e9c6e17",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C29",
+      "claim": "Levamisole is an agonist for the postsynaptic acetylcholine receptors on muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(0) animals were hypersensitive to aldicarb, an inhibitor of acetylcholine esterase, while they showed normal sensitivity to levamisole, an agonist for the postsynaptic acetylcholine receptors on muscles (Figure 3\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the drug.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "bb33ffb4-f68d-4461-bec3-8b78a6fa0d8a",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C30",
+      "claim": "The hypersensitivity to aldicarb in lgc-46(0) was rescued by specific expression of LGC-46 in cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypersensitivity to aldicarb was rescued by specific expression of LGC-46 in cholinergic motor neurons (Figure 3\u2014figure supplement 1A), suggesting that LGC-46 likely represses cholinergic motor neuron activities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "80ff7b5e-ec5a-4917-a7d4-c87e4964335e",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C31",
+      "claim": "The amplitude of eEPSCs in lgc-46(0) animals was comparable to that in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the amplitude of eEPSCs in lgc-46(0) animals was comparable to that in wild type (Figure 2A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 2A and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "abacc7c6-e61c-4519-a5ad-ff11fbe14384",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C32",
+      "claim": "The rise phase of eEPSCs in lgc-46(0) was similar to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The rise phase of eEPSCs was similar to wild type, suggesting the onset of evoked cholinergic transmission is not affected (Figure 2B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 2B and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "bd21d822-050c-4c48-84dd-b6fb69c00924",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C33",
+      "claim": "eEPSCs in lgc-46(0) were prolonged and displayed a significantly slower decay than that of wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the analysis of release kinetics revealed that eEPSCs in lgc-46(0) were prolonged and displayed a significantly slower decay than that of wild type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 2A, 2B, and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "01876dcc-8f4c-417a-be61-5db307548c28",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C34",
+      "claim": "lgc-46(0) mutants displayed a normal early phase of SV release (21.33 \u00b1 2.50 pC, compared to 18.41 \u00b1 1.68 pC in wild type).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, lgc-46(0) mutants displayed a normal early phase of SV release (21.33 \u00b1 2.50 pC, compared to 18.41 \u00b1 1.68 pC in wild type), but exhibited a large increase in the late phase (18.06 \u00b1 2.19 pC, compared to 11.35 \u00b1 1.35 pC in wild type).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from cumulative charge transfer analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "a78f0e8b-b777-453c-997c-bb1afb2ee879",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C35",
+      "claim": "lgc-46(0) mutants exhibited a large increase in the late phase of SV release (18.06 \u00b1 2.19 pC, compared to 11.35 \u00b1 1.35 pC in wild type).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, lgc-46(0) mutants displayed a normal early phase of SV release (21.33 \u00b1 2.50 pC, compared to 18.41 \u00b1 1.68 pC in wild type), but exhibited a large increase in the late phase (18.06 \u00b1 2.19 pC, compared to 11.35 \u00b1 1.35 pC in wild type).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified from cumulative charge transfer analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "631914a3-9d92-4210-9787-fe416e8c898b",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C36",
+      "claim": "Both the slow decay of eEPSCs and the increased late phase of SV release in lgc-46(0) were rescued by expression of LGC-46 in cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the slow decay of eEPSCs and the increased late phase of SV release were rescued by expression of LGC-46 in cholinergic motor neurons (Figure 2A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 2A-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4df6fb5a-803d-4590-9416-c2d8cf5deb36",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C37",
+      "claim": "The frequency of endogenous EPSCs in lgc-46(0) mutants was comparable to that in wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "The frequency of endogenous EPSCs in lgc-46(0) mutants was comparable to that in wild type (Figure 2F), indicating that cholinergic transmission in the resting condition was not affected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e8d7b863-f81d-4eb7-b337-fa246ac278ca",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C38",
+      "claim": "The amplitude and kinetics of endogenous EPSCs were normal in lgc-46(0) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude and kinetics of endogenous EPSCs were normal in lgc-46(0) mutants (Figure 2F; Figure 2\u2014figure supplement 1C\u2013D), confirming that the slow decay of evoked release was not due to altered kinetics of postsynaptic receptor response on muscles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 2F and Figure 2\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "6d012dcb-4fd9-4765-9897-e03b157878b6",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C39",
+      "claim": "LGC-46 acts as an auto-receptor to inhibit presynaptic activities upon synaptic vesicle release.",
+      "claim_type": "EXPLICIT",
+      "source": "As LGC-46 resides in the presynaptic terminals of cholinergic motor neurons, these data support a conclusion that LGC-46 acts as an auto-receptor to inhibit presynaptic activities upon synaptic vesicle release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the combination of localization data and functional data showing LGC-46 affects evoked but not spontaneous release.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "aa30de90-6dec-4783-a5bf-2f6abff66364",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C40",
+      "claim": "Cholinergic motor neurons express the ACR-2 ACh-gated cation channel in their dendrites and soma.",
+      "claim_type": "EXPLICIT",
+      "source": "Cholinergic motor neurons express the ACR-2 ACh-gated cation channel in their dendrites and soma (Jospin et al., 2009; Qi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jospin et al., 2009 and Qi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "2abb560c-3f65-41eb-9ce0-11d0b003d5af",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C41",
+      "claim": "acr-2(gf) mutation contains a missense mutation in the transmembrane domain 2, similar to those found in CHNR2B of human epilepsy patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously characterized an acr-2(gf) mutation that contains a missense mutation in the transmembrane domain 2, similar to those found in CHNR2B of human epilepsy patients (Phillips et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Phillips et al., 2001 for the human epilepsy connection.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "53a89631-b4ef-445f-850d-53ceab6bf27c",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C42",
+      "claim": "ACR-2(gf) increases channel activity and causes hyperactivity of cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "ACR-2(gf) increases channel activity and causes hyperactivity of cholinergic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a previously characterized finding.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "5b89dae7-adef-42a3-b8ea-b7cc5d7d7778",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C43",
+      "claim": "acr-2(gf) animals show distinctive spontaneous convulsions due to an altered ratio of excitation and inhibition in the locomotor circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "acr-2(gf) animals show distinctive spontaneous convulsions, due to an altered ratio of excitation and inhibition in the locomotor circuit (Jospin et al., 2009; Qi et al., 2013; Stawicki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jospin et al., 2009; Qi et al., 2013; and Stawicki et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "615bbd94-3fe8-4b71-aeec-63781e1eaaba",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C44",
+      "claim": "lgc-46(ju825) mutation strongly suppressed the convulsion of acr-2(gf).",
+      "claim_type": "EXPLICIT",
+      "source": "By screening for suppressors of the acr-2(gf) convulsion behavior (see Materials and methods), we isolated a lgc-46(ju825) mutation that strongly suppressed the convulsion of acr-2(gf) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "66edf25d-a356-4934-b087-b24580a76a2a",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C45",
+      "claim": "The lgc-46(ju825) mutation causes a substitution of methionine to isoleucine (M314I) in the pore-lining transmembrane TM2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that the lgc-46(ju825) mutation causes a substitution of methionine to isoleucine (M314I) in the pore-lining transmembrane TM2 domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by sequencing and shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "8592c173-d9e3-4c15-9a10-8bf9cbf30b45",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C46",
+      "claim": "lgc-46(0) did not show significant effects on acr-2(gf) convulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(0) did not show significant effects on acr-2(gf) convulsion (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ca47287c-a507-4ea2-9a5e-824f46c53275",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C47",
+      "claim": "Transgenic overexpression of LGC-46(M314I), but not LGC-46(WT), driven by lgc-46 promoter strongly suppressed acr-2(gf) convulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, transgenic overexpression of LGC-46(M314I), but not LGC-46(WT), driven by lgc-46 promoter strongly suppressed acr-2(gf) convulsion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by behavioral assays shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "0acb977e-5e1b-4dc0-8df2-44fa77225982",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C48",
+      "claim": "lgc-46(ju825) is a gain-of-function mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that lgc-46(ju825) is a gain-of-function mutation, designated as lgc-46(gf) hereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that lgc-46(ju825) suppresses acr-2(gf) while lgc-46(0) does not, and overexpression of LGC-46(M314I) mimics the suppression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "f8bf6e02-b96e-4abd-97d6-4ac0094b60b8",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C49",
+      "claim": "Pan-neuronal and cholinergic LGC-46(M314I) expression suppressed acr-2(gf) convulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "By expressing lgc-46 in a cell-type specific manner, we found that pan-neuronal and cholinergic LGC-46(M314I) expression suppressed acr-2(gf) convulsions whereas its expression in muscles or GABAergic motor neurons had no effect (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell-type specific rescue experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e49b9fe9-4b10-4410-8dcb-e098cb0a2552",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C50",
+      "claim": "LGC-46(M314I) expression in muscles or GABAergic motor neurons had no effect on acr-2(gf) convulsions.",
+      "claim_type": "EXPLICIT",
+      "source": "By expressing lgc-46 in a cell-type specific manner, we found that pan-neuronal and cholinergic LGC-46(M314I) expression suppressed acr-2(gf) convulsions whereas its expression in muscles or GABAergic motor neurons had no effect (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cell-type specific rescue experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "c9100084-136b-40fc-99f3-24e8d1e8fbd6",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C51",
+      "claim": "acr-2(gf) shows hypersensitivity to both aldicarb and levamisole.",
+      "claim_type": "EXPLICIT",
+      "source": "acr-2(gf) shows hypersensitivity to both aldicarb and levamisole (Jospin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jospin et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "6da24ff0-3688-4ad0-ac83-ce3944ca1b84",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C52",
+      "claim": "lgc-46(ju825) partially suppressed the aldicarb hypersensitivity, but not the levamisole sensitivity of acr-2(gf).",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(ju825) partially suppressed the aldicarb hypersensitivity, but not the levamisole sensitivity of acr-2(gf) (Figure 3\u2014figure supplement 1C\u2013D), suggesting that lgc-46(ju825) likely affects presynaptic activity of cholinergic neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by pharmacological assays shown in Figure 3\u2014figure supplement 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "6464a4a5-0be0-49ea-9a04-d14ccdcac185",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C53",
+      "claim": "Expression of LGC-46(M314I) in cholinergic motor neurons fully suppressed the aldicarb hypersensitivity of lgc-46(0).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, expression of LGC-46(M314I) in cholinergic motor neurons also fully suppressed the aldicarb hypersensitivity of lgc-46(0) (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b4a75bc4-f740-4d1b-8099-48e6647c6ea6",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C54",
+      "claim": "lgc-46 acts cell-autonomously to suppress cholinergic neuron activities.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that lgc-46 acts cell-autonomously to suppress cholinergic neuron activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cell-type specific rescue experiments showing that expression in cholinergic neurons is sufficient for suppression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "2c69ec65-ed63-4c42-8eee-7c9f2979e4b3",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C55",
+      "claim": "The presence of the PAR motif preceding TM2 is crucial for ion selectivity in LGC-46.",
+      "claim_type": "EXPLICIT",
+      "source": "LGC-46 is predicted to be an anion-conducting channel, and the presence of the PAR motif preceding TM2 is crucial for ion selectivity (Galzi et al., 1992; Keramidas et al., 2000; Jensen et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Galzi et al., 1992; Keramidas et al., 2000; and Jensen et al., 2005.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4ef6f350-227f-412d-9ae6-bffe17810e9b",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C56",
+      "claim": "PAR-mutant LGC-46(M314I) did not suppress acr-2(gf) convulsions when expressed in cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in cholinergic motor neurons, PAR-mutant LGC-46(M314I) did not suppress acr-2(gf) convulsions (Figure 3C), consistent with LGC-46 acting as an anion-selective channel.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral assays shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "fc8d9fd9-94cd-4897-be32-8708ea88c4c9",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C57",
+      "claim": "The M314I mutation does not alter LGC-46 localization.",
+      "claim_type": "EXPLICIT",
+      "source": "The M314I mutation does not alter LGC-46 localization as functional GFP-tagged LGC-46(M314I) showed restricted expression at presynaptic terminals, similar to wild type ().",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by imaging data shown in Figure 4\u2014figure supplement 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ca067400-9f0b-4e08-b748-06e17423965f",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C58",
+      "claim": "lgc-46(gf) mutants showed significantly reduced amplitudes of eEPSCs compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(gf) mutants showed significantly reduced amplitudes of eEPSCs and release kinetics with much shorter decay phase compared to wild type, whereas the time constant of the rise phase of eEPSCs was not affected (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "77710c64-7a79-43d4-91b1-800484213d2c",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C59",
+      "claim": "lgc-46(gf) mutants showed release kinetics with much shorter decay phase compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(gf) mutants showed significantly reduced amplitudes of eEPSCs and release kinetics with much shorter decay phase compared to wild type, whereas the time constant of the rise phase of eEPSCs was not affected (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "1ef05951-9c60-47c2-b97d-b4662e406dd3",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C60",
+      "claim": "The time constant of the rise phase of eEPSCs was not affected in lgc-46(gf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "lgc-46(gf) mutants showed significantly reduced amplitudes of eEPSCs and release kinetics with much shorter decay phase compared to wild type, whereas the time constant of the rise phase of eEPSCs was not affected (Figure 4A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 4A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d3131fc3-2156-496c-8cdd-77fe569bfb77",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C61",
+      "claim": "The charge transfer during eEPSCs was significantly reduced in lgc-46(gf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the charge transfer during eEPSCs was significantly reduced in lgc-46(gf) mutants, indicating the inhibition of SV release (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by cumulative charge transfer analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "22e96a51-75e7-4196-abcc-9c8027d47488",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C62",
+      "claim": "The amplitude and kinetics of endogenous EPSCs were not affected in lgc-46(gf) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We also recorded endogenous release and found that, similar to lgc-46(0), the amplitude and kinetics of endogenous EPSCs were not affected in lgc-46(gf) mutants (Figure 4F; Figure 4\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 4F and Figure 4\u2014figure supplement 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "cf853445-4131-4e35-afbc-c71bbf0ea10b",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C63",
+      "claim": "lgc-46(gf) significantly reduced the frequency of endogenous EPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, lgc-46(gf) significantly reduced the frequency of endogenous EPSCs, suggesting the lower excitability in cholinergic motor neurons compared to wild type (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "0619a2a9-7090-4731-9837-bde31dea3334",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C64",
+      "claim": "Expression of LGC-46(M314I) in lgc-46(0) mutant background mimicked the characteristics of reduced amplitude and shortened decay of evoked release from the lgc-46(gf) animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of LGC-46(M314I) in lgc-46(0) mutant background mimicked the characteristics of reduced amplitude and shortened decay of evoked release from the lgc-46(gf) animals (Figure 4A\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 4A-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "afdb198b-2067-4d71-b8e6-66abe0280a14",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C65",
+      "claim": "LGC-46(M314I) can function as an overactive anion channel, thereby suppressing SV release more efficiently than wild type LGC-46.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that LGC-46(M314I) can function as an overactive anion channel, thereby suppressing SV release more efficiently than wild type LGC-46.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gain-of-function phenotypes showing enhanced inhibition of synaptic release.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d93028a3-0ea3-4a03-8d97-1d3ac25d48d9",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C66",
+      "claim": "Some ACC family proteins can form homomeric or heteromeric channels which respond to acetylcholine when expressed in Xenopus oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some ACC family proteins can form homomeric or heteromeric channels, which respond to acetylcholine when expressed in Xenopus oocytes (Putrenko et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Putrenko et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "08f4fe5c-423b-49c9-a90b-55bdb9f36495",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C67",
+      "claim": "Studies of LGC-46 have not yet revealed ACh-gated channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar studies of LGC-46 have not yet revealed ACh-gated channel activity (Joseph Dent, personal communication), or responsiveness to other neurotransmitters (Ringstad et al., 2009), suggesting that LGC-46 may require additional subunits or accessory factors to form a functional channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on personal communication and citation to Ringstad et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4107b7e8-62ce-4606-b3e6-ab6e95e50070",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C68",
+      "claim": "LGC-46 may require additional subunits or accessory factors to form a functional channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar studies of LGC-46 have not yet revealed ACh-gated channel activity (Joseph Dent, personal communication), or responsiveness to other neurotransmitters (Ringstad et al., 2009), suggesting that LGC-46 may require additional subunits or accessory factors to form a functional channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of observed channel activity in heterologous expression systems.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "3ed3da72-4915-4a87-a396-2e8b3f396351",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C69",
+      "claim": "lgc-46(gf) animals display a curly body posture and slow locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify potential interacting partners, we took advantage of a behavioral phenotype of lgc-46(gf). These animals display a curly body posture and slow locomotion (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by locomotion assays shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "05acc4f5-31f5-4fe0-8b4a-bfa0d7314dcd",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C70",
+      "claim": "Expression of LGC-46(M314I) under its own promoter in lgc-46(0) background mimicked the locomotion phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of LGC-46(M314I) under its own promoter in lgc-46(0) background mimicked the locomotion phenotypes, indicating that LGC-46(M314I) is responsible for the phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by rescue experiments showing that the mutant protein is sufficient to cause the phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "34196ec7-7481-44ff-ae8c-11f80a6b5093",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C71",
+      "claim": "All single mutants of acc-1 to acc-4 and lgc-47 to lgc-49 showed grossly normal movement.",
+      "claim_type": "EXPLICIT",
+      "source": "We systematically examined null mutations in seven other ACC genes (acc-1 to acc-4 and lgc-47 to lgc-49) and observed that all single mutants showed grossly normal movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from systematic genetic analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "97db0727-dea0-4aab-a88c-29b5a28938f1",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C72",
+      "claim": "acc-4(0) showed a specific suppression of the lgc-46(gf) phenotype such that double mutant animals regained normal locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "We then made double mutants with lgc-46(gf), and found that acc-4(0) showed a specific suppression of the lgc-46(gf) phenotype such that double mutant animals regained normal locomotion (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by locomotion assays shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "21f9c5d7-503d-4083-aada-d87e9ec14c53",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C73",
+      "claim": "acc-4 was required for the suppression of acr-2(gf) convulsion by lgc-46(gf).",
+      "claim_type": "EXPLICIT",
+      "source": "acc-4 was also required for the suppression of acr-2(gf) convulsion by lgc-46(gf) (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by behavioral assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "a671ab3f-6586-463d-a87f-3944ab8cc352",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C74",
+      "claim": "ACC-4 is expressed in all cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC-4 is expressed in all cholinergic motor neurons (Pereira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pereira et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "f659cfa3-ef0f-4a17-bede-7e71c18bb955",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C75",
+      "claim": "Transgenic expression of acc-4, driven by its own promoter, or of an acc-4 cDNA in cholinergic motor neurons rescued the effects of acc-4(0) in lgc-46(gf) acc-4(0); acr-2(gf) background.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic expression of acc-4, driven by its own promoter, or of an acc-4 cDNA in cholinergic motor neurons rescued the effects of acc-4(0) in lgc-46(gf) acc-4(0); acr-2(gf) background (Figure 5A), indicating that both ACC-4 and LGC-46 function in the cholinergic motor neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by rescue experiments shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "719eb482-2b98-491b-8fa8-f371e2c0a919",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C76",
+      "claim": "Both ACC-4 and LGC-46 function in the cholinergic motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic expression of acc-4, driven by its own promoter, or of an acc-4 cDNA in cholinergic motor neurons rescued the effects of acc-4(0) in lgc-46(gf) acc-4(0); acr-2(gf) background (Figure 5A), indicating that both ACC-4 and LGC-46 function in the cholinergic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from cell-type specific rescue experiments.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4e5e292c-f3e7-4d28-beff-b745bc9e4ff0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C77",
+      "claim": "ACC-4::GFP showed axonal punctate localization at presynaptic terminals, similar to LGC-46::GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC-4::GFP showed axonal punctate localization at presynaptic terminals (Figure 5B\u2013D), similar to LGC-46::GFP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "1eae1432-150b-4229-843b-656d1364e8ab",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C78",
+      "claim": "acc-4(0) did not affect the punctate localization of LGC-46.",
+      "claim_type": "EXPLICIT",
+      "source": "acc-4(0) did not affect the punctate localization of LGC-46 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by imaging data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "85d483af-9541-4e0b-9bd5-bca190a655a0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C79",
+      "claim": "ACC-4 and LGC-46 are independently trafficked to the presynaptic site.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ACC-4 and LGC-46 are independently trafficked to the presynaptic site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of acc-4 does not affect LGC-46 localization.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ad13d755-93f8-43cc-bbb2-4e8fdb59e5d0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C80",
+      "claim": "acc-4(0) single mutants showed normal amplitudes of eEPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "acc-4(0) single mutants showed normal amplitudes of eEPSCs, but significantly increased eEPSC amplitudes in lgc-46(gf) background (Figure 5F\u2013H), indicating that loss of ACC-4 abolished the gain-of-function effects of LGC-46(M314I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 5F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "514b846d-e2ae-49b7-884e-0e6ab20399b9",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C81",
+      "claim": "acc-4(0) significantly increased eEPSC amplitudes in lgc-46(gf) background.",
+      "claim_type": "EXPLICIT",
+      "source": "acc-4(0) single mutants showed normal amplitudes of eEPSCs, but significantly increased eEPSC amplitudes in lgc-46(gf) background (Figure 5F\u2013H), indicating that loss of ACC-4 abolished the gain-of-function effects of LGC-46(M314I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 5F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "8d467897-d1f8-4ee3-ab99-0ebb96e52572",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C82",
+      "claim": "Loss of ACC-4 abolished the gain-of-function effects of LGC-46(M314I).",
+      "claim_type": "EXPLICIT",
+      "source": "acc-4(0) single mutants showed normal amplitudes of eEPSCs, but significantly increased eEPSC amplitudes in lgc-46(gf) background (Figure 5F\u2013H), indicating that loss of ACC-4 abolished the gain-of-function effects of LGC-46(M314I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that acc-4(0) reverses the reduced eEPSC amplitude phenotype of lgc-46(gf).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "56d64b3f-7ac8-41cb-9e8b-94fcc458ecb9",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C83",
+      "claim": "The time constants of the rise phase were not affected in acc-4(0).",
+      "claim_type": "EXPLICIT",
+      "source": "The time constants of the rise phase were not affected in acc-4(0) (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "732c40db-cb4f-4edf-9e78-dbf3ce076548",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C84",
+      "claim": "acc-4(0) prolonged the decay phase in wild type or in lgc-46(gf) background, similar to lgc-46(0).",
+      "claim_type": "EXPLICIT",
+      "source": "However, acc-4(0) prolonged the decay phase in wild type or in lgc-46(gf) background, similar to lgc-46(0) (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiology data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "7f4420fe-673f-4de8-99b0-57b80adb68f2",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C85",
+      "claim": "LGC-46 and ACC-4 function together in cholinergic motor neurons to regulate the SV release kinetics following neuronal activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data support a conclusion that LGC-46 and ACC-4 function together in cholinergic motor neurons to regulate the SV release kinetics following neuronal activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genetic interaction and electrophysiology data showing both proteins are required for proper regulation of evoked release.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "50775156-fd0d-4e1c-93d8-52daff1bdbff",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C86",
+      "claim": "LGC-46 and ACC-4 may form a heteromeric channel.",
+      "claim_type": "EXPLICIT",
+      "source": "As LGC-46 and ACC-4 both belong to the ACC protein family, it is possible that the proteins may form a heteromeric channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the family membership and functional interaction.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d55d17a5-2126-4d49-9697-aea63fddca29",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C87",
+      "claim": "LGC-46 and ACC-4 may interact indirectly and co-regulate cholinergic release.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, they may interact indirectly and co-regulate cholinergic release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an alternative hypothesis to direct heteromeric channel formation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "9bf42553-4a11-4f86-82a7-816ba2ef8d63",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C88",
+      "claim": "Upon a burst of ACh release, opening of LGC-46 channels limits further SV release in the sustained late phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As both loss- and gain- of function lgc-46 mutants specifically affect the decay phase, but not the rise phase, of eEPSC, our data support a model where upon a burst of ACh release, opening of LGC-46 channels limits further SV release in the sustained late phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This model is inferred from the observation that lgc-46 mutations specifically affect the decay phase of evoked release.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "bdddc306-fbe1-4899-b6ee-628d09502eaa",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C89",
+      "claim": "LGC-46(gf) exhibits a strong inhibitory effect on synaptic release under elevated neuronal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "LGC-46(gf) also exhibits a strong inhibitory effect on synaptic release under elevated neuronal activity, suggesting that the mutant channel could have increased sensitivity to ligands, higher channel conductance or prolonged open state, thereby affecting the basal activity of the cholinergic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the reduced frequency of endogenous EPSCs in lgc-46(gf) mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "45e2bda6-7ba9-4199-9349-7f753c5f56b1",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C90",
+      "claim": "The mutant LGC-46(gf) channel could have increased sensitivity to ligands, higher channel conductance or prolonged open state.",
+      "claim_type": "EXPLICIT",
+      "source": "LGC-46(gf) also exhibits a strong inhibitory effect on synaptic release under elevated neuronal activity, suggesting that the mutant channel could have increased sensitivity to ligands, higher channel conductance or prolonged open state, thereby affecting the basal activity of the cholinergic motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as possible mechanisms for the gain-of-function phenotype.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "1038c86c-6cf1-4ae3-a461-d880eed4b59a",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C91",
+      "claim": "Rapid feedback inhibition of SV release upon stimulation can contribute to temporal resolution of neural activity within the circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid feedback inhibition of SV release upon stimulation can contribute to temporal resolution of neural activity within the circuit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the functional significance of the mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "2d3ce29c-4054-4b36-b8b9-6dcac367a43b",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C92",
+      "claim": "A tightly regulated sharp decay of evoked EPSCs can ensure transient and adequate release of neurotransmitter to match high-frequency stimuli, possibly without triggering desensitization of postsynaptic receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "A tightly regulated sharp decay of evoked EPSCs can ensure transient and adequate release of neurotransmitter to match high-frequency stimuli, possibly without triggering desensitization of postsynaptic receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred as a functional consequence of the observed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d908a940-fe6b-478b-97aa-cd83acd2db7d",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C93",
+      "claim": "Sharpening of synaptic activities by presynaptic LGICs can minimize unwanted cross-talks between synapses and neurons, allowing accurate information encoding in high frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Sharpening of synaptic activities by presynaptic LGICs can minimize unwanted cross-talks between synapses and neurons, allowing accurate information encoding in high frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred as a functional consequence of the observed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "04cadb1d-e8c6-4056-9747-dc3fb625e3a1",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C94",
+      "claim": "This mode of neural control may be particularly suited for synapses with graded potential, such as the case in C. elegans and those in the retina of vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mode of neural control can contribute to the overall circuit performance and may be particularly suited for synapses with graded potential, such as the case in C. elegans and those in the retina of vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the properties of the mechanism and knowledge of synaptic physiology.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d9996601-4a05-4c7e-bbb7-39aeaddb3803",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C95",
+      "claim": "Injection of acetylcholine to Aplysia pleural ganglia caused rapid inhibitory postsynaptic potential in a chloride concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Injection of acetylcholine to pleural ganglia caused rapid inhibitory postsynaptic potential in a chloride concentration-dependent manner, suggesting the presence of ACh-gated anion channels (Kehoe, 1972a, 1972b; Kehoe and McIntosh, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kehoe, 1972a, 1972b and Kehoe and McIntosh, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "4ef43302-eef3-453a-8cfb-d874df2b4f39",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C96",
+      "claim": "The identity of ACh-gated anion channels in Aplysia remains unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The identity of these channels in Aplysia remains unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e8962d4b-c72e-43b3-ae71-5b44cf366e13",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C97",
+      "claim": "The discovery of C. elegans ACC proteins has provided molecular evidence for ACh-gated chloride channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of C. elegans ACC proteins has provided molecular evidence for ACh-gated chloride channels (Putrenko et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Putrenko et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "08f8d8f4-3ef8-48a3-9093-9773708dab70",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C98",
+      "claim": "Several ACC channels display differential expression in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Several ACC channels are recently shown to display the differential expression in neurons (Pereira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pereira et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "3ef5e0d3-5007-4bdb-b3db-597bdca137cb",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C99",
+      "claim": "ACC-2 has been implicated in regulation of reversal behavior, presumably as a postsynaptic receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "ACC-2 has been implicated in regulation of reversal behavior, presumably as a postsynaptic receptor (Li et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Li et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "6296dc32-3682-47ac-841a-abbab42bbb1d",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C100",
+      "claim": "ACC-4 acts as a functional partner of LGC-46 at the presynaptic release site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a conclusion that ACC-4 acts as a functional partner of LGC-46 at the presynaptic release site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from genetic interaction and colocalization data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "d7235740-b8a9-49f0-932c-41163e96894b",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C101",
+      "claim": "Increasing presynaptic inhibition using lgc-46(gf) dampens overexcitation in the acr-2(gf) seizure model.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing presynaptic inhibition using lgc-46(gf) dampens overexcitation in the acr-2(gf) seizure model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the suppression of acr-2(gf) convulsions by lgc-46(gf).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "0b71b649-6c12-43bb-9bf4-689ae1bf8826",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C102",
+      "claim": "The molecular nature and functional properties of acr-2(gf) show similarities to gain of function mutations in human CHRNB2.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular nature and functional properties of acr-2(gf) show similarities to gain of function mutations in human CHRNB2, the \u03b22 subunit of neuronal nicotinic receptors, which have been identified as causal in autosomal dominant nocturnal frontal lobe epilepsy (Phillips et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Phillips et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "db5c1127-d405-420c-9acc-7e032b01d7c6",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C103",
+      "claim": "Gain of function mutations in human CHRNB2 have been identified as causal in autosomal dominant nocturnal frontal lobe epilepsy.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular nature and functional properties of acr-2(gf) show similarities to gain of function mutations in human CHRNB2, the \u03b22 subunit of neuronal nicotinic receptors, which have been identified as causal in autosomal dominant nocturnal frontal lobe epilepsy (Phillips et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Phillips et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "c5e0bd48-7a45-4f4d-b2cb-0d6f466fcccd",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C104",
+      "claim": "Mutant CHRNB2 proteins result in hyperactive channels and can alter the local circuit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies using cell lines and transgenic mouse models show that these mutant CHRNB2 proteins result in hyperactive channels, and can alter the local circuit activity (Manfredi et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Manfredi et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "1bbf50aa-3662-4a56-a1d7-1aeee35c9908",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C105",
+      "claim": "The hyper-excitation in acr-2(gf) animals can be suppressed by increasing presynaptic inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations that the hyper-excitation in acr-2(gf) animals can be suppressed by increasing presynaptic inhibition suggest alternative ideas to manage circuit dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the suppression of acr-2(gf) phenotypes by lgc-46(gf).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "ae40f2ee-e8c1-4702-acd8-cd6f67a9b0a0",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C106",
+      "claim": "Malfunction of presynaptic glycine channel can partially contribute to startle disease (hyperekplexia) in a mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, malfunction of presynaptic glycine channel can partially contribute to startle disease (hyperekplexia) in a mouse model (Xiong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Xiong et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "63e7069c-67df-4909-a82b-a33b526b30b5",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "claim_id": "C107",
+      "claim": "Ionotropic anion channels should be considered potential targets for modulating neuronal circuit function and in treatments for neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest ionotropic anion channels should be considered potential targets for modulating neuronal circuit function and in treatments for neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the findings about presynaptic anion channels and their role in circuit function.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LGC-46 is a member of the ACC channel family that localizes specifically to presynaptic terminals of cholinergic motor neurons. The protein shows punctate localization in dorsal nerve cords and colocalizes with presynaptic markers UNC-10 and RAB-3, representing the first reported LGIC localized to presynaptic terminals in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C23 provide converging evidence from phylogenetic analysis (C1), imaging data showing axonal localization (C2, C18-C20), and quantitative colocalization with presynaptic markers (C21-C22). The novelty claim (C23) is appropriately qualified as being based on the authors' knowledge. The localization data is well-controlled with appropriate quantification and shuffled controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "7610bb41-c465-4cbe-8416-a51735bee6ac",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loss of lgc-46 specifically prolongs the decay phase of evoked synaptic vesicle release without affecting spontaneous activity, synapse morphology, or the rise phase of evoked release. The prolonged decay results in increased late-phase charge transfer, and this phenotype is rescued by cholinergic motor neuron-specific expression of LGC-46, supporting a presynaptic auto-receptor function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C39 provide comprehensive electrophysiological evidence showing selective effects on evoked but not spontaneous release, with appropriate controls and rescue experiments. The distinction between early and late phase release (C34-C35) is quantitatively supported. The conclusion that LGC-46 acts presynaptically (C39) is well-justified by the combination of localization and functional data, though it remains an inference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "33c023d8-d695-46d1-b938-77613e947b86",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A missense mutation M314I in the TM2 domain of LGC-46 causes gain-of-function that shortens evoked release decay and reduces synaptic transmission. The mutation does not alter protein localization but enhances the inhibitory effect on synaptic vesicle release, reducing both amplitude and decay time of evoked EPSCs while also decreasing spontaneous EPSC frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 establish the gain-of-function nature through genetic criteria (suppression of acr-2(gf) by ju825 but not by null alleles, and phenocopy by overexpression). Claims C57-C65 provide electrophysiological characterization showing opposite effects to loss-of-function. The localization control (C57) is important for interpretation. The conclusion that M314I creates an overactive channel (C65) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b20074a0-123c-428c-b4fa-2072b5b65856",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "LGC-46 gain-of-function ameliorates cholinergic over-excitation in the acr-2(gf) seizure model through anion-selective channel activity. The suppression requires the PAR motif for anion selectivity and acts cell-autonomously in cholinergic motor neurons, demonstrating that presynaptic inhibition can compensate for circuit hyperexcitability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C44, C49-C56 provide strong evidence for the therapeutic-like effect through behavioral assays, cell-type specificity experiments, and PAR motif mutagenesis. The requirement for anion selectivity (C56) is directly tested and supports the proposed mechanism. The connection to the acr-2(gf) model (C40-C43) is well-established by prior work. This represents a functional validation of the presynaptic inhibition mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ACC-4 functions as a required partner for LGC-46 at presynaptic terminals. ACC-4 localizes to presynaptic sites independently of LGC-46, and loss of acc-4 abolishes the gain-of-function effects of LGC-46(M314I) while also prolonging decay phase similar to lgc-46 loss-of-function. The two proteins may form a heteromeric channel or interact indirectly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C85 provide strong genetic and electrophysiological evidence for functional interaction between LGC-46 and ACC-4. The genetic screen (C71-C72) appropriately tested multiple ACC family members. The epistasis analysis (C80-C82) and phenotypic similarity (C84) support functional partnership. The localization independence (C78-C79) is well-demonstrated. However, the mechanism of interaction (C86-C87) remains speculative, which is appropriately acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "1cfb059b-7bac-424d-ad33-b07aa854922a",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors propose a model where LGC-46 channels open upon acetylcholine release to limit further synaptic vesicle release in the late phase, providing rapid feedback inhibition that contributes to temporal resolution of neural activity. This mechanism may be particularly suited for synapses with graded potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 presents a mechanistic model that is well-supported by the selective effects on decay phase from both loss- and gain-of-function mutations. Claims C91-C94 discuss functional implications that are reasonable inferences from the data, though they remain somewhat speculative. The model is consistent with all experimental observations and provides a coherent framework for understanding the results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on presynaptic ligand-gated ion channels from historical studies in cat spinal cord and crayfish, molecular identification in C. elegans and mammals, and connections to human epilepsy and hyperekplexia. This contextualizes LGC-46 within a broader framework of presynaptic inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C16 and C95-C106 are appropriately cited to primary literature and represent accurate summaries of prior work. These claims establish the historical and molecular context for the current findings. The citations appear appropriate and the knowledge claims are consistent with established understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "e125c797-d1c9-4b56-b849-7ef9eb0a515d",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript correctly identifies aldicarb as an acetylcholinesterase inhibitor, levamisole as a postsynaptic acetylcholine receptor agonist, and picrotoxin as an antagonist of ionotropic GABA receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C10 represent established pharmacological knowledge that is correctly stated. These are standard tools used in C. elegans neurobiology and the characterizations are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    },
+    {
+      "id": "136b6085-5774-43ef-9c22-633d6a09cdc3",
+      "content_id": "cc96a0df-d3a5-478f-a9ec-df6a9ef977d2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors suggest that ionotropic anion channels should be considered potential targets for modulating neuronal circuit function and treating neurological disorders.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C107 is a reasonable inference from the demonstrated ability of lgc-46(gf) to suppress seizure-like behavior in the acr-2(gf) model, combined with the connections to human epilepsy and hyperekplexia discussed in the paper. While speculative regarding therapeutic applications, it is appropriately qualified and represents a logical extension of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:23:07.158483Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ff696318-f63b-42bd-b881-a1408a935584",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "382a6a39-f134-48a5-bdc9-927e277ebef8",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "dfcb4db3-008b-4efe-8716-5c834684aedc",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "c2e4bf89-8b7f-4071-a7ef-365aeb89da8d",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "956b631c-57e9-4dea-9e18-b8b5fa9fca43",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "4c63dfa1-7205-4219-b8bd-d36e4089068e",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "c1c9f94d-bc6f-404b-8215-2fce61f783b0",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "e8e11649-e7a8-4183-b43d-e41318f861ea",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "81bafb26-e7ce-4d2c-919a-bd8d7fdafaef",
+      "result_id": "aa39dd10-d3d1-47c3-a256-20be3daa2d23"
+    },
+    {
+      "claim_id": "2467f4ba-7b08-4ebf-b2ca-fd69fa78bcc4",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "b23c0169-b1cc-4836-89ed-bc5eef04fcd5",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "255d7f67-1eca-46aa-a56f-d27a2e93d205",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "05fbbba4-554b-4bd3-bb8e-e8285ea367ed",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "95e68491-f511-46ac-9282-dcfc7e86327c",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "bb33ffb4-f68d-4461-bec3-8b78a6fa0d8a",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "80ff7b5e-ec5a-4917-a7d4-c87e4964335e",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "abacc7c6-e61c-4519-a5ad-ff11fbe14384",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "bd21d822-050c-4c48-84dd-b6fb69c00924",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "01876dcc-8f4c-417a-be61-5db307548c28",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "a78f0e8b-b777-453c-997c-bb1afb2ee879",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "631914a3-9d92-4210-9787-fe416e8c898b",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "4df6fb5a-803d-4590-9416-c2d8cf5deb36",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "e8d7b863-f81d-4eb7-b337-fa246ac278ca",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "6d012dcb-4fd9-4765-9897-e03b157878b6",
+      "result_id": "7610bb41-c465-4cbe-8416-a51735bee6ac"
+    },
+    {
+      "claim_id": "e2ae586a-5ba5-470e-9fd2-d8498b586f08",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "615bbd94-3fe8-4b71-aeec-63781e1eaaba",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "66edf25d-a356-4934-b087-b24580a76a2a",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "8592c173-d9e3-4c15-9a10-8bf9cbf30b45",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "ca47287c-a507-4ea2-9a5e-824f46c53275",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "0acb977e-5e1b-4dc0-8df2-44fa77225982",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "fc8d9fd9-94cd-4897-be32-8708ea88c4c9",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "ca067400-9f0b-4e08-b748-06e17423965f",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "77710c64-7a79-43d4-91b1-800484213d2c",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "1ef05951-9c60-47c2-b97d-b4662e406dd3",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "d3131fc3-2156-496c-8cdd-77fe569bfb77",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "22e96a51-75e7-4196-abcc-9c8027d47488",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "cf853445-4131-4e35-afbc-c71bbf0ea10b",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "0619a2a9-7090-4731-9837-bde31dea3334",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "afdb198b-2067-4d71-b8e6-66abe0280a14",
+      "result_id": "33c023d8-d695-46d1-b938-77613e947b86"
+    },
+    {
+      "claim_id": "e6a77ba7-5641-4666-8977-1eb3789cb6c0",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "4c592e35-2605-4b21-8ea4-2f032e66ab3a",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "aa30de90-6dec-4783-a5bf-2f6abff66364",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "2abb560c-3f65-41eb-9ce0-11d0b003d5af",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "53a89631-b4ef-445f-850d-53ceab6bf27c",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "5b89dae7-adef-42a3-b8ea-b7cc5d7d7778",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "615bbd94-3fe8-4b71-aeec-63781e1eaaba",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "f8bf6e02-b96e-4abd-97d6-4ac0094b60b8",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "e49b9fe9-4b10-4410-8dcb-e098cb0a2552",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "c9100084-136b-40fc-99f3-24e8d1e8fbd6",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "6da24ff0-3688-4ad0-ac83-ce3944ca1b84",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "6464a4a5-0be0-49ea-9a04-d14ccdcac185",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "b4a75bc4-f740-4d1b-8099-48e6647c6ea6",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "2c69ec65-ed63-4c42-8eee-7c9f2979e4b3",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "4ef6f350-227f-412d-9ae6-bffe17810e9b",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "d7235740-b8a9-49f0-932c-41163e96894b",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "1bbf50aa-3662-4a56-a1d7-1aeee35c9908",
+      "result_id": "b20074a0-123c-428c-b4fa-2072b5b65856"
+    },
+    {
+      "claim_id": "d93028a3-0ea3-4a03-8d97-1d3ac25d48d9",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "08f4fe5c-423b-49c9-a90b-55bdb9f36495",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "4107b7e8-62ce-4606-b3e6-ab6e95e50070",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "3ed3da72-4915-4a87-a396-2e8b3f396351",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "05acc4f5-31f5-4fe0-8b4a-bfa0d7314dcd",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "34196ec7-7481-44ff-ae8c-11f80a6b5093",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "97db0727-dea0-4aab-a88c-29b5a28938f1",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "21f9c5d7-503d-4083-aada-d87e9ec14c53",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "a671ab3f-6586-463d-a87f-3944ab8cc352",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "f659cfa3-ef0f-4a17-bede-7e71c18bb955",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "719eb482-2b98-491b-8fa8-f371e2c0a919",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "4e5e292c-f3e7-4d28-beff-b745bc9e4ff0",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "1eae1432-150b-4229-843b-656d1364e8ab",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "85d483af-9541-4e0b-9bd5-bca190a655a0",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "ad13d755-93f8-43cc-bbb2-4e8fdb59e5d0",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "514b846d-e2ae-49b7-884e-0e6ab20399b9",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "8d467897-d1f8-4ee3-ab99-0ebb96e52572",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "56d64b3f-7ac8-41cb-9e8b-94fcc458ecb9",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "732c40db-cb4f-4edf-9e78-dbf3ce076548",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "7f4420fe-673f-4de8-99b0-57b80adb68f2",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "50775156-fd0d-4e1c-93d8-52daff1bdbff",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "d55d17a5-2126-4d49-9697-aea63fddca29",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "6296dc32-3682-47ac-841a-abbab42bbb1d",
+      "result_id": "f1d79a12-e9cb-408f-a0ef-66768c5219b8"
+    },
+    {
+      "claim_id": "9bf42553-4a11-4f86-82a7-816ba2ef8d63",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "bdddc306-fbe1-4899-b6ee-628d09502eaa",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "45e2bda6-7ba9-4199-9349-7f753c5f56b1",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "1038c86c-6cf1-4ae3-a461-d880eed4b59a",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "2d3ce29c-4054-4b36-b8b9-6dcac367a43b",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "d908a940-fe6b-478b-97aa-cd83acd2db7d",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "04cadb1d-e8c6-4056-9747-dc3fb625e3a1",
+      "result_id": "1cfb059b-7bac-424d-ad33-b07aa854922a"
+    },
+    {
+      "claim_id": "ff75f730-f4cb-472a-980a-a4dd1a918529",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "347bf771-90d0-45cc-81dc-94e374026faa",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "05551f37-0421-4b71-9f0a-5e68b06dee2f",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "c4de805f-4ad8-4914-8a4d-0cb98b6f1f72",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "b909d393-9fed-47de-886b-995bb92d9af0",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "ffbb8d72-629b-4b06-90c1-89d47b0d8353",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "960317e5-4935-4a0a-93ec-a33c0b2dfadb",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "8488bd9a-40c0-4972-85d7-15e61eb43c90",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "68cc9cbb-6509-4b03-ade7-65aa8ce6d807",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "936a9429-8026-43b1-b75d-ba696a6e324c",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "d9996601-4a05-4c7e-bbb7-39aeaddb3803",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "4ef43302-eef3-453a-8cfb-d874df2b4f39",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "e8962d4b-c72e-43b3-ae71-5b44cf366e13",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "08f8d8f4-3ef8-48a3-9093-9773708dab70",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "3ef5e0d3-5007-4bdb-b3db-597bdca137cb",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "0b71b649-6c12-43bb-9bf4-689ae1bf8826",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "db5c1127-d405-420c-9acc-7e032b01d7c6",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "c5e0bd48-7a45-4f4d-b2cb-0d6f466fcccd",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "ae40f2ee-e8c1-4702-acd8-cd6f67a9b0a0",
+      "result_id": "b9c4426e-ed06-4132-b1cc-8b75d3eaea85"
+    },
+    {
+      "claim_id": "bc46cff9-a628-4e66-b3ae-16c84af59a2d",
+      "result_id": "e125c797-d1c9-4b56-b849-7ef9eb0a515d"
+    },
+    {
+      "claim_id": "be3566f6-32ae-40b1-83fd-1c356e9c6e17",
+      "result_id": "e125c797-d1c9-4b56-b849-7ef9eb0a515d"
+    },
+    {
+      "claim_id": "c4de805f-4ad8-4914-8a4d-0cb98b6f1f72",
+      "result_id": "e125c797-d1c9-4b56-b849-7ef9eb0a515d"
+    },
+    {
+      "claim_id": "63e7069c-67df-4909-a82b-a33b526b30b5",
+      "result_id": "136b6085-5774-43ef-9c22-633d6a09cdc3"
+    }
+  ],
+  "comparisons": []
+}

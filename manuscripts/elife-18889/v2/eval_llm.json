@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A median of 14% (range 0\u201342%) of HIV-1 DNA sequences from viral reservoirs were hypermutated due to G-to-A mutations, with an additional 3% (range 0\u201312%) containing stop codons not due to hypermutation. This finding is consistent with prior studies reporting 9\u201330% hypermutation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C32, C33, and C34 provide direct measurements from sequencing data showing hypermutation frequencies, with C33 confirming consistency with previous literature. The data are clearly presented in Figure 2\u2014figure supplement 3, and the measurements are straightforward quantifications from the sequencing analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C49"
+    ],
+    "result": "HIV-1 DNA sequences in reservoirs showed no evidence of evolution during 3\u201318 years of suppressive ART, in contrast to pre-ART plasma RNA populations which evolved at rates of 1\u20134 \u00d7 10\u207b\u00b3/year. Root-to-tip distances remained stable over time for both non-hypermutated and hypermutated DNA sequences during ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36\u2013C40, and C49 collectively demonstrate lack of evolution during ART through phylogenetic analysis (Figure 3), statistical testing (Table 2), and root-to-tip distance measurements. The contrast between pre-ART evolution and on-ART stability is well-documented with appropriate statistical tests showing significant evolution pre-ART (p < 0.05 for all patients) but no significant evolution during ART.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C41",
+      "C42",
+      "C47",
+      "C50",
+      "C62"
+    ],
+    "result": "Approximately 60% of HIV-1 DNA reservoir sequences were most similar to RNA variants present in plasma during the last year before ART initiation, with representation of earlier variants decreasing with a half-life of 0.75 years going backward in time from therapy start.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C29, C41, C42, C47, C50, and C62 are supported by comparative sequence analysis shown in Figures 2 and 4. The quantitative finding of 60% matching late pre-ART variants and the 0.75-year half-life are derived from systematic comparison of DNA sequences to longitudinal RNA samples. The phylogenetic trees and distribution analyses provide clear visual and quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Approximately 5% (2% excluding one outlier patient) of DNA reservoir sequences matched plasma variants from the first 6 months post-infection, which is higher than the expected 0.14% if seeding were uniform over time, suggesting massive early seeding of the reservoir during acute infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43\u2013C46 and C64\u2013C67 present data on early variant overrepresentation with appropriate statistical comparison to expected values under uniform seeding (C45). The finding is supported by Figure 4 panel B, though the authors acknowledge this pattern was observed in only 5 of 10 patients (C67), which appropriately tempers the conclusion. The inference of massive early seeding is reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C48",
+      "C73",
+      "C89"
+    ],
+    "result": "The data indicate that HIV-1 DNA variants turn over with approximately one-year half-life during untreated infection, but suppressive ART halts this turnover. Persistent viral replication is not supported as a mechanism for reservoir maintenance during suppressive therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5\u2013C7, C48, C73, and C89 are supported by the combined evidence of: (1) lack of evolution during ART (C3, C40), (2) overrepresentation of late pre-ART variants (C41, C42), and (3) decay of earlier variants with 0.75-year half-life (C42). The inference of ~1-year turnover during untreated infection is derived from the decay rate analysis. The conclusion against persistent replication is well-supported by the stability data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The study's findings of no evolution during ART are incompatible with Lorenzo-Redondo et al. (2016)'s reported evolution rates of 7.4\u201312 \u00d7 10\u207b\u00b3/year. The authors propose that the Lorenzo-Redondo findings may reflect compositional changes from death of short-lived cells rather than true forward evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51\u2013C57 present a critical comparison to prior work, but the alternative explanation (C53\u2013C55) is speculative. While the incompatibility between the studies is clear (C52), the proposed mechanism for the discrepancy relies on modeling assumptions shown in Figure 3\u2014figure supplement 3 rather than direct experimental evidence. The authors acknowledge tissue/blood mixing (C57) should make the populations comparable, but cannot definitively resolve the discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C78",
+      "C79"
+    ],
+    "result": "The study cannot fully exclude the possibility of low-level replication of replication-competent viruses, as the short p17gag region sequenced cannot reliably distinguish replication-competent from defective viruses, and any such replication would be below the detection limit of the deep-sequencing method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, C78, and C79 appropriately acknowledge important limitations of the study design. The authors correctly note that sequencing only p17gag (387 bp) cannot assess full genome integrity, and that replication-competent viruses may be a minority among the predominantly defective reservoir. This is a fair and important caveat to the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C81",
+      "C82",
+      "C87"
+    ],
+    "result": "Haplotype abundance varied widely (0.1\u201350% of reads), likely reflecting clonal expansion, independent integration of identical sequences, and PCR resampling, though the relative contributions of these mechanisms could not be determined. Sensitivity analyses suggested clonal expansion did not qualitatively affect the main results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C81, C82, and C87 address an important technical consideration. The wide variation in haplotype frequencies is documented in Figure 2\u2014figure supplement 2 (C30). The authors appropriately acknowledge they cannot distinguish between biological (clonal expansion, independent integration) and technical (PCR resampling) sources (C82), but demonstrate through sensitivity analyses that counting each haplotype once yields similar results (C87, Figures 3\u2014figure supplement 2 and 4\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The estimated one-year half-life for infected cell clones during untreated infection is more dramatic than the 3- to 4-fold increased death rate reported in earlier studies, possibly because earlier studies measured individual cell lifespans while this study measured clonal lifespans (infected cells and their progeny).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C75 compare the current findings to prior work, but the proposed explanation (C75) for the discrepancy is speculative. The distinction between individual cell lifespan and clonal lifespan is conceptually reasonable, but the quantitative relationship between these measures is not established. The comparison relies on different methodologies (HIV sequence-based vs. cell labeling) that may not be directly comparable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C85",
+      "C86"
+    ],
+    "result": "The study did not sort cells by type or subset, and did not sequence LTR ends for integration site analysis. However, it is reasonable to assume most HIV-1 DNA sequences were from memory CD4+ T-lymphocytes based on prior literature. The p17gag region was chosen because it was part of the existing RNA dataset and has sufficient diversity for RNA-DNA comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C77, C85, and C86 transparently describe study limitations and design choices. The assumption that most sequences are from memory CD4+ T cells (C77) is reasonable given citations to prior work (C11, C13), though the lack of cell sorting (C76) prevents verification. The rationale for analyzing p17gag (C86) is clearly stated and appropriate for the study's comparative goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C80"
+    ],
+    "result": "Defective HIV-1 proviruses serve as unique in vivo labels of individual memory CD4 cell clones, enabling tracking of cell fates similar to T-cell receptor sequencing. The results are consistent with long T-cell lifetimes (>17\u201330 years based on prior studies) once HIV replication is suppressed by ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68\u2013C72 and C80 present a conceptual framework supported by citations to prior work on T-cell clone persistence (C70, C71). The inference that defective proviruses act as inert labels (C68, C80) is reasonable and facilitates the study's analyses. The consistency with long T-cell lifetimes during ART (C72) follows logically from the lack of sequence evolution observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims establishing the context of HIV-1 persistence, reservoir characteristics, measurement methods, and prior findings on reservoir stability and maintenance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8\u2013C27 provide established background knowledge supported by extensive citations to prior literature. These claims appropriately set the scientific context for the study, including the problem of HIV persistence (C1, C10), reservoir characteristics (C11\u2013C14), measurement challenges (C15\u2013C19), and prior findings on reservoir dynamics (C20\u2013C27). All are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "The study population consisted of 10 HIV-1 infected patients diagnosed in Sweden between 1990 and 2003, with well-defined infection times, \u22655 years treatment-naive, and \u22652 years of suppressive ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 describes the study cohort, which is detailed in Table 1 and Figure 1. The patient characteristics and selection criteria are clearly documented, providing appropriate context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "A proportion of sequences without overt inactivating mutations in p17gag were likely also replication incompetent due to mutations or deletions outside the sequenced region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is a reasonable inference based on prior studies (Ho et al., 2013; Bruner et al., 2016) showing that many proviruses have defects outside any single gene region. This appropriately acknowledges that the study's focus on p17gag cannot capture all sources of defectiveness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The finding of genetic stability in DNA reservoirs is consistent with prior studies by Josefsson et al. (2013) and von Stockenstrom et al. (2015), which found that defective HIV-1 DNA integrants are maintained by cell proliferation and longevity rather than ongoing viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C61 appropriately place the current findings in the context of prior work. The consistency with previous studies strengthens the conclusions, and the cited studies used similar approaches to reach comparable conclusions about reservoir maintenance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Frenkel et al. (2003) reported persistence of greater numbers of earlier versus more recent virus variants in children receiving suppressive ART, contrasting with the current study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 accurately cites a prior study with findings that differ from the current results. The authors appropriately note this discrepancy, though they found a similar but less prominent pattern in some patients (C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C88"
+    ],
+    "result": "The authors are using Primer ID sequencing to better understand viral haplotype dynamics, and note that integration site analysis (an alternative method) was not possible in this study. Cohn et al. (2015) found limited decrease in single integrations after ART start, consistent with the current results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C88 describe ongoing work to address limitations (C83), alternative methods (C84), and supporting evidence from prior work (C88). These appropriately acknowledge the study's limitations while noting consistency with other approaches and plans for future work.",
+    "result_type": "MINOR"
+  }
+]

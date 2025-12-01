@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "IS interneurons exhibit intrinsic irregular firing characterized by broad, random dispersion of interspike intervals (ISI) with CV(ISI) ranging from 0.1-0.6 at ~10 Hz, persisting even when pharmacologically isolated from synaptic input. This irregularity was confirmed in both acute slices (77% of GFP+ cells, n=82/106) and dissociated primary cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support intrinsic irregularity: (1) persistence with synaptic blockers (C52), (2) reproduction in dissociated cultures lacking normal connectivity (C54-C55), (3) quantitative characterization showing gamma-distributed ISIs (C47-C48) and frequency-dependent CV(ISI) (C49-C51). Sample sizes are adequate (n=82 cells for basic characterization, n=45 for CV measurements). The use of genetically-labeled cells (Gad2-GFP) provides cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Recurrence plot analysis revealed significant determinism in spike timing: 5/10 cells showed both significant recurrence and determinism (p<0.05), 2/10 showed only recurrence, and 3/10 showed neither. This suggests that irregular spike sequences contain recurrent, correlated patterns of 4+ successive intervals, implicating coordinated voltage-dependent channel dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the recurrence analysis is methodologically sound (embedding dimension m=4, \u03b5=1 SD, surrogate testing), the result is heterogeneous across cells (only 50% showing full determinism). The claim that cells without determinism had 'particularly strong voltage noise' (C63) is stated but not quantified or shown. The sample size (n=10) is small for drawing strong conclusions about deterministic dynamics. The modeling confirmation (C62) is circular since model parameters were fit to reproduce experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Subthreshold membrane potential fluctuations in IS neurons switch on above -50 mV and depend on voltage-gated sodium channels. TTX eliminated these fluctuations (n=6). Cell-attached recordings revealed ~20 pS sodium channel openings with persistent late openings up to 100 ms (4/5 patches), and whole-cell recordings confirmed TTX-sensitive persistent sodium current (prominent in 11/13 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The voltage-dependence of fluctuations is clearly demonstrated (Figure 3a), TTX sensitivity is shown experimentally (C65-C66, n=6), and single-channel properties match known sodium channel characteristics (C67-C68, reversal potential +120 mV). The persistent sodium current is well-documented (11/13 cells). However, the claim that this 'could be involved' in irregularity (C72) is speculative without direct causal manipulation at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Calcium signaling is not centrally involved in IS neuron irregularity, as neither calcium-activated potassium channel blockers (iberiotoxin, apamin) nor intracellular BAPTA (10 mM) reduced firing irregularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result is clearly demonstrated with BAPTA showing maintained irregularity (Figure 4\u2014supplement 1, CV control=0.22 vs BAPTA=0.44). This is an important control ruling out calcium-dependent mechanisms. The increase in CV with BAPTA may reflect disruption of other calcium-dependent processes, but the key point\u2014that irregularity persists\u2014is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "IS neurons express a fast-inactivating A-type potassium current (gKt) with properties consistent with Kv4 channels: activation/inactivation overlap near threshold, peak within 1-2 ms, inactivation over 20-30 ms, recovery \u03c4~40 ms at -70 mV, sensitivity to 4-AP and phrixotoxin (55% block at 5 \u00b5M), insensitivity to \u03b1-dendrotoxin and TEA, single-channel conductance ~10-12 pS, and high Kv4.2 mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple converging lines of evidence support Kv4 identity: (1) kinetic properties match Kv4 (C79-C82), (2) pharmacology consistent (4-AP and PhTX sensitive, C84-C85; dendrotoxin and TEA insensitive, C83), (3) molecular expression data from literature (C148-C149), (4) single-channel properties (C90-C92). The peak conductance estimate (22.37\u00b114.41 nS, n=8) has high variability but is quantified. The attribution of the pre-spike dip to gKt (C88-C89) is reasonable inference. However, definitive molecular identification would require genetic manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Dynamic clamp injection of gKt bidirectionally modulates firing irregularity: negative gKt (subtraction) regularized firing and reduced AHP amplitude, while positive gKt increased irregularity and subthreshold fluctuations. Effects were consistent at 10 Hz (n=42 cells, p<9.8\u00d710\u207b\u00b9\u2076 for +gKt, p<1.6\u00d710\u207b\u2078 for -gKt) and correlated with capacitance-normalized conductance (r=0.59, p<2.66\u00d710\u207b\u00b9\u00b2). Pharmacological blockade (4-AP: 44% CV reduction, n=5; PhTX: 23% reduction, n=3) confirmed the role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamic clamp experiments provide strong causal evidence linking gKt to irregularity. Statistical power is excellent (n=42, highly significant p-values). The bidirectional effect strengthens causality. Pharmacological confirmation with two different blockers supports the conclusion. The correlation with normalized conductance (C100) appropriately accounts for cell size. However, the pharmacology sample sizes are small (n=5 for 4-AP, n=3 for PhTX), and partial block by PhTX (55%) may reflect incomplete specificity or channel heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "A two-compartment conductance-based model incorporating gKt and persistent sodium conductance reproduces irregular firing through two mechanisms: (1) long pauses near a fixed-point 'ghost' and (2) unstable subthreshold oscillations at ~28 Hz. Stochastic gKt is the primary noise source, strongly amplified by voltage-gated sodium conductance\u2014both are required for realistic subthreshold fluctuations. The longer correlation time of gKt noise (10 ms vs 1 ms for NaP) makes it less filtered by membrane capacitance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model successfully reproduces key experimental features (ISI distributions, CV values, subthreshold oscillations). The dissection of noise sources (C112-C115) is informative, showing gKt noise is dominant when amplified by sodium conductance. The mechanistic explanation via correlation time (C116) is biophysically sound. However, model validation is limited: parameters were fit to match experiments, so agreement is somewhat circular. The claim of 'two mechanisms' (C110) is based on phase-space analysis but lacks independent experimental validation of these distinct dynamical states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Model simulations show that increasing gKt to 12 nS creates a region of structurally-stable variability for firing frequencies up to 20-30 Hz, above which CV(ISI) subsides. The deterministic model produces unrealistically high CV(~1), but adding stochastic channel noise reduces this to experimentally-observed values (~0.3). Stochastic noise also linearizes the frequency-current relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model predictions match experimental observations regarding frequency-dependence of irregularity (C49, C119). The finding that noise 'dilutes' excessive deterministic irregularity (C120-C121) is important for understanding the interplay of deterministic and stochastic mechanisms. The linearization of f-I curves by noise (C122-C123) is a testable prediction. However, the specific gKt value (12 nS) and frequency boundary (20-30 Hz) are model-dependent and may not precisely reflect biological reality given parameter uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "In simulated gap-junction-coupled networks of 5 IS cells, increasing gap junction conductance produced highly synchronous firing while maintaining the same level of irregularity (CV(ISI)) as uncoupled cells. This implies that nonlinearly-amplified fluctuations are cooperative among cells and well-coupled through gap junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a non-intuitive and important result showing that synchrony and irregularity can coexist. The modeling is clearly presented (Figure 7c-d). However, this is purely computational without experimental validation. The claim about 'cooperative' fluctuations (C126) is mechanistic interpretation rather than direct demonstration. Experimental validation with paired recordings or optogenetic manipulation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Dynamic clamp modulation of gKt differentially affects synchronization to oscillatory inhibition: at 10 Hz, adding gKt reduces synchrony while subtracting gKt enhances it (n=10 each, p=6.5\u00d710\u207b\u2075 for both); at 40 Hz, gKt has no significant effect (p=0.36 and 0.69). This frequency-selective filtering allows IS cells to resist low-frequency rhythms while synchronizing to gamma frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is elegant, using naturalistic stimuli (oscillating GABA conductance + noisy AMPA). The frequency-dependent effect is statistically robust at 10 Hz but absent at 40 Hz, supporting the conclusion. Sample sizes are adequate (n=10 per condition at 10 Hz, n=6-7 at 40 Hz). The mechanistic interpretation (C132-C133) linking rejection to intrinsic dynamics and resonance to subthreshold oscillations is plausible but somewhat speculative. The functional implication (C134) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C179",
+      "C180"
+    ],
+    "result": "The main conclusion: spike time irregularity in IS neurons is generated by a nonlinear dynamical interaction of voltage-dependent sodium and fast-inactivating Kv4 potassium channels just below spike threshold, amplifying channel noise. This represents a specific nonlinear deterministic mechanism in addition to direct stochastic channel noise effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the convergence of multiple experimental approaches: (1) identification of key currents (sodium and gKt), (2) causal manipulation via dynamic clamp showing bidirectional effects, (3) pharmacological confirmation, (4) computational modeling reproducing key features, (5) demonstration of noise amplification. The claim of 'nonlinear interaction' is supported by the voltage-dependence of fluctuations (C64) and the requirement for both conductances (C115). However, the relative contributions of deterministic chaos vs. amplified noise remain somewhat uncertain (see C159-C162).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Irregularity in IS neurons is not simply due to high input resistance: injecting a 2 nS shunting conductance (greatly reducing input resistance) maintained irregularity, and adding artificial K+ conductance (also reducing input resistance) increased rather than decreased variability. This indicates a complex dynamical mechanism dependent on the nonlinearity of gKt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an important control experiment ruling out a simple explanation. The shunting experiment (Figure 5\u2014supplement 1) clearly shows maintained irregularity despite reduced input resistance. The paradoxical increase in variability with added K+ conductance (C155) further supports a mechanism beyond passive membrane properties. This strengthens the case for active, nonlinear dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The model suggests irregularity arises from interaction of deterministic mechanisms (long pause states and unstable subthreshold oscillations) and stochastic channel noise. The deterministic behavior is suggestive of chaos but not rigorously proven. Both deterministic Hodgkin-Huxley equations and single-channel noise are needed for adequate description, with ISI distributions matching experiments when noise is included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors appropriately acknowledge that 'rigorous proof of chaos would require proof of a positive Lyapunov exponent' (C159), which is not provided. The claim that 'both elements are needed' (C162) is supported by model behavior but is model-dependent. The match between model and experimental ISI distributions (C161, Figure 6\u2014supplement 1) is qualitative rather than quantitative. The relative importance of deterministic vs. stochastic components remains unclear and may vary across cells (as suggested by heterogeneity in recurrence analysis, C57-C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Experimental characterization of the Gad2-GFP mouse model: fluorescent cells are concentrated in layer 2 with dendrites in layers 1/2-3 and axons ramifying through cortical layers. Morphology is varied (bitufted, bipolar, multipolar). IS cells (77% of GFP+) have larger somata (~15 \u00b5m), input resistance 331\u00b1164 M\u03a9, and time constant 15.4\u00b17.7 ms (n=82). The remaining 23% are regular-spiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is straightforward anatomical and physiological characterization with adequate sample sizes (n=82 for IS cells, n=106 total). The measurements are standard and well-documented. The identification of two populations (77% IS, 23% RS) is clear. The consistency with previous literature (Galarreta et al. 2004, 2008) supports validity. This provides essential context but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "GFP+ cells in dissociated primary cortical cultures showed robust intrinsic irregular firing and expressed transient K+ and persistent Na+ currents, suggesting that normal morphology and circuit formation are not required for irregularity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The culture experiments (Figure 1e-f, Figure 4\u2014supplement 3) provide strong evidence for cell-autonomous irregularity independent of network connectivity or complex morphology. This is an important control supporting the intrinsic nature of the phenomenon. However, the sample size for cultures is not clearly stated, and developmental stage effects are not discussed (cultures were 12-17 DIV).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C24",
+      "C25",
+      "C135",
+      "C136",
+      "C172",
+      "C173",
+      "C178",
+      "C181"
+    ],
+    "result": "Functional implications: IS cells can synchronize via gap junctions while maintaining irregularity, potentially allowing coordinated impact on cortical networks. The frequency-selective properties could destabilize low-frequency oscillations while stabilizing gamma rhythms and controlling onset/offset of organized gamma firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are largely speculative functional interpretations extending beyond the direct experimental evidence. The gap junction synchronization is demonstrated only in modeling (C124-C126), not experimentally. The claims about network-level effects (C135-C136, C178) are inferences from single-cell properties without network-level validation. The statement that this allows 'coordinated, powerful impact' (C181) is reasonable extrapolation from anatomical connectivity (C26-C27) and modeling, but lacks direct demonstration. These represent plausible hypotheses for future work rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Literature-based characterization: IS cells express CCK, VIP, 5HT3a receptors, and CB1 receptors; originate from caudal ganglionic eminence at E16; form ~10% of CGE-derived interneurons (~30% of all cortical interneurons); concentrated in layer 2 (possibly 50% of interneurons there); have wide axonal arborizations and inhibit pyramidal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited from previous literature (L\u00f3pez-Bendito et al. 2004, Galarreta et al. 2004/2008, Sugino et al. 2006, Miyoshi et al. 2010, Lee et al. 2010) and provide important context. The authors correctly attribute these findings to prior work. This is background information rather than new results from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C145",
+      "C146",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Literature context and comparison: The authors appropriately cite previous work on mechanisms of neuronal irregularity (synaptic noise, transmitter release variability, intrinsic irregularity in other systems) and relate their findings to prior models of irregular firing, stuttering, mixed-mode oscillations, and noise-induced switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The literature review is appropriate and accurately represents prior work. The authors correctly note that their mechanism is 'more specific and more complex' than previous proposals (C168) while acknowledging consistency with the general principle of noise-nonlinearity interaction. The distinction from Englitz et al. 2008 (C145-C146) regarding the specific cell population studied is valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Speculative functional advantages: Active irregularity may be energetically favorable by minimizing unnecessary fluctuations (switching on sharply at threshold), may help create diverse network patterns useful for information representation and pattern recognition, may enhance STDP-based learning, and could be important for decision-making and spontaneous choice generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are entirely speculative proposals about functional advantages, appropriately presented as such ('may have,' 'could be'). They represent reasonable hypotheses but lack any direct experimental support in this study. The claim about energy efficiency (C170-C171) is plausible given the voltage-dependence of fluctuations (C64) but is not quantified. The proposals about information coding, learning, and decision-making (C174-C177) are interesting ideas for future investigation but are not tested here.",
+    "result_type": "MINOR"
+  }
+]

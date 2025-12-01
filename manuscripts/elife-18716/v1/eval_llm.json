@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AAV-Gfap-hM3D(Gq)-mCherry was selectively expressed in GFAP-expressing glia (primarily astrocytes and some tanycytes) in the ARC, with minimal expression in neurons including AgRP/NPY and POMC neurons. The hM3D(Gq) system couples to Gq protein-mediated signaling upon CNO binding, and CNO is specific to DREADD at low concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide strong quantitative evidence for selective glial expression (93.9% S100B+, 99.1-99.3% exclusion from NPY/POMC neurons, 14.9% tanycytes). The characterization is thorough with appropriate immunohistochemistry controls and quantification. Claims C65-C67 accurately describe the DREADD mechanism with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C68"
+    ],
+    "result": "CNO activation of hM3D(Gq)-mCherry in ARC glia induced functional activation (Fos immunoreactivity and Ca2+ responses) in astrocytes but not tanycytes, and increased astrocytic process complexity. These changes mimic physiological astrocyte activation observed during fasting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 provide statistical evidence for CNO-induced astrocyte activation with appropriate controls (p=0.0114 for Fos, p=5.49E-16 for Ca2+). Claim C13 shows similar morphological changes occur during fasting. The comparison between DREADD activation and physiological fasting (C68) is well-supported by parallel observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C69",
+      "C70"
+    ],
+    "result": "Acute activation of ARC glia via CNO (0.3 mg/kg) induced a robust, reversible, and reproducible 3-4 fold increase in food intake during the light phase, with peak feeding within 1 hour. This was accompanied by increased time at food chamber and frequency of food-seeking attempts. The effect was dose-dependent and correlated with viral expression size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide comprehensive behavioral data with appropriate statistics (p<0.0001 for total intake, detailed ANOVA for time course). The reversibility (C15) and dose selection rationale (C69) strengthen the conclusions. Controls show specificity (C21-C22). The experimental design with within-animal comparisons is rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Control experiments demonstrated specificity of the feeding response to glial hM3D(Gq) expression, as CNO had no effect in mice lacking viral expression or with control virus. Despite increased feeding, glial activation did not alter body weight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides essential negative controls confirming the effect requires hM3D(Gq) expression. Claim C23 documents an unexpected observation (no body weight change despite hyperphagia) with appropriate data. These controls are critical for establishing specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "During the dark phase, CNO administration increased food intake within 3 hours, but total 8-hour dark phase intake was not significantly different from saline, possibly due to a ceiling effect when glia may already be activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 shows an effect during early dark phase, but C72 shows no overall difference. The ceiling effect explanation (C73) is speculative without direct evidence of endogenous glial activation at night. This represents an interesting observation but the interpretation requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Disruption of Ca2+ signaling in ARC glia using p130PH reduced astrocyte Fos activity during fasting and decreased food intake specifically during the dark phase, without affecting body weight. This supports an essential role for glia in physiological feeding regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide complementary loss-of-function evidence with appropriate statistics (p=0.0264 for astrocyte Fos, p<0.0001 for food intake). The p130PH mechanism is well-established (C74). The specificity to dark phase and lack of compensation in light phase strengthen the physiological relevance. This is a critical result establishing necessity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C78",
+      "C79"
+    ],
+    "result": "CNO activation of ARC glia depolarized and increased firing of AgRP/NPY neurons (p<0.0001) but induced no significant population-level response in POMC neurons. This differential effect was confirmed by Fos immunoreactivity and was dependent on astrocytic Ca2+ as shown by BAPTA chelation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide strong electrophysiological and immunohistochemical evidence for differential neuronal responses with appropriate statistics. The BAPTA experiment (C33) is a critical mechanistic control demonstrating astrocytic Ca2+ dependence (p=0.0050). The convergence of multiple methods strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C80",
+      "C81"
+    ],
+    "result": "ARC glial activation indiscriminately facilitates both AgRP/NPY and POMC neurons, but POMC neurons receive strong inhibitory input (increased sIPSC frequency) that masks the excitation. When GABA receptors are blocked, POMC neurons show strong depolarization to CNO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide elegant mechanistic evidence showing that apparent selectivity arises from circuit interactions rather than cell-type-specific glial-neuronal connections. The sIPSC data (p=0.0078) and GABAR blocker experiments (p=0.0046) are well-controlled. This is a key mechanistic insight explaining the differential behavioral effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C59",
+      "C82"
+    ],
+    "result": "When AgRP/NPY neurons were inactivated simultaneously with glial activation, CNO-induced feeding was abolished, demonstrating that AgRP/NPY neuronal activity is necessary for glial activation-induced feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides critical necessity data showing no feeding effect when AgRP/NPY neurons are silenced during glial activation. This establishes the ARC glia-AgRP/NPY circuit as essential for the feeding response. The experimental design using dual viral injections is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Glial cells interact with distinct neuronal subtypes non-specifically but confer neuronal subtype-specific modulation through direct modulation of distinct neuronal circuits. The lack of astrocyte-neuronal subtype wiring suggests glia may modulate other ARC neuronal subtypes, potentially explaining the absence of body weight changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims synthesize the mechanistic findings into a coherent model. The non-specific facilitation with circuit-mediated specificity (C40) is well-supported by the experimental data. The speculation about other neuronal populations (C41-C42) is reasonable given the data, though it remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Possible mechanisms underlying glial-neuronal interactions include gliotransmitter release, regulation of extracellular transmitters/potassium, neuronal-glial interactions under physiological conditions, and direct modulation by orexigenic molecules. Bidirectional glia-neuron communication likely modulates feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C47 are speculative discussions of potential mechanisms with appropriate citations but no direct experimental evidence in this study. While these are reasonable hypotheses based on the literature, they remain to be tested. The bidirectional communication model (C46) is an inference from the data but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The Gq-DREADD and p130PH technologies are appropriate for bidirectional manipulation of glial Ca2+ signaling, while Gi-DREADD is unsuitable for glia as they are electrically non-excitable. Glial Gi-DREADD activation had no effect on feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 accurately describe the technologies with appropriate citations. The reasoning about Gi-DREADD limitations (C50-C51) is sound given glial physiology. The negative result with Gi-DREADD (C52) supports this reasoning and provides an important negative control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "This work addresses gaps in previous literature by demonstrating a causal relationship between ARC glia and acute/chronic feeding modulation, providing mechanistic evidence for differential modulation of AgRP/NPY and POMC neurons, and establishing ARC as an important site of glial-mediated regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 provide accurate critical assessment of prior work with appropriate citations. Claims C57-C58 and C62 accurately summarize the study's contributions. The work does advance beyond previous correlative studies by using acute, spatially-restricted manipulations and providing circuit-level mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Differences with a previous study (Yang et al., 2015) are attributed to CNO dose, with high doses (5 mg/kg) inducing non-specific feeding inhibition possibly due to ataxia, while low doses (0.3 mg/kg) are specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 address an important discrepancy in the literature. The dose-response experiments showing non-specific effects at high CNO doses provide direct evidence reconciling conflicting results. The toxicological citation supports the ataxia explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C83"
+    ],
+    "result": "These findings imply a possible causal link between increased ARC glial Ca2+ during astrogliosis and hyperphagia during inflammation, suggest glia as therapeutic targets, and may represent a common mechanism for glial-neuronal modulation in other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64 and C83 are speculative extensions of the findings with appropriate citations but no direct evidence. While these are reasonable implications, they represent future directions rather than established results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Astrocytes are integral components of brain circuits linked to specific brain functions and are capable of modulating neuronal responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is an accurate statement of established knowledge with appropriate citations (Eroglu and Barres, 2010; Halassa and Haydon, 2010). This provides appropriate context for the study.",
+    "result_type": "MINOR"
+  }
+]

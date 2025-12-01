@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Bem1 directly augments Cdc24 GEF activity towards Cdc42 in vitro through interaction with the PB1 domain of Cdc24. The scaffold increases the observed rate constant of Cdc24 by 1.8-2.6x in a concentration-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25-C29 provide converging in vitro reconstitution evidence showing Bem1 directly stimulates Cdc24 GEF activity in a dose-dependent manner. Claims C30-C34 demonstrate the PB1 domain requirement through deletion and domain-only experiments. The data are internally consistent and use appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C48",
+      "C49"
+    ],
+    "result": "Bem1 accelerates the rate and extent of Cdc24 phosphorylation by the PAK Cla4, generating hyperphosphorylated Cdc24. Cla4 phosphorylates 39 sites on Cdc24, with 15 sites detected only in the presence of Bem1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C38 provide time-resolved kinase assay data showing Bem1 accelerates Cdc24 phosphorylation by Cla4. Claims C48-C49 provide mass spectrometry evidence identifying specific phosphorylation sites. The electrophoretic mobility shift data and comparison to in vivo phosphorylation patterns (C37) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Phosphorylation of Cdc24 by Cla4 abrogates the scaffold-dependent stimulation of GEF activity, rendering Cdc24 insensitive to Bem1 stimulation. This effect is ATP-dependent and mediated by phosphorylation rather than protein-protein interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 provide GEF activity assays demonstrating that phosphorylated Cdc24 is resistant to Bem1 stimulation while maintaining basal activity. The ATP-dependence control (C42-C43) rules out non-catalytic effects. The data directly support the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C107",
+      "C108"
+    ],
+    "result": "Bem1 stimulates GEF activity in a reversible fashion through a phosphorylation-based mechanism, potentially providing molecular memory of scaffold encounters and contributing to signaling flux through Cdc42.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C107 synthesize the in vitro findings showing Bem1 both stimulates GEF activity and promotes its phosphorylation-mediated inactivation. While C108 is speculative about 'molecular memory,' the reversible regulation mechanism is well-supported by the combined data from the in vitro reconstitution experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Mass spectrometry identified 46 phosphorylation sites on Cdc24 (39 by Cla4, 15 Bem1-dependent, 7 by Cdk1-Cln2). Phospho-mutants cdc24-46A (all sites to alanine) and cdc24-28D (28 sites to aspartate) were generated and integrated at the endogenous locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 describe the phosphosite mapping and mutant generation. The mass spectrometry data are quantitative and overlap substantially with prior work (C53). The genetic constructs are described in sufficient detail and were verified by sequencing. This provides the foundation for subsequent in vivo experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell-cycle-dependent phosphorylation of Cdc24 is greatly diminished in cdc24-46A mutants and constitutively elevated in cdc24-28D mutants, indicating that the mapped phosphosites are relevant in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 provide Western blot analysis of Cdc24 phosphorylation during the cell cycle in wild-type and mutant strains. The electrophoretic mobility shifts correlate with expected phosphorylation states. The cdc24-15A/15D intermediate mutants (C62) provide additional validation of the phosphosite mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The cdc24-46A mutant is viable at 37\u00b0C while cdc24-28D exhibits temperature-sensitive growth defects. The growth defect is not due to protein degradation or misfolding and is partially suppressed by sorbitol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide colony formation assays, protein stability data, and sorbitol rescue experiments. The differential phenotypes of the phospho-blocking and phospho-mimetic mutants are consistent with the in vitro predictions. The sorbitol rescue (C67-C68) supports a polarity defect rather than general protein dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The cdc24-28D mutant displays delayed bud emergence, morphological defects, increased doubling time, and reduced actin polarization compared to wild-type and cdc24-46A mutants. The cdc24-15D mutant also shows delayed bud emergence, suggesting the defect stems from Bem1-dependent Cla4 sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 provide multiple phenotypic analyses (budding kinetics, morphology, doubling times, actin polarization) that consistently show cdc24-28D has more severe defects than cdc24-46A. The cdc24-15D data (C72-C73) help distinguish Cla4 from Cdk1 phosphorylation effects. The quantitative data support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The phenotypic effects of the cdc24 phospho-mutant alleles are Bem1-dependent in vivo, as deletion of BEM1 results in indistinguishable phenotypes across CDC24, cdc24-46A, and cdc24-28D strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide genetic epistasis data showing that BEM1 deletion eliminates the differential phenotypes of the phospho-mutants. This directly supports the model that phosphorylation regulates Bem1-dependent GEF stimulation in vivo. The experiment is well-controlled and the conclusion is justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "The cdc24-46A protein is enriched at the polarity site compared to wild-type, while cdc24-28D shows reduced polar enrichment and increased nuclear retention. The mutations alter Cdc24 dynamics at normal localization sites rather than causing complete delocalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83, C86-C87 provide fluorescence microscopy data showing differential localization of the phospho-mutants. The quantification (C82-C83) shows statistically significant differences. The expression levels are comparable (C86), ruling out expression artifacts. The interpretation that phosphorylation affects dynamics rather than targeting is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Active Cdc42 and the Cdc42 GTP reporter are enriched at the cell pole in hypophosphorylated cdc24-46A and cdc24-15A mutants, while hyperphosphorylated cdc24-28D and cdc24-15D mutants show reduced enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C88-C90 provide in vivo imaging data showing differential Cdc42 and Cdc42-GTP reporter localization in the phospho-mutants. The data are consistent with the in vitro predictions that hypophosphorylated Cdc24 would be more active. The use of both total Cdc42 and a GTP-specific reporter strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Purified cdc24-46A and cdc24-28D mutants exhibit similar basal GEF activity in vitro, but Bem1 stimulates cdc24-46A while having no effect on cdc24-28D. The differential response is not due to altered Bem1 binding affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 provide in vitro GEF assays and pull-down experiments with the purified mutant proteins. The data directly validate the in vivo observations and confirm that the phospho-mimetic mutations specifically block Bem1 stimulation without affecting basal activity or Bem1 binding. This is strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C119"
+    ],
+    "result": "The cdc24-46A mutant is viable but sensitive to GAP deletion, resulting in highly elongated cells in the cdc24-46A rga1\u0394 double mutant. This supports the model that Cdc42 GAPs buffer excessive Cdc42 GTP production from hypophosphorylated Cdc24.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C104, C119 provide genetic interaction data showing that cdc24-46A is specifically sensitive to loss of the GAP Rga1, resulting in elongated cells consistent with excessive Cdc42-GTP. The cdc24-28D mutant does not show this sensitivity (C102). This explains why cdc24-46A lacks strong morphological defects alone and validates the in vitro biochemical model in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The study demonstrates that Bem1 plays a direct role in stimulating GEF activity during Cdc42 activation, linking phosphorylation to a scaffold-dependent mechanism that promotes localized Cdc42 activation. Phosphorylation resets GEF activity to a basal state rather than completely inhibiting it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C114-C117 synthesize the major findings and place them in context of prior work. The direct role of Bem1 in GEF stimulation is well-supported by the in vitro reconstitution data. The link to localized activation is supported by the in vivo imaging. The observation that phosphorylation resets rather than abolishes activity (C116) is supported by the GEF assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Cdc42 was purified from P. pastoris while Bem1 and Cdc24 were purified from bacteria. The Kd values for mant-GDP and mant-GTP binding to Cdc42 were estimated at 1 \u03bcM and 0.5 \u03bcM, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 describe the protein purification and characterization. The Kd values are consistent with prior reports (C23-C24 cite Zhang et al., 2000). The purification strategy is appropriate and the characterization validates the functionality of the purified proteins for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing prior knowledge about scaffold proteins, Bem1 function in yeast polarity, Cdc42 activation, and conflicting reports about the role of Cdc24 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20 provide literature context and are supported by appropriate citations. These establish the knowledge gaps and conflicting findings that motivated the current study. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Discussion claims placing the findings in context of prior work on GEF phosphorylation in other organisms, previous studies on Cdc24 phosphorylation, mechanistic speculation about how Bem1 stimulates GEF activity, and consistency with recent reports on scaffold function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C109-C113, C118, C120-C125 provide appropriate context from prior literature and discuss the implications of the findings. The citations appear accurate. Claims C120-C121 acknowledge mechanistic uncertainty while suggesting testable hypotheses. Claims C122-C125 appropriately connect the findings to recent complementary studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Predictions that non-phosphorylated Cdc24 would be active due to constant Bem1 stimulation, while constitutively phosphorylated Cdc24 would be less active due to resistance to Bem1 stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are predictions based on the in vitro reconstitution experiments. While speculative at the time they were made, these predictions were subsequently validated by the in vivo experiments with the cdc24-46A and cdc24-28D mutants. The predictions were logical and testable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Background claims about Cdc24 nuclear sequestration by Far1 during early G1 and Far1 degradation by Cdk1 and the proteasome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide relevant background about Cdc24 regulation by Far1, supported by appropriate citations. This context is relevant for interpreting the nuclear localization phenotype of cdc24-28D.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The phospho-blocking and phospho-mimetic mutations confer distinct phenotypes and likely affect Cdc24 in a specific manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is an inference from the differential phenotypes observed. The conclusion is reasonable given the opposite effects on localization, Cdc42-GTP levels, and cell morphology. The in vitro validation with purified mutant proteins further supports specificity.",
+    "result_type": "MINOR"
+  }
+]

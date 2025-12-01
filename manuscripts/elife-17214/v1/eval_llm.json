@@ -1,0 +1,409 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C12"
+    ],
+    "result": "HDA9 physically interacts with PWR, AHL22, and WRKY53 transcription factor. IP-MS analysis identified PWR (27 unique peptides), AHL22 (1 peptide), and WRKY53 (1 peptide) as HDA9-interacting proteins. The HDA9-WRKY53 interaction was validated by in vitro GST pull-down assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8, C11-C12 provide converging evidence from IP-MS (C6-C8) and GST pull-down (C11-C12) demonstrating physical interactions between HDA9 and these proteins. The reciprocal IP-MS with PWR-FLAG also confirmed the HDA9-PWR interaction. Multiple orthogonal approaches support these protein-protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Loss of HDA9 or PWR function causes global histone hyperacetylation. Immunoblotting revealed increased H3K9ac and H3K27ac in hda9 and pwr mutants compared to WT, but not in HDA9-FLAG complementation lines. The hda9 pwr double mutant showed no additive increase compared to single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 demonstrate through immunoblotting that both hda9 and pwr mutants exhibit similar histone hyperacetylation phenotypes, with genetic epistasis analysis (C19) supporting that they function in the same pathway. The complementation control (C16) validates specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "PWR and HDA9 target similar genomic regions for H3K27ac deacetylation. ChIP-seq identified 11,372 and 7,687 H3K27ac increased peaks in hda9 and pwr respectively, with ~90% (6,901) of pwr peaks overlapping with hda9 peaks. Most hyperacetylated peaks (97% in hda9, 96% in pwr) localize to genic regions near transcription start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 provide genome-wide ChIP-seq evidence demonstrating extensive overlap between hda9 and pwr hyperacetylated regions (C22, p<2.2e-16), with consistent genomic distribution patterns (C24-C25). This strongly supports that PWR and HDA9 function at similar genomic loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "HDA9 preferentially binds to promoters of actively transcribed genes. ChIP-seq identified 9,489 HDA9 binding peaks (8,232 genes), with 69% in promoter regions. HDA9 enrichment positively correlates with gene expression levels and co-localizes with DNase I hypersensitive sites, indicating association with accessible chromatin at active genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 present comprehensive ChIP-seq analysis showing HDA9 enrichment at euchromatic regions (C27-C28), preferential binding to active gene promoters (C32-C33), and correlation with chromatin accessibility markers (C34). This unexpected finding is well-supported by multiple lines of genomic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C85"
+    ],
+    "result": "HDA9 binding correlates with H3K27ac changes in hda9 and pwr mutants. HDA9-bound genes showed significantly higher H3K27ac increases in both hda9 and pwr mutants compared to non-HDA9 bound genes (p<2.2e-16 for pwr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C85 demonstrate through ChIP-seq analysis that HDA9 binding sites correspond to regions with increased H3K27ac in both mutants, providing functional validation of HDA9 binding sites and supporting that PWR and HDA9 act at the same genomic locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C42",
+      "C149"
+    ],
+    "result": "HDA9 binding sites are enriched for G-box and W-box DNA motifs. Motif analysis identified G-box (CACGTG) in 1,233 peaks (13%, p=1.8e-129) and W-box (TTGAC/T) in 1,328 peaks (14%, p=1.9e-8), consistent with recruitment by transcription factors like PIF4/5 and WRKY family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C42, C149 provide statistically significant motif enrichment analysis with highly significant p-values. The W-box enrichment is consistent with the observed HDA9-WRKY53 interaction (C8, C12), providing mechanistic insight into HDA9 recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "HDA9 promotes both age-related and dark-induced leaf senescence. hda9 mutants showed delayed senescence (39 days) compared to WT (35 days, p=4e-06) and HDA9-FLAG complementation (37 days, p=0.025). Dark-induced yellowing was attenuated in hda9 with higher chlorophyll retention. HDA9 protein levels were slightly elevated in early senescent leaves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 demonstrate through multiple phenotypic assays (age-dependent and dark-induced senescence, chlorophyll content) with statistical significance and complementation controls that HDA9 promotes leaf senescence. The elevated HDA9 protein in early senescence (C46) supports its functional role at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PWR and HDA9 act in the same genetic pathway to promote leaf senescence. Loss-of-function pwr mutants phenocopy hda9 in both age-related and dark-induced senescence. The hda9 pwr double mutant showed no additive delay compared to single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide genetic epistasis analysis demonstrating that pwr and hda9 have similar phenotypes with no additive effect in the double mutant, strongly supporting that they function in the same pathway rather than parallel pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "HDA9 regulates expression of senescence-associated genes. Hallmark SAGs (SEN4, SAG12, SAG113) were downregulated in hda9. RNA-seq showed that 30% of SAGs (1,023/3,474) increased in both hda9 and WT during senescence, but with significantly reduced fold-change in hda9. Expression changes of 575 SDGs (20% of 2,849) were also impaired in hda9, along with downregulation of ABA response genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 provide RT-qPCR and RNA-seq evidence demonstrating that HDA9 regulates senescence-related gene expression. The reduced fold-change rather than complete absence of SAG induction (C54-C55) suggests HDA9 modulates rather than absolutely controls senescence gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "HDA9 directly regulates 222 genes that are bound by HDA9 and upregulated in hda9 mutants. Of these, 151 genes (~68%) showed increased H3K27ac in hda9, indicating a positive correlation between gene upregulation and H3K27ac increase (p=1.2e-10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 integrate ChIP-seq and RNA-seq data to identify direct HDA9 targets. The correlation between HDA9 binding, gene upregulation, and H3K27ac increase (C63-C64) provides strong evidence for direct transcriptional repression by HDA9 at these loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The majority of HDA9-bound genes did not show significant expression changes in hda9 mutants. Similar observations have been reported for HDACs in human and maize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 presents the observation from integrated ChIP-seq and RNA-seq analysis, while C66-C67 provide appropriate context from the literature. This finding is well-documented but raises questions about HDA9 function at these sites that the authors appropriately discuss as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Among the 222 direct HDA9 targets, 11 genes have known or potential functions in senescence, including negative regulators of senescence pathways: CAT1 (oxidative stress protection), autophagy genes (APG9, ATG2, ATG8E, ATG13), ABA signaling inhibitors (NPX1, PLL5, AFP2, AFP4), SA pathway inhibitor (BIK1), and JA pathway inhibitor (WRKY57).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 identify specific HDA9 target genes with well-documented functions in senescence-related pathways, supported by appropriate citations. This provides mechanistic insight into how HDA9 promotes senescence by repressing negative regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "PWR and HDA9 regulate overlapping sets of genes in leaf senescence. RNA-seq in pwr identified 887 upregulated and 860 downregulated genes. Of genes affected in hda9, 38% of upregulated (277/782) and 54% of downregulated (354/656) genes also changed in pwr (p<2.2e-16). Overlapping genes are enriched for developmental, environmental stress, and ABA signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide RNA-seq evidence with statistical analysis demonstrating significant overlap between hda9 and pwr transcriptional changes. The Fisher's exact test (C77) confirms this overlap is highly significant, and GO analysis (C78) shows functional coherence, supporting that PWR and HDA9 regulate the same gene sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Specific HDA9 target genes (NPX1, APG9, WRKY57) are upregulated in pwr mutants. NPX1 showed significant upregulation in pwr by RNA-seq, while APG9 and WRKY57 upregulation was confirmed by RT-qPCR with additional biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 validate specific gene expression changes in pwr using both RNA-seq and RT-qPCR. The use of RT-qPCR with additional replicates (C81) to confirm genes not meeting significance thresholds in RNA-seq demonstrates appropriate validation of key targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C86"
+    ],
+    "result": "PWR binds to the same genomic regions as HDA9 at HDA9 target genes. ChIP-qPCR showed that 9 of 11 randomly chosen HDA9-bound loci were significantly enriched for PWR. PWR specifically binds to the same regions within APG9, WRKY57, and NPX1 where HDA9 is enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C86 provide ChIP-qPCR evidence demonstrating PWR enrichment at HDA9 binding sites. The high concordance (9/11 loci) and specific validation at key target genes (C83) support that PWR and HDA9 co-localize at target loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "H3K27ac levels are increased at HDA9 target genes in both hda9 and pwr mutants. ChIP-qPCR showed significant H3K27ac increases at WRKY57, APG9, and NPX1 in both mutants. Genome-wide analysis confirmed HDA9-bound genes show significantly higher H3K27ac increases in pwr compared to non-HDA9 bound genes (p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 demonstrate through ChIP-qPCR and genome-wide ChIP-seq analysis that loss of either HDA9 or PWR results in H3K27ac increases at the same genomic locations, providing functional evidence that both proteins are required for deacetylation at these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "HDA9 chromatin binding requires PWR. Western blot showed overall HDA9-FLAG protein levels were unchanged in pwr mutants. However, ChIP-qPCR demonstrated that HDA9 enrichment at WRKY57, APG9, NPX1, and four other randomly selected loci was substantially decreased in pwr mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide critical evidence that PWR is required for HDA9 chromatin association but not protein stability. The control showing unchanged total HDA9 protein (C87) is essential for interpreting the decreased chromatin binding (C88), supporting a recruitment rather than stability function for PWR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PWR is required for HDA9 nuclear accumulation. Nuclear-cytoplasmic fractionation showed HDA9 is present in both cytoplasm and nucleus. However, nuclear HDA9 accumulation was greatly reduced in pwr mutants compared to plants with PWR, while total HDA9 levels remained similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 provide subcellular fractionation evidence demonstrating a novel function for PWR in HDA9 nuclear localization. The control showing similar total protein levels (C92) is critical for interpreting the reduced nuclear accumulation (C91), supporting a nuclear import function for PWR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "HDA9-FLAG transgene is functional in vivo. HDA9-FLAG driven by the native HDA9 promoter rescued the dwarf phenotype of hda9 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 provide essential validation that the tagged HDA9 protein used for IP-MS and ChIP-seq experiments is functional. The phenotypic rescue (C111) supports that HDA9-FLAG can substitute for endogenous HDA9, validating its use in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Proposed model: PWR facilitates HDA9 nuclear transport, WRKY53 recruits the PWR-HDA9 complex to W-box containing promoters, HDA9 removes H3 acetylation marks to suppress negative regulators, leading to derepression of downstream targets that promote leaf senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C116 present a mechanistic model integrating the experimental findings. While the model is consistent with the data (PWR-dependent nuclear localization, HDA9-WRKY53 interaction, W-box enrichment, repression of negative regulators), several aspects remain speculative: direct evidence for PWR facilitating nuclear import is limited to fractionation data, WRKY53's role in recruitment is inferred from interaction and motif data but not directly tested, and the derepression mechanism for downstream targets is not experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "HDA9 promotes leaf senescence through the ABA signaling pathway by directly repressing negative regulators NPX1 and AFP4/TMAC2. ChIP-seq and RNA-seq show HDA9 binds and represses these genes, which are known to reduce ABA sensitivity when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C122 integrate ChIP-seq, RNA-seq, and literature to propose a specific mechanism. The direct binding and repression of NPX1 and AFP4 (C120) is supported by data, and their roles as ABA pathway inhibitors (C121) is well-documented. However, the overall model (C122) is somewhat speculative as it lacks direct functional validation of the ABA pathway's role in the hda9 senescence phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "HDA9 directly targets and represses autophagy genes APG9, ATG8E, ATG2, and ATG13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by the integration of ChIP-seq (showing HDA9 binding) and RNA-seq (showing upregulation in hda9) data presented in Figures 5 and 6. This provides evidence for direct regulation of multiple autophagy pathway components by HDA9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "HDA9 represses CATALASE1 (CAT1) to allow oxidation accumulation during senescence. ChIP-seq showed significant HDA9 enrichment at CAT1, and RNA-seq revealed increased CAT1 expression in hda9 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130 and C132 provide ChIP-seq and RNA-seq evidence for HDA9 binding and repression of CAT1. However, C133's interpretation that this allows oxidation accumulation during senescence is speculative - no direct measurements of oxidative stress or hydrogen peroxide levels are provided to support this functional consequence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C159"
+    ],
+    "result": "HDA9-bound genes without expression changes in hda9 are enriched for developmental processes and environmental responses. HDA9 binds 177 chromatin factors including SWI/SNF remodelers, ATP-dependent helicases, methyl DNA binding proteins, Tudor/PWWP/MBT proteins, and WD-40 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155 and C159 provide GO analysis and ChIP-seq data characterizing HDA9-bound genes that don't change expression. This descriptive analysis is well-supported by the data, though the functional significance remains unclear and is appropriately discussed as speculative by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on HDA9: HDA9 is a RPD3-like histone deacetylase closely related to mammalian HDAC3, with established roles in flowering, seed germination, salt/drought stress, and deacetylation of H3K9ac and H3K27ac in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C13-C14 provide appropriate background context from the literature with proper citations. These establish the known properties and functions of HDA9 prior to this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C40",
+      "C41",
+      "C43",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C117",
+      "C118",
+      "C121",
+      "C123",
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C131",
+      "C134"
+    ],
+    "result": "Background on senescence-related genes and pathways: Literature-based claims about functions of WRKY53, G-box/W-box motifs, PIF4/5, autophagy genes, ABA/JA/SA pathway components, and catalase in leaf senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C40-C41, C43, C69-C73, C117-C118, C121, C123, C125-C127, C129, C131, C134 provide appropriate background from the literature with proper citations. These establish the known functions of various genes and pathways relevant to interpreting the HDA9 target gene analysis.",
+    "result_type": "MINOR"
+  }
+]

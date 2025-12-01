@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Choanoflagellates are the closest unicellular relatives of animals, a relationship first proposed by James-Clark in 1866 based on morphological resemblance to sponge choanocytes and later confirmed by molecular phylogenetic evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, C12, and C13 establish well-supported background knowledge about choanoflagellate-animal relationships. The historical attribution to James-Clark (1866) and molecular confirmation (King et al., 2008; Lang et al., 2002) are appropriately cited and represent established scientific consensus in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C87"
+    ],
+    "result": "S. rosetta exhibits positive aerotaxis, with both colonial and unicellular fast swimmer forms accumulating at oxygen-rich regions and migrating away from oxygen-poor regions in microfluidic gradient experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39, C40, C41, and C87 describe the primary experimental discovery supported by direct observational data in Figures 3a-b and Videos 1-2. The observation that both morphotypes exhibit aerotaxis strengthens the finding and demonstrates it is not colony-specific. This represents the core novel discovery of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C52",
+      "C75",
+      "C88",
+      "C117",
+      "C119"
+    ],
+    "result": "S. rosetta exhibits logarithmic (relative gradient) sensing of oxygen rather than linear (absolute gradient) sensing, as demonstrated by differential behavior in oxygen-only versus nitrogen-only experimental configurations and quantitative modeling with the Keller-Segel equation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, C49, C52, C75, C88, C117, and C119 collectively establish logarithmic sensing through multiple lines of evidence: (1) asymmetric population distributions under different oxygen conditions (C43-C49), (2) failure of linear models to explain nitrogen-only sections (C73-C74), (3) successful quantitative fit of log-sensing Keller-Segel model to all experimental sections (C75), and (4) optimal model fitting for relative gradient sensing (C117). The logical inference from contrasting behaviors (C48-C49) is sound and the mathematical modeling provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C66",
+      "C83",
+      "C89",
+      "C90"
+    ],
+    "result": "S. rosetta aerotaxis employs a stochastic navigation strategy based on directional modulation rather than speed modulation, as evidenced by minimal (~3%) speed changes during gradient navigation, centered reorientation distributions, and superior fit of stochastic versus deterministic models to trajectory data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C60, C66, C83, C89, and C90 establish stochastic navigation through converging evidence: (1) swimming speed remains essentially constant (~3% change) during aerotaxis (C56-C58), ruling out velocity-biased taxis (C59-C60), (2) reorientation distribution centered on zero indicates equal turns in both directions (C64-C65), characteristic of stochastic strategy (C66), and (3) statistical analysis shows stochastic model fits trajectory data while deterministic model fails (C82-C83). The quantitative calculation showing \u03b3=2/3 (2D) or \u03b3=1 (3D) would be required for velocity modulation (C59) versus observed ~3% provides strong evidence against that mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Under different oxygen boundary conditions, S. rosetta colonies show distinct spatial distributions: uniform distribution when oxygen flows in both channels, accumulation at oxygen-rich walls during gradients, and mid-chamber accumulation when nitrogen flows in both channels (persisting even after 90 min when oxygen levels drop below ~0.2%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe experimental observations of population distributions under varying oxygen conditions, supported by data in Figure 3c, Video 2, and Figure 3\u2014figure supplement 1. The mid-chamber accumulation in nitrogen-only conditions (C44) and its persistence at very low oxygen levels (C46-C47) provide key evidence for logarithmic sensing. The inference that accumulation is not surface-dependent (C45) is logically sound from the mid-chamber observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "Statistical analysis of swimming angles during oxygen gradient swaps shows angular distributions favoring the gradient direction (\u03b8=\u03c0/2), but reorientation distributions centered on zero, with stochastic models providing better fits than deterministic models to the reorientation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C81-C82, C84 describe angle statistics from trajectory analysis shown in Figure 5. The observation that angular distributions favor the gradient direction (C63) while reorientations are centered on zero (C64-C65) is internally consistent with stochastic navigation. The model comparison showing both models fit angle distributions (C81) but only stochastic models fit reorientation distributions (C82) provides discriminating evidence. The data presentation and statistical analysis appear sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The Keller-Segel model with linear gradient sensing (V[c]=v_drift tanh(\u03b1|\u2207c|)\u2207c/|\u2207c|) can explain most experimental behaviors except the nitrogen-only sections, where it fails to predict mid-chamber accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C70, C72-C74 describe the application and limitations of linear gradient sensing models. The Keller-Segel model's broad applicability is well-established (C67). The observation that linear models explain most but not all experimental sections (C73-C74) is supported by Figure 3\u2014figure supplement 1 and provides crucial motivation for the logarithmic sensing hypothesis. This represents appropriate model testing and falsification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Logarithmic sensing provides functional advantages for survival by enabling effective navigation across a wide dynamic range of concentrations, from very low to high oxygen environments, and is consistent with Weber's law and the Weber-Fechner law observed in sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 connect the experimental findings to broader principles of sensory biology. The functional advantages of logarithmic sensing (C110) are logically sound. The connection to Weber's law (C112) and Weber-Fechner law (C113) is appropriate and supported by the experimental observations. The physical basis in thermal fluctuations (C114) is well-established (Berg and Purcell, 1977; Endres and Wingreen, 2008). The observation of logarithmic sensing in bacteria (C111) provides comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Both unicellular and colonial morphotypes of S. rosetta can perform efficient aerotaxis without requiring cell-cell coordination, suggesting that evolutionary transitions to multicellularity resembling S. rosetta would not require additional communication mechanisms for navigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 draw evolutionary inferences from the experimental observations. The observation that both morphotypes exhibit aerotaxis (C107) is experimentally supported (C40-C41). The inference that stochastic navigation works equally well for single cells and uncoordinated colonies (C109) is logically sound given the independent flagellar beating (C20-C21). The evolutionary implication (C108) is a reasonable inference but remains speculative without direct evidence from evolutionary transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "A microfluidic device was developed using PDMS chambers (~115 \u00b5m thick) with gas-permeable channels allowing controlled oxygen gradients, modified from Adler et al. (2012), with experiments conducted immediately after plasma etching and filmed at 10 fps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 and C122-C124 describe the experimental methodology. The use of PDMS gas permeability for creating gradients (C34-C35) is well-established. The device modification from Adler et al. (C36) is appropriately cited. The technical specifications (channel thickness C37, timing considerations C38, fabrication details C122-C123, imaging parameters C124) are clearly documented and appear standard for this type of microfluidic work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "S. rosetta has characteristic choanoflagellate morphology (prolate cell body ~5 \u00b5m diameter with single flagellum surrounded by collar of microvilli) and can form colonies through incomplete cytokinesis with variable morphology and independently beating flagella, with no prior evidence of taxis reported before this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 establish background knowledge about S. rosetta biology. The morphological descriptions (C14-C16) represent established knowledge. Colony formation through incomplete cytokinesis (C17), rosette morphology in presence of bacteria (C18), variable morphology (C19), and independent flagellar beating (C20) are appropriately cited to prior work (Fairclough et al., 2010; Dayel et al., 2011; Kirkegaard et al., 2016). The inference that independent beating argues against coordination (C21) is reasonable. The statement about no prior taxis evidence (C22) establishes novelty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "S. rosetta colonies differ from Volvocales algae in that while both rotate, S. rosetta has variable morphology and independent flagellar beating leading to random rotation rates, making deterministic phototaxis strategies like those in Volvocales unlikely in S. rosetta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 establish comparative context with Volvocales. The taxonomic and behavioral descriptions of Volvocales (C24-C26) are appropriately cited. The observations about S. rosetta rotation (C27) and the inference that rotation rates are random due to variable morphology and independent beating (C28) are supported by citation (Kirkegaard et al., 2016). The conclusion that Volvocales-like deterministic strategies are unlikely (C29) is a reasonable inference from these differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Taxis strategies can be categorized as deterministic (direct steering toward attractant, as in sperm chemotaxis) or stochastic (modulation of random reorientations without direct steering, as in bacterial run-and-tumble chemotaxis), also called kinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 and C53-C55 establish theoretical framework for taxis strategies. The categorization into deterministic and stochastic strategies (C53) is standard in the field. The examples of sperm chemotaxis for deterministic (C54) and bacterial run-and-tumble for stochastic (C31-C33, C55) are appropriately cited and represent well-established examples. The terminology clarification that stochastic taxis is sometimes called kinesis (C30) is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "S. rosetta colonies swim along noisy helical paths with each colony displaying distinct helix parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe swimming behavior supported by citation to previous work (Kirkegaard et al., 2016). This represents established knowledge about S. rosetta motility that provides context for the trajectory analysis methods used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Translational diffusion due to thermal noise is orders of magnitude smaller than active diffusion for S. rosetta and can be neglected in modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 represents a standard simplification in modeling microorganism motility. For organisms of this size and swimming speed, thermal diffusion is indeed negligible compared to active swimming diffusion, making this a justified modeling assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C102",
+      "C103"
+    ],
+    "result": "Increasing Precambrian ocean oxygen levels are thought to have influenced the emergence of complex multicellular life and animal evolution, though recent findings that sponges have very low oxygen requirements have disputed the importance of oxygen in early animal evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10, C102, and C103 establish evolutionary context. The hypothesis that Precambrian oxygen levels influenced animal evolution (C2, C10, C102) represents established scientific thinking appropriately cited (Nursall, 1959; Lenton et al., 2014; Sperling et al., 2013). The contrasting finding about sponge oxygen requirements (C103) is appropriately cited to recent work (Mills et al., 2014) and provides important context for interpreting the significance of choanoflagellate aerotaxis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "While animals sense oxygen via the conserved HIF transcription factor pathway, preliminary DMOG inhibitor experiments showed no effect on S. rosetta aerotaxis, consistent with choanoflagellates lacking some HIF pathway components and the acute (seconds to minutes) rather than transcriptional timescale of the aerotactic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 discuss oxygen sensing mechanisms. The description of the animal HIF pathway (C91-C94) is accurate and appropriately cited. The preliminary DMOG experiment showing no effect (C97) is honestly reported as negative data. The interpretation that this is unsurprising given missing HIF components in choanoflagellates (C98) and the acute timescale of response (C99) provides reasonable context. However, the negative result is preliminary and the mechanism remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "In aerotactic bacteria, oxygen is sensed indirectly via energy-sensing affecting flagellar rotation; an analogous mechanism may operate in choanoflagellates possibly via reactive oxygen species and oxygen-sensitive ion channels modulating flagellar beating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 accurately describes bacterial aerotaxis mechanisms (appropriately cited to Taylor et al., 1999). However, claim C101 is explicitly speculative about choanoflagellate mechanisms. While the speculation is reasonable and supported by citations to relevant literature on ROS and ion channels, no direct experimental evidence is provided to test this hypothesis. This represents a plausible but unverified mechanistic proposal requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The discovery of aerotaxis in S. rosetta raises the possibility that the common ancestor of choanoflagellates and animals was aerotactic, which would indicate oxygen was an important resource during the Precambrian, though alternatively choanoflagellates may have evolved aerotaxis after diverging from the animal lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 present evolutionary speculation. While the discovery of aerotaxis in S. rosetta is well-supported, the inference about ancestral aerotaxis (C104) and its implications for Precambrian oxygen importance (C105) are explicitly speculative. The authors appropriately acknowledge the alternative hypothesis that aerotaxis evolved after the split (C106). These claims represent reasonable evolutionary hypotheses but lack direct evidence and would require comparative studies across opisthokont groups to test, as the authors themselves note in the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Taxis is widespread across organisms (bacteria exhibit chemotaxis, algae exhibit phototaxis and gyrotaxis), with aerotaxis well-characterized in bacteria but poorly studied in more complex organisms despite oxygen's importance for aerobic life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 establish background on taxis phenomena. The examples of bacterial chemotaxis (C6), algal phototaxis and gyrotaxis (C7), and bacterial aerotaxis (C8) are appropriately cited to established literature. The statement that aerotaxis is poorly studied in complex organisms (C9) accurately identifies a knowledge gap that motivates the study.",
+    "result_type": "MINOR"
+  }
+]

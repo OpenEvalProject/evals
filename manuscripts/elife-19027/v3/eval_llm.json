@@ -1,0 +1,452 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The S. uvarum GAL network contains two additional duplicate genes compared to S. cerevisiae: GAL80B (retained from the WGD ~100 million years ago in the S. uvarum-S. eubayanus clade but lost in the S. cerevisiae-S. arboricola clade) and GAL2B (created by recent tandem duplication).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by multiple citations to previous phylogenetic and genomic studies. The timing of the WGD and the differential retention patterns of GAL80B across Saccharomyces lineages are established in the literature, and the tandem duplication creating GAL2B is consistent with the phylogenetic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Most GAL genes show similar divergence between S. cerevisiae and S. uvarum, with GAL4 being primarily conserved in functional domains, and none showing elevated dN/dS ratios suggestive of neofunctionalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by sequence comparison data (Figure 1) and previously calculated dN/dS ratios. The analysis appropriately uses established metrics for assessing protein evolution and functional constraint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "SuvaGAL3 retains galactokinase activity, as evidenced by a conserved -Ser-Ala- dipeptide and ability to support growth on galactose when driven by the ScerGAL1 promoter, though native GAL3 promoter expression is insufficient for robust metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by sequence analysis (C8), heterologous expression experiments (C9-C10), and growth assays (C11-C12). The experimental design appropriately tests galactokinase function through complementation, and the controls (gal1 null mutants) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "S. uvarum gal3\u0394 shows only a brief growth delay (hours) rather than the classic Long-Term Adaptation phenotype (days) seen in S. cerevisiae, primarily due to differences at the GAL1 locus (especially the promoter), indicating greater functional redundancy between SuvaGAL1 and SuvaGAL3 and suggesting subfunctionalization occurred after species divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C20 are well-supported by growth curve data (Figure 2B-C) and allele swap experiments. The promoter swap has a stronger effect than the coding sequence swap (C15-C16), supporting the conclusion about promoter differences (C17). The inference about ancestral redundancy and recent subfunctionalization (C19-C20) is reasonable given the comparative data, though it remains an evolutionary inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SuvaGAL80 is the main repressor of the GAL network in the absence of galactose, being more highly expressed than SuvaGAL80B in non-inducing conditions and causing constitutive GAL1 expression when deleted, while SuvaGAL80B shows minimal effect under these conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by RNA-Seq data (C21-C23), growth assays (C24-C25), and flow cytometry (C26-C27). The conclusion that SuvaGAL80 is the main repressor (C28) is well-supported by the convergent evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C35"
+    ],
+    "result": "SuvaGAL80B plays a condition-dependent role, showing minimal effect in the absence of galactose but providing important modulation in induced conditions, particularly in mixed glucose-galactose environments where its deletion leads to elevated GAL1 expression and growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31, C34-C35 are supported by flow cytometry (C29, Figure 3E) and growth rate measurements (C30, Figure 3F). The condition-dependent phenotype is well-documented, though the mechanistic explanation for why GAL80B is specifically important in mixed sugar conditions (C31, C35) is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "SuvaGAL80 and SuvaGAL80B encode partially redundant co-repressors that can each partially compensate for loss of the other, as evidenced by strong negative epistasis in the double knockout showing substantially higher GAL1 expression than either single knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by flow cytometry data (Figure 3G) showing the double knockout has higher expression than either single knockout. The negative epistasis pattern is consistent with partial redundancy, though the degree of compensation could be quantified more precisely.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Deletion of both GAL80 and GAL80B in S. uvarum causes a strong Temporary Growth Arrest (TGA) phenotype in galactose that is concentration-dependent, specific to galactose, and not due to novel functions of the S. uvarum co-repressors (as ScerGAL80 can rescue), contrasting sharply with S. cerevisiae where gal80\u0394 mutants grow faster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are well-supported by growth curves (Figure 4A-B), rescue experiments (Figure 4\u2014figure supplement 1), and growth in different carbon sources (Figure 4\u2014figure supplement 5). The rescue by ScerGAL80 (C39) is particularly important for ruling out neofunctionalization (C40). The phenotypic characterization is thorough and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The S. uvarum and S. cerevisiae GAL networks have similar compositions, with PGM1 being the sole novel GAL network member in S. uvarum (up-regulated 26-fold in the double mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by RNA-Seq analysis with stringent criteria for network membership (Figure 4\u2014figure supplement 2A). The identification of PGM1 as a Gal4 target is based on differential expression, fold-change, and presence of Gal4 binding sites, which are appropriate criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "During the TGA phase, 1006 genes were differentially expressed (620 up, 386 down), with 78% returning to wild-type levels after growth resumption, indicating the transcriptional changes are largely specific to the TGA phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 are supported by RNA-Seq data with appropriate statistical thresholds (FDR = 0.05, 2-fold change). The recovery of most genes to normal expression (C49) supports the interpretation that changes are TGA-specific rather than permanent regulatory alterations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Prior to the TGA phase, the co-repressor double mutant shows evidence of overly rapid galactose catabolism: faster initial OD increase, higher ethanol production, and strong GAL1 overexpression that gradually converges with wild-type during the TGA transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by growth curves (C50, Figure 4A), HPLC data (C51, Figure 4\u2014figure supplement 3), and flow cytometry (C52-C53, Figure 4\u2014figure supplement 4). The convergent evidence from multiple metabolic readouts strengthens the conclusion about overly rapid catabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The co-repressor double mutant accumulates galactose-1-phosphate at only 2-fold relative to wild-type prior to TGA, returning to normal during TGA, which is much less than in gal7\u0394 or gal10\u0394 controls (7-11 fold), suggesting galactose-1-phosphate toxicity is not the primary cause of TGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by metabolomic data (Figure 5, Figure 5\u2014figure supplement 1). The comparison to gal7\u0394 and gal10\u0394 controls is appropriate for assessing whether galactose-1-phosphate accumulation is sufficient to explain the phenotype. The modest accumulation and recovery during TGA argue against this being the primary mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The double mutant shows broad metabolic defects in upper glycolysis, including significant accumulation of fructose-1,6-bisphosphate (12.6-fold), depletion of ATP to one-fifth of wild-type levels, and up-regulation of the phosphate transporter PHO84 (25-fold), indicating metabolic overload and phosphate limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by comprehensive metabolomic (Figure 5, Figure 5\u2014source data 2) and transcriptomic data (Figure 5\u2014source data 1). The pattern of fructose-1,6-bisphosphate accumulation, ATP depletion, and PHO84 induction is consistent with the known consequences of upper glycolysis outpacing lower glycolysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The double mutant shows dramatic accumulation of trehalose-6-phosphate (79-231 fold) and glycerol-3-phosphate (225-fold before TGA, 3-16 fold during), suggesting the trehalose cycle and glycerol biosynthesis pathway cannot handle the metabolic overload from overly rapid galactose catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by metabolomic data (Figure 5). The massive accumulation of intermediates in these pathways is consistent with bottlenecks in futile cycles that normally buffer glycolytic flux. The inference about pathway capacity (C62) is reasonable given the magnitude of accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The TGA phenotype involves mitochondrial dysfunction (down-regulation of mitochondrial components, translation, and respiration) and significant ROS accumulation, consistent with metabolic defects extending beyond galactose-1-phosphate accumulation into central metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by GO term analysis (C63, Supplementary file 1) and ROS measurements (C64, Figure 4C). The conclusion about widespread metabolic defects (C65) is well-supported by the integration of transcriptomic, metabolomic, and ROS data, though the causal chain from rapid galactose catabolism to mitochondrial dysfunction could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Fructose and mannose strongly exacerbate the TGA phenotype while glucose partially rescues it, with mixed fructose/mannose-galactose conditions being more severe than equivalent galactose alone, and wild-type strains showing no toxicity, indicating the co-repressors enable cells to cope with mixed sugar challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by growth data in various sugar combinations (Figure 6A, Figure 4\u2014figure supplement 5). The differential effects of sugars are consistent with their entry points into glycolysis and effects on glucose repression. The comparison to wild-type (C69-C70) appropriately controls for inherent toxicity of sugar mixtures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deleting GAL1 completely rescues the TGA phenotype, and mannose-galactose mixtures dramatically increase ROS through the same mechanism as galactose alone, supporting the conclusion that overly rapid sugar catabolism causes metabolic defects when futile cycles and feedback loops cannot slow catabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by growth data (C72, Figure 6B) and ROS measurements (C73, Figure 6C). The GAL1 deletion rescue (C72) is particularly strong evidence that galactose catabolism is causal. The similar ROS patterns (C73-C74) support a common mechanism. The general conclusion (C75) is well-supported by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "S. cerevisiae shows a milder version of the TGA phenotype: gal80\u0394 mutants exhibit a brief, previously overlooked TGA, and produce significantly more ROS and grow slightly slower than wild-type in mannose-galactose mixtures, consistent with similar but weaker metabolic constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are supported by growth curves (C77, Figure 4A inset), ROS measurements (C78, Figure 7A), and growth rates (C79, Figure 7B). The identification of a mild TGA in S. cerevisiae (C77) is important for showing the phenomenon is not S. uvarum-specific. The citation supporting higher S. uvarum network activity (C76) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Both the S. cerevisiae GAL1 promoter and coding sequence partially rescue the S. uvarum TGA phenotype (coding sequence more so), and reciprocal swaps show the S. uvarum GAL1 promoter and coding sequence both encode higher activity than S. cerevisiae counterparts, explaining the relative TGA phenotype strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by allele swap experiments (Figure 7C-D). The differential rescue by promoter vs. coding sequence (C80-C81) and the reciprocal effects on growth rates (C82-C83) provide strong evidence for higher S. uvarum GAL1 activity (C84). The conclusion about explaining phenotype differences (C85) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Fructose and mannose bypass the trehalose cycle (which normally diverts >25% of early glycolytic flux to prevent metabolic imbalance) and trigger glucose repression less strongly than glucose in S. cerevisiae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by citations to previous studies. These are established features of yeast sugar metabolism that provide mechanistic context for the differential effects of sugars observed in this study. The claims appropriately cite the relevant literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "In humans, bypassing glucose-responsive regulatory mechanisms with fructose has been associated with diabetes and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by citations to previous studies. These are comparative observations from human metabolism that provide broader context for the importance of sugar-specific regulation, though they are tangential to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Direct regulation of PGM1 by Gal4 would enhance the Leloir-glycolysis connection in S. uvarum relative to S. cerevisiae, and this ancestral regulatory connection was lost in the S. cerevisiae-S. kudriavzevii clade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by RNA-Seq data showing PGM1 induction (Figure 4\u2014figure supplement 6A) and phylogenetic analysis of Gal4 binding sites (Figure 4\u2014figure supplement 6B). The inference about ancestral state (C92) is reasonable based on the phylogenetic distribution of binding sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Nearly all differences between S. cerevisiae and S. uvarum GAL networks make S. uvarum more active (PGM1 regulation, two transporters, SuvaGal3 galactokinase activity, higher GAL1 activity, higher background expression), with GAL80B retention being one of few features counteracting this higher activity through dramatic induction-dependent up-regulation providing negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by data presented throughout the paper (Figures 1, 2A, 3B, 7D) and citations. The synthesis identifying GAL80B as a counterbalancing feature (C95-C96) is well-reasoned. The speculation about GAL80B enabling higher network activity (C97) is clearly marked as such and is a reasonable evolutionary hypothesis, though C97 is labeled as speculation in the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The Leloir enzyme genes occur in a broadly conserved yeast gene cluster, many post-WGD species retain GAL80B, and the ability to consume galactose has been lost many times across yeast lineages, possibly due to intrinsic metabolic challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by citations to previous comparative genomic studies. These provide important evolutionary context for understanding the constraints on galactose metabolism and the significance of GAL80B retention.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "GAL3 was lost in European S. kudriavzevii (causing induction defects) and the entire GAL network was lost in East Asian S. kudriavzevii; GAL1 and GAL3 are nearly completely subfunctionalized in S. cerevisiae but maintain considerable redundancy in S. uvarum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by citations to previous studies. Claim C105 is supported by the experimental data presented in this study (Figures 2B-C). The contrast between species in the degree of subfunctionalization is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "For both paralog pairs (GAL1/GAL3 and GAL80/GAL80B), functional diversification has been asymmetric, with GAL80B and GAL3 deletions producing less striking phenotypes and some lineages naturally experiencing their inactivation or loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by the phenotypic data presented in this study and phylogenetic information from citations. The asymmetric diversification pattern is evident from the differential deletion phenotypes and is consistent with evolutionary theory about paralog evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "In the S. cerevisiae lineage, Gal3 lost enzymatic activity, GAL1 promoter activity decreased (reducing but not eliminating rapid induction), and other GAL genes experienced adaptive decreases in promoter activity, possibly enabled or necessitated by GAL80B loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by established knowledge and citations. Claim C110 is supported by the allele swap data in this study. The speculation about GAL80B loss enabling/necessitating promoter changes (C112) is clearly marked as such and is a reasonable hypothesis, though it remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The diversification of GAL paralogs occurred within the last 10 million years of a 100 million year history, demonstrating that echoes of duplication events continue to resonate through gene networks much longer than generally appreciated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by the phylogenetic timing inferred from the data and citations. The conclusion about long-term impacts of duplication (C114) is well-supported by the demonstration of ongoing functional divergence and is a key conceptual contribution of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Nearly all extant plant and vertebrate species are products of multiple WGD rounds with widespread differential paralog retention, and paralog diversification is often asymmetric with one paralog acquiring a more specialized or auxiliary role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by citations to previous studies. These provide important comparative context for the significance of the findings in yeast for understanding paralog evolution more broadly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Paralog loss ends duplicate gene diversification (possibly forcing functions back onto the remaining paralog or causing compensatory changes), eliminates redundancy and limits long-term adaptive potential, while gene duplication facilitates phenotypic change and network diversification in ways that continue to reverberate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 are logical inferences from the data presented and represent the broader evolutionary implications of the study. While these are somewhat general evolutionary principles, they are well-supported by the specific findings about GAL paralog evolution and their functional consequences.",
+    "result_type": "MAJOR"
+  }
+]

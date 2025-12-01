@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "TPR proteins are a widespread, repetitive protein superfamily with a characteristic helical hairpin structure that arose from an ancestral repeated structure. Six of the ten most populated folds in SCOP have repetitive structures (C1), TPR was originally identified in S. cerevisiae (C2), TPR proteins are found in all kingdoms of life (C3), and the first crystal structure revealed helical hairpins in a superhelical architecture (C4) with knobs-into-holes packing burying ~40% of surface area (C5). Almost all TPR proteins can be detected with a single sequence profile (C6), they generally contain at least two hairpins (C7), and single-hairpin proteins like Tom20 are not ancestral (C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish well-documented background knowledge about TPR proteins through appropriate citations to prior literature. The structural and evolutionary characterization of TPR proteins is supported by multiple independent studies cited in the manuscript. These claims provide essential context but represent prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Ribosomal proteins represent ancient proteins that are intrinsically disordered outside the ribosomal context and chart a path of progressive structural emancipation from RNA scaffolds. Ribosomal proteins are among the oldest observable proteins (C9), mostly incapable of folding outside the ribosome (C10), and 40 ancestral peptides have been described that likely predated folded proteins (C68). Core ribosomal proteins near the catalytic center lack secondary structure (C69), while peripheral proteins show increasing secondary structure content (C70, C72) that collectively charts progressive emancipation from RNA scaffolds (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C68-C72 establish the evolutionary context for ribosomal proteins through appropriate citations and are consistent with current understanding of ribosomal protein evolution. The characterization of ribosomal proteins as ancient, intrinsically disordered, and RNA-dependent is well-supported by the cited literature and provides important context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A computational search identified RPS20 as containing a helical hairpin with significant sequence and structural similarity to TPR units. TPRpred was used to scan 68,197 PDB sequences (C76) with a p-value cutoff of 1.0e-4 and estimated FDR of 1.0\u00b10.4% (C12, C78), yielding 646 hits (C77). After filtering, 31 helical hairpins similar to TPR units were identified (C13), of which 22 were part of solenoids and discarded (C14). The remaining nine hits belong to three families: Tom20, MIT domain, and RPS20 (C15). The similarity of Tom20 and MIT to TPR was previously noted (C16), but RPS20 similarity was novel. RPS20 from T. aquaticus was the top-scoring hit with p-value 5.4e-7 (C17), and among 42 RPS20-hhs with \u22653 hydrophobic interface residues (C18), only T. aquaticus RPS20 matched the TPR profile above the threshold (C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C19 and C75-C78 describe a systematic computational search with clearly defined parameters, appropriate statistical controls (FDR estimation), and specific quantitative results. The methodology is sound, the filtering steps are justified, and the identification of RPS20 as a novel TPR-like hairpin is well-supported by the computational analysis. The p-values and sequence counts provide concrete evidence for the similarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A three-repeat TPR was designed from RPS20-hhta using consensus design principles and computational modeling. Three-repeat TPRs are the most common form (C20, C21), and CTPR3 is highly stable (C22). The unmutated construct M0 was soluble but unfolded (C23). Four mutation sites were selected to improve interface hydrophobicity or preserve coevolved positions (C24), with positions 7 and 23 showing highest correlation (C79). Four positively charged residues were targeted to achieve zero net charge (C25). Structural models were built using CTPR3 and RPS20 structures as templates (C80, C81) and refined using Rosetta 3.4 fixbb and relax programs (C82, C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 and C79-C83 describe a rational protein design strategy based on established consensus design principles with appropriate citations. The computational methodology is clearly described with specific software versions and parameters. The design rationale is well-justified by coevolution analysis and structural considerations. The approach is systematic and follows established protein engineering practices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Four of five designed TPR variants (M2, M4E, M4N, M5) fold into stable, dimeric repeat proteins. Three proteins were soluble (C26), and all except M0 and M4RD showed alpha-helical CD spectra (C27). M4N showed cooperative unfolding with Tm=77\u00b0C (C28), while M2, M4E, M5 showed cooperative urea denaturation curves (C29). M5 had \u03bbmax=336 nm consistent with partially buried tryptophans (C30). The authors conclude four variants are well-folded (C31), and all four were exclusively dimers by static light scattering (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 report comprehensive biophysical characterization using multiple complementary techniques (CD, thermal denaturation, urea denaturation, fluorescence, light scattering). The data consistently support folded structures for four variants. The Tm value, cooperative denaturation curves, and fluorescence data provide strong evidence for stable, folded proteins. The unexpected dimerization is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RPS20 from T. aquaticus and T. thermophilus is intrinsically disordered in isolation. Previous work showed isolated RPS20 has only one-third helical content by CD (C33). Both T. aquaticus and T. thermophilus RPS20 were insoluble and required refolding (C34), behaved as monomers (C35), and showed high random structure content by CD with no defined denaturation curves (C36), confirming considerable conformational variation in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 demonstrate that native RPS20 is intrinsically disordered outside the ribosome, consistent with the hypothesis that it retains ancestral properties. The experimental characterization (CD, light scattering, denaturation studies) is appropriate and the results are consistent with prior literature (C33) and predictions. This establishes an important contrast with the designed TPR variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Crystal structures of M4N and M4N\u0394C reveal a novel TPR architecture with domain-swapped dimerization replacing the stop helix function. M4N was solved at 2.2 \u00c5 resolution (C37) with three chains in the ASU showing RMSD <1.4 \u00c5 (C38). All chains exhibit TPR architecture with knobs-into-holes packing (C39) and superimpose to CTPR3 with RMSD <2.6 \u00c5 (C40). The stop helix is unresolved (C41), but two protomers form a tight interface where B3 helices substitute for stop helices (C42), superimposing to CTPR3 with RMSD 1.2 \u00c5 over 44 residues (C43). Mass spectrometry revealed partial proteolysis of the stop helix (C44), but extending it with His6-tag (C45) or removing it entirely (M4N\u0394C, C46) did not affect stability or dimerization. M4N\u0394C structures at 2.0 and 1.7 \u00c5 (C47) superimpose to M4N with RMSD <1.9 \u00c5 (C48). The stop helix is dispensable (C49), and this dimerization geometry is novel for TPR structures (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C50 present high-resolution structural data with appropriate quality metrics (resolution, RMSD values). The structures clearly demonstrate the designed TPR fold was achieved and reveal an unexpected but well-characterized dimerization mode. Multiple crystal forms and constructs (M4N, M4N-His, M4N\u0394C) provide strong evidence that the stop helix is dispensable and dimerization is intrinsic. The structural superpositions with CTPR3 validate the TPR architecture. The novel dimerization mode is a significant structural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mutations introduced into RPS20 for TPR design are neutral in vivo and could have been sampled by neutral drift during evolution. Each mutation in M2 and M4N occurs in natural RPS20 sequences (C51), though no sequence has all four simultaneously. RPS20-hh differs at only four positions between T. aquaticus and T. thermophilus (C52). Gene replacement experiments showed chromosomal rpsT was fully substituted when complemented with plasmid-borne rpsT (C53), but not with empty plasmid (C54). T. thermophilus HB8 is polyploid (C55), and rpsT can be reduced but not eliminated, suggesting essentiality (C56). At high kanamycin, chromosomal rpsT became undetectable for all complemented strains (C57, C58) but not for empty plasmid controls (C59). rpsT is essential (C60), but wild-type and mutant T. aquaticus rpsT complemented the loss and restored wild-type growth (C61). No reversal occurred after removing selection (C62). The authors conclude the alleles are neutral (C63), mutations do not negatively affect RNA interaction (C64), and could have been sampled by neutral drift during evolution (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 present rigorous in vivo complementation experiments with appropriate controls (empty plasmid, different selection pressures, growth curves). The PCR screening at multiple kanamycin concentrations and after selection removal provides strong evidence for complete functional complementation. The growth curves demonstrate no fitness cost. However, C65 is speculative about evolutionary processes - while the neutrality is demonstrated, the claim about historical sampling by neutral drift is an inference that cannot be directly tested. The experimental evidence strongly supports C51-C64, but C65 represents a plausible but unproven evolutionary hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C73",
+      "C74"
+    ],
+    "result": "The results demonstrate that simple repetition of an intrinsically disordered ribosomal protein hairpin can yield a folded TPR structure with minimal mutations. In E. coli and S. enterica, rpsT deletion lowers growth rates (C66). Random polypeptides generally lack folded structure (C67). Simple repetition of RPS20 hairpin was insufficient, but only two point mutations per repeat were necessary for reliable folding (C73). Present-day TPR domains mediate protein-protein interactions by binding linear motifs in unstructured segments (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C74 provide appropriate context from prior literature. C73 is a key conclusion well-supported by the experimental data showing M0 is unfolded but M2 (with two mutations per repeat) is folded. This represents a major finding demonstrating the evolutionary plausibility of fold emergence through repetition with minimal optimization. The claim is directly supported by the biophysical and structural characterization.",
+    "result_type": "MAJOR"
+  }
+]

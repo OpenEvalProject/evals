@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The DNA substrate alone (NonEQ DF-6,1) exists in a single extended conformation (~165\u00b0) that is insensitive to metal ion concentration or type, as demonstrated by single-molecule FRET and MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 provide converging evidence from both experimental FRET measurements and computational MD simulations showing the substrate exists in a single extended state. The FRET data shows no transitions (C18), insensitivity to Mg2+ (C19), and MD simulations identify the extended conformer as energetically favorable (C20-C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28"
+    ],
+    "result": "FEN1 actively bends DNA substrates with diffusion-limited kinetics (kon-bending = 1.4 \u00b1 0.03\u00d710^8 M^-1 s^-1), and this active bending mechanism is conserved in related 5'nucleases like EXO1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C27, and C28 demonstrate through single-molecule FRET that FEN1 actively bends DNA with diffusion-limited association rates. The measured kon-bending approaches the theoretical diffusion limit, and similar behavior is observed for EXO1 (C28), supporting conservation of this mechanism. The Kd-bending values (C23) agree with independent bulk measurements (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "FEN1 never misses cleavage of its cognate substrate, cleaving from a fully bent state after ~160 ms with kSTO = 6.3 \u00b1 0.2 s^-1, demonstrating that the reaction is limited by enzyme-substrate encounters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C29-C30 provide direct single-molecule evidence that every DNA bending event leads to successful cleavage. The measured kSTO (C33) is comparable to bulk assays, and the combination of diffusion-limited bending and 100% cleavage efficiency (C34) provides strong evidence for encounter-limited kinetics. This represents a practically perfect precision reaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The cleavage rate (kSTO) is sensitive to low-molecular-weight viscogens (glycerol, slope = 1.5 \u00b1 0.2) but not high-molecular-weight viscogens (PEG-8000), indicating that local protein conformational changes mediate catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 demonstrate through viscosity experiments that kSTO is affected by small but not large viscogens, providing evidence for local protein conformational changes during catalysis. The linear dependence on glycerol concentration and lack of effect with PEG-8000 support the interpretation that disorder-to-order transitions are involved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "FEN1 actively bends the noncognate SF-6,0 substrate with diffusion-limited kon-bending, but the bent conformer is markedly less stable (\u03c4bending ~43 ms, Kd-bending 50-fold higher) than the cognate substrate, demonstrating that the 3'flap is critical for DNA binding stability but not for initial bending.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 provide comprehensive kinetic analysis showing that while FEN1 can bend SF-6,0 with diffusion-limited rates (C40), the stability is dramatically reduced (C39, C41). Multiple orthogonal methods (smFRET, SPR) confirm the increased Kd-bending (C41), supporting the conclusion that the 3'flap stabilizes but is not required for bending (C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "FEN1 actively converts equilibrated nick junctions from single-flap to double-flap conformations by pulling out the 3'end to create a 3'flap, as evidenced by FRET measurements showing junction movement by one base pair upon FEN1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 provide a logical chain of evidence: FRET measurements show EQ DF-6,1 and SF-6,0 have similar FRET values alone (C43), suggesting the equilibrated junction exists as SF (C44). Upon FEN1 binding, the bent FRET values match NonEQ DF-6,1 (C46, C48), indicating one base pair movement. This supports active 3'flap creation (C45, C47, C49), though the mechanism is inferred rather than directly observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Only fully paired junctions are stably bent by FEN1, with mismatched junctions showing 7-fold increased Kd-bending. The R47 residue in the hydrophobic wedge mediates allosteric communication between the 3'flap-binding pocket and the gateway, as demonstrated by FEN1-R47A showing similar defects to wild-type on SF-6,0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 demonstrate through systematic mutagenesis and substrate variation that junction pairing is critical for stable bending (C50-C51). The structural role of R47 (C52) and functional validation with R47A mutant (C53) provide evidence for allosteric coupling, though direct observation of the conformational changes would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Initial DNA bending by FEN1 does not require 5'flap threading, but full bending and stable DNA lockdown require the ability of the 5'flap to thread through the cap-helical gateway, demonstrating coordination between 3'flap binding and 5'flap threading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide evidence from threading-blocked substrates showing that blocking threading impairs but does not eliminate bending (C54-C55). The observation that 3'flap binding does not require threading (C56) but stable bending does (C57) supports a model of sequential substrate verification steps. This revises previous conclusions from the same group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Noncognate substrates with short bent conformer lifetimes (SF-6,0: ~43 ms vs. ~160 ms required for cleavage) undergo multiple cycles of DNA bending and unbending before successful cleavage, demonstrating that destabilizing the bent intermediate reduces the probability of assembling catalytically competent active sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide direct single-molecule evidence that when the bent lifetime is shorter than the time required for catalysis, multiple bending attempts occur before cleavage (C60). The quantitative comparison of lifetimes (C59) and the mechanistic interpretation (C61) are well-supported by the data, revealing kinetic proofreading behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "FEN1 has intrinsic mechanisms that block formation of catalytically competent active sites in noncognate substrates even when the bent conformer lifetime exceeds that required for catalysis. The kSTO is similar across all substrates, indicating that 3'flap-induced protein ordering locks DNA into either immediately competent or incompetent conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 demonstrate that noncognate substrates with long bent lifetimes (13-15 fold slower unbending than SF-6,0) still undergo multiple bending cycles without cleavage (C62-C63). The similar kSTO across substrates (C64) supports a binary decision model (C65) rather than multiple sampling attempts, though direct observation of protein conformational states would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Gateway residues Y40, K93, and R100 are critical for both DNA bending stability and association kinetics, with R100 and Y40 reducing kon-bending up to 11-fold when mutated. The metal-coordinating residue D181 has minimal effect on kon-bending, indicating metal ions do not interact with DNA during bending and threading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 provide systematic mutational analysis showing that active-site residues contribute to DNA bending before the active site is fully assembled. The differential effects of gateway mutations (C67) versus metal-coordinating mutations (C68) support the interpretation that metals are not involved in initial substrate recognition, though the inference about metal-phosphate interactions (C68) is indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "FEN1-Y40A cleaves cognate substrate after multiple bending cycles with 3-fold increased kSTO, indicating an additional step after DNA lockdown involving active positioning of the scissile phosphate for incision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 demonstrate that Y40A mutant shows a distinct phenotype from other noncognate substrates: multiple bending attempts (C69) but increased kSTO (C70), supporting an additional positioning step (C71). This provides evidence for separable substrate verification and catalytic positioning steps, though the exact nature of this step remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C72",
+      "C75"
+    ],
+    "result": "FEN1 employs a mutual protein-DNA induced-fit mechanism that efficiently verifies substrates and suppresses off-target cleavage, achieving practically perfect precision with diffusion-limited kinetics and the ability to differentiate cognate from noncognate substrates despite small binding affinity differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C72, and C75 represent the overarching conclusions supported by the collective experimental evidence. The single-molecule data demonstrating 100% cleavage efficiency for cognate substrates, diffusion-limited kinetics, and multiple verification steps for noncognate substrates provide strong support for this induced-fit mechanism model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Active DNA bending does not create significant energy barriers (diffusion-limited rates in FEN1 and EXO1), and different 5'nuclease family members may share DNA-bending-induced disorder-to-order transitions but differ in coupling mechanisms with active-site assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is well-supported by the measured diffusion-limited rates for both FEN1 and EXO1. However, claim C74 is speculative, proposing conservation across the family based on only two enzymes. More family members would need to be tested to support this generalization about the 5'nuclease family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The observed mechanisms may have evolved to enhance substrate flexibility, limit nonspecific cleavage, and contribute to genomic stability, though cellular significance and evolutionary origins remain speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79 are explicitly speculative proposals about cellular significance (C76), functional advantages (C77-C78), and evolutionary origins (C79). While these are reasonable hypotheses based on the mechanistic findings, they lack direct experimental support and represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims about FEN1 function, substrate recognition, structural features, and disease associations based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C17 represent established knowledge from prior studies, appropriately cited. These provide necessary context for the current work and are supported by the cited literature. They are not novel findings of this manuscript but rather background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C37"
+    ],
+    "result": "FEN1 bends equilibrated DF-6,1 substrate with similar Kd-bending to non-equilibrated substrate, showing multiple transitions between bent and unbent states, and cleavage behavior is similar for both equilibrated and non-equilibrated 3'flaps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 and C37 demonstrate that equilibrated substrates behave similarly to non-equilibrated ones in terms of bending affinity and cleavage kinetics, though with reduced stability of individual binding events. This is supported by both single-molecule data and comparison with bulk assays (C37), validating the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "FEN1 bends both cognate and noncognate substrates, with higher Kd-bending for noncognate substrates, demonstrating differential substrate stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a summary conclusion well-supported by the systematic comparison of binding kinetics across multiple substrate types (C23, C41, C50). The data consistently show that noncognate substrates have weaker binding affinity while still undergoing active bending, supporting the substrate discrimination model.",
+    "result_type": "MAJOR"
+  }
+]

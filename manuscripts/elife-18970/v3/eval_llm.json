@@ -1,0 +1,419 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C54"
+    ],
+    "result": "CRISPR-Cas9 screens were performed in multiple lung cancer cell lines with different RTK/Ras/MAPK pathway alterations to identify genes whose loss confers resistance to BRAF, MEK, EGFR, and ALK inhibitors. Genome-scale screens used the GeCKO v2 library in NRAS-, BRAF-, and KRAS-mutant cells treated with trametinib or vemurafenib. Focused screens used a druggable target library in EGFR- and ALK-mutant cells treated with erlotinib, crizotinib, or LDK-378.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30, C33-C36, and C54 describe the experimental design of the CRISPR screens, which is clearly documented in the methods and Figure 1. The use of appropriate drug concentrations that inhibit ERK phosphorylation (C36) is supported by Figure 1\u2014figure supplement 1 and 2. The experimental approach is well-described and reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C143",
+      "C144"
+    ],
+    "result": "The CRISPR screens identified multiple genes whose deletion confers survival under RTK/MAPK pathway inhibition, including expected MAPK pathway regulators (NF1, DUSP1), PI3K/AKT/mTOR pathway regulators (PTEN, TSC1/2), p38/JNK MAPK regulators, and various transcriptional regulators. KEAP1 was the only gene that scored highly across all four genome-scale screens and was more enriched than known pathway regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C52 and C143-C144 describe the screen results shown in Figure 1B and Supplementary files 1-2. The identification of KEAP1 as uniquely scoring across all screens is clearly demonstrated. The functional categorization of hits is appropriate, though the inference about p38/JNK pathways (C41) is speculative. The comparison to prior melanoma screens (C37) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Loss of KEAP1 modulated the response to BRAF, MEK, EGFR, and ALK inhibitors across multiple genetic contexts (BRAF-, NRAS-, KRAS-, EGFR-, and ALK-mutant cells). Validation experiments using arrayed sgRNAs confirmed that KEAP1 knockout decreased sensitivity to trametinib, vemurafenib, erlotinib, crizotinib, LDK-378, and afatinib in multiple cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C55-C56, and C61-C63 are supported by crystal violet assays (Figure 1D-E, Figure 1\u2014figure supplement 5-6) and screen data (Figure 1\u2014figure supplement 3, Supplementary file 2). Multiple independent sgRNAs and cell lines were tested, providing robust validation. The dose-response data (C63) further supports the effect on drug sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C147",
+      "C148"
+    ],
+    "result": "KEAP1 knockout does not confer resistance by reactivating the MAPK pathway or by affecting expression of the pro-apoptotic protein BIM. Unlike other reported resistance mechanisms, ERK activation remains suppressed in KEAP1 knockout cells treated with inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C147-C148 are supported by immunoblot data in Figure 2A and Figure 2\u2014figure supplement 1A-B showing maintained ERK suppression and unchanged BIM levels. This distinguishes the KEAP1 mechanism from previously reported resistance pathways and is an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C81"
+    ],
+    "result": "KEAP1 loss increases NRF2 protein levels, and elevated NRF2 is both necessary and sufficient for KEAP1 loss to modulate drug sensitivity. Double knockout of KEAP1 and NRF2 abolished the resistance phenotype, while overexpression of wildtype or mutant NRF2 (G31R, D29H) increased resistance to multiple inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C53, C68-C73, and C81 are supported by immunoblots (Figure 2B, Figure 2\u2014figure supplement 1C) and functional assays (Figure 2D, Figure 2\u2014figure supplement 2). The necessity experiment (double knockout) and sufficiency experiment (NRF2 overexpression) provide strong mechanistic evidence. The use of NRF2 mutants that cannot bind KEAP1 further validates the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Restoring wildtype KEAP1 expression in KEAP1-null A549 cells increased sensitivity to trametinib, while expression of the non-functional KEAP1 G333C mutant did not alter sensitivity. This demonstrates that KEAP1's regulation of NRF2 is required for modulating drug sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by crystal violet assays in Figure 2E-F. The use of a non-functional KEAP1 mutant as a negative control strengthens the conclusion that NRF2 regulation is essential. This complementary gain-of-function experiment validates the loss-of-function findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Treatment with RTK/MAPK inhibitors unexpectedly increased NRF2 mRNA and protein levels and NRF2 target gene expression, contrary to the hypothesis that MAPK inhibition would decrease NRF2. Drug treatment also decreased KEAP1 expression and induced a shift in NRF2 protein migration. KEAP1 knockout further enhanced NRF2 activation beyond drug treatment alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C93 are supported by qPCR data (Figure 3A, Figure 3\u2014figure supplement 1) and immunoblots (Figure 3B, Figure 3\u2014figure supplement 2). The finding contradicts prior literature (C84) but is well-documented. The observation of additive effects between drug treatment and KEAP1 knockout (C91) is important for understanding the mechanism. However, the molecular basis for the NRF2 protein shift (C88) is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "RTK/MAPK pathway inhibitors induced ROS in cells with intact KEAP1, and KEAP1 knockout or NRF2 overexpression dramatically reduced drug-induced ROS. The ability of inhibitors to induce ROS may explain their ability to increase NRF2 levels, as ROS leads to NRF2 release from KEAP1 regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C96-C101 are supported by DCFDA assays in Figure 4A and Figure 4\u2014figure supplement 1. The ROS measurements are consistent across multiple cell lines and drugs. The mechanistic link between ROS and NRF2 activation (C99-C100) is supported by prior literature (Kobayashi et al., 2004). However, the exact mechanism by which MAPK inhibitors induce ROS is not elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C121"
+    ],
+    "result": "KEAP1 knockout altered cell metabolism, with the most highly increased metabolite being reduced glutathione (GSH). Both reduced and oxidized glutathione increased in KEAP1 knockout cells, but the GSH/GSSG ratio also increased, indicating a more reduced intracellular environment. Cystine was among the most decreased metabolites. Expression of glutathione synthesis enzymes (GCLC, GCLM) was higher in drug-treated KEAP1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C102-C112, and C121 are supported by metabolite profiling data (Figure 4B-D, Supplementary file 3) and qPCR data (Figure 3A, Figure 3\u2014figure supplement 1). The metabolomics analysis is comprehensive with appropriate replication (n=8). The interpretation that increased GSH/GSSG ratio indicates a more reduced environment (C106) is standard. However, the inference about cystine conversion (C109) is speculative without direct flux measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C132"
+    ],
+    "result": "Expression of genes involved in glutathione metabolism was altered in KEAP1 knockout cells. SHMT1/2 expression was partially maintained in KEAP1 knockout cells in some contexts. GPX1 (which converts GSH to GSSG) expression increase was abrogated in KEAP1 knockout cells, while GSR (which converts GSSG to GSH) expression was higher. These changes suggest that conversion of oxidized to reduced glutathione may be more important than de novo synthesis for promoting survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 and C132 are supported by qPCR data (Figure 4E, Figure 4\u2014figure supplement 3-4). The gene expression changes are consistent with the metabolite data. However, the conclusion that GSSG-to-GSH conversion is more important than de novo synthesis (C132) is an inference that requires additional validation. The SHMT1/2 data (C116) shows cell line-specific effects, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Treatment with N-acetyl cysteine (NAC), an antioxidant and glutathione precursor, reduced ROS and decreased sensitivity to trametinib in KEAP1-intact cells. This indicates that ROS reduction through increased glutathione synthesis is important for KEAP1 knockout-mediated survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by DCFDA assays (Figure 5A) and population doubling data (Figure 5B). The NAC experiment provides pharmacological validation of the glutathione-ROS mechanism. However, NAC has multiple effects beyond glutathione synthesis, so the interpretation (C125) should be considered with caution. Additional experiments with more specific interventions would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Treatment with buthionine sulfoximine (BSO), which inhibits glutamate cysteine ligase (GCL), increased ROS and decreased viability in control cells when combined with trametinib. KEAP1 knockout prevented the BSO-induced decrease in viability and could decrease ROS even when GCL was inhibited. This suggests that conversion of oxidized to reduced glutathione may be more important than de novo synthesis for promoting survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C132 are supported by DCFDA assays (Figure 5C, Figure 5\u2014figure supplement 1-2) and crystal violet assays (Figure 5D, Figure 5\u2014figure supplement 1). The BSO experiments provide strong evidence that KEAP1 knockout can reduce ROS independently of de novo glutathione synthesis. However, the conclusion that GSSG-to-GSH conversion is more important (C132) is an inference that could be tested more directly with GSR inhibitors or knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors propose a model in which RTK/MAPK pathway inhibitors block MAPK signaling and induce ROS, which activates NRF2 to low levels. KEAP1 loss increases NRF2 activity, which reduces ROS through increased glutathione synthesis and alters cell metabolism, allowing cells to proliferate in the absence of MAPK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 and C139-C140 represent the integrated model shown in Figure 5E. This model is well-supported by the collective data on ROS induction, NRF2 activation, glutathione metabolism, and cell survival. However, the model is somewhat simplified and does not fully explain all observations (e.g., the mechanism of ROS induction by MAPK inhibitors, the relative contributions of different NRF2 functions).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "KEAP1 knockout partially restored anabolic metabolism, with higher levels of glycolytic and pentose phosphate pathway intermediates in trametinib-treated KEAP1 knockout cells compared to controls. Expression of NRF2 target genes involved in pentose phosphate pathway, nucleotide synthesis, and NADPH synthesis was higher in drug-treated KEAP1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 are supported by metabolite profiling data (Supplementary file 3) and qPCR data (Figure 5\u2014figure supplement 3). The metabolic changes are consistent with NRF2's known role in regulating metabolism (C135, supported by citations). However, the claim that metabolism is \"partially restored\" (C137) is somewhat vague and would benefit from more quantitative analysis comparing to untreated cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "In xenograft experiments, KEAP1 knockout HCC827 cells showed a proliferative advantage over control cells in both the presence and absence of erlotinib treatment in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C141 is supported by the xenograft data in Figure 6. The in vivo validation is important for demonstrating that the mechanism operates in a more physiological context. However, the experiment has limitations: only one cell line was tested, the KEAP1 knockout cells grew faster even without drug (suggesting additional effects beyond drug resistance), and no mechanistic studies were performed in vivo to confirm the ROS/glutathione mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction establishes that RTK/MAPK pathway inhibitors have led to clinical responses but resistance is a major problem. Single-agent therapy has limited success, with both intrinsic and acquired resistance occurring. A general theme of resistance is reactivation of the RTK/MAPK pathway by alternative mechanisms, highlighting pathway redundancy and suggesting that combination therapy may be more effective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C29 summarize established knowledge from prior literature, supported by appropriate citations. These claims provide important context for the study but do not represent new findings. The synthesis of prior work is accurate and well-referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C94",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C174"
+    ],
+    "result": "Prior literature has established that KEAP1 loss confers resistance to chemotherapeutics, that KEAP1/NRF2 and MAPK pathways are mechanistically linked, that NRF2 regulates ROS detoxification and metabolism, and that NRF2 is an oncogene. The KEAP1/NRF2 axis responds to oxidative stress by regulating drug efflux, ROS scavenging, and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C94, and C151-C154, C174 cite prior literature to establish the known functions of the KEAP1/NRF2 pathway. These claims are well-supported by appropriate citations and provide important background for interpreting the current findings. However, they do not represent new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C145",
+      "C146",
+      "C150"
+    ],
+    "result": "This study expanded previous approaches by identifying resistance mechanisms shared across multiple targeted therapeutics in several genetic contexts. KEAP1 loss or NRF2 overexpression is sufficient to restore cell proliferation in the absence of MAPK signaling, which differs from previously reported mechanisms that involve MAPK reactivation or anti-apoptotic protein induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C143, C145-C146, and C150 describe the novelty and significance of the study's approach and findings. The multi-context screening approach is indeed novel compared to prior single-context screens (C142, supported by citations). The distinction from prior mechanisms (C146-C150) is well-supported by the data showing no MAPK reactivation or BIM changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The authors conclude that alterations in the KEAP1/NRF2 pathway may promote survival in the presence of multiple RTK/Ras/MAPK pathway inhibitors by reducing ROS and regulating metabolic pathways. This is consistent with recent findings in pancreatic cancer showing that NRF2 supports tumor maintenance and that glutathione synthesis is a key NRF2 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C155 represent the main conclusions of the study, which are well-supported by the collective data. The comparison to pancreatic cancer findings (C156-C158, citing Chio et al., 2016) provides additional validation. However, the use of \"may promote\" (C9) appropriately acknowledges that clinical relevance remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The discussion contextualizes the findings within current clinical trials and genomic data. KEAP1/NRF2 alterations occur in ~20-30% of lung cancers and can co-occur with RTK/Ras alterations. A NRF2 mutation was recently identified in a patient with acquired ALK inhibitor resistance. The authors suggest that analyzing KEAP1/NRF2 status in clinical samples and stratifying patients accordingly will be important for evaluating inhibitor efficacy and choosing appropriate treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C159-C177 discuss clinical implications and future directions. The genomic prevalence data (C164-C167) and clinical trial information (C159, C161, C168) are supported by appropriate citations or established knowledge. The case report of NRF2 mutation in a resistant patient (C170-C173) provides clinical validation, though the interpretation is speculative (C173). The suggestions for future clinical studies (C176-C177) are reasonable but represent speculation rather than demonstrated results. The claim that KEAP1/NRF2 status is not currently used clinically (C175) is accurate but may become outdated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CALU1 cells harbor a KEAP1 P128L mutation that has not been reported in cancer databases, but NRF2 regulation by KEAP1 appears intact in these cells based on increased NRF2 levels upon KEAP1 knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 address a potential confounding factor in the CALU1 experiments. The database searches (C75) and functional evidence (C76, supported by Figure 2\u2014figure supplement 1) support the conclusion that the P128L mutation does not disrupt KEAP1 function. However, this is an inference based on indirect evidence; direct biochemical characterization of the P128L mutant would be more definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Drug efflux likely does not explain the resistance mediated by KEAP1 loss, since MAPK pathway inhibition is maintained in KEAP1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is a reasonable inference based on the maintained ERK suppression shown in Figure 2A. If drugs were being effluxed, ERK would be reactivated. However, this is indirect evidence; direct measurement of intracellular drug concentrations would provide more definitive proof. The conclusion is likely correct but could be strengthened.",
+    "result_type": "MINOR"
+  }
+]

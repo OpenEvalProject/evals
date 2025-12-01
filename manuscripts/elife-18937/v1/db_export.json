@@ -1,0 +1,1388 @@
+{
+  "submission": {
+    "id": "779ec45c-144b-4e9a-a0a8-f8a143531573",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:06:15.082287Z",
+    "updated_at": "2025-11-30T21:06:15.082287Z"
+  },
+  "content": [
+    {
+      "id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "submission_id": "779ec45c-144b-4e9a-a0a8-f8a143531573",
+      "content_type": "manuscript",
+      "content_text": "# Autocorrelation structure at rest predicts value correlates of single neurons during reward-guided choice\n\n## Authors\n\n- Sean E Cavanagh<sup>1</sup> ([ORCID: 0000-0001-9275-2725](https://orcid.org/0000-0001-9275-2725))\n- Joni D Wallis<sup>2</sup>\n- Steven W Kennerley<sup>1</sup> \u2020\n- Laurence T Hunt<sup>1</sup> ([ORCID: 0000-0002-8393-8533](https://orcid.org/0000-0002-8393-8533)) \u2020\n\n### Affiliations\n\n1. Sobell Department of Motor Neuroscience University College London London United Kingdom\n2. Department of Psychology University of California, Berkeley Berkeley United States\n3. Helen Wills Neuroscience Institute University of California, Berkeley Berkeley United States\n4. Wellcome Trust Centre for Neuroimaging University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nCorrelates of value are routinely observed in the prefrontal cortex (PFC) during reward-guided decision making. In previous work (Hunt et al., 2015), we argued that PFC correlates of chosen value are a consequence of varying rates of a dynamical evidence accumulation process. Yet within PFC, there is substantial variability in chosen value correlates across individual neurons. Here we show that this variability is explained by neurons having different temporal receptive fields of integration, indexed by examining neuronal spike rate autocorrelation structure whilst at rest. We find that neurons with protracted resting temporal receptive fields exhibit stronger chosen value correlates during choice. Within orbitofrontal cortex, these neurons also sustain coding of chosen value from choice through the delivery of reward, providing a potential neural mechanism for maintaining predictions and updating stored values during learning. These findings reveal that within PFC, variability in temporal specialisation across neurons predicts involvement in specific decision-making computations.\n\n## Introduction\n\nTheoretical models of decision making emphasise the importance of evidence accumulation across time until a categorical choice is reached (Bogacz et al., 2006; Gold and Shadlen, 2007). One widely studied class of evidence accumulation models are cortical attractor networks, originally derived from studies of working memory (Amit and Brunel, 1997; Wang, 1999, 2002). These rely upon strong recurrent connections between similarly tuned neurons to integrate evidence across time, and exhibit temporally extended persistent activity that stores the outcome of the decision process in memory (Wang, 2002; Wong and Wang, 2006). In value-guided decision making tasks, attractor network models predict the emergence of correlates of chosen value during choice (Hunt et al., 2012; Rustichini and Padoa-Schioppa, 2015). These value correlates result from varying speeds of decision formation across different trials, an issue we explored closely in our previous paper (Hunt et al., 2015). However, in contrast to the relative homogeneity of chosen value correlates within such models, it is known that decision correlates are highly heterogeneous across different cells within a given region (Kennerley et al., 2009; Wallis and Kennerley, 2010; Meister et al., 2013). The source and functional significance of this neuronal heterogeneity remains unclear.\n\nNeurons also exhibit heterogeneity in their temporal receptive fields of integration (Chen et al., 2015). The temporal receptive field of a neuron can be established by examining its spike-count autocorrelation function (ACF) at rest (Ogawa and Komatsu, 2010). A slowly decaying ACF whilst at rest reflects temporal stability in firing, suggesting that the neuron integrates information across long periods of time; by contrast, a fast-decaying ACF reflects temporal variability in firing. Recently, this approach was used to demonstrate a hierarchy of temporal receptive fields across areas of cortex (Murray et al., 2014), with populations of neurons in lower and higher cortical areas exhibiting brief and extended temporal receptive fields, respectively. Those areas with temporally extended receptive fields thus appear intrinsically adapted to cognitive tasks involving extended integration of information across time, such as working memory and decision making (Mazurek et al., 2003; Gold and Shadlen, 2007; Wang, 2012; Chaudhuri et al., 2015; Chen et al., 2015). Yet in addition to the\u00a0heterogeneity of temporal fields across regions, similar heterogeneity is also evident within cortical areas (Ogawa and Komatsu, 2010; Nishida et al., 2014). It remains unknown whether this intra-regional heterogeneity in temporal specialisation might predict the computations served by different neurons in decision-making tasks.\n\nIn our previous study of reward-guided decision making (Hunt et al., 2015), we provided evidence that correlates of chosen value may emerge as a consequence of varying rates of evidence accumulation. A corollary of this idea is that neurons functionally specialised to perform temporally extended computations (such as evidence accumulation) might exhibit stronger chosen value correlates during choice. We hypothesised that this would be indexed by measuring individual neurons\u2019 temporal receptive fields whilst at rest. We also hypothesised that this functional specialisation might support other temporally extended computations during reward-guided choice, such as the maintenance of value coding until reward delivery. This could be one component of a mechanism for credit assignment in learning, which is known to rely upon PFC and in particular orbitofrontal cortex (Walton et al., 2010; Takahashi et al., 2011; Chau et al., 2015; Jocham et al., 2016), with the other component being a representation of the chosen stimulus identity, which is also encoded by OFC neurons (Raghuraman and Padoa-Schioppa, 2014;\u00a0Lopatina et al., 2015). We therefore sought to link variability in spike-rate autocorrelation at rest with the\u00a0variability of neuronal responses during reward-guided choices.\n\n## Results\n\nWe re-examined the neural correlates of chosen value during choice within rhesus macaque prefrontal cortex (PFC) (Hosokawa et al., 2013; Hunt et al., 2015), and extended our analysis to the time of reward delivery (Figure 1, Figure 1\u2014figure supplement 1). During choice, chosen value correlates were remarkably similar across all three PFC brain regions (dorsolateral prefrontal cortex (DLPFC), orbitofrontal cortex (OFC) and anterior cingulate cortex (ACC)) at the population level (Figure 1A). However, this was not the case at the time of outcome, where the\u00a0chosen value correlates predominated in OFC (Figure 1B). This value signal at outcome contained information about both the chosen benefit and chosen cost (Figure 1\u2014figure supplement 2). As well as variability in value correlates across time, there was a large degree of variability at the level of single neurons constituting the population averages, both at choice and outcome (Figure 1C\u2013D). Within each region there were some neurons with strong chosen value correlates, but other neurons with weak or non-selective responses to chosen value.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig1-v1.jpg)\n\n**Figure 1.:** (A) At decision time, chosen value correlates appeared homogenous across regions in their expression. The coefficient of partial determination (CPD) for chosen value averaged across populations of DLPFC (n = 310), OFC (n = 214) and ACC (n = 333) neurons (lines denote mean \u00b1 SE for each region). CPD was calculated by regressing chosen value onto firing rate during the choice period of a cost-benefit decision making task (see Materials and methods). Chosen value correlates were not significantly different between any brain region (permutation tests; DLPFC v OFC, no cluster survived thresholding, DLPFC v ACC, p=0.2706, OFC v ACC, no cluster survived thresholding; see Materials and methods). Dashed lines mark the null hypothesis level for CPD in each cortical area (see Materials and methods). (B) Population averages when chosen value was regressed onto firing rate during reward delivery. OFC showed stronger chosen value correlates following reward onset than ACC and DLPFC (permutation tests; OFC v DLPFC, p=0.0010, OFC v ACC, p=0.0028; see Materials and methods). (C and D) Within each region, chosen value correlates were heterogeneous across neurons. Chosen value correlates of the individual neurons contributing to the population averages in A and B respectively. Within each matrix: each row is a neuron (sorted by maximum CPD within the corresponding epoch and area), each column is a 10\u00a0ms time bin. Hence, neurons are sorted in a different order in C and D. Chosen value coding at reward delivery was weaker than at choice. Figure 1\u2014figure supplement 1 shows the fraction of neurons with reliable coding of chosen value at choice and at the\u00a0outcome. Figure 1\u2014figure supplement 2 shows that OFC codes chosen value, as opposed to chosen benefit alone, at the time of reward delivery.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The regression coefficient for each neuron at each time point was assessed for significance to p<0.05 level. The proportion of significant neurons within each cortical area was smoothed across five 10\u00a0ms time points. The fraction of significant neurons exceeds the null hypothesis (dashed magenta line) for all time points after choice onset.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The regression analysis from Figure 1 was repeated, with the chosen value predictor split into chosen benefit and chosen cost components for each trial. Both chosen benefit and chosen cost coding are present at the time of reward delivery. (A) and (B) plot the population average coefficient of partial determination for the chosen benefit and cost regressors timelocked to reward onset. Dashed lines mark the null hypothesis level for CPD in each cortical area (see Materials and methods). (C) and (D), as in Figure 1\u2014figure supplement 1, show the fraction of neurons coding chosen benefit (C) or cost (D) within each cortical area. The dashed magenta lines indicate the null hypothesis fraction of significant coding neurons.\n\nWe hypothesised that this variability might be accounted for by intrinsic firing properties of the neurons at rest, reflecting different neurons\u2019 temporal specialisation. We characterised resting properties of neuronal firing by examining their spike rate autocorrelation during pre-trial fixation. The decay of the autocorrelation function (ACF) provides a metric of each neuron\u2019s temporal stability in firing rate. Careful inspection of ACFs at the level of single neurons demonstrated marked heterogeneity of ACFs across individual neurons (Figure 2), complementing previous descriptions that have examined average population responses (Murray et al., 2014; Chaudhuri et al., 2015). We fitted an exponential decay function (Murray et al., 2014) to all neurons that could be described by such an equation, yielding a single decay time constant, \u03c4, for each neuron (446 of 857 neurons, see Figure 2\u2014figure supplement 1 and Materials\u00a0and\u00a0methods). We found a large degree of heterogeneity in time constants across neurons, both within and between cortical areas (Figure 2C). Time constants were larger in the DLPFC and ACC population (Kruskal-Wallis test, p=0.0007), but most variable within OFC and ACC populations (Bartlett\u2019s Statistic = 11.913, p=0.0026). Averaging across the ACFs of individual neurons prior to fitting the exponential equation yielded similar qualitative results to the population averages reported in Murray et al. (2014) (Figure 2\u2014figure\u00a0supplements 2 and 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig2-v1.jpg)\n\n**Figure 2.:** (A) Autocorrelation matrix and structure of an example low time constant OFC single neuron. (B) Autocorrelation matrix and structure of an example high time constant single OFC neuron. This neuron has a stable autocorrelation maintained across time. Fitting of time constants was only performed on cells that showed an exponentially decaying autocorrelation. See Figure 2\u2014figure supplement 1 for single neuron examples of excluded cells. (C) Histograms of the time constants within the three PFC brain regions. Time constants are highly variable across neurons; with the greatest heterogeneity present within OFC and ACC populations. Solid and dashed vertical lines represent mean(Log(\u03c4)) and mean(Log(\u03c4)) \u00b1 SD(Log(\u03c4)) respectively. See Figure 2\u2014figure supplement 2 for autocorrelation structure at the population level. Figure 2\u2014figure supplement 3 for population autocorrelation when trials are filtered for fluctuations in firing rate. Figure 2\u2014figure supplement 4 shows the\u00a0population autocorrelation across trial time.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** We manually excluded 411 cells (48.1% of all neurons) from all subsequent analyses which could not be adequately described as showing an exponential decay in spike count autocorrelation (see Materials and methods). Three example neurons which were not assigned time constants because their autocorrelation did not decay exponentially. (A) An example DLPFC neuron with a low, flat autocorrelation. (B) An example OFC neuron with a persistent, non-decaying autocorrelation. (C) An example ACC neuron with an initial increase in autocorrelation at short time lags, and no subsequent decay.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Time constant (tau parameter from the displayed equation), captures the maintenance of autocorrelation over time. ACC had the highest time constant of all regions studied. See also Figure 2\u2014figure supplement 3 for autocorrelation when trials were filtered for drifting firing rate (see Materials and methods) and Figure 2\u2014figure supplement 4 for population autocorrelation across trial time.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Spike count autocorrelation was only performed on trials where the\u00a0resting firing rate was statistically stationary (see Materials and methods). Similar results were obtained to Figure 2\u2014figure supplement 2.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** A 1\u00a0s fixation period is subdivided into non-overlapping 50\u00a0ms bins. Spike count from each bin was correlated with all other bins then averaged across the population to generate these matrices.\n\nOur main question pertained to whether the observed variability in single-cell resting activity within PFC may determine different functional computations during a cost-benefit decision making task (Hosokawa et al., 2013; Hunt et al., 2015). We first sought to visually identify a potential relationship with chosen value by sorting the matrices in Figure 1C by time constant. To maximise our sensitivity, and because of the similarity in chosen value correlates across PFC brain regions at choice (Figure 1A), we collapsed this analysis across all three PFC regions (n = 446 neurons). We found that more neurons with high chosen value coefficient of partial determination (CPD) were more\u00a0apparent at the bottom of the sorted matrix than at the top (Figure 3A), implying a relationship between chosen value coding and resting \u03c4. To test this relationship statistically, neurons were subdivided into high and low time constant populations using a median split (Figure 3B). The population with a higher \u03c4 (more stable activity at rest) had more variance explained by chosen value during choice (permutation test (see Materials\u00a0and\u00a0methods), p=0.0298). We further demonstrated this relationship by performing a rank correlation between each neuron\u2019s coefficient of partial determination (CPD) at the time of the maximum population-average CPD with its time constant (Correlation Coefficient = 0.148, p=0.0018; 95% CI [0.0556, 0.2373], Figure 3\u2014figure supplement 1). This relationship was also present when controlling for the\u00a0baseline firing rate and brain area using multiple regression (see Materials\u00a0and\u00a0methods, \u03b2 = 0.3315, p=0.0254; 95% CI [0.0878 0.5751]).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig3-v1.jpg)\n\n**Figure 3.:** (A) Strong chosen value correlates were more prevalent in neurons with higher time constants. Coefficient of partial determination (CPD) for chosen value across time for each PFC neuron (n = 446) was stacked into a matrix. The rows of the matrix (i.e. each individual neuron) were sorted by increasing time constant, and then convolved with a Gaussian function (see Materials and methods). The white dashed line indicates a median split by time constant; high time constant neurons are beneath the line, low time constant neurons are above. The graph to the right of this matrix shows the individual decay time constant for each neuron (row) in the matrix. (B) When all neurons are subdivided by a median split of time constant, those with a higher time constant exhibit stronger chosen value correlates. Black trace indicates a significant cluster of bins, corrected for multiple comparisons across time (see Materials and methods, p=0.0298). CPD (mean \u00b1 SE) for chosen value was calculated by multiple linear regression analysis (see Materials and methods). Figure 3\u2014figure supplement 1 shows a rank correlation of resting time constant with chosen value coding across time.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** At the time of maximum population-average chosen value coding (indicated by the blue line), there is a positive correlation between time constant and the coefficient of partial determination (CPD) for chosen value (correlation coefficient = 0.148; p=0.0018). ** represents p<0.01.\n\nWe then repeated the analysis in Figure 3B across all three regions. We found that the relationship between high \u03c4 and chosen coding was particularly prominent in OFC and ACC, but observed no significant difference in the\u00a0chosen value coding between populations with high/low \u03c4 in DLPFC (Figure 4). If the\u00a0chosen value correlates were purely related to the dynamics of choice processes, we might expect them to return to baseline levels after the choice had been executed. Although this was largely the case, a degree of chosen value coding persisted until reward outcome, particularly within OFC (Figure 1B). Within OFC, we found that persistent coding of chosen value from choice to outcome was more evident within the high \u03c4 neuronal population than within the low \u03c4 population, particularly during the experience of reward delivery (Figure 4; permutation test at time of outcome (see Materials\u00a0and\u00a0methods), p=0.0082). Such sustained coding of chosen value from choice through outcome was not present in ACC and DLPFC. This implies a unique neuronal signature within OFC which could contribute to the linking of choices to outcomes, a process critical for learning.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig4-v1.jpg)\n\n**Figure 4.:** As in Figure 3B, a median split of neurons by their resting time constant was performed within each PFC area. The coefficient of partial determination (CPD) for chosen value in high time constant (blue) and low time constant (red) neurons is plotted timelocked to both choice and reward onset. Chosen value explained more of the variance in neuronal firing in the OFC neurons with a higher time constant both at choice (p=0.0066) and shortly after reward delivery (p=0.0082). Chosen value is therefore maintained across the trial within OFC, but returns to baseline before the next trial begins. CPD (mean \u00b1 SE) for chosen value was calculated by multiple linear regression analysis (see Materials\u00a0and\u00a0methods). Figure 4\u2014figure supplement 1 shows a rank correlation of resting time constant with chosen value coding during the decision phase and reward delivery.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Within the\u00a0orbitofrontal cortex (OFC), there was a positive correlation between resting time constant and the coefficient of partial determination (CPD) for chosen value at the time of the maximum population-average CPD during choice (vertical purple line, correlation coefficient = 0.2268, p=0.0242) and outcome (vertical purple line, correlation coefficient = 0.2608, p=0.0093). This effect was also present shortly after the onset of reward delivery. The relationship between resting time constant and chosen value correlates was weaker within the\u00a0dorsolateral prefrontal cortex (DLPFC) and anterior cingulate cortex (ACC) at choice. Towards the end of the decision phase, when DLPFC transitions between primarily chosen value correlates to coding the chosen action (Hunt et al. 2015), a negative correlation between resting time constant and chosen value CPD emerges. There was no relationship between time constant and the\u00a0chosen value coding within DLPFC and ACC at the time of outcome. * represents p<0.05; ** represents p<0.01.\n\nGiven the above result, we sought to address whether the same OFC neurons were signalling chosen value at the time of both choice and outcome. We performed a cross-temporal pattern analysis on data from the OFC (Kennerley et al., 2011; Stokes et al., 2013). This involves cross-correlating the chosen value regression coefficients of the entire neuronal population at all of the different time bins. If the same neurons encode chosen value at timepoints t and t+\u03b4t, one would expect a high correlation between these two timepoints; conversely, coding of chosen value by different neural ensembles would yield a far smaller, or zero, correlation. By examining the matrix of correlation coefficients at all possible timelags, different types of population neural coding can be revealed (such as transient, reactivation, or sustained coding; see Figure 5A). To avoid this analysis being confounded by noise correlations, we performed a \u2018split half\u2019 cross correlation analysis, calculating the regression coefficients for chosen value separately for odd and even trials.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic representing the cross-temporal pattern analysis. Each pixel represents a correlation coefficient between two population vectors. Entries into the vectors contain each neuron\u2019s chosen value regression coefficient at Time T and at Time T + \u03b4t. If the chosen value correlates are consistent across the neuronal population at the two distinct time points, there will be a strong cross-temporal correlation (red colour). At two points close in time, chosen value correlates of each neuron will inevitably be similar. If these correlates are consistent for only a short period of time, there will be a transient population code; whereas if each neuron\u2019s chosen value correlate is consistent for a prolonged period, there will be a sustained population code. If each neuron within a population correlates with chosen value at two separate points of a trial (e.g. choice and outcome), in the absence of sustained coding bridging the two, there is a reactivation population code. (B) Cross-temporal pattern analysis of OFC neurons (n = 214). There is clear evidence for sustained coding of the\u00a0chosen value at choice (top left), as well as before and throughout outcome (bottom right), reflected by strong correlations extending off the diagonal of the plot. Blue lines indicate a significant area of cross-correlation (p<0.05, see Materials and methods). There is also sustained coding of the chosen value signal from choice through outcome, shown by a strong cross-temporal correlation both prior (grey dashed box) and during reward (black dashed box). Within the dashed areas, blue lines indicate a significant area of cross-correlation (p<0.05, see Materials and methods). (C and D) The black dashed inset (bottom left quadrant in B) is then performed in high (C) and low (D) time constant OFC neurons separately. The sustained coding is present specifically in high time constant cells (largest cluster of cross correlation, p=0.0002), but absent in low time constant cells (p=0.2248; permutation test, see Materials and methods). See also Figure 5\u2014figure supplement 1\u00a0and\u00a02: Sustained chosen value correlates are present at choice and outcome within DLPFC and ACC, but sustained coding from choice through outcome is absent. Sustained coding between choice and outcome was much stronger in OFC than in DLPFC or ACC (permutation tests; OFC v DLPFC, p=0.0008, OFC v ACC, p<0.0001, see Materials and methods).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Chosen value correlates are present at choice and outcome, but sustained coding between choice and outcome is absent. Blue lines indicate a significant area of cross-correlation (p<0.05, see Materials and methods). (B and C) The black dashed inset (bottom left quadrant in A) is then performed in high (B) and low (C) time constant DLPFC neurons separately. There is no sustained coding present in either high or low time constant cells; only a small cluster of reactivation coding is evident in low time constant cells (p=0.029, see Materials and methods).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18937/elife-18937-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Sustained chosen value correlates are present at choice and outcome, but sustained coding from choice through outcome is absent. However, there appears to be maintenance of chosen value coding from choice until the period immediately preceding reward delivery (grey dashed box). Blue lines indicate a significant area of cross-correlation (p<0.05, see Materials and methods). (B and C) The black dashed inset (bottom left quadrant in A) is then performed in high (B) and low (C) time constant ACC neurons separately. There is no evidence for sustained coding from choice through outcome in either low or high time constant cells. This contrasts with an\u00a0OFC (Figure 5C\u2013D), where the sustained code from choice is also present through reward delivery specifically in high time constant neurons.\n\nDuring the choice epoch, there was unsurprisingly evidence for on-diagonal coding (top left quadrant of Figure 5B). The OFC neuronal population code was also persistent across time during this epoch (warm off-diagonal elements in top left quadrant of Figure 5B), and even more so during the outcome epoch (warm off-diagonal elements in bottom right quadrant of Figure 5B). This sustained activity reflects the notion that dynamical decision processes within the OFC population may take place over several hundreds of milliseconds. Crucially, however, there was also evidence for sustained coding: the same neuronal population in OFC at choice encoded chosen value from at least 1000\u00a0ms before outcome through to 1000\u00a0ms after outcome (warm colours in Figure 5B, grey and black dashed boxes, permutation tests (see Materials\u00a0and\u00a0methods), largest clusters p<0.0001); such sustained coding of value from choice through outcome was absent within DLPFC (Figure 5\u2014figure supplement 1A) and ACC (Figure 5\u2014figure supplement 2A) neuronal populations. Within OFC, this sustained population code appeared most prominent in the neurons with a high resting time constant \u03c4 (Figure 5C), but absent in those with a low \u03c4 (Figure 5D). Note, however, that this difference should be interpreted cautiously, as a formal comparison of cluster size within the high and low \u03c4 populations (using a non-parametric permutation test, see Materials\u00a0and\u00a0methods) was not significant (p=0.59). Nonetheless, the sustained population code from choice through outcome was much stronger in OFC (Figure 5B\u2013C) than in both the ACC and DLPFC populations (Figure 5\u2014figure supplement 1 and 2; permutation tests, OFC v DLPFC, p=0008; OFC v ACC, p<0.0001; see Materials and methods). This demonstrates that OFC neurons with persistent activity at rest encode a 'sustained' representation of chosen value until an expected outcome is experienced, and that this neural signature appears unique to OFC.\n\n## Discussion\n\nWe have shown that characterising the temporal receptive field of integration of individual PFC neurons based upon their resting activity has significant predictive power for describing their role in decision-making computations. These include the accumulation of evidence during choice, and the persistence of value encoding until the experience of outcome delivery.\n\nCircuits within the prefrontal cortex are endowed with several features that may support persistent activity. These include complex pyramidal cell morphology, strong reciprocal connections, slow-decaying NMDA-Receptor transmission and augmenting synapses (Wang, 2001; Elston, 2003; Wang et al., 2006, 2008; Freeman, 1995; Wang et al., 2013). These factors may account for both the prolonged resting stability within PFC, and the ability of its neurons to support computations that subserve flexible cognition (Miller et al., 1996). However, there are different cell-classes within the PFC, with substantial heterogeneity in their morphology, synapses and expression of slow-decaying NMDA-Receptors (Wong and Wang, 2006; Zaitsev et al., 2009; Wang et al., 2013). When randomly sampling neurons within the macaque PFC, the morphology, cell-type, cortical layer and synaptic features are unknown. Recorded neurons are therefore likely sampled from separate subnetworks with differing resting stabilities and distinct roles in cognitive processing (Wang et al., 2013). This may explain the heterogeneity we observed in both resting activity and involvement in decision making computations observed across PFC neurons. Recent evidence has shown diversity in functional responses of PFC neurons dependent upon the cell-type and cortical layer in which they were located (Zhou et al., 2012; Pinto and Dan, 2015).\n\nMost importantly in this study, we demonstrated that neurons with higher resting time constants had strong chosen value correlates at choice. Following on from our previous work (Hunt et al., 2015) \u2013 where we demonstrated that chosen value correlates can arise indirectly from the dynamics of decision processes \u2013 our result implies that neurons with more persistent resting activity are more involved in value-based choice. This provides new experimental evidence to support computational theories which attribute evidence integration to strongly recurrent attractor networks (Wang, 2002; Wong and Wang, 2006). Neurons located within these reverberant PFC subnetworks would be expected to have both higher time constants and stronger value correlates. It also indicates that such models need refinement if they are to encompass the heterogeneous correlates of decisions varaiables that we and others have observed (Kennerley et al., 2009; Meister et al., 2013). Our findings facilitate several testable predictions for research into single-neuron mechanisms of decision making. For perceptual decisions, such as the random dot-motion task, which involve the integration of evidence over time more explicitly than our cost-benefit decision paradigm, we would predict task-related neurons would also have high time constants (Gold and Shadlen, 2007).\n\nCross-temporal pattern analysis (Stokes et al., 2015) provides a powerful tool to allow for the interrogation of maintained activity within neuronal populations. In addition to decision-making, computational models of working memory also rely upon stable, persistent activity within richly reverberant networks for the retention of information across delays (Wang, 1999). Our data showing that evidence maintenance is indeed fulfilled by neurons with higher time constants concurs with this hypothesis. The ability to maintain a representation of chosen value across delays may explain why OFC is essential for delay-based decision making (Rudebeck et al., 2006) and why OFC damage causes decision-making and credit assignment deficits (Rudebeck et al., 2008; Noonan et al., 2010; Walton et al., 2010; Camille et al., 2011; Chau et al., 2015).\n\nOur data on single neuron time constants have provided new insights into potential credit assignment mechanisms within the orbitofrontal cortex. Several imaging and lesion studies have argued that the OFC is involved in the assignment of credit during learning and decision-making (Walton et al., 2010; Takahashi et al., 2011; Chau et al., 2015; Akaishi et al., 2016). Single neuron studies have demonstrated OFC cells encode the\u00a0reward identity across delays (Lara et al., 2009), encode specific outcome features during learning (Raghuraman and Padoa-Schioppa, 2014;\u00a0Lopatina et al., 2015), and in some cases the same neurons are involved in both choice and outcome processes (Kennerley and Wallis, 2009). Indeed, there is a large body of evidence suggesting OFC signals outcome expectancies (Rangel and Hare, 2010; Schoenbaum et al., 2010). However, despite ideas that OFC is critical for credit assignment during learning, we are not aware of any study that has demonstrated what a neuronal signature of credit assignment might resemble. Here we show that OFC neurons with high temporal specializations not only encode an integrated chosen value signal during choice, but that the same OFC neurons maintain this representation through to the experience of an outcome. This neural signature - when combined with a representation of the chosen stimulus identity, which is also encoded in OFC (Raghuraman and Padoa-Schioppa, 2014;\u00a0Lopatina et al., 2015) - could be a key computation for credit assignment processes.\n\nAs well as our findings at the single-neuron level, our results reiterate the value of assigning timescales at the level of a cortical area (Murray et al., 2014). We replicated the findings of Murray et al. (2014) showing that the anterior cingulate cortex (ACC) had the longest timescale within the PFC regions studied. It is possible the ACC may be supporting extended cognitive processes that our experimental paradigm was not designed to capture. These include the encoding or integrating of reward, planning and/or choice information across multiple trials (Matsumoto et al., 2007; Seo and Lee, 2007; Bernacchia et al., 2011; Hayden et al., 2011; Kennerley et al., 2011; Stoll et al., 2016). Future studies might explore the timescales of other prefrontal regions proposed to have unique roles in storing information across multiple trials, such as frontal polar cortex (Boorman et al., 2009; Donoso et al., 2014).\n\nWe demonstrate that calculating the decay in a neuron\u2019s intrinsic resting-state autocorrelation can provide a powerful tool for predicting functional properties during cognitive tasks. Our findings therefore have important implications for how neurophysiological datasets are collected and analysed. One current method of avoiding variability in neuronal responses during cognitive tasks is pre-selection of neurons based upon their response properties; neurons with stable, persistent responses on memory guided saccade tasks are preferentially selected for analysis in decision-making tasks (Roitman and Shadlen, 2002; Huk and Shadlen, 2005; Yang and Shadlen, 2007; Mante et al., 2013; Kira et al., 2015). This method may lead investigators to record from neurons with longer temporal receptive fields, as evidenced (Murray et al., 2014) by the higher population-level time constants within the lateral intraparietal area (LIP) when neurons are screened prior to recording (Freedman and Assad, 2006) versus when they are not (Seo et al., 2009). A more unbiased characterisation of the heterogeneity of neuronal responses may be obtained by recording from all encountered neurons and categorising them post-hoc, as is more common practice in PFC studies (Freedman et al., 2001; Padoa-Schioppa and Assad, 2006; Kim et al., 2008; Kennerley et al., 2009; Hanks et al., 2015). In the context of decision-making, this has highlighted several \u2018non-classical\u2019 neuronal response profiles in regions such as LIP (Meister et al., 2013). Indeed, even in spite of pre-screening neurons prior to the task, substantial heterogeneity in task-related responses can nonetheless remain (Premereur et al., 2011). A more complete understanding of decision-making computations requires us to understand the roles of all of the neurons in these decision processes.\n\nIn summary, we have shown that functional specialisation for temporally extended computations predicts the involvement of PFC neurons in specific aspects of value-guided decision making. We anticipate that this approach may become significant in predicting the role of neurons in many other temporally extended computations dependent upon prefrontal cortex. These might include working memory (Wang et al., 2013), strategic (Seo et al., 2014) and rule-based reasoning (Buschman et al., 2012), and foraging behaviours (Hayden et al., 2011).\n\n## Materials and methods\n\nNeurophysiological procedures, task structure and regression analysis of single-neuron responses have been reported previously (Hosokawa et al., 2013; Hunt et al., 2015). In brief, four male rhesus macaques served as subjects. Recordings were taken from dorsolateral prefrontal cortex (DLPFC), orbitofrontal cortex (OFC) and the anterior cingulate cortex (ACC). The sample size of neurons recorded was therefore predetermined from this pre-existing dataset. The number of neurons and cortical areas recorded from each of the four subjects have been reported previously (Hosokawa et al., 2013). The regression model for analysing correlates of chosen value was the same as defined previously (Hunt et al., 2015).\n\n### Null hypothesis for coefficient of partial determination (Figure 1)\n\nA \u2018null hypothesis\u2019 test for the coefficient of partial determination (CPD) was developed to make interpreting results easier. For each behavioural session, a single regressor of interest (e.g. chosen value - Figure 1A and B; chosen benefit - Figure 1\u2014figure supplement 2A; chosen cost \u2013 Figure 1\u2014figure supplement 2B), was shuffled across trials and a \u2018permuted\u2019 CPD calculated. This procedure was repeated 1000 times. For each neuron, at each time point, the permuted CPD was averaged across all of the permutations. The null hypothesis CPD for a cortical area was set at the upper bound of the 95% confidence interval across the population.\n\n### Calculation of autocorrelograms (Figure 2)\n\nSingle-neuron activity during a 1\u00a0s fixation period was used to assign time constants. Single unit responses were time locked to the onset of the fixation period of successfully completed trials to create rasters (lasting 1 s from the onset of fixation). The rasters were divided into 20 separate, successive 50\u00a0ms bins. The spike count for each neuron within each bin was computed for each trial. We calculated the across-trial correlation of spike counts between all of the bins using Pearson\u2019s correlation coefficient. For each individual neuron, this produced an autocorrelation matrix when plotted as a function of trial time (e.g. Figure 2A left side), or an exponential decay when plotted as a function of time lag between bins (e.g. Figure 2A right side).\n\nUsing an exponential decay equation (Murray et al., 2014), the decay of the\u00a0autocorrelation with increasing separation time between bins was fitted to the\u00a0data using the following equation:\n\n$$\nR(k\u0394)=A[exp(\u2212\\frac{k\u0394}{\\tau})+B]\n$$\n\nIn which $k\u0394$ refers to the time lag between time bins (50 to 950\u00a0ms) and $\\tau$ is the time constant of the cortical area. Neurons from all areas, particularly ACC, showed evidence of lower correlation values at the shortest time lag (50 ms; Figure 2\u2014figure supplement 2). This may reflect refractoriness or negative adaptation (Murray et al. 2014). To overcome this, fitting started from the largest reduction in autocorrelation (between two consecutive time bins) onwards.\n\n### Assigning a time constant to single neurons (Figure 2A\u2013B, Figure 2\u2014figure supplement 1)\n\nFor most of the key analyses, individual parameters of the autocorrelation decay function in Equation 1 were estimated for each neuron. Cells with an autocorrelation function poorly fitted by an exponential decay were excluded from the analysis (see Figure 2\u2014figure supplement 1 for examples). Initially neurons failing to meet a set of objective criteria were removed (176/857). These criteria were as follows:\n\nThis was followed by a process of visual inspection by two blinded independent observers, where a further set of neurons were considered to possess autocorrelation functions poorly characterised by an exponential decay (235/857 neurons). The autocorrelation functions of all included / excluded neurons are available as supplementary material.\n\nThe remaining 446 neurons were assigned a time constant using expectation maximisation in a hierarchical (random effects) fitting procedure. The decay of their resting autocorrelation was fitted using the same equation as above, with log(\u03c4), A and B being estimated as a multinomial Gaussian across the neuronal population. Fitting started after the first reduction in autocorrelation between time bins. Neurons from each PFC area were fitted separately.\n\n### Comparing single neuron time constants across cortical areas\n\nSingle neuron time constants were log-transformed and grouped by cortical area (DLPFC; OFC; ACC). The variance of these groups was compared using Bartlett\u2019s Test. Single neuron time constants were also grouped by cortical area and compared using a Kruskal-Wallis test.\n\n### Assigning time constant at the population level (Figure 2\u2014figure supplements 2\u20134)\n\nAutocorrelation as a function of trial-time and time lag can also be averaged across a population of neurons, prior to fitting Equation 1 (see Figure 2\u2014figure supplements\u00a02- 4). In addition to the data lost due to incomplete trials, previous investigators have excluded a further proportion of trials due to the drifting resting firing rate of neurons over the course of a session (Murray et al., 2014; Nishida et al., 2014). As we intended to assign time constants to individual neurons, we decided that estimating autocorrelation from a restricted trial number would not provide the best estimation of spike-count autocorrelation. However, it is possible our method artificially inflated autocorrelation due to drifting firing rates throughout a session. Therefore, as a control analysis, we filtered trials when firing rates drifted, using the same approach as in (Nishida et al., 2014). For each neuron, the total spike count during the fixation period of each trial was calculated. A sliding window of these spike counts for 100 trials was subdivided into 4 groups of 25 trials and entered into a Kruskal-Wallis test. By shifting this sliding window from the 1st to the last trial within a session, we obtained the longest sequence of trials in which activity did not differ significantly (p>0.005). This procedure reduced the number of trials used for estimating the autocorrelation function on average by 38.4%. When comparing the population level fits to data using the method reported above, very similar time constants were obtained (compare Figure 2\u2014figure supplement 2 versus Figure 2\u2014figure supplement 3).\n\n### Display matrix of chosen value correlates sorted by time constant (Figure 3A)\n\nThe coefficient of partial determination (CPD) for chosen value (see Hunt et al., 2015) across time for each PFC neuron (n = 446) was stacked into a matrix. The rows of the matrix (i.e. each individual neuron) were sorted by increasing time constant, and then smoothed across neurons with a Gaussian kernel, Full Width at Half Maximum=4.5 neurons (S.D. = 2).\n\n### Significance testing using cluster-based permutation tests (Figure 1A, Figure 1B, Figure 3B and Figure 4)\n\nTo identify significant clusters of chosen value coding whilst correcting for multiple comparisons across time, cluster based permutation tests were used (Nichols and Holmes, 2002).\n\nIn Figure 1A\u00a0and\u00a0B, a two-sample T-test compared the chosen value coefficient of partial determination (CPD) at each time bin between two given cortical areas. In Figure 3B and Figure 4, a two-sample T-test compared the chosen value CPD at each time bin between the median split of neurons with high and low time constants. The longest window of consecutive bins using an uncorrected (cluster-forming) threshold of p<0.01 within a pre-specified time window was then identified. The pre-specified time windows were as follows:\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Time window onset</th>\n      <th>Time window offset</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Figure 1A, Figure 3B and 4</td>\n      <td>Choice epoch onset</td>\n      <td>Choice epoch offset (1 s after choice epoch onset)</td>\n    </tr>\n    <tr>\n      <td>Figure 1B, Figure 4</td>\n      <td>Reward onset</td>\n      <td>1 s after reward onset</td>\n    </tr>\n  </tbody>\n</table>\n\nThe size of this cluster was compared to a null distribution constructed using a permutation test. Neurons assigned to either each cortical area (Figure 1), or high and low time constant groups (Figure 3B and Figure 4) were randomly permuted 10,000 times and the cluster analysis was repeated for each permutation. The length of the longest cluster for each permutation was entered into the null distribution. The true cluster size was significant at the p<0.05 or p<0.01 level (corrected) if the true cluster length exceeded the 97.5th percentile or 99.5th percentile of the null distribution, respectively.\n\n### Multiple-linear regression\n\nTo further test the relationship of chosen value coefficient of partial determination (CPD) with resting time constant, the log-transformed time constant and log-transformed fixation firing rate, along with additional regressors to control for brain area, were regressed onto the log-transformed chosen value CPD of each neuron at the time of the maximal across-area population CPD (410\u00a0ms, see Figure 3B).\n\n### Cross-temporal pattern analysis (Figure 5)\n\nTo assess the maintenance and re-emergence of chosen value correlates throughout a trial, we performed a population cross-temporal pattern analysis (Kennerley et al., 2011; Stokes et al., 2013). This used the same regression model as before (Hunt et al., 2015), except that the regression coefficient (Z-score) for each neuron\u2019s chosen value coding was calculated separately for odd and even trials. This \u2018split-half\u2019 method was utilised to prevent the analysis being confounded by noise correlations.\n\nA population vector (V), with each entry being the chosen value correlates for n cells, was produced for each time point. The population vectors at all of the different time points were then cross-correlated to produce a matrix of correlation coefficients (Figure 5A). Each matrix of correlation coefficients was averaged across the diagonal in order for the data to reflect both odd-to-even and even-to-odd trial projections. This analysis was performed on all of the cells within a cortical area, with the analysis also performed separately following a median split of within-area time constant (Figure 5B\u2013D, Figure 5\u2014figure supplements 1\u20132). The consistency of the population code between choice and outcome within OFC cells was of particular interest. Therefore, data from the 1 s choice epoch were correlated against two 1 s periods directly preceding and following reward onset, with the results displayed within the grey and black dashed boxes respectively in Figure 5B and Figure 5\u2014figure supplements 1A,\u00a02A for all cells, and separately for high and low times constants in Figure 5C\u2013D and Figure 5\u2014figure supplements 1B-C,\u00a02B-C).\n\nTo demonstrate sustained population coding of chosen value correlates during choice, a cluster-based permutation test was used (Nichols and Holmes, 2002). All correlation coefficients with an uncorrected p<0.01 were highlighted. Any area of interconnecting pixels was defined as a true cluster. The ordering of all of the population vectors was then randomised and the analysis repeated. This permutation occurred 10,000 times and produced a null distribution of cluster sizes. True clusters were significant to the p<0.05 (0.01) level if the area of interconnecting pixels exceeded the 97.5th percentile (99.5th) of those in the null distribution.\n\nThis analysis was also repeated for the 1 by 1 s periods of reward onset versus reward onset; choice onset versus 1\u00a0s prior to reward onset; choice onset versus 1\u00a0s following reward onset; 1s pre-reward onset versus 1s following reward onset.\n\n### Comparing sustained coding between cortical areas and high/low time constant neurons (Figure 5)\n\nTo compare the sustained coding present from choice through reward delivery between different cortical areas, a permutation test was performed. The black dashed area of the cross-temporal population correlation matrices of Figure 5B, Figure 5\u2014figure\u00a0supplement\u00a01A and Figure 5\u2014figure supplement\u00a02A were extracted. For each pair of brain areas, the cross-temporal correlation coefficients at each corresponding pixel were compared using Fisher\u2019s r-to-Z transformation. All pixels which had correlation coefficients which were significantly different between brain areas (with an uncorrected p<0.01) were highlighted. Any area of interconnecting pixels was defined as a true cluster. The largest area of interconnecting pixels was identified and defined as the \u2018Largest True Difference Cluster\u2019. The assignment of neurons to brain areas was then shuffled and the analysis repeated 10,000 times to produce a null distribution of Difference Cluster sizes, against which the true cluster size was compared. The test was performed independently for OFC v DLPFC, OFC v ACC and DLPFC v ACC.\n\nA similar test was performed to compare high vs. low time constant neurons (i.e. to compare Figure 5C vs. Figure 5D); except in the permuted data, neurons were shuffled between high/low groups - as opposed to between different brain areas.\n\n### Data availability\n\nData (and MATLAB scripts to reproduce the analyses shown in this paper) are available from the Dryad Digital Repository: http://dx.doi.org/10.5061/dryad.5b331 (Cavanagh et al., 2016)\n",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "ed40e794-d3ed-4c84-a79c-ab92c51dc39e",
+      "submission_id": "779ec45c-144b-4e9a-a0a8-f8a143531573",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael J Frank, Brown University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18937.022](https://doi.org/10.7554/eLife.18937.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Autocorrelation structure at rest predicts value correlates of single neurons during reward-guided choice\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Daeyeol Lee (Reviewer #1).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper builds on the authors' earlier analysis of the single-neuron data previously collected in three different regions of the primate prefrontal cortex (DLPFC, ACC, and OFC), now focusing on the relationship between the intrinsic timescale (time constant) of spiking activity and their role in value-based decision making. In particular, they found that neurons in the ACC and OFC with longer time constants during fixation (as measured by spike rate autocorrelation) are more likely to encode chosen value signals. Moreover, OFC neurons tended to encode the chosen value signals more strongly during the outcome period compared to the neurons in the DLPFC and ACC. The cross temporal correlation analysis also revealed that the chosen value coding in the OFC during the choice and outcome epochs was consistent. The authors suggested that this might be important for the proposed role of the OFC in resolving temporal credit assignment.\n\nEssential revisions:\n\nOverall, the findings reported in this manuscript are very timely. They are nice additions to the previous work from the authors, and provide important new insights into the neural mechanism of decision making. Also, the manuscript is written clearly and easy to follow. Nevertheless, both reviewers identified some important issues that need to be clarified.\n\n1) It is not clear how the persistent coding of chosen value signals can be used for, or reflect, the resolution of the temporal credit assignment problem. For resolving the temporal credit assignment problem, the brain must recognize one of the previous actions or previously visited states that is related to a particular outcome after a delay. How can the chosen value signals, rather than the signals directly related to previous actions or states, can be used for this purpose? The focus on the temporal credit assignment problem also seems a bit inconsistent with the prediction of the authors from the Wang model about the relationship between the timescale and value coding. In other words, their model of mutual inhibition predicts this relationship, even though it is not clear how that model resolves the temporal credit assignment problem.\n\n2) Similarly, the Discussion focuses mostly on the function of the OFC, but the results from this manuscript and Murray et al. showed that the longest time scale is seen in the ACC. Therefore, it might be helpful to include some discussion about the possible function of the long time scale of ACC activity. One possibility is that ACC might play a more important role in integrating signals across multiple trials, as suggested by Seo and Lee (2007) and Bernacchia et al. (2011).\n\n3) Tests of the association between time constant and chosen-value coding mainly use a median split on the time constant tau. However, it doesn't look like tau values fall into discrete high and low clusters (there's no apparent discontinuity at the median in Figure 3A, right-hand side). The rank correlation test mentioned in the third paragraph of the Results seems like a much more natural approach. What's the justification for not using the rank correlation for all the analyses, i.e. the tests of the entire time course, of individual brain regions, and of the outcome phase? As it stands the correlation analysis is confined to a single time point, and the criterion for choosing this time point is vague (\"maximal population response\"). Does this mean (1) maximum spike rate, (2) maximum population-average CPD, or (3) maximum high-versus-low effect in Figure 3B? #1 seems like the most natural reading, but #2 is what I would guess given the context (#3 would be circular).\n\n4) In a few places the paper infers differences because an effect reaches significance in one condition but not another. A direct contrast between the two conditions is generally more appropriate in such cases. This applies to: (1) greater outcome-related value coding in OFC than in DLPFC/ACC (Results, fourth paragraph); (2) greater reactivation coding in high-tau than low-tau neurons (Results, last paragraph); (3) greater reactivation coding in OFC than in DLPFC/ACC (Figure 5\u2014figure supplement 1\u20132).\n\n5) For the cross-temporal correlation analysis, the authors draw a distinction between \"sustained\" and \"reactivation\" coding. But this distinction sometimes gets blurry. The evidence mainly supports reactivation coding, but the conclusion is that OFC is \"maintaining a representation of chosen value until an expected outcome is experienced\" (Results, last paragraph), which sounds more like sustained coding. Similarly, earlier (Results, fourth paragraph) the paper concludes that OFC codes value through the choice-outcome interval, but only a post-outcome epoch is actually tested.\n\n6) The paper should at least briefly address the distinction between \"chosen value\" and what one might call \"outcome value\" \u2013 the size of the juice reward. These aren't identical, since chosen value also incorporates an effort/delay requirement. But they may be correlated. Can the authors rule out that OFC is merely encoding the juice magnitude in the outcome phase? That is, is there direct evidence it also encodes the (already completed) effort or delay requirement?\n",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9e3f13a2-02e4-4996-ba07-dcc06aadfd2f",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C1",
+      "claim": "Correlates of value are routinely observed in the prefrontal cortex (PFC) during reward-guided decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlates of value are routinely observed in the prefrontal cortex (PFC) during reward-guided decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract and is supported by citation to previous work (Hunt et al., 2015).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "ea2044c4-5a2d-4cd6-864c-b5c1b74d1e48",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C2",
+      "claim": "PFC correlates of chosen value are a consequence of varying rates of a dynamical evidence accumulation process.",
+      "claim_type": "EXPLICIT",
+      "source": "In previous work (Hunt et al., 2015), we argued that PFC correlates of chosen value are a consequence of varying rates of a dynamical evidence accumulation process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "5d4fcf5b-8c3e-4330-9841-38eb41219cf8",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C3",
+      "claim": "There is substantial variability in chosen value correlates across individual neurons within PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet within PFC, there is substantial variability in chosen value correlates across individual neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "85d1b6ce-ddbf-4925-9924-29318fd00428",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C4",
+      "claim": "Variability in chosen value correlates is explained by neurons having different temporal receptive fields of integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that this variability is explained by neurons having different temporal receptive fields of integration, indexed by examining neuronal spike rate autocorrelation structure whilst at rest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 2-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "77c6bc81-0497-4809-a09b-9277da5094d4",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C5",
+      "claim": "Neurons with protracted resting temporal receptive fields exhibit stronger chosen value correlates during choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that neurons with protracted resting temporal receptive fields exhibit stronger chosen value correlates during choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figure 3 and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "78ae95aa-fa94-46fe-bac5-526d37ae71b1",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C6",
+      "claim": "Within orbitofrontal cortex, neurons with protracted resting temporal receptive fields sustain coding of chosen value from choice through the delivery of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Within orbitofrontal cortex, these neurons also sustain coding of chosen value from choice through the delivery of reward, providing a potential neural mechanism for maintaining predictions and updating stored values during learning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by data in Figure 4 and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "a4c040f1-99e1-4c56-9472-dff0863af101",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C7",
+      "claim": "Theoretical models of decision making emphasise the importance of evidence accumulation across time until a categorical choice is reached.",
+      "claim_type": "EXPLICIT",
+      "source": "Theoretical models of decision making emphasise the importance of evidence accumulation across time until a categorical choice is reached (Bogacz et al., 2006; Gold and Shadlen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "b6c1df35-8ad6-458e-a708-0ae619bfe3ca",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C8",
+      "claim": "Cortical attractor networks rely upon strong recurrent connections between similarly tuned neurons to integrate evidence across time.",
+      "claim_type": "EXPLICIT",
+      "source": "These rely upon strong recurrent connections between similarly tuned neurons to integrate evidence across time, and exhibit temporally extended persistent activity that stores the outcome of the decision process in memory (Wang, 2002; Wong and Wang, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from computational neuroscience supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "38f101fc-1c5e-4a69-8661-730dcbd6b847",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C9",
+      "claim": "Attractor network models predict the emergence of correlates of chosen value during choice in value-guided decision making tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "In value-guided decision making tasks, attractor network models predict the emergence of correlates of chosen value during choice (Hunt et al., 2012; Rustichini and Padoa-Schioppa, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "26817e02-6641-4838-883a-86c6ab721bec",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C10",
+      "claim": "Decision correlates are highly heterogeneous across different cells within a given region.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the relative homogeneity of chosen value correlates within such models, it is known that decision correlates are highly heterogeneous across different cells within a given region (Kennerley et al., 2009; Wallis and Kennerley, 2010; Meister et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to empirical studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "da5556a2-1518-425b-8891-3d8caa0188cb",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C11",
+      "claim": "Neurons exhibit heterogeneity in their temporal receptive fields of integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons also exhibit heterogeneity in their temporal receptive fields of integration (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "a6b07ca8-2e5a-4098-abd1-2ec105fbe000",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C12",
+      "claim": "The temporal receptive field of a neuron can be established by examining its spike-count autocorrelation function (ACF) at rest.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal receptive field of a neuron can be established by examining its spike-count autocorrelation function (ACF) at rest (Ogawa and Komatsu, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established method supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "f11a0192-9643-4554-a0d7-fb5b903ee9c7",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C13",
+      "claim": "A slowly decaying ACF whilst at rest reflects temporal stability in firing, suggesting that the neuron integrates information across long periods of time.",
+      "claim_type": "EXPLICIT",
+      "source": "A slowly decaying ACF whilst at rest reflects temporal stability in firing, suggesting that the neuron integrates information across long periods of time; by contrast, a fast-decaying ACF reflects temporal variability in firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on established knowledge about autocorrelation functions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "ce77c9c1-3dca-4714-b0ba-486d7f0f5481",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C14",
+      "claim": "There is a hierarchy of temporal receptive fields across areas of cortex, with populations of neurons in lower and higher cortical areas exhibiting brief and extended temporal receptive fields, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, this approach was used to demonstrate a hierarchy of temporal receptive fields across areas of cortex (Murray et al., 2014), with populations of neurons in lower and higher cortical areas exhibiting brief and extended temporal receptive fields, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation to Murray et al., 2014.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "2840250e-a892-4ddc-b2e7-1503eb5a471b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C15",
+      "claim": "At decision time, chosen value correlates appeared homogenous across DLPFC, OFC, and ACC regions in their expression.",
+      "claim_type": "EXPLICIT",
+      "source": "At decision time, chosen value correlates appeared homogenous across regions in their expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1A and statistical tests showing no significant differences between regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "c64ca655-ecd7-474a-b38b-afc43886b6e5",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C16",
+      "claim": "Chosen value correlates were not significantly different between any brain region at choice time.",
+      "claim_type": "EXPLICIT",
+      "source": "Chosen value correlates were not significantly different between any brain region (permutation tests; DLPFC v OFC, no cluster survived thresholding, DLPFC v ACC, p=0.2706, OFC v ACC, no cluster survived thresholding; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "d11a2c0d-85f5-4e17-b84c-63eeee84fa5c",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C17",
+      "claim": "OFC showed stronger chosen value correlates following reward onset than ACC and DLPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "OFC showed stronger chosen value correlates following reward onset than ACC and DLPFC (permutation tests; OFC v DLPFC, p=0.0010, OFC v ACC, p=0.0028; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1B and statistical tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "4a895db7-c741-421b-a45e-4d89731c5e88",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C18",
+      "claim": "Within each region, chosen value correlates were heterogeneous across neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each region, chosen value correlates were heterogeneous across neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "11da720c-cd0e-4eff-9523-6a633519521f",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C19",
+      "claim": "The value signal at outcome in OFC contained information about both the chosen benefit and chosen cost.",
+      "claim_type": "EXPLICIT",
+      "source": "This value signal at outcome contained information about both the chosen benefit and chosen cost (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "2ab99110-88aa-4865-82b2-5a69d427df7b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C20",
+      "claim": "There is marked heterogeneity of autocorrelation functions across individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful inspection of ACFs at the level of single neurons demonstrated marked heterogeneity of ACFs across individual neurons (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "8b6a9556-c956-477a-8cb9-9b722dc4dcde",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C21",
+      "claim": "There is a large degree of heterogeneity in time constants across neurons, both within and between cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a large degree of heterogeneity in time constants across neurons, both within and between cortical areas (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "842ac927-4433-4611-bd50-b4d5c8a8b4fd",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C22",
+      "claim": "Time constants were larger in the DLPFC and ACC population.",
+      "claim_type": "EXPLICIT",
+      "source": "Time constants were larger in the DLPFC and ACC population (Kruskal-Wallis test, p=0.0007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "a4e31997-d4f6-460e-8221-9809bee33447",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C23",
+      "claim": "Time constants were most variable within OFC and ACC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "but most variable within OFC and ACC populations (Bartlett's Statistic = 11.913, p=0.0026).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "f7b2463c-c2e2-4861-a7d6-9e5e806af784",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C24",
+      "claim": "The population with a higher \u03c4 (more stable activity at rest) had more variance explained by chosen value during choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The population with a higher \u03c4 (more stable activity at rest) had more variance explained by chosen value during choice (permutation test (see Materials and methods), p=0.0298).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "156b847d-773c-4162-9311-01ffc878b9f1",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C25",
+      "claim": "There is a positive correlation between each neuron's coefficient of partial determination (CPD) at the time of the maximum population-average CPD with its time constant.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrated this relationship by performing a rank correlation between each neuron's coefficient of partial determination (CPD) at the time of the maximum population-average CPD with its time constant (Correlation Coefficient = 0.148, p=0.0018; 95% CI [0.0556, 0.2373], Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "9efe2aff-3256-4306-8963-7d14ce2f5d66",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C26",
+      "claim": "The relationship between time constant and chosen value coding was present when controlling for baseline firing rate and brain area using multiple regression.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship was also present when controlling for the baseline firing rate and brain area using multiple regression (see Materials and methods, \u03b2 = 0.3315, p=0.0254; 95% CI [0.0878 0.5751]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "3d9e3245-f23e-4b64-8fe6-89484e8c79ed",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C27",
+      "claim": "The relationship between high \u03c4 and chosen coding was particularly prominent in OFC and ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relationship between high \u03c4 and chosen coding was particularly prominent in OFC and ACC, but observed no significant difference in the chosen value coding between populations with high/low \u03c4 in DLPFC (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "6dcd5ff8-fafb-4f18-a3df-72cf70999008",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C28",
+      "claim": "Within OFC, persistent coding of chosen value from choice to outcome was more evident within the high \u03c4 neuronal population than within the low \u03c4 population, particularly during the experience of reward delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Within OFC, we found that persistent coding of chosen value from choice to outcome was more evident within the high \u03c4 neuronal population than within the low \u03c4 population, particularly during the experience of reward delivery (Figure 4; permutation test at time of outcome (see Materials and methods), p=0.0082).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "369f153c-e769-41f7-b995-c3fe5537378f",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C29",
+      "claim": "Sustained coding of chosen value from choice through outcome was not present in ACC and DLPFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Such sustained coding of chosen value from choice through outcome was not present in ACC and DLPFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 4 and Figure 5 supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "cd84655b-fab1-4f6e-a4fb-c8db4c2a3e36",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C30",
+      "claim": "During the choice epoch, there was evidence for on-diagonal coding in OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "During the choice epoch, there was unsurprisingly evidence for on-diagonal coding (top left quadrant of Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "8f75b385-4298-4381-af74-afe2fcf4fa81",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C31",
+      "claim": "The OFC neuronal population code was persistent across time during the choice epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "The OFC neuronal population code was also persistent across time during this epoch (warm off-diagonal elements in top left quadrant of Figure 5B), and even more so during the outcome epoch (warm off-diagonal elements in bottom right quadrant of Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "2e2584b2-b448-4aab-bebf-2504515d9985",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C32",
+      "claim": "There was evidence for sustained coding: the same neuronal population in OFC at choice encoded chosen value from at least 1000 ms before outcome through to 1000 ms after outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, however, there was also evidence for sustained coding: the same neuronal population in OFC at choice encoded chosen value from at least 1000 ms before outcome through to 1000 ms after outcome (warm colours in Figure 5B, grey and black dashed boxes, permutation tests (see Materials and methods), largest clusters p<0.0001)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "c35f280b-3b54-4cd9-8cd9-74b49656c107",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C33",
+      "claim": "Sustained coding of value from choice through outcome was absent within DLPFC and ACC neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "such sustained coding of value from choice through outcome was absent within DLPFC (Figure 5\u2014figure supplement 1A) and ACC (Figure 5\u2014figure supplement 2A) neuronal populations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5 supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "91337fa6-3d5e-4bff-8589-1381a210a971",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C34",
+      "claim": "Within OFC, the sustained population code appeared most prominent in the neurons with a high resting time constant \u03c4.",
+      "claim_type": "EXPLICIT",
+      "source": "Within OFC, this sustained population code appeared most prominent in the neurons with a high resting time constant \u03c4 (Figure 5C), but absent in those with a low \u03c4 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "a6a9b289-7fba-4f2d-98d4-317ddf1d56a5",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C35",
+      "claim": "The sustained population code from choice through outcome was much stronger in OFC than in both the ACC and DLPFC populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the sustained population code from choice through outcome was much stronger in OFC (Figure 5B\u2013C) than in both the ACC and DLPFC populations (Figure 5\u2014figure supplement 1 and 2; permutation tests, OFC v DLPFC, p=0008; OFC v ACC, p<0.0001; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5 and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "6a6b1929-3536-4120-96d2-6f47635e812f",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C36",
+      "claim": "Circuits within the prefrontal cortex are endowed with several features that may support persistent activity, including complex pyramidal cell morphology, strong reciprocal connections, slow-decaying NMDA-Receptor transmission and augmenting synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Circuits within the prefrontal cortex are endowed with several features that may support persistent activity. These include complex pyramidal cell morphology, strong reciprocal connections, slow-decaying NMDA-Receptor transmission and augmenting synapses (Wang, 2001; Elston, 2003; Wang et al., 2006, 2008; Freeman, 1995; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "8ebf564c-c54b-479f-8ba5-fff4ce2a1059",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C37",
+      "claim": "There are different cell-classes within the PFC, with substantial heterogeneity in their morphology, synapses and expression of slow-decaying NMDA-Receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are different cell-classes within the PFC, with substantial heterogeneity in their morphology, synapses and expression of slow-decaying NMDA-Receptors (Wong and Wang, 2006; Zaitsev et al., 2009; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "7d2694c6-1c8c-4fc8-9389-938e81e59911",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C38",
+      "claim": "Neurons with higher resting time constants had strong chosen value correlates at choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly in this study, we demonstrated that neurons with higher resting time constants had strong chosen value correlates at choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "3ae10a86-c595-462a-af07-02d37eac257b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C39",
+      "claim": "Neurons with more persistent resting activity are more involved in value-based choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Following on from our previous work (Hunt et al., 2015) \u2013 where we demonstrated that chosen value correlates can arise indirectly from the dynamics of decision processes \u2013 our result implies that neurons with more persistent resting activity are more involved in value-based choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the current data and previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "36f1fd80-715a-489d-ab2c-b0bc59e64412",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C40",
+      "claim": "OFC is essential for delay-based decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to maintain a representation of chosen value across delays may explain why OFC is essential for delay-based decision making (Rudebeck et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "d3a1b9a9-99ae-498f-a84c-6cd799dfc52a",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C41",
+      "claim": "OFC damage causes decision-making and credit assignment deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "and why OFC damage causes decision-making and credit assignment deficits (Rudebeck et al., 2008; Noonan et al., 2010; Walton et al., 2010; Camille et al., 2011; Chau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "37679924-edd2-47a9-82a5-a7e414058074",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C42",
+      "claim": "Several imaging and lesion studies have argued that the OFC is involved in the assignment of credit during learning and decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Several imaging and lesion studies have argued that the OFC is involved in the assignment of credit during learning and decision-making (Walton et al., 2010; Takahashi et al., 2011; Chau et al., 2015; Akaishi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "07743762-cd15-4adb-8e98-6367ef1bc161",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C43",
+      "claim": "OFC cells encode the reward identity across delays.",
+      "claim_type": "EXPLICIT",
+      "source": "Single neuron studies have demonstrated OFC cells encode the reward identity across delays (Lara et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "3c682341-98cd-475e-a084-72569339d91d",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C44",
+      "claim": "OFC neurons encode specific outcome features during learning.",
+      "claim_type": "EXPLICIT",
+      "source": "encode specific outcome features during learning (Raghuraman and Padoa-Schioppa, 2014; Lopatina et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "614fdfa6-5c7b-4557-8431-41de371dce44",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C45",
+      "claim": "In some cases the same OFC neurons are involved in both choice and outcome processes.",
+      "claim_type": "EXPLICIT",
+      "source": "and in some cases the same neurons are involved in both choice and outcome processes (Kennerley and Wallis, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "4101f3aa-2825-4987-82c7-c53d306324ff",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C46",
+      "claim": "There is a large body of evidence suggesting OFC signals outcome expectancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, there is a large body of evidence suggesting OFC signals outcome expectancies (Rangel and Hare, 2010; Schoenbaum et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "248215a6-cce1-4df9-85ef-145bb2adf4a2",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C47",
+      "claim": "OFC neurons with high temporal specializations encode an integrated chosen value signal during choice and maintain this representation through to the experience of an outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that OFC neurons with high temporal specializations not only encode an integrated chosen value signal during choice, but that the same OFC neurons maintain this representation through to the experience of an outcome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by data in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "93b0dd2f-32e0-415b-a3df-9ee0b099827f",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C48",
+      "claim": "The anterior cingulate cortex (ACC) had the longest timescale within the PFC regions studied.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicated the findings of Murray et al. (2014) showing that the anterior cingulate cortex (ACC) had the longest timescale within the PFC regions studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2 and replicates previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "48f953e1-e80f-43f1-944b-96e04170877e",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C49",
+      "claim": "Calculating the decay in a neuron's intrinsic resting-state autocorrelation can provide a powerful tool for predicting functional properties during cognitive tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that calculating the decay in a neuron's intrinsic resting-state autocorrelation can provide a powerful tool for predicting functional properties during cognitive tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "b7f236da-0dc3-4014-b813-0eeb4d332172",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C50",
+      "claim": "One current method of avoiding variability in neuronal responses during cognitive tasks is pre-selection of neurons based upon their response properties.",
+      "claim_type": "EXPLICIT",
+      "source": "One current method of avoiding variability in neuronal responses during cognitive tasks is pre-selection of neurons based upon their response properties; neurons with stable, persistent responses on memory guided saccade tasks are preferentially selected for analysis in decision-making tasks (Roitman and Shadlen, 2002; Huk and Shadlen, 2005; Yang and Shadlen, 2007; Mante et al., 2013; Kira et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about experimental methods supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "1698c643-28ed-4f19-ae06-2360bc391285",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C51",
+      "claim": "Pre-selection of neurons may lead investigators to record from neurons with longer temporal receptive fields.",
+      "claim_type": "EXPLICIT",
+      "source": "This method may lead investigators to record from neurons with longer temporal receptive fields, as evidenced (Murray et al., 2014) by the higher population-level time constants within the lateral intraparietal area (LIP) when neurons are screened prior to recording (Freedman and Assad, 2006) versus when they are not (Seo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of different studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "b8920faa-7e23-4676-860d-fe925d72777b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C52",
+      "claim": "Functional specialisation for temporally extended computations predicts the involvement of PFC neurons in specific aspects of value-guided decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have shown that functional specialisation for temporally extended computations predicts the involvement of PFC neurons in specific aspects of value-guided decision making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "4ddc5623-bcfd-46d1-88a5-a2fc7ce5cc4a",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C53",
+      "claim": "Four male rhesus macaques served as subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "In brief, four male rhesus macaques served as subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "8bd11fe5-19b1-47f3-b37f-4acc6e741e15",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C54",
+      "claim": "Recordings were taken from dorsolateral prefrontal cortex (DLPFC), orbitofrontal cortex (OFC) and the anterior cingulate cortex (ACC).",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were taken from dorsolateral prefrontal cortex (DLPFC), orbitofrontal cortex (OFC) and the anterior cingulate cortex (ACC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "5aa828b8-67f4-4c22-9a67-f21556ba01a2",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C55",
+      "claim": "446 of 857 neurons could be described by an exponential decay function.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted an exponential decay function (Murray et al., 2014) to all neurons that could be described by such an equation, yielding a single decay time constant, \u03c4, for each neuron (446 of 857 neurons, see Figure 2\u2014figure supplement 1 and Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail and result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "55e2b376-14d1-4267-a796-50860ed3d608",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C56",
+      "claim": "411 cells (48.1% of all neurons) were manually excluded from all subsequent analyses which could not be adequately described as showing an exponential decay in spike count autocorrelation.",
+      "claim_type": "EXPLICIT",
+      "source": "We manually excluded 411 cells (48.1% of all neurons) from all subsequent analyses which could not be adequately described as showing an exponential decay in spike count autocorrelation (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "0d246a8a-7da1-4087-b4f6-6023a01b56e3",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C57",
+      "claim": "Both chosen benefit and chosen cost coding are present at the time of reward delivery in OFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Both chosen benefit and chosen cost coding are present at the time of reward delivery.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "cb038b0a-d2c5-420a-8dda-4054ddcaae37",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C58",
+      "claim": "The fraction of significant neurons exceeds the null hypothesis for all time points after choice onset.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of significant neurons exceeds the null hypothesis (dashed magenta line) for all time points after choice onset.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "4a46e942-901f-4795-ae52-db295ddd41a5",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C59",
+      "claim": "Sustained coding between choice and outcome was much stronger in OFC than in DLPFC or ACC.",
+      "claim_type": "EXPLICIT",
+      "source": "Sustained coding between choice and outcome was much stronger in OFC than in DLPFC or ACC (permutation tests; OFC v DLPFC, p=0.0008, OFC v ACC, p<0.0001, see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "1d593b19-4135-496e-8b88-fae755a0336a",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C60",
+      "claim": "Within the orbitofrontal cortex (OFC), there was a positive correlation between resting time constant and the coefficient of partial determination (CPD) for chosen value at the time of the maximum population-average CPD during choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the orbitofrontal cortex (OFC), there was a positive correlation between resting time constant and the coefficient of partial determination (CPD) for chosen value at the time of the maximum population-average CPD during choice (vertical purple line, correlation coefficient = 0.2268, p=0.0242)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "15dfbba2-f079-44d4-b00c-a14368044174",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C61",
+      "claim": "Within OFC, there was a positive correlation between resting time constant and CPD for chosen value at outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "and outcome (vertical purple line, correlation coefficient = 0.2608, p=0.0093).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "0dfd594f-7217-41b3-a90a-88f452b24c40",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C62",
+      "claim": "The relationship between resting time constant and chosen value correlates was weaker within the dorsolateral prefrontal cortex (DLPFC) and anterior cingulate cortex (ACC) at choice.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between resting time constant and chosen value correlates was weaker within the dorsolateral prefrontal cortex (DLPFC) and anterior cingulate cortex (ACC) at choice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "c495332b-0f67-4be4-848b-e34deac69f53",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C63",
+      "claim": "There was no relationship between time constant and the chosen value coding within DLPFC and ACC at the time of outcome.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no relationship between time constant and the chosen value coding within DLPFC and ACC at the time of outcome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "35147a2b-4910-41b6-a6da-294e3170ebbd",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C64",
+      "claim": "Sustained chosen value correlates are present at choice and outcome within DLPFC and ACC, but sustained coding from choice through outcome is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Sustained chosen value correlates are present at choice and outcome within DLPFC and ACC, but sustained coding from choice through outcome is absent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5\u2014figure supplement 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "2ce91c37-a041-4c7c-8123-ebbfaa76d517",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C65",
+      "claim": "There is no sustained coding present in either high or low time constant DLPFC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no sustained coding present in either high or low time constant cells; only a small cluster of reactivation coding is evident in low time constant cells (p=0.029, see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "ff3a9e95-81fb-4206-bf3e-9e1372756abc",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C66",
+      "claim": "In ACC, there appears to be maintenance of chosen value coding from choice until the period immediately preceding reward delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there appears to be maintenance of chosen value coding from choice until the period immediately preceding reward delivery (grey dashed box).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "c416efb9-778f-4014-94f1-3b8ec59f8111",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C67",
+      "claim": "There is no evidence for sustained coding from choice through outcome in either low or high time constant ACC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no evidence for sustained coding from choice through outcome in either low or high time constant cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "7433ab5a-2bd5-43c5-a429-0105eed22176",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "claim_id": "C68",
+      "claim": "The sustained code from choice is present through reward delivery specifically in high time constant OFC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with an OFC (Figure 5C\u2013D), where the sustained code from choice is also present through reward delivery specifically in high time constant neurons.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "456d459c-9af6-4cec-8014-a6af35edd8ea",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "At decision time, chosen value correlates were homogeneous across DLPFC, OFC, and ACC regions, with no significant differences between regions. However, OFC showed significantly stronger chosen value correlates following reward onset compared to ACC and DLPFC. Within each region, chosen value correlates were heterogeneous across individual neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 are well-supported by statistical analyses (permutation tests) and visual data in Figure 1A-D. The finding of regional homogeneity at choice but OFC-specific enhancement at outcome is clearly demonstrated with appropriate statistical controls and multiple comparison corrections.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "996f575e-32ac-49c7-80f9-baf37ea7e827",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The value signal at outcome in OFC contained information about both the chosen benefit and chosen cost components of value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19 and C57 are supported by regression analysis shown in Figure 1\u2014figure supplement 2, which demonstrates that both benefit and cost components contribute to the OFC value signal at reward delivery.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "There is marked heterogeneity in autocorrelation time constants across individual PFC neurons both within and between cortical areas. Time constants were larger in DLPFC and ACC populations but most variable within OFC and ACC. Of 857 neurons, 446 could be adequately described by an exponential decay function, while 411 were excluded.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23, C55-C56 are supported by statistical tests (Kruskal-Wallis, Bartlett's test) and visual inspection of autocorrelation data in Figure 2. However, the exclusion of 48.1% of neurons based on manual inspection raises concerns about selection bias and whether the excluded neurons might have different functional properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "05c0a622-c5ce-44a5-a41b-bb011cdaa3c7",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neurons with higher resting time constants (more stable activity at rest) exhibited stronger chosen value correlates during choice. This relationship persisted when controlling for baseline firing rate and brain area using multiple regression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C38 are supported by permutation tests (p=0.0298), correlation analysis (r=0.148, p=0.0018), and multiple regression (\u03b2=0.3315, p=0.0254) shown in Figures 3-4. The convergence of multiple statistical approaches strengthens this core finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The relationship between high time constant and chosen value coding was particularly prominent in OFC and ACC, with positive correlations at both choice and outcome in OFC, but no significant relationship in DLPFC. The relationship was weaker in DLPFC and ACC at choice, and absent at outcome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27, C60-C63 are supported by region-specific analyses in Figure 4 and Figure 4\u2014figure supplement 1, with appropriate statistical tests. The regional specificity adds important nuance to the main finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "1a78ed63-6869-4adb-b3b4-e70a3fa569c9",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Within OFC, persistent coding of chosen value from choice to outcome was more evident in the high time constant neuronal population than in the low time constant population, particularly during reward delivery. This sustained coding was not present in ACC and DLPFC, and was significantly stronger in OFC than in both other regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29, C59 are supported by permutation tests (OFC high vs low \u03c4: p=0.0082; OFC vs DLPFC: p=0.0008; OFC vs ACC: p<0.0001) and visual data in Figure 4. The statistical evidence for regional and time-constant-dependent differences is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "34040cc3-6c92-4707-ada9-4843de65cdbc",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cross-temporal pattern analysis revealed sustained coding of chosen value in OFC from at least 1000 ms before outcome through 1000 ms after outcome, with this sustained population code appearing most prominent in high time constant neurons. This sustained coding from choice through outcome was absent in DLPFC and ACC populations, though some maintenance of coding until immediately before reward delivery was observed in ACC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C30-C35, C64-C68 are supported by cross-temporal correlation analysis in Figure 5 with permutation tests (p<0.0001 for sustained coding in OFC). However, C34 notes that formal comparison of high vs low \u03c4 populations within OFC was not significant (p=0.59), which undermines the strength of the claim that sustained coding is specifically in high \u03c4 neurons. The authors acknowledge this limitation but still emphasize the pattern, creating some uncertainty about this specific aspect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "6461de77-7927-4912-b5a7-c4114ac7629c",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Variability in chosen value correlates across PFC neurons is explained by neurons having different temporal receptive fields of integration. Neurons with protracted resting temporal receptive fields exhibit stronger chosen value correlates during choice and, within OFC, sustain coding from choice through reward delivery. This functional specialization for temporally extended computations predicts neuronal involvement in value-guided decision making.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C39, C47, C52 represent the main conclusions of the study and are well-supported by the convergent evidence from multiple analyses (Figures 2-5). The mechanistic interpretation linking resting time constants to task-related coding is justified by the data, though the causal direction remains correlational.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "5a5e439d-8b85-4ff4-b7dc-61257fedc77e",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The anterior cingulate cortex (ACC) had the longest timescale within the PFC regions studied, replicating findings of Murray et al. (2014).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by data in Figure 2 showing ACC with the highest mean time constant, consistent with prior literature. This serves as a validation of the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "15f9c221-3489-4714-b5e3-90582a3b74d1",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Calculating the decay in a neuron's intrinsic resting-state autocorrelation provides a powerful tool for predicting functional properties during cognitive tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is a methodological conclusion supported by the successful prediction of task-related coding from resting-state properties demonstrated throughout the study. This represents an important methodological contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "c27eee41-713f-4447-9d27-f226712c6a9c",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing that value correlates are observed in PFC during decision making, that these may arise from evidence accumulation dynamics, that neurons show heterogeneity in both decision correlates and temporal receptive fields, and that autocorrelation functions can index temporal integration properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C7-C14 represent established knowledge from prior literature, appropriately cited. These provide the conceptual foundation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "bed2e774-1add-4e34-a4df-eb346c983826",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Discussion claims about PFC circuit properties, OFC's role in delay-based decision making and credit assignment, and methodological considerations regarding neuron pre-selection in electrophysiology studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C40-C46, C50-C51 represent established knowledge from prior literature used to contextualize the current findings. These are appropriately cited and provide important interpretive context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    },
+    {
+      "id": "7f6792cd-2eac-4b3b-9a62-7db068c56c0b",
+      "content_id": "2da5a69c-0129-4e6d-8b26-c9a625209d4b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: Four male rhesus macaques served as subjects, recordings were from DLPFC, OFC, and ACC, and the fraction of significant neurons exceeded the null hypothesis for all time points after choice onset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C58 are straightforward methodological and descriptive claims supported by the data. C58 is supported by Figure 1\u2014figure supplement 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:06:15.082287Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2840250e-a892-4ddc-b2e7-1503eb5a471b",
+      "result_id": "456d459c-9af6-4cec-8014-a6af35edd8ea"
+    },
+    {
+      "claim_id": "c64ca655-ecd7-474a-b38b-afc43886b6e5",
+      "result_id": "456d459c-9af6-4cec-8014-a6af35edd8ea"
+    },
+    {
+      "claim_id": "d11a2c0d-85f5-4e17-b84c-63eeee84fa5c",
+      "result_id": "456d459c-9af6-4cec-8014-a6af35edd8ea"
+    },
+    {
+      "claim_id": "4a895db7-c741-421b-a45e-4d89731c5e88",
+      "result_id": "456d459c-9af6-4cec-8014-a6af35edd8ea"
+    },
+    {
+      "claim_id": "11da720c-cd0e-4eff-9523-6a633519521f",
+      "result_id": "996f575e-32ac-49c7-80f9-baf37ea7e827"
+    },
+    {
+      "claim_id": "0d246a8a-7da1-4087-b4f6-6023a01b56e3",
+      "result_id": "996f575e-32ac-49c7-80f9-baf37ea7e827"
+    },
+    {
+      "claim_id": "2ab99110-88aa-4865-82b2-5a69d427df7b",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "8b6a9556-c956-477a-8cb9-9b722dc4dcde",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "842ac927-4433-4611-bd50-b4d5c8a8b4fd",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "a4e31997-d4f6-460e-8221-9809bee33447",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "5aa828b8-67f4-4c22-9a67-f21556ba01a2",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "55e2b376-14d1-4267-a796-50860ed3d608",
+      "result_id": "696ccf1f-9c63-44af-9297-e2a00f50ba9b"
+    },
+    {
+      "claim_id": "f7b2463c-c2e2-4861-a7d6-9e5e806af784",
+      "result_id": "05c0a622-c5ce-44a5-a41b-bb011cdaa3c7"
+    },
+    {
+      "claim_id": "156b847d-773c-4162-9311-01ffc878b9f1",
+      "result_id": "05c0a622-c5ce-44a5-a41b-bb011cdaa3c7"
+    },
+    {
+      "claim_id": "9efe2aff-3256-4306-8963-7d14ce2f5d66",
+      "result_id": "05c0a622-c5ce-44a5-a41b-bb011cdaa3c7"
+    },
+    {
+      "claim_id": "7d2694c6-1c8c-4fc8-9389-938e81e59911",
+      "result_id": "05c0a622-c5ce-44a5-a41b-bb011cdaa3c7"
+    },
+    {
+      "claim_id": "3d9e3245-f23e-4b64-8fe6-89484e8c79ed",
+      "result_id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4"
+    },
+    {
+      "claim_id": "1d593b19-4135-496e-8b88-fae755a0336a",
+      "result_id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4"
+    },
+    {
+      "claim_id": "15dfbba2-f079-44d4-b00c-a14368044174",
+      "result_id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4"
+    },
+    {
+      "claim_id": "0dfd594f-7217-41b3-a90a-88f452b24c40",
+      "result_id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4"
+    },
+    {
+      "claim_id": "c495332b-0f67-4be4-848b-e34deac69f53",
+      "result_id": "5a671e71-b5fa-40b1-89fa-72c5eaa5b0d4"
+    },
+    {
+      "claim_id": "6dcd5ff8-fafb-4f18-a3df-72cf70999008",
+      "result_id": "1a78ed63-6869-4adb-b3b4-e70a3fa569c9"
+    },
+    {
+      "claim_id": "369f153c-e769-41f7-b995-c3fe5537378f",
+      "result_id": "1a78ed63-6869-4adb-b3b4-e70a3fa569c9"
+    },
+    {
+      "claim_id": "4a46e942-901f-4795-ae52-db295ddd41a5",
+      "result_id": "1a78ed63-6869-4adb-b3b4-e70a3fa569c9"
+    },
+    {
+      "claim_id": "cd84655b-fab1-4f6e-a4fb-c8db4c2a3e36",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "8f75b385-4298-4381-af74-afe2fcf4fa81",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "2e2584b2-b448-4aab-bebf-2504515d9985",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "c35f280b-3b54-4cd9-8cd9-74b49656c107",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "91337fa6-3d5e-4bff-8589-1381a210a971",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "a6a9b289-7fba-4f2d-98d4-317ddf1d56a5",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "35147a2b-4910-41b6-a6da-294e3170ebbd",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "2ce91c37-a041-4c7c-8123-ebbfaa76d517",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "ff3a9e95-81fb-4206-bf3e-9e1372756abc",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "c416efb9-778f-4014-94f1-3b8ec59f8111",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "7433ab5a-2bd5-43c5-a429-0105eed22176",
+      "result_id": "34040cc3-6c92-4707-ada9-4843de65cdbc"
+    },
+    {
+      "claim_id": "85d1b6ce-ddbf-4925-9924-29318fd00428",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "77c6bc81-0497-4809-a09b-9277da5094d4",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "78ae95aa-fa94-46fe-bac5-526d37ae71b1",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "3ae10a86-c595-462a-af07-02d37eac257b",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "248215a6-cce1-4df9-85ef-145bb2adf4a2",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "b8920faa-7e23-4676-860d-fe925d72777b",
+      "result_id": "6461de77-7927-4912-b5a7-c4114ac7629c"
+    },
+    {
+      "claim_id": "93b0dd2f-32e0-415b-a3df-9ee0b099827f",
+      "result_id": "5a5e439d-8b85-4ff4-b7dc-61257fedc77e"
+    },
+    {
+      "claim_id": "48f953e1-e80f-43f1-944b-96e04170877e",
+      "result_id": "15f9c221-3489-4714-b5e3-90582a3b74d1"
+    },
+    {
+      "claim_id": "9e3f13a2-02e4-4996-ba07-dcc06aadfd2f",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "ea2044c4-5a2d-4cd6-864c-b5c1b74d1e48",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "5d4fcf5b-8c3e-4330-9841-38eb41219cf8",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "a4c040f1-99e1-4c56-9472-dff0863af101",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "b6c1df35-8ad6-458e-a708-0ae619bfe3ca",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "38f101fc-1c5e-4a69-8661-730dcbd6b847",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "26817e02-6641-4838-883a-86c6ab721bec",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "da5556a2-1518-425b-8891-3d8caa0188cb",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "a6b07ca8-2e5a-4098-abd1-2ec105fbe000",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "f11a0192-9643-4554-a0d7-fb5b903ee9c7",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "ce77c9c1-3dca-4714-b0ba-486d7f0f5481",
+      "result_id": "c27eee41-713f-4447-9d27-f226712c6a9c"
+    },
+    {
+      "claim_id": "6a6b1929-3536-4120-96d2-6f47635e812f",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "8ebf564c-c54b-479f-8ba5-fff4ce2a1059",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "36f1fd80-715a-489d-ab2c-b0bc59e64412",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "d3a1b9a9-99ae-498f-a84c-6cd799dfc52a",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "37679924-edd2-47a9-82a5-a7e414058074",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "07743762-cd15-4adb-8e98-6367ef1bc161",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "3c682341-98cd-475e-a084-72569339d91d",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "614fdfa6-5c7b-4557-8431-41de371dce44",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "4101f3aa-2825-4987-82c7-c53d306324ff",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "b7f236da-0dc3-4014-b813-0eeb4d332172",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "1698c643-28ed-4f19-ae06-2360bc391285",
+      "result_id": "bed2e774-1add-4e34-a4df-eb346c983826"
+    },
+    {
+      "claim_id": "4ddc5623-bcfd-46d1-88a5-a2fc7ce5cc4a",
+      "result_id": "7f6792cd-2eac-4b3b-9a62-7db068c56c0b"
+    },
+    {
+      "claim_id": "8bd11fe5-19b1-47f3-b37f-4acc6e741e15",
+      "result_id": "7f6792cd-2eac-4b3b-9a62-7db068c56c0b"
+    },
+    {
+      "claim_id": "cb038b0a-d2c5-420a-8dda-4054ddcaae37",
+      "result_id": "7f6792cd-2eac-4b3b-9a62-7db068c56c0b"
+    }
+  ],
+  "comparisons": []
+}

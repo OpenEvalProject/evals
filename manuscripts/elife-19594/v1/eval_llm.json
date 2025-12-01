@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In fission yeast, TORC2 subunits (Tor1, Ste20, Wat1, Bit61) can assemble into a complex in the absence of Sin1, indicating that Sin1 is not crucial for TORC2 integrity in S. pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide converging experimental evidence from co-immunoprecipitation experiments showing that TORC2 subunits interact in \u0394sin1, \u0394wat1, and \u0394bit61 strains (Figure 1A, 1B, Figure 1\u2014figure supplement 1A and B). The reciprocal experiments and multiple deletion strains strengthen the conclusion that Sin1 is not required for TORC2 assembly in fission yeast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The CRIM domain (residues 281-400) of S. pombe Sin1, but not the C-terminal RBD and PH domains, is essential for Sin1 function in TORC2-dependent Gad8 phosphorylation and stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 are supported by complementation experiments showing that Sin1 truncations lacking RBD/PH domains (1-530 aa, 1-390 aa) rescue \u0394sin1 phenotypes, while CRIM deletions (1-290 aa, \u0394291-390 aa) do not (Figure 1C, 1D). The mutants still form TORC2 complexes (Figure 1\u2014figure supplement 2), demonstrating the CRIM domain is specifically required for function, not complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Sin1 physically interacts with Gad8 through the CRIM domain (residues 281-400), which is sufficient for binding Gad8 in fission yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by multiple lines of evidence: yeast two-hybrid screen isolation (C56), co-immunoprecipitation from yeast lysate (C57, Figure 2A), domain mapping by yeast two-hybrid (C59, Figure 2\u2014figure supplement 1A), and GST pull-down experiments (C61, Figure 2B). The convergence of these independent methods strongly supports the Sin1-Gad8 interaction through CRIM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Overexpression of GST-SpSin1CRIM reduces Gad8-S546 phosphorylation, likely by competing with TORC2 for Gad8 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is directly supported by experimental data (Figure 2C) showing reduced Gad8 phosphorylation upon SpSin1CRIM overexpression. Claim C64 is a reasonable mechanistic interpretation, though alternative explanations (e.g., sequestration of other factors) are not explicitly ruled out. The competitive inhibition model is consistent with the binding data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C71"
+    ],
+    "result": "Human SIN1 CRIM domain (residues 122-314) binds mTORC2 substrates AKT, PKC\u03b1, and SGK1, demonstrating conserved substrate recognition function between fission yeast and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by yeast two-hybrid assays (Figure 2\u2014figure supplements 1C,D and 2) and in vitro binding assays (Figure 2D). Claim C69 represents a novel finding that CRIM is sufficient for SGK1 binding. The conservation claim (C71) is well-supported by parallel experiments in both organisms showing selective binding to TORC2 substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The CRIM domain selectively binds TORC2 substrates (Gad8, AKT, PKC\u03b1, SGK1) but not TORC1 substrates (S6K1, Psk1) or other AGC kinases, and does not recognize the phosphorylation sites themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by negative binding data for TORC1 substrates (Figure 2D, 2E, Figure 2\u2014figure supplement 3) and positive binding to TORC2 substrates. Claims C76-C77 are supported by experiments showing CRIM binds Gad8 and AKT lacking their C-terminal hydrophobic motifs (Figure 2\u2014figure supplement 1B and D), demonstrating substrate recognition is independent of the phosphorylation site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Random mutagenesis identified SpSin1CRIM mutations that abolish Gad8 binding and TORC2 function without disrupting TORC2 assembly, demonstrating that CRIM is essential for substrate recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by systematic mutagenesis followed by multiple validation steps: yeast two-hybrid screens (C78, Figure 3A), GST pull-downs (C79, Figure 3B), complementation assays for Gad8 phosphorylation (C80, Figure 3C) and stress resistance (C81, Figure 3D), and co-immunoprecipitation showing maintained Tor1 interaction (C82, Figure 3E). The multi-step validation strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The NMR solution structure of SpSin1CRIM reveals a ubiquitin-like fold with three \u03b1 helices and four \u03b2 strands, with more than half of the structured region consisting of loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 are supported by NMR structural determination using paramagnetic relaxation enhancement techniques (C86, citations to Furuita et al., 2014; Kataoka et al., 2014). The structural features are documented in Figure 3F and Table 1, with atomic coordinates deposited in the Protein Data Bank. The ubiquitin superfold classification is supported by citation to Kiel and Serrano, 2006.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Most mutations that abolish Gad8 binding map to buried residues in SpSin1CRIM and likely disrupt overall folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by structural mapping of mutations (Figure 3\u2014figure supplement 1) showing that most loss-of-function mutations affect buried residues. The inference that these mutations perturb folding (C91) is reasonable given their location, though direct folding measurements are not provided. The conclusion is consistent with the structural data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "SpSin1CRIM contains a distinctive protruding acidic loop (residues 352-361) that is highly conserved and essential for Gad8 binding, with the negative charge being critical for interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by structural data (Figures 3F, 4A, 4B, Figure 4\u2014figure supplement 1, 2). Claims C95-C97 are supported by mutagenesis showing 'poly NQ' substitutions eliminate Gad8 binding without disrupting folding (Figure 4C, Figure 4\u2014figure supplement 3). Claim C98 is supported by individual substitution analysis (Figure 4\u2014figure supplement 4). The convergence of structural and functional data strongly supports the essential role of the acidic loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Conserved hydrophobic residues L357 and F361 in the protruding loop contribute to Gad8 interaction, with the L357A/F361A double mutant showing minimal binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by mutagenesis data showing partial loss of binding with single alanine substitutions (C100, Figure 4\u2014figure supplement 5) and near-complete loss with the double mutant (C101, Figure 4C). The data demonstrate that both acidic and hydrophobic residues in the loop are important for substrate recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Mutations to the acidic loop ('poly NQ' or 'AA') dramatically impair TORC2-dependent Gad8-S546 phosphorylation without affecting Sin1-Tor1 interaction, demonstrating the loop is essential for substrate recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by in vivo phosphorylation assays (Figure 4D) and co-immunoprecipitation experiments (Figure 4E). The data show that loop mutations specifically disrupt substrate phosphorylation while maintaining TORC2 integrity, providing strong evidence for the substrate recruitment function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The conserved acidic loop region of human SIN1 CRIM is important for mTORC2-dependent phosphorylation of AKT (S473, T450) and PKC\u03b1 (S657), with mutations to this region impairing substrate phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by experiments in SIN1-deficient MCF-7 cells (Figure 4G, Figure 4\u2014figure supplement 6, 7, 8). The data show that deletion of the acidic loop or CRIM domain abolishes AKT phosphorylation (C108), while these mutants still interact with mTOR and RICTOR (C109). The 'poly NQ' mutant shows reduced phosphorylation of multiple substrates (C110-C111), supporting the conserved function of the acidic loop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "SpSin1CRIM fused to Ste20 can complement \u0394sin1 phenotypes and restore Gad8 phosphorylation, demonstrating that the CRIM domain alone is sufficient for substrate recruitment when tethered to TORC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 are supported by complementation experiments showing that Ste20-SpSin1CRIM rescues stress sensitivity (C114, Figure 5A) and Gad8 phosphorylation (C115, Figure 5B). Mutations that prevent CRIM-Gad8 binding abolish complementation (C116-C117, Figure 5B, Figure 5\u2014figure supplement 2), demonstrating that substrate binding by CRIM is necessary and sufficient for function when the domain is properly localized to TORC2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "TORC2 lacking Sin1 can phosphorylate Gad8 when Gad8 is artificially recruited to TORC2 via fusion to Ste20, demonstrating that Sin1 is not essential for TORC2 catalytic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 are supported by experiments showing that Ste20-Gad8 fusion is phosphorylated in \u0394sin1 cells with wild-type Tor1 but not with catalytically inactive Tor1-D2137A (Figure 5C). This elegant experiment directly demonstrates that Sin1's role is substrate recruitment rather than catalytic activation, as TORC2 can phosphorylate Gad8 when substrate proximity is achieved by other means.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "TORC1 can phosphorylate the TORC2 substrate Gad8 when Gad8 is artificially recruited to TORC1 via fusion to Mip1, demonstrating that substrate specificity is determined by recruitment rather than intrinsic kinase specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C133 are supported by experiments showing Mip1-Gad8 fusion is phosphorylated in \u0394sin1 cells in a TORC1-dependent manner (Figure 5D), associates with Tor2 (TORC1 catalytic subunit) rather than Tor1 (Figure 5E), and loses phosphorylation when Mip1-Tor2 interaction is disrupted by mutations (Figure 5F). This cross-complex phosphorylation experiment provides strong evidence that TOR complex substrate specificity is determined by regulatory subunit-mediated recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Sin1-free TORC2 can assemble and phosphorylate Gad8 when Gad8 is fused to Ste20, suggesting that ensuring TORC2 assembly and integrity is not an intrinsic function of Sin1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 synthesize findings from earlier experiments (C41-C47, C120-C123) to conclude that Sin1 is not required for TORC2 assembly or catalytic activity. This conclusion is well-supported by the convergence of co-immunoprecipitation data showing Sin1-free TORC2 assembly and functional data showing Sin1-free TORC2 can phosphorylate recruited substrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C168",
+      "C169"
+    ],
+    "result": "Sin1 is the substrate-recruiting subunit of TORC2, with the CRIM domain determining substrate specificity in both fission yeast and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 and C168-C169 represent the central conclusion of the manuscript, synthesizing multiple lines of evidence: CRIM binds TORC2 substrates selectively (C56-C77), CRIM mutations abolish function without disrupting TORC2 assembly (C78-C84), CRIM is sufficient for substrate recruitment when tethered to TORC2 (C113-C119), and the function is conserved in humans (C105-C112). The convergence of structural, biochemical, and functional data strongly supports this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144"
+    ],
+    "result": "Fission yeast CRIM interacts with human AKT in yeast two-hybrid assays, implying evolutionarily conserved structure and function of CRIM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 are supported by yeast two-hybrid data (Figure 2\u2014figure supplement 4). The cross-species interaction provides additional evidence for CRIM conservation, though the inference of conserved structure (C144) is somewhat speculative. The conclusion is consistent with other conservation data (sequence alignment, functional complementation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "HsSin1CRIM interacts with the AKT kinase domain, while SpSin1CRIM requires the Gad8 N-terminal domain for interaction, possibly due to differences in auto-inhibitory conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by yeast two-hybrid data (Figure 2\u2014figure supplement 1D, 1B). Claims C162-C163 provide context from literature and speculation about conformational effects. While the differential domain requirements are documented, the mechanistic explanation (C163) is speculative and requires further investigation. The observation itself is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "Substrate specificity of TOR complexes is determined by their ability to recruit specific substrates through regulatory subunits, as demonstrated by cross-complex phosphorylation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C165 synthesize the cross-complex phosphorylation experiments (C124-C133) to propose a general principle of TOR complex substrate specificity. The conclusion is well-supported by the experimental data showing that both TORC1 and TORC2 can phosphorylate each other's substrates when recruitment is artificially achieved. This represents a significant conceptual advance in understanding TOR complex function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C36",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Human SIN1 CRIM may represent a potential target for anticancer drugs that prevent mTORC2 substrate activation, as hyperactivation of mTORC2 is often key in cancer development and no specific mTORC2 inhibitors currently exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C170-C171 are supported by citations establishing the cancer relevance and lack of specific inhibitors. However, claims C36, C172-C173 are speculative about therapeutic potential. While the study identifies the substrate-binding interface and demonstrates its functional importance, no drug development, binding pocket analysis, or druggability assessment is presented. The therapeutic potential remains hypothetical pending further validation.",
+    "result_type": "MINOR"
+  }
+]

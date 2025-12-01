@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C95",
+      "C96",
+      "C97",
+      "C40",
+      "C39",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "GCNA1 and TRA98 antibodies recognize the same previously unannotated protein in mouse. Mass spectrometry from both immunoprecipitations identified the same protein with 51% and 24% coverage respectively, and disruption of the gene encoding GCNA in ES cells depleted both antigens. Both antibodies recognize a repetitive epitope within the protein and show identical germ cell-specific staining patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence converge to support this result: mass spectrometry data from both antibodies (C95, C96), genetic knockout validation (C97), epitope mapping (C40), and consistent staining patterns (C93, C94). The use of two independently generated antibodies that recognize the same protein provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C82",
+      "C84"
+    ],
+    "result": "Mouse GCNA is predicted to be entirely disordered based on its extreme negative charge (isoelectric point 4.17, more acidic than 98.9% of mouse proteins) and atypical amino acid composition. GCNA IDRs share characteristic amino acid enrichments and depletions with known disordered proteins and contain conserved short linear motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The disorder prediction is well-supported by multiple computational analyses (C2, C3, C44) and is consistent with established principles of protein disorder (C41, C42, C43). The characterization of amino acid composition (C44) and identification of conserved motifs (C45) provide additional validation. However, these are computational predictions that would benefit from experimental validation such as circular dichroism or NMR spectroscopy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C66",
+      "C86",
+      "C10",
+      "C68",
+      "C63"
+    ],
+    "result": "Human GCNA contains structured domains (protease, C2C2 zinc finger, HMG box) in addition to an IDR, while mouse GCNA lacks these domains due to loss more than 25 million years ago in the rodent lineage. Non-transcribed pseudo-exons encoding these domains remain in the mouse genome, and the IDR is retained across species even when structured domains are lost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain architecture differences are well-documented through synteny analysis (C86), identification of pseudo-exons (C7), and phylogenetic analysis (C6). The comparative analysis across species (C68) and conservation of the IDR despite domain loss (C63) provide strong evolutionary evidence. The genomic evidence of pseudo-exons is particularly compelling for establishing the evolutionary relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C32",
+      "C36",
+      "C37",
+      "C75",
+      "C85",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "GCNA orthologs are present in every eukaryotic superkingdom and were present in the common ancestor of eukaryotes more than 2 billion years ago. Over 200 orthologs were identified using HMM-based searches that accommodate rapid evolution of IDRs, with each conserved region having a unique signature found only in GCNA orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic distribution is well-established through systematic HMM-based searches (C87, C88) that identified over 200 orthologs across diverse eukaryotic lineages (C8). The methodology appropriately addresses the challenge of rapidly evolving IDRs (C85, C89). The inference of ancient origin (C9, C32) is well-supported by the broad phylogenetic distribution, though the exact timing relies on published divergence estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C34",
+      "C70",
+      "C73"
+    ],
+    "result": "Gcna gene expression is enriched in reproductive cells across eukaryotes\u2014during meiosis in single-celled organisms (17-fold upregulation in S. pombe and Chlamydomonas), in multipotent stem cells that give rise to germ cells in animals like Hydra and planarians, and in germ cells of animals with dedicated germlines including C. elegans, Drosophila, and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern is well-documented across diverse species using multiple data sources including published transcriptome data (C12, C13), in situ hybridization (C15), and immunohistochemistry (C18). The consistency of enrichment in reproductive cells across such phylogenetic diversity (C34) strongly supports the conclusion. The data relies heavily on published studies for many organisms, which is appropriate but means the authors did not independently validate all expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C64",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "C. elegans gcna-1 mutants exhibit significant reproductive phenotypes including reduced brood size at 25\u00b0C and a significant HIM (High Incidence of Males) phenotype. Two independent CRISPR-generated alleles (a 2-bp deletion and a 1748-bp deletion) show consistent phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional data from C. elegans is well-supported by the use of two independent mutant alleles (C76, C77, C78) showing consistent phenotypes (C19, C20). The statistical analysis appears appropriate with p-values reported. The phenotypes are modest but significant, and the HIM phenotype is consistent with a prior RNAi screen (C64). The use of two alleles strengthens the conclusion that the phenotypes are due to loss of gcna-1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C49",
+      "C79",
+      "C80"
+    ],
+    "result": "Mutation of the entirely disordered mouse GCNA dramatically impairs male fertility, with 10 of 11 mutant males siring no offspring and epididymal ducts nearly devoid of sperm. Female mutants are fertile, demonstrating sex-specific function. This indicates that the function of GCNA lies at least in part in the disordered region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mouse fertility data is compelling with a strong phenotype (C21, C22) and appropriate controls. The sex-specific phenotype (C23) is well-documented and consistent with other DNA repair genes. The inference that function resides in the IDR (C49) is logical given that mouse GCNA consists entirely of an IDR. However, the sample size is relatively small (n=11 mutants, n=15 controls), and the mechanism underlying the fertility defect is not fully characterized. The conditional allele strategy (C79, C80) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C54"
+    ],
+    "result": "GCNA proteins are members of a small family of IDR-containing metalloproteases that includes only Wss1 and Spartan. All three share minigluzincin protease domains, large IDRs, and SUMO-interacting motifs. HMM-to-HMM comparison across >14,800 protein families confirms these three are more closely related to each other than to any other family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homology to Wss1 and Spartan is well-established through multiple approaches: phylogenetic analysis (C24), structural modeling (C26), and comprehensive HMM comparisons (C27). The identification of shared features (C25) is systematic. The structural modeling shows appropriate RMSD values and quality metrics. The inference of functional conservation (C54) based on structural conservation is reasonable but remains to be experimentally validated for GCNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C50",
+      "C51",
+      "C55",
+      "C60"
+    ],
+    "result": "GCNA may function in maintenance of genome integrity in cells whose genomes will be passed to the next generation, potentially helping cells cope with DNA damage during meiosis. This is inferred from homology to Wss1 and Spartan (which function in DNA repair), similarity of mutant phenotypes to DNA repair genes, and expression during meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This proposed function is based on reasonable inferences from homology (C29, C35) and phenotypic similarities (C30, C31), but lacks direct experimental evidence of DNA repair activity. The speculation about molecular mechanisms (C50, C51, C55) is plausible but unproven. While the circumstantial evidence is compelling, direct demonstration of DNA repair function, DNA damage sensitivity, or biochemical activity would be needed to elevate this from speculation to supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "YABBY proteins in higher plants are proposed to be GCNA family members that diverged in the 600 million years since the last common ancestor of algae and higher plants, based on phylogenetic analysis of HMG boxes and shared domain composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an interesting evolutionary hypothesis based on phylogenetic analysis of HMG boxes and domain similarities. However, the claim is explicitly presented as a proposal and the evidence type includes speculation. The phylogenetic analysis appears sound, but additional evidence such as functional similarities or more detailed structural comparisons would strengthen this claim. The 600-million-year divergence time is substantial, and the loss of the protease domain represents a major change.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C81"
+    ],
+    "result": "GCNA has functioned in reproduction for at least 600 million years, based on functional studies in C. elegans and mice whose last common ancestor lived approximately 600 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference of conserved function over 600 million years is well-supported by functional data from two distantly related organisms (C. elegans and mouse) showing reproductive phenotypes. The divergence time estimate (C81) is based on published phylogenetic analyses. This represents strong evidence for ancient conserved function, though the specific molecular mechanisms may have diverged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C38"
+    ],
+    "result": "GCNA forms a distinctive coating around condensed chromosomes during meiotic prophase and is expressed concomitant with entry into the genital ridge along with classical germ cell factors DAZL and DDX4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular localization (C4) is demonstrated by immunofluorescence imaging, and the co-expression with known germ cell markers (C38) is documented. This provides important context for GCNA function and validates its role as a germ cell marker. The chromosome coating pattern is particularly interesting given the proposed DNA repair function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "GCNA joins a cohort of germline genes but is more ancient than most, predating even the germline multipotency program (GMP). Sex chromosomes are enriched for both germ cell genes and disordered proteins, and spermatogenesis/meiosis are among processes most correlated with protein disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative evolutionary analysis (C57, C59) is well-reasoned and supported by the phylogenetic data. The observations about sex chromosome enrichment (C52) and correlation with disorder (C53) are based on published analyses and provide useful context. The inference about GCNA's fundamental role (C59) is logical given its ancient origin, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C83"
+    ],
+    "result": "The identity of GCNA1 and TRA98 antigens remained unknown for 22 years despite >425 publications using these antibodies, and alignment-based searches failed to detect similarity to any protein in any species, suggesting the protein might be unique to mice or rapidly evolving.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This historical context (C61) and the initial failure of alignment-based searches (C83) are well-documented and highlight the challenge of identifying rapidly evolving IDR-containing proteins. This provides important context for the methodological approach taken and the significance of the identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C62",
+      "C65",
+      "C69"
+    ],
+    "result": "C. elegans gcna-1 encodes a canonical GCNA protein with all four domains (IDR, protease, zinc finger, HMG box), and rapid evolution renders IDRs un-alignable even among closely related species. Notably, S. pombe GCNA lacks an IDR while the related S. japonicus has one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain composition of C. elegans GCNA (C62) is well-characterized. The observation about IDR alignability (C65) is supported by published literature and explains the methodological challenges. The S. pombe exception (C69) is an interesting observation that suggests the IDR, while highly conserved, can be lost in some lineages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Each species contains one Gcna gene, with certain exceptions including plants and protostomes such as drosophilids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation about gene copy number is based on the comprehensive survey of orthologs and is appropriately qualified with noted exceptions. This is a straightforward descriptive result from the ortholog identification effort.",
+    "result_type": "MINOR"
+  }
+]

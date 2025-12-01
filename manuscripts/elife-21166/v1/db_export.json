@@ -1,0 +1,1713 @@
+{
+  "submission": {
+    "id": "8d245868-e5cb-4432-9c08-e918b76411c7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:38:52.186568Z",
+    "updated_at": "2025-11-30T22:38:52.186568Z"
+  },
+  "content": [
+    {
+      "id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "submission_id": "8d245868-e5cb-4432-9c08-e918b76411c7",
+      "content_type": "manuscript",
+      "content_text": "# Sexually dimorphic control of gene expression in sensory neurons regulates decision-making behavior in C. elegans\n\n## Authors\n\n- Zo\u00eb A Hilbert<sup>1</sup> ([ORCID: 0000-0002-3833-6912](https://orcid.org/0000-0002-3833-6912))\n- Dennis H Kim<sup>1</sup> ([ORCID: 0000-0002-4109-5152](https://orcid.org/0000-0002-4109-5152)) \u2020\n\n### Affiliations\n\n1. Department of Biology Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimal behavior is directed by the integration of sensory information from internal states and the environment. Neuroendocrine regulation of diverse behaviors of Caenorhabditis elegans is under the control of the DAF-7/TGF-\u03b2 ligand that is secreted from sensory neurons. Here, we show that C. elegans males exhibit an altered, male-specific expression pattern of daf-7 in the ASJ sensory neuron pair with the onset of reproductive maturity, which functions to promote male-specific mate-searching behavior. Molecular genetic analysis of the switch-like regulation of daf-7 expression in the ASJ neuron pair reveals a hierarchy of regulation among multiple inputs\u2014sex, age, nutritional status, and microbial environment\u2014which function in the modulation of behavior. Our results suggest that regulation of gene expression in sensory neurons can function in the integration of a wide array of sensory information and facilitate decision-making behaviors in C. elegans.\n\n## Introduction\n\nIn order to effectively adapt to an environment, organisms need to be able to analyze both their internal state and external surroundings to make behavioral decisions that will maximize their chances of survival. It has been hypothesized that decision making in animals is controlled primarily at the level of command interneurons or decision centers in the central nervous system, which receive input from an array of sensory neurons and integrate the information conveyed to inform behavioral decisions (Kristan, 2008). However, recent work in a number of animal species has demonstrated that modulation of gene expression and neuronal activity by both environmental cues and internal state can occur at the level of sensory neurons, suggesting that aspects of behavioral decision making may also occur in the peripheral nervous system (Dey et al., 2015; Farhadian et al., 2012; Ryan et al., 2014).\n\nTwo pervasive internally derived modifiers of decision making in animals are the nutritional state of the animal and biological sex. Feeding status and satiety levels have long been known to have dramatic effects on the behaviors and decisions of species across the animal kingdom (Pool and Scott, 2014; Sengupta, 2013). In many cases, the nutritional state of the animal will serve as a source of regulation directly on feeding and other food-related behaviors. For instance, in the medicinal leech, periods of food deprivation can lead to a\u00a0heightened response to appetitive stimuli in its environment, a response that has been shown to be carried out via a correlation between serotonin production and time of last meal (Gaudry and Kristan, 2012; Groome et al., 1993; Lent et al., 1991). Starvation or nutritional deprivation can also have less direct effects on feeding behaviors as in Drosophila, where periods of starvation have been demonstrated to both enhance odor sensitivity and attraction as well as abrogate avoidance responses to normally aversive stimuli (Br\u00e4cker et al., 2013; Inagaki et al., 2014; Ko et al., 2015; Root et al., 2011). Similarly, the biological sex of an animal is a potent modifier of decision-making. Not only does the sex of the animal lead to differences in mating behaviors and pheromone attraction, but studies in several systems have suggested that biological sex can also alter olfactory and gustatory preferences, perhaps to guide decision-making in the context of mating and reproduction (Dey et al., 2015; Kimchi et al., 2007; Kurtovic et al., 2007; Lebreton et al., 2015; Lee and Portman, 2007; Meunier et al., 2000; Nakagawa et al., 2005; Ribeiro and Dickson, 2010; Ryan et al., 2014; Stowers and Logan, 2010; Stowers et al., 2002; Vargas et al., 2010).\n\nThe roundworm, Caenorhabditis elegans, and its well-defined nervous system provide a simple experimental system well suited to investigate how internal states and environmental cues can be integrated to modulate animal behavior. C. elegans exist as one of two sexes: hermaphrodite or male. Hermaphrodites produce a limited amount of sperm during larval development making them capable of self-fertilization in addition to cross-fertilization. In contrast, males are only cross-fertile and must find mating partners for reproduction. As such, the male displays a large behavioral repertoire primarily aimed at facilitating mate finding and successful mating encounters. These behaviors include complex mating rituals (Liu and Sternberg, 1995), differential sensitivity to hermaphrodite pheromone (Srinivasan et al., 2008), and a mate-searching behavior in adult male animals that is driven by the prioritization of mating over feeding (Lipton et al., 2004). Mate-searching behavior of C. elegans has thus emerged as an interesting case study of decision making in a simple animal, which is subject to regulation by multiple features of internal state\u2014sex, age, and nutritional status\u2014as well as by external sensory experiences such as the presence of food or hermaphrodites in the environment (Barrios et al., 2008; Lipton et al., 2004; Ryan et al., 2014).\n\nHere, we focus on the DAF-7/TGF-\u03b2 signaling pathway, which plays a pivotal role in the regulation of diverse aspects of C. elegans physiology and behavior including the dauer developmental decision, reproductive egg laying, feeding and foraging, fat storage, satiety quiescence, longevity, aggregation, aerotaxis and avoidance of pathogenic bacteria (Chang et al., 2006; Gallagher et al., 2013; Greer et al., 2008; Meisel et al., 2014; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008). The expression pattern of daf-7 was originally identified as being restricted to a single bilaterally symmetric pair of neurons in the head of the worm, the ASI chemosensory neurons, but it is also expressed in the ADE and OLQ neurons under normal laboratory growth conditions (Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996). We recently defined an altered expression pattern for daf-7 in hermaphrodites in response to exposure to bacterial metabolites produced by the pathogenic bacteria Pseudomonas aeruginosa (Meisel et al., 2014).\u00a0Within minutes of being exposed to P. aeruginosa, daf-7 expression is induced in an additional pair of chemosensory neurons, the ASJ neurons, which in turn promotes behavioral avoidance of the pathogenic bacterial lawn (Meisel et al., 2014). Here, we show that in male C. elegans, daf-7 expression in the ASJ neuron pair is not only induced in response to environmental cues such as Pseudomonas aeruginosa, but can be switched \u2018on\u2019 or \u2018off\u2019 depending on multiple internal states such as sex, age, and experience. The differential effects of internal states and environmental experience on the DAF-7 transcriptional switch in the two ASJ sensory neurons reveal a hierarchy among different inputs that can function to modulate behavior.\n\n## Results\n\n### Male-specific expression of daf-7/TGF-\u03b2 in the ASJ neurons\n\nWhile expression of the DAF-7/TGF-\u03b2 ligand was long thought to be confined to the ASI chemosensory neurons (Ren et al., 1996; Schackwitz et al., 1996), we recently reported that a change in the microbial environment of the worm\u2014namely, the introduction of the pathogen P. aeruginosa\u2014can alter the neuronal expression pattern of daf-7, inducing expression in the ASJ neuron pair of hermaphrodite animals (Meisel et al., 2014). In the current study, we observed that adult males exhibit daf-7 expression in both the ASI and the ASJ neuron pairs in the absence of P. aeruginosa (Figure 1A and B). This expression pattern difference in adult C. elegans, can be observed both through the use of a pdaf-7::gfp transcriptional reporter (Figure 1A and B) as well as by fluorescence in situ hybridization (FISH) that directly probes for endogenous daf-7 mRNA (Figure 1\u2014figure supplement 1A\u2013C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig1-v1.jpg)\n\n**Figure 1.:** (A) pdaf-7::gfp expression pattern in hermaphrodites (left) and males (right). Filled triangles indicate the ASI neurons; dashed triangles indicate the ASJ neurons. Scale bar indicates 50 \u00b5m. (B) Maximum fluorescence values of pdaf-7::gfp in the ASI (left) and ASJ (right) neurons of age-matched adult hermaphrodites (grey) and males (black). *p<0.05 as determined by an unpaired t-test with Welch\u2019s correction. Error bars indicate standard deviation (SD). n.s., not significant. (C) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of males through larval development and early adulthood. The developmental timeline of C. elegans is shown to scale on top. Time values indicate hours after an\u00a0egg is laid. Error bars indicate SD. (D) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of both males and hermaphrodites on E. coli (yellow) or P.aeruginosa (green). ***p<0.001 as determined by unpaired t-tests with Welch\u2019s correction. Error bars indicate SD.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A\u2013B) FISH images of endogenous daf-7 mRNA in adult hermaphrodite (A) and adult male (B). White dotted lines indicate outline of the ASJ neuron(s). Both images are a single slice through the animal where ptrx-1::gfp was visible and in focus in one or both ASJ neurons. Other neurons visible anterior to the ASI neurons are likely the OLQ neurons, and the cells posterior to the ASJ neurons that express daf-7 mRNA are likely the ADE neurons. Scale bar represents 25 \u00b5m. Orientation provided in (A) applies to both images. (C) Fluorescence quantification for daf-7-Cy5 probe in the ASJ neurons (as localized by ptrx-1::gfp) in males and hermaphrodites. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. Error bars represent SD. (D) pdaf-7::gfp expression pattern in an L4 larval male. Filled triangles indicate the ASI neurons. Scale bar (shown in C) indicates 50 \u00b5m. (E\u2013F) Maximum fluorescence values of pdaf-7::gfp in the ASI (E) and ASJ (F) neurons of developing males. **p<0.01, ***p<0.001, as determined by unpaired t-test with Welch\u2019s correction. Error bars represent SD. n.s., not significant.\n\nRecent studies have suggested that, in addition to the generation of sex-specific neurons late in larval development, both male-specific and sex-shared neurons exhibit changes in gene expression as well as synaptic remodeling as the male undergoes the sexual maturation process (Oren-Suissa et al., 2016; Pereira et al., 2015; Ryan et al., 2014; Sammut et al., 2015). This predicts that a number of additional unidentified changes may occur in the anatomy, connectivity and gene expression profiles of the male nervous system as the animal transitions from larva to adult. Given this, we asked if daf-7 expression in males was correlated with the developmental stage of the animal. We observed that in populations of early larval animals carrying the pdaf-7::gfp transcriptional reporter, males and hermaphrodites were indistinguishable, with fluorescence observed only in the ASI neurons (Figure 1\u2014figure supplement 1D). To determine the onset of daf-7 expression in males, we imaged animals carrying the fluorescent reporter at multiple time points during development beginning in the L4 larval stage and extending into reproductive maturity. We found that daf-7 expression remains off in the ASJ of males through the end of the last (L4) larval stage, but is switched on during young adulthood as the animals reach reproductive maturity (Figure 1C). In addition, we examined expression of daf-7 in the ASI neuron pair at several matched timepoints during development and observed a significant drop in the expression of daf-7 in the ASI neurons from L4 to young adulthood (Figure 1\u2014figure supplements 1E\u00a0and F, 52\u00a0hr and 64.5\u00a0hr timepoints). At subsequent timepoints during adulthood, however, expression levels in the ASI neurons remained constant as expression in the ASJ neurons increased (Figure 1\u2014figure supplements 1E,3F 64.5\u00a0hr and 71.5\u00a0hr timepoints).\n\n### Genetic sex of the nervous system modulates daf-7 expression in adult males\n\nWe asked what the role of the genetic sex of the animal is in regulating daf-7 expression in the ASJ neurons. The C. elegans sex determination pathway terminates on the master regulator GLI-family transcription factor, TRA-1 (Zarkower and Hodgkin, 1992; Zarkower, 2006). TRA-1 activity functions to promote hermaphrodite cell fates and inhibit male development. We first looked at tra-1(e1099) mutants which are karyotypically XX, but develop as fertile pseudomales due to the lack of active TRA-1 (Hodgkin and Brenner, 1977). In these mutant XX males, daf-7 expression could be seen in both the ASI and ASJ neurons, suggesting that daf-7 is regulated by the genetic sex determination pathway either directly or indirectly (Figure 2\u2014figure supplement 1A).\n\nWe next looked at the role of genetic sex specifically in the nervous system using transgenic sexual mosaics. TRA-1 is negatively regulated by the FEM proteins\u2014FEM-1, FEM-2, and FEM-3\u2014and it has been demonstrated by many groups that overexpression of FEM-3 cDNA is sufficient to lead to \u2018masculinization\u2019 in otherwise hermaphrodite animals (Mehra et al., 1999; Oren-Suissa et al., 2016; Pereira et al., 2015; Sammut et al., 2015; White et al., 2007). We expressed the FEM-3 cDNA under the control of the pan-neural promoter, rab-3, and found that daf-7 expression was up-regulated in the ASJ neurons of adult hermaphrodites, suggesting that a genetically \u2018male\u2019 nervous system is sufficient for daf-7 expression in ASJ (Figure 2A, C and E). Although we observed an increase in daf-7 expression in these genetically masculinized animals, the overall expression of daf-7 in the ASJ of masculinized hermaphrodites was still notably lower than what we observe in wild-type males (e.g. Figure 1B). This could possibly be explained by the lack of male-specific neurons in these transgenic animals. While genetic masculinization is effective in sexualizing neurons of the sex-shared nervous system, this technique fails to reliably retain the male-specific CEM neurons and produces hermaphrodites which also lack other male-specific neurons found in the tail (White et al., 2007). To assess the importance of these male-specific neurons for daf-7 expression in ASJ, we examined pdaf-7::gfp fluorescence in ceh-30(n4289), mab-3(e1240), and pkd-2(sy606);lov-1(sy582) mutant males. While ceh-30(n4289) males lack the male-specific CEM neurons in the head (Schwartz and Horvitz, 2007), mab-3(e1240) mutants display marked defects in male-tail formation including ray differentiation as well as in male specific circuitry in the head of the animal (Yi et al., 2000). Similarly, PKD-2 and LOV-1 constitute a TRP channel necessary for the function of the B-type ray neurons\u2014another set of male-specific neurons in the tail of the animal (Barr et al., 2001; Barr and Sternberg, 1999; Barrios et al., 2008). Males of all mutant strains retained wild-type expression levels of daf-7 in ASJ, suggesting that the male-specific neural circuitry is not required for daf-7 expression and is unlikely to underlie the lower daf-7 expression we see in genetically masculinized hermaphrodites (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013D) Representative images of pdaf-7::gfp expression in: wild-type (WT) hermaphrodites (A) and males (B), nervous-system-masculinized hermaphrodites (C) and nervous-system-feminized males (D). Closed triangles indicate the ASI neurons; dashed triangles indicate the ASJ neurons. Scale bar indicates 50 \u00b5m. (E) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of control (black) and partially masculinized hermaphrodites (purple). Masculinization was effected by driving expression of fem-3 cDNA under pan-neural (left) and ASJ-specific (right) promoters. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. n.s., not significant. Error bars represent SD. (F) Maximum fluorescence values of pdaf-7::gfp in ASJ of control (black) and partially feminized males (orange). Feminization was effected by driving expression of tra-2IC under pan-neural (left), ciliated neuron (middle), and ASJ-specific (right) promoters. ***p<0.001 as determined by unpaired t-test with Welch\u2019s correction. Error bars indicate SD.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Representative image of pdaf-7::gfp expression pattern in tra-1(e1099) pseudomale. Filled triangles indicate the ASI neurons; dashed triangles indicate the ASJ neurons. Scale bar represents 50 \u00b5m. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of WT, ceh-30(n4289), mab-3(e1240), and pkd-2(sy606);lov-1(sy582) mutant animals. Significance determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent SD. n.s., not significant.\n\nComplementary to masculinization, genetic \u2018feminization\u2019 of XO male animals can be achieved via the overexpression of the intracellular domain of the TRA-2 protein, which negatively interacts with FEM-3 to prevent TRA-1 degradation (Mehra et al., 1999). Overexpression of TRA-2IC under the control of the rab-3 promoter led to complete loss of daf-7 expression in the ASJ of otherwise male animals (Figure 2B, D and F). These results suggest that a genetically male nervous system is both necessary and sufficient for the sex-specific expression pattern of daf-7.\n\nWe next asked whether the sex determination pathway acts cell-autonomously in ASJ to regulate daf-7 expression. Using the trx-1 ASJ-specific promoter, we masculinized the ASJ neuron pair alone and saw no daf-7 expression in the resulting adult hermaphrodites (Figure 2E). Similarly, no daf-7 expression could be observed when only the ciliated neurons (of which ASJ is a member) were masculinized (data not shown). These data suggest the requirement that an additional neuron (or neurons) or other tissues have a male cell identity for daf-7 to be expressed in the ASJ neurons, although differences in the\u00a0strength of the heterologous promoters used in the masculinization constructs may also account for these observations. In contrast, both ciliated neuron-specific and ASJ-specific feminization in males led to down-regulation of daf-7 expression, confirming that a male cell identity in ASJ is necessary, though not sufficient, for proper daf-7 expression (Figure 2F).\n\n### DAF-7 is required for male-specific mate-searching behavior\n\nWe next sought to determine the functional significance of the sex-specific changes in daf-7 expression that we observe in males. Mate-searching behavior is a behavioral program specific to adult male C. elegans, which features the prioritization of mating over feeding in these animals. While hermaphrodite animals prefer to remain in a patch of bacterial food indefinitely and exhibit limited exploratory behavior, males will wander away from a food source at a predictable and constant rate (Lipton et al., 2004). This can be examined in an assay in which the movement of the animal is tracked over time to determine the leaving probability of any given genotype (Figure 3A; Lipton et al., 2004). We observed that mutants in both the DAF-7/TGF-\u03b2 ligand and its Type I receptor, DAF-1, showed defects in the mate-searching assay (Figure 3A and B, and Figure 3\u2014figure supplement 1). This behavioral defect in the daf-7 mutant can be fully suppressed by mutation of the downstream antagonistic co-SMAD, DAF-3, suggesting that DAF-7 functions through its canonical TGF-\u03b2 signaling pathway to regulate mate-searching behavior (Figure 3B, and Figure 3\u2014figure supplement 1B). Given the change in expression of daf-7 in the ASJ neurons of males at the transition to adulthood when this behavior is first displayed, we used genetic ablations of the ASJ neuron pair to ask what their contribution to this behavior might be. We observed that the ASJ-ablated animals were defective in mate-searching behavior, establishing a role for the ASJ neuron pair in promoting this behavior (Figure 3C and Figure 3\u2014figure supplement 1A). Importantly, the defects that we see in daf-7 mutant and ASJ-ablated male behavior are not accounted for by global defects in locomotion. When mutant animals are tested on leaving assay plates on which the bacterial food has been fully spread, these males reach the scoring distance at equivalent rates to WT controls (Figure 3\u2014figure supplement 2; Barrios et al., 2012). This suggests that the reduced leaving behavior we observe in these animals isspecific to the decision to leave the food source in search of a mate.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of mate-searching assay (top). Animals are placed individually into the center of a lawn of bacteria. The tracks of the animal are followed over time and scored for movement beyond 3 cm away from the food source. A representative data curve is shown on the bottom depicting hermaphrodites (solid black), males (dashed black), and daf-7(e1372) mutant males (blue). (B) Probability of leaving values for WT, daf-7 mutant, and daf-7;daf-3 double mutant males. Values plotted are the average + SEM for two independent experiments, n\u00a0=\u00a040 animals for all strains except daf-7(ok3125) where n\u00a0=\u00a029. *p<0.05, **p<0.01 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. n.s., not significant. (C) Probability of leaving values for two independent lines of male animals with genetic ablation of the ASJ neurons, compared with corresponding values for WT and daf-7 mutant males. Values plotted are the average + SEM for two independent experiments for daf-7 mutant animals and three independent experiments for WT control and ASJ ablation strains. n\u00a0=\u00a060 animals for all strains except daf-7(ok3125) where n\u00a0=\u00a029 animals. **p<0.01 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. One replicate was performed with the daf-7;daf-3 double mutant strains in 1B and controls (WT and daf-7) are identical, so probability values for that experiment were used in the averages shown in both B and C of this figure. (D) Probability of leaving values for daf-7(ok3125) mutant animals carrying transgenes expressing daf-7 cDNA specifically under the control of the indicated promoters. Values on graph are the average + SEM of two independent experiments with an n\u00a0=\u00a040 total animals for each strain. **p<0.01 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. n.s., not significant.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Representative mate-searching data for strains with genetic ablation of the ASJ neurons (shown in shades of orange). WT hermaphrodites (solid black), WT males (dashed black), and daf-7 mutant (blue) animals are included in each assay as controls. (B) Representative data for daf-7;daf-3 double mutant (green) in the mate-searching assay. (C) Representative data for daf-7 rescue strains (shown in shades of red). (D) Representative mate-searching curves for daf-1 mutants (purple). (E) Probability of leaving values for WT, daf-7, and daf-1 mutant animals. Values shown are the average + SEM of two independent experiments. n\u00a0=\u00a040 for WT and daf-7 mutants, n\u00a0=\u00a032 for daf-1(e1287) and n\u00a0=\u00a036 for daf-1(m402). *p<0.05 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic of locomotion assay. E. coli food (shown in yellow) was spread to the edges of the plate and a standard mate searching assay performed to determine animal movement on a full lawn of bacteria. (B\u2013C) Raw data curves for daf-7 (blue) and ASJ-ablation (orange) males in locomotion assay. WT males shown in black for reference.\n\nSince DAF-7 is a secreted ligand, we anticipated that overexpression of DAF-7 from either the ASI or ASJ neurons would be sufficient to rescue daf-7-associated mutant phenotypes. As expected, we saw that transgenic rescue from the endogenous promoter as well as from ASI- and ASJ-specific promoters were sufficient to restore mate-searching behavior in the daf-7(ok3125) mutant background (Figure 3D and Figure 3\u2014figure supplement 1C). Taken together, these data imply that the dynamic expression of daf-7 in the ASJ neurons of adult males regulates mate-searching behavior.\n\n### Nutritional state dynamically regulates daf-7 expression in the ASJ neurons of males\n\nMate-searching behavior has been demonstrated to be dependent on the feeding state of the animal\u2014starved male animals will re-prioritize feeding over mate searching for a limited period of time until the animal has had sufficient opportunity to re-feed (Figure 4C; Lipton et al., 2004). We asked whether daf-7 expression in the male ASJ neurons might be dependent on the nutritional state of the animal or the bacterial availability in its environment. We found that males subjected to starvation beginning early in the L4 larval stage failed to express daf-7 in the ASJ neurons as adults (Figure 4A, conditions i and ii, and Figure 4B). This lack of daf-7 in the ASJ neuron pair was apparent both by GFP visualization as well as by FISH, with daf-7 mRNA entirely absent from the ASJ neurons (Figure 4A and B). We noticed that daf-7 mRNA was still apparent in the ASI, OLQ, and ADE neurons of these starved animals, suggesting that the loss of daf-7 expression in the ASJ neurons is specific and not representative of a global down-regulation of transcription in these animals (Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of experiment design indicating timing and duration of starvation periods (left). FISH images of endogenous daf-7 mRNA in the ASJ neurons for each experimental condition (right). White dotted lines indicate outline of ASJ cell body as localized by ptrx-1::gfp. Scale bar represents 5 \u00b5m. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons during re-feeding experiment. Re-fed animals were starved for a period of 24 hr before being reintroduced to E. coli for the indicated amount of time. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars indicate SD. n.s., not significant. (C) Representative curves of mate-searching data in fed and post-starvation WT males. Animals were starved for a period of 24 hr as in previous experiments before being assayed for mate-searching behavior.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Representative FISH image of endogenous daf-7 mRNA in a starved adult male. White dotted line indicates outline of an ASJ neuron. Closed triangle indicates an ASI neuron. Other neurons visible anterior to the ASI neuron are likely the OLQ neurons, and posterior to the ASJ neuron are likely the ADE neurons. Scale bar represents 25 \u00b5m. (B)\u00a0Fluorescence quantification for daf-7-Cy5 probe in the ASJ neurons (as localized by ptrx-1::gfp) of males fed and starved at various different points in their lives. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars represent SD. n.s., not significant. (C)\u00a0Fluorescence quantification for daf-7-Cy5 probe in the ASI neurons of starved and fed males. Significance determined by unpaired t-test with Welch\u2019s correction. Error bars represent SD. n.s., not significant.\n\nWe next asked if daf-7 expression could be dynamically modulated by removal and re-introduction of food at various points during the life of the male. We first looked at daf-7 expression in animals that had experienced starvation during the L4-to-adulthood period before being returned to an E. coli food source as adults. In these animals, daf-7 expression could be detected both by the GFP reporter as well as by FISH (Figure 4A, condition iii, and 4B). We asked whether fully mature adult animals would turn off daf-7 expression in response to starvation after having already induced expression of daf-7 in the ASJ neuron pair. For these experiments, we utilized FISH of the endogenous daf-7 mRNA because perdurance of the GFP reporter might complicate analysis. When males were allowed to develop into adulthood unperturbed and then subjected to a period of food deprivation, we observed a complete loss of daf-7 mRNA in the ASJ neurons (Figure 4A, condition iv). Together this data demonstrates that daf-7 expression in the ASJ neurons is subject to dynamic regulation by periods of starvation and re-feeding.\n\nThese data suggest two distinct possibilities for how bacterial food levels in the environment modulate daf-7 transcriptional regulation in the ASJ neuron pair of males. First, daf-7 transcription could be regulated by the internal nutritional state of the animal (starved or fed). Alternatively, daf-7 transcription could be activated by the chemosensation (smell or taste) of bacterial food. To distinguish between these two possibilities, we measured the kinetics of daf-7 expression in response to re-feeding in starved animals. We observed that daf-7 expression in the ASJ neuron pair is not significantly increased compared to starved controls until 9 hr after the re-introduction of an E. coli food source (Figure 4B). Although some animals could be observed expressing daf-7 weakly in the ASJ neuron pair at 4 hr of re-feeding, the majority of animals still exhibited no pdaf-7::gfp expression in the ASJ neuron pair until later time points. The extended period of time required to restore daf-7 expression in the ASJ neuron pair suggests that internal nutritional state, not the chemosensation of bacterial food, exerts control over daf-7 transcription in the ASJ neuron pair. Moreover, we observed that the onset of daf-7 expression in the ASJ neurons of males following the re-introduction of food are consistent with the previously noted kinetics of resumption of mate-searching behavior after males have been starved (Figure 4C; Lipton et al., 2004).\n\n### Differential regulation of daf-7 expression in the ASJ neurons establishes a hierarchy of behaviors in male C. elegans\n\nWe recently showed that the microbial environment is an important regulator of daf-7 expression in the ASJ neurons in hermaphrodite animals (Figure 1D; Meisel et al., 2014). Given that males induce expression of daf-7 in the same ASJ neuron pair independently of the bacterial food source, we sought to determine if they would be capable of responding to exposure to P. aeruginosa in the same way as their hermaphrodite siblings\u2014namely, through additional up-regulation of daf-7 expression in the ASJ neurons. We observe that, when transferred to P. aeruginosa, males carrying the pdaf-7::gfp transcriptional reporter exhibited an increase in daf-7 expression in the ASJ neurons compared to E. coli-fed controls (Figure 1D). The additive nature of DAF-7 levels in males suggests that the ASJ neuron pair of males retain the ability to respond to P. aeruginosa that we observe in hermaphrodites.\n\nOur data suggest that daf-7 expression in the ASJ neurons is subject to regulation by both sensory cues from the microbial environment as well as by internal state sensing mechanisms. Because daf-7 expression in the ASJ neuron pair and mate-searching behavior in males are dependent on\u00a0nutritional state during feeding on the non-pathogenic bacterial food, E. coli, we sought to determine if expression of daf-7 in response to P. aeruginosa might also be dependent on the\u00a0nutritional state in males. We tested this by challenging starved animals with E. coli or P. aeruginosa to see how daf-7 expression would be affected and to observe any behavioral differences. Looking at animals carrying the pdaf-7::gfp reporter during post-starvation re-feeding, we observed a rapid up-regulation of daf-7 expression in the ASJ neurons of starved males returned to P. aeruginosa as a food source (Figure 5A and B, and Figure 5\u2014figure supplement 1E). This increase in daf-7 expression in the ASJ neuron pair could be seen as early as 2 hr after first exposure to the pathogenic bacteria (Figure 5\u2014figure supplement 1E). In contrast, starved males that were returned to the non-pathogenic E. coli showed little to no daf-7 expression in the ASJ neurons until much later time points (Figure 5A,B and 4B). The kinetics of the increase in fluorescence of the pdaf-7::gfp reporter in response to P. aeruginosa secondary metabolites, which lags behind the immediate response observed by FISH is consistent with what we observed previously for hermaphrodite animals (Meisel et al., 2014), and notably faster than the slower increase in pdaf-7::gfp reporter fluorescence in response to repletion of the non-pathogenic E. coli bacterial food.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of refeeding experimental design indicating timing and duration of each starving and feeding period (left). On right, representative images of daf-7 expression following 4 hr of post-starvation refeeding on E.coli (left) or P.aeruginosa (right). Closed triangles indicate the ASI neurons; dashed triangles indicate the ASJ neurons. Scale bar represents 50 \u00b5m. (B) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of fed and starved animals and animals that were starved for a period of 24 hr and then reintroduced either to the normal E. coli food source or to pathogenic P. aeruginosa. Images were taken for quantification after 4 hr of re-feeding. ***p<0.001 as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars indicate SD. n.s., not significant. (C) Representative curve of food-leaving data in starved animals on E. coli (yellow) and P. aeruginosa (green). Animals were starved as in previous experiments before being run in the assay.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Representative leaving curves for males (dashed) and hermaphrodites (solid) on E. coli (shades of grey) and P. aeruginosa (shades of green). All strains were fed in this experiment. (B) Probability of leaving values for males and hermaphrodites on E. coli and P. aeruginosa. All strains were fed in these experiments. Values plotted are the mean + SEM for two independent experiments, n\u00a0=\u00a040 animals for all conditions. *p<0.05 as determined by unpaired t-test with Welch\u2019s correction. n.s., not significant. (C) Representative raw data curves for starved hermaphrodites on E. coli and P. aeruginosa. Fed hermaphrodites shown as control. (D) Maximum fluorescence of pdaf-7::gfp in the ASJ neurons of starved hermaphrodites re-fed E. coli or P. aeruginosa for four hours (compare to Figure 5B). Error bars indicate SD. (E) Maximum fluorescence values of pdaf-7::gfp in the ASJ neurons of fed and starved animals and animals that were starved for a period of 24 hr and then reintroduced to P. aeruginosa for the indicated amount of time. The experiment in Figure 4B was run in parallel, controls (fed and starved) were shared between conditions. These controls are shown in both figures for comparison purposes. *p<0.05 and ***p<0.001, as determined by ordinary one-way ANOVA followed by Dunnett\u2019s multiple comparisons test. Error bars indicate S.D.\n\nWe followed up by asking if this difference in expression after starvation is also reflected in behavioral differences of post-starvation animals experiencing different microbial environments. Normally, following a period of starvation, a male prefers feeding over leaving a lawn of bacteria in search of a mate (Figure 4C; Lipton et al., 2004), but we reasoned that these priorities might be re-set if the only available food is pathogenic to the starved animal. Indeed, whereas starved males will remain on the E. coli lawn for several hours, starved males who are instead returned to a lawn of P. aeruginosa will readily leave the bacterial lawn at a rate similar to non-starved animals on the normal E. coli food source (Figures 4C and 5C). This lawn-leaving behavior is not male-specific, as both fed and starved hermaphrodites will also readily leave a lawn of P. aeruginosa and starved hermaphrodites are also capable of responding to P. aeruginosa through an upregulation of daf-7 in the ASJ neurons (Figure 5\u2014figure supplement 1A\u20131D). In this regard, one might consider that lawn-leaving under these conditions is driven by the presence of pathogenic P. aeruginosa, and not mate-searching. Our data suggest that daf-7 expression in the ASJ neurons is one way through which animals are both able to interpret internal and external cues and prioritize their behaviors accordingly.\n\n## Discussion\n\nWe have presented a set of experiments that suggest that behavioral prioritization and decision-making may be effected through the transcriptional control of a key neuroendocrine regulator, the TGF-\u03b2 ligand, DAF-7, in a pair of chemosensory neurons, the ASJ neurons. Our data suggest that daf-7 expression in the ASJ neuron pair is utilized to promote exploratory behaviors in different physiological and ecological contexts. In hermaphrodites, expression of daf-7 is induced by the detection of secondary metabolites and functions to allow animals to discriminate between microbial species and promote avoidance of pathogenic bacteria (Meisel et al., 2014). In essence, pathogen avoidance represents the behavioral choice an animal makes when confronted with two competing needs\u2014the need to eat and remain well fed and the need to avoid danger and infection. Mate searching presents a paralagous but sex-specific behavior, where the decision instead is between food and mating. Our data suggest that modulation of daf-7 expression provides a striking example of how a neuroendocrine signaling pathway may be coopted to guide behavioral decisions in entirely different contexts.\n\nOur study suggests that internal states and environmental cues that converge on the transcriptional control of DAF-7 in the ASJ neuron pair are processed in a hierarchical manner that, in turn, serves to modulate the exploratory mate-searching behavior in the male (Figure 6). The work presented here suggests that the transcriptional regulation of daf-7 in the ASJ neurons functions as an ON/OFF switch, where each input holds the switch\u2014and thus, daf-7 expression\u2014in one of two states. However, the various regulatory inputs into this switch exert differential control, with environmental cues being prioritized over all others. This differential control of the transcriptional switch, in turn allows for re-adjustments of behavioral priorities in the worm based on its current and past experience.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21166/elife-21166-fig6-v1.jpg)\n\n**Figure 6.:** We show that the information from many different sources both internal and external is integrated hierarchically in the regulation of daf-7 expression in the ASJ neuron pair. This hierarchical regulation of daf-7 in turn leads to a distinct prioritization of exploratory behaviors in the male worm.\n\nInterestingly,\u00a0dynamic transcriptional regulation has previously been implicated in the regulation of sex-specific decision-making behavior in C. elegans. Expression of the chemoreceptor, ODR-10, in the sex-shared sensory AWA neurons has also been shown to be dependent on both internal and external cues to regulate food-related decision making in male C. elegans (Ryan et al., 2014). Given the similarities in the regulation of these two genes by both sex and satiety, it is possible that DAF-7 and ODR-10 function in a single pathway to regulate decision-making behaviors in the male. Previous studies of daf-7 have suggested that it is involved in regulating the expression of numerous chemoreceptors in many different neuron types (Nolan et al., 2002). While no interaction has been identified between daf-7 and odr-10 in the hermaphrodite nervous system, there has been no examination as yet of the effects of daf-7 mutation on odr-10 in the relevant cell types, sex, or under different food conditions, which may be an interesting line of future research.\n\nDAF-7/TGF-\u03b2 has previously been found to be involved in the regulation of other satiety-regulated behaviors such as quiescence and foraging (Gallagher et al., 2013; Milward et al., 2011; You et al., 2008). daf-7 mutants show marked defects in the ability to respond to fasting through an increase in quiescence, suggesting that DAF-7 may serve as a critical signal of food availability in the worm (You et al., 2008). Similarly, DAF-7 signaling has also been implicated in promoting food-leaving (or foraging) in the context of a rapidly depleting food source, further underscoring the importance of this pathway for communicating nutritional availability (Milward et al., 2011). While DAF-7 from the ASI neurons, and not the ASJ neurons, contributes to these other possibly related phenotypes, similar mechanisms may\u00a0be involved in regulating daf-7 expression and release in these three distinct food/satiety-dependent assay contexts. Taken together with our data, the important role of daf-7 in these different behavioral paradigms suggests that the daf-7 pathway may act as a more global food signal that is critical for allowing the animal to sense food and satiety and modulate its behaviors accordingly.\n\nFinally, our results support a model where integration of internal and external sensory information can occur at the level of the sensory neuron itself to regulate behavioral prioritization. Our data on the role of the ASJ sensory neurons in male mate-searching behavior are consistent with emerging evidence from studies in several species to suggest that the regulatory control of sensory neurons contributes to information processing and decision making behavior (Dey et al., 2015; Lebreton et al., 2015; Peckol et al., 2001; Ryan et al., 2014).\n\n## Materials and methods\n\n### C. elegans strains\n\nC. elegans were grown on E. coli OP50 as a food source as previously described (Brenner, 1974). Strains were grown at 20\u00b0C except for assays containing dauer-constitutive mutants, in which case, all strains were grown at 16\u00b0C until they passed the dauer developmental decision. Unless otherwise indicated, all strains carry the him-5(e1490) mutation to increase the number of spontaneous males available. For a complete list of strains used in this study, please see Supplementary file 1.\n\n### Measurement of gene expression in the ASJ neurons\n\nFor quantification of daf-7 expression in mutants and developing animals, animals were egg laid for 2 hr on OP50 to obtain synchronized populations of animals. The\u00a0animals were then mounted and anesthetized in 50 mM sodium azide at the indicated hour of development or at 72 hr if not indicated. The animals were imaged at 40x using a Zeiss Axioimager Z1 microscope. 15\u201320 animals were imaged for each condition or strain. For quantification, maximum intensity values of GFP within the ASJ neurons was calculated using FIJI software (Schindelin et al., 2012); Fiji, RRID:SCR_002285).\n\nFor P. aeruginosa experiments, the P. aeruginosa PA14 strain was grown overnight at 37\u00b0C in 3 mL of LB as previously described and the next day 7 \u00b5L of culture was seeded onto SKA plates (Tan et al., 1999). Plates were incubated at 37\u00b0C overnight and then allowed to grow for an additional two days at room temperature before being used for experiments. Animals for P.aeruginosa experiments were synchronized by treatment with bleach and then allowed to hatch and arrest as L1 larvae in M9 media overnight. This provided synchronized populations free from any possible bacterial contamination. Animals were transferred to PA14 plates or OP50 controls at the L4 larval stage. Imaging and quantification were performed as described above at 16 hr after transfer to PA14 plates.\n\n### Generation of transgenic animals\n\nTo generate the neural feminization and masculinization transgenes, the pGH8 plasmid containing the pan-neural rab-3 promoter along with mCherry::unc-54 3\u2019UTR was linearized by PCR. The fem-3 and intracellular tra-2 cDNAs were amplified from cDNA generated with an Ambion RETROScript kit. The unc-54 3\u2019UTR was amplified from the pPD95.75 vector and the SL2 trans-splicing sequence leader (Huang et al., 2001; Spieth et al., 1993) was amplified from genomic DNA. The fem-3 or tra-2 cDNA along with the unc-54 3\u2019UTR and SL2 sequence were cloned into the linearized pGH8 vector by Gibson assembly (Gibson et al., 2009). For cell specific manipulations, the ciliated neuron bbs-1 promoter (1.9 kb) and ASJ specific trx-1 promoter (1.1 kb; Fierro-Gonz\u00e1lez et al., 2011) were amplified from genomic DNA and inserted in the place of the rab-3 promoter by Gibson assembly. All plasmids were sequenced to confirm identity and injected into ksIs2;him-5(e1490) animals at a concentration of 50 ng/\u00b5L, along with a plasmid carrying ofm-1::gfp (50 ng/\u00b5L). At least three independent transgenic lines were obtained and analyzed for each construct and one representative line is shown. For a complete list of primers used in this paper, please see Supplementary file 2.\n\n### Mate-searching assays\n\nMate-searching behavior was assessed in animals through a food leaving assay as previously described (See diagram in Figure 3A; Lipton et al., 2004). Briefly, animals were placed individually onto a 1 cm lawn (~20 \u00b5L of culture) of E. coli OP50 in the center of a 10 cm plate. Movement of each animal was tracked at hourly time points. When an animal\u2019s tracks extended a distance of 3 cm away from the starting lawn, the animal was scored as a \u2018leaver\u2019. It has been previously demonstrated that male leaving behavior can be modeled by the single exponential decay function N(t)/N(0)=exp(-\u03bbt), where N(t) refers to the number of non-leavers at a given time and the hazard value (\u03bb) gives an estimate for the probability of leaving, which remains constant over the course of an assay (Lipton et al., 2004). Hazard values were calculated by fitting data using the R survival package with an exponential parametric survival model using maximum likelihood (R Project for Statistical Computing, RRID:SCR_001905). These values were pooled across replicates. At least two independent experiments were performed for each genotype (~40 animals per genotype). For leaving assays with P. aeruginosa, plates were supplemented with additional peptone and were seeded with 15 \u00b5L of bacterial culture. In addition, all plates for PA14 assays were incubated overnight at 37\u00b0C after being seeded with bacteria and then for an additional 2 days at room temperature before being used for the assay.\n\nFor locomotion assays, 10 cm mate-searching plates were seeded with\u00a0~400 \u00b5L of E. coli OP50 culture spread to the edge of the plate. Plates were allowed to dry and remained at room temperature for\u00a0~16 hr before being used in the assay. Males were placed individually on these plates and their movement tracked over time as in the standard mate-searching assay. The same scoring distance was used for locomotion assays as for the mate-searching assay.\n\n### Fluorescence In Situ hybridization\n\nFISH was performed as described previously (Raj et al., 2008). Animals were fixed in 4% formaldehyde for 45 min at 20\u00b0C. Following washing in PBS, animals were resuspended in 70% ethanol and incubated overnight at 4\u00b0C. Samples were then hybridized with probes to the endogenous daf-7 mRNA as previously published (Meisel et al., 2014). Hybridization was carried out at 30\u00b0C overnight. Imaging was performed using a Nikon Eclipse Ti Inverted microscope with a Princeton Instruments PIXIS 1024 camera. All data were analyzed in FIJI. For quantifications of FISH data, fluorescence values were calculated within the ASJ (or ASI) neurons for the indicated conditions. All samples were hybridized using daf-7-Cy5 probes and imaged at an exposure time of 1500 ms. For all FISH experiments, animals carrying the ofEx4[ptrx-1::gfp] transgene were used in order to localize the ASJ neurons.\n\n### Starvation experiments\n\nFor all starvation experiments, animals were synchronized by treatment with bleach and then were allowed to hatch and arrest as L1s in M9 media for 14 hr. After 14 hr, animals were dropped onto plates containing abundant OP50 E. coli and were allowed to develop for 34\u201336 hr at 20\u00b0C. At this time point, animals had already entered the L4 larval stage. All animals were washed from the plates and subjected to an additional 4\u20135 washes with M9 media to remove any remaining bacteria. Animals were placed either back onto plates seeded with E. coli or were dropped onto plates lacking peptone to inhibit any bacterial growth.\n\nFor re-feeding experiments, animals were starved on peptone free plates for 24 hr at 20\u00b0C. After 24 hr of starvation, nearly all of the male animals had molted into adults as evident by tail and gonadal morphology. Only animals with adult morphology were used for experiments and imaging. They were subsequently collected and placed onto plates seeded with either E. coli or P. aeruginosa for the designated amount of time. For the FISH experiment shown in Figure 3, animals were re-fed on E. coli OP50 for 16 hr at 20\u00b0C before being fixed for imaging.\n\nFor the late starve experiments, animals dropped back onto E. coli after the washing step were allowed to grow for an additional 24 hr at 20\u00b0C before being collected and washed 4\u20135 times in M9 media. These animals were then placed onto peptone-free plates and starved for 16 hr at 20\u00b0C before being fixed for imaging.\n\n### Statistical analyses\n\nAll statistical analysis was performed using the GraphPad Prism software (Graphpad Prism, RRID:SCR_002798). Statistical tests used are indicated in each figure legend.\n",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "291ab034-7682-4ba2-b94f-15cd3ec20a87",
+      "submission_id": "8d245868-e5cb-4432-9c08-e918b76411c7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21166.017](https://doi.org/10.7554/eLife.21166.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Sexually Dimorphic Expression of daf-7/TGF-\u03b2 in Sensory Neurons Regulates Behavior of C. elegans\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Oliver Hobert, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by a Senior Editor. The following individual involved in review of your submission has agreed to reveal her identity: Arantza Barrios (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers appreciated the overall importance of this work. Dynamic regulation of sensory neuron functions by external conditions and internal state is now appreciated as a major mechanism underlying behavioral plasticity. The ability to monitor the expression of single genes with defined functions in individual identified neurons in C. elegans, together with the ability to precisely manipulate external and internal conditions, has made this organism an excellent choice for exploring sensory neuron contributions to behavioral changes.\n\nIn this paper, the authors have followed up on their previous finding that the spatial expression pattern of the daf-7 TGF-\u03b2 ligand is dynamically regulated by perception of specific bacterial metabolites. You demonstrate that daf-7 expression in the ASJ sensory neurons is also regulated by genetic sex, and that this sexually dimorphic expression contributes to male mate-searching behavior. Further regulation of expression by nutritional state allows reprioritization of feeding over mate-searching, a behavioral change previously reported by others. Overall, the experiments are nicely done, and the observation is novel. However, a number of concerns need to be addressed before this manuscript becomes acceptable for publication in eLife:\n\nMajor comments:\n\n\u2013 One major concern is that this work is not well integrated with previously reported related work (Young-Jai You, Birgitte Olofsson) that implicated DAF-7 in regulating foraging behaviors in response to satiety state. Such integration would provide a more nuanced view that would make this work appropriate for publication in eLife. Several experiments are possible to integrate previous results on the roles of DAF-7 and ODR-10 in exploratory vs feeding behaviors. We suggest some specific ones here although other approaches may also be appropriate: (a) Compare time course of changes in daf-7 vs odr-10 expression upon starvation; (b) test if the changes in daf-7 and odr-10 are interdependent or independent of each other (i.e. analyze reporters in respective mutant backgrounds); (c) test if NPR-5 is involved in regulation of daf-7 expression in ASJ in males as a function of satiety; (d) Do males raised on P. aeruginosa also exhibit increased food leaving?\n\n\u2013 In Figure 5C, starved males are shown to leave a lawn of P. aeruginosa at a higher rate than E. coli, and this is interpreted as mate-searching behavior. However, the leaving assay does not discriminate mate-searching behavior from what could be pathogen avoidance in this context. Either this assay needs to be performed on hermaphrodites to distinguish it as a male-specific behavior, or an additional assay (i.e. retention assay, as in Barrios et al. 2008) performed to distinguish between these two possibilities.\n\n\u2013 Exploratory behaviors rely on the ability of worms to locomote properly. The authors need to show that ASJ-ablated and daf-7 mutant males have no general defects in locomotion before they can conclude that these manipulations specifically affect the decision to explore within or away from the patch of food. One way by which this could be addressed is by measuring and comparing the rate at which wild-type and experimental males reach the scoring distance in a leaving-assay plate when the area is completely covered with food (as in Barrios et al. 2012, Nat. Neurosc. for example).\n",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6a92ce91-bf8c-4cba-8949-8e6cf4dea528",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C1",
+      "claim": "C. elegans males exhibit an altered, male-specific expression pattern of daf-7 in the ASJ sensory neuron pair with the onset of reproductive maturity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that C. elegans males exhibit an altered, male-specific expression pattern of daf-7 in the ASJ sensory neuron pair with the onset of reproductive maturity, which functions to promote male-specific mate-searching behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing pdaf-7::gfp expression and FISH results in males versus hermaphrodites, and developmental time course data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5d141b18-4eae-466d-9a4b-31152867ec5f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C2",
+      "claim": "Male-specific daf-7 expression in ASJ functions to promote male-specific mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that C. elegans males exhibit an altered, male-specific expression pattern of daf-7 in the ASJ sensory neuron pair with the onset of reproductive maturity, which functions to promote male-specific mate-searching behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral assays showing daf-7 mutants and ASJ-ablated males have defects in mate-searching behavior.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8afb647b-9d34-4b00-8603-c72c46f29a55",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C3",
+      "claim": "Regulation of daf-7 expression in the ASJ neuron pair reveals a hierarchy of regulation among multiple inputs: sex, age, nutritional status, and microbial environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular genetic analysis of the switch-like regulation of daf-7 expression in the ASJ neuron pair reveals a hierarchy of regulation among multiple inputs\u2014sex, age, nutritional status, and microbial environment\u2014which function in the modulation of behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing differential effects of these inputs on daf-7 expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "85b398a6-680c-4cb4-aaae-f24b45a2b0d6",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C4",
+      "claim": "Regulation of gene expression in sensory neurons can function in the integration of a wide array of sensory information and facilitate decision-making behaviors in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that regulation of gene expression in sensory neurons can function in the integration of a wide array of sensory information and facilitate decision-making behaviors in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the experimental results showing multiple inputs regulating daf-7 in ASJ neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "e566fb15-1e3a-44fc-ace6-beb0d4934da8",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C5",
+      "claim": "Adult males exhibit daf-7 expression in both the ASI and the ASJ neuron pairs in the absence of P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current study, we observed that adult males exhibit daf-7 expression in both the ASI and the ASJ neuron pairs in the absence of P. aeruginosa (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pdaf-7::gfp reporter data and FISH data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "954da4be-e3b3-474d-a6eb-19b847cbbff6",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C6",
+      "claim": "The expression pattern difference in adult C. elegans can be observed through the use of a pdaf-7::gfp transcriptional reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression pattern difference in adult C. elegans, can be observed both through the use of a pdaf-7::gfp transcriptional reporter (Figure 1A and B) as well as by fluorescence in situ hybridization (FISH) that directly probes for endogenous daf-7 mRNA (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data using the pdaf-7::gfp reporter shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "1425fc5b-8f6c-4fb9-a100-3da51065ba7c",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C7",
+      "claim": "The expression pattern difference in adult C. elegans can be observed by fluorescence in situ hybridization (FISH) that directly probes for endogenous daf-7 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This expression pattern difference in adult C. elegans, can be observed both through the use of a pdaf-7::gfp transcriptional reporter (Figure 1A and B) as well as by fluorescence in situ hybridization (FISH) that directly probes for endogenous daf-7 mRNA (Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH experimental data shown in Figure 1\u2014figure supplement 1A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "7a64b541-6b5a-49b6-bcb8-f6f060d2e15b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C8",
+      "claim": "In populations of early larval animals carrying the pdaf-7::gfp transcriptional reporter, males and hermaphrodites are indistinguishable, with fluorescence observed only in the ASI neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that in populations of early larval animals carrying the pdaf-7::gfp transcriptional reporter, males and hermaphrodites were indistinguishable, with fluorescence observed only in the ASI neurons (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ad420d59-be2b-473c-9ee1-ba6ac75b1322",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C9",
+      "claim": "daf-7 expression remains off in the ASJ of males through the end of the last (L4) larval stage, but is switched on during young adulthood as the animals reach reproductive maturity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that daf-7 expression remains off in the ASJ of males through the end of the last (L4) larval stage, but is switched on during young adulthood as the animals reach reproductive maturity (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by developmental time course data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "539f7b1f-1e40-458c-b7d7-0fc83c24a941",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C10",
+      "claim": "There is a significant drop in the expression of daf-7 in the ASI neurons from L4 to young adulthood in males.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we examined expression of daf-7 in the ASI neuron pair at several matched timepoints during development and observed a significant drop in the expression of daf-7 in the ASI neurons from L4 to young adulthood (Figure 1\u2014figure supplements 1E and F, 52 hr and 64.5 hr timepoints).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 1\u2014figure supplements 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "7a86ed51-2ad8-4c29-ab32-20b14143aa0b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C11",
+      "claim": "At subsequent timepoints during adulthood, expression levels in the ASI neurons remained constant as expression in the ASJ neurons increased.",
+      "claim_type": "EXPLICIT",
+      "source": "At subsequent timepoints during adulthood, however, expression levels in the ASI neurons remained constant as expression in the ASJ neurons increased (Figure 1\u2014figure supplements 1E,3F 64.5 hr and 71.5 hr timepoints).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 1\u2014figure supplements 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "84af96d9-0eb5-478b-8e28-a07999367cbc",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C12",
+      "claim": "In tra-1(e1099) mutant XX males, daf-7 expression can be seen in both the ASI and ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In these mutant XX males, daf-7 expression could be seen in both the ASI and ASJ neurons, suggesting that daf-7 is regulated by the genetic sex determination pathway either directly or indirectly (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5b43d24b-9532-4c0d-94cf-1c4ef314721c",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C13",
+      "claim": "daf-7 is regulated by the genetic sex determination pathway either directly or indirectly.",
+      "claim_type": "EXPLICIT",
+      "source": "In these mutant XX males, daf-7 expression could be seen in both the ASI and ASJ neurons, suggesting that daf-7 is regulated by the genetic sex determination pathway either directly or indirectly (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from tra-1 mutant data showing male-like daf-7 expression in XX animals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ef829eb4-f610-4602-88a4-4dc878e34763",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C14",
+      "claim": "Expression of FEM-3 cDNA under the control of the pan-neural promoter, rab-3, leads to up-regulation of daf-7 expression in the ASJ neurons of adult hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the FEM-3 cDNA under the control of the pan-neural promoter, rab-3, and found that daf-7 expression was up-regulated in the ASJ neurons of adult hermaphrodites, suggesting that a genetically 'male' nervous system is sufficient for daf-7 expression in ASJ (Figure 2A, C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2A, C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "0ac66725-a4da-4b0c-87c8-835dfd771f84",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C15",
+      "claim": "A genetically 'male' nervous system is sufficient for daf-7 expression in ASJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We expressed the FEM-3 cDNA under the control of the pan-neural promoter, rab-3, and found that daf-7 expression was up-regulated in the ASJ neurons of adult hermaphrodites, suggesting that a genetically 'male' nervous system is sufficient for daf-7 expression in ASJ (Figure 2A, C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from masculinization experiments showing daf-7 expression in genetically masculinized hermaphrodites.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ea17b6bd-0d17-4305-938f-a77a4aaf9cde",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C16",
+      "claim": "The overall expression of daf-7 in the ASJ of masculinized hermaphrodites is notably lower than what is observed in wild-type males.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed an increase in daf-7 expression in these genetically masculinized animals, the overall expression of daf-7 in the ASJ of masculinized hermaphrodites was still notably lower than what we observe in wild-type males (e.g. Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of quantitative data between masculinized hermaphrodites and wild-type males.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8ab38893-8d6d-4f7e-998b-7b332aeac1eb",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C17",
+      "claim": "Males of ceh-30(n4289), mab-3(e1240), and pkd-2(sy606);lov-1(sy582) mutant strains retain wild-type expression levels of daf-7 in ASJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Males of all mutant strains retained wild-type expression levels of daf-7 in ASJ, suggesting that the male-specific neural circuitry is not required for daf-7 expression and is unlikely to underlie the lower daf-7 expression we see in genetically masculinized hermaphrodites (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "7ae003cc-4c36-4471-a0d2-89073a6b4238",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C18",
+      "claim": "The male-specific neural circuitry is not required for daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Males of all mutant strains retained wild-type expression levels of daf-7 in ASJ, suggesting that the male-specific neural circuitry is not required for daf-7 expression and is unlikely to underlie the lower daf-7 expression we see in genetically masculinized hermaphrodites (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from mutant data showing normal daf-7 expression despite loss of male-specific neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "77499cb2-3d96-4556-809e-1649d876c1ae",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C19",
+      "claim": "The male-specific neural circuitry is unlikely to underlie the lower daf-7 expression seen in genetically masculinized hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Males of all mutant strains retained wild-type expression levels of daf-7 in ASJ, suggesting that the male-specific neural circuitry is not required for daf-7 expression and is unlikely to underlie the lower daf-7 expression we see in genetically masculinized hermaphrodites (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from mutant data showing normal daf-7 expression despite loss of male-specific neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "1d24cff3-dfb3-4451-b236-d70d816d3817",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C20",
+      "claim": "Overexpression of TRA-2IC under the control of the rab-3 promoter leads to complete loss of daf-7 expression in the ASJ of otherwise male animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of TRA-2IC under the control of the rab-3 promoter led to complete loss of daf-7 expression in the ASJ of otherwise male animals (Figure 2B, D and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2B, D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "043bcf05-26f0-4800-a6d2-0902358f621b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C21",
+      "claim": "A genetically male nervous system is both necessary and sufficient for the sex-specific expression pattern of daf-7.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that a genetically male nervous system is both necessary and sufficient for the sex-specific expression pattern of daf-7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from masculinization and feminization experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "77413a7c-558b-40b3-a9b3-36327ed4c6a0",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C22",
+      "claim": "Masculinization of only the ASJ neuron pair using the trx-1 ASJ-specific promoter results in no daf-7 expression in adult hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the trx-1 ASJ-specific promoter, we masculinized the ASJ neuron pair alone and saw no daf-7 expression in the resulting adult hermaphrodites (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "b08a78a9-b0e1-41ea-81e0-37e66185fe40",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C23",
+      "claim": "No daf-7 expression can be observed when only the ciliated neurons are masculinized.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, no daf-7 expression could be observed when only the ciliated neurons (of which ASJ is a member) were masculinized (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data (not shown in manuscript).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "972c8ab4-5290-49c1-9b93-0d2556e0e01b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C24",
+      "claim": "An additional neuron (or neurons) or other tissues require a male cell identity for daf-7 to be expressed in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest the requirement that an additional neuron (or neurons) or other tissues have a male cell identity for daf-7 to be expressed in the ASJ neurons, although differences in the strength of the heterologous promoters used in the masculinization constructs may also account for these observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cell-specific masculinization experiments showing insufficient daf-7 expression.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "785fd8b9-b477-4fbc-b293-f9678e3cde34",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C25",
+      "claim": "Both ciliated neuron-specific and ASJ-specific feminization in males lead to down-regulation of daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both ciliated neuron-specific and ASJ-specific feminization in males led to down-regulation of daf-7 expression, confirming that a male cell identity in ASJ is necessary, though not sufficient, for proper daf-7 expression (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "57ec3691-1dfa-477d-adc3-b19dfd845c46",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C26",
+      "claim": "A male cell identity in ASJ is necessary, though not sufficient, for proper daf-7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both ciliated neuron-specific and ASJ-specific feminization in males led to down-regulation of daf-7 expression, confirming that a male cell identity in ASJ is necessary, though not sufficient, for proper daf-7 expression (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from feminization experiments showing loss of daf-7 expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5ec06b14-97ac-45b0-a483-413a43a08e16",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C27",
+      "claim": "Mutants in both the DAF-7/TGF-\u03b2 ligand and its Type I receptor, DAF-1, show defects in the mate-searching assay.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that mutants in both the DAF-7/TGF-\u03b2 ligand and its Type I receptor, DAF-1, showed defects in the mate-searching assay (Figure 3A and B, and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3A and B, and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "6c2d2b47-2898-4e8e-a543-105759741582",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C28",
+      "claim": "The behavioral defect in the daf-7 mutant can be fully suppressed by mutation of the downstream antagonistic co-SMAD, DAF-3.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavioral defect in the daf-7 mutant can be fully suppressed by mutation of the downstream antagonistic co-SMAD, DAF-3, suggesting that DAF-7 functions through its canonical TGF-\u03b2 signaling pathway to regulate mate-searching behavior (Figure 3B, and Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3B and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8511d38d-6755-47dc-81e7-59242249491b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C29",
+      "claim": "DAF-7 functions through its canonical TGF-\u03b2 signaling pathway to regulate mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "This behavioral defect in the daf-7 mutant can be fully suppressed by mutation of the downstream antagonistic co-SMAD, DAF-3, suggesting that DAF-7 functions through its canonical TGF-\u03b2 signaling pathway to regulate mate-searching behavior (Figure 3B, and Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from genetic suppression data showing daf-3 mutation rescues daf-7 mutant phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "f6342d87-e9bd-4094-bf30-1182f9522fe4",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C30",
+      "claim": "ASJ-ablated animals are defective in mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the ASJ-ablated animals were defective in mate-searching behavior, establishing a role for the ASJ neuron pair in promoting this behavior (Figure 3C and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3C and Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "c9370be1-b0e8-4890-a2b3-725a63affca3",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C31",
+      "claim": "The ASJ neuron pair has a role in promoting mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the ASJ-ablated animals were defective in mate-searching behavior, establishing a role for the ASJ neuron pair in promoting this behavior (Figure 3C and Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from ASJ ablation experiments showing defects in mate-searching.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "a5c8ded8-e651-4292-b22e-2c30f6218608",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C32",
+      "claim": "The defects in daf-7 mutant and ASJ-ablated male behavior are not accounted for by global defects in locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the defects that we see in daf-7 mutant and ASJ-ablated male behavior are not accounted for by global defects in locomotion. When mutant animals are tested on leaving assay plates on which the bacterial food has been fully spread, these males reach the scoring distance at equivalent rates to WT controls (Figure 3\u2014figure supplement 2; Barrios et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by locomotion assay data shown in Figure 3\u2014figure supplement 2 and cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "4a31da21-723f-424d-8cd5-dfdd9adff8bb",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C33",
+      "claim": "The reduced leaving behavior observed in daf-7 mutant and ASJ-ablated animals is specific to the decision to leave the food source in search of a mate.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the reduced leaving behavior we observe in these animals isspecific to the decision to leave the food source in search of a mate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from locomotion control experiments showing normal movement on full lawns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "008b2950-c3f7-424a-baf9-6d6881dbcfc2",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C34",
+      "claim": "Transgenic rescue of daf-7 from the endogenous promoter as well as from ASI- and ASJ-specific promoters is sufficient to restore mate-searching behavior in the daf-7(ok3125) mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we saw that transgenic rescue from the endogenous promoter as well as from ASI- and ASJ-specific promoters were sufficient to restore mate-searching behavior in the daf-7(ok3125) mutant background (Figure 3D and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figure 3D and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "b7cba62d-b9ac-4d4b-b7ce-e17592701476",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C35",
+      "claim": "The dynamic expression of daf-7 in the ASJ neurons of adult males regulates mate-searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data imply that the dynamic expression of daf-7 in the ASJ neurons of adult males regulates mate-searching behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple lines of evidence including expression patterns, mutant phenotypes, and rescue experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "62ea558a-e9fc-4cf3-a0a1-7fa27922e238",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C36",
+      "claim": "Males subjected to starvation beginning early in the L4 larval stage fail to express daf-7 in the ASJ neurons as adults.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that males subjected to starvation beginning early in the L4 larval stage failed to express daf-7 in the ASJ neurons as adults (Figure 4A, conditions i and ii, and Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "c98add5b-fea4-4670-bc11-340ff560aff0",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C37",
+      "claim": "The lack of daf-7 in the ASJ neuron pair during starvation is apparent both by GFP visualization as well as by FISH, with daf-7 mRNA entirely absent from the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This lack of daf-7 in the ASJ neuron pair was apparent both by GFP visualization as well as by FISH, with daf-7 mRNA entirely absent from the ASJ neurons (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8024a78e-5e75-40eb-920e-33a311aaa948",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C38",
+      "claim": "daf-7 mRNA is still apparent in the ASI, OLQ, and ADE neurons of starved animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that daf-7 mRNA was still apparent in the ASI, OLQ, and ADE neurons of these starved animals, suggesting that the loss of daf-7 expression in the ASJ neurons is specific and not representative of a global down-regulation of transcription in these animals (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "989e176d-b79b-4caa-b8aa-bccd23dbfcdc",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C39",
+      "claim": "The loss of daf-7 expression in the ASJ neurons during starvation is specific and not representative of a global down-regulation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that daf-7 mRNA was still apparent in the ASI, OLQ, and ADE neurons of these starved animals, suggesting that the loss of daf-7 expression in the ASJ neurons is specific and not representative of a global down-regulation of transcription in these animals (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on inference from FISH data showing daf-7 expression in other neurons during starvation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "a11a86af-6eb9-4f44-98aa-468e001d4929",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C40",
+      "claim": "In animals that experienced starvation during the L4-to-adulthood period before being returned to an E. coli food source as adults, daf-7 expression can be detected both by the GFP reporter as well as by FISH.",
+      "claim_type": "EXPLICIT",
+      "source": "We first looked at daf-7 expression in animals that had experienced starvation during the L4-to-adulthood period before being returned to an E. coli food source as adults. In these animals, daf-7 expression could be detected both by the GFP reporter as well as by FISH (Figure 4A, condition iii, and 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ea402b06-0ff5-4e3f-a79f-2e620e392585",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C41",
+      "claim": "When males are allowed to develop into adulthood unperturbed and then subjected to a period of food deprivation, a complete loss of daf-7 mRNA in the ASJ neurons is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When males were allowed to develop into adulthood unperturbed and then subjected to a period of food deprivation, we observed a complete loss of daf-7 mRNA in the ASJ neurons (Figure 4A, condition iv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by FISH data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "bafd9365-6247-41fd-ac2e-51371df4f73a",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C42",
+      "claim": "daf-7 expression in the ASJ neurons is subject to dynamic regulation by periods of starvation and re-feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Together this data demonstrates that daf-7 expression in the ASJ neurons is subject to dynamic regulation by periods of starvation and re-feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple starvation and re-feeding experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "42c19b57-3f03-42e1-b48d-c350ebc27f5b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C43",
+      "claim": "daf-7 expression in the ASJ neuron pair is not significantly increased compared to starved controls until 9 hr after the re-introduction of an E. coli food source.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that daf-7 expression in the ASJ neuron pair is not significantly increased compared to starved controls until 9 hr after the re-introduction of an E. coli food source (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "becc46a7-3ea1-41bc-9713-efbc6b9be0d0",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C44",
+      "claim": "The extended period of time required to restore daf-7 expression in the ASJ neuron pair suggests that internal nutritional state, not the chemosensation of bacterial food, exerts control over daf-7 transcription in the ASJ neuron pair.",
+      "claim_type": "EXPLICIT",
+      "source": "The extended period of time required to restore daf-7 expression in the ASJ neuron pair suggests that internal nutritional state, not the chemosensation of bacterial food, exerts control over daf-7 transcription in the ASJ neuron pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the slow kinetics of daf-7 re-expression after re-feeding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "c9db3b1a-b901-4fc2-ae03-bb0dea63ef5c",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C45",
+      "claim": "The onset of daf-7 expression in the ASJ neurons of males following the re-introduction of food is consistent with the previously noted kinetics of resumption of mate-searching behavior after males have been starved.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we observed that the onset of daf-7 expression in the ASJ neurons of males following the re-introduction of food are consistent with the previously noted kinetics of resumption of mate-searching behavior after males have been starved (Figure 4C; Lipton et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison with behavioral data shown in Figure 4C and cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "1485983f-a07b-4bf6-b39d-df0d473e2ca4",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C46",
+      "claim": "When transferred to P. aeruginosa, males carrying the pdaf-7::gfp transcriptional reporter exhibit an increase in daf-7 expression in the ASJ neurons compared to E. coli-fed controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that, when transferred to P. aeruginosa, males carrying the pdaf-7::gfp transcriptional reporter exhibited an increase in daf-7 expression in the ASJ neurons compared to E. coli-fed controls (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9575b627-2323-4c2a-9792-a79382c9782d",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C47",
+      "claim": "The ASJ neuron pair of males retain the ability to respond to P. aeruginosa that is observed in hermaphrodites.",
+      "claim_type": "EXPLICIT",
+      "source": "The additive nature of DAF-7 levels in males suggests that the ASJ neuron pair of males retain the ability to respond to P. aeruginosa that we observe in hermaphrodites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the additive increase in daf-7 expression in males exposed to P. aeruginosa.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "36cc6a88-4679-4035-9690-b0a5f83c60a0",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C48",
+      "claim": "A rapid up-regulation of daf-7 expression in the ASJ neurons of starved males returned to P. aeruginosa as a food source is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Looking at animals carrying the pdaf-7::gfp reporter during post-starvation re-feeding, we observed a rapid up-regulation of daf-7 expression in the ASJ neurons of starved males returned to P. aeruginosa as a food source (Figure 5A and B, and Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A and B, and Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "aaadccb6-5ddb-4b9b-91e9-8f7f2cea129d",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C49",
+      "claim": "The increase in daf-7 expression in the ASJ neuron pair can be seen as early as 2 hr after first exposure to the pathogenic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "This increase in daf-7 expression in the ASJ neuron pair could be seen as early as 2 hr after first exposure to the pathogenic bacteria (Figure 5\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time course data shown in Figure 5\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5d959273-46b2-4c3e-a1fb-5f35354a04f3",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C50",
+      "claim": "Starved males that are returned to the non-pathogenic E. coli show little to no daf-7 expression in the ASJ neurons until much later time points.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, starved males that were returned to the non-pathogenic E. coli showed little to no daf-7 expression in the ASJ neurons until much later time points (Figure 5A,B and 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 5A, 5B and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8a7ff447-b899-4f3e-89df-1874fcafc800",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C51",
+      "claim": "The kinetics of the increase in fluorescence of the pdaf-7::gfp reporter in response to P. aeruginosa secondary metabolites lags behind the immediate response observed by FISH and is consistent with what was observed previously for hermaphrodite animals.",
+      "claim_type": "EXPLICIT",
+      "source": "The kinetics of the increase in fluorescence of the pdaf-7::gfp reporter in response to P. aeruginosa secondary metabolites, which lags behind the immediate response observed by FISH is consistent with what we observed previously for hermaphrodite animals (Meisel et al., 2014), and notably faster than the slower increase in pdaf-7::gfp reporter fluorescence in response to repletion of the non-pathogenic E. coli bacterial food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison with previously published data and current experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9cf6878a-499f-4d6d-8c76-6baba8f0f541",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C52",
+      "claim": "Starved males who are returned to a lawn of P. aeruginosa will readily leave the bacterial lawn at a rate similar to non-starved animals on the normal E. coli food source.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, whereas starved males will remain on the E. coli lawn for several hours, starved males who are instead returned to a lawn of P. aeruginosa will readily leave the bacterial lawn at a rate similar to non-starved animals on the normal E. coli food source (Figures 4C and 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral assay data shown in Figures 4C and 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5a1d6b50-8845-4738-ba93-8c349df9ac77",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C53",
+      "claim": "Both fed and starved hermaphrodites will readily leave a lawn of P. aeruginosa.",
+      "claim_type": "EXPLICIT",
+      "source": "This lawn-leaving behavior is not male-specific, as both fed and starved hermaphrodites will also readily leave a lawn of P. aeruginosa and starved hermaphrodites are also capable of responding to P. aeruginosa through an upregulation of daf-7 in the ASJ neurons (Figure 5\u2014figure supplement 1A\u20131D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by behavioral and expression data shown in Figure 5\u2014figure supplement 1A\u20131D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "1414e4bb-8645-4387-9039-664c08c7af41",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C54",
+      "claim": "Starved hermaphrodites are capable of responding to P. aeruginosa through an upregulation of daf-7 in the ASJ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This lawn-leaving behavior is not male-specific, as both fed and starved hermaphrodites will also readily leave a lawn of P. aeruginosa and starved hermaphrodites are also capable of responding to P. aeruginosa through an upregulation of daf-7 in the ASJ neurons (Figure 5\u2014figure supplement 1A\u20131D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression data shown in Figure 5\u2014figure supplement 1A\u20131D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "dfddd048-e231-4727-b1a1-5ae2eccefa1f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C55",
+      "claim": "daf-7 expression in the ASJ neurons is one way through which animals are able to interpret internal and external cues and prioritize their behaviors accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that daf-7 expression in the ASJ neurons is one way through which animals are both able to interpret internal and external cues and prioritize their behaviors accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple experiments showing daf-7 regulation by different inputs and effects on behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "53f95194-cef1-42a9-8c4d-e183562a1256",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C56",
+      "claim": "Modulation of daf-7 expression provides an example of how a neuroendocrine signaling pathway may be coopted to guide behavioral decisions in entirely different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that modulation of daf-7 expression provides a striking example of how a neuroendocrine signaling pathway may be coopted to guide behavioral decisions in entirely different contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the dual role of daf-7 in pathogen avoidance and mate-searching.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "e1399336-c1bc-4d5b-9f30-9637bc3aae13",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C57",
+      "claim": "The transcriptional regulation of daf-7 in the ASJ neurons functions as an ON/OFF switch, where each input holds the switch in one of two states.",
+      "claim_type": "EXPLICIT",
+      "source": "The work presented here suggests that the transcriptional regulation of daf-7 in the ASJ neurons functions as an ON/OFF switch, where each input holds the switch\u2014and thus, daf-7 expression\u2014in one of two states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the binary nature of daf-7 expression patterns observed under different conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "90634ded-c782-4984-8f90-9c58c3686aea",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C58",
+      "claim": "The various regulatory inputs into the daf-7 transcriptional switch exert differential control, with environmental cues being prioritized over all others.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the various regulatory inputs into this switch exert differential control, with environmental cues being prioritized over all others.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the hierarchy of responses observed in starvation and pathogen exposure experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "2d5d70a4-620a-4568-991d-b1b78fde196c",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C59",
+      "claim": "The differential control of the transcriptional switch allows for re-adjustments of behavioral priorities in the worm based on its current and past experience.",
+      "claim_type": "EXPLICIT",
+      "source": "This differential control of the transcriptional switch, in turn allows for re-adjustments of behavioral priorities in the worm based on its current and past experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the observed behavioral changes in response to different environmental and internal state conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "a39dc484-d63b-436d-a749-8b91ec9b7a87",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C60",
+      "claim": "Expression of the chemoreceptor, ODR-10, in the sex-shared sensory AWA neurons has been shown to be dependent on both internal and external cues to regulate food-related decision making in male C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the chemoreceptor, ODR-10, in the sex-shared sensory AWA neurons has also been shown to be dependent on both internal and external cues to regulate food-related decision making in male C. elegans (Ryan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ryan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9c3badd2-51d3-49b2-8b32-8d95e81dae1b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C61",
+      "claim": "DAF-7/TGF-\u03b2 has previously been found to be involved in the regulation of other satiety-regulated behaviors such as quiescence and foraging.",
+      "claim_type": "EXPLICIT",
+      "source": "DAF-7/TGF-\u03b2 has previously been found to be involved in the regulation of other satiety-regulated behaviors such as quiescence and foraging (Gallagher et al., 2013; Milward et al., 2011; You et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gallagher et al., 2013; Milward et al., 2011; You et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "284eb49f-a4e0-427d-b8f5-a1f437a45b03",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C62",
+      "claim": "daf-7 mutants show marked defects in the ability to respond to fasting through an increase in quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "daf-7 mutants show marked defects in the ability to respond to fasting through an increase in quiescence, suggesting that DAF-7 may serve as a critical signal of food availability in the worm (You et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to You et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "0d135588-7fd0-4a74-aa23-cc8b9a7a46d1",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C63",
+      "claim": "DAF-7 may serve as a critical signal of food availability in the worm.",
+      "claim_type": "EXPLICIT",
+      "source": "daf-7 mutants show marked defects in the ability to respond to fasting through an increase in quiescence, suggesting that DAF-7 may serve as a critical signal of food availability in the worm (You et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from cited work showing daf-7 mutant defects in fasting response.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "45b2b8de-2530-464f-87c1-ee4aacc47daf",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C64",
+      "claim": "DAF-7 signaling has been implicated in promoting food-leaving (or foraging) in the context of a rapidly depleting food source.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DAF-7 signaling has also been implicated in promoting food-leaving (or foraging) in the context of a rapidly depleting food source, further underscoring the importance of this pathway for communicating nutritional availability (Milward et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Milward et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "7ce07953-80e6-4c07-80b4-7d2f9be65fda",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C65",
+      "claim": "The daf-7 pathway may act as a more global food signal that is critical for allowing the animal to sense food and satiety and modulate its behaviors accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together with our data, the important role of daf-7 in these different behavioral paradigms suggests that the daf-7 pathway may act as a more global food signal that is critical for allowing the animal to sense food and satiety and modulate its behaviors accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from multiple lines of evidence about daf-7's role in various food-related behaviors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "f905ea1d-d291-4e15-9056-27a37872f1f4",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C66",
+      "claim": "Integration of internal and external sensory information can occur at the level of the sensory neuron itself to regulate behavioral prioritization.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results support a model where integration of internal and external sensory information can occur at the level of the sensory neuron itself to regulate behavioral prioritization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from the study's findings on daf-7 regulation in ASJ neurons.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "4902bab1-9764-43ba-a84b-2f0b5527c1ef",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C67",
+      "claim": "The data on the role of the ASJ sensory neurons in male mate-searching behavior are consistent with emerging evidence from studies in several species suggesting that the regulatory control of sensory neurons contributes to information processing and decision making behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data on the role of the ASJ sensory neurons in male mate-searching behavior are consistent with emerging evidence from studies in several species to suggest that the regulatory control of sensory neurons contributes to information processing and decision making behavior (Dey et al., 2015; Lebreton et al., 2015; Peckol et al., 2001; Ryan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dey et al., 2015; Lebreton et al., 2015; Peckol et al., 2001; Ryan et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "56242462-8f30-408b-a8c2-c40cbe2248f4",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C68",
+      "claim": "The expression pattern of daf-7 was originally identified as being restricted to a single bilaterally symmetric pair of neurons in the head of the worm, the ASI chemosensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression pattern of daf-7 was originally identified as being restricted to a single bilaterally symmetric pair of neurons in the head of the worm, the ASI chemosensory neurons, but it is also expressed in the ADE and OLQ neurons under normal laboratory growth conditions (Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "3a8475a6-b450-4672-a261-68f4ce699e81",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C69",
+      "claim": "daf-7 is also expressed in the ADE and OLQ neurons under normal laboratory growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression pattern of daf-7 was originally identified as being restricted to a single bilaterally symmetric pair of neurons in the head of the worm, the ASI chemosensory neurons, but it is also expressed in the ADE and OLQ neurons under normal laboratory growth conditions (Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ac5ea41f-7a9d-46bb-9a13-b7315ba50a79",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C70",
+      "claim": "Within minutes of being exposed to P. aeruginosa, daf-7 expression is induced in the ASJ neurons in hermaphrodites, which in turn promotes behavioral avoidance of the pathogenic bacterial lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "Within minutes of being exposed to P. aeruginosa, daf-7 expression is induced in an additional pair of chemosensory neurons, the ASJ neurons, which in turn promotes behavioral avoidance of the pathogenic bacterial lawn (Meisel et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Meisel et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "70fcdba4-fe66-4b68-b7b2-b8b67513f440",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C71",
+      "claim": "C. elegans exist as one of two sexes: hermaphrodite or male.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans exist as one of two sexes: hermaphrodite or male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "ffaa0376-0bc5-4e1d-ae00-b03362a2199f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C72",
+      "claim": "Hermaphrodites produce a limited amount of sperm during larval development making them capable of self-fertilization in addition to cross-fertilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Hermaphrodites produce a limited amount of sperm during larval development making them capable of self-fertilization in addition to cross-fertilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about C. elegans hermaphrodite reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "5f700348-da9d-48af-9377-1857893f49f6",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C73",
+      "claim": "Males are only cross-fertile and must find mating partners for reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, males are only cross-fertile and must find mating partners for reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about C. elegans male reproduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9b13f700-faa7-46f3-b4e7-70fa356d5e42",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C74",
+      "claim": "The male displays a large behavioral repertoire primarily aimed at facilitating mate finding and successful mating encounters.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the male displays a large behavioral repertoire primarily aimed at facilitating mate finding and successful mating encounters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established scientific knowledge about C. elegans male behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8a5bc2e9-7b13-4a51-bc96-16de8a03ca7f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C75",
+      "claim": "Male behaviors include complex mating rituals.",
+      "claim_type": "EXPLICIT",
+      "source": "These behaviors include complex mating rituals (Liu and Sternberg, 1995), differential sensitivity to hermaphrodite pheromone (Srinivasan et al., 2008), and a mate-searching behavior in adult male animals that is driven by the prioritization of mating over feeding (Lipton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Liu and Sternberg, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "eae468e3-4f49-4f34-a5d1-abffc0854e2f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C76",
+      "claim": "Male behaviors include differential sensitivity to hermaphrodite pheromone.",
+      "claim_type": "EXPLICIT",
+      "source": "These behaviors include complex mating rituals (Liu and Sternberg, 1995), differential sensitivity to hermaphrodite pheromone (Srinivasan et al., 2008), and a mate-searching behavior in adult male animals that is driven by the prioritization of mating over feeding (Lipton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Srinivasan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "8f89ad4b-f83b-413e-821e-abfe768f0465",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C77",
+      "claim": "Male behaviors include a mate-searching behavior in adult male animals that is driven by the prioritization of mating over feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "These behaviors include complex mating rituals (Liu and Sternberg, 1995), differential sensitivity to hermaphrodite pheromone (Srinivasan et al., 2008), and a mate-searching behavior in adult male animals that is driven by the prioritization of mating over feeding (Lipton et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lipton et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "0b722ace-1fa6-4a62-8bba-07e908b8dd45",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C78",
+      "claim": "Mate-searching behavior of C. elegans is subject to regulation by multiple features of internal state\u2014sex, age, and nutritional status\u2014as well as by external sensory experiences such as the presence of food or hermaphrodites in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mate-searching behavior of C. elegans has thus emerged as an interesting case study of decision making in a simple animal, which is subject to regulation by multiple features of internal state\u2014sex, age, and nutritional status\u2014as well as by external sensory experiences such as the presence of food or hermaphrodites in the environment (Barrios et al., 2008; Lipton et al., 2004; Ryan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barrios et al., 2008; Lipton et al., 2004; Ryan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "a8cf7492-6f0f-4aad-a3a1-728b53e991df",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C79",
+      "claim": "The DAF-7/TGF-\u03b2 signaling pathway plays a pivotal role in the regulation of diverse aspects of C. elegans physiology and behavior including the dauer developmental decision, reproductive egg laying, feeding and foraging, fat storage, satiety quiescence, longevity, aggregation, aerotaxis and avoidance of pathogenic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on the DAF-7/TGF-\u03b2 signaling pathway, which plays a pivotal role in the regulation of diverse aspects of C. elegans physiology and behavior including the dauer developmental decision, reproductive egg laying, feeding and foraging, fat storage, satiety quiescence, longevity, aggregation, aerotaxis and avoidance of pathogenic bacteria (Chang et al., 2006; Gallagher et al., 2013; Greer et al., 2008; Meisel et al., 2014; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chang et al., 2006; Gallagher et al., 2013; Greer et al., 2008; Meisel et al., 2014; Milward et al., 2011; Ren et al., 1996; Shaw et al., 2007; White and Jorgensen, 2012; You et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "f1fef244-ad9e-483e-81e1-cfb81e3a81dd",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C80",
+      "claim": "Mate-searching behavior has been demonstrated to be dependent on the feeding state of the animal\u2014starved male animals will re-prioritize feeding over mate searching for a limited period of time until the animal has had sufficient opportunity to re-feed.",
+      "claim_type": "EXPLICIT",
+      "source": "Mate-searching behavior has been demonstrated to be dependent on the feeding state of the animal\u2014starved male animals will re-prioritize feeding over mate searching for a limited period of time until the animal has had sufficient opportunity to re-feed (Figure 4C; Lipton et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Lipton et al., 2004 and data shown in Figure 4C.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "662700c4-74d9-4d58-8e77-a48849da1ec0",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C81",
+      "claim": "TRA-1 activity functions to promote hermaphrodite cell fates and inhibit male development.",
+      "claim_type": "EXPLICIT",
+      "source": "The C. elegans sex determination pathway terminates on the master regulator GLI-family transcription factor, TRA-1 (Zarkower and Hodgkin, 1992; Zarkower, 2006). TRA-1 activity functions to promote hermaphrodite cell fates and inhibit male development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zarkower and Hodgkin, 1992; Zarkower, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "4e8842cf-a1ed-4bc9-9ee9-a43ed4fdd738",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C82",
+      "claim": "tra-1(e1099) mutants are karyotypically XX, but develop as fertile pseudomales due to the lack of active TRA-1.",
+      "claim_type": "EXPLICIT",
+      "source": "We first looked at tra-1(e1099) mutants which are karyotypically XX, but develop as fertile pseudomales due to the lack of active TRA-1 (Hodgkin and Brenner, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hodgkin and Brenner, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "90713dca-1ce6-4386-9ee9-db25f2c0df4f",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C83",
+      "claim": "TRA-1 is negatively regulated by the FEM proteins\u2014FEM-1, FEM-2, and FEM-3.",
+      "claim_type": "EXPLICIT",
+      "source": "TRA-1 is negatively regulated by the FEM proteins\u2014FEM-1, FEM-2, and FEM-3\u2014and it has been demonstrated by many groups that overexpression of FEM-3 cDNA is sufficient to lead to 'masculinization' in otherwise hermaphrodite animals (Mehra et al., 1999; Oren-Suissa et al., 2016; Pereira et al., 2015; Sammut et al., 2015; White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mehra et al., 1999; Oren-Suissa et al., 2016; Pereira et al., 2015; Sammut et al., 2015; White et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "700b7fe8-f8b6-4dac-bd46-cccdb836a672",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C84",
+      "claim": "Overexpression of FEM-3 cDNA is sufficient to lead to 'masculinization' in otherwise hermaphrodite animals.",
+      "claim_type": "EXPLICIT",
+      "source": "TRA-1 is negatively regulated by the FEM proteins\u2014FEM-1, FEM-2, and FEM-3\u2014and it has been demonstrated by many groups that overexpression of FEM-3 cDNA is sufficient to lead to 'masculinization' in otherwise hermaphrodite animals (Mehra et al., 1999; Oren-Suissa et al., 2016; Pereira et al., 2015; Sammut et al., 2015; White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mehra et al., 1999; Oren-Suissa et al., 2016; Pereira et al., 2015; Sammut et al., 2015; White et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "dd7e8c72-bd28-4feb-a295-d8b5c3b9cece",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C85",
+      "claim": "Genetic masculinization is effective in sexualizing neurons of the sex-shared nervous system, but fails to reliably retain the male-specific CEM neurons and produces hermaphrodites which also lack other male-specific neurons found in the tail.",
+      "claim_type": "EXPLICIT",
+      "source": "While genetic masculinization is effective in sexualizing neurons of the sex-shared nervous system, this technique fails to reliably retain the male-specific CEM neurons and produces hermaphrodites which also lack other male-specific neurons found in the tail (White et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to White et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9bd98887-67fc-4f8c-98cc-36a450e11240",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C86",
+      "claim": "ceh-30(n4289) males lack the male-specific CEM neurons in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "While ceh-30(n4289) males lack the male-specific CEM neurons in the head (Schwartz and Horvitz, 2007), mab-3(e1240) mutants display marked defects in male-tail formation including ray differentiation as well as in male specific circuitry in the head of the animal (Yi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schwartz and Horvitz, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "c26c69ac-49c5-4fd4-9df7-4819792f7d58",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C87",
+      "claim": "mab-3(e1240) mutants display marked defects in male-tail formation including ray differentiation as well as in male specific circuitry in the head of the animal.",
+      "claim_type": "EXPLICIT",
+      "source": "While ceh-30(n4289) males lack the male-specific CEM neurons in the head (Schwartz and Horvitz, 2007), mab-3(e1240) mutants display marked defects in male-tail formation including ray differentiation as well as in male specific circuitry in the head of the animal (Yi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yi et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "d7f14e34-f22e-4711-9314-d3fa0fd40314",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C88",
+      "claim": "PKD-2 and LOV-1 constitute a TRP channel necessary for the function of the B-type ray neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, PKD-2 and LOV-1 constitute a TRP channel necessary for the function of the B-type ray neurons\u2014another set of male-specific neurons in the tail of the animal (Barr et al., 2001; Barr and Sternberg, 1999; Barrios et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barr et al., 2001; Barr and Sternberg, 1999; Barrios et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "637f9227-5d71-49b7-924f-14c1e4cda39e",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "claim_id": "C89",
+      "claim": "Genetic 'feminization' of XO male animals can be achieved via the overexpression of the intracellular domain of the TRA-2 protein, which negatively interacts with FEM-3 to prevent TRA-1 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementary to masculinization, genetic 'feminization' of XO male animals can be achieved via the overexpression of the intracellular domain of the TRA-2 protein, which negatively interacts with FEM-3 to prevent TRA-1 degradation (Mehra et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mehra et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "86d8b276-95ee-46a8-88dd-99faeb1254e1",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Male C. elegans exhibit male-specific daf-7 expression in ASJ neurons that is developmentally regulated, appearing with the onset of reproductive maturity. This expression pattern is absent in hermaphrodites and can be detected by both pdaf-7::gfp reporter and FISH for endogenous mRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C11 provide converging evidence from multiple methods (GFP reporter and FISH) and developmental time courses showing male-specific daf-7 expression in ASJ neurons beginning at reproductive maturity. The data include appropriate controls (hermaphrodites, larval stages) and quantification (Figures 1A-C, Figure 1\u2014figure supplements 1A-F).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "a3aeb37c-bba5-474b-946a-705dd7c37407",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The genetic sex determination pathway regulates daf-7 expression in ASJ neurons. A genetically male nervous system is both necessary and sufficient for male-specific daf-7 expression, though male cell identity in ASJ alone is necessary but not sufficient, suggesting additional neurons or tissues must also have male identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C26 present complementary masculinization and feminization experiments using tra-1 mutants and tissue-specific transgenes. The data show that pan-neural masculinization induces daf-7 in hermaphrodites (C14-C15) while pan-neural feminization eliminates it in males (C20-C21), and that ASJ-specific manipulations are insufficient (C22-C26). However, C24 acknowledges alternative explanations (promoter strength differences) remain possible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "367950e9-6d28-4aa1-9b49-85758de19126",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "daf-7 expression in ASJ neurons regulates male mate-searching behavior through the canonical TGF-\u03b2 signaling pathway. Both daf-7 mutants and ASJ-ablated males show defects in mate-searching that are specific to this behavior and not due to general locomotion defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C35 provide multiple lines of evidence: mutant phenotypes (daf-7, daf-1), genetic suppression (daf-3 rescues daf-7), cell ablation (ASJ), locomotion controls, and cell-specific rescue experiments. The genetic epistasis analysis (C28-C29) and specificity controls (C32-C33) strengthen the conclusion that daf-7 in ASJ specifically regulates mate-searching through canonical signaling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nutritional state dynamically regulates daf-7 expression in male ASJ neurons. Starvation eliminates daf-7 expression specifically in ASJ (not other neurons), and re-feeding restores expression with slow kinetics (9 hours), suggesting regulation by internal nutritional state rather than chemosensation of food.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 present systematic starvation/re-feeding experiments using both GFP reporter and FISH. The specificity of ASJ regulation (C38-C39), reversibility (C40-C42), slow kinetics (C43-C44), and correlation with behavioral recovery (C45) provide strong support. The inference about internal state vs. chemosensation (C44) is reasonable given the 9-hour delay but could benefit from additional mechanistic experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Pathogenic bacteria (P. aeruginosa) override nutritional state regulation of daf-7 in ASJ neurons. Starved males exposed to P. aeruginosa rapidly upregulate daf-7 (within 2 hours) and resume leaving behavior, demonstrating a hierarchy where environmental danger signals take precedence over nutritional state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C54 demonstrate that P. aeruginosa exposure induces rapid daf-7 expression even in starved animals (C48-C49), contrasting with the slow response to E. coli (C50). The behavioral correlation (C52) and conservation in hermaphrodites (C53-C54) strengthen the conclusion. The hierarchical regulation is well-supported by the differential kinetics and behavioral outcomes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "6ac371b6-bb98-4a9d-870c-28745eef52b8",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "daf-7 regulation in ASJ neurons reveals a hierarchical integration of multiple inputs (sex, age, nutritional status, microbial environment) that functions as an ON/OFF transcriptional switch to modulate exploratory behavior, with environmental cues prioritized over internal state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C55-C59 synthesize the findings into a hierarchical model. The hierarchy is supported by the differential responses to P. aeruginosa vs. E. coli in starved animals (previous result group). The ON/OFF switch model (C57) is consistent with the binary expression patterns observed. This represents a well-supported integrative conclusion from the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "f409c118-7fb1-47f8-8767-de984bb3e080",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Regulation of gene expression in sensory neurons can integrate diverse sensory information and facilitate decision-making behaviors, consistent with emerging evidence across species that sensory neuron regulation contributes to information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C66-C67 present a broader conceptual conclusion supported by the study's findings and consistent with cited literature. While this is an inference rather than direct experimental demonstration, it is well-justified by the data showing integration of multiple inputs at the level of ASJ sensory neurons to regulate behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "9da525f1-5297-4f04-be46-caff66b40c99",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DAF-7 may function as a global food/satiety signal in C. elegans, as it regulates multiple food-related behaviors including quiescence, foraging, and mate-searching, suggesting a conserved role in communicating nutritional availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 synthesize prior literature (C60-C64) with current findings to propose a broader role for daf-7. The inference (C63, C65) is reasonable given the convergent evidence from multiple behavioral contexts, though it relies heavily on cited work rather than new experiments in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "d7727c0c-3a6f-4358-b387-f40c13299c93",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work established that daf-7 is normally expressed in ASI, ADE, and OLQ neurons, and that P. aeruginosa exposure induces daf-7 in ASJ neurons of hermaphrodites to promote pathogen avoidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 accurately cite prior literature (Meisel et al., 2014; Ren et al., 1996; Schackwitz et al., 1996) establishing baseline daf-7 expression patterns and the pathogen response in hermaphrodites. These provide essential context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "add8d403-06c0-458e-9794-f6e3cc7a367b",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on C. elegans biology: males and hermaphrodites have different reproductive strategies, males display mate-searching behavior regulated by internal state and environment, and the DAF-7/TGF-\u03b2 pathway regulates diverse physiological and behavioral processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C80 provide established background knowledge about C. elegans biology, properly cited from the literature. These contextual claims are accurate and necessary for understanding the study but do not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    },
+    {
+      "id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98",
+      "content_id": "a03fdb27-35c1-4ee7-96ee-798661814500",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on C. elegans sex determination: TRA-1 is the master regulator of sex determination, regulated by FEM proteins, and genetic manipulation tools (masculinization/feminization) are available but have known limitations regarding male-specific neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C89 accurately describe the C. elegans sex determination pathway and genetic tools, properly citing the relevant literature. The acknowledgment of limitations (C85) is important for interpreting the masculinization experiments. These are established facts providing necessary methodological context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:38:52.186568Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a92ce91-bf8c-4cba-8949-8e6cf4dea528",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "e566fb15-1e3a-44fc-ace6-beb0d4934da8",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "954da4be-e3b3-474d-a6eb-19b847cbbff6",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "1425fc5b-8f6c-4fb9-a100-3da51065ba7c",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "7a64b541-6b5a-49b6-bcb8-f6f060d2e15b",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "ad420d59-be2b-473c-9ee1-ba6ac75b1322",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "539f7b1f-1e40-458c-b7d7-0fc83c24a941",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "7a86ed51-2ad8-4c29-ab32-20b14143aa0b",
+      "result_id": "86d8b276-95ee-46a8-88dd-99faeb1254e1"
+    },
+    {
+      "claim_id": "84af96d9-0eb5-478b-8e28-a07999367cbc",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "5b43d24b-9532-4c0d-94cf-1c4ef314721c",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "ef829eb4-f610-4602-88a4-4dc878e34763",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "0ac66725-a4da-4b0c-87c8-835dfd771f84",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "ea17b6bd-0d17-4305-938f-a77a4aaf9cde",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "8ab38893-8d6d-4f7e-998b-7b332aeac1eb",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "7ae003cc-4c36-4471-a0d2-89073a6b4238",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "77499cb2-3d96-4556-809e-1649d876c1ae",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "1d24cff3-dfb3-4451-b236-d70d816d3817",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "043bcf05-26f0-4800-a6d2-0902358f621b",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "77413a7c-558b-40b3-a9b3-36327ed4c6a0",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "b08a78a9-b0e1-41ea-81e0-37e66185fe40",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "972c8ab4-5290-49c1-9b93-0d2556e0e01b",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "785fd8b9-b477-4fbc-b293-f9678e3cde34",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "57ec3691-1dfa-477d-adc3-b19dfd845c46",
+      "result_id": "a3aeb37c-bba5-474b-946a-705dd7c37407"
+    },
+    {
+      "claim_id": "5ec06b14-97ac-45b0-a483-413a43a08e16",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "6c2d2b47-2898-4e8e-a543-105759741582",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "8511d38d-6755-47dc-81e7-59242249491b",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "f6342d87-e9bd-4094-bf30-1182f9522fe4",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "c9370be1-b0e8-4890-a2b3-725a63affca3",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "a5c8ded8-e651-4292-b22e-2c30f6218608",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "4a31da21-723f-424d-8cd5-dfdd9adff8bb",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "008b2950-c3f7-424a-baf9-6d6881dbcfc2",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "b7cba62d-b9ac-4d4b-b7ce-e17592701476",
+      "result_id": "367950e9-6d28-4aa1-9b49-85758de19126"
+    },
+    {
+      "claim_id": "62ea558a-e9fc-4cf3-a0a1-7fa27922e238",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "c98add5b-fea4-4670-bc11-340ff560aff0",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "8024a78e-5e75-40eb-920e-33a311aaa948",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "989e176d-b79b-4caa-b8aa-bccd23dbfcdc",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "a11a86af-6eb9-4f44-98aa-468e001d4929",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "ea402b06-0ff5-4e3f-a79f-2e620e392585",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "bafd9365-6247-41fd-ac2e-51371df4f73a",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "42c19b57-3f03-42e1-b48d-c350ebc27f5b",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "becc46a7-3ea1-41bc-9713-efbc6b9be0d0",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "c9db3b1a-b901-4fc2-ae03-bb0dea63ef5c",
+      "result_id": "1ac8d14d-1ce3-4ed4-9222-c928fc756136"
+    },
+    {
+      "claim_id": "1485983f-a07b-4bf6-b39d-df0d473e2ca4",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "9575b627-2323-4c2a-9792-a79382c9782d",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "36cc6a88-4679-4035-9690-b0a5f83c60a0",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "aaadccb6-5ddb-4b9b-91e9-8f7f2cea129d",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "5d959273-46b2-4c3e-a1fb-5f35354a04f3",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "8a7ff447-b899-4f3e-89df-1874fcafc800",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "9cf6878a-499f-4d6d-8c76-6baba8f0f541",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "5a1d6b50-8845-4738-ba93-8c349df9ac77",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "1414e4bb-8645-4387-9039-664c08c7af41",
+      "result_id": "b3b8084d-8892-48fa-8f22-d885e8fc5e66"
+    },
+    {
+      "claim_id": "8afb647b-9d34-4b00-8603-c72c46f29a55",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "dfddd048-e231-4727-b1a1-5ae2eccefa1f",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "53f95194-cef1-42a9-8c4d-e183562a1256",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "e1399336-c1bc-4d5b-9f30-9637bc3aae13",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "90634ded-c782-4984-8f90-9c58c3686aea",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "2d5d70a4-620a-4568-991d-b1b78fde196c",
+      "result_id": "6ac371b6-bb98-4a9d-870c-28745eef52b8"
+    },
+    {
+      "claim_id": "85b398a6-680c-4cb4-aaae-f24b45a2b0d6",
+      "result_id": "f409c118-7fb1-47f8-8767-de984bb3e080"
+    },
+    {
+      "claim_id": "f905ea1d-d291-4e15-9056-27a37872f1f4",
+      "result_id": "f409c118-7fb1-47f8-8767-de984bb3e080"
+    },
+    {
+      "claim_id": "4902bab1-9764-43ba-a84b-2f0b5527c1ef",
+      "result_id": "f409c118-7fb1-47f8-8767-de984bb3e080"
+    },
+    {
+      "claim_id": "a39dc484-d63b-436d-a749-8b91ec9b7a87",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "9c3badd2-51d3-49b2-8b32-8d95e81dae1b",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "284eb49f-a4e0-427d-b8f5-a1f437a45b03",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "0d135588-7fd0-4a74-aa23-cc8b9a7a46d1",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "45b2b8de-2530-464f-87c1-ee4aacc47daf",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "7ce07953-80e6-4c07-80b4-7d2f9be65fda",
+      "result_id": "9da525f1-5297-4f04-be46-caff66b40c99"
+    },
+    {
+      "claim_id": "56242462-8f30-408b-a8c2-c40cbe2248f4",
+      "result_id": "d7727c0c-3a6f-4358-b387-f40c13299c93"
+    },
+    {
+      "claim_id": "3a8475a6-b450-4672-a261-68f4ce699e81",
+      "result_id": "d7727c0c-3a6f-4358-b387-f40c13299c93"
+    },
+    {
+      "claim_id": "ac5ea41f-7a9d-46bb-9a13-b7315ba50a79",
+      "result_id": "d7727c0c-3a6f-4358-b387-f40c13299c93"
+    },
+    {
+      "claim_id": "70fcdba4-fe66-4b68-b7b2-b8b67513f440",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "ffaa0376-0bc5-4e1d-ae00-b03362a2199f",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "5f700348-da9d-48af-9377-1857893f49f6",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "9b13f700-faa7-46f3-b4e7-70fa356d5e42",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "8a5bc2e9-7b13-4a51-bc96-16de8a03ca7f",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "eae468e3-4f49-4f34-a5d1-abffc0854e2f",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "8f89ad4b-f83b-413e-821e-abfe768f0465",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "0b722ace-1fa6-4a62-8bba-07e908b8dd45",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "a8cf7492-6f0f-4aad-a3a1-728b53e991df",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "f1fef244-ad9e-483e-81e1-cfb81e3a81dd",
+      "result_id": "add8d403-06c0-458e-9794-f6e3cc7a367b"
+    },
+    {
+      "claim_id": "662700c4-74d9-4d58-8e77-a48849da1ec0",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "4e8842cf-a1ed-4bc9-9ee9-a43ed4fdd738",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "90713dca-1ce6-4386-9ee9-db25f2c0df4f",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "700b7fe8-f8b6-4dac-bd46-cccdb836a672",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "dd7e8c72-bd28-4feb-a295-d8b5c3b9cece",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "9bd98887-67fc-4f8c-98cc-36a450e11240",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "c26c69ac-49c5-4fd4-9df7-4819792f7d58",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "d7f14e34-f22e-4711-9314-d3fa0fd40314",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    },
+    {
+      "claim_id": "637f9227-5d71-49b7-924f-14c1e4cda39e",
+      "result_id": "42c741f1-6c40-44b9-88b0-8e0df2dacc98"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "MD simulations reveal that \u03b2-grasp domain binding induces conformational changes in SENP1, including widening of the exosite cleft (from 22.4\u00b11.5 \u00c5 to 23.1\u00b10.5 \u00c5 for trunSUMO1-bound) and repositioning of channel-lining loops, with loopA moving away from the exosite cleft toward the upper subdomain and loopB moving toward the cleft, leading to stronger inter-subdomain contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C74 are directly supported by quantitative MD simulation data presented in Figures 2 and supplementary figures. The cleft distance measurements, loop movements, and W465 sidechain positioning are all derived from explicit computational analysis with clear statistical reporting (means and standard deviations). The conformational changes are consistently observed across replicate simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "\u03b2-grasp binding causes decreased flexibility (quenching of nanosecond dynamics) throughout most of SENP1 except for N- and C-terminal segments, with rigidification propagating from the exosite cleft to both subdomains as measured by RMSF analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C77 are supported by RMSF calculations from MD simulations shown in Figure 3. The analysis demonstrates systematic decreases in flexibility upon binding across most residues, with compensatory increases in terminal regions. The spatial pattern of rigidification is clearly visualized and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "Calculated chemical shift perturbations (CSPs) from MD simulations agree with experimental NMR data but are more pronounced, identifying two hydrophobic pathways connecting exosite interface regions to the catalytic center through sidechain methyl CSPs of 15 residues (including 3 of 6 experimentally detected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by CSP calculations validated against Chen et al. (2014) NMR data (Figure 4). While the calculations identify additional residues beyond experimental detection, this represents enhanced resolution rather than contradiction. The identification of two hydrophobic pathways is a reasonable inference from the spatial pattern of significant CSPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96"
+    ],
+    "result": "Community network analysis reveals that \u03b2-grasp binding strengthens intra- and inter-subdomain motional coupling in SENP1, with minor communities coalescing into five major communities and the \u03b2-grasp domain serving as a bridge linking the two exosite interface regions, resulting in shorter path lengths from interface regions to the catalytic center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 are supported by community analysis of MD trajectories (Figure 5 and supplements). The analysis shows reproducible community structures across replicates, quantifiable changes in community organization upon binding, and strengthened inter-community betweenness. The bridging role of the \u03b2-grasp domain is a reasonable mechanistic interpretation of the observed coupling patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Restrained MD simulations where the exosite cleft is held at widened separation reproduce the main conformational and dynamic effects of \u03b2-grasp binding, demonstrating that wedging into the exosite cleft and bridging between interface regions are the underlying mechanisms for observed allosteric effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 are supported by the control simulation (Figure 6) which tests a specific mechanistic hypothesis. The restrained simulation successfully recapitulates loop movements, RMSF decreases, and CSP patterns observed in the \u03b2-grasp-bound simulations, providing strong evidence for the proposed mechanism. This is a well-designed computational control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C100"
+    ],
+    "result": "Prior NMR studies by Chen et al. (2014) showed that trunSUMO1 binding enhances SENP1 catalytic activity solely through increased kcat, produces a gradient of backbone amide CSPs from exosite to catalytic center, shows significant sidechain methyl CSPs on six residues, and enhances \u03bcs-ms dynamics around the catalytic center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C100 accurately represent findings from Chen et al. (2014) as cited. These provide the experimental foundation that the current computational study aims to explain mechanistically. The citations are appropriate and the characterization of prior work is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose a dock-and-coalesce mechanism for SENP-catalyzed SUMO cleavage where \u03b2-grasp wedging widens the exosite cleft enabling C-terminus docking, strengthened motional coupling initiates inter-subdomain correlated motions, and tethering facilitates substrate orientation and reinforces coupling to allow proper alignment around the catalytic center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C121 present a mechanistic model that integrates simulation findings with prior experimental data. While the model is consistent with the computational results and provides a coherent framework, many aspects remain speculative (as indicated by 'may' and 'likely' language). The model makes testable predictions but lacks direct experimental validation of the proposed sequential binding mechanism and the role of slow dynamics in substrate alignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The authors propose that more extensive exosite interactions in SENP2-SUMO2 compared to SENP2-SUMO1 lead to faster \u03b2-grasp wedging and stronger allosteric effects, explaining the 10-fold lower KM for SUMO2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129-C131 extend the proposed mechanism to explain SUMO paralogue specificity based on literature data (C126-C128). While the explanation is plausible and consistent with the dock-and-coalesce model, it remains speculative without direct computational or experimental testing of SENP2-SUMO2 interactions. The supporting citation (C132) provides partial validation but does not fully test the proposed two-part mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Three replicate explicit-solvent MD simulations were performed for each of three systems (apo SENP1, trunSUMO1-bound, and preSUMO1-bound), accumulating 1.7 \u03bcs total simulation time per system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 accurately describe the computational methods. The use of three replicates per system and substantial simulation time (1.7 \u03bcs total per system) represents good computational practice for ensuring reproducibility. The methods section provides additional technical details about force fields, protocols, and analysis procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors suggest the exosite may be a drug development target, with small molecules that bind deeply into the interface having disruptive effects while those binding over both SENP and SUMO could strengthen interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C137 present speculative therapeutic implications. While C136 is supported by citation to Kumar and Zhang (2013), C137 is purely speculative. The suggestions are reasonable extensions of the findings but lack experimental validation or computational modeling of small molecule binding. These represent future research directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Background information on SUMO biology, SENP structure and function, prior structural studies, therapeutic relevance, existing inhibitors, and similarities to deubiquitinating enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C53 provide established background knowledge supported by appropriate citations. These claims accurately represent the current understanding of SUMO/SENP biology and provide necessary context for the study. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C66"
+    ],
+    "result": "Principal component analysis shows the apo form of SENP1 samples disconnected free energy basins while bound forms show more restricted sampling, with PC1 and PC2 featuring prominent displacements in exosite interface regions and channel-lining loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by PCA results in Figure 2\u2014figure supplement 1. The analysis appropriately uses combined trajectories from all replicates and identifies the key structural regions involved in conformational changes. The interpretation of disconnected basins indicating decreased flexibility is standard in MD analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The observed pattern of strengthened coupling and quenched ns dynamics conforms to a dynamic model of allostery previously described for other proteins, which predicts that allosteric activators strengthen inter-community coupling leading to quenching of fast motions and initiation of slower correlated motions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 appropriately contextualize the findings within an established theoretical framework (Guo and Zhou, 2015). The comparison to patterns observed in other proteins including Pin1 (C95) strengthens the generalizability of the findings. The theoretical model provides a mechanistic explanation for the computational observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C132",
+      "C133"
+    ],
+    "result": "Literature data shows SENP catalytic activities vary toward different SUMO paralogues, with SENP1 showing 25-fold lower kcat for SUMO2 precursor processing and SENP2 showing 10-fold lower KM for SUMO2, with experimental support for differential allosteric effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C133 accurately represent published experimental findings on SUMO paralogue specificity with appropriate citations. These provide important context for understanding the biological relevance of the allosteric mechanism and support the authors' mechanistic interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The dock-and-coalesce mechanism was previously described for intrinsically disordered protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 accurately cites prior work (Qin et al., 2011; Zhou et al., 2012) establishing the dock-and-coalesce framework. The adaptation of this mechanism to SENP-SUMO interactions is appropriate given the disordered nature of the SUMO C-terminus.",
+    "result_type": "MINOR"
+  }
+]

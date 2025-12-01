@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C30",
+      "C33",
+      "C37",
+      "C38",
+      "C41"
+    ],
+    "result": "V. alginolyticus flagella exhibit biphasic length-dependent growth: constant at ~50 nm/min for lengths <1500 nm, then sharply decaying to ~9 nm/min at 7500 nm. This represents the first comprehensive real-time measurement of single flagellar growth across the full length range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C30, C33, C37, C38, and C41 collectively demonstrate biphasic growth kinetics through direct experimental measurements shown in Figures 2c and 3b. The data show clear plateau and decay regimes with quantitative growth rates derived from time-lapse fluorescence imaging. The measurements are internally consistent across different time intervals (5 min and 20 min) as shown by overlapping data in the 1000-3000 nm range (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The observed length-dependent flagellar growth is not an experimental artifact. The biphasic growth pattern is reproducible across different measurement intervals and is confirmed in free-moving (non-tethered) flagella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide critical controls demonstrating that the observed growth kinetics are genuine biological phenomena. The overlap of 5-min and 20-min interval data (C34) and reproduction in free-moving flagella (C35, C36) rule out artifacts from measurement timing or surface attachment. However, the free-moving flagella dataset is acknowledged to be limited in sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C73"
+    ],
+    "result": "An injection-diffusion model with loading strength LS=12 and diffusion coefficient D=5000 nm\u00b2/s explains the biphasic growth kinetics. Short flagella growth is limited by T3FSS loading speed, while long flagella growth is limited by diffusion, causing flagellin jamming in the channel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C43-C45, and C73 present a mathematical model that successfully fits experimental data through parameter optimization (Figure 4d-e). The model provides mechanistic explanations for both growth regimes and predicts channel occupancy changes. The best-fit parameters were determined by systematic parameter space search minimizing a cost function, providing quantitative support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Alternative models (single-file diffusion without injection force and chain mechanism) are inconsistent with the experimental observations and cannot explain the biphasic growth pattern or absence of growth pauses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 systematically evaluate and reject alternative models through comparison with experimental data. The single-file diffusion model (LS=0) cannot produce both plateau and decay regimes (C48, Figure 4b,d). The chain model predicts growth pauses that were not observed experimentally (C50-C52). This strengthens support for the injection-diffusion model by eliminating competing explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The T3FSS loading speed in V. alginolyticus is 1.7 flagellins/second, more than three times faster than the 0.5 flagellins/second reported for E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C53-C55 derive the loading speed from the plateau growth rate in short flagella (Figure 2c). The calculation is straightforward: 50 nm/min \u00f7 0.47 nm/flagellin = 1.7 Hz. The comparison to E. coli is properly cited (Turner et al.). However, C56 acknowledges this difference may be species-specific, which is speculative but reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C59"
+    ],
+    "result": "V. alginolyticus is an ideal system for studying flagellar growth due to its single polar sheathed flagellum that can be rapidly labeled with NanoOrange for real-time fluorescence imaging without affecting growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 and C59 establish the experimental advantages of the V. alginolyticus system. The single polar flagellum (C21), sheath structure (C22-C24), and NanoOrange labeling properties (C25-C27) are supported by citations and experimental validation. TEM data (Figure 1c, Figure 1\u2014figure supplement 1) confirms synchronized sheath-flagellum growth (C24). Control experiments (Figure 1\u2014figure supplement 3) demonstrate NanoOrange does not affect growth (C27, C60-C63).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C75",
+      "C77"
+    ],
+    "result": "NanoOrange labeling does not affect bacterial cell growth or flagellar growth, and the sheath growth is tightly synchronized with flagellar growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C75, and C77 provide essential validation controls. Identical growth curves (C60-C61, Figure 1\u2014figure supplement 3a) and flagellar length distributions (C62-C63, Figure 1\u2014figure supplement 3c) between labeled and unlabeled cells demonstrate the labeling method is non-perturbative. TEM data (C75, C77, Figure 1\u2014figure supplement 1) confirms synchronized growth and validates the approach of using sheath labeling as a proxy for flagellar growth.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "This work represents the first comprehensive in vivo real-time recording of single bacterial flagellar growth covering the full range of filament lengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 assert novelty based on the authors' knowledge of the field (C20). Previous studies used population measurements at discrete time points (C17-C20), while this work achieves continuous single-cell tracking. The claim is supported by the demonstrated methodology and comprehensive length coverage (400-7500 nm), though the authors acknowledge photobleaching limits tracking beyond 4000 nm in single cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The V. alginolyticus flagellin FlaE parameters were estimated by comparison to S. enterica FliC: folded length increment of 0.47 nm and unfolded length of 56 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 derive model parameters through sequence-based scaling from well-characterized S. enterica FliC. The calculations are mathematically sound: FlaE (379 aa) vs FliC (494 aa) gives scaling factor 379/494, applied to known FliC dimensions (C66, C68). The assumption of linear scaling with amino acid number (for unfolded length) and structural similarity (for folded increment) is reasonable but represents an approximation that could introduce uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The hypothesized injection force from the T3FSS is energetically reasonable, requiring 0.62-3.77 ATP per flagellin insertion depending on insertion speed, consistent with the FliI ATPase structure similar to F1 ATPase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 provide energetic validation of the model's injection force parameter. The calculation uses Einstein-Smoluchowski relation and best-fit parameters (LS=12, D=5000 nm\u00b2/s) to estimate ATP requirements. The range of 0.62-3.77 ATP is reasonable given F1 ATPase hydrolyzes 3 ATP per revolution (C71). However, C72 acknowledges that force generation details remain unresolved, indicating this is supportive rather than definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The previously reported constant growth rate in E. coli and exponential decay in S. typhimurium may represent different regimes of a universal length-dependent growth curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is explicitly speculative, proposing that different bacterial species may exhibit different portions of a universal biphasic curve. While this is an interesting hypothesis that could reconcile conflicting literature (C17-C19), no experimental data is provided to test this proposal. The claim acknowledges uncertainty with 'may be' language and is labeled as speculation in the evidence type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C58",
+      "C76"
+    ],
+    "result": "The sheath forms a compact organized structure tightly wrapping the flagellum (300 \u00c5 outer diameter, ~120 \u00c5 inner flagellum), but the mechanism driving sheath growth remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C58, and C76 are supported by TEM observations (Figure 1c, Figure 1\u2014figure supplement 1) showing sheath structure and dimensions consistent with previous literature (C58 cites Glauert et al., 1963). Claim C47 explicitly acknowledges the limitation that sheath growth mechanism is unresolved, which is an honest assessment of knowledge gaps. The structural observations are solid, but mechanistic understanding is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The 3D helical flagellar length was corrected from 2D projections using the known helix geometry (0.16 \u03bcm radius, 1.5 \u03bcm pitch), yielding the correction factor L3D = 1.09 L2D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe the geometric correction applied to convert 2D fluorescence images to 3D flagellar lengths. The helix parameters (C78) are cited from previous work (Furuno et al., 1997). The correction factor (C79) is calculated from the helical geometry as shown in Figure 2\u2014figure supplement 1c. The imaging resolution (C80) is a system specification. This correction is mathematically appropriate and necessary for accurate length measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on bacterial flagellar structure and assembly: flagella are extracellular filaments that drive swimming, assembled from flagellin monomers transported through a central channel by the T3FSS using ATP and PMF energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C16 provide established background knowledge about bacterial flagella, all supported by appropriate citations to previous literature. These claims set the context for the study but do not represent novel findings. The information is accurately presented and properly attributed, serving as the foundation for understanding the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Previous studies reported conflicting results: exponential decay in S. typhimurium (Iino 1974, Aizawa & Kubori 1998) versus constant growth rate in E. coli (Turner et al. 2000, 2012), with most studies using population measurements at discrete time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 accurately summarize the conflicting literature on flagellar growth kinetics. The citations are appropriate and the characterization of previous methodological limitations (C20) is fair. This establishes the motivation for the current study's real-time single-cell approach. The claims are properly attributed to cited sources and represent accurate assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C57"
+    ],
+    "result": "Experimental details: V. alginolyticus strain VIO5 was used; average flagellar length increases with culture time; short flagella (<400 nm) cannot attach to surfaces; flagella <1500 nm grow 185-300 nm in 5 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31, C32, and C57 provide methodological details and observations. The strain information (C57) is properly documented. The population-level length increase (C29) is shown in Figure 1\u2014figure supplement 2. The attachment limitation (C32) and growth increment (C31) are direct experimental observations that inform the measurement strategy. These are straightforward descriptive claims supported by the data.",
+    "result_type": "MINOR"
+  }
+]

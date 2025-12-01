@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Nutrient deprivation induces formation of Pol I homodimers in vivo, which are detected in the soluble fraction of starved cells but not in growing cells. The A43 C-terminal tail is essential for this dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 provide converging evidence from PICT assays, co-immunoprecipitation, and mutational analysis. The A43\u0394Ct mutant specifically abolishes dimerization (C24) while maintaining equivalent protein levels (C21), confirming the structural prediction (C14). Controls show no dimerization in growing cells (C19) and proper fractionation (C22-C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Pol I homodimerization is induced by inhibition of processes downstream of rRNA synthesis, including protein synthesis (cycloheximide) and rRNA maturation (diazaborine), and does not require new protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 demonstrate that Pol I dimerization occurs with cycloheximide and diazaborine treatment in both starved and growing cells. The observation that cycloheximide doesn't prevent dimerization in starved cells (C26) establishes that no new protein synthesis is required. The inference that these represent downstream effects (C30) is reasonable given the known mechanisms of these inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Nutrient deprivation causes rapid clearance of Pol I-Rrn3 complexes (reduced to ~40%) and near-complete loss of Pol I and Rrn3 from rDNA promoters. This clearance follows exponential decay kinetics with maximal rate in the first 15 minutes, preceding Pol I dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 establish the reduction in Pol I-Rrn3 levels and promoter occupancy using PICT and ChIP. Time-course data (C40-C41) demonstrate the temporal sequence where Pol I-Rrn3 clearance precedes dimerization. Western blot data (C43) shows constant A190 levels while Rrn3 decreases, supporting the correlation with complex levels (C44). The differential dynamics (C45) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The A43\u0394Ct mutant, which cannot form homodimers, shows 2-fold higher Pol I-Rrn3 levels and 6-fold increased promoter association in starved cells compared to wild-type, demonstrating that Pol I homodimerization is important for complete transcription inactivation upon starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 provide PICT and ChIP data showing that preventing dimerization (via A43\u0394Ct) leads to incomplete clearance of Pol I-Rrn3 and maintained promoter association during starvation. The mutant has reduced growth (C34) but equivalent protein levels, making it a valid tool. The inference about dimerization's role in transcription inactivation (C39) is well-supported by the mutant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Cryo-EM structures reveal monomeric Pol I at 4.9 \u00c5 resolution with a disordered, dynamic stalk and a half-closed cleft (38 \u00c5 width) representing an intermediate state between inactive dimeric and elongating Pol I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 report the structural resolutions achieved. The observation of stalk disorder (C48) is directly supported by the density maps. The cleft width measurement (C50) is quantitative structural data. The interpretation of an intermediate state (C51) is reasonable based on comparison with known structures, though it involves some inference. The speculation about stalk dynamics' functional importance (C49) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The Pol I-Rrn3 complex structure at 7.7 \u00c5 resolution shows that Rrn3 binds with its N-terminus facing the stalk, fixes the stalk position, and interacts primarily through A43 (OB domain with serine cradle) and A14 (helix \u03b12 of TA domain) without inducing major conformational changes in Pol I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by antibody labeling and structural comparison. The lack of conformational changes (C54-C55) is demonstrated by structural superposition. The detailed interface analysis (C56-C58) is based on the cryo-EM density and is consistent with prior biochemical data (C57 cites Blattner et al., 2011). The 7.7 \u00c5 resolution is sufficient for these conclusions about domain interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mutational analysis of A14 reveals that helix \u03b12 is fundamental for Rrn3 binding and promoter association (\u0394A14 and A14-R91E show 75% reduction), while the TA-loop limits Rrn3 binding (A14\u0394TAloop shows 2-fold increase). The A14 C-terminal tail is not involved in Rrn3 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide PICT and ChIP data for multiple A14 mutants with consistent protein expression levels. The inference about helix \u03b12's role (C62) is supported by convergent data from deletion and point mutants. The TA-loop's regulatory role (C63) is demonstrated by the opposite phenotype of A14\u0394TAloop. The observation that higher Pol I-Rrn3 doesn't prevent dimerization or promoter dissociation in starved cells (C64) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C45"
+    ],
+    "result": "The dual repressive mechanism of Pol I-Rrn3 clearance and Pol I homodimerization is reversible upon nutrient addition, following a quasi-symmetric pattern that restores cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 demonstrates the symmetric pattern in time-course experiments. Claim C45 summarizes the differential adjustment of both complex types. Claim C5 connects this to growth restoration. The time-course data in Figure 4A clearly shows the reversibility, though the connection to growth restoration could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The Tub4-RFP-FKBP anchor increases PICT sensitivity by up to 200-fold compared to previously-engineered anchors by reducing the number of anchors to one or two per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 is supported by direct comparison data shown in Figure 1\u2014figure supplement 1A. The quantification shows clear improvement in detection sensitivity. This is a methodological advance that enables the subsequent biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Pol III does not dimerize under growing or starving conditions, suggesting homodimerization is not a general mechanism for all nuclear RNA polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by PICT assay data in Figure 1\u2014figure supplement 5. This negative result is important for establishing the specificity of Pol I dimerization. However, the authors appropriately note they cannot exclude Pol II/III dimerization under other conditions (C67).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pol I-Rrn3 levels alone are insufficient to account for transcription inactivation, as complexes persist despite negligible promoter occupancy, suggesting additional regulatory mechanisms contribute to initial transcriptional inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 identify an important discrepancy between complex levels and promoter occupancy. However, the evidence for 'additional regulatory mechanisms' (C72) is largely speculative. The proposed model (C73) about rapid recruitment upon refeeding is reasonable but not directly tested. This represents an important observation but requires additional experiments to identify the proposed additional mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Pol I homodimerization may serve as a storage mechanism that protects the enzyme from degradation during starvation and enables rapid reactivation upon nutrient restoration without requiring de novo synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 present a functional model for why dimerization occurs, but this is entirely speculative. No direct evidence is provided for protection from degradation or that stored dimers are preferentially used upon refeeding. While the model is plausible and consistent with the data, it requires experimental validation (e.g., degradation assays, pulse-chase experiments).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Structural comparison reveals that activating factors across different transcription systems (Pol I-Rrn3, Pol II-Mediator, bacterial \u03c3 factor) contact equivalent regions (stalk, dock domain, AC40/AC19 or homologs), suggesting a conserved architectural arrangement for enzyme activation and promoter recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C79 describe the Pol I-Rrn3 interface based on structural data. Claims C80-C85 cite literature for Pol II-Mediator and bacterial systems. The proposed conservation (C82, C86) involves significant speculation based on structural superposition. While the similarities are interesting, the functional significance of these analogies is not experimentally tested. The differences between systems may be as important as the similarities.",
+    "result_type": "MINOR"
+  }
+]

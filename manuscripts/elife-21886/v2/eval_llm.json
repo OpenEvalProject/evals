@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors established a fiber photometry system to record dopamine axon activity in multiple striatal regions (VS, DMS, DLS, TS) of DAT-Cre mice expressing GCaMP6m. They recorded from 65 fibers across 85 mice and validated the method by observing stable recordings over weeks and responses to unpredicted rewards in GCaMP but not tdTomato signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with appropriate controls (tdTomato as activity-independent reference, C63), anatomical validation using CLARITY (C65), and demonstration of recording stability (C64). Sample sizes are clearly stated (C1, C7) and the genetic targeting strategy is standard and well-cited (C2, C5). The behavioral validation (C62) confirms task learning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C22",
+      "C28",
+      "C42",
+      "C43",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "TS dopamine showed strong excitation to novel odors (p=1.76\u00d710\u207b\u2076, n=12) with responses beginning at ~140ms latency, while VS dopamine showed no significant response to novel odors (p=0.354, n=13). TS responses decreased significantly over 30 trials (p=5.10\u00d710\u207b\u00b9\u00b9), with 91% of novel odor presentations eliciting excitation. Controls confirmed these responses were not due to odor decay, bleaching, or movement artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The opposite initialization pattern is robustly demonstrated with appropriate statistical tests, adequate sample sizes, and multiple controls. The authors addressed potential confounds including odor concentration decay (Figure 2\u2014supplement 1), signal bleaching (C67-C68), and movement artifacts (C66). The rapid response latency (C28) and high percentage of responsive trials (C22) strengthen the novelty coding interpretation. Statistical significance is consistently reported with p-values and sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C102",
+      "C103",
+      "C104",
+      "C69",
+      "C70"
+    ],
+    "result": "During initial learning over 21 days, TS dopamine responses to novel reward-predicting odors started high and decreased (p=1.095\u00d710\u207b\u2078), while VS dopamine showed no initial CS responses (day 1: p=0.099; day 7: p=0.054) but gradually developed them over weeks. VS US responses decreased faster (within single session, p=1.96\u00d710\u207b\u2074) than CS responses developed, and behavioral learning (anticipatory licking, p=0.0052) preceded VS dopamine CS responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dissociation between CS and US responses in VS dopamine is well-documented with repeated measures across multiple time points and appropriate statistical tests. The finding that behavioral learning precedes VS dopamine CS responses (C69, C103) is particularly important as it challenges simple TD models. However, the slow development of CS responses (weeks) raises questions about whether VS dopamine is necessary for initial learning or primarily reflects consolidation. The authors acknowledge this limitation in their discussion (C106).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29"
+    ],
+    "result": "In overtrained mice learning new associations daily, VS dopamine showed no response to novel odors (trial 1: p=0.8749, trials 1-5: p=0.322, n=9), while TS dopamine strongly responded (trial 1: p=0.0059, trials 1-5: p=0.0027, n=11). TS dopamine discriminated novel from familiar odors with 170ms latency and differentiated cues based on predicted outcomes within 5 trials (p=0.0213), while VS dopamine required >15 trials (p=0.7736 for trials 11-15). Behavioral discrimination occurred within 10 trials (p=0.000259).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rapid learning paradigm provides strong evidence for functional differences between VS and TS dopamine. The discrimination latency measurements (C29) and trial-by-trial analysis (C27) demonstrate that TS dopamine tracks salience prediction error faster than VS dopamine tracks value prediction error. The behavioral data (C24) confirms animals learn the task rapidly, validating the paradigm. Sample sizes are adequate and statistical tests appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Both VS and TS dopamine showed larger responses to reward-predicting cues than neutral cues (VS: p=1.8\u00d710\u207b\u00b9\u2070, TS: p=6.5\u00d710\u207b\u2076) and smaller responses to predicted vs unpredicted rewards (VS: p=5.1\u00d710\u207b\u00b9\u00b9, TS: p=1.0\u00d710\u207b\u2074). However, VS dopamine showed inhibition below baseline for reward omission (p=4.8\u00d710\u207b\u2077) while TS dopamine remained elevated (p=2.2\u00d710\u207b\u2078). TS dopamine also responded to aversive stimuli with prediction-dependent modulation (air puff: p=0.00016, tone: p=0.00074) but showed no clear omission responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential response to reward omission is a critical distinguishing feature between VS and TS dopamine that supports the RPE vs salience coding interpretation. The statistical evidence is strong across multiple stimulus types. However, the interpretation that TS dopamine encodes 'salience prediction error' (C76) is somewhat speculative given the lack of clear omission responses (C74). The sustained activity in TS during reward prediction (C71) and lack of difference in total response between rewarded and omitted trials (C73) suggests TS may encode predicted salience rather than salience prediction error per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Novelty responses showed strong correlation with anterior-posterior position (r=-0.92, p=1.68\u00d710\u207b\u2079, n=40), with TS showing high novelty responses and VS showing minimal responses. Novelty responses correlated with responses to neutral cues (p=8.76\u00d710\u207b\u2077), air puff cues (p=1.01\u00d710\u207b\u00b9\u2074), and reward omission (p=9.02\u00d710\u207b\u00b9\u2070), while water responses were found throughout the striatum with slight anti-correlation to novelty (p=0.0138). No systematic differences were observed within VS or TS sub-regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anatomical organization analysis is well-executed with strong correlations and adequate sample size (n=40 animals). The correlation between novelty responses and other salience-related signals (C38) supports the functional interpretation. However, the lack of systematic differences within VS sub-regions (C77) is surprising given known functional heterogeneity of nucleus accumbens core vs shell, which may reflect limitations in spatial resolution acknowledged by the authors. The finding that water responses are distributed throughout striatum (C79) while novelty is localized suggests these signals are processed differently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C60",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors propose that dopamine novelty signals are localized in TS along with general salience signals, while VS dopamine reliably encodes reward prediction error. They argue this represents opposite initialization strategies: VS dopamine initializes novel cues with zero value while TS dopamine initializes with high salience. They propose TS dopamine may serve CS associability (attention) functions while VS dopamine serves US associability (teaching signal) functions, representing separate systems rather than novelty being a 'bonus' in a unified RPE system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical framework is well-supported by the empirical data showing opposite dynamics (C41-C46) and differential responses to various stimuli (C30-C35). The proposal that these represent separate systems (C90-C91) rather than exceptions to RPE is a significant conceptual advance. However, the CS associability interpretation (C89) is somewhat speculative and would benefit from additional experiments testing attention or learning rate modulation. The claim that VS dopamine 'purely' signals RPE (C48, C131-C132) may be overstated given the slow development of CS responses that don't match behavioral learning timescales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors conclude that US responses in VS dopamine are well-suited as prediction error signals in the Rescorla-Wagner model, but CS responses are not time-locked to learning and are not easily explained by simple TD models. They suggest distinct mechanisms may control CS excitation and US suppression in VS dopamine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is supported by the temporal dissociation data (C102-C104) showing US responses decrease as behavior develops while CS responses lag. The acknowledgment that simple TD models don't explain the data (C106) is appropriate scientific caution. The speculation about distinct mechanisms (C107) is reasonable but requires further investigation. This represents an important challenge to prevailing computational models of dopamine function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors acknowledge several technical limitations: (1) limited temporal resolution may only capture summed signals of stimulus intensity and value (C122-C123), (2) bulk imaging cannot resolve potentially distinct axon populations that may coexist (C124-C125), (3) passing axons to cortex may contribute to VS signals (C126), and (4) calcium transients may not directly reflect dopamine release or spike counts due to various factors including autofluorescence, bleaching, and normalization (C127-C130).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors provide an appropriately critical assessment of their methodology. These limitations are real and important for interpretation. The temporal resolution issue (C123) is particularly relevant for claims about prediction error encoding. The inability to resolve distinct axon populations (C125) means the observed signals represent population averages that could mask heterogeneity. The acknowledgment that calcium signals may not directly reflect dopamine release (C130) is crucial - the signals measure neural activity but the functional output depends on release dynamics and local modulation. These caveats appropriately temper the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors speculate that TS dopamine may be specialized for reducing information for learning through attention mechanisms, potentially serving a 'gating' function similar to dopamine in prefrontal cortex. They propose TS dopamine may cooperate with VS dopamine during learning, with TS providing CS associability (attention to stimuli) and VS providing US associability (teaching signal), potentially reinforcing stimulus-stimulus vs stimulus-reward associations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are interesting speculations (C93, C98-C101) supported by anatomical evidence (C97) and consistent with prior work (C94-C96), but they go beyond what the current data directly demonstrate. The proposals about cooperation between systems (C99) and distinct roles in associative learning (C100-C101) would require additional experiments manipulating these systems and measuring effects on learning. The 'curse of dimensionality' argument (C92) provides good motivation but doesn't constitute evidence. These represent promising directions for future work rather than established conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors discuss how their findings relate to previous work on dopamine heterogeneity, novelty types, and salience coding. They argue their results showing TS dopamine responds to various neutral stimuli suggests encoding of general salience rather than motivational salience or pure stimulus intensity, representing salience prediction error rather than an exception to prediction error coding. They note TS dopamine responses begin within 200ms, potentially contributing to early novelty processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration with prior literature is thorough and the distinctions drawn (general vs motivational salience, C113; salience prediction error vs stimulus intensity, C114) are supported by the data. The rapid response latency (C121) is consistent with a role in early processing. However, the claim that novelty responses are 'the extreme case of salience prediction error' (C115) is somewhat circular - it redefines novelty responses as prediction error rather than demonstrating they follow prediction error dynamics. The comparison with monkey studies (C111-C112, C116) is valuable but cross-species differences in striatal organization should be considered more carefully.",
+    "result_type": "MINOR"
+  }
+]

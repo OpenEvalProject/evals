@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors determined crystal structures of truncated METTL3-METTL14 complexes at high resolution (1.85-1.9 \u00c5) in both SAM-bound and SAH-bound states. The full-length complex was catalytically active but failed to crystallize, while the truncated complex lost activity, indicating that terminal extensions are required for catalysis. The structures revealed SAM/SAH binding only in METTL3, with no electron density for these ligands near METTL14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 collectively describe successful structure determination with appropriate crystallographic statistics (Rfree ~19%, resolution 1.85-1.9 \u00c5) and clear experimental observations. The loss of activity in truncated constructs (C32) is directly demonstrated in Figure 1B, and the selective binding of SAM/SAH to METTL3 but not METTL14 (C40) is a direct structural observation that supports subsequent mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The METTL3-METTL14 complex forms a compact pseudosymmetric heterodimer with extensive interface (2055 \u00c5\u00b2 buried surface area per subunit). Both subunits contain Rossman fold methyltransferase domains. The interface involves symmetric interactions through \u03b2-strands and \u03b1-helices, plus asymmetric contributions from METTL14's N-terminal extension that shields the hydrophobic interface. This N-terminal extension is essential for complex solubility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 describe the overall architecture with quantitative structural metrics and specific molecular interactions visible in the crystal structure. The requirement for METTL14's N-terminal extension (C52) is supported by failed expression experiments. The structural details are consistent with high-resolution data and provide a coherent picture of complex assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C98"
+    ],
+    "result": "The METTL3 and METTL14 methyltransferase domains are structurally similar to other Rossman fold methyltransferases, with closest homologs being bacterial adenine-specific DNA methyltransferases (MboIIa, RsrI). The dimerization mode of METTL3-METTL14 is distinct from other RNA methyltransferase complexes but closely resembles homodimeric prokaryotic N6A DNA methyltransferases like EcoP15I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 and C98 are supported by structural superposition data with quantitative RMSD values (2.7-2.8 \u00c5) and visual comparison in Figure 3. The structural similarity to bacterial DNA methyltransferases is well-documented and provides evolutionary context for the complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The METTL3 active site contains detailed SAM/SAH binding interactions involving multiple hydrogen bonds and hydrophobic contacts. The binding site is enclosed by two loops (ASL1 and ASL2), with ASL1 containing a conserved DPPW motif characteristic of N6-adenosine methyltransferases. SAM and SAH adopt similar conformations with additional ordering of ASL1 in the SAH-bound structure, representing pre- and post-catalytic states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C71 describe detailed molecular interactions visible in high-resolution structures (Figures 4A, 4B). The hydrogen bonding patterns and residue positions are direct observations from electron density maps. The interpretation of SAM- vs SAH-bound structures as pre- and post-catalytic states (C71) is a reasonable inference supported by the structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Based on structural modeling by superposition with EcoP15I, the authors propose a mechanism where the acceptor adenine is inserted between ASL1 and ASL2, with the N6 amino group positioned for hydrogen bonding to the DPPW motif residues, activating it for nucleophilic attack on SAM's methyl group. Conformational rearrangement of ASL1 is expected upon substrate binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 are based on modeling rather than direct observation of RNA-bound structures. While the modeling approach using homologous structures is reasonable (C72-C74), the proposed mechanism remains speculative without experimental validation. Claim C75 explicitly uses speculative language ('would be expected'). The model is plausible but unconfirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "METTL14's methyltransferase domain adopts a similar fold to METTL3 (rmsd 1.65 \u00c5) but contains a degenerate active site. Structural modeling shows that SAM binding would be sterically blocked, key hydrogen-bonding residues are absent, and the putative acceptor binding site is occluded by bulky residues. The DPPW-equivalent motif (EPPL) lacks the aromatic residue required for substrate stacking. These observations suggest METTL14 is catalytically inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 combine direct structural observations (C76, C79, C80) with modeling (C77, C78) to build a coherent argument for METTL14's catalytic inactivity. The structural features are clearly visible in Figure 5A, and the inference of inactivity (C81) is well-supported by multiple converging lines of structural evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C3",
+      "C4"
+    ],
+    "result": "Site-directed mutagenesis experiments demonstrate that METTL3 is the catalytic subunit while METTL14 plays a non-catalytic role. Mutations in METTL3 active site residues (Asp395, Asn549/Gln550) abolished activity, while equivalent mutations in METTL14 (Glu192, Pro362/Thr363) had little effect. This indicates catalytic activity is restricted to METTL3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85, C3, and C4 are directly supported by mutagenesis data in Figure 5B showing clear differential effects of mutations in METTL3 vs METTL14. The experimental design appropriately tests the hypothesis by targeting equivalent residues in both subunits. The conclusion that METTL3 is catalytic while METTL14 is non-catalytic is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Structural modeling suggests RNA substrate binds via a conserved positively charged groove at the METTL3-METTL14 interface, comprising arginine and histidine residues from both subunits. An acetate ion occupies a positively charged pocket in METTL14, possibly mimicking phosphate binding. Mutagenesis of METTL14 residues Arg254/Arg255 reduced or abolished activity, while mutations in METTL3 (Tyr406) but not METTL14 (Tyr198) affected activity, supporting a single active site in METTL3 with RNA binding at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97 combine structural observations (conserved charged surface, acetate binding in C87-C88) with mutagenesis validation (C91-C95). The mutagenesis data in Figures 6F-G directly support the proposed RNA binding mechanism. The differential effects of mutations in METTL3 vs METTL14 acceptor binding pockets (C94-C95) further validate the single active site model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "A disulfide bridge between Cys338 and Cys388 in METTL14 was observed in the structure. While prior work suggested MTase activity is sensitive to reducing agents, mutagenesis of Cys338 to alanine had little impact on activity, indicating the disulfide bond is not required for complex function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present a clear observation (disulfide bridge in structure) and experimental test (C338A mutation). The mutagenesis data in Figure 1\u2014figure supplement 2B directly contradicts the prior suggestion that disulfide formation regulates activity (C42), providing new insight. The conclusion is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The extensive dimerization interface suggests METTL3 and METTL14 form an obligate heterodimer and are unlikely to be functional in isolation. METTL14 could not be expressed without METTL3, suggesting METTL3 stabilizes METTL14. This is consistent with genetic studies showing knockout of either subunit eliminates m6A modification in mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 combine structural inference (extensive interface in C101) with experimental observation (failed METTL14 expression in C103) and literature support (C105). The inability to express METTL14 alone is a direct observation, and the inference of obligate heterodimerization is reasonable given the extensive buried surface area (2055 \u00c5\u00b2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "METTL14 has a dual non-catalytic function in maintaining complex integrity and facilitating RNA substrate binding. The N-terminal extension of METTL3 (containing CCCH zinc finger motifs) is required for MTase activity of the core complex, possibly contributing to consensus sequence recognition. In contrast, additional N-terminal sequences in METTL14 are dispensable for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 synthesize structural and functional data. The requirement for METTL3's N-terminus (C107) is demonstrated by activity assays in Figure 1B. The speculation about zinc finger function (C108) is appropriately tentative. The dispensability of METTL14's N-terminal extension (C109) is directly shown in Figure 1B. The dual function of METTL14 (C106) is a reasonable synthesis of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The structure of the human METTL3-METTL14 complex was recently reported by two concurrent studies (Wang et al., 2016a, 2016b).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a factual statement about concurrent publications, supported by citations. The manuscript acknowledges these studies and discusses structural differences in Figure 2\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that the m6A writer enzyme may have emerged through acquisition of a bacterial homodimeric DNA methyltransferase, followed by gene duplication and sequence divergence of METTL3 and METTL14 subunits driving specificity switch toward RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C100 are explicitly speculative evolutionary hypotheses based on structural similarity to bacterial enzymes. While the structural similarity is well-documented (C60, C98), the evolutionary scenario is not directly testable from the presented data. This is appropriate speculation in the Discussion but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C45"
+    ],
+    "result": "The Introduction provides background on m6A as an abundant, dynamic epitranscriptomic mark that regulates RNA metabolism in various biological processes. It describes the m6A writer complex containing METTL3 and METTL14, reader proteins (YTH family), and the synergistic enhancement of activity when METTL3 and METTL14 interact. Domain architectures of both proteins are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26, C29-C31, and C45 are background claims supported by appropriate citations to prior literature. These establish the context for the current study and are appropriately referenced. No new experimental claims are made in this group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C26"
+    ],
+    "result": "Prior work established that the METTL3-METTL14 complex has substantially higher enzymatic activity than METTL3 or METTL14 alone, representing a synergistic effect whose molecular basis was unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C26 describe prior findings (Liu et al., 2014) that motivated the current structural study. These are appropriately cited background claims that frame the research question.",
+    "result_type": "MINOR"
+  }
+]

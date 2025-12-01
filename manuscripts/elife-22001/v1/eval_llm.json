@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In Experiment 1, synchronous theta tACS (0\u00b0 phase) applied to the right frontoparietal network improved reaction times specifically on the cognitively demanding 2-back working memory task compared to both desynchronous (180\u00b0 phase) and sham stimulation, but had no effect on less demanding 1-back or choice reaction time tasks. Accuracy was unaffected by stimulation across all conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral results from Experiment 1 are well-supported by appropriate statistical analyses (repeated-measures ANOVA with significant main effects and interactions, followed by post-hoc t-tests with effect sizes). The task-specificity of the effect (present only for 2-back, not 1-back or CRT) strengthens the interpretation that synchronous tACS specifically enhances demanding WM processes. The sample size (n=10) is modest but consistent with prior tACS studies, and the cross-over design controls for individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In Experiment 2, simultaneous tACS-fMRI revealed that both 2-back and CRT tasks activated expected brain networks (frontoparietal for 2-back, sensorimotor for CRT), with higher frontoparietal activity for the more demanding 2-back task. However, tACS did not significantly modulate behavior in this experiment, consistent with its use as a physiological probe rather than a behavioral intervention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fMRI activation patterns are well-characterized and consistent with established literature on working memory networks. The lack of behavioral effects in Experiment 2 is appropriately acknowledged and justified by the different experimental design (short trains vs. continuous stimulation). The statistical analyses are appropriate (repeated-measures ANOVA, n=19-21 after exclusions), and the task validation confirms differential cognitive demands.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "ROI analysis of brain regions under the tACS electrodes showed that synchronous tACS selectively increased BOLD activity in both the inferior parietal lobule (IPL) and middle frontal gyrus (MFG) during the 2-back task, but not during desynchronous stimulation. Increased IPL activity correlated negatively with reaction times (r=-0.39, p=0.039), linking neural modulation to behavioral performance. During the CRT task, only the MFG showed increased activity with synchronous tACS, without behavioral correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ROI analyses are well-designed with appropriate controls (return electrode region, fixation periods) showing no effects, ruling out simple current-induced BOLD artifacts. The brain-behavior correlation for IPL is statistically significant and theoretically meaningful, though the correlation for MFG was not significant. The task-specificity of effects (different patterns for 2-back vs. CRT) supports state-dependent modulation. However, the correlation is modest (r=-0.39) and based on one-tailed testing, which should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Whole-brain analysis revealed that synchronous tACS during the 2-back task increased activity across widespread networks including the right frontoparietal network, thalamus, basal ganglia, and visual cortex, while desynchronous tACS increased deactivation in default mode network regions. These phase-dependent effects were specific to the cognitively demanding 2-back task; the CRT task showed similar occipital activation for both tACS phases without phase-dependent differences. No phase-dependent effects were observed during fixation periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The whole-brain analyses use appropriate statistical thresholding (cluster-corrected Z>2.3, p<0.05 FWE) and reveal theoretically coherent patterns: synchronous tACS enhances task-positive networks while desynchronous tACS affects task-negative (DMN) regions. The cognitive state-dependency is convincingly demonstrated by the contrast between 2-back and CRT tasks, and the absence of effects during fixation provides important control evidence. The widespread effects beyond stimulation sites suggest network-level modulation rather than simple local effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Functional connectivity analysis using psychophysiological interaction (PPI) showed that synchronous tACS during the 2-back task increased connectivity between the right IPL and left dorsolateral prefrontal cortex (DLPFC), while desynchronous tACS increased connectivity between both IPL and MFG seeds with occipito-temporal regions. These phase-dependent connectivity modulations were specific to the 2-back task and absent during the CRT task, fixation periods, and when using the return electrode as a control seed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PPI analyses appropriately test for task-dependent changes in functional connectivity and include multiple important controls (CRT task, fixation periods, return electrode seed) that all show null results, strengthening the specificity of the findings. The asymmetry in connectivity effects (IPL but not MFG showing frontoparietal connectivity increases) is acknowledged and discussed. However, the lack of brain-behavior correlation for connectivity measures (C69) limits the functional interpretation of these network changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Control analyses confirmed that the observed tACS effects were not confounded by motion artifacts, physiological changes, or participant awareness. Framewise displacement was very low and did not differ between stimulation conditions. Heart rate (measured in a subset of participants) showed no differences across conditions. Participants were unable to reliably detect whether they were receiving stimulation or distinguish between stimulation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control analyses address important potential confounds. Motion analysis is thorough with appropriate statistics showing no differences across conditions. The heart rate analysis is limited by small sample size (n=6) but shows consistent null results. The blinding assessment demonstrates that participants could not distinguish conditions, ruling out expectancy effects. These controls strengthen confidence in the specificity of the tACS effects, though the heart rate data would benefit from a larger sample.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study demonstrates that external manipulation of oscillatory synchrony across the right frontoparietal network causally impacts neural activity and behavior in a phase-dependent and cognitive state-dependent manner. Synchronous theta tACS improves working memory performance and increases frontoparietal activity and connectivity specifically when cognitive demands are high, with the behavioral improvement sufficient to eliminate the typical performance difference between 2-back and 1-back tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the convergent evidence from behavioral (Experiment 1), brain activity (Experiment 2 ROI and whole-brain analyses), and connectivity (PPI) results. The phase-dependency is demonstrated by differential effects of synchronous vs. desynchronous stimulation, and state-dependency by the specificity to high-demand (2-back) vs. low-demand (1-back, CRT) tasks. The causal claim is justified by the experimental manipulation. However, the mechanistic interpretation regarding 'oscillatory synchrony' is somewhat indirect since the study cannot directly measure oscillatory changes with fMRI (acknowledged in C135).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The neuroimaging results reveal the neural mechanisms underlying tACS-induced cognitive enhancement: synchronous stimulation increases activity in the inferior parietal lobule and middle frontal gyrus\u2014key regions for working memory\u2014with parietal activity correlating with faster responses. The effects extend beyond stimulation sites to include salience, visuospatial, and basal ganglia networks, suggesting network-level rather than purely local modulation. The pattern resembles pharmacological cognitive enhancement with methylphenidate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation is well-grounded in the fMRI data and supported by extensive citations to prior literature on the functional roles of these regions (C95-C101). The brain-behavior correlation (C98) provides important evidence linking neural changes to performance. The comparison to methylphenidate effects (C106) is interesting but speculative (C107), as it's based on a single cited study and the mechanisms may differ substantially. The claim about network-level effects (C105) is supported by the widespread activation patterns, though the specific mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The functional connectivity results suggest that altering phase synchrony controls information flow within working memory networks: synchronous tACS enhances frontoparietal connectivity (IPL-DLPFC) supporting high-demand processing, while desynchronous tACS shifts connectivity toward posterior (occipito-temporal) regions, potentially reflecting disruption of top-down control. This pattern is consistent with theoretical models proposing that phase relations enable selective routing of information and may involve frequency-specific directional communication channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The connectivity findings (C66-C68) are empirically supported, but the mechanistic interpretations are largely speculative. The explanation for asymmetric connectivity effects (C113-C116) involves multiple speculative hypotheses about ceiling effects and frequency-specific directional communication. The interpretation of desynchronous effects as 'restoration of default connectivity' (C120) is speculative. While the theoretical framework is well-cited (C121-C123), the study cannot directly test these mechanisms with fMRI. The lack of brain-behavior correlations for connectivity (C69) further limits functional interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C129"
+    ],
+    "result": "The results demonstrate that tACS effects are highly dependent on underlying brain state and network dynamics. The 2-back task, which more heavily engages the frontoparietal network than the CRT task, showed clear phase-dependent modulation of activity and connectivity, while the less demanding CRT task showed minimal phase-dependent effects. This supports theoretical predictions that entrainment is more effective when networks are actively engaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The state-dependency is convincingly demonstrated by the systematic differences between 2-back and CRT tasks across multiple analyses (activity, connectivity). The theoretical framework is well-supported by citations (C83-C85), and the empirical results (C86-C87) directly test and confirm these predictions. The conclusion that effects cannot be predicted by current density models alone (C126, C129) is supported by the specificity of effects to task-engaged regions despite broader current distribution. This represents an important conceptual advance in understanding tACS mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study acknowledges several methodological limitations: unbalanced electric field distribution between tACS conditions due to the common return electrode, relatively large stimulation area potentially affecting functionally diverse subregions, and likely inter-individual variability in optimal stimulation parameters. However, the results could not be predicted by current density models alone, as effects were restricted to task-engaged regions. Future optimization may require subject-specific parameter selection using machine learning and real-time imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations are honestly and thoroughly discussed. The electric field modeling (C124-C125, Figure 1\u2014figure supplement 1) demonstrates the unbalanced distribution, but the control analyses (C127-C128) showing no effects at the return electrode support that results reflect network dynamics rather than simple current effects. The acknowledgment of spatial resolution limitations (C130) and individual variability (C131) is appropriate. The suggestions for future work (C132-C133) are reasonable but speculative. These limitations do not invalidate the main findings but appropriately contextualize their interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "While the fMRI approach provided good spatial resolution without electrical artifacts, the study cannot specify which brain frequencies were modulated by tACS because the correspondence between brain oscillations and BOLD signal is not fully understood, and tACS might induce cross-frequency coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest and important limitation. The study's title and framing emphasize 'oscillatory synchronization' and 'theta frequency' effects, but the BOLD signal cannot directly measure oscillatory activity or confirm that 6 Hz stimulation specifically entrained theta oscillations. The citations (C136-C137) support that this is a known limitation of the fMRI-tACS approach. This limitation is significant for mechanistic interpretation but does not undermine the demonstration of phase-dependent and state-dependent effects on brain activity and behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The findings are contextualized within the broader transcranial electrical stimulation literature, noting that tDCS also modulates working memory (with small but significant effects in meta-analyses) and can influence oscillatory activity in distant regions. However, different tES modalities impact brain excitability to different degrees, and working memory performance is sensitive to stimulation parameters, suggesting that careful consideration of target mechanisms is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discussion appropriately situates the findings within the broader tES literature with relevant citations to meta-analyses (C139-C140) and mechanistic studies (C142-C145). The acknowledgment that different modalities may work through different mechanisms (C144) is important for interpretation. However, the comparison between tACS and tDCS is somewhat superficial and doesn't deeply address whether they share mechanisms. The discussion serves mainly to contextualize rather than critically evaluate the relationship between different stimulation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C149"
+    ],
+    "result": "The work demonstrates the potential of simultaneous tACS-fMRI as a methodological approach for understanding the neural mechanisms underlying externally induced oscillatory synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological contribution is supported by the successful implementation of the tACS-fMRI protocol, the absence of significant artifacts (C18, C134), and the ability to detect phase-dependent and state-dependent neural effects. The approach represents a technical advance over previous methods that relied on pre/post measurements or were limited by electrical artifacts in EEG/MEG. However, the fundamental limitation regarding oscillatory measurements (C135-C137) means the method reveals effects on BOLD activity and connectivity but cannot directly confirm oscillatory entrainment.",
+    "result_type": "MINOR"
+  }
+]

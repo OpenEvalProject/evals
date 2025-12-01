@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C5"
+    ],
+    "result": "The Ep300fb knock-in allele produces functional Ep300 protein that can be biotinylated by BirA and quantitatively pulled down on streptavidin beads. Ep300fb/fb homozygous mice are viable with normal heart size, function, and Ep300 expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, and C5 collectively demonstrate that the Ep300fb allele is functional. Western blot data (C2) shows quantitative pulldown, expression analysis (C4) confirms normal Ep300 levels, and phenotypic data (C5) shows normal heart morphology and function. These converging lines of evidence support that the epitope tag does not impair Ep300 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C87"
+    ],
+    "result": "Ep300fb bioChIP-seq identifies substantially more Ep300-bound regions (48,963) than antibody ChIP-seq (15,281) in embryonic stem cells, with higher signal strength and better reproducibility between replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 provide quantitative comparisons showing bioChIP-seq detects 3.2-fold more peaks with 89.6% overlap of antibody-detected regions and substantially stronger signal. Claim C87 synthesizes these findings into the conclusion of improved sensitivity. The data from Figure 2 support superior performance of the bioChIP-seq method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C89"
+    ],
+    "result": "Ep300fb bioChIP-seq reveals tissue-specific enhancer occupancy, with only 8.9% of heart and 31.3% of forebrain Ep300 regions shared between E12.5 tissues. Genes neighboring tissue-specific regions are enriched for tissue-relevant GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 provide reproducibility data (83-93% overlap between replicates) and tissue specificity measurements showing minimal overlap between tissues. Claim C14 demonstrates functional relevance through GO enrichment. Claim C89 synthesizes these into the conclusion that Ep300 occupies tissue-specific enhancers. The data are internally consistent and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C90"
+    ],
+    "result": "Ep300fb occupancy correlates with H3K27ac (r=0.64) and shows greater tissue specificity than H3K27ac, with lower percentages of shared regions between tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 provides correlation data validating the Ep300fb bioChIP-seq approach. Claim C90 compares tissue overlap percentages (8.9% and 31.3% for Ep300fb vs 26.4% and 52.9% for H3K27ac), supporting greater tissue specificity. The comparison is quantitative and the inference is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C91"
+    ],
+    "result": "Ep300fb bioChIP-seq shows superior sensitivity for predicting heart enhancers compared to antibody ChIP-seq, with 70% of VISTA heart enhancers overlapping Ep300fb regions versus 57% for antibody ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 provide direct comparison using VISTA database validation (130/185 vs 105/185 enhancers detected). Claim C91 synthesizes multiple validation experiments. The use of an independent gold standard (VISTA database) strengthens the conclusion of superior sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C92"
+    ],
+    "result": "Machine learning analysis using VISTA enhancers as gold standard shows Ep300 bioChIP-seq is the best single predictor of heart enhancers (AUC=0.805), outperforming H3K27ac (0.747), ATAC-seq (0.749), and H3K4me1 (0.589). Combining Ep300 with ATAC-seq achieves AUC=0.866.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 provide quantitative AUC values from ROC analysis comparing multiple chromatin features. The machine learning approach with 10-fold cross-validation is appropriate. Claim C92 synthesizes the findings. The conclusion that Ep300 is the best single predictor is well-supported by the comparative AUC values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C93"
+    ],
+    "result": "Cre-dependent BirA expression enables lineage-specific Ep300fb bioChIP-seq, identifying 2,411 Tie2Cre-enriched (EC/blood) and 1,292 Myf5Cre-enriched (skeletal muscle) regions. These regions are enriched for lineage-appropriate GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 establish the Cre-dependent system and quantify lineage-specific regions. Claim C93 synthesizes the validation through GO enrichment (Figure 4F). The approach is technically sound and the functional validation through GO analysis supports the biological relevance of identified regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Ep300-T-fb regions are enriched for angiogenesis and hematopoiesis GO terms, while Ep300-M-fb regions are enriched for skeletal muscle terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 report GO enrichment results that validate the lineage specificity of the identified enhancer regions. Figure 4F provides the supporting data. The enrichment of lineage-appropriate terms provides functional validation of the technical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C95"
+    ],
+    "result": "Validation of Ep300-T-fb regions shows 47.5% overlap with literature-validated EC enhancers and 45% (9/20) of tested regions have reproducible in vivo enhancer activity in transient transgenic assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide two independent validation approaches: literature comparison (47.5% overlap) and functional testing (45% validation rate). Claim C95 extrapolates to the broader dataset. The validation rates are substantial and support the utility of the method, though the extrapolation in C95 should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Lineage-specific bioChIP-seq identified novel artery-selective (Sema6d-enh, Sox7-enh) and vein-selective (Ephb4-enh, Mef2c-enh) enhancers active at E11.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 report identification of vessel-type-specific enhancers validated by histological analysis. However, C34 notes Sox7-enh was only reproduced in two embryos, which is below the authors' stated threshold of three embryos. The artery-selective and vein-selective patterns are supported by histological data in Figure 5E and Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Motif analysis reveals GATA and ETS motifs are most enriched in Tie2Cre-marked EC/blood lineages, while Ebox motifs are most enriched in Myf5Cre-marked skeletal muscle lineage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 report motif enrichment results from computational analysis shown in Figure 6A. The findings are consistent with known biology of these transcription factor families in the respective lineages, providing biological validation of the computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Three ETS:FOX heterodimer motifs are enriched in Ep300-T-fb regions: the previously known ETS:FOX2 (AAACAGGAA) and two novel configurations ETS:FOX1 (GGATGTT) and ETS:FOX3 (TGTTTACGGAA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 identify three ETS:FOX heterodimer motifs, including two novel configurations. Claim C39 validates the approach by recovering a known functional motif. The motif enrichment data in Figure 6A support these findings, though functional validation of the novel motifs requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Sequences matching Tie2Cre-enriched motifs within Ep300-T-fb regions show bimodal conservation score distribution, including a subset of highly conserved sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 reports conservation analysis using PhastCons scores across 30 vertebrate species. Figure 6B shows the bimodal distribution compared to random sequences. The presence of highly conserved motif instances supports functional importance, though the bimodal distribution suggests heterogeneity in selective pressure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C96"
+    ],
+    "result": "Luciferase assays demonstrate that ETS:FOX motifs have transcriptional activity in HUVECs, with the novel ETS:FOX1 and ETS:FOX3 motifs showing equal or greater activity than the known ETS:FOX2 motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 report luciferase assay results demonstrating transcriptional activity of the identified motifs. The mutation control (C44) supports specificity. The comparison in consistent DNA context (C46) strengthens the conclusion. Claim C96 infers functional importance. The data support transcriptional activity, though in vivo functional validation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Analysis of published EC expression data identified 240 genes preferentially expressed in heart ECs and 355 genes preferentially expressed in lung ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 report analysis of published data from Nolan et al., 2013. The clustering approach to identify organ-specific genes is shown in Figure 7\u2014figure supplement 1. The analysis appropriately leverages existing data to define organ-specific gene sets for subsequent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Adult EC bioChIP-seq identified 14,251 heart and 22,174 lung Ep300fb regions. Genes neighboring heart-enriched regions (decile 1) have higher expression in heart ECs, while genes neighboring lung-enriched regions (decile 10) have higher expression in lung ECs (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 report adult EC bioChIP-seq results and correlation with organ-specific gene expression. The statistical analysis (Fisher's exact test, p<0.0001) supports the association between Ep300 occupancy and organ-specific gene expression. Figure 7B-C provide supporting data. The correlation validates the biological relevance of identified regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Disease ontology analysis shows genes neighboring heart-enriched Ep300 regions are associated with coronary heart disease, arteriosclerosis, and myocardial infarction, while lung-enriched regions are associated with hypertension and cerebral artery disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 report disease ontology enrichment analysis shown in Figure 7\u2014figure supplement 4. The organ-specific disease associations are biologically plausible and suggest potential relevance to disease mechanisms. However, this is correlative analysis and does not establish causal relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C97"
+    ],
+    "result": "Motif analysis of adult EC Ep300 regions reveals differential enrichment: TCF, FOX, ETS, ETS-FOX, and ETS-HOMEO motifs are enriched in heart (decile 1), while TBOX, EBox, ETS:Ebox, and EBOX:HOMEO motifs are enriched in lung (decile 10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 report differential motif enrichment between heart and lung EC regions, with C60 providing supporting expression data for TBX3. Claim C97 synthesizes these findings into a mechanistic hypothesis. Figure 7D provides the motif enrichment data. The differential enrichment patterns are consistent with organ-specific transcriptional regulation, though functional validation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The epitope-tagged Ep300fb allele has superior sensitivity and specificity for mapping Ep300-bound regions in tissues compared to antibody-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 synthesizes comparisons showing bioChIP-seq detected more regions with better overlap of antibody-detected regions (58.7% and 64.7%) in heart and forebrain tissues. This conclusion is supported by multiple lines of evidence including peak counts, reproducibility, and validation against known enhancers.",
+    "result_type": "MAJOR"
+  }
+]

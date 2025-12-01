@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9"
+    ],
+    "result": "The songbird auditory system consists of hierarchically organized areas including Field L (with sub-regions L2a, L2b, L1, L3), NCM, and CM. L2a is the primary thalamorecipient zone receiving strongest input from nucleus ovoidalis, while secondary areas (L2b, L3, L1) receive both feedforward input from L2a and feedback from higher cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C9 are well-supported by multiple citations to established anatomical studies (Vates et al., 1996; M\u00fcller and Leppelsack, 1985; R\u00fcbsamen and D\u00f6rrscheidt, 1986; Hose et al., 1987). The anatomical organization is confirmed by the authors' own histological verification (Figure 1b, Figure 1\u2014figure supplement 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "In response to song, neurons in primary auditory area L2a show highly synchronous responses with deeply modulated population PSTHs, while neurons in secondary areas L2b and L3 show less synchronous, more diverse response profiles that are more informative about syllable identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C28-C31 are supported by data presented in Figures 1a, 1d, Figure 1\u2014figure supplement 2, and Figure 1\u2014figure supplement 3. The cross-correlation analysis (C31, Figure 1d) and ROC analysis (C11, Figure 1\u2014figure supplement 2) provide quantitative support for the transformation from synchronous to asynchronous coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C41",
+      "C42"
+    ],
+    "result": "In response to click sequences, primary auditory area L2a neurons show synchronous, low-latency responses that are insensitive to temporal context, while secondary area neurons (L2b, L3) respond asynchronously and selectively depending on the temporal context of the click.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C41-C42 are supported by extensive data in Figure 3, Figure 3\u2014figure supplements 2, 4, and 5. The raster plots clearly demonstrate the distinct response patterns between primary and secondary areas, with primary responses showing consistent timing across neurons and secondary responses showing context-dependent variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C18",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Temporal click sequences are transformed into distinct population vectors in the transition from primary to secondary auditory areas. Phase-space trajectories overlap in L2a but diverge in stimulus-dependent manner in L2b/L3, enabling enhanced discriminability of sequences as quantified by ROC analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C18, C43-C48 are supported by phase-space analysis (Figure 4a) and ROC analysis (Figure 4b, Figure 4\u2014figure supplement 1). The ROC analysis used n=10 neurons and showed clear differences between primary and secondary areas. The finding holds for both full 3-second stimuli and first 500 ms (C47), and generalizes to song syllables (C48, Figure 1\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Click stimuli were designed as 3-second sequences composed of ten specific inter-click intervals (11-40 ms) chosen to match the timescale of neural responses to birdsong in L2a and similar to sub-syllabic acoustic transitions in zebra finch song. The sequences contain no significant spectral cues above 100 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide methodological details that are internally consistent and supported by Figure 2a-b showing the rationale for interval selection, and citations (Amador et al., 2013; Norton and Scharff, 2016) supporting the biological relevance of the chosen timescales. The spectral limitation (C38) follows logically from the stimulus design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C16"
+    ],
+    "result": "When click sequences were slowed by a factor of two (22-80 ms intervals), the temporal-to-spatial transformation in secondary auditory areas was reduced as measured by ROC analysis, despite minimal impact on spike rate in secondary areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C49-C50 are supported by data in Figure 5 and Figure 5\u2014figure supplement 1. The ROC analysis shows reduced discriminability for slowed sequences in secondary areas, while spike rate analysis shows minimal change. This demonstrates that the transformation is tuned to specific temporal scales rather than being a general property of spike rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C51",
+      "C52",
+      "C61"
+    ],
+    "result": "Zebra finches rapidly learned to discriminate fast click sequences (11-40 ms intervals) using a novel 'restart-go' operant paradigm, with 35 of 53 trained birds achieving high performance (d' > 1) within 14 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C51-C52, C61 are supported by behavioral data in Figure 6a-b and Figure 6\u2014figure supplement 2. The sample size is substantial (n=53 birds) and the success rate (66%) is clearly documented. The training paradigm is described in detail in Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "When click sequences were time-reversed, behavioral discrimination fell to chance levels, indicating that the ordering of click intervals was critical to behavioral discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by catch trial data in Figure 7a (n=8 birds). The result demonstrates that birds discriminate based on temporal order rather than other stimulus features. The inference (C54) is reasonable given the chance-level performance on reversed sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "For cyclic permutations of training stimuli (phase-shifted sequences), birds showed a small initial decrease in performance that returned to baseline within four days, indicating that birds listen for patterned sequences of intervals irrespective of absolute time of occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by catch trial data in Figure 7b (n=11 birds). The recovery of performance demonstrates generalization to phase-shifted versions of the learned sequences. The inference (C56) is reasonable but could be strengthened with additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C17"
+    ],
+    "result": "Birds trained on fast sequences failed to discriminate when sequences were slowed by a factor of two, and naive birds trained exclusively on slower sequences (n=15 total) never developed discrimination ability, demonstrating that discrimination was specific to the faster timescale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C57-C59 are supported by behavioral data in Figure 6c and Figure 6\u2014figure supplement 2g-h. The complete failure of all birds (0/15) to learn slower sequences is striking and statistically robust. This parallels the neural finding of reduced transformation for slower sequences (C16, C49).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Electrophysiological recordings were performed using 32-channel silicon electrodes in 11 adult male zebra finches, recording simultaneously from primary (L2a) and secondary (L2b, L3) auditory areas. Behavioral training involved 53 adult male zebra finches. All procedures were IACUC-approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 and C73-C75 provide methodological details that are clearly stated and internally consistent. The classification of primary vs. secondary areas was validated both physiologically (response profiles) and anatomically (spatial mapping, Figure 1\u2014figure supplement 1), addressing the challenge noted in C27.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C76"
+    ],
+    "result": "The transformation of temporal patterns to spatial patterns (population vectors) in secondary auditory areas provides an opportunity for downstream neurons to perform stimulus discrimination using simple linear classifiers, potentially serving as a substrate for song perception and discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C76 represent reasonable inferences from the data showing distinct population vectors in secondary areas (C14, C18, C46) and successful behavioral discrimination (C15, C51-C52). The correlation between neural transformation strength and behavioral performance (C16-C17, C49, C57-C59) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The slowed sequences evoked inter-peak intervals in primary auditory area PSTH longer than typical intervals during natural song exposure, suggesting the ascending auditory pathway is tuned to process temporal events on the faster timescale (11-40 ms) in a manner useful for song memorization and discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by data in Figure 2 comparing PSTH inter-peak intervals for song, fast clicks, and slow clicks. The inference (C63) is reasonable given the correlation between neural transformation strength and behavioral performance, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C39",
+      "C40"
+    ],
+    "result": "The loudspeakers had a high-pass cutoff at 3 kHz, limiting spectral content. Zebra finch hearing thresholds are attenuated ~20 dB relative to humans at 100 Hz, and conspecific song fundamental frequency is typically \u2265500 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C64 are supported by citations (Okanoya and Dooling, 1987; Moore, 2007) and direct statement. These details are important for interpreting the click stimuli results, as noted in the Discussion. The authors acknowledge this as a caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The single-unit ensembles studied were 'virtual ensembles' recorded in different animals; noise correlations within animals could further impact discrimination in ways not addressed in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 represent an important caveat acknowledged by the authors with appropriate citations (Zohary et al., 1994; Abbott and Dayan, 1999). While the authors note that qualitative results hold within individual birds (Figure 3\u2014figure supplements 2-3), the quantitative ROC analysis used virtual ensembles, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Temporal cues in song provide reliable information about singer identity in zebra finches. Neurons throughout the auditory system respond with precise spike times to conspecific song, and the temporal integration window is brief in L2a compared to L1 and L3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 are supported by multiple citations to prior work (Gentner and Margoliash, 2003; Gentner et al., 2006; Grace et al., 2003; Shaevitz and Theunissen, 2007; Schneider and Woolley, 2013; Prather et al., 2008; Kim and Doupe, 2011). These establish the context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Primary auditory area L2a reportedly receives no feedback from higher-level auditory zones, and synchronous responses may reflect feedforward thalamic drive. Secondary areas L2b and L3 are more densely interconnected and may sustain reverberant activity underlying the temporal sequence transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C72 mix established anatomical facts (C69, C71 supported by Vates et al., 1996) with speculative mechanistic interpretations (C70, C72). While the speculation is reasonable and supported by a toy model (Figure 8), the authors acknowledge that new experimental studies are needed to test the reverberant dynamics hypothesis. The alternative feedforward hypothesis is also discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In a prior study, zebra finches discriminated sequences of beeps with intervals up to 300 ms. Brief clicks and longer tones likely tap into auditory processing pathways with distinct temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by citation (van der Aa et al., 2015). Claim C66 is speculative but reasonable given the different results between the current study and van der Aa et al. The authors appropriately acknowledge uncertainty about whether spectral content impacts behavioral discrimination of slower sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The temporal-to-spatial transformation applies to click sequences with intervals overlapping sub-syllabic acoustic structure in song, and may provide an important substrate for song perception and discrimination at sub-syllabic timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 represent reasonable inferences from the data. The intervals used (11-40 ms) do overlap with sub-syllabic timescales in zebra finch song (supported by citations to Amador et al., 2013; Norton and Scharff, 2016). The speculation (C20) is appropriately hedged with 'may' and is supported by the correlation between neural transformation and behavioral discrimination.",
+    "result_type": "MAJOR"
+  }
+]

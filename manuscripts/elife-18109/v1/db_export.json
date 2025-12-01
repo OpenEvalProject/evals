@@ -1,0 +1,2149 @@
+{
+  "submission": {
+    "id": "c3e1f2bd-49ae-4258-94bd-5d9f593cb686",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:49:37.065968Z",
+    "updated_at": "2025-11-30T21:49:37.065968Z"
+  },
+  "content": [
+    {
+      "id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "submission_id": "c3e1f2bd-49ae-4258-94bd-5d9f593cb686",
+      "content_type": "manuscript",
+      "content_text": "# Aerotaxis in the closest relatives of animals\n\n## Authors\n\n- Julius B Kirkegaard<sup>1</sup>\n- Ambre Bouillant<sup>1</sup>\n- Alan O Marron<sup>1</sup>\n- Kyriacos C Leptos<sup>1</sup>\n- Raymond E Goldstein<sup>1</sup> ([ORCID: 0000-0003-2645-0598](https://orcid.org/0000-0003-2645-0598)) \u2020\n\n### Affiliations\n\n1. Department of Applied Mathematics and Theoretical Physics, Centre for Mathematical Sciences University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs the closest unicellular relatives of animals, choanoflagellates serve as useful model organisms for understanding the evolution of animal multicellularity. An important factor in animal evolution was the increasing ocean oxygen levels in the Precambrian, which are thought to have influenced the emergence of complex multicellular life. As a first step in addressing these conditions, we study here the response of the colony-forming choanoflagellate Salpingoeca rosetta to oxygen gradients. Using a microfluidic device that allows spatio-temporal variations in oxygen concentrations, we report the discovery that S. rosetta displays positive aerotaxis. Analysis of the spatial population distributions provides evidence for logarithmic sensing of oxygen, which enhances sensing in low oxygen neighborhoods. Analysis of search strategy models on the experimental colony trajectories finds that choanoflagellate aerotaxis is consistent with stochastic navigation, the statistics of which are captured using an effective continuous version based on classical run-and-tumble chemotaxis.\n\n## Introduction\n\nTaxis, the physical migration towards preferred or away from undesired conditions, is a feature shared by virtually all motile organisms. Taxis comes in many forms, and in common is an underlying field of attractant (or repellent) and an ability to react and navigate along gradients of this field. Bacteria do chemotaxis towards nutrients (Adler, 1969; Berg, 1993) and away from toxins (Tso and Adler, 1974). Algae do phototaxis towards light (Yoshimura and Kamiya, 2001; Drescher et al., 2010) and gyrotaxis along gravitational potentials (Kessler, 1985). Chemotaxis provides a mechanism for the recognition and attraction of gametes (Vogel et al., 1982) and for complex behavioural patterns such as in the slime mould Dictyostelium discoideum, where cAMP-driven chemotaxis is a critical part of the formation of the multicellular stage of the life cycle (Bonner, 1947). Aerotaxis, defined as oxygen-dependent migration, is well-characterized in bacteria (Taylor et al., 1999), but is poorly studied in more complex organisms. This is despite the essentiality of oxygen for all aerobic life, and the important role that Precambrian oxygen levels played in the emergence and evolution of multicellular animal life (Nursall, 1959).\n\nOne group of aquatic heterotrophic protists, the choanoflagellates, are of particular interest for the study of how multicellularity evolved. Choanoflagellates are a class of unicellular microorganisms that are the closest relatives of the animals (Lang et al., 2002). This relationship was first proposed by James-Clark in 1866 (James-Clark, 1866), on the basis of the resemblance between choanoflagellates and the choanocytes of sponges. The sister relationship between choanoflagellates and animals was further confirmed in the genomic era by molecular evidence (King et al., 2008). All choanoflagellates share the same basic unicell structure: a prolate cell body with a single beating flagellum that is surrounded by a collar of microvilli. The beating of the flagellum creates a current in the surrounding fluid that guides suspended prey such as bacteria through the collar (Pettitt and Orme, 2002) where they can be caught and ultimately phagocytosed. The flagellar current also has the effect of causing the choanoflagellate cell to swim.\n\nThe choanoflagellate Salpingoeca rosetta can form colonies through incomplete cytokinesis (Fairclough et al., 2010). In the presence of certain bacteria (Dayel et al., 2011; Levin et al., 2014), these colonies have an eponymous rosette-like shape as shown in Figure 1. The colony morphology is variable, and the constituent flagella beat independently of one another (Kirkegaard et al., 2016). The random and independent flagellar motion argues against there being any coordination between cells in a colony, and as yet no evidence of any form of taxis for choanoflagellate colonies has been reported.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig1-v1.jpg)\n\n**Figure 1.:** Scale bar: 50\u2009\u00b5m. Cell body diameters are ~5\u00a0\u00b5m.\n\nThe geometry, flagella independence and lack of taxis observed in S. rosetta colonies contrast with other lineages, such as the Volvocales, a group of green algae (Goldstein, 2015). Phototaxis is clearly observable in both unicellular (Chlamydomonas) (Yoshimura and Kamiya, 2001) and colonial (Volvox) (Drescher et al., 2010) species, in order to maintain optimum light levels for photosynthesis. Volvocalean phototaxis is deterministic, requiring precise tuning between the internal biochemical timescales and the rotation period of the organism as a whole. Although S. rosetta colonies also rotate around an internal axis, due to the variable colony morphology and the independent beating of the individual flagella, this rotation rate will itself be random (Kirkegaard et al., 2016), rendering a strategy similar to that of the Volvocales unlikely in S. rosetta.\n\nAn alternative strategy is stochastic taxis, sometimes referred to as kinesis. The classic example of stochastic taxis is the run-and-tumble chemotaxis of certain peritrichous bacteria (Berg, 1993). By spinning their left-handed helical flagella in different directions, such bacteria can alternate between swimming in straight lines (running) and randomly reorienting themselves (tumbling). Through biasing tumbles to be less frequent when going up the gradient, the bacteria exhibit biased motion towards a chemoattractant without directly steering towards it (Berg, 1993).\n\nHere, we study S. rosetta and show that it exhibits aerotaxis, i.e. navigation along gradients of oxygen. We further examine and statistically analyse aerotaxis of S. rosetta colonies under spatio-temporal variations of oxygen at the level of total colony populations and at the level of the trajectories of individual colonies. From these experiments we establish two key features of the aerotactic response of choanoflagellates: they employ a stochastic reorientation search strategy and the sensing of oxygen concentration gradients is logarithmic. Finally, we render these results quantitative through the use of mathematical analysis of a modified Keller-Segel model (Keller and Segel, 1971).\n\n## Results\n\n### Experimental set-up\n\nThe study of aerotaxis in bacteria has led to numerous methods for creating spatial oxygen gradients (Shioi et al., 1987; Wong et al., 1995; Zhulin et al., 1996; Taylor et al., 1999), one of which is the exploitation of soft lithography techniques (Adler\u00a0et\u00a0al., 2012; Rusconi et al., 2014). Since PDMS, the most commonly used material for microfluidic chambers, is permeable to gases, gas channels can be introduced in the devices to allow gaseous species to diffuse into the fluid. For example, an oxygen gradient can be created using a source channel flowing with normal air and a sink channel flowing with pure nitrogen.\n\nOur device, shown schematically in Figure 2, is a modified version of that used by Adler, et al. (Adler et al., 2012). Viewed from above, the sample channel (yellow) consists of a wide observation chamber with thin inlet and outlet channels. The outlet leads to a serpentine channel that hinders bulk fluid flows. On each side of the sample channel are gas channels, the inlets of which are connected to a valve system allowing for the flow of air (20% oxygen) and nitrogen. The flow of air and nitrogen can be conducted in any combination and configuration, e.g. oxygen in one channel and nitrogen in the other, and can be easily swapped over. The PDMS chamber is plasma etched to a glass slide, and an extra glass slide is etched on top of the device, preventing air from diffusing in from the surrounding environment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig2-v1.jpg)\n\n**Figure 2.:** (a) Top view of the device. The sample channel (yellow) is loaded with culture and observed in the middle chamber. The side channels (red, blue) are gas channels in which oxygen and nitrogen may be flown. Scale bar: 10\u2009mm. (b) Side view of the device. PDMS is plasma etched to a glass slide, and a cover slip is plasma etched on top, centered on the imaging chamber, also shown in (a). Thickness of the channels are \u2248115\u00a0\u00b5m.\n\nExperiments were carried out immediately after plasma etching as the permeability of gases slowly decreases thereafter. Cultures of S. rosetta were introduced at the inlet of the device, and both the inlet and outlet were then closed to prevent evaporative flows. A gradient of oxygen was set up by having air flowing in one of the side channels and nitrogen in the other.\n\n### Aerotaxis in choanoflagellates\n\nOur main experimental result, shown in Figure 3a,b, is the observation that S. rosetta colonies accumulate at the oxygen-rich side and away from the oxygen-poor side, i.e. that they are aerotactic. We also found aerotaxis in the unicellular fast swimmer form (Dayel et al., 2011) of S. rosetta, showing that this is not an exclusive phenomenon to colonies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig3-v1.jpg)\n\n**Figure 3.:** (a\u2013b) Micrographs near an oxygen-rich wall at twice the resolution of that used in the density experiments. Scale bar: 50\u2009$\\mu$\u00b5m (a) Colonies approach a wall where the oxygen-concentration is high. (b) Colonies staying near this wall. (c) Density evolution of S. rosetta during experiment. At each time step the distribution is normalized to a probability distribution [colorbar units in \u00b5m\u22121]. Colors on the side indicate what gas is flowing in that side channel, red for oxygen and blue for nitrogen. Ncolonies~150, concentration ~5 \u00b7 106 mL\u22121. (d) Keller-Segel model with log-concentration input given by Equation 4, D = 865 \u00b5m2/s, \u03b1 = 1850 \u00b5m, vdrift = 5.2 \u00b5m/s.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Density evolution of S. rosetta during experiment [colorbar units in \u00b5m\u22121]. $N_{colonies}\u223c60$, concentration $\u223c2\u22c510^{6}mL^{\u22121}$. (b) Keller-Segel model with linear concentration input $\ud835\udcb1[c]=v_{drift}tanh\u2061(\\alphac_{y})$, with $\\alpha=8.2$, and otherwise same parameters as in main text Figure 3. (c) Keller-Segel model with log concentration input, same parameters as in main text Figure 3. Experiment and simulation was started in steady-state configuration of oxygen down and nitrogen up.\n\nWith the present microfluidic device we can explore more details of choanoflagellate aerotaxis by dynamically changing the oxygen boundary conditions, for instance by flipping the gradient direction or by removing all oxygen influx after a uniform distribution has been reached. Figure 3c shows the result of such a dynamic experiment over the course of $\u223c$3.5\u2009hr. The density is normalized for each frame and the noise present is partly due to colonies missing in the tracking in some frames. Many repetitions of the experiment show that the behaviour in Figure 3c is highly repeatable and robust to changes in the details of the cycling protocol (See Figure 3\u2014figure supplement 1). For consistency the figures in the main text are based on this specific protocol.\n\nWhenever one gas channel contains oxygen and the other nitrogen, the colonies swim towards the oxygen-rich side as further shown in Video 1 . In the time after a gas channel swap, the slope of the maximum density reveals the ensemble drift velocity vdrift. When there is oxygen in both gas channels, we observe that the density reaches an approximately uniform distribution within the time frame of the experiment. For periods in which nitrogen flows in both channels, this is not the case. Under these experimental conditions, the colonies accumulate in the middle of the chamber, where there is still some residual oxygen, as further shown in Video 2. The fact that in this nitrogen-only configuration the colonies accumulate mid-chamber shows that accumulation does not depend on the presence of a nearby surface. With only nitrogen flowing, eventually there will be no oxygen gradient. Nonetheless, we observed the colonies to stay in the middle of chamber even after 90 min (see Figure 3\u2014figure supplement 1). At that time, the highest oxygen levels are estimated by the diffusion equation to be less than ~0.2%.\n\n![Video 1.](https://cdn.elifesciences.org/articles/18109/elife-18109-media1.mp4.jpg)\n\n**Video 1.:** Experimental videos are colored by the output of the gas simulation. Colonies migrating from one side to other after a swap of nitrogen and air (138\u2013148\u2009min. in experiment of Figure 3).\n\n![Video 2.](https://cdn.elifesciences.org/articles/18109/elife-18109-media2.mp4.jpg)\n\nThis contrasting behaviour between the oxygen-only and nitrogen-only configurations suggests an asymmetry or non-linearity in the aerotactic response. If the response to oxygen concentration had been linear, the observation of the density band in the nitrogen-only section would imply similar density bands at the chamber edges in the oxygen-only section, which is not observed. Instead one might hypthesize that the colonies navigate along relative ($\u2207c/c$) instead of absolute ($\u2207c$) gradients, i.e. reacting to gradients that are comparable in magnitude to the background concentration. This is also known as logarithmic sensing, and we will confirm in the modelling section that this hypothesis can quantitatively explain the experiments.\n\n### Navigation strategy\n\nStrategies of taxis can be categorized into two main classes: deterministic and stochastic. In both strategies the swimming organism measures the attractant gradient (for small organisms by some temporal filter [Block et al., 1982; Celani and Vergassola, 2010]). A deterministic strategy, then, is one in which the organism directly steers towards the attractant, such as seen in sperm cells that modulate their flagellar beat to adjust directly the curvature and torsion of its swimming path in the gradient direction (Friedrich and J\u00fclicher, 2007; Jikeli et al., 2015). Contrasting is a stochastic strategy such as bacterial run-and-tumble locomotion (Berg, 1993), where modulation of the frequency of random reorientations biases the motion in the gradient direction without directly steering towards it.\n\nOne simple method of taxis results from an organism swimming faster when it is moving up the gradient, creating an overall bias towards the attractant. With the detailed colony-tracking in the present study it is possible to test whether this mechanism is in operation with S. rosetta. Figure 4\u2014figure supplement 1 shows examples of tracks during periods of uniform swimming (t = 70 min) and after a gas channel swap (t = 142 min). Figure 4 shows the evolution of the mean colony swimming speed v (green) as well as the component velocities vx (yellow) and vy (purple), averaged over ~150 colonies in each frame. For most times, the component velocities average to zero, but after a gas channel swap the y-component peaks. The ensemble average swimming speed in these sections, however, does not show an increase, suggesting that a velocity modulation is not the method of taxis. To quantify this further, the inset of Figure 4 shows the swimming speed in these sections plotted against the alignment to the gradient c^vy/v where c^=\u00b11 signifies the direction of the gradient. The plot shows a very small (~3%) change in swimming speed going up the gradient. Velocity-biased taxis can be described by v(t)=v(p^)p^, where e.g. v(p^)=v(1+\u03b3p^\u22c5\u2207c/|\u2207c|), \u03b3 being the velocity-modulation taxis parameter. p^, the direction of swimming, is unbiased by the attractant field c and evolves by rotational diffusion. To obtain a drift velocity ~1/3 of the swimming velocity, as we find for S. rosetta in the following section, the velocity modulation would have to be \u03b3= 2/3 for a two-dimensional swimmer and \u03b3 = 1 in three dimensions, much larger than the ~3% observed. We conclude that the primary mechanism of aerotaxis in S. rosetta is therefore not a modulation of swimming speed.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig4-v1.jpg)\n\n**Figure 4.:** Evolution of mean speed (green, right axis) and velocity in the $x$-direction (yellow, left axis) and $y$-direction (purple, left axis), $y$ being along the gradient of oxygen. Left and right axes have equal ranges. Side bars indicate gas flowing, oxygen (red) or nitrogen (blue). The peaks of $v_{y}$ do not quite reach the true drift velocity due to smoothing of the curves. Inset shows the speed as function of alignment with the gas gradient $c^\u2062v_{y}/v$ at times after a swap. $c^=1$ if the gradient is up and =\u00a0\u22121 if down.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Trajectories are from the experiment of the main text. (a) t = 70 min. Trajectories at uniform oxygen concentration. (b) t = 142 min. Migration downwards after a swap to oxygen in the lower channel. Tracks were obtained by the algorithm described in methods. Scale bars: 150 \u00b5m.\n\nS. rosetta colonies swim along noisy helical paths, and each colony displays distinct helix parameters (Kirkegaard et al., 2016). To perform any kind of statistical angle analysis, we consider ensemble average quantities: the speed v and rotational diffusion dr, and average helix rotations out. Figure 5a shows the angular distribution data during the swaps, where, for the purposes of displaying all the data in a single graph, we have let \u03b8\u2192\u2212\u03b8 for times when the oxygen gradient were pointing down. This distribution favors the up-direction \u03b8=\u03c0/2. More interesting is the distribution of reorientations. For this we define the angle turned by a colony in a time \u0394t as \u0394\u2062\u03d5=|\u03b8\u2062(t+\u0394\u2062t)-\u03c0/2|-|\u03b8\u2062(t)-\u03c0/2| such that it is positive if the turn is in the direction of the gradient and negative otherwise, and choose \u0394t low enough that \u2212\u03c0<\u0394\u03d5<\u03c0. Figure\u00a05b shows this distribution. The distribution is centred on zero, revealing that the colonies do as many turns in the wrong direction as in the correct direction. This indicates that the colonies navigate by a stochastic strategy.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig5-v1.jpg)\n\n**Figure 5.:** Experimental data in grey bars. Deterministic model in purple and stochastic in green. (a) Distribution of $\\theta$. $\\theta=\\pi/2$ is along the gradient. (b) Change in angle $\u0394\u2062\u03d5$ for \u0394t = 0.65 s. Positive change corresponds to a turn towards the gradient. Deterministic parameters: $\u03f5_{d}=0.28\u2062s^{-1},d_{r}=0.52\u2062s^{-1}$. Stochastic parameters: $\u03f5_{s}=0.55,d_{r}=0.33\u2062s^{-1}$.\n\n### Model\n\nWe study the spatio-temporal evolution of the choanoflagellate colony population within the observation chamber with the Keller-Segel model (Keller and Segel, 1971), which has broad applicability for taxis (Tindall et al., 2008). In describing the phenomenon of aerotaxis the two quantities of interest are the colony population density $\u03c1(x,t)$, and the oxygen concentration $c(x,t)$. The former obeys the Keller-Segel equation\n\n$$\n\\frac{\u2202\u03c1}{\u2202t}=D\u2207^{2}\u03c1\u2212\u2207\u22c5(\ud835\udcb1[c]\u03c1)\n$$\n\nand the latter follows the diffusion equation,\n\n$$\n\\frac{\u2202c}{\u2202t}=\u2207\u22c5(D_{c}\u2207c).\n$$\n\nThe functional $\ud835\udcb1$ specifies the population drift velocity\u2019s dependency on the local oxygen concentration, i.e. the drift of cells due to taxis. For a fixed response, the functional would equal a constant $\ud835\udcb1=v_{drift}$. $D$\u00a0and $D_{c}(x)$ are the colony and oxygen diffusion constants, the latter of which varies with position inside the microfluidic device, with values $D_{c,PDMS}=3.55\\times10^{\u22123}mm^{2}/s$ in PDMS (Cox and Dunn, 1986) and $D_{c,water}=2.10\\times10^{\u22123}mm^{2}/s$ in water (Cussler,\u00a01997).\n\nUsing in-house software, we solve Equation 2 on a cross-section of the microfluidic device with time-dependent boundary conditions corresponding to the experimental protocols. Gas channels with oxygen flowing have the condition\u00a0$c=20%$ (for theory the unit of oxygen is not important and we find percentage to be the most intuitive measure). For channels with nitrogen flowing $c=0$. Glass interfaces have no-flux conditions $n^\u22c5\u2207c=0$, where $n^$ is the surface normal.\n\nA snapshot from the numerical studies is shown in Figure 6a at a time following a swap of nitrogen and oxygen channels, thus showing residual oxygen above the channels now filled with nitrogen and vice versa. The simulation can now be evaluated at the position of the observation chamber. Note that the no-flux conditions at the glass interface render the concentration gradients in the z-direction very small, so the precise height of evaluation is not significant. The simulation with boundary conditions corresponding to those in the experiment of Figure 3c is shown in Figure 6b. To a very good approximation the concentration field is constant along the x-direction. Figure 6c shows the oxygen field evaluated at y = \u2212250 \u00b5m (red curve). Neglecting the consumption of oxygen by the colonies, these results provide the input concentration field c for the Keller-Segel model.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig6-v1.jpg)\n\n**Figure 6.:** (a) Simulation of 2D cross-section of the device. Oxygen concentration boundary conditions are imposed at the gas channel positions. Snapshot shows t = 110 min, ~1.5\u2009min after the swap. White line indicates evaluation location at the observation chamber. (b) Evolution of oxygen concentration at z = 100 \u00b5m. (c) Simulation at y = \u2212250 \u00b5m. Oxygen percentage in red (left axis), and spatial gradient in purple normalized to fit in [\u22121, 1] (right axis), response function $tanh\u2061(\\alpha\u2207c(x,t)/c(x,t))$ in green (right axis).\n\nThe simplest and most\u00a0widely-used response functional in the Keller-Segel model is linear in spatial gradients, $\ud835\udcb1=\\beta\u2207c(x,t)$, where $\\beta$ is termed the taxis coefficient. Such a response can, however, reach unrealistic drift velocities, i.e. higher than the swimming velocity, if the oxygen gradients are large. This defect can be eliminated by various functional forms (Tindall et al., 2008), such as the choice\n\n$$\n\ud835\udcb1[c]=v_{drift}tanh\u2061(\\alpha|\u2207c|)\\frac{\u2207c}{|\u2207c|},\n$$\n\nwhere $v_{drift}$ must be smaller than the swimming velocity. This choice behaves linearly for small gradients, but tends asymptotically to a maximum value for large gradients. Most of the behaviour of Figure 3c can be explained by this model (See Figure 3\u2014figure supplement 1), but not the section where nitrogen is flowing in both side channels. The reason is the aforementioned asymmetry between the sensing-signalling in low versus high oxygen concentrations, which we argued may be explained by relative gradient sensing, also known as logarithmic sensing since $\u2207log\u2061c=\u2207c/c$.\n\nTo examine quantitatively this hypothesis we consider\n\n$$\n\ud835\udcb1[c]=v_{drift}tanh\u2061(\\alpha|\\frac{\u2207c}{c}|)\\frac{\u2207c}{|\u2207c|}.\n$$\n\nFor unidirectional gradients (say, in the y-direction) this expression reduces to $\ud835\udcb1[c]=v_{drift}tanh\u2061(\\alphac_{y}/c)y^$, where $c_{y}=\u2202c/\u2202y$. Since the logarithmic sensing cannot be maintained at infinitely small concentrations, there must naturally be some lower cutoff to this expression in absolute concentration levels. Nonetheless, from a modelling perspective we can ignore this for the present experiments with nitrogen-only sections lasting less than 1.5\u2009hr as discussed. Figure 6c shows that the spatial oxygen gradient $c_{y}$ (purple curve) compares to $y^\u22c5\ud835\udcb1[c]$ of Equation 4 (green curve) at all times except in the nitrogen-only section, where the log-response function does not decay towards zero. A positive value of the response function means a positive (y) drift velocity.\n\nThe Keller-Segel equation with log-sensing is able to explain all sections of the experiment, as demonstrated in Figure 3d. The parameters obtained from a numerical fit include the drift velocity\u00a0$v_{drift}$ = 5.2 \u00b5m/s (which should be compared to the ensemble average swimming speed $v$ = 16.5 \u00b5m/s, the speed averaged over all colonies) and the diffusion constant $D$ = 865 \u00b5m2/s. Using the ensemble-averaged speed, the diffusion constant can be related to an effective rotational diffusion constant $D_{r}=v^{2}/2D=0.16s^{\u22121}$.\n\nThe parameter $v_{drift}$ represents the coupling between the oxygen-gradient response and the resulting population drift, but it is a purely phenomenological quantity in which the underlying microscopic mechanism of aerotaxis is hidden. To explain the origin of $v_{drift}$ we must consider the navigation strategy.\n\nTo distinguish deterministic and stochastic strategies we introduce two effective models and in the following consider them in the context of a constant oxygen gradient along the y-axis, but the generalization is immediate. We furthermore ignore translational diffusion due to thermal noise, since this contribution is orders of magnitude smaller than that of active diffusion. Thus in a quasi-2D system, an organism\u2019s path is described by\n\n$$\ndx=(cos\u2061\\theta(t)sin\u2061\\theta(t))vdt,\n$$\n\nwhere $\\theta$ is the instantaneous swimming direction, and we choose motion along the positive $y$-axis ($\\theta=\\pi/2$) to be toward the attractant.\n\nIn the deterministic model, the organisms actively steer towards the gradient. We model this with the Langevin equation\n\n$$\nd\\theta=\u03f5_{d}cos\u2061\\thetadt+\\sqrt{2d_{r}}dW(t),\n$$\n\nwhere W(t) is a Wiener process for which \u27e8dW(t)dW(t\u2032)\u27e9=\u03b4(t\u2212t\u2032). This process is illustrated in Figure 7a, yellow arrows showing \u03f5dcos\u2061\u03b8\u0394t and purple arrows 2dr\u0394W. For the stochastic model we take a \u2018continuous\u2019 version of run-and-tumble, in which the rotational diffusion is modulated(7)d\u03b8=2dr(1\u2212\u03f5ssin\u2061\u03b8)dW(t),\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18109/elife-18109-fig7-v1.jpg)\n\n**Figure 7.:** Time evolves from left to right. Orientations, shown by green arrows, are trying to align to up-motion, $\\theta=\\pi/2$, indicated by red (oxygen) at the top and blue (nitrogen) at the bottom. (a): Deterministic strategy, described by Equation 6. Deterministic part in yellow and stochastic part in purple. The deterministic part is always in the correct direction. (b): Stochastic strategies, described by Equation 7. All steps are stochastic, but largest when furthest away from $\\theta=\\pi/2$.\n\nwhere $\u22121\\leq\u03f5_{s}\\leq1$ and the multiplicative noise is interpreted in the It\u014d sense. This process is illustrated in Figure 7b. In both models, $\u03f5$ is an effective ensemble average response. To compare to the experiments, $\u03f5$ should be replaced by a function coupled to the gas concentration field through $\ud835\udcb1[c]$, thus coupling to Equation 5. The steady state gradient in the experiment is approximately linear, and thus as a first approximation Equations 6, 7 should describe the angle statistics in the time between the swap of gas channels and reaching the opposite side.\n\nIn our experiments, after a flip in the oxygen gradient direction, the colonies reach the opposite wall in a time comparable to that for oxygen to diffuse across the chamber. Thus, a true steady state is not reached, but during the intermediate times a steady state approximation is accurate. Solving the Fokker-Planck equations corresponding to the systems Equations 6 and 7 in steady-state, we obtain theoretical angle distributions (see Materials and methods). Both models are able to describe the data in Figure 5a well, with the deterministic model (purple) fitting the down-gradient swimming best, and the stochastic model (green) fitting the up-gradient swimming best. Both fits involve a single parameter, $k_{d}=\u03f5_{d}/\\sqrt{2d_{r}}$ in the deterministic model and $\u03f5_{s}$ in the stochastic one.\n\nWe now move beyond steady-state distributions to examine the detailed statistics of the trajectories themselves. We recall our definition of the angle turned by a colony in a time $\u0394t$ as $\u0394\u03d5=|\\theta(t+\u0394t)\u2212\\pi/2|\u2212|\\theta(t)\u2212\\pi/2|$ such that it is positive if the turn is in the direction of the gradient and negative otherwise. The Equations (6) and (7) imply distributions of $\u0394\u03d5$ (see Materials and methods). Figure 5b shows the best fit of both models to the data. For the stochastic model (green) $\u03f5_{s}$ is known and the fit is in $d_{r}$ and matches well. The deterministic (purple) is constrained by $k_{d}=\u03f5_{d}/\\sqrt{2d_{r}}$, and the fit can be done in $d_{r}$ as well. We see clearly that the deterministic model does not provide a satisfactory fit to the data. In detail, the value of $\u03f5_{d}$ needed to fit the data in Figure 5a shifts the mean of $p_{d}(\u0394\u03d5)$ in the positive direction. This result persists with any amount of smoothing applied to the data, averaging out active rotations. We thus conclude that the colonies navigate by a stochastic strategy, and that the ensemble angle statistics can be captured by this simple model.\n\nThe navigation strategy model must be consistent with the Keller-Segel population dynamics model. Having shown that the data favor a stochastic model, we may now couple Equation 7 to Equation 5 and let the Fokker-Planck equation (Materials and methods) replace the Keller-Segel model. Such an approach leads to similar results as Figure 3d. Furthermore, we now recognize that the Keller-Segel model is a quasi-stationary approximation and we can calculate the stationary-approximation drift velocity\n\n$$\nv_{drift}=v\u27e8sin\u2061\\theta\u27e9=v[1/\u03f5_{s}\u2212\\sqrt{1/\u03f5_{s}^{2}\u22121}].\n$$\n\nIn other words $\u03f5_{s}=(2vv_{drift})/(v^{2}+v_{drift}^{2})$ is the ratio of the squared geometric mean to the quadratic mean of the average and drift velocities. For the fitted $\u03f5_{s}=0.55$, $v_{drift}\u22480.3v\u22485$\u00a0\u00b5m/s, consistent with the fitted value in the Keller-Segel model.\n\n## Discussion\n\nWe have shown that colonies of S. rosetta can navigate along gradients of oxygen, thus exhibiting positive aerotaxis. The cells navigate along relative oxygen gradients and the navigation strategy is stochastic in nature, achieved by modulating not speed but direction of swimming.\n\nThe experimental observation that choanoflagellates are aerotactic raises a number of questions. One concerns the actual sensing mechanism, and how this compares to those of animals, given the close evolutionary relationship between choanoflagellates and metazoans. In animals, oxygen concentrations can be sensed by the highly-conserved hypoxia-inducible factor (HIF) transcription factor pathway (Loenarz et al., 2011; Kaelin and Ratcliffe, 2008; Rytk\u00f6nen et al., 2011). At normal oxygen levels, the activity of specific prolyl-hydroxylase (PHD) enzymes labels the HIF protein complexes for degradation. At low oxygen levels, however, PHD activity is inhibited, leading to elevated HIF levels. The transcription factor activity of HIF up-regulates expression of genes involved in hypoxia response (e.g. glycolysis enzymes) for survival in low-oxygen conditions (Greer et al., 2012). The genes involved in HIF signalling are widespread in metazoans, with evidence suggesting that some components of this pathway are descended from prokaryotic ancestors (Scotti et al., 2014).\n\nPreliminary experiments involving exposing S. rosetta cultures to DMOG (an inhibitor of the prolyl-hydroxylase step in the HIF pathway [Fong and Takeda, 2008]) had no observable effect on aerotaxis within our experimental system (data not shown). This is perhaps unsurprising, given that choanoflagellates lack some important components of the HIF pathway (Rytk\u00f6nen et al., 2011). Additionally, the aerotactic response observed here is acute, within a timeframe on the order of seconds to minutes, rather than the being a longer-term response to lowered oxygen levels by modulation of gene expression. In certain aerotactic bacteria, it is known that oxygen concentrations are measured indirectly via energy-sensing, which can then influence the rotation of the bacterial flagella between running and tumbling (Taylor et al., 1999). An analogous mechanism may be at play in choanoflagellates, possibly via reactive oxygen species (Cash et al., 2007) and oxygen-sensitive ion channels (Lahiri et al., 2006; Ward, 2008) modulating the beating rate of the flagella of each S. rosetta cell. Thus the question of the molecular and cellular mechanisms underpinning aerotaxis in choanoflagellates is a promising avenue for further research.\n\nOxygen is implicated as having an important influence on animal evolution (Nursall, 1959; Lenton et al., 2014), with some hypotheses that the emergence of complex animal ecosystems (Sperling et al., 2013) were only triggered when oxygen levels rose above certain thresholds. Sponges, believed to be the most basal animal group, were recently shown to have very low oxygen requirements, disputing the importance of oxygen in early animal evolution (Mills et al., 2014). Our results raise the possibility that the common ancestor from which choanoflagellates and animals evolved was aerotactic, and that oxygen sensing and responding have thus been under strong selection throughout the holozoans. If the ancestors of animals and choanoflagellates were strongly aerotactic, this would be indicative of the importance of oxygen as a resource during the Precambrian (Lyons et al., 2014). Equally, it could be the case that choanoflagellates themselves have evolved aerotaxis after the split from the animal stem lineage. To answer this question, the oxygen requirements and aerotactic capabilities of other opisthokont groups, e.g. ichthyosporeans, filasterians (Ruiz-Trillo et al., 2008; Seb\u00e9-Pedr\u00f3s et al., 2013), as well as basal animals such as sponges, ctenophores and placozoans (Dunn et al., 2008; Ryan et al., 2013; Pisani et al., 2015; Whelan et al., 2015), requires investigation. Such an analysis can be further complimented by determining the oxygen sensing and signalling mechanisms across the opisthokont phylogeny.\n\nIf aerotaxis was key to the ancestral unicellular holozoan, it is crucial that the evolution to multicellularity did not hinder this ability. Our experimental results show that both the unicellular and colonial morphotypes of S. rosetta can perform efficient aerotaxis and navigation in general, despite lacking coordination between the constituent cells of the colony (Kirkegaard et al., 2016). Therefore, an evolutionary transition to a multicellularity resembling the unicellular-to-colonial transition in S. rosetta (Dayel et al., 2011) would not require additional cell-cell communication mechanisms to coordinate navigation. Not only would this allow aerotaxis towards oxygen, but also taxis in response to other stimulants, such as bacterial signals (Woznica et al., 2016). This is a particular feature of the stochastic navigation strategy, which works equally well for both single cells and colonies formed from multiple units of the same cells.\n\nWe have described the stochastic strategy of S. rosetta in terms of an effective model. The effective bias parameter $\u03f5_{s}$ is the result of flagella modulation. Flagella can be imaged on colonies stuck to the microscope slide (Kirkegaard et al., 2016), but measuring directly the flagella modulation is challenging, since the oxygen changes that can be induced in a microfluidic device are on a time scale of minutes, whereas the flagella beating is on a time scale of tens of milliseconds (Kirkegaard et al., 2016). The swimming trajectories suggest that this modulation is a mixture of many types, ranging from slow to vigorous, as also seen in other organisms (Jikeli et al., 2015), but direct imaging is needed to make more quantitative statements.\n\nWe have shown that in spatio-temporal varying environments, considerations of population dynamics can distinguish between linear- and logarithmic-sensing mechanisms, and concluded that choanoflagellates do logarithmic sensing. The fact that conclusions of logarithmic sensing can be made from analysis of the population dynamics alone shows that individual tracks are not needed and thus allows for such analysis in dense experiments. Logarithmic sensing is a key attribute for survival: it allows sensing of and reacting to gradients in very low concentration environments, while still being able to effectively navigate along large gradients. Logarithmic sensing has also been experimentally observed for other species, e.g. bacteria (Mesibov et al., 1973; Kalinin et al., 2009).\n\nWith logarithmic sensing, cells only navigate along oxygen gradients that are significant compared to the absolute concentration. This is a well-known phenomenon also from human behaviour, where, for instance, dim lights are seen only when it is dark and weak sounds heard only when it is quiet. It is known as Weber\u2019s law (Ross, 1996), which states that the magnitude of just-noticeable differences of a stimuli is proportional to the stimuli magnitude itself. This is closely related to the\u00a0Weber-Fechner law, stating that stimuli magnitude grows logarithmically with the actual signal, which we have found to be in agreement with the experimental observation of S. rosetta aerotaxis.\n\nFor microorganisms, a Weber lower limit can be understood, at least partly, as a physical limitation. Because of thermal fluctuations, the error on any concentration gradient measurement increases with the local absolute concentration (Berg and Purcell, 1977; Endres and Wingreen, 2008), and thus it immediately follows that the limit of just-noticeable gradients must decrease with absolute concentration. Quantitatively, the noise scales as $\u223cc^{1/2}$ in the absolute concentration (Endres and Wingreen, 2008). Such a scaling is not observed for bacteria\u2019s just-noticeable limits, where instead Weber\u2019s law hold (Mesibov et al., 1973). Sensor adaptation enables the bacteria to have the linear scaling $\u223cc$\u00a0(Sourjik and Wingreen, 2012) leading to logarithmic sensing and high dynamic range, but it is nonetheless the case that for purely physical reasons a lower limit scaling with concentration must be present. The fitting of the Keller-Segel model to the population data were optimal precisely for relative gradient sensing. Sensing functionals such as $\u2207c/\\sqrt{c}$ or $\u2207c/c^{2}$ only decreased the fit quality. This implies that Weber\u2019s law and logarithmic sensing, at least to a good approximation, is occurring in chaonoflagellates. This scaling could be further studied by measuring the aerotactic response to an order-of-magnitude range of concentration gradients under a range of absolute concentrations. Precision control of gas mixtures would allow the extraction of any biological deviations from Weber\u2019s law and potentially reveal a transition to the physical limit of $\\sqrt{c}$ scaling for very low concentrations, i.e. at the limit of sensing.\n\n## Materials and methods\n\n### Culturing S. rosetta\n\nS. rosetta were cultured polyxenicly in artificial seawater (36.5\u00a0g/L Marin Salts [Tropic Marin, Germany]) with organic enrichment (4\u00a0g/L Proteose Peptone [Sigma-Aldrich, USA], 0.8 g/L Yeast Extract [Fluka Biochemika]) at 15\u00a0\u00b5l/mL$\\mu$, and grown at 23\u00b0C, split weekly. Cultures were centrifuged to reach the high concentrations, $\u223c5\\times10^{6}ml^{\u22121}$, used in experiments.\n\n### Microfluidic device & imaging\n\nMicrofluidic devices were manufactured using standard soft-lithography techniques. The master was produced by spinning SU8-2075 (MicroChem, USA) at 1200\u2009rpm to a thickness of ~115\u00a0\u00b5m. Chambers were cast in PDMS, Sylgard 184 (Dow Corning, USA), and plasma etched to the glass slides. Cultures were concentrated by centrifugation before loaded into the device. Gas cylinders containing pure nitrogen and air (20% oxygen) were connected via a system of valves to the gas channels of the device. Experiments were filmed (Imaging Source, Germany) in bright field at 10 fps on an inverted Zeiss LSM 700 Microscope.\n\n### Data processing\n\nTo track colonies, we first generated a running-median video, where each pixel in each frame of the experimental video is the median of that pixel taken over the neighbouring ~2.5\u00a0s of video. This method extracts an estimated background, i.e. a video without the colonies present. Subtracting this from the original video, the resulting video contains only the colonies and noise. Band-pass filters were used to remove the noise, and finally the colony positions were found by locating local maxima in the Gaussian filtered video.\n\nDensity distributions were estimated by first calculating\n\n$$\n\u03b7(y)=\\frac{\\sumiexp\u2061(\u2212(y_{i}\u2212y)^{2}/2\\sigma^{2})}{\\int_{y_{0}}^{y_{1}}exp\u2061(\u2212(y^{\u2032}\u2212y)^{2}/2\\sigma^{2})dy^{\u2032}},\n$$\n\nwhere $y_{i}$ are the tracked positions, $\\sigma$ a standard deviation of separation, and the denominator adjusts for boundary effects. Hereafter $\u03c1(y)=\u03b7(y)/\\int_{y_{0}}^{y_{1}}\u03b7(y^{\u2032})dy^{\u2032}$ is the normalized density.\n\nFor velocity and angle statistics, the tracked positions were linked solely by proximity. If the image analysis algorithm failed to identify a given colony over fewer than three successive frames the integrity of the track was preserved by keeping a running memory. After the trajectories were obtained, spurious trajectories less than three frames in length were removed. Examples of trajectories are shown in Figure 4\u2014figure supplement 1. The final tracks contain ~150 trajectories in each frame, varying slightly over the course of the experiment due to loss of colonies in the tracking and swimming in and out of observation chamber.\n\nOxygen diffusion and Keller-Segel equations were numerically solved using in-house software with finite difference spatial discretisation and implicit time-stepping.\n\n### Effective stochastic models\n\nGiven the stochastic dynamics (6) for individual particles following a deterministic strategy, the probability distribution function $p_{d}(\\theta,t)$ for the population obeys the Fokker-Planck equation\n\n$$\n\\frac{\u2202p_{d}}{\u2202t}=d_{r}\\frac{\u2202^{2}p_{d}}{\u2202\\theta^{2}}\u2212\u03f5_{d}\\frac{\u2202}{\u2202\\theta}(cos\u2061(\\theta)p_{d}).\n$$\n\nThe steady state distribution is found to be a von-Mises distribution\n\n$$\np_{d}(\\theta)=\\frac{1}{2\\piI_{0}(\u03f5_{d}/\\sqrt{2d_{r}})}exp\u2061(\\frac{\u03f5_{d}sin\u2061\\theta}{\\sqrt{2d_{r}}}),\n$$\n\nwhere $I_{0}$ is the modified Bessel function of order zero. On the other hand, for the Fokker-Planck equation for the stochastic model,\n\n$$\n\\frac{\u2202p_{s}}{\u2202t}=\\frac{\u2202^{2}}{\u2202\\theta^{2}}(d_{r}(1\u2212\u03f5_{s}sin\u2061\\theta)p_{s}),\n$$\n\nwe find the steady-state distribution\n\n$$\np_{s}\u2062(\\theta)=\\frac{1}{2\u2062\\pi}\u2062\\frac{\\sqrt{1-\u03f5s2}}{1-\u03f5_{s}\u2062sin\u2061\\theta}.\n$$\n\nIn the time right before a channel swap, we have $p(\\theta)\u22481/2\\pi$, since the colonies stay near the wall. In the deterministic model, for small $\u0394t$, $\u0394\u03d5=|\\theta(t+\u0394t)\u2212\\pi/2|\u2212|\\theta(t)\u2212\\pi/2|$ is composed of deterministic $\\delta=\u03f5_{d}cos\u2061(\\theta)\u0394t$ and stochastic $\u03be=\\sqrt{2d_{r}}\u0394W$, where $\u0394W\u223c\\sqrt{\u0394t}$. Since we are assuming $p(\\theta)=1/2\\pi$, we have $p(\\delta)=1/\\pi\\sqrt{(\u03f5_{d}\u0394t)^{2}\u2212\\delta^{2}}$ for $\\delta\\in(\u2212\u03f5_{d}\u0394t;\u03f5_{d}\u0394t)$. The distribution of $\u0394\u03d5=|\\delta|+\u03be$ is then found as the convolution\n\n$$\np_{d}(\u0394\u03d5)=\\int_{0}^{\u03f5_{d}\u0394t}\\frac{exp\u2061(\u2212(\u0394\u03d5\u2212\\delta)^{2}/4d_{r}\u0394t)}{\\sqrt{\\pi^{3}d_{r}\u0394t[(\u03f5_{d}\u0394t)^{2}\u2212\\delta^{2}]}}d\\delta,\n$$\n\nwhich can be evaluated numerically by Gaussian quadrature. In the stochastic model there is only $\u03be=\\sqrt{2d_{r}(1\u2212\u03f5_{s}sin\u2061\\theta)}\u0394W$, but this is conditional on $\\theta$. We marginalize for the final distribution\n\n$$\np_{s}(\u0394\u03d5)=\\int_{\u2212\\pi}^{\\pi}\\frac{exp\u2061(\u2212\u0394\u03d5^{2}/4d_{r}(1\u2212\u03f5_{s}sin\u2061\\theta)\u0394t)}{\\sqrt{16\\pi^{3}d_{r}(1\u2212\u03f5_{s}sin\u2061\\theta)\u0394t}}d\\theta.\n$$\n",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "4672d1a5-fffd-43a8-9db3-05aa1b8115c6",
+      "submission_id": "c3e1f2bd-49ae-4258-94bd-5d9f593cb686",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard M Berry, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18109.014](https://doi.org/10.7554/eLife.18109.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Aerotaxis in the Closest Relatives of Animals\" for consideration by eLife. Your article has been favorably evaluated by Naama Barkai as the Senior Editor and three reviewers, one of whom, Richard M Berry (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript presents experimental evidence and theoretical modelling of the following:\n\n1) Choanoflagellates, small colonial eukaryotes, show taxis towards oxygen.\n\n2) Oxygen responses are proportional to relative rather than absolute oxygen gradients (logarithmic).\n\n3) Taxis is achieved by modulation of swimming direction, not swimming speed.\n\n4) Modulation of direction is stochastic, not deterministic.\n\nThe data are convincing, the modelling thorough and appropriate, and the conclusions sound.\n\nEssential revisions:\n\n1) The paper reads as written from a theoretical perspective, with the experimental data as an accessory. This needs to be reversed, the significance of the paper is in the experimental data. Results 1, 3 and 4 above are directly demonstrated by the data of Figures 3, 6 and 8B respectively, and this should not be hidden behind the modelling as it currently is. The asymmetry between all-air and all-nitrogen flows is also evident in Figure 3, and the inference of logarithmic sensing from this is simple to make without quantitative modelling. The data should be described and the inferences drawn, and the modelling relegated to its proper place as quantitative verification of the inferences that can be made directly from the data.\n\nCorrespondingly, the data and their analysis need to be described much more thoroughly. The algorithms for obtaining tracks need to be better described than the present \"Colonies were tracked using custom in-house software\". Also, show some examples of tracks, and give statistics i.e. numbers of tracks used for each result presented, and any selection or other processing of tracks that was done. For example the Discussion states, \"The fact that such conclusions can be made from population dynamics alone allows similar analysis to be done in dense populations, where long individual tracking is not possible.\" \u2013 but nowhere in the manuscript is it possible to know whether current experiments were done under this condition or not!\n\n2) The statement and discussion of the significance of the results needs to be altered and expanded.\n\nAt present, the entire paper is based on the premise that choanoflagellates are important to study, because, as the closest living unicellular relative of animals, they can provide unique insight into the origin of animal multicellularity. While this might be true, it is a tricky argument to make correctly, and many authors fall into the trap of assuming that choanoflagellates are representative of the actual ancestor of animals. To be clear, choanoflagellates are not representative of the actual ancestor of animals \u2013 they diverged from the actual ancestor of animals ~800 million years ago and have been changing (evolving!) all that time. Indeed, these authors make this mistake as well. In last sentence of the Discussion, they say \"Our results add to this discussion, in showing that their evolutionary precursors, the choanoflagellates, have evolved to navigate actively towards oxygen.\" The problem with this logic is that, of course, choanoflagellates are not the evolutionary precursor to animals- those are long extinct. Without looking at aerotaxis in a phylogenetic context, including many unicellular linages of opisthokonts, we don't know if this particular lineage of choanoflagellates evolved aerotaxis prior to the split with animals, when oxygen levels were a fraction of what they are today, or if they evolved it during the intervening ~800 million years. In fact, a trait like oxygen is a particularly poor candidate for the choanoflagellate-as-protoanimal comparison (in contrast to, say, a mechanism of cellular signaling that is highly conserved), since oxygen levels have changed dramatically during the period of time after which choanoflagellates split from the animal stem lineage, and the ability to respond to oxygen is almost certainly a trait that is under strong selection. Thus, while I completely believe the authors that modern-day S. rosetta is positively aerotactic, this work does not tell us anything about whether the ancestor of animals was aerotactic.\n\nInstead, the multicellularity argument could be moderated and still be interesting. For example, while making it clear that this work does not tell us whether aerotaxis evolved prior to the origin of animals, it shows that it is a possibility. The authors should suggest how, with further experiments in phylogenetically diverse unicellular lineages diverging from the animal stem group, researchers could test this hypothesis using pretty standard phylogenetic tools.\n\nThey should also spend some energy in the Discussion explaining why it matters if the unicellular ancestor of animals is aerotactic. We already know that they were capable of aerobic metabolism \u2013 how would it change our view of animal multicellularity to know that they swim towards this key resource? Since they lose the intrinsic importance of a discovery (e.g., that the ancestor of animals was aerotactic), it is important to explain why the general idea is important.\n\nOne possibility might be that the importance lies in showing that a form of apparently disorganized multicellularity, which may or may not model early metazoan life, but models it as well as anything that we are aware of, is capable of any taxis. Although aerotaxis is relatively common, it is still surprising that S. rosetta can do it, because it does not coordinate its flagella (cf. the Volvocales, in which there is a lot of high profile work on e.g. phototaxis). This suggests possibilities for how early multicellularity may have worked.\n\n3) Logarithmic sensing requires some simple explanation for non-mathematical readers. Simply put, response is proportional to relative rather than absolute concentration gradient. This result requires more discussion. Give more examples of logarithmic sensing from literature. Are there any exceptions, where sensing is linear, or is logarithmic sensing universal?\n\n4) The entire evidence for the logarithmic response is the persistence of a band of choanoflagellates in the center of the device as oxygen is slowly depleted. This one observation is interpreted a quite complicated model, which has some parametric freedom (although the model fitting is well justified and reasonable). Can one design a different control experiment in which logarithmically sensing cells are predicted to behave differently than cells that have the flux-response given in Equation (3)? E.g. some kind of pulse chase in which they follow a declining flux gradient. It is difficult to imagine how this experiment can be performed, but the point is that the fact that one observation is hard to predict with an existing model only suggests possibilities for alternate models. Additional experiments allow these possibilities to be explored.\n",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ad4054d7-3e75-4707-8528-a7a5cdea5873",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C1",
+      "claim": "Choanoflagellates are the closest unicellular relatives of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "As the closest unicellular relatives of animals, choanoflagellates serve as useful model organisms for understanding the evolution of animal multicellularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established scientific literature and represents established scientific knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "f2541cde-d0e8-4a11-9959-76e3baca6028",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C2",
+      "claim": "Increasing ocean oxygen levels in the Precambrian are thought to have influenced the emergence of complex multicellular life.",
+      "claim_type": "EXPLICIT",
+      "source": "An important factor in animal evolution was the increasing ocean oxygen levels in the Precambrian, which are thought to have influenced the emergence of complex multicellular life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established scientific consensus about Precambrian conditions and animal evolution.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "10cbb024-857c-403d-aa33-014c6b8926d8",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C3",
+      "claim": "Salpingoeca rosetta displays positive aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a microfluidic device that allows spatio-temporal variations in oxygen concentrations, we report the discovery that S. rosetta displays positive aerotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data presented in the manuscript, including Figures 3 and Videos 1-2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "11bcfa2a-7a50-4032-8110-cba3975f726d",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C4",
+      "claim": "S. rosetta exhibits logarithmic sensing of oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the spatial population distributions provides evidence for logarithmic sensing of oxygen, which enhances sensing in low oxygen neighborhoods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data analysis and mathematical modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d5b48d25-30c8-4f05-9b58-b92fafb95c81",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C5",
+      "claim": "Choanoflagellate aerotaxis is consistent with stochastic navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of search strategy models on the experimental colony trajectories finds that choanoflagellate aerotaxis is consistent with stochastic navigation, the statistics of which are captured using an effective continuous version based on classical run-and-tumble chemotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of trajectory data and comparison with mathematical models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "70bb1d91-9f0e-4b8b-a71c-01b230570238",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C6",
+      "claim": "Bacteria perform chemotaxis towards nutrients.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria do chemotaxis towards nutrients (Adler, 1969; Berg, 1993) and away from toxins (Tso and Adler, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "5a1f08c8-c298-4627-9ab6-60008ab09edb",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C7",
+      "claim": "Algae perform phototaxis towards light.",
+      "claim_type": "EXPLICIT",
+      "source": "Algae do phototaxis towards light (Yoshimura and Kamiya, 2001; Drescher et al., 2010) and gyrotaxis along gravitational potentials (Kessler, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9bb1bfab-4131-4003-9db1-ea8276787dab",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C8",
+      "claim": "Aerotaxis is well-characterized in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Aerotaxis, defined as oxygen-dependent migration, is well-characterized in bacteria (Taylor et al., 1999), but is poorly studied in more complex organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "51059665-f31a-4300-ba9f-4fc991a111af",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C9",
+      "claim": "Aerotaxis is poorly studied in complex organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Aerotaxis, defined as oxygen-dependent migration, is well-characterized in bacteria (Taylor et al., 1999), but is poorly studied in more complex organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a knowledge gap in the field based on literature review.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9e831f90-b73d-4daa-87e3-a5ff6e00fde3",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C10",
+      "claim": "Precambrian oxygen levels played an important role in the emergence and evolution of multicellular animal life.",
+      "claim_type": "EXPLICIT",
+      "source": "This is despite the essentiality of oxygen for all aerobic life, and the important role that Precambrian oxygen levels played in the emergence and evolution of multicellular animal life (Nursall, 1959).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "13c63d94-8318-4ddf-b859-420841d900df",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C11",
+      "claim": "Choanoflagellates are the closest relatives of animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Choanoflagellates are a class of unicellular microorganisms that are the closest relatives of the animals (Lang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to molecular phylogenetic evidence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "80fcfd2e-157d-4660-8dbd-8b83fab2f90a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C12",
+      "claim": "The relationship between choanoflagellates and animals was first proposed by James-Clark in 1866.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship was first proposed by James-Clark in 1866 (James-Clark, 1866), on the basis of the resemblance between choanoflagellates and the choanocytes of sponges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical fact supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "30d90f17-2ca2-49b1-b339-a3469a327db6",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C13",
+      "claim": "The sister relationship between choanoflagellates and animals was confirmed by molecular evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The sister relationship between choanoflagellates and animals was further confirmed in the genomic era by molecular evidence (King et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to genomic studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "7185456c-b7af-49b9-b41c-6ca5277d93f8",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C14",
+      "claim": "All choanoflagellates share the same basic unicell structure consisting of a prolate cell body with a single beating flagellum surrounded by a collar of microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "All choanoflagellates share the same basic unicell structure: a prolate cell body with a single beating flagellum that is surrounded by a collar of microvilli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about choanoflagellate morphology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "a4ea1b14-1cf9-420e-b533-e4056165b19f",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C15",
+      "claim": "The beating of the flagellum creates a current that guides suspended prey through the collar where they can be caught and phagocytosed.",
+      "claim_type": "EXPLICIT",
+      "source": "The beating of the flagellum creates a current in the surrounding fluid that guides suspended prey such as bacteria through the collar (Pettitt and Orme, 2002) where they can be caught and ultimately phagocytosed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature on choanoflagellate feeding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "2e6d9586-b956-4aa0-beac-9b9208c49aa8",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C16",
+      "claim": "The flagellar current causes the choanoflagellate cell to swim.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar current also has the effect of causing the choanoflagellate cell to swim.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the physics of flagellar beating and fluid dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "4067e0cb-528a-4de8-b788-178693165bd2",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C17",
+      "claim": "Salpingoeca rosetta can form colonies through incomplete cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The choanoflagellate Salpingoeca rosetta can form colonies through incomplete cytokinesis (Fairclough et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "b8223782-bc90-4c02-ab63-41187bfd5e18",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C18",
+      "claim": "S. rosetta colonies have a rosette-like shape in the presence of certain bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of certain bacteria (Dayel et al., 2011; Levin et al., 2014), these colonies have an eponymous rosette-like shape as shown in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and visual evidence in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "bec875cc-91f5-42b7-b883-9ced7141623a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C19",
+      "claim": "S. rosetta colony morphology is variable.",
+      "claim_type": "EXPLICIT",
+      "source": "The colony morphology is variable, and the constituent flagella beat independently of one another (Kirkegaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "ed0be94d-9968-4def-a2c0-da4150742953",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C20",
+      "claim": "The constituent flagella of S. rosetta colonies beat independently of one another.",
+      "claim_type": "EXPLICIT",
+      "source": "The colony morphology is variable, and the constituent flagella beat independently of one another (Kirkegaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9dbc64ed-5f5a-40c7-bb9c-3e76345853b4",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C21",
+      "claim": "The random and independent flagellar motion argues against coordination between cells in a colony.",
+      "claim_type": "EXPLICIT",
+      "source": "The random and independent flagellar motion argues against there being any coordination between cells in a colony, and as yet no evidence of any form of taxis for choanoflagellate colonies has been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of independent flagellar beating.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e17abf0b-9e2a-4e88-8b1f-676ad6245ae1",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C22",
+      "claim": "No evidence of any form of taxis for choanoflagellate colonies had been reported prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The random and independent flagellar motion argues against there being any coordination between cells in a colony, and as yet no evidence of any form of taxis for choanoflagellate colonies has been reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a knowledge gap in the literature prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c073386c-38b5-4f21-9f8d-6af935c7a470",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C23",
+      "claim": "Cell body diameters of S. rosetta are approximately 5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell body diameters are ~5 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement reported in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "a96c182d-4aae-4c17-a656-60f042d2ca99",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C24",
+      "claim": "Volvocales are a group of green algae.",
+      "claim_type": "EXPLICIT",
+      "source": "The geometry, flagella independence and lack of taxis observed in S. rosetta colonies contrast with other lineages, such as the Volvocales, a group of green algae (Goldstein, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established taxonomic knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c3370a29-b1c7-4964-b793-a16005b92fc8",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C25",
+      "claim": "Phototaxis is observable in both unicellular (Chlamydomonas) and colonial (Volvox) Volvocales species.",
+      "claim_type": "EXPLICIT",
+      "source": "Phototaxis is clearly observable in both unicellular (Chlamydomonas) (Yoshimura and Kamiya, 2001) and colonial (Volvox) (Drescher et al., 2010) species, in order to maintain optimum light levels for photosynthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9ca3bda5-a1fa-4271-8cc3-76e9db74c2a2",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C26",
+      "claim": "Volvocalean phototaxis is deterministic.",
+      "claim_type": "EXPLICIT",
+      "source": "Volvocalean phototaxis is deterministic, requiring precise tuning between the internal biochemical timescales and the rotation period of the organism as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about Volvocales navigation mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "b861797c-1243-4314-a528-544ca3f733d6",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C27",
+      "claim": "S. rosetta colonies rotate around an internal axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. rosetta colonies also rotate around an internal axis, due to the variable colony morphology and the independent beating of the individual flagella, this rotation rate will itself be random (Kirkegaard et al., 2016), rendering a strategy similar to that of the Volvocales unlikely in S. rosetta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "af51c85b-98cf-46dd-ad67-db377e660dfc",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C28",
+      "claim": "The rotation rate of S. rosetta colonies is random due to variable colony morphology and independent flagellar beating.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. rosetta colonies also rotate around an internal axis, due to the variable colony morphology and the independent beating of the individual flagella, this rotation rate will itself be random (Kirkegaard et al., 2016), rendering a strategy similar to that of the Volvocales unlikely in S. rosetta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from observations supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "75452eed-a3c7-40b8-a74e-34f261eb2adf",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C29",
+      "claim": "A navigation strategy similar to that of the Volvocales is unlikely in S. rosetta.",
+      "claim_type": "EXPLICIT",
+      "source": "Although S. rosetta colonies also rotate around an internal axis, due to the variable colony morphology and the independent beating of the individual flagella, this rotation rate will itself be random (Kirkegaard et al., 2016), rendering a strategy similar to that of the Volvocales unlikely in S. rosetta.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the differences in rotation characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c2871740-f9f5-4b2c-ab65-6a718667ab44",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C30",
+      "claim": "Stochastic taxis is sometimes referred to as kinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative strategy is stochastic taxis, sometimes referred to as kinesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established terminology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "6030f770-a80a-4b24-a89e-921a96843405",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C31",
+      "claim": "Run-and-tumble chemotaxis of peritrichous bacteria is a classic example of stochastic taxis.",
+      "claim_type": "EXPLICIT",
+      "source": "The classic example of stochastic taxis is the run-and-tumble chemotaxis of certain peritrichous bacteria (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "6243356b-201e-4935-a557-d05940534282",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C32",
+      "claim": "Bacteria can alternate between swimming in straight lines (running) and randomly reorienting themselves (tumbling) by spinning their flagella in different directions.",
+      "claim_type": "EXPLICIT",
+      "source": "By spinning their left-handed helical flagella in different directions, such bacteria can alternate between swimming in straight lines (running) and randomly reorienting themselves (tumbling).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about bacterial motility.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "fbc37bd3-4af9-49a5-9eb9-13c150fe53cb",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C33",
+      "claim": "Bacteria exhibit biased motion towards a chemoattractant by biasing tumbles to be less frequent when going up the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Through biasing tumbles to be less frequent when going up the gradient, the bacteria exhibit biased motion towards a chemoattractant without directly steering towards it (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d9baf8b4-1b41-4f08-937b-8c3348426936",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C34",
+      "claim": "PDMS is permeable to gases.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PDMS, the most commonly used material for microfluidic chambers, is permeable to gases, gas channels can be introduced in the devices to allow gaseous species to diffuse into the fluid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about material properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "b42aabd1-caca-486c-ae13-ef00a22fe955",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C35",
+      "claim": "An oxygen gradient can be created using a source channel flowing with normal air and a sink channel flowing with pure nitrogen.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an oxygen gradient can be created using a source channel flowing with normal air and a sink channel flowing with pure nitrogen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological approach described in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9e8aebcc-d69d-4bac-91a8-afdc8f15c63f",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C36",
+      "claim": "The microfluidic device used is a modified version of that used by Adler, et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Our device, shown schematically in Figure 2, is a modified version of that used by Adler, et al. (Adler et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation and description of the device.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "3092a4f3-a6cd-47d1-91bc-828ec284ac0c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C37",
+      "claim": "The thickness of the microfluidic channels is approximately 115 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "Thickness of the channels are \u2248115 \u00b5m.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a measurement reported in the figure caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "ed4f7eb6-6cda-4d0c-944f-9f6869261a10",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C38",
+      "claim": "Experiments were carried out immediately after plasma etching because the permeability of gases slowly decreases thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were carried out immediately after plasma etching as the permeability of gases slowly decreases thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological consideration based on material properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c394cdec-158d-4cc8-a52c-b5061c01f20e",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C39",
+      "claim": "S. rosetta colonies accumulate at the oxygen-rich side and away from the oxygen-poor side.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main experimental result, shown in Figure 3a,b, is the observation that S. rosetta colonies accumulate at the oxygen-rich side and away from the oxygen-poor side, i.e. that they are aerotactic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the primary experimental finding supported by visual data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "49bc1c2a-9d26-4474-aca1-4939a0814237",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C40",
+      "claim": "The unicellular fast swimmer form of S. rosetta also exhibits aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found aerotaxis in the unicellular fast swimmer form (Dayel et al., 2011) of S. rosetta, showing that this is not an exclusive phenomenon to colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "38aa66fc-8300-48bf-adbf-c5a550f01f37",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C41",
+      "claim": "Aerotaxis is not an exclusive phenomenon to S. rosetta colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found aerotaxis in the unicellular fast swimmer form (Dayel et al., 2011) of S. rosetta, showing that this is not an exclusive phenomenon to colonies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that both unicellular and colonial forms exhibit aerotaxis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e9bee5d6-3328-48a1-a7f2-18573ccdb600",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C43",
+      "claim": "When there is oxygen in both gas channels, the density reaches an approximately uniform distribution within the time frame of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "When there is oxygen in both gas channels, we observe that the density reaches an approximately uniform distribution within the time frame of the experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the density evolution data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d16d3b50-d878-4956-81a0-a13417667ea8",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C44",
+      "claim": "When nitrogen flows in both channels, colonies accumulate in the middle of the chamber where there is still some residual oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "For periods in which nitrogen flows in both channels, this is not the case. Under these experimental conditions, the colonies accumulate in the middle of the chamber, where there is still some residual oxygen, as further shown in Video 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d39c76aa-1e82-4fcd-9ad3-2669179d1a10",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C45",
+      "claim": "Colony accumulation does not depend on the presence of a nearby surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that in this nitrogen-only configuration the colonies accumulate mid-chamber shows that accumulation does not depend on the presence of a nearby surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation of mid-chamber accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9f37c5c7-5d82-4fe6-b819-bcc9371279ab",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C46",
+      "claim": "Colonies stay in the middle of chamber even after 90 min with only nitrogen flowing.",
+      "claim_type": "EXPLICIT",
+      "source": "With only nitrogen flowing, eventually there will be no oxygen gradient. Nonetheless, we observed the colonies to stay in the middle of chamber even after 90 min (see Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation supported by supplementary figure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "84389b8a-c602-4c67-8762-0523dbac9baa",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C47",
+      "claim": "After 90 min with only nitrogen flowing, the highest oxygen levels are estimated to be less than approximately 0.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "At that time, the highest oxygen levels are estimated by the diffusion equation to be less than ~0.2%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the diffusion equation model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "12ddbe5d-bcf5-48a4-b181-2d4e870e2e37",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C48",
+      "claim": "The contrasting behaviour between oxygen-only and nitrogen-only configurations suggests an asymmetry or non-linearity in the aerotactic response.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasting behaviour between the oxygen-only and nitrogen-only configurations suggests an asymmetry or non-linearity in the aerotactic response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "24f17591-208b-4678-ad87-2f458c3eaebb",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C49",
+      "claim": "If the response to oxygen concentration had been linear, the observation of the density band in the nitrogen-only section would imply similar density bands at the chamber edges in the oxygen-only section.",
+      "claim_type": "EXPLICIT",
+      "source": "If the response to oxygen concentration had been linear, the observation of the density band in the nitrogen-only section would imply similar density bands at the chamber edges in the oxygen-only section, which is not observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about what would be expected under linear sensing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "ada0bfca-2e4d-4aab-96ea-81e841e2af63",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C52",
+      "claim": "The hypothesis of logarithmic sensing can quantitatively explain the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This is also known as logarithmic sensing, and we will confirm in the modelling section that this hypothesis can quantitatively explain the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the modeling results presented later in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "24e39d2e-6034-4a72-a552-3c548e9f6a11",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C53",
+      "claim": "Strategies of taxis can be categorized into two main classes: deterministic and stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Strategies of taxis can be categorized into two main classes: deterministic and stochastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of taxis research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "7ba200de-44d6-4305-ae9d-1a9d6cafefd3",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C54",
+      "claim": "In a deterministic strategy, the organism directly steers towards the attractant.",
+      "claim_type": "EXPLICIT",
+      "source": "A deterministic strategy, then, is one in which the organism directly steers towards the attractant, such as seen in sperm cells that modulate their flagellar beat to adjust directly the curvature and torsion of its swimming path in the gradient direction (Friedrich and J\u00fclicher, 2007; Jikeli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "146e260a-5120-42d2-b1d8-04726eda83bf",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C55",
+      "claim": "In a stochastic strategy, modulation of the frequency of random reorientations biases motion in the gradient direction without directly steering towards it.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrasting is a stochastic strategy such as bacterial run-and-tumble locomotion (Berg, 1993), where modulation of the frequency of random reorientations biases the motion in the gradient direction without directly steering towards it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "0cac25ad-3132-44f7-a96d-13668062012e",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C56",
+      "claim": "The ensemble average swimming speed does not show an increase after a gas channel swap.",
+      "claim_type": "EXPLICIT",
+      "source": "For most times, the component velocities average to zero, but after a gas channel swap the y-component peaks. The ensemble average swimming speed in these sections, however, does not show an increase, suggesting that a velocity modulation is not the method of taxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the velocity analysis shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "98898a45-9573-449a-9931-e6dc19195bba",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C57",
+      "claim": "Velocity modulation is not the method of taxis in S. rosetta.",
+      "claim_type": "EXPLICIT",
+      "source": "The ensemble average swimming speed in these sections, however, does not show an increase, suggesting that a velocity modulation is not the method of taxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the velocity data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "08a78307-5d61-479d-94f3-86771b9c8c29",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C58",
+      "claim": "Swimming speed shows a very small (~3%) change when going up the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "The plot shows a very small (~3%) change in swimming speed going up the gradient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the data analysis shown in Figure 4 inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "f115b047-4124-4d3c-8523-fa4c41d8baf4",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C59",
+      "claim": "To obtain a drift velocity ~1/3 of the swimming velocity through velocity modulation would require \u03b3 = 2/3 for a two-dimensional swimmer and \u03b3 = 1 in three dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain a drift velocity ~1/3 of the swimming velocity, as we find for S. rosetta in the following section, the velocity modulation would have to be \u03b3= 2/3 for a two-dimensional swimmer and \u03b3 = 1 in three dimensions, much larger than the ~3% observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on theoretical models of velocity-biased taxis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "46749500-0352-462e-9860-a176e42e1050",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C60",
+      "claim": "The primary mechanism of aerotaxis in S. rosetta is not a modulation of swimming speed.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the primary mechanism of aerotaxis in S. rosetta is therefore not a modulation of swimming speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the velocity analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e5b496f2-f541-4a36-bab5-c7df8a26953f",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C61",
+      "claim": "S. rosetta colonies swim along noisy helical paths.",
+      "claim_type": "EXPLICIT",
+      "source": "S. rosetta colonies swim along noisy helical paths, and each colony displays distinct helix parameters (Kirkegaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "36ffcc6d-3a6b-4f92-b8eb-d594c2d9b6fa",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C62",
+      "claim": "Each S. rosetta colony displays distinct helix parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "S. rosetta colonies swim along noisy helical paths, and each colony displays distinct helix parameters (Kirkegaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9c1c7762-c194-4928-b643-99b4b214dacf",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C63",
+      "claim": "The angular distribution during swaps favors the up-direction \u03b8=\u03c0/2.",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution favors the up-direction \u03b8=\u03c0/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the angular distribution data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "1c7f80cc-43fc-47b1-810b-f629c201f8da",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C64",
+      "claim": "The distribution of reorientations is centred on zero.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution is centred on zero, revealing that the colonies do as many turns in the wrong direction as in the correct direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the reorientation distribution data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "21402ba8-b015-4dbe-89cd-cb7e0a7c19ef",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C65",
+      "claim": "The colonies do as many turns in the wrong direction as in the correct direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution is centred on zero, revealing that the colonies do as many turns in the wrong direction as in the correct direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the reorientation distribution data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "f42bed45-7353-46aa-a70f-3d37a3c3beec",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C66",
+      "claim": "The colonies navigate by a stochastic strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the colonies navigate by a stochastic strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the reorientation distribution analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e17faea2-2999-4dd5-8dc3-9ad214c77f97",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C67",
+      "claim": "The Keller-Segel model has broad applicability for taxis.",
+      "claim_type": "EXPLICIT",
+      "source": "We study the spatio-temporal evolution of the choanoflagellate colony population within the observation chamber with the Keller-Segel model (Keller and Segel, 1971), which has broad applicability for taxis (Tindall et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "da7207f8-11dc-455a-b9f5-ee0ce0dae8f1",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C70",
+      "claim": "The concentration field is approximately constant along the x-direction.",
+      "claim_type": "EXPLICIT",
+      "source": "To a very good approximation the concentration field is constant along the x-direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the numerical simulation results shown in Figure 6b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9fbcab8d-6874-4669-af77-ca0d740dd4ce",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C72",
+      "claim": "A linear response functional can reach unrealistic drift velocities if oxygen gradients are large.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a response can, however, reach unrealistic drift velocities, i.e. higher than the swimming velocity, if the oxygen gradients are large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of the linear response model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "7b792e50-e5fc-43d9-add1-5bad5dce1e69",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C73",
+      "claim": "Most of the behaviour in Figure 3c can be explained by the model with response functional V[c]=v_drift tanh(\u03b1|\u2207c|)\u2207c/|\u2207c|.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the behaviour of Figure 3c can be explained by this model (See Figure 3\u2014figure supplement 1), but not the section where nitrogen is flowing in both side channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of model results with experimental data in the supplement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "2d9e7f98-dcea-4cb8-8859-38d31976ab35",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C74",
+      "claim": "The model with linear gradient sensing cannot explain the section where nitrogen is flowing in both side channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the behaviour of Figure 3c can be explained by this model (See Figure 3\u2014figure supplement 1), but not the section where nitrogen is flowing in both side channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing model predictions with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "61f7b770-7639-42f4-8be5-b64e45f77538",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C75",
+      "claim": "The Keller-Segel equation with log-sensing can explain all sections of the experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The Keller-Segel equation with log-sensing is able to explain all sections of the experiment, as demonstrated in Figure 3d.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the model fit shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "34cf5890-d74e-484c-819f-4b4ab62d6c0e",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C80",
+      "claim": "Translational diffusion due to thermal noise is orders of magnitude smaller than active diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "We furthermore ignore translational diffusion due to thermal noise, since this contribution is orders of magnitude smaller than that of active diffusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the relative magnitudes of thermal and active diffusion for microorganisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "14316704-afd5-433f-a5cd-cb7d6258b479",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C81",
+      "claim": "Both deterministic and stochastic models can describe the angle distribution data in Figure 5a well.",
+      "claim_type": "EXPLICIT",
+      "source": "Both models are able to describe the data in Figure 5a well, with the deterministic model (purple) fitting the down-gradient swimming best, and the stochastic model (green) fitting the up-gradient swimming best.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the model fits shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c800060a-edfb-4f93-a7bc-351cf196d6d7",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C82",
+      "claim": "The deterministic model does not provide a satisfactory fit to the reorientation data.",
+      "claim_type": "EXPLICIT",
+      "source": "We see clearly that the deterministic model does not provide a satisfactory fit to the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing the deterministic model prediction with the data in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "ac65a3b9-b2f3-4dad-9631-025969b48ff6",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C83",
+      "claim": "The colonies navigate by a stochastic strategy based on the angle statistics analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that the colonies navigate by a stochastic strategy, and that the ensemble angle statistics can be captured by this simple model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the statistical analysis of trajectory data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9acbe0cb-494a-4f35-890c-b23477dcc6ce",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C84",
+      "claim": "The ensemble angle statistics can be captured by the stochastic model.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus conclude that the colonies navigate by a stochastic strategy, and that the ensemble angle statistics can be captured by this simple model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the model fits to the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9a0cee8f-a779-4c3b-b7fa-42329944cfe2",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C87",
+      "claim": "Colonies of S. rosetta can navigate along gradients of oxygen.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that colonies of S. rosetta can navigate along gradients of oxygen, thus exhibiting positive aerotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion summarizing the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "5b3a11d4-8520-4ef4-91cc-10ed18c927c7",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C88",
+      "claim": "The cells navigate along relative oxygen gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells navigate along relative oxygen gradients and the navigation strategy is stochastic in nature, achieved by modulating not speed but direction of swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the modeling and data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d80f5864-42af-4a72-a22c-4a6b3f55e60c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C89",
+      "claim": "The navigation strategy is stochastic in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells navigate along relative oxygen gradients and the navigation strategy is stochastic in nature, achieved by modulating not speed but direction of swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the statistical analysis of trajectories.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c65f8965-5206-4ec6-9d71-170e2c525dcc",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C90",
+      "claim": "Aerotaxis is achieved by modulating direction of swimming, not speed.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells navigate along relative oxygen gradients and the navigation strategy is stochastic in nature, achieved by modulating not speed but direction of swimming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the velocity and angle analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "36d91f9e-5551-488d-81eb-0374a990571c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C91",
+      "claim": "In animals, oxygen concentrations can be sensed by the hypoxia-inducible factor (HIF) transcription factor pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In animals, oxygen concentrations can be sensed by the highly-conserved hypoxia-inducible factor (HIF) transcription factor pathway (Loenarz et al., 2011; Kaelin and Ratcliffe, 2008; Rytk\u00f6nen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "185bc8d2-dd4c-40ff-ac7e-06492154ad92",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C92",
+      "claim": "At normal oxygen levels, prolyl-hydroxylase (PHD) enzyme activity labels HIF protein complexes for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "At normal oxygen levels, the activity of specific prolyl-hydroxylase (PHD) enzymes labels the HIF protein complexes for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the HIF pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "73eeb2a4-f5a0-4c07-ae6c-8fc0b5a63d4a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C93",
+      "claim": "At low oxygen levels, PHD activity is inhibited, leading to elevated HIF levels.",
+      "claim_type": "EXPLICIT",
+      "source": "At low oxygen levels, however, PHD activity is inhibited, leading to elevated HIF levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the HIF pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "58fd2c4b-08e2-4e7a-8144-a58394ec4041",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C94",
+      "claim": "HIF up-regulates expression of genes involved in hypoxia response for survival in low-oxygen conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factor activity of HIF up-regulates expression of genes involved in hypoxia response (e.g. glycolysis enzymes) for survival in low-oxygen conditions (Greer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "24a9c89f-a1cb-4ef0-9c2d-6b064247a491",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C95",
+      "claim": "The genes involved in HIF signalling are widespread in metazoans.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes involved in HIF signalling are widespread in metazoans, with evidence suggesting that some components of this pathway are descended from prokaryotic ancestors (Scotti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "b501b22f-dc35-4270-b139-25f0c8d0cd41",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C96",
+      "claim": "Some components of the HIF pathway are descended from prokaryotic ancestors.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes involved in HIF signalling are widespread in metazoans, with evidence suggesting that some components of this pathway are descended from prokaryotic ancestors (Scotti et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "eb97a664-a1e6-4a84-ab47-85324b70fc02",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C97",
+      "claim": "Exposing S. rosetta cultures to DMOG had no observable effect on aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Preliminary experiments involving exposing S. rosetta cultures to DMOG (an inhibitor of the prolyl-hydroxylase step in the HIF pathway [Fong and Takeda, 2008]) had no observable effect on aerotaxis within our experimental system (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation reported in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d4bb89d8-db07-4184-af83-5ce9fd448211",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C98",
+      "claim": "Choanoflagellates lack some important components of the HIF pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This is perhaps unsurprising, given that choanoflagellates lack some important components of the HIF pathway (Rytk\u00f6nen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "5dcf1add-8490-4c87-a832-716c3f6da3ee",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C99",
+      "claim": "The aerotactic response observed is acute, within a timeframe on the order of seconds to minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the aerotactic response observed here is acute, within a timeframe on the order of seconds to minutes, rather than the being a longer-term response to lowered oxygen levels by modulation of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental timescales.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "059df4d3-0e84-4418-89bb-23934a39906a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C100",
+      "claim": "In certain aerotactic bacteria, oxygen concentrations are measured indirectly via energy-sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "In certain aerotactic bacteria, it is known that oxygen concentrations are measured indirectly via energy-sensing, which can then influence the rotation of the bacterial flagella between running and tumbling (Taylor et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "96af0568-389f-4d11-a94e-8cde4a4b6f6a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C101",
+      "claim": "An analogous mechanism to bacterial energy-sensing may be at play in choanoflagellates.",
+      "claim_type": "EXPLICIT",
+      "source": "An analogous mechanism may be at play in choanoflagellates, possibly via reactive oxygen species (Cash et al., 2007) and oxygen-sensitive ion channels (Lahiri et al., 2006; Ward, 2008) modulating the beating rate of the flagella of each S. rosetta cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible mechanisms supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9d46d3ab-0d59-4b2a-8e86-9c5416fb049d",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C102",
+      "claim": "Oxygen is implicated as having an important influence on animal evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Oxygen is implicated as having an important influence on animal evolution (Nursall, 1959; Lenton et al., 2014), with some hypotheses that the emergence of complex animal ecosystems (Sperling et al., 2013) were only triggered when oxygen levels rose above certain thresholds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "1a0f5874-c73f-44ab-8e87-2e3fd1c8e1be",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C103",
+      "claim": "Sponges were recently shown to have very low oxygen requirements.",
+      "claim_type": "EXPLICIT",
+      "source": "Sponges, believed to be the most basal animal group, were recently shown to have very low oxygen requirements, disputing the importance of oxygen in early animal evolution (Mills et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "19cd982d-8c45-4835-bead-3db255bb5621",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C104",
+      "claim": "The common ancestor from which choanoflagellates and animals evolved may have been aerotactic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results raise the possibility that the common ancestor from which choanoflagellates and animals evolved was aerotactic, and that oxygen sensing and responding have thus been under strong selection throughout the holozoans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "2ab287e7-8956-414e-bf52-2dae6e2efe56",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C105",
+      "claim": "If the ancestors of animals and choanoflagellates were strongly aerotactic, this would be indicative of the importance of oxygen as a resource during the Precambrian.",
+      "claim_type": "EXPLICIT",
+      "source": "If the ancestors of animals and choanoflagellates were strongly aerotactic, this would be indicative of the importance of oxygen as a resource during the Precambrian (Lyons et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "fb45c650-c503-4958-9dab-f8f57ecb0f32",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C106",
+      "claim": "It could be the case that choanoflagellates themselves have evolved aerotaxis after the split from the animal stem lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Equally, it could be the case that choanoflagellates themselves have evolved aerotaxis after the split from the animal stem lineage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative speculation about the evolutionary origin of aerotaxis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e9b4d418-92d8-461e-ac71-abc4dbbd8ec5",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C107",
+      "claim": "Both the unicellular and colonial morphotypes of S. rosetta can perform efficient aerotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experimental results show that both the unicellular and colonial morphotypes of S. rosetta can perform efficient aerotaxis and navigation in general, despite lacking coordination between the constituent cells of the colony (Kirkegaard et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "0c807ae2-f7c4-4522-adff-2d314327b55a",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C108",
+      "claim": "An evolutionary transition to multicellularity resembling the unicellular-to-colonial transition in S. rosetta would not require additional cell-cell communication mechanisms to coordinate navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, an evolutionary transition to a multicellularity resembling the unicellular-to-colonial transition in S. rosetta (Dayel et al., 2011) would not require additional cell-cell communication mechanisms to coordinate navigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observation that both forms can navigate without coordination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d42a2f8a-f8e9-42d3-b111-96ae54f8ff8c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C109",
+      "claim": "The stochastic navigation strategy works equally well for both single cells and colonies formed from multiple units of the same cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a particular feature of the stochastic navigation strategy, which works equally well for both single cells and colonies formed from multiple units of the same cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the properties of stochastic navigation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "c0bcb00c-aaf2-4683-86e3-06fed11b088f",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C110",
+      "claim": "Logarithmic sensing allows sensing of and reacting to gradients in very low concentration environments while still being able to effectively navigate along large gradients.",
+      "claim_type": "EXPLICIT",
+      "source": "Logarithmic sensing is a key attribute for survival: it allows sensing of and reacting to gradients in very low concentration environments, while still being able to effectively navigate along large gradients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional advantages of logarithmic sensing.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "079c0f7d-8e28-4cfa-8043-a754716d248f",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C111",
+      "claim": "Logarithmic sensing has been experimentally observed in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Logarithmic sensing has also been experimentally observed for other species, e.g. bacteria (Mesibov et al., 1973; Kalinin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "5ba6764c-83ee-46a2-8e8d-c4a460b304ff",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C112",
+      "claim": "Weber's law states that the magnitude of just-noticeable differences of a stimulus is proportional to the stimulus magnitude itself.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known as Weber's law (Ross, 1996), which states that the magnitude of just-noticeable differences of a stimuli is proportional to the stimuli magnitude itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in psychophysics supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "687c34e4-5933-4efa-bcd7-83b380bddbbf",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C113",
+      "claim": "The Weber-Fechner law states that stimulus magnitude grows logarithmically with the actual signal.",
+      "claim_type": "EXPLICIT",
+      "source": "This is closely related to the Weber-Fechner law, stating that stimuli magnitude grows logarithmically with the actual signal, which we have found to be in agreement with the experimental observation of S. rosetta aerotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by the experimental findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e02e3406-69b6-46cf-b32d-4edffed6e9db",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C114",
+      "claim": "The error on any concentration gradient measurement increases with the local absolute concentration due to thermal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of thermal fluctuations, the error on any concentration gradient measurement increases with the local absolute concentration (Berg and Purcell, 1977; Endres and Wingreen, 2008), and thus it immediately follows that the limit of just-noticeable gradients must decrease with absolute concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to theoretical work on sensing limits.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "1de5ef3a-e18c-4e82-b9b2-e632f7749c60",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C117",
+      "claim": "The fitting of the Keller-Segel model to the population data was optimal for relative gradient sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitting of the Keller-Segel model to the population data were optimal precisely for relative gradient sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the model fitting analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "11f98321-f36d-4c67-a983-ff97f0d7cc62",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C119",
+      "claim": "Weber's law and logarithmic sensing occur in choanoflagellates, at least to a good approximation.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that Weber's law and logarithmic sensing, at least to a good approximation, is occurring in chaonoflagellates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the model fitting results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "0b666500-ecea-426c-8ae8-6f4fce21b18e",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C122",
+      "claim": "The master for microfluidic devices was produced by spinning SU8-2075 at 1200 rpm to a thickness of approximately 115 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The master was produced by spinning SU8-2075 (MicroChem, USA) at 1200 rpm to a thickness of ~115 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the fabrication methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "1b9a8b4c-2351-4f0a-8c8a-4677ff274762",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C123",
+      "claim": "Chambers were cast in PDMS and plasma etched to glass slides.",
+      "claim_type": "EXPLICIT",
+      "source": "Chambers were cast in PDMS, Sylgard 184 (Dow Corning, USA), and plasma etched to the glass slides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the fabrication methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "e6d0f1d7-4251-4254-9649-129fa500c3a5",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "claim_id": "C124",
+      "claim": "Experiments were filmed in bright field at 10 fps on an inverted Zeiss LSM 700 Microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were filmed (Imaging Source, Germany) in bright field at 10 fps on an inverted Zeiss LSM 700 Microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the imaging methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cee4b1e4-ef6a-458c-be3f-b84a274d6e7e",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Choanoflagellates are the closest unicellular relatives of animals, a relationship first proposed by James-Clark in 1866 based on morphological resemblance to sponge choanocytes and later confirmed by molecular phylogenetic evidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11, C12, and C13 establish well-supported background knowledge about choanoflagellate-animal relationships. The historical attribution to James-Clark (1866) and molecular confirmation (King et al., 2008; Lang et al., 2002) are appropriately cited and represent established scientific consensus in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d945b991-8bce-4a84-a2c6-32d0b3b91177",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "S. rosetta exhibits positive aerotaxis, with both colonial and unicellular fast swimmer forms accumulating at oxygen-rich regions and migrating away from oxygen-poor regions in microfluidic gradient experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39, C40, C41, and C87 describe the primary experimental discovery supported by direct observational data in Figures 3a-b and Videos 1-2. The observation that both morphotypes exhibit aerotaxis strengthens the finding and demonstrates it is not colony-specific. This represents the core novel discovery of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "cee6497e-613e-4b42-b4a9-19a8480e9a02",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "S. rosetta exhibits logarithmic (relative gradient) sensing of oxygen rather than linear (absolute gradient) sensing, as demonstrated by differential behavior in oxygen-only versus nitrogen-only experimental configurations and quantitative modeling with the Keller-Segel equation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C48, C49, C52, C75, C88, C117, and C119 collectively establish logarithmic sensing through multiple lines of evidence: (1) asymmetric population distributions under different oxygen conditions (C43-C49), (2) failure of linear models to explain nitrogen-only sections (C73-C74), (3) successful quantitative fit of log-sensing Keller-Segel model to all experimental sections (C75), and (4) optimal model fitting for relative gradient sensing (C117). The logical inference from contrasting behaviors (C48-C49) is sound and the mathematical modeling provides quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "S. rosetta aerotaxis employs a stochastic navigation strategy based on directional modulation rather than speed modulation, as evidenced by minimal (~3%) speed changes during gradient navigation, centered reorientation distributions, and superior fit of stochastic versus deterministic models to trajectory data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56-C60, C66, C83, C89, and C90 establish stochastic navigation through converging evidence: (1) swimming speed remains essentially constant (~3% change) during aerotaxis (C56-C58), ruling out velocity-biased taxis (C59-C60), (2) reorientation distribution centered on zero indicates equal turns in both directions (C64-C65), characteristic of stochastic strategy (C66), and (3) statistical analysis shows stochastic model fits trajectory data while deterministic model fails (C82-C83). The quantitative calculation showing \u03b3=2/3 (2D) or \u03b3=1 (3D) would be required for velocity modulation (C59) versus observed ~3% provides strong evidence against that mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Under different oxygen boundary conditions, S. rosetta colonies show distinct spatial distributions: uniform distribution when oxygen flows in both channels, accumulation at oxygen-rich walls during gradients, and mid-chamber accumulation when nitrogen flows in both channels (persisting even after 90 min when oxygen levels drop below ~0.2%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 describe experimental observations of population distributions under varying oxygen conditions, supported by data in Figure 3c, Video 2, and Figure 3\u2014figure supplement 1. The mid-chamber accumulation in nitrogen-only conditions (C44) and its persistence at very low oxygen levels (C46-C47) provide key evidence for logarithmic sensing. The inference that accumulation is not surface-dependent (C45) is logically sound from the mid-chamber observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Statistical analysis of swimming angles during oxygen gradient swaps shows angular distributions favoring the gradient direction (\u03b8=\u03c0/2), but reorientation distributions centered on zero, with stochastic models providing better fits than deterministic models to the reorientation data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 and C81-C82, C84 describe angle statistics from trajectory analysis shown in Figure 5. The observation that angular distributions favor the gradient direction (C63) while reorientations are centered on zero (C64-C65) is internally consistent with stochastic navigation. The model comparison showing both models fit angle distributions (C81) but only stochastic models fit reorientation distributions (C82) provides discriminating evidence. The data presentation and statistical analysis appear sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The Keller-Segel model with linear gradient sensing (V[c]=v_drift tanh(\u03b1|\u2207c|)\u2207c/|\u2207c|) can explain most experimental behaviors except the nitrogen-only sections, where it fails to predict mid-chamber accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C70, C72-C74 describe the application and limitations of linear gradient sensing models. The Keller-Segel model's broad applicability is well-established (C67). The observation that linear models explain most but not all experimental sections (C73-C74) is supported by Figure 3\u2014figure supplement 1 and provides crucial motivation for the logarithmic sensing hypothesis. This represents appropriate model testing and falsification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Logarithmic sensing provides functional advantages for survival by enabling effective navigation across a wide dynamic range of concentrations, from very low to high oxygen environments, and is consistent with Weber's law and the Weber-Fechner law observed in sensory systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C114 connect the experimental findings to broader principles of sensory biology. The functional advantages of logarithmic sensing (C110) are logically sound. The connection to Weber's law (C112) and Weber-Fechner law (C113) is appropriate and supported by the experimental observations. The physical basis in thermal fluctuations (C114) is well-established (Berg and Purcell, 1977; Endres and Wingreen, 2008). The observation of logarithmic sensing in bacteria (C111) provides comparative context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "f9c2918c-33a6-4288-a123-457c632448ee",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both unicellular and colonial morphotypes of S. rosetta can perform efficient aerotaxis without requiring cell-cell coordination, suggesting that evolutionary transitions to multicellularity resembling S. rosetta would not require additional communication mechanisms for navigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C109 draw evolutionary inferences from the experimental observations. The observation that both morphotypes exhibit aerotaxis (C107) is experimentally supported (C40-C41). The inference that stochastic navigation works equally well for single cells and uncoordinated colonies (C109) is logically sound given the independent flagellar beating (C20-C21). The evolutionary implication (C108) is a reasonable inference but remains speculative without direct evidence from evolutionary transitions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "24be6d16-a145-473e-ad83-d44ac93065bc",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A microfluidic device was developed using PDMS chambers (~115 \u00b5m thick) with gas-permeable channels allowing controlled oxygen gradients, modified from Adler et al. (2012), with experiments conducted immediately after plasma etching and filmed at 10 fps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 and C122-C124 describe the experimental methodology. The use of PDMS gas permeability for creating gradients (C34-C35) is well-established. The device modification from Adler et al. (C36) is appropriately cited. The technical specifications (channel thickness C37, timing considerations C38, fabrication details C122-C123, imaging parameters C124) are clearly documented and appear standard for this type of microfluidic work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d4caea16-9a5d-4313-a290-033886a69a50",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "S. rosetta has characteristic choanoflagellate morphology (prolate cell body ~5 \u00b5m diameter with single flagellum surrounded by collar of microvilli) and can form colonies through incomplete cytokinesis with variable morphology and independently beating flagella, with no prior evidence of taxis reported before this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 establish background knowledge about S. rosetta biology. The morphological descriptions (C14-C16) represent established knowledge. Colony formation through incomplete cytokinesis (C17), rosette morphology in presence of bacteria (C18), variable morphology (C19), and independent flagellar beating (C20) are appropriately cited to prior work (Fairclough et al., 2010; Dayel et al., 2011; Kirkegaard et al., 2016). The inference that independent beating argues against coordination (C21) is reasonable. The statement about no prior taxis evidence (C22) establishes novelty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "9e3cf55c-a18d-476a-b808-4b4588d53f68",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "S. rosetta colonies differ from Volvocales algae in that while both rotate, S. rosetta has variable morphology and independent flagellar beating leading to random rotation rates, making deterministic phototaxis strategies like those in Volvocales unlikely in S. rosetta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 establish comparative context with Volvocales. The taxonomic and behavioral descriptions of Volvocales (C24-C26) are appropriately cited. The observations about S. rosetta rotation (C27) and the inference that rotation rates are random due to variable morphology and independent beating (C28) are supported by citation (Kirkegaard et al., 2016). The conclusion that Volvocales-like deterministic strategies are unlikely (C29) is a reasonable inference from these differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Taxis strategies can be categorized as deterministic (direct steering toward attractant, as in sperm chemotaxis) or stochastic (modulation of random reorientations without direct steering, as in bacterial run-and-tumble chemotaxis), also called kinesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 and C53-C55 establish theoretical framework for taxis strategies. The categorization into deterministic and stochastic strategies (C53) is standard in the field. The examples of sperm chemotaxis for deterministic (C54) and bacterial run-and-tumble for stochastic (C31-C33, C55) are appropriately cited and represent well-established examples. The terminology clarification that stochastic taxis is sometimes called kinesis (C30) is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "88346c65-e1fa-449b-a1f0-5a952f2b4464",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "S. rosetta colonies swim along noisy helical paths with each colony displaying distinct helix parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 describe swimming behavior supported by citation to previous work (Kirkegaard et al., 2016). This represents established knowledge about S. rosetta motility that provides context for the trajectory analysis methods used in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "56a0401c-d744-4d05-ba0d-aaeb570d6799",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Translational diffusion due to thermal noise is orders of magnitude smaller than active diffusion for S. rosetta and can be neglected in modeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 represents a standard simplification in modeling microorganism motility. For organisms of this size and swimming speed, thermal diffusion is indeed negligible compared to active swimming diffusion, making this a justified modeling assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "34baeb80-0e6b-41c6-aa06-acf297864c9c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Increasing Precambrian ocean oxygen levels are thought to have influenced the emergence of complex multicellular life and animal evolution, though recent findings that sponges have very low oxygen requirements have disputed the importance of oxygen in early animal evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10, C102, and C103 establish evolutionary context. The hypothesis that Precambrian oxygen levels influenced animal evolution (C2, C10, C102) represents established scientific thinking appropriately cited (Nursall, 1959; Lenton et al., 2014; Sperling et al., 2013). The contrasting finding about sponge oxygen requirements (C103) is appropriately cited to recent work (Mills et al., 2014) and provides important context for interpreting the significance of choanoflagellate aerotaxis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "d06e9608-640a-471b-bc8d-7cecb5f07c73",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "While animals sense oxygen via the conserved HIF transcription factor pathway, preliminary DMOG inhibitor experiments showed no effect on S. rosetta aerotaxis, consistent with choanoflagellates lacking some HIF pathway components and the acute (seconds to minutes) rather than transcriptional timescale of the aerotactic response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C99 discuss oxygen sensing mechanisms. The description of the animal HIF pathway (C91-C94) is accurate and appropriately cited. The preliminary DMOG experiment showing no effect (C97) is honestly reported as negative data. The interpretation that this is unsurprising given missing HIF components in choanoflagellates (C98) and the acute timescale of response (C99) provides reasonable context. However, the negative result is preliminary and the mechanism remains unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "0452fbd1-9990-4f4b-8493-06ee1246acc4",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In aerotactic bacteria, oxygen is sensed indirectly via energy-sensing affecting flagellar rotation; an analogous mechanism may operate in choanoflagellates possibly via reactive oxygen species and oxygen-sensitive ion channels modulating flagellar beating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C100 accurately describes bacterial aerotaxis mechanisms (appropriately cited to Taylor et al., 1999). However, claim C101 is explicitly speculative about choanoflagellate mechanisms. While the speculation is reasonable and supported by citations to relevant literature on ROS and ion channels, no direct experimental evidence is provided to test this hypothesis. This represents a plausible but unverified mechanistic proposal requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "04d16a87-ec8a-41fe-911d-5861342f3f6d",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The discovery of aerotaxis in S. rosetta raises the possibility that the common ancestor of choanoflagellates and animals was aerotactic, which would indicate oxygen was an important resource during the Precambrian, though alternatively choanoflagellates may have evolved aerotaxis after diverging from the animal lineage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C106 present evolutionary speculation. While the discovery of aerotaxis in S. rosetta is well-supported, the inference about ancestral aerotaxis (C104) and its implications for Precambrian oxygen importance (C105) are explicitly speculative. The authors appropriately acknowledge the alternative hypothesis that aerotaxis evolved after the split (C106). These claims represent reasonable evolutionary hypotheses but lack direct evidence and would require comparative studies across opisthokont groups to test, as the authors themselves note in the Discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    },
+    {
+      "id": "1beac6cd-ddbe-4874-b51c-0e2c833be03c",
+      "content_id": "577dda59-9a3b-436d-aef4-4252c733cab7",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Taxis is widespread across organisms (bacteria exhibit chemotaxis, algae exhibit phototaxis and gyrotaxis), with aerotaxis well-characterized in bacteria but poorly studied in more complex organisms despite oxygen's importance for aerobic life.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 establish background on taxis phenomena. The examples of bacterial chemotaxis (C6), algal phototaxis and gyrotaxis (C7), and bacterial aerotaxis (C8) are appropriately cited to established literature. The statement that aerotaxis is poorly studied in complex organisms (C9) accurately identifies a knowledge gap that motivates the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:49:37.065968Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ad4054d7-3e75-4707-8528-a7a5cdea5873",
+      "result_id": "cee4b1e4-ef6a-458c-be3f-b84a274d6e7e"
+    },
+    {
+      "claim_id": "13c63d94-8318-4ddf-b859-420841d900df",
+      "result_id": "cee4b1e4-ef6a-458c-be3f-b84a274d6e7e"
+    },
+    {
+      "claim_id": "80fcfd2e-157d-4660-8dbd-8b83fab2f90a",
+      "result_id": "cee4b1e4-ef6a-458c-be3f-b84a274d6e7e"
+    },
+    {
+      "claim_id": "30d90f17-2ca2-49b1-b339-a3469a327db6",
+      "result_id": "cee4b1e4-ef6a-458c-be3f-b84a274d6e7e"
+    },
+    {
+      "claim_id": "10cbb024-857c-403d-aa33-014c6b8926d8",
+      "result_id": "d945b991-8bce-4a84-a2c6-32d0b3b91177"
+    },
+    {
+      "claim_id": "c394cdec-158d-4cc8-a52c-b5061c01f20e",
+      "result_id": "d945b991-8bce-4a84-a2c6-32d0b3b91177"
+    },
+    {
+      "claim_id": "49bc1c2a-9d26-4474-aca1-4939a0814237",
+      "result_id": "d945b991-8bce-4a84-a2c6-32d0b3b91177"
+    },
+    {
+      "claim_id": "38aa66fc-8300-48bf-adbf-c5a550f01f37",
+      "result_id": "d945b991-8bce-4a84-a2c6-32d0b3b91177"
+    },
+    {
+      "claim_id": "9a0cee8f-a779-4c3b-b7fa-42329944cfe2",
+      "result_id": "d945b991-8bce-4a84-a2c6-32d0b3b91177"
+    },
+    {
+      "claim_id": "11bcfa2a-7a50-4032-8110-cba3975f726d",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "12ddbe5d-bcf5-48a4-b181-2d4e870e2e37",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "24f17591-208b-4678-ad87-2f458c3eaebb",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "ada0bfca-2e4d-4aab-96ea-81e841e2af63",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "61f7b770-7639-42f4-8be5-b64e45f77538",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "5b3a11d4-8520-4ef4-91cc-10ed18c927c7",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "1de5ef3a-e18c-4e82-b9b2-e632f7749c60",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "11f98321-f36d-4c67-a983-ff97f0d7cc62",
+      "result_id": "cee6497e-613e-4b42-b4a9-19a8480e9a02"
+    },
+    {
+      "claim_id": "d5b48d25-30c8-4f05-9b58-b92fafb95c81",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "0cac25ad-3132-44f7-a96d-13668062012e",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "98898a45-9573-449a-9931-e6dc19195bba",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "08a78307-5d61-479d-94f3-86771b9c8c29",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "f115b047-4124-4d3c-8523-fa4c41d8baf4",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "46749500-0352-462e-9860-a176e42e1050",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "f42bed45-7353-46aa-a70f-3d37a3c3beec",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "ac65a3b9-b2f3-4dad-9631-025969b48ff6",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "d80f5864-42af-4a72-a22c-4a6b3f55e60c",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "c65f8965-5206-4ec6-9d71-170e2c525dcc",
+      "result_id": "f5ee0295-0d3a-4675-9f0b-8a18afd24dd7"
+    },
+    {
+      "claim_id": "e9bee5d6-3328-48a1-a7f2-18573ccdb600",
+      "result_id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b"
+    },
+    {
+      "claim_id": "d16d3b50-d878-4956-81a0-a13417667ea8",
+      "result_id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b"
+    },
+    {
+      "claim_id": "d39c76aa-1e82-4fcd-9ad3-2669179d1a10",
+      "result_id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b"
+    },
+    {
+      "claim_id": "9f37c5c7-5d82-4fe6-b819-bcc9371279ab",
+      "result_id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b"
+    },
+    {
+      "claim_id": "84389b8a-c602-4c67-8762-0523dbac9baa",
+      "result_id": "b46c0fa3-da95-4253-8d30-0073bff5cc0b"
+    },
+    {
+      "claim_id": "9c1c7762-c194-4928-b643-99b4b214dacf",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "1c7f80cc-43fc-47b1-810b-f629c201f8da",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "21402ba8-b015-4dbe-89cd-cb7e0a7c19ef",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "14316704-afd5-433f-a5cd-cb7d6258b479",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "c800060a-edfb-4f93-a7bc-351cf196d6d7",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "9acbe0cb-494a-4f35-890c-b23477dcc6ce",
+      "result_id": "9ae2b5d4-4915-45a9-8a91-e3e23b4ee204"
+    },
+    {
+      "claim_id": "e17faea2-2999-4dd5-8dc3-9ad214c77f97",
+      "result_id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2"
+    },
+    {
+      "claim_id": "da7207f8-11dc-455a-b9f5-ee0ce0dae8f1",
+      "result_id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2"
+    },
+    {
+      "claim_id": "9fbcab8d-6874-4669-af77-ca0d740dd4ce",
+      "result_id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2"
+    },
+    {
+      "claim_id": "7b792e50-e5fc-43d9-add1-5bad5dce1e69",
+      "result_id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2"
+    },
+    {
+      "claim_id": "2d9e7f98-dcea-4cb8-8859-38d31976ab35",
+      "result_id": "00ca3bc8-f11b-4195-ab15-f74ec4b782d2"
+    },
+    {
+      "claim_id": "c0bcb00c-aaf2-4683-86e3-06fed11b088f",
+      "result_id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd"
+    },
+    {
+      "claim_id": "079c0f7d-8e28-4cfa-8043-a754716d248f",
+      "result_id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd"
+    },
+    {
+      "claim_id": "5ba6764c-83ee-46a2-8e8d-c4a460b304ff",
+      "result_id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd"
+    },
+    {
+      "claim_id": "687c34e4-5933-4efa-bcd7-83b380bddbbf",
+      "result_id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd"
+    },
+    {
+      "claim_id": "e02e3406-69b6-46cf-b32d-4edffed6e9db",
+      "result_id": "0687bf89-7c1b-4eef-87f2-2136e7eb4ffd"
+    },
+    {
+      "claim_id": "e9b4d418-92d8-461e-ac71-abc4dbbd8ec5",
+      "result_id": "f9c2918c-33a6-4288-a123-457c632448ee"
+    },
+    {
+      "claim_id": "0c807ae2-f7c4-4522-adff-2d314327b55a",
+      "result_id": "f9c2918c-33a6-4288-a123-457c632448ee"
+    },
+    {
+      "claim_id": "d42a2f8a-f8e9-42d3-b111-96ae54f8ff8c",
+      "result_id": "f9c2918c-33a6-4288-a123-457c632448ee"
+    },
+    {
+      "claim_id": "d9baf8b4-1b41-4f08-937b-8c3348426936",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "b42aabd1-caca-486c-ae13-ef00a22fe955",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "9e8aebcc-d69d-4bac-91a8-afdc8f15c63f",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "3092a4f3-a6cd-47d1-91bc-828ec284ac0c",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "ed4f7eb6-6cda-4d0c-944f-9f6869261a10",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "0b666500-ecea-426c-8ae8-6f4fce21b18e",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "1b9a8b4c-2351-4f0a-8c8a-4677ff274762",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "e6d0f1d7-4251-4254-9649-129fa500c3a5",
+      "result_id": "24be6d16-a145-473e-ad83-d44ac93065bc"
+    },
+    {
+      "claim_id": "7185456c-b7af-49b9-b41c-6ca5277d93f8",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "a4ea1b14-1cf9-420e-b533-e4056165b19f",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "2e6d9586-b956-4aa0-beac-9b9208c49aa8",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "4067e0cb-528a-4de8-b788-178693165bd2",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "b8223782-bc90-4c02-ab63-41187bfd5e18",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "bec875cc-91f5-42b7-b883-9ced7141623a",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "ed0be94d-9968-4def-a2c0-da4150742953",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "9dbc64ed-5f5a-40c7-bb9c-3e76345853b4",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "e17abf0b-9e2a-4e88-8b1f-676ad6245ae1",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "c073386c-38b5-4f21-9f8d-6af935c7a470",
+      "result_id": "d4caea16-9a5d-4313-a290-033886a69a50"
+    },
+    {
+      "claim_id": "a96c182d-4aae-4c17-a656-60f042d2ca99",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "c3370a29-b1c7-4964-b793-a16005b92fc8",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "9ca3bda5-a1fa-4271-8cc3-76e9db74c2a2",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "b861797c-1243-4314-a528-544ca3f733d6",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "af51c85b-98cf-46dd-ad67-db377e660dfc",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "75452eed-a3c7-40b8-a74e-34f261eb2adf",
+      "result_id": "9e3cf55c-a18d-476a-b808-4b4588d53f68"
+    },
+    {
+      "claim_id": "24e39d2e-6034-4a72-a552-3c548e9f6a11",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "7ba200de-44d6-4305-ae9d-1a9d6cafefd3",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "146e260a-5120-42d2-b1d8-04726eda83bf",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "c2871740-f9f5-4b2c-ab65-6a718667ab44",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "6030f770-a80a-4b24-a89e-921a96843405",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "6243356b-201e-4935-a557-d05940534282",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "fbc37bd3-4af9-49a5-9eb9-13c150fe53cb",
+      "result_id": "8b6cbf5b-e0c7-4716-8d5b-bd701ecfaf75"
+    },
+    {
+      "claim_id": "e5b496f2-f541-4a36-bab5-c7df8a26953f",
+      "result_id": "88346c65-e1fa-449b-a1f0-5a952f2b4464"
+    },
+    {
+      "claim_id": "36ffcc6d-3a6b-4f92-b8eb-d594c2d9b6fa",
+      "result_id": "88346c65-e1fa-449b-a1f0-5a952f2b4464"
+    },
+    {
+      "claim_id": "34cf5890-d74e-484c-819f-4b4ab62d6c0e",
+      "result_id": "56a0401c-d744-4d05-ba0d-aaeb570d6799"
+    },
+    {
+      "claim_id": "f2541cde-d0e8-4a11-9959-76e3baca6028",
+      "result_id": "34baeb80-0e6b-41c6-aa06-acf297864c9c"
+    },
+    {
+      "claim_id": "9e831f90-b73d-4daa-87e3-a5ff6e00fde3",
+      "result_id": "34baeb80-0e6b-41c6-aa06-acf297864c9c"
+    },
+    {
+      "claim_id": "9d46d3ab-0d59-4b2a-8e86-9c5416fb049d",
+      "result_id": "34baeb80-0e6b-41c6-aa06-acf297864c9c"
+    },
+    {
+      "claim_id": "1a0f5874-c73f-44ab-8e87-2e3fd1c8e1be",
+      "result_id": "34baeb80-0e6b-41c6-aa06-acf297864c9c"
+    },
+    {
+      "claim_id": "36d91f9e-5551-488d-81eb-0374a990571c",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "185bc8d2-dd4c-40ff-ac7e-06492154ad92",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "73eeb2a4-f5a0-4c07-ae6c-8fc0b5a63d4a",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "58fd2c4b-08e2-4e7a-8144-a58394ec4041",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "24a9c89f-a1cb-4ef0-9c2d-6b064247a491",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "b501b22f-dc35-4270-b139-25f0c8d0cd41",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "eb97a664-a1e6-4a84-ab47-85324b70fc02",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "d4bb89d8-db07-4184-af83-5ce9fd448211",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "5dcf1add-8490-4c87-a832-716c3f6da3ee",
+      "result_id": "d06e9608-640a-471b-bc8d-7cecb5f07c73"
+    },
+    {
+      "claim_id": "059df4d3-0e84-4418-89bb-23934a39906a",
+      "result_id": "0452fbd1-9990-4f4b-8493-06ee1246acc4"
+    },
+    {
+      "claim_id": "96af0568-389f-4d11-a94e-8cde4a4b6f6a",
+      "result_id": "0452fbd1-9990-4f4b-8493-06ee1246acc4"
+    },
+    {
+      "claim_id": "19cd982d-8c45-4835-bead-3db255bb5621",
+      "result_id": "04d16a87-ec8a-41fe-911d-5861342f3f6d"
+    },
+    {
+      "claim_id": "2ab287e7-8956-414e-bf52-2dae6e2efe56",
+      "result_id": "04d16a87-ec8a-41fe-911d-5861342f3f6d"
+    },
+    {
+      "claim_id": "fb45c650-c503-4958-9dab-f8f57ecb0f32",
+      "result_id": "04d16a87-ec8a-41fe-911d-5861342f3f6d"
+    },
+    {
+      "claim_id": "70bb1d91-9f0e-4b8b-a71c-01b230570238",
+      "result_id": "1beac6cd-ddbe-4874-b51c-0e2c833be03c"
+    },
+    {
+      "claim_id": "5a1f08c8-c298-4627-9ab6-60008ab09edb",
+      "result_id": "1beac6cd-ddbe-4874-b51c-0e2c833be03c"
+    },
+    {
+      "claim_id": "9bb1bfab-4131-4003-9db1-ea8276787dab",
+      "result_id": "1beac6cd-ddbe-4874-b51c-0e2c833be03c"
+    },
+    {
+      "claim_id": "51059665-f31a-4300-ba9f-4fc991a111af",
+      "result_id": "1beac6cd-ddbe-4874-b51c-0e2c833be03c"
+    }
+  ],
+  "comparisons": []
+}

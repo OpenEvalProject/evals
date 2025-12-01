@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C12"
+    ],
+    "result": "CB1R immunoreactivity is present in the Xenopus tadpole retina, specifically in the outer and inner plexiform layers and associated with retinal ganglion cells (RGCs) in Isl2b:GFP transgenic animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C12 are supported by immunohistochemistry data shown in Figure 1, with appropriate controls using transgenic animals expressing GFP specifically in RGCs. The findings are consistent with prior reports in other species (C10 cites appropriate literature), providing convergent evidence for CB1R expression in the tadpole retina.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CB1R activation by agonists WIN 55,212-2 and ACEA, or elevation of endogenous anandamide (AEA) by URB597, increases RGC spiking rates in response to light-ON and light-OFF stimuli in isolated eye preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by extracellular multi-unit recordings with appropriate statistical tests (two-way RM ANOVA, n=10 per condition, p<0.05). The use of multiple CB1R agonists and the FAAH inhibitor URB597 provides converging pharmacological evidence. Sample sizes appear adequate and statistical methods are appropriate for the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "CB1R activation does not significantly affect electroretinogram (ERG) components (a-wave, b-wave, d-wave), suggesting no impact on light-evoked activity in the outer retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by ERG recordings (Figure 2g) with appropriate statistical analysis (two-way RM ANOVA, n=6 per condition, all p>0.68). The lack of effect on outer retinal responses helps localize the site of CB1R action and is consistent with prior mouse studies (C20 cites C\u00e9cyre et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CB1R activation decreases bipolar cell axon terminal Ca2+ transients in response to light-OFF stimulation but does not affect light-ON responses or amacrine cell terminal Ca2+ transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by in vivo GCaMP6s imaging data (Figure 3) with appropriate statistical analysis (n=10 terminals per condition). The selective effect on bipolar OFF responses is consistent with prior salamander studies. However, the manuscript does not clearly specify whether these are biological or technical replicates, and the number of animals contributing to the n=10 terminals is not stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CB1R activation decreases total integrated excitatory postsynaptic currents (EPSCs) in RGCs and reduces inhibitory postsynaptic currents (IPSCs) in response to light-OFF but not light-ON stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by in vivo whole-cell voltage clamp recordings (Figure 3m-p) with appropriate statistical tests. Sample sizes are modest (n=5-7) but appear adequate given the within-subjects design. The findings suggest that synaptic changes alone cannot explain the increased RGC firing, supporting the authors' hypothesis of intrinsic excitability changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The CB1R-mediated enhancement of RGC firing requires both CB1R activation (blocked by AM-251) and glycine receptor (GlyR) function (blocked by strychnine), but not GABA-A receptors (gabazine has no effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by systematic pharmacological experiments (Figure 4a-f) with appropriate controls and statistical analysis (n=10 per condition). The occlusion experiments with AM-251 and the prevention/reversal by strychnine provide strong evidence for the requirement of both CB1Rs and GlyRs. However, the p-values for some 'prevention' experiments (e.g., C27: p=0.487, C31: p=0.423) suggest no significant difference from baseline, which is the expected outcome but could be more clearly stated as 'no significant enhancement' rather than 'prevented.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "NKCC1 inhibition by bumetanide mimics and occludes the effects of CB1R activation on RGC firing, suggesting that CB1R activation works by regulating NKCC1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by RT-PCR confirming NKCC1/KCC2 expression (C34, Figure 4i) and pharmacological occlusion experiments (C35-C37, Figure 4g-h, n=9-10). The bidirectional occlusion (bumetanide blocks WIN effect and vice versa) provides strong evidence for a shared mechanism. Statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "CB1R activation increases phosphorylated SPAK/OSR1 levels but not phospho-NKCC1 at T212/T217, and the AMPK inhibitor dorsomorphin reverses the effects of WIN 55,212-2, indicating that CB1R signaling inhibits NKCC1 through AMPK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 are supported by western blot data (Figure 4j-k, n=4), but the lack of increase in phospho-NKCC1 at the canonical SPAK/OSR1 sites (T212/T217) is puzzling given the increase in phospho-SPAK/OSR1. The dorsomorphin experiment (C41-C42, n=10, p=0.0095) supports AMPK involvement, but dorsomorphin is not entirely selective for AMPK and can affect other kinases. The proposed mechanism involving AMPK-mediated NKCC1 inhibition at S77 is plausible based on prior literature (Fraser et al., 2014), but direct evidence for S77 phosphorylation is lacking (no antibody available). Additional experiments with more selective AMPK inhibitors or genetic approaches would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "CB1R activation causes a rapid, RGC-specific decrease in intracellular chloride concentration [Cl\u2212]i, as measured by Clomeleon FRET imaging, which is prevented by AM-251 or bumetanide pretreatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by in vivo two-photon Clomeleon imaging (Figure 5) with appropriate controls including a Cl\u2212-insensitive mutant (M69Q, C45) and pharmacological blockers (C46-C47). The cell-type specificity (RGCs but not amacrine, bipolar, or M\u00fcller glia) is well-demonstrated with adequate sample sizes (n=5-16 cells per condition). Statistical analysis is appropriate (two-way RM ANOVA with Holm-Sidak post-test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The CB1R-mediated decrease in [Cl\u2212]i in RGCs persists when synaptic transmission is blocked, indicating a neurotransmission-independent, cell-autonomous mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by Clomeleon imaging with synaptic blockers (Figure 5g, n=14 RGCs, p<0.001). The use of a comprehensive synaptic blocker cocktail (DNQX, AP4, picrotoxin, strychnine, TTX) provides strong evidence for a direct effect on RGCs rather than an indirect effect through altered synaptic input.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "CB1R activation and bumetanide treatment produce small but significant hyperpolarizing shifts in the glycine receptor reversal potential (EGly) in RGCs, consistent with reduced [Cl\u2212]i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by in vivo whole-cell voltage clamp recordings (Figure 6e-f) with appropriate I-V curve analysis. The shifts are small (\u22123.2 mV for WIN, \u22121.6 mV for bumetanide) but statistically significant (n=5-7, p<0.05). The authors acknowledge using conventional whole-cell recording rather than gramicidin-perforated patch due to technical difficulties, which could potentially affect [Cl\u2212]i, but the consistency with Clomeleon data supports the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CB1R activation hyperpolarizes the resting membrane potential of dissociated RGCs in a CB1R-dependent manner, demonstrating a cell-autonomous effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by gramicidin-perforated patch recordings from dissociated cultured RGCs (Figure 6h-i, n=6 per condition). The use of dissociated cells (C55) provides strong evidence for a cell-autonomous mechanism. The prevention by AM-251 confirms CB1R dependence. However, the liquid junction potential correction is noted but not applied, which could affect the absolute voltage values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Hyperpolarizing pre-pulses increase the number of action potentials evoked by subsequent depolarizing test pulses in RGCs, while depolarizing pre-pulses decrease spike number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by current clamp recordings (Figure 6k, n=8 cells). This result is consistent with the known phenomenon of sodium channel de-inactivation following hyperpolarization (cited as Kim and Rieke 2001, 2003; Weick and Demb 2011). The experiment provides a mechanistic link between CB1R-mediated hyperpolarization and increased RGC excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Sustained peripheral illumination (conditioning stimulation) elevates RGC spike rates to central test stimuli and decreases [Cl\u2212]i specifically in RGCs through a CB1R-dependent mechanism, suggesting physiological endocannabinoid release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by extracellular recordings (Figure 7e, n=10, p=0.042) and Clomeleon imaging (Figure 7i-k, n=10-22 cells) showing that conditioning stimulation mimics exogenous CB1R activation. The prevention by AM-251 (C61, C64) confirms CB1R dependence. The cell-type specificity (C65) strengthens the conclusion. This result demonstrates that the mechanism can be engaged by physiological visual stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "CB1R activation increases retinotectal EPSC amplitudes in tectal neurons, an effect dependent on CB1R activation and mediated by endogenous anandamide (AEA) rather than 2-AG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by amphotericin-perforated patch recordings from tectal neurons (Figure 8b-c, n=5-11). The blockade by AM-251 (C68) and enhancement by URB597 (C69) confirm CB1R and AEA involvement. The lack of effect of MAGL inhibitors NAM and JZL184 (C70) supports AEA over 2-AG as the endogenous ligand. Statistical analysis is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The CB1R-mediated enhancement of retinotectal EPSCs is blocked by strychnine and bumetanide, requires the presence of the eye, and is due to increased retinal excitability rather than changes at retinotectal synapses or in tectal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by pharmacological experiments (Figure 8\u2014figure supplement 1b) and isolated brain preparation experiments (Figure 8d, n=7, p=0.999). The lack of effect when stimulating the optic tract directly (C74) provides strong evidence that the enhancement occurs in the retina. The parallel effects of strychnine and bumetanide on RGCs and retinotectal responses (C72-C73) support a common mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "CB1R activation increases tectal receptive field (RF) size and total evoked charge, likely through recruitment of initially subthreshold RGC inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by in vivo receptive field mapping experiments (Figure 8f-h, n=5, p<0.05). The increases in RF size (127.6% of baseline) and total charge (140.3% of baseline) are consistent with recruitment of additional RGC inputs. However, the sample size is modest (n=5), and the interpretation of 'recruitment of subthreshold inputs' (C78) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CB1R activation markedly improves visual contrast sensitivity under mesopic (low-light) but not photopic conditions in freely swimming tadpoles, as measured by a dot avoidance assay, with endogenous AEA mediating this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C88 are supported by behavioral tracking experiments with appropriate controls (Figure 8i-n, n=24 per group). The lack of effect under photopic conditions (C81) but dramatic improvement under mesopic conditions (C83) strongly argues for a retinal site of action (C87). The enhancement by URB597 and blockade by AM-251 (C84-C85) confirm endogenous AEA involvement. The increased escape velocity (C80) is noted as a caveat indicating effects beyond the retina. Statistical analysis is appropriate with correction for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The overall mechanism by which CB1R activation enhances visual responses involves AMPK-dependent NKCC1 inhibition, reduced [Cl\u2212]i, hyperpolarization via enhanced GlyR-mediated Cl\u2212 currents, increased intrinsic RGC excitability through sodium channel de-inactivation, and recruitment of additional RGC responses by tectal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 represent the authors' integrated model synthesizing the experimental findings. The model is well-supported by the convergent evidence from multiple experimental approaches (pharmacology, imaging, electrophysiology, behavior). However, some mechanistic steps involve inference (e.g., sodium channel de-inactivation is inferred from prior literature and the pre-pulse experiments but not directly measured). The model is internally consistent and parsimonious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C56",
+      "C59",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "Background and contextual claims about endocannabinoid signaling, CB1R expression and function, chloride transporter regulation, and prior studies in various systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C5-C9, C11, C56, C59, C92-C94, C96-C99, C101-C104, C108-C109) are supported by appropriate citations to prior literature. They provide necessary context for the study but do not represent novel findings. The citations appear appropriate and accurately represent the cited work based on the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C100"
+    ],
+    "result": "The authors claim their work presents a novel mechanism for interaction between glycinergic inhibition and the endocannabinoid system, and is one of the first to suggest a role for tonic GlyR-mediated inhibition in the retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C100 represent the authors' assessment of the novelty of their findings. The mechanism involving CB1R-mediated regulation of [Cl\u2212]i to modulate tonic glycinergic inhibition and enhance intrinsic excitability does appear novel based on the literature cited. The claim about tonic GlyR inhibition in retina (C100) is appropriately qualified as 'one of the first' rather than claiming absolute priority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C111"
+    ],
+    "result": "Speculative claims about the functional significance of the findings, including auto/paracrine AEA signaling, signal-to-noise ratio optimization, and benefits during dark adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C106, and C111 are speculative interpretations of the functional significance of the findings. While plausible and consistent with the data, they are not directly tested. C105 proposes auto/paracrine AEA signaling based on RGC expression of AEA synthetic/degradative enzymes (C103) and the cell-autonomous effects demonstrated. C106 suggests a role in signal-to-noise optimization, which is reasonable but not directly measured. C111 proposes a role in dark adaptation, which is speculative. These interpretations are appropriately presented as hypotheses rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C107",
+      "C110",
+      "C112"
+    ],
+    "result": "Summary and future directions regarding CB1R effects on visual behavior, the time course of sensitization, and the need for mammalian studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 summarizes the behavioral findings and is supported by the data. C110 describes the time course of the conditioning effect based on the experimental observations. C112 appropriately acknowledges the need for future studies in mammalian systems while noting encouraging psychophysical evidence in humans. These claims appropriately summarize findings and identify future research directions.",
+    "result_type": "MINOR"
+  }
+]

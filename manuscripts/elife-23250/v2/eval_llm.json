@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Ndt80 is a deeply conserved transcription regulator across ~300 million years of fungal evolution that ancestrally controlled meiosis and sporulation, but acquired a new role regulating biofilm formation in the C. albicans lineage approximately 20-100 million years ago.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 establish the evolutionary context and functional switch of Ndt80. The conservation is supported by phylogenetic data (C1), ancestral function is documented by multiple citations (C2), and the derived biofilm function in C. albicans is well-supported by experimental evidence and citations (C3-C5). The timing estimate (C6) is appropriately cited and presented as an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C32",
+      "C33"
+    ],
+    "result": "Despite conserved DNA-binding specificity, Ndt80 targets differ dramatically between S. cerevisiae and C. albicans, with fewer than 13% of targets shared. This divergence is primarily due to changes in the distribution of cis-regulatory sequences rather than changes in Ndt80 protein binding specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C32-C33 are well-supported by ChIP-Seq data shown in Figure 1. The motif conservation (C9) is demonstrated by sequence logos, while the low target overlap (C10) is quantified across multiple stringency criteria. The mechanistic conclusion about cis-regulatory changes (C33) is supported by heterologous expression experiments (C16, C40).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C26",
+      "C27"
+    ],
+    "result": "The Ndt80 regulon underwent continuous and extensive rewiring across all lineages examined, with similar rates of rewiring regardless of whether Ndt80's overall function changed or remained conserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C26-C27 represent the central finding of the manuscript. The extensive rewiring is documented by ChIP-Seq across five species (C14-C15, C43-C46), and the lack of correlation between functional conservation and target conservation is demonstrated in Figure 5B with phylogenetic normalization. The data convincingly show that rewiring occurs independently of functional shifts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Across five species (S. cerevisiae, K. lactis, P. pastoris, S. stipitis, C. albicans), only 10 genes are Ndt80 targets in all species, while 3,261 genes are targets in only one species. Each intermediate species shows 48-70% species-specific targets not found in either S. cerevisiae or C. albicans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C43-C46 quantify the extent of regulon divergence using ChIP-Seq data. The 10 conserved targets are shown to be statistically significant (p<10^-5, Figure 2\u2014figure supplement 3). The large number of species-specific targets and the percentages for intermediate species are clearly documented in Figure 2B-D. The data are robust across multiple target identification criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Heterologous expression of P. pastoris Ndt80 in S. cerevisiae demonstrates that differences in Ndt80 targets are predominantly determined by cis-regulatory sequence distribution rather than protein sequence changes, though protein changes do contribute as the heterologous protein does not fully complement the deletion phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C39-C40 are supported by the heterologous expression experiment shown in Figure 3. The stronger correlation between P. pastoris Ndt80 in S. cerevisiae and native S. cerevisiae Ndt80 (\u03c1=0.63) versus P. pastoris Ndt80 in different species (\u03c1=0.21) supports the cis-regulatory mechanism. The lack of complementation (C39) appropriately acknowledges protein sequence contributions (C41-C42).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C53"
+    ],
+    "result": "Ndt80 is required for sporulation in K. lactis, P. pastoris, and C. lusitaniae (with both paralogs contributing in C. lusitaniae), but C. albicans does not undergo sporulation. Phylogenetic inference indicates Ndt80 regulated sporulation ancestrally and gained biofilm function after divergence from C. lusitaniae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 and C53 establish the phenotypic basis for inferring the functional switch. The sporulation phenotypes are documented by microscopy (Figure 4A-C) with quantification. The absence of sporulation in C. albicans (C21) is supported by citations. The phylogenetic inference (C22, C53) is the most parsimonious explanation given the species tree and phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Deletion of NDT80B in C. albicans causes severe defects in biofilm formation, while ndt80 deletions in S. cerevisiae, K. lactis, P. pastoris, and C. lusitaniae do not affect surface adherence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 document the species-specific biofilm phenotype using confocal microscopy (Figure 4D-H). The dramatic biofilm defect in C. albicans ndt80B mutants contrasts with the lack of adherence phenotype in other species, supporting the conclusion that Ndt80's role in biofilm formation is specific to the C. albicans lineage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C50",
+      "C51"
+    ],
+    "result": "The genes activated during sporulation and those showing Ndt80-dependent expression differ extensively across S. cerevisiae, K. lactis, and P. pastoris, with only 25 genes showing sporulation activation and only 7 genes showing Ndt80-dependent expression in all three species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C50-C51 are supported by gene expression data (RNA-Seq and microarray) shown in Figure 6. The small number of conserved sporulation genes (25) and Ndt80-dependent genes (7) contrasts with hundreds of species-specific genes, demonstrating that the sporulation network itself is highly variable. This supports the conclusion that network rewiring occurs even when function is conserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "C. albicans has two Ndt80 paralogs from gene duplication. Ndt80B is required for biofilm formation, while Ndt80A has no known function and its targets represent a small subset (9-11%) of Ndt80B targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 characterize the Ndt80 paralogs in C. albicans. The gene duplication is documented phylogenetically (Figure 2A, C11). The biofilm requirement for Ndt80B (C12) is supported by citation and Figure 4H. The ChIP-Seq data showing Ndt80A targets as a subset of Ndt80B targets (C13) is shown in Figure 1\u2014figure supplement 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C47",
+      "C48"
+    ],
+    "result": "Five of the ten conserved Ndt80 targets (CLN2, CLG1, GLN1, GDH2, RPS7a) are upregulated in biofilm formation. One conserved target, USV1/BCR1, is itself a master regulator of biofilm formation in C. albicans, suggesting an ancestral regulatory relationship was co-opted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C47-C48 identify potential mechanistic links between ancestral and derived networks. The upregulation of five conserved targets in biofilms (C25) is supported by citation. The USV1/BCR1 connection (C47) is well-documented by citations, and the co-option hypothesis (C48) is appropriately presented as speculation based on this observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "The authors propose that inherent network flexibility allowed Ndt80 to explore regulatory space while maintaining ancestral function, predisposing it to functional shifts. This continuous rewiring facilitated reaching network configurations that could support novel phenotypes like biofilm formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C34-C38 present the main interpretive model. The model is well-supported by the empirical data showing extensive rewiring without functional change (C7-C8, C26-C27) and variable sporulation networks (C28-C30, C35). The proposal that network flexibility predisposes to functional innovation (C34, C36, C38) is a reasonable inference from the data, appropriately presented as a proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "In K. lactis and P. pastoris, Ndt80 is not expressed in mitotic cells, consistent with a sporulation-specific role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by transcription profiling data (Supplementary file 1). This addresses a potential alternative explanation for target differences and strengthens the conclusion that Ndt80 functions primarily in sporulation in these species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Several key sporulation genes from S. cerevisiae (IME1, ZIP2, SPO13) are missing from genomes of species like C. lusitaniae that undergo sporulation, indicating variable genetic requirements for this conserved process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by citations to prior work. This observation from the literature supports the authors' conclusion that sporulation networks are highly variable and that many network configurations can support the same phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors contextualize their work within established knowledge that regulatory networks undergo extensive rewiring over evolutionary time, citing examples from fungi and Drosophila, and note that network plasticity appears to be a general feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 establish the broader context and prior knowledge. These are appropriately cited statements about the field that frame the current work. The citations support the claims about network rewiring in various systems and the general principle of network plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Computational models have previously suggested that gene regulatory networks are inherently flexible, allowing exploration of many configurations that maintain overall function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by citations to computational modeling work. This provides theoretical context for the empirical findings and shows that the observed network flexibility is consistent with prior theoretical predictions.",
+    "result_type": "MINOR"
+  }
+]

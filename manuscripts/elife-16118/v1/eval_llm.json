@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors quantified low copy numbers of Hes1 mRNA (11-88 copies/cell), HES1 protein (~2450-3660 molecules/nucleus), and miR-9 (~1100 copies/cell) in neural progenitor and stem cells using smFISH, FCS, and qRT-PCR. These values are significantly lower than global median abundances and show high cell-to-cell variability. Hes1 expression is switched off in differentiated neurons, and miR-9 activity increases specifically in differentiated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31, C45-C46, and C51-C53 provide converging quantitative evidence from multiple orthogonal methods (smFISH, qRT-PCR, FCS, western blot) demonstrating low molecular copy numbers with appropriate validation and controls. The measurements are internally consistent (e.g., C24 and C25 confirm each other) and appropriately compared to literature values. The experimental design includes proper controls and multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Stochastic simulations of the Hes1/miR-9 network better match experimental data than deterministic simulations at both single-cell and population levels. Single-cell luciferase imaging shows high noise with peak-to-peak variability, and population-level qRT-PCR shows rapid dampening of oscillations, both consistent with stochastic but not deterministic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C47-C49 demonstrate good agreement between stochastic model predictions and experimental observations from live-cell imaging and qRT-PCR. The comparison is systematic and shows that stochastic simulations capture the dampening and variability observed experimentally, which deterministic models fail to reproduce. However, the authors acknowledge that simulations are less damped than experimental data, suggesting additional sources of variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C57",
+      "C64"
+    ],
+    "result": "In stochastic models, decreased system size (lower molecular copy number) increases the spread of differentiation timing in a population. At high system size (\u03a9=50), the timing distribution is narrow and approaches the deterministic solution where all cells differentiate simultaneously. As system size decreases to \u03a9=5 and \u03a9=1, the distribution becomes increasingly broad, demonstrating a continuum of behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C35, C57, C64 are well-supported by computational simulations using multiple methods (dSSA, CLE) that show consistent results across 2000 simulations. The relationship between system size and timing spread is clearly demonstrated in Figure 4, with good agreement between different simulation approaches. The finding that deterministic models produce synchronous differentiation (C33) is a fundamental property of such models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Reducing system size causes the average differentiation timing to shift toward earlier times, not just broadening the distribution. This systematic effect is explained by increased production of miR-9 during low HES1 troughs at lower system sizes due to the nonlinear Hill-type repression function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by computational modeling shown in Figures 4 and 5, with a mechanistic explanation provided. The authors demonstrate that this is due to the nonlinearity of the miR-9 production function, where low HES1 troughs cause spikes in miR-9 production. The effect is shown to be parameter-dependent and can be reversed under different parameter settings (Figure 5C), strengthening the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C59"
+    ],
+    "result": "Increasing miR-9 levels shifts the average differentiation time earlier and reduces the spread of timing in both computational models and experiments. In simulations, higher initial miR-9 narrows and advances the timing distribution. Experimentally, transfecting C17.2 cells with 50-100 nM miR-9 mimic decreased average differentiation time and reduced timing spread (from SD=48hr to 24hr and 17hr) in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C59 provide strong support through both computational predictions (Figure 6A-C) and experimental validation (Figure 6D-F, Figure 6\u2014figure supplements 1-2). The dose-dependent effect is demonstrated, and the experimental design includes appropriate controls. The agreement between theory and experiment validates a key prediction of the stochastic model. However, the experimental measurements rely on Tuj1 staining at discrete time points, which may introduce some uncertainty in timing precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C58"
+    ],
+    "result": "Stochasticity increases the robustness of the progenitor state by expanding the parameter space in which HES1 oscillations are maintained. The stochastic HES1 oscillator continues to operate under conditions where the deterministic equivalent stops oscillating, particularly in regions of parameter space with less nonlinear repression and high miR-9 requirements for translational repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C58 are supported by systematic parameter space analysis using LNA (Figure 7) and validation with dSSA simulations. The authors demonstrate noise-induced oscillations in regions where deterministic models show damped oscillations. The power spectrum analysis (Figure 7\u2014figure supplements) provides quantitative evidence for sustained oscillations in the stochastic regime. This represents a well-characterized example of noise-induced oscillations with biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C60"
+    ],
+    "result": "Hes1 mRNA partitioning at cell division is mostly binomial (36/51 divisions) with some asymmetry. The stochastic system is more robust than the deterministic system to noise from unequal molecular distribution at division, producing the same population-level differentiation distribution regardless of whether molecules are distributed equally or randomly at all system sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 and C60 are supported by experimental smFISH data (Figure 8) showing binomial partitioning with statistical testing, and computational modeling (Figure 9) comparing equal vs. binomial division modes. The Kolmogorov-Smirnov test is appropriately used to compare distributions. The finding that stochastic dynamics absorb partitioning noise is well-demonstrated, though the biological significance depends on the assumption that the measured partitioning mode is representative of physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors conclude that randomness from finite molecular copy numbers provides a framework to understand heterogeneity in neural stem cell differentiation timing. Developing systems may exploit stochasticity to stagger differentiation, cope with unequal inheritance, and safeguard the progenitor state. The molecular copy number is an important tunable parameter for controlling differentiation onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 and C61-C63 represent the main conclusions integrating computational and experimental findings. These are well-supported by the collective evidence from molecular quantification, stochastic modeling, and experimental validation. However, C55, C62, and C63 include speculative elements about evolutionary advantages and biological function that, while plausible and well-reasoned, go beyond what is directly demonstrated. The framework is internally consistent and provides testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C56"
+    ],
+    "result": "Recent studies show stochastic differentiation timing in neural development. The nervous system contains many cell types generated sequentially during embryogenesis. Single-cell lineage mapping in zebrafish retina and cultured rat retinal progenitors demonstrates fundamentally stochastic differentiation timing. This distribution occurs even for single cell types, not just between different cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C8, C56 are well-supported by multiple citations to published experimental studies. These establish the biological context and motivation for the modeling work. The claims accurately represent the cited literature and provide appropriate background for the study's focus on stochastic differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Hes genes regulate the balance between differentiation and progenitor maintenance in the developing nervous system. Hes1 oscillates with ~2hr period in progenitors but is expressed at low steady state in differentiated neurons. Loss of Hes genes causes premature differentiation, while overexpression inhibits neurogenesis. Hes1 oscillates due to delayed negative self-repression and fast degradation. Hes1 is targeted by miR-9, which accumulates over time and can terminate oscillations, leading to differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C19 are well-supported by extensive citations to published literature. These establish the molecular basis for the Hes1/miR-9 regulatory network that is the focus of the modeling. The claims accurately represent prior experimental work and provide essential background for understanding the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The Hes1/miR-9 interaction has been previously modeled using deterministic delay differential equations, showing that the network can exhibit bistability and Hopf bifurcations separating stable states from oscillatory regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 accurately describe prior modeling work by Goodfellow et al., 2014, which forms the foundation for the stochastic extension presented in this study. This provides important context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "The long-tail distribution of Hes1 mRNA molecules in NS cells may indicate slow switching between transcriptionally active and inactive promoter states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is speculative, interpreting the observed mRNA distribution with reference to Munsky et al., 2012. While the interpretation is plausible and consistent with known transcriptional bursting phenomena, the authors do not directly test this hypothesis or model promoter switching explicitly. The claim is appropriately hedged with 'may be indicative.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors acknowledge that low molecular copy number is not the exclusive source of heterogeneity. Other sources include Notch signaling, transcriptional bursting, and spatial effects. Bursting models have been fitted to smFISH and live transcription data in multiple systems. Binomial partitioning at division is expected theoretically and has been observed in bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 appropriately acknowledge limitations and alternative mechanisms, with proper citations to relevant literature. These demonstrate scholarly awareness of the broader context and alternative models. C71 provides the theoretical basis for the binomial partitioning model used in the simulations.",
+    "result_type": "MINOR"
+  }
+]

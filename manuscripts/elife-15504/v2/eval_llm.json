@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Drosophila larvae display continuous lateral oscillation of the anterior body during chemotaxis. Analysis of 42 wild-type larvae revealed rhythmic alternation between left and right turns at ~0.3 Hz, which is decoupled from the peristalsis rhythm (~1.1 Hz). Head sweeps maintain oscillatory continuity regardless of amplitude, with smooth distributions suggesting continuous modulation rather than discrete behavioral states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C25, C27-C33, C37-C41 collectively provide strong empirical evidence from larval tracking data (Figures 1-2) including Fourier analysis, distribution analysis, and quantitative measurements. The data consistently demonstrate continuous oscillation with no bimodality in turning distributions, supporting the core observational finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C46",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C99"
+    ],
+    "result": "A discrete-time agent model implementing continuous lateral oscillation with direct sensory modulation reproduces key larval taxis signatures. The model generates orbital behavior at low gain and crossing-over trajectories at high gain, matching patterns observed in real larvae including bearing angle distributions and proximity-dependent path characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C46, C53-C61, C99 are well-supported by simulation results (Figures 3-4) showing quantitative agreement between model predictions and larval data. The model successfully captures multiple behavioral signatures without parameter tuning for different conditions, demonstrating the sufficiency of the oscillatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C64",
+      "C67",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The oscillatory model accounts for behavioral modulation across genetic manipulations, odor concentration changes, and associative learning through a single gain parameter. Performance index increases linearly with gain, capturing the continuum of chemotactic performance observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C64, C67, C70-C72 are supported by simulation results (Figure 5) showing that gain modulation reproduces effects of OSN reduction, concentration changes, and learning. The linear relationship between gain and performance provides a parsimonious explanation for diverse experimental observations, though the biological interpretation of 'gain' remains abstract.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model reproduces the monotonic sensory decrease preceding large turns without requiring a low-pass filter. This signature emerges from environmental structure rather than temporal integration in the larva.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 show the model can reproduce sensory history patterns (Figure 6), but the authors acknowledge they cannot fully explain why this pattern appears under white noise optogenetic stimulation (Gepner et al., 2015). The explanation is plausible but incomplete, requiring further investigation of head sweep dynamics in space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The oscillatory model predicts first-turn bias toward attractive stimuli emerges from oscillator phase relationships rather than gradient sensing. The bias should increase with odor attraction strength and be more apparent when odor is lateralized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by model predictions (Figure 7) that align with prior observations. The mechanistic explanation based on oscillator phase is logically consistent with the model structure, though the predictions require experimental validation. The model provides a novel alternative to gradient-based explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "A continuous-time neural oscillator model adapted from lamprey CPG circuits demonstrates biological plausibility of the oscillatory mechanism. The model produces appropriate oscillation frequency (~0.3 Hz), smooth phase-dependent steering, and characteristic taxis trajectories without requiring precise stimulus timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C83-C91, C93 are well-supported by the continuous-time model implementation (Figure 8) showing biophysically plausible neural dynamics that reproduce key larval behaviors. The demonstration that steering varies smoothly across oscillator phase (C89) addresses a critical concern about timing requirements. The model successfully bridges abstract and neural-level descriptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C98",
+      "C100",
+      "C101",
+      "C105",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The oscillatory mechanism provides a simple architecture for multimodal integration where all sensory pathways converge and sum to modulate oscillation amplitude. This single degree of freedom accounts for effects of learning, concentration changes, and cross-modal interactions without requiring multiple parallel mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C98, C100-C101, C105, C108-C110, C112-C116 present a coherent theoretical framework supported by the model's ability to capture diverse phenomena with a single parameter. The convergence architecture (Figure 9C) is consistent with cited experimental findings on learning and multimodal integration, though direct neural evidence for this specific architecture is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Peristalsis inhibition is not essential for taxis signatures in the model, but occurs in larvae correlated with large body bends. The inhibition is triggered at turn onset rather than being a consequence of bending. The authors propose the same signal modulating oscillation amplitude also controls peristalsis speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C123 are partially supported by analysis (Figures 1, 9A-B) showing peristalsis inhibition timing and graded speed reduction. However, the proposed mechanism (C123) is speculative and not implemented in the models. The bimodal tail speed distribution (C122) contrasts with smooth turning distributions, suggesting additional complexity not fully addressed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The oscillatory hypothesis generates testable predictions: head-sweep amplitude should vary continuously with stimulus favorability; stop-and-cast events should be preceded by opposite-direction sweeps; weathervaning and casting are not independent; and stimulus responses should be timing-dependent in ways that differ from state-based models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 present logically consistent predictions derived from the model structure. Prediction C130 is already supported by larval data (Figures 1B, 2A-B). The predictions are clearly distinguished from alternative state-based models (C134), making them experimentally testable. These represent strong falsifiable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The proposed oscillatory mechanism is consistent with known larval neural circuitry. CPGs operate in thoracic/abdominal segments, recurrent circuits exist in the ventral nerve cord, and genetic disruption of midline connections disrupts lateral bending.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 are supported by multiple citations to prior neuroanatomical and genetic studies. The consistency between the proposed mechanism and known circuitry strengthens biological plausibility, though direct evidence for the specific oscillator implementation remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The model predicts mushroom body output neurons (MBONs) converge to modify motor gain, making their valence effects timing-dependent. Optogenetic MBON activation should only alter taxis behavior if stimulus timing respects oscillator phase sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C137 present a novel prediction about learning circuits that contrasts with current theory (C135). While logically consistent with the model, this prediction challenges established views on MBON function and requires experimental validation. The prediction is testable but represents a significant departure from accepted mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26"
+    ],
+    "result": "Background context establishes that larval taxis has been characterized as discrete behavioral states, but recent evidence suggests continuous modulation. Larvae use temporal concentration changes rather than spatial gradients, with similar taxis characteristics across modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C21, C26 provide well-cited background establishing the scientific context. These claims accurately represent prior work and identify the gap the current study addresses. The characterization of existing models and evidence for behavioral continuity sets up the motivation for the oscillatory hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C138",
+      "C139"
+    ],
+    "result": "Oscillatory locomotion is widespread in biology and may provide advantages for sensorimotor control. The modular architecture proposed could offer evolutionary flexibility by allowing easy integration of new sensory modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97, C138-C139 provide broader biological context supported by citations. The evolutionary speculation (C138-C139) is reasonable but not directly tested. These claims situate the findings within general principles of biological organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Methods describe analysis of 42 wild-type larvae tracked at 7fps for 5 minutes during chemotaxis, with body bending and angular velocity calculated from tail, centroid, and head positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C140-C142 describe standard methods for larval tracking and kinematic analysis. The data source is properly cited (Gomez-Marin et al., 2011) and analysis procedures are clearly defined, enabling reproducibility.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C25"
+    ],
+    "result": "Prior work established that daf-7 TGF\u03b2 (expressed in ASI neurons) and tph-1 tryptophan hydroxylase (expressed in ADF and NSM neurons) encode food abundance to modulate lifespan in C. elegans, with cross- and self-regulation between these genes and parallel pathway function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C7-C9 are consistently supported by citation to prior work (Entchev et al., 2015). Claim C25 regarding parallel pathway function is also supported by the same citation. These claims establish the foundational context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C24",
+      "C62"
+    ],
+    "result": "In wild-type C. elegans, ASI, ADF, and NSM neurons encode approximately 0.9 bits of information about food abundance, with approximately 40% of this information encoded redundantly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C24, and C62 are directly supported by data in Figure 1C-E showing mutual information measurements and redundancy calculations. The information-theoretic analysis appears methodologically sound with appropriate controls for experimental variability (Figure 1\u2014figure supplement 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "tph-1(-) mutants show increased food information with modestly decreased redundancy, while daf-7(-) mutants show decreased food information, suggesting differential effects on encoding efficiency and robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by data in Figure 1C and 1E. However, claim C29 is an inference about efficiency and robustness that, while reasonable, lacks direct experimental validation. The overall result is supported but the mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Loss of daf-7 causes a dramatic shift from redundant to synergistic encoding (~40% synergy) in ASI, ADF, and NSM neurons, an effect that persists when analyzing only tph-1-expressing neurons and is daf-7-specific, indicating that crosstalk between daf-7 and tph-1 plus daf-7 autoregulation control the coding strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are well-supported by data in Figures 1C-H showing the redundancy-to-synergy transition. The control analysis examining only tph-1-expressing neurons (C32) strengthens the conclusion. The specificity to daf-7 (C35) is demonstrated by comparison with tph-1(-) mutants. The robustness is confirmed across multiple analytical methods (Figure 1\u2014figure supplement 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "In tph-1(-); daf-7(-) double mutants, neurons approach independent encoding (R\u22480), confirming that redundancy and synergy arise from communication between neurons via daf-7 and tph-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by data in Figures 1C-E. The double mutant analysis provides strong genetic evidence for the role of these genes in establishing coding strategy. However, C37 is partially inferential\u2014while the genetic data strongly support this interpretation, direct demonstration of inter-neuronal communication would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C6"
+    ],
+    "result": "The lifespan response to food encodes ~0.6 bits of information in wild-type animals, with approximately 80% of this information lost in tph-1(-); daf-7(-) double mutants, demonstrating that daf-7 and tph-1 mediate most food-responsiveness in lifespan modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C6 are supported by data in Figure 1I. The quantification of information loss in the double mutant provides strong evidence for the central role of these genes. However, the manuscript does not provide detailed methods for measuring lifespan information, which would be important for full evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Signal correlation (correlated average responses) increases redundancy while noise correlation (co-fluctuations under fixed conditions) promotes synergy. Wild-type animals have negligible noise correlation leading to redundancy, while all mutants show increased noise correlation. The daf-7(-) mutant shifts to synergy due to dramatic reduction in signal correlation, while tph-1(-) compensates increased noise correlation with increased signal correlation to retain redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by data in Figure 2D-F and theoretical framework from Schneidman et al., 2003. The decomposition of redundancy/synergy into signal and noise correlations is methodologically sound and provides mechanistic insight. The data clearly show the differential effects across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sensitivity analysis reveals that in wild-type animals, redundancy is highly sensitive to noise and weakly sensitive to correlation, providing rationale for daf-7's role in noise reduction. The sensitivity of redundancy to noise is controlled by daf-7, while robustness to correlation is maintained by both daf-7 and tph-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by sensitivity analysis in Figure 3A. The computational approach of rescaling noise and correlations is appropriate. However, claims C54-C55 are inferences from the sensitivity patterns rather than direct demonstrations. The connection to daf-7's noise reduction role (C50) relies on both current data and prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Computational modeling shows that decreasing signal-to-noise ratio favors synergy (consistent with daf-7(-) mutants), and that redundant strategies increase minimum information transmission and can be accommodated by broader signaling parameters compared to synergistic encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C59-C60 are supported by computational modeling in Figure 4B-D. The model provides theoretical support for experimental observations. However, the model is simplified (linear integration, three ideal sensors) and may not capture all biological complexity. The predictions are consistent with experimental data but represent theoretical rather than empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The ability to discriminate between different food inputs based on lifespan is degraded in daf-7(-) mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by data in Figure 1I and citation to prior work. This result connects the coding strategy changes to physiological outcomes, though the manuscript could provide more detail on how lifespan discrimination was quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C20",
+      "C63",
+      "C65",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "Interactions between daf-7 and tph-1 regulate redundancy and synergy through coordinated control of circuit-level signal and noise properties. daf-7 functions both as an encoder of food information and as a regulator of redundancy via regulation of tph-1, influencing information processing through effects on signal, noise, and correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C19-C20, C63, C65-C66, and C69-C70 represent the main conclusions integrating multiple lines of evidence from Figures 1-3. The claims are well-supported by the combination of information-theoretic analysis, genetic perturbations, and correlation analysis. This represents a comprehensive characterization of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The daf-7(-) and tph-1(-) mutations do not affect development of ASI, ADF, and NSM neurons, which remain food-responsive in mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are supported by the observation that gene expression responses to food persist in mutants (evident throughout Figure 1). This control is important for ruling out developmental explanations for the coding strategy changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C76"
+    ],
+    "result": "A custom microfluidics platform was used for high-throughput imaging, with experimental validation showing good correlation (R=0.8319) between mCherry and Venus reporters, indicating that actual experimental variability is lower than 30%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74, and C76 are supported by Figure 1\u2014figure supplement 1A and Figure 1\u2014figure supplement 2. The experimental validation is appropriate and important for establishing data quality. The inference in C76 about intrinsic noise is reasonable but could benefit from more detailed analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Different neurons have different optimal input distributions that vary by genotype, potentially allowing different neurons to detect different food input levels to broaden the sensory range of the circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 is supported by data in Figure 1\u2014figure supplement 3. However, claim C78 is speculative\u2014while the observation of different optimal distributions is valid, the functional interpretation about broadening sensory range lacks direct experimental support. This represents an interesting hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The information-theoretic results are robust across different computational methodologies for density estimation, with the redundancy-to-synergy switch in daf-7(-) consistently present across all methods, and both information and redundancy measures stable to sample size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by comprehensive methodological validation in Figure 1\u2014figure supplement 4. This analysis is critical for establishing the robustness of the main findings and demonstrates appropriate statistical rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C41"
+    ],
+    "result": "Information theory provides an established framework for characterizing biological signal encoding and has been applied to neural and biochemical systems. Redundant encoding replicates information across neurons providing robustness at the cost of efficiency, while synergistic encoding is more efficient but vulnerable to disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 and C41 represent background knowledge supported by appropriate citations to established literature. These definitional and contextual claims are well-supported and provide necessary theoretical foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The ~0.9 bits of information encoded by the neurons is in the range of other biochemical pathways and consistent with C. elegans needing to sense two states (boom or bust) in the wild.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by appropriate citations (Cheong et al., 2011; F\u00e9lix and Braendle, 2010). These contextual comparisons help interpret the biological significance of the measured information content.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Loss of tph-1 increases signal separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by citation to prior work (Entchev et al., 2015). This claim is used to explain modeling results but represents prior rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The effect of neuromodulators on circuit function via control of redundant encoding strategy is novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is a novelty claim that is difficult to evaluate without comprehensive knowledge of the literature. While the specific findings appear novel, the claim of novelty itself is speculative and would require more thorough literature review to confirm.",
+    "result_type": "MINOR"
+  }
+]

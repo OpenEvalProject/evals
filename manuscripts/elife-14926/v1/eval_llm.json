@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors identified 210 genes upregulated in Epi-primed (HV-S+) ESCs and 533 genes upregulated in PrEn-primed (HV+S+) ESCs through microarray analysis. These priming genes show subtle but robust differential expression, are enriched for CGI promoters, and have distinct functional profiles: Epi priming genes are involved in cell cycle and metabolism, while PrEn priming genes are involved in intracellular transport, cell migration, and cell adhesion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 are well-supported by microarray data validated by qRT-PCR (C36), with appropriate statistical thresholds (FDR 0.05, fold change >1.5). The functional enrichment analysis (C41-C42) and CGI enrichment (C44-C45, with p-values provided) strengthen the characterization. The multi-step filtering strategy (Figure 1B) is clearly described and reduces false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GRO-seq analysis demonstrates that priming gene expression is primarily regulated at the transcriptional level, with genes upregulated in either Epi- or PrEn-primed populations showing increased nascent transcript abundance in the relevant population. However, PrEn priming genes show lower GRO-seq signal relative to steady-state mRNA levels compared to Epi priming genes, suggesting additional post-transcriptional regulation for PrEn genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 are supported by GRO-seq data from two biological replicates (Figure 1F-G, Figure 1\u2014figure supplement 1D-E) with appropriate statistical testing (permutation tests, p<0.01). The inference about post-transcriptional regulation of PrEn genes (C48, C50) is reasonable given the discrepancy between nascent and steady-state RNA levels, though additional experiments (e.g., RNA stability assays) would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ChIP-seq analysis reveals a reciprocal relationship between transcriptional activity and H3K27me3 levels within gene bodies for both Epi and PrEn priming genes, while H3K27me3 levels at TSSs remain invariant during priming. In contrast, PrEn priming genes show significantly higher promoter-proximal H3K27me3 enrichment (41.3% with TSS peaks) compared to Epi priming genes (19.5% with TSS peaks). H3K4me3 levels do not change significantly between primed populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are well-supported by ChIP-seq data from two biological replicates using both native and cross-linked methodologies (C53), which validates the subtle effects observed. Statistical significance is demonstrated (p<2.2\u00d710\u207b\u00b9\u2076 for gene body effects, Fisher's test p=3.4\u00d710\u207b\u00b3\u2076 for TSS enrichment). The independence of TSS and gene body H3K27me3 (C54) is supported by stratified analysis (Figure 2\u2014figure supplement 2A-B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PrEn priming genes are enriched for polycomb targets that are upregulated in Ring1b\u207b/\u207b and Eed\u207b/\u207b ESCs, while Epi priming genes are enriched for genes downregulated in polycomb mutants. Analysis of published Rex1 reporter data confirms the reciprocal relationship between gene body H3K27me3 and transcription. Comparison with spontaneously differentiated PrEn cells shows that measurable H3K27me3 losses at TSSs only become evident upon differentiation, not during priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by integration with published datasets (Leeb et al., 2010; Marks et al., 2012) with appropriate statistical testing (Fisher's exact test with multiple p-values <0.01). The comparison with Rex1 data (C60-C63) and spontaneously differentiated cells (C64) provides orthogonal validation. The conclusion about TSS H3K27me3 changes only during differentiation (C66) is well-supported by the comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Re-culture experiments using dual-reporter ESC lines demonstrate that primed populations re-equilibrate with similar dynamics regardless of starting state or reporter used, reaching near-equilibrium by 72 hours. Co-culture experiments show that interconversion rates are independent of paracrine interactions. ChIP-seq analysis at 30 hours post-sorting reveals complete loss of differential gene-body H3K27me3 levels, indicating that these patterns are closely coupled to the dynamic transcriptional changes during priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 are supported by well-designed re-culture experiments using multiple reporter lines (HVHC and HFHCV) with both independent and co-culture conditions (Figure 2\u2014figure supplement 4A-B). The ChIP-seq analysis at an intermediate time point (30h) provides direct evidence for the dynamic nature of gene-body H3K27me3 (C70-C71). The experimental design effectively controls for cell-autonomous vs. paracrine effects (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Single-cell qRT-PCR analysis of Eed\u207b/\u207b and Ring1b\u207b/\u207b ESCs reveals that most PrEn priming genes and several pluripotency genes (Nanog, Tbx3, Esrrb) show elevated and more homogeneous expression in polycomb mutants compared to wild-type ESCs. Immunofluorescence confirms that reduced heterogeneity and increased expression observed at the RNA level is propagated to NANOG protein. These results indicate that polycomb activity is required to maintain transcriptional heterogeneity associated with lineage priming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by single-cell qRT-PCR data from multiple cell lines (WT, Eed\u207b/\u207b, Ring1b\u207b/\u207b) with appropriate statistical testing (Kolmogorov-Smirnov and Wilcoxon tests; Figure 3A-B, Figure 3\u2014figure supplement 1). Immunofluorescence validation at the protein level (C75, Figure 3C-D) strengthens the conclusion. However, the interpretation that this reflects a direct role of polycomb in maintaining heterogeneity (C76) could be confounded by selective pressure during ESC culture, as the authors acknowledge in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CRISPR-generated Eed\u207b/\u207b HV5.1 ESCs show reduced PECAM1 and SSEA1 expression in serum+LIF, which is partially rescued by addition of 3 \u03bcM Chiron. Chiron treatment results in significant expansion of a high Hhex-expressing population in Eed\u207b/\u207b cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by flow cytometry data (Figure 3\u2014figure supplement 2B) showing clear phenotypic differences between Eed\u207b/\u207b and wild-type cells. The rescue experiment with Chiron (C78) provides functional validation. However, the interpretation is complicated by the fact that Hhex is a Wnt target gene, making it difficult to separate direct polycomb effects from indirect effects through Wnt signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Short-term (24h) treatment with the EZH2 inhibitor EPZ6438 results in marked reduction of global H3K27me3 levels in five independent ESC lines, while MEK-ERK inhibition (PD03) and 2i treatment increase global H3K27me3 levels. Despite global H3K27me3 removal, very few genes show significant expression changes after EPZ treatment, with changes occurring almost exclusively in genes with H3K27me3 at their TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 are well-supported by Western blot data from five independent lines (C80, Figure 4B), ChIP-qPCR validation (Figure 4\u2014figure supplement 1A), and microarray analysis (C83-C84, Figure 4\u2014figure supplement 2). The observation that expression changes are restricted to genes with TSS H3K27me3 (C84) is important for interpreting the functional effects. The re-analysis of published 2i data (C82) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Short-term EPZ treatment increases PrEn priming (measured by HV+ fraction) with little effect on Nanog expression. Functionally, EPZ-treated ESCs show reduced neural differentiation efficiency in vitro and preferentially contribute to extra-embryonic endoderm rather than epiblast in chimeric embryos. These results indicate that transient loss of PRC2 catalytic activity shifts the distribution of priming in favor of PrEn and away from epiblast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 are supported by multiple functional assays: flow cytometry for priming markers (C85-C86, Figure 4C), neural differentiation assays (C87, Figure 4D and Figure 4\u2014figure supplement 3), and chimera experiments (C88-C89, Figure 4E). The chimera data shows statistically significant shifts (\u03c7\u00b2=9.96, p=0.007) with appropriate controls. The conclusion (C90) is well-supported by the convergent evidence from in vitro and in vivo assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose a model in which polycomb acts at transcription start sites to constrain PrEn gene expression within a limited dynamic range, facilitating priming through transient fluctuations while preventing premature differentiation. Gene body H3K27me3 is antagonized by local polymerase density, linking H3K27me3 deposition to transcriptional changes. Short-term polycomb inhibition frees cells from constraints on gene expression variability, predisposing PrEn priming genes for rapid upregulation upon differentiation cues without causing immediate transcriptional changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C101 represent interpretations and models proposed in the discussion. While these are reasonable interpretations of the data (C91-C92 are supported by the correlation between transcription and gene body H3K27me3), many are speculative (C94, C96-C97 explicitly use 'propose' and 'suggest'). The model requires additional mechanistic experiments to test specific predictions, such as direct measurement of transcriptional dynamics, polymerase occupancy at different H3K27me3 levels, and chromatin accessibility changes. The proposal that polycomb maintains heterogeneity (C95) could be confounded by selective pressure during culture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "ESCs contain heterogeneous populations of Epi-primed and PrEn-primed cells that dynamically interconvert in culture, similar to the transient progenitors in the peri-implantation ICM. These populations show differential expression of lineage-specific markers and enhanced capacity to differentiate toward their respective lineages in vitro and contribute to appropriate lineages in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent established knowledge from prior work (primarily Canham et al., 2010; Morgani et al., 2013) that provides context for the current study. These are appropriately cited and form the foundation for the experimental design. The claims are well-established in the field and do not require re-evaluation here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Polycomb complexes (PRC1 and PRC2) are essential for embryonic development beyond gastrulation and for proper ESC differentiation. PRC2 deposits H3K27me3 through EZH1/2, which can recruit PRC1 through CBX chromodomains. In ESCs, H3K27me3 and PRCs occupy large domains at repressed developmental regulator genes, and these genes are upregulated in polycomb mutants. Bivalent chromatin (co-occurrence of H3K27me3 and H3K4me3) is associated with poised transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C32 represent established knowledge about polycomb biology from prior work, appropriately cited throughout the introduction. These provide essential background for interpreting the novel findings about polycomb's role in lineage priming. The claims are well-established and do not require re-evaluation.",
+    "result_type": "MINOR"
+  }
+]

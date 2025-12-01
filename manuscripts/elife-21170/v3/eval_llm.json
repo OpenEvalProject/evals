@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "GCaMP6f-PSD95 produces postsynaptic punctate signals that report NMDA receptor-mediated Ca2+ transients. The indicator shows 98.3% reduction in detected events upon AP5 application, confirming NMDA receptor specificity. ROIs are placed over individual puncta with the assumption that one ROI corresponds to one synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 demonstrate successful validation of the imaging approach with AP5 producing near-complete blockade (98.3%, p<0.001) of detected signals. The methodological claims C47-C50 describe appropriate experimental design. However, the critical assumption in C49 that 'one ROI correlates to one synapse' is supported only by careful ROI placement (C48) and coefficient of variance analysis (C22), but lacks independent validation such as co-labeling with synaptic markers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C16",
+      "C19",
+      "C20",
+      "C15",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Spontaneous and evoked NMDA receptor-mediated Ca2+ transients occur at the same synapses but show no linear correlation in their rates. Spontaneous responses cluster around 0.78 events/ROI/min while evoked responses show mean Rp of 0.34, with no correlation between these parameters at individual synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C16 present the core finding supported by scatter plot analysis (Figure 2C) showing lack of correlation. The distributions (C19-C20) are quantitatively described and consistent with prior literature (C15). The experimental design (C53-C55) with 15 stimulations over 8 min and 1 s classification window appears appropriate given the low spontaneous rate (C74). Statistical analysis would strengthen the 'no correlation' claim, but visual inspection of Figure 2C supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C42",
+      "C43"
+    ],
+    "result": "Approximately 20% of ROIs exhibit only spontaneous responses during recording, suggesting a subpopulation of synapses may exclusively transmit spontaneous signals, while the majority of hippocampal synapses participate in both modes of transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C17 provides a quantitative observation (20% spontaneous-only ROIs), but the interpretation in C18 and C43 that these represent 'exclusively spontaneous' synapses is speculative. The authors acknowledge these could alternatively represent synapses with very low evoked Rp that failed to respond during the limited recording period (15 stimulations). Longer recordings or higher stimulation frequencies would be needed to distinguish true spontaneous-only synapses from low-Rp synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C44"
+    ],
+    "result": "Spontaneous transmission events follow a non-Poisson distribution at the single synapse level, with neither the measured average nor best-fit Poisson distribution adequately describing the data (p<<0.001 by \u03c7\u00b2 test), suggesting non-random occurrence potentially indicating presynaptic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are well-supported by statistical analysis (\u03c7\u00b2 test, p<<0.001) comparing measured distribution to Poisson models (Figure 2E). This finding is consistent with prior literature (C23). However, C44's speculation about presynaptic regulation, while plausible, remains unproven as the non-Poisson nature could arise from multiple mechanisms including postsynaptic factors, receptor desensitization, or local glutamate dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MK-801 treatment during a stimulation-free period blocks spontaneous NMDA receptor responses (89% reduction, p=0.010) but does not prevent subsequent evoked responses at the same ROIs. The number of ROIs responding to evoked stimulation after MK-801 treatment (56%) is statistically indistinguishable from controls (58%, p=0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe a well-controlled experiment with appropriate controls (C58) showing differential MK-801 effects on spontaneous vs evoked responses. The 89% reduction in spontaneous rate (C26, p=0.010) contrasts with maintained evoked responsiveness (C31, p=0.31 vs control). The experimental design (C56-C57) is sound. This provides strong evidence for receptor segregation, though the mechanism of MK-801's use-dependent block means some overlap could be masked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "MK-801 blockade during evoked stimulation correlates with initial evoked Rp (R\u00b2=0.74) but not with prior spontaneous activity rate (R\u00b2=0.001), indicating that spontaneous and evoked release activate largely separate pools of postsynaptic NMDA receptors within individual synapses, implying nanoscale segregation of release sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 and C61-C62 present compelling correlational evidence (Figure 4A vs 4B) showing MK-801 block depends on evoked Rp but not spontaneous rate. The logic in C59-C60 correctly predicts that if receptors were shared, spontaneous activity should drive MK-801 block of evoked responses. The interpretation of nanoscale segregation (C45-C46) is well-supported by the data and consistent with cited literature. However, alternative explanations (e.g., differential receptor subunit composition, distinct receptor kinetics) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C52",
+      "C64",
+      "C65"
+    ],
+    "result": "The experimental system uses NBQX and muscimol to prevent network activity while preserving axonal excitability, ryanodine to block ER Ca2+ release, and Mg2+-free solution to maximize NMDA receptor currents, with field stimulation at 30 mA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C52 describe pharmacological manipulations that are well-justified by citations and supplementary data (Figure 2\u2014figure supplement 1A,B). The use of Mg2+-free solution (C64) is standard for NMDA receptor studies. However, blocking ryanodine receptors (C14) eliminates a previously identified amplification mechanism (C3, C8), which may reduce sensitivity to detect smaller Ca2+ transients and could bias toward detecting only larger, more robust synaptic events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Neither evoked Rp nor spontaneous response rate correlate with distance from soma, and there is no correlation between response rates and amplitude variance that would indicate multiple synaptic inputs per ROI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C21 states analysis was performed but data are not shown, making independent evaluation impossible. Claim C22 is supported by analysis in Figure 2\u2014figure supplement 1C,D showing no correlation between response rate and coefficient of variance. However, the absence of correlation does not definitively prove single synaptic inputs per ROI, as multiple inputs with similar properties could produce similar variance patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Image analysis involves segmenting recordings, subtracting average from maximum intensity projections, manually placing 2.5 \u00b5m ROIs over isolated puncta, converting to \u0394F/F\u2080, and detecting peaks using threshold criteria (\u0394F/F\u2080 > 0.1, slope > 687 units/sec, >2 SD above baseline). Events within 1 s of stimulation are classified as evoked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 provide detailed methodological description. The 1 s classification window (C72-C73) is justified by postsynaptic Ca2+ signal kinetics. The low spontaneous rate (C74, <1 event/min) supports low misclassification probability (C75). However, the peak detection criteria (C71) appear arbitrary without justification, and manual ROI placement (C68-C69) introduces potential selection bias. The threshold of \u0394F/F\u2080 > 0.1 may miss smaller events, potentially biasing toward higher-probability synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work establishes that spontaneous and evoked release are segregated within synapses, can activate separate NMDA receptor pools, and that spontaneous transmission regulates synaptic strength through Ca2+-induced Ca2+ release with implications for antidepressant efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 accurately summarize prior literature with appropriate citations. These provide context for the current study. Claim C7 regarding antidepressant implications is appropriately qualified as speculative ('may have implications'). The authors correctly cite their own prior work (C3, C8) and others' work (C1, C2, C6, C9) to establish the scientific foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Images were collected at 5 frames per second with 33% illumination intensity and 0.6 neutral density filter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides technical imaging parameters that are straightforward methodological details. These parameters appear reasonable for GCaMP6f imaging to balance signal detection with phototoxicity and photobleaching concerns.",
+    "result_type": "MINOR"
+  }
+]

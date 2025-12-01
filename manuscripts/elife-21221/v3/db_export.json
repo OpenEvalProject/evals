@@ -1,0 +1,1548 @@
+{
+  "submission": {
+    "id": "0b0596cf-02c4-42ea-b641-5f2069aba02b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:44:53.960385Z",
+    "updated_at": "2025-11-30T22:44:53.960385Z"
+  },
+  "content": [
+    {
+      "id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "submission_id": "0b0596cf-02c4-42ea-b641-5f2069aba02b",
+      "content_type": "manuscript",
+      "content_text": "# Pharmacological targeting of the transcription factor SOX18 delays breast cancer in mice\n\n## Authors\n\n- Jeroen Overman<sup>1</sup>\n- Frank Fontaine<sup>1</sup>\n- Mehdi Moustaqil<sup>1</sup>\n- Deepak Mittal<sup>3</sup>\n- Emma Sierecki<sup>1</sup>\n- Natalia Sacilotto<sup>4</sup>\n- Johannes Zuegg<sup>1</sup>\n- Avril AB Robertson<sup>1</sup>\n- Kelly Holmes<sup>5</sup>\n- Angela A Salim<sup>1</sup>\n- Sreeman Mamidyala<sup>1</sup>\n- Mark S Butler<sup>1</sup>\n- Ashley S Robinson<sup>6</sup>\n- Emmanuelle Lesieur<sup>1</sup>\n- Wayne Johnston<sup>1</sup>\n- Kirill Alexandrov<sup>1</sup>\n- Brian L Black<sup>6</sup> ([ORCID: 0000-0002-6664-8913](https://orcid.org/0000-0002-6664-8913))\n- Benjamin M Hogan<sup>1</sup>\n- Sarah De Val<sup>4</sup>\n- Robert J Capon<sup>1</sup>\n- Jason S Carroll<sup>5</sup> ([ORCID: 0000-0003-3643-0080](https://orcid.org/0000-0003-3643-0080))\n- Timothy L Bailey<sup>1</sup>\n- Peter Koopman<sup>1</sup>\n- Ralf Jauch<sup>7</sup>\n- Matthew A Cooper<sup>1</sup>\n- Yann Gambin<sup>1</sup> ([ORCID: 0000-0001-7378-8976](https://orcid.org/0000-0001-7378-8976))\n- Mathias Francois<sup>1</sup> ([ORCID: 0000-0002-9846-6882](https://orcid.org/0000-0002-9846-6882)) \u2020\n\n### Affiliations\n\n1. Institute for Molecular Bioscience, The University of Queensland Brisbane Australia\n2. Single Molecule Science, Lowy Cancer Research Centre, The University of New South Wales Sydney Australia\n3. Immunology in Cancer and Infection Laboratory, QIMR Berghofer Medical Research Institute Herston Australia\n4. Ludwig Institute for Cancer Research, Nuffield Department of Clinical Medicine, The University of Oxford Oxford United Kingdom\n5. Cancer Research UK, The University of Cambridge, Li Ka Shing Centre Cambridge United Kingdom\n6. Cardiovascular Research Institute, The University of California, San Francisco San Francisco United States\n7. Genome Regulation Laboratory, Drug Discovery Pipeline, CAS Key Laboratory of Regenerative Biology, Joint School of Life Sciences, Guangzhou Institutes of Biomedicine and Health, Chinese Academy of Sciences Guangzhou China\n8. Guangzhou Medical University Guangzhou China\n\n\u2020 Corresponding author\n\n## Abstract\n\nPharmacological targeting of transcription factors holds great promise for the development of new therapeutics, but strategies based on blockade of DNA binding, nuclear shuttling, or individual protein partner recruitment have yielded limited success to date. Transcription factors typically engage in complex interaction networks, likely masking the effects of specifically inhibiting single protein-protein interactions. Here, we used a combination of genomic, proteomic and biophysical methods to discover a suite of protein-protein interactions involving the SOX18 transcription factor, a known regulator of vascular development and disease. We describe a small-molecule that is able to disrupt a discrete subset of SOX18-dependent interactions. This compound selectively suppressed SOX18 transcriptional outputs in vitro and interfered with vascular development in zebrafish larvae. In a mouse pre-clinical model of breast cancer, treatment with this inhibitor significantly improved survival by reducing tumour vascular density and metastatic spread. Our studies validate an interactome-based molecular strategy to interfere with transcription factor activity, for the development of novel disease therapeutics.\n\n## Introduction\n\nThe SOXF group (SOX7, \u201417 and \u201418) of transcription factors (TFs) are key regulators of endothelial cell differentiation during development (Fran\u00e7ois et al., 2008; Corada et al., 2013; Hosking et al., 2009; Matsui et al., 2006; Cermenati et al., 2008; Herpers et al., 2008), and are thus critical for the formation of vasculature. Mutation or deletion of SoxF genes compromises arteriovenous specification, blood vascular integrity and lymphangiogenesis, and inhibits tumour growth and metastasis in animal models of cancer (Duong et al., 2012; Yang et al., 2013; Zhang et al., 2009; Young et al., 2006). More recently, high levels of SOX18 have been associated with poor prognosis for cancer in human patients (Eom et al., 2012; Pula et al., 2013; Jethon et al., 2015). Pharmacological inhibition of SOX18 protein function therefore presents a potential avenue for management of the vascular response in cancer.\n\nTranscription factors often operate in mutually redundant families, thwarting conventional approaches to developing transcription factor-based therapies. Any attempt to develop pharmaceutically useful SOX18 inhibitors must overcome two obstacles \u2014 first, that SOX18 loss of function is compensated by the action of the remaining SOXF (Hosking et al., 2009), and second, that each SOXF factor is likely to have several partners that may themselves act redundantly. To address these challenges, we sought to develop a means of broad-scale functional inhibition of SOX18 transcription factor through the simultaneous interference with multiple SOX18 protein-protein interactions (PPIs).\n\nSOX proteins activate individual target genes by recruiting specific interacting partners (Sarkar and Hochedlinger, 2013), but only two protein-protein interactions for the SOXF group (SOX18-MEF2C and SOX17-OCT4) have been identified to date (Hosking et al., 2001; Jauch et al., 2011). We first mapped the SOX18 interactome (the network of SOX18 interacting partners), using a combination of unbiased proteomic technologies. Chromatin immunoprecipitation coupled to mass spectrometry (ChIP-MS) provided a first-pass screen for proteins associated with chromatin- bound SOX18 in human umbilical vein endothelial cells (HUVECs) (Mohammed et al., 2013), then, ALPHA-Screen resolved SOX18-dependent complexes into pairwise interactions using in vitro translated full-length proteins (Figure 1A; Mureev et al., 2009; Kovtun et al., 2011; Sierecki et al., 2013; Sierecki et al., 2014; Gambin et al., 2013). ChIP-MS analysis revealed 289 proteins, representing a variety of gene ontology (GO) classes of molecular function, that associate directly or indirectly with SOX18 (Figure 1B, Figure 1\u2014figure supplement 1A\u2013C). To increase our chance of identifying direct interactors, we focused on proteins known to be nucleic acid and/or protein binding (Figure 1B, purple). From this subset, we chose eight known transcription factors, helicases, co-repressors, RNA binding and DNA-repair molecules (Figure 1\u2014figure supplement 1A and B). Using ALPHA-Screen, we observed that SOX18 interacts with itself, and also forms pairwise interactions with DDX1, DDX17, ILF3, STAT1, TRIM28, and XRCC5 (Figure 1C, left column '+', Figure 1\u2014figure supplement 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of the experimental strategy to deconvolute SOX18- dependent protein-protein interactions (PPIs) combining Chromatin immunoprecipitation-mass spectrometry (ChIP-MS) and Amplified Luminescent Proximity Homogeneous Assay (ALPHA-Screen) methods. (B) GO-term analysis for molecular function on the 289 proteins identified by SOX18-cMyc ChIP-MS in human umbilical vein endothelial cells (HUVECs). Non-specific interactors found in Myc-tag only transfected cells were subtracted. Proteins with nucleic acid binding or protein binding capacity (purple) were considered for consecutive direct interaction studies to enhance likeness of identifying direct interactors. (C) Left column: heatmap representation of SOX18 pairwise PPIs as tested by ALPHA-Screen, on a selection of ChIP-MS SOX18 associated proteins, endothelial transcription factors and positive/negative control proteins. Right column: heatmap representation of Sm4 activity on SOX18-dependent protein-protein interactions, as tested at 100 pM. Interaction and disruption threshold is indicated in the scale bar by a black line. Levels of interaction and disruption above the threshold are demarked by '+', and below the threshold by '\u2014'. Tagged proteins were expressed in the Leishmania tarentolae cell-free protein expression system. (D) Representative ALPHA-Screen concentration-response curve for SOX18 PPI disruption by Sm4. Data shown are mean \u00b1 s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Mass spectrometry spectrum for a representative double charged DDX17 peptide with the sequence KAPILIATDVASRG (Muscat ion score 51.6), identified from immunoprecipitation of cMyc-SOX18 with anti-cMyc antibody in HUVECs. (B) Coverage of identified peptides of SOX18 and interacting proteins selected from ChIP-MS. (C) Amino acid sequence of DDX17, with the identified ChIP-MS peptides indicated in green. (D) Typical ALPHA-Screen curve for protein dilution optimization, showing SOX9-SOX9 and SOX18-SOX18. The presence of a peak (hook effect) demonstrates an interaction and represents the ideal protein concentration for consecutive binding studies. Proteins were expressed in the Leishmania tarentolae cell-free protein expression system. (E) Molecular structure of SOX18 inhibitor Sm4. (F) ALPHA-Screen concentration-response curves for SOX18 PPI disruption by Sm4. Data shown are mean \u00b1 s.e.m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The left panel shows a matrix of protein-protein interactions between SOXF, MEF2C and RBPJ and OCT4 as measured by ALPHAScreen. The right panel shows the effects of 50 \u00b5M Sm4 on PPIs (blue = no PPI/disruption, green/yellow = low PPI/disruption, orange/red = strong PPI/complete disruption, grey = PPI below threshold, Sm4 effect cannot be determined).\n\nIn addition, we studied potential pairwise interactions of 6 well-known TFs able to regulate endothelial cell function (ESR1, NR2F2, RBPJ, SOX7, SOX17 and CTNNB1), and the only identified SOX18 protein partner MEF2C (Hosking et al., 2001). The well-characterized SOX9 homo-dimer (Bernard et al., 2003) was included as a positive control to validate the ALPHA-Screen signal (Figure 1\u2014figure supplement 1D). SOX18 was found to interact with all endothelial transcription factors tested, with the possible exception of SOX17 and CTNNB1, which showed a binding affinity below the arbitrary threshold (Figure 1C, '-').\n\nHaving identified an array of proteins able to interact with SOX18, we then went on to test the activity of a small-molecule compound, Sm4 (Figure 1\u2014figure supplement 1E), on these interactions. Sm4, derived from a natural product found in the brown alga Caulocystis cephalornithos, was identified in a high-throughput screen for potential SOX18 blockers (Fontaine et al., to be published in full elsewhere). We found that Sm4 significantly disrupted 6 out of the 12 validated SOX18 interactions (Figure 1C, right column), with IC50 values ranging from 3.3 mM for SOX18-SOX18 to 65.9 MM for SOX18-RBPJ dimers (Figure 1D, Figure 1\u2014figure supplement 1F). To assess a differential effect of Sm4 on the distinct SOXF members, we explored an additional set of PPIs between all three SOXF proteins and MEF2C, RBPJ and OCT4 (Figure 1\u2014figure supplement 2). Like SOX18, SOX7 is able to interact with RBPJ and SOX18 itself, both of which interactions are at least partially disrupted by Sm4. We further found that all three SOXF proteins can form a heterodimer with OCT4, whereas only the SOX17-OCT4 interaction is affected by Sm4. Importantly, neither SOX7 nor SOX17 have the capacity to form a homodimer, and thus this component of Sm4 mode of action is highly specific to SOX18-SOX18 interaction. Further corroborating this, SOX9 homodimerization was unperturbed by Sm4 at up to 200 mM (Figure 1C and D, Figure 1\u2014figure supplement 1D). These results show that Sm4 selectivity leans towards a subset of SOX18-associated PPIs, but has the capability to interfere with SOX7 or SOX17 protein partner recruitment. This feature of Sm4 is potentially advantageous in preventing SOXF redundancy mechanism (Hosking et al., 2009; Kim et al., 2016).\n\nTo assess how SOX18 PPI disruption translates into transcriptional dysregulation, we next performed a combination of genome-wide RNA-seq and ChIP-seq analyses in HUVECs. The most common binding motif identified from the SOX18 ChIP-seq peaks corresponds to the previously reported SOX motif 5'-AACAAT-3' (Figure 2\u2014figure supplement 1A) and the validity of this ChIP- seq dataset was further confirmed by GO term analysis and identification of known SOX18 target genes such as Proxl and Vcaml (Supplementary file 1a, Figure 2\u2014figure supplement 1B; Fran\u00e7ois et al., 2008; Hosking et al., 2004). We compared the global transcriptional effect of Sm4 treatment to DMSO control in SOX18 overexpressing cells (Figure 2\u2014figure supplement 1C\u2013E, Supplementary file 1b), and overlaid this list of differentially expressed genes with the SOX18 ChIP- seq dataset. Using this overlay, we calculated the distance between the transcription start site (TSS) of a gene and a TF binding event, as a proxy for the likelihood of direct transcriptional regulation. To be able to analyse how this distance is altered by Sm4, we established a reference distance between the TSS of a random gene set and SOX18 binding events (Figure 2A). In parallel, we performed the same analysis for SOX7 (generated in-house), and for all seven transcriptional regulators available from the ENCODE consortium (cMYC, GATA2, c-FOS, c-JUN, CTCF, EZH2, MAX, c-MYC). This allowed us to distinguish between transcriptional targeting of SOX18 and potential off target effects on other endothelial specific transcription factors.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig2-v3.jpg)\n\n**Figure 2.:** (A) Schematic representation of the correlation analysis between genome-wide TF ChIP-seq data and Sm4 affected genes from transcriptomics data. The chromatin around the transcription start sites (TSS) of Sm4 affected genes (purple) was investigated for transcription factor binding peaks (grey), to calculate the 'distance from TSS' to closest binding site for a given transcription factor. This distance from TSS was used as a proxy for the likelihood of transcriptional regulation, and thus make an association between Sm4 affected genes and transcription factors. Included in the analysis where the ChIP-seq peaks of SOX18 and SOX7, and of all transcription factors available from the Encode consortium (GATA2, c-FOS, c-JUN, CTCF, EZH2, MAX and c-MYC), performed in HUVECs. A random group of genes was analysed as a control distribution as would be found by chance. (B) Sm4 affected genes were grouped into down-regulated (Sm4-down), unaffected (Sm4-unchanged) and up-regulated (Sm4-up). The plots show the cumulative distribution of the distance between the TSS of Sm4 affected genes (purple line, absolute fold change >2) and the closest genomic location of binding sites for SOX18, and control transcription factors SOX7 and GATA2. The median distance from the TSS of differentially expressed genes to the nearest binding event of a given transcription factor was compared to the median distance that is expected by chance from a random gene set (green line). Sm4 down regulated genes are significantly closer (bold) to the SOX18 peaks, but not to SOX7 or GATA2 peaks.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Top motif identified from SOX18 ChIP-seq peaks (MEME software) performed in HUVECs. (B) UCSC browser view of representative ChIP-seq peaks (arrowheads) for known SOX18 target genes VCAM and PROX1. (C) Conditions for transcriptome-wide analysis of Sm4. Differential expression (DE) was calculated using DEseq2 in SOX18 overexpressing HUVECs, between vehicle DMSO (SOX18oe) and cells that received 25 \u03bcM Sm4 (Sm4) (D) Principal component analysis of quadruplicate RNA-seq samples. Replicates samples from same condition (control, SOX18oe, Sm4) cluster together. (E) Plot showing a comparison between DESeq2 and edgeR methods, marking significance of DE genes between SOX18oe and Sm4 conditions. Transcripts with a DESeq2 Log2 Fold Change \u2265 1 or \u2264 \u22121 (dashed lines) were considered for further analysis. (F) The distance between Sm4 affected genes (purple) and the closest genomic location of binding sites a given transcription factor, plotted as cumulative distribution. The median distance from the TSS of differentially expressed genes to the nearest binding event of a transcription factor binding event was expressed as a ratio over the median distance that is expected by chance (random genes, green).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) HOMER motif analysis on SOX18 ChIP-seq peaks revealed an enrichment of the c-JUN motif 5\u2019-TGAC/GTCA-3\u2019. (B) ALPHA-Screen binding curve for SOX18-c-JUN and SOX18-SOX18 (positive control), demonstrating that c-JUN has the capacity to directly interact with SOX18 in vitro. Proteins were expressed in the Leishmania tarentolae cell-free protein expression system.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Cell based reporter assay for SOX9 homodimer activity. COS-7 cell were transfected with Sox9 and Col2a1:luc reporter construct. Sox9 overexpression caused a >8 fold induction of Col2a1 activation. No change was observed at high concentration of Sm4. (B) Cell based reporter assay for SOX17 activity (Robinson et al., 2014). Bovine Aortic Endothelial Cells (BAECs) were transfected with pTK-\u03b2-gal (pTK) or ECE1-TK-\u03b2-gal (ECE1) reporter, measuring endogenous activity of SOX17 (ECE1-only). No change was observed at any of the tested concentration. Numbers on x-axis are [Sm4] in \u03bcM.\n\nThe cumulative SOX18 peak-to-TSS distance demonstrated that, overall, SOX18 peaks are 3.6 fold closer (p-value <0.001) to the TSS of Sm4 down-regulated genes than to randomly distributed TSSs (Figure 2B, top left). These results are an indirect indication that the Sm4 affected genes are dysregulated through a specific effect on SOX18 transcriptional activity. This correlation was not observed for 7 of the other transcription factors tested (Figure 2B, Figure 2\u2014figure supplement 1F, Supplementary file 1c), signifying that Sm4 does not have an off-target effect on these TFs activity. Interestingly, the TSS of Sm4 down-regulated genes were 2.05 fold closer to c-JUN binding events (p-value = 0.011, Supplementary file 1c). Although only mildly significant, this could suggest possible co-regulation by SOX18 and c-JUN on this subset of Sm4 down-regulated genes. Indeed, analysis of known motifs in SOX18 ChIP-seq peaks revealed an over-representation of c-JUN binding motifs (3.23% of SOX18 peaks, p-value = 1e-302) and ALPHA-Screen analysis further established that SOX18 and c-JUN could physically interact (Figure 2\u2014figure supplements 1 and 2). We found that the expression levels of the other TFs tested were unaltered by Sm4 treatment (Supplementary file 1c). This is an important observation because it demonstrates that there was no bias introduced by an off-target modulation of the transcript levels for these transcription factors in presence of Sm4.\n\nTo address the issue of potential transcriptional off-target effects of Sm4 on SOX TF family members we focused on closely related SOXF and SOXE proteins. Sm4 did not affect the transcriptional activity of either SOX17 or SOX9 proteins at any tested concentration (<50 p,M) in cell-based reporter assays (Figure 2\u2014figure supplement 3; Robinson et al., 2014; Lefebvre et al., 1997). Together, these results provide strong evidence that Sm4 selectively targets SOX18-mediated transcription over other key endothelial transcription factors and SOX proteins.\n\nTo investigate whether Sm4 is also able to perturb Sox18 transcriptional activation in vivo, we used the tg(\u22126.5kdrl:eGFP) transgenic zebrafish reporter line, previously validated as a readout for the combined activity of Sox7 and Sox18 (Duong et al., 2014). We treated these larvae at 20 hr post fertilization (hpf) and observed that Sm4 treatment significantly reduced SOX18-dependent egfp transcript levels (61%), similar to the effects of combined sox7/18 depletion using morpholino oligonucleotides (MO) (Figure 3A and B). Importantly, these zebrafish embryos developed normally and we found no evidence of toxicity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig3-v3.jpg)\n\n**Figure 3.:** (A) Lateral brightfield (top) and fluorescent (bottom) images of 60 hpf zebrafish larvae carrying the tg(\u20146.5kdrl:eGFP) SoxF reporter. Treatment was initiated at late stage (20 hpf) with either DMSO (negative control) or 1 mM Sm4, or larvae were injected with morpholinos against both sox7 and sox18 (dMO sox7/18). Fluorescence intensity is shown as heatmap. Scale bar 200 Mm (B) qRT-PCR analysis on gfp transcripts levels in treated tg(\u20146.5kdrl:eGFP) larvae and sox7/18 morphants, showing reduction of activity on this transgene. (C) Lateral view of zebrafish larvae carrying the tg(Dll4in3:eGFP) SoxF/Notch reporter that harbors multiple binding sites for Rbpj and SoxF transcription factors. Larvae were injected with a morpholino against rbpj and/or treated with 2 mM Sm4 from 13 hpf. (D) qRT-PCR analysis on gfp transcripts in tg(Dll4in3: eGFP) larvae, showing repression of combined SoxF/Notch activity in the Sm4-treated larvae. (E) Quantitation of embryonic lethality in larvae, treated with Sm4 or DMSO control from early stage (16 hpf) until 72 hpf. (F) Penetrance of vascular phenotype (arteriovenous shunting) in 48 hpf larvae treated with 1.5 mM Sm4 from 16 hpf. (G) Penetrance of circulation defect in 48 hpf larvae treated with 1.5 mM Sm4 from 16 hpf. (H) qRT-PCR analysis of endogenous endothelial transcript levels at 48 hpf in larvae treated with 1.5 mM Sm4 at 16 hpf, relative to DMSO control (dotted line). Data shown are mean \u00b1 s.e.m. *P<0.05, **P<0.01, ***P<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Timeline of treatment: Zebrafish larvae were treated continuously for four days during chondrogenesis. Medium was refreshed daily throughout the experiment to maintain Sm4 levels. (B) tg(col2a1:YFP) Sox9 reporter larvae marking cartilage (Mitchell et al., 2013). YFP levels were unaffected in presence of Sm4, and no changes in chondrogenesis were observed. mc: Meckel\u2019s cartilage, ch: ceratohyal, hs: hyosymplectic. (C) qRT-PCR of yfp transcript levels in DMSO control and Sm4 treated larvae at a series of stages throughout chondrogenesis.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Timeline of Sm4 treatment in zebrafish larvae. Treatment for SOXF reporter gene studies was initiated at 20 hpf, while for the phenotypic studies treatment was initiated at precedes that for, to act during the right developmental window for arteriovenous specification. (B) Lateral view and transverse section of the trunk region of DMSO control and Sm4-treated tg(fli1:eGFP,\u22126.5kdrl:mCherry) larvae. Control DMSO larvae formed a distinctly separated dorsal aorta (DA) and posterior cardinal vein (PCV). In Sm4-treated larvae, the DA was constricted and/or fused to the PCV (arrowheads). Whole mount in situ hybridization against arterial marker efnb2a shows reduced expression and compromised formation of the DA and in Sm4-treated larvae at 48 hpf (arrows). Sections were DAPI stained (in blue). Scale bar brightfield: 0.5 mm, fluorescent and in situ 25 \u03bcm. (C) Concentration dependent effect of Sm4, showing quantitation for predominant phenotype at 72 hpf: mild (tail curvature), medium (dilation of the PCV) or severe (arteriovenous defect and/or circulation defect). Indicated timeframe refers to Sm4 treatment window and endpoint. (D) Quantitation of cardiac edema frequency in larvae treated with Sm4 (1.5 \u03bcM). (E) qRT-PCR analysis of Sox18 dependent \u22126.5kdrl:mCherry and endogenous endothelial transcript levels in Sm4-treated larvae relative to DMSO control (dotted line), showing effect on arterial and venous markers at 24 hpf. All expression levels were normalized to expression of endothelial marker cdh5. Data shown are mean \u00b1 s.e.m. *p<0.05, **p<0.01, ***p<0.001.\n\nWe then used a second transgenic zebrafish reporter line tg(Dll4in3:eGFP), which harbours a regulatory element located in the intron 3 of dll4 gene. The activity of this Dll4in3 enhancer does not fully recapitulate the endogenous dll4 expression (Wythe et al., 2013; Sacilotto et al., 2013), but it does provide a useful tool to study the combinatorial activity of Sox7, Sox18 and the Notch effector Rbpj. Combined genetic interference with sox7, sox18 and rbpj has been shown to abolish Dll4in3 activation, while single or double MO knockdowns have a much milder effect (Sacilotto et al., 2013). This mild repressive effect was recapitulated by treatment with Sm4 alone (Figure 3C, D). In addition, when rbpj MO injections at suboptimal dose were combined with Sm4 treatment, the repressive effect was significantly increased by 11.5% (Figure 3C and D). These data show that Sm4 interferes with Sox7/18 and Rbpjco-ordinated activation of the Dll4in3 enhancer. As a negative control in vivo, we used the Sox9-dependent tg(col2a1:yfp) reporter line, and observed that continuous Sm4 treatment between 2 and 6 days post fertilization did not perturb the transcriptional activity of Sox9 or the process of chondrogenesis (Figure 3\u2014figure supplement 1). Together, this supports the proposed mechanism of action for Sm4 as a selective SOX18 inhibitor in vivo.\n\nTo further demonstrate the small molecule inhibition of Sox18 function in vivo, we next investigated whether Sm4 treatment would be able to cause a vascular phenotype, similar to that of sox7 /sox18 genetically disrupted zebrafish (Hermkens et al., 2015). This phenotype is characterised by an arteriovenous specification defect, with reduced expression levels of arterial markers (Cermenati et al., 2008; Herpers et al., 2008; Pendeville et al., 2008). We treated zebrafish larvae harbouring the arterial/venous reporter tg(fli1a:eGFP,\u20146.5kdrl:mCherry) with 1.5 pM Sm4 during the relevant developmental window, starting from 16 hpf (Figure 3\u2014figure supplement 2A). These larvae acquired an enlarged posterior cardinal vein (PCV) at the expense of the dorsal aorta (DA) (Figure 3E\u2013G, Figure 3\u2014figure supplement 2B), with arteriovenous shunts and incomplete trunk circulation (Figure 3\u2014figure supplement 2C and D). qRT-PCR analysis of blood vascular markers at 24 and 48 hpf revealed a significant dysregulation of arterial and venous genes in Sm4-treated conditions compared to DMSO, particularly efnb2a, hey1 and efnb4a (Figure 3H, Figure 3\u2014figure supplement 2E).\n\nDue to SoxF redundancy in arteriovenous specification, an A/V malformation phenotype is typically only observed in double loss of Sox7 and Sox18 function. Since Sm4 appeared to partially interfere with Sox7-Rbpjand Sox7-Sox18 PPIs in vitro, we turned to a Sox7 specific phenotype to assess whether this TF activity was inhibited by Sm4 in vivo. The hallmark of sox7 genetic disruption is a short circulatory loop in the head formed by the lateral dorsal artery (Mohammed et al., 2013), resulting in perturbed facial circulation (Hermkens et al., 2015). In presence of Sm4, we observe minor malformation to the LDA reminiscent of a partial Sox7 loss of function phenotype (Author response image 1). However, the blood circulation in the head is unaffected in Sm4-treated larvae, signifying that a short circulatory loop has not fully formed. This phenotype supports of the conclusion that Sox7 activity is only partially affected in presence of the small compound. Overall, these results are congruent with the genome-wide inhibitory effects observed in vitro, demonstrating that Sm4 selectively interfered with the transcriptional activity of Sox18 and SoxF-mediated vascular formation in vivo.\n\nAs a final demonstration of the anti-angiogenic potential of Sm4 in a therapeutically relevant setting, we next assessed its efficacy in a preclinical model of breast cancer. BALB/c mice were inoculated with highly metastatic 4T1.2 mammary carcinoma cells into the mammary fat pad, and three days were allowed for the engraftment of the tumor, after which treatment was initiated with either 25 mg/kg/day of Sm4, aspirin or vehicle PBS (Figure 4A). Aspirin was chosen as a negative control because of the structural similarity to Sm4. Daily treatment was maintained for a duration of 10 days, after which the primary tumor was resected and effects on disease latency were monitored (Figure 4A). As an indirect indication of target engagement, we first confirmed the expression of Sox18 in the 4T1.2 tumor vasculature by in situ hybridization (Figure 4B). We next went on to measure Sm4 bioavailability during the course of the treatment. Sm4 was consistently detected in blood plasma at two different time points, with a mean concentration increasing over time from 38.3 Mg/ mL to 55.2 Mg/mL (Figure 4C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig4-v3.jpg)\n\n**Figure 4.:** (A) Timeline of mouse model for breast cancer metastasis. 4T1.2 tumor was inoculated at day 0, and resected at day 12. Sm4 (25 mg/kg/day), Aspirin (25 mg/kg/day) or vehicle control (PBS), was administered orally on a daily basis from day 3 to day 12. Independent experiments were carried out to assess survival and metastatic rate. (B) Blood plasma concentrations of Sm4 during the course of the treatment scheme (day 7 and day 12) indicate good systemic delivery of the drug. (C) Expression of SOX18 in the vasculature of the tumor as shown by in situ hybridization. Scale bar 100 Mm. (D) Survival of the mice was monitored (n=6\u201312 mice per group). Improved survival in Sm4-treated mice over both vehicle control and aspirin was analysed by Log-rank test (P<0.001). (E) No significant differences were found in tumor size at any stage. (F) Metastatic tumor nodules on the surface of the lungs were quantified at day 28, before any of the vehicle control or Sm4-treated animal had succumbed to the cancer burden. Data shown are mean \u00b1 s.e.m of 12\u201314 mice per group. (G) Vascular density was investigated on 300 Mm sections of whole tumors. Bright field images show the overall morphology of the tumor (outlined by dashed line) and presence of red blood cells, marking the main blood vessels and haemorrhagic areas (asterisks). Scale bar 1 mm. (H) Double immunofluorescence staining for endothelial specific markers ERG and Endomucin (EMCN) reveals the vascular patterning and penetration in the intra- and peri- tumoral regions. Left: whole tumor section (scale bar 1 mm), middle and right: blow-up of boxed regions (scale bar 200 Mm). (I) Quantitation of EMCN volume (blood vessel density) and ERGpositive nuclei (number of endothelial cells) of n=6 tumours per condition. Each data point represents the average of 3\u20134 representative regions (boxed areas in panel H) per tumor. Mean \u00b1 s.e.m for both conditions are shown. *P<0.05, **P<0.01.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Brightfield images of serial vibratome sections (300 \u03bcm) from a whole 4T1.2 mammary tumor for mice treated with PBS vehicle or Sm4. Main blood vessels and haemorrhagic areas are distinctive in red.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Immunofluorescent staining for ERG and Endomucin (EMCN) on tumor sections. Two representative regions for both vehicle PBS and Sm4 are shown. Detailed blow-up shows distinct nuclear staining for ERG, and membranous endothelial staining for EMCN. Quantitation of endothelial cells number and vascular volume was performed in Imaris on images with identical XYZ dimensions. Thresholds were chosen to accurately capture total EMCN+ vasculature and total ERG+ nuclei (ERG count and EMCN volume in yellow).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21221/elife-21221-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Lymphatic vessels images of serial vibratome sections (200 \u03bcm) from a whole 4T1.2 mammary tumor for mice treated with PBS vehicle or Sm4 (25 mg/kg/day). Immunofluorescence for lymphatic specific markers PROX1 and Podoplanin (PDPN) and vascular EC marker Endomucin (EMCN) reveals the vascular patterning and penetration in the intra- and peri- tumoral regions. Whole tumor section for the control group (top panels), and for Sm4 treated group (bottom panels). Quantitation of PDPN+ lymphatic vascular area (density, top graph) and PROX1+ nuclei (number of lymphatic endothelial cells, bottom graph) of n \u2265 6 tumours per condition. Scale bar left: 0.5 mm, right: 0.1 mm. Mean \u00b1 s.e.m for both conditions are shown. **p<0.01, ***p<0.001.\n\nPBS vehicle- or aspirin-treated mice succumbed to the 4T1.2 tumor burden with a median latency of 33 and 34 days respectively (Figure 4D), whereas Sm4-treated mice had a significant increase in their overall survival with a median latency of 44 days (p-value <0.01). To further investigate what could cause such an effect, the size of the tumors was monitored during the treatment, as well as the formation of spontaneous lung metastases. While the size of the primary tumor was unchanged by Sm4 treatment (Figure 4E), we found a 67% reduction in the mean number of lung metastases at day 28 after tumor inoculation (Figure 4F).\n\nThe lack of inhibition of Sm4 on the primary tumor growth (Figure 4E) suggests that a potential combined effect between the drug treatment and surgery-induced inflammation is unlikely to be responsible for the increased survival, given that surgery is required on day 0 to inoculate the xenograft cancer cells into the mammary fat pad.\n\nIn order to establish a correlation between the metastatic rate and a tumor induced vascular response, we investigated the blood vessel density in the intra-tumoral and peri-tumoral regions (Figure 4G, Figure 4\u2014figure supplement 1). Whole tumors were sectioned, and brightfield microscopy revealed an overall reduction in blood vessel coverage, as indicated by the presence of red blood cells (Figure 4G, asterisks). Further analysis using immunofluorescent staining for endothelial cell markers ERG (nuclear) and Endomucin (EMCN, membranous), showed a significant decrease in the number of endothelial cells (48%, p-value <0.05), as well as the volume of the blood vessels (55%, p-value <0.01) in the tumors of Sm4-treated mice (Figure 4H,I, Figure 4\u2014figure supplement 2). Using lymphatic specific markers PROX1 and podoplanin (PDPN), we also assessed the effect of Sm4 on the tumor induced lymphangiogenic response, and found that the density of the tumor associated lymphatic vessels was greatly reduced (65%, p-value <0.01) in treated conditions, as well as the number of lymphatic endothelial cells (70%, p-value <0.001) (Figure 4\u2014figure supplement 3). This lymphatic response to Sm4-treatment is consistent with that of SOX18 loss of function during lymphatic spread of solid cancers (Duong et al., 2012) Together, this demonstrates that Sm4 improved the outcome of induced breast cancer by interfering with tumor-induced neo-vascularization and associated metastasis.\n\nInduction of angio- and lymphangiogenesis is a hallmark of solid cancer, and is a critical step towards enabling tumor metastatic dissemination. Conventional approaches to target transcription factors have focused on interfering with oncogenes that are dysregulated to promote tumor cell transformation (Gormally et al., 2014; Illendula et al., 2015; Moellering et al., 2009; Zhang et al., 2012). Here, we validate a novel complementary strategy that relies on targeting a developmental transcription factor from the host vasculature that can facilitate metastatic spread. Our results provide a proof of concept that targeting the transcription factor SOX18 with Sm4 is an effective molecular strategy to interfere with the metastatic spread in a pre-clinical model of breast cancer.\n\n## Materials and methods\n\n### Experimental reproducibility\n\nAll data and statistical analysis in this study were generated from at least three independent experiments unless indicated otherwise. Technical replicates were included in every experiment to reduce background noise and detect technical anomalies. Samples of distinct experimental conditions were not exposed to any specific method of randomization, and groups were assessed under non-blinded conditions.\n\n### Plasmid preparation for cell-free expression\n\nThe genetically encoded tags used here are enhanced GFP (GFP), mCherry (Cherry) and cMyc (myc). The proteins were cloned into the following cell free expression Gateway destination vectors respectively: N-terminal GFP tagged (pCellFree_G03), N-terminal Cherry-cMyc (pCellFree_G07) and C-terminal Cherry-cMyc tagged (pCellFree_G08) (Gagoski et al., 2015).The Open Reading Frames (ORFs) corresponding to the human SOX7 (BC071947), SOX17, RBPJ (BC020780) and MEF2C (BC026341) were sourced from the Human ORFeome collection version 1.1 and 5.1 or the Human Orfeome collaboration OCAA collection (Open Biosystems) as previously described and cloned at the ARVEC facility, UQ Diamantina Institute. The entry clones pDONOR223 or pENTR201 vectors were exchanged with the ccdB gene in the expression plasmid by LR recombination (Life Technologies, Australia). The full-length human SOX18 gene was synthesized (IDT) and the transfers to vectors was realized using Gateway PCR cloning.\n\n### Cell-free protein expression\n\nThe translation competent Leishmania tarentolae extract (LTE) was prepared as previously described (Mureev et al., 2009; Kovtun et al., 2011). Protein pairs were co-expressed by adding 30 nM of GFP template plasmid and 60 nM of Cherry template plasmid to LTE and incubating for 3 hr at 27 \u00b0C.\n\n### ALPHA-Screen assay\n\nThe ALPHA-Screen Assay was performed as previously described (Sierecki et al., 2014), using the cMyc detection kit and Proxiplate-384 Plus plates (PerkinElmer). A serial dilution of each sample was measured. The LTE lysate co-expressing the proteins of interest was diluted in buffer A (25 mM HEPES, 50 mM NaCl). For the assay, 12.5\u00a0mL (0.4 Mg) of Anti-cMyc coated Acceptor Beads in buffer B (25 mM HEPES, 50 mM NaCl, 0.001% NP40, 0.001% casein) were aliquoted into each well. This was followed by the addition of 2 pL of diluted sample and 2 pL of biotin labeled GFP-Nanotrap in buffer A. The plate was incubated for 45 min at RT. Afterward, 2 pL (0.4 pg) of Streptavidin coated Donor Beads diluted in buffer A, were added, followed by incubation in the dark for 45 min at RT. The ALPHA-Screen signal was obtained on an Envision Multilabel Plate Reader (PerkinElmer), using the manufacturer\u2019s recommended settings (excitation: 680/30 nm for 0.18 s, emission: 570/100 nm after 37ms). The resulting bell-shaped curve is an indication of a positive interaction, while a flat line reflects a lack of interaction between the proteins. The measurement of each protein pair was repeated a minimum of three times using separate plates. The Binding Index was calculated as:\n\n$$\nBI=[\\frac{I\u2212I_{neg}}{I_{ref}\u2212I_{neg}}]x\u00a0100\n$$\n\nFor each experiment, I is the highest signal level (top of the hook effect curve) and Ineg is the lowest (background) signal level. The signals were normalized to the Iref signal obtained for the interaction of SOX18 with itself.\n\nFor PPI disruption assay, protein pairs expressed in LTE were incubated for 1 hr with 100 pM Sm4 or DMSO alone (0.7% DMSO final). 100 pM Sm4 or DMSO was also added to buffer B. PPI disruption was calculated as: $(1\u2212\\frac{I_{Sm4}}{I_{DMSO}})x\u00a0100$.\n\nFor IC50 determination, the assay was identical but a dilution range of Sm4 was used (0.3\u2013300 pM). Percentage of interaction was calculated as: $\\frac{I_{Sm4}}{I_{DMSO}}x\u00a0100$. Data from at least three independent experiments were fitted in GraphPad Prism (RRID: SCR_007370) version 6.0 using 3-parameter nonlinear regression.\n\n### Cell culture and transfection\n\nCOS-7 cells were purchased from ATCC (CRL-1651, RRID: CVCL_0224) cultured at 37 \u00b0C, 5% CO2 in DMEM (Life technologies, 11995) with added FBS, sodium pyruvate, L-glutamine, penicillin, streptomycin, non-essential amino acids and HEPES (N-2-hydroxyethylpiperazine-N'\u20142-ethanesulfonic acid). COS-7 cells were transfected for 4\u20136 hr, and incubated for another 24 hr before lysis and luciferase assay (Perkin Elmer, 6016711). Human umbilical vein endothelial cells (HUVECs) were purchased from Lonza Australia (CC-2519A). HUVEC for ChIP-MS, ChIP-seq and RNA-seq analyses were transfection for 7 hr and incubated another 14 hr. During small molecule treatment, cells were grown in medium containing low serum (0.4% FBS). HUVECs were cultured at 37 \u00b0C, 5% CO2 in EGM-2 media supplemented according to the EGM-2 bullet kit instruction (Lonza, CC-3162). Cells for were grown in 35 mm dishes to 80\u201390% confluency, and transfected with plasmid mouse pSG5 Sox18, plasmid pSG5 cMyc-Sox18, or plasmid cMyc using X-tremegene 9 DNA transfection reagent (Roche, 06365787001) according to the manufacturer\u2019s instructions. All cell lines were tested negative for mycoplasma contamination.\n\n### Chromatin immunoprecipitation\n\nChIP experiments were performed as previously described (Schmidt et al., 2009). Immunoprecipitation was performed using Anti-cMyc (Cell Signaling, #2276, RRID: AB_2314825) on HUVECs overexpressing cMyc-tagged SOX18.\n\n### ChIP-seq and analysis\n\nFollowing IP, DNA amplification was performed using TruSeq ChIPseq kit (Illumina, IP-202\u20131012), using 0.5 pM of the universal reverse PCR primer and the forward PCR primer containing the index sequence of choice in 50 pL 1 x NEBNext High-Fidelity PCR Master Mix (New England Biolabs, M0541). The number of PCR cycles ranged from 13 to 18, depending on the ChIP efficiency. The PCR product was purified using AMPure beads (1.8 vol) and eluted in 20 pL of resuspension buffer (Tris-Acetate 10 mM pH 8). The library was quantified using the KAPA library quantification kit for Illumina sequencing platforms (KAPA Biosystems, KK4824) and 50 bp single end reads were sequenced on a HiSeq2500 following the manufacturer\u2019s protocol. Illumina fastq files were mapped to the GRCh37/UCSC hg19 genome assembly using bowtie, and peaks were called using MACS version 2.1.0. using input. To avoid false positive peaks calling due to the cMyc epitope, ChIP-seq with the cMyc epitope only were performed in parallel to SOX18-cMyc ChIP-seq and peaks called in these experimental conditions were substracted to the peaks called in the SOX18-cMyc conditions.\n\nGenomic Regions Enrichment of Annotations Tool (GREAT, RRID: SCR_005807) was used to analyse the functional significance of cis-regulatory regions. ChIP-seq data are available in the ArrayExpress database (https://www.ebi.ac.uk/arrayexpress, RRID: SCR_002964) under accession number E-MTAB-4480 (SOX7) and E-MTAB-4481 (SOX18).\n\n### ChIP-MS (RIME)\n\nChIP-MS experiments were performed as previously described (Mohammed et al., 2013). Peptides common between SOX18-cMyc and the negative control (cMyc-only) were binned and only peptides that were uniquely detected in the SOX18-cMyc transfected cell were considered for analysis.\n\n### RNA-seq and analysis\n\nQuadruplicate samples were processed for whole transcriptome sequencing using TruSeq stranded total RNA library prep kit (Illumina). Reads were mapped to the hg19 reference human genome using STAR aligner (Dobin et al., 2013), and only uniquely aligned reads were considered. Transcripts were assigned to genes using htseq_count (HTseq package) (Anders et al., 2015), and differential expression was calculated using DEseq2 (Love et al., 2014). Genes with adjusted p-value <0.05 were considered significant.\n\nDifferentially expressed genes were identified between Sm4-treated and DMSO control in SOX18 over-expressing cells, and separated in up-regulated and down-regulated (DOWN) genes. The locations of their transcription start sites (TSS) were correlated to the locations of transcription factors binding events that are available from the ENCODE consortium (RRID: SCR_006793), and from the SOX18 and SOX7 ChIP-seq experiment we performed in this study. To ensure that the TSSs were independent, a TSS was allowed to only be assigned to 1 ChIP-seq peak. Transcripts with >2 fold absolute fold change (log2FC >1 or < \u20141) were included for distance to TSS analysis. The median distance between the TSSs and binding events was compared to the expected distance of a set of randomly selected genes to obtain the median ratio. The control set of genes was selected from the pool of genes expressed in HUVECs so that they had a similar distribution of expression levels. To ensure that no bias was introduced by potential co-regulation of genes by SOX18 and any other transcription factor analysed, we subtracted genes with SOX18 peaks from the analyses for other transcription factors. The reverse analysis was also performed, subtracting genes containing c-JUN peaks from the analysis for SOX18. RNA-seq data are available in the ArrayExpress database (https://www.ebi.ac.uk/biostudies/arrayexpress) under accession number E-MTAB-4511.\n\n### Quantitative RT-PCR\n\nTotal RNA was extracted using RNeasy mini kit (Qiagen, 74106) according to the manufacturers protocol, including on column DNA digestion. cDNA was synthetised from 1 p,g of purified RNA using the high capacity cDNA reverse transcription kit (Life Technologies, 4368813). Amplification and quantitation of target cDNA was performed in technical triplicate of at least three biological replicates using the SYBR green (Life Technologies, 4312704) methods. Reactions were run in 10 pL in 384-well plates using the ViiA 7 Real-Time PCR system. Housekeeper genes (fi-actin for tg(Dll4in3: eGFP), ef1a for tg(\u20146.5kdrl:eGFP), chd5 for tg(fli1a:eGFP, \u20146.5kdrl:mCherry), RPL13 and GAPDH for HUVECs) were selected based on the stability of their expression throughout the set of experimental conditions, or chosen on grounds of their vascular expression to normalize to endothelial cell content. Primer efficiencies were calculated using LinRegPCR, and amplification data was analysed using ViiA7 software and the Q-gene PCR analysis template.\n\n### Zebrafish aquaculture and analysis\n\nZebrafish were maintained as previously described (Hogan et al., 2009), and all procedures involving animals conformed to guidelines of the animal ethics committee at the University of Queensland (IMB/030/16/NHMRC/ARC/HF) or were approved by local ethical review and licensed by the UK Home Office (PPL 30/2783 and PPL 30/3324). The tg(\u20146.5kdrl:eGFP), tg(fli1a:eGFP,\u20146.5kdrl: mCherry) and tg(Dll4in3:GFP) were previously described (Sacilotto et al., 2013; Duong et al., 2014; Lawson and Weinstein, 2002).\n\nDechorionation was performed by treatment with 25 pg/mL or 5 pg/mL pronase for 2 hr, or overnight, respectively. Zebrafish larvae were anesthetized using 0.01% tricaine. Representative larvae were embedded in 0.5% low-melting point agarose and imaged with the Zeiss LSM 710 confocal microscope.\n\n### Zebrafish in situ hybridization and sectional analysis\n\nWholemount zebrafish (28 and 48 hpf) in situ hybridization was performed as previously described (Thisse and Thisse, 2008) with probe templates for dab (Song et al., 2004) and ephrinB2a (Durbin et al., 1998). Yolk sac was removed prior to addition of in 70% glycerol. For transverse sections, whole larvae where embedded in 4% agarose, sectioned at 150 pm using the Leica VT1000 S vibrating microtome. Imaging was performed on the Olympus BX-51 brightfield microscope (ISH), and Zeiss LSM 510 confocal microscope. For fluorescent images, larvae were DAPI-stained before embedding.\n\n### Small molecule treatment and morpholino injections\n\nAll treatment with putative small molecule inhibitors, and corresponding control conditions, were performed in the presence of low concentration of DMSO (<1% v/v) to achieve reliable homogeneous solutions, and were prepared from 10 mM DMSO stock. For cell culture, small molecules were added to fresh media directly following transfection and cells were grown in this media until time-point of cell harvesting. For in vivo experiments involving zebrafish, compound treatment was initiated at the designated timepoints by replacing the media, and media +compound was refreshed daily for the duration of the experiment. PTU treatment (0.003%) was done in parallel with the small molecules to block pigment formation when necessary. Previously published and validated morpholino oligomers against sox7, sox18 (Herpers et al., 2008) and rbpj (Sacilotto et al., 2013) were micro-injected into single cell zebrafish zygotes at 5 ng for experiments performed with tg (6.5kdrl:eGFP) and tg(fli1a:eGFP,\u20146.5kdrl:mCherry), and 0.125\u20130.15 pmol suboptimal concentrations for experiments performed with tg(Dll4in3:eGFP).\n\n### Mice and mouse model\n\nBALB/c wild-type (WT) were purchased from Walter and Eliza Hall Institute for Medical Research and used between the ages of 6 and 10 weeks. Mouse 4T1.2 mammary carcinoma cells were cultured in complete RPMI with 10% FBS in a 5% CO2 incubator. 5x104 4T1.2 tumor cells were inoculated into the fourth mammary fat-pad of BALB/c WT mice as previously described (Mittal et al., 2014). Briefly, on day three after tumor implantation, mice were orally gavaged daily for 10 days with 25 mg/kg of body weight Sm4, aspirin or vehicle PBS. Tumor size was measured with a digital caliper as the product of two perpendicular diameters. Blood plasma was collected from mice on day 7 and 12, and Sm4 concentrations were analyzed using a 4000 Qtrap LC-MS/MS system mass spectrometer. On day 12, mice were anesthetised to surgically remove primary tumor, or mice were put through surgery procedure with no excision of the primary tumor, and the wound was closed with surgical clips. Tumors were collected in formalin for histology. Lungs were harvested on day 28 and fixed in Bouin\u2019s solution for 24 hr and metastatic tumor nodules were counted under a dissection microscope. Survival of the mice was monitored in experiments where the lungs were not harvested. Groups of 6\u201314 mice per experiment were used for experimental tumor assays, to ensure adequate power to detect biological differences. All experiments were approved by the QIMR Berghofer Medical Research Institute Animal Ethics Committee (P1505).\n\nFor quantitation of the vasculature in the tumors, fixed tissues were embedded in 4% agarose and sectioned all the way through at 300 pm on a Leica VT1000 S vibrating microtome. Sections were collected on glass slides and imaged for bright field analysis on the penetration of perfused vessels. Subsequently, immunofluorescent staining was performed on sections using anti-mouse Endomucin (cat# sc-53941, RRID: AB_2100038), ERG (cat# ab92513, RRID: AB_2630401), PROX1 (AngioBio cat#11\u2013002, RRID: AB_10013720) and Podoplanin (AngioBio cat#11\u2013033, AB_2631191) antibodies. Whole tumor sections were imaged by acquiring a series of images along the z-axis using a 10 x objective on a Zeiss LSM 710 confocal microscope. Subsequently, high-resolution images were captured using a 20 x objective on 3\u20134 separate regions from each tumor, to account for heterogeneity of the vascular density within the tumors and minimise bias. Raw image files with identical dimensions (1274.87 pm x 1274.87 pm x 89.05 pm) were loaded into Imaris (Bitplane, RRID: SCR_007370), and processed using \u2019spots' function to count ERG or PROX1- positive nuclei and \u2019surface' to calculate volume or area of Endomucin or Podoplanin positive vessels. For each tumor (n=6), counts from the multiple regions were averaged and the data was plotted in Graphpad Prism 6.\n",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "25a47efc-a3cd-4ade-9d52-80fd4e721296",
+      "submission_id": "0b0596cf-02c4-42ea-b641-5f2069aba02b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Holger Gerhardt, Max Delbr\u00fcck Centre for Molecular Medicine Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21221.sa1](https://doi.org/10.7554/eLife.21221.sa1)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Pharmacological targeting of the transcription factor SOX18 delays breast cancer in mice\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison (Senior Editor) and three reviewers, one of whom, Holger Gerhardt (Reviewer #1), is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal their identity: Gou Young Koh (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGeneral Assessment:\n\nThe reviewers find your study provides interesting new insights into protein-protein interactions of Sox family member transcription factors and shows convincingly that such interactions can be targeted with small molecules to interfere with good selectivity with transcription in vitro and in vivo. The demonstration of in vivo efficacy of the small molecular inhibitor in both a zebrafish model using transcriptional reporters and in a mouse tumour model in which you find significantly reduced metastasis are particularly remarkable. Together with the comprehensive identification and validation of protein-protein interactions, these results provide a significant advance that the reviewers believe will be of interest to a wider scientific audience.\n\nMajor Conclusions:\n\n1) Despite their similarities Sox family member transcription factors engage in distinct protein-protein interactions.\n\n2) Sox18 interacts directly with RBPjk and a number of other endothelial transcription factors in endothelial cells to regulate endothelial targets.\n\n3) Small molecule SM4 (identified in a screen reported elsewhere) shows good efficacy and selectivity to inhibit a subset of the identified Sox18 protein-protein interaction and suppresses target transcription in vivo.\n\n4) Targeting Sox18 PPI and thus its transcriptional activity is effective in vivo to reduce tumour angiogenesis and metastasis.\n\nWhilst the reviewers find your results supports these major conclusions, they find that the following points should be adequately addressed before publication:\n\n1) The claim of selectivity of SM4 against Sox18 deserves further investigation, in particular, to clarify if the potentially redundant activity of Sox17 in vascular development is also affected. Also, potential activity against Sox7 should be clarified. You may already have the required data on activity of SM4 against Sox17 and Sox7, in which case adding these to the figure and text, as well as commenting on their implications for the claimed selectivity of SM4 will be sufficient. In case this means you need to repeat experiments, we suggest to limit yourself to any that can be achieved reasonably within 2 months.\n\n2) The discrepancy between the effects on the Dll4int3 reporter and endogenous Dll4 gene expression effects of SM4 need to be clarified. Given that the Dll4int3 reporter does not contain all regulatory elements of the endogenous Dll4 gene, it could be that SM4 is more effective against the reporter and other elements still drive endogenous Dll4. As you currently don't comment on the discrepancy in the text, it is difficult for us to recommend precisely how you should address this issue. We suggest to carefully compare the response of endogenous Dll4 expression similarly to the dose response you find for the Dll4 reporter. Given the dynamic nature of Dll4 expression, it could also be a timing issue, and thus related to the half-life of the drug? A possible experiment in vivo could be to show in situ hybridisation for Dll4 in WT fish treated with SM4. As Dll4 levels have a major impact on blood vessel formation also in tumour angiogenesis, and your in vivo mouse experiments show effects on tumour angiogenesis, we feel this needs to be clear in order to understand the action of SM4. This should be possible to address in two months. In case experimental data do not provide a clear answer, please address this issue carefully in text and Discussion.\n\n3) The mechanism of reduced tumour angiogenesis and metastasis should be adequately discussed and ideally experimentally clarified. Given that the route of metastasis is likely through lymphatics and that Sox18 also regulates lymphangiogenesis, we feel you should consider this as potential mechanism. As you have the expertise in mouse lymphatic analysis from previous studies, we hope you will be able to provide experiments that show whether or not SM4 interferes with tumour lymphangiogenesis through blocking Sox18 function. It will not be necessary to show that this is the definitive cause for changes in metastasis, but we feel that without analysing lymphatics, this work is incomplete. Given that you use a xenograft model, it should be feasible to perform these experiments within the 2 months of revision period.\n\nWe hope you will find these comments useful and clear to allow efficient revisions of the essential points. For your information, we also append the full set of reviews below.\n\nReviewer #1:\n\nThis interesting report by Overman et al. presents the functional characterisation of a pharmacological compound targeting the interaction of the transcription factor SOX18 with other proteins. This particular compound, Sm4, was isolated through a high-throughput screen for selective SOX18 inhibitors described fully in an accompanying manuscript that will be published elsewhere. The current manuscript used successive screening by first CHIP MS and then \u0391 screen to map protein+protein interactions of Sox18, and then study in detail the selectivity and inhibitory capacity of the compound Sm4 on SOX18 activity both in vivo and in vitro. The in vivo used the zebrafish model in which Sox18 transcriptional regulation of known vascular genes was investigated in reporter lines and by QPCR. Finally, the authors used a mouse orthotopic mammary tumour model to test efficacy in tumour angiogenesis and metastasis in vivo.\n\nOverall, the work convincingly demonstrates that the approach taken is valid to identify key protein protein interactions of transcription factors, and that targeting these interactions can be achieved with efficacy and some selectivity in vivo.\n\nThe work is well written and illustrated, and the major claims appear supported by the data. Having said that, there are a number of issues that should be addressed to further clarify the claim of the specificity of Sm4's inhibition of SOX18 direct protein interactions and its role in inhibiting Sox18-mediated vascular formation in vivo. Critically, the authors test specificity and efficacy of Sm4 in vivo first in the Dll4int3 reporter line, but endogenous Dll4 seems unaffected. This is left uncommented and raises questions regarding the mechanism at play.\n\nFurthermore, whereas the arteriovenous development deficit is clearly demonstrated in fish, the rest of the vascular changes in fish and in mouse tumours don\u00b4t match with what would be expected if Sox18 and RBPJ activity was reduced in blood endothelium. Furthermore, whilst these vascular changes are well demonstrated in the tumours, the actual reason for reduced lung metastasis is not addressed. Surprisingly, despite having originally identified Sox18 as key regulator of lymphatic development, and given that metastatic spread from mammary tumours is largely driven by lymphatics, the authors did not look at and comment on tumour associated lymphatic changes and the potential effects of Sm4.\n\nGiven that the work primarily aims to establish the approach to target PPI for transcriptional regulation in vivo, the latter point may not necessarily have to be addressed experimentally, but should at least be discussed. More pertinent to the overall claims are the remaining questions on specificity.\n\nPlease find further detailed comments below:\n\n1) Given the redundancy of Sox18 and Sox17 in the context of vascular development, the authors should include OCT4 interaction in their functional analysis of the effects of SM4 on both SOX17/OCT4 (reported interaction) and SOX18/OCT4.\n\n2) \u2013 Could the authors describe what the arbitrary threshold used to define interaction in Figure 1C is? Were there any physiological or chemical reasons used in defining it?\n\n3) \u2013 Could the authors comment about the significant proximity between c-FOS and EZH2 binding sites and the transcriptional start site of up-regulated genes following Sm4 treatment? Are their transcriptional activities significantly affected by Sm4 treatment?\n\n4) The authors describe that \"[\u2026] we calculated the distance between the transcription start site (TSS) of a gene and a TF binding event, as a proxy for the likelihood of direct transcriptional regulation\". But later mention that, in regard to this analysis, \"The results indicate that Sm4 affected genes are dysregulated through a direct effect on SOX18 transcriptional activity\". Given the 'proxy' nature of this experiment, I believe the claim could be turned down to better reflect the fact that this is a rather indirect indication of specificity.\n\n5) Could the authors provide evidence that Sm4 does not affect SOX18 DNA-binding role? This particular piece of data is required to show that Sm4 role on Sox18 role in vivo indeed relies on affecting SOX18 interaction with other proteins rather that in its ability to bind to DNA.\n\n6) Does Sm4 affect the transcriptional activity of Sox7? In Figure 3, could the authors please include a combined treatment with MO-sox18/Sm4 and MO-sox7/Sm4 to further demonstrate Sm4 specificity within SoxF factors. In addition, the authors should also include a MO-sox7/Mo-rbpj/Sm4 and MO-sox18/MO-rbpj/Sm4 controls in Figure 3C.\n\n7) As mentioned in the overall assessment, does Sm4 treatment affect the pre-existing lymphatic vasculature in area surrounding the tumour? In addition, is neo-lymphangiogenesis affected?\n\nReviewer #2:\n\nIn this paper, the authors describe a specific inhibitor of the transcription factor SOX18, a known regulator of vascular development. Using a combination of in vitro/ChIP-seq/in vivo experiment, they build a nice scientific approach to develop an anti-angiogenic drug able to inhibit tumor development. They start from an elegant experiment of ChIP-MS to isolate nuclear factors interacting with SOX18 presumably on chromatin. They test also interaction of SOX18 with several transcription factors obtained from the ChIP-MS to validate the protein-protein interaction and also to measure the effect of a small molecule sm4, describe in another manuscript, on these interactions. A ChIP-seq experiment coupled to RNA-seq shows, using a good bio-informatics approach, the specificity at the genomic level of Sm4 on the SOX18 transcriptional activity. The authors also predict a possible relationship of SOX18 with C-Jun.\n\nThe second part of the manuscript, presents the in vivo validation of action of Sm4 on the genetic pathway controlled by SOX18 followed by experiments in mouse showing the inhibition of tumor vascularization by Sm4. To my knowledge, it is one of the first studies showing the development of a drug able to block specifically the activity of a SOX protein.\n\nReviewer #3:\n\nAlthough the roles of SoxF members including Sox18 are crucial for formation and maintenance of vascular system, exactly how they form the protein complex for their transcriptional activities remains poorly elucidated. The present work may be the first report unveiling the entity of the proteins that physically interact with Sox18 and the interaction between SoxF members. Thus, this work provides a significant scientific advance by deciphering the mechanism of transcriptional regulation which are critical for vascular morphogenesis. Some additional in vivo data would improve the integrity of the manuscript for publication.\n\n1) The authors demonstrated that a natural compound Sm4 effectively inhibits the transcriptional activity of Sox18 in molecular and cellular levels. Moreover, the inhibitory effect of Sm4 was verified in vivo by using zebrafish reporter lines (tg(-6.5kdrl:eGFP) and tg(Dll4in3:eGFP)), in which arteriovenous specification defects were assessed. All these zebrafish systems are known to be modulated by the cooperation of Sox7 and Sox18 rather than by Sox18 alone. Therefore, the authors should be cautious to claim the effect of Sm4 is dependent solely on Sox18 inhibition based on these complicated in vivo systems. This potential complexity should be discussed.\n\n2) Sm4 appears to have a potential as an oral therapeutic agent to treat cancer as they have shown that Sm4 treatment reduced lung metastasis in a mouse orthotopic mammary tumor model. Reduced tumor angiogenesis is suggested as a working mechanism for the reduced tumor metastasis in this work. On the other hand, vascular destabilization is well-known to induce tumor metastasis. Additional analysis of tumor vessels integrity may provide clues as to how the vascular changes induced by Sm4 administration are associated with decreased metastasis.\n\n3) The authors showed Sox18 expression in tumor vessels to rationalize the inhibitory effect of Sm4 on tumor angiogenesis. It has been previously reported that tumor angiogenesis/lymphangiogenesis was suppressed in Sox18-knockout mice (JNCI 2006); thus, pharmacological blockade of Sox18 can indeed reduce tumor angiogenesis. However, there is a possibility that Sm4 can inhibit tumor angiogenesis and tumor growth by affecting molecules other than Sox18. This possibility could be tested by administering Sm4 to Sox18-knockout mice bearing tumors, since the effect of Sm4 on Sox18 will be abolished in this mouse model.\n",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3268d2ab-067d-4e1a-971e-a999e191c0a0",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C1",
+      "claim": "ChIP-MS analysis revealed 289 proteins that associate directly or indirectly with SOX18.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-MS analysis revealed 289 proteins, representing a variety of gene ontology (GO) classes of molecular function, that associate directly or indirectly with SOX18 (Figure 1B, Figure 1\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from ChIP-MS analysis as stated in the text and referenced in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "8b2e458e-f151-49ff-8dc4-c1fa60265540",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C2",
+      "claim": "SOX18 interacts with itself and forms pairwise interactions with DDX1, DDX17, ILF3, STAT1, TRIM28, and XRCC5.",
+      "claim_type": "EXPLICIT",
+      "source": "Using ALPHA-Screen, we observed that SOX18 interacts with itself, and also forms pairwise interactions with DDX1, DDX17, ILF3, STAT1, TRIM28, and XRCC5 (Figure 1C, left column '+', Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data as stated in the text and shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "eae7a6d3-dc11-4125-899b-0be4b8f767dd",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C3",
+      "claim": "Sm4 significantly disrupted 6 out of the 12 validated SOX18 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sm4 significantly disrupted 6 out of the 12 validated SOX18 interactions (Figure 1C, right column), with IC50 values ranging from 3.3 mM for SOX18-SOX18 to 65.9 MM for SOX18-RBPJ dimers (Figure 1D, Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing Sm4's effect on SOX18 interactions with specific IC50 values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "3a0b0895-6ece-4633-ba28-c8c2fbe4f068",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C4",
+      "claim": "The IC50 for Sm4 disruption of SOX18-SOX18 interaction is 3.3 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sm4 significantly disrupted 6 out of the 12 validated SOX18 interactions (Figure 1C, right column), with IC50 values ranging from 3.3 mM for SOX18-SOX18 to 65.9 MM for SOX18-RBPJ dimers (Figure 1D, Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing the specific IC50 value for SOX18-SOX18 interaction disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "d5889a8f-cf13-4844-ad61-c976bad6ac34",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C5",
+      "claim": "The IC50 for Sm4 disruption of SOX18-RBPJ interaction is 65.9 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Sm4 significantly disrupted 6 out of the 12 validated SOX18 interactions (Figure 1C, right column), with IC50 values ranging from 3.3 mM for SOX18-SOX18 to 65.9 MM for SOX18-RBPJ dimers (Figure 1D, Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing the specific IC50 value for SOX18-RBPJ interaction disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "51ab47e6-146b-4e9f-b2d3-fc7080421402",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C6",
+      "claim": "SOX9 homodimerization was unperturbed by Sm4 at up to 200 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither SOX7 nor SOX17 have the capacity to form a homodimer, and thus this component of Sm4 mode of action is highly specific to SOX18-SOX18 interaction. Further corroborating this, SOX9 homodimerization was unperturbed by Sm4 at up to 200 mM (Figure 1C and D, Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing lack of effect of Sm4 on SOX9 homodimerization at concentrations up to 200 \u03bcM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "023abb90-4a56-4730-9eac-a54016d8e4a7",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C7",
+      "claim": "The most common binding motif identified from the SOX18 ChIP-seq peaks corresponds to the SOX motif 5'-AACAAT-3'.",
+      "claim_type": "EXPLICIT",
+      "source": "The most common binding motif identified from the SOX18 ChIP-seq peaks corresponds to the previously reported SOX motif 5'-AACAAT-3' (Figure 2\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-seq data analysis and references a previously reported motif.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "352fab3c-e0d4-468d-8d76-b2b2e329f2ba",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C8",
+      "claim": "SOX18 peaks are 3.6 fold closer to the TSS of Sm4 down-regulated genes than to randomly distributed TSSs (p-value <0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The cumulative SOX18 peak-to-TSS distance demonstrated that, overall, SOX18 peaks are 3.6 fold closer (p-value <0.001) to the TSS of Sm4 down-regulated genes than to randomly distributed TSSs (Figure 2B, top left).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of ChIP-seq and RNA-seq data showing significant proximity of SOX18 binding to Sm4-affected genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "5e9dc466-95ed-45e7-97ec-8f66fcb025be",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C9",
+      "claim": "Analysis of known motifs in SOX18 ChIP-seq peaks revealed an over-representation of c-JUN binding motifs (3.23% of SOX18 peaks, p-value = 1e-302).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, analysis of known motifs in SOX18 ChIP-seq peaks revealed an over-representation of c-JUN binding motifs (3.23% of SOX18 peaks, p-value = 1e-302)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by motif analysis of ChIP-seq data with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "496f5092-4f08-43c5-a15f-bc33c5c88f7f",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C10",
+      "claim": "SOX18 and c-JUN can physically interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, analysis of known motifs in SOX18 ChIP-seq peaks revealed an over-representation of c-JUN binding motifs (3.23% of SOX18 peaks, p-value = 1e-302) and ALPHA-Screen analysis further established that SOX18 and c-JUN could physically interact (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data demonstrating physical interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "06b70934-15f0-43b7-878d-e589f770062e",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C11",
+      "claim": "Sm4 did not affect the transcriptional activity of either SOX17 or SOX9 proteins at any tested concentration (<50 \u03bcM) in cell-based reporter assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Sm4 did not affect the transcriptional activity of either SOX17 or SOX9 proteins at any tested concentration (<50 p,M) in cell-based reporter assays (Figure 2\u2014figure supplement 3; Robinson et al., 2014; Lefebvre et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cell-based reporter assay data and references to published methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "9a6ed22a-6f61-4ff0-a86c-ddbf84aa9375",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C12",
+      "claim": "Sm4 treatment significantly reduced SOX18-dependent egfp transcript levels by 61% in zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "We treated these larvae at 20 hr post fertilization (hpf) and observed that Sm4 treatment significantly reduced SOX18-dependent egfp transcript levels (61%), similar to the effects of combined sox7/18 depletion using morpholino oligonucleotides (MO) (Figure 3A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by qRT-PCR data from zebrafish experiments showing reduction in transcript levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "a1f11032-062a-4551-9ad1-eefb60e9d3a9",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C13",
+      "claim": "Zebrafish embryos treated with Sm4 developed normally with no evidence of toxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these zebrafish embryos developed normally and we found no evidence of toxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observational data from zebrafish experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "65487836-dac3-40dc-8711-aefa09054d83",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C14",
+      "claim": "When rbpj MO injections at suboptimal dose were combined with Sm4 treatment, the repressive effect was significantly increased by 11.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, when rbpj MO injections at suboptimal dose were combined with Sm4 treatment, the repressive effect was significantly increased by 11.5% (Figure 3C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from zebrafish reporter assays showing synergistic effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "0ccc8b16-d02a-4935-ab55-f040830074f0",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C15",
+      "claim": "Continuous Sm4 treatment between 2 and 6 days post fertilization did not perturb the transcriptional activity of Sox9 or the process of chondrogenesis in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control in vivo, we used the Sox9-dependent tg(col2a1:yfp) reporter line, and observed that continuous Sm4 treatment between 2 and 6 days post fertilization did not perturb the transcriptional activity of Sox9 or the process of chondrogenesis (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in vivo zebrafish reporter data demonstrating selectivity of Sm4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ae445cd6-9fba-4830-a267-909586375586",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C16",
+      "claim": "Zebrafish larvae treated with 1.5 \u03bcM Sm4 acquired an enlarged posterior cardinal vein (PCV) at the expense of the dorsal aorta (DA).",
+      "claim_type": "EXPLICIT",
+      "source": "We treated zebrafish larvae harbouring the arterial/venous reporter tg(fli1a:eGFP,\u20146.5kdrl:mCherry) with 1.5 pM Sm4 during the relevant developmental window, starting from 16 hpf (Figure 3\u2014figure supplement 2A). These larvae acquired an enlarged posterior cardinal vein (PCV) at the expense of the dorsal aorta (DA) (Figure 3E\u2013G, Figure 3\u2014figure supplement 2B), with arteriovenous shunts and incomplete trunk circulation (Figure 3\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by imaging and phenotypic analysis of zebrafish vascular development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "33d60ec6-117a-4651-b58a-ebba204c8b93",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C17",
+      "claim": "qRT-PCR analysis revealed significant dysregulation of arterial and venous genes, particularly efnb2a, hey1 and efnb4a, in Sm4-treated zebrafish larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "qRT-PCR analysis of blood vascular markers at 24 and 48 hpf revealed a significant dysregulation of arterial and venous genes in Sm4-treated conditions compared to DMSO, particularly efnb2a, hey1 and efnb4a (Figure 3H, Figure 3\u2014figure supplement 2E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by qRT-PCR data showing differential gene expression in treated versus control zebrafish.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "9ef68701-f65d-4895-9640-13a998e0946c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C18",
+      "claim": "Sm4 was consistently detected in blood plasma at two different time points, with a mean concentration increasing over time from 38.3 \u03bcg/mL to 55.2 \u03bcg/mL.",
+      "claim_type": "EXPLICIT",
+      "source": "We next went on to measure Sm4 bioavailability during the course of the treatment. Sm4 was consistently detected in blood plasma at two different time points, with a mean concentration increasing over time from 38.3 Mg/ mL to 55.2 Mg/mL (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by LC-MS/MS measurements of Sm4 in mouse blood plasma.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "edcb1078-f3ea-4294-8b3a-86b4ee99d058",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C19",
+      "claim": "Sm4-treated mice had a significant increase in their overall survival with a median latency of 44 days compared to 33 and 34 days for PBS vehicle- or aspirin-treated mice (p-value <0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "PBS vehicle- or aspirin-treated mice succumbed to the 4T1.2 tumor burden with a median latency of 33 and 34 days respectively (Figure 4D), whereas Sm4-treated mice had a significant increase in their overall survival with a median latency of 44 days (p-value <0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by survival analysis data from the mouse breast cancer model with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "d36c14fa-55c6-40e3-9c38-487e418bfe8b",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C20",
+      "claim": "There was a 67% reduction in the mean number of lung metastases at day 28 after tumor inoculation in Sm4-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While the size of the primary tumor was unchanged by Sm4 treatment (Figure 4E), we found a 67% reduction in the mean number of lung metastases at day 28 after tumor inoculation (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of lung metastases in the mouse model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "5ded7e68-8c51-4351-8efa-3669a6d13b85",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C21",
+      "claim": "The size of the primary tumor was unchanged by Sm4 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While the size of the primary tumor was unchanged by Sm4 treatment (Figure 4E), we found a 67% reduction in the mean number of lung metastases at day 28 after tumor inoculation (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by tumor size measurements during the treatment period.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7769a35b-2792-4dcf-b286-ff9e631e42b7",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C22",
+      "claim": "There was a significant decrease in the number of endothelial cells (48%, p-value <0.05) in the tumors of Sm4-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis using immunofluorescent staining for endothelial cell markers ERG (nuclear) and Endomucin (EMCN, membranous), showed a significant decrease in the number of endothelial cells (48%, p-value <0.05), as well as the volume of the blood vessels (55%, p-value <0.01) in the tumors of Sm4-treated mice (Figure 4H,I, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence analysis of tumor sections with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "83de8857-2f68-4430-9dd4-662835358386",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C23",
+      "claim": "There was a significant decrease in the volume of the blood vessels (55%, p-value <0.01) in the tumors of Sm4-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis using immunofluorescent staining for endothelial cell markers ERG (nuclear) and Endomucin (EMCN, membranous), showed a significant decrease in the number of endothelial cells (48%, p-value <0.05), as well as the volume of the blood vessels (55%, p-value <0.01) in the tumors of Sm4-treated mice (Figure 4H,I, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence analysis of tumor sections with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "1d282ad4-7e06-408a-b5fe-bc2ea8fce097",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C24",
+      "claim": "The density of the tumor associated lymphatic vessels was greatly reduced (65%, p-value <0.01) in Sm4-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using lymphatic specific markers PROX1 and podoplanin (PDPN), we also assessed the effect of Sm4 on the tumor induced lymphangiogenic response, and found that the density of the tumor associated lymphatic vessels was greatly reduced (65%, p-value <0.01) in treated conditions, as well as the number of lymphatic endothelial cells (70%, p-value <0.001) (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence analysis of lymphatic vessels with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "45d504bf-d57b-43cf-9fe5-9eead24edde1",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C25",
+      "claim": "The number of lymphatic endothelial cells was reduced (70%, p-value <0.001) in Sm4-treated mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using lymphatic specific markers PROX1 and podoplanin (PDPN), we also assessed the effect of Sm4 on the tumor induced lymphangiogenic response, and found that the density of the tumor associated lymphatic vessels was greatly reduced (65%, p-value <0.01) in treated conditions, as well as the number of lymphatic endothelial cells (70%, p-value <0.001) (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative immunofluorescence analysis of lymphatic endothelial cells with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "15ac440a-5e34-4ea3-8ef7-f169a70b4a0b",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C26",
+      "claim": "The SOXF group (SOX7, SOX17 and SOX18) of transcription factors are key regulators of endothelial cell differentiation during development.",
+      "claim_type": "EXPLICIT",
+      "source": "The SOXF group (SOX7, \u201417 and \u201418) of transcription factors (TFs) are key regulators of endothelial cell differentiation during development (Fran\u00e7ois et al., 2008; Corada et al., 2013; Hosking et al., 2009; Matsui et al., 2006; Cermenati et al., 2008; Herpers et al., 2008), and are thus critical for the formation of vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "9dc63181-b80f-4e4a-80c4-014e8ca83b17",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C27",
+      "claim": "SOXF transcription factors are critical for the formation of vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "The SOXF group (SOX7, \u201417 and \u201418) of transcription factors (TFs) are key regulators of endothelial cell differentiation during development (Fran\u00e7ois et al., 2008; Corada et al., 2013; Hosking et al., 2009; Matsui et al., 2006; Cermenati et al., 2008; Herpers et al., 2008), and are thus critical for the formation of vasculature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on logical inference from the role of SOXF in endothelial cell differentiation and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ea10bca4-c1ae-4928-8911-8b1180a7af1a",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C28",
+      "claim": "Mutation or deletion of SoxF genes compromises arteriovenous specification, blood vascular integrity and lymphangiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation or deletion of SoxF genes compromises arteriovenous specification, blood vascular integrity and lymphangiogenesis, and inhibits tumour growth and metastasis in animal models of cancer (Duong et al., 2012; Yang et al., 2013; Zhang et al., 2009; Young et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "f5554a7a-660b-4977-9c6c-85e4fa65994c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C29",
+      "claim": "Mutation or deletion of SoxF genes inhibits tumour growth and metastasis in animal models of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation or deletion of SoxF genes compromises arteriovenous specification, blood vascular integrity and lymphangiogenesis, and inhibits tumour growth and metastasis in animal models of cancer (Duong et al., 2012; Yang et al., 2013; Zhang et al., 2009; Young et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "49840599-0282-4743-b42e-8c2d6ddcad6c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C30",
+      "claim": "High levels of SOX18 have been associated with poor prognosis for cancer in human patients.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, high levels of SOX18 have been associated with poor prognosis for cancer in human patients (Eom et al., 2012; Pula et al., 2013; Jethon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to published clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "b8f430cd-624a-41be-a485-e359e0b51b54",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C31",
+      "claim": "SOX18 loss of function is compensated by the action of the remaining SOXF proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Any attempt to develop pharmaceutically useful SOX18 inhibitors must overcome two obstacles \u2014 first, that SOX18 loss of function is compensated by the action of the remaining SOXF (Hosking et al., 2009), and second, that each SOXF factor is likely to have several partners that may themselves act redundantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "394e5368-0be1-4eac-a7c4-efdac0336472",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C32",
+      "claim": "SOX proteins activate individual target genes by recruiting specific interacting partners.",
+      "claim_type": "EXPLICIT",
+      "source": "SOX proteins activate individual target genes by recruiting specific interacting partners (Sarkar and Hochedlinger, 2013), but only two protein-protein interactions for the SOXF group (SOX18-MEF2C and SOX17-OCT4) have been identified to date (Hosking et al., 2001; Jauch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "e760efa3-4330-4583-83a3-a011fcf3183d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C33",
+      "claim": "Only two protein-protein interactions for the SOXF group (SOX18-MEF2C and SOX17-OCT4) have been identified prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "SOX proteins activate individual target genes by recruiting specific interacting partners (Sarkar and Hochedlinger, 2013), but only two protein-protein interactions for the SOXF group (SOX18-MEF2C and SOX17-OCT4) have been identified to date (Hosking et al., 2001; Jauch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ba828aa0-d016-4932-b27d-799359db99fa",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C34",
+      "claim": "Sm4 is derived from a natural product found in the brown alga Caulocystis cephalornithos.",
+      "claim_type": "EXPLICIT",
+      "source": "Sm4, derived from a natural product found in the brown alga Caulocystis cephalornithos, was identified in a high-throughput screen for potential SOX18 blockers (Fontaine et al., to be published in full elsewhere).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the source of the compound and references unpublished work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "842e8acf-7c4b-4c64-8113-4b3d7130a607",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C35",
+      "claim": "Sm4 was identified in a high-throughput screen for potential SOX18 blockers.",
+      "claim_type": "EXPLICIT",
+      "source": "Sm4, derived from a natural product found in the brown alga Caulocystis cephalornithos, was identified in a high-throughput screen for potential SOX18 blockers (Fontaine et al., to be published in full elsewhere).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the screening method used to identify the compound and references unpublished work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "696b1f9b-ec90-4b54-b836-dd3f76f3c3ac",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C36",
+      "claim": "SOX18 is able to interact with all endothelial transcription factors tested, with the possible exception of SOX17 and CTNNB1.",
+      "claim_type": "EXPLICIT",
+      "source": "SOX18 was found to interact with all endothelial transcription factors tested, with the possible exception of SOX17 and CTNNB1, which showed a binding affinity below the arbitrary threshold (Figure 1C, '-').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "2dd104de-0ad7-4560-9e23-5bdb896d2347",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C37",
+      "claim": "All three SOXF proteins can form a heterodimer with OCT4.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that all three SOXF proteins can form a heterodimer with OCT4, whereas only the SOX17-OCT4 interaction is affected by Sm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ca09a1af-f5df-45fc-ad5c-0aa9103b2d2d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C38",
+      "claim": "Only the SOX17-OCT4 interaction is affected by Sm4.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that all three SOXF proteins can form a heterodimer with OCT4, whereas only the SOX17-OCT4 interaction is affected by Sm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data showing selective disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "62d43bcf-f006-4e1b-ae9d-111653ffb662",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C39",
+      "claim": "Neither SOX7 nor SOX17 have the capacity to form a homodimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither SOX7 nor SOX17 have the capacity to form a homodimer, and thus this component of Sm4 mode of action is highly specific to SOX18-SOX18 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data showing lack of homodimerization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "a220d482-a821-45cc-be6f-1a6b15af916e",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C40",
+      "claim": "The homodimerization disruption component of Sm4 mode of action is highly specific to SOX18-SOX18 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither SOX7 nor SOX17 have the capacity to form a homodimer, and thus this component of Sm4 mode of action is highly specific to SOX18-SOX18 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation that only SOX18 forms homodimers among SOXF proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "f86cf1cc-35fd-46e8-90d6-ed9cafdb62c1",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C41",
+      "claim": "Sm4 selectivity leans towards a subset of SOX18-associated PPIs, but has the capability to interfere with SOX7 or SOX17 protein partner recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Sm4 selectivity leans towards a subset of SOX18-associated PPIs, but has the capability to interfere with SOX7 or SOX17 protein partner recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the ALPHA-Screen data showing effects on multiple SOXF proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "dc09708e-474c-4be7-b60e-b4289d04cd70",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C42",
+      "claim": "The capability of Sm4 to interfere with SOX7 or SOX17 protein partner recruitment is potentially advantageous in preventing SOXF redundancy mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature of Sm4 is potentially advantageous in preventing SOXF redundancy mechanism (Hosking et al., 2009; Kim et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the therapeutic advantage, supported by citations about SOXF redundancy.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "9b758638-0579-44cc-9ac3-5be9d1f236b6",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C43",
+      "claim": "Known SOX18 target genes include Prox1 and Vcam1.",
+      "claim_type": "EXPLICIT",
+      "source": "The validity of this ChIP- seq dataset was further confirmed by GO term analysis and identification of known SOX18 target genes such as Proxl and Vcaml (Supplementary file 1a, Figure 2\u2014figure supplement 1B; Fran\u00e7ois et al., 2008; Hosking et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-seq data and citations to published research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "372b0a98-cb4b-45f3-ae45-3ce5b2170ee3",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C44",
+      "claim": "Sm4 does not have an off-target effect on the transcriptional activity of 7 other transcription factors tested (cMYC, GATA2, c-FOS, c-JUN, CTCF, EZH2, MAX).",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation was not observed for 7 of the other transcription factors tested (Figure 2B, Figure 2\u2014figure supplement 1F, Supplementary file 1c), signifying that Sm4 does not have an off-target effect on these TFs activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the lack of correlation between Sm4-affected genes and binding sites of other TFs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "eee5097b-f5e8-4eb9-af77-3c8f52c4c35c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C45",
+      "claim": "The expression levels of the other TFs tested were unaltered by Sm4 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression levels of the other TFs tested were unaltered by Sm4 treatment (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data showing no change in TF expression levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "379e6068-58b4-4588-8852-f0a71ed49241",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C46",
+      "claim": "Sm4 selectively targets SOX18-mediated transcription over other key endothelial transcription factors and SOX proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide strong evidence that Sm4 selectively targets SOX18-mediated transcription over other key endothelial transcription factors and SOX proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multiple lines of evidence including ChIP-seq, RNA-seq, and reporter assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "c6a4ec7d-72c5-478f-a292-c322b34c278f",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C47",
+      "claim": "The tg(-6.5kdrl:eGFP) transgenic zebrafish reporter line was previously validated as a readout for the combined activity of Sox7 and Sox18.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether Sm4 is also able to perturb Sox18 transcriptional activation in vivo, we used the tg(\u22126.5kdrl:eGFP) transgenic zebrafish reporter line, previously validated as a readout for the combined activity of Sox7 and Sox18 (Duong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published validation of the reporter line.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7691d843-e9f0-4b3a-bb8c-21e0ec54d472",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C48",
+      "claim": "Sm4 interferes with Sox7/18 and Rbpj co-ordinated activation of the Dll4in3 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that Sm4 interferes with Sox7/18 and Rbpjco-ordinated activation of the Dll4in3 enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the reporter assay data showing effects of Sm4 on Dll4in3:eGFP expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ac599268-3633-4b5d-afb1-bf0013357d69",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C49",
+      "claim": "The hallmark of sox7 genetic disruption is a short circulatory loop in the head formed by the lateral dorsal artery.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark of sox7 genetic disruption is a short circulatory loop in the head formed by the lateral dorsal artery (Mohammed et al., 2013), resulting in perturbed facial circulation (Hermkens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research on sox7 phenotypes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "59bb8a93-1b39-4ab6-9874-fbfad0a53330",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C50",
+      "claim": "Sox7 genetic disruption results in perturbed facial circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The hallmark of sox7 genetic disruption is a short circulatory loop in the head formed by the lateral dorsal artery (Mohammed et al., 2013), resulting in perturbed facial circulation (Hermkens et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research on sox7 phenotypes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "bf00de89-4e32-487f-bd24-e310f96df96f",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C51",
+      "claim": "Sox7 activity is only partially affected in presence of Sm4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the blood circulation in the head is unaffected in Sm4-treated larvae, signifying that a short circulatory loop has not fully formed. This phenotype supports of the conclusion that Sox7 activity is only partially affected in presence of the small compound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation that Sm4-treated larvae do not show the full sox7 loss-of-function phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "b7cb9842-56d9-4345-9872-8392fd136ead",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C52",
+      "claim": "Sm4 selectively interfered with the transcriptional activity of Sox18 and SoxF-mediated vascular formation in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results are congruent with the genome-wide inhibitory effects observed in vitro, demonstrating that Sm4 selectively interfered with the transcriptional activity of Sox18 and SoxF-mediated vascular formation in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multiple in vivo zebrafish experiments showing effects on Sox18/SoxF activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "07333c62-36b3-4f8f-8c18-7e2ecf60df58",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C53",
+      "claim": "Sox18 is expressed in the 4T1.2 tumor vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "As an indirect indication of target engagement, we first confirmed the expression of Sox18 in the 4T1.2 tumor vasculature by in situ hybridization (Figure 4B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by in situ hybridization data showing Sox18 expression in tumor vasculature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "0cd7bf59-058c-450d-9b52-1b6b311da79f",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C54",
+      "claim": "Sm4 improved the outcome of induced breast cancer by interfering with tumor-induced neo-vascularization and associated metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this demonstrates that Sm4 improved the outcome of induced breast cancer by interfering with tumor-induced neo-vascularization and associated metastasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multiple observations including reduced vascular density, reduced metastases, and improved survival.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "3f85085b-2e26-42f0-b18e-1311b004e5a3",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C55",
+      "claim": "Induction of angio- and lymphangiogenesis is a hallmark of solid cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of angio- and lymphangiogenesis is a hallmark of solid cancer, and is a critical step towards enabling tumor metastatic dissemination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cancer biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "da66869f-a3b5-4d43-a87e-21dac81cc7d9",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C56",
+      "claim": "Induction of angio- and lymphangiogenesis is a critical step towards enabling tumor metastatic dissemination.",
+      "claim_type": "EXPLICIT",
+      "source": "Induction of angio- and lymphangiogenesis is a hallmark of solid cancer, and is a critical step towards enabling tumor metastatic dissemination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about cancer metastasis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ce3bef41-bd34-423e-a37f-9be5f2144f5d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C57",
+      "claim": "Conventional approaches to target transcription factors have focused on interfering with oncogenes that are dysregulated to promote tumor cell transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conventional approaches to target transcription factors have focused on interfering with oncogenes that are dysregulated to promote tumor cell transformation (Gormally et al., 2014; Illendula et al., 2015; Moellering et al., 2009; Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published research on transcription factor targeting strategies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ac6df384-8134-428f-bbaa-9bb4538bba35",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C58",
+      "claim": "Targeting the transcription factor SOX18 with Sm4 is an effective molecular strategy to interfere with the metastatic spread in a pre-clinical model of breast cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide a proof of concept that targeting the transcription factor SOX18 with Sm4 is an effective molecular strategy to interfere with the metastatic spread in a pre-clinical model of breast cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental results showing reduced metastasis and improved survival in the mouse model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "3d6c5c33-1380-47f8-85f5-47cb92acbb14",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C59",
+      "claim": "The study validates an interactome-based molecular strategy to interfere with transcription factor activity for the development of novel disease therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies validate an interactome-based molecular strategy to interfere with transcription factor activity, for the development of novel disease therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the overall approach and results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "8eff275b-6f17-4536-9544-44c85b872b4d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C60",
+      "claim": "Pharmacological targeting of transcription factors holds great promise for the development of new therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological targeting of transcription factors holds great promise for the development of new therapeutics, but strategies based on blockade of DNA binding, nuclear shuttling, or individual protein partner recruitment have yielded limited success to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general scientific knowledge and context about transcription factor targeting.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "cb7c4643-888c-40ef-9b89-a0db6d3d213c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C61",
+      "claim": "Strategies based on blockade of DNA binding, nuclear shuttling, or individual protein partner recruitment have yielded limited success to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological targeting of transcription factors holds great promise for the development of new therapeutics, but strategies based on blockade of DNA binding, nuclear shuttling, or individual protein partner recruitment have yielded limited success to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general scientific knowledge about limitations of current transcription factor targeting approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "2fd0815d-338f-4d9e-bf29-2be1ab737e03",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C62",
+      "claim": "Transcription factors typically engage in complex interaction networks, likely masking the effects of specifically inhibiting single protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription factors typically engage in complex interaction networks, likely masking the effects of specifically inhibiting single protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general scientific knowledge and speculation about why single PPI inhibition has limited success.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ba5e64a9-d655-4264-9df3-211fe2d69d8e",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C63",
+      "claim": "Pharmacological inhibition of SOX18 protein function presents a potential avenue for management of the vascular response in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological inhibition of SOX18 protein function therefore presents a potential avenue for management of the vascular response in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the role of SOX18 in vascular development and cancer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "3afd27be-e0df-42f1-afc8-e37e4ea4507d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C64",
+      "claim": "Transcription factors often operate in mutually redundant families, thwarting conventional approaches to developing transcription factor-based therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription factors often operate in mutually redundant families, thwarting conventional approaches to developing transcription factor-based therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on general scientific knowledge about transcription factor families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "773029df-f682-4197-862e-17e09ff70c84",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C65",
+      "claim": "Each SOXF factor is likely to have several partners that may themselves act redundantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Any attempt to develop pharmaceutically useful SOX18 inhibitors must overcome two obstacles \u2014 first, that SOX18 loss of function is compensated by the action of the remaining SOXF (Hosking et al., 2009), and second, that each SOXF factor is likely to have several partners that may themselves act redundantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about SOXF protein partners based on general knowledge of transcription factor function.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ff822c4f-5b52-4d93-bf8d-87f3ca1ed711",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C66",
+      "claim": "The lack of inhibition of Sm4 on the primary tumor growth suggests that a potential combined effect between the drug treatment and surgery-induced inflammation is unlikely to be responsible for the increased survival.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of inhibition of Sm4 on the primary tumor growth (Figure 4E) suggests that a potential combined effect between the drug treatment and surgery-induced inflammation is unlikely to be responsible for the increased survival, given that surgery is required on day 0 to inoculate the xenograft cancer cells into the mammary fat pad.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation that primary tumor size was unchanged.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7159ecc3-73d5-4499-9ec4-86b0b3879bab",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C67",
+      "claim": "The lymphatic response to Sm4-treatment is consistent with that of SOX18 loss of function during lymphatic spread of solid cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "This lymphatic response to Sm4-treatment is consistent with that of SOX18 loss of function during lymphatic spread of solid cancers (Duong et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison with published research on SOX18 loss of function.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "3f61aa4c-994a-4670-ae26-bd088b14fb86",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C68",
+      "claim": "The TSS of Sm4 down-regulated genes were 2.05 fold closer to c-JUN binding events (p-value = 0.011).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the TSS of Sm4 down-regulated genes were 2.05 fold closer to c-JUN binding events (p-value = 0.011, Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "514614a2-8276-4b58-9439-13da63addced",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C69",
+      "claim": "The proximity of Sm4 down-regulated genes to c-JUN binding events could suggest possible co-regulation by SOX18 and c-JUN on this subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although only mildly significant, this could suggest possible co-regulation by SOX18 and c-JUN on this subset of Sm4 down-regulated genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on the proximity analysis.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "93273cdf-e448-404e-9f5e-1cae947fa8b1",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C70",
+      "claim": "The activity of the Dll4in3 enhancer does not fully recapitulate the endogenous dll4 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of this Dll4in3 enhancer does not fully recapitulate the endogenous dll4 expression (Wythe et al., 2013; Sacilotto et al., 2013), but it does provide a useful tool to study the combinatorial activity of Sox7, Sox18 and the Notch effector Rbpj.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published characterization of the reporter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "ec0d38d5-7d92-4fa0-8df7-67b0fd0f6459",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C71",
+      "claim": "The Dll4in3 enhancer provides a useful tool to study the combinatorial activity of Sox7, Sox18 and the Notch effector Rbpj.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of this Dll4in3 enhancer does not fully recapitulate the endogenous dll4 expression (Wythe et al., 2013; Sacilotto et al., 2013), but it does provide a useful tool to study the combinatorial activity of Sox7, Sox18 and the Notch effector Rbpj.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published characterization of the reporter.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "13d40d8d-9167-49f1-b975-f7199bf925b7",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C72",
+      "claim": "Combined genetic interference with sox7, sox18 and rbpj abolishes Dll4in3 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined genetic interference with sox7, sox18 and rbpj has been shown to abolish Dll4in3 activation, while single or double MO knockdowns have a much milder effect (Sacilotto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "6f83b7d2-9412-4366-878c-95e83059725c",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C73",
+      "claim": "Single or double MO knockdowns of sox7, sox18 and rbpj have a much milder effect on Dll4in3 activation than triple knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined genetic interference with sox7, sox18 and rbpj has been shown to abolish Dll4in3 activation, while single or double MO knockdowns have a much milder effect (Sacilotto et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "c8a2bfe0-9e1c-45b9-9fbd-212a37a6a1d9",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C74",
+      "claim": "The mild repressive effect of single or double knockdowns on Dll4in3 was recapitulated by treatment with Sm4 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "This mild repressive effect was recapitulated by treatment with Sm4 alone (Figure 3C, D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from the zebrafish reporter assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "9f90f4f8-7a03-439b-b8fd-1890f6f59749",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C75",
+      "claim": "The arteriovenous specification defect phenotype is typically only observed in double loss of Sox7 and Sox18 function due to SoxF redundancy.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to SoxF redundancy in arteriovenous specification, an A/V malformation phenotype is typically only observed in double loss of Sox7 and Sox18 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about SoxF redundancy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "2451db6b-cc49-49e4-ab6d-68b196c1ab46",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C76",
+      "claim": "SOX7 like SOX18 is able to interact with RBPJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Like SOX18, SOX7 is able to interact with RBPJ and SOX18 itself, both of which interactions are at least partially disrupted by Sm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "17f0bebf-aac7-499d-be4e-e7ea5b5e7f76",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C77",
+      "claim": "SOX7 is able to interact with SOX18.",
+      "claim_type": "EXPLICIT",
+      "source": "Like SOX18, SOX7 is able to interact with RBPJ and SOX18 itself, both of which interactions are at least partially disrupted by Sm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "12dff04a-508a-42c3-954d-5615bdf5bf68",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "claim_id": "C78",
+      "claim": "Both SOX7-RBPJ and SOX7-SOX18 interactions are at least partially disrupted by Sm4.",
+      "claim_type": "EXPLICIT",
+      "source": "Like SOX18, SOX7 is able to interact with RBPJ and SOX18 itself, both of which interactions are at least partially disrupted by Sm4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ALPHA-Screen experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e6f56b51-09ba-4c8f-a396-ede3a8345a56",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ChIP-MS identified 289 SOX18-associated proteins, and ALPHA-Screen validated direct pairwise interactions between SOX18 and multiple partners including DDX1, DDX17, ILF3, STAT1, TRIM28, XRCC5, and endothelial transcription factors (with possible exceptions of SOX17 and CTNNB1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C36 collectively demonstrate a comprehensive SOX18 interactome mapping using complementary techniques. ChIP-MS provides unbiased discovery (C1), ALPHA-Screen validates direct interactions (C2), and the breadth of interactions with endothelial TFs is established (C36). The methods are appropriate and the data converge to support the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "790c194b-17a1-4656-90fa-39bfa2744796",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Sm4 selectively disrupts 6 out of 12 validated SOX18 interactions with IC50 values ranging from 3.3 \u03bcM (SOX18-SOX18) to 65.9 \u03bcM (SOX18-RBPJ), shows specificity for SOX18 homodimerization over SOX9, and can partially interfere with SOX7 and SOX17 protein partner recruitment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6, C37-C41, and C76-C78 provide comprehensive characterization of Sm4's mechanism of action through ALPHA-Screen dose-response curves with quantified IC50 values. The selectivity is demonstrated through negative controls (SOX9) and cross-reactivity testing with other SOXF members. The data support the conclusion that Sm4 has preferential but not absolute selectivity for SOX18.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Genome-wide ChIP-seq and RNA-seq analyses demonstrate that Sm4 selectively targets SOX18-mediated transcription, with SOX18 binding sites 3.6-fold closer to Sm4-downregulated genes than random (p<0.001), without affecting other tested transcription factors including SOX7, GATA2, cMYC, c-FOS, CTCF, EZH2, and MAX.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C43-C46 provide strong evidence for Sm4 selectivity through integrated genomic analysis. The statistical significance of SOX18 peak proximity to Sm4-affected genes (C8), combined with lack of correlation for other TFs (C44-C45) and unchanged TF expression levels (C45), support the conclusion of selective SOX18 targeting. The approach is methodologically sound with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7a32ebed-cdbe-46de-b98b-2bcca40b1627",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SOX18 ChIP-seq peaks show over-representation of c-JUN binding motifs (3.23%, p=1e-302), SOX18 and c-JUN physically interact, and Sm4-downregulated genes are 2.05-fold closer to c-JUN binding sites (p=0.011), suggesting possible co-regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While claims C9-C10 demonstrate c-JUN motif enrichment and physical interaction with SOX18, the functional significance remains speculative (C69). The proximity analysis (C68) shows only mild significance (p=0.011), and no functional validation of co-regulation is provided. The interaction is validated but its role in Sm4's mechanism requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "5c65de83-9855-412e-8032-8a6161343a99",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sm4 shows selectivity for SOX18 over related SOX family members, with no effect on SOX17 or SOX9 transcriptional activity at concentrations up to 50 \u03bcM in cell-based reporter assays or on Sox9-dependent chondrogenesis in zebrafish.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C15 provide complementary in vitro and in vivo evidence for Sm4 selectivity. Cell-based reporter assays (C11) and zebrafish developmental studies (C15) both demonstrate lack of effect on SOX9 and SOX17, supporting the specificity claim. The concentration ranges tested are appropriate given the IC50 values for SOX18 interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "bda09ac7-8806-4f2b-98f7-76b76a93f020",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sm4 treatment in zebrafish significantly reduced SOX18-dependent reporter activity by 61% and showed synergistic effects with rbpj knockdown, interfering with Sox7/18 and Rbpj coordinated activation of the Dll4in3 enhancer without causing developmental toxicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 and C47-C48, C70-C74 demonstrate Sm4 efficacy in vivo using validated zebrafish reporters. The 61% reduction in reporter activity (C12) is comparable to genetic knockdown, synergy with rbpj MO (C14) supports the proposed mechanism, and lack of toxicity (C13) is important for therapeutic potential. The Dll4in3 reporter limitations are acknowledged (C70) but the tool is appropriate for the question.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "7812cbf3-b595-4758-8e52-c500d4feb622",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sm4 treatment in zebrafish caused arteriovenous specification defects with enlarged PCV at the expense of DA, dysregulation of arterial/venous markers (efnb2a, hey1, efnb4a), and partial Sox7 activity inhibition, recapitulating aspects of Sox7/Sox18 double loss-of-function phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 and C49-C52, C75 demonstrate that Sm4 produces vascular phenotypes consistent with SoxF loss of function. The arteriovenous defects (C16), gene expression changes (C17), and partial Sox7 inhibition (C51) align with known genetic phenotypes. The observation that Sm4 produces a phenotype typically requiring double Sox7/Sox18 loss (C75) supports the compound's ability to overcome redundancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In a mouse breast cancer model, Sm4 treatment (25 mg/kg/day) achieved systemic bioavailability (38.3-55.2 \u03bcg/mL), significantly improved survival (median 44 vs 33-34 days, p<0.01), reduced lung metastases by 67%, without affecting primary tumor size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 and C53 provide strong evidence for Sm4 therapeutic efficacy. Bioavailability is demonstrated (C18), survival benefit is statistically significant (C19), metastasis reduction is substantial (C20), and the lack of primary tumor effect (C21) with confirmed Sox18 expression in tumor vasculature (C53) supports a vascular-targeted mechanism. Sample sizes (n=6-12) are adequate for preclinical studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sm4 treatment reduced tumor vascular density (55% decrease in blood vessel volume, 48% decrease in endothelial cells, p<0.05) and lymphatic vessel density (65% decrease, p<0.01), with 70% reduction in lymphatic endothelial cells (p<0.001), consistent with SOX18 loss-of-function effects on tumor-induced neo-vascularization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 and C54, C66-C67 demonstrate the vascular mechanism underlying Sm4's anti-metastatic effects through quantitative immunofluorescence. All measurements show statistically significant reductions with appropriate p-values. The consistency with genetic SOX18 loss-of-function (C67) and the reasoning that unchanged primary tumor size argues against surgery-inflammation confounding (C66) strengthen the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "1aac8067-248f-4174-a651-c916d882bd6b",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological rationale for targeting SOX18, including its role in vascular development, association with poor cancer prognosis, compensation by SOXF redundancy, and the limitations of conventional transcription factor targeting approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 and C55-C65 provide comprehensive background supported by appropriate citations. These claims establish the scientific context and rationale for the study but represent prior knowledge rather than new findings. The citations appear appropriate and the logical framework for why an interactome-based approach is needed is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "b9169a5e-56c3-4d89-8a0a-477f2ed8672e",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sm4 is derived from a natural product from brown alga Caulocystis cephalornithos and was identified through high-throughput screening for SOX18 blockers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C35 describe the origin and discovery of Sm4 but reference unpublished work (\"Fontaine et al., to be published in full elsewhere\"). Without access to the screening methodology, hit validation criteria, and structure-activity relationships, the rigor of compound selection cannot be fully evaluated. This is important context but requires the cited work for complete assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    },
+    {
+      "id": "07ac45d4-63ce-4791-8691-13b7f033a47a",
+      "content_id": "2f5fcd68-9739-4699-944b-c5a2ec805f90",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study validates an interactome-based strategy for transcription factor inhibition and provides proof-of-concept that targeting SOX18 with Sm4 is effective for interfering with metastatic spread in preclinical breast cancer models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C58-C59 represent the overarching conclusions of the study. These are supported by the convergence of multiple lines of evidence: interactome mapping, selective PPI disruption, transcriptional effects, in vivo phenotypes, and therapeutic efficacy in cancer models. While C42 notes the potential advantage is speculative, the overall proof-of-concept is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:44:53.960385Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3268d2ab-067d-4e1a-971e-a999e191c0a0",
+      "result_id": "e6f56b51-09ba-4c8f-a396-ede3a8345a56"
+    },
+    {
+      "claim_id": "8b2e458e-f151-49ff-8dc4-c1fa60265540",
+      "result_id": "e6f56b51-09ba-4c8f-a396-ede3a8345a56"
+    },
+    {
+      "claim_id": "696b1f9b-ec90-4b54-b836-dd3f76f3c3ac",
+      "result_id": "e6f56b51-09ba-4c8f-a396-ede3a8345a56"
+    },
+    {
+      "claim_id": "eae7a6d3-dc11-4125-899b-0be4b8f767dd",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "3a0b0895-6ece-4633-ba28-c8c2fbe4f068",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "d5889a8f-cf13-4844-ad61-c976bad6ac34",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "51ab47e6-146b-4e9f-b2d3-fc7080421402",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "2dd104de-0ad7-4560-9e23-5bdb896d2347",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "ca09a1af-f5df-45fc-ad5c-0aa9103b2d2d",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "62d43bcf-f006-4e1b-ae9d-111653ffb662",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "a220d482-a821-45cc-be6f-1a6b15af916e",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "f86cf1cc-35fd-46e8-90d6-ed9cafdb62c1",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "2451db6b-cc49-49e4-ab6d-68b196c1ab46",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "17f0bebf-aac7-499d-be4e-e7ea5b5e7f76",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "12dff04a-508a-42c3-954d-5615bdf5bf68",
+      "result_id": "790c194b-17a1-4656-90fa-39bfa2744796"
+    },
+    {
+      "claim_id": "023abb90-4a56-4730-9eac-a54016d8e4a7",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "352fab3c-e0d4-468d-8d76-b2b2e329f2ba",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "9b758638-0579-44cc-9ac3-5be9d1f236b6",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "372b0a98-cb4b-45f3-ae45-3ce5b2170ee3",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "eee5097b-f5e8-4eb9-af77-3c8f52c4c35c",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "379e6068-58b4-4588-8852-f0a71ed49241",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "3f61aa4c-994a-4670-ae26-bd088b14fb86",
+      "result_id": "7b879ab7-c462-4c97-80be-52c5aa2bb54d"
+    },
+    {
+      "claim_id": "5e9dc466-95ed-45e7-97ec-8f66fcb025be",
+      "result_id": "7a32ebed-cdbe-46de-b98b-2bcca40b1627"
+    },
+    {
+      "claim_id": "496f5092-4f08-43c5-a15f-bc33c5c88f7f",
+      "result_id": "7a32ebed-cdbe-46de-b98b-2bcca40b1627"
+    },
+    {
+      "claim_id": "3f61aa4c-994a-4670-ae26-bd088b14fb86",
+      "result_id": "7a32ebed-cdbe-46de-b98b-2bcca40b1627"
+    },
+    {
+      "claim_id": "514614a2-8276-4b58-9439-13da63addced",
+      "result_id": "7a32ebed-cdbe-46de-b98b-2bcca40b1627"
+    },
+    {
+      "claim_id": "06b70934-15f0-43b7-878d-e589f770062e",
+      "result_id": "5c65de83-9855-412e-8032-8a6161343a99"
+    },
+    {
+      "claim_id": "0ccc8b16-d02a-4935-ab55-f040830074f0",
+      "result_id": "5c65de83-9855-412e-8032-8a6161343a99"
+    },
+    {
+      "claim_id": "9a6ed22a-6f61-4ff0-a86c-ddbf84aa9375",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "a1f11032-062a-4551-9ad1-eefb60e9d3a9",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "65487836-dac3-40dc-8711-aefa09054d83",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "c6a4ec7d-72c5-478f-a292-c322b34c278f",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "7691d843-e9f0-4b3a-bb8c-21e0ec54d472",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "93273cdf-e448-404e-9f5e-1cae947fa8b1",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "ec0d38d5-7d92-4fa0-8df7-67b0fd0f6459",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "13d40d8d-9167-49f1-b975-f7199bf925b7",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "6f83b7d2-9412-4366-878c-95e83059725c",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "c8a2bfe0-9e1c-45b9-9fbd-212a37a6a1d9",
+      "result_id": "bda09ac7-8806-4f2b-98f7-76b76a93f020"
+    },
+    {
+      "claim_id": "ae445cd6-9fba-4830-a267-909586375586",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "33d60ec6-117a-4651-b58a-ebba204c8b93",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "ac599268-3633-4b5d-afb1-bf0013357d69",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "59bb8a93-1b39-4ab6-9874-fbfad0a53330",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "bf00de89-4e32-487f-bd24-e310f96df96f",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "b7cb9842-56d9-4345-9872-8392fd136ead",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "9f90f4f8-7a03-439b-b8fd-1890f6f59749",
+      "result_id": "7812cbf3-b595-4758-8e52-c500d4feb622"
+    },
+    {
+      "claim_id": "9ef68701-f65d-4895-9640-13a998e0946c",
+      "result_id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124"
+    },
+    {
+      "claim_id": "edcb1078-f3ea-4294-8b3a-86b4ee99d058",
+      "result_id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124"
+    },
+    {
+      "claim_id": "d36c14fa-55c6-40e3-9c38-487e418bfe8b",
+      "result_id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124"
+    },
+    {
+      "claim_id": "5ded7e68-8c51-4351-8efa-3669a6d13b85",
+      "result_id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124"
+    },
+    {
+      "claim_id": "07333c62-36b3-4f8f-8c18-7e2ecf60df58",
+      "result_id": "0e1b21a6-3e03-40b9-a1fd-b1e15b15f124"
+    },
+    {
+      "claim_id": "7769a35b-2792-4dcf-b286-ff9e631e42b7",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "83de8857-2f68-4430-9dd4-662835358386",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "1d282ad4-7e06-408a-b5fe-bc2ea8fce097",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "45d504bf-d57b-43cf-9fe5-9eead24edde1",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "0cd7bf59-058c-450d-9b52-1b6b311da79f",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "ff822c4f-5b52-4d93-bf8d-87f3ca1ed711",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "7159ecc3-73d5-4499-9ec4-86b0b3879bab",
+      "result_id": "a5b16162-6b2b-409d-b23b-ef3853d0c64f"
+    },
+    {
+      "claim_id": "15ac440a-5e34-4ea3-8ef7-f169a70b4a0b",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "9dc63181-b80f-4e4a-80c4-014e8ca83b17",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "ea10bca4-c1ae-4928-8911-8b1180a7af1a",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "f5554a7a-660b-4977-9c6c-85e4fa65994c",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "49840599-0282-4743-b42e-8c2d6ddcad6c",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "b8f430cd-624a-41be-a485-e359e0b51b54",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "394e5368-0be1-4eac-a7c4-efdac0336472",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "e760efa3-4330-4583-83a3-a011fcf3183d",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "3f85085b-2e26-42f0-b18e-1311b004e5a3",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "da66869f-a3b5-4d43-a87e-21dac81cc7d9",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "ce3bef41-bd34-423e-a37f-9be5f2144f5d",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "8eff275b-6f17-4536-9544-44c85b872b4d",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "cb7c4643-888c-40ef-9b89-a0db6d3d213c",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "2fd0815d-338f-4d9e-bf29-2be1ab737e03",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "ba5e64a9-d655-4264-9df3-211fe2d69d8e",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "3afd27be-e0df-42f1-afc8-e37e4ea4507d",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "773029df-f682-4197-862e-17e09ff70c84",
+      "result_id": "1aac8067-248f-4174-a651-c916d882bd6b"
+    },
+    {
+      "claim_id": "ba828aa0-d016-4932-b27d-799359db99fa",
+      "result_id": "b9169a5e-56c3-4d89-8a0a-477f2ed8672e"
+    },
+    {
+      "claim_id": "842e8acf-7c4b-4c64-8113-4b3d7130a607",
+      "result_id": "b9169a5e-56c3-4d89-8a0a-477f2ed8672e"
+    },
+    {
+      "claim_id": "dc09708e-474c-4be7-b60e-b4289d04cd70",
+      "result_id": "07ac45d4-63ce-4791-8691-13b7f033a47a"
+    },
+    {
+      "claim_id": "ac6df384-8134-428f-bbaa-9bb4538bba35",
+      "result_id": "07ac45d4-63ce-4791-8691-13b7f033a47a"
+    },
+    {
+      "claim_id": "3d6c5c33-1380-47f8-85f5-47cb92acbb14",
+      "result_id": "07ac45d4-63ce-4791-8691-13b7f033a47a"
+    }
+  ],
+  "comparisons": []
+}

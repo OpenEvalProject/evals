@@ -1,0 +1,1630 @@
+{
+  "submission": {
+    "id": "a053f155-cf63-4ba1-9026-d6460e38af8f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:33:05.343978Z",
+    "updated_at": "2025-11-30T22:33:05.343978Z"
+  },
+  "content": [
+    {
+      "id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "submission_id": "a053f155-cf63-4ba1-9026-d6460e38af8f",
+      "content_type": "manuscript",
+      "content_text": "# Length-dependent flagellar growth of Vibrio alginolyticus revealed by real time fluorescent imaging\n\n## Authors\n\n- Meiting Chen<sup>1</sup>\n- Ziyi Zhao<sup>2</sup>\n- Jin Yang<sup>2</sup>\n- Kai Peng<sup>2</sup>\n- Matthew AB Baker<sup>3</sup>\n- Fan Bai<sup>2</sup> \u2020\n- Chien-Jung Lo<sup>1</sup> ([ORCID: 0000-0002-8078-4970](https://orcid.org/0000-0002-8078-4970)) \u2020\n\n### Affiliations\n\n1. Department of Physics and Graduate Institute of Biophysics National Central University Jhongli Taiwan\n2. Biodynamic Optical Imaging Center (BIOPIC) School of Life Sciences, Peking University Beijing China\n3. EMBL Australia Node for Single Molecule Science University of New South Wales Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial \ufb02agella are extracellular \ufb01laments that drive swimming in bacteria. During motor assembly, \ufb02agellins are transported unfolded through the central channel in the \ufb02agellum to the growing tip. Here, we applied in vivo \ufb02uorescent imaging to monitor in real time the Vibrio alginolyticus polar \ufb02agella growth. The \ufb02agellar growth rate is found to be highly length-dependent. Initially, the \ufb02agellum grows at a constant rate (50 nm/min) when shorter than 1500 nm. The growth rate decays sharply when the \ufb02agellum grows longer, which decreases to ~9 nm/min at 7500 nm. We modeled \ufb02agellin transport inside the channel as a one-dimensional diffusive process with an injection force at its base. When the \ufb02agellum is short, its growth rate is determined by the loading speed at the base. Only when the \ufb02agellum grows longer does diffusion of \ufb02agellin become the rate-limiting step, dramatically reducing the growth rate. Our results shed new light on the dynamic building process of this complex extracellular structure.\n\n## Introduction\n\nProtein transport in biology can involve active transport by molecular machines and also passive transport through diffusion (Rapoport, 2007; Yuan et al., 2010; Jacobson et al., 1987). Although intracellular protein transportation has been intensively studied, extracellular protein transportation has yet to be thoroughly investigated (Taschner and Lorentzen, 2016; Evans et al., 2013). One particular puzzle in extracellular transport is how flagellin proteins are transported many microns and assembled to form the long extracellular organelle of the bacterial flagellum.\n\nIn aqueous solutions, most bacteria swim by rotating their flagella (Berg, 2003; Sowa and Berry, 2008). Using the transmembrane electrochemical proton motive force (PMF) to power the bacterial flagellar motor (BFM) (Manson et al., 1977; Gabel and Berg, 2003), fast rotating flagella can propel their cell body at a speed of 15\u2013100 \u03bcm/s (Xue et al., 2015). Bacterial flagella, usually about 3\u201310 times the length of the cell body, are hollow protein cylinders of 20 nm outer diameter and 2 nm inner diameter (Yonekura et al., 2003). This long extracellular organelle is self-assembled from thousands of flagellin monomers (Figure 1a) (Yonekura et al., 2003; Asakura, 1970). Previous research has established that the flagellum assembles from the inside out, beginning with the basal body of the BFM, after which a type III flagellar secretion system (T3FSS) attaches to the base of this basal body (Macnab, 2003; Minamino et al., 2008; Chevance and Hughes, 2008). Utilizing energy derived from ATP hydrolysis and PMF (Paul et al., 2008; Minamino and Namba, 2008; Lee and Rietsch, 2015), the T3FSS continuously unfolds and delivers flagellin to the hollow interior of the motor, whereupon each unfolded flagellin protein is transported to the end of the filament and there polymerizes to extend the structure (Chevance and Hughes, 2008; Gal\u00e1n et al., 2014; Diepold and Armitage, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig1-v3.jpg)\n\n**Figure 1.:** (a) Schematic showing major components of the bacterial flagellar system. (b) Representative high-resolution fluorescence image of Vibrio alginolyticus polar flagellum taken by the Structured Illumination Microscopy (SIM, Materials and methods). Scale bar, 1.5 \u03bcm. (c) TEM images of cells with different lengths of flagella (1.8 \u03bcm, 4.5 \u03bcm, 5.3 \u03bcm and 7.8 \u03bcm, respectively), which are all tightly covered by sheath. Scale bars, 500 nm (200 nm in magnified area).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** To confirm that flagellar growth and sheath growth are synchronized, we performed TEM analysis to observe the fine structure of the sheathed flagella of V. alginolyticus. We examined three types of samples: (a) the control group: cells cultured in normal growth medium; (b) the NanoOrange group: cells cultured in growth medium plus NanoOrange; and\u00a0(c) the fixation group: the control group cells after fixation with formalin. Scale Bars, 500 nm (and 200 nm in the magnified area). For the control group, images showed that there was no visual difference along whole flagellum including the tip, suggesting the sheath always tightly wrapping the inner flagellum. For the NanoOrange group, flagella stained with NanoOrange were morphologically identical to that in the control group, indicating that NanoOrange labeling does not affect flagellar growth nor sheath growth. For the fixation group, we saw the sheath detached from the inner flagellum due to fixation, as previously reported (Glauert et al., 1963). Only after formalin fixation do flagella lose their sheath, which helps us to recognize the two-layered structure of sheath and the core flagellar filament. Consistent with the previous study (Glauert et al., 1963), the sheathed flagellum has an over-all diameter of about 300 \u00c5 and the inner flagellum is only\u00a0~120 \u00c5 in diameter. By these experiments, we confirmed the flagella of Vibrio alginolyticus are wrapped by sheath and the growth of flagella and sheath are tightly synchronized. Therefore, labeling flagellar sheath by NanoOrange is a robust method to quickly visualize the flagellar growth in V. alginolyticus..\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Distributions of flagellar lengths at different incubation times, binned at 1 \u03bcm intervals. The mean values and standard deviation of the lengths at different culturing times are also presented. From 1 to 5 hr, the number of flagella we analyzed were 75, 186, 179, 174 and\u00a0200, respectively. The experimental results demonstrate the average flagellar length of a bacterial population increases with the culturing time.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Growth curves of the two culture groups. The cells' optical density at 600 nm is plotted according to the culture time at 2.5, 3.5, 4.5 and 5.5 hr (gray: cells in normal imaging medium, blue: cells cultured with NanoOrange).\u00a0The result showed that cells grown in the medium with NanoOrange exhibited identical growth curve to cells in the normal medium, indicating that labeling by NanoOrange does not affect cell growth; (b) Plots showing the mean and median values of flagellar lengths of the two culture groups at different culturing times (gray: cells in normal imaging medium, blue: cells cultured with NanoOrange); (c) Distributions of flagellar lengths of the two culture groups at different incubation times, binned at 1 \u03bcm intervals. From 2.5 to 5.5 hr in sequence, the number of flagella we analyzed were 185, 157, 103 and\u00a0111 for the group with normal medium and 153, 140, 134 and\u00a088 for the group with NanoOrange (gray column: cells in normal imaging medium, blue column: cells cultured with NanoOrange). The distributions of flagellar lengths in two culture groups at different incubation times were roughly identical, demonstrating that NanoOrange labeling does not affect flagellar growth, either.\n\nUp till now, most studies have focused on the function of the flagellar motor (Berg, 2003; Kojima and Blair, 2004; Lo et al., 2007; Stock et al., 2012; Hosu et al., 2016; Baker et al., 2016) and molecular structure of the major components of the flagellar system (Yonekura et al., 2003; Erhardt et al., 2010; Lee et al., 2010; Ibuki et al., 2011), whilst there have been only limited efforts to characterize the dynamics of flagellar growth. In 1974, Iino (Iino, 1974) used electron microscopy to observe the lengths of Salmonella typhimurium flagella in different growth phases and reported that the flagellar growth rate decays exponentially with its length. Later, Aizawa and Kubori (1998) used dark-field microscopy to measure the bacterial flagellar length distribution at different time points and confirmed the same result. In contrast, more recently, (Turner et al., 2000, 2012) labeled Escherichia coli's pre-existing and newly grown flagellar segments with fluorescent dyes of two different colors and found that the average flagellar growth rate is a constant value independent of the flagellar length. There currently exist different theoretical predictions on the relationship between growth rate and length (Keener, 2006; Schmitt and Stark, 2011; Tanner et al., 2011; Stern and Berg, 2013). Despite this controversy, nearly all existing experimental investigations have been based on population measurements of flagellar length at two different time points at long intervals. For a better understanding of flagellar growth dynamics, a comprehensive, accurate and in vivo real-time measurement of single flagellar growth is required.\n\nHere, we developed a fast and high-resolution fluorescence imaging method that enables in vivo real-time recording of Vibrio alginolyticus polar flagellar growth. We observed that the flagellar growth rate of V. alginolyticus is highly length-dependent, with distinct growth regimes. Initially, the flagellum grows at a constant rate when its length is below 1500 nm. While it continues to grow, the growth rate decreases sharply. To our knowledge, this is the first in vivo real-time recording of single filament growth, covering the full range of filament lengths. Our study reveals the details of how flagellar growth rate depends on its length and also provides a mathematical model that explains our major findings and reconciles previous observations.\n\n## Results\n\n### Fluorescent labeling of flagellar sheath for real-time monitoring of flagellar growth\n\nAccurate real-time measurement of flagellar growth in live cells is challenging because (1) flagella are thin extracellular filaments and thus there is not the contrast to observe the\u00a0flagellar growth under bright-field microscopy. Observation of flagella on a living cell can be achieved by dark-field microscopy, but its spatial resolution is very poor and only flagella longer than 4\u20135 \u03bcm can be resolved (Aizawa and Kubori, 1998) due to the strong light scattering from the cell body. Electron microscopy (EM) offers high enough resolution, but with that technology live cell imaging is not possible. Thus, we have to rely on fluorescent imaging to measure flagellar growth; (2) labeling must be quick to allow subsequent staining of newly grown flagellar filament. Also, to enable real-time measurement, the staining reagent has to be present in the bacterial growth medium. Therefore, the label must be non- or weakly fluorescent when not binding to its target, otherwise the background will be too high to resolve the growing filament; (3) most bacteria species possess multiple extracellular flagella, all of which are swinging and can be entangled, making accurate measurement of single flagellar growth difficult.\n\nTo overcome these difficulties, we used V. alginolyticus as our experimental system, which has several advantages: (1) V. alginolyticus has only one polar flagellum (Furuno et al., 1997; Zhu et al., 2013), thus reducing flagella entangling and making it easier to track; (2) The polar flagellum is covered by sheath, which is believed to be a membrane-like structure that contains proteins, lipids and lipopolysaccharide and is contiguous with the outer membrane (McCarter, 2001). Previous research (McCarter, 2001; Allen and Baumann, 1971; Glauert et al., 1963) and our TEM studies revealed the synchronized growth of sheath and flagellum, with the sheath always tightly wrapping the inner flagellum (Figure 1c) and Figure 1\u2014figure supplements 1;\u00a0(3). The rich lipids constituent in the\u00a0sheath can\u00a0be easily\u00a0labeled by a hydrophobic domain targeting fluorescent dye, NanoOrange (Grossart et al., 2000). NanoOrange is virtually non-fluorescent before binding and increases its fluorescence dramatically after binding to the sheath (Grossart et al., 2000). Therefore, high-resolution fluorescence images of flagella with good contrast can be obtained without washing away the labeling reagent (Figure 1b), which allows subsequent staining of newly grown segments; (4) The labeling speed of NanoOrange is very fast (<1 min) and does not influence flagellar growth (Figure 1\u2014figure supplement 3), ensuring immediate visualization of newly grown flagellum, which is necessary to measure flagellar growth in real time; 5) Along with the cell body, the sheathed flagellum is prone to attach to the poly-L-lysine coated coverslip surface. This stabilizes the geometry of flagellar growth, making accurate measurement of flagellar length possible.\n\nIn our experiment, V. alginolyticus bacterial cells were grown following previously established protocols (Materials and methods). Before imaging, flagella labeling was performed by adding NanoOrange into the imaging medium. During imaging, NanoOrange was maintained in the medium to ensure timely labeling of newly grown flagellar segments. For the real-time observation of flagellar growth, cells attached to the coverslip were imaged under an automatic fluorescence microscope equipped with perfect focus system (Materials and methods). Figure 2a shows representative time-lapse images of the fluorescent flagellum of the same cell at time T and T+\u0394T, with the lengths L and L+\u0394L, respectively. Since the length we could measure is the 2D projection of the 3D flagellar length on the imaging plane (Figure 2b), the L3D can be calculated from L2D (Figure 2\u2014figure supplement 1). Therefore, the instantaneous growth rate of the flagellum is defined as \u0394L3D/\u0394T and the value is assigned to time (T+\u0394T/2) and flagellar length (L +\u0394L/2). To record the flagellar growth with high-temporal resolution, \u0394T needs to be short. However, it cannot be too short because flagellar growth \u0394L within \u0394T has to be resolvable by the optical resolution of our imaging system, which is one pixel corresponding to 65 nm physical distance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig2-v3.jpg)\n\n**Figure 2.:** (a) Representative images of a growing bacterial flagellum, taken at different time points, \u0394T\u00a0=\u00a030 mins. The flagellar length increases by length \u0394L2D. The growth rate of the flagellum can be calculated as \u0394L/\u0394T. Scale bar: 2 \u03bcm. (b) Schematic of a helical flagellum in 3D space L3D (green) and its 2D projection L2D (yellow). (c) Length dependence of flagellar growth rate of Vibrio alginolyticus from measuring growth rate at different flagellar lengths at 5 min intervals for short flagella (blue points) and 20 min intervals for longer flagella (red points). Flagellar growth rate is constant for short flagella (<1500 nm), and it decreases dramatically with increasing flagellar length.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) 3D SIM image of a Vibrio alginolyticus cell with a helical flagellum. Scale bar\u00a0=\u00a01 \u03bcm; (b) Schematic plot of a 3D helix (green) and it's 2D projection (yellow); (c) the arc length of 3D helix (L3D) vs. 2D projection (L2D)\u00a0(Materials and methods).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Pairwise confocal images of bacterial flagella at time T0 and T0\u00a0+10 mins. (b) The growth rate of free moving flagella (block dots) versus flagellar length, compared to the population measurement data (gray dots) using tethered flagella.\n\n### Flagella grow at a constant rate when their length is short\n\nFirstly, we aim to investigate the flagellar growth rate at different flagellar length by performing time-lapse imaging of a large population of cells. According to a previous study (Iino, 1974) and our observation (Figure 1\u2014figure supplement 2), the average flagellar length of a bacterial population increases with the culturing time. After preliminary experimental tests, V. alginolyticus after 1.5 hr culturing in VPG broth (Materials and methods), representing cells with short flagella, were imaged to investigate the flagellar growth rate. A time interval of 5 min was adopted in the time-lapse imaging since flagellar growth rate in this regime is relatively fast. We collected images from 72 cells with flagellar lengths ranging from 400 nm to 2800 nm and the instantaneous flagellar growth rates vs. flagellar length were plotted in blue dots in Figure 2c. Each data point is from one individual cell and its growing flagellum. The growth rate is nearly constant when the flagellar length is shorter than\u00a0~1500 nm and then drops sharply. The initial growth rates are between 37 and 60 nm/min for the flagella shorter than 1500 nm. Within the 5-min measurement interval, the flagella can grow 185\u2013300 nm. Ultra-short flagella (<400 nm) are not able to attach to the surface and therefore accurate measurement is difficult.\n\n### Flagellar growth rate decays sharply when the length is long\n\nTo investigate the growth rate of longer flagella, V. alginolyticus cells after 2.5 hr culturing in VPG broth (Materials and methods) were imaged. Since the flagellar growth rate starts to drop when filaments are longer than\u00a0~1500 nm, a 20-min time interval was adopted in the time-lapse imaging. We collected images from 103 cells with flagellar lengths ranging from 1000 to 7500 nm. The instantaneous flagellar growth rates vs. flagellar length were then plotted in red dots in Figure 2c. The growth rate decreases rapidly as the flagellar length increases from\u00a0~1500 nm to\u00a0~7500 nm. Overall, the growth rate starts in the range of\u00a0~50 nm/min and drops sharply afterwards and decreases to\u00a0~9 nm/min at 7500 nm. Our flagellar growth rate measurement is not sensitive to the chosen time interval since there is a region (between 1000 and 3000 nm) where both our 5 min and 20 min data overlap and agree. This provides assurance that the observed decay in flagellar growth rate is not an artifact caused by different measuring intervals and culturing time.\n\n### Flagellar growth rate when it is free to move\n\nTo further prove the observed length dependence of flagellar growth rate is not an artifact caused by attaching flagella to the surface, we conducted a similar measurement of V. alginolyticus flagellar growth rate when the flagella are free to move in space.\n\nIn this experiment, the observation was made when bacterial cell bodies were immobilized on the surface and before the flagella bound to the surface. The fluorescent images of flagella are taken using confocal microscopy (Materials and methods) to catch its trajectory in 3D space. In most cases, although fluorescent flagella are discernible, their fine helical structure is blurred due to their rapid movement. We can only analyze very limited cells in which accurate flagellar length measurement is possible. Figure 2\u2014figure supplement 2a displays some representative examples. Using the same definition we introduced earlier, the instantaneous flagellar growth rate can be calculated (Figure 2\u2014figure supplement 2b, black dots). We see that although the data points are not many, the sharp decay in flagellar growth rate as the flagellar length increases has been reproduced, confirming our observation of tethered cells.\n\n### Continuous time-lapse recording of single V. alginolyticus polar flagellum growth\n\nWith particular interest, we applied our method to monitor the flagellar growth of single cell in real time. In this experiment, V. alginolyticus cells were imaged every 5 min. Owing to the high temporal and spatial resolution offered by our experiment, we were able to follow the\u00a0in\u00a0vivo flagellar growth dynamically. Figure 3a shows representative continuous time-lapse recording of a single bacterial cell and its growing flagellum. In Figure 3b, the corresponding flagellar length vs. time curve is presented as the red line. The instantaneous flagellar growth rate is then calculated as the length difference between two\u00a0adjacent images divided by 5 min, as shown in Figure 3c, on top of the population measurement data from Figure 2c. In contrast to previous reports of a constant growth rate in E. coli or a monotonically decreasing rate in S. typhimurium (Iino, 1974; Aizawa and Kubori, 1998; Turner et al., 2012), we found that in V. alginolyticus the flagellar length increases linearly with time when its length is short (Figure 3b), which indicates a constant growth rate. When the flagellum grows longer than 1500 nm, the relationship between flagellar length and time deviates from linearity (Figure 3b, the red line), showing a decrease in growth rate. Therefore, we reproduced in single cells the length-dependent flagellar growth seen in population studies, although we were not able to follow continuous growth of flagella longer beyond 4000 nm due to the photobleaching of NanoOrange. To our knowledge, this is the first comprehensive report of in vivo real-time recording of V. alginolyticus single flagellar growth.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig3-v3.jpg)\n\n**Figure 3.:** (a) Continuous time-lapse recording of a single growing flagellum with images taken every 5 mins. (b) Flagellar length versus time for the cell presented in (a) (red dots). Gray line shows initial slope of flagellar length versus time. (c) Population measurement data for flagellar growth (grey dots) with measurements from cells tracked over more than two frames indicated in color. The cell in (a) and (b) is indicated in red.\n\n### Simulating flagellar growth by an injection-diffusion model\n\nTo explain why the growth rate of flagellar filaments undergoes two phases, we present a mathematical model incorporating current knowledge about the system. We construct our model as follows:\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22140/elife-22140-fig4-v3.jpg)\n\n**Figure 4.:** (a) Schematic illustration of the key elements of our one-dimensional diffusion model. At the base of the BFM, flagellin monomers are inserted into the channel by the T3FSS at a constant speed Sload. Once pumped into the channel, the flagellin diffuses as an unfolded peptide chain of 56 nm long. When a flagellin monomer reaches the tip of the growing flagellum, it crystallizes immediately and extends the flagellum by 0.47 nm. (b) Simulated flagellar growth rate vs. length curves with loading strength equal to zero (LS\u00a0=\u00a00) and varying values of D. (c) The simulated flagellar growth rate vs. length curves with D\u00a0=\u00a07500 nm2/s and varying values of LS. (d) The contour plot representing the cost function of the model fitting to experimental dataset in the parameter space formed by D and LS. (e) The predicted flagellar growth rate vs. length curve of the best-fit parameter set (LS\u00a0=\u00a012 and D\u00a0=\u00a05000 nm2/s, red line) and the channel occupancy vs. length (blue line).\n\nTo simulate flagellar growth, we implemented the above process by Monte Carlo simulations. In each simulation step, every flagellin monomer in the channel is polled according to equation (Equation 5) to update its location in the channel. At the same time, the new location of each monomer is checked for (1) if it contacts its neighbors, the movement stops; (2) if it has reached the growing tip, it becomes the new extension of the flagellum and leaves the simulation; (3) if it returns to the secretion apparatus, the movement stops at the base.\n\nUsing this program, movement of each flagellin molecule can be tracked and flagellar growth with high temporal resolution can be simulated. Following the experimental procedure for calculating the instantaneous flagellar growth rate, the model can predict the relationship between flagellar growth rate and flagellar length. There are three critical parameters of this model: the loading rate Sload, the loading strength LS and the diffusion coefficient D of the flagellin monomer in the channel. According to our experimental data (Figure 2c), when flagella are short, we observed a plateau in growth rate, which is also the maximum possible growth rate of the system. By extrapolation, this maximum growth rate is estimated as 50 nm/min that corresponds to transporting 1.7 flagellins per second. The maximum growth rate also reveals the number of working cycles of the T3FSS. Therefore, Sload was experimentally determined as 1.7 Hz. To fit the experimental curve, we varied D and LS, two free parameters of the model, to optimize the fitting.\n\n### Model parameter space search and the best fit\n\nWe varied D from 1500 to 2.0\u00a0\u00d7\u00a0105 nm2/s, LS from 0 to 25, to evaluate the fitting between our model prediction and experimental result. In our model, we first set LS\u00a0=\u00a00 and saw the effect of varying D. When D was greater than 2.0\u00a0\u00d7\u00a0105 nm2/s, every flagellin quickly diffuses to the tip once entering the channel. In this scenario, the flagellar growth rate is determined solely by the loading speed Sload, and\u00a0therefore, it was a constant rate spanning across a large range of flagellar lengths, as shown in Figure 4b (blue line). With decreasing D values, the plateau in growth rate vanishes gradually and the growth rate decays sharply due to increasing futile movement of flagellins in the channel. When LS\u00a0=\u00a00 and D was less than 2500 nm2/s, as shown in Figure 4b (magenta line), the flagellar growth rate dropped directly to ~zero at very short lengths. In this condition, the flagellin transportation is inefficient and since T3FSS does not enforce flagellin movement and the flagellum can hardly grow.\n\nWe also tested the effect of varying LS. According to previous research, the T3FSS at the base of the flagellum implements free energy derived from ATP hydrolysis and PMF to insert flagellins into the channel, although the exact magnitude of the pushing force has not been resolved. In Figure 4c, we set D\u00a0=\u00a07500 nm2/s and varied LS from 0 to 25. When LS\u00a0=\u00a00, as shown in Figure 4c (orange line), the flagellar growth rate drops directly to ~zero at very short lengths, similar to the magenta line in Figure 4b. With increasing LS, the effect is immediately shown as a plateau emerging in the flagellar growth rate in the short flagella regime (Figure 4c) and the width of the plateau extends as the LS increases.\n\nThe best fit of model prediction to experimental data is found by minimizing the cost function (Materials and methods). A two-dimensional parameter space search was conducted and the corresponding value of the cost function is plotted in contour plot in Figure 4d. The best fit was found at LS\u00a0=\u00a012, D\u00a0=\u00a05000 nm2/s. In Figure 4e, we overlaid the predicted growth rate from the model with the population measurement dataset. Also, we calculated the channel occupancy defined as the total length of flagellins in the channel divided by the entire length of the flagellum. In the short flagella regime, the constant flagellar growth rate is supported by the secretion force of the T3FSS and fast diffusion of flagellins across short distances. At flagella lengths larger than 1500 nm, the rate-limiting effect of flagellins diffusing across a large distance became increasingly prominent, causing many flagellins to jam in the channel (hence the high channel occupancy) and the growth rate dropped rapidly.\n\n## Discussions\n\nIn this work, we reported a fast and high-resolution fluorescent labeling method that enables in vivo real-time recording of V. alginolyticus polar flagellar growth. We found that the flagellar growth rate of V. alginolyticus is length-dependent, showing distinct growth regimes. Initially, the flagellum grows at a constant rate when its length is below 1500 nm. While it continues to grow, the growth rate decreases sharply.\n\nWe successfully executed real-time recording of flagellar growth by labelling the flagellar sheath of V. alginolyticus. Although we have experimental evidence to prove the synchronized growth between sheath and flagella, the exact mechanism driving sheath growth remains a mystery. From the TEM images, we see that sheath forms very compact and organized structure, always wrapping the inner flagellum. This raises another interesting question: how does the sheath self-assemble? It may be that sheath components are secreted through the central channel of the filament following a similar mechanism as the flagellar assembly. The sheath may also have been formed along the exterior of the flagellum, driven by the high motility of lipids. The exact mechanism of sheath assembly, and the relative kinetic comparisons to flagellar growth have not yet been elucidated, and we hope to pursue this in a subsequent study.\n\nIt is perplexing that flagellin transit is maintained in the channel without an explicit energy source (Minamino et al., 2014). Recently, to explain the constant flagellar growth rate of E. coli, two models have been proposed, the single-file diffusion model (Stern and Berg, 2013) and the chain model (Evans et al., 2013). First, the single-file diffusion model without invoking an injection pushing mechanism is a special case of our model when LS\u00a0=\u00a00. As demonstrated in Figure 4b, to produce a constant flagellar growth rate, the diffusion constant D must be very large to make the loading speed the rate-limiting step. In comparison to our length-dependent flagellar growth data with both a plateau regime and a fast-decay regime, varying D alone is not sufficient to fit the whole curve, as shown in Figure 4d. Therefore, a single-file diffusion model without invoking a push mechanism cannot explain our data. Secondly, the chain mechanism was proposed to explain the constant rate of flagellum growth. In this model, flagellin monomers are connected to each other through a head-to-tail linkage, forming a continuous chain in the channel and the entropic force generated from crystallization of flagellin monomer at the growing tip pulls the flagellin chain through the channel. Although this model offers a simple physical mechanism for the constant growth rate, it seems difficult to explain the sharp decay in growth rate of V. alginolyticus when its flagellum grows longer. Moreover, in the case where the multi-subunit chain breaks, the chain of distal subunits is pulled to the growing tip, leaving the chain of basal subunits to diffuse in the channel. Flagellum growth resumes only when the chain of basal subunits reaches the growing tip and crystallizes. During this period, the growth rate decays to zero. One direct prediction from this mechanism is that flagellar growth is not continuous and that pauses in flagellar growth will be observed at different flagellar lengths. In our experiments, we observed neither a constant growth rate nor pauses in flagellar growth. Therefore, our data is not explained by the chain model. Alternately, we have proposed here an injection-diffusion model with injection force that explains our experimental results.\n\nOne critical component of the injection-diffusion model is that we have to allow the export apparatus to be able to force the flagellin movement within LS distance. Due to this effect, when flagella are short, they can move fast toward the growing tip even when D is not extra large, leading to a constant growth rate up to 1500 nm. At this stage, the flagellar growth rate is limited by the flagellin loading rate from the secretion system. As this effect vanishes when flagella grow longer, the growth rate drops sharply, as a result of futile diffusion steps of flagellin monomers in the channel. Meanwhile, some flagellins begin to jam in the channel. Such blockage impedes the loading of new flagellins at the base, further reducing the growth rate. Finally, when the flagella are long enough, slow diffusion leads to a high occupancy of flagellins in the channel, whereupon the flagellar growth rate relies again on the secretion force of the export apparatus, but at a much decreased export frequency, therefore converging to a discounted loading speed.\n\nTo justify the secretion force in our model, we estimated the energy required to push flagellins in the channel. From the Einstein-Smoluchowski relation, the viscous drag coefficient of a single flagellin in the channel is \u03b6=kT/D. The work required to push n flagella s distance at velocity v is W=n\u03b6vs=nkTvs/D. To estimate to maximum energy required for pushing, we consider the condition as follows. In the condition where n\u00a0=\u00a012 flagellins are close-packed occupied in the beginning of channel, the secretion machine must push the new-coming flagellin 56 nm forward into the channel, as well as the 12 flagellins ahead of it. Using the best-fit parameter set (LS\u00a0=\u00a012, D\u00a0=\u00a05000 nm2/s), we can calculate the free energy required for this insertion. If we assume this insertion can be finished within 0.1 s, that gives v\u00a0=\u00a056 nm/0.1\u00a0s\u00a0=\u00a0560 nm/s and W\u00a0=\u00a075.3kT\u00a0=\u00a03.77 ATP. If we assume this, insertion takes the entire cycling time of the secretion apparatus, which is 0.6 s, that gives v\u00a0=\u00a056 nm/0.6s\u00a0=\u00a093 nm/s and W\u00a0=\u00a012.5kT\u00a0=\u00a00.62 ATP. Previous research suggests that the FliI ATPase at the core of the T3FSS shares similar molecular structure with the F1 ATPase (Ibuki et al., 2011) that can rotate the central shaft for one revolution by hydrolyzing 3 ATP molecules. Although the details of force generation and energy transduction in the T3FSS remain unresolved, from our estimation we see that the hypothesized secretion force applied by the apparatus is reasonable and consistent with our current knowledge about the system.\n\nOur experimental work and theoretical analysis suggest that the physical principle of diffusion is implemented here for extracellular protein transport. We see that a simple one-dimensional diffusion with a pushing base and an absorbing tip can support flagellar growth and explain its length-dependent features. From the plateau in growth rate when the flagellum is short, we deduce the loading speed of 1.7 flagellin per second of the V. alginolyticus T3FSS. Compared to the results from Turner et al.\u00a0(Turner et al., 2012; Stern and Berg, 2013), in which the loading of 0.5 flagellin per second was estimated in E. coli, our result is more than three times faster. This difference is possibly due to the difference between bacterial species. More experimental investigations are needed to characterize the length-dependence in flagellar growth in E. coli and S. typhimurium, to look for rate-change features. The previously reported constant growth rate in E. coli and exponential decay rate in S.\u00a0typhimurium may be unique to that bacterial species, or may correspond to different regimes of a universal length-dependent growth curve, similar to the one we reported here. The details of the injection mechanism and diffusion process can be further elucidated through mutagenesis or energetic control of cells in the future.\n\n## Material and methods\n\n### Bacterial strains and culture conditions\n\nThe V. alginolyticus strain used in this study is VIO5, a lateral flagella deletion strain (gift from Dr. Michio Homma, Nagoya University, Japan (Furuno et al., 1997). The strain was grown aerobically with shaking from frozen stocks (made from single colonies) to saturation at 30\u00b0C in VC medium (0.5% Bacto-tryptone (BD)\u00a0(w/v), 0.5% yeast extract (Sigma Aldrich)\u00a0(w/v), 0.4% K2HPO4 (w/v), 3% NaCl (w/v), 0.2% glucose (w/v)) overnight, then transferred to VPG broth (1% Bacto-tryptone (BD)\u00a0(w/v), 0.4% K2HPO4 (w/v), 3% NaCl (w/v), 0.5% glycerol (w/v)) for 1.5 hr to an OD600\u00a0=\u00a00.3. The bacterial culture was subsequently diluted 1:5 into the imaging medium containing VPG broth with 15% TMK medium (50 mM Tris-HCl (pH\u00a0=\u00a07.5), 5 mM MgCl2, 5 mM Glucose, 300 mM KCl).\n\n### Visualization of sheathed flagella by transmission electron microscopy\n\nThe experiment was performed as follows: the bacteria were grown overnight in VC medium at 30\u00b0C, diluted 1:100 in VPG broth and incubated for 3 hr at 30\u00b0C. For the NanoOrange group, NanoOrange was added into VPG broth during culturing (1/100 v/v); For the fixation group, the cells were fixed by 1% formalin for 24 hr and washed with distilled water. A drop (20 to 35 \u03bcl) of cell culture was placed on a 200-mesh carbon Formvar-coated grid for 2\u00a0mins and the excess fluid was removed with a filter paper. Cells were then negatively stained for 1 min with 1% w/v uranyl acetate. The grids were viewed under a Tecnai G2 20 Twin transmission electron microscope\u00a0(TEM) at an accelerating voltage of 120 kV.\n\n### Sample preparation and flagella labeling\n\nMicroscope tunnel slides were constructed by attaching double-sided tapes between microscope slides and cover slips, which were cleaned in a saturated solution of KOH in 95% ethanol. Poly-L-lysine (Sigma, 0.1%) was added into the tunnel for 1 min to coat a positively\u00a0charged layer on the glass surface, and then flushed out with the imaging medium. Labeling of the flagella was performed by mixing NanoOrange (Invitrogen,\u00a0Carlsbad\u00a0CA, 1/100 v/v) with the diluted VIO5 cells gently. The stained V. alginolyticus cells were then injected into the tunnel for 2 min for their immobilization. Unattached cells were flushed out with the imaging medium.\n\n### Super-resolution imaging by SIM\n\nTo obtain high-quality images of the bacterial flagella, super-resolution fluorescent imaging was performed using the Structured Illumination Microscopy (Nikon N-SIM). The microscope is equipped with an EMCCD camera (Andor iXon DU-897), a 100 \u00d7 1.49 NA TIRF objective (Nikon CFI Apo TIRF), a 488 nm excitation laser (Coherent Sapphire 488 LP), and a bandpass emission filter (500\u2013550 nm, Chroma). Image acquisition and reconstruction were directed by the NIS-Elements Viewer (Nikon) software.\n\n### Dynamic flagellar growth imaging\n\nFor the real-time observation of flagellar growth, the prepared cells were imaged under an automatic fluorescence microscope (Nikon, Ti-E) equipped with a 1.49 NA CFI Apo TIRF 100x Oil objective, a 470 nm LED light source (Omicron,\u00a0LEDHub), a sCMOS camera (Andor, Zyla) and the perfect focus system. The tunnel containing stained cells was set in a humidity chamber with a temperature-control system to allow flagellar growth at 30\u00b0C. During our imaging, NanoOrange was kept in the imaging medium (1/100 v/v) to ensure timely labeling of newly grown flagellar segments. Because the sheathed flagella readily attach to the poly-L-lysine coated surface, both the cell body and its flagellum are well immobilized on the microscope tunnel slides, enabling several hours of observation to track the flagellar growth. Time-lapse fluorescent images were captured at 5/20 min intervals depending on the flagellar growth rate.\n\n### Image analysis and flagellar growth rate measurement\n\nThe acquired images were analyzed using the ImageJ software. With our imaging system, the physical distance corresponding to one pixel is 65 nm. For the flagellum of interest, the ImageJ free-hand line tool was used to trace filament contours. Then the contour trajectories on the image were smoothed by applying the ImageJ fit spline function and the 2D length (L2D) measurement of each flagellum can be obtained (Turner et al., 2012).\n\n2D projection correction: The fluorescent images of flagella are the 2D projections of the 3D helical filaments with 0.16 \u03bcm helix radius and 1.5 \u03bcm pitch (Furuno et al., 1997), Figure 2b. The helix can be written as x=rsin(2\u03c0T), y=rcos(2\u03c0T), z=cT, where r is the helix radius, T the turns, c the pitch. The 3D helix length can be expressed as\n\n$$\nL_{3D}=\\sqrt{(\\frac{2\\pirz}{c})^{2}+z^{2}}\n$$\n\nThe 2D projection is then x=rsin(2\u03c0T), z=cT and can be rewritten as x=r sin(2\u03c0z/c). The arc lengths of 2D projection can be calculated numerically by\n\n$$\nL_{2D}=\\int0Z\\sqrt{1+(f')^{2}dz}=\\int0Z\\sqrt{1+(\\frac{2\\pir}{c}cos(\\frac{2\\piz}{c}))^{2}dz}\n$$\n\nTherefore, L3D and L2D can be calculated in respect to z and plotted in Figure 2\u2014figure supplement 1(c). The linear fit that we used as our correction is L3D\u00a0=\u00a01.09 L2D.\n\nIn a long time tracking experiment, single flagellar growth can be recorded in the curve of flagellar length versus growth time (Figure 3b). Consequently, the flagellar growth rate can be calculated as the length difference between adjacent two images of the same filament divided by the measurement interval (5 or 20 min). This rate was assigned as the instantaneous growing speed of the flagellar length corresponding to the midpoint of the newly grown segment. In this way, the flagellar growth rate versus flagellar length can be constructed (Figure 2c, Figure 3c).\n\n### Non-tethered flagella growth-rate measurement\n\nTo rule out the possibility that our observed length dependence in flagellar growth rate was an artifact caused by attaching flagella to the surface, we conducted a flagellar growth rate measurement when the V. alginolyticus flagella were free to move. Images of growing flagella swinging in space were captured by a high-speed confocal microscopy (Olympus, IX71 and Fluoview FV300) to measure the length of non-tethered flagella. Figure 2\u2014figure supplement 2a\u00a0showed pairwise confocal images of the same flagella recorded at 10 mins time interval. The growth rate was calculated following the strategy we introduced in the main text, and the data points were plotted in Figure 2\u2014figure supplement 2b\u00a0(black dots), which indicates a similar trend to the flagellar growth rate measured using tethered cells (gray dots).\n\n### Estimation of V. alginolyticus flagellin length\n\nThe V. alginolyticus flagellin protein FlaE (Uniprot ID D0X0U4) consists of 379 amino acids, which is shorter than the Salmonella enterica flagellin protein FliC of 494 amino acids. The structure of folded FlaE was predicted by homology modeling Swiss-Model server using S. enterica FliC (1UCU) as the template. The predicted structure is similar to FliC in the flagellar channel core region (D0 and D1) but less dense on the outer region (D2 and D3), due to its shorter sequence. Hence, the height and width of folded FlaE is the same as FliC. When a flagellin reaches the tip of the growing flagellum, it crystallizes immediately and this flagellin becomes the new extension of the flagellum. As one turn of 11 flagellins elongates the flagellum by 52 \u00c5 in Salmonella enterica (Yonekura et al., 2003), the growth increment of each folded FliC can be estimated as 52 \u00c5/11\u00a0=\u00a00.47 nm. Therefore, \u0394L of our model (Figure 4), the growth increment of each folded FlaE can be estimated as 0.47 nm.\n\nWhen the flagellin is transported in the channel, it has to pass through in the form of a peptide chain. We then assumed the length of the unfolded peptide chain of a protein is linear to its sequence length of amino acids. Given the length of the partially unfolded FliC is 74 nm (Yonekura et al., 2003; Turner et al., 2012) conserved alpha helix, the length of the unfolded FlaE can be estimated as 74\u00d7379\u00f7494\u00a0=\u00a056 nm.\n\n### Generating flagellar growth sample traces\n\nFollowing the model framework introduced in the main-text, a custom computer program written in C++ was implemented to generate flagellar growth sample traces. Each sample trace is simulated for the length of up to 8 \u03bcm. To balance numerical accuracy and computational load, the simulation time step \u0394t was chosen as (\u0394L)2/D for different diffusion coefficient of the flagellin monomer. We tested simulations with smaller\u0394t and confirmed the numerical convergence of simulated results.\n\n### Calculating simulated flagellar growth rates\n\nOnce we obtained the simulated flagellar length vs. time traces, we calculated the instantaneous flagellar growth rate following the experimental procedure: at each time point, the instantaneous flagellar growth rate was defined as the length difference between the current time and 5 min later, divided by 5 min. This growth rate was assigned to the current length plus half of the length difference. After this process, we obtained a preliminary growth rate versus length relationship. This curve was filtered by a median filter of 100 data points and then, the smooth growth rate versus length trace was generated for presentation and subsequent calculation of the cost function.\n\n### Cost-function evaluation\n\nFor a comparison between the experimental dataset and the predicted growth rate vs. length relationship, a cost function was constructed and used to evaluate the goodness of fitting. For every experimental data of the in total N data points, its length value (Li) was retrieved and put into the model predicted curve to find its corresponding growth rate (Vimodel). The cost function between a given model predicted curve and the experimental dataset is defined as $E(D,LS)=\\sum[(V(L_{i})\u00a0_{i}model\u2212V(L_{i})\u00a0_{i}exp)^{2}]/(n\u22121)$.\n\n### Contour plot formation\n\nAfter generating different flagellar length vs. time traces of different combinations of diffusion coefficients (D) and loading strength (LS), we calculated their corresponding cost function in fitting to the experimental dataset. The values of these cost functions have been plotted in contour plot on the D-LS plane and then we can search for the best fit with the minimum value of the cost function.\n",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "03b4a6bf-e711-4e65-9de4-6482f662a4bf",
+      "submission_id": "a053f155-cf63-4ba1-9026-d6460e38af8f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard M Berry, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22140.011](https://doi.org/10.7554/eLife.22140.011)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Length-dependent flagellar growth of Vibrio alginolyticus revealed by real time fluorescent imaging\" for consideration by eLife. Your article has been reviewed by four peer reviewers, one of whom, Richard M. Berry, is a member of our Board of Reviewing Editors and the process has been overseen by Richard Losick as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe authors have measured the rate of growth of the polar flagellum and sheath of Vibrio alginolyticus, using a vital dye, NanoOrange, whose fluorescence is low until it binds to the flagellar sheath (to a non-polar substrate). Thus, they can monitor changes in length without manipulating cells (e.g., washing and staining). This is a notable improvement. They show that the sheath is closely opposed to the filament. Presumably the sheath grows at its base where it is contiguous with the cell's outer membrane, but this is not known.\n\nThe experimental method and results add substantially to our understanding of flagellar filament growth, making the paper suitable in principle for publication in eLife. However, substantial improvements are needed in the data fitting and modelling, and in the discussion of how the results and model relate to existing models of flagellar-type export.\n\nSubstantial comments:\n\n1) Data fitting: The 3-part piecewise linear fit to the speed vs. length data (Figure 2C) is not very convincing. In fact, Figure 4E (Discussion, first paragraph) shows a different fit to the data than 3 piecewise linear segments. More care is needed to discuss what can and cannot be determined by fitting the data and comparing it to the results of modelling.\n\n2) Further to comment 1): the model appears to be over-specified. It needs to be demonstrated that (or discussed whether) the data can equally well be explained by single-file diffusion (Stern and Berg, 2013) or a chain model (Evans et al., 2013) without invoking the pushing mechanism. It is not realistic to assume that a flagellin subunit that has diffused away from the base of the filament is not allowed to diffuse back. Nor is it necessary to assume that the subunits are completely unfolded, since an \u03b1-helical chain is only about 1 nm in diameter, and therefore smaller than the 2nm pore.\n\nPreferably the modelling should be improved substantially. At least the discussion of other models in the literature (particularly Evans et al., 2013 and Stern and Berg, 2013) should be much improved and the need for the new model features (driven by data), and their plausibility, discussed carefully and quantitatively.\n\nFurther details on this point:\n\nDiscussion, third paragraph: All that is needed to explain these data is that there is a length dependence of the transit rate, which becomes rate-limiting (= slower than injection) as filaments grow longer. The length dependence of the chain model (Evans et al., 2013) is not discussed, so nothing can be said for or against it.\n\nSubsection \u201cSimulating flagellar growth by a one-dimensional single-file diffusion model\u201d, point 1: \"SI appendix\" \u2013 I could not find. Presumably this justifies the use of 56 nm as the length of the flagellin in the channel. Discuss this in the text. In particular, how can you have LS >1 (best fit is LS=12)? This requires the apparatus to push filaments further than their length! If there is an extended length and a semi-coiled length, this needs to be said. Subsection \u201cEstimation of V. alginolyticus flagellin length\u201d, last paragraph: a simple estimate of the contour length based on the dimensions of a peptide bond (~0.35 nm per a.a.) gives about twice this contour length. Is 56 nm really a good estimate? How does the model and fit depend upon this?\n\nSubsection \u201cSimulating flagellar growth by a one-dimensional single-file diffusion model\u201d, point 1: LS as described is really equivalent to a loading length in units of 56 nm \u2013 better to quote this length directly so that it can easily be compared to the filament length in Figure 4. Naively I'd expect that the occupancy saturates and the rate slows when the filament is longer than the loading length. But it seems that this happens at filament lengths longer than the loading length. Discuss/explain.\n\nSubsection \u201cSimulating flagellar growth by a one-dimensional single-file diffusion model\u201d, point 3: Is it realistic that (both?) touching units stop? Rather than diffusing more slowly as a larger object?\n\nSubsection \u201cModel parameter space search and the best fit\u201d, last sentence: Figures do not show that there is a dependence of growth rate in the limit of long filaments upon \"secretion force\" (LS?). If this has been demonstrated, it should be shown. It's not clear that the model is expected to predict this, especially in the light of the previous comment which seems to preclude monomers pushing each other. But perhaps in fact stopping upon contact DOES provide a mechanism for pushing, as hitting injected monomers will ratchet the Brownian Motion of those further in.\n\n3) Subsection \u201cFluorescent labeling of flagellar sheath for real time monitoring of flagellar growth\u201d, third paragraph: discuss/explain/fix the conflict between statements that flagella are anchored to the surface and the assumption that they are 3D helices. Are they helices anchored at lowest points? Is there any evidence for this, e.g. 3D imaging? The 2D-3D correction is minor to the point of being unnecessary, but also it is wrong if filaments are fully anchored to the surface and thus in fact 2D.\n",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "16ef928e-d6e8-4755-afa3-c5dfe8723ed7",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C1",
+      "claim": "Bacterial flagella are extracellular filaments that drive swimming in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial \ufb02agella are extracellular \ufb01laments that drive swimming in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about bacterial flagella function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "8db81595-6536-42ef-85de-d3384d15fecc",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C2",
+      "claim": "During motor assembly, flagellins are transported unfolded through the central channel in the flagellum to the growing tip.",
+      "claim_type": "EXPLICIT",
+      "source": "During motor assembly, \ufb02agellins are transported unfolded through the central channel in the \ufb02agellum to the growing tip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about flagellar assembly mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "c7e39c4d-4271-4435-bba0-5459f119bda6",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C3",
+      "claim": "The flagellar growth rate of Vibrio alginolyticus is initially constant at 50 nm/min when the flagellum is shorter than 1500 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, the \ufb02agellum grows at a constant rate (50 nm/min) when shorter than 1500 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "b43d6623-44b8-4866-a6b6-7bbd364209f7",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C4",
+      "claim": "The flagellar growth rate decays sharply when the flagellum grows longer than 1500 nm, decreasing to ~9 nm/min at 7500 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate decays sharply when the \ufb02agellum grows longer, which decreases to ~9 nm/min at 7500 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "62bdada1-7a8c-4b2d-8242-1299ebbe34eb",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C5",
+      "claim": "When the flagellum is short, its growth rate is determined by the loading speed at the base.",
+      "claim_type": "EXPLICIT",
+      "source": "When the \ufb02agellum is short, its growth rate is determined by the loading speed at the base.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical model fitting to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "df7c66c7-69ce-4e60-8073-2c5899e679d1",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C6",
+      "claim": "When the flagellum grows longer, diffusion of flagellin becomes the rate-limiting step, dramatically reducing the growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Only when the \ufb02agellum grows longer does diffusion of \ufb02agellin become the rate-limiting step, dramatically reducing the growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical model fitting to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "b17d00fd-20a0-468f-95ef-edd77d92176a",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C7",
+      "claim": "Most bacteria swim by rotating their flagella in aqueous solutions.",
+      "claim_type": "EXPLICIT",
+      "source": "In aqueous solutions, most bacteria swim by rotating their flagella (Berg, 2003; Sowa and Berry, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "08bb7586-cd71-433f-9e25-b1d021845ef5",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C8",
+      "claim": "The bacterial flagellar motor uses the transmembrane electrochemical proton motive force (PMF) to power rotation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the transmembrane electrochemical proton motive force (PMF) to power the bacterial flagellar motor (BFM) (Manson et al., 1977; Gabel and Berg, 2003), fast rotating flagella can propel their cell body at a speed of 15\u2013100 \u03bcm/s (Xue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9bd52ebc-5e0f-448f-9f71-ff4d9c4fd35e",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C9",
+      "claim": "Fast rotating flagella can propel bacterial cell bodies at speeds of 15\u2013100 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the transmembrane electrochemical proton motive force (PMF) to power the bacterial flagellar motor (BFM) (Manson et al., 1977; Gabel and Berg, 2003), fast rotating flagella can propel their cell body at a speed of 15\u2013100 \u03bcm/s (Xue et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "1ee635b2-d696-4267-8cfc-f6aaf066a28e",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C10",
+      "claim": "Bacterial flagella are usually about 3\u201310 times the length of the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial flagella, usually about 3\u201310 times the length of the cell body, are hollow protein cylinders of 20 nm outer diameter and 2 nm inner diameter (Yonekura et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "7a019282-47ee-4a8e-8c21-774929489984",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C11",
+      "claim": "Bacterial flagella are hollow protein cylinders of 20 nm outer diameter and 2 nm inner diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial flagella, usually about 3\u201310 times the length of the cell body, are hollow protein cylinders of 20 nm outer diameter and 2 nm inner diameter (Yonekura et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "b91dae17-e552-478a-ad75-d736f0a5227f",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C12",
+      "claim": "Bacterial flagella are self-assembled from thousands of flagellin monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This long extracellular organelle is self-assembled from thousands of flagellin monomers (Figure 1a) (Yonekura et al., 2003; Asakura, 1970).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and illustrated in Figure 1a.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "0c4d7b9a-2c17-46c6-9fb4-813b94dc6f46",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C13",
+      "claim": "The flagellum assembles from the inside out, beginning with the basal body of the BFM.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has established that the flagellum assembles from the inside out, beginning with the basal body of the BFM, after which a type III flagellar secretion system (T3FSS) attaches to the base of this basal body (Macnab, 2003; Minamino et al., 2008; Chevance and Hughes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "33911375-9234-4c36-826d-91c622705ddd",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C14",
+      "claim": "A type III flagellar secretion system (T3FSS) attaches to the base of the basal body after the basal body forms.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has established that the flagellum assembles from the inside out, beginning with the basal body of the BFM, after which a type III flagellar secretion system (T3FSS) attaches to the base of this basal body (Macnab, 2003; Minamino et al., 2008; Chevance and Hughes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "a7429b41-d82f-4794-a7f6-d8c17a53761e",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C15",
+      "claim": "The T3FSS utilizes energy derived from ATP hydrolysis and PMF to unfold and deliver flagellin.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing energy derived from ATP hydrolysis and PMF (Paul et al., 2008; Minamino and Namba, 2008; Lee and Rietsch, 2015), the T3FSS continuously unfolds and delivers flagellin to the hollow interior of the motor, whereupon each unfolded flagellin protein is transported to the end of the filament and there polymerizes to extend the structure (Chevance and Hughes, 2008; Gal\u00e1n et al., 2014; Diepold and Armitage, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "a15becd2-c7ac-4b36-9463-3157e9817d86",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C16",
+      "claim": "Each unfolded flagellin protein is transported to the end of the filament and polymerizes to extend the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing energy derived from ATP hydrolysis and PMF (Paul et al., 2008; Minamino and Namba, 2008; Lee and Rietsch, 2015), the T3FSS continuously unfolds and delivers flagellin to the hollow interior of the motor, whereupon each unfolded flagellin protein is transported to the end of the filament and there polymerizes to extend the structure (Chevance and Hughes, 2008; Gal\u00e1n et al., 2014; Diepold and Armitage, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "5fb83326-89e7-4076-88c5-73f52f548e91",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C17",
+      "claim": "Iino (1974) reported that the flagellar growth rate of Salmonella typhimurium decays exponentially with its length.",
+      "claim_type": "EXPLICIT",
+      "source": "In 1974, Iino (Iino, 1974) used electron microscopy to observe the lengths of Salmonella typhimurium flagella in different growth phases and reported that the flagellar growth rate decays exponentially with its length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9871ece4-42a8-4d36-87d0-6f08719ef4c1",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C18",
+      "claim": "Aizawa and Kubori (1998) confirmed that flagellar growth rate decays exponentially with length in Salmonella typhimurium.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, Aizawa and Kubori (1998) used dark-field microscopy to measure the bacterial flagellar length distribution at different time points and confirmed the same result.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "18a20f8f-f622-4911-af7d-bff042646ab2",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C19",
+      "claim": "Turner et al. (2000, 2012) found that the average flagellar growth rate in Escherichia coli is a constant value independent of the flagellar length.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, more recently, (Turner et al., 2000, 2012) labeled Escherichia coli's pre-existing and newly grown flagellar segments with fluorescent dyes of two different colors and found that the average flagellar growth rate is a constant value independent of the flagellar length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "61849063-a521-4b70-8ca9-a5625fdb02e7",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C20",
+      "claim": "Nearly all existing experimental investigations of flagellar growth have been based on population measurements at two different time points at long intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this controversy, nearly all existing experimental investigations have been based on population measurements of flagellar length at two different time points at long intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the state of the field based on knowledge of previous research.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "93db2520-0b9e-4f33-9d87-f09c6f1e9e24",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C21",
+      "claim": "Vibrio alginolyticus has only one polar flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these difficulties, we used V. alginolyticus as our experimental system, which has several advantages: (1) V. alginolyticus has only one polar flagellum (Furuno et al., 1997; Zhu et al., 2013), thus reducing flagella entangling and making it easier to track",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "16e1936f-809c-4545-9c29-83aa7850a7c5",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C22",
+      "claim": "The polar flagellum of V. alginolyticus is covered by sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The polar flagellum is covered by sheath, which is believed to be a membrane-like structure that contains proteins, lipids and lipopolysaccharide and is contiguous with the outer membrane (McCarter, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "669592fe-6f22-44aa-954b-c940b0e296ff",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C23",
+      "claim": "The sheath is a membrane-like structure that contains proteins, lipids and lipopolysaccharide and is contiguous with the outer membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The polar flagellum is covered by sheath, which is believed to be a membrane-like structure that contains proteins, lipids and lipopolysaccharide and is contiguous with the outer membrane (McCarter, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "24a1180a-c49b-476f-b63f-8242ad77f6e4",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C24",
+      "claim": "The growth of sheath and flagellum are synchronized, with the sheath always tightly wrapping the inner flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research (McCarter, 2001; Allen and Baumann, 1971; Glauert et al., 1963) and our TEM studies revealed the synchronized growth of sheath and flagellum, with the sheath always tightly wrapping the inner flagellum (Figure 1c) and Figure 1\u2014figure supplements 1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and by TEM data shown in figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9659d5c9-3e04-4caa-b9da-bfd837727867",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C25",
+      "claim": "The rich lipids constituent in the sheath can be easily labeled by NanoOrange, a hydrophobic domain targeting fluorescent dye.",
+      "claim_type": "EXPLICIT",
+      "source": "(3). The rich lipids constituent in the sheath can be easily labeled by a hydrophobic domain targeting fluorescent dye, NanoOrange (Grossart et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "15aed372-00f8-4d24-9106-b4e87108217d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C26",
+      "claim": "NanoOrange is virtually non-fluorescent before binding and increases its fluorescence dramatically after binding to the sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "NanoOrange is virtually non-fluorescent before binding and increases its fluorescence dramatically after binding to the sheath (Grossart et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "924c0606-c757-4d89-afb5-9eddd0af21cd",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C27",
+      "claim": "The labeling speed of NanoOrange is very fast (<1 min) and does not influence flagellar growth.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) The labeling speed of NanoOrange is very fast (<1 min) and does not influence flagellar growth (Figure 1\u2014figure supplement 3), ensuring immediate visualization of newly grown flagellum, which is necessary to measure flagellar growth in real time",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "ddc83e1b-1267-464c-bbd0-86c563997c51",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C28",
+      "claim": "The sheathed flagellum is prone to attach to the poly-L-lysine coated coverslip surface along with the cell body.",
+      "claim_type": "EXPLICIT",
+      "source": "5) Along with the cell body, the sheathed flagellum is prone to attach to the poly-L-lysine coated coverslip surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "67f47e41-d32f-4fa8-9512-16e921f2bd34",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C29",
+      "claim": "The average flagellar length of a bacterial population increases with the culturing time.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a previous study (Iino, 1974) and our observation (Figure 1\u2014figure supplement 2), the average flagellar length of a bacterial population increases with the culturing time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "ac8fc810-0cf8-4ec1-8782-335f4a6ac32a",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C30",
+      "claim": "The initial growth rates are between 37 and 60 nm/min for flagella shorter than 1500 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial growth rates are between 37 and 60 nm/min for the flagella shorter than 1500 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "c1c7c5b7-75e9-47e2-a290-cd713df77a05",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C31",
+      "claim": "Within the 5-min measurement interval, flagella shorter than 1500 nm can grow 185\u2013300 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the 5-min measurement interval, the flagella can grow 185\u2013300 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the measured growth rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "259ba126-7ff8-496a-86ff-68bce0153ad7",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C32",
+      "claim": "Ultra-short flagella (<400 nm) are not able to attach to the surface and therefore accurate measurement is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultra-short flagella (<400 nm) are not able to attach to the surface and therefore accurate measurement is difficult.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "1fefe885-9565-4809-bb31-60903d26d714",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C33",
+      "claim": "The growth rate decreases rapidly as the flagellar length increases from ~1500 nm to ~7500 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The growth rate decreases rapidly as the flagellar length increases from ~1500 nm to ~7500 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly measured from experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "dfc215ee-f26a-414b-ad27-ff20f54aef37",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C34",
+      "claim": "The observed decay in flagellar growth rate is not an artifact caused by different measuring intervals and culturing time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our flagellar growth rate measurement is not sensitive to the chosen time interval since there is a region (between 1000 and 3000 nm) where both our 5 min and 20 min data overlap and agree. This provides assurance that the observed decay in flagellar growth rate is not an artifact caused by different measuring intervals and culturing time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the overlap of data collected at different time intervals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "417c5087-6409-4977-b3f0-6aa8f46971cf",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C35",
+      "claim": "The sharp decay in flagellar growth rate as the flagellar length increases is reproduced in free-moving flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that although the data points are not many, the sharp decay in flagellar growth rate as the flagellar length increases has been reproduced, confirming our observation of tethered cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "7936a5fe-06ee-4f6c-ab4c-692d4aeb5e7d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C36",
+      "claim": "The observed length-dependent flagellar growth is not an artifact caused by attaching flagella to the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "To further prove the observed length dependence of flagellar growth rate is not an artifact caused by attaching flagella to the surface, we conducted a similar measurement of V. alginolyticus flagellar growth rate when the flagella are free to move in space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from free-moving flagella shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "59b30e09-982e-4e26-a8bc-097c5fa22ebb",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C37",
+      "claim": "In V. alginolyticus, the flagellar length increases linearly with time when its length is short.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous reports of a constant growth rate in E. coli or a monotonically decreasing rate in S. typhimurium (Iino, 1974; Aizawa and Kubori, 1998; Turner et al., 2012), we found that in V. alginolyticus the flagellar length increases linearly with time when its length is short (Figure 3b), which indicates a constant growth rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "44cf2980-bcea-4d78-ac25-6d8887386e82",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C38",
+      "claim": "When the flagellum grows longer than 1500 nm, the relationship between flagellar length and time deviates from linearity.",
+      "claim_type": "EXPLICIT",
+      "source": "When the flagellum grows longer than 1500 nm, the relationship between flagellar length and time deviates from linearity (Figure 3b, the red line), showing a decrease in growth rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "85eb3486-dc08-425a-af48-5f8b4206a14c",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C39",
+      "claim": "This is the first comprehensive report of in vivo real-time recording of V. alginolyticus single flagellar growth.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first comprehensive report of in vivo real-time recording of V. alginolyticus single flagellar growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "fabd25e2-b23b-4baa-9af4-903e68dffa56",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C40",
+      "claim": "This is the first in vivo real-time recording of single filament growth, covering the full range of filament lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first in vivo real-time recording of single filament growth, covering the full range of filament lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work based on knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "e10cb689-8d9d-4715-b6b2-94bbd3ec969f",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C41",
+      "claim": "The maximum growth rate is estimated as 50 nm/min, which corresponds to transporting 1.7 flagellins per second.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our experimental data (Figure 2c), when flagella are short, we observed a plateau in growth rate, which is also the maximum possible growth rate of the system. By extrapolation, this maximum growth rate is estimated as 50 nm/min that corresponds to transporting 1.7 flagellins per second.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "bf572f96-47fb-49a2-b79f-5977f8ff2667",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C42",
+      "claim": "The loading speed Sload was experimentally determined as 1.7 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum growth rate also reveals the number of working cycles of the T3FSS. Therefore, Sload was experimentally determined as 1.7 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the maximum growth rate measurement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "528c8386-e251-4d42-9b05-e677416b4026",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C43",
+      "claim": "The best fit of the model to experimental data was found at LS = 12, D = 5000 nm2/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The best fit was found at LS = 12, D = 5000 nm2/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined by parameter space search and cost function minimization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9397bb7f-e8ca-4ff6-ae29-98197eca4d06",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C44",
+      "claim": "In the short flagella regime, the constant flagellar growth rate is supported by the secretion force of the T3FSS and fast diffusion of flagellins across short distances.",
+      "claim_type": "EXPLICIT",
+      "source": "In the short flagella regime, the constant flagellar growth rate is supported by the secretion force of the T3FSS and fast diffusion of flagellins across short distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical model fitting to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "57c796f3-6e5d-4b6a-8da5-55dbffefe0d6",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C45",
+      "claim": "At flagella lengths larger than 1500 nm, the rate-limiting effect of flagellins diffusing across a large distance became increasingly prominent, causing many flagellins to jam in the channel and the growth rate dropped rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "At flagella lengths larger than 1500 nm, the rate-limiting effect of flagellins diffusing across a large distance became increasingly prominent, causing many flagellins to jam in the channel (hence the high channel occupancy) and the growth rate dropped rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the mathematical model fitting to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "24973ec9-7d64-4479-b563-88b7f69aea31",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C46",
+      "claim": "The sheath forms very compact and organized structure, always wrapping the inner flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "From the TEM images, we see that sheath forms very compact and organized structure, always wrapping the inner flagellum.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly observed from TEM images shown in Figure 1c and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "ffa91504-e4d7-4f66-bb72-40cc8b0d1351",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C47",
+      "claim": "The exact mechanism driving sheath growth remains a mystery.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have experimental evidence to prove the synchronized growth between sheath and flagella, the exact mechanism driving sheath growth remains a mystery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limits of current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "66177f1b-b8a4-4e5b-9597-70c77adc4aaa",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C48",
+      "claim": "A single-file diffusion model without invoking an injection pushing mechanism cannot explain the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the single-file diffusion model without invoking an injection pushing mechanism is a special case of our model when LS = 0. As demonstrated in Figure 4b, to produce a constant flagellar growth rate, the diffusion constant D must be very large to make the loading speed the rate-limiting step. In comparison to our length-dependent flagellar growth data with both a plateau regime and a fast-decay regime, varying D alone is not sufficient to fit the whole curve, as shown in Figure 4d. Therefore, a single-file diffusion model without invoking a push mechanism cannot explain our data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from model simulations and comparison to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "900e8339-e1d0-4fc2-83a5-5ae04a85f053",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C49",
+      "claim": "The chain mechanism seems difficult to explain the sharp decay in growth rate of V. alginolyticus when its flagellum grows longer.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this model offers a simple physical mechanism for the constant growth rate, it seems difficult to explain the sharp decay in growth rate of V. alginolyticus when its flagellum grows longer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the chain model predictions to experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "41f0e657-4eb8-446c-bb87-c177bc718398",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C50",
+      "claim": "The chain model predicts that flagellar growth is not continuous and that pauses in flagellar growth will be observed at different flagellar lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "One direct prediction from this mechanism is that flagellar growth is not continuous and that pauses in flagellar growth will be observed at different flagellar lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the chain model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "629cbd52-551e-4350-80de-b7e7dfbd3555",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C51",
+      "claim": "Neither a constant growth rate nor pauses in flagellar growth were observed in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experiments, we observed neither a constant growth rate nor pauses in flagellar growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "559d7318-b528-461d-baad-9fbb25dcdfb3",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C52",
+      "claim": "The experimental data is not explained by the chain model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data is not explained by the chain model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mismatch between chain model predictions and experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "1f2d488b-2dae-4a5a-af66-0316953a92a6",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C53",
+      "claim": "The loading speed of 1.7 flagellin per second was estimated in V. alginolyticus T3FSS.",
+      "claim_type": "EXPLICIT",
+      "source": "From the plateau in growth rate when the flagellum is short, we deduce the loading speed of 1.7 flagellin per second of the V. alginolyticus T3FSS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "73f93dc0-66cf-4730-97e6-16c8e33ebab7",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C54",
+      "claim": "The loading of 0.5 flagellin per second was estimated in E. coli by Turner et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the results from Turner et al. (Turner et al., 2012; Stern and Berg, 2013), in which the loading of 0.5 flagellin per second was estimated in E. coli, our result is more than three times faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to previous research findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "ba1ffb1b-6ee6-4326-8f24-b858b4770999",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C55",
+      "claim": "The loading speed in V. alginolyticus is more than three times faster than in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the results from Turner et al. (Turner et al., 2012; Stern and Berg, 2013), in which the loading of 0.5 flagellin per second was estimated in E. coli, our result is more than three times faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated by comparing the current results to previous findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "b14d6a7d-f22f-4e1b-bb4f-4d52cc059549",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C56",
+      "claim": "The difference in loading speed is possibly due to the difference between bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference is possibly due to the difference between bacterial species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the cause of observed differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "e4273ae6-a494-4835-b7a3-b2cd889cbcb3",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C57",
+      "claim": "The V. alginolyticus strain used in this study is VIO5, a lateral flagella deletion strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The V. alginolyticus strain used in this study is VIO5, a lateral flagella deletion strain (gift from Dr. Michio Homma, Nagoya University, Japan (Furuno et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "d8acc32f-408f-4436-a0d2-dce08ad2ff7f",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C58",
+      "claim": "The sheathed flagellum has an over-all diameter of about 300 \u00c5 and the inner flagellum is only ~120 \u00c5 in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous study (Glauert et al., 1963), the sheathed flagellum has an over-all diameter of about 300 \u00c5 and the inner flagellum is only ~120 \u00c5 in diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by TEM data and citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "7b5feb9d-5a9e-4d76-afce-6c9cefcf159a",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C59",
+      "claim": "Labeling flagellar sheath by NanoOrange is a robust method to quickly visualize the flagellar growth in V. alginolyticus.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, labeling flagellar sheath by NanoOrange is a robust method to quickly visualize the flagellar growth in V. alginolyticus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental validation shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "220a3daa-8a28-4749-a2d9-59d270b60dc1",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C60",
+      "claim": "Cells grown in the medium with NanoOrange exhibited identical growth curve to cells in the normal medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that cells grown in the medium with NanoOrange exhibited identical growth curve to cells in the normal medium, indicating that labeling by NanoOrange does not affect cell growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from experimental data shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "019124a0-f7c6-40ff-b4f8-6fdc3b838639",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C61",
+      "claim": "NanoOrange labeling does not affect cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The result showed that cells grown in the medium with NanoOrange exhibited identical growth curve to cells in the normal medium, indicating that labeling by NanoOrange does not affect cell growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identical growth curves shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "f487d1d3-c163-4c90-ab0d-048a35b5b1d4",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C62",
+      "claim": "The distributions of flagellar lengths in two culture groups at different incubation times were roughly identical.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of flagellar lengths in two culture groups at different incubation times were roughly identical, demonstrating that NanoOrange labeling does not affect flagellar growth, either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from experimental data shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "248ed849-6fc0-4e9e-b0d2-2a27e5c585a2",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C63",
+      "claim": "NanoOrange labeling does not affect flagellar growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The distributions of flagellar lengths in two culture groups at different incubation times were roughly identical, demonstrating that NanoOrange labeling does not affect flagellar growth, either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the identical distributions shown in Figure 1\u2014figure supplement 3c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "bd865495-0a62-4bef-80a8-5aacda1173da",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C64",
+      "claim": "The V. alginolyticus flagellin protein FlaE consists of 379 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The V. alginolyticus flagellin protein FlaE (Uniprot ID D0X0U4) consists of 379 amino acids, which is shorter than the Salmonella enterica flagellin protein FliC of 494 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information from a protein database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "31431423-0fdb-4440-b3bc-fd95e0dc87d8",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C65",
+      "claim": "The Salmonella enterica flagellin protein FliC consists of 494 amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "The V. alginolyticus flagellin protein FlaE (Uniprot ID D0X0U4) consists of 379 amino acids, which is shorter than the Salmonella enterica flagellin protein FliC of 494 amino acids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information from a protein database.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "a302ecaa-c54f-4502-a5a7-35fdd2108cff",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C66",
+      "claim": "One turn of 11 flagellins elongates the flagellum by 52 \u00c5 in Salmonella enterica.",
+      "claim_type": "EXPLICIT",
+      "source": "As one turn of 11 flagellins elongates the flagellum by 52 \u00c5 in Salmonella enterica (Yonekura et al., 2003), the growth increment of each folded FliC can be estimated as 52 \u00c5/11 = 0.47 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "6ea191d8-9e14-46bd-beac-41ef9dc18f81",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C67",
+      "claim": "The growth increment of each folded FlaE can be estimated as 0.47 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, \u0394L of our model (Figure 4), the growth increment of each folded FlaE can be estimated as 0.47 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on structural similarity to FliC.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "8a522b6f-157b-4edd-9f04-6237f1ba07aa",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C68",
+      "claim": "The length of the partially unfolded FliC is 74 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the length of the partially unfolded FliC is 74 nm (Yonekura et al., 2003; Turner et al., 2012) conserved alpha helix, the length of the unfolded FlaE can be estimated as 74\u00d7379\u00f7494 = 56 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "14c60673-43cb-47e2-9e95-dc9ced2c5131",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C69",
+      "claim": "The length of the unfolded FlaE can be estimated as 56 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the length of the partially unfolded FliC is 74 nm (Yonekura et al., 2003; Turner et al., 2012) conserved alpha helix, the length of the unfolded FlaE can be estimated as 74\u00d7379\u00f7494 = 56 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated based on the ratio of amino acid lengths.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "76b996c3-fa49-4a74-a4c9-e32a1230cc72",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C70",
+      "claim": "The FliI ATPase at the core of the T3FSS shares similar molecular structure with the F1 ATPase.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research suggests that the FliI ATPase at the core of the T3FSS shares similar molecular structure with the F1 ATPase (Ibuki et al., 2011) that can rotate the central shaft for one revolution by hydrolyzing 3 ATP molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "d59ed919-9e86-4951-9fd3-2f6ec66f02a1",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C71",
+      "claim": "The F1 ATPase can rotate the central shaft for one revolution by hydrolyzing 3 ATP molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research suggests that the FliI ATPase at the core of the T3FSS shares similar molecular structure with the F1 ATPase (Ibuki et al., 2011) that can rotate the central shaft for one revolution by hydrolyzing 3 ATP molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "57386cc0-5150-445e-aa49-99da202fc0b3",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C72",
+      "claim": "The hypothesized secretion force applied by the apparatus is reasonable and consistent with current knowledge about the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the details of force generation and energy transduction in the T3FSS remain unresolved, from our estimation we see that the hypothesized secretion force applied by the apparatus is reasonable and consistent with our current knowledge about the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from energy calculations and comparison to known ATP hydrolysis energetics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "59aa0d9d-3fba-4ccd-903f-292541d3082d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C73",
+      "claim": "A simple one-dimensional diffusion with a pushing base and an absorbing tip can support flagellar growth and explain its length-dependent features.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that a simple one-dimensional diffusion with a pushing base and an absorbing tip can support flagellar growth and explain its length-dependent features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the mathematical model fitting to experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9ecd27f2-9a2f-4eac-9b02-a259348943da",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C74",
+      "claim": "The previously reported constant growth rate in E. coli and exponential decay rate in S. typhimurium may correspond to different regimes of a universal length-dependent growth curve.",
+      "claim_type": "EXPLICIT",
+      "source": "The previously reported constant growth rate in E. coli and exponential decay rate in S. typhimurium may be unique to that bacterial species, or may correspond to different regimes of a universal length-dependent growth curve, similar to the one we reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how to reconcile different previous findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "9d41d958-d044-400a-9c72-697d2714af20",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C75",
+      "claim": "Flagella stained with NanoOrange were morphologically identical to that in the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "For the NanoOrange group, flagella stained with NanoOrange were morphologically identical to that in the control group, indicating that NanoOrange labeling does not affect flagellar growth nor sheath growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from TEM images shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "dfe4e865-d2ae-4e05-874b-f91dd91d020d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C76",
+      "claim": "Only after formalin fixation do flagella lose their sheath.",
+      "claim_type": "EXPLICIT",
+      "source": "For the fixation group, we saw the sheath detached from the inner flagellum due to fixation, as previously reported (Glauert et al., 1963). Only after formalin fixation do flagella lose their sheath, which helps us to recognize the two-layered structure of sheath and the core flagellar filament.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly observed from TEM images and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "bbb28b39-c26e-4c50-9d24-dc47a0b5a548",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C77",
+      "claim": "The flagella of Vibrio alginolyticus are wrapped by sheath and the growth of flagella and sheath are tightly synchronized.",
+      "claim_type": "EXPLICIT",
+      "source": "By these experiments, we confirmed the flagella of Vibrio alginolyticus are wrapped by sheath and the growth of flagella and sheath are tightly synchronized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from TEM experiments shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "c2b06d1a-a5fd-428b-9752-b36e8bcfccb1",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C78",
+      "claim": "The V. alginolyticus polar flagellum has a helix radius of 0.16 \u03bcm and pitch of 1.5 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescent images of flagella are the 2D projections of the 3D helical filaments with 0.16 \u03bcm helix radius and 1.5 \u03bcm pitch (Furuno et al., 1997), Figure 2b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "d6abaa93-086c-4331-b27b-2c4166c93d63",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C79",
+      "claim": "The linear fit used for 3D correction is L3D = 1.09 L2D.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear fit that we used as our correction is L3D = 1.09 L2D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the helical geometry as shown in Figure 2\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "ff4144c6-4314-4185-b246-811687d8dfd9",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "claim_id": "C80",
+      "claim": "The physical distance corresponding to one pixel is 65 nm in the imaging system.",
+      "claim_type": "EXPLICIT",
+      "source": "With our imaging system, the physical distance corresponding to one pixel is 65 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the imaging system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "80e8fefb-0f28-46e5-9ac1-cef542928a67",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "V. alginolyticus flagella exhibit biphasic length-dependent growth: constant at ~50 nm/min for lengths <1500 nm, then sharply decaying to ~9 nm/min at 7500 nm. This represents the first comprehensive real-time measurement of single flagellar growth across the full length range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C30, C33, C37, C38, and C41 collectively demonstrate biphasic growth kinetics through direct experimental measurements shown in Figures 2c and 3b. The data show clear plateau and decay regimes with quantitative growth rates derived from time-lapse fluorescence imaging. The measurements are internally consistent across different time intervals (5 min and 20 min) as shown by overlapping data in the 1000-3000 nm range (C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "8e7af34f-ce87-4f4b-9e19-916b98e33f9a",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The observed length-dependent flagellar growth is not an experimental artifact. The biphasic growth pattern is reproducible across different measurement intervals and is confirmed in free-moving (non-tethered) flagella.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 provide critical controls demonstrating that the observed growth kinetics are genuine biological phenomena. The overlap of 5-min and 20-min interval data (C34) and reproduction in free-moving flagella (C35, C36) rule out artifacts from measurement timing or surface attachment. However, the free-moving flagella dataset is acknowledged to be limited in sample size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "An injection-diffusion model with loading strength LS=12 and diffusion coefficient D=5000 nm\u00b2/s explains the biphasic growth kinetics. Short flagella growth is limited by T3FSS loading speed, while long flagella growth is limited by diffusion, causing flagellin jamming in the channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C43-C45, and C73 present a mathematical model that successfully fits experimental data through parameter optimization (Figure 4d-e). The model provides mechanistic explanations for both growth regimes and predicts channel occupancy changes. The best-fit parameters were determined by systematic parameter space search minimizing a cost function, providing quantitative support for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Alternative models (single-file diffusion without injection force and chain mechanism) are inconsistent with the experimental observations and cannot explain the biphasic growth pattern or absence of growth pauses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 systematically evaluate and reject alternative models through comparison with experimental data. The single-file diffusion model (LS=0) cannot produce both plateau and decay regimes (C48, Figure 4b,d). The chain model predicts growth pauses that were not observed experimentally (C50-C52). This strengthens support for the injection-diffusion model by eliminating competing explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "fefa0c6e-2576-458a-9baa-2aacad7750ba",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The T3FSS loading speed in V. alginolyticus is 1.7 flagellins/second, more than three times faster than the 0.5 flagellins/second reported for E. coli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C53-C55 derive the loading speed from the plateau growth rate in short flagella (Figure 2c). The calculation is straightforward: 50 nm/min \u00f7 0.47 nm/flagellin = 1.7 Hz. The comparison to E. coli is properly cited (Turner et al.). However, C56 acknowledges this difference may be species-specific, which is speculative but reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "V. alginolyticus is an ideal system for studying flagellar growth due to its single polar sheathed flagellum that can be rapidly labeled with NanoOrange for real-time fluorescence imaging without affecting growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 and C59 establish the experimental advantages of the V. alginolyticus system. The single polar flagellum (C21), sheath structure (C22-C24), and NanoOrange labeling properties (C25-C27) are supported by citations and experimental validation. TEM data (Figure 1c, Figure 1\u2014figure supplement 1) confirms synchronized sheath-flagellum growth (C24). Control experiments (Figure 1\u2014figure supplement 3) demonstrate NanoOrange does not affect growth (C27, C60-C63).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NanoOrange labeling does not affect bacterial cell growth or flagellar growth, and the sheath growth is tightly synchronized with flagellar growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C63, C75, and C77 provide essential validation controls. Identical growth curves (C60-C61, Figure 1\u2014figure supplement 3a) and flagellar length distributions (C62-C63, Figure 1\u2014figure supplement 3c) between labeled and unlabeled cells demonstrate the labeling method is non-perturbative. TEM data (C75, C77, Figure 1\u2014figure supplement 1) confirms synchronized growth and validates the approach of using sheath labeling as a proxy for flagellar growth.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "bd11ffbe-e20b-43e6-bc3b-ffb1212598b9",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "This work represents the first comprehensive in vivo real-time recording of single bacterial flagellar growth covering the full range of filament lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 assert novelty based on the authors' knowledge of the field (C20). Previous studies used population measurements at discrete time points (C17-C20), while this work achieves continuous single-cell tracking. The claim is supported by the demonstrated methodology and comprehensive length coverage (400-7500 nm), though the authors acknowledge photobleaching limits tracking beyond 4000 nm in single cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The V. alginolyticus flagellin FlaE parameters were estimated by comparison to S. enterica FliC: folded length increment of 0.47 nm and unfolded length of 56 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 derive model parameters through sequence-based scaling from well-characterized S. enterica FliC. The calculations are mathematically sound: FlaE (379 aa) vs FliC (494 aa) gives scaling factor 379/494, applied to known FliC dimensions (C66, C68). The assumption of linear scaling with amino acid number (for unfolded length) and structural similarity (for folded increment) is reasonable but represents an approximation that could introduce uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "79f74c06-33f5-4c3d-8a64-d5e491417c5d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The hypothesized injection force from the T3FSS is energetically reasonable, requiring 0.62-3.77 ATP per flagellin insertion depending on insertion speed, consistent with the FliI ATPase structure similar to F1 ATPase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 provide energetic validation of the model's injection force parameter. The calculation uses Einstein-Smoluchowski relation and best-fit parameters (LS=12, D=5000 nm\u00b2/s) to estimate ATP requirements. The range of 0.62-3.77 ATP is reasonable given F1 ATPase hydrolyzes 3 ATP per revolution (C71). However, C72 acknowledges that force generation details remain unresolved, indicating this is supportive rather than definitive evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "b5b88eb9-05e7-4504-977e-974b936c2282",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The previously reported constant growth rate in E. coli and exponential decay in S. typhimurium may represent different regimes of a universal length-dependent growth curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C74 is explicitly speculative, proposing that different bacterial species may exhibit different portions of a universal biphasic curve. While this is an interesting hypothesis that could reconcile conflicting literature (C17-C19), no experimental data is provided to test this proposal. The claim acknowledges uncertainty with 'may be' language and is labeled as speculation in the evidence type.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "d6093e5a-77cc-4785-a14b-4c5e2c07361d",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The sheath forms a compact organized structure tightly wrapping the flagellum (300 \u00c5 outer diameter, ~120 \u00c5 inner flagellum), but the mechanism driving sheath growth remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C58, and C76 are supported by TEM observations (Figure 1c, Figure 1\u2014figure supplement 1) showing sheath structure and dimensions consistent with previous literature (C58 cites Glauert et al., 1963). Claim C47 explicitly acknowledges the limitation that sheath growth mechanism is unresolved, which is an honest assessment of knowledge gaps. The structural observations are solid, but mechanistic understanding is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "74c0d856-e83f-4d72-a185-41b838aabed2",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The 3D helical flagellar length was corrected from 2D projections using the known helix geometry (0.16 \u03bcm radius, 1.5 \u03bcm pitch), yielding the correction factor L3D = 1.09 L2D.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 describe the geometric correction applied to convert 2D fluorescence images to 3D flagellar lengths. The helix parameters (C78) are cited from previous work (Furuno et al., 1997). The correction factor (C79) is calculated from the helical geometry as shown in Figure 2\u2014figure supplement 1c. The imaging resolution (C80) is a system specification. This correction is mathematically appropriate and necessary for accurate length measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "175e0292-bd5f-4448-b52d-34167ecaa150",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background on bacterial flagellar structure and assembly: flagella are extracellular filaments that drive swimming, assembled from flagellin monomers transported through a central channel by the T3FSS using ATP and PMF energy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C16 provide established background knowledge about bacterial flagella, all supported by appropriate citations to previous literature. These claims set the context for the study but do not represent novel findings. The information is accurately presented and properly attributed, serving as the foundation for understanding the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "185374b3-22cf-43f9-8560-8308b6ce61dc",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Previous studies reported conflicting results: exponential decay in S. typhimurium (Iino 1974, Aizawa & Kubori 1998) versus constant growth rate in E. coli (Turner et al. 2000, 2012), with most studies using population measurements at discrete time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 accurately summarize the conflicting literature on flagellar growth kinetics. The citations are appropriate and the characterization of previous methodological limitations (C20) is fair. This establishes the motivation for the current study's real-time single-cell approach. The claims are properly attributed to cited sources and represent accurate assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    },
+    {
+      "id": "2497a3b3-cdd2-46cc-9f91-bd62c55229eb",
+      "content_id": "6a6db824-aed8-4f71-bf1e-9c0021e68f8d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Experimental details: V. alginolyticus strain VIO5 was used; average flagellar length increases with culture time; short flagella (<400 nm) cannot attach to surfaces; flagella <1500 nm grow 185-300 nm in 5 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C31, C32, and C57 provide methodological details and observations. The strain information (C57) is properly documented. The population-level length increase (C29) is shown in Figure 1\u2014figure supplement 2. The attachment limitation (C32) and growth increment (C31) are direct experimental observations that inform the measurement strategy. These are straightforward descriptive claims supported by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:33:05.343978Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7e39c4d-4271-4435-bba0-5459f119bda6",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "b43d6623-44b8-4866-a6b6-7bbd364209f7",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "ac8fc810-0cf8-4ec1-8782-335f4a6ac32a",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "1fefe885-9565-4809-bb31-60903d26d714",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "59b30e09-982e-4e26-a8bc-097c5fa22ebb",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "44cf2980-bcea-4d78-ac25-6d8887386e82",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "e10cb689-8d9d-4715-b6b2-94bbd3ec969f",
+      "result_id": "80e8fefb-0f28-46e5-9ac1-cef542928a67"
+    },
+    {
+      "claim_id": "dfc215ee-f26a-414b-ad27-ff20f54aef37",
+      "result_id": "8e7af34f-ce87-4f4b-9e19-916b98e33f9a"
+    },
+    {
+      "claim_id": "417c5087-6409-4977-b3f0-6aa8f46971cf",
+      "result_id": "8e7af34f-ce87-4f4b-9e19-916b98e33f9a"
+    },
+    {
+      "claim_id": "7936a5fe-06ee-4f6c-ab4c-692d4aeb5e7d",
+      "result_id": "8e7af34f-ce87-4f4b-9e19-916b98e33f9a"
+    },
+    {
+      "claim_id": "62bdada1-7a8c-4b2d-8242-1299ebbe34eb",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "df7c66c7-69ce-4e60-8073-2c5899e679d1",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "528c8386-e251-4d42-9b05-e677416b4026",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "9397bb7f-e8ca-4ff6-ae29-98197eca4d06",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "57c796f3-6e5d-4b6a-8da5-55dbffefe0d6",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "59aa0d9d-3fba-4ccd-903f-292541d3082d",
+      "result_id": "edaa232a-f3b3-40fb-a4c2-bbe5dc513a99"
+    },
+    {
+      "claim_id": "66177f1b-b8a4-4e5b-9597-70c77adc4aaa",
+      "result_id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587"
+    },
+    {
+      "claim_id": "900e8339-e1d0-4fc2-83a5-5ae04a85f053",
+      "result_id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587"
+    },
+    {
+      "claim_id": "41f0e657-4eb8-446c-bb87-c177bc718398",
+      "result_id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587"
+    },
+    {
+      "claim_id": "629cbd52-551e-4350-80de-b7e7dfbd3555",
+      "result_id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587"
+    },
+    {
+      "claim_id": "559d7318-b528-461d-baad-9fbb25dcdfb3",
+      "result_id": "d65eaf4a-9866-4b78-a0b4-12e413f4c587"
+    },
+    {
+      "claim_id": "bf572f96-47fb-49a2-b79f-5977f8ff2667",
+      "result_id": "fefa0c6e-2576-458a-9baa-2aacad7750ba"
+    },
+    {
+      "claim_id": "1f2d488b-2dae-4a5a-af66-0316953a92a6",
+      "result_id": "fefa0c6e-2576-458a-9baa-2aacad7750ba"
+    },
+    {
+      "claim_id": "73f93dc0-66cf-4730-97e6-16c8e33ebab7",
+      "result_id": "fefa0c6e-2576-458a-9baa-2aacad7750ba"
+    },
+    {
+      "claim_id": "ba1ffb1b-6ee6-4326-8f24-b858b4770999",
+      "result_id": "fefa0c6e-2576-458a-9baa-2aacad7750ba"
+    },
+    {
+      "claim_id": "93db2520-0b9e-4f33-9d87-f09c6f1e9e24",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "16e1936f-809c-4545-9c29-83aa7850a7c5",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "669592fe-6f22-44aa-954b-c940b0e296ff",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "24a1180a-c49b-476f-b63f-8242ad77f6e4",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "9659d5c9-3e04-4caa-b9da-bfd837727867",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "15aed372-00f8-4d24-9106-b4e87108217d",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "924c0606-c757-4d89-afb5-9eddd0af21cd",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "ddc83e1b-1267-464c-bbd0-86c563997c51",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "7b5feb9d-5a9e-4d76-afce-6c9cefcf159a",
+      "result_id": "bae2979c-8df1-4940-8a4d-fe4e87d8a598"
+    },
+    {
+      "claim_id": "220a3daa-8a28-4749-a2d9-59d270b60dc1",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "019124a0-f7c6-40ff-b4f8-6fdc3b838639",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "f487d1d3-c163-4c90-ab0d-048a35b5b1d4",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "248ed849-6fc0-4e9e-b0d2-2a27e5c585a2",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "9d41d958-d044-400a-9c72-697d2714af20",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "bbb28b39-c26e-4c50-9d24-dc47a0b5a548",
+      "result_id": "92d353a3-a152-41a5-bb0e-e1b2709c65ea"
+    },
+    {
+      "claim_id": "85eb3486-dc08-425a-af48-5f8b4206a14c",
+      "result_id": "bd11ffbe-e20b-43e6-bc3b-ffb1212598b9"
+    },
+    {
+      "claim_id": "fabd25e2-b23b-4baa-9af4-903e68dffa56",
+      "result_id": "bd11ffbe-e20b-43e6-bc3b-ffb1212598b9"
+    },
+    {
+      "claim_id": "bd865495-0a62-4bef-80a8-5aacda1173da",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "31431423-0fdb-4440-b3bc-fd95e0dc87d8",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "a302ecaa-c54f-4502-a5a7-35fdd2108cff",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "6ea191d8-9e14-46bd-beac-41ef9dc18f81",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "8a522b6f-157b-4edd-9f04-6237f1ba07aa",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "14c60673-43cb-47e2-9e95-dc9ced2c5131",
+      "result_id": "68e073b5-ff90-4b86-a7a3-ca5323f9f1e9"
+    },
+    {
+      "claim_id": "76b996c3-fa49-4a74-a4c9-e32a1230cc72",
+      "result_id": "79f74c06-33f5-4c3d-8a64-d5e491417c5d"
+    },
+    {
+      "claim_id": "d59ed919-9e86-4951-9fd3-2f6ec66f02a1",
+      "result_id": "79f74c06-33f5-4c3d-8a64-d5e491417c5d"
+    },
+    {
+      "claim_id": "57386cc0-5150-445e-aa49-99da202fc0b3",
+      "result_id": "79f74c06-33f5-4c3d-8a64-d5e491417c5d"
+    },
+    {
+      "claim_id": "9ecd27f2-9a2f-4eac-9b02-a259348943da",
+      "result_id": "b5b88eb9-05e7-4504-977e-974b936c2282"
+    },
+    {
+      "claim_id": "24973ec9-7d64-4479-b563-88b7f69aea31",
+      "result_id": "d6093e5a-77cc-4785-a14b-4c5e2c07361d"
+    },
+    {
+      "claim_id": "ffa91504-e4d7-4f66-bb72-40cc8b0d1351",
+      "result_id": "d6093e5a-77cc-4785-a14b-4c5e2c07361d"
+    },
+    {
+      "claim_id": "d8acc32f-408f-4436-a0d2-dce08ad2ff7f",
+      "result_id": "d6093e5a-77cc-4785-a14b-4c5e2c07361d"
+    },
+    {
+      "claim_id": "dfe4e865-d2ae-4e05-874b-f91dd91d020d",
+      "result_id": "d6093e5a-77cc-4785-a14b-4c5e2c07361d"
+    },
+    {
+      "claim_id": "c2b06d1a-a5fd-428b-9752-b36e8bcfccb1",
+      "result_id": "74c0d856-e83f-4d72-a185-41b838aabed2"
+    },
+    {
+      "claim_id": "d6abaa93-086c-4331-b27b-2c4166c93d63",
+      "result_id": "74c0d856-e83f-4d72-a185-41b838aabed2"
+    },
+    {
+      "claim_id": "ff4144c6-4314-4185-b246-811687d8dfd9",
+      "result_id": "74c0d856-e83f-4d72-a185-41b838aabed2"
+    },
+    {
+      "claim_id": "16ef928e-d6e8-4755-afa3-c5dfe8723ed7",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "8db81595-6536-42ef-85de-d3384d15fecc",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "b17d00fd-20a0-468f-95ef-edd77d92176a",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "08bb7586-cd71-433f-9e25-b1d021845ef5",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "9bd52ebc-5e0f-448f-9f71-ff4d9c4fd35e",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "1ee635b2-d696-4267-8cfc-f6aaf066a28e",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "7a019282-47ee-4a8e-8c21-774929489984",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "b91dae17-e552-478a-ad75-d736f0a5227f",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "0c4d7b9a-2c17-46c6-9fb4-813b94dc6f46",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "33911375-9234-4c36-826d-91c622705ddd",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "a7429b41-d82f-4794-a7f6-d8c17a53761e",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "a15becd2-c7ac-4b36-9463-3157e9817d86",
+      "result_id": "175e0292-bd5f-4448-b52d-34167ecaa150"
+    },
+    {
+      "claim_id": "5fb83326-89e7-4076-88c5-73f52f548e91",
+      "result_id": "185374b3-22cf-43f9-8560-8308b6ce61dc"
+    },
+    {
+      "claim_id": "9871ece4-42a8-4d36-87d0-6f08719ef4c1",
+      "result_id": "185374b3-22cf-43f9-8560-8308b6ce61dc"
+    },
+    {
+      "claim_id": "18a20f8f-f622-4911-af7d-bff042646ab2",
+      "result_id": "185374b3-22cf-43f9-8560-8308b6ce61dc"
+    },
+    {
+      "claim_id": "61849063-a521-4b70-8ca9-a5625fdb02e7",
+      "result_id": "185374b3-22cf-43f9-8560-8308b6ce61dc"
+    },
+    {
+      "claim_id": "67f47e41-d32f-4fa8-9512-16e921f2bd34",
+      "result_id": "2497a3b3-cdd2-46cc-9f91-bd62c55229eb"
+    },
+    {
+      "claim_id": "c1c7c5b7-75e9-47e2-a290-cd713df77a05",
+      "result_id": "2497a3b3-cdd2-46cc-9f91-bd62c55229eb"
+    },
+    {
+      "claim_id": "259ba126-7ff8-496a-86ff-68bce0153ad7",
+      "result_id": "2497a3b3-cdd2-46cc-9f91-bd62c55229eb"
+    },
+    {
+      "claim_id": "e4273ae6-a494-4835-b7a3-b2cd889cbcb3",
+      "result_id": "2497a3b3-cdd2-46cc-9f91-bd62c55229eb"
+    }
+  ],
+  "comparisons": []
+}

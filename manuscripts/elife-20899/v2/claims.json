@@ -1,0 +1,1365 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "Neural activity during cognitive tasks exhibits complex dynamics that flexibly encode task-relevant variables.",
+    "claim_type": "EXPLICIT",
+    "source": "Neural activity during cognitive tasks exhibits complex dynamics that flexibly encode task-relevant variables.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a general statement in the abstract that is supported by citations to prior work (Meyers et al., 2008; Barak et al., 2010; Stokes et al., 2013; Churchland et al., 2012; Raposo et al., 2014) mentioned later in the introduction.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "Chaotic recurrent networks spontaneously generate rich dynamics.",
+    "claim_type": "EXPLICIT",
+    "source": "Chaotic recurrent networks, which spontaneously generate rich dynamics, have been proposed as a model of cortical computation during cognitive tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This statement is supported by citations in the introduction to Jaeger, 2001; Maass et al., 2002; Buonomano and Maass, 2009; Sussillo and Abbott, 2009.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "Existing methods for training chaotic recurrent networks are either biologically implausible, and/or require a continuous, real-time error signal to guide learning.",
+    "claim_type": "EXPLICIT",
+    "source": "However, existing methods for training these networks are either biologically implausible, and/or require a continuous, real-time error signal to guide learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the detailed discussion in the introduction about supervised learning methods and the Exploratory-Hebbian method.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "A biologically plausible learning rule can train recurrent networks guided solely by delayed, phasic rewards at the end of each trial.",
+    "claim_type": "EXPLICIT",
+    "source": "Here we show that a biologically plausible learning rule can train such recurrent networks, guided solely by delayed, phasic rewards at the end of each trial.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the main claim of the paper, supported by experimental data shown in Figures 1, 4, 6, and 7.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "Networks endowed with this learning rule can successfully learn nontrivial tasks requiring flexible (context-dependent) associations, memory maintenance, nonlinear mixed selectivities, and coordination among multiple outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "Networks endowed with this learning rule can successfully learn nontrivial tasks requiring flexible (context-dependent) associations, memory maintenance, nonlinear mixed selectivities, and coordination among multiple outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by experimental results shown in Figures 1, 4, and 6 demonstrating successful learning of various tasks.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The resulting networks replicate complex dynamics previously observed in animal cortex, such as dynamic encoding of task features and selective integration of sensory inputs.",
+    "claim_type": "EXPLICIT",
+    "source": "The resulting networks replicate complex dynamics previously observed in animal cortex, such as dynamic encoding of task features and selective integration of sensory inputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the cross-temporal decoding analysis in Figures 2-3 and the orthogonal decoding analysis in Figure 5, compared to prior observations in Meyers et al., 2008; Stokes et al., 2013; Mante et al., 2013.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Neural representations are highly dynamic, encoding multiple aspects of tasks, stimuli, and commands in the joint fluctuating activity of interconnected populations of neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "Recent evidence suggests that neural representations are highly dynamic, encoding multiple aspects of tasks, stimuli, and commands in the joint fluctuating activity of interconnected populations of neurons, rather than in the stable activation of specific neurons (Meyers et al., 2008; Barak et al., 2010; Stokes et al., 2013; Churchland et al., 2012; Raposo et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by multiple citations to experimental studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Models based on recurrent neural networks operating in the near-chaotic regime are well-suited to capture dynamic neural representations.",
+    "claim_type": "EXPLICIT",
+    "source": "Models based on recurrent neural networks (RNN), operating in the near-chaotic regime, seem well-suited to capture similar dynamics (Jaeger, 2001; Maass et al., 2002; Buonomano and Maass, 2009; Sussillo and Abbott, 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior modeling work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Recurrent network models have been used to investigate mechanisms by which neural populations solve computational problems including working memory, motor control, and perceptual decision-making.",
+    "claim_type": "EXPLICIT",
+    "source": "For this reason, such models have been used to investigate the mechanisms by which neural populations solve various computational problems, including working memory (Barak et al., 2013; Rajan et al., 2016), motor control (Sussillo et al., 2015; Laje and Buonomano, 2013; Hennequin et al., 2014), and perceptual decision-making (Mante et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to multiple prior studies.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "The most common training methods for recurrent models are based on supervised learning using non-biological algorithms.",
+    "claim_type": "EXPLICIT",
+    "source": "The most common training methods are based on supervised learning, in which a non-biological algorithm (usually a form of backpropagation or regression) minimizes the difference between the network's output and a target output signal (Pearlmutter, 1995; Jaeger, 2001; Sussillo and Abbott, 2009; Song et al., 2016; Rajan et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work using these methods.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Supervised learning methods require a constant supervisory signal, which contrasts with most behavioral tasks where only temporally sparse, delayed rewards are available.",
+    "claim_type": "EXPLICIT",
+    "source": "Besides the non-biological nature of these algorithms, the requirement for a constant supervisory signal is in stark contrast with most behavioral tasks, in which the only source of information about performance are temporally sparse rewards that are usually delayed with regard to the actions that caused them.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a logical inference based on the comparison between supervised learning requirements and typical behavioral task structure.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "Reward-modulated Hebbian learning has been successfully demonstrated in feedforward or weakly connected spiking and firing-rate networks.",
+    "claim_type": "EXPLICIT",
+    "source": "This method, inspired by the effect of dopamine on synaptic plasticity, has been successfully demonstrated and analyzed in feedforward or weakly connected spiking (Izhikevich, 2007; Florian, 2007; Fr\u00e9maux et al., 2010) and firing-rate (Soltoggio and Steil, 2013) networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to prior work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Simple reward-modulated Hebbian learning does not work for strongly-connected recurrent networks that can generate complex trajectories.",
+    "claim_type": "EXPLICIT",
+    "source": "However, simple reward-modulated Hebbian learning does not work for strongly-connected recurrent networks that can generate complex trajectories of the type discussed here (Fiete et al., 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Fiete et al., 2007.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "The node-perturbation method successfully trains arbitrary recurrent networks.",
+    "claim_type": "EXPLICIT",
+    "source": "A method that successfully trains arbitrary recurrent networks is the so-called node-perturbation method (Fiete et al., 2006, 2007).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Fiete et al., 2006, 2007.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "Node-perturbation was successfully applied to chaotic recurrent neural networks in previous work by the author.",
+    "claim_type": "EXPLICIT",
+    "source": "This method was successfully applied to feedforward networks to model birdsong learning (Fiete et al., 2007) and our own previous results show that it is also successful when applied to chaotic recurrent neural networks (Miconi, 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to the author's previous work.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "The node-perturbation method is largely similar to the REINFORCE algorithm.",
+    "claim_type": "EXPLICIT",
+    "source": "Interestingly, this method is largely similar to the well-known REINFORCE algorithm, which is widely used in reinforcement learning (Williams, 1992; Mnih et al., 2014; Peters and Schaal, 2008; Kober et al., 2013) (see in particular Eq. 11 in Williams, 1992).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to REINFORCE and related work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Node-perturbation is non-Hebbian and requires information that is not local to the synapse.",
+    "claim_type": "EXPLICIT",
+    "source": "However, node perturbation is non-Hebbian (since it multiplies two types of inputs, rather than pre- and post-synaptic activities) and requires information that is not local to the synapse (namely, the perturbatory inputs, which must somehow be kept separate from the 'normal' inputs).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an analytical claim about the properties of the node-perturbation method.",
+    "evidence_type": [
+      "INFERENCE",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "It is not obvious how node-perturbation could be implemented in biological neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, it is not obvious how node-perturbation could be implemented in biological neural networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the non-local information requirements of node-perturbation.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "Legenstein and colleagues showed that node-perturbation could be made more biologically plausible by leveraging moment-to-moment fluctuations in post-synaptic activity.",
+    "claim_type": "EXPLICIT",
+    "source": "Legenstein and colleagues (Hoerzer et al., 2014; Legenstein et al., 2010) showed that, under certain conditions, node-perturbation could be made more biologically plausible by leveraging moment-to-moment fluctuations in post-synaptic activity: by keeping a running average of recent activity and subtracting it from the current instantaneous response at any time, we obtain a 'high-pass' filtered trace of post-synaptic activity, which can be used as a proxy for the exploratory perturbations of post-synaptic activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by citations to Hoerzer et al., 2014 and Legenstein et al., 2010.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "The Exploratory-Hebbian method can successfully train chaotic recurrent neural networks.",
+    "claim_type": "EXPLICIT",
+    "source": "This method can successfully train chaotic recurrent neural networks (Hoerzer et al., 2014).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by a citation to Hoerzer et al., 2014.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "The Exploratory-Hebbian method critically requires an instantaneous, real-time continuous reward signal to be provided at each point in time.",
+    "claim_type": "EXPLICIT",
+    "source": "Unfortunately, this method critically requires an instantaneous, real-time continuous reward signal to be provided at each point in time.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the subsequent analysis and discussion in the paper.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "There is currently no biologically plausible learning algorithm that can successfully train chaotic recurrent neural networks with realistic reward regimes.",
+    "claim_type": "EXPLICIT",
+    "source": "In summary, to our knowledge, there is currently no biologically plausible learning algorithm that can successfully train chaotic recurrent neural networks with realistic reward regimes.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary claim based on the review of existing methods in the introduction.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "The proposed learning rule is Hebbian and uses only synapse-local information, without requiring instantaneous reward signals.",
+    "claim_type": "EXPLICIT",
+    "source": "This method is Hebbian and uses only synapse-local information, without requiring instantaneous reward signals (see Materials and methods and Analysis).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the detailed description in Materials and methods and the Analysis section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "Networks are fully-connected continuous-time recurrent neural networks operating in the early chaotic regime.",
+    "claim_type": "EXPLICIT",
+    "source": "Our model networks are fully-connected continuous-time recurrent neural networks operating in the early chaotic regime, which allows them to autonomously generate rich dynamics while still being amenable to learning (Sompolinsky et al., 1988; Sussillo and Abbott, 2009; Jaeger, 2001; Maass et al., 2002).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the model architecture supported by citations to prior work on such networks.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "In most simulations, a canonical model is used where responses are signed and each neuron can send both excitatory and inhibitory connections.",
+    "claim_type": "EXPLICIT",
+    "source": "In most simulations, we use a canonical model in which responses are signed, and each neuron can send both excitatory and inhibitory connections (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the model used in the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "The rule can train a recurrent network with nonnegative activations and separate populations of strictly excitatory and strictly inhibitory neurons that generates ongoing chaotic activity.",
+    "claim_type": "EXPLICIT",
+    "source": "However, in the last section of Results, we build on recent work (Mastrogiuseppe and Ostojic, 2016) to test the rule on a recurrent network with nonnegative activations and separate populations of strictly excitatory and strictly inhibitory neurons, which still generates ongoing chaotic activity.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the experimental results shown in Figure 7c and the citation to Mastrogiuseppe and Ostojic, 2016.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "Networks include 200 neurons (400 for the motor control task).",
+    "claim_type": "EXPLICIT",
+    "source": "For the simulations reported here, networks include 200 neurons (400 for the motor control task).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the experimental setup.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C28",
+    "claim": "Each neuron occasionally receives a random perturbation to its current excitation to produce exploratory variation in network responses across trials.",
+    "claim_type": "EXPLICIT",
+    "source": "First, in order to produce exploratory variation in network responses across trials, each neuron i in the network occasionally receives a random perturbation \u0394i(t) to its current excitation (perturbations are applied in all simulations, both in learning and in testing/decoding).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the learning rule mechanism.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C29",
+    "claim": "The learning rule is essentially Hebbian, based on the product of inputs and output fluctuations.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, this rule is essentially Hebbian, based on the product of inputs and output fluctuations.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a characterization of the proposed learning rule.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "S is a monotonic, supralinear function, and the cubic function S(x)=x\u00b3 is used in this paper.",
+    "claim_type": "EXPLICIT",
+    "source": "Importantly, S is a monotonic, supralinear function; in this paper, we simply used the cubic function S(x)=x3, though the particular choice of function is not crucial as long as it is supralinear (see Materials and methods and Analysis).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the learning rule with justification provided in the Analysis section.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The eligibility trace for any synapse is accumulated over the course of a trial, with each new timestep adding a small increment.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that the eligibility trace for any synapse is accumulated over the course of a trial, with each new timestep adding a small increment to the synapse's eligibility trace (potential weight change).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of how the learning rule operates.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "The delayed nonmatch-to-sample task is arguably the simplest possible flexible (context-dependent) decision task.",
+    "claim_type": "EXPLICIT",
+    "source": "First, it is arguably the simplest possible flexible (that is, context-dependent) decision task: on sensing the second stimulus, the network must produce a different response depending on the identity of the first stimulus.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an analytical claim about the properties of the task.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "The delayed nonmatch-to-sample task requires the network to maintain memory of the first stimulus during the intervening delay.",
+    "claim_type": "EXPLICIT",
+    "source": "Second, because the intervening delay is much longer than the neural time constant (\u03c4 = 30 ms, see Materials and methods), the network must maintain some memory of the first stimulus before the second stimulus arises.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the task structure and network time constant.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "To solve the delayed nonmatch-to-sample task, some neurons must possess nonlinear mixed selectivity.",
+    "claim_type": "EXPLICIT",
+    "source": "Third, to solve this task, some neurons in the network must necessarily possess some form of nonlinear mixed selectivity (note that the problem is in essence a delayed exclusive-or problem), a hallmark of neural activities in prefrontal cortices (Rigotti et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an inference based on the computational requirements of the task, with reference to observed neural properties.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "Networks consistently learn to perform the delayed nonmatch-to-sample task with high accuracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The networks consistently learn to perform the task with high accuracy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This claim is supported by the learning curves shown in Figure 1b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "The median time to criterion across 20 runs is 843 trials (inter-quartile range: 692\u20131125) for the delayed nonmatch-to-sample task.",
+    "claim_type": "EXPLICIT",
+    "source": "The median time to criterion across 20 runs is 843 trials (inter-quartile range: 692\u20131125).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a quantitative result from the experiments shown in Figure 1b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "Response error reliably converges towards a very low residual value in the delayed nonmatch-to-sample task.",
+    "claim_type": "EXPLICIT",
+    "source": "Response error reliably converges towards a very low residual value.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the learning curves in Figure 1b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "Trained networks exhibit highly dynamic responses over the course of a trial.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 1c, trained networks do exhibit highly dynamic responses over the course of a trial.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the neural activity traces shown in Figure 1c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "The identity of the first stimulus can be successfully decoded during both first and second stimulus presentations, as well as during the intervening delay.",
+    "claim_type": "EXPLICIT",
+    "source": "For example, the identity of the first stimulus can be successfully decoded during both first and second stimulus presentations, as well as during the intervening delay, as shown by high classification accuracy values on the diagonal during this entire period (Figure 2, left panel).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the cross-temporal classification analysis shown in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The network reliably encodes information about 1st-stimulus identity across the first 800 ms of the trial, but the representation changes widely between successive periods.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that while the network reliably encodes information about 1st-stimulus identity across the first 800 ms of the trial, the way in which this identity is represented changes widely between successive periods within the trial.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the cross-temporal classification patterns shown in Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "The 2nd-stimulus identity is maintained from its onset until the beginning of the response period, but in a dynamical manner.",
+    "claim_type": "EXPLICIT",
+    "source": "Similarly, the 2nd-stimulus identity is maintained from its onset until the beginning of the response period, but in a dynamical manner (low off-diagonal, cross-temporal accuracy between the 400\u2013600 ms period and the 600\u2013800 ms period, in comparison to the high diagonal accuracy over the entire 400\u2013800 ms period).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the cross-temporal classification analysis in Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "The accuracy of stimulus identity decoding strongly decreases over the course of the response period.",
+    "claim_type": "EXPLICIT",
+    "source": "Another feature of these plots is that the accuracy of stimulus identity decoding strongly decreases over the course of the 'response' period (low values along the diagonal for the 800\u20131000 ms in first and second panel of Figure 2).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is observed in the cross-temporal classification matrices in Figure 2.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "The network largely stops maintaining information about specific stimulus identity during the response period and instead encodes solely the actual response.",
+    "claim_type": "EXPLICIT",
+    "source": "This suggests that the network largely stops maintaining information about the specific identity of previous stimuli, and instead encodes solely the actual response, as shown by the very strong classification accuracy in the upper-right portion of the third panel.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the decoding accuracy patterns shown in Figure 2.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "During the response period, the network moves from a stimulus-specific representation to a response-specific representation.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, during the response period, the network moves from a stimulus-specific representation to a response-specific representation: the stimulus-specific response is flexibly routed to the appropriate, context-dependent response state, as previously observed in cortical activity during a flexible association task (Stokes et al., 2013).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the MDS analysis in Figure 3 and is consistent with prior observations cited.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The selective integration task requires both selective attention and temporal integration of the attended input.",
+    "claim_type": "EXPLICIT",
+    "source": "The task is to produce output 1 if the cued input has a positive mean, and \u22121 if the cued input has negative mean; this task requires both selective attention and temporal integration of the attended input.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is an analytical description of the task requirements shown in Figure 4.",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The trained network accurately responds to the relevant signal while largely ignoring the irrelevant one in each context.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, the network accurately responds to the relevant signal, while largely ignoring the irrelevant one in each context (Compare to Figure Extended Data 2 in Mante et al., 2013).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the psychometric curves in Figure 4b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The network has learned to perform temporal integration of an ambiguous, stochastic input and to flexibly attend to different input streams depending on context.",
+    "claim_type": "EXPLICIT",
+    "source": "This indicates that the network has learned not only to perform temporal integration of an ambiguous, stochastic input, but also to flexibly 'attend' to different input streams depending on context.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the psychometric curves shown in Figure 4b.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The network encodes both the relevant and the irrelevant modality, though only the relevant one is linked to the final choice.",
+    "claim_type": "EXPLICIT",
+    "source": "As observed in cortical recordings (Mante et al., 2013), these trajectories reveal that both the relevant and the irrelevant modality are actually represented in the network: the trajectories for varying value of either modality form an ordered progression in the corresponding 'modality' dimension (y-axis), even when that modality is irrelevant (bottom-left and top-right panels in Figure 5); however, only the relevant modality correlates with representation of final choice (compare panels where trajectories are separated by value of the relevant vs. irrelevant modality), in accordance with physiological observations (Mante et al., 2013).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the orthogonal decoding analysis in Figure 5 and is consistent with prior observations.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "The network has learnt to selectively integrate the context-indicated variable while discarding the irrelevant one for each trial.",
+    "claim_type": "EXPLICIT",
+    "source": "This confirms that the network has learnt to selectively integrate the context-indicated variable while discarding the irrelevant one for each trial.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the orthogonal decoding analysis shown in Figure 5.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The arm control model implements the human upper skeleton with 4 degrees of freedom actuated by 16 muscles.",
+    "claim_type": "EXPLICIT",
+    "source": "The model implements the human upper skeleton, with 4 degrees of freedom (three at the shoulder, one at the elbow), actuated by 16 muscles attached to the shoulder, chest, and upper and lower arm bones.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is a description of the biomechanical model used in the motor control task.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "Performance in the motor control task improves almost from the start of training and reaches a low residual error after about 3000 trials.",
+    "claim_type": "EXPLICIT",
+    "source": "Performance improves almost from the start of the training process, reaching a low residual error after about 3000 trials.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the learning curve in Figure 6b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "The fully trained network correctly reaches the adequate target according to context in the motor control task.",
+    "claim_type": "EXPLICIT",
+    "source": "The fully trained network correctly reaches the adequate target according to context (Figure 6c).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the frame-by-frame illustrations in Figure 6c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "The rule can learn the delayed nonmatch-to-sample task with much longer delays (1000 ms), although reaching criterion requires more trials.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7a, the rule still learns the task reliably, although reaching criterion (95% of trials with a mean absolute error over the response period lower than 1) requires more trials (median over 20 runs: 2230 trials, inter-quartile range:1366\u20134573 trials).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the learning curve in Figure 7a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "The rule can learn the task with variable inter-stimulus intervals, but the number of trials required is much larger.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7b, the rule still manages to learn the task; however, the number of trials required to learn the task is now much larger.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the learning curve in Figure 7b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "Variable stimulus timing makes learning much more difficult, though still feasible.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, variable stimulus timing makes learning much more difficult, though still feasible.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is inferred from the learning results shown in Figure 7b.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "The rule can reliably learn the delayed nonmatch-to-sample task in a network with nonnegative responses and separate excitatory and inhibitory neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "As shown in Figure 7c, the rule can still reliably learn the task with this more realistic network.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the learning curve in Figure 7c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The proposed rule is a more biologically plausible implementation of the node-perturbation rule.",
+    "claim_type": "EXPLICIT",
+    "source": "The rule proposed here is a more biologically plausible implementation of the so-called node-perturbation rule (Fiete et al., 2006, 2007), which is itself a variant of the classical REINFORCE algorithm (Williams, 1992).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an analytical claim about the relationship between the proposed rule and prior methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "Like the Exploratory-Hebbian method, the proposed rule extracts exploratory perturbations from outputs by subtracting a running average from ongoing neural responses.",
+    "claim_type": "EXPLICIT",
+    "source": "Like the Exploratory-Hebbian (E-H) method of Legenstein, Hoerzer and Maass (Legenstein et al., 2010; Hoerzer et al., 2014), our rule extracts exploratory perturbations from outputs by subtracting a running average from ongoing neural responses.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison of the proposed rule with the E-H method.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "Unlike the E-H method, the proposed rule can learn from sparse, delayed rewards at the end of each trial without requiring a continuous, real-time reward signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Unlike the E-H method, however, it can actually learn from sparse, delayed rewards at the end of each trial, without requiring a continuous, real-time reward signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a key distinguishing feature of the proposed rule, supported by the experimental results.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "The ability to learn from sparse, delayed rewards is due to the supralinear amplification of plasticity increments.",
+    "claim_type": "EXPLICIT",
+    "source": "As we explain below, this is due to the supralinear amplification of plasticity increments.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is explained in detail in the Analysis section with supporting experiments in Figure 9.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "Simply subtracting a running average from ongoing activity does not reliably isolate external perturbations due to spurious relaxation effects.",
+    "claim_type": "EXPLICIT",
+    "source": "One reason why real-time reward signals are needed in the E-H rule is that simply subtracting a running average from ongoing activity does not reliably isolate external perturbations, due to spurious relaxation effects.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is explained with the example in Figure 8 and supported by the gradient comparison experiments in Figure 9.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "When a perturbation is applied, the running average initially extracts the perturbation, but then introduces opposite-sign terms as the running average relaxes to the signal.",
+    "claim_type": "EXPLICIT",
+    "source": "When the perturbation is applied, initially the output is larger than the running average, and thus the difference reflects the perturbation ('Perturbation effect' gray area). However, the running average then increases to include the recent perturbed outputs, and now the difference between decaying ongoing activity and running average switches to negative ('Relaxation effect' gray area).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the example trace in Figure 8.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "If a supralinear function is imposed on plasticity increments, the large perturbation-related terms will be amplified while the small relaxation-related terms will be suppressed.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, if we impose a supralinear function on plasticity increments, the large perturbation-related terms will be amplified, while the small relaxation-related terms will be suppressed.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the key insight underlying the proposed rule, supported by the gradient comparison experiments in Figure 9.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "The supralinear amplification is conceptually related to recently-proposed thresholded Hebbian rules.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that this is conceptually related to recently-proposed thresholded Hebbian rules, whereby plasticity is only triggered by events in which the Hebbian product reaches a certain threshold (Soltoggio and Steil, 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with related work.",
+    "evidence_type": [
+      "INFERENCE",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "The weight modifications produced by node-perturbation align remarkably with the rule described in this paper.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel a: the weight modifications produced by node-perturbation align remarkably with the rule described in this paper.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the gradient comparison in Figure 9a.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "Gradients computed by using raw fluctuations of output about a running average, without supralinear amplification, are essentially random.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel b: gradients computed by using raw fluctuations of output about a running average, without supralinear amplification, are essentially random.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the gradient comparison in Figure 9b.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "If plasticity computations are restricted to the first 10 ms after perturbation, the correct gradients are recovered, confirming that post-perturbation effects are responsible.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel c: if we restrict the plasticity computations to the first 10 ms after perturbation, the correct gradients are recovered (using only 1 ms would be identical to panel a), confirming that post-perturbation effects are responsible.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the gradient comparison in Figure 9c.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "The full E-H rule with real-time reward signal correctly recovers the node-perturbation gradients.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel d: The full E-H rule, with real-time reward signal, also recovers the node-perturbation gradients.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the gradient comparison in Figure 9d.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Using a different supralinear function (signed square) produces largely similar results to using the cubic function.",
+    "claim_type": "EXPLICIT",
+    "source": "Panel e: Using a different supralinear function (signed square rather than cubic) produces largely similar results to Panel a.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "This is demonstrated by the gradient comparison in Figure 9e.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "The choice of supralinear function is not crucial, as long as it is indeed supralinear.",
+    "claim_type": "EXPLICIT",
+    "source": "Finally, we emphasize that the choice of supralinear function is not crucial, as long as it is indeed supralinear.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is supported by the comparison of different functions in Figure 9e and 9f.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "The paper introduces a biologically plausible learning algorithm that can train a recurrent neural network to learn flexible tasks using only time-sparse, delayed rewards and synapse-local information.",
+    "claim_type": "EXPLICIT",
+    "source": "1- We introduce a biologically plausible learning algorithm that can train a recurrent neural network to learn flexible (context-dependent) tasks, using only time-sparse, delayed rewards and synapse-local information to guide learning.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the first main contribution stated in the Discussion, supported by all experimental results.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "The rule can train networks for relatively complex tasks requiring memory maintenance, selective attention, and coordination of multiple outputs.",
+    "claim_type": "EXPLICIT",
+    "source": "2- We show that this rule can train networks for relatively complex tasks, requiring memory maintenance, selective attention, and coordination of multiple outputs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the second main contribution, supported by the results for Tasks 1, 2, and 3.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "Trained networks exhibit features of neural activity observed in primate higher cortex during similar tasks.",
+    "claim_type": "EXPLICIT",
+    "source": "3- We show that the trained networks exhibit features of neural activity observed in the primate higher cortex during similar tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is the third main contribution, supported by the analyses in Figures 2, 3, and 5.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "The fact that features of cortical activity arise spontaneously in networks trained with a biologically plausible rule increases the plausibility of recurrent neural networks as a model of cortical computation.",
+    "claim_type": "EXPLICIT",
+    "source": "In our view, the fact that these features of cortical activity arise spontaneously in networks trained with a biologically plausible rule (as opposed to training the network to directly reproduce observed neural activity traces) increases the plausibility of recurrent neural networks as a model of cortical computation, during both performance and learning of cognitive tasks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an interpretive claim based on the experimental results and their relationship to observed neural activity.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "The proposed plasticity rule implements reward-modulated Hebbian learning with supralinear amplification applied to the Hebbian plasticity increments.",
+    "claim_type": "EXPLICIT",
+    "source": "Our proposed plasticity rule implements reward-modulated Hebbian learning between inputs, outputs, and rewards, with the crucial introduction of a supralinear amplification applied to the Hebbian plasticity increments (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the key feature of the proposed rule.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "The hypothesis of non-linear effects in Hebbian plasticity allows the rule to support robust learning in highly dynamic networks without requiring non-Hebbian plasticity or continuous reward signals.",
+    "claim_type": "EXPLICIT",
+    "source": "This hypothesis of non-linear effects in Hebbian plasticity allows our rule to support robust learning in highly dynamic networks, without requiring non-Hebbian plasticity between segregated driving and perturbatory inputs (Fiete et al., 2007), or a continuous, real-time reward signal (Legenstein et al., 2010; Hoerzer et al., 2014) (see Materials and methods and Analysis).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a summary of the advantages of the proposed rule over prior methods.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The suggestion of supralinear amplification is similar to the independent proposal of thresholded Hebbian rules.",
+    "claim_type": "EXPLICIT",
+    "source": "We note that this suggestion is similar to the independent proposal of so-called thresholded Hebbian rules (Soltoggio and Steil, 2013), in which plasticity is only triggered if the Hebbian product reaches a certain threshold.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a comparison with related work.",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Short-term synaptic plasticity may not be required to explain the highly dynamic nature of working-memory encodings.",
+    "claim_type": "EXPLICIT",
+    "source": "Thus, while short-term synaptic plasticity clearly affects neural responses, it may not be required to explain the highly dynamic nature of working-memory encodings.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is inferred from the fact that the networks exhibit dynamic encodings without implementing short-term synaptic plasticity.",
+    "evidence_type": [
+      "INFERENCE",
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "It is unlikely that cortical connectivity should be drastically remodeled through long training for any new task.",
+    "claim_type": "EXPLICIT",
+    "source": "It is unlikely that cortical connectivity should be drastically and finely remodeled through a long training process for any new task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim based on observations about human task learning.",
+    "evidence_type": [
+      "SPECULATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C83",
+    "claim": "The process of slow, reward-modulated synaptic modification likely reflects the learning of functional networks capable of implementing a certain type of task, which must then be activated and parameterized for each instance.",
+    "claim_type": "EXPLICIT",
+    "source": "Rather, it is more likely that the process of slow, reward-modulated synaptic modification in cortical circuitry depicted here reflects the learning of functional networks capable of implementing a certain type of task (or cognitive ability), which must then be activated and parameterized for each instance of the task.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative interpretation of what the learning process might represent in biological systems.",
+    "evidence_type": [
+      "SPECULATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C84",
+    "claim": "The flexible task specification process likely involves cortical areas, basal ganglia, and the dopamine system.",
+    "claim_type": "EXPLICIT",
+    "source": "The latter process of flexible task specification is likely to involve not just other cortical areas, but also the basal ganglia and dopamine system.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a speculative claim about the neural systems involved in task specification.",
+    "evidence_type": [
+      "SPECULATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C85",
+    "claim": "Networks are initialized with weights taken from a normal distribution with mean 0 and variance g\u00b2/N for recurrent connections.",
+    "claim_type": "EXPLICIT",
+    "source": "J is initialized with weights taken from a normal distribution with mean 0 and variance g2/N, while the input weights Bk,i are fixed and taken from a uniform distribution over the [\u22121,1] interval.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the network initialization procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Activations are initialized at the start of every trial with uniform noise in the [\u22120.1, 0.1] range.",
+    "claim_type": "EXPLICIT",
+    "source": "Activations xi are initialized at the start of every trial with uniform noise in the [\u22120.1, 0.1] range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the network initialization procedure.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "The network parameter g = 1.5 places the networks in the early chaotic regime.",
+    "claim_type": "EXPLICIT",
+    "source": "For the simulations reported here, N = 200 (400 for the motor control task), \u03c4 = 30 ms, and g = 1.5. Note that the latter value places the networks in the early chaotic regime, where the long-term behavior generally remains non-periodic (Sompolinsky et al., 1988).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of network parameters with reference to prior theoretical work.",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C88",
+    "claim": "In the excitatory-inhibitory network, there are 100 excitatory and 100 inhibitory neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "In these simulations, there are 100 excitatory and 100 inhibitory neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the network architecture for the E-I network experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "The E-I network is largely non-saturating with neural responses usually not exceeding ~10.",
+    "claim_type": "EXPLICIT",
+    "source": "Note that the network is largely non-saturating: neural responses usually do not reach responses close to the maximum M, which is another similarity with cortical networks.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is an observation about the behavior of the E-I network model.",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "In the E-I network, each neuron receives connections from 50 randomly chosen excitatory neurons and 50 randomly chosen inhibitory neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "The connection matrix is initialized as semi-sparse: each neuron receives connections from 50 randomly chosen excitatory neurons and 50 randomly chosen inhibitory neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the connectivity structure in the E-I network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "In the E-I network, all excitatory connections have initial weight 1 and all inhibitory connections have initial weight \u22121.2.",
+    "claim_type": "EXPLICIT",
+    "source": "All excitatory connections have initial weight 1. All inhibitory connections have initial weight \u2212ginhib = \u22121.2.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the initial weights in the E-I network.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "In the E-I network, connections from excitatory neurons are always clipped to 0 from below, while connections from inhibitory neurons are always clipped to 0 from above.",
+    "claim_type": "EXPLICIT",
+    "source": "As learning occurs, connection weights change from their initial values; however, connections from excitatory neurons are always clipped to 0 from below, while connections from inhibitory neurons are always clipped to 0 from above.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the weight constraints in the E-I network to maintain Dale's law.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "Four arbitrarily chosen neurons have constant activation x = 1 and provide a bias input to other neurons.",
+    "claim_type": "EXPLICIT",
+    "source": "In all simulations, four arbitrarily chosen neurons have a constant activation x = 1 and thus provide a bias input to other neurons.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the network architecture.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C94",
+    "claim": "Perturbations are taken from a uniform distribution within the [\u22120.5, 0.5] range, occurring randomly with a mean rate of 3 Hz.",
+    "claim_type": "EXPLICIT",
+    "source": "In this paper, \u0394i(t) is taken from a uniform distribution within the [\u22120.5, 0.5] range, occurring randomly and independently for each neuron with a mean rate of 3 Hz (rates of 1 Hz or 10 Hz also give satisfactory results).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the perturbation parameters used in the experiments.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "The learning rate \u03b7 is set to 0.5 for all simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "where \u03b7 is a learning rate constant, set to 0.5 for all simulations described here.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the learning rate parameter.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "The running average parameter \u03b1trace is set to 0.33 in all simulations.",
+    "claim_type": "EXPLICIT",
+    "source": "In all simulations, \u03b1trace = 0.33.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the running average parameter.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Weight modifications for each trial are clipped to have a maximum absolute value of 10\u207b\u2074.",
+    "claim_type": "EXPLICIT",
+    "source": "To stabilize learning, we clip the weight modifications for each trial to have a maximum absolute value of 10\u22124 (across experiments, roughly 10% of all potential weight modifications exceed this value and are clipped).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of a stabilization mechanism used in the learning rule.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C98",
+    "claim": "In the delayed nonmatch-to-sample task, each trial is 1000 ms long.",
+    "claim_type": "EXPLICIT",
+    "source": "The trial goes on for an additional 400 ms, thus each trial is 1000 ms long.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the task timing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "In the selective integration task, sensory inputs are presented for the first 500 ms of the trial, followed by a 200 ms response period.",
+    "claim_type": "EXPLICIT",
+    "source": "Sensory inputs are presented for the first 500 ms of the trial, followed by a 200 ms response period during which all sensory inputs are set to 0.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the task timing.",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Cross-temporal classification analysis can detect whether the network encodes a task-relevant variable and whether the representation changes over time.",
+    "claim_type": "EXPLICIT",
+    "source": "This method can detect not only whether the network encodes a certain task-relevant variable, but also whether the representation of this variable changes over time (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of what the cross-temporal classification method can reveal.",
+    "evidence_type": [
+      "KNOWLEDGE",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C101",
+    "claim": "The maximal-correlation classifier approach is used for cross-temporal classification analysis.",
+    "claim_type": "EXPLICIT",
+    "source": "We follow the maximal-correlation classifier approach described in Meyers et al. (2008) as closely as possible.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a specification of the analysis method used.",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "Orthogonal decoding seeks to extract independent measures of how various task features are encoded in the network.",
+    "claim_type": "EXPLICIT",
+    "source": "We use Mante and Sussillo's orthogonal decoding procedure, which seeks to extract independent measures of how various task features (stimulus values, context, decision) are encoded in the network (see Materials and methods).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "This is a description of the orthogonal decoding method.",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  }
+]

@@ -1,0 +1,1886 @@
+{
+  "submission": {
+    "id": "acb92dcd-b114-48fd-ab7a-0bd01bfa4128",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:27:11.828096Z",
+    "updated_at": "2025-11-30T20:27:11.828096Z"
+  },
+  "content": [
+    {
+      "id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "submission_id": "acb92dcd-b114-48fd-ab7a-0bd01bfa4128",
+      "content_type": "manuscript",
+      "content_text": "# Mitochondrial Bol1 and Bol3 function as assembly factors for specific iron-sulfur proteins\n\n## Authors\n\n- Marta A Uzarska<sup>1</sup>\n- Veronica Nasta<sup>2</sup>\n- Benjamin D Weiler<sup>1</sup>\n- Farah Spantgar<sup>1</sup>\n- Simone Ciofi-Baffoni<sup>2</sup>\n- Maria Rosaria Saviello<sup>2</sup>\n- Leonardo Gonnelli<sup>2</sup>\n- Ulrich M\u00fchlenhoff<sup>1</sup>\n- Lucia Banci<sup>2</sup> \u2020\n- Roland Lill<sup>1</sup> ([ORCID: 0000-0002-8345-6518](https://orcid.org/0000-0002-8345-6518)) \u2020\n\n### Affiliations\n\n1. Institut f\u00fcr Zytobiologie und Zytopathologie Philipps-Universit\u00e4t Marburg Germany\n2. Magnetic Resonance Center CERM University of Florence Florence Italy\n3. Department of Chemistry University of Florence Florence Italy\n4. LOEWE Zentrum f\u00fcr Synthetische Mikrobiologie SynMikro Marburg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nAssembly of mitochondrial iron-sulfur (Fe/S) proteins is a key process of cells, and defects cause many rare diseases. In the first phase of this pathway, ten Fe/S cluster (ISC) assembly components synthesize and insert [2Fe-2S] clusters. The second phase is dedicated to the assembly of [4Fe-4S] proteins, yet this part is poorly understood. Here, we characterize the BOLA family proteins Bol1 and Bol3 as specific mitochondrial ISC assembly factors that facilitate [4Fe-4S] cluster insertion into a subset of mitochondrial proteins such as lipoate synthase and succinate dehydrogenase. Bol1-Bol3 perform largely overlapping functions, yet cannot replace the ISC protein Nfu1 that also participates in this phase of Fe/S protein biogenesis. Bol1 and Bol3 form dimeric complexes with both monothiol glutaredoxin Grx5 and Nfu1. Complex formation differentially influences the stability of the Grx5-Bol-shared Fe/S clusters. Our findings provide the biochemical basis for explaining the pathological phenotypes of patients with mutations in BOLA3.\n\n## Introduction\n\nMitochondria are essential organelles and are involved in numerous biological tasks including fatty acid degradation, citric acid cycle, respiration, ATP production, and the biogenesis of various protein cofactors such as heme, lipoic acid and iron-sulfur (Fe/S) clusters. Genetic defects in these pathways are associated with a spectrum of diverse mitochondriopathies with neurological, neurodegenerative, hematological, and metabolic phenotypes. Knowledge of the molecular deficits of the affected mitochondrial components is key for the development of a comprehensive understanding of mitochondrial diseases. A mutation in human BOLA3 encoding a mitochondrial protein is associated with diverse defects summarized as multiple mitochondrial dysfunction syndrome 2 (MMDS2; Baker et al., 2014; Cameron et al., 2011; Haack et al., 2013). In particular, BOLA3 deficiency results in decreased functions of respiratory complexes I and II as well as lipoic acid-dependent enzymes such as pyruvate dehydrogenase (PDH), 2-ketoglutarate dehydrogenase (KGDH), and glycine cleavage system (GCS) (Mayr et al., 2014). BOLA3 was suggested to play a role in mitochondrial Fe/S protein biogenesis because of similar clinical and biochemical phenotypes in patients with mutations in the known ISC factors NFU1 (causing MMDS1; Cameron et al., 2011; Invernizzi et al., 2014; Navarro-Sastre et al., 2011) and IBA57 (causing MMDS3; Ajit Bolar et al., 2013; Lossos et al., 2015; for review see Beilschmidt and Puccio, 2014; Stehling et al., 2014). Another link for BOLA3 to mitochondrial Fe/S protein biogenesis is provided by the fact that related bacterial and plant Bol proteins interact with monothiol glutaredoxins, factors that play a critical role in Fe/S protein biogenesis [Boutigny et al., 2013; Roret et al., 2014; Yeung et al., 2011]). However, dedicated biochemical investigations of the molecular role of BOLA3 in mitochondria have not been reported hitherto.\n\nHuman BOLA3 belongs to a large protein family of bacterial origin (Aldea et al., 1988; Willems et al., 2013). Eukaryotes such as yeast and humans possess three BOLA family members that can be discriminated by conserved sequence elements (Figure 1\u2014figure supplement 1). To date, the precise function of the BOLA proteins and the functional relationship between the three eukaryotic BOLA family members is unclear. Yeast Bol2 (formerly termed Fra2; [Kumanovics et al., 2008]) is cytosolic, and is involved in cellular iron regulation by forming heterodimeric, [2Fe-2S] cluster-containing complexes with the cytosolic monothiol glutaredoxins Grx3-Grx4 (Li et al., 2009; M\u00fchlenhoff et al., 2010). The human relative BOLA2 also forms hetero-complexes with human GRX3 (Banci et al., 2015; Li et al., 2012), yet the exact physiological role of the Bol2 proteins is still poorly defined. Additionally to BOLA3, human mitochondria contain the homologous BOLA1 (Willems et al., 2013). Ablation of BOLA1 in cultured human cells increases mitochondrial protein thiol oxidation and elicits alterations in mitochondrial morphology. BOLA1 (but not BOLA3) co-purified with tagged mitochondrial monothiol glutaredoxin GLRX5 that is crucial for Fe/S protein biogenesis (Willems et al., 2013; Ye et al., 2010). Both BOLA1 and BOLA3 have structural counterparts in many eukaryotes including yeast Bol1 and Bol3, respectively (Figure 1\u2014figure supplement 1). Apart from the BOLA3 patient cell analysis, no solid evidence for a direct role of the BOLA family proteins in cellular Fe/S protein metabolism has been described. We therefore sought to better define the physiological role of the mitochondrial Bol1-Bol3 (mBols) and cytosolic Bol2 proteins in this essential biosynthetic pathway by using the yeast S. cerevisiae as a model organism (Beilschmidt and Puccio, 2014; Lill, 2009; Lill et al., 2012; Netz et al., 2014; Rouault, 2012).\n\nMitochondrial Fe/S protein biogenesis in yeast involves 17 known ISC components which were inherited from bacteria and are conserved in eukaryotes (Johnson et al., 2005; Lill, 2009). The pathway can be divided into two major phases. First, components of the \u2018core ISC machinery\u2019 including the cysteine desulfurase Nfs1 and the scaffold protein Isu1 synthesize a [2Fe-2S] cluster, and transfer it transiently to the monothiol glutaredoxin Grx5 for subsequent assembly of mitochondrial [2Fe-2S] proteins. Second, dedicated ISC factors use the Grx5-bound Fe/S cluster to assemble a [4Fe-4S] cluster and to facilitate its insertion into mitochondrial apoproteins such as aconitase, respiratory complexes, and the radical SAM Fe/S protein lipoic acid synthase (LIAS). Even though the molecular mechanisms of this late phase of Fe/S protein biogenesis are poorly resolved, recent studies have shown that the Isa1, Isa2 and Iba57 proteins cooperate to generate a [4Fe-4S] cluster (Brancaccio et al., 2014; Gelling et al., 2008; M\u00fchlenhoff et al., 2011; Sheftel et al., 2012). Its insertion into specific target apoproteins is subsequently facilitated by Nfu1 and the P-loop ATPase Ind1, both transiently binding [4Fe-4S] clusters (Bych et al., 2008; Sheftel et al., 2009; Tong et al., 2003). The latter ISC protein is specific for maturation of respiratory complex I, but nothing is known about the molecular mechanisms underlying [4Fe-4S] cluster insertion by eukaryotic Nfu1 and Ind1.\n\nWhile most proteins of the core ISC machinery are essential for cell viability, impairment of the ISC factors involved in the second phase of Fe/S protein biogenesis only compromises mitochondrial function of yeast cells. This striking difference for phases I and II is explained by the central, additional role of the core ISC machinery in both cytosolic Fe/S protein biogenesis and cellular iron regulation. Functional defects of core ISC factors lead to impaired assembly of essential Fe/S proteins such as nuclear DNA polymerases and helicases (Gari et al., 2012; Netz et al., 2012; Stehling et al., 2012) and an induction of the yeast iron regulon involving the above mentioned Bol2 (Lill et al., 2012; Outten and Albetel, 2013; Paul and Lill, 2015). Here, we employed a combination of cell biological, biochemical and ultrastructural methods to characterize the potential role of the Bol proteins in cellular Fe/S protein biogenesis and to define their position in the complex pathway. We also investigate the involvement of the mBols in cellular iron regulation in comparison to Bol2.\n\n## Results\n\n### Deficiency of Bol1-Bol3 causes defects in a subset of mitochondrial [4Fe-4S] enzymes\n\nWe first analyzed the sub-cellular localization of S. cerevisiae Bol1 (YAL044W-A) and Bol3 (formerly termed Aim1; (Hess et al., 2009) by cell fractionation. Both proteins were exclusively present in the mitochondrial fraction and absent in the cytosol (Figure 1\u2014figure supplement 2A). Upon sub-fractionation of mitochondria by hypotonic swelling or detergent lysis, the Bol proteins behaved similar to the matrix proteins Tim44 and Mge1 (Figure 1\u2014figure supplement 2B). Thus, Bol1 and Bol3 are constituents of the mitochondrial matrix. To examine the physiological function of mitochondrial Bol1-Bol3 (mBols), we created single and double deletion cells, as well as combined deletions with BOL2 (Supplementary file 1A; strain background BY4742). All deletion strains grew at wild-type rates on minimal media containing the non-fermentable carbon sources glycerol or acetate with the exception of bol13\u0394 and bol123\u0394 strains (Figure 1\u2014figure supplement 3). Apparently, simultaneous deletion of BOL1 and BOL3 created a weak respiratory defect which is slightly weaker than that seen for NFU1 deletion (Schilke et al., 1999).\n\nWe then analyzed key mitochondrial enzyme activities to detect potential defects in Fe/S protein biogenesis, and we compared these results to data for a NFU1 deletion strain which shows mild, yet specific Fe/S enzyme defects (Navarro-Sastre et al., 2011; Schilke et al., 1999). This analysis included the mitochondrial Fe/S proteins aconitase, succinate dehydrogenase (SDH or complex II), and yeast LIAS (Lip5). The latter can be assayed indirectly either by the enzyme activities or the lipoylation extent of pyruvate dehydrogenase (PDH) and 2-ketoglutarate dehydrogenase (KGDH) (Gelling et al., 2008; Schonauer et al., 2009). Further, we measured the activity of cytochrome c oxidase (COX). Even though this enzyme does not contain Fe/S clusters, it is frequently affected by mitochondrial Fe/S protein biogenesis defects, for unknown reasons (see, e.g., [M\u00fchlenhoff et al., 2011; Sheftel et al., 2012]). All enzyme activities were normalized to malate dehydrogenase (MDH) that showed no significant changes in all these strains relative to wild type (not shown).\n\nSingle deletions of BOL1 or BOL3 did not affect any of these enzyme activities relative to wild-type cells with the exception of a slight, but significant decrease of SDH in bol3\u0394 cells (Figure 1A\u2013E, bars 1\u20133). In contrast, double BOL1-BOL3 deletions resulted in substantial, up to threefold decreases of the Fe/S cluster-dependent enzyme activities, an effect comparable to that seen for nfu1\u0394 cells (bars 4 and 6) (Navarro-Sastre et al., 2011). A notable exception was aconitase which retained normal activity in bol13\u0394 cells (Figure 1A). Thus, double but not single yeast BOL gene deletions created a similar phenotype as that observed in BOLA3 patient cells (Cameron et al., 2011). Additional ablation of BOL2 (strain bol123\u0394, bar 5) did not substantially exacerbate these effects suggesting that the mitochondrial and cytosolic Bol proteins act independently. The decrease in SDH was likely due to a direct defect in Fe/S cluster assembly, because SDH protein levels remained unchanged in immunoblots (Figure 1F). In keeping with the decreased PDH and KGDH activities, we also found a lipoylation defect of the E2 subunits of these enzymes by immunostaining against lipoic acid (Figure 1F) (Gelling et al., 2008; Schonauer et al., 2009). All the observed effects were rather mild in comparison to defects reported for deletion mutants of other late-acting ISC factors such as Isa1, Isa2, and Iba57 (Gelling et al., 2008; M\u00fchlenhoff et al., 2011). This notion was also evident from the lack of any effects on COX activity in all tested BOL deletion strains (Figure 1E). A severe COX diminution is observed in ISA1, ISA2, or IBA57 mutants, yet the exact reason is unknown (Gelling et al., 2008; M\u00fchlenhoff et al., 2011). In order to verify that the loss of the enzyme activities was specific, BOL1 and BOL3 genes were reintroduced into the bol123\u0394 deletion strain by expression from plasmids. Both Bol1 and Bol3 were able to efficiently rescue the deficiencies in SDH activities (Figure 1\u2014figure supplement 4).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-v3.jpg)\n\n**Figure 1.:** Wild-type (WT; strain BY4742), and\u00a0the indicated BOL and NFU1 deletion yeast strains were grown in minimal medium containing 2% galactose supplemented with 50 \u00b5M ferric ammonium citrate and used for the preparation of mitochondria. Mitochondrial extracts were assayed for specific activities of (A) aconitase (ACO), (B) succinate dehydrogenase (SDH), (C) pyruvate dehydrogenase (PDH), (D) 2-ketoglutarate dehydrogenase (KGDH), and (E) cytochrome c oxidase (COX). Values were normalized to those of malate dehydrogenase (MDH). Error bars indicate the SEM (n\u22654). (F) Mitochondrial extracts were subjected to TCA precipitation and the levels of the indicated proteins and of lipoic acid attached to E2 subunits of PDH and KGDH were determined by immunostaining. Staining for porin served as a loading control.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Conserved amino acid sequence elements that characterize the various members of the BOLA protein family are shown. A conserved His (H*) in Bol2 serves as a Fe/S cluster ligand in a hetero-dimeric complex with Grx3 (Li et al., 2011). MTS; mitochondrial targeting sequence.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Wild-type yeast cells (W303) expressing Myc-tagged Bol1 (vector p424-MET25; Supplementary file 1B) or HA-tagged Bol3 (from vector p425-TDH3) were grown in SD medium, and mitochondria (Mito) and post-mitochondrial supernatant (PMS) fractions were isolated. Immunostaining was performed using antisera raised against the mitochondrial matrix protein Mge1, cytosolic Grx4 (also recognizing Grx3), and monoclonal anti-Myc (A14, Santa Cruz) or anti-HA. (B) Wild-type yeast cells (W303) expressing Bol1-Myc or Bol3-HA were grown in SD medium. Isolated mitochondria were either left intact (sorbitol), hypotonically swollen by tenfold dilution in HEPES buffer, or lysed with 0.2% Triton X-100 detergent (Diekert et al., 2001). Samples were incubated in the presence or absence of 100 \u00b5g/ml proteinase K for 20 min on ice, and proteinase K was inactivated by PMSF. After TCA precipitation, samples were analyzed by immunostaining for the Myc-tag of Bol1, the HA-tag of Bol3, the intermembrane space proteins Erv1 and cytochrome b2, and the matrix proteins Tim44 and Mge1.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The indicated yeast strains were grown overnight on minimal medium with 2% glucose as carbon source. Cells were diluted to OD600 = 0.5 in water and spotted on rich medium (YP) agar plates with 2% galactose, 3% glycerol or 2% acetate as indicated. Plates were incubated at 30\u00b0C for 3 days. WT, wild-type.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Wild-type (WT; strain BY4742) and the indicated BOL deletion strains were transformed with vector p416-MET25 lacking (empty) or overexpressing BOL1 or BOL3 as indicated. Cells were grown in minimal medium with 2% glucose without uracil and used for preparation of mitochondria. Mitochondrial extracts were assayed for the\u00a0specific activity of succinate dehydrogenase (SDH) and normalized to malate dehydrogenase (MDH) activities. Error bars indicate the SEM (n\u22654).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig1-figsupp5-v3.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Wild-type (WT; strain BY4742), the indicated BOL and NFU1 deletion yeast strains were grown in lactate medium and used for the preparation of mitochondria. Mitochondrial extracts were assayed for specific activities of (A) aconitase (ACO), (B) succinate dehydrogenase (SDH), (C) pyruvate dehydrogenase (PDH), and (D) 2-ketoglutarate dehydrogenase (KGDH). Values were normalized to those of malate dehydrogenase (MDH). Error bars indicate the SEM (n\u22654).\n\nPrevious studies on yeast ISC protein depletions, e.g., of the Isa proteins, had shown that the Fe/S protein defects were much more pronounced under strict respiratory conditions, e.g., upon growth in lactate medium (Kispal et al., 1999; M\u00fchlenhoff et al., 2011) (see also Figure 1\u2014figure supplement 3). Both aconitase and SDH activities of the various BOL deletion strains behaved similarly after growth in lactate- compared to galactose-containing media (Figure 1\u2014figure supplement 5). In contrast, PDH and KGDH activities were much more severely (ten- vs. threefold) diminished in bol13\u0394, bol123\u0394, and nfu1\u0394 cells grown in lactate medium, similar to previous reports on Isa protein depletion (Kaut et al., 2000; M\u00fchlenhoff et al., 2011). Together, these data show that the mBols were crucial for efficient maturation of LIAS, yet they play only an auxiliary role in SDH maturation. The levels of Bol1 and Nfu1 did not change or rather slightly decreased in the various deletion cells making a compensatory effect unlikely (data not shown; Bol3 levels could not be tested due to the lack of antibody detection). Obviously, Bol1 and Bol3 perform largely complementary roles, because only simultaneous deletion of both BOL1-BOL3 genes created a significant LIAS defect.\n\n### Bol1 and Bol3 are crucial for de novo Fe/S cluster maturation of specific mitochondrial [4Fe-4S] but not [2Fe-2S] proteins\n\nTo directly characterize the mBol involvement in mitochondrial Fe/S cluster assembly, we employed a well-established 55Fe radiolabeling and immunoprecipitation assay. This also allowed the testing of additional Fe/S proteins including such with [2Fe-2S] clusters. The various BOL deletion strains were radiolabeled with 55Fe, the Fe/S proteins were immunoprecipitated, and the precipitated radioactivity was quantified by scintillation counting (Pierik et al., 2009). Consistent with the enzyme activity data (Figure 1), we found no significant effect on 55Fe incorporation into aconitase upon single, double or triple BOL gene deletion (Figure 2A). For SDH (assayed by precipitation of the myc-tagged Fe/S cluster subunit Sdh2 co-expressed with Sdh1) a 40% decrease in 55Fe binding was observed upon deletion of BOL3, also in combination with BOL1 and BOL2 deletions (Figure 2B). Compared to other ISC gene deletions (see, e.g., Gelling et al., 2008; Gerber et al., 2004; M\u00fchlenhoff et al., 2011; Rodriguez-Manzaneque et al., 2002; Voisine et al., 2001) this effect was rather weak. Similar, yet slightly stronger decreases in 55Fe binding (60%) were detected for mitochondria-targeted HiPIP, a bacterial [4Fe-4S] cluster-containing ferredoxin (Figure 2C). For all the tested Fe/S proteins, single deletion of BOL1 had no effects on 55Fe binding. The observed defects were specific, because reintroduction of Bol1 or Bol3 into the bol123\u0394 strain via overproducing vectors completely restored wild-type 55Fe binding activity, whereas cytosolic Bol2 or Grx5, as a control, were ineffective (Figure 2D). Taken together, these data support a specific function of the mBols in the maturation of a subset of mitochondrial Fe/S proteins, whereby Bol1 and Bol3 perform largely overlapping, non-essential functions. Interestingly, the 55Fe radiolabeling assay revealed a slightly more important role for Bol3 as compared to Bol1. This tendency, yet less well pronounced, was also observed for the enzyme activities (see Figure 1). The ability of the mBols to mutually substitute each other explains why Fe/S protein defects are best visible when both BOL1 and BOL3 are deleted.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013F) Wild-type (WT, strain BY4742) and the indicated BOL deletion strains were transformed with vectors overproducing (B) Sdh2-Myc and Sdh1, (C and D) HiPIP-Myc, (E) human FDX2-HA, or (F)\u00a0Schizosaccharomyces pombe (Sp) Grx5-Myc. In part D, bol123\u0394 cells were additionally transformed with p414-MET25 lacking or containing BOL1, BOL2, or BOL3 genes or p424-TDH3-GRX5. Cells were grown overnight in iron-poor SD medium and radiolabeled with 10 \u00b5Ci 55Fe for 2 hr. The overproduced proteins were immunoprecipitated from cell extracts with specific antibodies. The amount of co-precipitated 55Fe was quantified by scintillation counting. Error bars indicate the SEM (n\u22654).\n\nAll Fe/S proteins tested so far contain [4Fe-4S] clusters. To get an insight into the Fe/S cluster-type specificity of mBol function, we examined the 55Fe incorporation into two mitochondrial [2Fe-2S] proteins, namely ferredoxin FDX2-HA, the human ortholog of yeast Yah1, and Grx5 from Schizosaccharomyces pombe (SpGrx5-Myc) (Gelling et al., 2008; Uzarska et al., 2013). The deficiency in mBols did not elicit any significant decrease in 55Fe binding to these [2Fe-2S] proteins (Figure 2E,F). This behavior is strikingly different from that of members of the core ISC machinery, and shows that the mBols were not required for maturation of [2Fe-2S] proteins. We conclude that Bol1-Bol3 are dedicated ISC assembly factors specifically involved in the maturation of a subset of mitochondrial [4Fe-4S] but not of [2Fe-2S] proteins. Further, the mBols act after Grx5, the final core ISC component (Uzarska et al., 2013), because they were not needed for 55Fe incorporation into Grx5.\n\n### Neither mitochondrial Bol1-Bol3 nor cytosolic Bol2 are required for cytosolic Fe/S protein biogenesis\n\nWe next examined if the mitochondrial Bol proteins perform an additional role in cytosolic Fe/S protein biogenesis, if they functionally cooperate with cytosolic Bol2, or if Bol2 alone plays a crucial role in this process. Previous studies on yeast Bol2 and human BOLA2 have suggested an involvement of these cytosolic proteins in intracellular iron metabolism (Kumanovics et al., 2008; Li et al., 2012). First, we measured the consequences of various BOL gene deletions on the activation of the Aft1-Aft2-dependent iron regulon, a hallmark of all cells with defects in the core ISC machinery (Lill et al., 2012; Outten and Albetel, 2013). As expected (Kumanovics et al., 2008), bol2\u0394 cells displayed a substantial activation of the Aft1-dependent FIT3 and FET3 genes in a GFP-based promoter assay (Figure 3A\u2013B). In contrast, yeast strains lacking BOL1 and/or BOL3 behaved like wild-type cells indicating that the mBols are not involved in cellular iron regulation. This fits nicely to our conclusion above that Bol1-Bol3 do not belong to the core ISC system. The same situation was observed for cells lacking Nfu1 (Figure 3B), another known late-acting specific ISC assembly factor (Navarro-Sastre et al., 2011). Surprisingly, when the BOL2 deletion was combined with genetic ablation of\u00a0BOL1 and/or BOL3, the iron regulon was activated slightly stronger than in bol2\u0394 cells (Figure 3A\u2013B). This amplifying effect was specific for a Bol protein deficiency because it was reversed to the FET3 induction level of bol2\u0394 cells by reintroducing BOL1 and/or BOL3 into bol123\u0394 cells, and to wild-type FET3 levels by BOL2 expression (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig3-v3.jpg)\n\n**Figure 3.:** Wild-type (WT, strain BY4742) and the indicated BOL deletion strains harboring vector (A) pFIT3-Luc2 or (B) pFET3-GFP were cultivated in iron-replete medium to mid-log phase and the activities of the FIT3 and FET3 promoters, respectively, were determined. In (B) the bol123\u0394 cells were also transformed with centromeric plasmids producing the indicated Bol proteins. Abbreviation: Bol13; Bol1 plus Bol3. (C) Leu1 (relative to MDH) activities were determined in the indicated deletion stains cultivated in iron-replete medium. (D) The indicated BOL deletion stains were radiolabeled with 55Fe, and the Leu1-bound radioactivity was determined by immunoprecipitation with \u03b1-Leu1 antibodies followed by scintillation counting. (E)\u00a055Fe incorporation into Rli1-HA was determined accordingly using WT and bol123\u0394 cells transformed with centromeric plasmids producing the three Bol proteins as indicated or with the empty vector (-). (F) Representative immunoblots determining the protein levels of Leu1 (D) and Rli1-HA (E) in the indicated strains. Porin served as a loading control. Error bars indicate the SEM (n\u22654).\n\nSecond, we investigated the effects of the three BOL gene deletions on cytosolic Fe/S proteins by assaying the enzyme activity of isopropylmalate isomerase (Leu1). No changes were observed when BOL1-BOL3 genes were deleted either alone or in combination (Figure 3C). In contrast, bol2\u0394 cells showed a twofold decrease in Leu1 activity, which further declined upon additional deletion of BOL1-BOL3. Collectively, these results show that the mBols are not involved in cytosolic Fe/S protein biogenesis, yet there is a cross-talk of the mBol deficiency with the BOL2 deletion. To better understand the reason of this combinatory effect, we took advantage of the 55Fe radiolabeling assay described above. Deletion of either BOL1-BOL3 or BOL2 hardly affected 55Fe/S cluster binding to Leu1 indicating that neither mitochondrial Bol1-Bol3 nor cytosolic Bol2 perform a decisive role in Leu1 Fe/S cluster incorporation (Figure 3D,F). However, combining the BOL2 deletion with that of BOL1 and/or BOL3 resulted in an up to twofold decrease in 55Fe/S cluster association with Leu1. A similar twofold decrease (compared to wild-type) was seen for 55Fe incorporation into another cytosolic Fe/S protein, the ABC protein Rli1 using the triple BOL deletion strain bol123\u0394 (Figure 3E\u2013F). We note, however, that these decreases in 55Fe incorporation were rather weak compared to defects in core ISC or CIA components (see, e.g., Netz et al., 2007, 2010; Paul et al., 2015). The Rli1 maturation defect was completely restored when any of the BOL genes was reintroduced into the bol123\u0394 mutant. This supports the notion that neither the mBols nor Bol2 are directly involved in cytosolic Fe/S protein maturation. Obviously, their combined absence causes alterations in both mitochondrial metabolism and cellular iron homeostasis, thereby creating conditions that negatively affect cytosolic Fe/S cluster insertion. The physiological conditions prevailing in bol123\u0394 cells might also explain the slight decrease in the enzyme activity of aconitase which, like Leu1, is a highly susceptible protein to, e.g., oxidative stress conditions or changes in iron availability (cf. Figures 1A and 3C). Together, our data indicate that the mBols execute a mitochondria-specific function in [4Fe-4S] protein assembly, whereas Bol2 plays a specific role in cellular iron regulation (Kumanovics et al., 2008).\n\n### Bol1-Bol3 and Nfu1 perform distinct tasks in mitochondrial [4Fe-4S] protein maturation\n\nOur current and previous results suggested functions of the mBols and of Nfu1 as specialized ISC assembly factors (Cameron et al., 2011; Navarro-Sastre et al., 2011). Are these functions independent or overlapping? We first analyzed whether simultaneous inactivation of Bol1-Bol3 and Nfu1 aggravates the Fe/S defects. As observed previously (Navarro-Sastre et al., 2011; Schilke et al., 1999), nfu1\u0394 cells showed a diminution in the activities of both aconitase and SDH relative to wild type (Figure 4A\u2013B). A substantial further decrease to rather low aconitase and SDH activities was found for additional deletion of BOL3, but not of BOL1. The BOL3 effect was not further amplified in nfu1\u0394bol13\u0394 cells. These findings show that Bol3 plays a distinct, Nfu1-independent role that cannot be executed by Bol1. Apparently, even though Bol1 and Bol3 play overlapping roles (see above), their functions are not entirely identical.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig4-v3.jpg)\n\n**Figure 4.:** (A\u2013B) Wild-type (WT, strain BY4742) and the indicated deletion strains were grown in minimal medium containing 2% glucose and used for the preparation of mitochondria. Mitochondrial extracts were assayed for the indicated specific enzyme activities as described in Figure 1. (C\u2013F) The indicated deletion strains were transformed with vector p416-MET25 lacking (empty) or containing BOL3 or NFU1 as indicated. Cells were grown in minimal medium containing 2% galactose and used for the preparation of mitochondria. Mitochondrial extracts were assayed for the indicated enzyme activities as described in Figure 1. Error bars indicate the SEM (n\u22654).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) nfu1\u0394 and (B) bol13\u0394 cells were transformed with vector p414-MET25 containing no gene (empty), BOL1, BOL3 or BOL1-BOL3 (BOL13) or p416-MET25-NFU1 as indicated. Cells were grown overnight on minimal medium without uracil containing 2% glucose as a carbon source. Cells were diluted to OD600 of 0.1 in 500 \u00b5l of liquid minimal medium without uracil containing 2% acetate as sole carbon source, and put into a 48 well plate. Plates were incubated at 30\u00b0C for 3 days with shaking, and the OD600 was measured by a TECAN plate reader every 30 min.\n\nWe next tested whether the Bol1-Bol3 and Nfu1 proteins can mutually substitute each other\u2019s functions. To this end, we first took advantage of the growth defects of the bol13\u0394 and nfu1\u0394 strains in acetate-containing minimal medium (see above). Upon complementation of bol13\u0394 cells with BOL1 and/or BOL3 or of nfu1\u0394 cells with NFU1, wild-type growth rates were restored (Figure 4\u2014figure supplement 1). In contrast, no significant growth defect complementation was observed for nfu1\u0394 cells upon BOL1 and/or BOL3 expression (part A). A weak complementation was seen for bol13\u0394 cells by NFU1 expression (part B). Notably, this slight rescue effect was not observed for growth on solid acetate medium (not shown). Further, we used these cells for measuring the enzyme activities of aconitase, SDH, PDH and KGDH. In agreement with the growth behavior, Bol3 was not able to rescue any of the enzyme defects of nfu1\u0394 cells, while Nfu1 did so (Figure 4C\u2013F, left). Likewise, Nfu1 failed to restore the enzyme activities of bol13\u0394 cells, while Bol3 was complementing (Figure 4C\u2013F, right). These findings show that Nfu1 and Bol3 cannot mutually substitute each other\u2019s biochemical function, even upon overproduction. Despite the fact that Bol3 and Nfu1 both act late in mitochondrial Fe/S protein biogenesis, they appear to fulfil different tasks that cannot be taken over by the other protein. Hence, these data suggest that Bol1-Bol3 and Nfu1 perform individual, non-overlapping functions during Fe/S cluster assembly.\n\n### Structural insights into the human mitochondrial BOLA proteins and the interaction with GLRX5\n\nTo extend our cell biological insights into Bol protein function, we employed NMR structural studies to examine their physical interaction with Grx5. We used the human proteins for these in vitro studies because they were more stable than the yeast counterparts. First, the solution structures of human BOLA1 and BOLA3 were determined (Figure 5). A detailed description of the two structures and of their backbone dynamic properties is provided in Figure 5\u2014figure supplement 1. According to the DALI server (Holm and Sander, 1993), both BOLA1 and BOLA3 show the highest structural similarity to BolA-like proteins from Arabidopsis thaliana, Babesia bovis, and Mus musculus (Abendroth et al., 2011; Kasai et al., 2004; Roret et al., 2014). In particular, the BOLA1 structure matches better with those homologues that have a longer loop between \u03b21 and \u03b22, while the BOLA3 structure is more similar to homologues having a shorter \u03b21-\u03b22 loop (Figure 5C and Figure 5\u2014figure supplement 2). Apparently, the structural features of the loop between \u03b21 and \u03b22 are key for differentiating BOLA1 from BOLA3. Remarkably, this loop is closer to the \u2018invariant\u2019 His residue (His102 in BOLA1 and His96 in BOLA3; Figure 5), which has been shown to coordinate the [2Fe-2S] cluster in the yeast Bol2-Grx3 complex (Li et al., 2011). This region contains further possible Fe/S cluster ligands, namely His58, His67 in BOLA1 and Cys59 in BOLA3. Another conserved His residue (His86 in BOLA1 and His81 in BOLA3) is distant from this region and thus excluded as a cluster ligand (Figure 5). Together, structural data indicate that BOLA1 and BOLA3 have a similar fold, but show local structural differences in the regions containing the potential Fe/S cluster ligands.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig5-v3.jpg)\n\n**Figure 5.:** The structures of (A) BOLA1 and (B) BOLA3 were solved by solution NMR. Residues His58, His67 and His102 are conserved within the eukaryotic BOLA1 proteins, and residues Cys59 and His96 are conserved within the BOLA3 proteins.\u00a0(C) Backbone superimposition of BOLA1 (red) and BOLA3 (blue) structures depicting conserved His and Cys residues in both proteins. Yellow sticks represent potential Fe/S cluster ligands, and green sticks indicate other conserved His residues.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) 2D 1H-15N HSQC spectra of 15N-labeled BOLA1 and BOLA3. (B) 15N R1, R2 relaxation rates and 15N(1H) NOE values per residue of BOLA1 and BOLA3 obtained at 500 MHz and 298 K. The proteins were in buffer N with 10% (v/v) D2O). The 1H-15N HSQC spectra of the apo forms of BOLA3 and BOLA1 showed well-dispersed resonances indicative of essentially folded proteins. The overall topology of the solution structure of human BOLA3 is \u03b11\u03b21\u03b22\u03b71\u03b12\u03b72\u03b23 (h: 310-helix), in which \u03b21 and \u03b22 are antiparallel, and \u03b23 is parallel to \u03b22 (Figure 5). All \u03b1-helices are on the same side of the \u03b2-sheet and the 310-helix located between \u03b12 and \u03b23 contains the His96 residue that is invariant in all prokaryotic and eukaryotic BolA homologues (Li and Outten, 2012). A cysteine residue (Cys59), typically conserved in Bol3 homologues, is located close to the invariant His96 residue in an extended loop between \u03b21 and \u03b22. The two residues are not in the proper orientation to coordinate a [2Fe-2S] cluster (S\u03b3 of Cys59 is at an average distance of ~8 \u00c5 from N\u03b52 of His96). The overall topology of the solution structure of BOLA1 is similar to that of BOLA3, with the exception of the presence, in BOLA1, of short helices in the loop regions and at the C-terminus (\u03b11\u03b71\u03b21\u03b22\u03b72\u03b12\u03b13\u03b23\u03b14 topology) (Figure 5). In addition, at both termini BOLA1 has ca. 15 residues that are unstructured and whose backbone NH resonances are clustered in the central region of the 1H-15N HSQC spectrum (part B). The three His residues typically conserved in Bol1 homologues are located in two spatially close regions (Figure 5). Although they are close to each other, it is not possible to predict which ones may be involved in [2Fe-2S] cluster coordination. Information on backbone motions and on the protein oligomerization state of BOLA1 and BOLA3 were obtained through 15N R1, R2, heteronuclear 15N(1H)-NOEs NMR experiments. The 15N backbone relaxation properties showed that the N and C termini of BOLA1 are highly flexible, as about 15 to 20 residues on each terminus have negative 15N NOE values, while the folded domain is essentially rigid. BOLA3 is a rigid molecule, with the exception of the first detected residue at the N terminus, the last two residues at the C terminus and residues around invariant His96. All of them experience fast backbone motions in the ns-ps time scale, as indicated by their low or negative 15N NOE values.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Multalin (Corpet, 1988) was used to generate a multi-sequence alignment of Bol1- and Bol3-like proteins from fungi and various higher eukaryotes. The conserved His and Cys residues are indicated. The numbers refer to the residues of the human mBols. Two His (58 and 67) in BOLA1 are candidates for the structural counterpart of Cys59 of BOLA3.\n\nIn order to characterize the interaction between BOLA1 or BOLA3 and GLRX5 at the atomic level, we first studied the apo situation. 15N labeled BOLA proteins were titrated with unlabeled apo-GLRX5, and, vice versa, 15N labeled apo-GLRX5 with unlabeled BOLA proteins in the presence of 5\u2009mM GSH. Meaningful chemical shift changes were observed for both titrations in 2D 1H-15N HSQC NMR spectra acquired upon addition of the unlabeled partner (Figure 6\u2014figure supplements 1A and 2A). The free and bound proteins are in fast and intermediate exchange regimes relative to NMR time scale; the observed chemical shift changes of the protein amide resonances saturated at a 1:1 protein ratio. 15N R1 and R2 NMR relaxation data performed on the final 15N labeled BOLA1-unlabelled GLRX5 or 15N labeled BOLA3-unlabelled GLRX5 mixtures showed rotational correlation times consistent with the formation of a 1:1 heterodimeric complex (Figure 6\u2014figure supplement 3). NMR titrations performed by adding unlabeled apo-GLRX5 to a 15N-labeled BOLA1/15N-labeled BOLA3 1:1 mixture showed the formation of both hetero-complexes at comparable levels, indicating similar affinities. This data fits nicely to thermophoresis results showing that both human BOLA proteins interacted with apo-GLRX5 with Kd values of 3 \u00b5M (Melber et al., 2016; accompanying manuscript).\n\nThe chemical shift changes observed upon formation of apo-GLRX5-BOLA1 and apo-GLRX5-BOLA3 complexes were mapped on the solution structures of BOLA1, BOLA3 and apo-GLRX5. The interaction surface on GLRX5 in the two complexes comprises the GSH binding site and its surroundings (Figure 6A,B and Figure 6\u2014figure supplement 2A). On the BOLAs, the interactions involve helix \u03b12, part of the \u03b2-sheet and the invariant His residue (see above). The other possible Fe/S cluster ligands (His58, His67 in BOLA1 and Cys59 in BOLA3) showed no significant chemical shifts. In conclusion, NMR data indicate that apo-GLRX5-BOLA1 and apo-GLRX5-BOLA3 complexes specifically interact involving the region surrounding the invariant His in BOLAs and the GSH binding site in GLRX5.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig6-v3.jpg)\n\n**Figure 6.:** (A and B) Backbone chemical shift differences, obtained from a comparison of the 1H-15N HSQC spectra of apo-GLRX5 or BOLA proteins with that of (A) BOLA1-apo-GLRX5 or (B) BOLA3-apo-GLRX5 (1:1 mixture in buffer N), were mapped on the solution structures of the proteins. (C and D) Backbone chemical shift differences, obtained from a comparison of the 1H-15N HSQC spectrum of apo-GLXR5 or BOLA proteins with that of (C) BOLA1-apo-GLRX5 or (D) BOLA3-apo-GLRX5 (1:1 mixture in buffer N) chemically reconstituted with a [2Fe-2S] cluster, were mapped on the solution structures of the proteins. Green regions show residues with significant chemical shift changes (that\u00a0is both in terms of chemical shift and broadening beyond detection effects) observed upon formation of the apo- or holo-complexes. Red areas depict those residues additionally affected upon holo-complex formation. Critical residues and GLRX5-bound GSH are depicted as sticks.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Backbone weighted average chemical shift differences \u0394avg(HN) obtained by comparing 1H-15N HSQC map of (A) 15N-labeled BOLA1 or BOLA3 with an equimolar mixture of 15N-labeled BOLA1 or BOLA3 with unlabeled apo-GLRX5, and of (B) 15N-labeled BOLA1 or BOLA3 with an equimolar mixture of 15N-labeled BOLA1 or BOLA3 chemically reconstituted with unlabeled GLRX5 to generate a [2Fe-2S] cluster (buffer N). Bars with \u0394avg(HN) = 1 indicate residues whose backbone NH signals broaden beyond detection. The indicated thresholds (obtained by averaging \u0394avg(HN) values plus 1\u03c3) were used to define significant chemical shift differences. Green bars show significant chemical shift changes (that\u00a0is both chemical shift differences and broadening beyond detection effects, respectively) in the apo interactions, and red bars those additionally occurring upon holo complex formation. The position of conserved residues is highlighted.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Backbone weighted average chemical shift differences \u0394avg(HN) obtained by comparing 1H-15N HSQC map of (A) 15N-labeled apo-GLRX5 with that of a 1:1 mixture of 15N-labeled apo-GLRX5 and unlabeled BOLA1 or BOLA3, and of (B) 15N-labeled apo-GLRX5 with that of a 1:1 mixture of 15N-labeled apo-GLRX5 with unlabeled BOLA1 or BOLA3 after chemical reconstitution of a [2Fe-2S] cluster in buffer N. The data are presented as in Figure 6\u2014figure supplement 1. The position of the conserved Cys67 and of the residues of the GSH binding site are highlighted.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** For the isolated proteins the \u03c4C values were obtained by the HYDRONMR program. For the apo-complexes the \u03c4C values were calculated from the sum of the \u03c4C values of the two isolated proteins.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig6-figsupp4-v3.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Significant chemical shift changes (red and green for A. thaliana and human proteins, respectively) are mapped on the structures of (A) apo-AtGrxS14 and apo-GLRX5 upon the interaction with AtBolA2 and human BOLA3, respectively. Vice versa, part (B) shows the significant chemical shift changes of AtBolA2 and human BOLA3 upon interaction with AtGrxS14 and GLRX5, respectively. Conserved residues and the GLRX5-bound GSH are highlighted as sticks.\n\nRecently, a heterodimeric complex formed between A. thaliana (At) apo-GrxS14 and AtBolA2 (showing best similarity to BOLA3 and possessing a conserved Cys in addition to the invariant C-terminal His) was characterized by NMR (Roret et al., 2014). Surprisingly, the human and plant complexes share only some regions of chemical shift changes, and exhibit substantial differences (Figure 6\u2014figure supplement 4). For instance, the invariant His66 region of AtBolA2 does not appear to be an interaction interface, at variance with what we observed for both human BOLA complexes (Figure 6A,B). In addition, the GrxS14-interacting regions include the two C-terminal \u03b14 and \u03b15 helices, whereas helix \u03b15 of GLRX5 of both human complexes did not show chemical shifts, and a different segment of helix \u03b14 was involved. Moreover, helix \u03b12 of GLRX5 showed signs of interaction only in the human BOLA-GLRX5 complexes. We conclude that there is a high degree of organismic variability in the precise interaction mode between Grx and Bol proteins.\n\nWe next investigated the interaction of holo-GLRX5 with the BOLA proteins by chemically reconstituting a [2Fe-2S] cluster on equimolar GLRX5 and BOLAs. NMR 1H-15N HSQC spectra were acquired for\u00a0the co-reconstituted complexes of\u00a015N labeled BOLA3 or BOLA1 with GLRX5. The 1H-15N HSQC spectra of these co-reconstituted complexes were similar to spectra obtained by mixing BOLA1 or BOLA3 with [2Fe-2S]-containing holo-GLRX5 (not shown). Upon overlaying the 1H-15N HSQC spectra of the holo-complexes with those acquired for the corresponding apo-complexes, meaningful spectral variations (either as chemical shift changes and/or line-broadenings beyond signal detection) were detected on both proteins (Figure 6\u2014figure supplements 1B and 2B).\u00a0The 1H-15N HSQC maps of the co-reconstituted complexes having 15N labeled GLRX5 with\u00a0unlabeled BOLA1 or BOLA3 were not superimposable to the 1H-15N HSQC map of the holo-GLRX5 homodimer indicating formation of [2Fe-2S] hetero-complexes 15N R1 and R2 NMR relaxation data of BOLA1 or BOLA3, in the [2Fe-2S] chemically reconstituted complexes with GLRX5, indicated no significant changes in protein size with respect to the apo-complexes. Overall, the NMR data showed the presence of 1:1 heterodimeric holo-complexes between GLRX5 and BOLA1 or BOLA3.\n\nChemical shift perturbation and line broadening analyses were performed by comparing the 1H-15N HSQC spectrum of chemically reconstituted 15N-labeled BOLA3-GLRX5 with that of BOLA3. The residues of the loop containing the conserved Cys59 of BOLA3 showed strong chemical shift changes only in the holo hetero-complex relative to the apoform (Figure 6B,D and Figure 6\u2014figure supplement 1, right parts). A similar comparison for the 15N-labeled BOLA1-GLRX5 complex showed that the region around His67 of BOLA1 (structurally close to Cys59 of BOLA3) exhibited similar chemical shift changes, even though fewer residues were affected in BOLA1 (Figure 6A,C, and Figure 6\u2014figure supplement 1, left parts). The chemical shift perturbation analysis for 15N-labeled GLRX5 revealed that the residues of GLRX5 involved in the apo interaction are also affected in the holo-complex and that the conserved Cys67 of GLRX5 was additionally altered in the holo complexes only (Figure 6\u2014figure supplement 2). In addition, two other adjacent GLRX5 residues (Lys59 for BOLA3 and Gly60 for BOLA1 interaction) were altered that are part of the GSH binding site. The regions of GLRX5 affected by the interaction with BOLA1 and BOLA3 are essentially the same as those in the [2Fe-2S]2+ GLRX5 homodimer (Banci et al., 2014). This indicates that, for GLRX5, the same interaction regions are involved in both homo- and hetero-dimer formation, and the same groups (the conserved Cys67 and GSH) can act as iron ligands of the [2Fe-2S]2+ cluster.\n\n### Preferential interaction of BOLA1 with holo-GLRX5 and of BOLA3 with holo-NFU1\n\nWe used circular dichroism (CD) spectroscopy to follow the characteristics of Fe/S cluster coordination upon ligand exchange from the holo-Grx5 homo-dimer to the Grx5-Bol hetero-dimer (Banci et al., 2015; Li et al., 2009; Li et al., 2012). GLRX5 and stoichiometric amounts of BOLA1 or BOLA3 were chemically co-reconstituted with a [2Fe-2S] cluster and analyzed by CD (Figure 7). Similar results were obtained when GLRX5 was reconstituted first and then the BOLA proteins were added (Figure 7\u2014figure supplement 1). The CD spectrum of GLRX5-BOLA1 characteristically differed from that of holo-GLRX5 in a positive versus negative ellipticity around 400 nm with a 6 nm blue shift and 40% decrease of the ~460 nm peak with a 6 nm red shift (Figure 7A). These spectral changes saturated at an equimolar ratio of holo-GLRX5 and BOLA1 suggesting a high affinity equimolar hetero-complex formation with a shared [2Fe-2S] cluster (Figure 7\u2014figure supplement 1B). The cluster coordinated by the GLRX5-BOLA1 hetero-dimer was stable against reduction by dithionite creating a CD spectrum in which the peak at 460 nm was maintained but that at 400 nm was lost. In contrast, the cluster of holo-GLRX5 was destroyed upon dithionite treatment with no residual CD peaks (Figure 7A and Figure 7\u2014figure supplement 1A). These results demonstrate that BOLA1 stabilized the shared [2Fe-2S] cluster in the hetero-dimer with GLRX5.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig7-v3.jpg)\n\n**Figure 7.:** (A\u2013B) Chemical reconstitution of Fe/S clusters in buffer R was performed with GLRX5 in the absence or presence of stoichiometric amounts of (A) BOLA1 or (B) BOLA3, and CD spectra were monitored under anaerobic conditions. Additional spectra were recorded after addition of 2 mM dithionite (DT). (C\u2013D) Chemically reconstituted GLRX5 was titrated with the indicated concentrations of BOLA3 in (C) buffer N or (D) buffer P, and CD spectra (corrected for dilution) were recorded under anaerobic conditions. Abbreviations for varied buffer conditions: 7, 8: pH; N, 150 mM NaCl; G, 5 mM GSH.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A,C) Chemically reconstituted GLRX5 was mixed in buffer R (lacking additional GSH) with a stoichiometric amount of (A) BOLA1 or (C) BOLA3, and CD spectra were recorded under anaerobic conditions. Additional spectra were recorded after addition of 2 mM dithionite (DT). (B, D) Chemically reconstituted GLRX5 was titrated with the indicated concentrations of (B) BOLA1 or (D) BOLA3, and CD spectra (corrected for dilution) were recorded under anaerobic conditions.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) The gel filtration elution profile of co-reconstituted equimolar holo-GLRX5-BOLA3, holo-GLRX5 (offset by OD 0.015), or co-reconstituted equimolar GLRX5-BOLA1 (offset by OD 0.045) was recorded at 420 nm in buffer R. Elution positions of molecular marker proteins are indicated in kDa. (B) As a control, the elution behavior of the holo-GLRX5+BOLA3 mixture or BOLA3 alone were recorded at 280 nm in parallel to part A. Fractions of the holo-GLRX5+BOLA3 mixture were analyzed for GLRX5 and BOLA3 by Coomassie and immunostaining (bottom part).\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig7-figsupp3-v3.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) NFU1 was used in either apo- or holo-form and mixed at increasing concentrations with 200 nM fluorescently labeled BOLA1 or BOLA3. Microscale thermophoresis (MST) analyses were performed under anaerobic conditions, and dissociation constants (Kd) were determined. Control experiments were performed with human [2Fe-2S] ferredoxin FDX2, cytochrome c, and RNase A. Error bars indicate the SD (n\u00a0=\u00a03). (B\u2013E) Examples for original MST data.\n\nA strikingly different Fe/S cluster behavior was observed upon BOLA3-GLRX5 complex formation. Hardly any CD spectral changes were observed upon co-reconstituting or mixing GLRX5 and BOLA3 (Figure 7B and Figure 7\u2014figure supplement 1C,D). Further, the Fe/S cluster was not protected against destruction by dithionite treatment indicating rather different coordination situations for the [2Fe-2S] clusters in the two GLRX5-BOLA heterodimers. These results are consistent with the different NMR chemical shift changes in the putative Fe/S cluster binding regions of the two BOLAs in the hetero-complexes (Figure 6C,D). They do not explain, however, why NMR still detected holo-specific changes in the putative cluster-binding region of the BOLA3 hetero-complex (Figure 6D). Since the NMR data were recorded in GSH-containing buffer at lower pH, we repeated the CD analysis under NMR buffer conditions. We found a general decrease of the CD peaks upon GLRX5-BOLA3 hetero-complex formation (Figure 7C). These changes mainly depended on the presence of GSH, and not salt or pH (Figure 7D). In all cases, the CD signal decrease did not reach saturation even after addition of a more than tenfold molar excess of BOLA3 over holo-GLRX5. This result indicated a rather low affinity for this interference of BOLA3 with the [2Fe-2S] cluster. Overall, the CD data indicate a rather weak and GSH-dependent influence of BOLA3 on the\u00a0GLRX5 [2Fe-2S] cluster which is not stabilized by hetero-complex formation.\n\nTo independently analyze the GLRX5-BOLA complex formation, we used size exclusion chromatography. Holo-GLRX5 (recorded at 420 nm) eluted at 44\u2009kDa indicative of homodimer with bound Fe/S cluster (Figure 7\u2014figure supplement 2A). A significantly smaller molecular mass was observed for the heterodimeric GLRX5-BOLA1 (32\u2009kDa), while the mixture of holo-GLRX5 and BOLA3 did not alter the elution behavior of GLRX5 at 420 nm. The elution profile at 280 nm showed no significant protein peak around 30\u2009kDa that might represent a GLRX5-BOLA3 heterodimer (Figure 7\u2014figure supplement 2B). Further, BOLA3 from the GLRX5-BOLA3 mixture eluted exclusively at the position of BOLA3 alone. These results support the formation of a stable heterodimer between GLRX5 and BOLA1, yet the interaction of GLRX5 with BOLA3 appears to be kinetically unstable, especially in the absence of GSH.\n\nThe lack of stable interaction between GLRX5 and BOLA3 raised the question of whether the latter could interact with NFU1. Since Fe/S cluster binding to NFU1 was CD-silent, we performed in vitro binding studies by microscale thermophoresis (MST), an equilibrium method that can be performed under anaerobic conditions (Webert et al., 2014). For these interaction experiments we used both apo-NFU1 and chemically reconstituted holo-NFU1 carrying a [4Fe-4S] cluster (Tong et al., 2003). MST indeed showed a specific interaction between the two BOLA proteins and both apo- and holo-NFU1 (Figure 7\u2014figure supplement 3). The dissociation constants (Kd) of the interactions were in the range of 3 \u00b5M, with the notable exception of a fourfold higher affinity detected for BOLA3 and holo-NFU1 (Kd = 0.8 \u00b5M). As a control, no significant affinity was observed for human [2Fe-2S] ferredoxin FDX2, cytochrome c or RNase A as control proteins. Collectively, these results data suggest that holo-GLRX5 preferentially cooperates with BOLA1, and holo-NFU1 with BOLA3.\n\n## Discussion\n\nIn this work, we have defined the molecular function of the mitochondrial Bol1 and Bol3 proteins (mBols) as specific ISC assembly factors required for the insertion of [4Fe-4S] clusters into a small subset of mitochondrial target apoproteins. The two mBols act late in the ISC pathway, and execute a largely overlapping function, because only simultaneous deletion of both BOL genes was associated with appreciable effects on mitochondrial [4Fe-4S] target proteins (Figure 8). Lipoic acid synthase (LIAS) with its two [4Fe-4S] clusters is the primary client of mBol function because of strong effects on lipoic acid-dependent proteins (such as PDH and KGDH) in bol13\u0394 cells. These severe effects were observed under all experimental conditions tested, unlike the comparatively weak effects on SDH (complex II) which typically is one of the more sensitive mitochondrial Fe/S proteins upon ISC factor defects. Therefore, we cannot exclude an indirect effect of the BOL gene deletion on SDH maturation. The [4Fe-4S] aconitase, on the other hand, was not or hardly affected in bol13\u0394 cells distinguishing the BOL deletion phenotype from that of all other known ISC genes, with the exception of the complex I-specific IND1 (Bych et al., 2008; Sheftel et al., 2009). We propose that the rather inconspicuous effects on aconitase are indirect consequences of the metabolic and respiratory alterations arising from lipoic acid-dependent enzyme defects which mainly affect the citric acid cycle (PDH and KGDH) and the amino acid metabolism (BCKDH, GCS; Figure 8). The functions of the mBols are largely overlapping, yet not entirely identical. This was evident from small effects on LIAS and SDH in bol3\u0394 cells, versus no detectable alterations upon BOL1 deletion. Moreover, double deletion of BOL3 and NFU1, encoding another late-acting ISC factor (Navarro-Sastre et al., 2011), (Melber et al., 2016; accompanying manuscript), exacerbated the Fe/S protein defects compared to single deletions, while double deletion of BOL1 and NFU1 behaved similarly to nfu1\u0394 cells (Figure 4A,B). Two models may explain the largely complementary functions of the two mBols. i) The mBols assist the same biochemical reaction. In this case, the subtle differences between bol1\u0394 and bol3\u0394 strains may be due to minor target apoprotein specificities of the two mBols or the different protein interactions with Grx5 and Nfu1. ii) The mBols act consecutively in two independent maturation steps that both can be bypassed to some extent. Even though we biochemically favor the first possibility, current knowledge does not allow a more precise mechanistic definition of mBol function. Taken together, the major evident physiological function of the yeast mBol proteins is in lipoate synthase maturation. A similar defect is seen in human cells obtained from BOLA3 patients (Baker et al., 2014; Cameron et al., 2011; Haack et al., 2013). This phenotypical resemblance suggests that the yeast mBols and at least human BOLA3 are functionally similar. Even though yeast appears to be a suitable model system for the physiological and mechanistic investigation of mBols, the two human BOLAs now need to be studied in cell culture to gain better insights into their relative function.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/16673/elife-16673-fig8-v3.jpg)\n\n**Figure 8.:** Members of the core ISC assembly machinery including the sulfur donor NFS1, the scaffold protein ISCU, and dedicated chaperones (Chap.) mediate the assembly of a transiently bound, glutathione (GS)-coordinated [2Fe-2S] cluster on the monothiol glutaredoxin GLRX5 which is essential for [2Fe-2S] protein maturation, cytosolic Fe/S protein assembly (CIA), and cellular iron regulation in yeast. With the help of ISCA1, ISCA2, and IBA57, the GLRX5-bound [2Fe-2S] cluster is converted into a [4Fe-4S] type. BOLA1 and BOLA3 together with NFU1 and IND1 function in a\u00a0specific assembly of mitochondrial [4Fe-4S] proteins as indicated. The central target of the BOLA proteins is the Fe/S protein lipoic acid (LA) synthase (LIAS). Its product is used as a cofactor of five mitochondrial enzymes including pyruvate dehydrogenase (PDH) and 2-ketoglutarate dehydrogenase (KGDH). Based on the hetero-complex formation with the BOLA proteins an additional function of GLRX5 in this late phase of mitochondrial Fe/S protein assembly is likely. Mutations in human NFU1 and BOLA3 cause multiple mitochondrial dysfunction syndromes (MMDS; for review see [Beilschmidt and Puccio, 2014; Stehling et al., 2014]).\n\nSeveral findings allowed us to define the site of action of the mBols in the multi-step ISC assembly pathway (Figure 8). First, the mBols were not required for maturation of mitochondrial [2Fe-2S] proteins or cytosolic Fe/S proteins. Second, their deletion did not affect the yeast cellular iron regulon. These criteria distinguish the mBol phenotype from that of the\u00a0components of the core ISC machinery including Grx5, that\u00a0is the final core ISC factor (Uzarska et al., 2013), and suggest that mBols act subsequently to Grx5. This view is further corroborated by our finding that, third, 55Fe incorporation into Grx5 occurred independently of mBols. Finally, the function of the mBols must be after the involvement of Isa-Iba57 proteins in the [4Fe-4S] cluster formation, because the mBols exhibit high [4Fe-4S] target specificity. In Isa-Iba57-defective cells, all mitochondrial [4Fe-4S] proteins and the non-Fe/S protein cytochrome oxidase are severely affected, unlike in bol13\u0394 cells (M\u00fchlenhoff et al., 2011; Sheftel et al., 2012). Overall, the site of action of the mBols is similar to that of the late-acting ISC assembly factor Nfu1 (Navarro-Sastre et al., 2011) (Figure 8). However, we found that the mBol and Nfu1 proteins cannot complement each other\u2019s function, even after overexpression, suggesting that they both fulfil a highly specific task in the dedicated insertion of [4Fe-4S] clusters into target apoproteins.\n\nThe observation that the mBols function subsequently to Grx5 is somewhat unexpected in light of our findings that the mBols form binary complexes with this core ISC component. Apparently, complex formation with the mBols is not critical for Grx5\u2019s major function as a core ISC factor (Figure 8), as the GRX5 deficiency is associated with rather severe defects in virtually all mitochondrial and cytosolic Fe/S proteins plus a misregulation of cellular iron homeostasis (Rodriguez-Manzaneque et al., 2002; Uzarska et al., 2013; Ye et al., 2010), radically distinguishing this phenotype from that of the rather inconspicuous BOL1-BOL3 deletion. It is well possible that the Grx5-mBol complexes play a role at the later stage of Fe/S cluster insertion into apoproteins. This seems likely based on interaction between BOLA1 and GLRX5 observed in human cells (Willems et al., 2013), and similar interactions reported in the accompanying manuscript (Melber et al., 2016). At present, it is impossible to verify such a function by in vivo studies, because the potential Grx5 involvement at this later stage of the ISC pathway is hidden by the severe GRX5 deletion phenotype.\n\nIn our present work, we have characterized the Grx5-mBol interactions by a number of in vitro techniques including gel filtration, CD spectroscopy and NMR structural analyses. Human GLRX5 interacted with both mBols, stoichiometrically forming a 1:1 complex both in the apo- and chemically reconstituted holo-forms, involving similar regions on the three proteins as revealed by NMR studies. However, for the holo-forms, further residues were affected, and were clustered around the region containing the invariant histidine (His102 in BOLA1 and His96 in BOLA3; Figure 7C,D), which in cytosolic Bol2 is a ligand for Fe/S cluster binding with Grx3-Grx4 (Li et al., 2011). These Bol regions include other potential cluster ligands, which are two His residues in BOLA1, located at the end of \u03b22 and in the loop between \u03b21 and \u03b22, and one Cys in BOLA3, located in the loop between \u03b21 and \u03b22. CD spectroscopy revealed striking differences in Fe/S cluster binding to the two holo-GLRX5-BOLA complexes. Compared to holo-GLRX5, the holo-GLRX5-BOLA1 complex showed characteristic new spectral features including a new peak at ~400 nm. GLRX5 and BOLA1 coordinate the [2Fe-2S] cluster with high affinity. The spectral features of the complex were rather insensitive to changes in ionic conditions or to the presence of additional GSH. Most characteristically, the [2Fe-2S] cluster of GLRX5 was stabilized by BOLA1 binding against destruction by the reductant dithionite indicating a stable holo-GLRX5-BOLA1 complex.\n\nAll these criteria were different for the holo-GLRX5-BOLA3 complex. First, the CD spectral features of the holo-GLRX5-BOLA3 complex differed from those of holo-GLRX5 by a general signal decrease, and were observed mainly in the presence of GSH suggesting that without added GSH the GLRX5 cluster is not shared with BOLA3. Second, the spectral changes induced by BOLA3 addition to holo-GLRX5 were not saturable indicating a rather weak influence of BOLA3 on the GLRX5 Fe/S cluster. Third, the CD signals became rather weak at high BOLA3 or salt concentrations. Finally, dithionite readily destroyed the [2Fe-2S] cluster of GLRX5 in the presence and absence of BOLA3. In support of this data, gel filtration did not identify a stable complex between holo-GLRX5 and BOLA3 indicating that their interaction is kinetically labile, and a hetero-dimer may dissociate during the non-equilibrium method. All these findings document radically different Fe/S cluster binding properties of the two GLXR5-BOLA complexes with BOLA1 stabilizing and BOLA3 destabilizing the [2Fe-2S] cluster. Interestingly, we found a preferential interaction of BOLA3 with the holoform of NFU1 by thermophoresis. These data suggest that BOLA3 may stabilize the [4Fe-4S] cluster bound on NFU1. A specific genetic interaction of NFU1 and BOL3 supports our biochemical findings. Double deletion of these genes exacerbated the defects of SDH and LIAS, whereas simultaneous deletions of NFU1 and BOL1 did not (Figure 4A and B). This suggests that Bol3 and Nfu1 cooperate in SDH and LIAS maturation. Future biochemical studies have to address the physiological meaning of the stabilizing or destabilizing function of the mBols for the different Fe/S clusters on Grx5 and Nfu1.\n\nThe NMR structures of the mBols share a similar fold, alike to those of other eukaryotic homologous (Abendroth et al., 2011; Kasai et al., 2004; Roret et al., 2014). Further, similar interacting regions for the apo- and holo-states of the GLRX5-BOLA heterodimers were found, and a similar location of the invariant His residue, a known Fe/S cluster ligand in Bol2 (Li et al., 2011). However, we note that its surrounding is structurally different in the two BOLAs, that\u00a0is His102 of BOLA1 is the first residue following a long \u03b2-strand, while His96 of BOLA3 is in a 310 helix (Figure 6C). The other potential Fe/S cluster ligands are located in structurally different positions of the two mBols. In particular, the location of the two conserved His58, His67 residues in BOLA1 and of Cys59 in BOLA3 are different (Figure 6C). These features can possibly explain the observed differences in the binding and stability of [2Fe-2S] clusters to the holo heterodimers with GLRX5. The distinct functional roles of the mBols could be viewed as consequence of the different coordination spheres of the Fe/S cluster.\n\nThe role of the mBols in a late step of the mitochondrial ISC pathway fits well with our observation that their functional deficiency (bol13\u0394 cells) does not cause any significant defects on cytosolic Fe/S proteins. Interestingly, a combination of these gene deletions with BOL2 elicited significant effects, even though these were rather weak compared to known core ISC or CIA deficiencies (see, e.g., Gerber et al., 2004; Hausmann et al., 2005; Netz et al., 2010). The defects, especially in the triple deletion mutant bol123\u0394, are therefore best explained by combined detrimental effects of mitochondrial respiratory and metabolic changes arising from the BOL1-BOL3 deletion (see above) and the disturbed cellular iron homeostasis resulting from BOL2 ablation. Single BOL2 deletion is not associated with major phenotypes apart from iron homeostasis (Kumanovics et al., 2008) (Figure 1\u2014figure supplement 3). This is clearly different from the usual lethality of CIA gene deletions (Netz et al., 2014; Paul and Lill, 2015), and fits well with the rather weak or even inconspicuous effects of a BOL2 deletion on the maturation of the cytosolic Fe/S proteins Leu1 and Rli1. Any slight effects are most likely due to the auxiliary role of Bol2 in iron metabolism (Kumanovics et al., 2008). In this function, Bol2 cooperates with Grx3-Grx4 (human PICOT) which, in its role in cellular iron mobilization, is essential for cytosolic Fe/S protein maturation (Banci et al., 2015; Haunhorst et al., 2013; M\u00fchlenhoff et al., 2010).\n\nOur comprehensive physiological investigations of mBol function in yeast reveal that bol13\u0394 cells behave similarly to human patients deficient in BOLA3 (Baker et al., 2014; Cameron et al., 2011; Haack et al., 2013). Patients with the resulting multiple mitochondrial dysfunction syndrome 2 (MMDS 2) show major defects in lipoic acid-dependent enzymes, similar to the most severe effect observed in bol13\u0394 yeast. Moreover, the patient cells are deficient in respiratory complexes I and II, the latter also being affected in yeast. We conclude that the mBol protein function is conserved from yeast to man with a major role in [4Fe-4S] cluster insertion into LIAS and respiratory complexes I and II, whereas Fe/S proteins such as aconitase are matured independently of mBol function. The conclusion of similar mBol functions in yeast and man may be surprising based on the rather inconspicuous yeast deletion phenotypes versus the lethal effect in BOLA3-deficient individuals. This difference may simply reflect the higher complexity of a multi-cellular organism and its dependence on respiration and metabolic homeostasis, whereas yeast can tolerate substantial deviations from optimal conditions. Notably, RNAi-mediated depletion of BOLA1 was associated with rather mild effects (Willems et al., 2013) predicting that the combination with a BOLA3 depletion may create a more pathological phenotype mimicking that of human patients and of bol13\u0394 yeast cells. Our elucidation of the target apoprotein-specific ISC assembly function of mBols will be instrumental for future mechanistic studies on how the mBols facilitate the insertion of [4Fe-4S] clusters into LIAS and possibly other Fe/S proteins. These studies will also have to reveal why other Fe/S proteins such as aconitase are matured efficiently in the absence of these specialized ISC assembly factors.\n\n## Materials and methods\n\n### Yeast strains and growth conditions\n\nS.\u00a0cerevisiae strains used in this study are listed in Supplementary file 1A. Cells were cultivated in rich medium (YP) or synthetic minimal medium (SC) supplemented with amino acids as required and 2% (w/v) glucose, galactose or acetate, or 3% (w/v) glycerol (Sherman, 2002). Iron-depleted minimal media were prepared using yeast nitrogen base without FeCl3 (ForMedium). Plasmids used in this study are listed in Supplementary file 1B. Plasmid constructs were verified by DNA sequencing and/or functional complementation of a corresponding yeast mutant.\n\n### Purification of recombinant proteins\n\nGenes of human BOLA1 (residues 30\u2013137), BOLA3 (25\u2013107), GLRX5 (32\u2013157) and NFU1 (57\u2013254) (each lacking its mitochondrial presequence) were inserted into the multiple cloning site I of pET-Duet1 vector (Novagen-Merck, Darmstadt, Germany) with a N-terminal His-tag. N-terminally tagged proteins were purified from E. coli BL21 (DE3) using a HisTrap HP column (GE Healthcare). The eluted proteins were treated with 5\u2009mM DTT and isolated by gel filtration on a Superdex 200 16/60 gel filtration column (GE Healthcare) in reconstitution buffer R (50\u2009mM Tris-HCl, pH 8.0, 150\u2009mM NaCl, 5% glycerol). For NMR the BOLA proteins (BOLA1, 21\u2013137; BOLA3, 27\u2013107) were obtained from BL21(DE3)GOLD Escherichia coli (Novagen) transformed with pETG20A vector (BOLA1) and pET15 vector (BOLA3). Cells were grown at 37\u00b0C in LB or minimal media with (15NH4)2SO4 and/or 13C-glucose containing 100\u2009\u03bcg/mL ampicillin. Both proteins contained a N-terminal His-tag, which was cleaved by tobacco etch virus protease in 50\u2009mM Tris-HCl pH 8, 0.5\u2009mM EDTA, 5\u2009mM GSH, and 1\u2009mM DTT overnight at room temperature. GLRX5 protein in its apo- and holo-forms was produced as previously reported (Banci et al., 2014).\n\n### Chemical reconstitution of Fe/S proteins\n\nAll solutions used for chemical reconstitution were prepared freshly in a COY anaerobic chamber by dissolving in degassed water. Protein samples were reduced in buffer R containing 5\u2009mM DTT for 2\u20133\u2009hr on ice in buffer R containing a two fold excess of GSH. Reconstitution was initiated at room temperature by the\u00a0addition of a 2\u20135-fold excess of ferric ammonium citrate. After five minutes a 2\u20135-fold excess of lithium sulfide was slowly added. After 2\u2009hr reconstituted proteins were desalted on a PD-10 column (GE Healthcare) equilibrated with buffer R. Incorporation of the Fe/S clusters into apoproteins was verified by UV-Vis (V-550, Jasco Inc.) and CD spectroscopy (J-815, Jasco Inc.) and the determination of bound iron and acid-labile sulfur (Pierik et al., 1992).\n\n### Circular dichroism spectroscopy\n\nCD spectroscopy (J-815, Jasco Inc.) of human GLRX5 reconstituted either alone (>85% holo based on iron and acid-labile sulfur determination) or in the presence of stoichiometric amounts of either BOLA1 or BOLA3 was performed anaerobically (protein concentrations 200\u2013300 \u00b5M) in buffer R, buffer N (50\u2009mM phosphate buffer pH 7, 5\u2009mM GSH, and 5\u2009mM DTT), or buffer P (50\u2009mM phosphate buffer pH 8, 150\u2009mM NaCl, 5\u2009mM GSH). Alternatively, reconstituted holo-GLRX5 was titrated with increasing concentrations of BOLA1 or BOLA3. CD spectra were recorded anaerobically at 21\u00b0C in 1\u2009mm cuvettes.\n\n### Affinity measurements using microscale thermophoresis (MST)\n\nThe bait proteins were fluorescently labeled using the Monolith NT Protein Labeling Kit RED (NanoTemper Technologies) with NT-647 dye as recommended by the manufacturer. Labeled bait proteins (200 nM) were titrated with the indicated unlabeled proteins (from 200 \u00b5M to 6.1 nM) in buffer T (50\u2009mM KPi, pH 7.4, 150\u2009mM NaCl, 5% glycerol, 0.05 mg/ml BSA, 0.05% Tween20). Binding assays were performed using Monolith NT.115 (NanoTemper Technologies) at 21\u00b0C (LED power between 40% and 60%, IR laser power 75%) in standard capillaries under anaerobic conditions at 680 nm. The\u00a0results were processed by NanoTemper Analysis 1.2.009 and GraphPadPrism5 software to estimate Kd values.\n\n### NMR experiments\n\nAll NMR experiments required for resonance assignment and structure calculations of BOLA1 (PDB ID 5LCI; BMRB 34013) and BOLA3 (PDB ID 2NCL; BMRB 26031) were recorded on Bruker AVANCE 500, 700 and 900 MHz spectrometers on 0.5\u20131\u2009mM 13C,15N-labeled or 15N-labeled BOLA1 and BOLA3 samples in 50\u2009mM phosphate buffer, pH 7.0, 5\u2009mM DTT, containing 10% (v/v) D2O. All NMR spectra were collected at 298\u2009K, processed using the standard BRUKER software (Topspin) and analyzed through the CARA program. The 1\u2009H, 13C and 15N resonance assignment of BOLAs were performed following a standard triple-resonance and TOCSY-based approach. Secondary structure analysis was performed by TALOS+. Structure calculations of BOLA3 and BOLA1 were performed with the software package UNIO (ATNOS/CANDID/CYANA). The 20 conformers with the lowest residual target function values were subjected to restrained energy minimization in explicit water with the program AMBER 12.0. (D.A. Case et al. University of California, San Francisco). The quality of the structures was evaluated using the Protein Structure Validation Software suite (PSVS) and the iCING program. 15N heteronuclear relaxation experiments on 15N-labeled samples of BOLA1 and BOLA3 were recorded on Bruker AVANCE 500\u00a0MHz spectrometer at 298\u00a0K to measure 15N backbone longitudinal (R1) and transverse (R2) relaxation rates, as well as the heteronuclear 15N[1H] NOEs. The rotational correlation time values were estimated from the R2/R1 ratio using the program QUADRATIC_DIFFUSION. The relaxation data for those NHs having an exchange contribution to the R2 value or exhibiting large-amplitude fast internal motions were excluded from the analysis. Theoretical estimates of the rotational correlation time under the chosen experimental conditions of magnetic field and temperature were obtained using HYDRONMR program following a standard procedure (Figure 6\u2014figure supplement 3).\n\nThe interaction between apo-GLRX5 and BOLA proteins was investigated by 1H-15N HSQC NMR spectra, titrating 15N-labeled apo-GLRX5 with unlabeled BOLA1 or BOLA3, and 15N labeled BOLA1 or BOLA3 with unlabeled apo-GLRX5 in degassed buffer N containing 10% (v/v) D2O) at 298K. Spectral changes were monitored upon the addition of increasing amounts of the unlabeled partner. Protein interaction between [2Fe-2S] holo-GLRX5 and BOLA proteins was investigated comparing 1H-15N HSQC NMR spectra of 15N-labeled BOLA1 (or BOLA3) with that of a 1:1 15N-labeled BOLA1 (or BOLA3)-unlabeled apo GLRX5 mixture chemically reconstituted with [2Fe-2S], or of 15N-labeled apo-GLRX5 with that of a 1:1 15N-labeled apo-GLRX5-unlabeled BOLA1 (or BOLA3) mixture chemically reconstituted with [2Fe-2S], in degassed buffer N containing 10% (v/v) D2O) at 298K. NMR data were analyzed with CARA program.\n\n### Miscellaneous methods\n\nThe following published methods were used: manipulation of DNA and PCR (Sambrook and Russell, 2001); transformation of yeast cells (Gietz and Woods, 2002); isolation of yeast mitochondria and post-mitochondrial supernatant (Diekert et al., 2001); immunostaining (Harlow and Lane, 1998); determination of enzyme activities and of promoter strength using FET3-GFP or FIT3-GFP reporter plasmids (Molik et al., 2007); in vivo labeling of yeast cells with 55FeCl (ICN) and measurement of 55Fe-incorporation into Fe/S proteins by immunoprecipitation and scintillation counting (Molik et al., 2007; Pierik et al., 2009). Antibodies were raised in rabbits against recombinant purified proteins. Antibodies against c-Myc or HA were obtained from Santa-Cruz, protein A sepharose from GE Healthcare.\n",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f9ed0254-f255-442d-ab82-7cf580dabc4b",
+      "submission_id": "acb92dcd-b114-48fd-ab7a-0bd01bfa4128",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nikolaus Pfanner, University of Freiburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16673.029](https://doi.org/10.7554/eLife.16673.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mitochondrial Bol1 and Bol3 function as assembly factors for specific iron-sulfur proteins\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Klaus Pfanner, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Michael Marletta as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript authored by Uzarska et al. concerns BOL-type proteins of the mitochondria. The analysis reported focuses on two approaches \u2013 genetic analysis in S. cerevisiae (BOL1 and BOL3) and biophysical analysis of human proteins (BOLA1 and BOLA3). This is the first analysis of the yeast genes. The authors show that a single deletion of either Bol1 or 3 produces very mild or no phenotype in the activities of target proteins. The double deletion produces a measurable phenotype which they state is milder compared with other disruptions earlier in the Fe-S pathway. They investigated the interaction of Bol1 and Bol3 with GRX5 and NFU1, two other components of the late Fe-S assembly pathway.\n\nOverall, the experiments are of high quality and the clear linkage to Fe-S cluster biogenesis and the apparent specificity for 4Fe-4S clusters is important new information.\n\nEssential revisions:\n\n1) The functional difference between Bol1 and Bol3 is difficult to depict. Deletion of only one of them showed hardly phenotypical consequences, yet deleting both showed drastic effects. Is there a compensatory effect in terms of protein levels of Bol1 and Bol3 and even Nfu1 and Grx5 in bol1-\u03b4, bol3-\u03b4 and nfu1-\u03b4 strains? Overexpression of Bola3 in bola1-\u03b4 may overcome the weak interaction of Bola3-Glrx5 to substitute for Bola1.\n\nThe observation that Bol1 and Bol3 interact with different known components of the Fe-S cluster biosynthetic pathway does not suggest to me that they have overlapping functions as claimed. Rather I would say that the double deletion produces a synthetic sick strain, consistent with both proteins acting in the same pathway. They also claim that yeast is a good model for the human disease, but in humans mutations in BOLA3 alone clearly produce a very severe biochemical and clinical phenotype, so I would be tempted to conclude that BOLA1 and BOL3 have non-overlapping functions in humans.\n\n2) A key aspect of the yeast analysis that is missing is analysis of the levels of the proteins in cells being analyzed, particularly Bol1 and Bol3, but also Nfu1. This information is important for interpreting the differences in the phenotypes of deletion strains. But it is even more so in the cases where additional copies are expressed from plasmids. The effect of such additional copies can be interpreted if the fold overexpression is known and the relative level of protein being overexpressed to the level normally present of the protein.\n\nAt a minimum the authors need to intellectually address this issue and be more transparent about what they do and don't know. Of course, the paper would be much stronger if protein levels were measured using specific antibodies or tagged proteins that were demonstrated to be functional.\n\n3) The relationship between the yeast and human sections of the manuscript is not so clear.\n\nWhat is the sequence relationship between the yeast mBols and the human BOLAs? It appears from the alignment in Figure 5\u2014figure supplement 2 that yeast Bol1 is more similar to BOLA1 and yeast Bol3 is more similar to BOLA3. But this is not at all clear as one is reading through the manuscript. It would be very helpful to the reader if this be addressed directly up front at the beginning of the manuscript. Also a bit of background as to what are the core features that \"define\" a \"BOL\" protein and what in general is known about \"distinguishing characteristics\" among members.\n",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ffba320b-8e47-4f6d-bc11-c3525606dcfa",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C1",
+      "claim": "Bol1 and Bol3 are mitochondrial BOLA family proteins that function as assembly factors for specific iron-sulfur proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we characterize the BOLA family proteins Bol1 and Bol3 as specific mitochondrial ISC assembly factors that facilitate [4Fe-4S] cluster insertion into a subset of mitochondrial proteins such as lipoate synthase and succinate dehydrogenase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the main finding that Bol1 and Bol3 are ISC assembly factors, supported by experimental data throughout the manuscript including enzyme activity assays, 55Fe radiolabeling, and structural studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "16d65754-ccf6-4f1d-b843-effaed5723b6",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C2",
+      "claim": "Bol1 and Bol3 facilitate [4Fe-4S] cluster insertion into lipoate synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we characterize the BOLA family proteins Bol1 and Bol3 as specific mitochondrial ISC assembly factors that facilitate [4Fe-4S] cluster insertion into a subset of mitochondrial proteins such as lipoate synthase and succinate dehydrogenase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity data showing decreased PDH and KGDH activities (which depend on lipoic acid from LIAS) in bol13\u0394 cells, and lipoylation defects shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "2b5728e4-9513-45ad-8e98-d0a70759b60a",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C3",
+      "claim": "Bol1 and Bol3 facilitate [4Fe-4S] cluster insertion into succinate dehydrogenase.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we characterize the BOLA family proteins Bol1 and Bol3 as specific mitochondrial ISC assembly factors that facilitate [4Fe-4S] cluster insertion into a subset of mitochondrial proteins such as lipoate synthase and succinate dehydrogenase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SDH activity measurements showing decreased activity in bol13\u0394 cells (Figure 1B) and 55Fe incorporation assays showing reduced Fe/S cluster binding to SDH (Figure 2B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "e6ab6212-4a30-49af-993f-7aaf6d92f92f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C4",
+      "claim": "Bol1 and Bol3 perform largely overlapping functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Bol1-Bol3 perform largely overlapping functions, yet cannot replace the ISC protein Nfu1 that also participates in this phase of Fe/S protein biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data showing that only simultaneous deletion of both BOL1 and BOL3 creates significant Fe/S protein defects, while single deletions have minimal effects (Figures 1 and 2).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "92d6702d-35b8-4c34-9718-adf10e988eef",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C5",
+      "claim": "Bol1 and Bol3 cannot replace the ISC protein Nfu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bol1-Bol3 perform largely overlapping functions, yet cannot replace the ISC protein Nfu1 that also participates in this phase of Fe/S protein biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by complementation experiments showing that Bol3 cannot rescue nfu1\u0394 defects and Nfu1 cannot rescue bol13\u0394 defects (Figure 4C-F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "80b9b37b-8a99-4097-95a9-27313ab6605d",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C6",
+      "claim": "Bol1 and Bol3 form dimeric complexes with monothiol glutaredoxin Grx5.",
+      "claim_type": "EXPLICIT",
+      "source": "Bol1 and Bol3 form dimeric complexes with both monothiol glutaredoxin Grx5 and Nfu1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR titration experiments showing 1:1 complex formation (Figure 6), gel filtration data (Figure 7\u2014figure supplement 2), and NMR relaxation data indicating heterodimeric complexes (Figure 6\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "85d885e6-3f25-40ef-b1df-de17a05c7c91",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C7",
+      "claim": "Bol1 and Bol3 form dimeric complexes with Nfu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Bol1 and Bol3 form dimeric complexes with both monothiol glutaredoxin Grx5 and Nfu1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscale thermophoresis (MST) data showing specific interactions with Kd values in the 3 \u00b5M range (Figure 7\u2014figure supplement 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c07f5e32-4a2a-4b35-9213-3f9f9e986fb7",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C8",
+      "claim": "Complex formation between Bol proteins and Grx5 differentially influences the stability of the Grx5-Bol-shared Fe/S clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex formation differentially influences the stability of the Grx5-Bol-shared Fe/S clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CD spectroscopy showing that BOLA1 stabilizes the [2Fe-2S] cluster against dithionite reduction while BOLA3 does not (Figure 7A-B).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "1ae9e022-e240-405f-93e5-b31d6e845fdf",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C9",
+      "claim": "Mutations in human BOLA3 are associated with multiple mitochondrial dysfunction syndrome 2 (MMDS2).",
+      "claim_type": "EXPLICIT",
+      "source": "A mutation in human BOLA3 encoding a mitochondrial protein is associated with diverse defects summarized as multiple mitochondrial dysfunction syndrome 2 (MMDS2; Baker et al., 2014; Cameron et al., 2011; Haack et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published patient studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "cf7a2b6e-a033-4c27-a979-fcb61e779755",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C10",
+      "claim": "BOLA3 deficiency results in decreased functions of respiratory complexes I and II.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, BOLA3 deficiency results in decreased functions of respiratory complexes I and II as well as lipoic acid-dependent enzymes such as pyruvate dehydrogenase (PDH), 2-ketoglutarate dehydrogenase (KGDH), and glycine cleavage system (GCS) (Mayr et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published patient study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "56efb1a0-987e-45db-9cde-e7039dee19b9",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C11",
+      "claim": "BOLA3 deficiency results in decreased functions of lipoic acid-dependent enzymes including pyruvate dehydrogenase, 2-ketoglutarate dehydrogenase, and glycine cleavage system.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, BOLA3 deficiency results in decreased functions of respiratory complexes I and II as well as lipoic acid-dependent enzymes such as pyruvate dehydrogenase (PDH), 2-ketoglutarate dehydrogenase (KGDH), and glycine cleavage system (GCS) (Mayr et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published patient study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "32217479-71a0-402c-a92f-b26b54f94d72",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C12",
+      "claim": "Yeast Bol1 and Bol3 are localized exclusively in the mitochondrial matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "Both proteins were exclusively present in the mitochondrial fraction and absent in the cytosol (Figure 1\u2014figure supplement 2A). Upon sub-fractionation of mitochondria by hypotonic swelling or detergent lysis, the Bol proteins behaved similar to the matrix proteins Tim44 and Mge1 (Figure 1\u2014figure supplement 2B). Thus, Bol1 and Bol3 are constituents of the mitochondrial matrix.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell fractionation experiments and protease protection assays shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "e7005188-8adf-47f2-91ea-cd2943d9940c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C13",
+      "claim": "Simultaneous deletion of BOL1 and BOL3 creates a weak respiratory defect.",
+      "claim_type": "EXPLICIT",
+      "source": "All deletion strains grew at wild-type rates on minimal media containing the non-fermentable carbon sources glycerol or acetate with the exception of bol13\u0394 and bol123\u0394 strains (Figure 1\u2014figure supplement 3). Apparently, simultaneous deletion of BOL1 and BOL3 created a weak respiratory defect which is slightly weaker than that seen for NFU1 deletion (Schilke et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by growth assays on non-fermentable carbon sources shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "942e9177-7546-4e72-a41e-5545354ddc44",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C14",
+      "claim": "Single deletions of BOL1 or BOL3 do not affect aconitase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single deletions of BOL1 or BOL3 did not affect any of these enzyme activities relative to wild-type cells with the exception of a slight, but significant decrease of SDH in bol3\u0394 cells (Figure 1A\u2013E, bars 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "25cd802b-ddf6-452c-bd4d-9cae5531a8a2",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C15",
+      "claim": "Single deletion of BOL3 causes a slight but significant decrease in SDH activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single deletions of BOL1 or BOL3 did not affect any of these enzyme activities relative to wild-type cells with the exception of a slight, but significant decrease of SDH in bol3\u0394 cells (Figure 1A\u2013E, bars 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "ebc959b6-ccd4-4917-a0c5-311b7d465321",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C16",
+      "claim": "Double BOL1-BOL3 deletions result in substantial decreases of Fe/S cluster-dependent enzyme activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, double BOL1-BOL3 deletions resulted in substantial, up to threefold decreases of the Fe/S cluster-dependent enzyme activities, an effect comparable to that seen for nfu1\u0394 cells (bars 4 and 6) (Navarro-Sastre et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "310a4a3d-8aa4-4833-bc8b-5b69375cfd30",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C17",
+      "claim": "Aconitase retains normal activity in bol13\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable exception was aconitase which retained normal activity in bol13\u0394 cells (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c080601d-8413-48c8-bd87-a1a28b8165d9",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C18",
+      "claim": "Additional ablation of BOL2 does not substantially exacerbate the effects of BOL1-BOL3 deletion on mitochondrial Fe/S enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional ablation of BOL2 (strain bol123\u0394, bar 5) did not substantially exacerbate these effects suggesting that the mitochondrial and cytosolic Bol proteins act independently.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "2904a9dc-6a57-45f5-b678-64daba294681",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C19",
+      "claim": "The decrease in SDH activity in bol13\u0394 cells is due to a direct defect in Fe/S cluster assembly rather than decreased protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in SDH was likely due to a direct defect in Fe/S cluster assembly, because SDH protein levels remained unchanged in immunoblots (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data showing unchanged SDH protein levels in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "df25695e-7233-4891-a17e-b98fe8c8d165",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C20",
+      "claim": "bol13\u0394 and nfu1\u0394 cells show a lipoylation defect of the E2 subunits of PDH and KGDH.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with the decreased PDH and KGDH activities, we also found a lipoylation defect of the E2 subunits of these enzymes by immunostaining against lipoic acid (Figure 1F) (Gelling et al., 2008; Schonauer et al., 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunoblot data showing decreased lipoic acid staining in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "546adbd3-9938-49a2-8c4c-216bb2bc9de9",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C21",
+      "claim": "BOL1 and BOL3 can efficiently rescue the SDH activity deficiencies when reintroduced into bol123\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to verify that the loss of the enzyme activities was specific, BOL1 and BOL3 genes were reintroduced into the bol123\u0394 deletion strain by expression from plasmids. Both Bol1 and Bol3 were able to efficiently rescue the deficiencies in SDH activities (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "24fd141b-281e-48a4-8f57-c3eecf0b1fcc",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C22",
+      "claim": "There is no significant effect on 55Fe incorporation into aconitase upon single, double or triple BOL gene deletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the enzyme activity data (Figure 1), we found no significant effect on 55Fe incorporation into aconitase upon single, double or triple BOL gene deletion (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling and immunoprecipitation data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c808fbfa-2a85-4bca-8c29-92b5ac421063",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C23",
+      "claim": "Deletion of BOL3, alone or in combination with BOL1 and BOL2, results in a 40% decrease in 55Fe binding to SDH.",
+      "claim_type": "EXPLICIT",
+      "source": "For SDH (assayed by precipitation of the myc-tagged Fe/S cluster subunit Sdh2 co-expressed with Sdh1) a 40% decrease in 55Fe binding was observed upon deletion of BOL3, also in combination with BOL1 and BOL2 deletions (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling and immunoprecipitation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f65d6f41-2683-4455-8d5b-91cd7cb1b950",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C24",
+      "claim": "BOL gene deletions result in 60% decreases in 55Fe binding to mitochondria-targeted HiPIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar, yet slightly stronger decreases in 55Fe binding (60%) were detected for mitochondria-targeted HiPIP, a bacterial [4Fe-4S] cluster-containing ferredoxin (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling and immunoprecipitation data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "929606a9-e174-4db1-accf-43674e7bdfa0",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C25",
+      "claim": "Single deletion of BOL1 has no effects on 55Fe binding to tested Fe/S proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "For all the tested Fe/S proteins, single deletion of BOL1 had no effects on 55Fe binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "92d18a33-90f3-4ce7-9715-7208dff2f50c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C26",
+      "claim": "Reintroduction of Bol1 or Bol3 into bol123\u0394 strain completely restores wild-type 55Fe binding activity to HiPIP.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed defects were specific, because reintroduction of Bol1 or Bol3 into the bol123\u0394 strain via overproducing vectors completely restored wild-type 55Fe binding activity, whereas cytosolic Bol2 or Grx5, as a control, were ineffective (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "bf30e642-3a71-4da6-9dc2-1fb8ffb579a9",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C27",
+      "claim": "Cytosolic Bol2 or Grx5 cannot restore 55Fe binding activity in bol123\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed defects were specific, because reintroduction of Bol1 or Bol3 into the bol123\u0394 strain via overproducing vectors completely restored wild-type 55Fe binding activity, whereas cytosolic Bol2 or Grx5, as a control, were ineffective (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "7a957c6d-2051-4399-8707-9670d52495ad",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C28",
+      "claim": "The deficiency in mBols does not affect 55Fe incorporation into the [2Fe-2S] protein ferredoxin FDX2.",
+      "claim_type": "EXPLICIT",
+      "source": "The deficiency in mBols did not elicit any significant decrease in 55Fe binding to these [2Fe-2S] proteins (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "2c15ca3e-cce3-4fea-88ab-d31eda7bb12b",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C29",
+      "claim": "The deficiency in mBols does not affect 55Fe incorporation into the [2Fe-2S] protein Grx5 from Schizosaccharomyces pombe.",
+      "claim_type": "EXPLICIT",
+      "source": "The deficiency in mBols did not elicit any significant decrease in 55Fe binding to these [2Fe-2S] proteins (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "80e6176a-6d7d-4637-81db-0cdd90f0b5ab",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C30",
+      "claim": "Bol1-Bol3 are dedicated ISC assembly factors specifically involved in the maturation of a subset of mitochondrial [4Fe-4S] but not [2Fe-2S] proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that Bol1-Bol3 are dedicated ISC assembly factors specifically involved in the maturation of a subset of mitochondrial [4Fe-4S] but not of [2Fe-2S] proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 55Fe radiolabeling data showing defects in [4Fe-4S] proteins but not [2Fe-2S] proteins (Figure 2).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "edd5a425-9f5b-4974-857b-672dcf4cc43c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C31",
+      "claim": "The mBols act after Grx5 in the ISC assembly pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the mBols act after Grx5, the final core ISC component (Uzarska et al., 2013), because they were not needed for 55Fe incorporation into Grx5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 55Fe radiolabeling data showing normal Fe/S cluster incorporation into Grx5 in mBol-deficient cells (Figure 2F).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "cfe00068-3891-4187-a55e-ef7e47a782c8",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C32",
+      "claim": "bol2\u0394 cells display a substantial activation of the Aft1-dependent FIT3 and FET3 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Kumanovics et al., 2008), bol2\u0394 cells displayed a substantial activation of the Aft1-dependent FIT3 and FET3 genes in a GFP-based promoter assay (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by promoter activity assays shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "687fc455-e3b3-4e60-8c17-6b0101dc2910",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C33",
+      "claim": "Yeast strains lacking BOL1 and/or BOL3 do not activate the iron regulon.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, yeast strains lacking BOL1 and/or BOL3 behaved like wild-type cells indicating that the mBols are not involved in cellular iron regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by promoter activity assays shown in Figure 3A-B showing no activation of FIT3 and FET3 in bol1\u0394 and bol3\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c9fbf5b5-c3df-4084-a28d-ccb6b34df96c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C34",
+      "claim": "nfu1\u0394 cells do not activate the iron regulon.",
+      "claim_type": "EXPLICIT",
+      "source": "This fits nicely to our conclusion above that Bol1-Bol3 do not belong to the core ISC system. The same situation was observed for cells lacking Nfu1 (Figure 3B), another known late-acting specific ISC assembly factor (Navarro-Sastre et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by promoter activity assays shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "95aaa8ae-2926-4408-a607-dd6933b3435b",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C35",
+      "claim": "Combining BOL2 deletion with BOL1 and/or BOL3 deletion activates the iron regulon more strongly than BOL2 deletion alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, when the BOL2 deletion was combined with genetic ablation of BOL1 and/or BOL3, the iron regulon was activated slightly stronger than in bol2\u0394 cells (Figure 3A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by promoter activity assays shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "1baf2619-3477-4375-82ef-56f1fc6b0dbb",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C36",
+      "claim": "Single BOL2 deletion does not cause major defects in cytosolic Fe/S protein maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "Single BOL2 deletion is not associated with major phenotypes apart from iron homeostasis (Kumanovics et al., 2008) (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Leu1 activity measurements (Figure 3C) and 55Fe incorporation data (Figure 3D) showing minimal effects of BOL2 deletion alone.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "388251eb-92dd-437b-b218-e9fdf111f347",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C37",
+      "claim": "Deletion of BOL1-BOL3 genes does not affect Leu1 enzyme activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we investigated the effects of the three BOL gene deletions on cytosolic Fe/S proteins by assaying the enzyme activity of isopropylmalate isomerase (Leu1). No changes were observed when BOL1-BOL3 genes were deleted either alone or in combination (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "32c66ae7-3e26-454f-b3ae-e23a6c84ecef",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C38",
+      "claim": "bol2\u0394 cells show a twofold decrease in Leu1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, bol2\u0394 cells showed a twofold decrease in Leu1 activity, which further declined upon additional deletion of BOL1-BOL3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "a38ff2cb-235a-4baa-bed2-ffe7b247adc3",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C39",
+      "claim": "Deletion of either BOL1-BOL3 or BOL2 alone hardly affects 55Fe/S cluster binding to Leu1.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of either BOL1-BOL3 or BOL2 hardly affected 55Fe/S cluster binding to Leu1 indicating that neither mitochondrial Bol1-Bol3 nor cytosolic Bol2 perform a decisive role in Leu1 Fe/S cluster incorporation (Figure 3D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "e7388200-3736-4696-bd56-e434916aff22",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C40",
+      "claim": "Combining BOL2 deletion with BOL1 and/or BOL3 deletion results in up to twofold decrease in 55Fe/S cluster association with Leu1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, combining the BOL2 deletion with that of BOL1 and/or BOL3 resulted in an up to twofold decrease in 55Fe/S cluster association with Leu1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8d5c7bf8-51c0-4e48-8de6-8c1e630899ca",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C41",
+      "claim": "Triple BOL deletion (bol123\u0394) results in a twofold decrease in 55Fe incorporation into the cytosolic Fe/S protein Rli1.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar twofold decrease (compared to wild-type) was seen for 55Fe incorporation into another cytosolic Fe/S protein, the ABC protein Rli1 using the triple BOL deletion strain bol123\u0394 (Figure 3E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 55Fe radiolabeling data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "b739d633-fc5e-46ac-821a-bcd265f0b6e2",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C42",
+      "claim": "Any of the BOL genes can restore Rli1 maturation defect when reintroduced into bol123\u0394 mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The Rli1 maturation defect was completely restored when any of the BOL genes was reintroduced into the bol123\u0394 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "6c5cc400-2ee2-47d7-95db-4e6953f786fd",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C43",
+      "claim": "nfu1\u0394 cells show diminished activities of both aconitase and SDH relative to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously (Navarro-Sastre et al., 2011; Schilke et al., 1999), nfu1\u0394 cells showed a diminution in the activities of both aconitase and SDH relative to wild type (Figure 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "d17ae74c-1078-4e3d-bdc7-4019a4da327d",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C44",
+      "claim": "Additional deletion of BOL3 in nfu1\u0394 cells causes a substantial further decrease in aconitase and SDH activities.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial further decrease to rather low aconitase and SDH activities was found for additional deletion of BOL3, but not of BOL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "2ddde370-cfcd-454f-9678-281692a9a014",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C45",
+      "claim": "Additional deletion of BOL1 in nfu1\u0394 cells does not cause further decrease in aconitase and SDH activities.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial further decrease to rather low aconitase and SDH activities was found for additional deletion of BOL3, but not of BOL1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "62e37003-f078-4adb-b5eb-d8d0dff84a98",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C46",
+      "claim": "Bol3 plays a distinct, Nfu1-independent role that cannot be executed by Bol1.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that Bol3 plays a distinct, Nfu1-independent role that cannot be executed by Bol1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genetic interaction data showing that BOL3 but not BOL1 deletion exacerbates nfu1\u0394 defects (Figure 4A-B).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "a8c0be1d-0425-446e-9dd6-8e366356940f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C47",
+      "claim": "Bol3 cannot rescue any of the enzyme defects of nfu1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the growth behavior, Bol3 was not able to rescue any of the enzyme defects of nfu1\u0394 cells, while Nfu1 did so (Figure 4C\u2013F, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "6eeaf544-36b3-44fa-9d8c-9bc8cb8465b0",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C48",
+      "claim": "Nfu1 cannot restore the enzyme activities of bol13\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, Nfu1 failed to restore the enzyme activities of bol13\u0394 cells, while Bol3 was complementing (Figure 4C\u2013F, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 4C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "b01401e2-637f-4b98-b5b4-91c3a9503f1f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C49",
+      "claim": "Nfu1 and Bol3 cannot mutually substitute each other's biochemical function, even upon overproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that Nfu1 and Bol3 cannot mutually substitute each other's biochemical function, even upon overproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by complementation experiments shown in Figure 4C-F and growth assays in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "fb1c75c0-e6a6-488d-a6d3-9dff366d75e6",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C50",
+      "claim": "Human BOLA1 and BOLA3 have similar overall structural folds.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the DALI server (Holm and Sander, 1993), both BOLA1 and BOLA3 show the highest structural similarity to BolA-like proteins from Arabidopsis thaliana, Babesia bovis, and Mus musculus (Abendroth et al., 2011; Kasai et al., 2004; Roret et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR structural determination and comparison using DALI server.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c29a71dc-ff73-41b7-a4f9-ccc988693568",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C51",
+      "claim": "The structural features of the loop between \u03b21 and \u03b22 differentiate BOLA1 from BOLA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the structural features of the loop between \u03b21 and \u03b22 are key for differentiating BOLA1 from BOLA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR structural data showing different loop lengths and conformations between BOLA1 and BOLA3 (Figure 5).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "b7e753cb-b40e-4e5c-bfc4-573a8b9d169e",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C52",
+      "claim": "His102 in BOLA1 and His96 in BOLA3 are invariant residues that may coordinate Fe/S clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, this loop is closer to the 'invariant' His residue (His102 in BOLA1 and His96 in BOLA3; Figure 5), which has been shown to coordinate the [2Fe-2S] cluster in the yeast Bol2-Grx3 complex (Li et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR structural data (Figure 5) and citation to previous work on Bol2-Grx3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8a86efb6-fbf5-4b3c-8c2b-1217ce8df42c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C53",
+      "claim": "Apo-GLRX5 interacts with BOLA1 and BOLA3 with Kd values of 3 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "This data fits nicely to thermophoresis results showing that both human BOLA proteins interacted with apo-GLRX5 with Kd values of 3 \u00b5M (Melber et al., 2016; accompanying manuscript).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to accompanying manuscript and NMR titration data showing 1:1 complex formation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "11152016-ecbb-41b0-8d07-86818b83bb7f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C54",
+      "claim": "The interaction surface on GLRX5 in apo-GLRX5-BOLA complexes comprises the GSH binding site and its surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction surface on GLRX5 in the two complexes comprises the GSH binding site and its surroundings (Figure 6A,B and Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR chemical shift perturbation analysis shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "351b20d4-9f38-4e49-93ea-4485de65e839",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C55",
+      "claim": "The interaction surface on BOLAs with GLRX5 involves helix \u03b12, part of the \u03b2-sheet and the invariant His residue.",
+      "claim_type": "EXPLICIT",
+      "source": "On the BOLAs, the interactions involve helix \u03b12, part of the \u03b2-sheet and the invariant His residue (see above).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR chemical shift perturbation analysis shown in Figure 6A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "967af5d5-e4aa-41b7-be42-a626a31e22dc",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C56",
+      "claim": "BOLA1 stabilizes the [2Fe-2S] cluster of GLRX5 against reduction by dithionite.",
+      "claim_type": "EXPLICIT",
+      "source": "The cluster coordinated by the GLRX5-BOLA1 hetero-dimer was stable against reduction by dithionite creating a CD spectrum in which the peak at 460 nm was maintained but that at 400 nm was lost. In contrast, the cluster of holo-GLRX5 was destroyed upon dithionite treatment with no residual CD peaks (Figure 7A and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c0fec90e-9d12-4bd9-a281-93581832691b",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C57",
+      "claim": "The [2Fe-2S] cluster of holo-GLRX5 is destroyed upon dithionite treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the cluster of holo-GLRX5 was destroyed upon dithionite treatment with no residual CD peaks (Figure 7A and Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "6e6d0397-8a38-47fa-8e73-1c652d774eeb",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C58",
+      "claim": "BOLA3 does not stabilize the [2Fe-2S] cluster of GLRX5 against destruction by dithionite.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the Fe/S cluster was not protected against destruction by dithionite treatment indicating rather different coordination situations for the [2Fe-2S] clusters in the two GLRX5-BOLA heterodimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "840680de-bf3c-47ec-87f3-1823fd39efac",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C59",
+      "claim": "Gel filtration shows stable heterodimer formation between holo-GLRX5 and BOLA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Holo-GLRX5 (recorded at 420 nm) eluted at 44 kDa indicative of homodimer with bound Fe/S cluster (Figure 7\u2014figure supplement 2A). A significantly smaller molecular mass was observed for the heterodimeric GLRX5-BOLA1 (32 kDa), while the mixture of holo-GLRX5 and BOLA3 did not alter the elution behavior of GLRX5 at 420 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gel filtration data shown in Figure 7\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "d8d828a4-eda4-4476-8409-b685d5dcafea",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C60",
+      "claim": "Gel filtration does not show stable heterodimer formation between holo-GLRX5 and BOLA3.",
+      "claim_type": "EXPLICIT",
+      "source": "A significantly smaller molecular mass was observed for the heterodimeric GLRX5-BOLA1 (32 kDa), while the mixture of holo-GLRX5 and BOLA3 did not alter the elution behavior of GLRX5 at 420 nm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by gel filtration data shown in Figure 7\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "78989670-3b0b-447b-bc13-9dc399d034ab",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C61",
+      "claim": "BOLA3 interacts with holo-NFU1 with higher affinity (Kd = 0.8 \u00b5M) than with apo-NFU1 (Kd = 3 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "The dissociation constants (Kd) of the interactions were in the range of 3 \u00b5M, with the notable exception of a fourfold higher affinity detected for BOLA3 and holo-NFU1 (Kd = 0.8 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscale thermophoresis data shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "95c004b3-59a4-4fe0-9582-d692ffafd4bc",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C62",
+      "claim": "BOLA1 and BOLA3 interact with both apo-NFU1 and holo-NFU1 with Kd values around 3 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "MST indeed showed a specific interaction between the two BOLA proteins and both apo- and holo-NFU1 (Figure 7\u2014figure supplement 3). The dissociation constants (Kd) of the interactions were in the range of 3 \u00b5M, with the notable exception of a fourfold higher affinity detected for BOLA3 and holo-NFU1 (Kd = 0.8 \u00b5M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by microscale thermophoresis data shown in Figure 7\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "754ea6f7-41f4-4ebf-bb2f-3469dc18a9fa",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C63",
+      "claim": "Holo-GLRX5 preferentially cooperates with BOLA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results data suggest that holo-GLRX5 preferentially cooperates with BOLA1, and holo-NFU1 with BOLA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CD spectroscopy showing stable cluster coordination in GLRX5-BOLA1 complex and gel filtration showing stable heterodimer formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "cb30ac83-5584-4d07-abd3-05e8f8ff420f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C64",
+      "claim": "Holo-NFU1 preferentially cooperates with BOLA3.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results data suggest that holo-GLRX5 preferentially cooperates with BOLA1, and holo-NFU1 with BOLA3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by MST data showing higher affinity of BOLA3 for holo-NFU1 (Kd = 0.8 \u00b5M) compared to other interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f16d164a-0be6-4dea-bd9a-84251eec4f49",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C65",
+      "claim": "Lipoic acid synthase (LIAS) is the primary client of mBol function.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipoic acid synthase (LIAS) with its two [4Fe-4S] clusters is the primary client of mBol function because of strong effects on lipoic acid-dependent proteins (such as PDH and KGDH) in bol13\u0394 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity data showing strong decreases in PDH and KGDH activities and lipoylation defects in bol13\u0394 cells (Figure 1).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "e56ea57d-2efe-44e1-b43a-80b1c8d6e065",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C66",
+      "claim": "The mBols act late in the ISC pathway, after the core ISC machinery and Grx5.",
+      "claim_type": "EXPLICIT",
+      "source": "Several findings allowed us to define the site of action of the mBols in the multi-step ISC assembly pathway (Figure 8). First, the mBols were not required for maturation of mitochondrial [2Fe-2S] proteins or cytosolic Fe/S proteins. Second, their deletion did not affect the yeast cellular iron regulon. These criteria distinguish the mBol phenotype from that of the components of the core ISC machinery including Grx5, that is the final core ISC factor (Uzarska et al., 2013), and suggest that mBols act subsequently to Grx5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple lines of evidence including lack of effects on [2Fe-2S] proteins, no iron regulon activation, and normal 55Fe incorporation into Grx5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "859c1e2c-71b1-4618-8ba1-d686a01d4c46",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C67",
+      "claim": "The mBols function after the Isa-Iba57 proteins in [4Fe-4S] cluster formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the function of the mBols must be after the involvement of Isa-Iba57 proteins in the [4Fe-4S] cluster formation, because the mBols exhibit high [4Fe-4S] target specificity. In Isa-Iba57-defective cells, all mitochondrial [4Fe-4S] proteins and the non-Fe/S protein cytochrome oxidase are severely affected, unlike in bol13\u0394 cells (M\u00fchlenhoff et al., 2011; Sheftel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of phenotypes showing that bol13\u0394 cells have specific defects in a subset of [4Fe-4S] proteins, unlike the broad defects in Isa-Iba57 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "02b9d515-6610-4833-ace0-dd261a2754c0",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C68",
+      "claim": "Yeast is a suitable model system for the physiological and mechanistic investigation of mBols.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotypical resemblance suggests that the yeast mBols and at least human BOLA3 are functionally similar. Even though yeast appears to be a suitable model system for the physiological and mechanistic investigation of mBols, the two human BOLAs now need to be studied in cell culture to gain better insights into their relative function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the similarity between yeast bol13\u0394 phenotypes and human BOLA3 patient phenotypes.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "81d6511e-4fc4-42a7-a857-6c2ac04e5017",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C69",
+      "claim": "Mitochondrial Fe/S protein biogenesis in yeast involves 17 known ISC components inherited from bacteria and conserved in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial Fe/S protein biogenesis in yeast involves 17 known ISC components which were inherited from bacteria and are conserved in eukaryotes (Johnson et al., 2005; Lill, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published reviews.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "7eab07f9-1c10-4cb1-acc8-69af3a3b2bb6",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C71",
+      "claim": "The Isa1, Isa2 and Iba57 proteins cooperate to generate a [4Fe-4S] cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the molecular mechanisms of this late phase of Fe/S protein biogenesis are poorly resolved, recent studies have shown that the Isa1, Isa2 and Iba57 proteins cooperate to generate a [4Fe-4S] cluster (Brancaccio et al., 2014; Gelling et al., 2008; M\u00fchlenhoff et al., 2011; Sheftel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "246659b1-fb6c-4e61-8c40-53164ed74eaa",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C72",
+      "claim": "Nfu1 and Ind1 facilitate [4Fe-4S] cluster insertion into specific target apoproteins by transiently binding [4Fe-4S] clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Its insertion into specific target apoproteins is subsequently facilitated by Nfu1 and the P-loop ATPase Ind1, both transiently binding [4Fe-4S] clusters (Bych et al., 2008; Sheftel et al., 2009; Tong et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "73b11889-6a8f-4c41-9f4c-8c4581f0c3b2",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C73",
+      "claim": "Ind1 is specific for maturation of respiratory complex I.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter ISC protein is specific for maturation of respiratory complex I, but nothing is known about the molecular mechanisms underlying [4Fe-4S] cluster insertion by eukaryotic Nfu1 and Ind1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from cited studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f52bcbd7-d240-4fa2-810a-c6ed92ce3ac6",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C74",
+      "claim": "Impairment of ISC factors involved in the second phase of Fe/S protein biogenesis only compromises mitochondrial function of yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "While most proteins of the core ISC machinery are essential for cell viability, impairment of the ISC factors involved in the second phase of Fe/S protein biogenesis only compromises mitochondrial function of yeast cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge and growth data showing that bol13\u0394 cells are viable but have respiratory defects.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "22147852-ed2e-4c2f-81de-df7a667f3561",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C75",
+      "claim": "The core ISC machinery plays a central role in cytosolic Fe/S protein biogenesis and cellular iron regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This striking difference for phases I and II is explained by the central, additional role of the core ISC machinery in both cytosolic Fe/S protein biogenesis and cellular iron regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by established knowledge from cited reviews.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "0ad66a8f-bf09-461e-86c8-262dd8c0c82a",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C76",
+      "claim": "Functional defects of core ISC factors lead to impaired assembly of essential Fe/S proteins such as nuclear DNA polymerases and helicases.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional defects of core ISC factors lead to impaired assembly of essential Fe/S proteins such as nuclear DNA polymerases and helicases (Gari et al., 2012; Netz et al., 2012; Stehling et al., 2012) and an induction of the yeast iron regulon involving the above mentioned Bol2 (Lill et al., 2012; Outten and Albetel, 2013; Paul and Lill, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "bc82c9e1-360b-47c0-83fb-d021c5bd35bf",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C77",
+      "claim": "Human BOLA3 belongs to a large protein family of bacterial origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Human BOLA3 belongs to a large protein family of bacterial origin (Aldea et al., 1988; Willems et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f74c5ce6-f861-423a-834c-9c6187099721",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C78",
+      "claim": "Eukaryotes such as yeast and humans possess three BOLA family members that can be discriminated by conserved sequence elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotes such as yeast and humans possess three BOLA family members that can be discriminated by conserved sequence elements (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sequence alignment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "573b944f-c30f-476b-a268-e41866807f42",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C79",
+      "claim": "Yeast Bol2 is cytosolic and involved in cellular iron regulation by forming heterodimeric [2Fe-2S] cluster-containing complexes with cytosolic monothiol glutaredoxins Grx3-Grx4.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast Bol2 (formerly termed Fra2; [Kumanovics et al., 2008]) is cytosolic, and is involved in cellular iron regulation by forming heterodimeric, [2Fe-2S] cluster-containing complexes with the cytosolic monothiol glutaredoxins Grx3-Grx4 (Li et al., 2009; M\u00fchlenhoff et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "2ddb7134-33ec-40df-a8d7-826023bd2a71",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C80",
+      "claim": "Human BOLA2 forms hetero-complexes with human GRX3.",
+      "claim_type": "EXPLICIT",
+      "source": "The human relative BOLA2 also forms hetero-complexes with human GRX3 (Banci et al., 2015; Li et al., 2012), yet the exact physiological role of the Bol2 proteins is still poorly defined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "90678e15-c04b-4aec-9a5a-d47351dd49ec",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C81",
+      "claim": "Ablation of BOLA1 in cultured human cells increases mitochondrial protein thiol oxidation and elicits alterations in mitochondrial morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Ablation of BOLA1 in cultured human cells increases mitochondrial protein thiol oxidation and elicits alterations in mitochondrial morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study (Willems et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "11e143b1-1022-4bee-a330-9dd5467a95f6",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C82",
+      "claim": "BOLA1 (but not BOLA3) co-purified with tagged mitochondrial monothiol glutaredoxin GLRX5.",
+      "claim_type": "EXPLICIT",
+      "source": "BOLA1 (but not BOLA3) co-purified with tagged mitochondrial monothiol glutaredoxin GLRX5 that is crucial for Fe/S protein biogenesis (Willems et al., 2013; Ye et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to published study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "60f0eb6b-a364-42a5-9173-ab382a951008",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C83",
+      "claim": "PDH and KGDH activities are much more severely diminished in bol13\u0394, bol123\u0394, and nfu1\u0394 cells grown in lactate medium compared to galactose medium.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, PDH and KGDH activities were much more severely (ten- vs. threefold) diminished in bol13\u0394, bol123\u0394, and nfu1\u0394 cells grown in lactate medium, similar to previous reports on Isa protein depletion (Kaut et al., 2000; M\u00fchlenhoff et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by enzyme activity measurements comparing growth in lactate vs. galactose media (Figure 1 and Figure 1\u2014figure supplement 5).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "91e58e16-03ec-429a-b111-e54359ee7c1a",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C84",
+      "claim": "The overall topology of the solution structure of human BOLA3 is \u03b11\u03b21\u03b22\u03b71\u03b12\u03b72\u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall topology of the solution structure of human BOLA3 is \u03b11\u03b21\u03b22\u03b71\u03b12\u03b72\u03b23 (h: 310-helix), in which \u03b21 and \u03b22 are antiparallel, and \u03b23 is parallel to \u03b22 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR structural determination shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "3cc62e36-15ba-4cd6-9a10-ea4fc7b2d539",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C85",
+      "claim": "The overall topology of the solution structure of BOLA1 is \u03b11\u03b71\u03b21\u03b22\u03b72\u03b12\u03b13\u03b23\u03b14.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall topology of the solution structure of BOLA1 is similar to that of BOLA3, with the exception of the presence, in BOLA1, of short helices in the loop regions and at the C-terminus (\u03b11\u03b71\u03b21\u03b22\u03b72\u03b12\u03b13\u03b23\u03b14 topology) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by NMR structural determination shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "94890cf2-da08-4ebe-a2a0-b891ed76cc55",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C86",
+      "claim": "BOLA1 has approximately 15 unstructured residues at both N and C termini.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, at both termini BOLA1 has ca. 15 residues that are unstructured and whose backbone NH resonances are clustered in the central region of the 1H-15N HSQC spectrum (part B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NMR data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "12d93f1b-d1eb-4dbe-922e-2af4634d3a99",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C87",
+      "claim": "The N and C termini of BOLA1 are highly flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "The 15N backbone relaxation properties showed that the N and C termini of BOLA1 are highly flexible, as about 15 to 20 residues on each terminus have negative 15N NOE values, while the folded domain is essentially rigid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 15N relaxation NMR data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "68b659c6-1c9b-4601-a75d-fa6d4bc0c0d1",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C88",
+      "claim": "BOLA3 is a rigid molecule with the exception of terminal residues and residues around the invariant His96.",
+      "claim_type": "EXPLICIT",
+      "source": "BOLA3 is a rigid molecule, with the exception of the first detected residue at the N terminus, the last two residues at the C terminus and residues around invariant His96. All of them experience fast backbone motions in the ns-ps time scale, as indicated by their low or negative 15N NOE values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 15N relaxation NMR data shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "84b94932-85b3-4fd9-a2f2-2ecb359ea687",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C89",
+      "claim": "There is a high degree of organismic variability in the precise interaction mode between Grx and Bol proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that there is a high degree of organismic variability in the precise interaction mode between Grx and Bol proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comparison of NMR chemical shift data between human and Arabidopsis thaliana complexes showing different interaction regions (Figure 6\u2014figure supplement 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "be502884-3719-4f36-a3ce-746031b2a490",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C90",
+      "claim": "The CD spectrum of GLRX5-BOLA1 differs from holo-GLRX5 with a positive versus negative ellipticity around 400 nm and changes at 460 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectrum of GLRX5-BOLA1 characteristically differed from that of holo-GLRX5 in a positive versus negative ellipticity around 400 nm with a 6 nm blue shift and 40% decrease of the ~460 nm peak with a 6 nm red shift (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "efbf31cf-a232-4b74-9ece-55ce99441f20",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C91",
+      "claim": "The spectral changes in GLRX5-BOLA1 complex saturate at an equimolar ratio suggesting high affinity equimolar hetero-complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "These spectral changes saturated at an equimolar ratio of holo-GLRX5 and BOLA1 suggesting a high affinity equimolar hetero-complex formation with a shared [2Fe-2S] cluster (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD titration data shown in Figure 7\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "70e98abc-a37b-45f6-a1e8-f9314603d3cb",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C92",
+      "claim": "The CD signal decrease in GLRX5-BOLA3 complex mainly depends on the presence of GSH.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a general decrease of the CD peaks upon GLRX5-BOLA3 hetero-complex formation (Figure 7C). These changes mainly depended on the presence of GSH, and not salt or pH (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CD spectroscopy data comparing different buffer conditions shown in Figure 7C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8eabc789-7d8a-4e64-aa57-6f1d7e9efea2",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C93",
+      "claim": "The CD signal decrease in GLRX5-BOLA3 complex does not reach saturation even after addition of more than tenfold molar excess of BOLA3.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, the CD signal decrease did not reach saturation even after addition of a more than tenfold molar excess of BOLA3 over holo-GLRX5. This result indicated a rather low affinity for this interference of BOLA3 with the [2Fe-2S] cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by CD titration data shown in Figure 7C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8c1c14af-5430-4672-95bb-3bb4afb2a78f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C94",
+      "claim": "Double deletion of BOL3 and NFU1 exacerbates the defects of SDH and LIAS compared to single deletions.",
+      "claim_type": "EXPLICIT",
+      "source": "A specific genetic interaction of NFU1 and BOL3 supports our biochemical findings. Double deletion of these genes exacerbated the defects of SDH and LIAS, whereas simultaneous deletions of NFU1 and BOL1 did not (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "82a4cf07-bf4a-4400-a473-a40b66368799",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "claim_id": "C95",
+      "claim": "Simultaneous deletions of NFU1 and BOL1 do not exacerbate defects compared to nfu1\u0394 alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Double deletion of these genes exacerbated the defects of SDH and LIAS, whereas simultaneous deletions of NFU1 and BOL1 did not (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "83ab8e0c-2c17-4725-85f5-c693483d11ea",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Yeast Bol1 and Bol3 are localized exclusively in the mitochondrial matrix, as demonstrated by cell fractionation and protease protection assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 is supported by cell fractionation experiments showing exclusive mitochondrial localization and sub-fractionation studies demonstrating matrix localization similar to known matrix proteins Tim44 and Mge1 (Figure 1\u2014figure supplement 2).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bol1 and Bol3 function as specific mitochondrial ISC assembly factors that facilitate [4Fe-4S] cluster insertion into a subset of mitochondrial proteins, particularly lipoate synthase (LIAS) and succinate dehydrogenase (SDH), with largely overlapping but not identical functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C30, and C65 are well-supported by multiple lines of evidence including enzyme activity assays showing decreased PDH, KGDH, and SDH activities in bol13\u0394 cells (Figure 1), 55Fe radiolabeling showing reduced cluster incorporation into [4Fe-4S] but not [2Fe-2S] proteins (Figure 2), lipoylation defects (Figure 1F), and complementation experiments (Figures 1\u2014figure supplement 4, 2D). The data consistently demonstrate that only double deletion creates significant defects, supporting functional overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "938e6a10-ac45-44aa-910e-b1c37d866fe9",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single deletions of BOL1 or BOL3 have minimal effects on Fe/S enzyme activities, while double BOL1-BOL3 deletions result in substantial decreases in Fe/S cluster-dependent enzyme activities (except aconitase), creating a weak respiratory defect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are supported by growth assays on non-fermentable carbon sources (Figure 1\u2014figure supplement 3) and comprehensive enzyme activity measurements (Figure 1A-E). The data show that single deletions have minimal effects except for a slight SDH decrease in bol3\u0394, while double deletions cause substantial (up to threefold) decreases in SDH, PDH, and KGDH activities, with aconitase notably unaffected. Additional BOL2 deletion does not exacerbate effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "e5c3e71e-f17d-4db8-aca8-339367e20676",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The decreased SDH activity in bol13\u0394 cells is due to direct defects in Fe/S cluster assembly rather than protein level changes, and both BOL1 and BOL3 can rescue these deficiencies when reintroduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by immunoblot data showing unchanged SDH protein levels despite decreased activity (Figure 1F), lipoylation defects of PDH and KGDH E2 subunits (Figure 1F), and complementation experiments demonstrating rescue of SDH activity by reintroduction of BOL1 or BOL3 (Figure 1\u2014figure supplement 4).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "64eef12b-6107-4875-be4a-68613e550182",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "55Fe radiolabeling experiments demonstrate that mBol deficiency specifically affects [4Fe-4S] protein maturation (SDH, HiPIP) but not [2Fe-2S] proteins (aconitase, FDX2, Grx5), with BOL3 deletion showing stronger effects than BOL1 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 are supported by comprehensive 55Fe incorporation assays (Figure 2A-F) showing no significant effects on aconitase or [2Fe-2S] proteins (FDX2, SpGrx5), but 40% decrease in SDH and 60% decrease in HiPIP upon BOL3 deletion. Single BOL1 deletion has no effects. Complementation with Bol1 or Bol3 restores activity, while Bol2 or Grx5 do not (Figure 2D), demonstrating specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "12347b0f-0473-4c76-a6b3-58145df08e5d",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mBols act late in the ISC assembly pathway, after the core ISC machinery including Grx5, and after the Isa-Iba57 proteins involved in [4Fe-4S] cluster formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C66, and C67 are supported by multiple lines of evidence: normal 55Fe incorporation into Grx5 in mBol-deficient cells (Figure 2F), lack of effects on [2Fe-2S] proteins, no iron regulon activation (Figure 3A-B), and phenotypic comparison showing specific defects in a subset of [4Fe-4S] proteins unlike the broad defects in Isa-Iba57 mutants. The logical inference from these observations is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "8e4de446-1d3e-4888-bf24-1818e1d47287",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Deletion of BOL1 and/or BOL3 does not activate the iron regulon, unlike BOL2 deletion, but combining BOL2 deletion with BOL1/BOL3 deletion activates the iron regulon more strongly than BOL2 deletion alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by promoter activity assays (Figure 3A-B) showing substantial FIT3 and FET3 activation in bol2\u0394 cells but not in bol1\u0394, bol3\u0394, or nfu1\u0394 cells. Combined deletions (bol2\u0394 with bol1\u0394/bol3\u0394) show slightly stronger activation than bol2\u0394 alone, with specificity confirmed by complementation experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "c978890c-defb-45bd-96ea-c713bad2173c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Neither mitochondrial Bol1-Bol3 nor cytosolic Bol2 are directly required for cytosolic Fe/S protein maturation, but combined deletion of all three BOL genes results in modest defects in cytosolic Fe/S proteins (Leu1, Rli1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 are supported by Leu1 enzyme activity measurements (Figure 3C) and 55Fe incorporation assays (Figure 3D-E) showing minimal effects of single deletions but up to twofold decreases in combined deletions. The effects are weak compared to known CIA deficiencies, supporting the interpretation that these are indirect effects. Complementation with any BOL gene restores Rli1 maturation (Figure 3E).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "1fecc070-a1df-4d73-8891-3fc706fd978b",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Bol1-Bol3 and Nfu1 perform distinct, non-overlapping functions in mitochondrial [4Fe-4S] protein maturation, with Bol3 playing a specific Nfu1-independent role that cannot be executed by Bol1, and neither protein can complement the other's function even upon overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C43-C49, C94-C95 are supported by genetic interaction studies showing that BOL3 but not BOL1 deletion exacerbates nfu1\u0394 defects (Figure 4A-B), complementation experiments demonstrating that Bol3 cannot rescue nfu1\u0394 defects and Nfu1 cannot rescue bol13\u0394 defects (Figure 4C-F), and growth assays (Figure 4\u2014figure supplement 1). The data consistently demonstrate functional specificity and non-redundancy between these proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "5fa3b523-7196-4f41-8dd2-e7787da699dd",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Human BOLA1 and BOLA3 have similar overall structural folds but differ in key structural features, particularly the loop between \u03b21 and \u03b22, with both containing conserved His residues (His102 in BOLA1, His96 in BOLA3) near potential Fe/S cluster binding regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C84-C88 are supported by NMR structural determination (Figure 5, Figure 5\u2014figure supplement 1) showing similar topologies but different loop structures and flexibility patterns. The structures show conserved His residues in positions consistent with potential Fe/S cluster coordination. DALI server comparisons confirm similarity to other BolA-like proteins. The 15N relaxation data support the flexibility assessments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "dcd52267-b895-46be-8f5a-27c858caadd5",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Apo-BOLA1 and apo-BOLA3 form 1:1 heterodimeric complexes with apo-GLRX5 with Kd values of 3 \u03bcM, involving the GSH binding site on GLRX5 and helix \u03b12, part of the \u03b2-sheet, and the invariant His residue on BOLAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C53-C55 are supported by NMR titration experiments showing 1:1 complex formation (Figure 6A-B, Figure 6\u2014figure supplement 1-2), NMR relaxation data indicating heterodimeric complexes (Figure 6\u2014figure supplement 3), and chemical shift perturbation analysis mapping interaction surfaces. The Kd values are supported by citation to accompanying manuscript and consistent with NMR data showing saturation at 1:1 ratio.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "78fe7485-8912-4e87-9edd-ddcb2369403f",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "BOLA1 stabilizes the [2Fe-2S] cluster of GLRX5 against dithionite reduction and forms a stable heterodimer, while BOLA3 does not stabilize the cluster and shows only weak, GSH-dependent interaction with holo-GLRX5, suggesting preferential cooperation of holo-GLRX5 with BOLA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C56-C60, C63, C90-C93 are supported by CD spectroscopy showing distinct spectral features and dithionite stability for GLRX5-BOLA1 but not GLRX5-BOLA3 (Figure 7A-D, Figure 7\u2014figure supplement 1), gel filtration showing stable heterodimer formation only with BOLA1 (Figure 7\u2014figure supplement 2), and titration data showing saturation for BOLA1 but not BOLA3. The data consistently demonstrate differential cluster stabilization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "189c3c6c-b769-489b-ad4d-e6e98f557bc5",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "BOLA1 and BOLA3 interact with both apo-NFU1 and holo-NFU1 with Kd values around 3 \u03bcM, with BOLA3 showing fourfold higher affinity for holo-NFU1 (Kd = 0.8 \u03bcM), suggesting preferential cooperation of holo-NFU1 with BOLA3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C61-C62, C64 are supported by microscale thermophoresis data (Figure 7\u2014figure supplement 3) showing specific interactions with measured Kd values. The fourfold higher affinity of BOLA3 for holo-NFU1 compared to other interactions is clearly demonstrated. Control experiments with non-interacting proteins (FDX2, cytochrome c, RNase A) support specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "f294762c-5933-4bb0-8b88-06b9e08b1c03",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Yeast is a suitable model system for investigating mBol function based on phenotypic similarity between yeast bol13\u0394 cells and human BOLA3 patient cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by the demonstrated similarity in phenotypes: both yeast bol13\u0394 cells and human BOLA3 patients show major defects in lipoic acid-dependent enzymes and respiratory complexes I and II (claims C9-C11, supported by citations). The inference that yeast is a suitable model is reasonable given this phenotypic conservation, though the authors appropriately note that human BOLAs need further study in cell culture.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "0e969f01-9b64-49d4-9fdb-838c037dab3c",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "PDH and KGDH activities are much more severely diminished (tenfold vs. threefold) in bol13\u0394, bol123\u0394, and nfu1\u0394 cells grown in lactate medium compared to galactose medium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by enzyme activity measurements comparing growth in different media (Figure 1 and Figure 1\u2014figure supplement 5), showing that respiratory conditions exacerbate defects in lipoic acid-dependent enzymes but not in aconitase or SDH. This is consistent with previous reports on Isa protein depletion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "635eda30-c412-4c7f-986f-b814cce6f1df",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "There is high organismic variability in the precise interaction mode between Grx and Bol proteins, as demonstrated by differences between human and Arabidopsis thaliana complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C89 is supported by comparison of NMR chemical shift data between human GLRX5-BOLA complexes and A. thaliana GrxS14-BolA2 complexes (Figure 6\u2014figure supplement 4), showing different interaction regions. The human complexes show involvement of the invariant His region and specific GLRX5 helices that differ from the plant complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    },
+    {
+      "id": "60935c92-eeee-44d7-9db5-247bb6388e3b",
+      "content_id": "48a394d4-6cf5-44b1-8bc4-c26ed5ec11a3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information on BOLA3 disease associations, ISC pathway components, and previous characterization of BOLA family proteins from the literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11, C69, C71-C82 are background claims supported by citations to published literature. These establish the context for the study, including the association of BOLA3 mutations with MMDS2, the known components of the ISC pathway, and previous characterization of BOLA family proteins. The citations appear appropriate and the claims are consistent with established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:27:11.828096Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32217479-71a0-402c-a92f-b26b54f94d72",
+      "result_id": "83ab8e0c-2c17-4725-85f5-c693483d11ea"
+    },
+    {
+      "claim_id": "ffba320b-8e47-4f6d-bc11-c3525606dcfa",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "16d65754-ccf6-4f1d-b843-effaed5723b6",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "2b5728e4-9513-45ad-8e98-d0a70759b60a",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "e6ab6212-4a30-49af-993f-7aaf6d92f92f",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "80e6176a-6d7d-4637-81db-0cdd90f0b5ab",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "f16d164a-0be6-4dea-bd9a-84251eec4f49",
+      "result_id": "a6d9bb04-6eec-4c9c-86f3-b18dc130d28e"
+    },
+    {
+      "claim_id": "e7005188-8adf-47f2-91ea-cd2943d9940c",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "942e9177-7546-4e72-a41e-5545354ddc44",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "25cd802b-ddf6-452c-bd4d-9cae5531a8a2",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "ebc959b6-ccd4-4917-a0c5-311b7d465321",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "310a4a3d-8aa4-4833-bc8b-5b69375cfd30",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "c080601d-8413-48c8-bd87-a1a28b8165d9",
+      "result_id": "938e6a10-ac45-44aa-910e-b1c37d866fe9"
+    },
+    {
+      "claim_id": "2904a9dc-6a57-45f5-b678-64daba294681",
+      "result_id": "e5c3e71e-f17d-4db8-aca8-339367e20676"
+    },
+    {
+      "claim_id": "df25695e-7233-4891-a17e-b98fe8c8d165",
+      "result_id": "e5c3e71e-f17d-4db8-aca8-339367e20676"
+    },
+    {
+      "claim_id": "546adbd3-9938-49a2-8c4c-216bb2bc9de9",
+      "result_id": "e5c3e71e-f17d-4db8-aca8-339367e20676"
+    },
+    {
+      "claim_id": "24fd141b-281e-48a4-8f57-c3eecf0b1fcc",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "c808fbfa-2a85-4bca-8c29-92b5ac421063",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "f65d6f41-2683-4455-8d5b-91cd7cb1b950",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "929606a9-e174-4db1-accf-43674e7bdfa0",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "92d18a33-90f3-4ce7-9715-7208dff2f50c",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "bf30e642-3a71-4da6-9dc2-1fb8ffb579a9",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "7a957c6d-2051-4399-8707-9670d52495ad",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "2c15ca3e-cce3-4fea-88ab-d31eda7bb12b",
+      "result_id": "64eef12b-6107-4875-be4a-68613e550182"
+    },
+    {
+      "claim_id": "edd5a425-9f5b-4974-857b-672dcf4cc43c",
+      "result_id": "12347b0f-0473-4c76-a6b3-58145df08e5d"
+    },
+    {
+      "claim_id": "e56ea57d-2efe-44e1-b43a-80b1c8d6e065",
+      "result_id": "12347b0f-0473-4c76-a6b3-58145df08e5d"
+    },
+    {
+      "claim_id": "859c1e2c-71b1-4618-8ba1-d686a01d4c46",
+      "result_id": "12347b0f-0473-4c76-a6b3-58145df08e5d"
+    },
+    {
+      "claim_id": "cfe00068-3891-4187-a55e-ef7e47a782c8",
+      "result_id": "8e4de446-1d3e-4888-bf24-1818e1d47287"
+    },
+    {
+      "claim_id": "687fc455-e3b3-4e60-8c17-6b0101dc2910",
+      "result_id": "8e4de446-1d3e-4888-bf24-1818e1d47287"
+    },
+    {
+      "claim_id": "c9fbf5b5-c3df-4084-a28d-ccb6b34df96c",
+      "result_id": "8e4de446-1d3e-4888-bf24-1818e1d47287"
+    },
+    {
+      "claim_id": "95aaa8ae-2926-4408-a607-dd6933b3435b",
+      "result_id": "8e4de446-1d3e-4888-bf24-1818e1d47287"
+    },
+    {
+      "claim_id": "1baf2619-3477-4375-82ef-56f1fc6b0dbb",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "388251eb-92dd-437b-b218-e9fdf111f347",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "32c66ae7-3e26-454f-b3ae-e23a6c84ecef",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "a38ff2cb-235a-4baa-bed2-ffe7b247adc3",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "e7388200-3736-4696-bd56-e434916aff22",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "8d5c7bf8-51c0-4e48-8de6-8c1e630899ca",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "b739d633-fc5e-46ac-821a-bcd265f0b6e2",
+      "result_id": "c978890c-defb-45bd-96ea-c713bad2173c"
+    },
+    {
+      "claim_id": "92d6702d-35b8-4c34-9718-adf10e988eef",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "6c5cc400-2ee2-47d7-95db-4e6953f786fd",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "d17ae74c-1078-4e3d-bdc7-4019a4da327d",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "2ddde370-cfcd-454f-9678-281692a9a014",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "62e37003-f078-4adb-b5eb-d8d0dff84a98",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "a8c0be1d-0425-446e-9dd6-8e366356940f",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "6eeaf544-36b3-44fa-9d8c-9bc8cb8465b0",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "b01401e2-637f-4b98-b5b4-91c3a9503f1f",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "8c1c14af-5430-4672-95bb-3bb4afb2a78f",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "82a4cf07-bf4a-4400-a473-a40b66368799",
+      "result_id": "1fecc070-a1df-4d73-8891-3fc706fd978b"
+    },
+    {
+      "claim_id": "fb1c75c0-e6a6-488d-a6d3-9dff366d75e6",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "c29a71dc-ff73-41b7-a4f9-ccc988693568",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "b7e753cb-b40e-4e5c-bfc4-573a8b9d169e",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "91e58e16-03ec-429a-b111-e54359ee7c1a",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "3cc62e36-15ba-4cd6-9a10-ea4fc7b2d539",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "94890cf2-da08-4ebe-a2a0-b891ed76cc55",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "12d93f1b-d1eb-4dbe-922e-2af4634d3a99",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "68b659c6-1c9b-4601-a75d-fa6d4bc0c0d1",
+      "result_id": "5fa3b523-7196-4f41-8dd2-e7787da699dd"
+    },
+    {
+      "claim_id": "80b9b37b-8a99-4097-95a9-27313ab6605d",
+      "result_id": "dcd52267-b895-46be-8f5a-27c858caadd5"
+    },
+    {
+      "claim_id": "8a86efb6-fbf5-4b3c-8c2b-1217ce8df42c",
+      "result_id": "dcd52267-b895-46be-8f5a-27c858caadd5"
+    },
+    {
+      "claim_id": "11152016-ecbb-41b0-8d07-86818b83bb7f",
+      "result_id": "dcd52267-b895-46be-8f5a-27c858caadd5"
+    },
+    {
+      "claim_id": "351b20d4-9f38-4e49-93ea-4485de65e839",
+      "result_id": "dcd52267-b895-46be-8f5a-27c858caadd5"
+    },
+    {
+      "claim_id": "c07f5e32-4a2a-4b35-9213-3f9f9e986fb7",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "967af5d5-e4aa-41b7-be42-a626a31e22dc",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "c0fec90e-9d12-4bd9-a281-93581832691b",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "6e6d0397-8a38-47fa-8e73-1c652d774eeb",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "840680de-bf3c-47ec-87f3-1823fd39efac",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "d8d828a4-eda4-4476-8409-b685d5dcafea",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "754ea6f7-41f4-4ebf-bb2f-3469dc18a9fa",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "be502884-3719-4f36-a3ce-746031b2a490",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "efbf31cf-a232-4b74-9ece-55ce99441f20",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "70e98abc-a37b-45f6-a1e8-f9314603d3cb",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "8eabc789-7d8a-4e64-aa57-6f1d7e9efea2",
+      "result_id": "78fe7485-8912-4e87-9edd-ddcb2369403f"
+    },
+    {
+      "claim_id": "85d885e6-3f25-40ef-b1df-de17a05c7c91",
+      "result_id": "189c3c6c-b769-489b-ad4d-e6e98f557bc5"
+    },
+    {
+      "claim_id": "78989670-3b0b-447b-bc13-9dc399d034ab",
+      "result_id": "189c3c6c-b769-489b-ad4d-e6e98f557bc5"
+    },
+    {
+      "claim_id": "95c004b3-59a4-4fe0-9582-d692ffafd4bc",
+      "result_id": "189c3c6c-b769-489b-ad4d-e6e98f557bc5"
+    },
+    {
+      "claim_id": "cb30ac83-5584-4d07-abd3-05e8f8ff420f",
+      "result_id": "189c3c6c-b769-489b-ad4d-e6e98f557bc5"
+    },
+    {
+      "claim_id": "02b9d515-6610-4833-ace0-dd261a2754c0",
+      "result_id": "f294762c-5933-4bb0-8b88-06b9e08b1c03"
+    },
+    {
+      "claim_id": "60f0eb6b-a364-42a5-9173-ab382a951008",
+      "result_id": "0e969f01-9b64-49d4-9fdb-838c037dab3c"
+    },
+    {
+      "claim_id": "84b94932-85b3-4fd9-a2f2-2ecb359ea687",
+      "result_id": "635eda30-c412-4c7f-986f-b814cce6f1df"
+    },
+    {
+      "claim_id": "1ae9e022-e240-405f-93e5-b31d6e845fdf",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "cf7a2b6e-a033-4c27-a979-fcb61e779755",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "56efb1a0-987e-45db-9cde-e7039dee19b9",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "81d6511e-4fc4-42a7-a857-6c2ac04e5017",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "7eab07f9-1c10-4cb1-acc8-69af3a3b2bb6",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "246659b1-fb6c-4e61-8c40-53164ed74eaa",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "73b11889-6a8f-4c41-9f4c-8c4581f0c3b2",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "f52bcbd7-d240-4fa2-810a-c6ed92ce3ac6",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "22147852-ed2e-4c2f-81de-df7a667f3561",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "0ad66a8f-bf09-461e-86c8-262dd8c0c82a",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "bc82c9e1-360b-47c0-83fb-d021c5bd35bf",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "f74c5ce6-f861-423a-834c-9c6187099721",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "573b944f-c30f-476b-a268-e41866807f42",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "2ddb7134-33ec-40df-a8d7-826023bd2a71",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "90678e15-c04b-4aec-9a5a-d47351dd49ec",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    },
+    {
+      "claim_id": "11e143b1-1022-4bee-a330-9dd5467a95f6",
+      "result_id": "60935c92-eeee-44d7-9db5-247bb6388e3b"
+    }
+  ],
+  "comparisons": []
+}

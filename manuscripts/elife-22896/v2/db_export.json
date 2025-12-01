@@ -1,0 +1,2417 @@
+{
+  "submission": {
+    "id": "c3317d27-1785-4676-90e3-da3c7e701c44",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:34:23.146139Z",
+    "updated_at": "2025-11-30T23:34:23.146139Z"
+  },
+  "content": [
+    {
+      "id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "submission_id": "c3317d27-1785-4676-90e3-da3c7e701c44",
+      "content_type": "manuscript",
+      "content_text": "# Dopamine signaling tunes spatial pattern selectivity in C. elegans\n\n## Authors\n\n- Bicheng Han<sup>1</sup>\n- Yongming Dong<sup>1</sup> ([ORCID: 0000-0002-6510-0913](https://orcid.org/0000-0002-6510-0913))\n- Lin Zhang<sup>1</sup> ([ORCID: 0000-0002-9065-4168](https://orcid.org/0000-0002-9065-4168))\n- Yan Liu<sup>1</sup> ([ORCID: 0000-0002-5631-7272](https://orcid.org/0000-0002-5631-7272))\n- Ithai Rabinowitch<sup>1</sup> ([ORCID: 0000-0003-0361-9055](https://orcid.org/0000-0003-0361-9055))\n- Jihong Bai<sup>1</sup> ([ORCID: 0000-0001-6773-2175](https://orcid.org/0000-0001-6773-2175)) \u2020\n\n### Affiliations\n\n1. Basic Sciences Division Fred Hutchinson Cancer Research Center Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals with complex brains can discriminate the spatial arrangement of physical features in the environment. It is unknown whether such sensitivity to spatial patterns can be accomplished in simpler nervous systems that lack long-range sensory modalities such as vision and hearing. Here we show that the nematode Caenorhabditis elegans can discriminate spatial patterns in its surroundings, despite having a nervous system of only 302 neurons. This spatial pattern selectivity requires touch-dependent dopamine signaling, including the mechanosensory TRP-4 channel in dopaminergic neurons and the D2-like dopamine receptor DOP-3. We find that spatial pattern selectivity varies significantly among C. elegans wild isolates. Electrophysiological recordings show that natural variations in TRP-4 reduce the mechanosensitivity of dopaminergic neurons. Polymorphic substitutions in either TRP-4 or DOP-3 alter the selectivity of spatial patterns. Together, these results demonstrate an ancestral role for dopamine signaling in tuning spatial pattern preferences in a simple nervous system.\n\n## Introduction\n\nAnimals must relentlessly explore their surroundings in search of food, water, and shelter, in order to survive. Animals with complex nervous systems utilize multiple sensory modalities such as vision, touch, and hearing to perceive spatial patterns that reflect the physical structure of their environment. But can animals with much simpler nervous systems detect and discriminate spatial patterns in their environment as well? To address this question, we investigated the roundworm C. elegans, which feeds and reproduces in decomposing fruits and plant stems (Barri\u00e8re and F\u00e9lix, 2014). C. elegans has only 302 neurons and lack vision and hearing, mainly relying on smell and touch to sense their environment. C. elegans uses the sense of touch (or mechanosensation) to detect physical contact with external objects. For example, touch to the worm body or nose elicits reflex withdrawal responses (Chalfie and Sulston, 1981,\u00a0Chalfie and Wolinsky, 1990; Kaplan and Horvitz, 1993; Sulston et al., 1975; Way and Chalfie, 1989), which allows the\u00a0worms to quickly avoid potential danger. Beyond reflex, mechanosensation could also provide important information about the physical structure of the environment, aiding in navigation and spatial orientation. Indeed, mechanosensory detection of food elicits a slowing in C. elegans locomotion, increasing the time spent where food is present (Sawin et al., 2000). However, it remains unknown whether C. elegans mechanosensation is limited to such binary distinctions between the presence and absence of food, or whether it enables more general and refined perception of particular spatial patterns, and if so, how this depends on context and experience. These questions are important for determining to what extent a simple animal can sense the spatial arrangement of physical features in its surroundings, providing general insights about how animals perceive spatial patterns.\n\nHere, we report that C. elegans has the ability to discriminate spatial patterns using mechanosensory-dependent dopamine signaling. This spatial pattern selectivity is not a fixed behavior. Instead, it is modified by experience and by internal states such as starvation. Among C. elegans wild isolates, the absolute degree of spatial pattern preference is tuned by natural variations in the mechanosensory channel TRP-4 and the dopamine receptor DOP-3, leading to differential behavioral responses to identical environmental settings. These results suggest that the sense of the physical surroundings may undergo rapid evolutionary expansion to diversify the choice of preferred habitat, and perhaps to benefit the survival of the species.\n\n## Results\n\nTo study how spatial patterns in its surroundings may impact worm behavior, we examined worm locomotion in microfluidic chambers comprising four patterns of PDMS (polydimethylsiloxane) pillars, designated quad-chambers (Figure 1A and Figure 1\u2014figure supplement 1A). Pillar density increased in the four patterns from zero pillars (Pattern I) to the highest density of pillars (Pattern IV). We found that the Bristol N2 strain exhibits a strong preference for pattern IV (Figure 1B). Approximately 63% of N2 worms were found in the section containing pattern IV 60 min after entering the chamber. By contrast, we observed only 9\u201315% of worms in each of the other sections I, II and III (Figure 1C) with lower pillar densities. The strong preference for pattern IV was also indicated by a high positive value of a spatial pattern preference index (Figure 1C; Methods). To investigate the robustness of this pattern selectivity, we quantified N2 preference for pattern IV at various time points (Figure 1\u2014figure supplement 1B). Pattern IV preference was very stable between 60 and 90 min, but was reduced at 120 min. This decrease was likely due to starvation, as addition of food (OP50 bacteria) into the chamber prolonged the preference for pattern IV, which lasted at least 180 min (Figure 1\u2014figure supplement 1C). Consistent with this notion, worms that had already been starved prior to the experiment exhibited a significant reduction in pattern IV preference (Figure 1\u2014figure supplement 1D), indicating that feeding state (starvation) can override an inherent preference for pattern selectivity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig1-v2.jpg)\n\n**Figure 1.:** (A) A schematic drawing of the polydimethylsiloxane (PDMS) chamber used in the spatial pattern preference assay. Each chamber is divided into four sections (I\u2013IV). The PDMS chamber (designated quad-chamber) is filled with M9 buffer. Worms are loaded with M9 buffer into the chamber through the \u2018In\u2019 port. Detailed information about the chamber dimensions is shown in Figure 1\u2014figure supplement 1A. (B) C. elegans N2 strain prefers to remain in pattern IV that has the highest density of PDMS pillars. The image was taken 60 min after the\u00a0worms were loaded into the chamber. (C) The degree of pattern preference was quantified at 60 min in two ways. First, the percentage of worms within each pattern was calculated (shown inside the bars). Second, spatial pattern preference index values for each section were obtained using the following formula: [# of worms in that section \u2013 (# of worms in the other three sections/3)] \u00f7 total # of worms. If worms are equally distributed among the different patterns, then all\u00a0the index values are zero. If no worm is found in a given pattern, then the index value of that pattern is \u22120.33. If all worms are found within a single pattern, then the index value of that pattern is 1. n\u00a0=\u00a012; ***p<0.001 when compared to the index value of pattern IV; Dunnett's multiple comparison tests. (D) N2 worms and gcy-35(ok769) mutants show a similar preference for pattern IV. n\u00a0=\u00a06 for gcy-35 mutants, and n\u00a0=\u00a010 for N2. (E) Pattern selectivity was significantly impaired in mec-10(ok1104) and mec-10(tm1552) mutant worms; n\u00a0=\u00a05 for each mec-10 mutant, and n\u00a0=\u00a010 for N2. **p<0.01 and ***p<0.001 when compared with N2; Student\u2019s t test. (F) Cell-specific rescue of mec-10(tm1552) mutant worms. Transgenic worms that carry single-copy transgenes (MosSCI; Pmec-10::mec-10cDNA, Pegl-44::mec-10cDNA, or Pmec-18::mec-10cDNA) were examined for their pattern IV selectivity. n\u00a0=\u00a05 for each transgenic worm strain. ***p<0.001 when compared with N2; Dunnett's multiple comparison tests. Error bars denote s.e.m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) An illustration showing the dimensions of the quad-chamber. (B) The time course of spatial pattern selection. Spatial pattern preference index values and % of worms in pattern IV were measured at indicated time points, n\u00a0=\u00a010. (C) The presence of food (E. coli OP50) in the chamber prolonged the selection of pattern IV. n\u00a0=\u00a010. (D) Starvation (5 hr prior to loading) diminished pattern selectivity of N2 worms. n\u00a0=\u00a010 for fed worms, and n\u00a0=\u00a04 for starved worms. *p<0.05; n.s. not significant; Student\u2019s t test. Error bars denote s.e.m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Spatial pattern selectivity is not a social behavior. \u2018Single\u2019 \u2013 A single N2 worm was loaded into the quad-chamber, and its location was recorded at 60 min. Twenty chambers with single worms were analyzed each time, and experiments were repeated four times. \u2018Group\u2019 \u2013 A group of twenty N2 worms was loaded into a quad-chamber each time, and experiments were repeated four times. Percentage of worms in pattern IV at 60 min was plotted, and error bars indicate s.e.m. (B) A representative image showing N2 worms in a chamber containing only two patterns; one with no pillars (same as pattern I in the quad-chamber), and the other with the same design as pattern III. (C) N2 worms show preference for pattern III at 60 min after loading, indicating that pattern preference depends on relative rather than absolute pillar density. n\u00a0=\u00a05; **p<0.01; Student\u2019s t test. error bars denote s.e.m.\n\nTo test whether pattern selectivity is based on individual choice or group behavior, we performed cumulative single-worm analyses. Single-worm pattern preference index values were similar to those obtained in population experiments (Figure 1\u2014figure supplement 2A), indicating that pattern selectivity is an individual rather than group behavior. To identify the sensory modality used for pattern selection, we analyzed mutant worms that have defects in either oxygen or touch sensation. C. elegans exhibits aggregation behavior at optimal oxygen levels (Cheung et al., 2004; Gray et al., 2004). We thus examined whether oxygen sensation might play a role in the observed clustering within pattern IV. To this end, we tested mutant worms that lack the GCY-35 soluble guanylate cyclase and are defective in oxygen-dependent aggregation, bordering, and social feeding behaviors (Cheung et al., 2004; Gray et al., 2004). However, these mutant gcy-35 worms continued to show preference for pattern IV (Figure 1D), indicating that pattern IV selectivity was independent of possible variations in oxygen levels and oxygen sensing. By contrast, mutant worms with dysfunctional MEC-10 DEG/ENaC channels showed a significant reduction in their preference for pattern IV (Figure 1E). To understand where MEC-10 functions, we performed cell-specific rescue experiments. As expected, single-copy Pmec-10::mec-10 transgenes that drive MEC-10 expression in the six touch receptor neurons and in PVD and FLP neurons fully restored the preference for pattern IV. Expression of MEC-10 under Pegl-44 in FLP and HSN neurons (Wu et al., 2001) also rescued the defects in mec-10(tm1552) mutant worms. By contrast, MEC-10 expression in the six touch receptor neurons (driven by Pmec-18) did not recover the preference for pattern IV. Together, these data indicate that MEC-10 acts in the polymodal nociceptive FLP neurons to support the selection of pattern IV.\n\nTo determine whether pattern selectivity depends on the particular absolute pillar density of pattern IV, we used a chamber consisting of patterns I and III only (Figure 1\u2014figure supplement 2D). In this chamber, N2 worms showed a clear preference for pattern III (Figure 1\u2014figure supplement 2E), even though this is a non-favored pattern in the quad-chamber. We therefore conclude that pattern selectivity is based on comparison between different spatial patterns i.e., environmental context, rather than on the specific structural arrangement of pattern IV.\n\nWe next investigated the strategies that worms use to select pattern IV in the quad-chamber. First, we considered local effects occurring at the boundaries between adjacent patterns. We tracked worms that left pattern IV and entered into the less desired pattern III (Figure 2A), and found that these worms re-crossed back into the preferred pattern IV at a much higher rate than worms already within pattern IV (Figure 2B). We also found an increase in both reversal and turning rates when worms cross the IV-to-III boundary (Figure 2C). Therefore, worms sense local changes in pattern density, and respond quickly to unfavorable changes by reorientation, reinforcing our finding of their ability to make decisions based on comparisons of spatial density. Second, we examined whether worm locomotion within pattern IV was affected by the presence of neighboring patterns. We hypothesized that preceding experience of alternative spatial configurations would have a lasting impact on worm behavior within preferred pattern IV. To test this hypothesis, we designed an additional chamber (designated uni-chamber; Figure 2D) containing only\u00a0a pattern IV pillar configuration throughout its surface and no other patterns. We compared the speed and pause rates of worms within pattern IV in both quad- and uni- chambers. We found that worms in pattern IV of the quad-chamber moved more slowly and paused more than worms in the uni-chamber (Figure 2E\u2013F). Such slowing and pausing could prolong the stay of worms in pattern IV. Together, these data suggest that the clustering of worms in pattern IV is due to both real-time responses to pattern changes upon boundary crossing and to longer-lasting effects caused by the experience of other less desired patterns. Thus, without vision or hearing, C. elegans can take advantage of mechanosensory information to compare and select between spatial patterns in its environment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig2-v2.jpg)\n\n**Figure 2.:** Crossing the boundary from pattern IV to pattern III stimulates worms to return to pattern IV. (A) The red line indicates the boundary between patterns IV and III, and the blue line serves as a reference line in the middle of pattern IV. (B) The fraction of worms returning to pattern IV at indicated time points. Time zero indicates the moment that worms cross the red line (from pattern IV to III) or the blue line. Data were collected between 55\u201365 min after the\u00a0worms were loaded into the chambers. n\u00a0=\u00a06. (C) Worms exhibit increased reversal and turning rates when they cross the pattern IV-to-III boundary. n\u00a0=\u00a06. (D) The design of the uniform chamber (uni-chamber). This chamber has only one pillar array pattern, which is identical to pattern IV in the quad-chamber. (E\u2013F) Worms show different locomotion properties within pattern IV depending on the presence of absence of alternative surrounding patterns. The speed of moving (\u00b5m/sec) and the pause rates (%) were quantified from worms within pattern IV in either the quad-chamber or the uni-chamber. The number of independent repeats, n\u00a0=\u00a06; ***p<0.001; Student\u2019s t test. Error bars denote s.e.m.\n\nWe next set to explore the molecular basis for the observed spatial pattern selectivity. Several features of this behavior prompted us to investigate the contribution of dopamine signaling. In C. elegans, dopamine regulates a variety of behaviors including locomotion, mechanosensation, food availability, touch habituation, and the swim-to-crawl transition (Calhoun et al., 2015; Chase et al., 2004; Hills et al., 2004; Kindt et al., 2007; Sanyal et al., 2004; Sawin et al., 2000; Vidal-Gadea et al., 2011). In particular, dopamine signals decrease locomotion rates when worms enter a food source (a lawn of bacteria) (Sawin et al., 2000), and increase returning frequency when worms leave the bacteria lawn (Hills et al., 2004). To test whether dopamine is required also for spatial pattern selectivity, we examined cat-2(e1112) animals, which lack the CAT-2 tyrosine hydroxylase and are defective in dopamine biosynthesis (Lints and Emmons, 1999). We observed that cat-2 mutant animals have disrupted pattern selectivity, as they showed reduced preference for pattern IV in the quad-chambers (Figure 3A). Addition of exogenous dopamine restored the accumulation of cat-2 mutants within pattern IV (Figure 3A), demonstrating that the defect in spatial pattern selectivity of cat-2 mutants is due to the lack of dopamine. To determine the dopamine receptor responsible for the selectivity, we analyzed mutant worms with impaired dopamine receptors. We found that disrupting the D2-like receptor DOP-3, but not other dopamine receptors (DOP-1, DOP-2, and DOP-4), led to a reduced preference for pattern IV (Figure 3B). DOP-3 is expressed in a variety of neurons in the head, ventral cord and tail (Chase et al., 2004). The site-of-action of DOP-3 for pattern selection is unknown.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig3-v2.jpg)\n\n**Figure 3.:** (A) The requirement for dopamine biosynthesis. Mutant cat-2\u00a0worms (e1112) that lack CAT-2 tyrosine hydroxylase show impaired preference for pattern IV, which is rescued by the addition of dopamine (2 mM). The number of independent repeats, n\u00a0=\u00a010; ***p<0.001 when compared with N2; ###p<0.001 when compared with cat-2(e1112) mutants; Tukey-Kramer multiple comparison tests. (B) The D2 dopamine receptor DOP-3 is required for spatial pattern selectivity. n\u00a0=\u00a012; ***p<0.001 when compared with N2; Dunnett's multiple comparison tests. (C) Preference for pattern IV requires the mechanotransduction TRP-4 channel in dopamine neurons. trpa-1(ok999) mutants were used as controls. Pdat-1 was placed before the trp-4 cDNA to drive specific expression in dopamine neurons. n\u00a0=\u00a012, ***p<0.001 when compared with N2, ***p<0.001 when compared with N2, ###p<0.001 when compared with trp-4(ok1605) mutants, Tukey-Kramer multiple comparison tests. (D) Mutant worms that lack TRP-4 do not show the\u00a0enhanced returning behavior at boundaries. n\u00a0=\u00a06. (E) Double mutant worms (trp-4; dop-3 and trp-4; cat-2) exhibited identical defects as the trp-4 single mutant, suggesting that TRP-4, dopamine, and DOP-3 function in the same pathway. n\u00a0=\u00a012; ***p<0.001 when compared with N2; n.s.: not significant compared with trp-4(ok1605); Tukey-Kramer multiple comparison tests. All data were collected 60 min after the\u00a0worms were loaded into the chambers. Error bars denote s.e.m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A disruption cassette that contains gfp::tbb-2utr and Prps-0::hygR::unc-54utr was inserted into trp-4 exon 2, which results in a deletion and an early stop codon that put trp-4 out-of-frame after the amino acid residue 53.\n\nTo identify the molecular sensor that links mechanosensation, dopamine, and spatial pattern preference, we studied mutant worms that lack TRP-4, a stretch receptor expressed in the CEP, ADE, and PDE dopaminergic neurons and the DVA and DVC interneurons (Hu et al., 2011; Kang et al., 2010; Li et al., 2006). TRP-4 is the pore-forming subunit of mechanotransduction channels (Kang et al., 2010; Li et al., 2006). Mutant trp-4(ok1605) worms significantly reduced their preference for pattern IV (Figure 3C) and did not show the\u00a0enhanced returning behavior after crossing the boundary between section IV and III (Figure 3D). To confirm that the defects in pattern selection are due to the lack of TRP-4 function, we generated a second allele trp-4(pek220) using CRISPR/CAS9 and homologous recombination (Figure 3\u2014figure supplement 1). We found that trp-4(pek220) mutant worms exhibit similar defects as trp-4(ok1605) worms, confirming that the pattern IV preference requires TRP-4. The defects of trp-4 single mutants were similar to trp-4; cat-2 and trp-4; dop-3 double mutants, indicating that trp-4 acts in the same dopamine pathway as cat-2 and dop-3 (Figure 3E). Single-copy transgenes that express TRP-4 in dopaminergic neurons restored the preference for pattern IV (Figure 3C), further demonstrating a role of TRP-4 in dopaminergic neurons in mediating spatial pattern selectivity. Together, these data elucidate a signaling mechanism for the stretch receptor TRP-4, dopamine, and the dopamine receptor DOP-3, coupling spatial pattern detection with the behavioral preference of animals.\n\nRecent studies have shown that natural genetic variations influence how C. elegans interacts with environmental cues such as food, oxygen, microbial pathogens, and neighboring worms (Bendesky and Bargmann, 2011; Bendesky et al., 2012, 2011; Chang et al., 2011; Persson et al., 2009). The physical structure of the environment is another important feature that varies with habitat. We therefore hypothesized that C. elegans strains from different natural habitats might differ in their selectivity of spatial patterns. We thus examined a wild isolate of C. elegans, Hawaiian CB4856 (designated HW) in the spatial pattern preference assay. Interestingly, we found that unlike N2, HW worms failed to aggregate in pattern IV of the quad-chambers (Figure 4A, B), and their returning behavior at boundaries was significantly reduced in comparison to N2 worms (Figure 4C). In addition, HW worms exhibited similar traveling speed and pause rates in uni- and quad-chambers (Figure 4\u2014figure supplement 1), indicating that mechanosensory experience had little impact on HW behavior. Several studies have shown that behavioral differences between N2 and HW could be explained by laboratory-derived genetic changes (e.g., allelic variations in npr-1 and glb-5; reviewed in Sterken et al. (2015). To test whether this is the case for spatial pattern selectivity, we examined the LSJ1 strain, a sibling of N2 that was cultivated separately after isolation. We found that the LSJ1 strain showed similar behavior to N2 worms in the spatial pattern preference assay (Figure 4B), suggesting that the difference in spatial pattern selectivity is not due to domestication-derived alleles.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig4-v2.jpg)\n\n**Figure 4.:** (A) The Hawaiian CB4856 strain (HW) does not show significant preference for pattern IV of the quad-chamber. The representative image was taken at 60 min after the worms were loaded into the chamber. (B) Quantification of the preference for pattern IV of N2, HW, and LSJ1 (a sibling of the N2 strain) worms in the quad-chamber at 60 and 90 min. n\u00a0=\u00a012. (C) HW CB4856 worms do not show enhanced returning at boundaries. n\u00a0=\u00a06. Data were collected as described in Figure 2B.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Traveling speed (A) and % pause (B) were quantified as described in Figure 1. n\u00a0=\u00a05; n.s.: not significant.\n\nInterestingly, the stretch receptor TRP-4 in the HW strain carries three amino acid substitutions (M36I, G41S, and E67G; Figure 5A) (Thompson et al., 2013). The trp-4 gene is located on chromosome I in C. elegans. An N2/HW hybrid strain that carries the HW Chromosome I in an N2 background behaved like the HW strain in the spatial pattern preference assay. However, hybrid strains that carry other HW chromosomes in the N2 background were indistinguishable from N2 worms (Figure 5B), with the exception of those with HW Chromosome X, which showed a minor but significant reduction in the preference for pattern IV. These data are consistent with a role of trp-4 in determining the natural variation in spatial pattern selectivity. They also suggest that other gene(s) on Chromosome X may contribute to the polymorphic behavior. Next, we isolated recombinant inbred lines (RIL) from a cross between N2 and N2/HW hybrids that carry the HW Chromosome I. As shown in Figure 5C, two RIL strains behaved differently in the spatial pattern preference assay; one that carries the N2 trp-4 gene showed preference for pattern IV, but another one with HW trp-4 did not. To confirm the role of TRP-4 in spatial preference polymorphism, we performed rescue experiments using single-copy transgenes expressing either N2 or HW trp-4 cDNA in dopaminergic neurons. N2 trp-4 cDNA fully restored the selectivity defects of the trp-4(ok1605) mutant worms. By contrast, HW trp-4 cDNA showed only low levels of rescue (Figure 5D). These data confirm that N2 TRP-4 is required for the spatial pattern preference observed in the Bristol strains. To test whether N2 TRP-4 is sufficient for endowing the HW strains with spatial pattern selectivity, we overexpressed N2 TRP-4 in HW worms. Because TRP channels are expected to form tetramers, we reasoned that overexpression of N2 TRP-4 might replace the HW TRP-4 channels. Indeed, we found that N2 TRP-4 but not HW TRP-4 overexpression caused HW worms to show spatial pattern selectivity similar to that of N2 (Figure 5E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig5-v2.jpg)\n\n**Figure 5.:** (A) A cartoon illustrating the amino acid substitutions (M36I, G41S, and E67G) in HW TRP-4. (B) Chromosomes I and X were linked to altered spatial pattern selectivity between N2 and HW strains. Hybrid N2/HW strains carrying one HW chromosome (red) and five N2 chromosomes (blue) were quantified for spatial preference at 60 min. n\u00a0=\u00a012 for N2 and HW worms; n\u00a0=\u00a010 for worms with chromosome substitutions. (C) Recombinant inbred strains harboring N2 and HW trp-4 genes showed distinct behavior in the spatial pattern preference test at 60 min. n\u00a0=\u00a012. Estimated regions of recombination (around 13.7 Mb in BJH208 and 14.1 Mb in BJH212) are indicated in the upper panel. The BJH208 strain that carries the N2 trp-4 gene shows enrichment, but the BJH212 strain with HW trp-4 does not (lower panel). (D) Transgenic trp-4(ok1605) worms expressing single-copy N2 or HW TRP-4 in dopaminergic neurons (Pdat-1::trp-4 cDNA) were tested in the spatial pattern preference assay. n\u00a0=\u00a012 for N2 and trp-4(ok1605) worms, n\u00a0=\u00a010 for worms with the transgenes. ***p<0.001, when compared to N2; ###p<0.001 and #p<0.05 when compared to trp-4(ok1605) mutants. Error bars denote s.e.m. (E) Transgenic HW worms carrying extrachromosomal arrays with either N2 or HW trp-4 cDNA driven by Pdat-1 were examined in the spatial pattern preference assay. n\u00a0=\u00a012. Data were collected 60 min after worm loading (unless specified otherwise). One-way ANOVA and Dunnett's multiple comparison tests were used for statistic analyses in Figure 5. ***p<0.001 when compared to N2; ##p<0.01 when compared to HW worms. Error bars denote s.e.m.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The swim-to-crawl transition was analyzed as described in previous studies\u00a0(Vidal-Gadea et al., 2011). Blue: dorsal body bend. Red: ventral body bend. (B) Transgenic trp-4(ok1605) worms carrying either N2 or HW TRP-4 show normal body bend frequency at the swim-to-crawl transition. n\u00a0=\u00a016 for each strain, ***p<0.001 when compared to N2; ###p<0.001 when compared with trp-4(ok1605) mutants, Tukey-Kramer multiple comparison tests. Error bars denote s.e.m.\n\nThe substitution of three residues in HW TRP-4 occurs at the N-terminal region that is adjacent to Ankyrin repeats (Figure 5A). In flies, the Ankyrin repeats of NOMPC (the TRP-4 homologue) directly bind microtubules, and they are essential for mechanogating of the NOMPC channels (Zhang et al., 2015). To understand whether the three residue substitutions alter TRP-4 properties, we recorded electrophysiological responses of the dopaminergic CEP neurons to small mechanical displacements (Figure 6A) (Kang et al., 2010). The mechanoreceptor current in CEP neurons is mediated by TRP-4, and the amplitude of the current depends on the strength of the applied mechanical force. In agreement with a previous study (Kang et al., 2010), a displacement of 0.5 \u03bcm was sufficient to elicit TRP-4 mediated current in N2 worms, and the current was saturated at 3 \u03bcm displacement (Figure 6B). Interestingly, the sensitivity of HW TRP-4 to mechanical stimuli was significantly reduced. Larger mechanical displacement was required to generate currents with similar amplitudes (Figure 6A\u2013B). These results are consistent with the findings that the N-terminal region of the TRP-4 homologue NOMPC is required for mechanogating in flies (Zhang et al., 2015). It is worth noting that, when mechanical stimuli are sufficiently strong, the HW TRP-4 is fully active (Figure 6C). Consistently, we found that an even higher density of pillars (novel pattern V) enhanced the enrichment of HW worms, but not of trp-4(ok1605) mutants (Figure 6D). Together, these findings indicate that amino acid substitutions in HW TRP-4 reduce the sensitivity to mechanical stimuli, which could subsequently alter spatial pattern perception in HW worms. Interestingly, whereas a single-copy HW TRP-4 transgene failed to restore spatial preference (Figure 5E), it completely rescued swimming/crawling transition in the trp-4(ok1605) mutant worms (Figure 5\u2014figure supplement 1), suggesting that various types of TRP-4 dependent behaviors are tuned to different levels of mechanogating sensitivity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig6-v2.jpg)\n\n**Figure 6.:** (A) Representative traces of mechanoreceptor currents in wild type N2 and HW dopaminergic CEP neurons in response to small mechanical displacements (1 \u03bcm, 2 \u03bcm and 4 \u03bcm). Whole-cell patch clamp recordings (holding potential at \u221275 mV) were carried out at 20\u00b0C. (B) Stimulus-current curves of TRP-4 mechanogated on-currents in response to mechanical displacement. Data were fitted with a Boltzmann function. For N2 worms, the half-maximal displacement is 1.48\u00a0\u00b1\u00a00.04 \u00b5m and the slope factor is 0.56\u00a0\u00b1\u00a00.04 \u00b5m. For HW worms, the half-maximal displacement is 2.71\u00a0\u00b1\u00a00.03 \u00b5m, the slope factor is 0.58\u00a0\u00b1\u00a00.03 \u00b5m. n\u00a0=\u00a08 for N2 and n\u00a0=\u00a06 for HW; **p<0.01 and *p<0.05 when compared with HW worms. (C) A comparison of absolute current amplitudes in N2 and HW worms (at 5 \u00b5m displacements, n\u00a0=\u00a09 for N2 and n\u00a0=\u00a09 for HW). (D) Increases in pillar density in pattern IV enhanced HW aggregation but had little impact on trp-4(ok1605) mutant worms. Denser pattern V consisted of a pillar layout of 194 \u00b5m (pillar diameter) x 95 \u00b5m (distance between pillars). **p<0.01. Error bars denote s.e.m.\n\nFinally, we analyzed spatial pattern selectivity of ten additional wild isolates, for which complete genome sequences are available (Thompson et al., 2013). We found that five wild isolates exhibited a spatial preference like N2. Two isolates (AB1 and JU397) with substituted residues in TRP-4 exhibited defects in preference for pattern IV in the quad-chambers (Figure 7A). The TRP-4 channels in AB1 and JU397 each carry two substitutions (G41S and E67G), suggesting that the third substitution M36I in the HW strain is not required. A third isolate (CB4854) also carries two substitutions (E67G and I152M) in TRP-4; however, these worms did not show significant defects in the spatial pattern preference assay (Figure 7A). The most parsimonious explanation is that the G41S substitution is the key residue that modulates TRP-4 mechanosensitivity. However, it is also possible that E67G is important, but the combination of E67G and I152M suppresses the impact of E67G.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/22896/elife-22896-fig7-v2.jpg)\n\n**Figure 7.:** (A) Spatial preference of C. elegans natural isolates was quantified using regular quad-chambers. n\u00a0=\u00a012 for each strain, ***p<0.001 and **p<0.01 when compared to N2; Dunnett's multiple comparison tests. (B) CRISPR/Cas9 edited N2 worms carrying the A273G substitution and wild type N2 worms were compared using the spatial pattern preference assay. n\u00a0=\u00a012; ***p<0.001, Student\u2019s t test. Data from the spatial pattern preference assay were collected at 60 min. Error bars denote s.e.m.\n\nIntriguingly, three wild isolates (CB4853, JU300, and JU322) showed altered spatial pattern selectivity despite having N2-like TRP-4 sequence (Figure 7A). Closer examination of their genome sequences revealed that all three strains carry a substituted residue in DOP-3 at the same position (A273G). Upon editing the dop-3 gene in N2 worms using CRISPR/Cas9 (Friedland et al., 2013), we found that the edited worms with the A273G substitution lost their spatial pattern selectivity (Figure 7B). These experiments indicate that the DOP-3 A273G mutation is sufficient to impair spatial pattern preference even with fully functional TRP-4. Therefore, the diversity of spatial pattern selectivity may arise from variations in either the detector that senses changes in the external world (e.g., TRP-4), or the neuromodulator signals that define the internal state of animals (e.g., dopamine and its receptors).\n\n## Discussion\n\nThese results demonstrate that C. elegans is able to utilize touch sensation to discern different spatial patterns in the environment. Previous studies have shown that nematodes can evaluate their environment by sensing food (Calhoun et al., 2015) and chemicals (Albrecht and Bargmann, 2011). Our findings add a new dimension to the \u2018mind\u2019 of the worm by demonstrating a capability to perceive physical patterns in the environment. In many animal species, touch perception plays a key role in guiding exploration of the physical world. For example, insects carry antennae to collect tactile information during locomotion, rodents use whiskers to detect spatial settings, and sea mammals use facial hairs to trace changes in water flow patterns caused by swimming fish. Using a substantially simpler nervous system, C. elegans is able to detect spatial patterns, and to use mechanosensory information about the overall environment to form spatial pattern preferences. While primitive, this sense of physical space in worms is highly dynamic \u2013 it is tightly regulated by experience (Figure 2E,F), spatial context (Figure 1\u2014figure supplement 2D,E), and food availability (Figure 1\u2014figure supplement 1C,D). Together, our findings elucidate a basic but surprising sense of physical patterns in the surrounding environment in a simple nervous system of 302 neurons.\n\nThe selectivity of spatial patterns in C. elegans requires dopamine, which may serve as a \u2018reward\u2019 signal that connects the sensation of spatial patterns with innate preferences (Schultz et al., 1997). In higher animals, the existence of sensory modalities such as vision and hearing and associated brain structures, substantially expand the richness and quality of available information about the physical structure of their environment. Nevertheless, together with previous findings implicating dopamine in spatial attention (Bellgrove et al., 2007) and spatial memory (Murphy et al., 1996), as well as in disorders such as agoraphobia in humans (Perna et al., 2011), our study suggests that the coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.\n\n## Materials\u00a0and\u00a0methods\n\n### Nematode strains and growth\n\nC. elegans strains were maintained under standard conditions at 20\u00b0C on nematode growth medium (NGM) agar plates\u00a0(Brenner, 1974). These plates were seeded with E. coli OP50 lawns. The following strains were used in this study: (a) Wild type strains \u2013 AB1 (Adelaide, AU), CB4853 (Altadena, US), CB4854 (Altadena, USA), CB4856 (Hawaii, US), LSJ1 (Bristol, UK), JU258 (Madeira, PT), JU300 (Indre, FR), JU322 (Merlet, FR), JU397 (Hermanville, FR), MY1 (Emsland, DE), MY14 (Mecklenbeck, DE), and N2 (Bristol, UK); (b) Mutant strains \u2013 VC1141 trp-4(ok1605), RB1052 trpa-1(ok999), CB1112 cat-2(e1112), LX645 dop-1(vs100), LX702 dop-2(vs105), LX703 dop-3(vs106), FG58 dop-4(tm1392), BJH2033 trp-4(ok1605); dop-3(vs106); BJH2034 trp-4(ok1605); cat-2(e1112); CX6448 gcy-35(ok769); RB1115 mec-10(ok1104); ZB2551 mec-10(tm1552); (c) Chromosome substitution strains \u2013 WE5236 [I, CB4856\u00a0>N2], GN67 [II, CB4856\u00a0>N2], GN68 [III, CB4856\u00a0>N2], GN69 [IV, CB4856\u00a0>N2], GN70 [V, CB4856\u00a0>N2], GN231 [X, CB4856\u00a0>N2]; (d) Single-copy MosSCI strains \u2013 BJH189 trp-4(ok1605); pekSi8 [cb-unc-119(+),Pdat-1::trp-4N2]II; BJH190 trp-4(ok1605); pekSi9[cb-unc-119(+),Pdat-1::trp-4HW]II; BJH976 mec-10(tm1552); pekSi102[NeoR(+),Pegl-44::mec-10]; BJH977 mec-10(tm1552); pekSi103[NeoR(+),Pmec-18::mec-10]; BJH978 mec-10(tm1552); pekSi104[NeoR(+),Pmec-10::mec-10]; (e) Strains with engineered missense mutation by CRISPR-Cas9 \u2013 BJH701 dop-3(pek201[A273G]); BJH720 trp-4(pek220[GFP+hygR]); (f) Strains with UV-integrated transgenes \u2013 BJH186 pekIs85 [Pdat-1::trp-4N2] in CB4856, BJH187 pekIs86 [Pdat-1::HW trp-4HW] in CB4856.\n\n### Transgenes\n\nSingle copy transgenes were generated using the MosSCI technique (Fr\u00f8kj\u00e6r-Jensen et al., 2012; Fr\u00f8kjaer-Jensen et al., 2008). Transgenes were inserted into the ttTi5605 Mos1 site on chromosome II. Multi-copy integrated transgenic strains for trp-4 overexpression were generated by microinjection of plasmids (BJP-B289: Pdat-1::trp-4N2 and BJP-B290: Pdat-1::trp-4HW) at 50 ng \u00b5l\u22121 into the HW CB4856 strain. The co-injection markers were Pvha-6::mRuby (BJP-B169) and Pvha-6::GFP (BJP-B197). Blank vector pBluescript was used as an injection filler to bring final DNA concentration to 100 ng \u00b5l\u22121. Integration was obtained by UV irradiation of worms carrying the extrachromosomal arrays. Transgenic worms were outcrossed four times.\n\n### CRISPR/CAS9\n\nTo construct the Cas9-sgRNA expression plasmid for making the trp-4 deletion allele pek220, we replaced the gRNA sequence in the plasmid pJW1219 (Addgene; [Ward, 2015]) with the following sequence (5\u2032-GTAAATGTCCCAGAACGCGG-3\u2032) using the overlapping PCR method. To construct the repair construct for homologous recombination, we inserted the left trp-4 recombination arm, a disruption cassette containing GFP::tbb-2utr + Prps-0::hygR::unc-54utr, and the right trp-4 recombination arm into pPD49.26 between SpeI and SalI and sites. The left trp-4 recombination arm (~710 bp) was amplified using the forward primer 5\u2019-CTTGCATGCCTGCAGGTCGACTTTGGAATTTCCTTTGATACAGCAACCCAC-3\u2019 and the reverse primer 5\u2019-GTTCTTCTCCTTTACTGGAGGTGTGGGGATTCATCTGG-3\u2019. The right trp-4 recombination arm (~510 bp) was amplified using the forward primer 5\u2019-GGCTCCTTGCGTTCATCTTCATGCACACGGCACATAGGACAGAG-3\u2019 and the reverse primer 5\u2019-GGGCCCGTACGGCCGACTAGTCTTGGGAGTTTCCTCCCTTTTCC-3\u2019.\n\n### Fabrication of PDMS microfluidic chambers\n\nMicrofluidic chambers were fabricated using soft lithography with polydimethyl siloxane (PDMS, Sylgard 184, Dow Corning, MI). Silicon wafers were patterned with various designs using SU8-100 (Stanford microfluidic foundry, CA) and photolithography. PDMS was poured on top of the patterned silicon wafer, and was cured at 80\u00b0C for 2 hr. Cured PDMS was carefully lifted away from the silicon wafer. Sharpened stub needles (0.070 mm OD, 22G) were used to create the fluid inlet and outlet paths on the PDMS device. A plasma cleaner PDC-32G (Harrick Scientific, NY) was used to treat the PDMS device for 1 min. Glass slides (1 mm thick) were immediately bound to the devices after treating. Distilled water was added to the devices within 5 min. Before loading the worms, the devices were washed with an ample amount of M9 buffer.\n\n### Behavior assay for spatial pattern preference\n\nWorms were synchronized for the behavioral assays. Fifty gravid adult worms were transferred onto a 10 cm NGM plate seeded with OP50 to lay eggs for an hour. Then adult worms were removed by picking. Eggs were grown at 20\u00b0C for 72 hr to reach the young adult stage for behavioral tests. The PDMS chambers were washed with M9 buffer. Synchronized worms (72 hr) were transferred using glass Pasteur pipettes into Eppendorf tubes. After settling by gravity, worms were washed once to remove residual bacteria OP50. Approximately 30\u201370 worms were loaded into the inlet, and were allowed to freely explore the chamber. The location of the worms was recorded for 10 s using a Moticam 2500 CCD camera mounted on a stereo microscope (Leica, Germany) at various time points as indicated in the study.\n\nWorm preference for each pattern was quantified as the percentage of worms occupying that pattern in the quad-chambers and, in addition, using a spatial pattern preference index. The index was calculated for each pattern using the following formula: [# of worms in one pattern \u2013 (# of worms in the other three patterns/3)] \u00f7 total # of worms. An index value of 0 indicates in all patterns equal distribution among the different patterns. An index of \u22120.33 for a certain pattern indicates no worms found in that pattern. An index of 1 for a certain pattern indicates that all worms are present in that pattern. Each experiment was replicated 3\u20135 times. \u2018n\u2019 indicates the number of independent repeats of a particular experiment. Results were analyzed in a blind manner. To analyze the speed of locomotion and the pause rate, worm behavior in quad-chambers (between 58 to 61 min) was recorded using a Moticam 2500 digital camera that was mounted on a Leica S6D microscope. Videos were processed offline using MATLAB scripts developed by Albrecht and Bargmann (2011). The animal\u2019s locomotory state (forward, reverse, and turn) at boundaries was determined by visual inspection of the video.\n\n### Statistical analysis\n\nThe following statistic methods were used to analyze behavioral data. For single pairwise comparisons, we used the Student's t test. For analyses that require comparisons between multiple means to a control mean, we used one-way ANOVA followed by Dunnett's multiple comparison tests. For analyses that require comparisons among all possible pairs of means, we used the Tukey-Kramer method. Statistical analysis was performed using Igor Pro 6. Mean and standard error of the mean (SEM) are reported. Results were considered statistically significant when the p-value was\u00a0<0.05.\n\n### Electrophysiological recording\n\nYoung adult worms were immobilized on sylgard-coated coverslips using a cyanoacrylate glue Histoacryl Blue (Aesculap, PA). Worm dissection was performed in extracellular solution\u00a0(Dong et al., 2015). To expose the cell body of the CEP neuron, a small piece of the worm cuticle was cut open as previously described\u00a0(Kang et al., 2010). Dissected animals were mounted onto a fixed stage upright fluorescence BX51WI microscope (Olympus, Japan) equipped with a 60x/1.0NA water immersion objective lens, Nomarski-DIC optics, an X-cite 200DC light source (Excelitas, MA), and a ORCA-Flash2.8 CMOS camera (Hamamatsu Corp., Japan). All worms carried a Pdat-1::GFP transgene\u00a0(Lints and Emmons, 1999) enabling CEP identification by green fluorescence.\n\nRecording pipettes were pulled from borosilicate glass capillaries using a P-97 micropipette puller (Sutter Instruments, CA). These pipettes had resistances of\u00a0~15 M\u03a9 when filled with internal solution (135 CH3O3SCs, 5 CsCl, 5 MgCl2, 5 EGTA, 0.25 CaCl2, 10 HEPES and 5 Na2ATP, adjusted to pH 7.2 using CsOH). Extracellular solution contained (in mM) 150 NaCl, 5 KCl, 1 CaCl2, 5 MgCl2, 10 glucose and 10 HEPES, titrated to pH 7.3 with NaOH, 330 mOsm with sucrose. All chemicals were purchased from Sigma.\n\nWhole-cell patch clamp recordings (holding potential at \u221275 mV) were carried out by using HEKA EPC-10 double amplifier controlled by HEKA Patchmaster software at 20\u00b0C. The junction potential was measured by\u00a0\u00b110 mv 5 ms square testing signals. After the pipette tip was inserted into the bath solution, the junction potential was corrected using the \u2018Auto V0\u2019 function, which calls a procedure for automatic zeroing of the pipette current. Just before the pipette touched the cell membrane for the seal, the \u2018Auto V0\u2019 was used again to make sure the junction potential was well corrected. The currents were amplified and acquired using an EPC-10 amplifier (HEKA, Germany). The signal was digitized at 20 kHz and filtered at 2 kHz using Patchmaster (HEKA, Germany). A glass stimulus probe was mounted to a piezo-driven actuator (Physik Instrumente, Germany) held by a micromanipulator. Displacement was triggered and controlled by the piezo amplifier E625 (PI), which is synchronized with programmed signals from HEKA Patchmaster software. A voltage step of 222 mV was used to trigger each 1 \u00b5m displacement of the probe. Series resistance was compensated to 70%. Electrophysiological data were analyzed using Igor Pro 6 (Wavemetrics, OR).\n",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "fbec993f-6c96-4b81-bc4a-5fb06e5c8916",
+      "submission_id": "c3317d27-1785-4676-90e3-da3c7e701c44",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Oliver Hobert, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22896.014](https://doi.org/10.7554/eLife.22896.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Dopamine Signaling Tunes Spatial Pattern Selectivity in C. elegans\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe comments of the two reviewers can be found below. You will see that the reviewers have convergent comments that I request you to address. In essence these are the two sets of key experiments that we would want to see in a revised version:\n\n1) Validate their results with (null) alleles of mec-10 and trp-4.\n\n2) Rescue of the mec-10 phenotype to determine its currently very unclear focus of action (determination of focus of action of dop-3 does not need to be performed, but possible site of action in VNC MNs should be discussed).\n\nReviewer #1:\n\nIn this paper, the authors demonstrate a role for dopaminergic neurons in C. elegans in a behavior though which worms preferentially accumulate in environments with particular mechanosensory characteristics. Specifically, they use specially fabricated microfluidic environments to show that worms prefer regions with a high density of mechanical obstacles, and that this behavior requires the mechanosensory trp channel trp-4 and the dopamine receptor dop-3. They also show that natural variation in these two genes contributes to variability in the observed behavior; in the case of trp-4, they go on to show that the genetic variants have altered sensitivity of trp-4-mediated mechanotransdution.\n\nOverall, this is an interesting story that brings together a variety of experimental threads to provide a convincingly simple and straightforward explanation of a seemingly complex behavior. I do think there are a few small missing pieces which if added to the study would make the molecular and cellular explanation of the behavior significantly more complete.\n\n1) In the manuscript, the authors state that \"worms sense localchanges in pattern density, and respond quickly to unfavorable changes by reorientation,\" (Results). However, I don't think the authors present any direct evidence that reorientation (i.e. turning/reversal rates) change when crossing from higher to lower obstacle density. In principle, could the accumulation in more dense environments simply involve an orthokinesis mechanism, by which locomotion rates are higher in low-density and lower in high-density environments? This seems particularly relevant as dopamine (and dop-3) are known to control speed but not to my knowledge reorientation. It would be good for the authors to directly test turning/reversal rates (with a correction for the known differences in speed).\n\n2) Although there is a significant amount of data in the paper about the role of dop-3, they surprisingly never do cell-specific rescue experiments to see where the DOP-3 receptor is acting. The previous work of Chase et al. suggests it could function in ventral cord motorneurons, and it would be straightforward to see if expression there is sufficient to rescue their phenotypes. This could fill in a missing gap to provide a satisfying molecular/circuit model for the behavior.\n\n3) The authors show that mec-10 mutants are defective in the behavior and cite this as evidence that mechanosensation is involved. But MEC-10 is not known to play a direct role in mechanosensation by the dopamine neurons and indeed is not even expressed in those cells. The only plausible explanation I can think of is that since mec-10 functions in the FLP neurons, and the FLPs and CEPs are known to modulate each other's activity through a gap junction circuit of nose touch neurons (Chatzigeorgiou 2011, Rabinowitch 2013), mec-10 could influence CEP activity indirectly through this circuit. They could test this easily by seeing if the mec-10 phenotype rescues under an FLP promoter. As with point 2, this could tie what now seems like a random observation into a convincing circuit model.\n\nReviewer #2:\n\nThe manuscript from Han et al. evaluates the ability of C. elegans nematodes to use surface texture as a navigational aid (a process called thigmotaxis in other literature). The study introduces a behavioral assay for texture preference based on an arena fabricated using soft-lithography techniques and evaluates the effect of mutations in two ion channel genes-mec-10 and trp-4. Additionally, the work links mechanosensation to dopaminergic signaling and its reception by the DOP-3 receptor. The mec-10 gene encodes a pore formingsubunit of the sensory mechanotransduction channel in the gentle touch receptor neurons (TRNs) and the trp-4 gene encodes a pore-forming subunit of the sensory mechanotransduction channel expressed by texture-sensing and proprioceptive neurons (CEP, ADE, PDE). The TRP-4 protein is homologous to Drosophila NOMPC and is predicted to form a non-selective cation channel activated by mechanical force. The main findings are that C. elegans nematodes perform thigmotaxis, that this behavior differs among wild isolates and depends on TRP-4 ion channels as well as dopaminergic signaling.\n\nThe data are presented in a clear and engaging manner, certain findings rely on mutant alleles that do not cleanly or clearly eliminate the cellular or molecular function in question (see below). For this reason, this reviewer believes that additional experimental work is essential to support the current conclusions.\n\n1) The role of mec-10-expressing mechanoreceptor neurons in quadrant assays (part 1)\n\nThe preference defect in mec-10(ok1104) mutants is as strong as that found for trp-4(ok1605) mutants (compare Figure 1\u2014figure supplement 2C with Figure 5D). Thus, it is puzzling that the authors report the mec-10 result as supplementary material and even more puzzling that they have chosen to focus exclusively on trp-4. Given that these genes are expressed in non-overlapping sets of mechanoreceptor neurons, it seems essential to understand determine whether or not these genes act together to mediate the observed thigmotaxis behaviors.\n\n2) The role of mec-10-expressing mechanoreceptor neurons in quadrant assays (part 2)\n\nThe authors study mec-10(ok1104) and find that these animals have altered responses to pillar arrays. This conclusion is predicated on the notion that the ok1104 mutation disables mechanosensation \u2013 (Results): \"mutant worms with dysfunctional MEC-10 DEG/ENaC mechanosensory channels showed a significant reduction in their preference for pattern IV (Figure 1\u2014figure supplement 2C), demonstrating that spatial pattern selectivity requires proper mechanosensation.\" But, the situation is much more complex. First, mec-10 is expressed in three classes of mechanoreceptor neurons, the touch receptor neurons (TRN), PVD and FLP. Which neurons are responsible for this effect? Second, the ok1104 allele has very mild effects on TRN-mediated mechanosensation. In fact, Arnadottir et al. (J Neurosci, 2011) showed that ok1104 mutants retain nearly normal behavioral responses to touch and mechanoreceptor currents. Additionally, the ok1104 allele deletes 143bp of the gene and allows for the transcription of at least a single transcript encoding an abberant protein. Thus, the ok1104 allele is unlikely to be null. Thus, the observed defects in behavioral assays could be due to the expression of a defective protein in the TRNs, PVD, or FLP. At a minimum, the authors need to communicate this complexity and uncertainty to readers. It would be better, however, to evaluate additional alleles, including tm1552, a different deletion in mec-10 and u253 a deletion in mec-4 that eliminates mechanosensory currents in the TRNs and behavioral sensitivity.\n\n3) The contribution of trp-4 to responses to pillar assays\n\nThere are three alleles encoding deletions in the trp-4 gene available from the CGC stock center: gk341, sy695, and ok1605. It is unfortunate that the authors have chosen ok1605 for this study-this allele encodes an in-frame deletion that may not be null. Thus, the behavioral deficit observed could be the result of an aberrant TRP-4 protein rather than the absence of TRP-4. The interpretation of the authors' examination of trp-4 and its genetic polymorphisms depends on resolving this uncertainty.\n\n4) Differences in current-displacement curves in N2 and HW\n\nThe recordings in Figure 6 are presented in an ambiguous manner and critical information about the recording conditions are missing.\n\nDid the authors record from CEP neurons in wild-type N2 and HW worms? Or, were recordings performed in transgenic N2 animals expressing TRP-4(N2) and TRP-4(HW) from transgenes?\n\nIf the latter, were the recordings performed in a wild-type N2 background or in trp-4(ok1605)? What holding potential used to record currents? Please add this information the figure and/or its legend.\n\nWhere voltages were corrected for junction potentials?\n\nDo the maximal currents differ between N2 and HW? Please show pooled data for absolute current amplitude for 5\u00b5m displacements that saturate the current-displacement curves in both cases.\n\nThe answers to these questions affect interpretation, especially in light of point#3 above. The authors ascribe the difference displacement sensitivity to polymorphisms in the trp-4 gene. While this inference is consistent with the available data, it is not the only possible interpretation. For example, if the recordings were in N2 and HW genetic backgrounds-variations in accessory proteins could just as easily account for the observed effects.\n\n5) Variation in behavioral preferences among wild isolates\n\nThe difference between N2 and HW is striking and the authors' efforts to understand this source of this phenotypic difference are a terrific first start. However, their inferences about the causal role played by SNPs in the trp-4 gene extend beyond the data available. For instance, since trp-4 is not the only single gene that can mutate to alter this behavior (see point #1 above and the defect that appears to be linked to the X chromosome), the exclusive focus on trp-4 is not really warranted. In other words, the phenotypic differences between wild isolates may be a combined function of differences in trp-4 function and other factors.\n\n6) Behavioral mechanism of preferences in quadrant assay\n\nThroughout the description of the quadrant assay, this reviewer was struck by the concept of preference. Given the authors' finding that animals move more slowly in the denser patterns, isn't this arena essentially a speed trap? (i.e. animals accumulate in pattern IV because once they enter this zone, they move more slowly. The fact that this preference declines in longer assays \u2013 Figure 1\u2014figure supplement 1 \u2013 supports this alternative interpretation). It would be useful to distinguish between the apparent preference and how this preference is produced.\n",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f1d4c03c-2f35-4bb7-ba49-b3b488db9d59",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C1",
+      "claim": "C. elegans has a nervous system of only 302 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the nematode Caenorhabditis elegans can discriminate spatial patterns in its surroundings, despite having a nervous system of only 302 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about C. elegans neuroanatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "50957ad3-d387-4ebd-ada7-c6c848bd164c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C2",
+      "claim": "C. elegans can discriminate spatial patterns in its surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the nematode Caenorhabditis elegans can discriminate spatial patterns in its surroundings, despite having a nervous system of only 302 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding demonstrated through behavioral experiments in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7bad8610-124f-4b0c-a2d3-b2457d1229f0",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C3",
+      "claim": "Spatial pattern selectivity in C. elegans requires touch-dependent dopamine signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial pattern selectivity requires touch-dependent dopamine signaling, including the mechanosensory TRP-4 channel in dopaminergic neurons and the D2-like dopamine receptor DOP-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by genetic and behavioral experiments showing requirement of dopamine pathway components.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "811613d1-cca0-4bf8-8ddf-8531f2630bb0",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C4",
+      "claim": "Spatial pattern selectivity requires the mechanosensory TRP-4 channel in dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial pattern selectivity requires touch-dependent dopamine signaling, including the mechanosensory TRP-4 channel in dopaminergic neurons and the D2-like dopamine receptor DOP-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mutant analysis and cell-specific rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "88a41e58-f389-4e18-9c18-33105aa1948f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C5",
+      "claim": "Spatial pattern selectivity requires the D2-like dopamine receptor DOP-3.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial pattern selectivity requires touch-dependent dopamine signaling, including the mechanosensory TRP-4 channel in dopaminergic neurons and the D2-like dopamine receptor DOP-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mutant analysis showing dop-3 mutants have reduced pattern preference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7080f227-8b43-4333-8d5c-058bd4694f28",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C6",
+      "claim": "Spatial pattern selectivity varies significantly among C. elegans wild isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that spatial pattern selectivity varies significantly among C. elegans wild isolates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by testing multiple wild isolates in the spatial pattern preference assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "066cfb31-5937-4544-812e-7d996a5a702a",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C7",
+      "claim": "Natural variations in TRP-4 reduce the mechanosensitivity of dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological recordings show that natural variations in TRP-4 reduce the mechanosensitivity of dopaminergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by whole-cell patch clamp recordings comparing N2 and HW strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "91b4ef28-95ec-4a8a-88db-6bfe5186164d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C8",
+      "claim": "Polymorphic substitutions in TRP-4 alter the selectivity of spatial patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphic substitutions in either TRP-4 or DOP-3 alter the selectivity of spatial patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through analysis of wild isolates and rescue experiments with different TRP-4 variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f762fda9-cb35-48fd-bb7a-5adeb68617f4",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C9",
+      "claim": "Polymorphic substitutions in DOP-3 alter the selectivity of spatial patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymorphic substitutions in either TRP-4 or DOP-3 alter the selectivity of spatial patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through CRISPR editing of the A273G substitution in N2 worms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "efee6a7c-7114-4121-940e-5e029cc860a7",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C10",
+      "claim": "Dopamine signaling has an ancestral role in tuning spatial pattern preferences in simple nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results demonstrate an ancestral role for dopamine signaling in tuning spatial pattern preferences in a simple nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the findings in C. elegans, a simple model organism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "199800ad-0f80-4514-a93c-ce250a64cee1",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C11",
+      "claim": "C. elegans feeds and reproduces in decomposing fruits and plant stems.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this question, we investigated the roundworm C. elegans, which feeds and reproduces in decomposing fruits and plant stems (Barri\u00e8re and F\u00e9lix, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Barri\u00e8re and F\u00e9lix, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "a87ce304-1da2-414f-95c1-1d52b0efc3f5",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C12",
+      "claim": "C. elegans lacks vision and hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans has only 302 neurons and lack vision and hearing, mainly relying on smell and touch to sense their environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans sensory capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c746fdfd-16c6-443b-abe0-dcfd09fafa6c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C13",
+      "claim": "C. elegans mainly relies on smell and touch to sense their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans has only 302 neurons and lack vision and hearing, mainly relying on smell and touch to sense their environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans sensory modalities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f2608414-f693-47fb-8b30-dd23c15c0548",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C14",
+      "claim": "Touch to the worm body or nose elicits reflex withdrawal responses.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, touch to the worm body or nose elicits reflex withdrawal responses (Chalfie and Sulston, 1981, Chalfie and Wolinsky, 1990; Kaplan and Horvitz, 1993; Sulston et al., 1975; Way and Chalfie, 1989), which allows the worms to quickly avoid potential danger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d46081ee-0a45-48ba-8e85-426a79123787",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C15",
+      "claim": "Mechanosensory detection of food elicits a slowing in C. elegans locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, mechanosensory detection of food elicits a slowing in C. elegans locomotion, increasing the time spent where food is present (Sawin et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sawin et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "bf459be5-a830-4bbe-8f75-b8644c4bc632",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C16",
+      "claim": "The Bristol N2 strain exhibits a strong preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the Bristol N2 strain exhibits a strong preference for pattern IV (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "997d09dd-b2f5-4d2e-8712-663b2b80c1ca",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C17",
+      "claim": "Approximately 63% of N2 worms were found in pattern IV 60 min after entering the chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 63% of N2 worms were found in the section containing pattern IV 60 min after entering the chamber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative data from behavioral experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "eab6524a-398f-4bba-80a7-1fa15d5c6924",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C18",
+      "claim": "Only 9\u201315% of N2 worms were found in each of the sections I, II and III.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, we observed only 9\u201315% of worms in each of the other sections I, II and III (Figure 1C) with lower pillar densities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from behavioral experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "a2f5f5d9-41c0-4330-9d51-fd3b0220ccb9",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C19",
+      "claim": "Pattern IV preference was very stable between 60 and 90 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern IV preference was very stable between 60 and 90 min, but was reduced at 120 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by time course experiments in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f7d03ae8-bb23-4e2b-82d8-f7c93f97408a",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C20",
+      "claim": "Pattern IV preference was reduced at 120 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Pattern IV preference was very stable between 60 and 90 min, but was reduced at 120 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by time course experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "880c748c-e5bc-4e80-ba7d-d6983b5d6d10",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C21",
+      "claim": "The decrease in pattern IV preference at 120 min was likely due to starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was likely due to starvation, as addition of food (OP50 bacteria) into the chamber prolonged the preference for pattern IV, which lasted at least 180 min (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference supported by experiments showing food addition prolongs preference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d9948d3d-9ca7-4b2c-9ef4-7f8572c9872f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C22",
+      "claim": "Addition of food into the chamber prolonged the preference for pattern IV to at least 180 min.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease was likely due to starvation, as addition of food (OP50 bacteria) into the chamber prolonged the preference for pattern IV, which lasted at least 180 min (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experiments with food addition shown in Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "a1e37839-173f-4e9e-81f6-57e98b9b1504",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C23",
+      "claim": "Worms that had already been starved prior to the experiment exhibited a significant reduction in pattern IV preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, worms that had already been starved prior to the experiment exhibited a significant reduction in pattern IV preference (Figure 1\u2014figure supplement 1D), indicating that feeding state (starvation) can override an inherent preference for pattern selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experiments with pre-starved worms shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "decbe5b5-f74f-4eaa-a58b-0382b3f4a2a2",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C24",
+      "claim": "Feeding state (starvation) can override an inherent preference for pattern selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, worms that had already been starved prior to the experiment exhibited a significant reduction in pattern IV preference (Figure 1\u2014figure supplement 1D), indicating that feeding state (starvation) can override an inherent preference for pattern selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from starvation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "85bfd107-c837-4eb8-aadf-18acfb76d541",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C25",
+      "claim": "Single-worm pattern preference index values were similar to those obtained in population experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-worm pattern preference index values were similar to those obtained in population experiments (Figure 1\u2014figure supplement 2A), indicating that pattern selectivity is an individual rather than group behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by single-worm analysis shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e66d0913-d9c0-450b-88c3-e77a624a6470",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C26",
+      "claim": "Pattern selectivity is an individual rather than group behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-worm pattern preference index values were similar to those obtained in population experiments (Figure 1\u2014figure supplement 2A), indicating that pattern selectivity is an individual rather than group behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from single-worm versus population experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "a6a5cfc6-b9d4-423a-b578-6f6bb4ee926e",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C27",
+      "claim": "C. elegans exhibits aggregation behavior at optimal oxygen levels.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans exhibits aggregation behavior at optimal oxygen levels (Cheung et al., 2004; Gray et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheung et al., 2004 and Gray et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7286818c-c127-4047-b2e0-8b4417d96204",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C28",
+      "claim": "gcy-35 mutant worms lack the GCY-35 soluble guanylate cyclase and are defective in oxygen-dependent aggregation, bordering, and social feeding behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we tested mutant worms that lack the GCY-35 soluble guanylate cyclase and are defective in oxygen-dependent aggregation, bordering, and social feeding behaviors (Cheung et al., 2004; Gray et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cheung et al., 2004 and Gray et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d687938b-672a-40f3-9e63-1f6e264de083",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C29",
+      "claim": "gcy-35 mutant worms continued to show preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these mutant gcy-35 worms continued to show preference for pattern IV (Figure 1D), indicating that pattern IV selectivity was independent of possible variations in oxygen levels and oxygen sensing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with gcy-35 mutants shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "162d60d6-092f-42fe-a600-fe714cbbad18",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C30",
+      "claim": "Pattern IV selectivity is independent of possible variations in oxygen levels and oxygen sensing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these mutant gcy-35 worms continued to show preference for pattern IV (Figure 1D), indicating that pattern IV selectivity was independent of possible variations in oxygen levels and oxygen sensing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from gcy-35 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "23010e55-84b7-41e3-9b1a-e3cea1ce1a99",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C31",
+      "claim": "Mutant worms with dysfunctional MEC-10 DEG/ENaC channels showed a significant reduction in their preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, mutant worms with dysfunctional MEC-10 DEG/ENaC channels showed a significant reduction in their preference for pattern IV (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with mec-10 mutants shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "9bcdabe3-c196-42f8-8f3b-1374eeabbd8a",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C32",
+      "claim": "Single-copy Pmec-10::mec-10 transgenes that drive MEC-10 expression in the six touch receptor neurons and in PVD and FLP neurons fully restored the preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, single-copy Pmec-10::mec-10 transgenes that drive MEC-10 expression in the six touch receptor neurons and in PVD and FLP neurons fully restored the preference for pattern IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by cell-specific rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f44769f3-96eb-4890-aa0e-92e233ef0345",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C33",
+      "claim": "Expression of MEC-10 under Pegl-44 in FLP and HSN neurons rescued the defects in mec-10(tm1552) mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of MEC-10 under Pegl-44 in FLP and HSN neurons (Wu et al., 2001) also rescued the defects in mec-10(tm1552) mutant worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by cell-specific rescue experiments, with citation to Wu et al., 2001 for promoter specificity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "fb1a7f51-4387-482c-9d44-f728fb596909",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C34",
+      "claim": "MEC-10 expression in the six touch receptor neurons (driven by Pmec-18) did not recover the preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, MEC-10 expression in the six touch receptor neurons (driven by Pmec-18) did not recover the preference for pattern IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by cell-specific rescue experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "14bfcd5e-12e4-47f6-b527-9961561e9594",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C35",
+      "claim": "MEC-10 acts in the polymodal nociceptive FLP neurons to support the selection of pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that MEC-10 acts in the polymodal nociceptive FLP neurons to support the selection of pattern IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from cell-specific rescue experiments showing rescue with Pegl-44 but not Pmec-18.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3e403c26-65a8-4269-8731-d53bdeec679e",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C36",
+      "claim": "In a chamber consisting of patterns I and III only, N2 worms showed a clear preference for pattern III.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine whether pattern selectivity depends on the particular absolute pillar density of pattern IV, we used a chamber consisting of patterns I and III only (Figure 1\u2014figure supplement 2D). In this chamber, N2 worms showed a clear preference for pattern III (Figure 1\u2014figure supplement 2E), even though this is a non-favored pattern in the quad-chamber.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments in a two-pattern chamber shown in Figure 1\u2014figure supplement 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "5e4208aa-a292-4dc3-bf1e-f5ba4ba1789c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C37",
+      "claim": "Pattern selectivity is based on comparison between different spatial patterns rather than on the specific structural arrangement of pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore conclude that pattern selectivity is based on comparison between different spatial patterns i.e., environmental context, rather than on the specific structural arrangement of pattern IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experiments showing preference for pattern III in a two-pattern chamber.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3d4f5658-03d4-4a49-8825-2e7f85caed4b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C38",
+      "claim": "Worms that left pattern IV and entered pattern III re-crossed back into pattern IV at a much higher rate than worms already within pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We tracked worms that left pattern IV and entered into the less desired pattern III (Figure 2A), and found that these worms re-crossed back into the preferred pattern IV at a much higher rate than worms already within pattern IV (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by tracking experiments shown in Figure 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2986ad4f-6466-4c57-b179-745a670adf03",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C39",
+      "claim": "There is an increase in both reversal and turning rates when worms cross the IV-to-III boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found an increase in both reversal and turning rates when worms cross the IV-to-III boundary (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral analysis shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7142d81b-eaa8-4d16-89d3-673e9f838d2c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C40",
+      "claim": "Worms sense local changes in pattern density and respond quickly to unfavorable changes by reorientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, worms sense local changes in pattern density, and respond quickly to unfavorable changes by reorientation, reinforcing our finding of their ability to make decisions based on comparisons of spatial density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from boundary crossing experiments showing increased reversal and turning rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "0c0012d8-c0de-4b2f-a438-524ba7cc167f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C41",
+      "claim": "Worms in pattern IV of the quad-chamber moved more slowly and paused more than worms in the uni-chamber.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that worms in pattern IV of the quad-chamber moved more slowly and paused more than worms in the uni-chamber (Figure 2E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by locomotion analysis comparing quad- and uni-chambers shown in Figure 2E\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2b1a0492-c4cd-497c-be41-a8f7e8ead039",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C42",
+      "claim": "Slowing and pausing could prolong the stay of worms in pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Such slowing and pausing could prolong the stay of worms in pattern IV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from observed behavioral changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c37db87e-3eaf-4263-84ce-9d126ccf373e",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C43",
+      "claim": "The clustering of worms in pattern IV is due to both real-time responses to pattern changes upon boundary crossing and to longer-lasting effects caused by the experience of other less desired patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the clustering of worms in pattern IV is due to both real-time responses to pattern changes upon boundary crossing and to longer-lasting effects caused by the experience of other less desired patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from boundary crossing and locomotion experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "fa37b114-bd5f-48d1-8217-70137307bfde",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C44",
+      "claim": "Without vision or hearing, C. elegans can take advantage of mechanosensory information to compare and select between spatial patterns in its environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, without vision or hearing, C. elegans can take advantage of mechanosensory information to compare and select between spatial patterns in its environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from all behavioral experiments demonstrating spatial pattern selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d6b873fc-52af-4cff-9f6b-ed60c7e3da06",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C45",
+      "claim": "In C. elegans, dopamine regulates a variety of behaviors including locomotion, mechanosensation, food availability, touch habituation, and the swim-to-crawl transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, dopamine regulates a variety of behaviors including locomotion, mechanosensation, food availability, touch habituation, and the swim-to-crawl transition (Calhoun et al., 2015; Chase et al., 2004; Hills et al., 2004; Kindt et al., 2007; Sanyal et al., 2004; Sawin et al., 2000; Vidal-Gadea et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c97c3da7-aa37-4e80-b79b-8dcbbadc513f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C46",
+      "claim": "Dopamine signals decrease locomotion rates when worms enter a food source.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, dopamine signals decrease locomotion rates when worms enter a food source (a lawn of bacteria) (Sawin et al., 2000), and increase returning frequency when worms leave the bacteria lawn (Hills et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sawin et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "b29479fa-d86e-42c9-8c76-1ecc10fd11e3",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C47",
+      "claim": "Dopamine signals increase returning frequency when worms leave the bacteria lawn.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, dopamine signals decrease locomotion rates when worms enter a food source (a lawn of bacteria) (Sawin et al., 2000), and increase returning frequency when worms leave the bacteria lawn (Hills et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hills et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "01fb37be-b60c-4d5f-ad5f-ecdcd5e9f7e9",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C48",
+      "claim": "cat-2(e1112) animals lack the CAT-2 tyrosine hydroxylase and are defective in dopamine biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether dopamine is required also for spatial pattern selectivity, we examined cat-2(e1112) animals, which lack the CAT-2 tyrosine hydroxylase and are defective in dopamine biosynthesis (Lints and Emmons, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lints and Emmons, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f87f6d91-cd56-4d6d-b370-3da6fb0f2147",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C49",
+      "claim": "cat-2 mutant animals have disrupted pattern selectivity with reduced preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that cat-2 mutant animals have disrupted pattern selectivity, as they showed reduced preference for pattern IV in the quad-chambers (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with cat-2 mutants shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "8ba504d1-a5d1-45a0-b505-e66e99e09ad9",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C50",
+      "claim": "Addition of exogenous dopamine restored the accumulation of cat-2 mutants within pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of exogenous dopamine restored the accumulation of cat-2 mutants within pattern IV (Figure 3A), demonstrating that the defect in spatial pattern selectivity of cat-2 mutants is due to the lack of dopamine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by rescue experiments with dopamine addition shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7e10dc8b-70b0-4205-b9a8-21cd82befce2",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C51",
+      "claim": "The defect in spatial pattern selectivity of cat-2 mutants is due to the lack of dopamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of exogenous dopamine restored the accumulation of cat-2 mutants within pattern IV (Figure 3A), demonstrating that the defect in spatial pattern selectivity of cat-2 mutants is due to the lack of dopamine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from dopamine rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "98dd8e42-4647-4633-a370-0e5736889719",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C52",
+      "claim": "Disrupting the D2-like receptor DOP-3 led to a reduced preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that disrupting the D2-like receptor DOP-3, but not other dopamine receptors (DOP-1, DOP-2, and DOP-4), led to a reduced preference for pattern IV (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with dopamine receptor mutants shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c6146801-7667-4a6e-a21a-47b31eb5ed8f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C53",
+      "claim": "Disrupting other dopamine receptors (DOP-1, DOP-2, and DOP-4) did not lead to reduced preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that disrupting the D2-like receptor DOP-3, but not other dopamine receptors (DOP-1, DOP-2, and DOP-4), led to a reduced preference for pattern IV (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with dopamine receptor mutants shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "33ecaccf-167a-43b1-9067-4b49c4dd6574",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C54",
+      "claim": "DOP-3 is expressed in a variety of neurons in the head, ventral cord and tail.",
+      "claim_type": "EXPLICIT",
+      "source": "DOP-3 is expressed in a variety of neurons in the head, ventral cord and tail (Chase et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chase et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "dd2f3c37-66fa-4779-aaa4-a39b265dac32",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C55",
+      "claim": "TRP-4 is a stretch receptor expressed in the CEP, ADE, and PDE dopaminergic neurons and the DVA and DVC interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the molecular sensor that links mechanosensation, dopamine, and spatial pattern preference, we studied mutant worms that lack TRP-4, a stretch receptor expressed in the CEP, ADE, and PDE dopaminergic neurons and the DVA and DVC interneurons (Hu et al., 2011; Kang et al., 2010; Li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hu et al., 2011; Kang et al., 2010; Li et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "1c82a4e5-e2a1-4033-9948-2f29d80c8dab",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C56",
+      "claim": "TRP-4 is the pore-forming subunit of mechanotransduction channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TRP-4 is the pore-forming subunit of mechanotransduction channels (Kang et al., 2010; Li et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kang et al., 2010 and Li et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "48ace8e6-9227-4645-af5f-2bb6388fc6c2",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C57",
+      "claim": "Mutant trp-4(ok1605) worms significantly reduced their preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant trp-4(ok1605) worms significantly reduced their preference for pattern IV (Figure 3C) and did not show the enhanced returning behavior after crossing the boundary between section IV and III (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with trp-4 mutants shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "90bb9d16-a585-4c77-aed8-2aab861f91b1",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C58",
+      "claim": "trp-4(ok1605) mutant worms did not show the enhanced returning behavior after crossing the boundary between section IV and III.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant trp-4(ok1605) worms significantly reduced their preference for pattern IV (Figure 3C) and did not show the enhanced returning behavior after crossing the boundary between section IV and III (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by boundary crossing experiments shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "4b437bee-f91e-4066-8735-1d53ad74c307",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C59",
+      "claim": "trp-4(pek220) mutant worms exhibit similar defects as trp-4(ok1605) worms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that trp-4(pek220) mutant worms exhibit similar defects as trp-4(ok1605) worms, confirming that the pattern IV preference requires TRP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by behavioral experiments with a second trp-4 allele.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "b623cc37-344e-4379-ae44-1347805246c9",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C60",
+      "claim": "The pattern IV preference requires TRP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that trp-4(pek220) mutant worms exhibit similar defects as trp-4(ok1605) worms, confirming that the pattern IV preference requires TRP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experiments with two independent trp-4 alleles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e7f7dd25-81cc-47d6-87b6-d71c7557a3ce",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C61",
+      "claim": "The defects of trp-4 single mutants were similar to trp-4; cat-2 and trp-4; dop-3 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects of trp-4 single mutants were similar to trp-4; cat-2 and trp-4; dop-3 double mutants, indicating that trp-4 acts in the same dopamine pathway as cat-2 and dop-3 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by genetic epistasis experiments shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "642c5e0b-17c9-4dc9-9578-c0b3193312fd",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C62",
+      "claim": "trp-4 acts in the same dopamine pathway as cat-2 and dop-3.",
+      "claim_type": "EXPLICIT",
+      "source": "The defects of trp-4 single mutants were similar to trp-4; cat-2 and trp-4; dop-3 double mutants, indicating that trp-4 acts in the same dopamine pathway as cat-2 and dop-3 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from genetic epistasis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2e3e4af1-3235-489d-871c-640ef86a7286",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C63",
+      "claim": "Single-copy transgenes that express TRP-4 in dopaminergic neurons restored the preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-copy transgenes that express TRP-4 in dopaminergic neurons restored the preference for pattern IV (Figure 3C), further demonstrating a role of TRP-4 in dopaminergic neurons in mediating spatial pattern selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by cell-specific rescue experiments shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "56cc7bb5-824d-423f-ad73-3973ce657444",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C64",
+      "claim": "TRP-4 in dopaminergic neurons mediates spatial pattern selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-copy transgenes that express TRP-4 in dopaminergic neurons restored the preference for pattern IV (Figure 3C), further demonstrating a role of TRP-4 in dopaminergic neurons in mediating spatial pattern selectivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from cell-specific rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "38f1417a-5531-4955-a122-a6f1383ee10d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C65",
+      "claim": "Natural genetic variations influence how C. elegans interacts with environmental cues such as food, oxygen, microbial pathogens, and neighboring worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that natural genetic variations influence how C. elegans interacts with environmental cues such as food, oxygen, microbial pathogens, and neighboring worms (Bendesky and Bargmann, 2011; Bendesky et al., 2012, 2011; Chang et al., 2011; Persson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "dade853c-aa0a-4433-8ed6-03e4c4a53c79",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C66",
+      "claim": "Hawaiian CB4856 (HW) worms failed to aggregate in pattern IV of the quad-chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that unlike N2, HW worms failed to aggregate in pattern IV of the quad-chambers (Figure 4A, B), and their returning behavior at boundaries was significantly reduced in comparison to N2 worms (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with HW strain shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "abdd2eff-7881-4fc1-893b-52c3776c057c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C67",
+      "claim": "HW worms' returning behavior at boundaries was significantly reduced in comparison to N2 worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that unlike N2, HW worms failed to aggregate in pattern IV of the quad-chambers (Figure 4A, B), and their returning behavior at boundaries was significantly reduced in comparison to N2 worms (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by boundary crossing experiments shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "32a17f72-9b7f-42db-a3d2-b8962aca60f6",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C68",
+      "claim": "HW worms exhibited similar traveling speed and pause rates in uni- and quad-chambers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HW worms exhibited similar traveling speed and pause rates in uni- and quad-chambers (Figure 4\u2014figure supplement 1), indicating that mechanosensory experience had little impact on HW behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by locomotion analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c1b162b3-778c-4314-ab62-abeb7568b348",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C69",
+      "claim": "Mechanosensory experience had little impact on HW behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, HW worms exhibited similar traveling speed and pause rates in uni- and quad-chambers (Figure 4\u2014figure supplement 1), indicating that mechanosensory experience had little impact on HW behavior.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from locomotion experiments comparing uni- and quad-chambers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "ce535ced-cf55-4a55-9d9c-335ae32d723b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C70",
+      "claim": "The LSJ1 strain showed similar behavior to N2 worms in the spatial pattern preference assay.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this is the case for spatial pattern selectivity, we examined the LSJ1 strain, a sibling of N2 that was cultivated separately after isolation. We found that the LSJ1 strain showed similar behavior to N2 worms in the spatial pattern preference assay (Figure 4B), suggesting that the difference in spatial pattern selectivity is not due to domestication-derived alleles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with LSJ1 strain shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "9030ec8c-0bfd-44fb-9bca-5bad5647367b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C71",
+      "claim": "The difference in spatial pattern selectivity between N2 and HW is not due to domestication-derived alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the LSJ1 strain showed similar behavior to N2 worms in the spatial pattern preference assay (Figure 4B), suggesting that the difference in spatial pattern selectivity is not due to domestication-derived alleles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from LSJ1 experiments showing similar behavior to N2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7d7dfa76-41d7-4fcc-9b63-ca5678812f08",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C72",
+      "claim": "The stretch receptor TRP-4 in the HW strain carries three amino acid substitutions (M36I, G41S, and E67G).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the stretch receptor TRP-4 in the HW strain carries three amino acid substitutions (M36I, G41S, and E67G; Figure 5A) (Thompson et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Thompson et al., 2013 and shown in Figure 5A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "bcea0381-b080-4335-8036-0b4b2ad50589",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C73",
+      "claim": "An N2/HW hybrid strain that carries the HW Chromosome I in an N2 background behaved like the HW strain in the spatial pattern preference assay.",
+      "claim_type": "EXPLICIT",
+      "source": "An N2/HW hybrid strain that carries the HW Chromosome I in an N2 background behaved like the HW strain in the spatial pattern preference assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by chromosome substitution experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "67b1bd0a-8b57-4b09-b4d8-8124a2a82c19",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C74",
+      "claim": "Hybrid strains that carry other HW chromosomes (except X) in the N2 background were indistinguishable from N2 worms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hybrid strains that carry other HW chromosomes in the N2 background were indistinguishable from N2 worms (Figure 5B), with the exception of those with HW Chromosome X, which showed a minor but significant reduction in the preference for pattern IV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by chromosome substitution experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "5cb8aed7-3edc-4229-aa81-8c06a170bb92",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C75",
+      "claim": "Hybrid strains with HW Chromosome X showed a minor but significant reduction in the preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "However, hybrid strains that carry other HW chromosomes in the N2 background were indistinguishable from N2 worms (Figure 5B), with the exception of those with HW Chromosome X, which showed a minor but significant reduction in the preference for pattern IV.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by chromosome substitution experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7abfdde4-4f95-4138-a25d-0457f752a3b1",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C76",
+      "claim": "Other gene(s) on Chromosome X may contribute to the polymorphic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with a role of trp-4 in determining the natural variation in spatial pattern selectivity. They also suggest that other gene(s) on Chromosome X may contribute to the polymorphic behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from chromosome substitution experiments showing effect of Chromosome X.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "849e9fa2-2c42-448a-aade-27fb05671ed2",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C77",
+      "claim": "A RIL strain that carries the N2 trp-4 gene showed preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5C, two RIL strains behaved differently in the spatial pattern preference assay; one that carries the N2 trp-4 gene showed preference for pattern IV, but another one with HW trp-4 did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with recombinant inbred lines shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "73ae4109-e724-492e-aaa7-1f593cfb79bf",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C78",
+      "claim": "A RIL strain with HW trp-4 did not show preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5C, two RIL strains behaved differently in the spatial pattern preference assay; one that carries the N2 trp-4 gene showed preference for pattern IV, but another one with HW trp-4 did not.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with recombinant inbred lines shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "9c7d8bbc-94ab-49a2-9cbe-a347d36eb06d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C79",
+      "claim": "N2 trp-4 cDNA fully restored the selectivity defects of the trp-4(ok1605) mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "N2 trp-4 cDNA fully restored the selectivity defects of the trp-4(ok1605) mutant worms. By contrast, HW trp-4 cDNA showed only low levels of rescue (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by rescue experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "1d775938-ee43-4659-9d3e-a54097e355a1",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C80",
+      "claim": "HW trp-4 cDNA showed only low levels of rescue of trp-4(ok1605) mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "N2 trp-4 cDNA fully restored the selectivity defects of the trp-4(ok1605) mutant worms. By contrast, HW trp-4 cDNA showed only low levels of rescue (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by rescue experiments shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "170fc954-4080-4953-84c1-a1f34f05b59d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C81",
+      "claim": "N2 TRP-4 is required for the spatial pattern preference observed in the Bristol strains.",
+      "claim_type": "EXPLICIT",
+      "source": "These data confirm that N2 TRP-4 is required for the spatial pattern preference observed in the Bristol strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from rescue experiments showing N2 but not HW TRP-4 rescues the phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "cc7bfe23-6a2c-4aaa-9d83-e81beeeec5a5",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C82",
+      "claim": "Overexpression of N2 TRP-4 caused HW worms to show spatial pattern selectivity similar to that of N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that N2 TRP-4 but not HW TRP-4 overexpression caused HW worms to show spatial pattern selectivity similar to that of N2 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by overexpression experiments in HW background shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "b3c12a4a-d5d6-4b63-9765-a036fc926dee",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C83",
+      "claim": "Overexpression of HW TRP-4 did not cause HW worms to show spatial pattern selectivity similar to N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that N2 TRP-4 but not HW TRP-4 overexpression caused HW worms to show spatial pattern selectivity similar to that of N2 (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by overexpression experiments in HW background shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d23c177f-ad40-4928-9e58-ee23cc75da2d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C84",
+      "claim": "The substitution of three residues in HW TRP-4 occurs at the N-terminal region that is adjacent to Ankyrin repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The substitution of three residues in HW TRP-4 occurs at the N-terminal region that is adjacent to Ankyrin repeats (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5A illustrating the location of substitutions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "b2cd7a68-64dd-4445-8bb3-1c41f6df04d4",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C85",
+      "claim": "The Ankyrin repeats of NOMPC (the TRP-4 homologue in flies) directly bind microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, the Ankyrin repeats of NOMPC (the TRP-4 homologue) directly bind microtubules, and they are essential for mechanogating of the NOMPC channels (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "6b14b5e0-d74b-4935-9b3f-72e35aa77be6",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C86",
+      "claim": "The Ankyrin repeats of NOMPC are essential for mechanogating of the NOMPC channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In flies, the Ankyrin repeats of NOMPC (the TRP-4 homologue) directly bind microtubules, and they are essential for mechanogating of the NOMPC channels (Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "961c64ea-ff7d-4709-ba65-94e07f4369f3",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C87",
+      "claim": "The mechanoreceptor current in CEP neurons is mediated by TRP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanoreceptor current in CEP neurons is mediated by TRP-4, and the amplitude of the current depends on the strength of the applied mechanical force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established from previous studies and confirmed by current experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "75e9c797-d4e7-4d4c-b7de-8497739241ca",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C88",
+      "claim": "The amplitude of the mechanoreceptor current depends on the strength of the applied mechanical force.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanoreceptor current in CEP neurons is mediated by TRP-4, and the amplitude of the current depends on the strength of the applied mechanical force.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by electrophysiological recordings with varying displacement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "5acc4afa-0c62-4b68-bc6c-1d783386a540",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C89",
+      "claim": "A displacement of 0.5 \u03bcm was sufficient to elicit TRP-4 mediated current in N2 worms.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with a previous study (Kang et al., 2010), a displacement of 0.5 \u03bcm was sufficient to elicit TRP-4 mediated current in N2 worms, and the current was saturated at 3 \u03bcm displacement (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electrophysiological recordings shown in Figure 6B, with citation to Kang et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3fd7a30f-8ded-4fea-9d0f-66f4a9f33418",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C90",
+      "claim": "The TRP-4 mediated current in N2 worms was saturated at 3 \u03bcm displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with a previous study (Kang et al., 2010), a displacement of 0.5 \u03bcm was sufficient to elicit TRP-4 mediated current in N2 worms, and the current was saturated at 3 \u03bcm displacement (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electrophysiological recordings shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "ebd9eb6e-77c0-4829-a7fb-ab40a0a1c961",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C91",
+      "claim": "The sensitivity of HW TRP-4 to mechanical stimuli was significantly reduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the sensitivity of HW TRP-4 to mechanical stimuli was significantly reduced. Larger mechanical displacement was required to generate currents with similar amplitudes (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electrophysiological recordings comparing N2 and HW shown in Figure 6A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d269c354-68f5-445c-9a71-3e1bd270e898",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C92",
+      "claim": "Larger mechanical displacement was required to generate currents with similar amplitudes in HW compared to N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the sensitivity of HW TRP-4 to mechanical stimuli was significantly reduced. Larger mechanical displacement was required to generate currents with similar amplitudes (Figure 6A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electrophysiological recordings shown in Figure 6A\u2013B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "8916bae5-5c6c-4c9b-b5db-2274c9558158",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C93",
+      "claim": "When mechanical stimuli are sufficiently strong, the HW TRP-4 is fully active.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that, when mechanical stimuli are sufficiently strong, the HW TRP-4 is fully active (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by electrophysiological recordings at high displacement shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e3e424f5-6bf5-4616-8792-87ef713064b0",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C94",
+      "claim": "A higher density of pillars (novel pattern V) enhanced the enrichment of HW worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that an even higher density of pillars (novel pattern V) enhanced the enrichment of HW worms, but not of trp-4(ok1605) mutants (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with denser pattern shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2ab2ddec-4783-41a1-9f45-924e7c861d7c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C95",
+      "claim": "Pattern V did not enhance the enrichment of trp-4(ok1605) mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, we found that an even higher density of pillars (novel pattern V) enhanced the enrichment of HW worms, but not of trp-4(ok1605) mutants (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with denser pattern shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "f41816c6-677d-4f0b-ba0a-ca7a5aea0bca",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C96",
+      "claim": "Amino acid substitutions in HW TRP-4 reduce the sensitivity to mechanical stimuli, which could subsequently alter spatial pattern perception in HW worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings indicate that amino acid substitutions in HW TRP-4 reduce the sensitivity to mechanical stimuli, which could subsequently alter spatial pattern perception in HW worms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from electrophysiological and behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3f2f268f-37c2-4b78-bcea-5b019ef7bb63",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C97",
+      "claim": "A single-copy HW TRP-4 transgene failed to restore spatial preference.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas a single-copy HW TRP-4 transgene failed to restore spatial preference (Figure 5E), it completely rescued swimming/crawling transition in the trp-4(ok1605) mutant worms (Figure 5\u2014figure supplement 1), suggesting that various types of TRP-4 dependent behaviors are tuned to different levels of mechanogating sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by rescue experiments shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "42dedc85-bf79-457f-93ff-91e031017ebd",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C98",
+      "claim": "A single-copy HW TRP-4 transgene completely rescued swimming/crawling transition in the trp-4(ok1605) mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas a single-copy HW TRP-4 transgene failed to restore spatial preference (Figure 5E), it completely rescued swimming/crawling transition in the trp-4(ok1605) mutant worms (Figure 5\u2014figure supplement 1), suggesting that various types of TRP-4 dependent behaviors are tuned to different levels of mechanogating sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by swim-to-crawl transition experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "d8b1d78e-a843-44f1-933a-3e894e7cbecd",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C99",
+      "claim": "Various types of TRP-4 dependent behaviors are tuned to different levels of mechanogating sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, whereas a single-copy HW TRP-4 transgene failed to restore spatial preference (Figure 5E), it completely rescued swimming/crawling transition in the trp-4(ok1605) mutant worms (Figure 5\u2014figure supplement 1), suggesting that various types of TRP-4 dependent behaviors are tuned to different levels of mechanogating sensitivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from differential rescue of different behaviors by HW TRP-4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "0827ef1a-a3dc-4e8b-983c-328c80c2552c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C100",
+      "claim": "Five wild isolates exhibited a spatial preference like N2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that five wild isolates exhibited a spatial preference like N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by behavioral experiments with multiple wild isolates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "1bcb8f82-3e60-4be6-856f-b77a70ae43bb",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C101",
+      "claim": "Two isolates (AB1 and JU397) with substituted residues in TRP-4 exhibited defects in preference for pattern IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Two isolates (AB1 and JU397) with substituted residues in TRP-4 exhibited defects in preference for pattern IV in the quad-chambers (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments with wild isolates shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "049211c2-e005-403d-ab90-3f0899520163",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C102",
+      "claim": "The TRP-4 channels in AB1 and JU397 each carry two substitutions (G41S and E67G).",
+      "claim_type": "EXPLICIT",
+      "source": "The TRP-4 channels in AB1 and JU397 each carry two substitutions (G41S and E67G), suggesting that the third substitution M36I in the HW strain is not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from sequence analysis and behavioral phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "ad28cc54-ec1a-44f0-9137-83f17b6802b4",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C103",
+      "claim": "The third substitution M36I in the HW strain is not required for the behavioral phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "The TRP-4 channels in AB1 and JU397 each carry two substitutions (G41S and E67G), suggesting that the third substitution M36I in the HW strain is not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of substitutions in different strains with similar phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2810d84d-89fb-4983-9e99-6f0e809791aa",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C104",
+      "claim": "CB4854 carries two substitutions (E67G and I152M) in TRP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "A third isolate (CB4854) also carries two substitutions (E67G and I152M) in TRP-4; however, these worms did not show significant defects in the spatial pattern preference assay (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by sequence analysis and behavioral experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "505d360c-e69a-4d3e-8828-8f60718a2108",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C105",
+      "claim": "CB4854 worms did not show significant defects in the spatial pattern preference assay.",
+      "claim_type": "EXPLICIT",
+      "source": "A third isolate (CB4854) also carries two substitutions (E67G and I152M) in TRP-4; however, these worms did not show significant defects in the spatial pattern preference assay (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "8629678a-9204-4851-bb5d-2f6802384f7c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C106",
+      "claim": "The G41S substitution is the key residue that modulates TRP-4 mechanosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The most parsimonious explanation is that the G41S substitution is the key residue that modulates TRP-4 mechanosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparing substitutions across strains with different phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "1a8897b6-ce86-4889-8b5e-03639ae5435b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C107",
+      "claim": "Three wild isolates (CB4853, JU300, and JU322) showed altered spatial pattern selectivity despite having N2-like TRP-4 sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, three wild isolates (CB4853, JU300, and JU322) showed altered spatial pattern selectivity despite having N2-like TRP-4 sequence (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by behavioral experiments and sequence analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "1969462b-53cd-4b2f-a64b-cf58ccfb81b7",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C108",
+      "claim": "All three strains (CB4853, JU300, and JU322) carry a substituted residue in DOP-3 at the same position (A273G).",
+      "claim_type": "EXPLICIT",
+      "source": "Closer examination of their genome sequences revealed that all three strains carry a substituted residue in DOP-3 at the same position (A273G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by genome sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "fb6061e3-02c1-494d-9c5a-8b4c3ba3cc7b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C109",
+      "claim": "Edited N2 worms with the A273G substitution in dop-3 lost their spatial pattern selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon editing the dop-3 gene in N2 worms using CRISPR/Cas9 (Friedland et al., 2013), we found that the edited worms with the A273G substitution lost their spatial pattern selectivity (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by CRISPR editing experiments shown in Figure 7B, with citation to Friedland et al., 2013 for the method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "ae464d51-96b1-4675-ae57-1eb54d1aa8a6",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C110",
+      "claim": "The DOP-3 A273G mutation is sufficient to impair spatial pattern preference even with fully functional TRP-4.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments indicate that the DOP-3 A273G mutation is sufficient to impair spatial pattern preference even with fully functional TRP-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from CRISPR editing experiments in N2 background.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "da035382-5187-4bba-b198-d321db68303c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C111",
+      "claim": "The diversity of spatial pattern selectivity may arise from variations in either the detector that senses changes in the external world (e.g., TRP-4), or the neuromodulator signals that define the internal state of animals (e.g., dopamine and its receptors).",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the diversity of spatial pattern selectivity may arise from variations in either the detector that senses changes in the external world (e.g., TRP-4), or the neuromodulator signals that define the internal state of animals (e.g., dopamine and its receptors).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experiments showing both TRP-4 and DOP-3 variations affect behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "c4480648-16f9-45da-8d45-a47f79f69854",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C112",
+      "claim": "C. elegans is able to utilize touch sensation to discern different spatial patterns in the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that C. elegans is able to utilize touch sensation to discern different spatial patterns in the environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary inference from all experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "9ea70754-eb54-4946-8dd1-6f4b003d10b6",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C113",
+      "claim": "Nematodes can evaluate their environment by sensing food and chemicals.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that nematodes can evaluate their environment by sensing food (Calhoun et al., 2015) and chemicals (Albrecht and Bargmann, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Calhoun et al., 2015 and Albrecht and Bargmann, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7d08880c-61ca-42e5-83d2-6ab5a75da7c7",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C114",
+      "claim": "Touch perception plays a key role in guiding exploration of the physical world in many animal species.",
+      "claim_type": "EXPLICIT",
+      "source": "In many animal species, touch perception plays a key role in guiding exploration of the physical world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about animal behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "4ff1d71d-d728-43b6-9014-b2d011bc52f8",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C115",
+      "claim": "Insects carry antennae to collect tactile information during locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, insects carry antennae to collect tactile information during locomotion, rodents use whiskers to detect spatial settings, and sea mammals use facial hairs to trace changes in water flow patterns caused by swimming fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about animal sensory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e8d70047-2765-45f3-8b72-94e8060fbf40",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C116",
+      "claim": "Rodents use whiskers to detect spatial settings.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, insects carry antennae to collect tactile information during locomotion, rodents use whiskers to detect spatial settings, and sea mammals use facial hairs to trace changes in water flow patterns caused by swimming fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about animal sensory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "5d7c5a49-9df6-497e-b123-f81020f57295",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C117",
+      "claim": "Sea mammals use facial hairs to trace changes in water flow patterns caused by swimming fish.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, insects carry antennae to collect tactile information during locomotion, rodents use whiskers to detect spatial settings, and sea mammals use facial hairs to trace changes in water flow patterns caused by swimming fish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General knowledge about animal sensory systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2e775296-afd2-4c05-b3b0-2edf9d312343",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C118",
+      "claim": "The sense of physical space in C. elegans is highly dynamic and tightly regulated by experience, spatial context, and food availability.",
+      "claim_type": "EXPLICIT",
+      "source": "While primitive, this sense of physical space in worms is highly dynamic \u2013 it is tightly regulated by experience (Figure 2E,F), spatial context (Figure 1\u2014figure supplement 2D,E), and food availability (Figure 1\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Summary of multiple experimental findings shown in various figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "096eb56c-8a65-4ee1-8171-b9cff4bbcf9b",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C119",
+      "claim": "Dopamine may serve as a 'reward' signal that connects the sensation of spatial patterns with innate preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity of spatial patterns in C. elegans requires dopamine, which may serve as a 'reward' signal that connects the sensation of spatial patterns with innate preferences (Schultz et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings and supported by citation to Schultz et al., 1997.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "b0900b7c-f5a4-40a5-8b51-afd25ded3d19",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C120",
+      "claim": "Dopamine is implicated in spatial attention in higher animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, together with previous findings implicating dopamine in spatial attention (Bellgrove et al., 2007) and spatial memory (Murphy et al., 1996), as well as in disorders such as agoraphobia in humans (Perna et al., 2011), our study suggests that the coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bellgrove et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7c37ea1c-336b-46a0-8a8b-1ccfdeaf68ff",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C121",
+      "claim": "Dopamine is implicated in spatial memory in higher animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, together with previous findings implicating dopamine in spatial attention (Bellgrove et al., 2007) and spatial memory (Murphy et al., 1996), as well as in disorders such as agoraphobia in humans (Perna et al., 2011), our study suggests that the coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Murphy et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "8349b940-2709-4261-a779-d449a8703bb8",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C122",
+      "claim": "Dopamine is implicated in disorders such as agoraphobia in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, together with previous findings implicating dopamine in spatial attention (Bellgrove et al., 2007) and spatial memory (Murphy et al., 1996), as well as in disorders such as agoraphobia in humans (Perna et al., 2011), our study suggests that the coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Perna et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "5e937f9f-685d-4cc0-9639-d45f5221421e",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "claim_id": "C123",
+      "claim": "The coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, together with previous findings implicating dopamine in spatial attention (Bellgrove et al., 2007) and spatial memory (Murphy et al., 1996), as well as in disorders such as agoraphobia in humans (Perna et al., 2011), our study suggests that the coupling between dopamine signaling and a sense of spatial features is an ancestral feature of animal nervous systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from current findings combined with previous studies cited.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "C. elegans N2 strain exhibits spatial pattern discrimination, preferring pattern IV (highest pillar density) in a quad-chamber assay. This preference is based on relative comparison between patterns rather than absolute pillar density, and represents individual rather than group behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C18 demonstrate robust behavioral preference for pattern IV with quantitative data (63% in pattern IV vs 9-15% in other sections). Claims C25-C26 establish this as individual behavior through single-worm analysis. Claims C36-C37 demonstrate context-dependence by showing preference shifts to pattern III when pattern IV is absent, supporting the comparative nature of the behavior. The convergence of behavioral data across multiple experimental designs strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "2a3b1586-0351-4674-8765-db42c74e43e0",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Spatial pattern preference in C. elegans is modulated by feeding state, with starvation reducing pattern IV preference and food addition prolonging it beyond 180 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 establish temporal stability (60-90 min) and decline (120 min). Claims C21-C22 demonstrate food addition prolongs preference, while C23-C24 show pre-starvation reduces preference. The convergent evidence from time-course, food addition, and starvation experiments provides strong support for metabolic state modulation of spatial preference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Spatial pattern selectivity requires mechanosensation through MEC-10 channels acting specifically in FLP nociceptive neurons, but is independent of oxygen sensing via GCY-35.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 rule out oxygen sensing through gcy-35 mutant analysis. Claim C31 establishes MEC-10 requirement through mutant phenotype. Claims C32-C35 use cell-specific rescue to localize function to FLP neurons (Pegl-44 rescues, Pmec-18 does not). The genetic dissection with appropriate controls and cell-specific rescue provides strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Worms employ dual behavioral strategies for pattern IV preference: immediate boundary responses (increased reversal/turning when crossing IV-to-III) and experience-dependent locomotion changes (reduced speed and increased pausing in pattern IV of quad-chambers).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 demonstrate acute boundary responses with quantitative tracking data showing enhanced return rates and increased reversal/turning. Claims C41-C43 show experience-dependent effects through quad- vs uni-chamber comparisons. The combination of real-time tracking and comparative chamber analysis provides strong evidence for both immediate and lasting behavioral modifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "22a84fd4-eab5-406c-87e6-016634031f77",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dopamine biosynthesis is required for spatial pattern selectivity, as cat-2 mutants lacking tyrosine hydroxylase show reduced pattern IV preference that is rescued by exogenous dopamine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 establish the mutant phenotype in cat-2 animals defective in dopamine biosynthesis. Claims C50-C51 demonstrate rescue with exogenous dopamine, establishing causality. The genetic loss-of-function combined with pharmacological rescue provides strong evidence for dopamine requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "9bcc59fa-1015-49ad-a98a-9916d99588da",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The D2-like dopamine receptor DOP-3, but not other dopamine receptors (DOP-1, DOP-2, DOP-4), is specifically required for spatial pattern selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 demonstrate specific requirement through systematic analysis of dopamine receptor mutants, showing only dop-3 disruption reduces pattern IV preference. The specificity established through testing multiple receptor mutants strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "687c756c-870f-4435-837c-4e1977f49a58",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mechanosensory TRP-4 channel in dopaminergic neurons is required for spatial pattern selectivity and acts in the same genetic pathway as dopamine biosynthesis (CAT-2) and the DOP-3 receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 establish TRP-4 requirement through two independent alleles. Claims C61-C62 demonstrate epistasis with cat-2 and dop-3 through double mutant analysis. Claims C63-C64 localize function to dopaminergic neurons through cell-specific rescue. The combination of multiple alleles, epistasis analysis, and cell-specific rescue provides robust support for TRP-4 function in dopaminergic neurons within the dopamine signaling pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "604f9735-1408-43f2-b216-aa9a55fa1487",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Natural variation in spatial pattern selectivity exists among C. elegans wild isolates, with Hawaiian (HW) strain showing reduced pattern IV preference compared to Bristol (N2) strain, and this difference is not due to laboratory domestication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 demonstrate HW strain lacks pattern IV preference and boundary responses. Claims C70-C71 use LSJ1 (N2 sibling strain) to rule out domestication effects. The comparison of multiple strains with appropriate controls for domestication artifacts supports natural variation in this behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Natural polymorphisms in TRP-4 (M36I, G41S, E67G in HW strain) are responsible for reduced spatial pattern selectivity, as demonstrated by chromosome substitution, recombinant inbred line analysis, and strain-specific rescue experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 use chromosome substitution to map the phenotype to chromosome I (where trp-4 resides). Claims C77-C78 confirm with recombinant inbred lines. Claims C79-C83 demonstrate N2 TRP-4 rescues trp-4 mutants and confers N2-like behavior to HW when overexpressed, while HW TRP-4 shows reduced rescue. The convergence of genetic mapping, RIL analysis, and bidirectional rescue experiments provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "6d687275-1a14-4824-845e-067ed63a85f1",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "HW TRP-4 polymorphisms reduce mechanosensitivity of dopaminergic CEP neurons, requiring larger mechanical displacement to generate equivalent currents compared to N2, though maximal activation is preserved. This reduced sensitivity alters spatial pattern perception, as HW worms show preference only for denser pattern V.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C92 demonstrate reduced mechanosensitivity in HW through dose-response electrophysiology (half-maximal displacement 2.71 \u03bcm vs 1.48 \u03bcm for N2). Claim C93 shows preserved maximal activation. Claims C94-C95 demonstrate behavioral consequence with denser pattern V enhancing HW but not trp-4 null enrichment. The direct electrophysiological measurements combined with behavioral validation using denser patterns provides strong mechanistic support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e49e7301-9a18-4044-a896-d7f74dc19a49",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different TRP-4-dependent behaviors require different levels of mechanosensitivity, as HW TRP-4 rescues swim-to-crawl transition but not spatial pattern preference in trp-4 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 demonstrate differential rescue by HW TRP-4 of two distinct behaviors. Claim C99 provides the interpretation. The differential rescue of two behaviors by the same variant provides strong evidence for behavior-specific sensitivity thresholds, though the mechanism remains to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "181809d5-6a11-44ff-90c5-a937a7ecdf24",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Analysis of additional wild isolates suggests G41S is the key TRP-4 substitution modulating mechanosensitivity, as strains AB1 and JU397 (carrying G41S+E67G) show defects while CB4854 (carrying E67G+I152M) does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C105 present behavioral data from wild isolates with different TRP-4 substitutions. Claim C106 proposes G41S as the key residue based on correlation. However, this is correlative analysis without direct functional validation (e.g., site-directed mutagenesis of individual residues). The alternative explanation that E67G+I152M combination suppresses the E67G effect (mentioned in text) is not tested. Direct mutagenesis experiments would be needed to definitively identify the causal residue(s).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "72d3feba-85b4-45c7-b053-2328e5adae97",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A natural polymorphism in the dopamine receptor DOP-3 (A273G) is sufficient to impair spatial pattern preference independently of TRP-4 function, as demonstrated by CRISPR editing in N2 background and analysis of wild isolates CB4853, JU300, and JU322.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C108 identify three wild isolates with N2-like TRP-4 but altered behavior, all carrying DOP-3 A273G. Claims C109-C110 demonstrate sufficiency through CRISPR editing of this single substitution in N2 background. The combination of natural variation analysis and targeted genome editing provides strong evidence for DOP-3 A273G as a causal variant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "769aa9f3-a2e2-4763-93e6-1df2a611f4ba",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Natural diversity in spatial pattern selectivity can arise from variations in either sensory detection (TRP-4) or neuromodulatory signaling (dopamine receptors like DOP-3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 synthesizes findings from TRP-4 and DOP-3 polymorphism studies. The demonstration of independent causal variants in both the mechanosensor (TRP-4) and the dopamine receptor (DOP-3) that produce similar behavioral outcomes supports this conclusion about dual mechanisms for behavioral diversity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "252add23-59d0-4aa1-bfe3-cb2562607f75",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The coupling between dopamine signaling and spatial pattern perception represents an ancestral feature of animal nervous systems, based on findings in C. elegans and prior work implicating dopamine in spatial attention, memory, and disorders in higher animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C10 proposes ancestral role based on C. elegans findings. Claim C123 extends this by citing dopamine's role in spatial functions in higher animals (C120-C122). However, this is largely speculative inference from comparative biology without direct phylogenetic or functional evidence demonstrating homology of mechanisms across species. The claim conflates correlation (dopamine involved in spatial processing across species) with evolutionary conservation of specific mechanisms. More rigorous comparative or evolutionary analysis would be needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "6a18db75-b729-4f36-a257-4222dfa491fc",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "C. elegans has 302 neurons and lacks vision and hearing, relying primarily on smell and touch for environmental sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established facts about C. elegans neurobiology supported by decades of research. Claims C1, C12, C13 represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims about C. elegans biology, dopamine function, and comparative sensory biology in other animals, all supported by appropriate citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C11, C14, C15, C27, C28, C45-C47, C54, C113-C117, C120-C122) provide established background knowledge with appropriate citations. They contextualize the current work but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "eef58467-6629-4d2f-b203-9c0b430fa807",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "C. elegans can utilize mechanosensory information to discriminate spatial patterns, and this sense is dynamically regulated by experience, spatial context, and food availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C112 summarize the main finding. Claim C118 synthesizes evidence from multiple experiments (Figures 1-2) showing modulation by experience, context, and feeding state. These represent valid summary statements of the experimental results presented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "bae9f9b8-d11b-423b-b3f5-4dfb94fdc60c",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Dopamine may serve as a 'reward' signal connecting spatial pattern sensation with innate preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C119 is speculative, proposing a specific computational role for dopamine as a 'reward' signal. While dopamine is required for the behavior, the experiments do not directly test whether it functions as a reward signal versus other possible roles (e.g., modulation of sensory processing, motor control, or state-dependent gating). The citation to Schultz et al. 1997 supports dopamine's reward function in other contexts but does not validate this specific mechanism in C. elegans spatial pattern selectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    },
+    {
+      "id": "3b795c19-0cad-4883-97d4-812d9464750d",
+      "content_id": "10b81678-85f5-4971-ae16-ea17d8cff037",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The TRP-4 substitutions in HW occur near Ankyrin repeats, which in the fly homolog NOMPC bind microtubules and are essential for mechanogating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C84 describes the location of substitutions (supported by Figure 5A). Claims C85-C86 cite established findings about NOMPC in flies. These provide structural context for interpreting the functional effects of HW TRP-4 variants, though direct evidence for similar mechanisms in C. elegans TRP-4 is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:34:23.146139Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "50957ad3-d387-4ebd-ada7-c6c848bd164c",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "bf459be5-a830-4bbe-8f75-b8644c4bc632",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "997d09dd-b2f5-4d2e-8712-663b2b80c1ca",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "eab6524a-398f-4bba-80a7-1fa15d5c6924",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "85bfd107-c837-4eb8-aadf-18acfb76d541",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "e66d0913-d9c0-450b-88c3-e77a624a6470",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "3e403c26-65a8-4269-8731-d53bdeec679e",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "5e4208aa-a292-4dc3-bf1e-f5ba4ba1789c",
+      "result_id": "945faaf0-0a2b-4167-a9ab-fd6be7169f48"
+    },
+    {
+      "claim_id": "a2f5f5d9-41c0-4330-9d51-fd3b0220ccb9",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "f7d03ae8-bb23-4e2b-82d8-f7c93f97408a",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "880c748c-e5bc-4e80-ba7d-d6983b5d6d10",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "d9948d3d-9ca7-4b2c-9ef4-7f8572c9872f",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "a1e37839-173f-4e9e-81f6-57e98b9b1504",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "decbe5b5-f74f-4eaa-a58b-0382b3f4a2a2",
+      "result_id": "2a3b1586-0351-4674-8765-db42c74e43e0"
+    },
+    {
+      "claim_id": "d687938b-672a-40f3-9e63-1f6e264de083",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "162d60d6-092f-42fe-a600-fe714cbbad18",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "23010e55-84b7-41e3-9b1a-e3cea1ce1a99",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "9bcdabe3-c196-42f8-8f3b-1374eeabbd8a",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "f44769f3-96eb-4890-aa0e-92e233ef0345",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "fb1a7f51-4387-482c-9d44-f728fb596909",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "14bfcd5e-12e4-47f6-b527-9961561e9594",
+      "result_id": "412cad91-9b18-46ea-b0f5-d1bf48e2b6d0"
+    },
+    {
+      "claim_id": "3d4f5658-03d4-4a49-8825-2e7f85caed4b",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "2986ad4f-6466-4c57-b179-745a670adf03",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "7142d81b-eaa8-4d16-89d3-673e9f838d2c",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "0c0012d8-c0de-4b2f-a438-524ba7cc167f",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "2b1a0492-c4cd-497c-be41-a8f7e8ead039",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "c37db87e-3eaf-4263-84ce-9d126ccf373e",
+      "result_id": "7bcc9d0b-04d7-412c-adbd-13f08f3c06ac"
+    },
+    {
+      "claim_id": "7bad8610-124f-4b0c-a2d3-b2457d1229f0",
+      "result_id": "22a84fd4-eab5-406c-87e6-016634031f77"
+    },
+    {
+      "claim_id": "01fb37be-b60c-4d5f-ad5f-ecdcd5e9f7e9",
+      "result_id": "22a84fd4-eab5-406c-87e6-016634031f77"
+    },
+    {
+      "claim_id": "f87f6d91-cd56-4d6d-b370-3da6fb0f2147",
+      "result_id": "22a84fd4-eab5-406c-87e6-016634031f77"
+    },
+    {
+      "claim_id": "8ba504d1-a5d1-45a0-b505-e66e99e09ad9",
+      "result_id": "22a84fd4-eab5-406c-87e6-016634031f77"
+    },
+    {
+      "claim_id": "7e10dc8b-70b0-4205-b9a8-21cd82befce2",
+      "result_id": "22a84fd4-eab5-406c-87e6-016634031f77"
+    },
+    {
+      "claim_id": "88a41e58-f389-4e18-9c18-33105aa1948f",
+      "result_id": "9bcc59fa-1015-49ad-a98a-9916d99588da"
+    },
+    {
+      "claim_id": "98dd8e42-4647-4633-a370-0e5736889719",
+      "result_id": "9bcc59fa-1015-49ad-a98a-9916d99588da"
+    },
+    {
+      "claim_id": "c6146801-7667-4a6e-a21a-47b31eb5ed8f",
+      "result_id": "9bcc59fa-1015-49ad-a98a-9916d99588da"
+    },
+    {
+      "claim_id": "811613d1-cca0-4bf8-8ddf-8531f2630bb0",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "dd2f3c37-66fa-4779-aaa4-a39b265dac32",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "1c82a4e5-e2a1-4033-9948-2f29d80c8dab",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "48ace8e6-9227-4645-af5f-2bb6388fc6c2",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "90bb9d16-a585-4c77-aed8-2aab861f91b1",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "4b437bee-f91e-4066-8735-1d53ad74c307",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "b623cc37-344e-4379-ae44-1347805246c9",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "e7f7dd25-81cc-47d6-87b6-d71c7557a3ce",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "642c5e0b-17c9-4dc9-9578-c0b3193312fd",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "2e3e4af1-3235-489d-871c-640ef86a7286",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "56cc7bb5-824d-423f-ad73-3973ce657444",
+      "result_id": "687c756c-870f-4435-837c-4e1977f49a58"
+    },
+    {
+      "claim_id": "7080f227-8b43-4333-8d5c-058bd4694f28",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "dade853c-aa0a-4433-8ed6-03e4c4a53c79",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "abdd2eff-7881-4fc1-893b-52c3776c057c",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "32a17f72-9b7f-42db-a3d2-b8962aca60f6",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "c1b162b3-778c-4314-ab62-abeb7568b348",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "ce535ced-cf55-4a55-9d9c-335ae32d723b",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "9030ec8c-0bfd-44fb-9bca-5bad5647367b",
+      "result_id": "604f9735-1408-43f2-b216-aa9a55fa1487"
+    },
+    {
+      "claim_id": "91b4ef28-95ec-4a8a-88db-6bfe5186164d",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "7d7dfa76-41d7-4fcc-9b63-ca5678812f08",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "bcea0381-b080-4335-8036-0b4b2ad50589",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "67b1bd0a-8b57-4b09-b4d8-8124a2a82c19",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "5cb8aed7-3edc-4229-aa81-8c06a170bb92",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "7abfdde4-4f95-4138-a25d-0457f752a3b1",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "849e9fa2-2c42-448a-aade-27fb05671ed2",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "73ae4109-e724-492e-aaa7-1f593cfb79bf",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "9c7d8bbc-94ab-49a2-9cbe-a347d36eb06d",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "1d775938-ee43-4659-9d3e-a54097e355a1",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "170fc954-4080-4953-84c1-a1f34f05b59d",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "cc7bfe23-6a2c-4aaa-9d83-e81beeeec5a5",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "b3c12a4a-d5d6-4b63-9765-a036fc926dee",
+      "result_id": "3cfce54a-f0ec-4609-9c53-8f376a887e1f"
+    },
+    {
+      "claim_id": "066cfb31-5937-4544-812e-7d996a5a702a",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "961c64ea-ff7d-4709-ba65-94e07f4369f3",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "75e9c797-d4e7-4d4c-b7de-8497739241ca",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "5acc4afa-0c62-4b68-bc6c-1d783386a540",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "3fd7a30f-8ded-4fea-9d0f-66f4a9f33418",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "ebd9eb6e-77c0-4829-a7fb-ab40a0a1c961",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "d269c354-68f5-445c-9a71-3e1bd270e898",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "8916bae5-5c6c-4c9b-b5db-2274c9558158",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "e3e424f5-6bf5-4616-8792-87ef713064b0",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "2ab2ddec-4783-41a1-9f45-924e7c861d7c",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "f41816c6-677d-4f0b-ba0a-ca7a5aea0bca",
+      "result_id": "6d687275-1a14-4824-845e-067ed63a85f1"
+    },
+    {
+      "claim_id": "3f2f268f-37c2-4b78-bcea-5b019ef7bb63",
+      "result_id": "e49e7301-9a18-4044-a896-d7f74dc19a49"
+    },
+    {
+      "claim_id": "42dedc85-bf79-457f-93ff-91e031017ebd",
+      "result_id": "e49e7301-9a18-4044-a896-d7f74dc19a49"
+    },
+    {
+      "claim_id": "d8b1d78e-a843-44f1-933a-3e894e7cbecd",
+      "result_id": "e49e7301-9a18-4044-a896-d7f74dc19a49"
+    },
+    {
+      "claim_id": "0827ef1a-a3dc-4e8b-983c-328c80c2552c",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "1bcb8f82-3e60-4be6-856f-b77a70ae43bb",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "049211c2-e005-403d-ab90-3f0899520163",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "ad28cc54-ec1a-44f0-9137-83f17b6802b4",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "2810d84d-89fb-4983-9e99-6f0e809791aa",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "505d360c-e69a-4d3e-8828-8f60718a2108",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "8629678a-9204-4851-bb5d-2f6802384f7c",
+      "result_id": "181809d5-6a11-44ff-90c5-a937a7ecdf24"
+    },
+    {
+      "claim_id": "f762fda9-cb35-48fd-bb7a-5adeb68617f4",
+      "result_id": "72d3feba-85b4-45c7-b053-2328e5adae97"
+    },
+    {
+      "claim_id": "1a8897b6-ce86-4889-8b5e-03639ae5435b",
+      "result_id": "72d3feba-85b4-45c7-b053-2328e5adae97"
+    },
+    {
+      "claim_id": "1969462b-53cd-4b2f-a64b-cf58ccfb81b7",
+      "result_id": "72d3feba-85b4-45c7-b053-2328e5adae97"
+    },
+    {
+      "claim_id": "fb6061e3-02c1-494d-9c5a-8b4c3ba3cc7b",
+      "result_id": "72d3feba-85b4-45c7-b053-2328e5adae97"
+    },
+    {
+      "claim_id": "ae464d51-96b1-4675-ae57-1eb54d1aa8a6",
+      "result_id": "72d3feba-85b4-45c7-b053-2328e5adae97"
+    },
+    {
+      "claim_id": "da035382-5187-4bba-b198-d321db68303c",
+      "result_id": "769aa9f3-a2e2-4763-93e6-1df2a611f4ba"
+    },
+    {
+      "claim_id": "efee6a7c-7114-4121-940e-5e029cc860a7",
+      "result_id": "252add23-59d0-4aa1-bfe3-cb2562607f75"
+    },
+    {
+      "claim_id": "5e937f9f-685d-4cc0-9639-d45f5221421e",
+      "result_id": "252add23-59d0-4aa1-bfe3-cb2562607f75"
+    },
+    {
+      "claim_id": "f1d4c03c-2f35-4bb7-ba49-b3b488db9d59",
+      "result_id": "6a18db75-b729-4f36-a257-4222dfa491fc"
+    },
+    {
+      "claim_id": "a87ce304-1da2-414f-95c1-1d52b0efc3f5",
+      "result_id": "6a18db75-b729-4f36-a257-4222dfa491fc"
+    },
+    {
+      "claim_id": "c746fdfd-16c6-443b-abe0-dcfd09fafa6c",
+      "result_id": "6a18db75-b729-4f36-a257-4222dfa491fc"
+    },
+    {
+      "claim_id": "199800ad-0f80-4514-a93c-ce250a64cee1",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "f2608414-f693-47fb-8b30-dd23c15c0548",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "d46081ee-0a45-48ba-8e85-426a79123787",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "a6a5cfc6-b9d4-423a-b578-6f6bb4ee926e",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "7286818c-c127-4047-b2e0-8b4417d96204",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "d6b873fc-52af-4cff-9f6b-ed60c7e3da06",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "c97c3da7-aa37-4e80-b79b-8dcbbadc513f",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "b29479fa-d86e-42c9-8c76-1ecc10fd11e3",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "33ecaccf-167a-43b1-9067-4b49c4dd6574",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "9ea70754-eb54-4946-8dd1-6f4b003d10b6",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "7d08880c-61ca-42e5-83d2-6ab5a75da7c7",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "4ff1d71d-d728-43b6-9014-b2d011bc52f8",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "e8d70047-2765-45f3-8b72-94e8060fbf40",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "5d7c5a49-9df6-497e-b123-f81020f57295",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "b0900b7c-f5a4-40a5-8b51-afd25ded3d19",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "7c37ea1c-336b-46a0-8a8b-1ccfdeaf68ff",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "8349b940-2709-4261-a779-d449a8703bb8",
+      "result_id": "e4ac4b6a-90a2-4b66-95f7-b8d0499e48fb"
+    },
+    {
+      "claim_id": "fa37b114-bd5f-48d1-8217-70137307bfde",
+      "result_id": "eef58467-6629-4d2f-b203-9c0b430fa807"
+    },
+    {
+      "claim_id": "c4480648-16f9-45da-8d45-a47f79f69854",
+      "result_id": "eef58467-6629-4d2f-b203-9c0b430fa807"
+    },
+    {
+      "claim_id": "2e775296-afd2-4c05-b3b0-2edf9d312343",
+      "result_id": "eef58467-6629-4d2f-b203-9c0b430fa807"
+    },
+    {
+      "claim_id": "096eb56c-8a65-4ee1-8171-b9cff4bbcf9b",
+      "result_id": "bae9f9b8-d11b-423b-b3f5-4dfb94fdc60c"
+    },
+    {
+      "claim_id": "d23c177f-ad40-4928-9e58-ee23cc75da2d",
+      "result_id": "3b795c19-0cad-4883-97d4-812d9464750d"
+    },
+    {
+      "claim_id": "b2cd7a68-64dd-4445-8bb3-1c41f6df04d4",
+      "result_id": "3b795c19-0cad-4883-97d4-812d9464750d"
+    },
+    {
+      "claim_id": "6b14b5e0-d74b-4935-9b3f-72e35aa77be6",
+      "result_id": "3b795c19-0cad-4883-97d4-812d9464750d"
+    }
+  ],
+  "comparisons": []
+}

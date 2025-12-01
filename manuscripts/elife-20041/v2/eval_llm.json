@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182"
+    ],
+    "result": "The study reconstructed 163 cone pedicles and 451 bipolar cell dendritic trees from the SBEM dataset e2006 (Helmstaedter et al., 2013), with voxel resolution of 16.5\u00d716.5\u00d725 nm. Over 20,944 cone-BC contacts and 7,993 rod-BC contacts were detected using automated algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reconstruction methodology is clearly described with specific numbers of reconstructed structures (C27, C28, C177). The dataset specifications (C173) and preprocessing steps (C174-C176) are documented. Quality control measures including manual verification and corrections (C180) strengthen the reliability of the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C183",
+      "C184"
+    ],
+    "result": "Six S-cones were identified based on CBC9 connectivity patterns, representing 4.8% of cones within CBC9 dendritic fields, consistent with previous reports of 3-5% S-cones. The identification used strict criteria requiring at least two invaginating CBC9 contacts or specific dendritic branch patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The S-cone identification methodology is well-justified using established CBC9 selectivity (C29, C33-C34) and produces results (C36) matching prior literature (C37). The alternative classification yielding 11.3% S-cones (C38) was appropriately rejected using statistical testing (C39, p=0.0037). The conservative approach with explicit criteria (C35) strengthens confidence in the classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C116",
+      "C117",
+      "C187",
+      "C188"
+    ],
+    "result": "An automated SVM classifier was developed to distinguish true synaptic contacts from false contacts between photoreceptors and bipolar cells, achieving ~90% accuracy in leave-one-out cross-validation. The classifier exploited stereotypical synapse morphology using seven features including contact area, eccentricity, and height.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification approach is well-designed, leveraging the stereotypical anatomy of photoreceptor-BC synapses (C42-C45) which allows reliable identification despite lack of explicit synaptic markers (C40-C41). The ~90% accuracy (C51, C116) with separate classifiers for different BC types (C50) and adequate training data (C49) supports the reliability. The authors acknowledge limitations and conclude errors are unlikely to affect main conclusions (C117).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "S-cones and M-cones contacted similar numbers of CBCs (12.2\u00b11.5 vs 12.2\u00b10.4) with similar total contact points (108\u00b124 vs 105\u00b15). CBC1 selectively contacted M-cones while CBC9 selectively contacted S-cones, consistent with prior reports. Both cone types contacted all other CBC types, with each cone contacting at least one CBC2, 3B, 4, 5I, 6, and 7, but some cones did not contact CBC types 5T, 5O, X, and 8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data on cone-CBC connectivity (C54-C55) shows no difference between S- and M-cone convergence patterns. The selective connectivity of CBC1 to M-cones (C59-C60) and CBC9 to S-cones (C57, C61-C62) confirms prior literature (citations to Breuninger et al., 2011). The finding that some CBC types (5T, 5O, X, 8) are not contacted by all cones (C65) is a novel observation supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C123",
+      "C124"
+    ],
+    "result": "OFF-CBCs contacted 65-75% of cones in their dendritic field, while ON-CBC types showed greater diversity. Types 5I, 6, and 7 contacted 60-80% of cones, but types 5T, 5O, X, and 8 contacted less than half, with CBCX contacting only ~20%. Manual verification confirmed dendrites passing 1-3 \u03bcm from cones without contact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data (C66-C69) clearly demonstrates differential cone sampling across CBC types. The finding that some ON-CBCs contact fewer cones than expected challenges classical views (C2, C13). Manual verification (C70, C124) rules out systematic classification errors. This represents a significant departure from established principles of outer retinal connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Almost all CBC types received input at similar locations relative to their soma, except CBCX which received the majority of inputs closer to the soma than all other types relative to its dendritic field size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contact density analysis (C71-C72) reveals a distinctive pattern for CBCX compared to other CBC types. This observation is supported by normalized contact density data (Figure 3I referenced in C72), providing additional evidence for CBCX's atypical connectivity pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C133",
+      "C134",
+      "C139",
+      "C140"
+    ],
+    "result": "CBCX has a compact dendritic tree but wide axonal terminal, contacts only ~2 cones on average (~20% of available cones), and makes predominantly atypical tip contacts (16/19) rather than invaginating contacts (3/19). Despite these OFF-CBC-like contacts, CBCX is classified as ON-CBC based on axonal stratification, mGluR6 expression, and electrophysiological recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The morphological characterization (C73-C75) and sparse connectivity (C76-C77, C133) are well-documented with manual verification (C78). The contact type analysis shows statistically significant differences from other ON-CBCs (C79-C84, p=3.6\u00d710\u207b\u2077). The classification as ON-CBC is supported by multiple independent lines of evidence (C86-C87) despite atypical contacts (C139). The functional significance remains uncertain (C140), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "75% of RBCs (106/141) contacted at least one cone via typical invaginating synapses, with 35% receiving input from multiple cones. Conversely, 45% of cones contacted a single RBC, ~35% contacted 2-4 RBCs, and 20% contacted no RBCs. No preference for S- or M-cones was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cone-to-RBC connectivity is well-quantified (C92-C97, C148-C150) with clear anatomical evidence of invaginating contacts (C91). The finding provides anatomical support for physiological observations (C98, citing Pang et al., 2010). The bidirectional nature of the data (both RBC-to-cone and cone-to-RBC perspectives) strengthens the conclusions. Some missing contacts are appropriately attributed to incomplete tracing (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "RBCs contacting only rods versus both rods and cones did not differ in axonal stratification depth, number of rod contacts, AII connectivity, mosaic organization, dendritic field size (116 vs 131 \u03bcm\u00b2, p=0.1), or number of dendritic tips (46 vs 45.5, p=0.8). The anatomical data argue against two distinct RBC types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent anatomical features were systematically compared (C99-C104) with appropriate statistical testing showing no significant differences. This contradicts the hypothesis of two RBC types based on physiological data (C161) but agrees with single-cell RNA-seq data showing a single genetic cluster (C163). The comprehensive analysis across multiple features strengthens the conclusion (C105, C162).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "RBCs contacted ~35 rods each, while individual rods contacted 1-2 RBCs. OFF-CBCs showed differential rod connectivity: CBC1 and CBC2 received minimal rod input, while CBC3A, CBC3B, and CBC4 were contacted by 5-10 rods, with CBC3B receiving the strongest input (~10 rods). No ON-CBC-to-rod contacts were found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rod-to-BC connectivity is well-quantified (C109-C115) with appropriate citations to prior work (C107, C108). The differential connectivity among OFF-CBC types (C113-C115, C164-C165) is clearly documented. The finding that CBC3B receives twice as many rod contacts as CBC3A despite similar cone input (C165) suggests functional specialization. The presence of AMPA receptors at these contacts (C166) supports functional significance (C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C185",
+      "C186"
+    ],
+    "result": "Type 5 CBCs were classified into three subtypes (5T, 5O, 5I) using principal component analysis of axonal density profiles and Gaussian mixture model fitting, with optimization based on retinal tiling principles. This classification agrees with recent reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification methodology is clearly described (C185) with appropriate citations to Greene et al., 2016 and Bishop, 2006. The optimization approach considering retinal tiling (C186) adds rigor. Agreement with independent recent reports (C53) provides external validation. The methodology is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The retinal location of the EM stack is unknown and may originate from ventral retina where M-cones co-express S-opsin. However, 'true' S-cones are evenly distributed across the retina, allowing CBC9 connectivity to identify S-cones independent of location, though opsin co-expression may influence connectivity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The unknown retinal location (C118) is a significant limitation acknowledged by the authors. While the argument that CBC9 connectivity can identify S-cones independent of location (C121) is reasonable given even S-cone distribution (C120), the potential influence of M-cone opsin co-expression on connectivity patterns (C122) cannot be excluded. This uncertainty affects interpretation of M-cone connectivity results but likely not S-cone identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The finding that some ON-CBCs contact fewer cones than expected agrees with recent work on CBC8 but contrasts with earlier studies concluding all diffuse BC types contact all cones. The higher resolution of EM (25 nm) compared to conventional light microscopy (hundreds of nm) allows more accurate assessment of contacts. Diffusion-based transmission has been proposed but lacks evidence for BCs not making direct contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature is appropriate (C125-C126) and the explanation based on resolution differences (C127-C128) is compelling. The discussion of diffusion-based transmission (C129-C131) appropriately acknowledges alternative mechanisms while noting lack of evidence for non-contacting dendrites. This contextualizes the findings within existing literature and technical capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C141",
+      "C142"
+    ],
+    "result": "Mouse CBCX resembles the macaque giant CBC in having a large sparsely branched dendritic tree, large axonal arbor stratifying in mid-IPL, and contacting only ~50% of cones in its dendritic field. In primate fovea and mid-periphery, diffuse ON-CBCs form basal contacts with cones, receiving 10-40% of input through basal synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to primate giant CBC (C135-C138) is well-supported by appropriate citations (Joo et al., 2011; Tsukamoto and Omi, 2016). The discussion of primate ON-CBC basal contacts (C141-C142) provides evolutionary context for CBCX's atypical contacts. These comparisons strengthen the interpretation that CBCX represents a conserved but unusual BC type across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "CBCX contacts predominantly amacrine cells rather than ganglion cells in the IPL and forms sparse contacts relative to axon terminal size. This resembles the dendrite-less GluMI interneuron. CBCX may be evolutionarily retracting its dendrites or may develop later than other CBCs with most synaptic sites already occupied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observations about CBCX IPL connectivity (C143-C144) are factual and well-cited. However, the evolutionary interpretations (C146-C147) are speculative. The comparison to GluMI (C145) is interesting but the proposed mechanisms for CBCX's unusual connectivity remain hypothetical. These are reasonable speculations but lack direct supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "The massive cone input to RBCs via invaginating synapses suggests prominent use of the primary rod pathway during photopic conditions. RBCs can be activated under photopic conditions, and cone-RBC contacts likely contribute to RBC activation especially at mid-range light intensities. Cone activation of RBCs could indirectly inhibit OFF-CBCs via AII amacrine cells or boost ON-CBC signals if gap junctions are open.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The anatomical observation of cone-RBC contacts is well-supported (C148-C150, C156), and physiological activation of RBCs under photopic conditions is documented (C152). However, the functional significance remains speculative (C154). The proposed mechanisms involving AII amacrine cells (C158, C160) are reasonable hypotheses but lack direct experimental support. The uncertainty about gap junction state (C159) further limits definitive conclusions about function. The alternative that these are developmental leftovers (C155) cannot be excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C168"
+    ],
+    "result": "The morphologically similar CBC3A and CBC3B may obtain functional differences from both differential expression of ionotropic glutamate receptors and differential connectivity with rods (CBC3B receives ~twice as many rod contacts as CBC3A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrates the anatomical finding of differential rod connectivity (C165) with prior knowledge of differential receptor expression (citation to Puller et al., 2013). The combination of these two mechanisms provides a plausible explanation for functional differences between morphologically similar cell types. The inference is reasonable and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The study demonstrates exceptions to established principles of outer retinal connectivity: several ON-BC types contact only a small fraction of cones in their dendritic field, and rod and cone pathways interact strongly in the outer plexiform layer. Whether these are general mammalian features or mouse-specific specializations remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately reflects the major findings of the study (C169-C171) which are well-supported by the data presented. The acknowledgment that generalizability across species is unknown (C172) is appropriate given the single-species dataset and unknown retinal location. This represents a fair and balanced conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "Statistical methods included restricting OFF-CBC-to-rod analysis to rods with identifiable RBC contacts (n=1685), using 95% confidence intervals via bootstrap resampling, and applying generalized linear mixed models with Poisson distribution for contact type analysis. Analysis code and data are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical methods are clearly described with appropriate justification for restrictions (C189). The use of bootstrap confidence intervals (C190) and GLMMs (C191-C192) is appropriate for the data types. The significant interaction effect (p<3.6\u00d710\u207b\u2077) for cell type \u00d7 contact type supports the CBCX findings. Public data availability (C193) enhances reproducibility.",
+    "result_type": "MINOR"
+  }
+]

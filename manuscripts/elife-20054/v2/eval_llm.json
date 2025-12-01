@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Acute hypoxia rapidly increases INa in rat cerebellar granule neurons (CGN) by ~70% within 40 seconds through leftward shifts in voltage-dependence of activation (V\u00bd) and steady-state inactivation (SSI). This effect is mediated by the SUMO pathway, as SUMO1 application mimics hypoxia while SENP1 suppresses the response, and changes occur without altering maximal current at saturating voltages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C16 provide converging electrophysiological evidence that hypoxia increases INa via SUMO-mediated shifts in voltage-dependence rather than changes in channel number. The data show consistent effects across multiple experimental manipulations (hypoxia, SUMO1, SENP1) with appropriate controls and quantitative measurements (Figure 1, Table 1). The occlusion experiments (C13, C14) and maximal current measurements (C16) support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "NaV1.2 channels are the primary contributors to hypoxia-responsive INa in CGN, as demonstrated by pharmacological dissection using selective toxins. CnTX blocks ~90% of INa under all conditions tested, while the residual current (primarily NaV1.6) is insensitive to hypoxia and SUMO pathway modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 use complementary pharmacological tools (CnTX and AnTTX with differential selectivity) to identify NaV1.2 as the hypoxia-responsive channel. The data are internally consistent, showing that the CnTX-sensitive fraction responds to SUMO/hypoxia while the AnTTX-sensitive fraction does not (Figure 1e-h). The SENP1 experiment (C21) provides additional validation by showing expected shifts in toxin sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Native NaV1.2 and SUMO1 interact at the plasma membrane of CGN, with hypoxia increasing this interaction ~4-fold (from 7.8% to 29.6% of NaV1.2 voxels showing FRET). Super-resolution microscopy confirms plasma membrane localization of SUMOylated NaV1.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 use complementary imaging approaches (amFRET and STORM) to demonstrate NaV1.2-SUMO1 interaction at the neuronal surface. The FRET data show specificity (no FRET with GAD67, C25) and hypoxia-induced increase (C24). STORM imaging with membrane labeling (C26) confirms surface localization. The methods are appropriate and the data are quantified with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "CGN cultured at physiologically relevant oxygen levels (7% O2) show similar responses to acute hypoxia and SUMO pathway modulation as cells cultured at ambient oxygen, with ~65-70% increases in INa and comparable voltage shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 demonstrate that the hypoxia response is not an artifact of ambient oxygen culture conditions. The magnitude and direction of effects are consistent with the 21% O2 experiments (Figure 3, Table 1). This addresses an important physiological concern, though the study remains limited to in vitro conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Heterologous expression of NaV1.2 in CHO cells recapitulates the hypoxia response seen in neurons, and mutation of Lys38 to Gln abolishes sensitivity to hypoxia, SUMO1, and SENP1. The \u03b21 subunit is not required for this response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 establish a reconstituted system that validates the neuronal findings and identifies Lys38 as essential. The K38Q mutation provides strong loss-of-function evidence (C33), and the \u03b21 independence (C34) simplifies the mechanism. The quantitative similarity between CHO cells and neurons (C31-C32) supports the validity of the heterologous system (Figure 5, Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Lys38 resides in a conserved SUMO consensus motif (Pro-Lys38-Gln-Glu) and is directly SUMOylated, as confirmed by mass spectrometry identification of the Gly-Gly SUMO remnant on Lys38-containing peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide direct biochemical evidence for SUMOylation at Lys38. The MS/MS data (Figure 6c,d) unambiguously identify the modified peptide. The evolutionary conservation (C35) supports functional importance. This is gold-standard evidence for post-translational modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "FRET studies in CHO cells demonstrate that CFP-NaV1.2 interacts with YFP-SUMO1 and YFP-Ubc9 but not with linkage-incompetent SUMO or free YFP. The K38Q mutation abolishes these interactions, confirming Lys38 as the sole SUMOylation site on the channel complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62 use FRET with appropriate positive and negative controls to demonstrate specific SUMOylation. The linkage-incompetent SUMO (C57) and K38Q mutation (C59) provide strong negative controls. The Ubc9 interaction (C56) supports the mechanism. Control experiments show the tags don't alter function (C61-C62). The conclusion that Lys38 is the only site (C60) is well-supported by the K38Q data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C63"
+    ],
+    "result": "Single-molecule photobleaching reveals that NaV1.2 channels are monoSUMOylated (one SUMO per channel) under both normoxic and hypoxic conditions. Hypoxia increases the fraction of SUMOylated channels ~4-fold without changing stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C63 use single-molecule counting to determine SUMOylation stoichiometry. The single-step bleaching (C63) is definitive evidence for 1:1 stoichiometry. The SENP1 and K38Q controls (C38-C39) validate specificity. The inference that only Lys38 is modified and no polySUMO chains form (C40) is well-supported by the data (Figure 7, Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "TIRF microscopy reveals that hypoxia rapidly recruits SUMO1 to existing surface NaV1.2 channels without changing channel surface density. The time course of SUMO recruitment matches the increase in current, and the process is independent of Na+ flux through the channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide real-time visualization of the SUMOylation process. The key findings\u2014no change in channel number (C43), matching time courses (C44-C46), and TTX insensitivity (C47)\u2014strongly support a direct modification mechanism. The quantitative pixel analysis (C42) is rigorous. This is compelling evidence for the proposed mechanism (Figure 8, Table 2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "SENP1 and the K38Q mutation prevent hypoxia-induced SUMO recruitment and functional changes, confirming that SUMOylation of Lys38 is necessary for the hypoxic response. SUMOylation reaches steady-state (~65-80% of channels) within 1 minute and remains stable during prolonged hypoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide loss-of-function validation using both enzymatic (SENP1) and genetic (K38Q) approaches. The data are consistent across imaging and electrophysiology. The steady-state kinetics (C69) are well-characterized. These controls are essential for establishing causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "During recovery from hypoxia, CFP-NaV1.2 surface density decreases by ~10% due to photobleaching rather than channel internalization, as current density decreases by only ~2%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 address a potential confound (channel trafficking) with appropriate controls. The differential effects on fluorescence vs. current (C65) support the photobleaching interpretation. This is a minor but important control observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "SUMOylation of NaV1.2 at Lys38 is the molecular mechanism underlying the immediate increase in INa in response to acute hypoxia, acting directly on the channel rather than secondary to Na+ flux. This provides a molecular rationale for previously observed hypoxia-induced increases in neuronal NaV activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 synthesize the major findings into a coherent mechanistic model. The conclusion is well-supported by the convergence of electrophysiology, imaging, biochemistry, and mutagenesis data. The TTX control (C51) rules out secondary effects. The connection to prior literature (C52) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "This is the first demonstration of rapid SUMO pathway modulation occurring over tens of seconds, as opposed to the chronic changes previously associated with stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 makes a priority claim that is supported by the rapid time course data throughout the manuscript. While the authors acknowledge this is to their knowledge, the 40-second time scale is substantially faster than previously reported SUMO responses. This represents a conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SUMOylation regulates neuronal excitability through multiple ion channel targets: it suppresses K+ channels (background and voltage-gated) and augments NaV1.2 channels. This regulation appears to be isoform-specific, as SUMO does not regulate hippocampal INa (primarily NaV1.1/1.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 place the current findings in the context of prior work on SUMO and ion channels. The isoform specificity (C73-C74) is supported by both negative data (hippocampal neurons) and the toxin studies showing NaV1.6 insensitivity. This represents an important extension of the SUMO-excitability story.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "NaV1.2 current remains elevated for at least 10-20 minutes after return to normoxia in both CGN and CHO cells, contrasting with reversible responses reported in hypothalamic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 document the persistence of SUMOylation and note differences from other systems. The data (Figures 1, 5) support the 10-20 minute persistence. The comparison to hypothalamic neurons (C76) appropriately notes that different mechanisms may operate in different cell types. This is a descriptive observation with mechanistic implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Physiological oxygen levels in mammalian brain are ~7% under normal conditions and drop below 2% with ischemia. Rat CGN tolerate long-term culture at 7% O2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 provide physiological context and validate the culture conditions. C77 is supported by appropriate citations. C78 is supported by experimental data and prior work. This justifies the 7% O2 experiments but is primarily methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "NaV1.2 channels and SUMO pathway enzymes may be valuable therapeutic targets for reducing damage from acute hypoxic insults to central neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is explicitly speculative ('may be') and represents a therapeutic hypothesis rather than a demonstrated result. While the mechanism is well-established, the therapeutic potential requires validation in disease models. The claim is appropriately cautious but remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C79"
+    ],
+    "result": "Background claims establish that acute hypoxia contributes to brain damage, rapidly increases INa as the first cellular effect, and that TTX provides neuroprotection. NaV1.2 is widely distributed in brain and associated with epilepsy. Current neuroprotective therapies are inadequate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 and C79 provide literature-based context supported by appropriate citations. These are not novel findings but establish the rationale for the study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  }
+]

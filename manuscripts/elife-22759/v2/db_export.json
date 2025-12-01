@@ -1,0 +1,2454 @@
+{
+  "submission": {
+    "id": "c12ce761-401b-4cac-8369-58c256d29f84",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:53:48.779224Z",
+    "updated_at": "2025-11-30T23:53:48.779224Z"
+  },
+  "content": [
+    {
+      "id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "submission_id": "c12ce761-401b-4cac-8369-58c256d29f84",
+      "content_type": "manuscript",
+      "content_text": "# Ezrin activation by LOK phosphorylation involves a PIP2-dependent wedge mechanism\n\n## Authors\n\n- Thaher Pelaseyed<sup>1</sup> ([ORCID: 0000-0002-6434-3913](https://orcid.org/0000-0002-6434-3913))\n- Raghuvir Viswanatha<sup>1</sup>\n- C\u00e9cile Sauvanet<sup>1</sup>\n- Joshua J Filter<sup>2</sup>\n- Michael L Goldberg<sup>2</sup> ([ORCID: 0000-0003-0200-0277](https://orcid.org/0000-0003-0200-0277))\n- Anthony Bretscher<sup>1</sup> ([ORCID: 0000-0002-1122-8970](https://orcid.org/0000-0002-1122-8970)) \u2020\n\n### Affiliations\n\n1. Weill Institute for Molecular and Cell Biology Cornell University Ithaca United States\n2. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n3. Department of Genetics Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow cells specify morphologically distinct plasma membrane domains is poorly understood. Prior work has shown that restriction of microvilli to the apical aspect of epithelial cells requires the localized activation of the membrane-F-actin linking protein ezrin. Using an in vitro system, we now define a multi-step process whereby the kinase LOK specifically phosphorylates ezrin to activate it. Binding of PIP2 to ezrin induces a conformational change permitting the insertion of the LOK C-terminal domain to wedge apart the membrane and F-actin-binding domains of ezrin. The N-terminal LOK kinase domain can then access a site 40 residues distal from the consensus sequence that collectively direct phosphorylation of the appropriate threonine residue. We suggest that this elaborate mechanism ensures that ezrin is only phosphorylated at the plasma membrane, and with high specificity by the apically localized kinase LOK.\n\n## Introduction\n\nAll nucleated cells can polarize to generate morphologically and biochemically distinct regions at the cell surface. For example, the apical and basolateral domains of epithelial cells have distinct protein and lipid compositions, and microvilli are restricted to the apical domain. How cells maintain morphologically distinct regions of their cell surface is not clear.\n\nWe have been addressing this issue by examining how microvilli are assembled and specifically localized to the apical surface of epithelial cells (Sauvanet et al., 2015). A critical component of epithelial microvilli is ezrin, the founding member of the closely-related ezrin/radixin/moesin (ERM) protein family, that serves as a regulated membrane-F-actin linking protein (Bretscher, 1983, 1989; Fehon et al., 2010). Genetic knockout of ezrin in the mouse results in enterocytes with shorter and disorganized microvilli. In the fruit fly, loss of the single ERM protein is lethal, but when selectively knocked out in photoreceptor cells, microvilli are lost (Karagiosis and Ready, 2004; Saotome et al., 2004; Speck et al., 2003). Thus, ERM proteins provide a critical function in polarized morphogenesis.\n\nERM proteins are regulated by a reversible head-to-tail interaction (Figure 1A). Like all ERMs, ezrin contains an N-terminal FERM domain that binds the plasma membrane and a C-terminal F-actin-binding domain (ezrin-CTD) that can attach to the underlying actin filaments that make up the core of microvilli (Gould et al., 1989; Turunen et al., 1994). In the closed inactive state, the FERM domain is tightly associated with the\u00a0~80 residues of ezrin-CTD, masking the membrane association and F-actin-binding sites (Gary and Bretscher, 1995; Pearson et al., 2000; Reczek and Bretscher, 1998). Linking these two regions is a ~150 residue \u03b1-helical region that folds into an anti-parallel coiled coil hairpin in the closed structure (Li et al., 2007). In the open structure, the unmasked FERM domain binds the plasma membrane, the unmasked C-terminal domain binds F-actin, and the \u03b1-helical region presumably unravels. The unmasked FERM domain can bind many proteins, including the NHERF family adaptor proteins EBP50 and E3KARP, and the trans-membrane proteins CD44, ICAMs, and \u03b2-dystroglycan (Mori et al., 2008; Reczek et al., 1997).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig1-v2.jpg)\n\n**Figure 1.:** (A) Left panel: A cartoon illustration of cytoplasmic closed/inactive ezrin versus membrane-tethered open/active ezrin acting as crosslinker between the plasma membrane (PM) and the cytoskeletal F-actin. Right panel: The domain structure of ezrin and LOK constructs used in this study. The numbers indicate amino acids residues at protein domain boundaries. (B) In vitro kinase assay showing that 10 nM LOK phosphorylates 18 \u00b5M ezrin-CTD. Data are presented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA (See also Figure 1\u2014source data 1), ****p<0.0001. (C) In vitro kinase assay showing LOK-mediated phosphorylation of full-length ezrin in presence of 90 \u00b5M of PIP2 micelles. Data are presented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA (See also Figure 1\u2014figure supplement 1 and Figure 1\u2014source data 1), ****p<0.0001. (D) In vitro kinase assay showing that 18 \u00b5M ezrin is specifically primed by 90 \u00b5M of PIP2 micelles and not by IP3 or other phospholipids at 90 \u00b5M concentrations. Blots are derived from same membrane. Data are presented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA (See also Figure 1\u2014source data 1), ****p<0.0001. (E) In vitro kinase assay showing that unilamellar liposomes DOPC:PIP2 (90 mol% DOPC, 10% PIP2) or DOPC:DOPS:PIP2 (80 mol% DOPC, 10 mol% DOPS, 10 mol% PIP2) promote phosphorylation of 18 \u00b5M ezrin by 10 nM LOK, whereas DOPC (100 mol% DOPC) or DOPC:DOPS (70 mol% DOPC, 30 mol% DOPS) fail to promote LOK-mediated ezrin phosphorylation. (F\u2013G) 10 nM LOK-N phosphorylates 18 \u00b5M ezrin-CTD but not full-length ezrin in presence of 90 \u00b5M PIP2. Data are presented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA (See also Figure 1\u2014source data 1), ***p<0.0002, ****p<0.0001. Total ezrin is shown in red and phosphorylation of T567 in green in dual color Western blots.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) 10 nM LOK phosphorylates 18 \u00b5M ezrin-CTD regardless of the presence of 90 \u00b5M PIP2. (B) 10 nM LOK requires 90 \u00b5M PIP2 micelles or 1 mM DOPC:DOPS:PIP2 unilamellar liposomes containing 10 mol% PIP2 (DOPC:DOPS:PIP2) for phosphorylation of 18 \u00b5M ezrin. 10 nM LOK-N cannot phosphorylate 18 \u00b5M ezrin in presence of PIP2 micelles or DOPC:DOPS:PIP2. Total ezrin is shown in red and phosphorylation of T567 in green in dual color western blots. (C) Michaelis-Menten curves of kinase-substrate pairs showing that PIP2 and LOK-C render full-length ezrin an optimal substrate for LOK kinetics. The shaded region (0\u201340 \u00b5M substrate) is enlarged in (D). Data are represented as mean \u00b1 SE, n\u00a0=\u00a03 (See also Table 1 and Table 1\u2014source data 1).\n\nThe transition between closed and open ERMs requires phosphorylation of a specific threonine\u00a0residue (T567 in ezrin; T564 in radixin and T558 in moesin) (Nakamura et al., 1995; Simons et al., 1998). Additionally, in vivo phosphorylation was found to require binding of the FERM domain to the plasma membrane phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Fievet et al., 2004; Hao et al., 2009). Structural analysis of the radixin FERM domain in the presence or absence of IP3 led to the suggestion that PIP2 binding to FERM directly changes the conformation so as to partially release the C-terminal domain to make the phosphorylation site accessible (Hamada et al., 2000). Consistent with this model, in the closed configuration, the T567 that becomes phosphorylated is buried within the interface between the FERM and the ezrin-CTD (Li et al., 2007; Pearson et al., 2000).\n\nDespite the findings above, how ezrin activation is restricted to the apical membrane was not resolved. At steady state, about one half of the ezrin in an epithelial cell is phosphorylated. Moreover, in vivo phosphorylation of ezrin turns over on the time-scale of minutes, similar to the lifetime of microvilli. These observations strongly suggest a morphogenetic principle: a dynamic system of local ezrin activation by phosphorylation coupled with delocalized deactivation by dephosphorylation. Lymphocyte-oriented-kinase (LOK) and its close paralog Ste20-like-kinase (SLK) were then found to be the major ezrin kinases in epithelial cells. Remarkably, LOK and SLK are currently the only kinases known to selectively localize to the apical membrane of epithelial cells (Viswanatha et al., 2012). LOK had previously been identified as the kinase that phosphorylates ezrin in lymphocytes (Belkina et al., 2009).\n\nLOK and SLK belong to the germinal center-like kinase (GCK) -V subfamily of kinases. They consist of a conserved N-terminal kinase domain, a less conserved intermediate region, and a moderately conserved C-terminal domain (Figure 1A). A single ortholog exists in Drosophila melanogaster (Slik) and Caenorhabditis elegans (GCK4). In the fly, Slik has been identified as the sole kinase that phosphorylates the single ERM ortholog, moesin (Carreno et al., 2008; Hipfner et al., 2004; Kunda et al., 2008). It is notable that LOK is highly selective for members of the ERM family, as the kinase\u2019s target sequences requires a conserved tyrosine at position \u22122 relative to the substrate threonine (Belkina et al., 2009).\n\nHere, we describe an in vitro system to reveal why ezrin has to bind PIP2 to become a substrate for phosphorylation by LOK. As far as we are aware, this is the first example of a protein that has to bind a phosphoinositide lipid to serve as a kinase substrate. Our results indicate that PIP2 binding to the ezrin FERM domain transmits a conformational change through the \u03b1-helical region to weaken the FERM/ezrin-CTD association. PIP2-priming of ezrin permits the LOK C-terminal domain to act as a wedge between the FERM and ezrin-CTD to allow the kinase domain to gain access and phosphorylate T567. In support of this model, we design a chimeric protein and show that it can recapitulate the activity of LOK in vitro and ex vivo. Further, we define a distal site in ezrin about 40 residues from T567 that is also necessary for phosphorylation by the kinase domain. In addition to being required for ezrin phosphorylation, the LOK C-terminal domain negatively regulates the kinase activity of LOK. Thus, the PIP2-dependent mechanism of ezrin phosphorylation by LOK involves several distinct steps, thereby ensuring the specificity of the reaction.\n\n## Results\n\n### In vitro phosphorylation of ezrin by LOK requires PIP2 and the LOK C-terminal domain\n\nWe first established an in vitro phosphorylation assay for purified LOK using the isolated ezrin-CTD as substrate. LOK phosphorylated the ezrin-CTD as detected using pT567 antibody (Figure 1B), but failed to phosphorylate full-length ezrin (Figure 1C). We therefore explored the possible role of phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) as previous reports have suggested a regulatory role for this phospholipid (Fievet et al., 2004; Hao et al., 2009). In the presence of PIP2 micelles, LOK was readily able to phosphorylate ezrin (Figure 1C), but PIP2 did not influence phosphorylation of the ezrin-CTD by LOK (Figure 1\u2014figure supplement 1A). The requirement for PIP2 was specific, as other phosphoinositides, or soluble IP3, failed to substitute for PIP2 in phosphorylation of ezrin (Figure 1D). The requirement of PIP2 for ezrin phosphorylation was not simply a negative charge effect as PIP2-dependency was reproduced in 100-nm-sized synthetic unilamellar liposomes of DOPC or DOPC:DOPS containing 10 mol% PIP2, which represent a more physiological system (Figure 1E).\n\nWe next explored which domains of LOK are required for ezrin phosphorylation. LOK consists of an N-terminal kinase domain (LOK-N) and a C-terminal region (LOK-C) containing putative polo kinase kinase (PKK) domains of unknown function (Figure 1A). In vitro, both full-length LOK and LOK-N can phosphorylate ezrin-CTD, although the isolated kinase domain was less active (Figure 1F). Whereas intact LOK phosphorylated ezrin in a PIP2-dependent manner, LOK-N was unable to phosphorylate ezrin, even in the presence of PIP2 micelles and unilamellar DOPC:DOPS liposomes containing 10 mol% PIP2 (Figure 1G and Figure 1\u2014figure supplement 1B). We conclude that in vitro phosphorylation of full-length ezrin requires both PIP2 and the C-terminal domain of LOK.\n\n### In vitro phosphorylation requires active participation by the central \u03b1-helical domain of ezrin\n\nThe FERM domain of ezrin is linked to the ezrin-CTD by a ~150 residue \u03b1-helical coiled coil hairpin, as represented in the structure of the close homolog Sfmoesin (Figure 2A) (Li et al., 2007). This region consists of three \u03b1-helices that connect the FERM domain to the ezrin-CTD via an antiparallel coiled coil (Li et al., 2007). In the absence of the \u03b1-helical region, the individual FERM and ezrin-CTD domains bind avidly together (Pearson et al., 2000). To explore whether binding of PIP2 to the FERM domain simply weakens the association with the ezrin-CTD as proposed (Hamada et al., 2000), we asked whether a complex of isolated GST-ezrin-CTD and FERM could be phosphorylated by LOK or LOK-N in the presence of PIP2. Remarkably, while GST-ezrin-CTD was phosphorylated by LOK and LOK-N, we found that the isolated GST-ezrin-CTD+FERM complex could not be phosphorylated by\u00a0LOK or LOK-N\u00a0in the presence of PIP2 (Figure 2B). Furthermore, LOK failed to phosphorylate GST-ezrin-CTD in complex with FERM in presence of DOPC:DOPS:PIP2 unilamellar liposomes (Figure 2\u2014figure supplement 1). We conclude that the central \u03b1-helical region is required for translating PIP2-binding to the FERM domain into a weakened association between FERM and ezrin-CTD domains, thus allowing in vitro phosphorylation of ezrin by LOK.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig2-v2.jpg)\n\n**Figure 2.:** (A) Crystal structure of the ERM protein Sfmoesin (PDB: 2I1K) in a closed/inactive state. Lobes F1-3 represent the lobes in FERM domain (blue). The \u03b1-helical coiled coil hairpin is shown in gray. An acidic linker region (gray) of the hairpin occupies a PIP2-binding site (pink), embedded between F1 and F3 lobes. T567 represents the position of ezrin T567 superimposed on Sfmoesin-CTD (yellow). This residue is masked in this closed state. (B) 10 nM LOK and 10 nM LOK-N phosphorylate 18 \u00b5M GST-ezrin-CTD, but both LOK and LOK-N fail to phosphorylate 18 \u00b5M of a GST-ezrin-CTD+FERM complex\u00a0in absence or presence of 90 \u00b5M PIP2. Phosphorylation of GST-ezrin-CTD was detected with pT567 antibody. Total protein was visualized using Coomassie.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** 10 nM LOK phosphorylates 18 \u00b5M GST-ezrin-CTD independent of PIP2 micelles, DOPC:DOPS or DOPC:DOPS:PIP2 unilamellar liposomes, but 10 nM LOK fails to phosphorylate GST-ezrin-CTD+FERM primed with PIP2 micelles or DOPC:DOPS:PIP2 unilamellar liposomes. Phosphorylation of GST-ezrin-CTD was detected with pT567 antibody. Total protein was visualized using Coomassie.\n\n### PIP2 primes ezrin to serve as an efficient substrate for phosphorylation by LOK\n\nHaving established the broad features of the PIP2-dependent phosphorylation of ezrin by LOK, we explored the kinetic parameters of the phosphorylation reactions in order to gain more insight into the mechanism (Table 1 and Figure 1\u2014figure supplement 1). Full-length LOK and just the kinase domain, LOK-N, had about the same affinity for the ezrin-CTD (Km 252 and 176 \u00b5M, respectively), but the maximal turnover rate for LOK-N was lower (kcat of 19.8 min\u22121 for LOK versus 1.4 min\u22121 for LOK-N). In the presence of PIP2, LOK phosphorylated ezrin with a Km of 5 \u00b5M and displayed a lower maximal turnover (kcat of 8.5 min\u22121). In the absence of PIP2, LOK hardly phosphorylated ezrin, and the Km was difficult to measure, but was of the order of 800 \u00b5M. Thus, PIP2 enhances the affinity of LOK for ezrin by about 160 fold. LOK-N phosphorylated intact ezrin so poorly that it was not possible to derive a Km value, emphasizing the importance of LOK C-terminal domain. Our data reveal that the catalytic efficiency (kcat/Km) of LOK for ezrin and ezrin-CTD is 1.56 and 0.08 \u00b5M\u22121min\u22121, respectively. Thus, as a substrate for LOK, ezrin is about twenty-fold better than the ezrin-CTD. Since the affinity of LOK for ezrin is greatly enhanced by PIP2, and this affinity is much higher than LOK for the ezrin-CTD, the LOK C-terminal domain (LOK-C) must actively engage full-length ezrin in a PIP2-dependent manner.\n\n**Table 1.**\n A comparison of the kinetic constants for kinase-substrate pairs based on 32P incorporation. Concentration of kinase in each experiment was 10 nM. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03 (See also Figure 1\u2014figure supplement 1C\u2013D and Table 1\u2014source data 1).Table 1\u2014source data 1.Data summary and analysis for Table 1, based on Figure 1\u2014figure supplement 1C\u2013D.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Kinase/Substrate</th>\n      <th>Kma (\u00b5M)</th>\n      <th>Vmax (pmole\u00d7min\u22121)</th>\n      <th>kcata (min\u22121)</th>\n      <th>kcat/Km (\u00b5M\u22121\u00d7min\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LOK/ezrin + PIP2</td>\n      <td>5.5\u00a0\u00b1\u00a01.6</td>\n      <td>0.85\u00a0\u00b1\u00a00.07</td>\n      <td>8.5\u00a0\u00b1\u00a00.7</td>\n      <td>1.56</td>\n    </tr>\n    <tr>\n      <td>LOK/ezrin</td>\n      <td>782\u00a0\u00b1\u00a0197</td>\n      <td>0.56\u00a0\u00b1\u00a00.10</td>\n      <td>5.6\u00a0\u00b1\u00a01.0</td>\n      <td>0.01</td>\n    </tr>\n    <tr>\n      <td>LOK/ezrin-CTD</td>\n      <td>252\u00a0\u00b1\u00a027</td>\n      <td>1.98\u00a0\u00b1\u00a00.16</td>\n      <td>19.8\u00a0\u00b1\u00a01.4</td>\n      <td>0.08</td>\n    </tr>\n    <tr>\n      <td>LOK-N/ezrin-CTD</td>\n      <td>176\u00a0\u00b1\u00a030</td>\n      <td>0.14\u00a0\u00b1\u00a00.01</td>\n      <td>1.4\u00a0\u00b1\u00a00.1</td>\n      <td>0.01</td>\n    </tr>\n  </tbody>\n</table>\n\n_aKm and kcat were calculated using equations 1 and 2._\n\n### The LOK C-terminal domain serves as a wedge between the FERM and ezrin-CTD domains\n\nTo explore if LOK-C binds specific domains of ezrin, equilibrium-binding curves were generated. We measured the depletion of LOK-C from the supernatant of reactions containing sedimented beads with either immobilized ezrin-CTD or FERM domain (Figure 3A and B). Measurements revealed that the LOK-C binds both the free FERM and ezrin-CTD domains with a Kd of about 10 \u00b5M and 2 \u00b5M, respectively. We also attempted to measure the association of the LOK-C with full-length ezrin in the absence and presence of PIP2, but minimal binding could be detected (data not shown). Thus, priming of ezrin by PIP2 does not unmask binding sites sufficiently to enable the determination of a binding constant.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig3-v2.jpg)\n\n**Figure 3.:** (A) A binding curve for binding of 0\u201315 \u00b5M immobilized GST-ezrin-CTD to 200 nM LOK-C at Kd\u00a0=\u00a02.0\u00a0\u00b1\u00a00.6 \u00b5M. Bottom panel depicts representative experiment and Coomassie staining of unbound fraction of LOK-C. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03 (See also Figure 3\u2014source data 1). (B) Binding curve for binding of 0\u201318 \u00b5M immobilized CNBr-FERM to 200 nM LOK-C at Kd\u00a0=\u00a010.4\u00a0\u00b1\u00a05.3 \u00b5M. Bottom panel depicts representative experiment and Coomassie staining of unbound fraction of LOK-C. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03 (See also Figure 3\u2014source data 1). (C) A model of LOK-C acting as a wedge that pries open FERM and ezrin-CTD in a PIP2-primed ezrin molecule.\n\nThe combination of the kinetics and binding experiments lead to a model for the basic mechanism that allows the LOK kinase domain to gain access to T567 (Figure 3C). Ezrin binds PIP2 and this induces a conformational change that is transmitted through the \u03b1-helical linker domain to transiently loosen the association between the FERM and ezrin-CTD. The loosening of FERM-ezrin-CTD interaction allows LOK-C to enter between the FERM and ezrin-CTD - working like a wedge - to render T567 accessible to the kinase domain.\n\n### The PIP2-dependent wedge mechanism of ezrin phosphorylation can be recapitulated with a chimeric kinase\n\nOur model implies that site(s) in ezrin for binding LOK-C are masked in the closed, inactive state. This is also true of the binding site for ezrin-binding protein of 50 kD (EBP50). EBP50 consists of two PDZ domains and a C-terminal tail region.\u00a0The\u00a0latter binds tightly to a surface on the FERM domain that is masked in closed full-length ezrin (Reczek et al., 1997; Reczek and Bretscher, 1998). Structural work has shown that the C-terminal tail of EBP50 (EBP50t) binds to the same surface of the FERM domain that is occupied by a C-terminal \u03b1-helix belonging to ezrin-CTD, thereby explaining why the binding site for EBP50t is masked in the full-length inactive protein (Finnerty et al., 2004). We therefore tested if EBP50t could compensate functionally for the LOK C-terminal domain in phosphorylation of PIP2-primed ezrin. We generated and purified a LOK-N-EBP50t chimera (Figure 4A) and used it in in vitro phosphorylation assays (Figure 4B). As expected, both LOK-N-EBP50t and LOK could phosphorylate the ezrin-CTD. When presented with full-length ezrin, neither kinase could phosphorylate ezrin in the absence of PIP2, while both LOK and LOK-N-EBP50t could phosphorylate ezrin robustly when PIP2 was included. Thus, the chimeric protein supports the PIP2-dependent wedge model, by interaction of C-terminal EBP50t with ezrin FERM, and consequently compensating for LOK-C, when ezrin is primed by PIP2.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig4-v2.jpg)\n\n**Figure 4.:** (A) A schematic protein domain comparison of full-length LOK fused to GFP-Flag tag (green) and LOK-N fused to EBP50 tail (purple) via an internal GFP-Flag tag. (B) In vitro kinase assay showing that 10 nM LOK and 10 nM LOK-N-EBP50t both phosphorylate 18 \u00b5M ezrin-CTD, but only phosphorylate 18 \u00b5M ezrin in presence of 90 \u00b5M PIP2. Total ezrin is shown in red and phosphorylation of T567 in green in dual color western blots. (C) Maximum projections of wild type JEG-3 cells overexpressing GFP, and GFP fusions of LOK, LOK-N or LOK-N-EBP50t (green) show that LOK and LOK-N-EBP50t are targeted to microvilli, while GFP and LOK-N are cytoplasmic. Ezrin in magenta. F-actin in blue. Insets represent area within dotted boxes. Arrows indicate microvilli. Scale bars, 10 \u00b5m. (D) Representative maximum projections of ERM kinase-suppressed sgLOK/siSLK JEG-3 cells overexpressing GFP, and GFP fusions of LOK, LOK-N or LOK-N-EBP50t (green) show that LOK and LOK-N-EBP50t rescue microvilli, while GFP and LOK-N failed to rescue microvilli. Ezrin in magenta. F-actin in blue. Insets represent area within dotted boxes. Arrows indicate microvilli. Scale bars, 10 \u00b5m. Bar graph shows quantification of confocal images. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03. (See also Figure 4\u2014source data 1) (E) A model depicting how LOK-N-EBP50t binding to FERM in PIP2-primed ezrin resembles the wedging of ezrin by LOK-C prior to phosphorylation of T567.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) A western blot showing that ezrin phosphorylation is suppressed in sgLOK/siSLK JEG-3 cells. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03. (B) Representative maximum projections showing that microvilli formation is suppressed in sgLOK/siSLK JEG-3 cells. Ezrin in green. F-actin in gray. Insets represent area within dotted boxes. Scale bars, 10 \u00b5m. Bar graph shows quantification of confocal images. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03. (See also Figure 4\u2014source data 1). (C) Western blot showing that LOK-N-EBP50t restores ezrin phosphorylation in sgLOK/siSLK JEG-3 cells. Total ezrin is shown in red and phosphorylation of T567 in green in dual color western blots. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA, *p=0.0332, **=0.0021, ***p=0.0002.\n\nTo see if LOK-N-EBP50t could mimic LOK ex vivo, we explored its localization in cultured placental choriocarinoma JEG3 cells in which LOK has been shown to selectively localize to the apical domain (Viswanatha et al., 2012). Upon transient expression, both LOK and LOK-N-EBP50t localized to microvilli, whereas LOK-N did not (Figure 4C). To see if LOK-N-EBP50t could compensate functionally for LOK or SLK, using CRISPR/Cas9, we generated a JEG-3 cell line lacking LOK and knocked down endogenous SLK by siRNA expression. As with double siRNA knockdown (Viswanatha et al., 2012), kinase suppression reduced ezrin T567 phosphorylation by over 80% and resulted in loss of microvilli (Figure 4\u2014figure supplement 1A and B). Introduction of LOK or LOK-N-EBP50t into these cells restored microvilli, whereas LOK-N failed to restore microvilli (Figure 4D). LOK-N-EBP50t also restored ezrin phosphorylation in kinase-suppressed cells (Figure 4\u2014figure supplement 1C). Thus, LOK-N-EBP50t is able to recapitulate both the enzymatic properties of LOK as well as its function in microvilli formation, via restricting activated ezrin to the apical membrane (Figure 4E).\n\n### The LOK C-terminal domain is involved in auto-inhibition\n\nHigh expression of LOK-C in JEG-3 cells inhibits ezrin phosphorylation and results in the loss of microvilli. However, in low-level expressing cells, LOK-C is localized to regions of individual microvilli with local loss of ezrin (Viswanatha et al., 2012). Thus in cells, LOK-C has the properties of a negative regulatory domain.\n\nWe therefore examined the effect of LOK-C in the phosphorylation of ezrin or ezrin-CTD in vitro. In these assays, we employed LOK or LOK-N-EBP50t at 10 nM, or LOK-N at 30 nM and the ezrin or ezrin-CTD substrates at 18 \u00b5M. In the presence of 90 \u00b5M PIP2, LOK-C inhibited the ability of LOK or LOK-N-EBP50t to phosphorylate ezrin with an IC50 of 1.9\u00a0\u00b1\u00a00.1 \u00b5M and 1.6\u00a0\u00b1\u00a00.1 \u00b5M, respectively (Figure 5A and C). Similarly, the inhibition curves with ezrin-CTD as substrate showed an IC50 for LOK of 1.9\u00a0\u00b1\u00a00.2 \u00b5M and for LOK-N of 1.2\u00a0\u00b1\u00a00.2 \u00b5M (Figure 5B and C). As these IC50 values were all much lower than the 18 \u00b5M substrate concentration, inhibition by LOK-C is due to a direct effect on the LOK kinase activity rather than affecting the substrate. These similar IC50\u00a0values also suggest that the mechanism of inhibition is similar in all cases, namely competitive inhibition. Moreover, since the IC50 values of LOK-C for LOK and LOK-N phosphorylation of the ezrin-CTD are similar, binding of the kinase domain of full-length LOK to the ezrin-CTD likely relieves the inhibition imposed by its own C-terminal domain. We therefore explored whether regions in the ezrin-CTD outside the minimal consensus sequence surrounding T567 might bind LOK-N and potentially relieve the inhibition imposed by LOK-C.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig5-v2.jpg)\n\n**Figure 5.:** (A) In vitro kinase assay showing that LOK-C (0\u201365 \u00b5M) inhibits phosphorylation of 18 \u00b5M ezrin phosphorylation by 10 nM LOK (red panel) and 10 nM LOK-N-EBP50t (yellow panel) in presence of 90 \u00b5M PIP2. (B) In vitro kinase assay showing that\u00a0LOK-C (0\u201365 \u00b5M) inhibits LOK-mediated phosphorylation of 18 \u00b5M ezrin-CTD (blue panel), and LOK-N-mediated phosphorylation of 18 \u00b5M ezrin-CTD (purple panel). Total ezrin is shown in red and phosphorylation of T567 in green in dual color western blots. (C) Inhibition curves of LOK/ezrin+PIP2 (red), LOK-N-EBP50t/ezrin+PIP2 (yellow), LOK/ezrin-CTD (blue), and LOK-N/ezrin-CTD (purple), with their corresponding IC50-values. Data are represented as mean \u00b1 SE, n\u00a0=\u00a02 (see also Figure 5\u2014source data 1).\n\n### LOK-N requires a docking site distal to the T567 consensus sequence\n\nKinases require a well-defined consensus sequence immediately flanking the phosphorylation site. In the case of LOK, there is a strong preference for a tyrosine at P-2 (Y565), which is conserved in all ERM proteins (Belkina et al., 2009). In order to explore the presence of additional regions that contribute to specific LOK phosphorylation of ezrin, we used N-terminal truncations of the ezrin-CTD to assess their ability to serve as substrates for LOK and LOK-N. As shown earlier, LOK-N has a slightly lower activity than LOK for GST-ezrin-CTD (Figure 6A). Robust phosphorylation was seen up to GST-ezrin-520\u2013585. The shorter constructs, GST-ezrin-530\u2013585 and GST-ezrin-555\u2013585, were very poor substrates for LOK and LOK-N. As this suggests that the region 520\u2013530 is important for recognition by LOK-N, we made a construct, GST-ezrin-490-(\u2206520\u2013530)\u2212585, lacking this region. This truncated substrate was a significantly poorer substrate than GST-ezrin-490\u2013585. Thus, the ezrin-CTD has an additional distal docking site\u00a0approximately 40 residues N-terminal to the kinase consensus sequence.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/22759/elife-22759-fig6-v2.jpg)\n\n**Figure 6.:** (A) In vitro kinase assay showing that 10 nM LOK and 30 nM LOK-N phosphorylate GST-ezrin-CTD, and the truncations GST-ezrin-490\u2013585 and GST-ezrin-520\u2013585. Phosphorylation decreases in the truncations GST-ezrin-530\u2013585, GST-ezrin-555\u2013585 and GST-ezrin-490(\u0394520\u2013530)\u2212585. All substrate concentrations were 18 \u00b5M. Schematic illustration of GST-ezrin-CTD and truncations shows the distal docking site in orange letters and box. LOK kinase consensus sequence is shown in black, in which the T567 phosphorylation site is in red letters and the conserved Y565 is in blue letters. Data are represented as mean \u00b1 SE, n\u00a0=\u00a03, two-way ANOVA (See also Figure 6\u2014source data 1), **p<0.0021, ****p<0.0001. (B) A working model depicting the proposed coincidence detection mechanism for ezrin phosphorylation. (1) Ezrin is recruited to PIP2 and primed for phosphorylation. (2) Autoinhibition of LOK is relieved as LOK-C wedges in between FERM and ezrin-CTD. (3) LOK-N binds to distal docking site on ezrin-CTD and, (4) phosphorylates T567. (5) LOK remains tethered to activated ezrin, allowing phosphorylation of microvillar ezrin in a positive feedback loop.\n\n## Discussion\n\nIn order to maintain the morphological polarity of a cell, specific morphogenetic components have to be controlled locally. In the case of microvilli on epithelial cells, ezrin is locally activated through T567 phosphorylation mediated by the closely related LOK and SLK kinases. Here, we define a novel multi-step mechanism for specific phosphorylation of ezrin by LOK (Figure 6B). In the first step, binding to PIP2 induces a conformational change in ezrin. In the second step - that has to occur coincidentally with the first - the C-terminal domain of LOK (LOK-C) binds as a wedge between the FERM and ezrin-CTD domains. The wedge mechanism allows for\u00a0the third step in which the kinase domain binds to a distal docking site in the ezrin-CTD upstream of the T567 phosphorylation site. The final step can now proceed, namely the phosphorylation of T567 within the appropriate consensus sequence setting. LOK itself is negatively regulated by LOK-C, and binding ezrin appears to relieve this inhibition. In the following narrative, we expand on each of these steps.\n\nThe evidence for the first step is that LOK requires PIP2 to phosphorylate ezrin (Figure 6B, step 1). Since PIP2 is a regulatory lipid largely confined to the plasma membrane, the highly specific priming of ezrin by PIP2 ensures that ezrin phosphorylation is restricted to this membrane compartment. Our in vitro studies show that both phosphatidylinositol 4,5-bisphosphate (PIP2) micelles and PIP2-containing unilamellar liposomes prime ezrin for LOK-mediated phosphorylation, while other phospholipids and more importantly, IP3, the head group in direct physical contact with ezrin, fail to prime ezrin for phosphorylation. From these data, we conclude that priming of ezrin for phosphorylation requires an appropriate charge distribution provided by phosphate groups in the head group of the phospholipid phosphatidylinositol 4,5-bisphosphate, and a high local concentration of the head group that can only be achieved in vitro using micelles or liposomes. Earlier studies have shown that PIP2 binds the FERM domain and it has been suggested that\u00a0this interaction results in a conformational change to loosen the associated FERM-ezrin-CTD (Ben-Aissa et al., 2012; Hamada et al., 2000). Therefore, we were surprised to find that in the presence of PIP2, LOK is unable to phosphorylate a complex of FERM associated with the ezrin-CTD. This revealed two points: First, PIP2 acts through ezrin activation, and not by LOK activation, and second, the central \u03b1-helical coiled coil hairpin connecting the FERM to the ezrin-CTD is necessary for priming of intact ezrin for phosphorylation. The detailed function of the central coiled coil hairpin is unknown, but one attractive possibility is that the \u03b1-helical coiled coil region acts as a spring counteracting the strong association between the FERM and ezrin-CTD, and upon binding PIP2, the strength of the spring is enhanced. The proposed spring model has similarities in other proteins. In the ERM-related protein merlin, the central \u03b1-helical hairpin undergoes an unfolding event, like a \u2018switchblade\u2019, during opening of the protein (Li et al., 2007). Another example occurs within the influenza virus hemagglutinin protein. This protein is a membrane-fusion glycoprotein with a rod-shaped \u03b1-helical ectodomain that undergoes a dramatic \u2018switchblade-like\u2019 unfolding event at low pH (Skehel and Wiley, 2000).\n\nThe active involvement of LOK-C (Figure 6B, step 2) is shown by the finding that the isolated LOK kinase domain cannot phosphorylate ezrin under any condition, whereas it can phosphorylate the isolated ezrin-CTD. Moreover, in the presence of PIP2, the Km\u00a0of full-length LOK for ezrin is about 45 times lower than for the ezrin-CTD, indicating that the combined action of PIP2 and the FERM domain greatly enhances specificity. Consistent with the kinetics of PIP2-primed full-length ezrin, we found that LOK-C can bind with low affinity to both the isolated FERM and ezrin-CTD. Thus, PIP2 priming of ezrin loosens the association between the FERM and ezrin-CTD, allowing LOK-C to pry the domains apart, acting like a wedge, and thus permitting the kinase domain access to T567 in the ezrin-CTD. Indeed, using a cross-linking approach ex vivo, we have shown that LOK is recovered more efficiently with open ezrin rather than with closed ezrin-T567A that cannot be phosphorylated, suggesting that LOK has an affinity for sites masked in closed ezrin (Figure 6B, step 5) (Viswanatha et al., 2013). Moreover, in support of this model, we have shown that a chimeric protein consisting of the LOK kinase domain fused to the domain of EBP50 that binds to a site on the FERM domain normally masked in the closed protein, can recapitulate the PIP2-dependent phosphorylation of ezrin in vitro and also partially ex vivo.\n\nIn this study we reveal that LOK-C is a negative regulator of the kinase domain as it inhibits the activity of both LOK and LOK kinase domains toward ezrin or ezrin-CTD. Since LOK phosphorylates ezrin-CTD better than the isolated kinase domain does, binding the ezrin-CTD likely relieves the inhibition of full-length LOK by LOK-C in cis. LOK-C might have additional functional implications for kinase activity. The C-terminal domain of SLK shares 56% sequence identity with LOK-C and undergoes homodimerization, a process that enhances kinase activity in vitro and ex vivo (Delarosa et al., 2011; Sabourin and Rudnicki, 1999). Potential dimerization and autoactivation of LOK remains to be studied.\n\nThe specificity of kinases depends on local peptide consensus sequences, which in the case of ezrin phosphorylation by LOK involves the hydrophobic residue Y565 positioned -2 residues from T567 (Belkina et al., 2009). As is seen with some other serine/threonine kinases (Biondi and Nebreda, 2003; Sharrocks et al., 2000; Ubersax and Ferrell, 2007), we have also identified a distal docking site within residues 520\u2013530 in the ezrin-CTD, required for the efficient phosphorylation of T567 by either LOK or the isolated kinase domain (Figure 6B, steps 3\u20134), thereby adding another level of specificity to the kinase reaction. Binding of the kinase to this site may also relieve the inhibition imposed by LOK-C in the context of the full-length LOK. It is interesting to note that the residues equivalent to ezrin 520\u2013530 are relatively conserved, and Y565 and T567 perfectly conserved, in all ERM proteins, but not in the closely related merlin that also undergoes a similar FERM/merlin-CTD interaction, where the threonine equivalent to ezrin-T567 is not phosphorylated (Nguyen et al., 2001; Sher et al., 2012).\n\nTo maintain morphological polarity, there are multiple levels of selectivity that ensure the specific phosphorylation of ezrin by LOK. At the genetic level, cells lacking LOK exhibit greatly reduced ezrin phosphorylation (Figure 4\u2014figure supplement 1A). On the subcellular level, LOK-C targets the kinase to the apical membrane (Viswanatha et al., 2012). At the molecular level, we have uncovered the simultaneous requirement for PIP2 and LOK in an elaborate multiple-step mechanism to ensure specific and localized phosphorylation of ezrin. While substrate specificity of protein kinases has been the subject of many studies (Ubersax and Ferrell, 2007), fewer cases of conditional specificity have been examined in detail, with LOK-mediated ezrin phosphorylation being the first example of a specific requirement for a phosphoinositide binding to the substrate. As complex cell behaviors rely on the proper timing of phosphorylation events, such intimate co-regulation between substrates and kinases as described here may emerge as a general theme.\n\n## Materials and methods\n\n### Reagents\n\nIns(1,4,5)P3 (catalog# 502), as well as PI (catalog# 003), PI(3)P (catalog# 910), PI(4)P (catalog# 912), PI(4,5)P2 (catalog# 902), and PIP3 (catalog# 908) in their respective acidic forms with di-palmitoyl (diC16) fatty acyl side chains, were purchased from Cell Signals, Inc (Colombus, OH). Adenosine 5\u2032-triphosphate (ATP) disodium salt hydrate was obtained from Sigma-Aldrich (Saint Louis, MO). Ezrin mouse monoclonal antibody (DSHB Cat# CPTC-Ezrin-1 RRID:AB_2100318) was used at a dilution of 1:5000 for western blot and a rabbit polyclonal antibody raised against full-length human ezrin used at a dilution of 1:150 for immunofluorescence (Bretscher, 1989). Phospho-ezrin was detected using rabbit anti-pT567 antibody, raised against recombinant phosphopeptide CRDKYK(pT)LRQIR (Hanono et al., 2006; Matsui et al., 1999) at a dilution of 1:1000 for western blot. GFP monoclonal mouse antibody (Santa Cruz Biotechnology Cat# sc-9996 RRID:AB_627695) was\u00a0used at a dilution of 1:1000 for western blot. LOK (Bethyl Cat# A300-399A RRID:AB_386110) and SLK (Bethyl Cat# A300-499A RRID:AB_451034) antibodies were used at 1:1000 and 1:500 dilutions, respectively, for western blot. F-actin was stained with Alexa Fluor 568-conjugated phalloidin (Thermo Fisher Scientific Inc., Waltham, MA) at a dilution of 1:150 in immunofluorescence.\n\n### Plasmids and siRNAs\n\nHuman ezrin and ezrin FERM cDNAs have been described previously (Chambers and Bretscher, 2005; Reczek et al., 1997). Human LOK and LOK kinase domain (LOK-N) have been described previously (Viswanatha et al., 2012). GST-ezrin-CTD (474-585), ezrin-530\u2013585, and ezrin-555\u2013585 have been described previously (Gary and Bretscher, 1995). GST-ezrin-490\u2013585 and ezrin-520\u2013585 were cloned into the pGEX-3X plasmid (GE Healthcare Life Sciences, Pittsburg, PA) using BamHI and EcoRI restriction sites, using primers: ezrin-490\u2013585 forward 5\u2019-CGGTACGGATCCATGAGGGCGCAGAGCCCACG-3, ezrin-520\u2013585 forward 5\u2019-CGGTACGGATCCAGGCAGAGAAGAACGAGCG-3\u2019 and reverse 5\u2019-GTACCGGAATTCTTACAGGGCCTCGAACTCG-3\u2019. GST-ezrin-490-(\u0394520\u2013530)\u2212585 was generated by phosphorylating primer 5\u2019-GAGAAGCGCATCACTCTGCTGACGCTGAGC-3\u2019 followed by an one-round assembly PCR. In detail, 10 pmoles primer was phosphorylated with T4 Polynucleotide kinase for 1 hr at 37\u00b0C. An one-round assembly reaction was set up containing 50 ng pGEX-3X-ezrin-490\u2013585, 1 pmole phosphorylated primer, 10 mM dNTPs, 16 units Taq Ligase, 1\u00d7 Taq Ligase Buffer and 0.4 units Phusion High-Fidelity DNA Polymerase. All reagents were obtained from New England BioLabs Inc.. The following PCR parameters were used: 95\u00b0C for 5 min; 30\u00d7 (95\u00b0C for 1 min, 60\u00b0C for 1 min, 65\u00b0C for 7 min); 65\u00b0C for 7 min; hold at 12\u00b0C. The reaction was digested with DpnI prior to transformation into DH5\u03b1 chemically competent cells (Thermo Fisher Scientific Inc., Waltham, MA). The chimeric protein LOK-N-GFPFlag-EBP50t was generated by amplifying LOK-N-GFP-Flag with primers: forward 5\u2019- TTCACTGCGGCCGCATGGCTTTTGCCAATTTCCGCCGCATC-3\u2019 and reverse 5\u2019-CTTGTCATCGTCGTCCTTGTAGTCC-3\u2019, followed by amplifying EBP50t (residues 321\u2013358) using primers:\u00a0forward 5\u2019-GACGACGATGACAAGCTAGACTTCAACATCTCCCT-3\u2019 and reverse 5\u2019-CGCGCCGATCGTTAGAGGTTGCTGAAGAGTTCG-3\u2019. The amplicons were fused using overlapping extension PCR and cloned into pQCXIP plasmid (Clontech Laboratories, Inc., Mountain View, CA) using NotI and PvuI restriction sites. pESUMO-LOK-C was generated by amplifying LOK residues 499\u2013968 using\u00a0primers: forward 5\u2019-GCCGTCTCAAGGTGGTACCAATCTCTCC-3\u2019 and reverse 5\u2019-CGTCTAGATTAAGAAGCATCCGCAGAACTGTA-3\u2019 and cloning into pESUMO plasmid (LifeSensors Inc., Malvern, PA) using XbaI and BsmBI restriction sites. siRNA targeting SLK was Validated Silencer Select from Ambion with the following sequence: 5\u2019-GCAGAAACAGACUAUCGAAdTdT-3\u2019, as previously described (Viswanatha et al., 2012). siGL2, targeting GL2 luciferase 5\u2032-CGUACGCGGAAUACUUCGAdTdT-3\u2032 has been described previously (Hanono et al., 2006).\n\n### Protein expression and purification\n\nGST and 6\u00d7His-SUMO fusion proteins were expressed in Rosetta 2(DE3)pLysS (EMD Millipore, Billerica, MA). In detail, cells were expanded in Terrific broth with antibiotics at 37\u00b0C up to OD 1.0. Proteins were expressed at 28\u00b0C for 4 hr by adding 1 mM IPTG. GST fusions were lysed in Lysis buffer (20 mM Tris pH 7.4, 140 mM NaCl, 1 mM EGTA, 1 mM DTT, 0.1% Triton X-100), cleared and filtered prior to binding to Glutathione-agarose (Sigma-Aldrich, Saint Louis, MO) (5 mg fusion protein per mL resin). Upon extensive wash in Lysis buffer, fusion proteins were eluted in Elution buffer (20 mM Tris pH 7.4, 140 mM NaCl, 1 mM EGTA, 1 mM DTT, 10 mM Glutathione). SUMO fusion protein was lysed in Binding buffer (20 mM sodium phosphate, 300 mM NaCl, 20 mM Imidazole, pH 7.4), cleared and filtered prior to binding to Ni-NTA agarose (Qiagen, Hilden, Germany) for 2 hr. SUMO fusion protein was eluted with Elution buffer (20 mM sodium phosphate, 300 mM NaCl, 500 mM Imidazole, pH 7.4) and dialyzed against Binding buffer. 6xHis-SUMO tag was cleaved with 6\u00d7His-ULP1 protease in presence of 1 mM DTT and the tag was removed with Ni-NTA. Ezrin and ezrin FERM were expressed in M15 cells (Qiagen, Hilden, Germany) at 28\u00b0C for 4 hr, pellets were lysed in Buffer A (180 mM KH2PO4, 180 mM K2HPO4) and purified as previously described (Reczek et al., 1997). Coupling of ezrin FERM to cyanogen bromide (CNBr)-activated Sepharose (Sigma-Aldrich, Saint Louis, MO) was performed as previously described (Garbett and Bretscher, 2012). All samples were dialysed against Kinase\u00a0assay buffer. Non-immobilized proteins were concentrated using Vivaspin 20 MWCO 10 000 (GE Healthcare Bio-Sciences Corp, Pittsburg, PA).\n\n### In vitro kinase assay and inhibition assay\n\nUnilamellar liposomes were generated according the following recipes: DOPC (100 mol% DOPC), DOPC:PIP2 (90 mol% DOPC, 10% PIP2), DOPC:DOPS (70 mol% DOPC, 30 mol% DOPS), DOPC:DOPS:PIP2 (80 mol% DOPC, 10 mol% DOPS, 10 mol% PIP2), with 1 mol% DiR near-infrared dye (Avanti Polar Lipids, Alabaster, AL) to aid in visualization. Lipids were mixed, vacuum dried and hydrated in Kinase assay buffer (20 mM Tris pH 7.4, 140 mM NaCl, 1 mM EGTA, 1 mM DTT), followed by extrusion through 100 nm filters to generate liposomes. For micelles, phospholipids were vacuum dried and hydrated in Kinase assay buffer and sonicated in water bath prior to kinase assay. In general, IP3 or phospholipids were added at 90 \u00b5M final concentration or at a 1:5 (substrate:phospholipid) molar ratio, and at a maximum concentration of 180 \u00b5M due to limited solubility in Kinase\u00a0assay buffer. Unilamellar liposomes were used at a final concentration of 1 mM resulting in a final concentration of\u00a0~100 \u00b5M PIP2. Kinase assays were performed in Kinase assay buffer, 500 \u00b5M MgCl2 and 200 \u00b5M ATP at 37\u00b0C for 15 min. 10 nM of purified kinase was used to phosphorylate 18 \u00b5M of ezrin, GST-ezrin-CTD or GST-ezin-CTD truncations. In the case of GST-ezrin-CTD+FERM complex, 18 \u00b5M GST-ezrin-CTD was pre-incubated with 18 \u00b5M FERM for 10 min on ice prior to kinase assay. In the inhibition assay, purified LOK-C was added to individual reaction at concentrations of 0\u201365 \u00b5M. 20% of each kinase reaction was analyzed by SDS-PAGE and immunoblotting.\n\n### Enzyme kinetics\n\nKinetic assays were initiated by the addition of 500 \u00b5M MgCl2 and 200 \u00b5M ATP supplemented with 0.1 \u00b5L of 3000 Ci/mmol \u03b3-32P ATP (PerkinElmer Inc., Waltham, MA) and incubated at 37\u00b0C for 15 min. Reactions were stopped by the addition of 12.5 \u00b5l of 10% phosphoric acid and processed as previously\u00a0described (Hastie et al., 2006). Briefly, samples were spotted on P81 cellulose paper (GE Healthcare, Pittsburg, PA) and washed three times for 10 min in 75 mM phosphoric acid to remove unincorporated \u03b3-32P ATP. Filter papers were allowed to dry and then placed into scintillation vials containing 2.5 mL of Ecoscint fluid (National Diagnostics, Atlanta, GA). 32P incorporation was measured using PerkinElmer Liquid Scintillation Counter, Tri-Carb 2810TR (PerkinElmer Inc., Waltham, MA).\n\n### Equilibrium binding assay\n\n200 nM of purified LOK-C was diluted in 20 mM Tris pH 7.4, 150 NaCl and incubated with either 0\u201315 \u00b5M GST-ezrin-CTD immobilized on glutathione agarose or 0\u201318 \u00b5M CNBr-FERM for 15 min at RT. Samples were centrifuged at 5000\u00d7g for 10 min, supernatants corresponding to 15% of total volume were removed, mixed with sample buffer and loaded on a 10% acrylamide gel for SDS-PAGE. Gels were stained with Coomassie blue and destained in 50% methanol and 10% acetic acid. Densitometric quantification was performed in ImageStudio 5.2.5 (LI-COR Biosciences, Lincoln, NB) by quantifying Coomassie signals after background correction.\n\n### Western blotting and densitometry\n\nWestern blots were performed as described (Hanono et al., 2006). For analysis of endogenous ezrin phosphorylation, cells were rapidly boiled in 5X reducing sample buffer in kinase buffer, diluted 3-fold, vortexed vigorously, and cleared by centrifugation prior to SDS-PAGE. For densitometric analysis of phospho-ezrin in relation to total ezrin, mouse monoclonal ezrin antibody and rabbit polyclonal pT567 antibody were detected with infrared fluorescent secondary antibodies donkey anti-mouse Alexa Fluor 647 (Thermo Fisher Scientific Cat# A-31571 RRID:AB_162542) or IRDye 800CW goat anti-rabbit (LI-COR Biosciences Cat# 827\u201308365 RRID:AB_10796098). Membranes were imaged using Odyssey CLx imager (Odyssey CLx , RRID:SCR_014579). Densitometric quantification was performed in ImageStudio 5.2.5 (LI-COR Biosciences, Lincoln, NB) by measuring pT567 and total ezrin after background correction. Total GST-ezrin-CTD was quantified from Coomassie stains. For SLK, peroxidase conjugated goat anti-rabbit secondary antibody (MP Biochemicals, Santa Ana, CA) was used and developed using ECL western blotting reagent (GE Healthcare, Pittsburg, PA).\n\n### Cell culture and transfection\n\nJEG-3 cells (passage 8\u201315, STR profiled, mycoplasma negative, ATCC Cat# HTB-36, RRID:CVCL_0363) were maintained in a 5% CO2 humidified atmosphere at 37\u00b0C in MEM (Life Technologies, Waltham, MA) with 10% FBS (Life Technologies, Waltham, MA) and 1X GlutaMAX (Life Technologies, Waltham, MA). Phoenix-Ampho retrovirus producer cells (passage 10\u201320, STR profiled, mycoplasma negative, ATCC Cat# CRL-3213, RRID:CVCL_H716) were maintained in DMEM (Life Technologies, Waltham, MA) with 10% FBS. HEK293\u00a0TN cells (passage 10\u201320, STR profiled, mycoplasma negative, ATCC Cat# CRL-1573, RRID:CVCL_0045) used for Lentivirus production were maintained in DMEM (Life Technologies, Waltham, MA) with 10% FBS and 1 mM sodium pyruvate. Transient transfections used polyethylenimine (PEI) reagent (PolyPlus, Strasbourg, France) by forming DNA-PEI complexes at a ratio of 2.5:1 and 0.3 \u00b5g DNA/cm2 of 30\u201350% confluent JEG-3 cells or 70% confluent Phoenix-Ampho retrovirus producer cells. Transfected cells were processed 24 hr after transfection. Selection was performed with 2 \u00b5g/mL puromycin (Sigma-Aldrich, Saint Louis, MO). All siRNAs were transfected at 30 nM into\u00a0~25% confluent JEG-3 cells using Lipofectamine RNAiMAX (Invitrogen, Carlsbad, CA) according to the manufacturer\u2019s protocol. Cells were processed 48 hr after transfection. Transient transfection in knock-down cells was performed 48 hr after transfection with siRNA and cells were processed after 24 hr.\n\n### Gene deletion using CRISPR/Cas9 system\n\nDeletion of LOK gene in JEG-3 cells was achieved using the sgRNA pair: forward 5\u2019-CACCGGTAAGACTCACCCAGCATGA-3\u2019 and reverse 5\u2019-TTTGTCATGCTGGGTGAGTCTTACG-3\u2019, targeting exon 3 (Shalem et al., 2014). The oligonucleotides were phosphorylated, annealed and cloned into pLentiCRISPR plasmid using a BsmBI restriction site (Shalem et al., 2014). Virus vectors were produced in HEK293\u00a0TN cells by co-transfection with psPAX2 (a gift from Didier Trono [Addgene plasmid # 12260]) and pCMV-VSV-G (Stewart et al., 2003)\u00a0using Lipofectamine 2000 (Thermo Fisher Scientific Inc., Waltham, MA). Collected viral vectors were used to infect JEG-3 cells in presence of 8 \u00b5g/mL polybrene. JEG-3 cells were maintained under 2 \u00b5g/mL puromycin selection and subjected to three rounds of recloning for isolation of LOK knockout monoclones.\n\n### Immunofluorescence and image analysis\n\nJEG-3 cells seeded on coverslips were fixed in 3.7% formaldehyde/PBS for 15 min at RT, washed with PBS and permeabilized with 0.1% Triton X-100/PBS for 5 min, washed, and blocked with 5% FBS/PBS for 20 min at RT. Cells were stained for 1 hr at RT with primary antibody in 5% FBS/PBS. Secondary antibody and Alexa Fluor-conjugated phalloidin staining was performed for 1 hr at RT. Cells were washed with PBS and mounted using Vectashield reagent (Vector Laboratories Cat# H-1000 RRID:AB_2336789) and imaged using a CSU-X spinning disk microscope (Intelligent Imaging Innovations, Santa Monica, CA) with spherical aberration correction device, 100\u00d7/1.46 numerical aperture (NA) objective on an inverted microscope (DMI6000B), and an HQ2 charge-coupled device (CCD) camera (Photometrics, Tucson, AZ) using SlideBook 6 (Intelligent Imaging Innovations, Denver, CO). Maximum intensity projections were assembled in SlideBook 6.\n\n### Scoring the apical surface phenotype of JEG-3 cells\n\nThe presence of microvilli on apical surfaces of JEG-3 cells was scored as described previously (Hanono et al., 2006). Briefly, JEG-3 cells were stained for ezrin, F-actin and the expressed GFP fusion protein to indicate the apical membrane phenotype. Twenty cells were counted for each experiment and scored as having normal microvilli or no microvilli. Kinase-suppressed JEG-3 cells were stained for ezrin and F-actin. Twenty cells were counted and scored for each condition as described above.\n\n### Statistics\n\nMichaelis-Menten kinetics were fitted in GraphPad Prism (Graphpad Prism, RRID:SCR_002798) using the following equation,\n\n$$\nV=(Vmax\u2219[S])/(Km+[S])\n$$\n\nThe turnover number, kcat, was calculated using the following equation,\n\n$$\nV=(Et\u2219kcat\u2219[S])/(Km+[S])\n$$\n\nFor calculation of IC50, data were normalized to LOK/ezrin+PIP2 or LOK/ezrin-CTD data sets in which phosphorylation signal at 0 \u00b5M LOK-C, defined as \u2018Top\u2019, was set to 100%. Data were fitted in GraphPad Prism using the four parameter logistic equation,\n\n$$\npT567/Total=Bottom+(Top\u2212Bottom)/(1+10^{(LogIC50\u2212[I])\u2219HillSlope})\n$$\n\nData are represented as means \u00b1 standard error (S.E.) from three independent experiments. Two-way ANOVA followed by Tukey\u2019s multiple comparisons test was performed using GraphPad Prism.\n",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f83425f8-a850-438f-87e2-a80aa465e106",
+      "submission_id": "c12ce761-401b-4cac-8369-58c256d29f84",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Pekka Lappalainen, University of Helsinki , Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22759.020](https://doi.org/10.7554/eLife.22759.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Ezrin activation by LOK phosphorylation involves a PIP2-dependent wedge mechanism\" for consideration by eLife. Your article has been favorably evaluated by Jonathan Cooper (Senior Editor) and three reviewers, one of whom, Pekka Lappalainen (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nEzrin/radixin/moesin (ERM) family proteins function as linkers between the cortical actin cytoskeleton and plasma membrane. They exist in an autoinhibited conformation that is released by interaction of the N-terminal FERM domain with plasma membrane phosphoinositides, and subsequent phosphorylation at a threonine residue, which in an autoinhibited conformation is buried between the FERM domain and the C-terminal actin-binding domain. Here, Pelaseyed et al. examined the mechanisms by which phosphoinositide-interactions control ezrin phosphorylation by the LOK kinase. They demonstrate that the C-terminal domain of LOK serves as a wedge that binds between the FERM domain and the C-terminal actin-binding domain in a PIP2-primed ezrin to allow the phosphorylation of ezrin by the N-terminal kinase domain of LOK. Furthermore, the authors provide evidence that the central a-helical domain of ezrin functions as a 'spring', which helps to loosen binding between the C-terminal and FERM domains upon interaction with PIP2.\n\nAll three reviewers stated that this is a very important piece of work as it provides, for the first time, solid evidence that ezrin phosphorylation takes place only if it is bound to PIP2, and elucidates the underlying molecular mechanism. This has important implications for our understanding on how ezrin is activated at particular sites of the cell, including microvilli. However, a few additional experiments are required to strengthen the main conclusions presented and to confirm the in vivo relevance of the findings.\n\nEssential revisions:\n\n1) The majority of the in vitro experiments (with the exception of the ones presented in Figure 1E) were apparently performed with PIP2-micelles, which display very different lipid composition and geometry compared to the plasma membrane. Thus, at least the most critical experiments (e.g. the ones presented in Figure 1F and G and Figure 2) should be repeated by using unilamellar vesicles with a more physiological lipid composition. The authors should also discuss, how important the micellar/proper bilayer structure of PIP2 is for ezrin activation, because soluble IP3 does not apparently activate ezrin?\n\n2) The role of central a-helical region as a 'spring' is interesting. Is there any evidence in the literature to support this notion? To confirm the in vivo relevance of this interesting observation, the authors should express ezrin(del)a1 and ezrin(del)a7 proteins (used in Figure 2) in cells, and test whether they fail to undergo PIP2-dependent phosphorylation and whether they still properly localize to the plasma membrane/microvilli.\n\n3) One missing piece of information related to the model (presented in Figure 6B) is how LOK itself is localized to the plasma membrane. The same laboratory reported that this localization is governed by the C-terminus of LOK (PMID: 23209304). It is therefore very tempting to postulate that ezrin could itself regulate the localization of its own kinase by binding to the C-terminal domain of LOK. Did the authors test this hypothesis in cells depleted for ERM proteins?\n",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cb794132-407b-4dec-b445-21485ab65565",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C1",
+      "claim": "Restriction of microvilli to the apical aspect of epithelial cells requires the localized activation of the membrane-F-actin linking protein ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work has shown that restriction of microvilli to the apical aspect of epithelial cells requires the localized activation of the membrane-F-actin linking protein ezrin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "39955a98-0fc0-4c7a-8dfc-d00202df7358",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C2",
+      "claim": "Binding of PIP2 to ezrin induces a conformational change permitting the insertion of the LOK C-terminal domain to wedge apart the membrane and F-actin-binding domains of ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of PIP2 to ezrin induces a conformational change permitting the insertion of the LOK C-terminal domain to wedge apart the membrane and F-actin-binding domains of ezrin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including kinase assays and binding studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "af655f86-248f-4fe0-be5e-2224e5d39ee8",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C3",
+      "claim": "The N-terminal LOK kinase domain can access a site 40 residues distal from the consensus sequence that collectively direct phosphorylation of the appropriate threonine residue.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal LOK kinase domain can then access a site 40 residues distal from the consensus sequence that collectively direct phosphorylation of the appropriate threonine residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using N-terminal truncations of ezrin-CTD.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "02f2c656-14f1-4c0d-af7e-4b5e89dd6a53",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C4",
+      "claim": "Ezrin is only phosphorylated at the plasma membrane with high specificity by the apically localized kinase LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this elaborate mechanism ensures that ezrin is only phosphorylated at the plasma membrane, and with high specificity by the apically localized kinase LOK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2b10d956-8b0e-46a0-b1a1-0d9229b00cc0",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C5",
+      "claim": "Ezrin is the founding member of the closely-related ezrin/radixin/moesin (ERM) protein family that serves as a regulated membrane-F-actin linking protein.",
+      "claim_type": "EXPLICIT",
+      "source": "A critical component of epithelial microvilli is ezrin, the founding member of the closely-related ezrin/radixin/moesin (ERM) protein family, that serves as a regulated membrane-F-actin linking protein (Bretscher, 1983, 1989; Fehon et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "46d46aa1-8e72-4851-b56f-ac0205d9d9cb",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C6",
+      "claim": "Genetic knockout of ezrin in the mouse results in enterocytes with shorter and disorganized microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic knockout of ezrin in the mouse results in enterocytes with shorter and disorganized microvilli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "da60465e-175b-49df-8689-3a07d0bade5a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C7",
+      "claim": "Loss of the single ERM protein in the fruit fly is lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fruit fly, loss of the single ERM protein is lethal, but when selectively knocked out in photoreceptor cells, microvilli are lost (Karagiosis and Ready, 2004; Saotome et al., 2004; Speck et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "37cb514c-8caa-49bb-b622-e1e83991f7af",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C8",
+      "claim": "When the single ERM protein is selectively knocked out in photoreceptor cells of the fruit fly, microvilli are lost.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fruit fly, loss of the single ERM protein is lethal, but when selectively knocked out in photoreceptor cells, microvilli are lost (Karagiosis and Ready, 2004; Saotome et al., 2004; Speck et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f8fbe760-85d4-48af-9659-76a7339774c6",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C9",
+      "claim": "ERM proteins provide a critical function in polarized morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ERM proteins provide a critical function in polarized morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the genetic knockout data cited in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "0e84f576-10c3-404e-b725-e96f2abeff85",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C10",
+      "claim": "ERM proteins are regulated by a reversible head-to-tail interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "ERM proteins are regulated by a reversible head-to-tail interaction (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by established scientific knowledge and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8c8b6266-16a4-44bd-b9a2-16e11196f390",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C11",
+      "claim": "Ezrin contains an N-terminal FERM domain that binds the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all ERMs, ezrin contains an N-terminal FERM domain that binds the plasma membrane and a C-terminal F-actin-binding domain (ezrin-CTD) that can attach to the underlying actin filaments that make up the core of microvilli (Gould et al., 1989; Turunen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "3e075ed2-d7f1-448b-9cc9-a385e0ad5989",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C12",
+      "claim": "Ezrin contains a C-terminal F-actin-binding domain (ezrin-CTD) that can attach to the underlying actin filaments that make up the core of microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "Like all ERMs, ezrin contains an N-terminal FERM domain that binds the plasma membrane and a C-terminal F-actin-binding domain (ezrin-CTD) that can attach to the underlying actin filaments that make up the core of microvilli (Gould et al., 1989; Turunen et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "57a42057-6e37-466a-bb4d-03a5842135eb",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C13",
+      "claim": "In the closed inactive state of ezrin, the FERM domain is tightly associated with the ~80 residues of ezrin-CTD, masking the membrane association and F-actin-binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In the closed inactive state, the FERM domain is tightly associated with the ~80 residues of ezrin-CTD, masking the membrane association and F-actin-binding sites (Gary and Bretscher, 1995; Pearson et al., 2000; Reczek and Bretscher, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f205bcc7-2c34-4b55-9531-fbf14e00e002",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C14",
+      "claim": "The FERM domain and ezrin-CTD are linked by a ~150 residue \u03b1-helical region that folds into an anti-parallel coiled coil hairpin in the closed structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Linking these two regions is a ~150 residue \u03b1-helical region that folds into an anti-parallel coiled coil hairpin in the closed structure (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8289ec9f-0a97-4a17-9c42-1509d98e09b3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C15",
+      "claim": "In the open structure of ezrin, the unmasked FERM domain binds the plasma membrane, the unmasked C-terminal domain binds F-actin, and the \u03b1-helical region presumably unravels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the open structure, the unmasked FERM domain binds the plasma membrane, the unmasked C-terminal domain binds F-actin, and the \u03b1-helical region presumably unravels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is partially speculative regarding the unraveling of the \u03b1-helical region.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "fe3ee953-b61f-43c7-b8fd-3a4315541aee",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C16",
+      "claim": "The unmasked FERM domain can bind many proteins, including the NHERF family adaptor proteins EBP50 and E3KARP, and the trans-membrane proteins CD44, ICAMs, and \u03b2-dystroglycan.",
+      "claim_type": "EXPLICIT",
+      "source": "The unmasked FERM domain can bind many proteins, including the NHERF family adaptor proteins EBP50 and E3KARP, and the trans-membrane proteins CD44, ICAMs, and \u03b2-dystroglycan (Mori et al., 2008; Reczek et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "9f4b61b0-857a-42cc-b86a-31f38dfd5546",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C17",
+      "claim": "10 nM LOK phosphorylates 18 \u00b5M ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assay showing that 10 nM LOK phosphorylates 18 \u00b5M ezrin-CTD. Data are presented as mean \u00b1 SE, n = 3, two-way ANOVA (See also Figure 1\u2014source data 1), ****p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f247ef8e-b51f-4f33-a596-41f45900f2a0",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C18",
+      "claim": "LOK phosphorylates full-length ezrin in the presence of 90 \u00b5M of PIP2 micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assay showing LOK-mediated phosphorylation of full-length ezrin in presence of 90 \u00b5M of PIP2 micelles. Data are presented as mean \u00b1 SE, n = 3, two-way ANOVA (See also Figure 1\u2014figure supplement 1 and Figure 1\u2014source data 1), ****p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5923fd9f-61ea-4eda-a164-3cdbed9db641",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C19",
+      "claim": "18 \u00b5M ezrin is specifically primed by 90 \u00b5M of PIP2 micelles and not by IP3 or other phospholipids at 90 \u00b5M concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assay showing that 18 \u00b5M ezrin is specifically primed by 90 \u00b5M of PIP2 micelles and not by IP3 or other phospholipids at 90 \u00b5M concentrations. Blots are derived from same membrane. Data are presented as mean \u00b1 SE, n = 3, two-way ANOVA (See also Figure 1\u2014source data 1), ****p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "dec07484-a2bd-416e-8bda-c80d13079a16",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C20",
+      "claim": "Unilamellar liposomes DOPC:PIP2 (90 mol% DOPC, 10% PIP2) or DOPC:DOPS:PIP2 (80 mol% DOPC, 10 mol% DOPS, 10 mol% PIP2) promote phosphorylation of 18 \u00b5M ezrin by 10 nM LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assay showing that unilamellar liposomes DOPC:PIP2 (90 mol% DOPC, 10% PIP2) or DOPC:DOPS:PIP2 (80 mol% DOPC, 10 mol% DOPS, 10 mol% PIP2) promote phosphorylation of 18 \u00b5M ezrin by 10 nM LOK, whereas DOPC (100 mol% DOPC) or DOPC:DOPS (70 mol% DOPC, 30 mol% DOPS) fail to promote LOK-mediated ezrin phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "181d752d-fbbf-410f-862a-c59eecc17104",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C21",
+      "claim": "DOPC (100 mol% DOPC) or DOPC:DOPS (70 mol% DOPC, 30 mol% DOPS) fail to promote LOK-mediated ezrin phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro kinase assay showing that unilamellar liposomes DOPC:PIP2 (90 mol% DOPC, 10% PIP2) or DOPC:DOPS:PIP2 (80 mol% DOPC, 10 mol% DOPS, 10 mol% PIP2) promote phosphorylation of 18 \u00b5M ezrin by 10 nM LOK, whereas DOPC (100 mol% DOPC) or DOPC:DOPS (70 mol% DOPC, 30 mol% DOPS) fail to promote LOK-mediated ezrin phosphorylation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "45c63ab2-ada7-48f5-843c-a04831749c0b",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C22",
+      "claim": "10 nM LOK-N phosphorylates 18 \u00b5M ezrin-CTD but not full-length ezrin in presence of 90 \u00b5M PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "10 nM LOK-N phosphorylates 18 \u00b5M ezrin-CTD but not full-length ezrin in presence of 90 \u00b5M PIP2. Data are presented as mean \u00b1 SE, n = 3, two-way ANOVA (See also Figure 1\u2014source data 1), ***p<0.0002, ****p<0.0001.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4258aeae-ddbf-4bf6-9857-a7a4817329a6",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C23",
+      "claim": "The transition between closed and open ERMs requires phosphorylation of a specific threonine residue (T567 in ezrin; T564 in radixin and T558 in moesin).",
+      "claim_type": "EXPLICIT",
+      "source": "The transition between closed and open ERMs requires phosphorylation of a specific threonine residue (T567 in ezrin; T564 in radixin and T558 in moesin) (Nakamura et al., 1995; Simons et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "31f3d2ba-465d-4e17-8b8d-b5769b64fe80",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C24",
+      "claim": "In vivo phosphorylation of ezrin requires binding of the FERM domain to the plasma membrane phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, in vivo phosphorylation was found to require binding of the FERM domain to the plasma membrane phospholipid phosphatidylinositol 4,5-bisphosphate (PIP2) (Fievet et al., 2004; Hao et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f96ba4fa-4f6c-4f20-9ad2-fa273cfce89e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C25",
+      "claim": "PIP2 binding to FERM directly changes the conformation so as to partially release the C-terminal domain to make the phosphorylation site accessible.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural analysis of the radixin FERM domain in the presence or absence of IP3 led to the suggestion that PIP2 binding to FERM directly changes the conformation so as to partially release the C-terminal domain to make the phosphorylation site accessible (Hamada et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior structural work and represents a hypothesis from that work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f7196547-b708-467a-a9c6-c2d193affa10",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C26",
+      "claim": "In the closed configuration of ezrin, the T567 that becomes phosphorylated is buried within the interface between the FERM and the ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this model, in the closed configuration, the T567 that becomes phosphorylated is buried within the interface between the FERM and the ezrin-CTD (Li et al., 2007; Pearson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ca91ccb1-5fef-47f4-bafb-7557841087c4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C27",
+      "claim": "At steady state, about one half of the ezrin in an epithelial cell is phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "At steady state, about one half of the ezrin in an epithelial cell is phosphorylated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "88e75fde-d4f8-4151-b6f2-d7e5754832a2",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C28",
+      "claim": "In vivo phosphorylation of ezrin turns over on the time-scale of minutes, similar to the lifetime of microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in vivo phosphorylation of ezrin turns over on the time-scale of minutes, similar to the lifetime of microvilli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2702b6dd-3799-4967-b014-885d6a99c864",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C29",
+      "claim": "A dynamic system of local ezrin activation by phosphorylation coupled with delocalized deactivation by dephosphorylation is a morphogenetic principle.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations strongly suggest a morphogenetic principle: a dynamic system of local ezrin activation by phosphorylation coupled with delocalized deactivation by dephosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observations about ezrin phosphorylation dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "58fe5f11-108d-49af-809f-06230a780edc",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C30",
+      "claim": "LOK and its close paralog Ste20-like-kinase (SLK) are the major ezrin kinases in epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Lymphocyte-oriented-kinase (LOK) and its close paralog Ste20-like-kinase (SLK) were then found to be the major ezrin kinases in epithelial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "41f8879a-bcee-470f-abdd-aeedbe660ff1",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C31",
+      "claim": "LOK and SLK are currently the only kinases known to selectively localize to the apical membrane of epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, LOK and SLK are currently the only kinases known to selectively localize to the apical membrane of epithelial cells (Viswanatha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2648d3b9-d87f-4170-a439-d4eada6f614f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C32",
+      "claim": "LOK was previously identified as the kinase that phosphorylates ezrin in lymphocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "LOK had previously been identified as the kinase that phosphorylates ezrin in lymphocytes (Belkina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "75029a54-e763-41a7-8c62-db9d725be8ba",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C33",
+      "claim": "LOK and SLK belong to the germinal center-like kinase (GCK) -V subfamily of kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "LOK and SLK belong to the germinal center-like kinase (GCK) -V subfamily of kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4df8f553-fae5-49b7-8f46-336a2040a2e4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C34",
+      "claim": "LOK and SLK consist of a conserved N-terminal kinase domain, a less conserved intermediate region, and a moderately conserved C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "They consist of a conserved N-terminal kinase domain, a less conserved intermediate region, and a moderately conserved C-terminal domain (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the domain structure shown in Figure 1A and represents established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f88ef2ab-56d8-47e0-a667-2124c686e1b3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C35",
+      "claim": "A single ortholog of LOK/SLK exists in Drosophila melanogaster (Slik) and Caenorhabditis elegans (GCK4).",
+      "claim_type": "EXPLICIT",
+      "source": "A single ortholog exists in Drosophila melanogaster (Slik) and Caenorhabditis elegans (GCK4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "606eb496-70c9-4f5f-b5b3-5949e41238c4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C36",
+      "claim": "In Drosophila, Slik has been identified as the sole kinase that phosphorylates the single ERM ortholog, moesin.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fly, Slik has been identified as the sole kinase that phosphorylates the single ERM ortholog, moesin (Carreno et al., 2008; Hipfner et al., 2004; Kunda et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2c2fa575-de1b-4b95-9398-6c754b8da504",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C37",
+      "claim": "LOK is highly selective for members of the ERM family, as the kinase's target sequences requires a conserved tyrosine at position \u22122 relative to the substrate threonine.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable that LOK is highly selective for members of the ERM family, as the kinase's target sequences requires a conserved tyrosine at position \u22122 relative to the substrate threonine (Belkina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ad324f24-985c-4746-ae08-ff6248ba2335",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C38",
+      "claim": "This is the first example of a protein that has to bind a phosphoinositide lipid to serve as a kinase substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "As far as we are aware, this is the first example of a protein that has to bind a phosphoinositide lipid to serve as a kinase substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "26b39996-278f-4d3f-811f-3d465c894859",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C39",
+      "claim": "PIP2 binding to the ezrin FERM domain transmits a conformational change through the \u03b1-helical region to weaken the FERM/ezrin-CTD association.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that PIP2 binding to the ezrin FERM domain transmits a conformational change through the \u03b1-helical region to weaken the FERM/ezrin-CTD association.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "97f0183e-793e-4634-8c88-0bd8eb3a42ad",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C40",
+      "claim": "PIP2-priming of ezrin permits the LOK C-terminal domain to act as a wedge between the FERM and ezrin-CTD to allow the kinase domain to gain access and phosphorylate T567.",
+      "claim_type": "EXPLICIT",
+      "source": "PIP2-priming of ezrin permits the LOK C-terminal domain to act as a wedge between the FERM and ezrin-CTD to allow the kinase domain to gain access and phosphorylate T567.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4fcc3bd0-0b08-4a16-b232-35ccf12b5653",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C41",
+      "claim": "A chimeric protein can recapitulate the activity of LOK in vitro and ex vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, we design a chimeric protein and show that it can recapitulate the activity of LOK in vitro and ex vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "54baae6c-62c6-42a4-a1da-5a1b9559e1c6",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C42",
+      "claim": "A distal site in ezrin about 40 residues from T567 is necessary for phosphorylation by the kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we define a distal site in ezrin about 40 residues from T567 that is also necessary for phosphorylation by the kinase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using truncated ezrin constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "68c32880-4aea-4555-a90c-a4114f3ab24d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C43",
+      "claim": "The LOK C-terminal domain negatively regulates the kinase activity of LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to being required for ezrin phosphorylation, the LOK C-terminal domain negatively regulates the kinase activity of LOK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing inhibition by LOK-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f1c14cea-2159-451d-92e4-44aebcc1c475",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C44",
+      "claim": "The PIP2-dependent mechanism of ezrin phosphorylation by LOK involves several distinct steps, thereby ensuring the specificity of the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PIP2-dependent mechanism of ezrin phosphorylation by LOK involves several distinct steps, thereby ensuring the specificity of the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f69d186f-db56-47eb-9b77-e87bc7657b20",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C45",
+      "claim": "LOK failed to phosphorylate full-length ezrin in the absence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "LOK phosphorylated the ezrin-CTD as detected using pT567 antibody (Figure 1B), but failed to phosphorylate full-length ezrin (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "cdbd31b1-9896-4f9d-8cf7-24faf0f9eed3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C46",
+      "claim": "PIP2 did not influence phosphorylation of the ezrin-CTD by LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of PIP2 micelles, LOK was readily able to phosphorylate ezrin (Figure 1C), but PIP2 did not influence phosphorylation of the ezrin-CTD by LOK (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "7e8acd1a-5eaf-4868-872b-395421a1c97c",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C47",
+      "claim": "The requirement for PIP2 in ezrin phosphorylation is specific, as other phosphoinositides, or soluble IP3, failed to substitute for PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement for PIP2 was specific, as other phosphoinositides, or soluble IP3, failed to substitute for PIP2 in phosphorylation of ezrin (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "45db5660-cd5b-471c-8c6d-625ed9da7232",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C48",
+      "claim": "The requirement of PIP2 for ezrin phosphorylation is not simply a negative charge effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement of PIP2 for ezrin phosphorylation was not simply a negative charge effect as PIP2-dependency was reproduced in 100-nm-sized synthetic unilamellar liposomes of DOPC or DOPC:DOPS containing 10 mol% PIP2, which represent a more physiological system (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "33529218-c91e-479c-829e-e7521bfb32a7",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C49",
+      "claim": "Both full-length LOK and LOK-N can phosphorylate ezrin-CTD, although the isolated kinase domain was less active.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, both full-length LOK and LOK-N can phosphorylate ezrin-CTD, although the isolated kinase domain was less active (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f59b8bdc-e072-459a-947c-1da2c4971265",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C50",
+      "claim": "LOK-N was unable to phosphorylate ezrin, even in the presence of PIP2 micelles and unilamellar DOPC:DOPS liposomes containing 10 mol% PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas intact LOK phosphorylated ezrin in a PIP2-dependent manner, LOK-N was unable to phosphorylate ezrin, even in the presence of PIP2 micelles and unilamellar DOPC:DOPS liposomes containing 10 mol% PIP2 (Figure 1G and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4762a1c2-1958-4090-8944-454ff5820c0c",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C51",
+      "claim": "In vitro phosphorylation of full-length ezrin requires both PIP2 and the C-terminal domain of LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that in vitro phosphorylation of full-length ezrin requires both PIP2 and the C-terminal domain of LOK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "e4f3dbe4-dbef-457b-b66b-8d2944865acf",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C52",
+      "claim": "The FERM domain of ezrin is linked to the ezrin-CTD by a ~150 residue \u03b1-helical coiled coil hairpin, as represented in the structure of the close homolog Sfmoesin.",
+      "claim_type": "EXPLICIT",
+      "source": "The FERM domain of ezrin is linked to the ezrin-CTD by a ~150 residue \u03b1-helical coiled coil hairpin, as represented in the structure of the close homolog Sfmoesin (Figure 2A) (Li et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior structural work and illustrated in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "e18496bb-5ecf-4a1e-bd88-ee45750cd113",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C53",
+      "claim": "The \u03b1-helical region of ezrin consists of three \u03b1-helices that connect the FERM domain to the ezrin-CTD via an antiparallel coiled coil.",
+      "claim_type": "EXPLICIT",
+      "source": "This region consists of three \u03b1-helices that connect the FERM domain to the ezrin-CTD via an antiparallel coiled coil (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ed6ad482-a201-4d51-9d88-0b475c1a6245",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C54",
+      "claim": "In the absence of the \u03b1-helical region, the individual FERM and ezrin-CTD domains bind avidly together.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the \u03b1-helical region, the individual FERM and ezrin-CTD domains bind avidly together (Pearson et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2d4dbce5-634f-41f9-97aa-fbc317eb3058",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C55",
+      "claim": "A complex of isolated GST-ezrin-CTD and FERM could not be phosphorylated by LOK or LOK-N in the presence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, while GST-ezrin-CTD was phosphorylated by LOK and LOK-N, we found that the isolated GST-ezrin-CTD+FERM complex could not be phosphorylated by LOK or LOK-N in the presence of PIP2 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "e27654ee-fedc-4703-9ad7-44b0bf16193a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C56",
+      "claim": "LOK failed to phosphorylate GST-ezrin-CTD in complex with FERM in presence of DOPC:DOPS:PIP2 unilamellar liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, LOK failed to phosphorylate GST-ezrin-CTD in complex with FERM in presence of DOPC:DOPS:PIP2 unilamellar liposomes (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "e8153311-d7fc-4e75-bbeb-702a5d81179b",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C57",
+      "claim": "The central \u03b1-helical region is required for translating PIP2-binding to the FERM domain into a weakened association between FERM and ezrin-CTD domains, thus allowing in vitro phosphorylation of ezrin by LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the central \u03b1-helical region is required for translating PIP2-binding to the FERM domain into a weakened association between FERM and ezrin-CTD domains, thus allowing in vitro phosphorylation of ezrin by LOK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8e15f608-ad12-42c3-9273-75bfee109480",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C58",
+      "claim": "Full-length LOK and LOK-N had about the same affinity for the ezrin-CTD (Km 252 and 176 \u00b5M, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length LOK and just the kinase domain, LOK-N, had about the same affinity for the ezrin-CTD (Km 252 and 176 \u00b5M, respectively), but the maximal turnover rate for LOK-N was lower (kcat of 19.8 min\u22121 for LOK versus 1.4 min\u22121 for LOK-N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "d0f25c78-ac07-4774-b210-f155eab7de26",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C59",
+      "claim": "The maximal turnover rate for LOK-N was lower than for LOK (kcat of 19.8 min\u22121 for LOK versus 1.4 min\u22121 for LOK-N).",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length LOK and just the kinase domain, LOK-N, had about the same affinity for the ezrin-CTD (Km 252 and 176 \u00b5M, respectively), but the maximal turnover rate for LOK-N was lower (kcat of 19.8 min\u22121 for LOK versus 1.4 min\u22121 for LOK-N).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "77c2c511-dd66-46a3-8495-4001a0562ba1",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C60",
+      "claim": "In the presence of PIP2, LOK phosphorylated ezrin with a Km of 5 \u00b5M and displayed a lower maximal turnover (kcat of 8.5 min\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of PIP2, LOK phosphorylated ezrin with a Km of 5 \u00b5M and displayed a lower maximal turnover (kcat of 8.5 min\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "68822cad-578f-4bbd-9d95-8ede5899d2c4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C61",
+      "claim": "In the absence of PIP2, LOK hardly phosphorylated ezrin, and the Km was of the order of 800 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of PIP2, LOK hardly phosphorylated ezrin, and the Km was difficult to measure, but was of the order of 800 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "34020976-1fc3-4ea0-8caf-2f2006608889",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C62",
+      "claim": "PIP2 enhances the affinity of LOK for ezrin by about 160 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PIP2 enhances the affinity of LOK for ezrin by about 160 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinetic data comparing Km values with and without PIP2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ebeacd9e-bb47-4371-ab4f-dda85a852132",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C63",
+      "claim": "LOK-N phosphorylated intact ezrin so poorly that it was not possible to derive a Km value.",
+      "claim_type": "EXPLICIT",
+      "source": "LOK-N phosphorylated intact ezrin so poorly that it was not possible to derive a Km value, emphasizing the importance of LOK C-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "a5e7f359-129b-43dc-b35d-ef53c117def0",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C64",
+      "claim": "The catalytic efficiency (kcat/Km) of LOK for ezrin and ezrin-CTD is 1.56 and 0.08 \u00b5M\u22121min\u22121, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data reveal that the catalytic efficiency (kcat/Km) of LOK for ezrin and ezrin-CTD is 1.56 and 0.08 \u00b5M\u22121min\u22121, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by kinetic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "d09a7425-e661-4367-b310-a9f8d9819a94",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C65",
+      "claim": "As a substrate for LOK, ezrin is about twenty-fold better than the ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, as a substrate for LOK, ezrin is about twenty-fold better than the ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the catalytic efficiency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "3131bb9c-eba7-43d8-b862-938fee121e2d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C66",
+      "claim": "The LOK C-terminal domain (LOK-C) must actively engage full-length ezrin in a PIP2-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the affinity of LOK for ezrin is greatly enhanced by PIP2, and this affinity is much higher than LOK for the ezrin-CTD, the LOK C-terminal domain (LOK-C) must actively engage full-length ezrin in a PIP2-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "692a8b70-2f2a-4bdb-8240-268616b3b79f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C67",
+      "claim": "LOK-C binds both the free FERM and ezrin-CTD domains with a Kd of about 10 \u00b5M and 2 \u00b5M, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements revealed that the LOK-C binds both the free FERM and ezrin-CTD domains with a Kd of about 10 \u00b5M and 2 \u00b5M, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 3A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5d0de551-fa08-4bfa-94bd-cbe7736d39e1",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C68",
+      "claim": "Minimal binding of LOK-C to full-length ezrin could be detected in the absence and presence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "We also attempted to measure the association of the LOK-C with full-length ezrin in the absence and presence of PIP2, but minimal binding could be detected (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "dbb6527d-9b93-4597-bfc4-d8d96867aae0",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C69",
+      "claim": "Priming of ezrin by PIP2 does not unmask binding sites sufficiently to enable the determination of a binding constant for LOK-C.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, priming of ezrin by PIP2 does not unmask binding sites sufficiently to enable the determination of a binding constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the inability to measure binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b4054282-ab9e-4689-840d-a1cde34a63c3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C70",
+      "claim": "The C-terminal tail of EBP50 (EBP50t) binds to the same surface of the FERM domain that is occupied by a C-terminal \u03b1-helix belonging to ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural work has shown that the C-terminal tail of EBP50 (EBP50t) binds to the same surface of the FERM domain that is occupied by a C-terminal \u03b1-helix belonging to ezrin-CTD, thereby explaining why the binding site for EBP50t is masked in the full-length inactive protein (Finnerty et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior structural work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "eb3732e0-5bd8-482f-a4a0-a69e5cd139d8",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C71",
+      "claim": "Both LOK-N-EBP50t and LOK can phosphorylate the ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, both LOK-N-EBP50t and LOK could phosphorylate the ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b8d04326-ba39-40fa-b0d6-f1354345154e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C72",
+      "claim": "Neither LOK nor LOK-N-EBP50t could phosphorylate full-length ezrin in the absence of PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with full-length ezrin, neither kinase could phosphorylate ezrin in the absence of PIP2, while both LOK and LOK-N-EBP50t could phosphorylate ezrin robustly when PIP2 was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "7f1db136-5def-43b7-8f03-54fa1ce0624f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C73",
+      "claim": "Both LOK and LOK-N-EBP50t could phosphorylate ezrin robustly when PIP2 was included.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with full-length ezrin, neither kinase could phosphorylate ezrin in the absence of PIP2, while both LOK and LOK-N-EBP50t could phosphorylate ezrin robustly when PIP2 was included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "39b07683-41c5-46ac-b06b-2d1c71e64580",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C74",
+      "claim": "The chimeric protein LOK-N-EBP50t supports the PIP2-dependent wedge model by interaction of C-terminal EBP50t with ezrin FERM, compensating for LOK-C when ezrin is primed by PIP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the chimeric protein supports the PIP2-dependent wedge model, by interaction of C-terminal EBP50t with ezrin FERM, and consequently compensating for LOK-C, when ezrin is primed by PIP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data with the chimeric protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "08663139-8d75-4c99-8589-52ed8cd49ed3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C75",
+      "claim": "Both LOK and LOK-N-EBP50t localized to microvilli in JEG-3 cells, whereas LOK-N did not.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon transient expression, both LOK and LOK-N-EBP50t localized to microvilli, whereas LOK-N did not (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "84d0c805-9f2b-48b1-a17b-49d6b0298e13",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C76",
+      "claim": "Kinase suppression (sgLOK/siSLK) reduced ezrin T567 phosphorylation by over 80% and resulted in loss of microvilli in JEG-3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As with double siRNA knockdown (Viswanatha et al., 2012), kinase suppression reduced ezrin T567 phosphorylation by over 80% and resulted in loss of microvilli (Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "6be56d73-e7b0-48ed-9ff1-6873389f1587",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C77",
+      "claim": "Introduction of LOK or LOK-N-EBP50t into kinase-suppressed JEG-3 cells restored microvilli, whereas LOK-N failed to restore microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of LOK or LOK-N-EBP50t into these cells restored microvilli, whereas LOK-N failed to restore microvilli (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "0ca284a0-cd12-4702-a0ed-9434a6ac8498",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C78",
+      "claim": "LOK-N-EBP50t restored ezrin phosphorylation in kinase-suppressed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "LOK-N-EBP50t also restored ezrin phosphorylation in kinase-suppressed cells (Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "986755d3-1369-4435-82c7-3544e4a0f4ff",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C79",
+      "claim": "LOK-N-EBP50t is able to recapitulate both the enzymatic properties of LOK as well as its function in microvilli formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LOK-N-EBP50t is able to recapitulate both the enzymatic properties of LOK as well as its function in microvilli formation, via restricting activated ezrin to the apical membrane (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data with the chimeric protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "51650582-4d0b-4865-9a20-13a4f454289b",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C80",
+      "claim": "High expression of LOK-C in JEG-3 cells inhibits ezrin phosphorylation and results in the loss of microvilli.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of LOK-C in JEG-3 cells inhibits ezrin phosphorylation and results in the loss of microvilli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "2b9585bf-bd1b-4963-9767-445ef60ce58e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C81",
+      "claim": "In low-level expressing cells, LOK-C is localized to regions of individual microvilli with local loss of ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in low-level expressing cells, LOK-C is localized to regions of individual microvilli with local loss of ezrin (Viswanatha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8e41572b-fa4f-4256-b868-a51cfcee9bd9",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C82",
+      "claim": "LOK-C has the properties of a negative regulatory domain in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus in cells, LOK-C has the properties of a negative regulatory domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the cellular observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "1e475984-30f2-44de-b361-93abe6260bcd",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C83",
+      "claim": "LOK-C inhibited the ability of LOK or LOK-N-EBP50t to phosphorylate ezrin with an IC50 of 1.9 \u00b1 0.1 \u00b5M and 1.6 \u00b1 0.1 \u00b5M, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 90 \u00b5M PIP2, LOK-C inhibited the ability of LOK or LOK-N-EBP50t to phosphorylate ezrin with an IC50 of 1.9 \u00b1 0.1 \u00b5M and 1.6 \u00b1 0.1 \u00b5M, respectively (Figure 5A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "7b3c931f-ae73-472b-8217-6ccb83d32568",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C84",
+      "claim": "The inhibition curves with ezrin-CTD as substrate showed an IC50 for LOK of 1.9 \u00b1 0.2 \u00b5M and for LOK-N of 1.2 \u00b1 0.2 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the inhibition curves with ezrin-CTD as substrate showed an IC50 for LOK of 1.9 \u00b1 0.2 \u00b5M and for LOK-N of 1.2 \u00b1 0.2 \u00b5M (Figure 5B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "94ed69ea-dde9-4706-bacb-3dc2e9de1b22",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C85",
+      "claim": "Inhibition by LOK-C is due to a direct effect on the LOK kinase activity rather than affecting the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "As these IC50 values were all much lower than the 18 \u00b5M substrate concentration, inhibition by LOK-C is due to a direct effect on the LOK kinase activity rather than affecting the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the IC50 values relative to substrate concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "007c82b4-7cb9-4030-bb32-4dd1c7c9766a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C86",
+      "claim": "The similar IC50 values suggest that the mechanism of inhibition by LOK-C is similar in all cases, namely competitive inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "These similar IC50 values also suggest that the mechanism of inhibition is similar in all cases, namely competitive inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the similar IC50 values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "76ec57fc-98c0-4a49-9b23-ebc6b371cd8a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C87",
+      "claim": "Binding of the kinase domain of full-length LOK to the ezrin-CTD likely relieves the inhibition imposed by its own C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since the IC50 values of LOK-C for LOK and LOK-N phosphorylation of the ezrin-CTD are similar, binding of the kinase domain of full-length LOK to the ezrin-CTD likely relieves the inhibition imposed by its own C-terminal domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the IC50 data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "a5b524e0-5fec-4890-87bf-107129e34c1d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C88",
+      "claim": "LOK has a strong preference for a tyrosine at P-2 (Y565), which is conserved in all ERM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of LOK, there is a strong preference for a tyrosine at P-2 (Y565), which is conserved in all ERM proteins (Belkina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "33782df4-e773-44a7-ab7c-7abe38fea338",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C89",
+      "claim": "Robust phosphorylation by LOK and LOK-N was seen up to GST-ezrin-520\u2013585.",
+      "claim_type": "EXPLICIT",
+      "source": "Robust phosphorylation was seen up to GST-ezrin-520\u2013585.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f2e741b6-c5b2-4837-b808-70bd6830cddc",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C90",
+      "claim": "GST-ezrin-530\u2013585 and GST-ezrin-555\u2013585 were very poor substrates for LOK and LOK-N.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter constructs, GST-ezrin-530\u2013585 and GST-ezrin-555\u2013585, were very poor substrates for LOK and LOK-N.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "83ea3e99-aacb-4bb2-b0c6-9b8652ffd188",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C91",
+      "claim": "The region 520\u2013530 of ezrin is important for recognition by LOK-N.",
+      "claim_type": "EXPLICIT",
+      "source": "As this suggests that the region 520\u2013530 is important for recognition by LOK-N, we made a construct, GST-ezrin-490-(\u2206520\u2013530)\u2212585, lacking this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the truncation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ee588e53-9689-4ca0-950f-e5ed990d2f4d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C92",
+      "claim": "GST-ezrin-490-(\u2206520\u2013530)\u2212585 was a significantly poorer substrate than GST-ezrin-490\u2013585.",
+      "claim_type": "EXPLICIT",
+      "source": "This truncated substrate was a significantly poorer substrate than GST-ezrin-490\u2013585.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "49c94875-87d5-4e41-9afe-0979a65f3162",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C93",
+      "claim": "The ezrin-CTD has an additional distal docking site approximately 40 residues N-terminal to the kinase consensus sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ezrin-CTD has an additional distal docking site approximately 40 residues N-terminal to the kinase consensus sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the truncation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5e050d83-520a-4b7a-937d-fad4e49b6c8f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C94",
+      "claim": "Specific morphogenetic components have to be controlled locally to maintain the morphological polarity of a cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to maintain the morphological polarity of a cell, specific morphogenetic components have to be controlled locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ea652514-8897-4841-a578-8f5eeabf98de",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C95",
+      "claim": "In the case of microvilli on epithelial cells, ezrin is locally activated through T567 phosphorylation mediated by the closely related LOK and SLK kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of microvilli on epithelial cells, ezrin is locally activated through T567 phosphorylation mediated by the closely related LOK and SLK kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from the manuscript and prior work.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8940137b-35d1-4629-bb99-eb0831b6c136",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C96",
+      "claim": "PIP2 is a regulatory lipid largely confined to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PIP2 is a regulatory lipid largely confined to the plasma membrane, the highly specific priming of ezrin by PIP2 ensures that ezrin phosphorylation is restricted to this membrane compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "d459a274-b2ca-42bf-b449-d22b054b12f8",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C97",
+      "claim": "The highly specific priming of ezrin by PIP2 ensures that ezrin phosphorylation is restricted to the plasma membrane compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PIP2 is a regulatory lipid largely confined to the plasma membrane, the highly specific priming of ezrin by PIP2 ensures that ezrin phosphorylation is restricted to this membrane compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental findings and knowledge about PIP2 localization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f8e84d00-665c-42c9-ae2e-d13a6617f291",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C98",
+      "claim": "Both phosphatidylinositol 4,5-bisphosphate (PIP2) micelles and PIP2-containing unilamellar liposomes prime ezrin for LOK-mediated phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro studies show that both phosphatidylinositol 4,5-bisphosphate (PIP2) micelles and PIP2-containing unilamellar liposomes prime ezrin for LOK-mediated phosphorylation, while other phospholipids and more importantly, IP3, the head group in direct physical contact with ezrin, fail to prime ezrin for phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "3fff5af3-651f-4a39-bb1e-a02ed2dcd605",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C99",
+      "claim": "Other phospholipids and IP3 fail to prime ezrin for phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro studies show that both phosphatidylinositol 4,5-bisphosphate (PIP2) micelles and PIP2-containing unilamellar liposomes prime ezrin for LOK-mediated phosphorylation, while other phospholipids and more importantly, IP3, the head group in direct physical contact with ezrin, fail to prime ezrin for phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "fed8e4bf-c3e1-48dc-b46a-ec6cca96a92a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C100",
+      "claim": "Priming of ezrin for phosphorylation requires an appropriate charge distribution provided by phosphate groups in the head group of the phospholipid phosphatidylinositol 4,5-bisphosphate, and a high local concentration of the head group that can only be achieved in vitro using micelles or liposomes.",
+      "claim_type": "EXPLICIT",
+      "source": "From these data, we conclude that priming of ezrin for phosphorylation requires an appropriate charge distribution provided by phosphate groups in the head group of the phospholipid phosphatidylinositol 4,5-bisphosphate, and a high local concentration of the head group that can only be achieved in vitro using micelles or liposomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "52048870-9e27-4b1e-8319-c9ab1577e51f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C101",
+      "claim": "PIP2 acts through ezrin activation, and not by LOK activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we were surprised to find that in the presence of PIP2, LOK is unable to phosphorylate a complex of FERM associated with the ezrin-CTD. This revealed two points: First, PIP2 acts through ezrin activation, and not by LOK activation, and second, the central \u03b1-helical coiled coil hairpin connecting the FERM to the ezrin-CTD is necessary for priming of intact ezrin for phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data with FERM+ezrin-CTD complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b483f3eb-7b53-4b51-b54c-db631f6bbd34",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C102",
+      "claim": "The central \u03b1-helical coiled coil hairpin connecting the FERM to the ezrin-CTD is necessary for priming of intact ezrin for phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we were surprised to find that in the presence of PIP2, LOK is unable to phosphorylate a complex of FERM associated with the ezrin-CTD. This revealed two points: First, PIP2 acts through ezrin activation, and not by LOK activation, and second, the central \u03b1-helical coiled coil hairpin connecting the FERM to the ezrin-CTD is necessary for priming of intact ezrin for phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data with FERM+ezrin-CTD complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ec77c8d9-a25b-4ec7-9c7e-6ed124d61ff4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C103",
+      "claim": "The \u03b1-helical coiled coil region acts as a spring counteracting the strong association between the FERM and ezrin-CTD, and upon binding PIP2, the strength of the spring is enhanced.",
+      "claim_type": "EXPLICIT",
+      "source": "The detailed function of the central coiled coil hairpin is unknown, but one attractive possibility is that the \u03b1-helical coiled coil region acts as a spring counteracting the strong association between the FERM and ezrin-CTD, and upon binding PIP2, the strength of the spring is enhanced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5b4c1a4b-de1c-4b25-9aa0-f147a18525ac",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C104",
+      "claim": "The proposed spring model has similarities in other proteins, such as the ERM-related protein merlin.",
+      "claim_type": "EXPLICIT",
+      "source": "The proposed spring model has similarities in other proteins. In the ERM-related protein merlin, the central \u03b1-helical hairpin undergoes an unfolding event, like a 'switchblade', during opening of the protein (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work on merlin.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "fa339dd0-85d3-47ca-9b41-66b181723446",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C105",
+      "claim": "In the ERM-related protein merlin, the central \u03b1-helical hairpin undergoes an unfolding event, like a 'switchblade', during opening of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In the ERM-related protein merlin, the central \u03b1-helical hairpin undergoes an unfolding event, like a 'switchblade', during opening of the protein (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b1901cfa-2d4e-49d6-9ab1-70852a1080a4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C106",
+      "claim": "The influenza virus hemagglutinin protein has a rod-shaped \u03b1-helical ectodomain that undergoes a dramatic 'switchblade-like' unfolding event at low pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Another example occurs within the influenza virus hemagglutinin protein. This protein is a membrane-fusion glycoprotein with a rod-shaped \u03b1-helical ectodomain that undergoes a dramatic 'switchblade-like' unfolding event at low pH (Skehel and Wiley, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "f861b4c3-b396-4e13-8e19-601150dcae8e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C107",
+      "claim": "The isolated LOK kinase domain cannot phosphorylate ezrin under any condition.",
+      "claim_type": "EXPLICIT",
+      "source": "The active involvement of LOK-C (Figure 6B, step 2) is shown by the finding that the isolated LOK kinase domain cannot phosphorylate ezrin under any condition, whereas it can phosphorylate the isolated ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4ebb6a4f-2f15-46d0-b55e-b8cfb987bfbc",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C108",
+      "claim": "In the presence of PIP2, the Km of full-length LOK for ezrin is about 45 times lower than for the ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the presence of PIP2, the Km of full-length LOK for ezrin is about 45 times lower than for the ezrin-CTD, indicating that the combined action of PIP2 and the FERM domain greatly enhances specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinetic data in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "498dc542-4c90-486b-bc8a-dbbd8a22d0c9",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C109",
+      "claim": "The combined action of PIP2 and the FERM domain greatly enhances specificity of LOK for ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the presence of PIP2, the Km of full-length LOK for ezrin is about 45 times lower than for the ezrin-CTD, indicating that the combined action of PIP2 and the FERM domain greatly enhances specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinetic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "9ccabd9e-0873-41af-bb58-603310587efa",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C110",
+      "claim": "LOK-C can bind with low affinity to both the isolated FERM and ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the kinetics of PIP2-primed full-length ezrin, we found that LOK-C can bind with low affinity to both the isolated FERM and ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by binding data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5e54c58d-395f-4590-abf9-6b9ae067c82a",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C111",
+      "claim": "PIP2 priming of ezrin loosens the association between the FERM and ezrin-CTD, allowing LOK-C to pry the domains apart, acting like a wedge, and thus permitting the kinase domain access to T567 in the ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, PIP2 priming of ezrin loosens the association between the FERM and ezrin-CTD, allowing LOK-C to pry the domains apart, acting like a wedge, and thus permitting the kinase domain access to T567 in the ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data and represents the wedge model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "bcf35ec3-e092-423c-b148-efb7293d435d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C112",
+      "claim": "Using a cross-linking approach ex vivo, LOK is recovered more efficiently with open ezrin rather than with closed ezrin-T567A that cannot be phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using a cross-linking approach ex vivo, we have shown that LOK is recovered more efficiently with open ezrin rather than with closed ezrin-T567A that cannot be phosphorylated, suggesting that LOK has an affinity for sites masked in closed ezrin (Figure 6B, step 5) (Viswanatha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "a644aa5b-e9c0-4cb4-9e8b-8e4d3f24c4d9",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C113",
+      "claim": "LOK has an affinity for sites masked in closed ezrin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using a cross-linking approach ex vivo, we have shown that LOK is recovered more efficiently with open ezrin rather than with closed ezrin-T567A that cannot be phosphorylated, suggesting that LOK has an affinity for sites masked in closed ezrin (Figure 6B, step 5) (Viswanatha et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from cross-linking data cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "484d9dda-8d4b-4949-8d26-f15459d91e2c",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C114",
+      "claim": "LOK-C is a negative regulator of the kinase domain as it inhibits the activity of both LOK and LOK kinase domains toward ezrin or ezrin-CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study we reveal that LOK-C is a negative regulator of the kinase domain as it inhibits the activity of both LOK and LOK kinase domains toward ezrin or ezrin-CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "c807e138-352e-46f3-b362-d56267f9bf48",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C115",
+      "claim": "Binding the ezrin-CTD likely relieves the inhibition of full-length LOK by LOK-C in cis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since LOK phosphorylates ezrin-CTD better than the isolated kinase domain does, binding the ezrin-CTD likely relieves the inhibition of full-length LOK by LOK-C in cis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the kinetic and inhibition data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "8e9dcc92-ceff-4742-b38b-0087769bbeb3",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C116",
+      "claim": "The C-terminal domain of SLK shares 56% sequence identity with LOK-C and undergoes homodimerization, a process that enhances kinase activity in vitro and ex vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of SLK shares 56% sequence identity with LOK-C and undergoes homodimerization, a process that enhances kinase activity in vitro and ex vivo (Delarosa et al., 2011; Sabourin and Rudnicki, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "7cebd57c-685e-48bb-9914-c7dab5da50ce",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C117",
+      "claim": "The specificity of kinases depends on local peptide consensus sequences, which in the case of ezrin phosphorylation by LOK involves the hydrophobic residue Y565 positioned -2 residues from T567.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of kinases depends on local peptide consensus sequences, which in the case of ezrin phosphorylation by LOK involves the hydrophobic residue Y565 positioned -2 residues from T567 (Belkina et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "a4d9160b-955f-4530-a54c-bae2271b8656",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C118",
+      "claim": "A distal docking site within residues 520\u2013530 in the ezrin-CTD is required for the efficient phosphorylation of T567 by either LOK or the isolated kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "As is seen with some other serine/threonine kinases (Biondi and Nebreda, 2003; Sharrocks et al., 2000; Ubersax and Ferrell, 2007), we have also identified a distal docking site within residues 520\u2013530 in the ezrin-CTD, required for the efficient phosphorylation of T567 by either LOK or the isolated kinase domain (Figure 6B, steps 3\u20134), thereby adding another level of specificity to the kinase reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "30d77248-8ebe-4cf8-8565-3610a9db39ce",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C119",
+      "claim": "Binding of the kinase to the distal docking site may relieve the inhibition imposed by LOK-C in the context of the full-length LOK.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of the kinase to this site may also relieve the inhibition imposed by LOK-C in the context of the full-length LOK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "08b1b38a-a0b2-429e-8ddc-4cbfb20ba105",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C120",
+      "claim": "The residues equivalent to ezrin 520\u2013530 are relatively conserved, and Y565 and T567 perfectly conserved, in all ERM proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the residues equivalent to ezrin 520\u2013530 are relatively conserved, and Y565 and T567 perfectly conserved, in all ERM proteins, but not in the closely related merlin that also undergoes a similar FERM/merlin-CTD interaction, where the threonine equivalent to ezrin-T567 is not phosphorylated (Nguyen et al., 2001; Sher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work and represents sequence analysis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "885753e5-eb1d-428b-bf17-3693f2a770f5",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C121",
+      "claim": "In the closely related merlin, the threonine equivalent to ezrin-T567 is not phosphorylated.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the residues equivalent to ezrin 520\u2013530 are relatively conserved, and Y565 and T567 perfectly conserved, in all ERM proteins, but not in the closely related merlin that also undergoes a similar FERM/merlin-CTD interaction, where the threonine equivalent to ezrin-T567 is not phosphorylated (Nguyen et al., 2001; Sher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b3317c98-a7f6-44ef-b825-a837cba57461",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C122",
+      "claim": "At the genetic level, cells lacking LOK exhibit greatly reduced ezrin phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At the genetic level, cells lacking LOK exhibit greatly reduced ezrin phosphorylation (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "b8c1f069-4e22-421f-a034-3dd427a3b3f0",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C123",
+      "claim": "On the subcellular level, LOK-C targets the kinase to the apical membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "On the subcellular level, LOK-C targets the kinase to the apical membrane (Viswanatha et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "a3fd00c9-703a-4298-9ae6-06f5b9df5627",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C124",
+      "claim": "LOK-mediated ezrin phosphorylation is the first example of a specific requirement for a phosphoinositide binding to the substrate for kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "While substrate specificity of protein kinases has been the subject of many studies (Ubersax and Ferrell, 2007), fewer cases of conditional specificity have been examined in detail, with LOK-mediated ezrin phosphorylation being the first example of a specific requirement for a phosphoinositide binding to the substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' knowledge of the field and the experimental findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "79e43e9b-b5fa-4889-bcbc-e26a7fcbe530",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C125",
+      "claim": "Complex cell behaviors rely on the proper timing of phosphorylation events.",
+      "claim_type": "EXPLICIT",
+      "source": "As complex cell behaviors rely on the proper timing of phosphorylation events, such intimate co-regulation between substrates and kinases as described here may emerge as a general theme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle stated in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "75896895-f8a8-4980-a06c-d7939e014b76",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "claim_id": "C126",
+      "claim": "Intimate co-regulation between substrates and kinases as described for LOK and ezrin may emerge as a general theme.",
+      "claim_type": "EXPLICIT",
+      "source": "As complex cell behaviors rely on the proper timing of phosphorylation events, such intimate co-regulation between substrates and kinases as described here may emerge as a general theme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3811d757-d9d7-40bf-82cd-82a69427cffd",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vitro phosphorylation of full-length ezrin by LOK requires both PIP2 and the LOK C-terminal domain. LOK phosphorylates the isolated ezrin-CTD without PIP2, but cannot phosphorylate full-length ezrin without PIP2. The PIP2 requirement is specific, as other phosphoinositides and IP3 fail to substitute, and is not simply a charge effect as demonstrated with liposomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22, C45-C51, and C98-C99 provide converging experimental evidence from in vitro kinase assays using micelles and liposomes (Figures 1B-G). The data demonstrate PIP2 specificity through negative controls with other lipids, and the requirement for LOK-C is shown by comparing full-length LOK with LOK-N. Statistical significance is reported (p<0.0001) with n=3 replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "bf14c600-c7dd-4763-89b5-e062b46d7561",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The isolated LOK kinase domain (LOK-N) can phosphorylate ezrin-CTD but cannot phosphorylate full-length ezrin even in the presence of PIP2, demonstrating the essential role of the LOK C-terminal domain for full-length ezrin phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C49-C50, C63, and C107 are supported by experimental data in Figures 1F-G showing that LOK-N phosphorylates ezrin-CTD but not full-length ezrin with PIP2. Kinetic data (Table 1) confirms LOK-N cannot achieve measurable Km for full-length ezrin. Statistical significance reported with n=3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ba592d32-d01b-4607-b896-a27521c719f7",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The central \u03b1-helical coiled coil region connecting the FERM domain to ezrin-CTD is required for PIP2-dependent phosphorylation. LOK cannot phosphorylate a complex of isolated FERM and ezrin-CTD domains even in the presence of PIP2, demonstrating that the \u03b1-helical linker is necessary for transmitting the PIP2-induced conformational change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 and C101-C102 are supported by experimental data in Figure 2B showing that GST-ezrin-CTD+FERM complexes cannot be phosphorylated by LOK or LOK-N with PIP2, while isolated GST-ezrin-CTD can be phosphorylated. This demonstrates the \u03b1-helical region's essential role in coupling PIP2 binding to substrate accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ae92fe5a-333a-4939-b47d-686806bd309d",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Kinetic analysis reveals that PIP2 enhances LOK affinity for ezrin by ~160-fold (Km decreases from ~800 \u03bcM to 5 \u03bcM), and full-length ezrin is a ~20-fold better substrate than ezrin-CTD (catalytic efficiency 1.56 vs 0.08 \u03bcM\u207b\u00b9min\u207b\u00b9). The LOK C-terminal domain actively engages full-length ezrin in a PIP2-dependent manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C66 and C108-C109 are supported by comprehensive kinetic data in Table 1 and Figure 1\u2014figure supplement 1C-D. Michaelis-Menten parameters were determined with n=3 replicates. The ~45-fold difference in Km between ezrin and ezrin-CTD in the presence of PIP2 demonstrates enhanced specificity through combined PIP2 and FERM domain interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "3bfb839f-26fd-400e-89d7-917ed604f721",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LOK-C binds isolated FERM and ezrin-CTD domains with Kd values of ~10 \u03bcM and ~2 \u03bcM respectively, but minimal binding to full-length ezrin is detected even with PIP2, indicating that PIP2 priming does not fully unmask LOK-C binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C69 and C110 are supported by equilibrium binding data in Figure 3A-B showing depletion assays with immobilized substrates (n=3). The inability to measure binding to full-length ezrin despite PIP2 presence supports the wedge mechanism where LOK-C transiently engages primed ezrin during phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "55da36d1-e316-4b25-86cd-affdb5137de4",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "PIP2 binding to ezrin induces a conformational change that permits the LOK C-terminal domain to act as a wedge between the FERM and ezrin-CTD domains, allowing the kinase domain to access and phosphorylate T567. This wedge mechanism explains how LOK-C actively engages PIP2-primed ezrin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C40, C66, and C111 represent the central mechanistic model supported by multiple lines of evidence: (1) PIP2 requirement for full-length ezrin but not ezrin-CTD phosphorylation, (2) LOK-C binding to isolated domains but not full-length ezrin, (3) kinetic enhancement with PIP2, and (4) requirement for \u03b1-helical linker. The wedge model integrates these observations coherently.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "49090afd-9464-4f1f-9a64-0f844368d849",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A chimeric protein LOK-N-EBP50t, where the LOK kinase domain is fused to the EBP50 C-terminal tail that binds FERM, recapitulates LOK activity both in vitro and in cells. LOK-N-EBP50t phosphorylates ezrin in a PIP2-dependent manner, localizes to microvilli, and rescues microvilli formation in LOK/SLK-suppressed cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C71-C79 are supported by in vitro kinase assays (Figure 4B), localization studies (Figure 4C), and rescue experiments in kinase-suppressed cells (Figure 4D and supplement 1C). The chimera's ability to functionally replace LOK provides strong support for the wedge mechanism, as EBP50t binding to FERM compensates for LOK-C function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "ea2f3d3e-98a5-4118-a38d-260ba8950c79",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-mediated knockout of LOK combined with siRNA knockdown of SLK (sgLOK/siSLK) reduces ezrin T567 phosphorylation by over 80% and results in loss of microvilli in JEG-3 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C122 are supported by experimental data in Figure 4\u2014figure supplement 1A-B showing reduced ezrin phosphorylation and microvilli loss in kinase-suppressed cells (n=3). This establishes the genetic requirement for LOK/SLK in ezrin activation and microvilli formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4da9f5ec-2870-4930-a066-a9c033645c5f",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The LOK C-terminal domain (LOK-C) negatively regulates kinase activity, inhibiting both LOK and LOK-N phosphorylation of ezrin and ezrin-CTD with IC50 values of ~1.2-1.9 \u03bcM. The similar IC50 values suggest competitive inhibition, and binding of ezrin-CTD likely relieves this autoinhibition in full-length LOK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43 and C80-C87, C114-C115 are supported by inhibition assays in Figure 5A-C showing dose-dependent inhibition by LOK-C (n=2-3). The IC50 values being much lower than substrate concentration (18 \u03bcM) indicates direct kinase inhibition. The similar IC50 for different kinase-substrate pairs supports competitive inhibition and relief by substrate binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "7ff99876-f971-4843-9da4-cb67629aff77",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ezrin-CTD contains a distal docking site within residues 520-530, approximately 40 residues N-terminal to T567, that is required for efficient phosphorylation by LOK and LOK-N. Deletion of this region significantly reduces phosphorylation, adding another level of specificity beyond the consensus sequence containing Y565 at P-2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C42, and C88-C93, C118 are supported by truncation analysis in Figure 6A showing that constructs lacking residues 520-530 are poor substrates for both LOK and LOK-N. Statistical significance is reported (p<0.0001, n=3). This identifies a distal docking mechanism similar to other serine/threonine kinases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4723d7f7-f09e-48b2-a253-0392bfe6449c",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The multi-step PIP2-dependent mechanism ensures that ezrin is phosphorylated specifically at the plasma membrane by the apically localized kinase LOK. This represents the first example of a protein requiring phosphoinositide binding to serve as a kinase substrate, ensuring spatial specificity of ezrin activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38, C44, C95, C97, and C124 represent the integrated conclusion supported by all experimental findings. The PIP2 requirement, LOK-C wedge mechanism, distal docking site, and autoinhibition collectively ensure specificity. The claim of being the first phosphoinositide-dependent substrate is based on literature knowledge and the experimental demonstration of this requirement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "e182b0a2-b61b-4de3-8c82-6e484fb113f2",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Priming of ezrin for phosphorylation requires both appropriate charge distribution from PIP2 phosphate groups and high local concentration of the PIP2 head group, achievable in vitro only with micelles or liposomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C100 is supported by experiments showing that IP3 (the head group alone) fails to prime ezrin (Figure 1D), while both PIP2 micelles and PIP2-containing liposomes succeed (Figures 1C, E). The requirement for membrane presentation rather than just the head group demonstrates the importance of local concentration and proper presentation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "25d37e67-f7d8-433d-952f-855afcea49c8",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose a 'spring model' where the \u03b1-helical coiled coil region acts as a spring counteracting FERM-ezrin-CTD association, with PIP2 binding enhancing spring strength. This model draws analogies to switchblade-like conformational changes in merlin and influenza hemagglutinin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C106 represent a speculative mechanistic model (C103 explicitly labeled as speculation). While the requirement for the \u03b1-helical region is experimentally demonstrated (C57, C102), the specific 'spring' mechanism is proposed by analogy to other proteins (merlin, hemagglutinin) rather than direct structural or biophysical evidence. The model is plausible but requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "dc2d1952-ff6b-4f9b-bed3-25eef7397510",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Cross-linking experiments show that LOK is recovered more efficiently with open ezrin than with closed ezrin-T567A, suggesting LOK has affinity for sites masked in closed ezrin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C113 are supported by citation to prior work (Viswanatha et al., 2013). While the data is not shown in this manuscript, the citation provides evidence for LOK's preferential association with open ezrin, supporting the proposed mechanism where LOK remains tethered after phosphorylation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "4883a5a8-6b0d-4064-bbc4-8b33cd17849e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Binding of the LOK kinase domain to the distal docking site (residues 520-530) may relieve the inhibition imposed by LOK-C in full-length LOK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C119 is explicitly speculative. While the distal docking site is experimentally demonstrated (C93, C118) and LOK-C autoinhibition is shown (C114), the specific mechanism by which docking site binding relieves autoinhibition is proposed but not directly tested. This hypothesis requires additional experiments to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "13caf939-3c44-4469-a37a-379899ddd509",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The C-terminal domain of SLK (LOK's paralog) shares 56% sequence identity with LOK-C and undergoes homodimerization that enhances kinase activity in vitro and ex vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C116 is supported by citations to prior work (Delarosa et al., 2011; Sabourin and Rudnicki, 1999). This provides context for potential LOK regulation mechanisms, though dimerization of LOK itself is not tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "45a09f00-0ec4-4cb7-94c6-9858170ab23e",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Residues equivalent to ezrin 520-530 are relatively conserved in all ERM proteins, with Y565 and T567 perfectly conserved, but not in the related protein merlin where the equivalent threonine is not phosphorylated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C120-C121 are supported by sequence analysis and citations to prior work (Nguyen et al., 2001; Sher et al., 2012). This comparative analysis supports the specificity of the LOK-ERM phosphorylation mechanism and explains why merlin is not a substrate despite structural similarity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background and context claims establishing prior knowledge about ERM proteins, their regulation, structure, function in microvilli, phosphorylation requirements, and LOK/SLK kinases as the major ezrin kinases localized to the apical membrane.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C16, C23-C37, C70, C94, C96, C123, and C125 represent established knowledge from prior work, supported by appropriate citations. These provide essential context for the current study but are not novel findings. They are accurately represented based on the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    },
+    {
+      "id": "dbff6e38-9bde-4128-8992-8eee95b2e425",
+      "content_id": "94dbf4c6-60b1-4de9-8fae-973813f287d9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors speculate that intimate co-regulation between substrates and kinases, as described for LOK and ezrin, may emerge as a general theme in cell biology given that complex cell behaviors rely on proper timing of phosphorylation events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C126 is explicitly speculative about broader implications. While the LOK-ezrin mechanism is well-supported, the generalization to other kinase-substrate pairs is a hypothesis requiring validation across multiple systems. This represents a reasonable speculation based on the findings but lacks direct supporting evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:48.779224Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f4b61b0-857a-42cc-b86a-31f38dfd5546",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "f247ef8e-b51f-4f33-a596-41f45900f2a0",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "5923fd9f-61ea-4eda-a164-3cdbed9db641",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "dec07484-a2bd-416e-8bda-c80d13079a16",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "181d752d-fbbf-410f-862a-c59eecc17104",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "f69d186f-db56-47eb-9b77-e87bc7657b20",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "cdbd31b1-9896-4f9d-8cf7-24faf0f9eed3",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "7e8acd1a-5eaf-4868-872b-395421a1c97c",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "45db5660-cd5b-471c-8c6d-625ed9da7232",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "4762a1c2-1958-4090-8944-454ff5820c0c",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "f8e84d00-665c-42c9-ae2e-d13a6617f291",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "3fff5af3-651f-4a39-bb1e-a02ed2dcd605",
+      "result_id": "3811d757-d9d7-40bf-82cd-82a69427cffd"
+    },
+    {
+      "claim_id": "45c63ab2-ada7-48f5-843c-a04831749c0b",
+      "result_id": "bf14c600-c7dd-4763-89b5-e062b46d7561"
+    },
+    {
+      "claim_id": "33529218-c91e-479c-829e-e7521bfb32a7",
+      "result_id": "bf14c600-c7dd-4763-89b5-e062b46d7561"
+    },
+    {
+      "claim_id": "f59b8bdc-e072-459a-947c-1da2c4971265",
+      "result_id": "bf14c600-c7dd-4763-89b5-e062b46d7561"
+    },
+    {
+      "claim_id": "ebeacd9e-bb47-4371-ab4f-dda85a852132",
+      "result_id": "bf14c600-c7dd-4763-89b5-e062b46d7561"
+    },
+    {
+      "claim_id": "f861b4c3-b396-4e13-8e19-601150dcae8e",
+      "result_id": "bf14c600-c7dd-4763-89b5-e062b46d7561"
+    },
+    {
+      "claim_id": "e4f3dbe4-dbef-457b-b66b-8d2944865acf",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "e18496bb-5ecf-4a1e-bd88-ee45750cd113",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "ed6ad482-a201-4d51-9d88-0b475c1a6245",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "2d4dbce5-634f-41f9-97aa-fbc317eb3058",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "e27654ee-fedc-4703-9ad7-44b0bf16193a",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "e8153311-d7fc-4e75-bbeb-702a5d81179b",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "52048870-9e27-4b1e-8319-c9ab1577e51f",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "b483f3eb-7b53-4b51-b54c-db631f6bbd34",
+      "result_id": "ba592d32-d01b-4607-b896-a27521c719f7"
+    },
+    {
+      "claim_id": "8e15f608-ad12-42c3-9273-75bfee109480",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "d0f25c78-ac07-4774-b210-f155eab7de26",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "77c2c511-dd66-46a3-8495-4001a0562ba1",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "68822cad-578f-4bbd-9d95-8ede5899d2c4",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "34020976-1fc3-4ea0-8caf-2f2006608889",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "a5e7f359-129b-43dc-b35d-ef53c117def0",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "d09a7425-e661-4367-b310-a9f8d9819a94",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "3131bb9c-eba7-43d8-b862-938fee121e2d",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "4ebb6a4f-2f15-46d0-b55e-b8cfb987bfbc",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "498dc542-4c90-486b-bc8a-dbbd8a22d0c9",
+      "result_id": "ae92fe5a-333a-4939-b47d-686806bd309d"
+    },
+    {
+      "claim_id": "692a8b70-2f2a-4bdb-8240-268616b3b79f",
+      "result_id": "3bfb839f-26fd-400e-89d7-917ed604f721"
+    },
+    {
+      "claim_id": "5d0de551-fa08-4bfa-94bd-cbe7736d39e1",
+      "result_id": "3bfb839f-26fd-400e-89d7-917ed604f721"
+    },
+    {
+      "claim_id": "dbb6527d-9b93-4597-bfc4-d8d96867aae0",
+      "result_id": "3bfb839f-26fd-400e-89d7-917ed604f721"
+    },
+    {
+      "claim_id": "9ccabd9e-0873-41af-bb58-603310587efa",
+      "result_id": "3bfb839f-26fd-400e-89d7-917ed604f721"
+    },
+    {
+      "claim_id": "39955a98-0fc0-4c7a-8dfc-d00202df7358",
+      "result_id": "55da36d1-e316-4b25-86cd-affdb5137de4"
+    },
+    {
+      "claim_id": "97f0183e-793e-4634-8c88-0bd8eb3a42ad",
+      "result_id": "55da36d1-e316-4b25-86cd-affdb5137de4"
+    },
+    {
+      "claim_id": "3131bb9c-eba7-43d8-b862-938fee121e2d",
+      "result_id": "55da36d1-e316-4b25-86cd-affdb5137de4"
+    },
+    {
+      "claim_id": "5e54c58d-395f-4590-abf9-6b9ae067c82a",
+      "result_id": "55da36d1-e316-4b25-86cd-affdb5137de4"
+    },
+    {
+      "claim_id": "4fcc3bd0-0b08-4a16-b232-35ccf12b5653",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "eb3732e0-5bd8-482f-a4a0-a69e5cd139d8",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "b8d04326-ba39-40fa-b0d6-f1354345154e",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "7f1db136-5def-43b7-8f03-54fa1ce0624f",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "39b07683-41c5-46ac-b06b-2d1c71e64580",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "08663139-8d75-4c99-8589-52ed8cd49ed3",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "6be56d73-e7b0-48ed-9ff1-6873389f1587",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "0ca284a0-cd12-4702-a0ed-9434a6ac8498",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "986755d3-1369-4435-82c7-3544e4a0f4ff",
+      "result_id": "49090afd-9464-4f1f-9a64-0f844368d849"
+    },
+    {
+      "claim_id": "84d0c805-9f2b-48b1-a17b-49d6b0298e13",
+      "result_id": "ea2f3d3e-98a5-4118-a38d-260ba8950c79"
+    },
+    {
+      "claim_id": "b3317c98-a7f6-44ef-b825-a837cba57461",
+      "result_id": "ea2f3d3e-98a5-4118-a38d-260ba8950c79"
+    },
+    {
+      "claim_id": "68c32880-4aea-4555-a90c-a4114f3ab24d",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "51650582-4d0b-4865-9a20-13a4f454289b",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "2b9585bf-bd1b-4963-9767-445ef60ce58e",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "8e41572b-fa4f-4256-b868-a51cfcee9bd9",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "1e475984-30f2-44de-b361-93abe6260bcd",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "7b3c931f-ae73-472b-8217-6ccb83d32568",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "94ed69ea-dde9-4706-bacb-3dc2e9de1b22",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "007c82b4-7cb9-4030-bb32-4dd1c7c9766a",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "76ec57fc-98c0-4a49-9b23-ebc6b371cd8a",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "484d9dda-8d4b-4949-8d26-f15459d91e2c",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "c807e138-352e-46f3-b362-d56267f9bf48",
+      "result_id": "4da9f5ec-2870-4930-a066-a9c033645c5f"
+    },
+    {
+      "claim_id": "af655f86-248f-4fe0-be5e-2224e5d39ee8",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "54baae6c-62c6-42a4-a1da-5a1b9559e1c6",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "a5b524e0-5fec-4890-87bf-107129e34c1d",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "33782df4-e773-44a7-ab7c-7abe38fea338",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "f2e741b6-c5b2-4837-b808-70bd6830cddc",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "83ea3e99-aacb-4bb2-b0c6-9b8652ffd188",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "ee588e53-9689-4ca0-950f-e5ed990d2f4d",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "49c94875-87d5-4e41-9afe-0979a65f3162",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "a4d9160b-955f-4530-a54c-bae2271b8656",
+      "result_id": "7ff99876-f971-4843-9da4-cb67629aff77"
+    },
+    {
+      "claim_id": "02f2c656-14f1-4c0d-af7e-4b5e89dd6a53",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "ad324f24-985c-4746-ae08-ff6248ba2335",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "f1c14cea-2159-451d-92e4-44aebcc1c475",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "ea652514-8897-4841-a578-8f5eeabf98de",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "d459a274-b2ca-42bf-b449-d22b054b12f8",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "a3fd00c9-703a-4298-9ae6-06f5b9df5627",
+      "result_id": "4723d7f7-f09e-48b2-a253-0392bfe6449c"
+    },
+    {
+      "claim_id": "fed8e4bf-c3e1-48dc-b46a-ec6cca96a92a",
+      "result_id": "e182b0a2-b61b-4de3-8c82-6e484fb113f2"
+    },
+    {
+      "claim_id": "ec77c8d9-a25b-4ec7-9c7e-6ed124d61ff4",
+      "result_id": "25d37e67-f7d8-433d-952f-855afcea49c8"
+    },
+    {
+      "claim_id": "5b4c1a4b-de1c-4b25-9aa0-f147a18525ac",
+      "result_id": "25d37e67-f7d8-433d-952f-855afcea49c8"
+    },
+    {
+      "claim_id": "fa339dd0-85d3-47ca-9b41-66b181723446",
+      "result_id": "25d37e67-f7d8-433d-952f-855afcea49c8"
+    },
+    {
+      "claim_id": "b1901cfa-2d4e-49d6-9ab1-70852a1080a4",
+      "result_id": "25d37e67-f7d8-433d-952f-855afcea49c8"
+    },
+    {
+      "claim_id": "bcf35ec3-e092-423c-b148-efb7293d435d",
+      "result_id": "dc2d1952-ff6b-4f9b-bed3-25eef7397510"
+    },
+    {
+      "claim_id": "a644aa5b-e9c0-4cb4-9e8b-8e4d3f24c4d9",
+      "result_id": "dc2d1952-ff6b-4f9b-bed3-25eef7397510"
+    },
+    {
+      "claim_id": "30d77248-8ebe-4cf8-8565-3610a9db39ce",
+      "result_id": "4883a5a8-6b0d-4064-bbc4-8b33cd17849e"
+    },
+    {
+      "claim_id": "8e9dcc92-ceff-4742-b38b-0087769bbeb3",
+      "result_id": "13caf939-3c44-4469-a37a-379899ddd509"
+    },
+    {
+      "claim_id": "08b1b38a-a0b2-429e-8ddc-4cbfb20ba105",
+      "result_id": "45a09f00-0ec4-4cb7-94c6-9858170ab23e"
+    },
+    {
+      "claim_id": "885753e5-eb1d-428b-bf17-3693f2a770f5",
+      "result_id": "45a09f00-0ec4-4cb7-94c6-9858170ab23e"
+    },
+    {
+      "claim_id": "cb794132-407b-4dec-b445-21485ab65565",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "2b10d956-8b0e-46a0-b1a1-0d9229b00cc0",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "46d46aa1-8e72-4851-b56f-ac0205d9d9cb",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "da60465e-175b-49df-8689-3a07d0bade5a",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "37cb514c-8caa-49bb-b622-e1e83991f7af",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "f8fbe760-85d4-48af-9659-76a7339774c6",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "0e84f576-10c3-404e-b725-e96f2abeff85",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "8c8b6266-16a4-44bd-b9a2-16e11196f390",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "3e075ed2-d7f1-448b-9cc9-a385e0ad5989",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "57a42057-6e37-466a-bb4d-03a5842135eb",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "f205bcc7-2c34-4b55-9531-fbf14e00e002",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "8289ec9f-0a97-4a17-9c42-1509d98e09b3",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "fe3ee953-b61f-43c7-b8fd-3a4315541aee",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "4258aeae-ddbf-4bf6-9857-a7a4817329a6",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "31f3d2ba-465d-4e17-8b8d-b5769b64fe80",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "f96ba4fa-4f6c-4f20-9ad2-fa273cfce89e",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "f7196547-b708-467a-a9c6-c2d193affa10",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "ca91ccb1-5fef-47f4-bafb-7557841087c4",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "88e75fde-d4f8-4151-b6f2-d7e5754832a2",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "2702b6dd-3799-4967-b014-885d6a99c864",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "58fe5f11-108d-49af-809f-06230a780edc",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "41f8879a-bcee-470f-abdd-aeedbe660ff1",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "2648d3b9-d87f-4170-a439-d4eada6f614f",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "75029a54-e763-41a7-8c62-db9d725be8ba",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "4df8f553-fae5-49b7-8f46-336a2040a2e4",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "f88ef2ab-56d8-47e0-a667-2124c686e1b3",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "606eb496-70c9-4f5f-b5b3-5949e41238c4",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "2c2fa575-de1b-4b95-9398-6c754b8da504",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "b4054282-ab9e-4689-840d-a1cde34a63c3",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "5e050d83-520a-4b7a-937d-fad4e49b6c8f",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "8940137b-35d1-4629-bb99-eb0831b6c136",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "b8c1f069-4e22-421f-a034-3dd427a3b3f0",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "79e43e9b-b5fa-4889-bcbc-e26a7fcbe530",
+      "result_id": "5cc29fa4-f0f1-4ebb-bf57-56eeb413f15b"
+    },
+    {
+      "claim_id": "75896895-f8a8-4980-a06c-d7939e014b76",
+      "result_id": "dbff6e38-9bde-4128-8992-8eee95b2e425"
+    }
+  ],
+  "comparisons": []
+}

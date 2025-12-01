@@ -1,0 +1,2244 @@
+{
+  "submission": {
+    "id": "26223f46-18b0-4ce7-9e58-38e1e5d3baf0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:35:22.498017Z",
+    "updated_at": "2025-11-30T20:35:22.498017Z"
+  },
+  "content": [
+    {
+      "id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "submission_id": "26223f46-18b0-4ce7-9e58-38e1e5d3baf0",
+      "content_type": "manuscript",
+      "content_text": "# An integrative transcriptomic atlas of organogenesis in human embryos\n\n## Authors\n\n- Dave T Gerrard<sup>1</sup> ([ORCID: 0000-0001-6890-7213](https://orcid.org/0000-0001-6890-7213))\n- Andrew A Berry<sup>1</sup>\n- Rachel E Jennings<sup>1</sup>\n- Karen Piper Hanley<sup>1</sup>\n- Nicoletta Bobola<sup>3</sup>\n- Neil A Hanley<sup>1</sup> ([ORCID: 0000-0003-3234-4038](https://orcid.org/0000-0003-3234-4038)) \u2020\n\n### Affiliations\n\n1. Division of Diabetes, Endocrinology & Gastroenterology, School of Medical Sciences, Faculty of Biology, Medicine and Health, Manchester Academic Health Science Centre University of Manchester Manchester United Kingdom\n2. Endocrinology Department Central Manchester University Hospitals NHS Foundation Trust Manchester United Kingdom\n3. Division of Dentistry, School of Medical Sciences, Faculty of Biology, Medicine and Health, Manchester Academic Health Science Centre University of Manchester Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nHuman organogenesis is when severe developmental abnormalities commonly originate. However, understanding this critical embryonic phase has relied upon inference from patient phenotypes and assumptions from in vitro stem cell models and non-human vertebrates. We report an integrated transcriptomic atlas of human organogenesis. By lineage-guided principal components analysis, we uncover novel relatedness of particular developmental genes across different organs and tissues and identified unique transcriptional codes which correctly predicted the cause of many congenital disorders. By inference, our model pinpoints co-enriched genes as new causes of developmental disorders such as cleft palate and congenital heart disease. The data revealed more than 6000 novel transcripts, over 90% of which fulfil criteria as long non-coding RNAs correlated with the protein-coding genome over megabase distances. Taken together, we have uncovered cryptic transcriptional programs used by the human embryo and established a new resource for the molecular understanding of human organogenesis and its associated disorders.\n\n## Introduction\n\nEmbryogenesis encompasses the progression from fertilized zygote to blastocyst and through gastrulation to establish the three germ layers of ectoderm, mesoderm and endoderm, from which all organs and tissues subsequently arise during organogenesis. Remarkably little is known about this latter phase of assembling organs and tissues in human due to the restricted availability of human embryonic tissue and its tiny size. Previous transcriptomics post-implantation have sampled either the whole embryo by expression microarray (Fang et al., 2010), thus lacking organ-specific resolution and the vast majority of long non-coding (lnc) transcription; or included lnc expression by massively parallel short-read RNA sequencing (RNA-seq) but focussed on single sites such as limb bud (Cotney et al., 2013) or pancreas (Cebola et al., 2015). RNA-seq from NIH Roadmap and other studies during or after the end of the first trimester of pregnancy falls after the embryonic period (which ends at 56\u201358 days post-conception (Carnegie Stage 23)) and commonly reflects near terminal differentiation within heterogeneous fetal organs and tissues (Jaffe et al., 2015; Roadmap Epigenomics Consortium, 2015; Roost et al., 2015). As a consequence of these combined deficiencies, we set about compiling global transcriptomic data during the critical phase of human organogenesis, sampling each germ layer and including sites of mixed origin that are subject to major developmental disorders such as cleft palate and limb abnormalities (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-v1.jpg)\n\n**Figure 1.:** (a) Human embryo showing the 15 tissues and organs subjected to RNA-seq. (b) High dynamic range of human embryonic RNA-seq. The combined dataset (black) included expression of >90% of annotated protein-coding genes (GENCODE18 [Harrow et al., 2012]). (c) Human embryogenesis possesses a distinctive transcriptome. Human embryonic read counts were compared with equivalent fetal datasets from NIH Roadmap (Roadmap Epigenomics Consortium, 2015) using edgeR (Robinson et al., 2010) and a false discovery rate (FDR) of 0.05 (see Materials and methods, Supplementary file 1B). Negative log10 p-values are shown for selected biological process Gene Ontology (GO) terms with significant enrichment in either the embryonic or fetal gene sets following Fisher's exact test applied using the elimination algorithm (Alexa and Rahnenfuhrer, 2010) (Supplementary file 1C contains the full list of enriched terms). (d) Selected sites illustrate the highly specific expression of HOX genes within the human embryo.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Heatmap of gene expression for all transcription factors annotated on KEGG (http://www.genome.jp/kegg-bin/get_htext?hsa03000) across the fifteen different human embryonic organs and tissues. Absolute maximum values of expression for each gene are represented to the left (green). The relative expression of each transcription factor across tissues is shown to the right (blue) set against its own maximum value (threshold for inclusion, read count >100 in at least one tissue). A high resolution version, text-searchable for each individual transcription factor, is available as Supplementary file 5. B, brain; R, retinal pigmented epithelium; P, palate; Th, thyroid / parathyroid; Lu, lung; S, stomach; Pan, pancreas; L, liver; To, tongue; H, heart / left ventricle; Te, testis; A, adrenal; K, kidney; UL, upper limb; and LL, lower limb.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** To validate that tissue-specific signatures should be readily attainable from the global dataset several transcription factors for each organ or tissue were selected based on recognized published roles and mutant mouse phenotypes (data available from Mouse Genome Informatics, www.informatics.jax.org). The heatmap demonstrates clear tissue-specificity.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Across the four principal components biological replicates clustered together but from global pairwise correlations only the brain and to a lesser extent the liver were clearly distinct from the other organs and tissues (either extreme of principal component 2). As part of the reason why the liver was distinctive the five most abundant genes (ALB, AFP and three fetal hemoglobins) accounted for >20% of the data whereas in the other datasets the top 5 genes were responsible for only ~5% of transcription. The overall conclusion was that the\u00a0simple principal components analysis failed to segregate clearly the individual transcriptomes of the different organs and tissues, an outcome that led to the\u00a0development of the LgPCA methodology. Four samples from two human pluripotent stem cell (PSC) lines, H1 and HUES64 (NIH Roadmap datasets), are included here because they were subsequently included in the LgPCA analysis (Figure 2). The PSC lines are clearly distinct from the primary human embryonic tissue samples (negative loadings in principal component 1).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Samples are clustered based on Spearman\u2019s rank correlation across all annotated genes. RNA-seq batch is indicated in the colored key to the left. In this study, RNA sequencing was performed in 3 batches. The pancreas RNA-seq was re-used from a previous study (Cebola et al., 2015). Four samples from two human pluripotent stem cell (PSC) lines, H1 and HUES64 (NIH Roadmap datasets), are included here because they were subsequently included in the LgPCA analysis (Figure 2). The PSC lines are clearly distinct from the primary human embryonic tissue samples.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (a) Subsets of tissue-specific genes (\u2018metagenes\u2019) were found using non-negative matrix factorisation (NMF) (Gaujoux and Seoighe, 2010). The initial screen using the co-phenetic distance suggested 11 exclusive metagenes. The NMF was re-run 200 times to assess consistency of sample groupings between runs. The resulting metagenes were discriminatory for liver, heart / left ventricle, adrenal gland, RPE, brain and thyroid / parathyroid while others sample types formed heterogeneous clusters: for instance, lung, stomach and tongue (metagene 9); kidney & testis (metagene 3); and limbs and palate (metagene 6). (b) NMF metagene analysis demonstrates enrichment of expression for those genes comprising metagene 2 (liver) in fresh human hepatocytes and human embryonic stem cells differentiated towards hepatocytes but not in human embryonic fibroblasts [sequence data from (Du et al., 2014)] compared to the other metagenes.\n\nOrgans and tissues from fifteen human embryonic sites were sequenced in two sets of biological replicates (except pancreas and tongue) to generate 28 strand-specific RNA-seq datasets with 44\u201390 million uniquely mapped reads per replicate (Figure 1a; Supplementary file 1A, which contains information on embryonic stages). Global transcription rates across all organs and tissues were comparable over a high dynamic range; approximately 70% of protein-coding genes contained 100\u201310,000 mapped reads (Figure 1b; Supplementary file 2). We assessed whether our human embryo datasets identified earlier developmental processes than currently available fetal data (Roadmap Epigenomics Consortium, 2015). There were three-fold the number of differentially expressed genes in the fetal datasets but equivalent enrichment of gene ontology (GO) terms in the embryo, including many early developmental processes such as morphogenesis of an epithelial bud, anterior/posterior pattern specification and embryonic morphogenesis. These were in contrast to homeostatic processes enriched in the fetal dataset (Figure 1c; Supplementary file 1B\u2013C).\n\nSampling gene expression across multiple sites allowed us to set about deciphering the precise transcriptomic codes responsible for the development of the different human embryonic organs and tissues. While ZNF and ZSCAN family members were broadly expressed discrete site-specific expression was more apparent for individual members of other transcription factor families (Figure 1\u2014figure supplement 1) exemplified by the HOX gene clusters (Figure 1d). User-defined sets of up to five developmental transcription factors characteristic for a particular organ or tissue displayed very high levels of tissue specificity (Figure 1\u2014figure supplement 2). However, while principal components (PC) analysis (PCA) or clustering grouped biological replicates, relationships between different organs and tissues other than the distinctiveness of brain and liver were not resolved (Figure 1\u2014figure supplements 3\u20134). Non-negative matrix factorisation (NMF) also allows unbiased clustering of gene expression (Gaujoux and Seoighe, 2010). By setting the parameters such that representative genes were only extracted once, we identified eleven non-overlapping \u2018metagenes\u2019 from the complete expression dataset with clear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland (Figure 1\u2014figure supplement 5; Supplementary file 1D). We hypothesized that these new signals might allow benchmarking to assess the fidelity of in vitro differentiated stem cells, similar to a previous report (Roost et al., 2015). As an exemplar, we chose hepatocyte differentiation for which RNA-seq data are available including positive (primary adult hepatocytes) and negative (human embryonic fibroblasts) control data (Du et al., 2014). Clear enrichment for the stem cell-derived hepatocytes and the primary hepatocytes (but not the fibroblasts) was apparent in metagene 2, the cluster of 39 genes indicative of human embryonic liver. From this starting point, we wanted to move beyond the\u00a0unique organ-specific signatures to study how patterns of gene expression co-varied across tissues. While relaxing NMF parameters would allow non-exclusive gene selection across metagenes, we also wanted to capture differences in gene expression between organs (e.g. aspects of what is not expressed as a contributing factor to an organ\u2019s identity). Moreover, different embryonic organs are related according to developmental lineage. We reasoned that being able to apply a lineage structure would create natural assemblies of co-regulated genes (Figure 2a). Accordingly, we adapted a method from spatial ecology and phylogenetics (Jombart et al., 2010a, 2010b) to constrain PCA by imposing a hierarchical developmental lineage and termed this approach LgPCA. We also included RNA-seq from undifferentiated human embryonic stem cells (Roadmap Epigenomics Consortium, 2015) to represent pre-gastrulation human biology. Of the total thirty-one principal components (PCs) arising from LgPCA the first fifteen now identified patterns of gene expression across groups of related tissues in addition to unique organ-specific signatures (Figure 2b) while PCs 16\u201331 sampled heterogeneity within individual organs and tissues (Figure 2\u2014figure supplement 1). In keeping with this transition PCs 1\u20134 ordered samples reminiscent of very early developmental events: pluripotency (extreme positive loadings in PC1; \u2018PC1 high\u2019), early brain formation (extreme negative loadings in PC2; \u2018PC2 low\u2019), foregut endoderm (PC4 low) and intermediate mesoderm (PC4 high). PCs 5\u201315 resolved the individual organs and tissues; for instance low PC5 loadings discriminated liver from the other foregut endoderm derivatives. Heatmaps illustrated the composite or tissue-specific signals emanating from the genes with the most extreme PC loadings which also underlay appropriate developmental gene ontology (GO) terms (Figure 2c\u2013d and Supplementary file 1E\u2013F).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig2-v1.jpg)\n\n**Figure 2.:** (a) Interpreting gene expression profiles is dependent upon the underlying developmental lineage. Similar expression profiles in closely related tissues imply fewer regulatory events. (b) Lineage-guided principal components analysis (LgPCA) constrains PCA by imposing a developmental lineage on the different organs and tissues. The first 15 PCs are shown including biological replicates for the human embryonic organs and tissues integrated with human embryonic stem cell data (Roadmap Epigenomics Consortium, 2015). PC scores for the 15 different dimensions are shown in black (positive/high) or white (negative/low) with scale (extremeness) indicated by circle size (sign/direction is arbitrary). Unique transcriptional signatures were resolved for broad organ groupings (e.g. foregut endoderm derivatives, low scores in PC4), single organs or tissues (e.g. palate, high scores in PC13) or across tissues unrelated by germ layer but connected by multisystem congenital disorders (e.g. heart and limb, low scores in PC13). (c) Heatmaps of quantile normalised expression values of the most extreme 50 genes for selected PCs from the LgPCA. (d) Gene Ontology (GO) terms and their underlying genes illustrate the specific signatures from the LgPCA (further examples in Supplementary file 1F).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** LgPCA showing all 31 PCs illustrating that global patterns (i.e. strong lineage and organ or tissue level signatures) emerge from the earlier PCs (\u2264PC15 to the left) while local patterns (e.g. heterogeneity between samples) become evident at \u2265PC16, to the right). Many individual PCs gave very clear organ or tissue-specific signatures, however, the transcriptomes of most organs and tissues can also be represented by a composite of patterns visible across a number of different PCs.\n\nIdentifying the master regulators that differentially orchestrate organogenesis across the body has not previously been possible directly in human embryos. We undertook this in two different ways, both based on studying the 1000 genes with the most extreme loadings in PCs 1\u201315 that identified gene co-expression patterns across tissues and within individual organs (Figure 2b; Supplementary file 1E). We interrogated these gene sets for regulatory networks based on the enrichment of transcription factor motifs (Janky et al., 2014). Numerous well known master regulators were recovered alongside previously unappreciated factors for either broad tissue groups (e.g. foregut endoderm derivatives) or individual organs (Figure 3a). As proof-of-principle, this also included proven regulators of human pluripotency, NANOG, OCT4 and MYC, at an extreme of PC1. Remarkably, in several instances approaching half of the 1000 genes with the most extreme PC loadings imputed co-regulation by a single transcription factor, such as HNF4A in the liver or SRF in the heart. Alongside NR5A1, the data predicted RUNX and BAD as novel regulators of human adrenal and gonadal development (Figure 3a). As a second approach to study gene regulation, we extracted the transcription factors (typically <5%) from amongst the 1000 most extreme genes in PCs 1\u201315 (Supplementary file 1G). We searched the Mouse Genome Informatics database (MGI) and in 309/594 instances there was a relevant mouse mutation phenotype supporting the notion that the transcription factors identified by LgPCA are key regulators of human organogenesis. At the lowest extreme of PC5 (liver) the twenty-two transcription factors contained all three of those required for reprogramming fibroblasts directly to hepatocytes (Huang et al., 2014). This suggests novel fate programming roles for transcription factors at the extremes of other PCs (including new potential regulators of pluripotency amongst the sixteen factors containing zinc fingers in PC1). In keeping with these regulatory roles, the extreme PC loadings in the LgPCA data also prioritized those transcription factors responsible for major congenital disorders (Supplementary file 1G). Because LgPCA is not limited to individual organs this included a novel ability to predict multisystem abnormalities such as the combined heart and limb defects of Holt-Oram syndrome (OMIM 142900, TBX5, PC13 low) or the palate and limb abnormalities associated with mutations in TP63 (OMIM 603543, PC3 high).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig3-v1.jpg)\n\n**Figure 3.:** (a) Predicted regulation by iRegulon (Janky et al., 2014) of the most extreme 1000 genes for different PCs identifies known and unexpected transcription factors regulating human organogenesis. In several examples, individual transcription factors (e.g. REST, NR5A1, HNF4A, FOXA1 and SRF) were predicted to regulate nearly half of the most extreme 1000 genes. (b) Transcription factors at the extremes of individual PCs in the LgPCA are responsible for a diverse range of congenital disorders (red names in the ovals for heart and testis; full details in Supplementary file 1G). To validate the utility of these data, we conservatively selected some of the earliest critical regions for these disorders (two \u2018Proven\u2019 examples on the left; all 53 listed in Supplementary file 1H). LgPCA frequently isolated the correct transcription factor from an average of 111 genes across >10\u00a0Mb, shown for NKX2-5 in congenital heart disease and SOX9 in campomelic dysplasia. Beyond this validation LgPCA similarly predicts causative transcription factors (blue) for many unresolved congenital disorders such as developmental heart abnormalities in Chr1p36 deletion syndrome and sex reversal / disorders of sex differentiation (DSD) (all 13 examples in Supplementary file 1H).\n\nMutations in genes encoding transcription factors are over-represented causes of congenital disorders, most likely due to their critical function during organogenesis and inadequacy when haploinsufficient. The enrichment of transcription factors with specific disease-associations at the extremes of the LgPCA implicates the co-enriched genes as leading candidates for unanswered clinical syndromes. To test this model we identified some of the earliest chromosomal mapping or patient deletion data for the known disease-associated transcription factors from Supplementary file 1G. 53 disorders were suitable for assessment with an average critical region of 13.7\u00a0Mb each containing an average of 111 protein-coding genes (Supplementary file 1H). Strikingly, in 37 instances (73%) LgPCA uniquely selected the correct transcription factor and in 48 instances (91%) narrowed the field down to three or fewer transcription factors. When applied to 13 syndromes (mostly deletion disorders) where the causative gene remains unresolved clear predictions of causality emerge, for instance in cleft palate (DLX5, DLX6, LHX8 and FOXF2) or cerebellar disorders (ZIC1 and ZIC4) (Supplementary file 1H). Frequently, there is an appropriate mutant mouse phenotype such as CASZ1 in cardiac malformations, part of Chr1p36 deletion syndrome, or SOX10 in the 46,XX disorder of sex differentiation (DSD) linked to duplication on Chr22 (Figure 3b and Supplementary file 1H).\n\nNon-coding transcription has emerged as a critical regulator of cell and developmental biology (Goff and Rinn, 2015). A dedicated programme operating during human organogenesis seemed likely as 81 out of the 1571 genes enriched in embryogenesis compared to the fetal datasets were annotated long intergenic non-coding (LINC) transcripts (Supplementary file 1B). To look beyond this we assembled strand-specific transcripts not recognized by current genome annotation [GENCODE 18 (Harrow et al., 2012)] and systematically named them individually according to recommended criteria (Mattick and Rinn, 2015). 6251 unique loci accounted for in excess of 9\u00a0Mb of novel polyadenylated transcription from the human genome (Figure 4a and Supplementary file 1I). The vast majority of transcripts fulfilled criteria as lnc RNAs by assessment of coding potential (CPAT score <0.2) (Figure 4b), length over 200 base pairs (bp) and an absence of reads spanning splice junctions to currently annotated genes (Mattick and Rinn, 2015). These lncRNAs were classified as either bidirectional, antisense or overlapping, or by exclusion intergenic, according to orientation and position in relation to the annotated genome (Mattick and Rinn, 2015). Transcripts were most commonly 500\u20131,500 bp but could extend to over 600 Kb (Figure 4c) and showed high tissue-specificity with the median Tau value (Yanai et al., 2005) of 0.86, much higher than for protein-coding genes (0.63) but consistent with previously annotated non-coding genes (0.89). We investigated the association between this novel human embryonic transcriptome and the annotated genome. Reduced physical distance to expressed annotated genes markedly increased the likelihood of novel transcript co-expression (Figure 4e), although the best correlations were by no means always with the closest gene (Figure 4f\u2013g). The median distance to the closest annotated gene was 7.7 Kb (Figure 4\u2014figure supplement 1) while on average the best correlation was at 188 Kb (random prediction was 476 Kb). Over half (3634) of the lnc transcripts were classified positionally as LINC RNAs. While LINC RNAs can harbour important regulatory function, how to forecast their relationship(s) with the protein-coding genome and prioritize the investigation of thousands of new transcripts is immensely challenging (Goff and Rinn, 2015). As a first step, the multi-tissue nature of our dataset allowed intricate correlative patterns to be deciphered implying putative relationships; for instance over a 2 Mb window and across numerous genes on chromosome 7 between HE-LINC-C7T121 and TBX20, which encodes a developmental cardiac transcription factor mutated in a wide range of congenital heart disease (Figure 4h).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig4-v1.jpg)\n\n**Figure 4.:** (a) Novel transcript models were merged across tissues (n\u00a0=\u00a09180; Supplementary file 4), assessed for coding potential using CPAT and classified (Mattick and Rinn, 2015) as overlapping (OT), antisense (AS), bidirectional (BI), intergenic noncoding (LINC) and/or transcripts of uncertain coding potential (TUCP, if CPAT >0.2). LINC or TUCP transcripts were numbered sequentially (T number) along each chromosome (C, either X, Y or 1\u201322) whereas BI, AS and OT transcripts were named by association with the annotated gene (\u2018Z\u2019). A small proportion of transcripts fulfilled dual criteria as BI/AS/OT and TUCP. 6251 unique, non-overlapping, filtered transcript models were identified (the longest from each locus, >200\u00a0bp; Supplementary file 1I). (b) Histogram of coding probability determined using CPAT (Wang et al., 2013). 9% of transcripts were classed as TUCP. The small proportion with clear open reading frames (CPAT score = 1.0) were predominantly OT transcripts. (c) Distribution by size of transcript. 114 transcripts were >10\u00a0Kb. (d) Tissue specificity was calculated using Tau (Yanai et al., 2005) based on the mean normalized read counts for each tissue or organ site. 80% of transcripts showed Tau values >0.7 indicating high tissue specificity. Details on exon and read counts, and proximity to surrounding genes are shown in Figure 4\u2014figure supplement 1. (e) Box and whisker plots show the correlation between expression of the novel transcripts and surrounding annotated genes within set chromosomal distances of the novel transcriptional start site. Mean correlation was near zero beyond 1\u00a0Mb. (f) Histogram showing the correlation (r) between expression of each novel transcript and its closest annotated gene. One quarter of novel transcripts show a\u00a0correlation (r\u00a0>\u00a00.71) with the nearest gene; another quarter shows minimal correlation (r = \u00b10.14). There was no strong anticorrelation. g-h, Expression of the novel transcript is not always correlated with the immediately adjacent gene, illustrated by heatmaps across the 15 organs and tissues. (g) Expression of the novel transcript, HE-LINC-C6T24, located just over 2\u00a0Kb from FOXQ1, correlates strongly with FOXF2, approximately 65\u00a0Kb distant. (h) Heatmap demonstrates the\u00a0poor correlation of expression between HE-LINC-C7T121 and most of the nine genes within 1\u00a0Mb on Chr7 but near perfect correlation with TBX20 located ~0.7 Mb away beyond two intervening genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15657/elife-15657-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a\u2013c) Histograms showing the number of exons (a), maximum read count for each transcript in any one tissue (b), and total reads (i.e. summed across all tissues) for each transcript (c). (d) Distance to the transcriptional start site (TSS) of the nearest annotated gene (GENCODE18) from the TSS of the novel transcript.\n\nTaken together, this study reports the first comprehensive transcriptomic atlas during human organogenesis to complement parallel initiatives from later development and adulthood (Jaffe et al., 2015; Roadmap Epigenomics Consortium, 2015; Roost et al., 2015). Subjecting transcription from many sites to a method of analysis that incorporated developmental lineage deciphered novel genetic signatures, predicted causality in many human developmental disorders and associated novel non-coding transcription with expression from the surrounding protein-coding genome. At present, the data arise from a relatively narrow window of embryonic development but set the stage for future longitudinal studies for individual organs over time. The tiny amounts and scarcity of human embryonic tissue also necessitated aspects of pooling across different Carnegie stages for some sites but it is striking that this had no impact on ascertaining organ and tissue-specific transcriptomic signatures by LgPCA. The integrated data are expected to be particularly valuable to stem cell researchers examining the fidelity of PSC differentiation in vitro or searching for transcription factors for direct reprogramming of chosen cell lineages. Finally, the discovery of a major new programme of non-coding transcription adds a fresh layer of detail on the spatiotemporal regulation of the human genome.\n\n## Materials and methods\n\n### Human material\n\nHuman embryonic material was collected under ethical approval, informed consent and according to the Codes of Practice of the Human Tissue Authority and staged by the Carnegie classification as described previously (Jennings et al., 2013). This clinical material was collected on site overseen by our research team with immediate transfer to the laboratory. Individually identified tissues and organs (details in Supplementary file 1A) were immediately dissected. The adrenal gland, whole brain, heart, kidney, liver, entire limb buds, lung, stomach, testis, thyroid and anterior two-thirds of the tongue were readily identifiable as discrete organs and tissues. All visible adherent mesenchyme was removed from organs and tissues under a dissecting microscope. For the adrenal gland, this includes the capsule which allowed separation from the kidney. The ureter, emerging from the renal pelvis, was removed separately from the kidney. For the heart, a window of tissue was removed from the lateral wall of the left ventricle. A segment of the liver was dissected from each embryo that avoided the developing gall bladder. The trachea was removed from the lung at its entry point into the lung parenchyma. The stomach was identified between the gastro-oesophageal and pyloric junctions. The testis was dissected free from the attached mesonephros. While the thyroid was readily visualized as a discrete organ in the neck, it unavoidably contained the developing parathyroids and thus this tissue type was referred to throughout as \u2018thyroid/PTH\u2019. The palatal shelves were dissected on either side of the midline. The eye was dissected and the RPE peeled off mechanically from its posterior surface with validation possible under the dissecting microscope because the RPE is very darkly pigmented compared to the other ocular structures. All samples were collected into Trizol (Thermofischer) or Tri reagent (Sigma-Aldrich) for total RNA isolation as individual tissue or organ types followed by treatment with DNaseI (Sigma-Aldrich). Once the quality of each RNA sample had been confirmed, samples were pooled in order to obtain sufficient RNA for each biological replicate (Supplementary file 1A). The pancreas dataset derived from the same tissue collection was re-used from a previous study (Cebola et al., 2015).\n\n### RNA-seq and transcriptome\n\nQuality and integrity of total RNA samples were assessed using a 2100 Bioanalyzer or a 2200 TapeStation (Agilent Technologies) according to the manufacturer\u2019s instructions. RNA sequencing (RNA-seq) libraries were generated using the TruSeq Stranded mRNA assay (Illumina, Inc.) according to the manufacturer\u2019s protocol. Briefly, total RNA (0.1\u20134\u00a0\u00b5g) was used as input material from which polyadenylated mRNA was purified using poly-T, oligo-attached, magnetic beads. The mRNA was then fragmented using divalent cations under elevated temperature and then reverse transcribed into first strand cDNA using random primers. Second strand cDNA was then synthesized using DNA Polymerase I and RNase H. Following a single 'A' base addition, adapters were ligated to the cDNA fragments, and the products purified and enriched by PCR to create the final cDNA library. Adapter indices were used to multiplex libraries, which were pooled prior to cluster generation using a cBot instrument. The loaded flow-cell was then sequenced (paired-end; 101 + 101 cycles, plus indices) on an Illumina HiSeq2000 or HiSeq2500 instrument. Demultiplexing of the output data (allowing one mismatch) and BCL-to-Fastq conversion was performed with CASAVA 1.8.3. The RNA-seq was conducted in three batches at different times as a necessity of how human embryonic tissue was collected over time (Supplementary file 1A). Where organs were sequenced across batches (palate, RPE, kidney, testis, adrenal gland, heart / left ventricle and liver) biological replicates clustered together (Figure 1\u2014figure supplement 4).\n\nRNA-seq reads from the Illumina platform were mapped to the human genome (hg19) strand-specifically using TopHat 2.0.9 (Trapnell et al., 2012) and the GENCODE 18 gene annotation set (Harrow et al., 2012). We also remapped the published pancreas RNA-seq dataset (Cebola et al., 2015) obtained from material isolated previously in our laboratory. Additionally, a dataset of hepatocyte differentiation RNA-seq (Du et al., 2014 GEO: GSE54066) was downloaded, re-mapped and quantified as per our own data. Commonly applied RNA-seq normalisation methods such as TMM assume a small proportion of differentially expressed genes in any one dataset (Dillies et al., 2013). Because the highly distinct tissues surveyed here differed strongly on the scale of thousands of genes (for instance liver versus brain) we used quantile normalisation which gave a lower median coefficient of variation than either no or TMM normalization. Read counts from the different datasets were quantile normalized using the R package preprocessCore (Bolstad, 2007). Tissue-specificity was scored per gene using Tau (Yanai et al., 2005) on normalized read counts across all samples. Initial genome-wide relationships were assessed using PCA (Figure 1\u2014figure supplement 3) and hierarchical clustering (heatmap, Figure 1\u2014figure supplement 4).\n\nTo compare our samples with RNA-seq from the NIH Roadmap project (Roadmap Epigenomics Consortium, 2015) uniquely mapped strand-specific RNA-seq reads were counted into a set of non-redundant exon annotations (custom made from GENCODE 18 annotations) using bedtools intersect (Quinlan and Hall, 2010). Exon level counts were then summed into a single total per gene per sample. Counts were quantile normalized across samples. NIH roadmap samples (Roadmap Epigenomics Consortium, 2015) used in this study are listed in Supplementary file 1J. For the analysis of human embryonic RNA-seq with comparable Roadmap fetal data (adrenal gland, heart, kidney, lung, limbs, stomach and testis) a single pairwise differential expression test was undertaken using the R package edgeR (Robinson et al., 2010) and an FDR < 0.05.\n\n### NMF\n\nNon-negative matrix factorisation (NMF) searches complex expression data, comprising thousands of genes, for a small number of characteristic \u2018metagenes\u2019 (Gaujoux and Seoighe, 2010). NMF was performed using the nmf R package (version NMF_0.20.5) (Gaujoux and Seoighe, 2010) to extract tissue-specific metagenes. Non-normalised read counts were filtered to remove all Y-linked genes, the X-inactivation gene XIST and genes with fewer than 100 reads across all samples. Initially 50 runs each of ranks 11\u201318 and using the default \u2018Brunet\u2019 algorithm (Brunet et al., 2004) were performed to find an optimal factorisation \u2018rank\u2019 (r). The maximal cophenetic distance was used to select the value of r. Subsequently, 200 runs using the optimal rank were performed to assess consistency of sample groupings between runs. Non-overlapping (i.e. tissue-specific) gene sets were extracted from each metagene by filtering on basis contribution >0.8.\n\n### LgPCA\n\nThe LgPCA approach was adapted from established phylogenetic PCA methodology (Jombart et al., 2010b) and performed using quantile-normalized, gene-level read counts, a high memory (512\u00a0Gb) compute node and the ppca function from the adephylo R package (Jombart et al., 2010a). A broad user-defined guide tree (Figure 2b) based on well-established knowledge of mammalian gastrulation and downstream lineage relationships was imposed on the different organ and tissue types following which the adephylo R package weighted the principal components by the lineage auto-correlation between samples; increased if related samples were similar and lessened if related samples were more different. As in the description from Jombart and colleagues the resulting components represented \u2018global\u2019 structures (where similarity is high between related samples) and \u2018local\u2019 structures (where related samples are dissimilar) (Jombart et al., 2010b). We used the LgPCA to extract all the global patterns from the data (PCs 1\u201315). These patterns were not apparent if lineage relationships were not included nor were they altered if any one tissue, such as palate, was altered within the broad lineage structure (data not shown). The global patterns in PCs 1\u201315 infer co-regulatory patterns of gene expression across human organogenesis. The \u2018local\u2019 patterns thereafter captured heterogeneity between tissue replicates (Figure 2\u2014figure supplement 1) (while PC7 separated the two PSC populations these RNA-seq datasets represent separate\u00a0cell lines from NIH Roadmap). We used the Abouheif distance as implemented in adephylo (Jombart et al., 2010a), which takes into account the topology of the specified tree but does not use branch lengths.\n\n### Gene set enrichment\n\nFor the comparison of the embryonic versus fetal datasets Gene Ontology term enrichment was performed on upregulated genes (FDR < 0.05) using Fisher\u2019s exact test with the elimination algorithm of the R package topGO (Alexa and Rahnenfuhrer, 2010). For the LgPCA, annotated ontology nodes (>10 genes) were tested for each loadings vector for each PC against background using the Wilcoxon test. Tests were performed sequentially moving up the separate GO ontologies (Biological Process (BP), Molecular Function (MF) and Cellular Component (CC)), excluding significant scoring genes from later tests (the topGO \u2018elim\u2019 method).\n\n### iRegulon analysis of regulation in the extremes of the LgPCA\n\niRegulon is a computational method which tests for enrichment amongst precomputed motif datasets to decipher transcriptional regulatory networks in a set of co-expressed genes. The 1000 genes with the most extreme loadings at either end of each PC (\u2018high\u2019 and \u2018low\u2019) from the LgPCA were loaded into Cytoscape (version 3.2.1) (Shannon et al., 2003) and used as queries to the iRegulon plug-in (version 1.3, build 1024) (Janky et al., 2014). 20\u00a0Kb was examined centred on the transcriptional start site (TSS) under default settings.\n\n### Novel transcripts\n\nSample-specific transcriptomes were assembled with Cufflinks (version 2.2.0) (Trapnell et al., 2010). Transcriptomes were combined (\u2018cuffmerge\u2019; -min-isoform-fraction\u00a0=\u00a00.1) and compared with the original GENCODE 18 reference (\u2018cuffcompare\u2019). We filtered out known transcripts using the \u2018Transfrag class codes\u2019 (http://cole-trapnell-lab.github.io/cufflinks/cuffcompare/#transfrag-class-codes) to retain only wholly intronic (\u2018i\u2019, of which there were none), unknown (\u2018u\u2019), antisense (x) and overlapping (\u2018o\u2019) transcripts. We discarded all other classes including pre-mRNA (class \u2018e\u2019), novel-isoforms spliced to known exons (class \u2018j\u2019), and 3\u2019 run-ons within 2\u00a0kb of the end of the transcript annotation (class \u2018p\u2019). In addition, some remaining non-spliced transcripts may theoretically represent first or last exon (UTR) extensions; to delimit these, we calculated the distance on the same strand to the closest downstream transcription start site (to consider potential 5\u2019 UTR extension) and upstream transcription termination site (to consider potential 3\u2019 UTR extension). Names were assigned to these novel transcripts following suggested criteria (Mattick and Rinn, 2015) (Figure 4a) with the sole adaptation that bidirectional (BI) transcripts were defined as having their TSS within 1\u00a0Kb of the TSS of the associated annotated gene. No transcripts mapped to the same strand within the introns of any annotated gene excluding the possibility of unspliced transcripts from annotated genes being erroneously defined as novel transcripts. All transcript sequences (annotated and unannotated) were scored for protein-coding potential using CPAT (based on human training data included with CPAT) (Wang et al., 2013). A threshold of >0.2 was used to define \u2018Transcripts of Uncertain Coding Potential\u2019 (TUCP). Where there were multiple transcripts from a single locus, the longest transcript was retained in assembling the final dataset of 6251 novel transcripts. Transcript level read counts for the embryonic samples and NIH Roadmap samples (Supplementary file 1J) were generated for the merged transcriptome using bedtools multicov (vers 2.21.0) (Quinlan and Hall, 2010). The correlations between each of the 6251 transcripts and all annotated genes within 1\u00a0Mb were calculated using only the human embryonic data from this study.\n\n### Data availability\n\nMapping coordinates against multiple genome versions using a range of common pipelines and summary count data are hosted at www.manchester.ac.uk/human-developmental-biology. To view data in the UCSC genome browser, a trackhub is available: http://www.humandevelopmentalbiology.manchester.ac.uk/data/hub_manchester_hdb/hub.txt.\n",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "acfd64a5-9266-47c1-a59f-10ba5699bd97",
+      "submission_id": "26223f46-18b0-4ce7-9e58-38e1e5d3baf0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Janet Rossant, University of Toronto , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15657.023](https://doi.org/10.7554/eLife.15657.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An integrative transcriptomic atlas of organogenesis in human embryos\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Janet Rossant as the Senior Editor and Reviewing Editor. One of the three reviewers has agreed to reveal their identity: Majlinda Lako.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. Given the nature of this contribution, we would like to consider it in the category of a Tools and Resources paper.\n\nThis paper provides transcriptional profiles from different tissues during early human embryogenesis and as such represents a significant and novel contribution. To date most of our knowledge on human embryogenesis is based on extrapolation from model animals. These new data will provide a resource to the community enabling more understanding of tissue differentiation and organogenesis. It will also help with identification of new disease genes and understanding developmental defects.\n\nEssential revisions:\n\n1) There are some important issues raised by two of the reviewers with regard to the statistical analysis of the data. These concerns are provided in detail below and must be addressed in the revised manuscript.\n\n2) The linkage of the transcriptional data to developmental disorders is not well validated. There is considerable mouse developmental and phenotype data available in databases that could be mined to enhance the value of your findings and help determine whether the genes identified are truly key regulators of tissue development.\n\n3) The claim that novel transcripts are likely lncRNAs was questioned and needs to be analyzed more carefully.\n\nStatistical issues:\n\nThere are concerns of the methodology that would require further clarification:\n\nFor the NMF, while the implementation of the methods is likely to be appropriate, there may be a potential flaw in the interpretation of what the analysis may achieved. Regarding \"non-overlapping\" metagenes, by default, genes can be represented in multiple metagenes, based on the Brunet algorithm in the NMF R package (also the default algorithm). The Methods state that this algorithm has been used, so following on from that, the assertion that \"non-overlapping metagenes\" could be extracted from the complete dataset and the \"potential of coordinated deployment of overlapping genes\" is ignored may be incorrect. Furthermore, the critique that \"NMF failed to discriminate transcriptional signatures for a number or organs or tissues, or discern the relationships between them\u2026 \" may also apply to the outcome of lgPCA. Therefore, this is not a compelling argument for discarding the NMF.\n\nThe analysis could have been taken further to examine the enrichment of all the metagenes, similarly to the one for liver (Figure 1\u2014figure supplement 3B) for all the specific tissue metagenes (\u201cclear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland\u201d), and a similar approach could be taken for the downstream functional analysis of lgPCA.\n\nFor lgPCA, while the interpretation of the results would be correct, there is confusion in the nomenclature of loading and scores, which are fundamental concepts in PCA. PC scores refer to the eigenvalues (magnitude of variance) which determine the separation between the samples (as can be gleaned from Figure 2B). PC loadings are eigenvectors and describe the contribution of the variables (in this case genes) that causes the separation of the samples. Therefore, PC scores should rightly be PCA loadings (main text, third and fourth paragraphs). This confusion should be attended to. Additionally, it would be helpful to mention at least once in the main text that when referring to \"PC1 low\" for example, this is meant to be low/negative PC1 scores.\n\nBoth NMF and lgPCA are doing similar things, i.e. clustering samples based on gene expression to find which genes drive sample separation. The differences are that NMF can reveal the similarity between gene expression patterns for samples, which are clustered with the same metagenes, in this case kidney and testis to metagene 3, (Figure 2\u2014figure supplement 3B). LgPCA can discern the differences in gene expression between certain samples (for example Brain and liver in PC2 of Figure 2B). If it was intended to include the NMF analysis in this study, a point should be made as the rationale of which samples are to be clustered together and why, before the results may be compared to those from the lgPCA. Alternatively, the NMF analysis can be omitted since the lgPCA method is sufficient to accomplish the data analysis.\n\nThe analysis presented in Figure 1C compares the authors' data with that presented in the fetal datasets from the NIH Roadmap. The authors claim substantial up-regulation of sets of genes in their dataset but this is not quantified statistically (instead an arbitrary cut-off of >2-fold enrichment was employed). While there is relatively little data from which to perform a rigorous analysis it should be possible to use appropriate models (gaining power across genes such as GSEA) to find enriched categories in a more robust manner than presented here (i.e., this would allow appropriate correction for multiple testing).\n",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c524245-96c7-4165-a2b7-98e3f91ad799",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C1",
+      "claim": "Human organogenesis is when severe developmental abnormalities commonly originate.",
+      "claim_type": "EXPLICIT",
+      "source": "Human organogenesis is when severe developmental abnormalities commonly originate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "53c6b410-38ff-4386-82a2-9d897224d6d4",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C2",
+      "claim": "Understanding human organogenesis has relied upon inference from patient phenotypes and assumptions from in vitro stem cell models and non-human vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "However, understanding this critical embryonic phase has relied upon inference from patient phenotypes and assumptions from in vitro stem cell models and non-human vertebrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "4aca3a77-cb06-40f4-8a9d-fe9e5f39a1e5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C3",
+      "claim": "The study reports an integrated transcriptomic atlas of human organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We report an integrated transcriptomic atlas of human organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the manuscript, supported by the data presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "8f34f43d-9d83-4d8a-9351-bed67bd05f21",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C4",
+      "claim": "Lineage-guided principal components analysis uncovered novel relatedness of particular developmental genes across different organs and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "By lineage-guided principal components analysis, we uncover novel relatedness of particular developmental genes across different organs and tissues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LgPCA analysis presented in Figure 2 and related text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "3694093e-716a-42d4-8a21-43b818a77eb5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C5",
+      "claim": "The study identified unique transcriptional codes which correctly predicted the cause of many congenital disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "By lineage-guided principal components analysis, we uncover novel relatedness of particular developmental genes across different organs and tissues and identified unique transcriptional codes which correctly predicted the cause of many congenital disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis in Figure 3 and Supplementary file 1H showing prediction of causative genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "c4ebb839-55d0-43df-bbc2-44400ee86827",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C6",
+      "claim": "The model pinpoints co-enriched genes as new causes of developmental disorders such as cleft palate and congenital heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "By inference, our model pinpoints co-enriched genes as new causes of developmental disorders such as cleft palate and congenital heart disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference from the LgPCA analysis and is speculative regarding novel causative genes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "20018a67-21cc-4bbc-b8ee-c4425e4f16f3",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C7",
+      "claim": "The data revealed more than 6000 novel transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The data revealed more than 6000 novel transcripts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the transcript assembly data presented in Figure 4 and Supplementary file 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "fc4212cf-a46d-4cf8-8ac5-7fc4feb72b0e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C8",
+      "claim": "Over 90% of the novel transcripts fulfil criteria as long non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The data revealed more than 6000 novel transcripts, over 90% of which fulfil criteria as long non-coding RNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the CPAT analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f8579752-6f89-4369-9e38-a54ab8948c69",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C9",
+      "claim": "The novel long non-coding RNAs are correlated with the protein-coding genome over megabase distances.",
+      "claim_type": "EXPLICIT",
+      "source": "over 90% of which fulfil criteria as long non-coding RNAs correlated with the protein-coding genome over megabase distances.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 4e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "d6bc2d19-6acb-40e1-91e7-33fa89f57cd8",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C10",
+      "claim": "Previous transcriptomics post-implantation have sampled either the whole embryo by expression microarray, lacking organ-specific resolution and the vast majority of long non-coding transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous transcriptomics post-implantation have sampled either the whole embryo by expression microarray (Fang et al., 2010), thus lacking organ-specific resolution and the vast majority of long non-coding (lnc) transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "655f1077-81f4-45ed-be53-99c7a3ffa66e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C11",
+      "claim": "Previous studies included lnc expression by RNA-seq but focused on single sites such as limb bud or pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "or included lnc expression by massively parallel short-read RNA sequencing (RNA-seq) but focussed on single sites such as limb bud (Cotney et al., 2013) or pancreas (Cebola et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "bafc6306-a8e8-425c-b7bd-c76f12e7aefa",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C12",
+      "claim": "RNA-seq from NIH Roadmap and other studies during or after the end of the first trimester falls after the embryonic period.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq from NIH Roadmap and other studies during or after the end of the first trimester of pregnancy falls after the embryonic period (which ends at 56\u201358 days post-conception (Carnegie Stage 23))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to NIH Roadmap studies and established knowledge about embryonic development timing.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2608abe6-8f88-406b-b7a9-53ed545f7819",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C13",
+      "claim": "The embryonic period ends at 56-58 days post-conception (Carnegie Stage 23).",
+      "claim_type": "EXPLICIT",
+      "source": "(which ends at 56\u201358 days post-conception (Carnegie Stage 23))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about human embryonic development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "d123cb55-d1bf-4927-afc4-646e7bccc376",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C14",
+      "claim": "NIH Roadmap fetal data commonly reflects near terminal differentiation within heterogeneous fetal organs and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq from NIH Roadmap and other studies during or after the end of the first trimester of pregnancy falls after the embryonic period (which ends at 56\u201358 days post-conception (Carnegie Stage 23)) and commonly reflects near terminal differentiation within heterogeneous fetal organs and tissues (Jaffe et al., 2015; Roadmap Epigenomics Consortium, 2015; Roost et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "fd2d26b9-775a-450e-91ef-e3a604344e50",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C15",
+      "claim": "Fifteen human embryonic sites were sampled for transcriptomic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Organs and tissues from fifteen human embryonic sites were sequenced in two sets of biological replicates (except pancreas and tongue) to generate 28 strand-specific RNA-seq datasets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental design described and shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "bece9c15-03ca-4203-b4ee-67e1047ba5c1",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C16",
+      "claim": "The study generated 28 strand-specific RNA-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Organs and tissues from fifteen human embryonic sites were sequenced in two sets of biological replicates (except pancreas and tongue) to generate 28 strand-specific RNA-seq datasets",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the methods and supported by Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "d460f59d-e832-4e39-8449-3d701f90ed15",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C17",
+      "claim": "Each replicate had 44-90 million uniquely mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Organs and tissues from fifteen human embryonic sites were sequenced in two sets of biological replicates (except pancreas and tongue) to generate 28 strand-specific RNA-seq datasets with 44\u201390 million uniquely mapped reads per replicate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "3a6561d8-5240-4449-af11-fda9938a43e5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C18",
+      "claim": "Approximately 70% of protein-coding genes contained 100-10,000 mapped reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Global transcription rates across all organs and tissues were comparable over a high dynamic range; approximately 70% of protein-coding genes contained 100\u201310,000 mapped reads (Figure 1b; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "7d883e31-0786-4fcb-a0ac-a9a42062b652",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C19",
+      "claim": "There were three-fold the number of differentially expressed genes in the fetal datasets compared to embryonic datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three-fold the number of differentially expressed genes in the fetal datasets but equivalent enrichment of gene ontology (GO) terms in the embryo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison analysis shown in Figure 1c and Supplementary file 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "77e24831-aa79-4e91-865f-269db30de11a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C20",
+      "claim": "Embryonic datasets showed equivalent enrichment of gene ontology terms compared to fetal datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "There were three-fold the number of differentially expressed genes in the fetal datasets but equivalent enrichment of gene ontology (GO) terms in the embryo",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the GO analysis shown in Figure 1c and Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "6178a2c9-923d-48f5-8b4d-9914e10ecd0c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C21",
+      "claim": "Embryonic datasets showed enrichment for early developmental processes such as morphogenesis of an epithelial bud, anterior/posterior pattern specification and embryonic morphogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "including many early developmental processes such as morphogenesis of an epithelial bud, anterior/posterior pattern specification and embryonic morphogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the GO analysis shown in Figure 1c and Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "326a6108-b44d-446a-88a9-8c3e863a5358",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C22",
+      "claim": "Fetal datasets showed enrichment for homeostatic processes.",
+      "claim_type": "EXPLICIT",
+      "source": "These were in contrast to homeostatic processes enriched in the fetal dataset (Figure 1c; Supplementary file 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the GO analysis shown in Figure 1c and Supplementary file 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "a173c13f-1942-4266-b504-f291ad08e741",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C23",
+      "claim": "ZNF and ZSCAN family members were broadly expressed across human embryonic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While ZNF and ZSCAN family members were broadly expressed discrete site-specific expression was more apparent for individual members of other transcription factor families (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "79b578c7-9589-4819-8bc2-b79e3da1119a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C24",
+      "claim": "Individual members of other transcription factor families showed discrete site-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While ZNF and ZSCAN family members were broadly expressed discrete site-specific expression was more apparent for individual members of other transcription factor families (Figure 1\u2014figure supplement 1) exemplified by the HOX gene clusters (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1\u2014figure supplement 1 and Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "bb6e08fd-4d72-475c-b6a0-44efdfdb4e35",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C25",
+      "claim": "HOX gene clusters exemplify discrete site-specific expression.",
+      "claim_type": "EXPLICIT",
+      "source": "discrete site-specific expression was more apparent for individual members of other transcription factor families (Figure 1\u2014figure supplement 1) exemplified by the HOX gene clusters (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f01fd4ab-9b2f-43d0-b253-2c032ffc7727",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C26",
+      "claim": "User-defined sets of up to five developmental transcription factors characteristic for a particular organ or tissue displayed very high levels of tissue specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "User-defined sets of up to five developmental transcription factors characteristic for a particular organ or tissue displayed very high levels of tissue specificity (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the validation shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "4d8424bc-c61b-4b44-b7ba-a802af3af5cb",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C27",
+      "claim": "Principal components analysis grouped biological replicates but did not resolve relationships between different organs and tissues other than the distinctiveness of brain and liver.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while principal components (PC) analysis (PCA) or clustering grouped biological replicates, relationships between different organs and tissues other than the distinctiveness of brain and liver were not resolved (Figure 1\u2014figure supplements 3\u20134).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA and clustering analyses shown in Figure 1\u2014figure supplements 3-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "aa1a7c0f-b73a-4a0c-ab8c-c341415937a5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C28",
+      "claim": "Non-negative matrix factorisation identified eleven non-overlapping 'metagenes' from the complete expression dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "By setting the parameters such that representative genes were only extracted once, we identified eleven non-overlapping 'metagenes' from the complete expression dataset with clear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland (Figure 1\u2014figure supplement 5; Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the NMF analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "79d579fe-3145-4013-a149-76a3bfc665e1",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C29",
+      "claim": "NMF metagenes showed clear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland.",
+      "claim_type": "EXPLICIT",
+      "source": "we identified eleven non-overlapping 'metagenes' from the complete expression dataset with clear tissue-specific signals for thyroid, liver, RPE, brain, heart and adrenal gland (Figure 1\u2014figure supplement 5; Supplementary file 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the NMF analysis shown in Figure 1\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "214c8c84-0f7d-4dba-9c69-0aaa83e9dec7",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C30",
+      "claim": "Metagene 2 consists of 39 genes indicative of human embryonic liver.",
+      "claim_type": "EXPLICIT",
+      "source": "From this starting point, we wanted to move beyond the unique organ-specific signatures to study how patterns of gene expression co-varied across tissues. While relaxing NMF parameters would allow non-exclusive gene selection across metagenes, we also wanted to capture differences in gene expression between organs (e.g. aspects of what is not expressed as a contributing factor to an organ's identity). Moreover, different embryonic organs are related according to developmental lineage. We reasoned that being able to apply a lineage structure would create natural assemblies of co-regulated genes (Figure 2a). Accordingly, we adapted a method from spatial ecology and phylogenetics (Jombart et al., 2010a, 2010b) to constrain PCA by imposing a hierarchical developmental lineage and termed this approach LgPCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the NMF analysis and the description of metagene 2 in the context of Figure 1\u2014figure supplement 5b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "a7b30545-b9be-40a1-b68c-c13f184d81ae",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C31",
+      "claim": "Stem cell-derived hepatocytes and primary hepatocytes showed clear enrichment for metagene 2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Clear enrichment for the stem cell-derived hepatocytes and the primary hepatocytes (but not the fibroblasts) was apparent in metagene 2, the cluster of 39 genes indicative of human embryonic liver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 1\u2014figure supplement 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "8b367ca0-0b4a-4630-8184-2bb58fe7671c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C32",
+      "claim": "Human embryonic fibroblasts did not show enrichment for metagene 2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Clear enrichment for the stem cell-derived hepatocytes and the primary hepatocytes (but not the fibroblasts) was apparent in metagene 2",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Figure 1\u2014figure supplement 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "721f77cc-73f4-4e63-ad4f-909851467547",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C33",
+      "claim": "The study adapted a method from spatial ecology and phylogenetics to constrain PCA by imposing a hierarchical developmental lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we adapted a method from spatial ecology and phylogenetics (Jombart et al., 2010a, 2010b) to constrain PCA by imposing a hierarchical developmental lineage and termed this approach LgPCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the original methods and description of the adaptation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2a2ba6f9-e40e-4016-b4a6-5f5e599e3fe6",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C34",
+      "claim": "The adapted method was termed LgPCA (Lineage-guided Principal Components Analysis).",
+      "claim_type": "EXPLICIT",
+      "source": "we adapted a method from spatial ecology and phylogenetics (Jombart et al., 2010a, 2010b) to constrain PCA by imposing a hierarchical developmental lineage and termed this approach LgPCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2bad55da-781a-4f0f-a81d-63df93dd8335",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C35",
+      "claim": "The study included RNA-seq from undifferentiated human embryonic stem cells to represent pre-gastrulation human biology.",
+      "claim_type": "EXPLICIT",
+      "source": "We also included RNA-seq from undifferentiated human embryonic stem cells (Roadmap Epigenomics Consortium, 2015) to represent pre-gastrulation human biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "dd118a4b-5194-4d15-8ea6-d1c2a471c54d",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C36",
+      "claim": "LgPCA generated thirty-one principal components.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the total thirty-one principal components (PCs) arising from LgPCA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "94404130-3f23-4b9b-af1e-ea906793a642",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C37",
+      "claim": "The first fifteen principal components from LgPCA identified patterns of gene expression across groups of related tissues and unique organ-specific signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the total thirty-one principal components (PCs) arising from LgPCA the first fifteen now identified patterns of gene expression across groups of related tissues in addition to unique organ-specific signatures (Figure 2b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "ef8aed7f-431d-43b8-ae27-07c106f69087",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C38",
+      "claim": "PCs 16-31 from LgPCA sampled heterogeneity within individual organs and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "while PCs 16\u201331 sampled heterogeneity within individual organs and tissues (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "54b3285f-ca87-4263-9bae-62cdef99edab",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C39",
+      "claim": "PC1 high loadings represent pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with this transition PCs 1\u20134 ordered samples reminiscent of very early developmental events: pluripotency (extreme positive loadings in PC1; 'PC1 high')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis and the inclusion of ESC data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "b281aced-1218-4816-adb3-c977d7c92c1f",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C40",
+      "claim": "PC2 low loadings represent early brain formation.",
+      "claim_type": "EXPLICIT",
+      "source": "early brain formation (extreme negative loadings in PC2; 'PC2 low')",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "c003886a-3768-478b-8c84-488a925b45c7",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C41",
+      "claim": "PC4 low loadings represent foregut endoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "foregut endoderm (PC4 low)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "3474495a-28c2-4397-b9b6-4fe19f123536",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C42",
+      "claim": "PC4 high loadings represent intermediate mesoderm.",
+      "claim_type": "EXPLICIT",
+      "source": "and intermediate mesoderm (PC4 high).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "c93b74d9-329d-4d47-8dee-7b9d2aa3c4c9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C43",
+      "claim": "PCs 5-15 resolved individual organs and tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs 5\u201315 resolved the individual organs and tissues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "ffa8e428-ec21-46d3-acd8-90c9b4235702",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C44",
+      "claim": "Low PC5 loadings discriminated liver from other foregut endoderm derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "for instance low PC5 loadings discriminated liver from the other foregut endoderm derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "22d4a0c8-7ddc-48b5-a82c-b0046a35c527",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C45",
+      "claim": "The 1000 genes with the most extreme loadings in PCs 1-15 were interrogated for regulatory networks based on enrichment of transcription factor motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "We undertook this in two different ways, both based on studying the 1000 genes with the most extreme loadings in PCs 1\u201315 that identified gene co-expression patterns across tissues and within individual organs (Figure 2b; Supplementary file 1E). We interrogated these gene sets for regulatory networks based on the enrichment of transcription factor motifs (Janky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the iRegulon analysis described and shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2154f851-d9be-4a4c-8bdd-a252f5f17098",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C46",
+      "claim": "iRegulon analysis recovered numerous well known master regulators alongside previously unappreciated factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous well known master regulators were recovered alongside previously unappreciated factors for either broad tissue groups (e.g. foregut endoderm derivatives) or individual organs (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "5dc9940c-cbd3-4167-8dbd-0516ce15cd30",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C47",
+      "claim": "NANOG, OCT4 and MYC are proven regulators of human pluripotency.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-principle, this also included proven regulators of human pluripotency, NANOG, OCT4 and MYC, at an extreme of PC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about pluripotency regulators.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "7398f81f-1750-48f5-84d6-de77d597ccfe",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C48",
+      "claim": "NANOG, OCT4 and MYC were identified at an extreme of PC1.",
+      "claim_type": "EXPLICIT",
+      "source": "As proof-of-principle, this also included proven regulators of human pluripotency, NANOG, OCT4 and MYC, at an extreme of PC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "645e82d6-c6c9-457f-bcc5-e4c1c4b6f4d0",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C49",
+      "claim": "In several instances approaching half of the 1000 genes with the most extreme PC loadings imputed co-regulation by a single transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in several instances approaching half of the 1000 genes with the most extreme PC loadings imputed co-regulation by a single transcription factor, such as HNF4A in the liver or SRF in the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "90ebd374-e3c0-461b-9470-423bf2e5993a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C50",
+      "claim": "HNF4A co-regulates approximately half of the most extreme genes in liver.",
+      "claim_type": "EXPLICIT",
+      "source": "such as HNF4A in the liver",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f94a7511-873e-47de-abf7-3c89401d303f",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C51",
+      "claim": "SRF co-regulates approximately half of the most extreme genes in heart.",
+      "claim_type": "EXPLICIT",
+      "source": "or SRF in the heart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "1705121f-9adb-4f5b-8553-bcc27721f45c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C52",
+      "claim": "The data predicted RUNX and BAD as novel regulators of human adrenal and gonadal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Alongside NR5A1, the data predicted RUNX and BAD as novel regulators of human adrenal and gonadal development (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on the iRegulon analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "08eaacb7-a18a-4d36-9af5-ac22346fbd78",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C53",
+      "claim": "Transcription factors comprised typically less than 5% of the 1000 most extreme genes in PCs 1-15.",
+      "claim_type": "EXPLICIT",
+      "source": "As a second approach to study gene regulation, we extracted the transcription factors (typically <5%) from amongst the 1000 most extreme genes in PCs 1\u201315 (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "1556fa72-34a0-4d50-a390-a68a92121f34",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C54",
+      "claim": "In 309 out of 594 instances there was a relevant mouse mutation phenotype supporting the transcription factors identified by LgPCA as key regulators of human organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched the Mouse Genome Informatics database (MGI) and in 309/594 instances there was a relevant mouse mutation phenotype supporting the notion that the transcription factors identified by LgPCA are key regulators of human organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with the MGI database as described.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2cc60ac7-bc55-40f0-bc7f-da8d1ce40b9c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C55",
+      "claim": "At the lowest extreme of PC5 (liver) the twenty-two transcription factors contained all three of those required for reprogramming fibroblasts directly to hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the lowest extreme of PC5 (liver) the twenty-two transcription factors contained all three of those required for reprogramming fibroblasts directly to hepatocytes (Huang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with published reprogramming factors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f1b8d9f4-5c09-4f37-8ec0-89b0b2c43616",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C56",
+      "claim": "The extreme PC loadings in the LgPCA data prioritized transcription factors responsible for major congenital disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with these regulatory roles, the extreme PC loadings in the LgPCA data also prioritized those transcription factors responsible for major congenital disorders (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis shown in Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "8c7c2f6d-5643-465d-af02-9226066156d9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C57",
+      "claim": "LgPCA can predict multisystem abnormalities such as the combined heart and limb defects of Holt-Oram syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Because LgPCA is not limited to individual organs this included a novel ability to predict multisystem abnormalities such as the combined heart and limb defects of Holt-Oram syndrome (OMIM 142900, TBX5, PC13 low)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis identifying TBX5 at PC13 low.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "559a578e-8465-40fd-b8c8-e4ee6a6348f5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C58",
+      "claim": "Holt-Oram syndrome (OMIM 142900) is caused by mutations in TBX5.",
+      "claim_type": "EXPLICIT",
+      "source": "such as the combined heart and limb defects of Holt-Oram syndrome (OMIM 142900, TBX5, PC13 low)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic cause of Holt-Oram syndrome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "dc947199-ae01-4953-b4a1-6c8e05234f55",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C59",
+      "claim": "TBX5 is found at PC13 low in the LgPCA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "(OMIM 142900, TBX5, PC13 low)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "00bb30cd-cafd-442e-91ac-ddd44327a8a2",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C60",
+      "claim": "Palate and limb abnormalities are associated with mutations in TP63 (OMIM 603543).",
+      "claim_type": "EXPLICIT",
+      "source": "or the palate and limb abnormalities associated with mutations in TP63 (OMIM 603543, PC3 high).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the genetic cause of this syndrome.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "58c42e9a-1134-4812-8702-405648c3c8be",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C61",
+      "claim": "TP63 is found at PC3 high in the LgPCA analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "or the palate and limb abnormalities associated with mutations in TP63 (OMIM 603543, PC3 high).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "937e8a92-f8e3-4a91-95fe-b4234fa08672",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C62",
+      "claim": "Mutations in genes encoding transcription factors are over-represented causes of congenital disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in genes encoding transcription factors are over-represented causes of congenital disorders, most likely due to their critical function during organogenesis and inadequacy when haploinsufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in developmental genetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "bb1d566f-e362-4b23-8295-d1fb5bff97dc",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C63",
+      "claim": "Transcription factors are critical during organogenesis and inadequate when haploinsufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "most likely due to their critical function during organogenesis and inadequacy when haploinsufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about transcription factor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "de741600-5576-4598-b81a-78e3c8b415e0",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C64",
+      "claim": "53 disorders were suitable for assessment with an average critical region of 13.7 Mb each containing an average of 111 protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "53 disorders were suitable for assessment with an average critical region of 13.7 Mb each containing an average of 111 protein-coding genes (Supplementary file 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by Supplementary file 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "9cb8b1cc-6bdd-4b94-be47-dacba4c9301d",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C65",
+      "claim": "In 37 instances (73%) LgPCA uniquely selected the correct transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in 37 instances (73%) LgPCA uniquely selected the correct transcription factor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the validation analysis shown in Supplementary file 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "330510b6-9f43-4414-944e-b8ccdcbf0e07",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C66",
+      "claim": "In 48 instances (91%) LgPCA narrowed the field down to three or fewer transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "and in 48 instances (91%) narrowed the field down to three or fewer transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the validation analysis shown in Supplementary file 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "fac991b2-87db-487a-b13a-56b29e86ea44",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C67",
+      "claim": "LgPCA predicts DLX5, DLX6, LHX8 and FOXF2 as causative genes in cleft palate.",
+      "claim_type": "EXPLICIT",
+      "source": "When applied to 13 syndromes (mostly deletion disorders) where the causative gene remains unresolved clear predictions of causality emerge, for instance in cleft palate (DLX5, DLX6, LHX8 and FOXF2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the LgPCA analysis shown in Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "ef51d49f-f7b7-4208-9c57-2ca27c459aec",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C68",
+      "claim": "LgPCA predicts ZIC1 and ZIC4 as causative genes in cerebellar disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "or cerebellar disorders (ZIC1 and ZIC4) (Supplementary file 1H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the LgPCA analysis shown in Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "9435a979-810d-4e24-8038-7d7d0fc31841",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C69",
+      "claim": "CASZ1 is predicted to be involved in cardiac malformations as part of Chr1p36 deletion syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Frequently, there is an appropriate mutant mouse phenotype such as CASZ1 in cardiac malformations, part of Chr1p36 deletion syndrome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the LgPCA analysis and mouse phenotype data shown in Figure 3b and Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "75d01d80-7513-4f70-beae-e9cd452ecac3",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C70",
+      "claim": "SOX10 is predicted to be involved in 46,XX disorder of sex differentiation linked to duplication on Chr22.",
+      "claim_type": "EXPLICIT",
+      "source": "or SOX10 in the 46,XX disorder of sex differentiation (DSD) linked to duplication on Chr22 (Figure 3b and Supplementary file 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction based on the LgPCA analysis and mouse phenotype data shown in Figure 3b and Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "49e845fa-f50b-494b-93ad-a0cf408d39e5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C71",
+      "claim": "81 out of 1571 genes enriched in embryogenesis compared to fetal datasets were annotated long intergenic non-coding transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "A dedicated programme operating during human organogenesis seemed likely as 81 out of the 1571 genes enriched in embryogenesis compared to the fetal datasets were annotated long intergenic non-coding (LINC) transcripts (Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the differential expression analysis shown in Supplementary file 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "a9da03f5-73a6-4731-897f-55dfcd0806d9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C72",
+      "claim": "The study assembled strand-specific transcripts not recognized by GENCODE 18 annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "To look beyond this we assembled strand-specific transcripts not recognized by current genome annotation [GENCODE 18 (Harrow et al., 2012)]",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the transcript assembly methods described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "273daf80-a775-4a48-92e8-645cbce7a4c9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C73",
+      "claim": "Novel transcripts were systematically named according to recommended criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "and systematically named them individually according to recommended criteria (Mattick and Rinn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to naming guidelines.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "792bc8b3-0940-4ae5-bdb0-d9d3150637aa",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C74",
+      "claim": "6251 unique loci accounted for in excess of 9 Mb of novel polyadenylated transcription from the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "6251 unique loci accounted for in excess of 9 Mb of novel polyadenylated transcription from the human genome (Figure 4a and Supplementary file 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated and supported by the data in Figure 4a and Supplementary file 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f43b3538-b0cf-4af4-85da-bf19b3ff49aa",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C75",
+      "claim": "The vast majority of novel transcripts fulfilled criteria as lncRNAs by assessment of coding potential (CPAT score <0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of transcripts fulfilled criteria as lnc RNAs by assessment of coding potential (CPAT score <0.2) (Figure 4b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the CPAT analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "0fb52e86-9e91-4912-98c0-457ec450123e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C76",
+      "claim": "LncRNA criteria include length over 200 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "length over 200 base pairs (bp)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established criterion for lncRNA classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "4bc6c1ea-157c-4c48-86d3-a0caf39ecf79",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C77",
+      "claim": "LncRNA criteria include an absence of reads spanning splice junctions to currently annotated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "and an absence of reads spanning splice junctions to currently annotated genes (Mattick and Rinn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an established criterion for lncRNA classification supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "e1feca17-6572-46f7-bc10-0a82a957c3aa",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C78",
+      "claim": "Novel lncRNAs were classified as bidirectional, antisense, overlapping, or intergenic according to orientation and position relative to the annotated genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These lncRNAs were classified as either bidirectional, antisense or overlapping, or by exclusion intergenic, according to orientation and position in relation to the annotated genome (Mattick and Rinn, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to classification guidelines.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f6729cff-5809-4c70-b5d8-b2230bb49fd8",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C79",
+      "claim": "Novel transcripts were most commonly 500-1,500 bp but could extend to over 600 Kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts were most commonly 500\u20131,500 bp but could extend to over 600 Kb (Figure 4c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the size distribution shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "da39d3fd-6670-4c73-b542-2c28b729d8f3",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C80",
+      "claim": "Novel transcripts showed high tissue-specificity with a median Tau value of 0.86.",
+      "claim_type": "EXPLICIT",
+      "source": "and showed high tissue-specificity with the median Tau value (Yanai et al., 2005) of 0.86",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Tau analysis shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "80bd087e-9540-4e3e-83f1-a8425ab95d6d",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C81",
+      "claim": "Protein-coding genes have a median Tau value of 0.63.",
+      "claim_type": "EXPLICIT",
+      "source": "much higher than for protein-coding genes (0.63)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Tau analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "cd662dc8-8a33-411d-ad37-c71a6294ad58",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C82",
+      "claim": "Previously annotated non-coding genes have a median Tau value of 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "but consistent with previously annotated non-coding genes (0.89).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the Tau analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "b16b80f1-5556-42b7-804e-8100a17c7e0a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C83",
+      "claim": "Reduced physical distance to expressed annotated genes markedly increased the likelihood of novel transcript co-expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We investigated the association between this novel human embryonic transcriptome and the annotated genome. Reduced physical distance to expressed annotated genes markedly increased the likelihood of novel transcript co-expression (Figure 4e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f806cf0d-9242-4346-97d4-ad7c80ae98d9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C84",
+      "claim": "The best correlations between novel transcripts and annotated genes were not always with the closest gene.",
+      "claim_type": "EXPLICIT",
+      "source": "although the best correlations were by no means always with the closest gene (Figure 4f\u2013g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the examples shown in Figure 4f-g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2ab6deee-d7c7-4860-aba8-b3c3a4b0e815",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C85",
+      "claim": "The median distance to the closest annotated gene was 7.7 Kb.",
+      "claim_type": "EXPLICIT",
+      "source": "The median distance to the closest annotated gene was 7.7 Kb (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the distance analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "7e4bdaf5-ea14-4f35-aad0-0e730f9b500c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C86",
+      "claim": "On average the best correlation was at 188 Kb.",
+      "claim_type": "EXPLICIT",
+      "source": "while on average the best correlation was at 188 Kb (random prediction was 476 Kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "661fc617-d4a8-481f-bd6f-66ec8b36ed67",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C87",
+      "claim": "Random prediction for best correlation distance was 476 Kb.",
+      "claim_type": "EXPLICIT",
+      "source": "(random prediction was 476 Kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated baseline for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f2a36904-e775-4818-8dde-f6d9a2403368",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C88",
+      "claim": "Over half (3634) of the lnc transcripts were classified positionally as LINC RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half (3634) of the lnc transcripts were classified positionally as LINC RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated and supported by the classification shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "4a10e3d4-a4ab-40fd-ba24-c370e101e64f",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C89",
+      "claim": "HE-LINC-C7T121 shows correlation with TBX20 over a 2 Mb window on chromosome 7.",
+      "claim_type": "EXPLICIT",
+      "source": "As a first step, the multi-tissue nature of our dataset allowed intricate correlative patterns to be deciphered implying putative relationships; for instance over a 2 Mb window and across numerous genes on chromosome 7 between HE-LINC-C7T121 and TBX20, which encodes a developmental cardiac transcription factor mutated in a wide range of congenital heart disease (Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "fd9b690c-7a0d-4517-909d-66252c5f609a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C90",
+      "claim": "TBX20 encodes a developmental cardiac transcription factor mutated in a wide range of congenital heart disease.",
+      "claim_type": "EXPLICIT",
+      "source": "TBX20, which encodes a developmental cardiac transcription factor mutated in a wide range of congenital heart disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TBX20.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "03680afe-4b27-4aa8-bd8d-371b5b3813eb",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C91",
+      "claim": "This is the first comprehensive transcriptomic atlas during human organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this study reports the first comprehensive transcriptomic atlas during human organogenesis to complement parallel initiatives from later development and adulthood (Jaffe et al., 2015; Roadmap Epigenomics Consortium, 2015; Roost et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the study supported by comparison with other initiatives.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "52e71bde-0773-4940-bbdb-5caf3a5986a8",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C92",
+      "claim": "The method of analysis incorporated developmental lineage to decipher novel genetic signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjecting transcription from many sites to a method of analysis that incorporated developmental lineage deciphered novel genetic signatures",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the LgPCA methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "7154e709-28da-499e-b83e-09af1f7c273c",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C93",
+      "claim": "The analysis predicted causality in many human developmental disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "predicted causality in many human developmental disorders",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the validation analysis shown in Figure 3b and Supplementary file 1H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "7caf5468-d9d4-490a-9c79-2fea11495a6d",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C94",
+      "claim": "The analysis associated novel non-coding transcription with expression from the surrounding protein-coding genome.",
+      "claim_type": "EXPLICIT",
+      "source": "and associated novel non-coding transcription with expression from the surrounding protein-coding genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the correlation analysis shown in Figure 4e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "8682133e-113d-4be4-bc7a-4f2c4b7b6a53",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C95",
+      "claim": "The data arise from a relatively narrow window of embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, the data arise from a relatively narrow window of embryonic development but set the stage for future longitudinal studies for individual organs over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "69611b33-d74c-4bda-bef2-fe864612123e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C96",
+      "claim": "The tiny amounts and scarcity of human embryonic tissue necessitated aspects of pooling across different Carnegie stages for some sites.",
+      "claim_type": "EXPLICIT",
+      "source": "The tiny amounts and scarcity of human embryonic tissue also necessitated aspects of pooling across different Carnegie stages for some sites",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological limitation described by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "77006681-bba5-4ac5-98ad-6b7256aeddd4",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C97",
+      "claim": "Pooling across Carnegie stages had no impact on ascertaining organ and tissue-specific transcriptomic signatures by LgPCA.",
+      "claim_type": "EXPLICIT",
+      "source": "but it is striking that this had no impact on ascertaining organ and tissue-specific transcriptomic signatures by LgPCA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the successful LgPCA results despite pooling.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "18b61723-55d3-480e-a3fd-3c3e8f46c55e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C98",
+      "claim": "The integrated data are expected to be valuable to stem cell researchers examining the fidelity of PSC differentiation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The integrated data are expected to be particularly valuable to stem cell researchers examining the fidelity of PSC differentiation in vitro",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "77576585-bfb0-48fb-abab-009c2c96c8be",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C99",
+      "claim": "The integrated data are expected to be valuable for searching for transcription factors for direct reprogramming of chosen cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "or searching for transcription factors for direct reprogramming of chosen cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications supported by the hepatocyte reprogramming example.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "56166db9-910d-4e64-bf3b-921d0cbf3749",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C100",
+      "claim": "The discovery of a major new programme of non-coding transcription adds a fresh layer of detail on the spatiotemporal regulation of the human genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the discovery of a major new programme of non-coding transcription adds a fresh layer of detail on the spatiotemporal regulation of the human genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the novel transcript data in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2a323a62-541c-4639-b944-f6be9c337efc",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C101",
+      "claim": "Human embryonic material was collected under ethical approval, informed consent and according to the Codes of Practice of the Human Tissue Authority.",
+      "claim_type": "EXPLICIT",
+      "source": "Human embryonic material was collected under ethical approval, informed consent and according to the Codes of Practice of the Human Tissue Authority and staged by the Carnegie classification as described previously (Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "251f7416-e89f-4492-9d48-01e922e8e831",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C102",
+      "claim": "Embryos were staged by the Carnegie classification.",
+      "claim_type": "EXPLICIT",
+      "source": "and staged by the Carnegie classification as described previously (Jennings et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "80e724a0-b1a4-4aea-93e4-09ab2b0dfd45",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C103",
+      "claim": "RNA sequencing libraries were generated using the TruSeq Stranded mRNA assay.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA sequencing (RNA-seq) libraries were generated using the TruSeq Stranded mRNA assay (Illumina, Inc.) according to the manufacturer's protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "39f587f1-1a60-4cbc-81c0-1f9c437e2be5",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C104",
+      "claim": "The RNA-seq was conducted in three batches at different times.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-seq was conducted in three batches at different times as a necessity of how human embryonic tissue was collected over time (Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "85a21401-36d6-4692-a5ef-3766c7b57876",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C105",
+      "claim": "Where organs were sequenced across batches, biological replicates clustered together.",
+      "claim_type": "EXPLICIT",
+      "source": "Where organs were sequenced across batches (palate, RPE, kidney, testis, adrenal gland, heart / left ventricle and liver) biological replicates clustered together (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the clustering analysis shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "0fed15eb-607a-4a81-acda-518750455830",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C106",
+      "claim": "RNA-seq reads were mapped to the human genome (hg19) strand-specifically using TopHat 2.0.9.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq reads from the Illumina platform were mapped to the human genome (hg19) strand-specifically using TopHat 2.0.9 (Trapnell et al., 2012) and the GENCODE 18 gene annotation set (Harrow et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "e285e4bc-50a6-4592-a381-adffe228fc83",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C107",
+      "claim": "Quantile normalization was used because highly distinct tissues differed strongly on the scale of thousands of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly applied RNA-seq normalisation methods such as TMM assume a small proportion of differentially expressed genes in any one dataset (Dillies et al., 2013). Because the highly distinct tissues surveyed here differed strongly on the scale of thousands of genes (for instance liver versus brain) we used quantile normalisation which gave a lower median coefficient of variation than either no or TMM normalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification supported by citation and comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "1f48b445-6e4a-47cc-9350-d7bc26af126e",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C108",
+      "claim": "Quantile normalization gave a lower median coefficient of variation than either no normalization or TMM normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "we used quantile normalisation which gave a lower median coefficient of variation than either no or TMM normalization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification based on comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "70ebdeb5-f94c-4e6d-8e00-d57e619ea74f",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C109",
+      "claim": "NMF was performed using the nmf R package to extract tissue-specific metagenes.",
+      "claim_type": "EXPLICIT",
+      "source": "NMF was performed using the nmf R package (version NMF_0.20.5) (Gaujoux and Seoighe, 2010) to extract tissue-specific metagenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "65318b66-453f-43ee-97f8-0b20d620de23",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C110",
+      "claim": "The LgPCA approach was adapted from established phylogenetic PCA methodology.",
+      "claim_type": "EXPLICIT",
+      "source": "The LgPCA approach was adapted from established phylogenetic PCA methodology (Jombart et al., 2010b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "aa5c72fb-1451-4fed-a7cf-64bfcebef365",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C111",
+      "claim": "LgPCA was performed using the ppca function from the adephylo R package.",
+      "claim_type": "EXPLICIT",
+      "source": "and performed using quantile-normalized, gene-level read counts, a high memory (512 Gb) compute node and the ppca function from the adephylo R package (Jombart et al., 2010a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "5d7ab34a-5872-4ba3-9797-68bdd67409cd",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C112",
+      "claim": "The adephylo R package weighted the principal components by the lineage auto-correlation between samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A broad user-defined guide tree (Figure 2b) based on well-established knowledge of mammalian gastrulation and downstream lineage relationships was imposed on the different organ and tissue types following which the adephylo R package weighted the principal components by the lineage auto-correlation between samples",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological explanation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "0afb37d4-7afc-4f4e-853e-2c906c0b48b0",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C113",
+      "claim": "The Abouheif distance was used in LgPCA, which takes into account the topology of the specified tree but does not use branch lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Abouheif distance as implemented in adephylo (Jombart et al., 2010a), which takes into account the topology of the specified tree but does not use branch lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "0a189d63-6047-4a60-b82f-087ccebe25b6",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C114",
+      "claim": "Gene Ontology term enrichment was performed using Fisher's exact test with the elimination algorithm of the R package topGO.",
+      "claim_type": "EXPLICIT",
+      "source": "For the comparison of the embryonic versus fetal datasets Gene Ontology term enrichment was performed on upregulated genes (FDR < 0.05) using Fisher's exact test with the elimination algorithm of the R package topGO (Alexa and Rahnenfuhrer, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "0ff31d21-019c-4de4-a212-65ad0ecf3408",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C115",
+      "claim": "iRegulon is a computational method which tests for enrichment amongst precomputed motif datasets to decipher transcriptional regulatory networks.",
+      "claim_type": "EXPLICIT",
+      "source": "iRegulon is a computational method which tests for enrichment amongst precomputed motif datasets to decipher transcriptional regulatory networks in a set of co-expressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological description.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "9fceeae1-1bb8-4dab-a409-69bdaf602f02",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C116",
+      "claim": "Sample-specific transcriptomes were assembled with Cufflinks version 2.2.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample-specific transcriptomes were assembled with Cufflinks (version 2.2.0) (Trapnell et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "39c288aa-7b30-4b33-8a4d-2b9a197e3d74",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C117",
+      "claim": "Bidirectional transcripts were defined as having their TSS within 1 Kb of the TSS of the associated annotated gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Names were assigned to these novel transcripts following suggested criteria (Mattick and Rinn, 2015) (Figure 4a) with the sole adaptation that bidirectional (BI) transcripts were defined as having their TSS within 1 Kb of the TSS of the associated annotated gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "a4708908-b766-47f2-94f4-0fbad08e6b03",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C118",
+      "claim": "No transcripts mapped to the same strand within the introns of any annotated gene.",
+      "claim_type": "EXPLICIT",
+      "source": "No transcripts mapped to the same strand within the introns of any annotated gene excluding the possibility of unspliced transcripts from annotated genes being erroneously defined as novel transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality control statement about the transcript assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "18e9ecb8-1946-423d-b152-2a14a97943d8",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C119",
+      "claim": "A CPAT threshold of >0.2 was used to define 'Transcripts of Uncertain Coding Potential' (TUCP).",
+      "claim_type": "EXPLICIT",
+      "source": "All transcript sequences (annotated and unannotated) were scored for protein-coding potential using CPAT (based on human training data included with CPAT) (Wang et al., 2013). A threshold of >0.2 was used to define 'Transcripts of Uncertain Coding Potential' (TUCP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "503d22b0-5368-4e17-b611-fca01131863f",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C120",
+      "claim": "Where there were multiple transcripts from a single locus, the longest transcript was retained in assembling the final dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Where there were multiple transcripts from a single locus, the longest transcript was retained in assembling the final dataset of 6251 novel transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "fee96523-f189-4e05-8726-8bacd27ee1f3",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C121",
+      "claim": "The combined dataset included expression of >90% of annotated protein-coding genes (GENCODE18).",
+      "claim_type": "EXPLICIT",
+      "source": "The combined dataset (black) included expression of >90% of annotated protein-coding genes (GENCODE18 [Harrow et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Figure 1 legend and supported by Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "2fe2c799-367f-4a59-8795-ff1c00c6a1ee",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "claim_id": "C122",
+      "claim": "Human embryogenesis possesses a distinctive transcriptome compared to fetal datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "Human embryogenesis possesses a distinctive transcriptome. Human embryonic read counts were compared with equivalent fetal datasets from NIH Roadmap (Roadmap Epigenomics Consortium, 2015) using edgeR (Robinson et al., 2010) and a false discovery rate (FDR) of 0.05",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study generated a comprehensive transcriptomic atlas of human organogenesis by RNA-seq of 15 embryonic organs/tissues, producing 28 strand-specific datasets with 44-90 million uniquely mapped reads per replicate, covering >90% of annotated protein-coding genes with high dynamic range (C3, C15-C18, C121). The material was ethically collected and staged by Carnegie classification (C101-C102), sequenced in three batches using TruSeq Stranded mRNA assay (C103-C104), with biological replicates clustering together despite batch effects (C105), and mapped using TopHat 2.0.9 to hg19 with GENCODE 18 annotation (C106).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The experimental design and data generation are well-documented with appropriate technical details, quality metrics, and ethical compliance. The clustering of biological replicates across batches (C105, Figure 1\u2014figure supplement 4) validates data quality. The high coverage of protein-coding genes (C121) and read depth (C17-C18) support the comprehensiveness claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "b0ee955d-a454-4bfc-b62a-86638c36b9df",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Human embryonic datasets showed a distinctive transcriptome compared to fetal datasets from NIH Roadmap, with three-fold fewer differentially expressed genes but equivalent enrichment of gene ontology terms (C19-C20, C122). Embryonic datasets were enriched for early developmental processes (morphogenesis of epithelial bud, anterior/posterior pattern specification, embryonic morphogenesis) while fetal datasets showed enrichment for homeostatic processes (C21-C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with NIH Roadmap fetal data using edgeR (FDR < 0.05) is methodologically sound (C122). The GO term enrichment analysis using Fisher's exact test with the elimination algorithm (C114) appropriately identifies biological differences. Figure 1c and Supplementary files 1B-C provide supporting data for the differential enrichment patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "6c207f62-a7ba-4f11-b083-9c8037dc941a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Transcription factor expression patterns showed that ZNF and ZSCAN family members were broadly expressed across embryonic tissues, while other transcription factor families (exemplified by HOX gene clusters) showed discrete site-specific expression (C23-C25). User-defined sets of up to five developmental transcription factors displayed very high tissue specificity (C26).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The heatmap analysis in Figure 1\u2014figure supplement 1 clearly demonstrates broad vs. site-specific expression patterns. The HOX gene cluster data in Figure 1d provides a well-established example. The validation in Figure 1\u2014figure supplement 2 using known tissue-specific transcription factors confirms the ability to detect tissue-specific signatures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Standard PCA and clustering grouped biological replicates but failed to resolve relationships between organs/tissues beyond brain and liver distinctiveness (C27). Non-negative matrix factorization (NMF) identified 11 non-overlapping metagenes with clear tissue-specific signals for thyroid, liver, RPE, brain, heart, and adrenal gland (C28-C29). Metagene 2 (39 genes indicative of embryonic liver) showed enrichment in stem cell-derived hepatocytes and primary hepatocytes but not fibroblasts (C30-C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The limitations of standard PCA are clearly demonstrated in Figure 1\u2014figure supplements 3-4. The NMF analysis (Figure 1\u2014figure supplement 5) successfully identifies tissue-specific signatures. The validation using external hepatocyte differentiation data (C31-C32, Figure 1\u2014figure supplement 5b) provides independent support for the biological relevance of metagene 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study developed Lineage-guided Principal Components Analysis (LgPCA) by adapting phylogenetic PCA methods to constrain analysis by imposing a hierarchical developmental lineage (C33-C34, C110). Including human ESC data to represent pre-gastrulation biology (C35), LgPCA generated 31 PCs (C36), with the first 15 identifying patterns across related tissues and organ-specific signatures (C37), while PCs 16-31 sampled within-organ heterogeneity (C38). Early PCs (1-4) ordered samples by developmental events: pluripotency (PC1 high), early brain formation (PC2 low), foregut endoderm (PC4 low), and intermediate mesoderm (PC4 high) (C39-C42). PCs 5-15 resolved individual organs/tissues, e.g., PC5 low discriminated liver from other foregut endoderm derivatives (C43-C44). The method used the ppca function from adephylo R package with Abouheif distance, weighting PCs by lineage auto-correlation (C111-C113).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The LgPCA methodology is well-documented with appropriate citations to the original phylogenetic methods (C110, Jombart et al. 2010a,b). The biological interpretations of PC loadings (C39-C44) are supported by Figure 2b and the inclusion of ESC data provides an appropriate developmental reference point. The distinction between global patterns (PCs 1-15) and local heterogeneity (PCs 16-31) shown in Figure 2\u2014figure supplement 1 validates the approach. However, the biological interpretations of PC loadings rely on inference and the user-defined lineage tree introduces subjective elements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "ae140837-92a9-4b88-9efb-282e103f6557",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of the 1000 genes with most extreme loadings in PCs 1-15 using iRegulon identified master regulators of organogenesis (C45-C46). Known pluripotency regulators (NANOG, OCT4, MYC) were identified at PC1 extreme as proof-of-principle (C47-C48). In several instances, approaching half of the 1000 most extreme genes were predicted to be co-regulated by single transcription factors, such as HNF4A in liver (~50%) and SRF in heart (~43%) (C49-C51). The analysis predicted RUNX and BAD as novel regulators of human adrenal and gonadal development alongside NR5A1 (C52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The iRegulon analysis is methodologically appropriate for identifying transcriptional regulatory networks from co-expressed genes. The recovery of known pluripotency factors (C47-C48) provides validation. The high percentages of genes predicted to be co-regulated by single factors (C49-C51, Figure 3a) are striking and biologically plausible for master regulators. However, the prediction of RUNX and BAD as novel regulators (C52) is speculative and requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "1b5776b9-010d-4943-b58a-96fbacdcc326",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Transcription factors comprised typically <5% of the 1000 most extreme genes in PCs 1-15 (C53). Of 594 transcription factors identified, 309 (52%) had relevant mouse mutation phenotypes supporting their role as key regulators of human organogenesis (C54). At PC5 low (liver), 22 transcription factors included all three required for reprogramming fibroblasts to hepatocytes (C55). Extreme PC loadings prioritized transcription factors responsible for major congenital disorders (C56), including the ability to predict multisystem abnormalities such as Holt-Oram syndrome (TBX5 at PC13 low, C57-C59) and TP63-associated palate and limb abnormalities (PC3 high, C60-C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The validation using mouse phenotype data from MGI (C54) and known reprogramming factors (C55, Huang et al. 2014) provides strong support. The identification of known disease-causing transcription factors at appropriate PC extremes (C57-C61) demonstrates biological validity. However, the 52% validation rate with mouse phenotypes (C54) indicates that not all predictions may be correct, and the multisystem abnormality predictions rely on inference from co-expression patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "4e667e63-9192-4857-865e-5511c59bcde1",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "To validate LgPCA's predictive power, 53 congenital disorders with defined critical regions (average 13.7 Mb, 111 genes) were assessed (C64). LgPCA uniquely selected the correct transcription factor in 37/53 cases (73%) and narrowed to \u22643 candidates in 48/53 cases (91%) (C65-C66). For 13 unresolved syndromes, LgPCA predicted causative genes including DLX5, DLX6, LHX8, FOXF2 for cleft palate (C67), ZIC1 and ZIC4 for cerebellar disorders (C68), CASZ1 for cardiac malformations in Chr1p36 deletion syndrome (C69), and SOX10 for 46,XX disorder of sex differentiation linked to Chr22 duplication (C70).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The validation using known disease-causing genes is rigorous and shows impressive predictive accuracy (73% unique identification, 91% within top 3 candidates, C65-C66). The methodology of testing against early critical region mapping data (Supplementary file 1H) is appropriate. However, the predictions for unresolved syndromes (C67-C70) remain speculative until experimentally validated. The supporting mouse phenotype data for some predictions (C69-C70, Figure 3b) strengthens but does not prove causality in humans.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study identified >6000 novel transcripts (6251 unique loci) accounting for >9 Mb of novel polyadenylated transcription (C7, C74). Over 90% fulfilled criteria as long non-coding RNAs (lncRNAs) based on CPAT score <0.2, length >200 bp, and absence of reads spanning splice junctions to annotated genes (C8, C75-C77). Among embryonic-enriched genes, 81/1571 were annotated LINC transcripts (C71). Novel transcripts were assembled using Cufflinks, systematically named following recommended criteria (C72-C73, C116), classified as bidirectional (TSS within 1 Kb of annotated gene TSS), antisense, overlapping, or intergenic (C78, C117), with sizes typically 500-1,500 bp but extending to >600 Kb (C79). Quality control confirmed no same-strand intronic mapping (C118), CPAT threshold >0.2 defined TUCPs (C119), and the longest transcript was retained per locus (C120).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The transcript assembly methodology using Cufflinks is standard and appropriate (C116). The classification criteria follow established guidelines (Mattick and Rinn 2015) with clear adaptations (C117). The CPAT analysis (Figure 4b) clearly shows >90% of transcripts have coding probability <0.2 (C75). Quality control measures (C118-C120) are appropriate to avoid false positives. The size distribution (Figure 4c) and classification breakdown (Figure 4a) support the claims. However, low coding potential alone does not definitively prove non-coding function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "f5eff849-9757-4211-92f8-f1e5023132ed",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Novel lncRNAs showed high tissue-specificity (median Tau = 0.86) compared to protein-coding genes (0.63) but consistent with previously annotated non-coding genes (0.89) (C80-C82) and were correlated with the protein-coding genome over megabase distances (C9). Reduced physical distance to expressed annotated genes markedly increased co-expression likelihood (C83), though best correlations were not always with the closest gene (C84). Median distance to closest annotated gene was 7.7 Kb, while average best correlation was at 188 Kb (vs. 476 Kb random prediction) (C85-C87). Over half (3634) were classified as LINC RNAs (C88). Examples include HE-LINC-C7T121 showing correlation with TBX20 (a cardiac transcription factor mutated in congenital heart disease) over a 2 Mb window on chromosome 7 (C89-C90).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The tissue-specificity analysis using Tau values (C80-C82, Figure 4d) is appropriate and shows lncRNAs have expected high specificity. The correlation analysis with genomic distance (C83-C87, Figure 4e-g) is well-executed and shows clear distance-dependent effects. The random prediction baseline (C87) provides appropriate context. The specific examples (C89-C90, Figure 4h) illustrate complex long-range correlations. However, correlation does not prove functional relationships, and the biological significance of these associations requires experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "820bcfa0-b507-4422-97c1-bfac3becc20a",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "This is the first comprehensive transcriptomic atlas during human organogenesis (C91). The lineage-guided analysis deciphered novel genetic signatures (C92), predicted causality in developmental disorders (C93), and associated novel non-coding transcription with the protein-coding genome (C94). Limitations include a relatively narrow developmental window (C95) and pooling across Carnegie stages for some sites due to tissue scarcity (C96), though pooling had no impact on LgPCA signatures (C97). The data are expected to be valuable for assessing PSC differentiation fidelity (C98) and identifying reprogramming factors (C99). The discovery of a major non-coding transcription program adds detail on spatiotemporal genome regulation (C100).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty claim (C91) is supported by comparison with existing resources (NIH Roadmap, etc.). The summary of achievements (C92-C94) is supported by the results presented. The acknowledged limitations (C95-C96) are appropriate, and the claim that pooling didn't affect LgPCA (C97) is supported by the successful tissue-specific signatures obtained. The potential applications (C98-C99) are reasonable extrapolations supported by the hepatocyte reprogramming validation (C55). The significance statement (C100) is justified by the discovery of >6000 novel transcripts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    },
+    {
+      "id": "e803559a-a3ac-48e7-879a-e81c7d7a8089",
+      "content_id": "9b0ff624-190b-431f-9716-6d7f6e770a89",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Quantile normalization was used because highly distinct tissues differed on the scale of thousands of genes, violating TMM assumptions of few differentially expressed genes (C107). Quantile normalization gave lower median coefficient of variation than no normalization or TMM (C108). NMF was performed using the nmf R package to extract tissue-specific metagenes (C109). GO term enrichment used Fisher's exact test with the elimination algorithm in topGO (C114). iRegulon tests for enrichment in precomputed motif datasets to identify transcriptional regulatory networks (C115).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The justification for quantile normalization (C107) is reasonable given the extreme tissue differences, though this choice could be debated. The empirical comparison showing lower coefficient of variation (C108) supports the choice. The use of established methods and packages (C109, C114, C115) with appropriate citations is methodologically sound. However, quantile normalization assumes all samples should have identical distributions, which may not be biologically appropriate for highly distinct tissues.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:35:22.498017Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4aca3a77-cb06-40f4-8a9d-fe9e5f39a1e5",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "fd2d26b9-775a-450e-91ef-e3a604344e50",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "bece9c15-03ca-4203-b4ee-67e1047ba5c1",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "d460f59d-e832-4e39-8449-3d701f90ed15",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "3a6561d8-5240-4449-af11-fda9938a43e5",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "2a323a62-541c-4639-b944-f6be9c337efc",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "251f7416-e89f-4492-9d48-01e922e8e831",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "80e724a0-b1a4-4aea-93e4-09ab2b0dfd45",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "39f587f1-1a60-4cbc-81c0-1f9c437e2be5",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "85a21401-36d6-4692-a5ef-3766c7b57876",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "0fed15eb-607a-4a81-acda-518750455830",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "fee96523-f189-4e05-8726-8bacd27ee1f3",
+      "result_id": "a8f2545d-e6e1-4af9-a93b-e84f154d29d0"
+    },
+    {
+      "claim_id": "7d883e31-0786-4fcb-a0ac-a9a42062b652",
+      "result_id": "b0ee955d-a454-4bfc-b62a-86638c36b9df"
+    },
+    {
+      "claim_id": "77e24831-aa79-4e91-865f-269db30de11a",
+      "result_id": "b0ee955d-a454-4bfc-b62a-86638c36b9df"
+    },
+    {
+      "claim_id": "6178a2c9-923d-48f5-8b4d-9914e10ecd0c",
+      "result_id": "b0ee955d-a454-4bfc-b62a-86638c36b9df"
+    },
+    {
+      "claim_id": "326a6108-b44d-446a-88a9-8c3e863a5358",
+      "result_id": "b0ee955d-a454-4bfc-b62a-86638c36b9df"
+    },
+    {
+      "claim_id": "2fe2c799-367f-4a59-8795-ff1c00c6a1ee",
+      "result_id": "b0ee955d-a454-4bfc-b62a-86638c36b9df"
+    },
+    {
+      "claim_id": "a173c13f-1942-4266-b504-f291ad08e741",
+      "result_id": "6c207f62-a7ba-4f11-b083-9c8037dc941a"
+    },
+    {
+      "claim_id": "79b578c7-9589-4819-8bc2-b79e3da1119a",
+      "result_id": "6c207f62-a7ba-4f11-b083-9c8037dc941a"
+    },
+    {
+      "claim_id": "bb6e08fd-4d72-475c-b6a0-44efdfdb4e35",
+      "result_id": "6c207f62-a7ba-4f11-b083-9c8037dc941a"
+    },
+    {
+      "claim_id": "f01fd4ab-9b2f-43d0-b253-2c032ffc7727",
+      "result_id": "6c207f62-a7ba-4f11-b083-9c8037dc941a"
+    },
+    {
+      "claim_id": "4d8424bc-c61b-4b44-b7ba-a802af3af5cb",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "aa1a7c0f-b73a-4a0c-ab8c-c341415937a5",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "79d579fe-3145-4013-a149-76a3bfc665e1",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "214c8c84-0f7d-4dba-9c69-0aaa83e9dec7",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "a7b30545-b9be-40a1-b68c-c13f184d81ae",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "8b367ca0-0b4a-4630-8184-2bb58fe7671c",
+      "result_id": "9fc6f1d1-390f-4e26-93ea-70b10d1a3759"
+    },
+    {
+      "claim_id": "721f77cc-73f4-4e63-ad4f-909851467547",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "2a2ba6f9-e40e-4016-b4a6-5f5e599e3fe6",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "2bad55da-781a-4f0f-a81d-63df93dd8335",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "dd118a4b-5194-4d15-8ea6-d1c2a471c54d",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "94404130-3f23-4b9b-af1e-ea906793a642",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "ef8aed7f-431d-43b8-ae27-07c106f69087",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "54b3285f-ca87-4263-9bae-62cdef99edab",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "b281aced-1218-4816-adb3-c977d7c92c1f",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "c003886a-3768-478b-8c84-488a925b45c7",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "3474495a-28c2-4397-b9b6-4fe19f123536",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "c93b74d9-329d-4d47-8dee-7b9d2aa3c4c9",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "ffa8e428-ec21-46d3-acd8-90c9b4235702",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "65318b66-453f-43ee-97f8-0b20d620de23",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "aa5c72fb-1451-4fed-a7cf-64bfcebef365",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "5d7ab34a-5872-4ba3-9797-68bdd67409cd",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "0afb37d4-7afc-4f4e-853e-2c906c0b48b0",
+      "result_id": "1c0940d6-1776-48d7-b4a3-ed04ad7ebe2d"
+    },
+    {
+      "claim_id": "22d4a0c8-7ddc-48b5-a82c-b0046a35c527",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "2154f851-d9be-4a4c-8bdd-a252f5f17098",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "5dc9940c-cbd3-4167-8dbd-0516ce15cd30",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "7398f81f-1750-48f5-84d6-de77d597ccfe",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "645e82d6-c6c9-457f-bcc5-e4c1c4b6f4d0",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "90ebd374-e3c0-461b-9470-423bf2e5993a",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "f94a7511-873e-47de-abf7-3c89401d303f",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "1705121f-9adb-4f5b-8553-bcc27721f45c",
+      "result_id": "ae140837-92a9-4b88-9efb-282e103f6557"
+    },
+    {
+      "claim_id": "08eaacb7-a18a-4d36-9af5-ac22346fbd78",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "1556fa72-34a0-4d50-a390-a68a92121f34",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "2cc60ac7-bc55-40f0-bc7f-da8d1ce40b9c",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "f1b8d9f4-5c09-4f37-8ec0-89b0b2c43616",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "8c7c2f6d-5643-465d-af02-9226066156d9",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "559a578e-8465-40fd-b8c8-e4ee6a6348f5",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "dc947199-ae01-4953-b4a1-6c8e05234f55",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "00bb30cd-cafd-442e-91ac-ddd44327a8a2",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "58c42e9a-1134-4812-8702-405648c3c8be",
+      "result_id": "1b5776b9-010d-4943-b58a-96fbacdcc326"
+    },
+    {
+      "claim_id": "de741600-5576-4598-b81a-78e3c8b415e0",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "9cb8b1cc-6bdd-4b94-be47-dacba4c9301d",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "330510b6-9f43-4414-944e-b8ccdcbf0e07",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "fac991b2-87db-487a-b13a-56b29e86ea44",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "ef51d49f-f7b7-4208-9c57-2ca27c459aec",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "9435a979-810d-4e24-8038-7d7d0fc31841",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "75d01d80-7513-4f70-beae-e9cd452ecac3",
+      "result_id": "4e667e63-9192-4857-865e-5511c59bcde1"
+    },
+    {
+      "claim_id": "20018a67-21cc-4bbc-b8ee-c4425e4f16f3",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "fc4212cf-a46d-4cf8-8ac5-7fc4feb72b0e",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "49e845fa-f50b-494b-93ad-a0cf408d39e5",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "a9da03f5-73a6-4731-897f-55dfcd0806d9",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "273daf80-a775-4a48-92e8-645cbce7a4c9",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "792bc8b3-0940-4ae5-bdb0-d9d3150637aa",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "f43b3538-b0cf-4af4-85da-bf19b3ff49aa",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "0fb52e86-9e91-4912-98c0-457ec450123e",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "4bc6c1ea-157c-4c48-86d3-a0caf39ecf79",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "e1feca17-6572-46f7-bc10-0a82a957c3aa",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "f6729cff-5809-4c70-b5d8-b2230bb49fd8",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "9fceeae1-1bb8-4dab-a409-69bdaf602f02",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "39c288aa-7b30-4b33-8a4d-2b9a197e3d74",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "a4708908-b766-47f2-94f4-0fbad08e6b03",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "18e9ecb8-1946-423d-b152-2a14a97943d8",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "503d22b0-5368-4e17-b611-fca01131863f",
+      "result_id": "e01e9911-87a7-44c2-b8b5-dbbd1ef7a9b9"
+    },
+    {
+      "claim_id": "f8579752-6f89-4369-9e38-a54ab8948c69",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "da39d3fd-6670-4c73-b542-2c28b729d8f3",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "80bd087e-9540-4e3e-83f1-a8425ab95d6d",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "cd662dc8-8a33-411d-ad37-c71a6294ad58",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "b16b80f1-5556-42b7-804e-8100a17c7e0a",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "f806cf0d-9242-4346-97d4-ad7c80ae98d9",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "2ab6deee-d7c7-4860-aba8-b3c3a4b0e815",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "7e4bdaf5-ea14-4f35-aad0-0e730f9b500c",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "661fc617-d4a8-481f-bd6f-66ec8b36ed67",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "f2a36904-e775-4818-8dde-f6d9a2403368",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "4a10e3d4-a4ab-40fd-ba24-c370e101e64f",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "fd9b690c-7a0d-4517-909d-66252c5f609a",
+      "result_id": "f5eff849-9757-4211-92f8-f1e5023132ed"
+    },
+    {
+      "claim_id": "03680afe-4b27-4aa8-bd8d-371b5b3813eb",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "52e71bde-0773-4940-bbdb-5caf3a5986a8",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "7154e709-28da-499e-b83e-09af1f7c273c",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "7caf5468-d9d4-490a-9c79-2fea11495a6d",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "8682133e-113d-4be4-bc7a-4f2c4b7b6a53",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "69611b33-d74c-4bda-bef2-fe864612123e",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "77006681-bba5-4ac5-98ad-6b7256aeddd4",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "18b61723-55d3-480e-a3fd-3c3e8f46c55e",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "77576585-bfb0-48fb-abab-009c2c96c8be",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "56166db9-910d-4e64-bf3b-921d0cbf3749",
+      "result_id": "820bcfa0-b507-4422-97c1-bfac3becc20a"
+    },
+    {
+      "claim_id": "e285e4bc-50a6-4592-a381-adffe228fc83",
+      "result_id": "e803559a-a3ac-48e7-879a-e81c7d7a8089"
+    },
+    {
+      "claim_id": "1f48b445-6e4a-47cc-9350-d7bc26af126e",
+      "result_id": "e803559a-a3ac-48e7-879a-e81c7d7a8089"
+    },
+    {
+      "claim_id": "70ebdeb5-f94c-4e6d-8e00-d57e619ea74f",
+      "result_id": "e803559a-a3ac-48e7-879a-e81c7d7a8089"
+    },
+    {
+      "claim_id": "0a189d63-6047-4a60-b82f-087ccebe25b6",
+      "result_id": "e803559a-a3ac-48e7-879a-e81c7d7a8089"
+    },
+    {
+      "claim_id": "0ff31d21-019c-4de4-a212-65ad0ecf3408",
+      "result_id": "e803559a-a3ac-48e7-879a-e81c7d7a8089"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SCP1 is localized to the plasma membrane in various cancer cell lines. Both GFP-tagged and Flag-tagged SCP1 co-localize with plasma membrane markers in HeLa, MDCK, COS7, MCF7, HEK293T, and DLD1 cells. Cell fractionation experiments confirm that most SCP1 is in the membrane fraction, with a small proportion in the nuclear fraction and none in the cytosolic fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C31-C38 collectively demonstrate plasma membrane localization of SCP1 through multiple complementary approaches: immunofluorescence co-localization with membrane markers (C31-C36), cell fractionation (C37), and detection of endogenous SCP1 at the membrane (C38). The consistency across different cell lines and tagging strategies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Treatment with brefeldin A (BFA), which blocks Golgi-to-plasma membrane trafficking, had little effect on SCP1 membrane localization, suggesting that membrane-localized SCP1 is not newly synthesized through Golgi/endosome trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39-C40 present BFA treatment data, but the interpretation is problematic. The lack of BFA effect could indicate that SCP1 at the membrane is not newly synthesized, but it could also mean that SCP1 uses a BFA-insensitive trafficking pathway. Alternative explanations are not adequately ruled out, and the conclusion requires additional supporting experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The protein region of SCP1 from residues 31 to 55 is essential for targeting SCP1 to the plasma membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by deletion mutant experiments showing that constructs containing residues 31-55 can target GFP to the plasma membrane (Figure 1E). This mapping experiment provides direct evidence for the membrane-targeting domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Membrane recruitment of SCP1 is mediated by palmitoylation, not farnesylation or prenylation. Treatment with the palmitoylation inhibitor 2BP dramatically reduced membrane-localized SCP1 and increased cytosolic and nuclear SCP1, while farnesylation and prenylation inhibitors had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide strong evidence through pharmacological inhibitor experiments. The specificity is demonstrated by positive controls (H-Ras responds to FTI-227 and GGTI, C43) and the dramatic effect of 2BP on SCP1 localization (C44-C46). Cell fractionation data corroborate the imaging results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SCP1 contains an evolutionarily conserved di-cysteine motif (Cys44 and Cys45) at its membrane-associated region that is essential for membrane binding. Individual mutations had minimal effects, but simultaneous mutation of both Cys44 and Cys45 resulted in a 90% reduction of membrane-associated SCP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate the importance of specific cysteine residues through mutagenesis experiments. The evolutionary conservation (C49), the differential effects of single versus double mutations (C50-C51), and the fractionation data (C52) collectively support the conclusion that Cys44 and Cys45 are critical for membrane binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SCP1 is palmitoylated at its N-terminus, specifically at Cys44 and Cys45. Both overexpressed and endogenous SCP1 are palmitoylated, and this modification can be dynamically regulated by palmitoylation inhibitor 2BP and depalmitoylation inhibitor palmostatin B. The C44/45S double mutant almost completely abolished palmitoylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 provide comprehensive evidence for SCP1 palmitoylation using multiple complementary assays: ABE assay (C54, C57-C58), pan-palmitoylation antibody (C55), and [3H] palmitic acid incorporation (C59). The dynamic regulation (C55-C56) and site-specific mutagenesis (C57-C60) strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Newly synthesized SCP1 is translocated to the Golgi without being palmitoylated and then targeted to the plasma membrane by palmitoylation. The pool of SCP1 at the plasma membrane is constitutively depalmitoylated, and 2BP treatment prevents re-palmitoylation, leading to redistribution of SCP1 to cytosolic and nuclear compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C149 describe a trafficking model based on CHX and 2BP treatment experiments. However, the interpretation is complex and relies on indirect evidence. The CHX experiments (C143-C144) show that blocking protein synthesis doesn't prevent membrane localization, but this doesn't definitively prove the proposed trafficking pathway. The model requires more direct evidence, such as pulse-chase experiments or live-cell imaging of SCP1 trafficking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SCP1 is a negative regulator of angiogenesis. SCP1-KO mice showed larger vascular areas, increased vascular sprouts and branch points in retinal vasculogenesis, promoted hind limb flow recovery in an ischemia model, and enhanced tumor growth with increased angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 demonstrate the role of SCP1 in angiogenesis through multiple in vivo models: retinal vasculogenesis (C62-C63), hind limb ischemia (C64), and tumor xenografts (C65-C66). The consistency across different angiogenesis models strongly supports the conclusion that SCP1 negatively regulates angiogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SCP1 negatively regulates angiogenesis in an AKT-dependent manner. Aortic rings from SCP1-KO mice showed increased angiogenesis, which was reversed by treatment with the AKT inhibitor MK2206.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide mechanistic insight through pharmacological rescue experiments. The reversal of the SCP1-KO phenotype by AKT inhibition (C69) directly supports the conclusion that SCP1's effects on angiogenesis are mediated through AKT signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SCP1 suppresses angiogenesis in an AKT phosphorylation-dependent fashion in endothelial cells. SCP1 depletion promoted VEGF-induced AKT activation, while SCP1 overexpression inhibited tubule formation and cell migration. These effects were rescued by AKT-S473D mutant or reversed by AKT inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 demonstrate the mechanism in endothelial cells through gain-of-function (C72-C75) and loss-of-function (C76-C79) experiments with appropriate rescue controls. The use of constitutively active AKT mutant (C74-C75) and AKT inhibitors (C78-C79) provides strong evidence for the AKT-dependence of SCP1's effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C96"
+    ],
+    "result": "SCP1 is a phosphatase that dephosphorylates AKT at Ser473. Co-expression of wild-type SCP1, but not the catalytically inactive DN-SCP1 mutant, reduced Myr-AKT phosphorylation at Ser473 by 80%. In vitro dephosphorylation assays confirmed that WT-SCP1 markedly dephosphorylates AKT at Ser473. SCP1 overexpression diminished endogenous AKT phosphorylation at Ser473, while SCP1 knockdown increased it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C81-C91, and C96 provide comprehensive evidence through multiple approaches: co-expression experiments (C81-C82), in vitro dephosphorylation assays (C83-C85), immunostaining (C86-C87), and growth factor stimulation experiments (C88-C91). The use of catalytically inactive mutant as a negative control strengthens the conclusion that SCP1 directly dephosphorylates AKT at Ser473.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The phosphatase function of SCP1 that dephosphorylates AKT is independent of PHLPP activity. SCP1 or PHLPP depletion individually promoted AKT phosphorylation at Ser473, and double knockdown exaggerated this effect. PHLPP1 overexpression could still decrease AKT phosphorylation when SCP1 was disabled.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 address the relationship between SCP1 and PHLPP through epistasis experiments. The additive effect of double knockdown (C93) and the ability of PHLPP1 to function when SCP1 is disabled (C94) support the conclusion that these phosphatases act independently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Dephosphorylation of AKT by SCP1 significantly inhibits AKT kinase activity. SCP1 overexpression markedly reduced AKT activity in an in vitro kinase assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 demonstrate the functional consequence of SCP1-mediated dephosphorylation through direct kinase activity measurements. This provides important evidence that the dephosphorylation has functional significance beyond just changing phosphorylation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "SCP1 associates with AKT in cells through direct interaction that is independent of both SCP1 phosphatase activity and AKT phosphorylation status. Membrane-localized Myr-AKT had stronger affinity to SCP1 than WT AKT. Dominant-negative SCP1 still associated with AKT, and AKT phosphorylation site mutants showed similar interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 demonstrate the SCP1-AKT interaction through co-immunoprecipitation (C99-C102) and in vitro binding assays (C103-C105). The use of catalytically inactive SCP1 mutant (C102) and AKT phosphorylation site mutants (C104-C105) provides strong evidence for the independence of the interaction from enzymatic activity and phosphorylation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Palmitoylation is essential for SCP1 to dephosphorylate AKT and inhibit angiogenesis and tumor growth. The non-palmitoylatable SCP1 2S mutant significantly reduced the capacity to dephosphorylate AKT at Ser473, abolished the inhibitory effect on cell growth, and was unable to block HUVEC migration. Palmitoylation mutations did not affect SCP1's intrinsic phosphatase activity but decreased its interaction with AKT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 and C106-C117 demonstrate that palmitoylation is required for SCP1 function through comprehensive experiments with palmitoylation-deficient mutants. The key insight is that palmitoylation is required for membrane localization and AKT interaction (C112), not for intrinsic phosphatase activity (C111). The functional consequences are demonstrated in cell growth (C107), HUVEC migration (C113), and tumorigenesis (C115) assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "Dephosphorylation of AKT at serine 473 by SCP1 results in suppressed angiogenesis and decreased risk of tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 are supported by the collective evidence from multiple experiments showing that SCP1 dephosphorylates AKT at Ser473 (C81-C96), that this affects angiogenesis (C62-C80), and that it impacts tumorigenesis (C65, C115). The causal chain is well-established through the use of AKT inhibitors and constitutively active AKT mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Increased AKT phosphorylation, increased angiogenesis, and enhanced tumorigenesis were observed in Ctdsp1 gene-knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by the comprehensive characterization of SCP1-KO mice showing increased AKT phosphorylation (demonstrated in MEF cells, C91), increased angiogenesis (C62-C64, C66), and enhanced tumor growth (C65). The consistency across multiple assays supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SCP1 can shuttle between the plasma membrane and nucleus through palmitoylation-dependent mechanisms. Palmitoylation stabilizes SCP1 association with membranes and facilitates trafficking to the plasma membrane, while depalmitoylation releases SCP1 into the cytoplasm, allowing return to the Golgi or direct nuclear entry. Blockade of palmitoylation significantly induces nuclear localization of SCP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133-C139 propose a shuttling model based on the effects of palmitoylation inhibition on SCP1 localization. While the data show that 2BP treatment causes nuclear accumulation (C138), the proposed mechanism of shuttling requires more direct evidence. The model is largely inferential and would benefit from live-cell imaging, pulse-chase experiments, or nuclear export inhibitor studies to definitively demonstrate shuttling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C140",
+      "C142"
+    ],
+    "result": "Background knowledge claims about tumor angiogenesis, AKT signaling, phosphatases, SCPs, palmitoylation, and related proteins are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C30 and C118-C142 represent established knowledge from the literature, supported by appropriate citations. These provide the necessary context for interpreting the novel findings about SCP1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C141"
+    ],
+    "result": "The novel phenotype of SCP1 shuttling may be closely correlated with oncogenesis and tumor progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C141 is speculative and represents a hypothesis rather than a demonstrated result. While the data show that SCP1 can localize to both membrane and nucleus, and that it can dephosphorylate nuclear oncoproteins (C140), the direct correlation with oncogenesis and tumor progression through this shuttling mechanism requires additional experimental validation.",
+    "result_type": "MINOR"
+  }
+]

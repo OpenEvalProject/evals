@@ -1,0 +1,1794 @@
+{
+  "submission": {
+    "id": "27e6de68-fa3c-4c24-b299-3a208a90dc79",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:55:12.539585Z",
+    "updated_at": "2025-11-30T20:55:12.539585Z"
+  },
+  "content": [
+    {
+      "id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "submission_id": "27e6de68-fa3c-4c24-b299-3a208a90dc79",
+      "content_type": "manuscript",
+      "content_text": "# Compact and highly active next-generation libraries for CRISPR-mediated gene repression and activation\n\n## Authors\n\n- Max A Horlbeck<sup>1</sup> ([ORCID: 0000-0002-3875-871X](https://orcid.org/0000-0002-3875-871X))\n- Luke A Gilbert<sup>1</sup>\n- Jacqueline E Villalta<sup>1</sup>\n- Britt Adamson<sup>1</sup>\n- Ryan A Pak<sup>1</sup> ([ORCID: 0000-0003-3507-3122](https://orcid.org/0000-0003-3507-3122))\n- Yuwen Chen<sup>1</sup>\n- Alexander P Fields<sup>1</sup>\n- Chong Yon Park<sup>1</sup>\n- Jacob E Corn<sup>5</sup> ([ORCID: 0000-0002-7798-5309](https://orcid.org/0000-0002-7798-5309))\n- Martin Kampmann<sup>1</sup> ([ORCID: 0000-0002-3819-7019](https://orcid.org/0000-0002-3819-7019))\n- Jonathan S Weissman<sup>1</sup> ([ORCID: 0000-0003-2445-670X](https://orcid.org/0000-0003-2445-670X)) \u2020\n\n### Affiliations\n\n1. Department of Cellular and Molecular Pharmacology University of California, San Francisco San Francisco United States\n2. Howard Hughes Medical Institute University of California, San Francisco San Francisco United States\n3. California Institute for Quantitative Biomedical Research University of California, San Francisco San Francisco United States\n4. Center for RNA Systems Biology University of California, San Francisco San Francisco United States\n5. Innovative Genomics Initiative University of California, Berkeley Berkeley United States\n6. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n7. Institute for Neurodegenerative Diseases University of California, San Francisco San Francisco United states\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe recently found that nucleosomes directly block access of CRISPR/Cas9 to DNA (Horlbeck et al., 2016). Here, we build on this observation with a comprehensive algorithm that incorporates chromatin, position, and sequence features to accurately predict highly effective single guide RNAs (sgRNAs) for targeting nuclease-dead Cas9-mediated transcriptional repression (CRISPRi) and activation (CRISPRa). We use this algorithm to design next-generation genome-scale CRISPRi and CRISPRa libraries targeting human and mouse genomes. A CRISPRi screen for essential genes in K562 cells demonstrates that the large majority of sgRNAs are highly active. We also find CRISPRi does not exhibit any detectable non-specific toxicity recently observed with CRISPR nuclease approaches. Precision-recall analysis shows that we detect over 90% of essential genes with minimal false positives using a compact 5 sgRNA/gene library. Our results establish CRISPRi and CRISPRa as premier tools for loss- or gain-of-function studies and provide a general strategy for identifying Cas9 target sites.\n\n## Introduction\n\nHighly multiplexed pooled genetic screening methodologies have emerged as powerful and broadly accessible tools for systematically profiling gene function at the scale of mammalian genomes (Paddison et al., 2004). Recently, a number of pooled screening platforms have been developed that utilize the bacterial CRISPR (Clustered Regularly Interspaced Palindromic Repeats)-associated nuclease Cas9 paired with libraries of single-guide RNAs (sgRNAs) to disrupt targeted genes (reviewed in Shalem et al., 2015). We and others have developed tools based on nuclease-dead Cas9 (dCas9)\u00a0(Qi et al., 2013) to programmably interfere with (CRISPRi) or activate (CRISPRa) transcription (Gilbert et al., 2014, 2013; Konermann et al., 2015; Maeder et al., 2013; Perez-Pinera et al., 2013; Tanenbaum et al., 2014), and used these to systematically manipulate gene expression at genome scale (Gilbert et al., 2014; Konermann et al., 2015). Together, these screening platforms represent a powerful toolkit for unbiased forward gain-of-function and loss-of-function genetic screens in mammalian cells.\n\nA key step in implementing CRISPR genetic screens is selecting sgRNAs that mediate high Cas9 activity. We and others recently found that nucleosomes provide a direct and profound impediment to Cas9 access to DNA (Hinz et al., 2015; Horlbeck et al., 2016; Isaac et al., 2016), an observation we expected to be particularly important for applications such as CRISPRi and CRISPRa, which require sustained binding of dCas9 to DNA. We found that nucleosome occupancy was predictive of Cas9 activity complementary to and independent of previously described sgRNA sequence features (Chari et al., 2015; Doench et al., 2014; Xu et al., 2015), adding an additional dimension to the set of parameters expected to influence Cas9 activity. These observations, along with the strong nucleosome-dependent phasing observed downstream of the FANTOM consortium-annotated transcription start site (TSS) (FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Horlbeck et al., 2016), suggested that a quantitative model incorporating all of these features could greatly enhance our ability to predict highly active sgRNAs for CRISPRi and CRISPRa.\n\nTo test this, we developed a comprehensive machine learning pipeline trained on data collected from 30 CRISPRi and 9 CRISPRa screens. We found that the resulting models were highly predictive of sgRNA efficacy and strongly weighted nucleosome positioning and specific sequence features. We used these models to design and generate CRISPRi and CRISPRa version 2 (v2) libraries, targeting human and mouse genomes, which are greatly enriched for sgRNAs with high predicted activity. These libraries include several additional improvements, including the option to screen with either 10 sgRNAs per gene or a compact half-library containing the top 5 predicted sgRNAs for each gene. To benchmark this new algorithm, we validated the human CRISPRi v2 (hCRISPRi-v2) library with a screen designed to identify genes essential for robust cell growth. In this experiment, essential genes represent a large class of expected positive controls. We identified over 2100 essential genes with high statistical confidence, significantly improving upon our CRISPRi v1 library (Gilbert et al., 2014), and precision-recall analysis showed increased discrimination of gold standard essential and non-essential genes with both 10 sgRNA/gene and 5 sgRNA/gene hCRISPRi-v2 libraries (Hart et al., 2014). A large majority of the hCRISPRi-v2 sgRNAs targeting known essential genes produced robust growth phenotypes, a key advance over previous CRISPRi libraries (Evers et al., 2016), and our algorithm can accurately predict sgRNA activity for data from screens performed with an independently designed library and in different cell types. Furthermore, we observed that CRISPRi lacked any detectable non-specific toxicity associated with genomic DNA breaks and repair, enabling sensitive detection of genes with subtle growth phenotypes. We also conducted a screen for genes that modify growth rates upon overexpression with our hCRISPRa-v2 and found this identified 60% more genes, with greater enrichment for previously established classes of hit genes, than our version 1 CRISPRa screen. Our results suggest that the CRISPRi and CRISPRa v2 libraries have numerous favorable properties relative to alternate approaches as a resource for targeted or genome-scale loss-of-function and gain-of-function studies in mammalian cells.\n\n## Results\n\n### An integrated machine learning approach predicts highly active sgRNAs for CRISPRi and CRISPRa\n\nWe sought to improve upon our first generation CRISPRi and CRISPRa libraries by taking a comprehensive approach that incorporated nucleosome positioning, sequence features, refinement of our original sgRNA design rules, and other potentially informative factors. In order to quantitatively model the contribution of these features to CRISPRi activity, we turned to our recently described CRISPRi activity dataset (Horlbeck et al., 2016) in which we integrated data from 30 CRISPRi screens to select 1,539 high-confidence hit genes, and normalized the phenotypes for sgRNAs targeting each gene to the strongest sgRNAs for that gene, resulting in 'activity scores' for 18,380 sgRNAs. We used this set as training data for elastic net linear regression (Figure 1A) (Hui Zou, 2005). As many of the features included in the model were nonlinear with activity, we first adapted each feature set according to its relationship with activity. Categorical and non-linear parameters were binned prior to linear regression. Because the relationship between CRISPRi activity and target site distance from the TSS was highly periodic and asymmetric, as we had recently shown (Horlbeck et al., 2016), we fit sgRNA positioning features using support vector regression (SVR) to predict a continuous function for any target site (Supplementary Figure 1). An important improvement was the use of FANTOM consortium annotations instead of Ensembl/GENCODE to define the TSS (Cunningham et al., 2015; FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Harrow et al., 2012) (Supplementary file 2), a finding also recently reported by Radzisheuskaya and colleagues (Radzisheuskaya et al., 2016).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of machine learning strategy and datasets. 808 features were calculated for each sgRNA, linearized as indicated, and z-standardized. A linear regression model was then generated using these features to fit to the activity scores of the CRISPRi training set\u00a0(Horlbeck et al., 2016). 20% of the genes in the training set were reserved to test the predictive value of the resulting model. For display in Figures 1B,C, and Figure 1\u2014figure supplement 2, five non-overlapping 20% datasets were randomly selected and training was performed on the corresponding 80% sets. An orthogonal dataset, based on tiling of every possible sgRNA within 10\u00a0kb of the TSS of 49 genes known to modulate sensitivity to ricin (Bassik et al., 2013; Gilbert et al., 2014), was also used to assess the predictive value of this model. (B) ROC analysis of the ability of the machine learning approach in (A) to predict highly active sgRNAs. For test set 1, sgRNAs with an activity score greater than 0.75 were considered highly active. For test set 2, sgRNAs with a phenotype greater than 0.75 of the maximum phenotype for each gene were considered highly active. (C) Relative contribution of feature categories to the sgRNA predicted scores. The individual weighting of each feature assigned by the linear regression model (see Figure 2\u2014figure supplement 2) was grouped by the indicated categories, and the summed weights for each sgRNA within the 20% test datasets was calculated. The scores of the 95th and 5th percentile sgRNAs were subtracted to compute the overall contribution of the feature category to the distribution of predicted activity scores. Bars indicate the mean of the contributions from five 20% datasets (green circles). The\u00a0target site position includes both the distance to the TSS and the periodic relationship as fit by SVR (Figure 1\u2014figure supplement 1). (D) Distribution of predicted activity scores in next-generation CRISPRi libraries. (Top) Predicted CRISPRi activity correlates with empirical activity scores. For the 80%/20% division used to predict sgRNAs for the hCRISPRi-v2.1 library, predicted scores for the 20% test set were plotted against the empirical activity score. Activity score percentiles are from all sgRNAs within 0.25 of the indicated activity score. Predicted activity was highly correlated with activity, with a Pearson R of 0.56 (p<10\u2013296). (Bottom) Distribution of predicted activity scores for CRISPRi v1, hCRISPRi-v2, and hCRISPRi-v2.1, as calculated by the hCRISPRi-v2.1 regression model. (E) Composition of hCRISPRi-v2 and mCRISPRi-v2 sublibraries.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** An SVR model with radial basis function kernel was trained on an 80% division of the CRISPRi activity score dataset, using the position of the sgRNA relative to the upstream end of the primary FANTOM TSS for each gene as the sole feature. Hyperparameter values for SVR were selected automatically using cross-validation within the training set. To display the relationship between sgRNA position and CRISPRi activity fit by this model, predicted scores were generated for each position within a 3\u00a0kb window around the TSS. The resulting curve recapitulated the previously observed periodic relationship shown to be out-of-phase with nucleosome positioning (Horlbeck et al., 2016), and use of this SVR model within the general machine learning approach enabled regression against this highly complex relationship. The shaded area indicates the region relative to the TSS where predicted activity scores for all sgRNAs were calculated for potential inclusion in the\u00a0construction of the hCRISPRi-v2(.1) and mCRISPRi-v2 library designs.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Linear regression coefficients for each model trained according to the 80%/20% divisions displayed in Figure 1 are displayed, with bars indicating the mean of the five divisions and error bars indicating minimum and maximum feature coefficients. As each feature was z-standardized before linear regression, coefficients are directly comparable. For binned feature categories, x-axis values represent the minimum value of the bin (inclusive) unless otherwise indicated.\n\nWe first evaluated the performance of this algorithm using five-fold cross-validation. By performing regression on a training set of only 80% of the genes in the CRISPRi activity dataset, we found that the model was highly predictive of activity in the test set comprising the remaining 20% of the genes, with a receiver operating characteristic area under the curve (ROC-AUC) of 0.80 (Figure 1B). Importantly, this high predictive value was consistent across randomly selected training and test sets. As the sgRNAs in this dataset were pre-selected using our CRISPRi v1 design rules, we also tested our ability to predict the performance of sgRNAs in our previously published data set in which we tiled every target site around the TSS of 49 genes known to modulate resistance or sensitivity to the toxin ricin (Gilbert et al., 2014) and obtained an ROC-AUC of 0.91 (Figure 1B), indicating that we could identify active sgRNAs in the genome with high accuracy.\n\nWe next analyzed which features contributed most to CRISPRi activity in the predictive model (Figure 1\u2014figure supplement 2). Overall, the predicted scores were most influenced by the position relative to the TSS, including both distance from the TSS and avoidance of canonical nucleosome-occupied regions (Figure 1C and Figure 1\u2014figure supplement 1). In particular, the nucleosome-deprived region immediately downstream of the TSS yielded the strongest predicted activity by SVR, likely due in part to the contribution of dCas9 directly interfering with early transcriptional initiation or elongation (Gilbert et al., 2013; Qi et al., 2013). Sequence features also represented a large contribution to the model, and salient relationships included the disfavoring of guanine directly downstream of the protospacer adjacent motif (PAM) which recapitulated previous findings (Doench et al., 2014; Xu et al., 2015). Additional parameters that contributed to the prediction, included sgRNA secondary structure as predicted by ViennaRNA (Doench et al., 2016; Lorenz et al., 2011), sgRNA protospacer length, and chromatin accessibility features not accounted for by the nucleosome positioning relationship. The contribution of each individual parameter was also remarkably consistent across 80%/20% divisions of the training dataset, suggesting that the model was capturing underlying biological signal rather than overfitting the data.\n\nHaving established the robustness and accuracy of this approach, we used a version of our sgRNA predictions to design a CRISPRi genome-scale library targeting the human protein-coding transcriptome (hCRISPRi-v2) (Supplementary file 3; an in silico library design based on the final version of our predictions, hCRISPRi-v2.1, is also available in Supplementary file 3). While the predicted scores for sgRNAs in our v1 library were broadly distributed, many sgRNAs of higher predicted activity were available in the genome, and by picking the top 10 predicted sgRNAs per gene we expected that we could greatly enrich the library for guides of high activity (Figure 1D). In constructing this library, we also incorporated empirical information for highly active sgRNAs where available, revised off-target filtering, and implemented changes to the sgRNA expression vector to facilitate the processing of screen samples for sequencing (see Materials\u00a0and\u00a0methods). In addition, we cloned the library as separate pools for the top 5 and next-best 5 predicted sgRNAs per gene to facilitate screens where a smaller library may be advantageous, and further divided the pools into 7 thematic sublibraries based on our previous divisions of shRNA libraries (Kampmann et al., 2015) (Figure 1E).\n\nWe then used the same approach to design a next-generation CRISPRa library. Due to the requirement for CRISPRa targeting to be upstream of the TSS for maximal activity (Gilbert et al., 2014), we collected an activity score dataset of 2,898 sgRNAs from 9 CRISPRa screens (Y.C. and M.K., personal communication) to train an independent predictive model (Figure 2A). While the input set was significantly smaller than for CRISPRi, the resulting linear regression still had good predictive value (ROC-AUC 0.70; Figure 2B) and generally shared features of the CRISPRi model (Figure 2C and Figure 2\u2014figure supplement 1\u20132). We observed that periodic relationship between distance to the TSS and sgRNA activity was less pronounced for CRISPRa than for CRISPRi (Figure 2\u2014figure supplement 1; Figure 1\u2014figure supplement 1), a difference we attributed to the reduced dynamic range in the nucleosome-depleted region around the TSS, and the smaller number and relatively lower expression of the genes targeted in the CRISPRa training dataset. We used the top 10 predicted sgRNAs for each gene to construct a next-generation library, which significantly increased the predicted activity of the library over our v1 designs (Figure 2D). The hCRISPRa-v2 library was partitioned into 14 sublibraries as described for the v2 CRISPRi library above (Figure 2E). Importantly, while several strategies have been described for CRISPR-mediated activation (Chavez et al., 2015; Gilbert et al., 2013; Hilton et al., 2015; Konermann et al., 2015; Maeder et al., 2013; Perez-Pinera et al., 2013; Tanenbaum et al., 2014; Zalatan et al., 2015), a recent comparison of these strategies observed that sgRNA activity generally correlated across all approaches (Chavez et al., 2016). Our CRISPRa-v2 libraries are thus likely to serve as a valuable resource for effectively targeting most activator systems.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic of CRISPRa datasets. CRISPRa activity scores were generated from screen data and subjected to 3-fold cross-validation due to the smaller sample size. Ricin tiling data was limited to 21 genes that were previously shown to modulate sensitivity to ricin upon CRISPRa overexpression (Gilbert et al., 2014). (B) ROC analysis of machine learning approach using CRISPRa datasets, conducted as in Figure 1B. (C) Relative contribution of feature categories for CRISPRa, calculated as in Figure 1C. (D) Distribution of predicted activity scores in next-generation CRISPRa libraries. (Top) Predicted CRISPRa activity correlates with empirical activity scores. For the 67%/33% division used to predict sgRNAs for the hCRISPRa-v2 library, predicted scores for the 33% test set were plotted against the empirical activity score. Activity score percentiles are from all sgRNAs within 0.25 of the indicated activity score. Predicted activity was highly correlated with activity, with a Pearson R of 0.41 (p<10\u201338). (Bottom) Distribution of predicted activity scores for CRISPRa v1 and hCRISPRa-v2 as calculated by the hCRISPRa-v2 regression model. (E) Composition of hCRISPRa-v2 and mCRISPRa-v2 sublibraries.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** An SVR model was trained on a 67% division of the CRISPRa dataset using sgRNA position relative to the downstream end of the primary FANTOM TSS for each gene. Analysis was conducted as described for Figure 1\u2014figure supplement 1. The shaded area indicates the region relative to the TSS where predicted activity scores for all sgRNAs were calculated for potential inclusion in the\u00a0construction of the hCRISPRa-v2 and mCRISPRa-v2 library designs.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Linear regression coefficients for each model trained according to the 67%/33% divisions displayed in Figure 2 are displayed, with bars indicating the mean of the three divisions and error bars indicating minimum and maximum feature coefficients. As each feature was z-standardized before linear regression, coefficients are directly comparable. For binned feature categories, x-axis values represent the minimum value of the bin (inclusive) unless otherwise indicated.\n\nFinally, we applied the CRISPRi and CRISPRa models to predict highly active sgRNAs targeting the mouse protein-coding transcriptome and generated corresponding genome-scale libraries (mCRISRPi-v2 and mCRISPRa-v2) (Figures 1E, 2E). All four library designs are included as Supplementary file 3\u20136, sgRNA prediction and library design scripts are available online (see\u00a0Materials\u00a0and methods), and the cloned lentiviral libraries are available on Addgene.\n\n### The large majority of sgRNAs in the hCRISPRi-v2 library are effective\n\nA central goal in developing the hCRISPRi-v2 library was to enrich for highly active sgRNAs, which would improve statistical confidence in hits and enable high sensitivity even with a compact 5 sgRNA/gene library. Underscoring the importance of this goal, Evers et al. generated a small-scale CRISPRi library targeting predetermined sets of essential and non-essential genes and conducted screens for growth phenotypes in the bladder carcinoma cell line RT-112, and found that ~50% of the CRISPRi sgRNAs targeting essential genes were inactive (Evers et al., 2016), similar to rates observed using our CRISPRi v1 library. To test whether our next-generation sgRNA prediction algorithms were able to identify these inactive sgRNAs, we evaluated the predicted activity of the sgRNAs targeting known essential genes in this screen. Despite the screen being performed with an independently designed library, using an sgRNA constant region we have found to underperform our current design\u00a0(Chen et al., 2013), and in a cell type not evaluated in any of our training or test datasets, predicted activity correlated well with the sgRNA growth phenotypes observed in the screen (Figure 3A; Pearson R = \u22120.58, p<10\u201337). Over 40% of the sgRNAs in this library had a predicted activity score less than 0.4, a regime in which the vast majority (over 87%) of sgRNAs were inactive, as defined by z-score >\u00a0\u22122 relative to non-essential gene-targeting sgRNAs, enabling a priori elimination of 60% of the inactive sgRNAs by simply applying this threshold. By contrast, of the sgRNAs in that library with predicted activity scores \u22650.6, 77% are active. Use of the improved sgRNA constant region would be expected to further increase this fraction (Chen et al., 2013; Dang et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig3-v2.jpg)\n\n**Figure 3.:** (A) Distribution and predicted scores for sgRNAs targeting essential genes. (Top) Predicted activity scores for sgRNAs from Evers et al., 2016 or hCRISPRi-v2 targeting essential genes as defined by Evers et al. (Evers et al., 2016), binned in increments of 0.1. (Bottom) sgRNA growth phenotypes of the sgRNAs in the above bins, z-standardized to the distribution of sgRNAs targeting Evers et al. non-essential genes. (B) ROC analysis of sgRNAs from CRISPRi v1 or hCRISPRi-v2 targeting essential and non-essential genes. sgRNAs were ranked by \u03b3, and considered true or false positives if they targeted essential or non-essential genes, respectively, as defined by Evers et al. (C) Volcano plots of gene phenotypes and p-values for growth screens performed with CRISPRi v1 (Gilbert et al., 2014) and hCRISPRi-v2. For each screen, genes phenotypes were calculated by averaging the growth phenotype (\u03b3) of the 3 sgRNAs with the strongest \u03b3 by absolute value, and gene p-values were calculated by performing the Mann-Whitney test comparing all sgRNAs targeting the gene to the full set of negative control sgRNAs. For genes with multiple TSSs targeted, sgRNAs were grouped by TSS and the TSS with the lowest p-value was used for downstream analysis. A comparable number of negative control (NC) genes were generated by randomly sampling 10 non-targeting sgRNAs (with replacement) and analyzed as true genes. Empirically derived thresholds (dashed lines) were calculated as shown, using the NC gene distribution to derive the background standard deviation for z-score. (D) Precision-recall analysis of essential gene screens performed in K562. Statistical precision and recall of essential and non-essential gene sets (Hart et al., 2014) were calculated for genes ranked by growth phenotype in K562. For both CRISPRi and CRISPR nuclease screens\u00a0(Wang et al., 2015), gene-level phenotypes were calculated as the average log2 fold-change of all sgRNAs targeting the gene (termed CRISPR Scores in ref. [Wang et al., 2015]). (E) Boxplots of CRISPRi and CRISPR nuclease sgRNA phenotypes for several gene sets. sgRNA \u03b3 scores (CRISPRi) or log2 enrichments (nuclease) were z-standardized to the corresponding negative control set. Boxplots display the distribution of the negative control sgRNAs or sgRNAs targeting genes on Y chromosome (excluding pseudo-autosomal genes), within the BCR amplicon, or in the gold standard essential sets used in (D). Individual phenotypes for sgRNAs targeting BCR are overlaid with the corresponding boxplot.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) hCRISPRi-v2 sgRNA phenotypes correlate between screen replicates. sgRNA \u03b3 scores were calculated by computing log2 enrichments of read counts between screen start and endpoint samples and normalizing by estimated cell doublings over the course of the screen. Phenotypes for non-targeting sgRNAs and sgRNAs targeting the Y chromosome generally do not correlate between screen replicates; Spearman R\u00a0=\u00a00.08 (p<10\u20137) and R = 0.05 (p=0.5), respectively. (B) Histograms of growth phenotypes (\u03b3) for sgRNAs used in the analysis in Figure 3B. Percentages indicate number of essential-targeting sgRNAs with negative \u03b3 more than two standard deviations from the mean of the non-essential-targeting sgRNAs. (C) UCSC Genome Browser tracks depicting Ensembl and FANTOM annotations for example gene VCP. CRISPRi v1 sgRNAs were chosen to be \u221250\u00a0bp to 300\u00a0bp relative to the 5\u2019 end of the VCP transcript model. hCRISPRi-v2 sgRNAs were the top predicted sgRNAs chosen from all sites \u221225\u00a0bp to 500\u00a0bp relative to the 'p1@VCP' and 'p2@VCP' FANTOM TSS annotation. FANTOM annotations were generated from CAGE sequencing of over 800 human cell types and tissues, summarized by the maximum CAGE sequencing counts track.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Analysis was conducted as in Figure 3D. CRISPRi, Wang et al., and Doench et al. datasets were ranked according to the average log2 fold-change of all sgRNAs targeting a given gene. For Hart et al., genes were ranked according to their published Bayes Factor scores as sgRNA-level data was unavailable (Doench et al., 2016; Hart et al., 2015; Wang et al., 2015).\n\nIn order to validate our hCRISPRi-v2 library design and directly compare its performance to our published v1 library screens (Gilbert et al., 2014), we conducted a screen for genes essential for robust growth in the chronic myeloid leukemia cell line K562. We calculated the growth phenotype (\u03b3) for each sgRNA (Bassik et al., 2013; Kampmann et al., 2013) and averaged these values across two screen replicates (Figure 3\u2014figure supplement 1 and Supplementary file 7). We found that the hCRISPRi-v2 sgRNA growth phenotypes targeting the Evers et al. essential gene sets correlated with predicted activity as above (Figure 3A; Pearson R = \u22120.42, p<10\u201321), and therefore designing the libraries based on the top predicted scores selected for highly active sgRNAs. To quantify the fraction of active sgRNAs in our genome-scale libraries, we performed sgRNA-level ROC analysis, ranking sgRNAs by growth phenotype \u03b3 and classifying them as true or false positives if they targeted essential or non-essential genes, respectively (Evers et al., 2016). This analysis showed that hCRISPRi-v2 was greatly enriched for active sgRNAs (Figure 3B), and in particular the top 5 sgRNA/gene library contained 80% active sgRNAs at 5% false positives, comparable to the pilot nuclease library tested by Evers et al. This improvement was due to the significant reduction in the number of inactive sgRNAs rather than any difference in the noise as assessed by the background distribution of non-essential gene-targeting sgRNAs (Figure 3\u2014figure supplement 1B). In some instances, as with the known essential gene VCP, the difference in sgRNA phenotypes between v1 and v2 libraries was likely attributable to the transition from Ensembl to FANTOM as the TSS annotation source (Figure 3\u2014figure supplement 1C)\u00a0(Cunningham et al., 2015; FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Harrow et al., 2012). Taken together, the above observations indicate the lower fraction of effective sgRNAs in previous libraries was a result of the algorithm and the TSS annotation used rather than any intrinsic limitation of CRISPRi.\n\n### The hCRISPRi-v2 library robustly identifies essential genes in precision-recall analysis\n\nWe next sought to evaluate whether the enrichment for active sgRNAs in hCRISPRi-v2 over CRISPRi v1 resulted in improved accuracy and confidence for calling hit genes. We analyzed the screens with a consistent pipeline, scoring genes both by assigning a phenotype based on the mean of the top 3 sgRNAs targeting the gene (by absolute value) and by calculating the Mann-Whitney p-value of all 10 sgRNAs compared to the negative control sgRNAs. We visualized these gene scores as a volcano plot, with the phenotype effect size on the x-axis and p-value on the y-axis (Figure 3C and Supplementary file 8). Many hit genes exhibited much stronger p-values, including a substantial fraction that reached the optimal p-value obtainable in the Mann-Whitney test, indicating that the phenotypes of all targeting sgRNAs for these genes were more pronounced than any of the 3,790 non-targeting control sgRNAs. We also modeled noise and off-target effects in the system by generating a large set of 'negative control genes' composed of randomly selected sets of 10 non-targeting sgRNAs and scoring these genes as we did for true genes. In order to classify genes as hits in the screen, we used a score that integrated effect size and statistical confidence and applied the same threshold to both v1 and v2 screens. While in both screens fewer than 0.21% of these negative control genes scored as hits by these criteria, representing a ~2% empirically estimated false discovery rate overall, we could confidently identify 2,150 essential gene hits in the v2 screen while our v1 screen identified 1,408 essential genes (Figure 3C).\n\nIn order to assess whether the stronger sgRNA- and gene-level growth phenotype \u03b3 scores produced by the hCRISPRi-v2 library resulted in improved discrimination of essential genes, we turned to precision-recall analysis of large 'gold standard' essential and non-essential gene sets introduced by Hart and colleagues\u00a0(Hart et al., 2014). We ranked genes by their growth phenotype (\u03b3) score and calculated at each phenotype threshold the trade-off between the recall of true essential genes and the avoidance of false positive non-essential genes, termed precision. In this analysis, the hCRISPRi-v2 library recalled over 91.2% of the gold standard essential genes at 95% precision compared to 81.5% in CRISPRi v1 (Figure 3D). We also found that the precision-recall of the top 5 sgRNA/gene half library was essentially identical to the full 10 sgRNA per gene library. Therefore, the 5 sgRNA/gene CRISPRi library represents a compelling tool for applications such as cell sorting-based screens\u00a0(Liberali et al., 2015), or for in vivo screens where cell engraftment and library representation may represent a limiting factor (Braun et al., 2016; Chen et al., 2015).\n\nFinally, we wanted to benchmark our hCRISPRi-v2 library against other recent genome-scale growth screens performed with nuclease-active Cas9 and novel second-generation libraries (Doench et al., 2016; Hart et al., 2015; Wang et al., 2015). Although these screens were performed in different labs and generally in different cell lines, precision-recall analysis offers a useful metric to compare these screens in an unbiased fashion (Hart et al., 2014). We found that our CRISPRi v2 library showed comparable or in many cases much greater discrimination (Figure 3\u2014figure supplement 2). One published CRISPR nuclease screen was conducted in K562 (Wang et al., 2015) with a ~10 sgRNA/gene library, allowing for more direct comparison albeit still tempered by differences between labs and screening protocols. This screen recalled somewhat fewer (78.7% vs 90.8%) essential genes at 95% precision than our v2 library screen (Figure 3D). Together, these results indicate that our hCRISPRi-v2 library has a low false negative rate with few false positives, and the enrichment for highly active sgRNAs enables robust detection of phenotypes even with a compact library.\n\n### CRISPRi does not induce non-specific toxicity at amplified genomic loci\n\nWe were also intrigued by the observation by Wang and colleagues of K562-specific essentiality of many genes neighboring the BCR-ABL translocation, which they demonstrated to be mediated by non-specific toxicity of CRISPR-induced double-stranded breaks in the amplified locus (Wang et al., 2015; Wu et al., 1995). This toxicity appears to be pervasive as similar effects have been observed across a range of cancer cell lines (Aguirre et al., 2016; Munoz et al., 2016). To test whether this toxicity could be caused by CRISPRi as well, we used our hCRISPRi-v2 screen as a representative dataset. When we compared the phenotypes of CRISPRi sgRNAs to CRISPR nuclease at the BCR amplicon, with all phenotypes standardized to the distribution of negative controls to facilitate comparison, we found that sgRNAs targeting BCR were strongly depleted in both screens, as expected based on the critical role of the BCR-ABL fusion in this cancer cell line\u00a0(Naumann et al., 2001), but few other CRISPRi sgRNAs in the region elicited growth defects (Figure 3E). We also found that CRISPR nuclease sgRNAs targeting the non-essential gene set were generally depleted relative to negative controls or chromosome Y-targeting sgRNAs, which should have no targets in the female-derived K562 cell line (Klein et al., 1976), suggesting that in a CRISPR screen Cas9 nuclease activity can lead to measurable toxicity not related to the function of individual genes but instead due to the formation of on-target DNA double strand breaks, even with alleles present only at 2\u20133 copies (Naumann et al., 2001). CRISPRi did not exhibit this generic toxicity at non-essential genes, allowing for detection of genes with subtle phenotypes relative to negative controls. Importantly, however, the vast majority of sgRNAs targeting essential genes showed a\u00a0clear separation from the non-essential gene distribution (Figure 3E), demonstrating the high degree of sensitivity for detecting loss-of-function phenotypes with both CRISPR nuclease and CRISPRi screens.\n\n### The hCRISPRa-v2 library identifies more genes that modify robust growth rates upon overexpression\n\nFinally, we sought to validate our hCRISPRa-v2 library design by conducting a screen for growth phenotypes in K562 cells expressing SunTag-VP64 constructs (Gilbert et al., 2014; Tanenbaum et al., 2014). We conducted two replicate growth screens (Figure 4\u2014figure supplement 1A and Supplementary file 9) and analyzed the screen as with the hCRISPRi-v2 screen above to directly compare the results to our published CRISPRa screens (Gilbert et al., 2014). Our hCRISPRa-v2 screen identified 540 genes to modify robust growth rates upon overexpression, 257 more than our previous CRISPRa screen (Figure 4A and Supplementary file 10). Beyond these additional hits, the v1 and v2 screens showed good agreement (Figure 4\u2014figure supplement 1B), and the top categories in DAVID analysis of the v1 screen (Huang et al., 2009), enrichment for transcription factor genes (in particular homeobox and forkhead box transcription factors), received ~3-fold greater enrichment scores in the hCRISPRa-v2 hits (Figure 4\u2014figure supplement 1C), indicating the strong biological coherence of the additional genes. Analysis of the sgRNA growth phenotype (\u03b3) scores for genes that were hits in both v1 and v2 screens showed that a greater fraction of sgRNAs were highly active (69.3% in hCRISPRa-v2 with 5 sgRNAs/gene versus 45.1% in CRISPRa v1; Figure 4C and Figure 4\u2014figure supplement 1D), further validating improvements in the library design. In addition, as with our CRISPRi results, several genes identified in the hCRISPRi-v2 screen but not in v1, including hematopoietically-expressed homeobox HHEX and forkhead box C1 FOXC1, could be attributed to the use of the CAGE-based FANTOM5 TSS annotation (Figure 4D and Figure 4\u2014figure supplement 1E). Finally, we compared the growth phenotypes from hCRISPRi-v2 to hCRISPRa-v2 and found that the two methods identified non-overlapping sets of genes that modify robust growth (Figure 4\u2014figure supplement 1F), consistent with our previous results and highlighting the complementary information provided by these two approaches.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig4-v2.jpg)\n\n**Figure 4.:** (A) Volcano plots of gene phenotypes and p-values for growth screens performed with CRISPRa v1 (Gilbert et al., 2014) and hCRISPRa-v2, presented as in Figure 3C. (B) Cumulative distributions of fraction of highly active sgRNAs targeting strong hit genes shared between CRISPRa v1 and hCRISPRa-v2 screens. Highly active sgRNAs for CRISPRa were defined as those with negative \u03b3 scores more than two standard deviations from the mean of non-targeting control sgRNAs (see Figure 4\u2014figure supplement 1D). (C) UCSC Genome Browser tracks depicting TSS annotations and CRISPRa growth phenotypes for example gene HHEX.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19760/elife-19760-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) hCRISPRa-v2 sgRNA phenotypes correlate between screen replicates, presented as in Figure 3\u2014figure supplement 1A. Phenotypes for non-targeting sgRNAs and sgRNAs targeting the Y chromosome correlate poorly between screen replicates; Spearman R\u00a0=\u00a00.10 (p<10\u20138) and R = 0.15 (p=0.05), respectively. (B) Comparison of CRISPRa v1 and hCRISPRa-v2 gene growth phentoypes (\u03b3). (C) DAVID enrichment scores for hit gene categories from CRISPRa v1 and hCRISPRa-v2 screens. CRISPRa v1 categories represent the top 5 categories identified. hCRISPRa-v2 categories include the top 3 identified along with homeobox and forkhead box categories. (D) Histograms of growth phenotypes (\u03b3) for sgRNAs used in the analysis in Figure 4B. Percentages indicate number of sgRNAs targeting v1 and v2 shared hit genes with negative \u03b3 more than two standard deviations from the mean of the non-targeting control sgRNAs. (E) UCSC Genome Browser tracks depicting TSS annotations and CRISPRa growth phenotypes for example gene FOXC1. (F) Comparison of hCRISPRi-v2 and hCRISPRa-v2 gene growth phenotypes (\u03b3).\n\n## Discussion\n\nEstablishing design rules for effective reagents is critical to the implementation of genome-scale screening technologies. Our previous work established genome-scale CRISPRi and CRISPRa libraries as robust, specific, and complementary tools for dissecting biological pathways in human cells (Gilbert et al., 2014). Here, we significantly improve upon this technology by developing a comprehensive predictive model to accurately identify highly active sgRNAs. This model includes both features specific for CRISPRi and CRISPRa, such as positioning relative to the TSS, as well as features like nucleosome occupancy that we expect to be generally important for most Cas9-mediated applications (Horlbeck et al., 2016), and was able to accurately predict sgRNA activity in screen performed in a cell type it had not previously evaluated (Evers et al., 2016). We used this prediction algorithm to design four new genome-scale libraries targeting human and mouse genomes. These libraries are available on Addgene and in silico to facilitate design of focused libraries or targeted experiments (Supplementary file 3\u20136).\n\nBy performing CRISPRi and CRISPRa screens for genes that modify robust growth, we validate our sgRNA predictions and find that our hCRISPRi-v2 and hCRISPRa-v2 libraries represent a significant advance over our previous work in the fraction of highly active sgRNAs, the number of hits detected, and the statistical confidence of these hits. For CRISPRi, these improvements result in the accurate discrimination of essential genes by precision-recall analysis even with a compact 5 sgRNA/gene library. We believe that the greatly improved sgRNA prediction and lack of non-specific toxicity due to nuclease activity, combined with our previous findings that CRISPRi enables inducible, reversible, and homogenous manipulation of gene expression (Gilbert et al., 2014; Mandegar et al., 2016; Qi et al., 2013), make CRISPRi a state-of-the-art approach for loss-of-function studies.\n\nWhile the libraries described here target genes annotated as protein-coding, CRISPRi and CRISPRa have been shown to be effective for repressing and activating transcription of non-coding genes as well (Gilbert et al., 2014; Luo et al., 2016; Zhao et al., 2014). Our v2 sgRNA prediction algorithms may enable the\u00a0design of libraries to systematically manipulate expression of these transcripts as well. Furthermore, combining CRISPRi and CRISPRa with methods for robustly expressing multiple sgRNAs (Kabadi et al., 2014; Wong et al., 2016; Zalatan et al., 2015) will allow for simultaneous control of several genes, facilitating dissection of cellular pathways and systematic mapping of mammalian genetic interactions (Bassik et al., 2013; Costanzo et al., 2010; Schuldiner et al., 2005). Broadly, increased quantitative understanding of the factors dictating (d)Cas9 activity and specificity will greatly enhance the expanding set CRISPR-mediated technologies for controlling gene expression (Hilton et al., 2015; Perez-Pinera et al., 2013; Vojta et al., 2016), imaging targeted loci (Chen et al., 2013; Shao et al., 2016), or precisely editing the genome (Komor et al., 2016; Tsai et al., 2014).\n\n## Materials and methods\n\n### Machine learning for CRISPRi and CRISPRa sgRNA activity\n\n#### Training and test datasets\n\nThe CRISPRi activity score dataset was obtained from Horlbeck et al. (2016). CRISPRi and CRISPRa ricin tiling data was obtained from Gilbert et al. (2014). CRISPRa activity scores were generated as previously described for the CRISPRi activity dataset, using data from 9 published and unpublished screening datasets. Hit genes were selected using the formula |effect size Z-score x log10 p-value| \u2265 20 in any screen, and the phenotypes for sgRNAs targeting each gene were extracted from the screen in which the gene was a hit and normalized to the mean of the top 3 sgRNAs by absolute value. All datasets are included here as Supplementary file 1.\n\n#### Generating TSS annotations\n\nIn order to leverage the high accuracy of the FANTOM TSS annotations but remain compatible with the comprehensive, systematic, and established Ensembl transcript models, a hybrid approach was taken. First, the full set of protein-coding genes and transcripts were selected as previously described (Gilbert et al., 2014), using Ensembl release 74 (corresponding to genome assemblies hg19 for human and mm10 for mouse; RRID:SCR_002344) and the APPRIS pipeline to identify the relevant functional transcripts and establish a preliminary set of TSS annotations (Cunningham et al., 2015). FANTOM CAGE peak BED files (RRID:SCR_002678; Human: http://fantom.gsc.riken.jp/5/datafiles/phase1.3/extra/TSS_classifier/TSS_human.bed.gz, accessed March 2, 2015; Mouse: http://fantom.gsc.riken.jp/5/datafiles/phase1.3/extra/TSS_classifier/TSS_mouse.bed.gz, accessed June 28, 2015 and lifted over to mm10 coordinates with UCSC liftOver tool) were then used to refine this annotation. Specifically, for each gene, the TSS was identified as the same-stranded peaks within 30\u00a0kb of any Ensembl TSS that matched the gene symbol and was labeled 'p1@gene' (here referred to as 'primary TSS') or 'p2@gene' ('secondary TSS'; included only where the peak passed the FANTOM robust threshold for TSS), and the annotation support was labeled as 'CAGE, matched peaks.' If multiple matches were found the closest TSS to a known Ensembl TSS was used. If no match was found, the gene could then be matched with any same-stranded CAGE peak within 500\u00a0bp labeled as 'p1' or 'p2,' and annotation support was considered 'CAGE, primary peaks.' In the above cases, primary and secondary TSSs were targeted separately (i.e. by 10 sgRNAs each) if they were farther than 1\u00a0kb apart, or together as one 'P1P2' TSS. Where no matched or un-matched primary peaks were found, TSS annotations could be refined by any robust peaks or permissive peaks within 200\u00a0bp of the annotation (labeled 'CAGE, robust peak' or 'CAGE, permissive peak') or simply use the Ensembl/APPRIS annotation where no CAGE support was available ('Annotation'). This combined annotation is included as Supplementary file 2.\n\n#### Calculating features\n\nPosition relative to the primary and secondary TSSs was calculated from the genomic coordinate of the 3\u2019G of the PAM for each sgRNA to the upstream and downstream edge of each TSS range. Sequence features of the sgRNA and target sites were determined using custom scripts written in Python 2.7 (RRID:SCR_008394) with the Biopython module (RRID:SCR_007173)\u00a0(Cock et al., 2009). The hCRISPRi-v2.1 algorithm included a change in these scripts to fix how certain sequence homopolymers were scored. All other libraries were generated with this improvement incorporated, and all analysis in this paper was performed with the v2.1 algorithm. RNA folding metrics were calculated using the ViennaRNA package (RRID:SCR_008550; version 2.2.5) with default parameters (Lorenz et al., 2011). Chromatin features at the target site were calculated as described previously (Horlbeck et al., 2016), averaging the signal at each base of the target site including the PAM. Custom Python scripts with the module bxpython (v0.5.0, https://github.com/bxlab/bx-python) to extract the processed continuous signal from the following BigWig files obtained from the ENCODE consortium: MNase-seq https://www.encodeproject.org/files/ENCFF000VNN/ (Michael Snyder lab, Stanford University), DNase-seq https://www.encodeproject.org/files/ENCFF000SVY/ (Gregory Crawford lab, Duke University), and FAIRE-seq https://www.encodeproject.org/files/ENCFF000TLU/ (Jason Lieb lab, University of North Carolina)\u00a0(ENCODE Project Consortium, 2012). Beyond the nucleosome positioning information incorporated in the sgRNA positioning learning models, no chromatin data was used for predicting sgRNA activity for the mouse genome.\n\n#### Machine learning\n\nTraining and test activity score sets were first divided into 80%/20% or 67%/33% sets of genes for CRISPRi or CRISPRa, respectively, as described in the results section. The training set parameters were then transformed according to their distribution as depicted in Figure 1A. For binning parameters, a fixed width was chosen for each feature and applied over the range of values, with the upper-most and lower-most bins collapsed with the neighboring bins if the number of data points at each edge were sparse. Each feature was then split into individual parameters for each bin and sgRNAs were assigned a 1 for the bin if the value fell within the bin or 0 if not. For linearizing sgRNA positioning parameters with continuous curves, sgRNA positions were fit to the activity score (individually for the distance to each TSS coordinate) using SVR with a radial basis function kernel and hyperparameters C and gamma determined using a grid search approach cross-validated within the training set. The fit score at each position was then used as the transformed linear parameter. Binary parameters were assigned a 1 if true or a 0 if false. All linearized parameters were z-standardized and fit with elastic net linear regression, with the l1/l2 ratio set by cross-validated grid search. All machine learning and downstream analysis was performed with custom Python scripts and the scikit-learn suite, version 0.15.0 (RRID:SCR_002577) (Pedregosa et al., 2011).\n\n### Design of next-generation CRISPRi and CRISPRa libraries\n\n#### Prediction of sgRNA activity scores\n\nAll sequences within \u221225 and 500\u00a0bp (for CRISPRi) or \u2212550 and \u221225\u00a0bp (for CRISPRa) of the upstream or the\u00a0downstream edge of the primary or secondary TSS and containing 19\u00a0bp followed by an NGG PAM were extracted as potential sgRNAs for downstream scoring of predicted activity. All sequences were prepended with a 5\u2019 G to enable robust transcription from the U6 promoter, whether or not this base was present in the genomic sequence. Parameters were calculated for all sgRNAs as above, and transformed and scored using the CRISPRi or CRISPRa regression model from an arbitrarily chosen training set (test set ROC-AUC corresponding to these sets reported in results section).\n\n#### Off-target scoring\n\nPrediction of sgRNA off-target effects was performed using weighted Bowtie (v1.0.0, RRID:SCR_005476 [Ben Langmead et al., 2009]) alignment largely as previously described (Gilbert et al., 2014) with several adjustments. The '--tryhard' flag was added to the Bowtie command to increase sensitivity for mismatched sgRNA target sites. The hg19 and mm10 genomes used for alignment were masked at mitochondrial sequences and pseudoautosomal sequence to eliminate 'false positive' multiple alignments. Most importantly, as CRISPRi and CRISPRa have maximal effects proximal to the TSS, potential off-target alignments in these regions now were prioritized by creating a reference sequence corresponding to 1\u00a0kb windows around each TSS as defined above, along with the 5\u2019 end of every Ensembl transcript annotation. Reference sequences were generated using bedtools (v2.17.0, RRID:SCR_006646 [Quinlan and Hall, 2010]). In order to pass at the strictest threshold, sgRNAs were required to have no more than 1 alignment (the sgRNA target site itself) with 'mismatch score' (Gilbert et al., 2014) less than 31 proximal to the TSS and under 21 in the genome. (For hCRISPRi-v2, 96.6% of sgRNAs incorporated passed at this threshold.) In cases of difficult to target genes or close gene families, sgRNAs were allowed at relaxed thresholds. In descending order, these were: 1 alignment under 31 proximal to the TSS (no genomic threshold), 1 alignment under 21 in the genome, 2 alignments under 31 proximal to the TSS, and 3 alignments under 31 proximal to the TSS.\n\n#### sgRNA selection\n\nsgRNAs were chosen for inclusion into the genome-scale libraries based on predicted activity scores, empirical activity scores where available, off-target filtering, overlap with other sgRNAs already selected, and sequences with no restriction sites for enzymes used in cloning or sequencing sample processing (BstXI, BlpI, and SbfI). Empirical activity scores for CRISPRi/a v1 sgRNAs were generated as for the training sets above at a lower discriminant threshold of 7, and the corresponding sgRNAs were standardized to 19\u00a0bp with a 5\u2019 G preprended as above and subjected to the same revised off-target scoring procedure. For each TSS targeted by the library, up to 2 sgRNAs with the strongest empirical evidence were included first if the empirical activity score was at least 0.75, the sgRNA was less that 5\u00a0kb from the revised v2 TSS, the sgRNA passed the most stringent off-target filter, the sgRNA plus flanking cloning sequences did not contain extra restriction sites, and the sgRNA target site was at least 3\u00a0bp shifted from any previously selected target sequence. Once 2 empirically validated v1 sgRNAs were included, further sgRNAs fitting these criteria were not included but their predicted activity scores were increased by 0.2 to reflect the balance of information from the algorithm and empirical activity. Predicted sgRNAs were then sorted by best predicted activity score and included if the sgRNA passed the most stringent off-target filter, the sgRNA plus flanking cloning sequences did not contain extra restriction sites, the sgRNA target site was at least 3\u00a0bp shifted from any previously selected target sequence, and no more than 10 sgRNAs had been selected for the TSS. If fewer than 10 sgRNAs were selected by this algorithm, off-target stringency was iteratively relaxed as above and selection was continued to attain 10 sgRNAs. If 10 sgRNAs passing the most relaxed threshold could not be identified, the TSS was not targeted by the library.\n\nsgRNA on-target and off-target prediction algorithms, library design scripts, and associated files are available at https://github.com/mhorlbeck/CRISPRiaDesign.\n\n#### Negative controls\n\nFor each library, the frequency of each DNA base at each position along the sgRNA protospacer sequence was calculated. Random sgRNA protospacer sequences weighted by these base frequencies were then generated to mirror the composition of the targeting sgRNAs. These were then filtered for sgRNAs with 0 alignments with a mismatch score less than 31 proximal to the TSS and 0 alignments under 21 in the genome as above.\n\n#### Library cloning\n\nProtospacer sequences were appended with cloning sequences and then unique PCR adapters corresponding to the designated sublibrary. The half libraries were determined from the first 5 and second 5 sgRNAs selected into the library for each TSS according to\u00a0the algorithm above. Genes were then partitioned into one of the 13 sublibraries defined by (Kampmann et al., 2015), compressed into the indicated 7 groupings. Each sgRNA was ordered as two oligonucleotide sequences to produce a narrower distribution of sgRNA representation. Overall, oligo sequences were 84\u00a0bp and had the following format:\n\n5\u2019 pcr adapter\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0BstXI\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0protospacer\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0BlpI\u00a0\u00a0\u00a0\u00a0\u00a0\u00a03\u2019 pcr adapter\n\n==================CCACCTTGTTGGNNNNNNNNNNNNNNNNNNNGTTTAAGAGCTAAGCTG==================\n\n?|||||||||||||||||||\n\nGenomic sequence:\u00a0\u00a0..........NNNNNNNNNNNNNNNNNNNNNGG.....\n\nOligonucleotides were synthesized by Agilent Technologies (RRID:SCR_013575; Santa Clara, CA) on 244K oligo arrays, and cloned into the sgRNA expression vector as previously described (Gilbert et al., 2014). The library sgRNA expression vector 'pCRISPRia-v2' was identical to the CRISPRi/a v1 plasmid (pU6-sgRNA EF1Alpha-puro-T2A-BFP, Addgene #60955) with the addition of two SbfI restriction sites used for sequencing sample processing.\n\n### Genome-scale CRISPRi and CRISPRa screen for essential genes\n\nThe screens for genes required for robust growth were conducted essentially as previously described\u00a0(Gilbert et al., 2014). Briefly, plasmid libraries were packaged into lentivirus in HEK293T cells (RRID:CVCL_0063) and infected into a previously established polyclonal K562 cell line stably expressing dCas9-KRAB grown in 3L spinner flasks (Bellco, Vineland, NJ). After two days, infected cells were selected with 0.75\u00a0\u03bcg/mL puromycin (Tocris, Bristol, UK) for two days, allowed to recover for one day, and then cultured at a minimum of 750 \u00d7\u00a0106 cells in 1.5L standard media (RPMI-1640 with 10% Fetal Bovine Serum and 1x supplemental glutamine, penicillin, and streptomycin) from 'T0' to 'endpoint,' determined by ~10 cell doublings after T0. CRISPRi screen cells were mock-treated with 0.1% DMSO (Sigma-Aldrich, St. Louis, MO) but otherwise left untreated. Screens were performed as independent replicates starting from the infection step. The K562 dCas9-KRAB and SunTag-VP64 cell lines were obtained from (Gilbert et al., 2014) and had been constructed from K562 cells originally obtained from ATCC (RRID:CVCL_0004). Cytogenetic profiling by array comparative genomic hybridization (not shown) closely matched previous characterizations of the K562 cell line (Naumann et al., 2001). All cell lines tested negative for mycoplasma contamination (MycoAlert Kit, Lonza, Basel, Switzerland) in regular screenings.\n\nFrozen samples of 250 \u00d7\u00a0106 cells collected at T0 and endpoint were processed as previously described (Gilbert et al., 2014), with the substitution of an SbfI restriction digest (SbfI-HF, New England Biolabs, Ipswich, MA) in place of the MfeI digest in the genomic DNA fragmentation and enrichment step. The sgRNA-encoding regions were sequenced on an Illumina HiSeq-4000 using custom primers. Sequencing reads were aligned to the expected library sequences using Bowtie (v1.0.0, [Ben Langmead et al., 2009]) and read counts were processed using custom Python scripts (available at https://github.com/mhorlbeck/ScreenProcessing) based on previously established shRNA screen analysis pipelines (Bassik et al., 2013; Kampmann et al., 2013). sgRNAs represented with fewer than 50 sequencing reads in both T0 and Endpoint were excluded from analysis. sgRNA growth phenotypes (\u03b3) were calculated by normalizing sgRNA log2 enrichment from T0 to endpoint samples and normalizing by the number of cell doublings in this time period. CRISPRi v1 screen data from Gilbert et al. (2014) was re-analyzed using this pipeline, and the hCRISPRi/a-v2 5 sgRNA/gene libraries were evaluated by analyzing the sgRNA read counts corresponding to only the 5 sgRNA/gene sublibraries. Gene ontology analysis was conducted using DAVID 6.7 (Huang et al., 2009) with default search categories and with background lists representing the genes targeted by the CRISPRa v1 or hCRISPRa-v2 libraries where appropriate. For Figure 4B and Figure 4\u2014figure supplement 1D, 'shared hit' genes were 70 genes that scored as strong anti-growth hits (phenotype z-score x \u2013log10 p-value \u2264 \u221210) in both CRISPRa v1 and hCRISPRa-v2.\n",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "e4d9e245-e116-464a-9041-c0e06f85340a",
+      "submission_id": "27e6de68-fa3c-4c24-b299-3a208a90dc79",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karen Adelman, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.19760.030](https://doi.org/10.7554/eLife.19760.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Compact and highly active next-generation libraries for CRISPR-mediated gene repression and activation\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior Editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nPooled CRISPR screenings have become important methodologies to quickly associate genes with their functions in a high-throughput fashion. These platforms include gene knockout screens, gene inactivation (CRISPRi) and activation (CRISPRa). For such powerful technologies, it is important to further boost their efficacy and minimize any potential off-target effect. This manuscript deals with this very issue, and describes a systematic analysis of features that enable effective short guide RNA (sgRNA) activity in CRISPRi or CRISPRa screens. The result is new, highly effective libraries containing 5 or 10 sgRNAs per gene. These new libraries are compact and will be powerful tools for discovery of gene function moving forward.\n\nSpecifically, the manuscript details the use of machine learning algorithms and other informatic approaches to determine what features render a sgRNA most effective. Key aspects involve targeting a nucleosome-depleted region and the position from the observed transcription start site (using the more accurate FANTOM positions for TSS designation). These properties, coupled with specific sequence features can be combined to predict very active sgRNAs. The authors do a great job demonstrating the effectiveness of their predictions and the new CRISPRi libraries. This clearly establishes the promise of CRISPRi as a potent methodology that avoids a number of the pitfalls that using catalytically active CRISPR/Cas9 entails.\n\nTo facilitate dissemination of this knowledge, they have made the libraries available on Addgene (in 5 or 10 sgRNA per gene varieties) that target mouse or human genes. Further, they share the sequences of the best sgRNAs in supplemental tables, additionally increasing the impact and breadth of this work.\n\nIn short, this is a nicely written story with convincing data. I have only a few changes to suggest to the text and display items. These are aimed at making the manuscript maximally helpful to people in the field who might be designing their own guides against non-coding RNAs, as well as increasing the interest for those who are just curious about how CRISPRi works.\n\nEssential revisions:\n\n1) Authors claimed that the next-generation libraries for CRISPR-mediated gene repression and activation have higher activity than the old version. The experimental demonstration for new version of CRISPRa is completely missing. It's therefore premature to make such statement in the title and in the context. This issue should be clarified.\n\n2) The new version of library outperform the old version, mostly based on statistic prediction and analysis. However, one might argue that the original library is \"good enough\" with \"sub-optimal\" performance in the identification of genes' function in majority of cases. It would be much more convincing if they could show examples of genes identified from new libraries that would be missing in the old fashion way. In this case, comprehensive validation of these candidate genes are needed to make such a claim.\n\n3) Authors said that the new CRISPRi screen has undetectable non-specific toxicity seen with CRISPR nuclease approaches. This is actually the feature of CRISPRi, not the new design of CRISPRi library. It's misleading to give such credit to the new algorithm of design.\n\n4) Likewise, we couldn't quite get the point why the new library would have improved off-target effects. It's understandable that the new design might improve the on-target activity. As to the off-target rate, it's puzzling to understand the mechanism behind this observation.\n\n5) Although the effects of nucleosomes (DNAse, MNase, FAIRE) on positioning of sgRNAs for CRISPRi is strong, the importance for CRISPRa seems quite modest from the data presented- with position relative to the TSS being much more important. Why might this be? I am not convinced that this means that activating guide RNAs are indifferent to nucleosomes (and the authors don't suggest this). So why the difference? It would be helpful to the community to get some comment on this. As the manuscript stands, one could interpret the findings to say that one needed to target nucleosome-depleted regions to inhibit gene expression, but that activating guides could more readily penetrate chromatin, which seems unlikely. Could the authors clarify?\n\nOne possibility is that the optimal location upstream of the TSS (which appears to be -100 to -200 upstream) is typically nucleosome depleted at most active genes and so there isn't much dynamic range in the nucleosome signal detected in this region. This would compress the information you could get out of this parameter, perhaps making it seem less important because there was less variability among genes.\n\n6) Given the above distinction, it would be preferable to show the score contribution for 'target site position relative to TSS' and 'target site chromatin accessibility' separately for CRISPRi (Figure 1C) as well as CRISPRa (Figure 2C).\n\n7) Can the authors comment on the very strong peak of effectiveness for CRISPRi sgRNAs just downstream of the TSS? This likely reflects something in addition to nucleosome-deprivation as being helpful for CRISPRi. I find the very sharp peak in maximal activity in Figure 1\u2014figure supplement 1 to be really striking (even in comparison to previous work using less well-refined TSSs), and would encourage its inclusion in the final manuscript.\n\nAs the authors have noted before, CRISPRi really works best when the guide is positioned just downstream of the start site- perhaps because it is more effective to block early transcription elongation and the release from Pol2 pausing, rather than farther downstream once Pol2 is loaded with the machinery to plow through chromatin etc.?\n\nFor those working to block expression of novel or non-coding RNAs, we think it is worth getting this idea out there in a super-clear and obvious way- that the sweet spot for optimal guides is right downstream of the promoter.\n\n8) Regarding the basic sgRNA prediction algorithms developed, will these be shared upon request? We see a github site for the tool created to assess chromatin features, but not for the broader prediction platform. Could the authors indicate in the Methods how an interested user might get help with sgRNA predictions?\n",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "755443d3-0f03-4b69-83b2-9f6553614119",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C1",
+      "claim": "Nucleosomes directly block access of CRISPR/Cas9 to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently found that nucleosomes directly block access of CRISPR/Cas9 to DNA (Horlbeck et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Horlbeck et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "867222e6-0f2d-44a6-8071-166eb014029c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C2",
+      "claim": "A comprehensive algorithm incorporating chromatin, position, and sequence features can accurately predict highly effective sgRNAs for CRISPRi and CRISPRa.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we build on this observation with a comprehensive algorithm that incorporates chromatin, position, and sequence features to accurately predict highly effective single guide RNAs (sgRNAs) for targeting nuclease-dead Cas9-mediated transcriptional repression (CRISPRi) and activation (CRISPRa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the machine learning approach and validation screens described in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "1ed5bc52-20f9-4b07-a661-56bc475e6aac",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C3",
+      "claim": "The large majority of sgRNAs in the CRISPRi v2 library are highly active.",
+      "claim_type": "EXPLICIT",
+      "source": "A CRISPRi screen for essential genes in K562 cells demonstrates that the large majority of sgRNAs are highly active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from the K562 essential gene screen",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f93fd4bb-c721-44f6-a271-f3fd8c811e8a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C4",
+      "claim": "CRISPRi does not exhibit detectable non-specific toxicity observed with CRISPR nuclease approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find CRISPRi does not exhibit any detectable non-specific toxicity recently observed with CRISPR nuclease approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental comparison of CRISPRi and CRISPR nuclease at the BCR amplicon",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "534311ca-5eb7-46f8-9387-bbfb25632ff9",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C5",
+      "claim": "Over 90% of essential genes can be detected with minimal false positives using a compact 5 sgRNA/gene library.",
+      "claim_type": "EXPLICIT",
+      "source": "Precision-recall analysis shows that we detect over 90% of essential genes with minimal false positives using a compact 5 sgRNA/gene library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by precision-recall analysis data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "83eae7f0-beb7-4fc1-9d72-87328121828d",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C6",
+      "claim": "Nucleosomes provide a direct and profound impediment to Cas9 access to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others recently found that nucleosomes provide a direct and profound impediment to Cas9 access to DNA (Hinz et al., 2015; Horlbeck et al., 2016; Isaac et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "d68d02b3-7389-450a-b47a-479d24edc29e",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C7",
+      "claim": "Nucleosome occupancy is predictive of Cas9 activity complementary to and independent of previously described sgRNA sequence features.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that nucleosome occupancy was predictive of Cas9 activity complementary to and independent of previously described sgRNA sequence features (Chari et al., 2015; Doench et al., 2014; Xu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and the machine learning analysis in the manuscript",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "35a69f8b-4f13-43ce-b438-f0574a7440b5",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C8",
+      "claim": "Strong nucleosome-dependent phasing is observed downstream of the FANTOM consortium-annotated transcription start site (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "These observations, along with the strong nucleosome-dependent phasing observed downstream of the FANTOM consortium-annotated transcription start site (TSS) (FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Horlbeck et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to FANTOM consortium and Horlbeck et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "645f2cfd-1a32-4d07-be54-e851ae6ca197",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C9",
+      "claim": "The machine learning pipeline was trained on data collected from 30 CRISPRi and 9 CRISPRa screens.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we developed a comprehensive machine learning pipeline trained on data collected from 30 CRISPRi and 9 CRISPRa screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "a5577df8-edf3-4edb-97dd-735ad256f5c7",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C10",
+      "claim": "The resulting models were highly predictive of sgRNA efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the resulting models were highly predictive of sgRNA efficacy and strongly weighted nucleosome positioning and specific sequence features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ROC analysis and cross-validation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "09f225b4-3a9d-415d-8c22-9a8e3771df44",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C11",
+      "claim": "The models strongly weighted nucleosome positioning and specific sequence features.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the resulting models were highly predictive of sgRNA efficacy and strongly weighted nucleosome positioning and specific sequence features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by feature contribution analysis shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "b813a7a8-7882-4918-b49e-ab85f9622355",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C12",
+      "claim": "The hCRISPRi-v2 library identified over 2100 essential genes with high statistical confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified over 2100 essential genes with high statistical confidence, significantly improving upon our CRISPRi v1 library (Gilbert et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental screen data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "2a148794-aa81-4e21-9198-f1f0168145b9",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C13",
+      "claim": "The hCRISPRi-v2 library shows increased discrimination of gold standard essential and non-essential genes compared to v1.",
+      "claim_type": "EXPLICIT",
+      "source": "precision-recall analysis showed increased discrimination of gold standard essential and non-essential genes with both 10 sgRNA/gene and 5 sgRNA/gene hCRISPRi-v2 libraries (Hart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by precision-recall analysis data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "1226d7ec-1415-474c-9c01-77c2663ef169",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C14",
+      "claim": "A large majority of the hCRISPRi-v2 sgRNAs targeting known essential genes produced robust growth phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "A large majority of the hCRISPRi-v2 sgRNAs targeting known essential genes produced robust growth phenotypes, a key advance over previous CRISPRi libraries (Evers et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental screen data and comparison to Evers et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "47f7d2cf-0397-426d-a875-af6e6b5c23ae",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C15",
+      "claim": "The algorithm can accurately predict sgRNA activity for data from screens performed with an independently designed library and in different cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "our algorithm can accurately predict sgRNA activity for data from screens performed with an independently designed library and in different cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of Evers et al. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "28a3ad50-3f2d-42a8-966f-4cb8924f11c6",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C16",
+      "claim": "CRISPRi enables inducible, reversible, and homogenous manipulation of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "our previous findings that CRISPRi enables inducible, reversible, and homogenous manipulation of gene expression (Gilbert et al., 2014; Mandegar et al., 2016; Qi et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "8480d9fb-90bd-4e09-8481-ea14c038d3ac",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C17",
+      "claim": "The hCRISPRa-v2 screen identified 60% more genes that modify growth rates upon overexpression than the v1 screen.",
+      "claim_type": "EXPLICIT",
+      "source": "We also conducted a screen for genes that modify growth rates upon overexpression with our hCRISPRa-v2 and found this identified 60% more genes, with greater enrichment for previously established classes of hit genes, than our version 1 CRISPRa screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental screen data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "934f2f25-7abc-4095-8426-a157967ebc78",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C18",
+      "claim": "The CRISPRi activity dataset contains activity scores for 18,380 sgRNAs targeting 1,539 high-confidence hit genes.",
+      "claim_type": "EXPLICIT",
+      "source": "we turned to our recently described CRISPRi activity dataset (Horlbeck et al., 2016) in which we integrated data from 30 CRISPRi screens to select 1,539 high-confidence hit genes, and normalized the phenotypes for sgRNAs targeting each gene to the strongest sgRNAs for that gene, resulting in 'activity scores' for 18,380 sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated description of the training dataset",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f6b607f8-2f0d-462a-993d-42a087d54ec3",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C19",
+      "claim": "The model achieved a receiver operating characteristic area under the curve (ROC-AUC) of 0.80 in cross-validation.",
+      "claim_type": "EXPLICIT",
+      "source": "By performing regression on a training set of only 80% of the genes in the CRISPRi activity dataset, we found that the model was highly predictive of activity in the test set comprising the remaining 20% of the genes, with a receiver operating characteristic area under the curve (ROC-AUC) of 0.80 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROC analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "9c74bedb-bb72-44de-85be-e6f5b4bedf44",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C20",
+      "claim": "The model achieved an ROC-AUC of 0.91 on the ricin tiling dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "we also tested our ability to predict the performance of sgRNAs in our previously published data set in which we tiled every target site around the TSS of 49 genes known to modulate resistance or sensitivity to the toxin ricin (Gilbert et al., 2014) and obtained an ROC-AUC of 0.91 (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROC analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "15ff6e86-949b-43b3-be61-e9cd8d1e17fc",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C21",
+      "claim": "The position relative to the TSS, including both distance from the TSS and avoidance of canonical nucleosome-occupied regions, most influenced the predicted scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the predicted scores were most influenced by the position relative to the TSS, including both distance from the TSS and avoidance of canonical nucleosome-occupied regions (Figure 1C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feature contribution analysis in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "1daa8fe1-7364-4d72-acdf-72403a56e63b",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C22",
+      "claim": "The nucleosome-deprived region immediately downstream of the TSS yielded the strongest predicted activity by SVR.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the nucleosome-deprived region immediately downstream of the TSS yielded the strongest predicted activity by SVR, likely due in part to the contribution of dCas9 directly interfering with early transcriptional initiation or elongation (Gilbert et al., 2013; Qi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SVR analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "9b4ea37c-52d5-4523-a90d-3e4cd1f9a424",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C23",
+      "claim": "Guanine directly downstream of the protospacer adjacent motif (PAM) is disfavored for sgRNA activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence features also represented a large contribution to the model, and salient relationships included the disfavoring of guanine directly downstream of the protospacer adjacent motif (PAM) which recapitulated previous findings (Doench et al., 2014; Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by machine learning analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "275b43f5-e6b8-49a5-8497-23f10e50b400",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C24",
+      "claim": "sgRNA secondary structure as predicted by ViennaRNA contributed to the prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional parameters that contributed to the prediction, included sgRNA secondary structure as predicted by ViennaRNA (Doench et al., 2016; Lorenz et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by feature analysis and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "5cc2f554-ae20-4437-a94a-fc59bde7dae6",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C25",
+      "claim": "The CRISPRa linear regression model had good predictive value with an ROC-AUC of 0.70.",
+      "claim_type": "EXPLICIT",
+      "source": "While the input set was significantly smaller than for CRISPRi, the resulting linear regression still had good predictive value (ROC-AUC 0.70; Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROC analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "11870da3-ebc2-4391-8713-2ba150da16dd",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C26",
+      "claim": "The periodic relationship between distance to the TSS and sgRNA activity was less pronounced for CRISPRa than for CRISPRi.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that periodic relationship between distance to the TSS and sgRNA activity was less pronounced for CRISPRa than for CRISPRi (Figure 2\u2014figure supplement 1; Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SVR analysis shown in supplementary figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "287284dd-289f-46e3-a938-704f4c8da447",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C27",
+      "claim": "sgRNA activity generally correlates across different CRISPR activation strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "while several strategies have been described for CRISPR-mediated activation (Chavez et al., 2015; Gilbert et al., 2013; Hilton et al., 2015; Konermann et al., 2015; Maeder et al., 2013; Perez-Pinera et al., 2013; Tanenbaum et al., 2014; Zalatan et al., 2015), a recent comparison of these strategies observed that sgRNA activity generally correlated across all approaches (Chavez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chavez et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "946c4e65-4588-40b0-82d8-a7ff51192d9a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C28",
+      "claim": "Approximately 50% of CRISPRi sgRNAs targeting essential genes in the Evers et al. library were inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Underscoring the importance of this goal, Evers et al. generated a small-scale CRISPRi library targeting predetermined sets of essential and non-essential genes and conducted screens for growth phenotypes in the bladder carcinoma cell line RT-112, and found that ~50% of the CRISPRi sgRNAs targeting essential genes were inactive (Evers et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Evers et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "4903b23b-9169-4726-b7ef-92c9f90be89a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C29",
+      "claim": "Predicted activity correlated well with sgRNA growth phenotypes in the Evers et al. screen (Pearson R = \u22120.58, p<10\u201337).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the screen being performed with an independently designed library, using an sgRNA constant region we have found to underperform our current design (Chen et al., 2013), and in a cell type not evaluated in any of our training or test datasets, predicted activity correlated well with the sgRNA growth phenotypes observed in the screen (Figure 3A; Pearson R = \u22120.58, p<10\u201337).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "657d78e8-df7f-44a0-a14f-0aa8dadc9bf6",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C30",
+      "claim": "Over 87% of sgRNAs with predicted activity score less than 0.4 were inactive in the Evers et al. screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 40% of the sgRNAs in this library had a predicted activity score less than 0.4, a regime in which the vast majority (over 87%) of sgRNAs were inactive, as defined by z-score > \u22122 relative to non-essential gene-targeting sgRNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of Evers et al. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "35f20a64-0b86-4751-9a3c-69c917cc6ddf",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C31",
+      "claim": "77% of sgRNAs with predicted activity scores \u22650.6 in the Evers et al. library are active.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, of the sgRNAs in that library with predicted activity scores \u22650.6, 77% are active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of Evers et al. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f3ee7640-3ac7-4f65-b792-a1118b51fc6b",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C32",
+      "claim": "The top 5 sgRNA/gene hCRISPRi-v2 library contained 80% active sgRNAs at 5% false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis showed that hCRISPRi-v2 was greatly enriched for active sgRNAs (Figure 3B), and in particular the top 5 sgRNA/gene library contained 80% active sgRNAs at 5% false positives, comparable to the pilot nuclease library tested by Evers et al.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROC analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "7335deb3-9a2f-4c36-a6bd-a33d5e0a6c8c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C33",
+      "claim": "The hCRISPRi-v2 library recalled over 91.2% of the gold standard essential genes at 95% precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, the hCRISPRi-v2 library recalled over 91.2% of the gold standard essential genes at 95% precision compared to 81.5% in CRISPRi v1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by precision-recall analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "8fbfb258-9894-4d98-9c38-923a5160ac10",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C34",
+      "claim": "The precision-recall of the top 5 sgRNA/gene half library was essentially identical to the full 10 sgRNA per gene library.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the precision-recall of the top 5 sgRNA/gene half library was essentially identical to the full 10 sgRNA per gene library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by precision-recall analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "691a9485-48fb-4314-b33f-536867d970de",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C35",
+      "claim": "Many genes neighboring the BCR-ABL translocation show K562-specific essentiality mediated by non-specific toxicity of CRISPR-induced double-stranded breaks in the amplified locus.",
+      "claim_type": "EXPLICIT",
+      "source": "We were also intrigued by the observation by Wang and colleagues of K562-specific essentiality of many genes neighboring the BCR-ABL translocation, which they demonstrated to be mediated by non-specific toxicity of CRISPR-induced double-stranded breaks in the amplified locus (Wang et al., 2015; Wu et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wang et al. and Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "31254950-1de5-4207-ac32-4bcb32ec0a4a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C36",
+      "claim": "Similar non-specific toxicity effects have been observed across a range of cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This toxicity appears to be pervasive as similar effects have been observed across a range of cancer cell lines (Aguirre et al., 2016; Munoz et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aguirre et al. and Munoz et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "0fc036fa-0362-402d-abdf-f5020a9f8790",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C37",
+      "claim": "Few CRISPRi sgRNAs in the BCR amplicon region (other than BCR itself) elicited growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "When we compared the phenotypes of CRISPRi sgRNAs to CRISPR nuclease at the BCR amplicon, with all phenotypes standardized to the distribution of negative controls to facilitate comparison, we found that sgRNAs targeting BCR were strongly depleted in both screens, as expected based on the critical role of the BCR-ABL fusion in this cancer cell line (Naumann et al., 2001), but few other CRISPRi sgRNAs in the region elicited growth defects (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "0b1ae7f8-b8bd-4626-9c6a-10fd286248be",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C38",
+      "claim": "CRISPR nuclease sgRNAs targeting the non-essential gene set were generally depleted relative to negative controls or chromosome Y-targeting sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that CRISPR nuclease sgRNAs targeting the non-essential gene set were generally depleted relative to negative controls or chromosome Y-targeting sgRNAs, which should have no targets in the female-derived K562 cell line (Klein et al., 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "6661d2b2-b3d2-4754-8753-113e0e406e09",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C39",
+      "claim": "Cas9 nuclease activity can lead to measurable toxicity not related to the function of individual genes but instead due to the formation of on-target DNA double strand breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that in a CRISPR screen Cas9 nuclease activity can lead to measurable toxicity not related to the function of individual genes but instead due to the formation of on-target DNA double strand breaks, even with alleles present only at 2\u20133 copies (Naumann et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "40a1a194-a561-4bfa-93f8-8ed240ea90ce",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C40",
+      "claim": "CRISPRi did not exhibit generic toxicity at non-essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "CRISPRi did not exhibit this generic toxicity at non-essential genes, allowing for detection of genes with subtle phenotypes relative to negative controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "98626a4c-65d6-4c77-b120-bd4388035cdd",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C41",
+      "claim": "The hCRISPRa-v2 screen identified 540 genes that modify robust growth rates upon overexpression, 257 more than the v1 screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Our hCRISPRa-v2 screen identified 540 genes to modify robust growth rates upon overexpression, 257 more than our previous CRISPRa screen (Figure 4A and Supplementary file 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental screen data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "d465fd92-940a-4181-b046-8e10b2e4e942",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C42",
+      "claim": "The top categories in DAVID analysis of the v1 screen received ~3-fold greater enrichment scores in the hCRISPRa-v2 hits.",
+      "claim_type": "EXPLICIT",
+      "source": "the top categories in DAVID analysis of the v1 screen (Huang et al., 2009), enrichment for transcription factor genes (in particular homeobox and forkhead box transcription factors), received ~3-fold greater enrichment scores in the hCRISPRa-v2 hits (Figure 4\u2014figure supplement 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by DAVID analysis shown in supplementary figure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f0c2ffab-14fc-4dfb-a144-3e3f539e5f81",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C43",
+      "claim": "69.3% of sgRNAs in hCRISPRa-v2 with 5 sgRNAs/gene were highly active for genes that were hits in both v1 and v2 screens, versus 45.1% in CRISPRa v1.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the sgRNA growth phenotype (\u03b3) scores for genes that were hits in both v1 and v2 screens showed that a greater fraction of sgRNAs were highly active (69.3% in hCRISPRa-v2 with 5 sgRNAs/gene versus 45.1% in CRISPRa v1; Figure 4C and Figure 4\u2014figure supplement 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by sgRNA activity analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "fcb59da0-d98e-4fc8-ab89-3ec376bfe74e",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C44",
+      "claim": "CRISPRi and CRISPRa identified non-overlapping sets of genes that modify robust growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we compared the growth phenotypes from hCRISPRi-v2 to hCRISPRa-v2 and found that the two methods identified non-overlapping sets of genes that modify robust growth (Figure 4\u2014figure supplement 1F), consistent with our previous results and highlighting the complementary information provided by these two approaches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison of screen results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f72b6830-e9c8-43af-b8f3-e4914508b3e6",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C45",
+      "claim": "FANTOM TSS annotations are more accurate than Ensembl/GENCODE annotations for CRISPRi/a sgRNA design.",
+      "claim_type": "EXPLICIT",
+      "source": "An important improvement was the use of FANTOM consortium annotations instead of Ensembl/GENCODE to define the TSS (Cunningham et al., 2015; FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Harrow et al., 2012) (Supplementary file 2), a finding also recently reported by Radzisheuskaya and colleagues (Radzisheuskaya et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations and improved performance with FANTOM annotations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "203b0342-ab9e-4ae3-8882-ffbcb2596919",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C46",
+      "claim": "The CRISPRa activity score dataset contains 2,898 sgRNAs from 9 CRISPRa screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the requirement for CRISPRa targeting to be upstream of the TSS for maximal activity (Gilbert et al., 2014), we collected an activity score dataset of 2,898 sgRNAs from 9 CRISPRa screens (Y.C. and M.K., personal communication) to train an independent predictive model (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated description of the CRISPRa training dataset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "d3bad77c-ab44-4627-96fd-49c362025d04",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C47",
+      "claim": "CRISPRa requires targeting upstream of the TSS for maximal activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the requirement for CRISPRa targeting to be upstream of the TSS for maximal activity (Gilbert et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilbert et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "efb3d395-8278-4caa-ac99-9508dbaa3a97",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C48",
+      "claim": "The CRISPRa-v2 libraries are likely to serve as a valuable resource for effectively targeting most activator systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our CRISPRa-v2 libraries are thus likely to serve as a valuable resource for effectively targeting most activator systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation of sgRNA activity across different activation strategies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "a1e1ed95-bd4e-4327-8794-2f66c1c65caa",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C49",
+      "claim": "CRISPRi and CRISPRa have been shown to be effective for repressing and activating transcription of non-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the libraries described here target genes annotated as protein-coding, CRISPRi and CRISPRa have been shown to be effective for repressing and activating transcription of non-coding genes as well (Gilbert et al., 2014; Luo et al., 2016; Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "04628f48-4fc0-4338-a026-deffe73bbcc7",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C50",
+      "claim": "The v2 sgRNA prediction algorithms may enable the design of libraries to systematically manipulate expression of non-coding transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our v2 sgRNA prediction algorithms may enable the design of libraries to systematically manipulate expression of these transcripts as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement about potential application",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "41fb1a2e-29ea-4d56-8ab7-88ca3886f49a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C51",
+      "claim": "Combining CRISPRi and CRISPRa with methods for robustly expressing multiple sgRNAs will allow for simultaneous control of several genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, combining CRISPRi and CRISPRa with methods for robustly expressing multiple sgRNAs (Kabadi et al., 2014; Wong et al., 2016; Zalatan et al., 2015) will allow for simultaneous control of several genes, facilitating dissection of cellular pathways and systematic mapping of mammalian genetic interactions (Bassik et al., 2013; Costanzo et al., 2010; Schuldiner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement supported by citations to relevant methods",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "b52b9183-ad93-4175-a30f-2e05bf6388b5",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C52",
+      "claim": "Increased quantitative understanding of factors dictating (d)Cas9 activity and specificity will greatly enhance the expanding set of CRISPR-mediated technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadly, increased quantitative understanding of the factors dictating (d)Cas9 activity and specificity will greatly enhance the expanding set CRISPR-mediated technologies for controlling gene expression (Hilton et al., 2015; Perez-Pinera et al., 2013; Vojta et al., 2016), imaging targeted loci (Chen et al., 2013; Shao et al., 2016), or precisely editing the genome (Komor et al., 2016; Tsai et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement supported by citations to various CRISPR technologies",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "78ba4d92-4a9c-46a9-8b2e-9a72db9ab0f5",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C53",
+      "claim": "The model was trained using elastic net linear regression.",
+      "claim_type": "EXPLICIT",
+      "source": "We used this set as training data for elastic net linear regression (Figure 1A) (Hui Zou, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "2ea9999f-2442-4361-bb7a-0c4908428008",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C54",
+      "claim": "Categorical and non-linear parameters were binned prior to linear regression.",
+      "claim_type": "EXPLICIT",
+      "source": "As many of the features included in the model were nonlinear with activity, we first adapted each feature set according to its relationship with activity. Categorical and non-linear parameters were binned prior to linear regression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "8b74562b-1c45-490e-80df-8177e75f7a20",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C55",
+      "claim": "The relationship between CRISPRi activity and target site distance from the TSS was highly periodic and asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the relationship between CRISPRi activity and target site distance from the TSS was highly periodic and asymmetric, as we had recently shown (Horlbeck et al., 2016), we fit sgRNA positioning features using support vector regression (SVR) to predict a continuous function for any target site (Supplementary Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation and SVR analysis shown in supplementary figure",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "005635c6-f6bd-4382-b900-4780dc203d7c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C56",
+      "claim": "Support vector regression (SVR) was used to fit sgRNA positioning features.",
+      "claim_type": "EXPLICIT",
+      "source": "we fit sgRNA positioning features using support vector regression (SVR) to predict a continuous function for any target site (Supplementary Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in methods description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "e86e7a23-3083-4535-b2ac-5889a029b8c5",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C57",
+      "claim": "The hCRISPRi-v2 library includes separate pools for the top 5 and next-best 5 predicted sgRNAs per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we cloned the library as separate pools for the top 5 and next-best 5 predicted sgRNAs per gene to facilitate screens where a smaller library may be advantageous",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in library design description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "0bd44562-89a1-4953-86aa-6456b365c0e2",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C58",
+      "claim": "The libraries were divided into 7 thematic sublibraries based on previous divisions of shRNA libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "and further divided the pools into 7 thematic sublibraries based on our previous divisions of shRNA libraries (Kampmann et al., 2015) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in library design description with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "cf2f10ae-60f9-439a-8181-75001b6fca7b",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C59",
+      "claim": "The CRISPRa model generally shared features with the CRISPRi model.",
+      "claim_type": "EXPLICIT",
+      "source": "While the input set was significantly smaller than for CRISPRi, the resulting linear regression still had good predictive value (ROC-AUC 0.70; Figure 2B) and generally shared features of the CRISPRi model (Figure 2C and Figure 2\u2014figure supplement 1\u20132).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by feature analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "cc75efa1-6829-421d-b348-cb5b505918eb",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C60",
+      "claim": "The reduced dynamic range in the nucleosome-depleted region around the TSS contributed to the less pronounced periodic relationship for CRISPRa.",
+      "claim_type": "EXPLICIT",
+      "source": "a difference we attributed to the reduced dynamic range in the nucleosome-depleted region around the TSS, and the smaller number and relatively lower expression of the genes targeted in the CRISPRa training dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred explanation for observed difference",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "16464934-88b0-4e46-955f-863a15e81af7",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C61",
+      "claim": "The hCRISPRa-v2 library was partitioned into 14 sublibraries.",
+      "claim_type": "EXPLICIT",
+      "source": "The hCRISPRa-v2 library was partitioned into 14 sublibraries as described for the v2 CRISPRi library above (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated in library design description",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "48197563-0fed-4a10-a087-03868469cf06",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C62",
+      "claim": "Predicted activity for hCRISPRi-v2 was highly correlated with activity, with a Pearson R of 0.56 (p<10\u2013296).",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted activity was highly correlated with activity, with a Pearson R of 0.56 (p<10\u2013296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "910740b0-86a3-4797-ad60-5b6cbafeba23",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C63",
+      "claim": "Predicted activity for hCRISPRa-v2 was highly correlated with activity, with a Pearson R of 0.41 (p<10\u201338).",
+      "claim_type": "EXPLICIT",
+      "source": "Predicted activity was highly correlated with activity, with a Pearson R of 0.41 (p<10\u201338).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "060bec3c-446a-4247-8706-f166367be8de",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C68",
+      "claim": "The Wang et al. K562 CRISPR nuclease screen recalled 78.7% of essential genes at 95% precision.",
+      "claim_type": "EXPLICIT",
+      "source": "This screen recalled somewhat fewer (78.7% vs 90.8%) essential genes at 95% precision than our v2 library screen (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by precision-recall analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "c83d746b-f1c1-4223-b422-95dd097421bf",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C69",
+      "claim": "The hCRISPRi-v2 library has a low false negative rate with few false positives.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that our hCRISPRi-v2 library has a low false negative rate with few false positives",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from precision-recall analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "bfea9db9-6996-45d5-af43-ad3c80c47128",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C70",
+      "claim": "The enrichment for highly active sgRNAs enables robust detection of phenotypes even with a compact library.",
+      "claim_type": "EXPLICIT",
+      "source": "and the enrichment for highly active sgRNAs enables robust detection of phenotypes even with a compact library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the performance of the 5 sgRNA/gene library",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "85fd93e2-c9ff-40b5-b233-06d4c6ed9c94",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C71",
+      "claim": "The BCR-ABL fusion plays a critical role in the K562 cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "sgRNAs targeting BCR were strongly depleted in both screens, as expected based on the critical role of the BCR-ABL fusion in this cancer cell line (Naumann et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Naumann et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "e66ccbe1-9f8c-4911-a9eb-de5e81e46264",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C72",
+      "claim": "K562 is a female-derived cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "chromosome Y-targeting sgRNAs, which should have no targets in the female-derived K562 cell line (Klein et al., 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Klein et al., 1976",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "a7eef2dc-6277-4888-9fc0-84f05ce4756c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C73",
+      "claim": "The vast majority of sgRNAs targeting essential genes showed a clear separation from the non-essential gene distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, the vast majority of sgRNAs targeting essential genes showed a clear separation from the non-essential gene distribution (Figure 3E), demonstrating the high degree of sensitivity for detecting loss-of-function phenotypes with both CRISPR nuclease and CRISPRi screens.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "2563d6b1-84fc-429b-b07c-85ce12b9adc2",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C74",
+      "claim": "Both CRISPR nuclease and CRISPRi screens demonstrate high sensitivity for detecting loss-of-function phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating the high degree of sensitivity for detecting loss-of-function phenotypes with both CRISPR nuclease and CRISPRi screens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the clear separation of essential gene-targeting sgRNAs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "32883617-9320-439f-ad78-e99f53d3f5b8",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C75",
+      "claim": "The v1 and v2 CRISPRa screens showed good agreement.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond these additional hits, the v1 and v2 screens showed good agreement (Figure 4\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparison shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "d4cd9739-67f0-4d4c-93c5-2769e6c24ba1",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C76",
+      "claim": "Several genes identified in the hCRISPRi-v2 screen but not in v1 could be attributed to the use of the CAGE-based FANTOM5 TSS annotation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, as with our CRISPRi results, several genes identified in the hCRISPRi-v2 screen but not in v1, including hematopoietically-expressed homeobox HHEX and forkhead box C1 FOXC1, could be attributed to the use of the CAGE-based FANTOM5 TSS annotation (Figure 4D and Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome browser tracks showing TSS annotations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "55065513-f361-4830-a876-87bba80953fa",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C77",
+      "claim": "The CRISPRi v1 library identified 1,408 essential genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While in both screens fewer than 0.21% of these negative control genes scored as hits by these criteria, representing a ~2% empirically estimated false discovery rate overall, we could confidently identify 2,150 essential gene hits in the v2 screen while our v1 screen identified 1,408 essential genes (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by volcano plot analysis shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "40bd2efc-3382-4510-b048-2ca9d355a407",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C78",
+      "claim": "Fewer than 0.21% of negative control genes scored as hits in both v1 and v2 screens.",
+      "claim_type": "EXPLICIT",
+      "source": "While in both screens fewer than 0.21% of these negative control genes scored as hits by these criteria, representing a ~2% empirically estimated false discovery rate overall",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by analysis of negative control genes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "69ccd2e8-e844-4b2f-91b0-f4c66a8acfbe",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C79",
+      "claim": "The empirically estimated false discovery rate is approximately 2%.",
+      "claim_type": "EXPLICIT",
+      "source": "representing a ~2% empirically estimated false discovery rate overall",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from negative control gene analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "4d9c03c9-40ea-42f6-8464-39bdc5be0939",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C80",
+      "claim": "Many hit genes exhibited much stronger p-values in the hCRISPRi-v2 screen compared to v1.",
+      "claim_type": "EXPLICIT",
+      "source": "Many hit genes exhibited much stronger p-values, including a substantial fraction that reached the optimal p-value obtainable in the Mann-Whitney test, indicating that the phenotypes of all targeting sgRNAs for these genes were more pronounced than any of the 3,790 non-targeting control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by volcano plot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "49bd79ed-40a1-45e8-abc9-88c6db0a6e45",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C81",
+      "claim": "A substantial fraction of hit genes reached the optimal p-value obtainable in the Mann-Whitney test.",
+      "claim_type": "EXPLICIT",
+      "source": "including a substantial fraction that reached the optimal p-value obtainable in the Mann-Whitney test, indicating that the phenotypes of all targeting sgRNAs for these genes were more pronounced than any of the 3,790 non-targeting control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by statistical analysis of screen data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "2681a902-169f-47e8-ad92-aee1d99a09ff",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C82",
+      "claim": "The phenotypes of all targeting sgRNAs for genes reaching optimal p-value were more pronounced than any of the 3,790 non-targeting control sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the phenotypes of all targeting sgRNAs for these genes were more pronounced than any of the 3,790 non-targeting control sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the optimal p-value result",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "9968d882-b4e0-4d48-beac-4d06439fbdc3",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C83",
+      "claim": "The CRISPRi v1 library recalled 81.5% of gold standard essential genes at 95% precision.",
+      "claim_type": "EXPLICIT",
+      "source": "In this analysis, the hCRISPRi-v2 library recalled over 91.2% of the gold standard essential genes at 95% precision compared to 81.5% in CRISPRi v1 (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by precision-recall analysis shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "c82031e2-9b4b-480d-9721-9d99741e604e",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C84",
+      "claim": "The 5 sgRNA/gene CRISPRi library represents a compelling tool for applications such as cell sorting-based screens or in vivo screens.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the 5 sgRNA/gene CRISPRi library represents a compelling tool for applications such as cell sorting-based screens (Liberali et al., 2015), or for in vivo screens where cell engraftment and library representation may represent a limiting factor (Braun et al., 2016; Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the performance of the 5 sgRNA/gene library with citations to relevant applications",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "e9bf2559-596e-4ca5-9004-73c9bc35588c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C85",
+      "claim": "The hCRISPRi-v2 library showed comparable or greater discrimination than other recent genome-scale growth screens in precision-recall analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that our CRISPRi v2 library showed comparable or in many cases much greater discrimination (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by precision-recall comparison shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "72b1e280-6679-4d78-81b5-979763517b78",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C86",
+      "claim": "The improvement in sgRNA activity was due to the significant reduction in the number of inactive sgRNAs rather than any difference in noise.",
+      "claim_type": "EXPLICIT",
+      "source": "This improvement was due to the significant reduction in the number of inactive sgRNAs rather than any difference in the noise as assessed by the background distribution of non-essential gene-targeting sgRNAs (Figure 3\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of sgRNA distributions shown in supplementary figure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "73385959-49e3-4579-ae1c-8d311a95478d",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C87",
+      "claim": "The difference in sgRNA phenotypes between v1 and v2 libraries for VCP was likely attributable to the transition from Ensembl to FANTOM as the TSS annotation source.",
+      "claim_type": "EXPLICIT",
+      "source": "In some instances, as with the known essential gene VCP, the difference in sgRNA phenotypes between v1 and v2 libraries was likely attributable to the transition from Ensembl to FANTOM as the TSS annotation source (Figure 3\u2014figure supplement 1C) (Cunningham et al., 2015; FANTOM Consortium and the RIKEN PMI and CLST (DGT) et al., 2014; Harrow et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by genome browser tracks and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "68e69b9f-872c-4112-9735-b721aa68166d",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C88",
+      "claim": "The lower fraction of effective sgRNAs in previous libraries was a result of the algorithm and the TSS annotation used rather than any intrinsic limitation of CRISPRi.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the above observations indicate the lower fraction of effective sgRNAs in previous libraries was a result of the algorithm and the TSS annotation used rather than any intrinsic limitation of CRISPRi.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the improved performance with better algorithms and annotations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "166e3a21-5723-45d3-b0f2-ca0583ec06eb",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C89",
+      "claim": "The greatly improved sgRNA prediction and lack of non-specific toxicity make CRISPRi a state-of-the-art approach for loss-of-function studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the greatly improved sgRNA prediction and lack of non-specific toxicity due to nuclease activity, combined with our previous findings that CRISPRi enables inducible, reversible, and homogenous manipulation of gene expression (Gilbert et al., 2014; Mandegar et al., 2016; Qi et al., 2013), make CRISPRi a state-of-the-art approach for loss-of-function studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the combined advantages of CRISPRi with citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "f321b386-52aa-448d-b83a-99015e127e30",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C90",
+      "claim": "Predicted activity for hCRISPRi-v2 sgRNAs targeting essential genes in the K562 screen correlated with predicted activity (Pearson R = \u22120.42, p<10\u201321).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the hCRISPRi-v2 sgRNA growth phenotypes targeting the Evers et al. essential gene sets correlated with predicted activity as above (Figure 3A; Pearson R = \u22120.42, p<10\u201321)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "2d8f7398-5b51-456e-9882-5e5ef7f6a105",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C91",
+      "claim": "Designing libraries based on the top predicted scores selected for highly active sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "and therefore designing the libraries based on the top predicted scores selected for highly active sgRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the correlation between predicted activity and empirical activity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "9fd9c5e5-8b09-4c62-b97b-6ffb03d83fe4",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C92",
+      "claim": "Over 60% of inactive sgRNAs can be eliminated a priori by applying a predicted activity threshold of 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "enabling a priori elimination of 60% of the inactive sgRNAs by simply applying this threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the analysis of Evers et al. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "6dd2791f-35ca-46e1-8b8d-146fb481e5a9",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C93",
+      "claim": "77% of sgRNAs with predicted activity scores \u22650.6 in the Evers et al. library are active.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, of the sgRNAs in that library with predicted activity scores \u22650.6, 77% are active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from the analysis of Evers et al. data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "edcfb86d-73d1-4c9d-bac0-133c48bd79fe",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "claim_id": "C94",
+      "claim": "Use of the improved sgRNA constant region would be expected to further increase the fraction of active sgRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Use of the improved sgRNA constant region would be expected to further increase this fraction (Chen et al., 2013; Dang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative statement supported by citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A machine learning algorithm incorporating chromatin, position, and sequence features accurately predicts highly effective sgRNAs for CRISPRi. The model was trained on 18,380 sgRNAs from 30 CRISPRi screens using elastic net linear regression with support vector regression for positioning features, achieving ROC-AUC of 0.80 in cross-validation and 0.91 on an independent ricin tiling dataset. Position relative to TSS (including nucleosome positioning) and sequence features were the most influential predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C9-C11, C18-C24, C53-C56, and C62 collectively demonstrate robust machine learning methodology with appropriate cross-validation (C19-C20), clear feature engineering (C53-C56), and strong predictive performance (C62). The use of both training/test splits and independent validation datasets (C20) provides convincing evidence for model generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "a7a6e31c-8e66-4ffd-99ff-741505998f47",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A separate machine learning model for CRISPRa was developed using 2,898 sgRNAs from 9 screens, achieving ROC-AUC of 0.70. The model shared features with CRISPRi but showed less pronounced periodic relationship between TSS distance and activity, attributed to reduced dynamic range in nucleosome-depleted regions and smaller training dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C46-C47, C59-C60, and C63 describe a parallel CRISPRa model with appropriate acknowledgment of limitations (smaller dataset, C46). The lower ROC-AUC (0.70 vs 0.80) is reasonable given the smaller training set, and the mechanistic explanation for differences (C60) is plausible though speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The hCRISPRi-v2 library is greatly enriched for highly active sgRNAs compared to previous versions. Validation against the Evers et al. library showed predicted activity correlated well with empirical phenotypes (Pearson R = -0.58), with 87% of sgRNAs scoring <0.4 being inactive and 77% scoring \u22650.6 being active. The top 5 sgRNA/gene library contained 80% active sgRNAs at 5% false positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C12, C14, C28-C32, C86, C90-C92 provide strong validation evidence including independent library testing (Evers et al.), correlation analysis with appropriate statistics, and ROC analysis. The improvement is attributed to algorithm and annotation changes rather than intrinsic CRISPRi limitations (C86, C88), which is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "af3c9926-ea01-40fa-99d0-5e44c915103d",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The hCRISPRi-v2 library demonstrates superior performance in essential gene detection, recalling 91.2% of gold standard essential genes at 95% precision (vs 81.5% for v1). The library identified 2,150 essential genes with ~2% false discovery rate, and the compact 5 sgRNA/gene library performed essentially identically to the full 10 sgRNA/gene library.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C13, C33-C34, C68-C70, C77-C85 demonstrate rigorous statistical validation using gold standard gene sets, precision-recall analysis, and appropriate controls. The use of negative control genes to estimate FDR (C78-C79) and comparison to other published screens (C68, C85) strengthens the conclusions. The equivalence of 5 vs 10 sgRNA/gene libraries (C34) is particularly valuable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "14505f41-c370-4821-9c99-711105876d1c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CRISPRi does not exhibit non-specific toxicity at amplified genomic loci, unlike CRISPR nuclease. At the BCR amplicon in K562 cells, only BCR-targeting sgRNAs showed depletion with CRISPRi, while CRISPR nuclease showed general depletion of non-essential gene-targeting sgRNAs, indicating toxicity from on-target double-strand breaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C35-C40, C71-C74 provide compelling comparative evidence between CRISPRi and CRISPR nuclease at a well-characterized amplified locus. The use of appropriate controls (chromosome Y-targeting sgRNAs in female K562 cells, C38, C72) and standardization to negative controls strengthens the conclusion. However, the mechanism (C39) is somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The hCRISPRa-v2 screen identified 540 genes modifying growth upon overexpression, 257 more than v1, with 3-fold greater enrichment for transcription factor categories. Among shared hits, 69.3% of sgRNAs were highly active in v2 versus 45.1% in v1. Several newly identified genes were attributed to improved FANTOM TSS annotations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C41-C43, C75-C76 demonstrate improved CRISPRa library performance with appropriate validation through gene ontology analysis (C42) and comparison of sgRNA activity rates (C43). The attribution of some improvements to TSS annotation changes (C76) is supported by genome browser evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "c4a3832f-5784-4dcd-9195-f94afd49198a",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FANTOM TSS annotations are more accurate than Ensembl/GENCODE annotations for CRISPRi/a sgRNA design. The transition from Ensembl to FANTOM TSS annotations contributed to improved sgRNA phenotypes, as exemplified by the VCP gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C87 are supported by genome browser visualization (Figure 3\u2014figure supplement 1C) showing discrepancies between annotation sources and corresponding sgRNA performance differences. The claim is also supported by independent validation (Radzisheuskaya et al., 2016, C45).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "94099bf3-8783-44c2-8c1b-b5b9e793eabb",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The sgRNA prediction algorithm generalizes to independently designed libraries and different cell types. Predicted activity correlated well (Pearson R = -0.58) with sgRNA phenotypes in the Evers et al. screen performed in RT-112 cells with a different sgRNA design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15 and C29 demonstrate important generalizability of the algorithm to an independent library in a different cell type. The correlation (R = -0.58) is statistically significant and biologically meaningful, though the different sgRNA constant region used by Evers et al. may have reduced correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "9800eaa5-c019-4192-8664-e848257ff8fa",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CRISPRi and CRISPRa identify non-overlapping sets of genes that modify robust growth, highlighting their complementary nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by direct comparison of screen results (Figure 4\u2014figure supplement 1F) and is consistent with the different mechanisms of action (repression vs activation). This validates the complementary utility of both approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "1967f38c-9a16-48f2-b735-9ffb70381c4c",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The hCRISPRi-v2 and hCRISPRa-v2 libraries were designed with separate pools for top 5 and next-best 5 sgRNAs per gene, and divided into thematic sublibraries based on gene function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 and C61 describe straightforward library design features that are clearly documented in the manuscript and figures. The sublibrary organization facilitates focused screens on specific biological processes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "890ab80c-aecf-48a4-a997-ec4e3a3fca84",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Nucleosomes directly block Cas9 access to DNA, and nucleosome occupancy is predictive of Cas9 activity independent of sequence features. Strong nucleosome-dependent phasing is observed downstream of FANTOM-annotated TSSs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C8 are supported by multiple citations to prior work (Horlbeck et al., 2016; Hinz et al., 2015; Isaac et al., 2016) and form the biological foundation for incorporating chromatin features into the prediction algorithm. These are established findings from prior work rather than new results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "81748614-7e02-467d-82e4-335fa79a74db",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CRISPRi enables inducible, reversible, and homogeneous gene expression manipulation, and combined with improved sgRNA prediction and lack of non-specific toxicity, represents a state-of-the-art approach for loss-of-function studies. CRISPRi/a are also effective for non-coding genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C49, and C89 synthesize prior findings (C16, C49 supported by citations) with current work to make a broader claim about CRISPRi as a premier tool. While somewhat promotional, the claim is reasonably supported by the combination of advantages demonstrated in this and prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The v2 libraries and algorithms have broad potential applications including targeting non-coding genes, multiplexed gene control, and enhancing various CRISPR technologies. The compact 5 sgRNA/gene library is particularly suited for cell sorting and in vivo screens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48, C50-C52, C84, and C94 are largely speculative about future applications (C50-C52 explicitly marked as speculation). While C84 is supported by citations to relevant applications, the actual utility for these applications has not been demonstrated in this manuscript. These represent reasonable extrapolations but lack direct experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "90100087-bd07-4a8a-85e0-0f87b61a754d",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "sgRNA activity generally correlates across different CRISPR activation strategies, suggesting the CRISPRa-v2 libraries will be broadly useful.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 is supported by citation to Chavez et al., 2016, which compared multiple activation strategies. This provides reasonable justification for the broad utility of the CRISPRa-v2 library design, though direct testing with other activation systems was not performed in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    },
+    {
+      "id": "64682e96-b115-4cb2-bbf1-874ae140d82f",
+      "content_id": "79188bbd-0b99-425e-9b65-f3617cd86233",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The lower fraction of effective sgRNAs in previous CRISPRi libraries was due to the algorithm and TSS annotation used rather than any intrinsic limitation of CRISPRi.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is a reasonable inference from the dramatic improvement in sgRNA activity with the v2 algorithm and FANTOM annotations (C86-C87). The claim is supported by the data showing that improved predictions led to improved empirical performance, though alternative explanations (e.g., improvements in other aspects of library construction) cannot be completely ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:55:12.539585Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "867222e6-0f2d-44a6-8071-166eb014029c",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "645f2cfd-1a32-4d07-be54-e851ae6ca197",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "a5577df8-edf3-4edb-97dd-735ad256f5c7",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "09f225b4-3a9d-415d-8c22-9a8e3771df44",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "934f2f25-7abc-4095-8426-a157967ebc78",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "f6b607f8-2f0d-462a-993d-42a087d54ec3",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "9c74bedb-bb72-44de-85be-e6f5b4bedf44",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "15ff6e86-949b-43b3-be61-e9cd8d1e17fc",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "1daa8fe1-7364-4d72-acdf-72403a56e63b",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "9b4ea37c-52d5-4523-a90d-3e4cd1f9a424",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "275b43f5-e6b8-49a5-8497-23f10e50b400",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "78ba4d92-4a9c-46a9-8b2e-9a72db9ab0f5",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "2ea9999f-2442-4361-bb7a-0c4908428008",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "8b74562b-1c45-490e-80df-8177e75f7a20",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "005635c6-f6bd-4382-b900-4780dc203d7c",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "48197563-0fed-4a10-a087-03868469cf06",
+      "result_id": "6c3de1e5-d1b0-47df-aee6-d1ebe48d7dc9"
+    },
+    {
+      "claim_id": "5cc2f554-ae20-4437-a94a-fc59bde7dae6",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "11870da3-ebc2-4391-8713-2ba150da16dd",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "287284dd-289f-46e3-a938-704f4c8da447",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "203b0342-ab9e-4ae3-8882-ffbcb2596919",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "d3bad77c-ab44-4627-96fd-49c362025d04",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "cf2f10ae-60f9-439a-8181-75001b6fca7b",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "cc75efa1-6829-421d-b348-cb5b505918eb",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "910740b0-86a3-4797-ad60-5b6cbafeba23",
+      "result_id": "a7a6e31c-8e66-4ffd-99ff-741505998f47"
+    },
+    {
+      "claim_id": "1ed5bc52-20f9-4b07-a661-56bc475e6aac",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "b813a7a8-7882-4918-b49e-ab85f9622355",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "1226d7ec-1415-474c-9c01-77c2663ef169",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "946c4e65-4588-40b0-82d8-a7ff51192d9a",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "4903b23b-9169-4726-b7ef-92c9f90be89a",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "657d78e8-df7f-44a0-a14f-0aa8dadc9bf6",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "35f20a64-0b86-4751-9a3c-69c917cc6ddf",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "f3ee7640-3ac7-4f65-b792-a1118b51fc6b",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "72b1e280-6679-4d78-81b5-979763517b78",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "f321b386-52aa-448d-b83a-99015e127e30",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "2d8f7398-5b51-456e-9882-5e5ef7f6a105",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "9fd9c5e5-8b09-4c62-b97b-6ffb03d83fe4",
+      "result_id": "50d09c84-a0cf-4e92-ad36-b063c538ba4b"
+    },
+    {
+      "claim_id": "534311ca-5eb7-46f8-9387-bbfb25632ff9",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "2a148794-aa81-4e21-9198-f1f0168145b9",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "7335deb3-9a2f-4c36-a6bd-a33d5e0a6c8c",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "8fbfb258-9894-4d98-9c38-923a5160ac10",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "060bec3c-446a-4247-8706-f166367be8de",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "c83d746b-f1c1-4223-b422-95dd097421bf",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "bfea9db9-6996-45d5-af43-ad3c80c47128",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "55065513-f361-4830-a876-87bba80953fa",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "40bd2efc-3382-4510-b048-2ca9d355a407",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "69ccd2e8-e844-4b2f-91b0-f4c66a8acfbe",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "4d9c03c9-40ea-42f6-8464-39bdc5be0939",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "49bd79ed-40a1-45e8-abc9-88c6db0a6e45",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "2681a902-169f-47e8-ad92-aee1d99a09ff",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "9968d882-b4e0-4d48-beac-4d06439fbdc3",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "e9bf2559-596e-4ca5-9004-73c9bc35588c",
+      "result_id": "af3c9926-ea01-40fa-99d0-5e44c915103d"
+    },
+    {
+      "claim_id": "f93fd4bb-c721-44f6-a271-f3fd8c811e8a",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "691a9485-48fb-4314-b33f-536867d970de",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "31254950-1de5-4207-ac32-4bcb32ec0a4a",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "0fc036fa-0362-402d-abdf-f5020a9f8790",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "0b1ae7f8-b8bd-4626-9c6a-10fd286248be",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "6661d2b2-b3d2-4754-8753-113e0e406e09",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "40a1a194-a561-4bfa-93f8-8ed240ea90ce",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "85fd93e2-c9ff-40b5-b233-06d4c6ed9c94",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "e66ccbe1-9f8c-4911-a9eb-de5e81e46264",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "a7eef2dc-6277-4888-9fc0-84f05ce4756c",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "2563d6b1-84fc-429b-b07c-85ce12b9adc2",
+      "result_id": "14505f41-c370-4821-9c99-711105876d1c"
+    },
+    {
+      "claim_id": "8480d9fb-90bd-4e09-8481-ea14c038d3ac",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "98626a4c-65d6-4c77-b120-bd4388035cdd",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "d465fd92-940a-4181-b046-8e10b2e4e942",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "f0c2ffab-14fc-4dfb-a144-3e3f539e5f81",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "32883617-9320-439f-ad78-e99f53d3f5b8",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "d4cd9739-67f0-4d4c-93c5-2769e6c24ba1",
+      "result_id": "e947939d-66c9-43e2-93c1-2add8d9ca1ad"
+    },
+    {
+      "claim_id": "f72b6830-e9c8-43af-b8f3-e4914508b3e6",
+      "result_id": "c4a3832f-5784-4dcd-9195-f94afd49198a"
+    },
+    {
+      "claim_id": "73385959-49e3-4579-ae1c-8d311a95478d",
+      "result_id": "c4a3832f-5784-4dcd-9195-f94afd49198a"
+    },
+    {
+      "claim_id": "47f7d2cf-0397-426d-a875-af6e6b5c23ae",
+      "result_id": "94099bf3-8783-44c2-8c1b-b5b9e793eabb"
+    },
+    {
+      "claim_id": "4903b23b-9169-4726-b7ef-92c9f90be89a",
+      "result_id": "94099bf3-8783-44c2-8c1b-b5b9e793eabb"
+    },
+    {
+      "claim_id": "fcb59da0-d98e-4fc8-ab89-3ec376bfe74e",
+      "result_id": "9800eaa5-c019-4192-8664-e848257ff8fa"
+    },
+    {
+      "claim_id": "e86e7a23-3083-4535-b2ac-5889a029b8c5",
+      "result_id": "1967f38c-9a16-48f2-b735-9ffb70381c4c"
+    },
+    {
+      "claim_id": "0bd44562-89a1-4953-86aa-6456b365c0e2",
+      "result_id": "1967f38c-9a16-48f2-b735-9ffb70381c4c"
+    },
+    {
+      "claim_id": "16464934-88b0-4e46-955f-863a15e81af7",
+      "result_id": "1967f38c-9a16-48f2-b735-9ffb70381c4c"
+    },
+    {
+      "claim_id": "755443d3-0f03-4b69-83b2-9f6553614119",
+      "result_id": "890ab80c-aecf-48a4-a997-ec4e3a3fca84"
+    },
+    {
+      "claim_id": "83eae7f0-beb7-4fc1-9d72-87328121828d",
+      "result_id": "890ab80c-aecf-48a4-a997-ec4e3a3fca84"
+    },
+    {
+      "claim_id": "d68d02b3-7389-450a-b47a-479d24edc29e",
+      "result_id": "890ab80c-aecf-48a4-a997-ec4e3a3fca84"
+    },
+    {
+      "claim_id": "35a69f8b-4f13-43ce-b438-f0574a7440b5",
+      "result_id": "890ab80c-aecf-48a4-a997-ec4e3a3fca84"
+    },
+    {
+      "claim_id": "28a3ad50-3f2d-42a8-966f-4cb8924f11c6",
+      "result_id": "81748614-7e02-467d-82e4-335fa79a74db"
+    },
+    {
+      "claim_id": "a1e1ed95-bd4e-4327-8794-2f66c1c65caa",
+      "result_id": "81748614-7e02-467d-82e4-335fa79a74db"
+    },
+    {
+      "claim_id": "166e3a21-5723-45d3-b0f2-ca0583ec06eb",
+      "result_id": "81748614-7e02-467d-82e4-335fa79a74db"
+    },
+    {
+      "claim_id": "efb3d395-8278-4caa-ac99-9508dbaa3a97",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "04628f48-4fc0-4338-a026-deffe73bbcc7",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "41fb1a2e-29ea-4d56-8ab7-88ca3886f49a",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "b52b9183-ad93-4175-a30f-2e05bf6388b5",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "c82031e2-9b4b-480d-9721-9d99741e604e",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "edcfb86d-73d1-4c9d-bac0-133c48bd79fe",
+      "result_id": "bf2ed392-e76f-423f-a1ef-c5902c7c13e2"
+    },
+    {
+      "claim_id": "287284dd-289f-46e3-a938-704f4c8da447",
+      "result_id": "90100087-bd07-4a8a-85e0-0f87b61a754d"
+    },
+    {
+      "claim_id": "68e69b9f-872c-4112-9735-b721aa68166d",
+      "result_id": "64682e96-b115-4cb2-bbf1-874ae140d82f"
+    }
+  ],
+  "comparisons": []
+}

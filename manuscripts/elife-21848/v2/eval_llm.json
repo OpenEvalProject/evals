@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C31",
+      "C32",
+      "C33",
+      "C40",
+      "C42",
+      "C55",
+      "C57",
+      "C58",
+      "C73",
+      "C74",
+      "C75",
+      "C84"
+    ],
+    "result": "LapD activation requires coincidence detection of both c-di-GMP and LapG, resulting in formation of a receptor dimer-of-dimers rather than simple conformational changes within a dimer. This bidirectional signaling mechanism involves EAL domain dimerization across two LapD dimers, as demonstrated by SEC-MALS, crosslinking, and SAXS analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (SEC-MALS showing tetrameric species in C40, crosslinking demonstrating inter-dimer EAL interactions in C58, and SAXS modeling in C69, C73) converge on the same conclusion. The mixing experiments with differentially tagged LapD variants (C58) provide particularly strong evidence for the dimer-of-dimers architecture. The coincidence detection mechanism is well-supported by data showing that neither c-di-GMP nor LapG alone produces the high-affinity, tetrameric state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Fluorescence anisotropy binding assays reveal that c-di-GMP increases LapG's apparent affinity for LapD approximately 6-fold, and that swapping fixed versus titrated proteins suggests LapD's binding capacity (not just affinity) is regulated by c-di-GMP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fluorescence anisotropy data (C34) provide quantitative binding measurements. The comparison between different experimental configurations (C35) and the interpretation regarding binding capacity versus affinity (C36) are logically sound and supported by the data shown in Figure 1\u2014figure supplement 2. The ~6-fold difference in Kd values is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C43"
+    ],
+    "result": "SEC-MALS analysis demonstrates that apo-LapD is dimeric, LapD\u2022c-di-GMP is predominantly dimeric with minor tetrameric population, and that LapG binding without c-di-GMP does not alter oligomerization state. Native LapD can adopt at least three distinct oligomeric states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "SEC-MALS provides direct molecular weight measurements for different LapD states (Figure 1C, Figure 1\u2014figure supplement 3). The data clearly show dimeric apo-LapD (C37), no change upon LapG addition without c-di-GMP (C38), and predominantly dimeric LapD\u2022c-di-GMP with minor tetramer (C39). The c-di-GMP dependence of complex stability (C41) is demonstrated by the destabilization experiment. These are well-controlled experiments with appropriate technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Cysteine crosslinking experiments reveal conformational heterogeneity in apo-LapD, c-di-GMP-induced EAL domain dimerization and transmembrane helix reorientation, and LapG-induced conformational changes that are distinct from and independent of c-di-GMP effects. Only ~50% of EAL domains engage in dimers in activated LapD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crosslinking data (Figure 2) provide detailed spatial information about conformational states. The engineered cysteine positions are rationally designed based on crystal structures (C48). The W125E control (C54) demonstrates specificity of LapG effects. The observation of partial crosslinking (~50% in C46, C56) is consistent across experiments and supports the asymmetric dimer model. The interpretation that LapG induces conformational changes independent of c-di-GMP (C53) is directly supported by the data in Figure 2B bottom panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "EAL domain crosslinking forming LapD dimer-of-dimers occurs readily at low protein concentration (~1 \u03bcM) in detergent and shows qualitatively similar results in lipid bilayers of fused membrane fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low concentration requirement (C59) argues against non-specific aggregation artifacts. The demonstration in both detergent-solubilized and membrane-embedded contexts (C60, Figure 3B) strengthens the physiological relevance of the findings. These controls address potential concerns about the biological relevance of the observed oligomerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "SAXS analysis of four distinct LapD states reveals progressive conformational changes from trapped-inactive to apo to c-di-GMP-bound to fully activated states. The data support asymmetric dimers with one protomer in autoinhibited conformation and the other sampling extended conformations, with global changes restricted to one half-site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data are analyzed using multiple complementary approaches (ab initio envelopes, rigid-body fitting with SASREF, and EOM analysis), all yielding consistent interpretations (C70, C71, C72, C73). The use of a trapped-inactive variant (C62, C63) provides an important reference state. The progressive changes in Dmax and distance distribution functions (C62, C65, C66) are clearly documented. The interpretation of asymmetry (C64, C68) is consistent with crosslinking data. The quality metrics (\u03c7\u00b2 values, NSD) are reported and generally acceptable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Apo-LapD dimers are inherently asymmetric with one protomer in an autoinhibited conformation and the other sampling an open, extended state. c-di-GMP is only a partial activator, with c-di-GMP-bound LapD structurally distinct from the high-affinity ternary complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asymmetry conclusion (C76, C77, C78) is supported by converging evidence from SAXS (C64, C68), crosslinking (C46), and prior work (C79, C80). The partial activator conclusion (C81, C82) is directly supported by the SEC-MALS data showing different oligomeric states for LapD\u2022c-di-GMP (dimeric) versus LapD\u2022c-di-GMP\u2022LapG (tetrameric). This is a well-supported mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "LapD variants with cysteine mutations (TMcys, cysless) and sfGFP fusions retain c-di-GMP-dependent LapG binding activity and form constitutive dimers similar to wild-type LapD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are essential validation experiments (Figure 2\u2014figure supplement 1) demonstrating that the engineered variants used throughout the study maintain native-like behavior. The photo-crosslinking assay (C44) and SEC-MALS analysis (C45) provide direct functional and structural validation. Without these controls, the interpretations of crosslinking and other experiments would be questionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The HAMP domain is proposed to function as an integrator of bilateral signaling across the membrane, preventing full LapD activation when only one ligand (c-di-GMP or LapG) is bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a mechanistic proposal (C85, C86) that is reasonable given the data but lacks direct experimental validation. The HAMP domain's role is inferred from the overall architecture and the requirement for both ligands, but no experiments directly test HAMP function (e.g., HAMP domain mutations or deletions). The claim is explicitly presented as a model/hypothesis in the text, and the evidence type is listed as INFERENCE/SPECULATION.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C94",
+      "C96"
+    ],
+    "result": "The periplasmic input mechanism is proposed to be a vestigial evolutionary feature, and the open LapD conformations could provide a signaling platform for interactions with proteins like GcbC, which might stabilize dimer-of-dimers or induce conformations similar to the LapG-bound state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative evolutionary and mechanistic proposals (C87, C94, C96) that are plausible but lack direct experimental support in this manuscript. The evidence types are correctly listed as SPECULATION and INFERENCE. While the proposals are consistent with the structural data and prior observations about GcbC-LapD interactions, they represent hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C97"
+    ],
+    "result": "The revised model based on asymmetric LapD dimers and symmetric dimer-of-dimers reconciles how GcbC and LapD might interact, as apo-LapD samples extended states and can present unique interfaces for protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This addresses a specific inconsistency from prior work (C29, C30) where the GcbC interaction motif appeared occluded in the autoinhibited state. The new model (C93) resolves this by showing that apo-LapD samples extended conformations (C95, supported by SAXS data C71, C72). The conclusion that LapD can present multiple interfaces (C97) is well-supported by the structural data showing multiple conformational states. This is a logical inference well-grounded in the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on c-di-GMP signaling, biofilm formation, and the Lap system establishes the biological context for LapD function as a c-di-GMP receptor that regulates the periplasmic protease LapG to control bacterial adhesion and biofilm dispersal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide established background knowledge supported by appropriate citations (C1-C24). They describe the general c-di-GMP signaling system, biofilm biology, and the specific Lap operon system. While these are not novel findings of this manuscript, they are accurately presented and properly attributed to prior work. This contextual information is essential for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C79",
+      "C80"
+    ],
+    "result": "Prior work established c-di-GMP-dependent conformational changes in LapD, revealed basal affinity of apo-LapD for LapG, identified GcbC as a specific activator of LapD, and showed that only one c-di-GMP per LapD dimer is required for maximal LapG binding with an asymmetric high-affinity state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior published work (primarily Chatterjee et al., 2014 and Dahlstrom et al., 2015, 2016) that provides the foundation for the current study. The citations are appropriate and the claims are consistent with the referenced literature. These establish the knowledge gaps and puzzles that the current manuscript addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Simultaneous binding of c-di-GMP and LapG establishes a conformation in which EAL domains dimerize through a canonical interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C83) is directly supported by the crosslinking data showing increased A602C-A602C crosslinking in the ternary complex (C51, Figure 2B), the SEC-MALS data showing tetramer formation (C40), and comparison to known EAL domain dimer structures from prior work. The canonical interface is well-characterized in the literature (cited references), and the A602 position is central to this interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Bioinformatic analysis shows ~2,000 proteins contain HAMP-GGDEF-EAL domain architecture similar to LapD. Asymmetry is common in outside-in signaling membrane proteins including chemotaxis receptors and histidine kinases, and protein-protein interactions between c-di-GMP metabolizing enzymes and receptors have been implicated in signaling specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic observation (C88) provides context for the prevalence of this domain architecture. The claims about asymmetry in other signaling systems (C89-C91) and protein-protein interactions in c-di-GMP signaling (C92) are supported by appropriate citations to the literature. These establish that the mechanisms discovered for LapD may have broader relevance, though this is contextual information rather than novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

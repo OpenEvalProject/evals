@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ORC2 was successfully deleted in multiple human cell lines (HCT116, 293T, HBEC) using CRISPR/Cas9, with no detectable ORC2 protein (<1% of WT levels, \u22641530 molecules/cell), yet cells remained viable and proliferated for months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 provide converging evidence from multiple experimental approaches (CRISPR/Cas9 gene editing, immunoblotting, immunoprecipitation, quantitative protein measurements) across multiple cell lines demonstrating successful ORC2 deletion and continued cell viability. The quantitative measurements (C16-C18) establish rigorous detection limits, and replication in three different cell types (C19-C20) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ORC2-/- cells show decreased levels of ORC3-5 and ORC1, reduced chromatin loading of ORC1-5 and MCM2-7, but maintained levels and chromatin association of ORC6, CDC6, and CDT1, with slightly increased CDC6 chromatin association and no DNA damage checkpoint activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by western blot and chromatin fractionation data (Figure 1G-H). The biochemical characterization is comprehensive, showing both expected consequences (destabilization of ORC2-5 complex members) and unexpected findings (maintained ORC6/CDT1/CDC6 levels, increased CDC6 chromatin binding). The absence of checkpoint activation (C24) provides important evidence that replication is not severely impaired.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "ORC2-/- cells proliferate at >50% of WT rate, progress normally through S phase, and fire approximately 52,000 origins with marginally increased inter-origin distances (113-118 kb vs 96 kb) and slightly increased fork progression rates (1.3-1.5 kb/min vs 1.2 kb/min), as measured by both molecular combing and BrIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 are supported by multiple orthogonal methods (proliferation assays, FACS, BrdU incorporation, molecular combing, BrIP-seq) showing that ORC2-/- cells maintain functional DNA replication. The convergence of two independent origin mapping methods (molecular combing and BrIP-seq) both estimating ~52,000 origins (C36, C38) provides strong validation. The changes in replication parameters are modest and statistically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Origins in ORC2-/- cells show 40% overlap with WT cells, slightly longer inter-origin distances (26 kb vs 25 kb, p=4.3e-07), similar chromosome-by-chromosome distribution, and maintained enrichment in gene-rich domains and near transcription start sites, consistent with origin plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by BrIP-seq analysis with appropriate statistical testing (C41). The 40% overlap (C39) is appropriately contextualized by citing comparable overlaps from other studies and explained by origin plasticity (C40, C43). The maintained genomic features of origins (C44) indicate that fundamental origin selection mechanisms persist despite ORC2 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ORC1 was successfully deleted by inserting a blasticidin or plasmid-derived fragment at the initiator methionine, resulting in no detectable ORC1 protein. Unlike ORC2 deletion, ORC1 deletion did not decrease other ORC subunits, CDC6, or CDT1, but significantly decreased chromatin loading of MCM2-7 while maintaining chromatin association of ORC2-6, CDC6, and CDT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by gene editing confirmation (Figure 3A-B), western blotting, immunoprecipitation (Figure 3C-E), and chromatin fractionation (Figure 3D). The differential effects compared to ORC2 deletion (C47 vs C21) are well-documented and reflect the known looser association of ORC1 with the ORC complex. The significant decrease in MCM2-7 chromatin loading (C49) is clearly shown in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ORC1-/- cells initially proliferated at 10-20% of WT rate but improved to ~50% by 6 months without ORC1 reappearance. These cells showed normal S phase progression, unchanged or slightly decreased inter-origin distances, decreased fork progression (0.8-1.0 kb/min vs 1.2 kb/min), fired ~13,000 unique origins with 43% overlap with WT, and maintained similar origin distribution patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 are supported by proliferation assays (Figure 4A), FACS analysis (Figure 4B-C), molecular combing (Figure 4D), and BrIP-seq (Figure 4E-H). The temporal improvement in proliferation rate (C50-C51) suggests adaptation. The comprehensive replication characterization using multiple methods provides strong support. The decreased fork progression (C55) contrasts with ORC2-/- cells, suggesting different compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CDC6 knockdown does not affect WT cells but severely impairs ORC1-/- and ORC2-/- cells, causing DNA damage checkpoint activation (increased phospho-Chk2), decreased DNA synthesis, and reduced colony formation, indicating that CDC6 becomes critically important for replication in the absence of ORC1 or ORC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 are supported by siRNA knockdown experiments with western blotting (Figure 5A), BrdU incorporation (Figure 5B), and colony formation assays (Figure 5C). The differential dependency on CDC6 between WT and ORC-/- cells is clearly demonstrated with appropriate statistical testing. The increased phospho-Chk2 (C62) provides mechanistic insight into replication stress. This is a key finding supporting the compensatory role of CDC6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ORC5 knockdown does not change cell cycle profiles in ORC1-/- or ORC2-/- cells and more severely affects WT cells than mutant cells, but still inhibits BrdU incorporation in ORC-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by FACS analysis (Figure 5E) and BrdU incorporation data (Figure 5F). The differential effects between WT and ORC-/- cells (C67) suggest that ORC5 function may be partially redundant with ORC1/ORC2 in the mutant context. However, the continued inhibition of DNA synthesis (C68) indicates ORC5 retains some essential function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Human cells can proliferate with intact origins after disruption of ORC2 or ORC1, despite decreased MCM2-7 chromatin loading, and become critically dependent on CDC6 for survival and replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 represent the main conclusions of the manuscript and are well-supported by the comprehensive experimental evidence from all other claim groups. The survival and proliferation of ORC1-/- and ORC2-/- cells (C2-C3) is demonstrated across multiple cell lines and timepoints. Decreased MCM2-7 loading (C4) is shown by chromatin fractionation. CDC6 dependency (C5) is established by knockdown experiments showing differential effects in mutant vs WT cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The authors propose two alternative mechanistic explanations: either the incomplete ORC ring can load sufficient MCM2-7 with CDC6, or cells have an ORC-independent, CDC6-dependent mechanism for MCM2-7 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7 are explicitly speculative interpretations (marked as SPECULATION in evidence_type). While the experimental data clearly show that cells survive without ORC1 or ORC2 and depend on CDC6, the data do not definitively distinguish between these two mechanistic models. Additional experiments would be needed to determine which mechanism operates, such as testing whether residual ORC subunits are required or whether CDC6 alone can load MCM2-7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "The authors argue that the limited number of potential residual ORC2 molecules (<1530/cell) cannot catalytically load MCM2-7 at 52,000 origins distributed over 3.5 Mb, and that loss of ORC1 or ORC2 disrupts the proposed ring structure, making it difficult to surround DNA or interact with MCM2-7, suggesting that any necessary ATPase activity must come from ORC4 or CDC6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C73-C74, and C78 represent logical inferences from the quantitative data and structural knowledge. The calculation in C69 is sound given the detection limits and origin numbers. The structural arguments (C73-C74) are reasonable given established ORC ring models, though they remain inferences. The conclusion about alternative ATPase sources (C78) logically follows from the survival of ORC1-/- cells lacking the canonical ORC ATPase.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The six-subunit ORC does not appear to associate with chromatin as a holocomplex, as ORC6 associates normally despite decreased ORC1 or ORC2-5 loading, and ORC2-5 loading is independent of ORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by chromatin fractionation data (Figures 1H, 3D) showing differential chromatin association of ORC subunits in the knockout cells. The independent chromatin loading of ORC6 (C83) and ORC2-5 (C84) challenges the model of ORC as an obligate holocomplex and is clearly demonstrated in the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Origin plasticity persists in ORC1-/- and ORC2-/- cells despite significantly reduced MCM2-7 chromatin association, challenging the model that origin plasticity requires excess MCM2-7 loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by the BrIP-seq data showing similar origin distribution patterns and overlap percentages in mutant cells despite reduced MCM2-7 chromatin loading. This is a surprising finding that challenges existing models (C85 represents established knowledge). The persistence of plasticity with reduced MCM2-7 (C86) is clearly demonstrated by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The absolute requirement for six-subunit ORC for licensing origins can be bypassed in some cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 represents the overarching conclusion of the manuscript and is well-supported by the totality of evidence showing viable, replicating cells lacking ORC1 or ORC2. The caveat 'in some cell lines' appropriately acknowledges that this may not be universal. This conclusion fundamentally challenges the established model of ORC essentiality (C1, C8, C11).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior work established that ORC is an essential six-subunit ring-shaped ATPase complex, with ORC2-5 forming a tight core, ORC1 providing the sole ATPase activity, and all six subunits being essential in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 represent established knowledge from prior research, supported by multiple citations. These claims provide the necessary background context showing that the current findings (survival without ORC1 or ORC2) contradict established dogma, making the results particularly significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Structural and biochemical studies have established that ORC2-5-4-1 form a gapped ring that can surround DNA, CDC6 closes the gap between ORC1 and ORC2, the ORC-CDC6 ring interacts with MCM2-7 end-on-end, and ORC1 provides the essential ATPase activity through its Walker A and B motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 and C75-C77 represent established structural and biochemical knowledge from prior research, supported by citations. These claims provide the mechanistic framework that the current findings challenge, particularly regarding the essentiality of the complete ring structure and ORC1 ATPase activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "A prior report suggested ORC1 is not essential for endoreplication in Drosophila, though the authors note limitations in that study's ability to detect residual ORC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C79 cites prior work but the authors appropriately note methodological concerns about the sensitivity of detection methods in that study. This represents a fair assessment of related prior work, acknowledging both the precedent and its limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors suggest that while the classic ORC-CDC6-MCM2-7 loading pathway may be important for efficient loading, inefficient MCM2-7 loading with CDC6 assistance is sufficient for replication and survival without complete ORC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 represent reasonable interpretations of the data, appropriately marked as speculative (C80) and inferred (C81). The model that inefficient loading is sufficient (C81) is consistent with the observed decreased MCM2-7 chromatin association, slower proliferation rates, and CDC6 dependency. This represents a balanced interpretation acknowledging both the classic model and the new findings.",
+    "result_type": "MAJOR"
+  }
+]

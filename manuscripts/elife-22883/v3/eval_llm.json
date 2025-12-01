@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C37",
+      "C38",
+      "C60",
+      "C81",
+      "C82",
+      "C115"
+    ],
+    "result": "The five upstream adenylates (5A) are essential for the formation and stability of the H4a/\u03a83 pseudoknot. Optical tweezers experiments showed that replacing 5A with 5U eliminated the H4a/\u03a83 unfolding transition, and in-line probing demonstrated that 5A mutations caused structural changes in the H4a/\u03a83 region. MD simulations suggest A7-A10 form Hoogsteen edge interactions with \u03a83, though these interactions offer little resistance to pulling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (optical tweezers C3, C20, C37; in-line probing C14, C115; protoplast transfections C12) consistently demonstrate that 5A is required for H4a/\u03a83 stability. The H4a-only fragment showed no stability (C60), while the fragment with 5A and \u03a83 elements was stable (C61). The structural model from MD simulations (C81, C82) provides mechanistic insight, though the exact nature of the stabilizing interactions remains partially uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C161",
+      "C22",
+      "C23",
+      "C24",
+      "C150",
+      "C151"
+    ],
+    "result": "In the absence of Mg2+, the TSS unfolds in the order H4b first (10-13.5 pN), followed by H5 (13-15.5 pN), and finally H4a/\u03a83 (14.5-18.5 pN). This unfolding order was determined using optical tweezers with complementary oligonucleotides to disrupt individual hairpins, revealing that H4a/\u03a83 is the most mechanically stable element despite being predicted to be the least stable based on free energy calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The unfolding order is well-established through systematic optical tweezers experiments using both force-extension curves (C15, C16, C131) and force clamping (C22-C24). The use of complementary oligonucleotides to assign specific rips to structural elements (C150, C151) provides strong validation. The measured forces are consistent across multiple experimental approaches, and the unexpected stability of H4a/\u03a83 (C157) is reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C155",
+      "C4",
+      "C19",
+      "C62",
+      "C63",
+      "C64",
+      "C92",
+      "C139",
+      "C140",
+      "C141",
+      "C156",
+      "C160"
+    ],
+    "result": "In the presence of Mg2+, H4b and H5 unfold cooperatively as a complex (rip 1*), followed by H4a/\u03a83. This cooperative unfolding depends on the presence of H4a/\u03a83, as disrupting H4a/\u03a83 eliminates the cooperative behavior and restores individual H4b and H5 rips. Mg2+ enhanced the frequency of cooperative unfolding from 14% to 80% of force-extension curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cooperative unfolding of H4b and H5 in Mg2+ is demonstrated through multiple lines of evidence: the appearance of a large cooperative rip (C17, C62, C136), overlapping unfolding forces in force clamping (C63), and the statistical increase in cooperative events (C139, C140). The dependence on H4a/\u03a83 is convincingly shown by the loss of cooperativity when H4a/\u03a83 is disrupted (C19, C64, C159, C160). The experimental design with appropriate controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C35",
+      "C36",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C158"
+    ],
+    "result": "Mg2+ is not required for H4a/\u03a83 formation but significantly enhances the mechanical stability of all TSS elements. In Mg2+, unfolding forces increased by 2-3 pN for all elements, and H4a/\u03a83 required 19.95 \u00b1 0.06 pN to unfold in 10 mM Mg2+ compared to 4-5 pN lower forces in NaCl alone. Mg2+ also increased kinetic barriers to unfolding, as evidenced by abrupt changes in hopping behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The stabilizing effect of Mg2+ is consistently demonstrated across multiple experimental conditions (force ramping C34, C35; force clamping C25-C28, C87). The presence of H4a/\u03a83 rips in the absence of Mg2+ (C158) definitively shows Mg2+ is not required for formation. The quantitative measurements of force increases (C87, C88) and the observation of brittle unfolding behavior in Mg2+ (C90) provide strong mechanistic insight. The comparison to BWYV pseudoknot (C36, C158) adds external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C77",
+      "C78",
+      "C79",
+      "C162",
+      "C163",
+      "C168",
+      "C169"
+    ],
+    "result": "Steered molecular dynamics (SMD) simulations recapitulated the experimental TSS unfolding order in the absence of Mg2+. At pulling speeds of 0.01 \u00c5/ps using implicit solvent, 70-100% of simulations showed H4a/\u03a83 opening last, and 40-50% matched the complete experimental sequence (H4b, H5, H4a/\u03a83). The simulations revealed that pulling speed affects helix orientation and the formation of transient tertiary interactions, which impact the unfolding order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SMD simulations show reasonable agreement with experimental results (C47, C48), though only 40-50% of simulations match the complete sequence. The systematic exploration of pulling speeds (C77) and the identification of transient interactions (C78) provide mechanistic insights. The use of implicit solvent methods (C162, C163) is justified by computational constraints, though the absence of Mg2+ in simulations (stated in methods) limits direct comparison to some experimental conditions. The partial agreement suggests the simulations capture key features but may miss some aspects of the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Mutations in the 5A region (positions 8-9) eliminated specific RdRp binding to a 3'UTR fragment, reducing binding from Kd = 2.6 \u03bcM to non-specific levels. Mutations in residues immediately downstream of 5A also eliminated specific binding, while mutations in the H4a loop improved binding 2.5-fold. These results suggest RdRp specifically interacts with 5A and adjacent downstream sequences, and this interaction may be facilitated by the absence of \u03a83.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The filter binding assays provide clear evidence for the importance of 5A in RdRp binding (C39, C41). The use of MDV as a negative control (C40) and the systematic mutagenesis approach (C41-C43) strengthen the conclusions. The inference that RdRp interacts with 5A and adjacent sequences (C45) is well-supported by the pattern of mutations affecting binding. However, the claim that this interaction is facilitated by absence of \u03a83 (C46) is more speculative, based on the observation that disrupting \u03a83 improves binding (C42), which could have alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose a model where RdRp binding to the 5A region disrupts H4a/\u03a83, leading to loss of H4b/H5 interaction and promoting a conformational switch from a translation-competent TSS structure to a replication-competent alternative conformation. This model integrates the mechanical stability data, RdRp binding results, and previous observations of RdRp-induced conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a proposed mechanistic model (C7, C95, C96) that integrates multiple experimental observations but lacks direct experimental validation. While the model is consistent with the data showing: (1) RdRp binds 5A (C6, C21), (2) 5A is required for H4a/\u03a83 stability (C3, C20), (3) H4a/\u03a83 is required for H4b/H5 cooperation (C4, C19), and (4) RdRp binding causes conformational changes (C52, C73), the causal chain has not been directly demonstrated. The model requires validation through experiments showing RdRp binding directly disrupts H4a/\u03a83 structure and that this disruption leads to the observed conformational switch.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C103",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "Experimental contour lengths measured by force clamping were shorter than predicted for H5 (17.0 \u00b1 1.8 nm vs. 24.8 nm expected) and H4a/\u03a83 (9.1 \u00b1 1.5 nm vs. 13.6 nm expected), while H4b matched predictions (15.3 \u00b1 1.5 nm vs. 16.0 nm expected). SMD simulations suggest these discrepancies result from partial helix opening and instability of the H5 lower stem, with H4a/\u03a83 showing foreshortening to 11.2 nm and then 9.4 nm before complete unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental contour length measurements (C29-C31) are well-documented with appropriate error estimates. The discrepancies between predicted and observed lengths are substantial for H5 and H4a/\u03a83 (C30, C31, C103). The SMD simulations provide plausible mechanistic explanations (C180-C184), showing partial opening patterns that match the experimental observations. The interpretation regarding H5 lower stem instability (C32, C104) is supported by both experimental data and simulations (C183, C184). However, the experimental measurements have relatively large error bars, and alternative explanations for the discrepancies cannot be completely ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Disruption of H4a/\u03a83 or H5 affects the mechanical properties of other TSS elements. When H4a/\u03a83 was disrupted, H4b unfolded at lower forces (13.5 pN vs. 15 pN) with shorter contour length (11.3 \u00b1 1.1 nm vs. 15.8 nm), and a new \u03a82 transition appeared. When H5 was disrupted, H4a/\u03a83 hopping was eliminated in the absence of Mg2+, and H4b unfolded at lower forces (11.5 pN). These results indicate Mg2+ stabilizes interactions between H4a/\u03a83 and H4b/H5, and between H4b and H5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interdependence of TSS elements is demonstrated through systematic disruption experiments (C65-C71). The quantitative measurements of force changes and contour lengths (C66, C67) provide strong evidence. The observation of a new \u03a82 transition when H4a/\u03a83 is disrupted (C68) adds mechanistic detail. The caveat noted for H5 disruption effects on H4a/\u03a83 (C70) - that the effect is observed in force clamping but not force ramping - is appropriately acknowledged and suggests the stabilization may be kinetic rather than thermodynamic. The overall conclusion about Mg2+-mediated stabilization of interactions (C72) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Individual adenylate mutations in the 5A region reduced viral gRNA accumulation to 23-55% of wild-type levels in protoplast transfections, with A11toC reducing accumulation by 45% and A11toG by 65%. The similar effects of A11toC and A11toG suggest the reduction is not connected to A11's potential involvement in \u03a83 base pairing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protoplast transfection experiments (C12) provide clear quantitative data on the importance of individual adenylates for viral fitness. The comparison of A11toC and A11toG mutations (C111, C112) is a well-designed test of whether A11 participates in \u03a83 through base pairing with U26. The inference that the effect is not due to \u03a83 involvement (C113) is reasonable given the similar effects of both mutations. However, the experiments were performed in triplicate (stated in methods), and standard deviations are shown (C12), providing adequate statistical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "In-line probing of TSS118 showed that the TSS forms a similar structure as in longer fragments, with flexible residues mainly in terminal and internal loops. Converting 5A to 5U caused >25% flexibility changes in the 5A region, H4a loop, and H5 internal loop residues. \u03a83 was not resolved by in-line probing, consistent with previous studies on larger fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in-line probing experiments (C14, C118) provide structural information consistent with previous work (C114, C117). The quantification using SAFA software adds rigor. The observation that \u03a83 is not resolved (C117) is consistent with previous findings and may reflect the dynamic nature of this element. The control for potential 5U-H5 pairing (C119) strengthens the interpretation that observed changes reflect genuine structural effects rather than artifacts. The use of three independent experiments (stated in methods) provides adequate replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C83",
+      "C84",
+      "C169"
+    ],
+    "result": "SMD simulations indicate that the structural resistance to pulling for TSS pseudoknotted motifs is increased beyond free energy predictions by their orientation parallel to the pulling direction. H4a/\u03a83's coaxially stacked stems create base-pair planes perpendicular to the unfolding force, and \u03a83 opens gradually with transient tertiary interactions maintaining pseudoknot topology, increasing resistance to pulling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SMD simulations provide mechanistic insights into why H4a/\u03a83 is more stable than predicted (C49, C83, C169). The observations about orientation effects (C49, C169) and transient interactions (C84) are consistent with the experimental finding that H4a/\u03a83 requires unexpectedly high forces to unfold. The comparison to another pseudoknot study (C169, citing Chen et al., 2007) provides external validation of the orientation effect. However, these are computational observations that, while consistent with experiments, represent interpretations of simulation data rather than direct experimental measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C162"
+    ],
+    "result": "The study demonstrates the applicability of implicit solvent molecular dynamics to optical tweezers pulling simulations of highly structured nucleic acids. Implicit solvent simulations at 0.005 \u00c5/ps and 0.01 \u00c5/ps pulling speeds yielded comparable results and allowed exploration of slower pulling speeds than practical with explicit solvent methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The successful use of implicit solvent MD (C80, C162) is demonstrated by the agreement with experimental results (40-50% of simulations matching the complete unfolding sequence, C48). The computational justification for using implicit solvent (stated in methods and results) is sound given the system size constraints. The comparison of results across different GB parameter variants (mentioned in methods) adds robustness. However, the claim of novelty (C80) is difficult to evaluate without extensive literature review, and the absence of Mg2+ in simulations limits the scope of applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "A representative SMD simulation trajectory shows sequential unfolding: (1) C6 and 5A lose triple interactions with \u03a83, (2) H4a/H4b stacking opens, (3) \u03a82 opens and H4b pivots and unwinds, (4) H5 opens completely, (5) H4a/\u03a83 opens from 5'-3' end. The simulation exhibited clean transitions without transient tertiary interactions. However, many simulations showed partial helix opening in parallel, especially at faster pulling speeds, with H4a/\u03a83 opening 5'-3' base pairs prematurely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detailed trajectory description (C170-C174) provides mechanistic insights from a representative simulation. The observation that this simulation showed sequential opening (C176) while others showed partial opening (C177, C178) is honestly reported and reflects the stochastic nature of the simulations. The gradual changes in hydrogen bonding (C179) and the foreshortening of contour lengths (discussed in C180-C181) provide explanations for experimental observations. The integration of simulation and experimental data (C185, C186) is appropriate, acknowledging that simulations suggest partial opening may occur even though experiments show rapid unzipping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Computational predictions using Mfold and McGenus indicated H4a should be the least stable element (\u0394G = -6.9 kcal/mol), followed by H4b (\u0394G = -9.2 kcal/mol) and H5 (\u0394G = -21.8 kcal/mol), with pseudoknots H4a/\u03a83 (\u0394G = -8.3 kcal/mol) and H4b/\u03a82 (\u0394G = -11.0 kcal/mol). However, experimental results showed H5 is substantially less stable than predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational predictions (C101, C144-C148) using established software (Mfold, McGenus) provide a baseline for comparison with experimental results. The discrepancy between predictions and experimental observations (C102) is clearly documented and drives much of the investigation. The predictions serve their intended purpose of highlighting unexpected experimental findings, particularly the unusual stability of H4a/\u03a83 and the lower-than-expected stability of H5. The use of standard prediction tools is appropriate for this purpose.",
+    "result_type": "MINOR"
+  }
+]

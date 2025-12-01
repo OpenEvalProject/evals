@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41"
+    ],
+    "result": "The DivS model, incorporating divisive interaction between excitation and delayed suppression, accurately describes the nonlinear processing in ON-Alpha ganglion cell synaptic inputs. The suppressive filter is delayed relative to excitation (10.9 \u00b1 2.2 ms, p<0.0005, n=13), and the model outperforms alternative models including LN, AddS, and covariance-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C35-C38, C40-C41 collectively demonstrate that the DivS model provides a parsimonious and accurate description of synaptic current responses. The statistical evidence for filter delay (C35), model performance comparisons (C38, C41), and validation through 2-D nonlinearity reconstruction (C40, R\u00b2=0.94\u00b10.02) provide strong converging support. The model structure is biologically motivated and mathematically validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The DivS model implicitly captures contrast adaptation using a single set of parameters across both high and low contrast conditions, outperforming LN models fit separately to each contrast level. At low contrast, the model becomes dominated by the excitatory term and closely matches LN model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 demonstrate that the DivS model successfully explains contrast adaptation without parameter changes. The model's performance across contrasts (C42-C43), mechanistic explanation through divisive suppression scaling (C44-C45), and accurate prediction of filtering property changes (C46) including tonic offset (C47) provide strong evidence. This represents a significant advance over models requiring separate parameter fits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In spot-annulus stimulation, the DivS model reveals distinct spatial profiles for excitation (center-driven) and suppression (surround-driven), significantly outperforming both LN and LNK models. The LNK model shows minimal improvement over LN (1.8%\u00b11.3%, p=0.016), while DivS improves by 8.6%\u00b13.3% (p=0.016) over LN and 6.7%\u00b12.8% over LNK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 provide strong evidence that divisive suppression has a distinct spatial structure that cannot be explained by synaptic depression alone. The statistical comparisons of model performance (C50, C52-C54), spatial profile differences (C55-C57), and mechanistic distinctions from LNK (C58-C59) converge to support the conclusion that presynaptic inhibition from amacrine cells contributes to the observed suppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The full spike-DivS model, combining divisive suppression with spike-history terms, captures over 90% of predictable variance in firing rate (median=91.5%\u00b11.0%, n=11) with millisecond precision, representing the best reported performance for ganglion cell spike trains at this temporal resolution. This substantially outperforms LN models (62.8%\u00b11.9%) and LN+RP models (68.8%\u00b11.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C60-C65 demonstrate exceptional model performance with clear quantitative metrics. The >90% predictable variance captured (C60), comparison to literature (C61), and substantial improvement over baseline models (C62-C63) provide strong support. The inference that precise timing involves interplay of divisive suppression and spike-generating mechanisms (C64-C65) is well-justified by the model structure and performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Divisive suppression and spike refractoriness contribute complementary forms of suppression to spike patterning. Divisive suppression is necessary for predicting the correct envelope of firing rate at high contrast, while spike-history terms primarily affect event reliability (Fano factor) rather than temporal precision or firing envelope.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 demonstrate through systematic model comparisons that both components are necessary. The inability to fit divisive suppression without spike-history terms (C66), distinct contributions to firing envelope versus reliability (C68, C70-C71), and conclusion of two-stage computation (C72) are well-supported by the data in Figure 6. The complementary nature of the mechanisms is clearly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The spike-DivS model accurately describes contrast adaptation of spike trains using fixed parameters across contrasts. Both divisive suppression and spike refractoriness are necessary: divisive suppression originates at synaptic inputs, while spike refractoriness amplifies adaptation effects due to temporal concentration of spikes at high contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C79 demonstrate that contrast adaptation in spikes requires both model components. The accurate prediction of contrast gain and biphasic index changes (C75), mechanistic explanation through spike concentration (C77), and two-stage processing conclusion (C78-C79) are well-supported by data in Figure 7. The model successfully unifies temporal precision and contrast adaptation phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "Spike responses show precise trial-to-trial timing at high contrast but not at low contrast. The LN model fails to predict spike timing properties (first-spike SD, event duration) at high contrast, and adding spike refractoriness (LN+RP) does not resolve this failure. Coherence analysis of synaptic currents reveals that precision at high contrast extends to finer time scales than predicted by the LN model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C20-C21, C23-C24 establish the key observation motivating the study: temporal precision exists at high contrast, is already present in synaptic currents, and cannot be explained by LN models or spike refractoriness alone. The event analysis (C17-C18, C20) and coherence measurements (C23-C24) provide quantitative support. This sets up the need for the DivS model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Contrast adaptation is present in both synaptic currents and spikes, with larger contrast gain in spikes (1.61\u00b10.23) than currents (1.10\u00b10.14, p<10\u207b\u2076). Adaptation occurs rapidly after contrast switches. Both contrast adaptation and temporal precision are generated largely by upstream retinal circuitry, with further transformation between currents and spikes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 establish that contrast adaptation has both presynaptic and postsynaptic components. The statistical comparison of contrast gain (C27), rapid time course (C26), and inference about circuit localization (C28-C29) are well-supported by the data. This motivates the two-stage model architecture combining synaptic and spike-generation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84",
+      "C87",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "Temporal precision originates at the level of excitatory synaptic inputs and is explained by divisive suppression, which likely depends on both presynaptic inhibition from amacrine cells and synaptic depression at bipolar synapses. Voltage-clamp recordings rule out membrane potential fluctuations or shunting inhibition as mechanisms. The distinct spatial profiles of excitation and suppression suggest presynaptic inhibition plays a significant role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C84, C87, C97-C99, C101 provide converging evidence for the circuit mechanisms underlying divisive suppression. The voltage-clamp control (C97), spatial profile evidence against pure synaptic depression (C98), and inference about presynaptic inhibition (C99, C101) are logically sound. However, the relative contributions of the two mechanisms remain uncertain, as acknowledged by the authors' use of 'likely' and 'partly'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C89",
+      "C90"
+    ],
+    "result": "Temporal precision has been observed in retinal and LGN responses and plays an important role in downstream visual processing. The same delayed suppression mechanism likely underlies LGN precision, which is inherited from retina and enhanced at the retinogeniculate synapse. Spike-history contributes minimally to precision but importantly to spike patterning within events and neuronal reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C85-C86, C89-C90 place the current findings in the context of prior work on temporal precision in the visual system. The citations support the observations in other systems (C82-C83, C85-C86), and the data support the specific contributions of spike-history terms (C89-C90). This contextualizes the significance of identifying divisive suppression as the origin of precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The LN model fails to capture contrast adaptation (reduced gain at high contrast) and high temporal resolution firing. Divisive suppression provides a mathematical form similar to gain control models and may explain nonlinear spatial summation. Contrast adaptation in spikes is amplified by spike refractoriness due to temporal concentration of spikes at high contrast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C91-C95 establish limitations of the LN model and connect the DivS model to prior theoretical frameworks. The LN model failures are well-documented (C9-C11), the connection to gain control is appropriate (C91), and the mechanism for adaptation amplification is supported by data (C93-C95). The speculation about spatial summation (C92) is reasonable but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Excitatory inputs to ganglion cells come from bipolar cells, whose voltage responses are well-described by LN models. This suggests nonlinear behavior of postsynaptic currents is localized to bipolar-ganglion cell synapses, with possible sources including presynaptic inhibition from amacrine cells and synaptic depression at bipolar terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 establish the circuit context and rationale for the DivS model structure. The established knowledge about bipolar cells (C30-C31) and logical inference about synapse localization (C32) are sound. The identification of candidate mechanisms (C33-C34) is well-supported by citations and motivates the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C51"
+    ],
+    "result": "The LNK model, which explicitly implements synaptic depression, can predict temporal features of ganglion cell recordings across contrast. However, in the spot-annulus condition, the spatial LNK model had rate constants minimizing time in the inactivated state, effectively reducing to an LN model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C51 describe the behavior of an alternative model (LNK) that was tested. The citation supports the general capability of the LNK model (C48), and the observation about rate constants in the spatial condition (C51) is shown in Figure 4C. This provides important context for why the DivS model outperforms LNK in the spot-annulus condition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C100",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The spike-DivS model did not incorporate direct synaptic inhibition onto ON-Alpha cells, consistent with findings that excitation dominates in this stimulus regime. Earlier studies showed contrast adaptation persisted with inhibitory antagonists, but the current results suggest lateral inhibitory mechanisms also contribute under intact conditions, particularly for circuits with high tonic glutamate release like ON-Alpha cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C100, C102-C104 address an apparent contradiction between the current findings (implicating presynaptic inhibition) and prior pharmacological studies. The model structure (C88) is justified by citations, the prior findings are accurately cited (C100), and the reconciliation through consideration of tonic release rates (C102-C104) is logical. However, C104 is speculative and would benefit from direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C13",
+      "C14",
+      "C105",
+      "C106"
+    ],
+    "result": "The retina contains ~30 distinct ganglion cell types, and many aspects of their responses can be predicted with LN models. ON-Alpha cells were studied because they provide major input to LGN and superior colliculus, respond predominantly through synaptic excitation, and can be reliably targeted. Each ganglion cell type receives unique inputs and performs distinct computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C13-C14, C105-C106 provide background context and justify the experimental focus on ON-Alpha cells. All claims are supported by appropriate citations to established literature. The speculation about other cell types (C106) is reasonable given the diversity of retinal circuits. These claims establish the broader significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C22",
+      "C96"
+    ],
+    "result": "Visual processing depends on computations implemented by neural circuits. Precise firing likely represents an essential element of downstream processing. Some contrast adaptation is present in ganglion cell synaptic inputs. Divisive suppression has been observed in multiple sensory systems including olfactory system, LGN, V1, and MT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C22, C96 provide general background context supported by citations to prior literature. These establish the broader significance of studying neural computations, temporal precision, and divisive suppression mechanisms. While important for framing, these are not novel findings of the current study.",
+    "result_type": "MINOR"
+  }
+]

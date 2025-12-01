@@ -1,0 +1,1530 @@
+{
+  "submission": {
+    "id": "8bbbb905-b750-4641-b6a1-11a204185654",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:49:04.530316Z",
+    "updated_at": "2025-11-30T20:49:04.530316Z"
+  },
+  "content": [
+    {
+      "id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "submission_id": "8bbbb905-b750-4641-b6a1-11a204185654",
+      "content_type": "manuscript",
+      "content_text": "# Cell type-specific long-range connections of basal forebrain circuit\n\n## Authors\n\n- Johnny Phong Do<sup>1</sup>\n- Min Xu<sup>1</sup>\n- Seung-Hee Lee<sup>1</sup> ([ORCID: 0000-0002-9486-5771](https://orcid.org/0000-0002-9486-5771))\n- Wei-Cheng Chang<sup>1</sup>\n- Siyu Zhang<sup>1</sup>\n- Shinjae Chung<sup>1</sup>\n- Tyler J Yung<sup>1</sup> ([ORCID: 0000-0002-8361-837X](https://orcid.org/0000-0002-8361-837X))\n- Jiang Lan Fan<sup>1</sup>\n- Kazunari Miyamichi<sup>2</sup>\n- Liqun Luo<sup>2</sup>\n- Yang Dan<sup>1</sup> ([ORCID: 0000-0002-3818-877X](https://orcid.org/0000-0002-3818-877X)) \u2020\n\n### Affiliations\n\n1. Division of Neurobiology, Department of Molecular and Cell Biology, Helen Wills Neuroscience Institute Howard Hughes Medical Institute, University of California Berkeley United States\n2. Department of Biology Howard Hughes Medical Institute, Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe basal forebrain (BF) plays key roles in multiple brain functions, including sleep-wake regulation, attention, and learning/memory, but the long-range connections mediating these functions remain poorly characterized. Here we performed whole-brain mapping of both inputs and outputs of four BF cell types \u2013 cholinergic, glutamatergic, and parvalbumin-positive (PV+) and somatostatin-positive (SOM+) GABAergic neurons \u2013 in the mouse brain. Using rabies virus -mediated monosynaptic retrograde tracing to label the inputs and adeno-associated virus to trace axonal projections, we identified numerous brain areas connected to the BF. The inputs to different cell types were qualitatively similar, but the output projections showed marked differences. The connections to glutamatergic and SOM+ neurons were strongly reciprocal, while those to cholinergic and PV+ neurons were more unidirectional. These results reveal the long-range wiring diagram of the BF circuit with highly convergent inputs and divergent outputs and point to both functional commonality and specialization of different BF cell types.\n\n## Introduction\n\nThe BF has been implicated in a variety of brain functions such as arousal, attention, and plasticity (Bakin and Weinberger, 1996; Brown et al., 2012; Everitt and Robbins, 1997; Froemke et al., 2013; Hasselmo and Sarter, 2011; Jones, 2011; Lin et al., 2015; Saper et al., 2010; Sarter et al., 2001). The dysfunction or loss of BF cholinergic neurons is an important feature of Alzheimer\u2019s disease associated with cognitive impairment (Schliebs and Arendt, 2011; Whitehouse et al., 1982). In addition to forming extensive local synapses (Xu et al., 2015; Yang et al., 2014; Zaborszky and Duque, 2000), BF neurons receive inputs (Asanuma, 1989; Freund and Meskenaite, 1992; Grove, 1988a, Henny and Jones, 2006; Manns et al., 2001; Parent et al., 1988; Rye et al., 1984; Semba et al., 1988; Zaborszky and Cullinan, 1992) and send outputs (Cullinan and Zaborszky, 1991; Grove, 1988b; Jones and Cuello, 1989; Mesulam and Mufson, 1984; Par\u00e9 and Smith, 1994) to many other brain areas (Steriade and McCarley, 2005; Zaborszky et al., 2012). However, how these long-range connections contribute to BF functions remains unclear.\n\nAn important challenge in understanding the function of the BF circuit is its neuronal heterogeneity. There are three major cell types spatially intermingled in the BF: cholinergic, glutamatergic, and GABAergic (Semba, 2000; Zaborszky et al., 2012). Selective lesion or pharmacological manipulation of the cholinergic system is well known to affect multiple brain functions (Wenk, 1997). For example, 192-IgG-saporin-mediated lesion of cholinergic neurons impaired the ability of rats to discriminate between signal and non-signal visual events in an attention task (McGaughy et al., 1996) and disrupted training-induced cortical map reorganization associated with motor learning (Conner et al., 2003). Glutamatergic and GABAergic BF neurons are also likely to serve important functions (Lin et al., 2015). For example, in recent studies the activity of non-cholinergic BF neurons was found to correlate with sustained attention (Hangya et al., 2015) or to encode reward and motivational salience information (Avila and Lin, 2014; Lin and Nicolelis, 2008; Nguyen and Lin, 2014), and optogenetic activation of PV+ GABAergic neurons was shown to regulate cortical gamma oscillations (Kim et al., 2015). In a study on sleep-wake control, cholinergic, glutamatergic, and PV+ neuron activity was found to promote wakefulness, while SOM+ neurons promoted sleep; these four cell types form extensive but highly specific local connections with each other for brain-state regulation (Xu et al., 2015). Thus, to understand the BF circuit function, it is crucial to map its inputs and outputs with cell-type specificity.\n\nMost of the previous studies of BF long-range connections focused on specific regions connected to the BF, making it difficult to assess their whole-brain distribution. Recent advances in virus-assisted circuit tracing (Callaway and Luo, 2015; Huang and Zeng, 2013) and high-throughput imaging have greatly facilitated whole-brain mapping of long-range connectivity in a cell-type-specific manner (Oh et al., 2014; Osten and Margrie, 2013). In this study, we traced the long-range inputs and outputs of four genetically defined BF cell types. While the input distributions were similar across cell types, their output patterns showed striking differences. Our quantitative analysis of the whole-brain distributions of inputs and outputs for each BF cell type can serve as an anatomical blueprint for future studies of inter-regional pathways mediating BF functions.\n\n## Results\n\nFour Cre mouse lines were used to target different BF subpopulations for virus-mediated circuit tracing: choline acetyltransferase (ChAT)-Cre for cholinergic neurons, vesicular glutamate transporter 2 (VGLUT2)-Cre for glutamatergic neurons, and PV-Cre and SOM-Cre mice for two subtypes of GABAergic neurons. These four Cre lines have been shown to label largely non-overlapping BF neuron populations with high\u00a0specificity (Xu et al., 2015).\n\nTo identify the long-range inputs to each cell type, we used RV-mediated transsynaptic retrograde tracing, which has been shown to label monosynaptic inputs to selected starter cells with high specificity (Miyamichi et al., 2011; Wall et al., 2013; Watabe-Uchida et al., 2012; Wickersham et al., 2007). First, we expressed avian-specific retroviral receptor (TVA), enhanced green fluorescent protein (eGFP), and rabies glycoprotein (RG) specifically in each cell type by injecting two Cre-inducible AAV vectors (AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA and AAV2-EF1\u03b1-FLEX-RG) into the BF of ChAT-, VGLUT2-, PV-, or SOM-Cre mice (Figure 1A). The expression of RG was highly cell type specific and not detected in wild-type mice not expressing Cre recombinase (Figure 1\u2014figure supplement 1). Two to three weeks later, we injected a modified RV (rabies\u0394G-tdTomato+EnvA) that only infects cells expressing TVA, requires RG to spread retrogradely to presynaptic cells (Figure 1\u2014figure supplement 2), and contains the tdTomato transgene. After histological sectioning and fluorescence imaging, each sample was aligned to a reference atlas (Allen Mouse Brain Atlas, see Materials and methods) to facilitate 3D whole-brain visualization and quantitative comparison across brain samples (Figure 1C). The starter cells (expressing both tdTomato and eGFP) and the transsynaptically labeled presynaptic neurons (expressing tdTomato only) were identified manually, and their locations were registered in the reference atlas (Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig1-v2.jpg)\n\n**Figure 1.:** (A) RV-mediated transsynaptic retrograde tracing of BF inputs. Upper panel, viral vectors and injection procedure. Lower panel, fluorescence images of BF in the region of the NDB (red box in coronal diagram) in ChAT-, VGLUT2-, PV-, and SOM-Cre mice. Scale bar, 200 \u00b5m. Inset, enlarged view of the region in white box showing starter cells (yellow, expressing both eGFP and tdTomato, indicated by white arrowheads). Scale bar, 50 \u00b5m. NDB, diagonal band nucleus; SIB, substantia innominata, basal part; MCPO, magnocellular preoptic nucleus; VP, ventral pallidum; LPO, lateral preoptic area. (B) Viral vector and injection procedure for tracing BF axonal projections. (C) Flow chart showing the main steps in data generation and processing.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Colocalization of rabies glycoprotein immunostaining with Cre expression (indicated by tdTomato or mCherry reporters) in each of the four Cre lines. White arrowheads indicate cells with colocalization. No rabies glycoprotein expression was detected when injected into wild type mice. (B) Percentage of rabies glycoprotein expressing cells that are positive for tdTomato or mCherry, averaged across brain samples. Error bar, \u00b1 standard deviation (91 ChAT cells; 89 VGLUT2 cells; 70 PV cells; 100 SOM cells; n = 2 mice per line).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Injection of RV without prior AAV injection resulted in no tdTomato-labeled neurons, indicating dependence of the\u00a0RV infection on AAV-induced expression of TVA. (B) Injection of AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA and AAV2-EF1\u03b1-FLEX-RG followed by RV injection in the BF of wild-type mice not expressing Cre led to no eGFP expression, indicating Cre-dependence of the AAV vector. However, tdTomato-labeled neurons were observed at the injection site (radius < 500 \u03bcm), most likely due to the leaky expression of a low level of TVA, as previously noted (Miyamichi et al., 2013; Wall et al., 2013). (C) Upper panel, Sagittal view of the experiment shown in B (but a different brain sample), with a\u00a0tdTomato expression near the injection site but not outside of the exclusion zone. Lower panel, enlarged view of the region in the\u00a0white rectangle. (D) Sagittal view of brain samples injected with AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA followed by RV in the BF of different Cre lines (without AAV2- EF1\u03b1-FLEX-RG that enables transsynaptic spread of RV) to determine the spatial extent of the exclusion zone in the RV tracing experiments. After excluding the horizontal limb of the diagonal band of Broca (part of the BF region targeted), we found very few (<30 per brain) labeled cells beyond 850 \u03bcm. Subsequent analyses were thus performed only in coronal sections >850 \u03bcm from the injection site and outside of the horizontal limb of the diagonal band of Broca.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Normalized starter cell density across all samples for each cell type. Each brain slice depicts the density accumulated from an anterior-posterior axis range of 0.24 mm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) The total number of starter cells for each brain sample. (B) The convergence index (input cell count/starter cell count) for each brain sample grouped by cell-type.\n\nBrain samples were excluded from the\u00a0analyses if very few input neurons (<200) were labeled in the whole brain. As noted in previous studies, due to the extremely efficient interaction between TVA and EnvA-pseudotyped rabies virus, the very low-level expression of TVA in non-Cre-expressing cells (not detectable based on fluorescent protein markers) allows the\u00a0rabies virus to infect and label these cells with tdTomato at the injection site, independent of synaptic connections with starter cells (Beier et al., 2015; Menegas et al., 2015; Miyamichi et al., 2013; Ogawa et al., 2014; Pollak Dorocic et al., 2014; Wall et al., 2013; Watabe-Uchida et al., 2012; Weissbourd et al., 2014). However, this local contamination does not compromise the mapping of long-range inputs because RG (required for transsynaptic spread of RV) is not expressed in any non-Cre-expressing cells at sufficient levels for trans-complementation of rabies\u0394G to allow transsynaptic spread of RV (Callaway and Luo, 2015; Miyamichi et al., 2013). To determine the spatial extent of the local contamination, we performed control experiments in the absence of RG and found very few non-specific labeling at >850\u2009\u03bcm from the injection center (Figure 1\u2014figure supplement 2D). Thus, presynaptic neurons were counted only in coronal sections outside of this range. While this procedure precludes identification of local inputs, synaptic interactions of the four cell types within the BF have been characterized electrophysiologically in a recent study (Xu et al., 2015).\u00a0Another technical limitation of the study is that when the brain was removed for histological processing, the olfactory bulb was often damaged, which led to a significant underestimation of labeling (both the input neurons and axon projections) in the olfactory bulb.\n\nWe found 900 \u2013 14,631 (median 7002) tdTomato-labeled presynaptic neurons in each brain (n = 17), and the convergence index (ratio between the number of input cells and starter cells) ranged between 4.3 and 77.7 (Figure 1\u2014figure supplement 4). Such variability is comparable to that found in other studies using similar methods (Miyamichi et al., 2011; DeNardo et al., 2015). The presynaptic neurons were predominantly ipsilateral to the starter population (<5% contralateral) but were distributed in a large number of brain areas (Figure 2, Figure 3, Video 1). Since the number of labeled neurons varied across brain samples, and there was no significant difference between the four cell types (P = 0.27, one-way ANOVA), we normalized the data in each area by the total number of labeled neurons in each brain. When the brain was divided into 12 major regions (Figure 3A), the striatum and hypothalamus provided the highest numbers of inputs, while few labeled neurons were found in the medulla or cerebellum (Figure 3A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig2-v2.jpg)\n\n**Figure 2.:** Examples of RV-labeled input neurons to each of the four BF cell types in seven selected brain structures (black box in each coronal diagram). Scale bar, 200 \u00b5m. In each coronal diagram, RV-labeled neurons detected in all four brain samples are indicated by red dots. Bottom panel, mean percentage of input neurons in each brain structure for the four BF cell types. Error bar, \u00b1 s.e.m. Bar color indicates which of the 12 regions the given brain structure belongs to as depicted in Figure 3. ac, anterior commissure; aq, cerebral aqueduct; BLA, basolateral amygdalar nucleus; DMH, dorsomedial nucleus of the hypothalamus; DR, dorsal nucleus raphe; IPN, interpeduncular nucleus; opt, optic tract; scp, superior cerebellar peduncles; SNr, substantia nigra reticularis; VMH, ventromedial hypothalamic nucleus.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig3-v2.jpg)\n\n**Figure 3.:** (A) Percentages of retrogradely labeled input neurons in 53 brain areas (ChAT, n = 5 mice; VGLUT2, n = 5; PV, n = 3; SOM, n = 4). Brain areas are grouped into 12 generalized, color-coded brain structures. HPF, hippocampal formation. Abbreviations of the 53 brain areas and their percentages of inputs are listed in Figure 3\u2014source data 1. Error bar, \u00b1 s.e.m. Since labeled neurons in coronal sections near the injection site were excluded from analysis (see Figure 1\u2014figure supplement 2), inputs from the pallidum are likely to be underestimated. (B) Whole-brain 3D reconstruction of the inputs to the four BF cell types. The blue-shaded area denotes the region excluded for analysis due to potential local contamination (see Figure 1\u2014figure supplement 2).\n\n![Video 1.](https://cdn.elifesciences.org/articles/13214/elife-13214-media1.mp4.jpg)\n\n**Video 1.:** Shown are data from four example brains (one for each cell type). Each red dot represents one RV-labeled presynaptic neuron. Blue, coronal sections within 850 \u00b5m from the injection site; neurons within this region were excluded from analyses to minimize contamination by the\u00a0local background (Figure 1\u2014figure supplement 2).\n\nTo facilitate data visualization at different levels of detail, we also used an interactive sunburst diagram (adapted from Allen Mouse Brain Atlas, http://www.brain-map.org/api/examples/examples/sunburst/) to represent the whole-brain distribution of inputs to each cell type (http://sleepcircuits.org/bf/). The brain structures are arranged hierarchically from inner to outer circles, and the size of each sector represents the percentage of input from the corresponding structure. The name of each structure and its input percentage can be read out by pointing the cursor, and each region of interest can be expanded with a mouse click.\n\nWhen the input distribution was analyzed at a finer spatial scale (e.g., the 6th ring of the sunburst plot), the nucleus accumbens (Mesulam and Mufson, 1984; Zaborszky and Cullinan, 1992), lateral hypothalamus (Cullinan and Zaborszky, 1991; Grove, 1988b; Mesulam and Mufson, 1984), and central nucleus of the amygdala (Grove, 1988b; Pare and Smith, 1994) were among the structures containing the highest numbers of input neurons (Figure 2). Interestingly, many close neighbors of these densely labeled structures (e.g., the basolateral nucleus of the amygdala, immediately adjacent to the central nucleus) showed very sparse or no labeling, indicating high spatial specificity of the long-range inputs. On the other hand, the input distributions were qualitatively similar between cell types, although with quantitative differences. For example, glutamatergic neurons received significantly more inputs from the lateral hypothalamus than the other cell types (P = 0.001, VGLUT2 vs. ChAT; P = 0.001, VGLUT2 vs. PV; P = 0.001, VGLUT2 vs. SOM;, one-way ANOVA and post-hoc Tukey\u2019s test), and PV+ neurons received more inputs from the nucleus accumbens (ACB) (P = 0.004, PV vs. ChAT; P = 0.003, PV vs. VGLUT2; P = 0.001, PV vs. SOM; one-way ANOVA and post-hoc Tukey\u2019s test).\n\nTo further verify the inputs revealed by RV-mediated retrograde tracing, we optogenetically tested the synaptic connections from the prefrontal cortex (PFC) and ACB (Figure 4). To verify the innervation from PFC to BF cholinergic neurons, we injected AAV (AAV-DJ-CaMKII\u03b1-hChR2-eYFP) expressing the mammalian codon-optimized channelrhodopsin-2 (hChR2) fused with enhanced yellow fluorescent protein (eYFP) in the orbital and agranular insular areas of the PFC (Figure 4\u2014figure supplement 1) in ChAT-eGFP mice and made whole-cell voltage-clamp recordings from eGFP-labeled cholinergic neurons in acute BF slices (Figure 4A). Activating the ChR2-expressing axon terminals with blue light evoked excitatory responses in all recorded BF cholinergic neurons (n = 9, Figure 4B and C), confirming the input revealed with RV tracing. To confirm the innervation from ACB, we injected Cre-inducible AAV (AAV-DJ-EF1\u03b1-FLEX-ChR2-eYFP) expressing ChR2-eYFP in ACB of GAD2-Cre mice, made whole-cell current-clamp recordings from unlabeled postsynaptic BF neurons, and used single cell reverse-transcription PCR (RT-PCR) to identify the cell type. We found that all four BF cell types received inhibitory responses from the ACB (Figure 4D and E; ChAT+: 2 out 5 showed significant responses; VGLUT2+: 2/4; PV+: 3/3; SOM+: 4/8), which is consistent with the finding of an electron microscopic double-immunolabeling study performed in rats (Zaborszky and Cullinan, 1992).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of experiment. ChR2 was expressed in excitatory neurons in the prefrontal cortex of ChAT-eGFP mice by injecting AAV-DJ-CaMKII\u03b1-hChR2-eYFP. Coronal slices of the BF were used for recording experiments. (B) Excitatory postsynaptic potentials recorded from ChAT+ neurons (under whole-cell current clamp) evoked by blue-light activation of the prefrontal cortical axons. Upper, response to a single light pulse (5 ms) in an example ChAT+ neuron; lower, responses to 10 pulses at 10 Hz recorded from a different ChAT+ neuron. (C) Summary of the\u00a0peak amplitude of the response to a single light pulse. Each circle represents data from one BF ChAT+ neuron (n = 9 neurons from 2 mice). Bar, mean \u00b1 s.e.m. (D) Diagram illustrates virus injection site in the ACB and recording site in the BF. AAV-DJ-EF1\u03b1-FLEX-ChR2-eYFP was injected into the ACB of GAD2-Cre mice and whole-cell voltage-clamp recordings (clamped at 0 volts) were made from BF neurons. Single-cell gene-expression analysis was performed after each recording session to identify the cell type of each recorded neuron. (E) Example traces of laser-evoked responses in the four BF cell types. (F) Summary of the peak current amplitude of each neuron\u2019s response (ChAT+, n = 5 neurons from 5 mice; VGLUT2+, n = 4 neurons from 4 mice; PV+, n = 3 neurons from 3 mice; SOM+, n = 8 neurons from 4 mice). Gray indicates no significant response.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Example fluorescence image of a coronal section at the virus injection site in the prefrontal cortex (PFC). (B) Example fluorescence image of the PFC axon fibers in the basal forebrain from the same experiment as shown in panel A.\n\nWe next mapped the output of each BF cell type. To label the axonal projections, we injected AAV with Cre-dependent expression of mCherry (Figure 1B) into the BF of ChAT-, VGLUT2-, PV- or SOM-Cre mice. Two to three weeks after injection, the brain tissues were processed, images were registered to the reference atlas, and labeled axons were detected (Figure 1C, see Materials and methods). After the injection site (identified by the existence of labeled cell bodies) and locations with known major fiber tracks were excluded, the projection to each brain area was quantified by the number of pixels occupied by the detected axons (Oh et al., 2014) (see Materials and methods).\n\nParallel to the broad distribution of inputs (Figure 3), we found that each BF cell type also projected to a large number of brain areas (Figure 5, Figure 6, Video 2, http://sleepcircuits.org/bf/, >95% ipsilateral). Among the 12 major brain subdivisions (Figure 6A), the hypothalamus, pallidum, and striatum received the heaviest BF projections (Grove, 1988a; Henny and Jones, 2006), while very few axons were detected in the medulla or cerebellum (Figure 6A). Analysis at finer scales revealed high spatial specificity of the projections. For example, while several cell types projected strongly to the lateral habenula (Figure 5), few axons were detected in the immediately adjacent but anatomically distinct medial habenula (Hikosaka, 2010). In addition to providing extensive inputs to the BF (Figure 2), the lateral hypothalamus was also a major recipient of BF projections (Figure 5), indicating a strong BF-hypothalamus loop that may be important for brain-state regulation (Brown et al., 2012; Jones, 2011; Saper et al., 2010). Importantly, whereas the input distributions were generally similar across BF cell types (Figure 2, Figure 3), the output patterns showed striking differences. For example, compared to the other cell types, the projection from cholinergic neurons was much stronger in the basolateral amygdala, hippocampus, and visual cortex but much weaker in the lateral hypothalamus, lateral habenula, and the ventral tegmental area (Figure 5). The different projection patterns among cell types are also apparent in the 3D whole-brain view (Figure 6B, Figure 6\u2014source data 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig5-v2.jpg)\n\n**Figure 5.:** Examples of axon projections from each of the four BF cell types to seven selected brain structures (black box in each coronal diagram). Scale bar, 250 \u00b5m. DMH, dorsomedial nucleus of the hypothalamus; IPN, interpeduncular nucleus; MH, medial habenula; SNr, substantia nigra reticularis; VMH, ventromedial hypothalamic nucleus.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig6-v2.jpg)\n\n**Figure 6.:** (A) Percentages of labeled axons in 53 brain areas (ChAT, n = 3 mice; VGLUT2, n = 3; PV, n = 3; SOM, n = 3). Error bar, \u00b1 s.e.m. Abbreviations of the 53 brain areas and their percentages of inputs are listed in Figure 6\u2014source data 1. (B) Whole-brain 3D reconstruction of axon projections from each of the four BF cell types. Note that although VGLUT2+ and PV+ neuron projections showed the\u00a0similar spatial distribution, there were fewer labeled axons from PV+ than VGLUT2+ neurons.\n\n![Video 2.](https://cdn.elifesciences.org/articles/13214/elife-13214-media2.mp4.jpg)\n\n**Video 2.:** Shown are projections averaged across all brain samples of each cell type.\n\nTo further compare the inputs and outputs between cell types, we averaged the spatial distributions across brain samples of each cell type and computed the correlation coefficient (CC) between cell types. For input distribution, the CCs between all cell types were high (Figure 7A), confirming their overall similarity observed earlier (Figure 2, Figure 3). On the other hand, when we computed the CCs between individual brain samples, we found higher CCs between samples of the same cell type (0.81 \u00b1 0.04, s.e.m.) than of different cell types (0.70 \u00b1 0.02, P = 0.01, t-test; Figure 7\u2014figure supplement 1A). This indicates that despite the overall similarity, there were genuine differences between cell types that were beyond experimental variability.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig7-v2.jpg)\n\n**Figure 7.:** (A) Matrix of correlation coefficients (CCs) between input distributions of each pair of cell types. (B) Similar to A, for output distributions. (C) CCs between input and output distributions. All CCs were computed at the spatial scale of the 12 major brain subdivisions (Figure 7\u2014source data 1). (D) Percentage of input vs. percentage of output in each region, for each of the four BF cell types. Filled circles, strongly connected brain regions contributing to the high CCs for glutamatergic and SOM+ neurons and low CCs for cholinergic and PV+ neurons in C.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13214/elife-13214-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Input. (B) Output. Note the higher CCs within the boxes along the diagonal (between samples of the same cell type) than those outside of the boxes (between samples of different cell types). The CCs exactly along the diagonal (each brain sample with itself, CC = 1) were excluded from analysis.\n\nFor output distribution, the CCs between individual samples of the same cell type were also high (0.86 \u00b1 0.05; Figure 7\u2014figure supplement 1B), indicating reproducibility of the mapping. However, most of the CCs between cell types (Figure 7B, computed after averaging across samples of the same cell type) were much lower than those for input distribution. The two lowest CCs (ChAT+ vs. VGLUT2+ and PV+ neurons) reflect the fact that while the\u00a0cholinergic neurons project strongly to structures within the cerebral cortex (including olfactory areas, isocortex, hippocampus, and cortical subplate) and weakly to the brain stem structures (thalamus, hypothalamus, and midbrain), glutamatergic and PV+ neurons (with output distributions highly similar to each other) showed complementary projection patterns (Figure 6).\n\nFinally, we computed the CC between the input and output distributions of each cell type (Figure 7C). The highest CC was found for SOM+ neurons, reflecting their strong reciprocal connections with a number of brain structures, including the hypothalamus, striatum, pallidum, and olfactory areas (Figure 7D, lower right,\u00a0Figure 7\u2014source data 1. For glutamatergic neurons, the high CC reflects their strong reciprocal connections with the hypothalamus and striatum (Figure 7D, upper right). For cholinergic and PV+ GABAergic neurons, the CCs between input and output distributions were much lower, reflecting the facts that while both cell types receive strong input from the striatum, cholinergic neurons project strongly to the cerebral cortex, and PV+ neurons to the pallidum and hypothalamus (Figure 7D, upper and lower left).\n\n## Discussion\n\nUsing virus-mediated circuit mapping, we have characterized the whole-brain distributions of BF long-range connections, available in an open-access online database (http://sleepcircuits.org/bf/). Our experiments confirmed many previously demonstrated connections, but with cell-type specificity and quantitative analyses at multiple spatial scales. For example, we found that cortical inputs (Mesulam and Mufson, 1984; Steriade and McCarley, 2005) to all four BF cell types originate primarily from the agranular insular and orbital areas of the prefrontal cortex (Figure 2). While a previous ultrastructural study failed to detect convincing synaptic contact between prefrontal axons and BF cholinergic neurons (Zaborszky et al., 1997), our RV-mediated transsynaptic tracing demonstrated extensive monosynaptic innervation, which was also validated by electrophysiological recordings (Figure 4B and C). These findings have important implications on how the prefrontal cortex may exert top-down control of neural processing through its projection to the BF (Sarter et al., 2001). A recent study showed that cholinergic neurons in the BF are strongly activated by reinforcement signals during an auditory detection task (Hangya et al., 2015). Our whole-brain mapping of their inputs provides a list of candidate neurons through which the reinforcement signals are conveyed to the BF cholinergic neurons.\n\nRegarding the outputs, we found striking differences across cell types (Figure 6). A recent study has shown that cholinergic, glutamatergic, and PV+ neurons all promote wakefulness, while SOM+ neurons promote sleep (Xu et al., 2015). The distinct projection patterns between cholinergic and glutamatergic/PV+ neurons (Figure 6) suggest that they preferentially regulate different brain functions during wakeful states. In a recent study, optogenetic activation of BF PV+ neurons was shown to enhance cortical gamma band oscillations (Kim et al., 2015). In addition to direct projections to the cortex, our study showed extensive subcortical projections of PV neurons, which may also contribute to the regulation of cortical gamma oscillations. The output distribution of SOM+ neurons, on the other hand, was highly correlated with the input distributions of all BF cell types (Figure 7C, bottom row); the broad GABAergic inhibition of these input areas by SOM+ neurons may be important for the sleep-promoting effect. Thus, while the highly convergent inputs from multiple brain areas allow a variety of sensory, motor, cognitive, and emotional signals to be integrated within the BF, the distinct projections by different cell types may enhance the versatility of the BF in coordinating diverse functions of multiple brain networks.\n\n## Materials and methods\n\n### Virus preparation\n\n#### Transsynaptic retrograde tracing\n\nTo construct AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA and AAV2-EF1\u03b1-FLEX-RG, TVA and eGFP linked by the 2A \u2018self-cleaving\u2019 peptide or rabies glycoprotein was respectively cloned into pAAV-MCS (Stratagene, La Jolla, CA) in an antisense direction flanked by a pair of canonical loxP sites and a pair of lox2272 sites. AAV particles (AAV2/2) were produced by co-transfection of packaging plasmids into HEK293T cells, and cell lysates were fractionated by iodixanol gradient ultracentrifugation. Viral particles were further purified from the crude fraction by heparin affinity column (HiTrap Heparin HP Columns; GE Healthcare, Pittsburgh, PA), desalted and concentrated with Amicon Ultra Centrifugal Filter (100\u00a0K, Millipore,\u00a0Bellerica,\u00a0MA). The genomic titer of AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA (4.4\u00a0\u00d7 1013 gc/ml) and AAV2-EF1\u03b1-FLEX-RG (2.2 \u00d7 1012 gc/ml) was estimated by quantitative PCR. eGFP-2a-TVA and rabies glycoprotein were subcloned from the AAV-TRE-HTG plasmid from L. Luo.\n\nRV-\u0394G-tdTomato was amplified in B7GG cells and pseudotyped using BHK-EnvA cells. EnvA pseudotyped rabies virus was titered (1.5 \u00d7 109 IU/ml) by infecting the 293T-TVA8000 (Narayan et al., 2003) cell line with serial dilutions of the stock virus. RV-\u0394G-tdTomato was a gift from B. Lim. B7GG cells, BHK-EnvA cells (Wickersham et al., 2007), and 293T-TVA8000 cells were gifts from E. Callaway.\n\n#### Anterograde axon tracing\n\nAAV2-EF1\u03b1-FLEX-mCherry was purchased from the UNC Vector Core (Chapel Hill, NC) and the titer was estimated to be ~1012 gc/ml.\n\n### Surgery and viral injections\n\nAll experimental procedures were approved by the Animal Care and Use Committee at the University of California, Berkeley. For the current study, we targeted the caudal portion of the BF (including the horizontal limb of the diagonal band of Broca, magnocellular preoptic nucleus, and substantia innominata) rather than the rostral nuclei (medial septum and the vertical limb of the diagonal band of Broca). For virus injection, adult (>P40) Chattm2(cre)Lowl (ChAT-Cre, JAX#006410), Slc17a6tm2(cre)Lowl (Vglut2-Cre, JAX#016963), Pvalbtm1(cre)Arbr (PV-Cre, JAX#008069), and Ssttm2.1(cre)Zjh (SOM-Cre, JAX#013044) mice were anesthetized\u00a0with ~1.5% isoflurane in oxygen (flow rate of 1L/min). A craniotomy (~0.5\u2009mm diameter) was made at 0.1\u2009mm posterior to bregma, 1.3\u2009mm lateral to midline. For anterograde axon tracing, 300\u2013400 nL of AAV (serotype 2) expressing Cre-dependent mCherry (AAV2-EF1\u03b1-FLEX-mCherry) was stereotactically injected into the BF (5.2\u2009mm from brain surface) using Nanoject II (Drummond Scientific, Broomall, PA) via a micro pipette. The following steps were taken to minimize virus leaking into the injection track: (1) The pipette opening was minimized (<20\u2009\u03bcm); (2) The injector was mounted onto a motorized manipulator to ensure slow and smooth retraction; (3) The injection started 5\u2009min after pipette insertion, and multiple 23 or 40 nl injections (13 nl/s) were made at 15\u201330\u2009s intervals. The pipette was retracted 10\u2009min after injection.\n\nFor transsynaptic retrograde tracing, 200\u2013300 nl of helper AAV (AAV2-EF1\u03b1-FLEX-eGFP-2a-TVA and AAV2-EF1\u03b1-FLEX-RG mixed at 1:1 ratio of viral particles) was injected into the BF using the same procedure as described above. Two to three weeks after helper AAV injection, RV\u0394G-tdTomato+EnvA was injected into the same location. To further ensure localized virus expression, the helper AAV injection pipette was tilted at 20 degrees from vertical while RV injection pipette was inserted vertically in the majority of experiments.\n\n### Tissue processing\n\nBrain tissue was processed according to standard procedures. In brief, two to three weeks after AAV injection (for anterograde tracing) or one week after RV injection (for retrograde tracing), mice were deeply anesthetized with isoflurane and immediately perfused intracardially with ~15\u2009ml of phosphate-buffered saline (PBS) (pH 7.2) followed by ~15\u2009ml of 4% paraformaldehyde (PFA) in PBS. Brain tissue was carefully removed, post-fixed in 4% PFA in PBS at 4\u00b0C overnight, dehydrated in 30% sucrose in PBS for 48\u2009hr, and embedded in Tissue Freezing Medium (Triangle Biomedical Sciences, Cincinnati, OH). Brains were cut in 30 or 50 \u00b5m coronal sections using a cryostat (Thermo Scientific, Waltham, MA) and mounted with VECTASHIELD mounting medium with DAPI (Vector Laboratories, Burlingame, CA) or DAPI Fluoromount-G (Southern Biotech, Birmingham, AL). One out of every three sections were imaged using 20X/0.75 objective in a high-throughput slide scanner (Nanozoomer-2.0RS, Hamamatsu, Japan) for further processing. We also imaged selected brain regions (Figures 2 and 3) using a Zeiss\u00a0(Germany) inverted AxioObserver Z1 fully motorized microscope with LSM 710 confocal scanhead, 10X/0.3 EC Plan Neofluar M277 objective or a 20X/0.8 Plan Apochromat M27 objective.\n\n### Immunostaining\n\nTo check for cell-type specific expression of rabies glycoprotein, tdTomato transgenic reporter mice (JAX#007914) were crossed to Cre-transgenic mice for each cell type and double transgenic offspring were injected with AAV2-EF1\u03b1-FLEX-RG. Alternatively, Cre-transgenic mice were injected with AAV2-EF1\u03b1-FLEX-mCherry and AAV2-EF1\u03b1-FLEX-RG.\n\nAfter making coronal sections, brain slices were washed in PBS (3 x 10\u2009min., room temperature), blocked with mouse IgG blocking reagent (Mouse on Mouse (M.O.M.) Kit, Vector Laboratories, Burlingame, CA) for 2\u2009hr at room temperature, incubated with mouse anti-rabies glycoprotein (clone 24-3F-10, EMD Millipore, Billerica, MA) with M.O.M. protein concentrate in PBST (PBS + 0.3% Triton-X100) for 18\u2009hr at room temperature, washed in PBST (3 x 20\u2009min., room temperature), incubated with Alexa-Fluor 488 or 647 donkey anti-mouse (ThermoFisher Scientific, Waltham, MA) with M.O.M protein concentrate in PBST for 3\u2009hr at room temperature, and finally washed in PBST (3 x 10\u2009min, room temperature) prior to mounting the slides.\n\n### 3D reconstruction and quantification\n\nA software package was developed in Matlab to analyze the digitized brain images. The analysis software consists of three modules: image registration, signal detection, and quantification/visualization.\n\n#### Registration module\n\nThe registration module is a reference point-based image alignment software used to align images of brain sections to the Allen Mouse Brain Atlas for further quantification and 3D reconstruction. First, we manually selected a set of reference points in both the atlas and the brain image. The module then applied several geometric transformations (translation, rotation and scaling) of the brain section to optimize the match of the reference points between the brain image and the atlas. Since histological sectioning can sometimes cause tissue compression, we allowed the scaling factors along the dorsal-ventral and medial-lateral axes to be optimized independently. Following the transformation, the match between the image and the atlas was inspected, and further adjustments were made manually if necessary. The main purpose of the manual adjustment was to correct errors generated by the registration procedure due the imperfect brain slice preparations, and it was mostly performed by research assistants not involved in the research design and unaware of the final conclusion of the study.\n\n#### Detection module\n\nThe detection module has two independent sub-modules designed for counting RV-labeled cells and detecting axons, respectively. The cell counting module records the position of manually identified tdTomato-labeled neurons in each digitized brain sections image.\n\nFor axon detection, the ridge detection method was used (http://en.wikipedia.org/wiki/Ridge_detection). The following steps were taken to maximize the detection accuracy: (1) Image ridges were computed across multiple scales to extract all possible axon-like signals from each image. In the resulting binary \u2018ridge image\u2019, the number of pixels occupied by each detected axon depends on the length but not the thickness of the axon. In addition to valid axons, the ridge image also contains many noise pixels. (2) To remove the noise pixels due to the general background in the fluorescence image, we set a threshold based on the intensity distribution of the original image, and use this as a mask to remove the noise pixels in the ridge image obtained from step (1). (3) To remove the discrete noise pixels with fluorescence intensities higher than the general background (thus not removed by step 2), we first identified pixels that are spatially contiguous in the ridge image, computed the size of each contiguous region, and removed the regions below a threshold size. Steps 2 and 3 were repeated until satisfactory detection results were achieved. (4) The results were then visually inspected and the remaining noise pixels, which were mostly artifacts introduced during brain tissue processing, were rejected manually.\n\n#### Quantification/visualization module\n\nAfter detection and registration, signals were quantified across the whole brain and projected to the 3D reference atlas for better visualization. The 3D viewer plug-in of the ImageJ software was used to animate the final 3D model.\n\nThe atlas, 3D reference mouse brain, quantification ontology, and layouts for sunburst plot were obtained from the open online resource of Allen Institute for Brain Science, licensed under the Apache License (Version 2.0). Since the number of labeled neurons or axons varied across brains, the input from each region was quantified by dividing the number of labeled neurons found in that region by the total number of labeled neurons detected >850\u2009\u03bcm from the injection site (see Figure 1\u2014figure supplement 2). The output (axon projection) to each region was quantified as the number of pixels occupied by detected axons in the cleaned ridge image (Oh et al., 2014) (see Detection module above) divided by the total number of axon-occupied pixels found in the entire brain (after excluding the injection site and locations with known major fiber tracks).\n\n### Starter cell mapping\n\nStarter cells were manually identified from the colocalization of tdTomato and eGFP signals using Nanozoomer images scanned at multiple focal planes. The starter cells were marked using the Cell Counter ImageJ plug-in, and registered to the Allen Brain Reference Atlas as described above. A starter cell heat map was generated in Python by calculating the normalized starter cell density for all samples from each cell type and applying bicubic interpolation. For each coronal section image, the cell density was binned from an anterior-posterior range of 0.24\u2009mm, centered at the listed brain slice coordinate (Figure 1\u2014figure supplement 3).\n\n### Slice recording\n\nTo validate the synaptic input from the prefrontal cortex to BF cholinergic neurons (as shown by RV-mediated input tracing), ChR2 was expressed in excitatory neurons in the prefrontal cortex of ChAT-eGFP mice (JAX#007902, P16-P18) by injecting ~500 nl of AAV-DJ-CaMKII\u03b1-hChR2-eYFP (~1013 gc/ml, Stanford Gene Vector and Virus Core, Stanford, CA) into the orbital and agranular insular areas of the PFC (2.0\u2009mm anterior to bregma, 1.5\u2009mm lateral, 2.0\u2009mm from brain surface) and recording from eGFP+ BF neurons. To validate the synaptic input from ACB, Cre-inducible ChR2-eYFP was expressed in GAD2-Cre mice (JAX#010802, P16-P18) by injecting 300\u2013400 nl of AAV-DJ-EF1\u03b1-FLEX-ChR2-eYFP (~1013 gc/ml, Stanford Gene Vector and Virus Core, Stanford, CA) into the ACB (1.5\u2009mm anterior to bregma, 0.8\u2009mm lateral, 3.6\u2009mm from brain surface) and recordings were made (one week after virus injection) from unlabeled BF neurons, which were identified after each recording via single-cell gene-expression analysis. Slice preparation, recording procedure, and single-cell gene-expression analysis were the same as described in a recent study (Xu et al., 2015).\n",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e01093fe-c05d-463e-8d57-459139b72d6f",
+      "submission_id": "8bbbb905-b750-4641-b6a1-11a204185654",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gary L Westbrook, Vollum Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13214.020](https://doi.org/10.7554/eLife.13214.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Cell Type-Specific Long-Range Connections of Basal Forebrain Circuit\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers appreciated the importance of the work but raised important issues regarding the specificity of the viral approach used. The main issue raised, as seen in Figure 1\u2014figure supplement 1, is that the virus(es) infected cells without Cre, i.e. they were leaky. Therefore, it is unclear how much of the mapping is specific. Besides quantification and better discussion of the extent of the leakage, the reviewers suggest that the study may be more suitable for publication if the mapping could be done with a more specific virus. Alternatively, or in addition, each proposed projection could be validated by expressing ChR2 in the presynaptic cell, and recording from the genetically defined postsynaptic cell. Either of these experiments would require a substantial amount of work in our opinion, and therefore, as per eLife's policy, the study cannot be accepted.\n\nReviewer #1:\n\nDo and colleagues perform a whole-brain mapping of both the inputs and outputs of the basal forebrain across its four major cell types using rabies virus. Understanding the connectivity of the basal forebrain is important and the new viral techniques used provide an unprecedented opportunity for revealing the cell-type-specific input-output logic of basal forebrain. These experiments required a lot of careful work and data analysis. The major take home message is that the inputs to all cell types are qualitatively similar but the output projections showed marked differences.\n\nI was very enthusiastic about this paper until I got to supplementary figure 1, the control experiment. What it shows is that the expression of rabiesdG-tdTomato+EnvA can occur without TVA or there is leaky expression of TVA without Cre (Figure 1B). Figure 1C shows that about half of the rabiesdG-tdTomato+EnvA is not colocalized with AAV-TVA-GFP. These results indicate a severely leaky expression that causes non-specific infection of rabies in all cell types. The authors are to be commended for showing these controls. Clearly they realize their importance and try to focus on the relative fraction of inputs between cell-types. Unfortunately, however, having a mixed starter population can alone explain why the inputs of different cell types look the same, bringing the entire study into question.\n\nOther comments:\n\n1) The authors report that subsets of ChAT cells in the basal forebrain may project to or receive projections from different brain regions. Figure 1A showed the targeting injection site is a bit posterior and lateral compared to the usual coordinates of HDB, which may lead to only partial infection of HDB. In addition, the infected ChAT and PV neurons shown in Figure 1A are significantly fewer in number than the total number of ChAT and PV neurons in HDB. The author should stain for ChAT, PV, SOM, vGlut2 and quantify whether the infection includes at least most of the HDB neurons or just part of it.\n\n2) A statement should be made with regard to whether the morphological analyses were made with the experimenter blinded to the treatment condition. This is especially important since all the quantification procedures from registration and detection module to cell counting are all manually performed or adjusted.\n\n3) One particularly important piece of data in the paper is in Figure 2\u2014figure supplement 1 showing physiological evidence for direct prefrontal inputs to cholinergic neurons. I think the authors should expand on these data and make into a full figure. There were not enough details provided to evaluate the experiment fully. The legend states the input is from \"prefrontal cortex\". Do the authors mean mPFC? Their rabies tracing data shows surprisingly little input from mPFC.\n\nReviewer #2:\n\nIn this study, the authors perform a detailed analysis of brain regions that input onto and receive outputs from four genetically defined cell-types in the basal forebrain. Using rabies-based labeling of monosynaptic inputs, they conclude that four major cell-types in the basal forebrain \u2013 PV+, SOM+, ChAT+, and VGLUT2+ neurons \u2013 receive qualitatively similar inputs, with striatum providing the main source of input. In addition, they report divergent outputs of each of these four cell-types as assessed by labeling of axons with an mCherry-expressing AAV, with ChAT+ neurons primarily projecting to the cortex, olfactory bulb, and hippocampus, PV+ neurons projecting to hypothalamus and pallidum, and both VGLUT2+ and SOM+ neurons forming reciprocal connections with the striatum and hypothalamus.\n\nThe analysis described in this study appear carefully done, and appropriate controls are shown. While the authors offer little in the way of interpretation, they have created a valuable, interactive resource that will be of great interest to other researchers interested in the basal forebrain.\n\nThere are several issues that should be addressed prior to publication. First, while the website is a valuable resource and welcome interactive supplement to the findings of the paper, there are some apparent discrepancies between the stated percentage values and the associated sunburst plot that either need to be addressed in the code or explained with better documentation or associated legends. For example, in the graphic showing inputs to ChAT cells, the \"Basic cell groups and regions\" lists 98.55% total inputs (it is understood from the legend of Figure 3\u2014figure supplement 1 that some inputs come from unnamed sub-regions, though this could be mentioned in the main text). However, The 2nd level of the sunburst plot only includes \"Brain stem\" at 28.97% and \"Cerebrum\" at 64.80% \u2013 which sum to only 93.77%, not 98.44. As result, subsequent rings represent much more of the sunburst plot than the percentage would indicate \u2013 e.g. Inputs to ChAT neurons from Cerebral nuclei make up only 42.03% of the inputs, but well more than half of the sunburst plot. At a minimum this discrepancy needs to be better explained. Ideally, the sunburst plot would include an \"un-named region\" category, so that the graphic matches the percentage.\n\nPerhaps the most striking finding of the paper is the major input to all cell-types from the striatum. To my knowledge, a major input from the striatum to the basal forebrain has not been previously described. Could this be the result of hitting starter cells in the pallidum during the rabies-assisted retrograde tracing? Confirming functional connectivity between striatal projection neurons and basal forebrain neurons of all types, as in Figure 2\u2014figure supplement 1) would be very interesting and provide a necessary control to show that neurons of the BF proper also receive striatal input. This point needs to be addressed with electrophysiology and complete reconstruction as it would represent a radical change in our understanding of the BG wiring.\n\nThere is a great degree of variability in the number of labeled presynaptic neurons in different brains. Does this correlate in any way with the number of starter cells in each mouse? Greater analysis of the number and location of starter cells for each experiment would be useful.\n\nFinally, the manuscript needs a greater discussion on the functional implications of the connectivity patterns discovered here, and the potential ways they do or do not meet expectations based on previous functional data. For example, the authors cite a recent paper showing PV+ BF neurons entrain cortical \u03b3 oscillations (Kim et al., 2015), but they show very little projection to the cortex from this population. The authors cite a recent paper (Hangya et al., 2015) that describes a recruitment of BF ChAT+ neurons by reinforcement with very long latency (~50 ms). Can the authors identify from their data an input that might explain this?\n\nReviewer #3:\n\nDo et al. revealed input and output neural pathway to four different types of neurons (cholinergic, glutamatergic, parvalbumin (PV) and somatostain (SOM)) in the basal forebrain (BF) using Cre mice and transsynaptic retrograde tracing. They claimed that input pathway to four different cell types was similar but output pathway was different. Although the results were clear and informative to understand the physiological role of BF neurons, the following points need to be revised before publication.\n\nMajor points:\n\n1) The author used cell type specific Cre recombinase-expressing mice (ChAT-Cre, VGLUT2-Cre, PV-Cre and SOM-Cre) to restrict starter cell for retrograde transsynaptic tracing. However, there is no information about specificity of Cre expression in each mouse line. How much Cre expressing neurons and which area of Cre expressing neurons were infected by rabies virus as starter cell should be provided.\n\n2) Figure 2\u2014figure supplement 1, the authors showed functional connection between prefrontal cortical (PFC) neurons and cholinergic neurons in BF. However, there is no information about feature of neurons in PFC labeled by retrograde transsynaptic tracing. In spite of this, the author used CaMKIIa promoter, which drives gene expression in glutamatergic neurons. Infected area of ChR2 expressing AAV in the PFC should be provided as well. Additionally, it is also important to show that brain area which is not innervate BF neurons from transsynaptic tracing is not functionally connected by expressing ChR2. This figure is referred only in the Discussion.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Cell Type-Specific Long-Range Connections of Basal Forebrain Circuit\" for further consideration at eLife. We apologize that this review took longer than is our goal. Your revised article has been favorably evaluated by Gary Westbrook (Senior editor), a Reviewing editor, and two reviewers, a reviewer from the original version of your manuscript and a new reviewer. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below.\n\nSummary:\n\nOverall this is nice study showing differential outputs, but largely similar inputs, from/to four different neurotransmitter-defined cell groups in the basal forebrain. The authors use optogenetics in slice recordings to confirm some of the connections identified using monosynaptic tracing with rabies virus, including a connection (from PFC to cholinergic BF neurons) that was not reported in a previous study using electron microscopy. The authors have done a good job of making the data available as a resource for subsequent investigations. The authors have made changes to the manuscript and it is definitely improved. The data showing direct cortical projections to all basal forebrain cell-types (Figure 4) is important and nice.\n\nHowever there are still concerns about the controls for cell-type specificity that need to be addressed before a decision on publication can be made. Note that points 2 and 3 are overlapping and if the control experiment works it is one experiment that shows specific expression of RG along with the cell-type-specific markers as we already know TVA is leaky.\n\n1) The control experiments described in Supplementary figure 1 are good controls to do, and the ones in wild-type mice are fine (and important). For the controls in Cre mice, however, the authors use the wrong mouse line, for no apparent reason. The authors state that the use of GAD2-Cre mice \"is likely to cause an overestimate of the exclusion zone\"; this is plausible in the case of the PV-Cre and SOM-Cre lines, but not necessarily in the case of the Vglut2-Cre ones. It is known that EnvA-enveloped rabies virus can directly (non-transsynaptically) retrogradely infect TVA-expressing neurons projecting to an injection site (Huang & Hantman 2013). In the worst case in the present study, direct retrograde infection of neurons projecting to the injection site by the TVA AAV could allow direct retrograde infection of them by the RV, in the absence of G expression. The authors should redo these controls (e.g., omitting only the RV G AAV) in the four Cre lines used for the rest of the paper. This would be very easy to do and take little time but provide a much better set of controls.\n\n2) Regarding cell-type specificity of their starter population, the references cited show nearly 100% co-localization of starter cell (TVA+ & RVG+) with Cre. For instance, Beier et al. (Cell 2015) Figure 1B and 1P shows that nearly all starter cells (yellow) are colocalized with TH. Those authors also used an anti-rabies glycoprotein to show specificity for RG expression. Watanabe-Uchida (Neuron 2012) also show that TVA expression overlaps with TH ~97%. The authors could could prove cell-type-specificity, for instance by performing immunos against one cell-type and rabies. They could show that RG expression is not leaky by injecting into wildtype mice. Perhaps better would be to inject both TC, RG and RVG into WT mice to demonstrate that they find no long-range projections.\n\n3) To prove the cell type specificity of starter cells, as shown in all the references they mention, the authors need to do the same standard experiment. Immunostain for Chat in Chat-Cre transgenic mouse which is injected by AAV-FLEX-eGFP-2a-TVA, AAV-FLEX-RG and Rabies-dG-tdTomato+EnvA in HDB, then shows the percentage of co-localization of starter cell (yellow, eGFP-TVA positive & Rabies-tdTomato positive) with Chat immuno signal. Similar strategy for other cre lines. If the author can show a high percentage of colocalization, then it is done. But if the severe leaky of TVA cause a mismatch between starter cells and Chat immunosignal, then they need to prove the cell type specificity of glycoprotein G. To prove the cell type specificity of glycoprotein G it would be good to show that immunostaining signal for G is not in other cell types, but specifically in Chat neurons of Chat-cre mice and no signal in WT mice. Similar strategy for other Cre lines.\n\n4) The concern about whether the variability of presynaptic neurons is correlated with the number of starter cells is not solved yet. There isn't much that can be done about this but it should be mentioned in the paper.\n",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "edf60db9-5ce1-4ee4-9376-7a282d374697",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C1",
+      "claim": "The basal forebrain (BF) plays key roles in sleep-wake regulation, attention, and learning/memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal forebrain (BF) plays key roles in multiple brain functions, including sleep-wake regulation, attention, and learning/memory, but the long-range connections mediating these functions remain poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to established scientific literature on BF functions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "fcf8c27b-0f94-4293-82d3-00f5d020ed9e",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C2",
+      "claim": "The long-range connections of the basal forebrain mediating its functions remain poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal forebrain (BF) plays key roles in multiple brain functions, including sleep-wake regulation, attention, and learning/memory, but the long-range connections mediating these functions remain poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field at the time of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "fc8530b6-68fc-45c2-b708-e3c3721f0a85",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C3",
+      "claim": "Four BF cell types were mapped: cholinergic, glutamatergic, parvalbumin-positive (PV+) GABAergic, and somatostatin-positive (SOM+) GABAergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we performed whole-brain mapping of both inputs and outputs of four BF cell types \u2013 cholinergic, glutamatergic, and parvalbumin-positive (PV+) and somatostatin-positive (SOM+) GABAergic neurons \u2013 in the mouse brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and cell types studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "b1910554-a578-411f-87d8-e75a78fff7ca",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C4",
+      "claim": "Rabies virus-mediated monosynaptic retrograde tracing was used to label inputs to BF cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Using rabies virus -mediated monosynaptic retrograde tracing to label the inputs and adeno-associated virus to trace axonal projections, we identified numerous brain areas connected to the BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for input tracing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "1432f0a2-3f8f-4db0-bc94-e2e46ff8d141",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C5",
+      "claim": "Adeno-associated virus was used to trace axonal projections from BF cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Using rabies virus -mediated monosynaptic retrograde tracing to label the inputs and adeno-associated virus to trace axonal projections, we identified numerous brain areas connected to the BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used for output tracing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "9cfa8f31-2cd5-4a87-a4a0-2c1e2e8f4b90",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C6",
+      "claim": "Numerous brain areas are connected to the BF.",
+      "claim_type": "EXPLICIT",
+      "source": "Using rabies virus -mediated monosynaptic retrograde tracing to label the inputs and adeno-associated virus to trace axonal projections, we identified numerous brain areas connected to the BF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "783ef0cf-4ddb-470c-af7b-2e2da98ae8fd",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C7",
+      "claim": "The inputs to different BF cell types were qualitatively similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The inputs to different cell types were qualitatively similar, but the output projections showed marked differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing input distributions across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "4474383e-0abd-49fd-84b9-853a7f2c4d36",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C8",
+      "claim": "The output projections from different BF cell types showed marked differences.",
+      "claim_type": "EXPLICIT",
+      "source": "The inputs to different cell types were qualitatively similar, but the output projections showed marked differences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing output distributions across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "420b6c27-b4ca-41e6-94ff-f6b209bd7538",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C9",
+      "claim": "The connections to glutamatergic and SOM+ neurons were strongly reciprocal.",
+      "claim_type": "EXPLICIT",
+      "source": "The connections to glutamatergic and SOM+ neurons were strongly reciprocal, while those to cholinergic and PV+ neurons were more unidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing input and output distributions for these cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "856e224c-a2a7-425c-a498-951fb1c04b15",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C10",
+      "claim": "The connections to cholinergic and PV+ neurons were more unidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "The connections to glutamatergic and SOM+ neurons were strongly reciprocal, while those to cholinergic and PV+ neurons were more unidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing input and output distributions for these cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "2e1a92f7-19f9-4163-a049-4f2caed38c2f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C11",
+      "claim": "The BF circuit has highly convergent inputs and divergent outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal the long-range wiring diagram of the BF circuit with highly convergent inputs and divergent outputs and point to both functional commonality and specialization of different BF cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the input and output mapping data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "eabea05e-f7ac-4f1e-b594-0925eb610443",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C12",
+      "claim": "Different BF cell types show both functional commonality and specialization.",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal the long-range wiring diagram of the BF circuit with highly convergent inputs and divergent outputs and point to both functional commonality and specialization of different BF cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity of inputs and differences in outputs across cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "3dc58605-8b0a-4ac1-b6c6-0f79b883886f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C13",
+      "claim": "The BF has been implicated in arousal, attention, and plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The BF has been implicated in a variety of brain functions such as arousal, attention, and plasticity (Bakin and Weinberger, 1996; Brown et al., 2012; Everitt and Robbins, 1997; Froemke et al., 2013; Hasselmo and Sarter, 2011; Jones, 2011; Lin et al., 2015; Saper et al., 2010; Sarter et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "9764ea94-0812-4c98-9e31-5cf5e019196f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C14",
+      "claim": "Dysfunction or loss of BF cholinergic neurons is an important feature of Alzheimer's disease associated with cognitive impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "The dysfunction or loss of BF cholinergic neurons is an important feature of Alzheimer's disease associated with cognitive impairment (Schliebs and Arendt, 2011; Whitehouse et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on Alzheimer's disease.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "58a4d545-52d4-4ec9-8717-f007fd5975cb",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C15",
+      "claim": "BF neurons form extensive local synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to forming extensive local synapses (Xu et al., 2015; Yang et al., 2014; Zaborszky and Duque, 2000), BF neurons receive inputs (Asanuma, 1989; Freund and Meskenaite, 1992; Grove, 1988a, Henny and Jones, 2006; Manns et al., 2001; Parent et al., 1988; Rye et al., 1984; Semba et al., 1988; Zaborszky and Cullinan, 1992) and send outputs (Cullinan and Zaborszky, 1991; Grove, 1988b; Jones and Cuello, 1989; Mesulam and Mufson, 1984; Par\u00e9 and Smith, 1994) to many other brain areas (Steriade and McCarley, 2005; Zaborszky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "14645494-814c-4a4f-9efa-0ffc3eb2effd",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C16",
+      "claim": "BF neurons receive inputs from many brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to forming extensive local synapses (Xu et al., 2015; Yang et al., 2014; Zaborszky and Duque, 2000), BF neurons receive inputs (Asanuma, 1989; Freund and Meskenaite, 1992; Grove, 1988a, Henny and Jones, 2006; Manns et al., 2001; Parent et al., 1988; Rye et al., 1984; Semba et al., 1988; Zaborszky and Cullinan, 1992) and send outputs (Cullinan and Zaborszky, 1991; Grove, 1988b; Jones and Cuello, 1989; Mesulam and Mufson, 1984; Par\u00e9 and Smith, 1994) to many other brain areas (Steriade and McCarley, 2005; Zaborszky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "2b791f92-8e7e-40ab-807b-bea4ae86ef42",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C17",
+      "claim": "BF neurons send outputs to many brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to forming extensive local synapses (Xu et al., 2015; Yang et al., 2014; Zaborszky and Duque, 2000), BF neurons receive inputs (Asanuma, 1989; Freund and Meskenaite, 1992; Grove, 1988a, Henny and Jones, 2006; Manns et al., 2001; Parent et al., 1988; Rye et al., 1984; Semba et al., 1988; Zaborszky and Cullinan, 1992) and send outputs (Cullinan and Zaborszky, 1991; Grove, 1988b; Jones and Cuello, 1989; Mesulam and Mufson, 1984; Par\u00e9 and Smith, 1994) to many other brain areas (Steriade and McCarley, 2005; Zaborszky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "56667bfb-46a6-47b2-bf24-483678ec9e69",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C18",
+      "claim": "There are three major cell types spatially intermingled in the BF: cholinergic, glutamatergic, and GABAergic.",
+      "claim_type": "EXPLICIT",
+      "source": "There are three major cell types spatially intermingled in the BF: cholinergic, glutamatergic, and GABAergic (Semba, 2000; Zaborszky et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "4764e131-adec-4e1d-8982-6a595c239807",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C19",
+      "claim": "192-IgG-saporin-mediated lesion of cholinergic neurons impaired the ability of rats to discriminate between signal and non-signal visual events in an attention task.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 192-IgG-saporin-mediated lesion of cholinergic neurons impaired the ability of rats to discriminate between signal and non-signal visual events in an attention task (McGaughy et al., 1996) and disrupted training-induced cortical map reorganization associated with motor learning (Conner et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e403a54c-a0e1-4ac5-9aaf-bd24a71d52bc",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C20",
+      "claim": "192-IgG-saporin-mediated lesion of cholinergic neurons disrupted training-induced cortical map reorganization associated with motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 192-IgG-saporin-mediated lesion of cholinergic neurons impaired the ability of rats to discriminate between signal and non-signal visual events in an attention task (McGaughy et al., 1996) and disrupted training-induced cortical map reorganization associated with motor learning (Conner et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "b5bd78aa-c4e6-4346-8b5e-e8767e6c6ebd",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C21",
+      "claim": "The activity of non-cholinergic BF neurons correlates with sustained attention.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in recent studies the activity of non-cholinergic BF neurons was found to correlate with sustained attention (Hangya et al., 2015) or to encode reward and motivational salience information (Avila and Lin, 2014; Lin and Nicolelis, 2008; Nguyen and Lin, 2014), and optogenetic activation of PV+ GABAergic neurons was shown to regulate cortical gamma oscillations (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "a3e3708c-f3f5-4570-8b65-554e5150410d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C22",
+      "claim": "Non-cholinergic BF neurons encode reward and motivational salience information.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in recent studies the activity of non-cholinergic BF neurons was found to correlate with sustained attention (Hangya et al., 2015) or to encode reward and motivational salience information (Avila and Lin, 2014; Lin and Nicolelis, 2008; Nguyen and Lin, 2014), and optogenetic activation of PV+ GABAergic neurons was shown to regulate cortical gamma oscillations (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "d8703596-c753-4efa-85e2-a4ed94e09338",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C23",
+      "claim": "Optogenetic activation of PV+ GABAergic neurons regulates cortical gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in recent studies the activity of non-cholinergic BF neurons was found to correlate with sustained attention (Hangya et al., 2015) or to encode reward and motivational salience information (Avila and Lin, 2014; Lin and Nicolelis, 2008; Nguyen and Lin, 2014), and optogenetic activation of PV+ GABAergic neurons was shown to regulate cortical gamma oscillations (Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "460e76ab-720d-49a2-8653-dd430b1f539d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C24",
+      "claim": "Cholinergic, glutamatergic, and PV+ neuron activity promotes wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study on sleep-wake control, cholinergic, glutamatergic, and PV+ neuron activity was found to promote wakefulness, while SOM+ neurons promoted sleep; these four cell types form extensive but highly specific local connections with each other for brain-state regulation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "f6696291-6fd9-464b-a60f-501739a77461",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C25",
+      "claim": "SOM+ neurons promote sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study on sleep-wake control, cholinergic, glutamatergic, and PV+ neuron activity was found to promote wakefulness, while SOM+ neurons promoted sleep; these four cell types form extensive but highly specific local connections with each other for brain-state regulation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "39b54309-8341-4833-a27e-d133786ce5bc",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C26",
+      "claim": "The four BF cell types form extensive but highly specific local connections with each other for brain-state regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study on sleep-wake control, cholinergic, glutamatergic, and PV+ neuron activity was found to promote wakefulness, while SOM+ neurons promoted sleep; these four cell types form extensive but highly specific local connections with each other for brain-state regulation (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "3aa38f21-8a12-4342-9779-42ab33cb3a9f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C27",
+      "claim": "ChAT-Cre, VGLUT2-Cre, PV-Cre, and SOM-Cre mouse lines label largely non-overlapping BF neuron populations with high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "These four Cre lines have been shown to label largely non-overlapping BF neuron populations with high specificity (Xu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "d118c2d6-b155-4f08-8c73-162bc22671cc",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C28",
+      "claim": "RV-mediated transsynaptic retrograde tracing labels monosynaptic inputs to selected starter cells with high specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify the long-range inputs to each cell type, we used RV-mediated transsynaptic retrograde tracing, which has been shown to label monosynaptic inputs to selected starter cells with high specificity (Miyamichi et al., 2011; Wall et al., 2013; Watabe-Uchida et al., 2012; Wickersham et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on the method.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e3c3472e-398f-4fb2-9c35-c3ac3c3f39e2",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C29",
+      "claim": "The expression of RG was highly cell type specific and not detected in wild-type mice not expressing Cre recombinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of RG was highly cell type specific and not detected in wild-type mice not expressing Cre recombinase (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by immunostaining data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e5423dea-8eaa-4fb1-bb10-9e33c627c282",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C30",
+      "claim": "900 \u2013 14,631 (median 7002) tdTomato-labeled presynaptic neurons were found in each brain (n = 17).",
+      "claim_type": "EXPLICIT",
+      "source": "We found 900 \u2013 14,631 (median 7002) tdTomato-labeled presynaptic neurons in each brain (n = 17), and the convergence index (ratio between the number of input cells and starter cells) ranged between 4.3 and 77.7 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the input tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "2b2bfebf-ea6f-4c20-98b4-79a3724f9ebf",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C31",
+      "claim": "The convergence index (ratio between the number of input cells and starter cells) ranged between 4.3 and 77.7.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 900 \u2013 14,631 (median 7002) tdTomato-labeled presynaptic neurons in each brain (n = 17), and the convergence index (ratio between the number of input cells and starter cells) ranged between 4.3 and 77.7 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the input tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "a5b0584e-bf9e-40dd-94b7-fdfc59e35242",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C32",
+      "claim": "The presynaptic neurons were predominantly ipsilateral to the starter population (<5% contralateral).",
+      "claim_type": "EXPLICIT",
+      "source": "The presynaptic neurons were predominantly ipsilateral to the starter population (<5% contralateral) but were distributed in a large number of brain areas (Figure 2, Figure 3, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the input tracing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "921f2f3e-148f-4252-9da3-9d8261e88a7d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C33",
+      "claim": "The striatum and hypothalamus provided the highest numbers of inputs to BF neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When the brain was divided into 12 major regions (Figure 3A), the striatum and hypothalamus provided the highest numbers of inputs, while few labeled neurons were found in the medulla or cerebellum (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantitative analysis of input distributions in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "72ecb4f0-190b-4eb7-ad5f-ce97d23f974d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C34",
+      "claim": "Few labeled input neurons were found in the medulla or cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "When the brain was divided into 12 major regions (Figure 3A), the striatum and hypothalamus provided the highest numbers of inputs, while few labeled neurons were found in the medulla or cerebellum (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the quantitative analysis of input distributions in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "b20b70e9-4d82-466c-82ac-958047685e74",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C35",
+      "claim": "The nucleus accumbens, lateral hypothalamus, and central nucleus of the amygdala were among the structures containing the highest numbers of input neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "When the input distribution was analyzed at a finer spatial scale (e.g., the 6th ring of the sunburst plot), the nucleus accumbens (Mesulam and Mufson, 1984; Zaborszky and Cullinan, 1992), lateral hypothalamus (Cullinan and Zaborszky, 1991; Grove, 1988b; Mesulam and Mufson, 1984), and central nucleus of the amygdala (Grove, 1988b; Pare and Smith, 1994) were among the structures containing the highest numbers of input neurons (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "dc5d5266-be5c-4a11-92b9-492c690f712c",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C36",
+      "claim": "Glutamatergic neurons received significantly more inputs from the lateral hypothalamus than the other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, glutamatergic neurons received significantly more inputs from the lateral hypothalamus than the other cell types (P = 0.001, VGLUT2 vs. ChAT; P = 0.001, VGLUT2 vs. PV; P = 0.001, VGLUT2 vs. SOM;, one-way ANOVA and post-hoc Tukey's test), and PV+ neurons received more inputs from the nucleus accumbens (ACB) (P = 0.004, PV vs. ChAT; P = 0.003, PV vs. VGLUT2; P = 0.001, PV vs. SOM; one-way ANOVA and post-hoc Tukey's test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistically significant finding from quantitative comparison of input distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "c0d241fa-b9a5-4c0f-ba51-35dae713e796",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C37",
+      "claim": "PV+ neurons received more inputs from the nucleus accumbens than the other cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, glutamatergic neurons received significantly more inputs from the lateral hypothalamus than the other cell types (P = 0.001, VGLUT2 vs. ChAT; P = 0.001, VGLUT2 vs. PV; P = 0.001, VGLUT2 vs. SOM;, one-way ANOVA and post-hoc Tukey's test), and PV+ neurons received more inputs from the nucleus accumbens (ACB) (P = 0.004, PV vs. ChAT; P = 0.003, PV vs. VGLUT2; P = 0.001, PV vs. SOM; one-way ANOVA and post-hoc Tukey's test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistically significant finding from quantitative comparison of input distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "8fe5858b-9477-4f06-b1da-ad03659af9e6",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C38",
+      "claim": "Activating ChR2-expressing prefrontal cortex axon terminals with blue light evoked excitatory responses in all recorded BF cholinergic neurons (n = 9).",
+      "claim_type": "EXPLICIT",
+      "source": "Activating the ChR2-expressing axon terminals with blue light evoked excitatory responses in all recorded BF cholinergic neurons (n = 9, Figure 4B and C), confirming the input revealed with RV tracing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an electrophysiological validation of the anatomical tracing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "ed1a3f3a-dbcb-4609-8f3a-ab401d07e988",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C39",
+      "claim": "All four BF cell types received inhibitory responses from the ACB.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all four BF cell types received inhibitory responses from the ACB (Figure 4D and E; ChAT+: 2 out 5 showed significant responses; VGLUT2+: 2/4; PV+: 3/3; SOM+: 4/8), which is consistent with the finding of an electron microscopic double-immunolabeling study performed in rats (Zaborszky and Cullinan, 1992).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an electrophysiological finding that validates the anatomical tracing and is consistent with prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "2220223a-c614-48a9-98dc-02f5e79dcd73",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C40",
+      "claim": "Each BF cell type projected to a large number of brain areas (>95% ipsilateral).",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel to the broad distribution of inputs (Figure 3), we found that each BF cell type also projected to a large number of brain areas (Figure 5, Figure 6, Video 2, http://sleepcircuits.org/bf/, >95% ipsilateral).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the output tracing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "71299d91-7e5e-41c5-ab14-a1ceb28785ba",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C41",
+      "claim": "Among the 12 major brain subdivisions, the hypothalamus, pallidum, and striatum received the heaviest BF projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 major brain subdivisions (Figure 6A), the hypothalamus, pallidum, and striatum received the heaviest BF projections (Grove, 1988a; Henny and Jones, 2006), while very few axons were detected in the medulla or cerebellum (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A and supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "af69ddb5-1b3a-4bd1-a5a9-d1709e032e6a",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C42",
+      "claim": "Very few BF axons were detected in the medulla or cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the 12 major brain subdivisions (Figure 6A), the hypothalamus, pallidum, and striatum received the heaviest BF projections (Grove, 1988a; Henny and Jones, 2006), while very few axons were detected in the medulla or cerebellum (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "33fc7cfb-405d-4abc-a751-48d1ae1ffa5f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C43",
+      "claim": "The lateral hypothalamus was a major recipient of BF projections.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing extensive inputs to the BF (Figure 2), the lateral hypothalamus was also a major recipient of BF projections (Figure 5), indicating a strong BF-hypothalamus loop that may be important for brain-state regulation (Brown et al., 2012; Jones, 2011; Saper et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 and the inference about the BF-hypothalamus loop is supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "c2db2be1-4390-44ce-855f-bd6bc1343e48",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C44",
+      "claim": "There is a strong BF-hypothalamus loop that may be important for brain-state regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to providing extensive inputs to the BF (Figure 2), the lateral hypothalamus was also a major recipient of BF projections (Figure 5), indicating a strong BF-hypothalamus loop that may be important for brain-state regulation (Brown et al., 2012; Jones, 2011; Saper et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the reciprocal connectivity data and supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "dca8de61-777f-4041-803e-1a47b6f4c7ee",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C45",
+      "claim": "Compared to the other cell types, the projection from cholinergic neurons was much stronger in the basolateral amygdala, hippocampus, and visual cortex but much weaker in the lateral hypothalamus, lateral habenula, and the ventral tegmental area.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, compared to the other cell types, the projection from cholinergic neurons was much stronger in the basolateral amygdala, hippocampus, and visual cortex but much weaker in the lateral hypothalamus, lateral habenula, and the ventral tegmental area (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5 comparing output patterns across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e5061496-0db4-4680-a4c5-6ece90282f02",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C46",
+      "claim": "For input distribution, the correlation coefficients between all cell types were high.",
+      "claim_type": "EXPLICIT",
+      "source": "For input distribution, the CCs between all cell types were high (Figure 7A), confirming their overall similarity observed earlier (Figure 2, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "b321d404-bbc5-4b74-ab28-7170398cd3fe",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C47",
+      "claim": "Higher correlation coefficients were found between samples of the same cell type (0.81 \u00b1 0.04) than of different cell types (0.70 \u00b1 0.02, P = 0.01) for input distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when we computed the CCs between individual brain samples, we found higher CCs between samples of the same cell type (0.81 \u00b1 0.04, s.e.m.) than of different cell types (0.70 \u00b1 0.02, P = 0.01, t-test; Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistically significant finding from quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "7574e179-964f-4319-a505-7a993c08dc89",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C48",
+      "claim": "Despite overall similarity, there were genuine differences in input distributions between cell types that were beyond experimental variability.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that despite the overall similarity, there were genuine differences between cell types that were beyond experimental variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the statistical comparison of correlation coefficients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "30aee275-1f49-423a-be27-ce01ff82f77f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C49",
+      "claim": "The correlation coefficients between individual samples of the same cell type were high (0.86 \u00b1 0.05) for output distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "For output distribution, the CCs between individual samples of the same cell type were also high (0.86 \u00b1 0.05; Figure 7\u2014figure supplement 1B), indicating reproducibility of the mapping.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measure of experimental reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "6c147bd7-c798-458c-b519-15affc0d59fb",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C50",
+      "claim": "Most of the correlation coefficients between cell types for output distribution were much lower than those for input distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of the CCs between cell types (Figure 7B, computed after averaging across samples of the same cell type) were much lower than those for input distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "a8577b69-ac1f-4d5e-b1b1-1e19f62453b2",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C51",
+      "claim": "Cholinergic neurons project strongly to structures within the cerebral cortex and weakly to the brain stem structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The two lowest CCs (ChAT+ vs. VGLUT2+ and PV+ neurons) reflect the fact that while the cholinergic neurons project strongly to structures within the cerebral cortex (including olfactory areas, isocortex, hippocampus, and cortical subplate) and weakly to the brain stem structures (thalamus, hypothalamus, and midbrain), glutamatergic and PV+ neurons (with output distributions highly similar to each other) showed complementary projection patterns (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 and explains the low correlation coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "66dc560b-4819-4781-98d2-56a0789ab768",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C52",
+      "claim": "Glutamatergic and PV+ neurons showed complementary projection patterns to cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The two lowest CCs (ChAT+ vs. VGLUT2+ and PV+ neurons) reflect the fact that while the cholinergic neurons project strongly to structures within the cerebral cortex (including olfactory areas, isocortex, hippocampus, and cortical subplate) and weakly to the brain stem structures (thalamus, hypothalamus, and midbrain), glutamatergic and PV+ neurons (with output distributions highly similar to each other) showed complementary projection patterns (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 6 and explains the low correlation coefficients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "83c0601c-f385-499a-bb8c-b42e3e8fd1d8",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C53",
+      "claim": "The highest correlation coefficient between input and output distributions was found for SOM+ neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we computed the CC between the input and output distributions of each cell type (Figure 7C). The highest CC was found for SOM+ neurons, reflecting their strong reciprocal connections with a number of brain structures, including the hypothalamus, striatum, pallidum, and olfactory areas (Figure 7D, lower right, Figure 7\u2014source data 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C and explained by the reciprocal connectivity pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "f7bd07a1-ec4a-43f8-9cc1-7d8717bec47d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C54",
+      "claim": "SOM+ neurons have strong reciprocal connections with the hypothalamus, striatum, pallidum, and olfactory areas.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest CC was found for SOM+ neurons, reflecting their strong reciprocal connections with a number of brain structures, including the hypothalamus, striatum, pallidum, and olfactory areas (Figure 7D, lower right, Figure 7\u2014source data 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "80b551a8-b3b8-4d18-9d73-1963dee907dd",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C55",
+      "claim": "Glutamatergic neurons have strong reciprocal connections with the hypothalamus and striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "For glutamatergic neurons, the high CC reflects their strong reciprocal connections with the hypothalamus and striatum (Figure 7D, upper right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "51ac2a34-ed4a-42bd-a6d6-9e3a06e089f5",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C56",
+      "claim": "For cholinergic and PV+ GABAergic neurons, the correlation coefficients between input and output distributions were much lower.",
+      "claim_type": "EXPLICIT",
+      "source": "For cholinergic and PV+ GABAergic neurons, the CCs between input and output distributions were much lower, reflecting the facts that while both cell types receive strong input from the striatum, cholinergic neurons project strongly to the cerebral cortex, and PV+ neurons to the pallidum and hypothalamus (Figure 7D, upper and lower left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7C and explained by the non-reciprocal connectivity patterns shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "24352830-9720-4d94-9d5f-d96b4e4152a1",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C57",
+      "claim": "Both cholinergic and PV+ neurons receive strong input from the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "For cholinergic and PV+ GABAergic neurons, the CCs between input and output distributions were much lower, reflecting the facts that while both cell types receive strong input from the striatum, cholinergic neurons project strongly to the cerebral cortex, and PV+ neurons to the pallidum and hypothalamus (Figure 7D, upper and lower left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "a0b545d7-3004-4818-833a-a1676c4a5525",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C58",
+      "claim": "Cholinergic neurons project strongly to the cerebral cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For cholinergic and PV+ GABAergic neurons, the CCs between input and output distributions were much lower, reflecting the facts that while both cell types receive strong input from the striatum, cholinergic neurons project strongly to the cerebral cortex, and PV+ neurons to the pallidum and hypothalamus (Figure 7D, upper and lower left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "367311a3-3725-49f0-b950-3a052a336762",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C59",
+      "claim": "PV+ neurons project strongly to the pallidum and hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "For cholinergic and PV+ GABAergic neurons, the CCs between input and output distributions were much lower, reflecting the facts that while both cell types receive strong input from the striatum, cholinergic neurons project strongly to the cerebral cortex, and PV+ neurons to the pallidum and hypothalamus (Figure 7D, upper and lower left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e35461ae-1c9c-4eac-8e08-001fbee5a4ae",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C60",
+      "claim": "Cortical inputs to all four BF cell types originate primarily from the agranular insular and orbital areas of the prefrontal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we found that cortical inputs (Mesulam and Mufson, 1984; Steriade and McCarley, 2005) to all four BF cell types originate primarily from the agranular insular and orbital areas of the prefrontal cortex (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2 and supported by citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "9698c46f-c8ce-4946-b1d8-05fdc74759c7",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C61",
+      "claim": "RV-mediated transsynaptic tracing demonstrated extensive monosynaptic innervation from prefrontal cortex to BF cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While a previous ultrastructural study failed to detect convincing synaptic contact between prefrontal axons and BF cholinergic neurons (Zaborszky et al., 1997), our RV-mediated transsynaptic tracing demonstrated extensive monosynaptic innervation, which was also validated by electrophysiological recordings (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the RV tracing data and validated by electrophysiology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "ced5e0c5-c1ab-43a3-a3ae-462a9116ed64",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C62",
+      "claim": "Cholinergic neurons in the BF are strongly activated by reinforcement signals during an auditory detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that cholinergic neurons in the BF are strongly activated by reinforcement signals during an auditory detection task (Hangya et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "bc778b07-1758-4cb2-b3f2-b5d6e3bcb63b",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C63",
+      "claim": "The whole-brain mapping of BF cholinergic neuron inputs provides a list of candidate neurons through which reinforcement signals are conveyed to the BF cholinergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our whole-brain mapping of their inputs provides a list of candidate neurons through which the reinforcement signals are conveyed to the BF cholinergic neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the input mapping data in the context of prior findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "f90f7847-b952-4d3e-8298-a43c03f869d4",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C64",
+      "claim": "The distinct projection patterns between cholinergic and glutamatergic/PV+ neurons suggest that they preferentially regulate different brain functions during wakeful states.",
+      "claim_type": "EXPLICIT",
+      "source": "The distinct projection patterns between cholinergic and glutamatergic/PV+ neurons (Figure 6) suggest that they preferentially regulate different brain functions during wakeful states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the output mapping data in the context of prior findings about their roles in wakefulness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "cc9c59e6-9ffe-4d27-91dd-1596b46ae75a",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C65",
+      "claim": "PV+ neurons have extensive subcortical projections that may contribute to the regulation of cortical gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to direct projections to the cortex, our study showed extensive subcortical projections of PV neurons, which may also contribute to the regulation of cortical gamma oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the output mapping data in the context of prior findings about PV neurons and gamma oscillations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "fc934f0c-2546-476f-ad98-d4e09a6e6127",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C66",
+      "claim": "The broad GABAergic inhibition of input areas by SOM+ neurons may be important for the sleep-promoting effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The output distribution of SOM+ neurons, on the other hand, was highly correlated with the input distributions of all BF cell types (Figure 7C, bottom row); the broad GABAergic inhibition of these input areas by SOM+ neurons may be important for the sleep-promoting effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the output mapping data in the context of prior findings about SOM+ neurons and sleep.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "2bc2d80b-a091-49bf-a30c-2e7cdfd0c8bf",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C67",
+      "claim": "The highly convergent inputs from multiple brain areas allow a variety of sensory, motor, cognitive, and emotional signals to be integrated within the BF.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the highly convergent inputs from multiple brain areas allow a variety of sensory, motor, cognitive, and emotional signals to be integrated within the BF, the distinct projections by different cell types may enhance the versatility of the BF in coordinating diverse functions of multiple brain networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the broad input distributions observed across cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "8afc4f0b-7f30-4991-90dd-9ccadd6125f9",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C68",
+      "claim": "The distinct projections by different cell types may enhance the versatility of the BF in coordinating diverse functions of multiple brain networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the highly convergent inputs from multiple brain areas allow a variety of sensory, motor, cognitive, and emotional signals to be integrated within the BF, the distinct projections by different cell types may enhance the versatility of the BF in coordinating diverse functions of multiple brain networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the divergent output patterns observed across cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "772d1142-b6e1-417d-b025-34dc424011a2",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C69",
+      "claim": "The study targeted the caudal portion of the BF (including the horizontal limb of the diagonal band of Broca, magnocellular preoptic nucleus, and substantia innominata) rather than the rostral nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "For the current study, we targeted the caudal portion of the BF (including the horizontal limb of the diagonal band of Broca, magnocellular preoptic nucleus, and substantia innominata) rather than the rostral nuclei (medial septum and the vertical limb of the diagonal band of Broca).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific anatomical targeting of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "3065c0b6-0269-414e-ac88-20c975e58fdd",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C70",
+      "claim": "Very few non-specific labeling (<30 per brain) was found at >850 \u03bcm from the injection center in control experiments without RG.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the spatial extent of the local contamination, we performed control experiments in the absence of RG and found very few non-specific labeling at >850 \u03bcm from the injection center (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from control experiments to assess technical limitations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "59c225d8-22e9-46e2-8869-583c06891f1c",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C71",
+      "claim": "Presynaptic neurons were counted only in coronal sections outside of the 850 \u03bcm exclusion zone.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, presynaptic neurons were counted only in coronal sections outside of this range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis procedure to minimize contamination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "e0a56388-1af0-4c41-8af2-dd0ce95ae704",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C72",
+      "claim": "When the brain was removed for histological processing, the olfactory bulb was often damaged, which led to a significant underestimation of labeling in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "Another technical limitation of the study is that when the brain was removed for histological processing, the olfactory bulb was often damaged, which led to a significant underestimation of labeling (both the input neurons and axon projections) in the olfactory bulb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a technical limitation of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "54233cd1-5b38-4c2a-853e-9cf7be2aa25c",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C73",
+      "claim": "There was no significant difference in the number of labeled neurons between the four cell types (P = 0.27, one-way ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the number of labeled neurons varied across brain samples, and there was no significant difference between the four cell types (P = 0.27, one-way ANOVA), we normalized the data in each area by the total number of labeled neurons in each brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical finding from comparing labeled neuron counts across cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "fe9c404c-7354-4998-a902-d1a3000dec6d",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C74",
+      "claim": "The data in each area was normalized by the total number of labeled neurons in each brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the number of labeled neurons varied across brain samples, and there was no significant difference between the four cell types (P = 0.27, one-way ANOVA), we normalized the data in each area by the total number of labeled neurons in each brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data normalization procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "0254f3b8-bc60-4e6b-9d4c-968c34fe8987",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C75",
+      "claim": "The basolateral nucleus of the amygdala, immediately adjacent to the central nucleus, showed very sparse or no labeling.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many close neighbors of these densely labeled structures (e.g., the basolateral nucleus of the amygdala, immediately adjacent to the central nucleus) showed very sparse or no labeling, indicating high spatial specificity of the long-range inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation demonstrates the spatial specificity of the input mapping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "25241d80-649a-4afe-a802-4bd28b077918",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C76",
+      "claim": "The long-range inputs to BF show high spatial specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, many close neighbors of these densely labeled structures (e.g., the basolateral nucleus of the amygdala, immediately adjacent to the central nucleus) showed very sparse or no labeling, indicating high spatial specificity of the long-range inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of differential labeling in adjacent brain structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "810bc0ae-8fce-4d14-93f0-ba605b9a153e",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C77",
+      "claim": "While several cell types projected strongly to the lateral habenula, few axons were detected in the immediately adjacent medial habenula.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, while several cell types projected strongly to the lateral habenula (Figure 5), few axons were detected in the immediately adjacent but anatomically distinct medial habenula (Hikosaka, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This observation demonstrates the spatial specificity of the output projections.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "8beac15b-b2a1-4cd3-876c-1c20a7013ef6",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "claim_id": "C78",
+      "claim": "The output projections from BF show high spatial specificity.",
+      "claim_type": "IMPLICIT",
+      "source": "For example, while several cell types projected strongly to the lateral habenula (Figure 5), few axons were detected in the immediately adjacent but anatomically distinct medial habenula (Hikosaka, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation of differential projections to adjacent brain structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c2c13f3b-4a8f-4286-909e-f171905df6ee",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully mapped inputs and outputs of four genetically defined BF cell types (cholinergic, glutamatergic, PV+, and SOM+ neurons) using rabies virus-mediated retrograde tracing for inputs and AAV-mediated anterograde tracing for outputs. The Cre lines used showed high specificity with minimal overlap, and the rabies glycoprotein expression was Cre-dependent and cell-type specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C27-C29, and C69 collectively establish the experimental design and validation of the tracing methods. The cell-type specificity is demonstrated through immunostaining (C29, Figure 1\u2014figure supplement 1), the Cre lines are validated by prior work (C27), and the methods are established techniques (C28). The targeting of the caudal BF (C69) is clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The input tracing experiments yielded 900-14,631 labeled presynaptic neurons per brain (median 7002, n=17) with convergence indices ranging from 4.3 to 77.7. Presynaptic neurons were predominantly ipsilateral (<5% contralateral). Technical controls established an 850 \u03bcm exclusion zone to minimize local contamination, and normalization procedures accounted for variability across samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C70-C74 describe quantitative results and methodological controls that are well-documented with specific numbers, statistical tests (P=0.27 for cell type comparison), and figures. The exclusion zone was empirically determined through control experiments (C70, Figure 1\u2014figure supplement 2D), and the normalization procedure (C74) appropriately addresses inter-sample variability. The acknowledgment of technical limitations (C72) demonstrates scientific rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "BF neurons receive inputs from numerous brain areas with qualitatively similar distributions across cell types. The striatum and hypothalamus provided the highest numbers of inputs, while the medulla and cerebellum showed minimal labeling. Despite overall similarity (high correlation coefficients between cell types), statistically significant differences exist between cell types (within-type CC: 0.81\u00b10.04 vs. between-type CC: 0.70\u00b10.02, P=0.01), and the inputs show high spatial specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C33-C35, C46-C48, C75-C76 are supported by quantitative data in Figures 2-3 and 7A, with appropriate statistical testing (one-way ANOVA, t-tests). The claim of qualitative similarity is substantiated by high correlation coefficients (C46), while genuine differences are demonstrated through within- vs. between-type comparisons (C47, P=0.01). The spatial specificity observation (C75-C76) is illustrated by differential labeling in adjacent structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "d1d5abd3-19d2-42b0-a6d9-f6d349904526",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Glutamatergic neurons received significantly more inputs from the lateral hypothalamus than other cell types (P=0.001 for all pairwise comparisons), and PV+ neurons received significantly more inputs from the nucleus accumbens than other cell types (P\u22640.004 for all pairwise comparisons).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 report statistically significant differences with appropriate statistical tests (one-way ANOVA with post-hoc Tukey's test) and P-values meeting significance thresholds. The specific P-values are provided for all pairwise comparisons, demonstrating rigorous statistical analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "4fb7bc98-99ce-4180-9123-5a9fc4677043",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Optogenetic validation confirmed functional connectivity from prefrontal cortex to BF cholinergic neurons (excitatory responses in all 9 recorded neurons) and from nucleus accumbens to all four BF cell types (inhibitory responses). The prefrontal cortex inputs originate primarily from agranular insular and orbital areas, and RV-mediated tracing demonstrated extensive monosynaptic innervation from prefrontal cortex to BF cholinergic neurons, contrasting with a previous ultrastructural study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C60-C61 combine anatomical tracing with electrophysiological validation (Figure 4), providing converging evidence for the connectivity patterns. The optogenetic experiments directly test synaptic connections revealed by RV tracing, with clear responses in all recorded cholinergic neurons (C38) and in multiple cell types from ACB (C39). The consistency with prior rat studies (C39) and contrast with previous findings (C61) are appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "00d8337c-da8b-48db-9ad9-877f8b34abd5",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Output projections from different BF cell types showed marked differences. Each cell type projected to numerous brain areas (>95% ipsilateral), with the hypothalamus, pallidum, and striatum receiving the heaviest projections. Cholinergic neurons showed distinct projection patterns compared to glutamatergic and PV+ neurons, projecting strongly to cerebral cortex but weakly to brainstem structures. Correlation coefficients between cell types for output distributions were much lower than for input distributions, and within-type reproducibility was high (CC=0.86\u00b10.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C40-C42, C45, C49-C52 are supported by quantitative data in Figures 5-7. The marked differences in output projections (C8) are demonstrated through low between-type correlation coefficients (C50, Figure 7B) and specific regional differences (C45, C51-C52, Figure 5-6). The high within-type reproducibility (C49) validates the experimental approach. The complementary projection patterns between cholinergic and glutamatergic/PV+ neurons are clearly shown in Figure 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "154168b9-498d-4add-90a9-f57a87bbb048",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Glutamatergic and SOM+ neurons showed strongly reciprocal connections (high input-output correlation coefficients), while cholinergic and PV+ neurons showed more unidirectional connections (low input-output correlation coefficients). SOM+ neurons had the highest input-output correlation coefficient with strong reciprocal connections to hypothalamus, striatum, pallidum, and olfactory areas. Glutamatergic neurons showed strong reciprocal connections with hypothalamus and striatum. Cholinergic and PV+ neurons both receive strong striatal input but project to different targets (cerebral cortex and pallidum/hypothalamus, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C53-C59 are supported by quantitative correlation analysis in Figure 7C-D. The reciprocal vs. unidirectional nature of connections is demonstrated through input-output correlation coefficients, with SOM+ showing the highest CC (C53) and cholinergic/PV+ showing lower CCs (C56). The specific regional patterns (C54-C55, C57-C59) are illustrated in Figure 7D with clear data points showing input vs. output percentages for each region.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "359003db-0154-4f67-8628-21141732e566",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The BF circuit exhibits highly convergent inputs and divergent outputs, with different cell types showing both functional commonality (similar inputs) and specialization (distinct outputs). The convergent inputs allow integration of diverse signals within the BF, while distinct projections by different cell types may enhance BF versatility in coordinating multiple brain networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C67-C68 represent high-level interpretations supported by the collective data on input similarity (C7, C46) and output differences (C8, C50). The convergence-divergence architecture is directly demonstrated by the experimental results. However, the functional implications (C67-C68) are inferences rather than direct experimental findings, though they are reasonable interpretations of the anatomical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "9723500a-d819-434f-8af4-8ae4dca40af0",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The lateral hypothalamus is both a major source of inputs to the BF and a major recipient of BF projections, indicating a strong reciprocal BF-hypothalamus loop that may be important for brain-state regulation. Output projections show high spatial specificity, as demonstrated by strong projections to lateral habenula but minimal projections to the adjacent medial habenula.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C77-C78 are supported by data in Figures 2, 5, and citations to prior literature on brain-state regulation. The reciprocal connectivity (C43) is directly shown in the data, and the functional inference about brain-state regulation (C44) is supported by appropriate citations. The spatial specificity (C77-C78) is clearly demonstrated by differential labeling of adjacent structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "d0210de1-daf8-4347-baca-fc4e98f67cdb",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The whole-brain input mapping provides candidate pathways for conveying reinforcement signals to BF cholinergic neurons. The distinct projection patterns suggest that cholinergic and glutamatergic/PV+ neurons preferentially regulate different brain functions during wakefulness. PV+ neurons' extensive subcortical projections may contribute to cortical gamma oscillation regulation, and SOM+ neurons' broad GABAergic inhibition of input areas may be important for sleep promotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C66 combine established findings from prior work (C62, C24-C25) with inferences from the current anatomical data. While the anatomical findings (input/output distributions) are well-supported, the functional interpretations (C63-C66) are speculative. These claims use cautious language ('may', 'suggest', 'provides candidate') indicating they are hypotheses rather than demonstrated results. The functional claims would require additional experiments (e.g., manipulation studies, functional recordings) to be fully supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    },
+    {
+      "id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c",
+      "content_id": "942caa6d-7290-4955-97f5-f3d8cd99e95b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The basal forebrain plays key roles in sleep-wake regulation, attention, learning/memory, arousal, and plasticity, with dysfunction of cholinergic neurons associated with Alzheimer's disease. BF contains three major intermingled cell types (cholinergic, glutamatergic, GABAergic) that form extensive local and long-range connections. Prior studies have shown cell-type-specific functions in attention, reward processing, gamma oscillations, and sleep-wake control, though long-range connections mediating these functions remained poorly characterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C13-C26 represent background knowledge and prior work, all supported by appropriate citations to established literature. These claims provide context for the current study and are not original findings of this manuscript. The characterization of the knowledge gap (C2) appropriately motivates the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:49:04.530316Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc8530b6-68fc-45c2-b708-e3c3721f0a85",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "b1910554-a578-411f-87d8-e75a78fff7ca",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "1432f0a2-3f8f-4db0-bc94-e2e46ff8d141",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "3aa38f21-8a12-4342-9779-42ab33cb3a9f",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "d118c2d6-b155-4f08-8c73-162bc22671cc",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "e3c3472e-398f-4fb2-9c35-c3ac3c3f39e2",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "772d1142-b6e1-417d-b025-34dc424011a2",
+      "result_id": "c2c13f3b-4a8f-4286-909e-f171905df6ee"
+    },
+    {
+      "claim_id": "e5423dea-8eaa-4fb1-bb10-9e33c627c282",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "2b2bfebf-ea6f-4c20-98b4-79a3724f9ebf",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "a5b0584e-bf9e-40dd-94b7-fdfc59e35242",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "3065c0b6-0269-414e-ac88-20c975e58fdd",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "59c225d8-22e9-46e2-8869-583c06891f1c",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "e0a56388-1af0-4c41-8af2-dd0ce95ae704",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "54233cd1-5b38-4c2a-853e-9cf7be2aa25c",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "fe9c404c-7354-4998-a902-d1a3000dec6d",
+      "result_id": "1c188fd4-2fea-4314-87a4-8bb2bfbfcbeb"
+    },
+    {
+      "claim_id": "9cfa8f31-2cd5-4a87-a4a0-2c1e2e8f4b90",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "783ef0cf-4ddb-470c-af7b-2e2da98ae8fd",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "921f2f3e-148f-4252-9da3-9d8261e88a7d",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "72ecb4f0-190b-4eb7-ad5f-ce97d23f974d",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "b20b70e9-4d82-466c-82ac-958047685e74",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "e5061496-0db4-4680-a4c5-6ece90282f02",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "b321d404-bbc5-4b74-ab28-7170398cd3fe",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "7574e179-964f-4319-a505-7a993c08dc89",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "0254f3b8-bc60-4e6b-9d4c-968c34fe8987",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "25241d80-649a-4afe-a802-4bd28b077918",
+      "result_id": "8e7ea52f-f3bf-4057-b605-d9bf2e45e87f"
+    },
+    {
+      "claim_id": "dc5d5266-be5c-4a11-92b9-492c690f712c",
+      "result_id": "d1d5abd3-19d2-42b0-a6d9-f6d349904526"
+    },
+    {
+      "claim_id": "c0d241fa-b9a5-4c0f-ba51-35dae713e796",
+      "result_id": "d1d5abd3-19d2-42b0-a6d9-f6d349904526"
+    },
+    {
+      "claim_id": "8fe5858b-9477-4f06-b1da-ad03659af9e6",
+      "result_id": "4fb7bc98-99ce-4180-9123-5a9fc4677043"
+    },
+    {
+      "claim_id": "ed1a3f3a-dbcb-4609-8f3a-ab401d07e988",
+      "result_id": "4fb7bc98-99ce-4180-9123-5a9fc4677043"
+    },
+    {
+      "claim_id": "e35461ae-1c9c-4eac-8e08-001fbee5a4ae",
+      "result_id": "4fb7bc98-99ce-4180-9123-5a9fc4677043"
+    },
+    {
+      "claim_id": "9698c46f-c8ce-4946-b1d8-05fdc74759c7",
+      "result_id": "4fb7bc98-99ce-4180-9123-5a9fc4677043"
+    },
+    {
+      "claim_id": "4474383e-0abd-49fd-84b9-853a7f2c4d36",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "2220223a-c614-48a9-98dc-02f5e79dcd73",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "71299d91-7e5e-41c5-ab14-a1ceb28785ba",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "af69ddb5-1b3a-4bd1-a5a9-d1709e032e6a",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "dca8de61-777f-4041-803e-1a47b6f4c7ee",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "30aee275-1f49-423a-be27-ce01ff82f77f",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "6c147bd7-c798-458c-b519-15affc0d59fb",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "a8577b69-ac1f-4d5e-b1b1-1e19f62453b2",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "66dc560b-4819-4781-98d2-56a0789ab768",
+      "result_id": "00d8337c-da8b-48db-9ad9-877f8b34abd5"
+    },
+    {
+      "claim_id": "420b6c27-b4ca-41e6-94ff-f6b209bd7538",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "856e224c-a2a7-425c-a498-951fb1c04b15",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "83c0601c-f385-499a-bb8c-b42e3e8fd1d8",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "f7bd07a1-ec4a-43f8-9cc1-7d8717bec47d",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "80b551a8-b3b8-4d18-9d73-1963dee907dd",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "51ac2a34-ed4a-42bd-a6d6-9e3a06e089f5",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "24352830-9720-4d94-9d5f-d96b4e4152a1",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "a0b545d7-3004-4818-833a-a1676c4a5525",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "367311a3-3725-49f0-b950-3a052a336762",
+      "result_id": "154168b9-498d-4add-90a9-f57a87bbb048"
+    },
+    {
+      "claim_id": "2e1a92f7-19f9-4163-a049-4f2caed38c2f",
+      "result_id": "359003db-0154-4f67-8628-21141732e566"
+    },
+    {
+      "claim_id": "eabea05e-f7ac-4f1e-b594-0925eb610443",
+      "result_id": "359003db-0154-4f67-8628-21141732e566"
+    },
+    {
+      "claim_id": "2bc2d80b-a091-49bf-a30c-2e7cdfd0c8bf",
+      "result_id": "359003db-0154-4f67-8628-21141732e566"
+    },
+    {
+      "claim_id": "8afc4f0b-7f30-4991-90dd-9ccadd6125f9",
+      "result_id": "359003db-0154-4f67-8628-21141732e566"
+    },
+    {
+      "claim_id": "33fc7cfb-405d-4abc-a751-48d1ae1ffa5f",
+      "result_id": "9723500a-d819-434f-8af4-8ae4dca40af0"
+    },
+    {
+      "claim_id": "c2db2be1-4390-44ce-855f-bd6bc1343e48",
+      "result_id": "9723500a-d819-434f-8af4-8ae4dca40af0"
+    },
+    {
+      "claim_id": "810bc0ae-8fce-4d14-93f0-ba605b9a153e",
+      "result_id": "9723500a-d819-434f-8af4-8ae4dca40af0"
+    },
+    {
+      "claim_id": "8beac15b-b2a1-4cd3-876c-1c20a7013ef6",
+      "result_id": "9723500a-d819-434f-8af4-8ae4dca40af0"
+    },
+    {
+      "claim_id": "ced5e0c5-c1ab-43a3-a3ae-462a9116ed64",
+      "result_id": "d0210de1-daf8-4347-baca-fc4e98f67cdb"
+    },
+    {
+      "claim_id": "bc778b07-1758-4cb2-b3f2-b5d6e3bcb63b",
+      "result_id": "d0210de1-daf8-4347-baca-fc4e98f67cdb"
+    },
+    {
+      "claim_id": "f90f7847-b952-4d3e-8298-a43c03f869d4",
+      "result_id": "d0210de1-daf8-4347-baca-fc4e98f67cdb"
+    },
+    {
+      "claim_id": "cc9c59e6-9ffe-4d27-91dd-1596b46ae75a",
+      "result_id": "d0210de1-daf8-4347-baca-fc4e98f67cdb"
+    },
+    {
+      "claim_id": "fc934f0c-2546-476f-ad98-d4e09a6e6127",
+      "result_id": "d0210de1-daf8-4347-baca-fc4e98f67cdb"
+    },
+    {
+      "claim_id": "edf60db9-5ce1-4ee4-9376-7a282d374697",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "fcf8c27b-0f94-4293-82d3-00f5d020ed9e",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "3dc58605-8b0a-4ac1-b6c6-0f79b883886f",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "9764ea94-0812-4c98-9e31-5cf5e019196f",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "58a4d545-52d4-4ec9-8717-f007fd5975cb",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "14645494-814c-4a4f-9efa-0ffc3eb2effd",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "2b791f92-8e7e-40ab-807b-bea4ae86ef42",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "56667bfb-46a6-47b2-bf24-483678ec9e69",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "4764e131-adec-4e1d-8982-6a595c239807",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "e403a54c-a0e1-4ac5-9aaf-bd24a71d52bc",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "b5bd78aa-c4e6-4346-8b5e-e8767e6c6ebd",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "a3e3708c-f3f5-4570-8b65-554e5150410d",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "d8703596-c753-4efa-85e2-a4ed94e09338",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "460e76ab-720d-49a2-8653-dd430b1f539d",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "f6696291-6fd9-464b-a60f-501739a77461",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    },
+    {
+      "claim_id": "39b54309-8341-4833-a27e-d133786ce5bc",
+      "result_id": "a588eb66-eb7b-4540-b5a5-d2ed7533b14c"
+    }
+  ],
+  "comparisons": []
+}

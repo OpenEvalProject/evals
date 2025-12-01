@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors successfully generated a transgenic mouse line (ThyAT) expressing the ATP sensor ATeam1.03YEMK under the Thy1.2 promoter, showing widespread neuronal expression including in optic nerve axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C23-C26, C94-C95, and C98-C103 collectively demonstrate successful generation and characterization of the ThyAT mouse line with pan-neuronal ATP sensor expression. The imaging data in Figure 1 and methodological descriptions provide strong evidence for robust sensor expression in neurons and axons across multiple brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The ATP sensor ATeam1.03YEMK functions properly in optic nerve axons, showing decreased FRET/CFP ratio upon ATP depletion with MB+GD that is not confounded by pH changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 and C104-C108 demonstrate sensor functionality through validation experiments showing appropriate FRET changes during ATP depletion while YFP fluorescence remains stable, indicating pH independence. The data in Figure 2 provides strong experimental support with statistical significance (p<0.001, n=19 nerves).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Different modes of energy deprivation (GD, MB, MB+GD) cause distinct kinetics of ATP and CAP decline, with ATP decreases preceding or coinciding with CAP decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C75-C77 describe the temporal dynamics of ATP and CAP changes under different metabolic challenges. The experimental data in Figure 3 demonstrates clear differences in onset times and decline rates, with appropriate sample sizes (n=4 nerves per condition) and statistical analysis supporting the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C19"
+    ],
+    "result": "Axonal glycolysis alone is insufficient to maintain ATP levels and CAPs; mitochondrial respiration is essential for axonal ATP production even at low electrical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C19 conclude that mitochondrial function is required for axonal ATP maintenance. This is supported by the differential effects of GD versus MB shown in Figure 3, where MB causes faster ATP decline than GD alone, and the observation that ATP continues to be produced under GD (presumably from glycogen) but drops rapidly when mitochondria are blocked.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C78",
+      "C79"
+    ],
+    "result": "During recovery from energy deprivation, CAP recovery precedes ATP recovery after GD, but occurs concomitantly after MB+GD, suggesting differential utilization of newly generated ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C78-C79 describe the recovery kinetics with supporting data in Figure 3F-G. The interpretation that newly generated ATP is preferentially consumed by Na+/K+-ATPases (C79) is reasonable but remains inferential. The differential recovery patterns are well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C64",
+      "C20"
+    ],
+    "result": "During high-frequency stimulation, both ATP levels and CAPs decrease in a frequency-dependent manner with strong correlation, demonstrating that CAPs can estimate axonal ATP levels under normal metabolic conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C48, C64, and C20 establish the correlation between ATP and CAP during electrical activity. Figure 4 provides quantitative data showing parallel decreases at 16, 50, and 100 Hz stimulation (n=5 nerves) with strong correlation (Figure 4E-F), supporting the conclusion that CAP is a good proxy for ATP under these conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "At glucose concentrations of 10 mM and 3.3 mM, ATP and CAP respond similarly to high-frequency stimulation, but at 2 mM glucose both parameters are substantially impaired, indicating this is below the threshold for maintaining axonal energy balance ex vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe glucose concentration effects on axonal function during HFS. Figure 4C-D shows clear differences between glucose concentrations with appropriate statistical analysis. The conclusion that 2 mM is below threshold is well-supported by the data, though this is specific to the ex vivo preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "While glucose, lactate, and pyruvate equally support CAP propagation during high-frequency stimulation, glucose maintains higher ATP levels than exogenous lactate or pyruvate, indicating glucose is superior for ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C81-C83 demonstrate differential effects on ATP versus CAP with different substrates. Figure 5A-B shows that while CAPs are maintained equally well, ATP levels are significantly lower with lactate/pyruvate (p=0.05 and p=0.01, n=3 nerves), supporting the conclusion that glucose is more efficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C21",
+      "C22",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C84",
+      "C85"
+    ],
+    "result": "Inhibition of lactate metabolism with D-lactate or AR-C155858 severely reduces ATP levels during high-frequency stimulation even in the presence of glucose, while CAPs are maintained, demonstrating that lactate metabolism is essential for axonal ATP homeostasis and revealing a 'safety window' where conduction persists despite reduced ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C21-C22, and C55-C61, C84-C85 describe the critical role of lactate metabolism. Figure 5C-F provides strong evidence with significant ATP reductions (p=0.0001 for D-lactate, p=0.0004 for AR-C155858) while CAPs remain unaffected (p=0.37), demonstrating the dissociation and supporting the 'safety window' concept. This is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The differential effects of lactate metabolism inhibition on ATP versus CAP suggest that CAP changes reflect ATP consumption while lactate transport affects ATP production, and that endogenous lactate (from glucose) is more efficient than exogenous lactate, possibly due to optimized glucose transporter expression or gap junctional coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C90 provide mechanistic interpretations of the observed dissociation between ATP and CAP. While C86-C88 offer reasonable inferences from the data, C89-C90 are explicitly speculative explanations. The proposed mechanisms are plausible but lack direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The ATeam1.03YEMK sensor has non-linear response at extended ATP concentration ranges, but physiological neuronal ATP levels (~2 mM) fall within the linear range of the sensor (KD = 1.2 mM), making it suitable for detecting changes in axonal ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 address sensor limitations and applicability. The non-linearity is acknowledged based on prior literature (C66), but the authors provide reasonable justification that basal axonal ATP is within the dynamic range based on cultured neuron data (C67) and their ability to detect changes even with mild stimulation (C68).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The spatial resolution of the imaging approach measures mean cytosolic ATP in ~30 axons near the nerve surface, while CAP recordings reflect all axons in the nerve, creating a potential mismatch in what is measured, though this represents the best current approximation for simultaneous monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 acknowledge important technical limitations of the approach. The authors transparently discuss the spatial mismatch between ATP imaging (surface axons) and CAP recording (all axons), and potential issues with substrate diffusion gradients. This honest assessment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The combined ATP imaging and electrophysiology approach is a sensitive tool for monitoring axonal energy homeostasis in real-time and could detect subtle perturbations in disease models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 summarize the utility of the developed technology. C92 is well-supported by the experimental demonstrations throughout the paper. C93 is forward-looking and speculative about future applications, but is a reasonable extrapolation from the demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "The rates of ATP drop and recovery correlate with the amplitude of ATP changes during high-frequency stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 describes a correlation shown in Figure 4\u2014figure supplement 3. This is a straightforward observation from the data showing that larger ATP changes are associated with faster kinetics of both decline and recovery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes that energy deficits are implicated in neurodegenerative diseases and myelin disorders, but direct measurement of axonal ATP during electrical activity has been impossible, motivating the development of new approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C17 provide background context from established literature about neurodegeneration, axonal vulnerability, and technical limitations. These are appropriately cited general knowledge claims that establish the rationale for the study. The gap in knowledge (C2, C13, C15, C17) is accurately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C44",
+      "C45",
+      "C62",
+      "C63",
+      "C80",
+      "C91",
+      "C96",
+      "C97"
+    ],
+    "result": "Various methodological and background claims about pH effects on fluorescence, axonal energy metabolism, CAP measurements, and evolutionary considerations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C44-C45, C62-C63, C80, C91, C96-C97 are supporting methodological details and background information appropriately cited from literature. C91 about evolutionary optimization is speculative but clearly presented as interpretation. These provide necessary context but are not primary findings.",
+    "result_type": "MINOR"
+  }
+]

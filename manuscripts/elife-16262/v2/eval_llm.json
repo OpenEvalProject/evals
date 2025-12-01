@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the biological context for NG2 cells, describing them as oligodendrocyte precursors that receive synaptic input and express voltage-gated channels, but previous studies failed to demonstrate calcium signals from synaptic stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide well-cited background establishing NG2 cell properties and the scientific gap. The claims appropriately cite prior literature (C1, C5, C7, C8, C9, C10) and acknowledge uncertainties (C11, C12) that motivate the current study. This contextual foundation is adequately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Mock postsynaptic potentials in NG2 cells can reach substantial depolarizations (up to -35 mV), and A-type K+ channels shorten these potentials above -60 mV while Na+ and A-type K+ channels balance to produce linear amplitude scaling with input strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C26 present experimental data with appropriate statistical testing (paired t-tests) and pharmacological controls (4-AP, TTX, TEA). The mock PSP approach is validated, voltage-dependence is systematically characterized, and the balanced interplay of channels is demonstrated through blocker experiments. Sample sizes are reported and results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Synaptic-like stimulation induces calcium signals in NG2 cells mediated by low-voltage activated calcium channels (R-type and T-type), not by Na+/Ca2+ exchangers or stores, with signals decaying exponentially (\u03c4=3.16s) and being reproducible over 12 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 demonstrate Ca2+ signals with comprehensive pharmacological characterization (VGCC blockers, SNX-482, TTA-P2, KB-R7943) and appropriate controls. The kinetic analysis (C33) uses proper exponential fitting, and reproducibility (C34) is demonstrated. The exclusion of alternative mechanisms (C32) strengthens the conclusion about VGCC involvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Calcium signals in NG2 cells spread rapidly throughout dendrites with constant or increasing amplitude, faster than diffusion would predict, suggesting active dendritic VGCC recruitment comparable to CA1 pyramidal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 use fast frame-scan imaging (30 Hz) to characterize spatiotemporal Ca2+ dynamics. The comparison to diffusion models (C39) and to neurons (C41) provides appropriate benchmarks. However, the inference about dendritic VGCCs (C40, C42) is reasonable but indirect\u2014direct dendritic recordings or localized pharmacology would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A-type K+ channels gate calcium signal generation in NG2 cells: blocking these channels with 4-AP increases Ca2+ response frequency, amplitude, and lowers the threshold for responses from ~1200 to ~600 quanta, with dendritic Ca2+ levels scaling linearly with input when A-type channels are blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 demonstrate the gating role of A-type K+ channels using Gaussian-distributed mock synaptic input with appropriate statistical tests (Fisher's exact test, Student's t-test, linear correlation). The threshold analysis (C47) and dose-response relationships (C48) are well-characterized. The template-fitting algorithm for Ca2+ detection adds rigor, though the detection threshold choice (3.0) could benefit from sensitivity analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Two-photon glutamate uncaging produces physiological EPSPs in NG2 dendrites that show sublinear summation, and local dendritic uncaging can boost Ca2+ signals when A-type K+ channels are blocked but not under control conditions, indicating local dendritic Ca2+ signals report synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 validate glutamate uncaging as physiological (C50) and demonstrate local dendritic integration. The use of ANOVA with post-hoc tests (Tukey HSD) is appropriate for the repeated measures design. The differential effect of uncaging in control vs 4-AP conditions (C52-C54) supports compartmentalized processing, though the small somatic voltage changes raise questions about the spatial extent of dendritic depolarization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "During repetitive stimulation (10 PSPs at 100 Hz), PSP half-width increases by 26% due to use-dependent inactivation of A-type K+ channels, leading to enhanced Ca2+ responses; blocking K+ channels with 4-AP or Cs+ significantly amplifies Ca2+ signals, and Ca2+ stores are not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 demonstrate activity-dependent plasticity with appropriate controls (4-AP group shows no broadening). Statistical tests are appropriate (Student's t-test, Wilcoxon-Mann-Whitney for non-normal Cs+ data). The inclusion of thapsigargin (C60) properly excludes store contribution. The Cs+ experiment was added during revision and appropriately analyzed with non-parametric statistics after failing normality testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Direct synaptic stimulation of NG2 cell dendrites produces small somatic EPSPs (7.1 mV) but robust local dendritic Ca2+ signals (21.1%), suggesting strong voltage attenuation and larger local dendritic depolarizations than measured at the soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 provide critical validation that synaptic transmission (not just current injection) triggers Ca2+ signals. The small sample size (n=4) is a limitation, but the consistency with uncaging results and the use of thapsigargin controls strengthen the findings. The inference about voltage attenuation (C64) is logical given the mismatch between small somatic voltage and large dendritic Ca2+ signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "NG2 cells possess a unique signal integration system distinct from neurons and other glia, with two modes: local compartmentalized dendritic integration and global integration throughout the cell, using graded Ca2+ signals to encode synaptic activity levels with slow kinetics suitable for integrating diverse input frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C75 synthesize the experimental findings into a coherent model. The distinction from neurons (C67, C68) is well-supported by data, and the dual integration modes (C66, C75) are demonstrated experimentally. However, some claims are speculative about functional significance for myelination (C71), which is acknowledged in the evidence type. The comparison to other glial cells (C74) relies more on literature than direct experimental comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study used postnatal 7-15 day old NG2-DsRed transgenic mice, with immunohistochemical verification of NG2 identity, and characterized basic electrophysiological properties (average Rin: 251.4 M\u03a9, resting potential: -83.8 mV) across 132 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe methodological details with appropriate characterization. The immunohistochemical verification (C77, n=12) validates the transgenic reporter, though this represents only ~9% of recorded cells. The large sample size (n=132) and reporting of ranges for input resistance provide transparency about cell variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose that brief action potential trains (50-100 ms) should effectively inactivate A-type channels and enable Ca2+ signals, that synaptically-induced Ca2+ signaling is suited for activity-dependent myelination, with local signals potentially stabilizing axon contacts and global signals triggering cellular responses like division or differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C88 are largely speculative proposals about functional significance (marked as SPECULATION in evidence types). While the predictions about A-type channel inactivation (C80) are grounded in cited kinetics data, the connections to myelination (C82, C83, C84, C88) extend beyond the experimental evidence. These are reasonable hypotheses but require future experimental validation in myelination contexts.",
+    "result_type": "MAJOR"
+  }
+]

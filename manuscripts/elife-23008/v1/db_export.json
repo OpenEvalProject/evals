@@ -1,0 +1,1914 @@
+{
+  "submission": {
+    "id": "2777f2ec-77f7-48d9-bcf1-828e9455bb0a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:39:04.040623Z",
+    "updated_at": "2025-11-30T23:39:04.040623Z"
+  },
+  "content": [
+    {
+      "id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "submission_id": "2777f2ec-77f7-48d9-bcf1-828e9455bb0a",
+      "content_type": "manuscript",
+      "content_text": "# Subcellular tracking reveals the location of dimethylsulfoniopropionate in microalgae and visualises its uptake by marine bacteria\n\n## Authors\n\n- Jean-Baptiste Raina<sup>1</sup> ([ORCID: 0000-0002-7508-0004](https://orcid.org/0000-0002-7508-0004)) \u2020\n- Peta L Clode<sup>6</sup>\n- Soshan Cheong<sup>8</sup>\n- Jeremy Bougoure<sup>6</sup>\n- Matt R Kilburn<sup>6</sup>\n- Anthony Reeder<sup>6</sup>\n- Sylvain For\u00eat<sup>4</sup> ([ORCID: 0000-0002-4145-9243](https://orcid.org/0000-0002-4145-9243))\n- Michael Stat<sup>11</sup>\n- Victor Beltran<sup>2</sup>\n- Peter Thomas-Hall<sup>2</sup>\n- Dianne Tapiolas<sup>2</sup>\n- Cherie M Motti<sup>1</sup>\n- Bill Gong<sup>8</sup>\n- Mathieu Pernice<sup>3</sup>\n- Christopher E Marjo<sup>8</sup>\n- Justin R Seymour<sup>3</sup>\n- Bette L Willis<sup>1</sup>\n- David G Bourne<sup>2</sup>\n\n### Affiliations\n\n1. AIMS@JCU James Cook University Townsville Australia\n2. Australian Institute of Marine Science Townsville Australia\n3. Climate Change Cluster University of Technology Sydney Sydney Australia\n4. ARC Centre of Excellence for Coral Reef Studies James Cook University Townsville Australia\n5. College of Science and Engineering James Cook University Townsville Australia\n6. The Centre for Microscopy Characterisation and Analysis The University of Western Australia Crawley Australia\n7. Oceans Institute The University of Western Australia Crawley Australia\n8. Mark Wainwright Analytical Centre University of New South Wales Kensington Australia\n9. School of Earth and Environment The University of Western Australia Crawley Australia\n10. Research School of Biology Australian National University Canberra Australia\n11. Trace and Environmental DNA Laboratory, Department of Environment and Agriculture Curtin University Perth Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nPhytoplankton-bacteria interactions drive the surface ocean sulfur cycle and local climatic processes through the production and exchange of a key compound: dimethylsulfoniopropionate (DMSP). Despite their large-scale implications, these interactions remain unquantified at the cellular-scale. Here we use secondary-ion mass spectrometry to provide the first visualization of DMSP at sub-cellular levels, tracking the fate of a stable sulfur isotope (34S) from its incorporation by microalgae as inorganic sulfate to its biosynthesis and exudation as DMSP, and finally its uptake and degradation by bacteria. Our results identify for the first time the storage locations of DMSP in microalgae, with high enrichments present in vacuoles, cytoplasm and chloroplasts. In addition, we quantify DMSP incorporation at the single-cell level, with DMSP-degrading bacteria containing seven times more 34S than the control strain. This study provides an unprecedented methodology to label, retain, and image small diffusible molecules, which can be transposable to other symbiotic systems.\n\n## Introduction\n\nInteractions between marine phytoplankton and bacteria constitute an important ecological linkage in the oceans (Cole, 1982), controlling chemical cycling and energy transfer to higher trophic levels (Azam and Malfatti, 2007; Falkowski et al., 2008). The cycling of sulfur, an essential element for living organisms, depends on the metabolic interactions between these two Kingdoms (Sievert et al., 2007). A striking example is the production of the sulfur compound dimethylsulfoniopropionate (DMSP) by phytoplankton and its degradation by marine bacteria (and phytoplankton themselves) into the climate-active gas dimethylsulfide (DMS) (Alcolombri et al., 2015; Ayers and Gras, 1991; Howard et al., 2006; Todd et al., 2007). The subsequent release of DMS into the atmosphere contributes 90% of biogenic sulfur emissions and initiates the formation and growth of aerosols, thereby enhancing cloud formation and sunlight scattering (Ayers and Gras, 1991). This highlights how chemical interactions occurring between marine microorganisms across micrometre-scales can ultimately have large-scale impacts on climate (Sievert et al., 2007; Sim\u00f3, 2001). However, direct measurements of these metabolic interactions, critical to the global sulfur cycling, have not previously been possible at the scale where they occur, the sub-cellular level.\n\nIn the surface ocean, the largest quantities of sulfur are present as dissolved sulfate, which constitutes the main sulfur source for phytoplankton (Sievert et al., 2007; Stefels, 2000). Most of the sulfur derived from sulfate uptake is converted by these organisms into sulfur-based amino acids, and a fraction is ultimately used to synthesise DMSP (Stefels, 2000) (Figure 1). Globally, more than a billion tons of DMSP are produced every year, which has been estimated to represent up to 10% of the amount of carbon fixed by phytoplankton (Archer et al., 2001; Sim\u00f3 et al., 2002). However, despite the central role played by DMSP in the marine sulfur cycle, a mechanistic understanding of the biochemistry at the heart of DMSP cycling is currently lacking. Previous studies in higher plants provided strong evidence that DMSP biosynthesis starts in the cytosol and ends in the chloroplast (Trossat et al., 1996, 1998). However, DMSP biosynthesis occur through a different route in phytoplankton (Stefels, 2000), and we still do not know: (1) where this compound is produced and stored in phytoplankton cells; (2) what are its functions; and (3) how efficiently it is transferred from phytoplankton producers to bacterial degraders.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig1-v1.jpg)\n\n**Figure 1.:** Sulfate (SO42-) taken up from seawater by Symbiodinium is converted to sulfite (SO32-), sulfur-based amino acids and finally DMSP. Some DMSP molecules are then exuded from Symbiodinium cells and can be degraded by a variety of marine bacteria (sulfur atoms (S) and bacterial cells that have taken up sulfur are in red). The biosynthetic pathway presented here is simplified, for more details see Stefels (Stefels, 2000).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Symbiodinium cells were incubated into artificial sea water (ASW) containing either 34SO42- (red, 34S-ASW) or natSO42- (green, natS-ASW control). In treatments (1\u20133), Symbiodinium cells were incubated in 34S-ASW; after 18 days all treatments were rinsed three times with natS-ASW (in order to remove all residual 34SO42- from the medium) and inoculated with different bacterial strains for six hours. Treatment (1) was inoculated with the DMSP-degrading bacterium Pseudovibrio sp P12; treatment (2) with Escherichia coli W (ATCC 9637), a bacterium incapable of utilizing DMSP; treatment (3) acted as a negative control with no bacteria added. Furthermore, an additional control was used (4), where the Symbiodinium cells were never in contact with enriched levels of 34S nor inoculated with bacteria.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The round symbols present the number of cells alive while the square symbols represent the number of dead cells (as determined with Evans Blue stain).\n\nWe used the dinoflagellate Symbiodinium, a taxon that includes some of the most prodigious DMSP producers on the planet (Caruana and Malin, 2014; Saltzman\u00a0and\u00a0Cooper, 1989). Symbiodinium cells can be free-living in the water column, but are primarily known for the endosymbiotic associations they form with tropical cnidarians that fuel the extremely high productivity of coral reef ecosystems (Dubinsky, 1990). Populations of reef-building corals are major DMSP production hotspots (Broadbent et al., 2002; Raina et al., 2013) and their contribution to the marine sulfur cycle is disproportionately large given their relatively restricted distributions (Raina et al., 2013; Fischer and Jones, 2012). In this ecosystem, DMSP constitutes an important source of carbon and sulfur for the diverse and highly abundant bacterial communities harboured by corals (Raina et al., 2010). Here we tracked and quantified the incorporation of a stable isotope of sulfur into Symbiodinium and its subsequent transfer to associated bacteria. To provide the first sub-cellular imaging and quantification of DMSP, we used a unique suite of analytical techniques, taking advantage of: (i) the spatial resolution afforded by nano-scale secondary ion mass spectrometry (NanoSIMS), (ii) the molecular characterization enabled by Time-of-Fight secondary ion mass spectrometry (ToF-SIMS), and (iii) the precise quantification allowed by nuclear magnetic resonance (NMR) and liquid chromatography-mass spectrometry (LC-MS).\n\n## Results and discussion\n\nWe used the rare isotope 34S as a tracer to follow the exchange of sulfur between marine micro-organisms at the single-cell level. Symbiodinium cells were incubated for 18 days in artificial seawater containing 34S-labelled sulfate as the sole sulfur source (34S-ASW; Figure 1\u2014figure supplement 1). We relied exclusively on the Symbiodinium cellular machinery to biosynthesise and exude 34S-labelled DMSP following incubation with the 34S-sulfate precursor. To prevent direct uptake of 34S-sulfate by bacteria, all Symbiodinium cultures were rinsed thoroughly and re-inoculated into ASW containing sulfate in natural isotopic abundance (natS-ASW) before addition of bacterial cells. Two different bacterial strains were added to the rinsed cultures and co-incubated for six hours: (i) Pseudovibrio sp. P12, a DMSP-degrading bacterium isolated from healthy corals (Raina et al., 2016), selected because of its worldwide distribution in coastal waters (Shieh et al., 2004) and its abundance in benthic invertebrate communities (Bondarev et al., 2013); and (ii) a control, Escherichia coli W (ATCC 9637), a widely studied and fully sequenced strain, able to grow in seawater and not capable of degrading DMSP. To precisely localise bacterial cells, both strains were pre-grown in a medium enriched in the rare stable isotope 15N (in amino-acids and ammonium form). The cellular incorporation of the stable isotope tracers (34S and 15N) was identified by an increase in the sulfur (34S/32S) and/or nitrogen (15N/14N) ratio above their natural abundance values (0.043 and 0.0037, respectively).\n\nSymbiodinium cell numbers doubled during the incubation period in the medium containing 34S-labelled sulfate, reaching approximately 2.9 million cells ml\u22121 after 18 days (Figure 1\u2014figure supplement 2). LC-MS analyses carried out at the end of the experiment on extracted Symbiodinium cells confirmed that all cultures initially incubated with 34S-sulfate were highly enriched in 34S-DMSP, which represented up to 46% of the DMSP molecules present in samples analysed (Figure 2, Figure 2\u2014source data 1). This result confirms that sulfur atoms used by dinoflagellates to synthesise DMSP can originate from the uptake of inorganic sulfate derived from seawater (Stefels, 2000). In addition to 34S-DMSP, unexpectedly high levels of 32S-DMSP (ranging from 54% to 66% of total DMSP) were recorded in Symbiodinium cultures (Figure 2\u2014source data 1). The presence of these high levels of 32S-DMSP can be explained by a combination of two factors: (i) Symbiodinium cells density only doubled during the incubation phase in 34S-ASW, retaining a large fraction of the natural pool of 32S initially present in the starting culture prior to the incubation; (ii) new 32S-DMSP might have been synthesised during the six hours immediately preceding sampling, when Symbiodinium cells were incubated in natS-ASW medium. Although high concentrations of DMSP were present in the methanolic\u00a0Symbiodinium cells extract\u00a0(Figure 2\u2014source data 1), sulfur containing amino acids (methionine and cysteine) were not detected by LC-MS or 1H NMR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig2-v1.jpg)\n\n**Figure 2.:** (a) incubated with natS (treatment 4, see Figure 1\u2014figure supplement 1); (b) incubated with 34S (treatment 3, see Figure 1\u2014figure supplement 1). For more detailed spectra, see Figure 2\u2014figure supplement 2; for absolute DMSP abundance, see Figure 2\u2014source data 1. (c) Positive-ion ToF-SIMS spectrum of Symbiodinium incubated with 34S (treatment 3, see Figure 1\u2014figure supplement 1) after resin embedding (34S-DMSP represented 46% of total DMSP counts). For comparison between treatment and control spectra, see Figure 2\u2014figure supplement 1; (d) Negative-ion ToF-SIMS images showing the distribution of CN-, HS- and 34S- species over a Symbiodinium cell (treatment 3, see Figure 1\u2014figure supplement 1) enriched in 34S. Field of view is 20\u00a0\u00d7\u00a020 \u03bcm2 (lateral resolution is\u00a0~300 nm).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Spectra in (b) and (c) were arbitrarily scaled such that the 32S-DMSP peaks have similar intensities. The areas under the peaks of 34S-DMSP (red) normalised to that of 32S-DMSP (green) are 0.26 and 0.91 in (b) and (c), respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** For each spectrum, the number on the right hand side refer to: (i) TOF MS ES+ time-of-flight mass spectrometer and electrospray ionisation positive mode; (ii) 137.04 or 135.04 being the mass of the ion investigated (with a range of\u00a0\u00b10.3 Da); (iii) the ion count detected for the ion investigated. Note: the slight difference in retention time between (a, b and c) would be an effect of temperature change in the laboratory.\n\nUp to 10% of the carbon fixed by photosynthetic algae is used for the production of DMSP (Sievert et al., 2007; Archer et al., 2001; Sim\u00f3 et al., 2002), which represents a major energy investment for these organisms and strongly suggests that this compound plays a central function in algal cells. To understand more precisely the functional role of DMSP, we used two SIMS approaches to infer its location within cells. To effectively prevent the\u00a0loss of DMSP from the cells, the entire sampling procedure leading to SIMS analyses had to be water-free, with all steps performed under strict anhydrous conditions. For this, we used cryopreservation techniques followed by freeze substitution in an acrolein-ether mixture. This method has routinely been used to successfully preserve cellular ions and compounds in a variety of systems (Altus and Canny, 1985; Ashford et al., 1999; Kaiser et al., 2015; Marshall et al., 2007; Mostaert et al., 1996), with the acrolein stabilizing and preserving cellular proteins, nucleic and fatty acids through cross linking, while the low temperature, anhydrous conditions ensure preservation and retention of diffusible ions and water-soluble molecules (such as DMSP). The inclusion of acrolein ensures excellent cell structural preservation at a\u00a0low temperature, which is required for high resolution NanoSIMS analyses (Kaiser et al., 2015; Marshall, 1980).\n\nToF-SIMS revealed that 34S-DMSP was present and abundant in the preserved cells following resin embedding, with a\u00a0ratio of 34S-DMSP/32S-DMSP matching the bulk analyses carried out with LC-MS prior to embedding (Figure 2c\u2013d, Figure 2\u2014figure supplement 2). NanoSIMS analysis revealed that Symbiodinium exposed to 34S-labelled sulfate were nine times more enriched in 34S than the cells in the control (34S/32S ratio in 34S-ASW treatments: 0.391\u00a0\u00b1\u00a00.046, compared to natS-ASW controls 0.044\u00a0\u00b1\u00a00.001 [Figure 4\u2014figure supplement 1]). Furthermore, substantial spatial variability in 34S enrichment was detected within Symbiodinium cells. Relatively low level of enrichments were detected in the nucleus (34S/32S: 0.087\u00a0\u00b1\u00a00.004) which might correspond to the presence of 34S-labelled amino-acids in the histone-like proteins that condense Symbiodinium DNA into chromosomes (Shoguchi et al., 2013) (Figure 3). Much higher enrichment levels were detected in vacuoles (34S/32S: 0.337\u00a0\u00b1\u00a00.011), chloroplasts (34S/32S: 0.384\u00a0\u00b1\u00a00.020) and cytoplasm (34S/32S: 0.451\u00a0\u00b1\u00a00.025); which means that the enrichment in these cellular structures was 7.7, 8.8 and 10.3 times over the natural abundance levels (Figure 3). However, the largest 34S enrichment was observed in small hotspots often observed near the Symbiodinium cell periphery (34S/32S: 0.971\u00a0\u00b1\u00a00.059; Figure 3), reaching more than 22 times the natural abundance level. Based on their small size and their high 34S enrichment, these hotpots are likely storage droplets containing sulfolipids, a group of sulfur compounds known to accumulate in Symbiodinium (Garrett et al., 2013; Yuyama et al., 2016). Lipid droplets of similar sizes and locations can be observed in these cells using electron microscopy (Figure 3\u2014figure supplement 1). We were not able to detect methionine or cysteine using LC-MS or ToF-SIMS, which suggest that the intracellular concentration of these sulfur based amino-acids was relatively low. In contrast, DMSP is known to be by far the most abundant organic sulfur compound present in dinoflagellate cells (Matrai and Keller, 1994), representing more than 50% of the total organic sulfur in these organisms (Matrai and Keller, 1994). DMSP was the only organic sulfur compound we were able to detect in the Symbiodinium cells (through LC-MS, 1H NMR and ToF-SIMS), suggesting that most of the remaining 34S signal measured in Symbiodinium cells with NanoSIMS is highly likely originating from DMSP.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig3-v1.jpg)\n\n**Figure 3.:** (a and b) 12C14N/12C2 mass images showing cellular structures. (c and d) 34S/32S ratio images of the same cells, shown as Hue Saturation Intensity (HSI) images where the colour scale indicates the value of the 34S/32S ratio, with natural abundance in blue, changing to pink with increasing 34S levels. (e) Isotope ratio of 34S/32S in different cellular regions (nucleus n\u00a0=\u00a010; vacuole n\u00a0=\u00a03; chloroplast n\u00a0=\u00a035; cytoplasm n\u00a0=\u00a012; hotspot n\u00a0=\u00a020; error bar: SE; source data available: Figure 3\u2014source data 1). The dashed blue line represents the natural 34S abundance recorded in the control samples. nu: nucleus; ch: chloroplast; py: pyrenoid; ua: uric acid storage; v: vacuole; cy: cytoplasm; li: sulfolipids. Scale bars: 1 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** nu: nucleus; py: pyrenoid; ua: uric acid storage; li: lipids. Scale bars: 1 \u00b5m.\n\nDMSP is an effective scavenger of reactive oxygen species (ROS), particularly hydroxyl radicals (\u2022OH) (Sunda et al., 2002). The in vivo half-life of \u2022OH is 10\u22129 seconds (Sies, 1993), which implies that these highly reactive molecules can damage lipids, nucleic acids, amino-acids or carbohydrates present in their direct vicinity. To be an effective antioxidant, a molecule needs not only to be able to scavenge ROS, but also to be located close to their source. Although the capacity of DMSP to detoxify ROS is established (Sunda et al., 2002), it has not been previously possible to ascertain its specific cellular function because its location is still unknown. If some DMSP is located in the cytoplasm, as suggested by our NanoSIMS data, it will be ideally localised to act as an osmolyte (Kiene\u00a0et\u00a0al., 1996). Furthermore, the presence of strong 34S signals in and around chloroplasts, where ROS are formed, support its role as an antioxidant (Sunda et al., 2002).\n\nFollowing synthesis by phytoplankton, DMSP constitutes an important carbon and sulfur source for heterotrophic marine bacteria, which can either demethylate the compound and incorporate its sulfur into proteins or cleave it to produce DMS (Curson et al., 2011). At the termination of the experiment, total DMSP concentrations in Symbiodinium cells inoculated with the DMSP-degrading bacterium Pseudovibrio sp. P12 were 31% lower relative to those containing no bacteria or bacteria unable to degrade DMSP (Figure 2\u2014source data 1). As Symbiodinium abundance did not differ between the treatments (Figure 1\u2014figure supplement 2), the lower DMSP concentrations recorded are likely a consequence of the presence of Pseudovibrio cells able to degrade this compound. We sequenced the genome of Pseudovibrio sp. P12, revealing that this bacterium harbours a complete DMSP cleavage pathway, including a DMSP acyl-CoA transferase (encoded by dddD), a DMSP transporter (dddT) and the downstream catabolic enzymes (dddB-C) (Todd et al., 2007; Raina et al., 2016). Further analyses using NMR revealed that this DMSP degradation pathway was functional, enabling this strain to convert high concentrations of DMSP into DMS (Raina et al., 2016). In addition, Pseudovibrio sp. P12 harbours homologues of genes involved in the demethylation pathway (dmdA-B-C-D), though these genes have a\u00a0relatively low sequence identity (24%, 30%, 43% and 32%, respectively) (Raina et al., 2016) to the genes originally identified in Ruegeria pomeroyi DSS-3 (Reisch et al., 2011).\n\nBacteria-sized 15N hotspots localised outside Symbiodinium cells in NanoSIMS images were accurately identified as inoculated bacterial cells based on their unique nitrogen isotopic signatures (1151-fold increase on average over natural abundance, n\u00a0=\u00a079, Figure 4\u2014figure supplement 1). Notably, within the Pseudovibrio treatment, the position of these 15N hotspots correlated exactly with 34S hotspots (Figure 4), which were characterised by a 3.3-fold increase in the 34S/32S ratio over natural abundance (n\u00a0=\u00a060, Figure 4h). These observations confirmed that Pseudovibrio cells assimilated 34S-labelled Symbiodinium-derived metabolites. A 34% increase was also recorded in the mean 34S/32S ratio of E. coli cells (0.058\u00a0\u00b1\u00a00.002; n\u00a0=\u00a019), which are unable to degrade DMSP (compared to controls: 0.0438, Figure 4h). This enrichment, significantly higher than the expected natural abundance levels (t-Test, n\u00a0=\u00a019, t\u00a0=\u00a09.227, *p<0.001), can be explained by: (i) the capacity of E. coli to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant (Cosquer et al., 1999); (ii) the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine, which occur at a ratio of 8.2\u00a0\u00b1\u00a02.6 per 1000 amino acid residues in these dinoflagellates (Markell and Trench, 1993). In contrast, the high 34S enrichment recorded in Pseudovibrio cells, together with the significant decrease of particulate DMSP recorded in Pseudovibrio-inoculated treatments (Figure 4i), are likely due to the incorporation and degradation of DMSP. A comparison of 34S uptake between the two bacterial strains further highlights differences in their capacity to metabolise DMSP; Pseudovibrio incorporated seven\u00a0times more sulfur than E. coli during the six-hours incubation (Pseudovibrio: specific uptake of 6.4\u00a0\u00b1\u00a00.3 ng S mg\u22121 of dry weight, n\u00a0=\u00a060; E. coli: 0.9\u00a0\u00b1\u00a00.1 ng S mg\u22121 of dry weight, n\u00a0=\u00a019). However, enzymatic cleavage of 34S-DMSP into volatile 34S-DMS, which diffuses out of Pseudovibrio cells and is therefore not captured by our NanoSIMS measurements, are likely to have caused an underestimation of the amount of sulfur cycled by this bacterium.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig4-v1.jpg)\n\n**Figure 4.:** (a) Timeline of the experiment. (b, c and d) 12C15N/12C14N mass images showing the presence of 15N enriched bacterial cells. (e, f and g) 34S/32S ratio image of the same regions. These mass images are shown as HSI images where the colour scale indicates the value of the stable isotope ratios, with natural abundance in blue, changing to pink with increasing 15N or 34S levels. (b, c, e and f) Symbiodinium cultures were inoculated with the DMSP-degrading bacterium Pseudovibrio sp. P12 (treatment 1). (d and g) Symbiodinium cultures were inoculated with Escherichia coli (treatment 2). White arrows indicate bacteria. (h) Isotope ratio of 34S/32S in bacteria, Pseudovibrio cells were significantly more enriched than E. coli (t-Test, n\u00a0=\u00a060, t\u00a0=\u00a09.021, *p<0.001, error bars: SE). The dashed blue line represents the natural 34S abundance recorded in the control samples. (i) Total particulate DMSP concentration in Symbiodinium inoculated with Pseudovibrio sp. or E. coli (t-Test, n\u00a0=\u00a03, t\u00a0=\u00a09.908, *p<0.001, error bar: SE). Source data available: Figure 4\u2014source data 1. Note: two regions of interest were merged to create Figure 4c due to stage-shifting errors during sequential acquisition of N and S data. Scale bars\u00a0=\u00a03 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23008/elife-23008-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The dashed lines represent the natural 15N and 34S abundance measured in the controls (0.0037 and 0.0438, respectively). 15N/14N of the inoculated bacterial cells was 4.2243\u00a0\u00b1\u00a00.1886 on average, compared to 0.0037\u00a0\u00b1\u00a08.29E-06 recorded in the controls. Source data available: Figure 4\u2014source data 1. Note: only inoculated bacteria were incubated in 15N. Error bars = SE.\n\nThe marine sulfur cycle is a fundamental driver of atmospheric chemistry and climatic processes, yet its global influence is the product of unquantified cellular interactions between microorganisms. Here we used two SIMS approaches to directly visualise the accumulation and subsequent transfer of DMSP between marine microalgae and bacteria with unprecedented sub-cellular resolution. We applied a method that enables the preservation of water-soluble compounds, such as DMSP, in samples. This procedure, applicable to any system, may serve as a template to study the sub-cellular localization and identification of other small and highly diffusible molecules. In addition, similarly to other recent stable isotope approaches (Stefels et al., 2009), our method may be used to quantify the production rate of DMSP at the single cell level. We confirmed that 34S-DMSP was the main organic sulfur compound within the algal cells\u00a0and we subsequently localised large quantities of the sulfur tracer 34S in algal vacuole, cytoplasm and chloroplasts. This strongly indicates that the\u00a0relative concentrations of DMSP are higher in these key cellular locations, providing corroborative evidence for its functional role in mitigating both osmotic and oxidative stresses. Taken together, we have demonstrated that it is possible to image and quantify DMSP in phytoplankton and their associated bacteria at the sub-cellular scale. These methods open the way to further studies resolving the role of DMSP in phytoplankton and its contribution to phytoplankton-bacteria interactions.\n\n## Materials and methods\n\n### Isolation of Symbiodinium and bacteria\n\nCells of Symbiodinium type C1 (confirmed by sequencing of the\u00a0ITS1 gene) used in this study were isolated from air-brushed tissues of the coral Acropora tenuis, which had been collected from Magnetic Island, Great Barrier Reef, Australia (latitude 19\u00b010\u2019S; longitude 146\u00b050\u2019E). Cells were sequentially washed three times (5 min at 1600 g) with 0.2 \u00b5m filtered seawater. Clean Symbiodinium cells were inoculated into 24 well plates with sterile IMK medium (Wako Chemicals, Richmond, VA, USA) with the antibiotics penicillin (100 \u03bcg ml\u22121), neomycin (100 \u03bcg ml\u22121), streptomycin (100 \u03bcg ml\u22121), nystatin (100 \u03bcg ml\u22121), amphotericin (2.5 \u03bcg ml\u22121), and Germanium dioxide (50 \u03bcM)) for 15 days at 27\u00b0C, 50 \u00b5E and 14:10 light:dark cycle. After this initial incubation, cells from uncontaminated wells were pooled and re-inoculated in new 24-well plates with IMK medium plus antibiotics as above, and incubated for 20 days at the same temperature and lighting conditions. Finally, uncontaminated cells were pooled and inoculated into 25 mL of sterile IMK without antibiotics until the start of the experiment (Santos et al., 2011). Cultures were genotyped by single-strand conformation polymorphism (SSCP) of the ITS1 region (van Oppen et al., 2001).\n\nA coral-associated bacterium, Pseudovibrio sp. P12, was isolated from healthy colonies of the reef-building coral Pocillopora damicornis. This bacterial strain is commonly associated with reef-building corals (Bondarev et al., 2013; Nissimov et al., 2009; Radjasa et al., 2008; Ritchie, 2006; Rypien et al., 2010; Sulistiyani et al., 2010) and capable of metabolizing DMSP as a\u00a0sole carbon source (Garren et al., 2014).\u00a0Coral colonies were collected from Davies Reef, Great Barrier Reef, Australia (latitude 18\u00b051\u2019S; longitude 147\u00b041\u2019E) and maintained in aquaria at the Australian Institute of Marine Science (Townsville, Queensland, Australia) prior to strain isolation. A dilution series of coral tissue slurries was inoculated on minimal marine agar plates (1% bacteriological agar; 0.3% casamino acids; 0.4% glucose; in 1 litre of artificial seawater) (Hjelm et al., 2004). After 2 days of incubation at 28\u00b0C, single colonies were transferred into Marine Broth (Difco) and grown overnight. Liquid cultures were re-plated on minimal marine agar and the procedure was repeated iteratively until pure cultures were obtained. A laboratory strain of Escherichia coli (E. coli W (ATCC 9637)) was chosen as a control strain based on its ability to grow in the artificial seawater used in this study (see medium composition below), and its lack of DMSP degradation and subsequent sulfur assimilation pathways\u00a0(unlike many marine or coral bacterial isolates [Raina et al., 2010; Howard et al., 2008]).\n\n### Bacterial genomic analysis\n\nHigh molecular weight DNA from a pure culture of the Pseudovibrio sp. P12 strain was obtained using a miniprep phenol/chloroform based DNA extraction (Ausubel\u00a0et\u00a0al., 1987). A paired-end library was prepared using the Illumina Truseq protocol (Illimina, San Diego, CA, USA), with an insert size of 169 bp and a read size of 150 bp. The library was sequenced on an Illumina MiSeq instrument at Monash University (Melbourne, Australia). The genome was assembled with the SPAdes assembler (v2.4.0) (Bankevich et al., 2012) and annotated with the Prokka software (v1.5.2) (Seemann, 2014), providing a draft genome assembly of Pseudovibrio sp. P12. The presence of the genes involved in DMSP metabolism was investigated by searching for homologs of the corresponding genes using reciprocal best BLAST hits.\n\n### Synthesis of labelled magnesium sulfate (Mg34SO4)\n\nMagnesium sulfate (Mg34SO4) was synthesised from pure sulfur 34S (purity\u00a0>99%, Cambridge Isotope, MA) following a two-step reaction:\n\nElemental sulfur 34S (0.1069 g) was ground into a fine powder and transferred to a pear-shaped flask. Nitric acid (65%, 4 ml) was added to the flask, heated to 80\u00b0C and refluxed for 5 hr. The temperature was subsequently raised to 130\u00b0C and refluxed for an additional 24 hr in order to completely oxidise remaining nitric acid. The resulting sulfuric acid (H234SO4) was then converted to Mg34SO4 by the\u00a0addition of magnesium carbonate (MgCO3) (0.2643 g), giving a yield of 0.3780 g. The solution was subsequently heated to 100\u00b0C until all water had completely evaporated. Elemental analysis of the dried crystals was carried out with an electron probe microanalyser (EPMA, Jeol JXA8200), equipped with an energy dispersive spectrometer (EDS), to confirm the synthesis of Mg34SO4.\n\n### Symbiodinium growth and experimental conditions\n\nSymbiodinium C1 cells were inoculated into artificial seawater (ASW; starting density: 1.5\u00a0\u00d7\u00a0106 cells ml\u22121) and incubated at 27\u00b0C for 18 days (based on results from a pilot study). LED lights were mounted above the culture, providing an average light intensity of 50 \u03bcE over a 14:10 hr light/dark cycle (AI Super Blue LED module 1003, IA, USA). Temperature and light intensities were monitored every 2 min for the duration of the experiment (using a HOBO UA-002-64, 64K temperature/light data logger).\n\nThe ASW contained 24.72 g of NaCl, 0.67 g of KCl, 1.36 g of CaCl2\u00b72H2O, 4.66 g of MgCl2\u00b76H2O, 0.18 g of NaHCO3, and 3.8 ml of modified ASP-8A solution (Figure 1\u2014source data 1) in 1 litre of MilliQ water. Magnesium sulfate (MgSO4\u00b77H2O, 6.29 g L\u22121) was used as the sole sulfur source, with either 34S (99% 34S, hereafter called 34S-ASW) or natural abundance of sulfur (95% 32S, 0.7% 33S, 4.2% 34S; hereafter called natS-ASW). Symbiodinium cells were incubated in 34S-ASW, whereas a batch incubated only in natS-ASW acted as a control. Both growth media were replaced every 5 days in order to actively remove dead and floating cells from the cultures. Symbiodinium cell numbers were monitored every 3 days for both 34S-ASW and natS-ASW treatments, using a light microscope and haemocytometer (depth 0.1 mm; eight replicates were averaged per time point) and cell mortality assessed using a 0.05% (w/v) Evans Blue solution (Morera and Villanueva, 2009).\n\nAfter 18 days, the medium in both 34S-ASW and natS-ASW Symbiodinium cultures, was decanted and discarded. The Symbiodinium cells were thoroughly rinsed three times with natS-ASW and subsequently resuspended in natS-ASW (5 mins) prior to the addition of bacteria (Figure 1\u2014figure supplement 1). This medium exchange (from 34S-ASW to natS-ASW) was carried out in order to prevent any potential direct bacterial uptake of 34SO42-.\n\n### Bacterial growth and inoculation\n\nThe two bacterial strains (Pseudovibrio sp. P12 and E. coli W) were grown overnight at 28\u00b0C in ASW medium enriched with 15N (in the form of amino-acids and NH4+; Celtone Base Powder; Cambridge Isotope Laboratories, Tewksburry, MA). The bacterial cells were subsequently washed three times in ASW before inoculation. Symbiodinium cells in treatment 1 were subsequently inoculated with the DMSP-degrading bacterium Pseudovibrio sp. P12; treatment 2 with E. coli; treatment 3 acted as a control without bacteria added; and treatment 4, which had no contact with 34S, acted as negative control for sulfur isotope incorporation (Figure 1\u2014figure supplement 1). The two bacterial strains were inoculated at a density of 106 cells ml\u22121 and all samples were collected six hours after bacterial inoculation (based on results from a pilot study).\n\n### Sample preparation for NanoSIMS, electron microscopy and ToF-SIMS\n\nWe used high-pressure freezing (Smart et al., 2010), followed by a water-free embedding procedure to effectively prevent the loss of highly soluble compounds such as DMSP from our samples. This method does retain elements in solution (Altus and Canny, 1985; Ashford et al., 1999; Kaiser et al., 2015; Marshall et al., 2007; Mostaert et al., 1996) by effectively replacing the \u2018solution\u2019 with resin, without displacing the ions and osmolytes. Symbiodinium cultures pre-incubated with bacteria (20 \u03bcl) were dropped onto Thermanox strips (Thermo Fisher Scientific, Waltham, MA, USA, 4\u00a0\u00d7\u00a018 mm) and then placed in humidified chambers. After 15 min, the cells settled onto the strips and the excess medium was carefully removed with filter paper before being frozen by immersion into liquid nitrogen slush (liquid nitrogen placed under low-vacuum in order to lower its temperature). Samples for structural imaging by electron microscopy (2 \u00b5l) were also collected. These were deposited in a gold planchet and high-pressure frozen using an EMPACT2 high-pressure freezer (Leica Microsystems, Wetzlar, Germany). Both sample types were stored in liquid nitrogen until required.\n\nFrozen samples for NanoSIMS were freeze-substituted in anhydrous 10% acrolein in diethyl ether, and warmed progressively to room temperature over three weeks in an EM AFS2 automatic freeze-substitution unit (Leica Microsystems, Wetzlar, Germany) based upon the original method of Marshall (Marshall, 1980), and as described recently in step-by-step detail by Kilburn and Clode (Kilburn and Clode, 2014). The samples were subsequently infiltrated and embedded in anhydrous Araldite 502 resin, after which the Thermanox strip was removed and the sample re-embedded and stored in a desiccator. Although it is possible that not 100% of cellular DMSP may be preserved by this procedure, any losses would affect all samples equally; not impacting the validity of our comparisons between treatments. Furthermore, as 15N was only used as a tag to visualise the bacteria, dilution by processing and resin embedding (Musat et al., 2014) is of no concern here. For 34S analyses, dilution can be expected to be negligible as there is no sulfur contained in processing or resin components. Resin sections (1 \u00b5m thick) of embedded Symbiodinium cells were cut dry using a Diatome-Histo diamond knife on an EM UC6 Ultramicrotome (Leica Microsystems, Wetzlar, Germany), mounted on a silicon wafer and coated with 5 nm of gold.\n\n### NanoSIMS analysis\n\nThe NanoSIMS-50 (Cameca, Gennevilliers, France) at the Centre for Microscopy, Characterisation and Analysis (CMCA) at The University of Western Australia was used for all subsequent analyses. The NanoSIMS-50 allows simultaneous collection and counting of multiple isotopic species, which enables the determination of 15N/14N and 34S/32S ratios. Enrichments of the rare isotopes 34S and 15N were confirmed by an increase in the sulfur (34S/32S) and/or nitrogen (15N/14N) ratio above natural abundance values recorded in controls (equal to 0.0438 and 0.00367, respectively).\n\nNanoSIMS analysis was undertaken by rastering a 2 pA Cs+ beam (~100 nm diameter) across defined 20 \u03bcm2 sample areas (256\u00a0\u00d7\u00a0256 pixels). The NanoSIMS-50 was tuned to achieve mass resolution at levels where the isobaric species 12C15N and 13C14N could be separated. The isotope ratio values are represented hereafter using a colour-coded transform (hue saturation intensity (HSI)) showing natural abundance levels in blue, and grading to high enrichment in pink. Images were processed and analysed using Fiji (http://fiji.sc/Fiji) (Schindelin et al., 2012) with the Open-MIMS plug-in (http://nrims.harvard.edu/software). All images were dead-time corrected (Hillion et al., 2008). Quantitative data were extracted from the mass images through manually drawn regions of interest. Ratio data were tested for QSA (quasi-simultaneous arrivals) by applying different beta values from 0.5 to 162. No differences in the data were observed, indicating that the secondary ion count rates were too low to be affected by QSA.\n\n### Time-of-flight secondary ion mass spectrometry (ToF-SIMS)\n\nDuring ToF-SIMS analysis the sample surface is sputtered with a focused primary ion beam to produce ionic species (secondary ions) of the atoms, molecules and molecular fragments from the uppermost monolayers of the surface. The secondary ions are extracted into a flight column (time-of-flight analyser) and their masses determined by the exact time at which they arrive at the detector. The data collected can provide: (i) mass spectral information in the form of an accumulated mass spectrum, and (ii) image information in the XY dimensions showing the intensity distribution of the specific secondary ions from the area analysed.\n\nThe mass resolution of the ToF-SIMS analysis is determined by the temporal pulse width of the primary ions hitting the sample surface; whereas the spatial resolution is determined by the spot size of the primary ion beam. ToF-SIMS analyses are conducted with the instruments optimised either for high mass resolution or for high spatial resolution, as achieving both short pulses (for mass resolution) and narrow focus (for spatial resolution) simultaneously will greatly reduce the primary ion current density.\n\nIn this study, ToF-SIMS analyses were conducted using the TOF.SIMS five instrument (ION-TOF GmbH, M\u00fcnster, Germany) at the Mark Wainwright Analytical Centre (MWAC), University of New South Wales. The instrument is equipped with a bismuth liquid metal cluster ion gun for analysis and an electron flood gun for charge compensation. Analysis was performed using a 30 keV Bi3+ cluster ion beam on resin sections (1 \u00b5m thick) mounted on silicon wafers. The \u2018spectrometry\u2019 mode was used to acquire high-mass resolution spectra (m/\u25b3m\u00a0>\u00a04000) and \u2018fast-imaging\u2019 mode was used to acquire high spatial resolution images (lateral resolution\u00a0~300 nm, m/\u0394m\u00a0~\u00a0200).\n\nIn a typical analysis, a positive ion spectrum was acquired over a defined area of 20\u00a0\u00d7\u00a020 \u03bcm2 or 50\u00a0\u00d7\u00a050 \u03bcm2. The area of interest was identified by negative ion images acquired over areas of 20\u00a0\u00d7\u00a020 \u03bcm2 (64\u00a0\u00d7\u00a064 pixels) to 200\u00a0\u00d7\u00a0200 \u03bcm2 (128\u00a0\u00d7\u00a0128 pixels), where maps of CN- (m/z 26), S- (m/z 32), HS- (m/z 33) and 34S- (m/z 34) were generated to locate the position of cells and the presence of sulfur-containing compounds within the sample. Care was taken to ensure the ion dose density was kept below the static SIMS limit (1012\u20131013 primary ions per cm2) (Lindgren et al., 2014) when acquiring imaging data, e.g. no more than 5\u201310 scans over areas of 20\u00a0\u00d7\u00a020 \u03bcm2. Keeping the static limit in the imaging mode prevents any significant damage to the sample structure or chemistry (Vickerman and Briggs, 2013), and enables further analyses of the same area in the positive polarity in this case. In the positive spectrum, the molecular ion [M + H]+ peak of both the 32S-and 34S-containing DMSP molecules (C5H1132SO2+ and C5H1134SO2+, respectively) are closely spaced with peaks arise from the resin (Figure 2\u2014figure supplement 2). To maximise signal-to-noise ratio, data acquisition over a relatively small area encompassing the cell was desired, allowing unambiguous identification of the C5H1132SO2+ and C5H1134SO2+ peaks. High mass resolution positive spectra were calibrated using the masses of CH2+, C2H4+, C4H8+ and C6H12+ molecules. Data processing and evaluation were conducted using the SurfaceLab six software package (ION-TOF GmbH, M\u00fcnster, Germany).\n\nPrior to the analyses of the resin sections, the mass spectrum of dimethyl-\u03b2-propiothetin standard (Research Plus Inc., USA) was recorded to provide spectral information of DMSP generated by ToF-SIMS analysis. The molecular ion [M + H]+ peak (C5H11SO2+, m/z 135.05) was observed to be the most intense peak in the spectrum, and was used as the mass peak position when determining the presence of DMSP molecules in the samples. The mass spectrum of a mixture of methionine and cysteine (Sigma-Aldrich, USA) was also acquired to serve as a reference standard. Both methionine and cysteine were not detected or the amounts were below the detection limit of the instrument (ppm range).\n\n### Transmission electron microscopy (TEM)\n\nHigh-pressure frozen samples for structural imaging were freeze-substituted in 1% OsO4 in acetone over two days and similarly infiltrated and embedded as described above. Sections 90 nm thick were cut on water\u00a0using\u00a0a diamond knife, collected on copper grids and imaged unstained at 120 kV in a JEOL 2100 TEM (Tokyo, Japan) fitted with a Gatan ORIUS camera (California, USA). Please note: the high solubility of DMSP in water prevented the coupling of NanoSIMS with TEM images (Clode et al., 2009) to identify the location of small organelles such as mitochondria, as ultrathin sections cannot be prepared without exposing the samples to water.\n\n### High pressure liquid chromatography-mass spectrometry (HPLC-MS)\n\nAfter samples were collected for NanoSIMS analysis, all Symbiodinium cultures were centrifuged (3000 g) for 5 min, the medium was discarded and pelleted cells were extracted with 5 mL of HPLC-grade methanol. Crude methanol extracts were then analysed by reverse-phase (RP18) HPLC-MS in triplicate along with pure DMSP and amino acid standards.\n\nA 10 \u00b5L aliquot of the methanol extract was diluted with an equal volume of acetonitrile and chromatographed using a Waters Alliance 2695 HPLC system comprising a quaternary pump, autosampler and photodiode array detector (200\u2013400 nm) coupled to a Waters Micromass LCT Premier orthogonal acceleration time-of-flight (oa-TOF) mass spectrometer. Separation was achieved on an Alltima HP HILIC column (250\u00a0\u00d7\u00a04.6 mm with a particle size of 5 \u00b5m) at 27\u00b0C and a flow rate of 0.75 ml min-1. The gradient was: acetonitrile (90%):0.1% formic acid (10%) at 0 min; acetonitrile (60%):0.1% formic acid (40%) at 0.4 min; acetonitrile (10%):0.1% formic acid (90%) at 12 min; acetonitrile (90%):0.1% formic acid (10%) at 12.25 min.\n\nTOF-MS accurate mass measurements (scan-range m/z 100\u20131000 at 4 GHz, resolution\u00a0=\u00a09500) were acquired using an electrospray ionization (ESI) source in W positive mode with the following operation parameters: capillary voltage: 3000 V; cone voltage: 80V; ion source temperature: 80\u00b0C; desolvation temperature: 350\u00b0C; cone gas flow: 10 l hr\u22121; desolvation gas flow: 750 l hr\u22121; ion energy: 33 V; acceleration voltage: 100 V. MassLynx software (version 4.1, Waters) was used for operating the HPLC-MS, as well as for data acquisition and processing. Leucine Enkephalin was used as the external reference.\n\n### Quantitative nuclear magnetic resonance (qNMR)\n\nThe MeOH extracts remaining after HPLC-MS analysis was dried using a vacuum-centrifuge and dissolved in a mixture of deuterium oxide (D2O, D 99.8%, 250 \u03bcl) and deuterated methanol (CD3OD, D 99.8%, 750 \u03bcl) (Cambridge Isotope Laboratories, Andover, MA, USA). A 700 \u00b5l aliquot of the particulate-free extract was transferred into a 5 mm Norell 509-UP-7 NMR tube (Norell Inc., Landisville, NJ, USA) and analysed immediately by 1H NMR.\n\n1H NMR spectra were recorded on a Bruker Avance 600 MHz NMR spectrometer with TXI 5 mm probe and quantification performed using the ERETIC method (Tapiolas et al., 2013). This technique generates an internal electronic reference signal, calibrated using stock solutions of DMSP.\n\n### Sulfur uptake\n\nBacterial strains and Symbiodinium were counted (Becton Dickinson LSR II flow cytometer (BD Biosciences, Franklin Lakes, NJ, USA), and pellets were subsequently freeze-dried and weighed in order to determine their total sulfur content (equal to 5390 ng S mg\u22121). Samples were analysed on a Thermo Scientific FLASH 2000 Series (Thermo Scientific, Waltham, MA, USA). The sulfur uptake per mg of bacterial cells (\u03c1) was expressed in ng S mg\u22121 and was calculated by normalizing the 34S-incorporation measured using NanoSIMS to the average sulfur content (% of dry mass) according to the equation of Dugdale and Wilkerson (1986), presented in Pernice et al. (2012).:\n\n\u03c1 = ((Smes - Snat)/(Senr - Snat)) \u00d7 Scontent\u00a0\u00d7103\n\nWhere:\n\nSmes: 34S/32S measured in labelled samples by NanoSIMS\n\nSnat: natural abundance of 34S/32S measured in unlabelled samples by NanoSIMS\n\nSenr: 34S-enrichment of the Symbiodinium cells measured by NanoSIMS\n\nScontent: average sulfur content (%) measured by Thermo Scientific FLASH 2000 Series.\n\nThe calculated uptake (in nmol S mg\u22121) was then converted into an estimate uptake rate per day (nmol S l\u22121 day\u22121), based on: the bacterial exposure to 34S (6 hr), and the bacterial cell density for a given dry weight (acquired through flow cytometry; equal to 7.12\u00a0\u00d7\u00a010\u22127 g for 5\u00a0\u00d7\u00a0105 bacterial cells).\n",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "9edd1396-f4e6-4772-ab93-9f10ef9cb424",
+      "submission_id": "2777f2ec-77f7-48d9-bcf1-828e9455bb0a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Paul G Falkowski, Rutgers University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23008.017](https://doi.org/10.7554/eLife.23008.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Subcellular tracking reveals rapid dimethylsulfoniopropionate cycling among marine microbes\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Christian Hardtke as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: David Green (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nTwo reviewers have very carefully evaluated this paper and both came to similar conclusions that while the experiments are elegant, the results are over interpreted as rates. Clearly this issue is critical, as fluxes are not measured directly by a SIMS system, unless the authors used a pulse-chase approach (or a variant, such as reverse isotope dilution). Regardless, after reading the paper and the constructive comments offered by the reviewers, it is clear that, following a revision, the paper would potentially be suitable for publication in eLife. To that end, the authors should address the concerns of the reviewers, especially with respect to the issue of rates of DMSP cycling.\n\nReviewer #2:\n\nThis manuscript presents data on innovative experiments looking at the incorporation of 34S-sulfate into the cellular biomass of the dinoflagellate coral symbiont, Symbiodinium. The authors main focus is on the biosynthesis of dimethylsulfonioproprionate (DMSP), a major organic sulfur compound produced in large amounts by many marine phytoplankton, especially dinoflagellates. The authors used cutting-edge methods such as NanoSIMS, ToF-SIMS, and LCMS to identify DMSP and to localize sulfur in the cells. They also carried out an experiment in which bacteria were added to 34S-labeled cultures to look at the assimilation of 34S derived from the Symbiodinium by the bacteria. Both DMSP degrading and non-degrading bacteria were used, and the bacteria were pre-labeled with 15N to allow them to be confidently localized with the NanoSIMS.\n\nThe study represents amazing application of technology. I do however feel that some of the interpretations about DMSP localization need to be tempered. Based on the information provided, I don't think they can rule out the significant contribution of other organic sulfur compounds in the signals they observed with the NanoSIMS. The ToF-SIMS provided some identification of 34S-DMSP in the cells but it wasn't clear to me whether they could exclude the occurrence of sulfur compounds, like cysteine and methionine, or a host of other possible organic sulfur compounds.\n\nThe authors assume that most of the cellular sulfur is DMSP. They cite an older study by Matrai and Keller that concluded that 50-90% of the cellular sulfur is DMSP. 50% might be reasonable, but 90% is probably not, given that there are many other organic sulfur compounds in living cells. I think the authors need to be more cautious in interpreting their data. This goes to my general criticism \u2013 that the authors are assuming most of the 34S associated with the cells is DMSP. It certainly seems that some of it is, and that is great. But they really haven't ruled out other sulfur compounds and the nanoSIMS doesn't distinguish what compounds the 34S is in. To support their argument that sulfur amino acids are not important, the authors say that \"for Symbiodinium, methionine and cysteine occur at a ratio of 1 per 1000 amino acid residues\" (Results and Discussion). They cite Markell and Trench (1993) for this information. This struck me as an extremely low sulfur amino acid content and it seems very unlikely given that sulfur amino acids are present in virtually all proteins, with cysteine being important in the active site of many enzymes, including DMSP lyase, which Symbiodinium produces. I looked at the Markell and Trench paper and I found that the authors have misrepresented the earlier work in the way they cited it. First, the data in Markell and Trench are for proteins in cellular exudates not necessarily the cells themselves; the present study is looking at the cells. Second, Markell and Trench report only Methionine data; cysteine was not reported, most likely because cysteine is difficult to quantify because of oxidation of the sulfhydryl group. Third, Markell and Trench looked at 5 different Symbiodinium strains and their Table 3 shows values for methionine per 1000 residues of 7, 7, 9, 17 and 1 in the 5 strains, respectively. So only one of the 5 strains had 1 methionine per 1000, with the others having about an order of magnitude more. And again, cysteine was not counted. So, there must be more sulfur in those cells besides DMSP. The data must be interpreted with this in mind. Overall, I am not convinced from the data presented that the authors have \"confirmed that 34S-DMSP was the main organic sulfur compound within the algal cells\" (Results and Discussion).\n\nThe title of the paper mentions rapid cycling of DMSP between microbes, but the results in this paper are not presented as rates. And I raise the point that some DMSP might have been released from cells as a result of the manipulations, so the rate at which transfer from the phytoplanker to the bacteria happens is still an open question.\n\nIt's not clear what the TOF-SIMS actually measures. I looked this up and I think I understand that it can give masses of fragments released by the ion beam and thus can provide some identification information. But I don't know enough about the specificity/selectivity/sensitivity of such an approach. They say that they observed 34S-DMSP this way. Were other compounds looked for? More details are needed.\n\nThe full reference for the Markell and Trench (1993) paper I cited in my review is:\n\nMarkell, D. A. & Trench, R. K. Macromolecules exuded by symbiotic dinoflagellates in culture: amino acid and sugar composition. J. Phycol. 29, 64-68 (1993).\n\nI specifically referred to their Table 3 for Methionine data.\n\nReviewer #3:\n\nThis is an exciting and technically ground breaking report that helps nanoSIMS deliver the scientific potential it purportedly has. Understanding why DMSP is made by phytoplankton is one of the major challenges left in the DMSP story and this paper is very timely in demonstrating that it can be tracked at an intracellular level between phytoplankton and bacteria.\n\nI am less sure this work has revealed any great understanding about how DMSP is made and consumed by bacteria, and certainly not its rate of production or how it is cycled. It is exciting as a milestone paper that proves the technique can be used to demonstrate important aspects of DMSP dynamics and for the data showing subcellular location. It will open the door to further hypothesis driven work by the authors and others to interrogate the synthesis and molecular roles of this molecule at the sub-cellular level.\n\nI'm not sure the title reflects the real impact of this work. Stating it \"\u2026reveals rapid\u2026\" is misleading as the incubation period for DMSP uptake by bacteria was 6 hr \u2013 is that really rapid; and is this really what is important about this work? I feel that the sub-cellular location of DMSP in phytoplankton and bacteria is the important aspect and the title should reflect this more closely.\n\nThe authors have used the word \"rate\" and \"cycling\" in a number of places. I do not believe there is any data that reports rates of DMSP synthesis. I see rate methods (subsection \u201cSulfur uptake\u201d, last paragraph etc.) and data bacterial uptake rates (e.g. Results and Discussion, seventh paragraph) \u2013 so I feel you need to be more specific and specify bacterial rates. And the cycling observed was the presence of DMSP in Symbiodinium (and sub-cell locations) and presence of DMSP in bacteria. Is this really cycling, or just a transfer and/or degradation step within a cycle?\n\nI found that there was lots of good discussion and speculation about what the data might mean, but actually relatively little presentation and interpretation of the data (e.g. Results and Discussion, fifth paragraph). The authors need to redress this balance. In particular, data relating to the enrichment of S in the organelles is crying out for more interpretation \u2013 as this is new and you have brilliant nanoSIMS images of subcellular localisation that I do not feel have been mined anywhere near enough. If this is not possible, it is important to make this limitation clear in the text, as this would be an important limitation of the methodology or your use of it.\n\nA comment: there was no mention of Stefels 2009 (Limnol. Oceanogr.: Methods 7, 2009, 595-611) work reporting use of stable isotopes to measure DMSP synthesis rates. Could the authors evaluate their approach to that of Stefels D2O approach \u2013 maybe comment whether nanoSIMS can be used in a similar way \u2013 as these are both important advances in methodology; somewhere around the last paragraph of the Results and Discussion?\n\nIt was difficult to follow which images were being referred to, as the individual image files were not labelled. This might be an oddity of the eLife submission system, I accept.\n",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ff72a055-48b6-41af-bd37-154a5d56f66b",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C1",
+      "claim": "Phytoplankton-bacteria interactions drive the surface ocean sulfur cycle and local climatic processes through the production and exchange of dimethylsulfoniopropionate (DMSP).",
+      "claim_type": "EXPLICIT",
+      "source": "Phytoplankton-bacteria interactions drive the surface ocean sulfur cycle and local climatic processes through the production and exchange of a key compound: dimethylsulfoniopropionate (DMSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the role of DMSP in ocean sulfur cycling and climate, drawing from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "692d987c-7005-465e-beb2-6b6203521244",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C2",
+      "claim": "This study provides the first visualization of DMSP at sub-cellular levels using secondary-ion mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use secondary-ion mass spectrometry to provide the first visualization of DMSP at sub-cellular levels, tracking the fate of a stable sulfur isotope (34S) from its incorporation by microalgae as inorganic sulfate to its biosynthesis and exudation as DMSP, and finally its uptake and degradation by bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the methodology and results of using SIMS to visualize DMSP at subcellular resolution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0d51daaa-fcae-43b3-a7a4-6b727090db45",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C3",
+      "claim": "DMSP storage locations in microalgae include vacuoles, cytoplasm and chloroplasts, with high enrichments present in these organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results identify for the first time the storage locations of DMSP in microalgae, with high enrichments present in vacuoles, cytoplasm and chloroplasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoSIMS data showing 34S enrichment in specific cellular compartments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "837929ec-4d1f-4546-a4f3-0627639113dd",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C4",
+      "claim": "DMSP-degrading bacteria contain seven times more 34S than the control strain at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we quantify DMSP incorporation at the single-cell level, with DMSP-degrading bacteria containing seven times more 34S than the control strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is quantified by NanoSIMS measurements comparing Pseudovibrio sp. and E. coli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "5e81d336-4f1f-464b-bc4e-521b15763e82",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C5",
+      "claim": "Interactions between marine phytoplankton and bacteria control chemical cycling and energy transfer to higher trophic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between marine phytoplankton and bacteria constitute an important ecological linkage in the oceans (Cole, 1982), controlling chemical cycling and energy transfer to higher trophic levels (Azam and Malfatti, 2007; Falkowski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c3245359-83de-420d-ac8a-218291e77c2b",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C6",
+      "claim": "The cycling of sulfur depends on metabolic interactions between phytoplankton and bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The cycling of sulfur, an essential element for living organisms, depends on the metabolic interactions between these two Kingdoms (Sievert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sievert et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "abd7cf65-c1c7-4f00-bc6d-88136c7a8466",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C7",
+      "claim": "DMSP is produced by phytoplankton and degraded by marine bacteria and phytoplankton themselves into dimethylsulfide (DMS).",
+      "claim_type": "EXPLICIT",
+      "source": "A striking example is the production of the sulfur compound dimethylsulfoniopropionate (DMSP) by phytoplankton and its degradation by marine bacteria (and phytoplankton themselves) into the climate-active gas dimethylsulfide (DMS) (Alcolombri et al., 2015; Ayers and Gras, 1991; Howard et al., 2006; Todd et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "2bedf839-557f-4e23-9ed8-477600aa9bbe",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C8",
+      "claim": "DMS release into the atmosphere contributes 90% of biogenic sulfur emissions.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent release of DMS into the atmosphere contributes 90% of biogenic sulfur emissions and initiates the formation and growth of aerosols, thereby enhancing cloud formation and sunlight scattering (Ayers and Gras, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ayers and Gras, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e426056b-e463-43d1-9c4a-2a19d3c85447",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C9",
+      "claim": "DMS initiates the formation and growth of aerosols, thereby enhancing cloud formation and sunlight scattering.",
+      "claim_type": "EXPLICIT",
+      "source": "The subsequent release of DMS into the atmosphere contributes 90% of biogenic sulfur emissions and initiates the formation and growth of aerosols, thereby enhancing cloud formation and sunlight scattering (Ayers and Gras, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ayers and Gras, 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "d4746210-ac4e-45e4-9f86-4cabfe08d4ae",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C10",
+      "claim": "Chemical interactions between marine microorganisms at micrometre-scales can have large-scale impacts on climate.",
+      "claim_type": "EXPLICIT",
+      "source": "This highlights how chemical interactions occurring between marine microorganisms across micrometre-scales can ultimately have large-scale impacts on climate (Sievert et al., 2007; Sim\u00f3, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f36b63ff-5c5d-40fe-8810-7ab13b1ce819",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C11",
+      "claim": "Direct measurements of metabolic interactions critical to global sulfur cycling have not previously been possible at the sub-cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct measurements of these metabolic interactions, critical to the global sulfur cycling, have not previously been possible at the scale where they occur, the sub-cellular level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty of the current study's approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c77f3806-181a-411e-a03a-180c13e6ad30",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C12",
+      "claim": "In the surface ocean, the largest quantities of sulfur are present as dissolved sulfate, which constitutes the main sulfur source for phytoplankton.",
+      "claim_type": "EXPLICIT",
+      "source": "In the surface ocean, the largest quantities of sulfur are present as dissolved sulfate, which constitutes the main sulfur source for phytoplankton (Sievert et al., 2007; Stefels, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "5637981e-afba-4932-97f8-3d6f8f5e9c6b",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C13",
+      "claim": "Most sulfur derived from sulfate uptake is converted by phytoplankton into sulfur-based amino acids, and a fraction is used to synthesise DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the sulfur derived from sulfate uptake is converted by these organisms into sulfur-based amino acids, and a fraction is ultimately used to synthesise DMSP (Stefels, 2000) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e2c85db7-3b2a-4de3-a48a-0c2c7d4f352a",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C14",
+      "claim": "Globally, more than a billion tons of DMSP are produced every year.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, more than a billion tons of DMSP are produced every year, which has been estimated to represent up to 10% of the amount of carbon fixed by phytoplankton (Archer et al., 2001; Sim\u00f3 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "428aa889-8ba3-4686-8a76-c97b1dd1815f",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C15",
+      "claim": "DMSP production represents up to 10% of the amount of carbon fixed by phytoplankton.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, more than a billion tons of DMSP are produced every year, which has been estimated to represent up to 10% of the amount of carbon fixed by phytoplankton (Archer et al., 2001; Sim\u00f3 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "d5b79cd2-5ade-47d5-8aa6-def6533611fa",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C16",
+      "claim": "Previous studies in higher plants provided strong evidence that DMSP biosynthesis starts in the cytosol and ends in the chloroplast.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in higher plants provided strong evidence that DMSP biosynthesis starts in the cytosol and ends in the chloroplast (Trossat et al., 1996, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "8ea6eba0-b04a-4e39-ad83-faac6905e497",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C17",
+      "claim": "DMSP biosynthesis occurs through a different route in phytoplankton compared to higher plants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DMSP biosynthesis occur through a different route in phytoplankton (Stefels, 2000), and we still do not know: (1) where this compound is produced and stored in phytoplankton cells; (2) what are its functions; and (3) how efficiently it is transferred from phytoplankton producers to bacterial degraders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stefels, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1310345b-134d-47d6-a262-32e870efdbfe",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C18",
+      "claim": "The location where DMSP is produced and stored in phytoplankton cells was previously unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DMSP biosynthesis occur through a different route in phytoplankton (Stefels, 2000), and we still do not know: (1) where this compound is produced and stored in phytoplankton cells; (2) what are its functions; and (3) how efficiently it is transferred from phytoplankton producers to bacterial degraders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "daee809b-0fc8-415d-b158-f46da8b159f3",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C19",
+      "claim": "Symbiodinium is a taxon that includes some of the most prodigious DMSP producers on the planet.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the dinoflagellate Symbiodinium, a taxon that includes some of the most prodigious DMSP producers on the planet (Caruana and Malin, 2014; Saltzman and Cooper, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "68670186-6b3c-4e24-996d-adc21b4ffebf",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C20",
+      "claim": "Symbiodinium cells can be free-living in the water column or form endosymbiotic associations with tropical cnidarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Symbiodinium cells can be free-living in the water column, but are primarily known for the endosymbiotic associations they form with tropical cnidarians that fuel the extremely high productivity of coral reef ecosystems (Dubinsky, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dubinsky, 1990.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "a43e3d50-e712-4a75-87bb-6265564ed2c1",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C21",
+      "claim": "Populations of reef-building corals are major DMSP production hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations of reef-building corals are major DMSP production hotspots (Broadbent et al., 2002; Raina et al., 2013) and their contribution to the marine sulfur cycle is disproportionately large given their relatively restricted distributions (Raina et al., 2013; Fischer and Jones, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "3f063893-1e8e-4f0a-90b9-6216e403dc17",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C22",
+      "claim": "Coral contribution to the marine sulfur cycle is disproportionately large given their relatively restricted distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "Populations of reef-building corals are major DMSP production hotspots (Broadbent et al., 2002; Raina et al., 2013) and their contribution to the marine sulfur cycle is disproportionately large given their relatively restricted distributions (Raina et al., 2013; Fischer and Jones, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "6353a388-92d0-4b1a-a8c9-7345ba995d69",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C23",
+      "claim": "DMSP constitutes an important source of carbon and sulfur for bacterial communities harboured by corals.",
+      "claim_type": "EXPLICIT",
+      "source": "In this ecosystem, DMSP constitutes an important source of carbon and sulfur for the diverse and highly abundant bacterial communities harboured by corals (Raina et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Raina et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1800b109-8eb7-4ea9-99a6-61ba631e0a27",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C24",
+      "claim": "Symbiodinium cells were incubated for 18 days in artificial seawater containing 34S-labelled sulfate as the sole sulfur source.",
+      "claim_type": "EXPLICIT",
+      "source": "Symbiodinium cells were incubated for 18 days in artificial seawater containing 34S-labelled sulfate as the sole sulfur source (34S-ASW; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "b58608e0-17f6-4a8b-bde0-f7d986dfe05a",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C25",
+      "claim": "All Symbiodinium cultures were rinsed thoroughly and re-inoculated into ASW containing sulfate in natural isotopic abundance before addition of bacterial cells to prevent direct uptake of 34S-sulfate by bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent direct uptake of 34S-sulfate by bacteria, all Symbiodinium cultures were rinsed thoroughly and re-inoculated into ASW containing sulfate in natural isotopic abundance (natS-ASW) before addition of bacterial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological step to ensure that bacteria only take up 34S from DMSP, not from sulfate.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "5713b4f0-1fd8-4809-adad-2fd283dee64e",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C26",
+      "claim": "Pseudovibrio sp. P12 is a DMSP-degrading bacterium isolated from healthy corals.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different bacterial strains were added to the rinsed cultures and co-incubated for six hours: (i) Pseudovibrio sp. P12, a DMSP-degrading bacterium isolated from healthy corals (Raina et al., 2016), selected because of its worldwide distribution in coastal waters (Shieh et al., 2004) and its abundance in benthic invertebrate communities (Bondarev et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "67c9ab82-de84-4fce-af00-c0aafcdd56bb",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C27",
+      "claim": "Pseudovibrio sp. P12 has a worldwide distribution in coastal waters.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different bacterial strains were added to the rinsed cultures and co-incubated for six hours: (i) Pseudovibrio sp. P12, a DMSP-degrading bacterium isolated from healthy corals (Raina et al., 2016), selected because of its worldwide distribution in coastal waters (Shieh et al., 2004) and its abundance in benthic invertebrate communities (Bondarev et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Shieh et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f077d3d6-7b04-4aed-a5ac-d012eb9df413",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C28",
+      "claim": "Pseudovibrio sp. P12 is abundant in benthic invertebrate communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Two different bacterial strains were added to the rinsed cultures and co-incubated for six hours: (i) Pseudovibrio sp. P12, a DMSP-degrading bacterium isolated from healthy corals (Raina et al., 2016), selected because of its worldwide distribution in coastal waters (Shieh et al., 2004) and its abundance in benthic invertebrate communities (Bondarev et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Bondarev et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "29c1f904-73cd-4d08-bc4c-6797bdb5303c",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C29",
+      "claim": "Escherichia coli W (ATCC 9637) is able to grow in seawater and not capable of degrading DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) a control, Escherichia coli W (ATCC 9637), a widely studied and fully sequenced strain, able to grow in seawater and not capable of degrading DMSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the control bacterial strain used in the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e6cc14e3-3a6d-47f3-b437-8f04e148bb30",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C30",
+      "claim": "Both bacterial strains were pre-grown in a medium enriched in the rare stable isotope 15N to precisely localise bacterial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To precisely localise bacterial cells, both strains were pre-grown in a medium enriched in the rare stable isotope 15N (in amino-acids and ammonium form).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology for labeling bacteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c24db50d-a79f-429d-81cf-cb170afb4a82",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C31",
+      "claim": "Cellular incorporation of stable isotope tracers (34S and 15N) was identified by an increase in the sulfur (34S/32S) and/or nitrogen (15N/14N) ratio above their natural abundance values (0.043 and 0.0037, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular incorporation of the stable isotope tracers (34S and 15N) was identified by an increase in the sulfur (34S/32S) and/or nitrogen (15N/14N) ratio above their natural abundance values (0.043 and 0.0037, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach for detecting isotope incorporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "5f616b47-1e74-4205-a398-b2146c567d59",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C32",
+      "claim": "Symbiodinium cell numbers doubled during the incubation period in the medium containing 34S-labelled sulfate, reaching approximately 2.9 million cells ml\u22121 after 18 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Symbiodinium cell numbers doubled during the incubation period in the medium containing 34S-labelled sulfate, reaching approximately 2.9 million cells ml\u22121 after 18 days (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by cell count data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "9b2c6741-92d2-484c-a5d5-2d5c5cbca86c",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C33",
+      "claim": "LC-MS analyses confirmed that all cultures initially incubated with 34S-sulfate were highly enriched in 34S-DMSP, which represented up to 46% of the DMSP molecules present in samples analysed.",
+      "claim_type": "EXPLICIT",
+      "source": "LC-MS analyses carried out at the end of the experiment on extracted Symbiodinium cells confirmed that all cultures initially incubated with 34S-sulfate were highly enriched in 34S-DMSP, which represented up to 46% of the DMSP molecules present in samples analysed (Figure 2, Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LC-MS data shown in Figure 2 and source data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "47aa7d53-bb5d-47ee-aeba-ecdb4e3cbec5",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C34",
+      "claim": "Sulfur atoms used by dinoflagellates to synthesise DMSP can originate from the uptake of inorganic sulfate derived from seawater.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms that sulfur atoms used by dinoflagellates to synthesise DMSP can originate from the uptake of inorganic sulfate derived from seawater (Stefels, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the LC-MS data showing 34S incorporation into DMSP, and a citation to Stefels, 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "dcdaa9e8-2702-4bbe-81a3-ba4262a2ed06",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C35",
+      "claim": "High levels of 32S-DMSP (ranging from 54% to 66% of total DMSP) were recorded in Symbiodinium cultures in addition to 34S-DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to 34S-DMSP, unexpectedly high levels of 32S-DMSP (ranging from 54% to 66% of total DMSP) were recorded in Symbiodinium cultures (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by LC-MS data shown in Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c3f21c8a-a0d7-4a50-a8a3-56ac7be30cfc",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C36",
+      "claim": "The presence of high levels of 32S-DMSP can be explained by Symbiodinium cells retaining a large fraction of the natural pool of 32S initially present in the starting culture and by new 32S-DMSP being synthesised during the six hours in natS-ASW medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of these high levels of 32S-DMSP can be explained by a combination of two factors: (i) Symbiodinium cells density only doubled during the incubation phase in 34S-ASW, retaining a large fraction of the natural pool of 32S initially present in the starting culture prior to the incubation; (ii) new 32S-DMSP might have been synthesised during the six hours immediately preceding sampling, when Symbiodinium cells were incubated in natS-ASW medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental design and observed data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "48178295-453e-4578-b76c-050d34e2eecc",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C37",
+      "claim": "Sulfur containing amino acids (methionine and cysteine) were not detected by LC-MS or 1H NMR in Symbiodinium extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Although high concentrations of DMSP were present in the methanolic Symbiodinium cells extract (Figure 2\u2014source data 1), sulfur containing amino acids (methionine and cysteine) were not detected by LC-MS or 1H NMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the absence of detection in analytical measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "118105d3-6846-41be-8600-4bb130495c87",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C38",
+      "claim": "The entire sampling procedure leading to SIMS analyses had to be water-free to effectively prevent the loss of DMSP from the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To effectively prevent the loss of DMSP from the cells, the entire sampling procedure leading to SIMS analyses had to be water-free, with all steps performed under strict anhydrous conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological requirement for preserving DMSP in samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "d85ff2a7-0fc8-4507-a4c1-58ea12ba5707",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C39",
+      "claim": "Cryopreservation techniques followed by freeze substitution in an acrolein-ether mixture were used to preserve DMSP in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For this, we used cryopreservation techniques followed by freeze substitution in an acrolein-ether mixture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "9c8ffaec-f8ec-4079-8e78-2494e80ebdad",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C40",
+      "claim": "The acrolein-ether freeze substitution method has routinely been used to successfully preserve cellular ions and compounds in a variety of systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This method has routinely been used to successfully preserve cellular ions and compounds in a variety of systems (Altus and Canny, 1985; Ashford et al., 1999; Kaiser et al., 2015; Marshall et al., 2007; Mostaert et al., 1996), with the acrolein stabilizing and preserving cellular proteins, nucleic and fatty acids through cross linking, while the low temperature, anhydrous conditions ensure preservation and retention of diffusible ions and water-soluble molecules (such as DMSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0a545859-4dcb-4af1-9acf-23f6b2f7f954",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C41",
+      "claim": "Acrolein stabilizes and preserves cellular proteins, nucleic and fatty acids through cross linking.",
+      "claim_type": "EXPLICIT",
+      "source": "This method has routinely been used to successfully preserve cellular ions and compounds in a variety of systems (Altus and Canny, 1985; Ashford et al., 1999; Kaiser et al., 2015; Marshall et al., 2007; Mostaert et al., 1996), with the acrolein stabilizing and preserving cellular proteins, nucleic and fatty acids through cross linking, while the low temperature, anhydrous conditions ensure preservation and retention of diffusible ions and water-soluble molecules (such as DMSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism by which acrolein preserves cellular components.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "afd5813b-b0be-4f05-ad6d-5a2b5e4e6e46",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C42",
+      "claim": "Low temperature, anhydrous conditions ensure preservation and retention of diffusible ions and water-soluble molecules such as DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "This method has routinely been used to successfully preserve cellular ions and compounds in a variety of systems (Altus and Canny, 1985; Ashford et al., 1999; Kaiser et al., 2015; Marshall et al., 2007; Mostaert et al., 1996), with the acrolein stabilizing and preserving cellular proteins, nucleic and fatty acids through cross linking, while the low temperature, anhydrous conditions ensure preservation and retention of diffusible ions and water-soluble molecules (such as DMSP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism by which the preservation method retains DMSP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "7c768cdb-bb5e-4816-881f-b933850b12f2",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C43",
+      "claim": "The inclusion of acrolein ensures excellent cell structural preservation at a low temperature, which is required for high resolution NanoSIMS analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "The inclusion of acrolein ensures excellent cell structural preservation at a low temperature, which is required for high resolution NanoSIMS analyses (Kaiser et al., 2015; Marshall, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "bb09e00c-72ce-4a3b-a624-0bd7290c7b91",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C44",
+      "claim": "ToF-SIMS revealed that 34S-DMSP was present and abundant in the preserved cells following resin embedding, with a ratio of 34S-DMSP/32S-DMSP matching the bulk analyses carried out with LC-MS prior to embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "ToF-SIMS revealed that 34S-DMSP was present and abundant in the preserved cells following resin embedding, with a ratio of 34S-DMSP/32S-DMSP matching the bulk analyses carried out with LC-MS prior to embedding (Figure 2c\u2013d, Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ToF-SIMS data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "9f481c36-80b2-477d-936c-30f8e1101139",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C45",
+      "claim": "NanoSIMS analysis revealed that Symbiodinium exposed to 34S-labelled sulfate were nine times more enriched in 34S than the cells in the control.",
+      "claim_type": "EXPLICIT",
+      "source": "NanoSIMS analysis revealed that Symbiodinium exposed to 34S-labelled sulfate were nine times more enriched in 34S than the cells in the control (34S/32S ratio in 34S-ASW treatments: 0.391 \u00b1 0.046, compared to natS-ASW controls 0.044 \u00b1 0.001 [Figure 4\u2014figure supplement 1]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "af59c39a-3164-4701-af45-37418ca24191",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C46",
+      "claim": "Substantial spatial variability in 34S enrichment was detected within Symbiodinium cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, substantial spatial variability in 34S enrichment was detected within Symbiodinium cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NanoSIMS imaging data showing different enrichment levels in different cellular compartments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "52bf20e7-70c0-4d3c-ba34-dd27571fe220",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C47",
+      "claim": "Relatively low level of 34S enrichments were detected in the nucleus (34S/32S: 0.087 \u00b1 0.004).",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively low level of enrichments were detected in the nucleus (34S/32S: 0.087 \u00b1 0.004) which might correspond to the presence of 34S-labelled amino-acids in the histone-like proteins that condense Symbiodinium DNA into chromosomes (Shoguchi et al., 2013) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f3c63317-b82d-4934-94a3-bc9e4a72daff",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C48",
+      "claim": "Low 34S enrichment in the nucleus might correspond to the presence of 34S-labelled amino-acids in the histone-like proteins that condense Symbiodinium DNA into chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively low level of enrichments were detected in the nucleus (34S/32S: 0.087 \u00b1 0.004) which might correspond to the presence of 34S-labelled amino-acids in the histone-like proteins that condense Symbiodinium DNA into chromosomes (Shoguchi et al., 2013) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and knowledge of Symbiodinium biology.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "acec7df9-5b44-4f6d-9cfe-f79c2672cace",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C49",
+      "claim": "Much higher 34S enrichment levels were detected in vacuoles (34S/32S: 0.337 \u00b1 0.011), chloroplasts (34S/32S: 0.384 \u00b1 0.020) and cytoplasm (34S/32S: 0.451 \u00b1 0.025).",
+      "claim_type": "EXPLICIT",
+      "source": "Much higher enrichment levels were detected in vacuoles (34S/32S: 0.337 \u00b1 0.011), chloroplasts (34S/32S: 0.384 \u00b1 0.020) and cytoplasm (34S/32S: 0.451 \u00b1 0.025); which means that the enrichment in these cellular structures was 7.7, 8.8 and 10.3 times over the natural abundance levels (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "61178450-fa99-4ab2-84ad-620510f90da6",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C50",
+      "claim": "The enrichment in vacuoles, chloroplasts and cytoplasm was 7.7, 8.8 and 10.3 times over the natural abundance levels, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Much higher enrichment levels were detected in vacuoles (34S/32S: 0.337 \u00b1 0.011), chloroplasts (34S/32S: 0.384 \u00b1 0.020) and cytoplasm (34S/32S: 0.451 \u00b1 0.025); which means that the enrichment in these cellular structures was 7.7, 8.8 and 10.3 times over the natural abundance levels (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the NanoSIMS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f5425ca8-27a5-4a05-ab56-8de8b5e04dd5",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C51",
+      "claim": "The largest 34S enrichment was observed in small hotspots often observed near the Symbiodinium cell periphery (34S/32S: 0.971 \u00b1 0.059), reaching more than 22 times the natural abundance level.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the largest 34S enrichment was observed in small hotspots often observed near the Symbiodinium cell periphery (34S/32S: 0.971 \u00b1 0.059; Figure 3), reaching more than 22 times the natural abundance level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1952b1e2-580f-4a1f-bd06-52c8d0b90c9c",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C52",
+      "claim": "The hotspots with high 34S enrichment are likely storage droplets containing sulfolipids based on their small size and high 34S enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their small size and their high 34S enrichment, these hotpots are likely storage droplets containing sulfolipids, a group of sulfur compounds known to accumulate in Symbiodinium (Garrett et al., 2013; Yuyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and citations to previous research on sulfolipids in Symbiodinium.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "85e97e81-e1a1-4870-a7d6-03eebc47a0e4",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C53",
+      "claim": "Sulfolipids are a group of sulfur compounds known to accumulate in Symbiodinium.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on their small size and their high 34S enrichment, these hotpots are likely storage droplets containing sulfolipids, a group of sulfur compounds known to accumulate in Symbiodinium (Garrett et al., 2013; Yuyama et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0f250f9c-e28c-4b8e-bbaf-5e6c01850bda",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C54",
+      "claim": "Lipid droplets of similar sizes and locations to the 34S hotspots can be observed in Symbiodinium cells using electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipid droplets of similar sizes and locations can be observed in these cells using electron microscopy (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by electron microscopy images shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0e6c0687-31c4-4593-9151-774727889fe4",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C55",
+      "claim": "Methionine and cysteine were not detected using LC-MS or ToF-SIMS, suggesting that the intracellular concentration of these sulfur based amino-acids was relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to detect methionine or cysteine using LC-MS or ToF-SIMS, which suggest that the intracellular concentration of these sulfur based amino-acids was relatively low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of detection in analytical measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0c46f20b-d4a2-442d-b577-ea584c15462f",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C56",
+      "claim": "DMSP is by far the most abundant organic sulfur compound present in dinoflagellate cells, representing more than 50% of the total organic sulfur.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DMSP is known to be by far the most abundant organic sulfur compound present in dinoflagellate cells (Matrai and Keller, 1994), representing more than 50% of the total organic sulfur in these organisms (Matrai and Keller, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Matrai and Keller, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "7766b0b7-b115-4ea0-b693-45e34df326dd",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C57",
+      "claim": "DMSP was the only organic sulfur compound detected in the Symbiodinium cells through LC-MS, 1H NMR and ToF-SIMS.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSP was the only organic sulfur compound we were able to detect in the Symbiodinium cells (through LC-MS, 1H NMR and ToF-SIMS), suggesting that most of the remaining 34S signal measured in Symbiodinium cells with NanoSIMS is highly likely originating from DMSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analytical measurements performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "913c953a-5ac6-49ef-bdda-9a3c85eac446",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C58",
+      "claim": "Most of the 34S signal measured in Symbiodinium cells with NanoSIMS is highly likely originating from DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSP was the only organic sulfur compound we were able to detect in the Symbiodinium cells (through LC-MS, 1H NMR and ToF-SIMS), suggesting that most of the remaining 34S signal measured in Symbiodinium cells with NanoSIMS is highly likely originating from DMSP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analytical data showing DMSP as the only detectable organic sulfur compound.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "b52b8efc-d982-4f4d-b17a-5c9c29ba30de",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C59",
+      "claim": "DMSP is an effective scavenger of reactive oxygen species (ROS), particularly hydroxyl radicals (\u2022OH).",
+      "claim_type": "EXPLICIT",
+      "source": "DMSP is an effective scavenger of reactive oxygen species (ROS), particularly hydroxyl radicals (\u2022OH) (Sunda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sunda et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "d97b6d04-4051-473b-9d50-bfe5958bfc61",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C60",
+      "claim": "The in vivo half-life of hydroxyl radicals (\u2022OH) is 10\u22129 seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo half-life of \u2022OH is 10\u22129 seconds (Sies, 1993), which implies that these highly reactive molecules can damage lipids, nucleic acids, amino-acids or carbohydrates present in their direct vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sies, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "553d64e5-bb37-49b9-9cb2-e28d0001d634",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C61",
+      "claim": "Hydroxyl radicals can damage lipids, nucleic acids, amino-acids or carbohydrates present in their direct vicinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vivo half-life of \u2022OH is 10\u22129 seconds (Sies, 1993), which implies that these highly reactive molecules can damage lipids, nucleic acids, amino-acids or carbohydrates present in their direct vicinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the short half-life of hydroxyl radicals and their reactivity.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "358c1405-899d-4b55-8b81-f6098014da31",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C62",
+      "claim": "To be an effective antioxidant, a molecule needs to be able to scavenge ROS and to be located close to their source.",
+      "claim_type": "EXPLICIT",
+      "source": "To be an effective antioxidant, a molecule needs not only to be able to scavenge ROS, but also to be located close to their source.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle of antioxidant function based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "ef42727e-754f-4e8c-a2fd-b473b3ddddf1",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C63",
+      "claim": "If some DMSP is located in the cytoplasm, it will be ideally localised to act as an osmolyte.",
+      "claim_type": "EXPLICIT",
+      "source": "If some DMSP is located in the cytoplasm, as suggested by our NanoSIMS data, it will be ideally localised to act as an osmolyte (Kiene et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data showing DMSP in the cytoplasm and a citation to Kiene et al., 1996.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e00ef953-9aa0-416c-97d4-3be48d2e32df",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C64",
+      "claim": "The presence of strong 34S signals in and around chloroplasts, where ROS are formed, supports DMSP's role as an antioxidant.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the presence of strong 34S signals in and around chloroplasts, where ROS are formed, support its role as an antioxidant (Sunda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and a citation to Sunda et al., 2002.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "2d105a85-df82-40fe-a404-677bf3d609e8",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C65",
+      "claim": "Following synthesis by phytoplankton, DMSP constitutes an important carbon and sulfur source for heterotrophic marine bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Following synthesis by phytoplankton, DMSP constitutes an important carbon and sulfur source for heterotrophic marine bacteria, which can either demethylate the compound and incorporate its sulfur into proteins or cleave it to produce DMS (Curson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Curson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "896d454e-1e67-412c-a124-35c7c406b3ac",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C66",
+      "claim": "Marine bacteria can either demethylate DMSP and incorporate its sulfur into proteins or cleave it to produce DMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Following synthesis by phytoplankton, DMSP constitutes an important carbon and sulfur source for heterotrophic marine bacteria, which can either demethylate the compound and incorporate its sulfur into proteins or cleave it to produce DMS (Curson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Curson et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "997151a1-464b-4c9f-b725-d52451a850d2",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C67",
+      "claim": "Total DMSP concentrations in Symbiodinium cells inoculated with the DMSP-degrading bacterium Pseudovibrio sp. P12 were 31% lower relative to those containing no bacteria or bacteria unable to degrade DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "At the termination of the experiment, total DMSP concentrations in Symbiodinium cells inoculated with the DMSP-degrading bacterium Pseudovibrio sp. P12 were 31% lower relative to those containing no bacteria or bacteria unable to degrade DMSP (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by DMSP concentration data shown in Figure 2\u2014source data 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "d8848ed4-3d37-40c9-bee2-7b3ad479333d",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C68",
+      "claim": "The lower DMSP concentrations recorded in Pseudovibrio-inoculated treatments are likely a consequence of the presence of Pseudovibrio cells able to degrade this compound.",
+      "claim_type": "EXPLICIT",
+      "source": "As Symbiodinium abundance did not differ between the treatments (Figure 1\u2014figure supplement 2), the lower DMSP concentrations recorded are likely a consequence of the presence of Pseudovibrio cells able to degrade this compound.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the DMSP concentration data and cell count data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e276b4a4-7a26-4eff-915e-774a537711ef",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C69",
+      "claim": "The genome of Pseudovibrio sp. P12 was sequenced, revealing that this bacterium harbours a complete DMSP cleavage pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced the genome of Pseudovibrio sp. P12, revealing that this bacterium harbours a complete DMSP cleavage pathway, including a DMSP acyl-CoA transferase (encoded by dddD), a DMSP transporter (dddT) and the downstream catabolic enzymes (dddB-C) (Todd et al., 2007; Raina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequencing data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "fb2ce70c-85a8-4f3b-b5f5-c7ba647da17c",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C70",
+      "claim": "Pseudovibrio sp. P12 harbours a DMSP acyl-CoA transferase (encoded by dddD), a DMSP transporter (dddT) and the downstream catabolic enzymes (dddB-C).",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced the genome of Pseudovibrio sp. P12, revealing that this bacterium harbours a complete DMSP cleavage pathway, including a DMSP acyl-CoA transferase (encoded by dddD), a DMSP transporter (dddT) and the downstream catabolic enzymes (dddB-C) (Todd et al., 2007; Raina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequencing data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "ef24633e-1310-4958-8aa3-885b1aa39a47",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C71",
+      "claim": "NMR analyses revealed that the DMSP degradation pathway in Pseudovibrio sp. P12 was functional, enabling this strain to convert high concentrations of DMSP into DMS.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analyses using NMR revealed that this DMSP degradation pathway was functional, enabling this strain to convert high concentrations of DMSP into DMS (Raina et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by NMR data and a citation to Raina et al., 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "39569f77-3a80-486d-a66e-e3e8d99ea551",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C72",
+      "claim": "Pseudovibrio sp. P12 harbours homologues of genes involved in the demethylation pathway (dmdA-B-C-D), though these genes have relatively low sequence identity (24%, 30%, 43% and 32%, respectively) to the genes originally identified in Ruegeria pomeroyi DSS-3.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Pseudovibrio sp. P12 harbours homologues of genes involved in the demethylation pathway (dmdA-B-C-D), though these genes have a relatively low sequence identity (24%, 30%, 43% and 32%, respectively) (Raina et al., 2016) to the genes originally identified in Ruegeria pomeroyi DSS-3 (Reisch et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by genomic sequencing data and citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "207ab5f1-e011-446d-97be-fe25021a6e27",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C73",
+      "claim": "Bacteria-sized 15N hotspots localised outside Symbiodinium cells in NanoSIMS images were accurately identified as inoculated bacterial cells based on their unique nitrogen isotopic signatures (1151-fold increase on average over natural abundance, n = 79).",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria-sized 15N hotspots localised outside Symbiodinium cells in NanoSIMS images were accurately identified as inoculated bacterial cells based on their unique nitrogen isotopic signatures (1151-fold increase on average over natural abundance, n = 79, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f9326b1b-5b13-48f5-a00b-32fb000df64d",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C74",
+      "claim": "Within the Pseudovibrio treatment, the position of 15N hotspots correlated exactly with 34S hotspots.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, within the Pseudovibrio treatment, the position of these 15N hotspots correlated exactly with 34S hotspots (Figure 4), which were characterised by a 3.3-fold increase in the 34S/32S ratio over natural abundance (n = 60, Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c1e3ddf9-b3dd-4d8e-818a-90749be1fe9d",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C75",
+      "claim": "34S hotspots in the Pseudovibrio treatment were characterised by a 3.3-fold increase in the 34S/32S ratio over natural abundance (n = 60).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, within the Pseudovibrio treatment, the position of these 15N hotspots correlated exactly with 34S hotspots (Figure 4), which were characterised by a 3.3-fold increase in the 34S/32S ratio over natural abundance (n = 60, Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0b1d7776-6acd-4cf7-ae82-dd06f1ce0bbb",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C76",
+      "claim": "The correlation between 15N and 34S hotspots confirmed that Pseudovibrio cells assimilated 34S-labelled Symbiodinium-derived metabolites.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations confirmed that Pseudovibrio cells assimilated 34S-labelled Symbiodinium-derived metabolites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data showing co-localization of 15N and 34S signals.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "3b06b441-534a-4c1f-9801-12197025514a",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C77",
+      "claim": "A 34% increase was recorded in the mean 34S/32S ratio of E. coli cells (0.058 \u00b1 0.002; n = 19), which are unable to degrade DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "A 34% increase was also recorded in the mean 34S/32S ratio of E. coli cells (0.058 \u00b1 0.002; n = 19), which are unable to degrade DMSP (compared to controls: 0.0438, Figure 4h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by NanoSIMS data shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "a9227c76-b188-42c4-b898-b4ee7a400f68",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C78",
+      "claim": "The 34S enrichment in E. coli cells was significantly higher than the expected natural abundance levels (t-Test, n = 19, t = 9.227, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment, significantly higher than the expected natural abundance levels (t-Test, n = 19, t = 9.227, *p<0.001), can be explained by: (i) the capacity of E. coli to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant (Cosquer et al., 1999); (ii) the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine, which occur at a ratio of 8.2 \u00b1 2.6 per 1000 amino acid residues in these dinoflagellates (Markell and Trench, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of NanoSIMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "faa46ac7-837a-4dd0-9b1b-179f7af8185b",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C79",
+      "claim": "The 34S enrichment in E. coli can be explained by E. coli's capacity to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment, significantly higher than the expected natural abundance levels (t-Test, n = 19, t = 9.227, *p<0.001), can be explained by: (i) the capacity of E. coli to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant (Cosquer et al., 1999); (ii) the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine, which occur at a ratio of 8.2 \u00b1 2.6 per 1000 amino acid residues in these dinoflagellates (Markell and Trench, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and a citation to Cosquer et al., 1999.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1a96556b-89a0-4224-9739-b29fc0c2508f",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C80",
+      "claim": "The 34S enrichment in E. coli can be explained by the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment, significantly higher than the expected natural abundance levels (t-Test, n = 19, t = 9.227, *p<0.001), can be explained by: (i) the capacity of E. coli to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant (Cosquer et al., 1999); (ii) the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine, which occur at a ratio of 8.2 \u00b1 2.6 per 1000 amino acid residues in these dinoflagellates (Markell and Trench, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and a citation to Markell and Trench, 1993.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "bd9bcbed-165a-497a-8985-d2fad1485a83",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C81",
+      "claim": "Methionine occurs at a ratio of 8.2 \u00b1 2.6 per 1000 amino acid residues in Symbiodinium.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment, significantly higher than the expected natural abundance levels (t-Test, n = 19, t = 9.227, *p<0.001), can be explained by: (i) the capacity of E. coli to uptake small quantities of DMSP through betaine transporters to use as an osmoprotectant (Cosquer et al., 1999); (ii) the exudation of small quantities of other sulfur-containing substrates by Symbiodinium, such as methionine, which occur at a ratio of 8.2 \u00b1 2.6 per 1000 amino acid residues in these dinoflagellates (Markell and Trench, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Markell and Trench, 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "db13a409-7c2d-4c25-8f89-9e5cf0b64b90",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C82",
+      "claim": "The high 34S enrichment recorded in Pseudovibrio cells, together with the significant decrease of particulate DMSP recorded in Pseudovibrio-inoculated treatments, are likely due to the incorporation and degradation of DMSP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the high 34S enrichment recorded in Pseudovibrio cells, together with the significant decrease of particulate DMSP recorded in Pseudovibrio-inoculated treatments (Figure 4i), are likely due to the incorporation and degradation of DMSP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and DMSP concentration measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "a72735cf-634b-4a2f-bb3e-41d5d40ed2b8",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C83",
+      "claim": "Pseudovibrio incorporated seven times more sulfur than E. coli during the six-hours incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of 34S uptake between the two bacterial strains further highlights differences in their capacity to metabolise DMSP; Pseudovibrio incorporated seven times more sulfur than E. coli during the six-hours incubation (Pseudovibrio: specific uptake of 6.4 \u00b1 0.3 ng S mg\u22121 of dry weight, n = 60; E. coli: 0.9 \u00b1 0.1 ng S mg\u22121 of dry weight, n = 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of NanoSIMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "3b959d28-8af1-4f1f-a709-382cd6d40df5",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C84",
+      "claim": "Pseudovibrio had a specific sulfur uptake of 6.4 \u00b1 0.3 ng S mg\u22121 of dry weight (n = 60).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of 34S uptake between the two bacterial strains further highlights differences in their capacity to metabolise DMSP; Pseudovibrio incorporated seven times more sulfur than E. coli during the six-hours incubation (Pseudovibrio: specific uptake of 6.4 \u00b1 0.3 ng S mg\u22121 of dry weight, n = 60; E. coli: 0.9 \u00b1 0.1 ng S mg\u22121 of dry weight, n = 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of NanoSIMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e7412ee6-e4ee-4938-a3ae-5209fc880491",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C85",
+      "claim": "E. coli had a specific sulfur uptake of 0.9 \u00b1 0.1 ng S mg\u22121 of dry weight (n = 19).",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of 34S uptake between the two bacterial strains further highlights differences in their capacity to metabolise DMSP; Pseudovibrio incorporated seven times more sulfur than E. coli during the six-hours incubation (Pseudovibrio: specific uptake of 6.4 \u00b1 0.3 ng S mg\u22121 of dry weight, n = 60; E. coli: 0.9 \u00b1 0.1 ng S mg\u22121 of dry weight, n = 19).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by quantitative analysis of NanoSIMS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "8cb29523-1ddb-4067-81e0-e369a6e8e8f3",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C86",
+      "claim": "Enzymatic cleavage of 34S-DMSP into volatile 34S-DMS, which diffuses out of Pseudovibrio cells, likely caused an underestimation of the amount of sulfur cycled by this bacterium.",
+      "claim_type": "EXPLICIT",
+      "source": "However, enzymatic cleavage of 34S-DMSP into volatile 34S-DMS, which diffuses out of Pseudovibrio cells and is therefore not captured by our NanoSIMS measurements, are likely to have caused an underestimation of the amount of sulfur cycled by this bacterium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known DMSP cleavage pathway and the limitations of the NanoSIMS method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "c626ab82-914e-4e4e-b216-e9a099a2cc56",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C87",
+      "claim": "This study used two SIMS approaches to directly visualise the accumulation and subsequent transfer of DMSP between marine microalgae and bacteria with unprecedented sub-cellular resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we used two SIMS approaches to directly visualise the accumulation and subsequent transfer of DMSP between marine microalgae and bacteria with unprecedented sub-cellular resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the methodology and achievements of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1767578e-bb8d-4d8f-9325-1f0b3750fcf8",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C88",
+      "claim": "The method applied enables the preservation of water-soluble compounds, such as DMSP, in samples and is applicable to any system.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a method that enables the preservation of water-soluble compounds, such as DMSP, in samples. This procedure, applicable to any system, may serve as a template to study the sub-cellular localization and identification of other small and highly diffusible molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the broader applicability of the methodology developed in the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "6ce9d7c7-00aa-41ad-b4e7-c0ae161e504e",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C89",
+      "claim": "The method may serve as a template to study the sub-cellular localization and identification of other small and highly diffusible molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied a method that enables the preservation of water-soluble compounds, such as DMSP, in samples. This procedure, applicable to any system, may serve as a template to study the sub-cellular localization and identification of other small and highly diffusible molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "3ffe15c5-88d8-4f73-a929-d77eb487158d",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C90",
+      "claim": "The method may be used to quantify the production rate of DMSP at the single cell level, similarly to other recent stable isotope approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, similarly to other recent stable isotope approaches (Stefels et al., 2009), our method may be used to quantify the production rate of DMSP at the single cell level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential applications of the methodology, with a citation to similar approaches.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e3518e09-809a-40bb-9e66-be82a5a805fa",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C91",
+      "claim": "34S-DMSP was confirmed to be the main organic sulfur compound within the algal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that 34S-DMSP was the main organic sulfur compound within the algal cells and we subsequently localised large quantities of the sulfur tracer 34S in algal vacuole, cytoplasm and chloroplasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's findings based on multiple analytical techniques.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "07e9e336-f258-40c9-8919-b930551592b9",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C92",
+      "claim": "Large quantities of the sulfur tracer 34S were localised in algal vacuole, cytoplasm and chloroplasts.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that 34S-DMSP was the main organic sulfur compound within the algal cells and we subsequently localised large quantities of the sulfur tracer 34S in algal vacuole, cytoplasm and chloroplasts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the NanoSIMS findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "2360fd33-d972-438e-b4c2-ec38cae10ed9",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C93",
+      "claim": "The localization of 34S in vacuole, cytoplasm and chloroplasts strongly indicates that the relative concentrations of DMSP are higher in these key cellular locations.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly indicates that the relative concentrations of DMSP are higher in these key cellular locations, providing corroborative evidence for its functional role in mitigating both osmotic and oxidative stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data showing 34S enrichment in specific cellular compartments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "cf1a9e65-0682-454b-9591-2875162a380f",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C94",
+      "claim": "The localization of DMSP in vacuole, cytoplasm and chloroplasts provides corroborative evidence for its functional role in mitigating both osmotic and oxidative stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly indicates that the relative concentrations of DMSP are higher in these key cellular locations, providing corroborative evidence for its functional role in mitigating both osmotic and oxidative stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the NanoSIMS data and knowledge of DMSP functions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "4ada0ba8-5e5b-4080-8705-d954944c65d7",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C95",
+      "claim": "It is possible to image and quantify DMSP in phytoplankton and their associated bacteria at the sub-cellular scale.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we have demonstrated that it is possible to image and quantify DMSP in phytoplankton and their associated bacteria at the sub-cellular scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the study's achievements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "f6b5bba8-97ca-40d0-9057-5158431711ae",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C96",
+      "claim": "These methods open the way to further studies resolving the role of DMSP in phytoplankton and its contribution to phytoplankton-bacteria interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods open the way to further studies resolving the role of DMSP in phytoplankton and its contribution to phytoplankton-bacteria interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the future applications of the methodology.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "8b0a22b4-dca8-4efb-910d-0e1245c951f6",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C97",
+      "claim": "Cells of Symbiodinium type C1 used in this study were isolated from air-brushed tissues of the coral Acropora tenuis collected from Magnetic Island, Great Barrier Reef, Australia.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of Symbiodinium type C1 (confirmed by sequencing of the ITS1 gene) used in this study were isolated from air-brushed tissues of the coral Acropora tenuis, which had been collected from Magnetic Island, Great Barrier Reef, Australia (latitude 19\u00b010'S; longitude 146\u00b050'E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and identification of the Symbiodinium strain used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "299de3b1-c0c6-4c1e-8017-5f3390b7dd79",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C98",
+      "claim": "Symbiodinium type C1 was confirmed by sequencing of the ITS1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells of Symbiodinium type C1 (confirmed by sequencing of the ITS1 gene) used in this study were isolated from air-brushed tissues of the coral Acropora tenuis, which had been collected from Magnetic Island, Great Barrier Reef, Australia (latitude 19\u00b010'S; longitude 146\u00b050'E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular identification method used for the Symbiodinium strain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e3081565-d9f6-4583-844a-f61d8aa5b9d8",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C99",
+      "claim": "Pseudovibrio sp. P12 is commonly associated with reef-building corals.",
+      "claim_type": "EXPLICIT",
+      "source": "This bacterial strain is commonly associated with reef-building corals (Bondarev et al., 2013; Nissimov et al., 2009; Radjasa et al., 2008; Ritchie, 2006; Rypien et al., 2010; Sulistiyani et al., 2010) and capable of metabolizing DMSP as a sole carbon source (Garren et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "17918de0-714c-48e4-931a-62629a8596c0",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C100",
+      "claim": "Pseudovibrio sp. P12 is capable of metabolizing DMSP as a sole carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "This bacterial strain is commonly associated with reef-building corals (Bondarev et al., 2013; Nissimov et al., 2009; Radjasa et al., 2008; Ritchie, 2006; Rypien et al., 2010; Sulistiyani et al., 2010) and capable of metabolizing DMSP as a sole carbon source (Garren et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Garren et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "81e6228e-9569-426d-b03e-6ad485cf6c8b",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C101",
+      "claim": "Magnesium sulfate (Mg34SO4) was synthesised from pure sulfur 34S (purity >99%) following a two-step reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnesium sulfate (Mg34SO4) was synthesised from pure sulfur 34S (purity >99%, Cambridge Isotope, MA) following a two-step reaction:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the synthesis method for the isotopically labeled compound used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "ae245525-ea1b-4e57-9c05-f5756583fa08",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "claim_id": "C102",
+      "claim": "The synthesis of Mg34SO4 was confirmed by elemental analysis using an electron probe microanalyser (EPMA) equipped with an energy dispersive spectrometer (EDS).",
+      "claim_type": "EXPLICIT",
+      "source": "Elemental analysis of the dried crystals was carried out with an electron probe microanalyser (EPMA, Jeol JXA8200), equipped with an energy dispersive spectrometer (EDS), to confirm the synthesis of Mg34SO4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used to confirm the synthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "93a75b78-b572-4f97-9e21-47e39aa59ae8",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully developed and applied a novel isotope labeling and imaging methodology using NanoSIMS and ToF-SIMS to visualize DMSP at subcellular resolution. Symbiodinium cells were incubated with 34S-labeled sulfate, which was incorporated into DMSP (up to 46% of total DMSP), and a water-free sample preparation method using acrolein-ether freeze substitution preserved the highly soluble DMSP for imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C24-C25, C30-C31, C33-C34, C38-C44, C87, and C95 collectively demonstrate successful development of the methodology. The LC-MS data (C33) confirms 34S incorporation into DMSP, ToF-SIMS (C44) validates preservation through sample preparation, and the experimental controls (C25) ensure bacteria only uptake 34S from DMSP. The methodology is well-documented and validated through multiple complementary techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "42ea4d43-da95-4351-adc8-e5296e5e8d79",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NanoSIMS imaging revealed that DMSP is localized in specific subcellular compartments of Symbiodinium, with high 34S enrichment detected in vacuoles (7.7\u00d7 natural abundance), chloroplasts (8.8\u00d7), and cytoplasm (10.3\u00d7), and the highest enrichment (22\u00d7) in peripheral hotspots likely containing sulfolipids. DMSP was identified as the predominant organic sulfur compound in these cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C45-C54, C55-C58, C91-C93 provide converging evidence for DMSP localization. The NanoSIMS data (C45-C51) quantitatively demonstrate differential enrichment across organelles, complementary analytical techniques (C55-C57) confirm DMSP as the only detectable organic sulfur compound, and electron microscopy (C54) corroborates the presence of lipid droplets at hotspot locations. The inference that 34S signal originates from DMSP (C58) is well-supported by the analytical exclusion of other sulfur compounds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The subcellular localization of DMSP in cytoplasm, vacuoles, and chloroplasts provides corroborative evidence for its dual functional roles as an osmolyte and antioxidant. The presence of DMSP near chloroplasts, where reactive oxygen species are generated, supports its antioxidant function given the short half-life of hydroxyl radicals (10\u207b\u2079 seconds).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C64, C93-C94 present a logical inference connecting DMSP localization to function. The spatial distribution data from NanoSIMS (C49, C64) combined with established knowledge about ROS generation sites (C59-C62) and the requirement for antioxidants to be proximal to ROS sources provide strong support. However, this remains correlative evidence rather than direct functional demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DMSP-degrading bacterium Pseudovibrio sp. P12 incorporated seven times more sulfur than E. coli control (6.4 vs 0.9 ng S mg\u207b\u00b9 dry weight) during six-hour co-incubation with labeled Symbiodinium. NanoSIMS imaging showed co-localization of 15N-labeled bacteria with 34S hotspots (3.3-fold enrichment), and DMSP concentrations in Symbiodinium decreased by 31% in Pseudovibrio treatments. Genomic analysis confirmed Pseudovibrio harbors complete DMSP cleavage and demethylation pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C67-C76, C82-C86 provide multiple lines of evidence for bacterial DMSP uptake and degradation. The quantitative NanoSIMS data (C83-C85) is supported by bulk DMSP measurements (C67), genomic evidence for metabolic capacity (C69-C72), and spatial correlation between isotope labels (C74-C76). The acknowledgment of potential underestimation due to volatile DMS loss (C86) demonstrates appropriate consideration of methodological limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "2266f110-39fc-4549-80f6-c348753a91ff",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "E. coli control strain showed modest but statistically significant 34S enrichment (34% increase, p<0.001) despite lacking DMSP degradation pathways. This enrichment is attributed to either minor DMSP uptake via betaine transporters for osmoprotection or uptake of other 34S-labeled compounds like methionine exuded by Symbiodinium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C81 appropriately interpret unexpected control data. The statistical significance (C78) is established, and two plausible mechanistic explanations are provided with literature support (C79-C81). This demonstrates rigorous interpretation of control data and consideration of alternative explanations, though the relative contributions of the two proposed mechanisms remain unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "e59c2354-faca-408a-b9c8-2b0e3c58b626",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Symbiodinium cell density doubled during 18-day incubation in 34S-labeled medium, but unexpectedly high levels of 32S-DMSP (54-66%) remained alongside 34S-DMSP. This is explained by retention of pre-existing 32S pools due to limited cell division and potential synthesis of new 32S-DMSP during the 6-hour period in natural abundance medium before sampling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C35-C36 address an important experimental observation. The cell count data (C32) supports the explanation for incomplete isotope replacement, and the proposed mechanisms (C36) are logical given the experimental timeline. This demonstrates appropriate interpretation of isotope dilution effects in the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0725da1c-7b03-4a41-a1a2-fb6d6040628f",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that their water-free sample preparation and SIMS imaging methodology is broadly applicable to other systems for studying small, highly diffusible molecules, and may enable quantification of DMSP production rates at the single-cell level in future studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C90, C96 are speculative statements about future applications. While the methodology was successfully applied to DMSP (supported by other results), the claims about broader applicability and future quantification capabilities are not demonstrated in this study. These represent reasonable extrapolations but require validation in other systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0f455d50-1bf2-4c40-947a-2a45551f77d2",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background on DMSP's role in marine sulfur cycling, climate processes, and phytoplankton-bacteria interactions, along with detailed characterization of the biological materials used (Symbiodinium C1, Pseudovibrio sp. P12, E. coli W).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C23, C26-C29, C37, C65-C66, C97-C100 establish context and describe materials. These are well-supported by citations to prior literature and appropriate characterization of strains. The absence of detectable methionine and cysteine (C37) is noted but does not undermine the main findings. These claims provide essential background but are not primary findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    },
+    {
+      "id": "0ef21988-3fa3-4742-9067-4abc17f150d6",
+      "content_id": "265bde44-94b9-4c22-b48f-304e268efd82",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Magnesium sulfate labeled with 34S (Mg34SO4) was synthesized from pure 34S (>99% purity) via a two-step chemical reaction and confirmed by elemental analysis using EPMA-EDS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C102 describe a straightforward chemical synthesis with appropriate analytical confirmation. This methodological detail is necessary for reproducibility and is adequately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:39:04.040623Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "692d987c-7005-465e-beb2-6b6203521244",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "1800b109-8eb7-4ea9-99a6-61ba631e0a27",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "b58608e0-17f6-4a8b-bde0-f7d986dfe05a",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "e6cc14e3-3a6d-47f3-b437-8f04e148bb30",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "c24db50d-a79f-429d-81cf-cb170afb4a82",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "9b2c6741-92d2-484c-a5d5-2d5c5cbca86c",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "47aa7d53-bb5d-47ee-aeba-ecdb4e3cbec5",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "118105d3-6846-41be-8600-4bb130495c87",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "d85ff2a7-0fc8-4507-a4c1-58ea12ba5707",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "9c8ffaec-f8ec-4079-8e78-2494e80ebdad",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "0a545859-4dcb-4af1-9acf-23f6b2f7f954",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "afd5813b-b0be-4f05-ad6d-5a2b5e4e6e46",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "7c768cdb-bb5e-4816-881f-b933850b12f2",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "bb09e00c-72ce-4a3b-a624-0bd7290c7b91",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "c626ab82-914e-4e4e-b216-e9a099a2cc56",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "4ada0ba8-5e5b-4080-8705-d954944c65d7",
+      "result_id": "93a75b78-b572-4f97-9e21-47e39aa59ae8"
+    },
+    {
+      "claim_id": "0d51daaa-fcae-43b3-a7a4-6b727090db45",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "9f481c36-80b2-477d-936c-30f8e1101139",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "af59c39a-3164-4701-af45-37418ca24191",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "52bf20e7-70c0-4d3c-ba34-dd27571fe220",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "f3c63317-b82d-4934-94a3-bc9e4a72daff",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "acec7df9-5b44-4f6d-9cfe-f79c2672cace",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "61178450-fa99-4ab2-84ad-620510f90da6",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "f5425ca8-27a5-4a05-ab56-8de8b5e04dd5",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "1952b1e2-580f-4a1f-bd06-52c8d0b90c9c",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "85e97e81-e1a1-4870-a7d6-03eebc47a0e4",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "0f250f9c-e28c-4b8e-bbaf-5e6c01850bda",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "0e6c0687-31c4-4593-9151-774727889fe4",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "0c46f20b-d4a2-442d-b577-ea584c15462f",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "7766b0b7-b115-4ea0-b693-45e34df326dd",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "913c953a-5ac6-49ef-bdda-9a3c85eac446",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "e3518e09-809a-40bb-9e66-be82a5a805fa",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "07e9e336-f258-40c9-8919-b930551592b9",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "2360fd33-d972-438e-b4c2-ec38cae10ed9",
+      "result_id": "42ea4d43-da95-4351-adc8-e5296e5e8d79"
+    },
+    {
+      "claim_id": "b52b8efc-d982-4f4d-b17a-5c9c29ba30de",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "d97b6d04-4051-473b-9d50-bfe5958bfc61",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "553d64e5-bb37-49b9-9cb2-e28d0001d634",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "358c1405-899d-4b55-8b81-f6098014da31",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "ef42727e-754f-4e8c-a2fd-b473b3ddddf1",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "e00ef953-9aa0-416c-97d4-3be48d2e32df",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "2360fd33-d972-438e-b4c2-ec38cae10ed9",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "cf1a9e65-0682-454b-9591-2875162a380f",
+      "result_id": "1f8a2ea8-5c1a-4816-ab1e-7e20cb88f1a4"
+    },
+    {
+      "claim_id": "837929ec-4d1f-4546-a4f3-0627639113dd",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "997151a1-464b-4c9f-b725-d52451a850d2",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "d8848ed4-3d37-40c9-bee2-7b3ad479333d",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "e276b4a4-7a26-4eff-915e-774a537711ef",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "fb2ce70c-85a8-4f3b-b5f5-c7ba647da17c",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "ef24633e-1310-4958-8aa3-885b1aa39a47",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "39569f77-3a80-486d-a66e-e3e8d99ea551",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "207ab5f1-e011-446d-97be-fe25021a6e27",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "f9326b1b-5b13-48f5-a00b-32fb000df64d",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "c1e3ddf9-b3dd-4d8e-818a-90749be1fe9d",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "0b1d7776-6acd-4cf7-ae82-dd06f1ce0bbb",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "db13a409-7c2d-4c25-8f89-9e5cf0b64b90",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "a72735cf-634b-4a2f-bb3e-41d5d40ed2b8",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "3b959d28-8af1-4f1f-a709-382cd6d40df5",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "e7412ee6-e4ee-4938-a3ae-5209fc880491",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "8cb29523-1ddb-4067-81e0-e369a6e8e8f3",
+      "result_id": "1c99bdab-4b5d-47ac-98e8-e125fcfecfec"
+    },
+    {
+      "claim_id": "3b06b441-534a-4c1f-9801-12197025514a",
+      "result_id": "2266f110-39fc-4549-80f6-c348753a91ff"
+    },
+    {
+      "claim_id": "a9227c76-b188-42c4-b898-b4ee7a400f68",
+      "result_id": "2266f110-39fc-4549-80f6-c348753a91ff"
+    },
+    {
+      "claim_id": "faa46ac7-837a-4dd0-9b1b-179f7af8185b",
+      "result_id": "2266f110-39fc-4549-80f6-c348753a91ff"
+    },
+    {
+      "claim_id": "1a96556b-89a0-4224-9739-b29fc0c2508f",
+      "result_id": "2266f110-39fc-4549-80f6-c348753a91ff"
+    },
+    {
+      "claim_id": "bd9bcbed-165a-497a-8985-d2fad1485a83",
+      "result_id": "2266f110-39fc-4549-80f6-c348753a91ff"
+    },
+    {
+      "claim_id": "5f616b47-1e74-4205-a398-b2146c567d59",
+      "result_id": "e59c2354-faca-408a-b9c8-2b0e3c58b626"
+    },
+    {
+      "claim_id": "dcdaa9e8-2702-4bbe-81a3-ba4262a2ed06",
+      "result_id": "e59c2354-faca-408a-b9c8-2b0e3c58b626"
+    },
+    {
+      "claim_id": "c3f21c8a-a0d7-4a50-a8a3-56ac7be30cfc",
+      "result_id": "e59c2354-faca-408a-b9c8-2b0e3c58b626"
+    },
+    {
+      "claim_id": "1767578e-bb8d-4d8f-9325-1f0b3750fcf8",
+      "result_id": "0725da1c-7b03-4a41-a1a2-fb6d6040628f"
+    },
+    {
+      "claim_id": "6ce9d7c7-00aa-41ad-b4e7-c0ae161e504e",
+      "result_id": "0725da1c-7b03-4a41-a1a2-fb6d6040628f"
+    },
+    {
+      "claim_id": "3ffe15c5-88d8-4f73-a929-d77eb487158d",
+      "result_id": "0725da1c-7b03-4a41-a1a2-fb6d6040628f"
+    },
+    {
+      "claim_id": "f6b5bba8-97ca-40d0-9057-5158431711ae",
+      "result_id": "0725da1c-7b03-4a41-a1a2-fb6d6040628f"
+    },
+    {
+      "claim_id": "ff72a055-48b6-41af-bd37-154a5d56f66b",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "5e81d336-4f1f-464b-bc4e-521b15763e82",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "c3245359-83de-420d-ac8a-218291e77c2b",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "abd7cf65-c1c7-4f00-bc6d-88136c7a8466",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "2bedf839-557f-4e23-9ed8-477600aa9bbe",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "e426056b-e463-43d1-9c4a-2a19d3c85447",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "d4746210-ac4e-45e4-9f86-4cabfe08d4ae",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "f36b63ff-5c5d-40fe-8810-7ab13b1ce819",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "c77f3806-181a-411e-a03a-180c13e6ad30",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "5637981e-afba-4932-97f8-3d6f8f5e9c6b",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "e2c85db7-3b2a-4de3-a48a-0c2c7d4f352a",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "428aa889-8ba3-4686-8a76-c97b1dd1815f",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "d5b79cd2-5ade-47d5-8aa6-def6533611fa",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "8ea6eba0-b04a-4e39-ad83-faac6905e497",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "1310345b-134d-47d6-a262-32e870efdbfe",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "daee809b-0fc8-415d-b158-f46da8b159f3",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "68670186-6b3c-4e24-996d-adc21b4ffebf",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "a43e3d50-e712-4a75-87bb-6265564ed2c1",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "3f063893-1e8e-4f0a-90b9-6216e403dc17",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "6353a388-92d0-4b1a-a8c9-7345ba995d69",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "5713b4f0-1fd8-4809-adad-2fd283dee64e",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "67c9ab82-de84-4fce-af00-c0aafcdd56bb",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "f077d3d6-7b04-4aed-a5ac-d012eb9df413",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "29c1f904-73cd-4d08-bc4c-6797bdb5303c",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "48178295-453e-4578-b76c-050d34e2eecc",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "2d105a85-df82-40fe-a404-677bf3d609e8",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "896d454e-1e67-412c-a124-35c7c406b3ac",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "8b0a22b4-dca8-4efb-910d-0e1245c951f6",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "299de3b1-c0c6-4c1e-8017-5f3390b7dd79",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "e3081565-d9f6-4583-844a-f61d8aa5b9d8",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "17918de0-714c-48e4-931a-62629a8596c0",
+      "result_id": "0f455d50-1bf2-4c40-947a-2a45551f77d2"
+    },
+    {
+      "claim_id": "81e6228e-9569-426d-b03e-6ad485cf6c8b",
+      "result_id": "0ef21988-3fa3-4742-9067-4abc17f150d6"
+    },
+    {
+      "claim_id": "ae245525-ea1b-4e57-9c05-f5756583fa08",
+      "result_id": "0ef21988-3fa3-4742-9067-4abc17f150d6"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "TRPML1 is required for mTORC1 activation. TRPML1 knockdown inhibits mTORC1 activity (measured by S6K phosphorylation) without affecting Akt (T308) phosphorylation. This inhibition is rescued by thapsigargin and attenuates mTORC1 activation by insulin, leucine, and constitutively active Rag GTPases. TRPML1-/- human fibroblasts show decreased S6K phosphorylation that is partially reversed by leucine but fully restored by thapsigargin. Knockdown of other lysosomal channels (TPC2, P2X4) does not significantly inhibit mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C35-C45 provide converging evidence from multiple experimental approaches (knockdown, patient cells, rescue experiments, specificity controls) demonstrating TRPML1's requirement for mTORC1 activation. The data show consistent effects across different cell types and stimuli, with appropriate controls (Akt phosphorylation, other channels). The rescue by thapsigargin supports the calcium-dependence mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Overexpression or pharmacological activation of TRPML1 activates mTORC1. Wild-type TRPML1 overexpression (but not a non-conducting mutant) increases S6K phosphorylation. The TRPML1 agonist MLSA1 increases S6K phosphorylation in a dose-dependent manner, an effect blocked by TRPML1 knockdown, bafilomycin A1, or GPN. mTOR colocalizes with TRPML1 on lysosomes upon amino acid stimulation. TRPML1 activation of mTORC1 is not mediated through autophagy (Rab7A experiments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C46-C54 demonstrate gain-of-function effects complementing the loss-of-function data. The use of a non-conducting mutant (C46), pharmacological agonist with appropriate controls (C47-C49), and mechanistic dissection from autophagy (C52-C54) provide strong support. The colocalization data (C50) supports spatial proximity but inference about independence (C51) requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Calcium chelation (BAPTA) and CaM antagonists (W-7, CMDZ) inhibit mTORC1 activity. BAPTA, W-7, and CMDZ inhibit S6K phosphorylation with IC50 values of 3.96\u00b11.30 \u03bcM, 21.59\u00b11.81 \u03bcM, and 10.36\u00b10.59 \u03bcM, respectively. mTORC2 (Akt S473 phosphorylation) is inhibited at higher concentrations or with slower kinetics. BAPTA does not significantly affect Akt phosphorylation. Effects are observed in multiple cell types (HEK293T, HUVEC, A549).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 provide dose-response data with calculated IC50/EC50 values and time-course experiments showing differential sensitivity between mTORC1 and mTORC2. The data are consistent across multiple cell types (C60) and show appropriate selectivity (C59, C65). The inference about differential regulation (C64, C66) is well-supported by the kinetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The site of Ca2+/CaM regulation of mTORC1 lies proximal to mTORC1 itself. mTORC1 activation by leucine, constitutively active Rag GTPases (RagAQ66L, RagCS75N), insulin, and constitutively active Rheb (RhebN153T) all remain sensitive to BAPTA and CMDZ inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 systematically test sensitivity to Ca2+/CaM antagonists across multiple upstream activators of mTORC1. The consistent sensitivity despite bypassing different upstream regulators (Rag GTPases, Rheb) supports the inference (C71) that regulation occurs at or very near mTORC1 itself. The logic is sound and the experimental design appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "CaM interacts directly with mTOR independent of hVps34 and raptor. CaM sepharose pulls down mTOR and raptor (but not PRAS40) in a Ca2+-dependent manner. The interaction is sensitive to detergents and CaM antagonist W-7. hVps34 knockdown does not affect CaM-mTOR binding or mTORC1 sensitivity to CaM. Raptor knockdown does not affect mTOR pulldown by CaM, but mTOR knockdown reduces both mTOR and raptor binding to CaM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C72-C79 provide biochemical evidence for direct CaM-mTOR interaction through pulldown experiments with appropriate controls (Ca2+ dependence, antagonist sensitivity, knockdown experiments). The data rule out hVps34 as a mediator (C72-C73) and demonstrate independence from raptor (C77-C79). The inference of direct interaction (C79) is well-supported by the knockdown experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "CaM stimulates mTORC1 kinase activity in vitro in a Ca2+-dependent manner. In vitro kinase assays using immunoprecipitated mTORC1 show that phosphorylation of 4EBP1 and S6K is significantly increased in the presence of both Ca2+ (1 mM) and CaM (2 \u03bcM), but not CaM alone. This activation is inhibited by the TOR kinase inhibitor Torin 1 and the CaM antagonist CMDZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C80-C86 provide direct biochemical evidence for CaM-dependent activation of mTORC1 kinase activity using in vitro assays with purified components. The requirement for both Ca2+ and CaM (C80-C81), inhibition by Torin 1 and CMDZ (C82-C83), and replication with two substrates (C85) provide strong support. The inference that CaM binding stimulates kinase activity (C86) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C87"
+    ],
+    "result": "mTOR is a new type of CaM-dependent kinase, and TRPML1, lysosomal calcium, and CaM play essential regulatory roles in mTORC1 signaling. The proposed model suggests that upon mTORC1 translocation to lysosomes, lysosomal calcium released through TRPML1 enriches local Ca2+ concentration, prompting Ca2+ binding to CaM, which binds mTORC1 and stimulates its kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C87 represent the major conclusions and proposed model integrating all experimental findings. The classification of mTOR as a CaM-dependent kinase (C8) is supported by the direct demonstration of Ca2+/CaM-dependent kinase activation (C80-C86). The proposed model (C87) is a reasonable integration of the data, though it remains a model requiring further validation of the spatial aspects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "There is a difference in mechanisms of mTOR regulation by Ca2+/CaM between mammalian and fly cells. In TRPML1-knockdown mammalian cells or mucolipidosis IV fibroblasts, inhibited mTORC1 signaling is only partially reversed by leucine or constitutively active Rag GTPase, unlike in Drosophila where high-protein diet fully rescues TORC1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 compare mammalian and fly systems based on the current data (C88) and prior work (C32-C33). The partial rescue by leucine/Rag GTPases in mammalian cells (C42, C40) versus full rescue by high-protein diet in flies supports mechanistic differences. However, the comparison is indirect and the inference (C89) should be considered tentative pending direct comparative studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior work established connections between lysosomal lipid accumulation, calcium homeostasis defects, and mTOR inhibition. NPC cells show defects in lysosomal calcium homeostasis, and TRPML1-deficient cells display altered Ca2+ homeostasis similar to NPC cells. Chemical NPC inducers inhibit mTOR and reduce TRPML1-mediated lysosomal Ca2+ release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C28-C31 summarize prior work that motivated the current study. These are appropriately cited and provide context for the hypothesis. C1 and C28 cite prior work, C29-C30 cite established findings, and C31 appears to reference prior observations. The claims accurately represent the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on mTOR complexes and signaling. mTOR forms two distinct complexes (mTORC1 and mTORC2) with shared and unique subunits. mTORC1 integrates signals from growth factors, amino acids, stress, and energy status to regulate protein/lipid synthesis and autophagy by phosphorylating S6K and 4EBP1. mTORC2 regulates Akt phosphorylation and cytoskeleton. Amino acid activation requires mTORC1 translocation to lysosomes via Rag GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21 provide established background knowledge about mTOR signaling, appropriately cited to prior work. These are well-established facts in the field and accurately represent the cited literature. They provide necessary context for understanding the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work implicated calcium and CaM in mTOR signaling. Calcium is required for p70S6K activation. S6K1 phosphorylation in response to amino acids is inhibited by BAPTA-AM and activated by thapsigargin. CaM antagonists or CaM knockdown inhibit mTORC1 activation by amino acids, suggesting CaM is required for mTORC1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 accurately summarize prior work on calcium/CaM in mTOR signaling, with appropriate citations. These claims provide important context for the current study's mechanistic investigations and are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Prior work on TRPML1 and TORC1 in flies and reciprocal regulation. In Drosophila, TRPML1 homolog is required for TORC1 activation and autophagosome-lysosome fusion, with inhibition rescued by high-protein diet. TORC1 exerts reciprocal control on TRPML function. TRPML1 is upregulated during amino acid starvation when mTORC1 is inactive, suggesting reciprocal regulation. Under starvation, lysosomal Ca2+ through TRPML1 activates calcineurin, which dephosphorylates TFEB. Upregulated TRPML1 promotes autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C90-C93 summarize prior work on TRPML1-TORC1 relationships in flies and mammals, with appropriate citations. The inference about reciprocal regulation (C91) is reasonable based on the cited work (C90). These claims provide important context for understanding the broader regulatory network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Thapsigargin is a sarco/endoplasmic reticulum Ca2+-ATPase inhibitor that increases cytosolic calcium concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is established knowledge about thapsigargin's mechanism of action, appropriately cited. This is a well-known pharmacological tool and the description is accurate.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1533 @@
+{
+  "submission": {
+    "id": "dc399980-fb1a-4706-9abb-ad87d4d625b7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:56:25.482361Z",
+    "updated_at": "2025-11-30T23:56:25.482361Z"
+  },
+  "content": [
+    {
+      "id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "submission_id": "dc399980-fb1a-4706-9abb-ad87d4d625b7",
+      "content_type": "manuscript",
+      "content_text": "# Structural insights into the molecular mechanisms of myasthenia gravis and their therapeutic implications\n\n## Authors\n\n- Kaori Noridomi<sup>1</sup> ([ORCID: 0000-0002-4303-7511](https://orcid.org/0000-0002-4303-7511))\n- Go Watanabe<sup>2</sup> ([ORCID: 0000-0003-3911-3021](https://orcid.org/0000-0003-3911-3021))\n- Melissa N Hansen<sup>3</sup>\n- Gye Won Han<sup>4</sup>\n- Lin Chen<sup>1</sup> ([ORCID: 0000-0003-4798-6199](https://orcid.org/0000-0003-4798-6199)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry University of Southern California Los Angeles United States\n2. USC Norris Comprehensive Cancer Center Keck School of Medicine, University of Southern California Los Angeles United States\n3. Molecular and Computational Biology, Department of Biological Sciences University of Southern California Los Angeles United States\n4. Department of Chemistry, Bridge Institute University of Southern California Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nicotinic acetylcholine receptor (nAChR) is a major target of autoantibodies in myasthenia gravis (MG), an autoimmune disease that causes neuromuscular transmission dysfunction. Despite decades of research, the molecular mechanisms underlying MG have not been fully elucidated. Here, we present the crystal structure of the nAChR \u03b11 subunit bound by the Fab fragment of mAb35, a reference monoclonal antibody that causes experimental MG and competes with ~65% of antibodies from MG patients. Our structures reveal for the first time the detailed molecular interactions between MG antibodies and a core region on nAChR \u03b11. These structures suggest a major nAChR-binding mechanism shared by a large number of MG antibodies and the possibility to treat MG by blocking this binding mechanism. Structure-based modeling also provides insights into antibody-mediated nAChR cross-linking known to cause receptor degradation. Our studies establish a structural basis for further mechanistic studies and therapeutic development of MG.\n\n## Introduction\n\nThe nicotinic acetylcholine receptor (nAChR) at the neuromuscular junction (NMJ) is a ligand-gated ion channel that mediates rapid signal communication between spinal motor neurons and the muscle cells. This receptor is also a major target of autoimmune antibodies in patients with myasthenia gravis (MG), an autoimmune disease that afflicts more than 20 in 100,000 people (Lindstrom, 2000; Vincent et al., 2001). MG is the first and, so far, only autoimmune disease with well-defined autoantigen target; the binding of nAChR by MG antibodies leads to complement-mediated lysis of the postsynaptic structure and internalization of the receptor, thereby disrupting neuromuscular transmission (Engel and Arahata, 1987; Drachman et al., 1978; Gomez et al., 2010). The majority of MG cases can be diagnosed by the detection of autoantibodies to human muscle nAChR, and current treatment options include the use of acetylcholine esterase inhibitors, non-specific immunosuppressive drugs, plasmapheresis and thymectomy. Most of these treatments are for symptomatic control except for thymectomy that may lead to disease remission. Other therapeutic approaches to treating MG, such as nAChR-specific immunosuppressive therapy (Luo and Lindstrom, 2015), need to be explored.\n\nThe autoimmune nature of MG was first suggested by the discovery of experimental autoimmune myasthenia gravis (EAMG) induced in rabbits immunized with nAChR purified from Electrophorus electricus (Patrick and Lindstrom, 1973). Subsequent studies with passive transfer of MG patient serum or purified nAChR antibodies to induce EAMG further established nAChR antibodies as the major pathological agents of MG (Toyka et al., 1975; Lindstrom et al., 1976). In fact, more than 85% of MG patients carry nAChR antibodies (Lindstrom, 2000; Vincent et al., 2001; Meriggioli and Sanders, 2009). However, the total amount of nAChR antibodies in the serum of MG patients does not seem to correlate with disease severity, suggesting that various nAChR antibodies that bind different regions on nAChR may contribute differently to this disease (Somnier, 1993; Berrih-Aknin, 1995; Mossman et al., 1988; Tzartos et al., 1998).\n\nMammalian muscle nAChR has a pentameric structure composed of two \u03b11, one \u03b21, one \u03b4, and one \u03b5 (adult form) or \u03b3 (fetal form) subunit(s) (Unwin, 2005). Extensive studies suggest that antibodies to \u03b11 play a major role in MG pathology (Sideris et al., 2007; Tzartos et al., 2008, 1987; Kordas et al., 2014). Furthermore, more than half of all autoantibodies in MG and EAMG bind an overlapping region on the nAChR \u03b11 subunit, known as the main immunogenic region (MIR) (Tzartos et al., 1998). The MIR is defined by the ability of a single rat monoclonal antibody (mAb), mAb35, to inhibit the binding of about 65% autoantibodies from MG patients or rats with EAMG (Tzartos and Lindstrom, 1980; Tzartos et al., 1982, 1983). Subsequent studies have mapped MIR to a peptide region that spans residues 67\u201376 on nAChR \u03b11 (Barkas et al., 1988; Tzartos et al., 1988). Monoclonal antibodies directed to the MIR can passively transfer EAMG and possess all the key pathological functions of serum autoantibodies from MG patients (Tzartos et al., 1987). Moreover, a recent study showed that titer levels of MIR-specific antibody from MG patients, rather than the total amount of nAChR antibodies, correlate with disease severity (Masuda et al., 2012). These observations suggest that antibodies binding to the MIR on nAChR \u03b11 play a major role in the pathogenesis of MG (Tzartos et al., 1998).\n\nThe myasthenogenic role of nAChR was established more than four decades ago. Since then, extensive efforts have been put into characterizing the interactions between MG antibodies and nAChR using biochemical (Barkas et al., 1988; Tzartos et al., 1988; Das and Lindstrom, 1989; Saedi et al., 1990; Papadouli et al., 1990, 1993; Luo et al., 2009; Morell et al., 2014), structural (Dellisanti et al., 2007a; Beroukhim and Unwin, 1995; Kontou et al., 2000; Poulas et al., 2001), and modeling approaches (Kleinjung et al., 2000). These studies aimed to understand the basic mechanisms of MG and also the structure/function of nAChR in order to develop effective diagnosis and treatment for MG. However, exactly how antibodies bind and functionally affect nAChR has not been fully elucidated since no high-resolution structure of the complex between MG antibodies and nAChR was available. Here we describe the first crystal structure of muscle nAChR \u03b11 subunit bound by an EAMG antibody at 2.61 \u00c5 resolution and present detailed analyses of the molecular interactions in myasthenia gravis. These structural analyses, in the context of the large amount of biochemical and functional data from previous MG research, provide unprecedented insights into the molecular mechanisms of MG and a basis for developing more effective diagnosis and treatment for this debilitating disease.\n\n## Results\n\n### Crystal structures of the antibody/receptor complexes\n\nmAb35 was chosen for structural analysis because it shares many functional characteristics with serum antibodies from MG patients and has been used as a reference MG antibody in extensive biochemical and functional studies (Tzartos et al., 1998, 1981). Although mAb35 is derived from rat immunized with Electrophorus AChR, it competes with more than two thirds of serum antibodies from MG patients (Tzartos et al., 1982). At the functional level, mAb35 binds complement causing focal lysis of the postsynaptic membrane, cross-links AChRs thereby increasing their internalization, and can passively transfer EAMG (Tzartos et al., 1987). To facilitate crystallization, we used the Fab fragment of mAb35 (Fab35) and also included \u03b1-bungarotoxin (\u03b1-Btx) to stabilize flexible regions of nAChR \u03b11 ECD that may hinder crystallization. We used a mutant of nAChR \u03b11 ECD that contains three stabilization mutations, referred to as \u03b1211 as described previously (Dellisanti et al., 2007a). Although mAb35 does not bind well to the denatured receptor, it has been shown to bind natively folded nAChR \u03b11 with high affinity (Kd =~2 nM) (Luo et al., 2009). Our native\u00a0PAGE analysis showed that nAChR \u03b11 ECD, \u03b1-Btx and Fab35 can form a well-defined ternary complex (Figure 1a), and the ternary complex of Fab35/nAChR \u03b11 ECD/\u03b1-Btx was stable during purification by gel filtration. We obtained ternary complex crystals with both human and mouse nAChR \u03b11 ECD and solved the structures (2.61\u00a0\u00c5 and 2.70 \u00c5 resolution, respectively) by molecular replacement (Supplementary file 1). A detailed comparison between the two complex structures is presented in Figure 1\u2014figure supplements 1 and 2. Here, we focus our structural description and analysis on the antibody/receptor interface, which appears identical between the human and mouse complexes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig1-v1.jpg)\n\n**Figure 1.:** (a) Gel shift assay. Native\u00a0PAGE showed the formation of the ternary complex of nAChR \u03b11 ECD, \u03b1-Btx and Fab35. Lane 1: nAChR \u03b11 ECD alone (labeled as \u03b11 ECD), Lane 2: \u03b1-Btx alone, Lane 3: Fab35 alone, Lane 4: nAChR \u03b11 ECD plus \u03b1-Btx, Lane 5: nAChR \u03b11 ECD plus Fab35, and Lane 6: nAChR \u03b11 ECD plus \u03b1-Btx plus Fab35. Note that \u03b1-Btx in Lane 2 and Fab35 in Lane 3 were not visible because both proteins migrated upward due to their net positive charges under the experimental condition. (b) Ribbon representation of nAChR \u03b11 ECD (\u03b11: cyan) bound by \u03b1-Btx (green) and Fab35 (heavy chain, H: yellow and light chain, L: magenta). The variable domains (VH and VL) and the constant domains (CH and CL) of Fab35 are indicated accordingly. This color scheme is kept the same throughout illustration unless noted otherwise. (c) Surface representation of the ternary complex. (d) Zoomed-in view of the binding interface. The complementarity determining regions (CDRs) of the heavy chain (CDR-H1, CDR-H2, and CDR-H3) are indicated as H1, H2, and H3, respectively. Those of the light chain (CDR-L1, CDR-L2 and CDR-L3) are indicated as, L1, L2, and L3, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Our study also generated the first atomic picture of the human nAChR \u03b11 ECD, which appears very similar to the previously characterized mouse nAChR \u03b11 ECD (PDB ID, 2QC1) (Lindstrom, 2000). Many functionally important structural features observed in the mouse nAChR \u03b11 ECD are also conserved in the human \u03b11 ECD as shown here. (a) The hydrophilic residues (Thr52 and Ser126) and a bound water molecule buried inside the beta sandwich core of the ECD. The 2Fo-Fc electron density map (shown in blue) is countered at one sigma level. The electron density of water is shown as the Fo-Fc omit map (shown in green) countered at three sigma level. (b) The N-linked glycan (at the Asn141) bridging the Cys-loop and the loop C. The 2Fo-Fc electron density map (shown in blue) is contoured at one sigma level.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** A significant structural difference between the human and mouse nAChR \u03b11 ECDs is the binding interface of \u03b1-Btx. (a) In the mouse nAChR \u03b11 ECD, Phe189 is inserted into a surface pocket of \u03b1-Btx. (b) In the human nAChR \u03b11 ECD, Thr189, is too small to fill in the \u03b1-Btx pocket. These observations are consistent with predictions from previous analyses of the nAChR \u03b11/\u03b1-Btx complex (Vincent et al., 2001). The 2Fo-Fc electron density map (shown in blue) was contoured at one sigma level.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Superposition of the mouse nAChR \u03b11 ECD from the Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex (blue) and the nAChR \u03b11 ECD/\u03b1-Btx complex (green) (PDB ID, 2QC1) (Lindstrom, 2000) using the C\u03b1 backbone of the nAChR \u03b11 ECD. (b) Detailed comparison of side chain orientation of residues involved in Fab35 binding.\n\nThe Fab35 binds to nAChR \u03b11 in an upright orientation, away from the \u03b1-Btx (Figure 1b and c). The Fab35 binding sites on nAChR \u03b11 include the MIR and the N-terminal helix; the buried solvent accessible area of the complex is 899 \u00c52. Fab35 has the canonical IgG antibody structure where the complementarity determining regions (CDRs) from the heavy chain, CDR-H2 and CDR-H3, and the light chain, CDR-L3, form the binding site of nAChR \u03b11 (Figure 1d). The interface of their interaction is characterized by mutual insertion of loops into pockets of binding partners. On the receptor side (Figure 2a), the MIR loop inserts deeply into a surface pocket between the variable domains of the heavy and light chains (VH and VL), whereas the N-terminal helix sits into a groove on the surface of the heavy chain. On the Fab35 side (Figure 2b), the CDR-H3 inserts into a surface pocket formed by the N-terminal helix, the loop following the N-terminal helix, the MIR and the loop preceding the MIR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig2-v1.jpg)\n\n**Figure 2.:** (a) The MIR loop of nAChR \u03b11 inserts into a surface pocket between the variable domains of the heavy and light chains (VH and VL) of Fab35 (orange) while the N-terminal helix sits into a groove on the surface of the heavy chain. (b) The CDR-H3 (H3) from the heavy chain of Fab35 inserts into a surface pocket between the MIR loop and the N-terminal helix on the nAChR \u03b11 ECD.\n\nSuperposition of the structures of mouse nAChR \u03b11 ECD in the ternary Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex with that in the binary nAChR \u03b11 ECD/\u03b1-Btx complex (PDB ID, 2QC1) (Dellisanti et al., 2007a) shows that the nAChR \u03b11 structure remains the same in the two complex states (Figure 1\u2014figure supplement 3a). Moreover, the orientation of the side chain of most nAChR \u03b11 residues involved in Fab35 binding (see below) is similar between the two complexes (Figure 1\u2014figure supplement 3b). This structural comparison suggests that Fab35 recognizes and binds a well-defined and preformed conformation of the nAChR \u03b11 ECD.\n\n### Detailed interactions at the binding interface\n\nResidues from Fab35 and nAChR \u03b11 that are within 4.5 \u00c5 from each other at the binding interface were mapped as contacting residues. As shown in Supplementary file 2, Fab35-binding residues on nAChR \u03b11 are mostly located on the MIR loop (highlighted in light green in the table) and the N-terminal helix (highlighted in yellow in the table). While the MIR loop extensively interacts with residues from both the heavy and light chains of Fab35, the N-terminal helix interacts exclusively with residues from the heavy chain. The contacting analysis also revealed several residues on nAChR \u03b11 that make numerous contacts to Fab35. Four such \u2018hotspots\u2019 of binding were identified: Asn68 and Asp71 from the MIR loop and Arg6 and Lys10 from the N-terminal helix. As described below, each of these four \u2018hotspots\u2019 anchors an extensive network of interactions that display remarkable chemical complementarities (Figure 3). The interface interactions are well defined by electron densities (Figure 3\u2014figure supplement 1a\u2013e).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig3-v1.jpg)\n\n**Figure 3.:** (a) Binding interactions at the Asp71 site of \u03b11 (located at the MIR). (b) Binding interactions at the Asn68 site of \u03b11 (located at the MIR). (c) Binding interactions surrounding Arg6 and Lys10 of \u03b11 (located at the N-terminus of \u03b11). (d) Binding interactions mediated by His3 of \u03b11 (located at the N-terminus of \u03b11). (e) Binding interactions at the CDR-H3 loop of Fab35. Interacting residues are represented by stick model and are colored according to their protein subunits. Water molecules are represented by red spheres.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The Fo-Fc omit maps of representative side chains and main chains (only interacting ones) of the Fab35-alpha1 residues and waters at the binding interface. The Fo-Fc omit maps are shown in green and countered at two sigma level for (a) and (e) and three sigma level for (b) \u2013 (d). The orientation of each figure panel is the same as Figure 3.\n\nAsp71 forms a salt bridge with Arg50 of VH and a hydrogen bond with Tyr95 of VL (Figure 3a). Asp71 also forms hydrogen bonds with two interfacial water molecules, H2O 4 and H2O 5. H2O 4 in turn forms hydrogen bonds to the main chain amide of Asn68 of the \u03b11 and the main chain carbonyl group of Ala103 of VH. H2O 5 in turn forms hydrogen bonds to the main chain carbonyl group of Tyr91 of VL and the main chain amide of Asn105 of VH. The adjacent Tyr72 can be considered as part of the Asp71 \u2018hotspot\u2019: Tyr72 not only mediates the packing interactions between the MIR loop and the N-terminal helix but also makes extensive contacts to the antibody, including hydrogen bonding to Ala103 and van der Waals contacts to Trp52, Val58, and Asn105 of VH. At Asn68, another hotspot site (Figure 3b), the amide group of Asn68 side chain forms three hydrogen bonds with VL (the carbonyl of Tyr91 main chain and the amide and carbonyl of Gly94 main chain). The side chain of Asn68 also makes van der Waals contact to Ile92 and Asn93 of VL. Both Asn68 and Asp71 together, extending from the tip of the MIR loop, insert deeply into the antigen-binding site of Fab35 and make extensive contacts with Fab35 residues.\n\nThe N-terminal helix of nAChR \u03b11 engages in extensive interactions with VH of Fab35. These interactions are centered at Arg6 and Lys10 residues (Figure 3c). The guanidinium head group of Arg6 forms bidendate hydrogen bonds with Asp54 and cation-\u03c0 stacking with Trp52 of VH. The aliphatic side chain of Arg6 also makes van der Waals contacts to the aromatic ring of Trp52. This interaction network is extended by the nearby nAChR \u03b11 residues, Lys10 and His3 (Figure 3c and d, respectively). Lys10 forms salt bridges with Asp53 of VH (Figure 3c); its side chain also makes van der Waals contacts to numerous VH residues (not shown). His3 makes a water-mediated (H2O 1) hydrogen bond with Trp52 and van der Waals contact to Val58 of VH (Figure 3d).\n\nAn interesting structural feature of the antibody/receptor interface is the insertion of the CDR-H3 loop into a surface pocket on nAChR \u03b11 (Figure 3e). The tip of the CDR-H3 loop, including Arg102 and Ala103, makes extensive van der Waals contacts to the surrounding receptor residues. The guanidinium group of Arg102 is sandwiched by the carboxylic amide of Asn64 side chain and the carbonyl of Asp14 main chain of nAChR \u03b11 in a parallel orientation that may favor \u03c0-stacking. Arg102 also forms water-mediated (H2O 82) hydrogen bonds with the main chain carbonyl groups of Leu11 and Asn64 of nAChR \u03b11. Adjacent to the CDR-H3 interaction site, Tyr63 of nAChR \u03b11 forms a hydrogen bond with Lys50 of the CDR-L2, which is stabilized by a cation-\u03c0 interaction with Tyr32 of the CDR-L1. Lys50 of the CDR-L2 also engages in electrostatic interaction with Glu23 of nAChR \u03b11. These interactions expand the binding interface from the MIR and the N-terminal helix to the loop region between the N-terminal helix and the \u03b2-strand \u03b21 (residues 15\u201323).\n\n### Structural comparisons with other MG mAbs\n\nWhether different MG mAbs bind nAChR through conserved or divergent mechanisms is an important question relevant to understanding the disease mechanism and developing therapeutics. To address this question, we compared the structure of Fab35 with that of two other MG mAbs (Fab198: PDB ID, 1FN4 and Fab192: PDB ID, 1C5D) (Kontou et al., 2000; Poulas et al., 2001). Interestingly, superposition of the structure of Fab198 onto that of Fab35 in the ternary complex shows that these two Fabs share not only a conserved immunoglobulin fold but also a similar antigen-binding site (Figure 4a). As such, the MIR loop fits well into the pocket surrounded by the CDR-H2, CDR-H3 and CDR-L3 loops of Fab198, as predicated by previous modeling studies (Kleinjung et al., 2000). The CDR-H2 loop of Fab198 is also in position to interact with the N-terminal helix adjacent to the MIR (Figure 4b). Even more remarkably, many key \u03b11-binding residues in Fab35 are also conserved in Fab198 and they appear to make similar contacts to nAChR \u03b11 in the modeled Fab198/nAChR \u03b11 binding interface (Figure 4a and c). These residues include Trp47 (CDR-H2), Arg50 (CDR-H2), and Tyr95 (CDR-L3) at the center of the MIR-binding pocket, and Trp52 and Asp54 (both CDR-H2) which interact with the N-terminal helix. However, in contrast to the above structural similarities, the CDR-H3 loops between Fab198 and Fab35 differ significantly in length and sequence (Figure 4b and c). As a result, the CDR-H3 loop of Fab198 is too short to interact with the surface pocket of nAChR \u03b11, which is, in the case of Fab35, occupied by the corresponding CDR-H3 loop (Figure 4\u2014figure supplement 1a). These structural analyses suggest that mAb35 and mAb198 share a high similarity in binding mechanism to the core MIR/N-terminal helix region, but differ in the periphery of the binding interface.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig4-v1.jpg)\n\n**Figure 4.:** (a) Superposition of Fab198 (Poulas et al., 2001) (heavy chain: purple and light chain: dark green) onto Fab35 in the Fab35/nAChR \u03b11/\u03b1-Btx ternary complex using the C\u03b1 backbone. (b) Detailed comparison of the binding interface. The residues are colored according to their protein subunits. Note that key \u03b11-binding residues in Fab35, including Trp47, Arg50, Trp52 and Asp54 of VH and Tyr95 of VL are conserved in Fab198, and seem to be able to make similar contacts to nAChR \u03b11 in the modeled interface. The CDR-H3 loop of Fab198 (purple) is substantially shorter than that of Fab35 (yellow), as indicated by arrows. (c) Structure-based sequence alignment of the nAChR \u03b11-binding loops (CDR-H2, CDR-H3 and CDR-L3) between Fab35, Fab198 and Fab192 (Kontou et al., 2000). Residues shaded in light green are involved in nAChR \u03b11 binding in Fab35, some of these (in bold font and colored in red) are conserved in Fab198 or Fab192. Note that Fab35 and Fab198 share a high similarity in their nAChR \u03b11-binding CDR-H2 and CDR-L3 loops, but differ significantly in CDR-H3. On the other hand, Fab192 differs significantly from Fab35 and Fab198, especially in the CDR-H2 and CDR-H3 loops (See also Figure 4\u2014figure supplement 1).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) A surface model showing that the CDR-H3 loop of Fab198 (PDB ID, 1FN4) (purple) (Engel and Arahata, 1987) is too short to interact with the surface pocket of nAChR \u03b11, which is, on the other hand, occupied by the corresponding CDR-H3 loop of Fab35 (yellow). (b) The structure of Fab192 (PDB ID, 1C5D) (heavy chain, red; light chain, blue) (Drachman et al., 1978) was superimposed onto that of the Fab35 in the Fab35/nAChR \u03b11/\u03b1-Btx ternary complex using the C\u03b1 backbone. It shows substantial differences between Fab192 and Fab35.\n\nOn the other hand, superposition of the structure of Fab192 onto that of Fab35 in the ternary complex reveals substantial differences between them (Figure 4\u2014figure supplement 1b). Although the constant domains (CH and CL) of these two Fabs align very well structurally, the variable domains (VH and VL) show a significant rotational twist, such that the MIR loop does not fit into the antigen-binding site of Fab192 (Figure 4\u2014figure supplement 1b). Moreover, the key \u03b11-binding residues of Fab35, such as Arg50 and Trp52 of CDR-H2, are not conserved in Fab192 (Figure 4c). This structural comparison suggests that Fab192 differs significantly from Fab35 in terms of their binding mechanisms to nAChR \u03b11, confirming and extending the differences that were previously recognized between mAb35 and mAb192 (Luo et al., 2009).\n\n### Antibody-receptor binding specificity\n\nAnother important question of clinical and mechanistic relevance is the binding specificity of MG mAbs to different nAChR subunits and to nAChR \u03b11 from different species. To address the first part of this question, Fab35-contacting residues were mapped onto aligned sequences of human nAChR subunits (Figure 5a). A subset of nAChR family members, including \u03b12, \u03b13, \u03b15 and \u03b23, has either identical or homologous residues at the key Fab35-binding positions. These analyses suggest that Fab35 and other MIR-directed mAbs may be able to bind these nAChR subunits. On the other hand, the other nAChR members have divergent sequences at the Fab35-binding sites. For example, the key Fab35-binding residues in the MIR of nAChR \u03b11, Asn68 and Asp71, are replaced by Asp and Gln in nAChR \u03b19, respectively. On the N-terminal helix of nAChR \u03b11, the key Fab35-binding residues, Arg6 and Lys10, are also replaced by Lys and Asp in nAChR \u03b19, respectively. Superposition of the recently solved structure of the nAChR \u03b19 ECD (PDB ID, 4UY2) (Zouridakis et al., 2014) with that of the \u03b11 in the Fab35-bound complex showed that the sequence divergence could disrupt both the shape and chemical complementarity of the binding interface (Figure 5b). Consistent with the above structural analyses, we have shown by native PAGE that Fab35 indeed binds specifically to nAChR \u03b11 but not \u03b19 (Figure 5c).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig5-v1.jpg)\n\n**Figure 5.:** (a) Multiple sequence alignment of the N-terminal \u03b1 helix (left) and the MIR (right) of human nAChR family members. The sequence of human nAChR \u03b11 (h\u03b11) in the crystal structure is underlined. Abbreviation follows as t (torpedo) and h (human). The Fab35-contacting profile for human nAChR \u03b11, indicating how many Fab35 residues are directly contacting with each particular residue of human nAChR \u03b11, is shown above the sequence. The aligned sequences are colored based on the contacting profile, with red color indicating highly contacting residues (\u2018hotspots\u2019). (b) Superposition of nAChR \u03b19 (orange) (Zouridakis et al., 2014) onto the nAChR \u03b11 in the Fab35/nAChR \u03b11/\u03b1-Btx ternary complex showing the disrupted binding interface. (c) Native\u00a0PAGE showing the binding specificity of Fab35. Lane 1: \u03b1211 (labeled as \u03b11), Lane 2: \u03b19, Lane 3: \u03b1-Btx, Lane 4: \u03b1211 plus \u03b1-Btx, Lane 5: \u03b19 plus \u03b1-Btx, Lane 6: Fab35, Lane 7: \u03b1211 plus Fab35, and Lane 8: \u03b19 plus Fab35. Note that \u03b1-Btx in Lane 3 and Fab35 in Lane 6 were not visible because both proteins are positively charged and migrated upward under the native gel electrophoresis condition. Lanes with \u03b1-Btx were included as positive controls (Lanes 3\u20135). Lanes 4 and 5 show that both nAChR \u03b11 and \u03b19 bind \u03b1-Btx. Note that the \u03b19/\u03b1-Btx complex has a smaller shift than the \u03b11/\u03b1-Btx complex. Lanes 7 and 8 show that Fab35 binds \u03b11 but not \u03b19. (d) Multiple sequence alignment of the N-terminal \u03b1 helix (left) and the MIR (right) of nAChR \u03b11 from several species along with the Fab35-contacting profile as in (a). Abbreviation follows as b (bovine), r (rat), m (mouse), c (chicken), t (torpedo) and x (Xenopus).\n\nFor the second part of the question, a similar structure-based sequence comparison shows that Fab35-binding residues are conserved in nAChR \u03b11 across a wide range of species (Figure 5d), which is consistent with the high cross-reactivity of autoantibodies in MG and EAMG between different species (Tzartos et al., 1998, 1982; Luo et al., 2009; Gomez et al., 1981). However, in Xenopus nAChR \u03b11-b, Asn68 and Asp71 are substituted by Asp and Lys, respectively. Based on our ternary structure, such N68D substitution would disrupt the hydrogen bonds between the side chain amide group of Asn68 and both the main chain carbonyl of Tyr91 and Gly94 in the CDR-L3 (Figure 3b). In addition, the D71K substitution would introduce positive charge repulsion with Arg50 in the CDR-H2 and numerous steric clashes (Figure 3a). Consistent with these structural observations, previous studies have shown that Xenopus nAChR \u03b11 indeed does not bind Fab35 (Saedi et al., 1990).\n\n### Models of higher-order antibody-receptor structure\n\nThe nAChR receptors are pentamers of identical or homologous subunits. To see how neighboring subunits to the \u03b11 may affect the antibody-receptor interactions, we analyzed the binding of Fab35 to a nAChR pentamer by structure-based modeling using our previously solved structure of the \u03b17/AChBP chimera (PDB ID, 3SQ9, 3.1 \u00c5 resolution) (Li et al., 2011) as the nAChR ECD pentamer (Figure 6a and b). This model suggests that Fab35, by binding to the extruding tip of an \u03b11 subunit, makes no direct contact to the neighboring subunits. Moreover, Fab35 binds nAChR \u03b11 at a site that is far away from the ligand-binding site, consistent with the observation that MIR-directed antibodies generally do not affect the channel function (Tzartos et al., 1981; Gomez et al., 1981; Tamamizu et al., 1996).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig6-v1.jpg)\n\n**Figure 6.:** (a) Superposition of the Fab35/nAChR \u03b11 ECD/\u03b1-Btx ternary complex on one subunit of the \u03b17/AChBP chimera pentamer (blue) (PDB ID, 3SQ9) (Li et al., 2011) using the C\u03b1 backbone of ECDs as the reference. (b) Zoomed-in view of the contact between Fab35 and \u03b17/AChBP\u00a0Chimera. Fab35 makes no direct contact to the neighboring subunits in the pentamer. (c) Binding of a complete antibody (Fab+Fc) to a nAChR pentamer. The ternary Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex structure was used to guide the docking of an intact IgG1 antibody (PDB ID, 1IGY) (in surface model) (Harris et al., 1998) onto the human \u03b14\u03b22 nicotinic receptor (PDB ID, 5KXI, 3.94 \u00c5 resolution) (Morales-Perez et al., 2016). The two Fab domains (Fab-I and Fab-II) and the Fc region of IgG1 are indicated as shown. Each heavy chain is colored as blue and cyan. Each light chain is colored as yellow and orange.\u00a0ECD of nAChR \u03b11 is shown in magenta.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23043/elife-23043-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Modeling\u00a0of the binding of a complete antibody (Fab+Fc) to a nAChR pentamer using the Torpedo nAChR as a\u00a0template. The ternary Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex structure was used to guide the docking of an intact IgG1 antibody (PDB ID, 1IGY) (in surface model) (Gomez et al., 2010) onto the full-length Torpedo nAChR pentamer (PDB ID, 2BG9) (in ribbon model) (Luo and Lindstrom, 2015). The two Fab domains (Fab-I and Fab-II) and the Fc region of IgG1 are indicated as shown. The extracellular domain of Torpedo nAChR \u03b11 subunit is colored in magenta. Each heavy chain is colored as blue and cyan. Each light chain is colored as yellow and orange. (b) Cross-linking of two nAChR pentamers by a single MG antibody. This model shows that this cross-linking event may cause the curving of the cell membrane. (c) A hypothetical model wherein the cross-linking of nAChRs by MG antibodies leads to inward membrane curvature and internalization of nAChRs.\n\nWe also modeled the binding of a complete mAb35 (Fab+Fc) to the full-length nAChR pentamer using the structure of an intact IgG1 (PDB ID, 1IGY) (Harris et al., 1998), which is the same IgG1 subtype as mAb35, and the Torpedo AChR pentamer (PDB ID, 2BG9, 4 \u00c5 resolution) (Unwin, 2005) or the human \u03b14\u03b22 nicotinic receptor (PDB ID, 5KXI, 3.94 \u00c5 resolution) (Morales-Perez et al., 2016) as templates. The model built on the Torpedo AChR (Figure 6\u2014figure supplement 1a) is very similar to that built on the \u03b14\u03b22 nAChR (Figure 6c). The primary differece between the models is that the N-terminal helix of the \u03b11 subunit in the Torpedo AChR appears to adopt a different orientation from the conserved conformation adopted by the corresponding helix in a number of nAChR structures (Unwin, 2005; Dellisanti et al., 2007a; Morales-Perez et al., 2016). The source of this structural difference is currently unknown but our analysis shows that it has little effect on the overall structure of the\u00a0modeled full antibody-receptor complex. The modeled complex structure shows that the antibody is projected away from the central pore of the receptor, consistent with previous EM analyses (Beroukhim and Unwin, 1995). After putting all of the molecular components on proper scale and orientation, our model of the full-length antibody/receptor complex suggests that, as a result of steric and geometric constraints, the two Fabs from a single mAb35 antibody are unable to bind to the two \u03b11 subunits within the same nAChR pentamer (Figure 6c). Consequently, MG antibodies will bind two \u03b11 subunits from different pentamers, thereby cross-linking the nAChRs. Our modeling analyses are consistent with previous sucrose density gradient studies showing that mAb35 and similar mAbs cannot bind the two \u03b11 subunits within the same pentamer but can cross-link adjacent nAChR pentamers (Conti-Tronconi et al., 1981). Considering that each muscle nAChR pentamer contains two \u03b11 subunits and the relatively high density of nAChRs at the postsynaptic membrane, such inter-pentamer cross-linking mediated by MG antibodies could lead to a super high-order of antibody/receptor complex at the neuromuscular junction. Previous studies have shown that the binding of nAChR by the divalent MG antibodies rather than the monovalent Fab fragment leads to accelerated degradation of the receptor proteins (Drachman et al., 1978). This observation suggests that cross-linking of the nAChRs is a critical step in receptor degradation. Our analyses suggest that receptor cross-linking is an intrinsic property of mAb35 and mAb35-like MG antibodies. This\u00a0cross-linkig\u00a0could lead to the formation of large antibody-receptor complexes that disrupt the structure and function of the\u00a0neuromuscular junction and induce the degradation of the nicotinic receptor proteins.\n\n## Discussion\n\nOur crystal structure of Fab35 bound to the nAChR \u03b11 ECD provides the first atomic view of the detailed interactions between an EAMG antibody and the nAChR. Our structure reveals that the MIR loop inserts deeply into the antigen-binding pocket of Fab35 and that the adjacent N-terminal helix makes extensive contacts with the CDR-H2 loop of the heavy chain. The binding interface structure and detailed interactions observed in the crystal can be cross-validated with existing biochemical data. Earlier studies mapped the core region of MIR to residues 67\u201376 (Barkas et al., 1988; Tzartos et al., 1988; Das and Lindstrom, 1989). More recent studies using natively folded nAChR \u03b11/\u03b17 chimera proteins (Luo et al., 2009) or GFP-fused protein fragments (Morell et al., 2014) showed that the N-terminal helix (residues 1\u201314) is also important for high-affinity MG antibody binding. These studies further indicated that other regions of nAChR, including the loop following helix 1 (residues 15\u201332) (Luo et al., 2009) and the \u03b25-\u03b26-loop packing against the MIR (residues 110\u2013115) (Morell et al., 2014), also contribute to the binding of some MG antibodies. Our structures reveal that the antibody-receptor binding interface indeed centers on the MIR and the N-terminal helix and also includes peripheral regions such as residues 15\u201323. Although the \u03b25-\u03b26-loop (residues 110\u2013115) does not contact Fab35 in our structure, it may contribute to antibody binding indirectly by maintaining the natively folded structure of MIR (Morell et al., 2014).\n\nSpecific residues on MIR (Papadouli et al., 1990, 1993; Bellone et al., 1989) and the N-terminal helix (Morell et al., 2014) have also been analyzed using peptide/protein fragments containing mutations at specific positions for their roles on MG antibody binding. These studies showed that Asn68 and Asp71 of MIR are essential for MG antibody binding while the surrounding residues including Pro69 and Tyr72 showed partial effect when mutated. The essential role of Asn68 and Asp71 was further confirmed by site-directed mutagenesis of N68D and D71K in the intact receptor (Saedi et al., 1990). On the N-terminal helix of Torpedo nAChR \u03b11, two exposed residues, Arg6 and Asn10, which correspond to Arg6 and Lys10 in human nAChR \u03b11, respectively, are found to be critical to MG antibody binding by mutational analyses (Morell et al., 2014). Most of the nAChR residues found to be essential for antibody binding by mutagenesis studies, including Asn68 and Asp71 from the MIR and Arg6 and Lys10 from the N-terminal helix, indeed correspond to interaction \u2018hotspots\u2019 at the Fab35/nAChR \u03b11 interface. These \u2018hotspot\u2019 residues anchor multiple interaction networks at the interface and make extensive contacts to the antibody. Although biochemical mapping of antibody-binding residues on nAChR \u03b11 were performed with different antibodies (e.g. mAb210 and mAb132A) (Barkas et al., 1988; Tzartos et al., 1988; Das and Lindstrom, 1989; Saedi et al., 1990; Papadouli et al., 1990, 1993; Luo et al., 2009; Morell et al., 2014), it is remarkable that these biochemical data agree so well with our crystal structure, suggesting that many MIR-directed antibodies may share high similarities in their binding sites on the nAChR. It has been suggested that EAMG and MG antibodies may bind epitopes different from MIR and that these MG antibodies may be competed off by mAb35 through steric effect rather than direct epitope competition (Luo et al., 2009). Our structures (Figure 1 and Figure 6c) indeed support this possibility, which is represented by mAb192 (also see below). However, our structural analyses also reveal that many MIR residues at the center of the antibody-receptor are important for the high affinity binding of a variety of MG antibodies (e.g., mAb35, mAb210, and mAb132A). This is a rather surprising finding given the potential heterogeneity of nAChR antibodies mentioned above. An important implication of this finding is that molecular mimicries of the MIR and its immediate surrounding regions could be developed to bind a significant fraction of MIR-directed MG autoantibodies. Such molecules could be useful leads for developing diagnostics and therapeutics for MG (Tzartos et al., 1998; Masuda et al., 2012; Sophianos and Tzartos, 1989).\n\nMIR-directed antibodies display a wide range of binding properties. Some such antiboies (e.g. mAb35) exclusively\u00a0bind natively folded receptor and others (e.g. mAb210) are\u00a0also\u00a0capable of binding denatured receptor or isolated MIR peptides (Luo et al., 2009; Morell et al., 2014). The binding mechanisms between different MG antibodies may have subtle or significant differences. Our comparative structural analyses indicate that Fab35 and Fab198 share highly similar binding mechanisms to nAChR \u03b11, especially in the MIR/N-terminal helix core region.\u00a0On the other hand, Fab192 seems to have very different nAChR-binding mechanisms from Fab35 and Fab198 even though Fab192 can be competed off by mAb35 through steric effect. Most MIR-directed mAbs, such as mAb35, bind preferably to folded receptors. Our structure shows that the complete epitope consists of two separated peptide regions (the MIR loop and the N-terminal helix) that are required to fold together properly for optimal binding. These structural observations are consistent with previous studies of chimeras and mutants showing that the native conformation of the MIR that permits binding of mAbs 35 and 198 depends on the interaction of the N-terminal helix with the MIR loop (Luo et al., 2009; Dellisanti et al., 2007a). Moreover, for mAb35, a significant amount of binding energy may derive from the insertion of its CDR-H3 loop to the surface pocket on nAChR \u03b11, whose structure can only form in the natively folded receptor. This unique feature of mAb35 is consistent with the observation that mAb35 is particularly conformation sensitive in binding to nAChR \u03b11 (Luo et al., 2009).\n\nOur modeling analyses indicate that neighboring subunits in the nAChR pentamer do not make direct contact to Fab35, suggesting that the binding interactions observed in our crystal structures represent most, if not all, of those in the native complexes between mAb35 and the full-length nAChR pentamer. However, it is known that antibodies in MG serum and mAbs bind mature and pentameric nAChR more tightly than the unassembled nAChR \u03b11 monomer (Luo et al., 2009; Merlie and Lindstrom, 1983; Conroy et al., 1990), and there is evidence that MIR plays an important role in initiating conformational maturation of subunits prior to their assembly into pentameric AChR receptors (Luo et al., 2009). Structural differences between monomeric \u03b11 and \u03b11 in a muscle nAChR heteropentamer could account for the different binding affinities. Although the N-terminal helix of the \u03b11 subunit in the full length Torpedo nAChR has a significantly different orientation from that in the monomeric mouse/human \u03b11 crystal structures (Unwin, 2005; Dellisanti et al., 2007a), it is not clear if this structural difference, which may be due to the limited resolution (4 \u00c5) of the full length Torpedo nAChR, is realistic and hence responsible for the different binding affinities. However, we cannot rule out the possibility that subtle structural differences between the monomeric and pentameric forms of mammalian nAChR \u03b11 could affect the binding affinity, especially for MG autoantibodies, like mAb35, that\u00a0are particularly conformation sensitive. Furthermore, the monomeric \u03b11 may be more dynamic than its counterpart in the fully assembled pentamer, and the conformational flexibility could reduce the binding affinity through entropic effects.\n\nOur studies reveal two structural insights into the antibody-nAChR interaction that may have important mechanistic and clinical implications. The first is the conservation of the key Fab35-binding residues in a number of nAChR family members, including \u03b12, \u03b13, \u03b15 and \u03b23. This observation suggests potential cross-reactivity of \u03b11-derived MG antibodies to these nAChR family members. As discussed above, because many MIR-directed mAbs share the same binding residues on nAChR \u03b11, this cross-reactivity may not be limited to mAb35, but can also\u00a0occur among other MG autoantibodies. Consistent with this notion, it has been shown that some MG mAbs bind neuronal nAChR subunits. mAb35 was shown to bind chicken nAChR \u03b13 and also suggested to bind human \u03b12, \u03b13, \u03b15 and \u03b23 (Conroy and Berg, 1995). Another MIR-directed antibody, mAb210, has been used to bind human \u03b15 and \u03b23 (Kuryatov et al., 2008; Wang et al., 1996). The wide expression and diverse physiological functions of nAChR members within and outside the neuronal system are being increasingly recognized, raising an intriguing question whether the cross-reactivity of nAChR with autoantibodies has broader pathological effects than currently recognized.\n\nThe second is the structural basis of antibody-mediated receptor cross-linking. Our crystal structures reveal a well-defined orientation of the bound antibody with respect to the receptor due to the relatively rigid binding interface. Based on this structural feature, we modeled the complex of full-length nAChR pentamer bound by the intact MG antibody, which suggests that MG antibodies are unlikely to bind the two \u03b11 subunits within the same muscle nAChR pentamer, but rather two \u03b11 subunits from different pentamers, thereby cross-linking the nAChR receptors (Tzartos et al., 1981; Conti-Tronconi et al., 1981). These modeling analyses provide a structural support for previous functional observations that MG antibody-mediated nAChR cross-linking accelerates the degradation of the receptor proteins (Drachman et al., 1978). We further noticed that MG antibodies are unlikely to bind two nAChR pentamers oriented vertically on a flat membrane surface even when considering the hinge flexibility of the antibody (Figure 6\u2014figure supplement 1b). Assuming that the nAChR pentamers in the membrane cannot be tilted freely, a potential effect of antibody-mediated receptor cross-linking is membrane curvature. This raises an intriguing question if such distortion of the membrane structure could play a role in the internalization and degradation of nAChRs at the neuromuscular junction (Figure 6\u2014figure supplement 1c). While the detailed mechanisms by which antibody-mediated receptor cross-linking induces the receptor degradation remain to be elucidated, molecular mimicries of the MIR should prevent such cross-linking and degradation of nAChR by competitive binding to MG antibodies (Sophianos and Tzartos, 1989). Our studies suggest that it is possible to develop drug molecules to inhibit the binding of a large fraction of MG antibodies to nAChR and related pathological immune reactions, and the crystal structures presented here provide a basis for developing such drug molecules.\n\n## Materials\u00a0and\u00a0methods\n\n### Construction of the stabilized nAChR \u03b11 ECD (= \u03b1211)\n\nThe mouse \u03b1211 construct was provided by Dr. Zuo-Zhong Wang, Zilkha Neurogenetic Institute, Department of Cell and Neurobiology, Keck School of Medicine, University of Southern California. The detailed construction information is as previously described (Yao et al., 2002). Briefly, a Flag-tag and a His-tag were added at the N-terminus and the C-terminus, respectively, for higher expression and purification purposes. The construct was truncated at the 211th amino acid from the N-terminal of nAChR \u03b11 subunit without a signal sequence, and three point mutations (V8E, W149R, and V155A) were introduced for improved solubility and stability (Dellisanti et al., 2007a; Chen, 2010). The human \u03b1211 construct was designed based on the mouse \u03b1211 construct, and the synthesized cDNA was ordered from GenScript. The gene codons were optimized for yeast, and cloned into a pPICZ\u03b1A vector using the EcoRI and XbaI sites.\n\n### \u03b1211 expression\n\nBoth mouse and human \u03b1211 constructs were linearized by digesting with SacI restriction enzyme (New England Biolabs) and transformed into KM71H of P. pastoris (Invitrogen) by electroporation. The transformants were plated on YPDS plates, which contained 100 \u00b5g mL\u22121 Zeocin. Plates were incubated at 30\u00b0C for 3\u20135 days until colonies formed, and several colonies were restreaked on fresh YPDS plates. Pre-inoculation was made by seeding a single colony in 30 mL BMGY medium. The culture was incubated at 30\u00b0C with shaking overnight. About 5\u20137 mL of this culture was used to inoculate 500 mL of BMGY in a 2 L baffled flask (total 2 L of culture). The inoculated culture was incubated at 30\u00b0C with shaking to OD600 value of 6. Cells were harvested by centrifugation at 3000\u00d7g for 15 min at room temperature. The supernatant was discarded, and cell pellets were resuspended in 400 mL of BMMY medium for induction. The resuspended culture was divided between two 2 L baffled flasks (200 mL each) and incubated at 20\u00b0C with shaking for 72 hr. 100% methanol was added every 24 hr to a final concentration of 0.5% (v/v) to induce protein expression. After 72 hr of induction, cells were harvested by centrifuging at 6000\u00d7g for 20 min at room temperature. Protein purification proceeded with the supernatant as the protein was secreted.\n\n### \u03b1211 purification\n\nNi-NTA agarose beads (QIAGEN) were incubated with the supernatant at 4\u00b0C overnight with end-over-end rotation. The protein was eluted with elution buffer (50 mM NaH2PO4, pH 7.8, 0.5 M KCl, 10% (v/v) glycerol, and 500 mM imidazole) after washing with washing buffer containing 20\u00a0mM imidazole and 0.1% Triton X-100 to remove loosely bound proteins. The eluted protein was concentrated and ran over a size exclusion column (Superdex 75 10/300 GL, GE Healthcare) with 20 mM HEPES, pH 7.5 and 150 mM NaCl buffer for further purification. After each peak fraction was analyzed by OD280 measurement and SDS-PAGE, fractions containing \u03b1211 were pooled and concentrated for further experiments.\n\n### Cell culture and reagents for mAb35\n\nHybridoma cells of mAb35 were purchased from American Type Culture Collection (ATCC). The cells were maintained in DMEM medium containing 1.97 g L\u22121 NaHCO3 and 10% fetal bovine serum (FBS). The cells were cultured in a 37\u00b0C incubator with 5% CO2 and subcultured every 2 to 3 days with cell density between 1\u00a0\u00d7\u00a0105 and 1\u00a0\u00d7\u00a0106 cells mL\u22121. For protein production, the cell culture was incubated at 37\u00b0C for several days until the medium color changed to yellow.\n\n### mAb35 purification\n\nAfter 7\u201310 days of incubation at 37\u00b0C, the cell culture was harvested by centrifuging at 6000\u00d7g for 15 min. Affinity purification was performed using Protein G Sepharose 4 Fast Flow (GE Healthcare). The supernatant and beads were incubated at room temperature for 2 hr with rotation. The beads were washed with washing buffer (20 mM sodium phosphate, pH 7.0), and the protein was eluted with elution buffer (0.1 M glycine-HCl, pH 2.7). Due to the low pH of the elution buffer, a neutralizing buffer (1 M Tris-HCl, pH 9.0) was added to the collection tubes (60 to 200 \u00b5L mL\u22121 elute) prior to collection. After checking the presence of the protein with SDS-PAGE gels, the protein elution was concentrated and ran over a size exclusion column (Superdex 200 10/300 GL, GE Healthcare). The fractions of protein peak were pooled and concentrated for further study.\n\n### mAb35 digestion and Fab35 purification\n\nPurified mAb35 was buffer-exchanged into digestion buffer (20 mM sodium phosphate, pH 7.0, 10 mM EDTA and 20 mM cysteine-HCl; adjust pH to 7.0 right before use) using Zeba Spin columns (Thermo Scientific), and the resulting sample was incubated with immobilized papain beads (Thermo Scientific). The sample was rotated at 30\u00b0C overnight, and the flow through was collected. The protein was identified by SDS-PAGE, and then the sample was concentrated down to\u00a0~500 \u00b5L while exchanging buffer to Mono Q Buffer A (20 mM sodium phosphate, pH 7.0). An anion exchange column (Mono Q HR 5/5, GE Healthcare) was used to separate the Fab portion from the rest using a salt gradient of 0\u2013100% Buffer B (20 mM sodium phosphate, pH 7.0 and 1 M NaCl). Fab fractions (Fab35)\u00a0were collected and concentrated for gel shift assay and \u03b1211 complex purification.\n\n### Gel shift assay\n\n\u03b1211, \u03b1-bungarotoxin (\u03b1-Btx) and Fab35 were mixed in an equimolar ratio, and the mixture was incubated on ice for 1 hr. For the binding specificity experiment, \u03b19-3Mut, which contains three point mutations (V189W, S191F and G193S) in the loop C that were designed to enhance the binding of \u03b1-Btx, was prepared in the same manner as \u03b1211 (Kaori Noridomi, Ph.D. dissertation, University of Southern California, 2015). A 10% native\u00a0PAGE gel was run at 4\u00b0C for 3.5 hr at 100\u2013120 V,\u00a0~15 mA, with 1\u00d7 TBE buffer. Bands were detected with Coomassie Blue staining.\n\n### The \u03b1211/Fab35/\u03b1-bungarotoxin complex purification\n\n\u03b1211, \u03b1-Btx and Fab35 were mixed at a 1:1.5:1.5 molar ratio, and the mixture was incubated on ice for 1 hr. Ni-NTA purification was performed to remove excess \u03b1-Btx and Fab35. The elution was run over a size exclusion column (Superdex 200 10/300 GL, GE Healthcare) with 20 mM HEPES, pH 7.5 and 150 mM NaCl buffer. Two peaks were obtained, and fractions of each peak were pooled separately and concentrated for crystallization.\n\n### Crystallization and X-ray diffraction data collection\n\nThe purified and concentrated ternary complex of \u03b1211 (both mouse and human)/Fab35/\u03b1-Btx was diluted to 2.5 mg mL\u22121. Crystals were screened using Crystal Screen, Crystal Screen 2 and Index kits (Hampton Research) by a hanging drop method at room temperature. Each reservoir contained 0.5 mL of screening solution, and each drop contained 0.5 \u03bcL of protein and 0.5 \u03bcL of reservoir solution. Three conditions gave initial hits, and one condition was selected to optimize a crystallizing condition. The optimized condition was 0.1 M sodium cacodylate trihydrate, pH 6.5, 0.1\u20130.15 M calcium acetate hydrate and 18\u201320% (w/v) PEG 8K. Rod-shaped crystals were grown as bundle with the size of 10 \u03bcm\u00a0\u00d7\u00a020\u2013100 \u03bcm \u00d7 200 \u03bcm. Crystals were harvested using harvest solution (0.2 M calcium acetate hydrate, 0.1 M sodium cacodylate trihydrate, pH 6.5 and 30% (w/v) PEG 8K) and cryo-solution (harvest solution\u00a0+20% glycerol) as follows. Crystals were transferred to different concentrations of harvest/cryo mixture solution to protect crystals from osmotic shock (in order of 100% harvest solution, 3:1 harvest/cryo solution, 1:1 harvest/cryo solution, 1:3 harvest/cryo solution and 100% cryo solution). Each incubation time was approximately 5\u201310 min.\u00a0The cryoprotected crystals were fished using 100-300 \u03bcm Hampton CryoLoop (Hampton Research) and flash-cooled in liquid nitrogen.\n\nDiffraction data were collected at the Advanced Photon Source (APS) beamline 23-ID-B at Argonne National Laboratory using a 10 \u00b5m\u00a0\u00d7\u00a010 \u00b5m beam (\u03bb\u00a0=\u00a01.0332 \u00c5, 12.000 keV) with the attenuation factor of 5.0 and a MARmosaic 300 CCD detector. The detector distance was 300.0 mm. The oscillation range and the exposure time per frame were 0.5\u00b0 and 2.0 s, respectively. Data were processed and scaled using HKL2000 package (Otwinowski and Minor, 1997). Both human and mouse complex crystals belong to the space group C2, with unit cell dimensions of a\u00a0=\u00a0160.0 \u00c5, b\u00a0=\u00a042.1 \u00c5, c\u00a0=\u00a0136.5 \u00c5, \u03b2\u00a0=\u00a0117.1\u00b0; and a\u00a0=\u00a0159.9 \u00c5, b\u00a0=\u00a042.0 \u00c5, c\u00a0=\u00a0137.6 \u00c5, \u03b2\u00a0=\u00a0116.5\u00b0, respectively. The crystal structures were solved by molecular replacement using PHASER MR (McCoy et al., 2007) in CCP4 (Collaborative Computational Project Number 4, 1994) and the coordinates of \u03b1211/\u03b1-Btx complex (PDB ID, 2QC1) and Fab198 (PDB ID, 1FN4, modified to poly-Ala) (Dellisanti et al., 2007a; Poulas et al., 2001). Refmac5 was used for the final refinement of the structures (Murshudov et al., 2011, 1997). The amino acid sequence of mAb35 was obtained from an antibody sequencing company, MCLAB Molecular Laboratories (San Francisco, CA), and the sequence of Fab35 was added using Coot (Emsley et al., 2010). Additional model building in Fab35 was carried out with O (Jones et al., 1991). Crystallographic analysis and refinement statistics are summarized in Supplementary file 1.\n\n### Accession numbers\n\nCoordinates and structure factors have been deposited in the Protein Data Bank under accession codes PDB: 5HBT (Fab35/human nAChR \u03b11 ECD/\u03b1-Btx) and 5HBV (Fab35/mouse nAChR \u03b11 ECD/\u03b1-Btx).\n",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "817749c7-d486-4db7-bc9c-e8abf109f8cd",
+      "submission_id": "dc399980-fb1a-4706-9abb-ad87d4d625b7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kenton J Swartz, National Institutes of Health , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23043.021](https://doi.org/10.7554/eLife.23043.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structural insights into the molecular mechanisms of Myasthenia Gravis and therapeutic implications\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Kenton Swartz as the Reviewing Editor and Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Jon M Lindstrom (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript from Lin Chen's group describes structural efforts to understand the interactions of an antibody with the nicotinic receptor that can trigger myasthenia gravis (MG). The manuscript presents the first high resolution structure of a soluble extracellular domain of the alpha1 subunit of the nicotinic receptor in complex with a Fab fragment from the standard antibody known to cause experimental myasthenia gravis. The authors use the structure of this complex as a basis for speculation on the relative significance of different atomic interactions at the receptor-Fab interface in determining subunit specificity, and perform sequence comparisons and qualitative binding assays by native PAGE to test binding to the soluble extracellular domain of the alpha1 and alpha9 subunits. The authors then present a speculative mechanism suggesting that cross-linking of pentamers by the whole IgG could trigger membrane deformation, resulting in receptor internalization and eventually myasthenic syndrome.\n\nThe strengths of this manuscript and underlying work are in the introductory and structural sections. The authors lay out nicely the physiological background and significance, setting up the structural findings effectively. This piece of the study, alone, is impactful. We have some concerns about the refinement details, described below, but we do not expect those issues to change the overall interpretations or conclusions made in the manuscript. The following are essential revisions that are needed to improve the presentation.\n\nEssential revisions:\n\n1) The crystallographic statistics raise two issues that need to be addressed. First, for both datasets, there is an unacceptably large spread between R and Rfree (8.5-10%). This large spread suggests a high degree of model bias and inappropriate restraints used during refinement. This large spread is surprising given the relatively small spread between R and Rfree in the original alpha1-bungarotoxin complex structure from the same group (2.4% difference, PMID 17643119). Second, the Ramachandran statistics are poor; >90% of the residues should be in the favored region, and good justification should be made for any residues in the outlier region. Strong electron density and/or comparison with higher resolution structures is a requirement for confidence in modeling a residue in an outlier conformation. Thus, regions with poor electron density should have better Ramachandran statistics, not worse, as suggested by footnote b in Supplementary file 1. The authors need to address these two issues either by improving the quality of the refined model or explaining why the statistics, as they currently stand, are justified. One way to improve model quality without too much effort might be using a reference model during refinement (phenix.refine makes this reasonably straightforward).\n\n2) The mechanism suggested for pentamer cross-linking inducing curvature and thereby internalization and pathology is very speculative and needs to be toned down. The reference cited in the Discussion (Drachmann et al., 1978) on cross-linking and curvature does not, as far as we see, actually propose, test or validate a curvature mechanism. As the authors discuss, modeling of cross-linked pentamers is tentative, in part because it relies on the older EM model of the Torpedo receptor, which has a 'funny' alpha1 helix conformation compared to all other structures, and in part because Fabs/IgG's have a great deal of inherent flexibility. We request that you move Figures 6 and 7 to a single supplemental figure and to limit presentation of this hypothetical mechanism to a single paragraph in the Discussion section.\n\n3) The manuscript would have been strengthened by the addition of mutants and binding assays to specifically interrogate the interface seen in the X-ray structure. Although we appreciate that this would require considerable additional work, the authors can and should bring in the literature to help support the interface they see in the structure, as Luo et al., 2009 and others have predicted some of the interactions seen in the present study.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Structural insights into the molecular mechanisms of Myasthenia Gravis and therapeutic implications\" for further consideration at eLife. Your revised article has been favorably evaluated by Kenton Swartz as Reviewing Editor and Richard Aldrich as Senior editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) There is something funny going in paragraph four of the Discussion section. A part of one sentence appears to have been deleted.\n\n2) It would be helpful for the authors to include a few remarks on the following two issues:\n\nAlthough mAb 35 and mAb 198 are very similar in structure, other EAMG and MG antibodies that bind to this region may not be so similar or bind to identical epitopes. The high frequency of MIR antibodies in MG and EAMG sera was determined by competitive binding between mAbs with serum antibodies. Figure 1 clearly illustrates how large Fab 35 is with respect to the extracellular domain of \u03b1 1. Large intact mAb 35 is likely to compete with intact large serum autoantibodies for binding in this region to nearby but somewhat different epitopes than are recognized by mAb 35. mAB 192 is a similar case. The relative size of an antibody and an AChR is nicely illustrated in Figure 6C. The variety of epitopes in the main immunogenic region is an important factor relevant to the Discussion, paragraph two, about trying to treat MG with mimotopes or for developing epitope-specific diagnostics.\n\nIn the Results section it is noted that the N terminal \u03b1 helix of \u03b1 1 in Torpedo AChR differs from that in Bellone, Tang, Milius and Conti-Tronconi, 1989. It is worth noting that Morell et al., 2014 shows that variations in MIR structure have large effects on ACh sensitivity. AChR sensitivity involves both ACh binding sites and transmembrane regions. The transmembrane regions are greatly effected by lipid. Solubilization of Torpedo AChRs puts them in an inactive conformation that can be corrected by reconstitution into the proper lipid composition (C daCosta and J Baenziger (2013) Cell Structure 21: 1271-1283). Most crystallized receptors are solubilized and consequently contact lipids partially or completely removed. The 5-HT3 receptor after solubilization was crystallized bound to nano bodies directed at its C loops that function as potent antagonists (Hasssaine et al. (2014) Nature 512: 276-281). This too may have global conformation consequences. Torpedo AChRs are unique in having had their structures determined in their native membrane. Of course, artifacts in their structural determination might also occur.\n",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebe80a88-f6dc-4fea-9abb-b58f522ae09f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C1",
+      "claim": "The nicotinic acetylcholine receptor (nAChR) is a major target of autoantibodies in myasthenia gravis (MG).",
+      "claim_type": "EXPLICIT",
+      "source": "The nicotinic acetylcholine receptor (nAChR) is a major target of autoantibodies in myasthenia gravis (MG), an autoimmune disease that causes neuromuscular transmission dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by extensive citations throughout the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "167fb4a1-f15a-4dd8-ab90-c1ed789ada91",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C2",
+      "claim": "Myasthenia gravis is an autoimmune disease that causes neuromuscular transmission dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "The nicotinic acetylcholine receptor (nAChR) is a major target of autoantibodies in myasthenia gravis (MG), an autoimmune disease that causes neuromuscular transmission dysfunction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the abstract describing the nature of MG.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "22107f52-5f3e-49dd-8737-799d9a1f7bb1",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C3",
+      "claim": "The crystal structure of the nAChR \u03b11 subunit bound by the Fab fragment of mAb35 was determined at 2.61 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the crystal structure of the nAChR \u03b11 subunit bound by the Fab fragment of mAb35, a reference monoclonal antibody that causes experimental MG and competes with ~65% of antibodies from MG patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolution is stated in the Results section and confirmed in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c5a45ff4-4fd5-4b1c-ac14-97c7bc25b30f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C4",
+      "claim": "mAb35 competes with approximately 65% of antibodies from MG patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present the crystal structure of the nAChR \u03b11 subunit bound by the Fab fragment of mAb35, a reference monoclonal antibody that causes experimental MG and competes with ~65% of antibodies from MG patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "32b6004e-1b54-4f63-a2bf-c44e4b3f8914",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C5",
+      "claim": "Myasthenia gravis afflicts more than 20 in 100,000 people.",
+      "claim_type": "EXPLICIT",
+      "source": "This receptor is also a major target of autoimmune antibodies in patients with myasthenia gravis (MG), an autoimmune disease that afflicts more than 20 in 100,000 people (Lindstrom, 2000; Vincent et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prevalence statistic is directly stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "2082885d-e3fe-4a59-98d1-7fee1619ac1b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C6",
+      "claim": "MG is the first and only autoimmune disease with a well-defined autoantigen target.",
+      "claim_type": "EXPLICIT",
+      "source": "MG is the first and, so far, only autoimmune disease with well-defined autoantigen target; the binding of nAChR by MG antibodies leads to complement-mediated lysis of the postsynaptic structure and internalization of the receptor, thereby disrupting neuromuscular transmission (Engel and Arahata, 1987; Drachman et al., 1978; Gomez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the unique status of MG among autoimmune diseases.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "83fa8c8d-1677-4706-8fc1-9df452529225",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C7",
+      "claim": "The binding of nAChR by MG antibodies leads to complement-mediated lysis of the postsynaptic structure and internalization of the receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "MG is the first and, so far, only autoimmune disease with well-defined autoantigen target; the binding of nAChR by MG antibodies leads to complement-mediated lysis of the postsynaptic structure and internalization of the receptor, thereby disrupting neuromuscular transmission (Engel and Arahata, 1987; Drachman et al., 1978; Gomez et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f9afe27d-b179-4c5d-87b1-4eb5b9e3d5e6",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C8",
+      "claim": "More than 85% of MG patients carry nAChR antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, more than 85% of MG patients carry nAChR antibodies (Lindstrom, 2000; Vincent et al., 2001; Meriggioli and Sanders, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statistic is directly stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "2064043a-01db-4cf1-91a3-62a4fce918e5",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C9",
+      "claim": "The total amount of nAChR antibodies in the serum of MG patients does not correlate with disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the total amount of nAChR antibodies in the serum of MG patients does not seem to correlate with disease severity, suggesting that various nAChR antibodies that bind different regions on nAChR may contribute differently to this disease (Somnier, 1993; Berrih-Aknin, 1995; Mossman et al., 1988; Tzartos et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "85193fa3-d9e8-4e97-92f8-27b7af12b240",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C10",
+      "claim": "Mammalian muscle nAChR has a pentameric structure composed of two \u03b11, one \u03b21, one \u03b4, and one \u03b5 (adult form) or \u03b3 (fetal form) subunit(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian muscle nAChR has a pentameric structure composed of two \u03b11, one \u03b21, one \u03b4, and one \u03b5 (adult form) or \u03b3 (fetal form) subunit(s) (Unwin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural composition is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "7c51eef0-5156-4a15-93b0-471a5f4f956e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C11",
+      "claim": "More than half of all autoantibodies in MG and EAMG bind an overlapping region on the nAChR \u03b11 subunit known as the main immunogenic region (MIR).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, more than half of all autoantibodies in MG and EAMG bind an overlapping region on the nAChR \u03b11 subunit, known as the main immunogenic region (MIR) (Tzartos et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "99728bfe-abe8-4437-8de8-227a137d241c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C12",
+      "claim": "mAb35 inhibits the binding of about 65% autoantibodies from MG patients or rats with EAMG.",
+      "claim_type": "EXPLICIT",
+      "source": "The MIR is defined by the ability of a single rat monoclonal antibody (mAb), mAb35, to inhibit the binding of about 65% autoantibodies from MG patients or rats with EAMG (Tzartos and Lindstrom, 1980; Tzartos et al., 1982, 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defining characteristic of the MIR is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c33550f8-1720-419b-8d72-7b14fce9517d",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C13",
+      "claim": "MIR has been mapped to a peptide region that spans residues 67\u201376 on nAChR \u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies have mapped MIR to a peptide region that spans residues 67\u201376 on nAChR \u03b11 (Barkas et al., 1988; Tzartos et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mapping result is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "508682f4-3cc2-4390-a719-9b16cc269095",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C14",
+      "claim": "Monoclonal antibodies directed to the MIR can passively transfer EAMG and possess all the key pathological functions of serum autoantibodies from MG patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Monoclonal antibodies directed to the MIR can passively transfer EAMG and possess all the key pathological functions of serum autoantibodies from MG patients (Tzartos et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional characteristic is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "dde1a292-117b-4bb2-bec1-21dfad0cc13f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C15",
+      "claim": "Titer levels of MIR-specific antibody from MG patients correlate with disease severity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a recent study showed that titer levels of MIR-specific antibody from MG patients, rather than the total amount of nAChR antibodies, correlate with disease severity (Masuda et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This correlation is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f1e4a90f-7bc7-4982-af85-8c07ca05d5f7",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C16",
+      "claim": "mAb35 binds natively folded nAChR \u03b11 with high affinity (Kd =~2 nM).",
+      "claim_type": "EXPLICIT",
+      "source": "Although mAb35 does not bind well to the denatured receptor, it has been shown to bind natively folded nAChR \u03b11 with high affinity (Kd =~2 nM) (Luo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This binding affinity is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "443777ed-e0b8-40dd-921f-923b7060848e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C17",
+      "claim": "Crystal structures of both human and mouse nAChR \u03b11 ECD in complex with Fab35 and \u03b1-Btx were obtained at 2.61 \u00c5 and 2.70 \u00c5 resolution, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained ternary complex crystals with both human and mouse nAChR \u03b11 ECD and solved the structures (2.61 \u00c5 and 2.70 \u00c5 resolution, respectively) by molecular replacement (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The resolutions of both structures are explicitly stated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "63fc6ea4-bfad-4e20-ba12-f45663fa76ae",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C18",
+      "claim": "The antibody/receptor interface appears identical between the human and mouse complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed comparison between the two complex structures is presented in Figure 1\u2014figure supplements 1 and 2. Here, we focus our structural description and analysis on the antibody/receptor interface, which appears identical between the human and mouse complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "0b8d925d-3466-4f64-b7a5-104c6587d454",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C19",
+      "claim": "Fab35 binds to nAChR \u03b11 in an upright orientation, away from the \u03b1-Btx.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fab35 binds to nAChR \u03b11 in an upright orientation, away from the \u03b1-Btx (Figure 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This orientation is described in text and shown in Figure 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "5165b091-8d56-4c0a-9f85-07fadab836a7",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C20",
+      "claim": "The buried solvent accessible area of the Fab35-nAChR \u03b11 complex is 899 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The Fab35 binding sites on nAChR \u03b11 include the MIR and the N-terminal helix; the buried solvent accessible area of the complex is 899 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantitative measurement is stated directly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "107973d2-f5b9-452e-8ee1-078970669af3",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C21",
+      "claim": "The complementarity determining regions CDR-H2, CDR-H3 from the heavy chain, and CDR-L3 from the light chain form the binding site of nAChR \u03b11 on Fab35.",
+      "claim_type": "EXPLICIT",
+      "source": "Fab35 has the canonical IgG antibody structure where the complementarity determining regions (CDRs) from the heavy chain, CDR-H2 and CDR-H3, and the light chain, CDR-L3, form the binding site of nAChR \u03b11 (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in text and illustrated in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "be23571f-0593-4989-9271-e646d3c22867",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C22",
+      "claim": "The MIR loop inserts deeply into a surface pocket between the variable domains of the heavy and light chains (VH and VL) of Fab35.",
+      "claim_type": "EXPLICIT",
+      "source": "On the receptor side (Figure 2a), the MIR loop inserts deeply into a surface pocket between the variable domains of the heavy and light chains (VH and VL), whereas the N-terminal helix sits into a groove on the surface of the heavy chain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is described in text and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "aa02e2c1-979b-40c1-930c-948f92ebabfb",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C23",
+      "claim": "The N-terminal helix sits into a groove on the surface of the heavy chain of Fab35.",
+      "claim_type": "EXPLICIT",
+      "source": "On the receptor side (Figure 2a), the MIR loop inserts deeply into a surface pocket between the variable domains of the heavy and light chains (VH and VL), whereas the N-terminal helix sits into a groove on the surface of the heavy chain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is described in text and shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f139fa37-c9db-4e28-be29-943f7ef01343",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C24",
+      "claim": "The CDR-H3 from Fab35 inserts into a surface pocket formed by the N-terminal helix, the loop following the N-terminal helix, the MIR and the loop preceding the MIR on nAChR \u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "On the Fab35 side (Figure 2b), the CDR-H3 inserts into a surface pocket formed by the N-terminal helix, the loop following the N-terminal helix, the MIR and the loop preceding the MIR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural feature is described in text and shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "db2bca47-6de5-4a07-8330-97ca2d16a830",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C25",
+      "claim": "The nAChR \u03b11 structure remains the same in the ternary Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex and the binary nAChR \u03b11 ECD/\u03b1-Btx complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Superposition of the structures of mouse nAChR \u03b11 ECD in the ternary Fab35/nAChR \u03b11 ECD/\u03b1-Btx complex with that in the binary nAChR \u03b11 ECD/\u03b1-Btx complex (PDB ID, 2QC1) (Dellisanti et al., 2007a) shows that the nAChR \u03b11 structure remains the same in the two complex states (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This comparison is stated in text and shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "49c2bfb3-7b97-4f74-b0b2-27cb903b4cff",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C26",
+      "claim": "Fab35 recognizes and binds a well-defined and preformed conformation of the nAChR \u03b11 ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural comparison suggests that Fab35 recognizes and binds a well-defined and preformed conformation of the nAChR \u03b11 ECD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the structural comparison data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "7ff6eb58-b3e1-46d5-a2dc-f857392f7094",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C27",
+      "claim": "Four 'hotspot' residues on nAChR \u03b11 that make numerous contacts to Fab35 were identified: Asn68 and Asp71 from the MIR loop and Arg6 and Lys10 from the N-terminal helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The contacting analysis also revealed several residues on nAChR \u03b11 that make numerous contacts to Fab35. Four such 'hotspots' of binding were identified: Asn68 and Asp71 from the MIR loop and Arg6 and Lys10 from the N-terminal helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These hotspot residues are identified from the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "acdf592f-1551-46e7-88c0-ab82ab866dfe",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C28",
+      "claim": "Asp71 forms a salt bridge with Arg50 of VH and a hydrogen bond with Tyr95 of VL.",
+      "claim_type": "EXPLICIT",
+      "source": "Asp71 forms a salt bridge with Arg50 of VH and a hydrogen bond with Tyr95 of VL (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These specific interactions are described in text and shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "184e2a34-7113-4e0e-9b04-9c4f9b163a23",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C29",
+      "claim": "The amide group of Asn68 side chain forms three hydrogen bonds with VL (the carbonyl of Tyr91 main chain and the amide and carbonyl of Gly94 main chain).",
+      "claim_type": "EXPLICIT",
+      "source": "At Asn68, another hotspot site (Figure 3b), the amide group of Asn68 side chain forms three hydrogen bonds with VL (the carbonyl of Tyr91 main chain and the amide and carbonyl of Gly94 main chain).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "These specific hydrogen bonds are described in text and shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "405c575b-edd8-4f66-9b72-e7667554f837",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C30",
+      "claim": "The guanidinium head group of Arg6 forms bidentate hydrogen bonds with Asp54 and cation-\u03c0 stacking with Trp52 of VH.",
+      "claim_type": "EXPLICIT",
+      "source": "The guanidinium head group of Arg6 forms bidendate hydrogen bonds with Asp54 and cation-\u03c0 stacking with Trp52 of VH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These specific interactions are described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "ad416f8f-b099-4abe-bc34-3f991751dbf9",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C31",
+      "claim": "Lys10 forms salt bridges with Asp53 of VH.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys10 forms salt bridges with Asp53 of VH (Figure 3c); its side chain also makes van der Waals contacts to numerous VH residues (not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This interaction is described in text and shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "398030b6-7760-40e4-8286-f30ec3512917",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C32",
+      "claim": "Fab35 and Fab198 share a conserved immunoglobulin fold and a similar antigen-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, superposition of the structure of Fab198 onto that of Fab35 in the ternary complex shows that these two Fabs share not only a conserved immunoglobulin fold but also a similar antigen-binding site (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This structural similarity is described in text and shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "9e0d8f40-ec43-4f61-b227-940e4437473b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C33",
+      "claim": "Many key \u03b11-binding residues in Fab35 are conserved in Fab198 and appear to make similar contacts to nAChR \u03b11 in the modeled Fab198/nAChR \u03b11 binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Even more remarkably, many key \u03b11-binding residues in Fab35 are also conserved in Fab198 and they appear to make similar contacts to nAChR \u03b11 in the modeled Fab198/nAChR \u03b11 binding interface (Figure 4a and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conservation is described in text and shown in Figures 4a and 4c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "e72c62f7-a8ac-427c-9e43-602002a7c41f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C34",
+      "claim": "The CDR-H3 loops between Fab198 and Fab35 differ significantly in length and sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to the above structural similarities, the CDR-H3 loops between Fab198 and Fab35 differ significantly in length and sequence (Figure 4b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This difference is described in text and shown in Figures 4b and 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "1b4cbb08-ce87-4b39-aef3-c3e6ddcac625",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C35",
+      "claim": "mAb35 and mAb198 share a high similarity in binding mechanism to the core MIR/N-terminal helix region, but differ in the periphery of the binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural analyses suggest that mAb35 and mAb198 share a high similarity in binding mechanism to the core MIR/N-terminal helix region, but differ in the periphery of the binding interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "a6f1e4bb-299d-455d-b2d9-f7685fa9db18",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C36",
+      "claim": "Fab192 differs significantly from Fab35 in terms of their binding mechanisms to nAChR \u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "This structural comparison suggests that Fab192 differs significantly from Fab35 in terms of their binding mechanisms to nAChR \u03b11, confirming and extending the differences that were previously recognized between mAb35 and mAb192 (Luo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from structural comparison and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "98a428bf-999f-4d96-ab15-bf7711407a15",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C37",
+      "claim": "Fab35 binds specifically to nAChR \u03b11 but not \u03b19.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the above structural analyses, we have shown by native PAGE that Fab35 indeed binds specifically to nAChR \u03b11 but not \u03b19 (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This binding specificity is demonstrated experimentally by native PAGE shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "6bbfc5c2-be8e-4540-a391-2d78c8eb324e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C38",
+      "claim": "Fab35-binding residues are conserved in nAChR \u03b11 across a wide range of species.",
+      "claim_type": "EXPLICIT",
+      "source": "For the second part of the question, a similar structure-based sequence comparison shows that Fab35-binding residues are conserved in nAChR \u03b11 across a wide range of species (Figure 5d), which is consistent with the high cross-reactivity of autoantibodies in MG and EAMG between different species (Tzartos et al., 1998, 1982; Luo et al., 2009; Gomez et al., 1981).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conservation is shown in Figure 5d and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "6e4d1f69-f222-4d67-83c4-606bcb680f65",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C39",
+      "claim": "Xenopus nAChR \u03b11 does not bind Fab35.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with these structural observations, previous studies have shown that Xenopus nAChR \u03b11 indeed does not bind Fab35 (Saedi et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "91799306-af6c-4626-a80b-741ebbe220ac",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C40",
+      "claim": "Fab35, by binding to the extruding tip of an \u03b11 subunit, makes no direct contact to the neighboring subunits in the nAChR pentamer.",
+      "claim_type": "EXPLICIT",
+      "source": "This model suggests that Fab35, by binding to the extruding tip of an \u03b11 subunit, makes no direct contact to the neighboring subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "4ecdcb6b-d4c1-4d0e-bd00-f32964ba750b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C41",
+      "claim": "Fab35 binds nAChR \u03b11 at a site that is far away from the ligand-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Fab35 binds nAChR \u03b11 at a site that is far away from the ligand-binding site, consistent with the observation that MIR-directed antibodies generally do not affect the channel function (Tzartos et al., 1981; Gomez et al., 1981; Tamamizu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This observation is stated and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "12094960-50d1-443d-bac9-c75fc44a6a9e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C42",
+      "claim": "The two Fabs from a single mAb35 antibody are unable to bind to the two \u03b11 subunits within the same nAChR pentamer due to steric and geometric constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "After putting all of the molecular components on proper scale and orientation, our model of the full-length antibody/receptor complex suggests that, as a result of steric and geometric constraints, the two Fabs from a single mAb35 antibody are unable to bind to the two \u03b11 subunits within the same nAChR pentamer (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is drawn from the modeling analysis shown in Figure 6c.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "058a858f-3963-44c4-95c0-8a8ce749c4a5",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C43",
+      "claim": "MG antibodies will bind two \u03b11 subunits from different pentamers, thereby cross-linking the nAChRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, MG antibodies will bind two \u03b11 subunits from different pentamers, thereby cross-linking the nAChRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "79ebd138-06b6-492b-a63a-58347f96d4c6",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C44",
+      "claim": "The modeling analyses are consistent with previous sucrose density gradient studies showing that mAb35 and similar mAbs cannot bind the two \u03b11 subunits within the same pentamer but can cross-link adjacent nAChR pentamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling analyses are consistent with previous sucrose density gradient studies showing that mAb35 and similar mAbs cannot bind the two \u03b11 subunits within the same pentamer but can cross-link adjacent nAChR pentamers (Conti-Tronconi et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The modeling results are validated by comparison with previous experimental studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "e92b714e-7f6c-4ce5-ae5b-d4807cdf1a7b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C45",
+      "claim": "The binding of nAChR by the divalent MG antibodies rather than the monovalent Fab fragment leads to accelerated degradation of the receptor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that the binding of nAChR by the divalent MG antibodies rather than the monovalent Fab fragment leads to accelerated degradation of the receptor proteins (Drachman et al., 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "01a6cf6e-45f2-4b12-97e6-8d42cef6e13e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C46",
+      "claim": "Cross-linking of the nAChRs is a critical step in receptor degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests that cross-linking of the nAChRs is a critical step in receptor degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation about divalent vs. monovalent antibody effects.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "3d112f3b-50c5-4b79-9cfb-5b56b9dcaf97",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C47",
+      "claim": "Receptor cross-linking is an intrinsic property of mAb35 and mAb35-like MG antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses suggest that receptor cross-linking is an intrinsic property of mAb35 and mAb35-like MG antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural and modeling analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f961c5b1-ec0e-452f-8fc8-3e824dcf9f4d",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C48",
+      "claim": "The crystal structure provides the first atomic view of the detailed interactions between an EAMG antibody and the nAChR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our crystal structure of Fab35 bound to the nAChR \u03b11 ECD provides the first atomic view of the detailed interactions between an EAMG antibody and the nAChR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "27596cd9-a081-4daf-b820-5ffc69eed11c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C49",
+      "claim": "The N-terminal helix (residues 1\u201314) is important for high-affinity MG antibody binding.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies using natively folded nAChR \u03b11/\u03b17 chimera proteins (Luo et al., 2009) or GFP-fused protein fragments (Morell et al., 2014) showed that the N-terminal helix (residues 1\u201314) is also important for high-affinity MG antibody binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f2e58817-ad9e-41b2-b49b-30ce917f30e1",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C50",
+      "claim": "Asn68 and Asp71 of MIR are essential for MG antibody binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies showed that Asn68 and Asp71 of MIR are essential for MG antibody binding while the surrounding residues including Pro69 and Tyr72 showed partial effect when mutated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on previous mutational studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "d77bc36f-052b-48f9-8a35-d68af71d852f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C51",
+      "claim": "Arg6 and Lys10 on the N-terminal helix are critical to MG antibody binding.",
+      "claim_type": "EXPLICIT",
+      "source": "On the N-terminal helix of Torpedo nAChR \u03b11, two exposed residues, Arg6 and Asn10, which correspond to Arg6 and Lys10 in human nAChR \u03b11, respectively, are found to be critical to MG antibody binding by mutational analyses (Morell et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "91537fb9-3422-44b6-9915-b64accb2d00c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C52",
+      "claim": "Many MIR-directed antibodies may share high similarities in their binding sites on the nAChR.",
+      "claim_type": "EXPLICIT",
+      "source": "Although biochemical mapping of antibody-binding residues on nAChR \u03b11 were performed with different antibodies (e.g. mAb210 and mAb132A) (Barkas et al., 1988; Tzartos et al., 1988; Das and Lindstrom, 1989; Saedi et al., 1990; Papadouli et al., 1990, 1993; Luo et al., 2009; Morell et al., 2014), it is remarkable that these biochemical data agree so well with our crystal structure, suggesting that many MIR-directed antibodies may share high similarities in their binding sites on the nAChR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the agreement between the crystal structure and previous biochemical data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "8ed10b6b-54b0-40d5-90cc-27f4ce2bc32b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C53",
+      "claim": "Molecular mimicries of the MIR and its immediate surrounding regions could be developed to bind a significant fraction of MIR-directed MG autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "An important implication of this finding is that molecular mimicries of the MIR and its immediate surrounding regions could be developed to bind a significant fraction of MIR-directed MG autoantibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication drawn from the structural findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "891bb638-3567-4d86-8fe1-19772867376c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C54",
+      "claim": "The complete epitope for mAb35 consists of two separated peptide regions (the MIR loop and the N-terminal helix) that are required to fold together properly for optimal binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Most MIR-directed mAbs, such as mAb35, bind preferably to folded receptors. Our structure shows that the complete epitope consists of two separated peptide regions (the MIR loop and the N-terminal helix) that are required to fold together properly for optimal binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "feb4f592-9175-4669-8ce5-695abcce50ce",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C55",
+      "claim": "The native conformation of the MIR that permits binding of mAbs 35 and 198 depends on the interaction of the N-terminal helix with the MIR loop.",
+      "claim_type": "EXPLICIT",
+      "source": "These structural observations are consistent with previous studies of chimeras and mutants showing that the native conformation of the MIR that permits binding of mAbs 35 and 198 depends on the interaction of the N-terminal helix with the MIR loop (Luo et al., 2009; Dellisanti et al., 2007a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "68ef4fc7-e2ee-4282-a2dd-9b6927f2cf6c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C56",
+      "claim": "Neighboring subunits in the nAChR pentamer do not make direct contact to Fab35.",
+      "claim_type": "EXPLICIT",
+      "source": "Our modeling analyses indicate that neighboring subunits in the nAChR pentamer do not make direct contact to Fab35, suggesting that the binding interactions observed in our crystal structures represent most, if not all, of those in the native complexes between mAb35 and the full-length nAChR pentamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the modeling analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c01dcd4f-d0f4-4ac4-9e49-3f534bb9dc76",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C57",
+      "claim": "Antibodies in MG serum and mAbs bind mature and pentameric nAChR more tightly than the unassembled nAChR \u03b11 monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is known that antibodies in MG serum and mAbs bind mature and pentameric nAChR more tightly than the unassembled nAChR \u03b11 monomer (Luo et al., 2009; Merlie and Lindstrom, 1983; Conroy et al., 1990), and there is evidence that MIR plays an important role in initiating conformational maturation of subunits prior to their assembly into pentameric AChR receptors (Luo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "ddbcd9a2-a72d-40be-ac84-6ad3095a731c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C58",
+      "claim": "Some MG mAbs bind neuronal nAChR subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this notion, it has been shown that some MG mAbs bind neuronal nAChR subunits. mAb35 was shown to bind chicken nAChR \u03b13 and also suggested to bind human \u03b12, \u03b13, \u03b15 and \u03b23 (Conroy and Berg, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "1caeb170-47cf-4975-80be-1cf614741226",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C59",
+      "claim": "mAb210 has been used to bind human \u03b15 and \u03b23.",
+      "claim_type": "EXPLICIT",
+      "source": "Another MIR-directed antibody, mAb210, has been used to bind human \u03b15 and \u03b23 (Kuryatov et al., 2008; Wang et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "f342b02b-5d4c-423f-9eb3-98a478318f56",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C60",
+      "claim": "MG antibodies are unlikely to bind two nAChR pentamers oriented vertically on a flat membrane surface even when considering the hinge flexibility of the antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "We further noticed that MG antibodies are unlikely to bind two nAChR pentamers oriented vertically on a flat membrane surface even when considering the hinge flexibility of the antibody (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is concluded from the modeling analysis shown in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "a3fb573f-334e-43e3-9712-2e2e3d7db052",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C61",
+      "claim": "A potential effect of antibody-mediated receptor cross-linking is membrane curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that the nAChR pentamers in the membrane cannot be tilted freely, a potential effect of antibody-mediated receptor cross-linking is membrane curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative conclusion drawn from the modeling analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c75df499-a091-4af0-a6a8-d1fda3181a4c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C62",
+      "claim": "Molecular mimicries of the MIR should prevent cross-linking and degradation of nAChR by competitive binding to MG antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed mechanisms by which antibody-mediated receptor cross-linking induces the receptor degradation remain to be elucidated, molecular mimicries of the MIR should prevent such cross-linking and degradation of nAChR by competitive binding to MG antibodies (Sophianos and Tzartos, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "4f94cbf7-ba4c-491b-b391-b335bebe23db",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C63",
+      "claim": "It is possible to develop drug molecules to inhibit the binding of a large fraction of MG antibodies to nAChR and related pathological immune reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies suggest that it is possible to develop drug molecules to inhibit the binding of a large fraction of MG antibodies to nAChR and related pathological immune reactions, and the crystal structures presented here provide a basis for developing such drug molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative implication drawn from the structural findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "de93eb81-e515-430d-990b-104604fb40ef",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C64",
+      "claim": "The \u03b1211 construct contains three point mutations (V8E, W149R, and V155A) for improved solubility and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The construct was truncated at the 211th amino acid from the N-terminal of nAChR \u03b11 subunit without a signal sequence, and three point mutations (V8E, W149R, and V155A) were introduced for improved solubility and stability (Dellisanti et al., 2007a; Chen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "d07ed971-7ab7-4cce-979d-b432024c5071",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C65",
+      "claim": "Crystals of the ternary complex were grown in 0.1 M sodium cacodylate trihydrate, pH 6.5, 0.1\u20130.15 M calcium acetate hydrate and 18\u201320% (w/v) PEG 8K.",
+      "claim_type": "EXPLICIT",
+      "source": "The optimized condition was 0.1 M sodium cacodylate trihydrate, pH 6.5, 0.1\u20130.15 M calcium acetate hydrate and 18\u201320% (w/v) PEG 8K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This crystallization condition is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "6ca8b7a7-943a-45bd-8d07-e8b2d1bf389f",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C66",
+      "claim": "Both human and mouse complex crystals belong to the space group C2.",
+      "claim_type": "EXPLICIT",
+      "source": "Both human and mouse complex crystals belong to the space group C2, with unit cell dimensions of a = 160.0 \u00c5, b = 42.1 \u00c5, c = 136.5 \u00c5, \u03b2 = 117.1\u00b0; and a = 159.9 \u00c5, b = 42.0 \u00c5, c = 137.6 \u00c5, \u03b2 = 116.5\u00b0, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This crystallographic information is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "42c15a3a-96f3-42d4-a9de-746921741cf1",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C67",
+      "claim": "The crystal structures were solved by molecular replacement using PHASER MR.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures were solved by molecular replacement using PHASER MR (McCoy et al., 2007) in CCP4 (Collaborative Computational Project Number 4, 1994) and the coordinates of \u03b1211/\u03b1-Btx complex (PDB ID, 2QC1) and Fab198 (PDB ID, 1FN4, modified to poly-Ala) (Dellisanti et al., 2007a; Poulas et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This method is stated in the Materials and methods section with supporting citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "3ab18bcd-26e3-41e1-8e19-6695eaf6b4d9",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C68",
+      "claim": "The human nAChR \u03b11 ECD appears very similar to the previously characterized mouse nAChR \u03b11 ECD.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study also generated the first atomic picture of the human nAChR \u03b11 ECD, which appears very similar to the previously characterized mouse nAChR \u03b11 ECD (PDB ID, 2QC1) (Lindstrom, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 1 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "4352bd38-03b0-4d46-8d65-87e7ee8c1170",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C69",
+      "claim": "A significant structural difference between the human and mouse nAChR \u03b11 ECDs is the binding interface of \u03b1-Btx.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant structural difference between the human and mouse nAChR \u03b11 ECDs is the binding interface of \u03b1-Btx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 2 caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "a33af9ab-a4f5-45a6-9c03-53deda023d50",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C70",
+      "claim": "In the mouse nAChR \u03b11 ECD, Phe189 is inserted into a surface pocket of \u03b1-Btx.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mouse nAChR \u03b11 ECD, Phe189 is inserted into a surface pocket of \u03b1-Btx.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 2 caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "46211914-b226-4b96-b8d2-0d2cb3901aef",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C71",
+      "claim": "In the human nAChR \u03b11 ECD, Thr189 is too small to fill in the \u03b1-Btx pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In the human nAChR \u03b11 ECD, Thr189, is too small to fill in the \u03b1-Btx pocket.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 2 caption and shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "e0223236-8797-46cd-be00-c26d2cebaa2d",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C72",
+      "claim": "The observations about Phe189 and Thr189 are consistent with predictions from previous analyses of the nAChR \u03b11/\u03b1-Btx complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with predictions from previous analyses of the nAChR \u03b11/\u03b1-Btx complex (Vincent et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Figure 1\u2014figure supplement 2 caption with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c0d0c93f-be23-48bd-a513-d1fd44002542",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "claim_id": "C73",
+      "claim": "Coordinates and structure factors have been deposited in the Protein Data Bank under accession codes PDB: 5HBT (Fab35/human nAChR \u03b11 ECD/\u03b1-Btx) and 5HBV (Fab35/mouse nAChR \u03b11 ECD/\u03b1-Btx).",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinates and structure factors have been deposited in the Protein Data Bank under accession codes PDB: 5HBT (Fab35/human nAChR \u03b11 ECD/\u03b1-Btx) and 5HBV (Fab35/mouse nAChR \u03b11 ECD/\u03b1-Btx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2ae0a403-4055-4b76-8134-70bdedc3499c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the clinical and biological context of myasthenia gravis (MG), describing it as an autoimmune disease affecting >20 in 100,000 people where nAChR is the major autoantigen target. More than half of autoantibodies bind the main immunogenic region (MIR) on the \u03b11 subunit, and MIR-specific antibody titers correlate with disease severity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 are well-supported by extensive citations to prior literature. These are established facts about MG pathology and epidemiology that provide necessary background context. The authors appropriately cite primary sources for prevalence statistics, antibody binding characteristics, and disease mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors determined crystal structures of human and mouse nAChR \u03b11 ECD in complex with Fab35 and \u03b1-bungarotoxin at 2.61 \u00c5 and 2.70 \u00c5 resolution, respectively. The antibody/receptor interface appears identical between species, providing the first atomic-resolution view of EAMG antibody-receptor interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17, C18, C48, C64-C67, and C73 describe the core structural biology achievement. The resolution is appropriate for the conclusions drawn, crystallographic statistics are provided in supplementary materials, structures are deposited in the PDB, and methods are adequately described. The claim of 'first atomic view' (C48) is supported by the novelty of high-resolution antibody-receptor complex structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "ee463b93-2a39-4b6b-8da4-b851228f0e31",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fab35 binds nAChR \u03b11 in an upright orientation with a buried surface area of 899 \u00c5\u00b2. The MIR loop inserts into a pocket between VH and VL domains, while the N-terminal helix sits in a groove on the heavy chain. CDR-H2, CDR-H3, and CDR-L3 form the primary binding interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 describe the overall binding architecture supported by crystallographic data shown in Figures 1 and 2. The buried surface area calculation (C20) is a standard structural metric. The descriptions of loop insertions and domain interactions are directly observable in the electron density maps and structural models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "b8615c5a-8651-432c-8ced-827f3b8561ac",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The nAChR \u03b11 structure remains unchanged upon Fab35 binding compared to the binary \u03b11/\u03b1-Btx complex, suggesting Fab35 recognizes a preformed conformation of the receptor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 are supported by structural superposition analysis shown in Figure 1\u2014figure supplement 3. The conclusion that Fab35 recognizes a preformed conformation (C26) is a reasonable inference from the structural invariance upon antibody binding, though alternative explanations (e.g., crystal packing effects) are not explicitly ruled out.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "dcb68a81-f74e-4914-bc6e-4a0bd022face",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Four 'hotspot' residues on nAChR \u03b11 make extensive contacts with Fab35: Asn68 and Asp71 from the MIR loop, and Arg6 and Lys10 from the N-terminal helix. These residues anchor multiple hydrogen bonds, salt bridges, and cation-\u03c0 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 describe specific molecular interactions supported by high-resolution structural data shown in Figure 3 and Figure 3\u2014figure supplement 1. The electron density maps clearly show the side chain conformations and interaction geometries. The identification of 'hotspots' based on contact analysis is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "113abb7e-04e5-4852-bf82-88886933b251",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fab35 and Fab198 share conserved immunoglobulin folds and similar antigen-binding sites with conserved key \u03b11-binding residues, but differ significantly in CDR-H3 loop length and sequence. This suggests high similarity in binding to the core MIR/N-terminal helix region but differences at the periphery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by structural superposition and sequence alignment shown in Figure 4. The modeling of Fab198 binding is reasonable given the high structural similarity in the antigen-binding site. However, the modeled Fab198/\u03b11 interface (C33) is inferred rather than experimentally determined, introducing some uncertainty about detailed interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "dbc543d0-e8ed-43d7-b84e-ec6911965e8b",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Fab192 differs significantly from Fab35 in binding mechanism to nAChR \u03b11, with substantial differences in variable domain orientation and lack of conservation of key binding residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by structural comparison shown in Figure 4\u2014figure supplement 1b and sequence alignment in Figure 4c. The conclusion is consistent with prior biochemical data (Luo et al., 2009) and extends it with structural evidence. The rotational twist of variable domains and sequence divergence provide clear structural basis for different binding mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "b9dec991-d4d3-4c35-b136-3e080c0745a1",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Fab35 binds specifically to nAChR \u03b11 but not \u03b19, consistent with sequence divergence at key binding positions. Fab35-binding residues are conserved across species in \u03b11, except in Xenopus where substitutions disrupt binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by native PAGE experiments (Figure 5c) and structure-based sequence analysis (Figure 5a, d). The experimental demonstration of \u03b11 vs \u03b19 specificity (C37) directly validates structural predictions. The species conservation analysis and Xenopus exception are supported by both structural modeling and cited experimental data (Saedi et al., 1990).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "95ab673a-6859-48a9-b6f5-f0223d59283e",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Modeling analysis suggests Fab35 makes no direct contact with neighboring subunits in the nAChR pentamer and binds far from the ligand-binding site, consistent with observations that MIR-directed antibodies do not affect channel function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, and C56 are supported by structure-based modeling shown in Figure 6a-b. The conclusion that Fab35 doesn't contact neighboring subunits is reasonable given the binding site location at the extruding tip of \u03b11. The distance from the ligand-binding site is consistent with cited functional data showing MIR antibodies don't affect channel function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "654185a7-0034-4ab2-8801-1559cbe9f83c",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Modeling suggests a single mAb35 antibody cannot bind both \u03b11 subunits within the same pentamer due to steric constraints, leading to inter-pentamer cross-linking. This cross-linking is critical for receptor degradation and is an intrinsic property of mAb35-like antibodies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 combine modeling analysis (Figure 6c, Figure 6\u2014figure supplement 1) with cited experimental data. The steric constraint preventing intra-pentamer binding (C42) is a reasonable inference from the model geometry. The cross-linking conclusion (C43) follows logically and is validated by comparison with sucrose density gradient studies (C44). The link to receptor degradation (C45-C46) is supported by cited literature (Drachman et al., 1978).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "57a851b4-527a-4b88-beb2-78e1746e2062",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The crystal structure validates extensive prior biochemical mapping studies showing that the N-terminal helix (residues 1-14), Asn68, Asp71, Arg6, and Lys10 are critical for MG antibody binding. The agreement between structural and biochemical data suggests many MIR-directed antibodies share similar binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 integrate the current structural findings with extensive prior biochemical literature. The validation of biochemical predictions by the crystal structure (C49-C51) strengthens both the current work and prior studies. The inference that many MIR-directed antibodies share similar binding sites (C52) is reasonable given the agreement across multiple antibodies studied by different methods, though some heterogeneity exists (e.g., mAb192).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "c7bf437a-05a7-4f66-a94d-a06b3aaeb711",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The complete epitope for mAb35 consists of two separated regions (MIR loop and N-terminal helix) that must fold together properly for optimal binding. The native MIR conformation depends on interaction with the N-terminal helix.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by the crystal structure showing both regions in the binding interface and by cited studies of chimeras and mutants (Luo et al., 2009; Dellisanti et al., 2007a). The structural data clearly show the spatial proximity and interaction between these two regions. This explains why mAb35 preferentially binds folded receptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "b9e49620-2d4f-4c14-9e1a-786dd40396de",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MG antibodies bind mature pentameric nAChR more tightly than unassembled \u03b11 monomers. Some MG mAbs, including mAb35 and mAb210, can bind neuronal nAChR subunits (\u03b12, \u03b13, \u03b15, \u03b23).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by cited literature. The differential binding affinity for pentamers vs monomers (C57) is an established observation that the authors appropriately cite. The cross-reactivity with neuronal subunits (C58-C59) is also supported by citations and consistent with the sequence conservation analysis in Figure 5a.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "b9b51201-46e8-40f3-9997-c30166b4a666",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Modeling suggests MG antibodies are unlikely to bind two vertically oriented nAChR pentamers on a flat membrane, and antibody-mediated cross-linking may induce membrane curvature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61 are speculative modeling-based predictions shown in Figure 6\u2014figure supplement 1b. While the geometric constraints are reasonable, the membrane curvature hypothesis (C61) lacks experimental validation. The authors appropriately present this as a 'potential effect' and acknowledge that detailed mechanisms remain to be elucidated. This represents an interesting hypothesis requiring future experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "9d11d6ad-da2f-43ad-ad45-bf5f404091f6",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The structural findings suggest it may be possible to develop molecular mimicries of the MIR to competitively bind MG antibodies and prevent receptor cross-linking and degradation, providing a basis for therapeutic development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53, C62, and C63 are speculative therapeutic implications. While the structural data provide a rational basis for such approaches, no experimental validation of molecular mimicries is presented. The authors appropriately frame these as possibilities and implications rather than demonstrated results. These represent reasonable future directions but are not supported by data in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "764c2673-d7a0-42bf-b38d-eafc39cef44a",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "mAb35 is a reference monoclonal antibody that competes with ~65% of MG patient antibodies and binds natively folded nAChR \u03b11 with high affinity (Kd ~2 nM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C12, and C16 describe established properties of mAb35 supported by extensive prior literature (Tzartos and Lindstrom, 1980; Tzartos et al., 1982, 1983; Luo et al., 2009). These characteristics justify the choice of mAb35 as a model system for structural studies. The authors appropriately cite the original sources for these properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    },
+    {
+      "id": "17bb1e19-ec6d-4875-bc40-ea508989f69d",
+      "content_id": "caba09cf-6263-4b07-85aa-96096ea17ea0",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The human nAChR \u03b11 ECD structure is very similar to mouse \u03b11 ECD, with a significant difference at the \u03b1-Btx binding interface where Phe189 (mouse) vs Thr189 (human) affects pocket filling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 describe structural comparisons shown in Figure 1\u2014figure supplements 1 and 2. The overall similarity between human and mouse structures is evident, and the specific difference at position 189 is clearly shown in electron density maps. The consistency with prior predictions (Vincent et al., 2001) validates both the current structure and previous analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:56:25.482361Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ebe80a88-f6dc-4fea-9abb-b58f522ae09f",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "167fb4a1-f15a-4dd8-ab90-c1ed789ada91",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "32b6004e-1b54-4f63-a2bf-c44e4b3f8914",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "2082885d-e3fe-4a59-98d1-7fee1619ac1b",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "83fa8c8d-1677-4706-8fc1-9df452529225",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "f9afe27d-b179-4c5d-87b1-4eb5b9e3d5e6",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "2064043a-01db-4cf1-91a3-62a4fce918e5",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "85193fa3-d9e8-4e97-92f8-27b7af12b240",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "7c51eef0-5156-4a15-93b0-471a5f4f956e",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "99728bfe-abe8-4437-8de8-227a137d241c",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "c33550f8-1720-419b-8d72-7b14fce9517d",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "508682f4-3cc2-4390-a719-9b16cc269095",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "dde1a292-117b-4bb2-bec1-21dfad0cc13f",
+      "result_id": "2ae0a403-4055-4b76-8134-70bdedc3499c"
+    },
+    {
+      "claim_id": "22107f52-5f3e-49dd-8737-799d9a1f7bb1",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "443777ed-e0b8-40dd-921f-923b7060848e",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "63fc6ea4-bfad-4e20-ba12-f45663fa76ae",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "f961c5b1-ec0e-452f-8fc8-3e824dcf9f4d",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "de93eb81-e515-430d-990b-104604fb40ef",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "d07ed971-7ab7-4cce-979d-b432024c5071",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "6ca8b7a7-943a-45bd-8d07-e8b2d1bf389f",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "42c15a3a-96f3-42d4-a9de-746921741cf1",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "c0d0c93f-be23-48bd-a513-d1fd44002542",
+      "result_id": "948af175-2e1d-4aa8-b8c0-d4d39ceff0dc"
+    },
+    {
+      "claim_id": "0b8d925d-3466-4f64-b7a5-104c6587d454",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "5165b091-8d56-4c0a-9f85-07fadab836a7",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "107973d2-f5b9-452e-8ee1-078970669af3",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "be23571f-0593-4989-9271-e646d3c22867",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "aa02e2c1-979b-40c1-930c-948f92ebabfb",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "f139fa37-c9db-4e28-be29-943f7ef01343",
+      "result_id": "ee463b93-2a39-4b6b-8da4-b851228f0e31"
+    },
+    {
+      "claim_id": "db2bca47-6de5-4a07-8330-97ca2d16a830",
+      "result_id": "b8615c5a-8651-432c-8ced-827f3b8561ac"
+    },
+    {
+      "claim_id": "49c2bfb3-7b97-4f74-b0b2-27cb903b4cff",
+      "result_id": "b8615c5a-8651-432c-8ced-827f3b8561ac"
+    },
+    {
+      "claim_id": "7ff6eb58-b3e1-46d5-a2dc-f857392f7094",
+      "result_id": "dcb68a81-f74e-4914-bc6e-4a0bd022face"
+    },
+    {
+      "claim_id": "acdf592f-1551-46e7-88c0-ab82ab866dfe",
+      "result_id": "dcb68a81-f74e-4914-bc6e-4a0bd022face"
+    },
+    {
+      "claim_id": "184e2a34-7113-4e0e-9b04-9c4f9b163a23",
+      "result_id": "dcb68a81-f74e-4914-bc6e-4a0bd022face"
+    },
+    {
+      "claim_id": "405c575b-edd8-4f66-9b72-e7667554f837",
+      "result_id": "dcb68a81-f74e-4914-bc6e-4a0bd022face"
+    },
+    {
+      "claim_id": "ad416f8f-b099-4abe-bc34-3f991751dbf9",
+      "result_id": "dcb68a81-f74e-4914-bc6e-4a0bd022face"
+    },
+    {
+      "claim_id": "398030b6-7760-40e4-8286-f30ec3512917",
+      "result_id": "113abb7e-04e5-4852-bf82-88886933b251"
+    },
+    {
+      "claim_id": "9e0d8f40-ec43-4f61-b227-940e4437473b",
+      "result_id": "113abb7e-04e5-4852-bf82-88886933b251"
+    },
+    {
+      "claim_id": "e72c62f7-a8ac-427c-9e43-602002a7c41f",
+      "result_id": "113abb7e-04e5-4852-bf82-88886933b251"
+    },
+    {
+      "claim_id": "1b4cbb08-ce87-4b39-aef3-c3e6ddcac625",
+      "result_id": "113abb7e-04e5-4852-bf82-88886933b251"
+    },
+    {
+      "claim_id": "a6f1e4bb-299d-455d-b2d9-f7685fa9db18",
+      "result_id": "dbc543d0-e8ed-43d7-b84e-ec6911965e8b"
+    },
+    {
+      "claim_id": "98a428bf-999f-4d96-ab15-bf7711407a15",
+      "result_id": "b9dec991-d4d3-4c35-b136-3e080c0745a1"
+    },
+    {
+      "claim_id": "6bbfc5c2-be8e-4540-a391-2d78c8eb324e",
+      "result_id": "b9dec991-d4d3-4c35-b136-3e080c0745a1"
+    },
+    {
+      "claim_id": "6e4d1f69-f222-4d67-83c4-606bcb680f65",
+      "result_id": "b9dec991-d4d3-4c35-b136-3e080c0745a1"
+    },
+    {
+      "claim_id": "91799306-af6c-4626-a80b-741ebbe220ac",
+      "result_id": "95ab673a-6859-48a9-b6f5-f0223d59283e"
+    },
+    {
+      "claim_id": "4ecdcb6b-d4c1-4d0e-bd00-f32964ba750b",
+      "result_id": "95ab673a-6859-48a9-b6f5-f0223d59283e"
+    },
+    {
+      "claim_id": "68ef4fc7-e2ee-4282-a2dd-9b6927f2cf6c",
+      "result_id": "95ab673a-6859-48a9-b6f5-f0223d59283e"
+    },
+    {
+      "claim_id": "12094960-50d1-443d-bac9-c75fc44a6a9e",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "058a858f-3963-44c4-95c0-8a8ce749c4a5",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "79ebd138-06b6-492b-a63a-58347f96d4c6",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "e92b714e-7f6c-4ce5-ae5b-d4807cdf1a7b",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "01a6cf6e-45f2-4b12-97e6-8d42cef6e13e",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "3d112f3b-50c5-4b79-9cfb-5b56b9dcaf97",
+      "result_id": "654185a7-0034-4ab2-8801-1559cbe9f83c"
+    },
+    {
+      "claim_id": "27596cd9-a081-4daf-b820-5ffc69eed11c",
+      "result_id": "57a851b4-527a-4b88-beb2-78e1746e2062"
+    },
+    {
+      "claim_id": "f2e58817-ad9e-41b2-b49b-30ce917f30e1",
+      "result_id": "57a851b4-527a-4b88-beb2-78e1746e2062"
+    },
+    {
+      "claim_id": "d77bc36f-052b-48f9-8a35-d68af71d852f",
+      "result_id": "57a851b4-527a-4b88-beb2-78e1746e2062"
+    },
+    {
+      "claim_id": "91537fb9-3422-44b6-9915-b64accb2d00c",
+      "result_id": "57a851b4-527a-4b88-beb2-78e1746e2062"
+    },
+    {
+      "claim_id": "891bb638-3567-4d86-8fe1-19772867376c",
+      "result_id": "c7bf437a-05a7-4f66-a94d-a06b3aaeb711"
+    },
+    {
+      "claim_id": "feb4f592-9175-4669-8ce5-695abcce50ce",
+      "result_id": "c7bf437a-05a7-4f66-a94d-a06b3aaeb711"
+    },
+    {
+      "claim_id": "c01dcd4f-d0f4-4ac4-9e49-3f534bb9dc76",
+      "result_id": "b9e49620-2d4f-4c14-9e1a-786dd40396de"
+    },
+    {
+      "claim_id": "ddbcd9a2-a72d-40be-ac84-6ad3095a731c",
+      "result_id": "b9e49620-2d4f-4c14-9e1a-786dd40396de"
+    },
+    {
+      "claim_id": "1caeb170-47cf-4975-80be-1cf614741226",
+      "result_id": "b9e49620-2d4f-4c14-9e1a-786dd40396de"
+    },
+    {
+      "claim_id": "f342b02b-5d4c-423f-9eb3-98a478318f56",
+      "result_id": "b9b51201-46e8-40f3-9997-c30166b4a666"
+    },
+    {
+      "claim_id": "a3fb573f-334e-43e3-9712-2e2e3d7db052",
+      "result_id": "b9b51201-46e8-40f3-9997-c30166b4a666"
+    },
+    {
+      "claim_id": "8ed10b6b-54b0-40d5-90cc-27f4ce2bc32b",
+      "result_id": "9d11d6ad-da2f-43ad-ad45-bf5f404091f6"
+    },
+    {
+      "claim_id": "c75df499-a091-4af0-a6a8-d1fda3181a4c",
+      "result_id": "9d11d6ad-da2f-43ad-ad45-bf5f404091f6"
+    },
+    {
+      "claim_id": "4f94cbf7-ba4c-491b-b391-b335bebe23db",
+      "result_id": "9d11d6ad-da2f-43ad-ad45-bf5f404091f6"
+    },
+    {
+      "claim_id": "c5a45ff4-4fd5-4b1c-ac14-97c7bc25b30f",
+      "result_id": "764c2673-d7a0-42bf-b38d-eafc39cef44a"
+    },
+    {
+      "claim_id": "99728bfe-abe8-4437-8de8-227a137d241c",
+      "result_id": "764c2673-d7a0-42bf-b38d-eafc39cef44a"
+    },
+    {
+      "claim_id": "f1e4a90f-7bc7-4982-af85-8c07ca05d5f7",
+      "result_id": "764c2673-d7a0-42bf-b38d-eafc39cef44a"
+    },
+    {
+      "claim_id": "3ab18bcd-26e3-41e1-8e19-6695eaf6b4d9",
+      "result_id": "17bb1e19-ec6d-4875-bc40-ea508989f69d"
+    },
+    {
+      "claim_id": "4352bd38-03b0-4d46-8d65-87e7ee8c1170",
+      "result_id": "17bb1e19-ec6d-4875-bc40-ea508989f69d"
+    },
+    {
+      "claim_id": "a33af9ab-a4f5-45a6-9c03-53deda023d50",
+      "result_id": "17bb1e19-ec6d-4875-bc40-ea508989f69d"
+    },
+    {
+      "claim_id": "46211914-b226-4b96-b8d2-0d2cb3901aef",
+      "result_id": "17bb1e19-ec6d-4875-bc40-ea508989f69d"
+    },
+    {
+      "claim_id": "e0223236-8797-46cd-be00-c26d2cebaa2d",
+      "result_id": "17bb1e19-ec6d-4875-bc40-ea508989f69d"
+    }
+  ],
+  "comparisons": []
+}

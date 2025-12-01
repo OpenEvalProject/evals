@@ -1,0 +1,1907 @@
+{
+  "submission": {
+    "id": "c313e7db-51fc-4df8-b0db-b2153fd79e74",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:08:11.482399Z",
+    "updated_at": "2025-11-30T21:08:11.482399Z"
+  },
+  "content": [
+    {
+      "id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "submission_id": "c313e7db-51fc-4df8-b0db-b2153fd79e74",
+      "content_type": "manuscript",
+      "content_text": "# Atomic mutagenesis in ion channels with engineered stoichiometry\n\n## Authors\n\n- John D Lueck<sup>1</sup>\n- Adam L Mackey<sup>1</sup>\n- Daniel T Infield<sup>1</sup>\n- Jason D Galpin<sup>1</sup>\n- Jing Li<sup>2</sup>\n- Beno\u00eet Roux<sup>2</sup> ([ORCID: 0000-0002-5254-2712](https://orcid.org/0000-0002-5254-2712))\n- Christopher A Ahern<sup>1</sup> ([ORCID: 0000-0002-7975-2744](https://orcid.org/0000-0002-7975-2744)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biophysics The University of Iowa Iowa City United States\n2. Department of Biochemistry and Molecular Biology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nC-type inactivation of potassium channels fine-tunes the electrical signaling in excitable cells through an internal timing mechanism that is mediated by a hydrogen bond network in the channels' selectively filter. Previously, we used nonsense suppression to highlight the role of the conserved Trp434-Asp447 indole hydrogen bond in Shaker potassium channels with a non-hydrogen bonding homologue of tryptophan, Ind (Pless et al., 2013). Here, molecular dynamics simulations indicate that the Trp434Ind hydrogen bonding partner, Asp447, unexpectedly 'flips out' towards the extracellular environment, allowing water to penetrate the space behind the selectivity filter while simultaneously reducing the local negative electrostatic charge. Additionally, a protein engineering approach is presented whereby split intein sequences are flanked by endoplasmic reticulum retention/retrieval motifs (ERret) are incorporated into the N- or C- termini of Shaker monomers or within sodium channels two-domain fragments. This system enabled stoichiometric control of Shaker monomers and the encoding of multiple amino acids within a channel tetramer.\n\n## Introduction\n\nC-type inactivation, also termed \u2018slow-inactivation\u2019 due to its delayed kinetics, in voltage-gated potassium channels describes a phenomenon by which ionic conductance through the channel pore is decreased in the presence of continued depolarizing stimulus (Choi et al., 1991; Hoshi et al., 1991). In a physiological setting, this mechanism represents a form of activity-dependent macromolecular memory that can alter action-potential firing rates (Aldrich et al., 1979; Roeper et al., 1997). The basis for C-type inactivation has been investigated with functional, structural and computational approaches, which have produced a consensus mechanism whereby channels become non-conducting due to local perturbations in the selectivity filter (Yellen et al., 1994; Baukrowitz and Yellen, 1995; Kiss and Korn, 1998; Perozo et al., 1998; Roux and MacKinnon, 1999; Bern\u00e8che and Roux, 2001; Cordero-Morales et al., 2007; Panyi and Deutsch, 2007; Cuello et al., 2010; Ostmeyer et al., 2013; Thomson et al., 2014). However, the nature of the conformational change and role of specific residues remain an area of active experimentation and debate (Devaraneni et al., 2013; Hoshi and Armstrong, 2013).\n\nWe previously identified an intra- and inter-subunit hydrogen bond network that controls the rate of entry into the non-conducting pore conformation (Pless et al., 2013). Our study employed nonsense suppression in the Xenopus laevis oocyte expression system to genetically encode a variety of synthetic noncanonical amino acids (ncAAs). In the context of the Xenopus laevis oocyte, the cRNA of the target protein contains an introduced stop codon (often amber, TAG) that is subsequently suppressed by a co-injected orthogonal tRNA that has been misacylated in vitro with the ncAA. This approach was used to encode a tryptophan homologue, 2-amino-3-indol-1-yl-propionic acid (referred to as Ind) that fails to participate in hydrogen bonding at position 434, a site previously identified as being important for channel inactivation. Our original efforts failed to determine the functional role of individual hydrogen bonds with Ind because subunit concatenation in the tetrameric construct resulted in a significant loss of expressing channels, an outcome that prevented the application of nonsense suppression (Pless et al., 2013). Reduced channel expression is a common challenge of the nonsense suppression method where amino acid incorporation varies greatly from position to position within a single reading frame and between channel families. Furthermore, given the central role of the Trp434-Asp447 hydrogen bond in the mechanism of C-type inactivation, it was not possible to simultaneously encode Ind within each of the four subunits of the channel because this resulted in a non-conducting phenotype which lacked the relatively high expression levels needed to measure gating currents which originate from the movement of the channel voltage-sensor in the transmembrane electric field (Perozo et al., 1993). Thus, we concluded that while one can control the stoichiometry of individual subunit composition in a concatenated construct, their low expression impeded the use of nonsense suppression in combination with this approach. In our original publication, this shortcoming was partially overcome by combining WT cRNA with Ind-tRNA and Trp434TAG cRNA within an individual oocyte. This experimental approach resulted in predicted accelerated, but complex, inactivation kinetics consistent with a mixed population of channels with 1, 2 or 3 Ind434-containing monomers (see Figure 2F, Pless et al., 2013, eLife). In the present study, we examined the mechanism of Ind-induced inactivation by generating a new approach to control subunit stoichiometry to test individual hydrogen bond contributions in Shaker channel C-type inactivation and more generally, for the encoding of multiple ncAA within a single channel or an ion channel complex in the application of nonsense suppression.\n\n## Results\n\n### Molecular dynamic simulations of Ind and the Trp434-Asp447 hydrogen bond\n\nTargeted replacement of Trp434 with the isosteric ncAA Ind was used previously to highlight the general importance of the indole hydrogen bond of this highly conserved Trp residue. The Ind amino acid has seen limited use in structure-function studies for hydrogen bond testing (Lacroix et al., 2012; Pless et al., 2013, 2014; Kim et al., 2015; Zhang et al., 2015) and none thus far in structural or computational studies that would inform on its tolerance once encoded within a protein. For instance, it is not known if the Ind substitution would specifically limit hydrogen bonding at the indole nitrogen atom (the purpose for which it was designed) or could it also produce a new side-chain orientation that itself alters protein function. A computational approach based on molecular dynamics (MD) simulations was therefore employed to examine the local dynamics of the Ind side-chain and its relation to the intra-subunit hydrogen bond accepting side-chain Asp447. These MD simulations reveal key conformational and dynamic differences between wild type (WT) and Trp434Ind of the Shaker channel selectivity filter in the conductive state (Long et al., 2005) (Figure 1A). In WT Shaker, a hydrogen bond is formed between Trp434 and Asp447, restraining the two residues close to each other during a large fraction of a 500 ns trajectory (Figure 1C). In the absence of the Asp447-Trp434 hydrogen bond in the Trp434Ind Shaker, there is an increased distance between these two residues in all of the four subunits (Figure 1C), which is associated with a flipping of the Asp447 side-chain toward the extracellular bulk solution (Figure 1B). See also Supplemental Videos 1 and 2 for wildtype W434 and W434Ind channels which depict 150\u00a0ns vignettes of the full molecular dynamics simulations.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig1-v2.jpg)\n\n**Figure 1.:** (A) Position of the Trp434 \u2013Asp447 H-bond. (B) Time series of dihedral angles \u03c71 (N\u2013C\u03b1\u2013C\u03b2\u2013C\u03b3) of Arp447 for wild type (left) and Trp434Ind (right) demonstrating the flipping of the Arp447 side-chains during the simulations. (C) Time series of distance between Asp447 and Trp434 in four subunits characterizing the local conformational dynamics during equilibrium simulations for wild type (left) and Trp434Ind (right) of Shaker. The distance is measured between Asp447 (C\u03b3) and Trp434 (N\u03b51) or equivalent atom in the same position in Trp434Ind. (D) Top panels, typical conformations for protein and water molecules and occupancy (20%) map of water molecules around selectivity filter of subunit C. Bottom panels, 2D average occupancy map for all four subunits during 500ns MD simulations. The x-axis describes the radius to the center of the selectivity filter, and the y-axis is the z-coordinate of water molecules. In all simulations the selectivity filter in the conductive state. Videos 1 and 2 indicate 150 ns vignettes of the simulation for the W434-D447 and W434Ind-D447 in the presence shown water molecules. In each case, a subunit of Shaker (residues 433 to 447) is shown in new-cartoon representation, and side chains of W434 and D447 are shown in sticks, and water molecules are in VDW representations.\n\n![Video 1.](https://cdn.elifesciences.org/articles/18976/elife-18976-media1.mp4.jpg)\n\n**Video 1.:** Upon rare occasion the D447 H-bond is broken spontaneously but quickly reforms.\n\n![Video 2.](https://cdn.elifesciences.org/articles/18976/elife-18976-media2.mp4.jpg)\n\nThe breaking of the Asp447-Trp434 hydrogen bond in the Trp434Ind mutant has two major effects in the vicinity of the\u00a0selectivity filter. First, the formation of a hydrogen bond between Asp447-Trp434 in the wild type blocks the exchange of water molecules between extracellular bulk and the water binding pocket behind the selectivity filter, as shown in the water occupancy map in Figure 1D. In the absence of this hydrogen bond in Trp434Ind, the increased spatial separation of Asp447 and Trp434Ind promotes the formation of a continuous connection between the bulk solution and the water molecules in the buried pocket. The easier accessibility of the buried water-binding pocket probably accelerates C-type inactivation of Shaker. Second, the flipping of Asp447 leads to an additional effect to the selectivity filter. Considering Asp447 in each subunit carries a negative charge, the reorientation of the Asp447 side-chain from facing inside to outside (Figure 1C) perturbs the local electrostatic potential at the outer end of the selectivity filter, altering the binding affinity of potassium ions in multiple binding sites, and is likely to shift the relative stability between conductive and nonconductive states.\n\n### A strategy for defining the stoichiometry of multimeric protein complexes\n\nAn engineered protein approach was designed to circumvent issues raised with expressing Shaker monomer concatemers: complementary split inteins (Wu et al., 1998; Muralidharan and Muir, 2006), were incorporated into the N- or C- termini of Shaker monomers (Figure 2A). Split inteins drive a post-translational event involving precise excision of the intein sequence and formation of a normal peptide bond between the flanking sequences (N- and C-exteins) (Saleh and Perler, 2006). We reasoned that Shaker monomers would form split intein-dependent dimers, and Shaker channels would consist of dimers of dimers. In order to exclude nonconforming Shaker monomers from the surface membrane, we encoded endoplasmic reticulum retention/retrieval (ERret) motifs which flank the split inteins (Figure 2A) that would be removed following the intein ligation process (Figure 2B). We used the Kir6.2 ERret motif because it works in a variety of eukaryotic cell types, has strong retention properties, and functions independently from its position within a protein (Zerangue et al., 1999). Oocytes injected with only one of the monomer cRNAs did not show measurable voltage-dependent K+ selective currents (Figure 2A, lower panels). This is presumably due to the retention of the monomers within the ER as a result of the appended ERret motifs. In contrast, co-expression of Shaker monomers with complementary split inteins resulted in robust outward voltage-dependent potassium currents due to the nature of the split intein protein ligation mechanism. The formation of tetrameric dimer-of-dimer complexes with no ERret motif allows trafficking of Shaker channels from the ER to the plasma membrane. The level of expressed potassium current was stable over a large range of injected Shaker monomer cRNA concentrations (Figure 2B) suggesting a limiting cellular component in channel assembly and/or trafficking. This method allows for control of subunit stoichiometry and the possibility for encoding multiple Ind side-chains within a single channel tetramer by placing the introduced TAG mutation within one (or both) of the two complementary fragments that form a dimer.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig2-v2.jpg)\n\n**Figure 2.:** (A) Expression of either Shaker channel with C-terminal appended Kir6.2 ER retention/retrieval motif (ERret; yellow) with N-intein (red) (A, left) or Shaker channel with N-terminal appended Kir6.2 ER retention/retrieval motif (yellow) with C-intein (green) (A, right), resulted in negligible ionic current (A, lower panels).Representative currents in lower panel A, are raw capacitance and ionic currents that are blanked above and below 25 and \u22125\u00b5A, respectively. P/4 subtracted currents are shown in lower panel B to display normal channel kinetics observed following expression of engineered ERret-intein Shaker channels. See Materials\u00a0and\u00a0methods for ER-retention/retrieval and intein sequences. (B) Co-expression of Shaker N- and C-terminal ERret-intein channels resulted in surface membrane trafficking of Shaker channels and robust ionic current (lower panel) measured by TEVC. (C) Injection of increased amounts of C-terminal (filled circles) or N-terminal (open circles) ERret-intein-tagged Shaker cRNA resulted in insignificant surface expression of Shaker channels as measured with TEVC. Co-injection of increased amounts of N- and C-terminal ERret-intein cRNA resulted in saturated ionic current (filled triangles). Number of observations where two Shaker monomers are expressed are indicated in parentheses above symbols. Average values where only one Shaker monomer was expressed were composed of 2\u201310 observations.\n\n### Using ERret-Intein protein engineering to encode two ncAA within a Shaker channel\n\nIn order to test cooperativity of the hydrogen bond at position 434, the ERret-intein approach was used to express Shaker channels with two Ind residues at position 434 per channel (Figure 3). In experiments where both WT and Trp434TAG complimentary ERret-intein cRNAs and Trp-tRNA were injected, robust WT-like currents were observed, demonstrating successful Trp incorporation (Figure 3A, left). Conversely, when Ind-tRNA was expressed within the C-terminal Shaker monomer of each dimer, C-type inactivation was significantly accelerated, consistent with the breakage of two of the four hydrogen bonds around the central permeation pathway (Figure 3A, right) while voltage dependence of activation was not altered (Figure 3B, Table 1). At\u00a0+20 mV, WT Shaker channels had an inactivation time constant of 3900 +/- 0.2 milliseconds (first-order exponential) compared to 529 +/-141 and 142 +/-14 milliseconds when one or two hydrogen bonds were broken through Ind incorporation, respectively (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig3-v2.jpg)\n\n**Figure 3.:** (A) Normalized representative currents for Trp434Trp (WT) (left) and Trp434Ind (right). A schematic of the stoichiometry of the incorporated amino acids Trp (white) and Ind (black) is shown below the traces. (B) Average voltage dependence of normalized currents for Trp434Trp (WT) (open circles; n\u00a0=\u00a05) and Trp434Ind (filled circles, n\u00a0=\u00a09). (C) Average inactivation rates at\u00a0+20 mV of WT Shaker, Trp434Phe (first monomer) four monomer concatemer, and Trp434Ind ERret-intein constructs.\n\n**Table 1.**\n Shaker and Nav1.4 Channel activation parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Injected cRNA</th>\n      <th>V \u00bd (mV)</th>\n      <th>K (mV)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Shaker Inteins</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>WT-WT (0.25 ng cRNA)</td>\n      <td>\u221220.74\u00a0\u00b1\u00a02.27 (7)</td>\n      <td>11.42\u00a0\u00b1\u00a00.55 (7)</td>\n    </tr>\n    <tr>\n      <td>WT-Trp434Trp (0.25 ng cRNA)</td>\n      <td>\u221223.29\u00a0\u00b1\u00a01.76 (9)</td>\n      <td>9.38\u00a0\u00b1\u00a00.85 (9)</td>\n    </tr>\n    <tr>\n      <td>WT-Trp434Ind (0.25 ng cRNA)</td>\n      <td>\u221217.84\u00a0\u00b1\u00a02.17 (5)</td>\n      <td>7.75\u00a0\u00b1\u00a00.74 (5)</td>\n    </tr>\n    <tr>\n      <td>Nav1.4</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Full-length WT Nav1.4 (2.5 ng cRNA)</td>\n      <td>\u221225.63\u00a0\u00b1\u00a00.71 (5)</td>\n      <td>2.70\u00a0\u00b1\u00a00.24 (5)</td>\n    </tr>\n    <tr>\n      <td>Split WT Nav1.4 (2.5 ng cRNA)</td>\n      <td>\u221225.97\u00a0\u00b1\u00a01.21 (6)</td>\n      <td>2.86\u00a0\u00b1\u00a00.23 (6)</td>\n    </tr>\n    <tr>\n      <td>Y401TAG (FH) + WT (BH) + tRNAPhe (25 ng cRNA)</td>\n      <td>\u221222.78\u00a0\u00b1\u00a00.54 (8)</td>\n      <td>3.99\u00a0\u00b1\u00a00.13 (8)</td>\n    </tr>\n    <tr>\n      <td>WT (FH) + F1304TAG (BH) + tRNA(Phe) (25 ng cRNA)</td>\n      <td>\u221225.22\u00a0\u00b1\u00a01.12 (7)</td>\n      <td>4.09\u00a0\u00b1\u00a00.19 (7)</td>\n    </tr>\n    <tr>\n      <td>Y401TAG (FH) + F1304TAG (BH) + tRNA(Phe) (50 ng cRNA)</td>\n      <td>\u221224.22\u00a0\u00b1\u00a00.55 (7)</td>\n      <td>3.78\u00a0\u00b1\u00a00.18 (7)</td>\n    </tr>\n  </tbody>\n</table>\n\nIn order to examine the general utility of the ERret-intein sequences, they were constructed within two-domain hemi-channels of the skeletal muscle isoform of the voltage-gated sodium channel NaV1.4. Previously, it has been shown that both sodium and calcium channels are amenable to functional complementation via expression of \u2018split\u2019 hemi-channels consisting of DI-DIII and DIV or DI-II and DIII-DIV, respectively (St\u00fchmer et al., 1989; Ahern et al., 2001). This result suggests that sodium and calcium channels need not be tethered on a single polypeptide to form a functional tetrameric channel. We therefore reasoned that co-assembly of sodium channel domains I-II and III-IV would likely bring ERret-intein sequences on the C-terminus of DI-II and the N-terminus of DIII-IV in close proximity and promote intein dependent cleavage of the ERret sequences and formation of a peptide bond between domains II and III (Figure 4A). To this end, cRNA for Nav1.4 DI-II and DIII-IV ERret-intein containing hemi-channel fragments were expressed in Xenopus oocyte and subsequent currents were recorded by TEVC. As with the Shaker intein constructs, expression of either individual fragment did not result in expressed ionic currents (Figure 4D; triangles and squares). However, co-expression of the split NaV1.4 halves resulted in robust inward voltage-gated sodium currents (Figure 4C\u2013 D, diamonds) similar to WT full-length channels (Figure 4D, circles). Notably, full-length sodium channels produced from the ERret-inteins had biophysical properties that were indistinguishable from WT sodium channels, p>0.01, Table 1. To examine the general versatility of the approach, we expressed the NaV1.4hemi-channel construct cDNA by transient transfection into HEK293 cells and examined the ligation efficiency by Western blot using C-terminal HA epitopes that are on both N- and C-channel fragments (Figure 4B). In the case of the DI-II-HA construct, this epitope is cleaved out during the in-cell ligation reaction but the full-length channel can still be identified by the remaining C-terminal HA epitope on the DIII-IV protein (see methods for protein sequence and construct design). The Western blot data show that each hemi-channel is robustly expressed, producing bands of\u00a0~150 kDa (Figure 4B, lane 2) and\u00a0~110 kDa (Figure 4B, lane 3) for the DI-II-HA and DIII-DIV-HA truncated constructs, respectively. Co-expression of the channel halves resulted in the formation of a\u00a0~250 kDa band (lanes 4 and 5) similar to WT NaV1.4 full-length channels (lane 1). The efficiency of protein ligation was similar to that of intein ligated Ca2+ channel hemi-channel fragments where also, interestingly, the fragment corresponding to the DIII-IV construct was limiting (Subramanyam et al., 2013). To rule out the possibility that the ligation reaction occurred during sample preparation, i.e after the fragments had been solubilized, cell lysates from NaV1.4 DI-II or DIII-IV expressing HEK cells were mixed and then incubated for 10, 30 or 60 min, Figure 4, Figure 1\u2014figure supplement 1. No higher band corresponding with the full-length NaV1.4 was observed at these time points. Thus, the biochemical data demonstrate that the NaV1.4 DI-II and DIII-IV ERret-intein constructs are competent in HEK cells where they are ligated to produce full-length sodium channels.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic of Nav1.4 protein with ERret-intein sequence engineered on the C- (blue) and N-terminus (orange) of domains I-II and III-IV, respectively. (B) Western blot shows reconstitution and covalent linking of split-intein Nav1.4 proteins following expression in HEK293 cells. Lane 1, full-length WT Nav1.4; Lane 2, front half WT Nav1.4 I-II N-intein; Lane 3, Back half WT Nav1.4 III-IV C-intein; Lane 4 front half WT Nav1.4 I-II N-intein + back half WT Nav1.4 III-IV C-intein expressed at 1:1; Lane 5, front half WT Nav1.4 I-II N-intein + back half WT Nav1.4 III-IV C-intein expressed at 2:1, respectively. (C) Representative Nav1.4 currents\u00a012\u00a0hr following co-injection of front half WT Nav1.4 I-II N-intein + back half WT Nav1.4 III-IV C-intein. (D) Quantification of peak Na+ current @ \u221220 mV following injection of full-length WT Nav1.4 (circles; n\u00a0=\u00a010), front half WT Nav1.4 I-II N-intein (triangles; n\u00a0=\u00a06), back half WT Nav1.4 III-IV C-intein (squares; n\u00a0=\u00a07) and both front half WT Nav1.4 I-II N-intein + back half WT Nav1.4 III-IV C-intein (squares; n\u00a0=\u00a010).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** HEK293 cell lysates expressing either front half WT Nav1.4 I-II N-intein and back half WT Nav1.4 III-IV C-intein were mixed on ice for 10, 30 and 60 min and separated by acrylamide gels, transferred and immunoblotted. No higher order band was detected following incubation of split-intein constructs following cell-lysis indicating that assembly and intein-dependent peptide bond formation occurred within the cell.\n\nFinally, we aimed to see if the split-intein ERret strategy could assist with nonsense suppression efficiency when attempting to simultaneously suppress two stop sites within a single cRNA transcript. The data in Figure 3 with Shaker ERret-inteins show that this approach can be used to produce tetrameric K+ channel complexes containing two ncAA, but these are within the dimer of dimers K+ channel structural context (i.e. not within the same polypeptide). In contrast, double suppression within the same reading frame poses a particular challenge. Specifically, the ability of an acylated tRNA in the oocyte expression system to suppress stop sites has variable efficiency that is compounded when two stop sites are present, resulting in the expression of full-length channels that are far below that of WT channels, and often immeasurable using electrophysiological methods. Thus, suppression at the second site down-stream from the first compounds the overall efficiency of producing a full-length peptide. We hypothesized that if the two sites are suppressed independently, within the individual Nav1.4 I-II and III-IV hemi-channels for instance, and then subsequently ligated via the ERret-intein sequences that the reduced expression would not be compounded but only limited by the site with the lower suppression efficiency. To test this possibility directly, stop (TAG) sites were engineered into the DI-II construct at Tyr401 near the outer vestibule of the selectivity filter and within the DIII-IV hemi-channel at Phe1304, a site within the DIII-IV linker. When expressed as hemi-channels, the simultaneous dual suppression with Phe-tRNA at Tyr401 and Phe1304 yielded macroscopic sodium currents with gating similar to wildtype NaV1.4 demonstrating that the split ERret-intein method enables dual suppression, Table 1, Figure 5\u2014figure supplement 1. The incorporation was specific to encoding of a Phe residue, because co-injecting the NaV1.4 TAG cRNA with a tRNA lacking an acylated amino acid failed to produce sodium current, Figure 5.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig5-v2.jpg)\n\n**Figure 5.:** (A) Co-injection of 25 ng of cRNA encoding Nav1.4 I-II N-intein Tyr401TAG + Nav1.4 III-IV C-intein WT + tRNA(Phe) (left), Nav1.4 I-II N-intein WT + Nav1.4 III-IV C-intein F1304TAG + tRNA(Phe) (center) and Nav1.4 I-II N-intein Tyr401TAG + Nav1.4 III-IV C-intein Phe1304TAG + tRNA(Phe) (right), resulted in robust currents at\u00a024\u00a0hr\u00a0(lower panels).\u00a0(B) Quantification of peak Na+ current @ \u221220 mV following injection of 25 ng of cRNA of constructs in A with tRNA(Phe) (open symbols) and uncharged tRNA (closed symbols). (C) Representative Nav1.4 current following co-injection of 50 ng of cRNA encoding Nav1.4 I-II N-intein Y401TAG and Nav1.4 III-IV C-intein Phe1304TAG constructs. (D) Quantification of peak Na+ current @ \u221220 mV following injection of 50 ng of cRNA encoding Nav1.4 I-II N-intein Tyr401TAG and Nav1.4 III-IV C-intein Phe1304TAG (orange) constructs with tRNA(Phe) (open symbols) and uncharged tRNA (closed symbols).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18976/elife-18976-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Conductance-Voltage relationships of full-length WT Nav1.4 (solid line, circles) and front half WT Nav1.4 I-II N-intein + back half WT Nav1.4 III-IV C-intein (dashed line, diamonds). (B) Conductance-Voltage relationships of Nav1.4 I-II N-intein Y401TAG + Nav1.4 III-IV C-intein WT + tRNA(Phe) (circles), Nav1.4 I-II N-intein WT + Nav1.4 III-IV C-intein Phe1304TAG + tRNA(Phe) (triangles) and Nav1.4 I-II N-intein Tyr401TAG + Nav1.4 III-IV C-intein Phe1304TAG + tRNA(Phe) (squares).\n\n## Discussion\n\nTaken together, the results presented here advance the specific molecular understanding of C-type inactivation and introduces\u00a0a novel approach which employs the use ncAAs with split intein protein engineering. MD simulations indicate that the Trp434Ind substitution alters the orientation of the hydrogen bond partner, Asp447. Notably, the \u2018flipped out\u2019 orientation of Asp447 occurs in WT channels, but does so briefly and returns to the hydrogen-bonded state. Thus, the simulations suggest that the Ind substitution increases the likelihood of the \u2018flipped out\u2019 Asp447 conformation, which disrupts the local environment of the selectivity filter. This orientation of Asp447 allows water to fill the space behind the selectivity filter and simultaneously alters the local electrostatics properties, two outcomes that likely impact the occupancy of potassium ions in the filter. One possibility is that the reorientation of Asp447 may represent an event in the mechanism of C-type inactivation as the channel transitions from the open/conductive (O/C) to a C-type inactivated conformation (O/I), see Panyi and Deutsch, 2007. Further, the breakage of two versus one of the four Asp447-Trp434 hydrogen bonds further accelerates C-type inactivation, possibly due to the loss of an additional hydrogen bond and ultimately results in a concomitant destabilization of the open pore. However, the data do not inform on the details of movements required to break the hydrogen bonds or the nature of the final non-conducting state, an event that occurs downstream from hydrogen bond breakage.\n\nWe previously attempted to understand domain-specific contributions of hydrogen bonding and C-type inactivation with a Shaker concatemer with all four subunits tethered into a single peptide (Yang et al., 1997). However, while this construct tolerated a single Trp434Phe mutation by site-directed mutagenesis (Pless et. al, 2013, eLife) encoding an ncAA was not feasible as the concatemer displayed a significant decrease in overall expression, a common effect of protein concatenation. Here we describe a protein engineering approach for altering side-chain chemistry prior to concatenation that produces macroscopic potassium currents from Shaker channels containing two Ind amino acids. Split intein sequences have been used to ligate a variety of protein fragments (Shah and Muir, 2014) and the ERret motif used in this study has been shown to work in several types of eukaryotic cells including yeast (Zerangue et al., 1999). Therefore, this approach could be used to examine other proteins in other cellular environments for studying the effects of dominant negative mutations, heteromers, etc. Western blot data of expressed Nav1.4 ERret-intein hemi-channels demonstrates the effectiveness of the approach outside of the Xenopus laevis oocyte expression system and also suggests the ERret-intein can be transferred to other channel types aside from potassium channels. Encoding of multiple ncAA within an individual protein complex remains a significant challenge. Where success is reported, it stems primarily from improving the efficiency of the suppression process and tRNA delivery (Neumann et al., 2010; Wan et al., 2010; Johnson et al., 2011; Chatterjee et al., 2013; Xiao et al., 2013; Lammers et al., 2014). In contrast, the approach described here changes the nature of the dual suppression problem by rescuing each transcript independently prior to protein ligation thus abrogating the loss of expression due to the compounded efficiency of multiple suppression events. Further, the sodium channel data obtained with dual TAG sites suggests that the approach will be useful for suppression of multiple stop sites, a possibility that will be valuable for encoded FRET, once such probes become available.\n\n## Materials and methods\n\n### Molecular dynamics simulations\n\nInitial coordinates for the molecular dynamic simulations were modeled based on the crystal structure of Kv1.2/Kv2.1 Voltage-gated potassium channel chimera (PDB ID:2R9R). Considering the high sequence identity (87%) of the pore domain between Kv1.2 and Shaker, several non-conserved residues were mutated from Kv1.2 to Shaker, and all of the conserved residue side-chains still maintain the same conformation as the crystal structure. Residues were assigned their standard protonation state at pH7.0. Only the pore domain of the channel was embedded in a bilayer of POPC/POPG (3:1) lipids and solvated in 0.2 M KCl using the web service CHARMM-GUI [1-3] (total number of atoms\u00a0~\u00a044,500). The CHARMM36 force field (MacKerell et al., 1998, 2004; Klauda et al., 2010; Best et al., 2012) was used for proteins and lipids, and explicit water was described with TIP3P model (Jorgensen et al., 1983). For mutant Trp434Ind, the unnatural amino acid was substituted using CHARMM-GUI PDB Reader (Jo et al., 2014), and the force field was obtained from CHARMM General force field (CGenFF) (Vanommeslaeghe et al., 2010). All-atom simulations were performed in constant NPT conditions at a temperature of 310 K and a constant pressure of 1.0 atm, after initial minimization and equilibrations. All the simulations were performed under periodic boundary conditions with a time step of 2 fs. Throughout the simulations, bond distances involving hydrogen atoms were fixed using the SHAKE algorithm (Ryckaert et al., 1977). Short-range non-bonded interactions were calculated using a cutoff distance of 12 \u00c5, and long-range electrostatic interactions were calculated using the particle mesh Ewald (PME) method (Darden et al., 1993). Molecular dynamic simulations were carried out using NAMD 2.10 (Phillips et al., 2005) or OpenMM 6.2 (Eastman et al., 2013). For both wild type and mutant Trp434Ind, MD simulations were performed for 500 ns.\n\n### Molecular biology and nonsense suppression\n\nShaker IR (Inactivation Removed by deletion of amino acids 6\u201346) cDNA in pBSTA was used as the parent clone for all cDNA plasmids. Plasmids containing the DnaE split inteins (DnaE-n and DnaE-c) were a generous gift from Henry M. Colecraft (Columbia University, New York, NY) and were previoulsy published in Subramanyam et al., 2013. Two ERret-intein Shaker plasmids were generated. For the first cDNA plasmid, the stop codon was removed and a glycine rich linker (GSAGSAAGSGEFAS) was added to the c-terminus of the Shaker coding region using standard PCR. The DnaE-n sequence (bold) followed by a flexible linker (PINQPANTHERPR), Kir6.2 ER retention/retrieval motif (italics) and canonical KKXX ER retention/retrieval motif (underlined) was generated and ligated into the afformentioned plasmid:\n\n(CLSYETEILTVEYGLLPIGKIVEKRIECTVYSVDNNGNIYTQPVAQWHDRGEQEVFEYCLEDGSLIRATKDHKFMTVDGQMLPIDEIFERELDLMRVDNLPNPINQPANTHERPRLLDALTLASSRGPLRKRSVAVAKAKPKFSISPDSLSPRKKFQstop). For the companion Shaker cDNA plasmid, the start codon was removed and a flexible linker (ARSMEAS) was added to the n-terminus of the Shaker coding region using standard PCR. The Kir6.2 ER retention/retrieval motif (italics) and DnaE-c sequence (bold) was generated and ligated 5\u2019 inframe with the flexible linker using standard molecular biology techniques:\n\n(MLLDALTLASSRGPLRKRSVAVAKAKPKFSISPDSLSPRIKIATRKYLGKQNVYDIGVERDHNFALKNGFIASNCFN). Two ERret-intein rNav1.4 plasmids were generated, Nav1.4 Domain I-II- Intein ERret and Nav1.4 ERret Intein III-IV in pcDNA3.1(+) Zeocin (Promega, Madison WI). For the front half Nav1.4 Domain I-II- Intein ERret plasmid, the DnaE-n intein sequence (bold) was ligated inframe following rNav1.4 Glu985. The intein sequence was followed by tandem human influenza hemagglutinin (HA) epitope sequences (underlined) that were used as both flexible linkers and for Western blot analysis. The HA linker was followed by the Kir6.2 ER retention/retrieval motif (italics) and canonical KKXX ER retention/retrieval motif (italics underlined) (CLSYETEILTVEYGLLPIGKIVEKRIECTVYSVDNNGNIYTQPVAQWHDRGEQEVFEYCLEDGSLIRATKDHKFMTVDGQMLPIDEIFERELDLMRVDNLPNYPYDVPDYAYPYDVPDYLLDALTLASSRGPLRKRSVAVAKAKPKFSISPDSLSPRKKFQstop). For the back half Nav1.4 ERret Intein III-IV plasmid, the ERret Dna-c intein (bold) and tandem HA epitope (underlined) was ligated 5 \u2018and inframe of rNav1.4 Glu986 (MLLDALTLASSRGPLRKRSVAVAKAKPKFSISPDSLSYPYDVPDYAYPYDVPDYIKIATRKYLGKQNVYDIGVERDHNFALKNGFIASNCFN).\n\n### In vitro cRNA transcription\n\nWT and Trp434TAG Shaker and\u00a0all\u00a0Nav1.4\u00a0cRNAs were transcribed from a pBSTA vector using the mMessage mMachine T7 Kit (Thermo Fisher Scientific, Waltham, MA). Purification of the cRNA from the transcription reaction was conducted on columns from the RNeasy Mini Kit (Qiagen, Hilden, Germany). Concentration was determined by absorbance measurements at 260 nm and quality was confirmed on a 1% agarose gel (RNase-free).\n\n### tRNA transcription and misacylation\n\nA modified (G73) version of Tetrahymena thermophila tRNA, THG73 (Saks et al., 1996), lacking the last two nucleotides was transcribed in vitro using CellScript T7-Scribe Standard RNA IVT Kit (CELLSCRIPT). DNA template 20 \u00b5g of annealed oligonucleotides coding for the tRNA preceded by a T7 promoter were used (Forward: ATTCGTAATACGACTCACTATAGGTTCTATAGTATAGCGGTTAGTACTGGGGACTCTAAATCCCTTGACCTGGGTTCGAATCCCAGTAGGACCGC; Reverse:\n\nGCGGTCCTACTGGGATTCGAACCCAGGTCAAGGGATTTAGAGTCCCCAGTACTAACCGCTATACTATAGAACCTATAGTGAGTCGTATTACGAAT; Integrated DNA Technologies, Coralville, IA). The total reaction volume was adjusted to 100 \u00b5l and the kit reagents were added in the following amounts: 10 \u00b5l of 10X T7-Scribe transcription buffer, 7.5 \u00b5l of each nucleotide (100 mM stocks), 10 \u00b5l of 100 mM Dithiothreitol, 2.5 \u00b5l ScriptGuard RNase Inhibitor, 10 \u00b5l T7-Scribe enzyme solution. After the reaction was incubated for 4\u20135 hr at 37\u00b0C, the DNA template was digested with 5 \u00b5l DNase (1 U/\u00b5l) provided with the kit for 30\u201360 min. The tRNA was extracted from the reaction with acidic phenol chlorophorm (5:1, pH 4.5) and precipitated with ethanol. The precipitates tRNA was pelleted, washed, dried and resuspended in 100 \u00b5l DEPC-treated water and further purified with Chroma Spin-30 columns (Clontech, Mountain View, CA). The procedure yielded roughly 100 \u00b5l of\u00a0~5 \u00b5g/\u00b5l tRNA that was stored in aliquots at \u221280\u00b0C. Prior to the ligation reaction of the 73-mer THG73 to the ncAA-pCA conjugate (or just the pCA to yield a complete, nonacylated tRNA), the tRNA was folded in 10 mM HEPES (pH 7.4) by heating at 94\u00b0C for 3 min and subsequent gradual cool-down to\u00a0~10\u00b0C. 25 \u00b5g of folded tRNA in 30 \u00b5l of 10 mM HEPES (pH 7.4) were mixed with 28 \u00b5l of DEPC-treated water, 8 \u00b5l of 3 mM ncAA-pCA (or pCA) dimethylsulphoxide stock, 8 \u00b5l of 10X T4 RNA Ligase 1 buffer, 1 \u00b5l 10 mM ATP and 5 \u00b5l of T4 RNA Ligase 1 (New England Biolabs. Ipswich, MA) then incubated at 4\u00b0C for 2 hr. The (misacylated) tRNA was extracted from the samples with acidic phenol chlorophorm (5:1, pH 4.5) and precipitated with ethanol. The precipitated tRNA pellets were washed, dried in a Speedvac and stored at \u221280\u00b0C.\n\n### Expression in Xenopus laevis oocytes\n\nXenopus laevis oocytes (stage V and VI) were purchased from Ecocyte (Austin, TX). Prior to injection each tRNA pellet was resuspended in 1.5 \u00b5l of ice-cold 3 mM sodium acetate and pelleted at 21,000 xg, 4\u00b0C for 25 min. For two electrode voltage clamp experiments cRNA amounts are indicated in each figure. After injection, oocytes were kept in OR-3 (50% Leibovitz\u2019s medium, 250 mg/l gentamycin, 1 mM L-glutamine, 10 mM HEPES pH\u00a0=\u00a07.6) at 18\u00b0C for\u00a0~24\u201348 hr.\n\n### Two-electrode voltage clamp (TEVC) recordings\n\nTEVC was performed as described previously (Pless et al., 2011). In brief, voltage-dependent potassium currents were recorded in in standard Ringer (in mM: 116 NaCl, 2 KCl, 1 MgCl2, 0.5 CaCl2, 5 HEPES, pH 7.4) using an OC-725C voltage clamp amplifier (Warner Instruments, Hamden, CT). Glass microelectrodes backfilled with 3 M KCl had resistances of 0.5\u20133 M\u2126. Data were filtered at 1 kHz and digitized at 10 kHz using a Digidata 1322 A (Molecular Devices, Sunnyvale, CA) controlled by the pClamp 9.2 software. Shaker currents were elicited by\u00a0+10 mV voltage steps from a holding potential of \u221280 mV to\u00a0+40 mV and Nav1.4 currents were elicited by\u00a0+5 mV voltage steps from a holding potential of \u2212100 mV from \u221280 mV to\u00a0+40 mV.\u00a0Clampfit 9.2 software was used for current analysis. Numbers of oocytes, current analysis and statistical significance are indicated in the appropriate figure legends or the main text. All values are presented as mean \u00b1 SEM. To determine statistical significance Student\u2019s t-test (two-tailed distribution; two-sample equal variance) was performed. The threshold for significance was p=0.01.\n\n### Eukaryotic Nav1.4 expression and Western blot\n\nNav1.4 cDNA plasmids were transfected into HEK293 cells 12\u201318 hr after plating at 70% confluency using standard calcium-phoshate reagents. 18\u201324 hr post transfection the HEK293 cells were washed twice with PBS and scraped in PBS supplemented with PMSF (0.1 mM final concentration)and Benzamidine (0.75 \u00b5M final concentration) and spun at 4000 g. The cell pellet was resuspended in solubilization buffer (50 mM Tris-HCl pH 7.4, 250 mM NaCl, 1% Triton, 0.5 \u00b5g/ml Pepstatin, 2.5 \u00b5g/ml Aprotinin, 2.5 \u00b5g/ml Leupeptin, 0.1 mM PMSF, 0.75 mM Benzamidine) on ice and Vortex Genied for 15mins at 4 C. Non-solubilized protein was removed by centrifugation at 20,000 g. Equal cell-lysate was loaded on a 3-15% gradient SDS-page in the presence of 1% 2 mercaptoethanol, separated at 55 V O/N and transferred to 0.45 \u00b5M LF PVDF (Bio-Rad, CA, USA). PVDF was immunoblotted using anti-Human influenza hemagglutinin (HA) antibody (1:2000; Biolegend, CA) in 2% NF milk and imaged on LI-COR Odyssey Imaging System (LI-COR, NE, USA).\n",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "55d1e9fc-6364-4de5-adb3-b9510b412a31",
+      "submission_id": "c313e7db-51fc-4df8-b0db-b2153fd79e74",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18976.013](https://doi.org/10.7554/eLife.18976.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Atomic mutagenesis in potassium channels with engineered stoichiometry\" for consideration by eLife. Your article has been reviewed by two peer reviewers, including Baron Chanda (Reviewer #2), and the evaluation has been overseen by Richard Aldrich as the Senior Editor and Reviewing Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper of Lueck et al. is a technically sound and very creative report that attempts to address some fundamental questions about the atomic details underlying C-type inactivation gating in K+ channels. For many years it has been known that a single substitution at the position 443 of the Shaker K+ channel (W434F) yields a protein non-functional, presumably deeply C-type inactivated. C-type inactivation gating is widely accepted to be the functional collapse of the channel's selectivity filter. Structural changes at the channel's selectivity filter have been proposed to produce its structural collapse causing C-type inactivation and ceasing in this way ion conduction. The Lueck et al. paper deal with the identification of molecular interactions that are crucial in determining the conductive conformation of the Shaker K+ channel selectivity filter. Particularly interesting to keep the Shaker channel conductive is the highly conserved indole hydrogen bond between the pair Trp434-Asp447. It has been shown before by Dr. Ahern group that the incorporation of a non-hydrogen bonding homologue of tryptophan at position 434 obliterate ion conduction, presumably by constitutively C-type inactivating the Shaker channel, which is similar to the phenotype displayed by the mutation W343F. In this sequel of the previous paper by Pless, Galpin et al. 2013, the authors make two very provocative and significant observations that notably contribute to cement our understanding about C-type inactivation gating in K+ channels. First, they propose, based in MD simulation studies, that the Asp447 flips out toward the channel external vestibule and gives space for water molecules to enter a \"crack or crevice\" behind the channel selectivity filter. This event (the hydration of this crack) and/or a change in the electrostatic potential around the potassium binding sites of the channel's selectivity filter, trigger the functional collapse of latter. Second, the authors in a very innovative way present a new strategy to dissect the contribution of each subunit within the homotetramer channel to the C-type inactivation process. These combined strategies and the ideas derived from this experimental approach I think will be well received among the members of the ion channel community.\n\nEssential revisions:\n\nThe following revisions will be required for acceptance:\n\n1) It would have been very powerful and conclusive to perform an SDS PAGE analysis documenting the tetrameric \"dimer of dimer complexes\" obtained after removal of the ERret motif and putative recovering of trafficking to the oocyte membranes.\n\n2) A more complete statistical analysis is required. Figure 2 is missing a more detailed characterization of the ERret-intein cRNAs constructs to conclude they show \"WT-like currents\". Please provide the n, statistics and standard deviation of the current expressed by this construct as well as the GV curves to make sure the gating machinery after all these manipulations remain intact. The same applied to Figure 3.\n",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "96365da5-7065-4bbb-9191-11e6d40197c5",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C1",
+      "claim": "C-type inactivation of potassium channels fine-tunes electrical signaling in excitable cells through an internal timing mechanism mediated by a hydrogen bond network in the channels' selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type inactivation of potassium channels fine-tunes the electrical signaling in excitable cells through an internal timing mechanism that is mediated by a hydrogen bond network in the channels' selectively filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that draws on established scientific understanding of C-type inactivation and references the hydrogen bond network mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "727479b6-8a3f-41b4-985e-87fa6350225a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C2",
+      "claim": "Nonsense suppression was previously used to highlight the role of the conserved Trp434-Asp447 indole hydrogen bond in Shaker potassium channels using a non-hydrogen bonding homologue of tryptophan, Ind.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we used nonsense suppression to highlight the role of the conserved Trp434-Asp447 indole hydrogen bond in Shaker potassium channels with a non-hydrogen bonding homologue of tryptophan, Ind (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references a prior publication (Pless et al., 2013) as support for the previous use of nonsense suppression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "c90814d1-6aca-4253-b9ed-513ee92bc6fc",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C3",
+      "claim": "Molecular dynamics simulations indicate that the Trp434Ind hydrogen bonding partner, Asp447, unexpectedly 'flips out' towards the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, molecular dynamics simulations indicate that the Trp434Ind hydrogen bonding partner, Asp447, unexpectedly 'flips out' towards the extracellular environment, allowing water to penetrate the space behind the selectivity filter while simultaneously reducing the local negative electrostatic charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by molecular dynamics simulation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "40aba42c-b9c9-487e-b80a-4e2aab426f22",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C4",
+      "claim": "The Asp447 'flip out' allows water to penetrate the space behind the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, molecular dynamics simulations indicate that the Trp434Ind hydrogen bonding partner, Asp447, unexpectedly 'flips out' towards the extracellular environment, allowing water to penetrate the space behind the selectivity filter while simultaneously reducing the local negative electrostatic charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by molecular dynamics simulation data showing water occupancy changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "f22b5335-3bec-478f-a15f-c8fbb1462263",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C5",
+      "claim": "The Asp447 'flip out' reduces the local negative electrostatic charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, molecular dynamics simulations indicate that the Trp434Ind hydrogen bonding partner, Asp447, unexpectedly 'flips out' towards the extracellular environment, allowing water to penetrate the space behind the selectivity filter while simultaneously reducing the local negative electrostatic charge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the molecular dynamics simulations showing reorientation of the negatively charged Asp447.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "06d1e382-2ee4-42d9-917e-675ad39a1d6d",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C6",
+      "claim": "A protein engineering approach using split intein sequences flanked by endoplasmic reticulum retention/retrieval motifs (ERret) was incorporated into the N- or C-termini of Shaker monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a protein engineering approach is presented whereby split intein sequences are flanked by endoplasmic reticulum retention/retrieval motifs (ERret) are incorporated into the N- or C- termini of Shaker monomers or within sodium channels two-domain fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "9f81e26d-e739-4c73-9e64-924e3610c60b",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C7",
+      "claim": "The ERret-intein system enabled stoichiometric control of Shaker monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This system enabled stoichiometric control of Shaker monomers and the encoding of multiple amino acids within a channel tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing controlled expression of specific channel compositions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e1bbcf62-3ba6-4b31-bda8-1e88ef7bd134",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C8",
+      "claim": "The ERret-intein system enabled the encoding of multiple amino acids within a channel tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "This system enabled stoichiometric control of Shaker monomers and the encoding of multiple amino acids within a channel tetramer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the successful incorporation of two Ind residues in a single channel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "6d9988f8-fdd6-4340-a214-a6737dc2ff5e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C9",
+      "claim": "C-type inactivation is also termed 'slow-inactivation' due to its delayed kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type inactivation, also termed 'slow-inactivation' due to its delayed kinetics, in voltage-gated potassium channels describes a phenomenon by which ionic conductance through the channel pore is decreased in the presence of continued depolarizing stimulus (Choi et al., 1991; Hoshi et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established terminology in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "10145586-5fd7-427f-bad8-2897eeee505b",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C10",
+      "claim": "C-type inactivation decreases ionic conductance through the channel pore in the presence of continued depolarizing stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "C-type inactivation, also termed 'slow-inactivation' due to its delayed kinetics, in voltage-gated potassium channels describes a phenomenon by which ionic conductance through the channel pore is decreased in the presence of continued depolarizing stimulus (Choi et al., 1991; Hoshi et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on C-type inactivation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "6788b984-051c-4df4-9a19-8a29f014208d",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C11",
+      "claim": "C-type inactivation represents a form of activity-dependent macromolecular memory that can alter action-potential firing rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In a physiological setting, this mechanism represents a form of activity-dependent macromolecular memory that can alter action-potential firing rates (Aldrich et al., 1979; Roeper et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cited literature on the physiological role of C-type inactivation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "fa5f9922-6651-4b83-b3b9-a20b4d3efdbf",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C12",
+      "claim": "The basis for C-type inactivation has been investigated with functional, structural and computational approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis for C-type inactivation has been investigated with functional, structural and computational approaches, which have produced a consensus mechanism whereby channels become non-conducting due to local perturbations in the selectivity filter (Yellen et al., 1994; Baukrowitz and Yellen, 1995; Kiss and Korn, 1998; Perozo et al., 1998; Roux and MacKinnon, 1999; Bern\u00e8che and Roux, 2001; Cordero-Morales et al., 2007; Panyi and Deutsch, 2007; Cuello et al., 2010; Ostmeyer et al., 2013; Thomson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "0b3431fa-cf46-4cfd-bc16-cf9e6f091405",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C13",
+      "claim": "A consensus mechanism for C-type inactivation is that channels become non-conducting due to local perturbations in the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "The basis for C-type inactivation has been investigated with functional, structural and computational approaches, which have produced a consensus mechanism whereby channels become non-conducting due to local perturbations in the selectivity filter (Yellen et al., 1994; Baukrowitz and Yellen, 1995; Kiss and Korn, 1998; Perozo et al., 1998; Roux and MacKinnon, 1999; Bern\u00e8che and Roux, 2001; Cordero-Morales et al., 2007; Panyi and Deutsch, 2007; Cuello et al., 2010; Ostmeyer et al., 2013; Thomson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple cited studies establishing this consensus.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "26fa720e-71e9-4ed0-a0ac-c4d1b441f3bb",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C14",
+      "claim": "The nature of the conformational change and role of specific residues in C-type inactivation remain an area of active experimentation and debate.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the nature of the conformational change and role of specific residues remain an area of active experimentation and debate (Devaraneni et al., 2013; Hoshi and Armstrong, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to recent literature indicating ongoing debate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "bccd0773-3df8-4134-a81c-4bc7b1db1bf2",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C15",
+      "claim": "An intra- and inter-subunit hydrogen bond network controls the rate of entry into the non-conducting pore conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified an intra- and inter-subunit hydrogen bond network that controls the rate of entry into the non-conducting pore conformation (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "10447758-b9b9-4c98-be84-79daa43b9bbe",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C16",
+      "claim": "Nonsense suppression was employed in the Xenopus laevis oocyte expression system to genetically encode a variety of synthetic noncanonical amino acids (ncAAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Our study employed nonsense suppression in the Xenopus laevis oocyte expression system to genetically encode a variety of synthetic noncanonical amino acids (ncAAs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "cf3af724-39c2-45d2-ae89-8d03c01f326a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C17",
+      "claim": "In the Xenopus laevis oocyte context, the cRNA of the target protein contains an introduced stop codon (often amber, TAG) that is subsequently suppressed by a co-injected orthogonal tRNA that has been misacylated in vitro with the ncAA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of the Xenopus laevis oocyte, the cRNA of the target protein contains an introduced stop codon (often amber, TAG) that is subsequently suppressed by a co-injected orthogonal tRNA that has been misacylated in vitro with the ncAA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical details of the nonsense suppression method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "355ea156-2dee-41a3-944c-bd8fa2d8145c",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C18",
+      "claim": "A tryptophan homologue, 2-amino-3-indol-1-yl-propionic acid (Ind), fails to participate in hydrogen bonding at position 434.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was used to encode a tryptophan homologue, 2-amino-3-indol-1-yl-propionic acid (referred to as Ind) that fails to participate in hydrogen bonding at position 434, a site previously identified as being important for channel inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the chemical properties of Ind and experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "89b94beb-abde-4705-a084-1b0cb7a30808",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C19",
+      "claim": "Position 434 was previously identified as being important for channel inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach was used to encode a tryptophan homologue, 2-amino-3-indol-1-yl-propionic acid (referred to as Ind) that fails to participate in hydrogen bonding at position 434, a site previously identified as being important for channel inactivation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on prior research, likely from the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "ad72acae-81b8-4f24-ae58-4d711805259e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C20",
+      "claim": "Original efforts failed to determine the functional role of individual hydrogen bonds with Ind because subunit concatenation in the tetrameric construct resulted in a significant loss of expressing channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Our original efforts failed to determine the functional role of individual hydrogen bonds with Ind because subunit concatenation in the tetrameric construct resulted in a significant loss of expressing channels, an outcome that prevented the application of nonsense suppression (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental challenges encountered in prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "bec23842-c82e-457f-ad31-b601e8627f03",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C21",
+      "claim": "Reduced channel expression is a common challenge of the nonsense suppression method where amino acid incorporation varies greatly from position to position within a single reading frame and between channel families.",
+      "claim_type": "EXPLICIT",
+      "source": "Reduced channel expression is a common challenge of the nonsense suppression method where amino acid incorporation varies greatly from position to position within a single reading frame and between channel families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge and experience with nonsense suppression techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "2a133d2f-3daf-4e93-8939-ec5f924417c5",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C22",
+      "claim": "Simultaneous encoding of Ind within each of the four subunits of the channel resulted in a non-conducting phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given the central role of the Trp434-Asp447 hydrogen bond in the mechanism of C-type inactivation, it was not possible to simultaneously encode Ind within each of the four subunits of the channel because this resulted in a non-conducting phenotype which lacked the relatively high expression levels needed to measure gating currents which originate from the movement of the channel voltage-sensor in the transmembrane electric field (Perozo et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "82c5b39c-8ffd-4715-8c45-2e5ff10df27e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C23",
+      "claim": "Gating currents originate from the movement of the channel voltage-sensor in the transmembrane electric field.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, given the central role of the Trp434-Asp447 hydrogen bond in the mechanism of C-type inactivation, it was not possible to simultaneously encode Ind within each of the four subunits of the channel because this resulted in a non-conducting phenotype which lacked the relatively high expression levels needed to measure gating currents which originate from the movement of the channel voltage-sensor in the transmembrane electric field (Perozo et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about gating currents, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "7cb367bd-e3f1-41e2-b048-5678b420b1d7",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C24",
+      "claim": "While one can control the stoichiometry of individual subunit composition in a concatenated construct, their low expression impeded the use of nonsense suppression in combination with this approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that while one can control the stoichiometry of individual subunit composition in a concatenated construct, their low expression impeded the use of nonsense suppression in combination with this approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "edc117f6-f810-4c0f-b161-f1b072a8d63f",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C25",
+      "claim": "In the original publication, the shortcoming was partially overcome by combining WT cRNA with Ind-tRNA and Trp434TAG cRNA within an individual oocyte.",
+      "claim_type": "EXPLICIT",
+      "source": "In our original publication, this shortcoming was partially overcome by combining WT cRNA with Ind-tRNA and Trp434TAG cRNA within an individual oocyte.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach used in prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "4b795d31-d5cb-45b7-b4c2-b23f23baf3eb",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C26",
+      "claim": "Combining WT cRNA with Ind-tRNA and Trp434TAG cRNA resulted in predicted accelerated, but complex, inactivation kinetics consistent with a mixed population of channels with 1, 2 or 3 Ind434-containing monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "This experimental approach resulted in predicted accelerated, but complex, inactivation kinetics consistent with a mixed population of channels with 1, 2 or 3 Ind434-containing monomers (see Figure 2F, Pless et al., 2013, eLife).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data from the prior publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "c4a4fd94-214f-4f6a-87e4-4a035e317be3",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C27",
+      "claim": "In WT Shaker, a hydrogen bond is formed between Trp434 and Asp447, restraining the two residues close to each other during a large fraction of a 500 ns trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "In WT Shaker, a hydrogen bond is formed between Trp434 and Asp447, restraining the two residues close to each other during a large fraction of a 500 ns trajectory (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e14ef0bb-b13d-4750-a051-387068a65bbd",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C28",
+      "claim": "In the absence of the Asp447-Trp434 hydrogen bond in the Trp434Ind Shaker, there is an increased distance between these two residues in all of the four subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the Asp447-Trp434 hydrogen bond in the Trp434Ind Shaker, there is an increased distance between these two residues in all of the four subunits (Figure 1C), which is associated with a flipping of the Asp447 side-chain toward the extracellular bulk solution (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "11efef6d-8268-4186-a0d8-75c6b69bf628",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C29",
+      "claim": "The increased distance between Asp447 and Trp434Ind is associated with a flipping of the Asp447 side-chain toward the extracellular bulk solution.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of the Asp447-Trp434 hydrogen bond in the Trp434Ind Shaker, there is an increased distance between these two residues in all of the four subunits (Figure 1C), which is associated with a flipping of the Asp447 side-chain toward the extracellular bulk solution (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular dynamics simulation data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "a6e97b09-3a18-479e-a7e3-aebc1c8301f4",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C30",
+      "claim": "The formation of a hydrogen bond between Asp447-Trp434 in the wild type blocks the exchange of water molecules between extracellular bulk and the water binding pocket behind the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the formation of a hydrogen bond between Asp447-Trp434 in the wild type blocks the exchange of water molecules between extracellular bulk and the water binding pocket behind the selectivity filter, as shown in the water occupancy map in Figure 1D.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by water occupancy data from molecular dynamics simulations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "c23a2c66-3c51-4864-a44b-21167c4da14c",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C31",
+      "claim": "In the absence of the Asp447-Trp434 hydrogen bond in Trp434Ind, the increased spatial separation of Asp447 and Trp434Ind promotes the formation of a continuous connection between the bulk solution and the water molecules in the buried pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of this hydrogen bond in Trp434Ind, the increased spatial separation of Asp447 and Trp434Ind promotes the formation of a continuous connection between the bulk solution and the water molecules in the buried pocket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the molecular dynamics simulation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "d04116ce-c26a-4837-93d2-87b873aec0f4",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C32",
+      "claim": "The easier accessibility of the buried water-binding pocket probably accelerates C-type inactivation of Shaker.",
+      "claim_type": "EXPLICIT",
+      "source": "The easier accessibility of the buried water-binding pocket probably accelerates C-type inactivation of Shaker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "2ee6f27a-f410-41e2-a34a-6a3008812941",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C33",
+      "claim": "The flipping of Asp447 leads to an additional effect on the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the flipping of Asp447 leads to an additional effect to the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "96667528-6bc3-4ebf-8356-266bf83bdd30",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C34",
+      "claim": "Asp447 in each subunit carries a negative charge.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering Asp447 in each subunit carries a negative charge, the reorientation of the Asp447 side-chain from facing inside to outside (Figure 1C) perturbs the local electrostatic potential at the outer end of the selectivity filter, altering the binding affinity of potassium ions in multiple binding sites, and is likely to shift the relative stability between conductive and nonconductive states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the chemical properties of aspartate.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "c95cfc9c-7b42-4fd8-a695-95ad90cd7dc6",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C35",
+      "claim": "The reorientation of the Asp447 side-chain from facing inside to outside perturbs the local electrostatic potential at the outer end of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering Asp447 in each subunit carries a negative charge, the reorientation of the Asp447 side-chain from facing inside to outside (Figure 1C) perturbs the local electrostatic potential at the outer end of the selectivity filter, altering the binding affinity of potassium ions in multiple binding sites, and is likely to shift the relative stability between conductive and nonconductive states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the simulation data and basic electrostatics principles.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "4693ae7b-28d8-46ef-ac82-431094086d01",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C36",
+      "claim": "The reorientation of Asp447 alters the binding affinity of potassium ions in multiple binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering Asp447 in each subunit carries a negative charge, the reorientation of the Asp447 side-chain from facing inside to outside (Figure 1C) perturbs the local electrostatic potential at the outer end of the selectivity filter, altering the binding affinity of potassium ions in multiple binding sites, and is likely to shift the relative stability between conductive and nonconductive states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the electrostatic changes observed in simulations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "f784c3e7-37ec-43aa-adfb-5cf8655a47a8",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C37",
+      "claim": "The reorientation of Asp447 is likely to shift the relative stability between conductive and nonconductive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering Asp447 in each subunit carries a negative charge, the reorientation of the Asp447 side-chain from facing inside to outside (Figure 1C) perturbs the local electrostatic potential at the outer end of the selectivity filter, altering the binding affinity of potassium ions in multiple binding sites, and is likely to shift the relative stability between conductive and nonconductive states.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "25932f23-9a34-4e8e-9631-cf884bfbe454",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C38",
+      "claim": "Complementary split inteins were incorporated into the N- or C-termini of Shaker monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "An engineered protein approach was designed to circumvent issues raised with expressing Shaker monomer concatemers: complementary split inteins (Wu et al., 1998; Muralidharan and Muir, 2006), were incorporated into the N- or C- termini of Shaker monomers (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design, supported by citations and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "605907e5-15ba-46e2-9d8f-c7aeec2a140f",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C39",
+      "claim": "Split inteins drive a post-translational event involving precise excision of the intein sequence and formation of a normal peptide bond between the flanking sequences (N- and C-exteins).",
+      "claim_type": "EXPLICIT",
+      "source": "Split inteins drive a post-translational event involving precise excision of the intein sequence and formation of a normal peptide bond between the flanking sequences (N- and C-exteins) (Saleh and Perler, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about split inteins, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "7917b5e2-16b9-4056-87f9-5d4ed778b622",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C40",
+      "claim": "Shaker monomers would form split intein-dependent dimers, and Shaker channels would consist of dimers of dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that Shaker monomers would form split intein-dependent dimers, and Shaker channels would consist of dimers of dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis underlying the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "35832a08-ed14-4105-9931-fc982463c8fe",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C41",
+      "claim": "Endoplasmic reticulum retention/retrieval (ERret) motifs were encoded flanking the split inteins to exclude nonconforming Shaker monomers from the surface membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to exclude nonconforming Shaker monomers from the surface membrane, we encoded endoplasmic reticulum retention/retrieval (ERret) motifs which flank the split inteins (Figure 2A) that would be removed following the intein ligation process (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental design shown in Figures 2A and 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "6c33266b-869f-47bc-b347-2ad46ba6dd44",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C42",
+      "claim": "The Kir6.2 ERret motif was used because it works in a variety of eukaryotic cell types, has strong retention properties, and functions independently from its position within a protein.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the Kir6.2 ERret motif because it works in a variety of eukaryotic cell types, has strong retention properties, and functions independently from its position within a protein (Zerangue et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work on the Kir6.2 ERret motif.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "ce77481e-a7cc-46d2-af83-e3465146428f",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C43",
+      "claim": "Oocytes injected with only one of the monomer cRNAs did not show measurable voltage-dependent K+ selective currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Oocytes injected with only one of the monomer cRNAs did not show measurable voltage-dependent K+ selective currents (Figure 2A, lower panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "b267661c-a675-4249-861f-905649ce3e9d",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C44",
+      "claim": "The lack of current from single monomer expression is presumably due to the retention of the monomers within the ER as a result of the appended ERret motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "This is presumably due to the retention of the monomers within the ER as a result of the appended ERret motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of ERret motifs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "5592d085-d6eb-45c3-9c90-9a9a942c203a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C45",
+      "claim": "Co-expression of Shaker monomers with complementary split inteins resulted in robust outward voltage-dependent potassium currents.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-expression of Shaker monomers with complementary split inteins resulted in robust outward voltage-dependent potassium currents due to the nature of the split intein protein ligation mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data demonstrating successful channel assembly.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e79054be-36a8-4a0c-b972-9ddf0a95a622",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C46",
+      "claim": "The formation of tetrameric dimer-of-dimer complexes with no ERret motif allows trafficking of Shaker channels from the ER to the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The formation of tetrameric dimer-of-dimer complexes with no ERret motif allows trafficking of Shaker channels from the ER to the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results and the mechanism of ERret motifs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "0d084788-62fc-4e40-aefc-f48195349255",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C47",
+      "claim": "The level of expressed potassium current was stable over a large range of injected Shaker monomer cRNA concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of expressed potassium current was stable over a large range of injected Shaker monomer cRNA concentrations (Figure 2B) suggesting a limiting cellular component in channel assembly and/or trafficking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e88a83e5-6e5c-4372-b8d5-d49d855c7ad7",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C48",
+      "claim": "The stable current levels suggest a limiting cellular component in channel assembly and/or trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of expressed potassium current was stable over a large range of injected Shaker monomer cRNA concentrations (Figure 2B) suggesting a limiting cellular component in channel assembly and/or trafficking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "932b05f8-47df-4211-af69-d086a2e25241",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C49",
+      "claim": "The ERret-intein method allows for control of subunit stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "This method allows for control of subunit stoichiometry and the possibility for encoding multiple Ind side-chains within a single channel tetramer by placing the introduced TAG mutation within one (or both) of the two complementary fragments that form a dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "04e17ae2-a2c6-45be-b194-7bf7a6a99934",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C50",
+      "claim": "The ERret-intein method allows for the possibility of encoding multiple Ind side-chains within a single channel tetramer by placing the introduced TAG mutation within one (or both) of the two complementary fragments that form a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This method allows for control of subunit stoichiometry and the possibility for encoding multiple Ind side-chains within a single channel tetramer by placing the introduced TAG mutation within one (or both) of the two complementary fragments that form a dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental results with dual Ind incorporation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "8b334a86-b0bb-489d-b90f-4a061d437bc9",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C51",
+      "claim": "When both WT and Trp434TAG complementary ERret-intein cRNAs and Trp-tRNA were injected, robust WT-like currents were observed, demonstrating successful Trp incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments where both WT and Trp434TAG complimentary ERret-intein cRNAs and Trp-tRNA were injected, robust WT-like currents were observed, demonstrating successful Trp incorporation (Figure 3A, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "69e4f21a-5f61-4054-a8e3-1a73bdcf6ff7",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C52",
+      "claim": "When Ind-tRNA was expressed within the C-terminal Shaker monomer of each dimer, C-type inactivation was significantly accelerated.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when Ind-tRNA was expressed within the C-terminal Shaker monomer of each dimer, C-type inactivation was significantly accelerated, consistent with the breakage of two of the four hydrogen bonds around the central permeation pathway (Figure 3A, right) while voltage dependence of activation was not altered (Figure 3B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figures 3A and 3B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "d22f1e67-9ed5-4f66-bc45-011e2c1f0d33",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C53",
+      "claim": "The accelerated C-type inactivation with Ind incorporation is consistent with the breakage of two of the four hydrogen bonds around the central permeation pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when Ind-tRNA was expressed within the C-terminal Shaker monomer of each dimer, C-type inactivation was significantly accelerated, consistent with the breakage of two of the four hydrogen bonds around the central permeation pathway (Figure 3A, right) while voltage dependence of activation was not altered (Figure 3B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "dc5ab992-6ec7-4a21-ab62-0173a978aeda",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C54",
+      "claim": "Voltage dependence of activation was not altered by Ind incorporation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when Ind-tRNA was expressed within the C-terminal Shaker monomer of each dimer, C-type inactivation was significantly accelerated, consistent with the breakage of two of the four hydrogen bonds around the central permeation pathway (Figure 3A, right) while voltage dependence of activation was not altered (Figure 3B, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3B and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "3853d4a0-166a-4d83-b0b9-214f6e96411b",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C55",
+      "claim": "At +20 mV, WT Shaker channels had an inactivation time constant of 3900 +/- 0.2 milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "At +20 mV, WT Shaker channels had an inactivation time constant of 3900 +/- 0.2 milliseconds (first-order exponential) compared to 529 +/-141 and 142 +/-14 milliseconds when one or two hydrogen bonds were broken through Ind incorporation, respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "91d39a44-86b2-4e17-b954-52b0c7990a23",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C56",
+      "claim": "When one hydrogen bond was broken through Ind incorporation, the inactivation time constant at +20 mV was 529 +/-141 milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "At +20 mV, WT Shaker channels had an inactivation time constant of 3900 +/- 0.2 milliseconds (first-order exponential) compared to 529 +/-141 and 142 +/-14 milliseconds when one or two hydrogen bonds were broken through Ind incorporation, respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "170a64ee-d3b7-446d-a425-65a6356f74cf",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C57",
+      "claim": "When two hydrogen bonds were broken through Ind incorporation, the inactivation time constant at +20 mV was 142 +/-14 milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "At +20 mV, WT Shaker channels had an inactivation time constant of 3900 +/- 0.2 milliseconds (first-order exponential) compared to 529 +/-141 and 142 +/-14 milliseconds when one or two hydrogen bonds were broken through Ind incorporation, respectively (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "245b9751-3311-41dd-ba66-857eb6bda37d",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C58",
+      "claim": "ERret-intein sequences were constructed within two-domain hemi-channels of the skeletal muscle isoform of the voltage-gated sodium channel NaV1.4.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to examine the general utility of the ERret-intein sequences, they were constructed within two-domain hemi-channels of the skeletal muscle isoform of the voltage-gated sodium channel NaV1.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "5104bc99-f936-4618-8f5e-4055299105d2",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C59",
+      "claim": "Both sodium and calcium channels are amenable to functional complementation via expression of 'split' hemi-channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been shown that both sodium and calcium channels are amenable to functional complementation via expression of 'split' hemi-channels consisting of DI-DIII and DIV or DI-II and DIII-DIV, respectively (St\u00fchmer et al., 1989; Ahern et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "3f362137-3e97-4654-8b28-8d70a8863e1a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C60",
+      "claim": "Sodium and calcium channels need not be tethered on a single polypeptide to form a functional tetrameric channel.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that sodium and calcium channels need not be tethered on a single polypeptide to form a functional tetrameric channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "17f8eb1d-65c3-42f8-92e0-1bbe30d7c64d",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C61",
+      "claim": "Co-assembly of sodium channel domains I-II and III-IV would likely bring ERret-intein sequences on the C-terminus of DI-II and the N-terminus of DIII-IV in close proximity and promote intein dependent cleavage of the ERret sequences and formation of a peptide bond between domains II and III.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore reasoned that co-assembly of sodium channel domains I-II and III-IV would likely bring ERret-intein sequences on the C-terminus of DI-II and the N-terminus of DIII-IV in close proximity and promote intein dependent cleavage of the ERret sequences and formation of a peptide bond between domains II and III (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the hypothesis underlying the experimental design shown in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e784d8e0-0af3-48ff-bccb-b56210994cbb",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C62",
+      "claim": "Expression of either individual NaV1.4 hemi-channel fragment did not result in expressed ionic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the Shaker intein constructs, expression of either individual fragment did not result in expressed ionic currents (Figure 4D; triangles and squares).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "1f5a1068-23b2-4394-a269-fc770fc3932f",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C63",
+      "claim": "Co-expression of the split NaV1.4 halves resulted in robust inward voltage-gated sodium currents similar to WT full-length channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, co-expression of the split NaV1.4 halves resulted in robust inward voltage-gated sodium currents (Figure 4C\u2013 D, diamonds) similar to WT full-length channels (Figure 4D, circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "4a6dd5c6-e572-4082-8ea1-a11ebee08273",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C64",
+      "claim": "Full-length sodium channels produced from the ERret-inteins had biophysical properties that were indistinguishable from WT sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, full-length sodium channels produced from the ERret-inteins had biophysical properties that were indistinguishable from WT sodium channels, p>0.01, Table 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data shown in Table 1 with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "45e89e5a-75f5-4f26-9acd-1a32a8c79dba",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C65",
+      "claim": "The Western blot data show that each NaV1.4 hemi-channel is robustly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "The Western blot data show that each hemi-channel is robustly expressed, producing bands of ~150 kDa (Figure 4B, lane 2) and ~110 kDa (Figure 4B, lane 3) for the DI-II-HA and DIII-DIV-HA truncated constructs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "a37f680a-62d3-4132-baf2-c20c35f1dd44",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C66",
+      "claim": "Co-expression of the NaV1.4 channel halves resulted in the formation of a ~250 kDa band similar to WT NaV1.4 full-length channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of the channel halves resulted in the formation of a ~250 kDa band (lanes 4 and 5) similar to WT NaV1.4 full-length channels (lane 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "8b420999-5d18-4d04-9fd2-17588751f2ad",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C67",
+      "claim": "The efficiency of protein ligation was similar to that of intein ligated Ca2+ channel hemi-channel fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The efficiency of protein ligation was similar to that of intein ligated Ca2+ channel hemi-channel fragments where also, interestingly, the fragment corresponding to the DIII-IV construct was limiting (Subramanyam et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison to cited prior work.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "5e7b1945-7429-4840-9e61-ede38d459fae",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C68",
+      "claim": "Cell lysates from NaV1.4 DI-II or DIII-IV expressing HEK cells were mixed and incubated for 10, 30 or 60 min, and no higher band corresponding with the full-length NaV1.4 was observed at these time points.",
+      "claim_type": "EXPLICIT",
+      "source": "To rule out the possibility that the ligation reaction occurred during sample preparation, i.e after the fragments had been solubilized, cell lysates from NaV1.4 DI-II or DIII-IV expressing HEK cells were mixed and then incubated for 10, 30 or 60 min, Figure 4, Figure 1\u2014figure supplement 1. No higher band corresponding with the full-length NaV1.4 was observed at these time points.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "a3169e35-707f-4a17-8f92-81d1e99016c8",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C69",
+      "claim": "The biochemical data demonstrate that the NaV1.4 DI-II and DIII-IV ERret-intein constructs are competent in HEK cells where they are ligated to produce full-length sodium channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the biochemical data demonstrate that the NaV1.4 DI-II and DIII-IV ERret-intein constructs are competent in HEK cells where they are ligated to produce full-length sodium channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Western blot data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "70d51ce0-106e-40ad-92b2-5a4a862d11fd",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C70",
+      "claim": "The ability of an acylated tRNA in the oocyte expression system to suppress stop sites has variable efficiency that is compounded when two stop sites are present.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the ability of an acylated tRNA in the oocyte expression system to suppress stop sites has variable efficiency that is compounded when two stop sites are present, resulting in the expression of full-length channels that are far below that of WT channels, and often immeasurable using electrophysiological methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge and experience with nonsense suppression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "316adf50-e4e6-4d63-b929-6793a72a3e10",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C71",
+      "claim": "Double suppression within the same reading frame results in the expression of full-length channels that are far below that of WT channels, and often immeasurable using electrophysiological methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the ability of an acylated tRNA in the oocyte expression system to suppress stop sites has variable efficiency that is compounded when two stop sites are present, resulting in the expression of full-length channels that are far below that of WT channels, and often immeasurable using electrophysiological methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental experience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "27da4975-9b12-415e-b69d-8579f0d9dda4",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C72",
+      "claim": "If two stop sites are suppressed independently within individual Nav1.4 I-II and III-IV hemi-channels and then subsequently ligated via the ERret-intein sequences, the reduced expression would not be compounded but only limited by the site with the lower suppression efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that if the two sites are suppressed independently, within the individual Nav1.4 I-II and III-IV hemi-channels for instance, and then subsequently ligated via the ERret-intein sequences that the reduced expression would not be compounded but only limited by the site with the lower suppression efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis being tested.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "2d333ce4-a7bc-4327-b221-aad15877a65a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C73",
+      "claim": "Stop (TAG) sites were engineered into the DI-II construct at Tyr401 near the outer vestibule of the selectivity filter and within the DIII-IV hemi-channel at Phe1304, a site within the DIII-IV linker.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this possibility directly, stop (TAG) sites were engineered into the DI-II construct at Tyr401 near the outer vestibule of the selectivity filter and within the DIII-IV hemi-channel at Phe1304, a site within the DIII-IV linker.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "f6280d61-acd4-4b3d-9e33-e402ec07b0a9",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C74",
+      "claim": "When expressed as hemi-channels, the simultaneous dual suppression with Phe-tRNA at Tyr401 and Phe1304 yielded macroscopic sodium currents with gating similar to wildtype NaV1.4.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed as hemi-channels, the simultaneous dual suppression with Phe-tRNA at Tyr401 and Phe1304 yielded macroscopic sodium currents with gating similar to wildtype NaV1.4 demonstrating that the split ERret-intein method enables dual suppression, Table 1, Figure 5\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Table 1 and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "f615b589-9bba-446f-916c-aee42160728e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C75",
+      "claim": "The split ERret-intein method enables dual suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed as hemi-channels, the simultaneous dual suppression with Phe-tRNA at Tyr401 and Phe1304 yielded macroscopic sodium currents with gating similar to wildtype NaV1.4 demonstrating that the split ERret-intein method enables dual suppression, Table 1, Figure 5\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "df698f5b-5073-4c9d-8b8a-5659bbe3ba79",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C76",
+      "claim": "The incorporation was specific to encoding of a Phe residue, because co-injecting the NaV1.4 TAG cRNA with a tRNA lacking an acylated amino acid failed to produce sodium current.",
+      "claim_type": "EXPLICIT",
+      "source": "The incorporation was specific to encoding of a Phe residue, because co-injecting the NaV1.4 TAG cRNA with a tRNA lacking an acylated amino acid failed to produce sodium current, Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5 demonstrating specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "396ab39d-3628-456c-adcf-5b8d61e49774",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C77",
+      "claim": "The MD simulations suggest that the Ind substitution increases the likelihood of the 'flipped out' Asp447 conformation, which disrupts the local environment of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the 'flipped out' orientation of Asp447 occurs in WT channels, but does so briefly and returns to the hydrogen-bonded state. Thus, the simulations suggest that the Ind substitution increases the likelihood of the 'flipped out' Asp447 conformation, which disrupts the local environment of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "5476e896-6744-4d13-adb5-69529db67790",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C78",
+      "claim": "The 'flipped out' orientation of Asp447 occurs in WT channels, but does so briefly and returns to the hydrogen-bonded state.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the 'flipped out' orientation of Asp447 occurs in WT channels, but does so briefly and returns to the hydrogen-bonded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the molecular dynamics simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e3802f18-35f0-4786-8a49-5ed02a490d46",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C79",
+      "claim": "The reorientation of Asp447 allows water to fill the space behind the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation of Asp447 allows water to fill the space behind the selectivity filter and simultaneously alters the local electrostatics properties, two outcomes that likely impact the occupancy of potassium ions in the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "05c4a4ed-c653-4c53-802a-6cc8301de258",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C80",
+      "claim": "The reorientation of Asp447 alters the local electrostatics properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation of Asp447 allows water to fill the space behind the selectivity filter and simultaneously alters the local electrostatics properties, two outcomes that likely impact the occupancy of potassium ions in the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "b08967f3-2f48-480c-8637-1e1bd9b311a3",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C81",
+      "claim": "The water filling and electrostatic changes likely impact the occupancy of potassium ions in the filter.",
+      "claim_type": "EXPLICIT",
+      "source": "This orientation of Asp447 allows water to fill the space behind the selectivity filter and simultaneously alters the local electrostatics properties, two outcomes that likely impact the occupancy of potassium ions in the filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the simulation results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "690fb99c-7e62-4fce-91ab-4c99c8338748",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C82",
+      "claim": "The reorientation of Asp447 may represent an event in the mechanism of C-type inactivation as the channel transitions from the open/conductive (O/C) to a C-type inactivated conformation (O/I).",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that the reorientation of Asp447 may represent an event in the mechanism of C-type inactivation as the channel transitions from the open/conductive (O/C) to a C-type inactivated conformation (O/I), see Panyi and Deutsch, 2007.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation with reference to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "b9fc47a7-b94c-4c57-93c6-ec5185fad985",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C83",
+      "claim": "The breakage of two versus one of the four Asp447-Trp434 hydrogen bonds further accelerates C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the breakage of two versus one of the four Asp447-Trp434 hydrogen bonds further accelerates C-type inactivation, possibly due to the loss of an additional hydrogen bond and ultimately results in a concomitant destabilization of the open pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing dose-dependent acceleration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "ee3a9ffe-3476-4b58-9411-eee6bf8fc200",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C84",
+      "claim": "The accelerated C-type inactivation is possibly due to the loss of an additional hydrogen bond and ultimately results in a concomitant destabilization of the open pore.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the breakage of two versus one of the four Asp447-Trp434 hydrogen bonds further accelerates C-type inactivation, possibly due to the loss of an additional hydrogen bond and ultimately results in a concomitant destabilization of the open pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "39737ab1-0921-4349-b4c7-479c4a147102",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C85",
+      "claim": "The data do not inform on the details of movements required to break the hydrogen bonds or the nature of the final non-conducting state.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the data do not inform on the details of movements required to break the hydrogen bonds or the nature of the final non-conducting state, an event that occurs downstream from hydrogen bond breakage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "61824ca2-520d-48f5-867b-4344ec05715a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C86",
+      "claim": "A Shaker concatemer with all four subunits tethered into a single peptide was previously attempted to understand domain-specific contributions of hydrogen bonding and C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously attempted to understand domain-specific contributions of hydrogen bonding and C-type inactivation with a Shaker concatemer with all four subunits tethered into a single peptide (Yang et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "13cd906e-fd8c-4c56-92b5-e5523334a1df",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C87",
+      "claim": "The Shaker concatemer tolerated a single Trp434Phe mutation by site-directed mutagenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while this construct tolerated a single Trp434Phe mutation by site-directed mutagenesis (Pless et. al, 2013, eLife) encoding an ncAA was not feasible as the concatemer displayed a significant decrease in overall expression, a common effect of protein concatenation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "654e5ca4-0b86-4206-b9d6-1a38730222d9",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C88",
+      "claim": "Encoding an ncAA in the Shaker concatemer was not feasible as the concatemer displayed a significant decrease in overall expression.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while this construct tolerated a single Trp434Phe mutation by site-directed mutagenesis (Pless et. al, 2013, eLife) encoding an ncAA was not feasible as the concatemer displayed a significant decrease in overall expression, a common effect of protein concatenation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "f6972993-8615-45c9-afa7-42511fde1616",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C89",
+      "claim": "Decreased expression is a common effect of protein concatenation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while this construct tolerated a single Trp434Phe mutation by site-directed mutagenesis (Pless et. al, 2013, eLife) encoding an ncAA was not feasible as the concatemer displayed a significant decrease in overall expression, a common effect of protein concatenation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "68fffea2-0f8e-4896-b080-ec89906680fb",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C90",
+      "claim": "Split intein sequences have been used to ligate a variety of protein fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Split intein sequences have been used to ligate a variety of protein fragments (Shah and Muir, 2014) and the ERret motif used in this study has been shown to work in several types of eukaryotic cells including yeast (Zerangue et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "a3aa1249-e48c-4c2b-8908-7d5253c3f33e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C91",
+      "claim": "The ERret motif used in this study has been shown to work in several types of eukaryotic cells including yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Split intein sequences have been used to ligate a variety of protein fragments (Shah and Muir, 2014) and the ERret motif used in this study has been shown to work in several types of eukaryotic cells including yeast (Zerangue et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "4db58ebd-00de-49a3-8f47-e411b62784ef",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C92",
+      "claim": "The ERret-intein approach could be used to examine other proteins in other cellular environments for studying the effects of dominant negative mutations, heteromers, etc.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this approach could be used to examine other proteins in other cellular environments for studying the effects of dominant negative mutations, heteromers, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "853b20ae-efa9-4c9d-a1ac-0d32403b5769",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C93",
+      "claim": "Encoding of multiple ncAA within an individual protein complex remains a significant challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding of multiple ncAA within an individual protein complex remains a significant challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "6d802df7-2b98-4267-b0b8-ce61ad95f689",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C94",
+      "claim": "Where success in encoding multiple ncAAs is reported, it stems primarily from improving the efficiency of the suppression process and tRNA delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Where success is reported, it stems primarily from improving the efficiency of the suppression process and tRNA delivery (Neumann et al., 2010; Wan et al., 2010; Johnson et al., 2011; Chatterjee et al., 2013; Xiao et al., 2013; Lammers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "5c44ee48-7c0c-4087-9994-7c20ce2b6013",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C95",
+      "claim": "The ERret-intein approach changes the nature of the dual suppression problem by rescuing each transcript independently prior to protein ligation thus abrogating the loss of expression due to the compounded efficiency of multiple suppression events.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the approach described here changes the nature of the dual suppression problem by rescuing each transcript independently prior to protein ligation thus abrogating the loss of expression due to the compounded efficiency of multiple suppression events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of how the method works.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "9e6ef3f1-c691-4a6f-a0aa-659411a28cfd",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C96",
+      "claim": "The sodium channel data obtained with dual TAG sites suggests that the approach will be useful for suppression of multiple stop sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the sodium channel data obtained with dual TAG sites suggests that the approach will be useful for suppression of multiple stop sites, a possibility that will be valuable for encoded FRET, once such probes become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "71d45da7-5ac3-4255-9f17-0ee1b403257a",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C97",
+      "claim": "The approach will be valuable for encoded FRET, once such probes become available.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the sodium channel data obtained with dual TAG sites suggests that the approach will be useful for suppression of multiple stop sites, a possibility that will be valuable for encoded FRET, once such probes become available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about future applications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "db1663d5-40b8-4a43-a745-732538014671",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C98",
+      "claim": "Initial coordinates for the molecular dynamic simulations were modeled based on the crystal structure of Kv1.2/Kv2.1 Voltage-gated potassium channel chimera (PDB ID:2R9R).",
+      "claim_type": "EXPLICIT",
+      "source": "Initial coordinates for the molecular dynamic simulations were modeled based on the crystal structure of Kv1.2/Kv2.1 Voltage-gated potassium channel chimera (PDB ID:2R9R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "31137d37-5970-40ad-8fc3-74a46e9fd544",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C99",
+      "claim": "There is high sequence identity (87%) of the pore domain between Kv1.2 and Shaker.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the high sequence identity (87%) of the pore domain between Kv1.2 and Shaker, several non-conserved residues were mutated from Kv1.2 to Shaker, and all of the conserved residue side-chains still maintain the same conformation as the crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "881f8f4d-2fec-46a4-9743-b8d3598f151e",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C100",
+      "claim": "All-atom simulations were performed in constant NPT conditions at a temperature of 310 K and a constant pressure of 1.0 atm, after initial minimization and equilibrations.",
+      "claim_type": "EXPLICIT",
+      "source": "All-atom simulations were performed in constant NPT conditions at a temperature of 310 K and a constant pressure of 1.0 atm, after initial minimization and equilibrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "b7de09ce-62ce-4412-88de-c64d09b81b29",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "claim_id": "C101",
+      "claim": "For both wild type and mutant Trp434Ind, MD simulations were performed for 500 ns.",
+      "claim_type": "EXPLICIT",
+      "source": "For both wild type and mutant Trp434Ind, MD simulations were performed for 500 ns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation duration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e11aa527-346e-42e9-a15c-a83bf3288697",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Molecular dynamics simulations reveal that the Trp434Ind mutation causes Asp447 to 'flip out' toward the extracellular environment, increasing the distance between these residues in all four subunits. This conformational change allows water to penetrate the space behind the selectivity filter and alters local electrostatic potential by reorienting the negatively charged Asp447.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C5, C27-C31, C34-C35, and C78 are supported by MD simulation data shown in Figure 1. The simulations were performed for 500 ns (C101) using appropriate methodology (C98-C100) based on the Kv1.2/Kv2.1 crystal structure with 87% sequence identity to Shaker (C99). The water occupancy maps (Figure 1D) and distance measurements (Figure 1C) provide direct evidence for the conformational changes and their effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "23ab52cf-1764-4f43-ab92-68fbf59977bc",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The MD simulations suggest that Asp447 reorientation increases the likelihood of the 'flipped out' conformation, which may accelerate C-type inactivation by altering water accessibility and electrostatic properties that impact potassium ion occupancy in the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C32, C36-C37, C77, C79-C82 are largely speculative interpretations (marked as SPECULATION/INFERENCE in evidence_type) of the simulation data. While the simulations show structural changes, the direct link to C-type inactivation mechanism and ion occupancy effects are inferred rather than demonstrated. The authors acknowledge this limitation in C85.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "39244498-0f1d-4dde-8e2e-e4df660c3208",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A novel ERret-intein protein engineering approach was developed that enables stoichiometric control of Shaker channel subunits. Split inteins flanked by ER retention motifs were incorporated into Shaker monomers, allowing formation of functional tetrameric channels only when complementary fragments are co-expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38-C50 are well-supported by experimental data in Figure 2. The approach successfully prevents surface expression of individual monomers (C43-C44) while enabling robust current expression upon co-expression of complementary fragments (C45). The stable current levels across cRNA concentrations (C47, Figure 2B) support the functionality of the system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "d053db39-d994-440e-be86-53bb7b9c44e0",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ERret-intein system enabled incorporation of two Ind residues within a single Shaker tetramer, demonstrating dose-dependent acceleration of C-type inactivation. Breaking two hydrogen bonds (\u03c4=142\u00b114 ms) accelerated inactivation more than breaking one (\u03c4=529\u00b1141 ms) compared to WT (\u03c4=3900\u00b10.2 ms) at +20 mV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C51-C57, and C83 are strongly supported by experimental data in Figure 3 and Table 1. The dose-dependent effect on inactivation kinetics with one versus two Ind incorporations provides clear evidence for the role of hydrogen bond number in controlling C-type inactivation rate. Voltage dependence of activation remained unchanged (C54), indicating specificity of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ERret-intein approach was successfully applied to NaV1.4 sodium channels by splitting the channel into DI-II and DIII-IV fragments. Co-expression of the fragments produced functional full-length channels with biophysical properties indistinguishable from WT (p>0.01), as confirmed by both electrophysiology and Western blot analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C69 are well-supported by data in Figure 4 and Table 1. Western blot shows formation of ~250 kDa full-length band (C66, Figure 4B), and control experiments (C68) rule out post-lysis ligation. Electrophysiological recordings demonstrate functional channels (C63-C64) with properties matching WT. This demonstrates generalizability of the approach beyond potassium channels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "9a04d219-ed1f-412c-ae85-6819d34affa6",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ERret-intein approach overcomes the compounded inefficiency problem of dual nonsense suppression by rescuing each transcript independently before ligation. Dual suppression at Tyr401 and Phe1304 in split NaV1.4 fragments yielded functional channels with WT-like gating, demonstrating the method enables incorporation of multiple ncAAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C76, C95-C96 are supported by experimental data in Figure 5 and Table 1. The successful dual suppression (C74-C75) with specificity controls (C76) validates the approach. However, C96 regarding future applications to multiple stop sites is somewhat speculative, though reasonably inferred from the dual suppression success.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "397ade9e-6c74-4baf-8a0b-b6df28951201",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background on C-type inactivation mechanism and prior work establishing the role of the Trp434-Asp447 hydrogen bond network in controlling inactivation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C15, C18-C19, and C23 are well-supported by extensive citations to prior literature and the authors' previous work (Pless et al., 2013). These provide appropriate context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "8e568aa1-059f-4d42-b834-1398208399ca",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Previous attempts to use nonsense suppression with concatenated Shaker channels were limited by low expression levels, preventing incorporation of multiple ncAAs or measurement of gating currents from non-conducting mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C20-C26, C86-C89 accurately describe technical limitations of prior approaches based on the authors' previous work and general knowledge of nonsense suppression. These claims establish the motivation for developing the ERret-intein method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "e7158a82-ded9-4110-9672-dd41251ba687",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors acknowledge that while hydrogen bond breakage accelerates inactivation, the data do not reveal the detailed molecular movements or the nature of the final non-conducting state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 appropriately acknowledge limitations of the study. C84 is speculative about mechanism, while C85 explicitly states what the data cannot address. This represents appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    },
+    {
+      "id": "c2c9da71-7a62-499d-82a6-386c24052b5b",
+      "content_id": "d213a52e-c433-486f-b3fd-408b58ce1b74",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Discussion of the broader applicability of the ERret-intein approach and comparison to other methods for encoding multiple ncAAs, with speculation about future applications including FRET.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C91, C93-C94 are supported by appropriate citations. Claims C92 and C97 are speculative about future applications but are reasonable extrapolations from the demonstrated results. These provide appropriate context for the significance of the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:08:11.482399Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c90814d1-6aca-4253-b9ed-513ee92bc6fc",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "40aba42c-b9c9-487e-b80a-4e2aab426f22",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "f22b5335-3bec-478f-a15f-c8fbb1462263",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "c4a4fd94-214f-4f6a-87e4-4a035e317be3",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "e14ef0bb-b13d-4750-a051-387068a65bbd",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "11efef6d-8268-4186-a0d8-75c6b69bf628",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "a6e97b09-3a18-479e-a7e3-aebc1c8301f4",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "c23a2c66-3c51-4864-a44b-21167c4da14c",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "96667528-6bc3-4ebf-8356-266bf83bdd30",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "c95cfc9c-7b42-4fd8-a695-95ad90cd7dc6",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "5476e896-6744-4d13-adb5-69529db67790",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "db1663d5-40b8-4a43-a745-732538014671",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "31137d37-5970-40ad-8fc3-74a46e9fd544",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "881f8f4d-2fec-46a4-9743-b8d3598f151e",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "b7de09ce-62ce-4412-88de-c64d09b81b29",
+      "result_id": "e11aa527-346e-42e9-a15c-a83bf3288697"
+    },
+    {
+      "claim_id": "d04116ce-c26a-4837-93d2-87b873aec0f4",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "2ee6f27a-f410-41e2-a34a-6a3008812941",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "4693ae7b-28d8-46ef-ac82-431094086d01",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "f784c3e7-37ec-43aa-adfb-5cf8655a47a8",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "396ab39d-3628-456c-adcf-5b8d61e49774",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "e3802f18-35f0-4786-8a49-5ed02a490d46",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "05c4a4ed-c653-4c53-802a-6cc8301de258",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "b08967f3-2f48-480c-8637-1e1bd9b311a3",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "690fb99c-7e62-4fce-91ab-4c99c8338748",
+      "result_id": "23ab52cf-1764-4f43-ab92-68fbf59977bc"
+    },
+    {
+      "claim_id": "06d1e382-2ee4-42d9-917e-675ad39a1d6d",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "25932f23-9a34-4e8e-9631-cf884bfbe454",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "605907e5-15ba-46e2-9d8f-c7aeec2a140f",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "7917b5e2-16b9-4056-87f9-5d4ed778b622",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "35832a08-ed14-4105-9931-fc982463c8fe",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "6c33266b-869f-47bc-b347-2ad46ba6dd44",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "ce77481e-a7cc-46d2-af83-e3465146428f",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "b267661c-a675-4249-861f-905649ce3e9d",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "5592d085-d6eb-45c3-9c90-9a9a942c203a",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "e79054be-36a8-4a0c-b972-9ddf0a95a622",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "0d084788-62fc-4e40-aefc-f48195349255",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "e88a83e5-6e5c-4372-b8d5-d49d855c7ad7",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "932b05f8-47df-4211-af69-d086a2e25241",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "04e17ae2-a2c6-45be-b194-7bf7a6a99934",
+      "result_id": "39244498-0f1d-4dde-8e2e-e4df660c3208"
+    },
+    {
+      "claim_id": "9f81e26d-e739-4c73-9e64-924e3610c60b",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "e1bbcf62-3ba6-4b31-bda8-1e88ef7bd134",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "8b334a86-b0bb-489d-b90f-4a061d437bc9",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "69e4f21a-5f61-4054-a8e3-1a73bdcf6ff7",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "d22f1e67-9ed5-4f66-bc45-011e2c1f0d33",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "dc5ab992-6ec7-4a21-ab62-0173a978aeda",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "3853d4a0-166a-4d83-b0b9-214f6e96411b",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "91d39a44-86b2-4e17-b954-52b0c7990a23",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "170a64ee-d3b7-446d-a425-65a6356f74cf",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "b9fc47a7-b94c-4c57-93c6-ec5185fad985",
+      "result_id": "d053db39-d994-440e-be86-53bb7b9c44e0"
+    },
+    {
+      "claim_id": "245b9751-3311-41dd-ba66-857eb6bda37d",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "5104bc99-f936-4618-8f5e-4055299105d2",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "3f362137-3e97-4654-8b28-8d70a8863e1a",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "17f8eb1d-65c3-42f8-92e0-1bbe30d7c64d",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "e784d8e0-0af3-48ff-bccb-b56210994cbb",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "1f5a1068-23b2-4394-a269-fc770fc3932f",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "4a6dd5c6-e572-4082-8ea1-a11ebee08273",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "45e89e5a-75f5-4f26-9acd-1a32a8c79dba",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "a37f680a-62d3-4132-baf2-c20c35f1dd44",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "8b420999-5d18-4d04-9fd2-17588751f2ad",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "5e7b1945-7429-4840-9e61-ede38d459fae",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "a3169e35-707f-4a17-8f92-81d1e99016c8",
+      "result_id": "79b4c12b-3eae-4b28-aedc-8b0d520bae72"
+    },
+    {
+      "claim_id": "70d51ce0-106e-40ad-92b2-5a4a862d11fd",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "316adf50-e4e6-4d63-b929-6793a72a3e10",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "27da4975-9b12-415e-b69d-8579f0d9dda4",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "2d333ce4-a7bc-4327-b221-aad15877a65a",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "f6280d61-acd4-4b3d-9e33-e402ec07b0a9",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "f615b589-9bba-446f-916c-aee42160728e",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "df698f5b-5073-4c9d-8b8a-5659bbe3ba79",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "5c44ee48-7c0c-4087-9994-7c20ce2b6013",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "9e6ef3f1-c691-4a6f-a0aa-659411a28cfd",
+      "result_id": "9a04d219-ed1f-412c-ae85-6819d34affa6"
+    },
+    {
+      "claim_id": "96365da5-7065-4bbb-9191-11e6d40197c5",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "727479b6-8a3f-41b4-985e-87fa6350225a",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "6d9988f8-fdd6-4340-a214-a6737dc2ff5e",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "10145586-5fd7-427f-bad8-2897eeee505b",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "6788b984-051c-4df4-9a19-8a29f014208d",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "fa5f9922-6651-4b83-b3b9-a20b4d3efdbf",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "0b3431fa-cf46-4cfd-bc16-cf9e6f091405",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "26fa720e-71e9-4ed0-a0ac-c4d1b441f3bb",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "bccd0773-3df8-4134-a81c-4bc7b1db1bf2",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "355ea156-2dee-41a3-944c-bd8fa2d8145c",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "89b94beb-abde-4705-a084-1b0cb7a30808",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "82c5b39c-8ffd-4715-8c45-2e5ff10df27e",
+      "result_id": "397ade9e-6c74-4baf-8a0b-b6df28951201"
+    },
+    {
+      "claim_id": "10447758-b9b9-4c98-be84-79daa43b9bbe",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "cf3af724-39c2-45d2-ae89-8d03c01f326a",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "ad72acae-81b8-4f24-ae58-4d711805259e",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "bec23842-c82e-457f-ad31-b601e8627f03",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "2a133d2f-3daf-4e93-8939-ec5f924417c5",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "7cb367bd-e3f1-41e2-b048-5678b420b1d7",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "edc117f6-f810-4c0f-b161-f1b072a8d63f",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "4b795d31-d5cb-45b7-b4c2-b23f23baf3eb",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "61824ca2-520d-48f5-867b-4344ec05715a",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "13cd906e-fd8c-4c56-92b5-e5523334a1df",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "654e5ca4-0b86-4206-b9d6-1a38730222d9",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "f6972993-8615-45c9-afa7-42511fde1616",
+      "result_id": "8e568aa1-059f-4d42-b834-1398208399ca"
+    },
+    {
+      "claim_id": "ee3a9ffe-3476-4b58-9411-eee6bf8fc200",
+      "result_id": "e7158a82-ded9-4110-9672-dd41251ba687"
+    },
+    {
+      "claim_id": "39737ab1-0921-4349-b4c7-479c4a147102",
+      "result_id": "e7158a82-ded9-4110-9672-dd41251ba687"
+    },
+    {
+      "claim_id": "68fffea2-0f8e-4896-b080-ec89906680fb",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    },
+    {
+      "claim_id": "a3aa1249-e48c-4c2b-8908-7d5253c3f33e",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    },
+    {
+      "claim_id": "4db58ebd-00de-49a3-8f47-e411b62784ef",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    },
+    {
+      "claim_id": "853b20ae-efa9-4c9d-a1ac-0d32403b5769",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    },
+    {
+      "claim_id": "6d802df7-2b98-4267-b0b8-ce61ad95f689",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    },
+    {
+      "claim_id": "71d45da7-5ac3-4255-9f17-0ee1b403257a",
+      "result_id": "c2c9da71-7a62-499d-82a6-386c24052b5b"
+    }
+  ],
+  "comparisons": []
+}

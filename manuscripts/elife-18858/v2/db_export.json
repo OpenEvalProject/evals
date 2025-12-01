@@ -1,0 +1,2002 @@
+{
+  "submission": {
+    "id": "847b6f95-3eaf-4d53-8079-90d250a51cd8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:27:57.422099Z",
+    "updated_at": "2025-11-30T21:27:57.422099Z"
+  },
+  "content": [
+    {
+      "id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "submission_id": "847b6f95-3eaf-4d53-8079-90d250a51cd8",
+      "content_type": "manuscript",
+      "content_text": "# Rational design of aptazyme riboswitches for efficient control of gene expression in mammalian cells\n\n## Authors\n\n- Guocai Zhong<sup>1</sup> \u2020\n- Haimin Wang<sup>1</sup>\n- Charles C Bailey<sup>2</sup>\n- Guangping Gao<sup>3</sup>\n- Michael Farzan<sup>1</sup> ([ORCID: 0000-0002-2990-5319](https://orcid.org/0000-0002-2990-5319))\n\n### Affiliations\n\n1. Department of Immunology and Microbial Sciences The Scripps Research Institute Jupiter United States\n2. Department of Molecular and Comparative Pathology Johns Hopkins School of Medicine Baltimore United States\n3. Gene Therapy Center University of Massachusetts Medical School Worcester United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEfforts to control mammalian gene expression with ligand-responsive riboswitches have been hindered by lack of a general method for generating efficient switches in mammalian systems. Here we describe a rational-design approach that enables rapid development of efficient cis-acting aptazyme riboswitches. We identified communication-module characteristics associated with aptazyme functionality through analysis of a 32-aptazyme test panel. We then developed a scoring system that predicts an aptazymes\u2019s activity by integrating three characteristics of communication-module bases: hydrogen bonding, base stacking, and distance to the enzymatic core. We validated the power and generality of this approach by designing aptazymes responsive to three distinct ligands, each with markedly wider dynamic ranges than any previously reported. These aptayzmes efficiently regulated adeno-associated virus (AAV)-vectored transgene expression in cultured mammalian cells and mice, highlighting one application of these broadly usable regulatory switches. Our approach enables efficient, protein-independent control of gene expression by a range of small molecules.\n\n## Introduction\n\nLigand-responsive cis-acting riboswitches (Breaker, 2012) function independently of protein factors and can be programmed to respond to a wide range of small-molecule ligands. They therefore have a number of potential scientific and medical applications. Aptazymes are a class of engineered riboswitches that control gene expression by small molecule-induced self-cleavage of a ribozyme (Figure 1A). The first aptazyme was developed by the Breaker group (Tang and Breaker, 1997) by fusing an ATP binding aptamer with a minimal hammerhead ribozyme (Scott et al., 2013). This aptazyme was functional only in cell-free systems. The discovery of tertiary interaction between stems I and II of the full-length hammerhead ribozyme (De la Pe\u00f1a et al., 2003; Khvorova et al., 2003; Martick and Scott, 2006) and the development of optimized hammerhead ribozymes efficient in mammalian cell culture and in vivo (Yen et al., 2004) led to the development of hammerhead ribozyme-based aptazymes functional in yeast (Win and Smolke, 2007; Wittmann and Suess, 2011; Klauser et al., 2015; Townshend et al., 2015), or mammalian cells (Kumar et al., 2009; Auslander et al., 2010; Nomura et al., 2012; Wei et al., 2013; Beilstein et al., 2015). These aptazymes have been tested for a range of applications, including construction of synthetic gene networks in yeast (Win and Smolke, 2008), and regulation of transgene expression (Ketzer et al., 2012) or virus replication (Ketzer et al., 2014) in mammalian cell culture. Using IL-2-based positive-feedback signal amplification, a theophylline-regulated aptazyme with a narrow dynamic range has been shown to control proliferation of transduced T cell lines in mice (Chen et al., 2010). To date, no aptazyme has been described to control gene expression in primary animal cells in vivo.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig1-v2.jpg)\n\n**Figure 1.:** (A) A diagram representing aptazyme-mediated control of gene expression. An aptazyme riboswitch, composed of a ribozyme (orange), a communication module (red) and an aptamer (blue), is inserted at the 3' untranslated region of an mRNA transcript. Ligand binding to the aptamer activates the ribozyme, which cleaves itself in cis, leading to degradation of the RNA message. (B) Secondary structure of the Tc01 aptazyme, composed of a hammerhead ribozyme (orange), a communication module (CM, red), and a Tc-binding aptamer (blue). Tc is represented as a green hexagon. The original stem III of the hammerhead ribozyme and P1 stem of the Tc aptamer are replaced with the communication module, which connects the ribozyme and aptamer and signals the binding state of the aptamer to the ribozyme. (C) Enzymatically active (N107) and inactive (in-N107) forms of the N107 hammerhead ribozyme, or the aptazyme Tc01 were placed 3\u00b4 to a Gaussia luciferase (GLuc) gene. HeLa cells transiently transfected with plasmids expressing GLuc regulated by N107 or Tc01 were cultured with 0, 3, 10, 30, or 100 \u00b5M Tc for 2 days. Secreted GLuc in the culture supernatant was measured by a luminescence assay. Luciferase expression levels are normalized to that of an expression construct ('CNTL') lacking any regulatory elements. The percentages above the figure indicate 'basal expression' (BE), GLuc expression from each construct in the absence of Tc relative to that from the CNTL control construct. The lower number above each figure indicates the 'corrected dynamic range' (CDR) at 100 \u00b5M Tc. CDR is the Tc-induced fold-change in aptazyme-regulated GLuc expression divided by the Tc-induced fold-change in GLuc expression from the CNTL control construct. (D) To gain insight into the relationship between communication-module sequence and CDR, 32 aptazyme variants, differing only in their communication modules and represented here in four groups, were generated. Full communication-module sequences are shown in Figure 1\u2014figure supplement 1B. (E) HeLa cells transiently transfected with plasmids expressing GLuc regulated by these 32 aptazyme variants were cultured in the presence or absence of 100 \u00b5M Tc for 2 days. Secreted GLuc in the culture supernatant was analyzed as in (C). The upper panel shows the BE (blue) and 'ligand-inhibited expression' (LE; red) of each variant. LE is the relative luciferase expression of each plasmid in the presence of Tc compared to the luciferase expression level of the CNTL control plasmid in the absence of Tc. The lower panel shows the CDR of each variant. All data shown are representative of two or three independent experiments. All data points represent mean \u00b1 S.D. of three biological replicates.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The secondary structures of the hammerhead ribozyme N107 (left), a Tc-binding RNA aptamer (center), and Tc aptazymes characterized in Figure 1e (right). The N107 hammerhead ribozyme consists of three stem structures (I, II, III) that stabilize a conserved enzymatic core. A black arrow indicates the self-cleavage site. The Tc aptamer also consists of three stems (P1, P2, and P3). Tc is represented as a green hexagon. Tetracycline P1 (Tc-P1) aptazymes were generated by fusing stem III of the ribozyme N107 (orange) with the P1 stem of the Tc aptamer (blue). The five base pairs connecting the ribozyme to the aptamer form a communication module (CM; red) that transmits the ligand-binding state of the aptamer the ribozyme. (B) Communication-module sequences of the 32 test-panel aptazymes are grouped as in Figure 1D and E.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** HeLa cells transiently transfected with plasmids expressing Gaussia luciferase (GLuc) regulated by the indicated aptazymes were cultured for 2 days with the indicated concentrations of Tc. GLuc secreted in the culture supernatant was measured by a luminescence assay. Luciferase expression were normalized to that of an expression construct ('CNTL') lacking any regulatory elements. All data points represent mean \u00b1 S.D. Data shown are representative of two or three independent experiments.\n\nThe limited number of useful aptazymes reflects the need for a simple and general strategy to rapidly generate aptazymes responsive to diverse ligands in mammalian cells. In vitro allosteric selection has been used to generate aptazymes in a high-throughput and massively parallel format (Koizumi et al., 1999), but aptazymes identified in this way function in cell-free conditions but not in mammalian cells (Link et al., 2007; Wittmann and Suess, 2011). Similarly, aptazymes obtained from bacterial screens function efficiently in bacteria (Wieland and Hartig, 2008) but poorly in mammalian cells (Auslander et al., 2010). Direct screening of an aptazyme library in mammalian cells is labor intensive and generally performed in a medium-throughput non-pooled format (Auslander et al., 2010; Rehm et al., 2015), thus library sizes are small, and the chance of identifying an efficient aptazyme is low.\n\nIn this study, we describe a general method for rapid development of efficient aptazymes from diverse pre-existing or novel aptamers. Specifically, this approach streamlines identification of optimal communication modules connecting an aptamer to a hammerhead ribozyme. We demonstrate the power and modularity of this approach by developing efficient aptazymes regulated by three distinct ligands, each aptazyme exhibiting a significantly wider dynamic range in mammalian cells than any previously described aptazyme. We highlight the utility of these aptazymes by using them to regulate expression from an AAV vector in cell culture and in mice.\n\n## Results\n\n### Characterization of a test panel of tetracycline-regulated aptazymes\n\nWe initially characterized a panel of aptazymes responsive to tetracycline (Tc). These aptazymes share a common architecture, composed of an optimized Schistosoma mansoni hammerhead ribozyme N107 (Yen et al., 2004), a communication module, and a Tc-binding aptamer (Xiao et al., 2008) (Figure 1\u2014figure supplement 1A). They differ only in their communication module, a region that signals the binding state of the aptamer to the ribozyme. We started by directly fusing four base pairs of the P1 stem of the aptamer to the base of ribozyme stem III (Figure 1B). The resulting aptazyme (Tc01) was placed downstream of a gene encoding Gaussia luciferase (GLuc). As expected, Tc01-regulated GLuc expression in the absence of Tc was markedly lower than that from control constructs without any regulatory elements (CNTL) or with an inactive form of the N107 ribozyme (in-N107), likely due to high level of ribozyme auto-activation triggered by its stable communication module. In addition, the aptazyme had a narrow (2.1-fold) dynamic range (Figure 1C). We then generated 31 variants of Tc01 by altering Tc01 communication-module bases by trial and error (Figure 1D\u00a0and Figure 1\u2014figure supplement 1B). These variants were again placed downstream of the GLuc gene and tested for their ability to control GLuc expression in HeLa cells using varying concentrations of Tc (Figure 1\u2014figure supplement 2). A comparison of GLuc expression at 0 \u00b5M Tc (basal expression, BE) and GLuc expression at 100 \u00b5M Tc (ligand-inhibited expression, LE) is plotted in Figure 1E. As shown, this test panel exhibited widely varying BE and the Tc-induced fold change in expression. To correct for the non-specific inhibitory effects of Tc on gene expression, we report here the corrected dynamic range (CDR), namely the Tc-induced fold change in aptazyme-regulated gene expression divided by the fold change observed in the expression of a control construct (CNTL) lacking any regulatory elements.\n\n### A function of communication-module bases that predicts an aptazyme\u2019s dynamic range\n\nTo better understand the determinants of aptazyme dynamic range, we comprehensively analyzed the communication-module characteristics and the functionality of the test-panel 32 aptazymes. It has been suggested that the annealing energy of the communication module, \u0394GCM, determines CDR (Wieland and Hartig, 2008; Kumar et al., 2009). However, we observed no obvious relationship between predicted \u0394GCM (Bellaousov et al., 2013) and BE, LE, or CDR (Figure 2A\u00a0and Figure 2\u2014figure supplement 1A). We then focused on BE because it reflects the efficiency of ribozyme-mediated mRNA cleavage in the absence of ligand and is primarily determined by the communication module (Figure 2\u2014figure supplement 2A). We hypothesized that an energy-like function of the communication-module sequence which predicts BE would identify values of the function where a small change would have the largest impact on target gene expression. Thus, for communication modules with these values, additional energy provided by aptamer binding would yield the largest differences between BE and LE, and thus the largest CDR. We therefore sought to construct a simple function that correlates with the rank order of BE among our 32 aptazymes.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig2-v2.jpg)\n\n**Figure 2.:** (A) The predicted hybrid free energies of the communication modules (\u0394GCM) of test-panel aptazymes were calculated with RNAstructure Web Server (Bellaousov et al., 2013). BE (blue circles) and LE (red triangles) were then plotted against the negative \u0394GCM value for all aptazymes whose \u0394GCM could be determined. Note the poor correlation between \u0394GCM and BE or LE. (B\u2013C) BE and LE of the indicated aptazyme variants are shown. Expression levels are normalized to that of the CNTL control construct. The communication-module sequences of these variants are displayed to the left of the figures. Red indicates base pairs different from the consensus. Note that all constructs in each set have the same base pairs, and that order of these pairs impacts BE. (D) Accordingly, every CM base pair was assigned a weight based on its proximity to the ribozyme, with distal bases assigned lower weights. A Weighted Hydrogen Bond Score (WHBS) was then calculated as the weighted sum of hydrogen bonds in the communication module. BE (blue circles) and LE (red triangles) of each variant were plotted against WHBS. Note that WHBS better correlates with the rank order of BE than does \u0394GCM or the unweighted sum of hydrogen bond numbers in the communication module (Figure 2\u2014figure supplement 1B). (E\u2013F) The BE and LE of the indicated aptazymes are shown, with their communication-module sequences indicated to the left. Nucleotides with the potential to form inter-strand base-stacking interactions are highlighted as red. (G) Potential inter-strand purine base-stacking interactions were weighted by proximity to the ribozyme, and added to the WHBS to form a modified score (WHSS). BE (blue circles) and LE (red triangles) were plotted against WHSS of the corresponding aptazyme variant. Note that the WHSS better correlates with the rank order of BE than does the WHBS or \u0394GCM. An inflection point of the BE at WHSS 6.7 is indicated with a dashed line. Shading indicates a region with WHSS values 6.7\u00a0\u00b1\u00a00.3. (H) The CDR values of all 32 test-panel aptazymes were plotted against their WHSS. Note the CDR optimum near the WHSS value of 6.7 (shaded). Aptazymes that exhibited the highest (Tc12, Tc15) or lower-than-expected (Tc31 and Tc32) CDRs are indicated. (I\u2013K) The CDRs of the indicated aptazymes are shown, with their communication-module sequences displayed to the left. Note that aptazymes in each panel share identical sequences (I) or similar WHSS (J,K), but differ in the stability of the communication-module base pair immediately proximal to the Tc aptamer (red). Aptazyme WHSS values range from 6.13 to 6.29 in (J), and from 6.58 to 6.63 in (K). Tc31 and Tc32, with 1 and 0 hydrogen bonds at this position, are outliers in Figure 2H, likely because these weak bonds destabilize the aptamer, and lower its affinity for Tc. (L) Efficient aptazymes met two criteria: a communication-module WHSS value within the range of 6.7 \u00b1 0.3, and an aptamer-proximal communication-module base pair with stability similar to or higher than that of the original aptamer. Aptazymes that meet both criteria have high BE and CDR ('optimal' aptazymes), whereas those that fail to meet one have low BE or narrow CDR ('suboptimal' aptazymes). The CDR and BE of the both optimal and suboptimal aptazymes are ordered by CDR and plotted. Data points in panels A, D, G, H and L represent mean of three biological replicates. Data points in panels B, C, E, F, I, J, and K represent mean \u00b1 S.D. of three biological replicates. Numerical data for all the figures are available in Figure 2\u2014source data 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) The predicted hybrid free energies of the communication modules (\u0394GCM) of the test-panel aptazymes were calculated with RNAstructure Web Server. Corrected dynamic ranges (CDR) of the test panel aptazymes were then plotted against the negative \u0394GCM values for communication modules whose \u0394GCM could be determined. (B) Basal expression (BE) and ligand-inhibited expression (LE) were plotted against total hydrogen bond numbers (HBN) of the communication modules of the test-panel aptazymes. (C) BE and negative \u0394GCM of the test-panel aptazymes were ranked separately for Spearman\u2019s rank correlation analysis. Ranked BE were plotted against ranked negative \u0394GCM. The Spearman\u2019s rank correlation coefficient (\u03c1) is shown above the figure. (D\u2013F) Spearman\u2019s rank correlation between BE and HBN (D), Weighted Hydrogen Bond Score (WHBS; E), or Weighted Hydrogen-bond and Stacking Score (WHSS; F) were analyzed as in (C). Note that WHSS correlates better with BE than does \u0394GCM, HBN, or WHBS.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) When messenger RNAs (mRNA) containing an aptazyme are transcribed, a fraction of the mRNA population will undergo ribozyme autoactivation, resulting in mRNA degradation. Ribozyme autoactivation reduces gene expression to BE and is primarily determined by the communication module sequence (CM; red). Ligand-aptamer binding triggers a conformational change in the aptamer. The communication module signals this change to the ribozyme. Subsequent activation of the ribozyme lowers gene expression to LE. (B) A plot of BE versus WHSS as shown in Figure 2G. The curve shows how gene expression responds to differences in an inferred energy-like function of the communication-module sequence (WHSS), and contains an inflection point at a WHSS value of 6.7. A region near this inflection point (\u00b1\u00a00.3) is shaded. (C\u2013D) Diagrams explaining why high levels of ligand-induced ribozyme activation (BE \u2013 LE) were observed at WHSS 6.7, the observed inflection point in (B). Energy contributed by the communication module triggers ribozyme autoactivation (blue brackets), lowering gene expression to BE (blue bars) from expression observed with an inactive ribozyme (dashed lines). When the ligand binds the aptamer, it stabilizes the communication module by adding additional energy (\u0394), increasing the frequency of ribozyme activation (induced activation, red brackets), and further decreasing gene expression to LE (red bars). Note that identical \u0394 values have greater impact on the dynamic range of aptazymes with WHSS values near the inflection point (C) than on those with WHSS values far from this point (D)\n\nWe observed, in two different sets of aptazymes with identical communication-module base pairs, that distance of the base pairs to the enzymatic core impacted BE (Figure 2B and C). In particular, when base pairs with few hydrogen bonds (G-U or U-U) were placed close to the ribozyme, as in Tc14 and Tc08, higher BE levels were observed. Accordingly, we assigned every base a weight reflecting its proximity to the enzymatic core, and multiplied that weight by the number of hydrogen bonds to get a Weighted Hydrogen Bond Score (WHBS). We found that WHBS better correlates with the rank order of BE than does \u0394GCM or the unweighted sum of hydrogen bonds in the communication module (Figure 2D\u00a0and Figure 2\u2014figure supplement 1B\u2013E).\n\nInter-strand purine base stacking (here referred to as 'base stacking') can also contribute to the stability of A-form RNA duplexes (Egli, 2009). We observed in aptazymes with identical WHBS that base stacking in the communication module also affected BE in a position-dependent manner (Figure 2E and F). We thus amended WHBS to include a correction for base stacking. The resulting Weighted Hydrogen-bond and Stacking Score (WHSS) better correlates with rank order of aptazyme BE values than does WHBS or \u0394GCM\u00a0(Figure 2G\u00a0and Figure 2\u2014figure supplement 1C\u2013F). Notably, there is an inflection point in the BE values plotted in Figure 2G at WHSS of 6.7. At this value, the additional energy provided by the ligand-bound aptamer will have a large impact on the activation of the ribozyme and thus the aptazyme\u2019s dynamic range (Figure 2\u2014figure supplement 2B\u2013D). Indeed, when CDR is plotted against WHSS (Figure 2H), the highest CDRs were observed at WHSS values 6.75 (Tc15) and 6.92 (Tc12). Accordingly, we focused hereafter on communication-modules with WHSS values within the range of 6.7 \u00b1 0.3.\n\nWe also noted in this analysis two outliers, Tc31 and Tc32, both of which had CDR scores substantially lower than what their WHSS values would predict. This effect is due to a high LE rather than a lower-than-expected BE. Comparison of Tc31 and Tc32 with Tc11 indicates that the aptamer-proximal base pair accounts for their low CDR values (Figure 2I). Consistent with this, aptamers with WHSS values similar to Tc31 and Tc32, but with an aptamer-proximal A-U base pair, had higher CDR values (Figure 2J and K). Because a communication module with WHSS value around 6.7 tends to have lower annealing energy than the P1 stem of the original Tc aptamer, we speculated that an aptamer-proximal base pair with few hydrogen bonds lowers the affinity of the aptamer for its ligand. In addition, proximity of this base pair to the aptamer may subtly impair aptamer folding. We therefore used the base pair present in the original aptamer, or one with higher stability, in our subsequent efforts. When this final ad hoc principle was incorporated, aptazymes with WHSS values 6.7 \u00b1 0.3 had consistently higher CDRs than aptazymes outside of this range (Figure 2L).\n\n### Validation of design principles through development of four classes of efficient aptazymes\n\nTo test the utility of the basic design principles, we first generated Tc aptazymes with the same architecture as the test panel, but with 4 bp, 6 bp, or 7 bp communication modules (Figure 3A and Figure 3\u2014figure supplement 1A). All of these new aptazymes had WHSS values between 6.3 and 7.0, and their CDR values were all greater than 10 fold at 100 \u00b5M Tc (Figure 3B\u00a0and Figure 3\u2014figure supplement 1B), indicating that our rational approach is largely independent of communication-module length.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013D) Secondary structures of Tc-P1 (A) or Tc-P2 (C) aptazymes, varying in communication-module lengths and the stem to which the ribozyme is attached, are shown without their ribozyme domains. HeLa cells transiently transfected with plasmids expressing GLuc regulated by Tc-P1 (B) or Tc-P2 (D) aptazymes were cultured with 0, 3, 10, 30, or 100 \u00b5M of Tc for 2 days. GLuc secreted into the culture supernatant was measured by a luminescence assay, and CDRs were calculated as in Figure 1E. WHSS values for each aptazyme are shown above figures. () Secondary structure of a theophylline (Theo) aptazyme, with its ribozyme domain omitted. (F) Experiments similar to (B) except that HeLa cells transiently transfected with plasmids expressing GLuc regulated by Theo aptazymes were cultured with 0, 0.1, 0.3, 1.0, 3.0 mM theophylline for 2 days. WHSS values are shown above figure. (G) Secondary structure of a guanine (Gua) aptazyme, with ribozyme omitted. (H) Experiments similar to (B) except that 293T cells transiently transfected with plasmids expressing GLuc regulated by Gua aptazymes were cultured with 0, 7, 20, 60, or 180 \u00b5M of guanine for 1 day. WHSS values are shown above figure. BE, LE, and CDR values of all validation-panel aptazymes are available in Figure 3\u2014source data 1. (I) BE and LE of all aptazyme variants from the test panel and the four validation panels were plotted against WHSS of the corresponding variant. (J) CDRs of all aptazymes were similarly plotted against their WHSS values. (K\u2013M) Aptazymes with the highest CDRs from each class (olive) are compared to previously described aptazyme off-switches (white) with the highest reported dynamic ranges. Tc-P1 aptazyme Tc12 and Tc-P2 aptazyme Tc40 are compared to 9.19 (Wittmann and Suess, 2011) (K); Theo5 is compared to P1-F5 (Auslander et al., 2010) (L); and Gua3 aptazyme is compared to RzGuaM5 (Nomura et al., 2012) (M). (N) Tc40 is compared to a previously described aptazyme on-switch, 3\u2019K19 (Beilstein et al., 2015). Data shown are representative of two or three independent experiments. Data points in panels I and J represent mean of three biological replicates, and data points in remaining figures represent mean \u00b1 S.D. of three biological replicates.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Communication-module sequences of the validation-panel aptazymes tested in Figure 3. (B\u2013D) HeLa cells transiently transfected with plasmids expressing GLuc regulated by Tc-P1 (B), Tc-P2 (C), or Theo (D) validation-panel aptazymes were cultured with the indicated concentrations of tetracycline or theophylline for 2 days. GLuc secreted in the culture supernatant was measured by a luminescence assay. Luciferase expression levels were normalized to that of the CNTL control construct. (E) Experiments similar to (B) except that 293T cells transiently transfected with plasmids expressing GLuc regulated by Gua aptazymes were cultured with the indicated concentrations of guanine for 1 day. All data points represent mean \u00b1 S.D. Data shown are representative of two or three independent experiments.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Experiments similar to those shown in Figure 3\u2014figure supplement 1 were performed to measure the CDR of the indicated aptazymes. Tc-P1 aptazyme Tc12 and Tc-P2 aptazyme Tc40 are compared to 9.19 (Wittmann and Suess, 2011) (A); Theo5 is compared to P1-F5 (Auslander et al., 2010) (B); Gua3 aptazyme is compared to RzGuaM5 (Nomura et al., 2012) (C); and Tc40 is compared to the on-switch 3\u2019K19 (Beilstein et al., 2015) (D). All data points represent mean \u00b1 S.D. Data shown are representative of two or three independent experiments.\n\nWe then sought to determine if this basic heuristic was general to a wider range of aptazymes. We evaluated three more validation panels: (1) aptazymes using the same tetracycline aptamer, but fused at a different aptamer stem (Tc-P2 aptazymes), (2) aptazymes constructed using a theophylline aptamer (Theo aptazymes), and (3) aptazymes constructed with a guanine aptamer (Gua aptazymes). To date, all reported Tc aptazymes are fused at the aptamer P1 stem (Win and Smolke, 2007; Wittmann and Suess, 2011; Beilstein et al., 2015), but the structure of the Tc aptamer suggests that Tc-binding might have a larger effect on the P2 stem than the P1 stem (Xiao et al., 2008). We therefore explored variants of our Tc aptazymes in which the ribozyme was fused to the P2 stem of the Tc aptamer (Tc-P2 aptazymes; Figure 3C) rather than the P1 stem (Tc-P1 aptazymes; Figure 3A). All aptazymes except Tc39 and Tc44 exhibited high CDR (CDR \u2265 10 \u00b1 0.5, Figure 3D and Figure 3\u2014figure supplement 1C). Tc39 had a relatively low WHSS of 6.0, and Tc44 was intentionally designed with an aptamer-proximal A-U replacing the original G-C pair. Thus the basic principles developed with Tc-P1 aptazymes extend to a novel Tc-P2 aptazyme architecture. One of the Tc aptazymes with this alternative architecture, Tc40, outperformed all Tc-P1 aptazymes, and was used in subsequent studies. We then generated aptazymes constructed from entirely different aptamers, specifically those binding theophylline (Jenison et al., 1994) and guanine (Gua) (Mandal et al., 2003) (Figure 3E\u2013H and Figure 3\u2014figure supplement 1A,D, and E). In both cases, we could readily generate aptazymes of high CDR, establishing the modularity of our approach.\n\nFigure 3I plots the BE and LE of all the aptazymes against their WHSS values. Despite the diversity of these aptazymes, WHSS well predicted BE, consistent with our use of a common ribozyme, and the generality of our approach. Similarly, all aptazymes with high CDR had WHSS values near the region (WHSS 6.7 \u00b1 0.3; grey) found to be optimal in Figure 2H (Figure 3J). Finally, we directly compared our best Tc, Theo, and Gua aptazymes with previously described aptazyme off-switches with the highest reported dynamic ranges. Consistent with the original reports, Tc aptazyme 9.19 (Wittmann and Suess, 2011) showed no functionality in mammalian cells (Figure 3K), while both P1-F5 (Auslander et al., 2010) and RzGuaM5 (Nomura et al., 2012) showed a maximal dynamic range of approximately 5-fold (Figure 3L and M). In each case, our rationally designed aptazymes substantially outperformed these previously described aptazymes (Figure 3K\u2013M, and Figure 3\u2014figure supplement 2A\u2013C). We also directly compared our Tc40 off-switch with a previously described Tc aptazyme on-switch, 3\u2019K19 (Beilstein et al., 2015). Again Tc40 showed significantly higher CDR (19.6-fold at 100 \u00b5M Tc) than the CDR (6.6-fold at 100 \u00b5M Tc) of this previously described aptazyme (Figure 3N, and Figure 3\u2014figure supplement 2D).\n\n### Aptazyme-mediated control of transgene expression in mammalian cell culture and in vivo\n\nAs shown in Figure 3D, Tc40 exhibited the highest CDR of all Tc-regulated aptazymes. We generated a Tc40 variant, Tc45, in which ribozyme N107 is replaced by the closely related hammerhead ribozyme N117 (Yen et al., 2004). Tc40 or Tc45 were then inserted either upstream (5\u2032) or downstream (3\u2032) of the GLuc gene, as a single copy (Tc40-5\u2032, Tc40-3\u2032, Tc45-3\u2032), in tandem repeats (Tc40-5\u20325\u2032, Tc45-3\u20323\u2032), or across the GLuc gene (Tc40\u00d745) (Figure 4A). We observed in transiently transfected cells that Tc45-3\u2032 has a lower CDR than Tc40-3\u2032, but a higher BE, advantageous when aptazymes are used in tandem (Figure 4B). When these aptazymes were combined, with Tc40 placed 5\u2032 of the GLuc reporter and Tc45 placed 3\u2032, the resulting construct (Tc40\u00d745) provided a 44-fold CDR with a 41% BE. We then measured regulation of GLuc in cells generated by retroviral transduction. Again, Tc40\u00d745 exhibited a wider dynamic range than either Tc40-3\u2032 or Tc45-3\u2032 (Figure 4C) and the regulation observed was completely reversed when Tc was withdrawn (Figure 4D). Tc40\u00d745 also showed efficient regulation when GLuc was replaced with a destabilized green fluorescent protein (Figure 4E and Figure 4\u2014figure supplement 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig4-v2.jpg)\n\n**Figure 4.:** (A) A representation of the reporter constructs tested. Tc40 (red) or Tc45 (orange) were inserted either upstream (5\u2032) or downstream (3\u2032) of the GLuc gene (filled blue box), either as a single copy (Tc40-5\u2032, Tc40-3\u2032, or Tc45-3'), in tandem repeats (Tc40-5\u20325\u2032 or Tc45-3\u20323\u2032), or across the Gluc gene (Tc40\u00d745). (B) Plasmids containing the Tc variants represented in (A) were tested by transient transfection. Transfected HeLa cells were cultured with 0, 3, 10, 30, or 100 \u00b5M Tc for 2 days. Secreted GLuc in the culture supernatant was measured by a luminescence assay. Luciferase expression levels are normalized to that of the CNTL control construct. BE and CDR at 100 \u00b5M Tc are shown above the figure. (C) HeLa cells were transduced with murine-leukemia virus (MLV) vectors expressing GLuc genes regulated by the indicated Tc aptazyme variants and selected by puromycin. Stably transduced cells were cultured with the indicated concentrations of Tc for 48\u2009hr. Secreted GLuc in the supernatants was measured by luminescence assay. Luciferase expression level was normalized to that observed without Tc. CDR at 100 \u00b5M Tc is indicated with brackets at the right. (D) Stable cells characterized in (C) were cultured in 100 \u00b5M Tc for 72\u2009hr. Tc was then withdrawn and the cells were cultured for an additional 72\u2009hr. Cell culture supernatants were collected and replaced with fresh medium every 12\u2009hr. Secreted GLuc in the supernatants was measured by luminescence assay. Luciferase expression levels at each time point were normalized to those observed before Tc was added. CDR observed at 72 hr for each aptazyme variant is indicated. (E) Assays similar to those in (C) except that a destabilized enhanced green fluorescent protein (GFP) was used as a reporter, and flow cytometry was used to measure expression. CDR at 100 \u00b5M Tc is indicated with brackets. Data shown are representative of two or three independent experiments. Data points in panels B\u2013D represent mean \u00b1 S.D. of three biological replicates. Data points in panel E are representative of three biological replicates.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** HeLa cells were transduced with MLV vectors expressing a destabilized enhanced green fluorescent protein (GFP) gene regulated by Tc40\u00d745 or without any aptazymes (CNTL), and selected by puromycin. Stably transduced cells were cultured with the indicated concentration of Tc for 2 days. GFP expression was monitored by fluorescence microscopy at 400\u00d7 magnification.\n\nWe also introduced Tc40-3\u2032, Tc45-3\u2032, and Tc40\u00d745 into an AAV vector expressing Gluc, where these aptazymes worked as effectively as in transient transfection or retroviral transduction studies (Figure 5A), suggesting that they may be useful to gene-therapy applications. In this context, Tc40-3\u2032 worked nearly as effectively as Tc40\u00d745. We therefore assayed the ability of Tc40-3\u2032 to regulate AAV-mediated expression of human coagulation factor IX and etanercept (Enbrel), a fusion of a TNF-receptor ectodomain and the human IgG1 Fc domain (Mohler et al., 1993). Factor IX and etanercept proteins are currently used to treat hemophilia B and rheumatoid arthritis, respectively, and both of these biologics are being assessed as AAV transgenes in clinical trials (Evans et al., 2008; Nathwani et al., 2014). In both cases, their expression was dramatically reduced by 30 \u00b5M Tc (Figure 5B and C), a concentration that is well tolerated clinically and readily achievable with oral administration (Agwuh and MacGowan, 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig5-v2.jpg)\n\n**Figure 5.:** (A) HeLa cells were transduced with AAV vectors expressing GLuc regulated by the indicated aptazymes and were cultured with the indicated concentrations of Tc for two days post-transduction. Luciferase expression level was normalized to that observed without Tc. CDR for Tc40-3\u2032 and Tc40\u00d745 is indicated above the figure. (B) HeLa cells were transduced with an AAV vector expressing human coagulation factor IX regulated (right panel) or not (left panel) by Tc40-3\u2032. Cells were then incubated in presence (red) or absence (blue) of 30 \u00b5M Tc for two days and analyzed by flow cytometry using intracellular staining with an anti-human factor IX antibody. Grey indicates parental HeLa cells stained with the same antibody. CDR is indicated in the upper right corner of the panels. (C) An experiment similar to that in (B) except that cells were transduced with an AAV vector expressing etanercept (Enbrel), and stained with an anti-human IgG1 Fc antibody. (D) Fourteen 9-week old female BALB/c mice were injected with 1011 genome copies of AAV particles carrying GLuc gene regulated (Tc40\u00d745, seven mice) or not (CNTL, seven mice) by Tc40\u00d745 into the left gastrocnemius muscle. All mice were treated for 3 days with Tc (250 mg/kg) or phosphate-buffered saline (PBS) two weeks post-injection, and imaged for luciferase expression using the Xenogen IVIS In-Vivo Imager. (E) Bioluminescent photon outputs of all the imaged mice were analyzed using the Living Image Software. Relative luciferase expression was calculated as the percentage of bioluminescent photon output relative to the average photon output of PBS-treated mice injected with same AAV vector. Each point represents one mouse, and bars indicate the average expression level for each treatment group. Average fold changes of the luciferase expression between Tc- and PBS-treated groups are indicated. Numbers in the parentheses are the fold regulation of individual Tc-treated mice injected with Tc40\u00d745-regulated vector. Differences between Tc- and PBS-treated groups were significant (two-sided t-test, p<0.0001) in mice injected with the Tc40\u00d745-regulated vector, whereas differences in the control mice were not significant (two-sided t-test, p>0.05). Data shown in (A\u2013D) are representative of two or three independent experiments. Data points in panel A represent mean \u00b1 S.D. of three biological replicates. Data points in panel B and C are representative of three biological replicates.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18858/elife-18858-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Male 5-week old BALB/c mice were injected into the left gastrocnemius muscle with AAV particles carrying GLuc gene regulated (right panel, 1011 genome copies per mouse) or not (left panel, 3\u00a0\u00d7\u00a01010 genome copies per mouse) by Tc40\u00d745. Ten days post injection, mice were imaged for luciferase expression using the Xenogen IVIS In-Vivo Imager. Two weeks after injection, mice were treated for 4 days with tetracycline or phosphate-buffered saline (PBS) as indicated. Mice were then imaged for luciferase expression using the In-Vivo Imager.\n\nWe further sought to determine whether AAV transgene expression could be regulated by these aptayzmes in vivo. We prepared high-titer recombinant AAV1 viruses carrying the GLuc gene regulated or not by Tc40\u00d745. These two vectors were then injected into the gastrocnemius muscle of BALB/c mice. Two in vivo\u00a0studies were performed. In the first, ten male mice were injected with a Tc40\u00d745-regulated or control vector, and imaged for luciferase expression on day 10 post injection. Mice were then treated four days later with tetracycline (250 mg/kg) or phosphate-buffered saline (PBS) for four days, and again imaged. All mice injected with control or Tc40\u00d745-regulated vectors exhibited robust luciferase expression in the gastrocnemius muscle, and Tc treatment significantly reduced luciferase expression in the Tc40\u00d745 mice but not the control mice (Figure 5\u2014figure supplement 1). In a second experiment, fourteen female mice were again injected with a Tc40\u00d745-regulated or control vector. Two weeks after injection, the mice were treated for three days with tetracycline or PBS, and imaged (Figure 5D). Combining both studies, we obtained an average dynamic range of 6.9-fold in vivo\u00a0(Figure 5E), lower than that observed in tissue culture cell lines. We speculate that this difference is due to the high metabolism of tetracycline in mice (Sizemore et al., 2002; Agwuh and MacGowan, 2006), and inefficient access of tetracycline to AAV1-transduced muscle cells (Bocker et al., 1984). Ribozyme based control of AAV-transgene expression in mice has been reported (Yen et al., 2004), however this switch control is possibly mediated by direct incorporation of the regulatory drug toyocamycin into the ribozyme RNA (Yen et al., 2006). Therefore, our data present the first example of aptazyme-mediated regulation in primary animal tissues in vivo.\n\n## Discussion\n\nAptazymes have the potential to be useful in a number of important scientific and medical applications. For example, they afford simple and immediate regulation of gene expression in cell biology studies. In addition, aptazymes can be introduced by CRISPR/Cas9 into an untranslated region of an exon to exogenously control endogenous genes in their native contexts. They also have the potential to transform gene therapy, allowing controlled dosing of a biologic with a well tolerated drug (Figure 5A\u2013C). In these applications, aptazymes have several key strengths. First, they are smaller than most other gene-regulation systems, typically less than 200 base pairs. They therefore can be easily included in gene therapy vectors such as AAV with limited space for additional genes. Second, in contrast to transcription factor-dependent systems like Tet-Off (Gossen and Bujard, 1992), aptazyme-mediated regulation does not require an immunogenic non-self protein. Third, aptazymes cleave in cis, and only the message bearing an aptazyme is affected. They are therefore highly specific, with few off-target effects. Finally, as we show here, they can be tailored to different aptamers regulated by different ligands, including those shown to be safe in humans.\n\nHere we describe a straightforward method for converting aptamers into aptazymes with wide dynamic ranges in mammalian cells. We began with several straightforward and intuitive principles. For example, a communication module that anneals with too high overall energy will induce premature auto-activation of the ribozyme, even when the aptamer is unbound. In contrast, a communication module that is unstable will not convey the state of the aptamer to the ribozyme. However, between these limiting cases, we found that the communication-module annealing energy correlated poorly with an aptazyme\u2019s dynamic range (Figure 2A and Figure 2\u2014figure supplement 1A and C). As shown here, the reason for this poor correlation is that base pairs proximal to the ribozyme have a disproportionate impact on the ribozyme\u2019s enzymatic activity. Any energy-like function describing the impact of the communication module on the ribozyme should therefore take into account the distance of communication-module bases to ribozyme. Accordingly, we developed a scoring function, WHSS, based on the weighted sum of hydrogen bonds and inter-strand base-stacking interactions. This function accurately predicted the rank order of the BE of a test panel of 32 aptazymes (Figure 2G and Figure 2\u2014figure supplement 1F), and was validated with 21 newly designed aptazymes (Figure 3I). Critically, when BE was plotted against WHSS, an inflection point was observed in the vicinity of a WHSS value of 6.7. As the WHSS values increased after this point, the BE of aptazymes rapidly decreased (Figure 2G). At this inflection point, then, additional energy provide by the ligand-bound aptamer has a greater impact on aptazyme activity and therefore its dynamic range (Figure 2\u2014figure supplement 2C and D). Thus, in most cases, aptazymes with WHSS values near 6.7 exhibited relatively high CDRs (Figure 2H and L). We also observed that communication-module bases immediately adjacent to the aptamer affected CDR independently of WHSS (Figure 2I\u2013K), likely due to their effect on ligand affinity.\n\nImportantly, we show that this approach is general. For example, it has allowed us to develop tetracycline-regulated aptazymes with two different architectures. These aptazymes exhibited high levels of basal expression and dynamic ranges wider than any previously described aptazymes (Wittmann and Suess, 2011; Beilstein et al., 2015). To underscore the modularity of this approach, we also developed aptazymes regulated by two additional ligands, theophylline and guanine. In both cases, the newly developed aptazymes again significantly outperformed all previously described aptazymes (Auslander et al., 2010; Nomura et al., 2012). These data suggest that any aptamer which anneals an accessible stem region upon ligand binding would likely be convertible to an efficient aptazyme off-switch. Ligand-aptamer binding-induced stem formation or stabilization could also be used to develop aptazyme on-switches. For example, an on-switch could use ligand-induced stem formation or stabilization to hide the hammerhead-ribozyme loop II or bulge I sequences important to ribozyme activity (De la Pe\u00f1a et al., 2003; Khvorova et al., 2003; Martick and Scott, 2006; Win and Smolke, 2007; Beilstein et al., 2015). Our empirical approach may therefore be used to establish WHSS-like scoring functions for generating aptazyme on-switches. Thus this study provides a general rational-design method for rapidly converting diverse aptamers into aptazymes with wide regulatory ranges in mammalian cells.\n\n## Materials and methods\n\n### Plasmids\n\nDNA fragments encoding aptazyme variants were synthesized by Integrated DNA Technologies (IDT,\u00a0Coralville,\u00a0IA). The reporter plasmids used in transient transfection and retroviral vector transduction assays were constructed by ligating a Gaussia luciferase (GLuc) or destabilized green fluorescent protein (GFP) reporter-gene and one or two aptazyme-encoding fragments into the pQCXIP vector plasmid (Clontech, Mountain View, CA) or pcDNA3.1(+) plasmid (Thermo Fisher Scientific,\u00a0Waltham,\u00a0MA). AAV vector plasmids bearing various aptazyme elements were constructed from the pAAV-MCS plasmid (Agilent Technologies, Santa Clara, CA).\n\n### Cell culture\n\nHuman embryonic kidney 293T (RRID:CVCL_0063) and human cervical carcinoma HeLa (RRID:CVCL_0030) cells were maintained in Dulbecco's Modified Eagle Medium (DMEM, Life Technologies) at 37\u00b0C in a 5% CO2-humidified incubator. All growth media were supplemented with 2\u2009mM Glutamax-I (Life Technologies,\u00a0Carlsbad,\u00a0CA), 100 \u00b5M non-essential amino acids (Life Technologies), 100\u2009U/mL penicillin and 100 \u00b5g/mL streptomycin (Life Technologies), and 10% tetracycline-free FBS (Clontech).\n\n### Measurement of aptazyme-regulated gene expression in transiently transfected cells\n\nHeLa or 293T cells seeded in 48-well plate with antibiotic-free growth medium were transfected with 6.25 ng of aptazyme-regulated GLuc expression plasmids using 0.3 \u00b5L Lipofectamine 2000 (Life Technologies). Three hours later, medium was removed and fresh growth medium containing 2% FBS was added. After an additional three hours, culture medium was changed to induction medium containing varying concentrations of tetracycline, theophylline, or guanine (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO). Induction medium was replenished daily. One or two days after transfection, GLuc secreted into the supernatant was measured using a luminescence assay. All studies measuring the dynamic range of aptazyme variants were corrected for non-specific effects of tetracycline, theophylline, or guanine by dividing the ligand-induced fold change in aptazyme-regulated gene expression by the fold change observed in a control construct lacking any switch elements.\n\n### Luminescence assay\n\nTo measure GLuc expression, 20 \u00b5L of cell culture supernatant of each sample and 100 \u00b5L of GLuc assay buffer were added to one well of a 96-well black opaque assay plate (Corning,\u00a0Corning,\u00a0NY), and measured with a multi-label plate reader (PerkinElmer,\u00a0Waltham,\u00a0MA). GLuc assay buffer consists of 7.5\u2009mM sodium acetate, 250\u2009mM sodium sulfate, 250\u2009mM sodium chloride, and 4 \u00b5M coelenterazine native (Biosynth Chemistry & Biology,\u00a0Staad,\u00a0Switzerland) at pH 5.0.\n\n### Calculation of communication-module scores\n\nWe calculated annealing energy of the communication modules (\u0394GCM) using the online utility RNAstructure Web Server (Bellaousov et al., 2013). We also counted the number of potential hydrogen bonds (HBN) formed in the communication module. Both values correlated poorly with basal expression (BE). Specifically, Spearman\u2019s rank correlation coefficient (\u03c1) (Zar, 1998) was \u22120.64 for \u0394GCM and \u22120.80 for HBN (Figure 2\u2014figure supplement 1). We observed that hydrogen bond interactions from every communication-module base pair contributed to basal expression (BE), but that the location of these hydrogen bonds relative to the ribozyme determined the scale of this contribution (Figure 2B and C). Accordingly, we assigned every communication-module base pair an empirically determined weight reflecting its proximity to the ribozyme, and multiplied this weight by the number of hydrogen bonds to assign a Weighted Hydrogen Bond Score (WHBS). Specifically, we observed a Spearman\u2019s rank correlation coefficient of \u22120.91 when the ribozyme-proximal starting base pair (A-U) was assigned a weight of 1.0, and the subsequent base pairs were sequentially assigned weights of 5/6, 4/6, 3/6, and 2/6 (Figure 2\u2014figure supplement 1). When longer communication modules were considered, bases 6, 7, 8, and 9 were assigned weights of 1/6, 5/36, 4/36, and 3/36, respectively. We also observed that inter-strand purine base stacking in the communication module also affected BE in a position-dependent manner (Figure 2E and F). We thus added a weighted sum of base-stacking interactions to the WHBS to calculate a Weighted Hydrogen-bond and Stacking Score (WHSS) for each aptazyme. The relative energy of a hydrogen bond and an RNA base-stacking interaction remains undefined (Egli, 2009; Johnson et al., 2011; \u0160poner et al., 2012). However, when potential inter-strand purine base-stacking interactions were assigned one half (G-G) or one quarter (A-A, A-G) of a hydrogen bond, we observed an optimal rank-order correlation (\u03c1=\u22120.94) between WHSS and BE (Figure 2\u2014figure supplement 1). Calculated \u0394GCM, HBN, WHBS, and WHSS values for all aptayzmes are presented in Figure 2\u2014source data\u00a01 and Figure 3\u2014source data 1.\n\n### Production of retroviral and adeno-associated virus (AAV) vectors\n\n293T cells plated at 70% confluence in T75 culture flasks were transfected using CalPhos transfection kit (Clontech) with different virus packaging plasmids. To produce pseudotyped murine leukemia viral (MLV) particles, cells were transfected with 10 \u00b5g of plasmid encoding the Machupo virus (MACV) envelope glycoprotein GP, 15 \u00b5g of plasmid encoding MLV Gag and Pol proteins, and 15 \u00b5g of pQCXIP-based plasmids encoding various aptazyme-regulated GFP or GLuc genes. Forty-eight hours after transfection, culture supernatants were harvested and filtered through 0.45 \u00b5m filters. AAV particles were produced by transfecting cells with 13 \u00b5g of plasmid encoding AAV replication and capsid proteins, 13 \u00b5g of plasmid encoding helper proteins, and 13 \u00b5g of pAAV-MCS-based plasmids encoding aptazyme-regulated GLuc, etanercept, or factor IX. Sixty to seventy-two hours post-transfection, culture supernatants were harvested and filtered through 0.45 \u00b5m filters.\n\n### Measurement of aptazyme-regulated gene expression in stable cells\n\nHeLa cells transduced with pseudotyped MLV were selected with growth medium containing 4 \u00b5g/mL puromycin (Life Technologies) to generate aptazyme-regulated GLuc- or GFP-stable cells. Stable cells were then plated in 96-well plates to assay expression of GLuc or GFP in the presence of varying concentrations of tetracycline. Two days later, reporter expression was measured using luminescence assay or fluorescence microscopy. For time-course experiments, GLuc stable cells were cultured in the presence of 100 \u00b5M tetracycline for 3 days, and in the absence of tetracycline for an additional 3 days. Every 12\u2009hr, supernatant was removed and replaced with fresh medium and GLuc expression was measured.\n\n### Measurement of aptazyme-regulated gene expression in AAV transduced cells\n\nHeLa cells plated in 96-well plates were transduced with 1\u00d7109 genome copies of AAV particles. Four hours post-transduction, viral supernatant was removed and growth medium containing 2% FBS was added. Culture medium was replaced with induction medium containing varying concentrations of tetracycline 8 and 16\u2009hr post-transduction. Two days post-transduction, target gene expression was measured using luminescence assay or flow cytometry.\n\n### Immunofluorescence staining\n\nTo measure etanercept or human coagulation factor IX protein expression, AAV- or mock-transduced cells were trypsinized, fixed with 1% paraformaldehyde (Sigma) for 30 min on ice, permeabilized and blocked for 30 min on ice with a buffer containing 0.1% saponin (Sigma) and 3% bovine serum albumin (bioWORLD,\u00a0Irving,\u00a0TX). For etanercept staining, cells were incubated with 5 \u00b5g/mL Alexa Fluor 488-conjugated goat anti-human IgG Fc (Jackson ImmunoResearch Labs, West Grove, PA; Cat. No. 109545098, RRID:AB_2337840) for 30 min at room temperature. For factor IX staining, cells were sequentially incubated with 5 \u00b5g/mL mouse anti-human factor IX monoclonal antibody, (Haematologic Technologies Inc, Cat. No. AHIX-5041, RRID:AB_2629498) for 1\u2009hr at room temperature, and 5 \u00b5g/mL Alexa Fluor 488-conjugated goat anti-mouse IgG (Jackson ImmunoResearch Labs, Cat. No. 115545071, RRID:AB_2338847) for 30 min at room temperature. Stained cells were analyzed using BD Accuri flow cytometer and BD CSampler software (BD Biosciences, San Jose, CA). Mock-transduced cells stained with corresponding antibodies were used as negative controls.\n\n### Measurement of aptazyme-regulated gene expression in mice\n\nTwelve 5-week old male and sixteen 9-week old female BALB/c mice (Charles River Laboratories, strain code 028, RRID: MGI:2683685) were randomly separated into weight-matched groups without blinding, and injected in the left gastrocnemius muscle with 20 \u00b5L of purified AAV particles (3\u00a0\u00d7\u00a01010 or 1011 genome copies per mice) carrying GLuc gene regulated or not by Tc40\u00d745 switch elements. Ten days post-injection, male mice were imaged for luciferase expression using the Xenogen IVIS In-Vivo Imager (PerkinElmer). Two weeks post-injection, mice were intraperitoneally injected with tetracycline at 250 mg/kg per day or with phosphate-buffered saline (PBS) for three (female) or four (male) days. Two male mice and two female mice that rapidly lost more than 15% of their body weight were eliminated from the study. The remaining ten male mice and fourteen female mice were then imaged for luciferase expression using the In-Vivo Imager.\n\n### In vivo bioluminescent imaging\n\nPrior to imaging, the mice were anesthetized with isoflurane, then intramuscularly injected with 100 \u00b5g of 'Inject-A-Lume' Gaussia luciferase substrate (Nanolight Technology,\u00a0Pinetop,\u00a0AZ), and returned to their cages for recovery. Fifteen minutes after substrate injection, mice were anesthetized again and imaged for bioluminescence using the IVIS In-Vivo Imager (Xenogen, Alameda, CA). Bioluminescent photon outputs of different images were normalized and quantified using the Living Image Software. Tc-induced fold changes of the luciferase expression were calculated by dividing the photon output of each Tc-treated mouse by the average photon output of PBS-treated mice injected with same vector. Two-sided t-test was performed to analyze the statistical significance of the expression difference between Tc- and PBS-treated groups. All mice studies were performed in accordance with the Scripps Florida Institutional Animal Care and Use Committee animal use protocol number 14\u2013028.\n",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "683c5ec3-337c-4402-aa08-0d733301f797",
+      "submission_id": "847b6f95-3eaf-4d53-8079-90d250a51cd8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald Breaker, Yale University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18858.017](https://doi.org/10.7554/eLife.18858.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Rational design of aptazyme riboswitches for efficient control of gene expression in mammalian cells\" for consideration by eLife. Your article has been favorably evaluated by Randy Schekman (Senior Editor) and three reviewers, one of whom, Ronald Breaker (Reviewer #1) served as Guest Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nDr. Farzan and coworkers have presented a general method for the rapid and efficient development of ligand-responsive RNA genetic switches that can be used to regulate gene expression in mammalian cells. The authors use a novel intellectual framework to guide the engineering of unique linker sequences or communication modules between ligand-binding aptamer domains and self-cleaving ribozymes. By synthesizing and testing a series of RNA constructs, the authors generate a set of empirical data that reveals the importance of hydrogen bond number, base stacking, and distance between key RNA structures to functional switch outcomes. For successful switches, the binding of a corresponding ligand to the aptamer domain alters ribozyme function at a level sufficient to substantially affect expression from mRNAs carrying the engineered RNAs. The engineering approach is demonstrated to apply to multiple different aptamer domains, suggesting that the design principles be applicable to a large diversity of additional RNA domains. The concepts and methods presented in this work should permit others to create novel types of engineered riboswitches for practical applications.\n\nEssential revisions:\n\n1) The authors should consider making a more appropriate comparison between their RNA switches and the mammalian Tc switches created by Suess and coworkers.\n\nReviewer #1:\n\nThis manuscript by Zhong et al. and Farzan provides convincing support for an exciting strategy to create RNA switches or 'aptazyme riboswitches' that work inside mammalian cells. The ability to control gene expression in a precise manner has been a long-sought goal by a number of laboratories, as various applications can be envisioned. As examples, the capability to create new switches quickly would allow researchers to more easily artificially regulate, and thereby study, numerous biological systems, and synthetic biologists would have a versatile set of gene control tools with which to create new regulatory networks. Moreover, there will be opportunities to use engineered RNA switches for future gene therapy applications.\n\nIn the current study, the authors have used an empirical approach to create an apparently powerful intellectual framework that yields novel switches that respond to several small molecules. Using their \"Weighted Hydrogen-bond and Stacking Score\" or WHSS, they demonstrate that each communication module made exhibits a predictable value for basal gene expression, ligand-inhibited expression, and corrected dynamic range. Perhaps future researchers will add additional biophysical rigor to understand precisely how this approach works at atomic resolution. However, it seems very likely that the authors have made an excellent technical advance for this field, and I do not think this work should suffer publication delays until all this is better understood. The success of their WHSS system plus the ad hoc retention of the aptamer-proximal base-pair is remarkable. Simply put, it seems likely that other researchers can easily adopt the strategy described by the authors to create novel RNA switches that work well in cells. I have only two very minor comments:\n\n1. In Figure 2 and elsewhere, the authors should consider annotating a 5' terminus of the sequences depicted just to ensure that the readers maintain the right orientation.\n\n2. The references are not entirely in the style of the journal and these should be edited accordingly.\n\nReviewer #2:\n\nFarzan and co-workers present a novel algorithm for the rational design of communication modules of ligand-responsive ribozymes. It takes into account additional parameters that allow for designing switches with better performances. The obtained responses with tetracyclin-dependent HHR systems in human cell culture are very impressive. Moreover, they demonstrate that the approach can be extended to theophylline- and guanine-dependent systems and that in these cases also improved performances are obtained. In addition, they demonstrate the application of tetracycline-dependent switches in AAV-mediated transgene expression in mice. This part is especially interesting since it demonstrates a principle applicability of aptazymes as switches in gene therapy applications. Taken together I can support acceptance for eLife given that the following (in some cases major) issues are appropriately addressed:\n\nIn general, the comparison of performances of artificial riboswitches is difficult because different expression systems etc. are often compared. On the other hand, in order to demonstrate the power of the approach such comparisons are necessary. However, in the present case the authors compare their Tc switches with the performance of an HHR-based switch by Wittmann and Suess. This switch has been engineered to function in yeast, however for comparison it is utilized in mammalian cells. It is reported that the switch is not working under these conditions; this is also why Suess and coworkers engineered Tc switches in mammalian cells which function very nicely as ON-switches. Hence the comparison is not valid and without further comment very unjustified sheds doubt on the work of Suess and co-workers. Why not compare the ON-switches with the present Tc switches? It is the dynamic range that defines the performance, even if the switching mode is opposite.\n\nAlso, regarding the comparison of performances, two more ribozyme-based switches are compared (guanine and theophylline). More background information should be given here. For example, it is unclear how exactly these previously reported ribozymes were tested. Sequences and how they were inserted into the reporter mRNAs should be provided. Or are the values shown in Figure 3K-M adopted from the literature?\n\nMeasurement of gene expression: When quantifying gene expression in mammalian cell culture, it is good practice to use dual luciferase systems in order to correct for transfection efficiency etc. The authors present all their results using just one reporter without a suited control. Is this a problem? To be discussed with the other reviewers.\n\nLimitation of the design algorithm: The algorithm seems to work nicely, however it only allows designing OFF-switches since it works via computing solutions for stabilization of the aptazyme structure upon ligand binding. The design of ON-switches required other designs. This aspect should at least be discussed.\n\nThe AAV-mediated transgene expression in mice is very impressive; however, ligand-dependent ribozymes have been utilized before in mice for controlling gene expression by Mulligan and co-workers. Although that work is limited and the present work extends this concept very nicely, the mentioned work needs to be discussed appropriately. The respective publication (Yen et al., Nature, 2004) is mentioned briefly in the Introduction and later in a technical context but it is not discussed with regard to transgene expression in a mammalian organism.\n\nIn the last sentence, the authors state that \"Thus this study provides a robust rational-design method for rapidly converting diverse aptamers into aptazymes with wide regulatory ranges in mammalian cells.\" Since no new ligand selectivity has been demonstrated, this sentence is too optimistic. Only three known ligand-responsive systems have been optimized.\n\nReviewer #3:\n\nZhong et al. describe a clear and systematic study describing the engineering of aptamers into aptazymes to modulate gene expression in mammalian cells. This work builds off seminal papers describing riboswitches and aptazymes (Breaker lab) and earlier engineering of hammerhead ribozymes in mammalian cells (Mulligan lab) to establish important design principles across the different RNA modules (i.e., communication module, aptamer, ribozyme) to quantitatively characterize the key determinants that govern basal expression, ligand inhibition and dynamic range of their engineered aptazymes. Specifically, the authors elucidate the impact of the number of hydrogen bonds (as opposed to \u03b4-G) and the distance of communication-module bases to ribozyme have on basal expression and dynamic range of the aptazyme switches. This allowed the authors to develop a scoring function (WHSS) to predict the basal expression of 32 aptazymes that was subsequently validated with 21 newly designed aptazymes. Notably, the authors applied their findings to develop aptazymes of different architectures and for two additional ligands (theophylline and guanine). The systematic and exhaustive suite of aptazyme variants coupled by their detailed characterization is an important strength of this manuscript and a necessary and welcome step in this field. Finally, the authors describe an impressive demonstration of aptazyme-mediated gene regulation in a mouse model. Overall, I think the paper is clear and describes a rigorous set of experiments to support the key results and conclusions of the manuscript. I only have a few minor points that I encourage the authors to pursue before publication in eLife:\n\n1. Subsection \u201cValidation of design principles through development of four classes of efficient aptazymes\u201d and Figure 3D \u2013 dynamic range for CDR seems arbitrarily defined. I encourage the authors to establish quantitative bounds for low-medium-high CDR. I also think the authors have a typo \u2013 did they intend to refer to Tc44 rather than Tc43?\n\n2. In the first paragraph of the Discussion, the authors propose introducing aptazymes via CRISPR/cas9 into precise positions in the genome. Given some of the specificity constraints via PAM sites and the potential for off-target affects or mutagenic activity of NHEJ, do the authors have a citation that reports such a capability or their own data to support this statement? Achieving this level of precision via CRISPR/cas9 could be quite challenging and worthy pursuit.\n\n3. To what extent was the dosing required to achieve the observed (6.9-fold) switch-like behavior toxic to the animal? Commenting on this would be helpful in actualizing some of the discussion points associated with safe gene therapy applications currently described in the first paragraph of the Discussion.\n\n4. In my opinion, I recommend changing the order of the Discussion points. Specifically, many points in the first paragraph are better suited in the last paragraph of the Discussion and preceded by discussion points (currently second-third paragraphs of the Discussion) that are more central to the key findings of this study.\n\n5. Although the authors demonstrate the ability to engineer aptazyme behavior with three commonly used ligands and associated aptamers, I think it would strengthen the paper and the authors' claims of broad applicability for the authors to comment on other ligand-aptamer pairs that they attempted and similarly how they envision adapting their programmable strategy for other ligands that may not yet have existing aptamers, highlighting challenges.\n",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c3c4213-fbbc-4b17-bf98-addb17e77ecd",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C1",
+      "claim": "Ligand-responsive cis-acting riboswitches function independently of protein factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligand-responsive cis-acting riboswitches (Breaker, 2012) function independently of protein factors and can be programmed to respond to a wide range of small-molecule ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "90da5b95-bf4c-4e8b-bd19-3cc15d6199ce",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C2",
+      "claim": "Ligand-responsive cis-acting riboswitches can be programmed to respond to a wide range of small-molecule ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligand-responsive cis-acting riboswitches (Breaker, 2012) function independently of protein factors and can be programmed to respond to a wide range of small-molecule ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9c504bf4-4fa9-4f11-9345-e9cf39828471",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C3",
+      "claim": "Aptazymes are a class of engineered riboswitches that control gene expression by small molecule-induced self-cleavage of a ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Aptazymes are a class of engineered riboswitches that control gene expression by small molecule-induced self-cleavage of a ribozyme (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the introduction and illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "271a5a7a-1ad2-4068-b1e9-51673f4a3ea0",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C4",
+      "claim": "The first aptazyme was developed by the Breaker group by fusing an ATP binding aptamer with a minimal hammerhead ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The first aptazyme was developed by the Breaker group (Tang and Breaker, 1997) by fusing an ATP binding aptamer with a minimal hammerhead ribozyme (Scott et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9363586a-da93-4889-a4b0-1e3e26111fef",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C5",
+      "claim": "The first aptazyme was functional only in cell-free systems.",
+      "claim_type": "EXPLICIT",
+      "source": "This aptazyme was functional only in cell-free systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction following the description of the first aptazyme.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "161aa9ba-b057-4630-a1f4-5d88c99c4ef9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C6",
+      "claim": "Tertiary interaction exists between stems I and II of the full-length hammerhead ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of tertiary interaction between stems I and II of the full-length hammerhead ribozyme (De la Pe\u00f1a et al., 2003; Khvorova et al., 2003; Martick and Scott, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "df99152c-63a2-4acd-927c-e1348cd4385c",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C7",
+      "claim": "Optimized hammerhead ribozymes are efficient in mammalian cell culture and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "the development of optimized hammerhead ribozymes efficient in mammalian cell culture and in vivo (Yen et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "45a3bc38-8df0-4364-879d-0be463827d79",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C8",
+      "claim": "Hammerhead ribozyme-based aptazymes have been developed that are functional in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "led to the development of hammerhead ribozyme-based aptazymes functional in yeast (Win and Smolke, 2007; Wittmann and Suess, 2011; Klauser et al., 2015; Townshend et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6eeab20e-69ee-4665-a50c-ec9c5cddfc1b",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C9",
+      "claim": "Hammerhead ribozyme-based aptazymes have been developed that are functional in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "or mammalian cells (Kumar et al., 2009; Auslander et al., 2010; Nomura et al., 2012; Wei et al., 2013; Beilstein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "7c0f203c-ac66-466b-8df0-961682bb9809",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C10",
+      "claim": "Aptazymes have been tested for construction of synthetic gene networks in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These aptazymes have been tested for a range of applications, including construction of synthetic gene networks in yeast (Win and Smolke, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "e61a150c-6232-46df-88cd-c8f5dddc86a7",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C11",
+      "claim": "Aptazymes have been tested for regulation of transgene expression in mammalian cell culture.",
+      "claim_type": "EXPLICIT",
+      "source": "and regulation of transgene expression (Ketzer et al., 2012) or virus replication (Ketzer et al., 2014) in mammalian cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "641b3fe1-7b70-425e-bc53-6e1e650bd6cd",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C12",
+      "claim": "A theophylline-regulated aptazyme with a narrow dynamic range has been shown to control proliferation of transduced T cell lines in mice using IL-2-based positive-feedback signal amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Using IL-2-based positive-feedback signal amplification, a theophylline-regulated aptazyme with a narrow dynamic range has been shown to control proliferation of transduced T cell lines in mice (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "88062585-1c3d-40f8-85b7-07f9407d4c68",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C13",
+      "claim": "No aptazyme has been described to control gene expression in primary animal cells in vivo prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, no aptazyme has been described to control gene expression in primary animal cells in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction as a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "906b7731-bfbb-464e-856f-8e36b793b60e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C14",
+      "claim": "Aptazymes obtained from in vitro allosteric selection function in cell-free conditions but not in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro allosteric selection has been used to generate aptazymes in a high-throughput and massively parallel format (Koizumi et al., 1999), but aptazymes identified in this way function in cell-free conditions but not in mammalian cells (Link et al., 2007; Wittmann and Suess, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "b1cc2a2d-dba3-4eca-8e56-4afc5e37022e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C15",
+      "claim": "Aptazymes obtained from bacterial screens function efficiently in bacteria but poorly in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, aptazymes obtained from bacterial screens function efficiently in bacteria (Wieland and Hartig, 2008) but poorly in mammalian cells (Auslander et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "966712d0-c587-4a14-8f4b-bbfabe5ee195",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C16",
+      "claim": "Direct screening of an aptazyme library in mammalian cells is labor intensive and generally performed in a medium-throughput non-pooled format.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct screening of an aptazyme library in mammalian cells is labor intensive and generally performed in a medium-throughput non-pooled format (Auslander et al., 2010; Rehm et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "edbdcd73-e094-4bd0-9989-10dac421ae87",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C17",
+      "claim": "The Tc01 aptazyme is composed of an optimized Schistosoma mansoni hammerhead ribozyme N107, a communication module, and a Tc-binding aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "These aptazymes share a common architecture, composed of an optimized Schistosoma mansoni hammerhead ribozyme N107 (Yen et al., 2004), a communication module, and a Tc-binding aptamer (Xiao et al., 2008) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section with citations and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "87719a3f-39a8-4f3a-9fbc-a2fd58a7a7c4",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C18",
+      "claim": "Tc01-regulated GLuc expression in the absence of Tc was markedly lower than that from control constructs without any regulatory elements or with an inactive form of the N107 ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Tc01-regulated GLuc expression in the absence of Tc was markedly lower than that from control constructs without any regulatory elements (CNTL) or with an inactive form of the N107 ribozyme (in-N107), likely due to high level of ribozyme auto-activation triggered by its stable communication module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "19e0eb36-b4b0-4ca4-af1b-7effb06da005",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C19",
+      "claim": "The Tc01 aptazyme had a narrow 2.1-fold dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the aptazyme had a narrow (2.1-fold) dynamic range (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "40e1161d-ad18-4b37-81e2-ea2a46b58391",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C20",
+      "claim": "31 variants of Tc01 were generated by altering Tc01 communication-module bases by trial and error.",
+      "claim_type": "EXPLICIT",
+      "source": "We then generated 31 variants of Tc01 by altering Tc01 communication-module bases by trial and error (Figure 1D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "7dac9e7e-8d9e-4b22-9863-8bfbc493e152",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C21",
+      "claim": "The test panel of 32 aptazymes exhibited widely varying basal expression and Tc-induced fold change in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown, this test panel exhibited widely varying BE and the Tc-induced fold change in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6b853a2c-fe07-4584-bcb6-f95e1a9e1be6",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C22",
+      "claim": "There is no obvious relationship between predicted \u0394GCM and BE, LE, or CDR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed no obvious relationship between predicted \u0394GCM (Bellaousov et al., 2013) and BE, LE, or CDR (Figure 2A and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "795fa527-948f-4f39-ad7f-4708a7d40f73",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C23",
+      "claim": "Basal expression reflects the efficiency of ribozyme-mediated mRNA cleavage in the absence of ligand and is primarily determined by the communication module.",
+      "claim_type": "EXPLICIT",
+      "source": "We then focused on BE because it reflects the efficiency of ribozyme-mediated mRNA cleavage in the absence of ligand and is primarily determined by the communication module (Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by a diagram in Figure 2\u2014figure supplement 2A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "58b02544-b143-4430-943d-5b97605fd313",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C24",
+      "claim": "The distance of communication-module base pairs to the enzymatic core impacts basal expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed, in two different sets of aptazymes with identical communication-module base pairs, that distance of the base pairs to the enzymatic core impacted BE (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "d3fdd180-ae73-49f9-9742-df48f35bc558",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C25",
+      "claim": "When base pairs with few hydrogen bonds (G-U or U-U) were placed close to the ribozyme, higher BE levels were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, when base pairs with few hydrogen bonds (G-U or U-U) were placed close to the ribozyme, as in Tc14 and Tc08, higher BE levels were observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "43ff3d5a-c2c8-4790-9fde-cd6c48b4f405",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C26",
+      "claim": "WHBS better correlates with the rank order of BE than does \u0394GCM or the unweighted sum of hydrogen bonds in the communication module.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that WHBS better correlates with the rank order of BE than does \u0394GCM or the unweighted sum of hydrogen bonds in the communication module (Figure 2D and Figure 2\u2014figure supplement 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2D and Figure 2\u2014figure supplement 1B\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "51da5660-135e-47e5-81b2-bcfe87333667",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C27",
+      "claim": "Inter-strand purine base stacking can contribute to the stability of A-form RNA duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Inter-strand purine base stacking (here referred to as 'base stacking') can also contribute to the stability of A-form RNA duplexes (Egli, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9ae4afea-7272-4087-8288-042ac3cb4973",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C28",
+      "claim": "Base stacking in the communication module affected BE in a position-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed in aptazymes with identical WHBS that base stacking in the communication module also affected BE in a position-dependent manner (Figure 2E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9a3a9126-4cf5-479e-a316-0acec0b84bf9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C29",
+      "claim": "WHSS better correlates with rank order of aptazyme BE values than does WHBS or \u0394GCM.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Weighted Hydrogen-bond and Stacking Score (WHSS) better correlates with rank order of aptazyme BE values than does WHBS or \u0394GCM (Figure 2G and Figure 2\u2014figure supplement 1C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2G and Figure 2\u2014figure supplement 1C\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "ff1b7acc-f828-4578-88b6-4d8f93ffc3bb",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C30",
+      "claim": "There is an inflection point in the BE values at WHSS of 6.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, there is an inflection point in the BE values plotted in Figure 2G at WHSS of 6.7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "829d8c67-e914-4d2a-9ab4-3524ac84dff7",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C31",
+      "claim": "At WHSS value of 6.7, the additional energy provided by the ligand-bound aptamer will have a large impact on aptazyme activity and therefore its dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "At this inflection point, then, additional energy provide by the ligand-bound aptamer has a greater impact on aptazyme activity and therefore its dynamic range (Figure 2\u2014figure supplement 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by diagrams in Figure 2\u2014figure supplement 2C and D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "5c608e69-c38d-4e33-8ccc-c5f999557aca",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C32",
+      "claim": "The highest CDRs were observed at WHSS values 6.75 (Tc15) and 6.92 (Tc12).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when CDR is plotted against WHSS (Figure 2H), the highest CDRs were observed at WHSS values 6.75 (Tc15) and 6.92 (Tc12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "4c49b8c5-c2b3-445e-a6ee-23f4c0fdd098",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C33",
+      "claim": "Tc31 and Tc32 had CDR scores substantially lower than what their WHSS values would predict.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noted in this analysis two outliers, Tc31 and Tc32, both of which had CDR scores substantially lower than what their WHSS values would predict.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "dd46a2a8-f880-4220-bdb1-2486d81084ac",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C34",
+      "claim": "The aptamer-proximal base pair accounts for the low CDR values of Tc31 and Tc32.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of Tc31 and Tc32 with Tc11 indicates that the aptamer-proximal base pair accounts for their low CDR values (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "446cb45e-7d3a-4af3-bdfa-d5669bd691f5",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C35",
+      "claim": "An aptamer-proximal base pair with few hydrogen bonds lowers the affinity of the aptamer for its ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a communication module with WHSS value around 6.7 tends to have lower annealing energy than the P1 stem of the original Tc aptamer, we speculated that an aptamer-proximal base pair with few hydrogen bonds lowers the affinity of the aptamer for its ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a speculation based on the data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "78be8406-7f0a-4ccf-9e57-e2d0d16c2308",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C36",
+      "claim": "Proximity of the aptamer-proximal base pair to the aptamer may subtly impair aptamer folding.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, proximity of this base pair to the aptamer may subtly impair aptamer folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "40a23572-0c9f-4614-a5cc-0f8d23df9be7",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C37",
+      "claim": "Aptazymes with WHSS values 6.7 \u00b1 0.3 had consistently higher CDRs than aptazymes outside of this range.",
+      "claim_type": "EXPLICIT",
+      "source": "When this final ad hoc principle was incorporated, aptazymes with WHSS values 6.7 \u00b1 0.3 had consistently higher CDRs than aptazymes outside of this range (Figure 2L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 2L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "d62cb72c-d7ae-43d7-9985-cf2d6c5798dc",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C38",
+      "claim": "All new Tc aptazymes with WHSS values between 6.3 and 7.0 had CDR values greater than 10 fold at 100 \u00b5M Tc.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these new aptazymes had WHSS values between 6.3 and 7.0, and their CDR values were all greater than 10 fold at 100 \u00b5M Tc (Figure 3B and Figure 3\u2014figure supplement 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3B and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2b40ac0b-00e9-4d99-9189-fa689992e2b7",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C39",
+      "claim": "The rational approach for designing aptazymes is largely independent of communication-module length.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that our rational approach is largely independent of communication-module length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a conclusion from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6e498de1-b2a7-4e98-aca8-69b96f3a94dd",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C40",
+      "claim": "All Tc-P2 aptazymes except Tc39 and Tc44 exhibited high CDR (CDR \u2265 10 \u00b1 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "All aptazymes except Tc39 and Tc44 exhibited high CDR (CDR \u2265 10 \u00b1 0.5, Figure 3D and Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3D and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "3bd2013b-c2cf-40a5-8957-1544e3a7fad9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C41",
+      "claim": "Tc39 had a relatively low WHSS of 6.0.",
+      "claim_type": "EXPLICIT",
+      "source": "Tc39 had a relatively low WHSS of 6.0",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "e8786f03-c3bd-4997-ba43-124076e55ec5",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C42",
+      "claim": "Tc44 was intentionally designed with an aptamer-proximal A-U replacing the original G-C pair.",
+      "claim_type": "EXPLICIT",
+      "source": "and Tc44 was intentionally designed with an aptamer-proximal A-U replacing the original G-C pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6aebbff7-7099-4a13-a22a-9415fd223cbb",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C43",
+      "claim": "The basic principles developed with Tc-P1 aptazymes extend to a novel Tc-P2 aptazyme architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the basic principles developed with Tc-P1 aptazymes extend to a novel Tc-P2 aptazyme architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a conclusion from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "23569248-bcd7-4939-b2b3-b6900ff56612",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C44",
+      "claim": "Tc40 outperformed all Tc-P1 aptazymes.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the Tc aptazymes with this alternative architecture, Tc40, outperformed all Tc-P1 aptazymes, and was used in subsequent studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "c3577f1a-c684-447d-8142-6bfc1b8f70ad",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C45",
+      "claim": "Aptazymes constructed from theophylline and guanine aptamers can be readily generated with high CDR.",
+      "claim_type": "EXPLICIT",
+      "source": "We then generated aptazymes constructed from entirely different aptamers, specifically those binding theophylline (Jenison et al., 1994) and guanine (Gua) (Mandal et al., 2003) (Figure 3E\u2013H and Figure 3\u2014figure supplement 1A,D, and E). In both cases, we could readily generate aptazymes of high CDR, establishing the modularity of our approach.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3E\u2013H and Figure 3\u2014figure supplement 1A,D, and E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "dbc36095-fe3d-4ab8-9570-8c4851aa99e5",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C46",
+      "claim": "WHSS well predicted BE despite the diversity of aptazymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the diversity of these aptazymes, WHSS well predicted BE, consistent with our use of a common ribozyme, and the generality of our approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "53f759c4-62db-45cc-9d0e-9cdcc3382a00",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C47",
+      "claim": "All aptazymes with high CDR had WHSS values near the region (WHSS 6.7 \u00b1 0.3) found to be optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, all aptazymes with high CDR had WHSS values near the region (WHSS 6.7 \u00b1 0.3; grey) found to be optimal in Figure 2H (Figure 3J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "7ea04a1e-ff48-4eb9-936a-7e76a574cfb1",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C48",
+      "claim": "Tc aptazyme 9.19 showed no functionality in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the original reports, Tc aptazyme 9.19 (Wittmann and Suess, 2011) showed no functionality in mammalian cells (Figure 3K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3K.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2be6c99c-a1a7-48aa-b36c-0c4a81528c5a",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C49",
+      "claim": "P1-F5 showed a maximal dynamic range of approximately 5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "while both P1-F5 (Auslander et al., 2010) and RzGuaM5 (Nomura et al., 2012) showed a maximal dynamic range of approximately 5-fold (Figure 3L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3L.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "4789fea9-f91f-41c6-9973-b6e897f0f2f9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C50",
+      "claim": "RzGuaM5 showed a maximal dynamic range of approximately 5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "while both P1-F5 (Auslander et al., 2010) and RzGuaM5 (Nomura et al., 2012) showed a maximal dynamic range of approximately 5-fold (Figure 3L and M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3M.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "edcd9d47-58ae-48fa-be55-19b8419e6a1d",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C51",
+      "claim": "Rationally designed aptazymes substantially outperformed previously described aptazymes.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, our rationally designed aptazymes substantially outperformed these previously described aptazymes (Figure 3K\u2013M, and Figure 3\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3K\u2013M and Figure 3\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "0348e534-21a1-465c-936a-b8a11bd951d1",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C52",
+      "claim": "Tc40 showed significantly higher CDR (19.6-fold at 100 \u00b5M Tc) than the CDR (6.6-fold at 100 \u00b5M Tc) of the previously described aptazyme 3'K19.",
+      "claim_type": "EXPLICIT",
+      "source": "Again Tc40 showed significantly higher CDR (19.6-fold at 100 \u00b5M Tc) than the CDR (6.6-fold at 100 \u00b5M Tc) of this previously described aptazyme (Figure 3N, and Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3N and Figure 3\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "df10b892-1670-4568-97ee-8df8b0c7567e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C53",
+      "claim": "Tc40 exhibited the highest CDR of all Tc-regulated aptazymes.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3D, Tc40 exhibited the highest CDR of all Tc-regulated aptazymes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9f4fa5b7-94c1-4344-b7d9-e9658c0c0415",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C54",
+      "claim": "Tc45 has a lower CDR than Tc40 but a higher BE.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed in transiently transfected cells that Tc45-3\u2032 has a lower CDR than Tc40-3\u2032, but a higher BE, advantageous when aptazymes are used in tandem (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "41fc68f2-8877-4463-950e-69dcbcb96ae2",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C55",
+      "claim": "Tc40\u00d745 provided a 44-fold CDR with a 41% BE.",
+      "claim_type": "EXPLICIT",
+      "source": "When these aptazymes were combined, with Tc40 placed 5\u2032 of the GLuc reporter and Tc45 placed 3\u2032, the resulting construct (Tc40\u00d745) provided a 44-fold CDR with a 41% BE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "88d87166-0a9e-46fb-8ccc-3c689c2d51e9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C56",
+      "claim": "Tc40\u00d745 exhibited a wider dynamic range than either Tc40-3\u2032 or Tc45-3\u2032 in cells generated by retroviral transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "We then measured regulation of GLuc in cells generated by retroviral transduction. Again, Tc40\u00d745 exhibited a wider dynamic range than either Tc40-3\u2032 or Tc45-3\u2032 (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "d4c0446b-68bf-4cb4-bda2-aa5bdab525f5",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C57",
+      "claim": "The regulation observed with Tc40\u00d745 was completely reversed when Tc was withdrawn.",
+      "claim_type": "EXPLICIT",
+      "source": "and the regulation observed was completely reversed when Tc was withdrawn (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "fbd08e6e-f84c-4d25-aaa3-8105bad51a86",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C58",
+      "claim": "Tc40\u00d745 showed efficient regulation when GLuc was replaced with a destabilized green fluorescent protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Tc40\u00d745 also showed efficient regulation when GLuc was replaced with a destabilized green fluorescent protein (Figure 4E and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 4E and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "27fa9469-fe12-4337-831e-1ff0909057f1",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C59",
+      "claim": "Tc40-3\u2032, Tc45-3\u2032, and Tc40\u00d745 worked as effectively in an AAV vector as in transient transfection or retroviral transduction studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We also introduced Tc40-3\u2032, Tc45-3\u2032, and Tc40\u00d745 into an AAV vector expressing Gluc, where these aptazymes worked as effectively as in transient transfection or retroviral transduction studies (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "08e4f6ad-9315-487a-bb73-7bb9deb050e0",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C60",
+      "claim": "Tc40-3\u2032 worked nearly as effectively as Tc40\u00d745 in the AAV vector context.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, Tc40-3\u2032 worked nearly as effectively as Tc40\u00d745.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "3b6792a2-da22-4ea6-843b-f79bdfeb1005",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C61",
+      "claim": "Tc40-3\u2032 dramatically reduced expression of human coagulation factor IX and etanercept by 30 \u00b5M Tc.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore assayed the ability of Tc40-3\u2032 to regulate AAV-mediated expression of human coagulation factor IX and etanercept (Enbrel), a fusion of a TNF-receptor ectodomain and the human IgG1 Fc domain (Mohler et al., 1993). Factor IX and etanercept proteins are currently used to treat hemophilia B and rheumatoid arthritis, respectively, and both of these biologics are being assessed as AAV transgenes in clinical trials (Evans et al., 2008; Nathwani et al., 2014). In both cases, their expression was dramatically reduced by 30 \u00b5M Tc (Figure 5B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 5B and C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "259d5997-03cb-47f5-8f00-a00e8a5ac790",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C62",
+      "claim": "30 \u00b5M Tc is a concentration that is well tolerated clinically and readily achievable with oral administration.",
+      "claim_type": "EXPLICIT",
+      "source": "a concentration that is well tolerated clinically and readily achievable with oral administration (Agwuh and MacGowan, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "22709ab3-e07e-4b14-90ca-c6a3684a2835",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C63",
+      "claim": "Tc treatment significantly reduced luciferase expression in mice injected with Tc40\u00d745-regulated vectors but not control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice injected with control or Tc40\u00d745-regulated vectors exhibited robust luciferase expression in the gastrocnemius muscle, and Tc treatment significantly reduced luciferase expression in the Tc40\u00d745 mice but not the control mice (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "1efdb256-ec8d-404f-b5f9-4721422e3f26",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C64",
+      "claim": "An average dynamic range of 6.9-fold in vivo was obtained, combining both mouse studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining both studies, we obtained an average dynamic range of 6.9-fold in vivo (Figure 5E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Results section and supported by data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "ed5e64bc-1639-4072-97e9-0cdb2fe61ac5",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C65",
+      "claim": "The in vivo dynamic range is lower than that observed in tissue culture cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "lower than that observed in tissue culture cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "04bb5ce7-9121-4967-9b9d-eecf0f288d59",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C66",
+      "claim": "The difference between in vivo and in vitro dynamic range is due to the high metabolism of tetracycline in mice and inefficient access of tetracycline to AAV1-transduced muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that this difference is due to the high metabolism of tetracycline in mice (Sizemore et al., 2002; Agwuh and MacGowan, 2006), and inefficient access of tetracycline to AAV1-transduced muscle cells (Bocker et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a speculation with citations to support the claim.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "b7bddde3-c037-42be-a8be-dbfa78415612",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C67",
+      "claim": "This study presents the first example of aptazyme-mediated regulation in primary animal tissues in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our data present the first example of aptazyme-mediated regulation in primary animal tissues in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "ddbaf360-652d-4044-b4b2-bbdc14197770",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C68",
+      "claim": "Aptazymes are smaller than most other gene-regulation systems, typically less than 200 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they are smaller than most other gene-regulation systems, typically less than 200 base pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "4632f79d-9b70-4a0f-873a-f4684c04971a",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C69",
+      "claim": "Aptazymes can be easily included in gene therapy vectors such as AAV with limited space for additional genes.",
+      "claim_type": "EXPLICIT",
+      "source": "They therefore can be easily included in gene therapy vectors such as AAV with limited space for additional genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as an inference from their small size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "f1850474-aa61-4f3d-833b-824c3992ff84",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C70",
+      "claim": "Aptazyme-mediated regulation does not require an immunogenic non-self protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, in contrast to transcription factor-dependent systems like Tet-Off (Gossen and Bujard, 1992), aptazyme-mediated regulation does not require an immunogenic non-self protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section with a citation to support the comparison.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6f591b34-44c8-4ccb-bb5e-80ccfb0dc24e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C71",
+      "claim": "Aptazymes cleave in cis, and only the message bearing an aptazyme is affected.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, aptazymes cleave in cis, and only the message bearing an aptazyme is affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "31903ca7-2893-4884-b164-4314850b3a5c",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C72",
+      "claim": "Aptazymes are highly specific, with few off-target effects.",
+      "claim_type": "EXPLICIT",
+      "source": "They are therefore highly specific, with few off-target effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as an inference from their cis-acting nature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "4259453e-e807-4597-9146-52cc122eb440",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C73",
+      "claim": "Aptazymes can be tailored to different aptamers regulated by different ligands, including those shown to be safe in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, as we show here, they can be tailored to different aptamers regulated by different ligands, including those shown to be safe in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6ed36e2b-1fd3-487f-9fe6-e767f89dd91e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C74",
+      "claim": "A communication module that anneals with too high overall energy will induce premature auto-activation of the ribozyme, even when the aptamer is unbound.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a communication module that anneals with too high overall energy will induce premature auto-activation of the ribozyme, even when the aptamer is unbound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as an intuitive principle.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "c9995861-49ad-4b83-b73f-cbdc7c7acc5f",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C75",
+      "claim": "A communication module that is unstable will not convey the state of the aptamer to the ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a communication module that is unstable will not convey the state of the aptamer to the ribozyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as an intuitive principle.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "4972090c-9b42-4d97-b479-c3782f86db53",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C76",
+      "claim": "The communication-module annealing energy correlated poorly with an aptazyme's dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "However, between these limiting cases, we found that the communication-module annealing energy correlated poorly with an aptazyme's dynamic range (Figure 2A and Figure 2\u2014figure supplement 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Discussion section and supported by data shown in Figure 2A and Figure 2\u2014figure supplement 1A and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "1b7ee171-02be-45f6-8b68-03fad873b271",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C77",
+      "claim": "Base pairs proximal to the ribozyme have a disproportionate impact on the ribozyme's enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown here, the reason for this poor correlation is that base pairs proximal to the ribozyme have a disproportionate impact on the ribozyme's enzymatic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "cb85a7b2-4cc7-41b0-8599-9b4fa32dfe14",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C78",
+      "claim": "Any aptamer which anneals an accessible stem region upon ligand binding would likely be convertible to an efficient aptazyme off-switch.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that any aptamer which anneals an accessible stem region upon ligand binding would likely be convertible to an efficient aptazyme off-switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a conclusion from the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "22ce3e6f-84b7-4187-9388-43a832c88c8f",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C79",
+      "claim": "Ligand-aptamer binding-induced stem formation or stabilization could be used to develop aptazyme on-switches.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligand-aptamer binding-induced stem formation or stabilization could also be used to develop aptazyme on-switches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "f22530a0-73e3-4db4-828c-b7fe1bc244ac",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C80",
+      "claim": "An on-switch could use ligand-induced stem formation or stabilization to hide the hammerhead-ribozyme loop II or bulge I sequences important to ribozyme activity.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an on-switch could use ligand-induced stem formation or stabilization to hide the hammerhead-ribozyme loop II or bulge I sequences important to ribozyme activity (De la Pe\u00f1a et al., 2003; Khvorova et al., 2003; Martick and Scott, 2006; Win and Smolke, 2007; Beilstein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a speculation with citations to support the claim.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "1295ea4e-7399-41df-bf68-28e9e2028b88",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C81",
+      "claim": "This study provides a general rational-design method for rapidly converting diverse aptamers into aptazymes with wide regulatory ranges in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus this study provides a general rational-design method for rapidly converting diverse aptamers into aptazymes with wide regulatory ranges in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "3b34c1be-8d03-4151-b081-248be1d2b5fd",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C82",
+      "claim": "Aptazymes can be introduced by CRISPR/Cas9 into an untranslated region of an exon to exogenously control endogenous genes in their native contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, aptazymes can be introduced by CRISPR/Cas9 into an untranslated region of an exon to exogenously control endogenous genes in their native contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Discussion section as a potential application.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "87e8030e-0aa1-4520-bc06-d3545044ea2a",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C83",
+      "claim": "Aptazymes have the potential to transform gene therapy, allowing controlled dosing of a biologic with a well tolerated drug.",
+      "claim_type": "EXPLICIT",
+      "source": "They also have the potential to transform gene therapy, allowing controlled dosing of a biologic with a well tolerated drug (Figure 5A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated directly in the Discussion section as a potential application, supported by data shown in Figure 5A\u2013C.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "c872d56b-b0e9-4df3-ae0c-839d5a80ecea",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C84",
+      "claim": "Differences between Tc- and PBS-treated groups were significant (two-sided t-test, p<0.0001) in mice injected with the Tc40\u00d745-regulated vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences between Tc- and PBS-treated groups were significant (two-sided t-test, p<0.0001) in mice injected with the Tc40\u00d745-regulated vector",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 5 legend and supported by data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "e7edfd2b-66b5-44a6-b41e-567923dcbaf9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C85",
+      "claim": "Differences in the control mice were not significant (two-sided t-test, p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas differences in the control mice were not significant (two-sided t-test, p>0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 5 legend and supported by data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "121fefc4-6c1f-445a-9c23-b3e2f8ef74e1",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C86",
+      "claim": "Ribozyme based control of AAV-transgene expression in mice has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribozyme based control of AAV-transgene expression in mice has been reported (Yen et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "d7333059-1527-4836-97f3-a9d7867ec1ad",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C87",
+      "claim": "The previously reported ribozyme-based switch control is possibly mediated by direct incorporation of the regulatory drug toyocamycin into the ribozyme RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "however this switch control is possibly mediated by direct incorporation of the regulatory drug toyocamycin into the ribozyme RNA (Yen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9d688cd2-e8ed-4090-a32d-6363daa13cff",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C88",
+      "claim": "Etanercept is a fusion of a TNF-receptor ectodomain and the human IgG1 Fc domain.",
+      "claim_type": "EXPLICIT",
+      "source": "etanercept (Enbrel), a fusion of a TNF-receptor ectodomain and the human IgG1 Fc domain (Mohler et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with a citation to support the claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "94875a23-a91e-4aee-a567-1a3d75577128",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C89",
+      "claim": "Factor IX and etanercept proteins are currently used to treat hemophilia B and rheumatoid arthritis, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Factor IX and etanercept proteins are currently used to treat hemophilia B and rheumatoid arthritis, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "10bb6e97-672a-42cf-841f-b5429fe8bfbc",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C90",
+      "claim": "Factor IX and etanercept are being assessed as AAV transgenes in clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "and both of these biologics are being assessed as AAV transgenes in clinical trials (Evans et al., 2008; Nathwani et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "eed40483-a5b7-4d16-ba92-ab9d27520df0",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C91",
+      "claim": "The Tc-binding aptamer consists of three stems (P1, P2, and P3).",
+      "claim_type": "EXPLICIT",
+      "source": "The Tc aptamer also consists of three stems (P1, P2, and P3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 1\u2014figure supplement 1 legend.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "6c13644b-a32c-426f-a0a8-d0c88c921188",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C92",
+      "claim": "Tetracycline P1 (Tc-P1) aptazymes were generated by fusing stem III of the ribozyme N107 with the P1 stem of the Tc aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Tetracycline P1 (Tc-P1) aptazymes were generated by fusing stem III of the ribozyme N107 (orange) with the P1 stem of the Tc aptamer (blue).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 1\u2014figure supplement 1 legend.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "3fd50a17-b66e-4251-9c8d-d506f05a08fd",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C93",
+      "claim": "The five base pairs connecting the ribozyme to the aptamer form a communication module that transmits the ligand-binding state of the aptamer to the ribozyme.",
+      "claim_type": "EXPLICIT",
+      "source": "The five base pairs connecting the ribozyme to the aptamer form a communication module (CM; red) that transmits the ligand-binding state of the aptamer the ribozyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 1\u2014figure supplement 1 legend.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "0b4b16f7-aa12-42b0-88c3-ea2d6d7528a9",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C94",
+      "claim": "The N107 hammerhead ribozyme consists of three stem structures (I, II, III) that stabilize a conserved enzymatic core.",
+      "claim_type": "EXPLICIT",
+      "source": "The N107 hammerhead ribozyme consists of three stem structures (I, II, III) that stabilize a conserved enzymatic core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Figure 1\u2014figure supplement 1 legend.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2fdf1f26-3bc0-4055-9b17-fda50a521a51",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C95",
+      "claim": "Tc-binding might have a larger effect on the P2 stem than the P1 stem based on the structure of the Tc aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, all reported Tc aptazymes are fused at the aptamer P1 stem (Win and Smolke, 2007; Wittmann and Suess, 2011; Beilstein et al., 2015), but the structure of the Tc aptamer suggests that Tc-binding might have a larger effect on the P2 stem than the P1 stem (Xiao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Results section with citations to support the claim.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "92194f22-d70a-4019-bb3a-7bde0721f82f",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C96",
+      "claim": "Spearman's rank correlation coefficient (\u03c1) between BE and \u0394GCM is \u22120.64.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Spearman's rank correlation coefficient (\u03c1) (Zar, 1998) was \u22120.64 for \u0394GCM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "8586cf6e-c824-49af-bbdd-7219fe060912",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C97",
+      "claim": "Spearman's rank correlation coefficient (\u03c1) between BE and HBN is \u22120.80.",
+      "claim_type": "EXPLICIT",
+      "source": "and \u22120.80 for HBN (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9841e2aa-a2b2-4877-98dd-41926a3669be",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C98",
+      "claim": "A Spearman's rank correlation coefficient of \u22120.91 was observed when the ribozyme-proximal starting base pair (A-U) was assigned a weight of 1.0, and the subsequent base pairs were sequentially assigned weights of 5/6, 4/6, 3/6, and 2/6.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we observed a Spearman's rank correlation coefficient of \u22120.91 when the ribozyme-proximal starting base pair (A-U) was assigned a weight of 1.0, and the subsequent base pairs were sequentially assigned weights of 5/6, 4/6, 3/6, and 2/6 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "b17880ae-830e-475a-b6d6-44b7bbdd3051",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C99",
+      "claim": "When potential inter-strand purine base-stacking interactions were assigned one half (G-G) or one quarter (A-A, A-G) of a hydrogen bond, an optimal rank-order correlation (\u03c1=\u22120.94) between WHSS and BE was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when potential inter-strand purine base-stacking interactions were assigned one half (G-G) or one quarter (A-A, A-G) of a hydrogen bond, we observed an optimal rank-order correlation (\u03c1=\u22120.94) between WHSS and BE (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section and supported by data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2c5ac4f1-650c-4175-9c1a-bd5f73af200d",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "claim_id": "C100",
+      "claim": "When longer communication modules were considered, bases 6, 7, 8, and 9 were assigned weights of 1/6, 5/36, 4/36, and 3/36, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When longer communication modules were considered, bases 6, 7, 8, and 9 were assigned weights of 1/6, 5/36, 4/36, and 3/36, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "788b535e-f369-4bd6-8058-49bac6e6d684",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors characterized a test panel of 32 tetracycline-regulated aptazymes (Tc01 and 31 variants) that differ only in their communication modules. Tc01 exhibited low basal expression and a narrow 2.1-fold dynamic range, while the 32-aptazyme panel exhibited widely varying basal expression and Tc-induced fold changes in expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 describe the generation and characterization of a test panel of aptazymes with varying communication modules. The data in Figure 1C-E support these observations, showing measured basal expression, ligand-inhibited expression, and corrected dynamic ranges across the panel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed a Weighted Hydrogen Bond Score (WHBS) and subsequently a Weighted Hydrogen-bond and Stacking Score (WHSS) that better correlates with basal expression than predicted communication-module annealing energy (\u0394GCM). The WHSS accounts for position-dependent effects of hydrogen bonding and base stacking in the communication module.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C29 describe the development of scoring functions (WHBS and WHSS) that predict basal expression better than \u0394GCM. The data in Figures 2A-G and Figure 2\u2014figure supplement 1 support these correlations, with Spearman correlation coefficients showing WHSS (\u03c1=-0.94) outperforms \u0394GCM (\u03c1=-0.64) and WHBS (\u03c1=-0.91).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2d7c45de-0b79-4ad1-ba93-46afcb381f4c",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors identified an inflection point in basal expression at WHSS value of 6.7, where additional energy from ligand-bound aptamer has maximal impact on dynamic range. Aptazymes with WHSS values of 6.7 \u00b1 0.3 consistently exhibited higher corrected dynamic ranges than those outside this range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C37 describe the identification of an optimal WHSS range for high dynamic range. Figure 2G shows the inflection point at WHSS 6.7, Figure 2H shows highest CDRs at WHSS values near 6.7 (Tc15 at 6.75, Tc12 at 6.92), and Figure 2L demonstrates that aptazymes within WHSS 6.7 \u00b1 0.3 have consistently higher CDRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "3da04bdf-58d5-4d25-a9bc-65a3828d83fc",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors identified that Tc31 and Tc32 had lower-than-expected CDR values despite appropriate WHSS values, attributing this to weak aptamer-proximal base pairs (U-A and G-U) that may lower aptamer affinity for ligand or impair aptamer folding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C33-C36 identify outliers and propose mechanistic explanations. While Figure 2H-I show the outlier behavior and Figure 2I-K show the effect of aptamer-proximal base pairs, claims C35-C36 are explicitly stated as speculation without direct experimental validation of the proposed mechanisms (aptamer affinity or folding).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors validated their rational design approach by generating new Tc aptazymes with varying communication-module lengths (4-7 bp for Tc-P1, 4-5 bp for Tc-P2). All new Tc-P1 aptazymes with WHSS 6.3-7.0 had CDR >10-fold, and all Tc-P2 aptazymes except Tc39 (low WHSS 6.0) and Tc44 (weak aptamer-proximal base pair) exhibited high CDR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 describe validation of the design principles across different aptazyme architectures. Figures 3A-D and Figure 3\u2014figure supplement 1B-C show that aptazymes with WHSS values in the optimal range consistently achieve high CDR (\u226510-fold), supporting the generality of the approach across communication-module lengths and fusion architectures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "c69126b9-5c56-4700-90d6-9598157dbc79",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors demonstrated modularity by generating high-CDR aptazymes from theophylline and guanine aptamers. WHSS predicted basal expression across all aptazyme types, and all high-CDR aptazymes had WHSS values near the optimal range (6.7 \u00b1 0.3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 demonstrate the generality of the approach to different aptamers. Figures 3E-J show that theophylline and guanine aptazymes can be readily generated with high CDR, and that WHSS predicts basal expression and optimal CDR range across all aptazyme types tested, supporting the modularity claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "e92a887b-beca-4e83-8917-7efbd0379e88",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors compared their rationally designed aptazymes to previously described aptazymes and demonstrated substantially superior performance. Tc40 showed 19.6-fold CDR versus 6.6-fold for 3'K19, Theo5 outperformed P1-F5, and Gua3 outperformed RzGuaM5 (both ~5-fold CDR).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C52 compare new aptazymes to prior work. Figures 3K-N and Figure 3\u2014figure supplement 2A-D show direct comparisons demonstrating that the rationally designed aptazymes substantially outperform previously described aptazymes with the highest reported dynamic ranges, validating the superiority of the rational design approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "a88868a3-f417-4ef0-a655-927c7bd83b4c",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors optimized aptazyme performance by combining Tc40 and Tc45 in tandem (Tc40\u00d745), achieving 44-fold CDR with 41% basal expression in transient transfection and wider dynamic range than single aptazymes in retroviral transduction. Regulation was reversible upon tetracycline withdrawal and functional with different reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58 describe optimization through tandem aptazyme design. Figures 4B-E show that Tc40\u00d745 achieves superior performance (44-fold CDR) compared to single aptazymes, regulation is reversible (Figure 4D), and the system works with different reporters (GLuc and GFP), supporting the optimization strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "9861eb63-74a7-4f7c-a931-ef6e86c56572",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors demonstrated that aptazymes function effectively in AAV vectors, with Tc40-3' working nearly as well as Tc40\u00d745 in this context. Tc40-3' dramatically reduced expression of therapeutically relevant proteins (Factor IX and etanercept) at clinically achievable tetracycline concentrations (30 \u00b5M).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 demonstrate AAV vector compatibility and therapeutic potential. Figure 5A-C show that aptazymes work effectively in AAV vectors and can regulate clinically relevant transgenes at concentrations cited as clinically tolerable (C62, supported by citation). This establishes proof-of-concept for gene therapy applications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "18245aa2-21f5-4a51-8959-739a3a1b4b45",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors demonstrated aptazyme-mediated regulation in vivo in mice injected with AAV-Tc40\u00d745 vectors, achieving an average 6.9-fold dynamic range across two studies. This represents the first example of aptazyme-mediated regulation in primary animal tissues in vivo, though the in vivo dynamic range was lower than in cell culture, possibly due to tetracycline metabolism and tissue access.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 describe in vivo validation. Figures 5D-E and Figure 5\u2014figure supplement 1 show statistically significant regulation (p<0.0001) in Tc40\u00d745 mice but not controls (C84-C85), achieving 6.9-fold average dynamic range. The lower in vivo performance is acknowledged, and C66 provides a speculative but citation-supported explanation. This is the first in vivo demonstration of aptazyme regulation in primary tissues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "2cbe62c3-13ec-40a6-9555-3271a356f285",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors empirically determined optimal weighting schemes for calculating WHBS and WHSS. Spearman correlation coefficients showed WHBS (\u03c1=-0.91) and WHSS (\u03c1=-0.94) better predict basal expression rank order than \u0394GCM (\u03c1=-0.64) or unweighted hydrogen bond number (\u03c1=-0.80).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C100 describe the empirical optimization of scoring functions. The Materials and methods section and Figure 2\u2014figure supplement 1 provide the specific weighting schemes and correlation coefficients, demonstrating that the weighted scoring functions (WHBS and WHSS) better predict basal expression than simpler metrics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss key advantages of aptazymes: small size (<200 bp), no requirement for immunogenic proteins, cis-acting specificity with few off-target effects, and modularity to different ligands including those safe in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 describe advantages of aptazymes. These are well-established properties supported by the data presented (C68-C69 are general knowledge, C70 is supported by comparison to Tet-Off system, C71-C72 follow from the cis-acting mechanism, and C73 is demonstrated by the data showing modularity across different aptamers and ligands).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "e414c463-902f-4921-9de9-b75e1a82939a",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors explain that while intuitive principles suggest communication-module stability affects aptazyme function, the poor correlation between \u0394GCM and dynamic range is due to position-dependent effects, where base pairs proximal to the ribozyme have disproportionate impact on enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 provide mechanistic interpretation of the results. C74-C75 state intuitive principles, while C76-C77 explain why simple annealing energy fails to predict function. This interpretation is supported by the data in Figures 2A-C showing position-dependent effects and poor \u0394GCM correlation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "96ed86d3-46e7-480a-a486-8a0b9ae7ed46",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that their approach provides a general rational-design method for converting diverse aptamers into high-dynamic-range aptazymes in mammalian cells, and suggest the principles could extend to developing aptazyme on-switches using ligand-induced stem formation or stabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78 and C81 are supported by the demonstrated modularity across three different aptamers (Tc, theophylline, guanine) and multiple architectures. Claims C79-C80 are speculative extensions but are reasonable based on the established principles and are appropriately presented as speculation with supporting citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "b8cdd0cf-d10b-4328-8bf9-27186e10bf98",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors propose potential applications including CRISPR/Cas9-mediated introduction of aptazymes into endogenous genes and transformation of gene therapy through controlled biologic dosing with well-tolerated drugs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C83 describe potential future applications. While C83 is partially supported by the AAV data in Figure 5A-C demonstrating proof-of-concept, both claims are primarily speculative about future applications rather than demonstrated results. C82 has no experimental validation in the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors provide background on aptazymes, including their development history, prior applications, and limitations. They establish that no aptazyme had been described to control gene expression in primary animal cells in vivo prior to this study, and that existing methods for generating aptazymes in mammalian cells have significant limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16 provide literature context and establish the gap this study addresses. All claims are supported by appropriate citations to prior work. The claim that no aptazyme had controlled gene expression in primary animal cells in vivo (C13) is validated by the authors' own in vivo results (C67) representing the first such demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "148fa0dd-6c29-407a-ba75-600929c6b321",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Statistical analysis showed significant differences (p<0.0001) between tetracycline- and PBS-treated groups in mice injected with Tc40\u00d745-regulated vectors, but not in control mice (p>0.05).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 report statistical significance of in vivo results. These are explicitly stated in the figure legend and supported by the data in Figure 5E. The use of two-sided t-tests is appropriate for comparing two treatment groups, though sample sizes and specific test details could be more thoroughly described.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    },
+    {
+      "id": "999f181f-5292-49cf-b611-9ac9d4c5f68e",
+      "content_id": "45e8bc0b-1af7-4137-9c80-86e55164c650",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors provide technical details about aptazyme architecture, prior ribozyme-based control systems, and therapeutic proteins used in validation studies, including structural information about the Tc aptamer and rationale for exploring P2 fusion architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C95 provide technical background and structural details. All are supported by appropriate citations (C86-C90) or are descriptive of the aptazyme structures shown in figures (C91-C94). C95 provides rationale for exploring Tc-P2 architecture based on aptamer structure, supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:27:57.422099Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "edbdcd73-e094-4bd0-9989-10dac421ae87",
+      "result_id": "788b535e-f369-4bd6-8058-49bac6e6d684"
+    },
+    {
+      "claim_id": "87719a3f-39a8-4f3a-9fbc-a2fd58a7a7c4",
+      "result_id": "788b535e-f369-4bd6-8058-49bac6e6d684"
+    },
+    {
+      "claim_id": "19e0eb36-b4b0-4ca4-af1b-7effb06da005",
+      "result_id": "788b535e-f369-4bd6-8058-49bac6e6d684"
+    },
+    {
+      "claim_id": "40e1161d-ad18-4b37-81e2-ea2a46b58391",
+      "result_id": "788b535e-f369-4bd6-8058-49bac6e6d684"
+    },
+    {
+      "claim_id": "7dac9e7e-8d9e-4b22-9863-8bfbc493e152",
+      "result_id": "788b535e-f369-4bd6-8058-49bac6e6d684"
+    },
+    {
+      "claim_id": "6b853a2c-fe07-4584-bcb6-f95e1a9e1be6",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "795fa527-948f-4f39-ad7f-4708a7d40f73",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "58b02544-b143-4430-943d-5b97605fd313",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "d3fdd180-ae73-49f9-9742-df48f35bc558",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "43ff3d5a-c2c8-4790-9fde-cd6c48b4f405",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "51da5660-135e-47e5-81b2-bcfe87333667",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "9ae4afea-7272-4087-8288-042ac3cb4973",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "9a3a9126-4cf5-479e-a316-0acec0b84bf9",
+      "result_id": "ff8363b1-d4e2-4202-9b4a-06097b47c48f"
+    },
+    {
+      "claim_id": "ff1b7acc-f828-4578-88b6-4d8f93ffc3bb",
+      "result_id": "2d7c45de-0b79-4ad1-ba93-46afcb381f4c"
+    },
+    {
+      "claim_id": "829d8c67-e914-4d2a-9ab4-3524ac84dff7",
+      "result_id": "2d7c45de-0b79-4ad1-ba93-46afcb381f4c"
+    },
+    {
+      "claim_id": "5c608e69-c38d-4e33-8ccc-c5f999557aca",
+      "result_id": "2d7c45de-0b79-4ad1-ba93-46afcb381f4c"
+    },
+    {
+      "claim_id": "40a23572-0c9f-4614-a5cc-0f8d23df9be7",
+      "result_id": "2d7c45de-0b79-4ad1-ba93-46afcb381f4c"
+    },
+    {
+      "claim_id": "4c49b8c5-c2b3-445e-a6ee-23f4c0fdd098",
+      "result_id": "3da04bdf-58d5-4d25-a9bc-65a3828d83fc"
+    },
+    {
+      "claim_id": "dd46a2a8-f880-4220-bdb1-2486d81084ac",
+      "result_id": "3da04bdf-58d5-4d25-a9bc-65a3828d83fc"
+    },
+    {
+      "claim_id": "446cb45e-7d3a-4af3-bdfa-d5669bd691f5",
+      "result_id": "3da04bdf-58d5-4d25-a9bc-65a3828d83fc"
+    },
+    {
+      "claim_id": "78be8406-7f0a-4ccf-9e57-e2d0d16c2308",
+      "result_id": "3da04bdf-58d5-4d25-a9bc-65a3828d83fc"
+    },
+    {
+      "claim_id": "d62cb72c-d7ae-43d7-9985-cf2d6c5798dc",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "2b40ac0b-00e9-4d99-9189-fa689992e2b7",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "6e498de1-b2a7-4e98-aca8-69b96f3a94dd",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "3bd2013b-c2cf-40a5-8957-1544e3a7fad9",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "e8786f03-c3bd-4997-ba43-124076e55ec5",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "6aebbff7-7099-4a13-a22a-9415fd223cbb",
+      "result_id": "5d2c3e52-0ce0-4b00-ba99-b077bb3b447a"
+    },
+    {
+      "claim_id": "23569248-bcd7-4939-b2b3-b6900ff56612",
+      "result_id": "c69126b9-5c56-4700-90d6-9598157dbc79"
+    },
+    {
+      "claim_id": "c3577f1a-c684-447d-8142-6bfc1b8f70ad",
+      "result_id": "c69126b9-5c56-4700-90d6-9598157dbc79"
+    },
+    {
+      "claim_id": "dbc36095-fe3d-4ab8-9570-8c4851aa99e5",
+      "result_id": "c69126b9-5c56-4700-90d6-9598157dbc79"
+    },
+    {
+      "claim_id": "53f759c4-62db-45cc-9d0e-9cdcc3382a00",
+      "result_id": "c69126b9-5c56-4700-90d6-9598157dbc79"
+    },
+    {
+      "claim_id": "7ea04a1e-ff48-4eb9-936a-7e76a574cfb1",
+      "result_id": "e92a887b-beca-4e83-8917-7efbd0379e88"
+    },
+    {
+      "claim_id": "2be6c99c-a1a7-48aa-b36c-0c4a81528c5a",
+      "result_id": "e92a887b-beca-4e83-8917-7efbd0379e88"
+    },
+    {
+      "claim_id": "4789fea9-f91f-41c6-9973-b6e897f0f2f9",
+      "result_id": "e92a887b-beca-4e83-8917-7efbd0379e88"
+    },
+    {
+      "claim_id": "edcd9d47-58ae-48fa-be55-19b8419e6a1d",
+      "result_id": "e92a887b-beca-4e83-8917-7efbd0379e88"
+    },
+    {
+      "claim_id": "0348e534-21a1-465c-936a-b8a11bd951d1",
+      "result_id": "e92a887b-beca-4e83-8917-7efbd0379e88"
+    },
+    {
+      "claim_id": "df10b892-1670-4568-97ee-8df8b0c7567e",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "9f4fa5b7-94c1-4344-b7d9-e9658c0c0415",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "41fc68f2-8877-4463-950e-69dcbcb96ae2",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "88d87166-0a9e-46fb-8ccc-3c689c2d51e9",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "d4c0446b-68bf-4cb4-bda2-aa5bdab525f5",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "fbd08e6e-f84c-4d25-aaa3-8105bad51a86",
+      "result_id": "a88868a3-f417-4ef0-a655-927c7bd83b4c"
+    },
+    {
+      "claim_id": "27fa9469-fe12-4337-831e-1ff0909057f1",
+      "result_id": "9861eb63-74a7-4f7c-a931-ef6e86c56572"
+    },
+    {
+      "claim_id": "08e4f6ad-9315-487a-bb73-7bb9deb050e0",
+      "result_id": "9861eb63-74a7-4f7c-a931-ef6e86c56572"
+    },
+    {
+      "claim_id": "3b6792a2-da22-4ea6-843b-f79bdfeb1005",
+      "result_id": "9861eb63-74a7-4f7c-a931-ef6e86c56572"
+    },
+    {
+      "claim_id": "259d5997-03cb-47f5-8f00-a00e8a5ac790",
+      "result_id": "9861eb63-74a7-4f7c-a931-ef6e86c56572"
+    },
+    {
+      "claim_id": "22709ab3-e07e-4b14-90ca-c6a3684a2835",
+      "result_id": "18245aa2-21f5-4a51-8959-739a3a1b4b45"
+    },
+    {
+      "claim_id": "1efdb256-ec8d-404f-b5f9-4721422e3f26",
+      "result_id": "18245aa2-21f5-4a51-8959-739a3a1b4b45"
+    },
+    {
+      "claim_id": "ed5e64bc-1639-4072-97e9-0cdb2fe61ac5",
+      "result_id": "18245aa2-21f5-4a51-8959-739a3a1b4b45"
+    },
+    {
+      "claim_id": "04bb5ce7-9121-4967-9b9d-eecf0f288d59",
+      "result_id": "18245aa2-21f5-4a51-8959-739a3a1b4b45"
+    },
+    {
+      "claim_id": "b7bddde3-c037-42be-a8be-dbfa78415612",
+      "result_id": "18245aa2-21f5-4a51-8959-739a3a1b4b45"
+    },
+    {
+      "claim_id": "92194f22-d70a-4019-bb3a-7bde0721f82f",
+      "result_id": "2cbe62c3-13ec-40a6-9555-3271a356f285"
+    },
+    {
+      "claim_id": "8586cf6e-c824-49af-bbdd-7219fe060912",
+      "result_id": "2cbe62c3-13ec-40a6-9555-3271a356f285"
+    },
+    {
+      "claim_id": "9841e2aa-a2b2-4877-98dd-41926a3669be",
+      "result_id": "2cbe62c3-13ec-40a6-9555-3271a356f285"
+    },
+    {
+      "claim_id": "b17880ae-830e-475a-b6d6-44b7bbdd3051",
+      "result_id": "2cbe62c3-13ec-40a6-9555-3271a356f285"
+    },
+    {
+      "claim_id": "2c5ac4f1-650c-4175-9c1a-bd5f73af200d",
+      "result_id": "2cbe62c3-13ec-40a6-9555-3271a356f285"
+    },
+    {
+      "claim_id": "ddbaf360-652d-4044-b4b2-bbdc14197770",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "4632f79d-9b70-4a0f-873a-f4684c04971a",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "f1850474-aa61-4f3d-833b-824c3992ff84",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "6f591b34-44c8-4ccb-bb5e-80ccfb0dc24e",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "31903ca7-2893-4884-b164-4314850b3a5c",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "4259453e-e807-4597-9146-52cc122eb440",
+      "result_id": "517a3e8c-76aa-4fe6-ba97-b44ad1aa7f1d"
+    },
+    {
+      "claim_id": "6ed36e2b-1fd3-487f-9fe6-e767f89dd91e",
+      "result_id": "e414c463-902f-4921-9de9-b75e1a82939a"
+    },
+    {
+      "claim_id": "c9995861-49ad-4b83-b73f-cbdc7c7acc5f",
+      "result_id": "e414c463-902f-4921-9de9-b75e1a82939a"
+    },
+    {
+      "claim_id": "4972090c-9b42-4d97-b479-c3782f86db53",
+      "result_id": "e414c463-902f-4921-9de9-b75e1a82939a"
+    },
+    {
+      "claim_id": "1b7ee171-02be-45f6-8b68-03fad873b271",
+      "result_id": "e414c463-902f-4921-9de9-b75e1a82939a"
+    },
+    {
+      "claim_id": "cb85a7b2-4cc7-41b0-8599-9b4fa32dfe14",
+      "result_id": "96ed86d3-46e7-480a-a486-8a0b9ae7ed46"
+    },
+    {
+      "claim_id": "22ce3e6f-84b7-4187-9388-43a832c88c8f",
+      "result_id": "96ed86d3-46e7-480a-a486-8a0b9ae7ed46"
+    },
+    {
+      "claim_id": "f22530a0-73e3-4db4-828c-b7fe1bc244ac",
+      "result_id": "96ed86d3-46e7-480a-a486-8a0b9ae7ed46"
+    },
+    {
+      "claim_id": "1295ea4e-7399-41df-bf68-28e9e2028b88",
+      "result_id": "96ed86d3-46e7-480a-a486-8a0b9ae7ed46"
+    },
+    {
+      "claim_id": "3b34c1be-8d03-4151-b081-248be1d2b5fd",
+      "result_id": "b8cdd0cf-d10b-4328-8bf9-27186e10bf98"
+    },
+    {
+      "claim_id": "87e8030e-0aa1-4520-bc06-d3545044ea2a",
+      "result_id": "b8cdd0cf-d10b-4328-8bf9-27186e10bf98"
+    },
+    {
+      "claim_id": "5c3c4213-fbbc-4b17-bf98-addb17e77ecd",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "90da5b95-bf4c-4e8b-bd19-3cc15d6199ce",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "9c504bf4-4fa9-4f11-9345-e9cf39828471",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "271a5a7a-1ad2-4068-b1e9-51673f4a3ea0",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "9363586a-da93-4889-a4b0-1e3e26111fef",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "161aa9ba-b057-4630-a1f4-5d88c99c4ef9",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "df99152c-63a2-4acd-927c-e1348cd4385c",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "45a3bc38-8df0-4364-879d-0be463827d79",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "6eeab20e-69ee-4665-a50c-ec9c5cddfc1b",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "7c0f203c-ac66-466b-8df0-961682bb9809",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "e61a150c-6232-46df-88cd-c8f5dddc86a7",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "641b3fe1-7b70-425e-bc53-6e1e650bd6cd",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "88062585-1c3d-40f8-85b7-07f9407d4c68",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "906b7731-bfbb-464e-856f-8e36b793b60e",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "b1cc2a2d-dba3-4eca-8e56-4afc5e37022e",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "966712d0-c587-4a14-8f4b-bbfabe5ee195",
+      "result_id": "8e993814-53fa-4ab0-9e9f-32a0fe1813bb"
+    },
+    {
+      "claim_id": "c872d56b-b0e9-4df3-ae0c-839d5a80ecea",
+      "result_id": "148fa0dd-6c29-407a-ba75-600929c6b321"
+    },
+    {
+      "claim_id": "e7edfd2b-66b5-44a6-b41e-567923dcbaf9",
+      "result_id": "148fa0dd-6c29-407a-ba75-600929c6b321"
+    },
+    {
+      "claim_id": "121fefc4-6c1f-445a-9c23-b3e2f8ef74e1",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "d7333059-1527-4836-97f3-a9d7867ec1ad",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "9d688cd2-e8ed-4090-a32d-6363daa13cff",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "94875a23-a91e-4aee-a567-1a3d75577128",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "10bb6e97-672a-42cf-841f-b5429fe8bfbc",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "eed40483-a5b7-4d16-ba92-ab9d27520df0",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "6c13644b-a32c-426f-a0a8-d0c88c921188",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "3fd50a17-b66e-4251-9c8d-d506f05a08fd",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "0b4b16f7-aa12-42b0-88c3-ea2d6d7528a9",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    },
+    {
+      "claim_id": "2fdf1f26-3bc0-4055-9b17-fda50a521a51",
+      "result_id": "999f181f-5292-49cf-b611-9ac9d4c5f68e"
+    }
+  ],
+  "comparisons": []
+}

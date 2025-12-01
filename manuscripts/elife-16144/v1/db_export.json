@@ -1,0 +1,1838 @@
+{
+  "submission": {
+    "id": "349e066f-b7f4-413a-b696-259d2c99085f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:46:20.686393Z",
+    "updated_at": "2025-11-30T20:46:20.686393Z"
+  },
+  "content": [
+    {
+      "id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "submission_id": "349e066f-b7f4-413a-b696-259d2c99085f",
+      "content_type": "manuscript",
+      "content_text": "# Replacing the PDZ-interacting C-termini of DSCAM and DSCAML1 with epitope tags causes different phenotypic severity in different cell populations\n\n## Authors\n\n- Andrew M Garrett<sup>1</sup>\n- Abigail LD Tadenev<sup>1</sup>\n- Yuna T Hammond<sup>1</sup>\n- Peter G Fuerst<sup>2</sup>\n- Robert W Burgess<sup>1</sup> ([ORCID: 0000-0002-9229-3407](https://orcid.org/0000-0002-9229-3407)) \u2020\n\n### Affiliations\n\n1. The Jackson Laboratory Bar Harbor United States\n2. Department of Biological Sciences University of Idaho Moscow United States\n3. WWAMI Medical Education Program University of Idaho Moscow United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDifferent types of neurons in the retina are organized vertically into layers and horizontally in a mosaic pattern that helps ensure proper neural network formation and information processing throughout the visual field. The vertebrate Dscams (DSCAM and DSCAML1) are cell adhesion molecules that support the development of this organization by promoting self-avoidance at the level of cell types, promoting normal developmental cell death, and directing vertical neurite stratification. To understand the molecular interactions required for these activities, we tested the functional significance of the interaction between the C-terminus of the Dscams and multi-PDZ domain-containing scaffolding proteins in mouse. We hypothesized that this PDZ-interacting domain would mediate a subset of the Dscams\u2019 functions. Instead, we found that in the absence of these interactions, some cell types developed almost normally, while others resembled complete loss of function. Thus, we show differential dependence on this domain for Dscams\u2019 functions in different cell types.\n\n## Introduction\n\nThe vertebrate retina provides an advantageous model to study how specific neuronal cell types organize themselves during development to form functional circuits. The ~100 neuronal cell types of the retina vertically organize into layers, with light-transducing photoreceptors in the outermost cellular layer (ONL, or outer nuclear layer) and retinal ganglion cells (RGCs) \u2013 responsible for the sole output from the retina \u2013 in the innermost layer (RGL, or retinal ganglion cell layer). Between these, both functionally and physically, are the interneuron cell types (horizontal, amacrine, and bipolar cells) in the inner nuclear layer (INL), which process and relay visual information from photoreceptors to RGCs. These three cellular layers are separated by two synaptic plexiform layers, where the neurites from these cell types mingle and form synaptic connections with specific partners in specific substrata. Additionally, many cell types are horizontally spaced in a mosaic pattern, such that there is a low probability of finding two neurons of the same subtype (i.e., homotypic) in close proximity. This pattern ensures that the information processing provided by each subtype is distributed across the retina (Masland, 2012).\n\nEstablishing this pattern requires cells to be able to recognize other cells of the same type and avoid them, while also stably interacting with appropriate synaptic partners (Garrett and Burgess, 2011). Critical parts of this recognition code include Down syndrome cell adhesion molecule (DSCAM) and the highly similar Dscam-like1 (DSCAML1), collectively referred to as Dscams. Dscam and Dscaml1 encode homophilic members of the Ig-superfamily of cell adhesion molecules, and are expressed in non-overlapping neuronal subtypes in the retina (Agarwala et al., 2001; Fuerst et al., 2009; Yamagata and Sanes, 2008). The Dscams promote self-avoidance at the cell type level: When either gene is mutated, the cell types that normally express the Dscam lose their mosaic spacing and often form clusters (Fuerst et al., 2009, 2008). The neurites fail to evenly cover their receptive fields, and instead form fascicles with neighboring homotypic cells. This clustering and fasciculation is, with few exceptions, homotypic \u2013 cells of one subtype rarely cluster with the\u00a0cells of another subtype. Self-avoidance requires homophilic Dscam interactions between cells, demonstrated in mosaic experiments where neurons lacking Dscam fasciculate with homotypic neurons with intact Dscam (Fuerst et al., 2012). This self-avoidance function is consistent with studies in Drosophila, which have four Dscam genes. Most notably, Dscam1 promotes self-avoidance at the individual cell level by using alternative splicing to produce 19,008 distinctly homophilic isoforms, allowing each neuron to recognize and avoid 'self' while still interacting with 'non-self' during processes like dendrite arborization and axon branching (reviewed in [Zipursky and Grueber, 2013]).\n\nDscams are also required for normal developmental cell death. In the\u00a0mutant mice, there is an overabundance of each affected cell type, resulting in a severe expansion of the retina through the cellular and plexiform layers. The extent of cell number expansion varies with cell type. Some cell types are expanded beyond even that seen in mutants for the pro-apoptotic Bax gene, while others are more modestly expanded compared to Bax mutants (Fuerst et al., 2009, 2008; Keeley et al., 2012).\n\nDscams also contribute to the vertical organization of the retina. In chick, Dscams label-specific sublaminae of the IPL and can instruct neurite targeting to these layers (Yamagata and Sanes, 2008). DSCAM protein localization is punctate throughout the IPL in mouse, and is not confined to specific sublaminae (de Andrade et al., 2014). Despite this, some neuronal types do have disorganized neurite stratification in Dscam mutants, although the disorganization varies with genetic background (Fuerst et al., 2010). There are also indications that the synaptic connections that form do not mature normally. For instance, Dscaml1 is expressed both in rod bipolar cells and AII amacrine cells, which connect at dyad ribbon synapses in the IPL. These synapses can still be found in Dscaml1 mutants, but are morphologically abnormal, with indistinct, detached presynaptic ribbons, and functionally abnormal, with much slower decay of the synaptic current (Fuerst et al., 2009).\n\nThe mechanisms by which the Dscams mediate their developmental functions are unknown. One attractive hypothesis is that different functions, including cell death, self-avoidance, and synapse maturation, are mediated by different molecular interactions in the cytosol. Signaling molecules have been found in complex with Dscam1 in Drosophila (e.g., Dock/Pak, Ableson, tubulin binding cofactor D [Okumura et al., 2015; Schmucker et al., 2000; Sterne et al., 2015]) and DSCAM in vertebrates (e.g., PAK1, FAK, Fyn [Purohit et al., 2012]). Both DSCAM and DSCAML1 also have canonical PDZ-interacting motifs at their C-termini by which they interact with scaffolding proteins in the MAGI (membrane-associated guanylate kinase with inverted orientation) and PSD95 families (Yamagata and Sanes, 2010). Because this motif is common to both Dscams, we chose to test the functional significance of these C-terminal interactions, with the initial hypothesis that this interaction would be required for a specific subset of Dscams\u2019 functions.\n\nWe engineered mouse mutations in which the sequences encoding the final 10 amino acids of DSCAM and DSCAML1, which interact with PDZ domain-containing proteins, were replaced with epitope tags. Contrary to our initial hypothesis, we found that rather than distinguishing phenotypes based on specific molecular mechanisms, these mutations distinguished cell types. Some cell types were essentially like controls in cell number, spacing, and stratification, whereas others were nearly as disrupted as null mutants. Still other cell types were intermediate in severity. Together, these results demonstrate that different cell types have different dependencies on the PDZ-interacting C-termini of Dscams for function, indicating multiple intracellular molecular mechanisms are involved.\n\n## Results\n\n### Deletion of the PDZ-interacting C-terminus of DSCAM\n\nThe molecular interactions through which DSCAM could function may involve extracellular interactions, intracellular interactions with other membrane proteins, or initiation of intracellular signaling pathways. We reasoned that a tractable first step in dissecting these possibilities would be to disrupt the C-terminus of DSCAM. Both DSCAM and DSCAML1 have canonical PDZ-interacting domains at their C-termini, and have been shown to interact with PSD-95 and MAGI family members (Yamagata and Sanes, 2010) (Figure 1\u2014figure supplement 1).\n\nTo assess the functional relevance of DSCAM\u2019s PDZ-binding motif, we generated a targeted allele of Dscam, in which the sequence encoding the C-terminal 10 amino acids was replaced with sequence encoding a Myc epitope tag (Dscam\u0394C, see Figure 1A and Materials\u00a0and\u00a0methods). Deletion of these final 10 amino acids disrupts the canonical binding to the hydrophobic pocket of PDZ domains (Doyle et al., 1996), and this DSCAM-\u2206C mutation markedly reduced MAGI-3 association in co-immunoprecipitation experiments with the DSCAM intracellular domain (ICD) when co-transfected in HEK293T cells (Figure 1B). The residual interaction may be an artifact of overexpression, or may reflect interactions between the ICD of DSCAM and MAGI3 that are not dependent on the canonical C-terminal PDZ-interacting domain, but nonetheless, the affinity is greatly reduced and given results described below for DSCAML1-\u25b3C, we have successfully interfered with the interactions between Dscams and PDZ-domain-containing proteins using this strategy. Unlike null mutants, which do not survive on a C57BL/6 background, Dscam\u0394C/\u0394C mice survived without hydrocephaly or any of the overt phenotypes observed in null animals (Amano et al., 2009; Fuerst et al., 2010, 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig1-v1.jpg)\n\n**Figure 1.:** (A) In the Dscam\u2206C allele, the sequence encoding the final ten amino acids was replaced with a Myc tag by homologous recombination. (B) Western blots of protein immunoprecipitated from HEK293T cells co-transfected with MAGI-3 and V5-tagged DSCAM intracellular domain (ICD) or V5-tagged DSCAM-\u2206C ICD (\u2206C) demonstrates that the \u2206C mutation disrupts the PDZ-binding of DSCAM\u2019s C-terminus. (C) Western blots of DSCAM protein immunoprecipitated from neonatal brains showed no change in the size or amount of DSCAM in Dscam\u2206C/\u2206C mutants. The antibody specificity is confirmed by the lack of signal from Dscam-/- brains. (D\u2013F) Immunofluorescent labeling for DSCAM in vertically sectioned retinas from 3-week old mice demonstrated that the protein is found in a normal, punctate localization in the synaptic plexiform layers in Dscam+/+ (D) and Dscam\u2206C/\u2206C (E) mice, consistent with earlier reports for wild type DSCAM (de Andrade et al., 2014). No staining above background was found in Dscam-/- retinas (F), demonstrating the specificity of the DSCAM antibody. (G\u2013I) Hematoxylin and eosin staining of adult retinas shows that, compared to controls (G), Dscam-/- retinas (I) are severely expanded and disorganized. Dscam\u2206C/\u2206C retinas (H) have modest expansion, but not the extensive disorganization found in the null mutant. Scale bar is 100 \u00b5m. See also Figure 1\u2014figure supplement 1 and Figure 1\u2014figure supplement 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A,B) Both MAGI-2 and MAGI-3 were found to interact with DSCAM by yeast two-hybrid. The C-terminal 20 amino acids of DSCAM (PDZ) were used as bait and the Gal4 binding domain alone (GBD) was used as a negative control. Successful interaction is revealed by the expression of \u03b2-galactosidase on LacZ (A, note colony color) and expression of HIS3 promoting survival on plates without histidine (B, -His). When transfected into HEK293T cells, both DSCAM (C) and DSCAM-\u2206C (D) protein localized to the cell surface as revealed by live cell staining with an antibody raised against the entire extracellular domain.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A\u2013F) Confocal images of P9 retinas immunolabeled for DSCAM and melanopsin show normal colocalization between the proteins in control (A\u2013C) Dscam\u2206C/\u2206C animals (D\u2013F). The colocalization is quantified in G. N = 4 retinas per genotype. *p<0.05. (H\u2013L) Confocal images of P7 retinas immunolabeled for DSCAM collected under standardized microscope settings from Dscam+/+ (H), Dscam-/+ (I), Dscam\u2206C/\u2206C (J), and Dscam-/- (K) retinas show the relative staining intensities in each mouse. (L) Intensities were measured along a 10 \u00b5m line adjacent and perpendicular to the INL, a region that includes S1. Fluorescence intensity in Dscam\u2206C/\u2206C retinas was not reduced. Box plots represent the median, first and third quartile, range, and outliers. N = 6 retinas each for Dscam+/+, Dscam-/+, and Dscam\u2206C/\u2206C genotypes and 2 retinas for Dscam-/-. *p<0.05.\n\nConsistent with the milder phenotype of Dscam\u0394C/\u0394C mice, the protein appears to be stable and properly localized. When transfected into HEK293T cells, DSCAM-\u2206C protein was produced and targeted to the membrane at levels similar to that of full length DSCAM (Figure 1\u2014figure supplement 1). To test if DSCAM-\u2206C protein was stable in vivo, we immunoprecipitated protein from neonatal brains using an antibody against DSCAM, and performed Western blots with a second anti-DSCAM antibody. The relative abundance and size of DSCAM protein was indistinguishable between Dscam+/+ and Dscam\u0394C/\u0394C samples, while negative control Dscam-/- samples were devoid of DSCAM protein, as expected (Figure 1C). In the retina, DSCAM acquires a punctate localization in the synaptic plexiform layers (de Andrade et al., 2014). At three weeks of age, there was no obvious mislocalization or reduction in labeling in cryosections from Dscam\u0394C/\u0394C retinas labeled for DSCAM by immunofluorescence (Figure 1D\u2013F, and Figure 1\u2014figure supplement 2).\n\nIn contrast to spontaneous Dscam-/- mutants, which display severely disrupted retinal histology, with expanded and grossly disorganized inner nuclear, inner plexiform, and retinal ganglion cell layers (Fuerst et al., 2008) (Figure 1G,I), Dscam\u0394C/\u0394C retinas showed some expansion and disorganization, but a milder phenotype than in Dscam-/- animals (Figure 1H). Thus, Dscam\u0394C/\u0394C mice produce and localize DSCAM normally, and have a less severe gross histological defect. This intermediate phenotype could be the result of milder, partial-loss-of-function phenotypes in all Dscam-expressing cell types, or it could be that now only some cell types display the Dscam phenotype, whereas others are normal. The latter appears to be the case, based on our results below.\n\n### Differential dependence DSCAM/PDZ interactions across cell types\n\nWe analyzed the spacing and density of dopaminergic amacrine cells (DA cells, tyrosine hydroxylase-positive, Figure 2A\u2013C) and bNOS-positive amacrine cells (Figure 2H\u2013J), both of which form homotypic clusters and increase in number in Dscam-/- mutants (Fuerst et al., 2008). We measured cell spacing with three distinct tests: density recovery profiling (DRP), Voronoi tessellation domain analysis, and nearest neighbor analysis. Each of these tests provides a measure of spacing independent of overall density. DRP plots the density of cells at binned distances from each individual cell. When cells are randomly spaced, the density within each bin is equal to the overall density. When cells are mosaically spaced, there is an 'exclusion zone' where bins close to each reference cell have a lower density than the overall field. If cells are clustered then the near bins have a higher density than the overall field (Rodieck, 1991). In addition to providing a visual representation of cell spacing, DRP also calculates a 'packing factor,' which we used for statistical comparison. A perfectly ordered array of cells has a packing factor of 1, while an array of cells with no exclusion zone has a packing factor of 0 (Rodieck, 1991). In Voronoi tessellation domain analysis, each point in the image is assigned to the domain of the nearest cell, creating a tessellation (e.g., Figure 2\u2014figure supplement 1). In images of mosaically spaced cells, the domains are relatively uniform in size, while images of more irregularly spaced cells display a greater variance of domain areas. Calculating the ratio of the variance to the mean of these areas controls for overall cell density (Khiripet et al., 2012). Finally, nearest neighbor analysis measures the distance from each cell to its nearest neighbor. The nearest neighbor regularity index (NNRI) is calculated for each image by dividing the mean nearest neighbor distance by the standard deviation. To control for cell density, the measured NNRI is divided by the NNRI from a randomly generated array of an equal number of points (Keeley and Reese, 2014; Rodieck, 1991). p-values from all pairwise comparisons are in Supplementary file 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013C)\u00a0Dopaminergic amacrine cells (stained for tyrosine hydroxylase, TH) are non-randomly spaced in wild type retinas (A), but lose mosaic spacing and form neurite fascicles in two-week old Dscam\u2206C/\u2206C (B) and Dscam-/- (C) retinas. (D) In both mutants, there was a significant increase in cell density. Spacing was quantified by DRP analysis; relative cell densities normalized to the overall density at increasing distances from reference cells are plotted in (E). By Voronoi (F) and nearest neighbor (G) analyses spacing in Dscam\u2206C/\u2206C retinas was not significantly different than in Dscam-/- animals. (H\u2013J) Conversely, bNOS-positive amacrine cells were not visibly different between controls (H) and Dscam\u2206C/\u2206C retinas (I) despite clear fasciculation and loss of mosaic spacing in Dscam-/- mice (J). Dscam\u2206C/\u2206C values were intermediate between control and Dscam\u2206C/\u2206C in cell density (K), DRP (L), Voronoi (M), and nearest neighbor (N) analyses, but differences from control were not statistically significant. Means \u00b1 s.e.m. are represented in D\u2013E, K\u2013L. Box plots represent the median, first and third quartile, range, and outliers. N = 4\u20138 retinas per genotype. *p<0.05; **p<0.01; ***p<0.001; n.s. is not significant by Tukey post-hoc test between indicated genotypes or compared to controls. Scale bar is 100 \u00b5m. Representative Voronoi domains are in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative Voronoi tessellation domains of TH-positive DA cells (A\u2013C) and bNOS-positive amacrine cells (D\u2013F) show the differential effect of the C-terminal deletion.\n\nUnexpectedly, when these tests were applied to DA and bNOS-positive cells, we found a differential dependence on the PDZ-binding domain. DA cells had a significant increase in cell density and a loss of mosaic spacing in Dscam\u2206C/\u2206C mice (Figure 2D\u2013G, Figure 2\u2014figure supplement 1). By all measures, DA cell organization in Dscam\u2206C/\u2206C retinas was indistinguishable from that of Dscam-/- mice. Conversely, bNOS-positive amacrine cells in Dscam\u2206C/\u2206C mice showed little, if any, disruption in organization. bNOS-positive amacrine cells maintained a clear exclusion zone in Dscam\u2206C/\u2206C mice, and were not significantly different from wildtype controls by any spacing measure, nor did their overall cell density differ from controls (Figure 2K\u2013N, Figure 2\u2014figure supplement 1).\n\nTo ask if this differential dependence on the PDZ-interacting C-terminus extended to other cell types, we analyzed two populations of RGCs: intrinsically photosensitive retinal ganglion cells (ipRGCs), and cells labeled in the Cdh3-GFP GENSAT transgenic line (Osterhout et al., 2011). ipRGCs include as many as five distinct populations which can be differentiated by morphology, but only three of these subtypes \u2013 M1, M2, and M3 \u2013 are labeled by an antibody to melanopsin postnatally (Schmidt et al., 2011). M1 cells stratify their dendrites to the outermost lamina in the OFF region of the inner plexiform retina and stain the brightest for melanopsin. M2 cells stratify in the ON layer much closer to the RGC cell bodies. M3 cells are bistratified, but are much more rare than the M1 or M2 population. ipRGCs are among the most clustered and fasciculated cell types in Dscam-/- mutants; both M1 and M2 cells are severely clustered with tight dendritic fascicles (Figure 3A,C, and [Fuerst et al., 2009]). In Dscam\u2206C/\u2206C mutants, cell bodies were clearly clustered, albeit not as severely as in Dscam-/- mice (Figure 3B,E\u2013G, Figure 3\u2014figure supplement 1). Cell density appeared to be modestly increased compared to controls, but the difference was not statistically significant (Figure 3D). Thus, in general, ipRGCs were intermediately affected. The\u00a0Cdh3-GFP RGC cell number was increased in Dscam-/- mutants, and the cell bodies aggregated into clusters (Figure 3H,J). In contrast, cell number was not significantly increased in Dscam\u0394C/\u0394C retinas, and the cell body clustering observed in Dscam-/- mutants was not observed (Figure 3I,K\u2013N, Figure 3\u2014figure supplement 1). Thus, in both amacrine and ganglion cells, some cell types require the PDZ-interacting C-terminus of DSCAM for its function, whereas in other cell types, this domain is largely dispensable. Furthermore, the functions of DSCAM in promoting cell death and self-avoidance change in parallel and are not separated by the perturbation of this intracellular interaction.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013C) Melanopsin-positive intrinsically photoresponsive retinal ganglion cells are found in a mosaic pattern in wild type retinas (A), but at two weeks of age, ipRGC cell bodies in Dscam\u2206C/\u2206C (B) retinas are pulled into clusters similar to those in Dscam-/- (C) retinas. (D) Overall ipRGC density was not significantly increased in Dscam\u2206C/\u2206C retinas. (E) By DRP, cell body clustering was intermediate between Dscam+/+ and Dscam-/- retinas. Voronoi (F) and nearest neighbor (G) analyses also revealed a clear intermediate defect. Values from Dscam\u2206C/\u2206C retinas were significantly different from both control and Dscam-/- mutants. (H\u2013J) Cdh3-GFP RGCs are mosaically spaced in control retinas (H), and this spacing is not perturbed in the Dscam\u2206C/\u2206C retinas (I), but these cells form clusters in Dscam-/- animals (J), indicating interactions mediated by DSCAM\u2019s C-terminus are dispensable to prevent these cells from clustering. (K) Cdh3-GFP RGC overall cell density was significantly increased in Dscam-/- retinas, but not in Dscam\u2206C/\u2206C mutants. (L) A clear exclusion zone is detectable by DRP analysis in Dscam+/+ and Dscam\u2206C/\u2206C retinas. This exclusion zone is lost in Dscam-/- animals, where cell density is increased adjacent to any given cell, indicative of clustering. Similarly, Voronoi (M) and nearest neighbor (N) analyses describe a clear spacing defect in Dscam-/- but not in Dscam\u2206C/\u2206C retinas. Means \u00b1 s.e.m. are represented in D\u2013E, K\u2013L. Box plots represent the median, first and third quartile, range, and outliers. N\u00a0= 6 retinas per genotype. *p<0.05; **p<0.01; ***p<0.001; n.s. is not significant by Tukey post-hoc test between indicated genotypes or compared to controls. Scale bar is 250 \u00b5m. Representative Voronoi domains are in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Representative Voronoi tessellation domains of melanopsin-positive ipRGCs (A\u2013C) and Cdh3-GFP RGCs (D\u2013F) show the differential effect of the C-terminal deletion.\n\nOne possible explanation for this differential dependence could be that DSCAM-\u2206C protein is fully functional, but selectively unstable in some cell types, such as DA cells and ipRGCs, which are affected by the C-terminal deletion, but maintained at normal levels in other cell types, such as bNOS-positive amacrine cells, which are largely unaffected by the C-terminal deletion. We used two methods to assess selective instability. First, we quantified the colocalization between DSCAM and melanopsin to see if there was a reduction in DSCAM specifically in ipRGCs. We did not find any difference in this colocalization between Dscam+/+\u00a0and Dscam\u2206C/\u2206C retinas (Figure 1\u2014figure supplement 2). Second, we quantified the fluorescence intensity of Dscam staining in cryosections along a 10\u00a0\u00b5m line perpendicular to the INL directly adjacent to this cellular layer. This region includes the S1 lamina in which DA cells stratify their neurites. No reduced fluorescence intensity was detectable in Dscam\u2206C/\u2206C retinas, whereas we could detect a trend towards reduced labeling in heterozygous Dscam+/-\u00a0images relative to Dscam+/+ controls, (Figure 1\u2014figure supplement 1E\u2013I). Thus, neither immunofluorescence nor immunoprecipitation (Figure 1B) provide any evidence supporting protein instability. It remains possible, however, that a subtle difference in cell-type specific protein stability or localization beyond the resolution of these experiments could contribute to the range of phenotypes we have observed. Similarly, the tag could be interfering with function in some cell types; however, we do not believe this to be the case as we performed similar experiments with DSCAML1 using a different tag and obtained similar results, as described below.\n\n### Dependence on DSCAML1 C-terminal interactions also varies with cell type\n\nDscam and Dscaml1 serve similar functions in the retina, but in different cell types based on their non-overlapping expression patterns. Dscaml1 is expressed in the cells that contribute to the rod circuit, including rod photoreceptors, rod bipolar cells (RBCs), and AII amacrine cells (Fuerst et al., 2009), as well as a population of previously undefined cells in the inner nuclear layer. To test if DSCAML1 functions, like DSCAM, require C-terminus-mediated PDZ-interactions in only some cell types, we created mice harboring a similar replacement of the final ten amino acids of DSCAML1 with an epitope tag (HA) using the same strategy as described for DSCAM (Figure 4A). DSCAML1-\u2206C protein was stable and localized to the cell surface in transfected HEK293T cells. In a surface biotinylation assay, comparable proportions of DSCAML1-\u2206C and full-length DSCAML1 proteins were at the surface (not shown). DSCAML1-\u2206C protein had the expected membrane topology, but did not co-immunoprecipitate with MAGI-3 (Figure 4\u2014figure supplement 1). Like Dscam, Dscaml1\u2206C/\u2206C retinas were modestly expanded, but not so severely as in Dscaml1-/- mutants (Figure 4B\u2013D).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig4-v1.jpg)\n\n**Figure 4.:** (A) Dscaml1\u2206C/\u2206Cmutant mice were generated by replacing the sequence encoding the final ten amino acids with an HA tag by homologous recombination. See also Figure 4\u2014figure supplement 1. (B\u2013D) Hematoxylin and eosin staining of adult retinas shows that, compared to controls (B), Dscaml1-/- retinas (D) are significantly expanded and disorganized. Dscaml1\u2206C/\u2206C retinas (C) have a more intermediate expansion without the extensive disorganization found in the null mutant. (E\u2013G) AII amacrine cells (Dab1-positive) are organized in a mosaic pattern in two-week old control retinas (E). This pattern is disrupted in Dscaml1\u2206C/\u2206C retinas (F), but not as severely as in Dscaml1-/- retinas (G), where the cells form clusters. (H) There was a significant increase in cell density in Dscaml1-/- but not in Dscaml1\u2206C/\u2206C animals. I) DRP analysis revealed an intermediate effect in Dscaml1\u2206C/\u2206C retinas between the clear exclusion zone in control and clustering in Dscaml1-/-. AII amacrine spacing was slightly disrupted in Dscaml1\u2206C/\u2206C retinas by Voronoi analysis (J) but not by nearest neighbor analysis (K). L-N) Conversely, compared to controls (L) the disruption of VGLUT3-positive amacrine cell spacing in Dscaml1\u2206C/\u2206C (M) retinas was more similar to that in Dscaml1-/- (N) retinas. (O) VGLUT3-positive amacrine cell density was significantly increased in both Dscaml1\u2206C/\u2206C and Dscaml1-/- animals. (P) DRP analysis reveals the loss of exclusion zone in both mutants. (Q,R) Dscaml1\u2206C/\u2206C values were significantly different from controls in both Voronoi and nearest neighbor analyses. Means \u00b1 s.e.m. are represented in H\u2013I, O\u2013P. Box plots represent the median, first and third quartile, range, and outliers. N = 6\u20138 retinas per genotype. *p<0.05; ***p<0.001; n.s. is not significant by Tukey post-hoc test between indicated genotypes or compared to controls. Scale bars are 100 \u00b5m. Representative Voronoi domains are in Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Live staining of HEK293T cells transfected with full-length DSCAML1 with an N-terminal HA tag (A) and DSCAML1-\u2206C with a C-terminal HA tag (B) show that, for both proteins as expected, the N-terminus is presented to the extracellular space and the C-terminus to the cytoplasm. (C) Western blots of protein immunoprecipitated from HEK293T cells co-transfected with MAGI-3 and V5-tagged DSCAML1 intracellular domain (ICD) or V5-tagged DSCAML1-\u2206C ICD (\u2206C) demonstrates that the \u2206C mutation disrupts the PDZ-binding of DSCAML1\u2019s C-terminus.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Representative Voronoi tessellation domains of AII amacrine cells (A\u2013C, Dab1) and VGLUT3-positive amacrine cells (D\u2013F) show the differential effect of the C-terminal deletion.\n\nWe assessed the density and spacing of two cell types: AII amacrine cells and VGLUT3-positive amacrine cells. Both cell types increase in number and lose mosaic spacing in Dscaml1-/- mutants (Figure 4E,G,L,N and [Fuerst et al., 2009]). AII amacrine cells in Dscaml1\u2206C/\u2206C mice were subtly disrupted, but more similar to the control condition than to that of Dscaml1-/- animals (Figure 4F). There was no increase in cell density, and cells did not form clusters in Dscaml1\u2206C/\u2206C mice, as they did in Dscaml1-/- animals, as measured by DRP or nearest neighbor analysis (Figure 4H,I,K). There was, however, an increased covariance of Voronoi tessellation domain areas compared to controls (Figure 4J, Figure 4\u2014figure supplement 2) indicative of irregular spacing. Conversely, VGLUT3-positive amacrine cells in Dscaml1\u2206C/\u2206C mice were more similar to Dscaml1-/- than to controls (Figure 4L\u2013N). Cell number was significantly increased, and DRP, Voronoi, and nearest neighbor analyses all indicated a significant loss of mosaic spacing (Figure 4O\u2013R, Figure 4\u2014figure supplement 2). Thus, as with DSCAM, some cell types have a greater dependence on DSCAML1 C-terminus than do others.\n\n### Increased cell number is not sufficient to explain self-avoidance defects in \u2206C mutants\n\nIncreased cell number from a lack of cell death can disrupt mosaic spacing in some cell types, although not as severely as Dscam-/- mutation (Keeley et al., 2012). To ask how much the increased cell number in \u2206C mutants contributed to abnormal spacing, we compared the cell types affected in Dscam\u2206C/\u2206C (ipRGCs and DA cells) and Dscaml1\u2206C/\u2206C (VGLUT3-positive amacrine cells) to Bax-/-\u00a0mutants. In all three cases, cell density was, if anything, higher in Bax-/- retinas than in \u2206C mutants (Figure 5A,E,I), although this was only significant for VGLUT3 cells. ipRGCs were more severely clustered in Dscam\u2206C/\u2206C than in Bax-/- animals, as measured by DRP packing factor (Figure 5B) and Voronoi domain analysis (Figure 5C), but were not significantly different by nearest neighbor analysis (Figure 5D). DA cell spacing was similarly disrupted in Bax-/-mutants as in Dscam\u2206C/\u2206C (Figure 5F\u2013H), while VGLUT3-positive cells in Dscaml1\u2206C/\u2206C were significantly more disrupted by Voronoi and nearest neighbor analyses, but not by DRP packing factor, despite a significantly lower cell density than Bax-/- retinas (Figure 5I\u2013L). Therefore, cell spacing of ipRGCs and VGLUT3-positive amacrine cells was more severely disrupted in \u2206C mutants than could be explained by increased cell number alone.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig5-v1.jpg)\n\n**Figure 5.:** (A) ipRGC cell density was similar in Dscam\u2206C/\u2206C and Bax-/- retinas. Despite this, clustering was more severe in Dscam\u2206C/\u2206C as measured by DRP (B) and Voronoi (C), but not by nearest neighbor analysis (D). (E) Likewise, DA cell density was similar in Dscam\u2206C/\u2206C and Bax-/- retinas. However, DA cell spacing was not significantly different between Dscam\u2206C/\u2206C and Bax-/- mutants (F\u2013H). (I) VGLUT3-positive amacrine cell density was significantly higher in Bax-/- than in Dscaml1\u2206C/\u2206C retinas. Mosaic spacing was more disrupted in Dscaml1\u2206C/\u2206C as measured by Voronoi domain analysis (K) and nearest neighbor (L) but not by DRP (J). Means \u00b1 s.e.m. are represented in A\u2013B, E\u2013F, I\u2013J. Box plots represent the median, first and third quartile, range, and outliers. *p<0.05; **p<0.01; ***p<0.001; n.s. is not significant by student\u2019s t-test.\n\nThe exception to this observation was DA cells, in which case the increased density in Bax-/- retinas disrupted cell body mosaics to a similar extent as loss of the C-terminus of DSCAM (Figure 5F\u2013H). However, we observed that the DA neurites were not severely fasciculated in Bax-/- mutants (Figure 6D). To separately evaluate neurite fasciculation, we developed a method to quantify fasciculation. In this technique, observers blind to genotype were asked to choose which of two randomly presented images was less fasciculated without regard to cell number. A score was generated for each image based on iterative head-to-head matchups by an Elo algorithm (Elo, 1978), which uses these win-loss matchups to efficiently sort the images (Elo score, see Materials and methods). Images that the observers consistently deemed less fasciculated received high scores, while those deemed more fasciculated received low scores. The mean score per retina was used to compare across genotypes by a Wilcoxon rank sum test with the Benjamini and Hochberg correction. For DA cells, there was significantly more severe fasciculation in Dscam\u2206C/\u2206C and Dscam-/-\u00a0retinas than in controls or Bax-/- retinas (Figure 6A\u2013D,M).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig6-v1.jpg)\n\n**Figure 6.:** (A) DA cell neurites evenly fill their receptive fields in control mice, but form fascicles in Dscam\u2206C/\u2206C (B) and Dscam-/- (C) animals. (D) DA fascicles are rarely observed in Bax-/- mutants. (E) M2 ipRGC dendrites imaged in the ON region of the IPL are evenly distributed in wild type mice and largely remain so in Dscam\u2206C/\u2206C (F) and Bax-/- (H) mutants, while severe fasciculation is evident in Dscam-/- retinas (G). I) In the OFF strata of the IPL, M1 ipRGC dendrites are diffusely organized. There is modest fasciculation in Dscam\u2206C/\u2206C (J) and Bax-/- (L) mice, while fasciculation in Dscam-/- retinas (K) is much more severe. (M\u2013O) Elo ranking of fasciculation severity between genotypes demonstrates that DA neurites (M) are clearly fasciculated in Dscam\u2206C/\u2206C and Dscam-/- retinas, but not in Bax-/-, which had loss of mosaic cell body spacing. Conversely, ipRGCs in Dscam\u2206C/\u2206C did not have significantly more fasciculation than Bax-/- either in the ON (N) or OFF (O) layers, despite having a\u00a0more severe cell body clustering. Box plots represent the median, first and third quartile, range, and outliers. *p<0.05; **p<0.01; ***p<0.001; n.s. is not significant by Wilcoxon rank sum test. Scale bar is 250 \u00b5m. See also Figure 6\u2014figure supplement 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Fasciculation of Cdh3-GFP RGC dendrites (A\u2013C) and bNOS-positive neurites (D\u2013G) were compared between genotypes at two weeks of age. (H) Elo ranking of fasciculation severity demonstrates that Cdh3-GFP RGC dendrites are clearly fasciculated in Dscam-/- retinas, but not in Dscam\u2206C/\u2206C or control retinas. (I) Similarly, bNOS-positive neurites were fasciculated in Dscam-/- retinas, but not in Dscam\u2206C/\u2206C or controls, and there was only mild fasciculation in Bax-/-\u00a0animals. Box plots represent the median, first and third quartile, range, and outliers. *p<0.05; **p<0.01; n.s. is not significant by Wilcoxon rank sum test. Scale bar is 250 \u00b5m.\n\nWe next applied this technique for grading dendrite fasciculation to ipRGCs by collapsing individual z-stacks of images into distinct projections through the ON portion (Figure 6E\u2013H) and through the OFF portion (Figure 6I\u2013L) of the IPL. Here, clear differences between Dscam\u2206C/\u2206C and Dscam-/- retinas were visible. In the ON layer (predominantly M2 cells) dendritic labeling was denser directly above clustered cell bodies, but spread out to evenly cover the field in Dscam\u2206C/\u2206C images (Figure 6F). The Elo score could not distinguish Dscam\u2206C/\u2206C retinas from control or from Bax-/- retinas, but Dscam-/- fasciculation was significantly more severe than in all other genotypes (Figure 6G,N). In the OFF layer (predominantly M1 cells) there were smaller and fewer fascicles in Dscam\u2206C/\u2206C than in null retinas (Figure 6J\u2013K). Indeed, by Elo score Dscam\u2206C/\u2206C retinas were intermediately fasciculated between control and Dscam-/- but were indistinguishable from Bax-/-\u00a0mutants (Figure 6O).\n\nWe also assessed the fasciculation of Cdh3-GFP RGC dendrites and found tight fasciculation in Dscam-/- mutants, but no discernable difference between Dscam\u0394C/\u0394C and control retinas (Figure 6\u2014figure supplement 1). Similarly, bNOS-positive amacrine cells had mild fasciculation, if any, in Dscam\u0394C/\u0394C and Bax-/-\u00a0mutants (Figure 6\u2014figure supplement 1).\n\nThus, increased cell density can contribute to abnormal spacing and dendrite fasciculation in some cell types as previously reported (Keeley et al., 2012), but is not sufficient to explain the self-avoidance deficits and especially the fasciculation of processes found Dscam-/- retinas, and to varying degrees, in \u2206C mutant retinas.\n\n### PDZ-interacting C-termini promote neurite stratification in some cell types\n\nDscams promote normal neurite stratification in some cell types, although this is sensitive to genetic background. bNOS-positive amacrine cells are largely disorganized in Dscam mutants on a C3H background, but not in mixed C57BL/6 \u2013 BALBc strains (Fuerst et al., 2010). This has not been assessed in null mutants on a clean C57BL/6 background, as these mice die at birth (Amano et al., 2009). We inspected bNOS-positive amacrine stratification in Dscam\u2206C/\u2206C retinas, which are on a C57BL/6 background, and found no abnormalities (Figure 7A\u2013B). DA cell and M1 ipRGCs co-stratify correctly in the OFF region of the IPL in Dscam-/-\u00a0mutants (Fuerst et al., 2009), and both correctly targeted in Dscam\u2206C/\u2206C mutants as well (Figure 7C\u2013D). DA and M1 ipRGCs provide the only clear example we have seen of co-fasciculation in Dscam-/-mutants (Fuerst et al., 2009). In Dscam\u2206C/\u2206C mutants, DA cells are severely fasciculated (Figure 6M), while M1 ipRGCs more mildly so (Figure 6O). Interestingly, there is a\u00a0clear co-fasciculation between these cell types in Dscam\u2206C/\u2206C mutants (Figure 7E), suggesting that the M1 fasciculation may be influenced by the DA cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16144/elife-16144-fig7-v1.jpg)\n\n**Figure 7.:** Neurite stratification in the IPL was analyzed in immunolabeled cryosections. (A,B) bNOS-positive amacrine cells stratified normally in Dscam\u2206C/\u2206C retinas, as did ipRGCs and DA cells (C,D), which co-stratify in the OFF region adjacent to the INL. (E) Imaged en face, DA neurites co-fasciculated with ipRGC dendrites in Dscam\u2206C/\u2206C mutants (arrowheads), as we have previously found in Dscam-/- retinas (Fuerst et al., 2009). In Dscaml1\u2206C/\u2206C\u00a0mutants, AII amacrine cells (F,G) and rod bipolar cells (H,I) terminate their processes normally. (J\u2013M) TEM analysis revealed that Dscaml1\u2206C/\u2206C retinas contained structurally normal dyad synapses between rod bipolar cells and AII/A17 amacrine cells with distinct ribbons (arrows). (K) Dscaml1-/- RBC dyad synapses are characterized by excess in synaptic vesicle number and indistinct ribbons. Four retinas analyzed by TEM per genotype, > 10 synapses inspected per retina. (N,O) VGLUT3-positive amacrine cells misprojected beyond the ON ChAT layer in Dscaml1\u2206C/\u2206C mutants. (P,Q) These ectopic neurites became associated with AII amacrine terminals adjacent to the retinal ganglion cell layer (arrowheads). This association was observable at 3 weeks of age (P) and persisted through adulthood (Q, 18 months of age). (R) These misprojections were quantified by imaging whole-mount retinas stained for VGLUT3 and Dab1 en face and calculating the percent of area occupied by VGLUT3 in projections through Dab1-positive AII amacrine terminals. Means \u00b1 s.e.m. at three threshold levels are represented in R. n\u00a0=\u00a06\u20138 retinas per genotype. Scale bar is 20 \u00b5m in A\u2013O, 110 \u00b5m in E, 10 \u00b5m in P,Q, and 500 nm in J\u2013M.\n\nIn Dscaml1-/- mutants, stratification and synaptic pairing between rod bipolar cells and AII amacrine cells is preserved (Fuerst et al., 2009). We found that to be the case in Dscaml1\u2206C/\u2206C mice as well: both cell types project to the ON region of the IPL adjacent to the RGL (Figure 7F\u2013I) where they connect at dyad synapses. In Dscaml1-/- mice, these synapses displayed features reminiscent of immature synapses, including malformed ribbons and an overabundance of synaptic vesicles (Figure 7K and [Fuerst et al., 2009]). We inspected the dyad synapses in Dscaml1\u2206C/\u2206C retinas by transmission electron microscopy, and failed to detect these synaptic phenotype reminiscent of the Dscaml1-/- mice (Figure 7L\u2013M), indicating that DSCAML1 promotes synapse maturation independent of C-terminal interactions.\n\nWe determined VGLUT3-positive amacrine cells depend on DSCAML1 C-terminal interactions for self-avoidance and normal developmental cell death (Figure 4). This population stratifies its neurites to the ON-OFF region of the IPL between the ChAT-positive laminae in wild type mice (Figure 7N). We found that in Dscaml1\u2206C/\u2206C mutants, some of these neurites projected past the ON ChAT band into the region where AII amacrines and RBCs target (Figure 7O). Indeed, much of the VGLUT3 labeling below the ON ChAT band was directly adjacent to Dab1-positive AII amacrine terminals (Figure 7P), an association that persisted through adulthood (18 months, Figure 7Q). We quantified this misprojection in whole mount retinas stained for VGLUT3 and Dab1 imaged en face. We made projections through the Dab1-positive terminals blind to the VGLUT3 channel and to genotype, then quantified the area occupied by VGLUT3 labeling at three threshold levels. VGLUT3 occupied a significantly greater percentage of area in Dscaml1\u2206C/\u2206C animals than in controls (2-way ANOVA, p<0.0001, Figure 7R).\n\nThus, in \u2206C mutants, we found cell types displaying defects in all three categories of Dscam function \u2013 cell death, self-avoidance, and neurite stratification \u2013 as well as cell types with relatively little dysfunction.\n\n## Discussion\n\nWe tested the functional significance of the Dscams\u2019 PDZ-interacting domains in vivoby replacing the C-terminal ten amino acids with epitope tags (Dscam\u2206C and Dscaml1\u2206C). The Dscams have similar functions in the different cell types in which they are expressed: (1) They promote developmental cell death, (2) they promote self-avoidance at the cell type level both between cell bodies and neurites, preventing cell body clustering and fasciculation of processes, and (3) they can promote the laminar specificity of neurite stratification and synapse maturation (Fuerst et al., 2009, 2008). We hypothesized that interactions with PDZ domain-containing proteins via the C-termini would mediate a subset of these functions. Instead, we found that a subset of cell types required the PDZ interaction for all of these functions; while in other cell types these processes could proceed relatively normally without the Dscams\u2019 C-termini. The phenotypes found in \u2206C mutants compared to null mutants are summarized by cell type in Table 1.\n\n**Table 1.**\n Phenotypes by cell type in \u2206C mutants. The phenotypes assessed in Dscam\u2206C/\u2206C and Dscaml1\u2206C/\u2206C are summarized. n.a. is not applicable, n.s. is not shown.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell type</th>\n      <th>Cell spacing</th>\n      <th>Cell density</th>\n      <th>Fasciculation</th>\n      <th>Neurite stratification</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DA</td>\n      <td>nearly null</td>\n      <td>nearly null</td>\n      <td>nearly null</td>\n      <td>normal</td>\n    </tr>\n    <tr>\n      <td>bNOS</td>\n      <td>nearly wild type</td>\n      <td>nearly wild type</td>\n      <td>nearly wild type</td>\n      <td>normal</td>\n    </tr>\n    <tr>\n      <td>Cdh3-GFP</td>\n      <td>nearly wild type</td>\n      <td>nearly wild type</td>\n      <td>nearly wild type</td>\n      <td>normal (n.s.)</td>\n    </tr>\n    <tr>\n      <td>ipRGC</td>\n      <td>Intermediate</td>\n      <td>nearly wild type</td>\n      <td>Intermediate</td>\n      <td>normal</td>\n    </tr>\n    <tr>\n      <td>VGLUT3</td>\n      <td>nearly null</td>\n      <td>nearly null</td>\n      <td>n.a.</td>\n      <td>misprojection</td>\n    </tr>\n    <tr>\n      <td>AII</td>\n      <td>Intermediate</td>\n      <td>nearly wild type</td>\n      <td>n.a.</td>\n      <td>normal</td>\n    </tr>\n  </tbody>\n</table>\n\nPhrased genetically, the Dscam-/- and Dscaml1-/- alleles represent a\u00a0complete loss of function. The functions we have defined, promoting developmental cell death, promoting self-avoidance in both processes and cell bodies to enable mosaic spacing and coverage factor, and promoting laminar specificity and synapse maturation in at least some cell types and genetic backgrounds, are based on the loss of function mutant phenotype. The deletion of the PDZ-binding C-termini of DSCAM and DSCAML1 had several possible outcomes in this context. It could have resulted in an unstable or mis-trafficked protein, causing a complete loss of function. Our data do not support this, as protein is found at normal levels by both immunoprecipitation and immunohistochemistry, is on the cell surface by live cell staining and surface biotinylation, and is in the correct topological orientation, although more subtle or specific defects may still have been missed by these analyses. The PDZ-interacting C-termini of DSCAM and DSCAML1 could also have been totally superfluous for its function. Consistent with previous results (Yamagata and Sanes, 2010), this also is not the case. A partial loss of function could have resulted in a subset of the phenotypically defined functions being present, and others being lost. Given the interaction with synaptic scaffolding proteins, a phenotype of impaired synapse maturation with normal developmental cell death and self-avoidance was a reasonable anticipated outcome. Interestingly, we instead found a partial loss of function at the level of cell types. Some cell types appear to almost completely require the C-termini, whereas in other cell types they are almost completely dispensable. In yet other cell types, the phenotype was intermediate, between wild type and the null, but all phenotypically defined functions changed roughly in parallel. An additional caveat is that the epitope tags used to replace the PDZ-binding motifs may contribute to these phenotypes. While this is formally possible, we believe that it is unlikely to be the case, as we used two different epitope tags (Myc and HA) with two different genes and found a similar range of phenotypes between different cell types. Thus, our main conclusion from these studies is that the requirement for a PDZ-interacting C-terminus in DSCAM or DSCAML1 is variable and depends on the cell type.\n\nHow cell adhesion molecules function to prevent adhesion and promote self-avoidance remains and interesting question. The other well described mediators of self-avoidance function by generating thousands of distinctly homophilic recognition units (Zipursky and Grueber, 2013). Dscam1 in Drosophila uses three banks of alternatively spliced exons to produce 19,008 isoforms with distinct extracellular domains (Schmucker et al., 2000). Each of these three exons encode regions of the protein essential for homophilic binding, resulting in 19,008 potential molecules that preferentially recognize other copies of the same isoform (Sawaya et al., 2008; Wojtowicz et al., 2004, 2007; Wu et al., 2012). By biased stochastic exon choice, a given neuron expresses an estimated 10\u201350 isoforms, most of which will differ from neighboring neurons (Miura et al., 2013; Neves et al., 2004; Zhan et al., 2004). This gives each neuron a distinct fingerprint allowing it to recognize and avoid 'self' through repulsion while still interacting with its neighbors, a process called self/non-self discrimination (Hughes et al., 2007; Matthews et al., 2007; Soba et al., 2007). As might be expected with such a mechanism in which each cell is uniquely identified, vast isoform diversity is required for Dscam1 to function normally (Hattori et al., 2009, 2007).\n\nSimilarly, the vertebrate gamma protocadherin cluster (Pcdhg) can also produce diverse recognition units. There are only 22 Pcdhg isoforms, specified by alternative promoter choice within the gene cluster instead of alternative splicing, but the resulting proteins form cis multimers with trans homophilic binding specificity at the multimer level (Schreiner and Weiner, 2010; Thu et al., 2014; Wu and Maniatis, 1999). This incorporation of isoforms into multimers can generate thousands of distinctly homophilic interactors. Intriguingly, the multimer compositions are regulated not only by promoter choice, but also by the relative expression levels of each isoform. PCDHG promotes self-avoidance in cerebellar Purkinje cells and retinal starburst amacrine cells (SACs) (Lefebvre et al., 2012). Here again, diversity is required for normal function. When only one isoform was expressed in SACs, self-avoidance at the single cell level was preserved, but interactions between neighboring SACs were aberrant, resulting in circuit level dysfunction (Kostadinov and Sanes, 2015).\n\nBoth Dscam1 and Pcdhg promote self-avoidance by conferring self/non-self discrimination. Without extensive isoform diversity, vertebrate DSCAMs are not able to provide this fine level of self-recognition. Our conclusion that DSCAMs function through at least two molecular mechanisms, one that requires a C-terminal PDZ-interacting motif, and one that does not, fits a model in which DSCAMs interact with cell-type-specific adhesion mechanisms to serve their function. This is most easily discussed for self-avoidance, where the deletion of DSCAM or DSCAML1 results in the clumping and fasciculation of homotypic cells \u2013 phenotypes that could be described as excessive adhesion. Under this model, the DSCAMs serve a generic role, and the specificity and complexity of the system is conferred by the cell-type-specific adhesion mechanisms. Thus, in cell types in which the PDZ-interacting C-terminus is required, the predominant cell adhesion system may also interact with PDZ-scaffolded complexes. These systems could include Ig-superfamily CAMs such as L1-CAM or NRCAM, or possibly neurexins or neuroligins. Alternatively, the CAMs could interact with PDZ domains indirectly through mediator proteins. In cell types that do not require the C-terminus of DSCAM or DSCAML1, the predominant cell adhesion systems may not involve PDZ interactions, such as cadherins or protocadherins. In cell types with intermediate phenotypes, a mix of PDZ-dependent and \u2013independent mechanisms may be involved. This is not surprising, as each cell type is expected to express more than one class of cell adhesion molecule.\n\nThe C-termini of both DSCAM and DSCAML1 interact with at least six different multi-PDZ domain-containing proteins (Yamagata and Sanes, 2010) and (Figure 1\u2014figure supplement 1). de Andrade and colleagues analyzed the co-localization of DSCAM with seven different multi-PDZ proteins, including MAGI-2 and MAGI-3, and found little co-localization in the adult IPL. Interestingly, there was increased co-localization during development, indicating that these interactions are dynamic and transient (de Andrade et al., 2014). None of the analyzed PDZ proteins were clearly localized to specific laminae, but were punctate throughout the IPL. Thus, DSCAM and DSCAML1 could interact with different PDZ proteins in different cell types throughout development.\n\nAs mentioned, we have thus far been generally unable to genetically separate functions such as developmental cell death and self-avoidance. Cell types with any phenotype in \u2206C mutants had multiple phenotypes, which changed roughly in parallel. For example, DA cells were more numerous with disrupted spacing and neurite fasciculation, while bNOS-positive amacrine cells and Cdh3-GFP RGCs both had a\u00a0relatively normal density, spacing, and neurite arborization (Figures 2,3). In ipRGCs, cell density was variably increased and did not reach statistical significance, and cell spacing and dendrite fasciculation were both intermediate in severity between controls and null mutants (Figure 3). This covariation could suggest that there is one primary function and the other phenotypes are secondary to this. Keeley and colleagues tested if cell death was this primary function in DA cells and ipRGCs, and found that while increasing cell density by inhibiting developmental cell death could contribute to spacing defects, it was not sufficient to explain the loss of self-avoidance in Dscam-/- mutants (Keeley et al., 2012). We confirmed those findings here, and extended them in three ways. (1) We added a third cell type, VGLUT3-positive amacrine cells, and found that their spacing was more disrupted in Dscaml1\u2206C/\u2206C mutants than Bax-/- mutants despite having a lower cell density (Figure 5I\u2013L). (2) In ipRGCs, cell clustering was more severe in Dscam\u2206C/\u2206Cmutants than in Bax-/- mutants despite comparable cell densities (Figure 5A\u2013D). ipRGC density in Dscam-/- mutants is much higher than in Bax-/- retinas, complicating the correlation of density and spacing defects. (3) We quantified neurite fasciculation independently from the\u00a0cell body spacing, finding that cell density can contribute to fasciculation in ipRGCs, but does not significantly drive fasciculation in DA cells or bNOS cells (Figures 6, Figure 6\u2014figure supplement 1). Thus, promotion of cell death is not the sole primary function of the Dscams. This is consistent with our previous finding that ipRGC clustering and fasciculation occurs in Dscam-/-mutants even when cell density is severely reduced by Pou4f2 double mutation (Fuerst et al., 2012).\n\nAs we have not been able to induce clustering and fasciculation without an increase in cell density, it remains possible that the self-avoidance function of Dscams is primary and the clustering and fascicle formation is protective against cell death. It is also possible that the process through which the Dscams prevent fasciculation also promotes proper neurite stratification. We have now identified two examples of aberrant interaction between different cell types. DA cells co-fasciculate with M1 ipRGCs in Dscam\u2206C/\u2206C\u00a0retinas (Figure 7E) and VGLUT3-positive amacrine cells become directly adjacent to AII amacrine cells in Dscaml1\u2206C/\u2206C\u00a0mutants (Figure 7P\u2013Q). As DA and M1 ipRGCs normally co-stratify, this interaction does not result in any misprojection. VGLUT3-positve amacrine neurites, however, are normally confined in the ON-OFF strata between the ChAT layers, not in the ON region proximal to the RGL where AII projections reside. Improper interactions with AII amacrine cells could provide a mechanism for VGLUT3 misprojection (Figure 7O\u2013Q).\n\nIn summary, DSCAM and DSCAML1 in different cell types function through different molecular mechanisms. We hypothesize that this mechanistic diversity is based on the diverse adhesion systems masked by the DSCAMs. Determining how DSCAMs interact with other systems to mask their adhesivity for self-avoidance, and whether this is the primary function and developmental cell death and synapse maturation are secondary, will require additional studies. However, what these results clearly demonstrate is that the molecular mechanisms through which DSCAMs function will need to be defined on a cell type by cell type basis, and that a single molecular complex or pathway will not account for DSCAMs\u2019 function(s) in all cell types.\n\n## Materials and methods\n\n### Mouse strains\n\nAll animals were housed in the research animal facility at The Jackson Laboratory under standard housing conditions with a 12:12 light dark cycle and food and water ad libitum. All procedures using animals were performed in accordance with The Guide for the Care and Use of Laboratory Animals and were reviewed and approved by the Animal Care and Use Committee of The Jackson Laboratory. Previously described mouse strains include: Dscam-/- = B6.CBy-Dscamdel17/Rwb, RRID:IMSR_JAX:008000,\u00a0described in (Fuerst et al., 2008); Cdh3-GFP, RRID:MMRRC_000236-UNC, courtesy of Dr. Andrew Huberman (Osterhout et al., 2011); Bax-/-\u00a0= B6.129X1-Baxtm1Sjk/J, RRID:IMSR_JAX:002994, described in (Knudson et al., 1995); Dscaml1-/- = Dscaml1GT/GT, RRID:MGI:4417834, described in (Fuerst et al., 2009). Dscaml1-/- mice were genotyped with a previously unreported primer set. A common forward primer (ATGCCACTGTGCCTGGCTGTT) was used with a reverse primer specific to either wild type sequence (CCCAGCAGTTGAGTGCCCTGG) or mutant sequence (TATCCACAACCAACGCACCCAAGC).\n\n### Generation of \u2206C mice\n\nTo disrupt the PDZ-interacting C-terminus of DSCAM, we replaced the sequence encoding the C-terminal ten amino acids with a Myc epitope tag sequence through standard knock-in techniques. The targeting vector was generated using bacterial recombineering of the BAC BMQ-206A7 (from 129S7/SvEv). We made a recombineering targeting cassette by PCR of a loxP-flanked Neomycin cassette. The forward primer had the following sequence: GTGCAGAGCTGGGACAGGCAGCTAAAATGAGCAGCTCCCAAGAGTCACTGCTGGACTCCCGGGGCCATTTGAAAGGAAACGAACAAAAGCTGATCTCTGAGGAAGATCTGTAAcggcgcgcctagtcgacttc. This primer was composed of the 60 bases from 90 to 30 bases upstream of the Dscam stop codon in exon 33 (underlined), Myc coding sequence with a stop codon (bold), and the 5\u2019 end of a loxP-flanked Neomycin cassette (lowercase). The reverse primer had the following sequence: CGGAATTCAGTAAAAAAAAGGTAGCTTTGATTGGCTCGTTTAAATTGTATTTACAACCGCTGTCCATCAGGTGCCATGTGgcttagtttaaactcgagcc, composed of the 60 bases immediately after the stop codon in exon 33 (underlined) and the 3\u2019 end of a loxP-flanked Neomycin cassette (lowercase). The BAC was recombineered in SW102 cells as in (Warming et al., 2005). The resulting BAC was digested with PmlI and XbaI to create a 9.2 kb fragment which was subcloned into pSL1180 at EcoRV and XbaI sites. The vector acquired a point mutation resulting in a G to E substitution two residues before the Myc tag. The 9.2 kb targeting vector in pSL1180 was linearized with NotI and electroporated into the C57BL/6N ES cell line JM8. 96 neomycin-resistant clones were screened by long range PCR. Of five positive clones, two were expanded and injected into albino B6(Cg)-Tyrc-2J/J blastocysts. Chimeric mice were bred to albino B6(Cg)-Tyrc-2J/J mice to detect germline transmission. To remove the loxP flanked Neomycin cassette, mice harboring the mutation were crossed to a line expressing Cre under the CMV promoter - B6.C-Tg(CMV-cre)1Cgn/J \u2013 then backcrossed to C57BL/6J to segregate from Cre. Mice were genotyped by PCR using a primer pair spanning the retained loxP site: CCTCCACCTCTTCCACGCGAGAAG and AGTAGTCTTTGCGCTGTCTGTGG.\n\nDscaml1\u2206C mice were generated in parallel by the same techniques. The BAC RP23-342M16 was recombineered to replace the 30 bases preceding the stop codon in exon 33 with an HA tag and a loxP-flanked Neomycin cassette. The following primers were used: AGGGACTCACTACTCGAAATGAGCACCCCAGGGGTAGGGCGTTCTCAGAAACAGGGGGCTTACCCATACGATGTTCCAGATTACGCTTAAcggcgcgcctagtcgacttcg and TGGTGTGCGGGGGCTGGAGGCGCAGAGGTCCCAGTGTGGAGCCCTTCTCCATTTGTCGGCgcttagtttaaactcgagcc, corresponding to exon 33 of Dscaml1 (underlined), the HA tag (bold), and the loxP-flanked Neomycin cassette (lowercase). The recombineered BAC was digested with BmtI, and the liberated 7.7 kb fragment was subcloned into the pSL1180 vector with a diphtheria toxin negative selection cassette. The resulting targeting vector was linearized by NotI digestion and electroporated into the albino C57BL/6 ES cell line J-A18 (B6(Cg)-Tyrc-2J/J). Clones with confirmed homologous recombination were microinjected into C57BL/6 blastocysts to create chimeric mice. Sperm from chimeric males was genotyped to confirm the presence of the engineered allele, and then used for in vitro fertilization. As with Dscam\u2206C, the resulting mice were crossed with B6.C-Tg(CMV-cre)1Cgn/J to remove the Neomycin cassette, then backcrossed to C57BL/6 to segregate from Cre. Mice were genotyped by PCR using a primer pair spanning the retained loxP site: CCTCCATGAGGAACCTGACTCG and CATGACTGGGGATTTCTTTTTGAC. While the epitope tags were useful for analyzing protein in transfected cells, neither allowed for effective labeling in vivo. This was unfortunate, but not uncommon for a single-copy small epitope tag.\n\n### Yeast two-hybrid\n\nA yeast two-hybrid screen was performed using a Clontech Matchmaker kit as per the manufacturer\u2019s instructions (Takara, Mountain View, CA). AH109 yeast transformed with a plasmid encoding the C-terminal 20 amino acids of DSCAM fused to the Gal4 binding domain were mated to Y187 yeast pre-transformed with a mouse cDNA library fused to the Gal4 activation domain. Successful interaction resulted in Gal4-driven expression of HIS3, screened for by survival on plates without histidine and containing 3-AT; ADE2, screened for by survival on plates without adenine; and LacZ, screened for by activity of the \u03b2-galactosidase enzyme. Positive interactors, including MAGI-2 and MAGI-3, were verified by immunoprecipitation and Western blot using the Gal4 fusion constructs.\n\n### Expression constructs and transfection\n\npCAG-Dscam was used to express full length DSCAM (Schramm et al., 2012) and pCMV-Dscaml1 to express full length DSCAML1 ([Yamagata and Sanes, 2008], Addgene 18738,\u00a0Cambridge,\u00a0MA). A Dscam\u2206C expression construct mimicking the knock-in mutation was made by PCR from pCAG-Dscam using the primers GGGGACAAGTTTGTACAAAAAAGCAGGCTGGACCATGTGGATACTGGCTCTCTCC and GGGGACCACTTTGTACAAGAAAGCTGGGTGTTACAGATCTTCCTCAGAGATCAGCTTTTGTTCGTTTCCTTTCAAATGGCCCCGGGAG. The PCR product was cloned into the Gateway cloning pDONR201 vector by BP reaction (Thermo Fisher, Waltham, MA) then into pDEST47 by LR reaction (Thermo\u00a0Fisher) for expression. The Dscaml1\u2206C expression vector was made through identical steps starting with pCMV-Dscaml1 using primers GGGGACAAGTTTGTACAAAAAAGCAGGCTGGACCATGTGGCTGGTAACTTTCCTCCTG and GGGGACCACTTTGTACAAGAAAGCTGGGTGTTAAGCGTAATCTGGAACATCGTATGGGTAAGCCCCCTGTTTCTGAGAACG.\n\nConstructs to express V5-tagged intracellular domains (ICD) were made by PCR from pCAG-Dscam and pCMV-Dscaml1. Both Dscam ICD constructs were made using the forward primer AATTAAGAATTCATGGGTAAGCCTATCCCTAACCCTCTCCTCGGTCTCGATTCTACGAGGAGACGGCGAGAGCAGAGGC where the V5 tag is underlined and the beginning of the ICD is italicized. The wild type ICD construct was made with the following reverse primer: TTATTCTAGATTATACCAAGGTGTAAGATTTTGC while the Dscam\u2206C ICD construct was made with the following reverse primer: TTATTCTAGATTACAGATCCTCTTCTGAGATGAGTTTTTGTTCGTTTCCTTTCAAATGGCCCC. These PCR products were ligated into the pEYFP-N1 vector (Clontech), with the YFP sequence removed, digested at EcoRI (sticky) and NotI (blunted) sites. The Dscaml1 ICD constructs were likewise produced with a common forward primer encoding the V5 tag: AATTAAGAATTCATGGGTAAGCCTATCCCTAACCCTCTCCTCGGTCTCGATTCTACGCGAAAGAAGAGGAAGGAGAAGAGGC. Wild type ICD was made with reverse primer: AAATGCGGCCGCCTACACCAGGGTGTAGGATTTGG and Dscaml1\u2206C with reverse primer TATTGCGGCCGCTTAAGCGTAATCTGGAACATCGTATGGGTAAGCCCCCTGTTTCTGAGAACGC. PCR products were ligated into pEYFP-N1 at EcoRI and NotI sites.\n\nThe MAGI-3 expression construct was generated by PCR from cDNA from the\u00a0neonatal brain using the following primers: CACCATGTCGAAGACGTTGAAGAAG and TCACAGCTGTTTGTCAGCCATG. The PCR product was cloned into pENTR/D-TOPO by TOPO cloning reaction, then into pDEST47 by the\u00a0LR cloning reaction.\n\nHEK293T cells were obtained from ATCC (Manassas,\u00a0VA,\u00a0CRL-11268, RRID:CVCL_1926, lot 62312975) where they were tested free of mycoplasma and their identity was verified by STR analysis. Cells were transfected with Lipofectamine 3000 (Thermo\u00a0Fisher) according to the manufacturer's protocol.\n\n### Immunoprecipitation and western blot\n\nImmunoprecipitation from whole P0 brain was performed according to standard protocols using mouse anti-DSCAM (1:25, R&D Systems,\u00a0Minneapolis,\u00a0MN, clone 36661, RRID:AB_2095452) and protein G magnetic beads (Dynabeads, Thermo\u00a0Fisher). Western blots were performed according to standard procedures using goat anti-DSCAM primary antibody (1:1000, R&D Systems, RRID:AB_2230818). For in vitrostudies, immunoprecpitation was performed 48\u2009hr after transfection with an agarose-conjugated anti-V5 tag antibody (ABCAM,\u00a0Cambridge, MA, AB1229, RRID:AB_308681) and Western blots with mouse anti-V5 tag (1:2000, Pierce E10/V4RR, RRID:AB_10977225) and rabbit anti-MAGI-3 (1:1000, Sigma,\u00a0St.\u00a0Louis,\u00a0MO, RRID:AB_2619643)\n\n### Immunofluorescence\n\nTissue preparation and immunofluorescence staining were performed as described previously (de Andrade et al., 2014; Fuerst et al., 2009). Whole retinas were isolated and fixed in 4% paraformaldehyde for 4\u20138\u2009hr. Retinas were stained free-floating in 2.5% BSA with 0.5% Triton-x-100 in the indicated antibodies for 48\u201372\u2009hr at 4\u00b0C. After washing off unbound primary antibodies, secondary antibodies were applied in the same solution overnight at 4\u00b0C. For sectioning, lenses were removed from enucleated eyes. Eyecups were fixed, then cryopreserved in 30% sucrose and frozen in Tissue-Tek OCT (Sakura,\u00a0Torrance, CA). Cryosections were cut at 12 \u00b5m and immunostained on the slide. Primary antibodies were applied overnight in blocking solution at 4\u00b0C, and secondary antibodies for one hour at room temperature. For DSCAM staining, eyecups were only fixed for 50 min on ice. Longer fixation time reduced staining efficiency.\n\nFor live staining of HEK293T cells, antibodies were diluted in PBS with 2.5% BSA and applied to cells on ice for 1\u2009hr. Cells were then rinsed in PBS, fixed for 10 min at room temperature in 4% PFA, and counterstained as described above for cryosections.\n\nHistological analysis using H&E was performed using standard staining protocols with a Leica automated slide stainer. Tissue was prepared as above but with paraffin embedding. Sections were cut at 4 \u00b5m on a Leica microtome for staining.\n\n### Antibodies\n\nThe following antibodies were used at the indicated dilutions: rabbit anti-GFP (1:500, Millipore,\u00a0Darmstadt, Germany, RRID:AB_91337), mouse anti-DSCAM (1:50, R&D Systems clone 36661, RRID:AB_2095452), sheep anti-tyrosine hydroxylase (1:500, Millipore, RRID:AB_11213126), rabbit anti-bNOS (1:500, Sigma RRID:AB_260796), rabbit anti-melanopsin (1:10,000 gift of Dr. Ignacio Provencio at the University of Virginia or Advanced Targeting Systems, San Diego, CA, RRID:AB_1266795), rabbit anti-Dab1 (1:500, Millipore, RRID:AB_2261451), guinea-pig anti-VGLUT3 (1:10,000, Millipore, RRID:AB_2187832), rabbit anti-PKCa (1:1000, Sigma RRID:AB_477345), goat anti-ChAT (1:400, Millipore, RRID:AB_2079751), rabbit anti-HA tag (1:250, Sigma, RRID:AB_260070). All secondary antibodies were alexa-fluor conjugates (1:500, Thermo\u00a0Fisher\u00a0).\n\n### Image analysis\n\n#### Cell spacing\n\nX-Y coordinates for each cell body in an image were defined in ImageJ. These coordinates were used to calculate the density recovery profile (DRP), nearest neighbor analysis, and overall cell density in WinDRP as described previously (Fuerst et al., 2008). For each image, the DRPs were normalized so that the overall density was set at 1. This allowed for direct comparison of relative spacing across genotypes independent of the\u00a0overall cell number. The packing factor (PF) generated by WinDRP was used for statistical comparison (Rodieck, 1991). For nearest neighbor analysis, the regularity index (NNRI) was computed by dividing the mean nearest neighbor distance by the standard deviation. The NNRI was also computed for an equal number of randomly distributed points. The ratio of the\u00a0measured NNRI to random NNRI was reported and used for statistical comparison. The same X-Y coordinates were also used for Voronoi domain analysis in Ka-me (Khiripet et al., 2012). Values from 2\u20134 images per retina were averaged to find a retinal mean. These means were compared across genotype by ANOVA with pairwise Tukey post-hoc tests. In separate experiments where only two genotypes were compared, student\u2019s t-tests were employed. Sample sizes were chosen based on previous studies (Fuerst et al., 2009, 2008).\n\n#### Elo score\n\nImages were compared for fasciculation of processes using a custom web-based program and an algorithm based on the Elo rating system for ranking chess players (Elo, 1978). Users, blind to genotype, were instructed to choose which of two images was the least fasciculated (i.e., most like the wild type). Two random images were presented, and the user clicked on his or her choice. After choosing, a new pair of images was presented. All images began with a score of 0, and after each matchup their scores were updated. The winning image gained points while the other image lost the same number of points. The number of points exchanged was based on the scores of each image before the matchup. As a result, in an upset scenario (i.e., an image with a low score 'beat' an image with a higher score) more points were exchanged than if the originally higher scored image had won. This allows a group of images to sort into their true ranking without performing every head-to-head matchup. The trial was considered to have reached an endpoint when further matchups did not change the relative genotype rankings. Each image set was scored by 6\u20138 users. Scores from each individual retina were averaged (1\u20134 images per retina) and these retinal mean scores were used to compare across genotypes using a pairwise Wilcoxon ranked sum test.\n\n#### VGLUT3 projections\n\nVGLUT3 projections were analyzed in Imaris software (Bitplane). High-resolution confocal stacks of Dab1 and VGLUT3 co-labeling were reconstructed in 3D. Blind to genotype and to the VGLUT3 channel, the stack was cropped to include only the Dab1-positive AII terminals, then projections were made through both channels. The VGLUT3 projections were thresholded at three levels in ImageJ and the percent area occupied was calculated. Values from two images per retina were averaged and this mean score was compared across genotypes and threshold level by two-way ANOVA.\n\n#### DSCAM protein levels\n\nDSCAM protein expression was quantified in cryosections by two methods. Single plane confocal images were collected from sections stained for DSCAM and melanopsin using identical imaging parameters including laser power, pinhole size, and PMT gain and offset. Both channels were thresholded in Adobe Photoshop, again using identical parameter for all images. The overlap between the thresholded DSCAM and melanopsin channels was extracted using Photoshop\u2019s multiply function. The ratio of the overlap area to the melanopsin area \u2013 both quantified in NIH ImageJ \u2013 was calculated. The second method allowed quantification independent of thresholding. The intensity of DSCAM fluorescence was measured along a one-dimensional line 10\u00a0\u00b5m long projecting into the IPL directly adjacent and perpendicular to the INL. The average fluorescent intensity along the line was calculated. For both methods, multiple measurements were averaged per retina, and these retinal means were compared across genotypes by ANOVA with pairwise Tukey post-hoc tests.\n",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "1b810447-a858-4e17-9f94-4c6fcb937e92",
+      "submission_id": "349e066f-b7f4-413a-b696-259d2c99085f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Constance L Cepko, Howard Hughes Medical Institute, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16144.019](https://doi.org/10.7554/eLife.16144.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Differential dependence on the PDZ-interacting C-termini of DSCAM and DSCAML1 in different cell types\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and a Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGarrett et al. address an interesting question regarding the role of the PDZ interacting domains of DSCAML1 and DSCAM. By replacing the C-terminal 10 amino acids with an epitope, and knocking these alleles into the endogenous loci, they address the requirement for these terminal amino acids. Their findings are somewhat surprising, as they show differential dependence of these domains among several retinal cell types. As indicated by the Reviewers, their conclusions need additional data, as well as a more measured interpretation. The major difficulty in interpretation is pointed out by Reviewer 1, which derives from the design of their knock-in allele. By using only one allele, that of a deletion with an epitope substitution, they have not ruled out that the phenotype is due to the epitope. This ambiguity needs to be acknowledged and discussed. Further, in light of the caveats in interpretation, the authors should consider modifying their title. In addition, as both reviewers point out, there is not enough quantification and resolution of the level and location of the knock-in protein within the retina. Given the differential response of different cell types, this is an important point. The suggestions of Reviewer 2 regarding more accurate measurements of protein and localization need be carried out. In addition, the other suggestions of Reviewer 2 should be carried out. The caveats in the interpretation pointed out by Reviewer 1, as well as a more complete discussion of previous work of DsCAMs in Drosophila, and the model for protocadherins in self-avoidance in mouse, should also be included.\n\nThe entirety of the reviews are appended below.\n\nReviewer #1:\n\nFuerst and Burgess and their co-workers have described in detail in previous studies phenotypes in associated with loss of function alleles of DSCAM and DSCAML1. They have shown that DSCAM regulates self-avoidance, cell death and synapse formation. To begin to dissect these multiple functions they use knock-in technology to construct mutations in the cytoplasmic tails in which the C-terminal PDZ-binding domain was replaced with an epitope tag. The assumption was that different functions would be mediated by different signaling pathways downstream the cytoplasmic domains. That is, the lack of the PDZ domain would abrogate one function, perhaps cell death, and leave the others (e.g. synapse formation) intact. To their surprise, they discovered that rather than disrupting one pathway or another the loss of the PDZ-binding site in both proteins led to selective disruption of function in different cell types. The authors argue, based on these findings, that there are different signaling requirements in different cells for the same function.\n\nThis is a reasonable interpretation of the data. But it is important to recognize the limitations of the analysis and it is important that these issues be raised and considered. That is the experiments presented are very good but they are limited and this should be acknowledged in the text. This is eLife so we expect frankness and not a vanity journal where the editors expect a crisp and important message, even if this is not warranted by the data.\n\nFirst, it is impossible for the authors to know whether the phenotypes they observe are due to the insertion of the tag, the loss of the PDZ binding site or both. A more careful control would have been to insert the tag towards the C-terminal with PDZ domain intact. If this rescues, the authors could include the same tag with a mutated PDZ domain binding site. If we were playing hardball, this would negate their data entirely. But it is a high bar and I think the paper has value and should be published.\n\nSecond, the authors argue that expression is normal, including the levels and distribution of the protein. The western blots were from the neonatal brains but not from retina, the tissue in question. There is no control for loading presented. The expression is assessed in 3 week old mice; the authors should address this expression in the context of what is known about the developmental etiology of the phenotypes. Is this the relevant stage for the defects seen in nulls or is it considerably later?\n\nThird, protein distribution is only considered in a very gross way and indeed what one would wish to assess is whether the level and distribution in the neurons in which phenotypes were assessed were normal. To their credit they attempt this in Figure 1 and the accompanying supplementary figure. But the data are very low resolution and very low quality making it virtually impossible to make any claims about normal localization of DSCAM in any particular cell type. There are methods to assess expression in specific cell types but this would have required much more sophisticated genetic engineering in the knock in alleles they generated. I am not suggesting they should have done this or that they should go back at to it now. I think it is critical that the authors indicate that they cannot adequately assess whether the phenotypes reflect differences in expression and/or localization in different cell types rather than arising from their preferred explanation that this is due to differences in molecular function in different neuronal cell types.\n\nAnd finally, the authors provide one explanation for differences in different cell types in which DSCAM or DSCAML1 associates with adhesion molecules and thereby prevents fasciculation between processes of the same cell. They state in the Discussion that:\n\n\"These results and conclusions fit a model in which DSCAMs interact withcell-type-specific adhesion mechanisms to serve their function. [\u2026] In cell types with intermediate phenotypes, a mix of PDZ-dependent and -independent mechanisms may be involved. This is not surprising, as each cell type is expected to express more than one class of cell adhesion molecule.\"\n\nThis paragraph will not be readily appreciated by most readers and some additional information would make it more comprehensible and thus interesting to them. The statement of lack of diversity comes out of nowhere; this paragraph is taken from the Discussion and there has up until this point not been any reference to the fly Dscam diversity or to how it regulates self-avoidance. This would not be necessary (arguably a little odd but not necessary) if they were not to contrast this in the context of interpreting their rescue data. The mechanism by which DSCAMs in mammalian systems (i.e. the mouse) are proposed to work is very different from the description in flies and very different from the mechanisms more recently described for clustered protocadherins in the mouse. The authors should be explicit about this. That is describing the fly model (and protocadherin model-largely the same) and then contrast this with the model for DSCAM's role in self-avoidance in the mouse retina. It is a particularly interesting model and entirely plausible. I think putting their model for DSCAM and DSCAML1 in the broader context of self-avoidance and then interpreting it in terms of differential association with different adhesion molecules (i.e. some association via PDZ and others through other mechanisms) is intriguing.\n\nReviewer #2:\n\nThis is an interesting article exploring the molecular interactions that are required for Dscam and Dscaml to regulate cell spacing and neurite organization of retinal neurons during development. The major finding is that the PDZ-interacting C-terminal motif of Dscam and Dscaml is important in some but not all retinal cell types in executing the proper function of these adhesion molecules. The authors convincingly show a differential requirement for the PDZ-binding motif in a subset of retinal neurons by examining cell density, mosaic organization and dendrite fasciculation of several amacrine and ganglion cell types. Quantification of these parameters are provided and by and large, the figures support the major conclusions. For some conclusions, the authors still need to provide quantitative data to support their statements (these are listed in the minor comments). The major finding is somewhat unexpected and thus the study does represent a significant addition to current knowledge of how Dscam and Dscaml proteins work.\n",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cef8e8b7-6b9f-4a70-b5a7-241f83079adb",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C1",
+      "claim": "DSCAM and DSCAML1 have canonical PDZ-interacting motifs at their C-termini by which they interact with scaffolding proteins in the MAGI (membrane-associated guanylate kinase with inverted orientation) and PSD95 families.",
+      "claim_type": "EXPLICIT",
+      "source": "Both DSCAM and DSCAML1 also have canonical PDZ-interacting motifs at their C-termini by which they interact with scaffolding proteins in the MAGI (membrane-associated guanylate kinase with inverted orientation) and PSD95 families (Yamagata and Sanes, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Yamagata and Sanes, 2010, which provides published evidence for this interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "3ca6ee48-ea9e-44a1-8669-4b8da17833f6",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C2",
+      "claim": "The deletion of the C-terminal 10 amino acids disrupts the canonical binding to the hydrophobic pocket of PDZ domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of these final 10 amino acids disrupts the canonical binding to the hydrophobic pocket of PDZ domains (Doyle et al., 1996), and this DSCAM-\u2206C mutation markedly reduced MAGI-3 association in co-immunoprecipitation experiments with the DSCAM intracellular domain (ICD) when co-transfected in HEK293T cells (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by a citation to Doyle et al., 1996, and by experimental data shown in Figure 1B demonstrating reduced MAGI-3 association.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "0a392d0b-a7fa-44da-bcfa-7a7c315e4c68",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C3",
+      "claim": "Dscam\u0394C/\u0394C mice survived without hydrocephaly or any of the overt phenotypes observed in null animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike null mutants, which do not survive on a C57BL/6 background, Dscam\u0394C/\u0394C mice survived without hydrocephaly or any of the overt phenotypes observed in null animals (Amano et al., 2009; Fuerst et al., 2010, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to null mutants described in cited references and by observation of the Dscam\u0394C/\u0394C mice.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "e8793cf4-5a17-49b0-8dcb-e2eaf83c6589",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C4",
+      "claim": "The relative abundance and size of DSCAM protein was indistinguishable between Dscam+/+ and Dscam\u0394C/\u0394C samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative abundance and size of DSCAM protein was indistinguishable between Dscam+/+ and Dscam\u0394C/\u0394C samples, while negative control Dscam-/- samples were devoid of DSCAM protein, as expected (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 1C comparing protein levels across genotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "3fe2626a-720c-4633-9dd0-d38034d158a2",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C5",
+      "claim": "At three weeks of age, there was no obvious mislocalization or reduction in labeling in cryosections from Dscam\u0394C/\u0394C retinas labeled for DSCAM by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "At three weeks of age, there was no obvious mislocalization or reduction in labeling in cryosections from Dscam\u0394C/\u0394C retinas labeled for DSCAM by immunofluorescence (Figure 1D\u2013F, and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence imaging data shown in Figure 1D-F and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "0240d839-9cdf-43fa-9334-740f4988c115",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C6",
+      "claim": "Dscam\u0394C/\u0394C retinas showed some expansion and disorganization, but a milder phenotype than in Dscam-/- animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscam\u0394C/\u0394C retinas showed some expansion and disorganization, but a milder phenotype than in Dscam-/- animals (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological comparison shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ed6b1a5b-fad3-4953-b284-58a9a7ae6f6c",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C7",
+      "claim": "DA cells had a significant increase in cell density and a loss of mosaic spacing in Dscam\u2206C/\u2206C mice.",
+      "claim_type": "EXPLICIT",
+      "source": "DA cells had a significant increase in cell density and a loss of mosaic spacing in Dscam\u2206C/\u2206C mice (Figure 2D\u2013G, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell density and spacing shown in Figure 2D-G and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7d17813d-26cc-456b-92d7-d29a7fa652d5",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C8",
+      "claim": "By all measures, DA cell organization in Dscam\u2206C/\u2206C retinas was indistinguishable from that of Dscam-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By all measures, DA cell organization in Dscam\u2206C/\u2206C retinas was indistinguishable from that of Dscam-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of multiple spacing measures (DRP, Voronoi, nearest neighbor) shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "b05e4657-5d38-402d-b088-b96057d8274f",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C9",
+      "claim": "bNOS-positive amacrine cells in Dscam\u2206C/\u2206C mice showed little, if any, disruption in organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, bNOS-positive amacrine cells in Dscam\u2206C/\u2206C mice showed little, if any, disruption in organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by quantitative analysis of cell spacing and density shown in Figure 2K-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f0e10ca8-fb30-47a3-a5da-970241d1f5b0",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C10",
+      "claim": "bNOS-positive amacrine cells maintained a clear exclusion zone in Dscam\u2206C/\u2206C mice, and were not significantly different from wildtype controls by any spacing measure.",
+      "claim_type": "EXPLICIT",
+      "source": "bNOS-positive amacrine cells maintained a clear exclusion zone in Dscam\u2206C/\u2206C mice, and were not significantly different from wildtype controls by any spacing measure, nor did their overall cell density differ from controls (Figure 2K\u2013N, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 2K-N and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "cbf36983-b9f8-41c0-a7b7-5fb277fb6067",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C11",
+      "claim": "ipRGCs are among the most clustered and fasciculated cell types in Dscam-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs are among the most clustered and fasciculated cell types in Dscam-/- mutants; both M1 and M2 cells are severely clustered with tight dendritic fascicles (Figure 3A,C, and [Fuerst et al., 2009]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data in Figure 3A,C and by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f05155f8-6002-4c19-a5c2-682133d5ed7c",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C12",
+      "claim": "In Dscam\u2206C/\u2206C mutants, ipRGC cell bodies were clearly clustered, albeit not as severely as in Dscam-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In Dscam\u2206C/\u2206C mutants, cell bodies were clearly clustered, albeit not as severely as in Dscam-/- mice (Figure 3B,E\u2013G, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3B,E-G and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "4408f95a-a191-4423-b45e-0e9b5585e498",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C13",
+      "claim": "ipRGC cell density appeared to be modestly increased compared to controls, but the difference was not statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell density appeared to be modestly increased compared to controls, but the difference was not statistically significant (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7b19cb92-c5ce-4dd2-8ed2-0fc9c3dd1569",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C14",
+      "claim": "Cdh3-GFP RGC cell number was not significantly increased in Dscam\u0394C/\u0394C retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cell number was not significantly increased in Dscam\u0394C/\u0394C retinas, and the cell body clustering observed in Dscam-/- mutants was not observed (Figure 3I,K\u2013N, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3I,K-N and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "2cfaf2ae-d77a-4458-a535-1bceaa692621",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C15",
+      "claim": "The cell body clustering observed in Dscam-/- mutants was not observed in Dscam\u0394C/\u0394C retinas for Cdh3-GFP RGCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cell number was not significantly increased in Dscam\u0394C/\u0394C retinas, and the cell body clustering observed in Dscam-/- mutants was not observed (Figure 3I,K\u2013N, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 3I,K-N and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "a8380216-32da-4202-b79f-ac2f29da069d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C16",
+      "claim": "Dscaml1 is expressed in the cells that contribute to the rod circuit, including rod photoreceptors, rod bipolar cells (RBCs), and AII amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscaml1 is expressed in the cells that contribute to the rod circuit, including rod photoreceptors, rod bipolar cells (RBCs), and AII amacrine cells (Fuerst et al., 2009), as well as a population of previously undefined cells in the inner nuclear layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "b97bb743-0f92-4ec6-8f85-12dbb650f182",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C17",
+      "claim": "DSCAML1-\u2206C protein had the expected membrane topology, but did not co-immunoprecipitate with MAGI-3.",
+      "claim_type": "EXPLICIT",
+      "source": "DSCAML1-\u2206C protein had the expected membrane topology, but did not co-immunoprecipitate with MAGI-3 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "4454cd32-e6c0-4f68-ac15-f7bb4105cf06",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C18",
+      "claim": "Dscaml1\u2206C/\u2206C retinas were modestly expanded, but not so severely as in Dscaml1-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Dscam, Dscaml1\u2206C/\u2206C retinas were modestly expanded, but not so severely as in Dscaml1-/- mutants (Figure 4B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological comparison shown in Figure 4B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7e29a0f3-963f-4571-9412-2c9e15f2cca3",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C19",
+      "claim": "There was no increase in AII amacrine cell density in Dscaml1\u2206C/\u2206C animals.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no increase in cell density, and cells did not form clusters in Dscaml1\u2206C/\u2206C mice, as they did in Dscaml1-/- animals, as measured by DRP or nearest neighbor analysis (Figure 4H,I,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4H,I,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "2e87c696-be56-42f2-86db-48cb83fa20e2",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C20",
+      "claim": "AII amacrine cells did not form clusters in Dscaml1\u2206C/\u2206C mice, as they did in Dscaml1-/- animals.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no increase in cell density, and cells did not form clusters in Dscaml1\u2206C/\u2206C mice, as they did in Dscaml1-/- animals, as measured by DRP or nearest neighbor analysis (Figure 4H,I,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4H,I,K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "1ca99717-1e30-4790-9715-099db89ddc46",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C21",
+      "claim": "There was an increased covariance of Voronoi tessellation domain areas compared to controls for AII amacrine cells in Dscaml1\u2206C/\u2206C mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There was, however, an increased covariance of Voronoi tessellation domain areas compared to controls (Figure 4J, Figure 4\u2014figure supplement 2) indicative of irregular spacing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4J and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d36ee431-d4ae-475d-9c33-9b9d3b89e434",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C22",
+      "claim": "VGLUT3-positive amacrine cell number was significantly increased in Dscaml1\u2206C/\u2206C mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell number was significantly increased, and DRP, Voronoi, and nearest neighbor analyses all indicated a significant loss of mosaic spacing (Figure 4O\u2013R, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4O-R and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "fcfc5afe-4ef0-4b4a-8740-8a612a255fdb",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C23",
+      "claim": "VGLUT3-positive amacrine cells in Dscaml1\u2206C/\u2206C mice showed a significant loss of mosaic spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell number was significantly increased, and DRP, Voronoi, and nearest neighbor analyses all indicated a significant loss of mosaic spacing (Figure 4O\u2013R, Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4O-R and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "10b91298-055c-4e41-a01e-aa81fadb466b",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C24",
+      "claim": "ipRGCs were more severely clustered in Dscam\u2206C/\u2206C than in Bax-/- animals, as measured by DRP packing factor and Voronoi domain analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "ipRGCs were more severely clustered in Dscam\u2206C/\u2206C than in Bax-/- animals, as measured by DRP packing factor (Figure 5B) and Voronoi domain analysis (Figure 5C), but were not significantly different by nearest neighbor analysis (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ec143e88-55de-488a-be90-02e113194dfe",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C25",
+      "claim": "DA cell spacing was similarly disrupted in Bax-/- mutants as in Dscam\u2206C/\u2206C.",
+      "claim_type": "EXPLICIT",
+      "source": "DA cell spacing was similarly disrupted in Bax-/-mutants as in Dscam\u2206C/\u2206C (Figure 5F\u2013H), while VGLUT3-positive cells in Dscaml1\u2206C/\u2206C were significantly more disrupted by Voronoi and nearest neighbor analyses, but not by DRP packing factor, despite a significantly lower cell density than Bax-/- retinas (Figure 5I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 5F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "a1d86a82-395b-41af-b40d-3cb285339297",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C26",
+      "claim": "VGLUT3-positive cell spacing in Dscaml1\u2206C/\u2206C was more severely disrupted than could be explained by increased cell number alone.",
+      "claim_type": "EXPLICIT",
+      "source": "while VGLUT3-positive cells in Dscaml1\u2206C/\u2206C were significantly more disrupted by Voronoi and nearest neighbor analyses, but not by DRP packing factor, despite a significantly lower cell density than Bax-/- retinas (Figure 5I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 5I-L comparing Dscaml1\u2206C/\u2206C to Bax-/- retinas.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "a6306ee3-9c08-4e9a-9d66-a683d666d784",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C27",
+      "claim": "DA neurites were not severely fasciculated in Bax-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that the DA neurites were not severely fasciculated in Bax-/- mutants (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "30366164-472d-46df-aadd-86b75d9e9972",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C28",
+      "claim": "There was significantly more severe fasciculation in Dscam\u2206C/\u2206C and Dscam-/- retinas than in controls or Bax-/- retinas for DA cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For DA cells, there was significantly more severe fasciculation in Dscam\u2206C/\u2206C and Dscam-/- retinas than in controls or Bax-/- retinas (Figure 6A\u2013D,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative Elo scoring shown in Figure 6M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "93bbb512-655f-4b99-9b8e-2d55ced8cca3",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C29",
+      "claim": "In the ON layer (predominantly M2 cells), the Elo score could not distinguish Dscam\u2206C/\u2206C retinas from control or from Bax-/- retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "The Elo score could not distinguish Dscam\u2206C/\u2206C retinas from control or from Bax-/- retinas, but Dscam-/- fasciculation was significantly more severe than in all other genotypes (Figure 6G,N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative Elo scoring shown in Figure 6N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "003fb131-9d84-42f3-b424-9a36a05bc309",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C30",
+      "claim": "In the OFF layer (predominantly M1 cells), by Elo score Dscam\u2206C/\u2206C retinas were intermediately fasciculated between control and Dscam-/- but were indistinguishable from Bax-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, by Elo score Dscam\u2206C/\u2206C retinas were intermediately fasciculated between control and Dscam-/- but were indistinguishable from Bax-/- mutants (Figure 6O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative Elo scoring shown in Figure 6O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f72d452e-a29e-4d99-9cdc-ab8a99bfce2e",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C31",
+      "claim": "Cdh3-GFP RGC dendrites had tight fasciculation in Dscam-/- mutants, but no discernable difference between Dscam\u0394C/\u0394C and control retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "We also assessed the fasciculation of Cdh3-GFP RGC dendrites and found tight fasciculation in Dscam-/- mutants, but no discernable difference between Dscam\u0394C/\u0394C and control retinas (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative Elo scoring shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7935465b-dd21-4b9d-af91-c41ba8d53b02",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C32",
+      "claim": "bNOS-positive amacrine cells had mild fasciculation, if any, in Dscam\u0394C/\u0394C and Bax-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, bNOS-positive amacrine cells had mild fasciculation, if any, in Dscam\u0394C/\u0394C and Bax-/- mutants (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative Elo scoring shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "80a91a25-aa7f-4079-9010-7ed716128de8",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C33",
+      "claim": "bNOS-positive amacrine cells stratified normally in Dscam\u2206C/\u2206C retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "We inspected bNOS-positive amacrine stratification in Dscam\u2206C/\u2206C retinas, which are on a C57BL/6 background, and found no abnormalities (Figure 7A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "0406758f-e7dd-4859-ab41-603628563582",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C34",
+      "claim": "DA cell and M1 ipRGCs co-stratify correctly in the OFF region of the IPL in Dscam\u2206C/\u2206C mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "DA cell and M1 ipRGCs co-stratify correctly in the OFF region of the IPL in Dscam-/- mutants (Fuerst et al., 2009), and both correctly targeted in Dscam\u2206C/\u2206C mutants as well (Figure 7C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7C-D and by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "670d485b-9f8e-44c5-b276-6f558a729e02",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C35",
+      "claim": "There is a clear co-fasciculation between DA cells and M1 ipRGCs in Dscam\u2206C/\u2206C mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is a clear co-fasciculation between these cell types in Dscam\u2206C/\u2206C mutants (Figure 7E), suggesting that the M1 fasciculation may be influenced by the DA cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "8d9fe8d5-9b51-4c09-8995-ec71af9d40ff",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C36",
+      "claim": "AII amacrine cells and rod bipolar cells terminate their processes normally in Dscaml1\u2206C/\u2206C mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In Dscaml1-/- mutants, stratification and synaptic pairing between rod bipolar cells and AII amacrine cells is preserved (Fuerst et al., 2009). We found that to be the case in Dscaml1\u2206C/\u2206C mice as well: both cell types project to the ON region of the IPL adjacent to the RGL (Figure 7F\u2013I) where they connect at dyad synapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7F-I and by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f76897fa-abba-4313-bb8a-a2ac3fc39297",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C37",
+      "claim": "Dyad synapses in Dscaml1\u2206C/\u2206C retinas did not display the synaptic phenotype reminiscent of the Dscaml1-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We inspected the dyad synapses in Dscaml1\u2206C/\u2206C retinas by transmission electron microscopy, and failed to detect these synaptic phenotype reminiscent of the Dscaml1-/- mice (Figure 7L\u2013M), indicating that DSCAML1 promotes synapse maturation independent of C-terminal interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM analysis shown in Figure 7L-M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "2472e93e-f74c-43b8-a1b2-32cbc8570a5c",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C38",
+      "claim": "In Dscaml1\u2206C/\u2206C mutants, some VGLUT3-positive amacrine neurites projected past the ON ChAT band into the region where AII amacrines and RBCs target.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in Dscaml1\u2206C/\u2206C mutants, some of these neurites projected past the ON ChAT band into the region where AII amacrines and RBCs target (Figure 7O).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7O.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "144291c4-4c56-4483-8bfe-1e3d3054150d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C39",
+      "claim": "Much of the VGLUT3 labeling below the ON ChAT band was directly adjacent to Dab1-positive AII amacrine terminals in Dscaml1\u2206C/\u2206C mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, much of the VGLUT3 labeling below the ON ChAT band was directly adjacent to Dab1-positive AII amacrine terminals (Figure 7P), an association that persisted through adulthood (18 months, Figure 7Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7P-Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7dd3ca44-87e4-413d-a81c-e2f474c12a4d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C40",
+      "claim": "VGLUT3 occupied a significantly greater percentage of area in Dscaml1\u2206C/\u2206C animals than in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "VGLUT3 occupied a significantly greater percentage of area in Dscaml1\u2206C/\u2206C animals than in controls (2-way ANOVA, p<0.0001, Figure 7R).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 7R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "03e1c0bf-4b3a-4223-bc1e-28c3582a1362",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C41",
+      "claim": "Some cell types developed almost normally in the absence of PDZ-interacting C-termini, while others resembled complete loss of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found that in the absence of these interactions, some cell types developed almost normally, while others resembled complete loss of function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the differential phenotypes observed across multiple cell types in the \u2206C mutants as described throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "a794f99d-4cc8-4944-b655-076a179e2a18",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C42",
+      "claim": "Different cell types have different dependencies on the PDZ-interacting C-termini of Dscams for function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we show differential dependence on this domain for Dscams' functions in different cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the differential phenotypes observed across multiple cell types in the \u2206C mutants as described throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "cb0bdf6d-fa46-4bde-8784-106d64c1ab52",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C43",
+      "claim": "The vertebrate retina provides an advantageous model to study how specific neuronal cell types organize themselves during development to form functional circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The vertebrate retina provides an advantageous model to study how specific neuronal cell types organize themselves during development to form functional circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the retina as a model system, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "5c7374cb-839e-41d8-a258-50ce672ba928",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C44",
+      "claim": "The ~100 neuronal cell types of the retina vertically organize into layers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ~100 neuronal cell types of the retina vertically organize into layers, with light-transducing photoreceptors in the outermost cellular layer (ONL, or outer nuclear layer) and retinal ganglion cells (RGCs) \u2013 responsible for the sole output from the retina \u2013 in the innermost layer (RGL, or retinal ganglion cell layer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about retinal organization, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "8d5de8b1-3716-4eec-8c0f-ad94bed0c21d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C45",
+      "claim": "Many cell types are horizontally spaced in a mosaic pattern, such that there is a low probability of finding two neurons of the same subtype in close proximity.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, many cell types are horizontally spaced in a mosaic pattern, such that there is a low probability of finding two neurons of the same subtype (i.e., homotypic) in close proximity. This pattern ensures that the information processing provided by each subtype is distributed across the retina (Masland, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Masland, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "79f2c120-aed2-4f3f-9668-8008c8795848",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C46",
+      "claim": "Dscam and Dscaml1 encode homophilic members of the Ig-superfamily of cell adhesion molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscam and Dscaml1 encode homophilic members of the Ig-superfamily of cell adhesion molecules, and are expressed in non-overlapping neuronal subtypes in the retina (Agarwala et al., 2001; Fuerst et al., 2009; Yamagata and Sanes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Agarwala et al., 2001; Fuerst et al., 2009; Yamagata and Sanes, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "172741cc-69b8-493d-86bd-c8037f1df9fa",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C47",
+      "claim": "Dscam and Dscaml1 are expressed in non-overlapping neuronal subtypes in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscam and Dscaml1 encode homophilic members of the Ig-superfamily of cell adhesion molecules, and are expressed in non-overlapping neuronal subtypes in the retina (Agarwala et al., 2001; Fuerst et al., 2009; Yamagata and Sanes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Agarwala et al., 2001; Fuerst et al., 2009; Yamagata and Sanes, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "668127e9-367f-4527-8536-9649b1132682",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C48",
+      "claim": "When either Dscam or Dscaml1 is mutated, the cell types that normally express the Dscam lose their mosaic spacing and often form clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dscams promote self-avoidance at the cell type level: When either gene is mutated, the cell types that normally express the Dscam lose their mosaic spacing and often form clusters (Fuerst et al., 2009, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fuerst et al., 2009, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "c84b9186-325e-4fa8-bfd8-5118c9fd0a7c",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C49",
+      "claim": "Self-avoidance requires homophilic Dscam interactions between cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Self-avoidance requires homophilic Dscam interactions between cells, demonstrated in mosaic experiments where neurons lacking Dscam fasciculate with homotypic neurons with intact Dscam (Fuerst et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f8bfa6eb-6f01-4f77-a875-3aab12a3447f",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C50",
+      "claim": "Dscam1 in Drosophila promotes self-avoidance at the individual cell level by using alternative splicing to produce 19,008 distinctly homophilic isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, Dscam1 promotes self-avoidance at the individual cell level by using alternative splicing to produce 19,008 distinctly homophilic isoforms, allowing each neuron to recognize and avoid 'self' while still interacting with 'non-self' during processes like dendrite arborization and axon branching (reviewed in [Zipursky and Grueber, 2013]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Zipursky and Grueber, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "889603c0-ec94-4530-8d22-5cf191088a09",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C51",
+      "claim": "In Dscam and Dscaml1 mutant mice, there is an overabundance of each affected cell type, resulting in a severe expansion of the retina through the cellular and plexiform layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscams are also required for normal developmental cell death. In the mutant mice, there is an overabundance of each affected cell type, resulting in a severe expansion of the retina through the cellular and plexiform layers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the data presented in the manuscript and by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "043d3deb-6818-4618-9f8a-74978146b5c6",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C52",
+      "claim": "The extent of cell number expansion varies with cell type in Dscam and Dscaml1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "The extent of cell number expansion varies with cell type. Some cell types are expanded beyond even that seen in mutants for the pro-apoptotic Bax gene, while others are more modestly expanded compared to Bax mutants (Fuerst et al., 2009, 2008; Keeley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fuerst et al., 2009, 2008; Keeley et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ce3d759d-1820-419e-a642-aee466abd05f",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C53",
+      "claim": "In chick, Dscams label-specific sublaminae of the IPL and can instruct neurite targeting to these layers.",
+      "claim_type": "EXPLICIT",
+      "source": "In chick, Dscams label-specific sublaminae of the IPL and can instruct neurite targeting to these layers (Yamagata and Sanes, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Yamagata and Sanes, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "dd5a278e-234a-45cb-b687-ae361707c9f4",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C54",
+      "claim": "DSCAM protein localization is punctate throughout the IPL in mouse, and is not confined to specific sublaminae.",
+      "claim_type": "EXPLICIT",
+      "source": "DSCAM protein localization is punctate throughout the IPL in mouse, and is not confined to specific sublaminae (de Andrade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to de Andrade et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "a5a3f54c-dfd1-4433-a0b7-fae20656a0ba",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C55",
+      "claim": "Some neuronal types have disorganized neurite stratification in Dscam mutants, although the disorganization varies with genetic background.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, some neuronal types do have disorganized neurite stratification in Dscam mutants, although the disorganization varies with genetic background (Fuerst et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7d2da00a-a1ab-4fc5-b570-f715379e47fc",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C56",
+      "claim": "Dyad ribbon synapses between rod bipolar cells and AII amacrine cells can still be found in Dscaml1 mutants, but are morphologically abnormal, with indistinct, detached presynaptic ribbons.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Dscaml1 is expressed both in rod bipolar cells and AII amacrine cells, which connect at dyad ribbon synapses in the IPL. These synapses can still be found in Dscaml1 mutants, but are morphologically abnormal, with indistinct, detached presynaptic ribbons, and functionally abnormal, with much slower decay of the synaptic current (Fuerst et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "20a50a7a-4fb2-4187-a62c-cdf2845d07ef",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C57",
+      "claim": "Dyad ribbon synapses between rod bipolar cells and AII amacrine cells in Dscaml1 mutants are functionally abnormal, with much slower decay of the synaptic current.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, Dscaml1 is expressed both in rod bipolar cells and AII amacrine cells, which connect at dyad ribbon synapses in the IPL. These synapses can still be found in Dscaml1 mutants, but are morphologically abnormal, with indistinct, detached presynaptic ribbons, and functionally abnormal, with much slower decay of the synaptic current (Fuerst et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "23a0cd19-902c-4f5c-aa87-fd3e7c22e00d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C58",
+      "claim": "Signaling molecules have been found in complex with Dscam1 in Drosophila (e.g., Dock/Pak, Ableson, tubulin binding cofactor D).",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling molecules have been found in complex with Dscam1 in Drosophila (e.g., Dock/Pak, Ableson, tubulin binding cofactor D [Okumura et al., 2015; Schmucker et al., 2000; Sterne et al., 2015]) and DSCAM in vertebrates (e.g., PAK1, FAK, Fyn [Purohit et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Okumura et al., 2015; Schmucker et al., 2000; Sterne et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "5f412220-10fc-4af6-9462-e0c4591fab36",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C59",
+      "claim": "Signaling molecules have been found in complex with DSCAM in vertebrates (e.g., PAK1, FAK, Fyn).",
+      "claim_type": "EXPLICIT",
+      "source": "Signaling molecules have been found in complex with Dscam1 in Drosophila (e.g., Dock/Pak, Ableson, tubulin binding cofactor D [Okumura et al., 2015; Schmucker et al., 2000; Sterne et al., 2015]) and DSCAM in vertebrates (e.g., PAK1, FAK, Fyn [Purohit et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Purohit et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "cc463c3d-c04d-4797-9d8b-cef9e87baafd",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C60",
+      "claim": "Both MAGI-2 and MAGI-3 were found to interact with DSCAM by yeast two-hybrid.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MAGI-2 and MAGI-3 were found to interact with DSCAM by yeast two-hybrid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by yeast two-hybrid data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7ce41b3f-dc35-4f94-9543-61d6d5d55c12",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C61",
+      "claim": "When transfected into HEK293T cells, both DSCAM and DSCAM-\u2206C protein localized to the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "When transfected into HEK293T cells, both DSCAM (C) and DSCAM-\u2206C (D) protein localized to the cell surface as revealed by live cell staining with an antibody raised against the entire extracellular domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by live cell staining data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7ef41f03-2d80-4d98-a24a-42eeea7f5caa",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C62",
+      "claim": "Increased cell number from a lack of cell death can disrupt mosaic spacing in some cell types, although not as severely as Dscam-/- mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased cell number from a lack of cell death can disrupt mosaic spacing in some cell types, although not as severely as Dscam-/- mutation (Keeley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Keeley et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "0ed5bad4-7fd6-4019-8636-2cf72263e493",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C63",
+      "claim": "Cell spacing of ipRGCs and VGLUT3-positive amacrine cells was more severely disrupted in \u2206C mutants than could be explained by increased cell number alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, cell spacing of ipRGCs and VGLUT3-positive amacrine cells was more severely disrupted in \u2206C mutants than could be explained by increased cell number alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of \u2206C mutants to Bax-/- mutants shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "63e2cd41-762a-42d0-95fe-d1fa02948efc",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C64",
+      "claim": "Increased cell density can contribute to abnormal spacing and dendrite fasciculation in some cell types, but is not sufficient to explain the self-avoidance deficits and especially the fasciculation of processes found Dscam-/- retinas.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, increased cell density can contribute to abnormal spacing and dendrite fasciculation in some cell types as previously reported (Keeley et al., 2012), but is not sufficient to explain the self-avoidance deficits and especially the fasciculation of processes found Dscam-/- retinas, and to varying degrees, in \u2206C mutant retinas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of \u2206C mutants to Bax-/- mutants shown in Figures 5 and 6, and by citation to Keeley et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "8030a377-0bab-4b1d-9c7e-c81568b3e160",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C65",
+      "claim": "bNOS-positive amacrine cells are largely disorganized in Dscam mutants on a C3H background, but not in mixed C57BL/6 \u2013 BALBc strains.",
+      "claim_type": "EXPLICIT",
+      "source": "bNOS-positive amacrine cells are largely disorganized in Dscam mutants on a C3H background, but not in mixed C57BL/6 \u2013 BALBc strains (Fuerst et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "6c5355a9-e912-4822-b0c9-620443a7df22",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C66",
+      "claim": "DA and M1 ipRGCs provide the only clear example of co-fasciculation in Dscam-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "DA and M1 ipRGCs provide the only clear example we have seen of co-fasciculation in Dscam-/-mutants (Fuerst et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "b581e5dd-51a5-4a4b-8d34-8dd260aa8561",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C67",
+      "claim": "In Dscaml1-/- mice, dyad synapses displayed features reminiscent of immature synapses, including malformed ribbons and an overabundance of synaptic vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In Dscaml1-/- mice, these synapses displayed features reminiscent of immature synapses, including malformed ribbons and an overabundance of synaptic vesicles (Figure 7K and [Fuerst et al., 2009]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by TEM data shown in Figure 7K and by citation to Fuerst et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "87e6a9e4-7b8b-43a6-9396-242c919a68b4",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C68",
+      "claim": "DSCAML1 promotes synapse maturation independent of C-terminal interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We inspected the dyad synapses in Dscaml1\u2206C/\u2206C retinas by transmission electron microscopy, and failed to detect these synaptic phenotype reminiscent of the Dscaml1-/- mice (Figure 7L\u2013M), indicating that DSCAML1 promotes synapse maturation independent of C-terminal interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the observation that dyad synapses appear normal in Dscaml1\u2206C/\u2206C retinas despite being abnormal in Dscaml1-/- retinas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "5538876b-bfba-4e85-919d-4063dc716281",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C69",
+      "claim": "VGLUT3-positive amacrine cells stratify their neurites to the ON-OFF region of the IPL between the ChAT-positive laminae in wild type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This population stratifies its neurites to the ON-OFF region of the IPL between the ChAT-positive laminae in wild type mice (Figure 7N).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "96045a15-e705-45c8-964b-d41dd8475bac",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C70",
+      "claim": "Rather than distinguishing phenotypes based on specific molecular mechanisms, the \u2206C mutations distinguished cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to our initial hypothesis, we found that rather than distinguishing phenotypes based on specific molecular mechanisms, these mutations distinguished cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the differential phenotypes observed across multiple cell types in the \u2206C mutants as described throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d4a0280c-4461-4e69-9fbd-a0522f088cc4",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C71",
+      "claim": "The requirement for a PDZ-interacting C-terminus in DSCAM or DSCAML1 is variable and depends on the cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our main conclusion from these studies is that the requirement for a PDZ-interacting C-terminus in DSCAM or DSCAML1 is variable and depends on the cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the differential phenotypes observed across multiple cell types in the \u2206C mutants as described throughout the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d429fb7a-a57b-4928-a8cb-fb7180b82a77",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C72",
+      "claim": "Dscam1 in Drosophila uses three banks of alternatively spliced exons to produce 19,008 isoforms with distinct extracellular domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Dscam1 in Drosophila uses three banks of alternatively spliced exons to produce 19,008 isoforms with distinct extracellular domains (Schmucker et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Schmucker et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ffc27b16-1f1d-4fcf-9d22-2bdc29b28f24",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C73",
+      "claim": "Each of the three alternatively spliced exons in Dscam1 encode regions of the protein essential for homophilic binding, resulting in 19,008 potential molecules that preferentially recognize other copies of the same isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these three exons encode regions of the protein essential for homophilic binding, resulting in 19,008 potential molecules that preferentially recognize other copies of the same isoform (Sawaya et al., 2008; Wojtowicz et al., 2004, 2007; Wu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sawaya et al., 2008; Wojtowicz et al., 2004, 2007; Wu et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d4d015ba-c031-4e12-91b1-7717cadf6ed1",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C74",
+      "claim": "A given neuron expresses an estimated 10\u201350 Dscam1 isoforms, most of which will differ from neighboring neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "By biased stochastic exon choice, a given neuron expresses an estimated 10\u201350 isoforms, most of which will differ from neighboring neurons (Miura et al., 2013; Neves et al., 2004; Zhan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Miura et al., 2013; Neves et al., 2004; Zhan et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "2d94c2ca-daa9-41bf-aaaf-31aa5aaece0e",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C75",
+      "claim": "Vast isoform diversity is required for Dscam1 to function normally.",
+      "claim_type": "EXPLICIT",
+      "source": "As might be expected with such a mechanism in which each cell is uniquely identified, vast isoform diversity is required for Dscam1 to function normally (Hattori et al., 2009, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hattori et al., 2009, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "636f6894-e467-4aed-86e3-2e045505b8f7",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C76",
+      "claim": "There are 22 Pcdhg isoforms, specified by alternative promoter choice within the gene cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "There are only 22 Pcdhg isoforms, specified by alternative promoter choice within the gene cluster instead of alternative splicing, but the resulting proteins form cis multimers with trans homophilic binding specificity at the multimer level (Schreiner and Weiner, 2010; Thu et al., 2014; Wu and Maniatis, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schreiner and Weiner, 2010; Thu et al., 2014; Wu and Maniatis, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "cea3124b-dbda-46c2-8719-3519985bcd2b",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C77",
+      "claim": "Pcdhg proteins form cis multimers with trans homophilic binding specificity at the multimer level.",
+      "claim_type": "EXPLICIT",
+      "source": "There are only 22 Pcdhg isoforms, specified by alternative promoter choice within the gene cluster instead of alternative splicing, but the resulting proteins form cis multimers with trans homophilic binding specificity at the multimer level (Schreiner and Weiner, 2010; Thu et al., 2014; Wu and Maniatis, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schreiner and Weiner, 2010; Thu et al., 2014; Wu and Maniatis, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "c619553c-c56a-4b43-af4c-780b94fd3d44",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C78",
+      "claim": "PCDHG promotes self-avoidance in cerebellar Purkinje cells and retinal starburst amacrine cells.",
+      "claim_type": "EXPLICIT",
+      "source": "PCDHG promotes self-avoidance in cerebellar Purkinje cells and retinal starburst amacrine cells (SACs) (Lefebvre et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Lefebvre et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "c29cd300-e857-4a55-9708-8dfed3a24731",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C79",
+      "claim": "When only one Pcdhg isoform was expressed in SACs, self-avoidance at the single cell level was preserved, but interactions between neighboring SACs were aberrant, resulting in circuit level dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "When only one isoform was expressed in SACs, self-avoidance at the single cell level was preserved, but interactions between neighboring SACs were aberrant, resulting in circuit level dysfunction (Kostadinov and Sanes, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Kostadinov and Sanes, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "82a3ad4e-0e7a-4407-8848-214fa1d1c8c0",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C80",
+      "claim": "Without extensive isoform diversity, vertebrate DSCAMs are not able to provide fine level self-recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Without extensive isoform diversity, vertebrate DSCAMs are not able to provide this fine level of self-recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison with Dscam1 and Pcdhg systems that require diversity for self/non-self discrimination.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "38a09579-643a-4010-893f-7ffdf5875c24",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C81",
+      "claim": "DSCAMs function through at least two molecular mechanisms, one that requires a C-terminal PDZ-interacting motif, and one that does not.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusion that DSCAMs function through at least two molecular mechanisms, one that requires a C-terminal PDZ-interacting motif, and one that does not, fits a model in which DSCAMs interact with cell-type-specific adhesion mechanisms to serve their function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential phenotypes observed across multiple cell types in the \u2206C mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "80cfdaf1-e0ab-40cc-a71c-308e2ecbed09",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C82",
+      "claim": "de Andrade and colleagues found little co-localization between DSCAM and seven different multi-PDZ proteins in the adult IPL.",
+      "claim_type": "EXPLICIT",
+      "source": "de Andrade and colleagues analyzed the co-localization of DSCAM with seven different multi-PDZ proteins, including MAGI-2 and MAGI-3, and found little co-localization in the adult IPL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by reference to work by de Andrade and colleagues.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "af3f42d9-bd13-4a83-a4c2-b90d1a51a924",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C83",
+      "claim": "There was increased co-localization between DSCAM and multi-PDZ proteins during development, indicating that these interactions are dynamic and transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there was increased co-localization during development, indicating that these interactions are dynamic and transient (de Andrade et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to de Andrade et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d2ce0d6d-f289-481f-a266-75b5d6539e70",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C84",
+      "claim": "Keeley and colleagues tested if cell death was the primary function in DA cells and ipRGCs, and found that while increasing cell density by inhibiting developmental cell death could contribute to spacing defects, it was not sufficient to explain the loss of self-avoidance in Dscam-/- mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Keeley and colleagues tested if cell death was this primary function in DA cells and ipRGCs, and found that while increasing cell density by inhibiting developmental cell death could contribute to spacing defects, it was not sufficient to explain the loss of self-avoidance in Dscam-/- mutants (Keeley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Keeley et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "6e8f79c2-dbe7-4da5-bfd2-784d8726b96d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C85",
+      "claim": "Promotion of cell death is not the sole primary function of the Dscams.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, promotion of cell death is not the sole primary function of the Dscams.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of \u2206C mutants to Bax-/- mutants showing that spacing defects cannot be fully explained by increased cell density.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ff785f2b-3fa3-43f4-8cdc-9e2c8448b7b1",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C86",
+      "claim": "ipRGC clustering and fasciculation occurs in Dscam-/- mutants even when cell density is severely reduced by Pou4f2 double mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our previous finding that ipRGC clustering and fasciculation occurs in Dscam-/-mutants even when cell density is severely reduced by Pou4f2 double mutation (Fuerst et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Fuerst et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "edbb737d-9538-4cec-a9df-d3d1fce289c7",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C87",
+      "claim": "The molecular mechanisms through which DSCAMs function will need to be defined on a cell type by cell type basis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what these results clearly demonstrate is that the molecular mechanisms through which DSCAMs function will need to be defined on a cell type by cell type basis, and that a single molecular complex or pathway will not account for DSCAMs' function(s) in all cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential phenotypes observed across multiple cell types in the \u2206C mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "074c2ca7-16e5-41b2-96a8-aa7658a023f0",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "claim_id": "C88",
+      "claim": "A single molecular complex or pathway will not account for DSCAMs' function(s) in all cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, what these results clearly demonstrate is that the molecular mechanisms through which DSCAMs function will need to be defined on a cell type by cell type basis, and that a single molecular complex or pathway will not account for DSCAMs' function(s) in all cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential phenotypes observed across multiple cell types in the \u2206C mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "600a5d00-72a8-4fdd-8d01-353dea4f8b32",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "DSCAM and DSCAML1 interact with PDZ domain-containing proteins via their C-termini, and deletion of the C-terminal 10 amino acids disrupts this interaction while maintaining proper protein localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C60, and C61 collectively demonstrate that DSCAM/DSCAML1 have PDZ-interacting motifs (C1), deletion disrupts PDZ binding (C2), MAGI proteins interact with DSCAM (C60), and the mutant proteins still localize to the cell surface (C61). The co-immunoprecipitation data (Figure 1B) and yeast two-hybrid results provide strong experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "12cd54d2-506d-4e47-9315-5f64bcaea1ab",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dscam\u2206C/\u2206C mice are viable with stable DSCAM protein expression and show an intermediate retinal phenotype between wild-type and null mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 demonstrate that Dscam\u2206C/\u2206C mice survive (C3), express normal levels of DSCAM protein (C4), show proper protein localization (C5), and have modest retinal expansion (C6). Western blot (Figure 1C), immunofluorescence (Figure 1D-F), and histology (Figure 1H) provide converging evidence for this intermediate phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "5f4eb25a-7973-446f-8b46-cb33b6161407",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Dopaminergic (DA) amacrine cells in Dscam\u2206C/\u2206C mice show complete loss-of-function phenotypes indistinguishable from Dscam-/- mutants in cell density, spacing, and neurite fasciculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C27, and C28 demonstrate that DA cells have increased density and disrupted spacing (C7), are indistinguishable from null mutants by all measures (C8), show severe fasciculation in \u2206C mutants but not in Bax-/- (C27, C28). Quantitative analyses (Figures 2D-G, 6M) and Elo scoring provide robust statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "87bc643d-d08e-4721-8080-fe4364084bd5",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "bNOS-positive amacrine cells in Dscam\u2206C/\u2206C mice develop nearly normally with minimal disruption in cell spacing, density, fasciculation, or stratification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C10, C32, and C33 show that bNOS cells have little disruption in organization (C9), maintain normal spacing and density (C10), show minimal fasciculation (C32), and stratify normally (C33). Multiple quantitative measures (Figure 2K-N) and imaging data (Figures 6, 7A-B) consistently support near-normal development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "aa90c999-0973-4776-8259-c5e18a0a0dd9",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Intrinsically photosensitive retinal ganglion cells (ipRGCs) in Dscam\u2206C/\u2206C mice show intermediate phenotypes with cell body clustering more severe than Bax-/- mutants but less severe than Dscam-/- mutants, and layer-specific differences in dendrite fasciculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C24, C29-C30 demonstrate that ipRGCs are severely affected in null mutants (C11), show intermediate clustering in \u2206C mutants (C12), have non-significant density increases (C13), are more clustered than Bax-/- (C24), and show layer-specific fasciculation differences (C29-C30). DRP, Voronoi, and Elo analyses (Figures 3, 5, 6) provide quantitative support for this intermediate phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "d1425d26-8891-4484-a178-81aab17d4754",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cdh3-GFP retinal ganglion cells in Dscam\u2206C/\u2206C mice develop normally without increased cell density, clustering, or dendrite fasciculation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, and C31 show that Cdh3-GFP RGCs have normal cell numbers (C14), no clustering (C15), and no fasciculation (C31) in \u2206C mutants. Multiple spacing measures (Figure 3K-N) and Elo scoring (Figure 6\u2014figure supplement 1) consistently demonstrate normal development.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AII amacrine cells in Dscaml1\u2206C/\u2206C mice show subtle disruption with normal cell density and no clustering, but increased Voronoi domain variance indicating irregular spacing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 demonstrate that DSCAML1-\u2206C disrupts PDZ binding (C17), retinas are modestly expanded (C18), AII cells have normal density (C19), no clustering (C20), but increased Voronoi variance (C21). Quantitative analyses (Figure 4H-K) support this subtle, intermediate phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "VGLUT3-positive amacrine cells in Dscaml1\u2206C/\u2206C mice show severe phenotypes with increased cell density, disrupted spacing more severe than Bax-/- mutants, and aberrant neurite projections into the AII amacrine terminal region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C23, C26, C38-C40 show that VGLUT3 cells have increased density (C22), disrupted spacing (C23), more severe disruption than Bax-/- (C26), misprojected neurites (C38-C39), and significantly increased VGLUT3 area in the AII region (C40). Multiple quantitative measures (Figures 4O-R, 5I-L, 7O-R) provide strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "573be880-6de5-4fae-a491-de6ae59729db",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "DSCAML1 promotes synapse maturation between rod bipolar cells and AII amacrine cells independent of C-terminal PDZ interactions, as dyad synapses appear normal in Dscaml1\u2206C/\u2206C but abnormal in Dscaml1-/- retinas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36, C37, C67, and C68 demonstrate that AII and RBC processes stratify normally (C36), dyad synapses are normal in \u2206C mutants (C37), but abnormal in null mutants (C67), indicating PDZ-independent synapse maturation (C68). TEM analysis (Figure 7J-M) provides direct morphological evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "7d0d2083-8502-472f-a647-3841cce8c102",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The requirement for PDZ-interacting C-termini of DSCAM and DSCAML1 varies by cell type, with some cell types showing complete dependence, others showing no dependence, and still others showing intermediate dependence, indicating multiple molecular mechanisms operate in different cellular contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41, C42, C70, C71, C81, C87, and C88 collectively establish the main conclusion that PDZ-dependence varies by cell type (C41-C42, C70-C71), DSCAMs function through multiple mechanisms (C81), and these must be defined cell-type specifically (C87-C88). The comprehensive phenotypic analysis across multiple cell types (Figures 2-7, Table 1) provides strong support for this differential dependence model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Increased cell density from loss of developmental cell death contributes to but does not fully explain the spacing and fasciculation defects in \u2206C mutants, as ipRGCs and VGLUT3 cells show more severe disruption than Bax-/- mutants despite comparable or lower cell densities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C63-C64 demonstrate that ipRGCs are more clustered in \u2206C than Bax-/- (C24), DA spacing is similar (C25), VGLUT3 spacing is more disrupted despite lower density (C26), and this pattern holds across cell types (C63-C64). Comparative analyses with Bax-/- mutants (Figures 5, 6) provide strong evidence that cell death is not the primary function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "e4d18455-e96f-432a-82f0-8ed0c9ede0c5",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "DA cells and M1 ipRGCs co-fasciculate in Dscam\u2206C/\u2206C mutants, representing aberrant interactions between different cell types that normally co-stratify.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, and C66 show that DA and M1 cells co-stratify correctly (C34), co-fasciculate in \u2206C mutants (C35), and this is the only clear example of heterotypic co-fasciculation (C66). Imaging data (Figure 7C-E) and citation to prior work provide support for this observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "66b173e8-1f4a-45c2-986b-7d89491c6fb2",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Promotion of developmental cell death is not the sole primary function of Dscams, as self-avoidance defects persist even when cell density is controlled or reduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C84, C85, and C86 establish that increased cell number can disrupt spacing (C62), but is not sufficient to explain self-avoidance defects (C84), cell death is not the sole function (C85), and clustering occurs even with reduced density (C86). Comparison with Bax-/- mutants and citation to prior work (Keeley et al., 2012; Fuerst et al., 2012) support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f9001006-e873-4a5c-8c09-2219f4a9783b",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "DSCAM shows little co-localization with multi-PDZ proteins in the adult IPL, but increased co-localization during development, indicating dynamic and transient interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82 and C83 report findings from de Andrade et al., 2014 showing developmental regulation of DSCAM-PDZ protein interactions. This is properly cited prior work that provides context for the current study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on Dscam/Dscaml1 structure, expression, function in self-avoidance and cell death, and known molecular interactions establishes the scientific context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C46-C59) provide established background information supported by appropriate citations to prior literature. They establish the known functions of Dscams and provide context for testing the role of PDZ interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "588d3bfc-886b-4102-8acb-b01b17fdd073",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Drosophila Dscam1 and vertebrate Pcdhg achieve self-avoidance through extensive isoform diversity enabling self/non-self discrimination, a mechanism not available to vertebrate DSCAMs which lack such diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C80 describe well-established mechanisms in Drosophila Dscam1 (C72-C75) and Pcdhg (C76-C79) systems, properly cited to primary literature, and draw the logical inference that vertebrate DSCAMs cannot use this mechanism (C80). This provides important comparative context for understanding vertebrate DSCAM function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "f13b069d-b0a0-4446-8ab9-d5d195fdec29",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The vertebrate retina provides an advantageous model system with ~100 neuronal cell types organized into layers and mosaic patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 provide standard background on retinal organization supported by established knowledge and appropriate citation (Masland, 2012). This establishes why the retina is a good model for studying neuronal organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "c01da1a7-5447-4e33-afe5-1977e513566d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Dscaml1 is expressed in rod circuit cells including rod photoreceptors, rod bipolar cells, and AII amacrine cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C16 reports established expression patterns from prior work (Fuerst et al., 2009), providing necessary background for interpreting the Dscaml1\u2206C/\u2206C phenotypes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "41a7471a-6d72-4e94-bec4-19ebe6813e8d",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "bNOS-positive amacrine cell organization in Dscam mutants varies with genetic background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 reports prior findings (Fuerst et al., 2010) about genetic background effects, providing context for why bNOS cells were examined on a C57BL/6 background in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    },
+    {
+      "id": "c12679d5-e238-4eae-8a01-41f70f061d23",
+      "content_id": "1bf60161-37e3-47f1-963d-f715f54e649b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "VGLUT3-positive amacrine cells normally stratify their neurites to the ON-OFF region of the IPL between ChAT-positive laminae.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 describes normal VGLUT3 cell stratification (Figure 7N), establishing the baseline for detecting misprojections in mutants. This is a straightforward descriptive observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:46:20.686393Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cef8e8b7-6b9f-4a70-b5a7-241f83079adb",
+      "result_id": "600a5d00-72a8-4fdd-8d01-353dea4f8b32"
+    },
+    {
+      "claim_id": "3ca6ee48-ea9e-44a1-8669-4b8da17833f6",
+      "result_id": "600a5d00-72a8-4fdd-8d01-353dea4f8b32"
+    },
+    {
+      "claim_id": "cc463c3d-c04d-4797-9d8b-cef9e87baafd",
+      "result_id": "600a5d00-72a8-4fdd-8d01-353dea4f8b32"
+    },
+    {
+      "claim_id": "7ce41b3f-dc35-4f94-9543-61d6d5d55c12",
+      "result_id": "600a5d00-72a8-4fdd-8d01-353dea4f8b32"
+    },
+    {
+      "claim_id": "0a392d0b-a7fa-44da-bcfa-7a7c315e4c68",
+      "result_id": "12cd54d2-506d-4e47-9315-5f64bcaea1ab"
+    },
+    {
+      "claim_id": "e8793cf4-5a17-49b0-8dcb-e2eaf83c6589",
+      "result_id": "12cd54d2-506d-4e47-9315-5f64bcaea1ab"
+    },
+    {
+      "claim_id": "3fe2626a-720c-4633-9dd0-d38034d158a2",
+      "result_id": "12cd54d2-506d-4e47-9315-5f64bcaea1ab"
+    },
+    {
+      "claim_id": "0240d839-9cdf-43fa-9334-740f4988c115",
+      "result_id": "12cd54d2-506d-4e47-9315-5f64bcaea1ab"
+    },
+    {
+      "claim_id": "ed6b1a5b-fad3-4953-b284-58a9a7ae6f6c",
+      "result_id": "5f4eb25a-7973-446f-8b46-cb33b6161407"
+    },
+    {
+      "claim_id": "7d17813d-26cc-456b-92d7-d29a7fa652d5",
+      "result_id": "5f4eb25a-7973-446f-8b46-cb33b6161407"
+    },
+    {
+      "claim_id": "a6306ee3-9c08-4e9a-9d66-a683d666d784",
+      "result_id": "5f4eb25a-7973-446f-8b46-cb33b6161407"
+    },
+    {
+      "claim_id": "30366164-472d-46df-aadd-86b75d9e9972",
+      "result_id": "5f4eb25a-7973-446f-8b46-cb33b6161407"
+    },
+    {
+      "claim_id": "b05e4657-5d38-402d-b088-b96057d8274f",
+      "result_id": "87bc643d-d08e-4721-8080-fe4364084bd5"
+    },
+    {
+      "claim_id": "f0e10ca8-fb30-47a3-a5da-970241d1f5b0",
+      "result_id": "87bc643d-d08e-4721-8080-fe4364084bd5"
+    },
+    {
+      "claim_id": "7935465b-dd21-4b9d-af91-c41ba8d53b02",
+      "result_id": "87bc643d-d08e-4721-8080-fe4364084bd5"
+    },
+    {
+      "claim_id": "80a91a25-aa7f-4079-9010-7ed716128de8",
+      "result_id": "87bc643d-d08e-4721-8080-fe4364084bd5"
+    },
+    {
+      "claim_id": "cbf36983-b9f8-41c0-a7b7-5fb277fb6067",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "f05155f8-6002-4c19-a5c2-682133d5ed7c",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "4408f95a-a191-4423-b45e-0e9b5585e498",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "10b91298-055c-4e41-a01e-aa81fadb466b",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "93bbb512-655f-4b99-9b8e-2d55ced8cca3",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "003fb131-9d84-42f3-b424-9a36a05bc309",
+      "result_id": "aa90c999-0973-4776-8259-c5e18a0a0dd9"
+    },
+    {
+      "claim_id": "7b19cb92-c5ce-4dd2-8ed2-0fc9c3dd1569",
+      "result_id": "d1425d26-8891-4484-a178-81aab17d4754"
+    },
+    {
+      "claim_id": "2cfaf2ae-d77a-4458-a535-1bceaa692621",
+      "result_id": "d1425d26-8891-4484-a178-81aab17d4754"
+    },
+    {
+      "claim_id": "f72d452e-a29e-4d99-9cdc-ab8a99bfce2e",
+      "result_id": "d1425d26-8891-4484-a178-81aab17d4754"
+    },
+    {
+      "claim_id": "b97bb743-0f92-4ec6-8f85-12dbb650f182",
+      "result_id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8"
+    },
+    {
+      "claim_id": "4454cd32-e6c0-4f68-ac15-f7bb4105cf06",
+      "result_id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8"
+    },
+    {
+      "claim_id": "7e29a0f3-963f-4571-9412-2c9e15f2cca3",
+      "result_id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8"
+    },
+    {
+      "claim_id": "2e87c696-be56-42f2-86db-48cb83fa20e2",
+      "result_id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8"
+    },
+    {
+      "claim_id": "1ca99717-1e30-4790-9715-099db89ddc46",
+      "result_id": "fcad55ef-1c1d-4621-ac65-f86dcd3ff3c8"
+    },
+    {
+      "claim_id": "d36ee431-d4ae-475d-9c33-9b9d3b89e434",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "fcfc5afe-4ef0-4b4a-8740-8a612a255fdb",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "a1d86a82-395b-41af-b40d-3cb285339297",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "2472e93e-f74c-43b8-a1b2-32cbc8570a5c",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "144291c4-4c56-4483-8bfe-1e3d3054150d",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "7dd3ca44-87e4-413d-a81c-e2f474c12a4d",
+      "result_id": "3d7a1701-48c2-40d7-b9ff-6660d00bb1c5"
+    },
+    {
+      "claim_id": "8d9fe8d5-9b51-4c09-8995-ec71af9d40ff",
+      "result_id": "573be880-6de5-4fae-a491-de6ae59729db"
+    },
+    {
+      "claim_id": "f76897fa-abba-4313-bb8a-a2ac3fc39297",
+      "result_id": "573be880-6de5-4fae-a491-de6ae59729db"
+    },
+    {
+      "claim_id": "b581e5dd-51a5-4a4b-8d34-8dd260aa8561",
+      "result_id": "573be880-6de5-4fae-a491-de6ae59729db"
+    },
+    {
+      "claim_id": "87e6a9e4-7b8b-43a6-9396-242c919a68b4",
+      "result_id": "573be880-6de5-4fae-a491-de6ae59729db"
+    },
+    {
+      "claim_id": "03e1c0bf-4b3a-4223-bc1e-28c3582a1362",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "a794f99d-4cc8-4944-b655-076a179e2a18",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "96045a15-e705-45c8-964b-d41dd8475bac",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "d4a0280c-4461-4e69-9fbd-a0522f088cc4",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "38a09579-643a-4010-893f-7ffdf5875c24",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "edbb737d-9538-4cec-a9df-d3d1fce289c7",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "074c2ca7-16e5-41b2-96a8-aa7658a023f0",
+      "result_id": "7d0d2083-8502-472f-a647-3841cce8c102"
+    },
+    {
+      "claim_id": "10b91298-055c-4e41-a01e-aa81fadb466b",
+      "result_id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae"
+    },
+    {
+      "claim_id": "ec143e88-55de-488a-be90-02e113194dfe",
+      "result_id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae"
+    },
+    {
+      "claim_id": "a1d86a82-395b-41af-b40d-3cb285339297",
+      "result_id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae"
+    },
+    {
+      "claim_id": "0ed5bad4-7fd6-4019-8636-2cf72263e493",
+      "result_id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae"
+    },
+    {
+      "claim_id": "63e2cd41-762a-42d0-95fe-d1fa02948efc",
+      "result_id": "8cf7cd43-e6d9-4403-a623-341aa2b40bae"
+    },
+    {
+      "claim_id": "0406758f-e7dd-4859-ab41-603628563582",
+      "result_id": "e4d18455-e96f-432a-82f0-8ed0c9ede0c5"
+    },
+    {
+      "claim_id": "670d485b-9f8e-44c5-b276-6f558a729e02",
+      "result_id": "e4d18455-e96f-432a-82f0-8ed0c9ede0c5"
+    },
+    {
+      "claim_id": "6c5355a9-e912-4822-b0c9-620443a7df22",
+      "result_id": "e4d18455-e96f-432a-82f0-8ed0c9ede0c5"
+    },
+    {
+      "claim_id": "7ef41f03-2d80-4d98-a24a-42eeea7f5caa",
+      "result_id": "66b173e8-1f4a-45c2-986b-7d89491c6fb2"
+    },
+    {
+      "claim_id": "d2ce0d6d-f289-481f-a266-75b5d6539e70",
+      "result_id": "66b173e8-1f4a-45c2-986b-7d89491c6fb2"
+    },
+    {
+      "claim_id": "6e8f79c2-dbe7-4da5-bfd2-784d8726b96d",
+      "result_id": "66b173e8-1f4a-45c2-986b-7d89491c6fb2"
+    },
+    {
+      "claim_id": "ff785f2b-3fa3-43f4-8cdc-9e2c8448b7b1",
+      "result_id": "66b173e8-1f4a-45c2-986b-7d89491c6fb2"
+    },
+    {
+      "claim_id": "80cfdaf1-e0ab-40cc-a71c-308e2ecbed09",
+      "result_id": "f9001006-e873-4a5c-8c09-2219f4a9783b"
+    },
+    {
+      "claim_id": "af3f42d9-bd13-4a83-a4c2-b90d1a51a924",
+      "result_id": "f9001006-e873-4a5c-8c09-2219f4a9783b"
+    },
+    {
+      "claim_id": "cef8e8b7-6b9f-4a70-b5a7-241f83079adb",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "79f2c120-aed2-4f3f-9668-8008c8795848",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "172741cc-69b8-493d-86bd-c8037f1df9fa",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "668127e9-367f-4527-8536-9649b1132682",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "c84b9186-325e-4fa8-bfd8-5118c9fd0a7c",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "f8bfa6eb-6f01-4f77-a875-3aab12a3447f",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "889603c0-ec94-4530-8d22-5cf191088a09",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "043d3deb-6818-4618-9f8a-74978146b5c6",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "ce3d759d-1820-419e-a642-aee466abd05f",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "dd5a278e-234a-45cb-b687-ae361707c9f4",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "a5a3f54c-dfd1-4433-a0b7-fae20656a0ba",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "7d2da00a-a1ab-4fc5-b570-f715379e47fc",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "20a50a7a-4fb2-4187-a62c-cdf2845d07ef",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "23a0cd19-902c-4f5c-aa87-fd3e7c22e00d",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "5f412220-10fc-4af6-9462-e0c4591fab36",
+      "result_id": "ef1d1ec4-b2a5-4647-bd52-8b91d7284c15"
+    },
+    {
+      "claim_id": "d429fb7a-a57b-4928-a8cb-fb7180b82a77",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "ffc27b16-1f1d-4fcf-9d22-2bdc29b28f24",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "d4d015ba-c031-4e12-91b1-7717cadf6ed1",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "2d94c2ca-daa9-41bf-aaaf-31aa5aaece0e",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "636f6894-e467-4aed-86e3-2e045505b8f7",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "cea3124b-dbda-46c2-8719-3519985bcd2b",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "c619553c-c56a-4b43-af4c-780b94fd3d44",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "c29cd300-e857-4a55-9708-8dfed3a24731",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "82a3ad4e-0e7a-4407-8848-214fa1d1c8c0",
+      "result_id": "588d3bfc-886b-4102-8acb-b01b17fdd073"
+    },
+    {
+      "claim_id": "cb0bdf6d-fa46-4bde-8784-106d64c1ab52",
+      "result_id": "f13b069d-b0a0-4446-8ab9-d5d195fdec29"
+    },
+    {
+      "claim_id": "5c7374cb-839e-41d8-a258-50ce672ba928",
+      "result_id": "f13b069d-b0a0-4446-8ab9-d5d195fdec29"
+    },
+    {
+      "claim_id": "8d5de8b1-3716-4eec-8c0f-ad94bed0c21d",
+      "result_id": "f13b069d-b0a0-4446-8ab9-d5d195fdec29"
+    },
+    {
+      "claim_id": "a8380216-32da-4202-b79f-ac2f29da069d",
+      "result_id": "c01da1a7-5447-4e33-afe5-1977e513566d"
+    },
+    {
+      "claim_id": "8030a377-0bab-4b1d-9c7e-c81568b3e160",
+      "result_id": "41a7471a-6d72-4e94-bec4-19ebe6813e8d"
+    },
+    {
+      "claim_id": "5538876b-bfba-4e85-919d-4063dc716281",
+      "result_id": "c12679d5-e238-4eae-8a01-41f70f061d23"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C13",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The study used RNA-Seq to characterize the hypothalamic transcriptome in 282 mice from 99 HMDP strains fed a high fat, high sugar diet. Sequencing was performed using HiSeq2000 with 50 bp paired-end reads, achieving high quality metrics (median quality score >28) and an average of 26.3M reads per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10, C13, C97-C101 provide comprehensive methodological details including sample size, sequencing platform, quality metrics, and read depth. The technical specifications are clearly stated and internally consistent, supporting the validity of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C12"
+    ],
+    "result": "The study identified 21,234 novel isoforms and 485 transcripts from 407 novel genes in robustly expressed transcripts (FPKM >1 in 50+ samples). Novel genes resemble known non-coding genes in genomic properties, while novel isoforms resemble known coding transcripts. When compared to GENCODE M10, 193 of 407 novel loci remain novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 provide specific quantitative data with clear filtering criteria (FPKM thresholds and sample requirements). The comparison to updated annotations (C17) strengthens the novelty claim. Genomic characterization (C18-C19) is supported by Figure 1, though the interpretation that novel genes are likely non-coding is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C2"
+    ],
+    "result": "Proteomic validation identified 430 peptides matching novel transcripts exclusively (401 to novel isoforms, 29 to novel genes). Manual characterization revealed that peptides matching novel genes predominantly represent processed pseudogenes rather than proteins with novel functions, supporting widespread pseudogene transcription and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 provide independent proteomic validation of RNA-Seq findings. The high concordance with known transcripts (>95%, C20) validates data quality. Manual curation of peptides matching novel genes (C22) provides critical functional interpretation, though the sample size for novel genes is small (n=29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "RNA-Seq mapping achieved high quality with 94.1% of reads mapping (96.4% uniquely) and STAR detecting an average of 2.8M splices per sample, with 98% previously annotated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide specific mapping statistics indicating high-quality data. The high percentage of uniquely mapping reads and previously annotated splices supports data reliability. These are standard quality metrics for RNA-Seq studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C3",
+      "C4",
+      "C88"
+    ],
+    "result": "The study identified local and trans eQTLs affecting different transcript features (eQTL, isoQTL, tssQTL, cdsQTL). 85-95% of genes with distant QTLs also had local QTLs, suggesting most distant signals reflect extended LD rather than independent regulation. In contrast, 70% of trans interactions involved genes lacking local signals. Gene-level regulation was more common than isoform-specific regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C88 describe the QTL mapping results with specific percentages. The distinction between local, distant, and trans regulation is clearly defined. The interpretation that distant QTLs reflect LD (C27) is reasonable but inferential. The predominance of gene-level over isoform-specific regulation (C88) is stated but lacks quantitative support in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C87"
+    ],
+    "result": "Two trans eQTL hotspots were identified on chromosomes 1 and 15, each spanning 5-6 Mb with >500 SNPs regulating >400 genes. The chr1 hotspot regulates genes involved in nucleotide binding, while chr15 regulates genes associated with ion transport in synaptic activity. These hotspots were specific to hypothalamus and not observed in adipose or liver from the same cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C40, C87 describe major trans eQTL hotspots with specific genomic locations and functional enrichment. However, the authors acknowledge (C86) that trans eQTL hotspots can arise from uncontrolled batch effects, and while they implemented a round-robin sequencing design, they cannot definitively exclude technical artifacts. The tissue specificity (C87) supports biological relevance, but experimental validation is explicitly stated as required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Detailed analysis of the chr15 hotspot identified rs31703733 as a local eQTL for only 10 genes, which form a coexpression module with genes regulated in trans. This module associates with triglyceride and cholesterol measurements. Peak SNPs (rs31703733 and rs31780670) are located within H3K4me1 enhancer marks detected in neuronal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 provide detailed characterization of the chr15 hotspot with specific SNPs, gene counts, and phenotypic associations. The H3K4me1 enhancer mark location (C45) from ENCODE data provides mechanistic insight, though the authors appropriately note this is preliminary and requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Local eQTLs showed significant but modest correlation with allele-specific expression (ASE) in F1 crosses (p<2E-16, R\u00b2=0.2), lower than correlation between ASE measurements in two F1 crosses (R\u00b2=0.4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 provides specific statistical values comparing local eQTLs to ASE. The modest correlation (R\u00b2=0.2) is appropriately characterized and compared to ASE-ASE correlation. This addresses a known discrepancy in the field between association-based and allele-specific approaches to identifying cis regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C5"
+    ],
+    "result": "The study identified 7,564 alternative splicing events affecting 3,599 genes, with alternative first exons being most common. All forms of alternative splicing were predominantly regulated by local variants, with 50-60% of events significantly associated with local variants, typically within 1 Mb.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide specific quantitative data on alternative splicing events with clear percentages and genomic distances. The predominance of local regulation (C32-C33) is well-supported. Figure 3 provides visual evidence. The finding that splicing is locally regulated contrasts with gene expression patterns and is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study identified 381 lincRNA transcripts (237 known, 144 novel isoforms) from 181 genes, plus up to 129 potentially novel lincRNAs. Up to 35% of lincRNAs significantly correlated with at least one phenotype, and >30% showed significant local eQTLs. Six lincRNAs (Meg3, Gm26924, Snhg4, Miat, 6330403K07Rik, Malat1) were highly expressed across most strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide comprehensive characterization of lincRNAs with specific numbers and percentages. The tissue specificity explanation for limited lincRNA detection (C48, citing C93) is reasonable. The phenotypic associations (C51) and genetic regulation (C52) suggest functional relevance. The identification of highly expressed lincRNAs (C53) is data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Among highly expressed lincRNAs, Meg3 is a known imprinted tumor suppressor recently implicated in hepatic insulin resistance, Malat1 knockout models are viable and normal, and Miat was initially linked to myocardial infarction and subsequently shown to regulate neuronal progenitor development and be involved in schizophrenia and fear response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 cite previous literature to provide functional context for identified lincRNAs. These are appropriately referenced knowledge claims that contextualize the findings. However, none of these lincRNAs were previously reported in hypothalamus or metabolic contexts, which is noted in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Only 6 peptides mapped uniquely to 3 different lincRNAs (Gm26825, Gm16295, Gm26593), suggesting rare translation of lincRNAs and that ribosome association likely reflects translational regulation of other transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 provides specific proteomic data on lincRNA translation. The low number of peptides (6 peptides, 3 lincRNAs) supports the interpretation of rare translation. However, the conclusion about ribosome association is inferential and not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C91"
+    ],
+    "result": "The study detected 8,462 potential editing sites in 3,319 genes, with >70% being A-to-G modifications. 75% of sites were novel compared to DARNED and RADAR databases. No significant genome-wide editing associations were detected, but editing QTLs were found for 3 specific sites, including Ociad1 (p<1e-8). Less than 1% of sites were consistently detected across >75% of strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C91 provide comprehensive RNA editing analysis with specific numbers and statistical thresholds. The predominance of A-to-G editing (C60) is expected for neuronal tissue. The lack of genome-wide associations (C62) is explained by stable ADAR expression. The high variability and low consistency (C91) are appropriately characterized. The small number of editing QTLs (n=3) limits broader conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C6"
+    ],
+    "result": "Comparison with 150 metabolic and cardiovascular phenotypes revealed many highly significant associations. Fat mass accumulation was associated with oxidative phosphorylation and energy metabolism pathways, while genes associated with food intake were enriched for ribosome-related pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe phenotype associations with specific pathway enrichments. The number of phenotypes (150) is clearly stated. However, the claim of 'many highly significant associations' (C6) lacks specific quantification. The pathway enrichments (C66-C67) are examples rather than comprehensive results, and Figure 7B shows that only a few expression sets showed strong enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "232 novel transcripts were associated with at least one phenotype, with ~30% of novel isoforms significantly correlated with phenotypes. For example, TCONS_00279690 was strongly associated with multiple metabolic traits including total mass, insulin levels, weight, and fat mass.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide specific numbers of novel transcripts associated with phenotypes. The percentage (30%) is comparable to known isoforms, suggesting novel transcripts have similar functional relevance. The specific example (C69) illustrates the types of associations found. However, statistical thresholds for 'significant' correlations are not specified in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The data show high expression of well-known hypothalamic neuronal markers (Agrp, Pomc, Hcrt, SF1), high expression of oligodendrocyte and microglia markers, but only modest expression of epithelial markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 describe cell-type marker expression patterns. This validates that the hypothalamic tissue contains expected cell populations. The detection of non-neuronal markers (oligodendrocytes, microglia) is important for interpreting whole-tissue data. However, 'high' and 'modest' are qualitative descriptors without quantitative thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Genetic variation affects expression of key metabolic genes including Myd88 (strong eQTL, p=1.9e-17), LepR, and Pomc. Myd88 mediates fatty acid-induced inflammation and leptin/insulin resistance, and CNS-specific deletion protects from high-fat diet-induced weight gain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 identify specific genes with eQTLs and provide functional context from literature. The Myd88 eQTL has a very strong p-value (C75). The functional information (C73-C74) is from cited literature and provides biological context. However, the functional implications of genetic variation in expression are not experimentally validated in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NPY expression was associated with total body mass (p=2.4e-6), confirming known relationships. Cx3cr1 showed one of the strongest correlations with fat mass response (p=9.62E-10). Cx3cr1 expression is affected by genetic background, potentially explaining heterogeneous results in knockout studies using different genetic backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide specific gene-phenotype associations with statistical support. The NPY association (C77) validates the approach by confirming known biology. The Cx3cr1 finding (C78) is novel and strongly significant. The interpretation regarding genetic background effects (C82) is reasonable but inferential, as it attempts to explain discrepancies in previous knockout studies (C80) without direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "A round-robin sequencing design was used to minimize technical batch effects. Trans eQTL hotspots were not detected in adipose or liver from the same cohort, supporting tissue specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 address potential technical confounders. The round-robin design (C86) is an appropriate method to control batch effects. The tissue specificity (C87) provides evidence against purely technical artifacts, though the authors acknowledge they cannot definitively exclude all technical effects. This is an honest assessment of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C14",
+      "C96"
+    ],
+    "result": "All expression data and transcriptome assembly are publicly available from GEO (GSE79551) and SRA (PRJNA314533).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C96 state data availability with specific accession numbers. This supports reproducibility and is a standard requirement for publication. The claim is verifiable and straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Proteomic data were collected on 110 independent biological replicates (99 strains plus 10 C57Bl/6) fed the same diet, but using different hypothalami than those used for RNA extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 clearly describe the proteomic sample design. The use of independent biological replicates rather than the same samples is appropriate for validation. The sample size (110) provides reasonable coverage of the 99 strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C11"
+    ],
+    "result": "Prior work established that up to 80% of genetic variants associated with complex traits act through gene expression regulation, that mouse is the primary model for cardiovascular/metabolic traits, and that only one previous study examined hypothalamic eQTLs (39 strains, microarray, 5000 SNPs). The HMDP strains are densely genotyped and phenotyped for ~150 metabolic traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C11 provide context from prior literature and describe the HMDP resource. These are appropriately cited knowledge claims that establish the rationale and novelty of the study. The comparison to the single previous hypothalamic eQTL study (C9) highlights the advancement in scale and resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Prior work established that pseudogene transcription plays regulatory roles, that pseudogenes and lncRNAs can be translated, that cell-type specific hypothalamic transcripts show feeding-associated co-expression networks, that ADAR and Apobec1 mediate A-to-I and C-to-U editing respectively, that genetic variants can affect editing, that Ociad1 regulates pluripotency via JAK/STAT, that lincRNAs are tissue-specific, that specific lincRNAs affect various phenotypes, and that genetic regulation of transcription is largely shared among tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C89-C90, C92-C95 cite prior literature to provide context for the findings. These are appropriately referenced knowledge claims that support the interpretation of results. The claim about shared genetic regulation across tissues (C95) is used to justify the whole-hypothalamus approach despite tissue heterogeneity.",
+    "result_type": "MINOR"
+  }
+]

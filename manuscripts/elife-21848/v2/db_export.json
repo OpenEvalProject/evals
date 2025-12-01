@@ -1,0 +1,1909 @@
+{
+  "submission": {
+    "id": "4967a092-d713-4f1e-819f-1cbe15d20bdd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:12:16.885217Z",
+    "updated_at": "2025-11-30T22:12:16.885217Z"
+  },
+  "content": [
+    {
+      "id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "submission_id": "4967a092-d713-4f1e-819f-1cbe15d20bdd",
+      "content_type": "manuscript",
+      "content_text": "# Coincidence detection and bi-directional transmembrane signaling control a bacterial second messenger receptor\n\n## Authors\n\n- Richard B Cooley<sup>1</sup> \u2020\n- John P O\u2019Donnell<sup>1</sup>\n- Holger Sondermann<sup>1</sup> ([ORCID: 0000-0003-2211-6234](https://orcid.org/0000-0003-2211-6234)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Medicine, College of Veterinary Medicine Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe second messenger c-di-GMP (or cyclic diguanylate) regulates biofilm formation, a physiological adaptation process in bacteria, via a widely conserved signaling node comprising a prototypical transmembrane receptor for c-di-GMP, LapD, and a cognate periplasmic protease, LapG. Previously, we reported a structure-function study of a soluble LapD\u2022LapG complex, which established conformational changes in the receptor that lead to c-di-GMP-dependent protease recruitment (Chatterjee et al., 2014). This work also revealed a basal affinity of c-di-GMP-unbound receptor for LapG, the relevance of which remained enigmatic. Here, we elucidate the structural basis of coincidence detection that relies on both c-di-GMP and LapG binding to LapD for receptor activation. The data indicate that high-affinity for LapG relies on the formation of a receptor dimer-of-dimers, rather than a simple conformational change within dimeric LapD. The proposed mechanism provides a rationale of how external proteins can regulate receptor function and may also apply to c-di-GMP-metabolizing enzymes that are akin to LapD.\n\n## Introduction\n\nBacteria exist either as free swimming, planktonic cells or as multi-cellular biofilms \u2014\u00a0aggregates adhered to biotic or abiotic surfaces, which are enveloped in a self-produced matrix composed of proteins, nucleic acids, and polysaccharides (Hall-Stoodley et al., 2004; Teschler et al., 2015). This matrix protects bacteria from hostile environments, rendering them more resistant to insult and, in the context of pathogenic microbes, more\u00a0tolerant to antibiotics and the immune system. The transition between planktonic and sessile lifestyles is tightly regulated, typically involving the second messenger c-di-GMP (or cyclic diguanylate) (Hengge, 2009; Hengge et al., 2016; R\u00f6mling et al., 2005; Wolfe and Visick, 2008). The cellular c-di-GMP level is governed by two enzyme classes with opposing activities: GGDEF domain-containing diguanylate cyclases and EAL or HD-GYP domain-containing phosphodiesterases, which synthesize and degrade the dinucleotide, respectively (Schirmer and Jenal, 2009). A wide variety of specific, c-di-GMP-binding receptors translate the second messenger signal into physiological responses (Chou and Galperin, 2016; Sondermann et al., 2012). Bacterial genomes can encode a large number of c-di-GMP-signaling proteins and this number scales roughly with the organism\u2019s adaptivity (Galperin, 2005). A particularly interesting observation is that, despite identical catalytic activities, c-di-GMP-metabolizing enzymes often confer distinct signaling outcomes (Abel et al., 2011; Dahlstrom et al., 2015, 2016; Ha et al., 2014; Kulasakara et al., 2006; Lindenberg et al., 2013; Newell et al., 2011a). The mechanisms underlying this apparent signaling specificity are not well understood.\n\nRecent work by our lab and others have focused on a conserved signaling system comprising the Lap operon that controls cell adhesion and biofilm formation in gammaproteobacteria, including Pseudomonas fluorescens (Chatterjee et al., 2014; Navarro et al., 2011;\u00a0Newell et al., 2009, 2011b), P. aeruginosa (Cooley et al., 2016 Rybtke et al., 2015), P. putida (Gjermansen et al., 2010), Bordetella bronchiseptica (Ambrosis et al., 2016), and Shewanella oneidensis (Zhou et al., 2015) (Figure 1A). At its center, the inner membrane protein LapD functions as a receptor with degenerate GGDEF and EAL domains, which together relay intracellular c-di-GMP concentrations to the periplasm. At high c-di-GMP levels, LapD sequesters the adhesin protein-specific, periplasmic protease LapG at the inner membrane via the receptor\u2019s periplasmic domain. This step ensures that large adhesin proteins whose transcription is activated by the dinucleotide remain stably associated with the outer cell membrane. When c-di-GMP levels drop and adhesin expression ceases, LapD undergoes a conformational change, adopting an autoinhibited state with low affinity for LapG; freed LapG, in turn, processes the adhesin proteolytically, weakening cell adhesion and ultimately contributing to biofilm dispersal (Chatterjee et al., 2014; Navarro et al., 2011; Newell et al., 2011b; Cooley et al., 2016; Rybtke et al., 2015; Borlee et al., 2010; Mart\u00ednez-Gil et al., 2014; Monds et al., 2007). Notably, our previous work identified a transient, yet detectable interaction of LapG with c-di-GMP-unbound LapD, suggesting that the protease may participate in an early event of LapD signaling (Chatterjee et al., 2014). Curiously, saturation binding of LapG to LapD was markedly lower in the absence of c-di-GMP compared to levels when both ligands, c-di-GMP and LapG, were present. The functional relevance and mechanistic role of this interaction, however, remained poorly defined.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig1-v2.jpg)\n\n**Figure 1.:** (A) Working model for c-di-GMP-dependent regulation of the periplasmic protease LapG via the inner membrane protein LapD. Concerted conformational changes expose a periplasmic binding site for LapG on LapD, sequestering the protease away from its substrates, the adhesin proteins LapA in P. fluorescens or CdrA in P. aeruginosa. (DGC, diguanylate cyclase; red/orange asterisks\u00a0indicate interaction helices in LapD/GcbC). (B). Size-exclusion chromatograms for detergent-solubilized LapD in different states. Samples were prepared as described in the\u00a0Material and Methods. (Asterisks: c-di-GMP was included in the mobile phase). (C) Molecular weight of LapD in solution. Peak fractions were analyzed by in-line SEC-MALS. (Absorbance at 280 nm: Traces colored according to (B);\u00a0molecular weight determination: Dark and light purple dots; theoretical molecular weights based on sequence: Horizontal dashed lines.) Data are representative of two biological replicates using independent protein preparations.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Previous studies identified helical motifs in LapD\u2019s and GcbC\u2019s cytosolic domains (asterisks in Figure 1A) and GcbC\u2019s I-site as features that\u00a0support interactions between this receptor\u2013DGC pair (Dahlstrom et al., 2015, 2016). Structures: LapD\u2019s S helix-GGDEF-EAL domain, left, PDB code 3pjx; GcbC\u2019s GGDEF domain bound to c-di-GMP, middle, PDB code 5euh; LapD\u2019s EAL domain dimer bound to c-di-GMP, right, PDB code 3pjt).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** An equilibrium-saturation binding experiment based on fluorescence anisotropy is shown. See Material and Methods for details. Means and standard errors from two biological and two technical replicates are shown. (Minus c-di-GMP\u00a0\u2014 kD\u00a0=\u00a011.7\u00a0\u00b1\u00a03.8 \u03bcM, Bmax\u00a0=\u00a00.1\u00a0\u00b1\u00a00.01; plus c-di-GMP\u00a0\u2014 kD\u00a0=\u00a01.9\u00a0\u00b1\u00a00.3 \u03bcM, Bmax\u00a0=\u00a00.09\u00a0\u00b1\u00a00.004.)\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) SEC-MALS analysis of LapD incubated with LapG and c-di-GMP. In this experiment, c-di-GMP was omitted from the mobile phase. (B) Experimental determination of detergent dn/dc values. Means and standard errors from three biological replicates are shown. (C) Molecular weights associated with various states of LapD were determined by SEC-MALS. aPeaks 1 and 2 refer to the species eluting at 10\u201311 min and 12 min, respectively, observed in the associated chromatograms shown in Figure 1C and panel (A) of this figure. bMolecular weight of protein\u2013detergent complex, which is the sum of the protein component molecular weight (c) and the detergent component molecular weight (d). #Theoretical molecular weights: LapD dimer\u00a0=\u00a0146.0 kDa, LapD dimer with one LapG\u00a0=\u00a0168.9 kDa, and LapD dimer of dimers with two LapG molecules\u00a0=\u00a0337.8 kDa. *c-di-GMP present in mobile phase of SEC.\n\nIn addition, a subsystem of diguanylate cyclases feeds specifically into the P. fluoresens LapD, indicating apparent signaling specificity between enzymes and receptors involved in c-di-GMP signal transduction (Newell et al., 2011a). At least one of these enzymes, GcbC, fulfills a distinct role in contributing an activation signal that relies on protein\u2013protein interactions with LapD (Dahlstrom et al., 2015, 2016) (Figure 1A). Yet, our previous structural analysis of LapD indicated that\u00a0a helical motif mediating pairwise interactions with GcbC was occluded in the autoinhibited state (Figure 1\u2014figure supplement 1). Furthermore, modeling LapD as a simple dimer also suggested global steric incompatibility between these two transmembrane proteins (Figure 1A).\n\nHere, we focus on the molecular basis of switching of the purified, full-length c-di-GMP receptor LapD. These follow-up studies reveal an unanticipated role for LapG, together with c-di-GMP, in establishing the signaling-competent conformation of LapD by inducing higher-order oligomerization of the receptor. On the basis of the results, significant modifications to our model include coincidence detection of dinucleotide and protease as well as bidirectional signaling across the membrane as integral steps in LapD activation, with implications for the origins of transmembrane c-di-GMP signaling and for the regulation of LapD via heterologous interactions with diguanylate cyclases (Dahlstrom et al., 2015, 2016).\n\n## Results\n\n### Activation of full-length LapD results in quaternary structure changes\n\nPreviously, we showed that\u00a0LapD has a reduced binding capacity for LapG in the absence of c-di-GMP (Chatterjee et al., 2014). This observation was based on an equilibrium-binding assay at a fixed LapD concentration and with\u00a0LapG as the titrant. To further confirm a quantitative difference between c-di-GMP-bound and -unbound LapD with regard to LapG affinity, we developed a fluorescence anisotropy-based assay, which relies on LapG that is fluorescently labeled at the sole cysteine residue in the protein\u2019s active site (Figure 1\u2014figure supplement 2). Titration of purified, detergent-solubilized LapD to a fixed concentration of fluorescent LapG yielded saturation-binding data, revealing an approximately 6-fold increase in LapG\u2019s apparent affinity for LapD when c-di-GMP is present. Interestingly, the\u00a0LapD titrations used here reached comparable maximum binding with and without c-di-GMP (Figure 1\u2014figure supplement 2), in contrast to our previous assays in which LapG was the titrant which\u00a0showed distinct maxima\u00a0for LapD\u2013LapG binding in the presence or\u00a0absence\u00a0of c-di-GMP (Chatterjee et al., 2014). The difference in binding\u00a0observed when the\u00a0fixed and titrated proteins are swapped suggests that LapG displays a constant, saturable binding site, whereas LapD\u2019s binding capacity, and not only its affinity for LapG, is regulated by the dinucleotide.\n\nTo begin investigating the structural underpinnings of LapD switching in the context of the intact receptor, we initially employed size-exclusion chromatography coupled to multi-angle light scattering (SEC-MALS). This approach enables assessment of the quaternary structure of detergent-solubilized, full-length LapD in response to c-di-GMP and LapG (Figure 1B and C, Figure 1\u2014figure supplement 3). SEC-MALS is particularly advantageous for the study of membrane proteins because the respective scattering contributions of the protein and detergent components of the protein-detergent conjugate can be accurately deconvoluted to yield the molecular mass of the protein analyte (Gimpl et al., 2016) (Figure 1\u2014figure supplement 3C). With this approach, purified apo-LapD was shown to be monodisperse and dimeric (Figure 1C, Figure 1\u2014figure supplement 3C). Pre-incubation with LapG in the absence of c-di-GMP did not alter LapD\u2019s elution time nor oligomerization state (Figure 1C), indicating\u00a0that\u00a0the interactions between the c-di-GMP-unbound receptor and the protease observed in saturation-binding assays ((Chatterjee et al., 2014); Figure 1\u2014figure supplement 2) are likely transient.\n\nTo probe how c-di-GMP influences LapD oligomerization, LapD was pre-incubated with dinucleotide and injected into the SEC-MALS system equilibrated with c-di-GMP in the mobile phase (Figure 1B). The LapD\u2022c-di-GMP complex was predominantly dimeric, but a minor population of tetrameric LapD\u2022c-di-GMP was also observed. Unexpectedly, when\u00a0analyzed\u00a0under identical conditions,\u00a0the preformed LapG\u2022LapD\u2022c-di-GMP complex eluted predominantly as a higher-order species with a molecular weight corresponding to that\u00a0of\u00a0a LapD dimer-of-dimers (Figure 1C, Figure 1\u2014figure supplement 3C). Omitting c-di-GMP in the mobile phase destabilized the complex, with LapD eluting as a dimeric species (Figure 1\u2014figure supplement 3A and C). Together, these results provide compelling evidence that the LapG protease, together with c-di-GMP, plays a crucial role in the activation of LapD via induction of receptor oligomers.\n\n### Cysteine crosslinking reveals multiple activation states of LapD\n\nThe analysis described\u00a0above suggests that native LapD can adopt at least three global states: (1) dimeric apo-LapD, (2) dimeric LapD\u2022c-di-GMP, and (3) a LapD\u2022c-di-GMP\u2022LapG dimer-of-dimers complex. To characterize these states further, we turned to cysteine crosslinking, a time-honored approach to assess the conformation and dynamics of proteins with high spatial resolution (Bass et al., 2007; Butler and Falke, 1998). In this approach, a covalent crosslink forms upon mild oxidation, catalyzed by copper phenanthroline (Cu(Phen)2), only when two cysteine residues are in close spatial proximity (~2\u20133 \u00c5). For visualization of crosslinked polypeptides in SDS-PAGE, we expressed LapD variants with a C-terminal monomeric superfolder-GFP (sfGFP) tag. Specific LapD\u2013sfGFP detection in crude solubilized membrane fractions is based on in-gel fluorescence, with crosslinks introducing electrophoretic mobility shifts of the sfGFP-fusion protein. Furthermore, we mutated two native cysteine residues in the soluble domains of LapD (C304 and C397) to alanine and serine, respectively, to eliminate non-specific crosslinks. This LapD variant (\u2018TMcys\u2019) retained the two native cysteine residues in the transmembrane helices (C12 and C158). Using a specific LapG photo-crosslinking assay (Chatterjee et al., 2014), we showed that LapD-TMcys was able to bind LapG in a c-di-GMP-dependent manner similar to wild-type LapD, as was a variant lacking all four native cysteine residues (\u2018cysless\u2019) (Figure 2\u2014figure supplement 1A).\n\nSite-directed cysteine mutations were introduced into the TMcys\u2013sfGFP fusion background in order to analyze LapD conformational changes in different states of activation. One central strategy in our studies is based on the mutation A602C, which allows us to probe EAL domain dimerization and, in conjunction with S229C, signaling (S) helix\u2013EAL domain contacts, reporting on active and autoinhibited LapD, respectively (Figure 2A). We confirmed by SEC-MALS analysis that LapD\u2013sfGFP, LapDTMcys, and a representative variant with an engineered cysteine, LapDTMcys-A602C, formed constitutive dimers in their respective apo-states, similar to wild-type LapD, and that neither the sfGFP fusion nor cysteine mutagenesis perturbed the receptor notably (Figure 2\u2014figure supplement 1B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig2-v2.jpg)\n\n**Figure 2.:** (A) Overview of native and engineered cysteine residues used in crosslinking studies. The composite model of LapD shown is\u00a0based on the\u00a0available crystal structures of autoinhibited (top) and c-di-GMP-bound (bottom)\u00a0domains. (B) Detection of intramolecular and intradimer disulfide bonds. Upper panel: LapDTMcys\u2013sfGFP variants with the indicated cysteine mutation. Colored arrows and asterisks mark specific crosslinking bands. Only the band with grey marking could not be assigned unambiguously to a specific crosslinking sites. Note: The W125E variant of LapD migrates slightly slower than its native counterparts (also seen in Figure 2\u2014figure supplement 1A). Lower panel: LapDTMcys\u2013sfGFP variants with native transmembrane cysteine residues mutated. Experiments with individual protein variants (wild-type and mutants) were repeated at least three times using independent protein preparations. Primary data reproduced here are representative of each replicate.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) LapD cysteine variants TMcys and cysless show similar ability to bind LapG in response to c-di-GMP. Overview of LapG (blue cartoon) binding to LapD\u2019s dimeric output domain (gray and magenta cartoon) in which position V205 of LapG, located at the LapD-binding interface, is replaced with the photo-activatable crosslinking non-canonical amino acid p-azidophenylalanine (pAzF). If LapG is bound to LapD, a covalent crosslink is formed upon UV light exposure, which can then be assessed by SDS-PAGE as a band shift upon SDS-denaturation (without boiling), visualized by in-gel fluorescence (Chatterjee et al., 2014). LapD\u2013sfGFP (native, TMcys, cysless, or TMcys-S229C-A602C) was incubated with LapG-V205pAzF in the absence or presence of c-di-GMP as described in the Materials and methods. The TMcys-S229C-A602C construct is unresponsive to c-di-GMP as it was locked in the autoinhibited state by cysteine crosslinking prior to LapG photocrosslinking to LapD. (B) SEC-MALS data of LapD, LapD\u2013sfGFP, LapD\u2013TMcys, and LapD\u2013TMcys-A602C in their respective apo-states. In the analysis shown here, the TMcys proteins lacked the sfGFP fusion.\n\n#### Apo-LapD: only a fraction of apo-LapD protomers adopt the autoinhibited conformation at a given time\n\nWe first probed the apo-state of LapD in which the cytoplasmic EAL domain is thought to engage with the S helix (Navarro et al., 2011) (Figure 2A). In the corresponding crystal structure, residues S229 of the S helix and A602 of the EAL domain of the same polypeptide chain are in close proximity. Hence, cysteine mutations\u00a0that\u00a0are introduced at these positions allow us to assess their propensity to support disulfide formation as a reporter for the autoinhibited conformation of LapD. Upon expressing LapDTMcys-S229C-A602C (fused to sfGFP), there is a low, but detectable level of spontaneous disulfide-bond formation in the absence of oxidant, which was sensitive to reducing agent (Figure 2B; red arrow/asterisk). Short copper-catalyzed oxidation (~10 min) yields crosslinks of only about half of apo-LapD protomers. This result suggests that\u00a0conformational heterogeneity exists within apo-LapD and only a certain population of protomers adopt the autoinhibited state at a given time.\n\n#### c-di-GMP-bound LapD: dinucleotide binding leads to EAL domain dimerization and is accompanied by reorientation of transmembrane helices\n\nAddition of c-di-GMP to the S229C-A602C variant prior to copper oxidation abolishes the oxidant-dependent, intra-molecular crosslinking. Instead, new bands with slower electrophoretic mobility are observed (Figure 2B; blue and grey markings), which account for the entire LapD population (minus the spontaneously crosslinked fraction that is locked in the autoinhibited state prior to oxidation). One of these bands (blue marking) is rationalized as a homotypic crosslink between corresponding cysteine residues at position 602, as residue A602 is also central to the canonical EAL domain dimerization interface observed in the LapDEAL\u2022c-di-GMP complex structure (Figure 2A, bottom) (Navarro et al., 2011). This interpretation is supported by the presence of a crosslinking adduct with comparable electrophoretic mobility using LapDTMcys-A602C, which lacks the S229C mutation, and by the absence of such a band in LapDTMcys, which lacks both S229C and A602C, despite otherwise identical experimental conditions (Figure 2B).\n\nWe hypothesized that the origin of two other predominant bands with slower mobility in the LapDTMcys-S229C-A602C\u2022c-di-GMP sample stems from movements in the transmembrane helices upon activation, which may orient the native cysteine residues C12 and/or C158 into crosslinking-competent positions. Indeed, the exposure of c-di-GMP-activated LapDTMcys\u00a0to oxidant gave rise to two crosslinking adducts with slower electrophoretic mobility (green and magenta markings, Figure 2B). This observation indicates that\u00a0the transmembrane domain cysteine residues contribute to the disulfide-mediated banding pattern in the presence of c-di-GMP. To identify explicitly\u00a0the relevant crosslinks involving the transmembrane helices, we mutated these two native cysteine residues individually to alanine and subjected them to oxidative crosslinking. No crosslinked bands were observed in the case of LapDTMcys-C158A, whereas LapDTMcys-C12A supported a single crosslinking adduct (Figure 2B, bottom panel). Hence, the dominant adduct (green marking) pertains to covalent bonds between corresponding C158 residues in a LapD dimer, whereas the lower, weaker band (magenta marking) stems from a crosslink between C12 and C158 (Figure 2, bottom panel).\n\nTaken together, the shift to a LapD species with slower electrophoretic mobility upon incubation with c-di-GMP can, for the most part, be explained by cysteine crosslinking caused by movements in the transmembrane helices (green/magenta markings) and EAL domain dimerization (blue marking), as well as a subpopulation presumably containing multiple crosslinks (grey marking) (Figure 2B).\n\n#### LapD\u2022c-di-GMP\u2022LapG: LapG contributes to LapD activation by inducing distinct conformational changes\n\nUsing A602C crosslinking as an analytical tool, we next probed the effect of LapG on the activation of LapD complexes. Notably, crosslinking via corresponding A602C residues in the LapD\u2022c-di-GMP\u2022LapG complex increases relative to the level observed in the absence of LapG (Figure 2B, top panel; blue markings). This apparent close proximity of A602C residues is indicative of the formation of canonical, c-di-GMP-dependent EAL domain dimers (Navarro et al., 2011; Barends et al., 2009; Minasov et al., 2009; Sundriyal et al., 2014). Concomitantly, LapG addition prevented C158\u2013C158 (green marking) and C12\u2013C158 (magenta marking) crosslinks between transmembrane helices, as well as other, higher molecular weight (gray marking) crosslinks (Figure 2B). Addition of LapG in the absence of c-di-GMP also causes a conformational change that is not compatible with C158\u2013C158 crosslinking (Figure 2B, bottom panel), suggesting that LapG contributes to LapD structural transitions independently of c-di-GMP. Mutating the main anchor residue for LapG on LapD\u2019s periplasmic domain binding, W125 (Chatterjee et al., 2014; Navarro et al., 2011; Chatterjee et al., 2012), abolished these LapG-induced effects on cysteine crosslinking but not those dependent on c-di-GMP (compare LapDTMcys-A602C and LapDTMcys-W125E-A602C; Figure 2B, top panel). This control establishes specificity and implicates the crystallographic LapD\u2013LapG interface in LapG\u2019s effect on LapD conformation.\n\nTogether with the SEC-MALS data, these observations unequivocally demonstrate that the transition from dimeric LapD\u2022c-di-GMP to tetrameric LapD\u2022c-di-GMP\u2022LapG is coincident with EAL domain dimerization. Interestingly, only\u00a0~50% of the EAL domains appear to\u00a0be\u00a0engaged in dimers, suggesting that like LapD in the autoinhibited state, activated LapD is based on asymmetric LapD dimers as the minimal unit.\n\n#### EAL domain dimerization mediates the formation of LapD dimer-of-dimers\n\nOur previous model assumed that\u00a0EAL domain dimerization occurs within a LapD dimer (Figures 1A and 3A, left panel), a notion that needed to be revisited in light of the LapD dimer-of-dimers observed in the presence of LapG and c-di-GMP (Figure 1C). An alternative model consistent with the above and previous findings (Navarro et al., 2011) is one in which EAL domains bridge two LapD dimers rather than interacting\u00a0within the same LapD dimer (Figure 3A, right panel). To distinguish between these two possibilities, we mixed LapD variants with distinct molecular weight, LapD\u2013sfGFP and non-fluorescent LapD, which separately form constitutive dimers in their respective apo-state (Figure 2\u2014figure supplement 1B). As seen before (e.g. Figure 2B), oxidation of LapDTMcys-A602C\u2013sfGFP in the presence of c-di-GMP and LapG produced a crosslinking band that migrates just below the 250 kDa marker (Figure 3B; dark blue arrow). Addition of LapDTMcys lacking sfGFP prior to oxidation decreases crosslinking efficiency, indicating a competitive effect between LapDTMcys-A602C\u2013sfGFP and LapDTMcys dimers. To unambiguously demonstrate that this competition is due to the formation of a LapD dimer-of-dimers, we replaced non-fluorescent LapDTMcys with non-fluorescent LapDTMcys-A602C. Upon oxidation, we observe two crosslinking bands that correspond to LapDTMcys-A602C\u2013sfGFP and LapDTMcys-A602C\u2013sfGFP\u2022LapDTMcys-A602C dimers-of-dimers (dark and light blue arrow, respectively), for which the difference in molecular weight after SDS denaturation is roughly a single sfGFP moiety. Importantly, these specific crosslinking events occur readily with detergent-solubilized LapD at low protein concentration (~1 \u03bcM). Qualitatively similar results were obtained when proteins are embedded in a lipid bilayer of fused membrane fractions from cells separately expressing LapDTMcys-A602C\u2013sfGFP or non-fluorescent LapDTMcys variants (see Material and Methods; Figure 3B). In summary, these data provide a structural and mechanistic basis for the dimer-of-dimers observed in the SEC-MALS data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig3-v2.jpg)\n\n**Figure 3.:** (A) Two LapD constructs, one genetically fused to sfGFP and one non-fluorescent, both harboring the A602C mutation, were engineered and expressed separately. In previously proposed models, EAL domain dimerization was thought to occur within a single LapD dimer (left). Under this model, one would only expect a single band shift corresponding to c-di-GMP- and LapG-activated LapD\u2013sfGFP dimers upon oxidation, even if the sfGFP-fused and non-fluorescent variants were present in the membrane. Alternatively, the EAL domains could dimerize across two LapD dimers (right) to form a dimer-of-dimers. Under the latter model, when the two constructs are mixed, activated with c-di-GMP and LapG, oxidized with a disulfide-promoting copper catalyst, denatured in SDS-PAGE, and imaged by in-gel fluorescence, a faster migrating covalent heterodimeric adduct consisting of LapD\u2013sfGFP and LapD (dark) should be observed in addition to the slower migrating complex containing just LapD\u2013sfGFP homodimeric adduct. (B) Complex formation is mediated by dimerization of EAL domains across two LapD dimers rather than within the same LapD dimer. The two LapD variants shown in (A) were expressed separately. Crosslinking via corresponding A602C residues was induced after incubation with c-di-GMP and LapG, either in detergent-solubilized samples (left panel) or upon fusing membrane fractions from the two cultures (right panel). In both detergent and membranes, SDS-PAGE analysis of this crosslinking experiment shows that a heterodimeric adduct containing both LapD\u2013sfGFP and non-fluorescent LapD (lighter blue triangle; asterisk denotes residue from a non-fluorescent LapD) is observed in addition to a species containing only LapD\u2013sfGFP (darker blue triangle). In detergent, non-fluorescent LapD lacking the A602C mutation serves as a competitor, reducing LapD-A602C\u2013sfGFP crosslinking efficiency. Representative data from two independent, biological replicates are shown.\n\n### Modeling of small angle X-ray scattering (SAXS) data elucidates the conformational transitions upon LapD activation\n\nIn order to obtain further structural evidence for LapD\u2019s global conformational changes, we modeled SAXS data collected on detergent-solubilized LapD in four distinct states (Figure 4A; Figure 4\u2014figure supplement 1): (1) apo-LapD trapped in the c-di-GMP-insensitive, fully autoinhibited conformation via an intramolecular crosslink between S229C and A602C (see Materials and Methods, Figure 2, Figure 2\u2014figure supplement 1A, and Figure 4); (2) Apo-LapD; (3) LapD\u2022c-di-GMP; (4) LapD\u2022c-di-GMP\u2022LapG. The first two states were stably monodisperse after purification, and could be analyzed directly. The two c-di-GMP-containing states, however, contained minor peaks based on our SEC-MALS data (Figure 1C). To avoid complications associated with such polydisperse samples and to\u00a0capitalize on the observation that the predominant species could be separated by gel filtration, these samples were injected into an in-line size-exclusion chromatography system mirroring our SEC-MALS experiments. Guinier analysis of these samples collected on the SEC-SAXS setup (Malaby et al., 2015) revealed that\u00a0they were monodisperse, and were therefore suitable for further analysis. Interpretation of the SAXS data was facilitated by having experimentally determined crystallographic structures of isolated domains of LapD and\u00a0by the recently developed program MEMPROT,\u00a0which\u00a0models a detergent corona around transmembrane domains (P\u00e9rez and Koutsioubas, 2015).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig4-v2.jpg)\n\n**Figure 4.:** (A) Primary SAXS data. Solid lines, experimental scattering curves of LapD in the states indicated; dashed lines, theoretical scattering curves of the three-dimensional envelopes shown in panel (C) with \u03c72 values listed to the right. (B) Real-space pair-wise distance distribution functions for each state of LapD. (C) Modeling of SAXS data. Top: Ab initio three-dimensional envelopes calculated on the basis of the experimental scattering data. Dotted circles and boxes highlight areas of density that change between different states. Middle: Crystal structures of individual domains of LapD docked manually into the envelopes depict interpretations of the ab initio envelope models. Gray spheres represent the detergent corona that surrounds the transmembrane domain. Bottom: Cartoon models of LapD domain movements in each state based on the SAXS data (bottom left inset: SDS-PAGE of purified trapped-inactive LapD used for SAXS analysis). Source files of SAXS data and envelope data are available in Figure 4\u2014source data 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Experimental scattering data for the indicated states of LapD (black lines) overlayed with theoretical scattering curves of models generated from envelopes (solid, colored lines) and manual dockings (dashed, grey lines) shown in Figure 4B, with their associated \u03c72 fit values. (B) Real-space distance distribution functions for these theoretical models of LapD overlayed on the experimentally derived distribution function (black).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Experimental scattering data of the indicated states of LapD (black lines) overlayed with theoretical scattering curves of these SASREF-generated models (dashed, colored lines), with their associated \u03c72 fit values. (B) Real-space distance distribution functions for these theoretical models of LapD overlayed on the experimentally derived distribution function (black). (C) Docking of the SASREF models for each LapD state into their respective three-dimensional envelopes shows reasonable agreement between the two independent analyses of the SAXS scattering data.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** On the basis of the experimental SAXS data for three states (trapped-inactive, apo, and c-di-GMP-bound), ensembles of LapD conformations were selected from a random pool of 10,000 models with either one or two flexible EAL domains in a LapD dimer. While the \u03c72 fit values indicate imperfect modeling of the SAXS data by this approach (probably due to the constraints that\u00a0we imposed on the global LapD conformation), there is a clear trend in selections for the three different states with regard to the Rg (left panels) and Dmax (right panels) distributions of the selected conformers, consistent with other experiments and analyses described in this report. (A) Selection from a pool generated with one EAL domain of a LapD dimer being flexibly linked to the GGDEF domain. (B) Selection from a pool generated with both EAL domains of a LapD dimer being flexibly linked to the GGDEF domain. See Material and methods for details and Figure 4\u2014source data 1 for associated statistics.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21848/elife-21848-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** In the absence of c-di-GMP, apo LapD (top center) adopts a dynamic \u2018half-open\u2019 state, transiently exposing the nucleotide-binding site of one EAL domain, which can be occluded by locking the receptor in a c-di-GMP-insensitive autoinhibited state (top left; \u201ctrapped-inactive\") by covalently crosslinking the S helix to the EAL domain (S229C ~ A602C). Upon binding of c-di-GMP to the native receptor\u2019s accessible EAL domain, LapD adopts a more extended state (top right). Only when LapG and c-di-GMP bind the receptor together does LapD form dimer-of-dimers, for which the interface is mediated by EAL domain dimerization across two receptor dimers (bottom left). On the basis of recent findings that the diguanylate cyclase GcbC interacts with and specifically activates LapD (Dahlstrom et al., 2015, 2016), we hypothesize that activated LapD dimer-of-dimers may be stabilized by GcbC (bottom right) to ensure prolonged, high-affinity sequestration of LapG in the periplasm.\n\nAnalysis of distance distribution functions suggests a slightly more compact structure of the trapped-inactive LapD with a measurably shorter Dmax and smaller Porod volume compared to native apo-LapD (Figure 4B, left panel; Figure 4\u2014source data 1). These observations are reflected in ab initio three-dimensional envelopes in which the trapped-inactive LapD lacks the extended density toward the bottom of the molecule seen in native apo-LapD (Figure 4C, dotted circles). Manually docking individual LapD domains suggests\u00a0that the trapped-inactive LapD envelope has dimensions consistent with both protomers' adopting the autoinhibited conformation that was observed in the crystal structure of this module. On the other hand, the native apo-LapD envelope is consistent with a heterogeneous state in\u00a0which one protomer adopts the autoinhibited conformation while the other half-site of the dimer can be modeled as a mixture of autoinhibited and extended conformations. In this proposed extended conformation, the EAL domain dislodges from the S helix to expose the c-di-GMP binding site to solvent. This notion of a partially dislodged EAL domain in one protomer of native apo-LapD is consistent with the S helix\u2013EAL domain cysteine crosslinking data discussed above, in which only\u00a0~50% of the protomers are engaged upon short exposure to the disulfide-promoting copper catalyst.\n\nIn accordance with this analysis, addition of c-di-GMP has a marginal effect on native LapD\u2019s Dmax, indicating that part of apo-LapD already adopts an extended conformation (Figure 4B). However, the shape of the distance distribution function confirms c-di-GMP-dependent conformational changes relative to apo-LapD (Figure 4B, right panel). The modeled envelope of c-di-GMP-bound LapD reveals a more pronounced density for a disengaged EAL domain and a\u00a0lessening of features that would correspond to the EAL domain in its S helix-engaged, autoinhibited conformation (Figure 4C). Notably, these global changes appear to be restricted to one half-site of a LapD dimer, consistent with our crosslinking data (Figure 2) and the lack of apparent symmetry in the SAXS data for the constitutive dimeric states discussed so far. Even the trapped-inactive LapD dimer could not be modeled with two-fold symmetry, indicating that crosslinking stabilizes or introduces some sort of a strained conformation (Figure 4C). Alongside the trend of conformational changes in the cytosolic module of LapD from trapped-inactive to c-di-GMP-bound dimer, we noticed volume effects in the periplasmic domain (boxed area, Figure 4C), which we interpret as decreasing dynamics of this domain from the trapped-inactive, to the apo- and finally the c-di-GMP-bound state.\n\nLastly, the distance distribution function and envelopes generated from LapD\u2022c-di-GMP\u2022LapG SAXS profiles yielded dimensions and overall shapes consistent with two LapD\u2022c-di-GMP dimers engaged via one of their EAL domains (and bound to LapG) (Figure 4B and C). At the same time, this complex appears to be less well defined as the normalized spatial discrepancy (NSD) values, an assessment of the similarity of the individual models used to calculate the average envelope, are higher than those of the other three states (Figure 4\u2014source data 1).\n\nAnother way to model SAXS data relies on simulated annealing-rigid-body fitting of individual domains on the basis of high-resolution structures (Petoukhov and Svergun, 2005). This analysis yielded models that\u00a0are\u00a0compatible with the experimental data, and these models agreed well with the above interpretations based on envelope calculations for the trapped-inactive, the LapD\u2022c-di-GMP complex, and the fully active LapD\u2022c-di-GMP\u2022LapG complex (Figure 4\u2014figure supplement 2). Interestingly, the native apo-LapD was modeled as an intermediate between a half-open and a\u00a0fully inhibited conformation, depicting a single average conformation.\n\nThe above structure-based, rigid-body modeling creates a single solution,\u00a0even for more dynamic or heterogeneous states such as native apo-LapD. By\u00a0contrast, the Ensemble Optimization Method (EOM) enables selection of an ensemble of conformations from a pool of random conformers based on fitting theoretical and experimental scattering profiles (Bernad\u00f3 et al., 2007; Tria et al., 2015). For this approach, we generated two libraries of 10,000 structures each, one in which the linker connecting the GGDEF and EAL domains of one protomer of LapD was allowed to be flexible, and a second in which this linker was flexible for both protomers. Results from this EOM analysis are analogous to those discussed above in that the native apo-LapD adopts an extended conformation (based on the\u00a0Rg and Dmax of the selected ensemble models) more frequently than the trapped-inactive form. The LapD\u2022c-di-GMP state is enriched in conformations that are more extended than both the trapped-inactive and the native apo-form (Figure 4\u2014figure supplement 3).\n\nIn summary, results from the three independent approaches reporting on conformational changes upon LapD activation or inactivation \u2013 SEC-MALS, site-specific crosslinking, and SAXS-based modeling \u2013 are consistent with each other and allow us to distinguish four distinct states of the receptor (Figure 4C, bottom panel). The structural transition from a low-to-high affinity state of LapD for the protease LapG appear to be driven by independent inputs via c-di-GMP binding to the cytosolic module and LapG binding to LapD\u2019s periplasmic domain.\n\n## Discussion\n\nCellular signaling systems must transmit information with high specificity and do so reversibly, avoiding high-affinity or excessively stable complexes that would result in unregulated signaling events. In the present study, we uncovered structural events that ensure exquisite control of a bacterial biofilm signaling switch, the conserved second messenger receptor LapD, based on the characterization of the intact membrane protein. LapD sequesters and thus regulates its cognate periplasmic protease LapG in response to rising c-di-GMP levels in the cytosol, a mechanism that has been described as inside-out signaling\u00a0(Newell et al., 2009, 2011b). Yet, new evidence presented here indicates that\u00a0both ligands, c-di-GMP and LapG on either side of the inner bacterial membrane, contribute to the conformational switch that establishes a signaling competent state. The distinct response as a result of two independent inputs is a hallmark of coincidence detection, achieved here through bi-directional signaling across the membrane.\n\nThe mechanistic implications of these new findings for LapD regulation are manifold. We show that a LapD dimer is already inherently asymmetric even in the absence of any ligands. One half-site of an apo-LapD dimer adopts a conformation akin to the crystal structure of the autoinhibited cytosolic module, characterized by an occluded c-di-GMP binding site (Navarro et al., 2011). The other half-site appears to sample an open conformation, in which the EAL domain is disengaged from LapD\u2019s regulatory S helix. Such a conformation would prime LapD for c-di-GMP binding, which, in turn, would shift the equilibrium to the more extended state, thus preventing autoinhibition. The reason why one protomer appears more dynamic than the other is not well understood, but could indicate anti-cooperative effects in oligomeric receptors analogous to mechanisms described for other bacterial receptors (Maksay and T\u0151ke, 2014). In support of this, we previously showed that only one equivalent of c-di-GMP is required per LapD dimer for maximal LapG binding, and that the high-affinity LapG-binding state of the periplasmic domain of LapD is asymmetric (Chatterjee et al., 2014). Both of these features could manifest from the proposed anti-cooperative nature of activation.\n\nIn several other receptor systems, in particular those utilizing HAMP domains as an integral relay module, one model for signal transmission is based on an alternating static-to-dynamic transition in which tighter packing in one protein element drives other elements into a more loosely packed, dynamic state (known as the \u2018yin-yang\u2019 model) (Swain et al., 2009; Zhou et al., 2009; Parkinson, 2010). Such a model of coupled dynamics is enticing for LapD, in which compact autoinhibited cytoplasmic domains give rise to a more dynamic output domain capable of only transiently binding LapG (Figures 2B and 4C). By contrast, activation of the complex with c-di-GMP results in a disengaged EAL domain and\u00a0in more compact output domains that\u00a0are\u00a0competent to bind LapG more tightly. This notion is supported by our modeling of the SAXS data, which indicates that\u00a0the output domain becomes more well-defined upon LapD activation by c-di-GMP.\n\nAt the same time, we also demonstrate that c-di-GMP is only a partial activator and that c-di-GMP-bound LapD differs structurally from high-affinity complexes comprising the dinucleotide, receptor, and protease. This observation indicates a distinct signaling input into LapD via LapG. The simultaneous binding of c-di-GMP and LapG to LapD\u2019s cytosolic and periplasmic domains, respectively, establishes a conformation in which the EAL domains dimerize through a canonical interface (Navarro et al., 2011; Barends et al., 2009; Minasov et al., 2009; Sundriyal et al., 2014). In contrast to previous models, this interaction does not occur within a dimer, but across two LapD dimers. This change in quaternary structure, the formation of a LapD dimer-of-dimers, is apparent in all three, independent approaches reported on here. An\u00a0exact molecular mechanism explaining this long-range allosteric regulation of LapD resulting in a higher oligomeric, high-affinity complex remains enigmatic, but\u00a0it appears that the HAMP domain functions as an integrator of bilateral signaling across the membrane. In this model, the HAMP domain would prevent full LapD activation if the receptor were\u00a0to\u00a0engage with only one of the ligands, LapG or c-di-GMP, on either side of the membrane.\n\nThe periplasmic input \u2014 LapG binding to LapD\u2019s output domain \u2014 is likely a vestigial feature derived from evolutionarily related, active enzymes that\u00a0have domain architecture similar to that of LapD, which produce or degrade cellular c-di-GMP upon sensing environmental stimuli through an outside-in signaling mechanism. Some parallels can be drawn to the YfiBNR system in P. aeruginosa (Malone et al., 2012, 2010). YfiN is a transmembrane, GGDEF-domain-containing diguanylate cyclase with a juxtamembrane HAMP domain and a periplasmic PAS domain. The cyclase-inactive state is stabilized through interactions of YfiN\u2019s periplasmic domain with YfiR, a periplasmic protein. An environmental signaling cue, possibly cell wall or redox stress, leads to the dissociation of YfiR, which in turn increases YfiN\u2019s cyclase activity and \u2014 as a result \u2014 cellular c-di-GMP levels. While YfiN regulation probably relies on its integral HAMP domain and periplasmic ligand binding (Giardina et al., 2013), direct juxtaposition with LapD\u2019s mechanism is hindered by a gap in our understanding regarding the structure of the full-length diguanylate cyclase.\n\nAnnotation of close to 2,000 proteins containing a triple HAMP-GGDEF-EAL domain unit akin to LapD, many of which are predicted to be active diguanylate cyclase or phosphodiesterases, highlights the prevalence of this module in c-di-GMP signaling networks. It is possible that the underlying molecular mechanisms for the regulation of these proteins follows the paradigm that\u00a0we established here for LapD. Indeed, asymmetry, like\u00a0that we described for the LapD output domain-LapG complex (Chatterjee et al., 2014), is common among outside-in signaling membrane proteins, including HAMP domain-containing chemotaxis receptors and histidine kinases (Maksay and T\u0151ke, 2014; Milburn et al., 1991; Neiditch et al., 2006; Yeh et al., 1996). For example, binding of the quorum-sensing signal AI-2 to the periplasmic domain of the histidine kinase complex LuxPQ induces asymmetry in its periplasmic domains (Neiditch et al., 2006). Likewise, ligand-induced asymmetry in Tsr/Tar chemosensory receptors promotes the oligomerization of three identical, but functionally non-equivalent,\u00a0cytoplasmic core domains (Briegel et al., 2012; Li et al., 2013; Liu et al., 2012). It will be interesting to investigate the\u00a0conservation of the molecular mechanisms established for LapD in other c-di-GMP-signaling proteins. Such comparisons are currently hampered by limited structural insight for other HAMP-GGDEF-EAL domain-containing proteins and a lack of knowledge regarding the ligands that control their activity and cellular function.\n\nOne of the major open questions in the field pertains to mechanisms that explain signaling specificity, that is, the non-equivalent physiological outcome of diguanylate cyclases or phosphodiesterases despite identical catalytic activity (Dahlstrom et al., 2015, 2016; Ha et al., 2014; Kulasakara et al., 2006; Newell et al., 2011a). Consistently, protein\u2013protein interactions between enzymes that make or break c-di-GMP and c-di-GMP-specific receptors have been implicated\u00a0(Abel et al., 2011; Lindenberg et al., 2013; Guzzo et al., 2013; Ryan and Dow, 2010; Ryan et al., 2012), including the GcbC diguanylate cyclase and the\u00a0LapD receptor pair (Dahlstrom et al., 2015, 2016). Nevertheless, it was not entirely clear how these two membrane proteins might interact, as the motifs identified as\u00a0mediating the physical contacts are either buried or sterically not accessible in a simple LapD dimer model (Figure 1A, Figure 1\u2014figure supplement 1). Our revised model,\u00a0based on the observation of asymmetric LapD dimers in the apo- and c-di-GMP-bound states, as well as the symmetric LapD dimer-of-dimers, reconciles this conundrum. These\u00a0dimers have in common an open configuration that could provide a signaling platform for heterologous interactions with other proteins such as GcbC (Figure 4\u2014figure supplement 4). Since apo-LapD samples the extended state, this model is also consistent with the observation that GcbC interacts with both apo- and constitutively active variants of LapD (Dahlstrom et al., 2015). The structural impact of the GcbC\u2013LapD interaction on the c-di-GMP receptor remains to be assessed, but it is conceivable that GcbC could stabilize a LapD dimer-of-dimers and/or induce a conformation similar to that of the LapG\u2013c-di-GMP-bound receptor. Regardless, the fact that LapD can adopt these many different conformations allows it to present unique interfaces for direct interaction with other proteins for proper regulation. Such a mechanism for imparting strict specificity to an otherwise ubiquitous second messenger molecule has significant implications. The concepts of an open signaling platform, asymmetry as a vital feature for regulation, and coincidence detection could also be relevant for diguanylate cyclases and phosphodiesterases that require exquisite control and trigger specific signals in the background of a larger c-di-GMP signaling network. Conceivably, interventional strategies could be devised to target specific c-di-GMP cyclases, phosphodiesterases or receptors, despite these proteins all having similar folds or catalytic activity. Hence, revealing the language of these signaling networks will be crucial for controlling and treating chronic infections caused by biofilm-forming pathogens.\n\n## Materials and methods\n\n### Cloning, expression and purification of Pseudomonas fluorescens Pf0-1 LapD and LapG\n\nExpression, membrane isolation and purification of non-fluorescent LapD and LapD fused C-terminally with monomeric superfolder green fluorescent protein (sfGFP containing the V206K mutation that prevents sfGFP dimerization) were performed as previously described (Chatterjee et al., 2014). LapG was expressed and purified as previously described (Boyd et al., 2012) with the exception that LapG was gel-filtered in the same buffer as LapD. LapG containing the UV photoactivatable crosslinking non-natural amino acid para-azidophenylalanine at position V205 was expressed and purified as previously described (Chatterjee et al., 2014).\n\n### Fluorescence anisotropy binding assay\n\nThe single native cysteine in LapG (C135) was labeled with Oregon Green 488 maleimide (Molecular Probes) at a 1.5-fold molar excess of dye over protein (150 \u00b5M and 100 \u00b5M, respectively) for five minutes. Excess dye was removed via a NAP-5 desalting column (GE). Labeling efficiencies ranged between 45%\u00a0and\u00a055%. Anisotropy from a reaction consisting of 1 \u00b5M labeled LapG and LapD (varied between 1\u201336 \u00b5M) without or with c-di-GMP (100 \u00b5M) was measured with a Fluoromax-4 spectrofluorometer (Horiba Scientific, Edison, NJ) using 496 nm excitation and 515 nm emission wavelengths, 5 nm slit widths, 0.5 s integration time, and L-Type polarizers.\n\n### Size-exclusion chromatography coupled to multi-angled light scattering analysis (SEC-MALS)\n\nFor apo-LapD, freshly purified protein was concentrated to\u00a0~10 mg/ml (~140 \u03bcM) and 40 \u03bcl was subjected to SEC using a Superdex 200 10/300 column (GE Life Sciences) equilibrated in SEC-MALS buffer (25 mM Tris-HCl pH 7.6, 250 mM NaCl, 0.005% (w/v) LMNG and 0.04% (w/v) CHAPS). For the LapD\u2022c-di-GMP complex, protein at\u00a0~2 mg/ml (~28 \u03bcM) was incubated with 100 \u03bcM c-di-GMP on ice for 20 min and then concentrated\u00a0~5-fold prior to injection onto the same SEC column pre-equilibrated with MALS buffer containing 20 \u03bcM c-di-GMP. For the LapD\u2022c-di-GMP\u2022LapG complex, samples were prepared identically, except that a 3-fold molar excess of LapG over LapD dimer was added prior to concentration. The SEC was coupled to a static 18-angle light scattering detector (DAWN HELEOS-II), a UV detector, and a refractive index detector (Optilab T-rEX) (Wyatt Technology, Santa Barabara, CA). Data were collected every second at a flow rate of 0.5 ml/min. Data analysis of the protein\u2013detergent complex was carried out using the protein-conjugate analysis package as part of the program ASTRA, yielding the reported molar masses of the protein components. For these calculations, a detergent dn/dc of 0.172 was used, which was determined experimentally for a CHAPS/LMNG (8:1) micelle following the method described by Strop and Brunger (Strop and Brunger, 2005) (Figure 1\u2014figure supplement 3B). Extinction coefficients of 67,000 M\u22121 \u00b7 cm\u22121, 50,100 M\u22121 \u00b7 cm\u22121, and 26,100 M\u22121 \u00b7 cm\u22121 for LapD, LapG and c-di-GMP, respectively, were used. Monomeric BSA (Sigma,\u00a0St.\u00a0Louis,\u00a0MO) was used for normalization of the light-scattering detectors and for\u00a0data quality control.\n\n### Cysteine crosslinking\n\nNative LapD contains four cysteines: two in the transmembrane domain (C12 and C158) and two in the soluble cytoplasmic domains (C304 and C397). Unless otherwise noted in the text, all variants of LapD used for cysteine crosslinking retained the two native transmembrane cysteines while the two cytoplasmic cysteines were mutated to alanine and serine, respectively. These mutations did not alter the ability for LapD to bind LapG in a c-di-GMP-dependent manner (Figure 2\u2014figure supplement 1A) compared to native protein. The mutations or sfGFP fusion had no significant effect on the SEC profiles of the proteins or the oligomeric state of the apo-proteins as shown by SEC-MALS analysis (Figure 2\u2014figure supplement 1B). The positions at which non-native cysteine point mutations were introduced via site-directed mutagenesis are as described in the text.\n\nTo aid in visualizing crosslinked protein, LapD-sfGFP fusion proteins were used. This allows us to perform experiments in a non-purified system and to\u00a0visualize LapD crosslinking patterns by in-gel fluorescence after SDS-PAGE (Chatterjee et al., 2014). Briefly, to prepare protein for cysteine crosslinking experiments, Escherichia\u00a0coli cell membranes containing expressed variants of LapD\u2013sfGFP were prepared as described previously (Chatterjee et al., 2014) and solubilized in 25 mM Tris-Cl pH 7.6, 150 mM NaCl, 5% glycerol, 2 mM MgCl2, 2 mM CaCl2, 1% (w/v) LMNG and 0.2% (w/v) CHAPS for 90 min at 4\u00b0C. Insoluble material was pelleted by ultracentrifugation at 150,000 x g for 20 min. The supernatant containing the\u00a0detergent-solubilized protein was collected and concentrations of solubilized LapD\u2013sfGFP were determined by measuring the absorbance at 488 nm using an extinction coefficient of 83,000 M\u22121 cm\u22121. To prepare the disulfide-promoting catalyst, 200 mM 1,10-phenanthroline was dissolved in ethanol and 200 mM CuSO4 was prepared in water. Immediately before use, the stocks were added together in water in the appropriate ratios to yield 5 mM Cu(Phen)2 catalyst (i.e. 5 mM CuSO4 and 10 mM phenanthroline). For each reaction, 1 \u03bcM LapD dimer was pre-incubated with (or without) 3 \u03bcM LapG and 20 \u03bcM c-di-GMP for 15 min at room temperature, at which point copper catalyst was added to 100 \u03bcM and incubated for an additional 10 min. Samples were quenched by the addition of 10 mM EDTA and 20 mM N-ethylmaleimide, and immediately analyzed by SDS-PAGE on an 8% (w/v) acrylamide gel. Gels were imaged by fluorescence on a Biorad ChemiDoc system.\n\nTo assess LapD crosslinking at the EAL domain interface in fused membranes, membranes from E. coli cells expressing LapD-sfGFP and non-fluorescent LapD were prepared individually, resuspended in 25 mM Tris-Cl pH 7.6, 150 mM NaCl and 5% glycerol, and then mixed in equal volumes. LapG and c-di-GMP were added to final concentrations of 50 \u03bcM and 100 \u03bcM, respectively. A sub-solubilizing concentration of TritonX-100 (0.05% (v/v)) was added to the samples (Dezi et al., 2013; Kragh-Hansen et al., 1998; Paternostre et al., 1988; Urbaneja et al., 1988) and the membranes were fused by brief sonication. The insoluble material was pelleted by ultracentrifugation at 150,000 x g for 20 min. These fused, pelleted membranes were resuspended in the same buffer lacking detergent, and washed three times to remove traces of detergent prior to cysteine crosslinking, which proceeded as described above.\n\n### Small angle X-ray scattering (SAXS) analysis\n\nPreparation of LapD (without sfGFP) for SAXS analysis was performed exactly as previously described (Chatterjee et al., 2014) except that the final gel-filtration was conducted in SEC-MALS buffer. To generate the inactive, fully autoinhibited form of LapD (TMcys S229C/A602C), we noticed that in a purified system the amount of crosslinking between the S helix and EAL domain could be increased to\u00a0>90% using exposures to the copper catalyst that were notably longer than those\u00a0described above, presumably because this gives the receptor more time to sample the autoinhibited state and to\u00a0become covalently trapped as such (Figure 4C, inset). Indeed, this covalently\u00a0locked, fully autoinhibited form of LapD is functionally unresponsive to c-di-GMP (Figure 2\u2014figure supplement 1A). This variant was prepared in an identical manner as native LapD, except that immediately after desalting into low-salt buffer and prior to gel-filtration, 400 \u03bcM copper phenanthroline was added and incubated for 75 min at room temp. The reaction was quenched with 10 mM EDTA, concentrated, and injected onto the Superdex\u00a0200 gel filtration column equilibrated with SEC-MALS buffer.\n\nAll protein samples were prepared fresh immediately before data collection and centrifuged at 150,000 x g at 4\u00b0C for 20 min prior to analysis. Buffer that flowed through the final size-exclusion column prior to protein elution was used for buffer subtraction. SAXS experiments were carried out at the Cornell High Energy Synchrotron Source (CHESS, beamline G1) at an electron energy of 9.9 KeV (Acerbo et al., 2015; Skou et al., 2014). For native apo-LapD and the trapped-inactive LapD (TMcys S229C/A602C), unconcentrated protein (0.5\u20133 mg/ml) was injected directly into the sample cell and oscillated during data collection (10 \u00d7 1 s exposures). Data were collected using a dual Pilatus 100 K-S SAXS/WAXS detector and were background corrected and averaged using the program RAW. Only data showing no signs of radiation damage or aggregation (based on inspection of Guinier plots) were used for further analysis.\n\nFor the LapD\u2022c-di-GMP complex and the LapD\u2022c-di-GMP\u2022LapG complex, samples were prepared identically to that for SEC-MALS. 100 \u03bcL of sample at\u00a0~10 mg/ml was injected onto the same Superdex 200 10/300 size-exclusion column pre-equilibrated with SEC-MALS buffer supplemented with 20 \u03bcM c-di-GMP, which was in-line with the SAXS sample cell. Each frame of scattering data was collected for two seconds, and 10\u201320 frames corresponding to a single protein peak were averaged and background corrected.\n\nBuffer-subtracted scattering data were analyzed and scaled using the program Primus (Konarev et al., 2003). The program GNOM (Svergun, 1992) was used to determine the distance distribution functions P(r), radius of gyration (Rg), and maximum diameter of the particle (Dmax). Dmax was adjusted so that distribution functions fell naturally to zero beyond Dmax and the best goodness-of-fit parameter was obtained. SAXS-based shape reconstructions were carried out with the programs DAMMIF (Franke and Svergun, 2009) and DAMMIN (Svergun, 1999). Briefly, 20 models were calculated by DAMMIF, and the program DAMAVER (Volkov and Svergun, 2003) was used to superimpose, filter and average these models. The resulting \u2018damstart\u2019 model from this DAMMIF analysis was used as an initial model for further refinement with DAMMIN to generate ten additional models. These ten DAMMIN models were superimposed, filtered and averaged using DAMAVER to produce the final model.\n\nSimulated annealing and rigid-body fitting of individual structures of LapD domains to the scattering data were\u00a0performed by the program SASREF (Petoukhov and Svergun, 2005) using an iterative protocol. This analysis was facilitated by the use of crystallographic models of individual soluble domains of LapD, including the periplasmic domain (PDB 4u64), the periplasmic domain bound to LapG (PDB 4u65), the autoinhibited S helix-GGDEF-EAL cytoplasmic module (PDB 3pjx) and the c-di-GMP-bound EAL domain dimer (PDB 3pju), as well as a homology model of LapD\u2019s HAMP domain (template PDB 2y21; (Ferris et al., 2011)). The detergent corona was built and refined using the program MEMPROT (P\u00e9rez and Koutsioubas, 2015). Structures were docked into the three-dimensional envelopes using SUPCOMB (Kozin and Svergun, 2001). Theoretical scattering curves were\u00a0created\u00a0and comparisons with experimental data made with CRYSOL (Svergun et al., 1995). To perform the SASREF analysis for the trapped-inactive form of LapD, models for the periplasmic, transmembrane, HAMP, and two autoinhibited domains were docked into the auto-inhibited LapD DAMMIN envelope, and a manually constructed micelle was placed around the transmembrane domain. SASREF was used to rotate and translate each individual domain to fit the scattering data, enforcing only restraints necessary to maintain contiguous peptide chains. The program MEMPROT was then used to generate and optimize a detergent micelle around the transmembrane domain of the resulting model. This model with the optimized MEMPROT-generated micelle was then re-run through SASREF in an identical manner to generate the final model for trapped-inactive LapD. For native, apo-LapD, the micelle generated from the trapped-inactive structure was used, and SASREF was run similarly except that the EAL domains of LapD were separated from their respective GGDEF domains to allow for flexibility. The identical procedure was performed for the LapD\u2022c-di-GMP complex. For the LapD\u2022c-di-GMP\u2022LapG dimer-of-dimers, an additional restraint was enforced requiring close distance (3\u20136 \u00c5) between the residues A602 of the EAL domains, as experimentally determined and apparent in the c-di-GMP-bound EAL domain crystal structure.\n\nFor assessing EAL domain flexibility, the trapped-inactive LapD model generated by SASREF (described above) was used, and the residues connecting the EAL domain to the GGDEF domain of one LapD protomer were allowed to be remain flexible. The program Ensemble Optimization Method (EOM) (Bernad\u00f3 et al., 2007; Tria et al., 2015) was used to generate 10,000 models in which this EAL domain was allowed to adopt any random orientation around the rest of the fixed LapD molecule. A second pool was generated in which this linker was allowed to be flexible in both protomers of LapD. By applying EOM (Bernad\u00f3 et al., 2007), an ensemble of conformers was selected from each pool that best fit either the trapped-inactive, native, or LapD\u2022c-di-GMP scattering data. Ensemble characteristics relative to the entire pool of models were assessed based on their respective Rg and Dmax. Inspection of individual models from the selected ensembles revealed features that were consistent with the interpretation of the corresponding envelope and rigid-body models (data not shown).\n\nStatistics associated with this and all other analyses are reported in Figure 4\u2014source data 1. For all dimeric complexes, P1 symmetry was used based on better modeling statistics compared to modeling with P2 symmetry applied. For the dimer-of-dimers complex, data fit was\u00a0only marginally better using P2 symmetry.\n",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "0c57edfd-4b89-4e68-a069-c44a6ff3dcce",
+      "submission_id": "4967a092-d713-4f1e-819f-1cbe15d20bdd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon Clardy, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21848.017](https://doi.org/10.7554/eLife.21848.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Coincidence detection and bi-directional transmembrane signaling control a bacterial second messenger receptor\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Michael Marletta as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe reviewers uniformly felt that the manuscript built on the authors' previous report, contained interesting data, and proposed a very interesting and plausible model. They also felt that the presentation needs to be greatly improved and that while the multiple techniques employed \u2013 size exclusion chromatography-multi-angle light scattering (SEC-MALS), cysteine- and photo-crosslinking, and small angle X-ray scattering (SAX) \u2013 provided much interesting data that supported the model, they did not definitively demonstrate its correctness. In addition, while the multiple techniques contributed to the strength of the article, they also made the logical flow of the manuscript difficult to follow and that the figures and figure legends were overly detailed and difficult to follow.\n\nEssential revisions:\n\nThe main technical issues are:\n\nSEC-MALS: What is the origin of the dn/dc value of 0.14 for LMNG detergent? This value is critical for determining the molecular weight estimates that are reported for the studies. The full reviews also contain detailed comments on the need to include c-di-GMP data, improvements in Figure 1, and the related discussion.\n\nCysteine- and photo- crosslinking: These studies need MS data to verify the crosslinks and must be provided. In addition, the monomeric state of the GFP needs to be explicitly addressed. Does the construct used have the A206K oligomerization-blocking mutation? The full reviews provide some guidance on improving the figures and discussion.\n\nSmall angle X-ray scattering (SAX): A direct comparison of distance distributions between LapD-Apo and LapD-c-di-GMP complex should be in panel B. Is Figure 4 properly labeled?\n\nReviewer #1:\n\nThis is a very interesting manuscript that builds on the authors' previous work on LapD and LapG's role in cyclic-di-GMP sensing and regulation of adhesins involved in biofilm formation. Here the authors show utilizing three different methods: SEC-MALS, site-specific crosslinking, and SAXS-based modeling, several states of LapD in response to interactions with LapG on its periplasmic side, and cyclic-di-GMP on its cytoplasmic side. This work is very well conducted and the manuscript is clearly written. I really don't see any further experimentation that is required. The fascinating part of this manuscript is that it shows the fluidity of all of these different states of LapD, and how this can fine tune and modify signal transduction.\n\nIf anything, it would be nice if the authors elaborated on their discussion a little more on how similar/different this system is to other cyclic-di-GMP signaling systems. They compare and contrast with the AI-2 system and the Tsr/Tar system, but not too much with other cyclic-di-GMP systems.\n\nReviewer #2:\n\nIn this manuscript, Cooley and Sondermann examine the regulation of the c-di-GMP receptor by its ligands. The authors employ a variety of techniques including SEC-MALS, cysteine crosslinking, photo crosslinking, and small angle X-ray scattering.\n\nThe manuscript investigates an interesting and important question, and the combination of a wide variety of biophysical techniques is a strength. The manuscript is difficult to follow at places, and the figures in particular are crowded and overly complex. In Figure 1 for instance, the inclusion of SEC traces in which c-di-GMP is absent from the running buffer does not seem relevant, since the ligand may simply be dissociating from the receptor during the experiment. With this caveat, the remainder of the SEC-MALS analysis is compelling.\n\nCysteine- and photo-crosslinking experiments provide a nice counterpart to the in vitro analyses, but again the presentation is difficult to follow given the very large amount of data inserted into one figure. While the data are generally consistent with the authors\u2019 model, the potential for crosslinking to trap even rare conformations makes this approach less quantitative than the other analyses.\n\nIn the SAX experiments, a direct comparison of distance distributions between LapD-Apo and LapD-c-di-GMP complex would be more useful in panel B, since this state is an important component of the proposed model for an asymmetric dimer.\n\nOverall the manuscript contains interesting data and proposes a plausible model for LapD activation, but suffers from overly complex figures and difficult logical flow. The model proposed by the authors is supported by the data presented, but not definitively demonstrated in my view. This model would be significantly strengthened by experimental measurement of cooperativity between c-di-GMP binding and binding of LapG, which is assessed only indirectly here. Specifically, what is the affinity of LapG to LapD in the absence of c-di-GMP, and to what extent is this changed upon the addition of c-di-GMP? Measurements by isothermal titration calorimetry would be even more compelling, as these would allow highly quantitative measurement of binding stoichiometry.\n\nTechnical points:\n\nSEC-MALS experiments are analyzed using a dn/dc value of 0.14 for LMNG detergent. Where is this value from, and how was it determined? The accuracy of this value is important in obtaining reliable molecular weight estimates in SEC-MALS.\n\nThe superfolder GFP is described as monomeric. What does this mean? The originally reported superfolder GFP is not an obligate monomer, which could significantly compromise assessment of oligomerization of LapD. If the constructs carry the A206K oligomerization-blocking mutation this should be stated explicitly.\n\nReviewer #3:\n\nThis manuscript describes a new model for the activation of LapD. It is based on observations of the oligomerization state of the full-length detergent-solubilized LapD in the presence/absence of c-di-GMP and LapG using three techniques: (1) SEC-MALS, (2) Cys-cross-linking and (3) SAXS. The authors provide strong evidence that in the presence of LapG and c-di-GMP, LapD forms asymmetric tetramers, in which tetramerization is mediated by two of the four EAL domains, one from each LapD dimer. This data is very exciting and intriguing, providing a new model regarding LapD activation. While the experimental work is largely sound, the current work would be enhanced by providing a more clear mechanism that explains how this asymmetric tetramer is stabilized by LapG/c-di-GMP, since this is not obvious from the data presented (nor discussed in detail).\n\nExperimental work.\n\n1) MS data to verify the Cys-crosslinks (cutting out the bands from the gel/tryptic digest) would enhance the manuscript (and also allow one to determine what the 'grey' species are). This should be straightforward.\n\n2) Are the SEC results identical for WT, TMcys and TMcys-mutants?\n\n3) SAXS. Please use thinner lines for the figures/plots - the thick lines give the impression that the experimental and modeled data are more similar than they are. The envelope for the trapped-inactive state does not exhibit two-fold symmetry, although this is how it is modeled in the cartoon and discussed. Discussion about this discrepancy is warranted.\n\n4) Major: The envelopes (or labels?) in Figure 4 and Figure 4\u2014figure supplement 3 for the LapD (apo) and trapped-inactive LapD are switched and thus it is unclear which one is correct.\n\n5) Major: The \u03c72 values for the manual docking figures are very high (poor fit). In contrast, the fits are improved by using quantitative fitting of models to the envelope. The fits in 4-3 are what should be shown in Figure 4C, not the manual, more poorly fitting models. This would also alleviate the question about why there is so much density in the tetramer model in 4C that is unaccounted for.\n",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8e3f1ce0-3072-494d-81b9-9a2c11de2abb",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C1",
+      "claim": "The second messenger c-di-GMP regulates biofilm formation in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "The second messenger c-di-GMP (or cyclic diguanylate) regulates biofilm formation, a physiological adaptation process in bacteria, via a widely conserved signaling node comprising a prototypical transmembrane receptor for c-di-GMP, LapD, and a cognate periplasmic protease, LapG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and is supported by the broader context of the manuscript describing the LapD-LapG system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "d2861309-4cff-41c4-8219-b85a1779c8f8",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C2",
+      "claim": "LapD is a transmembrane receptor for c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The second messenger c-di-GMP (or cyclic diguanylate) regulates biofilm formation, a physiological adaptation process in bacteria, via a widely conserved signaling node comprising a prototypical transmembrane receptor for c-di-GMP, LapD, and a cognate periplasmic protease, LapG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly identifies LapD as a transmembrane receptor for c-di-GMP throughout the text and demonstrates this through structural and biochemical studies.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "9ed07479-49c6-4b91-a5a0-4afb51433ebf",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C3",
+      "claim": "LapG is a periplasmic protease that is cognate to LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "The second messenger c-di-GMP (or cyclic diguanylate) regulates biofilm formation, a physiological adaptation process in bacteria, via a widely conserved signaling node comprising a prototypical transmembrane receptor for c-di-GMP, LapD, and a cognate periplasmic protease, LapG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly describes LapG as a periplasmic protease and demonstrates its interaction with LapD.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "16f56858-11ae-4f74-a25e-026acd04eff8",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C4",
+      "claim": "Previous work established conformational changes in LapD that lead to c-di-GMP-dependent protease recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported a structure-function study of a soluble LapD\u2022LapG complex, which established conformational changes in the receptor that lead to c-di-GMP-dependent protease recruitment (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references prior published work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7f5820bb-fc07-41d7-91de-73b9c53cf032",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C5",
+      "claim": "Previous work revealed a basal affinity of c-di-GMP-unbound receptor for LapG.",
+      "claim_type": "EXPLICIT",
+      "source": "This work also revealed a basal affinity of c-di-GMP-unbound receptor for LapG, the relevance of which remained enigmatic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references findings from prior work (Chatterjee et al., 2014) mentioned in the abstract.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5d52572a-d993-4700-8765-c4e2036c830e",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C6",
+      "claim": "High-affinity for LapG relies on the formation of a receptor dimer-of-dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The data indicate that high-affinity for LapG relies on the formation of a receptor dimer-of-dimers, rather than a simple conformational change within dimeric LapD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by SEC-MALS, crosslinking, and SAXS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "eebf50f8-91ed-4778-b8d4-bc3f6690c5a0",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C7",
+      "claim": "LapD activation involves coincidence detection that relies on both c-di-GMP and LapG binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we elucidate the structural basis of coincidence detection that relies on both c-di-GMP and LapG binding to LapD for receptor activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript supported by multiple experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f4bb4e48-35d6-4046-9fb6-078aa662d7bf",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C8",
+      "claim": "Biofilms are aggregates adhered to biotic or abiotic surfaces enveloped in a self-produced matrix composed of proteins, nucleic acids, and polysaccharides.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacteria exist either as free swimming, planktonic cells or as multi-cellular biofilms \u2014 aggregates adhered to biotic or abiotic surfaces, which are enveloped in a self-produced matrix composed of proteins, nucleic acids, and polysaccharides (Hall-Stoodley et al., 2004; Teschler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biofilms supported by citations to the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "619db2a9-4855-4add-a2ff-6fb5d71ab591",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C9",
+      "claim": "The biofilm matrix protects bacteria from hostile environments, rendering them more resistant to insult.",
+      "claim_type": "EXPLICIT",
+      "source": "This matrix protects bacteria from hostile environments, rendering them more resistant to insult and, in the context of pathogenic microbes, more tolerant to antibiotics and the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biofilm function supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "6f3dab4a-d1bf-4352-971c-1b1ecb952fa3",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C10",
+      "claim": "Biofilms make pathogenic microbes more tolerant to antibiotics and the immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "This matrix protects bacteria from hostile environments, rendering them more resistant to insult and, in the context of pathogenic microbes, more tolerant to antibiotics and the immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biofilm function in pathogenic bacteria supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "02f53662-43d9-4846-9eec-83d34ff28b16",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C11",
+      "claim": "The transition between planktonic and sessile lifestyles is tightly regulated and typically involves c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The transition between planktonic and sessile lifestyles is tightly regulated, typically involving the second messenger c-di-GMP (or cyclic diguanylate) (Hengge, 2009; Hengge et al., 2016; R\u00f6mling et al., 2005; Wolfe and Visick, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about bacterial lifestyle transitions supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "4d1981b2-22db-48b6-aa35-36701796e457",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C12",
+      "claim": "Cellular c-di-GMP level is governed by GGDEF domain-containing diguanylate cyclases and EAL or HD-GYP domain-containing phosphodiesterases.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular c-di-GMP level is governed by two enzyme classes with opposing activities: GGDEF domain-containing diguanylate cyclases and EAL or HD-GYP domain-containing phosphodiesterases, which synthesize and degrade the dinucleotide, respectively (Schirmer and Jenal, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about c-di-GMP metabolism supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "93e98491-3b57-484e-8a4e-78bcce751fb1",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C13",
+      "claim": "GGDEF domain-containing diguanylate cyclases synthesize c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular c-di-GMP level is governed by two enzyme classes with opposing activities: GGDEF domain-containing diguanylate cyclases and EAL or HD-GYP domain-containing phosphodiesterases, which synthesize and degrade the dinucleotide, respectively (Schirmer and Jenal, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about c-di-GMP synthesis supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "3e6ad379-472c-4033-8209-284b7e773d0c",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C14",
+      "claim": "EAL or HD-GYP domain-containing phosphodiesterases degrade c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular c-di-GMP level is governed by two enzyme classes with opposing activities: GGDEF domain-containing diguanylate cyclases and EAL or HD-GYP domain-containing phosphodiesterases, which synthesize and degrade the dinucleotide, respectively (Schirmer and Jenal, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about c-di-GMP degradation supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "19d3c5f7-adb4-4bd9-808c-4b6552886161",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C15",
+      "claim": "A wide variety of specific c-di-GMP-binding receptors translate the second messenger signal into physiological responses.",
+      "claim_type": "EXPLICIT",
+      "source": "A wide variety of specific, c-di-GMP-binding receptors translate the second messenger signal into physiological responses (Chou and Galperin, 2016; Sondermann et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about c-di-GMP signaling supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7764426f-ebdd-4a69-8b8e-c26d86b13a88",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C16",
+      "claim": "Bacterial genomes can encode a large number of c-di-GMP-signaling proteins and this number scales roughly with the organism's adaptivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial genomes can encode a large number of c-di-GMP-signaling proteins and this number scales roughly with the organism's adaptivity (Galperin, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about c-di-GMP signaling protein diversity supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "b6f703b7-21f4-4361-b193-4a9858018df2",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C17",
+      "claim": "Despite identical catalytic activities, c-di-GMP-metabolizing enzymes often confer distinct signaling outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly interesting observation is that, despite identical catalytic activities, c-di-GMP-metabolizing enzymes often confer distinct signaling outcomes (Abel et al., 2011; Dahlstrom et al., 2015, 2016; Ha et al., 2014; Kulasakara et al., 2006; Lindenberg et al., 2013; Newell et al., 2011a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about c-di-GMP signaling specificity supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "66f8e652-7e68-40e8-91ff-17f3f64a9334",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C18",
+      "claim": "The mechanisms underlying signaling specificity in c-di-GMP systems are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms underlying this apparent signaling specificity are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7686dd2e-69af-43c7-b8e0-53cb28a13ba8",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C19",
+      "claim": "The Lap operon controls cell adhesion and biofilm formation in gammaproteobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work by our lab and others have focused on a conserved signaling system comprising the Lap operon that controls cell adhesion and biofilm formation in gammaproteobacteria, including Pseudomonas fluorescens (Chatterjee et al., 2014; Navarro et al., 2011; Newell et al., 2009, 2011b), P. aeruginosa (Cooley et al., 2016 Rybtke et al., 2015), P. putida (Gjermansen et al., 2010), Bordetella bronchiseptica (Ambrosis et al., 2016), and Shewanella oneidensis (Zhou et al., 2015) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the Lap operon supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5d25b45d-168b-4087-bb88-1ecc92d535ca",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C20",
+      "claim": "LapD functions as a receptor with degenerate GGDEF and EAL domains.",
+      "claim_type": "EXPLICIT",
+      "source": "At its center, the inner membrane protein LapD functions as a receptor with degenerate GGDEF and EAL domains, which together relay intracellular c-di-GMP concentrations to the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of LapD's domain architecture and function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "fb8ee21e-ba67-4d91-a6a9-c92a89f3b086",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C21",
+      "claim": "At high c-di-GMP levels, LapD sequesters LapG at the inner membrane via the receptor's periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "At high c-di-GMP levels, LapD sequesters the adhesin protein-specific, periplasmic protease LapG at the inner membrane via the receptor's periplasmic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of LapD function supported by prior work and the current study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "a9f1d0e1-2fad-481c-a658-2230e5787946",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C22",
+      "claim": "LapG sequestration ensures that large adhesin proteins remain stably associated with the outer cell membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This step ensures that large adhesin proteins whose transcription is activated by the dinucleotide remain stably associated with the outer cell membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the functional consequence of LapG sequestration.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ad6ff47b-5286-40b8-a52a-0753c9add26a",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C23",
+      "claim": "When c-di-GMP levels drop, LapD undergoes a conformational change adopting an autoinhibited state with low affinity for LapG.",
+      "claim_type": "EXPLICIT",
+      "source": "When c-di-GMP levels drop and adhesin expression ceases, LapD undergoes a conformational change, adopting an autoinhibited state with low affinity for LapG; freed LapG, in turn, processes the adhesin proteolytically, weakening cell adhesion and ultimately contributing to biofilm dispersal (Chatterjee et al., 2014; Navarro et al., 2011; Newell et al., 2011b; Cooley et al., 2016; Rybtke et al., 2015; Borlee et al., 2010; Mart\u00ednez-Gil et al., 2014; Monds et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of LapD conformational changes supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "370f4f2b-5860-4e91-8202-bcba6d526ff1",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C24",
+      "claim": "Freed LapG processes the adhesin proteolytically, weakening cell adhesion and contributing to biofilm dispersal.",
+      "claim_type": "EXPLICIT",
+      "source": "When c-di-GMP levels drop and adhesin expression ceases, LapD undergoes a conformational change, adopting an autoinhibited state with low affinity for LapG; freed LapG, in turn, processes the adhesin proteolytically, weakening cell adhesion and ultimately contributing to biofilm dispersal (Chatterjee et al., 2014; Navarro et al., 2011; Newell et al., 2011b; Cooley et al., 2016; Rybtke et al., 2015; Borlee et al., 2010; Mart\u00ednez-Gil et al., 2014; Monds et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of LapG function supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "355cf244-232c-44bf-8d39-07abecf0604d",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C25",
+      "claim": "Previous work identified a transient interaction of LapG with c-di-GMP-unbound LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our previous work identified a transient, yet detectable interaction of LapG with c-di-GMP-unbound LapD, suggesting that the protease may participate in an early event of LapD signaling (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a finding from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "1ca7b07f-933b-440a-8466-0f0a3ade303b",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C26",
+      "claim": "Saturation binding of LapG to LapD was markedly lower in the absence of c-di-GMP compared to when both ligands were present.",
+      "claim_type": "EXPLICIT",
+      "source": "Curiously, saturation binding of LapG to LapD was markedly lower in the absence of c-di-GMP compared to levels when both ligands, c-di-GMP and LapG, were present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a finding from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "429aba2a-efaa-40d1-8875-094ba1c0c928",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C27",
+      "claim": "GcbC is a diguanylate cyclase that feeds specifically into P. fluorescens LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a subsystem of diguanylate cyclases feeds specifically into the P. fluoresens LapD, indicating apparent signaling specificity between enzymes and receptors involved in c-di-GMP signal transduction (Newell et al., 2011a). At least one of these enzymes, GcbC, fulfills a distinct role in contributing an activation signal that relies on protein\u2013protein interactions with LapD (Dahlstrom et al., 2015, 2016) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about GcbC function supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "3c15dfb1-57f8-4a04-96e0-a0381e710ab5",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C28",
+      "claim": "GcbC contributes an activation signal that relies on protein-protein interactions with LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "At least one of these enzymes, GcbC, fulfills a distinct role in contributing an activation signal that relies on protein\u2013protein interactions with LapD (Dahlstrom et al., 2015, 2016) (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about GcbC function supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "86e39403-bd48-4c53-aca6-cbb8655a7ea3",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C29",
+      "claim": "A helical motif mediating pairwise interactions with GcbC was occluded in the autoinhibited state of LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, our previous structural analysis of LapD indicated that a helical motif mediating pairwise interactions with GcbC was occluded in the autoinhibited state (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from prior structural analysis referenced in the text and shown in a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "a4c812b9-222e-4750-a454-c3aa3981d7ea",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C30",
+      "claim": "Modeling LapD as a simple dimer suggested global steric incompatibility between LapD and GcbC.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, modeling LapD as a simple dimer also suggested global steric incompatibility between these two transmembrane proteins (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from modeling studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "dbaf80fa-133e-4747-b8d7-b307e177efdd",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C31",
+      "claim": "LapG, together with c-di-GMP, plays a role in establishing the signaling-competent conformation of LapD by inducing higher-order oligomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "These follow-up studies reveal an unanticipated role for LapG, together with c-di-GMP, in establishing the signaling-competent conformation of LapD by inducing higher-order oligomerization of the receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "01e44a91-650f-4741-9456-ee88da4791cd",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C32",
+      "claim": "LapD activation involves coincidence detection of dinucleotide and protease.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of the results, significant modifications to our model include coincidence detection of dinucleotide and protease as well as bidirectional signaling across the membrane as integral steps in LapD activation, with implications for the origins of transmembrane c-di-GMP signaling and for the regulation of LapD via heterologous interactions with diguanylate cyclases (Dahlstrom et al., 2015, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ed340941-1670-4268-b09d-a3800256bb21",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C33",
+      "claim": "LapD activation involves bidirectional signaling across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of the results, significant modifications to our model include coincidence detection of dinucleotide and protease as well as bidirectional signaling across the membrane as integral steps in LapD activation, with implications for the origins of transmembrane c-di-GMP signaling and for the regulation of LapD via heterologous interactions with diguanylate cyclases (Dahlstrom et al., 2015, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "adf1de4f-213c-4b6c-8d3c-5dbcd77bd290",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C34",
+      "claim": "Fluorescence anisotropy assay revealed an approximately 6-fold increase in LapG's apparent affinity for LapD when c-di-GMP is present.",
+      "claim_type": "EXPLICIT",
+      "source": "Titration of purified, detergent-solubilized LapD to a fixed concentration of fluorescent LapG yielded saturation-binding data, revealing an approximately 6-fold increase in LapG's apparent affinity for LapD when c-di-GMP is present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the fluorescence anisotropy assay described in the manuscript and shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "64d1faf0-80e9-46a0-afb8-6644800e106a",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C35",
+      "claim": "LapD titrations reached comparable maximum binding with and without c-di-GMP in the fluorescence anisotropy assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the LapD titrations used here reached comparable maximum binding with and without c-di-GMP (Figure 1\u2014figure supplement 2), in contrast to our previous assays in which LapG was the titrant which showed distinct maxima for LapD\u2013LapG binding in the presence or absence of c-di-GMP (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fluorescence anisotropy assay compared to prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "51d86db3-1c3e-44ad-b730-b2461f8c1dcb",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C36",
+      "claim": "The difference in binding observed when the fixed and titrated proteins are swapped suggests that LapG displays a constant, saturable binding site, whereas LapD's binding capacity is regulated by c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in binding observed when the fixed and titrated proteins are swapped suggests that LapG displays a constant, saturable binding site, whereas LapD's binding capacity, and not only its affinity for LapG, is regulated by the dinucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "df6686f9-34f6-40b6-944a-21d19bc26518",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C37",
+      "claim": "Purified apo-LapD is monodisperse and dimeric as shown by SEC-MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "With this approach, purified apo-LapD was shown to be monodisperse and dimeric (Figure 1C, Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from SEC-MALS analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "9a65e505-65b4-4afa-9445-c11e92e5dc43",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C38",
+      "claim": "Pre-incubation with LapG in the absence of c-di-GMP did not alter LapD's elution time nor oligomerization state.",
+      "claim_type": "EXPLICIT",
+      "source": "Pre-incubation with LapG in the absence of c-di-GMP did not alter LapD's elution time nor oligomerization state (Figure 1C), indicating that the interactions between the c-di-GMP-unbound receptor and the protease observed in saturation-binding assays ((Chatterjee et al., 2014); Figure 1\u2014figure supplement 2) are likely transient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from SEC-MALS analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "e4298c5a-b7e0-4bf5-b156-80a848c4cb03",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C39",
+      "claim": "The LapD\u2022c-di-GMP complex was predominantly dimeric with a minor population of tetrameric LapD\u2022c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "The LapD\u2022c-di-GMP complex was predominantly dimeric, but a minor population of tetrameric LapD\u2022c-di-GMP was also observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from SEC-MALS analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "3bb9bc68-c1f3-4635-9981-82cc6b81f700",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C40",
+      "claim": "The preformed LapG\u2022LapD\u2022c-di-GMP complex eluted predominantly as a higher-order species with a molecular weight corresponding to a LapD dimer-of-dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, when analyzed under identical conditions, the preformed LapG\u2022LapD\u2022c-di-GMP complex eluted predominantly as a higher-order species with a molecular weight corresponding to that of a LapD dimer-of-dimers (Figure 1C, Figure 1\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from SEC-MALS analysis shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "b8d861b7-d289-4b06-8587-07d8af9b50f6",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C41",
+      "claim": "Omitting c-di-GMP in the mobile phase destabilized the LapG\u2022LapD\u2022c-di-GMP complex, with LapD eluting as a dimeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "Omitting c-di-GMP in the mobile phase destabilized the complex, with LapD eluting as a dimeric species (Figure 1\u2014figure supplement 3A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from SEC-MALS analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7124c7ea-81bc-4e65-861d-95de23036424",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C42",
+      "claim": "LapG protease, together with c-di-GMP, plays a crucial role in the activation of LapD via induction of receptor oligomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results provide compelling evidence that the LapG protease, together with c-di-GMP, plays a crucial role in the activation of LapD via induction of receptor oligomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the SEC-MALS data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "3c5793cb-d550-4b5f-aa15-039a2260c257",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C43",
+      "claim": "Native LapD can adopt at least three global states: dimeric apo-LapD, dimeric LapD\u2022c-di-GMP, and a LapD\u2022c-di-GMP\u2022LapG dimer-of-dimers complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis described above suggests that native LapD can adopt at least three global states: (1) dimeric apo-LapD, (2) dimeric LapD\u2022c-di-GMP, and (3) a LapD\u2022c-di-GMP\u2022LapG dimer-of-dimers complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the SEC-MALS and crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5a68ea60-b462-48e0-9125-7a56430b0613",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C44",
+      "claim": "LapD-TMcys retained the ability to bind LapG in a c-di-GMP-dependent manner similar to wild-type LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a specific LapG photo-crosslinking assay (Chatterjee et al., 2014), we showed that LapD-TMcys was able to bind LapG in a c-di-GMP-dependent manner similar to wild-type LapD, as was a variant lacking all four native cysteine residues ('cysless') (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the photo-crosslinking assay shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "dbe9cc5c-6e7c-4127-8c12-14613a33a29c",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C45",
+      "claim": "LapD\u2013sfGFP, LapDTMcys, and LapDTMcys-A602C formed constitutive dimers in their respective apo-states.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by SEC-MALS analysis that LapD\u2013sfGFP, LapDTMcys, and a representative variant with an engineered cysteine, LapDTMcys-A602C, formed constitutive dimers in their respective apo-states, similar to wild-type LapD, and that neither the sfGFP fusion nor cysteine mutagenesis perturbed the receptor notably (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from SEC-MALS analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "0d58eb68-8f10-4f61-9522-c089a3285aca",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C46",
+      "claim": "Only a fraction of apo-LapD protomers adopt the autoinhibited conformation at a given time.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that conformational heterogeneity exists within apo-LapD and only a certain population of protomers adopt the autoinhibited state at a given time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the crosslinking data for the S229C-A602C variant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "969ad306-c7e3-4903-a77c-db02b81a0dfa",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C47",
+      "claim": "Addition of c-di-GMP to the S229C-A602C variant abolishes the oxidant-dependent, intra-molecular crosslinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of c-di-GMP to the S229C-A602C variant prior to copper oxidation abolishes the oxidant-dependent, intra-molecular crosslinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crosslinking experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "c6aa47df-649e-48c3-896a-e10114cd25ea",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C48",
+      "claim": "c-di-GMP binding leads to EAL domain dimerization in LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these bands (blue marking) is rationalized as a homotypic crosslink between corresponding cysteine residues at position 602, as residue A602 is also central to the canonical EAL domain dimerization interface observed in the LapDEAL\u2022c-di-GMP complex structure (Figure 2A, bottom) (Navarro et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the crosslinking data supported by prior structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "3d7662de-d562-4669-b7de-b6e7da9ad235",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C49",
+      "claim": "c-di-GMP binding is accompanied by reorientation of transmembrane helices in LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the origin of two other predominant bands with slower mobility in the LapDTMcys-S229C-A602C\u2022c-di-GMP sample stems from movements in the transmembrane helices upon activation, which may orient the native cysteine residues C12 and/or C158 into crosslinking-competent positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the crosslinking data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8a70e69d-1944-43da-865f-359b3985e7f9",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C50",
+      "claim": "The dominant crosslinking adduct in c-di-GMP-bound LapD pertains to covalent bonds between corresponding C158 residues in a LapD dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the dominant adduct (green marking) pertains to covalent bonds between corresponding C158 residues in a LapD dimer, whereas the lower, weaker band (magenta marking) stems from a crosslink between C12 and C158 (Figure 2, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crosslinking experiments with transmembrane cysteine mutants shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "fa1c47cc-2e2b-420c-a272-fdd1916b24aa",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C51",
+      "claim": "LapG contributes to LapD activation by inducing distinct conformational changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using A602C crosslinking as an analytical tool, we next probed the effect of LapG on the activation of LapD complexes. Notably, crosslinking via corresponding A602C residues in the LapD\u2022c-di-GMP\u2022LapG complex increases relative to the level observed in the absence of LapG (Figure 2B, top panel; blue markings).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crosslinking experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "988cf03a-d08b-4ab7-bc02-b55178231502",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C52",
+      "claim": "LapG addition prevented C158\u2013C158 and C12\u2013C158 crosslinks between transmembrane helices in c-di-GMP-bound LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Concomitantly, LapG addition prevented C158\u2013C158 (green marking) and C12\u2013C158 (magenta marking) crosslinks between transmembrane helices, as well as other, higher molecular weight (gray marking) crosslinks (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crosslinking experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "e9beffdf-4f5f-4022-9aad-458cd9574207",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C53",
+      "claim": "LapG contributes to LapD structural transitions independently of c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of LapG in the absence of c-di-GMP also causes a conformational change that is not compatible with C158\u2013C158 crosslinking (Figure 2B, bottom panel), suggesting that LapG contributes to LapD structural transitions independently of c-di-GMP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crosslinking experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "213425c9-d57d-4172-b63c-db8308600acd",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C54",
+      "claim": "Mutating W125 abolished LapG-induced effects on cysteine crosslinking but not those dependent on c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutating the main anchor residue for LapG on LapD's periplasmic domain binding, W125 (Chatterjee et al., 2014; Navarro et al., 2011; Chatterjee et al., 2012), abolished these LapG-induced effects on cysteine crosslinking but not those dependent on c-di-GMP (compare LapDTMcys-A602C and LapDTMcys-W125E-A602C; Figure 2B, top panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the crosslinking experiments with the W125E mutant shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5d5a118b-de11-46b1-b6c1-cfe55eeb5c3e",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C55",
+      "claim": "The transition from dimeric LapD\u2022c-di-GMP to tetrameric LapD\u2022c-di-GMP\u2022LapG is coincident with EAL domain dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the SEC-MALS data, these observations unequivocally demonstrate that the transition from dimeric LapD\u2022c-di-GMP to tetrameric LapD\u2022c-di-GMP\u2022LapG is coincident with EAL domain dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the SEC-MALS and crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "b0fa4f6c-6362-42e1-ac77-fe5a76cfd7c2",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C56",
+      "claim": "Only ~50% of the EAL domains appear to be engaged in dimers in activated LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, only ~50% of the EAL domains appear to be engaged in dimers, suggesting that like LapD in the autoinhibited state, activated LapD is based on asymmetric LapD dimers as the minimal unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "57d0f087-afac-45b4-9cdf-3e49d556dfe8",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C57",
+      "claim": "EAL domains bridge two LapD dimers rather than interacting within the same LapD dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative model consistent with the above and previous findings (Navarro et al., 2011) is one in which EAL domains bridge two LapD dimers rather than interacting within the same LapD dimer (Figure 3A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the data and tested in the mixing experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "294ce1c5-cf92-4b34-b504-859d7e6827d0",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C58",
+      "claim": "Mixing experiments with LapD variants of distinct molecular weight demonstrate that EAL domain dimerization occurs across two LapD dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "To unambiguously demonstrate that this competition is due to the formation of a LapD dimer-of-dimers, we replaced non-fluorescent LapDTMcys with non-fluorescent LapDTMcys-A602C. Upon oxidation, we observe two crosslinking bands that correspond to LapDTMcys-A602C\u2013sfGFP and LapDTMcys-A602C\u2013sfGFP\u2022LapDTMcys-A602C dimers-of-dimers (dark and light blue arrow, respectively), for which the difference in molecular weight after SDS denaturation is roughly a single sfGFP moiety.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the mixing experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "0a01914e-88c8-4eb8-b60f-a79ab02381ca",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C59",
+      "claim": "Specific crosslinking events forming LapD dimer-of-dimers occur readily with detergent-solubilized LapD at low protein concentration (~1 \u03bcM).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these specific crosslinking events occur readily with detergent-solubilized LapD at low protein concentration (~1 \u03bcM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the crosslinking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8e9cf8cb-e16b-40ff-83c6-bbbe6695cc43",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C60",
+      "claim": "Qualitatively similar results for EAL domain crosslinking were obtained when proteins are embedded in a lipid bilayer of fused membrane fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Qualitatively similar results were obtained when proteins are embedded in a lipid bilayer of fused membrane fractions from cells separately expressing LapDTMcys-A602C\u2013sfGFP or non-fluorescent LapDTMcys variants (see Material and Methods; Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the fused membrane experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7de2909e-1730-4c75-8b0f-c61664936166",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C61",
+      "claim": "SAXS data were collected on detergent-solubilized LapD in four distinct states.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to obtain further structural evidence for LapD's global conformational changes, we modeled SAXS data collected on detergent-solubilized LapD in four distinct states (Figure 4A; Figure 4\u2014figure supplement 1): (1) apo-LapD trapped in the c-di-GMP-insensitive, fully autoinhibited conformation via an intramolecular crosslink between S229C and A602C (see Materials and Methods, Figure 2, Figure 2\u2014figure supplement 1A, and Figure 4); (2) Apo-LapD; (3) LapD\u2022c-di-GMP; (4) LapD\u2022c-di-GMP\u2022LapG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the SAXS experiments performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f7e66721-123f-4a5e-af72-94c4899aecb5",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C62",
+      "claim": "Trapped-inactive LapD has a slightly more compact structure with a measurably shorter Dmax and smaller Porod volume compared to native apo-LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of distance distribution functions suggests a slightly more compact structure of the trapped-inactive LapD with a measurably shorter Dmax and smaller Porod volume compared to native apo-LapD (Figure 4B, left panel; Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SAXS analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5b79c70b-0388-4307-af81-3267b6bfaaa1",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C63",
+      "claim": "The trapped-inactive LapD envelope has dimensions consistent with both protomers adopting the autoinhibited conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Manually docking individual LapD domains suggests that the trapped-inactive LapD envelope has dimensions consistent with both protomers' adopting the autoinhibited conformation that was observed in the crystal structure of this module.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS envelope modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "817bab30-bf0e-4e3e-a522-a9adf7dc14f2",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C64",
+      "claim": "Native apo-LapD envelope is consistent with a heterogeneous state in which one protomer adopts the autoinhibited conformation while the other half-site can be modeled as a mixture of autoinhibited and extended conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the native apo-LapD envelope is consistent with a heterogeneous state in which one protomer adopts the autoinhibited conformation while the other half-site of the dimer can be modeled as a mixture of autoinhibited and extended conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS envelope modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ad2d0629-bb9d-4355-990c-f53efa3ed2f9",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C65",
+      "claim": "Addition of c-di-GMP has a marginal effect on native LapD's Dmax.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with this analysis, addition of c-di-GMP has a marginal effect on native LapD's Dmax, indicating that part of apo-LapD already adopts an extended conformation (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SAXS analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f5f4f95d-8e57-4d1d-b4e4-118464b5c8bd",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C66",
+      "claim": "The shape of the distance distribution function confirms c-di-GMP-dependent conformational changes relative to apo-LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the shape of the distance distribution function confirms c-di-GMP-dependent conformational changes relative to apo-LapD (Figure 4B, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SAXS analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "6c1032a0-108b-477e-bc19-e762357dcb07",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C67",
+      "claim": "The modeled envelope of c-di-GMP-bound LapD reveals a more pronounced density for a disengaged EAL domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The modeled envelope of c-di-GMP-bound LapD reveals a more pronounced density for a disengaged EAL domain and a lessening of features that would correspond to the EAL domain in its S helix-engaged, autoinhibited conformation (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SAXS envelope modeling shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "9258d0b0-aad5-4d8d-bb47-a94566ec4a70",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C68",
+      "claim": "Global changes in c-di-GMP-bound LapD appear to be restricted to one half-site of a LapD dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, these global changes appear to be restricted to one half-site of a LapD dimer, consistent with our crosslinking data (Figure 2) and the lack of apparent symmetry in the SAXS data for the constitutive dimeric states discussed so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS data consistent with crosslinking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "0411fd7f-1e32-401b-af8c-9a94b986e4aa",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C69",
+      "claim": "The distance distribution function and envelopes of LapD\u2022c-di-GMP\u2022LapG yielded dimensions and shapes consistent with two LapD\u2022c-di-GMP dimers engaged via one of their EAL domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, the distance distribution function and envelopes generated from LapD\u2022c-di-GMP\u2022LapG SAXS profiles yielded dimensions and overall shapes consistent with two LapD\u2022c-di-GMP dimers engaged via one of their EAL domains (and bound to LapG) (Figure 4B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SAXS analysis shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "9a3f3e84-7c19-4c46-8eaa-3b5967439ef6",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C70",
+      "claim": "Simulated annealing-rigid-body fitting yielded models compatible with the experimental SAXS data.",
+      "claim_type": "EXPLICIT",
+      "source": "Another way to model SAXS data relies on simulated annealing-rigid-body fitting of individual domains on the basis of high-resolution structures (Petoukhov and Svergun, 2005). This analysis yielded models that are compatible with the experimental data, and these models agreed well with the above interpretations based on envelope calculations for the trapped-inactive, the LapD\u2022c-di-GMP complex, and the fully active LapD\u2022c-di-GMP\u2022LapG complex (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the SASREF modeling shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "4837c7c6-acd7-4369-ae07-d89500e8bb4d",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C71",
+      "claim": "EOM analysis shows that native apo-LapD adopts an extended conformation more frequently than the trapped-inactive form.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from this EOM analysis are analogous to those discussed above in that the native apo-LapD adopts an extended conformation (based on the Rg and Dmax of the selected ensemble models) more frequently than the trapped-inactive form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the EOM analysis shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "fd9f6b9b-ccaa-4c18-93d4-16c9b7418111",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C72",
+      "claim": "The LapD\u2022c-di-GMP state is enriched in conformations that are more extended than both the trapped-inactive and the native apo-form.",
+      "claim_type": "EXPLICIT",
+      "source": "The LapD\u2022c-di-GMP state is enriched in conformations that are more extended than both the trapped-inactive and the native apo-form (Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the EOM analysis shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f4d45b03-3b50-40f8-a37c-26bd0f97c775",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C73",
+      "claim": "Results from SEC-MALS, site-specific crosslinking, and SAXS-based modeling are consistent with each other and allow distinction of four distinct states of LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, results from the three independent approaches reporting on conformational changes upon LapD activation or inactivation \u2013 SEC-MALS, site-specific crosslinking, and SAXS-based modeling \u2013 are consistent with each other and allow us to distinguish four distinct states of the receptor (Figure 4C, bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary conclusion based on multiple experimental approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "1d52befd-9a5b-4d30-a808-eb1b1cdbe67b",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C74",
+      "claim": "The structural transition from low-to-high affinity state of LapD for LapG is driven by independent inputs via c-di-GMP binding to the cytosolic module and LapG binding to LapD's periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural transition from a low-to-high affinity state of LapD for the protease LapG appear to be driven by independent inputs via c-di-GMP binding to the cytosolic module and LapG binding to LapD's periplasmic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "26724ab2-75ea-4694-aea2-7d589a8b00a4",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C75",
+      "claim": "Both ligands, c-di-GMP and LapG on either side of the inner bacterial membrane, contribute to the conformational switch that establishes a signaling competent state.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, new evidence presented here indicates that both ligands, c-di-GMP and LapG on either side of the inner bacterial membrane, contribute to the conformational switch that establishes a signaling competent state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "a76c8c12-f13d-4746-a0fb-f6d45357a656",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C76",
+      "claim": "A LapD dimer is inherently asymmetric even in the absence of any ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that a LapD dimer is already inherently asymmetric even in the absence of any ligands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the SAXS and crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "fae0bc11-5a0d-4fa0-a8d4-f2ab50b7ce17",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C77",
+      "claim": "One half-site of an apo-LapD dimer adopts a conformation akin to the crystal structure of the autoinhibited cytosolic module.",
+      "claim_type": "EXPLICIT",
+      "source": "One half-site of an apo-LapD dimer adopts a conformation akin to the crystal structure of the autoinhibited cytosolic module, characterized by an occluded c-di-GMP binding site (Navarro et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS and crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "d0250616-cef4-4a7c-85be-d8cdb87ddc3f",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C78",
+      "claim": "The other half-site of apo-LapD appears to sample an open conformation in which the EAL domain is disengaged from LapD's regulatory S helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The other half-site appears to sample an open conformation, in which the EAL domain is disengaged from LapD's regulatory S helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the SAXS and crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "c4c7bd73-6a82-4dca-88d8-dc89b15267c1",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C79",
+      "claim": "Only one equivalent of c-di-GMP is required per LapD dimer for maximal LapG binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we previously showed that only one equivalent of c-di-GMP is required per LapD dimer for maximal LapG binding, and that the high-affinity LapG-binding state of the periplasmic domain of LapD is asymmetric (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a finding from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8ec3062c-b337-44d9-97c6-47be958098fa",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C80",
+      "claim": "The high-affinity LapG-binding state of the periplasmic domain of LapD is asymmetric.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, we previously showed that only one equivalent of c-di-GMP is required per LapD dimer for maximal LapG binding, and that the high-affinity LapG-binding state of the periplasmic domain of LapD is asymmetric (Chatterjee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a finding from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8a572a87-da5c-4576-aa5b-5ad08dba9b35",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C81",
+      "claim": "c-di-GMP is only a partial activator of LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, we also demonstrate that c-di-GMP is only a partial activator and that c-di-GMP-bound LapD differs structurally from high-affinity complexes comprising the dinucleotide, receptor, and protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "847340a4-6efa-479d-a663-33dd2c884125",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C82",
+      "claim": "c-di-GMP-bound LapD differs structurally from high-affinity complexes comprising the dinucleotide, receptor, and protease.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, we also demonstrate that c-di-GMP is only a partial activator and that c-di-GMP-bound LapD differs structurally from high-affinity complexes comprising the dinucleotide, receptor, and protease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing different oligomeric states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "7b836d92-85b9-4dff-8c56-f15a7442833b",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C83",
+      "claim": "Simultaneous binding of c-di-GMP and LapG to LapD establishes a conformation in which the EAL domains dimerize through a canonical interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous binding of c-di-GMP and LapG to LapD's cytosolic and periplasmic domains, respectively, establishes a conformation in which the EAL domains dimerize through a canonical interface (Navarro et al., 2011; Barends et al., 2009; Minasov et al., 2009; Sundriyal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the crosslinking and SAXS data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f71bb51f-6e8b-42da-a4d6-1bc394a625c6",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C84",
+      "claim": "EAL domain dimerization in activated LapD occurs across two LapD dimers, not within a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to previous models, this interaction does not occur within a dimer, but across two LapD dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript demonstrated by the mixing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "af77a0d1-3530-4898-b328-4824a01f6999",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C85",
+      "claim": "The HAMP domain functions as an integrator of bilateral signaling across the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "An exact molecular mechanism explaining this long-range allosteric regulation of LapD resulting in a higher oligomeric, high-affinity complex remains enigmatic, but it appears that the HAMP domain functions as an integrator of bilateral signaling across the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "45f9d538-0af0-4039-bf93-04a3a020a054",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C86",
+      "claim": "The HAMP domain would prevent full LapD activation if the receptor were to engage with only one of the ligands, LapG or c-di-GMP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the HAMP domain would prevent full LapD activation if the receptor were to engage with only one of the ligands, LapG or c-di-GMP, on either side of the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "d24e9cbc-5d7b-4873-aefa-dac367806a1f",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C87",
+      "claim": "The periplasmic input (LapG binding to LapD's output domain) is likely a vestigial feature derived from evolutionarily related, active enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The periplasmic input \u2014 LapG binding to LapD's output domain \u2014 is likely a vestigial feature derived from evolutionarily related, active enzymes that have domain architecture similar to that of LapD, which produce or degrade cellular c-di-GMP upon sensing environmental stimuli through an outside-in signaling mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the evolutionary origin of the mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8061396e-05a7-49ce-b386-4df30cf4206a",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C88",
+      "claim": "Close to 2,000 proteins contain a triple HAMP-GGDEF-EAL domain unit akin to LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Annotation of close to 2,000 proteins containing a triple HAMP-GGDEF-EAL domain unit akin to LapD, many of which are predicted to be active diguanylate cyclase or phosphodiesterases, highlights the prevalence of this module in c-di-GMP signaling networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about protein annotation and prevalence.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "10f88530-8049-4170-977c-5fcbc8c85955",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C89",
+      "claim": "Asymmetry is common among outside-in signaling membrane proteins, including HAMP domain-containing chemotaxis receptors and histidine kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, asymmetry, like that we described for the LapD output domain-LapG complex (Chatterjee et al., 2014), is common among outside-in signaling membrane proteins, including HAMP domain-containing chemotaxis receptors and histidine kinases (Maksay and T\u0151ke, 2014; Milburn et al., 1991; Neiditch et al., 2006; Yeh et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about asymmetry in signaling proteins supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "0f3ae129-e9f1-4aa5-b9d5-27e324200705",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C90",
+      "claim": "Binding of AI-2 to the periplasmic domain of the histidine kinase complex LuxPQ induces asymmetry in its periplasmic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, binding of the quorum-sensing signal AI-2 to the periplasmic domain of the histidine kinase complex LuxPQ induces asymmetry in its periplasmic domains (Neiditch et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example from the literature supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8d9df323-6824-4407-b9b0-17a640266e30",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C91",
+      "claim": "Ligand-induced asymmetry in Tsr/Tar chemosensory receptors promotes the oligomerization of three identical, but functionally non-equivalent, cytoplasmic core domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, ligand-induced asymmetry in Tsr/Tar chemosensory receptors promotes the oligomerization of three identical, but functionally non-equivalent, cytoplasmic core domains (Briegel et al., 2012; Li et al., 2013; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an example from the literature supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "8cfe6b24-4762-4f12-b5ae-0c11c5b5b2c6",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C92",
+      "claim": "Protein-protein interactions between enzymes that make or break c-di-GMP and c-di-GMP-specific receptors have been implicated in signaling specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, protein\u2013protein interactions between enzymes that make or break c-di-GMP and c-di-GMP-specific receptors have been implicated (Abel et al., 2011; Lindenberg et al., 2013; Guzzo et al., 2013; Ryan and Dow, 2010; Ryan et al., 2012), including the GcbC diguanylate cyclase and the LapD receptor pair (Dahlstrom et al., 2015, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about signaling specificity mechanisms supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "fcb9d07d-69e4-47df-abae-c3a81cd5daeb",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C93",
+      "claim": "The revised model based on asymmetric LapD dimers and symmetric LapD dimer-of-dimers reconciles how GcbC and LapD might interact.",
+      "claim_type": "EXPLICIT",
+      "source": "Our revised model, based on the observation of asymmetric LapD dimers in the apo- and c-di-GMP-bound states, as well as the symmetric LapD dimer-of-dimers, reconciles this conundrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about how the new model resolves prior inconsistencies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "734efbac-9b1a-42f9-b4c9-036c231ac001",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C94",
+      "claim": "Asymmetric and symmetric LapD dimers have in common an open configuration that could provide a signaling platform for heterologous interactions with other proteins such as GcbC.",
+      "claim_type": "EXPLICIT",
+      "source": "These dimers have in common an open configuration that could provide a signaling platform for heterologous interactions with other proteins such as GcbC (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the structural data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "27dd2ba6-5dc4-44cb-b994-3b38d5ef4307",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C95",
+      "claim": "Apo-LapD samples the extended state, consistent with the observation that GcbC interacts with both apo- and constitutively active variants of LapD.",
+      "claim_type": "EXPLICIT",
+      "source": "Since apo-LapD samples the extended state, this model is also consistent with the observation that GcbC interacts with both apo- and constitutively active variants of LapD (Dahlstrom et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation connecting the current findings with prior observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "e09ca9eb-1402-45c1-93d2-c592ae4511a1",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C96",
+      "claim": "GcbC could stabilize a LapD dimer-of-dimers and/or induce a conformation similar to that of the LapG\u2013c-di-GMP-bound receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural impact of the GcbC\u2013LapD interaction on the c-di-GMP receptor remains to be assessed, but it is conceivable that GcbC could stabilize a LapD dimer-of-dimers and/or induce a conformation similar to that of the LapG\u2013c-di-GMP-bound receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential role of GcbC.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "1071496f-a381-4647-8cf1-a22f228225b5",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "claim_id": "C97",
+      "claim": "LapD can adopt many different conformations allowing it to present unique interfaces for direct interaction with other proteins for proper regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless, the fact that LapD can adopt these many different conformations allows it to present unique interfaces for direct interaction with other proteins for proper regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the structural data showing multiple conformational states.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LapD activation requires coincidence detection of both c-di-GMP and LapG, resulting in formation of a receptor dimer-of-dimers rather than simple conformational changes within a dimer. This bidirectional signaling mechanism involves EAL domain dimerization across two LapD dimers, as demonstrated by SEC-MALS, crosslinking, and SAXS analyses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple independent experimental approaches (SEC-MALS showing tetrameric species in C40, crosslinking demonstrating inter-dimer EAL interactions in C58, and SAXS modeling in C69, C73) converge on the same conclusion. The mixing experiments with differentially tagged LapD variants (C58) provide particularly strong evidence for the dimer-of-dimers architecture. The coincidence detection mechanism is well-supported by data showing that neither c-di-GMP nor LapG alone produces the high-affinity, tetrameric state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "d8e8cfff-d21e-4316-bd67-eb6b125b3c71",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Fluorescence anisotropy binding assays reveal that c-di-GMP increases LapG's apparent affinity for LapD approximately 6-fold, and that swapping fixed versus titrated proteins suggests LapD's binding capacity (not just affinity) is regulated by c-di-GMP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The fluorescence anisotropy data (C34) provide quantitative binding measurements. The comparison between different experimental configurations (C35) and the interpretation regarding binding capacity versus affinity (C36) are logically sound and supported by the data shown in Figure 1\u2014figure supplement 2. The ~6-fold difference in Kd values is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "748c1472-5e16-4b42-94ba-1c0f5f91a919",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SEC-MALS analysis demonstrates that apo-LapD is dimeric, LapD\u2022c-di-GMP is predominantly dimeric with minor tetrameric population, and that LapG binding without c-di-GMP does not alter oligomerization state. Native LapD can adopt at least three distinct oligomeric states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "SEC-MALS provides direct molecular weight measurements for different LapD states (Figure 1C, Figure 1\u2014figure supplement 3). The data clearly show dimeric apo-LapD (C37), no change upon LapG addition without c-di-GMP (C38), and predominantly dimeric LapD\u2022c-di-GMP with minor tetramer (C39). The c-di-GMP dependence of complex stability (C41) is demonstrated by the destabilization experiment. These are well-controlled experiments with appropriate technical replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "bc970425-947d-45ff-8676-3388effaf75d",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cysteine crosslinking experiments reveal conformational heterogeneity in apo-LapD, c-di-GMP-induced EAL domain dimerization and transmembrane helix reorientation, and LapG-induced conformational changes that are distinct from and independent of c-di-GMP effects. Only ~50% of EAL domains engage in dimers in activated LapD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crosslinking data (Figure 2) provide detailed spatial information about conformational states. The engineered cysteine positions are rationally designed based on crystal structures (C48). The W125E control (C54) demonstrates specificity of LapG effects. The observation of partial crosslinking (~50% in C46, C56) is consistent across experiments and supports the asymmetric dimer model. The interpretation that LapG induces conformational changes independent of c-di-GMP (C53) is directly supported by the data in Figure 2B bottom panel.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "eb78cdb7-bfa4-4726-89ac-7ab6a9a0c338",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EAL domain crosslinking forming LapD dimer-of-dimers occurs readily at low protein concentration (~1 \u03bcM) in detergent and shows qualitatively similar results in lipid bilayers of fused membrane fractions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The low concentration requirement (C59) argues against non-specific aggregation artifacts. The demonstration in both detergent-solubilized and membrane-embedded contexts (C60, Figure 3B) strengthens the physiological relevance of the findings. These controls address potential concerns about the biological relevance of the observed oligomerization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SAXS analysis of four distinct LapD states reveals progressive conformational changes from trapped-inactive to apo to c-di-GMP-bound to fully activated states. The data support asymmetric dimers with one protomer in autoinhibited conformation and the other sampling extended conformations, with global changes restricted to one half-site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The SAXS data are analyzed using multiple complementary approaches (ab initio envelopes, rigid-body fitting with SASREF, and EOM analysis), all yielding consistent interpretations (C70, C71, C72, C73). The use of a trapped-inactive variant (C62, C63) provides an important reference state. The progressive changes in Dmax and distance distribution functions (C62, C65, C66) are clearly documented. The interpretation of asymmetry (C64, C68) is consistent with crosslinking data. The quality metrics (\u03c7\u00b2 values, NSD) are reported and generally acceptable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Apo-LapD dimers are inherently asymmetric with one protomer in an autoinhibited conformation and the other sampling an open, extended state. c-di-GMP is only a partial activator, with c-di-GMP-bound LapD structurally distinct from the high-affinity ternary complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The asymmetry conclusion (C76, C77, C78) is supported by converging evidence from SAXS (C64, C68), crosslinking (C46), and prior work (C79, C80). The partial activator conclusion (C81, C82) is directly supported by the SEC-MALS data showing different oligomeric states for LapD\u2022c-di-GMP (dimeric) versus LapD\u2022c-di-GMP\u2022LapG (tetrameric). This is a well-supported mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "9f3faa6c-0938-4a31-8f1d-7059c4fda893",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "LapD variants with cysteine mutations (TMcys, cysless) and sfGFP fusions retain c-di-GMP-dependent LapG binding activity and form constitutive dimers similar to wild-type LapD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are essential validation experiments (Figure 2\u2014figure supplement 1) demonstrating that the engineered variants used throughout the study maintain native-like behavior. The photo-crosslinking assay (C44) and SEC-MALS analysis (C45) provide direct functional and structural validation. Without these controls, the interpretations of crosslinking and other experiments would be questionable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ac66fadb-03f2-4af6-b940-de45e2e16737",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The HAMP domain is proposed to function as an integrator of bilateral signaling across the membrane, preventing full LapD activation when only one ligand (c-di-GMP or LapG) is bound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This is a mechanistic proposal (C85, C86) that is reasonable given the data but lacks direct experimental validation. The HAMP domain's role is inferred from the overall architecture and the requirement for both ligands, but no experiments directly test HAMP function (e.g., HAMP domain mutations or deletions). The claim is explicitly presented as a model/hypothesis in the text, and the evidence type is listed as INFERENCE/SPECULATION.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "5b5fac43-ff9f-40de-bf0a-13b75394fe20",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The periplasmic input mechanism is proposed to be a vestigial evolutionary feature, and the open LapD conformations could provide a signaling platform for interactions with proteins like GcbC, which might stabilize dimer-of-dimers or induce conformations similar to the LapG-bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative evolutionary and mechanistic proposals (C87, C94, C96) that are plausible but lack direct experimental support in this manuscript. The evidence types are correctly listed as SPECULATION and INFERENCE. While the proposals are consistent with the structural data and prior observations about GcbC-LapD interactions, they represent hypotheses for future testing rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "11399607-f682-4f3f-b45d-fc78a62ab669",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The revised model based on asymmetric LapD dimers and symmetric dimer-of-dimers reconciles how GcbC and LapD might interact, as apo-LapD samples extended states and can present unique interfaces for protein-protein interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This addresses a specific inconsistency from prior work (C29, C30) where the GcbC interaction motif appeared occluded in the autoinhibited state. The new model (C93) resolves this by showing that apo-LapD samples extended conformations (C95, supported by SAXS data C71, C72). The conclusion that LapD can present multiple interfaces (C97) is well-supported by the structural data showing multiple conformational states. This is a logical inference well-grounded in the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "c540616b-4626-4881-9b18-4fbfe17e9f7f",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on c-di-GMP signaling, biofilm formation, and the Lap system establishes the biological context for LapD function as a c-di-GMP receptor that regulates the periplasmic protease LapG to control bacterial adhesion and biofilm dispersal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide established background knowledge supported by appropriate citations (C1-C24). They describe the general c-di-GMP signaling system, biofilm biology, and the specific Lap operon system. While these are not novel findings of this manuscript, they are accurately presented and properly attributed to prior work. This contextual information is essential for understanding the significance of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work established c-di-GMP-dependent conformational changes in LapD, revealed basal affinity of apo-LapD for LapG, identified GcbC as a specific activator of LapD, and showed that only one c-di-GMP per LapD dimer is required for maximal LapG binding with an asymmetric high-affinity state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims accurately summarize prior published work (primarily Chatterjee et al., 2014 and Dahlstrom et al., 2015, 2016) that provides the foundation for the current study. The citations are appropriate and the claims are consistent with the referenced literature. These establish the knowledge gaps and puzzles that the current manuscript addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "f7704f87-2f98-4c3e-99bc-579eff18e1dd",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Simultaneous binding of c-di-GMP and LapG establishes a conformation in which EAL domains dimerize through a canonical interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C83) is directly supported by the crosslinking data showing increased A602C-A602C crosslinking in the ternary complex (C51, Figure 2B), the SEC-MALS data showing tetramer formation (C40), and comparison to known EAL domain dimer structures from prior work. The canonical interface is well-characterized in the literature (cited references), and the A602 position is central to this interface.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    },
+    {
+      "id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca",
+      "content_id": "4cdea1fb-2142-48bc-b242-dde56b972c19",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Bioinformatic analysis shows ~2,000 proteins contain HAMP-GGDEF-EAL domain architecture similar to LapD. Asymmetry is common in outside-in signaling membrane proteins including chemotaxis receptors and histidine kinases, and protein-protein interactions between c-di-GMP metabolizing enzymes and receptors have been implicated in signaling specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bioinformatic observation (C88) provides context for the prevalence of this domain architecture. The claims about asymmetry in other signaling systems (C89-C91) and protein-protein interactions in c-di-GMP signaling (C92) are supported by appropriate citations to the literature. These establish that the mechanisms discovered for LapD may have broader relevance, though this is contextual information rather than novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:12:16.885217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5d52572a-d993-4700-8765-c4e2036c830e",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "eebf50f8-91ed-4778-b8d4-bc3f6690c5a0",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "dbaf80fa-133e-4747-b8d7-b307e177efdd",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "01e44a91-650f-4741-9456-ee88da4791cd",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "ed340941-1670-4268-b09d-a3800256bb21",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "3bb9bc68-c1f3-4635-9981-82cc6b81f700",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "7124c7ea-81bc-4e65-861d-95de23036424",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "5d5a118b-de11-46b1-b6c1-cfe55eeb5c3e",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "57d0f087-afac-45b4-9cdf-3e49d556dfe8",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "294ce1c5-cf92-4b34-b504-859d7e6827d0",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "f4d45b03-3b50-40f8-a37c-26bd0f97c775",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "1d52befd-9a5b-4d30-a808-eb1b1cdbe67b",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "26724ab2-75ea-4694-aea2-7d589a8b00a4",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "f71bb51f-6e8b-42da-a4d6-1bc394a625c6",
+      "result_id": "f92b547f-8a8e-4fcf-b9be-7d2f3604c9cf"
+    },
+    {
+      "claim_id": "adf1de4f-213c-4b6c-8d3c-5dbcd77bd290",
+      "result_id": "d8e8cfff-d21e-4316-bd67-eb6b125b3c71"
+    },
+    {
+      "claim_id": "64d1faf0-80e9-46a0-afb8-6644800e106a",
+      "result_id": "d8e8cfff-d21e-4316-bd67-eb6b125b3c71"
+    },
+    {
+      "claim_id": "51d86db3-1c3e-44ad-b730-b2461f8c1dcb",
+      "result_id": "d8e8cfff-d21e-4316-bd67-eb6b125b3c71"
+    },
+    {
+      "claim_id": "df6686f9-34f6-40b6-944a-21d19bc26518",
+      "result_id": "748c1472-5e16-4b42-94ba-1c0f5f91a919"
+    },
+    {
+      "claim_id": "9a65e505-65b4-4afa-9445-c11e92e5dc43",
+      "result_id": "748c1472-5e16-4b42-94ba-1c0f5f91a919"
+    },
+    {
+      "claim_id": "e4298c5a-b7e0-4bf5-b156-80a848c4cb03",
+      "result_id": "748c1472-5e16-4b42-94ba-1c0f5f91a919"
+    },
+    {
+      "claim_id": "b8d861b7-d289-4b06-8587-07d8af9b50f6",
+      "result_id": "748c1472-5e16-4b42-94ba-1c0f5f91a919"
+    },
+    {
+      "claim_id": "3c5793cb-d550-4b5f-aa15-039a2260c257",
+      "result_id": "748c1472-5e16-4b42-94ba-1c0f5f91a919"
+    },
+    {
+      "claim_id": "0d58eb68-8f10-4f61-9522-c089a3285aca",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "969ad306-c7e3-4903-a77c-db02b81a0dfa",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "c6aa47df-649e-48c3-896a-e10114cd25ea",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "3d7662de-d562-4669-b7de-b6e7da9ad235",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "8a70e69d-1944-43da-865f-359b3985e7f9",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "fa1c47cc-2e2b-420c-a272-fdd1916b24aa",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "988cf03a-d08b-4ab7-bc02-b55178231502",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "e9beffdf-4f5f-4022-9aad-458cd9574207",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "213425c9-d57d-4172-b63c-db8308600acd",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "b0fa4f6c-6362-42e1-ac77-fe5a76cfd7c2",
+      "result_id": "bc970425-947d-45ff-8676-3388effaf75d"
+    },
+    {
+      "claim_id": "0a01914e-88c8-4eb8-b60f-a79ab02381ca",
+      "result_id": "eb78cdb7-bfa4-4726-89ac-7ab6a9a0c338"
+    },
+    {
+      "claim_id": "8e9cf8cb-e16b-40ff-83c6-bbbe6695cc43",
+      "result_id": "eb78cdb7-bfa4-4726-89ac-7ab6a9a0c338"
+    },
+    {
+      "claim_id": "7de2909e-1730-4c75-8b0f-c61664936166",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "f7e66721-123f-4a5e-af72-94c4899aecb5",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "5b79c70b-0388-4307-af81-3267b6bfaaa1",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "817bab30-bf0e-4e3e-a522-a9adf7dc14f2",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "ad2d0629-bb9d-4355-990c-f53efa3ed2f9",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "f5f4f95d-8e57-4d1d-b4e4-118464b5c8bd",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "6c1032a0-108b-477e-bc19-e762357dcb07",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "9258d0b0-aad5-4d8d-bb47-a94566ec4a70",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "0411fd7f-1e32-401b-af8c-9a94b986e4aa",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "9a3f3e84-7c19-4c46-8eaa-3b5967439ef6",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "4837c7c6-acd7-4369-ae07-d89500e8bb4d",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "fd9f6b9b-ccaa-4c18-93d4-16c9b7418111",
+      "result_id": "76e8eda9-dfa5-421a-a9b8-c8949083c4ef"
+    },
+    {
+      "claim_id": "a76c8c12-f13d-4746-a0fb-f6d45357a656",
+      "result_id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557"
+    },
+    {
+      "claim_id": "fae0bc11-5a0d-4fa0-a8d4-f2ab50b7ce17",
+      "result_id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557"
+    },
+    {
+      "claim_id": "d0250616-cef4-4a7c-85be-d8cdb87ddc3f",
+      "result_id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557"
+    },
+    {
+      "claim_id": "8a572a87-da5c-4576-aa5b-5ad08dba9b35",
+      "result_id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557"
+    },
+    {
+      "claim_id": "847340a4-6efa-479d-a663-33dd2c884125",
+      "result_id": "e96d9e1e-c74a-48e4-9e26-488e1e6a9557"
+    },
+    {
+      "claim_id": "5a68ea60-b462-48e0-9125-7a56430b0613",
+      "result_id": "9f3faa6c-0938-4a31-8f1d-7059c4fda893"
+    },
+    {
+      "claim_id": "dbe9cc5c-6e7c-4127-8c12-14613a33a29c",
+      "result_id": "9f3faa6c-0938-4a31-8f1d-7059c4fda893"
+    },
+    {
+      "claim_id": "af77a0d1-3530-4898-b328-4824a01f6999",
+      "result_id": "ac66fadb-03f2-4af6-b940-de45e2e16737"
+    },
+    {
+      "claim_id": "45f9d538-0af0-4039-bf93-04a3a020a054",
+      "result_id": "ac66fadb-03f2-4af6-b940-de45e2e16737"
+    },
+    {
+      "claim_id": "d24e9cbc-5d7b-4873-aefa-dac367806a1f",
+      "result_id": "5b5fac43-ff9f-40de-bf0a-13b75394fe20"
+    },
+    {
+      "claim_id": "734efbac-9b1a-42f9-b4c9-036c231ac001",
+      "result_id": "5b5fac43-ff9f-40de-bf0a-13b75394fe20"
+    },
+    {
+      "claim_id": "e09ca9eb-1402-45c1-93d2-c592ae4511a1",
+      "result_id": "5b5fac43-ff9f-40de-bf0a-13b75394fe20"
+    },
+    {
+      "claim_id": "fcb9d07d-69e4-47df-abae-c3a81cd5daeb",
+      "result_id": "11399607-f682-4f3f-b45d-fc78a62ab669"
+    },
+    {
+      "claim_id": "27dd2ba6-5dc4-44cb-b994-3b38d5ef4307",
+      "result_id": "11399607-f682-4f3f-b45d-fc78a62ab669"
+    },
+    {
+      "claim_id": "1071496f-a381-4647-8cf1-a22f228225b5",
+      "result_id": "11399607-f682-4f3f-b45d-fc78a62ab669"
+    },
+    {
+      "claim_id": "8e3f1ce0-3072-494d-81b9-9a2c11de2abb",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "d2861309-4cff-41c4-8219-b85a1779c8f8",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "9ed07479-49c6-4b91-a5a0-4afb51433ebf",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "f4bb4e48-35d6-4046-9fb6-078aa662d7bf",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "619db2a9-4855-4add-a2ff-6fb5d71ab591",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "6f3dab4a-d1bf-4352-971c-1b1ecb952fa3",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "02f53662-43d9-4846-9eec-83d34ff28b16",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "4d1981b2-22db-48b6-aa35-36701796e457",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "93e98491-3b57-484e-8a4e-78bcce751fb1",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "3e6ad379-472c-4033-8209-284b7e773d0c",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "19d3c5f7-adb4-4bd9-808c-4b6552886161",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "7764426f-ebdd-4a69-8b8e-c26d86b13a88",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "b6f703b7-21f4-4361-b193-4a9858018df2",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "66f8e652-7e68-40e8-91ff-17f3f64a9334",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "7686dd2e-69af-43c7-b8e0-53cb28a13ba8",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "5d25b45d-168b-4087-bb88-1ecc92d535ca",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "fb8ee21e-ba67-4d91-a6a9-c92a89f3b086",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "a9f1d0e1-2fad-481c-a658-2230e5787946",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "ad6ff47b-5286-40b8-a52a-0753c9add26a",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "370f4f2b-5860-4e91-8202-bcba6d526ff1",
+      "result_id": "c540616b-4626-4881-9b18-4fbfe17e9f7f"
+    },
+    {
+      "claim_id": "16f56858-11ae-4f74-a25e-026acd04eff8",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "7f5820bb-fc07-41d7-91de-73b9c53cf032",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "355cf244-232c-44bf-8d39-07abecf0604d",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "1ca7b07f-933b-440a-8466-0f0a3ade303b",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "429aba2a-efaa-40d1-8875-094ba1c0c928",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "3c15dfb1-57f8-4a04-96e0-a0381e710ab5",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "86e39403-bd48-4c53-aca6-cbb8655a7ea3",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "a4c812b9-222e-4750-a454-c3aa3981d7ea",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "c4c7bd73-6a82-4dca-88d8-dc89b15267c1",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "8ec3062c-b337-44d9-97c6-47be958098fa",
+      "result_id": "ab94beb2-8b6d-41ca-ab90-dbdabdf49149"
+    },
+    {
+      "claim_id": "7b836d92-85b9-4dff-8c56-f15a7442833b",
+      "result_id": "f7704f87-2f98-4c3e-99bc-579eff18e1dd"
+    },
+    {
+      "claim_id": "8061396e-05a7-49ce-b386-4df30cf4206a",
+      "result_id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca"
+    },
+    {
+      "claim_id": "10f88530-8049-4170-977c-5fcbc8c85955",
+      "result_id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca"
+    },
+    {
+      "claim_id": "0f3ae129-e9f1-4aa5-b9d5-27e324200705",
+      "result_id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca"
+    },
+    {
+      "claim_id": "8d9df323-6824-4407-b9b0-17a640266e30",
+      "result_id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca"
+    },
+    {
+      "claim_id": "8cfe6b24-4762-4f12-b5ae-0c11c5b5b2c6",
+      "result_id": "ec4688bd-9f45-4dc7-b743-0c9a693c67ca"
+    }
+  ],
+  "comparisons": []
+}

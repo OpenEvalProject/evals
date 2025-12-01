@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C37",
+      "C38",
+      "C39",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The ATP7A interactome was successfully defined using immunoaffinity chromatography and mass spectrometry, identifying 541 proteins that co-isolate with ATP7A. The interactome includes known ATP7A interactors and shows minimal overlap with non-specific binding proteins (CRAPome), validating the specificity of the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C30, C37-C39 provide converging experimental evidence from multiple orthogonal approaches (mass spectrometry, immunoprecipitation, peptide competition) demonstrating successful identification of ATP7A interacting proteins. The low overlap with CRAPome (C26) and validation of known interactors (C27-C30, C37) support the quality of the dataset. The comparison with computational predictions (C104-C106) further validates the novelty of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Bioinformatic analysis of the ATP7A interactome revealed significant enrichment for gene products implicated in neurodegeneration, neurodevelopmental disorders, and Golgi-related functions, with the COG complex being among the most prominently enriched complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C36, C95-C97 demonstrate consistent enrichment across multiple independent bioinformatic analyses (DAVID, ENRICHR, GDA, CORUM, mouse phenotype databases) with statistically significant p-values. The convergence of multiple analytical approaches on similar biological themes (neurodegeneration, Golgi function, COG complex) provides strong support for these associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "COG null cells exhibit decreased ATP7A protein expression (~25-50% reduction), altered glycosylation (increased SDS-PAGE migration), and decreased normalized surface levels that do not respond to copper addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C40-C45 are supported by multiple complementary experimental approaches (immunoblot, surface biotinylation, quantification) shown in Figure 6. The altered migration of both GPP130 and ATP7A (C41, C43) is consistent with known COG-dependent glycosylation defects. The normalization by biotinylation efficiency is appropriately justified and the lack of copper response in COG null cells (C45) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C48"
+    ],
+    "result": "COG null cells show decreased normalized surface levels of CTR1 that are further reduced by copper addition, demonstrating that both wild type and COG null cells respond to copper challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46, C48 are supported by surface biotinylation experiments in Figure 6C and quantification in Figure 6F. The technical limitation noted in C46 (inability to assess total CTR1 due to oligomerization) is appropriately acknowledged. The copper-dependent reduction in surface CTR1 in both wild type and COG null cells (C48) validates cellular copper responsiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C99"
+    ],
+    "result": "COG null cells have severely depleted cellular copper levels (below detection limit of 1 ng/sample) that are selective for copper (zinc levels unchanged), with impaired copper uptake that can be rescued by the copper ionophore disulfiram.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C49-C55, C99 are supported by inductively-coupled plasma mass spectrometry measurements (Figure 7A-B) with appropriate technical controls. The selectivity for copper depletion (C51) and the rescue by disulfiram but not copper chloride alone (C54-C55) provide strong mechanistic insight. The detection limit is clearly stated (C50), allowing proper interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "COG deficient cells show altered expression of copper-sensitive transcripts, with increased ATP7A mRNA (doubled) despite decreased protein, and decreased expression of mitochondrial copper chaperones (CCS, COX17) and assembly factors (PET191/COA5, SCO1, COX23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by qRT-PCR analysis (Figure 7C) with appropriate normalization to beta-actin and GAPDH controls. The paradoxical increase in ATP7A mRNA despite decreased protein (C56 vs C42) suggests post-transcriptional regulation. The coordinated down-regulation of multiple mitochondrial copper homeostasis factors (C58-C62) supports a model of impaired mitochondrial copper delivery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "COG null cells fail to increase MTT metabolization in response to low copper (3-20 \u03bcM) unlike wild type cells, but this copper-dependent metabolic defect can be rescued by loading cells with copper using low concentrations of disulfiram (<25 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C63-C69 are supported by MTT assays (Figure 8A, C-D) with appropriate controls including cisplatin (C66) and cell number measurements (C68). The dose-response curves clearly show differential responses between wild type and COG null cells at low copper concentrations (C63-C64). The rescue by disulfiram-copper complexes (C69) provides functional validation that copper deficiency underlies the metabolic phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Genetic manipulation of ATP7A and COG1 in Drosophila neurons alters synapse development at the neuromuscular junction, with ATP7A overexpression reducing branch length and increasing bouton density, while cog1 mutation increases branch length. The ATP7A overexpression phenotype is rescued by cog1 mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C70-C73 are supported by quantitative morphological analysis of neuromuscular junctions (Figure 9) with appropriate statistical comparisons. The genetic interaction between ATP7A overexpression and cog1 mutation (C73) provides strong in vivo evidence for functional interaction. Sample sizes are reported and the analysis was performed blind to genotype, strengthening the rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C100"
+    ],
+    "result": "ATP7A and COG1 genetically interact to modulate copper-induced mortality in adult Drosophila, with ATP7A overexpression and cog1 mutation both protecting against copper toxicity, while the combination restores wild type sensitivity. Mortality is copper-dependent as it is negligible without dietary copper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C74-C78, C100 are supported by copper feeding experiments (Figure 10) with appropriate controls (no copper diet, C78). The genetic interaction pattern (C75-C77) is consistent with the model that both ATP7A overexpression and cog1 mutation reduce cellular copper. The time course and sex-specific analyses strengthen the findings. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors conclude that the ATP7A interactome encompasses a novel COG-dependent mechanism regulating cellular copper homeostasis, synapse development, and neurodegeneration through coordinated multicompartment metabolite sensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83, C102-C103 represent integrative conclusions supported by the convergence of multiple experimental approaches: interactome identification (C2), bioinformatic enrichment (C3, C31-C36), cellular copper depletion (C6, C49-C50), transporter mislocalization (C4-C5, C44-C45, C48), metabolic defects (C7, C63-C64), and genetic interactions in vivo (C8-C9, C70-C78). The multicompartment coordination model (C103) is supported by effects on both Golgi (ATP7A) and mitochondrial (CCS, COX17) copper pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The ATP7A antibody and SH-SY5Y cell system were validated, showing copper-dependent increase in ATP7A surface expression while total levels remain unchanged, with transferrin receptor serving as a copper-insensitive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide essential validation of the experimental system (Figure 1A-B). The antibody specificity is demonstrated by absence of signal in ATP7A null cells (C22). The copper-dependent surface translocation (C19) and stable total levels (C20) are consistent with known ATP7A biology. The transferrin receptor control (C21) validates the specificity of the copper response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C101",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Background knowledge claims about copper homeostasis, ATP7A function, COG complex function, Menkes disease, and related neurodegenerative disorders are established from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C18, C79-C81, C84-C94, C98, C101, C107-C108, C110-C114 represent established knowledge supported by appropriate citations to published literature. These provide necessary context for interpreting the novel findings but do not constitute new results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Three COG subunits (COG2, 4, and 7) were identified in both BCS and copper-treated ATP7A interactome samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is directly supported by mass spectrometry data shown in Figure 2C. This finding is consistent with the broader identification of six COG subunits in the overall interactome (C31) and supports the stability of the ATP7A-COG interaction across copper conditions.",
+    "result_type": "MINOR"
+  }
+]

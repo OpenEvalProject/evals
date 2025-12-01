@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The crystal structure of the SNX5-PX:IncE complex was solved at 2.31 \u00c5 resolution, revealing that IncE108-132 forms a \u03b2-hairpin that binds in a deep hydrophobic groove on SNX5-PX, forming a hybrid five-stranded antiparallel \u03b2-sheet. The interface is characterized by a small hydrophobic core burying five residues (Y132, L133, F136 from SNX5 and V114, F116 from IncE) with minimal hydrogen bonding or ionic interactions outside of \u03b2-sheet formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42-C53, and C108-C111 collectively provide comprehensive structural data including resolution, crystallographic statistics (Rwork/Rfree 20.32/26.00), structural features, and binding interface details. The structure is deposited in PDB (5TP1) and supported by multiple figures showing electron density and structural features. The methodological details are appropriate and the structural observations are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "IncE binding to SNX5-PX does not interfere with phosphoinositide binding or SNX1 interaction. The structural changes upon IncE binding are minimal (~30\u00b0 rotation of the \u03b1-helical hairpin), IncE does not interact with the PIP binding pocket, and lipid binding assays confirm that IncE does not affect SNX5 binding to phospholipids. Structural modeling suggests the BAR domain interface is not significantly altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by structural comparisons, lipid binding assays (Figure 1\u2014figure supplement 3B), and structural modeling (Figure 1\u2014figure supplement 4). The lipid binding data directly demonstrates no competition, and the structural analysis shows spatial separation of IncE binding site from PIP binding pocket and BAR domain interface. The conclusions are well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Phylogenetic analysis of 763 SNX5/6/32 sequences reveals that the three residues at the IncE binding interface (Y132, L133, F136) are completely conserved across all metazoan species analyzed, including distantly related sequences with only 49% overall identity. This conservation extends to solvent-exposed residues in the hydrophobic groove and is absent in SNX1/2, suggesting the binding surface serves an essential physiological function, likely mediating interaction with another macromolecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 are supported by comprehensive phylogenetic analysis of 763 sequences shown in Figure 2A-B. The conservation pattern is striking and the logic is sound: complete conservation of solvent-exposed residues not involved in core folding, specific to SNX5/6/32 but absent in SNX1/2, strongly suggests functional importance. The inference of a native binding partner (C71) is reasonable given the conservation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mutagenesis of key hydrophobic residues (Y132, F136) in the SNX5 binding groove disrupts IncE binding and SNX5 recruitment to the C. trachomatis inclusion. Co-immunoprecipitation experiments demonstrate that Y132 and F136 are required for IncE binding, and microscopy shows that the Y132D/F136D double mutant fails to localize to inclusions while endogenous SNX6 is still recruited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by co-immunoprecipitation data (Figure 2C) and microscopy (Figure 2\u2014figure supplement 1). The mutagenesis strategy targets residues identified as critical in the crystal structure (C73), and the functional data confirm their importance. The observation that SNX6 is still recruited (C76) provides an important control showing specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Quantitative AP-MS analysis comparing SNX5WT with hydrophobic groove mutants (Y132D, F136D) identified CI-MPR and IGF1R as proteins whose binding to SNX5 depends on the IncE binding surface. SNX1 co-purified equally with WT and mutant SNX5, indicating the mutations do not cause major structural alterations and that CI-MPR association with SNX5 is not solely dependent on the SNX1/2-VPS interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84, C86 are supported by AP-MS data analyzed with SAINT algorithm (Table 1, Figure 3, Supplementary file 2). The differential binding of CI-MPR to WT vs mutant SNX5 is statistically significant (SAINT score 1 for WT, 0 for mutants), while SNX1 binding is preserved. The experimental design is appropriate for identifying proteins dependent on the conserved binding surface, and the statistical analysis is rigorous (BFDR \u2264 0.1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "IncE peptide (residues 108-132) disrupts the SNX5:CI-MPR interaction in a dose-dependent manner without affecting SNX1 binding. Wild-type IncE peptide inhibits CI-MPR co-immunoprecipitation with SNX5, while a mutant peptide (V114N/F116D) fails to disrupt the interaction, demonstrating that the IncE binding groove is required for the SNX5:CI-MPR interaction and that IncE residues V114 and F116 are critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C115-C119 are supported by peptide competition assays (Figure 4, Figure 4\u2014figure supplement 1). The dose-dependent inhibition by WT but not mutant peptide provides strong evidence for specific competition. The control showing SNX1 binding is unaffected demonstrates specificity. The experiments directly test the hypothesis that IncE and CI-MPR compete for the same binding surface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C112",
+      "C113",
+      "C114",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "C. trachomatis infection disrupts the SNX5:CI-MPR interaction during infection. Co-immunoprecipitation experiments show an ~5.6-fold decrease in CI-MPR binding to FLAG-SNX5 in infected versus uninfected cells, with minimal effect on SNX1 binding. IncE co-immunoprecipitates with SNX5 in infected cells, and infection does not diminish steady-state levels of SNX1, VPS35, or CI-MPR, consistent with a model where IncE displaces CI-MPR from SNX5-containing complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C112-C114, C120-C122 are supported by co-immunoprecipitation experiments during infection (Figure 5). The quantification shows a statistically significant decrease in CI-MPR:SNX5 interaction (C113, p=0.0004), while SNX1 binding is preserved. The observation that protein levels are unchanged (C121) rules out degradation as an explanation. The data are consistent with competitive displacement by IncE (C114), though this remains a model rather than direct proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Previous work by the authors established that IncE binds specifically to SNX5/6-PX but not SNX1/2-PX, is sufficient to disrupt retromer-dependent CI-MPR trafficking, and that SNX-BAR proteins relocalize to the inclusion during infection while their depletion enhances C. trachomatis replication. These findings suggest IncE redirects SNX proteins away from their normal location to limit retromer-mediated restriction of infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C37-C41 are supported by citations to previous work (Mirrashidi et al., 2015; Aeberhard et al., 2015) and are consistent with the current study's findings. The current structural and biochemical data provide mechanistic support for these prior observations. However, the mechanistic model in C41 remains somewhat speculative regarding how redirecting SNX proteins limits retromer control of infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C78",
+      "C79",
+      "C90"
+    ],
+    "result": "The authors conclude that IncE and CI-MPR depend on the same binding surface on SNX5, that IncE likely disrupts an interaction between SNX5 and a previously unappreciated host protein, and that the studies identify a previously unrecognized and functionally important surface of SNX5 that may provide an additional level of cargo specificity during CI-MPR retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C78-C79, C90 represent conclusions drawn from the collective data. The conclusion that IncE and CI-MPR depend on the same binding surface (C9) is well-supported by mutagenesis, peptide competition, and infection data. The identification of a functionally important SNX5 surface (C90) is supported by conservation analysis and functional data. The hypothesis that IncE disrupts a native interaction (C78) is reasonable given the conservation data, though C79 was a hypothesis that motivated experiments rather than a conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors propose several speculative models for how CI-MPR interacts with the SNX5 hydrophobic groove: direct binding as a low-affinity site, sequential transfer from VPS to SNX5, indirect binding through additional proteins, or contribution to membrane association leading to co-purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C94 are explicitly speculative models proposed by the authors to explain their findings. While the data clearly show that the SNX5 hydrophobic groove is required for CI-MPR association, the mechanism remains unclear. These are reasonable hypotheses that require additional experiments to distinguish between them. The authors appropriately present these as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C54",
+      "C85",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C123"
+    ],
+    "result": "The manuscript provides extensive background on C. trachomatis biology, Inc proteins, retromer structure and function, CI-MPR trafficking, and pathogen manipulation of retromer, all supported by appropriate citations to established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C10-C26, C29-C36, C54, C85, C95-C102, C104-C106, C123) represent established knowledge in the field, appropriately cited and used to provide context for the current work. They are not novel findings of this study but are accurately presented background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Previous AP-MS work by the authors identified putative binding partners for 38/58 C. trachomatis Incs, with one of the most robust interactions being between IncE (an early expressed Inc) and retromer components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 are supported by citation to previous work (Mirrashidi et al., 2015) and provide important context for the current study. The current work builds directly on these prior findings by providing structural and mechanistic insights.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C107"
+    ],
+    "result": "The authors speculate that during C. trachomatis infection, disruption of CI-MPR association with SNX5 may perturb retromer-dependent receptor recycling and disrupt lysosomal function, or that retromer dysfunction could enhance cholesterol transport to the inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C107 are speculative models about the biological consequences of IncE-mediated disruption of the SNX5:CI-MPR interaction. While these are reasonable hypotheses based on known functions of CI-MPR and Chlamydia's cholesterol requirements, they are not directly tested in this study. The speculation is appropriately qualified with 'may' and 'could,' but requires experimental validation.",
+    "result_type": "MINOR"
+  }
+]

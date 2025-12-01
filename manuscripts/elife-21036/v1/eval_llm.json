@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The crystal structure of HUWE1 (3951-4374) was determined at 2.7 \u00c5 resolution, revealing an asymmetric dimer with two molecules in the asymmetric unit. The HECT domains adopt similar T-shaped conformations (backbone-RMSD ~0.5 \u00c5), but the N-terminal extensions differ: molecule A contains a 'thumb helix' (residues 3979-3990) and molecule B has a turn with short 310-helical segments in the same region. Both molecules contain a 'pointer helix' (21-22 residues, 3951-3971/3972).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide detailed structural characterization supported by crystallographic data at 2.7 \u00c5 resolution. The RMSD value, secondary structure assignments, and residue ranges are explicitly stated with appropriate references to figures. The structural observations are internally consistent and represent standard crystallographic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The asymmetric dimer interface is formed by the pointer helix of molecule A contacting molecule B, burying ~1350 \u00c5\u00b2 and ~1340 \u00c5\u00b2 of solvent-accessible surface area from molecules A and B, respectively. PISA analysis predicts a significant solvation free-energy gain of \u221226 kcal/mol, indicating extraordinarily hydrophobic contacts involving residues Phe 3955, Phe 3958, Ala 3959, His 3962, Val 3965, Leu 3966, Ile 3969, Val 3984, Leu 3985, Tyr 3988, and Val 3991, with Phe 3982 of molecule B occupying a central position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe the dimer interface with quantitative measurements (buried surface area, free energy) and specific residue identification. The PISA computational analysis is appropriately applied and the hydrophobic nature is supported by both the free energy calculation and the identity of interfacing residues. The structural details are consistent with the crystallographic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The C-lobe of molecule B is conformationally locked at the dimer interface, buttressing the pointer helix of molecule A. This locked conformation is predicted to represent an auto-inhibited state because C-lobe mobility is required for HECT E3 activity, and the dimer interface buries residues (Leu 4335, Met 4359, Leu 4362) homologous to those shown to interact with ubiquitin in NEDD4-type enzymes. If HUWE1 oriented ubiquitin similarly to NEDD4-type enzymes, this complex would clash with the HUWE1 dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 present a well-reasoned interpretation of the structural data. The auto-inhibition hypothesis is supported by: (1) direct observation of C-lobe immobilization, (2) citation of prior work establishing the requirement for C-lobe mobility (C17), (3) identification of buried residues homologous to ubiquitin-binding sites in related enzymes (C19-C20), and (4) structural modeling showing steric clashes (C21). The inference is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The C-tail of molecule B is fully resolved in the crystal structure, with the conserved \u22124 Phe (Phe 4371) buried at the dimer interface where it interacts with Phe 3955, Phe 3958, and Lys 3954 of molecule A in trans, and with Leu 4335 and Leu 4362 in cis. This tight engagement is incompatible with the C-tail reaching out to the N-lobe as seen in active NEDD4-type E3 enzymes. Combined with prior studies showing that truncation or mutation of \u22124 Phe inhibits auto-ubiquitination activity, this supports the conclusion that molecule B represents an auto-inhibited state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide strong evidence for auto-inhibition through: (1) direct structural observation of the resolved C-tail (C24), (2) detailed description of \u22124 Phe interactions (C25), (3) comparison to active conformations showing incompatibility (C26), and (4) integration with prior functional studies (C23). The conclusion (C27) is well-supported by converging structural and functional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "In contrast to molecule B, the C-lobe of molecule A does not contact the dimer interface and its C-tail could not be modeled. Instead, the C-lobe forms peripheral, predominantly electrostatic lattice contacts with three neighboring molecules in the crystal, which are not relevant in solution. It is structurally conceivable that the C-lobe of molecule A is flexible in the context of the dimer and occupies catalytically relevant positions in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 accurately describe the asymmetry in the dimer structure. The inability to model the C-tail (C29) is a standard crystallographic observation indicating disorder/flexibility. The characterization of lattice contacts as not solution-relevant (C31) is supported by later solution studies (C33-C43). The speculation about C-lobe flexibility (C32) is appropriately qualified as 'conceivable' and 'in principle,' representing reasonable hypothesis generation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "HUWE1 (3951-4374) dimerizes in solution in a concentration-dependent manner. SEC-MALS experiments show that at 3 \u03bcM the MALS-derived MW is 54 kDa (close to monomeric MW of 53 kDa), while at 378 \u03bcM the MW is 93 kDa (consistent with dimer). SAXS data at ~40 \u03bcM concentration are consistent with the crystallographic dimer structure (\u03c7 = 1.4) but inconsistent with monomeric structures (\u03c7 = 19.9 and 17.7 for molecules A and B). The SAXS-derived Rg of 36 \u00c5 is consistent with the calculated value for the dimer (35 \u00c5) but significantly larger than expected for a monomer (25 \u00c5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 present converging evidence from two independent biophysical methods (SEC-MALS and SAXS) demonstrating solution dimerization. The concentration-dependent behavior is clearly documented with quantitative MW measurements. The SAXS fit scores provide strong discrimination between dimer and monomer models. The Rg values provide additional independent confirmation. The data quality and interpretation are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The dimerization of HUWE1 in solution is not induced by the expression tag. Untagged HUWE1 (3951-4374) dimerizes with a dissociation constant (KD) of ~3 \u03bcM as determined by analytical ultracentrifugation, indicating relatively weak dimerization in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 address an important control and provide quantitative characterization of dimerization affinity. The tag control (C41) is supported by SEC-MALS comparison of tagged and untagged protein. The KD determination by AUC (C42) provides an independent orthogonal measurement consistent with the SEC-MALS concentration-dependence. The interpretation of 'relatively weak' (C43) is reasonable for a 3 \u03bcM KD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "HUWE1 (3975-4374), which lacks the pointer helix, does not dimerize even at high concentrations (380 \u03bcM) in SEC-MALS experiments, with a MALS-derived MW of 51 kDa (close to calculated 50 kDa). SAXS analysis confirms the monomeric state with good fit to the monomeric structure (\u03c7 = 1.3) and an Rg of 27 \u00c5 (consistent with calculated 26 \u00c5 for monomer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 demonstrate that the pointer helix is essential for dimerization through a deletion analysis. Both SEC-MALS and SAXS data consistently support the monomeric state of the truncated construct. This provides strong evidence that the crystallographic dimer interface is functionally relevant and that the pointer helix is a critical structural element for dimerization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Point mutations at key dimer interface residues disrupt dimerization. Ile 3969 of molecule A packs tightly against Leu 3966, Phe 3982, Val 3984, and Leu 3985 of subunit B. The I3969A and F3982A single mutants have MALS-derived MWs of 63 and 64 kDa (vs. 79 kDa for WT), indicating shifted equilibria toward monomer. The I3969A/F3982A double mutant has a MW of 53 kDa (close to monomeric 50 kDa), demonstrating complete loss of significant dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide structure-guided mutagenesis validating the dimer interface. The structural rationale for selecting Ile 3969 and Phe 3982 is clear (C48). The SEC-MALS data show dose-dependent effects of mutations on dimerization (C49-C50), with the double mutant being essentially monomeric. This is strong functional validation of the crystallographic dimer interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "His 3962, a residue found mutated in human tumors (upper aerodigestive tract carcinoma: H3962D), is critical for dimerization. The H3962D variant has a MALS-derived MW of 62 kDa, confirming significantly reduced dimerization capacity compared to WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 connect the structural findings to cancer biology. The tumor mutation data (C51) provides biological relevance, though the claim incorrectly states His 3962 when the text actually identifies Ile 3969 as the tumor-mutated residue in the selected studies. However, H3962D is mentioned as a separate tumor mutation. The functional validation (C52) demonstrates that this tumor-associated mutation disrupts dimerization, supporting the biological significance of the dimer interface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "HUWE1 self-associates in cells, and the F3982A and I3969A variants show marked reduction in their ability to associate with WT HUWE1. This confirms that HUWE1 dimerizes in vitro and self-associates in cells through the same key contacts that mediate the crystallographic dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 extend the in vitro findings to cellular context using co-IP experiments. The observation that the same mutations that disrupt dimerization in vitro also disrupt self-association in cells (C54) provides strong evidence that the crystallographic dimer is biologically relevant. The experiments were performed at multiple expression levels (transient and stable), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "All dimerization-deficient mutants (I3969A, F3982A, I3969A/F3982A, and H3962D) are more active than WT in auto-ubiquitination assays in vitro. The stimulatory effect is most pronounced for the double mutant I3969A/F3982A, consistent with this variant being most destabilized for dimerization. The activity of WT HUWE1 decreases slightly with increasing protein concentrations, which can be explained by concentration-dependent changes in the dimeric state population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 demonstrate that disrupting the dimer interface enhances catalytic activity, supporting the auto-inhibition model. The correlation between degree of dimer disruption and activity enhancement (C57) is particularly compelling. The concentration-dependent activity of WT (C58) is consistent with the concentration-dependent dimerization observed by SEC-MALS. This provides strong functional validation of the auto-inhibition hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "MCL1 is ubiquitinated significantly more strongly by the truncated, dimerization-deficient constructs of HUWE1 (3975-4374 and 3993-4374) than by HUWE1 (3951-4374) that dimerizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 extends the auto-inhibition findings to substrate ubiquitination rather than just auto-ubiquitination. This is important because it demonstrates that dimerization affects the physiologically relevant activity toward substrates. The use of MCL1, a known HUWE1 substrate, is appropriate. The result is consistent with the auto-inhibition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In cells, both MCL1 and C-MYC are ubiquitinated more strongly upon expression of dimerization-deficient HUWE1 variants (I3969A and F3982A) than with WT enzyme, with the F3982A variant showing significantly more pronounced effects than I3969A. The catalytically dead variant (C4341S) shows similar low background ubiquitination as WT, indicating that HUWE1 exists in an at least partially inhibited state in HeLa cells. Disruption of the dimer interface releases inhibitory restraints on catalytic activity both in vitro and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide strong cell-based validation of the auto-inhibition model using physiological substrates. The differential effects of I3969A vs. F3982A (C61) are noted but not fully explained, which is acknowledged in the discussion. The catalytically dead control (C62) is important for establishing that WT HUWE1 is indeed inhibited in cells. The overall conclusion (C63) is well-supported by converging in vitro and cellular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "HUWE1 constructs containing the activation segment (3759-4374, 3810-4374, and 3843-4374) bind to a p14ARF-peptide (residues 45-64) with dissociation constants in the low micromolar range (7.7, 6, and 5.2 \u03bcM, respectively), while shorter constructs lacking the activation segment display significantly weaker affinities (230-340 \u03bcM). This implies that a major binding site for p14ARF on HUWE1 resides in the activation segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 use fluorescence polarization to map the p14ARF binding site to the activation segment. The ~40-60 fold difference in affinity between constructs with and without the activation segment provides strong evidence for localization of the major binding site. The conclusion (C66) is appropriately stated as an implication supported by the data, including binding to the isolated activation segment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The activities of HUWE1 constructs (3843-4374), (3896-4374), and (3951-4374) are all significantly inhibited by the p14ARF-peptide in auto-ubiquitination assays, while no clear inhibitory effect is observed for the isolated HECT domain. This shows that the p14ARF-derived peptide can inhibit HUWE1 auto-ubiquitination activity in a manner that is independent of the activation segment, despite interacting most strongly with the activation segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 reveal an unexpected complexity in p14ARF-mediated inhibition. The observation that constructs lacking the activation segment can still be inhibited (C67-C68) indicates multiple modes of inhibition. The conclusion (C69) appropriately acknowledges this complexity. However, the mechanism of activation segment-independent inhibition remains unclear, which is acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The p14ARF-derived peptide triggers a marked shift in the SEC profile of HUWE1 (3843-4374) indicative of oligomerization, while shorter constructs lacking the activation segment (3896-4374, 3951-4374, and 3993-4374) are not affected. These experiments are consistent with the notion that p14ARF may shift the conformational equilibrium of HUWE1 toward the inhibited dimeric state by capturing the activation segment. An additional/alternate mode of p14ARF-mediated inhibition is independent of the activation segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide evidence for a mechanism of p14ARF-mediated inhibition through modulation of the monomer-dimer equilibrium. The SEC data (C70-C71) support the hypothesis that p14ARF binding to the activation segment promotes oligomerization. However, the interpretation (C72) is appropriately qualified as 'consistent with' and 'may,' acknowledging that this is a model rather than definitive proof. The acknowledgment of an additional mode (C73) is important for completeness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The dimerization region and the activation segment of HUWE1 are disproportionately highly conserved across the family of HUWE1 orthologues, including lower eukaryotic ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by the sequence alignment shown in Figure 11. The high conservation of functionally important regions across diverse species provides evolutionary support for the biological significance of the dimerization and activation mechanisms. This is appropriate supporting evidence for the functional importance of these regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The activation segment may serve as an intramolecular 'wedge' that disrupts the HUWE1 dimer when the ligase ought to be active. The conformational equilibrium and activity of HUWE1 is proposed to be modulated by yet uncharacterized domain interactions in the context of full-length HUWE1 and by macromolecular factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 present a model for how the activation segment functions, but this is largely speculative. While the model is consistent with the data showing that constructs containing the activation segment are monomeric and more active, direct evidence for the 'wedge' mechanism is lacking. The proposal (C89) appropriately acknowledges that many aspects remain uncharacterized. These are reasonable hypotheses for future work but not definitively supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "A binding site for PCNA ('PIP-box') has been mapped to residues 3880-3887 of HUWE1, coinciding with the activation segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 cites a recent study (Choe et al., 2016) identifying a PCNA binding site. This is a straightforward citation of prior work that is relevant to the discussion of potential regulators of the activation segment. The claim is appropriately supported by the citation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Several point mutations identified in human tumors fall into the dimerization region and result in non-conservative amino acid changes of interfacing residues. His 3962 and Ile 3969 are critical for dimerization and auto-inhibition of HUWE1. These observations are in line with the notion that there may be selective pressure in some human tumors to enhance the activity of HUWE1 and render it resistant to inhibition by p14ARF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 connect the structural and functional findings to cancer biology. The identification of tumor mutations in the dimerization region (C91) and the demonstration that these mutations disrupt dimerization and auto-inhibition (C92) provide strong evidence for biological relevance. The interpretation (C93) is appropriately qualified as a 'notion' and acknowledges context-dependence ('in some human tumors'). This is a reasonable interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Background information on HUWE1 and HECT E3 ligases: HUWE1 is overexpressed in many tumors and has both pro-oncogenic and tumor-suppressor functions. It targets various substrates including oncoproteins (N-MYC, C-MYC, MCL1) and tumor suppressors (p53). HUWE1 associates with and is inhibited by p14ARF. HUWE1 belongs to the HECT family of ubiquitin ligases, characterized by a conserved C-terminal HECT domain consisting of N- and C-lobes connected by a flexible linker. HUWE1 is a large 482 kDa protein that is mostly uncharacterized structurally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C86 provide background information from the literature that is appropriately cited. These claims establish the biological context and prior knowledge that motivates the current study. The citations appear appropriate and the statements are consistent with established knowledge in the field. These are not novel findings but necessary context.",
+    "result_type": "MINOR"
+  }
+]

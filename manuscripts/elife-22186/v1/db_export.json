@@ -1,0 +1,1447 @@
+{
+  "submission": {
+    "id": "4b478a06-1aaa-4dab-bf0d-f9a30d308b72",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:34:59.391541Z",
+    "updated_at": "2025-11-30T22:34:59.391541Z"
+  },
+  "content": [
+    {
+      "id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "submission_id": "4b478a06-1aaa-4dab-bf0d-f9a30d308b72",
+      "content_type": "manuscript",
+      "content_text": "# Is cell size a spandrel?\n\n## Authors\n\n- Ariel Amir<sup>1</sup> ([ORCID: 0000-0003-2611-0139](https://orcid.org/0000-0003-2611-0139)) \u2020\n\n### Affiliations\n\n1. School of Engineering and Applied Sciences Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAll organisms control the size of their cells. We focus here on the question of size regulation in bacteria, and suggest that the quantitative laws governing cell size and its dependence on growth rate may arise as byproducts of a regulatory mechanism which evolved to support multiple DNA replication forks. In particular, we show that the increase of bacterial cell size during Lenski\u2019s long-term evolution experiments is a natural outcome of this proposal. This suggests that, in the context of evolution, cell size may be a 'spandrel'\n\n## Multiple replication forks and their regulation\n\nIn rich media, bacteria such as E. coli and Bacillus subtilis may have a doubling time shorter than the duration of DNA replication. This remarkable feat is achieved by having several ongoing rounds of DNA replication, each initiating from the single\u00a0oriC locus on the chromosome, most of which will only terminate in a future generation (Yoshikawa and Sueoka, 1963; Yoshikawa et al., 1964). In contrast to eukaryotes, bacteria initiate new rounds of DNA replication in a synchronous fashion: that is, the number of origins of replications double within a time frame that is short compared to the cell cycle duration (Skarstad et al., 1986). This implies that the number of origins on the circular chromosome will be of the form 2n with n an integer (see Zaritsky et al., 2011) for a schematric illustration of the chromosome in fast growth conditions, and Figure 6 of Hill et al., 2012 for examples of the origin number distributions at different growth conditions).\n\nIn a seminal result, Helmstetter and Cooper showed that over quite a broad range of doubling times (between 20 and 60 minutes), the time from the initiation of DNA replication to division is approximately T\u00a0=\u00a060 minutes\u00a0(Helmstetter et al., 1968;\u00a0Cooper and Helmstetter, 1968) (note that this is\u00a0not true for slow growth conditions (Adiciptaningrum et al., 2015; Wallden et al., 2016), which we do not discuss here). This result was obtained using the 'baby machine' (Helmstetter and Cummings, 1964; Helmstetter, 2015), a clever experimental technique which approximately synchronizes the bacterial population. It may seem like a strange coincidence for this number to be identical to that appearing in the SMK growth law. Indeed, shortly after this discovery, Donachie published an elegant model which links these two observations (Donachie, 1968).\n\nDonachie\u2019s main insight was to infer what the average cell size at the initiation of DNA replication is, based on the known value for the cell size at division (dictated by the SMK growth law). In order to make this extrapolation, additional information is necessary. First, what is the dependence of cell volume on time, at the single-cell level? Donachie assumed that cells grow exponentially over time. Later works verified that protein synthesis increases exponentially with time (Cooper, 1988), and more recently it was directly verified that the buoyant mass of cells also increases exponentially with time (Godin et al., 2010). These observations are consistent with the notion that the composition of the cytoplasm is approximately constant during the cell cycle. Taken together with the constancy of the length of time between initiation of DNA replication and cell division, these results provide sufficient information to calculate the cell size at DNA replication initiation. The fact that $T=60$ minutes appears in both the SMK growth law and in the context of DNA replication led Donachie to an intriguing conclusion: at the moment of initiation of DNA replication, the average cell size is proportional to the number of origins per cell in that growth condition. This has since been observed in other bacterial species (Sharpe et al., 1998), and has recently been directly verified in experiments where cell volume was measured at the time of DNA replication initiation (Wallden et al., 2016). Note that all of these experiments were done at relatively fast growth rates, though, and the results do not seem to hold for slow growth.\n\nAll\u00a0this may naturally lead one to envision a mechanistic model, at the single-cell level. Cells can \u2018measure\u2019 their size, and initiate DNA replication at a critical size proportional to the number of origins in the cell. A constant time $T$ later, the cell divides. Note that in fast growing conditions, there would have already been several additional divisions between the initiation event and the consequent division events a time $T$ later. Hence this might correspond to division of the daughter or grand-daughter cell, rather than the same generation when initiation occurred. This model couples DNA replication, growth and division robustly, while elucidating the SMK growth law, which would be a causal consequence of the model. Nonetheless, we will suggest that there is a logical flaw in going between the population-level experiments which inspired the model, and the single-cell level proposed mechanism, and that it is inconsistent with additional experiments.\n\n## Challenging Donachie\u2019s model\n\nRecently, several studies have revealed an inconsistency between Donachie\u2019s model and experimental data, building on single-cell level data (Amir, 2014; Osella et al., 2014; Campos et al., 2014;\u00a0Taheri-Araghi et al., 2015; Soifer et al., 2016). These experiments rely on the study of correlations. For instance, one may consider the Pearson correlation coefficient between mother and daughter cell sizes at birth (Amir, 2014);\u00a0this coefficient is defined as the average of the product of the fluctuations of two variables around their means, normalized by the product of their standard deviations. It is 1 for perfectly correlated variables, \u22121 for perfectly anti-correlated variables, and 0 for independent variables. Assuming a constant growth\u00a0rate (which is a good approximation in many cases, including E. coli in fast growth conditions), it can be shown that a critical cell size for division will eliminate any correlations between cell size at birth and division (Amir, 2014). This is illustrated schematically in Figure 1. More generally, a critical cell size for entering a new cell cycle stage which precedes division by a constant time (as in Donachie\u2019s model) will also lead to vanishing correlations between birth and division size, i.e., a cell that is born smaller than average will take longer to reach that threshold size, but there will be no systematic bias for it to divide smaller than average \u2013 the memory of the initial conditions is \u2018washed away\u2019 by thresholding.\n\nThis prediction is in sharp contrast to numerous experimental findings on E. coli (Koppes et al., 1980;\u00a0Osella et al., 2014;\u00a0Campos et al., 2014;\u00a0Taheri-Araghi et al., 2015; Soifer et al., 2016), where such correlations were measured and found to be significant and reproducible. In fact, these suggested that a cell that was born smaller than average by a volume \u0394\u2062V, will also be smaller than average by the same amount at division: in other words, when pooling all cells of a given size at birth together, their average size at division is related to that at birth by the quantitative law Vb=Vd+\u0394. This law may, once again, be interpreted at the single-cell level as implying that a cell \u2018attempts\u2019 to add a constant volume from birth to division: that is, it implies that the cue for division is the accumulation of sufficient volume from cell birth. This scenario is referred to as the incremental or adder model. Recent work proposed a similar model, in which a constant surface\u00a0area is added between birth and division (Harris and Theriot, 2016). Clearly, these models are different than Donachie\u2019s \u2013 yet they both stem from empirical findings. How can we reconcile Donachie\u2019s analysis with the observed correlations?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/22186/elife-22186-fig1-v1.jpg)\n\n**Figure 1.:** This graph shows how the size at division, $f\u2062(v_{b})$, depends\u00a0on the\u00a0size at birth (x-axis) in three different models. The parameter $\\alpha$ is related to the slope of the function, and can continuously interpolate across different models. Its value can be determined from single-cell level correlations (Amir, 2014;\u00a0see Marantan and Amir, 2016 for a recent generalization of this phase diagram). As $\\alpha$ increases from 0 to 1, the correlations between mother and daughter cell sizes become weaker, yet the size distribution becomes narrower. The prevailing model for a critical size at initiation is effectively a \u2018sizer\u2019, and is inconsistent with recent experimental data supporting an \u2018adder\u2019.\n\nThere is a simple way to resolve this apparent contradiction. The key point is to get away from the 'birth-centric' picture, where the cell is attempting to add the constant volume increment from birth to division, and replace it with a model where the volume is added between two DNA replication initiation events. Such a model recovers identical correlations between the various cell cycle events (Ho and Amir, 2015), while at the same time reproducing the exponential dependence of size on growth-rate, and hence is consistent with Donachie\u2019s observations.\n\n## Implementing size control at DNA replication initiation\n\nWhat does it mean to add a volume between two DNA replication initiation events? Sompayrac and Maaloe, 1973 provide a hypothetical model where an 'initiator' protein is accumulated as the cell volume grows, and where initiation of DNA replication occurs when sufficient copies of that initiator are accumulated, thereby providing a proof-of-principle that a cell may indeed add a constant volume increment without measuring its absolute size at any point in time. Note that this model assumes that the accumulation of the initiator does not depend on the status of the chromosome, but only on the increase in volume:\u00a0this is accomplished by a mechanism involving two genes on the same operon. The first encodes an autorepressing protein, whose concentration will thus be fixed and independent of growth rate (or gene dosage effects), while the second is the initiator, whose copy number reflects the relative increase in volume.\n\nIn fact, there are two variants of this model which we may consider: in the first, the initiator protein localizes at some point within the cell, and initiation of DNA replication occurs when its copy number reaches some threshold. This implies that the cell will add the same volume regardless of the number of replication forks (Campos et al., 2014). In a related model, the initiator is localized at the (potentially numerous) origins of replication (or some locus close to it), and hence for conditions of multiple replication forks the cell has to accumulate more volume \u2013 in proportion to the number of origins of replication.\n\nDespite their deceiving similarity, these models are very different from each other, and their differences are crucial with regards to the question of cell cycle regulation. The first model does not lead to a narrow size distribution \u2013 in fact, it does not even lead to a stable size distribution, as was first noted in 2014 (Campos et al., 2014)! The reason for this is that when the noise occasionally leads to a cell cycle where no initiations occur \u2013 or two initiations occur \u2013 there is no feedback in the mechanism to allow the cell to recover the correct number of origins.\n\nHowever, the second model (Ho and Amir, 2015), which we refer to as the 'adder per origin' model, leads to stable size distributions, and appears to explain all experimental findings discussed above. Within this model, division still occurs a constant time $T$ after initiation of DNA replication \u2013 as it does in the Helmstetter-Cooper model \u2013 but the trigger for initiation of a new round of DNA replication is accumulation of a constant volume per origin of replication. This seemingly innocuous change of the model of Campos et al., 2014 is what provides the necessary feedback to recover from a faulty cell cycle not having a single initiation event. One should be cautious regarding interpreting this model as necessarily involving the accumulation of an initiator protein. While this is a possible mechanism, it is not the only way to implement this phenomenological model; in fact, it can be shown that other biophysical models based on inhibition rather than accumulation of a protein are mathematically equivalent and can also implement the incremental model (Soifer et al., 2016), thus the phenomenological observation of the 'adder per origin' model cannot unveil the structure of the particular molecular network that operates in\u00a0vivo. Interestingly, it is the inhibition-based model that was first proposed (Pritchard et al., 1969), and provided the inspiration for the accumulation-based model.\n\n## Is size the driver or passenger?\n\nThe adder per origin model has another appealing feature \u2013 it regulates the number of multiple replication forks. If the cell has the wrong number of origins of replication for the given growth condition, the number of replication forks will automatically adjust until the appropriate number is achieved. If a cell has too many origins of replication, the accumulation of the initiator at each origin will slow down (since the volume increment is effectively divided between all origins of replication), and hence the frequency of initiation will decrease until the number of origins per cell reaches the correct value. Note that all of the control occurs at the level of DNA replication initiation, with division occurring deterministically a time $T$ later \u2013 regardless of the cell size \u2013 in line with recent experimental findings (Wallden et al., 2016).\n\nWithin this model, both the number of origins and cell size scale exponentially with the growth rate, and hence are proportional to each other. Yet size and the number of replication forks play a very different role in the bacterial cell cycle: in steady-state growth bacteria must have an exponential dependence of origin number on growth rate (Bremer and Churchward, 1977; Ho and Amir, 2015), in order to guarantee that DNA replication will not become a bottleneck for cell proliferation \u2013 which is why multiple replication forks presumably evolved in the first place. (Note that although the number of origins is an integer power of 2 in every cell, the aforementioned exponential dependence is a result of averaging over the entire population and thus is not restricted to take integer values). Changing this dependence will no doubt have significant consequences on fitness.\u00a0Yet changes in cell size do not have that effect, and we may change cell size by tens or hundreds of percent without any measurable effect on the doubling time (which can typically be determined to accuracy within a few percent). For instance, thymine-limitation slows down the replication rate: this extends the duration of DNA replication, which is known as the C period, and leads to significantly larger cells with unperturbed doubling times (Pritchard and Zaritsky, 1970; Zaritsky and Pritchard, 1973; Zaritsky et al., 2011). Similarly, in ftsZ mutants the time between termination of replication and cell division (known as the D period) is changed: this leads to changes in the cell volume but does not change the doubling time (Palacios et al., 1996;\u00a0Hill et al., 2012;\u00a0Zheng et al., 2016). This raises the possibility that this control mechanism evolved in the first place not in order to tightly control size but, rather, as a means to control the number of multiple replication forks. Within this model, the exponential dependence of cell size on growth rate is not an adaptation of any sort but, rather, is a causal consequence of this particular regulation scheme.\n\nWhat consequences does this interpretation lead to? It is known that many mutations affect cell size (Chien et al., 2012; Yao et al., 2012). Often, observing a large phenotypic response to a particular mutation is used as evidence supporting the role of a particular gene in the regulatory pathway. This logic may be problematic, however. Within the model\u2019s framework, any mutation that would affect the growth rate $\\lambda$ (say, by affecting metabolism or the ribosome efficiency) or the duration of the $C$ and $D$ periods (thus affecting $T=C+D$), would affect cell size. Moreover, the effect can be quantified, since cell size should be proportional to $e^{\\lambda\u2062T}$. Comparing this prediction with experimental data on various mutants shows quantitative agreement (Ho and Amir, 2015), as well as experiments where $T$ is systematically perturbed by controlling the expression level of proteins associated with cell division (Zheng et al., 2016).\n\nA different class of experiments where this idea can be tested are\u00a0the laboratory evolution experiments pioneered by Lenski and co-workers, in\u00a0which bacteria are grown over thousands of generations, and their fitness is observed to continuously increase over time (Lenski and Travisano, 1994;\u00a0Lenski and Mongold, 2000; Lenski, 2004; Wiser et al., 2013). In these experiments fitness should be strongly correlated with the growth rate, and inversely proportional to the doubling time (this would be precise in the case where cell growth is in exponential phase and is not affected by growth of other cells in the culture). It is observed that together with the fitness increase, cell size also increases, see Figure 2. According to our model, this is not an adaptation of the cell to the growth conditions, but a causal consequence of the increase in growth rate, which is presumably what is being selected for. Note that we expect the growth rate to be under strong selection, and not T. While the latter affects the number of DNA replication forks, it should not have much impact on the growth rate \u2013 since the essence of multiple replication forks is precisely in bypassing the constraint imposed by DNA replication on the cell\u2019s doubling time. It would be interesting to study the dynamics of the duration T in these evolution experiments, which previous results suggest might even increase over time (Mongold and Lenski, 1996), enhancing further the effect on cell size.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/22186/elife-22186-fig2-v1.jpg)\n\n**Figure 2.:** E. coli cells evolving in a culture tube show both increasing fitness over time as well as increasing size. This can be naturally explained by a simple, specific regulation strategy, consistent with additional experiments. Figure adapted from Lenski and Travisano, 1994, with permission.\n\n## Discussion\n\nAlthough it is intuitive to put bacterial cell size center stage in light of the various quantitative laws which it has been shown to follow, we suggest here a different view, that the main constraints on the cell cycle architecture, in fast growing bacteria, stem from the necessity of correctly controlling the number of multiple replication forks. We discussed a model in which control occurs over the initiation of DNA replication \u2013 rather than cell division. The model is able to reconcile observations regarding the bacterial cell size which a priori seem to be contradictory. Importantly, the very same model regulates not only size, but also the number of replication forks \u2013 allowing the cell to efficiently proliferate in differing environmental conditions.\n\nCell\u00a0size\u00a0correlations similar to those seen in bacteria have also been observed in the budding yeast Saccharomyces cerevisiae (Soifer et al., 2016). In the case of budding yeast, recent work enhances our molecular-level understanding of cell size control (Schmoller et al., 2015), and some progress was made relating this molecular mechanism to phenomenological models (Soifer et al., 2016). It is also known that budding yeast cell volume is dependent on the growth rate (Tyson et al., 1979). It would be interesting to explore whether this dependence could arise from cell cycle 'architecture' (since the term spandrel has its origins in architecture). The numerous differences between the eukaryotic and bacterial cell cycles (for instance, that initiation occurs from many origins on each chromosome, asynchronously) suggests that a different kind of spandrel\u00a0\u2013 yet to be determined \u2013 might be needed to elucidate this observation. In any case, it seems that being cautious in our interpretation of such dependencies (that\u00a0is, interpreting cell size dependence on growth rate as cellular adaption) could potentially be a lesson more broadly applicable.\n\nAll of the above discussion hinged on phenomenological observations at the single-cell level, yet hardly any mention of particular molecular mechanisms was made. Ultimately, further work should be able to bridge the gap between our improving phenomenological understanding of the coupling between cell growth, division and DNA replication, and our understanding of the molecular mechanism underlying these processes. The two approaches, molecular level and phenomenological studies, are complementary, and may supplement and benefit each other. The various quantitative laws discovered in bacteria are, in many ways, microscopes that\u00a0provide us with new insights into the cell cycle.\u00a0What we see with them should also\u00a0inform and enhance our understanding at other levels, putting major constraints on the potential molecular mechanisms.\n",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c402c8fe-62e7-495c-b2cd-f4990a36ccb5",
+      "submission_id": "4b478a06-1aaa-4dab-bf0d-f9a30d308b72",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Naama Barkai, Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.22186.005](https://doi.org/10.7554/eLife.22186.005)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Is cell size a spandrel?\" to eLife for consideration as a Feature Article. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Naama Barkai as the Reviewing and Senior Editor. One of the reviewers, Stephen Cooper (Reviewer 1), has revealed his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript puts forward the suggestion that the well-studied mechanisms that regulate cell size in bacteria did not evolve for size-regulation. Rather, size regulation is a 'by-product' of the need to regulate the number of on-going replication forks. This conclusion is based on recent advances in single-cell experiments and theoretical approaches, which have led to new understanding of the size control mechanism.\n\nMain Suggestion:\n\nAs reviewer #3 noted, the differences between classical ideas and the new model is not emphasized clearly enough. This should be fixed. In the discussion between reviewers, it was suggested to add a simple drawing that shows the difference in birth volumes predicted by the two models ('old' model and 'new' one, please see main comment Reviewer #3) during what is referred to as a noisy or faulty cell cycle. For instance, one could show that if a cell happened to initiate at some time after it had reached the critical volume/origin and then produced larger-than-average progeny, the timing and volume increase for the subsequent division would differ in the two models, with the new model being consistent with the recent findings with single cells. This type of drawing is thought to better clarify the main thrust of this manuscript.\n\nReviewer #1:\n\nAt the outset I want to apologize for the unremitting negative tone of this review. There are some positive points in the submitted article, but for the most part I feel that this paper is wrong on so many issues that I will try to be as detailed as possible in why I find these proposals most problematic.\n\nPerhaps the best way to begin is to state clearly what I believe is the currently correct view of how the bacterial cell controls its size and progression through the division cycle. I believe that initiation of DNA synthesis occurs when there is an amount of \"initiation mass\" present for each origin and at that time initiations of DNA replication take place. Throughout the cell cycle I believe that mass is made simply and exponentially with mass increasing in proportion to extant mass at each time during bacterial growth during the cell cycle. I also believe that there are no variations in the composition of the \"cytoplasm\" of the cell during the cell cycle and that mass grows simply and exponentially during the cell cycle. I do not know precisely how initiation occurs, but following initiation of DNA replication over a range of growth rates the rate of DNA replication is relatively invariant and the time after termination of a round of replication till cell division is also relatively invariant. As pointed out by Dr. Amir in his review (which in that part is quite good) the size variation of cells as a function of growth rate is simply determined by this invariance of DNA replication and time from termination to division. The data from 1958 and 1968 fit these ideas extremely well.\n\nIn contrast to this simple model I feel that many of the suggestions made by Dr. Amir are akin to the Ptolmaic system of Astronomy. Whenever there a deviation from the predictions of the Ptolmaic system arose, a new epicycle is added to the extant cycles and more and more epicycles are used to make the observations fit to the Ptolmaic system. Analogously, I find the papers cited in Dr. Amir's paper, and in the submitted paper, an attempt to take weak data based on single cell measurements which are questionable (in my viewpoint) to fit the data by adding more and more slight variations in order to accommodate some published data.\n\nI must admit that I have tried to look up a number of the papers referred to in the submitted paper, and I have tried to analyze these deeply, but time constraints have made it impossible for me to write a complete analysis of the papers used in this review to support the proposals made by Dr. Amir-Specifically the \"Adder\" system-and that is what I find problematic about this paper.\n\n\u2026\n\nReviewer #2:\n\nI think this piece is worth publishing as front matter to make a more people realize that bacteria do not really care about their size. This is important in the light of recent high profile papers with a focus on bacterial cell size. I mainly like the spandrel analogy, but otherwise the observation that cell-size is a passenger and not driver is clear already from Cooper-Helmstetter-Donachi and more recently Wallden et al.\n\nReviewer #3:\n\nThe fundamental idea presented in this manuscript adds an important element to our understanding of bacterial cell cycle regulation and cell size determination. It basically states that the timing of a chromosomal initiation-of-replication event is determined by processes that take place subsequent to the previous initiation event, possibly but not necessarily, accumulation of an \"initiator\". As a consequence, the model places cell size control in the hands of initiation, and demands new thinking as to how initiation, and as a consequence the cell cycle, are controlled. It is a very satisfying idea because it is consistent with decades of information on the relationship between replication initiation and cell size, and with recent findings that cells growing at a specific rate add, on average, a constant volume from birth to division.\n\nMy one concern is whether the very important distinction between the Amir's proposal and previous proposals has been presented forcefully enough for readers to grasp its importance, especially those who may not be intimately familiar with the literature in this field. For instance, the essence of the model, which forms the basis for this manuscript and the entire cell cycle/size control idea, isn't presented until the middle of subsection \u201cChallenging Donachie's model\u201d: \"\u2026the volume is added between two DNA replication initiation events.\" After that model statement, there are comments regarding his proposal such as \"\u2026accumulation of a constant volume per origin of replication\", \"\u2026accumulation of an initiator protein.\", and \"\u2026multiple origins accumulation model\u2026\". These latter statements, taken alone, read too much like the old ideas that were proposed almost 50 years ago and still repeated even in papers published this year, i.e., that initiation takes place whenever a fixed active unit of initiator has accumulated per chromosomal origin (which is reflected in a fixed size/origin), and then cells divide C+D min later. That old proposal, as satisfying as it has been all these years, is wrong if taken literally and not modified, as proposed by the author, to state that it matters when the accumulation takes place, in order to be consistent with current data on cell size at division. I simply suggest that Amir make some changes in the manuscript so that the novelty of his ideas and their significance stand out better. In my opinion, this should also include changing the description of his model from \"multiple origins accumulation\" to something that reflects when this accumulation takes place. Whether or not Amir's model is correct, it is the most interesting idea on the overall picture of cell cycle control to appear in some time and needs to be promoted as a new way to think about the molecular basis of the initiation process.\n",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a53390e-2b0d-49ce-bf2d-2d51f328fc60",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C1",
+      "claim": "In rich media, bacteria such as E. coli and Bacillus subtilis may have a doubling time shorter than the duration of DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In rich media, bacteria such as E. coli and Bacillus subtilis may have a doubling time shorter than the duration of DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to foundational work on bacterial DNA replication.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "e5571e7a-cd1d-4587-a97a-23b028cd140f",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C2",
+      "claim": "Bacteria achieve doubling times shorter than DNA replication duration by having several ongoing rounds of DNA replication, each initiating from the single oriC locus on the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This remarkable feat is achieved by having several ongoing rounds of DNA replication, each initiating from the single oriC locus on the chromosome, most of which will only terminate in a future generation (Yoshikawa and Sueoka, 1963; Yoshikawa et al., 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Yoshikawa and Sueoka, 1963 and Yoshikawa et al., 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "df588ec9-09d4-45d6-b87d-661e064d1e62",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C3",
+      "claim": "Bacteria initiate new rounds of DNA replication in a synchronous fashion, with the number of origins of replications doubling within a time frame that is short compared to the cell cycle duration.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to eukaryotes, bacteria initiate new rounds of DNA replication in a synchronous fashion: that is, the number of origins of replications double within a time frame that is short compared to the cell cycle duration (Skarstad et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Skarstad et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c422dabc-85d9-4336-bb39-c1f47349a918",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C4",
+      "claim": "The number of origins on the bacterial circular chromosome will be of the form 2^n with n an integer.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the number of origins on the circular chromosome will be of the form 2n with n an integer (see Zaritsky et al., 2011) for a schematric illustration of the chromosome in fast growth conditions, and Figure 6 of Hill et al., 2012 for examples of the origin number distributions at different growth conditions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from synchronous initiation, supported by citations to Zaritsky et al., 2011 and Hill et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "ca6c4fc4-7595-443b-9571-1bb6b6c8e92f",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C5",
+      "claim": "Over a broad range of doubling times (between 20 and 60 minutes), the time from the initiation of DNA replication to division is approximately T = 60 minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "In a seminal result, Helmstetter and Cooper showed that over quite a broad range of doubling times (between 20 and 60 minutes), the time from the initiation of DNA replication to division is approximately T = 60 minutes (Helmstetter et al., 1968; Cooper and Helmstetter, 1968)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Helmstetter et al., 1968 and Cooper and Helmstetter, 1968.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4edba746-1e2d-45f7-8625-e9eabd94a455",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C6",
+      "claim": "The T = 60 minutes result is not true for slow growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "(note that this is not true for slow growth conditions (Adiciptaningrum et al., 2015; Wallden et al., 2016), which we do not discuss here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Adiciptaningrum et al., 2015 and Wallden et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c7b4d262-be28-4579-8c48-8971015d9bf0",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C7",
+      "claim": "The Helmstetter-Cooper result was obtained using the 'baby machine', an experimental technique which approximately synchronizes the bacterial population.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was obtained using the 'baby machine' (Helmstetter and Cummings, 1964; Helmstetter, 2015), a clever experimental technique which approximately synchronizes the bacterial population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Helmstetter and Cummings, 1964 and Helmstetter, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "41290c29-3047-45b2-96cb-5e4b030c8b81",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C8",
+      "claim": "Donachie published a model linking the T = 60 minutes observation with the SMK growth law.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, shortly after this discovery, Donachie published an elegant model which links these two observations (Donachie, 1968).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Donachie, 1968.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "2ef5748c-cfbf-4943-9b50-6c94a59a7ef0",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C9",
+      "claim": "Donachie assumed that cells grow exponentially over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Donachie assumed that cells grow exponentially over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption in Donachie's model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4a27e605-77f5-4907-a3ed-b746e1bb146b",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C10",
+      "claim": "Protein synthesis increases exponentially with time.",
+      "claim_type": "EXPLICIT",
+      "source": "Later works verified that protein synthesis increases exponentially with time (Cooper, 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cooper, 1988.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "72828be1-b45b-4260-b3a3-f31291b87ea1",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C11",
+      "claim": "The buoyant mass of cells increases exponentially with time.",
+      "claim_type": "EXPLICIT",
+      "source": "and more recently it was directly verified that the buoyant mass of cells also increases exponentially with time (Godin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Godin et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "fec3834b-3732-4368-a7c3-6a8bdf2d5636",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C12",
+      "claim": "The composition of the cytoplasm is approximately constant during the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the notion that the composition of the cytoplasm is approximately constant during the cell cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the exponential growth observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "6554bb7b-43ec-489f-8fb0-b7d923c3f69d",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C14",
+      "claim": "The proportionality between cell size at DNA replication initiation and number of origins has been observed in other bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "This has since been observed in other bacterial species (Sharpe et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharpe et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "ae9d42c9-bdd7-4113-863c-dfb94b3cc707",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C15",
+      "claim": "The proportionality between cell size at DNA replication initiation and number of origins has been directly verified in experiments where cell volume was measured at the time of DNA replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "and has recently been directly verified in experiments where cell volume was measured at the time of DNA replication initiation (Wallden et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wallden et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "6a0eb9fc-eeea-42d4-8859-3084e51babe7",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C16",
+      "claim": "The experimental results on cell size at DNA replication initiation were done at relatively fast growth rates and do not seem to hold for slow growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that all of these experiments were done at relatively fast growth rates, though, and the results do not seem to hold for slow growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat noted about the experimental conditions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "6d5b88e0-167c-4535-b9da-03db43db101e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C17",
+      "claim": "A critical cell size for division will eliminate any correlations between cell size at birth and division, assuming a constant growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming a constant growth rate (which is a good approximation in many cases, including E. coli in fast growth conditions), it can be shown that a critical cell size for division will eliminate any correlations between cell size at birth and division (Amir, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Amir, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "6ba9a3fb-bf33-4f3a-887e-62c6bde5268e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C18",
+      "claim": "A critical cell size for entering a new cell cycle stage which precedes division by a constant time will lead to vanishing correlations between birth and division size.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, a critical cell size for entering a new cell cycle stage which precedes division by a constant time (as in Donachie's model) will also lead to vanishing correlations between birth and division size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization of the previous claim, based on theoretical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "d0d5922f-29ce-428f-b4f3-dbb8d39ed4bd",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C19",
+      "claim": "In E. coli, significant and reproducible correlations between cell size at birth and division have been measured.",
+      "claim_type": "EXPLICIT",
+      "source": "This prediction is in sharp contrast to numerous experimental findings on E. coli (Koppes et al., 1980; Osella et al., 2014; Campos et al., 2014; Taheri-Araghi et al., 2015; Soifer et al., 2016), where such correlations were measured and found to be significant and reproducible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "e4bda224-c621-4a66-aba8-25c58b9cfd85",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C20",
+      "claim": "A cell that was born smaller than average by a volume \u0394V will also be smaller than average by the same amount at division.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, these suggested that a cell that was born smaller than average by a volume \u0394\u2062V, will also be smaller than average by the same amount at division: in other words, when pooling all cells of a given size at birth together, their average size at division is related to that at birth by the quantitative law Vb=Vd+\u0394.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental findings from the cited studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "0c41691e-17ec-4728-a704-d339bc3417a6",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C21",
+      "claim": "The adder model implies that a cell 'attempts' to add a constant volume from birth to division.",
+      "claim_type": "EXPLICIT",
+      "source": "This law may, once again, be interpreted at the single-cell level as implying that a cell 'attempts' to add a constant volume from birth to division: that is, it implies that the cue for division is the accumulation of sufficient volume from cell birth. This scenario is referred to as the incremental or adder model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "13fea3d8-a7d6-4988-b5b9-408f054630b2",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C22",
+      "claim": "A model has been proposed in which a constant surface area is added between birth and division.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work proposed a similar model, in which a constant surface area is added between birth and division (Harris and Theriot, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Harris and Theriot, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "9c480c8f-24f9-4586-9343-0a5b26bbdede",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C23",
+      "claim": "A model where volume is added between two DNA replication initiation events recovers identical correlations between the various cell cycle events while reproducing the exponential dependence of size on growth-rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model recovers identical correlations between the various cell cycle events (Ho and Amir, 2015), while at the same time reproducing the exponential dependence of size on growth-rate, and hence is consistent with Donachie's observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ho and Amir, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "51e65aa7-7591-4ad5-9060-d72ad5571a2b",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C24",
+      "claim": "Sompayrac and Maaloe, 1973 provide a hypothetical model where an 'initiator' protein is accumulated as the cell volume grows, and initiation of DNA replication occurs when sufficient copies of that initiator are accumulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Sompayrac and Maaloe, 1973 provide a hypothetical model where an 'initiator' protein is accumulated as the cell volume grows, and where initiation of DNA replication occurs when sufficient copies of that initiator are accumulated, thereby providing a proof-of-principle that a cell may indeed add a constant volume increment without measuring its absolute size at any point in time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sompayrac and Maaloe, 1973.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "2ab9aef5-e538-42d4-92cd-af47a042b053",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C25",
+      "claim": "The Sompayrac and Maaloe model assumes that the accumulation of the initiator does not depend on the status of the chromosome, but only on the increase in volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that this model assumes that the accumulation of the initiator does not depend on the status of the chromosome, but only on the increase in volume: this is accomplished by a mechanism involving two genes on the same operon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assumption of the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "772d182d-0dd8-495c-a8e0-e6439d84ec57",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C26",
+      "claim": "In the Sompayrac and Maaloe model, the first gene encodes an autorepressing protein whose concentration will be fixed and independent of growth rate or gene dosage effects, while the second is the initiator whose copy number reflects the relative increase in volume.",
+      "claim_type": "EXPLICIT",
+      "source": "The first encodes an autorepressing protein, whose concentration will thus be fixed and independent of growth rate (or gene dosage effects), while the second is the initiator, whose copy number reflects the relative increase in volume.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanism of the model.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "0d4644f3-d786-4c82-8232-a60afa8ca547",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C27",
+      "claim": "A model where the initiator protein localizes at some point within the cell and initiation occurs when its copy number reaches a threshold implies that the cell will add the same volume regardless of the number of replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "in the first, the initiator protein localizes at some point within the cell, and initiation of DNA replication occurs when its copy number reaches some threshold. This implies that the cell will add the same volume regardless of the number of replication forks (Campos et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Campos et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "95c3ca34-7f96-4914-a869-0ebbe9957d3f",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C28",
+      "claim": "In a model where the initiator is localized at the origins of replication, for conditions of multiple replication forks the cell has to accumulate more volume in proportion to the number of origins of replication.",
+      "claim_type": "EXPLICIT",
+      "source": "In a related model, the initiator is localized at the (potentially numerous) origins of replication (or some locus close to it), and hence for conditions of multiple replication forks the cell has to accumulate more volume \u2013 in proportion to the number of origins of replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "a1892a7f-9b84-42df-921e-8281d5346cfe",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C29",
+      "claim": "The model where the cell adds the same volume regardless of the number of replication forks does not lead to a narrow size distribution and does not lead to a stable size distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The first model does not lead to a narrow size distribution \u2013 in fact, it does not even lead to a stable size distribution, as was first noted in 2014 (Campos et al., 2014)!",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Campos et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c1e7ab20-b922-42ec-a064-b64e6c54e847",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C30",
+      "claim": "When noise occasionally leads to a cell cycle where no initiations occur or two initiations occur, there is no feedback in the mechanism to allow the cell to recover the correct number of origins in the model where volume added is independent of origin number.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason for this is that when the noise occasionally leads to a cell cycle where no initiations occur \u2013 or two initiations occur \u2013 there is no feedback in the mechanism to allow the cell to recover the correct number of origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for why the model fails, based on logical reasoning.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "751024b8-8098-4191-8176-0997e7ba382c",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C31",
+      "claim": "The 'adder per origin' model leads to stable size distributions and appears to explain all experimental findings discussed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the second model (Ho and Amir, 2015), which we refer to as the 'adder per origin' model, leads to stable size distributions, and appears to explain all experimental findings discussed above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Ho and Amir, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "32ab19dc-30f2-459d-bcb1-824016002a4e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C33",
+      "claim": "The adder per origin model provides the necessary feedback to recover from a faulty cell cycle not having a single initiation event.",
+      "claim_type": "EXPLICIT",
+      "source": "This seemingly innocuous change of the model of Campos et al., 2014 is what provides the necessary feedback to recover from a faulty cell cycle not having a single initiation event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of why the adder per origin model is superior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "e3398c1e-a077-4761-9007-f68d3a445bdc",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C34",
+      "claim": "Biophysical models based on inhibition rather than accumulation of a protein are mathematically equivalent to the accumulation model and can also implement the incremental model.",
+      "claim_type": "EXPLICIT",
+      "source": "While this is a possible mechanism, it is not the only way to implement this phenomenological model; in fact, it can be shown that other biophysical models based on inhibition rather than accumulation of a protein are mathematically equivalent and can also implement the incremental model (Soifer et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Soifer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4f76bef5-e975-48f9-8f99-beb03f99ff76",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C35",
+      "claim": "The phenomenological observation of the 'adder per origin' model cannot unveil the structure of the particular molecular network that operates in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "thus the phenomenological observation of the 'adder per origin' model cannot unveil the structure of the particular molecular network that operates in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical conclusion about the limitations of phenomenological models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "fd87e92a-2d14-4202-b8cb-3b17b3c7b253",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C36",
+      "claim": "The inhibition-based model was first proposed by Pritchard et al., 1969 and provided the inspiration for the accumulation-based model.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it is the inhibition-based model that was first proposed (Pritchard et al., 1969), and provided the inspiration for the accumulation-based model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pritchard et al., 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "35f1879c-88d1-47e4-9b4f-b047d7c05b1c",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C37",
+      "claim": "The adder per origin model regulates the number of multiple replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "The adder per origin model has another appealing feature \u2013 it regulates the number of multiple replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the model based on its structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "cf26a1bc-007a-4a83-b9d4-85786a6aa401",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C38",
+      "claim": "If the cell has the wrong number of origins of replication for the given growth condition, the number of replication forks will automatically adjust until the appropriate number is achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "If the cell has the wrong number of origins of replication for the given growth condition, the number of replication forks will automatically adjust until the appropriate number is achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a consequence of the adder per origin model's regulatory mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c21ae8ae-0f55-45ad-aeb3-3bd230734bdb",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C39",
+      "claim": "If a cell has too many origins of replication, the accumulation of the initiator at each origin will slow down, and the frequency of initiation will decrease until the number of origins per cell reaches the correct value.",
+      "claim_type": "EXPLICIT",
+      "source": "If a cell has too many origins of replication, the accumulation of the initiator at each origin will slow down (since the volume increment is effectively divided between all origins of replication), and hence the frequency of initiation will decrease until the number of origins per cell reaches the correct value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation of how the model self-corrects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "6e3231d5-3b8e-4e1a-9498-87b4e79c4682",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C41",
+      "claim": "Within the adder per origin model, both the number of origins and cell size scale exponentially with the growth rate and are proportional to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this model, both the number of origins and cell size scale exponentially with the growth rate, and hence are proportional to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical consequence of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "1d806d56-87da-4986-8453-b66fa779c11e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C42",
+      "claim": "In steady-state growth bacteria must have an exponential dependence of origin number on growth rate in order to guarantee that DNA replication will not become a bottleneck for cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "in steady-state growth bacteria must have an exponential dependence of origin number on growth rate (Bremer and Churchward, 1977; Ho and Amir, 2015), in order to guarantee that DNA replication will not become a bottleneck for cell proliferation \u2013 which is why multiple replication forks presumably evolved in the first place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bremer and Churchward, 1977 and Ho and Amir, 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "b20bf555-661d-46f4-8363-c1ed9a279fd2",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C43",
+      "claim": "The number of origins is an integer power of 2 in every cell, but the exponential dependence is a result of averaging over the entire population and is not restricted to take integer values.",
+      "claim_type": "EXPLICIT",
+      "source": "(Note that although the number of origins is an integer power of 2 in every cell, the aforementioned exponential dependence is a result of averaging over the entire population and thus is not restricted to take integer values).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies how population-level and single-cell observations relate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "8080d009-382c-4ce7-8b3f-59388ba9631e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C44",
+      "claim": "Changing the exponential dependence of origin number on growth rate will have significant consequences on fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing this dependence will no doubt have significant consequences on fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the evolutionary importance of the relationship.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "9f48bfe3-ecb5-4fcf-9ca8-f465e3c62209",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C45",
+      "claim": "Changes in cell size by tens or hundreds of percent do not have any measurable effect on the doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet changes in cell size do not have that effect, and we may change cell size by tens or hundreds of percent without any measurable effect on the doubling time (which can typically be determined to accuracy within a few percent).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observations described in the following sentences.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "bc7e6c66-1f5f-452a-8309-c7e014748e2e",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C46",
+      "claim": "Thymine-limitation slows down the replication rate, extends the C period, and leads to significantly larger cells with unperturbed doubling times.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, thymine-limitation slows down the replication rate: this extends the duration of DNA replication, which is known as the C period, and leads to significantly larger cells with unperturbed doubling times (Pritchard and Zaritsky, 1970; Zaritsky and Pritchard, 1973; Zaritsky et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "f35abd01-f8f0-42d3-8c64-e44365f8c6c3",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C47",
+      "claim": "In ftsZ mutants the D period is changed, leading to changes in the cell volume but not changing the doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in ftsZ mutants the time between termination of replication and cell division (known as the D period) is changed: this leads to changes in the cell volume but does not change the doubling time (Palacios et al., 1996; Hill et al., 2012; Zheng et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4d7e762c-84d7-4e13-a7e3-f5ad11980dc7",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C48",
+      "claim": "The control mechanism for multiple replication forks may have evolved not to tightly control size but as a means to control the number of multiple replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the possibility that this control mechanism evolved in the first place not in order to tightly control size but, rather, as a means to control the number of multiple replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the evolutionary significance.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "1588f94a-dec4-45b7-a8fd-cb43654b9dc4",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C49",
+      "claim": "Within the adder per origin model, the exponential dependence of cell size on growth rate is not an adaptation but a causal consequence of the regulation scheme.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this model, the exponential dependence of cell size on growth rate is not an adaptation of any sort but, rather, is a causal consequence of this particular regulation scheme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical claim of the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4a5534b4-ad4b-47f9-9ea8-08437f227c3c",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C50",
+      "claim": "Many mutations affect cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that many mutations affect cell size (Chien et al., 2012; Yao et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chien et al., 2012 and Yao et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "05738233-5afc-4e88-a66b-66b983cce234",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C54",
+      "claim": "In Lenski's laboratory evolution experiments, bacteria are grown over thousands of generations and their fitness is observed to continuously increase over time.",
+      "claim_type": "EXPLICIT",
+      "source": "A different class of experiments where this idea can be tested are the laboratory evolution experiments pioneered by Lenski and co-workers, in which bacteria are grown over thousands of generations, and their fitness is observed to continuously increase over time (Lenski and Travisano, 1994; Lenski and Mongold, 2000; Lenski, 2004; Wiser et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to multiple Lenski papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "7de99007-05de-4ab4-846c-ffcefd05161b",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C55",
+      "claim": "In Lenski's evolution experiments, fitness should be strongly correlated with the growth rate and inversely proportional to the doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "In these experiments fitness should be strongly correlated with the growth rate, and inversely proportional to the doubling time (this would be precise in the case where cell growth is in exponential phase and is not affected by growth of other cells in the culture).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical expectation based on the experimental conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "900df996-c341-43ee-b6ad-0b98bb51e977",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C56",
+      "claim": "In Lenski's evolution experiments, together with the fitness increase, cell size also increases.",
+      "claim_type": "EXPLICIT",
+      "source": "It is observed that together with the fitness increase, cell size also increases, see Figure 2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 2, which shows data from Lenski and Travisano, 1994.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "03977a6c-29a5-4046-b812-638abfe07174",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C57",
+      "claim": "According to the adder per origin model, the increase in cell size during Lenski's evolution experiments is not an adaptation to the growth conditions but a causal consequence of the increase in growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our model, this is not an adaptation of the cell to the growth conditions, but a causal consequence of the increase in growth rate, which is presumably what is being selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the author's interpretation of the evolution experiment results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4fdd7f50-b6f0-4452-94cf-e8047d6db137",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C58",
+      "claim": "The growth rate is expected to be under strong selection, but not T.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that we expect the growth rate to be under strong selection, and not T.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about evolutionary selection pressures.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "701ef27d-007d-445c-a855-352cd74c3a1b",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C59",
+      "claim": "T affects the number of DNA replication forks but should not have much impact on the growth rate, since the essence of multiple replication forks is in bypassing the constraint imposed by DNA replication on the cell's doubling time.",
+      "claim_type": "EXPLICIT",
+      "source": "While the latter affects the number of DNA replication forks, it should not have much impact on the growth rate \u2013 since the essence of multiple replication forks is precisely in bypassing the constraint imposed by DNA replication on the cell's doubling time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument about the function of multiple replication forks.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "cec09c1b-8172-4f58-abd4-1b3cd72f7c74",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C60",
+      "claim": "Previous results suggest that T might even increase over time in Lenski's evolution experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be interesting to study the dynamics of the duration T in these evolution experiments, which previous results suggest might even increase over time (Mongold and Lenski, 1996), enhancing further the effect on cell size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mongold and Lenski, 1996.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "a114fcc4-3d22-417b-8e12-1fbb23986ef7",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C61",
+      "claim": "The main constraints on the cell cycle architecture in fast growing bacteria stem from the necessity of correctly controlling the number of multiple replication forks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is intuitive to put bacterial cell size center stage in light of the various quantitative laws which it has been shown to follow, we suggest here a different view, that the main constraints on the cell cycle architecture, in fast growing bacteria, stem from the necessity of correctly controlling the number of multiple replication forks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central thesis of the manuscript.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "ae663c41-111b-46a7-964a-f8941eddc678",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C62",
+      "claim": "The adder per origin model is able to reconcile observations regarding the bacterial cell size which a priori seem to be contradictory.",
+      "claim_type": "EXPLICIT",
+      "source": "The model is able to reconcile observations regarding the bacterial cell size which a priori seem to be contradictory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the explanatory power of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "b7a695f5-4145-417c-baaa-47ba3816700f",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C63",
+      "claim": "The adder per origin model regulates not only size but also the number of replication forks, allowing the cell to efficiently proliferate in differing environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the very same model regulates not only size, but also the number of replication forks \u2013 allowing the cell to efficiently proliferate in differing environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the dual function of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "a4349941-5680-4fdb-b2b1-0c3f93fa2dab",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C64",
+      "claim": "Cell size correlations similar to those seen in bacteria have also been observed in the budding yeast Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell size correlations similar to those seen in bacteria have also been observed in the budding yeast Saccharomyces cerevisiae (Soifer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Soifer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "fbb4ad43-1b8f-4eaf-b36e-c4d72109d928",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C65",
+      "claim": "Recent work enhances our molecular-level understanding of cell size control in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of budding yeast, recent work enhances our molecular-level understanding of cell size control (Schmoller et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schmoller et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "774581e7-fa10-45e0-a33a-02b1a35d5517",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C66",
+      "claim": "Some progress was made relating the molecular mechanism of cell size control in budding yeast to phenomenological models.",
+      "claim_type": "EXPLICIT",
+      "source": "and some progress was made relating this molecular mechanism to phenomenological models (Soifer et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Soifer et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "d3711143-0637-4631-ac1e-c9ffe2014e72",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C67",
+      "claim": "Budding yeast cell volume is dependent on the growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also known that budding yeast cell volume is dependent on the growth rate (Tyson et al., 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tyson et al., 1979.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "653253ed-8bb4-440b-a6bf-f64a0139c721",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C68",
+      "claim": "The numerous differences between the eukaryotic and bacterial cell cycles suggest that a different kind of spandrel might be needed to elucidate the dependence of yeast cell volume on growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The numerous differences between the eukaryotic and bacterial cell cycles (for instance, that initiation occurs from many origins on each chromosome, asynchronously) suggests that a different kind of spandrel \u2013 yet to be determined \u2013 might be needed to elucidate this observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about extending the spandrel concept to yeast.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c94b36c3-9567-494a-861b-29bf5e28d127",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C69",
+      "claim": "A critical cell size for division eliminates correlations between cell size at birth and division because a cell born smaller than average will take longer to reach the threshold size but will not systematically divide smaller than average.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, a critical cell size for entering a new cell cycle stage which precedes division by a constant time (as in Donachie's model) will also lead to vanishing correlations between birth and division size, i.e., a cell that is born smaller than average will take longer to reach that threshold size, but there will be no systematic bias for it to divide smaller than average \u2013 the memory of the initial conditions is 'washed away' by thresholding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation of why the sizer model eliminates correlations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "4e154faf-5cfb-4160-8ca6-cf963775191d",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C70",
+      "claim": "The Pearson correlation coefficient between mother and daughter cell sizes at birth can be used to test models of cell size control.",
+      "claim_type": "IMPLICIT",
+      "source": "For instance, one may consider the Pearson correlation coefficient between mother and daughter cell sizes at birth (Amir, 2014); this coefficient is defined as the average of the product of the fluctuations of two variables around their means, normalized by the product of their standard deviations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is implied by the discussion of using correlations to distinguish between models.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "a07310c4-b996-4286-9612-58a3bb2393c4",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C73",
+      "claim": "The value of \u03b1 can be determined from single-cell level correlations.",
+      "claim_type": "EXPLICIT",
+      "source": "Its value can be determined from single-cell level correlations (Amir, 2014; see Marantan and Amir, 2016 for a recent generalization of this phase diagram).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations in the figure caption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "683d0c1b-8e6c-4981-af61-9b7d467ee89d",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C75",
+      "claim": "The prevailing model for a critical size at initiation is effectively a 'sizer' and is inconsistent with recent experimental data supporting an 'adder'.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevailing model for a critical size at initiation is effectively a 'sizer', and is inconsistent with recent experimental data supporting an 'adder'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "56c6ea00-4286-4bd7-869b-540328a56fdc",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C76",
+      "claim": "E. coli cells evolving in a culture tube show both increasing fitness over time as well as increasing size.",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli cells evolving in a culture tube show both increasing fitness over time as well as increasing size.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Figure 2 caption and shown in the figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "598f34e7-0c9d-480e-b345-fdd6d04ae733",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C77",
+      "claim": "The increase in both fitness and size in evolving E. coli can be naturally explained by a simple, specific regulation strategy consistent with additional experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be naturally explained by a simple, specific regulation strategy, consistent with additional experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is the author's interpretation stated in the Figure 2 caption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "a1382dc3-0ce0-43e5-94e8-9b64a57b2b42",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "claim_id": "C78",
+      "claim": "Figure 2 is adapted from Lenski and Travisano, 1994.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure adapted from Lenski and Travisano, 1994, with permission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the figure caption.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d22c1a10-ec52-46c3-88d5-74b9dc367766",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Bacteria can achieve doubling times shorter than DNA replication duration through multiple overlapping replication rounds initiated synchronously from oriC, resulting in 2^n origins per cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 describe well-established bacterial replication biology supported by multiple foundational citations (Yoshikawa and Sueoka 1963, Skarstad et al. 1986, etc.). The synchronous initiation and resulting 2^n origin number are logical consequences of the mechanism and supported by cited experimental evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "2a696e57-ae25-438f-ab58-3f3c530ae140",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Helmstetter-Cooper experiments established that T=60 minutes from DNA replication initiation to division for doubling times of 20-60 minutes, which Donachie linked to the SMK growth law.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 accurately describe foundational experimental results (Helmstetter et al. 1968, Cooper and Helmstetter 1968) and Donachie's theoretical model (1968). The caveat about slow growth (C6) is appropriately noted with supporting citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "492ea7ba-278d-4fef-aff6-d09fa2dc0984",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Bacterial cells exhibit exponential growth at the single-cell level, with exponential increases in protein synthesis and buoyant mass, consistent with constant cytoplasmic composition during the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12 describe Donachie's assumption (C9) and its subsequent experimental validation through protein synthesis measurements (Cooper 1988, C10) and direct buoyant mass measurements (Godin et al. 2010, C11). The inference about constant cytoplasmic composition (C12) follows logically from the exponential growth observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "57456a28-e793-433b-ba6d-17b4a2ef587c",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The proportionality between cell size at DNA replication initiation and origin number has been observed across bacterial species and directly verified, though results are limited to fast growth conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are well-supported by multiple citations including cross-species observations (Sharpe et al. 1998) and direct experimental verification (Wallden et al. 2016). The important caveat about growth rate limitations (C16) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c4a8cc38-3cb3-4097-86fd-1d9952ed8b86",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A critical cell size threshold for division or cell cycle progression eliminates correlations between birth and division size because size thresholding washes away memory of initial conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C69 present a theoretical prediction supported by citation to Amir 2014. The mechanistic explanation (C69) logically follows from the threshold model structure. This is a mathematical/theoretical result that is internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "fff2a11a-4602-4652-a403-fc8f7429632c",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experimental measurements in E. coli reveal significant correlations between birth and division size, with cells adding a constant volume \u0394 from birth to division (adder model), contradicting the sizer model predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 describe experimental findings from multiple independent studies (Koppes et al. 1980, Osella et al. 2014, Campos et al. 2014, Taheri-Araghi et al. 2015, Soifer et al. 2016) showing reproducible correlations. The quantitative adder relationship (C20) is supported by data citations. C70 describes the analytical method used.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "c8515a02-21ff-422e-80c0-a8016b6964c0",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Alternative models propose constant surface area addition (Harris and Theriot 2016) or volume addition between DNA replication initiation events (Ho and Amir 2015), with the latter reconciling observed correlations with Donachie's observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 accurately cite alternative models from the literature. The claim that the Ho and Amir 2015 model reconciles correlations with exponential size-growth rate dependence is supported by the citation, though independent verification of this reconciliation is not provided in the current manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "1d8d5f56-71b9-47d1-89e7-c4171ed95fb5",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The Sompayrac and Maaloe 1973 model provides a mechanistic proof-of-principle for volume addition through initiator protein accumulation, using a two-gene operon with an autorepressing protein and an initiator.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 accurately describe a cited theoretical model (Sompayrac and Maaloe 1973). The description of the two-gene operon mechanism is consistent with the citation. This is a description of prior theoretical work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "ac314bd9-23a5-451c-bc0c-0a0259074041",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two variants of the initiator model differ critically: localization at a single point leads to unstable size distributions without feedback to correct origin number errors, while localization at origins scales volume addition with origin number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 present a logical comparison of two model variants. The instability of the single-point localization model (C29) is supported by citation to Campos et al. 2014. The mechanistic explanation for instability (C30) follows logically from the model structure. The distinction between models is theoretically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 'adder per origin' model (Ho and Amir 2015) produces stable size distributions and explains experimental findings through feedback mechanisms, though multiple molecular implementations (accumulation vs. inhibition) are mathematically equivalent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 describe the adder per origin model and its properties. The stability and explanatory power (C31) are supported by Ho and Amir 2015. The mathematical equivalence of accumulation and inhibition models (C34) is supported by Soifer et al. 2016. The limitation that phenomenology cannot reveal molecular details (C35) is a valid logical point. Historical context (C36) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "853015a6-67b9-4071-8d88-f4d17fd77d28",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The adder per origin model self-regulates replication fork number through feedback, with both origin number and cell size scaling exponentially with growth rate to prevent DNA replication from limiting proliferation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C43 describe regulatory properties of the adder per origin model. The self-regulation mechanism (C38-C39) follows logically from the model structure. The exponential scaling (C41-C42) is supported by citations to Bremer and Churchward 1977 and Ho and Amir 2015. The clarification about population averaging (C43) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "17aa0c5d-8e75-47a1-a850-6001256abc18",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Cell size changes of tens to hundreds of percent do not affect doubling time (thymine limitation, ftsZ mutants), suggesting size control evolved to regulate replication forks rather than size per se, with exponential size-growth rate dependence being a causal byproduct.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 cite experimental evidence (Pritchard and Zaritsky 1970, Palacios et al. 1996, Hill et al. 2012, Zheng et al. 2016) showing size changes without doubling time effects. The evolutionary interpretation (C48-C49) is speculative but logically follows from the evidence. This is a key theoretical claim of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In Lenski's long-term evolution experiments, both fitness and cell size increase over time, which the adder per origin model explains as a causal consequence of increased growth rate rather than adaptive size control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 accurately describe Lenski's experiments with appropriate citations and Figure 2 data. However, the interpretation (C57) that size increase is a non-adaptive byproduct is speculative and not directly tested. The model predicts this relationship, but alternative explanations (e.g., size itself being adaptive) are not ruled out. Claims C58-C60 about selection pressures are speculative. The explanation is plausible but requires additional experimental validation to distinguish correlation from causation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "34fccf35-6f39-4eb0-8a99-a60f5546f5d0",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The central thesis is that cell cycle architecture in fast-growing bacteria is primarily constrained by replication fork control rather than size control, with the adder per origin model reconciling apparently contradictory observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C63 present the manuscript's central theoretical argument. While the model (C62-C63) does reconcile various observations as claimed, the broader thesis (C61) that fork control is the primary evolutionary driver remains speculative. The model's consistency with data supports but does not prove this evolutionary interpretation. Additional experiments distinguishing adaptive vs. byproduct hypotheses would be needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "fca925b3-bc64-4fa4-ab2f-81364babba82",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Similar size correlations and growth rate dependence occur in budding yeast, though differences in cell cycle architecture suggest a different mechanistic explanation may be needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 accurately cite observations in yeast (Soifer et al. 2016, Schmoller et al. 2015, Tyson et al. 1979). The speculation (C68) that a different mechanism applies to yeast is appropriately cautious given the noted differences in cell cycle organization. This extends the conceptual framework while acknowledging limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    },
+    {
+      "id": "2b9fd4f2-e085-4f58-8dba-8209b8273365",
+      "content_id": "1d5e5766-22e6-454e-9ebf-c60d509bb445",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The parameter \u03b1 can be determined from single-cell correlations to distinguish between sizer, adder, and timer models, with the prevailing critical size model being inconsistent with adder data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73 and C75 describe analytical methods (Amir 2014, Marantan and Amir 2016) and their application to distinguish models. Figure 1 illustrates this framework. The inconsistency between sizer predictions and adder data (C75) is supported by the experimental citations discussed earlier (C19-C20).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:34:59.391541Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4a53390e-2b0d-49ce-bf2d-2d51f328fc60",
+      "result_id": "d22c1a10-ec52-46c3-88d5-74b9dc367766"
+    },
+    {
+      "claim_id": "e5571e7a-cd1d-4587-a97a-23b028cd140f",
+      "result_id": "d22c1a10-ec52-46c3-88d5-74b9dc367766"
+    },
+    {
+      "claim_id": "df588ec9-09d4-45d6-b87d-661e064d1e62",
+      "result_id": "d22c1a10-ec52-46c3-88d5-74b9dc367766"
+    },
+    {
+      "claim_id": "c422dabc-85d9-4336-bb39-c1f47349a918",
+      "result_id": "d22c1a10-ec52-46c3-88d5-74b9dc367766"
+    },
+    {
+      "claim_id": "ca6c4fc4-7595-443b-9571-1bb6b6c8e92f",
+      "result_id": "2a696e57-ae25-438f-ab58-3f3c530ae140"
+    },
+    {
+      "claim_id": "4edba746-1e2d-45f7-8625-e9eabd94a455",
+      "result_id": "2a696e57-ae25-438f-ab58-3f3c530ae140"
+    },
+    {
+      "claim_id": "c7b4d262-be28-4579-8c48-8971015d9bf0",
+      "result_id": "2a696e57-ae25-438f-ab58-3f3c530ae140"
+    },
+    {
+      "claim_id": "41290c29-3047-45b2-96cb-5e4b030c8b81",
+      "result_id": "2a696e57-ae25-438f-ab58-3f3c530ae140"
+    },
+    {
+      "claim_id": "2ef5748c-cfbf-4943-9b50-6c94a59a7ef0",
+      "result_id": "492ea7ba-278d-4fef-aff6-d09fa2dc0984"
+    },
+    {
+      "claim_id": "4a27e605-77f5-4907-a3ed-b746e1bb146b",
+      "result_id": "492ea7ba-278d-4fef-aff6-d09fa2dc0984"
+    },
+    {
+      "claim_id": "72828be1-b45b-4260-b3a3-f31291b87ea1",
+      "result_id": "492ea7ba-278d-4fef-aff6-d09fa2dc0984"
+    },
+    {
+      "claim_id": "fec3834b-3732-4368-a7c3-6a8bdf2d5636",
+      "result_id": "492ea7ba-278d-4fef-aff6-d09fa2dc0984"
+    },
+    {
+      "claim_id": "6554bb7b-43ec-489f-8fb0-b7d923c3f69d",
+      "result_id": "57456a28-e793-433b-ba6d-17b4a2ef587c"
+    },
+    {
+      "claim_id": "ae9d42c9-bdd7-4113-863c-dfb94b3cc707",
+      "result_id": "57456a28-e793-433b-ba6d-17b4a2ef587c"
+    },
+    {
+      "claim_id": "6a0eb9fc-eeea-42d4-8859-3084e51babe7",
+      "result_id": "57456a28-e793-433b-ba6d-17b4a2ef587c"
+    },
+    {
+      "claim_id": "6d5b88e0-167c-4535-b9da-03db43db101e",
+      "result_id": "c4a8cc38-3cb3-4097-86fd-1d9952ed8b86"
+    },
+    {
+      "claim_id": "6ba9a3fb-bf33-4f3a-887e-62c6bde5268e",
+      "result_id": "c4a8cc38-3cb3-4097-86fd-1d9952ed8b86"
+    },
+    {
+      "claim_id": "c94b36c3-9567-494a-861b-29bf5e28d127",
+      "result_id": "c4a8cc38-3cb3-4097-86fd-1d9952ed8b86"
+    },
+    {
+      "claim_id": "d0d5922f-29ce-428f-b4f3-dbb8d39ed4bd",
+      "result_id": "fff2a11a-4602-4652-a403-fc8f7429632c"
+    },
+    {
+      "claim_id": "e4bda224-c621-4a66-aba8-25c58b9cfd85",
+      "result_id": "fff2a11a-4602-4652-a403-fc8f7429632c"
+    },
+    {
+      "claim_id": "0c41691e-17ec-4728-a704-d339bc3417a6",
+      "result_id": "fff2a11a-4602-4652-a403-fc8f7429632c"
+    },
+    {
+      "claim_id": "4e154faf-5cfb-4160-8ca6-cf963775191d",
+      "result_id": "fff2a11a-4602-4652-a403-fc8f7429632c"
+    },
+    {
+      "claim_id": "13fea3d8-a7d6-4988-b5b9-408f054630b2",
+      "result_id": "c8515a02-21ff-422e-80c0-a8016b6964c0"
+    },
+    {
+      "claim_id": "9c480c8f-24f9-4586-9343-0a5b26bbdede",
+      "result_id": "c8515a02-21ff-422e-80c0-a8016b6964c0"
+    },
+    {
+      "claim_id": "51e65aa7-7591-4ad5-9060-d72ad5571a2b",
+      "result_id": "1d8d5f56-71b9-47d1-89e7-c4171ed95fb5"
+    },
+    {
+      "claim_id": "2ab9aef5-e538-42d4-92cd-af47a042b053",
+      "result_id": "1d8d5f56-71b9-47d1-89e7-c4171ed95fb5"
+    },
+    {
+      "claim_id": "772d182d-0dd8-495c-a8e0-e6439d84ec57",
+      "result_id": "1d8d5f56-71b9-47d1-89e7-c4171ed95fb5"
+    },
+    {
+      "claim_id": "0d4644f3-d786-4c82-8232-a60afa8ca547",
+      "result_id": "ac314bd9-23a5-451c-bc0c-0a0259074041"
+    },
+    {
+      "claim_id": "95c3ca34-7f96-4914-a869-0ebbe9957d3f",
+      "result_id": "ac314bd9-23a5-451c-bc0c-0a0259074041"
+    },
+    {
+      "claim_id": "a1892a7f-9b84-42df-921e-8281d5346cfe",
+      "result_id": "ac314bd9-23a5-451c-bc0c-0a0259074041"
+    },
+    {
+      "claim_id": "c1e7ab20-b922-42ec-a064-b64e6c54e847",
+      "result_id": "ac314bd9-23a5-451c-bc0c-0a0259074041"
+    },
+    {
+      "claim_id": "751024b8-8098-4191-8176-0997e7ba382c",
+      "result_id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd"
+    },
+    {
+      "claim_id": "32ab19dc-30f2-459d-bcb1-824016002a4e",
+      "result_id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd"
+    },
+    {
+      "claim_id": "e3398c1e-a077-4761-9007-f68d3a445bdc",
+      "result_id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd"
+    },
+    {
+      "claim_id": "4f76bef5-e975-48f9-8f99-beb03f99ff76",
+      "result_id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd"
+    },
+    {
+      "claim_id": "fd87e92a-2d14-4202-b8cb-3b17b3c7b253",
+      "result_id": "bc8e9446-fed1-49b4-9a3b-ab4c87b066fd"
+    },
+    {
+      "claim_id": "35f1879c-88d1-47e4-9b4f-b047d7c05b1c",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "cf26a1bc-007a-4a83-b9d4-85786a6aa401",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "c21ae8ae-0f55-45ad-aeb3-3bd230734bdb",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "6e3231d5-3b8e-4e1a-9498-87b4e79c4682",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "1d806d56-87da-4986-8453-b66fa779c11e",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "b20bf555-661d-46f4-8363-c1ed9a279fd2",
+      "result_id": "853015a6-67b9-4071-8d88-f4d17fd77d28"
+    },
+    {
+      "claim_id": "8080d009-382c-4ce7-8b3f-59388ba9631e",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "9f48bfe3-ecb5-4fcf-9ca8-f465e3c62209",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "bc7e6c66-1f5f-452a-8309-c7e014748e2e",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "f35abd01-f8f0-42d3-8c64-e44365f8c6c3",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "4d7e762c-84d7-4e13-a7e3-f5ad11980dc7",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "1588f94a-dec4-45b7-a8fd-cb43654b9dc4",
+      "result_id": "17aa0c5d-8e75-47a1-a850-6001256abc18"
+    },
+    {
+      "claim_id": "4a5534b4-ad4b-47f9-9ea8-08437f227c3c",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "05738233-5afc-4e88-a66b-66b983cce234",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "7de99007-05de-4ab4-846c-ffcefd05161b",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "900df996-c341-43ee-b6ad-0b98bb51e977",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "03977a6c-29a5-4046-b812-638abfe07174",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "4fdd7f50-b6f0-4452-94cf-e8047d6db137",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "701ef27d-007d-445c-a855-352cd74c3a1b",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "cec09c1b-8172-4f58-abd4-1b3cd72f7c74",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "56c6ea00-4286-4bd7-869b-540328a56fdc",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "598f34e7-0c9d-480e-b345-fdd6d04ae733",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "a1382dc3-0ce0-43e5-94e8-9b64a57b2b42",
+      "result_id": "b2ab11df-e6a0-43b8-817f-8187dcd3cc47"
+    },
+    {
+      "claim_id": "a114fcc4-3d22-417b-8e12-1fbb23986ef7",
+      "result_id": "34fccf35-6f39-4eb0-8a99-a60f5546f5d0"
+    },
+    {
+      "claim_id": "ae663c41-111b-46a7-964a-f8941eddc678",
+      "result_id": "34fccf35-6f39-4eb0-8a99-a60f5546f5d0"
+    },
+    {
+      "claim_id": "b7a695f5-4145-417c-baaa-47ba3816700f",
+      "result_id": "34fccf35-6f39-4eb0-8a99-a60f5546f5d0"
+    },
+    {
+      "claim_id": "a4349941-5680-4fdb-b2b1-0c3f93fa2dab",
+      "result_id": "fca925b3-bc64-4fa4-ab2f-81364babba82"
+    },
+    {
+      "claim_id": "fbb4ad43-1b8f-4eaf-b36e-c4d72109d928",
+      "result_id": "fca925b3-bc64-4fa4-ab2f-81364babba82"
+    },
+    {
+      "claim_id": "774581e7-fa10-45e0-a33a-02b1a35d5517",
+      "result_id": "fca925b3-bc64-4fa4-ab2f-81364babba82"
+    },
+    {
+      "claim_id": "d3711143-0637-4631-ac1e-c9ffe2014e72",
+      "result_id": "fca925b3-bc64-4fa4-ab2f-81364babba82"
+    },
+    {
+      "claim_id": "653253ed-8bb4-440b-a6bf-f64a0139c721",
+      "result_id": "fca925b3-bc64-4fa4-ab2f-81364babba82"
+    },
+    {
+      "claim_id": "a07310c4-b996-4286-9612-58a3bb2393c4",
+      "result_id": "2b9fd4f2-e085-4f58-8dba-8209b8273365"
+    },
+    {
+      "claim_id": "683d0c1b-8e6c-4981-af61-9b7d467ee89d",
+      "result_id": "2b9fd4f2-e085-4f58-8dba-8209b8273365"
+    }
+  ],
+  "comparisons": []
+}

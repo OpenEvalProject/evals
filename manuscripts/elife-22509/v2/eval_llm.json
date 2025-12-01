@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides background on EBV as a tumor virus, its association with malignancies, the role of T cells in controlling infection, viral persistence in memory B cells, and the requirement of six viral latent genes (including EBNA2 and LMP1) for B cell transformation. LMP1 signals through NF\u03baB to promote survival in LCLs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C17) represent well-established background knowledge about EBV biology, supported by appropriate citations to the literature. They provide context for the study but do not constitute novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C32"
+    ],
+    "result": "Early after EBV infection, B cells rapidly proliferate despite low LMP1 expression and NF\u03baB activation, and show no overt apoptosis despite DNA damage response activation, suggesting an LMP1-independent survival mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, and C32 are supported by prior work from the authors' laboratory (citations to Nikitin et al., 2010; Price et al., 2012; Nikitin et al., 2014). Claim C20 is a reasonable inference from these observations that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "BH3 profiling reveals that EBV infection modestly reduces overall mitochondrial priming but induces distinct BCL-2 family dependencies: uninfected B cells depend on BCL-2/BCL-w, early-infected proliferating cells (Prolif) depend on MCL-1 and BCL-2/BCL-w, and LCLs additionally depend on BFL-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by BH3 profiling data in Figure 1C, 1E, and Figure 1\u2014figure supplement 1. The interpretation of peptide sensitivities to infer BCL-2 family dependencies follows established BH3 profiling logic. The data show clear differential responses across cell states with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "EBV infection induces potent resistance to BCL-2 antagonists ABT-737 and ABT-199. Uninfected B cells are sensitive (IC50 ~10 nM for ABT-737 concurrent with infection), while proliferating infected cells and LCLs are highly resistant (IC50 ~2-4 \u00b5M). This indicates that uninfected B cells depend on BCL-2 for survival, while EBV upregulates additional survival proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are well-supported by dose-response curves and apoptosis assays in Figure 2B-G showing dramatic differences in drug sensitivity. Claims C43-C44 are reasonable inferences from the ABT-199 data. The experimental design includes appropriate controls and multiple donors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "MCL-1 mRNA and protein increase progressively from uninfected B cells through Prolif to LCLs. BCL-2 and BFL-1 are initially downregulated in early proliferating cells but upregulated in LCLs. ABT-737 resistance coincides with MCL-1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C48 are supported by qPCR (Figure 3A) and immunoblot data (Figure 3B-C). Claims C46-C47 are supported by the data and consistent with prior transcriptomic studies (cited). Claim C49 is a reasonable inference correlating MCL-1 expression with drug resistance timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Combined treatment with MCL-1 inhibitor A-1210 and BCL-2 antagonists (ABT-737 or ABT-199) induces apoptosis in early proliferating cells but not LCLs, supporting that early-infected cells depend on MCL-1 and BCL-2. This is corroborated by flavopiridol (CDK9 inhibitor) experiments that selectively reduce MCL-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by combination drug treatment data in Figure 3D-E showing differential sensitivity. Claims C52-C54 are supported by flavopiridol data in Figure 3\u2014figure supplement 1A-C and appropriate citations. The experiments include proper controls and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "CRISPR/Cas9-generated \u0394BFL-1 LCLs with reduced BFL-1 mRNA are significantly more sensitive to combined ABT-737 and A-1210 treatment than controls, supporting that LCLs depend on BFL-1, MCL-1, and BCL-2 for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by sequencing data (Figure 3F), qPCR (Figure 3G), and drug sensitivity assays (Figure 3H) with appropriate controls (WT, Cas9, AAVS1). Claim C58 is a reasonable inference integrating the \u0394BFL-1 data with BH3 profiling results. Statistical analysis shows significant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Mitogen-stimulated B cells (CpG or CD40L/IL-4) proliferate similarly to EBV-infected cells but remain sensitive to ABT-737 (IC50 ~200 nM) with increased apoptosis markers, demonstrating that ABT-737 resistance is specific to EBV infection, not proliferation per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are well-supported by proliferation data (Figure 4A-C), dose-response curves (Figure 4D-E), and apoptosis assays (Figure 4F-G). Claim C62 is a strong inference from the comparison showing EBV-specific resistance. The experimental design effectively controls for proliferation effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "P3HR1 (EBNA2-deleted) virus does not confer ABT-737 resistance to CpG-stimulated B cells, while B95-8 (WT) does, implicating EBNA2 as a key determinant. P3HR1-infected cells express similar BHRF1 levels as B95-8 but lack Cp-driven transcripts including EBNA2, EBNA3A, and EBNA3C, ruling out BHRF1 as the resistance factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by dose-response data in Figure 5B. Claims C66-C67 are supported by qPCR data in Figure 5C. Claims C65 and C68 are reasonable inferences from the P3HR1 deletion phenotype. The experimental design appropriately uses viral mutants to dissect genetic requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "EBNA3A-deleted (\u03943A) virus-infected cells remain highly sensitive to ABT-737 (~200 nM IC50) during early proliferation and as LCLs (~60 nM), while EBNA3C-deleted (\u03943C) cells are resistant like WT, identifying EBNA3A as essential for ABT-737 resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by dose-response data in Figure 5D-E and Figure 5\u2014figure supplement 1C using two independent sources of deletion viruses. The differential phenotypes between \u03943A and \u03943C provide strong genetic evidence for EBNA3A's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "\u03943A LCLs show BCL-2 dependence by BH3 profiling (sensitive to Bad and Bmf peptides), have significantly reduced BFL-1 mRNA (not due to selective pressure), unchanged MCL-1 mRNA and protein levels, but defective MCL-1 mitochondrial localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 are supported by BH3 profiling (Figure 6A) and qPCR data (Figure 6B, Figure 6\u2014figure supplement 1A). Claim C74 is supported by EBNA3A-ERT2 experiments (Figure 6\u2014figure supplement 1B-C). Claims C75-C76 are supported by protein stability (Figure 6C-D) and subcellular fractionation data (Figure 6E). The mechanistic dissection is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "\u03943A LCLs transcribe only ~15% as much BFL-1 mRNA as WT, with decreased RNA Pol II, activated Pol II, and activating histone marks at the BFL-1 TSS. Chromatin conformation capture reveals that EBNA3A coordinates chromatin architecture through an EBV super enhancer (39 kb upstream) and an NF\u03baB (RelA) binding site to facilitate BFL-1 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 are supported by nascent transcription profiling (Figure 6F) and ChIP data (Figure 6G). Claims C79-C80 are supported by chromatin conformation capture (Figure 6H) and ChIP-Seq data (Figure 6I). Claim C81 is a well-supported inference integrating multiple lines of chromatin evidence showing EBNA3A's role in long-range transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Re-expression of EBNA3A in \u03943A LCLs is sufficient to restore ABT-737 resistance to WT levels, demonstrating that EBNA3A plays an important role in EBV-mediated resistance to BCL-2 antagonists during both early and late stages of B cell transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by rescue experiments in Figure 6J-K showing restoration of drug resistance upon EBNA3A re-expression. This complementation experiment provides strong evidence for EBNA3A's causal role. The conclusion (C83) appropriately integrates findings from both early infection and LCL stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "The study concludes that mature human peripheral blood B cells depend solely on BCL-2 for survival, while EBV infection suppresses apoptotic priming by initially upregulating MCL-1, then BFL-1. EBNA3A regulates this transition by promoting MCL-1 mitochondrial localization and coordinating chromatin architecture through an EBV super enhancer to facilitate NF\u03baB-mediated BFL-1 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C88-C90, C92) represent well-supported conclusions that integrate the major findings of the study. They are based on converging evidence from BH3 profiling, drug sensitivity assays, genetic deletions, mechanistic studies of MCL-1 localization, and chromatin architecture analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The importance of MCL-1 in early EBV-infected B cells is consistent with MCL-1's critical role in germinal center formation and memory B cell survival in mice, supporting the GC model of EBV infection. MCL-1 copy number gains and mutations are often found in B cell lymphomas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 appropriately connect the study's findings to broader biological contexts through proper citations (Vikstrom et al., 2010; Burns et al., 2015; Roughan and Thorley-Lawson, 2009; Wenzel et al., 2013). These represent valid contextual interpretations of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The early phase of EBV infection (latency IIb) with EBNA expression but little LMP expression is observed in various EBV-associated diseases and humanized mouse models. The survival of latency IIb cells likely depends on EBNA3A and MCL-1, while latency III cells likely rely on BFL-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 are supported by appropriate citations. However, claim C99 is explicitly speculative ('likely depends') and represents an extrapolation from the in vitro findings to clinical contexts without direct experimental validation in those settings. While reasonable, this hypothesis requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "BH3 profiling has been a powerful predictive tool for chemotherapeutic responses in leukemias, and this approach could allow for better treatment decisions for EBV-associated malignancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 is supported by citation (Montero et al., 2015). However, claim C101 is speculative ('could allow') and represents a potential future application rather than a demonstrated result. While the suggestion is reasonable given the findings, it lacks direct validation for EBV-associated malignancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Background claims about viral BCL-2 homologues (BHRF1, BALF1), EBNA3 proteins' roles in apoptosis resistance, the intrinsic apoptosis pathway, BH3 profiling methodology, BH3 mimetics, and prior knowledge about LMP1 and NF\u03baB signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C21-C31, C84-C87, C91) represent established background knowledge appropriately cited from the literature. They provide necessary context for the study but do not constitute novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Both latently infected cell populations (Prolif and LCL) are 100% EBV-positive as shown by prior immunofluorescence and FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by citation to prior work (Nikitin et al., 2010) and represents an important methodological validation that the cell populations studied are uniformly infected.",
+    "result_type": "MINOR"
+  }
+]

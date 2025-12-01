@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "A transgenic mouse line expressing GCaMP3 ubiquitously in DRG neurons was successfully generated and characterized. Immunostaining revealed virtually all DRG neurons expressed detectable GCaMP3, and 97.5% of dissociated neurons showed robust calcium transients in response to K+ depolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence for successful generation and functional expression of GCaMP3. The breeding strategy is clearly described (C1), immunohistochemistry confirms widespread expression (C2), and functional validation shows calcium responses in the vast majority of neurons (C3). The quantitative data and multiple validation approaches support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Repeated K+ application produced significant decreases in both peak amplitude and decay time of calcium transients, likely reflecting engagement of intracellular calcium buffering mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 provide quantitative statistical evidence (p<0.0001) for decreased amplitude and decay with repeated stimulation. C6 offers a mechanistic interpretation supported by citations to established literature on calcium buffering. The data are internally consistent and the interpretation is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "A small subset (2.5%) of large-diameter DRG neurons showed no detectable calcium transient in response to K+ depolarization in vitro, though this may underestimate the in vivo proportion due to selective cell loss during dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C7 provides specific quantitative data on non-responding neurons. C8 appropriately contextualizes this finding with a citation noting that dissociation causes up to 50% cell loss, particularly affecting large neurons. The caveat about potential underestimation is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Ex vivo electrical stimulation of peripheral nerves revealed that GCaMP3 reliably reported phase-locked activity in A- and C-fiber afferents at low frequencies (\u226410 Hz), with all responding cells exhibiting broad action potentials characteristic of nociceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide complementary evidence from ex vivo preparations. Imaging data (C9-C10) show frequency-dependent responses, while electrophysiological recordings (C11) confirm the identity of responding neurons as nociceptors based on action potential properties and conduction velocities. The integration of optical and electrical measurements strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "A subset of medium-to-large DRG neurons with narrow action potentials, fast conduction velocities, and properties consistent with tactile/proprioceptive afferents failed to produce detectable GCaMP3 signals despite robust electrical activity, indicating GCaMP3 may not be optimal for studying these neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C21 provide extensive characterization of GCaMP3 non-responders through multiple approaches. Electrophysiological data (C15-C19) show significant differences in action potential width, soma size, and conduction velocity with appropriate statistics. The interpretation (C20-C21) is supported by citations and consistent with known properties of low-threshold mechanoreceptors. The conclusion about GCaMP3 limitations is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "In vivo imaging demonstrated that GCaMP3 could detect individual phase-locked transients at 1 Hz with stable signal intensity over time, though signals were slightly noisier than ex vivo due to movement artifact and individual spikes could not be resolved above 10 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 establish the in vivo performance of GCaMP3. Quantitative stability data (C24) with statistical analysis (p=0.53) support reliability over time. The acknowledgment of increased noise (C23) and frequency limitations (C25) demonstrates appropriate assessment of technical limitations. The findings parallel ex vivo results, providing internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Mechanically-evoked GCaMP3 responses in small- and medium-sized DRG somata were proportional to stimulus intensity and remained stable over repeated testing for up to 90 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 establish the reliability of GCaMP3 for detecting graded mechanical responses. The dose-response relationship (C26) and temporal stability data (C27) with statistical analysis (p=0.754) demonstrate that the system can reliably report mechanical sensitivity over time, which is critical for the plasticity experiments that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Inflammatory soup exposure produced diverse changes in mechanical sensitivity: 51% of neurons showed no change, 22% showed increased responses (greatest at 500 mN), and 27% showed decreased responses (also greatest at 500 mN), with these proportions significantly different from vehicle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 provide comprehensive quantitative analysis of inflammatory soup effects with appropriate statistical comparisons to controls (C31: p=0.004 and p<0.001). The force-dependent effects (C32-C33) are well-characterized. The bidirectional changes are unexpected but well-documented with sufficient sample sizes (n=5 mice, 47 cells for IS; n=6 mice, 83 cells for controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Two neurons gained mechanical sensitivity de novo after inflammatory soup exposure, meeting the definition of 'silent' afferents, as confirmed by exhaustive post-hoc analysis showing no baseline responses and absence of such neurons in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide rigorous identification of silent afferents. The post-hoc verification (C35) and control comparisons (C36) strengthen confidence that these represent true de novo responses rather than technical artifacts. However, the small number (n=2) limits generalizability, though the authors appropriately acknowledge this.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Brief noxious heat application prior to inflammatory soup dramatically increased silent afferent recruitment to 21% (5-fold increase), while proportions of sensitized and desensitized neurons remained unchanged. Heat alone was insufficient, suggesting heat is necessary but not sufficient for silent afferent conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 demonstrate a striking synergistic effect with appropriate statistical analysis (C38: p=0.018) and proper controls (C40). The interpretation (C41) is logical based on the data showing neither stimulus alone is sufficient. This is a novel and important finding, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Half of silent afferents responded to heat before inflammatory soup exposure, and these neurons were predominantly mechanically insensitive heat nociceptors, suggesting inflammatory soup preferentially confers mechanical sensitivity on this specific nociceptor subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C45 provide important characterization, but C43 reveals a critical limitation: only the top skin layer reached nociceptive threshold temperatures (46.7\u00b0C) while the bottom layer did not (36.9\u00b0C). This means heat sensitivity could only be assessed in ~50% of the sampled population, potentially biasing the conclusion in C45. The interpretation is reasonable but requires validation with improved heating methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Only 20% of silent afferents responded acutely to inflammatory soup during infusion, indicating that acute activation by inflammatory mediators was not predictive of silent afferent conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide quantitative comparison across response categories showing silent afferents had the lowest proportion of acute IS responses (20% vs. 31-50% in other groups). This finding challenges assumptions about the mechanism of silent afferent recruitment and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Converted silent afferents showed significant responses across all mechanical forces tested, with 88% responding to the lowest force, and these changes occurred as early as 10 minutes post-inflammatory soup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 characterize the properties of converted silent afferents. The statistical significance across forces (C48) and high proportion responding to low forces (C49) support the functional significance. The time course data (C50) is valuable though noted as preliminary (data not shown), which slightly weakens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "GCaMP3 reliably reported action potentials in virtually all small-diameter DRG neurons but failed to detect activity in a subset of putative non-nociceptive afferents, likely due to insufficient calcium entry during narrow action potentials and/or potent calcium buffering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 synthesize findings from multiple experiments. The conclusion is well-supported by the electrophysiological characterization of non-responders (C15-C19) and is appropriately cautious about interpreting negative results with GECIs. This represents an important technical limitation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Inflammatory soup produced rapid, divergent effects including pronounced decreases in addition to increases in mechanical sensitivity, and recruited silent afferents that were predominantly mechanically insensitive heat nociceptors. The synergistic requirement for both heat and inflammatory soup may explain previous discrepancies in silent afferent frequency estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 synthesize the major findings. The bidirectional changes (C54) are well-documented in C28-C33. The characterization of silent afferents (C55-C56) is supported by C42-C47. The synergy interpretation (C57) is backed by C38-C41. The explanation for literature discrepancies (C58) is a reasonable inference with appropriate citation, though it remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The findings have relevance to thermal injury-associated inflammatory pain. Mechanically insensitive heat nociceptors express TRPV1 and release neuropeptides, but TRPV1 activation alone was insufficient for silent afferent conversion, suggesting heat plays a permissive role with potentially long-lasting priming effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 are well-supported by citations. However, C59 is speculative about clinical relevance. C62 is a reasonable inference from C40, but the mechanism remains unclear. C63 reports preliminary data (data not shown) on long-lasting effects, which weakens confidence. The overall interpretation is plausible but requires additional mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Converted silent afferents became responsive to barely perceptible mechanical forces and could contribute to mechanical allodynia and cross-modal dysesthesias such as touch-evoked burning pain following acute inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by quantitative threshold data (C48-C49) and informal psychophysical testing. Claims C65-C66 are speculative interpretations about functional significance, but they are reasonable given that heat nociceptors gained mechanical sensitivity at very low thresholds. The speculation is appropriately qualified and represents a testable hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Only 40% of mechanically sensitive afferents remained unchanged after inflammatory soup, with equal proportions (30% each) showing increased sensitivity (including silent afferents) or decreased/lost sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 provide important quantitative summary of the population-level changes. The data are well-supported by C28-C30 and C34-C37. This balanced bidirectional change is a key finding that challenges traditional views of inflammatory sensitization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Desensitization may result from depolarization-induced refractoriness in ~30% of cases, but more likely reflects hyperpolarization through increased potassium conductance (e.g., via TREK2 or ATP-sensitive K+ channels) in the majority, with effects depending on receptor expression patterns and proximity to secondary mediator sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 provides data showing only 31% of desensitized cells responded acutely to IS, arguing against depolarization as the primary mechanism. Claims C71-C74 propose alternative mechanisms with appropriate citations (C72-C73), but these remain speculative hypotheses without direct experimental validation. The reasoning is sound but requires follow-up experiments to test these mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The observed bidirectional changes in nociceptor sensitivity are consistent with preclinical studies and clinical pain disorders showing concomitant hyperalgesia and hypesthesia. A novel hypothesis is proposed wherein desensitization of some inputs coupled with sensitization of others may sharpen signals most relevant to inflammatory pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 appropriately contextualize findings within existing literature with proper citations. C80 correctly notes that desensitization has received less attention. C81 presents a novel hypothesis that is speculative but well-grounded in the data. The hypothesis is testable and represents a conceptual advance, though it requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Current understanding of inflammatory pain emphasizes nociceptor sensitization and silent afferent recruitment, but many questions remain about silent afferents. Previous single-cell electrophysiological approaches had spatial and temporal limitations that may explain conflicting results in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 accurately summarize established knowledge with appropriate citations. Claims C86-C88 correctly identify gaps in knowledge and limitations of previous approaches. This provides appropriate context for the current study's methodological advances using population-level calcium imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "GCaMP technology enables simultaneous monitoring of neuronal populations in real time and is ideal for detecting changes in mechanical sensitivity across primary afferents. The current implementation successfully enabled observation of calcium transients primarily in nociceptors with broad action potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are well-supported by citations and describe established GCaMP properties. C91 is a reasonable inference about utility. C92 synthesizes the validation data showing GCaMP3 successfully reports activity in nociceptor populations. The claims appropriately acknowledge both capabilities and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Inflammatory soup caused de novo mechanical sensitivity in some afferents (increased 5-fold with prior heat) and altered sensitivity in the majority of mechanically sensitive afferents, with a surprisingly large population showing decreased responses. This indicates acute inflammation causes a profound imbalance in sensory input that may be interpreted as pain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 accurately summarize the main experimental findings with appropriate quantification. C96 is a reasonable interpretation of the population-level changes. C97 is somewhat speculative about CNS interpretation but is appropriately qualified and represents a testable hypothesis about the functional significance of the observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "The experimental preparation allows anesthesia-free in vivo observation of primary afferent responses, making observed responses more likely to be representative of normal neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 accurately describes a key methodological feature. C99 provides appropriate justification based on known effects of anesthesia. This represents an important technical advance over anesthetized preparations, though the claim about representativeness could be stated more cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Silent afferents have been estimated to constitute up to 30% of DRG neurons, but their contribution to inflammatory pain remains unclear. The current study found that inflammatory soup rapidly altered most neurons' mechanical responsiveness, with more cells losing than gaining sensitivity, and silent afferents were rare without prior heat exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is supported by multiple citations. C101 identifies a knowledge gap. Claims C102-C104 accurately summarize the key findings. The contrast between the literature estimate (30%) and the observed frequency (4% without heat, 21% with heat) is striking and well-documented, highlighting the importance of experimental conditions in detecting silent afferents.",
+    "result_type": "MAJOR"
+  }
+]

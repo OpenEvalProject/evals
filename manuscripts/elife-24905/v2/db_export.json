@@ -1,0 +1,2204 @@
+{
+  "submission": {
+    "id": "fb284e45-2b5e-482a-a49b-ac3c632a5f2e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:35:44.566273Z",
+    "updated_at": "2025-11-30T23:35:44.566273Z"
+  },
+  "content": [
+    {
+      "id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "submission_id": "fb284e45-2b5e-482a-a49b-ac3c632a5f2e",
+      "content_type": "manuscript",
+      "content_text": "# An allosteric transport mechanism for the AcrAB-TolC multidrug efflux pump\n\n## Authors\n\n- Zhao Wang<sup>1</sup>\n- Guizhen Fan<sup>3</sup>\n- Corey F Hryc<sup>1</sup> ([ORCID: 0000-0002-7277-5249](https://orcid.org/0000-0002-7277-5249))\n- James N Blaza<sup>5</sup> ([ORCID: 0000-0001-5420-2116](https://orcid.org/0000-0001-5420-2116))\n- Irina I Serysheva<sup>3</sup>\n- Michael F Schmid<sup>1</sup>\n- Wah Chiu<sup>1</sup> \u2020\n- Ben F Luisi<sup>6</sup> ([ORCID: 0000-0003-1144-9877](https://orcid.org/0000-0003-1144-9877)) \u2020\n- Dijun Du<sup>6</sup> \u2020\n\n### Affiliations\n\n1. National Center for Macromolecular Imaging Baylor College of Medicine Houston United States\n2. Verna and Marrs McLean Department of Biochemistry and Molecular Biology Baylor College of Medicine Houston United States\n3. Department of Biochemistry and Molecular Biology, Structural Biology Imaging Center The University of Texas Health Science Center at Houston Medical School Houston United States\n4. Graduate Program in Structural and Computational Biology and Molecular Biophysics Baylor College of Medicine Houston United States\n5. MRC Mitochondrial Biology Unit, Cambridge Biomedical Campus Cambridge United Kingdom\n6. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial efflux pumps confer multidrug resistance by transporting diverse antibiotics from the cell. In Gram-negative bacteria, some of these pumps form multi-protein assemblies that span the cell envelope. Here, we report the near-atomic resolution cryoEM structures of the Escherichia coli AcrAB-TolC multidrug efflux pump in resting and drug transport states, revealing a quaternary structural switch that allosterically couples and synchronizes initial ligand binding with channel opening. Within the transport-activated state, the channel remains open even though the pump cycles through three distinct conformations. Collectively, our data provide a dynamic mechanism for the assembly and operation of the AcrAB-TolC pump.\n\n## Introduction\n\nAntibiotic resistance of pathogenic bacteria is a growing clinical problem, exacerbated by insufficient development of new antibiotics. Drug efflux pumps play important roles in intrinsic or acquired drug resistance to a wide variety of currently available antimicrobial agents (Pu et al., 2016). In Gram-negative bacteria, some of these pumps form multi-protein assemblies that span the cell envelope (Du et al., 2015a). The components of these assemblies include an outer membrane protein, a plasma membrane-spanning protein and a periplasmic protein that connects the two trans-membrane components (Du et al., 2015b). AcrAB-TolC is a RND-based tripartite efflux pump, comprised of the outer membrane protein TolC, the periplasmic membrane fusion protein AcrA, and the inner membrane transporter AcrB, which cycles through three different conformational states during the drug transport process: access (L), binding (T) and extrusion (O) (Du et al., 2015a). A small peptide, AcrZ, has been identified that modifies the activity of AcrB (Hobbs et al., 2012). Previous electron microscopy studies of the AcrAB-TolC pump have revealed the overall shape of the pump and the relative arrangement of its components (Daury et al., 2016; Du et al., 2014; Jeong et al., 2016). Due to the limited resolution, these studies were unable to identify the detailed interaction interfaces between the components. Moreover, the mechanism of pump assembly and channel opening is presently unclear (M\u00fcller and Pos, 2015; Zgurskaya et al., 2015) and requires detailed structural information of the pump in the different conformational states that accompany drug translocation. In this study, we report the near-atomic resolution cryoEM structures of the AcrAB-TolC pump captured in both resting and drug transport states. The data reveal the detailed tertiary and quaternary structural changes associated with the transition from apo to ligand-bound states. The quality of the cryoEM maps enable unambiguous modeling of all components and identification of the conformational asymmetry in AcrB in the presence of antibiotic that underpins the molecular mechanism of drug translocation. Our study provides a structural framework for understanding the mechanism underlying drug efflux.\n\n## Results\n\n### CryoEM structure determination\n\nPreparation of the intact AcrAB-TolC for structural studies has been a challenge. Previously, the fully-assembled pump was stabilized by tandem fusion and cross-linking of its components using the \u2018GraFix\u2019 method (Du et al., 2014). The fusion was co-expressed with AcrZ, a hydrophobic helical peptide that affects AcrB efflux activity for a subset of antibiotics (Hobbs et al., 2012) and interacts with AcrB in the transmembrane portion (Du et al., 2014). To pursue a higher resolution structure, we improved the purification procedure. The ratio of detergent to total membrane protein was optimized to extract AcrAB-TolC from the cellular membrane, and the detergent was exchanged with amphipol A8-35 (Baker et al., 2015; Liao et al., 2013; Popot, 2010; Tribet et al., 1996; Zoonens and Popot, 2014). Ligands were used in an effort to favor conformational uniformity and/or to capture structures corresponding to different ligand transport states. The purified pump was imaged in the presence of pyranopyridine inhibitor MBX3132 (Sjuts et al., 2016) (Figure 1\u2014figure supplement 1A and B; Supplementary file 1) or substrate puromycin, as described in Materials and methods.\n\nWe also have developed a new procedure to stabilize the full pump using disulphide-linkages that were chosen from the proximity of residues S273 in the \u03b2-barrel domain of AcrA and S258 in the \u03b2-hairpin motif of the DN subdomain of AcrB seen in the cryo-EM structure of the full pump. We introduced single cysteine-substitutions in the individual AcrA and AcrB components (AcrA-S273C and AcrB-S258C) without flexible engineered linkers. Consistent with the model based on the fusion constructs, we observed disulfide bond formation between the two free components. Moreover, the disulfide bond-stabilized AcrAB can recruit TolC (and three additional AcrAs, which are not expected to be cysteine-crosslinked) to form a stable tripartite complex in vivo (Figure 1\u2014figure supplement 2A). This complex was prepared without co-expression of AcrZ. The full pump assembly, stabilized through the disulfide-bond linked AcrAB, was imaged in the absence of ligand (Figure 1\u2014figure supplement 2, B and C).\n\nThe cryo-EM structures of the apo pump and the pump/ligand complexes reveal different conformational states of the full pump. These structures have been solved at different subnanometer and near atomic resolutions (Supplementary file 1). The maps of the full pump at 3.6 \u00c5 resolution can be readily segmented into a TolC trimer, a periplasmic AcrA hexamer, and an AcrB trimer (Video 1). The corresponding domains and subdomains of the four protein components derived from the cryoEM maps are delineated in Figure 1\u2014figure supplement 3. We will describe each structure further below.\n\n![Video 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-media1.mp4.jpg)\n\n**Video 1.:** Individual protein subunits of the density map are highlighted and their corresponding models are then shown.\n\n### The apo structure of the pump adopts a closed channel\n\nThe reconstruction of the apo pump at 6.5 \u00c5 resolution (Supplementary file 1; Figure 1\u2014figure supplement 4) revealed TolC to be in the closed conformational state (Figure 1), like that seen in the crystal structure of the isolated protein (Koronakis et al., 2000). The periplasmic component of the pump, AcrA, forms a hexamer through the trimerization of two conformationally distinct protomers (Figure 1A). We refer to the two distinct subunits as \u2018protomer-I\u2019 and \u2018protomer-II\u2019. In both AcrA protomers, a short helix-turn-helix (HTH) motif interacts in a tip-to-tip manner with the HTH motif of the TolC coiled-coils at their periplasmic ends (Figure 1A, right panel). Because each subunit of TolC has an internal structural repeat, the trimer has 6 HTH motifs, which interact with the 6 HTH motifs of the AcrA hexamer in a quasi-equivalent manner: AcrA protomer-I and the adjacent protomer-II interdigitate with the intra- and inter-protomer grooves of TolC, respectively. The two distinct conformations of the HTH motif loops of AcrA protomers I and II structurally conform to the slightly different contact surfaces of TolC (Figure 1A, right panel). This interaction is consistent with functional (Lee et al., 2012; Song et al., 2014; Xu et al., 2010) and structural data (Daury et al., 2016; Kim et al., 2015), but differs in detail from that proposed for the open state of the pump reported earlier (Jeong et al., 2016), as we will describe further below. A gap is present at the interfaces between adjacent AcrA dimer pairs, so that the AcrA helical hairpin, lipoyl and \u03b2-barrel domains do not pack tightly to seal the channel from the periplasm (Figure 1\u2014figure supplement 5). This gap must be closed in the transport process to prevent leakage of substrates into the periplasm. AcrB adopts a symmetric state (LLL) in the pump assembly, as seen in the crystal structure of apo AcrB (Murakami et al., 2002).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-v2.jpg)\n\n**Figure 1.:** (A) CryoEM map of the pump with closed-state TolC, visualized in side view along the membrane plane (left). The four components within one asymmetric unit of the C3 symmetric assembly are color-coded: TolC (red), AcrA (orange and green) and AcrB (blue). (middle) A sliced view of the pump shows the closed channel. (right) Ribbon representation of the pump with closed-state TolC with the same color code as in left panel. The black arrow indicates the closed site in TolC. (B) Comparison of reference- free 2D averages (left) and slice view of 3-D maps at the arrow (right) of the apo pump with closed TolC (top), pump in presence of puromycin (middle) and pump with MBX3132 (bottom).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) A representative motion-corrected cryoEM image of ice-embedded AcrABZ-TolC/MBX3132 recorded using the K2 Summit camera. (B) Gallery of reference-free 2D averages from the images (prepared by Relion1.4). (C) 3.6 \u00c5 resolution density map reconstructed in C1 symmetry with the full image data set.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Single cysteine-substitutions in the AcrA and AcrB components (AcrA-S273C and AcrB-S258C) generate stable covalent complexes of AcrAB. The lanes show SDS-PAGE assay of fractions from size exclusion chromatography elution of the double cysteine mutant in the presence of reducing agent. The identity of the bands is indicated. The AcrAB cysteine mutant co-elutes with co-expressed truncated TolC464, indicating that the proteins have formed a stable assembly. In the absence of reducing agent, all the AcrB is present as a thiol-linked complex with AcrA, and excess free AcrA (one pre AcrB protomer) are seen (results not shown). (B) A representative motion-corrected cryo-EM image of ice-embedded AcrAB-TolC pump recorded using the K2 Summit camera. (C) Reference free 2D averages by Relion 2.0.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Linear representation of protein components of AcrABZ-TolC. The domains are described in the text. The cryoEM derived models of fitted subunits of TolC (B), AcrA (C) AcrB (D) and AcrZ (E) are colour-coded by domains as in panel (A).\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) True FSC curves of AcrAB-TolC pump with closed TolC. (B) FSC between cryoEM density map and model. (C) Colour-coded ResMap map of the apo AcrAB-TolC. The map is depicted as viewed along the membrane plane.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Segments of the cryoEM density map of the pump with fitted models showing the interactions between AcrA and closed-state TolC. The AcrA helical hairpin, lipoyl and \u03b2-barrel domains between AcrA protomer-II (green) and the adjacent AcrA protomer-I\u2019 (yellow) do not pack tightly to seal the channel from the periplasm, whereas they do form a tight seal in the ligand bound forms (see Figure 2 and Figure 3). (B) Conformational difference between protomer-I (Orange) and protomer-II (Green) of AcrA in the cryoEM structure of apo AcrAB-TolC pump.\n\n### The transport state of the full pump with opened channel\n\nThe crystallographic studies of AcrB in complex with natural substrates reveal asymmetric structures, which suggest consecutive steps of a transport cycle (Murakami et al., 2006; Seeger et al., 2006). We explored how the full pump accommodates AcrB in this functional state in the presence of puromycin, which is a validated transport substrate (Hobbs et al., 2012).\n\nWe targeted the AcrB protomers using a focused classification procedure (Bai et al., 2015) (See Materials and methods) and could identify a subset of the full pump assembly (30.2% of the entire dataset) containing exactly one protomer whose density matches the extrusion state (O) of AcrB, as shown in Figure 3\u2014figure supplement 1. A 5.9 \u00c5 density map of the full pump assembly without any imposed symmetry was reconstructed from this particle subset (Figure 2A; Figure 2\u2014figure supplement 2). The correlation analysis of the map region corresponding to the AcrBZ components shows that the three AcrB protomers in L, O and T states are in a fixed spatial relationship with respect to each other in this full pump assembly (Figure 2B). This spatial disposition fits very well to the crystal structures of numerous other drug-bound AcrB structures (Eicher et al., 2012; Murakami et al., 2006; Nakashima et al., 2011). Though the AcrB subunit densities match well with those in the crystal structure, no puromycin density is detected in the cryoEM map. A similar situation occurs for some crystal structures of the asymmetric state, where drug is present in the buffer but discernable electron density for the drug is absent from the ligand binding pockets (Seeger et al., 2006). The crystal structure of AcrBZ in the presence of puromycin at 3.2 \u00c5 (Figure 2\u2014figure supplement 3; Supplementary file 3) shows that the AcrB subunits adopt three distinct conformational states (Figure 2\u2014figure supplement 3B) as seen in our cryoEM structure in the presence of this drug. Poorly defined density for puromycin is found in the binding pocket of the T protomer (Figure 2\u2014figure supplement 3C). In the case of the cryoEM map, the lack of density can be rationalized as either a resolution limit in the C1 map or the drug being bound only transiently and flexibly.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig2-v2.jpg)\n\n**Figure 2.:** (A) Structure of asymmetric AcrABZ-TolC pump visualized in side view; subunits are color-coded accordingly: TolC (red and pink), AcrA (orange and green), AcrB (blue) and AcrZ (purple). (B) Model variation of the C-alpha trace between the three subunits of AcrB within the full pump colored in gradient from blue to red with increasing variation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) A soft mask used in the target region of the complex for focused classification. (B) Generation of three maps with the part of the complex to be ignored in focused classification. (C) Generation of modified particle images for focused classification by subtraction of the 2D projections of the maps in b from raw images. The modified images are CTF corrected. (D) Three rounds of focused 3D classification yielded classes (1,2 and 4) with good density for the AcrB subunit. (E) Particles were combined according to the features of the density map of the AcrB subunit. The map for the full pump assembly was reconstructed without any imposed symmetry using the original particle images from this combined particle subset.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Density map of asymmetric AcrABZ-TolC pump in the presence of puromycin, subunits are color-coded accordingly: TolC (red and pink), AcrA (orange and green), AcrB (blue) and AcrZ (purple). (B) True FSC curves of the asymmetric AcrABZ-TolC pump in the presence of puromycin. (C) FSC between cryoEM density map and model. (D) Color-coded ResMap map of the asymmetric AcrABZ-TolC pump in the presence of puromycin.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Ribbon representation of AcrBZ/puromycin trimer. (B) Individual AcrB protomers in the structure. Protomers O, L and T are colored in red, green, and blue, respectively. (C) An enlarged view of puromycin in the deep binding pocket of the T protomer. The green density was calculated with a feature-enhanced procedure in PHENIX. The schematic on the right shows the main contacts between puromycin and AcrB.\n\nTolC adopts a fully opened state via tip-to-tip interactions with AcrA in the pump assembly and AcrAs pack tightly to form a sealed channel, which is similar to that seen in the complex of the pump with the potent inhibitor MBX3132, to which we now turn.\n\n### The structure of pump in complex with inhibitor MBX3132 reveals the interaction interfaces between pump components at atomic resolution\n\nThe inhibitor MBX3132 likely binds AcrB tightly, since it is active in the nanomolar concentration range (Sjuts et al., 2016), and the compound was used to lock the pump in a more homogeneous conformation. The 3D map for the pump/MBX3132 complex was initially generated without any imposed symmetry and exhibited an apparent 3-fold symmetric pattern (Figure 1\u2014figure supplement 1C). Thus, refinements were performed with 3-fold symmetry, which produced the final 3D reconstruction at ~3.6 \u00c5 resolution. This dataset was further subjected to focused 3D classification (Bai et al., 2015) of a targeted region of AcrB to reveal its structural variations in response to the presence of the inhibitor. We found that 73% of the particles within the dataset have their three AcrB subunits in the same (TTT) conformation (Materials and method and Figure 3\u2014figure supplement 1A\u2013E). Subsets of particles show AcrB conformations in LLL (1.4%), LLT (6.2%) and LTT (18.6%) states, respectively, while none of the subunits was identified in an \u2018O\u2019 state. Therefore, this inhibitor-bound pump conformation primarily represents a T-saturated state of the AcrB. The C3 symmetry imposed reconstruction using the subset of particles with TTT state (24,597 particles) also achieved 3.6 \u00c5 resolution (Figure 3A, Figure 3\u2014figure supplement 1F and G). We observed clear density for the inhibitor in\u00a0a\u00a0'hydrophobic trap' site adjacent to the drug binding of the AcrB trimer in both the asymmetric and symmetry imposed maps (Figure 3B). Side chains can be readily assigned and modeled in the protruding densities along the peptide backbone (Figure 3\u2014figure supplement 2). This cryo-EM structure of pump/MBX3132 enables us to visualize the interaction interfaces between the pump components at atomic resolution.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig3-v2.jpg)\n\n**Figure 3.:** (A) Three-fold symmetry imposed density map (left) and model (right) of the AcrABZ-TolC complex. (middle) A sliced view of pump. The five protein components within one asymmetry unit of the pump are color-coded. TolC (red), AcrA (orange and green), AcrB (blue) and AcrZ (purple). (B) Density of the MBX3132 seen in the hydrophobic trap of each AcrB subunit. The location of the trap is indicated by the star in the model in the right panel of (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) A soft mask is generated in the target region of the pump complex for focused classification. (B) Generation of three maps with the part of the complex to be ignored in focused classification. (C) Generation of modified particle images for focused classification by subtraction of the 2D projections of the maps in (B) from raw images. The modified images are CTF corrected. (D) The focused 3D classification procedure yielded two principal classes, only one class showed ligand density in the hydrophobic trap of AcrB. (E) Particles were classified by their ligand states (TTT, LTT, LLT) according to the classification result in d. The LLL state (not shown) was only observed in a few particles. (F) FSC profile for the particle reconstructions with C3 symmetry using particle images classified as TTT state. The dotted grey line shows the profile in which the phases were randomized at 5 \u00c5 resolution. (G) Colour-coded 3D map of AcrABZ-TolC/MBX3132 based on resolution variations obtained with ResMap (Methods).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) The FSC curve between the cryoEM density map (C3) and map calculated from the molecular model of AcrABZ-TolC/MBX3132. FSC cut-off\u00a0=\u00a00.5. (B) The densities of selected regions overlaid with the corresponding model: an \u03b1-helical hairpin domain of AcrA (left), a coiled-coil in the \u03b1-helical barrel region of TolC (middle) and a \u03b2-sheet in the pore domain of AcrB (right).\n\nComparing the structure of TolC in the crystal or in\u00a0the\u00a0apo pump with that in the inhibitor-bound pump assembly reveals that TolC adopts a fully opened state through an iris-like dilation of the periplasmic end. This dilation is presumably necessary to maintain TolC-AcrA connectivity and to permit drug molecules to pass through the pump (Koronakis et al., 2000). Little conformational change is shown in the TolC TM region and the adjacent \u03b1-helical portion. However, the structures start to deviate at the equatorial domain, where the superhelical trajectories of coiled-coil helices change with the iris-like dilation (Figure 4A and B; Figure 4\u2014figure supplement 1A and B). In the \u2018closed state\u2019 conformation, seen in the apo pump, the constriction is maintained by an inter-protomer hydrogen-bonding network, involving R367 in one subunit and T152, D153 and Y362 in the adjacent subunit (Andersen et al., 2002; Augustus et al., 2004; Bavro et al., 2008)(Figure 4\u2014figure supplement 1A). This network of interactions is broken in the TolC of pump/MBX3132 complex (Figure 4\u2014figure supplement 1B) and the pump/puromycin complex. Accordingly, we refer to TolC in the pump-ligand complexes as being in an \u2018open state\u2019 conformation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig4-v2.jpg)\n\n**Figure 4.:** (A) Segments of the 3.6 \u00c5 resolution cryoEM density map of the pump with fitted model showing the tip-to-tip interaction between a TolC protomer (red) and two \u03b1-helical hairpins of AcrA (orange and green). (B) Detail of the tip-to-tip interface of TolC and AcrA. Residue pairs of complementary mutations (Kim et al., 2015) identified at this interface are shown (Xu et al., 2011).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) The closed-state TolC from crystal structure (PDB code: 1EK9). Residues Y362, R367 from H7/H8 interact with T152, and D153 from H3/H4 to form a network of hydrogen bond interactions. (B) In the opened-state TolC in the full pump in the presence of ligands, this interaction network is broken. The three protomers are coloured in red, orange-red and pink, respectively. The model is from the MBX3132-bound pump.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Four co-evolving residue pairs of the MdtNOP efflux pump between the components MdtN and MdtP were mapped onto crystal structures of VceC and MacA, (http://datadryad.org/resource/doi:10.5061/dryad.s00vr/3) (Ovchinnikov et al., 2014). The corresponding co-varying pairs in AcrA and TolC were obtained by sequence alignment between AcrA and MacA (Yum et al., 2009), and between TolC and VceC (Federici et al., 2005), respectively.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Conformational difference of the \u03b1-helical hairpin domains of protomer-I (blue) and protomer-II (purple) of AcrA in the cryoEM structure of AcrABZ-TolC/MBX3132. (B) Four conformations of the \u03b1-helical hairpin domains of AcrA observed in a crystal structure. Chains A to D are coloured in red, orange, yellow and green, respectively (PDB code: 2F1M).\n\nWe observe tip-to-tip interactions of the AcrA and TolC HTH motifs (Figure 4), which is similar to that proposed for the open state of the pump reported earlier (Jeong et al., 2016). These interactions account for the importance of the conserved Val-Gly-Leu/Thr element of TolC (Jeong et al., 2016; Song et al., 2014). At the AcrA protomer-I/TolC interface, contacts involve the backbone of G365 in the conserved VGL motif of TolC with the backbone of K140 and side chain of S139 in AcrA (Jeong et al., 2016). The N145 and T366 of TolC directly contact AcrA L132 in the pump, consistent with the results of in vivo site-specific cross-linking experiments (Xu et al., 2011) (Figure 4B). Our cryoEM structure shows the presence of residue pairs at the interface between AcrA and TolC (Figure 4\u2014figure supplement 2) that were predicted to have co-evolved in the homologous proteins in a different efflux pump MdtNOP (Harley and Saier, 2000; Ovchinnikov et al., 2014). 3D classification identified a small subset of particles, in which TolC rotates by 60 degrees with respect to AcrA, but the alternative interface still retains the key contacts described above. As observed in the apo state, there are two distinct conformations of the HTH motif loops of AcrA protomers I and II that structurally conform to the slightly different contact surfaces of TolC (Figure 4). The flexibility of the HTH is consistent with observations from crystal structures (Figure 4\u2014figure supplement 3) (Mikolosko et al., 2006).\n\nIn the six protomers of AcrA, the lipoyl and \u03b2-barrel domains form a stack of two continuous rings. The lipoyl domains have no interaction with either AcrB or TolC, and the \u03b2-barrel domains contact only the docking domain of AcrB (Figure 5). The membrane-proximal (MP) domain of AcrA interacts with both the docking domain and the top of the pore domain of AcrB. Each AcrB protomer makes two non-equivalent interactions with AcrA (Ntreh et al., 2016); i.e. each pair of AcrA protomers makes two conformationally distinct interfaces with AcrB, as was found with the interaction between AcrA and TolC (Figures 4 and 5). AcrA protomer-I makes extensive interactions with AcrB. The \u03b2-barrel domain of AcrA protomer-I docks on the DN and DC subdomains of AcrB, while its MP domain interacts with the PC1 subdomain, the linker region between PC2 and DC, and an extended loop of the DN subdomain from an adjacent AcrB protomer (Figure 5A and C). The spatial orientation of a \u03b2-hairpin motif, in the DN subdomain of AcrB, differs between the cryoEM and crystal structures. This conformational difference facilitates the interactions between AcrB and the \u03b2-barrel domain of AcrA protomer-II and a short \u03b1-helix of the DC subdomain from the adjacent AcrB protomer (Figure 5A and D). This contact resembles the interactions observed between the metal transporter subunits CusB and CusA, which are homologs of AcrA and AcrB, respectively (Su et al., 2011). This \u03b2-hairpin motif in the DN subdomain of AcrB has been shown to be important for the proper assembly of a functioning pump (Weeks et al., 2014). The linking region between AcrB subdomains PN2 and DN contacts the end of a \u03b2-sheet in the MP domain of AcrA protomer-II (Figure 5A and D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig5-v2.jpg)\n\n**Figure 5.:** (A) A pair of AcrA protomers interacts with one AcrB protomer. Subdomains of the AcrB are labeled with different colors. (B) Cartoon schematic of the domains/subdomains shown in (A). (C) Interaction between AcrA protomer-I and AcrB. (D) Interaction between AcrA protomer-II and AcrB. There are 120 and 180 degrees rotations in (C) and (D) relative to (A), respectively.\n\nOverlaying the model of the apo pump with the pumps in the presence of ligands reveals profound conformational changes at the AcrA-TolC, AcrA-AcrA and AcrA-AcrB interfaces (Figure 6; Video 2). The quasi six-fold symmetry of the interface between AcrA helical hairpin and open-state TolC reduces to three-fold symmetry in the apo-form. The rearrangements of AcrA repack the \u03b2-barrel and membrane proximal domains in a different orientation on the surface of the AcrB and seal the gaps to the periplasm. Conformational changes in the periplasmic headpiece of AcrB instigate repacking of all four of the AcrA domains, and this causes the reorganization of the coiled-coiled domain of AcrA, which is the key step to organize the HTH motifs and open the TolC channel. Thus, the pump is a highly allosteric system in which conformational changes associated with ligand binding by the apo state of AcrB are communicated over a long distance to TolC through the repacking of protein-protein interfaces (Fischer and Kandt, 2013; Zgurskaya and Nikaido, 1999).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig6-v2.jpg)\n\n**Figure 6.:** (A) Structure of AcrAB-TolC/puromycin pump visualized in side view. (B) Top view (top panel) and side views (middle and bottom panels) of AcrA-TolC interface in puromycin-bound state. (C). Structure of apo AcrAB-TolC pump visualized in side view. (D) Top view (top panel) and side views (middle and bottom panels) of AcrA-TolC interface in apo state. Subunits are color-coded accordingly: TolC (red), AcrA (orange and green) and AcrB (blue).\n\n![Video 2.](https://cdn.elifesciences.org/articles/24905/elife-24905-media2.mp4.jpg)\n\n**Video 2.:** Intermediate states are interpolated between the two resolved states.\n\n## Discussion\n\nIn this study, we have captured structures of the full pump assembly with a closed channel in the apo-state and with an opened channel in the presence of inhibitor or antibiotic. We propose that the apo-form of the pump with a closed TolC represents a resting state (Figure 1), while the pump assemblies with opened TolC in the presence of transportable ligands represent transport states, in which the AcrB trimer adopts asymmetric LLT, LTT or LTO conformations. The three pump components undergo significant conformational changes when the assembly switches from the resting-state to the transport-states. In the transport-states, ligand binding is associated with large conformational changes in AcrB for both PN1/PC2 and PN2/PC1 structural modules that form the drug-binding pocket (Eicher et al., 2014) (Figure 3B). However, the interfaces between TolC and AcrA, and between AcrA and AcrB do not change significantly in the different transport states (LTO, LTT, LLT). We propose that ligand binding in the apo state instigates quaternary structural changes in AcrB that are communicated to AcrA, which in turn repacks to trigger tertiary structural changes in TolC that open the channel from a sealed resting state. The repacking to AcrA is critical to seal the gaps in the pump, which would otherwise allow substrate to leak into the periplasm. Thus, the long-distance allosteric coupling between AcrB and TolC, mediated through AcrA, ensures that TolC channel opening is synchronized with closing the assembly to the periplasm. When substrate is absent, the pump assembly returns to its resting state. The above conformational changes are accompanied by a contraction of the pump along the long axis in its transport state by nearly 10 \u00c5 (Figure 7). We anticipate that the transition from the resting state to the transport states will entail a local compression of the periplasm to accommodate the axial contraction of the pump, and local curvature of the outer membrane and inner membrane near the portal of AcrB. These changes may have impact on the energetics and kinetics of the transport process.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/24905/elife-24905-fig7-v2.jpg)\n\n**Figure 7.:** (A) The resting state of the apo pump with TolC in closed-state and the AcrB trimer in LLL conformation. (B) The apo pump switches to a transport-state in the presence of transport substrate (s), opening the TolC channel (right arrow). In the transport-state, AcrB cycles through three, structurally distinct states (L, T and O), two of which are shown in the left panel (T and O). Cycling is obligatory for unidirectional transport, driven by coupling with transmembrane proton conduction through the TM domain (red arrow). In the absence of substrate, the pump reverts to the resting state and closes the TolC channel (left arrow). The views are cross-sections through the cell envelope, with only two protomers shown for each of the pump components. The inset cartoons on the left in (A) and the right in (B) show views down the molecular axis of the AcrB trimer, indicating the states with the configuration inferred from the cryoEM reconstructions. The model predicts a contraction along the long axis of the pump with the switch from apo- to transport-states.\n\nRND-type tripartite multidrug efflux pumps in Gram-negative bacteria are one of the major contributors to multidrug resistance. Efflux pump inhibitors could be used as adjunct therapies to increase the potency of existing antibiotics and counter the emergence of multidrug resistant bacteria. Efforts have been focused on the development of inhibitors for the transporter components. Due to the capacity of the transporters to recognize a broad range of substrates, such compounds are particularly difficult to identify (Opperman and Nguyen, 2015). In the presence of inhibitor MBX3132, the AcrB trimer is predominantly trapped in the symmetric TTT conformation (Figure 2\u2014figure supplement 1E), possibly because the inhibitor has high affinity to AcrB and cannot be transported. Thus, the cryoEM structure suggests that inhibitors like MBX3132 could effectively inhibit AcrAB-TolC efflux through saturated binding and blocking all sites and prevent AcrB from cycling through different states. It may be possible to block drug translocation by targeting the assembly or conformational switching of the tripartite pumps themselves. In this regard, the interaction interfaces between components, which are well resolved in our cryoEM structure, may be important drug-targeting sites to inhibit the assembly of this and other tripartite pumps.\n\n## Materials and methods\n\n### Construction of vectors for overexpression of disulfide-bond stabilized AcrAB\u2013TolC complex\n\nThe cysteine-substitutions were introduced for residues AcrA_S273 and AcrB_S258 into the individual components by site-directed mutagenesis using plasmid pAcBH as a template and primers AcrAS273C_F: 5\u2019- GAT CAG ACC ACT GGG TGT ATC ACC CTA CGC GCT ATC ttc-3\u2019/AcrAS273C_R: 5\u2019-GAA GAT AGC GCG TAG GGT GAT ACA CCC AGT GGT CTG ATC-3\u2019, AcrBS258C_F: 5\u2019-GTG AAT CAG GAT GGT TGT CGC GTG CTG CTG CGT GAC-3\u2019 /AcrBS258C_R: 5\u2019-GTC ACG CAG CAG CAC GCG ACA ACC ATC CTG ATT CAC-3\u2019, resulting in the construct pAcBH-AcrAS273CAcrBS258C. The tolC gene was amplified using primers TolCinf_F: 5\u2019-AAG GAG ATA TAC ATA TGA AGA AAT TGC TCC CCA TTC TTA TCG GCC-3\u2019 and TolC1392inf_R: 5\u2019-TTG AGA TCT GCC ATA TGT CAA TCA GCA ATA GCA TTC TGT TCC GGC GT-3\u2019. The PCR product was then inserted into the NdeI site of pRSFDuet-1 using the In-Fusion cloning method (Clontech), generating the construct pRSFDuet-1-tolC1392.\n\n### Protein preparation\n\nThe components of AcrABZ-TolC pump were co-expressed and the cellular membrane was prepared as described previously (Du et al., 2014). The purification procedure was optimized to improve the homogeneity and stability of the protein complex. 3.5 g of cellular membrane was re-suspended in 50 ml lysis buffer (20 mM Tris pH 8.0, 400 mM NaCl) and was solubilized with 1.5% DDM. The AcrABZ\u2013TolC complex purified by nickel affinity chromatography was loaded onto a Superose 6 column equilibrated with GF buffer (20 mM Tris pH 8.0, 400 mM NaCl, 0.03% DDM). Fractions containing purified AcrABZ\u2013TolC complex were pooled and concentrated to 0.1 mg ml\u22121 using a Vivaspin column (MWCO: 100 kDa). Amphipol A8-35 (100 mg ml\u22121) was mixed with the protein solution with a mass ratio of amphipol A8-35 to protein of 4:1. The mixture was incubated at 4\u00b0C for 3 hr. Polystyrene beads (Bio-Beads SM-2) were then added to the protein/DDM/amphipol A8-35 mixture with a mass ratio of Bio-Beads SM2 to detergent of 10:1. The mixture was gently rotated at 4\u00b0C overnight to remove DDM. The detergent-exchanged AcrABZ\u2013TolC complex was concentrated to 2 mg ml\u22121 using a Vivaspin column (MWCO: 100 kDa). Puromycin (100 mM) or pyranopyridine inhibitor MBX3132 (50 mM) was added to the protein sample at a final concentration of 1 mM or 0.4 mM, respectively, and the mixture was incubated on ice for 1 hr before embedding in vitreous ice.\n\nThe disulfide-bond stabilized AcrAB\u2013TolC complex was overexpressed and purified as follows: Genes encoding AcrA and AcrB were deleted from the chromosome of Escherichia coli strain C43 (DE3). The resulting C43 (DE3) \u2206acrAB strain was transformed with plasmids pAcBH-AcrAS273CAcrBS258C and pRSFDuet-1-tolC1392. The culture was grown in 2xYT medium with 100 mg ml\u22121 carbenicillin and 50 mg ml\u22121 kanamycin at 37\u00b0C until the culture reached an absorbance, at 600 nm, of 0.5 and was then induced by the addition of 0.1 mM isopropyl 1-thio-\u03b2-D-galactopyranoside (IPTG) at 25\u00b0C overnight. Cells were harvested by centrifugation, and pellets from 10 L culture were re-suspended in 150 ml of lysis buffer (400 mM sodium chloride, 20 mM Tris-HCl, pH: 8.0) with 1 tablet per 50 ml EDTA free protease inhibitor cocktail tablets, 5 U ml\u22121 DNase I and 5 mg ml\u22121 lysozyme, and the mixture was stirred at 4\u00b0C for 1 hr to digest the cell wall. The cells were lysed by eight passages through a high-pressure homogenizer (EmulsiFlex) at 15,000 psi. Cell debris was pelleted by centrifugation at 9000\u00a0g for 30 min. Cellular membrane was pelleted by ultracentrifugation at 125,755\u00a0g for 3 hr. 3.5 gram of membrane pellets were re-suspended in 50 ml of lysis buffer with protease inhibitors and were solubilized by adding 1.5% DDM and stirring at 4\u00b0C for 3 hr. Debris was pelleted by ultracentrifugation at 125,755\u00a0g for 30 min. Imidazole was added to the membrane solution to a final concentration of 15 mM. Histidine-tagged AcrAB-TolC complex was purified by nickel affinity chromatography using a HiTrap 1 ml chelating column (GE Healthcare Life Sciences) equilibrated with GF buffer (400 mM sodium chloride, 20 mM Tris-HCl, pH 8.0, 0.03% DDM) containing 20 mM imidazole. The column was washed with 50 mM imidazole added to GF buffer. Purified AcrAB-TolC complex was eluted with 500 mM imidazole in GF buffer, concentrated and loaded onto a Superose 6 column equilibrated with GF buffer. Fractions 11\u201315 containing purified AcrAB-TolC complex were pooled and concentrated to 1 ml using a Vivaspin concentrator (MWCO 100 kDa). Amphipol A8-35 (100 mg/ml) was added to a final concentration of 10 mg/ml and the final volume was adjusted to 2 ml using lysis buffer. The mixture was incubated on ice for 3 hr. 250 mg of Polystyrene beads (Bio-Beads SM2) was then added to the protein/DDM/Amphipols A8-35 mixture and rotated at 4\u00b0C overnight to remove DDM. The mixture was loaded onto a mini chromatography column to remove the Polystyrene beads (Bio-Beads SM2). The detergent-exchanged AcrAB\u2013TolC complex was concentrated to 2 mg ml\u22121 using a Vivaspin column (MWCO: 100 kDa) before embedding in vitreous ice.\n\n### Crystallization of AcrBZ\u2013DARPin\n\nThe AcrBZ\u2013DARPin complex has been found to yield well diffracting crystals in the presence of antibiotics. The complex was purified as described previously (Du et al., 2014). The protein was diluted to 10 mg ml \u22121 using sample buffer (10 mM HEPES pH: 7.5, 50 mM sodium chloride, 0.03% DDM) and was incubated with 1 mM of puromycin for 3 hr at 4\u00b0C before crystallization trials. The crystals of AcrBZ\u2013DARPin complex were grown at 20\u00b0C using the hanging-droplet vapor diffusion method by mixing 4 \u03bcl of protein with 2 \u03bcl of reservoir solution (80 mM Bis-Tris, pH 6.0, 50 mM sodium citrate, 120 mM KCl, 10% PEG 4000, 0.5% N,N-dimethyldodecylamine N-oxide). 200 \u03bcl of oil (mixture of 40% silicon oil and 60% paraffin oil) was applied over 1 ml reservoir solution to control the rate of vapor diffusion. Crystals appeared 24 hr after setting up the crystallization trials and reached maximal size in 1 week. The crystals were transferred briefly into reservoir solution supplemented with 25% v/v glycerol as cryo-protectant before flash freezing in liquid nitrogen.\n\n### Crystallographic data collection and structure refinement\n\nThe AcrBZ\u2013DARPin complex in the presence of puromycin crystallized in space group P212121. Data sets were collected using beamline I24 at the Diamond Light Source. The diffraction data were processed using iMosflm (Battye et al., 2011) and scaled using SCALA (Evans, 2006). As the crystals are sensitive to radiation damage, diffraction data of contiguous 15-degree wedges were collected from multiple crystals and merged to obtain a full dataset. Structures were solved by molecular replacement using Phaser with AcrB\u2013DARPin complex (PDB accession: 4DX5) as a search model and refined using PHENIX and REFMAC5 (Murshudov et al., 1999). Coot was used for modeling (Emsley et al., 2010). Maps calculated from molecular replacement using the AcrB-DARPin complex revealed clear electron density for AcrZ. Data collection and refinement parameters are presented in Supplementary file 3. Structures are shown in Figure 2\u2014figure supplement 3.\n\n### Electron cryo-microscopy\n\nFor the AcrABZ-TolC/Puromycin sample, a 2.0 \u03bcl aliquot at 2 mg/ml was applied onto holey carbon film supported by a 200-mesh R2/1 Quantifoil grid (Quantifoil) that had been previously washed and glow discharged. The grid was blotted and rapidly frozen in liquid ethane using a Vitrobot IV (FEI) with constant temperature and humidity. The grid was stored in liquid nitrogen before imaging. Images of frozen-hydrated AcrABZ-TolC/puromycin particles were acquired on a FEI Tecnai G2 Polara electron microscope (FEI) operated at 300 kV using a K2 Summit direct electron detector camera (Gatan).\n\nFor the samples AcrABZ-TolC/MBX3132 and apo AcrAB-TolC, a 3 \u03bcl aliquot at a concentration of 2 mg ml\u22121 was applied onto glow-discharged holey carbon grid (Quantifoil Au R1.2/1.3, 300 mesh). The grid was blotted and flash frozen in liquid ethane using a Vitrobot IV (FEI) with constant temperature and humidity. The grid was stored in liquid nitrogen before imaging. Zero-energy-loss images of frozen-hydrated AcrABZ-TolC/MBX3132 or apo AcrAB-TolC particles were recorded automatically on an FEI Titan Krios electron microscope at 300 kV, using a slit width of 20 eV on a GIF Quantum energy filter and a Gatan K2-Summit direct electron detector.\n\nThe data collection parameters for all three specimens are summarized in Supplementary file 1.\n\n### Image processing and 3D reconstruction\n\nFor the AcrABZ-TolC/puromycin pump, dose-fractionated super-resolution raw image stacks were binned 2 \u00d7 2 by Fourier cropping resulting in a pixel size of 1.62 \u00c5 for further image processing. Each image stack was subjected to motion correction using dosefgpu_driftcorr (Li et al., 2013), and a sum of sub-frames 1\u201329 in each image stack was used for further image processing. The signal in the motion-corrected images extends beyond 4 \u00c5. Defocus and astigmatism were determined for each micrograph by CTFFIND3 (Mindell and Grigorieff, 2003). Each image was binned 2 \u00d7 2 to enhance image contrast for particle picking. 99,385 particles were boxed out manually from 6456 micrographs using e2boxer.py. An initial map was generated with 3-fold symmetry imposition from 2-D reference-free averages using EMAN2 (Tang et al., 2007). The initial reference map was low pass filtered to 60 \u00c5 resolution and was used as a starting point for the RELION-1.4 refinement (Scheres, 2012). The first round of refinement resulted in a sub-nanometer resolution map. After this step, several rounds of iterative 3D classification and 3D auto-refinement were run to extract a self-consistent subset of the particle data. 67,436 particles were selected after 3D classification and further refined with averages from sub-frames 2\u201316 to achieve 3.9 \u00c5 resolution based on the gold standard criterion (Henderson et al., 2012). The final refinement was done using oversampling by a factor of two on the whole dataset. A soft mask in RELION post-processing was applied before computing the FSCs. The final resolution was estimated by 0.143 cutoff of FSCt. Local resolution variations were estimated with ResMap using the two independent maps (Kucukelbir et al., 2014).\n\nFor AcrABZ-TolC/MBX3132, the software MotionCorr (Li et al., 2013) was used for whole-frame motion correction, Ctffind4 (Rohou and Grigorieff, 2015) for estimation of the contrast transfer function parameters, and RELION-1.4 package for all other image processing steps. For apo AcrAB-TolC, the software MotionCor2 (Zheng et al., 2016) was used for whole-frame motion correction and dose weighting, Gctf (Zhang, 2016) for estimation of the contrast transfer function parameters, and RELION-2.0/beta package for all other image processing steps. A particle subset was manually selected to calculate reference-free 2D class averages, which was then used as templates for automated particle picking of the entire data set. The templates were lowpass filtered to 20 \u00c5 to limit model bias. Then initial runs of 2D and 3D classifications were used to remove the heterogeneous particles, as well as the false positive particles from the auto-picking. We selected good particles for further analysis based on the quality and high resolution in the 2D and 3D classification.\n\nFor the AcrABZ-TolC/MBX3132 pump, 65,256 particles were picked automatically from a total of 1150 micrographs. After initial 2D and 3D classifications, a homogenous subset of 33,587 particles was selected for a first 3D auto-refinement, generating a reconstruction with a resolution of 6.67 \u00c5. After per-particle motion correction and radiation-damage weighting, the polished particles were submitted to a second round of 3D auto-refinement by applying a soft mask around the TolC, AcrA and the periplasmic headpiece of AcrB (Scheres, 2016). These polished particles gave a reconstruction with a resolution of 3.6 \u00c5 based on the Gold-standard FSC 0.143. In the case of apo AcrAB-TolC pump, 95,410 particles were picked automatically from a total of 2292 micrographs. After initial 2D classification and two rounds of 3D classifications, 13,544 homogeneous particles were selected for 3D auto-refinement, which generated a map with a resolution of 6.5 \u00c5 based on the Gold-standard FSC 0.143. 3D classification also identified a small subset of particles, in which TolC is rotated by 60 degrees with respect to AcrA.\n\nAll 3D classifications and refinements were started from a 50\u201360 \u00c5 low-pass filtered initial model, the first of which was made from our previous 16 \u00c5 resolution map. The density map was sharpened by applying a negative B-factor estimated by automated procedures (Rosenthal and Henderson, 2003). Local resolution variations were estimated using ResMap and visualized with Chimera (Pettersen et al., 2004).\n\n### Symmetry release and focused classification\n\nThe density map generated from RELION was used to assess the structural asymmetry of the pump by performing focused classification. A soft mask of the targeted region of this map was generated using relion_mask_create with a soft edge extension of 5 pixels (Figure 2\u2014figure supplement 1A; Figure 3\u2014figure supplement 1A). We used this masked volume to set to zero the density of the targeted region from the 3D map of the whole pump, and generated a modified map (Figure 2\u2014figure supplement 1B; Figure 3\u2014figure supplement 1B). This altered density map was rotated by 120 and 240 degrees about the molecular three-fold axis. The three resulting 3D density maps represent the entire pump with the deletion of each of the three-targeted regions (i.e. each of the three subunits of AcrB) (Figure 2\u2014figure supplement 1C; Figure 3\u2014figure supplement 1C). Next, each of these three altered density maps was projected in 2D in the corresponding orientations of each of the raw particle images and subtracted from the original image (Figure 2\u2014figure supplement 1C; Figure 3\u2014figure supplement 1C). Altogether, the particle images (33,337 for the pump with MBX3132 and 67,436 for the pump in presence of puromycin) used in the final reconstruction generated three times that many subtracted particle images. Each of the three subtracted projections from an individual particle image (Figure 2\u2014figure supplement 1C; Figure 3\u2014figure supplement 1C) was assigned appropriate Euler angles so that they are all in the same orientation in the 3D map to permit 3D classification (Figure 2\u2014figure supplement 1D; Figure 3\u2014figure supplement 1D). The soft mask generated in the beginning of this process (Figure 2\u2014figure supplement 1A; Figure 3\u2014figure supplement 1A) was used for the 3D classifications to remove density outside the mask. We ran rounds of 3D classifications using the particle alignment parameters of the symmetry-imposed map of the pump. Each round was iterated 25 times and classified into several subsets (Figure 2\u2014figure supplement 1D; Figure 3\u2014figure supplement 1D). Focused classification of pump with MBX3132 result in two populations different in the binding site of MBX3132 according to crystal structure (Figure 3\u2014figure supplement 1D). Subsets of original and unmodified particle images with different putative ligand binding sites were selected for 3D refinement with no imposed symmetry. We carried out the similar approach on the data of the\u00a0pump in presence of puromycin. After 3 rounds of 3D classification, we identified two significant conformations. Both class 1 and 2 have a conformation in the pore domain that is closed towards the periplasm. In contrast, the pore domain in class four shows an opened conformation facing the periplasm. We selected the original and unmodified pump particle images that assign only one member from class 1 and 2 for another round of 3D refinement without symmetry constraint (Figure 2\u2014figure supplement 1E).\n\n### Model docking and optimization\n\nThe crystal structures of trimeric AcrBZ (PDB code: 4C48) and trimeric TolC (PDB code: 1EK9) were docked into the cryoEM map by using Chimera. Both the TolC and AcrBZ models were adjusted manually to optimize the local fit to density using Coot. Individual domains of AcrA from the crystal structure (PDB code: 2F1M) including \u03b2-barrel domain, lipoyl domain and \u03b1-helical hairpin domain were fitted to the density map using Chimera (Pettersen et al., 2004). A homology model of the MP domain of AcrA was built based on the structure of MexA (PDB code: 2V4D) and fit to the density. Four conformationally different structures of the \u03b1-helical hairpin domain (Chain A-D in the crystal structure) (Figure 4\u2014figure supplement 3) were evaluated for their fit into the density map of our two protomers. The \u03b1-helical hairpin structures from chains A and D fit best into the density map for AcrA protomer-I and for protomer-II in the pump assembly, respectively. The model for the complete pump was optimized using Phenix real-space refinement (Wang et al., 2014) with three-fold symmetry imposed (Supplementary file 2). The model of the whole pump complex was validated by computing a FSC with the density map. It is 4.1 \u00c5 at 0.5 FSC (Figure 3\u2014figure supplement 2A). MolProbity (Chen et al., 2010) statistics were computed to ensure proper stereochemistry (Supplementary file 2).\n\nThe 5.9 \u00c5 resolution map calculated from the particle subset in class 1 and 2 without symmetry restraint was fit with the symmetric model based on the 3.9 \u00c5 density map. We found that TolC and AcrA did not show conformational change. We noticed during the modeling process of TolC alone that the TolC and AcrA interface is polymorphic, with a slight majority of TolC rotated 60 degrees with respect to the dominant configuration seen in the inhibitor bound pump structure, as shown in Figure 3.\n\nHowever, the region for the AcrB in the new map revealed significant mismatch to the symmetric model. A better fit was obtained using the asymmetric AcrBZ crystal structure. Model optimization was then done with Phenix real-space refine (Wang et al., 2014) using stronger secondary-structure restraints parameters to maintain proper stereochemistry where weak density exists. Moreover, atomic displacement parameters (B-factors) were computed to determine the level of resolvability throughout the map, which correlated well with Resmap results. The Coot adjustments and Phenix model optimization were iterated one additional round to ensure that the model was a good representation of the map.\n\nFor the modeling of the apo state AcrAB-TolC pump, resolved to 6.5 \u00c5 resolution, a similar method to modeling of the asymmetric maps was utilized. Crystal structures were rigid-body fit into the density map and model optimization was then carried out with Phenix real-space refine. Again, due to the weaker resolution stronger stereochemical and secondary structure restraints were used to ensure that \u03b1-helices and \u03b2-sheets did not deviate far from their expected geometry. Manual adjustments were kept to a minimum to reduce human bias in the modeling procedure, with Coot only being used to fix obvious errors such as C-beta deviations. A final check of MolProbity and cross-correlation was done to ensure model quality.\n\n### Accession numbers\n\nAccession codes: cryoEM maps and models of AcrABZ-TolC have been deposited in EMDB under accession code EMD-8636 (apo form), EMD-8640 (puromycin), EMD-3636 (MBX3132 inhibitor), and in the Protein Data Bank under accession code 5V5S(apo form), 5V78 (puromycin), and 5NG5 (MBX3132). The crystal structure of AcrBZ has been deposited to Protein Data Bank under accession code 5NC5.\n",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "82ea7e1f-0462-4d16-965b-fcfec79c3e26",
+      "submission_id": "fb284e45-2b5e-482a-a49b-ac3c632a5f2e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Olga Boudker, Weill Cornell Medical College , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.24905.041](https://doi.org/10.7554/eLife.24905.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An allosteric transport mechanism for the AcrAB-TolC Multidrug Efflux Pump\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Olga Boudker, is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Richard Aldrich as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Martin Picard (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The reviewers were all very enthusiastic about your work and had suggestions that were editorial in nature:\n\nReviewer 1:\n\nIn the manuscript, the authors present a series of Cryo-EM and crystal structures that illuminate the allosteric coupling in RND family of transporters. They describe the structures of the apo, and the substrate- or inhibitor-bound states of AcrAB-TolC complex. In the apo state, the protein channel that extends through the periplasmic space is closed at the AcrA-TolC juncture. Binding of the substrate or inhibitor to AcrB is coupled to conformational changes through AcrA to the opening of the constriction at AcrA-TolC interface. The presented structures are informative and the work seems solid. I have only comments that are editorial in nature:\n\n1) The physiological role of AcrZ and why it was used in the studies of the substrate-bound pump need to be described in more detail.\n\n2) It is not clear whether there are any structural changes that would propagate through AcrA between substrate- and inhibitor-bound pumps.\n\n3) More detailed figures fro Apo pump showing differences between two conformations of AcrA and their packing with TolC. Also, showing the openings to the periplasm.\n\n4) Show puromycin density in Figure 3\u2014figure supplement 3.\n\n5) Figure 3\u2014figure supplement 3: spelling \"deepinding\".\n\n6) Show more detailed comparison of AcrA- TolC interactions in ligand-bound and apo state.\n\n7) A bit more detailed description of what are the overall structural changes between closed apo to open substrate-bound state?\n\n8) Switch the order of Figures 2 and 3.\n\n9) Figure 4 could be clearer if the structures in A and B were shown on the same scale and in the same orientation.\n\n10) In Figure 4\u2014figure supplement 1, which structure is shown in B?\n\n11) Subsection \u201cThe structure of pump in complex with inhibitor MBX3132 reveals the interaction interfaces between pump components at atomic resolution\u201d paragraph two, did you mean Figure 4\u2014figure supplement 1B?\n\n12) Please show in Figure 4 the location of the VGL motif in TolC and the interacting residues of AcrA.\n\n13) In subsection \u201cThe structure of pump in complex with inhibitor MBX3132 reveals the interaction interfaces between pump components at atomic resolution\u201d paragraph three what are the residue pairs?\n\nReviewer 2\n\nThe Cambridge group earlier was successful in elucidating, for the first time, the structure of the AcrAB-TolC tripartite efflux complex. Here they report, together with other scientists, on a more refined structure of this complex both in its resting state and in the presumably transport-engaged state, and show how the closed end of the TolC channel may become opened in association of the altered conformation of the pump AcrB. Improvement in technology that led to these wonderful results included many features, such as substitution of Amphipol for conventional detergents and use of focused classification in selecting images. The manuscript is fine. I have only mostly minor comments.\n\nSubsection \u201cCryoEM structure determination\u201d paragraph one. Citing the two papers where amphipol was successfully used would not be enough, especially the journal is targeted toward diverse audience (and also because these two papers do not even cite the original Jean-Luc Popot 1996 PNAS paper on amphipol!).\n\nParagraph two of the same section. I suppose that disulfide-linked AcrAB recruits not only TolC, but also additional AcrA monomers, as seen in Figure 1\u2014figure supplement 2A.\n\nIn the last line of paragraph two: I believe that this should be Figure 1\u2014figure supplement 2, B and C.\n\nEven with the non-intuitive naming convention of supplementary figures, it does not help that Figure 3 supplement comes before Figure 2 supplement. Please fix this confusing numbering system for the supplementary figures.\n\nSubsection \u201cThe structure of pump in complex with inhibitor MBX3132 reveals the interaction interfaces between pump components at atomic resolution\u201d. Inhibitor MBX3132 gave such wonderful results precisely because it binds very tightly to the binding pocket, as seen in the very large negative values of its calculated binding energy in Sjuts et al., 2016 The high affinity of this compound must be mentioned somewhere.\n\nIn paragraph three of the same section: conserved Val-Gly-Leu/Thr element in AcrA? It may be obvious, but it would be better to specify AcrA because TolC is also discussed in the same paragraph.\n\nAlso in this paragraph, the tip-to-tip interaction of AcrA and TolC HTH motifs is made very clear with Figure 4. However, non-specialists will miss the absence of discussion (and especially figure!) on what happens to these residues in the complex containing a closed TolC conformer. Also, the closed conformer of TolC is supposed to be stabilized by multiple interactions between coiled coils. Are the tip-to-tip interactions enough to overcome these pre-existing multiple interactions?\n\nParagraph four of the same section and Figure 5. This is very nice and informative, but I miss the comparison with the situation in the apo complex. The next paragraph talks about \"overlays\", but again there is no figure showing such overlays (especially for the AcrA-TolC interface) even in the supplement.\n\nDiscussion section. If TolC-AcrA interface does not change significantly by the binding of the substrate to AcrB, how could the TolC gate become open in the normal operation of the pump? This reminds us that the \"open\" complex was seen only when MBX3132 was bound to all three of the trimers, and could be an artifact of the experimental setup.\n\nReviewer 3\n\nThe manuscript by Wang et al.et al. describes the near atomic cryoEM structure of the AcrAB-TolC efflux pump from E. coliE. coli. Structures of the full pump assembly have been obtained in the apo state and in the presence of a substrate or of an inhibitor. For the first time the authors describe the pump under its closed and open conformations. To do so, they have optimized the biochemical procedure to stabilize the genuine complex, by inserting cysteine residues where the contacts between partners of the pumps are anticipated to take place and by subjecting the pump to disulphide crosslinking. The assembly is stabilized by amphipols. The structures have been obtained by crystallography (AcrBZ in the presence of substrate) and cryoEM (tri-quadripartite structures) using the latest technical developments and methodologies.\n\nThis work is a real tour de force and will undoubtedly have a great impact in the field. Hence we fully recommend it to be published in eLIFEeLife without further additional experiments to be performed. We only point below minor comments in order for the manuscript to be fully acceptable.\n\nAcrZ seems to be present in the structures obtained in the presence of puromycin and in that in the presence of the inhibitor but absent in the apo states. The authors do not comment upon that point. Could it be that indeed AcrZ is recruited differently whether the substrate is present or not? What could be the possible role of AcrZ on the transport and/or activity?\n\nNote that we advise the authors not to color AcrZ in purple because it is difficult (in particular for a daltonian reviewer) to see it in the very middle of an AcrB molecule colored in blue!\n\nSubsection \u201cThe transport state of the full pump with opened channel\u201d first paragraph: Could the authors give the reference to the paper mentioning that puromycin is a validated transport substrate of AcrB?\n\nWe believe that here and there, additional papers could be mentioned, see below:\n\nSubsection \u201cCryoEM Structure determination\u201d: There are more and more papers showing that amphipols are indeed very useful in the EM field. The authors refer to the work by Baker, Fan and Serysheva, 2015 and by Liao, Cao, Julius and Cheng, 2013. We suggest to also cite the following review by J-L Popot (Zoonens and Popot, 2014), so that the lab where this molecule was developed is also acknowledged.\n\nSubsection \u201cThe structure of pump in complex with inhibitor MBX3132 reveals the interaction interfaces between pump components at atomic resolution\u201d, paragraph two: Maintenance of TolC thanks to the interprotomer network involving R367, T152, D153 and Y362 was already shown thanks to electrophysiology (Andersen et al., 2002), microbiology (Augustus et al., 2004) and crystallography (Bavro et al., 2008).\n\nParagraph four of the same section: Non equivalent interactions between each AcrB promoter and each pair of AcrA promoter is reminiscent to the work by the laboratory of Helen Zgurskaya on the related pump TriABC-OpmH (Ntreh, Weeks, Nickels and Zgurskaya, 2016)\n\nIn paragraph five of the section: Wang et al. comment on the fact that the pump is a highly allosteric system in which conformational changes associated with ligand binding by AcrB are communicated to TolC. Conversely, it was shown that the MFP is mandatory for the activity of the pump (Zgurskaya and Nikaido, 1999), a fact that was nicely discussed by Fischer and Kandt (in section 4.3.3 of Fischer and Kandt, 2013, BBA \u2013 Biomembranes 1828, 632-641).\n",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6041c1ea-a6a9-477c-b18b-cbec5c5810ad",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C1",
+      "claim": "Bacterial efflux pumps confer multidrug resistance by transporting diverse antibiotics from the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Bacterial efflux pumps confer multidrug resistance by transporting diverse antibiotics from the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about bacterial efflux pumps and their role in antibiotic resistance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "28557997-e9e6-4a1f-8070-1bbd3a831022",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C2",
+      "claim": "In Gram-negative bacteria, some efflux pumps form multi-protein assemblies that span the cell envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-negative bacteria, some of these pumps form multi-protein assemblies that span the cell envelope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "9f620895-f8bf-42da-b2fb-ed1037ec6f79",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C3",
+      "claim": "Near-atomic resolution cryoEM structures of the Escherichia coli AcrAB-TolC multidrug efflux pump in resting and drug transport states have been determined.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the near-atomic resolution cryoEM structures of the Escherichia coli AcrAB-TolC multidrug efflux pump in resting and drug transport states, revealing a quaternary structural switch that allosterically couples and synchronizes initial ligand binding with channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental finding of the study, supported by the cryoEM data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "da279e9e-3c71-42be-b296-15e8c9bdc7c4",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C4",
+      "claim": "A quaternary structural switch allosterically couples and synchronizes initial ligand binding with channel opening in the AcrAB-TolC pump.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report the near-atomic resolution cryoEM structures of the Escherichia coli AcrAB-TolC multidrug efflux pump in resting and drug transport states, revealing a quaternary structural switch that allosterically couples and synchronizes initial ligand binding with channel opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the structural data obtained in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "625f6c33-c8ba-4f8b-aebf-1c1ee632ac1d",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C5",
+      "claim": "Within the transport-activated state, the channel remains open even though the pump cycles through three distinct conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the transport-activated state, the channel remains open even though the pump cycles through three distinct conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural observations from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "915a42c2-6a7d-4b0d-bcb5-329319c088e5",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C6",
+      "claim": "Drug efflux pumps play important roles in intrinsic or acquired drug resistance to a wide variety of currently available antimicrobial agents.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug efflux pumps play important roles in intrinsic or acquired drug resistance to a wide variety of currently available antimicrobial agents (Pu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e88032f4-d37d-4093-b0cf-bf77a9f4aaeb",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C7",
+      "claim": "The components of tripartite efflux assemblies include an outer membrane protein, a plasma membrane-spanning protein and a periplasmic protein that connects the two trans-membrane components.",
+      "claim_type": "EXPLICIT",
+      "source": "The components of these assemblies include an outer membrane protein, a plasma membrane-spanning protein and a periplasmic protein that connects the two trans-membrane components (Du et al., 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8fd2113d-f53e-468b-80c9-7d3f6932c3b5",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C8",
+      "claim": "AcrAB-TolC is a RND-based tripartite efflux pump comprised of TolC, AcrA, and AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "AcrAB-TolC is a RND-based tripartite efflux pump, comprised of the outer membrane protein TolC, the periplasmic membrane fusion protein AcrA, and the inner membrane transporter AcrB, which cycles through three different conformational states during the drug transport process: access (L), binding (T) and extrusion (O) (Du et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "aefe10b6-4f8e-471a-badb-b92f1856d1e8",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C9",
+      "claim": "AcrB cycles through three different conformational states during the drug transport process: access (L), binding (T) and extrusion (O).",
+      "claim_type": "EXPLICIT",
+      "source": "AcrAB-TolC is a RND-based tripartite efflux pump, comprised of the outer membrane protein TolC, the periplasmic membrane fusion protein AcrA, and the inner membrane transporter AcrB, which cycles through three different conformational states during the drug transport process: access (L), binding (T) and extrusion (O) (Du et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "d9f04528-58ab-4500-8855-b7bb264a426f",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C10",
+      "claim": "AcrZ is a small peptide that modifies the activity of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "A small peptide, AcrZ, has been identified that modifies the activity of AcrB (Hobbs et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "65571f2e-b352-4fef-bb7a-e3319ad9290b",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C11",
+      "claim": "Previous electron microscopy studies of the AcrAB-TolC pump have revealed the overall shape of the pump and the relative arrangement of its components.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electron microscopy studies of the AcrAB-TolC pump have revealed the overall shape of the pump and the relative arrangement of its components (Daury et al., 2016; Du et al., 2014; Jeong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "5fd636c3-a001-4984-aeaa-95da382f24fb",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C12",
+      "claim": "Previous electron microscopy studies were unable to identify the detailed interaction interfaces between the components due to limited resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the limited resolution, these studies were unable to identify the detailed interaction interfaces between the components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limitations of prior studies cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "3958273f-4467-4e39-9137-8574a4109c06",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C13",
+      "claim": "The mechanism of pump assembly and channel opening is presently unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the mechanism of pump assembly and channel opening is presently unclear (M\u00fcller and Pos, 2015; Zgurskaya et al., 2015) and requires detailed structural information of the pump in the different conformational states that accompany drug translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature indicating gaps in knowledge.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "5cc74cee-6743-469c-b527-45c433f240a3",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C14",
+      "claim": "The quality of the cryoEM maps enable unambiguous modeling of all components and identification of the conformational asymmetry in AcrB in the presence of antibiotic.",
+      "claim_type": "EXPLICIT",
+      "source": "The quality of the cryoEM maps enable unambiguous modeling of all components and identification of the conformational asymmetry in AcrB in the presence of antibiotic that underpins the molecular mechanism of drug translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data obtained in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "41d38fe0-52d6-4245-9742-afe2cb1c3b73",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C15",
+      "claim": "The fusion construct was co-expressed with AcrZ, a hydrophobic helical peptide that affects AcrB efflux activity for a subset of antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion was co-expressed with AcrZ, a hydrophobic helical peptide that affects AcrB efflux activity for a subset of antibiotics (Hobbs et al., 2012) and interacts with AcrB in the transmembrane portion (Du et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "87abbde8-7004-4de3-ae7c-c80227fbc187",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C16",
+      "claim": "AcrZ interacts with AcrB in the transmembrane portion.",
+      "claim_type": "EXPLICIT",
+      "source": "The fusion was co-expressed with AcrZ, a hydrophobic helical peptide that affects AcrB efflux activity for a subset of antibiotics (Hobbs et al., 2012) and interacts with AcrB in the transmembrane portion (Du et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "eaf63325-db9a-464b-aeef-efab01ca4c23",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C17",
+      "claim": "The ratio of detergent to total membrane protein was optimized to extract AcrAB-TolC from the cellular membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of detergent to total membrane protein was optimized to extract AcrAB-TolC from the cellular membrane, and the detergent was exchanged with amphipol A8-35 (Baker et al., 2015; Liao et al., 2013; Popot, 2010; Tribet et al., 1996; Zoonens and Popot, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "9031d9a1-8a7a-433e-ac30-c93b7b057728",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C18",
+      "claim": "The detergent was exchanged with amphipol A8-35.",
+      "claim_type": "EXPLICIT",
+      "source": "The ratio of detergent to total membrane protein was optimized to extract AcrAB-TolC from the cellular membrane, and the detergent was exchanged with amphipol A8-35 (Baker et al., 2015; Liao et al., 2013; Popot, 2010; Tribet et al., 1996; Zoonens and Popot, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citations to prior literature on amphipol use.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "904cce54-1c7c-4794-8d3b-e6ce77e09216",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C19",
+      "claim": "Ligands were used in an effort to favor conformational uniformity and/or to capture structures corresponding to different ligand transport states.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligands were used in an effort to favor conformational uniformity and/or to capture structures corresponding to different ligand transport states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological rationale from the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "19afd499-d7a5-42a5-ba0b-9d3a380893b9",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C20",
+      "claim": "The purified pump was imaged in the presence of pyranopyridine inhibitor MBX3132.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified pump was imaged in the presence of pyranopyridine inhibitor MBX3132 (Sjuts et al., 2016) (Figure 1\u2014figure supplement 1A and B; Supplementary file 1) or substrate puromycin, as described in Materials and methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental procedure described in the manuscript and shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "866f864a-92e5-4bfd-97fd-8e60802811dc",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C21",
+      "claim": "The purified pump was imaged in the presence of substrate puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The purified pump was imaged in the presence of pyranopyridine inhibitor MBX3132 (Sjuts et al., 2016) (Figure 1\u2014figure supplement 1A and B; Supplementary file 1) or substrate puromycin, as described in Materials and methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental procedure described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "4a5f79b4-619f-4c0d-af20-0a3cf29f5a28",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C22",
+      "claim": "A new procedure was developed to stabilize the full pump using disulphide-linkages between residues S273 in AcrA and S258 in AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "We also have developed a new procedure to stabilize the full pump using disulphide-linkages that were chosen from the proximity of residues S273 in the \u03b2-barrel domain of AcrA and S258 in the \u03b2-hairpin motif of the DN subdomain of AcrB seen in the cryo-EM structure of the full pump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological development described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "053578b3-1830-4264-a861-ef136ea97e3a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C23",
+      "claim": "Disulfide bond formation was observed between AcrA-S273C and AcrB-S258C components.",
+      "claim_type": "EXPLICIT",
+      "source": "We introduced single cysteine-substitutions in the individual AcrA and AcrB components (AcrA-S273C and AcrB-S258C) without flexible engineered linkers. Consistent with the model based on the fusion constructs, we observed disulfide bond formation between the two free components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e0e5aace-d804-4ca9-a437-6be3bd4d0901",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C24",
+      "claim": "The disulfide bond-stabilized AcrAB can recruit TolC to form a stable tripartite complex in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the disulfide bond-stabilized AcrAB can recruit TolC (and three additional AcrAs, which are not expected to be cysteine-crosslinked) to form a stable tripartite complex in vivo (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "56afd520-09ff-4360-99fd-e0ed79d83817",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C25",
+      "claim": "The cryo-EM structures of the apo pump and the pump/ligand complexes reveal different conformational states of the full pump.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structures of the apo pump and the pump/ligand complexes reveal different conformational states of the full pump.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the structural findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "f3e70198-5d93-4a67-ba84-a9fda9fdeab9",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C26",
+      "claim": "The structures have been solved at different subnanometer and near atomic resolutions.",
+      "claim_type": "EXPLICIT",
+      "source": "These structures have been solved at different subnanometer and near atomic resolutions (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the resolution of the structures obtained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c84856b3-01f0-428f-b52d-ba6212f4596b",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C27",
+      "claim": "The maps of the full pump at 3.6 \u00c5 resolution can be readily segmented into a TolC trimer, a periplasmic AcrA hexamer, and an AcrB trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The maps of the full pump at 3.6 \u00c5 resolution can be readily segmented into a TolC trimer, a periplasmic AcrA hexamer, and an AcrB trimer (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the structural composition observed in the cryoEM maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "9d0b70c6-2f2c-42f0-a9ea-83f194dee878",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C28",
+      "claim": "The reconstruction of the apo pump was achieved at 6.5 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction of the apo pump at 6.5 \u00c5 resolution (Supplementary file 1; Figure 1\u2014figure supplement 4) revealed TolC to be in the closed conformational state (Figure 1), like that seen in the crystal structure of the isolated protein (Koronakis et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the resolution achieved for the apo pump structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c0518af5-3186-4147-9afb-13b5276a6e40",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C29",
+      "claim": "TolC in the apo pump is in the closed conformational state.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction of the apo pump at 6.5 \u00c5 resolution (Supplementary file 1; Figure 1\u2014figure supplement 4) revealed TolC to be in the closed conformational state (Figure 1), like that seen in the crystal structure of the isolated protein (Koronakis et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data, supported by comparison to crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "4ec712da-ed74-4fb2-b6da-9c17e98a9e96",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C30",
+      "claim": "The periplasmic component AcrA forms a hexamer through the trimerization of two conformationally distinct protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The periplasmic component of the pump, AcrA, forms a hexamer through the trimerization of two conformationally distinct protomers (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "668f8af5-9d95-4e44-bda0-644dc8937357",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C31",
+      "claim": "In both AcrA protomers, a short helix-turn-helix (HTH) motif interacts in a tip-to-tip manner with the HTH motif of the TolC coiled-coils at their periplasmic ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In both AcrA protomers, a short helix-turn-helix (HTH) motif interacts in a tip-to-tip manner with the HTH motif of the TolC coiled-coils at their periplasmic ends (Figure 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "17f7b7bd-40c1-4966-8fc9-a652fe8854c1",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C32",
+      "claim": "Each subunit of TolC has an internal structural repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each subunit of TolC has an internal structural repeat, the trimer has 6 HTH motifs, which interact with the 6 HTH motifs of the AcrA hexamer in a quasi-equivalent manner: AcrA protomer-I and the adjacent protomer-II interdigitate with the intra- and inter-protomer grooves of TolC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge of TolC.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "5afbdd3f-1383-4ac7-af41-54e29e1d5ea0",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C33",
+      "claim": "The TolC trimer has 6 HTH motifs, which interact with the 6 HTH motifs of the AcrA hexamer in a quasi-equivalent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each subunit of TolC has an internal structural repeat, the trimer has 6 HTH motifs, which interact with the 6 HTH motifs of the AcrA hexamer in a quasi-equivalent manner: AcrA protomer-I and the adjacent protomer-II interdigitate with the intra- and inter-protomer grooves of TolC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "3d8e4fd8-ff28-4fee-a27d-6d0fb0dcbc6d",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C34",
+      "claim": "AcrA protomer-I and the adjacent protomer-II interdigitate with the intra- and inter-protomer grooves of TolC, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Because each subunit of TolC has an internal structural repeat, the trimer has 6 HTH motifs, which interact with the 6 HTH motifs of the AcrA hexamer in a quasi-equivalent manner: AcrA protomer-I and the adjacent protomer-II interdigitate with the intra- and inter-protomer grooves of TolC, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a7c93000-aec9-43bc-bd01-09147df9b387",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C35",
+      "claim": "The two distinct conformations of the HTH motif loops of AcrA protomers I and II structurally conform to the slightly different contact surfaces of TolC.",
+      "claim_type": "EXPLICIT",
+      "source": "The two distinct conformations of the HTH motif loops of AcrA protomers I and II structurally conform to the slightly different contact surfaces of TolC (Figure 1A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "3f1c0e91-4b73-41d5-ab98-9bc6921933d4",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C36",
+      "claim": "This interaction is consistent with functional and structural data.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction is consistent with functional (Lee et al., 2012; Song et al., 2014; Xu et al., 2010) and structural data (Daury et al., 2016; Kim et al., 2015), but differs in detail from that proposed for the open state of the pump reported earlier (Jeong et al., 2016), as we will describe further below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior functional and structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "edbb3e25-7329-46ee-96b4-1914094f3441",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C37",
+      "claim": "A gap is present at the interfaces between adjacent AcrA dimer pairs in the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "A gap is present at the interfaces between adjacent AcrA dimer pairs, so that the AcrA helical hairpin, lipoyl and \u03b2-barrel domains do not pack tightly to seal the channel from the periplasm (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "5852c9b5-2f91-41fa-a94d-81ffda843b62",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C38",
+      "claim": "The AcrA helical hairpin, lipoyl and \u03b2-barrel domains do not pack tightly to seal the channel from the periplasm in the apo state.",
+      "claim_type": "EXPLICIT",
+      "source": "A gap is present at the interfaces between adjacent AcrA dimer pairs, so that the AcrA helical hairpin, lipoyl and \u03b2-barrel domains do not pack tightly to seal the channel from the periplasm (Figure 1\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "fbf600a5-d3dc-4476-915c-5f02fd5019b8",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C39",
+      "claim": "This gap must be closed in the transport process to prevent leakage of substrates into the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "This gap must be closed in the transport process to prevent leakage of substrates into the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observation and functional requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8c2fec8d-12ae-44a5-b6ff-10eb7cc877f5",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C40",
+      "claim": "AcrB adopts a symmetric state (LLL) in the apo pump assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "AcrB adopts a symmetric state (LLL) in the pump assembly, as seen in the crystal structure of apo AcrB (Murakami et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation supported by comparison to crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "dcd00eab-56cc-41f0-a2c3-694e29705c18",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C41",
+      "claim": "Crystallographic studies of AcrB in complex with natural substrates reveal asymmetric structures, which suggest consecutive steps of a transport cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystallographic studies of AcrB in complex with natural substrates reveal asymmetric structures, which suggest consecutive steps of a transport cycle (Murakami et al., 2006; Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c512a9b0-4a15-42c1-90c5-c7f68017de68",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C42",
+      "claim": "Puromycin is a validated transport substrate for AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored how the full pump accommodates AcrB in this functional state in the presence of puromycin, which is a validated transport substrate (Hobbs et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "14a531e8-1659-40d2-960b-645fd42d6b44",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C43",
+      "claim": "A focused classification procedure identified a subset of the full pump assembly (30.2% of the entire dataset) containing exactly one protomer in the extrusion state (O) of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "We targeted the AcrB protomers using a focused classification procedure (Bai et al., 2015) (See Materials and methods) and could identify a subset of the full pump assembly (30.2% of the entire dataset) containing exactly one protomer whose density matches the extrusion state (O) of AcrB, as shown in Figure 3\u2014figure supplement 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the computational analysis of the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8af93c6b-4c2d-48e8-8e6d-24c1852396db",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C44",
+      "claim": "A 5.9 \u00c5 density map of the full pump assembly without any imposed symmetry was reconstructed from the particle subset containing the O state.",
+      "claim_type": "EXPLICIT",
+      "source": "A 5.9 \u00c5 density map of the full pump assembly without any imposed symmetry was reconstructed from this particle subset (Figure 2A; Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "1ef75efc-67fe-4461-967e-1d3eca86d50f",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C45",
+      "claim": "The three AcrB protomers in L, O and T states are in a fixed spatial relationship with respect to each other in the full pump assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation analysis of the map region corresponding to the AcrBZ components shows that the three AcrB protomers in L, O and T states are in a fixed spatial relationship with respect to each other in this full pump assembly (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the correlation analysis of the cryoEM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "7ee85ed7-04d3-4628-80da-8160be1c4a58",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C46",
+      "claim": "The spatial disposition of AcrB protomers fits very well to the crystal structures of numerous other drug-bound AcrB structures.",
+      "claim_type": "EXPLICIT",
+      "source": "This spatial disposition fits very well to the crystal structures of numerous other drug-bound AcrB structures (Eicher et al., 2012; Murakami et al., 2006; Nakashima et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior crystal structures cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "d853bb94-c8e0-4965-ade1-95d8f56ac032",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C47",
+      "claim": "No puromycin density is detected in the cryoEM map of the pump in the presence of puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Though the AcrB subunit densities match well with those in the crystal structure, no puromycin density is detected in the cryoEM map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the cryoEM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "6cc06075-dad5-41e6-ad32-58a4b5d38463",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C48",
+      "claim": "A similar situation occurs for some crystal structures of the asymmetric state, where drug is present in the buffer but discernable electron density for the drug is absent from the ligand binding pockets.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar situation occurs for some crystal structures of the asymmetric state, where drug is present in the buffer but discernable electron density for the drug is absent from the ligand binding pockets (Seeger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "59d090ef-542e-4c75-954f-778c1473c10d",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C49",
+      "claim": "The crystal structure of AcrBZ in the presence of puromycin was determined at 3.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of AcrBZ in the presence of puromycin at 3.2 \u00c5 (Figure 2\u2014figure supplement 3; Supplementary file 3) shows that the AcrB subunits adopt three distinct conformational states (Figure 2\u2014figure supplement 3B) as seen in our cryoEM structure in the presence of this drug.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from X-ray crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "b99bc9f3-b9d9-46c0-854d-b9be13dcb812",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C50",
+      "claim": "The AcrB subunits adopt three distinct conformational states in the crystal structure with puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of AcrBZ in the presence of puromycin at 3.2 \u00c5 (Figure 2\u2014figure supplement 3; Supplementary file 3) shows that the AcrB subunits adopt three distinct conformational states (Figure 2\u2014figure supplement 3B) as seen in our cryoEM structure in the presence of this drug.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "eeb58fb3-5546-4db8-bd7d-14b4d4bae20e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C51",
+      "claim": "Poorly defined density for puromycin is found in the binding pocket of the T protomer in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Poorly defined density for puromycin is found in the binding pocket of the T protomer (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the crystal structure electron density map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8f9924f3-3835-45a6-ae2a-b853ee3924dd",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C52",
+      "claim": "TolC adopts a fully opened state via tip-to-tip interactions with AcrA in the pump assembly with puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "TolC adopts a fully opened state via tip-to-tip interactions with AcrA in the pump assembly and AcrAs pack tightly to form a sealed channel, which is similar to that seen in the complex of the pump with the potent inhibitor MBX3132, to which we now turn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "96d329f2-ed93-429d-9168-63b3b6490486",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C53",
+      "claim": "AcrAs pack tightly to form a sealed channel in the pump assembly with puromycin.",
+      "claim_type": "EXPLICIT",
+      "source": "TolC adopts a fully opened state via tip-to-tip interactions with AcrA in the pump assembly and AcrAs pack tightly to form a sealed channel, which is similar to that seen in the complex of the pump with the potent inhibitor MBX3132, to which we now turn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c49fbe79-1d18-4da0-83b2-7c62908fd417",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C54",
+      "claim": "MBX3132 likely binds AcrB tightly, since it is active in the nanomolar concentration range.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitor MBX3132 likely binds AcrB tightly, since it is active in the nanomolar concentration range (Sjuts et al., 2016), and the compound was used to lock the pump in a more homogeneous conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known activity of the inhibitor cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "b16f8264-2679-4dee-9fb5-dd71ee7192f6",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C55",
+      "claim": "The 3D map for the pump/MBX3132 complex was initially generated without any imposed symmetry and exhibited an apparent 3-fold symmetric pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D map for the pump/MBX3132 complex was initially generated without any imposed symmetry and exhibited an apparent 3-fold symmetric pattern (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the initial cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "7e961dcf-b680-4b85-b515-0d24720fd9ac",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C56",
+      "claim": "Refinements with 3-fold symmetry produced the final 3D reconstruction at ~3.6 \u00c5 resolution for the pump/MBX3132 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, refinements were performed with 3-fold symmetry, which produced the final 3D reconstruction at ~3.6 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the cryoEM reconstruction process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "8b11f00c-490d-4977-97d3-0c57b3f52ddd",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C57",
+      "claim": "73% of the particles within the MBX3132 dataset have their three AcrB subunits in the same (TTT) conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 73% of the particles within the dataset have their three AcrB subunits in the same (TTT) conformation (Materials and method and Figure 3\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the focused 3D classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "11706337-5c41-489a-b32a-4f365d79c6c3",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C58",
+      "claim": "Subsets of particles show AcrB conformations in LLL (1.4%), LLT (6.2%) and LTT (18.6%) states in the MBX3132 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsets of particles show AcrB conformations in LLL (1.4%), LLT (6.2%) and LTT (18.6%) states, respectively, while none of the subunits was identified in an 'O' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the focused 3D classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "84731718-7259-4e95-9803-7dd5c02a5fb8",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C59",
+      "claim": "None of the AcrB subunits was identified in an 'O' state in the MBX3132 dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsets of particles show AcrB conformations in LLL (1.4%), LLT (6.2%) and LTT (18.6%) states, respectively, while none of the subunits was identified in an 'O' state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the focused 3D classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "d79a8bd7-a680-4cdc-8cf6-810f90736d06",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C60",
+      "claim": "The inhibitor-bound pump conformation primarily represents a T-saturated state of the AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, this inhibitor-bound pump conformation primarily represents a T-saturated state of the AcrB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the classification results showing predominance of TTT state.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "01de0a5c-b58f-4b69-899b-dd3114023630",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C61",
+      "claim": "The C3 symmetry imposed reconstruction using the subset of particles with TTT state achieved 3.6 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The C3 symmetry imposed reconstruction using the subset of particles with TTT state (24,597 particles) also achieved 3.6 \u00c5 resolution (Figure 3A, Figure 3\u2014figure supplement 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the cryoEM reconstruction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "ce3df28f-fd51-4ad7-9076-4b3ea84e92c8",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C62",
+      "claim": "Clear density for the inhibitor MBX3132 was observed in a 'hydrophobic trap' site adjacent to the drug binding of the AcrB trimer.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed clear density for the inhibitor in a 'hydrophobic trap' site adjacent to the drug binding of the AcrB trimer in both the asymmetric and symmetry imposed maps (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the cryoEM density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a4f1194b-d5bb-47ba-b1b9-839cf970a601",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C63",
+      "claim": "Side chains can be readily assigned and modeled in the protruding densities along the peptide backbone in the 3.6 \u00c5 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Side chains can be readily assigned and modeled in the protruding densities along the peptide backbone (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statement about the quality of the cryoEM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a42d4d9f-d5c1-432e-b0ca-aeb26b90bf1a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C64",
+      "claim": "TolC adopts a fully opened state through an iris-like dilation of the periplasmic end.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing the structure of TolC in the crystal or in the apo pump with that in the inhibitor-bound pump assembly reveals that TolC adopts a fully opened state through an iris-like dilation of the periplasmic end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "759de691-4ffa-4e5e-be37-c8df9aef4207",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C65",
+      "claim": "The iris-like dilation is presumably necessary to maintain TolC-AcrA connectivity and to permit drug molecules to pass through the pump.",
+      "claim_type": "EXPLICIT",
+      "source": "This dilation is presumably necessary to maintain TolC-AcrA connectivity and to permit drug molecules to pass through the pump (Koronakis et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the structural change, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "0cde82ee-e20d-4f03-af78-62a06f1be4b5",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C66",
+      "claim": "Little conformational change is shown in the TolC TM region and the adjacent \u03b1-helical portion.",
+      "claim_type": "EXPLICIT",
+      "source": "Little conformational change is shown in the TolC TM region and the adjacent \u03b1-helical portion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "60b3b933-1e0a-44d2-ac83-b1fd3f30399e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C67",
+      "claim": "The structures start to deviate at the equatorial domain, where the superhelical trajectories of coiled-coil helices change with the iris-like dilation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the structures start to deviate at the equatorial domain, where the superhelical trajectories of coiled-coil helices change with the iris-like dilation (Figure 4A and B; Figure 4\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "99198650-5596-493a-9551-46106e2f2f89",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C68",
+      "claim": "In the 'closed state' conformation, the constriction is maintained by an inter-protomer hydrogen-bonding network, involving R367 in one subunit and T152, D153 and Y362 in the adjacent subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 'closed state' conformation, seen in the apo pump, the constriction is maintained by an inter-protomer hydrogen-bonding network, involving R367 in one subunit and T152, D153 and Y362 in the adjacent subunit (Andersen et al., 2002; Augustus et al., 2004; Bavro et al., 2008)(Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation supported by citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "1cef75c8-0037-48f6-9b8b-13103504b315",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C69",
+      "claim": "The hydrogen-bonding network is broken in the TolC of pump/MBX3132 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This network of interactions is broken in the TolC of pump/MBX3132 complex (Figure 4\u2014figure supplement 1B) and the pump/puromycin complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "4be92e0f-a468-499d-9615-633988a11322",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C70",
+      "claim": "The hydrogen-bonding network is broken in the TolC of pump/puromycin complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This network of interactions is broken in the TolC of pump/MBX3132 complex (Figure 4\u2014figure supplement 1B) and the pump/puromycin complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c965e8d5-335a-47e0-82dd-cda12533a158",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C71",
+      "claim": "Tip-to-tip interactions of the AcrA and TolC HTH motifs are observed in the ligand-bound pump structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe tip-to-tip interactions of the AcrA and TolC HTH motifs (Figure 4), which is similar to that proposed for the open state of the pump reported earlier (Jeong et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data, consistent with prior proposals.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "3df320e1-95df-44f0-a3f1-63aa82d7bae3",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C72",
+      "claim": "These interactions account for the importance of the conserved Val-Gly-Leu/Thr element of TolC.",
+      "claim_type": "EXPLICIT",
+      "source": "These interactions account for the importance of the conserved Val-Gly-Leu/Thr element of TolC (Jeong et al., 2016; Song et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about functional significance supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "1a93a94c-99ab-469c-8a4d-dcc45ec63abe",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C73",
+      "claim": "At the AcrA protomer-I/TolC interface, contacts involve the backbone of G365 in the conserved VGL motif of TolC with the backbone of K140 and side chain of S139 in AcrA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the AcrA protomer-I/TolC interface, contacts involve the backbone of G365 in the conserved VGL motif of TolC with the backbone of K140 and side chain of S139 in AcrA (Jeong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data, consistent with prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "7c279419-9e7f-463b-aa11-12785d03fa56",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C74",
+      "claim": "N145 and T366 of TolC directly contact AcrA L132 in the pump.",
+      "claim_type": "EXPLICIT",
+      "source": "The N145 and T366 of TolC directly contact AcrA L132 in the pump, consistent with the results of in vivo site-specific cross-linking experiments (Xu et al., 2011) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation consistent with prior cross-linking experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "2e31cbe0-0af6-41cf-a6e4-772a0cc7b989",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C75",
+      "claim": "The cryoEM structure shows the presence of residue pairs at the interface between AcrA and TolC that were predicted to have co-evolved in homologous proteins in the MdtNOP efflux pump.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryoEM structure shows the presence of residue pairs at the interface between AcrA and TolC (Figure 4\u2014figure supplement 2) that were predicted to have co-evolved in the homologous proteins in a different efflux pump MdtNOP (Harley and Saier, 2000; Ovchinnikov et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation that validates prior co-evolution predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "f46ceed4-5f5a-46a7-8353-36d2cd2ff716",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C76",
+      "claim": "3D classification identified a small subset of particles, in which TolC rotates by 60 degrees with respect to AcrA, but the alternative interface still retains the key contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "3D classification identified a small subset of particles, in which TolC rotates by 60 degrees with respect to AcrA, but the alternative interface still retains the key contacts described above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the 3D classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "647efba6-35e8-406c-b367-7d84dc6deb8a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C77",
+      "claim": "There are two distinct conformations of the HTH motif loops of AcrA protomers I and II that structurally conform to the slightly different contact surfaces of TolC.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in the apo state, there are two distinct conformations of the HTH motif loops of AcrA protomers I and II that structurally conform to the slightly different contact surfaces of TolC (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "658f2716-77d0-418e-ae4b-2cf22cfc8144",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C78",
+      "claim": "The flexibility of the HTH is consistent with observations from crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The flexibility of the HTH is consistent with observations from crystal structures (Figure 4\u2014figure supplement 3) (Mikolosko et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison to crystal structures cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "28af37b0-fba3-4b49-bbdc-8fdba467da7b",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C79",
+      "claim": "In the six protomers of AcrA, the lipoyl and \u03b2-barrel domains form a stack of two continuous rings.",
+      "claim_type": "EXPLICIT",
+      "source": "In the six protomers of AcrA, the lipoyl and \u03b2-barrel domains form a stack of two continuous rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "13a37941-a1d8-469f-bc42-45f1d5ec35a2",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C80",
+      "claim": "The lipoyl domains have no interaction with either AcrB or TolC.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipoyl domains have no interaction with either AcrB or TolC, and the \u03b2-barrel domains contact only the docking domain of AcrB (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "0545981b-0a94-427e-aaf4-2d07f433e2ac",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C81",
+      "claim": "The \u03b2-barrel domains contact only the docking domain of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipoyl domains have no interaction with either AcrB or TolC, and the \u03b2-barrel domains contact only the docking domain of AcrB (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a2b37f19-c92a-4a4c-8e25-57ee174a1cd4",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C82",
+      "claim": "The membrane-proximal (MP) domain of AcrA interacts with both the docking domain and the top of the pore domain of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-proximal (MP) domain of AcrA interacts with both the docking domain and the top of the pore domain of AcrB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "2627f53c-dcf0-400b-85e2-fe06d4361f0d",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C83",
+      "claim": "Each AcrB protomer makes two non-equivalent interactions with AcrA.",
+      "claim_type": "EXPLICIT",
+      "source": "Each AcrB protomer makes two non-equivalent interactions with AcrA (Ntreh et al., 2016); i.e. each pair of AcrA protomers makes two conformationally distinct interfaces with AcrB, as was found with the interaction between AcrA and TolC (Figures 4 and 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "09a84281-d16d-4e94-814e-0fbdc8e33508",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C84",
+      "claim": "AcrA protomer-I makes extensive interactions with AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "AcrA protomer-I makes extensive interactions with AcrB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "df6ae97f-94f6-4179-9f60-5c50138d8d5a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C85",
+      "claim": "The \u03b2-barrel domain of AcrA protomer-I docks on the DN and DC subdomains of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-barrel domain of AcrA protomer-I docks on the DN and DC subdomains of AcrB, while its MP domain interacts with the PC1 subdomain, the linker region between PC2 and DC, and an extended loop of the DN subdomain from an adjacent AcrB protomer (Figure 5A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "ab3c1f7c-55a6-43ff-b513-8f0701184c50",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C86",
+      "claim": "The MP domain of AcrA protomer-I interacts with the PC1 subdomain, the linker region between PC2 and DC, and an extended loop of the DN subdomain from an adjacent AcrB protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-barrel domain of AcrA protomer-I docks on the DN and DC subdomains of AcrB, while its MP domain interacts with the PC1 subdomain, the linker region between PC2 and DC, and an extended loop of the DN subdomain from an adjacent AcrB protomer (Figure 5A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a961f8cd-9984-4923-8816-afc269d1bac0",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C87",
+      "claim": "The spatial orientation of a \u03b2-hairpin motif in the DN subdomain of AcrB differs between the cryoEM and crystal structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial orientation of a \u03b2-hairpin motif, in the DN subdomain of AcrB, differs between the cryoEM and crystal structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison between cryoEM and crystal structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e0d53145-4c15-4342-9881-163a60e77c24",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C88",
+      "claim": "The conformational difference of the \u03b2-hairpin motif facilitates the interactions between AcrB and the \u03b2-barrel domain of AcrA protomer-II and a short \u03b1-helix of the DC subdomain from the adjacent AcrB protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "This conformational difference facilitates the interactions between AcrB and the \u03b2-barrel domain of AcrA protomer-II and a short \u03b1-helix of the DC subdomain from the adjacent AcrB protomer (Figure 5A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about the functional significance of the structural difference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "1db241df-cd1b-40f1-8c50-5f60bcfcfe2c",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C89",
+      "claim": "This contact resembles the interactions observed between the metal transporter subunits CusB and CusA, which are homologs of AcrA and AcrB, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "This contact resembles the interactions observed between the metal transporter subunits CusB and CusA, which are homologs of AcrA and AcrB, respectively (Su et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to homologous proteins supported by citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "d1a067e2-7971-487e-a72f-00f443d9070b",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C90",
+      "claim": "The \u03b2-hairpin motif in the DN subdomain of AcrB has been shown to be important for the proper assembly of a functioning pump.",
+      "claim_type": "EXPLICIT",
+      "source": "This \u03b2-hairpin motif in the DN subdomain of AcrB has been shown to be important for the proper assembly of a functioning pump (Weeks et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "367d7c09-2fd5-46f7-8688-5776c784879e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C91",
+      "claim": "The linking region between AcrB subdomains PN2 and DN contacts the end of a \u03b2-sheet in the MP domain of AcrA protomer-II.",
+      "claim_type": "EXPLICIT",
+      "source": "The linking region between AcrB subdomains PN2 and DN contacts the end of a \u03b2-sheet in the MP domain of AcrA protomer-II (Figure 5A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the cryoEM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "bc8b1e30-3b04-4167-911f-33e0dde0eb19",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C92",
+      "claim": "Overlaying the model of the apo pump with the pumps in the presence of ligands reveals profound conformational changes at the AcrA-TolC, AcrA-AcrA and AcrA-AcrB interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Overlaying the model of the apo pump with the pumps in the presence of ligands reveals profound conformational changes at the AcrA-TolC, AcrA-AcrA and AcrA-AcrB interfaces (Figure 6; Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural comparison between different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "31628a92-ebef-4228-bf46-bb98211fce73",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C93",
+      "claim": "The quasi six-fold symmetry of the interface between AcrA helical hairpin and open-state TolC reduces to three-fold symmetry in the apo-form.",
+      "claim_type": "EXPLICIT",
+      "source": "The quasi six-fold symmetry of the interface between AcrA helical hairpin and open-state TolC reduces to three-fold symmetry in the apo-form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "dc4b826a-1b14-427c-b1bd-fb9c1a59f374",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C94",
+      "claim": "The rearrangements of AcrA repack the \u03b2-barrel and membrane proximal domains in a different orientation on the surface of the AcrB and seal the gaps to the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The rearrangements of AcrA repack the \u03b2-barrel and membrane proximal domains in a different orientation on the surface of the AcrB and seal the gaps to the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "0c7b5e35-1dac-4108-b15c-c55c029075f7",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C95",
+      "claim": "Conformational changes in the periplasmic headpiece of AcrB instigate repacking of all four of the AcrA domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformational changes in the periplasmic headpiece of AcrB instigate repacking of all four of the AcrA domains, and this causes the reorganization of the coiled-coiled domain of AcrA, which is the key step to organize the HTH motifs and open the TolC channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "7d39f242-baee-468c-9f56-74c1f85064cb",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C96",
+      "claim": "The reorganization of the coiled-coiled domain of AcrA is the key step to organize the HTH motifs and open the TolC channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformational changes in the periplasmic headpiece of AcrB instigate repacking of all four of the AcrA domains, and this causes the reorganization of the coiled-coiled domain of AcrA, which is the key step to organize the HTH motifs and open the TolC channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism based on structural observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c0f244e0-a894-4670-8b95-76d764d0f4ff",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C97",
+      "claim": "The pump is a highly allosteric system in which conformational changes associated with ligand binding by the apo state of AcrB are communicated over a long distance to TolC through the repacking of protein-protein interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the pump is a highly allosteric system in which conformational changes associated with ligand binding by the apo state of AcrB are communicated over a long distance to TolC through the repacking of protein-protein interfaces (Fischer and Kandt, 2013; Zgurskaya and Nikaido, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a13ba902-8c94-45a6-9c1c-20a5750b8173",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C98",
+      "claim": "The apo-form of the pump with a closed TolC represents a resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have captured structures of the full pump assembly with a closed channel in the apo-state and with an opened channel in the presence of inhibitor or antibiotic. We propose that the apo-form of the pump with a closed TolC represents a resting state (Figure 1), while the pump assemblies with opened TolC in the presence of transportable ligands represent transport states, in which the AcrB trimer adopts asymmetric LLT, LTT or LTO conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed model based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "5dda2958-783d-4945-80b3-06069f0f364c",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C99",
+      "claim": "The pump assemblies with opened TolC in the presence of transportable ligands represent transport states, in which the AcrB trimer adopts asymmetric LLT, LTT or LTO conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have captured structures of the full pump assembly with a closed channel in the apo-state and with an opened channel in the presence of inhibitor or antibiotic. We propose that the apo-form of the pump with a closed TolC represents a resting state (Figure 1), while the pump assemblies with opened TolC in the presence of transportable ligands represent transport states, in which the AcrB trimer adopts asymmetric LLT, LTT or LTO conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "fa877728-b076-47b9-87ea-813dd5497d05",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C100",
+      "claim": "In the transport-states, ligand binding is associated with large conformational changes in AcrB for both PN1/PC2 and PN2/PC1 structural modules that form the drug-binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transport-states, ligand binding is associated with large conformational changes in AcrB for both PN1/PC2 and PN2/PC1 structural modules that form the drug-binding pocket (Eicher et al., 2014) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c0485190-b7c6-4f0a-9a88-b9a9a56f7b9a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C101",
+      "claim": "The interfaces between TolC and AcrA, and between AcrA and AcrB do not change significantly in the different transport states (LTO, LTT, LLT).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interfaces between TolC and AcrA, and between AcrA and AcrB do not change significantly in the different transport states (LTO, LTT, LLT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "0cdd9863-086b-490b-941e-493e33754f4a",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C102",
+      "claim": "Ligand binding in the apo state instigates quaternary structural changes in AcrB that are communicated to AcrA, which in turn repacks to trigger tertiary structural changes in TolC that open the channel from a sealed resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that ligand binding in the apo state instigates quaternary structural changes in AcrB that are communicated to AcrA, which in turn repacks to trigger tertiary structural changes in TolC that open the channel from a sealed resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanistic model based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "4ccd6320-576e-43db-a732-2c8530fb8ef9",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C103",
+      "claim": "The repacking of AcrA is critical to seal the gaps in the pump, which would otherwise allow substrate to leak into the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The repacking to AcrA is critical to seal the gaps in the pump, which would otherwise allow substrate to leak into the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the structural changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "ac5380c6-b4b6-49f3-a39e-2e1e3004e001",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C104",
+      "claim": "The long-distance allosteric coupling between AcrB and TolC, mediated through AcrA, ensures that TolC channel opening is synchronized with closing the assembly to the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the long-distance allosteric coupling between AcrB and TolC, mediated through AcrA, ensures that TolC channel opening is synchronized with closing the assembly to the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the functional significance of the allosteric mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "9c82bcda-42ec-4ba2-823c-491a42e9f494",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C105",
+      "claim": "When substrate is absent, the pump assembly returns to its resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "When substrate is absent, the pump assembly returns to its resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the pump cycle based on the structural observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "04bb8669-a3d0-4810-9046-813c5d5ebee9",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C106",
+      "claim": "The transition from the resting state to the transport states is accompanied by a contraction of the pump along the long axis by nearly 10 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The above conformational changes are accompanied by a contraction of the pump along the long axis in its transport state by nearly 10 \u00c5 (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from comparing different states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "c987ed8b-3b0a-40ee-a858-62efda9b23a8",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C107",
+      "claim": "The transition from the resting state to the transport states will entail a local compression of the periplasm to accommodate the axial contraction of the pump.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that the transition from the resting state to the transport states will entail a local compression of the periplasm to accommodate the axial contraction of the pump, and local curvature of the outer membrane and inner membrane near the portal of AcrB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the physical consequences of the structural changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "bde489bc-f3e2-48a6-9c31-0519ccfdeaea",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C108",
+      "claim": "The transition from the resting state to the transport states will entail local curvature of the outer membrane and inner membrane near the portal of AcrB.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that the transition from the resting state to the transport states will entail a local compression of the periplasm to accommodate the axial contraction of the pump, and local curvature of the outer membrane and inner membrane near the portal of AcrB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the physical consequences of the structural changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a7678359-5bc5-4917-a986-543f4732e73e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C109",
+      "claim": "These changes may have impact on the energetics and kinetics of the transport process.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes may have impact on the energetics and kinetics of the transport process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the functional consequences of the structural changes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "0826fdd0-a094-4a4c-904d-d0d832895d45",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C110",
+      "claim": "In the presence of inhibitor MBX3132, the AcrB trimer is predominantly trapped in the symmetric TTT conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of inhibitor MBX3132, the AcrB trimer is predominantly trapped in the symmetric TTT conformation (Figure 2\u2014figure supplement 1E), possibly because the inhibitor has high affinity to AcrB and cannot be transported.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a structural observation from the classification analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e4ca246d-8cbf-45f0-9806-23eca666f8b5",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C111",
+      "claim": "The inhibitor MBX3132 possibly has high affinity to AcrB and cannot be transported.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of inhibitor MBX3132, the AcrB trimer is predominantly trapped in the symmetric TTT conformation (Figure 2\u2014figure supplement 1E), possibly because the inhibitor has high affinity to AcrB and cannot be transported.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation about the mechanism of inhibition.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "6c4493c0-befe-423a-a2a7-26997e0c810e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C112",
+      "claim": "Inhibitors like MBX3132 could effectively inhibit AcrAB-TolC efflux through saturated binding and blocking all sites and prevent AcrB from cycling through different states.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the cryoEM structure suggests that inhibitors like MBX3132 could effectively inhibit AcrAB-TolC efflux through saturated binding and blocking all sites and prevent AcrB from cycling through different states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the mechanism of inhibition based on the structural data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "1019014b-d348-4e2a-b213-6f0312f8bc4b",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C113",
+      "claim": "It may be possible to block drug translocation by targeting the assembly or conformational switching of the tripartite pumps themselves.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be possible to block drug translocation by targeting the assembly or conformational switching of the tripartite pumps themselves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic strategies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "346491c7-1ba0-45a8-bf31-c51d638bce53",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "claim_id": "C114",
+      "claim": "The interaction interfaces between components may be important drug-targeting sites to inhibit the assembly of this and other tripartite pumps.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the interaction interfaces between components, which are well resolved in our cryoEM structure, may be important drug-targeting sites to inhibit the assembly of this and other tripartite pumps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential therapeutic strategies based on the structural data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "33ca6b6b-4118-430d-913e-3e069628205e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Near-atomic resolution cryoEM structures of the AcrAB-TolC pump were determined in multiple states. The apo pump was resolved at 6.5 \u00c5, while ligand-bound states achieved 3.6 \u00c5 resolution, enabling unambiguous modeling of all components and identification of conformational asymmetry in AcrB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C14, C25-C28, C56, and C61 collectively demonstrate successful structure determination at stated resolutions with appropriate validation metrics (FSC curves, ResMap). The quality assessments are supported by figures showing clear density for side chains and secondary structure elements, validating the claimed near-atomic resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e0592bcb-894d-498a-88a9-8350a646c753",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The apo pump structure reveals TolC in a closed state with AcrA forming a hexamer of two conformationally distinct protomers that interact with TolC through HTH motifs. AcrB adopts a symmetric LLL state, and gaps exist between AcrA protomers that do not seal the periplasmic channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C40 describe the apo state architecture supported by structural data at 6.5 \u00c5 resolution. The observations are consistent with prior crystal structures (C29, C40) and provide new insights into the AcrA hexamer organization and unsealed periplasmic gaps, which are clearly shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the presence of puromycin, focused classification identified 30.2% of particles with AcrB in an asymmetric LTO state at 5.9 \u00c5 resolution. No puromycin density was detected in the cryoEM map, though the crystal structure at 3.2 \u00c5 shows poorly defined density in the T protomer binding pocket.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C51 describe the puromycin-bound state with appropriate computational methods (focused classification) and resolution. The absence of ligand density in cryoEM is rationalized by comparison to similar observations in crystal structures (C48), and the complementary crystallography provides validation of the asymmetric state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "f790c572-34b5-4adc-b483-fedd1d98eb0c",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The inhibitor MBX3132-bound pump was resolved at 3.6 \u00c5 with C3 symmetry, showing TolC in a fully open state and AcrAs forming a sealed channel. Focused classification revealed 73% of particles have AcrB in a symmetric TTT conformation with clear inhibitor density in the hydrophobic trap, while no O state was observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C63 describe the inhibitor-bound structure with the highest resolution achieved (3.6 \u00c5). The focused classification analysis (C57-C59) provides quantitative support for the predominant TTT state, and the clear inhibitor density (C62) validates ligand binding. The map quality enabling side chain assignment (C63) is consistent with the stated resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "05b3951a-c0a2-4915-a453-98c953d8a236",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "TolC undergoes an iris-like dilation at the periplasmic end to adopt a fully open state in ligand-bound pumps. The opening involves breaking of an inter-protomer hydrogen-bonding network (R367, T152, D153, Y362) while the transmembrane region remains largely unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C70 describe the TolC opening mechanism supported by structural comparisons between apo and ligand-bound states. The specific residues involved in the hydrogen-bonding network are cited from prior literature (C68) and their disruption is observed in both MBX3132 and puromycin complexes (C69-C70), providing consistent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Tip-to-tip interactions between AcrA and TolC HTH motifs involve the conserved VGL motif of TolC and specific residues validated by cross-linking experiments. The interface shows residue pairs predicted to co-evolve in homologous pumps, and two distinct HTH conformations accommodate slightly different TolC contact surfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C78 describe the AcrA-TolC interface with multiple lines of validation: consistency with prior functional studies (C72), cross-linking data (C74), co-evolution predictions (C75), and crystal structure observations (C78). The atomic-resolution structure enables detailed characterization of these interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AcrA forms two continuous rings through its lipoyl and \u03b2-barrel domains, with each AcrB protomer making two non-equivalent interactions with AcrA protomers. The \u03b2-hairpin motif in AcrB's DN subdomain adopts a different orientation than in crystal structures, facilitating interactions with both AcrA protomers and resembling homologous CusAB interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C91 describe the AcrA-AcrB interface architecture supported by the high-resolution structure. The observations are validated by comparison to homologous systems (C89) and prior functional studies showing the \u03b2-hairpin's importance for pump assembly (C90). The detailed interaction descriptions are consistent with the 3.6 \u00c5 resolution achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison of apo and ligand-bound states reveals profound conformational changes at all interfaces. AcrA repacking seals periplasmic gaps and reorganizes the coiled-coil domain to open TolC, demonstrating long-distance allosteric coupling where ligand binding to AcrB is communicated to TolC through AcrA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C97 describe the allosteric mechanism based on structural comparisons between states. The observations of symmetry changes (C93), domain repacking (C94), and the proposed coupling mechanism (C95-C97) are logical inferences from the structural data, though the mechanistic details remain interpretive rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A mechanistic model proposes that the apo pump represents a resting state with closed TolC, while ligand-bound pumps represent transport states with open TolC and asymmetric AcrB conformations (LLT, LTT, LTO). Ligand binding triggers quaternary changes in AcrB communicated through AcrA repacking to synchronize TolC opening with periplasmic sealing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C98-C105 present a mechanistic model integrating the structural observations. While the model is largely inferential (C102-C105), it is well-supported by the structural data showing distinct apo and ligand-bound states, the observed conformational changes, and the functional requirement for preventing substrate leakage (C103). The model provides a coherent framework consistent with all observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "b01fac62-4022-453d-9fcd-ca47dcc7f9f1",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The transition from resting to transport states involves a ~10 \u00c5 axial contraction of the pump, which may require local compression of the periplasm and membrane curvature near AcrB, potentially impacting transport energetics and kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C106 describes a measurable structural observation (10 \u00c5 contraction) supported by comparison of the two states. However, claims C107-C109 are speculative about physical and functional consequences without experimental validation. The contraction measurement is supported, but the implications remain hypothetical.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "b51c3c0d-4497-4802-af8a-0add717855b6",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The inhibitor MBX3132 traps AcrB predominantly in the symmetric TTT conformation, possibly due to high affinity and inability to be transported. This suggests inhibitors could block efflux by saturating all binding sites and preventing AcrB conformational cycling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C110 is supported by the focused classification data showing 73% TTT state. Claims C111-C112 are mechanistic inferences about inhibition that are reasonable given the structural data and known nanomolar activity of MBX3132, though direct functional validation of the proposed mechanism is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "a14b6a45-1bee-40ea-a15e-fcdddcc0b549",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The well-resolved interaction interfaces between pump components may represent important drug-targeting sites to inhibit assembly of tripartite pumps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C113-C114 are speculative suggestions about potential therapeutic strategies based on the structural data. While the high-resolution structures do reveal detailed interfaces, no experimental evidence is provided to validate these interfaces as viable drug targets or to demonstrate that targeting them would inhibit pump function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "bef9141e-028d-4b8d-8385-7501eda6aef9",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological improvements included optimizing detergent-to-protein ratios, exchanging detergent with amphipol A8-35, and developing a disulfide-stabilization strategy using AcrA-S273C and AcrB-S258C mutations that forms stable tripartite complexes in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 describe methodological developments validated by experimental results. The disulfide bond formation (C23) and stable complex formation (C24) are demonstrated by biochemical data shown in figures. These methods enabled the high-resolution structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "4c05d5ae-7625-4531-b6ce-a5f99626e493",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context establishes that bacterial efflux pumps confer multidrug resistance, AcrAB-TolC is a tripartite RND pump with AcrB cycling through L/T/O states, and prior EM studies revealed overall architecture but lacked detailed interfaces and mechanistic understanding of assembly and channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13, C36, C41-C42 provide background information supported by appropriate citations to prior literature. These establish the scientific context and knowledge gaps that motivated the current study. The claims accurately represent established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "968dda2e-2fa9-41c6-a3bf-e1d8778d3778",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The fusion construct was co-expressed with AcrZ, a hydrophobic peptide that affects AcrB efflux activity and interacts with AcrB in the transmembrane portion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 describe the experimental system used, supported by citations to prior work characterizing AcrZ. This is a methodological detail about the protein preparation that is well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    },
+    {
+      "id": "e9c4fcba-a6c7-4af2-b462-5cf58802fe6d",
+      "content_id": "975f4690-020d-4aea-91d7-1143905e98e5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The gap between AcrA protomers in the apo state must be closed during transport to prevent substrate leakage into the periplasm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is a functional inference based on the structural observation of gaps in the apo state (C37-C38). While not directly demonstrated experimentally, this is a logical conclusion based on the requirement for directional transport and is supported by the observation that these gaps are sealed in ligand-bound states.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:35:44.566273Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9f620895-f8bf-42da-b2fb-ed1037ec6f79",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "5cc74cee-6743-469c-b527-45c433f240a3",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "56afd520-09ff-4360-99fd-e0ed79d83817",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "f3e70198-5d93-4a67-ba84-a9fda9fdeab9",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "c84856b3-01f0-428f-b52d-ba6212f4596b",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "9d0b70c6-2f2c-42f0-a9ea-83f194dee878",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "7e961dcf-b680-4b85-b515-0d24720fd9ac",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "01de0a5c-b58f-4b69-899b-dd3114023630",
+      "result_id": "33ca6b6b-4118-430d-913e-3e069628205e"
+    },
+    {
+      "claim_id": "c0518af5-3186-4147-9afb-13b5276a6e40",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "4ec712da-ed74-4fb2-b6da-9c17e98a9e96",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "668f8af5-9d95-4e44-bda0-644dc8937357",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "17f7b7bd-40c1-4966-8fc9-a652fe8854c1",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "5afbdd3f-1383-4ac7-af41-54e29e1d5ea0",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "3d8e4fd8-ff28-4fee-a27d-6d0fb0dcbc6d",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "a7c93000-aec9-43bc-bd01-09147df9b387",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "edbb3e25-7329-46ee-96b4-1914094f3441",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "5852c9b5-2f91-41fa-a94d-81ffda843b62",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "8c2fec8d-12ae-44a5-b6ff-10eb7cc877f5",
+      "result_id": "e0592bcb-894d-498a-88a9-8350a646c753"
+    },
+    {
+      "claim_id": "14a531e8-1659-40d2-960b-645fd42d6b44",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "8af93c6b-4c2d-48e8-8e6d-24c1852396db",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "1ef75efc-67fe-4461-967e-1d3eca86d50f",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "7ee85ed7-04d3-4628-80da-8160be1c4a58",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "d853bb94-c8e0-4965-ade1-95d8f56ac032",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "6cc06075-dad5-41e6-ad32-58a4b5d38463",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "59d090ef-542e-4c75-954f-778c1473c10d",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "b99bc9f3-b9d9-46c0-854d-b9be13dcb812",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "eeb58fb3-5546-4db8-bd7d-14b4d4bae20e",
+      "result_id": "56ca1d57-e00b-41cf-8c4b-e207a42619e1"
+    },
+    {
+      "claim_id": "8f9924f3-3835-45a6-ae2a-b853ee3924dd",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "96d329f2-ed93-429d-9168-63b3b6490486",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "c49fbe79-1d18-4da0-83b2-7c62908fd417",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "b16f8264-2679-4dee-9fb5-dd71ee7192f6",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "8b11f00c-490d-4977-97d3-0c57b3f52ddd",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "11706337-5c41-489a-b32a-4f365d79c6c3",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "84731718-7259-4e95-9803-7dd5c02a5fb8",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "d79a8bd7-a680-4cdc-8cf6-810f90736d06",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "ce3df28f-fd51-4ad7-9076-4b3ea84e92c8",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "a4f1194b-d5bb-47ba-b1b9-839cf970a601",
+      "result_id": "f790c572-34b5-4adc-b483-fedd1d98eb0c"
+    },
+    {
+      "claim_id": "a42d4d9f-d5c1-432e-b0ca-aeb26b90bf1a",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "759de691-4ffa-4e5e-be37-c8df9aef4207",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "0cde82ee-e20d-4f03-af78-62a06f1be4b5",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "60b3b933-1e0a-44d2-ac83-b1fd3f30399e",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "99198650-5596-493a-9551-46106e2f2f89",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "1cef75c8-0037-48f6-9b8b-13103504b315",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "4be92e0f-a468-499d-9615-633988a11322",
+      "result_id": "05b3951a-c0a2-4915-a453-98c953d8a236"
+    },
+    {
+      "claim_id": "c965e8d5-335a-47e0-82dd-cda12533a158",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "3df320e1-95df-44f0-a3f1-63aa82d7bae3",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "1a93a94c-99ab-469c-8a4d-dcc45ec63abe",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "7c279419-9e7f-463b-aa11-12785d03fa56",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "2e31cbe0-0af6-41cf-a6e4-772a0cc7b989",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "f46ceed4-5f5a-46a7-8353-36d2cd2ff716",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "647efba6-35e8-406c-b367-7d84dc6deb8a",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "658f2716-77d0-418e-ae4b-2cf22cfc8144",
+      "result_id": "b78b1cf3-6104-498b-bced-2b5fa37fc01f"
+    },
+    {
+      "claim_id": "28af37b0-fba3-4b49-bbdc-8fdba467da7b",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "13a37941-a1d8-469f-bc42-45f1d5ec35a2",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "0545981b-0a94-427e-aaf4-2d07f433e2ac",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "a2b37f19-c92a-4a4c-8e25-57ee174a1cd4",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "2627f53c-dcf0-400b-85e2-fe06d4361f0d",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "09a84281-d16d-4e94-814e-0fbdc8e33508",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "df6ae97f-94f6-4179-9f60-5c50138d8d5a",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "ab3c1f7c-55a6-43ff-b513-8f0701184c50",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "a961f8cd-9984-4923-8816-afc269d1bac0",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "e0d53145-4c15-4342-9881-163a60e77c24",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "1db241df-cd1b-40f1-8c50-5f60bcfcfe2c",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "d1a067e2-7971-487e-a72f-00f443d9070b",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "367d7c09-2fd5-46f7-8688-5776c784879e",
+      "result_id": "f2942f54-ee43-4d2a-bc93-01e0f39d4d46"
+    },
+    {
+      "claim_id": "bc8b1e30-3b04-4167-911f-33e0dde0eb19",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "31628a92-ebef-4228-bf46-bb98211fce73",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "dc4b826a-1b14-427c-b1bd-fb9c1a59f374",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "0c7b5e35-1dac-4108-b15c-c55c029075f7",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "7d39f242-baee-468c-9f56-74c1f85064cb",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "c0f244e0-a894-4670-8b95-76d764d0f4ff",
+      "result_id": "e58830b4-2759-4278-aeb5-5eb4bf0bf64e"
+    },
+    {
+      "claim_id": "a13ba902-8c94-45a6-9c1c-20a5750b8173",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "5dda2958-783d-4945-80b3-06069f0f364c",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "fa877728-b076-47b9-87ea-813dd5497d05",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "c0485190-b7c6-4f0a-9a88-b9a9a56f7b9a",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "0cdd9863-086b-490b-941e-493e33754f4a",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "4ccd6320-576e-43db-a732-2c8530fb8ef9",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "ac5380c6-b4b6-49f3-a39e-2e1e3004e001",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "9c82bcda-42ec-4ba2-823c-491a42e9f494",
+      "result_id": "7e79ccc5-00e8-4a91-8600-8370fe1c3b69"
+    },
+    {
+      "claim_id": "04bb8669-a3d0-4810-9046-813c5d5ebee9",
+      "result_id": "b01fac62-4022-453d-9fcd-ca47dcc7f9f1"
+    },
+    {
+      "claim_id": "c987ed8b-3b0a-40ee-a858-62efda9b23a8",
+      "result_id": "b01fac62-4022-453d-9fcd-ca47dcc7f9f1"
+    },
+    {
+      "claim_id": "bde489bc-f3e2-48a6-9c31-0519ccfdeaea",
+      "result_id": "b01fac62-4022-453d-9fcd-ca47dcc7f9f1"
+    },
+    {
+      "claim_id": "a7678359-5bc5-4917-a986-543f4732e73e",
+      "result_id": "b01fac62-4022-453d-9fcd-ca47dcc7f9f1"
+    },
+    {
+      "claim_id": "0826fdd0-a094-4a4c-904d-d0d832895d45",
+      "result_id": "b51c3c0d-4497-4802-af8a-0add717855b6"
+    },
+    {
+      "claim_id": "e4ca246d-8cbf-45f0-9806-23eca666f8b5",
+      "result_id": "b51c3c0d-4497-4802-af8a-0add717855b6"
+    },
+    {
+      "claim_id": "6c4493c0-befe-423a-a2a7-26997e0c810e",
+      "result_id": "b51c3c0d-4497-4802-af8a-0add717855b6"
+    },
+    {
+      "claim_id": "1019014b-d348-4e2a-b213-6f0312f8bc4b",
+      "result_id": "a14b6a45-1bee-40ea-a15e-fcdddcc0b549"
+    },
+    {
+      "claim_id": "346491c7-1ba0-45a8-bf31-c51d638bce53",
+      "result_id": "a14b6a45-1bee-40ea-a15e-fcdddcc0b549"
+    },
+    {
+      "claim_id": "eaf63325-db9a-464b-aeef-efab01ca4c23",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "9031d9a1-8a7a-433e-ac30-c93b7b057728",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "904cce54-1c7c-4794-8d3b-e6ce77e09216",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "19afd499-d7a5-42a5-ba0b-9d3a380893b9",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "866f864a-92e5-4bfd-97fd-8e60802811dc",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "4a5f79b4-619f-4c0d-af20-0a3cf29f5a28",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "053578b3-1830-4264-a861-ef136ea97e3a",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "e0e5aace-d804-4ca9-a437-6be3bd4d0901",
+      "result_id": "bef9141e-028d-4b8d-8385-7501eda6aef9"
+    },
+    {
+      "claim_id": "6041c1ea-a6a9-477c-b18b-cbec5c5810ad",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "28557997-e9e6-4a1f-8070-1bbd3a831022",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "915a42c2-6a7d-4b0d-bcb5-329319c088e5",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "e88032f4-d37d-4093-b0cf-bf77a9f4aaeb",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "8fd2113d-f53e-468b-80c9-7d3f6932c3b5",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "aefe10b6-4f8e-471a-badb-b92f1856d1e8",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "d9f04528-58ab-4500-8855-b7bb264a426f",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "65571f2e-b352-4fef-bb7a-e3319ad9290b",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "5fd636c3-a001-4984-aeaa-95da382f24fb",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "3958273f-4467-4e39-9137-8574a4109c06",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "3f1c0e91-4b73-41d5-ab98-9bc6921933d4",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "dcd00eab-56cc-41f0-a2c3-694e29705c18",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "c512a9b0-4a15-42c1-90c5-c7f68017de68",
+      "result_id": "4c05d5ae-7625-4531-b6ce-a5f99626e493"
+    },
+    {
+      "claim_id": "41d38fe0-52d6-4245-9742-afe2cb1c3b73",
+      "result_id": "968dda2e-2fa9-41c6-a3bf-e1d8778d3778"
+    },
+    {
+      "claim_id": "87abbde8-7004-4de3-ae7c-c80227fbc187",
+      "result_id": "968dda2e-2fa9-41c6-a3bf-e1d8778d3778"
+    },
+    {
+      "claim_id": "fbf600a5-d3dc-4476-915c-5f02fd5019b8",
+      "result_id": "e9c4fcba-a6c7-4af2-b462-5cf58802fe6d"
+    }
+  ],
+  "comparisons": []
+}

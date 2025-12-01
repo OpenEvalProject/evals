@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors determined the first high-resolution (2.2 \u00c5) crystal structure of FliD from Pseudomonas aeruginosa using a truncated construct (FliD78-405) and selenomethionine phasing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C34 collectively describe the crystallization strategy, phasing approach, and quality of the resulting structure. The use of selenomethionine derivatives for phasing (C30), the resolution achieved (C4, C29), and the quality of electron density (C31-C32) are all standard crystallographic practices that are well-documented. The observation of partial proteolysis in crystals (C33-C34) is supported by LC-MS and Western blot data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The FliD structure reveals two head domains with unexpected structural similarity to other flagellar proteins (FlgK and FliC) despite low sequence identity, and a flexible leg region extending from the head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 describe the domain architecture and structural homology findings. The structural similarity to FlgK (C42, RMSD=2.5 \u00c5) and FliC (C44, RMSD=2.7 \u00c5) despite low sequence identity (C43, C45) is supported by structural comparison data. The flexible leg region (C46) is evidenced by poor electron density. These findings are internally consistent and represent a major structural discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "FliD78-405 forms hexamers in crystals and in solution, with dimensions of 136 \u00c5 diameter and 55 \u00c5 leg length, as confirmed by crystallography, negative stain EM, AUC, crosslinking, and SAXS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C61 describe the hexameric assembly using multiple complementary biophysical techniques. The convergence of evidence from crystallography (C48-C52), EM (C57), AUC (C58), crosslinking (C59), and SAXS (C60-C61) provides strong support for the hexameric state. The measurements are consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Full-length FliD1-474 forms up to hexamers in solution, with a predominant tetrameric intermediate species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by AUC and crosslinking data showing hexamer formation. The interpretation of tetramers as intermediates (C63) is speculative but reasonable given the AUC data. The evidence is sufficient to support hexamer formation of full-length protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A disulfide-locked hexameric FliD mutant (I167C/D253C) is functional in vivo, restoring flagella formation and swimming motility in \u0394fliD bacteria, demonstrating that the hexameric state is physiologically relevant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 describe a well-designed functional validation experiment. The disulfide-locked hexamer is characterized by SDS-PAGE, SAXS, and mass spectrometry (C64-C65), and shown to restore motility (C66) and maintain hexameric state in flagella preparations (C67). The controls are appropriate (C69-C70), and the conclusion that hexameric FliD is functional (C71-C72) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Salmonella FliD (pentameric) cannot functionally complement Pseudomonas \u0394fliD, suggesting that Pseudomonas flagella require hexameric FliD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 describe a cross-complementation experiment. While the data show that Salmonella FliD does not restore motility (C74), the authors acknowledge multiple possible explanations beyond oligomeric state (C76). The control with codon-optimized Pseudomonas FliD (C75) addresses expression concerns, but sequence divergence, protein-protein interaction specificity, or other factors could explain the failure. The conclusion is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The head domain interfaces are weak (665 \u00c5\u00b2 buried surface area), and deletion analysis shows that oligomerization depends on regions outside the head domain, particularly the N- and C-terminal coiled-coil domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 describe systematic deletion analysis combined with AUC, crosslinking, and SAXS. The head-only construct (FliD78-273) is predominantly monomeric (C78-C79), while constructs lacking either terminal coiled-coil show reduced oligomerization (C80-C82). The conclusion that terminal regions drive oligomerization (C83) is well-supported by the data. The dodecamer formation of FliD78-405 (C84) is explained by alternative interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "HDX-MS reveals that the head region is stable with domain 2 more stable than domain 1, the leg region is flexible, and specific regions show EX1 kinetics indicating cooperative unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 describe HDX-MS experiments with appropriate controls (C89). The differential stability of head domains (C85-C86), flexibility of the leg region (C87), and EX1 kinetics (C88) are standard HDX-MS observations. The comparison between FliD78-405 and full-length protein (C90-C92) provides insights into stabilization by terminal regions. The data quality appears adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "HDX-MS comparison of FliD truncations reveals that the N-terminal coiled-coil stabilizes head domain 1 and the foot region, while the C-terminal coiled-coil stabilizes the N-terminal coiled-coil, likely through intramolecular interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 describe systematic HDX-MS comparisons of multiple constructs. The stabilization patterns (C95-C97) are supported by difference plots, and the interpretation of intramolecular interactions (C98) is supported by AUC data showing predominantly monomeric species under HDX-MS conditions. The SAXS data (C93-C94) confirm flexibility. The logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Computational disorder prediction indicates that flexible regions of FliD are not intrinsically disordered but capable of adopting limited conformations for 'on' and 'off' states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is supported by computational analysis using multiple disorder prediction servers. However, claim C100 is highly speculative, proposing functional states without direct experimental evidence. The interpretation goes beyond what disorder prediction can support and lacks validation of the proposed 'on' and 'off' states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "FliD oligomeric states differ between bacteria: Pseudomonas FliD forms functional hexamers while Salmonella FliD forms pentamers, and the hexameric state is functional in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 synthesize the major findings. The hexameric state of Pseudomonas FliD is supported by multiple techniques (C103), its functionality is demonstrated by complementation (C104), and the pentameric state of Salmonella FliD is established in the literature (C102). The cross-complementation failure (C105) provides additional support, though with caveats noted in the earlier result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C106",
+      "C109"
+    ],
+    "result": "The authors propose that FliD oligomer stoichiometries vary across bacteria to match the protofilament number of their flagellar filaments, suggesting Pseudomonas filaments may have more protofilaments than Salmonella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C106, and C109 present a speculative model. While the variation in filament protofilament numbers is established (C106), the proposal that Pseudomonas filaments have more protofilaments (C109) lacks direct structural evidence. The correlation between FliD stoichiometry and filament structure is logical but unproven without a Pseudomonas filament structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Each head lobe in the hexamer is composed of domains from neighboring subunits, and the structural similarity to FlgK and FliC suggests a common fold for proteins at flagellar junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe structural insights from the high-resolution structure. The domain swapping (C111) is clearly visible in the structure, and the structural similarity to other flagellar proteins (C112) is supported by RMSD values. The inference of a common functional fold (C113) is reasonable, and the confirmation of prior predictions (C114) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The structural conservation suggests FliD may function earlier in flagellar assembly and that its chaperoning activity may involve presenting a template structure similar to FliC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C118 are speculative hypotheses based on structural similarity. While the structural data are solid, the functional implications (C115-C116, C118) lack experimental validation. The cited observation about layered structures in Salmonella mutants (C117) provides some support but is insufficient to confirm the proposed early assembly role or template-based chaperoning mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Comparison with Salmonella FliD data suggests that terminal regions control oligomeric state across bacteria, and that head domain flexibility is not required for function while flexibility in terminal regions is essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 integrate current findings with prior literature. The Salmonella data (C119) support the general principle that terminal regions control oligomerization (C120). The functional data with disulfide-locked hexamers (C121) directly demonstrate that head domain flexibility is not required, while the deletion analysis supports the importance of terminal region flexibility (C122). The logic is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The dependence of FliD oligomerization on flexible regions may facilitate development of small molecule inhibitors as novel antibiotics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is highly speculative. While the structural findings are solid, the leap to drug development potential is not supported by any experimental evidence. The cited challenge of targeting protein-protein interfaces actually argues against easy druggability. This is a speculative future application without validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The dodecameric assembly observed in crystals may be unique to the FliD78-405 fragment due to strand replacement that could be prevented by N-terminal residues in full-length protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is a reasonable speculation based on the structural data showing strand replacement in the dodecamer interface. The observation that full-length protein forms hexamers rather than dodecamers (C62) supports this interpretation. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The morphology and dimensions of Pseudomonas FliD hexamers are similar to Salmonella FliD pentamers/decamers despite different stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 compare the current structure with published Salmonella cryo-EM data. The dimensions are remarkably similar (136 \u00c5 vs 145 \u00c5 diameter, identical head and leg depths), supporting the morphological similarity despite stoichiometric differences. This is a straightforward comparison of measurements.",
+    "result_type": "MINOR"
+  }
+]

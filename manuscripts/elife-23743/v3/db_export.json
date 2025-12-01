@@ -1,0 +1,1348 @@
+{
+  "submission": {
+    "id": "bc7f97b4-2779-47ee-a59d-e24987bc375f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:53:28.104578Z",
+    "updated_at": "2025-11-30T23:53:28.104578Z"
+  },
+  "content": [
+    {
+      "id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "submission_id": "bc7f97b4-2779-47ee-a59d-e24987bc375f",
+      "content_type": "manuscript",
+      "content_text": "# Sequential sensory and decision processing in posterior parietal cortex\n\n## Authors\n\n- Guilhem Ibos<sup>1</sup> ([ORCID: 0000-0002-9280-1280](https://orcid.org/0000-0002-9280-1280)) \u2020\n- David J Freedman<sup>1</sup> ([ORCID: 0000-0002-2485-5981](https://orcid.org/0000-0002-2485-5981))\n\n### Affiliations\n\n1. Department of Neurobiology The University of Chicago Chicago United States\n2. Grossman Institute for Neuroscience Quantitative Biology and Human Behavior, The University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDecisions about the behavioral significance of sensory stimuli often require comparing sensory inference of what we are looking at to internal models of what we are looking for. Here, we test how neuronal selectivity for visual features is transformed into decision-related signals in posterior parietal cortex (area LIP). Monkeys performed a visual matching task that required them to detect target stimuli composed of conjunctions of color and motion-direction. Neuronal recordings from area LIP revealed two main findings. First, the sequential processing of visual features and the selection of target-stimuli suggest that LIP is involved in transforming sensory information into decision-related signals. Second, the patterns of color and motion selectivity and their impact on decision-related encoding suggest that LIP plays a role in detecting target stimuli by comparing bottom-up sensory inputs (what the monkeys were looking at) and top-down cognitive encoding inputs (what the monkeys were looking for).\n\n## Introduction\n\nDetecting behaviorally important stimuli in a visually cluttered environment (such as a predator in a field of high grass) is a difficult, yet vital ability. Solving such tasks relies on our ability to voluntarily select and enhance the representation of behaviorally relevant spatial and non-spatial features. A large corpus of studies has shown that both space-based attention (SBA) and feature-based attention (FBA) increase the activity of cortical visual neurons selective to the relevant features and positions (e.g. from V4 [Reynolds et al., 2000; Connor et al., 1997; McAdams and Maunsell, 2000] or MT [Martinez-Trujillo and Treue, 2004; Seidemann and Newsome, 1999]). Recently, we proposed that these attention-dependent gain modulations strengthen the bottom-up flow of relevant information and facilitate their integration and representation by downstream areas (Ibos and Freedman, 2014, 2016). Specifically, we showed that both SBA and FBA modulations of lateral intraparietal area (LIP) neurons were consistent with LIP linearly integrating inputs from attention-modulated activity in upstream visual cortical areas.\n\nOur previous studies and the model framework which accompanied them (Ibos and Freedman, 2014, 2016) can potentially account for the encoding of individual spatial and non-spatial features in LIP. However, it did not address the role of LIP in solving tasks in which decisions rely on grouping different sensory feature representations and comparing them to an internal cognitive model of task-relevant information. Why does LIP integrate the flow of bottom-up sensory information? Why does LIP represent sensory information that is already reliably encoded in upstream areas? In the past 15 years, a large number of hypotheses about the role of LIP have emerged in the literature. LIP has been proposed to encode stimuli behavioral salience (Ipata et al., 2009; Bisley and Goldberg, 2003, 2010; Arcizet et al., 2011; Gottlieb et al., 1998; Leathers and Olson, 2012), to transform sensory evidence into decisions about the target of saccadic eye movements (Leon and Shadlen, 1998; Shadlen and Newsome, 2001; Gold and Shadlen, 2007; Huk and Shadlen, 2005) or to encode cognitive signals such as rules (Stoet and Snyder, 2004) or abstract categories (Freedman and Assad, 2006; Swaminathan and Freedman, 2012; Sarma et al., 2016) independently of LIP\u2019s role in spatial processing (Rishel et al., 2013). The present study focuses on understanding how LIP jointly encodes sensory, cognitive and decision-related information during a complex memory-based visual-discrimination task in which decisions rely on comparing the identity of observed stimuli to the identity of a remembered stimulus.\n\nWe trained two monkeys to perform a delayed-conjunction matching (DCM) task. At the beginning of each trial, monkeys were cued by one of two sample stimuli about the identity (conjunctions of color and motion-direction features) and position of the upcoming target stimulus. After a delay, successive visual test stimuli were presented simultaneously at two positions. Monkeys were required to identify test stimuli matching the position, color and motion-direction of the sample by releasing a manual lever to receive a reward. This task design allowed us to compare how LIP neurons encode the identity of the test stimuli as well as their match status.\n\nWe show that LIP neurons jointly encode the identity and match/non-match status of test stimuli. Specifically, LIP contains a continuum of mixed selectivity from purely identity-selective neurons to purely match-selective neurons. Interestingly, the identity of the stimuli was encoded prior to their match-status. Moreover, the dynamics of identity-selective signals were not predictive of monkeys\u2019 behavioral reaction times (RT, i.e. timing between test stimulus onset and manual response), while match-selective signals and RT were correlated. Furthermore, this relationship appeared to be independent of motor-preparation signals, suggesting that match-selectivity reflected decision-related process. Finally, we tested how neurons combine independent signals relative to the color and the direction of test stimuli in order to encode their conjunction. We show that identity-selective neurons combine color and direction signals linearly. However, the representation of relevant conjunctions by match-selective neurons was super-additive. Together, these results suggest that, along its visuo-decision continuum, LIP integrates, combines and transforms sensory information into decisions about the relevance of the test stimuli. Such a signal could alert monkeys about the presence of behaviorally relevant stimuli.\n\n## Results\n\nThe goal of this study was to characterize how LIP encodes both the visual features and behavioral significance of visual stimuli. These data have been partially presented in two previous reports in which we studied the effects of SBA and FBA on LIP spatial and non-spatial selectivity (Ibos and Freedman, 2014, 2016).\n\n### Task and behavior\n\nWe trained two macaque monkeys to perform two versions of the DCM task (two-location DCM Figure 1 and one-location DCM Figure 1\u2014figure supplement 1) presented in two previous reports (Ibos and Freedman, 2014, 2016). Trials were initiated when monkeys held a manual lever and fixated a central fixation point. In the two-location DCM task, a sample stimulus then appeared either inside or outside the receptive field (RF) of the neuron being recorded (450 ms). After a delay (450 ms), a succession of one to four test stimuli (450 ms each) was presented at the location of the sample stimulus. In the one-location DCM, the sample (550 ms), always presented inside LIP neurons\u2019 RFs, was followed by a delay (550 ms) and a succession of one to three test stimuli (550 ms each). In the two-location DCM task only, distractor stimuli were simultaneously presented at the opposite location (180\u00b0 in the opposite hemifield). In both versions of the DCM task, test and distractor stimuli were conjunctions of one of eight motion-directions and one of eight colors along a continuum from yellow to red (Figure 1B). The sample stimulus was either composed of yellow dots moving in a downward direction (sample A) or of red dots moving in an upward direction (sample B). The monkeys\u2019 task was to release the lever when any of the test stimuli matched the position, color and motion-direction of the sample stimulus. On 20% of trials (25% in the one-location DCM task), no target stimulus was presented (catch trials) and monkeys had to withhold their response until the end of the last test stimulus to get a reward. In the two-location DCM task, test stimuli (presented at the sample location) were randomly picked among three types of stimuli: (1) target stimuli, matching the sample, (2) opposite-target stimuli (i.e. the sample stimulus which was not presented during that trial, e.g. test stimulus A during sample B trials), (3) any of the remaining conjunctions of color and motion-direction. Distractor stimuli (presented at the location opposite the sample) were pseudo-randomly picked among the entire set of 64 stimuli. Correct behavioral responses were rewarded with a drop of juice. Distractor stimuli were always behaviorally irrelevant and had to be ignored. In these tasks, the behavioral relevance of test stimuli A and B changed according to the identity of sample stimulus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig1-v3.jpg)\n\n**Figure 1.:** One of two sample stimuli was presented for 450 ms. The sample could either be sample A (yellow dots moving downwards) or sample B (red dots moving upwards). After a delay of 450 ms, one to four test stimuli were successively presented at the sample position in succession for 450 ms each while as many distractors were simultaneously presented in the opposite hemifield. In the attention IN condition, sample and test stimuli were presented in the receptive field (RF) of the recorded neuron (dashed arc, not shown to monkeys). In the attention OUT condition, sample and test stimuli were presented outside the RF while distractors were located inside the RF. All stimuli were conjunctions of one color and one direction. To receive a reward, monkeys had to release a manual lever when the test stimulus matched the sample in both color and direction and to ignore the distractors. On 20% of trials, none of the test stimuli matched the sample, and monkeys had to hold fixation and withhold their manual response to receive a reward. (B) Stimulus features: eight colors and eight directions were used to generate 64 different test/distractor stimuli. Colors varied from yellow to red, and directions were evenly spaced across 360 degrees.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The task is similar to the two locations delayed conjunction matching task except for three points: (1) stimuli are presented on one location, always in each neuron\u2019s receptive field (no distractor); (2) sample stimuli, delay period and test stimuli lasted 550 ms (instead of 450 ms for the two locations DCM); (3) one to three test stimuli can be presented in a row (one to four in the two-location protocol).\n\nBoth monkeys performed the task with high accuracy (Figure 2A) as more than 85% of trials were hits, less than 10% were misses, and less than 5% were false-alarms. Moreover, analyses of stimuli triggering the false-alarm responses (Figure 2B) revealed that monkeys correctly ignored test stimulus A during sample B trials and test stimulus B during sample A trials.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig2-v3.jpg)\n\n**Figure 2.:** (A) Performances: both monkeys M and N performed the task with high accuracy as\u00a0~90% of trials were correct,\u00a0~6% were misses and\u00a0~4% were false alarms (excluding fixation breaks) in both attention IN and attention OUT conditions. (B) Percent of false alarm responses (averaged across both monkeys) for each of the 64 test stimuli located inside (top) or outside (bottom) the RF of the recorded neuron during attention IN (left) and attention OUT (right) conditions. For each panel, each row represents one direction, and each column represents one color.\n\n### Electrophysiology\n\nWe recorded the activity of 201 individual LIP neurons while monkeys performed the tasks (74 during two-location and 127 during one-location DCM tasks). We analyzed correct trials only. Our task design allowed us to test how sensory content (i.e. identity of the test stimuli) and behavioral relevance (i.e. match status of test stimuli) jointly shaped LIP neuronal selectivity. We will also briefly describe the influence of sample identity on the LIP neuronal response. In addition, results will be presented separately for each monkey in each figure but grouped together for statistical tests. However, unless mentioned otherwise, analyzing data separately for each monkey did not affect the outcomes of the following analyses.\n\n### Typical LIP neuronal response\n\nFigure 3 shows the activity of four different neurons with different patterns of selectivity for the identity, match status, and manual response evoked by test stimuli. Selectivity to the identity of stimuli is exemplified by neuron #1 (Figure 3A, left panel). This neuron responded preferentially to test stimulus B independently (at least in the initial phase of the response) of its match status. Interestingly, the relative strength of identity and match selectivity evolved in time. This neuron was identity-selective from 86 ms to 299 ms after stimulus onset (Figure 3, black horizontal line in the ROC panel, Wilcoxon test, Bonferroni corrected, p<0.01) and became selective to the match status of the stimuli 209 ms after stimulus onset (Figure 3, grey horizontal line in the ROC panel, Wilcoxon test, Bonferroni corrected, p<0.01), shortly before this monkey\u2019s average RT. Example neuron #2 (Figure 3B) illustrates selectivity to the match status of the stimuli (starting 53 ms after stimulus onset), independent of their identity (left panel). The absence of selectivity to target stimuli located outside this neuron\u2019s RF (right panel) suggests that such selectivity cannot be attributed to a motor-preparation signal. However, this pattern of selectivity could also reflect motor-preparation signals modulated by cognitive factors such as the position of attention.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig3-v3.jpg)\n\n**Figure 3.:** For each example, we show the time course of response to test stimulus A (in blue) and test stimulus B (in red) for both target stimuli (full lines) and opposite-target stimuli (dashed lines). Vertical black dashed lines represent averaged monkey\u2019s reaction times, surrounding grey histograms represent RT\u2019s distributions. We also show the time course of identity selectivity (black lines, ROC comparison stimulus A vs stimulus B) and of match selectivity (grey lines, ROC comparison target vs opposite-target). Each example represents a stereotypical response observed among our recorded population of 74 LIP neurons.\n\nMoreover, selectivity for the identity and match status of test stimuli were not mutually exclusive and some neurons multiplexed these signals. Neuron #3 (Figure 3C) responded preferentially to test stimulus A compared to test stimulus B (starting from 86 ms after stimulus onset) but also to target stimuli compared to opposite-target stimuli (starting from 124 ms after stimulus onset). We also observed neurons which showed bilateral selectivity to match stimuli, meaning that they responded more strongly to target stimuli (which required a manual response) in either the ipsilateral or contralateral visual field. For example, neuron #4 (Figure 3D) responded preferentially to target compared to opposite-target stimuli (starting 103 ms and 171 ms after stimulus onset during attention IN and attention OUT respectively), consistent with several processes such as spatially\u00a0independent match/non-match decisions, preparation of the manual movement used to report the presence of match stimuli, or reward expectation. Although we treated bilateral and unilateral match selectivity similarly in our analyses, we conducted a series of control analyses (Figure 4\u2014figure supplement 2, Figure 6, Figure 7\u2014figure supplement 1) which show that removing bilateral selectivity from the two-location DCM dataset yielded qualitatively similar findings.\n\nIn the following, we will characterize these two types of selectivity (identity and match status) at the population level along with the influence of sample identity on LIP neuronal responses.\n\n### Stimulus identity and match selectivity\n\nWe characterized stimulus identity and match selectivity using a receiver operating characteristic (ROC) analysis. We compared each neuron\u2019s responses either to test stimuli A and B (identity selectivity), or to target stimuli and opposite-target stimuli (match selectivity)\u2014in both cases for stimuli located inside neurons\u2019 RF. But, as shown in previous studies (Ibos and Freedman, 2014, 2016), LIP neuronal activity was strongly influenced by the identity of the sample stimulus (Figure 7C) during sample presentation but also during the delay period and prior/during the presentation of each test stimulus. Sample encoding during the delay and test periods is consistent with a role for LIP in encoding task-relevant information in short-term memory. This characteristic of the neuronal response in LIP interfered with our analysis of the dynamics of sensory selectivity as it was responsible for larger response during either sample A or sample B trials, mimicking the effect of identity selectivity on the ROC analysis prior stimulus onset in several neurons (N = 24/74, Wilcoxon test, p<0.05). Therefore, prior to analyzing data, we equated each neuron\u2019s response during either sample A or B trials (depending on each neuron\u2019s preference) using a randomized decimation approach (an approach more conservative of spike train dynamics than standard normalization methods) based on the ratio of firing rates between sample A and sample B trials prior to test stimulus onset (see Materials and methods). After this correction, we observed that a large fraction of LIP neurons (N = 147/201; sliding Wilcoxon test (200 ms window), Bonferroni corrected, p<0.01) showed selectivity for the identity (N = 92; 51/67 for monkey N, 41/70 for monkey M, Figure 4\u2014figure supplement 1) and/or the match status of the stimuli (N = 103; 34/67 for monkey N, 69/80 for monkey M). In addition, 48/147 neurons (18/67 for monkey N, 30/80 for monkey M) showed significant selectivity for both types of information. This shows that both types of information (identity and match selectivity) are encoded by LIP neurons from both monkeys. Figure 4A shows each neuron\u2019s (N = 147) time-course of both identity (left panel) and match selectivity (middle panel). Neurons are sorted according to the averaged value (100 to 350 ms after stimulus onset) of a visuo-decision index comparing outcomes of the aforementioned ROC analyses (VDI, identity selectivity \u2013 match selectivity, Figure 4A, right panel). The VDI indicates that the population of LIP neurons selective to either the identity of test stimuli and/or their match-status (N = 147) forms a continuum from purely identity-selective neurons (VDI = 1) to mixed identity and match/non-match selectivity (VDI~ = 0) to purely match-selective neurons (VDI=\u22121). Neurons from both monkey M and N showed identity and match selectivity. However, the respective strength of selectivity differed between the monkeys (Figure 4\u2014figure supplement 1): distribution of VDI from monkey M are shifted toward negative values (match selectivity) and toward positive values for monkey N (identity selectivity).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig4-v3.jpg)\n\n**Figure 4.:** (A) Each line of each of these panels correspond to the time course of identity selectivity (left panel) and match selectivity (middle panel), defined as corrected ROC values. Each vertical black tick represents the latency at which each signal becomes statistically significant (Wilcoxon test, corrected for multiple comparisons, p<0.01). Right panel shows the time course of a visuo-decision index for each LIP neuron. Vertical black ticks represent averaged RT. Lines on each panel represent similar neurons. (B) Comparisons of discrimination latencies for identity and match selectivity from both two-location and one-location datasets. (C) Time course of performances of an SVM classifier to decode the identity (red line) and the match status of test stimuli (blue line) of both DCM tasks (N\u00a0=\u00a0201). Horizontal blue and red lines represent the statistical significance of the decoder performance (p<0.01).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig4-figsupp1-v3.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig4-figsupp2-v3.jpg)\n\n### Dynamics of neuronal selectivity\n\nAs shown by the example neurons, LIP expressed patterns of identity and match/non-match selectivity with different dynamics. Three complementary methods revealed that LIP neurons encoded the identity of test stimuli before their match/non-match status. First, a direct comparison of each signal\u2019s latency (black vertical ticks in Figure 4A left and middle panel, see Materials and methods) revealed that identity-selectivity (N = 92, mean latency = 101.0 ms \u00b1 72 ms) rose significantly earlier than match-selectivity (N = 103, mean latency = 187.3 ms \u00b1 67 ms; t test, p=2*10\u221215; Figure 4B, left panel). This is not due to higher firing rates of identity-selective neurons (N = 92) compared to match-selective neurons (N = 103) since paired comparisons of latencies for neurons selective for both signals (N = 48) revealed a similar dynamic (mean latency: stimulus identity: 107.8 ms \u00b1 68 ms; match selectivity: 191.6 ms \u00b1 65 ms; paired t test, p=1\u00d710\u22127). We confirmed this observation by using a population decoding approach in which we trained SVM classifiers to decode independently the identity or the match status of the stimuli based on the activity of the entire population of LIP neurons (N = 201, see Materials and methods). We found that linear classifiers could decode, above the level expected by chance (50%), the identity of test stimuli (0 ms after stimulus onset) prior to their match status (93 ms after stimulus onset; Figure 4C).\u00a0This serial representation of identity and target status in LIP population suggests a role in transforming sensory information into a decision about the match status of test stimuli.\n\nTo test this hypothesis, we analyzed whether the time course of each neuron\u2019s activity was correlated to the monkeys\u2019 RTs\u00a0(Figure 5). For each neuron, we paired the time course of each trial\u2019s z-scored firing rate (convolved with a Gaussian function, \u03c3\u00a0=\u00a015 ms) with that trial\u2019s RT. Importantly, for this analysis, we only used trials in which the sample stimulus was each neuron\u2019s preferred stimulus (e.g. sample A trials for neurons preferring test stimulus A). Artefactual correlation in this kind of analyses can emerge when monkeys\u2019 detection rates fluctuate with the timing at which the stimuli were presented during each trial (Kang and Maunsell, 2012), leading to more presentations of the target stimulus at a certain trial epoch (e.g. a larger number of targets detected during the presentation of the first test stimulus). In this situation, an important control is needed to ensure that the results of this analysis (correlation between firing rates and behavioral reaction times) do not follow a similar pattern. To do so, we first measured whether the number of presentation of the target stimulus depended on its position in the sequence of test stimuli. We observed an over-presentation of target during the first test period compared to the three successive ones (Figure 5C, ANOVA, p=2\u00d710\u22127). Therefore, we removed data acquired during presentation of target stimuli during the first test period from our analysis, using only test stimulus presentations 2, 3 and 4 (2 and 3 for the one-location DCM task). At the population level (N\u00a0=\u00a0147), the magnitude of this correlation (r) covaried with each neuron\u2019s VDI (Figure 5B, correlation coefficient\u00a0=\u00a00.32, p=7\u00d710\u22125). The stronger the influence of match-selectivity compared to identity selectivity, the larger the negative correlation, suggesting that match-selectivity, but not identity-selectivity, reflects a process which covaries with monkeys\u2019 decisions about the relevance of the stimuli.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig5-v3.jpg)\n\n**Figure 5.:** (A) Left: time course of visuo-decision index (similar as Figure 4A, N\u00a0=\u00a0147). Right: corresponding time course of choice probability (correlation between neuronal responses (z-scores) and behavioral reaction times). (B) Correlation between choice probability and visuo-decision index. (C) Number of target presentation (two-location DCM only) as a function of target\u2019s position in the sequence of test stimuli. Red lines represent the median of the distribution, superior and inferior limits of the boxes represent the edges of the 25th and 75th percentiles, error bars represent the most extreme values of the distributions.\n\nThis correlation between the dynamics of match selectivity with monkeys\u2019 reaction times could, for example, reflect decision-related (as shown in Figure 3B) or non-spatial processing such as motor-preparation signals (as exemplified in Figure 3D). To address the potential confound between unilateral and bilateral match selectivity, we compared the degree of selectivity to target stimuli located inside and outside neurons\u2019 RFs in the two-location protocol only (Figure 6). However, as shown in a previous study (Ibos and Freedman, 2016), SBA strongly influenced the activity of LIP neurons, with larger activity when monkeys attended inside LIP neurons\u2019 RFs. We sought to remove the influence of SBA on match-selectivity by equating the level of average neuronal activity between attention IN and attention OUT condition. To do so, we used a decimation approach based on the firing rate ratio (Attention IN/Attention OUT) during pre-test stimuli activity (200 ms prior to test stimulus onset, see Materials and methods). A laterality index (target/opposite-target IN minus target/opposite-target OUT), showed that non-spatial processes likely influenced the response of a sub-population of LIP neurons. Laterality index values close to 0 reveal selectivity for target stimuli located inside and outside each neuron\u2019s RF, while positive or negative values indicate match-selectivity limited to stimuli located inside or outside RFs. A permutation test (see Materials and methods) revealed that bilateral match selectivity signals could account for the match selectivity of 20/41 neurons (Figure 6B, permutation test, p<0.05) as they were selective independently of the spatial location of match stimuli. Removing these 20 bilaterally match selective neurons from the pool of 60 neurons in Figure 5A did not change the finding of an inverse correlation between choice probability (r-values, linking each neuron\u2019s dynamics and behavioral reaction times) and VDI (Figure 6C, p=0.01). Note that when separating monkey M and N, this effect is significant for monkey M (N = 15, p=0.049) but not for monkey N (N = 25, p=0.9). However, our task was not specifically designed to characterize the exact nature of non-spatial match-selectivity signals, which could reflect different processes (e.g. non-spatial decisions, motor-preparation, motor-execution or even reward expectancy). Nevertheless, we were able to identify a population of LIP neurons showing match-selectivity that was independent of non-spatial processes (including motor-preparation), suggesting a role in decision-related computation independent of motor-related processing.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig6-v3.jpg)\n\n**Figure 6.:** (A) Each line in both the left and middle panels correspond to the time course, for one LIP neuron, of match selectivity when relevant stimuli were located inside (left panel) or outside its RF (middle panel). Vertical black ticks correspond to each signal latency of significance (Wilcoxon test, corrected for multiple comparisons, p<0.01). Right panel depicts the time course of a laterality index. Vertical black ticks correspond to the latency at which IN and OUT signals significantly differ (permutation test corrected for multiple comparison, p<0.01). (B) Comparisons of match selectivity during attention IN and attention OUT conditions. (C) Similar to B but with baseline activity equated between attention IN and attention OUT. (C) Correlation of neuronal dynamic and monkeys\u2019 reaction times similar as Figure 5B after removing neurons bilaterally match selective.\n\n### Encoding of visual feature conjunctions\n\nIn the previous section, we showed that a population of LIP neurons encode the identity of specific conjunctions of visual features (color and motion-direction). We also showed in previous reports (Ibos and Freedman, 2014, 2016) that the same LIP neurons independently encode the color and motion-direction of these stimuli in a manner consistent with a bottom-up integration model. But this model does not account for how LIP neurons combine signals related to color and motion-direction to encode either the identity or the match status of test stimuli. We focus on how LIP neurons encode target stimuli (e.g. test A for stimulus A selective neurons) compared to color-match stimuli (conjunction of the relevant color with any of the seven irrelevant directions), to direction-match stimuli (conjunction of the relevant direction with any of the seven irrelevant colors) and to opposite-target stimuli (e.g. test-stimulus A during sample B trials for A selective cells). The averaged normalized firing rate (N\u00a0=\u00a0147/201, Figure 7A, top left panel) to each of these stimuli reveals a gradient of responses: target and opposite-target stimuli triggered the largest and smallest responses, respectively, while color and direction-match stimuli triggered intermediate responses. In the framework of our task, responses to non-match stimuli represent the encoding of irrelevant information (e.g. irrelevant features). Therefore, in order to test how LIP neurons combine relevant information, we removed signals related to irrelevant information by subtracting, for each neuron, the response to opposite-target stimuli from the responses to target, color-match and direction-match stimuli (see methods for details). Then, we calculated each neuron\u2019s additivity-index (Additivity-index=target \u2013 (color + direction)). Despite its name, this index does not reflect purely linear processes since it results from subtractive normalization (a non-linear computation) in order to take into account relevant information only. This method assumes that irrelevant information contained in target, color-match and direction-match stimuli are equivalent to opposite-target stimuli. An additivity-index of 0 corresponds to a pseudo-linear model in which neurons encode conjunctions of features by summing feature-specific sensory inputs. Positive and negative additivity-indices represent super-additive and sub-additive mechanisms, respectively. This additivity-index (Figure 7A, right panel) was significantly negatively correlated with each neuron\u2019s VDI (correlation coefficient\u00a0=\u00a0\u22120.26, p=0.001). This relationship was impacted by separating data from each monkey only when we also removed bilaterally match selective neurons (monkey M, N\u00a0=\u00a015: correlation coefficient\u00a0=\u00a0\u22120.37, p=0.18; monkey N, N\u00a0=\u00a025, correlation coefficient\u00a0=\u00a0\u22120.22, p=0.28), likely due to the decrease in sample size. Visual (positive VDI) neurons\u2019 additivity-indices were centered on 0, reflecting additive encoding of conjunction of features, suggesting that identity-selective neurons express their selectivity by linearly pooling bottom-up color and direction encoding. On the contrary, decision-related neurons (negative VDI) showed apparent super-additive (positive additivity-index) encoding of conjunction of features. This was expected given that the information encoded by these neurons is not exclusively related to sensory information, but it is not clear whether and how match-selective neurons integrate and pool bottom-up sensory information in order to generate their selectivity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig7-v3.jpg)\n\n**Figure 7.:** (A) Left panel: averaged normalized response of neurons from the visuo-decision continuum (N\u00a0=\u00a0147) to target, color-match, direction-match and opposite target stimuli. Error bars represent standard deviation of the mean (std). Right panel: Response to relevant conjunction (match) are compared to linear model in which neurons combine color and direction signals linearly (color+direction) as a function of averaged visuo-decision index. Full red line represents sliding averaged additivity index, dotted red lines represent standard deviation to the mean. (B) Effect of feature-based attention as a function of VDI on color selectivity (left, negative and positive values represent shifts toward and away the relevant color respectively), and on direction selectivity (right, positive and negative values represent shifts toward and away the relevant direction, respectively). (C) Time course of decoding accuracy of the identity of the sample by a linear SVM classifier using the activity of the entire population of either 74 LIP neurons (black lines, two-location DCM; chance level\u00a0=\u00a050%) or 127 LIP neurons (grey lines, one-location DCM; chance level\u00a0=\u00a050%).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23743/elife-23743-fig7-figsupp1-v3.jpg)\n\nIn order to understand the influence of bottom-up sensory signals on LIP match-selectivity, we tested the impact of FBA on each neuron along the visuo-decision continuum. We previously showed that FBA shifts LIP\u2019s representation of individual features toward the relevant direction and color (Ibos and Freedman, 2014, 2016) in a manner consistent with bottom-up integration of sensory information. Moreover, we showed that the amplitude of these feature-tuning shifts depended on the strength of each LIP neuron\u2019s feature-selectivity, which presumably reflects the connectivity between individual LIP neurons and upstream cortical visual neurons. We posited that visually\u00a0selective LIP neurons (tuned to visual features) are less likely to be modulated by attention than decision-related neurons. To examine this, we compared each neuron\u2019s amplitude of feature-tuning shifts (see Materials and methods) with its respective VDI (Figure 7B). As predicted, we found a significant correlation between each neuron\u2019s VDI and the amplitude of feature-tuning shifts (for color: correlation coefficient = 0.63, p=1\u00d710\u221217; for direction: correlation coefficient = \u22120.26, p=0.001), showing that FBA had a larger impact on neurons involved in encoding decision-related signals than on visually selective neurons. Difference in the sign of these correlations results from the respective methods used to describe color and direction tuning shifts (see Materials and methods). For this analysis, separating data from each monkey affected the results when considering the relationship between the effects of FBA on direction selectivity and VDI. This was true for monkey N only when considering both datasets (correlation coefficient = 0.08, p=0.53) and for both monkeys when removing neurons showing bilateral match selectivity (p>0.05 for both monkeys). This was not surprising given the subtle effects of FBA on LIP direction selectivity (Ibos and Freedman, 2014, 2016) described previously. This relationship suggests that match-selectivity in LIP is a composite signal resulting from the pooling of bottom-up sensory information with additional extraretinal signals. Whether it reflects local computation or integration of top-down signal originating in downstream cortical areas is an important question to be considered in future work.\n\n## Discussion\n\nWe recorded the activity of LIP neurons from two monkeys performing a DCM task. Monkeys released a touch bar when test stimuli matched the position, color and motion-direction of a previously presented sample stimulus. On each trial, sample stimulus was randomly picked among two different stimuli and two different positions. Therefore, depending on the identity of the sample, these conjunctions could either be target or opposite-target stimuli. This task design allowed us to characterize the relative importance of sensory and cognitive information in the response of LIP neurons to test stimuli. This revealed that LIP neurons multiplexed both the identity and the match status of stimuli. Interestingly, sensory information (whose time course was weakly correlated with monkeys\u2019 RTs) was encoded prior to decision-related signals (whose timing was predictive of monkeys\u2019 RTs). Finally, we studied how LIP neurons combine color and motion-direction signals in order to encode their conjunction. We found that, along the visuo-decision continuum, the encoding of the relevant conjunctions switched from additive to super-additive. It suggests that (1) identity-selective neurons primarily integrate only bottom-up sensory information, and (2) match-selective neurons integrate additional sources of information. Several previous studies described aspects of LIP activity which could relate to the selectivity described here. For example, LIP identity selectivity relates to selectivity to the category membership of test stimuli described in some previous work (Freedman and Assad, 2006). Similarly, selectivity to behaviorally relevant stimuli has been shown in LIP by different studies (Bisley and Goldberg, 2003; Leathers and Olson, 2012; Swaminathan et al., 2013; Ibos et al., 2013). However, the current study is the first to directly characterize and compare each of these types of selectivity in LIP and to integrate them in a coherent theoretical framework. We propose that LIP is composed of a visuo-decision continuum of neurons involved to different degrees in (1) the integration of bottom-up sensory inputs, (2) the linear grouping of these disparate sensory signals and (3) their transformation into a signal related to monkeys\u2019 decisions about the relevance of the visual stimuli. This transformation could result from either local computation, or from the integration of additional top-down signals, but the nature of such computations is still unknown (see below).\n\n### Previous model of decision-making in LIP\n\nIn the past decades, posterior parietal cortex has been associated with certain aspects of decision-making by a large corpus of studies (Leon and Shadlen, 1998; Shadlen and Newsome, 2001; Gold and Shadlen, 2007; Huk and Shadlen, 2005). These studies employed similar paradigms in which monkeys discriminated the direction of movement of noisy stimuli and reported their decisions with a saccadic eye movement. During presentation of the noisy-stimuli, if the target of the upcoming saccade was positioned in neurons\u2019 RFs, average responses in LIP monotonically increased (but see [Latimer et al., 2015]) until they reached a threshold, which corresponded to the execution of the eye-movement. It was posited that the ramping activity reflects accumulation of sensory evidence leading to the decision about the direction of the saccade. This interpretation is at least semantically similar to our observations that LIP, at the population level, appears to integrate, combine and transform sensory information into decision-related signals.\n\nHowever, despite these similarities, our approach and model differ in fundamental ways in terms of mechanisms underlying the transformation of decisions into task-appropriate actions. As noted by several studies (Filimon et al., 2013; Freedman and Assad, 2016), the stereotypical ramping activity preceding the execution of saccadic eye movement (Leon and Shadlen, 1998; Shadlen and Newsome, 2001; Gold and Shadlen, 2007; Huk and Shadlen, 2005) is likely to be driven to a large degree by processes related to preparing the upcoming saccade\u2014which have been extensively shown to modulate the activity of LIP neurons (Gnadt and Andersen, 1988; Barash et al., 1991)\u2014rather than by the motion stimulus or by the accumulation of sensory evidence. This is especially evident since the pre-saccadic activity of LIP neurons has long been associated with the intention of performing a saccadic eye movement toward the RF (Gnadt and Andersen, 1988; Andersen and Buneo, 2002; Bracewell et al., 1996; Mazzoni et al., 1996), that reversible inactivation of LIP does not alter monkeys\u2019 ability to perform such sensorimotor transformation (Katz et al., 2016), and since the motion stimulus in this task is presented outside LIP neurons\u2019 RFs (Freedman and Assad, 2016).\n\nAnother key difference between our work and previous studies on perceptual-decisions is related to the definition of decision-making. Previous work proposed that perceptual-decisions regarding a visual stimulus are supported by the same neurons as the ones encoding motor actions resulting from its detection (Gold and Shadlen, 2007; Cisek and Kalaska, 2010). However, this claim is a subject of debate (Filimon et al., 2013; Freedman and Assad, 2016; Tosoni et al., 2008). Our study, along with others (Leathers and Olson, 2012; Filimon et al., 2013; Freedman and Assad, 2016), distinguishes between perceptual-decision-making (making a decision about a sensory event) and motor-decision-making (making a decision about which action to initiate). For example, deciding whether an animal is a predator is different from deciding whether the best survival strategy is to run away or to attack him in order to defend your offspring. Our approach is supported by studies showing that LIP multiplexes and independently encodes cognitive (abstract category-selectivity) and saccade-related signals (Rishel et al., 2013). Although our task was not designed to specifically distinguish between detection, decision-making and motor-preparation, a large fraction of LIP neurons encoded the relevance of stimuli independently of monkeys\u2019 behavioral responses. This supports the hypothesis that LIP is involved in perceptual decision-making independent of action.\n\n### Toward a new model of decision-making in LIP?\n\nRecently, we showed that representation of individual features in LIP is consistent with the linear bottom-up integration of the activity of populations of feature-selective neurons in upstream visual areas (Ibos and Freedman, 2014, 2016). However, this model does not account for how and whether LIP neurons flexibly combine these representations together in order to encode the identity and match-status of test stimuli. Testing how LIP neurons combine signals related to each feature allowed us to begin to identify which computations take place along the LIP visuo-decision continuum. We propose here that identity-selective neurons linearly pool color and motion-direction selective signals, presumably originating from upstream cortical areas. According to Bayesian inference theory (Kersten et al., 2004), decision-variables (match-selectivity in our data) are computed by comparing statistical inferences (Parker and Newsome, 1998) (identity-selectivity in our data) about the stimuli subjects are looking at to an internal model of the stimuli subjects are looking for. The super-additivity observed for match-selective neurons in LIP hypothetically is the outcome of a computation related to the comparison of the identity of the stimuli with top-down signals, presumably originating in PFC (Mante et al., 2013), related to internal models of which features are behaviorally relevant. The selectivity for sample identity across each trial epoch (Figure 7C) could reflect the integration of top-down signals related to the identity of the relevant stimuli kept in working memory. Unfortunately, we still lack evidence to understand whether this match-selectivity results from local computation or from the integration of signals from another source. Therefore, future research should focus on developing and testing this question. Specifically, it will be interesting to test how LIP neurons along the visuo-decision continuum respond to independent information encoded in different brain areas\u2014including noisy sensory information, diverse expected value and behavioral costs\u2014and how these sensory and cognitive representations are combined and transformed into a decision signal in LIP.\n\nFinally, we showed that LIP encodes all the information required to solve the DCM task: (1) the information being encoded in working memory; (2) the stimuli monkeys were looking for; (3) the stimuli monkeys were currently looking at; (4) the monkeys\u2019 match/non-match decisions; (5) the monkeys\u2019 behavioral responses. This large amount of mixed selectivity poses a decoding challenge for downstream areas in charge of reading-out the activity of LIP neurons. Our results underline the diversity of signals influencing and shaping LIP neuronal selectivity and urge us to characterize the functional connectivity that allow LIP neurons to mediate decision-making by facilitating interactions between both upstream and downstream areas.\n\n## Materials\u00a0and\u00a0methods\n\n### Behavioral task and stimulus display\n\nExperimental procedures were identical to the ones presented in a previous report (Ibos and Freedman, 2014, 2016). The amplitude of feature-tuning shifts were already presented in this report. Two male monkeys (Macaca mulatta, monkey M,\u00a0~10 kg; monkey N,\u00a0~11 kg) were facing a 21 inch CRT monitor on which stimuli were presented (1280*1024 resolution, refresh rate 85 Hz, 57 cm viewing distance), seating head restrained in a primate chair inserted inside an isolation box (Crist Instrument). Stimuli were 6\u00b0 diameter circular patches of 476 random colored dots moving at a speed of 10\u00b0/s with 100% coherence. All stimuli were generated using the LAB color space (1976 CIE L*a*b), and all colors were measured as isoluminant in experimental condition using a luminance meter (Minolta).\n\nGaze position was measured with an optical eye tracker (SR Research) at 1.0 kHz sample rate. Reward delivery, stimulus presentation, behavioral signals and task events were controlled by MonkeyLogic software (Asaad et al., 2013), running under MATLAB on a Windows-based PC.\n\n### Electrophysiological procedures\n\nMonkeys were implanted with a headpost and recording chamber during aseptic procedures. Both the stereotaxic coordinates and the angle of the chambers were determined by 3D anatomical images obtained by magnetic resonance imaging conducted prior to surgery. The recording chambers were positioned over the left intraparietal sulcus. All procedures were in accordance with the University of Chicago\u2019s Animal Care and Use Committee and US National Institutes of Health guidelines.\n\nDuring each experiment session, a single 75 \u03bcm diameter tungsten microelectrode (FHC) was lowered into the cortex using a motorized microdrive (NAN Instruments) and dura-piercing guide tube. Neurophysiological signals were amplified, digitized and stored for offline spike sorting (Plexon) and analysis.\n\n### Data analysis\n\nWe analyzed neuronal activity acquired during correct trials. Behavioral and neurophysiological results were similar in both monkeys, allowing us to merge datasets for population analysis.\n\n#### Decoding sample\u2019s identity\n\nWe trained and tested a linear support vector machine classifier (Chang and Lin, 2011) to decode the identity of the sample stimulus based on the neuronal response during sample presentation, delay period and presentation of the first test stimulus located inside neurons\u2019 RF. Training sets were built by randomly picking with replacement 70 trials from the pool of sample A trials, and 70 trials from the pool of sample B trials. Testing sets were built by picking with replacement 30 trials, different from training trials, for similar conditions each. This procedure was repeated 1000 times, and classifier was considered to perform above chance (50%) if the accuracy of the decoder was higher than chance level for more than 990/1000 iterations (p<0.01).\n\n#### Identity and match selectivity\n\nTwo sliding Receiver Operating Characteristic (ROC) analyses (200 ms analysis window sliding in millisecond steps around test stimulus onset) were used to characterize LIP neuronal selectivity to the identity of test stimuli A and B and to their match status. Identity selectivity was characterized by comparing neuronal firing rates to test stimulus A to test stimulus B (whether stimuli were target or opposite-target stimuli). Match selectivity was characterized by comparing neuronal firing rates to target and opposite-target stimuli. Significance of each comparison was defined using non-parametric Wilcoxon-test corrected for multiple comparisons (p<0.01, Bonferroni corrected).\n\n#### Dynamics of neuronal responses\n\nIndividual neuron latencies: We defined neuronal latencies for identity-selectivity and match-selectivity independently as the first time at which the above-mentioned sliding Wilcoxon-tests reached significance (p<0.01, Bonferroni corrected) for 100 consecutive milliseconds. We limited our analysis to a window between the onset of the test stimuli and the averaged manual-RT during the respective recording session. Decoding: We trained and tested two independent linear support vector machine classifier (Chang and Lin, 2011) to decode the identity of the test stimuli and their match status. Stimulus identity: training sets were built by randomly picking with replacement 140 trials from the pool of test A trials (70 target A and 70 opposite-target A test stimulus presentations) and 140 trials from the pool of match B trials (70 target A and 70 opposite-target B test stimulus presentations). Testing sets were built by picking with replacement 60 trials, different from training trials, for similar conditions each. Match status: training sets were built by randomly picking with replacement 140 trials from the pool of target trials (70 target A and 70 target B) and 140 trials from the pool of non-match trials (70 opposite-target A and 70 opposite-target B). Testing sets were built by picking with replacement 60 trials, different from training trials, for similar target and opposite-target conditions. These procedures were repeated 1000 times, and classifiers were considered to perform above chance (50%) if the accuracy of the decoder was higher than chance level for more than 990/1000 iterations (p<0.01).\n\n#### Decimation approach\n\nLIP neuronal responses were strongly influenced by both the identity (FBA) and the position (SBA) of the sample being remembered. These characteristics of neuronal responses interfered respectively with the analysis of the dynamic of identity and match selectivity and with the comparison of match selectivity between attention IN and attention OUT conditions. We equated activity between different conditions using a randomized decimation approach. This method gave qualitatively similar results as divisive normalization with respect to baseline activity (results not shown). Equating sample A and sample B trials: In order to test the dynamic of neuronal selectivity to the identity and to the match status of test stimuli, we used a decimation approach to equate the level of neuronal response between sample A and sample B trials based on pre-test stimulus averaged responses. For each neuron, we first computed the ratio of firing rates in a 200 ms window preceding test stimulus presentation between sample A and sample B trials. We then randomly removed from each neuron\u2019s spike trains, the number of action-potentials required to equate the pre-stimulus firing rates. For example, if one neuron showed 20 spikes/s during the 200 ms preceding test stimuli presentation during sample A trials and 25 spikes/s during the same period during sample B trials, we randomly removed 1/5 of all the spikes emitted by this neurons during presentation of test stimuli during sample B trials. Equating attention IN and attention OUT trials: In order to compare selectivity to match stimuli located inside and outside each neuron\u2019s RF, a similar approach was used to decimate the spike trains of neuronal responses during attention IN to the level of attention OUT. We computed the ratio of firing rates in a 200 ms window preceding test stimulus presentation between attention IN and attention OUT. In order to base this ratio on response to visual stimuli, we excluded trials in which pre-stimulus corresponds to the delay epoch (test stimulus one in the sequence of test stimuli presentation). We then randomly removed from each neuron\u2019s spike trains as many action potentials as necessary to equate the ratio of pre-stimulus firing rate.\n\n#### Permutation test for laterality index\n\nWe used permutations methods to compare match-selectivity to test stimuli located inside or outside neurons\u2019 RFs. First, we selected randomly with replacement trials from target and opposite-target stimuli during attention IN and attention OUT conditions. We then performed ROC analyses comparing responses to target and opposite-target stimuli independently during attention IN and attention OUT conditions. This procedure was repeated 1000 times. We then computed all the combinatory differences between target/opposite-target IN and target/opposite-target OUT (1000 * 1000 direct comparisons). Levels of selectivity between attention IN and attention OUT conditions were considered significantly different if more than 95% of target/opposite-target IN minus target/opposite-target OUT measures were positive.\n\n#### Additivity\n\nThe logic of this analysis was to decompose LIP neuronal responses to target stimuli. Target stimuli were composed of the relevant color, the relevant direction and irrelevant information (such as the shape of the stimuli, the speed of movement of the dots\u2026.). We therefore hypothesized that LIP neurons encoded target stimuli as follows (Equation 1):\n\n$$\nT=C+D+I\n$$\n\nwhere T is the response to target stimuli, C represents the signal related to the relevant color; D represents the signal related to relevant direction and I represents the signal to irrelevant information. However, given our task design, it was impossible to directly assess C and D. We had access to LIP neuronal responses to color-match and direction-match stimuli, which, following the same logic, can be decomposed as follows:\n\n$$\nCM=C+I\n$$\n\n\n\n$$\nDM=D+I\n$$\n\nwhere CM and DM represent responses to color-match stimuli and direction-match stimuli respectively. Optimally, we should define color match stimuli as stimuli composed of the relevant color and the direction of the opposite-target and define direction match stimuli as the conjunction of the relevant direction with the color of the opposite-target. Unfortunately, given our task design, the low number of presentation of these stimuli did\u00a0not ensure reliable signals. Therefore, in order to approximate CM, we used the conjunctions of the relevant color with any of the seven irrelevant directions. Similarly, we approximated DM using the conjunctions of the relevant direction with any of the seven irrelevant colors.\n\nTherefore, combining Equations 1, 2 and 3:\n\n$$\nT\u2212I=CM\u2212I+DM\u2212I\n$$\n\nBefore testing our hypothesis that LIP linearly integrates color and direction-related signals, we need first to subtract signals related to irrelevant information (which in our task corresponds to responses to opposite-target stimuli) to responses to target, color-match and direction-match stimuli signals related to irrelevant information. In this analysis, we assume that irrelevant information contained in target, color-match and direction-match stimuli are equivalent.\n\n#### Effect of feature-based attention\n\nColor tuning: The slope of a linear regression fitting the neuronal response to each color quantified each neuron\u2019s color tuning. Yellow and red corresponded to values 1 and 8 of the X-axis, respectively. The amplitude of color tuning shifts was assessed by subtracting the slopes of linear regressions during sample A and sample B trials. Direction tuning: The preferred direction of each neuron during sample A and sample B were quantified independently by computing directional vectors defined by the following equation:\n\n$$\n\u00a0{X=\u00a0\\sumi=18FR(i)*cos(direction(i))Y=\u00a0\\sumi=18FR(i)*sin(direction(i))\n$$\n\nwhere FR(i) is the mean firing rate of the neuron to the ith direction (excluding match stimuli); [0 X] and [0 Y] are the Cartesian coordinates of the direction vector. The amplitude of direction tuning shifts corresponded to the angular distance between preferred direction during sample A and sample B trials. These values were normalized so that positive and negative angular distances correspond to shift toward and shift away the relevant direction, respectively.\n\n### Data availability\n\nExperimental data sets and analysis tools will be made available upon request from the corresponding author.\n",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "9642c97b-45e6-4439-af75-a19f4ff5e495",
+      "submission_id": "bc7f97b4-2779-47ee-a59d-e24987bc375f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Tatiana Pasternak, University of Rochester , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23743.013](https://doi.org/10.7554/eLife.23743.013)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Sequential sensory and decision processing in posterior parietal cortex\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript describes a selectivity and dynamics of LIP neurons during a task that involves matching of a conjunction of color and motion direction. The main findings reveal that one group of LIP neurons reflects stimulus identity, another represents the match and still the activity of the third group reflects the mixture of the two. The authors also present the data showing correlation between neural responses for matches and reaction times, arguing that these decision-related signals are distinct from the motor preparatory signals.\n\nBoth reviewers had a number of positive comments on the manuscript, stressing its clarity, the rich data set, and solid experimental design. However, they raised a number of issues which must be addressed before the paper can be considered for publication in eLife. These are listed below.\n\nEssential revisions:\n\n1) Provide an explanation how the data presented here go beyond what is already known about feature selectivity and category-related activity of LIP neurons reported earlier. Strengthening the link to behavior on a trial-by-trial basis could be one way to address this problem.\n\n2) In the analysis of neural activity show the data for each monkey separately.\n\n3) Additional analyses of the critical comparisons of identity and match selectivity should exclude 'match selective' neurons with selectivity that could be explained by motor planning.\"\n\n4) Explain the advantages of the decimation approach over standard normalization for the analysis of response selectivity.\n\n5) Address the apparent asymmetry in the analysis of identity and match selectivity, with the identity analysis involving large stimulus differences while match analysis involving all stimuli.\n\n6) Address the comment about the use of maximum firing rate as a response metric for the reaction time correlation analysis.\n\n7) Address the question about subtracting all non-matches in the linearity analysis.\n\nReviewer #1:\n\nIn this manuscript, Ibos and Freedman describe a study of LIP's selectivity and dynamics during a task that involves matching of a conjunction of features (color and motion direction). This work thus stands to complement prior studies of both simpler categorization tasks (e.g., direction only) and simpler match-to-sample tasks used in many classic studies. In general, the study is clearly described and the manuscript reports a rich dataset with several appropriate descriptive analyses. The general pattern of results is supported by the figures and quantifications; namely, that (a) some LIP neurons reflect stimulus identity; (b) some LIP neurons reflect the match itself, with delayed dynamics relative to identity; (c) some LIP neurons reflect a mixture; (d) a substantial proportion of these response patterns are distinct from motor preparatory signals; and (e) the match signals arise from a stronger interaction than simple additivity of the color and motion identity signals.\n\nWhile I think there's much to be learned from this dataset (and generally believe that this group is furthering our understanding of what LIP might actually compute), I am struggling with the take-home from the manuscript it its current form. I am looking forward to discussion with the other reviewers on this point. The basic identity selectivity seems like a straightforward extension of several studies by this group and others, i.e., we know that LIP neurons often exhibit selectivity for relevant visual features. The match-related signals and their dynamics.\u2026 well, might these also be consistent with the category-related activity described in simpler tasks? The dynamics and distribution across neurons are interesting, and the additivity analysis is also a nice touch that points the way toward more quantitative models of what these responses might signify. Perhaps I am just spoiled by some of the excellent work by this group that has compared LIP selectivity and dynamics to, say, PFC, as studied under the same conditions. But to kick off the discussion, I'm still searching for a way to push this study a few more yards to the level of major significance.\n\nTo summarize some possible ways to enrich/expand the impact of this study, the authors could consider:\n\n1) Errors. I realize that the task is performed at >90% accuracy, but perhaps LIP responses during errors could be leveraged to provide insight into what LIP's relation to behavior. The dissected RT correlation is nice, but given the multi-faceted selectivity and dynamics, it seems like some sort of trial-by-trial relation to behavior might be especially informative.\n\n2) A more direct explanation of what new is learned from this study relative to both prior work on uni-dimensional categorization and in the related recent attention study by the same authors. I can't help but think I'm missing something pretty obvious about how the authors are thinking about the novelty of this study relative to what was reported in their previous attention study using this task, beyond the disambiguation of motor-related signalling.\n\n3) Implication of a causal role. Much of the phrasing of the manuscript follows the usual convention of finding a neural correlate and assuming it plays a causal role. Although the authors have not done causal manipulations, I wonder whether this phrasing is not just conventional looseness, but rather reflects their confidence that the dynamics of these signals indeed imply a role in performing the task that is more compelling than in simpler tasks. Could this logic be laid out more clearly?\n\nReviewer #2:\n\nThe manuscript reports on neural responses in the lateral intraparietal area (LIP) of the macaque brain during a sequential visual matching task. In this task, monkeys are presented with a sample visual stimulus and up to three test stimuli. The stimuli consist of moving dots that can differ in color and direction between presentations. The sample stimulus can appear either in the response field (RF) of the recorded LIP neuron or in the opposite hemifield. The monkey must report with a manual response when the test stimulus matches the sample. All test stimuli are paired with a distractor in the opposite hemifield that provides no information about match vs. non-match.\n\nThe authors report distinct but overlapping populations of neurons in LIP with selectivity for the test stimulus identity, match vs. non-match within a neuron's RF, and match vs. non-match across both visual locations. These signals are multiplexed with residual selectivity that remains for the sample stimulus identity during presentation of the test stimuli. The authors find that selectivity for test stimulus identity generally precedes that for match vs. non-match. The authors also report a correlation between neural responses for matches and monkey's reaction times for the manual report of the match. Finally, the authors argue that identity selectivity in LIP derives from linear pooling of color and motion signals while match vs. non-match selectivity in LIP involves super linear combinations and a larger influence of feature-based attention.\n\nThe manuscript is written well and the experimental design is solid. Furthermore, the questions addressed are important and likely of interest to a large number of researchers. That said, I had numerous questions about the analyses that cause me concern. All of these questions are potentially addressable through clarification and/or further analysis. Below, I describe my questions in more detail.\n\n1) The authors use two monkeys, but report individually on them only for one panel of the behavioral figure and for none of the neural analyses. It is important to establish which of the findings are supported independently by data from each monkey.\n\n2) The authors have used an experimental design that allows them to find match selectivity that cannot be the result purely of motor preparation. In particular, they find neurons that respond selectivity for matches within their RF but not for matches outside their RF, even though the latter involve the same motor planning. While the authors have performed this nice analysis, I believe they have still included neurons with selectivity that may be explained by motor planning in most of their other analyses, including the timing analysis. Do the same results hold if this set of neurons is excluded?\n\nBacking off my concern a bit, I think the authors are overly confident in attributing non-specific match selectivity to motor planning. It could be the result of motor planning, but it also could be a more abstract decision signal about matches regardless of location. Distinguishing the two would require a task with the movement but not the match decision.\n\n3) One issue faced by the authors was disentangling multiple forms of selectivity that seem to be multiplexed by LIP responses. They dealt with this by combining ROC analyses with a \"decimation\" strategy that randomly removed spikes from neural responses to equate responsiveness for trials with different sample stimuli. I have multiple concerns about this. I am not sure why the decimation approach that involves randomness was needed. Why couldn't the authors use a more standard form of normalization that didn't involve randomness? Also, the authors should make clear that any approach of this variety assumes the brain knows the identity of the sample stimulus and knows how to compensate exactly for that.\n\nEven with an alternative to decimation, the problem of multiplexing still exists. The authors have addressed it for selectivity to the sample stimulus, but I don't believe they have addressed it for mixed selectivity for test stimulus identity and match vs. non-match. This causes similar problems for a ROC-based approach. The heart of the issue is of course the mixed selectivity, so the core concern I have is that I don't think the authors have adequately acknowledged the full extent to which this poses challenges to their analyses.\n\n4) I am worried that the comparison between identity selectivity and match selectivity may be biased. In particular, the description in the Methods seems to suggest identity selectivity is assessed comparing test stimulus A to test stimulus B and not using any intermediate stimuli, while match selectivity involves all stimuli, including ones very close to the match. If this is the case, it would be problematic because the former is an easier discrimination than the latter and it would call into question the comparisons between the two. Perhaps I am misunderstanding this, though, and the authors restricted the match selectivity analysis to the same stimuli as the identity selective analysis. In that case, I withdraw this concern.\n\n5) I have a number of questions for the reaction time correlation analysis. I worry about the robustness of using the maximum firing rate as the metric for the neural responses. This treats very small maximum rates the same as large ones. It also discounts that the maximum may be achieved after the decision, sometimes even after the manual response. It would be nice to know that this analysis is robust to these concerns. Are similar results obtained using a metric that involves exceeding a threshold response level (recognizing this approach will involve some trials not being able to be included)? To what extent is the correlation driven by the ceiling caused by the actual movement? (For example, the absence of data points in the bottom right of the middle panel of Figure 5A seems to be driving the correlation.) Are the latencies (intercept of the correlation) reasonable given the authors conclusions?\n\n6) For the linearity analysis, I didn't understand why the authors would subtract all non-matches. This treats very close non-matches as identical to very far non-matches. More generally, it seems odd to start an analysis about linearity with an extremely non-linear first step in the analysis.\n",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "957c1c4a-0de8-438e-a672-c735a863fd64",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C1",
+      "claim": "Decisions about the behavioral significance of sensory stimuli often require comparing sensory inference of what we are looking at to internal models of what we are looking for.",
+      "claim_type": "EXPLICIT",
+      "source": "Decisions about the behavioral significance of sensory stimuli often require comparing sensory inference of what we are looking at to internal models of what we are looking for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about decision-making processes that draws from established understanding in cognitive neuroscience.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "fa621f68-5edd-45f9-96a4-aac5516fa56d",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C2",
+      "claim": "LIP is involved in transforming sensory information into decision-related signals through sequential processing of visual features and selection of target-stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the sequential processing of visual features and the selection of target-stimuli suggest that LIP is involved in transforming sensory information into decision-related signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by neuronal recordings showing temporal dynamics of feature processing and target selection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "0d828c8c-aba6-40f9-9d22-6ed919819573",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C3",
+      "claim": "LIP plays a role in detecting target stimuli by comparing bottom-up sensory inputs (what the monkeys were looking at) and top-down cognitive encoding inputs (what the monkeys were looking for).",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the patterns of color and motion selectivity and their impact on decision-related encoding suggest that LIP plays a role in detecting target stimuli by comparing bottom-up sensory inputs (what the monkeys were looking at) and top-down cognitive encoding inputs (what the monkeys were looking for).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by observed patterns of selectivity and their relationship to decision-related encoding in the recorded data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "672eb4a7-b1eb-417d-a1ef-36442d9c5358",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C4",
+      "claim": "Space-based attention (SBA) and feature-based attention (FBA) increase the activity of cortical visual neurons selective to the relevant features and positions in V4.",
+      "claim_type": "EXPLICIT",
+      "source": "A large corpus of studies has shown that both space-based attention (SBA) and feature-based attention (FBA) increase the activity of cortical visual neurons selective to the relevant features and positions (e.g. from V4 [Reynolds et al., 2000; Connor et al., 1997; McAdams and Maunsell, 2000] or MT [Martinez-Trujillo and Treue, 2004; Seidemann and Newsome, 1999]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "62112236-1e28-4699-aa74-ce94e5de3dbc",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C5",
+      "claim": "Space-based attention (SBA) and feature-based attention (FBA) increase the activity of cortical visual neurons selective to the relevant features and positions in MT.",
+      "claim_type": "EXPLICIT",
+      "source": "A large corpus of studies has shown that both space-based attention (SBA) and feature-based attention (FBA) increase the activity of cortical visual neurons selective to the relevant features and positions (e.g. from V4 [Reynolds et al., 2000; Connor et al., 1997; McAdams and Maunsell, 2000] or MT [Martinez-Trujillo and Treue, 2004; Seidemann and Newsome, 1999]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies on MT.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "9688893d-ea27-4867-9fef-7f490cb32c62",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C6",
+      "claim": "Attention-dependent gain modulations strengthen the bottom-up flow of relevant information and facilitate their integration and representation by downstream areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we proposed that these attention-dependent gain modulations strengthen the bottom-up flow of relevant information and facilitate their integration and representation by downstream areas (Ibos and Freedman, 2014, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal from the authors' previous work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "e6d80112-c856-4bab-9405-a08547da9455",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C7",
+      "claim": "Both SBA and FBA modulations of lateral intraparietal area (LIP) neurons were consistent with LIP linearly integrating inputs from attention-modulated activity in upstream visual cortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we showed that both SBA and FBA modulations of lateral intraparietal area (LIP) neurons were consistent with LIP linearly integrating inputs from attention-modulated activity in upstream visual cortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "d60cb6d6-cb94-462c-8a89-5fa6eb8b4719",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C8",
+      "claim": "LIP has been proposed to encode stimuli behavioral salience.",
+      "claim_type": "EXPLICIT",
+      "source": "LIP has been proposed to encode stimuli behavioral salience (Ipata et al., 2009; Bisley and Goldberg, 2003, 2010; Arcizet et al., 2011; Gottlieb et al., 1998; Leathers and Olson, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "89f8f62b-c03a-4009-878d-a29f86dac11e",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C9",
+      "claim": "LIP has been proposed to transform sensory evidence into decisions about the target of saccadic eye movements.",
+      "claim_type": "EXPLICIT",
+      "source": "to transform sensory evidence into decisions about the target of saccadic eye movements (Leon and Shadlen, 1998; Shadlen and Newsome, 2001; Gold and Shadlen, 2007; Huk and Shadlen, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "9a64e494-d756-435f-b433-66daeee29d1b",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C10",
+      "claim": "LIP has been proposed to encode cognitive signals such as rules or abstract categories independently of LIP's role in spatial processing.",
+      "claim_type": "EXPLICIT",
+      "source": "or to encode cognitive signals such as rules (Stoet and Snyder, 2004) or abstract categories (Freedman and Assad, 2006; Swaminathan and Freedman, 2012; Sarma et al., 2016) independently of LIP's role in spatial processing (Rishel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b86d6940-4a5c-42ab-b46a-ec00520a0a1f",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C11",
+      "claim": "Both monkeys performed the task with high accuracy as more than 85% of trials were hits, less than 10% were misses, and less than 5% were false-alarms.",
+      "claim_type": "EXPLICIT",
+      "source": "Both monkeys performed the task with high accuracy (Figure 2A) as more than 85% of trials were hits, less than 10% were misses, and less than 5% were false-alarms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by behavioral performance data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "c115aaa4-2933-44fa-a844-5754ba401ded",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C12",
+      "claim": "Monkeys correctly ignored test stimulus A during sample B trials and test stimulus B during sample A trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, analyses of stimuli triggering the false-alarm responses (Figure 2B) revealed that monkeys correctly ignored test stimulus A during sample B trials and test stimulus B during sample A trials.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of false-alarm responses shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "ebbb91e5-128e-4286-8834-b2378323dfbd",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C13",
+      "claim": "201 individual LIP neurons were recorded while monkeys performed the tasks (74 during two-location and 127 during one-location DCM tasks).",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded the activity of 201 individual LIP neurons while monkeys performed the tasks (74 during two-location and 127 during one-location DCM tasks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "33e80a02-f625-4567-a9c9-73c50c89ef22",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C14",
+      "claim": "Neuron #1 responded preferentially to test stimulus B independently (at least in the initial phase of the response) of its match status.",
+      "claim_type": "EXPLICIT",
+      "source": "Selectivity to the identity of stimuli is exemplified by neuron #1 (Figure 3A, left panel). This neuron responded preferentially to test stimulus B independently (at least in the initial phase of the response) of its match status.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the neuronal response data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b2624c38-c5d0-427c-bc24-e29b7aff6829",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C15",
+      "claim": "Neuron #1 was identity-selective from 86 ms to 299 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron was identity-selective from 86 ms to 299 ms after stimulus onset (Figure 3, black horizontal line in the ROC panel, Wilcoxon test, Bonferroni corrected, p<0.01)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the neuronal response shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "986c6f81-b91f-4d54-bec6-2e7e9b28c9a5",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C16",
+      "claim": "Neuron #1 became selective to the match status of the stimuli 209 ms after stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "and became selective to the match status of the stimuli 209 ms after stimulus onset (Figure 3, grey horizontal line in the ROC panel, Wilcoxon test, Bonferroni corrected, p<0.01)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of the neuronal response shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b2734b40-8526-4f42-9749-3eb728ac1fd8",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C17",
+      "claim": "Example neuron #2 illustrates selectivity to the match status of the stimuli (starting 53 ms after stimulus onset), independent of their identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Example neuron #2 (Figure 3B) illustrates selectivity to the match status of the stimuli (starting 53 ms after stimulus onset), independent of their identity (left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the neuronal response data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "2bd53c92-29a8-4b5b-a7fa-71168f438f30",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C18",
+      "claim": "The absence of selectivity to target stimuli located outside neuron #2's RF suggests that such selectivity cannot be attributed to a motor-preparation signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of selectivity to target stimuli located outside this neuron's RF (right panel) suggests that such selectivity cannot be attributed to a motor-preparation signal.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the spatial specificity of the neuronal response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "3bb2b440-7418-4ac7-aa82-9fff47cd387a",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C19",
+      "claim": "Neuron #3 responded preferentially to test stimulus A compared to test stimulus B (starting from 86 ms after stimulus onset).",
+      "claim_type": "EXPLICIT",
+      "source": "Neuron #3 (Figure 3C) responded preferentially to test stimulus A compared to test stimulus B (starting from 86 ms after stimulus onset)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the neuronal response data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "f5a7bb20-de7e-493d-afa7-e66d81025bcc",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C20",
+      "claim": "Neuron #3 responded preferentially to target stimuli compared to opposite-target stimuli (starting from 124 ms after stimulus onset).",
+      "claim_type": "EXPLICIT",
+      "source": "but also to target stimuli compared to opposite-target stimuli (starting from 124 ms after stimulus onset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the neuronal response data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "6c8a1100-cfd4-4416-a0aa-7ccc1d14a1af",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C21",
+      "claim": "Neuron #4 responded preferentially to target compared to opposite-target stimuli (starting 103 ms and 171 ms after stimulus onset during attention IN and attention OUT respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, neuron #4 (Figure 3D) responded preferentially to target compared to opposite-target stimuli (starting 103 ms and 171 ms after stimulus onset during attention IN and attention OUT respectively)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the neuronal response data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "f420e62f-47b6-448c-830c-777a666448e0",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C22",
+      "claim": "A large fraction of LIP neurons (N = 147/201) showed selectivity for the identity and/or the match status of the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "After this correction, we observed that a large fraction of LIP neurons (N = 147/201; sliding Wilcoxon test (200 ms window), Bonferroni corrected, p<0.01) showed selectivity for the identity (N = 92; 51/67 for monkey N, 41/70 for monkey M, Figure 4\u2014figure supplement 1) and/or the match status of the stimuli (N = 103; 34/67 for monkey N, 69/80 for monkey M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neuronal responses across the population.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "fb8a1093-79fc-4d85-a27f-b46c6a4ba11e",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C23",
+      "claim": "92 LIP neurons showed identity selectivity (51/67 for monkey N, 41/70 for monkey M).",
+      "claim_type": "EXPLICIT",
+      "source": "showed selectivity for the identity (N = 92; 51/67 for monkey N, 41/70 for monkey M, Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neuronal responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "444d34e4-e67f-44bd-a8bd-8f76033d8758",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C24",
+      "claim": "103 LIP neurons showed match status selectivity (34/67 for monkey N, 69/80 for monkey M).",
+      "claim_type": "EXPLICIT",
+      "source": "and/or the match status of the stimuli (N = 103; 34/67 for monkey N, 69/80 for monkey M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neuronal responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "dee32b5f-085e-4609-bb0b-61a00785451e",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C25",
+      "claim": "48/147 neurons showed significant selectivity for both identity and match status (18/67 for monkey N, 30/80 for monkey M).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 48/147 neurons (18/67 for monkey N, 30/80 for monkey M) showed significant selectivity for both types of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neuronal responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "1708be87-20ef-41d6-8ab9-88967869d4e3",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C26",
+      "claim": "The population of LIP neurons selective to either the identity of test stimuli and/or their match-status (N = 147) forms a continuum from purely identity-selective neurons (VDI = 1) to mixed identity and match/non-match selectivity (VDI~ = 0) to purely match-selective neurons (VDI=\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "The VDI indicates that the population of LIP neurons selective to either the identity of test stimuli and/or their match-status (N = 147) forms a continuum from purely identity-selective neurons (VDI = 1) to mixed identity and match/non-match selectivity (VDI~ = 0) to purely match-selective neurons (VDI=\u22121).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the visuo-decision index calculated from the neuronal data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "eaf686d2-7c32-4720-8bcd-db4328823674",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C27",
+      "claim": "Identity-selectivity (N = 92, mean latency = 101.0 ms \u00b1 72 ms) rose significantly earlier than match-selectivity (N = 103, mean latency = 187.3 ms \u00b1 67 ms; t test, p=2*10\u221215).",
+      "claim_type": "EXPLICIT",
+      "source": "First, a direct comparison of each signal's latency (black vertical ticks in Figure 4A left and middle panel, see Materials and methods) revealed that identity-selectivity (N = 92, mean latency = 101.0 ms \u00b1 72 ms) rose significantly earlier than match-selectivity (N = 103, mean latency = 187.3 ms \u00b1 67 ms; t test, p=2*10\u221215; Figure 4B, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison of signal latencies shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "fd71d3c2-840e-4ff1-a28e-22ff0f955a43",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C28",
+      "claim": "For neurons selective for both signals (N = 48), identity selectivity latency (mean latency: 107.8 ms \u00b1 68 ms) was significantly earlier than match selectivity latency (mean latency: 191.6 ms \u00b1 65 ms; paired t test, p=1\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "This is not due to higher firing rates of identity-selective neurons (N = 92) compared to match-selective neurons (N = 103) since paired comparisons of latencies for neurons selective for both signals (N = 48) revealed a similar dynamic (mean latency: stimulus identity: 107.8 ms \u00b1 68 ms; match selectivity: 191.6 ms \u00b1 65 ms; paired t test, p=1\u00d710\u22127).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by paired statistical comparison controlling for firing rate differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "bc114025-9daf-436c-a0e8-3e18b13cd7cd",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C29",
+      "claim": "Linear classifiers could decode the identity of test stimuli (0 ms after stimulus onset) prior to their match status (93 ms after stimulus onset).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that linear classifiers could decode, above the level expected by chance (50%), the identity of test stimuli (0 ms after stimulus onset) prior to their match status (93 ms after stimulus onset; Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SVM classifier analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "fc33ee6b-14f5-46eb-9a59-009aa9576a48",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C30",
+      "claim": "The serial representation of identity and target status in LIP population suggests a role in transforming sensory information into a decision about the match status of test stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This serial representation of identity and target status in LIP population suggests a role in transforming sensory information into a decision about the match status of test stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal dynamics of different types of selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b89fa7e4-e891-4904-b9cd-acb4645ef371",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C31",
+      "claim": "At the population level (N = 147), the magnitude of correlation between firing rate and RT (r) covaried with each neuron's VDI (correlation coefficient = 0.32, p=7\u00d710\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "At the population level (N = 147), the magnitude of this correlation (r) covaried with each neuron's VDI (Figure 5B, correlation coefficient = 0.32, p=7\u00d710\u22125).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "23aa4295-a832-4765-822d-24dcd293606a",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C32",
+      "claim": "Match-selectivity, but not identity-selectivity, reflects a process which covaries with monkeys' decisions about the relevance of the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The stronger the influence of match-selectivity compared to identity selectivity, the larger the negative correlation, suggesting that match-selectivity, but not identity-selectivity, reflects a process which covaries with monkeys' decisions about the relevance of the stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between VDI and choice probability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "78c93f20-0379-457f-9f4c-72577dc1fdfc",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C33",
+      "claim": "There was an over-presentation of target during the first test period compared to the three successive ones (ANOVA, p=2\u00d710\u22127).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed an over-presentation of target during the first test period compared to the three successive ones (Figure 5C, ANOVA, p=2\u00d710\u22127).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of target presentation timing shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "4e05de51-152e-4e2a-bba4-b87ebf8cb4d0",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C34",
+      "claim": "Bilateral match selectivity signals could account for the match selectivity of 20/41 neurons (permutation test, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A permutation test (see Materials and methods) revealed that bilateral match selectivity signals could account for the match selectivity of 20/41 neurons (Figure 6B, permutation test, p<0.05) as they were selective independently of the spatial location of match stimuli.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by permutation test analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "012fa125-720a-405b-9640-73e5eab2ebb6",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C35",
+      "claim": "Removing 20 bilaterally match selective neurons from the pool of 60 neurons did not change the finding of an inverse correlation between choice probability (r-values) and VDI (p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Removing these 20 bilaterally match selective neurons from the pool of 60 neurons in Figure 5A did not change the finding of an inverse correlation between choice probability (r-values, linking each neuron's dynamics and behavioral reaction times) and VDI (Figure 6C, p=0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reanalysis after removing bilateral neurons shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "bb4a6a2e-a710-457e-a811-1617ac380a52",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C36",
+      "claim": "A population of LIP neurons showed match-selectivity that was independent of non-spatial processes (including motor-preparation), suggesting a role in decision-related computation independent of motor-related processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we were able to identify a population of LIP neurons showing match-selectivity that was independent of non-spatial processes (including motor-preparation), suggesting a role in decision-related computation independent of motor-related processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the spatial specificity analysis of match-selective neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "022f86f7-8c54-42eb-a74b-8ccb6dbe49c7",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C37",
+      "claim": "The averaged normalized firing rate (N = 147/201) to target, color-match, direction-match, and opposite-target stimuli reveals a gradient of responses: target and opposite-target stimuli triggered the largest and smallest responses, respectively, while color and direction-match stimuli triggered intermediate responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The averaged normalized firing rate (N = 147/201, Figure 7A, top left panel) to each of these stimuli reveals a gradient of responses: target and opposite-target stimuli triggered the largest and smallest responses, respectively, while color and direction-match stimuli triggered intermediate responses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of normalized firing rates shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "478d91a1-fa63-477d-bc83-453f11a58254",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C38",
+      "claim": "The additivity-index was significantly negatively correlated with each neuron's VDI (correlation coefficient = \u22120.26, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "This additivity-index (Figure 7A, right panel) was significantly negatively correlated with each neuron's VDI (correlation coefficient = \u22120.26, p=0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "f254d002-07a2-4d27-8287-9573deca037c",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C39",
+      "claim": "Visual (positive VDI) neurons' additivity-indices were centered on 0, reflecting additive encoding of conjunction of features.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual (positive VDI) neurons' additivity-indices were centered on 0, reflecting additive encoding of conjunction of features",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the additivity index distribution for visually selective neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "4e0308aa-efa8-4899-bbe2-b3cb333fed70",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C40",
+      "claim": "Identity-selective neurons express their selectivity by linearly pooling bottom-up color and direction encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that identity-selective neurons express their selectivity by linearly pooling bottom-up color and direction encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the additivity analysis for identity-selective neurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b45d6589-0e28-49ce-bb19-1f1214c798f0",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C41",
+      "claim": "Decision-related neurons (negative VDI) showed apparent super-additive (positive additivity-index) encoding of conjunction of features.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, decision-related neurons (negative VDI) showed apparent super-additive (positive additivity-index) encoding of conjunction of features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the additivity index for decision-related neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "c25fd8e6-c8d3-4605-9d26-7a71a8c85e0c",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C42",
+      "claim": "FBA shifts LIP's representation of individual features toward the relevant direction and color in a manner consistent with bottom-up integration of sensory information.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that FBA shifts LIP's representation of individual features toward the relevant direction and color (Ibos and Freedman, 2014, 2016) in a manner consistent with bottom-up integration of sensory information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "9a66ab8a-f49f-437b-8b27-9a536031775b",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C43",
+      "claim": "The amplitude of feature-tuning shifts depended on the strength of each LIP neuron's feature-selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we showed that the amplitude of these feature-tuning shifts depended on the strength of each LIP neuron's feature-selectivity, which presumably reflects the connectivity between individual LIP neurons and upstream cortical visual neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b70c9e0e-fb8d-42cb-ab01-13016ee22300",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C44",
+      "claim": "There was a significant correlation between each neuron's VDI and the amplitude of color tuning shifts (correlation coefficient = 0.63, p=1\u00d710\u221217).",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, we found a significant correlation between each neuron's VDI and the amplitude of feature-tuning shifts (for color: correlation coefficient = 0.63, p=1\u00d710\u221217; for direction: correlation coefficient = \u22120.26, p=0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis between VDI and feature-tuning shifts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "c9241f0d-830f-420a-9ec3-d0c854a24825",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C45",
+      "claim": "There was a significant correlation between each neuron's VDI and the amplitude of direction tuning shifts (correlation coefficient = \u22120.26, p=0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, we found a significant correlation between each neuron's VDI and the amplitude of feature-tuning shifts (for color: correlation coefficient = 0.63, p=1\u00d710\u221217; for direction: correlation coefficient = \u22120.26, p=0.001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by correlation analysis between VDI and feature-tuning shifts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "0ccecebd-2874-4f60-a9b0-beb9e6b4dc70",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C46",
+      "claim": "FBA had a larger impact on neurons involved in encoding decision-related signals than on visually selective neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "showing that FBA had a larger impact on neurons involved in encoding decision-related signals than on visually selective neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation between VDI and feature-tuning shifts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "e412c48c-9d34-4ab0-9a06-de845e41b8d0",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C47",
+      "claim": "Match-selectivity in LIP is a composite signal resulting from the pooling of bottom-up sensory information with additional extraretinal signals.",
+      "claim_type": "EXPLICIT",
+      "source": "This relationship suggests that match-selectivity in LIP is a composite signal resulting from the pooling of bottom-up sensory information with additional extraretinal signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the relationship between FBA effects and VDI.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "8d5906a2-5e48-4d80-909b-2e769ac2a85d",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C48",
+      "claim": "LIP is composed of a visuo-decision continuum of neurons involved to different degrees in (1) the integration of bottom-up sensory inputs, (2) the linear grouping of these disparate sensory signals and (3) their transformation into a signal related to monkeys' decisions about the relevance of the visual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that LIP is composed of a visuo-decision continuum of neurons involved to different degrees in (1) the integration of bottom-up sensory inputs, (2) the linear grouping of these disparate sensory signals and (3) their transformation into a signal related to monkeys' decisions about the relevance of the visual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis and interpretation of all the findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "9b582309-6c0a-401b-bed2-d0c6df8d7651",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C49",
+      "claim": "The stereotypical ramping activity preceding the execution of saccadic eye movement is likely to be driven to a large degree by processes related to preparing the upcoming saccade rather than by the motion stimulus or by the accumulation of sensory evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted by several studies (Filimon et al., 2013; Freedman and Assad, 2016), the stereotypical ramping activity preceding the execution of saccadic eye movement (Leon and Shadlen, 1998; Shadlen and Newsome, 2001; Gold and Shadlen, 2007; Huk and Shadlen, 2005) is likely to be driven to a large degree by processes related to preparing the upcoming saccade\u2014which have been extensively shown to modulate the activity of LIP neurons (Gnadt and Andersen, 1988; Barash et al., 1991)\u2014rather than by the motion stimulus or by the accumulation of sensory evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "d5eeac49-032d-4657-9d5e-c8cf9c0b6e59",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C50",
+      "claim": "The pre-saccadic activity of LIP neurons has long been associated with the intention of performing a saccadic eye movement toward the RF.",
+      "claim_type": "EXPLICIT",
+      "source": "This is especially evident since the pre-saccadic activity of LIP neurons has long been associated with the intention of performing a saccadic eye movement toward the RF (Gnadt and Andersen, 1988; Andersen and Buneo, 2002; Bracewell et al., 1996; Mazzoni et al., 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "7ba0b668-75f1-479a-8185-771b6fa28cce",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C51",
+      "claim": "Reversible inactivation of LIP does not alter monkeys' ability to perform sensorimotor transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "that reversible inactivation of LIP does not alter monkeys' ability to perform such sensorimotor transformation (Katz et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "aea9dd4b-1012-45fa-b6ef-9444dacdfed1",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C52",
+      "claim": "LIP multiplexes and independently encodes cognitive (abstract category-selectivity) and saccade-related signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach is supported by studies showing that LIP multiplexes and independently encodes cognitive (abstract category-selectivity) and saccade-related signals (Rishel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "bd947c4d-dcca-4d73-8cb2-84d6db2a4cea",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C53",
+      "claim": "A large fraction of LIP neurons encoded the relevance of stimuli independently of monkeys' behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our task was not designed to specifically distinguish between detection, decision-making and motor-preparation, a large fraction of LIP neurons encoded the relevance of stimuli independently of monkeys' behavioral responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the analysis of unilateral vs bilateral match selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "0b7348e4-d402-404c-986c-478fbfb08aa6",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C54",
+      "claim": "Representation of individual features in LIP is consistent with the linear bottom-up integration of the activity of populations of feature-selective neurons in upstream visual areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we showed that representation of individual features in LIP is consistent with the linear bottom-up integration of the activity of populations of feature-selective neurons in upstream visual areas (Ibos and Freedman, 2014, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to findings from the authors' previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "5a852fe7-febd-4803-af87-5677b2c0ec86",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C55",
+      "claim": "According to Bayesian inference theory, decision-variables are computed by comparing statistical inferences about the stimuli subjects are looking at to an internal model of the stimuli subjects are looking for.",
+      "claim_type": "EXPLICIT",
+      "source": "According to Bayesian inference theory (Kersten et al., 2004), decision-variables (match-selectivity in our data) are computed by comparing statistical inferences (Parker and Newsome, 1998) (identity-selectivity in our data) about the stimuli subjects are looking at to an internal model of the stimuli subjects are looking for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim draws on established theoretical frameworks cited in the text.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "a923d17d-add5-45e4-af0a-61c12f0748f9",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C56",
+      "claim": "The super-additivity observed for match-selective neurons in LIP hypothetically is the outcome of a computation related to the comparison of the identity of the stimuli with top-down signals, presumably originating in PFC, related to internal models of which features are behaviorally relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "The super-additivity observed for match-selective neurons in LIP hypothetically is the outcome of a computation related to the comparison of the identity of the stimuli with top-down signals, presumably originating in PFC (Mante et al., 2013), related to internal models of which features are behaviorally relevant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the super-additivity finding, with reference to PFC involvement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "7eb96f44-f53c-4b6d-b3e7-ddeb19870e07",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C57",
+      "claim": "The selectivity for sample identity across each trial epoch could reflect the integration of top-down signals related to the identity of the relevant stimuli kept in working memory.",
+      "claim_type": "EXPLICIT",
+      "source": "The selectivity for sample identity across each trial epoch (Figure 7C) could reflect the integration of top-down signals related to the identity of the relevant stimuli kept in working memory.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative interpretation of the sample identity encoding shown in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "ff467d5f-69a2-49c2-93db-1ffd233e30ae",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C58",
+      "claim": "LIP encodes all the information required to solve the DCM task: (1) the information being encoded in working memory; (2) the stimuli monkeys were looking for; (3) the stimuli monkeys were currently looking at; (4) the monkeys' match/non-match decisions; (5) the monkeys' behavioral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we showed that LIP encodes all the information required to solve the DCM task: (1) the information being encoded in working memory; (2) the stimuli monkeys were looking for; (3) the stimuli monkeys were currently looking at; (4) the monkeys' match/non-match decisions; (5) the monkeys' behavioral responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the various types of information encoded by LIP neurons as demonstrated throughout the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "06c7e903-fd58-4764-8f28-12e22d1d9759",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C59",
+      "claim": "Stimuli were 6\u00b0 diameter circular patches of 476 random colored dots moving at a speed of 10\u00b0/s with 100% coherence.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli were 6\u00b0 diameter circular patches of 476 random colored dots moving at a speed of 10\u00b0/s with 100% coherence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "2fa486f1-b53d-4cfe-9b93-4890fb77a853",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C60",
+      "claim": "All stimuli were generated using the LAB color space (1976 CIE L*a*b), and all colors were measured as isoluminant in experimental condition using a luminance meter.",
+      "claim_type": "EXPLICIT",
+      "source": "All stimuli were generated using the LAB color space (1976 CIE L*a*b), and all colors were measured as isoluminant in experimental condition using a luminance meter (Minolta).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the stimulus generation and calibration methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "0830f2a5-babf-47d8-8141-a79846ebe964",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C61",
+      "claim": "Gaze position was measured with an optical eye tracker at 1.0 kHz sample rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Gaze position was measured with an optical eye tracker (SR Research) at 1.0 kHz sample rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct description of the eye tracking methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "f0d5407b-ca75-4143-a4ca-b2127cf655b7",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C62",
+      "claim": "LIP neuronal activity was strongly influenced by the identity of the sample stimulus during sample presentation, delay period, and prior/during the presentation of each test stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "But, as shown in previous studies (Ibos and Freedman, 2014, 2016), LIP neuronal activity was strongly influenced by the identity of the sample stimulus (Figure 7C) during sample presentation but also during the delay period and prior/during the presentation of each test stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 7C and references to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b89aa22c-5fb0-495c-b1d2-049e79a98f8f",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C63",
+      "claim": "Sample encoding during the delay and test periods is consistent with a role for LIP in encoding task-relevant information in short-term memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Sample encoding during the delay and test periods is consistent with a role for LIP in encoding task-relevant information in short-term memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the persistence of sample-related activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "65cdb98d-5aa4-4bb2-9a80-f30880698e0f",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "claim_id": "C64",
+      "claim": "24/74 neurons showed sample-related activity that mimicked identity selectivity prior to stimulus onset (Wilcoxon test, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "This characteristic of the neuronal response in LIP interfered with our analysis of the dynamics of sensory selectivity as it was responsible for larger response during either sample A or sample B trials, mimicking the effect of identity selectivity on the ROC analysis prior stimulus onset in several neurons (N = 24/74, Wilcoxon test, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of pre-stimulus activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1a38188f-721f-46b7-8bdf-a338c41ad83b",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Both monkeys performed the delayed conjunction matching task with high accuracy (>85% hits, <10% misses, <5% false alarms) and correctly ignored non-matching stimuli based on sample identity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11 and C12 are directly supported by behavioral performance data shown in Figure 2A and 2B. The high accuracy rates and selective false-alarm patterns demonstrate that monkeys understood and performed the task correctly, providing a solid foundation for interpreting neuronal data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "LIP neurons form a visuo-decision continuum: 147/201 neurons showed selectivity for stimulus identity and/or match status, with 92 showing identity selectivity, 103 showing match selectivity, and 48 showing both types of selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C22-C26 are well-supported by statistical analyses with appropriate corrections (Bonferroni, p<0.01) and clear presentation in Figure 4. The visuo-decision index (VDI) provides a quantitative framework for characterizing the continuum from purely identity-selective to purely match-selective neurons. Sample sizes are adequate and methods are clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Individual LIP neurons exhibit diverse selectivity patterns including pure identity selectivity, pure match selectivity, mixed selectivity, and bilateral match selectivity, with distinct temporal dynamics for each type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C21 are supported by single-neuron examples shown in Figure 3 with appropriate statistical tests (Wilcoxon, Bonferroni corrected, p<0.01). The examples illustrate the diversity of response patterns in the population. However, these are illustrative examples rather than systematic population analyses, which are provided separately in other results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "4ec99a48-3989-41e0-9edd-dc617abe355b",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Identity selectivity emerges significantly earlier (mean latency 101.0 ms) than match selectivity (mean latency 187.3 ms), suggesting LIP transforms sensory information into decision-related signals through sequential processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 are strongly supported by multiple converging analyses: direct latency comparisons (t-test, p=2\u00d710\u207b\u00b9\u2075), paired comparisons controlling for firing rate (p=1\u00d710\u207b\u2077), and SVM decoding showing identity decoded at 0 ms vs match status at 93 ms. The sequential processing interpretation (C30) is a reasonable inference from the temporal dynamics, though causality is not directly tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "b4143624-d598-425f-bb57-7133f9ba0d4d",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Match selectivity, but not identity selectivity, correlates with behavioral reaction times, with the correlation strength varying with each neuron's visuo-decision index (correlation coefficient = 0.32, p=7\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C32 are supported by appropriate correlation analyses shown in Figure 5B. The authors appropriately controlled for a potential confound (C33) by removing first test period data where target over-presentation could create artifactual correlations. The interpretation that match selectivity reflects decision-related processes (C32) is reasonable but remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "2acfc515-685e-4450-96ca-b473d5a1c4d8",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A subset of LIP neurons (20/41) showed bilateral match selectivity independent of stimulus location, but removing these neurons did not eliminate the correlation between match selectivity and reaction times, suggesting spatially-specific decision-related encoding exists independently of motor preparation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C36 and C53 attempt to distinguish decision-related from motor-related signals. While the decimation approach and permutation tests are methodologically sound, the authors acknowledge the task was not designed to definitively separate these processes. The interpretation that unilateral match selectivity reflects decision-making independent of motor preparation (C36, C53) remains speculative, as alternative explanations (attention-modulated motor signals) are not fully excluded.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "7bcf7155-a578-4491-a8e0-a21eab876f24",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Identity-selective neurons combine color and direction signals additively (additivity index ~0), while match-selective neurons show super-additive encoding (positive additivity index), with additivity index negatively correlated with VDI (correlation coefficient = -0.26, p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by the additivity analysis shown in Figure 7A. The method appropriately subtracts responses to opposite-target stimuli to isolate relevant information encoding. However, the authors acknowledge this analysis involves non-linear normalization, so the term 'additivity' is somewhat misleading. The interpretation that identity-selective neurons linearly pool features (C40) while match-selective neurons involve additional computations (C41) is reasonable but remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Feature-based attention effects on LIP neurons correlate with their position along the visuo-decision continuum, with stronger effects on match-selective neurons (color: r=0.63, p=1\u00d710\u207b\u00b9\u2077; direction: r=-0.26, p=0.001), suggesting match selectivity integrates bottom-up sensory information with additional extraretinal signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by correlation analyses between VDI and feature-tuning shifts. The authors note that separating data by monkey affects the direction tuning results, suggesting some variability. The interpretation that match selectivity is a composite signal (C47) is reasonable given the data, though the source of extraretinal signals (local computation vs. top-down input) remains unresolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "dcbe7423-b7f2-4de1-8a0a-c3a0a684197d",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LIP comprises a visuo-decision continuum involved in (1) integrating bottom-up sensory inputs, (2) linearly grouping disparate sensory signals, and (3) transforming them into decision-related signals by comparing bottom-up sensory inputs with top-down cognitive encoding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C48, and C58 represent the authors' integrative model synthesizing all findings. The model is well-supported by converging evidence: sequential processing (temporal dynamics), linear integration (additivity analysis), attention effects (FBA correlations), and decision-related encoding (RT correlations). However, the model remains partially inferential, particularly regarding the comparison mechanism between bottom-up and top-down signals, which is proposed but not directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "7eb910db-0937-40ff-883e-095e39810cf5",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "LIP neuronal activity was strongly influenced by sample identity throughout the trial (sample, delay, and test periods), with 24/74 neurons showing sample-related activity that mimicked identity selectivity prior to test stimulus onset, requiring correction via decimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 are supported by data in Figure 7C and prior publications. The persistent sample encoding is interpreted as working memory representation (C63), which is reasonable. The authors appropriately recognized this as a confound for analyzing test stimulus selectivity dynamics and applied a decimation correction, though this methodological choice could affect results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior literature has established that attention modulates visual cortical areas (V4, MT), that LIP integrates attention-modulated inputs, and that LIP has been proposed to encode behavioral salience, transform sensory evidence into saccadic decisions, and encode cognitive signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C10 accurately summarize prior literature with appropriate citations. These provide necessary context for the current study. The claims are properly attributed to previous work and are not presented as novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "52135258-6f73-4d3b-9454-b7c37b931a86",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors distinguish their approach from prior decision-making models by arguing that ramping activity in LIP during saccadic tasks likely reflects motor preparation rather than evidence accumulation, citing studies showing LIP inactivation does not impair sensorimotor transformation and that LIP multiplexes cognitive and motor signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 accurately represent cited literature and provide important conceptual framing. The distinction between perceptual and motor decision-making is well-supported by citations. However, this remains a matter of interpretation and ongoing debate in the field, as the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "3e0abfee-c318-456d-80b0-a9f12b7ecfff",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that match selectivity results from comparing stimulus identity with top-down signals from PFC representing internal models of behaviorally relevant features, consistent with Bayesian inference theory, though the mechanism (local computation vs. top-down integration) remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C57 present a theoretical framework integrating current findings with Bayesian inference theory. While the framework is conceptually coherent and consistent with the data, it remains largely speculative (C56, C57 explicitly noted as hypothetical/speculative). The proposed PFC involvement and comparison mechanism are not directly tested. This represents an important hypothesis for future work rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "aa53ca20-faf1-401d-bdf1-cb948b7952be",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Stimuli were 6\u00b0 diameter patches of 476 colored dots moving at 10\u00b0/s with 100% coherence, generated in LAB color space with isoluminant colors, and eye position was tracked at 1.0 kHz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe methodological details that are clearly stated and appropriate. Isoluminance control is important for color experiments, and the eye tracking specifications are adequate for monitoring fixation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    },
+    {
+      "id": "580feb93-ab0c-4479-b27d-014abb93a573",
+      "content_id": "1d6efea1-dca8-4b0f-9a39-332e7286fb6f",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Decisions about behavioral significance of sensory stimuli require comparing sensory inference of what we are looking at to internal models of what we are looking for.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C1 is a general conceptual statement about decision-making that is well-established in cognitive neuroscience. It provides appropriate framing for the study but is not a novel empirical finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:53:28.104578Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b86d6940-4a5c-42ab-b46a-ec00520a0a1f",
+      "result_id": "1a38188f-721f-46b7-8bdf-a338c41ad83b"
+    },
+    {
+      "claim_id": "c115aaa4-2933-44fa-a844-5754ba401ded",
+      "result_id": "1a38188f-721f-46b7-8bdf-a338c41ad83b"
+    },
+    {
+      "claim_id": "ebbb91e5-128e-4286-8834-b2378323dfbd",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "f420e62f-47b6-448c-830c-777a666448e0",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "fb8a1093-79fc-4d85-a27f-b46c6a4ba11e",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "444d34e4-e67f-44bd-a8bd-8f76033d8758",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "dee32b5f-085e-4609-bb0b-61a00785451e",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "1708be87-20ef-41d6-8ab9-88967869d4e3",
+      "result_id": "db7c7de6-5981-4fbd-8cd7-ef51a58434a2"
+    },
+    {
+      "claim_id": "33e80a02-f625-4567-a9c9-73c50c89ef22",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "b2624c38-c5d0-427c-bc24-e29b7aff6829",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "986c6f81-b91f-4d54-bec6-2e7e9b28c9a5",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "b2734b40-8526-4f42-9749-3eb728ac1fd8",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "2bd53c92-29a8-4b5b-a7fa-71168f438f30",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "3bb2b440-7418-4ac7-aa82-9fff47cd387a",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "f5a7bb20-de7e-493d-afa7-e66d81025bcc",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "6c8a1100-cfd4-4416-a0aa-7ccc1d14a1af",
+      "result_id": "d3b2a9aa-1023-49aa-8eae-97c951f75cc2"
+    },
+    {
+      "claim_id": "eaf686d2-7c32-4720-8bcd-db4328823674",
+      "result_id": "4ec99a48-3989-41e0-9edd-dc617abe355b"
+    },
+    {
+      "claim_id": "fd71d3c2-840e-4ff1-a28e-22ff0f955a43",
+      "result_id": "4ec99a48-3989-41e0-9edd-dc617abe355b"
+    },
+    {
+      "claim_id": "bc114025-9daf-436c-a0e8-3e18b13cd7cd",
+      "result_id": "4ec99a48-3989-41e0-9edd-dc617abe355b"
+    },
+    {
+      "claim_id": "fc33ee6b-14f5-46eb-9a59-009aa9576a48",
+      "result_id": "4ec99a48-3989-41e0-9edd-dc617abe355b"
+    },
+    {
+      "claim_id": "b89fa7e4-e891-4904-b9cd-acb4645ef371",
+      "result_id": "b4143624-d598-425f-bb57-7133f9ba0d4d"
+    },
+    {
+      "claim_id": "23aa4295-a832-4765-822d-24dcd293606a",
+      "result_id": "b4143624-d598-425f-bb57-7133f9ba0d4d"
+    },
+    {
+      "claim_id": "78c93f20-0379-457f-9f4c-72577dc1fdfc",
+      "result_id": "b4143624-d598-425f-bb57-7133f9ba0d4d"
+    },
+    {
+      "claim_id": "4e05de51-152e-4e2a-bba4-b87ebf8cb4d0",
+      "result_id": "2acfc515-685e-4450-96ca-b473d5a1c4d8"
+    },
+    {
+      "claim_id": "012fa125-720a-405b-9640-73e5eab2ebb6",
+      "result_id": "2acfc515-685e-4450-96ca-b473d5a1c4d8"
+    },
+    {
+      "claim_id": "bb4a6a2e-a710-457e-a811-1617ac380a52",
+      "result_id": "2acfc515-685e-4450-96ca-b473d5a1c4d8"
+    },
+    {
+      "claim_id": "bd947c4d-dcca-4d73-8cb2-84d6db2a4cea",
+      "result_id": "2acfc515-685e-4450-96ca-b473d5a1c4d8"
+    },
+    {
+      "claim_id": "022f86f7-8c54-42eb-a74b-8ccb6dbe49c7",
+      "result_id": "7bcf7155-a578-4491-a8e0-a21eab876f24"
+    },
+    {
+      "claim_id": "478d91a1-fa63-477d-bc83-453f11a58254",
+      "result_id": "7bcf7155-a578-4491-a8e0-a21eab876f24"
+    },
+    {
+      "claim_id": "f254d002-07a2-4d27-8287-9573deca037c",
+      "result_id": "7bcf7155-a578-4491-a8e0-a21eab876f24"
+    },
+    {
+      "claim_id": "4e0308aa-efa8-4899-bbe2-b3cb333fed70",
+      "result_id": "7bcf7155-a578-4491-a8e0-a21eab876f24"
+    },
+    {
+      "claim_id": "b45d6589-0e28-49ce-bb19-1f1214c798f0",
+      "result_id": "7bcf7155-a578-4491-a8e0-a21eab876f24"
+    },
+    {
+      "claim_id": "c25fd8e6-c8d3-4605-9d26-7a71a8c85e0c",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "9a66ab8a-f49f-437b-8b27-9a536031775b",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "b70c9e0e-fb8d-42cb-ab01-13016ee22300",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "c9241f0d-830f-420a-9ec3-d0c854a24825",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "0ccecebd-2874-4f60-a9b0-beb9e6b4dc70",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "e412c48c-9d34-4ab0-9a06-de845e41b8d0",
+      "result_id": "3db9377c-fadd-4c74-8724-c2f5a6b3f05a"
+    },
+    {
+      "claim_id": "fa621f68-5edd-45f9-96a4-aac5516fa56d",
+      "result_id": "dcbe7423-b7f2-4de1-8a0a-c3a0a684197d"
+    },
+    {
+      "claim_id": "0d828c8c-aba6-40f9-9d22-6ed919819573",
+      "result_id": "dcbe7423-b7f2-4de1-8a0a-c3a0a684197d"
+    },
+    {
+      "claim_id": "8d5906a2-5e48-4d80-909b-2e769ac2a85d",
+      "result_id": "dcbe7423-b7f2-4de1-8a0a-c3a0a684197d"
+    },
+    {
+      "claim_id": "ff467d5f-69a2-49c2-93db-1ffd233e30ae",
+      "result_id": "dcbe7423-b7f2-4de1-8a0a-c3a0a684197d"
+    },
+    {
+      "claim_id": "f0d5407b-ca75-4143-a4ca-b2127cf655b7",
+      "result_id": "7eb910db-0937-40ff-883e-095e39810cf5"
+    },
+    {
+      "claim_id": "b89aa22c-5fb0-495c-b1d2-049e79a98f8f",
+      "result_id": "7eb910db-0937-40ff-883e-095e39810cf5"
+    },
+    {
+      "claim_id": "65cdb98d-5aa4-4bb2-9a80-f30880698e0f",
+      "result_id": "7eb910db-0937-40ff-883e-095e39810cf5"
+    },
+    {
+      "claim_id": "672eb4a7-b1eb-417d-a1ef-36442d9c5358",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "62112236-1e28-4699-aa74-ce94e5de3dbc",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "9688893d-ea27-4867-9fef-7f490cb32c62",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "e6d80112-c856-4bab-9405-a08547da9455",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "d60cb6d6-cb94-462c-8a89-5fa6eb8b4719",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "89f8f62b-c03a-4009-878d-a29f86dac11e",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "9a64e494-d756-435f-b433-66daeee29d1b",
+      "result_id": "c3db5bd8-b2aa-4ba1-8e20-74fbda955ecc"
+    },
+    {
+      "claim_id": "9b582309-6c0a-401b-bed2-d0c6df8d7651",
+      "result_id": "52135258-6f73-4d3b-9454-b7c37b931a86"
+    },
+    {
+      "claim_id": "d5eeac49-032d-4657-9d5e-c8cf9c0b6e59",
+      "result_id": "52135258-6f73-4d3b-9454-b7c37b931a86"
+    },
+    {
+      "claim_id": "7ba0b668-75f1-479a-8185-771b6fa28cce",
+      "result_id": "52135258-6f73-4d3b-9454-b7c37b931a86"
+    },
+    {
+      "claim_id": "aea9dd4b-1012-45fa-b6ef-9444dacdfed1",
+      "result_id": "52135258-6f73-4d3b-9454-b7c37b931a86"
+    },
+    {
+      "claim_id": "0b7348e4-d402-404c-986c-478fbfb08aa6",
+      "result_id": "3e0abfee-c318-456d-80b0-a9f12b7ecfff"
+    },
+    {
+      "claim_id": "5a852fe7-febd-4803-af87-5677b2c0ec86",
+      "result_id": "3e0abfee-c318-456d-80b0-a9f12b7ecfff"
+    },
+    {
+      "claim_id": "a923d17d-add5-45e4-af0a-61c12f0748f9",
+      "result_id": "3e0abfee-c318-456d-80b0-a9f12b7ecfff"
+    },
+    {
+      "claim_id": "7eb96f44-f53c-4b6d-b3e7-ddeb19870e07",
+      "result_id": "3e0abfee-c318-456d-80b0-a9f12b7ecfff"
+    },
+    {
+      "claim_id": "06c7e903-fd58-4764-8f28-12e22d1d9759",
+      "result_id": "aa53ca20-faf1-401d-bdf1-cb948b7952be"
+    },
+    {
+      "claim_id": "2fa486f1-b53d-4cfe-9b93-4890fb77a853",
+      "result_id": "aa53ca20-faf1-401d-bdf1-cb948b7952be"
+    },
+    {
+      "claim_id": "0830f2a5-babf-47d8-8141-a79846ebe964",
+      "result_id": "aa53ca20-faf1-401d-bdf1-cb948b7952be"
+    },
+    {
+      "claim_id": "957c1c4a-0de8-438e-a672-c735a863fd64",
+      "result_id": "580feb93-ab0c-4479-b27d-014abb93a573"
+    }
+  ],
+  "comparisons": []
+}

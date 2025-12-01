@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7"
+    ],
+    "result": "R-loops are three-stranded DNA:RNA hybrid structures that cause genome instability, and RNase H1 and H2 are conserved enzymes that degrade the RNA component of these hybrids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C7 establish foundational knowledge about R-loops and RNase H enzymes. These are well-established facts in the field, supported by citations and general knowledge, providing necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C9",
+      "C21",
+      "C22",
+      "C27"
+    ],
+    "result": "Deletion of both RNase H1 and H2 (rnh1\u0394 rnh201\u0394) leads to accumulation of R-loops and a 10-fold increase in Rad52-GFP foci compared to wild-type or single mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C9, C21, C22, and C27 are directly supported by experimental data in Figures 1A and 1D. The quantification shows 27% of double mutant cells have foci versus ~2-3% in controls, and ~95% of nuclei stain positive for R-loops, providing strong evidence for R-loop accumulation and DNA damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The rnh1\u0394 rnh201\u0394 double mutant, but not single mutants, shows dramatic growth impairment when RAD52 is deleted, indicating persistent R-loop-induced damage requiring homologous recombination for survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by experimental data in Figure 1B showing synthetic lethality between the double RNase H deletion and RAD52 deletion. This demonstrates that the double mutant uniquely depends on HR for viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C81"
+    ],
+    "result": "Rad52-GFP foci in rnh1\u0394 rnh201\u0394 cells remain at 10-15% through S-phase but accumulate to ~50% at the S/G2-M boundary and continue through mid-M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, and C81 are directly supported by cell cycle synchronization data in Figure 1C showing the temporal pattern of foci accumulation. The data clearly demonstrate that damage accumulates specifically after S-phase completion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C82"
+    ],
+    "result": "The rnh1\u0394 rnh201\u0394 double mutant shows a 2-fold increase in G2-M arrested cells that is Rad9-dependent, but RAD9 deletion does not reduce Rad52-GFP foci levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, and C82 are supported by data in Figures 1A and 2A. The results show that the checkpoint is activated (Rad9-dependent arrest) but that checkpoint activation is downstream of damage formation (foci persist without Rad9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C83"
+    ],
+    "result": "In synchronized rnh1\u0394 rnh201\u0394 cells, the majority of cells with Rad52-GFP foci remain arrested pre-anaphase, with 77% still arrested at 330 minutes even as most cells complete division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, and C83 are supported by time-course data in Figure 2B showing that cells with persistent foci delay anaphase entry. The quantification demonstrates slow repair kinetics with a subset of cells unable to complete repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The triple mutant rnh1\u0394 rnh201\u0394 top1\u0394 is inviable, while single and double mutants with Top1 are viable, demonstrating synthetic lethality requiring loss of both RNase H enzymes and Top1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C36, C37, and C38 are supported by viability data in Figure 3A using the auxin-inducible degron system. The data clearly show that only the triple mutant (or double RNase H mutant with Top1 depletion) is inviable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Depleting Top1 in rnh1\u0394 rnh201\u0394 cells causes Rad52-GFP foci to increase to 85% and results in >98% G2-M arrest that is Rad9-dependent, but RAD9 deletion does not restore viability, indicating irreparable damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by data in Figures 3B, 3C, and 3D. The results demonstrate that Top1 depletion exacerbates the damage phenotype and that lethality is due to irreparable damage rather than checkpoint activation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Top1 activity is required after S-phase completion to prevent lethal damage in rnh1\u0394 rnh201\u0394 cells, as transient Top1 depletion in mid-M (but not S-phase) causes 75% foci accumulation and dramatic lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by cell cycle-specific depletion experiments in Figure 4C. The data show that Top1 function is specifically required in G2-M, with strong correlation between foci levels and lethality (16% survival matches ~15% cells without foci).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The PIF1-E467G mutation suppresses lethality of rnh1\u0394 rnh201\u0394 TOP1-AID cells by promoting repair of hybrid-induced damage rather than preventing damage formation, as foci still accumulate but are gradually resolved during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are supported by data in Figures 5B, 5C, and 5D. The suppression by PIF1-E467G, pif1\u0394, and pif1-m2 (which maintains only mitochondrial function) indicates a nuclear Pif1 activity is responsible. The time-course data show similar initial foci accumulation but subsequent resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PIF1-E467G inhibits BIR, reducing BIR frequency from ~12% (wild-type) to ~3% in the 30 kb template assay, similar to the reduction seen with pif1-m2 (~5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by BIR assay data in Figure 6A. The quantitative measurements clearly demonstrate that PIF1-E467G impairs BIR processivity to a similar extent as loss-of-function alleles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Deletion of POL32 in rnh1\u0394 rnh201\u0394 TOP1-AID cells suppresses auxin sensitivity, demonstrating that inhibiting BIR processivity is sufficient to allow repair of otherwise lethal hybrid-induced DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by data in Figure 5B showing that pol32\u0394 suppresses lethality. Since Pol32 is required for BIR processivity, this provides strong evidence that BIR processivity causes the repair defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In PIF1-E467G cells, total repair is 5-fold higher than wild-type in the 80 kb template strain, but only 6% is via BIR, and this increased repair is not due to NHEJ (<1% retain telomeric marker).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by data in Figure 6B and Figure 6\u2014figure supplement 1. The results demonstrate that an alternative repair pathway compensates when BIR is inhibited, though the identity of this pathway remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The lethal events in rnh1\u0394 rnh201\u0394 top1\u0394 cells are rDNA-specific, as Rad52-GFP foci co-localize with the nucleolus and efficient repair of DSBs on chromosome V occurs in both top1\u0394 and rnh1\u0394 rnh201\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by prior citations showing nucleolar co-localization and by data in Figure 7 showing efficient non-rDNA repair. This provides strong evidence for rDNA-specific problems with topological stress and R-loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Novel RPA190 mutations (K1482T and V1486F) in RNA polymerase I suppress lethality of rnh1\u0394 rnh201\u0394 TOP1-AID cells by allowing repair rather than preventing damage, indicating that altering RNA pol I function enables repair of hybrid-induced damage in rDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by data in Figures 7A, 7C, and 7D. The suppression by RNA pol I mutations, combined with the rDNA-specificity of the phenotype, provides strong evidence that RNA pol I creates a barrier to repair at the rDNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The suppressor mutations K1482T and V1486F map to the jaw domain of Rpa190 near Rpa12, and deletion of RPA12 is lethal in the suppressed strain, indicating that Rpa12-mediated polymerase backtracking and termination are required for suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 are supported by structural data (Figure 7\u2014figure supplement 3) and genetic data (Figure 7B) showing Rpa12 dependence. The connection to backtracking/termination is supported by citations about Rpa12 function, providing a mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C80",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The persistence of R-loops at DNA damage sites induces repair by BIR, which is particularly susceptible to forming lethal intermediates at rDNA due to RNA pol I barriers. The inability to repair damage, not damage levels per se, prevents cell cycle progression, demonstrating that DNA:RNA hybrids inhibit DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C80, C84, C85, C86, and C87 represent the central conclusions of the manuscript. These are well-supported by the collective experimental evidence showing: (1) BIR inhibition suppresses lethality without reducing damage, (2) RNA pol I mutations allow repair, and (3) damage accumulates post-S-phase when repair is impaired.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "While RNase H2 deletion alone increases hybrids and genome instability, elevated Rad52 foci are only seen in the double mutant, suggesting that damage is repaired rapidly in rnh201\u0394 cells but slowly in rnh1\u0394 rnh201\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88 and C89 are supported by data (Figure 1A) and citations. However, C90 is explicitly speculative inference. While the differential foci accumulation is clear, the proposed explanation about repair kinetics, though plausible, lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors propose a model where RNases H remove hybrids before and after DSB formation, and in their absence, hybrids persist at one DSB end, blocking resection/invasion and causing failure to capture the second end, leading to BIR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 present a mechanistic model (Figure 8A) that is well-supported by the experimental observations: increased BIR in double mutants, suppression by BIR inhibition, and the timing of damage accumulation. While speculative in mechanism, the model is consistent with all data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors propose that BIR at rDNA encounters barriers from hybrids and stalled RNA pol I, which are exacerbated by Top1 loss, creating terminally blocked BIR intermediates that are lethal. RPA190 mutations activate Rpa12 to remove these barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 present a model (Figure 8B) supported by: rDNA-specific lethality, RNA pol I mutation suppression, Rpa12 dependence, and the known functions of Top1 and Rpa12. While mechanistic details are speculative, the model integrates multiple lines of experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The slow disappearance of Rad52-GFP foci is explained by BIR kinetics (rapid invasion followed by long delay before replication). Inhibiting Pif1/Pol32 causes strand dissociation before reaching barriers, allowing a slower alternative pathway to repair the damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 connect established BIR kinetics (C104, C106 supported by citations) to the observed phenotypes. The model that BIR inhibition allows alternative repair (C107-C108) is supported by the viability and repair data in PIF1-E467G and pol32\u0394 strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors speculate that single-strand annealing (SSA) may be the alternative repair pathway, as the rDNA's repetitive structure is ideal for SSA, and calculated SSA kinetics (2-3 hr/repeat) match observed foci dissolution rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C109 is explicitly stated as speculation. While C110-C112 provide supporting logic based on rDNA structure and resection kinetics, no direct experimental evidence identifies SSA as the alternative pathway. The consistency with kinetics is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "RNases H play a critical role in promoting proper repair of hybrid-induced DNA damage in highly transcribed repetitive DNA, and limiting RNase H activity in RNA biogenesis mutants likely allows hybrids to interfere with repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 is a well-supported summary conclusion. Claims C114-C115 cite established knowledge. Claim C116 extends the findings to other mutants, which is a reasonable inference supported by the demonstrated repair role of RNases H, though not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The authors speculate that highly transcribed amplicons in cancer cells may be sites not only of R-loop formation and damage but also of improper repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C117 states established knowledge about cancer cells. Claim C118 is explicitly speculative, extending the yeast rDNA findings to cancer biology. While the parallel is conceptually interesting, it lacks experimental support and represents future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on R-loop-associated genome instability and rDNA characteristics: R-loops cause various instability events, the rDNA comprises ~10% of the yeast genome with ~150 repeats, ~50% of R-loops map to rDNA, and rDNA R-loops are associated with recombination, polymerase pileups, and fork stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 establish background knowledge supported by multiple citations. These provide essential context for understanding why the rDNA is particularly susceptible to R-loop-mediated problems but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on Rad52-GFP as a DNA damage marker: Rad52 is required for HR, forms foci upon damage induction, foci appear in S/G2-M phases, and spontaneous foci resolve within 40 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 establish the Rad52-GFP system as a validated marker for DNA damage, supported by citations. This provides methodological justification but represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C33",
+      "C55"
+    ],
+    "result": "Background on Top1 and Pif1 functions: Top1 clears R-loops and stalled RNA pol I at rDNA by resolving supercoiling, and Pif1 helicase contributes to BIR processivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C55 establish relevant background knowledge supported by citations. These provide context for the genetic interactions studied but represent prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C91",
+      "C93"
+    ],
+    "result": "Prior work shows that inactivating RNase H1 in sin3\u0394 cells increases instability and skews events toward chromosome loss, and BIR frequency is elevated ~5-fold in rnh1\u0394 rnh201\u0394 double mutants (though this requires larger sample size for validation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is supported by citation. Claim C93 cites prior work but explicitly notes the need for larger sample size validation. While this supports the BIR bias model, the uncertainty about the quantitative difference limits confidence in this specific claim.",
+    "result_type": "MINOR"
+  }
+]

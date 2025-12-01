@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors constructed and simulated three atomistic cytoplasmic models: MGh (103 million atoms, 100 nm box, 20 ns), MGm1 (12 million atoms, 48.2 nm box, 140 ns), and MGm2 (12 million atoms, 48.2 nm box, 60 ns).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 describe the model systems and simulation protocols used in the study. These are methodological details that are well-documented in Table 1 and the text, providing clear specifications of system sizes, compositions, and simulation times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Protein stability in cellular environments varies by protein type and local environment. Most proteins (PGK, NOX, ENO, IF1) showed equal or lower RMSD in cellular environments compared to dilute solvent, but PDHA showed increased RMSD due to protein-protein interactions. The destabilization of PDHA is driven by non-specific, shape-driven van der Waals interactions that outweigh unfavorable electrostatic contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 present RMSD analysis and energetic decomposition showing differential protein stability effects in cellular environments. The data in Figure 2A and Figure 2\u2014figure supplement 2 support these observations, with detailed energetic analysis explaining the mechanism of PDHA destabilization. The short simulation times (20-140 ns) are acknowledged as a limitation but ensemble averaging over multiple copies provides statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Protein compaction in cellular environments can be reproduced by electrostatic screening from ions and metabolites rather than volume exclusion alone. PGK showed reduced Rg and decreased inter-domain distance (dlig) in both cellular and KCl environments. The compaction correlates with negative charge accumulation in the domain cleft from ATP/CTP binding rather than crowder coordination number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C23 demonstrate that electrostatic effects from ions and metabolites can mimic volume exclusion effects. The data in Figure 2A-E and Figure 2\u2014figure supplement 3 show similar compaction in cellular and KCl environments, with detailed analysis of PGK* revealing charge-dependent domain closure. This challenges the simple volume exclusion model and is well-supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Macromolecular interactions in cellular environments show differential affinities: strong RNA-RNA and RNA-ribosome repulsion, weaker protein-RNA repulsion, neutral protein-protein interactions overall, but weak attraction among glycolytic enzymes consistent with experimental observations of metabolic enzyme complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe interaction patterns based on distance change analysis (\u0394dAB) shown in Figure 3A. The electrostatically-driven repulsions and the specific attraction of glycolytic enzymes are supported by the simulation data and consistent with cited experimental work on substrate channeling. The analysis method is clearly described in the Materials and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Glycolytic enzymes show less favorable solvation free energies compared to RNA-containing components (tRNA, aminoacyl-tRNA synthetases, ribosomes), which comprise about one-third of macromolecular mass. This differential solvation effectively causes weak attraction of glycolytic enzymes as they are relatively hydrophobic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 present solvation free energy calculations (Figure 3B) that explain the observed weak attraction of glycolytic enzymes through thermodynamic principles. The GBMV calculations are standard methodology and the interpretation that relative hydrophobicity drives association is reasonable, though the authors acknowledge this is one of two explanations (the other being entropic effects).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Lennard-Jones simulations of two-component mixtures show increased concentration of smaller particles near large particles due to depletion forces. This entropic effect explains how large ribosomes enhance proximity of smaller enzymes in the cellular environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 present simplified Lennard-Jones simulations (Figure 3\u2014figure supplement 1) to isolate entropic effects. The observed increased concentration of small particles near large ones is consistent with Asakura-Oosawa depletion theory. The extrapolation to the cellular model is reasonable but represents an inference from a simplified system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Macromolecular translational diffusion coefficients in the cellular model match experimental E. coli data without parameter adjustment, following a 1/Rs\u00b2 dependency in crowded environments. The all-atom MD results agree with coarse-grained Stokesian dynamics simulations and converge by 100 ns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 present diffusion analysis (Figure 4A-B) showing excellent agreement with experimental GFP diffusion data and consistency between different simulation approaches (MD, SD, BD). The 1/Rs\u00b2 scaling and convergence analysis (Figure 4\u2014figure supplement 1) support the validity of the diffusion measurements despite relatively short simulation times. The parameter-free agreement with experiment is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46"
+    ],
+    "result": "Individual macromolecules experience heterogeneous diffusion rates depending on local crowding environment, with threefold variation between least and most crowded environments. Molecules exhibit spatially varying diffusion over 1 \u03bcs-1 ms timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C45-C46 describe diffusion heterogeneity as a function of local coordination number (Figure 4C, Figure 4\u2014figure supplement 2). The linear correlation between normalized diffusion and coordination number is well-documented. The timescale estimate for spatial variation is inferred from diffusion rates and molecular sizes, which is reasonable but represents a calculation rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Rotational diffusion follows similar trends as translational diffusion, including similar dependency on local crowding. The reduction of both translational and rotational diffusion on sub-microsecond timescales is consistent with experimental neutron backscattering and NMR relaxometry data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 present rotational diffusion analysis (Figure 5, Figure 5\u2014figure supplement 1) showing parallel behavior to translational diffusion. The consistency with experimental techniques is noted, though the authors acknowledge their simulations are too short to probe longer-timescale decoupling effects observed experimentally. The analysis is sound within the accessible timescales.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Water and ion diffusion is significantly slowed in the cytoplasmic environment compared to dilute solvent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 presents diffusion coefficients for water and ions (Table 3) showing substantial reduction in the cellular environment. This is expected based on prior work (cited as Harada et al., 2012) and the data clearly support the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Metabolite diffusion shows a steeper 1/Rs\u00b3 dependency compared to macromolecules (1/Rs\u00b2), with highly-charged phosphates diffusing much slower than expected from crowding alone. This is due to non-specific interactions with macromolecular surfaces, where metabolites undergo two-dimensional surface diffusion, reducing the effective concentration of freely-diffusing metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 present metabolite diffusion analysis (Figure 6A-C) showing unexpected behavior compared to simple crowding models. The steeper size dependency, surface binding, and two-dimensional diffusion are well-documented in the simulation data. The interpretation that this reduces effective free metabolite concentration is reasonable and consistent with cited experimental work (Duff et al., 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Non-specific metabolite-protein interactions would imply much lower active site occupancies than expected from absolute metabolite concentrations, challenging the conclusion that most enzyme active sites should be saturated under biological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C56 present an important implication of the metabolite binding observations. While C55 correctly cites prior work on metabolite concentrations vs. Km values, C56 represents an inference that requires quantitative analysis of binding equilibria and active site occupancy that is not provided. The qualitative observation of surface binding is clear, but the quantitative impact on active site occupancy remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ATP binding to ACKA differs between cellular and dilute environments. In cells, ATP concentration near ACKA is decreased overall, but binding to the inter-subunit cleft is enhanced. Crowders compete for many ATP binding sites seen in dilute solvent, while the active site remains largely unaffected. The binding kinetics is expected to be affected by crowders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 present detailed analysis of ATP-ACKA interactions (Figure 6D-F, Figure 6\u2014figure supplement 1). The 3D density distributions clearly show differential binding patterns between cellular and dilute conditions. Claims C57-C60 are well-supported by the density data. Claim C61 about kinetics is speculative (acknowledged with 'we expect') but reasonable given the observed differences in binding site accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study finds that protein-protein interactions may destabilize native structures, metabolite interactions may induce compaction via electrostatic screening, protein-protein interactions cause variations in macromolecular diffusion, metabolites exhibit surface diffusion and altered protein-ligand binding that may reduce effective metabolite concentrations, and metabolic enzymes show weak non-specific association attributed to solvation and entropic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 summarize the main findings of the study. These are supported by the various analyses presented (RMSD, diffusion, interactions, energetics). Claims C62-C65 and C67 are well-supported by data. Claim C66 about reduced effective concentrations is more speculative (noted with 'may') but follows logically from the surface binding observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors suggest that native-state perturbations under in vivo conditions may be a general phenomenon, that metabolic enzymes as a whole are brought into closer proximity thereby enhancing metabolic rates, and that the large size and RNA content of ribosomes may be desirable features beyond their translation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C70 represent broader speculations about biological implications. While based on the simulation observations, these claims extrapolate beyond the specific systems studied. C68 generalizes from limited protein examples, C69 extends glycolytic enzyme observations to all metabolic enzymes without direct evidence, and C70 speculates about evolutionary optimization. These are reasonable hypotheses but require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Electrostatics plays a prominent role in cellular environments, manifested in differential solvation between metabolic proteins and RNA-containing complexes, metabolite-protein interactions that alter structure via electrostatic screening, and reduction of freely-diffusing metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 synthesizes multiple observations about electrostatic effects throughout the study. This is well-supported by the solvation energy analysis (Figure 3B), the PGK compaction mechanism (Figure 2), and the metabolite binding patterns (Figure 6). The claim appropriately summarizes a recurring theme in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Cell-focused in silico drug design protocols that capture competing interactions and altered kinetic properties under cellular conditions could offer significant advantages over current single-molecule protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 speculates about potential applications to drug design. While the observations of altered binding patterns and competing interactions are supported, the claim about advantages for drug design is speculative and not tested. This represents a reasonable suggestion for future work but is not demonstrated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The structural models were obtained largely via homology modeling, but the analysis of diffusive properties and non-specific protein-protein interactions is expected to be driven mostly by overall shape, size, and electrostatics rather than specific structural details.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 acknowledge a methodological limitation and provide reasoning for why it may not significantly affect the main conclusions. C73 is a factual statement about the methods. C74 represents a reasonable argument based on physical principles that coarse properties (shape, size, charge) dominate the analyzed phenomena. This is a fair assessment of the limitation's impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Macromolecular diffusion was limited to local environments without trading places with other macromolecules. The authors assume that averaging over many copies in different environments provides equivalent statistics to following a single copy over longer timescales, and expect that longer simulations would primarily reduce statistical uncertainties without fundamentally altering results on macromolecular stability and interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C77 discuss simulation timescale limitations and the statistical approach used to address them. C75 accurately describes the limitation. C76 explains the ensemble averaging approach, which is reasonable but represents an assumption that cannot be fully validated without longer simulations. C77 is speculative about what longer simulations would show. The ergodic assumption underlying C76 may not hold perfectly in highly heterogeneous environments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The simulations used the CHARMM c36 force field for proteins and RNAs, CGenFF or analogous parameters for metabolites, 2 fs timestep with SHAKE/SETTLE constraints, 12 \u00c5 cutoff for van der Waals and short-range electrostatics, PME for long-range electrostatics, Langevin dynamics for temperature control (298.15 K, 1.0 ps\u207b\u00b9 damping), and Langevin piston Nos\u00e9-Hoover method for pressure control (1 atm, 0.1 ps\u207b\u00b9 damping).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 describe the simulation methodology in detail. These are standard protocols for MD simulations and are clearly documented in the Materials and methods section. The methods are appropriate for the systems studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors establish the biological context: typical cytoplasmic macromolecular concentrations are 300-450 g/L (25-45 vol%), metabolites add ~10 g/L, volume exclusion favors compact states, but recent in-cell NMR experiments suggest possible native state destabilization, and cellular environments reduce macromolecular diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 present background information from the literature. These are well-cited claims (C1-C4) or established knowledge (C5) that set up the motivation for the study. The citations appear appropriate and the claims accurately represent the state of the field.",
+    "result_type": "MINOR"
+  }
+]

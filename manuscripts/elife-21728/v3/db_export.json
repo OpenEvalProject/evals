@@ -1,0 +1,1529 @@
+{
+  "submission": {
+    "id": "de2c921b-eb7e-412b-9b57-7bbfcda71740",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:13:35.989388Z",
+    "updated_at": "2025-11-30T22:13:35.989388Z"
+  },
+  "content": [
+    {
+      "id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "submission_id": "de2c921b-eb7e-412b-9b57-7bbfcda71740",
+      "content_type": "manuscript",
+      "content_text": "# Spatiotemporal coupling and decoupling of gene transcription with DNA replication origins during embryogenesis in C. elegans\n\n## Authors\n\n- Ehsan Pourkarimi<sup>1</sup> ([ORCID: 0000-0001-9598-3465](https://orcid.org/0000-0001-9598-3465))\n- James M Bellush<sup>1</sup>\n- Iestyn Whitehouse<sup>1</sup> ([ORCID: 0000-0003-0385-3116](https://orcid.org/0000-0003-0385-3116)) \u2020\n\n### Affiliations\n\n1. Molecular Biology Program Memorial Sloan Kettering Cancer Center New York United States\n2. BCMB Graduate Program Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe primary task of developing embryos is genome replication, yet how DNA replication is integrated with the profound cellular changes that occur through development is largely unknown. Using an approach to map DNA replication at high resolution in C. elegans, we show that replication origins are marked with specific histone modifications that define gene enhancers. We demonstrate that the level of enhancer associated modifications scale with the efficiency at which the origin is utilized. By mapping replication origins at different developmental stages, we show that the positions and activity of origins is largely invariant through embryogenesis. Contrary to expectation, we find that replication origins are specified prior to the broad onset of zygotic transcription, yet when transcription initiates it does so in close proximity to the pre-defined replication origins. Transcription and DNA replication origins are correlated, but the association breaks down when embryonic cell division ceases. Collectively, our data indicate that replication origins are fundamental organizers and regulators of gene activity through embryonic development.\n\n## Introduction\n\nIn many developing organisms, early rounds of DNA replication occur in the absence of zygotic gene transcription: in both Drosophila and Xenopus embryos, the rapid genome duplication in early cycles is facilitated by the use of many, closely spaced, replication initiation sites (Blumenthal et al., 1974; Callan, 1974). Within Drosophila and Xenopus, the onset of zygotic transcription is accompanied by a marked increase in S phase length, caused by a reduction in the number of replication initiation events, rather than changes in the rate of replication fork progression (Blumenthal et al., 1974). Numerous studies in metazoa have found particular chromatin signatures that typify transcriptionally active chromatin are enriched at replication initiation sites and also influence the relative time in S phase that origins are active (MacAlpine and Almouzni, 2013). Yet a specific signature within chromatin that marks distinct sites in a genome where replication initiates has not been identified (Urban et al., 2015).\n\nWe chose to investigate DNA replication within developing C. elegans embryos, with the goal of characterizing signatures of replication origins and understanding replication patterns through early development. Our approach relies on transient depletion of DNA ligase I, which results in the accumulation of Okazaki fragments on the lagging strand (Smith and Whitehouse, 2012; McGuffee et al., 2013). By sequencing Okazaki fragments we, and others, have provided high-resolution maps of DNA replication across budding yeast (McGuffee et al., 2013) and human genomes (Petryk et al., 2016). One advantage of sequencing Okazaki fragments is that replication signatures can be deduced from a population of cells growing at steady state. Thus, providing that Okazaki fragments can be harvested in sufficient quantity, DNA replication can be mapped in cells, tissues or organisms without need for synchronization (Smith and Whitehouse, 2012).\n\n## Results and discussion\n\nOkazaki fragments were purified from mixed early embryos (ME) following RNAi depletion of lig-1, which is the sole C. elegans DNA ligase responsible for ligating Okazaki fragments. To minimize genome instability and prevent embryonic lethality associated with complete lig-1 depletion, we determined an optimal level of depletion to maintain normal development, while enriching for fragments by dilution of the lig-1 RNAi bacteria (Figure 1A, Figure 1\u2014figure supplement 1). Resolution of labeled DNA harvested from lig-1 depleted embryos on a denaturing agarose gel, revealed a highly periodic pattern of Okazaki fragment size, similar to that of the nucleosome repeat uncovered by MNase digestion (Figure 1A). While the periodicity is far more pronounced in C. elegans, the size distribution of Okazaki fragments matches those observed in budding yeast, indicating that the coupling of lagging strand synthesis and nucleosome assembly is likely conserved (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016).\n\n![Figure 1.\u00a0Purification and sequencing of Okazaki fragments from C. elegans.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig1-v3.jpg)\n\n**Figure 1.\u00a0Purification and sequencing of Okazaki fragments from C. elegans.:** (A) Left panel: increasing DNA ligase I (lig-1) depletion by RNAi results in the generation of small DNA molecules with periodic size distribution. Right panel: comparison of the putative Okazaki fragments with DNA resultant from a Micrococcal Nuclease digestion of chromatin, reveals both species have similar periodicity. (B) Fragments mapped to the C. elegans genome display a characteristic strand bias expected of Okazaki fragments. Regions of high Watson-strand signal (red) that transition to regions of high Crick-strand signal (green) are replication origins; normalized signal is shown in brown. Mapped replication origins are black bars above the Okazaki fragment traces and are shown as 5 kb blocks centered on the origin midpoint to aid visualization. Annotated genes and their coordinates are shown below the fragment traces.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Mean \u00b1 SD is presented, n=10.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A and B) Scatter dot-plots of replication origin efficiencies and inter-origin distances from mixed early embryos (ME), median values are shown as a black horizontal bars.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Data are from the most efficient replication origins (n=1000, efficiency >0.5). Mapped sequencing reads for either the Watson strand (leftward moving forks, left of the origin) or Crick strand (rightward moving forks, right of the origin) are displayed for each replication origin. To allow comparisons across origins with different efficiencies, the mapped sequencing data for Watson or Crick reads \u00b125\u00a0kb from each origin was mean centered and normalized such that sum of the squares of the values = 1.0. All origins are then ranked according the size of transition zone, with the smallest at the top.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig1-figsupp4-v3.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Graph displaying the length and strand bias of genes within \u00b125\u00a0kb of replication origins. Median gene length, defined as from translation start to end, is shown as black line on right y-axis. Strand bias of gene orientation is shown on the left y-axis; Watson strand genes (purple) are defined as genes whose transcribed RNA is complementary to the Crick strand; Crick strand genes (green) have RNA product complementary to the Watson strand. (B) Gene orientation bias from A is displayed as a log2 ratio of Watson: Crick genes.\n\nNext, we analyzed the Okazaki fragments by deep sequencing using a protocol that preserves strand identity (Smith and Whitehouse, 2012). Mapping to the worm WS220 reference genome, we find a clear strand bias, which matches the expected distribution of Okazaki fragments synthesized on the lagging strand: replication origins are at sites of transition from Watson to Crick strand reads (Figure 1B) (McGuffee et al., 2013). While the data is noisier than budding yeast \u2013 in part due to the high A:T content of the genome, residual DNA ligase activity and the complexity of the sample preparation \u2013 we identified\u00a0>2000 replication origins using a modified mapping protocol (McGuffee et al., 2013). Median spacing between origins is 40 kb, and 96% of origins are within 100 kb of another origin; the median efficiency \u2013 that is, the likelihood that a given origin is utilized during S phase, is\u00a0~50%, although we note that numerous origins are fired in most cells in the population (Figure 1\u2014figure supplement 2A\u00a0and\u00a0B). In contrast to budding yeast, in which initiation is confined to a narrow range (McGuffee et al., 2013), replication in C. elegans apparently initiates within broad zones at most origins, similar to human cells (Figure 1\u2014figure supplement 3) (Petryk et al., 2016; Dijkwel et al., 1991). Replication origins potentially influence gene organization: genes near origins tend to be shorter and genes flanking origins show a pronounced bias to ensure that replication fork progression and transcription are co-directional (Figure 1\u2014figure supplement 4A\u00a0and\u00a0B) (Petryk et al., 2016).\n\nHaving generated a high-resolution map of replication origins, we next considered whether particular chromatin signatures are enriched near origins. Thus, we analyzed the abundance of several histone modifications that were mapped in embryos at similar stages (Gerstein et al., 2010). As Figure 2 shows, there is a remarkable concordance between the location of replication origins and acetylation of histone H3 and methylation of H3 at lysine 4 (K4). Analyzing H3 K27ac (H3 K4me2 is near identical), we find that 75% of efficient origins (>30% efficiency) are within 1 kb of the histone mark and most H3 K27ac peaks overlap origins (Figure 2B). Further, the most efficient replication origins are associated with sites with the most H3K27 acetylation (Figure 2C, Figure 2\u2014figure supplement 1). By surveying the abundance of various modifications present at replication origins, we tested whether other modifications behaved similarly to H3K27ac (Figure 2D); this revealed that acetylation of H3 at K18, K23, K27 and dimethylation of H3 at K4 are not only present at origins, but the level of modification increases according to origin efficiency. Significantly the histone modifications, we find most strongly associated with origins are those that define gene enhancers in metazoan genomes (Ho et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig2-v3.jpg)\n\n**Figure 2.:** (A) Representative ChIP signal for select histone modifications are shown for a\u00a0~1 Mb region of Chromosome X. Mapped replication origins (black) are broadly coincident with peaks in the ChIP signal. Okazaki fragment reads are shown below and are colored according to Figure 1B. (B) Correlation between H3K27ac and replication origins is displayed as a heatmap. Replication origins and H3K27ac peaks were defined computationally and the distance between peaks measured using Intervalstats (Materials\u00a0and\u00a0ethods); the number of H3K27ac peaks that lie within a maximum distance, defined on the x-axis, is plotted as heatmap; the relative intensity (fold enrichment over background) of the ChIP signal at H3K27ac peaks is plotted on the y-axis. (C) ChIP signal scales with increasing origin efficiency; level of histone modifications at replication origins (\u00b12.5 Kb) is plotted for H3K27ac and H3K4me2 relative to the efficiency of the origin. (D) Data were analyzed as C to compute the correlation of several histone modifications with replication origin efficiency; blue shades correspond to histone marks shown in A.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** H3K27ac peaks as defined by Macs2 (see Materials\u00a0and\u00a0methods) were used as reference positions to map either H3K27ac ChIP signal (left) or origin efficiency (right).\n\nGiven that ME embryos are transcriptionally active, our finding that replication initiates near histone marks linked with enhancers indicates that origins are localized to \u2018accessible\u2019 transcriptionally active regions. In this scenario, replication origins become defined once zygotic transcription has initiated; DNA replication in pre-gastrula embryos (PG), where transcription is limited and non essential (Robertson and Lin, 2015), would presumably initiate from many, seemingly random sites \u2013 much like the apparent situation in Drosophila and Xenopus embryos prior to the Mid Blastula Transition (MBT). To investigate this, we harvested pre-gastrula embryos from a hyperactive egg laying strain (PG: median 9, mean 13 cells/embryo, n\u00a0=\u00a050; Figure 3A) and late embryos from wild-type worms (L:\u00a0~200\u2013558 cells/embryo), which represent different levels and extent of gene expression (Figure 3B). We compared origin location and efficiency for each population and found that the patterns of replication were highly similar (Figure 3C) \u2013 especially for the most efficient origins (Figure 3D). Evidently, even though gene transcription is fundamentally altered through this time course, replication origin usage is globally similar through early development. Thus, the establishment of specific replication origins in C. elegans occurs prior to the broad onset of zygotic transcription \u2013 meaning that the replication origins we define are unlikely to be dependent upon transcription. This finding is in keeping with data showing that isolated embryonic cells treated with \u03b1-amanitin divide normally up to approximately 100 cells (Edgar et al., 1994). Indeed, S phase length, lineage-specific cell cycle timing, asymmetric cell division and cleavage patterns all proceed normally in the absence of transcription in pre-gastrula early embryos (Robertson and Lin, 2015; Edgar and McGhee, 1988; Edgar et al., 1994).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig3-v3.jpg)\n\n**Figure 3.:** (A) Box plot showing the number of cells/embryo for a representative sample of pre-gastrula (PG) embryos, whiskers indicate the range of values. (B) Graph showing maternal and zygotic transcripts through embryogenesis. Data from whole embryo transcriptome from Hashimshony et al\u00a0(Hashimshony et al., 2015) were normalized so that the sum expression for each gene through the time course\u00a0=\u00a01; total transcript levels for all genes at time point is shown. Below, black shaded bars illustrate the approximate age range for the purified embryo populations; late (L), mixed early (ME) and pre-gastrula (PG). (C) Okazaki fragment sequencing of DNA from L, ME and PG embryos revels broadly similar replication patterns. Graphs colored according Figure 1B. (D) Scatterplot comparing origin the efficiencies of overlapping origins within the L, ME and PG datasets. Spearman correlation (r) is shown on graph. The % of origins that overlap spatially is shown below.\n\nCoupling of DNA replication with gene enhancers within rapidly dividing embryonic cells likely imposes particular constraints upon genome duplication. S phase in pre-gastrula embryonic cells ranges from\u00a0~10\u00a0to\u00a025 min, depending on the lineage (Edgar and McGhee, 1988). In an ideal system, where all origins fire in each S phase (100% efficiency), complete genome duplication could be achieved in\u00a0~15 min if origins are uniformly spaced every\u00a0~75 kb and replication forks progress at 2.5 kb/min. We find that the median origin spacing is\u00a0~40 kb (Figure 1\u2014figure supplement 1), which reflects that not all origins are fired within each S phase. Given that DNA replication appears to initiate at enhancers, the requirement for closely spaced origins to achieve timely genome duplication would seemingly constrain the positions of enhancers across the genome. Thus, enhancers, and the genes they regulate, may be organized to facilitate the execution of the DNA replication and transcription programs in rapidly dividing embryonic cells. To investigate this, we first performed a gene ontology analysis of genes at varying distances from replication origins: this revealed that genes whose products are involved growth, embryonic development, cell cycle, gene expression, and chromatin are clustered near replication origins (Figure 4A and Figure 4\u2014figure supplement 1). Next, we compared origins with the whole embryo transcriptome time series derived from individual embryos from the one-cell stage through hatching (Hashimshony et al., 2015). For each of the 50 time points, we removed maternally derived transcripts and plotted the sum of normalized transcript levels for each gene relative to the midpoint of replication origins. As shown in Figure 4B and Figure 4\u2014figure supplement 2, transcript abundance accumulates through the early time points with no apparent trends in the data; but, beginning at time point\u00a0~9 and coincident with gastrulation, there is an apparent clustering of actively transcribed genes near replication origins. The association of transcription with origins spans to time point\u00a0~25 and broadly scales according with origin efficiency (Figure 4\u2014figure supplement 2). Beyond time point 25, the association breaks down; yet, as gene expression changes, the pattern evolves such that from time point 40 onwards, sites of active transcription now appear anti-correlated with replication origins. As we have shown in Figure 3, replication origins are defined prior to the onset of global zygotic gene activation, yet Figure 4B reveals that when the genome becomes broadly transcriptionally active, transcription generally occurs in close proximity to the pre-defined origins. At time point 25, which is\u00a0~300 min into embryogenesis, transcription begins to shift away from the origins, and by 500 min, peak transcription occurs some 15\u201325 kb from the origin. Since the median spacing between origins is 40 kb, the shift in transcription late in embryogenesis ensures that gene transcription is as far removed as possible from sites of replication initiation. The alteration in transcription that occurs after\u00a0~300 min is coincident with ventral enclosure and has been shown previously to underlie a developmental milestone wherein the \u2018morphogenesis\u2019 transcriptome is activated (Levin et al., 2012). Given the close association between replication origins and expressed genes, we considered whether global alterations in the transcriptome may be related to origin activity. Thus, we compared the origin/transcript profiles with a time course that measured living nuclei per embryo during embryogenesis from Sulston et al (Sulston et al., 1983) (Figure 4C). Significantly, the shift of transcription from origins that begins at\u00a0~300 min is coincident with the completion of the last wave of cell division that occurs within the embryo \u2013 indicating that the inactivation of replication origins may be coupled with the restructuring of the transcriptome to facilitate post replicative development.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig4-v3.jpg)\n\n**Figure 4.:** (A) Gene ontology analysis for genes at varying distances from the midpoint of a replication origin. Gene ontologies were calculated using the Gene Ontology Consortium (http://geneontology.org/). Select GO terms with greatest significance are shown that lie within \u2018Biological Process\u2019 annotation datasets. Left, observed/expected log2 ratio is shown at varying distances from replication origins for each ontology term as a heatmap: color key is below \u2013 yellow indicates enrichment, blue is depletion. Right, heatmap showing the calculated p-values (hypergeometric distribution) for the data on left; color key is below. (B) Normalized transcript abundance within\u00a0\u00b125 kb of the replication origin was summed for the top 1000 origins for each of the 50 time points through embryogenesis. Data are displayed as a heatmap and arranged according to sample number shown on left, corresponding time in embryogenesis is also indicated. Timing of gastrulation and mid development transition (MDT) calculated by\u00a0(Levin et al., 2016) are also shown. (C) Live cell nuclei per embryo as calculated by\u00a0(Sulston et al., 1983) is plotted as a function of time through embryogenesis and aligned with B.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Gene ontologies were calculated using the Gene Ontology Consortium (http://geneontology.org/). Select GO terms with greatest significance are shown that lie within 'Biological Process' annotation datasets. Left, observed/expected log2 ratio is shown at varying distances from origins for each ontology term as a heatmap: color key is below \u2013 yellow indicates enrichment, blue is depletion. Right, heatmap showing the calculated p-values (hypergeometric distribution) for the data on left; color key is below.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/21728/elife-21728-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Normalized data from each of the 50 time points from the whole embryo transcriptome (16) were plotted relative to the positions of the most efficient ~2000 replication origins. Origins are ranked from most efficient (0, top) to least efficient (2000, bottom). Genes within \u00b125kb from the origin are shaded according to their relative level of expression; origin midpoints are indicated by arrows. Sample numbers and relative time through embryogenesis are shown above.\n\nOur finding that replication initiates at specific sites in PG embryos is in marked contrast to the seemingly random patterns observed in the rapid and synchronous cycles in both Drosophila and Xenopus embryos (Blumenthal et al., 1974; Callan, 1974). However, early development in C. elegans differs from these organisms: initial cell divisions are asynchronous, and the cell cycle does not slow abruptly near gastrulation (Bao et al., 2008). Thus, the rapid establishment of the defined replication landscape in C. elegans may be related to the very early stage at which cell lineages are specified. Indeed, several histone modifications, including H3K27ac and H3K4me2, are potentially passaged with the maternal genome and are known to be present in two cell embryos (Arico et al., 2011; Samson et al., 2014). Replication origins appear to be tied with gene expression: in general terms, origin proximal genes experience the first wave of zygotic transcription and are expressed in replicating cells; origin distal regions encode genes whose transcription is delayed until later in development when DNA replication has ceased. Our results indicate that the C. elegans genome has evolved to couple embryonic transcription with replication; yet, such coupling would appear to impose constraints on a system that needs not only to transcribe a diverse array of genes, but also replicate the\u00a0~100 mb genome in\u00a0~15 min. C. elegans seemingly resolves this issue as follows: first, replication origins appear to be co-localized with gene enhancers which can activate transcription of genes at a distance; second, genes required for cell division and early development are clustered near replication origins (Figure 4\u2014figure supplement 1). Such association is likely to be functionally important in rapidly cycling cells with limited gap phases: most obviously, genes near to origins such as histones, will be replicated at the start of S phase and have a higher effective copy number than those further away. Relatedly, the passage of the replication fork may trigger genes to be reactivated that were presumably repressed during mitosis; thus ensuring replication-transcription conflicts do not occur. Finally, the inactivation of replication origins may serve as a trigger to relieve the gene expression program from replication origin-associated spatial constraints \u2013 allowing the expression of genes whose products are required for the many aspects of development that occur in the absence of cell division. The spatiotemporal coupling and uncoupling of gene expression with replication may be a general principal underlying the profound transcriptional and morphological changes that occur during embryogenesis across species: genes expressed early are characterized by proteins involved in proliferation, while those expressed late are typically involved in differentiation (Levin et al., 2016). Separating early and late genes is a comparatively short phase termed the \u2018mid-developmental transition\u2019 (Levin et al., 2016); in C. elegans, we find that this transition is coincident with the uncoupling of transcription from replication origins (Figure 4B,C). It will be of great interest to learn whether this is a ubiquitous feature of the mid-developmental transition across species.\n\n## Materials and methods\n\n### C. elegans maintenance and strains\n\nAll C. elegans strains were maintained at 20\u00b0C on NGM plates with OP50 E. coli strain, as previously described (Brenner, 1974). Strains used in this study:\n\nThe wild-type strain corresponds to Bristol N2 (RRID:CGC_N2), CG21 egl-30(tg26) I; him-5(e1490) V (RRID:CGC_CG21).\n\n### Knocking down lig-1 using RNAi\n\nWe used lig-1 RNAi generated by the Ahringer laboratory and used a modified version of RNAi feeding protocol (Fraser et al., 2000). lig-1 and control (empty vector) RNAi-expressing bacteria were grown overnight at 37\u00b0C in LB medium supplemented with 50 \u00b5g/ml Ampicillin and 10 \u00b5g/ml tetracycline. Bacterial cultures were transferred to fresh LB medium supplemented with 50 \u00b5g/ml Ampicillin and were grown at 37\u00b0C until reaching OD 1.0. RNAi expression was induced with 1 mM IPTG for 1 hr at room temperature.\n\nTo attenuate lig-1 associated genome instability and prevent sterility associated with complete lig-1 depletion, lig-1 RNAi expressing bacteria was diluted 1:10 with control (empty vector) bacteria to a final volume of 500 ml. Diluted bacteria were harvested by centrifugation and added to C. elegans S-Basal liquid media containing 150,000\u2013200,000 well synchronized early L3 staged N2 worms (see below). N2 worms were grown in S-Basal liquid culture containing diluted lig-1 RNAi at 20\u00b0C until adulthood. Pre Gastrula embryos were harvested from early L3 staged egl-30 mutants that were grown on 1 mM IPTG plates as described previously (Fraser et al., 2000). Gravid adults were harvested and their embryos were collected by bleaching. Additional lig-1 dilution ratios (Figure 1a) were generated as above.\n\nTo collect synchronous L1 populations, 10,000 worms were grown on NGM plates. Their progeny were washed with M9 buffer and passed through 11 \u00b5M nylon net filters (Millipore Ltd. NY1104700). Approximately 150,000 synchronized L1 stage worms were grown in liquid media supplemented with OP50 bacteria until reaching L3 stage. Synchronized L3 staged worms were collected by centrifugation, followed with three times washing with M9 buffer containing 50 \u00b5g/ml Ampicillin. For progeny counting L3 staged worms where grown on 1 mM IPTG plates.\n\n### Genomic DNA purification and Okazaki fragment labeling\n\nOkazaki fragments were purified as previously described with slight modifications (Smith and Whitehouse, 2012). Samples were resuspended in 480 \u00b5l Lysis buffer (50 mM Tris-HCL, pH 8.0, 50 mM EDTA, 100 mM NaCl, 1.5% Sarkosyl, 1% SDS) and incubated with 200 \u00b5g proteinase K at 42 degree overnight. Digested proteins and peptides were precipitated by addition of 200 \u00b5l 5\u00a0M KOAc and centrifugation at 16,000\u00a0g for 30 min at 4\u00b0C. Genomic DNA was precipitated by adding 500 \u00b5l isopropanol and spinning at 16,000 g at 4\u00b0C for 10 min. Genomic DNA pellets were washed with 70% ethanol and then resuspended in 300 \u00b5l STE (10 mM Tris-HCL, PH8.0, 1 mM EDTA, 100 mM NaCl). Residual RNA was digested by addition of 5\u00a0U RiboShredder RNase Blend (Epicentre) at 37\u00b0C overnight. Genomic DNA was precipitated with 30 \u00b5l 3\u00a0M NaOAc and 1.7 ml ethanol pelleted at 10,000\u00a0g for 10 min at 4\u00b0C. DNA pellets were washed with 70% ethanol and resuspended in 30 \u00b5l TE (10 mM Tris-HCl pH 7.5, 0.1 mM EDTA) and stored over night at 4\u00b0C to allow complete resuspension of genomic DNA. Samples were stored at \u221280\u00b0C. Radiolabeling of Okazaki fragments and denaturing gel electrophoresis were followed as previously described (Smith and Whitehouse, 2012). Input genomic DNA for labeling was 2\u20133 \u00b5g.\n\n### Okazaki fragment purification\n\nOkazaki fragments were purified from genomic DNA of Ligase I depleted C. elegans embryos, by ion exchange chromatography, similar to the procedure previously described (Smith and Whitehouse, 2012). C. elegans Okazaki fragments were enriched in the 750\u2013850 mM NaCl fractions. These fractions were pooled and DNA precipitated for sequencing library preparation.\n\n### Sequencing library generation\n\nThree hundred nanograms purified Okazaki fragments were used to generate sequencing libraries similar to the previously optimized protocol (Smith and Whitehouse, 2012). Following fragment ligation the total reaction was loaded on a 2% agarose gel; fragments corresponding to\u00a0~200\u2013700 bp were purified from the gel using QiAquick gel extraction kit (Qiagen). Purified ligated fragments were amplified by (PCR 16) cycles using custom Illumina or Ion Torrent sequencing oligos.\n\n### MNase digestion of C. elegans embryos\n\nTo isolate nucleosomal DNA through in vivo micrococcal nuclease digestion, embryos were harvested from gravid N2 adults by bleaching. Embryos were permeabilized by digesting with chitinase (Sigma, St. Louis, MO;\u00a0C6137) followed by pronase (EMD Millipore, 537088-50KU) each for 3 min at 37\u00b0C (Edgar and Goldstein, 2012). Embryos were then pelleted and washed 3X with Egg Buffer (118 mM NaCl, 48 mM KCl, 3 mM CaCl2, 3 mM MgCl2, 5 mM HEPES, pH 7.3). Embryos were fixed with a 1% formaldehyde solution for 30 min and were quenched by adding glycine to a 125 mM final concentration and washed with NP-S buffer (0.075% NP-40, 50 mM NaCl, 10 mM Tris pH 7.4, 5 mM MgCl2, 1 mM CaCl2, 1 mM \u03b2-mercapatoethanol) for MNase digestion. Thirty-five thousand fixed embryos were digested with 100 U of MNase (Worthington, LS004798) for 3 min at 23\u00b0C. After the reaction was terminated, the samples were treated with RNase A and proteinase K before incubation at 65\u00b0C for 12 hr to reverse crosslinks. Samples were phenol extracted and the DNA subsequently precipitated (Ooi et al., 2010). DNA was visualized on 1.3% denaturing agarose gel following labeling with T4 PNK (NEB) and radiolabeled \u03b3-ATP.\n\n### Genomics protocols\n\nSequencing was performed using Ion Torrent (Proton) or Illumina (HiSeq) platforms. At least one biological replicate was performed for each DNA replication map; Ion Torrent (Proton) generally had a higher background and lower reproducibility than Illumina so direct comparisons between different embryonic stages were made using only the Illumina data (Figure 3). Sequencing reads were mapped to the WS220 genome using Bowtie2 with \u2013local function (RRID:SCR_005476). Reads with q\u00a0<\u00a030 were removed using Samtools (RRID:SCR_002105). Remaining reads were binned in 100 bp intervals using Bedtools (RRID:SCR_006646), maintaining strand identity. Data were partially smoothed by calculating the median with a sliding window of 1.5 kb (Royce et al., 2007). Data were normalized (such that the sum of Watson and Crick reads\u00a0=\u00a01) and positions of origins were mapped using custom program described earlier, using a 12 kb window (McGuffee et al., 2013). Because replication initiates in a broad zone at most origins, we found that the method of McGuffee significantly underestimated the true origin efficiency; therefore, origin efficiencies are defined by the maximum value of normalized reads within 20 kb of the origin. The distance between normalized maxima on the Watson and Crick strands defined the size of transition zone at origins. Histone modification data used in Figure 2 were downloaded from ModEncode consortium (http://www.modencode.org/). Regions of ChIP enrichment were calculated using Macs2 (Zhang et al., 2008) with default parameters. Regions of enrichment were defined as peaks with\u00a0>5 fold enrichment over background. Associations of ChIP peaks with replication origins was calculated using intervalstats (Chikina and Troyanskaya, 2012); replication origins were defined as a 5 kb region centered on the origin midpoint. Transcriptomics data from the whole embryo time course from (Hashimshony et al., 2015) were used in this study. Data for each gene were individually normalized such that the sum of all 50 time points\u00a0=\u00a01. Data were then clustered (unsupervised) and genes with highest transcription within the first five time points were defined as \u2018maternal\u2019 all other expressed genes are defined as \u2018zygotic\u2019.\n\n### Accession number\n\nAll sequencing data are availed at Gene Expression Omnibus with under accession number GSE90939.\n",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "e4b92570-0b63-4ce4-8562-52928ce82a35",
+      "submission_id": "de2c921b-eb7e-412b-9b57-7bbfcda71740",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Michael R Botchan, University of California, Berkeley , United States\n\n## Review text\n\nDOI: [10.7554/eLife.21728.016](https://doi.org/10.7554/eLife.21728.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Spatiotemporal coupling and decoupling of transcription with DNA replication origins during embryogenesis in C. elegans\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior editor) and three reviewers, one of whom, Michael R Botchan (Reviewer 1) is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe Whitehouse lab had previously developed a strategy for mapping eukaryotic DNA replication origins based on the position of Okazaki fragment strand switching, which they used to successfully map replication origins as well as replication termination sites in budding yeast. In this paper, they further develop this technique to map origins in C.elegans. This is an important step forward, and, together with a paper from the Hyrien lab earlier this year using a related approach, represents the first time this technique has been applied to a metazoan. This has great value because this technique has been shown to accurately and sensitively identify origins in budding yeast. For this reason alone the reviewers believe this a significant paper. The authors go on to show that most of the origins used before gastrula are also used later in development. This is in contrast to the well-studied situation in Xenopus and Drosophila development where initiation sites before the mid-blastula transition are dense and poorly defined, perhaps truly random (although random is perhaps a poorly defined concept in this context), and then becomes restricted to specific sites only thereafter. They show that origins co-localise with the potential enhancers of genes expressed through the proliferative stages of development. They show that the position of these replication origins correlates with specific histone marks, and that these origins are active before significant levels of transcription are seen. Finally, they show that the cessation of transcription potentially associated with these cis acting enhancers correlates with the cessation of proliferation. The reviewers all felt that certain key points needed to be addressed before publication and these are listed.\n\n1) The sites defined as \"enhancers\" seem to be assigned simply by the histone modification patterns. The reviewers are of course aware of the literature in higher eukaryotes that certain combinations of histone marks are predictive of enhancers but not for the worm. For example: it is not proven that sites of H3K27ac in worms are actually marking enhancers. The authors should either show that some of these sites are indeed transcription enhancers by mutation and effect transcription or nuance their discussion accordingly. If genome wide enhancers have been mapped perhaps they can be identified in a figure. In a related issue is #2.\n\n2) The separation between transcription and replication regulation is important but perhaps difficult to prove at this point. Proteins that are binding to the \"enhancer sites\" may be critical for both functions and mutation of these cis sites could have effects on both processes. If the authors want to establish this as a strong conclusion perhaps they should use inhibitors of transcription (or approaches such as SiRNA to knock-down protein levels for factors essential for that process) and show that early in development replication patterns do not change. Otherwise the discussion should be modified.\n\n3) Have the authors investigated potential phenotypes for ligase depletion at various times in development- such as fecundity or fertility?\n",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7c874575-2849-4288-a692-fc4ca39b8631",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C1",
+      "claim": "In Drosophila and Xenopus embryos, rapid genome duplication in early cycles is facilitated by the use of many, closely spaced, replication initiation sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In both Drosophila and Xenopus embryos, the rapid genome duplication in early cycles is facilitated by the use of many, closely spaced, replication initiation sites (Blumenthal et al., 1974; Callan, 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Blumenthal et al., 1974; Callan, 1974).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f4251a4f-f7ef-48ac-ba31-bb1ebbe4f89d",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C2",
+      "claim": "The onset of zygotic transcription in Drosophila and Xenopus is accompanied by a marked increase in S phase length.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Drosophila and Xenopus, the onset of zygotic transcription is accompanied by a marked increase in S phase length, caused by a reduction in the number of replication initiation events, rather than changes in the rate of replication fork progression (Blumenthal et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Blumenthal et al., 1974).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "1c3bf88d-d5fc-4c85-acff-279101bc4bb7",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C3",
+      "claim": "The increase in S phase length at the onset of zygotic transcription is caused by a reduction in the number of replication initiation events, rather than changes in the rate of replication fork progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Drosophila and Xenopus, the onset of zygotic transcription is accompanied by a marked increase in S phase length, caused by a reduction in the number of replication initiation events, rather than changes in the rate of replication fork progression (Blumenthal et al., 1974).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Blumenthal et al., 1974).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "07e35128-74d0-427b-8c0b-67f9d1cc7d80",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C4",
+      "claim": "Chromatin signatures that typify transcriptionally active chromatin are enriched at replication initiation sites in metazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies in metazoa have found particular chromatin signatures that typify transcriptionally active chromatin are enriched at replication initiation sites and also influence the relative time in S phase that origins are active (MacAlpine and Almouzni, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (MacAlpine and Almouzni, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "a261d0cf-a004-4a5a-9101-a2aba0e0448c",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C5",
+      "claim": "Chromatin signatures influence the relative time in S phase that origins are active in metazoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies in metazoa have found particular chromatin signatures that typify transcriptionally active chromatin are enriched at replication initiation sites and also influence the relative time in S phase that origins are active (MacAlpine and Almouzni, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (MacAlpine and Almouzni, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c86b6c5f-dc50-4234-ba32-a54b7d142bde",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C6",
+      "claim": "A specific signature within chromatin that marks distinct sites in a genome where replication initiates has not been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet a specific signature within chromatin that marks distinct sites in a genome where replication initiates has not been identified (Urban et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Urban et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "2e295d68-4a36-4036-894e-bed77b102a25",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C7",
+      "claim": "Transient depletion of DNA ligase I results in the accumulation of Okazaki fragments on the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach relies on transient depletion of DNA ligase I, which results in the accumulation of Okazaki fragments on the lagging strand (Smith and Whitehouse, 2012; McGuffee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Smith and Whitehouse, 2012; McGuffee et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "3cebd81f-3329-4877-a337-363621b009df",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C8",
+      "claim": "High-resolution maps of DNA replication have been provided across budding yeast and human genomes by sequencing Okazaki fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "By sequencing Okazaki fragments we, and others, have provided high-resolution maps of DNA replication across budding yeast (McGuffee et al., 2013) and human genomes (Petryk et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (McGuffee et al., 2013; Petryk et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "4e665a9a-e0c8-4563-9cd6-8d263779fe4d",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C9",
+      "claim": "Sequencing Okazaki fragments allows DNA replication to be mapped in cells, tissues or organisms without need for synchronization.",
+      "claim_type": "EXPLICIT",
+      "source": "One advantage of sequencing Okazaki fragments is that replication signatures can be deduced from a population of cells growing at steady state. Thus, providing that Okazaki fragments can be harvested in sufficient quantity, DNA replication can be mapped in cells, tissues or organisms without need for synchronization (Smith and Whitehouse, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Smith and Whitehouse, 2012) and logical inference from the method's properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "96f36c58-30ad-4265-9453-5f317f97ee09",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C10",
+      "claim": "lig-1 is the sole C. elegans DNA ligase responsible for ligating Okazaki fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Okazaki fragments were purified from mixed early embryos (ME) following RNAi depletion of lig-1, which is the sole C. elegans DNA ligase responsible for ligating Okazaki fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated as established knowledge about C. elegans biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "3e7096f4-1cbc-4244-ac03-ca640954faf0",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C12",
+      "claim": "The size distribution of Okazaki fragments in C. elegans matches those observed in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "While the periodicity is far more pronounced in C. elegans, the size distribution of Okazaki fragments matches those observed in budding yeast, indicating that the coupling of lagging strand synthesis and nucleosome assembly is likely conserved (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with prior research (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016).",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f6ee5105-0be3-459f-acf9-15d819b4e8dc",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C13",
+      "claim": "The coupling of lagging strand synthesis and nucleosome assembly is likely conserved between C. elegans and budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "While the periodicity is far more pronounced in C. elegans, the size distribution of Okazaki fragments matches those observed in budding yeast, indicating that the coupling of lagging strand synthesis and nucleosome assembly is likely conserved (Smith and Whitehouse, 2012; Yadav and Whitehouse, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the similarity in Okazaki fragment size distribution and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "a810c7f9-6edf-47d2-afa9-8a75fc163835",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C14",
+      "claim": "Fragments mapped to the C. elegans genome display a characteristic strand bias expected of Okazaki fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping to the worm WS220 reference genome, we find a clear strand bias, which matches the expected distribution of Okazaki fragments synthesized on the lagging strand: replication origins are at sites of transition from Watson to Crick strand reads (Figure 1B) (McGuffee et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and comparison with prior research (McGuffee et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c6fc476b-cbcb-452c-bfc8-d768e3026895",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C15",
+      "claim": "Replication origins are at sites of transition from Watson to Crick strand reads.",
+      "claim_type": "EXPLICIT",
+      "source": "Mapping to the worm WS220 reference genome, we find a clear strand bias, which matches the expected distribution of Okazaki fragments synthesized on the lagging strand: replication origins are at sites of transition from Watson to Crick strand reads (Figure 1B) (McGuffee et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and comparison with prior research (McGuffee et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "af3e5b62-9408-4035-8fea-47d0ecf79be5",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C16",
+      "claim": "More than 2000 replication origins were identified in C. elegans mixed early embryos using a modified mapping protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "While the data is noisier than budding yeast \u2013 in part due to the high A:T content of the genome, residual DNA ligase activity and the complexity of the sample preparation \u2013 we identified >2000 replication origins using a modified mapping protocol (McGuffee et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data and a citation to the mapping protocol (McGuffee et al., 2013).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c6c7f3e9-1d96-41d6-bd0e-180b61180dbc",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C17",
+      "claim": "The median spacing between replication origins in C. elegans mixed early embryos is 40 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "Median spacing between origins is 40 kb, and 96% of origins are within 100 kb of another origin; the median efficiency \u2013 that is, the likelihood that a given origin is utilized during S phase, is ~50%, although we note that numerous origins are fired in most cells in the population (Figure 1\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "1540e5d8-aa77-4e10-b6ef-c97842f9ae64",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C18",
+      "claim": "96% of replication origins in C. elegans mixed early embryos are within 100 kb of another origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Median spacing between origins is 40 kb, and 96% of origins are within 100 kb of another origin; the median efficiency \u2013 that is, the likelihood that a given origin is utilized during S phase, is ~50%, although we note that numerous origins are fired in most cells in the population (Figure 1\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "84cd6b7c-4ba6-45e4-ae50-df638dea5e89",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C19",
+      "claim": "The median efficiency of replication origins in C. elegans mixed early embryos is approximately 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Median spacing between origins is 40 kb, and 96% of origins are within 100 kb of another origin; the median efficiency \u2013 that is, the likelihood that a given origin is utilized during S phase, is ~50%, although we note that numerous origins are fired in most cells in the population (Figure 1\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "d4d1e5fd-116f-40af-a21e-032cad8a98a3",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C20",
+      "claim": "In budding yeast, replication initiation is confined to a narrow range.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to budding yeast, in which initiation is confined to a narrow range (McGuffee et al., 2013), replication in C. elegans apparently initiates within broad zones at most origins, similar to human cells (Figure 1\u2014figure supplement 3) (Petryk et al., 2016; Dijkwel et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (McGuffee et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "da877f86-cc37-4358-aca9-4c5fda080736",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C21",
+      "claim": "Replication in C. elegans initiates within broad zones at most origins, similar to human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to budding yeast, in which initiation is confined to a narrow range (McGuffee et al., 2013), replication in C. elegans apparently initiates within broad zones at most origins, similar to human cells (Figure 1\u2014figure supplement 3) (Petryk et al., 2016; Dijkwel et al., 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 3 and citations to prior research (Petryk et al., 2016; Dijkwel et al., 1991).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "66141b2f-176b-4a2c-9728-e9021bc9df72",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C22",
+      "claim": "Genes near replication origins tend to be shorter.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication origins potentially influence gene organization: genes near origins tend to be shorter and genes flanking origins show a pronounced bias to ensure that replication fork progression and transcription are co-directional (Figure 1\u2014figure supplement 4A and B) (Petryk et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4A and B and a citation to prior research (Petryk et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "bad3b2f6-0b2a-4b01-971b-077f8bc03b14",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C23",
+      "claim": "Genes flanking replication origins show a pronounced bias to ensure that replication fork progression and transcription are co-directional.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication origins potentially influence gene organization: genes near origins tend to be shorter and genes flanking origins show a pronounced bias to ensure that replication fork progression and transcription are co-directional (Figure 1\u2014figure supplement 4A and B) (Petryk et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 4A and B and a citation to prior research (Petryk et al., 2016).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "0a2d2e0b-3d0d-49e4-9173-70f56322ec6f",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C24",
+      "claim": "There is a remarkable concordance between the location of replication origins and acetylation of histone H3 and methylation of H3 at lysine 4 (K4) in C. elegans embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 2 shows, there is a remarkable concordance between the location of replication origins and acetylation of histone H3 and methylation of H3 at lysine 4 (K4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "650457bb-82e1-43c1-9b7e-65635b3a5737",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C25",
+      "claim": "75% of efficient replication origins (>30% efficiency) are within 1 kb of the H3 K27ac histone mark.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing H3 K27ac (H3 K4me2 is near identical), we find that 75% of efficient origins (>30% efficiency) are within 1 kb of the histone mark and most H3 K27ac peaks overlap origins (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c04d26ba-3ab9-4c82-aec4-8ba9e8215b13",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C26",
+      "claim": "Most H3 K27ac peaks overlap replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing H3 K27ac (H3 K4me2 is near identical), we find that 75% of efficient origins (>30% efficiency) are within 1 kb of the histone mark and most H3 K27ac peaks overlap origins (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "611b86e2-4724-4fb1-bfc0-2220d0dfc02e",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C27",
+      "claim": "The most efficient replication origins are associated with sites with the most H3K27 acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the most efficient replication origins are associated with sites with the most H3K27 acetylation (Figure 2C, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "74273b79-c75b-4414-95b8-b5ee46e16b9d",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C28",
+      "claim": "Acetylation of H3 at K18, K23, K27 and dimethylation of H3 at K4 are present at replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "By surveying the abundance of various modifications present at replication origins, we tested whether other modifications behaved similarly to H3K27ac (Figure 2D); this revealed that acetylation of H3 at K18, K23, K27 and dimethylation of H3 at K4 are not only present at origins, but the level of modification increases according to origin efficiency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f27e9c7a-706e-4ddb-afcb-1648d6fe1eea",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C29",
+      "claim": "The level of H3 acetylation at K18, K23, K27 and H3 dimethylation at K4 increases according to replication origin efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "By surveying the abundance of various modifications present at replication origins, we tested whether other modifications behaved similarly to H3K27ac (Figure 2D); this revealed that acetylation of H3 at K18, K23, K27 and dimethylation of H3 at K4 are not only present at origins, but the level of modification increases according to origin efficiency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "af95e1f7-9826-434c-a750-7e2084e7666a",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C30",
+      "claim": "The histone modifications most strongly associated with replication origins are those that define gene enhancers in metazoan genomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly the histone modifications, we find most strongly associated with origins are those that define gene enhancers in metazoan genomes (Ho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison with prior research (Ho et al., 2014) and experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "ccdf6282-5b46-4e3b-9fac-18bb280622b2",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C31",
+      "claim": "Pre-gastrula embryos (PG) have limited and non-essential transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, replication origins become defined once zygotic transcription has initiated; DNA replication in pre-gastrula embryos (PG), where transcription is limited and non essential (Robertson and Lin, 2015), would presumably initiate from many, seemingly random sites \u2013 much like the apparent situation in Drosophila and Xenopus embryos prior to the Mid Blastula Transition (MBT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Robertson and Lin, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "4de379a6-8acd-45fa-a9ce-5ac5122d43c9",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C32",
+      "claim": "The patterns of DNA replication were highly similar across pre-gastrula (PG), mixed early (ME), and late (L) embryo populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared origin location and efficiency for each population and found that the patterns of replication were highly similar (Figure 3C) \u2013 especially for the most efficient origins (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "7f3a4d1f-2a83-4ce5-9daa-630d44affcd5",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C33",
+      "claim": "Replication origin usage is globally similar through early C. elegans development despite fundamental alterations in gene transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, even though gene transcription is fundamentally altered through this time course, replication origin usage is globally similar through early development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data comparing replication patterns across developmental stages.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "083dfdaa-01b7-470b-899d-228c39f37d70",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C34",
+      "claim": "The establishment of specific replication origins in C. elegans occurs prior to the broad onset of zygotic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the establishment of specific replication origins in C. elegans occurs prior to the broad onset of zygotic transcription \u2013 meaning that the replication origins we define are unlikely to be dependent upon transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing similar replication patterns in pre-gastrula and later embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "8b3f1a99-9a5e-4669-add1-e74c513d3241",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C35",
+      "claim": "The replication origins defined in C. elegans are unlikely to be dependent upon transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the establishment of specific replication origins in C. elegans occurs prior to the broad onset of zygotic transcription \u2013 meaning that the replication origins we define are unlikely to be dependent upon transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing similar replication patterns in pre-gastrula and later embryos.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "589ff416-a22b-48ae-a947-26da3698c236",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C36",
+      "claim": "Isolated embryonic cells treated with \u03b1-amanitin divide normally up to approximately 100 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is in keeping with data showing that isolated embryonic cells treated with \u03b1-amanitin divide normally up to approximately 100 cells (Edgar et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Edgar et al., 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "1700fe27-266f-449b-9bc4-2759fdd91e1e",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C37",
+      "claim": "S phase length, lineage-specific cell cycle timing, asymmetric cell division and cleavage patterns all proceed normally in the absence of transcription in pre-gastrula early embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, S phase length, lineage-specific cell cycle timing, asymmetric cell division and cleavage patterns all proceed normally in the absence of transcription in pre-gastrula early embryos (Robertson and Lin, 2015; Edgar and McGhee, 1988; Edgar et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Robertson and Lin, 2015; Edgar and McGhee, 1988; Edgar et al., 1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "45626707-8dba-4706-bf66-93ceee4d15b5",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C38",
+      "claim": "S phase in pre-gastrula embryonic cells ranges from approximately 10 to 25 min, depending on the lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "S phase in pre-gastrula embryonic cells ranges from ~10 to 25 min, depending on the lineage (Edgar and McGhee, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Edgar and McGhee, 1988).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "68afa6bf-dd8e-49e5-a57c-20cc0e9b75d5",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C39",
+      "claim": "In an ideal system where all origins fire in each S phase (100% efficiency), complete genome duplication could be achieved in approximately 15 min if origins are uniformly spaced every approximately 75 kb and replication forks progress at 2.5 kb/min.",
+      "claim_type": "EXPLICIT",
+      "source": "In an ideal system, where all origins fire in each S phase (100% efficiency), complete genome duplication could be achieved in ~15 min if origins are uniformly spaced every ~75 kb and replication forks progress at 2.5 kb/min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on a theoretical calculation using known parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "373f58e2-b622-41e1-9867-bf93a0c91304",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C40",
+      "claim": "The median origin spacing of approximately 40 kb reflects that not all origins are fired within each S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the median origin spacing is ~40 kb (Figure 1\u2014figure supplement 1), which reflects that not all origins are fired within each S phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental data on origin spacing shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c262d47b-5958-460f-8d16-62c6a613a046",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C41",
+      "claim": "Genes whose products are involved in growth, embryonic development, cell cycle, gene expression, and chromatin are clustered near replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this, we first performed a gene ontology analysis of genes at varying distances from replication origins: this revealed that genes whose products are involved growth, embryonic development, cell cycle, gene expression, and chromatin are clustered near replication origins (Figure 4A and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "54cd83ac-ce34-4955-a0f1-21e6eab6e01a",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C42",
+      "claim": "Beginning at time point approximately 9 and coincident with gastrulation, there is an apparent clustering of actively transcribed genes near replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4B and Figure 4\u2014figure supplement 2, transcript abundance accumulates through the early time points with no apparent trends in the data; but, beginning at time point ~9 and coincident with gastrulation, there is an apparent clustering of actively transcribed genes near replication origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "6fe7aa81-2638-4be8-b310-fd543bf5bc8a",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C43",
+      "claim": "The association of transcription with replication origins spans to time point approximately 25 and broadly scales according with origin efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "The association of transcription with origins spans to time point ~25 and broadly scales according with origin efficiency (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "886d7fdb-b447-482a-85b4-f54233eb0652",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C44",
+      "claim": "Beyond time point 25, the association between transcription and replication origins breaks down.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond time point 25, the association breaks down; yet, as gene expression changes, the pattern evolves such that from time point 40 onwards, sites of active transcription now appear anti-correlated with replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c0abf3cf-6921-4cbd-a62f-229b467153d8",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C45",
+      "claim": "From time point 40 onwards, sites of active transcription appear anti-correlated with replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Beyond time point 25, the association breaks down; yet, as gene expression changes, the pattern evolves such that from time point 40 onwards, sites of active transcription now appear anti-correlated with replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "14661cb5-0596-4f54-b2da-49094beba9c0",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C46",
+      "claim": "Replication origins are defined prior to the onset of global zygotic gene activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have shown in Figure 3, replication origins are defined prior to the onset of global zygotic gene activation, yet Figure 4B reveals that when the genome becomes broadly transcriptionally active, transcription generally occurs in close proximity to the pre-defined origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "515a1259-c8c5-4a4d-8278-3be778580b1e",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C47",
+      "claim": "When the genome becomes broadly transcriptionally active, transcription generally occurs in close proximity to the pre-defined replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "As we have shown in Figure 3, replication origins are defined prior to the onset of global zygotic gene activation, yet Figure 4B reveals that when the genome becomes broadly transcriptionally active, transcription generally occurs in close proximity to the pre-defined origins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "58c4be5c-e973-42c7-9d3f-b18a03629bd4",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C48",
+      "claim": "At time point 25 (approximately 300 min into embryogenesis), transcription begins to shift away from replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "At time point 25, which is ~300 min into embryogenesis, transcription begins to shift away from the origins, and by 500 min, peak transcription occurs some 15\u201325 kb from the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "9a397abc-0989-4f05-8089-d3f1e89dbadc",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C49",
+      "claim": "By 500 min into embryogenesis, peak transcription occurs some 15\u201325 kb from the replication origin.",
+      "claim_type": "EXPLICIT",
+      "source": "At time point 25, which is ~300 min into embryogenesis, transcription begins to shift away from the origins, and by 500 min, peak transcription occurs some 15\u201325 kb from the origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "ddf47113-170f-4b72-9ee5-c86285735955",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C50",
+      "claim": "The shift in transcription late in embryogenesis ensures that gene transcription is as far removed as possible from sites of replication initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the median spacing between origins is 40 kb, the shift in transcription late in embryogenesis ensures that gene transcription is as far removed as possible from sites of replication initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data on origin spacing and transcription patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "42cb1722-3add-42aa-b889-dc94ebc8de3d",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C51",
+      "claim": "The alteration in transcription that occurs after approximately 300 min is coincident with ventral enclosure.",
+      "claim_type": "EXPLICIT",
+      "source": "The alteration in transcription that occurs after ~300 min is coincident with ventral enclosure and has been shown previously to underlie a developmental milestone wherein the 'morphogenesis' transcriptome is activated (Levin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Levin et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "58fba866-4189-437d-93fa-fad0fae7e793",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C52",
+      "claim": "The alteration in transcription after approximately 300 min underlies a developmental milestone wherein the 'morphogenesis' transcriptome is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "The alteration in transcription that occurs after ~300 min is coincident with ventral enclosure and has been shown previously to underlie a developmental milestone wherein the 'morphogenesis' transcriptome is activated (Levin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Levin et al., 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c8cd9967-6bf2-491b-bac8-bf9e881793e4",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C53",
+      "claim": "The shift of transcription from origins that begins at approximately 300 min is coincident with the completion of the last wave of cell division that occurs within the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the shift of transcription from origins that begins at ~300 min is coincident with the completion of the last wave of cell division that occurs within the embryo \u2013 indicating that the inactivation of replication origins may be coupled with the restructuring of the transcriptome to facilitate post replicative development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of experimental data with published cell division data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "005bbdbc-1925-4724-a4b0-2411eaf4b9d5",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C54",
+      "claim": "The inactivation of replication origins may be coupled with the restructuring of the transcriptome to facilitate post replicative development.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the shift of transcription from origins that begins at ~300 min is coincident with the completion of the last wave of cell division that occurs within the embryo \u2013 indicating that the inactivation of replication origins may be coupled with the restructuring of the transcriptome to facilitate post replicative development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the correlation between transcription shift and cell division completion.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "950d8bfe-200d-459d-919b-5a436d5864db",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C55",
+      "claim": "Early development in C. elegans differs from Drosophila and Xenopus in that initial cell divisions are asynchronous.",
+      "claim_type": "EXPLICIT",
+      "source": "However, early development in C. elegans differs from these organisms: initial cell divisions are asynchronous, and the cell cycle does not slow abruptly near gastrulation (Bao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Bao et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "e54fb1af-7a2b-4a98-ad93-2f4b7586f385",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C56",
+      "claim": "The cell cycle does not slow abruptly near gastrulation in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, early development in C. elegans differs from these organisms: initial cell divisions are asynchronous, and the cell cycle does not slow abruptly near gastrulation (Bao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Bao et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "cffd9e39-5b2d-42f1-a9f8-57e8b7898f12",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C57",
+      "claim": "Several histone modifications, including H3K27ac and H3K4me2, are potentially passaged with the maternal genome and are known to be present in two cell embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, several histone modifications, including H3K27ac and H3K4me2, are potentially passaged with the maternal genome and are known to be present in two cell embryos (Arico et al., 2011; Samson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research (Arico et al., 2011; Samson et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "52eda53d-4267-4dc4-9303-8df3140b73e6",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C58",
+      "claim": "Origin proximal genes experience the first wave of zygotic transcription and are expressed in replicating cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication origins appear to be tied with gene expression: in general terms, origin proximal genes experience the first wave of zygotic transcription and are expressed in replicating cells; origin distal regions encode genes whose transcription is delayed until later in development when DNA replication has ceased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data on transcription patterns relative to replication origins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "b52a34bb-1d33-4eaa-af29-0fa711a94ad7",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C59",
+      "claim": "Origin distal regions encode genes whose transcription is delayed until later in development when DNA replication has ceased.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication origins appear to be tied with gene expression: in general terms, origin proximal genes experience the first wave of zygotic transcription and are expressed in replicating cells; origin distal regions encode genes whose transcription is delayed until later in development when DNA replication has ceased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data on transcription patterns relative to replication origins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "a61a8394-2fae-48a8-b5a2-91f97aea4d23",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C60",
+      "claim": "The C. elegans genome has evolved to couple embryonic transcription with replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that the C. elegans genome has evolved to couple embryonic transcription with replication; yet, such coupling would appear to impose constraints on a system that needs not only to transcribe a diverse array of genes, but also replicate the ~100 mb genome in ~15 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing spatial and temporal coupling of transcription and replication.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c3a7594b-41a4-431c-aaec-1441b2975ce1",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C61",
+      "claim": "Replication origins are co-localized with gene enhancers which can activate transcription of genes at a distance.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans seemingly resolves this issue as follows: first, replication origins appear to be co-localized with gene enhancers which can activate transcription of genes at a distance; second, genes required for cell division and early development are clustered near replication origins (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from the experimental data showing histone modifications at origins and gene ontology analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "376c3873-b1b7-47de-b9d2-09111ebb7e67",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C62",
+      "claim": "Genes required for cell division and early development are clustered near replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "C. elegans seemingly resolves this issue as follows: first, replication origins appear to be co-localized with gene enhancers which can activate transcription of genes at a distance; second, genes required for cell division and early development are clustered near replication origins (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene ontology analysis data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "3a57841f-8fe8-4216-8870-389b1cab1311",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C63",
+      "claim": "Genes near to replication origins such as histones will be replicated at the start of S phase and have a higher effective copy number than those further away.",
+      "claim_type": "EXPLICIT",
+      "source": "Such association is likely to be functionally important in rapidly cycling cells with limited gap phases: most obviously, genes near to origins such as histones, will be replicated at the start of S phase and have a higher effective copy number than those further away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the spatial organization of genes relative to origins and the timing of replication.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "85d8978c-ad6a-4620-97fb-341d8acaf174",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C64",
+      "claim": "The passage of the replication fork may trigger genes to be reactivated that were presumably repressed during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, the passage of the replication fork may trigger genes to be reactivated that were presumably repressed during mitosis; thus ensuring replication-transcription conflicts do not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a mechanism for gene reactivation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "8bb1fa8e-a0db-4bc5-9b3a-43c4551d812a",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C65",
+      "claim": "The inactivation of replication origins may serve as a trigger to relieve the gene expression program from replication origin-associated spatial constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the inactivation of replication origins may serve as a trigger to relieve the gene expression program from replication origin-associated spatial constraints \u2013 allowing the expression of genes whose products are required for the many aspects of development that occur in the absence of cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, proposing a mechanism for developmental gene expression changes.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "4f60bb8e-1713-4157-99fd-083fde01b743",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C66",
+      "claim": "Genes expressed early in development are characterized by proteins involved in proliferation, while those expressed late are typically involved in differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatiotemporal coupling and uncoupling of gene expression with replication may be a general principal underlying the profound transcriptional and morphological changes that occur during embryogenesis across species: genes expressed early are characterized by proteins involved in proliferation, while those expressed late are typically involved in differentiation (Levin et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Levin et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f64c924a-9f86-4d14-8be0-c561236adf37",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C67",
+      "claim": "Separating early and late genes is a comparatively short phase termed the 'mid-developmental transition'.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating early and late genes is a comparatively short phase termed the 'mid-developmental transition' (Levin et al., 2016); in C. elegans, we find that this transition is coincident with the uncoupling of transcription from replication origins (Figure 4B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior research (Levin et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "55f04269-7ac0-431d-8390-578be65a0210",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C68",
+      "claim": "In C. elegans, the mid-developmental transition is coincident with the uncoupling of transcription from replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Separating early and late genes is a comparatively short phase termed the 'mid-developmental transition' (Levin et al., 2016); in C. elegans, we find that this transition is coincident with the uncoupling of transcription from replication origins (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "3404a959-0204-4d49-99d3-3132463797b3",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C69",
+      "claim": "Replication origins are marked with specific histone modifications that define gene enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an approach to map DNA replication at high resolution in C. elegans, we show that replication origins are marked with specific histone modifications that define gene enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c5bba114-07c2-4b92-9baf-8cb1b0b53f8b",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C70",
+      "claim": "The level of enhancer associated modifications scale with the efficiency at which the origin is utilized.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the level of enhancer associated modifications scale with the efficiency at which the origin is utilized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "74e89d90-e8fb-4a93-ba0c-2c1a2ffd4165",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C71",
+      "claim": "The positions and activity of replication origins is largely invariant through embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "By mapping replication origins at different developmental stages, we show that the positions and activity of origins is largely invariant through embryogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c798649b-5bcb-479a-9d42-993260637055",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C72",
+      "claim": "Replication origins are specified prior to the broad onset of zygotic transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, we find that replication origins are specified prior to the broad onset of zygotic transcription, yet when transcription initiates it does so in close proximity to the pre-defined replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "51fa6ed4-ff9d-432f-ac2c-96d23d0178bb",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C73",
+      "claim": "When transcription initiates it does so in close proximity to the pre-defined replication origins.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrary to expectation, we find that replication origins are specified prior to the broad onset of zygotic transcription, yet when transcription initiates it does so in close proximity to the pre-defined replication origins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "b26f5525-5467-4c51-a154-fa797fed87a3",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C74",
+      "claim": "Transcription and DNA replication origins are correlated during embryonic cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription and DNA replication origins are correlated, but the association breaks down when embryonic cell division ceases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "5acc6f50-58c9-412c-a6d1-d1211b090327",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C75",
+      "claim": "The association between transcription and DNA replication origins breaks down when embryonic cell division ceases.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription and DNA replication origins are correlated, but the association breaks down when embryonic cell division ceases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "d17d71a1-e951-4075-be99-2f8103990d00",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "claim_id": "C76",
+      "claim": "Replication origins are fundamental organizers and regulators of gene activity through embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data indicate that replication origins are fundamental organizers and regulators of gene activity through embryonic development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the collective experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully mapped DNA replication origins in C. elegans embryos using Okazaki fragment sequencing after lig-1 depletion. They identified >2000 replication origins with a median spacing of 40 kb, median efficiency of ~50%, and 96% of origins within 100 kb of another origin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C19 collectively demonstrate successful application of the Okazaki fragment sequencing method to C. elegans. The experimental approach is well-established (C7-C9), the strand bias pattern matches expectations (C14-C15), and quantitative metrics are provided with supporting figures (C16-C19). The method appears appropriately adapted from prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "06eb4215-f809-4d4a-8975-1d09c9711060",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The size distribution of Okazaki fragments in C. elegans matches budding yeast, suggesting conserved coupling of lagging strand synthesis and nucleosome assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by experimental data (Figure 1A) showing periodic Okazaki fragment patterns similar to nucleosome spacing, consistent with cited prior work in yeast. The inference about conservation is reasonable given the similarity in fragment size distribution, though direct mechanistic evidence is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f8074d7c-e728-4371-bc33-05214fcf3589",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Replication in C. elegans initiates within broad zones at most origins, similar to human cells but contrasting with the narrow initiation ranges in budding yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 are supported by experimental data (Figure 1\u2014figure supplement 3) and appropriate citations to prior work in yeast and human cells. The comparison across species is valid and the broad initiation zones are clearly demonstrated in the supplementary figure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "6cc39b4d-1c9d-477d-9142-82bf6789e055",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Genes near replication origins tend to be shorter and genes flanking origins show directional bias ensuring co-directional replication fork progression and transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are supported by experimental data (Figure 1\u2014figure supplement 4A and B) showing gene length and orientation patterns relative to origins. The data clearly demonstrate both the length bias and the pronounced directional bias, consistent with cited work in human cells.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Replication origins are marked with specific histone modifications that define gene enhancers (H3K27ac, H3K4me2, H3K18ac, H3K23ac), and the level of these modifications scales with origin efficiency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30, C69-C70 are strongly supported by multiple lines of evidence in Figure 2. The spatial concordance between origins and histone marks is clear (C24-C26), quantitative correlation with efficiency is demonstrated (C27, C29), and the association with enhancer marks is appropriately referenced (C30). The use of published ChIP-seq data is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "4dbaa963-b745-4996-80cf-f492f1dfe85d",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Replication origin positions and activity are largely invariant through embryogenesis, with origins established prior to the broad onset of zygotic transcription and independent of transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C71-C72 are supported by experimental comparison of replication patterns across developmental stages (Figure 3C-D). The high correlation between pre-gastrula, mixed early, and late embryos demonstrates origin invariance. The conclusion that origins are transcription-independent is well-supported by the pre-gastrula data and consistent with cited \u03b1-amanitin studies (C36-C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "54b4fbc8-a8bb-4817-8a97-790d1355d420",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "S phase in pre-gastrula embryonic cells ranges from ~10-25 min depending on lineage, and the observed median origin spacing of ~40 kb reflects incomplete origin firing in each S phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 combine cited prior knowledge about S phase timing with experimental observations about origin spacing. The theoretical calculation in C39 is mathematically sound, and the inference in C40 logically follows from comparing observed spacing with theoretical requirements. The reasoning is internally consistent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "f95f019b-e8a3-4d55-855c-73c76d40f904",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genes involved in growth, embryonic development, cell cycle, gene expression, and chromatin are clustered near replication origins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C62 are supported by gene ontology analysis (Figure 4A and Figure 4\u2014figure supplement 1). The enrichment of specific functional categories near origins is clearly demonstrated with appropriate statistical analysis. This represents a valid computational analysis of the spatial organization of genes relative to origins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcription initiates in close proximity to pre-defined replication origins beginning at gastrulation (timepoint ~9), remains associated through timepoint ~25, then shifts away from origins after ~300 min, with peak transcription occurring 15-25 kb from origins by 500 min when cell division ceases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C50, C58-C59, C73-C75 describe the temporal dynamics of transcription-origin association supported by whole embryo transcriptome analysis (Figure 4B and supplements). The data clearly show the coupling during early development and subsequent uncoupling. The spatial shift is well-documented and the correlation with developmental milestones is appropriately referenced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "d8342515-28d8-4b62-a02a-be368b175cb6",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The shift in transcription away from origins at ~300 min coincides with ventral enclosure, activation of the morphogenesis transcriptome, completion of the last wave of cell division, and the mid-developmental transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53, C68 integrate the experimental observations with developmental milestones from cited literature. The temporal correlation between transcription shift and developmental events is clearly demonstrated (Figure 4B-C). The association with the mid-developmental transition is appropriately referenced to prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "910aad29-90d7-4bb9-837b-5968a7d31a43",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The inactivation of replication origins may be coupled with transcriptome restructuring to facilitate post-replicative development and relieve spatial constraints on gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54 and C65 are speculative interpretations of the observed correlation between origin inactivation and transcriptional changes. While the temporal correlation is clear, the causal mechanism is not demonstrated. The use of 'may be' appropriately indicates uncertainty, but no direct experimental evidence for this coupling mechanism is provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "c34300e8-18b9-4591-bedc-679ec8127d72",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The C. elegans genome has evolved to couple embryonic transcription with replication through co-localization of origins with enhancers, providing functional advantages such as higher effective copy number for origin-proximal genes and serving as fundamental organizers of gene activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C60-C61, C63, C76 present evolutionary and functional interpretations of the observed spatial organization. While the spatial coupling is well-demonstrated, the evolutionary claims and functional advantages are largely speculative. The inference about enhancer co-localization (C61) is reasonable given the histone modification data, but direct enhancer mapping is not provided. Claim C63 about copy number is logical but not experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "33f4e47c-f633-4106-8615-01b24309a968",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The passage of the replication fork may trigger reactivation of genes repressed during mitosis, preventing replication-transcription conflicts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is purely speculative with no supporting experimental evidence. While the hypothesis is plausible, it represents a proposed mechanism without validation. The claim appropriately uses 'may' to indicate speculation, but no data support this specific mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    },
+    {
+      "id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427",
+      "content_id": "bc02953b-aabc-4fde-87ac-5e6342b2ae36",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims about DNA replication in other organisms, prior methodological work, and C. elegans developmental biology from cited literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9, C20, C31, C36-C38, C55-C57, C66-C67 represent background knowledge appropriately cited from prior literature. These claims establish context and are not primary findings of this study. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:13:35.989388Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "96f36c58-30ad-4265-9453-5f317f97ee09",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "a810c7f9-6edf-47d2-afa9-8a75fc163835",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "c6fc476b-cbcb-452c-bfc8-d768e3026895",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "af3e5b62-9408-4035-8fea-47d0ecf79be5",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "c6c7f3e9-1d96-41d6-bd0e-180b61180dbc",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "1540e5d8-aa77-4e10-b6ef-c97842f9ae64",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "84cd6b7c-4ba6-45e4-ae50-df638dea5e89",
+      "result_id": "c16e695c-3e19-40d4-8ac3-cf0c7790bf34"
+    },
+    {
+      "claim_id": "3e7096f4-1cbc-4244-ac03-ca640954faf0",
+      "result_id": "06eb4215-f809-4d4a-8975-1d09c9711060"
+    },
+    {
+      "claim_id": "f6ee5105-0be3-459f-acf9-15d819b4e8dc",
+      "result_id": "06eb4215-f809-4d4a-8975-1d09c9711060"
+    },
+    {
+      "claim_id": "d4d1e5fd-116f-40af-a21e-032cad8a98a3",
+      "result_id": "f8074d7c-e728-4371-bc33-05214fcf3589"
+    },
+    {
+      "claim_id": "da877f86-cc37-4358-aca9-4c5fda080736",
+      "result_id": "f8074d7c-e728-4371-bc33-05214fcf3589"
+    },
+    {
+      "claim_id": "66141b2f-176b-4a2c-9728-e9021bc9df72",
+      "result_id": "6cc39b4d-1c9d-477d-9142-82bf6789e055"
+    },
+    {
+      "claim_id": "bad3b2f6-0b2a-4b01-971b-077f8bc03b14",
+      "result_id": "6cc39b4d-1c9d-477d-9142-82bf6789e055"
+    },
+    {
+      "claim_id": "0a2d2e0b-3d0d-49e4-9173-70f56322ec6f",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "650457bb-82e1-43c1-9b7e-65635b3a5737",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "c04d26ba-3ab9-4c82-aec4-8ba9e8215b13",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "611b86e2-4724-4fb1-bfc0-2220d0dfc02e",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "74273b79-c75b-4414-95b8-b5ee46e16b9d",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "f27e9c7a-706e-4ddb-afcb-1648d6fe1eea",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "af95e1f7-9826-434c-a750-7e2084e7666a",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "3404a959-0204-4d49-99d3-3132463797b3",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "c5bba114-07c2-4b92-9baf-8cb1b0b53f8b",
+      "result_id": "a9ecf8ea-3347-4366-8f3f-d7a8793c7396"
+    },
+    {
+      "claim_id": "4de379a6-8acd-45fa-a9ce-5ac5122d43c9",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "7f3a4d1f-2a83-4ce5-9daa-630d44affcd5",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "083dfdaa-01b7-470b-899d-228c39f37d70",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "8b3f1a99-9a5e-4669-add1-e74c513d3241",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "74e89d90-e8fb-4a93-ba0c-2c1a2ffd4165",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "c798649b-5bcb-479a-9d42-993260637055",
+      "result_id": "4dbaa963-b745-4996-80cf-f492f1dfe85d"
+    },
+    {
+      "claim_id": "45626707-8dba-4706-bf66-93ceee4d15b5",
+      "result_id": "54b4fbc8-a8bb-4817-8a97-790d1355d420"
+    },
+    {
+      "claim_id": "68afa6bf-dd8e-49e5-a57c-20cc0e9b75d5",
+      "result_id": "54b4fbc8-a8bb-4817-8a97-790d1355d420"
+    },
+    {
+      "claim_id": "373f58e2-b622-41e1-9867-bf93a0c91304",
+      "result_id": "54b4fbc8-a8bb-4817-8a97-790d1355d420"
+    },
+    {
+      "claim_id": "c262d47b-5958-460f-8d16-62c6a613a046",
+      "result_id": "f95f019b-e8a3-4d55-855c-73c76d40f904"
+    },
+    {
+      "claim_id": "376c3873-b1b7-47de-b9d2-09111ebb7e67",
+      "result_id": "f95f019b-e8a3-4d55-855c-73c76d40f904"
+    },
+    {
+      "claim_id": "54cd83ac-ce34-4955-a0f1-21e6eab6e01a",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "6fe7aa81-2638-4be8-b310-fd543bf5bc8a",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "886d7fdb-b447-482a-85b4-f54233eb0652",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "c0abf3cf-6921-4cbd-a62f-229b467153d8",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "14661cb5-0596-4f54-b2da-49094beba9c0",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "515a1259-c8c5-4a4d-8278-3be778580b1e",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "58c4be5c-e973-42c7-9d3f-b18a03629bd4",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "9a397abc-0989-4f05-8089-d3f1e89dbadc",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "ddf47113-170f-4b72-9ee5-c86285735955",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "52eda53d-4267-4dc4-9303-8df3140b73e6",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "b52a34bb-1d33-4eaa-af29-0fa711a94ad7",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "51fa6ed4-ff9d-432f-ac2c-96d23d0178bb",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "b26f5525-5467-4c51-a154-fa797fed87a3",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "5acc6f50-58c9-412c-a6d1-d1211b090327",
+      "result_id": "fcf5fd01-0cd2-4694-a157-ee715a2c7290"
+    },
+    {
+      "claim_id": "42cb1722-3add-42aa-b889-dc94ebc8de3d",
+      "result_id": "d8342515-28d8-4b62-a02a-be368b175cb6"
+    },
+    {
+      "claim_id": "58fba866-4189-437d-93fa-fad0fae7e793",
+      "result_id": "d8342515-28d8-4b62-a02a-be368b175cb6"
+    },
+    {
+      "claim_id": "c8cd9967-6bf2-491b-bac8-bf9e881793e4",
+      "result_id": "d8342515-28d8-4b62-a02a-be368b175cb6"
+    },
+    {
+      "claim_id": "55f04269-7ac0-431d-8390-578be65a0210",
+      "result_id": "d8342515-28d8-4b62-a02a-be368b175cb6"
+    },
+    {
+      "claim_id": "005bbdbc-1925-4724-a4b0-2411eaf4b9d5",
+      "result_id": "910aad29-90d7-4bb9-837b-5968a7d31a43"
+    },
+    {
+      "claim_id": "8bb1fa8e-a0db-4bc5-9b3a-43c4551d812a",
+      "result_id": "910aad29-90d7-4bb9-837b-5968a7d31a43"
+    },
+    {
+      "claim_id": "a61a8394-2fae-48a8-b5a2-91f97aea4d23",
+      "result_id": "c34300e8-18b9-4591-bedc-679ec8127d72"
+    },
+    {
+      "claim_id": "c3a7594b-41a4-431c-aaec-1441b2975ce1",
+      "result_id": "c34300e8-18b9-4591-bedc-679ec8127d72"
+    },
+    {
+      "claim_id": "3a57841f-8fe8-4216-8870-389b1cab1311",
+      "result_id": "c34300e8-18b9-4591-bedc-679ec8127d72"
+    },
+    {
+      "claim_id": "d17d71a1-e951-4075-be99-2f8103990d00",
+      "result_id": "c34300e8-18b9-4591-bedc-679ec8127d72"
+    },
+    {
+      "claim_id": "85d8978c-ad6a-4620-97fb-341d8acaf174",
+      "result_id": "33f4e47c-f633-4106-8615-01b24309a968"
+    },
+    {
+      "claim_id": "7c874575-2849-4288-a692-fc4ca39b8631",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "f4251a4f-f7ef-48ac-ba31-bb1ebbe4f89d",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "1c3bf88d-d5fc-4c85-acff-279101bc4bb7",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "07e35128-74d0-427b-8c0b-67f9d1cc7d80",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "a261d0cf-a004-4a5a-9101-a2aba0e0448c",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "c86b6c5f-dc50-4234-ba32-a54b7d142bde",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "2e295d68-4a36-4036-894e-bed77b102a25",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "3cebd81f-3329-4877-a337-363621b009df",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "4e665a9a-e0c8-4563-9cd6-8d263779fe4d",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "d4d1e5fd-116f-40af-a21e-032cad8a98a3",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "ccdf6282-5b46-4e3b-9fac-18bb280622b2",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "589ff416-a22b-48ae-a947-26da3698c236",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "1700fe27-266f-449b-9bc4-2759fdd91e1e",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "45626707-8dba-4706-bf66-93ceee4d15b5",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "950d8bfe-200d-459d-919b-5a436d5864db",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "e54fb1af-7a2b-4a98-ad93-2f4b7586f385",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "cffd9e39-5b2d-42f1-a9f8-57e8b7898f12",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "4f60bb8e-1713-4157-99fd-083fde01b743",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    },
+    {
+      "claim_id": "f64c924a-9f86-4d14-8be0-c561236adf37",
+      "result_id": "b149bfd2-ef9b-4de5-9a5e-f4d652c2c427"
+    }
+  ],
+  "comparisons": []
+}

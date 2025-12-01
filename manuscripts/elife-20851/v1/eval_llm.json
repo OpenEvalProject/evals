@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C87"
+    ],
+    "result": "The authors developed a high-resolution fluorescence-based imaging system for measuring cardiac function in intact, unanesthetized Drosophila. The system uses tdTomato expression in cardiomyocytes, automated feature detection algorithms, and segmentation to derive diverse cardiac functional parameters. The preparation is highly reproducible (7-11% standard deviation for primary measurements) and stable for at least 2 hours without measurable declines in cardiac performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C29 and C87 collectively describe the development and validation of the imaging methodology. The experimental approach is well-documented with appropriate controls (light intensity, mounting duration), statistical validation (n=68, Kruskal-Wallis ANOVA), and supporting figures. The reproducibility metrics and stability data provide strong evidence for the robustness of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C88"
+    ],
+    "result": "In wild-type Drosophila, cardiac function remains remarkably stable up to 30 days of age, with age-related decline manifesting primarily as diastolic dysfunction while preserving contractile performance. The most striking change is increased latency in transitioning from systole to diastole, reflecting decreased velocity of relaxation rather than contraction. Using 146 flies across six ages, approximately 65,000 heartbeats were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 and C88 describe the aging phenotype in wild-type flies with strong statistical support (Kruskal-Wallis ANOVA, R\u00b2 values of 0.73-0.84 for key parameters). The data show preserved spatial parameters (stroke volume, chamber diameter, fractional shortening) while temporal parameters decline, supporting the conclusion of preferential diastolic dysfunction. Sample sizes are adequate and the analysis is comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors identified sandman (CG8713), a K2P channel subunit with enriched cardiac expression, as essential for cardiac function in aged flies. At 50 days of age, sandman mutants display marked inability to transition from systole to diastole. The phenotype is heart-autonomous and specifically due to loss of sandman, as demonstrated by cardiomyocyte-specific rescue using R94C02::Gal4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 establish sandman's role through multiple lines of evidence: prior transcriptional profiling, RT-PCR confirmation, genetic deletion, phenotypic characterization, and tissue-specific rescue. The rescue experiment (C53) provides strong evidence for heart autonomy and specificity. However, the deletion also removes CG8712, though rescue experiments suggest this is not the causative gene.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Knockdown of galene (CG9194), another heart-expressed K2P subunit, leads to marked cardiac dysfunction similar to sandman mutants. Heterozygous animals expressing dsRNA targeting galene show dispersion in fractional shortening, significant reduction in cardiac output, prolongation of systolic interval, and difficulty transitioning from systole to diastole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate galene's cardiac role through RNAi knockdown experiments with appropriate controls (tinC\u03944::Gal4 driver, deficiency line). The phenotypic similarity to sandman mutants is well-documented with supporting figures. However, RNAi experiments have inherent limitations regarding specificity and completeness of knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The sandman cardiac phenotype displays striking age-dependence, with minor defects at 10 days progressing to severe dysfunction by 30 days and ~100-fold decline in cardiac output by 50 days. This progression can be rescued by cardiomyocyte-specific but not body wall muscle-specific expression of sandman cDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 document the age-dependent progression with appropriate sample sizes (n=7-27 per age/genotype) and statistical analysis. The tissue-specific rescue experiments (C67) provide strong evidence for heart autonomy. The data are well-fit by exponential and sigmoidal regression models (R\u00b2=0.64-0.85), supporting the quantitative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Sandman and galene form a heteromeric potassium channel in vitro. Neither subunit alone produces appreciable conductance in CHO cells, but co-expression results in large outward currents at depolarized potentials. The conductance is highly selective for potassium and displays outward rectification partially due to divalent cation block. The functional co-assembly is selective, as closely related K2P subunits (CG1688, CG10864) do not form functional heteromers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 and C74 describe the electrophysiological characterization with appropriate controls (individual subunits, related K2P subunits) and adequate sample sizes (n=5-11 cells per condition). The heteromeric complementation is clearly demonstrated, and selectivity experiments with varying K+ concentrations support the potassium selectivity claim. The rectification properties are well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The sandman phenotype reflects active calcium-dependent contraction rather than structural remodeling. EGTA and valinomycin injections both terminate persistent contractions in 110-day-old sandman mutants, establishing that the phenotype depends on intracellular potassium concentration and likely reflects failure to fully repolarize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide pharmacological evidence for the mechanism underlying the sandman phenotype. The experiments with EGTA (calcium chelator) and valinomycin (potassium ionophore) are well-designed to distinguish between structural and functional defects. However, the sample size is small (n=3), which limits confidence in the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In sandman mutants, individual sarcomeres exhibit fibrillatory dynamics during extended systoles, contracting and relaxing out of phase with one another, unlike wild-type where sarcomeres contract in unison. This suggests sufficient local ATP availability and may reflect asynchronous calcium cycling in the absence of coherent action potential cycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 describe sarcomere dynamics using \u03b1-actinin GFP-trap imaging. The observation of dyssynchronous sarcomere contraction in sandman mutants (C84) is well-documented with video evidence. However, C85 (ATP availability) and C86 (calcium cycling mechanism) are inferences rather than direct measurements. The speculation about calcium cycling (C86) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C107",
+      "C108"
+    ],
+    "result": "The preferential diastolic decline with preserved contractile performance observed in aging Drosophila is similar to an increasing fraction of human heart failure cases (HFpEF), suggesting conserved susceptibility to aging-related declines in relaxation processes and potentially a conserved active mechanism in cardiomyocytes across phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41 and C107 are well-supported by the experimental data and citations. However, C42 and C108 make broader evolutionary claims about conserved mechanisms that are speculative. While the phenotypic similarity is striking, the mechanistic conservation requires additional comparative studies. The claim of a \"conserved active mechanism\" (C108) is particularly speculative without direct evidence from other species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C118"
+    ],
+    "result": "The throughput and capabilities of this in vivo assay facilitate identification of novel cardiac genes and provide an opportunity for exploring cardiac physiology, aging, and disease. The acute dispensability of heart pumping in Drosophila under laboratory conditions enables unique studies not possible in vertebrate models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 and C118 are supported by the demonstrated capabilities of the system and the sandman/galene findings. The observation that sandman mutants can survive with severely compromised cardiac function (C91) is well-documented. However, C118 is somewhat speculative about future applications. The claims about throughput (C89) are supported by the large number of heartbeats analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Sandman plays a central role in two biological oscillations: organismal sleep-wakefulness and cardiac contraction-relaxation during aging. In sleep regulation, sandman-dependent currents are upregulated by dopamine via pertussis toxin-sensitive G-protein signaling, reducing excitability of sleep-promoting neurons. In the heart, loss of sandman leads to age-dependent degeneration of the contraction-relaxation balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 integrate findings from this study with prior work on sandman in sleep regulation (Pimentel et al., 2016). The cardiac findings (C97) are well-supported by the current data. The sleep regulation mechanism (C95-C96) is appropriately attributed to prior work. The parallel between the two oscillatory systems is interesting but the mechanistic connection remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Young hearts possess abundant repolarizing reserve that declines with age, leaving hearts susceptible to late-onset dysrhythmias. The age-dependent sandman phenotype and pharmacological results implicate defects in action potential repolarization, suggesting that progressive loss of repolarization reserve may be a conserved feature of cardiac aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 synthesize the experimental findings with established knowledge about cardiac repolarization reserve. The age-dependent progression of the sandman phenotype (C102) is well-documented. The pharmacological evidence (C103) supports the repolarization defect interpretation. However, C104 is somewhat speculative about conservation across species without direct comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Prior research has established that many biophysical properties of the heart are altered during aging, including structural changes (myocardial fibrosis, arterial stiffening) and functional changes (action potential duration, calcium handling). Previous Drosophila studies using in situ preparations demonstrated progressive declines in cardiac rhythmicity during the first five weeks of life.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30-C32 accurately summarize prior research with appropriate citations. These claims provide important context for the current study. The contrast between prior in situ findings (C32) and the current in vivo results (C33) is notable and appropriately discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Outward potassium currents mediating repolarization are essential for terminating systole and suppressing dysrhythmias in cardiomyocytes, and progressive loss of these currents is a hallmark of failing hearts. Previous work has implicated KCNQ and ORK1 in Drosophila cardiac repolarization, while TASK-1 has been implicated in human atrial fibrillation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 accurately summarize prior research on potassium channels in cardiac function with appropriate citations. These claims provide important background for understanding the significance of the sandman/galene findings. The citations appear accurate and relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Cardiomyocytes likely originated in Bilateria with conserved transcription factors (tinman/Nkx2.5, hand, mef2) linking Protostome and Deuterostome heart evolution. Despite having an open circulatory system with periodic flow reversal and simplified architecture, Drosophila has proven highly useful for studying cardiac development and physiology, revealing conserved mechanisms with mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately summarize the evolutionary and comparative context for using Drosophila as a cardiac model, with appropriate citations. These claims establish the rationale for the model system. The characterization of Drosophila as a \"uniquely high-throughput 'pioneer' genetic model\" (C12) is reasonable given the demonstrated capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Outward rectification is a conserved feature of many K2P channel subtypes. Heteromultimerization is a well-established mechanism for increasing electrophysiological diversity in both tetrameric and dimeric K2P channels. Several K2P subtypes are functionally silent as homodimers in vitro, suggesting that heteromeric complementation may be of considerable significance to K2P channel physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75, and C76 accurately summarize prior research on K2P channels with appropriate citations. Claim C77 is somewhat speculative but reasonable given the context. These claims provide important background for interpreting the sandman/galene heteromeric channel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Heart failure with preserved ejection fraction (HFpEF) is an increasing clinical problem with complex pathophysiology involving cardiomyocyte dysfunction, structural remodeling, and vascular resistance. Mechanical factors (Titin phosphorylation) and electrophysiological remodeling (action potential duration changes, potassium channel downregulation) contribute to the phenotype. These observations suggest that contractile function may be adaptively regulated by conserved mechanisms, with diastolic decline and dysrhythmia susceptibility as unintended side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C114 accurately summarize prior clinical and experimental research on HFpEF and cardiac remodeling with appropriate citations. Claims C115-C116 are more speculative, proposing that adaptive regulation has maladaptive consequences. While this is a reasonable hypothesis supported by the cited literature and current findings, it remains somewhat speculative without direct mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C92",
+      "C93"
+    ],
+    "result": "Drosophila represents the only model organism where heart pumping is acutely dispensable for adult survival, while heart function is essential for all adult vertebrates. This difference likely originates from decoupling of gas exchange and heart function in insects, where sufficient gas exchange can occur via local diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C92 are supported by the experimental observations and cited literature. Claim C93 provides a reasonable physiological explanation for the difference. However, C78's claim of being \"the only model organism\" is strong and would benefit from more comprehensive comparative analysis. The zebrafish exception mentioned in C92 is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Age-dependent cardiomyocyte membrane properties may play a key role in maintaining cardiac function into old age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 is a reasonable inference from the experimental results showing that the sandman/galene heteromeric channel is critical for maintaining cardiac function during aging. The claim is appropriately tentative (\"may play a key role\") and supported by the demonstrated age-dependent phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "During an average human life span, the heart will undergo 2.8 billion cycles of contraction and relaxation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C1 presents a specific quantitative calculation about human cardiac cycles. While this is a reasonable calculation based on average heart rate (~70 bpm) and lifespan (~75 years), the exact number depends on assumptions about average heart rate and lifespan. The claim provides context but is not central to the study's findings.",
+    "result_type": "MINOR"
+  }
+]

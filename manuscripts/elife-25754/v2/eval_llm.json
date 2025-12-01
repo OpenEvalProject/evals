@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C89",
+      "C90"
+    ],
+    "result": "\u0394N-VAT (VAT with N-terminal domain removed) unfolds other \u0394N-VAT complexes as substrate in an ATP-dependent manner, with degradation requiring both ATP and the 20S proteasome. Since the 20S proteasome does not hydrolyze ATP, this demonstrates that \u0394N-VAT must unfold other \u0394N-VAT copies via ATP hydrolysis prior to proteasomal degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10, C12, C89, and C90 are directly supported by experimental data in Figure 1a-c showing ATP- and proteasome-dependent degradation. Claim C11 is supported by citation. The logical inference in C12 connecting these observations is sound given that proteasomes don't hydrolyze ATP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "A cryo-EM structure of the six-fold symmetric stacked-ring conformation of \u0394N-VAT bound to ATP\u03b3S was determined at 3.9 \u00c5 resolution, representing a substantial improvement over the previous 7.8 \u00c5 structure of full-length VAT. This improvement is attributed to removal of the NTDs making the complex more homogeneous, use of gold grids, and preparation of crowded specimens, enabling construction of an atomic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C27-C29 report direct structural data with appropriate resolution metrics and FSC validation. Claims C24-C26 provide reasonable methodological explanations for the improved resolution, though C24 and C26 involve some inference and C25 is speculative. Overall the structural determination is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C32",
+      "C33"
+    ],
+    "result": "In the six-fold symmetric structure, both NBD1 and NBD2 have strong density for ATP\u03b3S in their nucleotide-binding pockets, indicating VAT adopts a rigid symmetric conformation when fully loaded with nucleotide. The pore loops form openings of ~28 \u00c5 (NBD1 pore loop 1) and ~18 \u00c5 (NBD1 pore loop 2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 report direct observations from the cryo-EM density map with specific measurements. Claim C35 is a reasonable inference from the strong nucleotide density and map quality. The measurements and structural observations are clearly documented in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41"
+    ],
+    "result": "Unsupervised 3D classification identified a second conformation (~15% of particles) representing a substrate-engaged state, refined to ~4.8 \u00c5 resolution. This structure shows a \u0394N-VAT complex in the process of unfolding a neighboring \u0394N-VAT complex, with clear density for substrate protein in an extended conformation running through the central pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 report computational analysis results with appropriate metrics. Claims C39 and C41 describe direct observations from the cryo-EM density shown in Figure 3. The interpretation that this represents active unfolding (C39) is reasonable given the structural features observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C58"
+    ],
+    "result": "Substrate binding breaks the six-fold symmetry of VAT, with five of six subunits constricting into a tight helix that grips ~80 \u00c5 (~12-14 residues) of unfolded protein through their pore loops. A 'seam' subunit joins the helix but does not interact with substrate and has distinct protomer-protomer contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C45-C49, and C58 are directly supported by structural observations in the cryo-EM maps shown in Figure 3. The measurements of substrate length and the identification of the seam subunit are clearly documented. The asymmetric arrangement is a key structural finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C80",
+      "C81"
+    ],
+    "result": "The structure suggests a processive hand-over-hand unfolding mechanism where each VAT subunit releases substrate in turn before re-engaging further along the target protein. Each protomer pulls ~13 \u00c5 (~2 residues) through the pore, with ATP hydrolysis occurring sequentially around the ring to provide directionality. The two NBDs of each protomer move in unison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 and C61-C66 propose a mechanistic model based on structural observations. While the mechanism itself is inferred (C6, C61-C65 are INFERENCE), it is well-supported by the structural data showing the helical arrangement, seam subunit, and substrate positioning. Claims C80-C81 about NBD coordination are reasonable inferences from the similar interactions observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C70"
+    ],
+    "result": "The hand-over-hand model predicts that a single inactivated subunit would severely affect ATP hydrolysis and unfolding. Experimental data with mixed wild-type and catalytically-dead VAT subunits show ATPase and unfolding activities decrease following an A=(1-r)^6 curve, consistent with the proposed sequential mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a logical prediction from the proposed mechanism. Claim C70 reports experimental data (Figure 4c-d) that closely matches the predicted curve, providing strong support for the sequential hand-over-hand model. The agreement between prediction and experiment is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The slight elevation of activity above the A=(1-r)^6 curve suggests an 'escape' mechanism allowing stalled VAT complexes to disengage and re-engage with substrate. This would allow functional subunits to continue ATP hydrolysis at reduced rates and has important implications for releasing stalled substrates, minimizing loss of active enzyme and increasing catalytic efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C75 propose an escape mechanism to explain the slight deviation from the predicted curve. While this is a reasonable interpretation, the evidence is indirect (a small deviation from the theoretical curve). The functional implications (C74-C75) are logical but speculative. Additional experiments would be needed to definitively demonstrate an escape mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Previous ATPase measurements showed Michaelis-Menten kinetics with little cooperativity, inconsistent with simultaneous hydrolysis at all sites but consistent with the proposed hand-over-hand mechanism. The sequential model is also consistent with the observed structural asymmetry and coupling between the two NBDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 cites previous kinetic data. Claims C77-C78 make reasonable inferences connecting this prior data to the current structural findings and proposed mechanism. Claim C79 cites evidence for NBD coupling. The integration of prior kinetic data with current structural observations strengthens the mechanistic model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The transition from stacked-ring to substrate-engaged conformation involves rearrangement of NBD1 relative to NBD2 and rotation of the NBD1 ring against NBD2, with the rings displaced horizontally and the central pore tilted ~15\u00b0. The stacked-ring (ATP\u03b3S-bound) and split-ring (ADP-bound) states likely correspond to pre- and post-unfolding conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe structural observations from comparing the two conformations, with specific measurements (C55). Claim C57 is a reasonable inference based on the observation that only the asymmetric state has substrate bound. The conformational changes are well-documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The seam subunit architecture in VAT resembles recent 26S proteasome structures and AAA+ DNA helicases (E1, Rho, MCM) that use helical gripping states with five of six protomers engaging substrate. This suggests the mechanism may operate broadly in AAA+ unfoldases, with asymmetry playing an important functional role even in homo-oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 cite structural similarities to other systems. Claims C84-C86 extrapolate the findings to other AAA+ unfoldases based on structural similarity between NBD rings. While the extrapolation involves inference, it is reasonable given the documented similarities and represents an appropriate discussion of broader implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21"
+    ],
+    "result": "\u0394N-VAT with bound ADP assembles into long fibrils composed of helical split-ring structures, while with ATP\u03b3S it forms a mixture of fibrils and six-fold symmetric single particles. The ADP-induced fibrils were not observed with full-length VAT, possibly due to steric hindrance from the NTDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C21 report direct observations from micrographs (Figure 1d-e). Claims C17-C18 provide structural interpretation of the fibrils based on power spectra analysis. Claim C19 is speculative but reasonable. The observations are clearly documented though the fibril structure interpretation is somewhat indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors acknowledge potential limitations: formation of the substrate-engaged state may depend on slow ATP\u03b3S hydrolysis, conformations may be perturbed by NTD presence in full-length VAT, and conformations could differ under physiological nucleotide conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C82, and C83 are appropriately cautious statements about potential limitations of the experimental system. These represent good scientific practice in acknowledging that the truncated construct and non-physiological nucleotide analog may not fully recapitulate native behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "VAT is the Thermoplasma acidophilum homologue of CDC48/p97, works with the proteasome to degrade proteins, and is an 83 kDa protein with NTD and two AAA+ domains (NBD1, NBD2) that assembles into a 500 kDa hexamer. Truncation removing the NTD (\u0394N-VAT) produces higher ATPase and unfoldase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C7-C8 state established background knowledge appropriately supported by citations and figures. Claim C9 cites previous work on the \u0394N-VAT construct. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C20",
+      "C30",
+      "C31"
+    ],
+    "result": "Background information: VAT recognizes substrates with unstructured termini without requiring specific sequences, previously adopted split-ring (ADP) and stacked-ring (ATP\u03b3S) conformations, resembles p97 structures, and has conserved pore loops essential for substrate unfolding like all AAA+ unfoldases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C20, C30-C31 cite previous work to establish context. These are appropriately referenced background claims that set up the current study but are not novel findings reported here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Substrate density above NBD1 and between NBD1/NBD2 is weak and fragmented, suggesting flexibility of substrate outside the active enzyme and in the inter-domain gap, likely due to lack of tension in the observed state. The helical pore loop arrangement maximizes contact area with substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C51 report observations from the density map. Claims C44, C50, and C52 provide reasonable interpretations of these observations. The weak density is appropriately interpreted as flexibility, and the lack of tension explanation (C52) is speculative but plausible given the static nature of the structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The substrate-bound conformation showed a strong preference for particles oriented with long-axes parallel to the specimen support, possibly due to the elongated shape of the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 reports an observation from the orientation distribution (Figure 2\u2014figure supplement 1d) with a reasonable explanation. This is a technical observation about specimen behavior that may affect data quality but is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Data availability: Electron microscopy density maps and atomic models are deposited in public databases (EMDB: EMD-8658, EMD-8659; PDB: 5VC7, 5VCA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are data availability statements that are verifiable and represent appropriate data sharing practices. These are administrative rather than scientific claims.",
+    "result_type": "MINOR"
+  }
+]

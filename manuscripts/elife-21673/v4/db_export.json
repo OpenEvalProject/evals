@@ -1,0 +1,1582 @@
+{
+  "submission": {
+    "id": "006848cb-bbc4-47ff-8836-814e96e0978a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:28:43.532840Z",
+    "updated_at": "2025-11-30T22:28:43.532840Z"
+  },
+  "content": [
+    {
+      "id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "submission_id": "006848cb-bbc4-47ff-8836-814e96e0978a",
+      "content_type": "manuscript",
+      "content_text": "# Nomadic-colonial life strategies enable paradoxical survival and growth despite habitat destruction\n\n## Authors\n\n- Zhi Xuan Tan<sup>1</sup>\n- Kang Hao Cheong<sup>2</sup> ([ORCID: 0000-0002-4475-5451](https://orcid.org/0000-0002-4475-5451)) \u2020\n\n### Affiliations\n\n1. Yale University New Haven United States\n2. Engineering Cluster, Singapore Institute of Technology Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nOrganisms often exhibit behavioral or phenotypic diversity to improve population fitness in the face of environmental variability. When each behavior or phenotype is individually maladaptive, alternating between these losing strategies can counter-intuitively result in population persistence\u2013an outcome similar to the Parrondo\u2019s paradox. Instead of the capital or history dependence that characterize traditional Parrondo games, most ecological models which exhibit such paradoxical behavior depend on the presence of exogenous environmental variation. Here we present a population model that exhibits Parrondo\u2019s paradox through capital and history-dependent dynamics. Two sub-populations comprise our model: nomads, who live independently without competition or cooperation, and colonists, who engage in competition, cooperation, and long-term habitat destruction. Nomads and colonists may alternate behaviors in response to changes in the colonial habitat. Even when nomadism and colonialism individually lead to extinction, switching between these strategies at the appropriate moments can paradoxically enable both population persistence and long-term growth.\n\n## Introduction\n\nBehavioral adaptation and phenotypic diversity are evolutionary meta-strategies that can improve a population\u2019s fitness in the presence of environmental variability. When behaviors or phenotypes are sufficiently distinct, a population can be understood as consisting of multiple sub-populations, each following its own strategy. Counter-intuitively, even when each sub-population follows a losing strategy that will cause it to go extinct in the long-run, alternating or reallocating organisms between these losing strategies under certain conditions can result in meta-population persistence, and hence, an overall strategy that wins (Williams and Hastings, 2011). Some examples include random phase variation (RPV) in bacteria across multiple losing phenotypes (Wolf et al., 2005; Kussell and Leibler, 2005; Acar et al., 2008), as well as the persistence of populations that migrate among sink habitats only (Jansen and Yoshimura, 1998; Roy et al., 2005; Bena\u00efm and\u00a0Schreiber, 2009).\n\nThese counter-intuitive phenomena are reminiscent of Parrondo\u2019s paradox, which states that there are losing games of chance which can be combined to produce a winning strategy (Harmer and Abbott, 1999). The existence of a winning combination relies on the fact that at least one of the losing Parrondo games exhibits either capital-dependence (dependence upon the current amount of capital, an ecological analog of which is population size) or history-dependence (dependence upon the past history of wins or losses, or in an ecological context, growth and decline) (Parrondo et al., 2000; Harmer and Abbott, 2002). There have been many studies exploring the paradox (Cheong and Soo, 2013; Soo and Cheong, 2013, Soo and Cheong, 2014; Abbott, 2010; Flitney and Abbott, 2003; Harmer et al., 2001), including a multi-agent Parrondo\u2019s model based on complex networks (Ye et al., 2016) and also implications to evolutionary biology\u00a0(Cheong et al., 2016; Reed, 2007; Wolf et al., 2005; Williams and Hastings, 2011). However, many biological studies which have drawn a connection to Parrondo games do not necessarily utilize capital-dependence or history-dependence in their models (Williams and Hastings, 2011). Furthermore, models of reversal behavior in ecological settings generally rely upon the presence of exogenous environmental variation (Jansen and Yoshimura, 1998; Roy et al., 2005; Bena\u00efm and\u00a0Schreiber, 2009; Wolf et al., 2005; Kussell and Leibler, 2005; Acar et al., 2008; Levine and Rees, 2004). Without exogenous variation, the paradoxes do not occur. The broader applicability of Parrondo\u2019s paradox to ecological systems thus remains under-explored.\n\nThis lacuna remains despite the abundance of biological examples that exhibit history-dependent dynamics. The fitness of alleles may depend on the presence of genetic factors and epigenetic factors in previous generations (Reed, 2007). More generally, the fitness of any one gene can depend on the composition of other genes already present in a population, enabling the evolution of complex adaptations like multicellularity through ratcheting mechanisms (Libby and Ratcliff, 2014). Such mechanisms have recently been shown to help stabilize these complex adaptations (Libby et al., 2016). In ecological contexts, the storage effect can ensure that gains previously made in good years can promote persistence in less favorable times (Warner and Chesson, 1985; Levine and Rees, 2004). Species-induced habitat destruction or resource production can also have time-delayed effects on population growth, resulting in non-linear phenomena like punctuated evolution (Yukalov et al., 2009, Yukalov et al., 2014).\n\nIn this paper, we present a biologically feasible population model which exhibits counter-intuitive reversal behavior due to the presence of history-dependent and capital-dependent dynamics. Unlike most other studies, these dynamics do not rely upon the assumption of exogenous environmental variation. In our model, we consider a population that exists in two behaviorally distinct forms: as nomads, and as colonists. Numerous organisms exhibit analogous behavioral diversity, from slime moulds (amoeba vs. plasmodia) (Baldauf and Doolittle, 1997) and dimorphic fungi (yeast vs. hyphae) (Bastidas and Heitman, 2009) to jellyfish (medusae vs. polyps) (Lucas et al., 2012) and human beings. One model organism which exhibits this sort of behavior, to which our study might apply, is the amoeba Dictyostelium discoideum (Annesley and Fisher, 2009).\n\nNomads live relatively independently, and thus\u00a0are unaffected by either competition or co-operation. Under poor environmental conditions, they are subject to steady extinction. Colonists live in close proximity, and are thus subject to both competitive and co-operative effects. They may also deplete the resources of the habitat they reside in over time, resulting in long-term death. However, if these organisms are endowed with sensors that inform them of both population density and the state of the colonial habitat, they can use this information to switch from one behavior to another. Significantly, we find that an appropriate switching strategy paradoxically enables both population persistence and long-term growth \u2013 an ecological Parrondo\u2019s paradox.\n\n### Population model\n\nTwo sub-populations comprise our model: the nomadic organisms, and the colonial ones. In a\u00a0similar vein to habitat-patch models, organisms that exist in multiple sub-populations can be modelled as follows:\n\n$$\n\\frac{d\u2062n_{i}}{d\u2062t}=g_{i}\u2062(n_{i})+\\sumjs_{i\u2062j}\u2062n_{j}-\\sumjs_{j\u2062i}\u2062n_{i}\n$$\n\nwhere $n_{i}$ is the size of sub-population $i$, $g_{i}$ is the function describing the growth rate of $n_{i}$ in isolation, and $s_{i\u2062j}$ is the rate of switching to sub-population $i$ from sub-population $j$. Population sizes are assumed to be large enough that Equation 1 adequately approximates the underlying stochasticity.\n\n### Nomadism\n\nLet $n_{1}$ be the nomadic population size. In the absence of behavioral switching, the nomadic growth rate is given by\n\n$$\ng_{1}\u2062(n_{1})=-r_{1}\u2062n_{1}\n$$\n\nwhere $r_{1}$ is the nomadic growth constant. Nomadism is modelled as a losing strategy by setting $\u2212r_{1}\u00a0<\u00a00$, such that $n_{1}$ decays with time. In the context of Parrondo\u2019s paradox, nomadism corresponds to the \u2018agitating\u2019 strategy, or Game A. Importantly, competition among nomads, as well as between nomads and colonists, is taken to be insignificant, due to the independence of a nomadic lifestyle.\n\n### Colonialism\n\nColonial population dynamics will be modelled by the well-known logistic equation, with carrying capacity $K$, but with two important modifications.\n\nFirstly, the Allee effect is taken into account. This serves two roles: it captures the cooperative effects that occur among colonial organisms, and it ensures that the growth rate is negative when the population falls below a critical capacity $A$. Let $n_{2}$ be the colonial population size. In the absence of behavioral switching, the colonial growth rate is given by\n\n$$\ng_{2}(n_{2})=r_{2}n_{2}(\\frac{n_{2}}{min(A,K)}\u22121)(1\u2212\\frac{n_{2}}{K})\n$$\n\nwhere $r_{2}$ is the colonial growth constant. Setting $r_{2}>0$, we have a positive growth rate when $A<n_{2}<K$, and a negative growth rate otherwise. The $min(A,K)$ term ensures that when $K<A$, $g_{2}$ is always zero or negative, as would be expected.\n\nSecondly, the carrying capacity $K$ changes at a rate dependent upon the colonial population size, $n_{2}$, accounting for the destruction of environmental resources over the long run.\n\nThe rate of change of $K$ with respect to $t$\u00a0is given by\n\n$$\n\\frac{d\u2062K}{d\u2062t}=\\alpha-\\beta\u2062n_{2}\n$$\n\nwhere $\\alpha>0$ is the default growth rate of $K$, and $\\beta>0$ is the per-organism rate of habitat destruction. An alternative interpretation of this equation is that $K$, the short-term carrying capacity, is dependent on some essential nutrient in the environment, and that this nutrient is slowly depleted over time at a rate proportional to $\\beta\u2062n_{2}$.\n\nLet $n^{*}=\\frac{\\alpha}{\\beta}$, the critical population level at which no habitat destruction occurs. $\\frac{d\u2062K}{d\u2062t}$ is zero when $n_{2}=n^{*}$, positive when $n_{2}<n^{\u2217}$, and negative when $n_{2}>n^{\u2217}$.\u00a0$n^{\u2217}$\u00a0can thus also be interpreted as the long-term carrying capacity. Clearly, if the long-term carrying capacity $n^{*}<A$, the only stable point of the system becomes $n_{2}=0$. Under this condition, colonialism is a losing strategy as well.\n\nNote that $g_{2}$ increases as $K$ increases, and that $K$ increases more quickly as $n_{2}$ decreases. In the context of Parrondo\u2019s paradox, colonialism can thus serve as a \u2018ratcheting\u2019 strategy, or Game B, because the rate of growth is implicitly dependent upon the colonial population in the past. Another way of understanding the \u2018ratcheting\u2019 behavior is through the lens of positive reactivity (Williams and Hastings, 2011; Hastings, 2001, Hastings, 2004). In the short-term, $n_{2}=A$ is a positively reactive equilibrium, because small upwards perturbations of $n_{2}$ away from $A$ will result in rapid growth towards $K$ before a slow decrease back down towards $A$.\n\n### Behavioral switching\n\nOrganisms are able to detect the amount of environmental resources available to them, and by proxy, the carrying capacity of the population. Thus, they can undergo behavioral changes in response to the current carrying capacity.\n\nHere, we model organisms that switch to nomadic behavior from colonial behavior when the carrying capacity is low ($K\u00a0<\u00a0L_{1}$), and switch to colonial behavior from nomadic behavior when the carrying capacity is high ($K\u00a0>\u00a0L_{2}$), where $L_{1}\\leqL_{2}$ are the switching levels. Let $r_{s}\u00a0>\u00a00$ be the switching constant. Using the notation from Equation 1, switching rates can then be expressed as follows:\n\n$$\ns_{12}={r_{s}if\u00a0K\u00a0<\u00a0L_{1}0otherwises_{21}={r_{s}if\u00a0K\u00a0>\u00a0L_{2}0otherwise\n$$\n\nA variety of mechanisms might trigger this switching behavior in biological systems. For example, since the nomadic organisms are highly mobile, they could frequently re-enter their original colonial habitat after leaving it, and thus be able to detect whether resource levels are high enough for recolonization. It should also be noted that the decision to switch need not always be \u2018rational\u2019 (i.e. result in a higher growth rate) for each individual. Switching behavior could be genetically programmed, such that \u2018involuntary\u2019 individual sacrifice ends up promoting the long-term survival of the species.\n\n### Reduced parameters\n\nWithout loss of generality, we scale all parameters such that $\\alpha=\\beta=1$. Equation 4 thus becomes:\n\n$$\n\\frac{d\u2062K}{d\u2062t}=1-n_{2}\n$$\n\nHence, $n^{*}=\\frac{\\alpha}{\\beta}=1$. All other population sizes and capacities can then be understood as ratios with respect to this critical population size. Additionally, since $\\beta=1$, $r_{1}$, $r_{2}$ and $r_{s}$ can be understood as ratios to the rate of habitat destruction. For example, if $r_{2}\u226b1$, this means that colonial growth occurs much faster than habitat destruction. Time-scale separation between the population growth dynamics and the habitat change dynamics can thus be achieved by setting $r_{1},r_{2}\u226b1$. Similarly, the\u00a0separation between the behavioral switching dynamics and the population growth dynamics can be achieved by setting $r_{s}\u226br_{1},r_{2}$.\n\n## Results\n\nSimulation results revealed population dynamics that could be categorized into the following regimes:\n\nImportantly, there were conditions under which both sub-populations would go extinct in the absence of behavioral switching (regime 1a), but collectively survive if behavioral switching was allowed (regime 2b), thereby exhibiting Parrondo\u2019s paradox. The following sections describe the listed regimes in greater detail, with a focus upon the regimes involved in the paradox. Figures generated via numerical simulation are provided as examples of behavior within each regime.\n\n### Extinction in the absence of switching\n\nAs described earlier, both nomadic and colonial behaviors can be modelled as losing strategies given the appropriate parameters. Simulations across a range of parameters elucidated the conditions which resulted in extinction for both strategies. Figure 1a shows an example when both strategies are losing, resulting in extinction, while Figure 1b shows an example where only the colonial sub-population survives.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig1-v4.jpg)\n\n**Figure 1.:** Initial conditions for both are $n_{1}=2$, $n_{2}=2$, $K=5$. Shared parameters are $r_{s}=0$, $r_{1}=1$, $r_{2}=10$. For (a), $A=1.001$. For (b), $A=0.5$.\n\nIt is clear from Equation 2 that the growth rate of the nomadic population $n_{1}$ is always negative, because of the restriction that $r_{1}\u00a0>\u00a00$. Hence, nomadism is always a losing strategy.\n\nHowever, the conditions under which colonial behavior is a losing strategy are more complicated. Complex dynamics occur when the critical capacity $A$ is just below 1 that can result in either survival or extinction. Nonetheless, it can be shown that when $A\u00a0>\u00a01$, extinction occurs (as in Figure 1a), and that survival is only possible when $A$ is significantly less than 1 (as in Figure 1b). That is:\n\n$$\n(7)A>1(colonial\u00a0extinction\u00a0guaranteed)(8)A<1(colonial\u00a0survival\u00a0possible\u00a0)\n$$\n\nThe intuition behind this is straightforward. Suppose that initially, $A\u00a0<\u00a0n_{2}\u00a0<\u00a0K$, so that the growth rate is positive. When $A\u00a0<\u00a01$, the colonial population $n_{2}$ increases until it reaches the carrying capacity $K$, following which they converge in tandem until stabilizing at the critical population size, $n_{2}=K=1$. However, when $A\u00a0>\u00a01$, $n_{2}=K=1$ is no longer a stable equilibrium, since $dn_{2}/dt\u00a0<\u00a00$ when $n_{2}\u00a0<\u00a0A$, resulting in the eventual extinction of the population. For a formal proof, refer to Theorem A.3.\n\n### Survival through periodic alternation\n\nWe now restrict our analysis to the case where $A\u00a0>\u00a01$. Under this condition, both nomadism (Game A) and colonialism (Game B) are losing strategies when played individually. Paradoxically, it is possible to combine these two strategies through behavioral switching such that population survival is ensured, thereby producing an overall strategy that wins.\n\nSimulation results over a range of parameters have predicted this paradoxical behavior, and also elucidated the conditions under which it occurs. Figure 2a is a typical example where the population becomes extinct, even though it undergoes behavioral switching, while Figure 2b is a typical example where behavioral switching ensures population survival.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig2-v4.jpg)\n\n**Figure 2.:** Initial conditions for both are $n_{1}=2$, $n_{2}=2$, $K=5$. Shared parameters are $r_{s}=1000$, $r_{1}=1$, $r_{2}=10$. For (a), $L_{1}=3$, $L_{2}=4.5$. For (b), $L_{1}=3$, $L_{2}=4$.\n\nConceptually, this paradoxical survival is possible because the colonial strategy, or Game B, is history-dependent. In particular, the colonial growth rate $d\u2062n_{2}/d\u2062t$ is dependent upon the carrying capacity $K$, which in turn is dependent upon previous levels of $n_{2}$. Behavioral switching to a nomadic strategy decreases the colonial population size, allowing the resources in the colonial environment, represented by $K$, to recover. Switching back to a colonial strategy then allows the population to take advantage of the newly generated resources. Because switching occurs periodically, as can be seen in Figure 2b, it should be noted that the organisms need not even detect the amount of resources present in the environment to implement this strategy. A biological clock would be sufficient to trigger switching behavior.\n\nThe exact process by which survival is ensured can be understood by analysing the simulation results in detail. In the nomadic phase, the colonial population $n_{2}$ is close to zero, the nomadic population $n_{1}$ undergoes slow exponential decay, and the carrying capacity $K$ undergoes slow linear growth. $K$ increases until it reaches $L_{2}$, which triggers the switch to colonial behavior.\n\nThe population thus enters the colonial phase. If the colonial population $n_{2}$ exceeds the critical capacity $A$ at this point, then $n_{2}$ will grow until it slightly exceeds the carrying capacity $K$. Subsequently, $n_{2}$ decreases in the tandem with $K$ until $K$ drops to $L_{1}$, triggering the switch back to the nomadic phase. However, if $n_{2}\u00a0<\u00a0A$ when the colonial phase begins, the colonial population goes extinct, as can be seen in Figure 2a. Hence, a basic condition for survival is that $n_{2}\\geqA$ at the start of each colonial phase.\n\nThis implies that, by the end of the nomadic phase, $n_{1}$ needs to be greater by a certain amount than $A$ as well. Otherwise, there will be insufficient nomads to form a colony which can overcome the Allee effect. Under the reasonable assumption that the rate of behavioral switching is much faster than either colonial or nomadic growth ($r_{s}\u226br_{1},r_{2}$), it can be shown more precisely that at the end of the nomadic phase, $n_{1}$ needs to be greater than a critical level $B$, which is related to $A$ by the equation:\n\n$$\nA=B\u2212(1\u2212B)W_{0}(\\frac{B}{1\u2212B}exp\\frac{B}{1\u2212B})\n$$\n\nA full derivation is provided in the Appendix (Theorem A.4). Here, $W_{0}\u2062(x)$ is the principal branch of the Lambert W function. Qualitatively speaking, $B$ is a function of $A$ on the interval $(1,\u221e)$ that increases in an exponential-like manner, and that approaches 1 when $A$ does as well. Thus, $B\\geqA$, as expected.\n\nThe greater the difference between the switching levels, the longer the nomadic phase will last, because it takes more time for $K$ to increase to the requisite value for switching, $L_{2}$. And the longer the nomadic phase lasts, the more $n_{1}$ will decay. If, at the end of the nomadic phase, the value that $n_{1}$ decays to happens to be less than $B$, then the population will fail to survive. It follows that there should be some constraint on the difference between the switching levels $L_{1}$ and $L_{2}$.\n\nUnder the same assumption that $r_{s}\u226br_{1},r_{2}$, such a constraint can be derived:\n\n$$\nL_{2}\u00a0<\u00a0L_{1}+\\frac{1}{r_{1}}ln\u2061\\frac{L_{1}+W_{0}(\u2212L_{1}e^{\u2212L_{1}})}{B}\n$$\n\nSurvival is ensured given the following additional condition:\n\n$$\nThere\u00a0exists\u00a0t^{\u2217}\\geqt_{0}:n_{2}(t^{\u2217})=K(t^{\u2217})\\geqL_{1}\n$$\n\nwhere $t_{0}$ marks the start of an arbitrary colonial phase, and $t^{*}$ marks the time of intersection between $n_{2}$ and $K$ during that phase. In other words, $n_{2}$ has to grow sufficiently quickly during the colonial phase such that it exceeds both $K$ and $L_{1}$ before switching begins. This can be seen occurring in Figure 2b. In accordance with intuition, numerical simulations predict that this occurs when the colonial growth constant is sufficiently large $(r_{2}\u226br_{1})$, as can be seen in the Figures. (The Figures also show that $r_{1}$ close to 1, but this is not strictly necessary.) Collectively, Equations 10\u201311 are sufficient conditions for population survival. Mathematical details are provided in the Appendix (Theorems A.5 and A.6).\n\nNote that Equation 10 contains an implicit lower bound on $L_{1}$. Since $L_{2}\\geqL_{1}$ by stipulation, we must have $ln\u2061[L_{1}+W_{0}(\u2212L_{1}e^{\u2212L_{1}})]\u00a0>\u00a0ln\u2061\u00a0B$\u00a0for survival. The following bound is thus obtained:\n\n$$\nL_{1}\u00a0>\u00a0\\frac{Be^{B}}{e^{B}\u22121}\n$$\n\nOn the other hand, under the assumptions made, there is no upper bound for $L_{1}$, and hence no absolute upper bound for $L_{2}$ either. This suggests that given a sufficiently well-designed switching rule, $K$ can grow larger over time while ensuring population survival. Such a rule is investigated in the following section.\n\n### Long-term growth through strategic alternation\n\nSuppose that, in addition to being able to detect the colonial carrying capacity, nomads and colonists are able to detect or estimate their current population size. This might happen by proxy, by communication, or by built-in estimation of the time required for growth or decay to a certain population level. The following switching rule then becomes possible:\n\n$$\nWhen\u00a0n_{2}=K,\u00a0dn_{2}/dt\u00a0>\u00a00,\u00a0set\u00a0L_{1}=K,\u00a0L_{2}=\u221eWhen\u00a0n_{1}=B,\u00a0dn_{1}/dt\u00a0<\u00a00,\u00a0set\u00a0L_{2}=K\n$$\n\nThat is, $L_{1}$ is set to the carrying capacity $K$ whenever $n_{2}$ rises to $K$, resulting immediately in a switch to nomadic behavior, and that $L_{2}$ is in turn set to $K$ whenever $n_{1}$ falls to $B$, resulting in an immediate switch to colonial behavior.\n\nThis switching rule is optimal according to several criteria. Firstly, by switching to nomadic behavior just as $n_{2}$ reaches $K$, it ensures that $d\u2062n_{2}/d\u2062t\\geq0$ for the entirety of the colonial phase. As such, it avoids the later portion of the colonial phase where $K$ and $n_{2}$ decrease in tandem, and maximizes the ending value $n_{2}$. Consequently, it also maximizes the value of $n_{1}$ at the start of each nomadic phase.\n\nFurthermore, by switching to colonial behavior right when $n_{1}$ decays to $B$, the rule maximizes the duration of the nomadic phase while ensuring survival. This in turn means that the growth of $K$ is maximized, since the longer the nomadic phase, the longer that $K$ is allowed to grow.\n\nIn fact, this switching rule is a paradigmatic example of how Parrondo\u2019s paradox can be achieved. It plays Game A, the nomadic strategy, for as long as possible, in order to maximize $K$ and hence the returns from Game B. And then it switches to Game B, the colonial strategy, only for as long as the returns are positive ($dn_{2}/dt\u00a0>\u00a00$), thereby using it as a kind of ratchet.\n\nSuppose that $K$ grows more during each nomadic phase than it falls during each colonial phase. Then the switching rule is not just optimal, but it also enables long-term growth. Simulation results predict that this can indeed occur. Figure 3a shows long-term growth of $K$ from $t=0$ to $t=10$, while Figure 3b shows that with the same initial conditions, this continues until $t=300$ with no signs of abating. Together with $K$, the per-phase maximal values of $n_{1}$ and $n_{2}$ increase as well.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig3-v4.jpg)\n\n**Figure 3.:** Initial conditions are $n_{1}=0$, $n_{2}=2$, $K=5$. Parameters are $A=1.001$, $L_{1}=3$, $L_{2}=4$, $r_{s}=1000$, $r_{1}=1$, $r_{2}=10$.\n\nIn the cases shown, long-term growth is achieved because $K$ indeed grows more during each nomadic phase than it falls during the subsequent colonial phase. As can be seen from Figure 3a, this is, in turn, because the nomadic phase lasts much longer than the colonial phase, such that the amount of environmental destruction due to colonialism is limited. Simulation results predict that this generally occurs as long as the colonial growth rate is sufficiently large ($r_{2}\u226br_{1}$).\n\nAn interesting phenomenon that can be observed from Figure 3b is how the nomadic population size $n_{1}$, which peaks at the start of each nomadic phase, eventually exceeds the carrying capacity $K$, and then continues doing so by increasing amounts at each peak. This is, in fact, a natural consequence of the population model. When $n_{2}$ grows large, the assumption that switching is much faster than colonial growth starts to break down. This occurs even though $r_{s}\u226br_{2}$, due to the increasing contribution of the $(\\frac{n_{2}}{A}-1)$ factor in Equation 3.\n\nThe result is that when a large colonial population begins switching to nomadism, a significant number of colonial offspring are simultaneously being produced. These offspring also end up switching to a nomadic strategy, resulting in more nomadic organisms than there were colonial organisms before. A particularly pronounced example of this is shown in Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig4-v4.jpg)\n\n**Figure 4.:** Zoomed-in portion of Figure 5 that shows the mechanism behind the spikes in $n_{1}$.When $n_{2}$ is large, switching takes longer, causing a drop in $K$, and a large increase in $n_{1}$.\n\nHowever, this same phenomenon also introduces a\u00a0limiting behavior to the pattern of long-term growth. As Figure 5 shows, when the same simulation as in Figure 3a and b is continued to $t=1000$, peak levels of $n_{1}$, $n_{2}$ and $K$ eventually plateau around $t=650$.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig5-v4.jpg)\n\n**Figure 5.:** Long-term growth through strategic alternation, up to $t=1000$.Initial conditions are $n_{1}=0$, $n_{2}=2$, $K=5$. Parameters are $A=1.001$, $r_{s}=1000$, $r_{1}=1$, $r_{2}=10$.\n\nThis occurs because sufficiently high levels of $n_{2}$ cause a qualitative change in the dynamics of behavioral switching. Normally, switching to nomadic behavior starts when $K$ falls below $L_{1}$, and ends when $K$ rises above it again. $K$ rises towards the end of the switch, when $n_{2}$ levels fall below the critical level of $n^{*}=1$. But when $n_{2}$ is sufficiently large, the faster production of colonial offspring drags out the duration of switching, as seen in Figure 4. The higher levels of $n_{2}$, combined with the longer switching duration, causes an overall drop in $K$ by the end of the switching period. Because the increase in $K$ during the subsequent nomadic phase is unable to overcome this drop, $K$ stops increasing in the long-run.\n\nNonetheless, it is clear that significant long-term gains can be achieved via the optimal switching rule. Under the conditions of fast colonial growth and even faster switching ($r_{s}\u226br_{2}\u226br_{1}\u22431$, as in Figures 3a\u20135), these gains are several orders of magnitude larger than the initial population levels, a huge departure from the long-term extinction that occurs in purely colonial or nomadic populations. Limiting behavior eventually emerges, but this is to be expected in any realistic biological system.\n\n### Survival and growth under additional constraints\n\nOur proposed model is convenient for the functional understanding of growth and survival, and can be easily modified for a variety of applications. Additional constraints can be imposed under which survival and long-term growth are still observed. For example, in many biological systems, the dynamics of habitat change might occur on a slower timescale than both colonial and nomadic growth (i.e. $r_{1},r_{2}\u226b1$). Figure 6 shows the simulation results when this timescale separation exists ($r_{1}=10$, $r_{2}=100$ for (a), $r_{1}=100$, $r_{2}=1000$ for (b)). It can clearly be seen that survival is still possible under such conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig6-v4.jpg)\n\n**Figure 6.:** Parameters for (a) are $r_{s}=10000$, $r_{1}=10$, $r_{2}=100,L_{1}=3$, $L_{2}=3.083$. For (b), $r_{s}=100000$, $r_{1}=100$, $r_{2}=1000,L_{1}=3$, $L_{2}=3.008$. Shared parameters are $K_{max}=20$, $A=1.001$.\n\nAnother practical constraint that can be imposed is limiting the growth of the carrying capacity to some maximal value $K_{max}$, capturing the fact that the resources in any one habitat do not grow infinitely large. This can be achieved by modifying Equation 6 as follows:\n\n$$\n\\frac{dK}{dt}=(1\u2212n_{2})(1\u2212\\frac{K}{K_{max}})\n$$\n\nFigure 6 already takes this constraint into account, showing that survival through periodic alternation is achievable under both bounded carrying capacity and slow habitat change, as long as the maximum carrying capacity is sufficiently high ($K_{max}=20$). As Figure 7 shows, even long-term growth is possible, under both fast habitat change (Figure 7a) and slow habitat change (Figure 7b). In both cases, the carrying capacity $K$ converges towards a maximum value as it approaches $K_{max}$.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/21673/elife-21673-fig7-v4.jpg)\n\n**Figure 7.:** Initial conditions are $n_{1}=0$, $n_{2}=2$, $K=5$, shared parameters are $A=1.001$. For (a), $K_{max}=20$, $r_{s}=1000$, $r_{1}=1$, $r_{2}=10$ (fast habitat change). For (b), $K_{max}=7.5$, $r_{s}=10000$, $r_{1}=10$, $r_{2}=100$ (slow habitat change).\n\n## Discussion\n\nThe results presented in this study demonstrate the theoretical possibility of Parrondo\u2019s paradox in an ecological context. Many evolutionary strategies correspond to the strategies that we have termed here as \u2018nomadism\u2019 and \u2018colonialism\u2019. In particular, any growth model that is devoid of competitive or collaborative effects is readily captured by Equation 2 (nomadism), while any logistic growth model which includes both the Allee effect and habitat destruction can be described using Equations 3 and 4 (colonialism). Many organisms also exhibit behavioral change or phenotypic switching in response to changing environmental conditions. By incorporating this into our model, we have demonstrated that nomadic-colonial alternation can ensure the survival of a species, even when nomadism or colonialism alone would lead to extinction. Furthermore, it has been demonstrated that an optimal switching rule can lead to long-term population growth.\n\nThe switching rules which lead to survival and long-term growth are analogous to the periodic alternation between games that produces a winning expectation in Parrondo\u2019s paradox. If one views the carrying capacity $K$ as the capital of the population, then it is clear that Equation 5 is a capital-dependent switching rule. By setting the appropriate amounts of capital at which switching should occur, survival and growth can be achieved. Survival is achieved by ensuring that Game A, or nomadism, is never played beyond the point where extinction is inevitable, that is, the point where $n_{1}$ falls below the critical level $B$. Long-term growth is additionally achieved by ensuring that Game B, or colonialism, is only played in the region where gains are positive, that is, when $A\u00a0<\u00a0n_{2}\u00a0<\u00a0K$ such that $dn_{2}/dt\u00a0>\u00a00$. The history-dependent dynamics of Game B are thus optimally exploited.\n\nSeveral limitations of the present study should be noted. Firstly, the study only focuses on cases where nomadism and colonialism are individually losing strategies, despite the abundance of similar strategies that do not lose in the real world. This is because assuming individually losing strategies in fact leads to a stronger result \u2013 if losing variants of nomadism and colonialism can be combined into a winning strategy, it follows that non-losing variants can be combined in a similar way too (see Theorem A.7 in the Appendix).\n\nSecondly, the population model does not encompass all variants of qualitatively similar behavior. For example, many other equations can be used to model the Allee effect\u00a0(Boukal and Berec, 2002). Nonetheless, our proposed model is general enough that it can be adapted for use with other equations and be expected to produce similar results. Even the presence of the Allee effect is not strictly necessary, since the colonial population might die off at low levels because of stochastic fluctuations, rather than because of the effect. Theorem A.7 in the Appendix also demonstrates that paradoxical behavior can occur even without the Allee effect causing long-term death of the colonial population.\n\nThirdly, though it is trivially the case that pure nomadism and pure colonialism cannot out-compete a behaviorally-switching population, a more complex analysis of the evolutionary stability of behavioral switching is beyond the scope of this paper. Finally, spatial dynamics are not accounted for in this study. Exploring such dynamics is a goal for future work.\n\n## Materials and methods\n\nNumerical simulations were performed using code written in MATLAB (Source code 1) that relied on the ode23 ordinary differential equation (ODE) solver. ode23 is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine. Simulations were performed with both behavioral switching turned off ($r_{s}=0$) and turned on ($r_{s}\u00a0>\u00a00$). The accuracy of the simulation was continually checked by repeating all results with more stringent tolerance levels, ensuring that the final simulated parameters did not change significantly (by less than 1%). Both the relative error tolerance and absolute error tolerance were determined to be 10-9.\n\nIn the case of complex switching rules like Equation 13 that required modifying differential equation parameters at specific time points, the Events option of MATLAB\u2019s ODE solvers was used to detect when these points occurred. After each detection, the parameters were automatically modified as per the switching rule, and the simulation continued with the new parameters.\n\nBroad regimes of model behavior were observed by running simulations across a wide range of parameters and initial conditions. General trends and conditions observed within each regime were formalized analytically, the details of which can be found in the Appendix. In these derivations, reasonable assumptions were made in order to make the model analytically tractable. In particular, it was assumed that the rate of behavioral switching was much faster than the rates of either colonial or nomadic growth ($r_{s}\u226br_{1},r_{2}$), and that colonial growth rates were in turn much faster than the rate of habitat destruction ($r_{2}\u226b1$). Initial conditions corresponding to unstable equilibria (e.g. $n_{2}=K=1\u00a0<\u00a0A$) were avoided as unrealistic.\n\n### Conclusion\n\nOur comprehensive model captures both capital and history-dependent dynamics within a realistic ecological setting, thereby exhibiting Parrondo's paradox without the need for exogenous environmental influences. The possibility of an ecological Parrondo\u2019s paradox has wide-ranging applications across the fields of ecology and population biology. Not only could it provide evolutionary insight into strategies analogous to nomadism, colonialism, and behavioral diversification, it potentially also explains why environmentally destructive species, such as Homo sapiens, can thrive and grow despite limited environmental resources. By providing a theoretical model under which such paradoxes occur, our approach may enable new insights into the evolution of cooperative colonies, as well as the conditions required for sustainable population growth.\n",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2aa44c9c-dbdb-484e-86ae-066d955c3204",
+      "submission_id": "006848cb-bbc4-47ff-8836-814e96e0978a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.21673.sa1](https://doi.org/10.7554/eLife.21673.sa1)\n\nIn the interests of transparency, eLife publishes the most substantive revision requests and the accompanying author responses.\n\nThank you for submitting your article \"Nomadic-colonial alternation can enable population growth despite habitat destruction: An ecological Parrondo's paradox\" for consideration by eLife. Your article has been favorably evaluated by Ian Baldwin (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nAll reviewers agree that this is an interesting paper that introduces Parrondo's paradox to an ecological setting. In this setting, the paradox consists of the fact that even though each of two sub-populations go extinct when left alone, migration between the sub-populations can lead to persistence. The mechanism enabling persistence is that one of the habitats can regenerate itself while the population spends time declining in the other habitat, so that after some time the regenerated habitat can harbor a growing population again for some time, before that habitat deteriorates again, and so on. I think this phenomenon is worth being brought to the attention of ecologists, and will likely enhance the conceptual toolbox of people concerned with conservation issues.\n\nAs you will see the reviewers have raised a number of concerns about the paper. Chief among those is the biological realism and relevance of some of the model assumptions and interpretations. These concerns need to be addressed in a major revision. After we have received the revision, we will make a decision as to the suitability of your paper for eLife based on how each of the following points were addressed:\n\n1) There were concerns about the realism of some of the modelling assumptions. Specifically, the paper assumes that the carrying capacity in the habitat of the colonizers changes on the same rapid ecological time scale as the population density itself changes. This seems unrealistic. Is it possible to formulate an alternative model, e.g. with a time scale separation between population dynamics and the dynamics of the carrying capacity? If not, what is the rationale behind assuming the same time scales for those two dynamics?\n\n2) In addition, the assumptions about the dynamics of the carrying capacity imply that in the absence of colonizers (i.e., if the population density of the colonizers is 0), the carrying capacity increases without bounds. Clearly, this is not realistic, and the question is whether it is possible to obtain the same results with more realistic assumptions, which would e.g. ensure that the carrying capacity saturates at some level even in the absence of colonizers.\n\n3) As referee 1 points out, the assumed switching behavior may also not be very realistic. At the very least, this kind of switching behavior needs to be justified biologically. Are there other, biologically more relevant switching behaviors that would lead to the same results?\n\n4) In general, all other reviewer comments and concerns need to be addressed in a satisfactory manner before a final decision regarding publication can be made.\n\nReviewer #1:\n\nThis is an interesting paper that introduces Parrondo's paradox to an ecological setting. In this setting, the paradox consists of the fact that even though each of two subpopulations go extinct when left alone, migration between the subpopulations can lead to persistence. The mechanism enabling persistence is that one of the habitats can regenerate itself while the population spends time declining in the other habitat, so that after some time the regenerated habitat can harbour a growing population again for some time, before that habitat deteriorates again, and so on. I think this phenomenon is worth being brought to the attention of ecologists, and will e.g. enhance the conceptual toolbox of people concerned with conservation issues.\n\nThe paper appears to be well executed technically, but I do have some concerns regarding the biological significance of the work. Chief among those is the fact that the carrying capacity is assumed to change on the same time scale as the population density (i.e., the \"t\" in eqs (1) and (4) is the same). On intuitive grounds, I would expect that the dynamics of the carrying capacity to be much slower than the population dynamics. Also, in the absence of any population in the habitat in which the carrying capacity is changing, the carrying capacity will grow without bounds according to eq. (4), which is obviously unrealistic. I think one could obtain a biologically more reasonable model by assuming some sort of time scale separation between carrying capacity dynamics and population dynamics (e.g. by assuming that \\\u03b1 and \\\u03b2 in equation (4) are <<1), and by assuming that the carrying capacity saturates as the population size in the habitat goes to 0. The question would then be whether the phenomenon observed by the authors would still be present under such conditions.\n\nI am also not really convinced by the proposed switching behaviour (subsection \"Behavioral switching\" under \"Population model\"). The authors purpose that individuals switch from nomadic to colonial behaviour when the carrying capacity for the colonial dynamics is high enough. But how would nomadic individuals be able to assess the carrying capacity for the colonial life style (I can understand how the colonial individuals would assess that carrying capacity)? The more elaborate switching rule given by (13) is even less intuitive: why would colonial individuals switch to monadic life style once they reach carrying capacity? After all, this means that individuals trade a per capita growth rate of 0 (because they treat carrying capacity) with a negative per capita growth rate (as is the case for nomadic life style by assumption). I think it would make more sense to switch once the colonial growth rate is \"negative enough\", e.g. more negative than the (constant) negative per capita growth rate on the nomadic life style. Again, the question then becomes whether persistence can still be observed under such more realistic assumptions.\n\nOverall, I think the paper is interesting, but needs a much more careful treatment of the biological realism underlying various assumptions, and as a consequence, a much more careful discussion of the biological relevance of the results obtained.\n\nReviewer #2:\n\nThis is a cleverly laid out paper that will introduce a relatively new perspective to ecological and evolutionary biologists. That is, this paper lays out an example of how switching \"colonial and nomadic\" behavior can lead to persistence despite each singular case not allowing persistence. While I think the general idea of organisms responding to variation in a manner that yields persistence or coexistence is far from new to ecologists and evolutionary ecologists, the perspective put forth is interesting and novel. My guess is that there are numerous existing models that may, in hindsight and with a little work, fit into this \"capital\" or \"history dependent\" version of Parrondo's paradox. I do think people studying complex systems may not be overwhelmingly surprised by the notion that an overall average growth rate less than zero in two strategies, or two of whatever (say competitors), can respond to variation (environmentally driven or internally driven) in a manner that yields persistence or coexistence but, again, the paper framed within the Parrondo's paradox seems potentially profitable for understanding and looking for this type of persistence outcome.\n\nI have no major comments and I think this paper is well written, well analyzed (at least for the ideas laid out), and so very close to publishable as is.\n\nReviewer #3\n\nGeneral Assessment:\n\nThe manuscript under review (\"Nomadic-colonial alternation can enable population growth despite habitat destruction: An ecological Parrondo's paradox\") presents and analyzes a novel model for a population where individuals are one of two behavioral types, which are modelled as subpopulations in an ODE model. Colonial types cooperate, compete and (over the long term) reduce their own carrying capacity. Nomads slowly die off (in the parameter space analyzed). Offspring of each type can \"switch\" to the other and in the model they do so based on the carrying capacity of the colonial sub-population.\n\nThrough a careful and detailed analysis, the paper shows that the model demonstrates a paradoxical behavior: in situations where pure colonial or nomadic strategies would die out, switching can result in persistence. Such results are well known in ecology and evolution, but most often occur due to environmental variation [1]. Here, the results occur not because of environmental variation but due to the carrying-capacity-dependent switching rule modeled. This provides a closer analog to Parrondo games than in many ecological studies, which (where it is biologically realistic) might help unify various studies of such reversal behaviors (as called for in [1]).\n\nThe particular situation studied in the model of alternation between nomadic and colonial types is of great evolutionary interest as it mirrors both the evolution of cooperative colonies from modular organisms and even the evolution of multicellularity itself. Indeed, the language of ratcheting has been invoked in describing the latter process [2]. More recently, that same group has examined the stabilization of multicellularity through ratcheting in a genetic model ([3] which should be cited and discussed in any revision).\n\nThe model in the manuscript under review, although not explicitly evolutionary, provides an interesting avenue through which these questions might be explored in the future. However, the behavior demonstrated rests on some peculiarities of the model and its assumptions.\n\nConcerns:\n\nAlthough promising, the model as developed displays some strange and possibly unrealistic behavior, which may be due to atypical assumptions. In particular, modelling the carrying capacity K as a function of the population itself (eqn 3) in a single-species model is not common in ecology (e.g., no such model appears in Table 1 of [4]). One reason may be that, as seen here, K will diverge to infinity when populations become small (e.g., if the colonists die off; Figure 1A). The dynamics of K also play a role in the strange behavior explored in Figures 3 and 4, where a vast overabundance of nomads is produced during a long-lived period of switching, during which K is reduced. Because the switching dynamics (eqn 5) are based on the dynamics of K, and key to driving the analyzed behavior the generality of these behaviors is tied to the reasonableness and generality of this assumption.\n\n[1] Paul David Williams and Alan Hastings. Paradoxical persistence through mixed-system dynamics: towards a unified perspective of reversal behaviours in evolutionary ecology. Proceedings of the Royal Society of London B: Biological Sciences, page rspb20102074, 2011.\n\n[2] Eric Libby and William C. Ratcliff. 346(6208):426-427, 2014.\n\n[3] Libby E, Conlin PL, Kerr B, Ratcliff WC. 2016 Stabilizing multicellularity through ratcheting. Phil. Trans. R. Soc. B 371: 20150444. http://dx.doi.org/10.1098/rstb.2015.0444\n\n[4] Abbot, Ives. 2012 Single Species Population Models in \"Encyclopedia of Theoretical Ecology\" Hastings, Gross, Eds. UC Press.\n",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b20ee4d4-7317-4b70-b8b4-39b0b398cf1a",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C1",
+      "claim": "Organisms often exhibit behavioral or phenotypic diversity to improve population fitness in the face of environmental variability.",
+      "claim_type": "EXPLICIT",
+      "source": "Organisms often exhibit behavioral or phenotypic diversity to improve population fitness in the face of environmental variability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological systems that draws from established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "b3cfc265-52a6-4a00-8899-3571769baa6c",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C2",
+      "claim": "When each behavior or phenotype is individually maladaptive, alternating between these losing strategies can counter-intuitively result in population persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "When each behavior or phenotype is individually maladaptive, alternating between these losing strategies can counter-intuitively result in population persistence\u2013an outcome similar to the Parrondo's paradox.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical claim of the paper, supported by the model and simulations presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "bd7d60f6-2681-4187-8d15-d2ac6ffe9b5c",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C3",
+      "claim": "Most ecological models which exhibit paradoxical behavior depend on the presence of exogenous environmental variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of the capital or history dependence that characterize traditional Parrondo games, most ecological models which exhibit such paradoxical behavior depend on the presence of exogenous environmental variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to ecological literature throughout the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "82cf143f-3176-40b8-a77f-a2fd8094f0ba",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C4",
+      "claim": "The presented population model exhibits Parrondo's paradox through capital and history-dependent dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we present a population model that exhibits Parrondo's paradox through capital and history-dependent dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main claim of the paper, supported by mathematical modeling and numerical simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "87acfeb4-b063-44f5-b10d-00c033fbb711",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C5",
+      "claim": "Even when nomadism and colonialism individually lead to extinction, switching between these strategies at the appropriate moments can paradoxically enable both population persistence and long-term growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when nomadism and colonialism individually lead to extinction, switching between these strategies at the appropriate moments can paradoxically enable both population persistence and long-term growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "e75d0779-5fde-4e25-aadc-4d28c3ac6f77",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C6",
+      "claim": "Alternating or reallocating organisms between losing strategies under certain conditions can result in meta-population persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Counter-intuitively, even when each sub-population follows a losing strategy that will cause it to go extinct in the long-run, alternating or reallocating organisms between these losing strategies under certain conditions can result in meta-population persistence, and hence, an overall strategy that wins (Williams and Hastings, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Williams and Hastings, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "31b6e466-e7db-4b0d-891c-ac9a1df82598",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C7",
+      "claim": "Random phase variation (RPV) in bacteria occurs across multiple losing phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Some examples include random phase variation (RPV) in bacteria across multiple losing phenotypes (Wolf et al., 2005; Kussell and Leibler, 2005; Acar et al., 2008), as well as the persistence of populations that migrate among sink habitats only (Jansen and Yoshimura, 1998; Roy et al., 2005; Bena\u00efm and Schreiber, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "57965d8c-6de6-4573-815a-8976385eb482",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C8",
+      "claim": "Populations can persist by migrating among sink habitats only.",
+      "claim_type": "EXPLICIT",
+      "source": "Some examples include random phase variation (RPV) in bacteria across multiple losing phenotypes (Wolf et al., 2005; Kussell and Leibler, 2005; Acar et al., 2008), as well as the persistence of populations that migrate among sink habitats only (Jansen and Yoshimura, 1998; Roy et al., 2005; Bena\u00efm and Schreiber, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "9c42c0ba-0fa9-47d8-a1b8-25fccc2ddb44",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C9",
+      "claim": "Parrondo's paradox states that there are losing games of chance which can be combined to produce a winning strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "These counter-intuitive phenomena are reminiscent of Parrondo's paradox, which states that there are losing games of chance which can be combined to produce a winning strategy (Harmer and Abbott, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of Parrondo's paradox supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "4086715b-edf2-45f3-8dfd-40e7d4704c63",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C10",
+      "claim": "The existence of a winning combination in Parrondo's paradox relies on at least one of the losing games exhibiting either capital-dependence or history-dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a winning combination relies on the fact that at least one of the losing Parrondo games exhibits either capital-dependence (dependence upon the current amount of capital, an ecological analog of which is population size) or history-dependence (dependence upon the past history of wins or losses, or in an ecological context, growth and decline) (Parrondo et al., 2000; Harmer and Abbott, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to foundational Parrondo's paradox literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "0d358aea-8dc9-42c8-a1e0-7072b42741c2",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C11",
+      "claim": "Many biological studies which have drawn a connection to Parrondo games do not necessarily utilize capital-dependence or history-dependence in their models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many biological studies which have drawn a connection to Parrondo games do not necessarily utilize capital-dependence or history-dependence in their models (Williams and Hastings, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Williams and Hastings, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "83d96f35-1529-419e-9c5c-01bbf4629343",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C12",
+      "claim": "Models of reversal behavior in ecological settings generally rely upon the presence of exogenous environmental variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, models of reversal behavior in ecological settings generally rely upon the presence of exogenous environmental variation (Jansen and Yoshimura, 1998; Roy et al., 2005; Bena\u00efm and Schreiber, 2009; Wolf et al., 2005; Kussell and Leibler, 2005; Acar et al., 2008; Levine and Rees, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to ecological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "86f2bdc3-2309-4b15-8211-5a4b77c04119",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C13",
+      "claim": "Without exogenous variation, ecological paradoxes do not occur.",
+      "claim_type": "EXPLICIT",
+      "source": "Without exogenous variation, the paradoxes do not occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited literature about ecological models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "819cea91-3362-4afa-bc7c-f857010072a9",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C14",
+      "claim": "The fitness of alleles may depend on the presence of genetic factors and epigenetic factors in previous generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness of alleles may depend on the presence of genetic factors and epigenetic factors in previous generations (Reed, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Reed, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "a69bf6a4-25f4-4107-967b-944b550ce4c8",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C15",
+      "claim": "The fitness of any one gene can depend on the composition of other genes already present in a population.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, the fitness of any one gene can depend on the composition of other genes already present in a population, enabling the evolution of complex adaptations like multicellularity through ratcheting mechanisms (Libby and Ratcliff, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Libby and Ratcliff, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "dde2273c-7dde-41c2-b994-6df2b9119984",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C16",
+      "claim": "Ratcheting mechanisms have recently been shown to help stabilize complex adaptations.",
+      "claim_type": "EXPLICIT",
+      "source": "Such mechanisms have recently been shown to help stabilize these complex adaptations (Libby et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Libby et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "6aefd8b9-d4af-4371-b1c1-0fb1ad4431ee",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C17",
+      "claim": "The storage effect can ensure that gains previously made in good years can promote persistence in less favorable times.",
+      "claim_type": "EXPLICIT",
+      "source": "In ecological contexts, the storage effect can ensure that gains previously made in good years can promote persistence in less favorable times (Warner and Chesson, 1985; Levine and Rees, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Warner and Chesson, 1985 and Levine and Rees, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "6f0c5291-98b7-45bb-9c04-225dfcd4cbb0",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C18",
+      "claim": "Species-induced habitat destruction or resource production can have time-delayed effects on population growth, resulting in non-linear phenomena like punctuated evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Species-induced habitat destruction or resource production can also have time-delayed effects on population growth, resulting in non-linear phenomena like punctuated evolution (Yukalov et al., 2009, Yukalov et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Yukalov et al., 2009 and 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "d53eabca-b57d-45fe-b9dd-2055a8b7636b",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C19",
+      "claim": "Numerous organisms exhibit behavioral diversity analogous to nomadism and colonialism, from slime moulds and dimorphic fungi to jellyfish and human beings.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous organisms exhibit analogous behavioral diversity, from slime moulds (amoeba vs. plasmodia) (Baldauf and Doolittle, 1997) and dimorphic fungi (yeast vs. hyphae) (Bastidas and Heitman, 2009) to jellyfish (medusae vs. polyps) (Lucas et al., 2012) and human beings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to biological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "63f250da-1914-477a-a465-246516deaec9",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C20",
+      "claim": "The amoeba Dictyostelium discoideum is a model organism which exhibits nomadic-colonial behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "One model organism which exhibits this sort of behavior, to which our study might apply, is the amoeba Dictyostelium discoideum (Annesley and Fisher, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Annesley and Fisher, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "8d02053a-f649-45c4-9998-3847adb6494b",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C21",
+      "claim": "Nomads live relatively independently and are unaffected by either competition or co-operation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nomads live relatively independently, and thus are unaffected by either competition or co-operation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the nomadic strategy in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "0295134d-9c92-4fe3-aeb2-671fd8b17a3c",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C22",
+      "claim": "Under poor environmental conditions, nomads are subject to steady extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Under poor environmental conditions, they are subject to steady extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the nomadic strategy as defined in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "abae0719-32b2-4da5-ad59-79422d801438",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C23",
+      "claim": "Colonists live in close proximity and are subject to both competitive and co-operative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Colonists live in close proximity, and are thus subject to both competitive and co-operative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of the colonial strategy in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "348fd74c-8a37-4193-8df7-afab81c54b63",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C24",
+      "claim": "Colonists may deplete the resources of the habitat they reside in over time, resulting in long-term death.",
+      "claim_type": "EXPLICIT",
+      "source": "They may also deplete the resources of the habitat they reside in over time, resulting in long-term death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a property of the colonial strategy as defined in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "9c0640bc-1fcc-412f-9fe9-8160439d864b",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C25",
+      "claim": "Organisms endowed with sensors that inform them of both population density and the state of the colonial habitat can use this information to switch from one behavior to another.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if these organisms are endowed with sensors that inform them of both population density and the state of the colonial habitat, they can use this information to switch from one behavior to another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical assumption of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "9e7e5725-b812-463b-be55-2b460e6be972",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C26",
+      "claim": "An appropriate switching strategy paradoxically enables both population persistence and long-term growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, we find that an appropriate switching strategy paradoxically enables both population persistence and long-term growth \u2013 an ecological Parrondo's paradox.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the paper, supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "0e33adbf-e627-41a7-908f-0e58cfcbc320",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C29",
+      "claim": "Competition among nomads, as well as between nomads and colonists, is taken to be insignificant due to the independence of a nomadic lifestyle.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, competition among nomads, as well as between nomads and colonists, is taken to be insignificant, due to the independence of a nomadic lifestyle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assumption of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "50af4f0e-2790-4d78-8599-4b6f8fe0396d",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C36",
+      "claim": "It is possible to combine nomadism and colonialism through behavioral switching such that population survival is ensured when A > 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Paradoxically, it is possible to combine these two strategies through behavioral switching such that population survival is ensured, thereby producing an overall strategy that wins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "301476c5-86d7-4aa7-9f94-7379b1fe7155",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C37",
+      "claim": "Figure 2a is a typical example where the population becomes extinct even though it undergoes behavioral switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2a is a typical example where the population becomes extinct, even though it undergoes behavioral switching, while Figure 2b is a typical example where behavioral switching ensures population survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim refers to simulation results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "bd2c0da1-db14-40ab-9b42-e2d371d92c53",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C38",
+      "claim": "Figure 2b is a typical example where behavioral switching ensures population survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2a is a typical example where the population becomes extinct, even though it undergoes behavioral switching, while Figure 2b is a typical example where behavioral switching ensures population survival.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim refers to simulation results shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "357f7ec9-f614-4499-8ec4-79ece33a02cd",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C39",
+      "claim": "Paradoxical survival is possible because the colonial strategy is history-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceptually, this paradoxical survival is possible because the colonial strategy, or Game B, is history-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analytical explanation of the mechanism behind the paradox.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "33f6d1a3-1b9c-4b55-b4ee-ce87e389ffef",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C42",
+      "claim": "Switching occurs periodically, as can be seen in Figure 2b.",
+      "claim_type": "EXPLICIT",
+      "source": "Because switching occurs periodically, as can be seen in Figure 2b, it should be noted that the organisms need not even detect the amount of resources present in the environment to implement this strategy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the simulation results shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "5011f217-cfcd-40f0-9029-f52cc2d0b9b0",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C43",
+      "claim": "Organisms need not detect the amount of resources present in the environment to implement periodic switching; a biological clock would be sufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Because switching occurs periodically, as can be seen in Figure 2b, it should be noted that the organisms need not even detect the amount of resources present in the environment to implement this strategy. A biological clock would be sufficient to trigger switching behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference about biological implementation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "e925e638-7532-44ca-ba4c-711159155beb",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C59",
+      "claim": "Equations 10\u201311 are sufficient conditions for population survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, Equations 10\u201311 are sufficient conditions for population survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mathematical result with details in Theorems A.5 and A.6.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "59063b7b-a80e-4f5a-b1ce-191ef72d7693",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C72",
+      "claim": "Simulation results predict that long-term growth can occur with the optimal switching rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation results predict that this can indeed occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "862a647f-59eb-4071-822c-20645de1afcb",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C77",
+      "claim": "The nomadic phase lasts much longer than the colonial phase, such that the amount of environmental destruction due to colonialism is limited.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen from Figure 3a, this is, in turn, because the nomadic phase lasts much longer than the colonial phase, such that the amount of environmental destruction due to colonialism is limited.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "f5b2a1c3-428b-4c55-b721-18dd6a5f75e6",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C80",
+      "claim": "When a large colonial population begins switching to nomadism, a significant number of colonial offspring are simultaneously being produced, resulting in more nomadic organisms than there were colonial organisms before.",
+      "claim_type": "EXPLICIT",
+      "source": "The result is that when a large colonial population begins switching to nomadism, a significant number of colonial offspring are simultaneously being produced. These offspring also end up switching to a nomadic strategy, resulting in more nomadic organisms than there were colonial organisms before.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mechanism behind the spikes in n\u2081.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "95687b94-bfce-4c74-ade1-aa25a1d2f96d",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C81",
+      "claim": "A particularly pronounced example of nomadic population spikes is shown in Figure 4.",
+      "claim_type": "EXPLICIT",
+      "source": "A particularly pronounced example of this is shown in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim refers to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "487f9484-75ce-4eb8-954e-7cb909430f90",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C82",
+      "claim": "The phenomenon of nomadic population spikes introduces a limiting behavior to the pattern of long-term growth.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this same phenomenon also introduces a limiting behavior to the pattern of long-term growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an analytical observation about the long-term dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "3468b534-8e22-4a96-9f56-9470a2d30c70",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C88",
+      "claim": "Significant long-term gains can be achieved via the optimal switching rule.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, it is clear that significant long-term gains can be achieved via the optimal switching rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "b0c2df9b-5e0f-4a05-985f-5ce5b72dd689",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C90",
+      "claim": "Limiting behavior eventually emerges in any realistic biological system.",
+      "claim_type": "EXPLICIT",
+      "source": "Limiting behavior eventually emerges, but this is to be expected in any realistic biological system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "a4fc067d-f419-436d-8454-d12309e6489a",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C91",
+      "claim": "The proposed model can be easily modified for a variety of applications.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposed model is convenient for the functional understanding of growth and survival, and can be easily modified for a variety of applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the flexibility of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "3e527b97-af91-4c11-ab48-ececc8407501",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C94",
+      "claim": "Long-term growth is possible under both fast habitat change (Figure 7a) and slow habitat change (Figure 7b) with bounded carrying capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "As Figure 7 shows, even long-term growth is possible, under both fast habitat change (Figure 7a) and slow habitat change (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by simulation results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "cf1eed87-20eb-4419-97ab-f98baf7ac482",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C96",
+      "claim": "The results demonstrate the theoretical possibility of Parrondo's paradox in an ecological context.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented in this study demonstrate the theoretical possibility of Parrondo's paradox in an ecological context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "79da1926-07a7-41dc-a452-95ba02468e97",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C97",
+      "claim": "Many evolutionary strategies correspond to the strategies termed as 'nomadism' and 'colonialism'.",
+      "claim_type": "EXPLICIT",
+      "source": "Many evolutionary strategies correspond to the strategies that we have termed here as 'nomadism' and 'colonialism'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general claim about the applicability of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "a5ce07a9-17eb-4641-872a-4369bfcb28a6",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C98",
+      "claim": "Any growth model that is devoid of competitive or collaborative effects is readily captured by Equation 2 (nomadism).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, any growth model that is devoid of competitive or collaborative effects is readily captured by Equation 2 (nomadism), while any logistic growth model which includes both the Allee effect and habitat destruction can be described using Equations 3 and 4 (colonialism).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generality of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "3a75e0ab-0ff0-47e5-92e5-987f4dac6f00",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C99",
+      "claim": "Any logistic growth model which includes both the Allee effect and habitat destruction can be described using Equations 3 and 4 (colonialism).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, any growth model that is devoid of competitive or collaborative effects is readily captured by Equation 2 (nomadism), while any logistic growth model which includes both the Allee effect and habitat destruction can be described using Equations 3 and 4 (colonialism).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the generality of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "15758082-5ee7-4e87-b613-b5bc7ca0bc9c",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C100",
+      "claim": "Many organisms exhibit behavioral change or phenotypic switching in response to changing environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Many organisms also exhibit behavioral change or phenotypic switching in response to changing environmental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about biological systems.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "8809fc85-cba4-417e-85e0-2264f71dc1e1",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C101",
+      "claim": "Nomadic-colonial alternation can ensure the survival of a species, even when nomadism or colonialism alone would lead to extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "By incorporating this into our model, we have demonstrated that nomadic-colonial alternation can ensure the survival of a species, even when nomadism or colonialism alone would lead to extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the paper supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "baf98a9e-d215-448a-9aca-2975c3889769",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C102",
+      "claim": "An optimal switching rule can lead to long-term population growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been demonstrated that an optimal switching rule can lead to long-term population growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the paper supported by simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "fd6d90b5-bc3a-479f-8e19-ce0d8ac4da19",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C103",
+      "claim": "The switching rules which lead to survival and long-term growth are analogous to the periodic alternation between games that produces a winning expectation in Parrondo's paradox.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching rules which lead to survival and long-term growth are analogous to the periodic alternation between games that produces a winning expectation in Parrondo's paradox.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in terms of Parrondo's paradox.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "cd5e206b-d22a-4c43-8476-977d97331360",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C107",
+      "claim": "The history-dependent dynamics of Game B are optimally exploited by the optimal switching rule.",
+      "claim_type": "EXPLICIT",
+      "source": "The history-dependent dynamics of Game B are thus optimally exploited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the optimal switching rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "d7ae0beb-c61f-439f-83b8-65db01020d94",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C108",
+      "claim": "The study only focuses on cases where nomadism and colonialism are individually losing strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, the study only focuses on cases where nomadism and colonialism are individually losing strategies, despite the abundance of similar strategies that do not lose in the real world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2f6f3d2a-1006-4c45-aa64-9a20ad929677",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C109",
+      "claim": "If losing variants of nomadism and colonialism can be combined into a winning strategy, it follows that non-losing variants can be combined in a similar way too.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because assuming individually losing strategies in fact leads to a stronger result \u2013 if losing variants of nomadism and colonialism can be combined into a winning strategy, it follows that non-losing variants can be combined in a similar way too (see Theorem A.7 in the Appendix).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument about the generality of the results, supported by Theorem A.7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "772db626-ec26-4d1a-afb9-3fafd6788fe6",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C110",
+      "claim": "The population model does not encompass all variants of qualitatively similar behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, the population model does not encompass all variants of qualitatively similar behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "c7d9aaee-038c-47f7-b45a-bf1dbcb9af99",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C111",
+      "claim": "Many other equations can be used to model the Allee effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, many other equations can be used to model the Allee effect (Boukal and Berec, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Boukal and Berec, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "32105b08-7dfc-4e5c-9e25-61a37fda2bae",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C112",
+      "claim": "The proposed model is general enough that it can be adapted for use with other equations and be expected to produce similar results.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our proposed model is general enough that it can be adapted for use with other equations and be expected to produce similar results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the robustness of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "afaf2b9f-4369-4286-90ac-d533e4cf86c8",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C113",
+      "claim": "The presence of the Allee effect is not strictly necessary, since the colonial population might die off at low levels because of stochastic fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even the presence of the Allee effect is not strictly necessary, since the colonial population might die off at low levels because of stochastic fluctuations, rather than because of the effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about alternative mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "3e7778bf-85c2-4c2c-ac01-7404f8a1fdf3",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C114",
+      "claim": "Paradoxical behavior can occur even without the Allee effect causing long-term death of the colonial population.",
+      "claim_type": "EXPLICIT",
+      "source": "Theorem A.7 in the Appendix also demonstrates that paradoxical behavior can occur even without the Allee effect causing long-term death of the colonial population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Theorem A.7 in the Appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "ae58340c-c9f6-449b-877f-2334f947ce10",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C115",
+      "claim": "It is trivially the case that pure nomadism and pure colonialism cannot out-compete a behaviorally-switching population.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, though it is trivially the case that pure nomadism and pure colonialism cannot out-compete a behaviorally-switching population, a more complex analysis of the evolutionary stability of behavioral switching is beyond the scope of this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "3f7b9a5d-05ff-4c20-8926-216f041fd3ae",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C116",
+      "claim": "A more complex analysis of the evolutionary stability of behavioral switching is beyond the scope of this paper.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, though it is trivially the case that pure nomadism and pure colonialism cannot out-compete a behaviorally-switching population, a more complex analysis of the evolutionary stability of behavioral switching is beyond the scope of this paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2234bfb0-9837-4232-bbbb-70f46a42a1be",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C117",
+      "claim": "Spatial dynamics are not accounted for in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, spatial dynamics are not accounted for in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated limitation of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "5a4dff15-c97b-4d1e-b803-5ce83e0a067f",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C118",
+      "claim": "Exploring spatial dynamics is a goal for future work.",
+      "claim_type": "EXPLICIT",
+      "source": "Exploring such dynamics is a goal for future work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "756f925a-6af6-4d9a-b438-aa2ff73c7b92",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C119",
+      "claim": "Numerical simulations were performed using code written in MATLAB that relied on the ode23 ordinary differential equation (ODE) solver.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerical simulations were performed using code written in MATLAB (Source code 1) that relied on the ode23 ordinary differential equation (ODE) solver.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "7a11a4fb-71a4-43e0-9cc2-d5fddc1b08c5",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C120",
+      "claim": "ode23 is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine.",
+      "claim_type": "EXPLICIT",
+      "source": "ode23 is an implementation of an explicit Runge-Kutta (2,3) pair of Bogacki and Shampine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the numerical method used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "17d87241-c024-412d-976e-07f6541e2795",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C122",
+      "claim": "The accuracy of the simulation was continually checked by repeating all results with more stringent tolerance levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the simulation was continually checked by repeating all results with more stringent tolerance levels, ensuring that the final simulated parameters did not change significantly (by less than 1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the validation methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "203bc03d-29b3-465c-b3ec-6e19bb5ec1c4",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C123",
+      "claim": "Both the relative error tolerance and absolute error tolerance were determined to be 10\u207b\u2079.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the relative error tolerance and absolute error tolerance were determined to be 10-9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the simulation parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "9ca068af-9716-4b11-91e2-e09c573616a7",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C124",
+      "claim": "The Events option of MATLAB's ODE solvers was used to detect when specific time points occurred for complex switching rules.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of complex switching rules like Equation 13 that required modifying differential equation parameters at specific time points, the Events option of MATLAB's ODE solvers was used to detect when these points occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methods used for complex switching rules.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "f8ab22c5-4dd5-47be-96f9-166fe66145ad",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C125",
+      "claim": "After each detection of a switching event, the parameters were automatically modified as per the switching rule, and the simulation continued with the new parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "After each detection, the parameters were automatically modified as per the switching rule, and the simulation continued with the new parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the simulation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2407c2b4-979b-4c22-a7b3-672b32da2541",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C126",
+      "claim": "Broad regimes of model behavior were observed by running simulations across a wide range of parameters and initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Broad regimes of model behavior were observed by running simulations across a wide range of parameters and initial conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the exploratory analysis performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "293af7da-c9d6-4883-b638-9d190d0bc914",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C127",
+      "claim": "General trends and conditions observed within each regime were formalized analytically.",
+      "claim_type": "EXPLICIT",
+      "source": "General trends and conditions observed within each regime were formalized analytically, the details of which can be found in the Appendix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analytical work performed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "aa1eeee4-c210-4144-91cd-6d6b23b437c6",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C131",
+      "claim": "The comprehensive model captures both capital and history-dependent dynamics within a realistic ecological setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comprehensive model captures both capital and history-dependent dynamics within a realistic ecological setting, thereby exhibiting Parrondo's paradox without the need for exogenous environmental influences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "9f9f3e97-bf5d-44a7-a2df-8f4c7eb6f5ad",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C132",
+      "claim": "The model exhibits Parrondo's paradox without the need for exogenous environmental influences.",
+      "claim_type": "EXPLICIT",
+      "source": "Our comprehensive model captures both capital and history-dependent dynamics within a realistic ecological setting, thereby exhibiting Parrondo's paradox without the need for exogenous environmental influences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main conclusion of the paper.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "facf74a1-f446-48bf-8627-ce9757988743",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C133",
+      "claim": "The possibility of an ecological Parrondo's paradox has wide-ranging applications across the fields of ecology and population biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility of an ecological Parrondo's paradox has wide-ranging applications across the fields of ecology and population biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "f2cd0b6d-184c-46ad-92c0-6e44021bb857",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C134",
+      "claim": "The ecological Parrondo's paradox could provide evolutionary insight into strategies analogous to nomadism, colonialism, and behavioral diversification.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only could it provide evolutionary insight into strategies analogous to nomadism, colonialism, and behavioral diversification, it potentially also explains why environmentally destructive species, such as Homo sapiens, can thrive and grow despite limited environmental resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "861830ea-0682-43f7-b262-0393f533507d",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C135",
+      "claim": "The ecological Parrondo's paradox potentially explains why environmentally destructive species, such as Homo sapiens, can thrive and grow despite limited environmental resources.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only could it provide evolutionary insight into strategies analogous to nomadism, colonialism, and behavioral diversification, it potentially also explains why environmentally destructive species, such as Homo sapiens, can thrive and grow despite limited environmental resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "486c8ce1-4d87-4009-a2f5-ad55b574dac0",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C136",
+      "claim": "The theoretical model may enable new insights into the evolution of cooperative colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "By providing a theoretical model under which such paradoxes occur, our approach may enable new insights into the evolution of cooperative colonies, as well as the conditions required for sustainable population growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "62be2799-4bd4-485c-befd-c06e05f9bd72",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "claim_id": "C137",
+      "claim": "The theoretical model may enable new insights into the conditions required for sustainable population growth.",
+      "claim_type": "EXPLICIT",
+      "source": "By providing a theoretical model under which such paradoxes occur, our approach may enable new insights into the evolution of cooperative colonies, as well as the conditions required for sustainable population growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e9df923f-c393-4d8c-b148-67b08968954d",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The model defines two behavioral strategies: nomadism (independent living with steady extinction under poor conditions) and colonialism (close-proximity living with competitive/cooperative effects and habitat depletion leading to long-term death). Competition among nomads and between nomads and colonists is assumed negligible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 and C29 establish the foundational definitions and assumptions of the two-strategy model. These are internally consistent model assumptions that define the behavioral strategies being studied, supported by the mathematical formulations in Equations 2-4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2585cca6-044b-410d-a703-18d54a445ed1",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When both nomadism and colonialism individually lead to extinction (A > 1), switching between these losing strategies at appropriate moments can paradoxically enable population persistence through capital and history-dependent dynamics, demonstrating an ecological Parrondo's paradox.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, C5, C26, C36-C39, and C101 collectively establish the core paradoxical result. The simulation results in Figures 2a-b provide clear visual evidence: Figure 2a shows extinction despite switching with suboptimal parameters, while Figure 2b demonstrates survival with appropriate switching thresholds. The history-dependence mechanism (C39) is explained through the carrying capacity K's dependence on past colonial population levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "50ff9054-6aa0-4a8e-aec5-4d436614c330",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Switching occurs periodically in successful survival scenarios, suggesting organisms need not detect environmental resources directly but could use a biological clock to trigger switching behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C42 is supported by Figure 2b showing periodic switching patterns. However, C43 is speculative about biological implementation. While the periodicity is demonstrated, the claim that a biological clock \"would be sufficient\" lacks empirical validation and represents a hypothesis rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "811c9fd4-948c-4109-a2a2-82cb77f1f60f",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Equations 10-11 provide sufficient mathematical conditions for population survival under behavioral switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by the mathematical derivations detailed in Theorems A.5 and A.6 in the Appendix. The conditions relate switching thresholds to critical population levels, providing analytical support for the simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "0d64357b-1085-4e7d-80fb-7b93595aedd3",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "An optimal switching rule (Equation 13) can achieve long-term population growth by maximizing nomadic phase duration and limiting colonial phase to positive growth periods. However, nomadic population spikes eventually introduce limiting behavior that plateaus growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C77, C80-C82, C88, and C102 describe the long-term growth dynamics. Figures 3a-b demonstrate sustained growth over extended time periods, while Figures 4-5 illustrate the mechanism of nomadic spikes and eventual plateau. The explanation that longer nomadic phases allow K recovery while brief colonial phases exploit positive growth is mechanistically sound and visually confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "71deab9d-2b74-44ec-8a87-1f846ce56db4",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Limiting behavior eventually emerges in any realistic biological system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C90 is a general statement about biological systems that, while plausible, is not directly demonstrated by the model. The model shows limiting behavior under specific conditions (Figure 5), but the universal claim about \"any realistic biological system\" is not substantiated and represents an overgeneralization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "a8f715b0-6415-4977-9c94-5335f57e0b54",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model can be modified for various applications, including scenarios with bounded carrying capacity and different rates of habitat change, while still demonstrating survival and long-term growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91 and C94 are supported by Figures 6-7, which show that the paradoxical behavior persists under additional constraints (bounded K_max, slow habitat change). The simulations demonstrate robustness across parameter regimes, validating the model's flexibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "6db18d6c-ccda-4d74-938c-2bf6bd3f422e",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The model demonstrates Parrondo's paradox in an ecological context through capital and history-dependent dynamics without requiring exogenous environmental variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96, C131, and C132 represent the main theoretical contribution. The model successfully exhibits paradoxical behavior through endogenous dynamics (carrying capacity K depends on past population levels, creating history-dependence; switching depends on K, creating capital-dependence). This distinguishes the work from prior ecological models requiring external environmental variation (C3, C12, C13).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "503e1979-5f3a-4682-96c3-4eddd388bf2a",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The nomadism and colonialism strategies are general enough to capture any growth model without competitive/collaborative effects (nomadism) and any logistic growth model with Allee effect and habitat destruction (colonialism), making them applicable to many evolutionary strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C98-C99 make strong assertions about the generality of the model equations. While the mathematical forms are indeed general within their specified constraints, the claim that \"any\" such model is \"readily captured\" is not rigorously demonstrated. C97 is speculative about real-world applicability without empirical validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "7d9a7db3-4b5b-4d2c-8d19-9bd738828dbb",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The switching rules are analogous to periodic alternation in Parrondo's paradox, optimally exploiting history-dependent dynamics by playing the nomadic strategy to maximize carrying capacity and the colonial strategy only during positive growth periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103 and C107 provide the conceptual link to Parrondo's paradox. The analogy is well-supported: the optimal switching rule (Equation 13) indeed maximizes time in the nomadic phase (allowing K to grow) and restricts colonial phase to dn\u2082/dt > 0, functioning as a ratchet mechanism consistent with classic Parrondo dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study has several acknowledged limitations: focus on individually losing strategies, limited model variants, lack of evolutionary stability analysis, and absence of spatial dynamics. However, the authors argue these limitations strengthen rather than weaken the core results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C118 transparently acknowledge study limitations. The argument in C109 (supported by Theorem A.7) that demonstrating the paradox with losing strategies implies it works for non-losing strategies is logically sound. C112's claim about model adaptability is reasonable given the general mathematical forms. The limitations are honestly stated and appropriately scoped.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Numerical simulations were performed using MATLAB's ode23 solver with error tolerances of 10\u207b\u2079, validated by convergence testing, and explored across wide parameter ranges with analytical formalization of observed regimes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C119-C127 describe the computational methodology. The use of ode23 (Runge-Kutta 2,3) is appropriate for the ODE system. Error tolerance of 10\u207b\u2079 with convergence validation (C122) demonstrates numerical rigor. The Events option for switching detection (C124-C125) is the correct approach. However, no random seed is mentioned for any stochastic components, and the claim about \"wide range\" of parameters lacks quantitative specification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "bf456876-1289-49ff-856d-371afedde4d8",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The ecological Parrondo's paradox has wide-ranging applications, potentially explaining how environmentally destructive species like Homo sapiens thrive despite limited resources and providing insights into cooperative colony evolution and sustainable population growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C133-C137 are highly speculative about broader implications. While the theoretical model is sound, the leap to explaining human population dynamics (C135) or providing insights into cooperative colony evolution (C136) is not substantiated by the presented work. These represent potential future applications rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work on behavioral diversity, Parrondo's paradox, history-dependent dynamics in biological systems, and examples of nomadic-colonial behavior in various organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C20, and C100 summarize established knowledge from cited literature. These provide appropriate context for the study. The citations appear relevant and the characterizations of prior work (e.g., C3, C11-C13 about ecological models requiring exogenous variation) establish the gap this study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    },
+    {
+      "id": "d518ad06-1a58-4c01-b265-5b4a6b6781d5",
+      "content_id": "49342043-62fc-40a7-95f1-1d827fa2d59c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Organisms endowed with sensors detecting population density and colonial habitat state can use this information to switch behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C25 is a theoretical assumption rather than a demonstrated result. While the model incorporates this assumption through the switching rules (Equation 5), whether real organisms possess such sensors and use them in this manner is not validated. This is a modeling assumption that enables the mathematical framework but lacks empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:28:43.532840Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8d02053a-f649-45c4-9998-3847adb6494b",
+      "result_id": "e9df923f-c393-4d8c-b148-67b08968954d"
+    },
+    {
+      "claim_id": "0295134d-9c92-4fe3-aeb2-671fd8b17a3c",
+      "result_id": "e9df923f-c393-4d8c-b148-67b08968954d"
+    },
+    {
+      "claim_id": "abae0719-32b2-4da5-ad59-79422d801438",
+      "result_id": "e9df923f-c393-4d8c-b148-67b08968954d"
+    },
+    {
+      "claim_id": "348fd74c-8a37-4193-8df7-afab81c54b63",
+      "result_id": "e9df923f-c393-4d8c-b148-67b08968954d"
+    },
+    {
+      "claim_id": "0e33adbf-e627-41a7-908f-0e58cfcbc320",
+      "result_id": "e9df923f-c393-4d8c-b148-67b08968954d"
+    },
+    {
+      "claim_id": "b3cfc265-52a6-4a00-8899-3571769baa6c",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "82cf143f-3176-40b8-a77f-a2fd8094f0ba",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "87acfeb4-b063-44f5-b10d-00c033fbb711",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "9e7e5725-b812-463b-be55-2b460e6be972",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "50af4f0e-2790-4d78-8599-4b6f8fe0396d",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "301476c5-86d7-4aa7-9f94-7379b1fe7155",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "bd2c0da1-db14-40ab-9b42-e2d371d92c53",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "357f7ec9-f614-4499-8ec4-79ece33a02cd",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "8809fc85-cba4-417e-85e0-2264f71dc1e1",
+      "result_id": "2585cca6-044b-410d-a703-18d54a445ed1"
+    },
+    {
+      "claim_id": "33f6d1a3-1b9c-4b55-b4ee-ce87e389ffef",
+      "result_id": "50ff9054-6aa0-4a8e-aec5-4d436614c330"
+    },
+    {
+      "claim_id": "5011f217-cfcd-40f0-9029-f52cc2d0b9b0",
+      "result_id": "50ff9054-6aa0-4a8e-aec5-4d436614c330"
+    },
+    {
+      "claim_id": "e925e638-7532-44ca-ba4c-711159155beb",
+      "result_id": "811c9fd4-948c-4109-a2a2-82cb77f1f60f"
+    },
+    {
+      "claim_id": "59063b7b-a80e-4f5a-b1ce-191ef72d7693",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "862a647f-59eb-4071-822c-20645de1afcb",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "f5b2a1c3-428b-4c55-b721-18dd6a5f75e6",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "95687b94-bfce-4c74-ade1-aa25a1d2f96d",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "487f9484-75ce-4eb8-954e-7cb909430f90",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "3468b534-8e22-4a96-9f56-9470a2d30c70",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "baf98a9e-d215-448a-9aca-2975c3889769",
+      "result_id": "0d64357b-1085-4e7d-80fb-7b93595aedd3"
+    },
+    {
+      "claim_id": "b0c2df9b-5e0f-4a05-985f-5ce5b72dd689",
+      "result_id": "71deab9d-2b74-44ec-8a87-1f846ce56db4"
+    },
+    {
+      "claim_id": "a4fc067d-f419-436d-8454-d12309e6489a",
+      "result_id": "a8f715b0-6415-4977-9c94-5335f57e0b54"
+    },
+    {
+      "claim_id": "3e527b97-af91-4c11-ab48-ececc8407501",
+      "result_id": "a8f715b0-6415-4977-9c94-5335f57e0b54"
+    },
+    {
+      "claim_id": "cf1eed87-20eb-4419-97ab-f98baf7ac482",
+      "result_id": "6db18d6c-ccda-4d74-938c-2bf6bd3f422e"
+    },
+    {
+      "claim_id": "aa1eeee4-c210-4144-91cd-6d6b23b437c6",
+      "result_id": "6db18d6c-ccda-4d74-938c-2bf6bd3f422e"
+    },
+    {
+      "claim_id": "9f9f3e97-bf5d-44a7-a2df-8f4c7eb6f5ad",
+      "result_id": "6db18d6c-ccda-4d74-938c-2bf6bd3f422e"
+    },
+    {
+      "claim_id": "a5ce07a9-17eb-4641-872a-4369bfcb28a6",
+      "result_id": "503e1979-5f3a-4682-96c3-4eddd388bf2a"
+    },
+    {
+      "claim_id": "3a75e0ab-0ff0-47e5-92e5-987f4dac6f00",
+      "result_id": "503e1979-5f3a-4682-96c3-4eddd388bf2a"
+    },
+    {
+      "claim_id": "79da1926-07a7-41dc-a452-95ba02468e97",
+      "result_id": "503e1979-5f3a-4682-96c3-4eddd388bf2a"
+    },
+    {
+      "claim_id": "fd6d90b5-bc3a-479f-8e19-ce0d8ac4da19",
+      "result_id": "7d9a7db3-4b5b-4d2c-8d19-9bd738828dbb"
+    },
+    {
+      "claim_id": "cd5e206b-d22a-4c43-8476-977d97331360",
+      "result_id": "7d9a7db3-4b5b-4d2c-8d19-9bd738828dbb"
+    },
+    {
+      "claim_id": "d7ae0beb-c61f-439f-83b8-65db01020d94",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "2f6f3d2a-1006-4c45-aa64-9a20ad929677",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "772db626-ec26-4d1a-afb9-3fafd6788fe6",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "c7d9aaee-038c-47f7-b45a-bf1dbcb9af99",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "32105b08-7dfc-4e5c-9e25-61a37fda2bae",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "afaf2b9f-4369-4286-90ac-d533e4cf86c8",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "3e7778bf-85c2-4c2c-ac01-7404f8a1fdf3",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "ae58340c-c9f6-449b-877f-2334f947ce10",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "3f7b9a5d-05ff-4c20-8926-216f041fd3ae",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "2234bfb0-9837-4232-bbbb-70f46a42a1be",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "5a4dff15-c97b-4d1e-b803-5ce83e0a067f",
+      "result_id": "2fb4791a-0c75-4447-b8ea-f701055f0bb5"
+    },
+    {
+      "claim_id": "756f925a-6af6-4d9a-b438-aa2ff73c7b92",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "7a11a4fb-71a4-43e0-9cc2-d5fddc1b08c5",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "17d87241-c024-412d-976e-07f6541e2795",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "203bc03d-29b3-465c-b3ec-6e19bb5ec1c4",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "9ca068af-9716-4b11-91e2-e09c573616a7",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "f8ab22c5-4dd5-47be-96f9-166fe66145ad",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "2407c2b4-979b-4c22-a7b3-672b32da2541",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "293af7da-c9d6-4883-b638-9d190d0bc914",
+      "result_id": "8deec37d-8afb-44a6-a99d-ede5a75f2c0f"
+    },
+    {
+      "claim_id": "facf74a1-f446-48bf-8627-ce9757988743",
+      "result_id": "bf456876-1289-49ff-856d-371afedde4d8"
+    },
+    {
+      "claim_id": "f2cd0b6d-184c-46ad-92c0-6e44021bb857",
+      "result_id": "bf456876-1289-49ff-856d-371afedde4d8"
+    },
+    {
+      "claim_id": "861830ea-0682-43f7-b262-0393f533507d",
+      "result_id": "bf456876-1289-49ff-856d-371afedde4d8"
+    },
+    {
+      "claim_id": "486c8ce1-4d87-4009-a2f5-ad55b574dac0",
+      "result_id": "bf456876-1289-49ff-856d-371afedde4d8"
+    },
+    {
+      "claim_id": "62be2799-4bd4-485c-befd-c06e05f9bd72",
+      "result_id": "bf456876-1289-49ff-856d-371afedde4d8"
+    },
+    {
+      "claim_id": "b20ee4d4-7317-4b70-b8b4-39b0b398cf1a",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "e75d0779-5fde-4e25-aadc-4d28c3ac6f77",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "31b6e466-e7db-4b0d-891c-ac9a1df82598",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "57965d8c-6de6-4573-815a-8976385eb482",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "9c42c0ba-0fa9-47d8-a1b8-25fccc2ddb44",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "4086715b-edf2-45f3-8dfd-40e7d4704c63",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "0d358aea-8dc9-42c8-a1e0-7072b42741c2",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "83d96f35-1529-419e-9c5c-01bbf4629343",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "86f2bdc3-2309-4b15-8211-5a4b77c04119",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "819cea91-3362-4afa-bc7c-f857010072a9",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "a69bf6a4-25f4-4107-967b-944b550ce4c8",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "dde2273c-7dde-41c2-b994-6df2b9119984",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "6aefd8b9-d4af-4371-b1c1-0fb1ad4431ee",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "6f0c5291-98b7-45bb-9c04-225dfcd4cbb0",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "d53eabca-b57d-45fe-b9dd-2055a8b7636b",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "63f250da-1914-477a-a465-246516deaec9",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "15758082-5ee7-4e87-b613-b5bc7ca0bc9c",
+      "result_id": "f50cf8f8-5447-40a7-85dc-b3df1337b2c6"
+    },
+    {
+      "claim_id": "9c0640bc-1fcc-412f-9fe9-8160439d864b",
+      "result_id": "d518ad06-1a58-4c01-b265-5b4a6b6781d5"
+    }
+  ],
+  "comparisons": []
+}

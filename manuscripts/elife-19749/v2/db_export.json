@@ -1,0 +1,1856 @@
+{
+  "submission": {
+    "id": "d12edd8c-9fcf-44ad-b691-1c188da724ea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T21:14:25.086672Z",
+    "updated_at": "2025-11-30T21:14:25.086672Z"
+  },
+  "content": [
+    {
+      "id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "submission_id": "d12edd8c-9fcf-44ad-b691-1c188da724ea",
+      "content_type": "manuscript",
+      "content_text": "# NMNAT1 inhibits axon degeneration via blockade of SARM1-mediated NAD+ depletion\n\n## Authors\n\n- Yo Sasaki<sup>1</sup> ([ORCID: 0000-0003-0024-0031](https://orcid.org/0000-0003-0024-0031)) \u2020\n- Takashi Nakagawa<sup>2</sup>\n- Xianrong Mao<sup>1</sup>\n- Aaron DiAntonio<sup>3</sup> ([ORCID: 0000-0002-7262-0968](https://orcid.org/0000-0002-7262-0968)) \u2020\n- Jeffrey Milbrandt<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics Washington University School of Medicine Saint Louis United States\n2. Frontier Research Core for Life Sciences University of Toyama Toyama Japan\n3. Department of Developmental Biology Washington University School of Medicine Saint Louis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nOverexpression of the NAD+ biosynthetic enzyme NMNAT1 leads to preservation of injured axons. While increased NAD+ or decreased NMN levels are thought to be critical to this process, the mechanism(s) of this axon protection remain obscure. Using steady-state and flux analysis of NAD+ metabolites in healthy and injured mouse dorsal root ganglion axons, we find that rather than altering NAD+ synthesis, NMNAT1 instead blocks the injury-induced, SARM1-dependent NAD+ consumption that is central to axon degeneration.\n\n## Introduction\n\nAxon loss following injury and disease (Wallerian degeneration) is a regulated process of axon self-destruction (Coleman, 2005; Gerdts et al., 2016; Wang et al., 2012). The discovery of the Wallerian degeneration slow (Wlds) protein, which dramatically delays axon degeneration after injury, raised hopes that blocking this process would be useful in the treatment of neurological disorders (Conforti et al., 2014; Mack et al., 2001). The Wlds protein blocks axon degeneration by mislocalizing the nuclear nicotinamide adenine dinucleotide (NAD+) biosynthetic enzyme NMNAT1 into axons, thereby substituting for the loss of the labile axon maintenance factor NMNAT2 (Araki et al., 2004; Babetto et al., 2010; Gilley et al., 2010; Sasaki et al., 2010). The mechanism by which NMNAT enzymes block axon degeneration is unknown. These enzymes synthesize NAD+ from nicotinamide mononucleotide (NMN) and ATP, so two candidate mechanisms for how loss of NMNAT2 triggers axon degeneration have emerged: (1) the loss of NAD+ or (2) the accumulation of NMN. The striking axonal protection provided by neuronal expression of Escherichia coli NMN deamidase, which reduces NMN levels by converting it to nicotinic acid mononucleotide (NaMN), supports the model that NMN accumulation triggers axon degeneration (Di Stefano et al., 2015). Here we investigate NAD+ metabolism in healthy and injured axons through the measurement of steady-state metabolite levels and via the analysis of NAD+ metabolite synthesis and consumption (i.e. flux analysis). Surprisingly, we find that neither NAD+ loss nor NMN accumulation trigger axon degeneration. Instead, both NMNAT1 and NMN deamidase prevent axon degeneration via blocking the injury-induced NAD+ consumption that occurs following activation of the axodestructive molecule SARM1 (Gerdts et al., 2013, 2015; Osterloh et al., 2012).\n\nTo investigate whether NAD+ loss or NMN accumulation triggers axon degeneration, we assessed injury-induced axon degeneration and NAD+ metabolite levels in cultured DRG neurons in which the NAD+ biosynthetic pathway was perturbed at various steps (Figure 1a). To raise intracellular NMN levels we expressed the NMN biosynthetic enzyme NAMPT or applied nicotinamide riboside (NR) to neurons expressing NRK1, a nicotinamide riboside kinase that converts NR to NMN. To reduce NMN levels we treated neurons with the NAMPT inhibitor FK866 or expressed E. coli NMN deamidase (Di Stefano et al., 2015). We also tested the potent axoprotective cytoplasmic version of NMNAT1 (cytNMNAT1), which appears to substitute in axons for the short-lived NMNAT2 (Gilley et al., 2010, Sasaki et al., 2009a). The expression of these enzymes in axons was confirmed by Western blotting (Figure 1\u2014figure supplement 1). Using our automated image analysis axon degeneration assay, and consistent with previous reports, all of these manipulations delayed axon degeneration although to dramatically different extents (Figure 1b,c and Figure 1\u2014source data 1; Di Stefano et al., 2015; Sasaki et al., 2006, 2009b). FK866 and NR treatment provided only modest protection, delaying axon degeneration by ~6 to 9\u2009hr. Neurons expressing NRK1 and treated with NR or expressing NAMPT showed strong axon protection for 24 to 48\u2009hr. The strongest axonal protection was found in neurons expressing cytNMNAT1 or NMN deamidase, which both block axon degeneration for at least 3 days after axotomy.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig1-v2.jpg)\n\n**Figure 1.:** (a) Diagram of mammalian nicotinamide adenine dinucleotide (NAD+) biosynthesis pathways. Nicotinamide (Nam) is the major NAD+ precursor in mammals. It is converted to nicotinamide mononucleotide (NMN) by the NAMPT (nicotinamide phosphoribosyltransferase) enzyme, and then to NAD+ by the NMNAT (nicotinamide mononucleotide adenylytransferase) enzymes. There are three isoforms of NMNAT in mammalian cells; NMNAT1, 2, and 3. NMN deamidase is a bacterial enzyme that converts NMN to nicotinic acid mononucleotide (NaMN). NMN synthetase is also a bacterial enzyme that performs the reverse reaction and converts NaMN to NMN. NaMN is converted to nicotinic acid adenine dinucleotide (NaAD) by NMNAT1, 2, or 3. NaAD Is converted to NAD+ by NAD synthetase. Nicotinamide riboside (NR) is an alternative NADprecursor that is converted to NMN by NRK1 or NRK2 (nicotinamide riboside kinase enzymes). FK866 is a chemical inhibitor of NAMPT enzymatic activity. (b) Representative images of DRG axons at 24\u2009hr after axotomy. DRG neurons were infected with lentivirus expressing mCherry protein (control), cytNMNAT1, NMN deamidase (NMN DD), NAMPT, or NRK1 at four days prior to axotomy. Nicotinamide riboside (NR, final 100 \u00b5M in the culture medium) was added to control or NRK1 expressing neurons at 24\u2009hr prior to axotomy and FK866 (final 100 nM in the culture medium) was added at the time of axotomy. (c) Axon degeneration under various manipulations of NAD+ biosynthesis pathways was quantified using an\u00a0axon degeneration index. Data show mean \u00b1 s.d., one-way ANOVA F(31,256) = 149.5, p<210\u201316. *p<0.005 and **p<1\u00d710\u20137 denote a\u00a0significant difference from control DI before axotomy with Holm-Bonferroni multiple comparison (Figure\u00a01\u2014source data 1, n = 9 for each time point).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Axonal localization of NAD+ biosynthesis enzymes was confirmed by Western blotting. DRG drop cultures were infected with lentivirus expressing the indicated NAD+ biosynthesis enzymes fused to the 6xHis epitope. Six days after infection, the cell bodies were removed and axonal lysates were prepared. Each enzyme or enzyme combination (NMN DD and NMN SN) was detected in the axon lysates using anti-6xHis antibody (Millipore).\n\nTo correlate axon degeneration with levels of NAD+ metabolites, we measured baseline NMN, NaMN, NAD+, and nicotinic acid adenine dinucleotide (NaAD) from DRG neurons using LC-MS/MS before axonal transection. As previously described, FK866 led to a slow decline in both cellular NAD+ and NMN before the axons begin to fragment (Figure 2a and Figure 2\u2014source data 1; Di Stefano et al., 2015). In contrast, NAMPT expression or pre-incubation with NR in the presence of NRK1 significantly increased both NMN and NAD+\u00a0levels. NMN deamidase significantly increased the levels of NaMN and NaAD while dramatically reducing NMN and NAD+ levels in DRG neurons (Figure 2b,c and Figure 2\u2014source data 1). Despite reducing NAD+ levels to 11 \u00b1 7% of control, NMN deamidase-expressing neurons showed no signs of cell death or axon degeneration, but instead displayed potent axonal protection (Figure 3c and Figure 3\u2014source data 1) as previously reported (Di Stefano et al., 2015). The protection afforded by NMN deamidase was equivalent to that observed in neurons expressing cytNMNAT1 (Figure 3c and Figure 3\u2014source data 1), however baseline levels of NMN and NAD+ were normal in neurons expressing cytNMNAT1 (Figure 2b,c and Figure 2\u2014source data 1). Similarly, SARM1-deficient neurons had baseline levels of NMN, NAD+, NaMN, and NaAD that were equivalent to those of wildtype neurons (Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 2, Gerdts et al., 2015). From these studies, it is clear that robust axonal protection can be observed in neurons that maintain low levels of NMN and NAD+ (NMN deamidase), normal levels of NMN and NAD+ (cytNMNAT1 or SARM1 knockout), or high levels of NMN and NAD+ (NAMPT or NRK1\u00a0+ NR).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig2-v2.jpg)\n\n**Figure 2.:** (a) Intracellular NMN and NAD+ levels relative to control (0\u2009hr) were quantified at 2, 4, and 6\u2009hr after 100 nM FK866 addition using LC-MS/MS. Data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA F(3,8)\u00a0=\u00a012.9, p=0.00197 for NMN; F(3,8) = 6.541, p=0.0152 for NAD+. *p<0.05 denotes significant difference from metabolite levels at 0\u2009hr with Holm-Bonferroni multiple comparison (Figure 2\u2014source data 1, n=3). (b, c) Intracellular NMN and nicotinic acid mononucleotide (NaMN) levels (b), and NAD+ and nicotinic acid adenine dinucleotide (NaAD) levels (c) relative to control (for NMN, NAD+) or relative to NMN DD-expressing neurons (for NaMN, NaAD) were measured using LC-MS/MS. Data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA F(6, 35)=369.8, p<2\u00d7 10\u201316 for NaMN; F(6, 35) = 29.92, p=2.14\u00d710\u201312 for NMN; F(6, 35)\u00a0=\u00a0537, p<2\u00d710\u201316 for NaAD; F(6, 35) = 33.69, p=3.83\u00d7 10\u201313 for NAD. *p<0.05, **p<1\u00d710\u20134 denote a\u00a0significant difference from control metabolite levels with Holm-Bonferroni multiple comparison (Figure 2\u2014source data 1, n\u00a0=\u00a06). (d, e) Axonal NAD+\u00a0(d) and NMN (e) were quantified at 0, 1, 2, 3, and 6\u2009hr post axotomy using LC-MS/MS. Axonal metabolites were collected from transected axons at the indicated time after axotomy. Data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA F(4,10) = 193.6, p=2\u00d710\u20139 for control NAD+; F(4,10)\u00a0=\u00a06.682, p=6.694\u00d710\u20133 for control NMN; F(4,10)\u00a0=\u00a028.87, p=1.87\u00d710\u20135 for NRK1 NR, NAD+; F(4,10)\u00a0= 24.49, p=3.78\u00d710\u20135, for NRK1+ NR NMN. There are no significant metabolite changes after axotomy for NAMPT, cytNMNAT1, or NMN DD expressing cells (F(4, 10)\u00a0=\u00a01.066, p=0.422 for NAMPT NAD+, F(4,10)\u00a0=\u00a00.893, p=0.503 for NAMPT NMN, F(4,10)\u00a0=\u00a00.127, p=0.969 for cytNMNAT1 NAD+, F(4,10)=0.366, p=0.828 for cytNMNAT1 NMN, F(4,10)=0.343, p=0.843 for NMN DD NAD+, F(4,10)\u00a0=\u00a00.004, p=1 for NMN DD NMN). *p<0.05, **p<1\u00d710\u20134 denote significant difference from axonal metabolite levels at 0\u2009hr post axotomy with Holm-Bonferroni multiple comparison (Figure 2\u2014source data 1, n\u00a0=\u00a03). # p<0.05 denotes significant difference of baseline NAD+ or NMN before axotomy compared with control; One-way ANOVA with Holm-Bonferroni multiple comparison, F(4, 10) = 10.8, p=0.0012 for NAD+ and F(4,10) = 41.44, p=3.1\u00d710\u20136 for NMN (Figure 2\u2014source data 1, n\u00a0=\u00a03).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** NAD+ and its precursor metabolite levels in wild-type and SARM1 KO neurons. Metabolites were extracted from DRG neurons cultured for six days and NaMN, NMN, NaAD, NAD+ and ATP were measured using LC-MSMS. NMN and NAD+ levels were normalized using ATP concentration. There were no significant differences in NMN (p=0.11) or NAD+(p=0.21) between wild-type and SARM1 KO neurons (Student t-test). NaMN and NaAD were undetectable in these neurons using this protocol. Data shown is the mean \u00b1 s.d. (Figure 2\u2014source data 2, n\u00a0=\u00a06).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Axonal adenylate pool (ATP\u00a0+ ADP\u00a0+ AMP) (a) and axonal NMN normalized by adenylate pool (b) at 0, 1, 2, 3, and 6\u2009hr post axotomy are shown. DRG neurons were infected with lentivirus expressing mCherry protein (control), cytNMNAT1, NMN deamidase (NMN DD), NAMPT, or NRK1 at 4 days prior to axotomy. NR (100 \u00b5M) was added to NRK1-expressing cells at 24\u2009hr prior to axotomy. Axonal metabolites were collected from transected axons at the indicated time after axotomy and measured by LC-MS/MS. Data show mean \u00b1 s.d., one-way ANOVA F(4,10) = 63.77, p=4.44\u00d710\u20137 for control AxP; F(4,10)\u00a0=\u00a040.6, p=3.75\u00d710\u20136 for control NMN/AxP; F(4,10)\u00a0=\u00a043.71, p= 2.65\u00d710\u20136 for NRK1\u00a0+ NR, NMN/AxP. *\u00a0p<0.05, # p<0.005, **p<1\u00d710\u20135 denote significant difference from axonal metabolite levels at 0\u2009hr post axotomy (Figure 2\u2014source data 3, n\u00a0=\u00a03).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig3-v2.jpg)\n\n**Figure 3.:** (a, b) Metabolites were analyzed from control or NMN deamidase (NMN DD)-expressing neurons. Nicotinic acid mononucleotide (NaMN) and nicotinic acid adenine dinucleotide (NaAD) levels were normalized to those present in NMN DD-expressing neurons. NMN and NAD+ levels were normalized to that of control neurons. Nicotinamide riboside (NR, 5 mM) was added at 24\u2009hr prior to metabolite measurements. Data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA (NaMN, F(4, 40) = 71.8, p<2\u00d710\u201316; NMN, F(4, 40) = 72.69, p=1.64\u00d710\u20139; NaAD, F(4,40) = 101.3, p < 2\u00d710\u201316; NAD+, F (4,40) = 121.4, p < 2 x 10\u201316). *p <1 \u00d7 10\u201310 denotes significant difference from control (for NMN and NAD+) or NMN DD-expressing (for NaMN or NaAD) metabolite levels with Holm- Bonferroni multiple comparison (Figure 3\u2014source data 1, n = 9). (c) Axon degeneration index (DI) of NMN DD and/or NMN synthetase (NMN SN)-expressing neurons from 0 to 72\u2009hr post axotomy; data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method). One-way ANOVA (F(24, 200) = 75.06, p<2 \u00d7 10\u201316. *p<0.002, **p<2 \u00d7 10\u201316denote significant difference from control DI before axotomy (Figure 3\u2014source data 1, n = 9).\n\nThe above results demonstrate that changes in baseline levels of NMN and NAD+ are insufficient to trigger axon degeneration, so we next assessed changes in axonal NAD+ metabolites after axotomy (Figure 2d,e and Figure 2\u2014source data 1). We plated neurons in such a manner that we could harvest axons separate from cell bodies and thereafter use LC-MS/MS to measure axon-specific metabolite levels. These studies showed a dramatic decline in NAD+ levels after injury in control axons, consistent with previous reports (Di Stefano et al., 2015; Gerdts et al., 2015; Wang et al., 2005). We also found a ~2-fold increase in the levels of NMN within the first two hours after injury. NMN levels declined back to those observed in uninjured axons by six hours post-axotomy. A previous report showed that sciatic nerve transection causes a continuous increase in nerve NMN concentration when it is normalized to the nerve adenylate pool (Di Stefano et al., 2015). We confirm this finding using purified axon preparations, however, we demonstrate that this is due to a rapid decline in the adenylate pool rather than an increase in NMN levels (Figure 2\u2014figure supplement 2 and Figure 2\u2014source data 3). We next assessed NAD+ metabolites in axons that are robustly protected from axotomy-induced degeneration to determine whether these treatments are correlated with a specific metabolite profile. In cells expressing the strongly axoprotective cytNMNAT1, axonal NAD+ and NMN were comparable to baseline levels in uninjured axons of control neurons and these metabolite levels did not change after axotomy. Expression of NMN deamidase reduced axonal NAD+ and NMN compared with control axons, and these metabolite levels did not change after axotomy. In contrast, axons from neurons expressing NAMPT had high levels of both NAD+ and NMN at baseline and at six hours after axotomy. In axons from neurons expressing NRK1 and treated with NR there was a dramatic increase of NAD+ and NMN levels at baseline. After injury, these axons showed a robust decrease in NAD+ but further increases in NMN. Indeed, NMN levels in axons from these neurons were 16-fold higher than in control axons (0.16 \u00b1 0.04 \u00b5M vs. 0.01 \u00b1 0.001 \u00b5M, Figure 2e and Figure 2\u2014source data 1), yet these axons were strongly protected from degeneration (>48\u2009hr). These results demonstrate that even within injured axons, elevated levels of NMN do not promote axon degeneration but rather can be compatible with robust axonal protection.\n\nWhile these data are inconsistent with the hypothesis that elevated NMN induces axon degeneration, the finding that NMN deamidase both potently protects axons and leads to low levels of NMN does support this hypothesis (Di Stefano et al., 2015). Hence, we sought to determine whether maintaining low NMN levels is necessary for the axoprotective function of NMN deamidase. We approached this problem by attempting to maintain normal NMN levels in neurons expressing E. coli NMN deamidase and then assessing whether axons now degenerate after axotomy. To this end, we utilized an enzyme from Francisella tularensis called NMN synthetase that catalyzes the conversion of NaMN to NMN (i.e., the reverse of the reaction catalyzed by E. coli NMN deamidase) (Figure 1a, Figure 1\u2014figure supplement 1). When we expressed NMN synthetase alone in neurons no changes in any of the measured metabolites were observed (Figure 3a,b and Figure 3\u2014source data 1), and injured axons from these neurons degenerated normally (Figure 3c and Figure 3\u2014source data 1). However, when NMN synthetase was co-expressed along with NMN deamidase, the normal NMN deamidase-catalyzed reductions in NMN and NAD+ as well as the increases in NaMN and NaAD are largely abolished (Figure 3a,b and Figure 3\u2014source data 1). Furthermore, the addition of the NMN precursor NR to neurons co-expressing F. tularensis NMN synthetase and E. coli NMN deamidase raised axonal NMN well above control levels (Figure 3a and Figure 3\u2014source data 1). Despite this elevation in NMN levels under these conditions, NMN deamidase continued to provide robust axon protection (Figure 3c and Figure 3\u2014source data 1). In addition, we also found that protection of injured axons did not correlate with levels of NAD+, NaMN, or NaAD. Hence, neither a reduction in NMN nor the accumulation of NaMN/NaAD is necessary for NMN deamidase mediated axonal protection. These findings are inconsistent with the hypothesis that the axonal NMN level is a driver of axon degeneration.\n\nFollowing axotomy, axonal NAD+ levels decline. This decline could be due to loss of NAD+ biosynthesis via degradation of the labile axonal NMNAT isoform NMNAT2 (Gilley et al., 2010), and/or to an increase in NAD +\u00a0degradation due to activation of the pro-degenerative molecule SARM1 (Gerdts et al., 2015). To interrogate the processes of NAD+ synthesis and degradation independently, we developed an axonal NAD+ flux assay. The nicotinamide (Nam) in the\u00a0DRG culture medium was largely replaced with deuterium-labeled nicotinamide (D4-Nam: 2,4,5,6-deutrium Nam, 300 \u00b5M) to achieve a 10-fold excess over the original Nam concentration in culture medium). The addition of up to 1\u2009mM of this NAD+ precursor did not alter the time course of axon degeneration (Figure 4\u2014figure supplement 1 and Figure 4\u2014source data 2) and allowed us to identify its labeled-NAD+ derivative using LC-MS/MS. We added labeled Nam at time zero, and followed its conversion by quantifying non-labeled (light) and labeled (heavy) NAD+ in axons using LC-MS/MS at various times after addition. Conversion of the NAD+ pool from light to heavy was observed without delay, demonstrating that D4-Nam replaces Nam for NAD+ synthesis (Figure 4\u2014figure supplement 2). The increase in heavy NAD+ following D4-Nam addition gives a measure of the NAD+ biosynthetic rate, while the loss of light NAD+ reflects the NAD+ consumption rate. In uninjured axons steady-state NAD+ (summation of heavy and light NAD+) was constant due to ongoing and balanced NAD+ synthesis (6.9 \u00b1 1.4% per hour) and NAD+ consumption (8.2 \u00b1 3.1% per hour) (Figure 4a). Next we compared basal NAD+ flux in uninjured axons under various axoprotective conditions. NAD+ biosynthesis enzymes were expressed and axonal NAD+ consumption rates were measured at 4\u2009hr post D4-Nam addition. Absolute NAD+ consumption rates were normalized to ATP levels, which are constant in uninjured axons. We found that axon NAD+ consumption in uninjured axons was similar to wild type levels in SARM1 KO neurons as well as neurons overexpressing cytNMNAT1. NAD+ consumption was lower in axons from NMN deamidase-expressing neurons and higher in axons from NAMPT-expressing neurons (Figure 4\u2014figure supplement 3 and and Figure 4\u2014source data 2). Since NAD+ levels are at equilibrium in these uninjured axons, these changes in NAD+ consumption are balanced by equivalent changes in NAD+ production. Hence, basal levels of NAD+ flux are well correlated with steady-state NAD+ levels (lower in NMN deamidase-expressing neurons and higher in NAMPT-expressing neurons) but not with the axonal protection phenotypes (Figure 1c and Figure 1\u2014source data 1, Figure 2b,c and Figure 2\u2014source data 1, Figure 4\u2014figure supplement 3). These results are expected since NMN deamidase inhibits NAD+ synthesis by reducing the levels of NMN whereas NAMPT promotes NAD+ synthesis by increasing the levels of NMN. NMN is the rate limiting metabolite in the NAD +biosynthetic pathway (Revollo et al., 2004).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig4-v2.jpg)\n\n**Figure 4.:** (a) Axonal NAD+ consumption and synthesis rates were measured by using stable isotope Nam (D4-Nam; 2,4,5,6-deutrium Nam). Culture medium was supplemented with 300 \u00b5M of D4-Nam at time 0 and then deuterium-labeled (heavy) NAD+ (to follow synthesis) and non-labeled (light) NAD+ (to follow consumption) were measured from axonal metabolites using LC-MS/MS. Representative graphs of NAD+ synthesis and consumption before and after axotomy in wt and SARM1 KO are shown (mean \u00b1 s.d., n=3 for each data point). (b) Quantification of axonal NAD+ consumption rate under various manipulations of NAD+ biosynthesis pathways before and 4\u2009hr after axotomy (NR concentration was 1 mM for cytNMNAT1 and 5 mM for NMN DD NMN SN expressing cells); data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA F(13,118) = 17.19 p<2 \u00d7 10\u201316. *p<0.005 denotes significant difference from the\u00a0NAD+ consumption rate of control before axotomy with Holm-Bonferroni multiple comparison (Figure 4\u2014source data 1, n=9 except NAMPT where n\u00a0=\u00a012). (c) Fold increase of axonal NAD+ synthesis at 2\u2009hr after axotomy compared with the\u00a0uncut control under various manipulations of the\u00a0NAD+ biosynthesis pathway. The\u00a0NAD+ synthesis rate was normalized to that of corresponding uncut axons; data show the first and third quartile (box height) and median (line in the box) \u00b1 1.5 time interquartile (details in the method), one-way ANOVA F(4, 43) = 21.41, p=9 \u00d7 10\u201310. *p<4 \u00d7 10\u20135 denotes a\u00a0significant difference form fold increase of NAD+ synthesis in control with Holm-Bonferroni multiple comparison (Figure 4\u2014source data 1, n=9 except for control where n\u00a0=\u00a012).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Both control and 1 mM Nam treated axons degenerate (DI > 0.3) in 9\u2009hr.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** D4-Nam (300 \u00b5M) is added to the\u00a0DRG culture medium at 0\u2009hr and then whole cell metabolites are extracted at the\u00a0indicated time and light NAD+ and heavy NAD+ are quantified using LC-MS/MS. Net NAD+\u00a0consumption and synthesis are measured as a decrease of light NAD and an increase of heavy NAD+, respectively. Note that total NAD+ is increased about 20% at 30\u2009hr after the addition of D4-Nam (mean \u00b1 s.d., n=3 for each data point).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** D4-Nam was added for 4\u2009hr and axonal metabolites were extracted. ATP level and light and heavy NAD+ levels were measured using LC-MSMS. NAD+concentrations were normalized to ATP, which is stable in uninjured axons, and NAD+\u00a0consumption rates were calculated as described in the methods. Data show the mean \u00b1 s.d., one-way ANOVA F(4, 10) = 28.99, p=1.77 10\u20135. * p < 0.03 denotes significant difference from the\u00a0control NAD+ consumption rate with Holm-Bonferroni multiple comparison (Figure 4\u2014source data 3, n=3).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig4-figsupp4-v2.jpg)\n\nTo analyze NAD+ flux following injury, D4-Nam was added at the time of axotomy. In axotomized axons, steady-state NAD+ levels declined as previously reported. We now show that this is due to a large increase in the NAD+ consumption rate (from 8.5 \u00b1 3.8% per hour prior to injury to 21.7 \u00b1 1.6% per hour after injury: Figure 4b and Figure 4\u2014source data 1, Figure 4\u2014figure supplement 4). Surprisingly, in the first two hours after injury, there was also a modest increase in NAD+ biosynthesis (control: 6.6 \u00b1 3.7% per hour vs. post-axotomy: 14.0 \u00b1 6.9% per hour; Figure 4a, c and Figure 4\u2014source data 1). This is likely due to the activation of NAMPT, the rate-limiting enzyme in the NAD+ biosynthetic pathway, which is negatively regulated by NAD+. The decline in NAD+ relieves this feedback inhibition and results in increased NAMPT activity\u00a0(Elliott and Rechsteiner, 1982), which is also the likely explanation for the transient increase in axonal NMN after injury (Figure 2d and Figure 2\u2014source data 1). Although the NAD+\u00a0synthesis rate was increased during the first two hours after axotomy (Figure 4c and Figure 4\u2014source data 1), total NAD+ declined due to the larger increase in the NAD+ consumption rate (Figure 4a). After two hours post-axotomy, heavy NAD+ declined at the same rate as light NAD+ (Figure 4a), indicating a complete loss of NAD+ biosynthesis, likely due to loss of the labile NMNAT2 in the severed axon (Gilley et al., 2010). Hence, flux analysis demonstrates that injury-induced NAD+ depletion is due to a major increase in NAD+ consumption that begins shortly after the\u00a0axon damage and before the loss of axonal NAD+ synthesis (Figure 4c and Figure 4\u2014source data 1). This surprising finding highlights the utility of flux analysis to provide mechanistic insights that were not appreciated in prior studies of steady-state NAD+ levels.\n\nWe hypothesized that SARM1 may be required for this injury-dependent increase in NAD+ consumption because we previously demonstrated that SARM1 is required for the steady-state loss of NAD+ following injury in vivo and that SARM1 activation in primary cultured neurons leads to NAD+ degradation (Gerdts et al., 2015). To test this hypothesis, we applied NAD+ flux analysis to SARM1-deficient neurons. The NAD+ consumption rate in SARM1-deficient axons was comparable to control axons prior to injury (Figure 4a, Figure 4\u2014figure supplement 3 and Figure 4\u2014source data 2). However in contrast to the dramatic increase in NAD+ consumption in wildtype neurons after injury, there was no significant change in NAD+\u00a0consumption rate after injury in SARM1 mutant axons (uninjured: 6.3 \u00b1 2.4% per hour vs. SARM1 mutant: 7.9 \u00b1 3.7% per hour after axotomy). Hence, SARM1 is required for the injury-induced increase in NAD+\u00a0consumption (Figure 4a,b and Figure 4\u2014source data 1, Figure 4\u2014figure supplement 4). This supports and extends our previous finding that SARM1 is responsible for initiating events that lead to the depletion of axonal NAD+ following axotomy (Gerdts et al., 2015).\n\nSince SARM1 is required for axon degeneration and axonal NAD+ depletion, we next assessed whether other manipulations that affect axon survival do so by blocking injury-induced SARM1-dependent axonal NAD+\u00a0depletion (Figure 4b and Figure 4\u2014source data 1). The overexpression of NAMPT, which leads to modest axon protection, did not block injury-induced SARM1-dependent NAD+ consumption. In contrast, expression of either cytNMNAT1 or NMN deamidase completely eliminated SARM1-dependent NAD+ consumption after axotomy (Figure 4b and Figure 4\u2014source data 1). This is a striking result that likely explains the profound axoprotective effects of overexpressing either NMNAT or NMN deamidase \u2014both block the ability of SARM1 to trigger NAD+ degradation following axotomy. Loss of SARM1 or gain of NMNAT or NMN deamidase all lead to profound and long-lasting axonal protection following injury, and all three block NAD+ degradation following injury. In contrast, treatments that provide modest axon protection (e.g. NAMPT) likely do so by transiently countering injury-induced NAD+ degradation through their ability to elevate intracellular NAD+ and thus maintain axonal NAD+ levels above a critical threshold for a longer period after injury.\n\nWe have shown that a reduction in NMN is not required to block axon degeneration (Figure 1\u20133 and Figure 3\u2014source data 1), however the role of NMN in SARM1 activation has not been investigated. Using injury-activated NAD+\u00a0consumption as an assay of SARM1 pathway activity, we tested whether maintaining low NMN levels is necessary for the blockade of SARM1 pathway activation by cytNMNAT1 or NMN deamidase. Intracellular NMN was raised by the addition of NR to cytNMNAT1 expressing neurons (5.3 \u00b1 2.9 fold) or NMN deamidase and NMN synthetase expressing neurons (3.7 \u00b1 3.1-fold) and SARM1-dependent NAD+ consumption was measured. In both cases, SARM1-triggered axonal NAD+ degradation after injury is fully inhibited by cytNMNAT1 or NMN deamidase despite high levels of NMN (Figure 4b and Figure 4\u2014source data 1). Hence, a reduction in NMN is not necessary for blockade of SARM1 pathway activation by NMNAT1 or NMN deamidase.\n\nThese findings support a model in which axotomy activates SARM1, which then triggers events that lead to a catastrophic loss of NAD+ followed by axon degeneration. Here we identify two distinct mechanisms that block axon degeneration (Figure 5). The most potent protection comes from overexpression of cytNMNAT1 or NMN deamidase, both of which block SARM1-dependent NAD+ depletion in the injured axon. By inference, NMNAT2 also works via this mechanism, thus when its levels decline in the injured axon, SARM1 becomes activated. This biochemical demonstration that NMNAT enzymes inhibit SARM1 activation is consistent with a recent study showing that the embryonic lethality of NMNAT2 knockout mice is rescued by the loss of SARM1. This provides strong genetic evidence that NMNAT2 functions upstream of SARM1 (Gilley et al, 2015, Figure 5). Weaker axonal protection is provided by overexpression of NAMPT or by treating neurons expressing NRK1 with NR. These latter manipulations do not block SARM1-dependent NAD+\u00a0consumption, but do lead to a large increase in steady-state NAD+ levels prior to axotomy that likely maintains NAD+ above a critical threshold for an extended period of time after SARM1 activation (Figure 5). As in other studies (Sasaki et al., 2009b, Di Stefano et al., 2015), we also observed that FK866, a NAMPT inhibitor, delays axon degeneration. We do not have an adequate explanation for this phenomenon; however, it should be noted that FK866 provides much weaker protection than that afforded by NAMPT (Figure 1, and Figure 1\u2014source data 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/19749/elife-19749-fig5-v2.jpg)\n\n**Figure 5.:** Axonal injury activates SARM1 that then results in an increase in NAD+ consumption that is soon followed by axon fragmentation (blue). NMNAT enzymes and NMN deamidase inhibit SARM1 induction of NAD+ consumption and provide strong axonal protection that is indistinguishable from SARM1-deficient axons (red). NAMPT or NRK +\u00a0NR raise intracellular NAD+ in pre-injured axons thus delaying the point where NAD+ levels reach a critical threshold and axonal degeneration ensues (green). The axonal protection mediated by NAMPT or NRK +\u00a0NR is not as long-lasting as that mediated by NMNAT enzymes or NMN deamidase.\n\nIn this work we demonstrate that blockade of SARM1 activation and axonal protection is not due to an increase in NAD+ or a decrease in NMN. How then do NMNAT enzymes (and NMN deamidase) block SARM1-stimulated axon degeneration and NAD+ loss? One possibility is that these enzymes physically interact with SARM1 to inhibit its ability to activate axon degeneration pathways including those involved in NAD+ loss. However, NMNAT enzymes from many species, including the archean Methanocaldococcus jannaschii, provide dramatic axonal protection despite their minimal amino acid sequence similarity, thus making direct interaction with SARM1 an unlikely mechanism (Sasaki et al., 2009b). Second, the necessity for increased NAD+ levels in a specific axonal compartment is an attractive explanation, however there is no evidence for this mechanism. Protein transduction experiments with cytNMNAT1 show rapid and strong axon protection, and it seems unlikely that a mutant nuclear protein would end up in a specific axonal compartment necessary to promote axon protection (Sasaki et al., 2009a). Finally, mutations in both NMNAT enzymes and NMN deamidase that destroy their enzymatic activity also block their axon protective capabilities (Araki et al., 2004, Sasaki et al., 2009b, Di Stefano et al., 2015). This strongly suggests that metabolites whose levels are altered by NMNAT and/or NMN deamidase activity regulate SARM1 function. NMN was such a candidate metabolite because it is a substrate for both NMNAT enzymes and NMN deamidase; however, our studies show that NMN levels do not regulate NAD+ loss and axon degeneration, both SARM1-induced activities. Further investigations to identify other cellular metabolites modulated by NMNAT or NMN deamidase may help elucidate the mechanism of SARM1 regulation and axonal degeneration.\n\nThese studies support the hypothesis that SARM1-dependent NAD+ consumption is the central biochemical event in the axonal degeneration program. Further, they explain the phenotype of the wlds mutant mouse as one caused by the continued inhibition of SARM1 by the longer-lived Wlds protein that compensates for the loss of NMNAT2. Finally, these findings suggest that inhibitors of SARM1 or agents that boost NAD+synthesis are likely to be valuable approaches for blocking axonal degeneration in the injured or diseased nervous system.\n\n## Materials and methods\n\n### Mouse\n\nCD1 mice (gestation day 11.5; Charles River Laboratories) and SARM1 knockout mice (C57/BL6; Szretter et al., 2009) are housed (12\u2009hr dark/light cycle and less than 5 mice per cage) and used under the direction of institutional animal study guidelines at Washington University in St. Louis.\n\n### Chemicals\n\nNicotinamide riboside (NR) was a gift from ChromaDex, Inc. Deuterium labeled nicotinamide (D4-Nam: 2,3,4,5 deuterium Nam) was obtained from C/D/N Isotopes Inc. NR and D4-Nam were dissolved in water at concentration of 100\u2009mM and stored at \u201320\u00b0C. FK866 was obtained from National Institute of Mental Health Chemical Synthesis and Drug Supply Program (MH number F-901), solubilized in DMSO (final concentration 100\u2009mM) and stored at \u221220\u00b0C. Nicotinamide mononucleotide (NMN), nicotinicacid mononucleotide (NaMN), nicotinamide adenine dinucleotide (NAD+), and nicotinicacid adenine dinucleotide (NaAD) were all obtained from Sigma and stored at 20\u00b0C as 100\u2009mM solutions in water.\n\n### cDNA\n\nLentivirus transfer vector constructs harboring cDNAs including mCherry, cytNMNAT1 (mouse), NAMPT (mouse), NRK1 (mouse) were previously described (Sasaki et al., 2006). For NMN deamidase (E. Coli) and NMN synthetase (F. tularensis), mammalian codon optimized double strand DNA of each coding region with 6xHis tag was synthesized (gBlocks gene fragments; Invitrogen) and cloned into lentivirus transfer vector FCIV (Araki et al., 2004) derived from FUGW (a gift from David Baltimore; Addgene plasmid #14883; Lois et al., 2002) using InFusion (Clontech). The DNA sequences for NMN deamidase and NMN synthetase are presented below.\n\n#### NMN deamidase\n\n5\u2019 ATGACCGACTCCGAGCTGATGCAGTTGTCTGAGCAGGTGGGCCAGGCATTGAAGGCAAGAGGGGCTACAGTCACAACCGCTGAGTCCTGTACTGGCGGATGGGTGGCAAAGGTCATAACTGATATTGCCGGATCAAGCGCCTGGTTTGAGAGAGGCTTCGTGACATATTCAAATGAAGCAAAAGCCCAAATGATTGGCGTTCGAGAGGAAACCCTCGCTCAACACGGAGCTGTAAGTGAGCCTGTTGTAGTGGAAATGGCAATCGGTGCCCTTAAAGCTGCAAGGGCTGATTACGCAGTATCCATTTCAGGCATAGCAGGTCCCGATGGCGGATCAGAGGAGAAACCTGTCGGGACTGTATGGTTCGCCTTTGCAACAGCACGGGGAGAAGGGATAACCCGAAGAGAATGTTTTTCTGGTGATCGGGATGCTGTGCGACGGCAGGCCACCGCCTATGCTCTTCAAACTCTCTGGCAGCAGTTCCTCCAAAATACACATCACCATCATCATCATTTAG-3\u2019\n\n6xHis-tag\n\n#### NMN synthetase\n\n5\u2019-ATGAAGATTGTGAAGGACTTTAGCCCCAAAGAGTATAGTCAGAAACTTGTTAATTGGTTGAGTGACAGCTGTATGAATTACCCTGCTGAGGGATTCGTGATAGGTCTCTCAGGAGGCATCGATAGTGCCGTCGCTGCCTCTCTCGCCGTCAAGACTGGACTGCCAACCACTGCCCTTATTCTGCCATCTGACAACAATCAGCACCAGGACATGCAGGACGCCCTCGAGCTGATCGAAATGTTGAACATAGAGCATTACACAATCTCAATTCAGCCTGCCTACGAAGCCTTTCTTGCTTCTACTCAGAGCTTCACAAACCTGCAGAATAACCGGCAGCTGGTGATTAAAGGGAATGCTCAGGCACGTCTCCGCATGATGTATCTGTACGCATATGCACAGCAGTATAACCGGATCGTTATCGGGACAGATAACGCCTGCGAGTGGTATATGGGCTACTTTACCAAGTTCGGGGATGGTGCCGCTGACATCCTCCCTCTGGTGAATCTGAAGAAATCCCAGGTTTTTGAGTTtGGAAAATACCTGGACGTGCCAAAAAACATTCTGGACAAGGCACCCTCCGCTGGCCTTTGGCAGGGCCAGACAGATGAAGATGAAATGGGCGTGACCTACCAGGAAATAGACGATTTCCTGGATGGGAAGCAGGTCTCCGCAAAGGCACTGGAGCGAATCAACTTCTGGCATAACAGAAGCCACCACAAGAGGAAATTGGCTCTCACCCCCAATTTTCATCACCATCATCATCATTGA -3\u2019\n\n6xHis-tag\n\n### DRG drop culture\n\nMouse DRG culture was performed as described before (Sasaki et al., 2009b). Mouse dorsal root ganglion (DRG) was dissected from embryonic days 13.5 CD1 mouse embryo (50 ganglion per embryo) and incubated with 0.05% Trypsin solution containing 0.02% EDTA (Gibco) at 37\u00b0C\u00a0for 15\u2009min. Then cell suspensions are triturated by gentle pipetting and washed 3 times with the\u00a0DRG growth medium (Neurobasal medium (Gibco) containing 2% B27 (Invitrogen), 100 ng/ml 2.5S NGF (Harlan Bioproduts), 1 \u00b5M uridine (Sigma), 1 \u00b5M 5-fluoro-2\u2019-deoxyuridine (Sigma), penicillin, and streptomycin). Cells were suspended in DRG growth medium at a ratio of 100 \u00b5l medium/50 DRGs. The cell density of these suspensions was ~7x106 cells/ml. Cell suspensions (1.5 \u00b5l/96 well, 10 \u00b5l/24 well) were placed in the center of the well using either 96- or 24-well tissue culture plates (Corning) coated with poly-D-Lysine (0.1 mg/ml; Sigma) and laminin (3 \u00b5g/ml; Invitrogen). Cells were allowed to adhere in humidified tissue culture incubator (5% CO2) for 15\u2009min and then DRG growth medium was gently added (100 \u00b5l/96 well, 500 \u00b5l/24 well). Lentiviruses were added (1-10\u00d7103pfu) at 1\u20132 days in vitro (DIV) and metabolites were extracted or axon degeneration assays were performed at 6\u20137 DIV. When using 24 well DRG cultures, 50% of the medium was exchanged for a\u00a0fresh medium at DIV4. NR (100 \u00b5M) was added 24\u2009hr before axotomy or metabolite collection.\n\n### Lentivirus\n\nLentiviruses were produced in HEK293T cells (RRID: CVCL_0063) as previously described (Araki et al., 2004). Cells were seeded at a density of 1\u00a0\u00d7\u00a0106 cells per 35\u2009mm well the day before transfection. FCIV lentivirus constructs harboring cDNAs encoding mCherry, cytNMNAT1 (mouse), NAMPT (mouse), NRK1 (mouse), NMN deamidase (E. Coli), or NMN synthetase (F. tularensis) (each 400 ng) was co-transfected with VSV-G (400 ng) and pSPAX2 (1.2 \u00b5g) using X-tremeGene (Roche). The virus containing medium was collected at 3\u20135 days after transfection. The lentivirus particles (1\u201310 x 106 infectious particles/ml) were collected from the cleared culture supernatant with Lenti-X concentrator (Clontech), suspended in 1/10 original volume of PBS, and stored at \u221280\u00b0C.\n\n### Metabolite collection\n\nAt DIV6, the 24-well DRG culture plate was placed on ice and the medium was replaced with ice-cold 0.9% NaCl solution. DRG metabolites were extracted using ice-cold 1:1 mixture of MeOH and water (150 \u00b5l per well) on ice for 10\u2009min. For axonal metabolite collection, neuronal cell bodies and axons were separated using a microsurgical blade under the microscope. The culture medium was replaced with saline and the DRG cell bodies were removed prior to metabolite extraction using a pipet. The metabolite containing solutions were transferred into test tubes and extracted twice with chloroform (100 \u00b5l per sample). The aqueous phase (120 \u00b5l) was lyophilized and stored at \u221220\u00b0C\u00a0until analysis.\n\n### Metabolite measurement using LC-MS/MS\n\nLyophilized samples were reconstituted with 50 \u00b5l of 5\u2009mM ammonium formate and centrifuged at 12,000 x g for 10\u2009min. Cleared supernatant were transferred to sample vials. Serial dilutions of standards for each metabolite in 5\u2009mM ammonium formate were used for calibration. The highest standard concentration used were 25 \u00b5M for NAD+, nicotinicacid adenine dinucleotide (NaAD), nicotinamide mononucleotide (NMN), ATP, and ADP, 5 \u00b5M for nicotinicacid mononucleotide (NaMN), and 1 \u00b5M for AMP. Liquid chromatography was performed by HPLC (1290; Agilent) with Atlantis T3 (LC 2.1 x 150\u00a0mm, 3 \u00b5m; Waters) for steady-state metabolite assays (Hikosaka et al., 2014) and Synergi Fusion-RP (4.6 x 150\u00a0mm, 4 \u00b5m; Phenomenex) for NAD+\u00a0flux assays. For steady-state metabolite analysis, 20 \u00b5l of samples were injected at a flow rate of 0.15\u2009ml/min with 5\u2009mM ammonium formate for mobile phase A and 100% methanol for mobile phase B. Metabolites were eluted with gradients of 0\u201310\u2009min, 0\u201370% B; 10\u201315\u2009min, 70% B; 16\u201320\u2009min, 0% B (Hikosaka et al., 2014). For NAD+ flux assay, 10 \u00b5l of each sample were injected at a flow rate of 0.55\u2009ml/min with 5\u2009m ammonium formate for mobile phase A and 100% methanol for mobile phase B. Metabolites were eluted with gradients of 0\u20137\u2009min, 0\u201370% B; 7\u20138\u2009min, 70% B; 9\u201312\u2009min, 0% B. The metabolites were detected with a Triple Quad mass spectrometer (6460 MassHunter; Agilent) under positive ESI multiple reaction monitoring (MRM) using parameters for each compound as shown in the Table\u00a01. Metabolites were quantified by MassHunter quantitative analysis tool (Agilent) with standard curves and relative metabolite concentrations compared with control neurons (for NMN, NAD+) or with NMN deamidase-expressing neurons (for NaMN, NaAD) were calculated.\n\n**Table 1.**\n Mass spectroscopy parameters for metabolites measured.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metabolite</th>\n      <th>MS1/MS2</th>\n      <th>Fragmentation\u00a0(V)</th>\n      <th>Collision\u00a0energy\u00a0(V)</th>\n      <th>Cell\u00a0AC\u00a0(V)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NAD+</td>\n      <td>664&gt;428</td>\n      <td>160</td>\n      <td>22</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>D4-NAD+</td>\n      <td>668&gt;428</td>\n      <td>160</td>\n      <td>22</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>D3-NAD+</td>\n      <td>667&gt;428</td>\n      <td>160</td>\n      <td>22</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>NaAD</td>\n      <td>669&gt;428</td>\n      <td>150</td>\n      <td>20</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>NMN</td>\n      <td>335&gt;123</td>\n      <td>90</td>\n      <td>11</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>NaMN</td>\n      <td>336&gt;124</td>\n      <td>80</td>\n      <td>10</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>ATP</td>\n      <td>508&gt;136</td>\n      <td>90</td>\n      <td>30</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>ADP</td>\n      <td>428&gt;136</td>\n      <td>50</td>\n      <td>30</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>AMP</td>\n      <td>348&gt;136</td>\n      <td>30</td>\n      <td>30</td>\n      <td>7</td>\n    </tr>\n  </tbody>\n</table>\n\n### NAD+ flux assay\n\nFor NAD+ consumption and synthesis measurements, DRG neurons were incubated with D4-Nam (300 \u00b5M: 2,3,4,5 deuterium Nam; C/D/N Isotopes Inc.) for 0\u20134\u2009hr and axonal metabolites were collected as described above. NAD+ synthesis and consumption rates were measured at 2 and 4\u2009hr post D4-Nam addition, respectively. For NAD+ flux measurements after axonal injury, D4-Nam was added at the same time as axotomy. Labeled (heavy) or non-labeled (light) NAD+ was quantified as described below with LC-MS/MS. For heavy-labeled NAD+, D3-NAD+ as well as D4-NAD+ was observed as previously reported (Hara et al., 2014). This is due to the replacement of deuterium at C4 position with non-labeled proton during NAD+d this combined value-NADH cycling. We added the values of D3-NAD+ and D4-NAD+and used this combined value as the amount of newly synthesized NAD+. The net rate of NAD+ synthesis and consumption were calculated by% increase or decrease of metabolite/hour at 2\u2009hr (synthesis) or 4\u2009hr (consumption) after D4-Nam application. Metabolite concentrations from 9 to 12 independent wells were compared using one-way ANOVA and Holm-Bonferroni multiple comparison using R (RRID:SCR_002394).\n\n### Axon degeneration assay\n\nAxons from DRG drop cultures in 96 well were transected using a micro surgical blade under microscope at DIV6. Bright field images of distal axons (6 fields per well) were taken at 0\u201372\u2009hr after axotomy using a high content imager (Operetta; Perkinelmer) with 20x objective (Gerdts et al., 2011). Axon degeneration was quantified using degeneration index (DI) calculated using ImageJ (NIH) as previously described\u00a0(Gerdts et al., 2011; Sasaki et al., 2009b). The average DI from 6 fields per well was obtained and averaged for each independent well. The DI was calculated from axon images from the same fields before (0\u2009hr) and after (9\u201372\u2009hr) axotomy. Experiments were repeated 3 times with 3 independent wells (n=9). For statistical analysis DI was compared using one-way ANOVA and Holm-Bonferroni multiple comparison using R (RRID:SCR_002394).\n\n### Statistics\n\nSample number (n) was defined as the number of cell culture wells that were independently manipulated and measured. No statistical evaluations were performed to predetermine sample sizes, but our sample sizes are similar to those generally used in the field. Data distribution was assumed to be normal, but this was not formally tested. Data comparisons were performed using one-way ANOVA using R (RRID:SCR_002394) and F and P values were reported for each comparison in corresponding figure legends. For multiple comparisons, the Holm-Bonferroni multiple comparison method was used. Statistical significance was noted as *, **, or # in each graph with indicated values in the corresponding legends. For two group comparison, unpaired Student t-test was performed using R.\n\nBar graph and line plot data are mean +/- S.D.. Box-plot was provided using R. The box height represents the first (bottom) and third (top) quartiles, and the median is indicated as a\u00a0horizontal line in the box, and the top error bar represents the smaller of 1.5 times interquartile range or maximum data point and bottom error bar represents 1.5 times interquartile range or minimum data point. Any data beyond 1.5 times interquartile (25% to 75% quartile) are shown as open circle dots.\n",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7b5e8bee-ff09-4e0f-83c2-f487868ce036",
+      "submission_id": "d12edd8c-9fcf-44ad-b691-1c188da724ea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Moses V Chao, New York University Langone Medical Center , United States\n\n## Review text\n\nDOI: [10.7554/eLife.19749.023](https://doi.org/10.7554/eLife.19749.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"NMNAT1 inhibits axon degeneration via blockade of SARM1-mediated NAD+ depletion\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Gary Westbrook as the Senior Editor. The following individual involved in review of your submission has agreed to reveal his identity: Avraham Yaron (Reviewer #2). The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe three referees were all knowledgeable about mechanisms of axonal regeneration, and made a number of positive comments about your manuscript with regard to the action of the NAD+ biosynthetic enzyme, NMNAT1 in axons. Each noted the ability to measure the flux of NAD+ metabolites as a strength of the manuscript. However, there were several concerns discussed by the reviewers and editor that require attention. Specifically,\n\n1) The involvement of NAD+ turnover by SARM1 is regarded as an interesting and important finding, but more consideration concerning the role of NAD+ is required. In particular, further explanation of the mechanisms of axonal protection and how NMNAT1 blocks NAD+ utilization by SARM1 is needed.\n\n2) The reviewers indicated that more clarity is needed to define the nomenclature and many acronyms (NMN, NaMN, NaAD etc.) to the non cognoscenti. Additional models or schematic diagrams would be particularly useful, as well as clarification of Figure 1A.\n\n3) There were also experimental issues that should be addressed, including (a) presentation of data regarding the quantification of NAD+ and the need for non-normalized data; (b) the changes in the lesion experiment of Figure 3; (c) as well as information on protein expression data in axons.\n\nWe think that careful attention to these specific issues as well as the other major concerns outlined below in the reviews would strengthen the study.\n\nReviewer #1:\n\nSasaki and colleagues present a detailed and rigorous analysis of NAD+ metabolism during axon injury and degeneration. The studies are motivated by the prior discovery that manipulating NAD+ metabolism slows Wallerian degeneration of cut axons. In this paper, the authors demonstrate that altered steady-state levels of NAD+ or its precursors does not per se induce degeneration and they establish a method to measure changes caused axotomy in the rates of NAD+ synthesis and consumption. Using this assay, the authors find that axotomy triggers a surge of NAD+ consumption that requires the SARM TIR-containing adapter protein and is blocked by expression of the NAD+ biosynthetic enzyme NMNAT1.\n\nOverall, the manuscript clearly presents a set of compelling and satisfying experiments that advance our understanding of a mechanism central to Wallerian degeneration. I enthusiastic about the work and only have a few questions/comments.\n\n1) The authors conclude that SARM-regulated NAD+ consumption is strongly affected by NAD+ biosynthetic enzymes but this regulation is not simply a consequence of elevated NAD+ levels prior to axotomy. The data support this conclusion. However, the discussion of this point is a bit cursory and does not go far beyond a restatement of the facts. Given that this is an unexpected result, it should be discussed a bit more. How might this work? Are there distinct pools of NAD+ in axons that can only be accessed by a subset of the manipulations employed by the authors? Are some enzymes able to interact with the SARM pathway and others not? Inquiring minds would like to know what the authors think.\n\n2) The authors present rates of NAD+ synthesis and consumption normalized to pre-axotomy levels. The data should be presented as absolute rates of synthesis and consumption to allow the reader to also compare baseline NAD+ metabolism between conditions.\n\n3) I would be very curious to know how SARM mutation affects levels of NAD+ and its metabolic precursors. If feasible, the authors should include these data in Figure 1.\n\nReviewer #2:\n\nThe work from the DiAntonio and Milbrandt labs examines the dynamics of NAD+ metabolites in axotomized axons in vitro. Through multiple manipulations and new NAD+ flux analysis they come to two main conclusions: 1. Increase in NMN upon injury is not the trigger and is not essential for axonal degeneration. This is in contrast to a recent published study (Di Stefano. et al., 2015). 2. Axonal protection by NMNAT1 is generated by inhibition of the SARM dependent NAD+ degradation/consumption and not through counter synthesis of NAD+. The second conclusion is very interesting and in many aspects contradicts the assumption that NMNAT1 or Wlds protect against axonal degeneration by supplement of NAD+ purely through synthesis. It also suggests that targeting of the SARM dependent NAD+ degradation pathway may be more effective than stimulation of NAMPT activity.\n\nI find the paper somehow not easy to read, and some of the results are puzzling. In general the authors should expand the text to better explain their findings, otherwise non-experts will get lost.\n\n1) There is no protein expression data of the overexpressed constructs by axonal IF or WB, this is even more important when two constructs are presumably co-expressed.\n\n2) There is axonal protection both by overexpression of NAMPT and its inhibitor, FK866, how the authors explain that?\n\n3) Figure 3 \u2013 this is the key figure in the paper and important information is missing. The authors do not discuss the data of panel C in the text. I understand that control is un-cut why the authors decided to omit the control cut data from panel C? In B and C for how long the axons are cut?\n\nReviewer #3:\n\nThe authors present evidence that NMNAT1 blocks SARM1 induced depletion of NAD in isolated axons as opposed to maintaining NAD at overall higher levels (i.e., delaying decline in NAD following axotomy). They have developed NAD flux analyses here by loading cultures with D4-NAM. On the one hand, this seems like quite a technical advance for a metabolomics approach applied to isolated axons that has been lacking in the field. Similarly, showing that elevated NMN levels do not correlate with axon degeneration is an advance that overturns some reports in the literature. The manuscript is also overall well written and the central conclusion that NMNAT1 blocks SARM mediated NAD depletion is quite intriguing, so the findings appear to be relatively novel and could advance the field. However, the authors provide no clear insight into the mechanism of how NMNAT1 blocks SARM function other than its known role in generating NAD. From a mechanistic point of view it is puzzling that this occurs without affecting steady state NAD levels. It is not clear to me from the data how NMNAT1 or NMN deamidase could do this without altering NAD production. Do these proteins interact with SARM1 or directly inhibit its function? At the very least, I think that the authors could add some speculation to the Discussion paragraph(s), though data would make a more compelling case.\n",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "73827284-434a-432d-b248-bca918193df9",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C1",
+      "claim": "Overexpression of the NAD+ biosynthetic enzyme NMNAT1 leads to preservation of injured axons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of the NAD+ biosynthetic enzyme NMNAT1 leads to preservation of injured axons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known phenomenon that the study investigates.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "b4894242-7f45-49f7-a855-17eceba3db3b",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C2",
+      "claim": "NMNAT1 blocks the injury-induced, SARM1-dependent NAD+ consumption that is central to axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using steady-state and flux analysis of NAD+ metabolites in healthy and injured mouse dorsal root ganglion axons, we find that rather than altering NAD+ synthesis, NMNAT1 instead blocks the injury-induced, SARM1-dependent NAD+ consumption that is central to axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by NAD+ flux analysis experiments described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "195ffabe-c8de-4f02-843f-36fd6ac09976",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C3",
+      "claim": "Wallerian degeneration is a regulated process of axon self-destruction.",
+      "claim_type": "EXPLICIT",
+      "source": "Axon loss following injury and disease (Wallerian degeneration) is a regulated process of axon self-destruction (Coleman, 2005; Gerdts et al., 2016; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "73379637-a9e5-4d07-8322-af0117b12db9",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C4",
+      "claim": "The Wlds protein dramatically delays axon degeneration after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the Wallerian degeneration slow (Wlds) protein, which dramatically delays axon degeneration after injury, raised hopes that blocking this process would be useful in the treatment of neurological disorders (Conforti et al., 2014; Mack et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0a0923fc-86aa-459c-a7ab-870e69c97d49",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C5",
+      "claim": "The Wlds protein blocks axon degeneration by mislocalizing the nuclear NAD+ biosynthetic enzyme NMNAT1 into axons.",
+      "claim_type": "EXPLICIT",
+      "source": "The Wlds protein blocks axon degeneration by mislocalizing the nuclear nicotinamide adenine dinucleotide (NAD+) biosynthetic enzyme NMNAT1 into axons, thereby substituting for the loss of the labile axon maintenance factor NMNAT2 (Araki et al., 2004; Babetto et al., 2010; Gilley et al., 2010; Sasaki et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "2eaeadd4-ecf5-4e12-b89d-fe8f44bf3c20",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C6",
+      "claim": "NMNAT enzymes synthesize NAD+ from nicotinamide mononucleotide (NMN) and ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes synthesize NAD+ from nicotinamide mononucleotide (NMN) and ATP, so two candidate mechanisms for how loss of NMNAT2 triggers axon degeneration have emerged: (1) the loss of NAD+ or (2) the accumulation of NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established biochemical knowledge about NMNAT enzyme function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "c72890ba-a515-4ffa-b760-9f734bbf858f",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C7",
+      "claim": "Neuronal expression of Escherichia coli NMN deamidase provides striking axonal protection.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking axonal protection provided by neuronal expression of Escherichia coli NMN deamidase, which reduces NMN levels by converting it to nicotinic acid mononucleotide (NaMN), supports the model that NMN accumulation triggers axon degeneration (Di Stefano et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a234c0d9-6ae7-4282-b742-b72c40894cc8",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C8",
+      "claim": "Neither NAD+ loss nor NMN accumulation trigger axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we find that neither NAD+ loss nor NMN accumulation trigger axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the study based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "1f67b604-d1be-4809-b0c2-25fab1be84c6",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C9",
+      "claim": "Both NMNAT1 and NMN deamidase prevent axon degeneration via blocking the injury-induced NAD+ consumption that occurs following activation of SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, both NMNAT1 and NMN deamidase prevent axon degeneration via blocking the injury-induced NAD+ consumption that occurs following activation of the axodestructive molecule SARM1 (Gerdts et al., 2013, 2015; Osterloh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding of the study supported by experimental data and previous citations about SARM1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "fc85a95d-47f3-46c2-a1be-bef908b6fa3a",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C10",
+      "claim": "FK866 and NR treatment provided only modest protection, delaying axon degeneration by ~6 to 9 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "FK866 and NR treatment provided only modest protection, delaying axon degeneration by ~6 to 9 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from the axon degeneration assay shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "8fbed197-e9ea-47cb-956a-27d78ae79d52",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C11",
+      "claim": "Neurons expressing NRK1 and treated with NR or expressing NAMPT showed strong axon protection for 24 to 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons expressing NRK1 and treated with NR or expressing NAMPT showed strong axon protection for 24 to 48 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from the axon degeneration assay shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3c680afc-27fa-4f57-bba9-75b3eb475a0b",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C12",
+      "claim": "The strongest axonal protection was found in neurons expressing cytNMNAT1 or NMN deamidase, which both block axon degeneration for at least 3 days after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest axonal protection was found in neurons expressing cytNMNAT1 or NMN deamidase, which both block axon degeneration for at least 3 days after axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data from the axon degeneration assay shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "d7b2d357-a48d-4139-b771-25dc9f31ea31",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C13",
+      "claim": "FK866 led to a slow decline in both cellular NAD+ and NMN before the axons begin to fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously described, FK866 led to a slow decline in both cellular NAD+ and NMN before the axons begin to fragment (Figure 2a and Figure 2\u2014source data 1; Di Stefano et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2a and supported by previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "bfae3c55-30e7-4436-91e2-4a2787387f63",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C14",
+      "claim": "NAMPT expression or pre-incubation with NR in the presence of NRK1 significantly increased both NMN and NAD+ levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, NAMPT expression or pre-incubation with NR in the presence of NRK1 significantly increased both NMN and NAD+ levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "ab5138f5-d37d-4cb0-a5d0-b19afac2f5dd",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C15",
+      "claim": "NMN deamidase significantly increased the levels of NaMN and NaAD while dramatically reducing NMN and NAD+ levels in DRG neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NMN deamidase significantly increased the levels of NaMN and NaAD while dramatically reducing NMN and NAD+ levels in DRG neurons (Figure 2b,c and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a0e04a58-5bbd-4eb1-9d48-8905576a89cd",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C16",
+      "claim": "Despite reducing NAD+ levels to 11 \u00b1 7% of control, NMN deamidase-expressing neurons showed no signs of cell death or axon degeneration, but instead displayed potent axonal protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite reducing NAD+ levels to 11 \u00b1 7% of control, NMN deamidase-expressing neurons showed no signs of cell death or axon degeneration, but instead displayed potent axonal protection (Figure 3c and Figure 3\u2014source data 1) as previously reported (Di Stefano et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from metabolite measurements and axon degeneration assays, supported by previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "60f673f0-171f-4f44-bbff-4a908024af3a",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C17",
+      "claim": "Baseline levels of NMN and NAD+ were normal in neurons expressing cytNMNAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The protection afforded by NMN deamidase was equivalent to that observed in neurons expressing cytNMNAT1 (Figure 3c and Figure 3\u2014source data 1), however baseline levels of NMN and NAD+ were normal in neurons expressing cytNMNAT1 (Figure 2b,c and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2b,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "cf9c81f3-c422-4d17-ac83-8131694cd81d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C18",
+      "claim": "SARM1-deficient neurons had baseline levels of NMN, NAD+, NaMN, and NaAD that were equivalent to those of wildtype neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, SARM1-deficient neurons had baseline levels of NMN, NAD+, NaMN, and NaAD that were equivalent to those of wildtype neurons (Figure 2\u2014figure supplement 1 and Figure 2\u2014source data 2, Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3d9cf8de-70a6-4a53-b536-56a6e9263a6d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C19",
+      "claim": "Robust axonal protection can be observed in neurons that maintain low levels of NMN and NAD+ (NMN deamidase), normal levels of NMN and NAD+ (cytNMNAT1 or SARM1 knockout), or high levels of NMN and NAD+ (NAMPT or NRK1 + NR).",
+      "claim_type": "EXPLICIT",
+      "source": "From these studies, it is clear that robust axonal protection can be observed in neurons that maintain low levels of NMN and NAD+ (NMN deamidase), normal levels of NMN and NAD+ (cytNMNAT1 or SARM1 knockout), or high levels of NMN and NAD+ (NAMPT or NRK1 + NR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on the experimental data presented in Figures 1-3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "fd744535-007b-46ab-bac3-a39a24602f2d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C20",
+      "claim": "There was a dramatic decline in NAD+ levels after injury in control axons.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies showed a dramatic decline in NAD+ levels after injury in control axons, consistent with previous reports (Di Stefano et al., 2015; Gerdts et al., 2015; Wang et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites and supported by previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "b73fc73d-c10c-4034-bf88-16521ff86bec",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C21",
+      "claim": "There was a ~2-fold increase in the levels of NMN within the first two hours after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a ~2-fold increase in the levels of NMN within the first two hours after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7c18d7a4-1bca-4c85-ab8a-fdf3be7ab8d1",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C22",
+      "claim": "NMN levels declined back to those observed in uninjured axons by six hours post-axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "NMN levels declined back to those observed in uninjured axons by six hours post-axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "ea32fa9a-02c1-427e-8a0a-966bcaef2bfa",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C23",
+      "claim": "Sciatic nerve transection causes a continuous increase in nerve NMN concentration when it is normalized to the nerve adenylate pool.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous report showed that sciatic nerve transection causes a continuous increase in nerve NMN concentration when it is normalized to the nerve adenylate pool (Di Stefano et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "6bb5ad34-df55-4073-952f-0190179b451f",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C24",
+      "claim": "The increase in NMN concentration normalized to adenylate pool after nerve transection is due to a rapid decline in the adenylate pool rather than an increase in NMN levels.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirm this finding using purified axon preparations, however, we demonstrate that this is due to a rapid decline in the adenylate pool rather than an increase in NMN levels (Figure 2\u2014figure supplement 2 and Figure 2\u2014source data 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "80b76c77-ecfb-4032-9cd6-aa206ca3b7e3",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C25",
+      "claim": "In cells expressing cytNMNAT1, axonal NAD+ and NMN were comparable to baseline levels in uninjured axons of control neurons and these metabolite levels did not change after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing the strongly axoprotective cytNMNAT1, axonal NAD+ and NMN were comparable to baseline levels in uninjured axons of control neurons and these metabolite levels did not change after axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "19ae6ff6-1f2f-4882-ba8d-3870b94a45c7",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C26",
+      "claim": "Expression of NMN deamidase reduced axonal NAD+ and NMN compared with control axons, and these metabolite levels did not change after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of NMN deamidase reduced axonal NAD+ and NMN compared with control axons, and these metabolite levels did not change after axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f8ae6b3a-4378-4cdb-9528-37e88d7e9f37",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C27",
+      "claim": "In axons from neurons expressing NAMPT, there were high levels of both NAD+ and NMN at baseline and at six hours after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, axons from neurons expressing NAMPT had high levels of both NAD+ and NMN at baseline and at six hours after axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "461fc840-b73e-43d3-ae91-af6ad769cbcf",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C28",
+      "claim": "In axons from neurons expressing NRK1 and treated with NR there was a dramatic increase of NAD+ and NMN levels at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "In axons from neurons expressing NRK1 and treated with NR there was a dramatic increase of NAD+ and NMN levels at baseline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7d2a6b2f-d5f6-4929-b992-91c73c79258e",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C29",
+      "claim": "After injury, axons from neurons expressing NRK1 and treated with NR showed a robust decrease in NAD+ but further increases in NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "After injury, these axons showed a robust decrease in NAD+ but further increases in NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on LC-MS/MS measurements of axonal metabolites shown in Figure 2d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0acd2566-2e69-4411-aa8d-79c1950941ee",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C30",
+      "claim": "NMN levels in axons from neurons expressing NRK1 and treated with NR were 16-fold higher than in control axons (0.16 \u00b1 0.04 \u00b5M vs. 0.01 \u00b1 0.001 \u00b5M), yet these axons were strongly protected from degeneration (>48 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NMN levels in axons from these neurons were 16-fold higher than in control axons (0.16 \u00b1 0.04 \u00b5M vs. 0.01 \u00b1 0.001 \u00b5M, Figure 2e and Figure 2\u2014source data 1), yet these axons were strongly protected from degeneration (>48 hr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements and axon degeneration assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "e95da47b-fd72-4818-bbea-cba2396c0634",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C31",
+      "claim": "Even within injured axons, elevated levels of NMN do not promote axon degeneration but rather can be compatible with robust axonal protection.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that even within injured axons, elevated levels of NMN do not promote axon degeneration but rather can be compatible with robust axonal protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing high NMN levels with axon protection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "31478a05-83d7-4c90-a538-311ad64f761f",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C32",
+      "claim": "When NMN synthetase was expressed alone in neurons no changes in any of the measured metabolites were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When we expressed NMN synthetase alone in neurons no changes in any of the measured metabolites were observed (Figure 3a,b and Figure 3\u2014source data 1), and injured axons from these neurons degenerated normally (Figure 3c and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements and axon degeneration assays shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "8455b86a-742d-41d7-96a6-e6e85c6caca6",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C33",
+      "claim": "When NMN synthetase was co-expressed along with NMN deamidase, the normal NMN deamidase-catalyzed reductions in NMN and NAD+ as well as the increases in NaMN and NaAD are largely abolished.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when NMN synthetase was co-expressed along with NMN deamidase, the normal NMN deamidase-catalyzed reductions in NMN and NAD+ as well as the increases in NaMN and NaAD are largely abolished (Figure 3a,b and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 3a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "bdbbce00-c8d8-4804-a1be-f9da90c9c3d6",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C34",
+      "claim": "The addition of NR to neurons co-expressing F. tularensis NMN synthetase and E. coli NMN deamidase raised axonal NMN well above control levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the addition of the NMN precursor NR to neurons co-expressing F. tularensis NMN synthetase and E. coli NMN deamidase raised axonal NMN well above control levels (Figure 3a and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "52f067a6-a0d4-4b59-ab55-b67059e8ae03",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C35",
+      "claim": "Despite elevation in NMN levels when NMN synthetase and NMN deamidase are co-expressed with NR, NMN deamidase continued to provide robust axon protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this elevation in NMN levels under these conditions, NMN deamidase continued to provide robust axon protection (Figure 3c and Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on axon degeneration assays shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "e8a68f7f-226c-4100-993b-6f496017e3f5",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C36",
+      "claim": "Protection of injured axons did not correlate with levels of NAD+, NaMN, or NaAD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also found that protection of injured axons did not correlate with levels of NAD+, NaMN, or NaAD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data from metabolite measurements and axon protection assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a69424d9-97e4-491e-a2fc-f9e93b78f34a",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C37",
+      "claim": "Neither a reduction in NMN nor the accumulation of NaMN/NaAD is necessary for NMN deamidase mediated axonal protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, neither a reduction in NMN nor the accumulation of NaMN/NaAD is necessary for NMN deamidase mediated axonal protection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing axon protection despite normal or elevated NMN levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "25fc0467-f9da-454f-ba5b-c81558574fa5",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C38",
+      "claim": "The findings are inconsistent with the hypothesis that the axonal NMN level is a driver of axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are inconsistent with the hypothesis that the axonal NMN level is a driver of axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "c88e7546-40ba-4b1b-9b30-3a1575180b8d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C39",
+      "claim": "Following axotomy, axonal NAD+ levels decline.",
+      "claim_type": "EXPLICIT",
+      "source": "Following axotomy, axonal NAD+ levels decline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data and is consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "08636abd-2a41-4b74-8705-dd5b913aa340",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C40",
+      "claim": "The decline in axonal NAD+ after axotomy could be due to loss of NAD+ biosynthesis via degradation of the labile axonal NMNAT isoform NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "This decline could be due to loss of NAD+ biosynthesis via degradation of the labile axonal NMNAT isoform NMNAT2 (Gilley et al., 2010), and/or to an increase in NAD + degradation due to activation of the pro-degenerative molecule SARM1 (Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on previous literature about NMNAT2 and SARM1.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "1b8e0fde-13c4-4170-a1d5-af4938cda403",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C41",
+      "claim": "The decline in axonal NAD+ after axotomy could be due to an increase in NAD+ degradation due to activation of the pro-degenerative molecule SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This decline could be due to loss of NAD+ biosynthesis via degradation of the labile axonal NMNAT isoform NMNAT2 (Gilley et al., 2010), and/or to an increase in NAD + degradation due to activation of the pro-degenerative molecule SARM1 (Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on previous literature about SARM1.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "36494d84-e9b4-4fff-9109-d05b94938bef",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C42",
+      "claim": "The addition of up to 1 mM of D4-Nam did not alter the time course of axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of up to 1 mM of this NAD+ precursor did not alter the time course of axon degeneration (Figure 4\u2014figure supplement 1 and Figure 4\u2014source data 2) and allowed us to identify its labeled-NAD+ derivative using LC-MS/MS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on axon degeneration assays shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "bc321437-3ae0-4b48-a090-4c74fe678d34",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C43",
+      "claim": "Conversion of the NAD+ pool from light to heavy was observed without delay, demonstrating that D4-Nam replaces Nam for NAD+ synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversion of the NAD+ pool from light to heavy was observed without delay, demonstrating that D4-Nam replaces Nam for NAD+ synthesis (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on LC-MS/MS measurements shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f9563864-05b6-4300-a155-2513ad30f8b7",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C44",
+      "claim": "In uninjured axons steady-state NAD+ was constant due to ongoing and balanced NAD+ synthesis (6.9 \u00b1 1.4% per hour) and NAD+ consumption (8.2 \u00b1 3.1% per hour).",
+      "claim_type": "EXPLICIT",
+      "source": "In uninjured axons steady-state NAD+ (summation of heavy and light NAD+) was constant due to ongoing and balanced NAD+ synthesis (6.9 \u00b1 1.4% per hour) and NAD+ consumption (8.2 \u00b1 3.1% per hour) (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "29cb4dc3-d285-436e-a2e7-149d7a79126c",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C45",
+      "claim": "NAD+ consumption in uninjured axons was similar to wild type levels in SARM1 KO neurons as well as neurons overexpressing cytNMNAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that axon NAD+ consumption in uninjured axons was similar to wild type levels in SARM1 KO neurons as well as neurons overexpressing cytNMNAT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3b67d74d-f15e-478b-80e3-2705b109a8cc",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C46",
+      "claim": "NAD+ consumption was lower in axons from NMN deamidase-expressing neurons and higher in axons from NAMPT-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NAD+ consumption was lower in axons from NMN deamidase-expressing neurons and higher in axons from NAMPT-expressing neurons (Figure 4\u2014figure supplement 3 and and Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "006b0bdf-c52e-4d6f-abbc-0c00cdadf152",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C47",
+      "claim": "Basal levels of NAD+ flux are well correlated with steady-state NAD+ levels (lower in NMN deamidase-expressing neurons and higher in NAMPT-expressing neurons) but not with the axonal protection phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Since NAD+ levels are at equilibrium in these uninjured axons, these changes in NAD+ consumption are balanced by equivalent changes in NAD+ production. Hence, basal levels of NAD+ flux are well correlated with steady-state NAD+ levels (lower in NMN deamidase-expressing neurons and higher in NAMPT-expressing neurons) but not with the axonal protection phenotypes (Figure 1c and Figure 1\u2014source data 1, Figure 2b,c and Figure 2\u2014source data 1, Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on comparing NAD+ flux data with steady-state metabolite levels and axon protection data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "cf32661c-0759-42f5-8fc6-ba20e74ef635",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C48",
+      "claim": "NMN deamidase inhibits NAD+ synthesis by reducing the levels of NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are expected since NMN deamidase inhibits NAD+ synthesis by reducing the levels of NMN whereas NAMPT promotes NAD+ synthesis by increasing the levels of NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known enzymatic activities and the experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "b8bbfcc8-1f45-42a0-9153-825d559cb70b",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C49",
+      "claim": "NAMPT promotes NAD+ synthesis by increasing the levels of NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are expected since NMN deamidase inhibits NAD+ synthesis by reducing the levels of NMN whereas NAMPT promotes NAD+ synthesis by increasing the levels of NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known enzymatic activities and the experimental data.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "dbb7d13c-4d07-4d4e-a404-55b1c68beeec",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C50",
+      "claim": "NMN is the rate limiting metabolite in the NAD+ biosynthetic pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "NMN is the rate limiting metabolite in the NAD +biosynthetic pathway (Revollo et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "4c1809ee-1496-4b2c-941c-c527738f4215",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C51",
+      "claim": "In axotomized axons, steady-state NAD+ levels declined as previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In axotomized axons, steady-state NAD+ levels declined as previously reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NAD+ flux analysis and is consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "1b6ad35b-e4dd-4125-ba28-bc0261beb86d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C52",
+      "claim": "The decline in steady-state NAD+ in axotomized axons is due to a large increase in the NAD+ consumption rate (from 8.5 \u00b1 3.8% per hour prior to injury to 21.7 \u00b1 1.6% per hour after injury).",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that this is due to a large increase in the NAD+ consumption rate (from 8.5 \u00b1 3.8% per hour prior to injury to 21.7 \u00b1 1.6% per hour after injury: Figure 4b and Figure 4\u2014source data 1, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4b and Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f46e236d-3b08-4daf-988a-614ef5f438e0",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C53",
+      "claim": "In the first two hours after injury, there was a modest increase in NAD+ biosynthesis (control: 6.6 \u00b1 3.7% per hour vs. post-axotomy: 14.0 \u00b1 6.9% per hour).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, in the first two hours after injury, there was also a modest increase in NAD+ biosynthesis (control: 6.6 \u00b1 3.7% per hour vs. post-axotomy: 14.0 \u00b1 6.9% per hour; Figure 4a, c and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "023ffc5e-e375-4e83-bb22-e96fc9b5bcaa",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C54",
+      "claim": "The increase in NAD+ biosynthesis after injury is likely due to the activation of NAMPT, the rate-limiting enzyme in the NAD+ biosynthetic pathway, which is negatively regulated by NAD+.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the activation of NAMPT, the rate-limiting enzyme in the NAD+ biosynthetic pathway, which is negatively regulated by NAD+. The decline in NAD+ relieves this feedback inhibition and results in increased NAMPT activity (Elliott and Rechsteiner, 1982), which is also the likely explanation for the transient increase in axonal NMN after injury (Figure 2d and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on known NAMPT regulation and supported by citation and experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "76373aa2-5037-44bf-89cb-c441062facee",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C55",
+      "claim": "Although the NAD+ synthesis rate was increased during the first two hours after axotomy, total NAD+ declined due to the larger increase in the NAD+ consumption rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the NAD+ synthesis rate was increased during the first two hours after axotomy (Figure 4c and Figure 4\u2014source data 1), total NAD+ declined due to the larger increase in the NAD+ consumption rate (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a,c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "03685418-8360-45dc-ad51-28c6a3f01607",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C56",
+      "claim": "After two hours post-axotomy, heavy NAD+ declined at the same rate as light NAD+, indicating a complete loss of NAD+ biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "After two hours post-axotomy, heavy NAD+ declined at the same rate as light NAD+ (Figure 4a), indicating a complete loss of NAD+ biosynthesis, likely due to loss of the labile NMNAT2 in the severed axon (Gilley et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a and supported by previous literature about NMNAT2.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "24b67a24-d233-4508-bf95-6cdcd1f84048",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C57",
+      "claim": "Flux analysis demonstrates that injury-induced NAD+ depletion is due to a major increase in NAD+ consumption that begins shortly after the axon damage and before the loss of axonal NAD+ synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, flux analysis demonstrates that injury-induced NAD+ depletion is due to a major increase in NAD+ consumption that begins shortly after the axon damage and before the loss of axonal NAD+ synthesis (Figure 4c and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding based on NAD+ flux analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "d21cc4df-ed34-496f-ad15-edef56022459",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C58",
+      "claim": "SARM1 is required for the steady-state loss of NAD+ following injury in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that SARM1 may be required for this injury-dependent increase in NAD+ consumption because we previously demonstrated that SARM1 is required for the steady-state loss of NAD+ following injury in vivo and that SARM1 activation in primary cultured neurons leads to NAD+ degradation (Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "43b0cceb-fe73-4263-9de1-7d6d8040e92b",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C59",
+      "claim": "SARM1 activation in primary cultured neurons leads to NAD+ degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that SARM1 may be required for this injury-dependent increase in NAD+ consumption because we previously demonstrated that SARM1 is required for the steady-state loss of NAD+ following injury in vivo and that SARM1 activation in primary cultured neurons leads to NAD+ degradation (Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f802bd9a-a1d3-48fb-9999-00a8c8cdc2b0",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C60",
+      "claim": "The NAD+ consumption rate in SARM1-deficient axons was comparable to control axons prior to injury.",
+      "claim_type": "EXPLICIT",
+      "source": "The NAD+ consumption rate in SARM1-deficient axons was comparable to control axons prior to injury (Figure 4a, Figure 4\u2014figure supplement 3 and Figure 4\u2014source data 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "112aafdf-18ec-45a8-9afc-7b37a36eec98",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C61",
+      "claim": "There was no significant change in NAD+ consumption rate after injury in SARM1 mutant axons (uninjured: 6.3 \u00b1 2.4% per hour vs. SARM1 mutant: 7.9 \u00b1 3.7% per hour after axotomy).",
+      "claim_type": "EXPLICIT",
+      "source": "However in contrast to the dramatic increase in NAD+ consumption in wildtype neurons after injury, there was no significant change in NAD+ consumption rate after injury in SARM1 mutant axons (uninjured: 6.3 \u00b1 2.4% per hour vs. SARM1 mutant: 7.9 \u00b1 3.7% per hour after axotomy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "74375e84-e149-41aa-ba46-fe3d7cc5f761",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C62",
+      "claim": "SARM1 is required for the injury-induced increase in NAD+ consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, SARM1 is required for the injury-induced increase in NAD+ consumption (Figure 4a,b and Figure 4\u2014source data 1, Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding based on NAD+ flux analysis comparing wildtype and SARM1 knockout neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0292d819-c8eb-4ef3-a964-c9c50fea5d7d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C63",
+      "claim": "SARM1 is responsible for initiating events that lead to the depletion of axonal NAD+ following axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports and extends our previous finding that SARM1 is responsible for initiating events that lead to the depletion of axonal NAD+ following axotomy (Gerdts et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the current data and previous findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3b7bb12e-bbf2-4be7-8e2b-95f8b4e8e9b2",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C64",
+      "claim": "The overexpression of NAMPT, which leads to modest axon protection, did not block injury-induced SARM1-dependent NAD+ consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The overexpression of NAMPT, which leads to modest axon protection, did not block injury-induced SARM1-dependent NAD+ consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "588208d7-566a-4abd-a587-e4be58de3577",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C65",
+      "claim": "Expression of either cytNMNAT1 or NMN deamidase completely eliminated SARM1-dependent NAD+ consumption after axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, expression of either cytNMNAT1 or NMN deamidase completely eliminated SARM1-dependent NAD+ consumption after axotomy (Figure 4b and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "647e5541-c27c-4634-bb0a-a60c148b8fd3",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C66",
+      "claim": "The profound axoprotective effects of overexpressing either NMNAT or NMN deamidase are likely explained by both blocking the ability of SARM1 to trigger NAD+ degradation following axotomy.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a striking result that likely explains the profound axoprotective effects of overexpressing either NMNAT or NMN deamidase \u2014both block the ability of SARM1 to trigger NAD+ degradation following axotomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing blockade of NAD+ consumption and axon protection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3aa49652-aee3-428d-849d-c08fd7bb800f",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C67",
+      "claim": "Loss of SARM1 or gain of NMNAT or NMN deamidase all lead to profound and long-lasting axonal protection following injury, and all three block NAD+ degradation following injury.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of SARM1 or gain of NMNAT or NMN deamidase all lead to profound and long-lasting axonal protection following injury, and all three block NAD+ degradation following injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from axon degeneration and NAD+ flux assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3edf58bd-a537-42c1-b387-670a628f22f7",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C68",
+      "claim": "Treatments that provide modest axon protection (e.g. NAMPT) likely do so by transiently countering injury-induced NAD+ degradation through their ability to elevate intracellular NAD+ and thus maintain axonal NAD+ levels above a critical threshold for a longer period after injury.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatments that provide modest axon protection (e.g. NAMPT) likely do so by transiently countering injury-induced NAD+ degradation through their ability to elevate intracellular NAD+ and thus maintain axonal NAD+ levels above a critical threshold for a longer period after injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data showing NAMPT increases NAD+ but doesn't block consumption.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "87b9a5b4-e0d6-4973-bc56-69ae706f4a3e",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C69",
+      "claim": "SARM1-triggered axonal NAD+ degradation after injury is fully inhibited by cytNMNAT1 or NMN deamidase despite high levels of NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, SARM1-triggered axonal NAD+ degradation after injury is fully inhibited by cytNMNAT1 or NMN deamidase despite high levels of NMN (Figure 4b and Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on NAD+ flux analysis with elevated NMN levels shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "137da4be-3772-4ba8-97c3-265a81e308e6",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C70",
+      "claim": "A reduction in NMN is not necessary for blockade of SARM1 pathway activation by NMNAT1 or NMN deamidase.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, a reduction in NMN is not necessary for blockade of SARM1 pathway activation by NMNAT1 or NMN deamidase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing SARM1 blockade despite high NMN.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "873524c5-5f8d-4e10-8bc3-47a8c57363a9",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C71",
+      "claim": "Axotomy activates SARM1, which then triggers events that lead to a catastrophic loss of NAD+ followed by axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support a model in which axotomy activates SARM1, which then triggers events that lead to a catastrophic loss of NAD+ followed by axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "6994e3d1-225a-4d63-a7d5-323bba46be95",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C72",
+      "claim": "The most potent protection comes from overexpression of cytNMNAT1 or NMN deamidase, both of which block SARM1-dependent NAD+ depletion in the injured axon.",
+      "claim_type": "EXPLICIT",
+      "source": "The most potent protection comes from overexpression of cytNMNAT1 or NMN deamidase, both of which block SARM1-dependent NAD+ depletion in the injured axon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data from axon degeneration and NAD+ flux assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "8a93a501-0759-4b39-beb8-93733d860607",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C73",
+      "claim": "NMNAT2 works via blocking SARM1-dependent NAD+ depletion, thus when its levels decline in the injured axon, SARM1 becomes activated.",
+      "claim_type": "IMPLICIT",
+      "source": "By inference, NMNAT2 also works via this mechanism, thus when its levels decline in the injured axon, SARM1 becomes activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the finding that NMNAT1 blocks SARM1 and the known role of NMNAT2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "6eef5ee6-4457-4bfe-a1e1-516454b5478e",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C74",
+      "claim": "The embryonic lethality of NMNAT2 knockout mice is rescued by the loss of SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This biochemical demonstration that NMNAT enzymes inhibit SARM1 activation is consistent with a recent study showing that the embryonic lethality of NMNAT2 knockout mice is rescued by the loss of SARM1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to a recent study (Gilley et al, 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "ffe12cad-1866-452a-a71a-ef888761fa4d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C75",
+      "claim": "NMNAT2 functions upstream of SARM1.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides strong genetic evidence that NMNAT2 functions upstream of SARM1 (Gilley et al, 2015, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation and illustrated in Figure 5.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "13a74fde-3028-4348-849d-1e11c9720ccb",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C76",
+      "claim": "Weaker axonal protection is provided by overexpression of NAMPT or by treating neurons expressing NRK1 with NR.",
+      "claim_type": "EXPLICIT",
+      "source": "Weaker axonal protection is provided by overexpression of NAMPT or by treating neurons expressing NRK1 with NR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data from axon degeneration assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a2401d5d-cc73-4f3b-bba4-9a9d7a5a38b7",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C77",
+      "claim": "NAMPT and NRK1+NR do not block SARM1-dependent NAD+ consumption, but do lead to a large increase in steady-state NAD+ levels prior to axotomy that likely maintains NAD+ above a critical threshold for an extended period of time after SARM1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These latter manipulations do not block SARM1-dependent NAD+ consumption, but do lead to a large increase in steady-state NAD+ levels prior to axotomy that likely maintains NAD+ above a critical threshold for an extended period of time after SARM1 activation (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the experimental data and illustrated in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0dcbb3da-36f1-48c8-96d3-7fa7e86a74ea",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C78",
+      "claim": "FK866, a NAMPT inhibitor, delays axon degeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "As in other studies (Sasaki et al., 2009b, Di Stefano et al., 2015), we also observed that FK866, a NAMPT inhibitor, delays axon degeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "5b4a2019-fed1-4fba-84d5-a80897cd2c8c",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C79",
+      "claim": "FK866 provides much weaker protection than that afforded by NAMPT.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not have an adequate explanation for this phenomenon; however, it should be noted that FK866 provides much weaker protection than that afforded by NAMPT (Figure 1, and Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a6a7d7cb-e5b1-4e7a-805a-a828020f7c95",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C80",
+      "claim": "Blockade of SARM1 activation and axonal protection is not due to an increase in NAD+ or a decrease in NMN.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we demonstrate that blockade of SARM1 activation and axonal protection is not due to an increase in NAD+ or a decrease in NMN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "db61702e-45c4-4918-a5e5-1ec2d3fb3d0a",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C81",
+      "claim": "NMNAT enzymes from many species, including the archean Methanocaldococcus jannaschii, provide dramatic axonal protection despite their minimal amino acid sequence similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NMNAT enzymes from many species, including the archean Methanocaldococcus jannaschii, provide dramatic axonal protection despite their minimal amino acid sequence similarity, thus making direct interaction with SARM1 an unlikely mechanism (Sasaki et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7cf28a35-eb14-478e-8900-48a8b481b087",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C82",
+      "claim": "Direct interaction between NMNAT enzymes and SARM1 is an unlikely mechanism for axon protection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, NMNAT enzymes from many species, including the archean Methanocaldococcus jannaschii, provide dramatic axonal protection despite their minimal amino acid sequence similarity, thus making direct interaction with SARM1 an unlikely mechanism (Sasaki et al., 2009b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the diversity of NMNAT enzymes that provide protection.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "d67e407d-03fc-4c88-928a-f647a34e5493",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C83",
+      "claim": "Protein transduction experiments with cytNMNAT1 show rapid and strong axon protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein transduction experiments with cytNMNAT1 show rapid and strong axon protection, and it seems unlikely that a mutant nuclear protein would end up in a specific axonal compartment necessary to promote axon protection (Sasaki et al., 2009a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "dac2574f-be1f-44ae-a07f-da1f80521ebe",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C84",
+      "claim": "Mutations in both NMNAT enzymes and NMN deamidase that destroy their enzymatic activity also block their axon protective capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, mutations in both NMNAT enzymes and NMN deamidase that destroy their enzymatic activity also block their axon protective capabilities (Araki et al., 2004, Sasaki et al., 2009b, Di Stefano et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0b94c087-45f8-430e-bf8c-a8de20169d15",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C85",
+      "claim": "Metabolites whose levels are altered by NMNAT and/or NMN deamidase activity regulate SARM1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that metabolites whose levels are altered by NMNAT and/or NMN deamidase activity regulate SARM1 function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the requirement for enzymatic activity for axon protection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7b0ec262-ffb0-44f9-875e-449ef6cd0743",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C86",
+      "claim": "SARM1-dependent NAD+ consumption is the central biochemical event in the axonal degeneration program.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies support the hypothesis that SARM1-dependent NAD+ consumption is the central biochemical event in the axonal degeneration program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0e9d5d86-b6d9-4a80-9611-e8e18755ea46",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C87",
+      "claim": "The phenotype of the wlds mutant mouse is caused by the continued inhibition of SARM1 by the longer-lived Wlds protein that compensates for the loss of NMNAT2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they explain the phenotype of the wlds mutant mouse as one caused by the continued inhibition of SARM1 by the longer-lived Wlds protein that compensates for the loss of NMNAT2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings about NMNAT and SARM1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "a456f298-e6fa-44a9-8cdb-8a1fe739486c",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C88",
+      "claim": "Inhibitors of SARM1 or agents that boost NAD+ synthesis are likely to be valuable approaches for blocking axonal degeneration in the injured or diseased nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these findings suggest that inhibitors of SARM1 or agents that boost NAD+synthesis are likely to be valuable approaches for blocking axonal degeneration in the injured or diseased nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about therapeutic implications based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "55f9b0f8-517d-447b-8cf3-d11a438278df",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C89",
+      "claim": "CD1 mice were obtained from Charles River Laboratories at gestation day 11.5.",
+      "claim_type": "EXPLICIT",
+      "source": "CD1 mice (gestation day 11.5; Charles River Laboratories) and SARM1 knockout mice (C57/BL6; Szretter et al., 2009) are housed (12 hr dark/light cycle and less than 5 mice per cage) and used under the direction of institutional animal study guidelines at Washington University in St. Louis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3bb9f797-814c-4ffd-bafb-53f87df5f2e2",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "claim_id": "C90",
+      "claim": "SARM1 knockout mice are on a C57/BL6 background.",
+      "claim_type": "EXPLICIT",
+      "source": "CD1 mice (gestation day 11.5; Charles River Laboratories) and SARM1 knockout mice (C57/BL6; Szretter et al., 2009) are housed (12 hr dark/light cycle and less than 5 mice per cage) and used under the direction of institutional animal study guidelines at Washington University in St. Louis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental materials with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8f476276-1653-43b4-9ac7-67ed7302896a",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Different interventions in the NAD+ biosynthetic pathway provide varying degrees of axonal protection after injury. FK866 and NR treatment provide modest protection (6-9 hr delay), NAMPT or NRK1+NR provide strong protection (24-48 hr), while cytNMNAT1 and NMN deamidase provide the strongest protection (>3 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 are directly supported by experimental data from axon degeneration assays shown in Figure 1. The graded protection levels are clearly quantified with appropriate statistical analysis (n=9, ANOVA with multiple comparison correction), and the time course data demonstrates reproducible differences between interventions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "e446c05c-a7a9-4710-97f8-667cdf9809a7",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Baseline steady-state levels of NAD+ and NMN do not correlate with axonal protection. Robust axonal protection occurs across a wide range of metabolite levels: low (NMN deamidase), normal (cytNMNAT1, SARM1 KO), or high (NAMPT, NRK1+NR) levels of NAD+ and NMN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 are well-supported by LC-MS/MS measurements (Figure 2) with appropriate statistical analysis. The key finding that NMN deamidase reduces NAD+ to 11\u00b17% of control yet provides potent protection (C16) directly contradicts the NAD+ depletion hypothesis. Multiple independent conditions demonstrate protection across different metabolite levels, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "de466b78-f459-4c37-9bd8-bbaeb23921e5",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "After axonal injury, NAD+ levels decline dramatically while NMN shows a transient ~2-fold increase in the first 2 hours before returning to baseline by 6 hours. The previously reported continuous increase in NMN normalized to adenylate pool is due to adenylate pool decline rather than NMN accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22, C24 are supported by LC-MS/MS measurements of axonal metabolites (Figure 2d,e and supplement 2). The reinterpretation of prior literature (C23-C24) is validated by measuring both absolute NMN levels and adenylate pools, demonstrating that normalization artifacts can lead to incorrect conclusions. This highlights the importance of measuring absolute metabolite levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "fbd2482b-3184-4870-8cde-bc93cc912ce5",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In injured axons, axonal protection does not correlate with specific NAD+ or NMN levels. CytNMNAT1 and NMN deamidase maintain stable metabolite levels post-injury, while NAMPT maintains high levels and NRK1+NR shows high NMN (16-fold above control) despite robust protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C31 are supported by axonal metabolite measurements post-injury (Figure 2d,e). The critical finding that 16-fold elevated NMN is compatible with strong axonal protection (C30) directly refutes the NMN toxicity hypothesis. The data demonstrate that protection mechanisms are independent of absolute metabolite levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "910d4ade-c2da-4970-8904-cb0acd1b2337",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Using NMN synthetase to reverse NMN deamidase activity and elevate NMN levels does not abolish the axoprotective effect of NMN deamidase. This demonstrates that neither NMN reduction nor NaMN/NaAD accumulation is necessary for axonal protection, refuting the NMN toxicity hypothesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 describe an elegant genetic rescue experiment (Figure 3) that directly tests the NMN hypothesis. The co-expression of NMN synthetase with NMN deamidase reverses metabolite changes but maintains protection, providing strong evidence against NMN as the driver of degeneration. The experimental design and controls are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "6f68ff72-681e-45f5-9ce2-e5de47e8b8f3",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A novel NAD+ flux assay using deuterated nicotinamide (D4-Nam) was developed and validated. In uninjured axons, steady-state NAD+ is maintained by balanced synthesis (6.9\u00b11.4%/hr) and consumption (8.2\u00b13.1%/hr) rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 describe methodological development and validation of the flux assay (Figure 4 and supplements). The approach is sound: D4-Nam doesn't alter degeneration kinetics (C42), rapidly replaces endogenous Nam (C43), and allows independent measurement of synthesis and consumption. The baseline flux measurements provide important context for injury responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "12c367b8-38a6-4496-89c4-b721c706f448",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Basal NAD+ flux rates in uninjured axons correlate with steady-state NAD+ levels but not with axonal protection phenotypes. SARM1 KO and cytNMNAT1 show normal consumption rates, while NMN deamidase shows lower and NAMPT shows higher rates, consistent with their effects on NMN availability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by flux measurements in uninjured axons (Figure 4 supplement 3). The finding that basal flux doesn't correlate with protection (C47) is important for ruling out baseline metabolic differences as the protective mechanism. The interpretations regarding NMN as rate-limiting substrate (C48-C50) are consistent with established biochemistry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Injury-induced NAD+ depletion results from a major increase in NAD+ consumption (from 8.5\u00b13.8%/hr to 21.7\u00b11.6%/hr) that begins immediately after injury and precedes loss of NAD+ synthesis. There is a transient increase in synthesis in the first 2 hours, likely due to NAMPT activation from NAD+ feedback relief, but synthesis is lost after 2 hours due to NMNAT2 degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 represent a key mechanistic finding from flux analysis (Figure 4a-c). The temporal resolution demonstrates that increased consumption precedes loss of synthesis, challenging the prevailing model. The interpretation of NAMPT activation (C54) is reasonable given known feedback regulation, though direct NAMPT activity measurements would strengthen this. The flux approach provides insights not available from steady-state measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SARM1 is required for the injury-induced increase in NAD+ consumption. SARM1-deficient axons show no significant change in consumption rate after injury (6.3\u00b12.4%/hr uninjured vs 7.9\u00b13.7%/hr post-axotomy), in contrast to the dramatic increase in wildtype axons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are strongly supported by flux analysis comparing wildtype and SARM1 KO neurons (Figure 4a,b). The genetic evidence that SARM1 is required for injury-induced consumption is compelling. The data extend prior steady-state observations (C58-C59, citations) by demonstrating SARM1's role in the consumption process specifically. Statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "2ef86001-8efd-4e2a-8fb0-8b8a5dcca75c",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CytNMNAT1 and NMN deamidase completely block SARM1-dependent NAD+ consumption after injury, while NAMPT does not. This blockade of consumption explains the profound axoprotective effects of NMNAT and NMN deamidase, as all three interventions (SARM1 loss, NMNAT gain, NMN deamidase gain) that provide long-lasting protection also block NAD+ degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 integrate flux and protection data to establish mechanism (Figure 4b). The correlation between consumption blockade and strong protection is compelling. However, the causal claim (C66) that blockade 'explains' protection is an inference - while strongly supported by correlation, direct causation isn't definitively proven. The distinction between interventions that block consumption (strong protection) vs. those that don't (weak protection) is clear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "7e5c02d4-5de0-42e9-98b5-5ab2507e5fc9",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NAMPT and NRK1+NR provide modest axonal protection through a different mechanism than NMNAT/NMN deamidase: they elevate baseline NAD+ levels to transiently counter SARM1-dependent consumption, maintaining NAD+ above a critical threshold for longer after injury.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C77 propose a mechanistic model for modest protection based on the data showing these interventions don't block consumption but do elevate baseline NAD+. The model is reasonable and consistent with observations, though the 'critical threshold' concept is inferred rather than directly demonstrated. The distinction between two protection mechanisms (consumption blockade vs. elevated baseline) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "d814950d-8370-4c80-ab2b-dd5901ff32f6",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "SARM1-triggered NAD+ degradation is fully inhibited by cytNMNAT1 or NMN deamidase even when NMN levels are elevated (by adding NR), demonstrating that NMN reduction is not necessary for blockade of SARM1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 describe experiments testing whether low NMN is required for SARM1 blockade (Figure 4b). The data showing protection persists despite elevated NMN definitively rules out NMN reduction as the mechanism. This complements the earlier steady-state findings and strengthens the conclusion that NMN levels don't regulate SARM1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The central finding is that NMNAT1 and NMN deamidase protect axons by blocking injury-induced, SARM1-dependent NAD+ consumption rather than by altering NAD+ synthesis or NMN levels. Neither NAD+ loss nor NMN accumulation trigger axon degeneration; instead, SARM1-dependent NAD+ consumption is the central biochemical event in axonal degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C8-C9, C71, C80, C86 represent the main conclusions synthesizing all experimental findings. The evidence from steady-state metabolite measurements, genetic manipulations, and flux analysis converges to support this model. The rejection of prior hypotheses (NAD+ depletion, NMN toxicity) is well-justified by the data. The identification of SARM1-dependent consumption as the central event is strongly supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f0f97986-e8a8-4e6f-a41e-2c7a01645c35",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The most potent protection comes from cytNMNAT1 or NMN deamidase, which block SARM1-dependent NAD+ depletion. By inference, NMNAT2 works via the same mechanism, and when NMNAT2 levels decline after injury, SARM1 becomes activated. This is consistent with genetic evidence that NMNAT2 knockout lethality is rescued by SARM1 loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 integrate current findings with prior genetic evidence. The inference about NMNAT2 mechanism (C73) is reasonable given that NMNAT1 blocks SARM1, though it remains indirect. The genetic evidence from Gilley et al. 2015 (C74-C75) provides strong independent support for NMNAT2 functioning upstream of SARM1. The integration of biochemical and genetic evidence is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "0fdfd382-8fc1-4558-8f21-65b345473e6d",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "NAMPT overexpression and FK866 (NAMPT inhibitor) both provide axonal protection, though FK866's protection is much weaker than NAMPT's. The mechanism of FK866 protection remains unexplained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76, C78-C79 report observations about NAMPT and FK866 effects (Figure 1). The data are clear, though the paradox of a NAMPT inhibitor providing protection (albeit weak) is acknowledged as unexplained (C79). This represents an honest limitation. The weaker protection from FK866 vs NAMPT is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "9c93415a-6d9f-441d-be25-d51641acd077",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The mechanism of NMNAT/NMN deamidase protection is unlikely to involve direct protein-protein interaction with SARM1, based on: (1) diverse NMNAT enzymes with minimal sequence similarity provide protection, (2) rapid protection from protein transduction, and (3) requirement for enzymatic activity. This suggests metabolites altered by these enzymes regulate SARM1 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C85 present arguments against direct interaction and for metabolite-mediated regulation, citing prior literature. The logic is sound: sequence diversity (C81) and activity requirement (C84) argue against specific protein interactions. However, the conclusion that metabolites regulate SARM1 (C85), while reasonable, doesn't identify which metabolites, since NAD+ and NMN have been ruled out. This represents an important unresolved question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "78131695-78a5-4046-bdf1-7fce6ea94b42",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings explain the Wlds phenotype as resulting from continued SARM1 inhibition by the longer-lived Wlds protein compensating for NMNAT2 loss. The results suggest SARM1 inhibitors or NAD+ synthesis boosters may be valuable therapeutic approaches for blocking axonal degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 provides a mechanistic explanation for Wlds that is consistent with all findings. Claim C88 is speculation about therapeutic implications, appropriately framed as a suggestion. While the therapeutic potential is reasonable given the findings, it remains to be tested whether these approaches work in disease models or clinical settings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "67e05389-7006-4762-bbcd-f134dc04936f",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background context: NMNAT1 overexpression preserves injured axons; Wallerian degeneration is regulated axon self-destruction; Wlds protein delays degeneration by mislocalizing NMNAT1 to axons; NMNAT enzymes synthesize NAD+ from NMN; and NMN deamidase provides axonal protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C3-C7 provide established background from prior literature. These are appropriately cited and represent accepted knowledge in the field. They provide necessary context for the current study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "63445e58-b23c-44cd-8df0-b85363a730a9",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Following axotomy, axonal NAD+ levels decline, which could be due to loss of NAD+ biosynthesis via NMNAT2 degradation and/or increased NAD+ degradation via SARM1 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 state known observations (C39) and hypotheses (C40-C41) that motivated the flux analysis. These represent the state of knowledge before the current study and are appropriately cited. The flux analysis in the paper resolves that both mechanisms contribute, with consumption increase preceding synthesis loss.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    },
+    {
+      "id": "f11ddfb0-6ce9-45bb-83b8-8bba5ddc634e",
+      "content_id": "2d726551-edbd-4475-9b94-69a53bd50ffd",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Methodological details: CD1 mice were obtained at E11.5 from Charles River; SARM1 knockout mice are on C57/BL6 background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are straightforward methodological details appropriately documented in the Materials and Methods. These are necessary for reproducibility but represent standard practices rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T21:14:25.086672Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc85a95d-47f3-46c2-a1be-bef908b6fa3a",
+      "result_id": "8f476276-1653-43b4-9ac7-67ed7302896a"
+    },
+    {
+      "claim_id": "8fbed197-e9ea-47cb-956a-27d78ae79d52",
+      "result_id": "8f476276-1653-43b4-9ac7-67ed7302896a"
+    },
+    {
+      "claim_id": "3c680afc-27fa-4f57-bba9-75b3eb475a0b",
+      "result_id": "8f476276-1653-43b4-9ac7-67ed7302896a"
+    },
+    {
+      "claim_id": "d7b2d357-a48d-4139-b771-25dc9f31ea31",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "bfae3c55-30e7-4436-91e2-4a2787387f63",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "ab5138f5-d37d-4cb0-a5d0-b19afac2f5dd",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "a0e04a58-5bbd-4eb1-9d48-8905576a89cd",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "60f673f0-171f-4f44-bbff-4a908024af3a",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "cf9c81f3-c422-4d17-ac83-8131694cd81d",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "3d9cf8de-70a6-4a53-b536-56a6e9263a6d",
+      "result_id": "e446c05c-a7a9-4710-97f8-667cdf9809a7"
+    },
+    {
+      "claim_id": "fd744535-007b-46ab-bac3-a39a24602f2d",
+      "result_id": "de466b78-f459-4c37-9bd8-bbaeb23921e5"
+    },
+    {
+      "claim_id": "b73fc73d-c10c-4034-bf88-16521ff86bec",
+      "result_id": "de466b78-f459-4c37-9bd8-bbaeb23921e5"
+    },
+    {
+      "claim_id": "7c18d7a4-1bca-4c85-ab8a-fdf3be7ab8d1",
+      "result_id": "de466b78-f459-4c37-9bd8-bbaeb23921e5"
+    },
+    {
+      "claim_id": "6bb5ad34-df55-4073-952f-0190179b451f",
+      "result_id": "de466b78-f459-4c37-9bd8-bbaeb23921e5"
+    },
+    {
+      "claim_id": "80b76c77-ecfb-4032-9cd6-aa206ca3b7e3",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "19ae6ff6-1f2f-4882-ba8d-3870b94a45c7",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "f8ae6b3a-4378-4cdb-9528-37e88d7e9f37",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "461fc840-b73e-43d3-ae91-af6ad769cbcf",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "7d2a6b2f-d5f6-4929-b992-91c73c79258e",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "0acd2566-2e69-4411-aa8d-79c1950941ee",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "e95da47b-fd72-4818-bbea-cba2396c0634",
+      "result_id": "fbd2482b-3184-4870-8cde-bc93cc912ce5"
+    },
+    {
+      "claim_id": "31478a05-83d7-4c90-a538-311ad64f761f",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "8455b86a-742d-41d7-96a6-e6e85c6caca6",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "bdbbce00-c8d8-4804-a1be-f9da90c9c3d6",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "52f067a6-a0d4-4b59-ab55-b67059e8ae03",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "e8a68f7f-226c-4100-993b-6f496017e3f5",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "a69424d9-97e4-491e-a2fc-f9e93b78f34a",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "25fc0467-f9da-454f-ba5b-c81558574fa5",
+      "result_id": "910d4ade-c2da-4970-8904-cb0acd1b2337"
+    },
+    {
+      "claim_id": "36494d84-e9b4-4fff-9109-d05b94938bef",
+      "result_id": "6f68ff72-681e-45f5-9ce2-e5de47e8b8f3"
+    },
+    {
+      "claim_id": "bc321437-3ae0-4b48-a090-4c74fe678d34",
+      "result_id": "6f68ff72-681e-45f5-9ce2-e5de47e8b8f3"
+    },
+    {
+      "claim_id": "f9563864-05b6-4300-a155-2513ad30f8b7",
+      "result_id": "6f68ff72-681e-45f5-9ce2-e5de47e8b8f3"
+    },
+    {
+      "claim_id": "29cb4dc3-d285-436e-a2e7-149d7a79126c",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "3b67d74d-f15e-478b-80e3-2705b109a8cc",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "006b0bdf-c52e-4d6f-abbc-0c00cdadf152",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "cf32661c-0759-42f5-8fc6-ba20e74ef635",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "b8bbfcc8-1f45-42a0-9153-825d559cb70b",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "dbb7d13c-4d07-4d4e-a404-55b1c68beeec",
+      "result_id": "12c367b8-38a6-4496-89c4-b721c706f448"
+    },
+    {
+      "claim_id": "4c1809ee-1496-4b2c-941c-c527738f4215",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "1b6ad35b-e4dd-4125-ba28-bc0261beb86d",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "f46e236d-3b08-4daf-988a-614ef5f438e0",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "023ffc5e-e375-4e83-bb22-e96fc9b5bcaa",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "76373aa2-5037-44bf-89cb-c441062facee",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "03685418-8360-45dc-ad51-28c6a3f01607",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "24b67a24-d233-4508-bf95-6cdcd1f84048",
+      "result_id": "b3f2fb9a-cad5-48c6-bc43-98730c0e3d4b"
+    },
+    {
+      "claim_id": "d21cc4df-ed34-496f-ad15-edef56022459",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "43b0cceb-fe73-4263-9de1-7d6d8040e92b",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "f802bd9a-a1d3-48fb-9999-00a8c8cdc2b0",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "112aafdf-18ec-45a8-9afc-7b37a36eec98",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "74375e84-e149-41aa-ba46-fe3d7cc5f761",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "0292d819-c8eb-4ef3-a964-c9c50fea5d7d",
+      "result_id": "3309b1f4-c0cb-44b4-9d42-f40981da83b5"
+    },
+    {
+      "claim_id": "3b7bb12e-bbf2-4be7-8e2b-95f8b4e8e9b2",
+      "result_id": "2ef86001-8efd-4e2a-8fb0-8b8a5dcca75c"
+    },
+    {
+      "claim_id": "588208d7-566a-4abd-a587-e4be58de3577",
+      "result_id": "2ef86001-8efd-4e2a-8fb0-8b8a5dcca75c"
+    },
+    {
+      "claim_id": "647e5541-c27c-4634-bb0a-a60c148b8fd3",
+      "result_id": "2ef86001-8efd-4e2a-8fb0-8b8a5dcca75c"
+    },
+    {
+      "claim_id": "3aa49652-aee3-428d-849d-c08fd7bb800f",
+      "result_id": "2ef86001-8efd-4e2a-8fb0-8b8a5dcca75c"
+    },
+    {
+      "claim_id": "3edf58bd-a537-42c1-b387-670a628f22f7",
+      "result_id": "7e5c02d4-5de0-42e9-98b5-5ab2507e5fc9"
+    },
+    {
+      "claim_id": "a2401d5d-cc73-4f3b-bba4-9a9d7a5a38b7",
+      "result_id": "7e5c02d4-5de0-42e9-98b5-5ab2507e5fc9"
+    },
+    {
+      "claim_id": "87b9a5b4-e0d6-4973-bc56-69ae706f4a3e",
+      "result_id": "d814950d-8370-4c80-ab2b-dd5901ff32f6"
+    },
+    {
+      "claim_id": "137da4be-3772-4ba8-97c3-265a81e308e6",
+      "result_id": "d814950d-8370-4c80-ab2b-dd5901ff32f6"
+    },
+    {
+      "claim_id": "b4894242-7f45-49f7-a855-17eceba3db3b",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "a234c0d9-6ae7-4282-b742-b72c40894cc8",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "1f67b604-d1be-4809-b0c2-25fab1be84c6",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "873524c5-5f8d-4e10-8bc3-47a8c57363a9",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "a6a7d7cb-e5b1-4e7a-805a-a828020f7c95",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "7b0ec262-ffb0-44f9-875e-449ef6cd0743",
+      "result_id": "c85dde0e-46dc-4b51-986b-87d60d7b22f3"
+    },
+    {
+      "claim_id": "6994e3d1-225a-4d63-a7d5-323bba46be95",
+      "result_id": "f0f97986-e8a8-4e6f-a41e-2c7a01645c35"
+    },
+    {
+      "claim_id": "8a93a501-0759-4b39-beb8-93733d860607",
+      "result_id": "f0f97986-e8a8-4e6f-a41e-2c7a01645c35"
+    },
+    {
+      "claim_id": "6eef5ee6-4457-4bfe-a1e1-516454b5478e",
+      "result_id": "f0f97986-e8a8-4e6f-a41e-2c7a01645c35"
+    },
+    {
+      "claim_id": "ffe12cad-1866-452a-a71a-ef888761fa4d",
+      "result_id": "f0f97986-e8a8-4e6f-a41e-2c7a01645c35"
+    },
+    {
+      "claim_id": "13a74fde-3028-4348-849d-1e11c9720ccb",
+      "result_id": "0fdfd382-8fc1-4558-8f21-65b345473e6d"
+    },
+    {
+      "claim_id": "0dcbb3da-36f1-48c8-96d3-7fa7e86a74ea",
+      "result_id": "0fdfd382-8fc1-4558-8f21-65b345473e6d"
+    },
+    {
+      "claim_id": "5b4a2019-fed1-4fba-84d5-a80897cd2c8c",
+      "result_id": "0fdfd382-8fc1-4558-8f21-65b345473e6d"
+    },
+    {
+      "claim_id": "db61702e-45c4-4918-a5e5-1ec2d3fb3d0a",
+      "result_id": "9c93415a-6d9f-441d-be25-d51641acd077"
+    },
+    {
+      "claim_id": "7cf28a35-eb14-478e-8900-48a8b481b087",
+      "result_id": "9c93415a-6d9f-441d-be25-d51641acd077"
+    },
+    {
+      "claim_id": "d67e407d-03fc-4c88-928a-f647a34e5493",
+      "result_id": "9c93415a-6d9f-441d-be25-d51641acd077"
+    },
+    {
+      "claim_id": "dac2574f-be1f-44ae-a07f-da1f80521ebe",
+      "result_id": "9c93415a-6d9f-441d-be25-d51641acd077"
+    },
+    {
+      "claim_id": "0b94c087-45f8-430e-bf8c-a8de20169d15",
+      "result_id": "9c93415a-6d9f-441d-be25-d51641acd077"
+    },
+    {
+      "claim_id": "0e9d5d86-b6d9-4a80-9611-e8e18755ea46",
+      "result_id": "78131695-78a5-4046-bdf1-7fce6ea94b42"
+    },
+    {
+      "claim_id": "a456f298-e6fa-44a9-8cdb-8a1fe739486c",
+      "result_id": "78131695-78a5-4046-bdf1-7fce6ea94b42"
+    },
+    {
+      "claim_id": "73827284-434a-432d-b248-bca918193df9",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "195ffabe-c8de-4f02-843f-36fd6ac09976",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "73379637-a9e5-4d07-8322-af0117b12db9",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "0a0923fc-86aa-459c-a7ab-870e69c97d49",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "2eaeadd4-ecf5-4e12-b89d-fe8f44bf3c20",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "c72890ba-a515-4ffa-b760-9f734bbf858f",
+      "result_id": "67e05389-7006-4762-bbcd-f134dc04936f"
+    },
+    {
+      "claim_id": "c88e7546-40ba-4b1b-9b30-3a1575180b8d",
+      "result_id": "63445e58-b23c-44cd-8df0-b85363a730a9"
+    },
+    {
+      "claim_id": "08636abd-2a41-4b74-8705-dd5b913aa340",
+      "result_id": "63445e58-b23c-44cd-8df0-b85363a730a9"
+    },
+    {
+      "claim_id": "1b8e0fde-13c4-4170-a1d5-af4938cda403",
+      "result_id": "63445e58-b23c-44cd-8df0-b85363a730a9"
+    },
+    {
+      "claim_id": "55f9b0f8-517d-447b-8cf3-d11a438278df",
+      "result_id": "f11ddfb0-6ce9-45bb-83b8-8bba5ddc634e"
+    },
+    {
+      "claim_id": "3bb9f797-814c-4ffd-bafb-53f87df5f2e2",
+      "result_id": "f11ddfb0-6ce9-45bb-83b8-8bba5ddc634e"
+    }
+  ],
+  "comparisons": []
+}

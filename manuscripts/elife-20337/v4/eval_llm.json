@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The last common ancestor of mice and humans existed around 80 million years ago, which is sufficient time for divergence in signal-dependent gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are both supported by citation to Villar et al., 2014. These are background claims establishing evolutionary context for the study and are appropriately referenced to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Activity-dependent transcriptional programs in neurons are triggered by Ca2+ influx through ligand- and/or voltage-gated channels, activate genes with Ca2+-responsive promoter elements, are critical for neuronal function in development and maturity, are distinct from excitotoxic responses, and direct processes including neuroprotection, dendritic arborization, and synaptic plasticity. Defects in these mechanisms are associated with neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 establish the biological background for activity-dependent gene expression in neurons. All claims are supported by appropriate citations to established literature (Sheng and Greenberg, 1990; Morgan and Curran, 1991; West et al., 2001; Konur and Ghosh, 2005; West and Greenberg, 2011; Bell and Hardingham, 2011; Hardingham and Bading, 2010; Wyllie et al., 2013). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C15",
+      "C16",
+      "C69",
+      "C70"
+    ],
+    "result": "hESCCORT-neurons have sufficient homogeneity and electrical maturity to enable study of activity-dependent gene expression, with superior dynamic range compared to classical neurosphere preparations. KCl/FPL treatment produces robust and uniform Ca2+ responses similar to rodent neurons, with over 80% showing >10-fold increase in [Ca2+].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C13, C15, C16, C69, and C70 are supported by citations to Bilican et al., 2014; Livesey et al., 2014; Pa\u015fca et al., 2011; Spiegel et al., 2014; and Hardingham et al., 1999, as well as reference to Figure 1\u2014figure supplement 1a showing Ca2+ imaging data. The characterization of the hESCCORT-neuron system is appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "KCl/FPL treatment robustly induces classical activity-regulated genes (FOS, FOSL2, FOSB) and neurobiologically important genes (BDNF, ARC, NPAS4) in hESCCORT-neurons, genes that have been studied primarily in rodent neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by QPCR data shown in Figure 1\u2014figure supplement 1b. Claim C23 is a statement about the historical focus of research. The induction of these canonical activity-regulated genes validates the experimental system and demonstrates that human neurons respond to depolarization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "QPCR validation of fold-induction of selected ARGs revealed tight correlation (r > 0.99) with RNA-seq data in both human and mouse neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are supported by correlation data shown in Figure 1\u2014figure supplement 1c, 1d. The very high correlation (r > 0.99) between QPCR and RNA-seq validates the reliability of the RNA-seq dataset, which is critical for the subsequent comparative analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Genes induced >5-fold in both human and mouse neurons include neurobiologically important genes PER1, EGR2, EGR4, and ATF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are supported by RNA-seq data shown in Figure 1c. These genes represent examples of conserved activity-dependent gene induction across species, demonstrating that some aspects of the transcriptional response are preserved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Global comparison of activity-dependent gene fold-change in 11,302 orthologous pairs revealed a correlation of r = 0.480 (p<0.0001) between human and mouse neurons, pointing to significant but incomplete conservation. The Log2 DRIs are normally distributed about zero with standard deviation of 0.68.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by correlation analysis (Figure 1d) and DRI distribution (Figure 1\u2014figure supplement 1e). The moderate correlation coefficient (r = 0.480) is statistically significant and indicates both conservation and divergence. The interpretation of 'significant but incomplete conservation' (C31) is reasonable given the correlation strength. The normal distribution of DRIs centered at zero supports the validity of the comparative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Comparison of DIV10 and DIV4 mouse neurons revealed strong correlation (r = 0.834, p<0.0001) with narrower DRI distribution than human-mouse comparisons, suggesting developmental stage does not have a large effect on activity-responsiveness at the 4h timepoint and is unlikely to account for human-mouse differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by correlation analysis (Figure 1e) and DRI distribution comparison (Figure 1\u2014figure supplement 1f vs 1e). The much stronger correlation between mouse neurons at different developmental stages (r = 0.834) compared to human-mouse correlation (r = 0.480) supports the inference that developmental stage is not the primary driver of observed differences. This is a critical control experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mouse ESC-derived cortical neurons (Mus-ESCCORT-neurons) exhibit spontaneous firing and synaptic activity similar to human ESCCORT-neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by electrophysiological data in Figure 2a-d and citations to Bilican et al., 2014; Livesey et al., 2014. The characterization demonstrates that the mouse ESC-derived neurons are functionally mature and comparable to the human system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Gene-responsiveness in mouse ESC-derived neurons correlates strongly with mouse primary neurons (r = 0.748 for DIV10, r = 0.788 for DIV4), significantly stronger than with human ESC-derived neurons (r = 0.596). All mouse neuronal preparations cluster together and separate from human neurons, suggesting species-specific differences rather than effects of developmental stage or cellular origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by correlation analyses (Figures 2e, 2f, 2g) and clustering analysis (Figure 2h). The stronger within-species correlations compared to between-species correlations, regardless of developmental stage or tissue origin, provide strong evidence that the observed differences are due to species-specific factors. This is a key finding that rules out confounding variables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C44"
+    ],
+    "result": "Basal gene expression shows higher correlation between human and mouse neurons (r = 0.714, 0.711, 0.710) than activity-dependent fold-change (r = 0.480, 0.526, 0.595), indicating that basal expression shows less divergence than activity-responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 and C44 are supported by correlation analyses shown in Figure 2\u2014figure supplement 1b-d and comparison with activity-dependent correlations. The consistently higher correlations for basal expression across all comparisons demonstrate that evolutionary divergence is more pronounced in the dynamic response to stimulation than in baseline expression patterns. This is an important observation about the nature of evolutionary divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "There is no link between a gene's relative responsiveness to depolarization (DRI) and its relative basal expression levels (DBEI) in human vs. mouse neurons, indicating that evolutionary differences in activity-dependent gene responsiveness are not substantially attributable to differences in basal expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C46 are supported by analysis shown in Figure 2\u2014figure supplement 1e showing no correlation between Log2(DRI) and Log2(DBEI). The lack of correlation and similar standard deviations of DBEI across genes with different DRIs support the conclusion that differential basal expression does not explain differential activity-responsiveness. This rules out a potential confounding explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C77"
+    ],
+    "result": "Using Tc1 transchromosomic mouse neurons carrying human chromosome 21, species-specific differences in gene regulation observed in separate preparations are recapitulated when orthologs are studied side-by-side in the same cellular environment (r = 0.730, p<0.0001 between Tc1 DRI and separate DRI for 72 orthologous pairs), pointing to DNA sequence as a contributor to species-specific gene responsiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 and C77 are supported by the Tc1 mouse experimental design, validation that mouse genes respond normally (Figure 3\u2014figure supplement 1a, r = 0.900), correlation analysis (Figure 3b), and the species-specific sorting workflow that discarded only 0.055% of reads. The significant correlation between Tc1 DRI and separate DRI demonstrates that sequence differences contribute to differential regulation independent of cellular environment. This is a critical mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The human ETS2 ortholog is induced more strongly and rapidly than the mouse ortholog. The human ETS2 proximal promoter contains three human-specific AP-1 sites that confer activity inducibility on a luciferase reporter, unlike the mouse promoter. TAM67 inhibits induction and mutation of the AP-1 sites to mouse sequence abolishes inducibility, demonstrating functional human-specific AP-1 sites potentially contributing to differential induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C60 are supported by data in Figures 3c-e showing differential induction kinetics, sequence analysis revealing human-specific AP-1 sites, and luciferase reporter assays demonstrating functional importance of these sites. The combination of observational data (differential induction), sequence analysis, and functional validation (reporter assays, TAM67 inhibition, site mutation) provides strong mechanistic evidence. Claim C60 appropriately uses 'potentially' as the promoter analysis alone doesn't prove these sites fully explain the endogenous gene differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Qualitative gene up/down regulation is well conserved between human and mouse neurons: 91 of the top 100 most strongly induced human genes are also induced in at least one mouse preparation, and 409 of 475 genes induced >2-fold in human neurons are also induced in mouse preparations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by analysis of RNA-seq data across multiple neuronal preparations. The high proportion of genes showing conserved qualitative responses (91/100 and 409/475) demonstrates that while quantitative differences exist, the direction of regulation is largely preserved. This contextualizes the main findings about quantitative divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The study demonstrates quantitative differences in activity-dependent gene-responsiveness in developing human neurons compared to mouse neurons, mediated at least in part by DNA sequence divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 represent the main conclusions of the study, supported by the totality of evidence including: moderate human-mouse correlation (C30-C32), strong within-species correlations ruling out developmental/origin effects (C33-C43), and Tc1 mouse experiments demonstrating sequence contribution (C47-C51). The phrase 'at least in part' appropriately acknowledges that sequence may not be the only factor. This is the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "These differences in activity-dependent gene-responsiveness may have a functional impact on the physiological response of human neurons to electrical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is speculative and not directly tested in this study. While the observed quantitative differences in gene expression are real, whether they translate to functional differences in neuronal physiology is not demonstrated. This would require additional experiments examining downstream functional outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "This study points to the value of employing human neurons as a tool to help bridge the translational gap between rodent studies and human neurophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is a reasonable interpretation of the study's implications, supported by the demonstration of species-specific differences in transcriptional responses and citations to relevant literature about signal-dependent programs and pharmaceutical responses. The finding that human and mouse neurons show quantitative differences in their responses to stimulation supports the value of human neuronal models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C14",
+      "C23",
+      "C71",
+      "C72",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Methodological details including the Tc1 mouse model, L-type Ca2+ channel activation as mediator of activity-dependent regulation, timing of experiments, culture conditions, expression thresholds for analysis, and justification for replicate numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C14, C23, C71, C72, C78-C84 describe methodological details and background information. These are appropriately documented through citations or descriptions in the methods section. The use of three biological replicates is justified by citation to prior successful work (Papadia et al., 2008).",
+    "result_type": "MINOR"
+  }
+]

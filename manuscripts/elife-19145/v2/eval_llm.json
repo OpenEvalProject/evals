@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C68",
+      "C69",
+      "C71",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C89",
+      "C97",
+      "C103",
+      "C104",
+      "C105",
+      "C128",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The theoretical model combining autocatalytic nucleation and polymerization dynamics predicts that asters can expand as traveling waves even when individual microtubules are unstable (J<0), with an explosive transition from stationary to growing asters characterized by a discontinuous jump in velocity (gap velocity). This collective growth regime requires a critical nucleation rate and is a general prediction independent of the precise molecular mechanism of autocatalytic nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The theoretical predictions are well-supported by analytical solutions (C74, C75, Equation 4), numerical simulations (C68, C69, C128), and are shown to be robust across different model variants (C104, C134, C135). The gap velocity emerges from the mathematical structure of the model (C89, C136) and is demonstrated in multiple parameter regimes (C103). The critical nucleation rate is derived analytically (C81-C83, C87) with clear physical interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C70",
+      "C72",
+      "C73",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C129",
+      "C151"
+    ],
+    "result": "Biochemical perturbation experiments using MCAK-Q710 in Xenopus egg extract confirm the theoretical predictions, showing slowing and eventual arrest of aster growth with a substantial gap velocity at the transition. The experiments demonstrate bimodal behavior at the critical concentration with no asters growing at intermediate velocities (0-9 \u03bcm/min), consistent with the predicted explosive transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations (C111, C112, C114, C115) directly confirm the theoretical predictions (C129, C151). The gap in observed velocities (C115) provides strong evidence for the gap velocity prediction. Control experiments with Tetrahymena pellicles (C117-C121) rule out alternative explanations related to bead nucleation. The bimodal behavior (C114) is consistent with the explosive transition predicted by theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C130",
+      "C131",
+      "C133"
+    ],
+    "result": "The biophysical model allows estimation of parameters not directly accessible experimentally (rescue rate fres = 2.0\u00b10.3 min\u207b\u00b9 and autocatalytic nucleation rate r = 2.1\u00b10.2 min\u207b\u00b9) using measured values of polymerization dynamics and aster velocity. The inferred nucleation rate is comparable to previous estimates in meiotic egg extract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parameter estimation approach is sound, using measured values (C35-C37, C42, C43) combined with theoretical equations (C38, C39) to infer inaccessible parameters. The estimated nucleation rate (C39) is validated by comparison to independent measurements in related systems (C131), providing confidence in the model. The mean microtubule length estimate (C41) is consistent with the bounded regime assumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C34",
+      "C150",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Large interphase asters in fish and amphibian eggs are proposed to be meshworks of short (16\u00b12 \u03bcm), unstable microtubules maintained by autocatalytic nucleation, representing an emergent collective growth phenomenon. This architecture provides potentially desirable properties including robustness to severing, rapid disassembly, and uniform mechanical properties independent of distance from the centrosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion is well-supported by the combination of theoretical predictions (C27, C78, C162) and experimental observations (C41, C150). The estimated mean microtubule length (16\u00b12 \u03bcm) is much shorter than aster radii (hundreds of microns), supporting the collective growth interpretation (C150). The predicted properties (C163-C165) follow logically from the model structure, though they remain to be tested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "The observation of a finite gap velocity distinguishes the autocatalytic nucleation model from reaction-diffusion models, which predict continuous, gradual changes in velocity. This provides strong support for the model and rules out a wide class of alternative models that neglect internal dynamics such as microtubule length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to reaction-diffusion models is well-founded (C153-C155) with appropriate citations. The key distinction\u2014that reaction-diffusion models neglect length-dependent dynamics (C154)\u2014is correctly identified as the source of qualitatively different predictions. The experimental observation of the gap velocity (C115, C156) provides strong discriminatory power between model classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "MCAK-Q710 perturbation does not change polymerization or catastrophe rates at concentrations corresponding to the transition, suggesting that MCAK-Q710 affects aster growth through increased depolymerization rate, decreased rescue rate, and/or decreased nucleation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental measurements (C122) rule out changes in polymerization and catastrophe rates, narrowing the possible mechanisms. The three proposed scenarios (C125) are consistent with the data and the model structure. However, the precise mechanism remains uncertain (C124), which is appropriately acknowledged. The conclusion is appropriately cautious given the available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The model predicts that cells can independently regulate aster growth rate and microtubule density through control of nucleation rate and polymerization dynamics. The gap velocity enables switch-like transitions between stationary and rapidly growing asters with small parameter changes, while maintaining low microtubule density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The independent regulation of velocity and density (C158, C161) follows from the model structure where density scales with (r-rc) while velocity has a finite minimum (C99, C160). The switch-like behavior (C160) is a direct consequence of the gap velocity. The biological advantages (C100, C101) are reasonable inferences, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The phase diagram suggests that small mitotic asters correspond to stationary asters with bounded dynamics (J<0) and low nucleation, while the transition to large interphase asters requires changes in polymerization dynamics and possibly increased autocatalytic nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interpretation of the phase diagram (C140, C141) is consistent with the model predictions and known cell cycle changes in polymerization dynamics (C142). The speculation about increased nucleation during interphase (C143) is reasonable but remains to be tested. The framework provides a unified explanation for cell cycle-dependent aster morphology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C22",
+      "C126",
+      "C146",
+      "C147"
+    ],
+    "result": "The standard model of aster growth, which assumes a fixed number of centrosomally-nucleated microtubules, fails to explain aster morphology in large cells, predicts density decrease at the periphery inconsistent with observations in fish and frog embryos, and cannot account for the addition of new microtubules during growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of the standard model are well-documented through citations to experimental observations (C22, C146, C147) and logical analysis of model predictions (C3, C15, C16). The inconsistencies between standard model predictions and experimental observations in large embryos provide strong motivation for the alternative model. The critique is appropriately supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Collective growth of asters parallels the assembly of other large cellular structures from short filaments, particularly meiosis-II spindles, which exhibit unique properties such as self-repair, fusion, and scaling that may confer greater robustness and evolvability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to other cytoskeletal systems (C167, C168) is well-supported by citations. The parallel to spindle assembly is particularly apt given similar dynamic architecture (C169). The speculation about robustness and evolvability (C170, C171) is reasonable but remains to be tested. This provides useful context for the broader significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The model incorporates biologically plausible assumptions including autocatalytic nucleation dependent on local microtubule density, logistic growth with carrying capacity, and disappearance of non-centrosomal microtubules upon complete depolymerization. These assumptions are broadly consistent with known microtubule physiology and evidence from egg extract experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model assumptions are well-justified by citations to relevant literature (C61, C62, C63, C64) and biological constraints (C65). The logistic growth formulation (C66) is qualitatively consistent with depletion of nucleation factors. The analysis showing that the type of negative feedback does not affect growth rate (C67) strengthens the model by demonstrating robustness to specific mechanistic details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "The distinction between plus-end-stimulated nucleation (rate in min\u207b\u00b9) and polymer-stimulated nucleation (rate in \u03bcm\u207b\u00b9 min\u207b\u00b9) has important implications for the structural mechanism of nucleation and prediction of cell-scale phenomena, though both mechanisms produce qualitatively similar behavior including the gap velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distinction between nucleation mechanisms is clearly defined (C138) and the implications are appropriately noted (C139). The claim that both mechanisms produce similar qualitative behavior (C134) is supported by supplementary analysis. However, the manuscript does not provide experimental tests to distinguish between these mechanisms, which would strengthen this result.",
+    "result_type": "MINOR"
+  }
+]

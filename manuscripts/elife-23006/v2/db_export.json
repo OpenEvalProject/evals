@@ -1,0 +1,1810 @@
+{
+  "submission": {
+    "id": "b56d03d1-750c-4c5d-855e-43a9cbf9a803",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T22:37:23.905489Z",
+    "updated_at": "2025-11-30T22:37:23.905489Z"
+  },
+  "content": [
+    {
+      "id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "submission_id": "b56d03d1-750c-4c5d-855e-43a9cbf9a803",
+      "content_type": "manuscript",
+      "content_text": "# Using the Volta phase plate with defocus for cryo-EM single particle analysis\n\n## Authors\n\n- Radostin Danev<sup>1</sup> ([ORCID: 0000-0001-6406-8993](https://orcid.org/0000-0001-6406-8993)) \u2020\n- Dimitry Tegunov<sup>2</sup> ([ORCID: 0000-0001-7019-3221](https://orcid.org/0000-0001-7019-3221))\n- Wolfgang Baumeister<sup>1</sup>\n\n### Affiliations\n\n1. Department of Molecular Structural Biology Max Planck Institute of Biochemistry Martinsried Germany\n2. Department of Molecular Biology Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPreviously, we reported an in-focus data acquisition method for cryo-EM single-particle analysis with the Volta phase plate (Danev and Baumeister, 2016). Here, we extend the technique to include a small amount of defocus which enables contrast transfer function measurement and correction. This hybrid approach simplifies the experiment and increases the data acquisition speed. It also removes the resolution limit inherent to the in-focus method thus allowing 3D reconstructions with resolutions better than 3 \u00c5.\n\n## Introduction\n\nThe Volta phase plate (VPP) is a device which enables in-focus phase contrast in a transmission electron microscope (TEM) (Danev et al., 2014). It is the first phase-plate-type device to reach near-atomic resolutions in single particle cryo-EM (Chua et al., 2016; Danev and Baumeister, 2016; Khoshouei et al., 2016a, 2016b). Nowadays such resolutions are not uncommon, but there are still challenges related mainly to intrinsic properties of the target structures. Small, heterogeneous and/or flexible molecules are generally difficult to solve by the traditional defocus phase contrast (DPC) method (Cheng et al., 2015). The VPP improves image contrast and thus could help with solving the structures of such \u2018difficult\u2019 samples. Aside from the improved contrast, one of the main questions about the VPP in the cryo-EM community has been: does it in any way limit the achievable resolution as compared to DPC?\n\nIn our previous report (Danev and Baumeister, 2016) we presented an in-focus cryo-EM approach with the VPP. The in-focus method, although ideal from a theoretical point of view, has a few practical disadvantages and limitations. It requires very accurate focusing which complicates and slows down the data acquisition. Furthermore, the achievable resolution is limited by the spherical aberration of the objective lens to\u00a0~3 \u00c5. At the time of our initial report the 3D reconstruction software did not yet support VPP phase shift (PS) in the contrast transfer function (CTF). In the meantime, such support was implemented which enabled the present work. Here, we present a hybrid approach which combines the VPP with a small amount of defocus. It simplifies the data acquisition to a level similar to DPC and solves the resolution limit issue of the in-focus approach by enabling CTF fitting and correction.\n\n## Results and discussion\n\nIn our report on in-focus cryo-EM with the VPP we used Thermoplasma acidophilum 20S proteasome as a test sample (Danev and Baumeister, 2016). Here, we used the same sample for consistency and continuation. The defocused VPP dataset is illustrated in Figure 1. Acquiring images with defocus is easier and faster because the defocus and astigmatism can be fitted and corrected a posteriori. The VPP provides low frequency contrast which allows the use of defocus values smaller than those typically used in DPC. Because of the low defocus the images (Figure 1A) look similar to in-focus images (Figure 4A in Danev and Baumeister, 2016). The power spectrum in Figure 1B, however, clearly shows the effect of defocus with characteristic CTF rings (Thon rings). Fitting the CTFs of VPP data requires an additional PS parameter (Rohou and Grigorieff, 2015). Such fits provide a quantitative measure of the behavior of the VPP. Figure 1C shows a plot of the PS history throughout the dataset. The VPP was advanced to a new position every 1.5 hr (every\u00a0~40 images, total dose on the VPP\u00a0~50 nC). After each advance the PS drops abruptly to a low value (<0.2 \u03c0) and starts to gradually build up again. Figure 1D contains a histogram of the measured PS. The distribution has a maximum at\u00a0~0.6 \u03c0 with a relatively small number of micrographs exhibiting low (<0.2 \u03c0) or high (>0.8 \u03c0) PS. The evolving PS of the VPP is an advantage for single particle analysis because it moves the positions of the CTF zeros thus mitigating the need to vary the defocus, which is necessary with DPC. With the VPP, datasets can be collected with a single, low defocus value.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23006/elife-23006-fig1-v2.jpg)\n\n**Figure 1.:** (A) Representative image of 20S proteasomes in ice, defocus 500 nm. (B) Power spectrum of the image in (A) showing contrast transfer function rings (Thon rings). To enhance the visibility of Thon rings, the power spectrum was calculated as the sum of the power spectra of individual movie frames (McMullan et al., 2015). (C) Phase shift history throughout the dataset. The phase shift gradually increases until the phase plate is moved to a new position where it suddenly drops and starts to raise again. (D) Histogram illustrating the phase shift distribution. (E) Defocus history throughout the dataset. The target defocus was changed after\u00a0~200 images from 500 nm to 300 nm. (F) Histograms illustrating the defocus distributions. Scale bar: 50 nm.\n\nIn this work (Figure 1C) as well as in the previous report (Figure 3 in Danev and Baumeister, 2016) the VPP exhibited more PS than in the original VPP paper (Figure 1C in Danev et al., 2014). In addition, there is some variation in the PS magnitude between different areas on the phase plate (Figure 1C). In practice, it is advantageous to have a VPP with slower PS development because this allows collection of more images at each position. The heater used in the original VPP paper (Danev et al., 2014) was a pre-production prototype and the phase plate was homemade thus the production versions used in this work seem to exhibit a faster PS development. The variation of the PS across VPP areas could indicate a local variation in the quality of the amorphous carbon film. Overall, those factors do not prevent the collection of high quality data, as illustrated by the results presented here, but there is definitely room for improvement and we hope that manufacturers will take those observations into account when they develop future versions of the hardware.\n\nThe history of the measured defocus is plotted in Figure 1E. Approximately halfway through the dataset acquisition we changed the target defocus from 500 nm to 300 nm to evaluate the performance at different defocus values. The measured defocus has periodic oscillations, with\u00a0~16 image period, probably caused by local variations in the slant of the support film (waviness), which can introduce a defocus difference between the focusing and acquisition positions. Histograms of the measured defocus values are shown in Figure 1F. The distribution of the 300 nm target defocus data is wider than the 500 nm one but this seems to be caused by the systematic defocus oscillations and not by random focusing errors (Figure 1E). The 300 nm target defocus had a practical disadvantage in that fitting the CTFs of micrographs with defocus\u00a0<300 nm was difficult because the CTF has fewer rings and their period is similar to power spectrum features, such as the amorphous ice ring at\u00a0~3.7 \u00c5. In practice, the 500 nm defocus was more robust and easier to process.\n\nHigh PS (>0.8 \u03c0) is undesirable because it causes CTF artifacts and thus reduces the quality of the data. Figure 2A shows examples of images with different amounts of PS. The image on the left has a low PS (0.1 \u03c0) and consequently lower contrast. The middle image is close to the optimal PS of 0.5 \u03c0 and has good contrast and the best appearance. The image on the right was acquired with a high PS of 0.9 \u03c0 and looks \u2018blurry\u2019. The blurriness is caused by an extra CTF maximum at very low spatial frequencies illustrated in Figure 2B. In practice, it is difficult to predict the exact shape or size of the central spot of the VPP. Factors such as specimen charging, specimen thickness and beam drift could cause the central beam to change its shape or move on the phase plate and thus modify the central spot. We approximated the central spot of the VPP with a Gaussian function which has only one parameter \u2013 the size of the spot. This is a simple model which, although not accurate in every case, provides a satisfactory simulation of a rather unpredictable function. The bottom plot in Figure 2B shows the approximated relative PS profile of the VPP. The top plot shows CTFs for various saturation PS values. The CTFs were calculated using the formula:(1)|CTF(k)|=|sin\u2061[\u2212\u03c6(1\u2212e\u2212k22s2)+\u03c0(\u2212\u0394z\u00a0\u03bb\u00a0k2+12CS\u00a0\u03bb3\u00a0k4)]|\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23006/elife-23006-fig2-v2.jpg)\n\n**Figure 2.:** (A) Examples of images at low (0.1 \u03c0), optimal (0.5 \u03c0) and high (0.9 \u03c0) phase shifts. (B) Simulated contrast transfer functions (CTF) at 500 nm defocus and different phase shifts (top). Relative phase shift (PS) profile of the Volta phase plate (bottom). The black dashed line represents a CTF of an ideal (delta function) phase plate with 0.9 \u03c0 phase shift. (C) Phase shift histograms before (gray) and after (red) 3D classification of the particles. Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) phase shifts were predominantly rejected. The blue line (right vertical axis) is the particle retention (after vs before 3D classification). Scale bar: 20 nm.\n\nwhere \u03c6 is the phase shift of the VPP in radians, k is the spatial frequency, s is the radius of the VPP spot in reciprocal space (0.05 1/nm), \u25b3z is the defocus (500 nm), \u03bb is the electron wavelength (0.002 nm) and CS is the spherical aberration coefficient (2.6*106 nm). In the case of an ideal phase plate the VPP spot is infinitely small, i.e. s\u00a0=\u00a00. Up to a PS of 0.5 \u03c0 (dotted lines) the CTFs behave well in a sense that they rise gradually in accordance with the PS profile. For high PSs (red line) the CTF rises quickly and passes through a maximum at the point where the PS crosses 0.5 \u03c0 on its way to the saturation value. This peak at very low spatial frequencies and the shift of the first CTF zero towards the low frequencies are the reasons for the blurry appearance of the high PS image in Figure 2A. The CTF model used in data processing is that of an ideal phase plate with a delta-function-like central spot (black dashed line). The large deviation between the practical and the theoretical CTFs (pink area in Figure 2B) means that high PS images are not handled optimally during processing.\n\nFigure 2C shows PS histograms of the particles before and after 3D classification. Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) PSs were predominantly rejected indicating that such particles had low correspondence with the reference. There was no correlation between defocus and particle retention. The first few images after moving the VPP to a new position have a low PS which quickly develops (Figure 3 in Danev and Baumeister, 2016). In those images there may be noticeable PS evolution throughout the multiframe movie. A CTF fit taking into account such evolution is possible, but in general, throwing away such images has little effect on the data acquisition throughput. For high PS images, the CTF model can, in principle, be modified to include the central VPP spot which should improve their handling. However, it is best to avoid both low and high PS images which could be achieved through an improved data acquisition strategy. An optimal solution would be to incorporate PS monitoring in the automated data acquisition software through on-the-fly CTF fitting of the acquired images. Once the PS reaches a preset value, e.g. 0.8 \u03c0, the VPP is advanced to the next position and pre-irradiated for a given time to build up a desired initial PS, e.g. 0.2 \u03c0, before continuing the acquisition. The dataset presented here was acquired with less frequent changes of the VPP position and without throwing away the first few images in order to explore the effect of PS on the quality of the data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23006/elife-23006-fig3-v2.jpg)\n\n**Figure 3.:** (A) Cross-section of the 3D map colored according to the local resolution. (B) Examples of sidechain details. (C) Fourier shell correlation (FSC) plots indicating a resolution of 2.4 \u00c5 according to the gold-standard FSC\u00a0=\u00a00.143 criterion. (D) Per-frame B-factors calculated during the particle polishing. (E) Resolution as a function of the number of particles measured using random particle subsets. Also shown is a data point from Campbell et al. (2015). (F) Same data as in (E) but with logarithmic and squared reciprocal axes. The slope of the linear fit indicates an overall B-factor of 103 \u00c52.\n\nWe first processed the data through the standard Relion workflow (Scheres, 2012, 2014). The results are presented in Figure 3. The reconstruction reached a resolution of 2.4 \u00c5 according to the gold-standard Fourier shell correlation (FSC) 0.143 criterion (Figure 3C). The visibility of primary structure features, such as the holes in the tyrosine and phenylalanine rings (Figure 3B), is in accordance with that estimate. The local resolution varies between 2.2 \u00c5 and 2.6 \u00c5 (Figure 3A). The significant improvement in resolution compared to our previous in-focus dataset, at 3.2 \u00c5 (Danev and Baumeister, 2016), confirms the effectiveness of the CTF correction. Figure 3E shows a plot of the resolution versus number of particles calculated using random particle subsets. The resolution improvement is consistent throughout the particle number range with a significant extension towards low particle numbers. The improvement is also a result of the fact that the defocused dataset was collected with a smaller pixel size (1.054 \u00c5 vs 1.35 \u00c5 previously) and in super-resolution mode of the K2 camera. Figure 3F contains a plot of the logarithm of the number of particles vs the squared reciprocal resolution, with a linear fit. The B-factor calculated as twice the slope of the fit (Rosenthal and Henderson, 2003) was 103 \u00c52. In this work we did not collect a DPC dataset because our main goal was to explore the capabilities of the VPP. We expect that with an \u2018easy\u2019 specimen, such as the 20S proteasome, DPC would have produced very similar results to those of the VPP.\n\nWe also tried a simplified data processing workflow based on the MotionCor2 software (Zheng et al., 2016). It performs movie frame alignment with local motion tracking and dose-weighting. Such preprocessing provides similar performance gains to particle polishing in Relion (Scheres, 2014) but is more efficient in terms of computation and storage space. The results was, for all practical purposes, virtually identical to that from particle polishing both in terms of resolution (2.42 \u00c5 MotionCor2 vs 2.36 \u00c5 polishing) and B-factor (85 \u00c52 MotionCor2 vs 74 \u00c52 polishing). Because of its simplicity, speed and comparable performance, nowadays we use the MotionCor2 workflow for most of our projects.\n\nIn summary, the use of VPP with defocus simplifies the data acquisition and improves the acquisition speed. The evolving PS of the VPP allows the use of a constant, low target defocus. In our experience, 500 nm is a good practical value because it ensures reliable CTF fits with some margin for random or systematic focusing errors. Future modifications of the data acquisition software, to include on-the-fly CTF fitting, PS monitoring and VPP pre-irradiation, would improve the performance by preventing the collection of low and high PS images. Here, we demonstrated that the VPP is not limited in resolution and matches the state of the art of DPC for \u2018easy\u2019 samples, such as the 20S proteasome. The real performance advantage of the VPP needs further exploration using \u2018difficult\u2019 samples, such as small, flexible and/or heterogeneous samples.\n\n## Materials and methods\n\n### Data acquisition\n\nCryo-samples were prepared as described previously (Danev and Baumeister, 2016). The data was collected on an FEI Ttian Krios (FEI, Hillsboro, OR) electron microscope operated at 300 kV and equipped with a Gatan GIF Quantum energy filter and a Gatan K2 Summit direct detection camera (Gatan, Pleasanton, CA). The acquisition conditions were as follows: EFTEM Nanoprobe mode, magnification x47,000, 50 \u00b5m C2 aperture, spot size 6, beam diameter 1.2 \u00b5m, beam current 0.105 nA, zero-loss imaging with 20 eV slit, K2 Summit in super-resolution mode, physical pixel size 1.06 \u00c5, total dose 39 e\u2212/\u00c52, dose rate on the detector 3.6 e\u2212/pixel/s, exposure time 12 s, 24 frames 0.5 s each. The data was acquired automatically with SerialEM software (Mastronarde, 2005). Focusing was performed next to each hole with three image focusing (drift protection), 10 mrad beam tilt, zero defocus offset and taking into account the effect of spherical aberration (target defocus = desired defocus\u00a0+\u00a0270 nm; e.g. for 500 nm underfocus the target defocus was set to \u2212230 nm). The VPP was advanced to a new position every 1.5 hr (every\u00a0~40 images, total dose on the VPP\u00a0~50 nC). The data acquisition speed was\u00a0~27 images/hour, comparable to that of the previously collected in-focus dataset (Danev and Baumeister, 2016). The throughput did not improve, despite simplified focusing, because of the use of super-resolution mode of the K2 camera which added\u00a0~50 s to the time required to process and save the movie frames. The movies were saved as dark-subtracted but non-gain-normalized LZW compressed TIFF files which significantly reduced their size (~220 MB/movie). The gain reference was saved separately.\n\n### Data processing workflow with relion particle polishing\n\nThe dataset consisted of 468 micrographs, 41 (9%) of which were rejected after visual inspection, leaving 427 micrographs for processing. The super-resolution movies were first converted to MRC format with the newstack from IMOD (Mastronarde and Held, 2016), which increased their size to 5.1 GB/movie. Magnification anisotropy correction (measured to be 1.2%) and gain normalization were performed with mag_distortion_correct (Grant and Grigorieff, 2015). The movie frames were aligned with unblur (Campbell et al., 2012). Particles were picked by template matching in Gautomatch (http://www.mrc-lmb.cam.ac.uk/kzhang/). The CTFs were fitted with a homemade program in MATLAB (MathWorks, Natick, MA). The rest of the processing was performed in the GPU-accelerated beta version of Relion 2.0 (Kimanius et al., 2016). Particles were extracted from the aligned super-resolution micrographs and movies with 2x downsampling, resulting in a pixels size of 1.054\u00a0\u00c5, matching the physical pixel size of the camera. The box size after downsampling was 180 pixels. The initial dataset of 145,870 particles was subjected to a 3D refinement with D7 symmetry which reached a resolution of 2.6 \u00c5 with a B-factor of 111 \u00c52. The output of the refinement was used to \u2018polish\u2019 the particles with the following parameters: running average three frames, stddev on translations one pixel, stddev on particle distance 100 pixels, B-factor highres-limit 2 \u00c5, B-factor lowres-limit 7 \u00c5. The polished dataset was 3D classified into five classes over several steps with finer and finer angular and translational sampling and E-step resolution limit of 12 \u00c5. The best class, containing 93,596 particles (64% of the dataset), was 3D refined producing the final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 74 \u00c52. The other 3D classes refined to much lower resolutions with one of them showing some structure deformation in the form of separation between the top and bottom halves of the 20S. This was probably due to an incomplete assembly of some particles rather than being a valid functional state. To produce the resolution vs particle number data, subsets of random particles were extracted from the final dataset and 3D refined separately with a 60 \u00c5 low-pass filtered initial reference. The local resolution distributions were calculated with blocres from Bsoft (Heymann and Belnap, 2007).\n\n### Data processing workflow with MotionCor2\n\nFor the MotioCor2 (Zheng et al., 2016) based reconstruction, the movies were gain-normalized and aligned using 9 \u00d7 9 patches, 2x downsampling, first two frames discarded and dose-weighting with 1.0 e\u2212/ \u00c52/frame which was\u00a0~1.5 times lower than the measured frame dose of 1.625 e\u2212/ \u00c52/frame. The reduced dose-weighting parameter was determined empirically by trying different values and selecting the value which produced the highest resolution reconstructions. The CTFs were fitted on the non-dose-weighted micrographs with ctffind4 (Rohou and Grigorieff, 2015) version 4.1.5 using the following parameters: spherical aberration 2.62 mm, minimum resolution 20 \u00c5, maximum resolution 3 \u00c5, minimum defocus 3000 \u00c5, maximum defocus 7000 \u00c5, minimum phase shift 0 deg, maximum phase shift 175 deg, phase shift step 10 deg. Micrographs with estimated CTF resolution of less than 3.5 \u00c5 were discarded (48 micrographs) leaving 379 micrographs for processing. Particle picking and 3D classification was performed in the same fashion as described above. 83,127 particles from the best 3D class were 3D refined producing a final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 85 \u00c52.\n\n### Accession codes\n\nThe reconstructed 3D density maps from the Relion particle polishing and MotionCor2 data processing workflows were deposited to the EMDataBank with accession codes EMD-3455 and EMD-3456 respectively. The dataset was deposited to the Electron Microscopy Pilot Image Archive with accession code EMPIAR-10078.\n",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "45a049cb-5eb5-44f8-8cc9-0a0969398889",
+      "submission_id": "b56d03d1-750c-4c5d-855e-43a9cbf9a803",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sjors HW Scheres, MRC Laboratory of Molecular Biology, , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23006.012](https://doi.org/10.7554/eLife.23006.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Using the Volta phase plate with defocus for cryo-EM single particle analysis\" for consideration by eLife. Your article has been favorably evaluated by Michael Marletta (Senior Editor) and three reviewers, one of whom, Sjors HW Scheres (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Robert M Glaeser (Reviewer #2); Raimond Ravelli (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper is an advance on last year's paper by the same group on using the Volta phase plate (VPP) for high-resolution single-particle structure determination. Whereas last year the authors used the VPP in-focus, in this paper they collected data with a small defocus. This makes data collection easier, provides an estimate of the evolving value of the phase shift, as well as a more accurate estimate of deviations of the image defocus from the intended value. The resulting improvement in resolution, along with the decrease in the number of particles required to reach a given resolution, represents a very important advance. The resulting map is of a remarkably high resolution (up to 2.2A resolution), which proves that the VPP itself does not impose practical restrictions on currently attainable resolutions in single-particle analysis of biological samples. The paper is well written, and the results are of high interest to anyone interested in structural biology. The reviewers were therefore unanimously supportive of publication in eLife, provided the below is taken into account.\n\nEssential revisions:\n\n1) The introduction of a new software package (called Warp, which was thought to be confusing for X-ray crystallographers, who are already familiar with the Arp/Warp package) and its comparison with 2 alternative ways of processing makes this paper somewhat convoluted. The VPP results on their own, with any single one of the three processing methods, stand strong enough for publication, while the comparison distracts from the main message. In addition, the different ways of data processing differ in multiple aspects (picking algorithms, dose-weighting, CTF estimation, different particles subsets, etc.), which makes it hard to assess where the advantages of one method over the other actually lie. Probably a more rigorous comparison of the different approaches would be better suited for publication elsewhere. Therefore, the authors are encouraged to present a single result to focus this paper on the VPP results. If these results would be the ones from the Warp program, then an improved description of its methods is needed (currently the subsection \u201cData processing workflow with Warp\u201d is extremely dense and rather cryptic).\n\n2) Please comment on the fact that the amount of phase shift (as shown in Figure 1C) evolves more rapidly with electron exposure in this work than was the case in the original PNAS paper in 2014, and the phase shift also rises to much higher values. The authors' thinking about why this happened, as well as their perspective about the observed variability from one area of the phase plate to another, will be really useful to other labs that currently have one of these Volta phase plate units.\n\n3) One of the reviewers considered your resolution-dependent phase shift model, which could explain strong low-resolution components observed in images collected with a high phase shift (e.g. 0.8pi) of fundamental importance. Traditional phase plates have a cut-on frequency, here a Gaussian model was used to describe the resolution-dependent phase shift of the Volta potential. It was stated that the central phase shifting spot of the VPP can be approximated by a Gaussian function (Results and Discussion, second paragraph). However, little or no evidence was given for this statement. The shape of the potential curve of an ideal conditioned phase plate might have tails longer than what is predicted by a Gaussian curve, whereas any drifts of e.g. pivot-point misalignments might result in anisotropic potential curves. This could be better discussed. Also, the authors should provide the formulae used for Figure 2B.\n",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "29a4024d-dc38-4bca-a92f-54201c0feb01",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C1",
+      "claim": "An in-focus data acquisition method for cryo-EM single-particle analysis with the Volta phase plate was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we reported an in-focus data acquisition method for cryo-EM single-particle analysis with the Volta phase plate (Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Danev and Baumeister, 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "3ebedf67-7002-4796-b9d7-3a050a21a03c",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C2",
+      "claim": "The hybrid approach of using VPP with defocus simplifies the experiment and increases data acquisition speed.",
+      "claim_type": "EXPLICIT",
+      "source": "This hybrid approach simplifies the experiment and increases the data acquisition speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' experimental observations and methodology described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "314bc803-9f86-4d5d-8a6c-337076cc5d75",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C3",
+      "claim": "The hybrid approach removes the resolution limit inherent to the in-focus method, allowing 3D reconstructions with resolutions better than 3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "It also removes the resolution limit inherent to the in-focus method thus allowing 3D reconstructions with resolutions better than 3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing 2.4 \u00c5 resolution achieved in this study compared to 3.2 \u00c5 in the previous in-focus method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "f670bcf1-7fa2-4d4c-a458-241c78a49620",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C4",
+      "claim": "The Volta phase plate enables in-focus phase contrast in a transmission electron microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "The Volta phase plate (VPP) is a device which enables in-focus phase contrast in a transmission electron microscope (TEM) (Danev et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Danev et al., 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "c5f18e47-6fe0-4111-b012-64f5b1c098ff",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C5",
+      "claim": "The VPP is the first phase-plate-type device to reach near-atomic resolutions in single particle cryo-EM.",
+      "claim_type": "EXPLICIT",
+      "source": "It is the first phase-plate-type device to reach near-atomic resolutions in single particle cryo-EM (Chua et al., 2016; Danev and Baumeister, 2016; Khoshouei et al., 2016a, 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work demonstrating near-atomic resolution with VPP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "d8b9ca24-0300-4062-a7d4-a57d69dfb1a1",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C6",
+      "claim": "Small, heterogeneous and/or flexible molecules are generally difficult to solve by the traditional defocus phase contrast method.",
+      "claim_type": "EXPLICIT",
+      "source": "Small, heterogeneous and/or flexible molecules are generally difficult to solve by the traditional defocus phase contrast (DPC) method (Cheng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work (Cheng et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "f6f6db72-8c72-409c-82a3-40aa7adb2619",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C7",
+      "claim": "The VPP improves image contrast.",
+      "claim_type": "EXPLICIT",
+      "source": "The VPP improves image contrast and thus could help with solving the structures of such 'difficult' samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the known properties of the VPP and is supported by visual evidence in the figures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "d627b14d-7c9b-4c68-a1a0-697e91849e7e",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C8",
+      "claim": "The in-focus method requires very accurate focusing which complicates and slows down data acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "It requires very accurate focusing which complicates and slows down the data acquisition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience with the in-focus method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "c6442062-798b-40fd-8907-fca4ac53fd46",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C9",
+      "claim": "The achievable resolution with the in-focus method is limited by the spherical aberration of the objective lens to ~3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the achievable resolution is limited by the spherical aberration of the objective lens to ~3 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical understanding of electron optics and is supported by the experimental results showing 3.2 \u00c5 resolution in the previous in-focus dataset.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "3776c61c-735b-4258-9fa1-402337689133",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C10",
+      "claim": "3D reconstruction software did not support VPP phase shift in the contrast transfer function at the time of the initial report.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of our initial report the 3D reconstruction software did not yet support VPP phase shift (PS) in the contrast transfer function (CTF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the state of software development at the time.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "d8b23a1e-f293-47a7-a834-7d54285b4e65",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C11",
+      "claim": "Support for VPP phase shift in CTF was implemented in 3D reconstruction software, enabling the present work.",
+      "claim_type": "EXPLICIT",
+      "source": "In the meantime, such support was implemented which enabled the present work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of software updates and their ability to perform the current analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "b44251b6-9e33-4e98-b6e9-7321e990d33a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C12",
+      "claim": "The hybrid approach combines the VPP with a small amount of defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a hybrid approach which combines the VPP with a small amount of defocus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "870972a0-8ca2-4c5e-bafc-a76f67b5606b",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C13",
+      "claim": "The hybrid approach solves the resolution limit issue of the in-focus approach by enabling CTF fitting and correction.",
+      "claim_type": "EXPLICIT",
+      "source": "It simplifies the data acquisition to a level similar to DPC and solves the resolution limit issue of the in-focus approach by enabling CTF fitting and correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental results showing improved resolution with CTF correction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "9cedef1a-a4f6-483b-994c-4d60f7b87e59",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C14",
+      "claim": "Thermoplasma acidophilum 20S proteasome was used as a test sample in the previous in-focus cryo-EM report with VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In our report on in-focus cryo-EM with the VPP we used Thermoplasma acidophilum 20S proteasome as a test sample (Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "bd788b47-de4e-4fd5-8e7e-7665e9e8e264",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C15",
+      "claim": "The same sample (Thermoplasma acidophilum 20S proteasome) was used in this study for consistency and continuation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used the same sample for consistency and continuation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design choice made by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "b5723e2b-4f04-4838-b6e5-bb46db52460a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C16",
+      "claim": "Acquiring images with defocus is easier and faster because defocus and astigmatism can be fitted and corrected a posteriori.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquiring images with defocus is easier and faster because the defocus and astigmatism can be fitted and corrected a posteriori.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience and understanding of the methodology.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "6538f4ce-a3a0-418a-bc91-545042c17596",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C17",
+      "claim": "The VPP provides low frequency contrast which allows the use of defocus values smaller than those typically used in DPC.",
+      "claim_type": "EXPLICIT",
+      "source": "The VPP provides low frequency contrast which allows the use of defocus values smaller than those typically used in DPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the known properties of VPP and the experimental approach used in this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "36692d8a-3802-49e2-933f-e5fea2bd05d1",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C18",
+      "claim": "Because of the low defocus, the defocused VPP images look similar to in-focus images.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the low defocus the images (Figure 1A) look similar to in-focus images (Figure 4A in Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual comparison of images in Figure 1A and reference to a previous figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "e9c13474-d4c9-4a56-bdd3-6715342bff62",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C19",
+      "claim": "The power spectrum of defocused VPP images clearly shows the effect of defocus with characteristic CTF rings (Thon rings).",
+      "claim_type": "EXPLICIT",
+      "source": "The power spectrum in Figure 1B, however, clearly shows the effect of defocus with characteristic CTF rings (Thon rings).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "5537f096-cfa4-4b99-abaa-a75969270162",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C20",
+      "claim": "Fitting the CTFs of VPP data requires an additional phase shift parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the CTFs of VPP data requires an additional PS parameter (Rohou and Grigorieff, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work describing CTF fitting methodology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7ee57c28-6f5e-4ad9-8abf-f5d5dcc21998",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C21",
+      "claim": "CTF fits provide a quantitative measure of the behavior of the VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Such fits provide a quantitative measure of the behavior of the VPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the methodology used to analyze VPP behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "db7d01c6-33eb-47a5-af3a-af5d2f02739f",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C22",
+      "claim": "The VPP was advanced to a new position every 1.5 hr (every ~40 images, total dose on the VPP ~50 nC).",
+      "claim_type": "EXPLICIT",
+      "source": "The VPP was advanced to a new position every 1.5 hr (every ~40 images, total dose on the VPP ~50 nC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol used in data acquisition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "6a53ea35-112f-4fef-bdef-c8f18c046f5b",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C23",
+      "claim": "After each advance of the VPP, the phase shift drops abruptly to a low value (<0.2 \u03c0) and starts to gradually build up again.",
+      "claim_type": "EXPLICIT",
+      "source": "After each advance the PS drops abruptly to a low value (<0.2 \u03c0) and starts to gradually build up again.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "dc1bd8c4-c40b-4aaa-8b12-b44cc8cf9242",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C24",
+      "claim": "The phase shift distribution has a maximum at ~0.6 \u03c0 with a relatively small number of micrographs exhibiting low (<0.2 \u03c0) or high (>0.8 \u03c0) phase shift.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution has a maximum at ~0.6 \u03c0 with a relatively small number of micrographs exhibiting low (<0.2 \u03c0) or high (>0.8 \u03c0) PS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the histogram shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "043cf2e5-354e-4601-9ab6-2440ba5455bd",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C25",
+      "claim": "The evolving phase shift of the VPP is an advantage for single particle analysis because it moves the positions of the CTF zeros.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolving PS of the VPP is an advantage for single particle analysis because it moves the positions of the CTF zeros thus mitigating the need to vary the defocus, which is necessary with DPC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical understanding of CTF behavior and its implications for data collection.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "238b691f-afdb-40b2-8237-767ede2a55e0",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C26",
+      "claim": "With the VPP, datasets can be collected with a single, low defocus value.",
+      "claim_type": "EXPLICIT",
+      "source": "With the VPP, datasets can be collected with a single, low defocus value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the experimental approach used in this study and the properties of VPP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "2b6b6423-1ecf-4545-a535-c9e51360fea1",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C27",
+      "claim": "The VPP used in this work exhibited more phase shift than in the original VPP paper.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work (Figure 1C) as well as in the previous report (Figure 3 in Danev and Baumeister, 2016) the VPP exhibited more PS than in the original VPP paper (Figure 1C in Danev et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of data from different studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "b09f91e1-9d5e-44b4-8713-f925b49e9eb1",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C28",
+      "claim": "There is some variation in the phase shift magnitude between different areas on the phase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there is some variation in the PS magnitude between different areas on the phase plate (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "2f1d1357-e123-4f3e-8b58-e40bdf2a5b6e",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C29",
+      "claim": "It is advantageous to have a VPP with slower phase shift development because this allows collection of more images at each position.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, it is advantageous to have a VPP with slower PS development because this allows collection of more images at each position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on practical considerations for data collection efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "afb5be7d-d64c-4345-a593-77d0310eaf42",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C30",
+      "claim": "The heater used in the original VPP paper was a pre-production prototype and the phase plate was homemade.",
+      "claim_type": "EXPLICIT",
+      "source": "The heater used in the original VPP paper (Danev et al., 2014) was a pre-production prototype and the phase plate was homemade thus the production versions used in this work seem to exhibit a faster PS development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the equipment used in different studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7a8d4a80-94a8-479d-87b9-006716daa525",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C31",
+      "claim": "The production versions of VPP used in this work exhibit faster phase shift development than the prototype.",
+      "claim_type": "EXPLICIT",
+      "source": "The heater used in the original VPP paper (Danev et al., 2014) was a pre-production prototype and the phase plate was homemade thus the production versions used in this work seem to exhibit a faster PS development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of VPP behavior across different studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "cf14d7e8-6975-444c-9f69-2f2a251d478b",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C32",
+      "claim": "The variation of phase shift across VPP areas could indicate a local variation in the quality of the amorphous carbon film.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation of the PS across VPP areas could indicate a local variation in the quality of the amorphous carbon film.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative interpretation of the observed phase shift variation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "bf65d138-5aa6-4212-af69-e46398cd319a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C33",
+      "claim": "The observed factors do not prevent the collection of high quality data with VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, those factors do not prevent the collection of high quality data, as illustrated by the results presented here, but there is definitely room for improvement and we hope that manufacturers will take those observations into account when they develop future versions of the hardware.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the high-resolution results obtained in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "96323647-5f00-4336-aabc-bee7d42debc5",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C34",
+      "claim": "The target defocus was changed approximately halfway through the dataset acquisition from 500 nm to 300 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately halfway through the dataset acquisition we changed the target defocus from 500 nm to 300 nm to evaluate the performance at different defocus values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental protocol and is supported by Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "4d06fc3b-7624-4043-9294-96a14471dcdb",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C35",
+      "claim": "The measured defocus has periodic oscillations with ~16 image period, probably caused by local variations in the slant of the support film (waviness).",
+      "claim_type": "EXPLICIT",
+      "source": "The measured defocus has periodic oscillations, with ~16 image period, probably caused by local variations in the slant of the support film (waviness), which can introduce a defocus difference between the focusing and acquisition positions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data shown in Figure 1E and speculative interpretation of the cause.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "eda97ebc-99d6-4469-a5de-41a14844c8e4",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C36",
+      "claim": "The distribution of the 300 nm target defocus data is wider than the 500 nm one.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the 300 nm target defocus data is wider than the 500 nm one but this seems to be caused by the systematic defocus oscillations and not by random focusing errors (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the histograms shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "57ba551c-cfaf-436b-8b3f-4fb5b4e231cf",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C37",
+      "claim": "The 300 nm target defocus had a practical disadvantage in that fitting the CTFs of micrographs with defocus <300 nm was difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "The 300 nm target defocus had a practical disadvantage in that fitting the CTFs of micrographs with defocus <300 nm was difficult because the CTF has fewer rings and their period is similar to power spectrum features, such as the amorphous ice ring at ~3.7 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience with data processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "03adaec0-0128-464e-93aa-490c5bb99953",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C38",
+      "claim": "In practice, the 500 nm defocus was more robust and easier to process than 300 nm defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, the 500 nm defocus was more robust and easier to process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience with data processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "dd34fb65-619f-49f3-a8cc-aefc81be810c",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C39",
+      "claim": "High phase shift (>0.8 \u03c0) is undesirable because it causes CTF artifacts and reduces the quality of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "High PS (>0.8 \u03c0) is undesirable because it causes CTF artifacts and thus reduces the quality of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical understanding of CTF behavior and supported by the data analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "a4b7034b-e51d-435b-b445-0d6fe9bec30d",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C40",
+      "claim": "Images with low phase shift (0.1 \u03c0) have lower contrast than images with optimal phase shift.",
+      "claim_type": "EXPLICIT",
+      "source": "The image on the left has a low PS (0.1 \u03c0) and consequently lower contrast.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "5fbc0628-5420-4cfb-a60f-92994efc3cf2",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C41",
+      "claim": "Images close to the optimal phase shift of 0.5 \u03c0 have good contrast and the best appearance.",
+      "claim_type": "EXPLICIT",
+      "source": "The middle image is close to the optimal PS of 0.5 \u03c0 and has good contrast and the best appearance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "a64173d7-2cf7-4d0c-a0ed-ddb9a02887e1",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C42",
+      "claim": "Images acquired with high phase shift of 0.9 \u03c0 look 'blurry'.",
+      "claim_type": "EXPLICIT",
+      "source": "The image on the right was acquired with a high PS of 0.9 \u03c0 and looks 'blurry'.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "29f6ea9b-60b7-4981-ac0f-333f977a0a50",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C43",
+      "claim": "The blurriness in high phase shift images is caused by an extra CTF maximum at very low spatial frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The blurriness is caused by an extra CTF maximum at very low spatial frequencies illustrated in Figure 2B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on theoretical analysis of CTF behavior shown in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "640ac71c-be45-40be-a501-339fb4fee35e",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C44",
+      "claim": "It is difficult to predict the exact shape or size of the central spot of the VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, it is difficult to predict the exact shape or size of the central spot of the VPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience with VPP.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "64e6ad56-24e6-4f47-9e01-afb85564e0fb",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C45",
+      "claim": "Factors such as specimen charging, specimen thickness and beam drift could cause the central beam to change its shape or move on the phase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Factors such as specimen charging, specimen thickness and beam drift could cause the central beam to change its shape or move on the phase plate and thus modify the central spot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative explanation based on known physical phenomena.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "bb65d78c-98fb-47a4-8a0f-d961f36ae6c6",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C46",
+      "claim": "The central spot of the VPP was approximated with a Gaussian function which has only one parameter \u2013 the size of the spot.",
+      "claim_type": "EXPLICIT",
+      "source": "We approximated the central spot of the VPP with a Gaussian function which has only one parameter \u2013 the size of the spot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the modeling approach used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "ffd422ab-b157-4f4f-a40b-1461a8ff3ec5",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C47",
+      "claim": "The Gaussian approximation is a simple model which, although not accurate in every case, provides a satisfactory simulation of the VPP central spot.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a simple model which, although not accurate in every case, provides a satisfactory simulation of a rather unpredictable function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' evaluation of their modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "be3bc74f-4575-433b-9512-50902d9bab4a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C48",
+      "claim": "Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) phase shifts were predominantly rejected during 3D classification.",
+      "claim_type": "EXPLICIT",
+      "source": "Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) PSs were predominantly rejected indicating that such particles had low correspondence with the reference.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "879f84d4-29b4-41a5-9efc-f2509b53cbfd",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C49",
+      "claim": "There was no correlation between defocus and particle retention.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no correlation between defocus and particle retention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of the data processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "405b1419-b990-40e7-8df7-3cecdd9d6e04",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C50",
+      "claim": "The first few images after moving the VPP to a new position have a low phase shift which quickly develops.",
+      "claim_type": "EXPLICIT",
+      "source": "The first few images after moving the VPP to a new position have a low PS which quickly develops (Figure 3 in Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to prior work showing this behavior.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "4e31945b-2809-4e05-8cfa-aa37734cea78",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C51",
+      "claim": "In images taken shortly after moving the VPP, there may be noticeable phase shift evolution throughout the multiframe movie.",
+      "claim_type": "EXPLICIT",
+      "source": "In those images there may be noticeable PS evolution throughout the multiframe movie.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the known behavior of VPP phase shift development.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "4ddd6b47-2cfc-4e4b-b4fd-95ef7ebd039a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C53",
+      "claim": "The CTF model can be modified to include the central VPP spot to improve handling of high phase shift images.",
+      "claim_type": "EXPLICIT",
+      "source": "For high PS images, the CTF model can, in principle, be modified to include the central VPP spot which should improve their handling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative suggestion for future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "47e9cc23-7eb6-4e51-a1e4-5234618b5510",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C54",
+      "claim": "It is best to avoid both low and high phase shift images through an improved data acquisition strategy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is best to avoid both low and high PS images which could be achieved through an improved data acquisition strategy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' analysis of data quality at different phase shifts.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "e29da6e0-bcf9-4e51-9966-219d34bbdefc",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C55",
+      "claim": "An optimal data acquisition solution would incorporate phase shift monitoring through on-the-fly CTF fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "An optimal solution would be to incorporate PS monitoring in the automated data acquisition software through on-the-fly CTF fitting of the acquired images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative suggestion for future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7661772e-08d1-4c1d-97bc-e5370a706dfa",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C56",
+      "claim": "The reconstruction reached a resolution of 2.4 \u00c5 according to the gold-standard FSC 0.143 criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstruction reached a resolution of 2.4 \u00c5 according to the gold-standard Fourier shell correlation (FSC) 0.143 criterion (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the FSC plot shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "67c45e11-47d1-4c7e-88fb-cbd598564195",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C57",
+      "claim": "The visibility of primary structure features, such as holes in tyrosine and phenylalanine rings, is in accordance with the 2.4 \u00c5 resolution estimate.",
+      "claim_type": "EXPLICIT",
+      "source": "The visibility of primary structure features, such as the holes in the tyrosine and phenylalanine rings (Figure 3B), is in accordance with that estimate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by visual evidence in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "811d4b89-4fc2-4826-8eb6-2a0c95dd5e9b",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C58",
+      "claim": "The local resolution varies between 2.2 \u00c5 and 2.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The local resolution varies between 2.2 \u00c5 and 2.6 \u00c5 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the local resolution map shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "2ccf715b-cab5-4735-8f0d-c04c3f97a8f2",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C59",
+      "claim": "There is significant improvement in resolution compared to the previous in-focus dataset at 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant improvement in resolution compared to our previous in-focus dataset, at 3.2 \u00c5 (Danev and Baumeister, 2016), confirms the effectiveness of the CTF correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of resolution values from this study and prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "30ad4134-3ab7-4aa9-9d83-296967c01929",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C60",
+      "claim": "The resolution improvement is consistent throughout the particle number range with a significant extension towards low particle numbers.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution improvement is consistent throughout the particle number range with a significant extension towards low particle numbers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "98ef4dc6-f492-40b9-829f-4dc8ea87901a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C61",
+      "claim": "The defocused dataset was collected with a smaller pixel size (1.054 \u00c5 vs 1.35 \u00c5 previously) and in super-resolution mode of the K2 camera.",
+      "claim_type": "EXPLICIT",
+      "source": "The improvement is also a result of the fact that the defocused dataset was collected with a smaller pixel size (1.054 \u00c5 vs 1.35 \u00c5 previously) and in super-resolution mode of the K2 camera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental parameters used in data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "c6e8a869-a0f4-46d1-b483-5c910587248f",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C62",
+      "claim": "The B-factor calculated from the particle number vs resolution plot was 103 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The B-factor calculated as twice the slope of the fit (Rosenthal and Henderson, 2003) was 103 \u00c52.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the data and analysis shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "3998ba47-f11e-4438-96c9-1f0f4364a05d",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C63",
+      "claim": "A DPC dataset was not collected in this work because the main goal was to explore the capabilities of the VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we did not collect a DPC dataset because our main goal was to explore the capabilities of the VPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design choice made by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "9bafaee2-cf70-4e71-9874-8d6ae7eb73a8",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C64",
+      "claim": "With an 'easy' specimen such as the 20S proteasome, DPC would be expected to produce very similar results to those of the VPP.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that with an 'easy' specimen, such as the 20S proteasome, DPC would have produced very similar results to those of the VPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative expectation based on the nature of the sample.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "87028906-aa3e-4c4b-8243-994e35281240",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C65",
+      "claim": "MotionCor2 performs movie frame alignment with local motion tracking and dose-weighting.",
+      "claim_type": "EXPLICIT",
+      "source": "It performs movie frame alignment with local motion tracking and dose-weighting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the functionality of the MotionCor2 software.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "ede44dcf-26b1-444a-9098-59d41eb64580",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C66",
+      "claim": "MotionCor2 preprocessing provides similar performance gains to particle polishing in Relion but is more efficient in terms of computation and storage space.",
+      "claim_type": "EXPLICIT",
+      "source": "Such preprocessing provides similar performance gains to particle polishing in Relion (Scheres, 2014) but is more efficient in terms of computation and storage space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' comparison of the two methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "ec7b64c6-2c98-4f70-a349-c608b7dfb920",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C67",
+      "claim": "The MotionCor2 workflow result was virtually identical to particle polishing in terms of resolution (2.42 \u00c5 MotionCor2 vs 2.36 \u00c5 polishing).",
+      "claim_type": "EXPLICIT",
+      "source": "The results was, for all practical purposes, virtually identical to that from particle polishing both in terms of resolution (2.42 \u00c5 MotionCor2 vs 2.36 \u00c5 polishing) and B-factor (85 \u00c52 MotionCor2 vs 74 \u00c52 polishing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of results from the two processing workflows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "eb60a989-41af-488e-a938-7b798e284b85",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C68",
+      "claim": "The MotionCor2 workflow result was virtually identical to particle polishing in terms of B-factor (85 \u00c5\u00b2 MotionCor2 vs 74 \u00c5\u00b2 polishing).",
+      "claim_type": "EXPLICIT",
+      "source": "The results was, for all practical purposes, virtually identical to that from particle polishing both in terms of resolution (2.42 \u00c5 MotionCor2 vs 2.36 \u00c5 polishing) and B-factor (85 \u00c52 MotionCor2 vs 74 \u00c52 polishing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of results from the two processing workflows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "621974da-ec2e-4cfc-8b96-794fd2f2743f",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C69",
+      "claim": "The authors now use the MotionCor2 workflow for most of their projects because of its simplicity, speed and comparable performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its simplicity, speed and comparable performance, nowadays we use the MotionCor2 workflow for most of our projects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the authors' current practice based on their evaluation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "f3f58e21-f362-4889-b0aa-4dbba92db3d9",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C70",
+      "claim": "The use of VPP with defocus simplifies data acquisition and improves acquisition speed.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the use of VPP with defocus simplifies the data acquisition and improves the acquisition speed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the practical advantages demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "0b10b4ab-a109-4bb3-9405-b06f658e7fee",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C71",
+      "claim": "The evolving phase shift of the VPP allows the use of a constant, low target defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolving PS of the VPP allows the use of a constant, low target defocus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the observed behavior of VPP and its implications for data collection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "d22fddc3-ddf8-4726-b997-626c751ce4a2",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C72",
+      "claim": "500 nm is a good practical defocus value because it ensures reliable CTF fits with some margin for random or systematic focusing errors.",
+      "claim_type": "EXPLICIT",
+      "source": "In our experience, 500 nm is a good practical value because it ensures reliable CTF fits with some margin for random or systematic focusing errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' practical experience with data collection and processing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "73b81944-09f3-47bd-989f-5c3bd6158814",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C73",
+      "claim": "Future modifications of data acquisition software to include on-the-fly CTF fitting, phase shift monitoring and VPP pre-irradiation would improve performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Future modifications of the data acquisition software, to include on-the-fly CTF fitting, PS monitoring and VPP pre-irradiation, would improve the performance by preventing the collection of low and high PS images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculative suggestion for future improvement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "c73b7b5a-7666-44b2-b2b0-b2f089917c72",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C74",
+      "claim": "The VPP is not limited in resolution and matches the state of the art of DPC for 'easy' samples such as the 20S proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that the VPP is not limited in resolution and matches the state of the art of DPC for 'easy' samples, such as the 20S proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the high-resolution results obtained in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "95829273-e56a-4a0d-a62f-a8f552b837e0",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C75",
+      "claim": "The real performance advantage of the VPP needs further exploration using 'difficult' samples, such as small, flexible and/or heterogeneous samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The real performance advantage of the VPP needs further exploration using 'difficult' samples, such as small, flexible and/or heterogeneous samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "c82314e1-cb0f-4fcb-a4e3-5c65790e2daa",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C76",
+      "claim": "Cryo-samples were prepared as described in the previous report (Danev and Baumeister, 2016).",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-samples were prepared as described previously (Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references the sample preparation method from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "ea3b197d-864d-446a-abc5-fb8f160c5339",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C77",
+      "claim": "Data was collected on an FEI Titan Krios electron microscope operated at 300 kV.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was collected on an FEI Ttian Krios (FEI, Hillsboro, OR) electron microscope operated at 300 kV and equipped with a Gatan GIF Quantum energy filter and a Gatan K2 Summit direct detection camera (Gatan, Pleasanton, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "57e7349e-b37c-42d6-bad9-2ca37580d333",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C78",
+      "claim": "The microscope was equipped with a Gatan GIF Quantum energy filter and a Gatan K2 Summit direct detection camera.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was collected on an FEI Ttian Krios (FEI, Hillsboro, OR) electron microscope operated at 300 kV and equipped with a Gatan GIF Quantum energy filter and a Gatan K2 Summit direct detection camera (Gatan, Pleasanton, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "3e5f97ff-970a-483d-9969-dfbe2237739a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C79",
+      "claim": "The data was acquired automatically with SerialEM software.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was acquired automatically with SerialEM software (Mastronarde, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data acquisition method and cites the software.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "4e39d12f-0dd8-4a83-843e-ea2ccc10e0bf",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C80",
+      "claim": "The data acquisition speed was ~27 images/hour, comparable to that of the previously collected in-focus dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "The data acquisition speed was ~27 images/hour, comparable to that of the previously collected in-focus dataset (Danev and Baumeister, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by measurement of acquisition speed and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "f0364ea2-644a-4e71-9b7c-f617891f7451",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C81",
+      "claim": "The throughput did not improve despite simplified focusing because of the use of super-resolution mode of the K2 camera which added ~50 s to the time required to process and save movie frames.",
+      "claim_type": "EXPLICIT",
+      "source": "The throughput did not improve, despite simplified focusing, because of the use of super-resolution mode of the K2 camera which added ~50 s to the time required to process and save the movie frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains why the expected throughput improvement was not observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "e93dc710-835d-40ed-9b08-971a0de5a603",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C82",
+      "claim": "The movies were saved as dark-subtracted but non-gain-normalized LZW compressed TIFF files which significantly reduced their size (~220 MB/movie).",
+      "claim_type": "EXPLICIT",
+      "source": "The movies were saved as dark-subtracted but non-gain-normalized LZW compressed TIFF files which significantly reduced their size (~220 MB/movie).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the data storage method and its effect on file size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "95dc0890-007c-41fa-a2f8-f5242d8d6d33",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C83",
+      "claim": "The dataset consisted of 468 micrographs, 41 (9%) of which were rejected after visual inspection, leaving 427 micrographs for processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset consisted of 468 micrographs, 41 (9%) of which were rejected after visual inspection, leaving 427 micrographs for processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the dataset composition and quality control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "1d33f101-ec97-4644-896d-da14dc935508",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C84",
+      "claim": "The initial dataset of 145,870 particles was subjected to 3D refinement with D7 symmetry which reached a resolution of 2.6 \u00c5 with a B-factor of 111 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The initial dataset of 145,870 particles was subjected to a 3D refinement with D7 symmetry which reached a resolution of 2.6 \u00c5 with a B-factor of 111 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the initial processing results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "32368ca6-a09b-4d30-b885-df07ce652436",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C85",
+      "claim": "The best 3D class, containing 93,596 particles (64% of the dataset), was 3D refined producing the final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 74 \u00c5\u00b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The best class, containing 93,596 particles (64% of the dataset), was 3D refined producing the final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 74 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the final processing results after classification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "43a4b818-d0b4-40f7-9586-9dd2d3ba8623",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C86",
+      "claim": "One of the 3D classes showed structure deformation in the form of separation between the top and bottom halves of the 20S, probably due to incomplete assembly of some particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The other 3D classes refined to much lower resolutions with one of them showing some structure deformation in the form of separation between the top and bottom halves of the 20S. This was probably due to an incomplete assembly of some particles rather than being a valid functional state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an observation from 3D classification and provides a speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7cb3af53-172b-403f-afaf-2049b12c7960",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C87",
+      "claim": "For the MotionCor2 based reconstruction, 48 micrographs with estimated CTF resolution of less than 3.5 \u00c5 were discarded, leaving 379 micrographs for processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Micrographs with estimated CTF resolution of less than 3.5 \u00c5 were discarded (48 micrographs) leaving 379 micrographs for processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the quality control criteria and dataset composition for the MotionCor2 workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7d877782-f046-4df0-8b6b-67813b52f3a2",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C88",
+      "claim": "83,127 particles from the best 3D class were 3D refined producing a final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 85 \u00c5\u00b2 using the MotionCor2 workflow.",
+      "claim_type": "EXPLICIT",
+      "source": "83,127 particles from the best 3D class were 3D refined producing a final reconstruction with a resolution of 2.4 \u00c5 and a B-factor of 85 \u00c52.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the final processing results using the MotionCor2 workflow.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "81cc5371-1f16-4702-9976-05ade21ea5a8",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C89",
+      "claim": "The reconstructed 3D density maps were deposited to the EMDataBank with accession codes EMD-3455 and EMD-3456.",
+      "claim_type": "EXPLICIT",
+      "source": "The reconstructed 3D density maps from the Relion particle polishing and MotionCor2 data processing workflows were deposited to the EMDataBank with accession codes EMD-3455 and EMD-3456 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides information about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "d5062c2c-c873-4701-a6de-a7012511be73",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C90",
+      "claim": "The dataset was deposited to the Electron Microscopy Pilot Image Archive with accession code EMPIAR-10078.",
+      "claim_type": "EXPLICIT",
+      "source": "The dataset was deposited to the Electron Microscopy Pilot Image Archive with accession code EMPIAR-10078.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides information about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "9d4f182f-c611-4e42-ba04-80e7a9c0ed5e",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C91",
+      "claim": "The power spectrum was calculated as the sum of the power spectra of individual movie frames to enhance the visibility of Thon rings.",
+      "claim_type": "EXPLICIT",
+      "source": "To enhance the visibility of Thon rings, the power spectrum was calculated as the sum of the power spectra of individual movie frames (McMullan et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the method used to generate Figure 1B and cites the methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "7176e9c7-9c9b-47ed-891d-c299bbecf983",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C92",
+      "claim": "The CTF model used in data processing is that of an ideal phase plate with a delta-function-like central spot.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTF model used in data processing is that of an ideal phase plate with a delta-function-like central spot (black dashed line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the theoretical model used in data processing, illustrated in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "ec99ca2b-ba35-4c22-8611-70009984e79a",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "claim_id": "C93",
+      "claim": "The large deviation between the practical and theoretical CTFs means that high phase shift images are not handled optimally during processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The large deviation between the practical and the theoretical CTFs (pink area in Figure 2B) means that high PS images are not handled optimally during processing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of theoretical and practical CTF models shown in Figure 2B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02277fa8-0542-43a6-a777-660528ad0d2d",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Volta phase plate (VPP) is a device that enables in-focus phase contrast in transmission electron microscopy and is the first phase-plate-type device to reach near-atomic resolutions in single particle cryo-EM. The VPP improves image contrast and could help with solving structures of difficult samples such as small, heterogeneous, and/or flexible molecules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4, C5, C6, and C7 are well-supported by multiple citations to prior work (Danev et al., 2014; Chua et al., 2016; Danev and Baumeister, 2016; Khoshouei et al., 2016a, 2016b; Cheng et al., 2015). These claims establish the background and context for the VPP technology based on established literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "f67046fa-575a-4248-a88d-1e7024813f7c",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The in-focus method with VPP has practical limitations: it requires very accurate focusing which complicates and slows down data acquisition, and the achievable resolution is limited by spherical aberration to ~3 \u00c5. Software support for VPP phase shift in CTF was not available initially but was later implemented, enabling the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C11 are supported by the authors' prior experience (C8, C10, C11) and theoretical understanding of electron optics (C9). The 3.2 \u00c5 resolution achieved in the previous in-focus dataset (C59) provides empirical support for the ~3 \u00c5 resolution limit claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "888eae7e-6375-44e9-9cea-27be830ec140",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The hybrid approach combining VPP with a small amount of defocus simplifies data acquisition, increases acquisition speed, and removes the resolution limit of the in-focus method by enabling CTF fitting and correction, allowing 3D reconstructions with resolutions better than 3 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C2 claims increased data acquisition speed, C80-C81 show that the actual throughput was ~27 images/hour, comparable to the previous in-focus dataset, with no improvement due to super-resolution mode overhead. The claim of increased speed is contradicted by the experimental data. However, the resolution improvement (C3, C13) is well-supported by achieving 2.4 \u00c5 vs. 3.2 \u00c5 previously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "a891eb6e-0472-46b7-b79c-1974147c202d",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Thermoplasma acidophilum 20S proteasome was used as the test sample in both the previous in-focus cryo-EM report and this study for consistency and continuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, and C76 are supported by citations to prior work and describe the experimental design choice. This is a straightforward methodological statement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Acquiring images with defocus is easier and faster because defocus and astigmatism can be fitted and corrected a posteriori. The VPP provides low frequency contrast allowing the use of smaller defocus values than typically used in DPC. The evolving phase shift of the VPP allows the use of a constant, low target defocus (500 nm is recommended as a practical value).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19, C26, C71, and C72 are supported by the authors' practical experience, visual evidence in Figures 1A-B, and the experimental approach. The power spectrum in Figure 1B clearly shows CTF rings confirming the presence of defocus, and the recommendation of 500 nm defocus is based on empirical observations (C37-C38).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "761289ab-19c4-43b0-9116-276ec9803c15",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fitting the CTFs of VPP data requires an additional phase shift parameter, which provides a quantitative measure of VPP behavior. The VPP was advanced every 1.5 hr, after which the phase shift drops to <0.2 \u03c0 and gradually builds up again. The phase shift distribution has a maximum at ~0.6 \u03c0, and the evolving phase shift is advantageous for single particle analysis because it moves the positions of CTF zeros.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C25 are well-supported by data in Figures 1C-D showing the phase shift history and distribution. The citation to Rohou and Grigorieff (2015) supports the CTF fitting methodology (C20). The advantage of evolving phase shift (C25) is based on sound theoretical understanding of CTF behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The VPP used in this work exhibited more phase shift and variation between different areas compared to the original VPP paper, possibly due to differences between production versions and the prototype. Despite these factors, high quality data can still be collected, though there is room for improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C33 are supported by comparison of data across studies (Figure 1C) and the high-resolution results (2.4 \u00c5) obtained in this study. The speculation about equipment differences (C30-C32) is reasonable but acknowledged as speculative. The overall conclusion (C33) is validated by the achieved results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "27aeb3f6-4786-41a9-882a-be08d8683e3c",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The target defocus was changed from 500 nm to 300 nm halfway through data acquisition to evaluate performance. The measured defocus showed periodic oscillations, and the 300 nm defocus had practical disadvantages in CTF fitting, making 500 nm more robust and easier to process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C38 are supported by data in Figures 1E-F showing defocus history and distributions. The practical comparison between 300 nm and 500 nm defocus is based on the authors' direct experience with data processing and is a reasonable empirical observation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "333d006e-f78b-479a-905d-66dc4746617f",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "High phase shift (>0.8 \u03c0) is undesirable because it causes CTF artifacts. Images with low phase shift (0.1 \u03c0) have lower contrast, images at optimal phase shift (0.5 \u03c0) have the best appearance, and images with high phase shift (0.9 \u03c0) look blurry due to an extra CTF maximum at very low spatial frequencies. The central spot of the VPP was approximated with a Gaussian function, and the deviation between practical and theoretical CTFs means high phase shift images are not handled optimally during processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47, C92, and C93 are well-supported by visual evidence in Figure 2A-B and theoretical analysis of CTF behavior. The Gaussian approximation (C46-C47) is acknowledged as a simplification but is reasonable for practical purposes. The theoretical analysis in Figure 2B clearly demonstrates the CTF artifacts at high phase shift.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "697f458d-2304-4fe9-978b-32cf261ea916",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Particles with low (<0.2 \u03c0) and high (>0.8 \u03c0) phase shifts were predominantly rejected during 3D classification, with no correlation between defocus and particle retention. The first few images after moving the VPP have low phase shift that quickly develops. Future improvements should include on-the-fly CTF fitting, phase shift monitoring, and VPP pre-irradiation to avoid collecting low and high phase shift images.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by data in Figure 2C showing particle retention as a function of phase shift. Claims C50-C51 are supported by citation to prior work. Claims C53-C55 and C73 are speculative suggestions for future improvement but are reasonable based on the observed data quality issues at extreme phase shifts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The reconstruction reached a resolution of 2.4 \u00c5 according to the gold-standard FSC 0.143 criterion, with local resolution varying between 2.2 \u00c5 and 2.6 \u00c5. This represents significant improvement compared to the previous in-focus dataset at 3.2 \u00c5, confirming the effectiveness of CTF correction. The improvement is also attributed to smaller pixel size (1.054 \u00c5 vs 1.35 \u00c5) and super-resolution mode. The B-factor was calculated as 103 \u00c5\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C62 are well-supported by data in Figure 3A-C, E-F. The FSC plot (Figure 3C) validates the 2.4 \u00c5 resolution, visual evidence in Figure 3B confirms the visibility of atomic details, and the local resolution map (Figure 3A) supports the 2.2-2.6 \u00c5 range. The comparison to prior work (3.2 \u00c5) is properly cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "85ecb76a-511b-4b43-be80-48dcf3a1023d",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The VPP is not limited in resolution and matches the state of the art of DPC for 'easy' samples such as the 20S proteasome. However, the real performance advantage of the VPP needs further exploration using 'difficult' samples such as small, flexible, and/or heterogeneous samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C74 are supported by the 2.4 \u00c5 resolution achieved in this study, demonstrating that VPP can reach near-atomic resolution. Claim C64 is speculative but reasonable given the nature of the sample. Claim C75 appropriately identifies the limitation that the study used an 'easy' sample and that further work is needed to demonstrate advantages with difficult samples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "efa68e08-1808-4708-a9c0-b1a26fefeda3",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MotionCor2 performs movie frame alignment with local motion tracking and dose-weighting, providing similar performance gains to particle polishing in Relion but with greater efficiency. The MotionCor2 workflow produced virtually identical results to particle polishing in terms of resolution (2.42 \u00c5 vs 2.36 \u00c5) and B-factor (85 \u00c5\u00b2 vs 74 \u00c5\u00b2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 are supported by the comparison of two processing workflows described in the methods and results. The resolution and B-factor values are explicitly stated and show very similar performance. The efficiency advantage (C66) is reasonable given the described computational and storage benefits.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    },
+    {
+      "id": "9997af7e-f2aa-4135-a1d4-c63c5984985e",
+      "content_id": "eae634d6-7547-4ca6-bf35-120dc4d48d18",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Data was collected on an FEI Titan Krios at 300 kV with a Gatan GIF Quantum energy filter and K2 Summit camera using SerialEM software. The dataset consisted of 468 micrographs (427 after quality control) with data acquisition speed of ~27 images/hour. Processing through Relion particle polishing workflow yielded a final reconstruction from 93,596 particles at 2.4 \u00c5 resolution with B-factor of 74 \u00c5\u00b2. The MotionCor2 workflow yielded similar results from 83,127 particles. Data was deposited to EMDataBank and EMPIAR.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C91 describe the experimental methods, data processing, and data deposition. These are straightforward factual statements about the procedures used and are internally consistent. The data deposition information (C89-C90) provides accession codes for verification.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T22:37:23.905489Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "29a4024d-dc38-4bca-a92f-54201c0feb01",
+      "result_id": "02277fa8-0542-43a6-a777-660528ad0d2d"
+    },
+    {
+      "claim_id": "f670bcf1-7fa2-4d4c-a458-241c78a49620",
+      "result_id": "02277fa8-0542-43a6-a777-660528ad0d2d"
+    },
+    {
+      "claim_id": "c5f18e47-6fe0-4111-b012-64f5b1c098ff",
+      "result_id": "02277fa8-0542-43a6-a777-660528ad0d2d"
+    },
+    {
+      "claim_id": "d8b9ca24-0300-4062-a7d4-a57d69dfb1a1",
+      "result_id": "02277fa8-0542-43a6-a777-660528ad0d2d"
+    },
+    {
+      "claim_id": "f6f6db72-8c72-409c-82a3-40aa7adb2619",
+      "result_id": "02277fa8-0542-43a6-a777-660528ad0d2d"
+    },
+    {
+      "claim_id": "d627b14d-7c9b-4c68-a1a0-697e91849e7e",
+      "result_id": "f67046fa-575a-4248-a88d-1e7024813f7c"
+    },
+    {
+      "claim_id": "c6442062-798b-40fd-8907-fca4ac53fd46",
+      "result_id": "f67046fa-575a-4248-a88d-1e7024813f7c"
+    },
+    {
+      "claim_id": "3776c61c-735b-4258-9fa1-402337689133",
+      "result_id": "f67046fa-575a-4248-a88d-1e7024813f7c"
+    },
+    {
+      "claim_id": "d8b23a1e-f293-47a7-a834-7d54285b4e65",
+      "result_id": "f67046fa-575a-4248-a88d-1e7024813f7c"
+    },
+    {
+      "claim_id": "b44251b6-9e33-4e98-b6e9-7321e990d33a",
+      "result_id": "888eae7e-6375-44e9-9cea-27be830ec140"
+    },
+    {
+      "claim_id": "870972a0-8ca2-4c5e-bafc-a76f67b5606b",
+      "result_id": "888eae7e-6375-44e9-9cea-27be830ec140"
+    },
+    {
+      "claim_id": "3ebedf67-7002-4796-b9d7-3a050a21a03c",
+      "result_id": "888eae7e-6375-44e9-9cea-27be830ec140"
+    },
+    {
+      "claim_id": "314bc803-9f86-4d5d-8a6c-337076cc5d75",
+      "result_id": "888eae7e-6375-44e9-9cea-27be830ec140"
+    },
+    {
+      "claim_id": "f3f58e21-f362-4889-b0aa-4dbba92db3d9",
+      "result_id": "888eae7e-6375-44e9-9cea-27be830ec140"
+    },
+    {
+      "claim_id": "9cedef1a-a4f6-483b-994c-4d60f7b87e59",
+      "result_id": "a891eb6e-0472-46b7-b79c-1974147c202d"
+    },
+    {
+      "claim_id": "bd788b47-de4e-4fd5-8e7e-7665e9e8e264",
+      "result_id": "a891eb6e-0472-46b7-b79c-1974147c202d"
+    },
+    {
+      "claim_id": "c82314e1-cb0f-4fcb-a4e3-5c65790e2daa",
+      "result_id": "a891eb6e-0472-46b7-b79c-1974147c202d"
+    },
+    {
+      "claim_id": "b5723e2b-4f04-4838-b6e5-bb46db52460a",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "6538f4ce-a3a0-418a-bc91-545042c17596",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "36692d8a-3802-49e2-933f-e5fea2bd05d1",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "e9c13474-d4c9-4a56-bdd3-6715342bff62",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "238b691f-afdb-40b2-8237-767ede2a55e0",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "0b10b4ab-a109-4bb3-9405-b06f658e7fee",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "d22fddc3-ddf8-4726-b997-626c751ce4a2",
+      "result_id": "2bc2fc70-c608-4ff6-bedd-83c4034e12af"
+    },
+    {
+      "claim_id": "5537f096-cfa4-4b99-abaa-a75969270162",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "7ee57c28-6f5e-4ad9-8abf-f5d5dcc21998",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "db7d01c6-33eb-47a5-af3a-af5d2f02739f",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "6a53ea35-112f-4fef-bdef-c8f18c046f5b",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "dc1bd8c4-c40b-4aaa-8b12-b44cc8cf9242",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "043cf2e5-354e-4601-9ab6-2440ba5455bd",
+      "result_id": "761289ab-19c4-43b0-9116-276ec9803c15"
+    },
+    {
+      "claim_id": "2b6b6423-1ecf-4545-a535-c9e51360fea1",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "b09f91e1-9d5e-44b4-8713-f925b49e9eb1",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "2f1d1357-e123-4f3e-8b58-e40bdf2a5b6e",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "afb5be7d-d64c-4345-a593-77d0310eaf42",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "7a8d4a80-94a8-479d-87b9-006716daa525",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "cf14d7e8-6975-444c-9f69-2f2a251d478b",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "bf65d138-5aa6-4212-af69-e46398cd319a",
+      "result_id": "a9b900df-26ef-4ac7-afd4-e90425b8fd20"
+    },
+    {
+      "claim_id": "96323647-5f00-4336-aabc-bee7d42debc5",
+      "result_id": "27aeb3f6-4786-41a9-882a-be08d8683e3c"
+    },
+    {
+      "claim_id": "4d06fc3b-7624-4043-9294-96a14471dcdb",
+      "result_id": "27aeb3f6-4786-41a9-882a-be08d8683e3c"
+    },
+    {
+      "claim_id": "eda97ebc-99d6-4469-a5de-41a14844c8e4",
+      "result_id": "27aeb3f6-4786-41a9-882a-be08d8683e3c"
+    },
+    {
+      "claim_id": "57ba551c-cfaf-436b-8b3f-4fb5b4e231cf",
+      "result_id": "27aeb3f6-4786-41a9-882a-be08d8683e3c"
+    },
+    {
+      "claim_id": "03adaec0-0128-464e-93aa-490c5bb99953",
+      "result_id": "27aeb3f6-4786-41a9-882a-be08d8683e3c"
+    },
+    {
+      "claim_id": "dd34fb65-619f-49f3-a8cc-aefc81be810c",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "a4b7034b-e51d-435b-b445-0d6fe9bec30d",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "5fbc0628-5420-4cfb-a60f-92994efc3cf2",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "a64173d7-2cf7-4d0c-a0ed-ddb9a02887e1",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "29f6ea9b-60b7-4981-ac0f-333f977a0a50",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "640ac71c-be45-40be-a501-339fb4fee35e",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "64e6ad56-24e6-4f47-9e01-afb85564e0fb",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "bb65d78c-98fb-47a4-8a0f-d961f36ae6c6",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "ffd422ab-b157-4f4f-a40b-1461a8ff3ec5",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "7176e9c7-9c9b-47ed-891d-c299bbecf983",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "ec99ca2b-ba35-4c22-8611-70009984e79a",
+      "result_id": "333d006e-f78b-479a-905d-66dc4746617f"
+    },
+    {
+      "claim_id": "be3bc74f-4575-433b-9512-50902d9bab4a",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "879f84d4-29b4-41a5-9efc-f2509b53cbfd",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "405b1419-b990-40e7-8df7-3cecdd9d6e04",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "4e31945b-2809-4e05-8cfa-aa37734cea78",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "4ddd6b47-2cfc-4e4b-b4fd-95ef7ebd039a",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "47e9cc23-7eb6-4e51-a1e4-5234618b5510",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "e29da6e0-bcf9-4e51-9966-219d34bbdefc",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "73b81944-09f3-47bd-989f-5c3bd6158814",
+      "result_id": "697f458d-2304-4fe9-978b-32cf261ea916"
+    },
+    {
+      "claim_id": "7661772e-08d1-4c1d-97bc-e5370a706dfa",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "67c45e11-47d1-4c7e-88fb-cbd598564195",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "811d4b89-4fc2-4826-8eb6-2a0c95dd5e9b",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "2ccf715b-cab5-4735-8f0d-c04c3f97a8f2",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "30ad4134-3ab7-4aa9-9d83-296967c01929",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "98ef4dc6-f492-40b9-829f-4dc8ea87901a",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "c6e8a869-a0f4-46d1-b483-5c910587248f",
+      "result_id": "8df5cb28-e9cb-4e14-b562-a2d6106d91a4"
+    },
+    {
+      "claim_id": "3998ba47-f11e-4438-96c9-1f0f4364a05d",
+      "result_id": "85ecb76a-511b-4b43-be80-48dcf3a1023d"
+    },
+    {
+      "claim_id": "9bafaee2-cf70-4e71-9874-8d6ae7eb73a8",
+      "result_id": "85ecb76a-511b-4b43-be80-48dcf3a1023d"
+    },
+    {
+      "claim_id": "c73b7b5a-7666-44b2-b2b0-b2f089917c72",
+      "result_id": "85ecb76a-511b-4b43-be80-48dcf3a1023d"
+    },
+    {
+      "claim_id": "95829273-e56a-4a0d-a62f-a8f552b837e0",
+      "result_id": "85ecb76a-511b-4b43-be80-48dcf3a1023d"
+    },
+    {
+      "claim_id": "87028906-aa3e-4c4b-8243-994e35281240",
+      "result_id": "efa68e08-1808-4708-a9c0-b1a26fefeda3"
+    },
+    {
+      "claim_id": "ede44dcf-26b1-444a-9098-59d41eb64580",
+      "result_id": "efa68e08-1808-4708-a9c0-b1a26fefeda3"
+    },
+    {
+      "claim_id": "ec7b64c6-2c98-4f70-a349-c608b7dfb920",
+      "result_id": "efa68e08-1808-4708-a9c0-b1a26fefeda3"
+    },
+    {
+      "claim_id": "eb60a989-41af-488e-a938-7b798e284b85",
+      "result_id": "efa68e08-1808-4708-a9c0-b1a26fefeda3"
+    },
+    {
+      "claim_id": "621974da-ec2e-4cfc-8b96-794fd2f2743f",
+      "result_id": "efa68e08-1808-4708-a9c0-b1a26fefeda3"
+    },
+    {
+      "claim_id": "ea3b197d-864d-446a-abc5-fb8f160c5339",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "57e7349e-b37c-42d6-bad9-2ca37580d333",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "3e5f97ff-970a-483d-9969-dfbe2237739a",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "4e39d12f-0dd8-4a83-843e-ea2ccc10e0bf",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "f0364ea2-644a-4e71-9b7c-f617891f7451",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "e93dc710-835d-40ed-9b08-971a0de5a603",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "95dc0890-007c-41fa-a2f8-f5242d8d6d33",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "1d33f101-ec97-4644-896d-da14dc935508",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "32368ca6-a09b-4d30-b885-df07ce652436",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "43a4b818-d0b4-40f7-9586-9dd2d3ba8623",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "7cb3af53-172b-403f-afaf-2049b12c7960",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "7d877782-f046-4df0-8b6b-67813b52f3a2",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "81cc5371-1f16-4702-9976-05ade21ea5a8",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "d5062c2c-c873-4701-a6de-a7012511be73",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    },
+    {
+      "claim_id": "9d4f182f-c611-4e42-ba04-80e7a9c0ed5e",
+      "result_id": "9997af7e-f2aa-4135-a1d4-c63c5984985e"
+    }
+  ],
+  "comparisons": []
+}

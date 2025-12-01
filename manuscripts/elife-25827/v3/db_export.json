@@ -1,0 +1,1759 @@
+{
+  "submission": {
+    "id": "d5545897-0efb-405b-a030-2c1cb73e4957",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:49:06.936148Z",
+    "updated_at": "2025-11-30T23:49:06.936148Z"
+  },
+  "content": [
+    {
+      "id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "submission_id": "d5545897-0efb-405b-a030-2c1cb73e4957",
+      "content_type": "manuscript",
+      "content_text": "# Synaptic input sequence discrimination on behavioral timescales mediated by reaction-diffusion chemistry in dendrites\n\n## Authors\n\n- Upinder Singh Bhalla<sup>1</sup> ([ORCID: 0000-0003-1722-5188](https://orcid.org/0000-0003-1722-5188)) \u2020\n\n### Affiliations\n\n1. National Centre for Biological Sciences, Tata Institute of Fundamental Research Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nSequences of events are ubiquitous in sensory, motor, and cognitive function. Key computational operations, including pattern recognition, event prediction, and plasticity, involve neural discrimination of spatio-temporal sequences. Here, we show that synaptically-driven reaction-diffusion pathways on dendrites can perform sequence discrimination on behaviorally relevant time-scales. We used abstract signaling models to show that selectivity arises when inputs at successive locations are aligned with, and amplified by, propagating chemical waves triggered by previous inputs. We incorporated biological detail using sequential synaptic input onto spines in morphologically, electrically, and chemically detailed pyramidal neuronal models based on rat data. Again, sequences were recognized, and local channel modulation downstream of putative sequence-triggered signaling could elicit changes in neuronal firing. We predict that dendritic sequence-recognition zones occupy 5 to 30 microns and recognize time-intervals of 0.2 to 5 s. We suggest that this mechanism provides highly parallel and selective neural computation in a functionally important time range.\n\n## Introduction\n\nActivity sequences have long been recognized as a fundamental constituent of neural processing. Lorente de No suggested that reverberatory activity sequences in small networks could sustain activity (Lorente de No, 1938). Hebb's idea of cell assemblies suggested that ensembles of cells encoded a particular neuronal concept, but also that there was sequential activation within the group of cells forming the assembly (Hebb, 1949).\n\nMany sensory systems process sequential stimuli, and these are typically mapped to ensembles of sequentially active neurons (Bouchard and Brainard, 2016; Broome et al., 2006; Carrillo-Reid et al., 2015). Deeper in the brain, hippocampal place cells represent a higher-order cognitive map of space, yet here too sequences occur when the animal moves through spatial locations represented by the place cells (Wilson and McNaughton, 1994). The hippocampus exhibits other forms of sequential activity in the form of fast replay events (Jadhav et al., 2012; Wilson and McNaughton, 1994) and stimulus-bridging activity that emerges during associative learning (MacDonald et al., 2011) and trace conditioning (Modi et al., 2014). Thus, there are numerous neural correlates both of sequences, and of processing steps that recognize them.\n\nThe idea of synfire chains examines conditions for self-sustaining sequential activity to occur in multiple layers of a network (Abeles, 1982). This is non-trivial, as excessive activation can lead to runaway epileptiform activity, whereas insufficient activation causes decay of the activity wave (Kumar et al., 2008; Mehring et al., 2003). Neural networks that can recognize such sequences are well-established. For example, events may be run through a delay line, so that the oldest event is delayed more, the next event less, and so on, so that they all arrive at the neural network at the same time. Thus, the time-sequence is flattened in time and classical attractor networks can recognize patterns in the sequence (Tank and Hopfield, 1987). Time-varying attractor networks have also been shown to be able to implement and recognize sequences (Lee, 2002). Time-invariance is a desirable feature of sequence recognition circuits, since the same order of events may take place at different speeds. Recursive networks using supervised learning, and short-term synaptic plasticity have been shown to be implement time-invariance (Barak and Tsodyks, 2006; Goudar and Buonomano, 2015; Laje and Buonomano, 2013).\n\nWhile networks can carry out sequence recognition, they make limited use of the rich dynamics of biological neurons. The theory of Hierarchical Temporal Memory builds on the idea of sequence-recognizing neurons and networks as a way to perform complex temporal computation (George and Hawkins, 2009; Hawkins and Ahmad, 2016). Even the ability to recognize simultaneous closely-localized synaptic input has interesting computational implications (Hawkins and Ahmad, 2016), The current study extends this to patterns of input both in time and space.\n\nOne of the first biophysical proposals for subcellular sequence recognition was made by Rall, who showed theoretically that synaptic events propagate down the dendritic tree with a small delay. By timing synaptic inputs to coincide with this delay, Rall predicted that ordered input should yield a larger response than reversed input (Rall, 1964). A stronger version of this mechanism was experimentally demonstrated by Branco et al. (2010) who used glutamate uncaging to provide sequential input along a pyramidal neuron dendrite. They showed that NMDA receptor amplification of 'inward' sequences (distal to proximal) gave rise to about 40% larger somatic depolarization than 'outward' sequences, for rapid (~40 ms) sequences. However, many interesting neural sequences occur at slower time-scales.\n\nAt least three attributes should converge for single neurons to achieve and report sequence recognition in the noisy context of neural activity. First, the neurons should recognize inputs coming in the correct order in space and time. Second, the selectivity for the correct input over scrambled input and background noise should be strong enough for there to be reliable discrimination. Third, recognized sequences should trigger activity changes either by way of changed firing, or by way of plasticity. In the current study, we use theory and reaction-diffusion modeling to show how the first condition may be achieved, and develop detailed multi-scale models to address the second and third.\n\n## Results\n\nAs the setting for this study, we considered a network in which ensembles of neurons are active in sequence, for example, place cells in the hippocampus as an animal moves along a linear track (Figure 1). We assumed that a single neuron from each of these ensembles projects onto a given postsynaptic cell, which is the focus of our analysis. The projections are ordered such that they converge onto a succession of spines located on a short stretch of dendrite on this cell, in the same spatial and temporal order as the activation of the ensembles. We ignored all other network context. We first treated this system in the abstract, as sequentially ordered activation of segments of a one-dimensional reaction-diffusion system with abstract chemistry. We asked if the reaction system could discriminate sequential from scrambled input. We then mapped the discrimination mechanism to a signaling pathway modeled as mass-action reaction-diffusion chemistry in a similar cylindrical geometry, but ornamented with dendritic spines. We then tested discrimination when we embedded mass-action chemistry into a morphologically and electrically detailed neuronal model receiving sequential input on a series of synapses, through ligand-gated ion channels. Finally, we asked if ion channel modulation by sequence discrimination chemistry in small dendritic zones, could affect neuronal firing.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig1-v3.jpg)\n\n**Figure 1.:** Top: Linear arena in which a rat moves, with indicated locations of 5 place cells (color coded green, yellow, orange, red, and maroon in order.). The place cells are representatives of 5 neuronal ensembles (colored clouds), each active in one of the five locations on the arena. The neuronal ensembles each send a single axonal projection in spatial order to a small dendritic segment on a postsynaptic neuron, with an average spacing S between connected spines. Note that spines need not be immediately adjacent to each other. Below, buildup of reactant following input activity with the appropriate timing, corresponding to the rat moving at a speed which the dendritic chemistry recognizes.\n\n### Abstract reaction-diffusion systems support sequence recognition\n\nWe first analyzed the requirements for chemical reaction-diffusion systems to achieve selectivity for spatially and temporally ordered inputs. In doing these calculations, we utilized 'spherical cow' models of chemistry: highly reduced formulations with just two diffusive state variables A and B, interpreted as molecules undergoing 1-dimensional diffusion (Figure 2A,B). The reaction system received input from a third molecule, designated as Ca (Figure 2A,B). In all cases, molecule B inhibited A.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig2-v3.jpg)\n\n**Figure 2.:** Columns are the respective models. (A) Model equations. (B) Model schematics. Arrows indicate excitation, plungers indicate inhibition. In the FHN model, A has a fast self-excitation and a slow self-inhibition. In the Switch model, we indicate a multiplicative inhibition of A by an arrow from B onto the self-inhibition arrow of A. (C) Response of point (non-spatial) model to a 1\u00a0s wide Gaussian input of Ca2+ (red dot) and a steady pulse of Ca2+ (green line). Input amplitudes: 1, 10, 0.4, and 1 respectively. (D-G) Response of molecule A in one-dimensional reaction-diffusion form of model to sequential input at five locations. (D) Time-course of response at five locations to ordered input. Locations are color-coded in the sequential order blue, green, red, cyan, purple. (E) Time-course of response at five locations to scrambled input. Note that the FHN and Switch models have much lower responses to scrambled as compared to ordered input. The Neg. FF model has a lower response at two of its locations. (F, G) Snapshot of spatial profile of response to ordered (F) and scrambled (G) input. Snapshot is at time 18.4, 14.2, 16.3 and 18.4 s respectively.\n\nThe abstract models were initially formulated to implement reaction-diffusion wave propagation at a speed that matched the arrival of sequential input. We implemented two models with this property: the FitzHugh-Nagumo form, which is a known stimulus-triggered, oscillating, and propagating wave system (Fitzhugh, 1961; Nagumo et al., 1962); and a bistable reaction-diffusion system, which again is a known substrate for propagating waves (Keener and Sneyd, 1998). To the bistable switch system, we added inhibitory feedback to restore the switch to baseline after a delay. In addition to these models with complex dynamics, we implemented a system with feedback inhibition, and a system with feedforward inhibition. These simpler models were designed to test if inhibitory feedback or feedforward systems, coupled with diffusion, could achieve selectivity in the absence of an amplifying positive feedback process.\n\nOur criterion for sequence recognition was that ordered inputs should elicit high total activity of a signaling molecule A, whereas scrambled inputs should elicit low levels of activity. Total activity here means the sum of activity of A over the duration and spatial extent of the stimulus.\n\nTo investigate the temporal responses of these 'reaction' systems, we first delivered impulse (red dot) and step-function (green line) input to non-spatial versions of the models (Figure 2C). Each model exhibited a large impulse response. Two of the models (feedforward inhibition and state-switching) exhibited only a transient response to the sustained input. The negative feedback model, as expected, had a transient strong response followed by a shallow sustained response. The FitzHugh-Nagumo model, again as expected, oscillated.\n\nWe then implemented 1-dimensional reaction-diffusion versions of these models (Figure 2, methods). We delivered Ca2+ stimuli at five equally spaced points on the reaction system. Each Ca2+ stimulus followed a Gaussian time-profile:\n\n$$\nCa=exp(\u2212((phase\u2212t)^{2})/(2\u00a0width^{2}))\n$$\n\nHere, phase defines the timing of each input, t is time, and width is the duration of the Ca2+ pulse.\n\nThe only difference between the sequential and scrambled stimuli was their order ([0,1,2,3,4] and [2,1,4,3,0], respectively (methods)).\n\nThe results of these simulations are compared in Figure 2D\u2013G. First, we found that the simple feedback inhibition model showed no input sequence-dependent difference in total activity. This can be seen in terms of time-response at the five stimulus points (Figure 2D,E), and also in terms of spatial profile of A at the end of the stimulus (Figure 2F,G, Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/25827/elife-25827-media1.mp4.jpg)\n\nThen, we observed that the feedforward inhibition model showed a small amount of selectivity (Figure 2D\u2013G). This arose because the A response was diminished at two of the input points when the input was scrambled (Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/25827/elife-25827-media2.mp4.jpg)\n\nThe FitzHugh-Nagumo (FHN) model was strongly selective, with a large buildup of response only when the input was sequential (Figure 2 third column, Video 3). We interpret this as arising when the propagating wave from the FHN equation arrived at successive input points just when the input was also present.\n\n![Video 3.](https://cdn.elifesciences.org/articles/25827/elife-25827-media3.mp4.jpg)\n\nThe switching model was the most selective (Figure 2 last column, Video 4). This was because it built up to a large, sustained response lasting several seconds, provided the successive inputs were in the same position as the diffusively propagating activity of A.\n\n![Video 4.](https://cdn.elifesciences.org/articles/25827/elife-25827-media4.mp4.jpg)\n\nThus, this set of simulations showed that several reaction-diffusion like systems were capable of sequence selectivity. Strong selectivity emerged from a supralinear buildup of responses when diffusively propagating activity was aligned with successive inputs, and suppression due to inhibition when the alignment was off.\n\n### Reaction systems select for distinct speeds and length-scales of sequential input\n\nWe next asked how the different reaction systems were tuned to different spatial and temporal intervals. We devised a scalar metric, Q, of the degree of sequential ordering of stimuli, as a first step. We plotted the ordinal position of the input against the ordinal value of its arrival time. Thus, a perfect sequence would arrive at positions [0,1,2,3,4] at times [0,1,2,3,4]. We used the quantity\n\n$$\nQ=mR^{2}\n$$\n\nas the measure of how ordered the sequence was. Here, m = slope and R = regression coefficient of best-fit line. R2 provides a measure of linearity of the sequence, and m assigns it a magnitude and sign. With this measure, the sequence [0,1,2,3,4] has Q\u00a0=\u00a01; [4,3,2,1,0] has Q = \u22121, and [4,0,2,1,3] has Q\u00a0=\u00a0\u22120.001. Examples of regression plots used to generate Q for different sequences are presented in Figure 3A,B.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig3-v3.jpg)\n\n**Figure 3.:** (A, B) Regression plots for sample sequences. (A) Perfect forward sequence [0,1,2,3,4] (red, Q\u00a0=\u00a01) and reverse sequence [4,3,2,1,0] (blue, Q = \u22121). (B) Scrambled sequence [4,0,2,1,3] (red, Q\u00a0=\u00a0\u22120.001) and [0,1,3,2,4] (blue, Q\u00a0=\u00a00.729). (C, E, G, I) Scatter plots of chemical system selectivity (measured as total activation of molecule A over time and space) against Q. There are 5!\u00a0=\u00a0120 points, each being the outcome of a single simulation with a different sequence. In each plot the blue cross is the perfect forward sequence (whose timeseries is shown in Figure 2D), and the red cross is the scrambled sequence [2,1,4,3,0], whose timeseries is shown in Figure 2E. (D, F, H, J) Matrix of selectivity as a function of total length of stimulus zone and interval time between successive stimuli. In each plot, the asterisk is placed on the matrix entry obtained from the spacing and interval parameters used for the scatter plot to its left. In other words, the selectivity value for that matrix entry is obtained from Equation 3 using the Atot scores from the scatter plot. (C,D) Feedback model. This shows no selectivity. (E, F) Inhibitory feedforward model. Scatter plot in E represents calculations performed at time/distance values of (3\u00a0s, 4 mm). This shows low selectivity, as seen by slightly higher Atot for Q values of\u00a0+1 and \u22121. (G,H) FitzHugh-Nagumo, scatter plot at (2\u00a0s, 2 mm). The model is selective in a narrow, diagonal range of time and distance. Its score is somewhat reduced because of the high baseline of Atot. (I,J) Switching model, scatter plot at (3\u00a0s, 4 mm). This is highly selective over a wide range of time and distance. Only the perfect forward and reverse sequences have high values of Atot.\n\nWe then compared our reaction readout A with the metric Q, to see how well each of our four reaction systems could discriminate sequence order (Figure 3C,E,G,I). Here, we ran simulations with each of the possible permuted input sequences. In each run, we summed the level of A over all five stimulus points, and from the time of the first stimulus till the end of the run, in order to obtain a cumulative estimate of the response. This total A value (Atot) was plotted against the Q metric for each of these permuted sequences (Figure 3C,E,G,I). If the chemical system was highly selective, we expected that only one or two points in the scatter plot should have a high value of Atot, and these should be the points with Q around\u00a0+1 or \u22121. Chemical systems that did not exhibit sequence discrimination should have similar values of Atot for all sequences.\n\nThe results were as expected from the individual runs from Figure 2. Specifically, the inhibitory feedback system had poor tuning, there was a small amount of selectivity for the feedforward inhibition case, and strong selectivity for the FitzHugh-Nagumo and switching cases. Each of these outcomes had been observed in Figure 2 for just the sequential and a single scrambled stimulus, and in Figure 3 we found that it generalized to the entire set of sequence permutations. Note that the modeled reaction-diffusion system was spatially symmetric and did not distinguish between forward and backward sequences. An analysis of symmetry breaking arising from incorporation of biological detail is out of the scope of the current paper.\n\nWe next asked how selective each reaction system became, when the inputs were delivered at different time and space intervals. The time and space intervals were specified as parameters for each simulation run. We devised a metric for reaction network sequence selectivity, based on a comparison of responses to sequential vs. scrambled inputs:\n\n$$\nSelectivity=(Asequential\u2212mean(Atot))/max(Atot)\n$$\n\nProvided the system responds more strongly to sequential input than to any other order, selectivity should be in the range from zero (unselective) to one (highly selective). Asequential is Atot for the sequential stimulus, mean(Atot) is the mean of Atot over all permutations of the stimulus order, and max(Atot) is the maximum value of Atot for all permutations of stimulus order.\n\nTo compute Selectivity, we carried out simulations of the model for all possible non-repeating patterns of input, and obtained Atot in each case (Figure 3, first column). Selectivity was then estimated as per Equation 3. We repeated these calculations for each point in the matrix of timing and spacing values, to obtain a grid of selectivity values (Figure 3D,F,H,J). As already seen from Figure 2, the feedback inhibition model had low selectivity in all cases. The feedforward inhibition model showed a diagonal band of weak selectivity such that rapid stimuli in close proximity as well as slower stimuli at greater distances were preferred. The FitzHugh-Nagumo case was much more strongly selective, but also had a similar diagonal band. In both these cases we interpret this as there being an intrinsic propagation speed of the chemical activity wave, and if the inputs were timed and spaced accordingly, the response built up. The switching model was strongly selective, and had a large diffuse zone of strong selectivity centred around (2 s, 4 \u03bcm).\n\nThus, each of the three sequence-selective reaction systems had a preferred range of stimulus timing and spacing, but the FHN and switch forms had much higher selectivity.\n\n### Sequence speed selectivity scales with reaction rates and diffusion constants\n\nAs a further analysis on our abstract models, we asked how sequence speed selectivity scaled with rates and diffusion parameters. This scaling is important because it determines the spatial extent of the sequence selective zones that we propose to exist in the dendritic tree. It is also important as it defines the time-scales of sequential events that may be recognized by such reaction-diffusion mechanisms.\n\nWe first tested the most straightforward assumption, that sequence propagation speed was proportional to chemical rate and diffusion constants. To do this, we scaled all rates and the diffusion constants by the same factor, and reduced the stimulus width by the same factor. We ran the same grid of stimulus space and time intervals as above. As expected, scaling all the chemical and diffusion rates also scaled the sequence speed to which the network had the strongest response. As the rates were increased, the best tuning was at shorter time intervals but roughly the same spatial intervals. (Figure 4A\u2013E). However, different stimulus strengths were needed to obtain strong tuning in these runs. We therefore also examined dependence of tuning on stimulus strength, and observed that the tuning zone also depended on stimulus strength (Figure 4F,G). This is because the selectivity occurs when the stimulus is strong enough that the ordered sequence leads to pathway activation, but not so strong that the stimulus overrides the inhibitory reactions and produces indiscriminate activation. To better understand the range of sequence selectivity, we varied each of the parameters of the model one at a time with respect to the reference model. We carried out this 1-dimensional parameter sensitivity sweep for the FHN and switching models (Figure 4\u2014figure supplements 1 and 2). In each case we computed Asequential (blue traces), and compared it to mean(Atot) averaged over 12 input patterns, 11 of which were scrambled (green traces, methods). We also computed sequence selectivity as per Equation 3 (red traces). We found that selectivity was robust to some parameters, such as diffusion constants, but fragile (range\u00a0~20%) with respect to some rate constants and stimulus amplitude. These models were intended to be illustrative and to explore the properties of sequence-selective systems. Hence, we did not optimize the models for robustness.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig4-v3.jpg)\n\n**Figure 4.:** (A-D) tuning for rates of 1, 2, 3 and 4 times basal, respectively. (E) Plot of speed of sequence as a function of the rate scale factor. (F, G) Preferred space/time of tuning shifts with stimulus amplitude. (F) 90% basal. (G) 110% basal.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** In each plot, the blue trace is the summed concentration of A for the sequential stimulus, and the green plot is the mean of summed A over all permutations of the stimulus. A is summed over time since start of stimulus till end of simulation, and also summed over all five stimulus points. In each plot, the red trace is the selectivity metric (Equation 3). Note that the selectivity is largest when the ratio of blue to green traces is largest. Because of the high baseline in the FHN model, as seen in the blue and green traces, the selectivity (red traces) remains under 0.5. In each plot the x axis is scale factor of selected parameter with respect to the default model. Panel (A) Stimulus amplitude. (B) stimulus width. (C) Diffusion constant of molecule A. (D) Diffusion constant of molecule B. (E) rate constant for \u2018t\u2019 variable in FHN equations. (F) rate constant a. (G) rate constant b. (H) Offset term for variable A. (I) Offset term for variable B. Most parameters give good tuning for a range of\u00a0\u00b110% around reference (1.0), but k_a is still more sensitive.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Plot traces are as in Figure 4\u2014figure supplement 1. Panel (A) Stimulus amplitude. (B)\u00a0stimulus width. (C) Diffusion constant of molecule A. (D) Diffusion constant of molecule B. (E-L) Rate constants used in model. The model was sensitive to stimulus amplitude, and the rate terms k1a, k2a and k4a, and less sensitive for the rest. We classified sensitive parameters as those where selectivity fell below 0.5 for a parameter range of\u00a0\u00b110% or less.\n\nThus, by varying rates for reactions and diffusion, we were able to achieve good sequence selectivity over a broad range of time-intervals (0.5\u20134 s between stimuli) and spatial intervals (2\u20136 \u03bcm between stimuli).\n\n### Mass-action reaction-diffusion system based on MAPK feedback discriminates sequences\n\nWe next asked if above design principles for sequence selectivity could be applied to a mass-action reaction-diffusion system. We based our mass-action model on a published, reduced model of MAPK feedback and bistability (Bhalla, 2011). The model already exhibited the switch-like turnon behavior of our abstract 'switch' model. The other key aspect of the abstract model was delayed turnoff of activity. There are several known inhibitory feedback turnoff mechanisms for the MAPK pathway (Lake et al., 2016). We therefore added a MAPK-activated protein phosphatase to cause delayed turnoff of the kinase. The other changes we made to the published MAPK model were (a) to remove the synaptic signaling leading to receptor turnover in the spine and (b) to add diffusible CaM as a Ca2+ buffer. With the exception of active PKC, Raf, and the ion channels, all molecules were diffusible. The model schematic is shown in Figure 5A, and the full model specification is presented in supplementary material. This model formulation is a semi-quantitative map to the far more detailed and tightly constrained models of this pathway in the literature (Bhalla and Iyengar, 1999; Resat et al., 2003). Ca2+ stimuli were delivered in the PSD and diffused into the dendrite (Methods). Model responses to brief (1 s) and square step function (100 s) Ca2+ inputs are shown in Figure 5B,C, both measured in the dendrite. As expected, there is a strong switch-like turnon to Ca2+ stimuli, followed by delayed inhibition. We ran this model in a cylindrical geometry ornamented with spines at ~1.1 \u03bcm intervals (Materials and methods, Figure 5D). We provided sequential and scrambled Ca2+ input to 5 of the spines separated by ~3 \u03bcm each, and observed good sequence selectivity (Figure 5E,F).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig5-v3.jpg)\n\n**Figure 5.:** (A) Schematic of model chemistry. Black arrows indicate binding or activation reactions, plunger indicates inhibition, and bent arrow indicates enzyme activity. Broad cyan arrows indicate diffusion of Ca2+ and CaM between PSD, spine head, and dendrite. CaM buffers the incoming Ca2+ from the PSD. (B) Ca2+ responses seen at the dendrite, to input delivered at PSD. PSD stimulus was two pulses of 1 s, 160 mM Ca2+, separated by 50 s. After a delay of 100 s, a step of 160 mM Ca2+ was delivered for 50 s. (C) MAPK-P response to the Ca2+ stimulus. Note strong inhibition of the response to the second pulse, and rapid decline of response to the 50 step stimulus. (D) Geometry of 1-D reaction-diffusion model, with 49 spines. Dendrite diameter was 1 \u03bcm and length was 60 \u03bcm. The five stimulated spines are in red, each identified by a color coded number. (E) Response of system to sequential input [0,1,2,3,4] on indicated spines spaced\u00a0~3 \u03bcm apart, at intervals of 3 s. Each input was delivered to the PSD of the stimulated spine, at 160 \u03bcM, for 2.9 s. MAPK-P was recorded from the dendrite subdivision attached to each of the stimulated spines. Plot colors indicate stimulated spine from D. (F) Response to scrambled input, in the order [4,0,3,1,2]. The response to scrambled input had a smaller amplitude and lasted for a shorter time. Plot colors are as per spine numbers in D.\n\nThus, we showed that a mass-action reaction-diffusion system exhibited sequence selectivity when it had switch-like turnon with delayed turnoff by negative feedback. This configuration had been predicted by the abstract models.\n\n### Sequence selectivity works in a biologically detailed multiscale neuronal model with noisy input\n\nWe then asked whether biochemical sequence recognition would 'work' in the more complex context of active neurons receiving background activity in a network. We brought in biological detail at the following levels: (a) Model neuron morphology based on anatomical reconstructions (>3000 segments), including\u00a0>5700 spines spaced at\u00a0~1 \u03bcm. (b) Voltage-gated ion channels distributed throughout the cell, based on published models. (c) Background glutamatergic Poisson synaptic input at 0.1 Hz on all spines. (d) Background GABAergic synaptic input with an 8 Hz theta modulation on proximal dendritic compartments. Due to the background synaptic input, the model exhibited theta-modulated sub-threshold oscillations, with spiking activity at\u00a0~1 Hz (Figure 6B). (e) Stimuli in the form of spike trains arriving on AMPA and NMDA receptors on subsets of spines. (f) Ca2+ dynamics following synaptic ion flux, including diffusion between spine and dendrite, and buffering by calmodulin, in all spines and dendrites (Video 5). (g) The reduced MAPK model described above, was distributed throughout the dendritic tree in\u00a0~6000 diffusive compartments (Figure 6A). (h) Chemical calculations in the spines were carried out using a stochastic method (Gillespie Stochastic Systems Algorithm, methods) for the runs used to calculate selectivity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig6-v3.jpg)\n\n**Figure 6.:** (A) Morphology of model. Dendrite diameters are scaled up by 2, and spine diameters and lengths by four for visualization. Stimulus was given in four zones on the cell, indicated in red and by diameters scaled up by 10x. (B) Example somatic intracellular potential and spike train of model neuron. (C) Ca2+ responses to Poisson synaptic volley at mean rate 20 Hz, measured in PSD (blue), spine head (green) and dendrite (red). (D) Sequence selectivity in the distal apical zone. Heavy solid lines are P-MAPK-P levels under the stimulated spines, for sequential input. Strong buildup occurs for three of the spines. Dashed lines are corresponding MAPK-P levels for scrambled input. Only the sequential input responses lead to build up. (E-G) Matrix of sequence selectivity in basal dendrite zone, for different input spacing in time and space. Three different runs are shown, with the same morphology but different random number seeds for the background and stimulus synaptic input. (H) Selectivity in proximal oblique dendrite zone, using 40% larger spine dimensions. (I) Selectivity in distal apical dendrite using 20% larger spines. (J) Selectivity matrix in proximal primary apical dendrite shows no sequence selectivity even with 40% larger spines.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** MAPK-P is summed over time since start of stimulus till end of simulation, and also summed over all five stimulus points. In each plot, the red trace is the selectivity metric (Equation 3, Materials and methods). (A) Stimulus spike rate. (B) Spatial density of LCa channel over basal and apical dendrites. Somatic LCa was held uniform at 40 S/m^2. (C) Diffusion constant for Ca2+. (D) Forward rate constant for Ca2+ activation of Raf, which acts as input to the signaling pathway.\n\n![Video 5.](https://cdn.elifesciences.org/articles/25827/elife-25827-media5.mp4.jpg)\n\nWe first ran a direct comparison of a sequential input train [0,1,2,3,4] compared with a scrambled train with sequence [4,0,3,1,2]. We picked time and space intervals of (3\u00a0s, 4 \u03bcm) based on preliminary calculations for tuning. We delivered the input sequence on a basal dendritic branch (Figure 6A). We selected a set of 5 spines, spaced at\u00a0~3 \u03bcm. Each spine was stimulated with a Poisson spike burst lasting 2 s at 20 Hz on the AMPA and NMDA receptors. With these parameters, the [Ca2+] reached\u00a0~40 \u03bcM in the PSD,\u00a0~35 \u03bcM in the spine head, and\u00a0~1 \u03bcM in the region of dendrite immediately below the stimulated spine (e.g., Figure 6C). Similar Ca2+ levels were obtained when stimuli were delivered in other regions of the dendrite. The exception was the primary apical dendrite, in which dendritic Ca2+ only reached\u00a0~0.5 \u03bcM. This is an expected outcome of diluting out the Ca2+ arriving from the spine, since the diameter of the primary dendrite was\u00a0~2 \u03bcm as compared to\u00a0~1.0 \u03bcm in the other stimulus regions. With these parameters, we observed strong selectivity in MAPK activity for sequential stimuli as compared to scrambled in the basal dendrite (Figure 6D, solid lines for sequential vs. dashed for scrambled).\n\nWe then asked how this multiscale model responded to a range of time and space intervals in each of the stimulated zones. Because the calculations were expensive, we used a modified version of the selectivity metric (Equation 3) in which we computed outcomes of only 12 stimulus patterns rather than the exhaustive 120 possible permutations (Materials and methods). In each case, we used MAPK-P in place of the molecule \u2018A\u2019 for calculating selectivity (Equation 3). For efficiency, we delivered the stimulus patterns simultaneously in the 4 zones of the cell (Figure 6A). Similar tuning was observed in test simulations where stimuli were delivered only in a single zone.\n\nWe observed strong sequence selectivity in the basal dendrite zone, for a restricted range of space and time intervals, as expected from the earlier calculations (Figure 6E\u2013G). We repeated the calculations using different random seeds to generate different background and stimulus spiking input to the model neuron. We found that the responses of individual runs, and hence selectivity, were somewhat noisy (Figure 6E\u2013G).\n\nWe next investigated whether the response selectivity was manifested in different regions of the cell. We found that there were indeed strongly sequence selective responses in oblique dendrites and distal apical dendritic regions, but these required stronger stimuli (Figure 6H,I; Videos 6 and 7). In these runs, we had to increase the diameters of spine heads and spine shafts by 40% and 20% respectively to obtain sufficient dendritic Ca2+ influx, and hence selectivity. The reference spine models had a shaft of 1 \u00b5m length x 0.2 \u00b5m diameter, and a head of length and diameter 0.5 \u00b5m. We did not observe sequence recognition in the primary apical dendrite (Figure 6J). Even the strongest stimuli applied in this location elicited only small Ca2+ elevations, with weak downstream MAPK responses, and no pattern selectivity.\n\n![Video 6.](https://cdn.elifesciences.org/articles/25827/elife-25827-media6.mp4.jpg)\n\n**Video 6.:** Note high and sustained buildup of MAPK-P activity in a small zone of\u00a0~25 microns.\n\n![Video 7.](https://cdn.elifesciences.org/articles/25827/elife-25827-media7.mp4.jpg)\n\n**Video 7.:** Note that the activity is low and short-lasting.\n\nWe performed a limited parameter sensitivity analysis for the detailed cell model, focusing on biophysical and biochemical parameters involved in triggering or responding to Ca2+. We chose these parameters since stimulus range had been one of the most sensitive parameters for the abstract models. We individually varied stimulus strength, L-type Ca2+ channel density, Ca2+ diffusion, and the activation of Raf by Ca2+. Each of these runs was performed with distinct random seeds and stochasticity in spike-trains and in chemical kinetics in spines. Even though we had not fine-tuned the model for robustness, we found that the model retained selectivity (at least 50% of best selectivity) over a factor of\u00a0~2 or more for all parameters except the Raf affinity for Ca2+ (Figure 6\u2014figure supplement 1). The latter parameter could be varied by\u00a0\u00b115% about its reference. While this list is not exhaustive, it does suggest that the sequence selectivity of the detailed model is fairly robust, and somewhat more so than the abstract models.\n\nThus, we showed that intracellular signaling pathways exhibited selectivity for ordered synaptic input, even when considerable morphological and electrical detail and noisy input were incorporated. Selectivity became noisier with this additional detail, and different zones of the cell required different synaptic efficacies to achieve selectivity. With the current parameters the selectivity was on the time-scale of seconds, with successive inputs spaced apart by a few microns.\n\n### Sequence-signaling triggered channel modulation may influence cellular firing\n\nThere are multiple possible outcomes of local sequential activity-triggered chemical signaling. These include synaptic plasticity, dendrite remodeling, and electrical changes through channel modulation. For the purposes of the current study, we focused on the third, namely channel modulation leading to changes in electrical activity, since this defines how the neuron may report the presence of a sequence to other cells in the neuronal network. Similar brief, strong synaptic input on small sections of distal dendrites has been reported to cause strong changes in activity of striatal spiny neurons by triggering a transition to an \u2018up\u2019 state (Plotkin et al., 2011).\n\nWe utilized the same morphologically detailed pyramidal neuron model as above, and asked if local channel modulations over the length scale of about 20 \u03bcm could alter somatic spiking. We assumed that MAPK activity, or other signaling events downstream of sequence selective chemistry, could perform channel modulation through phosphorylation or triggering of channel insertion. For example, MAPK phosphorylates and modulates KA (Yuan et al., 2002) Kir6.2 (Lin and Chai, 2008), and Na(v) 1.7channels (Stamboulian et al., 2010). MAPK is also implicated in control of trafficking of AMPA receptors (Keifer et al., 2007). We did not simulate these modulation events explicitly since the computations were very lengthy and we wished to perform many repeats to estimate the distribution of the firing rates following channel modulation. Instead we ran just the electrical cell model for an initial settling period of 1 s, and then used the simulation script to modify the selected channel conductance to represent its modulation. Following this we ran the model for another 3 s in each case. We applied these channel modulations to the same four regions of the cell which we had tested for sequence discrimination. We examined modulation of KA, Na, nonselective leak, NMDAR and AMPAR channels.\n\nWe estimated the statistics of firing following these modulatory changes through repeated simulations of the control condition (100 repeats) and each modulation condition (40 repeats), each with different random number seeds. We found that modulation of the Na channel, and increase in nonselective leak conductance in the apical and primary dendrites could increase firing rates by large factors (Figure 7A,B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/25827/elife-25827-fig7-v3.jpg)\n\n**Figure 7.:** Error bars are standard deviation. (A) Modulation of Na current. (B) Adding nonselective Leak current. (C) Modulation of GluR in the presence of the same synaptic input as was used as a stimulus for the sequential input. (D) Schematic of convergence of inputs from different ensembles onto one dendritic zone. The numbered clouds represent input ensembles from which a single neuron projects to the indicated location on the dendrite.\n\nIn initial runs, modulation of NMDA and AMPA receptors had no effect. This was because the random background synaptic input to these receptors was low, at 0.1 Hz. Since the receptors were activated at this low rate, their effect on cell firing was minimal. However, in these calculations, we had omitted the synaptic input that triggered the chemical cascades. Based on the time-course of build-up of MAPK-P (Figure 5E, Figure 6D), the MAPK-P activity was already high by the time of the last synaptic burst in the sequence of inputs. We therefore repeated the calculations, and additionally incorporated a single burst of synaptic input to the NMDA and AMPA receptors for the same duration and frequency as in the full multiscale cell model (Figure 6).\n\nWith this change, we found that a 10x increase in AMPAR conductance in the 20 \u03bcm zone in the apical dendrite led to a doubling in cell firing (Figure 7C). A similar manipulation in the primary dendrite led to a shallower increase, about 1.5x.\n\nThus, chemical signaling, even in rather small regions of the apical dendrite, may lead to a rapid change in cell firing by local channel modulation. However, large channel modulations were needed to elicit sufficiently large (e.g., 50%) changes in in firing rate that could be detected over the noisy background.\n\n## Discussion\n\nWe postulate that recursive sequence recognition is a fundamental computational operation in the brain, and that this operation may be implemented by neurons able to recognize spatially and temporally sequential input on behavioral time-scales (seconds). In this study, we have examined three key parts of such a hypothesis. (1) At the chemical level, we have examined a set of abstract rate equations coupled by linear diffusion, and identified key motifs that support sequence recognition. (2) At the dendrite level, we have shown that these abstract principles of reaction-diffusion mediated sequence recognition carry over to much more detailed and biologically motivated neuronal models. These models are multiscale composite models, and explore the length-scales and physiological detail relevant to the current hypothesis. (3) At the cell level, we have shown that local, 20 \u03bcm channel modulation can elicit changes in somatic spiking. 20 \u03bcm is within the range of our predicted sequence-activated signaling that could lead to channel modulation by phosphorylation or insertion.\n\nWe envision a network configuration where at the input level, there are ensembles of neurons that are active in a defined sequence in some sensory, motor or other context. We focus our analysis on a specific postsynaptic neuron, which receives a projection from each of the preceding ensembles, such that each synapse is located within a few \u03bcm of the next.\n\n### Firing change, synaptic plasticity, and morphological change may result from biochemical sequence recognition\n\nThere are several synaptically activated pathways that may fit the profile of state switching with feedback inhibition. Based on our abstract models (Figure 2), these are candidates for implementing sequence selectivity. These include four major kinases (PKA, PKC, MAPK, CaMKII) and a variety of second-messenger and metabotropic pathways (Bhalla and Iyengar, 1999; Kim et al., 2011; Lisman and Zhabotinsky, 2001). Thus, though we illustrate our findings using the MAPK pathway, we suggest that other mechanisms may also apply. Biochemical events have multiple outcomes on cell physiology, and even with the one example of MAPK pathway output we suggest that these may (at least) include firing rate changes, plasticity, and morphological change.\n\nOn the rapid time-scale of seconds, MAPK modulates multiple ion channels in the cell. These include KA (Yuan et al., 2002), Kir6.2 (Lin and Chai, 2008), Na(v)1.7 channels (Stamboulian et al., 2010), and MAPK also influences trafficking of AMPA receptors (Keifer et al., 2007). As analyzed in Figure 7, modulation of some of these target channels can lead to immediate changes in cell firing. While the amount of modulation required for an effect is quite large in some cases, we stress that these were proof-of-principle calculations. A more exhaustive calculation would require better cellular physiology including more channel types, full multiscale calculations of the biochemistry leading up to channel modulation, and multiple simultaneous targets. Similar small length-scale events have been shown to affect cellular firing in striatal neurons (Plotkin et al., 2011), suggesting that this outcome of sequence selection may also be plausible. It has also been shown that local signaling can lead to changes in dendritic excitability, again modulating cell-wide firing (Narayanan and Johnston, 2010).\n\nOn a slightly longer time-scale, MAPK is upstream of numerous plasticity events (Smolen et al., 2006). These include phosphorylation and insertion of receptors (Keifer et al., 2007), modulation of dendritic protein synthesis (Tsokas et al., 2007), and transcriptional control (Rosenblum et al., 2002). The computational outcome of synaptic plasticity has been extensively analyzed, but to our knowledge there are no learning rules that factor in sequential activity. It is intriguing to note that our analysis of dendrite-based local chemical activation has parallels with the phenomenon of synaptic tagging (Frey and Morris, 1997). In both cases, synaptic input can amplify events in nearby, weakly-stimulated synapses. We speculate that sequence recognition and its conversion to plasticity events may share mechanisms with synaptic tagging.\n\nFinally, MAPK activation is known to play a role in learning-associated morphological change in neurons (Tyler et al., 2002). This raises the possibility that its activation through sequence-selectivity rules may lead to addition of new synapses, or reconfiguration of dendrite geometry and spine placement. Such changes would affect the same reaction-diffusion events that underlie sequence selectivity, leading to interesting multiscale feedback dynamics.\n\n### Sequence recognition confers substantial computational capabilities on single cells\n\nOur model of sequence recognition in the neuron implements a potentially powerful form of cellular computation, leading to multiple possible outcomes as discussed above. It is interesting to estimate how much computation this represents. For simplicity, we consider computation in terms of immediate firing rate changes (discussed above), though plasticity and morphological change are also computational outcomes.\n\nIf we take a 5-stage sequence, a perfect sequence recognizer would distinguish 1 from 5! possible sequences, or 1 in 120. Longer sequences would have exponentially steeper discrimination ratios, but this places increasingly stringent constraints on network connectivity due to the requirement of having the inputs close to each other. Based on our simulations, biochemical reactions in the presence of noisy input are not as clean in their sequence selectivity as the abstract models (Figure 6 vs. Figure 3) but nevertheless do achieve good discrimination. In addition to being able to discriminate an ordered sequence from among many others, it is desirable that there be a large difference in chemical signal amplitude between ordered and scrambled sequences. Figures 2, 3 and 5 suggest that ratios in the range of 1:5 may be achievable, and 1:2 should be common.\n\nNext, we estimate how many such sequence recognition blocks there might be in a neuron. For this analysis, we draw on the results of the biochemical calculations for an estimate of a sequence recognition zone, of\u00a0~10 \u03bcm (Figure 6), and the result that sequence discrimination should happen over most of the dendritic tree except for the trunk of the primary apical dendrite (Figure 6J). Say the set of spines occupies 10 \u03bcm. The most conservative calculation requires that these blocks do not overlap, so in a pyramidal neuron with about 10000 \u03bcm of dendritic length we have\u00a0~1000 blocks. If we permit blocks to slide by one input at a time, there are five times as many sequence recognition blocks, i.e.,\u00a0~5000. If the sequence lasts 10 s, a single block performs 0.1 sequence recognitions per second. Thus, the neuron may perform 500 sequence discriminations each second. Calcium-induced Calcium release (CICR) based sequence logic (discussed below) is much faster, and may be able to increase this by a factor of 10. It is out of scope of the current study to estimate how many of the 500 possible sequential inputs would be active and in order at any given instant, but it is clear that the outcome of such sequence discrimination across the cell would be much more selective than a simple sum of the synaptic inputs that underlie the sequences. Leaving aside the plasticity effects, the readout of these sequence discriminations could be an ongoing modulation of cellular firing.\n\nA still more speculative calculation suggests that single-neuron sequence recognition may provide a way to handle the combinatorial explosion of possible input sequences. Assume that sequential inputs converge to 10 \u03bcm stretches of dendrite, having spine spacing \u03c3\u00a0=\u00a00.5 \u03bcm. Assume that the sequence-recognition biochemistry tolerates a spatial slop of\u00a0\u00b11.5 \u03bcm, or\u00a0\u00b13 synapses, for each input. Then there are\u00a0~7 possible synaptic inputs for each stage of the sequence, and the overall block of 5 inputs may receive 75, or\u00a0~17000 sequences of length 5. Using our calculation above, each neuron has\u00a0~5000 blocks, and so can recognize\u00a0~8.5\u00d7107 sequences. Thus, with many assumptions about connectivity and sparsity, this mechanism of single-neuron sequence recognition suggests that single neurons may recognize very large numbers of input patterns through the combinatorics of synaptic convergence.\n\nThe key distinction between these two calculations is that the first indicates the computational capacity of a neuron, whereas the second considers the diversity of inputs it can act upon. Overall, our study suggests that sequence computation in the time domain, coupled with the combinatorics of spatially organized input along dendrites, result in extremely parallel and efficient computation at the single-neuron level.\n\n### Single-cell sequence recognition may act on a continuum of timescales\n\nNeural activity sequences occur at a range of timescales. A striking example of this is the mapping of behaviorally-driven place-cell sequences (seconds) to rapid, 100 ms time-scale replay sequences (Wilson and McNaughton, 1994). The distinctive aspect of our current analysis is that it works for slow behavioral time-scales of seconds, which is typically challenging for electrical network computations (but see [Barak and Tsodyks, 2006; Goudar and Buonomano, 2015]). Our analysis suggests that chemical mechanisms can also support faster sequence recognition on the same length-scales (Figure 4). One way this might be implemented in the cell could be a faster kinase cascade than MAPK, such as PKA or PKC (Bhalla, 2002). Another might be local CICR, which has already been proposed to support propagating wave activity in dendrites (Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003; Lee et al., 2016; Plotkin et al., 2013; Ross, 2012) These have faster dynamics, of the order of 100 \u03bcm/s. Further, dendritic Ca2+ imaging suggests that the length-scale of dendritic CICR is similar (~10\u201320 \u03bcm) to that envisaged for sequence recognition in our study (Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003). Simulation studies have previously suggested that CICR may be a mechanism for integration of inputs and resulting in graded, persistent activity (Loewenstein and Sompolinsky, 2003). This study has some parallels with our analysis, in particular the presence of a propagating wavefront of chemical (Ca2+) activation. However, in the earlier CICR model the wavefront propagation was modulated by the summed synaptic input to the neuron rather than local and specific sequential synaptic input, which is the basis of our study.\n\nIndividual chemical implementations of sequence recognition in our study operate over a range of about 2\u20135 \u03bcm and 1.5\u20134 s (Figures 4 and 6). While this is fairly robust as seen from a parameter sensitivity viewpoint, it falls far short of time-invariance. Rate modulation or stimulus amplitude may shift this to some extent (Figure 4) but a given cell, in a given state of modulation or activity, will recognize sequences only within a relatively small range. One possible way to extend the range is to have multiple chemical pathways each carry out sequence discrimination in parallel. It would be interesting to see how the chemistry of multiple sequence recognizers may interact. Alternatively, time-invariance may not be a feature of single neurons, but may arise in a network where different neurons recognize different time-ranges. Different cell-types with different chemical mechanisms for sequence-recognition would be likely to operate in substantially different time regimes. It is interesting to speculate that there may be useful computational implications of having different cells \u2018tuned\u2019 to different sequence speeds.\n\nStill faster sequence recognition (~40 ms) has been demonstrated in the electrical domain, where forward sequences can be discriminated from backward (Branco et al., 2010). This electrical mechanism has been shown to have\u00a0~40% discrimination between forward and backward patterns, rather than the strong selectivity among permutations of patterns shown by our chemical system. Thus this form of electrical sequence recognition is likely to operate in different network contexts than our proposed chemical recognition mechanism.\n\nTogether, we suggest that chemical and CICR-based sequence recognition may span the range of timescales from 200 ms to 10 s. It is interesting to speculate that these may coexist, thus permitting the same segment of dendrite to recognize slow behaviorally-driven sequences and also much faster replays of the same sequence.\n\n### Sequence recognition is testable\n\nOur hypothesis of single-cell sequence recognition is readily testable using current technology. Its chemical basis may be examined in brain-slice using local agonist application or sequential glutamate uncaging followed by microscopic readouts of activity reporters for candidate pathways. Such experiments have already been done to examine CICR triggered by synaptic inputs converging to adjacent synapses (Hagenston et al., 2008; Plotkin et al., 2013). These show that there is indeed a buildup of Ca2+ along small, 20 \u03bcm stretches of dendrite, under suitable stimulus conditions. If local biochemical signaling leads to changes in cellular firing-rate (e.g., Figure 7, [Plotkin et al., 2011]), then sequential uncaging along with patch recordings should report these. Further, pharmacological experiments in the slice would readily be able to tease apart possible mechanisms.\n\nAnother implication of the proposed reaction-diffusion mechanism for sequence recognition is that it suggests mechanisms for coupling genetic polymorphisms and mutations to a specific aspect of neuronal computation. For example, small changes in reaction rates may shift the preferred timescale of recognized sequences (Figure 4), but large changes may eliminate tuning altogether. It would be interesting to see if there is a correlation between specific dendritic signaling genes and psychophysical measures of sequence computation.\n\nIn summary, we propose a novel computational function of single neurons, to recognize slow sequences on behavioral timescales, and to exploit combinatorics of input projections to carry out such recognition in a massively parallel manner. We have used simulations of abstract chemistry and detailed multiscale neuronal physiology to understand implications and constraints for such computation to occur. We suggest that this multiscale cellular signaling process may underlie computationally powerful sequence recognition mediated by single neurons.\n\n## Materials\u00a0and\u00a0methods\n\nAll modeling was carried out using MOOSE, the Multiscale Object-Oriented Simulation Environment (Ray and Bhalla, 2008). MOOSE is freely available, open source, and licensed under the GNU Public License version 3. It can be downloaded from moose.ncbs.res.in and GitHub https://github.com/BhallaLab/moose (Bhalla et al., 2016). MOOSE utilizes the GNU Scientific Library (GSL) Runge-Kutta-Fehlberg fifth order method for chemical computations, and a custom-written branching 1-D diffusion solver using the backward Euler (implicit) method. Stochastic chemical calculations were carried out using a custom-written optimized version of the Gillespie Stochastic Systems Algorithm. Pseudo-random numbers were generated by the Mersenne twister (Matsumoto and Nishimura, 1998). Electrical computations utilized a custom version of the branched nerve equation solution methods described by Hines (Hines, 1984). This has been validated by comparison with other simulators (Gleeson et al., 2010). Interfaces between chemical and electrical signaling components of the model utilized adaptor classes in MOOSE, which average over spatial and temporal discretization differences between the two methods. For example, electrical calculations (yielding Ca2+ values) utilize a much smaller timestep (~50 \u03bcs; 5 \u03bcm) but typically employ a larger spatial step than chemical calculations (~1 ms, 1 \u03bcm). The adaptors synchronized the chemical and electrical models every millisecond using first-order corrections to each model system. Electrical model morphologies were either geometrical (cylindrical) or derived from published cell reconstructions available on NeuroMorpho.org (Ascoli et al., 2007; Dougherty et al., 2012). Spines were positioned along dendrites using Poisson statistics with a specified mean spacing between spines (1 \u03bcm in the full cell model). Spines were modeled as a cylindrical head (0.5 \u03bcm length and diameter) on a cylindrical shaft (1 \u03bcm length, 0.2 \u03bcm diameter). In some simulations the spine dimensions were scaled up by 20% or 40%. Channel kinetics were derived from Traub et al. (1991). Analysis and plotting was done using Python, NumPy, and MatPlotLib. Simulations were carried out on a variety of Linux workstations, and large calculations were carried out on Linux clusters. Figure generation code for Figures 2, 5 and 6 is available as supplementary material.\n\nAbstract reaction-diffusion calculations (Figures 2\u20134) were carried out in a 1-dimensional geometry with spatial discretization of 1 \u03bcm. In order to represent reactions occurring in a spatially restricted region in or under dendritic spines, the reaction systems were active only in five equally spaced 1 \u03bcm patches, but diffusion took place throughout the 100 \u03bcm length of the model.\n\nSelectivity calculations were performed according to Equation 3. In this equation, Atot is computed for each permutation of the sequence. This is expensive as there are 120 permutations for a sequence of length 5. Therefore exhaustive permutations were only performed for Figures 3 and 4. In order to generate sequence selectivity matrices for Figure 6 and for all the sensitivity analyses, we took every tenth permutation (including the first one, [0,1,2,3,4]), for a total of 12 permutations. The order of permutations was as generated by the Python library call itertools.permutations. The resultant sequences were: [0,1,2,3,4], [0,2,4,1,3], [0,4,2,1,3], [1,2,0,3,4 , 1,3,4,0,2 , 2,0,3,1,4 , 2,3,0,1,4 , 2,4,3,0,1 , 3,1,2,0,4 , 3,4,0,1,2 , 4,0,3,1,2 , 4,2,1,0,3]. Here [0,1,2,3,4] means that synapse 0 fires first, then synapse 1, then synapse two and so on. In Figure 6\u2014figure supplement 1 we modified Equation 3 slightly by computing Asequential as the mean of 5 runs with the same, sequential stimuli. This was done because the stochastic spiking and chemical calculations introduced considerable variability in the estimate of Asequential. In this figure the mean(Atot) term in Equation 3 took this mean value of Asequential, and Atot for the other 11 permutations, as the set over which the mean was computed.\n\nChemical models are available in the supplementary material in tabular form and as GENESIS/kkit files, and will be hosted on http://doqcs.ncbs.res.in and ModelDB. Electrical models are available in supplementary material in tabular form and as MOOSE scripts. The morphology file is from NeuroMorpho.org (Ascoli et al., 2007; Dougherty et al., 2012) and attached in the supplementary material as the file VHC-neuron.CNG.swc.\n",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "3061c702-ec81-4931-84a7-8f0c9693c701",
+      "submission_id": "d5545897-0efb-405b-a030-2c1cb73e4957",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frances K Skinner, University Health Network , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.25827.023](https://doi.org/10.7554/eLife.25827.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Synaptic input sequence discrimination on behavioral time-scales mediated by reaction-diffusion chemistry in dendrites\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens (Senior Editor) and three reviewers, one of whom, Frances K Skinner (Reviewer #1), is a member of our Board of Reviewing Editors. The following individuals involved in review of your submission have agreed to reveal their identity: Paul Smolen (Reviewer #2) and Kim T Blackwell (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nWhile all of the reviewers felt that this was interesting and significant work, there was a clear consensus that several aspects of the paper were unclear and thus subsequently confusing.\n\nOverall, it was felt that the author needed to expand on his explanations and descriptions in several places. The specific points that need expansion, revision and further explanations in the paper are:\n\n1) the 4 models\n\n2) Q equation has issues\n\n3) sensitivity of the results\n\nBesides this, the reviewers have various issues in their comments (details that seem to need fixing) that should be responded to (see below).\n\nReviewer #1:\n\nThis is an interesting theoretical, computational study that considers sequence discrimination at the level of the single cell (rather than networks) including slower timescales (hundreds and milliseconds and slower). Reaction-diffusion modeling and detailed multi-scale models are used to show attributes of recognizing input in the correct order and over scrambled input and background noise, as well as showing an effect on firing.\n\nWhile interesting, the manuscript could be more fully explained and expanded in several places to help the reader fully grasp the situation. Also, various details seemed a bit strange to me, and further discussion on some points seem warranted. Specifics are:\n\n1) The author gives the context of place cells (Figure 1), but it would be helpful to explain this a bit further I think. That is, each neuronal ensemble sends a projection to a dendritic segment etc. Should this be considered as a particular postsynaptic cell? Should the network context be ignored, is this on multiple segments of a given cell, cells in a network, or does it matter in the context, etc.? I realize that the focus is on the single cell, and perhaps it doesn't really matter overall for the work, but some consideration/description of this would be helpful to the reader in setting the envisioned context. This would be further helpful in the Discussion when timescales are estimated and discussed.\n\n2) For Figure 2, the author could expand on his 4 models and molecules A and B and Ca \u2013 that is, a schematic of the overall relationship would be helpful. Perhaps some sort of simple MAPK pathway (generic as for the 4 models) could be illustrated? The author says \"The results were as expected\" (subsection \u201cReaction systems select for distinct speeds and length-scales of sequential input\u201d) in referring to Figure 7 \u2013 expand on why this is please. Figure 3 process not quite clear to me \u2013 left x-axis 'sequence score' is obtained how? The color on the right is Q, right? \u2013 please label.\n\nIt was not immediately obvious to me how a Q of -0.001 would be obtained for the sequence given \u2013 please explain and/or demonstrate/illustrate more fully.\n\n2-6 \u03bcm spatial intervals given in text but in figures, the high Q values (color) are at tens of \u03bcm \u2013 I think that I am missing something or perhaps confused.\n\n3) Multi-compartment model details are specified as taken from mostly from Traub et al. 1991, but the reference is not listed in the bibliography. Potassium reversal potential of -15 mV seems a bit depolarized, and I assume 60 mV for resting is a typo (-60 mV?). 1 ohm.m2 is 1000mS/cm2 for Rm, and seems rather high? The values in Figure 7 to see effect in firing are even larger by a lot which is perhaps a bit concerning?\n\n4) Does it matter that there is no Ih in the model, which is well-known to be non-uniformly distributed in pyramidal dendrites. Would this be expected to affect the results?\n\n5) Subsection \u201cSequence speed selectivity scales with reaction rates and diffusion constants\u201d \u2013 \"As expected, we found that as the rates were increased\u2026\". Why? As there was not a complete explanation for the 4 models, this 'expectation' suffers here too.\n\nReviewer #2:\n\nThis is an interesting paper dealing with an important topic in computational neuroscience, sequence discrimination. But some important points need to be addressed. I am asking for a little extra work \u2013 not an exhaustive analysis \u2013 in only one of my comments, comment 1, given that parameter sensitivity analysis is a common, substantial concern in all modeling studies.\n\n1) Some parameter sensitivity analysis should be done for some of the key results. For example, in Figure 2, rightmost column, it appears that parameter values may be \"tuned\" to be close to bistability, so that stimuli can give relatively long, but eventually declining, response plateaus. Although, the numbers in the equations above do look pretty generic. Similarly, for Figures 2C and 2D, and other figures that show strong sequence selectivity, how dependent is this selectivity on values of rate constants and other parameters? I'm not asking for an exhaustive analysis, but some degree of analysis and discussion of sensitivity should be given for a few of the key results. For example the sensitivity of the results of Figure 6G, which presents selectivity for the most realistic model, should be discussed.\n\n2) The selectivity criterion in Equation 3 cannot be correct as defined. The quantity Q, from Equation 2, is only related to the input, not the response, so Eq. 3 is also not related to the response. But of course selectivity, as plotted in the right column of Figure 3 and later, is related to the response. In Eq. 3, should Q be simply replaced by the average or maximum of the variable A, and in later cases should A be replaced by MAPK-P?\n\n3) In the subsection \u201cSequence speed selectivity scales with reaction rates and diffusion constants\u201d the author describes how by varying rates he can achieve good sequence selectivity over a broad range of time intervals, and in the Introduction it is noted that such time-invariance is a \"desirable feature\". But, for a single neuron or dendrite, the rate constants are presumably fixed, or at least do not vary in anticipation of stimulus time scales? So, I don't see how to get time invariance in a single neuron. So then, how does the author envision getting time invariance in a real neural network? Does he envision different neurons in the network will have different parameters so that they will respond to different time scales? These issues should be addressed in the Discussion.\n\n4) For the channel modulations that underlie the simulations of Figure 7, it is never discussed whether these modulations would result from activation of the MAPK signaling pathway simulated in the rest of the paper. The channel modulations are imposed ad hoc. It would be good to connect these portions of the paper, if not by simulations of MAPK effects on channels, then at least by discussing to what extent some or all of these modulations are thought to be downstream of MAPK activation and are a plausible readout or result of the sequentially amplified activation of the MAPK pathway simulated previously.\n\n5) In the Discussion, large numbers are given for how many sequence discriminations a neuron can perform per second and how many sequences a neuron can discriminate. But I am skeptical of these estimates because no discussion is given of what it means operationally for a neuron, a cell, to \"discriminate\" a sequence. It seems to me that a change in electrical firing rate or spike timing is needed to say a neuron has discriminated a sequence. Or, a change in synaptic plasticity. A transient biochemical response in a dendrite, just by itself, doesn't seem to me sufficient to constitute \"discrimination\" by the neuron. These caveats should be noted and discussed.\n\n6) In the Methods, it is stated with regard to the simulations of Figure 7 that we ran the model for 1 second to let the cell settle, before modulating channels. But clarification is needed since 1 second is not enough to allow simulated biochemical pathways to come to equilibrium in the models. Especially in the realistic simulations of Figure 6, how much simulated time was allowed from when biochemical variables were initialized to when stimuli were given.\n\n7) Figure 4F and 4G is a particular instance of the sensitivity issue in comment 1. Here a 20% change in stimulus amplitude leads to a very large change in the selectivity pattern. Is this sensitivity of pattern to stimulus amplitude typical for the models?\n\nReviewer #3:\n\nThe research addresses the important problem of pattern recognition by neurons. Specifically, what mechanisms allow a neuron to discriminate sequence a-b-c from c-b-a, where a, b, c are each a different synaptic input. The ability to discriminate temporal pattern is more difficult than discriminating which synaptic inputs are present. This issue has been addressed in specialized, direction selective cells, but the more general problem has not been investigated. A major strength of the manuscript is that the authors use both a simple, analytical model as well as biophysically and biochemically realistic neuron models to demonstrate principles underlying the results and to demonstrate the plausibility of neurons in tissue accomplishing temporal discrimination. Using the simple models, the author analyzes and presents the critical factors constraining sequence specificity. By using realistic model, the author demonstrates that sequence specificity can be implemented by neurons in tissue, since these simulations include background synaptic inputs, including theta modulated GABA input. For the most part the results are quite clear. There are only two aspects that need better exposition.\n\n1) Though the difference in selectivity is apparent in Figure 3, it is not clear what exactly is being plotted. I understand using R^2, which gives values between 1 (i.e., good) -1 (i.e., bad) for Q if m=1, but I don't understand why add the term m into Q Equation 2. In addition, why does Equation 3 use Q as the selectivity measure. The first time I read this page, I thought that Q was the selectivity measure. Then, I realized that Q was just a convenient way to obtain a monotonic x axis value, and that the important information was in a graph of A versus Q. But then Equation 3 claims to plot a selectivity value which is a function of Q, not A. A more detailed illustration of how values in Figure 3 are obtained (one value from right side graph and one value from left side graph) would be quite helpful. Also, where does the temporal interval come into this equation?\n\n2) The results in the subsection \u201cLocal dendritic channel modulations may influence cellular firing\u201d, describing the effect of channel modulation need a bit more explanation. In particular, it is quite surprising that an increase in leak conductance would increase firing rate. Since leak channels are typically potassium channels, I would expect an increase in leak conductance to not only make the cell less sensitive to depolarizing current, but also hyperpolarize the branch a bit, unless Eleak is rather depolarized. An intuitive explanation for this result would be helpful. Also, I don't understand how these manipulations are related to sequence discrimination. Wouldn't these channel modulations change firing rate for all sequences? Or perhaps the neuron can better discriminate the correct from incorrect sequence?\n",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3d8b5b87-13e7-4026-947c-3ae54b674cd0",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C1",
+      "claim": "Lorente de No suggested that reverberatory activity sequences in small networks could sustain activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Lorente de No suggested that reverberatory activity sequences in small networks could sustain activity (Lorente de No, 1938).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lorente de No, 1938",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "948c8d29-9288-4f87-a741-95a758894d96",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C2",
+      "claim": "Hebb's idea of cell assemblies suggested that ensembles of cells encoded a particular neuronal concept.",
+      "claim_type": "EXPLICIT",
+      "source": "Hebb's idea of cell assemblies suggested that ensembles of cells encoded a particular neuronal concept, but also that there was sequential activation within the group of cells forming the assembly (Hebb, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hebb, 1949",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b71ffc63-f969-4225-b9b0-74dedd8bf446",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C3",
+      "claim": "There was sequential activation within the group of cells forming the assembly in Hebb's cell assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Hebb's idea of cell assemblies suggested that ensembles of cells encoded a particular neuronal concept, but also that there was sequential activation within the group of cells forming the assembly (Hebb, 1949).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hebb, 1949",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "346fead1-4e34-447d-b67a-609d4ca4ae24",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C4",
+      "claim": "Many sensory systems process sequential stimuli that are typically mapped to ensembles of sequentially active neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Many sensory systems process sequential stimuli, and these are typically mapped to ensembles of sequentially active neurons (Bouchard and Brainard, 2016; Broome et al., 2006; Carrillo-Reid et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bouchard and Brainard, 2016; Broome et al., 2006; Carrillo-Reid et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "2fd7fbc0-81cd-477f-b945-a70b6a51d571",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C5",
+      "claim": "Hippocampal place cells represent a higher-order cognitive map of space.",
+      "claim_type": "EXPLICIT",
+      "source": "Deeper in the brain, hippocampal place cells represent a higher-order cognitive map of space, yet here too sequences occur when the animal moves through spatial locations represented by the place cells (Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wilson and McNaughton, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "d6e037cd-eed4-49e4-a453-654c202937bc",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C6",
+      "claim": "Sequences occur in hippocampal place cells when the animal moves through spatial locations represented by the place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Deeper in the brain, hippocampal place cells represent a higher-order cognitive map of space, yet here too sequences occur when the animal moves through spatial locations represented by the place cells (Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wilson and McNaughton, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b0b16038-0f24-480a-8eb8-5ba97cae8685",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C7",
+      "claim": "The hippocampus exhibits sequential activity in the form of fast replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus exhibits other forms of sequential activity in the form of fast replay events (Jadhav et al., 2012; Wilson and McNaughton, 1994) and stimulus-bridging activity that emerges during associative learning (MacDonald et al., 2011) and trace conditioning (Modi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jadhav et al., 2012; Wilson and McNaughton, 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "a856da6e-7c4e-4b56-a9d4-0d6d0550c3c6",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C8",
+      "claim": "The hippocampus exhibits stimulus-bridging activity that emerges during associative learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus exhibits other forms of sequential activity in the form of fast replay events (Jadhav et al., 2012; Wilson and McNaughton, 1994) and stimulus-bridging activity that emerges during associative learning (MacDonald et al., 2011) and trace conditioning (Modi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to MacDonald et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "044965f3-6f98-4372-bb46-89a2cd1f8035",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C9",
+      "claim": "The hippocampus exhibits stimulus-bridging activity that emerges during trace conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus exhibits other forms of sequential activity in the form of fast replay events (Jadhav et al., 2012; Wilson and McNaughton, 1994) and stimulus-bridging activity that emerges during associative learning (MacDonald et al., 2011) and trace conditioning (Modi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Modi et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "02f1a697-bb9e-4330-9ea8-6e94c3186c80",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C10",
+      "claim": "The idea of synfire chains examines conditions for self-sustaining sequential activity to occur in multiple layers of a network.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea of synfire chains examines conditions for self-sustaining sequential activity to occur in multiple layers of a network (Abeles, 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Abeles, 1982",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "cd3a3a54-36cd-4301-ab0d-be673533f8ec",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C11",
+      "claim": "Excessive activation in synfire chains can lead to runaway epileptiform activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This is non-trivial, as excessive activation can lead to runaway epileptiform activity, whereas insufficient activation causes decay of the activity wave (Kumar et al., 2008; Mehring et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kumar et al., 2008; Mehring et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "ced921ed-502f-4059-91b8-adc57b1d47b3",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C12",
+      "claim": "Insufficient activation in synfire chains causes decay of the activity wave.",
+      "claim_type": "EXPLICIT",
+      "source": "This is non-trivial, as excessive activation can lead to runaway epileptiform activity, whereas insufficient activation causes decay of the activity wave (Kumar et al., 2008; Mehring et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kumar et al., 2008; Mehring et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "be101a59-dbac-4394-a461-c9412ba01117",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C13",
+      "claim": "Events may be run through a delay line so that the oldest event is delayed more, allowing classical attractor networks to recognize patterns in the sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, events may be run through a delay line, so that the oldest event is delayed more, the next event less, and so on, so that they all arrive at the neural network at the same time. Thus, the time-sequence is flattened in time and classical attractor networks can recognize patterns in the sequence (Tank and Hopfield, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tank and Hopfield, 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "6c0c0727-f1eb-48e2-afd3-e1f2f81233ae",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C14",
+      "claim": "Time-varying attractor networks have been shown to be able to implement and recognize sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-varying attractor networks have also been shown to be able to implement and recognize sequences (Lee, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lee, 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "c9513392-0e96-4df3-98de-63347f317082",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C15",
+      "claim": "Recursive networks using supervised learning and short-term synaptic plasticity have been shown to implement time-invariance.",
+      "claim_type": "EXPLICIT",
+      "source": "Recursive networks using supervised learning, and short-term synaptic plasticity have been shown to be implement time-invariance (Barak and Tsodyks, 2006; Goudar and Buonomano, 2015; Laje and Buonomano, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Barak and Tsodyks, 2006; Goudar and Buonomano, 2015; Laje and Buonomano, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "700eabb3-02d7-4f62-bee8-44b141496f73",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C16",
+      "claim": "The theory of Hierarchical Temporal Memory builds on the idea of sequence-recognizing neurons and networks as a way to perform complex temporal computation.",
+      "claim_type": "EXPLICIT",
+      "source": "The theory of Hierarchical Temporal Memory builds on the idea of sequence-recognizing neurons and networks as a way to perform complex temporal computation (George and Hawkins, 2009; Hawkins and Ahmad, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to George and Hawkins, 2009; Hawkins and Ahmad, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "a2cb1494-ac25-4bce-b47e-85cb33932141",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C17",
+      "claim": "Rall showed theoretically that synaptic events propagate down the dendritic tree with a small delay.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the first biophysical proposals for subcellular sequence recognition was made by Rall, who showed theoretically that synaptic events propagate down the dendritic tree with a small delay. By timing synaptic inputs to coincide with this delay, Rall predicted that ordered input should yield a larger response than reversed input (Rall, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rall, 1964",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "16e0fdae-6ed3-499e-968a-5736fd9ff5cf",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C18",
+      "claim": "Rall predicted that ordered input should yield a larger response than reversed input when synaptic inputs are timed to coincide with the delay of synaptic event propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the first biophysical proposals for subcellular sequence recognition was made by Rall, who showed theoretically that synaptic events propagate down the dendritic tree with a small delay. By timing synaptic inputs to coincide with this delay, Rall predicted that ordered input should yield a larger response than reversed input (Rall, 1964).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rall, 1964",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b36a6870-75cf-4f20-9727-6953084a689b",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C19",
+      "claim": "Branco et al. experimentally demonstrated that NMDA receptor amplification of 'inward' sequences (distal to proximal) gave rise to about 40% larger somatic depolarization than 'outward' sequences for rapid (~40 ms) sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "A stronger version of this mechanism was experimentally demonstrated by Branco et al. (2010) who used glutamate uncaging to provide sequential input along a pyramidal neuron dendrite. They showed that NMDA receptor amplification of 'inward' sequences (distal to proximal) gave rise to about 40% larger somatic depolarization than 'outward' sequences, for rapid (~40 ms) sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Branco et al. (2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "02a6e9b3-dd1e-41e9-903c-9d1fadb8c4c6",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C20",
+      "claim": "Synaptically-driven reaction-diffusion pathways on dendrites can perform sequence discrimination on behaviorally relevant time-scales.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that synaptically-driven reaction-diffusion pathways on dendrites can perform sequence discrimination on behaviorally relevant time-scales.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the modeling data presented throughout the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "6c3ce714-cfb9-40ef-91b5-27fe73bff581",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C21",
+      "claim": "Selectivity in abstract signaling models arises when inputs at successive locations are aligned with and amplified by propagating chemical waves triggered by previous inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We used abstract signaling models to show that selectivity arises when inputs at successive locations are aligned with, and amplified by, propagating chemical waves triggered by previous inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figures 2-4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "f434da85-4cad-4c14-9f95-7fb1ead9f1c4",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C22",
+      "claim": "Sequential synaptic input onto spines in morphologically, electrically, and chemically detailed pyramidal neuronal models based on rat data can recognize sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated biological detail using sequential synaptic input onto spines in morphologically, electrically, and chemically detailed pyramidal neuronal models based on rat data. Again, sequences were recognized, and local channel modulation downstream of putative sequence-triggered signaling could elicit changes in neuronal firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the detailed modeling results shown in Figures 5-7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "3e72a8c2-37c8-4e3a-99bf-7f2456bb18ae",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C23",
+      "claim": "Local channel modulation downstream of putative sequence-triggered signaling could elicit changes in neuronal firing.",
+      "claim_type": "EXPLICIT",
+      "source": "We incorporated biological detail using sequential synaptic input onto spines in morphologically, electrically, and chemically detailed pyramidal neuronal models based on rat data. Again, sequences were recognized, and local channel modulation downstream of putative sequence-triggered signaling could elicit changes in neuronal firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "05141470-41a5-45a8-8681-fa37288f766e",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C24",
+      "claim": "Dendritic sequence-recognition zones occupy 5 to 30 microns.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that dendritic sequence-recognition zones occupy 5 to 30 microns and recognize time-intervals of 0.2 to 5 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the modeling results shown in Figures 3, 4, and 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "62bea34a-0bb2-416a-8fee-fa4689ace222",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C25",
+      "claim": "Dendritic sequence-recognition zones recognize time-intervals of 0.2 to 5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that dendritic sequence-recognition zones occupy 5 to 30 microns and recognize time-intervals of 0.2 to 5 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the modeling results shown in Figures 3, 4, and 6",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "c93af58d-66cd-4717-b0ab-e140f55df70e",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C26",
+      "claim": "The feedback inhibition model showed no input sequence-dependent difference in total activity.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that the simple feedback inhibition model showed no input sequence-dependent difference in total activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 2, first column",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "004d16c1-d192-46d6-8d49-8b3bb8f156d1",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C27",
+      "claim": "The feedforward inhibition model showed a small amount of selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, we observed that the feedforward inhibition model showed a small amount of selectivity (Figure 2D\u2013G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 2D-G, second column",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "84a29275-0f7f-48b1-9fd0-aed62df5c3be",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C28",
+      "claim": "The FitzHugh-Nagumo (FHN) model was strongly selective, with a large buildup of response only when the input was sequential.",
+      "claim_type": "EXPLICIT",
+      "source": "The FitzHugh-Nagumo (FHN) model was strongly selective, with a large buildup of response only when the input was sequential (Figure 2 third column, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 2, third column, and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "2a50da38-5fcd-4e4c-a09a-71db7f58465a",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C29",
+      "claim": "The switching model was the most selective.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching model was the most selective (Figure 2 last column, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 2, last column, and Video 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "90007fb6-b08f-405d-8852-cc790d49d751",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C30",
+      "claim": "Strong selectivity emerged from a supralinear buildup of responses when diffusively propagating activity was aligned with successive inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this set of simulations showed that several reaction-diffusion like systems were capable of sequence selectivity. Strong selectivity emerged from a supralinear buildup of responses when diffusively propagating activity was aligned with successive inputs, and suppression due to inhibition when the alignment was off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "5ddf445b-9436-4f5c-a897-2351c1871a9a",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C31",
+      "claim": "Suppression due to inhibition occurs when the alignment of diffusively propagating activity with successive inputs is off.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this set of simulations showed that several reaction-diffusion like systems were capable of sequence selectivity. Strong selectivity emerged from a supralinear buildup of responses when diffusively propagating activity was aligned with successive inputs, and suppression due to inhibition when the alignment was off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the modeling results shown in Figure 2",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "1fa1591a-4525-499b-93d4-15f0a294fa38",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C32",
+      "claim": "Scaling all rates and diffusion constants by the same factor scaled the sequence speed to which the network had the strongest response.",
+      "claim_type": "EXPLICIT",
+      "source": "We first tested the most straightforward assumption, that sequence propagation speed was proportional to chemical rate and diffusion constants. To do this, we scaled all rates and the diffusion constants by the same factor, and reduced the stimulus width by the same factor. We ran the same grid of stimulus space and time intervals as above. As expected, scaling all the chemical and diffusion rates also scaled the sequence speed to which the network had the strongest response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 4A-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "13e824dd-3933-4c94-b7ff-d639cee82294",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C33",
+      "claim": "As the rates were increased, the best tuning was at shorter time intervals but roughly the same spatial intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "As the rates were increased, the best tuning was at shorter time intervals but roughly the same spatial intervals. (Figure 4A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 4A-E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "72f3e3ba-f084-4158-b223-704536774743",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C34",
+      "claim": "The tuning zone depended on stimulus strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore also examined dependence of tuning on stimulus strength, and observed that the tuning zone also depended on stimulus strength (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 4F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "a9d7998c-d43b-4b75-bf74-3421133a9bab",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C35",
+      "claim": "Selectivity was robust to some parameters, such as diffusion constants, but fragile (range ~20%) with respect to some rate constants and stimulus amplitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that selectivity was robust to some parameters, such as diffusion constants, but fragile (range ~20%) with respect to some rate constants and stimulus amplitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the parameter sensitivity analysis shown in Figure 4\u2014figure supplements 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "f25bd67b-2444-4d9d-8ac6-7c6b7a2d5b98",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C36",
+      "claim": "By varying rates for reactions and diffusion, good sequence selectivity was achieved over a broad range of time-intervals (0.5\u20134 s between stimuli) and spatial intervals (2\u20136 \u03bcm between stimuli).",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by varying rates for reactions and diffusion, we were able to achieve good sequence selectivity over a broad range of time-intervals (0.5\u20134 s between stimuli) and spatial intervals (2\u20136 \u03bcm between stimuli).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figures 3 and 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "ab4e94d4-3779-4af6-b768-4759680db3fe",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C37",
+      "claim": "A mass-action reaction-diffusion system based on MAPK feedback and bistability exhibited sequence selectivity when it had switch-like turnon with delayed turnoff by negative feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we showed that a mass-action reaction-diffusion system exhibited sequence selectivity when it had switch-like turnon with delayed turnoff by negative feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "139c812c-72ca-49f8-8b70-751b6d14cb89",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C38",
+      "claim": "The model neuron exhibited theta-modulated sub-threshold oscillations with spiking activity at ~1 Hz due to background synaptic input.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the background synaptic input, the model exhibited theta-modulated sub-threshold oscillations, with spiking activity at ~1 Hz (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "f6099ea8-afc4-4bf1-8e2a-fb6cf22f0400",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C39",
+      "claim": "Strong selectivity in MAPK activity for sequential stimuli as compared to scrambled was observed in the basal dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "With these parameters, we observed strong selectivity in MAPK activity for sequential stimuli as compared to scrambled in the basal dendrite (Figure 6D, solid lines for sequential vs. dashed for scrambled).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "61cea086-69d1-45ac-9e7d-76a26f17bcc0",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C40",
+      "claim": "Strong sequence selectivity was observed in the basal dendrite zone for a restricted range of space and time intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed strong sequence selectivity in the basal dendrite zone, for a restricted range of space and time intervals, as expected from the earlier calculations (Figure 6E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 6E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "28c5eccc-ac0a-443b-8c97-7f2636abe3b9",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C41",
+      "claim": "There were strongly sequence selective responses in oblique dendrites and distal apical dendritic regions, but these required stronger stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that there were indeed strongly sequence selective responses in oblique dendrites and distal apical dendritic regions, but these required stronger stimuli (Figure 6H,I; Videos 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 6H,I and Videos 6 and 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "dd5b22a1-d87c-465d-9893-2f8edf3ae74e",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C42",
+      "claim": "Sequence recognition was not observed in the primary apical dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe sequence recognition in the primary apical dendrite (Figure 6J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 6J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "2c89e385-9645-4ab9-81b0-4179ccfac0af",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C43",
+      "claim": "The model retained selectivity (at least 50% of best selectivity) over a factor of ~2 or more for all parameters except the Raf affinity for Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though we had not fine-tuned the model for robustness, we found that the model retained selectivity (at least 50% of best selectivity) over a factor of ~2 or more for all parameters except the Raf affinity for Ca2+ (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the parameter sensitivity analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "f22205f1-9f36-4d96-8ce5-0930641310e7",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C44",
+      "claim": "The Raf affinity for Ca2+ parameter could be varied by \u00b115% about its reference.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter parameter could be varied by \u00b115% about its reference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the parameter sensitivity analysis shown in Figure 6\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "84151e31-c73c-45f3-a28d-45e06cc86717",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C45",
+      "claim": "Intracellular signaling pathways exhibited selectivity for ordered synaptic input, even when considerable morphological and electrical detail and noisy input were incorporated.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we showed that intracellular signaling pathways exhibited selectivity for ordered synaptic input, even when considerable morphological and electrical detail and noisy input were incorporated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the modeling results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "a5e1c603-3cb2-4dd1-86cb-df9366403d7c",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C46",
+      "claim": "Modulation of the Na channel in the apical and primary dendrites could increase firing rates by large factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that modulation of the Na channel, and increase in nonselective leak conductance in the apical and primary dendrites could increase firing rates by large factors (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "9bc0c69d-90f5-458f-b0f4-b00a3881108c",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C47",
+      "claim": "Increase in nonselective leak conductance in the apical and primary dendrites could increase firing rates by large factors.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that modulation of the Na channel, and increase in nonselective leak conductance in the apical and primary dendrites could increase firing rates by large factors (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 7A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "59c337a0-5d98-4802-97b9-9ec388d56559",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C48",
+      "claim": "A 10x increase in AMPAR conductance in the 20 \u03bcm zone in the apical dendrite led to a doubling in cell firing.",
+      "claim_type": "EXPLICIT",
+      "source": "With this change, we found that a 10x increase in AMPAR conductance in the 20 \u03bcm zone in the apical dendrite led to a doubling in cell firing (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the modeling results shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "7b306407-31bd-44a0-abae-3e76fb54355e",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C49",
+      "claim": "A similar manipulation in the primary dendrite led to a shallower increase in cell firing, about 1.5x.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar manipulation in the primary dendrite led to a shallower increase, about 1.5x.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by the modeling results shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "da415da6-23d8-4789-a78f-97a62bdd323d",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C50",
+      "claim": "Chemical signaling in rather small regions of the apical dendrite may lead to a rapid change in cell firing by local channel modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, chemical signaling, even in rather small regions of the apical dendrite, may lead to a rapid change in cell firing by local channel modulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "67653128-3398-45f8-bbd9-2d07ecf4ec79",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C51",
+      "claim": "Large channel modulations were needed to elicit sufficiently large (e.g., 50%) changes in firing rate that could be detected over the noisy background.",
+      "claim_type": "EXPLICIT",
+      "source": "However, large channel modulations were needed to elicit sufficiently large (e.g., 50%) changes in in firing rate that could be detected over the noisy background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the modeling results shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "8a1baf2f-98f9-4543-9508-2d9d10295ec6",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C52",
+      "claim": "MAPK phosphorylates and modulates KA channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MAPK phosphorylates and modulates KA (Yuan et al., 2002) Kir6.2 (Lin and Chai, 2008), and Na(v) 1.7channels (Stamboulian et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yuan et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "e3355143-c6ef-4c1b-be0e-673644fddb84",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C53",
+      "claim": "MAPK phosphorylates and modulates Kir6.2 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MAPK phosphorylates and modulates KA (Yuan et al., 2002) Kir6.2 (Lin and Chai, 2008), and Na(v) 1.7channels (Stamboulian et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lin and Chai, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b4c00185-1384-4e0f-9392-0464f41ccba8",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C54",
+      "claim": "MAPK phosphorylates and modulates Na(v) 1.7 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, MAPK phosphorylates and modulates KA (Yuan et al., 2002) Kir6.2 (Lin and Chai, 2008), and Na(v) 1.7channels (Stamboulian et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stamboulian et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "ffc10127-ce01-4eef-ac8b-e456a9eeeb62",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C55",
+      "claim": "MAPK is implicated in control of trafficking of AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "MAPK is also implicated in control of trafficking of AMPA receptors (Keifer et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keifer et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "83ec0840-8de4-482c-9ac5-3e07303cf488",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C56",
+      "claim": "Similar brief, strong synaptic input on small sections of distal dendrites has been reported to cause strong changes in activity of striatal spiny neurons by triggering a transition to an 'up' state.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar brief, strong synaptic input on small sections of distal dendrites has been reported to cause strong changes in activity of striatal spiny neurons by triggering a transition to an 'up' state (Plotkin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Plotkin et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b1786bec-28ff-45c6-a2f1-089b4f9375f9",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C57",
+      "claim": "MAPK is upstream of numerous plasticity events.",
+      "claim_type": "EXPLICIT",
+      "source": "On a slightly longer time-scale, MAPK is upstream of numerous plasticity events (Smolen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Smolen et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "a2580552-9c9a-4fd9-90e0-3c76d836a25d",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C58",
+      "claim": "MAPK plasticity events include phosphorylation and insertion of receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "These include phosphorylation and insertion of receptors (Keifer et al., 2007), modulation of dendritic protein synthesis (Tsokas et al., 2007), and transcriptional control (Rosenblum et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Keifer et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "66d55f89-64ea-4bd9-aa49-71abb93fbf07",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C59",
+      "claim": "MAPK plasticity events include modulation of dendritic protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These include phosphorylation and insertion of receptors (Keifer et al., 2007), modulation of dendritic protein synthesis (Tsokas et al., 2007), and transcriptional control (Rosenblum et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tsokas et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "12c13b94-af47-4bcd-9e9a-29b7e5252cdf",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C60",
+      "claim": "MAPK plasticity events include transcriptional control.",
+      "claim_type": "EXPLICIT",
+      "source": "These include phosphorylation and insertion of receptors (Keifer et al., 2007), modulation of dendritic protein synthesis (Tsokas et al., 2007), and transcriptional control (Rosenblum et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rosenblum et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "7971948e-cd1a-402a-9f52-a7faa883e72c",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C61",
+      "claim": "MAPK activation is known to play a role in learning-associated morphological change in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, MAPK activation is known to play a role in learning-associated morphological change in neurons (Tyler et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tyler et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "539c10db-23f1-4946-bf4e-07e7f0024691",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C62",
+      "claim": "Local CICR has been proposed to support propagating wave activity in dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Another might be local CICR, which has already been proposed to support propagating wave activity in dendrites (Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003; Lee et al., 2016; Plotkin et al., 2013; Ross, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003; Lee et al., 2016; Plotkin et al., 2013; Ross, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "db1b4683-a7d0-47d1-9a15-fb1a0c34d969",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C63",
+      "claim": "CICR has faster dynamics, of the order of 100 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "These have faster dynamics, of the order of 100 \u03bcm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CICR",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "acd2d8b2-d9c9-479f-8904-9b6da27f3cd0",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C64",
+      "claim": "The length-scale of dendritic CICR is similar (~10\u201320 \u03bcm) to that envisaged for sequence recognition in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, dendritic Ca2+ imaging suggests that the length-scale of dendritic CICR is similar (~10\u201320 \u03bcm) to that envisaged for sequence recognition in our study (Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hagenston et al., 2008; Kapur et al., 2001; Larkum et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "d37e8efe-15d5-4e40-9e82-481e8ce6c0d1",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C65",
+      "claim": "Simulation studies have previously suggested that CICR may be a mechanism for integration of inputs and resulting in graded, persistent activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulation studies have previously suggested that CICR may be a mechanism for integration of inputs and resulting in graded, persistent activity (Loewenstein and Sompolinsky, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Loewenstein and Sompolinsky, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "7eb2a9b3-36ac-4963-bcb7-dfcb594f283d",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C66",
+      "claim": "Electrical sequence recognition (~40 ms) has been demonstrated where forward sequences can be discriminated from backward.",
+      "claim_type": "EXPLICIT",
+      "source": "Still faster sequence recognition (~40 ms) has been demonstrated in the electrical domain, where forward sequences can be discriminated from backward (Branco et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Branco et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "e304aee7-7fe3-477d-ab1d-45622738e1a6",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C67",
+      "claim": "Electrical sequence recognition has been shown to have ~40% discrimination between forward and backward patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This electrical mechanism has been shown to have ~40% discrimination between forward and backward patterns, rather than the strong selectivity among permutations of patterns shown by our chemical system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with the cited work of Branco et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "267ec361-cd2b-4bed-b64c-6c59b09b8323",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C68",
+      "claim": "All modeling was carried out using MOOSE, the Multiscale Object-Oriented Simulation Environment.",
+      "claim_type": "EXPLICIT",
+      "source": "All modeling was carried out using MOOSE, the Multiscale Object-Oriented Simulation Environment (Ray and Bhalla, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to Ray and Bhalla, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "58bb4d92-32b8-425d-be70-a7db89fded4e",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C69",
+      "claim": "MOOSE utilizes the GNU Scientific Library (GSL) Runge-Kutta-Fehlberg fifth order method for chemical computations.",
+      "claim_type": "EXPLICIT",
+      "source": "MOOSE utilizes the GNU Scientific Library (GSL) Runge-Kutta-Fehlberg fifth order method for chemical computations, and a custom-written branching 1-D diffusion solver using the backward Euler (implicit) method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the software used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b0125406-ad17-4b53-bb7d-e111d9f33b38",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C70",
+      "claim": "Stochastic chemical calculations were carried out using a custom-written optimized version of the Gillespie Stochastic Systems Algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "Stochastic chemical calculations were carried out using a custom-written optimized version of the Gillespie Stochastic Systems Algorithm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the computational methods used",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "bb33a7fc-a271-4028-bacd-0ca834773a26",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C71",
+      "claim": "Electrical computations utilized a custom version of the branched nerve equation solution methods described by Hines.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical computations utilized a custom version of the branched nerve equation solution methods described by Hines (Hines, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to Hines, 1984",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "fa3147d4-f2ef-4883-aad8-4a0422ce8bac",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C72",
+      "claim": "The electrical computation method has been validated by comparison with other simulators.",
+      "claim_type": "EXPLICIT",
+      "source": "This has been validated by comparison with other simulators (Gleeson et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gleeson et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "f8308086-c322-4448-970e-fb64e25b4be9",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C73",
+      "claim": "Electrical model morphologies were either geometrical (cylindrical) or derived from published cell reconstructions available on NeuroMorpho.org.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical model morphologies were either geometrical (cylindrical) or derived from published cell reconstructions available on NeuroMorpho.org (Ascoli et al., 2007; Dougherty et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citations to Ascoli et al., 2007; Dougherty et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "939cb667-74de-4545-a630-d210456377bb",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C74",
+      "claim": "Spines were positioned along dendrites using Poisson statistics with a specified mean spacing between spines (1 \u03bcm in the full cell model).",
+      "claim_type": "EXPLICIT",
+      "source": "Spines were positioned along dendrites using Poisson statistics with a specified mean spacing between spines (1 \u03bcm in the full cell model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the model construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "28f59abb-e980-430b-b6c9-26cce21e3b35",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C75",
+      "claim": "Spines were modeled as a cylindrical head (0.5 \u03bcm length and diameter) on a cylindrical shaft (1 \u03bcm length, 0.2 \u03bcm diameter).",
+      "claim_type": "EXPLICIT",
+      "source": "Spines were modeled as a cylindrical head (0.5 \u03bcm length and diameter) on a cylindrical shaft (1 \u03bcm length, 0.2 \u03bcm diameter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the model construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "0369082f-06ff-4366-8592-5e8906909e59",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C76",
+      "claim": "Channel kinetics were derived from Traub et al. (1991).",
+      "claim_type": "EXPLICIT",
+      "source": "Channel kinetics were derived from Traub et al. (1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to Traub et al. (1991)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "bfdb4392-e394-4b3f-80dc-b73c73eb2a3a",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C77",
+      "claim": "Abstract reaction-diffusion calculations were carried out in a 1-dimensional geometry with spatial discretization of 1 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "Abstract reaction-diffusion calculations (Figures 2\u20134) were carried out in a 1-dimensional geometry with spatial discretization of 1 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the model construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "2d411168-012f-4603-93ae-dade80522f21",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C78",
+      "claim": "The reaction systems were active only in five equally spaced 1 \u03bcm patches, but diffusion took place throughout the 100 \u03bcm length of the model.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to represent reactions occurring in a spatially restricted region in or under dendritic spines, the reaction systems were active only in five equally spaced 1 \u03bcm patches, but diffusion took place throughout the 100 \u03bcm length of the model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the model construction",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "e5f2dae3-5dac-4019-bca4-b919573ed762",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C79",
+      "claim": "Recursive sequence recognition is a fundamental computational operation in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that recursive sequence recognition is a fundamental computational operation in the brain, and that this operation may be implemented by neurons able to recognize spatially and temporally sequential input on behavioral time-scales (seconds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a postulate/hypothesis of the study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "9cf95c46-16c0-4844-ad45-da9d89f15f28",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C80",
+      "claim": "This mechanism provides highly parallel and selective neural computation in a functionally important time range.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this mechanism provides highly parallel and selective neural computation in a functionally important time range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion based on the modeling results throughout the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "43a2e531-0775-42aa-90ca-95c5b8d8eda4",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C81",
+      "claim": "There are at least four major kinases (PKA, PKC, MAPK, CaMKII) that may fit the profile of state switching with feedback inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "There are several synaptically activated pathways that may fit the profile of state switching with feedback inhibition. Based on our abstract models (Figure 2), these are candidates for implementing sequence selectivity. These include four major kinases (PKA, PKC, MAPK, CaMKII) and a variety of second-messenger and metabotropic pathways (Bhalla and Iyengar, 1999; Kim et al., 2011; Lisman and Zhabotinsky, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bhalla and Iyengar, 1999; Kim et al., 2011; Lisman and Zhabotinsky, 2001",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "9aa0f36e-b68b-476c-a35d-3d7f213d26a3",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C82",
+      "claim": "If a 5-stage sequence is considered, a perfect sequence recognizer would distinguish 1 from 5! possible sequences, or 1 in 120.",
+      "claim_type": "EXPLICIT",
+      "source": "If we take a 5-stage sequence, a perfect sequence recognizer would distinguish 1 from 5! possible sequences, or 1 in 120.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical calculation based on combinatorics",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "bf5302fe-9e7f-4eac-b939-182d2cc45c2f",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C83",
+      "claim": "In a pyramidal neuron with about 10000 \u03bcm of dendritic length, there are ~1000 non-overlapping sequence recognition blocks of 10 \u03bcm each.",
+      "claim_type": "EXPLICIT",
+      "source": "Say the set of spines occupies 10 \u03bcm. The most conservative calculation requires that these blocks do not overlap, so in a pyramidal neuron with about 10000 \u03bcm of dendritic length we have ~1000 blocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the modeling results and known neuronal anatomy",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "9c9a7cec-ad6e-4bfe-9d7e-1ba784194e39",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C84",
+      "claim": "If blocks are permitted to slide by one input at a time, there are five times as many sequence recognition blocks, i.e., ~5000.",
+      "claim_type": "EXPLICIT",
+      "source": "If we permit blocks to slide by one input at a time, there are five times as many sequence recognition blocks, i.e., ~5000.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "6e90bcd7-d6a2-4752-ae3f-479d149300f4",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C85",
+      "claim": "The neuron may perform 500 sequence discriminations each second.",
+      "claim_type": "EXPLICIT",
+      "source": "If the sequence lasts 10 s, a single block performs 0.1 sequence recognitions per second. Thus, the neuron may perform 500 sequence discriminations each second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the modeling results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "01fbe5fb-3dde-4f74-a1ef-82d71c53fca0",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C86",
+      "claim": "Each neuron has ~5000 blocks and can recognize ~8.5\u00d710^7 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Using our calculation above, each neuron has ~5000 blocks, and so can recognize ~8.5\u00d7107 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative calculation based on assumptions about connectivity and sparsity",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "b1c6cc5f-8760-463d-984b-c29e64fa2af8",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C87",
+      "claim": "The hypothesis of single-cell sequence recognition is readily testable using current technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our hypothesis of single-cell sequence recognition is readily testable using current technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the testability of the hypothesis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "4bb6f656-f017-40d8-a5e4-04c83300da17",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C88",
+      "claim": "The chemical basis of sequence recognition may be examined in brain-slice using local agonist application or sequential glutamate uncaging followed by microscopic readouts of activity reporters for candidate pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Its chemical basis may be examined in brain-slice using local agonist application or sequential glutamate uncaging followed by microscopic readouts of activity reporters for candidate pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for experimental testing",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "527fb85d-0030-4ed5-9a3e-96179308969c",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "claim_id": "C89",
+      "claim": "Experiments have shown that there is a buildup of Ca2+ along small, 20 \u03bcm stretches of dendrite under suitable stimulus conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such experiments have already been done to examine CICR triggered by synaptic inputs converging to adjacent synapses (Hagenston et al., 2008; Plotkin et al., 2013). These show that there is indeed a buildup of Ca2+ along small, 20 \u03bcm stretches of dendrite, under suitable stimulus conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hagenston et al., 2008; Plotkin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3c7589c3-5890-4558-bf11-485dcf89c408",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Abstract reaction-diffusion models with specific motifs (FitzHugh-Nagumo and bistable switching with feedback inhibition) exhibit strong selectivity for spatially and temporally ordered synaptic inputs over scrambled inputs. Selectivity arises from supralinear buildup when propagating chemical waves align with successive inputs, while misalignment causes inhibitory suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 demonstrate through systematic modeling (Figure 2) that different reaction-diffusion architectures show varying degrees of sequence selectivity, with the FHN and switching models achieving strong discrimination. The mechanism is clearly demonstrated through time-course and spatial profile data, with quantitative metrics showing the switching model as most selective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "1b457447-cd91-44d3-9767-d8be543e161a",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The temporal and spatial tuning of sequence selectivity in abstract models scales predictably with reaction rates and diffusion constants. By varying these parameters, sequence selectivity can be achieved over time-intervals of 0.5-4 s and spatial intervals of 2-6 \u03bcm, though selectivity shows differential robustness to parameter variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are well-supported by systematic parameter exploration (Figures 3-4 and supplements). The scaling relationships are demonstrated quantitatively, and parameter sensitivity analysis reveals both robust and fragile parameters. The range of achievable selectivity is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "019bb837-04eb-41a4-a455-d03fffb1f89f",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A biologically-motivated mass-action reaction-diffusion model based on MAPK feedback and bistability exhibits sequence selectivity when configured with switch-like activation and delayed negative feedback turnoff.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by modeling results in Figure 5 showing that the MAPK-based model successfully discriminates sequential from scrambled inputs. The model incorporates known biochemical mechanisms and demonstrates the predicted design principles from abstract models translate to more realistic chemistry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "281fa057-41af-47ed-a780-eb7e14a72ae5",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In morphologically and electrically detailed pyramidal neuron models with realistic background activity, intracellular MAPK signaling pathways exhibit sequence selectivity for ordered synaptic inputs. Selectivity is observed in basal dendrites, oblique dendrites, and distal apical regions (with varying stimulus requirements), but not in primary apical dendrites. The model shows reasonable robustness to most parameter variations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C45 are supported by extensive multiscale modeling (Figure 6). The detailed model incorporates morphology, electrical activity, stochastic synaptic input, and chemical signaling. Sequence selectivity is demonstrated across multiple dendritic regions with appropriate quantification. Parameter sensitivity analysis (Figure 6 supplement 1) shows robustness except for one parameter (Raf-Ca2+ affinity), though the limited scope of sensitivity analysis is a minor weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "148a3081-1864-497a-9d1f-54bf28e795f2",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Based on modeling results, the authors predict that dendritic sequence-recognition zones occupy 5-30 microns spatially and recognize time-intervals of 0.2-5 seconds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 represent predictions derived from the modeling results in Figures 3, 4, and 6. The spatial range is consistent with the ~10 \u03bcm zones showing selectivity in detailed models, and the temporal range encompasses the 0.5-4 s intervals demonstrated in abstract models. These are reasonable extrapolations from the data, though experimental validation is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "81ab4a06-f27d-41ee-8682-47e30fa10cae",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Local channel modulation in small dendritic regions (~20 \u03bcm) downstream of sequence-triggered signaling can elicit changes in neuronal firing. Modulation of Na channels, leak conductance, or AMPAR conductance in apical dendrites can increase firing rates, though large modulations (e.g., 10-fold) are required for detectable effects over noisy background.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by modeling results in Figure 7 showing that local channel modulation can affect somatic firing. The quantitative effects are documented (e.g., 2-fold increase for 10x AMPAR modulation). However, the requirement for very large modulations (C51) and the simplified approach (not simulating the full biochemical cascade) represent limitations. The results are proof-of-principle rather than definitive predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Multiple kinase pathways (PKA, PKC, MAPK, CaMKII) could potentially implement sequence selectivity through state-switching with feedback inhibition. MAPK specifically can modulate various ion channels and is involved in plasticity events including receptor trafficking, protein synthesis, transcriptional control, and morphological changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C61 and C81 are well-supported by appropriate citations to prior literature. These claims establish the biological plausibility of the proposed mechanisms by documenting known biochemical pathways and their downstream effects. The inference that other kinases could implement similar mechanisms (C81) is reasonable given the abstract modeling results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "10270245-2393-4df8-9819-76707e9843f7",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Calcium-induced calcium release (CICR) has been proposed to support propagating wave activity in dendrites with dynamics of ~100 \u03bcm/s and length-scales of 10-20 \u03bcm, similar to those predicted for sequence recognition in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 are supported by appropriate citations and establish that CICR could provide an alternative, faster mechanism for sequence recognition. The comparison of length-scales between CICR and the current study's predictions is valid and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "8825c9f3-6a3b-4314-9b26-9bfcc9dbbaac",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Electrical mechanisms for sequence recognition operating on faster timescales (~40 ms) have been experimentally demonstrated, showing ~40% discrimination between forward and backward sequences through NMDA receptor amplification of inward versus outward sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C66, and C67 accurately represent prior experimental work (Branco et al. 2010) and appropriately distinguish it from the chemical mechanisms proposed in the current study. The comparison highlights different timescales and degrees of selectivity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Theoretical calculations suggest that a pyramidal neuron could contain ~1000-5000 sequence recognition blocks and perform ~500 sequence discriminations per second. With assumptions about connectivity, a single neuron might recognize ~8.5\u00d710^7 distinct sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C86 involve increasingly speculative calculations. While C82-C85 are reasonable extrapolations from the modeling results and known neuronal anatomy, C86 involves multiple unvalidated assumptions about connectivity, sparsity, and spatial tolerance (\u00b13 synapses). The calculation is acknowledged as speculative but lacks sufficient justification for the assumptions. These are interesting theoretical possibilities but require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "8bb0155d-d3bc-4d97-b185-e6040542d247",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors postulate that recursive sequence recognition is a fundamental computational operation in the brain, implemented through the proposed dendritic mechanism, providing highly parallel and selective neural computation in a functionally important time range.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C80 represent the overarching hypothesis and interpretation of the work. While the modeling results support the feasibility of the mechanism, the claim that this is a 'fundamental' operation and the broader computational implications remain speculative. The work demonstrates possibility but not biological implementation or functional necessity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "ee49d035-532e-40db-910d-14fdde85f2e3",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The hypothesis of single-cell sequence recognition is testable using current technology such as glutamate uncaging with activity reporters. Prior experiments have demonstrated Ca2+ buildup along 20 \u03bcm dendritic stretches under appropriate stimulus conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C89 appropriately describe experimental approaches and cite relevant prior work (C89) showing Ca2+ dynamics at appropriate length scales. The proposed experimental tests (C88) are reasonable and technically feasible, though the claim of 'readily testable' (C87) may be somewhat optimistic given the technical challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The modeling was performed using MOOSE simulation environment with appropriate numerical methods for chemical (Runge-Kutta-Fehlberg, Gillespie SSA) and electrical (Hines method) computations. Models used published morphologies, established channel kinetics, and realistic spine geometries with specified spatial discretization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C78 describe the computational methods and are well-documented with appropriate citations. The methods are standard and appropriate for the multiscale modeling performed. Validation of the electrical solver (C72) adds confidence. The level of detail provided is sufficient for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    },
+    {
+      "id": "df25963e-cb00-434f-bf50-0173e1fee239",
+      "content_id": "7fbd5aff-3042-4574-90d9-977f2e7a0252",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Historical and contemporary work has established that neural sequences are ubiquitous in brain function, from early theoretical proposals (Lorente de No, Hebb) through experimental observations in sensory systems and hippocampus, to computational models of sequence recognition and implementation in neural networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 provide appropriate background context through well-cited prior work. These claims accurately represent the literature on neural sequences, from theoretical foundations to experimental observations to computational models. This establishes the motivation and context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:49:06.936148Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "02a6e9b3-dd1e-41e9-903c-9d1fadb8c4c6",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "6c3ce714-cfb9-40ef-91b5-27fe73bff581",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "c93af58d-66cd-4717-b0ab-e140f55df70e",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "004d16c1-d192-46d6-8d49-8b3bb8f156d1",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "84a29275-0f7f-48b1-9fd0-aed62df5c3be",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "2a50da38-5fcd-4e4c-a09a-71db7f58465a",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "90007fb6-b08f-405d-8852-cc790d49d751",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "5ddf445b-9436-4f5c-a897-2351c1871a9a",
+      "result_id": "3c7589c3-5890-4558-bf11-485dcf89c408"
+    },
+    {
+      "claim_id": "1fa1591a-4525-499b-93d4-15f0a294fa38",
+      "result_id": "1b457447-cd91-44d3-9767-d8be543e161a"
+    },
+    {
+      "claim_id": "13e824dd-3933-4c94-b7ff-d639cee82294",
+      "result_id": "1b457447-cd91-44d3-9767-d8be543e161a"
+    },
+    {
+      "claim_id": "72f3e3ba-f084-4158-b223-704536774743",
+      "result_id": "1b457447-cd91-44d3-9767-d8be543e161a"
+    },
+    {
+      "claim_id": "a9d7998c-d43b-4b75-bf74-3421133a9bab",
+      "result_id": "1b457447-cd91-44d3-9767-d8be543e161a"
+    },
+    {
+      "claim_id": "f25bd67b-2444-4d9d-8ac6-7c6b7a2d5b98",
+      "result_id": "1b457447-cd91-44d3-9767-d8be543e161a"
+    },
+    {
+      "claim_id": "ab4e94d4-3779-4af6-b768-4759680db3fe",
+      "result_id": "019bb837-04eb-41a4-a455-d03fffb1f89f"
+    },
+    {
+      "claim_id": "f434da85-4cad-4c14-9f95-7fb1ead9f1c4",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "139c812c-72ca-49f8-8b70-751b6d14cb89",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "f6099ea8-afc4-4bf1-8e2a-fb6cf22f0400",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "61cea086-69d1-45ac-9e7d-76a26f17bcc0",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "28c5eccc-ac0a-443b-8c97-7f2636abe3b9",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "dd5b22a1-d87c-465d-9893-2f8edf3ae74e",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "2c89e385-9645-4ab9-81b0-4179ccfac0af",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "f22205f1-9f36-4d96-8ce5-0930641310e7",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "84151e31-c73c-45f3-a28d-45e06cc86717",
+      "result_id": "281fa057-41af-47ed-a780-eb7e14a72ae5"
+    },
+    {
+      "claim_id": "05141470-41a5-45a8-8681-fa37288f766e",
+      "result_id": "148a3081-1864-497a-9d1f-54bf28e795f2"
+    },
+    {
+      "claim_id": "62bea34a-0bb2-416a-8fee-fa4689ace222",
+      "result_id": "148a3081-1864-497a-9d1f-54bf28e795f2"
+    },
+    {
+      "claim_id": "3e72a8c2-37c8-4e3a-99bf-7f2456bb18ae",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "a5e1c603-3cb2-4dd1-86cb-df9366403d7c",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "9bc0c69d-90f5-458f-b0f4-b00a3881108c",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "59c337a0-5d98-4802-97b9-9ec388d56559",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "7b306407-31bd-44a0-abae-3e76fb54355e",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "da415da6-23d8-4789-a78f-97a62bdd323d",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "67653128-3398-45f8-bbd9-2d07ecf4ec79",
+      "result_id": "81ab4a06-f27d-41ee-8682-47e30fa10cae"
+    },
+    {
+      "claim_id": "43a2e531-0775-42aa-90ca-95c5b8d8eda4",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "8a1baf2f-98f9-4543-9508-2d9d10295ec6",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "e3355143-c6ef-4c1b-be0e-673644fddb84",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "b4c00185-1384-4e0f-9392-0464f41ccba8",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "ffc10127-ce01-4eef-ac8b-e456a9eeeb62",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "83ec0840-8de4-482c-9ac5-3e07303cf488",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "b1786bec-28ff-45c6-a2f1-089b4f9375f9",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "a2580552-9c9a-4fd9-90e0-3c76d836a25d",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "66d55f89-64ea-4bd9-aa49-71abb93fbf07",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "12c13b94-af47-4bcd-9e9a-29b7e5252cdf",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "7971948e-cd1a-402a-9f52-a7faa883e72c",
+      "result_id": "067166a1-21b9-4edb-bd85-ba2f74a5df8a"
+    },
+    {
+      "claim_id": "539c10db-23f1-4946-bf4e-07e7f0024691",
+      "result_id": "10270245-2393-4df8-9819-76707e9843f7"
+    },
+    {
+      "claim_id": "db1b4683-a7d0-47d1-9a15-fb1a0c34d969",
+      "result_id": "10270245-2393-4df8-9819-76707e9843f7"
+    },
+    {
+      "claim_id": "acd2d8b2-d9c9-479f-8904-9b6da27f3cd0",
+      "result_id": "10270245-2393-4df8-9819-76707e9843f7"
+    },
+    {
+      "claim_id": "d37e8efe-15d5-4e40-9e82-481e8ce6c0d1",
+      "result_id": "10270245-2393-4df8-9819-76707e9843f7"
+    },
+    {
+      "claim_id": "7eb2a9b3-36ac-4963-bcb7-dfcb594f283d",
+      "result_id": "8825c9f3-6a3b-4314-9b26-9bfcc9dbbaac"
+    },
+    {
+      "claim_id": "e304aee7-7fe3-477d-ab1d-45622738e1a6",
+      "result_id": "8825c9f3-6a3b-4314-9b26-9bfcc9dbbaac"
+    },
+    {
+      "claim_id": "b36a6870-75cf-4f20-9727-6953084a689b",
+      "result_id": "8825c9f3-6a3b-4314-9b26-9bfcc9dbbaac"
+    },
+    {
+      "claim_id": "9aa0f36e-b68b-476c-a35d-3d7f213d26a3",
+      "result_id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9"
+    },
+    {
+      "claim_id": "bf5302fe-9e7f-4eac-b939-182d2cc45c2f",
+      "result_id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9"
+    },
+    {
+      "claim_id": "9c9a7cec-ad6e-4bfe-9d7e-1ba784194e39",
+      "result_id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9"
+    },
+    {
+      "claim_id": "6e90bcd7-d6a2-4752-ae3f-479d149300f4",
+      "result_id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9"
+    },
+    {
+      "claim_id": "01fbe5fb-3dde-4f74-a1ef-82d71c53fca0",
+      "result_id": "dec83fba-4e51-45f3-bc2d-1f3e6cdd88c9"
+    },
+    {
+      "claim_id": "e5f2dae3-5dac-4019-bca4-b919573ed762",
+      "result_id": "8bb0155d-d3bc-4d97-b185-e6040542d247"
+    },
+    {
+      "claim_id": "9cf95c46-16c0-4844-ad45-da9d89f15f28",
+      "result_id": "8bb0155d-d3bc-4d97-b185-e6040542d247"
+    },
+    {
+      "claim_id": "b1c6cc5f-8760-463d-984b-c29e64fa2af8",
+      "result_id": "ee49d035-532e-40db-910d-14fdde85f2e3"
+    },
+    {
+      "claim_id": "4bb6f656-f017-40d8-a5e4-04c83300da17",
+      "result_id": "ee49d035-532e-40db-910d-14fdde85f2e3"
+    },
+    {
+      "claim_id": "527fb85d-0030-4ed5-9a3e-96179308969c",
+      "result_id": "ee49d035-532e-40db-910d-14fdde85f2e3"
+    },
+    {
+      "claim_id": "267ec361-cd2b-4bed-b64c-6c59b09b8323",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "58bb4d92-32b8-425d-be70-a7db89fded4e",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "b0125406-ad17-4b53-bb7d-e111d9f33b38",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "bb33a7fc-a271-4028-bacd-0ca834773a26",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "fa3147d4-f2ef-4883-aad8-4a0422ce8bac",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "f8308086-c322-4448-970e-fb64e25b4be9",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "939cb667-74de-4545-a630-d210456377bb",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "28f59abb-e980-430b-b6c9-26cce21e3b35",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "0369082f-06ff-4366-8592-5e8906909e59",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "bfdb4392-e394-4b3f-80dc-b73c73eb2a3a",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "2d411168-012f-4603-93ae-dade80522f21",
+      "result_id": "90df5acb-3f08-4c33-bbd3-ff608d08f9ee"
+    },
+    {
+      "claim_id": "3d8b5b87-13e7-4026-947c-3ae54b674cd0",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "948c8d29-9288-4f87-a741-95a758894d96",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "b71ffc63-f969-4225-b9b0-74dedd8bf446",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "346fead1-4e34-447d-b67a-609d4ca4ae24",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "2fd7fbc0-81cd-477f-b945-a70b6a51d571",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "d6e037cd-eed4-49e4-a453-654c202937bc",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "b0b16038-0f24-480a-8eb8-5ba97cae8685",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "a856da6e-7c4e-4b56-a9d4-0d6d0550c3c6",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "044965f3-6f98-4372-bb46-89a2cd1f8035",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "02f1a697-bb9e-4330-9ea8-6e94c3186c80",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "cd3a3a54-36cd-4301-ab0d-be673533f8ec",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "ced921ed-502f-4059-91b8-adc57b1d47b3",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "be101a59-dbac-4394-a461-c9412ba01117",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "6c0c0727-f1eb-48e2-afd3-e1f2f81233ae",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "c9513392-0e96-4df3-98de-63347f317082",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "700eabb3-02d7-4f62-bee8-44b141496f73",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "a2cb1494-ac25-4bce-b47e-85cb33932141",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    },
+    {
+      "claim_id": "16e0fdae-6ed3-499e-968a-5736fd9ff5cf",
+      "result_id": "df25963e-cb00-434f-bf50-0173e1fee239"
+    }
+  ],
+  "comparisons": []
+}

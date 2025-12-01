@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "E. coli were selected for faster migration through low viscosity agar, a process driven by both motility and growth. The experimental system involves chemotaxis through a porous agar matrix where the migrating front is driven by both growth and motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 establish the experimental system and are well-supported by the experimental design, citations to prior work, and the description of the selection procedure shown in Figure 1a. The mechanism is consistent with established knowledge of bacterial chemotaxis and growth in agar.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C69",
+      "C70"
+    ],
+    "result": "A trade-off between swimming speed and growth rate constrains the evolution of faster migration. Evolution in rich medium results in fast swimming and slow growth, while evolution in minimal medium results in slow swimming and fast growth. The evolved phenotypes lie near a Pareto frontier in phenotypic space, and the evolutionary trajectory depends on the environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C36-C37, C69-C70 collectively demonstrate the core finding of environment-dependent evolutionary trajectories constrained by a trade-off. This is strongly supported by the phenotypic measurements in Figure 3 and Figure 4, showing opposing changes in swimming speed and growth rate across media conditions. The Pareto frontier interpretation is supported by the reaction-diffusion model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "Selection on spatially structured populations results in more rapid adaptation for fast migration than growth in well-mixed conditions. Approximately 10-12 generations occurred per round in rich medium and <10 generations per round in minimal medium. Prolonged growth in well-mixed liquid medium resulted in minimal increases in migration rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C20 are supported by cell counting data and control experiments shown in Figure 1\u2014figure supplement 2. The comparison between structured and well-mixed selection demonstrates the importance of spatial structure for the observed adaptation. The generation estimates are based on direct measurements of cell numbers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C35"
+    ],
+    "result": "A reaction-diffusion model predicts that increases in run speed and growth rate have the largest impact on migration rate, while tumble frequency changes have only small effects (~10%). The model qualitatively recapitulates the experimentally observed increases in migration rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C35 are supported by numerical simulations shown in Figure 2 and Figure 2\u2014figure supplement 3. The model predictions are consistent with prior work (Wolfe and Berg, 1989) and qualitatively match experimental observations (Tables 3-4, Figure 4\u2014figure supplement 1). However, quantitative discrepancies exist between predicted and observed migration rates, which the authors acknowledge may be due to model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Run durations declined and tumble frequencies increased in both media conditions during evolution. Run speed increased ~50% in rich medium and decreased ~50% in minimal medium. These changes were reproducible across independent evolution experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are strongly supported by single-cell tracking data shown in Figure 3a-f and Figure 3\u2014figure supplement 3. The measurements are based on analysis of >280,000 run-tumble events from ~1500 individuals. The reproducibility across independent replicates strengthens the conclusions. The opposing trends in run speed between media conditions are particularly striking and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Growth rate declined ~10% in rich medium and increased ~3-fold in minimal medium during evolution. These changes were reproducible across independently evolved strains in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by growth rate measurements shown in Figure 3g-h and Figure 3\u2014figure supplement 3. The measurements are based on multiple replicate cultures and show statistically significant differences from founder strains. The reproducibility across independent evolution experiments strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C53"
+    ],
+    "result": "Parallel genomic evolution drives adaptation through different mutations in each condition. In rich medium, mutations in clpX (E185*) and an intergenic deletion fixed within ~5 rounds across all replicates. In minimal medium, mutations in galS fixed within 5 rounds across all replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, and C53 are supported by whole genome sequencing data shown in Figure 5 and Tables 5-12. The parallel evolution of the same mutations across independent replicates provides strong evidence for adaptive evolution. The sequencing was performed at high coverage and mutations were confirmed by Sanger sequencing where noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C72",
+      "C73"
+    ],
+    "result": "The trade-off in rich medium is mediated by antagonistic pleiotropy through the clpXE185* mutation, which increases run speed but decreases growth rate. ClpX is the specificity subunit of the ClpX-ClpP protease that targets FlhDC, the master regulator of flagellar biosynthesis. The mutation has a more subtle effect than complete loss of function. The intergenic deletion appears to be neutral.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C43, C46, C49-C52, C72-C73 are supported by genetic reconstruction experiments showing that the clpXE185* mutation alone recapitulates the phenotypic changes (Figure 4\u2014figure supplement 2). The comparison to knockout mutants demonstrates the mutation is not a simple loss of function. The molecular mechanism is consistent with prior knowledge of ClpX function and its role in regulating motility genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58",
+      "C60",
+      "C61"
+    ],
+    "result": "The trade-off in minimal medium is mediated by antagonistic pleiotropy through the galSL22R mutation, which increases growth rate ~2.5-fold but decreases swimming speed ~15%. The mutation occurs in the conserved DNA binding region of the GalS transcriptional repressor and is expected to alter expression of the gal regulon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C58, C60-C61 are supported by genetic reconstruction experiments showing that galSL22R alone drives the observed phenotypic changes (Figure 4b, Figure 4\u2014figure supplement 2). The mutation location in the DNA binding domain and the comparison to knockout mutants support the proposed mechanism. The phenotypic effects are statistically significant and consistent with antagonistic pleiotropy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "A quantitative genetic model shows that the direction of phenotypic evolution depends on the genetic variance in each trait. In rich medium, evolution is consistent with genetic variance in run speed \u2265 variance in growth rate. In minimal medium, evolution is consistent with \u22653-fold larger variance in growth rate compared to run speed. The capacity of mutations to alter traits depends on the environment, which qualitatively alters evolutionary trajectories along the Pareto frontier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 and C71 are supported by the quantitative genetic model presented in Figure 6 and related analysis. The model successfully predicts the observed directions of phenotypic evolution given different genetic variance structures. The interpretation that genetic capacity depends on environment is consistent with the intuition that mutations improving growth are more available in minimal than rich medium. However, the model relies on a linear approximation that works better for rich than minimal medium.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C84"
+    ],
+    "result": "The direction of phenotypic evolution can be predicted by determining where negative regulatory elements reside in genetic networks, and this may be more powerful than cataloging mutations alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C84 are presented as hypotheses in the Discussion section. While the observation that both key mutations affect negative regulators (C72-C73) supports this idea, the claims are speculative and would require additional experiments to test. The comparison to other studies (C83) showing different mutations along similar Pareto frontiers provides some support, but is not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "The evolved mutations appear to be more subtle than simple loss of function, since knockout mutants for both clpX and galS do not exhibit fast migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by experimental data comparing point mutations to knockout mutants. For clpX, the knockout shows very slow migration (s=0.0036 cm/h) compared to the E185* mutant (s=0.39 cm/h). For galS, the knockout shows no significant increase in migration rate. This demonstrates the mutations have more nuanced effects than complete loss of function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Comparison to prior experimental evolution studies shows that evolved phenotypes depend on whether selection occurs simultaneously or alternately on multiple traits, and whether selection occurs at defined spatial locations or through periodic removal of spatial structure. Despite similar Pareto frontiers, different mutations are observed across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C83 provide context by comparing results to prior studies (Yi and Dean 2016; van Ditmarsch et al. 2013; Deforet et al. 2014). The comparisons are supported by citations and help interpret the current findings. The observation that no evolution beyond the Pareto frontier occurred (C77) is supported by the data in Figure 4. The lack of shared mutations with Yi and Dean (C83) despite similar phenotypic trajectories supports the hypothesis about genetic lines of least resistance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The mechanism of the trade-off between growth rate and swimming speed has not been definitively determined. Possible mechanisms include over-expression of motility operons reducing growth, or changes in cell size affecting hydrodynamic drag. However, calculations suggest cell size changes alone cannot account for the observed swimming speed changes. Definitive characterization will require additional measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C89 acknowledge limitations in mechanistic understanding. C85 correctly states the mechanism is not determined. C86-C87 present plausible hypotheses supported by citations. C88 provides some evidence against the cell size hypothesis based on calculations in Appendix 1, but without direct cell size measurements this remains uncertain. C89 appropriately identifies future work needed. These claims are honest about limitations but do not provide definitive mechanistic insight.",
+    "result_type": "MINOR"
+  }
+]

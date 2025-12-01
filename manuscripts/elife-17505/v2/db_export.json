@@ -1,0 +1,1071 @@
+{
+  "submission": {
+    "id": "8d3f8de7-910b-4fa8-b7e1-4d5c4f5b39b2",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T20:29:20.168328Z",
+    "updated_at": "2025-11-30T20:29:20.168328Z"
+  },
+  "content": [
+    {
+      "id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "submission_id": "8d3f8de7-910b-4fa8-b7e1-4d5c4f5b39b2",
+      "content_type": "manuscript",
+      "content_text": "# Mapping transiently formed and sparsely populated conformations on a complex energy landscape\n\n## Authors\n\n- Yong Wang<sup>1</sup> ([ORCID: 0000-0001-9156-0377](https://orcid.org/0000-0001-9156-0377))\n- Elena Papaleo<sup>1</sup> ([ORCID: 0000-0002-7376-5894](https://orcid.org/0000-0002-7376-5894))\n- Kresten Lindorff-Larsen<sup>1</sup> ([ORCID: 0000-0002-4750-6039](https://orcid.org/0000-0002-4750-6039)) \u2020\n\n### Affiliations\n\n1. Structural Biology and NMR Laboratory, Linderstr\u00f8m-Lang Centre for Protein Science, Department of Biology University of Copenhagen Copenhagen Denmark\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetermining the structures, kinetics, thermodynamics and mechanisms that underlie conformational exchange processes in proteins remains extremely difficult. Only in favourable cases is it possible to provide atomic-level descriptions of sparsely populated and transiently formed alternative conformations. Here we benchmark the ability of enhanced-sampling molecular dynamics simulations to determine the free energy landscape of the L99A cavity mutant of T4 lysozyme. We find that the simulations capture key properties previously measured by NMR relaxation dispersion methods including the structure of a minor conformation, the kinetics and thermodynamics of conformational exchange, and the effect of mutations. We discover a new tunnel that involves the transient exposure towards the solvent of an internal cavity, and show it to be relevant for ligand escape. Together, our results provide a comprehensive view of the structural landscape of a protein, and point forward to studies of conformational exchange in systems that are less characterized experimentally.\n\n## Introduction\n\nProteins are dynamical entities whose ability to change shape often plays essential roles in their\u00a0function. From an experimental point of view, intra-basin dynamics is often described via conformational ensembles whereas larger scale (and often slower) motions are characterized as a\u00a0conformational exchange between distinct conformational states. The latter are often simplified as a two-site exchange process, $G\u21ccE$, between a highly populated ground (G) state, and a transiently populated minor (or \u2018excited\u2019, E) state. While the structure of the ground state may often be determined by conventional structural biology tools, it is very difficult to obtain atomic-level insight into minor conformations due to their transient nature and low populations. As these minor conformations may, however, be critical to protein functions, including protein folding, ligand binding, enzyme catalysis, and signal transduction (Mulder et al., 2001; Tang et al., 2007; Baldwin and Kay, 2009) it is important to be able to characterize them in detail. While it may in certain cases be possible to capture sparsely populated conformations in crystals under perturbed experimental conditions, or to examine their structures by analysis of electron density maps (Fraser et al., 2009), NMR spectroscopy provides unique opportunities to study the dynamical equilibrium between major and minor conformations (Baldwin and Kay, 2009; Sekhar and Kay, 2013) via e.g. chemical-exchange saturation transfer (Vallurupalli et al., 2012), Carr-Purcell-Meiboom-Gill (CPMG) relaxation dispersion (Hansen et al., 2008), or indirectly via paramagnetic relaxation enhancement (Tang et al., 2007) or residual dipolar coupling (Lukin et al., 2003) experiments. In favourable cases such experiments can provide not only thermodynamic and kinetic information (i.e. the population of G and E states and the rate of exchange between them), but also structural information in the form of chemical shifts (CS), that can be used to determine the structure of the transiently populated state (Sekhar and Kay, 2013).\n\nDespite the important developments in NMR described above, it remains very difficult to obtain structural models of minor conformations, and a substantial amount of experiments are required. Further, it is generally not possible to use such experiments to infer the mechanisms of interconversion, and to provide a more global description of the multi-state free energy landscape (Zhuravlev and Papoian, 2010; Wang et al., 2012). In the language of energy landscape theory (Onuchic et al., 1997), free energy basins and their depths control the population and stability of functionally distinct states, while the relative positions of basins and the inter-basin barrier heights determine the kinetics and mechanism of conformational exchange. As a complement to experiments, such functional landscapes can be explored by in silico techniques, such as molecular dynamics (MD) simulations, that may both be used to help interpret experimental data and provide new hypotheses for testing (Karplus and Lavery, 2014; Eaton and Mu\u00f1oz, 2014). Nevertheless, the general applicability of simulation methods may be limited by both the accuracy of the physical models (i.e. force fields) used to describe the free energy landscape and our ability to sample these efficiently by computation. We therefore set out to benchmark the ability of simulations to determine conformational free energy landscapes.\n\nThe L99A variant of lysozyme from the T4 bacteriophage (T4L) has proven an excellent model system to understand protein structure and dynamics. Originally designed a \u2018cavity creating\u2019 variant to probe protein stability (Eriksson et al., 1992b) it was also demonstrated that the large (150 \u00c53) internal cavity can bind hydrophobic ligands such as benzene (Eriksson et al., 1992a; Liu et al., 2009). It was early established that the cavity is inaccessible to solvent in the ground state, but that ligand binding is rapid (Feher et al., 1996), suggesting protein dynamics to play a potential role in the binding process. This posts a long-standing question of how the ligands gain access to the buried cavity (Mulder et al., 2000; L\u00f3pez et al., 2013; Merski et al., 2015; Miao et al., 2015).\n\nNMR relaxation dispersion measurements of L99A T4L demonstrated that this variant, but not the wild type protein, displayed conformational exchange on the millisecond timescale between the ground state and a minor state populated at around 3% (at room temperature) (Mulder et al., 2001). Such small populations generally lead only to minimal perturbations of ensemble-averaged experimental quantities making structural studies difficult, and hence it was difficult to probe whether the exchange process indeed allowed for ligand access to the cavity. A series of additional relaxation dispersion experiments, however, made it possible to obtain backbone and side chain CSs of the minor E state of L99A (Mulder et al., 2002; Bouvignies et al., 2011). The backbone CS data were subsequently used as input to a CS-based structure refinement protocol (CS-ROSETTA) to produce a structural model of the E state (ER\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A; Figure 1) of the L99A mutant (Bouvignies et al., 2011). This model was based in part on the crystal structure of the ground state of L99A (referred to in what follows as GX\u2062r\u2062a\u2062y), but perturbing the structure in regions that the experiments demonstrated to undergo conformational change in a way so that the final model (ER\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A) agrees with experiments. The structure was further validated by creating and solving the structure of a triple mutant variant that inverts the populations of the G and E states. The ER\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A structure revealed substantial local rearrangements in T4L L99A, in particular near the cavity which gets filled by the side chain of a phenylalanine at position 114 (F114). Because the cavity is filled and solvent inaccessible in the E-state, the structure did, however, not reveal how ligands might access the cavity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig1-v2.jpg)\n\n**Figure 1.:** The X-ray structure of the G state ($G_{X\u2062r\u2062a\u2062y}$; PDB ID code 3DMV) has a large internal cavity within the core of the C-terminal domain that is able to bind hydrophobic ligands. The structure of the E state ($E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$; PDB ID code 2LC9) was previously determined by CS-ROSETTA using chemical shifts. The G and E states are overall similar, apart from the region surrounding the internal cavity. Comparison of the two structures revealed two remarkable conformational changes from G to E: helix F (denoted as $H_{F}$) rotates and fuses with helix G ($H_{G}$) into a longer helix, and the side chain of phenylalanine at position 114 ($F_{114}$) rotates so as to occupy part of the cavity. As the cavity is inaccessible in both the $G_{X\u2062r\u2062a\u2062y}$ and $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structures it has been hypothesized that ligand entry occurs via a third \u2018cavity open\u2019 state (Merski et al., 2015).\n\nIn an attempt to benchmark the ability of simulations to map conformational free energy landscapes, we have here employed a series of in silico experiments designed to probe the structure and dynamics of L99A T4L and have compared the results to NMR measurements. We used enhanced-sampling MD simulations in explicit solvent and with state-of-the-art force fields to map the free-energy landscape including the exchange between the major and minor conformations of the protein. We used a series of recently developed metadynamics methods (Laio and Parrinello, 2002) to sample the conformational exchange process and associated structure and thermodynamics, as well as to determine the kinetics and mechanisms of exchange. We obtained additional insight into the structural dynamics of the E state using simulations that employed the experimental CSs as replica-averaged restraints. Our results provide a coherent picture of the conformational dynamics in L99A and extend the insights obtained from recent simulations of a triple mutant of T4L (Vallurupalli et al., 2016), by providing new information\u00a0about the mechanisms of exchange and the transient exposure of the internal cavity. Together with previous results for Cyclophilin A (Papaleo et al., 2014) the results described here reiterate how simulation methods have now reached a stage where they can be used to study slow, conformational exchange processes such as those probed by NMR relaxation dispersion even in cases where less information is available from experiments.\n\n## Results and discussion\n\n### Mapping the free-energy landscape\n\nAs the average lifetime of the G and E states are on the order of 20\u201350\u00a0ms and 1\u00a0ms, respectively (Mulder et al., 2001, 2002; Bouvignies et al., 2011), direct and reversible sampling of the G-E transition at equilibrium would be extremely demanding computationally. Indeed, a recent set of simulations of a triple mutant of T4L, which has a substantially faster kinetics, was able only to observe spontaneous transitions in one direction (Vallurupalli et al., 2016). We therefore resorted to a set of flexible and efficient enhanced sampling methods, collectively known as \u2018metadynamics\u2019 (Laio and Parrinello, 2002), that have previously been used in a wide range of applications. In metadynamics simulations, a time-dependent bias is continuously added to the energy surface along a small number of user-defined collective variables (CVs). In this way, sampling is enhanced to reach new regions of conformational space and at the same time allows one to reconstruct the (Boltzmann) free-energy surface. The success of the approach hinges on the ability to find a set of CVs that together describe the slowly varying degrees of freedom and map the important regions of the conformational landscape.\n\nWe first performed a set of metadynamics simulations in the well-tempered ensemble (Barducci et al., 2008) using so-called path CVs ($S_{p\u2062a\u2062t\u2062h}$ and $Z_{p\u2062a\u2062t\u2062h}$) (Branduardi et al., 2007; Saladino et al., 2012) with the aid of recently developed adaptive hills to aid in the\u00a0convergence of the sampling (Branduardi et al., 2012; Dama et al., 2014) (see details in Appendix and Appendix 1\u2014table 1). In short, the $S_{p\u2062a\u2062t\u2062h}$ variable describes the progress of the conformational transition between the $G_{X\u2062r\u2062a\u2062y}$ and $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structures with additional \u2018interpolation\u2019 using an optimal \u2018reference\u2019 path in a simplified model (see details in Appendix and Figure 2\u2014figure supplement 1), while $Z_{p\u2062a\u2062t\u2062h}$ measures the distance to this reference path. In this way, the two-dimensional free energy landscape along $S_{p\u2062a\u2062t\u2062h}$ and $Z_{p\u2062a\u2062t\u2062h}$ provides a useful description on conformational exchange between ground and excited states that does not assume that the initial reference path describes perfectly the actual path(s) taken.\n\nProjecting the sampled free energy landscape along Sp\u2062a\u2062t\u2062h (upper panel of Figure 2) reveals a deep, narrow free energy basin around Sp\u2062a\u2062t\u2062h=0.2 (labeled by red sphere and corresponding to the G state), and a broader, shallow free energy basin with Sp\u2062a\u2062t\u2062h ranging from 0.6 to 0.8 (labeled by blue sphere and corresponding to the E state). Additional information is obtained from the two-dimensional landscape (shown as a negative free energy landscape, -F(Sp\u2062a\u2062t\u2062h, Zp\u2062a\u2062t\u2062h), in the lower panel of Figure 2) which reveals a complex and rough landscape with multiple free energy minima (corresponding to mountains in the negative free energy landscape). Subsequently, structural inspection of these minima identified that the conformations in the basins around Sp\u2062a\u2062t\u2062h=0.2 and Sp\u2062a\u2062t\u2062h=0.75 correspond to the structures of GX\u2062r\u2062a\u2062y and ER\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig2-v2.jpg)\n\n**Figure 2.:** In the upper panel, we show the projection of the free energy along $S_{p\u2062a\u2062t\u2062h}$, representing the Boltzmann distribution of the force field employed along the reference path. Differently colored lines represent the free energy profiles obtained at different stages of the simulation, whose total length was 667ns. As the simulation progressed, we rapidly found two distinct free energy basins, and the free energy profile was essentially constant during the last 100 ns of the simulation. Free energy basins around $S_{p\u2062a\u2062t\u2062h}=0.2$ and $S_{p\u2062a\u2062t\u2062h}=0.75$ correspond to the previously determined structures of the G- and E-state, respectively (labelled by red and blue dots, respectively). As discussed further below, the E-state is relatively broad and is here indicated by the thick, dark line with $S_{p\u2062a\u2062t\u2062h}$ ranging from 0.55 to 0.83. In the lower panel, we show the three-dimensional negative free energy landscape, -F($S_{p\u2062a\u2062t\u2062h}$, $Z_{p\u2062a\u2062t\u2062h}$), that reveals a more complex and rough landscape with multiple free energy minima, corresponding to mountains in the negative free energy landscape. An intermediate-state basin around $S_{p\u2062a\u2062t\u2062h}=0.36$ and $Z_{path}=0.05$\u00a0nm2, which we denote $I_{0.36}$, is labeled by a yellow dot.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The plot reveals a \u2018gullwing\u2019 shape of the matrix of pairwise RMSDs of the frames of the reference path, indicating that frames along the reference path are approximately equidistant. We used 31 structures to discretize the path.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The two-dimensional free energy surface F($S_{p\u2062a\u2062t\u2062h}$,$Z_{p\u2062a\u2062t\u2062h}$) of L99A sampled by a 667 ns PathMetaD simulation. (B) The two-dimensional free energy surface F($S_{p\u2062a\u2062t\u2062h}$,$Z_{p\u2062a\u2062t\u2062h}$) of the triple mutant sampled by a 961 ns PathMetaD simulation. (C) The free energy profiles as a function of $S_{p\u2062a\u2062t\u2062h}$ of both L99A (black) and the triple mutant (blue).\n\nThe broad nature of the free energy landscape in the region of the minor state is consistent with the observation that our MD simulations initiated from $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ display significant conformational fluctuations (RUN20 and RUN22 in Appendix 1\u2014table 1). Furthermore, our metadynamics simulations revealed multiple local free energy minima adjacent to the $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ basin, together composing a wider basin (highlighted by the black curve in Figure 2). Thus, these simulations suggest that the E state displays substantial conformational dynamics, a result corroborated by simulations that have been biased by the experimental data (see section \u2018Simulations of the minor state using chemical shift restraints\u2019).\n\nIn addition to free-energy minima corresponding to the $G$ and $E$ states, we also found a free energy minimum around $S_{p\u2062a\u2062t\u2062h}=0.36$ and $Z_{path}=0.05$\u00a0nm2 (denoted as $I_{0.36}$ and labeled by a\u00a0yellow sphere in Figure 2) that is located between the G and E states on the one-dimensional free-energy surface. We note, however, that it is difficult to infer dominant reaction pathways from such free energy surfaces, and so from this data alone, we cannot determine whether $I_{0.36}$ occurs as an intermediate in G-E conformational transitions. Indeed, it appears from the two-dimensional surface that there exist multiple possible pathways between G and E, as illustrated by\u00a0white lines along the mountain ridges of the negative free energy landscape in the lower panel of Figure 2. (We also explored the mechanism of exchange by reconnaissance metadynamics simulations (Tribello et al., 2011), the results of which are described and discussed further below.)\n\n### Effect of mutations on the free energy landscape\n\nBased on the encouraging results above for L99A T4L, we examined whether simulations could also capture the effect of mutations on the free energy landscape. Using Rosetta energy calculations on the $G_{X\u2062r\u2062a\u2062y}$ and $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structures it was previously demonstrated that two additional mutations, G113A and R119P, when introduced into the L99A background, cause an inversion in the populations of the two states (Bouvignies et al., 2011; Vallurupalli et al., 2016). Indeed, NMR data demonstrated that the triple mutant roughly inverts the populations of the two states so that the minor state structure (of L99A) now dominates (with a 96% population) the triple mutant. We repeated the calculations described above for L99A also for the triple mutant. Remarkably, the free energy profile of the triple mutant obtained using metadynamics simulations reveals a free energy landscape with a dominant minimum around $S_{p\u2062a\u2062t\u2062h}$=0.7 and a higher energy conformation around $S_{p\u2062a\u2062t\u2062h}$=0.15 (Figure 2\u2014figure supplement 2). Thus, like our previous observations for a \u2018state-inverting mutation\u2019 in Cyclophilin A (Papaleo et al., 2014), we find here that the force field and the\u00a0sampling method are sufficiently accurate to capture the effect of point mutations on the free energy landscape. Further, we note that the barrier height for the conformational exchange in the triple mutant is very similar to the value recently estimated using a completely orthogonal approach (Vallurupalli et al., 2016). Finally, we attempted to determine the free energy landscape of the L99A,G113A double mutant, which has roughly equal populations of the two states\u00a0(Bouvignies et al., 2011), but this simulation did not converge on the simulation timescales at which the two other variants converged.\n\n### Calculating conformational free energies\n\nWith a free-energy surface in hand and a method to distinguish G- and E-state conformations, we calculated the free energy difference, \u0394\u2062G, between the two conformational states, and compared with the experimental values. We divided the global conformational space into two coarse-grained states by defining the separatrix at Sp\u2062a\u2062t\u2062h=0.46 which corresponds to a saddle point on the free energy surface, on the basis of the observations above that the E state is relatively broad. Although a stricter definition of how to divide the reaction coordinate certainly helps the precise calculation, here we just used this simple definition to make an approximate estimation of the free energy difference. Further, since the barrier region is sparsely populated, the exact point of division has only a modest effect on the results. By summing the populations on the two sides of the barrier we calculated \u0394\u2062G as a function of the simulation time (Figure 3). Initially during the simulations the free energy profile varies substantially (Figure 2) and the free energy difference equally fluctuates. As the simulations converge, however, the free energy difference between the two states stabilize to a value at approximately \u0394\u2062G=3.5 kcal mol\u22121 (Figure 3, black line). This value can be compared to the value of 2.1 kcal mol\u22121 obtained from NMR relaxation dispersion experiments (Mulder et al., 2001), revealing reasonably good, albeit not exact, agreement with the experiments.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig3-v2.jpg)\n\n**Figure 3.:** We divided the global conformational space into two coarse-grained states by defining the separatrix at $S_{p\u2062a\u2062t\u2062h}=0.46$ (0.48 for the triple mutant) in the free energy profile (Figure 2\u2014figure supplement 2) which corresponds to a saddle point of the free energy surface, and then estimated the free energy differences between the two states ($\u0394\u2062G$) from their populations. The time evolution of $\u0394\u2062G$ of L99A (upper time axis) and the triple mutant (lower axis) are shown as black and blue curves, respectively. The experimentally determined values (2.1 kcal mol\u22121 for L99A and \u22121.9 kcal mol\u22121 for the triple mutant) are shown as yellow lines.\n\nSimilar calculations using the simulations of the triple mutant also converge, in this case to about \u22121.6 kcal mol\u22121 (Figure 3, blue line), in excellent agreement with the experimental measurement (\u22121.9 kcal mol\u22121) (Bouvignies et al., 2011). Combining these two free energy differences we find that the G113A, R119P mutations cause a shift in the G-E free energy of 5.1 kcal mol\u22121 in simulations compared to 4.0 kcal mol\u22121 obtained by experiments. Thus, we find that the simulations with reasonably high accuracy are able to capture the thermodynamics of the conformational exchange between the two states. While the generality of such observations will need to be established by additional studies, we note here that comparably good agreement was obtained when estimating the effect of the S99T mutations in Cyclophilin A (Papaleo et al., 2014).\n\nIn our previous work on Cyclophilin A (Papaleo et al., 2014) we sampled the conformational exchange using parallel-tempering metadynamics simulations (Bonomi and Parrinello, 2010) using four CVs that we chose to describe the structural differences between the G and E states in that protein. We note here that we also tried a similar approach here but unfortunately failed to observe a complete G-to-E transition, even in a relatively long trajectory of about 1\u00a0\u03bcs per replica (CVs summarized in Appendix 1\u2014table 2, parameters shown in Appendix 1\u2014table 1). This negative result is likely due to the CVs chosen did not fully capture the relevant, slowly changing degrees of freedom, thus giving rise\u00a0to insufficient sampling even with the use of a parallel tempering scheme.\n\n### Calculating the rates of conformational exchange\n\nEnhanced-sampling simulations such as those described above provide an effective means of mapping the free-energy landscape and hence the structural and thermodynamic aspects of conformational exchange. While the same free-energy landscape also determines the kinetics and mechanisms of exchange it may be more difficult to extract this information from e.g. path-CV-based metadynamics (PathMetaD) simulations. To examine how well simulations can also be used to determine the rates of the G-to-E transitions, quantities that can also be measured by NMR, we used the recently developed \u2018infrequent metadynamics\u2019 method (InMetaD, see details in Appendix) (Tiwary and Parrinello, 2013; Salvalaglio et al., 2014; Tiwary et al., 2015a; 2015b). Briefly described, the approach calculates first-passage times for the conformational change in the presence of a slowly-added bias along a few CVs, here chosen as the path CVs also used to map the landscape. By adding the bias slowly (and with lower amplitude) we aim to avoid biasing the transition-state region and hence to increase the rate only by lowering the barrier height; in this way it is possible to correct the first-passage times for the bias introduced.\n\nUsing this approach on L99A T4L we collected 42 and 36 independent trajectories with state-to-state transition starting from either the G state or E state, respectively (Appendix 1\u2014figure 1 and Appendix 1\u2014figure 2 ). The (unbiased) rates that we calculated (Table 1 and Appendix 1\u2014figure 3) are in good agreement with the experimental rates (Mulder et al., 2001; Bouvignies et al., 2011) (within a factor of 10), corresponding to an average error of the barrier height of \u223c1 kcal mol\u22121. We also performed similar calculations for the \u2018population-inverting\u2019 triple mutant, where we collected 30 transitions (15 for each direction) using InMetaD simulations. As for L99A, we also here find similarly good agreement with experimental measurements\u00a0(Vallurupalli et al., 2016) (Table 1 and Appendix 1\u2014figure 4). We estimated the reliability of this computational approach using a Kolmogorov-Smirnov test to examine whether the first-passage times conform to the expected Poisson distribution (Salvalaglio et al., 2014), and indeed the results of this analysis suggest good agreement (Table 1, Appendix 1\u2014figure 5 and Appendix 1\u2014figure 6).\n\n**Table 1.**\n Free energy differences and rates of conformational exchange.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>\u03c4G\u2192E (ms)</th>\n      <th>\u03c4E\u2192G (ms)</th>\n      <th>\u0394\u2062G (kcal mol\u22121)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"4\">L99A</td>\n    </tr>\n    <tr>\n      <td>NMR</td>\n      <td>20</td>\n      <td>0.7</td>\n      <td>2.1</td>\n    </tr>\n    <tr>\n      <td>InMetaD</td>\n      <td>175 \u00b1 56</td>\n      <td>1.4 \u00b1 0.6</td>\n      <td>2.9 \u00b1 0.5</td>\n    </tr>\n    <tr>\n      <td>PathMetaD</td>\n      <td></td>\n      <td></td>\n      <td>3.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"4\">L99A/G113A/R119P</td>\n    </tr>\n    <tr>\n      <td>NMR</td>\n      <td>0.2</td>\n      <td>4</td>\n      <td>-1.9</td>\n    </tr>\n    <tr>\n      <td>InMetaD</td>\n      <td>2.0 \u00b1 1.7</td>\n      <td>14.3 \u00b1 8.3</td>\n      <td>-1.2 \u00b1 1.1</td>\n    </tr>\n    <tr>\n      <td>PathMetaD</td>\n      <td></td>\n      <td></td>\n      <td>-1.6</td>\n    </tr>\n  </tbody>\n</table>\n\nThe ability to calculate forward and backward rates between $G$ and $E$ provided us with an alternative and independent means to estimate the free energy difference between the two states (Table 1), and to test the two-state assumption used in the analysis of the experimental NMR data. We therefore calculated the free energy difference from the ratio of the forward and backward reaction rates. The values obtained (2.9$\u00b1 $0.5 kcal mol\u22121 and \u22121.2$\u00b1 $1.1 kcal mol\u22121 for L99A and the triple mutant, respectively) are close both to the values obtained above from the equilibrium free energy landscape (3.5 kcal mol\u22121 and \u22121.6 kcal mol\u22121) and experiment (2.1 kcal mol\u22121 and \u22121.9 kcal mol\u22121). In particular, the relatively close agreement between the two independent computational estimates lends credibility both to the free energy landscape and the approach used to estimate the kinetics. The observation that both values for L99A are slightly larger than the experimental number suggests that this discrepancy (ca. 1 kcal mol\u22121) can likely be explained by remaining force field deficiencies rather than lack of convergence or the computational approach used.\n\n### Simulations of the minor state using chemical shift restraints\n\nWhile the simulations described above used available structural information of G and E states to guide and enhance conformational sampling, the resulting free energy surfaces represent the Boltzmann distributions of the force field and are not otherwise biased by experimental data. To further refine the structural model of the E state we used the relaxation-dispersion derived CSs that were used to determine of $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ [BMRB (Ulrich et al., 2008) entry 17604] as input to restrained MD simulations. In these simulations, we used the experimental data as a system-specific force field correction to derive an ensemble of conformations that is compatible both with the force field and the CSs. Such replica-averaged simulations use the experimental data in a minimally-biased way that is consistent with the Principle of Maximum Entropy (Pitera and Chodera, 2012; Roux and Weare, 2013; Cavalli et al., 2013; Boomsma et al., 2014).\n\nWe performed CS-restrained MD simulations of the $E$ state of L99A averaging the CSs over four replicas. Although the number of replicas is a free parameter, which should in principle be chosen as large as possible, it has been demonstrated that four replicas are sufficient to reproduce the structural heterogeneity accurately (Camilloni et al., 2013) without excessive computational requirements. The agreement between calculated and experimental CSs was quantified by the root-mean-square deviation between the two (Figure 4\u2014figure supplement 1). In particular, it is important not to bias the agreement beyond what can be expected based on the inherent accuracy of the CS prediction methods (we assumed that the error in the experimental CS measurement, even for the $E$ state, is negligible in comparison). Thus, we compared the experimental CS values of the minor state with the values calculated using the $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structure as input to CamShift (Kohlhoff et al., 2009), Sparta+\u00a0(Shen and Bax, 2010) and ShiftX\u00a0(Neal et al., 2003) (Figure 4\u2014figure supplement 2). The average RMSDs for five measured nuclei ($H_{\\alpha}$, $H_{N}$, $N$, $C^{\u2032}$ and $C_{\\alpha}$) are 0.2, 0.4, 2.0, 0.8 and 1.1ppm, respectively (Appendix 1\u2014table 1), which are close to the inherent uncertainty of the CS back-calculation, indicating that the level of agreement enforced is reasonable.\n\nTo compare the results of these experimentally-biased simulations with the experimentally-unbiased simulations described above, we projected the CS-restrained MD trajectories onto either one (Figure 4) or both (Figure 4\u2014figure supplement 3) of the Sp\u2062a\u2062t\u2062h and Zp\u2062a\u2062t\u2062h variables used in the path-variable-driven simulations (PathMetaD). The distribution of conformations obtained using the E-state CSs as restraints is in good agreement with the broad free energy profile of the E-state obtained in the metadynamics simulations that did not include any experimental restraints. To ensure that this observation is not merely an artifact of both simulations using the same force field (CHARMM22*), we repeated the biased simulations using the Amber ff99SB*-ILDN force field and obtained comparable results. We also verified that the conclusions obtained are reasonably robust to other variables such as the number of replicas and the strength of restraints (Figure 4\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-v2.jpg)\n\n**Figure 4.:** We determined an ensemble of conformations corresponding to the E-state of L99A T4L using replica-averaged CSs as a bias term in our simulations. The distribution of conformations was projected onto the $S_{p\u2062a\u2062t\u2062h}$ variable (orange) and is compared to the free energy profile obtained above from the metadynamics simulations without experimental biases (black line). To ensure that the similar distribution of conformations is not an artifact of using the same force field (CHARMM22*) in both simulations, we repeated the CS-biased simulations using also the Amber ff99SB*-ILDN force field (magenta) and obtained similar results. Finally, we used the ground state CSs of a triple mutant of T4L, which was designed to sample the minor conformation (of L99A) as its major conformation, and also obtained a similar distribution along the $S_{p\u2062a\u2062t\u2062h}$ variable (cyan).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We calculated the RMSD between the experimental CSs and the values back-calculated by CamShift (Kohlhoff et al., 2009) as implemented in ALMOST (Fu et al., 2014). We projected a 250\u00a0ns MD trajectory sampled using the CHARMM22* force field (RUN3 in Appendix 1\u2014table 1) onto the RMSDs. The average RMSDs for the five measured nuclei ($H_{\\alpha}$, $H_{N}$, $N$, $C^{\u2032}$ and $C_{\\alpha}$) are 0.23\u00a0ppm, 0.38\u00a0ppm, 1.97\u00a0ppm, 0.83\u00a0ppm and 1.06\u00a0ppm, respectively (Appendix 1\u2014table 2), which are close to the inherent uncertainty of the chemical shift calculation (Figure 4\u2014figure supplement 2). This indicates the simulation yielded an ensemble in good agreement with experiments.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Using $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ as the reference structure, we calculated the chemical shifts using different algorithms and compared the correlation coefficients and RMSD between them.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** The chemical shifts of the E state of L99A (BMRB 17604) were used. (A) The simulation with CHARMM22* force field. (B) The simulation with Amber ff99SB*-ILDN force field.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (A) N\u00a0=\u00a04, $\u03f5_{CS}=24$ KJ \u00b7 mol\u22121. (B) N\u00a0=\u00a02, $\u03f5_{CS}=24$ KJ \u00b7 mol\u22121. (C) N\u00a0=\u00a02, $\u03f5_{CS}=12$ KJ \u00b7 mol\u22121. N refers to the number of replicas that the CS values are averaged over. The CHARMM22* force field was used in these simulations. The results also support the conclusion that the conformational space of the minor (E) state covers a relatively wide set of structures including the $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structure.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Chemical shift restraints were from BMRB 17,603 and CHARMM22* force field was used.\n\nAs a final and independent test of the structural ensemble of the minor conformation of L99A we used the ground state CSs of the triple mutant (BMRB entry 17603), which corresponds structurally to the E state of L99A, as restraints in replica-averaged CS-biased simulations (Figure 4\u2014figure supplement 5). Although not fully converged, these simulations also cover roughly the same region of conformational space when projected along $S_{p\u2062a\u2062t\u2062h}$ (Figure 4).\n\nThus, together our different simulations, which employ different force fields, are either unbiased or biased by experimental data, and use either dispersion-derived (L99A) or directly obtained (triple mutant) CS all provide a consistent view of the minor E-state conformation of L99A. We also note that the CS-derived ensembles of the E-state support the way we divided the G- and E-states when calculating conformational free energy differences between the two states.\n\n### Mechanisms of conformational exchange\n\nHaving validated that our simulations can provide a relatively accurate description of the structure, thermodynamics and kinetics of conformational exchange we proceeded to explore the molecular mechanism of the G-to-E transitions. We used the recently developed reconnaissance metadynamics approach (Tribello et al., 2010), that was specifically designed to enhance sampling of complicated conformational transitions and has been employed to explore the conformational dynamics of complex systems (Tribello et al., 2011; S\u00f6derhjelm et al., 2012).\n\nWe performed three independent reconnaissance metadynamics simulations of L99A starting from the G state (summarized in Appendix 1\u2014table 1) using the same geometry-based CVs that we also used in the parallel-tempering simulations described above. We observed complete conformational\u00a0transitions from the G to E state in the reconnaissance simulations in as little as tens of nanoseconds of simulations (Figure 5\u2014figure supplement 1)\u2014 at least 1\u20132 orders of magnitude faster than standard metadynamics. These G-to-E and E-to-G transitions, although biased by the CVs, provide insight into the potential mechanisms of exchange. To ease comparison with the equilibrium sampling of the free energy landscape we projected these transitions onto the free energy surface F(Sp\u2062a\u2062t\u2062h,Zp\u2062a\u2062t\u2062h) (Figure 5). The results reveal multiple possible routes connecting the G and E states, consistent with the multiple gullies found on the free energy surface (Figure 2). The trajectories also suggested that the G-to-E interconversion can either take place directly without passing the I0.36 state or indirectly via it.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig5-v2.jpg)\n\n**Figure 5.:** Trajectories labeled as Trj1 (magenta), Trj2 (blue) and Trj3 (green and orange) are from the simulations RUN10, RUN11 and RUN12 (Appendix 1\u2014table 1), respectively. There are multiple routes connecting the G and E states, whose interconversions can take place directly without passing the $I_{0.36}$ state or indirectly via it.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The state-specific fraction of contacts (Wang et al., 2012), and , were employed to monitor the conformational transitions to G and E state, respectively. Trajectories Trj1, Trj2 and Trj3 are from the simulations RUN10, RUN11 and RUN12 (Appendix 1\u2014table 1), respectively.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Trajectories Trj1 (magenta), Trj2 (blue) and Trj3 (green and orange) are from the simulations RUN10, RUN11 and RUN12 (Appendix 1\u2014table 2), respectively. The steepest descent path (SDP, black) used to define the initial path in PathMetaD is also shown as a reference. To measure the distance between helix F and helix I, and between F144 and helix D, we employed order parameters $R_{H\u2062F-H\u2062I}$ and $R_{F\u2062114-H\u2062D}$. is defined as the $C_{\\alpha}$ distance between E108 and R137, while $R_{F\u2062114-H\u2062D}$ is defined as the distance between the $C_{\\delta\u20624}$ atom of F114 and the $C_{\\alpha}$ atom of Y88.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The figure suggests in the direct $G\u21cbE$ transitions (Trj1 and first half of Trj3) F114 can rotate its side chain inside the protein core. In contrast, in the $G\u21cbI_{0.36}\u21cbE$ route (Trj2 and second half of Trj3) the side chain of F114, which occupies the cavity in the E state, gets transiently exposed to solvent during the transition.\n\nIn the context of coarse-grained kinetic models the results above would suggest at least two possible mechanisms operate in parallel: G\u21ccE or G\u21ccI0.36\u21ccE. Further inspection of the structures along these different kinetics routes (see the trajectories of other order parameters in Figure 5\u2014figure supplement 2 and Videos 1\u20134) suggested an interesting distinction between the two. In the G\u21ccI0.36\u21ccE route the side chain of F114, which occupies the cavity in the E state, gets transiently exposed to solvent during the transition, whereas in the direct G\u21ccE transitions F114 can rotate its side chain inside the protein core (see also the solvent accessible surface area calculation of F114 in Figure 5\u2014figure supplement 3).\n\n![Video 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-media1.mp4.jpg)\n\n**Video 1.:** The backbone of L99A is represented by white ribbons, Helices E, F and G are highlighted in blue, while F114 is represented by red spheres.\n\n![Video 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-media2.mp4.jpg)\n\n**Video 2.:** The backbone of L99A is represented by white ribbons, Helices E, F and G are highlighted in blue, while F114 is represented by red spheres.\n\n![Video 3.](https://cdn.elifesciences.org/articles/17505/elife-17505-media3.mp4.jpg)\n\n**Video 3.:** The backbone of L99A is represented by white ribbons, Helices E, F and G are highlighted in blue, while F114 is represented by red spheres.\n\n![Video 4.](https://cdn.elifesciences.org/articles/17505/elife-17505-media4.mp4.jpg)\n\n**Video 4.:** The backbone of L99A is represented by white ribbons, Helices E, F and G are highlighted in blue, while F114 is represented by red spheres.\n\n### A potential pathway for ligand binding and escape\n\nAs the internal cavity in L99A T4L remains buried in both the G and E states (and indeed occupied by F114 in the E state) it remains unclear how ligands access this internal cavity and how rapid binding and release is achieved. Visual inspection of our trajectories and solvent-accessible surface area analysis revealed structures with transient exposure of the internal cavity towards the solvent. The structures were mostly found in a region of conformational space that mapped onto the I0.36 basin (Figure 2), and the events of that basin mostly took place between 430\u00a0ns and 447\u00a0ns (see Video 5). Thus, we mapped these structures to the free energy surface (Figure 6\u2014figure supplement 1) and analysed them. Overall, the structure is more similar to the G- than E-state, though is more loosely packed. The similarity to the G-state is compatible with rapid binding and position of F114 in this state.\n\n![Video 5.](https://cdn.elifesciences.org/articles/17505/elife-17505-media5.mp4.jpg)\n\n**Video 5.:** The figure shows the time evolution of the free energy surface as a function of $S_{p\u2062a\u2062t\u2062h}$ and $Z_{p\u2062a\u2062t\u2062h}$ sampled in a 667 ns PathMetaD simulation of L99A.\n\nWe used CAVER3 (Chovancova et al., 2012) (see parameters in Appendix 1\u2014table 4) to analyse the structures and found multiple tunnels connecting the cavity with protein surface (Figure 6\u2014figure supplement 1 and 2). The tunnels are relatively narrow with the typical radius of the bottleneck (defined as the narrowest part of a given tunnel) between \u223c1\u00a0\u00c5\u00a0\u2212\u00a0\u223c2\u00a0\u00c5. We used CAVER Analyst1.0 (Kozlikova et al., 2014) (see details in Appendix and parameters in Appendix 1\u2014table 4) to separate the tunnels into different clusters (Figure 6\u2014figure supplement 3 and Appendix 1\u2014table 5) with the dominant cluster (denoted tunnel#\u20621) having a entrance located at the groove between HF and HI. A typical representative structure of I0.36 is shown in Figure 6A. The radii along the structures in cluster #\u20621 vary, but share an overall shape (Figure 6\u2014figure supplement 1), and we find that the maximal bottleneck radius is \u223c2.5\u2009\u00c5, the average bottleneck radius is \u223c1.3\u2009\u00c5, and the average length \u223c11.2\u2009\u00c5.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig6-v2.jpg)\n\n**Figure 6.:** (A) We here highlight the most populated tunnel structure (tunnel$#\u20621$), that has an entrance located at the groove between helix F ($H_{F}$) and helix I ($H_{I}$). Helices E, F and G (blue) and F114 (red) are highlighted. (B) The panel shows a typical path of benzene (magenta) escaping from the cavity of L99A, as seen in ABMD simulations, via a tunnel formed in the same region as tunnel #1 (see also Video 6).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** A transiently formed tunnel from the solvent to the cavity forms in the $I_{0.36}$ state.(A) Typical structures from the $I_{0.36}$ state sampled in the simulation (between 430\u00a0ns and 447\u00a0ns) are mapped onto the free energy surface, and represented by yellow points. (B) The cavity-related regions (helix E, F and G) are coloured in blue, while F114 is coloured in red. F114 tends to be partially solvent exposed in $I_{0.36}$, resulting in the internal cavity to be open. The tunnel$#\u20621$ connecting the internal cavity and protein surface is coloured in yellow, and has a peanut-shell like shape. (C) shows the radius along the tunnel of structures belong to the cluster of tunnel$#\u20621$. Lines in different colours represent different structures. Grey dotted line represents the average tunnel radius.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Representative structures of the cavity region in the $I_{0.36}$ state.The figure shows six representative structures of the cavity region revealing multiple tunnels that connect the cavity with the protein surface. The different colours correspond to different tunnels observed, and a structure can have different tunnels with different widths present at the same time. The colours represent the relative size with yellow, purple and green corresponding to tunnels of decreasing width.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Tunnel clustering analysis on $I_{0.36}$ state.The clustering of tunnels was performed using the CAVER Analyst software (Kozlikova et al., 2014) and the average-link hierarchical algorithm based on the calculated matrix of pairwise tunnel distances. We found that the most weighted tunnel (denoted as tunnel$#\u20621$) populates $27%$ of the $I_{0.36}$ basin. The second and third tunnels populate 20% and 15%, respectively, but their maximal bottleneck radii are 1.4 and 1.3 \u00c5, in contrast to the maximal bottleneck radius of tunnel#1 of 2.5 \u00c5. (A) Heat map visualization of the tunnel profile of tunnel$#\u20621$. The colour map represents the radius of the\u00a0tunnel$#\u20621$ along the tunnel length. (B) Average tunnel radius and minimal tunnel radius of individual structures belonging to tunnel$#\u20621$ cluster. Note that the gaps indicate these snapshots do not have tunnels. (C) The tunnel radius as a function of the tunnel index which is ranked by the average radius (R). The second widest tunnel (tunnel$#\u20621$) has the highest population and is highlighted in yellow. (D) A typical structure of $I_{0.36}$ with an open tunnel$#\u20621$. HE, $H_{F}$ and $H_{G}$ are coloured in blue, F114 is coloured in red, and tunnel$#\u20621$ is coloured in yellow. (E) The figure shows the location of an alkylbenzene (magenta) in a crystal structure of L99A T4L (PDB ID: 4W59). The figure further shows (in yellow) the tunnel induced in the structure by the alkyl chain, as revealed by CAVER3 when applied to the structure after removing the ligand. Because the tunnel overlaps with the alkyl chain of the ligand, only the phenyl moiety of the ligand is visible.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/17505/elife-17505-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** The figure shows how ABMD simulations allow us to observe the ligand benzene escape from the internal binding site. We performed two sets of 20 simulations using two different force constants for the ABMD (upper: 50 KJ\u00a0\u00b7\u00a0mol\u22121\u00a0\u00b7\u00a0nm\u22122; lower: 20 KJ\u00a0\u00b7\u00a0mol\u22121\u00a0\u00b7\u00a0nm\u22122); note also the different time scales on the two plots. The simulations used the RMSD of the ligand to the bound state as the\u00a0reaction coordinate, but are here shown projected onto the distance between the benzene molecule and the side chain of F114. The three structures in the bottom panel provide representative structures.\n\nInterestingly, a series of structures of L99A were recently described, in which the internal cavity where filled with eight congeneric ligands of increasing size to eventually open the structure size\u00a0(Merski et al., 2015). We performed a comparable tunnel analysis on those eight ligand-bound structures (PDB ID codes: 4W52 \u2013 4W59), revealing the maximal bottleneck radius of 1.8\u2009\u00c5 (bound with n-hexylbenzene, 4W59). Although the size of the tunnel in these X-ray structures is slightly smaller than that in $I_{0.36}$ structures, the location of the tunnel exit is consistent with the dominant tunnel$#\u20621$ in $I_{0.36}$ (Figure 6\u2014figure supplement 3). We note, however, that the tunnels observed in our simulation and in the ligand-induced cavity-open X-ray structure (4W59), are too narrow to allow for unhindered passage of e.g. benzene with its a van der Waals\u2019 width of 3.5\u2009\u00c5 (Eriksson et al., 1992a). Thus, we speculate that the transient exposure in $I_{0.36}$ might serve as a possible starting point for ligand (un)binding, which would induce (Koshland, 1958; L\u00f3pez et al., 2013; Wang et al., 2012) further the opening of the tunnel.\n\nAs an initial step towards characterizing the mechanism of ligand binding and escape we used adiabatic biased molecular dynamics (ABMD) simulations (Marchi and Ballone, 1999; Paci and Karplus, 1999) to study the mechanism of how benzene escapes the internal cavity (see Appendix for details). In ABMD the system is perturbed by a \u2018ratcheting potential\u2019, which acts to \u2018select\u2019 spontaneous fluctuations towards the ligand-free state. In particular, the biasing potential is zero when the reaction coordinate (here chosen to be the RMSD of the ligand to the cavity-bound state) increases, but provides a penalty for fluctuations that brings the ligand closer to the cavity. In this way, we were able to observe multiple unbinding events in simulations despite the long lifetime (1.2 ms) of the ligand in the cavity. Most of trajectories (15 of the 20 events observed) reveal that benzene escapes from the cavity by following tunnel #\u20621 (Figure 6\u2014figure supplement 4 and Appendix 1\u2014table 6). A typical unbinding path is shown in the right panel of Figure 6 (see also Video 6). Because the ABMD introduces a bias to speed up ligand escape, we ensured that the observed pathway was the same at two different values of the biasing force constants (Figure 6\u2014figure supplement 4 and Appendix 1\u2014table 6). Future work will be aimed to perform a more quantitative analysis of the ligand binding and unbinding kinetics.\n\n![Video 6.](https://cdn.elifesciences.org/articles/17505/elife-17505-media6.mp4.jpg)\n\n**Video 6.:** The backbone of L99A is represented by white ribbons, Helices E, F and G are highlighted in blue, while F114 and benzene are represented by spheres in red and magenta, respectively.\n\n### Conclusions\n\nThe ability to change shape is an essential part of the function of many proteins, but it remains difficult to characterize alternative conformations that are only transiently and sparsely populated. We have studied the L99A variant of T4L as a model system that displays a complicated set of dynamical processes which have been characterized in substantial detail. Our results show that modern simulation methods are able to provide insight into such processes, paving the way for future studies for systems that are more difficult to study experimentally.\n\nUsing a novel method for defining an initial reference path between two conformations, we were able to sample the free energy landscape described by an accurate molecular force field. In accordance with experiments, the simulations revealed two distinct free energy basins that correspond to the major and minor states found by NMR. Quantification of the free energy difference between the two states demonstrated that the force field is able to describe conformational free energies to an accuracy of about 1 kcal mol\u22121. This high accuracy is corroborated by previous studies of a different protein, Cyclophilin A, where we also calculated conformational free energies and compared to relaxation dispersion experiments and found very good agreement. For both proteins we were also able to capture and quantify the effect that point mutations have on the equilibrium between the two states, and also here found good agreement with experiments. We note, however, that comparable simulations of the L99A/G113A mutant did not reach convergence.\n\nMoving a step further, we here also calculated the kinetics of conformational exchange using a recently developed metadynamics method. For both the L99A variant and a population-inverting triple mutant we find that the calculated reaction rates are in remarkably good agreement with experiments. The ability to calculate both forward and backward rates provided us with the opportunity to obtain an independent estimate the calculated free energy difference. The finding that the free energy differences estimated in this way (for both L99A and the triple mutant) are close to those estimated from the free energy landscape provides an important validation of both approaches, and we suggest that, when possible, such calculations could be used to supplement conventional free energy estimates.\n\nThe free-energy landscape suggested that the E state is relatively broad and contains a wider range of conformations. To validate this observation, we used the same chemical shift information as was used as input to Rosetta and performed replica-averaged CS-restrained simulations. The resulting ensemble demonstrates that the experiments and force field, when used jointly, indeed are compatible with a broader E state. Thus, we suggest that the $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ structure and CS-restrained ensemble jointly describe the structure and dynamics of the E state.\n\nWhile NMR experiments, in favourable cases, can be used to determine the structure, thermodynamics and kinetics of conformational exchange, a detailed description mechanism of interconversion remains very difficult to probe by experiments. We explored potential mechanisms of conformational exchange between the two states, finding at least two distinct routes. One route involved a direct transition with the central F114 entering the cavity within the protein, whereas a different possible mechanism involves transient partial-loosening of the protein. In both cases, the mechanism differs from the reference path that we used as a guide to map the free energy landscape, demonstrating that high accuracy of the initial guess for a pathway is not absolutely required in the metadynamics simulations, suggesting also the more general applicability of the approach.\n\nFinally, we observed a set of conformations with a transiently opened tunnel that leads from the exterior of the protein to the internal cavity, that is similar to a recently discovered path that is exposed when the cavity is filled by ligands of increasing size. The fact that such a tunnel can be explored even in the absence of ligands suggests that intrinsic protein motions may play an important role in ligand binding, and indeed we observed this path to be dominant in simulations of ligand unbinding.\n\nIn total, we present a global view of the many, sometimes coupled, dynamical processes present in a protein. Comparison with a range of experimental observations suggests that the simulations provide a relatively accurate description of the protein, demonstrating how NMR experiments can be used to benchmark quantitatively the ability of simulations to study conformational exchange. We envisage that future studies of this kind, also when less is known about the structure of the alternative states, will help pave the way for using simulations to study the structural dynamics of proteins and how this relates to function.\n\n## Materials and methods\n\n### System preparation\n\nOur simulations were initiated in the experimentally determined structures of the ground state of L99A ($G_{X\u2062r\u2062a\u2062y}$; PDB ID code 3DMV) or minor, E state ($E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$; 2LCB). The structure of the ground state of the L99A, G113A, R119P triple mutant, corresponding to the E state of L99A was taken from PDB entry 2LC9 ($G_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}^{T\u2062r\u2062i\u2062p\u2062l\u2062e}$). Details can be found in the\u00a0Appendix.\n\n### Initial reaction path\n\nTaking $G_{X\u2062r\u2062a\u2062y}$ and $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ as the models of the initial and final structures, we calculated an initial reaction path between them with the MOIL software (Elber et al., 1995), which has been used to explore the mechanism of conformational change of proteins (Wang et al., 2011). Further details can be found in the Appendix and in refs.\u00a0(Majek et al., 2008; Wang et al., 2011).\n\n### Path CV driven metadynamics simulations with adaptive hills\n\nThe adaptive-hill version of metadynamics updates the Gaussian width on the fly according to the\u00a0local properties of the underlying free-energy surface on the basis of local diffusivity of the CVs or the local geometrical properties. Here, we used the former strategy. Simulation were performed using Gromacs4.6\u00a0(Pronk et al., 2013) with the PLUMED2.1 plugin\u00a0(Tribello et al., 2014). See parameter details in Appendix 1\u2014table 1.\n\n### Replica-averaged CS-restrained simulations\n\nWe performed replica-averaged CS restrained MD simulations by using GPU version of Gromacs5 with the PLUMED2.1 and ALMOST2.1 (Fu et al., 2014) plugins. Equilibrated structures of $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ and $G_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}^{T\u2062r\u2062i\u2062p\u2062l\u2062e}$ were used as the starting conformations. CS data of $E_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}$ and $G_{R\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A}^{T\u2062r\u2062i\u2062p\u2062l\u2062e}$ were obtained from the BMRB database (Ulrich et al., 2008) as entries 17604 and 17603, respectively.\n\n### Reconnaissance metadynamics simulations\n\nReconnaissance metadynamics (Tribello et al., 2010) uses a combination of a machine learning technique to automatically identify the locations of free energy minima by periodically clustering the trajectory and a dimensional reduction technique that can reduce the landscape complexity. We performed several reconnaissance metadynamics simulations with different combinations of CVs starting from $G_{X\u2062r\u2062a\u2062y}$ using Gromacs4.5.5 with PLUMED1.3 plugin. See parameter details in Appendix 1\u2014table 1.\n\n### Calculating kinetics using infrequent metadynamics\n\nThe key idea of infrequent metadynamics is to bias the system with a frequency slower than the barrier crossing time but faster than the slow intra-basin relaxation time, so that the transition state region has a low risk of being substantially biased. As the first transition times should obey Poisson statistics, the reliability of the kinetics estimated from InMetaD can be assessed by a statistical analysis based on the Kolmogorov-Smirnov (KS) test (Salvalaglio et al., 2014). See parameter details on Appendix and Appendix 1\u2014table 1.\n",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "0e5322dd-ebad-4bef-83df-aa00ca1e8ef0",
+      "submission_id": "8d3f8de7-910b-4fa8-b7e1-4d5c4f5b39b2",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yibing Shan, DE Shaw Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17505.042](https://doi.org/10.7554/eLife.17505.042)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Mapping transiently formed and sparsely populated conformations on a complex energy landscape\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom, Yibing Shan, is a member of our Board of Reviewing Editors, and another is James S Fraser (Reviewer #3), and the evaluation has been overseen by Michael Marletta as the Senior Editor. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, the authors employ state-of-art enhanced sampling techniques, including multiple variants of metadynamics, replica-averaged restrained MD and well-tempered replica-exchange MD, to conduct a systematic characterization of conformational dynamics of the L99A variant of T4L. This simulation study, which is shown to be in agreement with experimental measures of transition rates and kinetics, provides insights on the possible mechanism of conformational exchange between the ground state and the excited state. In particular, the excited state is shown to be conformationally broad and heterogeneous, and the transition path between the two states to be diverse. The work also identifies an key intermediate state for the transition, although its confirmation requires further experimental evidence.\n\nEssential revisions:\n\nAppreciating the thoroughness and the technical sophistication of the computation work and its robust connections with experimental data, the reviewers recognize the manuscript's value in benchmarking state-of-art simulation techniques and especially, in benchmarking conformational free energy calculations.\n\nOne of the more interesting parts of the of this study concerns the calculation of kinetic rate of the transition for L99A and the results is very encouraging. Because of its potential importance, this work would benefit greatly from additional calculations on mutants besides L99A. Specifically, the transition kinetics of L99A/G113A and L99A/G113A/R119P have been experimentally characterized. Calculating the kinetic rates of these two mutants and comparing the results with the experimental data would much strengthen case for the validity of such calculations.\n\nThe manuscript's attempt to elucidate the mechanism of ligand entrance is relatively weak. Further studies, for example, using simulations with ligand placed at the putative entrance to the channel in a partially open conformation would strengthen this part of the manuscript. If unsuccessful, the authors should consider weaken the related claims and de-emphasize the part of the work.\n\nRelatedly, the reviewers think the manuscript's value lies more in benchmarking and validating state-of-art free energy calculation, than in providing significant new insight into the mechanism and function of T4L conformational transition. We would like to see revisions that de-emphasize the T4L specific claims and additional discussions with respect to benchmarking quantitative characterization of free energy landscapes using atomistic simulations.\n",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3baced5e-53bc-41c9-9a7a-0601325f380f",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C1",
+      "claim": "The L99A cavity mutant of T4 lysozyme displays conformational exchange on the millisecond timescale between the ground state and a minor state populated at around 3% at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR relaxation dispersion measurements of L99A T4L demonstrated that this variant, but not the wild type protein, displayed conformational exchange on the millisecond timescale between the ground state and a minor state populated at around 3% (at room temperature) (Mulder et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mulder et al., 2001, which is a published NMR study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "cdfb737c-409d-4ea9-9b98-b974568219af",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C2",
+      "claim": "The wild type T4 lysozyme does not display conformational exchange on the millisecond timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR relaxation dispersion measurements of L99A T4L demonstrated that this variant, but not the wild type protein, displayed conformational exchange on the millisecond timescale between the ground state and a minor state populated at around 3% (at room temperature) (Mulder et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mulder et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "2e8d264f-9a2f-4caf-a525-7b5bd8a17fa2",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C3",
+      "claim": "The large internal cavity in L99A T4L (150 \u00c53) can bind hydrophobic ligands such as benzene.",
+      "claim_type": "EXPLICIT",
+      "source": "Originally designed a 'cavity creating' variant to probe protein stability (Eriksson et al., 1992b) it was also demonstrated that the large (150 \u00c53) internal cavity can bind hydrophobic ligands such as benzene (Eriksson et al., 1992a; Liu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Eriksson et al., 1992a and Liu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "254b7173-c987-4a5f-a0bf-8d0da10b597a",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C4",
+      "claim": "The cavity in L99A T4L is inaccessible to solvent in the ground state.",
+      "claim_type": "EXPLICIT",
+      "source": "It was early established that the cavity is inaccessible to solvent in the ground state, but that ligand binding is rapid (Feher et al., 1996), suggesting protein dynamics to play a potential role in the binding process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Feher et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "89c0cb94-7411-42dc-88af-a81cc85564ef",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C5",
+      "claim": "Ligand binding to the L99A T4L cavity is rapid.",
+      "claim_type": "EXPLICIT",
+      "source": "It was early established that the cavity is inaccessible to solvent in the ground state, but that ligand binding is rapid (Feher et al., 1996), suggesting protein dynamics to play a potential role in the binding process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Feher et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "27214399-0759-48e7-8db4-67a046335c32",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C6",
+      "claim": "Protein dynamics may play a role in the ligand binding process to the L99A T4L cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "It was early established that the cavity is inaccessible to solvent in the ground state, but that ligand binding is rapid (Feher et al., 1996), suggesting protein dynamics to play a potential role in the binding process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that the cavity is inaccessible yet ligand binding is rapid, as cited from Feher et al., 1996.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "c2452fea-ba91-4951-9cf1-14960e0ef5e9",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C7",
+      "claim": "The structure of the E state (EROSETTA) was determined by CS-ROSETTA using chemical shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "The backbone CS data were subsequently used as input to a CS-based structure refinement protocol (CS-ROSETTA) to produce a structural model of the E state (ER\u2062O\u2062S\u2062E\u2062T\u2062T\u2062A; Figure 1) of the L99A mutant (Bouvignies et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bouvignies et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "ae202efc-2151-420b-aed2-0d5e41bc9b05",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C12",
+      "claim": "The average lifetime of the G state in L99A is on the order of 20\u201350 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "As the average lifetime of the G and E states are on the order of 20\u201350 ms and 1 ms, respectively (Mulder et al., 2001, 2002; Bouvignies et al., 2011), direct and reversible sampling of the G-E transition at equilibrium would be extremely demanding computationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mulder et al., 2001, 2002 and Bouvignies et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "406d37d4-6b95-48f4-8223-16d0bc1ee31c",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C13",
+      "claim": "The average lifetime of the E state in L99A is on the order of 1 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "As the average lifetime of the G and E states are on the order of 20\u201350 ms and 1 ms, respectively (Mulder et al., 2001, 2002; Bouvignies et al., 2011), direct and reversible sampling of the G-E transition at equilibrium would be extremely demanding computationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mulder et al., 2001, 2002 and Bouvignies et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "1d282b7b-d44d-47e5-956c-2e7e47bfcd46",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C14",
+      "claim": "Metadynamics simulations of L99A reveal a deep, narrow free energy basin around Spath=0.2 corresponding to the G state.",
+      "claim_type": "EXPLICIT",
+      "source": "Projecting the sampled free energy landscape along Sp\u2062a\u2062t\u2062h (upper panel of Figure 2) reveals a deep, narrow free energy basin around Sp\u2062a\u2062t\u2062h=0.2 (labeled by red sphere and corresponding to the G state), and a broader, shallow free energy basin with Sp\u2062a\u2062t\u2062h ranging from 0.6 to 0.8 (labeled by blue sphere and corresponding to the E state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from metadynamics simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "f9bbc587-f8a5-47c3-a458-cde300f80fe4",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C15",
+      "claim": "Metadynamics simulations of L99A reveal a broader, shallow free energy basin with Spath ranging from 0.6 to 0.8 corresponding to the E state.",
+      "claim_type": "EXPLICIT",
+      "source": "Projecting the sampled free energy landscape along Sp\u2062a\u2062t\u2062h (upper panel of Figure 2) reveals a deep, narrow free energy basin around Sp\u2062a\u2062t\u2062h=0.2 (labeled by red sphere and corresponding to the G state), and a broader, shallow free energy basin with Sp\u2062a\u2062t\u2062h ranging from 0.6 to 0.8 (labeled by blue sphere and corresponding to the E state).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from metadynamics simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "2227434b-5a7d-4e47-92e2-3e0afa764d40",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C16",
+      "claim": "The two-dimensional free energy landscape of L99A reveals a complex and rough landscape with multiple free energy minima.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional information is obtained from the two-dimensional landscape (shown as a negative free energy landscape, -F(Sp\u2062a\u2062t\u2062h, Zp\u2062a\u2062t\u2062h), in the lower panel of Figure 2) which reveals a complex and rough landscape with multiple free energy minima (corresponding to mountains in the negative free energy landscape).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from metadynamics simulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "717d525c-712c-445a-a802-4f71c046476b",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C19",
+      "claim": "The triple mutant (L99A/G113A/R119P) has the minor state structure (of L99A) dominating with a 96% population.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NMR data demonstrated that the triple mutant roughly inverts the populations of the two states so that the minor state structure (of L99A) now dominates (with a 96% population) the triple mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on NMR data mentioned in the text.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "b212924e-41a1-493d-b03b-15bc06c34057",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C21",
+      "claim": "The free energy difference between the G and E states of L99A calculated from metadynamics simulations is approximately 3.5 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "As the simulations converge, however, the free energy difference between the two states stabilize to a value at approximately \u0394\u2062G=3.5 kcal mol\u22121 (Figure 3, black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from metadynamics simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "a84d396b-5658-474e-a672-15b6841c5085",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C22",
+      "claim": "The experimental free energy difference between the G and E states of L99A is 2.1 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "This value can be compared to the value of 2.1 kcal mol\u22121 obtained from NMR relaxation dispersion experiments (Mulder et al., 2001), revealing reasonably good, albeit not exact, agreement with the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Mulder et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "946dd3a0-3d83-4ecc-90c9-b2ae01002672",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C23",
+      "claim": "The free energy difference between the G and E states of the triple mutant calculated from metadynamics simulations is about \u22121.6 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar calculations using the simulations of the triple mutant also converge, in this case to about \u22121.6 kcal mol\u22121 (Figure 3, blue line), in excellent agreement with the experimental measurement (\u22121.9 kcal mol\u22121) (Bouvignies et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from metadynamics simulations shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "91e5ac69-8677-4712-8e1a-13a478eeed16",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C24",
+      "claim": "The experimental free energy difference between the G and E states of the triple mutant is \u22121.9 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar calculations using the simulations of the triple mutant also converge, in this case to about \u22121.6 kcal mol\u22121 (Figure 3, blue line), in excellent agreement with the experimental measurement (\u22121.9 kcal mol\u22121) (Bouvignies et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bouvignies et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "bb108c8a-6104-4828-8e26-656a6cfa3b21",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C25",
+      "claim": "The G113A, R119P mutations cause a shift in the G-E free energy of 5.1 kcal mol\u22121 in simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these two free energy differences we find that the G113A, R119P mutations cause a shift in the G-E free energy of 5.1 kcal mol\u22121 in simulations compared to 4.0 kcal mol\u22121 obtained by experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations from simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "92920b74-35c9-4040-871f-b743ecb6a7c9",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C26",
+      "claim": "The G113A, R119P mutations cause a shift in the G-E free energy of 4.0 kcal mol\u22121 obtained by experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these two free energy differences we find that the G113A, R119P mutations cause a shift in the G-E free energy of 5.1 kcal mol\u22121 in simulations compared to 4.0 kcal mol\u22121 obtained by experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental data mentioned in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "ae1e1eea-2222-48b6-917e-093e24e70afa",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C27",
+      "claim": "The G-to-E transition rate (\u03c4G\u2192E) for L99A calculated by InMetaD is 175 \u00b1 56 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The (unbiased) rates that we calculated (Table 1 and Appendix 1\u2014figure 3) are in good agreement with the experimental rates (Mulder et al., 2001; Bouvignies et al., 2011) (within a factor of 10), corresponding to an average error of the barrier height of \u223c1 kcal mol\u22121.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "b967a85e-8f81-4a9b-a909-27fcb647e614",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C28",
+      "claim": "The experimental G-to-E transition rate (\u03c4G\u2192E) for L99A is 20 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR\t20\t0.7\t2.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is stated in Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "ba4ef9c8-23f7-45a5-98fd-5ce4975ad93c",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C29",
+      "claim": "The E-to-G transition rate (\u03c4E\u2192G) for L99A calculated by InMetaD is 1.4 \u00b1 0.6 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "InMetaD\t175 \u00b1 56\t1.4 \u00b1 0.6\t2.9 \u00b1 0.5",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "702d9353-855b-42d3-b678-68c2f6c19495",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C30",
+      "claim": "The experimental E-to-G transition rate (\u03c4E\u2192G) for L99A is 0.7 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR\t20\t0.7\t2.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is stated in Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "703ceab2-1894-4cd1-a41c-de026237d82b",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C31",
+      "claim": "The free energy difference for L99A calculated from InMetaD rates is 2.9 \u00b1 0.5 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "InMetaD\t175 \u00b1 56\t1.4 \u00b1 0.6\t2.9 \u00b1 0.5",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "e316ee3c-0f52-4e76-aedf-a80f9f06eaee",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C32",
+      "claim": "The G-to-E transition rate (\u03c4G\u2192E) for the triple mutant calculated by InMetaD is 2.0 \u00b1 1.7 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "InMetaD\t2.0 \u00b1 1.7\t14.3 \u00b1 8.3\t-1.2 \u00b1 1.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "53960e97-efd1-400b-8950-6292ec1d867c",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C33",
+      "claim": "The experimental G-to-E transition rate (\u03c4G\u2192E) for the triple mutant is 0.2 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR\t0.2\t4\t-1.9",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is stated in Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "fa9a3e6f-b39c-448d-81a6-58c365bd7672",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C34",
+      "claim": "The E-to-G transition rate (\u03c4E\u2192G) for the triple mutant calculated by InMetaD is 14.3 \u00b1 8.3 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "InMetaD\t2.0 \u00b1 1.7\t14.3 \u00b1 8.3\t-1.2 \u00b1 1.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "961d9c30-97c4-4074-8b8d-9d93c20a254b",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C35",
+      "claim": "The experimental E-to-G transition rate (\u03c4E\u2192G) for the triple mutant is 4 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "NMR\t0.2\t4\t-1.9",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is stated in Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "dc3447a5-326e-4751-9f15-80bcfccc84ca",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C36",
+      "claim": "The free energy difference for the triple mutant calculated from InMetaD rates is \u22121.2 \u00b1 1.1 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "InMetaD\t2.0 \u00b1 1.7\t14.3 \u00b1 8.3\t-1.2 \u00b1 1.1",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is based on data from InMetaD simulations shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "b26b4441-4ac2-478d-8057-78409d3a1fda",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C37",
+      "claim": "CS-restrained MD simulations of the E state of L99A show a distribution of conformations that is in good agreement with the broad free energy profile of the E-state obtained in metadynamics simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of conformations obtained using the E-state CSs as restraints is in good agreement with the broad free energy profile of the E-state obtained in the metadynamics simulations that did not include any experimental restraints.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on comparison of data from CS-restrained simulations and metadynamics simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "40260698-8568-4f7f-9656-dddf230c4869",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C38",
+      "claim": "Reconnaissance metadynamics simulations reveal multiple possible routes connecting the G and E states.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal multiple possible routes connecting the G and E states, consistent with the multiple gullies found on the free energy surface (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from reconnaissance metadynamics simulations shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "574b4a08-16cc-460e-8147-e3d9bd52003e",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C39",
+      "claim": "The G-to-E interconversion can take place directly without passing the I0.36 state or indirectly via it.",
+      "claim_type": "EXPLICIT",
+      "source": "The trajectories also suggested that the G-to-E interconversion can either take place directly without passing the I0.36 state or indirectly via it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of reconnaissance metadynamics trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "735ede2d-6729-4f40-9a5e-7102d8f0ebee",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C40",
+      "claim": "In the G\u21ccI0.36\u21ccE route, the side chain of F114 gets transiently exposed to solvent during the transition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of coarse-grained kinetic models the results above would suggest at least two possible mechanisms operate in parallel: G\u21ccE or G\u21ccI0.36\u21ccE. Further inspection of the structures along these different kinetics routes (see the trajectories of other order parameters in Figure 5\u2014figure supplement 2 and Videos 1\u20134) suggested an interesting distinction between the two. In the G\u21ccI0.36\u21ccE route the side chain of F114, which occupies the cavity in the E state, gets transiently exposed to solvent during the transition, whereas in the direct G\u21ccE transitions F114 can rotate its side chain inside the protein core (see also the solvent accessible surface area calculation of F114 in Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural analysis of simulation trajectories shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "a4805b91-77f2-4f79-9776-f536d562601c",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C41",
+      "claim": "In the direct G\u21ccE transitions, F114 can rotate its side chain inside the protein core.",
+      "claim_type": "EXPLICIT",
+      "source": "In the G\u21ccI0.36\u21ccE route the side chain of F114, which occupies the cavity in the E state, gets transiently exposed to solvent during the transition, whereas in the direct G\u21ccE transitions F114 can rotate its side chain inside the protein core (see also the solvent accessible surface area calculation of F114 in Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on structural analysis of simulation trajectories shown in Figure 5\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "0d89bd42-1dd6-45e8-bf81-786397a2626e",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C42",
+      "claim": "Simulations reveal structures with transient exposure of the internal cavity towards the solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of our trajectories and solvent-accessible surface area analysis revealed structures with transient exposure of the internal cavity towards the solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "ee7b781e-2e77-4ed9-9d5e-0a699649236d",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C43",
+      "claim": "The structures with transient cavity exposure were mostly found in the I0.36 basin.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures were mostly found in a region of conformational space that mapped onto the I0.36 basin (Figure 2), and the events of that basin mostly took place between 430 ns and 447 ns (see Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on analysis of simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "5ce825ce-89e5-4389-bd15-db1e32c00279",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C44",
+      "claim": "CAVER3 analysis found multiple tunnels connecting the cavity with protein surface in I0.36 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CAVER3 (Chovancova et al., 2012) (see parameters in Appendix 1\u2014table 4) to analyse the structures and found multiple tunnels connecting the cavity with protein surface (Figure 6\u2014figure supplement 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on CAVER3 analysis of simulation structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "daac8da2-8d57-4ef2-a82b-9f0615917118",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C45",
+      "claim": "The tunnels connecting the cavity to the surface have typical bottleneck radii between \u223c1 \u00c5 \u2212 \u223c2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The tunnels are relatively narrow with the typical radius of the bottleneck (defined as the narrowest part of a given tunnel) between \u223c1 \u00c5 \u2212 \u223c2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CAVER3 analysis of simulation structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "3a6e3f79-8238-46f3-8dcf-f905cbbf1f8f",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C46",
+      "claim": "The dominant tunnel cluster (tunnel#1) has an entrance located at the groove between HF and HI.",
+      "claim_type": "EXPLICIT",
+      "source": "We used CAVER Analyst1.0 (Kozlikova et al., 2014) (see details in Appendix and parameters in Appendix 1\u2014table 4) to separate the tunnels into different clusters (Figure 6\u2014figure supplement 3 and Appendix 1\u2014table 5) with the dominant cluster (denoted tunnel#\u20621) having a entrance located at the groove between HF and HI.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on CAVER Analyst analysis of simulation structures shown in Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "addf5237-4ab4-434f-b767-a2fd8a262f36",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C47",
+      "claim": "The maximal bottleneck radius of tunnel#1 is \u223c2.5 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The radii along the structures in cluster #\u20621 vary, but share an overall shape (Figure 6\u2014figure supplement 1), and we find that the maximal bottleneck radius is \u223c2.5 \u00c5, the average bottleneck radius is \u223c1.3 \u00c5, and the average length \u223c11.2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CAVER analysis of simulation structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "6081d30d-52f2-4cfd-8e3e-774c60a857a2",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C48",
+      "claim": "The average bottleneck radius of tunnel#1 is \u223c1.3 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The radii along the structures in cluster #\u20621 vary, but share an overall shape (Figure 6\u2014figure supplement 1), and we find that the maximal bottleneck radius is \u223c2.5 \u00c5, the average bottleneck radius is \u223c1.3 \u00c5, and the average length \u223c11.2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CAVER analysis of simulation structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "115f8b62-344a-45e8-bf8f-9e3c559b9a5c",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C49",
+      "claim": "The average length of tunnel#1 is \u223c11.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The radii along the structures in cluster #\u20621 vary, but share an overall shape (Figure 6\u2014figure supplement 1), and we find that the maximal bottleneck radius is \u223c2.5 \u00c5, the average bottleneck radius is \u223c1.3 \u00c5, and the average length \u223c11.2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CAVER analysis of simulation structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "6291adf5-4e2c-4058-b4a8-a61cd9c05e00",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C50",
+      "claim": "A series of structures of L99A with the internal cavity filled with eight congeneric ligands of increasing size were recently described.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a series of structures of L99A were recently described, in which the internal cavity where filled with eight congeneric ligands of increasing size to eventually open the structure size (Merski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Merski et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "f486ae4d-3c8e-449f-b5f2-78134bdacf7b",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C51",
+      "claim": "The maximal bottleneck radius in ligand-bound X-ray structures of L99A is 1.8 \u00c5 (bound with n-hexylbenzene, 4W59).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a comparable tunnel analysis on those eight ligand-bound structures (PDB ID codes: 4W52 \u2013 4W59), revealing the maximal bottleneck radius of 1.8 \u00c5 (bound with n-hexylbenzene, 4W59).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on CAVER analysis of X-ray structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "4403fdfd-f132-4b33-90a7-6fa3b55a4b00",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C53",
+      "claim": "Most ABMD trajectories (15 of 20 events) reveal that benzene escapes from the cavity by following tunnel #1.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of trajectories (15 of the 20 events observed) reveal that benzene escapes from the cavity by following tunnel #\u20621 (Figure 6\u2014figure supplement 4 and Appendix 1\u2014table 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on data from ABMD simulations shown in Figure 6\u2014figure supplement 4 and Appendix 1\u2014table 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "318bf658-9e90-4acb-ac21-76bef66e1881",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C54",
+      "claim": "Modern simulation methods are able to provide insight into conformational exchange processes in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that modern simulation methods are able to provide insight into such processes, paving the way for future studies for systems that are more difficult to study experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the overall results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "48c2d00e-06d2-4ca6-99ea-7d051477e346",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C55",
+      "claim": "The force field is able to describe conformational free energies to an accuracy of about 1 kcal mol\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the free energy difference between the two states demonstrated that the force field is able to describe conformational free energies to an accuracy of about 1 kcal mol\u22121.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of calculated and experimental free energy differences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "dae79c05-5d82-4dc5-b6a4-ff8469e9133b",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C56",
+      "claim": "The calculated reaction rates for L99A and the triple mutant are in remarkably good agreement with experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For both the L99A variant and a population-inverting triple mutant we find that the calculated reaction rates are in remarkably good agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of calculated and experimental rates shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "96ec6a68-58d3-4819-bcd0-ed57c9f683b8",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C57",
+      "claim": "The E state is relatively broad and contains a wider range of conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The free-energy landscape suggested that the E state is relatively broad and contains a wider range of conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of the free energy landscape from simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "8b96b235-caf1-4c63-abf5-ed5eee8be4f4",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C58",
+      "claim": "A set of conformations with a transiently opened tunnel leads from the exterior of the protein to the internal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we observed a set of conformations with a transiently opened tunnel that leads from the exterior of the protein to the internal cavity, that is similar to a recently discovered path that is exposed when the cavity is filled by ligands of increasing size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of simulation trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "d855859e-9701-4376-8606-ab8e20c4ec18",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "claim_id": "C59",
+      "claim": "Intrinsic protein motions may play an important role in ligand binding to L99A.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that such a tunnel can be explored even in the absence of ligands suggests that intrinsic protein motions may play an important role in ligand binding, and indeed we observed this path to be dominant in simulations of ligand unbinding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that tunnels form in the absence of ligands and are used in ligand unbinding simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior experimental work established that L99A T4 lysozyme displays millisecond-timescale conformational exchange between a ground state (G) and a minor excited state (E) populated at ~3%, with the cavity inaccessible to solvent in both states yet capable of rapid ligand binding. The E state structure was previously determined by CS-ROSETTA using NMR chemical shifts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7, C12-C13 collectively describe well-established prior experimental findings from multiple cited studies (Mulder et al., Eriksson et al., Feher et al., Bouvignies et al.). These claims provide essential background context for the current computational work and are appropriately supported by citations to peer-reviewed literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "11a39205-379f-4bbb-afff-44c0159d64c8",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Metadynamics simulations reveal a free energy landscape with a deep, narrow basin at Spath=0.2 corresponding to the G state and a broader, shallow basin at Spath=0.6-0.8 corresponding to the E state, with a complex, rough two-dimensional landscape containing multiple free energy minima.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 describe computational results directly shown in Figure 2. The free energy landscape features are clearly visualized and the characterization of basin shapes (deep/narrow vs. broad/shallow) is consistent with the data presented. The identification of multiple minima is evident from the 2D landscape visualization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The calculated free energy difference between G and E states for L99A is 3.5 kcal/mol (experimental: 2.1 kcal/mol), and for the triple mutant is -1.6 kcal/mol (experimental: -1.9 kcal/mol). The G113A/R119P mutations shift the G-E free energy by 5.1 kcal/mol in simulations versus 4.0 kcal/mol experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26 present thermodynamic calculations from metadynamics simulations (Figure 3, Table 1) compared to experimental NMR values. The agreement is within ~1-1.4 kcal/mol for individual measurements and ~1 kcal/mol for the mutation effect, representing reasonable accuracy for force field-based calculations. The convergence of simulations is demonstrated in Figure 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "89e4ec23-438b-4916-9aba-4f408e381b58",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The triple mutant (L99A/G113A/R119P) has the minor state structure of L99A dominating with 96% population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C19 describes prior experimental NMR data showing population inversion in the triple mutant. This is appropriately cited and provides validation context for the computational predictions. The claim is well-supported by the referenced experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "23755a88-b279-4129-b609-5ae8badc4867",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "InMetaD simulations calculate transition rates for L99A (\u03c4G\u2192E = 175\u00b156 ms, \u03c4E\u2192G = 1.4\u00b10.6 ms) and the triple mutant (\u03c4G\u2192E = 2.0\u00b11.7 ms, \u03c4E\u2192G = 14.3\u00b18.3 ms), which agree with experimental NMR rates within a factor of 10, corresponding to ~1 kcal/mol accuracy in barrier heights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C36 present kinetic calculations from InMetaD simulations (Table 1) with appropriate error estimates. The agreement with experimental rates is within the stated factor of 10, and Kolmogorov-Smirnov tests validate the Poisson distribution assumption. The independent calculation of \u0394G from rate ratios provides internal consistency checks. The large uncertainties for some values (e.g., C32, C34) are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "79e8258b-7d3a-43f6-aa74-fe0e695e944e",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CS-restrained MD simulations of the E state show a distribution of conformations in good agreement with the broad free energy profile obtained from unbiased metadynamics simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 describes agreement between two independent computational approaches (Figure 4). The CS-restrained simulations use experimental data as restraints while metadynamics does not, making their agreement a meaningful validation. The result is tested with two different force fields (CHARMM22* and Amber ff99SB*-ILDN) and shows robustness to simulation parameters (Figure 4 supplements).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "49a4bfd4-7dec-4e7f-bb95-8b1093d96787",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Reconnaissance metadynamics simulations reveal multiple routes connecting G and E states, including direct G\u2194E transitions where F114 rotates internally, and indirect G\u2194I0.36\u2194E routes where F114 becomes transiently solvent-exposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 describe mechanistic insights from reconnaissance metadynamics (Figure 5, Videos 1-4). The identification of multiple pathways is supported by trajectory analysis and projection onto the free energy surface. The distinction between direct and indirect routes based on F114 solvent exposure is quantified by SASA calculations (Figure 5 supplement 3). The mechanistic interpretations are appropriately cautious.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "f2b5abb9-2734-43bd-858a-160f552fc192",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Simulations reveal structures with transient cavity exposure in the I0.36 basin. CAVER3 analysis identifies multiple tunnels connecting the cavity to the protein surface, with the dominant tunnel (tunnel#1) having entrance between helices HF and HI, maximal bottleneck radius ~2.5 \u00c5, average bottleneck radius ~1.3 \u00c5, and average length ~11.2 \u00c5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C49 describe tunnel analysis using established CAVER3 software with parameters documented in appendices. The structural characterization is quantitative and reproducible. The identification of I0.36 as the region with cavity exposure is supported by trajectory analysis and mapping onto the free energy surface. The tunnel dimensions are precisely reported with appropriate significant figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "8d925f1d-f67e-4abe-bee7-5a3a2588ddc2",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparison with ligand-bound X-ray structures shows that the maximal bottleneck radius in crystal structures (1.8 \u00c5 for n-hexylbenzene complex) is slightly smaller than in I0.36 simulation structures (~2.5 \u00c5), but the tunnel location is consistent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 provide validation by comparing simulation-derived tunnels to experimentally observed ligand-induced openings (Merski et al., 2015). The CAVER3 analysis is applied consistently to both simulation and crystal structures. The slight difference in tunnel size is noted appropriately, and the consistency in tunnel location provides support for the biological relevance of the simulated structures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "cfa5a466-44fe-4ad1-9244-8c63d48df9d8",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ABMD simulations show that in 15 of 20 ligand unbinding events, benzene escapes via tunnel#1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C53 presents results from ABMD simulations (Figure 6 supplement 4, Appendix table 6) showing the dominant escape pathway. The result is tested at two different force constants (50 and 20 KJ\u00b7mol\u207b\u00b9\u00b7nm\u207b\u00b2) to ensure the pathway is not an artifact of the biasing potential. The quantitative reporting (15/20 events) provides appropriate statistical context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    },
+    {
+      "id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84",
+      "content_id": "b13f831a-1fa1-45e9-ad69-b747057209ce",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study demonstrates that modern simulation methods can characterize conformational exchange processes with ~1 kcal/mol accuracy in free energies and good agreement in kinetics. The E state is conformationally broad, a transiently opened tunnel connects the cavity to solvent, and intrinsic protein motions may play important roles in ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 represent the main conclusions synthesizing results from multiple computational approaches validated against experimental data. The accuracy estimates (~1 kcal/mol) are supported by comparisons in C21-C26. The characterization of the E state as broad is supported by C14-C16 and C37. The tunnel discovery (C58) and its potential functional role (C59) are supported by C42-C53. The inference about intrinsic motions (C59) is appropriately cautious ('may play').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T20:29:20.168328Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3baced5e-53bc-41c9-9a7a-0601325f380f",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "cdfb737c-409d-4ea9-9b98-b974568219af",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "2e8d264f-9a2f-4caf-a525-7b5bd8a17fa2",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "254b7173-c987-4a5f-a0bf-8d0da10b597a",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "89c0cb94-7411-42dc-88af-a81cc85564ef",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "27214399-0759-48e7-8db4-67a046335c32",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "c2452fea-ba91-4951-9cf1-14960e0ef5e9",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "ae202efc-2151-420b-aed2-0d5e41bc9b05",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "406d37d4-6b95-48f4-8223-16d0bc1ee31c",
+      "result_id": "4c8cc0ac-0c42-4a72-8a23-bb8c45f4115d"
+    },
+    {
+      "claim_id": "1d282b7b-d44d-47e5-956c-2e7e47bfcd46",
+      "result_id": "11a39205-379f-4bbb-afff-44c0159d64c8"
+    },
+    {
+      "claim_id": "f9bbc587-f8a5-47c3-a458-cde300f80fe4",
+      "result_id": "11a39205-379f-4bbb-afff-44c0159d64c8"
+    },
+    {
+      "claim_id": "2227434b-5a7d-4e47-92e2-3e0afa764d40",
+      "result_id": "11a39205-379f-4bbb-afff-44c0159d64c8"
+    },
+    {
+      "claim_id": "b212924e-41a1-493d-b03b-15bc06c34057",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "a84d396b-5658-474e-a672-15b6841c5085",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "946dd3a0-3d83-4ecc-90c9-b2ae01002672",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "91e5ac69-8677-4712-8e1a-13a478eeed16",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "bb108c8a-6104-4828-8e26-656a6cfa3b21",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "92920b74-35c9-4040-871f-b743ecb6a7c9",
+      "result_id": "6fb78c36-85e3-4b8f-ab28-64f4dddbacfa"
+    },
+    {
+      "claim_id": "717d525c-712c-445a-a802-4f71c046476b",
+      "result_id": "89e4ec23-438b-4916-9aba-4f408e381b58"
+    },
+    {
+      "claim_id": "ae1e1eea-2222-48b6-917e-093e24e70afa",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "b967a85e-8f81-4a9b-a909-27fcb647e614",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "ba4ef9c8-23f7-45a5-98fd-5ce4975ad93c",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "702d9353-855b-42d3-b678-68c2f6c19495",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "703ceab2-1894-4cd1-a41c-de026237d82b",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "e316ee3c-0f52-4e76-aedf-a80f9f06eaee",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "53960e97-efd1-400b-8950-6292ec1d867c",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "fa9a3e6f-b39c-448d-81a6-58c365bd7672",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "961d9c30-97c4-4074-8b8d-9d93c20a254b",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "dc3447a5-326e-4751-9f15-80bcfccc84ca",
+      "result_id": "23755a88-b279-4129-b609-5ae8badc4867"
+    },
+    {
+      "claim_id": "b26b4441-4ac2-478d-8057-78409d3a1fda",
+      "result_id": "79e8258b-7d3a-43f6-aa74-fe0e695e944e"
+    },
+    {
+      "claim_id": "40260698-8568-4f7f-9656-dddf230c4869",
+      "result_id": "49a4bfd4-7dec-4e7f-bb95-8b1093d96787"
+    },
+    {
+      "claim_id": "574b4a08-16cc-460e-8147-e3d9bd52003e",
+      "result_id": "49a4bfd4-7dec-4e7f-bb95-8b1093d96787"
+    },
+    {
+      "claim_id": "735ede2d-6729-4f40-9a5e-7102d8f0ebee",
+      "result_id": "49a4bfd4-7dec-4e7f-bb95-8b1093d96787"
+    },
+    {
+      "claim_id": "a4805b91-77f2-4f79-9776-f536d562601c",
+      "result_id": "49a4bfd4-7dec-4e7f-bb95-8b1093d96787"
+    },
+    {
+      "claim_id": "0d89bd42-1dd6-45e8-bf81-786397a2626e",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "ee7b781e-2e77-4ed9-9d5e-0a699649236d",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "5ce825ce-89e5-4389-bd15-db1e32c00279",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "daac8da2-8d57-4ef2-a82b-9f0615917118",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "3a6e3f79-8238-46f3-8dcf-f905cbbf1f8f",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "addf5237-4ab4-434f-b767-a2fd8a262f36",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "6081d30d-52f2-4cfd-8e3e-774c60a857a2",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "115f8b62-344a-45e8-bf8f-9e3c559b9a5c",
+      "result_id": "f2b5abb9-2734-43bd-858a-160f552fc192"
+    },
+    {
+      "claim_id": "6291adf5-4e2c-4058-b4a8-a61cd9c05e00",
+      "result_id": "8d925f1d-f67e-4abe-bee7-5a3a2588ddc2"
+    },
+    {
+      "claim_id": "f486ae4d-3c8e-449f-b5f2-78134bdacf7b",
+      "result_id": "8d925f1d-f67e-4abe-bee7-5a3a2588ddc2"
+    },
+    {
+      "claim_id": "4403fdfd-f132-4b33-90a7-6fa3b55a4b00",
+      "result_id": "cfa5a466-44fe-4ad1-9244-8c63d48df9d8"
+    },
+    {
+      "claim_id": "318bf658-9e90-4acb-ac21-76bef66e1881",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    },
+    {
+      "claim_id": "48c2d00e-06d2-4ca6-99ea-7d051477e346",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    },
+    {
+      "claim_id": "dae79c05-5d82-4dc5-b6a4-ff8469e9133b",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    },
+    {
+      "claim_id": "96ec6a68-58d3-4819-bcd0-ed57c9f683b8",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    },
+    {
+      "claim_id": "8b96b235-caf1-4c63-abf5-ed5eee8be4f4",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    },
+    {
+      "claim_id": "d855859e-9701-4376-8606-ab8e20c4ec18",
+      "result_id": "f2a81bf2-5b45-4670-b503-fb8b1e7a2c84"
+    }
+  ],
+  "comparisons": []
+}

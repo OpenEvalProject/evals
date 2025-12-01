@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The manuscript establishes the background context for Peto's Paradox: body size and lifespan are correlated (C1), large body size evolution is biologically constrained (C2), cancer risk should increase with body size and cell number (C3, C4), yet no such correlation exists across species (C5, C6), as exemplified by low cancer rates in large animals like roe deer and beluga whales (C7, C8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish well-documented background knowledge about Peto's Paradox. C1 is supported by data from 2556 vertebrates (R\u00b2=0.32), C2-C6 are supported by appropriate citations to established literature, and C7-C8 provide specific epidemiological examples with proper citations. These claims collectively provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript reviews prior work showing that some small, long-lived mammals evolved specific cancer resistance mechanisms: naked mole rats evolved extremely sensitive contact inhibition (C9) and blind mole rats evolved enhanced TP53 signaling and necrotic cell death mechanisms (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 accurately cite prior work on cancer resistance mechanisms in small mammals. These are appropriately referenced and provide relevant context for understanding alternative evolutionary solutions to cancer risk. The citations appear accurate based on the provided references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The elephant genome encodes 20 copies of TP53 (1 canonical + 19 retrogenes), with 14 retaining coding potential (C11, C22, C23). Comparative genomic analysis of 61 Sarcopterygian species shows all encode a single TP53 gene (C17), with only a few lineages containing TP53 retrogenes (C18), including single retrogenes in tenrec, hyrax, and manatee (C19-C21).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genomic analysis is well-supported by systematic BLAT searches across 61 species and detailed characterization of African elephant TP53 genes (Table 1, Figure 2A). The methods are appropriate and the findings are clearly documented. The claim of 20 total copies (1 canonical + 19 retrogenes) is consistently supported throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29"
+    ],
+    "result": "TP53RTG copy number in Asian elephants is estimated at 12-17, approximately 14 in both mammoth species (C24-C26), and lower (3-8) in the ancient mastodon (C29). These data indicate large-scale TP53RTG expansion occurred in the Proboscidean lineage (C28), with lower copy numbers in more ancient species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The copy number estimates rely on ancient DNA from extinct species and use three different computational methods (1:1 orthology, gene tree reconciliation, normalized read depth) that yield ranges rather than precise counts. While the methods are reasonable, the uncertainty in ancient DNA quality, coverage, and assembly completeness makes these estimates approximate. The trend of increasing copy number is supported, but precise values should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "TP53RTG genes expanded through segmental duplications rather than serial retrotransposition, as evidenced by nearly identical flanking transposable elements (C30), >80% sequence similarity in surrounding genomic regions (C31), and embedding within large locally collinear blocks (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are well-supported by multiple lines of genomic evidence shown in Figure 3. The presence of identical transposable element clusters, high sequence conservation in flanking regions, and progressiveMAUVE alignment showing locally collinear blocks all consistently support the segmental duplication mechanism. The methods are appropriate and the evidence converges on a single conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Phylogenetic analysis shows TP53RTG genes from elephant, hyrax, and manatee form a well-supported clade (C33), while tenrec TP53/TP53RTG genes form a separate clade (C34), indicating independent retrotransposition events in tenrecs and the Paenungulata stem-lineage (C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic inference is supported by multiple methods (maximum likelihood, Bayesian) all yielding consistent topologies with strong support values (Figure 4A, Figure 4\u2014figure supplement 1). The conclusion of independent retrotransposition events is a reasonable inference from the well-supported phylogenetic structure. The methods are rigorous and appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C12"
+    ],
+    "result": "Time-calibrated phylogeny indicates the initial TP53 retrotransposition occurred ~64 MYA in Paenungulata (C36), followed by rapid expansion after ~40 MYA (C37). The increase in TP53RTG copy number closely mirrors Proboscidean body size evolution (C38, C12), suggesting a causal relationship.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-calibrated Bayesian phylogeny with appropriate node calibrations provides reasonable divergence time estimates with credible intervals (Figure 4A). The correlation between TP53RTG copy number and body size evolution is visually compelling (Figure 4B). However, correlation does not establish causation\u2014the temporal coincidence is suggestive but not definitive proof of a causal relationship. The claim of coincidence is supported; the causal inference (C12, C16) requires additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C13"
+    ],
+    "result": "TP53 and TP53RTG12 are robustly transcribed in all elephant samples (C39), while TP53RTG3 and TP53RTG18 show lower expression (C40). RT-PCR and Sanger sequencing confirm transcription of TP53RTG12, TP53RTG18/19 in African elephants and TP53RTG12, TP53RTG13 in Asian elephants (C41-C44), demonstrating that several TP53RTG genes are transcribed (C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcription evidence is strong, combining RNA-Seq data (Figure 5A) with RT-PCR validation and Sanger sequencing confirmation (Figure 5B, Figure 5\u2014figure supplement 1). The use of poly-T primers for cDNA synthesis confirms poly-adenylation. Multiple independent methods converge on the same conclusion. The evidence clearly demonstrates transcription of multiple TP53RTG genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "TP53RTG transcripts are poly-adenylated (C45). The TP53RTG12 transcription initiation site is located within a RTE1_LA transposable element (C46), which functions as a promoter in elephant cells (C47, C48) but the consensus RTE1_LA sequence does not (C49, C50), indicating the promoter function is derived rather than ancestral (C51, C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The poly-adenylation inference from poly-T primer usage is valid (C45). The promoter localization is supported by computational prediction, RNA-Seq mapping, and PCR tiling (Figure 5C). The luciferase assays provide functional validation that the elephant-specific RTE1_LA elements have promoter activity while the consensus sequence does not (Figure 5D), supporting the conclusion of derived promoter function. The evidence is comprehensive and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Western blot analysis identified bands at expected sizes for full-length p53, \u0394133 p53\u03b2/\u03b3, and p53\u03c8-like isoforms in elephant and hyrax cells, as well as an elephant-specific band consistent with TP53RTG12/TP53RTG19 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Western blots show bands at expected molecular weights (Figure 5E), the interpretation is complicated by: (1) the polyclonal antibody (FL-393) may have variable specificity across species, (2) multiple TP53 isoforms and TP53RTG proteins have similar predicted sizes, making definitive identification difficult, (3) the elephant-specific band could represent multiple proteins, and (4) no peptide sequencing or more specific validation was performed. The evidence is suggestive but not definitive for TP53RTG protein translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Elephant cells show enhanced TP53 signaling at lower doses of DNA-damaging agents compared to related species (C55, C56), with lower doses inducing apoptosis (C57) and greater magnitude responses (C58, C59). However, elephant cells are resistant to nutlin-3a-induced apoptosis despite strong TP53 transcriptional response (C60, C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional assays are well-designed with appropriate controls and outgroup species (hyrax, aardvark, armadillo). The luciferase reporter assays (Figure 6A) and ApoTox-Glo assays (Figure 6B) provide complementary evidence. The nutlin-3a resistance is particularly interesting as it dissociates TP53 transcriptional activity from apoptosis induction. Sample sizes (n=12) and statistical analyses appear adequate. The evidence strongly supports enhanced TP53 responses in elephants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C15"
+    ],
+    "result": "siRNA knockdown experiments show that TP53RTG genes are required for enhanced TP53 signaling in response to DNA damage and MDM2 antagonism (C62, C63), but knockdown also elevates baseline TP53 signaling (C64). This suggests TP53RTG proteins have dual functions: inhibiting TP53 signaling at baseline and potentiating it after DNA damage (C65, C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA experiments are well-controlled with scrambled siRNA controls and demonstrate specific knockdown of TP53RTG without affecting TP53 expression (Figure 7A). The dual effects on baseline and induced TP53 signaling (Figure 7B) are clearly demonstrated and statistically significant. The inference of dual functions is reasonable given the data, though the molecular mechanism remains unclear. The evidence supports the necessity of TP53RTG genes for the enhanced response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Co-immunoprecipitation shows TP53RTG12 interacts with TP53 (C66) but not MDM2 (C67). All TP53RTG proteins contain a W23G substitution not found in elephant TP53 (C68), which occurred before gene family expansion (C69) and likely prevents TP53RTG-MDM2 interaction (C70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The co-IP experiments provide direct biochemical evidence for TP53RTG12-TP53 interaction but not TP53RTG12-MDM2 interaction (Figure 10E, J). The W23G substitution is documented by sequence analysis and structural modeling predicts it would destabilize the MDM2 interaction (\u0394\u0394G values all negative, Figure 10D). The phylogenetic inference that W23G occurred before expansion is reasonable. The evidence converges to support these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Heterologous expression of TP53RTG12 in mouse cells dramatically augments TP53 signaling (C71) and significantly increases apoptosis in response to DNA damage (C72), demonstrating trans-dominant enhancement of endogenous TP53 function (C73, C74). The protein rather than transcript is responsible since a mouse codon-optimized sequence was used (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gain-of-function experiments in mouse cells provide strong evidence for sufficiency of TP53RTG12 to enhance TP53 responses (Figure 8A, B). The use of mouse codon-optimized sequence (73% identical to elephant) is a clever control that argues for protein-mediated effects rather than RNA-based mechanisms. The trans-dominant mechanism is clearly demonstrated. Statistical significance is shown (p<0.001). This is compelling evidence for TP53RTG12 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C14"
+    ],
+    "result": "TP53RTG proteins lack critical residues for nuclear localization, tetramerization, and DNA binding (C76), yet TP53RTG12 localizes to both cytoplasm and nucleus (C77), suggesting interaction with a nuclear protein for import (C78). TP53RTG12 does not activate transcription in reporter assays (C79, C80, C14), indicating it does not directly function as a transcription factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain analysis (Figure 9A) clearly shows TP53RTG proteins lack key functional domains. The unexpected nuclear localization (Figure 9B) is well-documented by microscopy. The lack of transcriptional activity (Figure 9C) is demonstrated by appropriate reporter assays. The inference that TP53RTG12 requires a cofactor for nuclear import is reasonable given it lacks an NLS. The evidence supports the conclusion that TP53RTG proteins do not function as conventional transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Many TP53RTG proteins retain the MDM2 interaction motif and dimerization sites (C81). Prior work shows TP53 tetramerization is required for MDM2-mediated ubiquitination (C82), and transgenic mice with increased TP53 copy number or hypomorphic Mdm2 have elevated basal TP53 activity and tumor resistance (C83), indicating that shifting TP53-MDM2 equilibrium promotes cancer resistance (C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C81 is supported by domain analysis (Figure 9A). C82-C84 accurately cite relevant prior work that provides important mechanistic context. The citations appear appropriate and the logic connecting these observations to the proposed guardian model is sound. These claims establish the conceptual framework for interpreting the TP53RTG mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Functional TP53 duplicates are rare, occurring only in elephants and possibly some bats (C85), suggesting increased TP53 dosage has costs (C86). Transgenic mice overexpressing TP53 show cancer resistance but suffer life history tradeoffs including reduced growth, lifespan, and fertility (C87, C88). However, 'super p53' mice with 1-2 extra endogenous copies age normally and are fertile (C89), suggesting costs are incurred above 2-3 extra copies (C90) and can be reduced by maintaining normal regulation (C91, C92).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rarity of TP53 duplicates is supported by the genomic survey of 61 species (C85). The discussion of costs is well-supported by extensive citations to transgenic mouse studies (C87-C92). The distinction between overexpression models and 'super p53' models with intact regulation is important and well-documented in the cited literature. This provides crucial context for understanding why elephants can tolerate many TP53 copies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Proboscideans evolved mechanisms to reduce or evade the costs of increased TP53 dosage (C93). Initial TP53RTG genes likely were not transcribed since they acquired promoters later (C94), and copy number expanded after acquiring mutations including premature stop codons that eliminate DNA-binding domains (C95), possibly minimizing costs through non-functional intermediates (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C93 is a reasonable inference but remains speculative without direct evidence of costs in elephants. C94 is supported by the observation that the RTE1_LA promoter is younger than the retrogenes, but the precise timing is uncertain. C95 is supported by phylogenetic analysis showing stop codons arose before expansion. C96 is explicitly speculative ('it is possible'). These claims present plausible evolutionary scenarios but lack direct experimental validation. The logic is sound but the evidence is largely inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "The increase in TP53 copy number may have played a direct role in the evolution of large body sizes and resolution of Peto's paradox in Proboscideans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the central hypothesis of the paper. While the temporal correlation between TP53RTG expansion and body size evolution is compelling (C38), and the functional data show TP53RTG genes enhance DNA damage responses (C15, C71-C74), the evidence is correlative rather than causal. The manuscript does not demonstrate that: (1) elephants actually have lower cancer rates than expected, (2) TP53RTG genes directly reduce cancer incidence, or (3) TP53RTG expansion was necessary or sufficient for large body size evolution. The hypothesis is well-supported by circumstantial evidence but requires additional validation, particularly actual cancer incidence data in elephants.",
+    "result_type": "MAJOR"
+  }
+]

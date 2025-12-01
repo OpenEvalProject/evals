@@ -1,0 +1,361 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Multistability is a mechanism used by cells to achieve discrete mutually exclusive states in response to environmental inputs, with examples in both prokaryotic and eukaryotic systems including cell differentiation and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by appropriate citations to prior work. These claims establish the biological context and motivation for the study by reviewing established knowledge about multistability in cellular systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Waddington's epigenetic landscape hypothesis can be mathematically modeled using dynamical systems where local minima represent steady states or attractors, allowing cell differentiation to be interpreted as state transitions in a multistable system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 are supported by citations to Waddington's original work and subsequent theoretical studies. These claims establish the theoretical framework connecting Waddington's conceptual model to mathematical dynamical systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "While theoretical studies have predicted multistability beyond bistable switches and characterized potential landscapes, experimental demonstrations of higher-dimensional multistable systems are lacking, and it remains unknown how GRNs, noise, and signals together shape landscapes and determine cell fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 identify a gap in the literature that motivates the current study. These claims are supported by citations to relevant theoretical work and accurately characterize the state of experimental research in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Synthetic multistable gene networks in E. coli could enable experimental investigation of GRN-regulated cellular state transitions, with principles applicable to mammalian cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C18 are speculative proposals about the potential of synthetic biology approaches. While the logic is reasonable, C18's claim about applicability to mammalian systems is not validated in this study and remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The study investigates MINPA (mutually inhibitory network with positive autoregulations) and its sub-networks, which are recurring motifs in GRNs regulating various differentiation processes including hematopoietic, trophectoderm, endoderm, and bone/cartilage/fat differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 describe the study's approach and biological relevance of MINPA. The claims are supported by appropriate citations showing that MINPA motifs appear in natural developmental systems, providing biological justification for studying this network topology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The engineered MINPA circuit uses two hybrid promoters (Para/lac and Plux/tet) with small leakage and high nonlinearity, implementing mutual inhibition and positive autoregulation through AraC/TetR and LuxR/LacI, with GFP and mCherry as readouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C33 describe the molecular implementation of MINPA and are supported by experimental characterization data shown in Figure 1D-E and supplementary figures. The circuit design is clearly documented with appropriate experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Computational analysis shows that networks with two auto-activations (A2, RA2, R2A2) have high probability of tristability or quadrastability, with MINPA having broader parameter distributions suggesting greater robustness and likelihood of achieving multistability experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by computational analysis shown in Figure 1\u2014figure supplement 1G-I. The parameter space exploration provides quantitative evidence for MINPA's predicted multistability and robustness, though experimental validation is still required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Nine circuits were constructed representing different MINPA sub-networks, excluding one-dimensional and trivial two-dimensional networks with low multistability probability, all using the same set of components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe the experimental construction strategy. The rationale for circuit selection is logical based on computational predictions, and the use of common components enables fair comparison across topologies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A 'sequential induction' method was designed to efficiently probe multistability in high-dimensional bifurcation spaces, based on the principle that multistable networks exhibit discontinuous jumps between states in response to changing inducer combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 describe a methodological innovation. The approach is well-justified by citations to prior work on hysteresis experiments and the practical limitations of conventional approaches for complex networks with multiple inducers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "A synthetic toggle switch circuit validated the sequential induction approach, showing that cells induced with IPTG then aTc stayed at low-GFP state while cells induced with aTc then IPTG stayed at high-GFP state, demonstrating that sequential induction can explore multistable landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by experimental data in Figure 2\u2014figure supplement 1. The toggle switch validation provides proof-of-concept for the sequential induction methodology before applying it to more complex networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Sequential induction strategies have been employed in other biological contexts including accessing cell death states in cancer cells, directed differentiation of stem cells, and reprogramming to induced pluripotent stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by appropriate citations and provide biological context for the sequential induction approach, showing its relevance beyond synthetic circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Sequential induction experiments with different inducer combinations showed that T15 (full MINPA topology) exhibits the most variety and complexity in population heterogeneity, including tri-modality, suggesting it has the highest potential for complex multistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by experimental data in Figure 2B-D and supplementary figures. The systematic comparison across different topologies and induction conditions provides strong evidence that T15 exhibits the most complex dynamics among tested circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The engineered MINPA circuit can reach four distinct states through appropriate inductions: low-low (uninduced), GFP state (AHL+aTc), mCherry state (Arabinose), and high-high state (Arabinose+AHL), demonstrating full controllability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by experimental data in Figure 3A. The demonstration of four controllable states is a key result showing that the circuit functions as designed and can access multiple stable states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A mathematical model with bifurcation analysis predicts that MINPA is quadrastable at low AR/AL with dominant low-low state attractiveness, becomes well-balanced quadrastable at intermediate AR/AL, transitions to tristable at higher AR/AL (losing GFP state), and becomes monostable (high-high only) at very high AR/AL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe model predictions shown in Figure 3B and supplementary figures. The bifurcation analysis provides quantitative predictions about how the landscape changes with inducer concentrations, guiding experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Hysteresis experiments validated model predictions, showing uniform low-low at C1, tri-modality at C3, uniform high-high at C4, and that cells initialized at high-high state maintain that state even at low induction (C1), demonstrating clear hysteresis and verifying three of four predicted stable states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by experimental data in Figure 3C-D and supplementary figures. The hysteresis experiments provide strong evidence for multistability, though the GFP state was not easily accessible in these conditions (C75-C76), which is acknowledged and explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Quasi-potential landscape calculations show that MINPA is quadrastable with four local minima even without inducers, with the low-low state having much stronger stability and high transition barriers explaining the homogeneous low-low population observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by landscape calculations shown in Figure 4A. The quasi-potential landscape provides mechanistic explanation for experimental observations and connects the mathematical model to the Waddington landscape concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simultaneous induction with Arabinose, AHL, and aTc produced quadramodal distributions in flow cytometry, and single-cell microscopy showed low-low state cells differentiating into GFP, mCherry, and high-high states, finally verifying predicted quadrastability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by experimental data in Figure 4B and Figure 4\u2014figure supplement 1B-D. The combination of flow cytometry and single-cell microscopy provides strong evidence for quadrastability, representing a key validation of the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The 'left route' (AHL+aTc then Arabinose) was predicted to enable transitions through GFP state to reach all four states, and experimental testing confirmed four stable populations with ~12% cells moving to GFP state at 6.5 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by landscape analysis (Figure 4A) and experimental data (Figure 4C and supplementary figures). The agreement between model predictions and experimental observations demonstrates the predictive power of the landscape framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The 'right route' (Arabinose then AHL+aTc) was predicted to produce only low-low and mCherry states due to deep mCherry valley and low GFP attractiveness, and experimental testing confirmed bimodal distribution with most cells transitioning to mCherry state by 9.5 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by landscape analysis and experimental data in Figure 4A, D and supplementary figures. The route-dependent outcomes demonstrate how sequential induction order shapes the accessible landscape and determines final cell fates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The engineered quadrastable MINPA circuit demonstrates that cell fate choices can be guided by shaping the potential landscape through sequential inductions, serving as proof-of-principle for the Waddington landscape and suggesting mechanistic explanations for fixed induction sequences in targeted differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C98-C100 represent the main conclusions of the study. These are well-supported by the combination of computational modeling, landscape analysis, and experimental validation showing route-dependent cell fate determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MINPA represents one of the most complicated two-node network topologies with four genes implementing a web of regulations, and since biological complexity correlates with regulatory connections rather than gene number, MINPA may provide a framework for understanding densely connected GRNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 discuss the complexity and potential broader applicability of MINPA. C96 is supported by citation, while C97 is speculative but reasonable given the demonstrated complexity of MINPA dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "This study helps reveal fundamental mechanisms of cell-fate determination and provides a theoretical foundation for systematic understanding of cell differentiation, which will lead to development of new strategies to program cell fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 makes broad statements about impact and future applications. While the study does provide insights into cell fate determination mechanisms, the claim about leading to new strategies for programming cell fate is speculative and not directly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Experimental methods included molecular cloning in E. coli DH10B, measurements in E. coli K-12 MG1655\u0394lacI\u0394araCBAD strain, growth at 37\u00b0C in LB medium with antibiotics, and flow cytometry analysis collecting 100,000 events per sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 describe standard experimental methods that are clearly documented in the Materials and Methods section. These methodological details are appropriate and sufficient for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

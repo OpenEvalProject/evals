@@ -1,0 +1,1929 @@
+{
+  "submission": {
+    "id": "92ceeb7e-5379-4cd1-9312-6525c3d6bc9c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T23:54:29.462592Z",
+    "updated_at": "2025-11-30T23:54:29.462592Z"
+  },
+  "content": [
+    {
+      "id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "submission_id": "92ceeb7e-5379-4cd1-9312-6525c3d6bc9c",
+      "content_type": "manuscript",
+      "content_text": "# sRNA-mediated activation of gene expression by inhibition of 5'-3\u2019 exonucleolytic mRNA degradation\n\n## Authors\n\n- Sylvain Durand<sup>1</sup> ([ORCID: 0000-0003-3509-6463](https://orcid.org/0000-0003-3509-6463)) \u2020\n- Fr\u00e9d\u00e9rique Braun<sup>1</sup>\n- Anne-Catherine Helfer<sup>2</sup>\n- Pascale Romby<sup>1</sup>\n- Ciar\u00e1n Condon<sup>1</sup> \u2020\n\n### Affiliations\n\n1. UMR8261 CNRS, Universit\u00e9 Paris Diderot (Sorbonne Paris Cit\u00e9), Institut de Biologie Physico-Chimique Paris France\n2. Universit\u00e9 de Strasbourg, CNRS, Architecture et R\u00e9activit\u00e9 de l\u2019ARN Strasbourg France\n\n\u2020 Corresponding author\n\n## Abstract\n\nPost-transcriptional control by small regulatory RNA (sRNA) is critical for rapid adaptive processes. sRNAs can directly modulate mRNA degradation in Proteobacteria without interfering with translation. However, Firmicutes have a fundamentally different set of ribonucleases for mRNA degradation and whether sRNAs can regulate the activity of these enzymes is an open question. We show that Bacillus subtilis RoxS, a major trans-acting sRNA shared with Staphylococus aureus, prevents degradation of the yflS mRNA, encoding a malate transporter. In the presence of malate, RoxS transiently escapes from repression by the NADH-sensitive transcription factor Rex and binds to the extreme 5\u2019-end of yflS mRNA. This impairs the 5\u2019-3\u2019 exoribonuclease activity of RNase J1, increasing the half-life of the primary transcript and concomitantly enhancing ribosome binding to increase expression of the transporter. Globally, the different targets regulated by RoxS suggest that it helps readjust the cellular NAD+/NADH balance when perturbed by different stimuli.\n\n## Introduction\n\nPost-transcriptional regulation is a rapid and efficient way to modulate gene expression used by all organisms. In bacteria, this regulation can involve cis-acting regulatory elements such as riboswitches, which bind small molecules and modify transcription elongation, translation or mRNA stability. It can equally involve trans-acting factors such as proteins (RNases or RNA binding proteins) and small regulatory RNAs (sRNAs). sRNAs can be encoded in cis (antisense RNA) or in trans relative to their target mRNAs and these regulatory mechanisms can be superimposed on each other to create complex control networks.\n\nThe two best-studied model bacteria Escherichia coli and Bacillus subtilis have evolved with different arsenals of ribonucleases and alternative approaches to the fundamental cellular processes of RNA maturation and degradation (Bechhofer, 2009;\u00a0Durand et al., 2015b; Condon and Putzer, 2002). Only eight of the\u00a0>30 ribonucleases currently identified in these two bacteria are present in both organisms. E. coli depends primarily on endonucleolytic cleavage by RNase E to initiate RNA turnover, followed by degradation of the resulting fragments in a 3\u2019-to-5\u2019 orientation by exoribonucleases. B. subtilis, on the other hand, has replaced RNase E by an enzyme with similar properties called RNase Y and has the additional option of exonucleolytically degrading RNAs from the 5\u2019 end using an enzyme called RNase J1 (Mathy et al., 2007). In this regard, B. subtilis shares features with the eukaryotic model of RNA decay and this observation has obscured some of the traditional divisions between \u00ab prokaryotic \u00bb and \u00ab eukaryotic \u00bb pathways of RNA degradation.\n\nSmall regulatory RNAs have been mostly studied in Gram-negative bacteria, especially in E. coli and its pathogenic relatives. In these organisms, sRNAs generally act by an imperfect base pairing with their target mRNAs. The interaction between sRNA and mRNA often requires the chaperone Hfq, an Sm-like protein that both stabilizes the sRNA and facilitates the pairing with mRNA targets (for review, see Updegrove et al., 2016). The sRNA-mRNA interaction can lead to a positive or a negative effect on gene expression. In bacteria, most sRNAs examined to date directly affect mRNA translation with an indirect effect on mRNA half-life (reviewed in Wagner and Romby, 2015). However, some more recent studies have shown that sRNAs are also able to directly affect mRNA stability without affecting translation, by recruiting the degradation machinery or interfering with its action (reviewed in Lalaouna et al., 2013). In one particular example, the ternary complex formed between the sRNA (MicC), the mRNA (ompD) and Hfq can recruit RNase E to a site within the open reading frame and stimulate its cleavage by presenting the 5\u2019 monophosphate of the sRNA to RNase E (Bandyra et al., 2012). In another, the sRNA RydC increases the stability of the cfa mRNA by pairing to the 5\u2019-UTR of this mRNA, far upstream of the ribosome binding site, and hiding a cleavage site from RNase E (Fr\u00f6hlich et al., 2013).\n\nSmall RNAs have also been studied in some Gram-positive pathogenic bacteria such as Staphylococcus aureus and Streptococcus pyogenes, but in B. subtilis, the paradigm of Gram-positive bacteria, only a handful of sRNAs have been characterized to date and the global mechanisms of sRNA regulation have not been fully resolved (Durand et al., 2015b). In these bacteria, Hfq is generally not required for sRNA-mRNA pairing (H\u00e4mmerle et al., 2014; Rochat et al., 2015) although there are some exceptions in specific organisms (Nielsen et al., 2010; Boudry et al., 2014). One key question is to what extent RNases J1 and Y are influenced by sRNA binding to mRNA targets in B. subtilis, i.e. can E. coli models involving RNase E be transposed to these RNases in its Gram-positive counterpart?\n\nRoxS (related to oxidative stress) is the unique trans-acting sRNA, apart from the ubiquitous 6S RNA, that is conserved between B. subtilis and the Gram-positive pathogen S. aureus. First identified in S. aureus where it is named RsaE, it was shown to regulate genes involved in amino acid and peptide transport, cofactor synthesis, lipid metabolism, carbohydrate metabolism and the TCA cycle (Geissmann et al., 2009). In a previous study, we showed that RoxS transcription is induced during nitric oxide (NO) stress by the two-component system ResDE and regulates the expression of numerous genes linked to oxido-reduction processes in B. subtilis (Durand et al., 2015a). In searching for additional direct targets of RoxS that may not have been expressed under the experimental conditions of the first study, we found that RoxS potentially interacts with the extreme 5\u2019-end of the yflS mRNA, encoding a malate transporter in B. subtilis. We show here that RoxS expression is greatly increased in the presence of malate in the medium and acts as a positive regulator of transporter expression by directly blocking yflS mRNA degradation by the 5\u2019\u22123\u2019 exoribonuclease J1. This is the first known case of an sRNA controlling 5'-exoribonuclease activity in bacteria. RoxS can further stimulate translation of the stabilized yflS mRNA, possibly by opening a specific fold of the mRNA that partially occludes the ribosome binding site, providing an additional layer of complexity to the control mechanism. Lastly, we show that RoxS expression is controlled by Rex, a transcriptional repressor of genes linked to fermentation processes that senses the NAD+/NADH balance in the cell. The increase in RoxS expression in the presence of malate is explained by a release from Rex-mediated repression, allowing a far more efficient regulation of RoxS targets than seen previously.\n\n## Results\n\nIn a previous study we showed that RoxS, either directly or indirectly, negatively regulates the expression of up to a hundred genes, including two mRNAs encoding proteins involved in central carbon metabolism: ppnkB (encoding an inorganic polyphosphate/ATP-NAD kinase) and sucCD (encoding succinate dehydrogenase) (Durand et al., 2015a). In both cases, RoxS binds to the Shine-Dalgarno (SD) sequences and inhibits translation initiation. To expand the number of direct RoxS targets, we searched for new potential binding sites for this sRNA (TargetRNA2; Kery et al., 2014) that we might have missed in the first study because of the specific growth conditions used (rich medium at 37\u00b0C). One such predicted target, the yflS mRNA (encoding one of at least four malate transporters in B. subtilis) drew our attention because RoxS was predicted to bind to the extreme 5\u2019-end of the mRNA well upstream of the ribosome binding site (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig1-v2.jpg)\n\n**Figure 1.:** The transcriptional start (+1) of the yflS mRNA is indicated. This was mapped in Figure 1\u2014figure supplement 1 and its conservation is shown in Figure 1\u2014figure supplement 2. The C-rich regions (CRR) of RoxS are in blue. Mutations CRR1 and CRR3 are indicated by arrows.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Total RNA was extracted at mid-exponential phase (OD600\u00a0=\u00a00.6) from the WT strain grown in the presence of 0.5% malate and treated (+) or not (\u2212) with Xrn1 to digest 5\u2019 monophosphorylated RNA. The sequence is labeled as its reverse complement to facilitate direct read-out. The yflS transcriptional start (+1) is indicated on the gel. As a control of the digestion of 5\u2019 monophosphorylated RNAs with XrnI, a primer extension assay was performed with an oligonucleotide specific for the hbs mRNA. Transcripts from hbs promoters (P1 and P3, tri-P) and maturation product (M, mono-P) are indicated on the right of the gel.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Alignment of the yflS promoter region and 5'-UTR in Bacilli containing a clearly identifiable yflS gene through synteny. (B. subtilis and related bacteria have several di- and tri-carboxylate transporters homologous to YflS making it difficult to identify this particular transporter with certainty). The \u221235 and \u221210 regions are indicated, in addition to the transcription initiation site (+1) identified in B. subtilis. Conserved nts are indicated with an asterisk.\n\n### Mapping of the 5\u2019 extremity of the yflS mRNA\n\nThe RoxS sRNA is predicted to base-pair to the extreme 5\u2019 end of the yflS mRNA transcribed from a putative \u221210 promoter element located 44 nucleotides (nts) upstream of the translational start codon. To confirm the existence of a 5' end corresponding to this promoter prediction and confirm it was a primary rather than processed transcript, we performed primer extension assays on total RNA with or without pretreatment with the 5\u2019\u22123\u2019 exoribonuclease Xrn1. This ribonuclease only degrades RNAs with a 5\u2019-monophosphate and leaves 5'-triphosphorylated primary transcripts intact. As a control, we used the hbs mRNA, for which two primary transcripts (P3 and P1) and a ribosome-protected maturation product (M) can be detected in vivo (Daou-Chabo et al., 2009). Treatment of total RNA by Xrn1 caused the 5'-monophosphorylated end corresponding to the hbs maturation product to disappear as expected. In contrast, the 5' ends corresponding to the P3/P1 primary transcripts of hbs and the predicted primary transcript of yflS were resistant to Xrn1 treatment (Figure 1\u2014figure supplement 1). The primer extension product obtained with the yflS-specific oligonucleotide mapped to two consecutive residues (Figure 1\u2014figure supplement 1) suggesting that the yflS mRNA can start at an A or G residue, 5 or 6 nts downstream of the predicted \u221210 region, and thus has a 38/39 nt 5\u2019-UTR. This promoter and 5'-UTR is highly conserved among Bacilli with a clearly identifiable yflS gene (Figure 1\u2014figure supplement 2). Since the RoxS sRNA sequence is identical to that of B. subtilis in these organisms, the predicted base-pairing with the 5' end of the yflS mRNA is likely to be conserved.\n\n### RoxS regulates yflS mRNA stability\n\nThe yflS gene encodes a malate transporter whose expression is induced by the two-component system (MalKR), which senses the presence of malate in the medium (Tanaka et al., 2003). To determine whether RoxS had an effect on yflS expression, we compared the half-life of this mRNA in WT and \u2206roxS strains grown in 2xTY containing 0.5% malate (Figure 2A, Figure 2\u2014figure supplement 1). We detected a single band of approximately 1.5 kb corresponding to the predicted size of the full-length yflS mRNA on Northern blots of total RNA isolated at different times after addition of rifampicin to stop new transcription. The half-life of the yflS mRNA was 2.5 min in a WT strain but decreased to 0.7 min in the absence of RoxS. Thus, RoxS stabilizes the yflS mRNA about 3.6-fold, presumably by protecting it from degradation by cellular RNases.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig2-v2.jpg)\n\n**Figure 2.:** A representative Northern blot showing total RNA isolated at times after addition of rifampicin (Rif) to (A) WT and \u2206roxS strains, (B) \u2206rnc and \u2206rnc \u2206roxS strains, (C) \u2206rny and \u2206rny \u2206roxS strains, (D) \u2206rnjA and \u2206rnjA \u2206roxS strains and (E) \u2206rppH and \u2206rppH \u2206roxS strains grown in the presence of 0.5% malate. Rifampicin was added at mid-exponential phase (OD600\u00a0=\u00a00.6). Half-lives calculated from two independent experiments (biological replicates) are given under each autoradiogram. The quantification of the Northern blots is presented in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** RNA decay curves showing the log percent RNA remaining versus time after rifampicin addition to (A) WT and \u2206roxS strains, (B) \u2206rnc and \u2206rnc \u2206roxS strains, (C) \u2206rny and \u2206rny \u2206roxS strains, (D) \u2206rnjA and \u2206rnjA \u2206roxS strains and (E) \u2206rppH and \u2206rppH \u2206roxS strains, grown in the presence of 0.5% malate. The data shown correspond to the quantification of two independent experiments (biological replicates). See also Figure 2\u2014figure supplement 1\u2014source data 1.\n\n### RoxS blocks degradation of the yflS mRNA by RNase J1\n\nTo identify which RNase(s) attack the yflS mRNA in the absence of RoxS, we measured the half-life of the yflS mRNA in strains lacking the three main RNases involved in B. subtilis mRNA degradation (RNase III, RNase Y and RNase J1). These experiments were done both in the presence and absence of RoxS (Figure 2B\u2013D, Figure 2\u2014figure supplement 1). Deletion of the gene encoding RNase III (\u2206rnc) had no major impact on yflS mRNA half-life in either the presence (3.1 min) or absence (0.7 min) of RoxS (Figure 2B compared to Figure 2A). In the RNase Y (\u2206rny) mutant strain, the full-length yflS mRNA was stabilized about 10-fold compared to WT (25.9 min vs 2.5 min half-life) and in the \u2206roxS \u2206rny double mutant compared to the \u2206roxS single mutant (9.5 min vs 0.7 min). This result shows that RNase Y plays a major role in yflS mRNA turnover. However, the yflS mRNA is still destabilized about 2.7-fold in the absence of RoxS in the \u2206rny mutant background (25.9 min vs 9.5 min half-lives, respectively, in the \u2206rny and \u2206roxS \u2206rny strains). This suggests that RoxS does not protect the full-length yflS transcript from attack by RNase Y and that the effect of RNase Y on yflS turnover is RoxS-independent.\n\nThe deletion of rnjA gene, encoding the 5\u2019\u22123\u2019 exoribonuclease RNase J1, led to a massive accumulation of stable degradation intermediates, presumably the products of endonucleoytic cleavage by RNase Y. The accumulation of these 3' fragments was similar in the presence or absence of RoxS, consistent with the observation (above) that RNase Y cleavages were RoxS independent. In the presence of RoxS, the stability of the full-length yflS mRNA was slightly higher in the \u2206rnjA strain compared to wild-type strains (4 vs 2.5 min half-life, respectively). Remarkably, however, deletion of RoxS no longer destabilized the full-length yflS mRNA in the \u2206rnjA background (4 vs 3.8 min half-lives in \u2206rnjA and \u2206roxS \u2206rnjA strains, respectively). Thus, RoxS protects the full-length yflS mRNA from degradation by RNase J1 in vivo.\n\nRNase J1 is known to be inhibited by the tri-phosphate group present on the 5' end of primary transcripts (Mathy et al., 2007). Direct attack of the 5' end of the primary yflS transcript by RNase J1 in 5' exonucleolytic mode would thus require conversion of the 5' tri-phosphate to mono-phosphate. To date, the only known enzyme to catalyze this reaction in B. subtilis is the RNA pyrophosphohydrolase RppH (Richards et al., 2011), although other as yet unidentified enzymes are thought to have similar activity. BsRppH prefers a guanosine residue in the second position of its RNA substrates (Piton et al., 2013). As the yflS mRNA fulfills this requirement (i.e. it starts with AG or GG), we measured the half-life of the yflS mRNA in both \u2206rppH and \u2206roxS \u2206rppH strains (Figure 2E, Figure 2\u2014figure supplement 1). In the \u2206rppH strain, the half-life was similar to that measured in the wild-type (2.2 vs 2.5 min). The yflS half-life was also comparable between the \u2206rppH \u2206roxS and the \u2206roxS strains (both 0.7 min). Thus, RppH is not the enzyme responsible for the removal of the 5\u2019 tri-phosphate of yflS mRNA to give access to RNase J1. This result is consistent with the idea that other RNA pyrophosphohydrolase activities are waiting to be identified in B. subtilis.\n\n### RoxS protects yflS mRNA from in vitro degradation by RNase J1\n\nThe results described above suggested that RoxS protects the yflS full-length mRNA from attack by RNase J1 in vivo. To confirm this observation in vitro, we transcribed a fragment corresponding to the first 94 nucleotides of the yflS mRNA using T7 RNA polymerase and submitted this transcript to degradation by RNase J1 in the presence or absence of the RoxS sRNA. The RNA contained a 32P-labelled 5'-monophosphate group to mimic the in vivo situation following RNA pyrophosphohydrolase activity. The yflS RNA fragment was attacked by RNase J1 in 5'-exoribonuclease mode as indicated by the accumulation of free radio-labelled AMP at the bottom of the gel, beginning after only 2 min of incubation with the enzyme (Figure 3, lanes 2\u20135). In contrast, almost no AMP was visible when the reaction was performed in the presence of RoxS, showing clearly that the 5' end of yflS is protected from RNase J1 by the sRNA (Figure 3, lanes 8\u201311).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig3-v2.jpg)\n\n**Figure 3.:** (A) In vitro degradation of the 5\u2019 end of yflS RNA by RNase J1 \u00b1 RoxS sRNA or RoxS CRR mutants (see Figure 1). The yflS mRNA was in vitro transcribed, dephosphorylated with CIP and radiolabeled at its 5\u2019-end to obtain a 5\u2019 monophosphate extremity. Times after RNase J1 addition are indicated at the top of the gel. Reactions were done at 37\u00b0C. The migration positions of the yflS in vitro transcript (94 nt) and AMP are indicated. (B) Percent release of AMP from yflS substrate RNA by RNase J1 \u00b1 RoxS sRNA or RoxS CRR mutants as a function of time (minutes). The data shown correspond to the quantification of two independent experiments (technical replicates). See also Figure 3\u2014source data 1.\n\n### RoxS uses C-rich region 3 (CRR3) to interact with the extreme 5\u2019-end of yflS mRNA\n\nRoxS has four C-rich regions (CRRs) that can potentially base-pair with G-rich complementary sequences in its targets (Figure 1). In our previous work, we showed that RoxS mainly uses CRR3 to regulate the expression of the ppnkB mRNA (Durand et al., 2015a). To determine which CRR was most important for the interaction with yflS, we repeated the RNase J1 protection experiment using three different mutants of RoxS: one in CRR1, one in CRR3 and one combining both mutations (CRR1+3) (Figure 1). The RoxS CRR1 mutant still protected yflS against RNase J1 (Figure 3, lanes 14\u201317), suggesting that this region of RoxS is not important for the interaction with yflS. In contrast, the yflS RNA was no longer protected by the CRR3 RoxS mutant (Figure 3, lanes 20\u201323) or by the double CRR1+3 mutant (Figure 3, lanes 26\u201329). These results suggest that the CRR3 region of RoxS is the key C-rich motif for the initiation of base-pairing and protection of the 5' end of the yflS mRNA.\n\nTo confirm this result, we made compensatory mutations in the CRR3 of RoxS (CRR3-2) and at the 5' end of yflS (yflSmut5') (Figure 4A) and assayed the capability of these variants to protect yflS from RNase J1 degradation in vitro. The RoxS CRR3-2 mutant showed significantly weaker protection of the yflSWT transcript than wild-type RoxS (Figure 4B,C). Even though the yflSmut5' RNA was intrinsically a better substrate for RNase J1 than yflSWT, wild-type RoxS similarly showed weaker protection of the yflSmut5' RNA than the CRR3-2 compensatory mutant (Figure 4B,C). These experiments strongly support the predicted base-pairing between RoxS CRR3 and the 5' end of the yflS mRNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig4-v2.jpg)\n\n**Figure 4.:** (A) Base-pairing between yflS and RoxS, or yflSmut5' and RoxSCRR3-2 compensatory mutants (B) In vitro degradation of the 5\u2019 end of yflS and yflSmut5' transcripts by RNase J1 \u00b1 RoxS or the RoxSCRR3-2 mutant. yflS and yflSmut5' mRNAs were in vitro transcribed, dephosphorylated with CIP and radiolabeled at their 5\u2019-end to obtain a 5\u2019 monophosphate extremities. Times after RNase J1 addition are indicated at the top of the gel. Reactions were performed at 15\u00b0C to facilitate interaction between yflSmut5' and RoxSCRR3-2 because the \u2206G of the compensatory interaction is predicted to be weaker than the wt (\u22128.0 vs \u221213.7 kcal/mol). The migration positions of the yflS in vitro transcript (94 nt) and AMP are indicated. (C) Percent release of AMP from yflS and yflSmut5' substrate RNAs by RNase J1 \u00b1 RoxS or the RoxSCRR3-2 mutant as a function of time (minutes). The data shown correspond to the quantification of three independent experiments (technical replicates). Structure probing of RoxS \u00b1 yflS is shown in Figure 4\u2014figure supplement 1. See also Figure 4\u2014source data 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Enzymatic probing of the RoxS sRNA secondary structure in the presence and absence of yflS. The 5\u2019 end-labeled RoxS sRNA was digested with RNase V1 and RNase T2 and run on an 8% polyacrylamide\u2013urea gel. The enzymatic digestions were performed in the absence (\u2212) or in the presence of increasing concentrations of yflS mRNA (50, 100 and 400 nM) for digestion by RNase T2, and 50 and 100 nM for the experiment with RNase V1. Incubation controls (in the absence of RNase) were done in the absence (\u2212) and in the presence (+) of yflS (400 nM). The positions of CRR1, 2 and 3 are indicated to the right of the gel. The probing experiment was performed twice (technical replicates). (B) Secondary structure of the RoxS sRNA and effect of yflS binding. Summary of the cleavage patterns generated by RNase V1 (red arrows) and RNase T2 (green arrows). Increased cleavages upon addition of yflS are indicated by asterisks, increased protection by circles.\n\nLastly, we performed structure probing of RoxS in the presence and absence of yflS using the RNase V1 (specific for double stranded RNA) and RNase T2 (preference for unpaired adenines). The cleavage sites were in good agreement with the secondary structure of RoxS, as most of the strong RNase T2 cuts were located in the apical loops, while the RNase V1 cuts were primarily located in the helices (Figure 4\u2014figure supplement 1). The addition of yflS RNA caused limited changes in reactivity restricted to the region encompassing CRR2 and CRR3. Several RNase V1 cleavages were induced close to CRR3 (at nts 63\u201365). Concomitantly, several RNase T2 cleavages located between CRR2 and CRR3 decreased under the same conditions. Together, these observations show convincingly that, as for the ppnKB mRNA, RoxS primarily uses the CRR3 region to hybridize to yflS mRNA.\n\n### RoxS also activates translation of the yflS mRNA\n\nThe data presented thus far suggests that RoxS binds to the 5\u2019 end of the yflS mRNA principally via the CRR3 motif to protect it from degradation by RNase J1. To determine the impact of RoxS binding on the conformation of the yflS mRNA and potentially on translation, we also probed the secondary structure of the leader portion of yflS alone or bound to RoxS. The probes used in this case were RNase V1, RNase T1 (specific for unpaired guanines) and RNase T2. A summary of the results is presented in Figure 5. In the absence of RoxS, two equilibrium secondary structure models best explain the enzymatic cleavage patterns detected. In the two proposed models, the SD and the AUG start codon are engaged in weak basepairing interactions, while the four guanines at the extreme 5\u2019 end of the yflS mRNA are accessible to RNase T1 and are therefore in single-stranded conformation. However, we noticed that adenines 11 to 14 were cleaved poorly by RNase T2 compared to other A-stretches (A50-54, A63-66, Figure 5\u2014figure supplement 1). Their three-dimensional conformation may therefore be more complex than shown here. Upon addition of RoxS, we observed a significant decrease in the RNase T1 cleavages in the first 10 nucleotides of the yflS leader, while adenines 11 to 14 become more accessible to RNase T2. A similar effect was seen with the RoxS CRR1 mutant. However, no major effect was observed with the CRR3 variants, consistent with the idea that CRR3 is the key mediator of the interaction with the 5\u2019 end of the yflS mRNA. In the absence of RoxS, we also noticed a strong reverse transcriptase (RT) stop between C34 and U35 of the yflS leader. This RT stop is located between the SD and AUG start codon and was suppressed by the binding of the wild-type RoxS or the CRR1 mutant, but not the CRR3 variants. These results strongly support the prediction that RoxS base-pairs with the extreme 5\u2019 end of the yflS mRNA through CRR3, and suggest that RoxS additionally induces a long-range perturbation of the mRNA structure close to the SD sequence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig5-v2.jpg)\n\n**Figure 5.:** Summary of the cleavage patterns (Figure 5\u2014figure supplement 1) of yflS alone (two potential equilibrium structures) or bound to RoxS generated by RNase V1 (red arrows), RNase T1 (blue arrows) and RNase T2 (green arrows). Weaker cleavages are represented by dashed arrows. The strong RT stop observed at position U35 (\u22125 relative to the AUG) is also indicated (black bar). Residues affected by the RoxS binding are indicated by colored asterisks (circles for inhibition; asteriks for stimulation of cleavage). The sequencing ladder was made by reverse transcribing RNA in the presence of dideoxynucleotides. The data suggests that a structural link exists between the 5\u2019 extremity and the downstream hairpin structure that contributes to the weak accessibility of the adenines 11 to 14 towards RNase T2 cleavages.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The 5\u2032-end-labeled yflS mRNA fragment (nts\u00a0+\u00a01 to+94) was digested with RNase T1, RNase T2 and RNase V1 and run on a 10% polyacrylamide\u2013urea gel. The enzymatic digestions were performed in the absence (\u2212) or in the presence of increasing concentrations of RoxS (100 or 250 nM). Incubation controls (in the absence of RNase) were done in the absence (\u2212) and in the presence (+) of RoxS (250 nM). Arrows indicate the nucleotides protected by RoxS from the attack by RNase T1 or T2. The Shine\u2013Dalgarno sequence (SD) and the AUG codon (Met), are indicated to the right of the gel. The probing experiment was performed two times (technical replicates).\n\nSince the SD and the AUG codon are predicted to be poorly accessible and some structural changes close to the SD sequence were detected, we asked whether, in addition to protecting the yflS mRNA from degradation by RNase J1, RoxS might also have an impact on the translation of this mRNA. We therefore performed toeprinting experiments on the same 94-nt yflS leader fragment used for the RNase J1 in vitro degradation and structure probing assays (Figure 5). The yflS transcript was incubated with the 30S ribosomal subunit and initiator tRNA either with or without pre-incubation with RoxS (Figure 6). In the absence of RoxS, a characteristic reverse transcriptase stop was observed at position\u00a0+16 relative to the start codon, showing that the translation initiation complex can be formed without RoxS. Addition of wild-type RoxS or the CRR1 mutant increased the signal at\u00a0+16 approximately 3-fold, suggesting that RoxS stimulates the formation of the translation initiation complex. Significantly less stimulation was observed with the two CRR3 variants; it is possible that the apparent residual effect of these mutants comes from the extended base-pairing around CRR2 in these in vitro experiments. We also detected the strong RT stop between the SD and AUG start codon and, as previously, this species diminished with increasing concentration of wild type RoxS or CRR1 mutant, but not with the CRR3 mutants. The decrease of this signal between C34 and U35 is thus a signature of RoxS binding.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig6-v2.jpg)\n\n**Figure 6.:** Toeprint analysis of wild-type (WT) and various mutant forms of RoxS bound to 50 nM of the yflS in vitro transcript (94 nt). The toeprint formed by the 30S ribosomal subunit is indicated at\u00a0+16 relative to the first nt of the AUG start codon. An additional RT stop at position U35 (\u22125 relative to the AUG), observed with RoxS variants containing a mutant CRR3 is also indicated. The Shine and Dalgarno sequence is indicated by SD. Three different quantities of RoxS (250, 500 and 1000 nM) were tested. The average stimulation of the toeprint at\u00a0+16 by RoxS variants, normalized to the yflS mRNA alone, from three experiments (technical replicates) is presented under each lane of the autoradiogram, with standard errors as shown.\n\nTo confirm the effect of RoxS binding on yflS mRNA expression in vivo, we made a yflS-lacZ translational fusion in which the promoter, regulatory sequences and the first 436 amino acids (consisting of 11 out of 12 trans-membrane domains) of YflS were fused in frame to LacZ and inserted at the amyE locus of the chromosome. We measured the \u00df-galactosidase activity of this fusion in the presence and absence of RoxS, at different times after induction with malate (Figure 7). In both strains, \u00df-galactosidase activity increased progressively after the addition of malate to the growth medium. After 60 min induction, the specific \u00df-galactosidase activity was 2-fold higher in a WT background compared to the RoxS mutant strain, showing that RoxS stimulates YflS synthesis in vivo.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig7-v2.jpg)\n\n**Figure 7.:** \u00df-Galactosidase assays of yflS\u2013lacZ translational fusions in wild-type (WT) and \u2206roxS strains. The reporter is under control of the yflS promoter and regulatory sequences, and consists of 436 amino acids of yflS coding sequence fused to lacZ. Malate (0.5%) was added at mid-exponential growth phase to induce the expression of the fusion. The levels of \u00df-galactosidase activity were assayed between 0 and 60 min after malate addition. The specific activity, in nmoles of ONPG hydrolyzed/mg protein/min, was determined in three independent experiments. Error bars indicate the standard deviation for each point. See also Figure 7\u2014source data 1.\n\n### RoxS blocks yflS degradation independently of translation\n\nSince RoxS had an impact on both translation and degradation of the yflS mRNA (see above), it was conceivable that the primary effect of RoxS is on yflS mRNA translation. An increase of ribosome trafficking on the yflS mRNA could be sufficient to explain the increase in yflS stability as has been demonstrated for numerous trans-acting sRNAs in bacteria (Lalaouna et al., 2013). To uncouple the effect of degradation and translation, we mutated both the SD sequence (AGGAGA replaced by CAAAAA) and the fifth codon (AAA to TAA) to introduce a premature stop codon in the chromosomal copy of the yflS gene. This non-translated variant is called yflSmutTR. The half-life of yflSmutTR RNA was slightly decreased compared to the wild-type strain (1.6 min vs 2.5 min respectively; Figure 8, Figure 8\u2014figure supplement 1), likely due to the decreased ribosome occupancy of the coding sequence and increased access to RNase Y. However, the yflSmutTR RNA was still destabilized about 2.3-fold in the absence of RoxS compared to the parental strain (1.6 min vs 0.7 min; Figure 8, Figure 8\u2014figure supplement 1). These results suggest that the stimulation of translation by RoxS is not a prerequisite for the protection of yflS mRNA from RNase J1. In other words, RoxS-mediated stimulation of yflS mRNA translation and its protection from RNase J1 are independent phenomena.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig8-v2.jpg)\n\n**Figure 8.:** A representative Northern blot showing total RNA isolated at times after addition of rifampicin (Rif) to WT and \u2206roxS strains, and yflSmutTR and yflSmutTR \u2206roxS strains grown in the presence of 0.5% malate. Rifampicin was added at mid-exponential phase (OD600\u00a0=\u00a00.6). Half-lives calculated from two independent experiments (biological replicates) are given under each autoradiogram. The quantification of the Northern blots is presented in Figure 8\u2014figure supplement 1.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** RNA decay curves showing the log percent RNA remaining versus time after rifampicin addition to WT and \u2206roxS strains, and yflSmutSD and yflSmutSD \u2206roxS grown in the presence of 0.5% malate. The data shown correspond to the quantification of two independent experiments (biological replicates). See also Figure 8\u2014figure supplement 1\u2014source data 1.\n\n### RoxS is transcriptionally repressed by Rex\n\nAs mentioned previously, the yflS gene encodes a malate transporter whose expression is induced by the two-component system MalKR when malate is present in the environment (Tanaka et al., 2003). Since RoxS post-transcriptionally regulates yflS gene expression, we asked whether carbon sources like glucose and malate had an impact on RoxS expression. To test this, we added 0.2% glucose and/or malate to the medium at mid-exponential phase in 2xTY medium and followed RoxS expression for 1 hr by Northern blot (Figure 9A). RoxS levels increased for about 30 min after addition of glucose before falling again at the 60 min time point. A similar profile, but of much greater amplitude was seen upon addition of malate to the medium and addition of both carbon sources together (malate + glucose) had a cumulative effect on RoxS levels.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig9-v2.jpg)\n\n**Figure 9.:** (A) Northern blot of total RNA extracted from B. subtilis W168 (wild-type) before (time 0) and 5, 10, 20, 30 and 60 min after addition of 0.2% malate, 0.2% glucose, or both. (B) Northern blot of total RNA extracted from wild-type and \u2206resDE strains before (time 0) and 5, 10, 20, 30 and 60 min after addition of 0.5% malate. (C) Same legend as panel B using wild-type and \u2206malK strains. (D) Same legend as panel B using wild-type and \u2206rex strains. Quantifications of the Northern blots are from two independent experiments (biological replicates). MalR binding assays are shown in Figure 9\u2014figure supplement 1. Conservation of the Rex binding site in different Staphylococci and Bacilli RoxS promoters is presented Figure 9\u2014figure supplement 2. See also Figure 9\u2014source data 1.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig9-figsupp1-v2.jpg)\n\n**Figure 9\u2014figure supplement 1.:** EMSA of 32P-labelled double-stranded DNA fragments (0.5 pmol) containing the maeA MalR operator, the RoxS promoter or an internal portion of the yflS coding sequence. The amounts of MalR in the binding reaction are indicated (in pmoles) above each lane. EMSAs were performed twice (technical replicates).\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig9-figsupp2-v2.jpg)\n\n**Figure 9\u2014figure supplement 2.:** The RoxS sequences are boxed in blue. Likely \u221235 and extended \u221210 sequences are boxed in mauve and the ResD and Rex binding sites are boxed in green and pink, respectively. The consensus binding sequences for B. subtilis and S. aureus Rex are indicated (H\u00e4rtig and Jahn, 2012; Pagels et al., 2010). Positions showing 100% conservation are indicated by asterisks. Abbreviations are as follows: Sepi, S. epidermis; SauCol, S. aureus Colindale strain; Shae, S. haemophilus; Ban, B. anthracis; SauNew, S. aureus Newman strain; Bli, B. lichiniformis; Bpu, B. pumilus; Bsub, B. subtilis.\n\nWe performed a number of experiments to determine the regulator of RoxS expression in the presence of malate from among three potential candidates ResDE, MalKR and Rex. We had previously shown that RoxS is induced by nitric-oxide (NO) in the growth medium via the two-component system ResDE (Durand et al., 2015a). We therefore first tested the involvement of ResDE in the induction of RoxS expression by malate (Figure 9B). In the \u2206resDE mutant strain, RoxS levels were lower than in the WT strain, as observed previously (Durand et al., 2015a). However, RoxS levels were still inducible by malate in the absence of ResDE, with the same kinetics as in the WT strain, showing that ResDE is not involved in this regulation.\n\nThe two-component system MalKR, known to respond to malate levels in B. subtilis and responsible for induction of yflS expression (see above), was also a good candidate for RoxS regulation by malate. In a \u2206malKR strain mutant, RoxS levels no longer increased upon addition of malate (Figure 9C), suggesting a role for this two-component system in regulation. However, a comparison of the RoxS promoter sequence to those of the maeN, maeA and yflS genes, all known to bind MalR, did not reveal any obvious similarities. We purified the MalR protein and performed an electrophoretic mobility shift assay (EMSA) with a DNA fragment corresponding to the RoxS promoter, with the maeA promoter as a positive control and a portion of the yflS coding region as a negative control (Figure 9\u2014figure supplement 1). We confirmed binding of MalR to the maeA promoter but found no specific interaction with the RoxS promoter region. These data suggest that the effect of the MalKR two-component system on RoxS levels is indirect.\n\nFurther examination of the sequence around the RoxS transcription start site revealed the presence of a potential binding site for the Rex transcriptional repressor (H\u00e4rtig and Jahn, 2012) immediately downstream of the transcription start site (Figure 9\u2014figure supplement 2). We therefore examined the induction of RoxS expression upon addition of malate to a \u2206rex strain. In the absence of Rex, RoxS levels were already high before addition of malate induction and accumulated to even higher levels over time (Figure 9D). Furthermore, we no longer observed the reduction in RoxS levels one hour after malate addition. This result suggests that Rex represses RoxS transcription and that addition of malate to the growth medium causes a transient release from this repression for at least 30 mins (see discussion). To demonstrate that Rex directly binds the RoxS promoter region, we performed EMSA experiments with the roxS and the lactate dehydrogenase (ldh) gene promoter sequences, and with a portion of the yflS coding region as a negative control (Figure 10). As expected, we did not observe complexes with the yflS coding region but we detected gel-shifted species with the ldh promoter, known to bind Rex (Wang et al., 2008). We also obtained a gel-shifted species for the roxS promoter fragment, confirming that Rex can directly bind this promoter region and explaining how it can inhibit transcription. Interestingly, the Rex protein and its predicted binding site just downstream of the roxS promoter are conserved in S. aureus and in Staphylococcaceae in general (Pagels et al., 2010), suggesting similar regulation may occur in these pathogenic bacteria (Figure 9\u2014figure supplement 2).\n\n![Figure 10.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig10-v2.jpg)\n\n**Figure 10.:** Electrophoretic mobility shift assays (EMSA) of 32P-labelled double-stranded DNA fragments (0.1 pmol) containing the ldh Rex operator, the RoxS promoter or an internal sequence of yflS coding sequence. The quantities of Rex in the binding reaction are indicated (in pmoles) above each lane. EMSAs were performed three times (technical replicates).\n\n### RoxS regulates ppnkB and sucC mRNA stability far more efficiently in the presence of malate\n\nIn our previous studies, we showed that RoxS blocks translation of the ppnkB and sucC mRNAs and indirectly destabilizes these transcripts (Durand et al., 2015a). Since RoxS expression is derepressed in the presence of malate, we retested the impact of RoxS on these two mRNAs in these growth conditions. We measured the half-lives of the ppnKB and sucCD mRNAs in the presence or in absence of malate by Northern blotting of RNAs isolated at different times after rifampicin addition. We previously showed that RoxS destabilized the ppnkB about 2-fold and had little impact on sucCD mRNA half-life in 2xTY with no added carbon source (Figure 11A and [Durand et al., 2015a]). In 2xTY plus malate, however, RoxS destabilized the ppnkB mRNA about 20-fold and the sucD mRNA about 8-fold (Figure 11B). This result confirms our previous data and shows that RoxS has a far greater impact on gene expression in the presence of malate.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig11-v2.jpg)\n\n**Figure 11.:** (A) Northern blot of total RNA isolated at times after addition of rifampicin (rif) to WT and \u2206roxS strains. Rifampicin was added at mid-exponential phase (OD600\u00a0=\u00a00.6). The half-lives of the ppnkB and sucCD mRNAs are indicated below the blot. (B) Same legend as panel A but with 0.5% malate in the medium. Northerns were performed twice (biological replicates).\n\n## Discussion\n\nIn this study, we report for the first time that a small regulatory RNA (RoxS) can directly prevent 5\u2019-to-3\u2019 mRNA degradation of its mRNA target. RoxS binds to the 5' end of the yflS mRNA through base-pairing interactions primarily with the C-rich region CRR3 (Figure 1). The inhibitory effect on RNase J1 5'\u22123' exoribonuclease activity can easily be understood in structural terms; the RNA binding channel that leads to the RNase J1 catalytic site is only long enough to accommodate 4\u20135 nts of single stranded RNA. The unbound yflS mRNA is predicted to have at least six unpaired nts before the first hairpin structure (Figure 5) and would thus be expected to be a good substrate for RNase J1 once the 5'-triphosphate group has been removed. When bound to RoxS, the duplexed 5' end of the yflS RNA can no longer reach the catalytic site, explaining how it is protected from degradation.\n\nTo our knowledge, there are only three other examples of direct mRNA stabilization by a trans-acting regulatory RNA in Gram-positive bacteria. In Streptococcus mutans, the 5\u2019-UTR of the intact irvA mRNA interacts with the coding sequence of the gbpC mRNA, encoding a surface lectin implicated in dextran dependent aggregation stress (DDAG). This interaction blocks endoribonucleolyic cleavage of the gbpC mRNA by RNase J2 (Liu et al., 2015). Obana et al. (2010, 2013) showed that the Clostridium perfringens colA mRNA (encoding collagenase) is stabilized by the VR-RNA. Binding of the sRNA to the colA mRNA leads to a cleavage its 5\u2019-UTR, which releases the colA SD sequence and stimulates translation initiation. The stabilization of colA depends on the binding of a ribosome to the SD sequence, but translation has no impact on mRNA stability. In the pathogen Streptococcus pyogenes, the FasX sRNA stabilizes the streptokinase encoding mRNA (ska) (Ramirez-Pe\u00f1a et al., 2010) by binding to its extreme 5' end via a sequence resembling that of the RoxS CRR3 (four consecutive C's matched with four consecutive G's). Our data would suggest that RNase J1 is a prime candidate for FasX regulation of the ska mRNA. In fact, the sRNA-dependent 5' end protection mechanism discovered here could in theory be used to activate expression of any mRNA in any microorganism by shielding it from enzymes (e.g. RppH, RNase J1, RNase E) requiring a single stranded 5\u2019 extremity to initiate degradation.\n\nOur data also indicate that binding of RoxS to the 5' end of the yflS mRNA both protects it from degradation by RNase J1 (Figures 2, 3 and 4) and stimulates 30S binding to the SD sequence in vitro (Figure 6), suggesting an activation of translation. Moreover, the increased expression of the yflS(436)-lacZ fusion in the presence of RoxS is consistent with an increase in translation efficiency (Figure 7). We were able to uncouple the effect of RoxS on yflS mRNA stability and translation by making a non-translated variant (yflSmutTR) and showed that RoxS is still able to stabilize this mRNA independently of translation (Figure 8). However, in all likelihood, the two events are indissociable in vivo with the wild-type yflS mRNA, that is, stabilization of the mRNA and increased translation go hand in hand to produce more of the YflS transporter in the presence of malate.\n\nThe enzymatic probing of yflS mRNA indicated that the binding of RoxS, in addition to protecting the 5' end from RNase T1 cleavage, causes subtle modifications of the secondary structure of the yflS leader, that could account for the stimulation of initiation complex formation. Most noticeably, a strong RT stop between C34 and U35 (five nucleotides upstream of the AUG) is lost upon binding of WT RoxS or the CRR1 mutant, but is retained when yflS mRNA is incubated with the inactive CRR3 variant. This suggests a structural modification to the apex of the stem-loop in the vicinity of the SD sequence upon binding to RoxS. Surprisingly, however, no other nucleotides in this neighborhood became more reactive to single stranded probes (e.g. RNase T1) in the presence of RoxS, in particular the two G-C pairs (25G/34C and 26G/33C) that are predicted to close the apical loop (Figure 5). This suggests that the 3D structure of yflS leader and the impact of RoxS may be more complex than the model presented in Figure 5. The yflS mRNA sequence contains several stretches of consecutive G-residues in the first 50 nts that could potentially form G-quadruplex RNA structures (Kikin et al., 2006). Alternatively, part of the 5\u2019 leader including the AAACAA sequence (nts 12\u201317) of yflS mRNA could potentially form a triple helix with the stem of the adjacent hairpin rich in AU pairings. In both cases, RoxS binding would disrupt a tertiary fold favoring the recognition of the ribosome. Our structure probing data are consistent with a model in which the duplex formed by binding of RoxS to the 5\u2019 end of the yflS mRNA not only blocks RNase J1 access but also disrupts a particular fold of the 5\u2019UTR that is unfavorable to ribosome recruitment.\n\nOur study showed that the expression of the RoxS sRNA is not only induced by nitric oxide (NO) as we described previously (Durand et al., 2015a), but also by the presence of malate in the growth medium (Figure 9). The malate-induced increase in RoxS expression is indirectly dependent on the two-component system MalKR and directly dependent on release from Rex repression (Figures 9 and 10). The Rex repressor is a sensor of the NAD+/NADH ratio in the cell. It has a 20,000-fold higher affinity for NADH than for NAD+ and the binding of NADH to Rex provokes a structural rearrangement which prevents its binding to target promoters and allows the expression of genes involved in fermentation (Larsson et al., 2005; Wang et al., 2008; McLaughlin et al., 2010). The temporary release from Rex-mediated repression of RoxS expression may be linked to the generation of NADH in the early steps of malate metabolism, either in the conversion of malate to oxaloacetate by malate dehydrogenase (Mdh) in the TCA cycle, or its conversion to pyruvate by the malic enzymes MaeA, MalS and MleA (Doan et al., 2003; Lerondel et al., 2006; Meyer and St\u00fclke, 2013) (Figure 12). The effect of the MalKR mutation on RoxS expression (Figure 9C) is most likely explained by the decrease in expression of the MalKR regulon, consisting of the malate transporter genes yflS and maeN, and that of the malic enzyme maeA, and the consequent impact on NADH levels and Rex activity.\n\n![Figure 12.](https://cdn.elifesciences.org/articles/23602/elife-23602-fig12-v2.jpg)\n\n**Figure 12.:** For details see text. Panel A shows reactions affected by RoxS that impact NAD(P)+/NAD(P)H balance. Panel B shows the role of RoxS in yflS mRNA degradation. Targets negatively regulated by RoxS are in red; targets positively regulated by RoxS are in green.\n\nB. subtilis has at least four malate transporters: MaeN (Wei et al., 2000) and YflS (Tanaka et al., 2003), both regulated by the two-component system MalKR (Tanaka et al., 2003), and MleN (Wei et al., 2000) and CimH, the latter of which is primarily a transporter of citrate (Sobczak and Lolkema, 2005). Malate is a common source of carbon for B. subtilis in its natural habitat since it is released by the roots of many plants (Rudrappa et al., 2008). Most of the malate imported by B. subtilis cells serves in gluconeogenesis and the excess is sent towards overflow metabolism/fermentation and the production of lactate, acetate, acetoin and 2,3-butanediol (Kleijn et al., 2010) (Figure 12). This overflow metabolism/fermentation allows NAD+ regeneration, primarily catalyzed by lactate dehydrogenase (Ldh/LctE) that converts pyruvate to lactate (Cruz Ramos et al., 2000) (Figure 12). Transcription of the maeN mRNA, encoding the main malate transporter, is essentially turned off during fermentation and ethanol stress (Nicolas et al., 2012). It is possible that RoxS specifically stabilizes the yflS mRNA to compensate for this decrease in maeN expression, thus facilitating the continued uptake of malate during conditions where the fermentation/overflow pathway is turned on.\n\nThe identification of Rex as a regulator of RoxS expression significantly expands the Rex regulon and contributes to our understanding of the pivotal role of Rex in Bacilli (Laouami et al., 2014); up to now only a handful of fermentation pathway genes or operons were known to be directly repressed by this transcriptional regulator. Our previous study showed that 30% of genes with increased expression in a \u2206roxS strain are linked to oxido-reduction processes (Durand et al., 2015a). Its down-regulated targets include ppnKB, encoding NAD-kinase, and the TCA cycle components sucCD and citZ. PpnKB and the TCA cycle are significant contributors to the production of NADPH and NADH, respectively (Figure 12). These observations, together with the fact that RoxS is regulated by the NADH-sensitive transcriptional repressor Rex, suggest that a key role of RoxS is to temporarily turn down part of the TCA cycle to help restore the NAD+/NADH balance. In the presence of malate, this re-equilibration is further aided by the increased activity of Ldh regenerating NAD+ (see above). Once the NAD+/NADH ratio is restored, Rex would be predicted to become active again as a repressor, explaining the decrease in RoxS levels seen in Northern blots about one hour after addition of malate and the loss of this down-regulation in the Rex mutant (Figure 9D). In further agreement with a role for RoxS in managing NADH levels, we showed in our previous report that expression of the lactate dehydrogenase gene (ldh) and the cydA gene, encoding a subunit of cytochrome bd, is up-regulated in \u2206roxS cells (Durand et al., 2015a). Neither of these mRNAs is predicted to be a direct target of RoxS, but both are members of the Rex regulon. Their increased expression is thus most likely indicative of higher intracellular NADH levels and Rex derepression in the \u2206roxS strain. Interestingly, a link between NO levels and regulation of virulence via NADH and Rex has been proposed in S. aureus (Pagels et al., 2010). The conservation of the Rex binding site downstream of the RsaE/RoxS promoter in S. aureus suggests that this pathway is evolutionarily conserved to best serve the adaptation of B. subtilis and S. aureus to their respective niches.\n\n## Materials and methods\n\n### Strains and constructs\n\nStrains and oligonucleotides used are provided in Supplementary files 1 and 2, respectively.\n\nStrain CCB803 (malKR::spc) was constructed by transforming B. subtilis W168 (SSB1002) with a PCR fragment generated by re-amplifying (oligo pair CC1722/CC1716) three overlapping PCR fragments corresponding to upstream (oligo pair CC1715/CC1717), downstream (oligo pair CC1719/CC1721) regions of the malKR operon and the spectinomycin resistance cassette (oligo pair CC1718/CC1720) from plasmid pDG1727 (Gu\u00e9rout-Fleury et al., 1995).\n\nStrain CCB952 (rex:pMUTIN ery) was constructed by transforming the B. subtilis W168 strain with chromosomal DNA from strain MGNA-C201 from the Japanese National Institute of Genetics (NIG) collection.\n\nThe yflS(436)-lacZ fusion was constructed using a PCR fragment generated by amplifying the yflS gene (oligo pair CC1734/CC1789) including 436 amino acids of the coding sequence (\u221281 to\u00a0+1347 relative to transcription start site) and cloned between the EcoRI and SalI restriction sites of the integrative plasmid pHM2 (Gendron et al., 1994). B. subtilis W168 and CCB485 (roxS::kan) strains (Durand et al., 2015a) were transformed with pHM2-yflS(436)-lacZ yielding strains CCB831 and CCB832, respectively.\n\nStrain CCB1022 (yflSmutTR) was made by markerless mutation of the Shine-Dalgarno sequence and fifth codon of yflS using plasmid pMAD-yflSmutTR according to Arnaud et al., 2004. Plasmid pMAD-yflSmutTR was constructed as follows. Overlapping upstream and downstream fragments containing the mutation in yflS SD region (AGGAGA to CAAAAA) in the upstream fragment and the stop codon mutation in the downstream fragment were amplified using oligo pairs CC1656/2050 and CC2047/1657, respectively. The overlapping fragments were then assembled in a new PCR reaction with CC1656/1657, digested with SalI and cloned in pMAD. Strain CCB1027 (yflSmutTR \u2206roxS) was made by transformation of strain CCB1022 with chromosomal DNA of CCB485 (roxS::kan).\n\n### RNA isolation and northern blots\n\nRNA was isolated from mid-log phase B. subtilis cells growing in 2\u00d7YT medium either by the glass beads/phenol method described in Bechhofer et al., 2008 or by the RNAsnap method described in Stead et al., 2012. Northern blots were performed as described previously (Durand et al., 2012). The yflS riboprobe was transcribed in vitro using T7 RNA polymerase (Promega) and labeled with [\u03b1-32P]-UTP using a PCR fragment amplified with oligo pair CC1566/CC1567 as template.\n\n### Mapping of 5\u2019 ends by primer extension assays following Xrn1 digestion\n\nPrimer extension assays were performed as described previously on total RNA (Britton et al., 2007) with the yflS oligo (CC1537) and hbs oligo (CC463) 5\u2019 end-labeled with T4 polynucleotide kinase (PNK) and [\u03b3-32P]-ATP. Xrn1 depletion of 5\u2019 monophosphorylated RNA was performed as described in Sinturel et al. (2015). Briefly, 15 \u00b5g of total RNA was digested for 1 hr at 37\u00b0C with 2 units of XrnI in NEB buffer 3. Total treated and non-treated RNAs were phenol extracted and ethanol precipitated. The efficiency of digestion was tested by running total RNA on an agarose gel to visualize digestion of ribosomal RNA.\n\n### RNase J1 assays\n\nThe 94-nt yflS and yflSmut5' RNA fragments were transcribed in vitro from PCR fragments containing the leader region and the first 55 nts of the yflS coding sequence. The yflS and yflSmut5' templates were amplified with the oligo pairs CC1658/CC1537 and CC1537/CC2040 respectively. RoxS and its mutant derivatives (CRR1, CRR3 and CRR1+3) were made similarly using PCR fragments amplified from their respective plasmids 639, 640 and 641, using oligos CC1832/CC1833 (Durand et al., 2015a). The CRR3-2 mutant was made by overlapping PCR. The CCCCU sequence of CRR3 was mutated to UUCUC using oligo pairs CC1832/CC2042 and CC1833/CC2041 and reamplified with CC1832 and CC1833. The yflS RNA was dephosphorylated with Calf Intestinal Phosphatase (CIP) (10 U/\u00b5l; Biolabs) and 5\u2019 end-labeled with T4 polynucleotide kinase (PNK) and [\u03b3-32P]-ATP. The yflS RNA (1.2 pmol), RoxS and its mutant derivatives (3 pmol) were pre-heated separately 5 min at 95\u00b0C in water or transcription buffer, respectively, and slowly cooled to 20\u00b0C. The yflS RNA was mixed with RoxS or its mutant derivatives in 1X J1 buffer (20 mM Tris pH 6.8, 8 mM MgCl2, 100 mM NH4Cl, 0.1 mM DTT). The reaction was incubated at 37\u00b0C or at 15\u00b0C (as indicated) and stopped with RNA loading dye (Ambion) before (time 0) and 2, 4, 6 and 10 min after addition of RNase J1 (0.5 \u03bcg per reaction) at 37\u00b0C, and 30 and 60 min after addition of RNase J1 at 15\u00b0C. RNA was also incubated without RNase J1 for 10 min at 37\u00b0C or 60 min at 15\u00b0C as a control.\n\n### Toeprinting assays\n\nThe yflS RNA fragments were transcribed in vitro as described for RNase J1 assays. The transcribed RNAs were purified from 8% polyacrylamide-8M urea gels. After elution in 0.5 M ammonium acetate/1 mM EDTA buffer, the RNAs were precipitated twice with ethanol. The 5\u2019 end-labeling of dephosphorylated DNA oligonucleotides was performed with T4 PNK and [\u03b3-32P]-ATP. Before use, RNAs were denatured/renatured by incubation at 90\u00b0C for 2 min in the absence of magnesium and salt, then 1 min on ice, followed by an incubation step at 37\u00b0C for 15 min in TMN buffer (20 mM Tris-acetate pH 7.5, 10 mM magnesium acetate, 150 mM sodium acetate). Toeprints were performed with E. coli 30S subunits. The preparation of ribosomal subunits, the formation of a simplified translational initiation complex with mRNA and the primer extension conditions were performed according to Fechter et al. (2009). Standard conditions contained 15\u201350 nM RNA transcript annealed to a 5\u2019 end-labeled oligonucleotide (CC1537: complementary to codons 11 to 18), 250 nM E. coli 30S ribosomal subunits, and 40 to 80 nM of RoxS in 10 \u03bcl final volume of buffer containing 20 mM Tris-acetate, pH 7.5, 60 mM NH4Cl, 10 mM magnesium acetate, and 3 mM \u00df-mercaptoethanol. After 10 min at 37\u00b0C, the initiator tRNA (1 \u03bcM) was added and the reaction was incubated for a further 5 min at 37\u00b0C. Reverse transcription was performed with one unit of AMV reverse transcriptase for 15 min at 37\u00b0C.\n\n### Probing of RNA secondary structure\n\nStructure probing of RoxS was performed with wild-type RoxS labeled at its 5\u2019 end using [\u03b3-32P]-ATP and T4 polynucleotide kinase (Ambion). Complex formation was performed with 5\u2019 end-labeled RoxS and increasing concentrations of cold yflS mRNA (0.5, 1 and 4 pmoles). The two RNAs were denatured at 90\u00b0C for 1 min in sterile H2O and cooled on ice for 1 min; hybridization was at 20\u00b0C for 15 min in 1xTMN buffer (20 mM Tris-HCl pH 7.5, 10 mM MgCl2, 150 mM KCl). Enzymatic hydrolysis was performed on 5\u2019 end-labeled RoxS (50,000 cps) either alone or bound to yflS mRNA (final concentrations of 50, 100, 400 nM) in the presence of 1 \u00b5g carrier tRNA in a total volume of 10 \u00b5l containing TMN buffer. Reactions were done at 20\u00b0C for 5 min with RNase V1 (0.008 U, Ambion), or for 10 min with RNase T2 (0.025 U, MoBiTech). Hydrolysis was stopped by phenol extraction followed by RNA precipitation. The 5\u2019 end-labeled RoxS fragments were migrated on 8% polyacrylamide/8 M urea gels.\n\nStructure probing of yflS mRNA was performed with the 94 nts yflS transcript (see RNase J1 assays). Complex formation between yflS mRNA and increasing concentrations of RoxS sRNA was carried out as follows. Both RNAs were annealed under the same conditions as described just above. The reactions were performed on yflS (0.5 pmole) either alone or bound to RoxS in a total reactional volume of 10 \u00b5L in TMN Buffer 1X, in the presence of 1 \u00b5g carrier tRNA. Enzymatic hydrolysis was performed at 20\u00b0C for 5 min with 0.004 U of RNase V1 (Ambion) or 0.5 U of RNase T1 (Thermo Scientific), and at 20\u00b0C for 10 min with 0.025 U of RNase T2 (MoBiTech). The reactions were stopped by precipitation of the RNA by adding 20 \u00b5L of a solution containing 1M guanidine thiocyanate, 0.167% N-lauryl sarcosine, 10 mM DTT and 83% isopropanol. The enzymatic cleavages were detected by primer extension using an end-labeled oligonucleotide (CC1537) and reverse transcriptase as previously described (Helfer et al., 2014). The cleavage sites were analyzed after fractionation of the DNA fragments on a 10% polyacrylamide-8 M urea gel-TBE 1X followed by autoradiography.\n\n### Electrophoretic mobility shift assays (EMSA)\n\nFor EMSA assays with Rex, a DNA fragment containing the ldh gene Rex operator was prepared by annealing two oligonucleotides LDH2F/LDH2R (a kind gift from C. von Wachenfeldt) (Supplementary file 1) in binding buffer (100 mM NaCl and 10 mM Tris, pH 8). DNA fragments containing the RoxS promoter and an internal sequence of the yflS ORF were synthetized by PCR using the oligo pairs CC1859/CC1860 and CC1578/CC1768, respectively. Oligos were radiolabelled using PNK and [\u03b3-32P]-ATP. Binding reactions (20 \u00b5l) were performed in 10 mM potassium phosphate buffer (pH 7.5), 10% glycerol, 1 \u00b5g herring sperm DNA as non-specific competitor, and contained approximately 0.1 pmol of labelled DNA.\n\nFor EMSA assays with MalR, a DNA fragment containing the maeA MalR operator was synthetized by PCR using the oligo pair CC1861/CC1862. DNA fragments containing the RoxS promoter and an internal sequence of yflS ORF were prepared as described above for the EMSA experiment with Rex. Oligos were radiolabelled using PNK and [\u03b3-32P]-ATP. Binding reactions (20 \u00b5l) were performed in 10 mM Tris-HCl buffer (pH 8), 50 mM NaCl, 1 mM EDTA, 1 mM DTT, 5% glycerol, 1 \u00b5g herring sperm DNA as non-specific competitor, and contained approximately 0.5 pmol of labeled DNA.\n\nAll EMSA reactions were incubated for 15 min at 30\u00b0C then loaded onto a native 6% polyacrylamide gel in TBE. Gels were run at 4\u00b0C at 150 V, dried and analyzed by Phosphor Imager.\n",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "bb96ab02-8c4a-4815-8ade-1a6c1b51a172",
+      "submission_id": "92ceeb7e-5379-4cd1-9312-6525c3d6bc9c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00f6rg Vogel, University of W\u00fcrzburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.23602.030](https://doi.org/10.7554/eLife.23602.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"sRNA-mediated activation of gene expression by inhibition of 5'-3' exonucleolytic mRNA degradation\" for consideration by eLife. Your article has been favorably evaluated by Richard Losick (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The following individual involved in review of your submission has agreed to reveal his identity: David Bechhofer (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript by Sylvain Duran et al. reports the discovery of 5'end-dependent post-transcriptional activation of a Bacillus subtilis mRNA by the conserved regulatory sRNA RoxS. The authors propose that RoxS recognizes the yflS mRNA at the very 5' end and thereby blocks 5' exonucleolytic degradation of this target by RNase J1. This would be the first time a bacterial sRNA has been shown to regulate gene expression in trans by inhibiting 5'-3' exonucleolytic degradation, the latter of which being similar to RNA degradation in eukaryotes. In the second part of this manuscript, the authors present experiments indicating that RoxS binding also remodels structurally the yflS mRNA to make it more competent for translation. In the third part, RoxS is shown to be transcriptionally controlled by the important DNA binding protein Rex. Additionally, experiments are presented to elucidate RoxS activity under different nutritional conditions. Specifically, the authors show that RoxS expression is negatively regulated by Rex, a transcriptional repressor that is itself indirectly regulated by the presence of malate. A regulatory scheme for malate metabolism involving RoxS-mediated positive and negative regulation could be developed from these results (Figure 11 is remarkable!).\n\nGenerally, the study is significant as much less is known about sRNA regulation in B. subtilis than in E. coli, and the B. subtilis suite of ribonucleases is considerably different from that of E. coli \u2013 most notably the presence of a 5' exoribonuclease (RNase J1), an activity that is not known to exist in E. coli. Furthermore, RoxS and regulatory sequences controlling its expression are conserved in other Gram-positives; thus, the current findings are likely broadly applicable.\n\nThe article is well written and the majority of the conclusions are well supported by the data. However, in its current form, the study lacks some key experiments and would benefit from a more thorough quantification of the data. For orientation, the first part of this manuscript, i.e. the discovery of sRNA-mediated mRNA activation by blocking 5' exo decay, clearly constitute sufficient novelty to make this a strong candidate for an eLife paper. However, it needs to be better developed. The second part \u2013 translational control \u2013 is presently not convincing. The third part constitutes an important part, too, since it puts the activity of RoxS in physiological context.\n\nEssential revisions:\n\n1) Subsection \u201cMapping of the 5\u2019 extremity of the yflS mRNA\u201d and Figure 2: While primer extension is an effective technology to map the 5' end of transcripts, it fails to determine the chemical nature of the 5' end. In other words, the determined 5' end might as well be that of a stable degradation intermediate. Differential 5' RACE experiments (see PMID: 8755555) would be one way to test this hypothesis. Alternatively, there seem to be ample published RNA-seq data for Bacillus for the authors; do they support this transcription start site? In addition, is the promoter conserved? In any case, this part on 5' end mapping seems rather confirmatory and doesn't deserve to be a main figure (move to the supplement).\n\n2) Subsections \u201cRoxS regulates yflS mRNA stability\u201d and \u201cRoxS blocks degradation of the yflS mRNA by RNase J1\u201d: The control at the level of mRNA stability needs to be demonstrated more firmly. The authors should try to fully uncouple it from any translational control by using a non-translated 5' fragment of the yflS mRNA. This can be achieved by co-expression of RoxS with such a shorter RNA, perhaps as a fusion with an unrelated stable transcript. This has been done with other sRNAs that activate targets by increasing mRNA stability (SgrS, PMID:23582330; RydC, PMID:24141880). Such shorter fusion RNA target would also aid better mutational studies of the target.\n\n3) Subsection \u201cRoxS protects yflS mRNA from in vitro degradation by RNase J1\u201d: The prediction that C-rich regions of RoxS are involved in base pairing with the yflS mRNA comes out of the blue. Explain what's known about other RoxS-target interactions. Is the predicted target site in yflS mRNA supported by conservation at the nucleotide level?\n\n4) Subsection \u201cRoxS protects yflS mRNA from in vitro degradation by RNase J1\u201d: Here and elsewhere, the predicted base pairing interaction remains to be more firmly demonstrated. Use compensatory base pair changes in sRNA and target, or show RNA structure probing data of both native and mutant variants of the RNA partners.\n\n5) Subsection \u201cRoxS also activates translation of the yflS mRNA\u201d, second paragraph and Figure 6: It is puzzling that the CCR1+3 variant of RoxS still affords an almost two-fold translational activation (30S binding) of the target, especially in light of the fact that i) wild-type RoxS manages a mere 3-fold activation in this assay, and that ii) the CCR3 mutation should nullify base pairing (according to Figure 1). This again demands a better definition of the RoxS-yflS RNA interaction in order to design more suitable mutants. Moreover, the 30S toeprint assay should include a second non-target mRNA to demonstrate that RoxS activity is specific.\n\n6) Better quantification. Figure 4: It would be useful to quantify and plot the intensities of the bands corresponding to the 94 nt yflS transcript and the bands corresponding to AMP. Figure 7: the effect of RoxS on yflS in these experiments is approximately 2-fold, which probably presents the sum of transcript protection and translation activation. To discriminate the individual contributions of RoxS to this process, it would be useful to generate a yflS variant that is not translated (e.g. by mutating the start codon of the mRNA) and test the effect of RoxS on Northern Blots. Figure 8: Again, it would be useful to quantify the bands corresponding to RoxS in these experiments (e.g. by setting the 0 min time point to 100%). This would allow for a thorough comparison of RoxS expression across the presented experiments.\n",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31087746-4668-49cf-b704-176ac1ce46bc",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C1",
+      "claim": "RoxS is a major trans-acting sRNA shared between Bacillus subtilis and Staphylococcus aureus",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Bacillus subtilis RoxS, a major trans-acting sRNA shared with Staphylococus aureus, prevents degradation of the yflS mRNA, encoding a malate transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the abstract as a characterization of RoxS",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "e48961ab-bd0a-4f67-90d3-dba75c412b03",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C2",
+      "claim": "RoxS prevents degradation of the yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Bacillus subtilis RoxS, a major trans-acting sRNA shared with Staphylococus aureus, prevents degradation of the yflS mRNA, encoding a malate transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot experiments showing increased yflS mRNA half-life in presence of RoxS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "24adfdf6-7270-4eb5-8112-c163824759db",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C3",
+      "claim": "yflS mRNA encodes a malate transporter",
+      "claim_type": "EXPLICIT",
+      "source": "We show that Bacillus subtilis RoxS, a major trans-acting sRNA shared with Staphylococus aureus, prevents degradation of the yflS mRNA, encoding a malate transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced from prior literature (Tanaka et al., 2003)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c3c47f28-696c-4c5b-b96c-2882c9e443ef",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C4",
+      "claim": "RoxS expression is induced in the presence of malate",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of malate, RoxS transiently escapes from repression by the NADH-sensitive transcription factor Rex and binds to the extreme 5'-end of yflS mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Northern blot analysis showing increased RoxS levels after malate addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "e576e0a6-11dc-443c-b01e-b316a3721fc5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C5",
+      "claim": "RoxS is repressed by the NADH-sensitive transcription factor Rex",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of malate, RoxS transiently escapes from repression by the NADH-sensitive transcription factor Rex and binds to the extreme 5'-end of yflS mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blots and EMSA showing Rex binding to RoxS promoter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "f4301094-62f7-442b-aea0-91f02d646a0a",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C6",
+      "claim": "RoxS binds to the extreme 5'-end of yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of malate, RoxS transiently escapes from repression by the NADH-sensitive transcription factor Rex and binds to the extreme 5'-end of yflS mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through structure probing, compensatory mutations, and in vitro protection assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "4e552620-567a-4f5d-892d-70ddadd772e3",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C7",
+      "claim": "RoxS impairs the 5'-3' exoribonuclease activity of RNase J1",
+      "claim_type": "EXPLICIT",
+      "source": "This impairs the 5'-3' exoribonuclease activity of RNase J1, increasing the half-life of the primary transcript and concomitantly enhancing ribosome binding to increase expression of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through in vitro RNase J1 degradation assays and in vivo half-life measurements in RNase J1 mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "fc1e8e64-01e0-4b25-b340-21318a44e09e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C8",
+      "claim": "RoxS increases the half-life of the yflS primary transcript",
+      "claim_type": "EXPLICIT",
+      "source": "This impairs the 5'-3' exoribonuclease activity of RNase J1, increasing the half-life of the primary transcript and concomitantly enhancing ribosome binding to increase expression of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot half-life measurements showing 3.6-fold stabilization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "4e557fd2-02bf-44a6-a5e8-6998e11381dc",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C9",
+      "claim": "RoxS enhances ribosome binding to yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "This impairs the 5'-3' exoribonuclease activity of RNase J1, increasing the half-life of the primary transcript and concomitantly enhancing ribosome binding to increase expression of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through toeprinting assays showing increased 30S ribosomal subunit binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "1628ccf6-1928-4ad9-b5ae-ab8a94874345",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C10",
+      "claim": "RoxS increases expression of the YflS transporter",
+      "claim_type": "EXPLICIT",
+      "source": "This impairs the 5'-3' exoribonuclease activity of RNase J1, increasing the half-life of the primary transcript and concomitantly enhancing ribosome binding to increase expression of the transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through \u03b2-galactosidase assays of yflS-lacZ translational fusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "2b2e2203-f5ec-45e2-b178-11aad968d5ba",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C11",
+      "claim": "RoxS helps readjust the cellular NAD+/NADH balance when perturbed by different stimuli",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, the different targets regulated by RoxS suggest that it helps readjust the cellular NAD+/NADH balance when perturbed by different stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the regulation of multiple targets involved in NAD+/NADH metabolism and Rex-mediated control",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "adcc15b3-875e-484c-aad4-17dfeebcc49d",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C12",
+      "claim": "E. coli depends primarily on endonucleolytic cleavage by RNase E to initiate RNA turnover",
+      "claim_type": "EXPLICIT",
+      "source": "E. coli depends primarily on endonucleolytic cleavage by RNase E to initiate RNA turnover, followed by degradation of the resulting fragments in a 3'-to-5' orientation by exoribonucleases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from established literature on E. coli RNA degradation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "ff14db93-dd58-444c-8305-0ef9813b69c9",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C13",
+      "claim": "B. subtilis has replaced RNase E by an enzyme with similar properties called RNase Y",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis, on the other hand, has replaced RNase E by an enzyme with similar properties called RNase Y and has the additional option of exonucleolytically degrading RNAs from the 5' end using an enzyme called RNase J1 (Mathy et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Mathy et al., 2007 and established knowledge of B. subtilis RNA degradation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "8eac7a75-8d8c-4aa6-849d-9d1c7df9e899",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C14",
+      "claim": "B. subtilis can exonucleolytically degrade RNAs from the 5' end using RNase J1",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis, on the other hand, has replaced RNase E by an enzyme with similar properties called RNase Y and has the additional option of exonucleolytically degrading RNAs from the 5' end using an enzyme called RNase J1 (Mathy et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Mathy et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "74623061-6c70-4ce2-bd77-aa73f483b55d",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C15",
+      "claim": "Only eight of the >30 ribonucleases currently identified in E. coli and B. subtilis are present in both organisms",
+      "claim_type": "EXPLICIT",
+      "source": "Only eight of the >30 ribonucleases currently identified in these two bacteria are present in both organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from comparative studies of ribonucleases (Bechhofer, 2009; Durand et al., 2015b; Condon and Putzer, 2002)",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "ff3146ad-d68d-4513-83fd-291ec093c529",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C16",
+      "claim": "In E. coli, sRNAs generally act by imperfect base pairing with their target mRNAs",
+      "claim_type": "EXPLICIT",
+      "source": "In these organisms, sRNAs generally act by an imperfect base pairing with their target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from sRNA literature",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a68e6088-f490-4412-8f7f-d39adb212872",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C17",
+      "claim": "The interaction between sRNA and mRNA often requires the chaperone Hfq in Gram-negative bacteria",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between sRNA and mRNA often requires the chaperone Hfq, an Sm-like protein that both stabilizes the sRNA and facilitates the pairing with mRNA targets (for review, see Updegrove et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from review by Updegrove et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a8f4895e-39de-40d4-b7e0-56c2cee74aa1",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C18",
+      "claim": "Hfq stabilizes sRNAs and facilitates pairing with mRNA targets",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between sRNA and mRNA often requires the chaperone Hfq, an Sm-like protein that both stabilizes the sRNA and facilitates the pairing with mRNA targets (for review, see Updegrove et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from review by Updegrove et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c03a9b66-09f9-43b8-ac68-320f6373ed53",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C19",
+      "claim": "Most sRNAs examined to date directly affect mRNA translation with an indirect effect on mRNA half-life",
+      "claim_type": "EXPLICIT",
+      "source": "In bacteria, most sRNAs examined to date directly affect mRNA translation with an indirect effect on mRNA half-life (reviewed in Wagner and Romby, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from review by Wagner and Romby, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "42051c1c-0fb8-4735-a70e-57f586354f30",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C20",
+      "claim": "Some sRNAs can directly affect mRNA stability without affecting translation",
+      "claim_type": "EXPLICIT",
+      "source": "However, some more recent studies have shown that sRNAs are also able to directly affect mRNA stability without affecting translation, by recruiting the degradation machinery or interfering with its action (reviewed in Lalaouna et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from review by Lalaouna et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "f8ecc421-c67d-404c-af71-e4734348a629",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C21",
+      "claim": "The sRNA MicC can recruit RNase E to the ompD mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "In one particular example, the ternary complex formed between the sRNA (MicC), the mRNA (ompD) and Hfq can recruit RNase E to a site within the open reading frame and stimulate its cleavage by presenting the 5' monophosphate of the sRNA to RNase E (Bandyra et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bandyra et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "3053571b-e1e9-4700-8f46-13139398e555",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C22",
+      "claim": "The sRNA RydC increases the stability of the cfa mRNA by hiding a cleavage site from RNase E",
+      "claim_type": "EXPLICIT",
+      "source": "In another, the sRNA RydC increases the stability of the cfa mRNA by pairing to the 5'-UTR of this mRNA, far upstream of the ribosome binding site, and hiding a cleavage site from RNase E (Fr\u00f6hlich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Fr\u00f6hlich et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "dd912b23-1f26-4159-8af5-dcd4b79fff0d",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C23",
+      "claim": "In B. subtilis, Hfq is generally not required for sRNA-mRNA pairing",
+      "claim_type": "EXPLICIT",
+      "source": "In these bacteria, Hfq is generally not required for sRNA-mRNA pairing (H\u00e4mmerle et al., 2014; Rochat et al., 2015) although there are some exceptions in specific organisms (Nielsen et al., 2010; Boudry et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from H\u00e4mmerle et al., 2014 and Rochat et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "2a0d8efc-0253-4e72-bc07-723165fd6930",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C24",
+      "claim": "RoxS is the unique trans-acting sRNA, apart from 6S RNA, that is conserved between B. subtilis and S. aureus",
+      "claim_type": "EXPLICIT",
+      "source": "RoxS (related to oxidative stress) is the unique trans-acting sRNA, apart from the ubiquitous 6S RNA, that is conserved between B. subtilis and the Gram-positive pathogen S. aureus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparative genomic analysis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "1f03e455-beab-4604-b0e9-cefba6f0d2ea",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C25",
+      "claim": "In S. aureus, RoxS (RsaE) regulates genes involved in amino acid and peptide transport, cofactor synthesis, lipid metabolism, carbohydrate metabolism and the TCA cycle",
+      "claim_type": "EXPLICIT",
+      "source": "First identified in S. aureus where it is named RsaE, it was shown to regulate genes involved in amino acid and peptide transport, cofactor synthesis, lipid metabolism, carbohydrate metabolism and the TCA cycle (Geissmann et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Geissmann et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "eed84256-4e5e-4656-94cf-aa6c428104e3",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C26",
+      "claim": "RoxS transcription is induced during nitric oxide (NO) stress by the two-component system ResDE",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that RoxS transcription is induced during nitric oxide (NO) stress by the two-component system ResDE and regulates the expression of numerous genes linked to oxido-reduction processes in B. subtilis (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "07a6917e-0d50-4420-b946-d4a097481ec7",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C27",
+      "claim": "RoxS regulates the expression of numerous genes linked to oxido-reduction processes in B. subtilis",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, we showed that RoxS transcription is induced during nitric oxide (NO) stress by the two-component system ResDE and regulates the expression of numerous genes linked to oxido-reduction processes in B. subtilis (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "0ab40394-bf05-4938-b641-bfa9ad7ece1d",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C28",
+      "claim": "This is the first known case of an sRNA controlling 5'-exoribonuclease activity in bacteria",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first known case of an sRNA controlling 5'-exoribonuclease activity in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on literature review and novelty of findings",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c23d3021-edcc-4eb2-be32-fe749d0b348e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C29",
+      "claim": "RoxS expression is controlled by Rex, a transcriptional repressor of genes linked to fermentation processes that senses the NAD+/NADH balance in the cell",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we show that RoxS expression is controlled by Rex, a transcriptional repressor of genes linked to fermentation processes that senses the NAD+/NADH balance in the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blots in Rex mutant and EMSA showing Rex binding to RoxS promoter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5fd0e4ca-e983-4ff7-8c00-ff94fb8198a5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C30",
+      "claim": "The yflS mRNA has a transcriptional start site 5 or 6 nts downstream of the predicted -10 region",
+      "claim_type": "EXPLICIT",
+      "source": "The primer extension product obtained with the yflS-specific oligonucleotide mapped to two consecutive residues (Figure 1\u2014figure supplement 1) suggesting that the yflS mRNA can start at an A or G residue, 5 or 6 nts downstream of the predicted \u221210 region, and thus has a 38/39 nt 5'-UTR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through primer extension assays with Xrn1 treatment shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "eb425aca-dc3b-418a-840f-fb8edc5ca673",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C31",
+      "claim": "The yflS mRNA has a 38/39 nt 5'-UTR",
+      "claim_type": "EXPLICIT",
+      "source": "The primer extension product obtained with the yflS-specific oligonucleotide mapped to two consecutive residues (Figure 1\u2014figure supplement 1) suggesting that the yflS mRNA can start at an A or G residue, 5 or 6 nts downstream of the predicted \u221210 region, and thus has a 38/39 nt 5'-UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from primer extension mapping data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "6bd1eb2a-b75b-4049-baca-fb2693493e51",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C32",
+      "claim": "The yflS promoter and 5'-UTR is highly conserved among Bacilli with a clearly identifiable yflS gene",
+      "claim_type": "EXPLICIT",
+      "source": "This promoter and 5'-UTR is highly conserved among Bacilli with a clearly identifiable yflS gene (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through sequence alignment shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "72fca010-b3a0-4bbe-97d9-eb306af95c8a",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C33",
+      "claim": "The yflS gene encodes a malate transporter whose expression is induced by the two-component system MalKR",
+      "claim_type": "EXPLICIT",
+      "source": "The yflS gene encodes a malate transporter whose expression is induced by the two-component system (MalKR), which senses the presence of malate in the medium (Tanaka et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tanaka et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "900279d0-fc2f-43ca-8a05-c80f330cc130",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C34",
+      "claim": "The half-life of the yflS mRNA is 2.5 min in a WT strain",
+      "claim_type": "EXPLICIT",
+      "source": "The half-life of the yflS mRNA was 2.5 min in a WT strain but decreased to 0.7 min in the absence of RoxS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured through Northern blot analysis after rifampicin addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "30cdd65d-24c8-464f-8392-05e4e8983ade",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C35",
+      "claim": "The half-life of the yflS mRNA decreases to 0.7 min in the absence of RoxS",
+      "claim_type": "EXPLICIT",
+      "source": "The half-life of the yflS mRNA was 2.5 min in a WT strain but decreased to 0.7 min in the absence of RoxS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured through Northern blot analysis after rifampicin addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "87ac3eab-8839-4fb5-a9f9-892505894951",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C36",
+      "claim": "RoxS stabilizes the yflS mRNA about 3.6-fold",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RoxS stabilizes the yflS mRNA about 3.6-fold, presumably by protecting it from degradation by cellular RNases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from half-life measurements (2.5 min / 0.7 min)",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c7a42103-a06e-4649-8aaa-82f555e16709",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C37",
+      "claim": "Deletion of RNase III has no major impact on yflS mRNA half-life in either the presence or absence of RoxS",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the gene encoding RNase III (\u2206rnc) had no major impact on yflS mRNA half-life in either the presence (3.1 min) or absence (0.7 min) of RoxS (Figure 2B compared to Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through Northern blot half-life measurements in RNase III mutant strains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "8af842a4-adfe-4a4c-80c0-db7613f1e292",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C38",
+      "claim": "RNase Y plays a major role in yflS mRNA turnover",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that RNase Y plays a major role in yflS mRNA turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by 10-fold stabilization of yflS mRNA in RNase Y mutant",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "934e32b2-911a-413c-8662-18adccdb8342",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C39",
+      "claim": "RoxS does not protect the full-length yflS transcript from attack by RNase Y",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that RoxS does not protect the full-length yflS transcript from attack by RNase Y and that the effect of RNase Y on yflS turnover is RoxS-independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similar stabilization in RNase Y mutant regardless of RoxS presence",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "3886ceec-d02a-4542-933d-3aa142da34c0",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C40",
+      "claim": "Deletion of RoxS no longer destabilizes the full-length yflS mRNA in the \u2206rnjA background",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, however, deletion of RoxS no longer destabilized the full-length yflS mRNA in the \u2206rnjA background (4 vs 3.8 min half-lives in \u2206rnjA and \u2206roxS \u2206rnjA strains, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot half-life measurements in RNase J1 mutant strains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "ddf775de-9db1-4d4c-a476-f0bdcc4ad09a",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C41",
+      "claim": "RoxS protects the full-length yflS mRNA from degradation by RNase J1 in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RoxS protects the full-length yflS mRNA from degradation by RNase J1 in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from loss of RoxS effect in RNase J1 mutant background",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "936cbdb2-449b-449e-ad5b-4c0f62a0cd29",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C42",
+      "claim": "RNase J1 is inhibited by the tri-phosphate group present on the 5' end of primary transcripts",
+      "claim_type": "EXPLICIT",
+      "source": "RNase J1 is known to be inhibited by the tri-phosphate group present on the 5' end of primary transcripts (Mathy et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Mathy et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a81bc6df-63fe-4ec2-aac6-7f775c3a2570",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C43",
+      "claim": "RppH is the only known enzyme to catalyze conversion of 5' tri-phosphate to mono-phosphate in B. subtilis",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the only known enzyme to catalyze this reaction in B. subtilis is the RNA pyrophosphohydrolase RppH (Richards et al., 2011), although other as yet unidentified enzymes are thought to have similar activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Richards et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "cb6a0f91-6a9f-4873-a4e4-a06f1321bd2f",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C44",
+      "claim": "BsRppH prefers a guanosine residue in the second position of its RNA substrates",
+      "claim_type": "EXPLICIT",
+      "source": "BsRppH prefers a guanosine residue in the second position of its RNA substrates (Piton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Piton et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "9fdaa239-9add-4746-8e1b-1d3985bdaffb",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C45",
+      "claim": "RppH is not the enzyme responsible for the removal of the 5' tri-phosphate of yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RppH is not the enzyme responsible for the removal of the 5' tri-phosphate of yflS mRNA to give access to RNase J1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through half-life measurements in RppH mutant showing no change in RoxS effect",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "3fc8837f-a586-4882-90e7-8cc213fc0c16",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C46",
+      "claim": "Other RNA pyrophosphohydrolase activities are waiting to be identified in B. subtilis",
+      "claim_type": "EXPLICIT",
+      "source": "This result is consistent with the idea that other RNA pyrophosphohydrolase activities are waiting to be identified in B. subtilis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the fact that RppH is not responsible for yflS 5' processing but processing still occurs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "52d3a87f-1429-4f73-ac7b-04e8fd563411",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C47",
+      "claim": "RoxS protects the 5' end of yflS from RNase J1 degradation in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, almost no AMP was visible when the reaction was performed in the presence of RoxS, showing clearly that the 5' end of yflS is protected from RNase J1 by the sRNA (Figure 3, lanes 8\u201311).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through in vitro RNase J1 degradation assays shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c3978727-5b85-48d0-b265-503837b90d26",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C48",
+      "claim": "RoxS has four C-rich regions (CRRs) that can potentially base-pair with G-rich complementary sequences in its targets",
+      "claim_type": "EXPLICIT",
+      "source": "RoxS has four C-rich regions (CRRs) that can potentially base-pair with G-rich complementary sequences in its targets (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1 structure diagram",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "e3bfb72a-8462-4657-928e-348878f9f1e1",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C49",
+      "claim": "RoxS mainly uses CRR3 to regulate the expression of the ppnkB mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous work, we showed that RoxS mainly uses CRR3 to regulate the expression of the ppnkB mRNA (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a2d50372-28e1-4e2e-a028-0d09c0ae5fc7",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C50",
+      "claim": "The CRR3 region of RoxS is the key C-rich motif for the initiation of base-pairing and protection of the 5' end of the yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the CRR3 region of RoxS is the key C-rich motif for the initiation of base-pairing and protection of the 5' end of the yflS mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through mutational analysis showing loss of protection with CRR3 mutants",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "9516af7b-af81-4438-b217-c77e33c1b509",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C51",
+      "claim": "Compensatory mutations in RoxS CRR3 and yflS 5' end restore protection from RNase J1",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the yflSmut5' RNA was intrinsically a better substrate for RNase J1 than yflSWT, wild-type RoxS similarly showed weaker protection of the yflSmut5' RNA than the CRR3-2 compensatory mutant (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through in vitro RNase J1 degradation assays with compensatory mutants shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "f7aede9e-897f-4045-9854-6dbd32a618f7",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C52",
+      "claim": "RoxS primarily uses the CRR3 region to hybridize to yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these observations show convincingly that, as for the ppnKB mRNA, RoxS primarily uses the CRR3 region to hybridize to yflS mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through structure probing showing changes in CRR3 region upon yflS binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "763e7e16-5ec3-40f1-850c-05dfb397e585",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C53",
+      "claim": "RoxS binding induces a long-range perturbation of the yflS mRNA structure close to the SD sequence",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly support the prediction that RoxS base-pairs with the extreme 5' end of the yflS mRNA through CRR3, and suggest that RoxS additionally induces a long-range perturbation of the mRNA structure close to the SD sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structure probing showing changes near SD sequence upon RoxS binding",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "b64194f9-6bc9-4228-91e6-fe822dc3959a",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C54",
+      "claim": "RoxS stimulates the formation of the translation initiation complex on yflS mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of wild-type RoxS or the CRR1 mutant increased the signal at +16 approximately 3-fold, suggesting that RoxS stimulates the formation of the translation initiation complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through toeprinting assays showing increased 30S ribosomal subunit binding",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "fe51d2a9-77ae-4187-9e93-46ea805230ef",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C55",
+      "claim": "RoxS stimulates YflS synthesis in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "After 60 min induction, the specific \u00df-galactosidase activity was 2-fold higher in a WT background compared to the RoxS mutant strain, showing that RoxS stimulates YflS synthesis in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through \u03b2-galactosidase assays of yflS-lacZ translational fusion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "0ca96dcd-e07d-404d-b2a4-bfedfb41c87f",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C56",
+      "claim": "RoxS-mediated stimulation of yflS mRNA translation and its protection from RNase J1 are independent phenomena",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the stimulation of translation by RoxS is not a prerequisite for the protection of yflS mRNA from RNase J1. In other words, RoxS-mediated stimulation of yflS mRNA translation and its protection from RNase J1 are independent phenomena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through half-life measurements of non-translated yflS variant showing RoxS still stabilizes the mRNA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "8714e896-66d7-4e0f-aaf6-3d402c9113e0",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C57",
+      "claim": "RoxS levels increase for about 30 min after addition of glucose before falling again at the 60 min time point",
+      "claim_type": "EXPLICIT",
+      "source": "RoxS levels increased for about 30 min after addition of glucose before falling again at the 60 min time point.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot time course after glucose addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "c4cc1a95-14c1-4d0f-9ac8-2e7c455dd1ec",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C58",
+      "claim": "Addition of malate to the medium causes a much greater increase in RoxS levels than glucose",
+      "claim_type": "EXPLICIT",
+      "source": "A similar profile, but of much greater amplitude was seen upon addition of malate to the medium and addition of both carbon sources together (malate + glucose) had a cumulative effect on RoxS levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot time course after malate addition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "ed9fdbc3-faee-4b8f-ab74-af55e58e3395",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C59",
+      "claim": "Addition of both malate and glucose together has a cumulative effect on RoxS levels",
+      "claim_type": "EXPLICIT",
+      "source": "A similar profile, but of much greater amplitude was seen upon addition of malate to the medium and addition of both carbon sources together (malate + glucose) had a cumulative effect on RoxS levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot time course after addition of both carbon sources",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "83e244ea-20d1-4e8b-be6c-e2ad587004e8",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C60",
+      "claim": "ResDE is not involved in the induction of RoxS expression by malate",
+      "claim_type": "EXPLICIT",
+      "source": "However, RoxS levels were still inducible by malate in the absence of ResDE, with the same kinetics as in the WT strain, showing that ResDE is not involved in this regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blot in ResDE mutant showing malate still induces RoxS",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "21a7b65f-e7c5-4e16-a961-0321464ec25e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C61",
+      "claim": "The effect of the MalKR two-component system on RoxS levels is indirect",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the effect of the MalKR two-component system on RoxS levels is indirect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from lack of MalR binding to RoxS promoter despite loss of malate induction in MalKR mutant",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "68a37ca3-dfd2-497b-93f9-b06e3293b2fb",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C62",
+      "claim": "Rex represses RoxS transcription",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Rex represses RoxS transcription and that addition of malate to the growth medium causes a transient release from this repression for at least 30 mins (see discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through Northern blots showing high RoxS levels in Rex mutant and EMSA showing Rex binding to RoxS promoter",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "8f70aa8a-c5b2-40bd-94e1-9ab34f594d39",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C63",
+      "claim": "Addition of malate to the growth medium causes a transient release from Rex-mediated repression of RoxS",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that Rex represses RoxS transcription and that addition of malate to the growth medium causes a transient release from this repression for at least 30 mins (see discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Northern blot time course showing transient increase in RoxS after malate addition",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "69eb5898-5705-4b41-9c03-f613df7d8310",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C64",
+      "claim": "Rex can directly bind the RoxS promoter region",
+      "claim_type": "EXPLICIT",
+      "source": "We also obtained a gel-shifted species for the roxS promoter fragment, confirming that Rex can directly bind this promoter region and explaining how it can inhibit transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through EMSA showing Rex binding to RoxS promoter DNA",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "7c4d2a69-3dde-4751-b6cd-2eb2a80a351e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C65",
+      "claim": "The Rex protein and its predicted binding site just downstream of the roxS promoter are conserved in S. aureus and Staphylococcaceae",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Rex protein and its predicted binding site just downstream of the roxS promoter are conserved in S. aureus and in Staphylococcaceae in general (Pagels et al., 2010), suggesting similar regulation may occur in these pathogenic bacteria (Figure 9\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through sequence alignment shown in Figure 9\u2014figure supplement 2 and cited from Pagels et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "ce9f0343-0e87-461e-9f86-d8fb15e94d0e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C66",
+      "claim": "RoxS destabilizes the ppnkB mRNA about 20-fold in the presence of malate",
+      "claim_type": "EXPLICIT",
+      "source": "In 2xTY plus malate, however, RoxS destabilized the ppnkB mRNA about 20-fold and the sucD mRNA about 8-fold (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through Northern blot half-life measurements in presence of malate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "b209b5ca-54d0-4b5a-b575-881698ad03eb",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C67",
+      "claim": "RoxS destabilizes the sucD mRNA about 8-fold in the presence of malate",
+      "claim_type": "EXPLICIT",
+      "source": "In 2xTY plus malate, however, RoxS destabilized the ppnkB mRNA about 20-fold and the sucD mRNA about 8-fold (Figure 11B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through Northern blot half-life measurements in presence of malate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "43f423f0-d159-4447-867c-8e9038a67395",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C68",
+      "claim": "RoxS has a far greater impact on gene expression in the presence of malate",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms our previous data and shows that RoxS has a far greater impact on gene expression in the presence of malate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by comparing effects on ppnkB and sucD mRNA stability with and without malate",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "da183fe7-efd6-45a1-94a2-f541f361820f",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C69",
+      "claim": "The RNA binding channel that leads to the RNase J1 catalytic site is only long enough to accommodate 4\u20135 nts of single stranded RNA",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibitory effect on RNase J1 5'\u22123' exoribonuclease activity can easily be understood in structural terms; the RNA binding channel that leads to the RNase J1 catalytic site is only long enough to accommodate 4\u20135 nts of single stranded RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural knowledge of RNase J1",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "30f8e6ed-362f-4279-aa43-6935c50666dc",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C70",
+      "claim": "The unbound yflS mRNA is predicted to have at least six unpaired nts before the first hairpin structure",
+      "claim_type": "EXPLICIT",
+      "source": "The unbound yflS mRNA is predicted to have at least six unpaired nts before the first hairpin structure (Figure 5) and would thus be expected to be a good substrate for RNase J1 once the 5'-triphosphate group has been removed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Predicted from structure probing data shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a06e68bd-9d64-45cc-8b6a-150842a84b32",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C71",
+      "claim": "When bound to RoxS, the duplexed 5' end of the yflS RNA can no longer reach the RNase J1 catalytic site",
+      "claim_type": "EXPLICIT",
+      "source": "When bound to RoxS, the duplexed 5' end of the yflS RNA can no longer reach the catalytic site, explaining how it is protected from degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structural constraints of RNase J1 and base-pairing between RoxS and yflS",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "9e9bf9e9-ed74-4807-9630-15a0d45b738d",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C73",
+      "claim": "In Clostridium perfringens, the colA mRNA is stabilized by the VR-RNA",
+      "claim_type": "EXPLICIT",
+      "source": "Obana et al. (2010, 2013) showed that the Clostridium perfringens colA mRNA (encoding collagenase) is stabilized by the VR-RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Obana et al., 2010, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "45174344-f4de-4905-b426-a2e71297fe7e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C74",
+      "claim": "In Streptococcus pyogenes, the FasX sRNA stabilizes the streptokinase encoding mRNA (ska)",
+      "claim_type": "EXPLICIT",
+      "source": "In the pathogen Streptococcus pyogenes, the FasX sRNA stabilizes the streptokinase encoding mRNA (ska) (Ramirez-Pe\u00f1a et al., 2010) by binding to its extreme 5' end via a sequence resembling that of the RoxS CRR3 (four consecutive C's matched with four consecutive G's).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Ramirez-Pe\u00f1a et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "754ce857-5f52-4dfd-94cc-93da7a53ff97",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C75",
+      "claim": "RNase J1 is a prime candidate for FasX regulation of the ska mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Our data would suggest that RNase J1 is a prime candidate for FasX regulation of the ska mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similarity of FasX-ska interaction to RoxS-yflS interaction",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5e702837-770d-48b1-8bf7-30fff8bb4e23",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C76",
+      "claim": "The sRNA-dependent 5' end protection mechanism could be used to activate expression of any mRNA in any microorganism by shielding it from enzymes requiring a single stranded 5' extremity",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the sRNA-dependent 5' end protection mechanism discovered here could in theory be used to activate expression of any mRNA in any microorganism by shielding it from enzymes (e.g. RppH, RNase J1, RNase E) requiring a single stranded 5' extremity to initiate degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the general mechanism discovered",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "fad263c4-7ca9-4d4b-bed2-fb19fb49ab05",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C77",
+      "claim": "Stabilization of the yflS mRNA and increased translation go hand in hand to produce more of the YflS transporter in the presence of malate",
+      "claim_type": "EXPLICIT",
+      "source": "However, in all likelihood, the two events are indissociable in vivo with the wild-type yflS mRNA, that is, stabilization of the mRNA and increased translation go hand in hand to produce more of the YflS transporter in the presence of malate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from combined effects of RoxS on both stability and translation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "815b50d8-6873-458b-815e-14749591e7dc",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C78",
+      "claim": "The 3D structure of yflS leader and the impact of RoxS may be more complex than simple secondary structure models",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the 3D structure of yflS leader and the impact of RoxS may be more complex than the model presented in Figure 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structure probing data that doesn't fully match predicted secondary structure",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "e4abb855-c1db-4c40-bfaf-1b1242d59fc3",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C79",
+      "claim": "The yflS mRNA sequence contains several stretches of consecutive G-residues in the first 50 nts that could potentially form G-quadruplex RNA structures",
+      "claim_type": "EXPLICIT",
+      "source": "The yflS mRNA sequence contains several stretches of consecutive G-residues in the first 50 nts that could potentially form G-quadruplex RNA structures (Kikin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on sequence analysis and cited from Kikin et al., 2006",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5569f078-57a8-48a5-8b20-eb27c11e5de5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C80",
+      "claim": "Part of the 5' leader of yflS mRNA could potentially form a triple helix with the stem of the adjacent hairpin",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, part of the 5' leader including the AAACAA sequence (nts 12\u201317) of yflS mRNA could potentially form a triple helix with the stem of the adjacent hairpin rich in AU pairings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on sequence analysis",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "7175c954-1d70-474b-ac6e-a952b8579c48",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C81",
+      "claim": "RoxS binding disrupts a particular fold of the 5'UTR that is unfavorable to ribosome recruitment",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure probing data are consistent with a model in which the duplex formed by binding of RoxS to the 5' end of the yflS mRNA not only blocks RNase J1 access but also disrupts a particular fold of the 5'UTR that is unfavorable to ribosome recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from structure probing and toeprinting data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5bafd198-6c0b-42c6-b84a-c05122c54975",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C82",
+      "claim": "The temporary release from Rex-mediated repression of RoxS expression may be linked to the generation of NADH in the early steps of malate metabolism",
+      "claim_type": "EXPLICIT",
+      "source": "The temporary release from Rex-mediated repression of RoxS expression may be linked to the generation of NADH in the early steps of malate metabolism, either in the conversion of malate to oxaloacetate by malate dehydrogenase (Mdh) in the TCA cycle, or its conversion to pyruvate by the malic enzymes MaeA, MalS and MleA (Doan et al., 2003; Lerondel et al., 2006; Meyer and St\u00fclke, 2013) (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from Rex's role as NADH sensor and malate metabolism pathways, cited from Doan et al., 2003; Lerondel et al., 2006; Meyer and St\u00fclke, 2013",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5092e727-175c-4550-9e97-6a65490d5454",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C83",
+      "claim": "B. subtilis has at least four malate transporters: MaeN, YflS, MleN, and CimH",
+      "claim_type": "EXPLICIT",
+      "source": "B. subtilis has at least four malate transporters: MaeN (Wei et al., 2000) and YflS (Tanaka et al., 2003), both regulated by the two-component system MalKR (Tanaka et al., 2003), and MleN (Wei et al., 2000) and CimH, the latter of which is primarily a transporter of citrate (Sobczak and Lolkema, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Wei et al., 2000; Tanaka et al., 2003; Sobczak and Lolkema, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "4d85684f-9e08-4e3a-bece-29731a1bfbd3",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C84",
+      "claim": "Malate is a common source of carbon for B. subtilis in its natural habitat since it is released by the roots of many plants",
+      "claim_type": "EXPLICIT",
+      "source": "Malate is a common source of carbon for B. subtilis in its natural habitat since it is released by the roots of many plants (Rudrappa et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Rudrappa et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "3b006bef-a1a0-4d68-906d-bbdb0dd82d28",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C85",
+      "claim": "Most of the malate imported by B. subtilis cells serves in gluconeogenesis and the excess is sent towards overflow metabolism/fermentation",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the malate imported by B. subtilis cells serves in gluconeogenesis and the excess is sent towards overflow metabolism/fermentation and the production of lactate, acetate, acetoin and 2,3-butanediol (Kleijn et al., 2010) (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from Kleijn et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a43ca6b4-75ea-4cf9-9b42-10069451c74e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C86",
+      "claim": "Overflow metabolism/fermentation allows NAD+ regeneration, primarily catalyzed by lactate dehydrogenase (Ldh/LctE)",
+      "claim_type": "EXPLICIT",
+      "source": "This overflow metabolism/fermentation allows NAD+ regeneration, primarily catalyzed by lactate dehydrogenase (Ldh/LctE) that converts pyruvate to lactate (Cruz Ramos et al., 2000) (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from Cruz Ramos et al., 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "01b83fa8-b26f-4474-8f39-457a3e41847b",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C87",
+      "claim": "Transcription of the maeN mRNA is essentially turned off during fermentation and ethanol stress",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription of the maeN mRNA, encoding the main malate transporter, is essentially turned off during fermentation and ethanol stress (Nicolas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Nicolas et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "839d6a27-af80-4349-98e7-ea1460d94444",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C88",
+      "claim": "RoxS specifically stabilizes the yflS mRNA to compensate for the decrease in maeN expression during fermentation",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that RoxS specifically stabilizes the yflS mRNA to compensate for this decrease in maeN expression, thus facilitating the continued uptake of malate during conditions where the fermentation/overflow pathway is turned on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculated based on the complementary regulation of malate transporters",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "d8a0d1e0-55cb-45da-9dab-065a6713e444",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C89",
+      "claim": "30% of genes with increased expression in a \u2206roxS strain are linked to oxido-reduction processes",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study showed that 30% of genes with increased expression in a \u2206roxS strain are linked to oxido-reduction processes (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "b1275e52-7101-4be3-ba21-1e8ae8c2ceb5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C90",
+      "claim": "RoxS down-regulates ppnKB, encoding NAD-kinase",
+      "claim_type": "EXPLICIT",
+      "source": "Its down-regulated targets include ppnKB, encoding NAD-kinase, and the TCA cycle components sucCD and citZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "3981a881-5128-4acf-983a-0d7dd5838ea4",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C91",
+      "claim": "RoxS down-regulates the TCA cycle components sucCD and citZ",
+      "claim_type": "EXPLICIT",
+      "source": "Its down-regulated targets include ppnKB, encoding NAD-kinase, and the TCA cycle components sucCD and citZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "debbffdf-92e5-4a5d-9daf-b3a3f8653c8f",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C92",
+      "claim": "PpnKB and the TCA cycle are significant contributors to the production of NADPH and NADH, respectively",
+      "claim_type": "EXPLICIT",
+      "source": "PpnKB and the TCA cycle are significant contributors to the production of NADPH and NADH, respectively (Figure 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established metabolic knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "925d0af4-77c6-4e7b-9e6c-db32c1c560da",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C93",
+      "claim": "A key role of RoxS is to temporarily turn down part of the TCA cycle to help restore the NAD+/NADH balance",
+      "claim_type": "EXPLICIT",
+      "source": "These observations, together with the fact that RoxS is regulated by the NADH-sensitive transcriptional repressor Rex, suggest that a key role of RoxS is to temporarily turn down part of the TCA cycle to help restore the NAD+/NADH balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from RoxS regulation of TCA cycle components and Rex-mediated control",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "b0009484-bf58-4bcc-bab9-602c247dcb30",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C94",
+      "claim": "Once the NAD+/NADH ratio is restored, Rex would be predicted to become active again as a repressor",
+      "claim_type": "EXPLICIT",
+      "source": "Once the NAD+/NADH ratio is restored, Rex would be predicted to become active again as a repressor, explaining the decrease in RoxS levels seen in Northern blots about one hour after addition of malate and the loss of this down-regulation in the Rex mutant (Figure 9D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from Rex mechanism and observed RoxS expression kinetics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "13938323-ad5d-47d1-a1f4-56a7433d54aa",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C95",
+      "claim": "Expression of the lactate dehydrogenase gene (ldh) is up-regulated in \u2206roxS cells",
+      "claim_type": "EXPLICIT",
+      "source": "In further agreement with a role for RoxS in managing NADH levels, we showed in our previous report that expression of the lactate dehydrogenase gene (ldh) and the cydA gene, encoding a subunit of cytochrome bd, is up-regulated in \u2206roxS cells (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "47c9b33c-956e-4933-bb8c-6121a94aa912",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C96",
+      "claim": "Expression of the cydA gene, encoding a subunit of cytochrome bd, is up-regulated in \u2206roxS cells",
+      "claim_type": "EXPLICIT",
+      "source": "In further agreement with a role for RoxS in managing NADH levels, we showed in our previous report that expression of the lactate dehydrogenase gene (ldh) and the cydA gene, encoding a subunit of cytochrome bd, is up-regulated in \u2206roxS cells (Durand et al., 2015a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from authors' previous work (Durand et al., 2015a)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "5f1f7b66-7005-42d4-aa89-98e1c8a2465b",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C97",
+      "claim": "Neither ldh nor cydA mRNAs are predicted to be direct targets of RoxS",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of these mRNAs is predicted to be a direct target of RoxS, but both are members of the Rex regulon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on target prediction analysis and knowledge of Rex regulon",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "43f8a0cb-f09a-49c6-924b-e255959148c3",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C98",
+      "claim": "The increased expression of ldh and cydA is indicative of higher intracellular NADH levels and Rex derepression in the \u2206roxS strain",
+      "claim_type": "EXPLICIT",
+      "source": "Their increased expression is thus most likely indicative of higher intracellular NADH levels and Rex derepression in the \u2206roxS strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Rex mechanism and indirect regulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "fc216e2f-78e1-4e88-bfd3-543593e476c5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C99",
+      "claim": "A link between NO levels and regulation of virulence via NADH and Rex has been proposed in S. aureus",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a link between NO levels and regulation of virulence via NADH and Rex has been proposed in S. aureus (Pagels et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Pagels et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "2ad011d5-85c1-4a4a-baf4-20114c4cc925",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "claim_id": "C100",
+      "claim": "The conservation of the Rex binding site downstream of the RsaE/RoxS promoter in S. aureus suggests that this pathway is evolutionarily conserved",
+      "claim_type": "EXPLICIT",
+      "source": "The conservation of the Rex binding site downstream of the RsaE/RoxS promoter in S. aureus suggests that this pathway is evolutionarily conserved to best serve the adaptation of B. subtilis and S. aureus to their respective niches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from sequence conservation analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RoxS binds to the extreme 5'-end of yflS mRNA via its CRR3 region and protects the mRNA from degradation by RNase J1, resulting in a 3.6-fold increase in mRNA half-life (from 0.7 to 2.5 min).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple converging lines of evidence support this result: in vivo half-life measurements in RNase mutants (C34-C36, C40-C41), in vitro RNase J1 protection assays (C47), mutational analysis of CRR regions (C50), compensatory mutations (C51), and structure probing (C52). The mechanism is well-characterized through both genetic and biochemical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a972602e-cb57-43db-9710-e5edab518bca",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RoxS enhances translation of yflS mRNA by stimulating ribosome binding (3-fold increase in 30S binding) and increasing YflS protein synthesis (2-fold), independently of its effect on mRNA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The translation enhancement is demonstrated through toeprinting assays showing increased 30S binding (C54), \u03b2-galactosidase assays showing increased protein expression (C55), and critically, experiments with non-translated yflS variants showing that stabilization occurs independently of translation (C56). Structure probing suggests RoxS disrupts an unfavorable fold near the SD sequence (C53, C81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RoxS expression is transcriptionally repressed by Rex, a NADH-sensitive transcription factor, and transiently induced by malate addition through release from Rex-mediated repression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Northern blots demonstrate malate-induced RoxS expression (C4, C57-C59), Rex mutants show constitutively high RoxS levels (C62), EMSA confirms direct Rex binding to the RoxS promoter (C64), and the effect is independent of ResDE (C60) but indirectly dependent on MalKR (C61). The transient nature of induction (C63) is consistent with Rex's role as an NADH sensor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "a149cd03-888f-41c4-a90a-4808615bcd1e",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RoxS functions as a global regulator of NAD+/NADH balance by down-regulating TCA cycle components (sucCD, citZ) and NAD-kinase (ppnKB) in the presence of malate, with effects amplified 10-20 fold compared to conditions without malate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The physiological role is supported by: dramatic malate-dependent effects on ppnKB and sucD stability (C66-C68), previous transcriptomic data showing 30% of RoxS targets are linked to oxido-reduction (C89), regulation of key metabolic enzymes (C90-C92), and indirect effects on Rex regulon members ldh and cydA (C95-C98). The model integrating Rex sensing, RoxS regulation, and metabolic rebalancing is internally consistent (C93-C94).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "This represents the first known case of an sRNA controlling 5'-exoribonuclease activity in bacteria, with potential generalizability to other systems including S. pyogenes FasX-ska regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The novelty claim (C28) is supported by the structural mechanism (C69-C71) showing that RNase J1's 4-5 nt binding channel cannot accommodate the RoxS-protected 5' end. Comparison to other Gram-positive systems (C73-C74) and the prediction about FasX (C75) are reasonable extrapolations. The generalizability claim (C76) is appropriately cautious ('could in theory').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "0a397382-6504-4664-842d-15a687d7f5ec",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The yflS mRNA has a transcriptional start site 5-6 nucleotides downstream of the predicted -10 region, resulting in a 38/39 nt 5'-UTR that is highly conserved among Bacilli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Primer extension with Xrn1 treatment confirms the 5' end is a primary transcript (C30), the 5'-UTR length is calculated from mapping data (C31), and sequence conservation is demonstrated through alignment (C32). The functional annotation as a malate transporter is from prior literature (C33).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "82560637-625c-4bff-8986-7ba4c700b905",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNase Y plays a major role in yflS mRNA turnover (10-fold stabilization in \u0394rny), but this effect is independent of RoxS protection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Half-life measurements in RNase Y mutants show dramatic stabilization (C38), and the similar fold-change in presence/absence of RoxS indicates RoxS does not protect against RNase Y (C39). RNase III has no major role (C37). This establishes that RoxS specifically protects against RNase J1, not other ribonucleases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RppH is not responsible for converting the 5'-triphosphate of yflS mRNA to monophosphate, suggesting other unidentified RNA pyrophosphohydrolases exist in B. subtilis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Despite yflS having the preferred RppH substrate sequence (C44), deletion of rppH does not affect RoxS-mediated stabilization (C45). This is consistent with the known requirement for 5'-monophosphate for RNase J1 activity (C42) and suggests additional enzymes exist (C46), which is appropriately presented as inference rather than proven fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "74b405b4-1e4b-4ee5-af14-1850ab44b2f7",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RoxS contains four C-rich regions (CRRs), with CRR3 previously shown to regulate ppnkB mRNA expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural features of RoxS are documented (C48) and the prior characterization of CRR3 function is appropriately cited (C49). This provides necessary background for the current study's focus on CRR3-yflS interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "bc52e1e4-42a3-4a6e-80f1-0cad45411cb5",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The 3D structure of the yflS leader may be more complex than simple secondary structure models, potentially involving G-quadruplex or triple helix formations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative interpretations (C79-C80) based on sequence features and structure probing data that doesn't fully match predictions (C78). While the speculation is reasonable given the unusual RT stops and RNase cleavage patterns, no direct evidence for G-quadruplex or triple helix formation is provided. This represents hypothesis generation rather than tested conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "cd9a7c5b-0886-4042-b780-4251940d6927",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RoxS is a conserved trans-acting sRNA between B. subtilis and S. aureus that regulates genes involved in metabolism and oxido-reduction processes, with expression induced by nitric oxide stress via ResDE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conservation between species (C1, C24), functional characterization in S. aureus (C25), and prior work on NO induction and metabolic targets (C26-C27) are all appropriately cited from previous literature. This provides essential context but represents prior rather than current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "160334df-9341-47d6-8429-ea0377c97d00",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "E. coli and B. subtilis have fundamentally different RNA degradation machineries and sRNA mechanisms, with B. subtilis using RNase J1 for 5'-3' degradation and generally not requiring Hfq for sRNA-mRNA pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims establish the comparative context for the study, citing established literature on RNA degradation pathways (C12-C15), sRNA mechanisms (C16-C22), and Hfq requirements (C23). All are appropriately referenced and provide necessary background for understanding the novelty of the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "756c4f7e-1bc4-43f3-a375-a4f84696148b",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "B. subtilis has multiple malate transporters with differential regulation during fermentation, and RoxS may compensate for decreased maeN expression by stabilizing yflS mRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The existence of multiple transporters (C83), malate as a carbon source (C84), and metabolic fates (C85-C86) are well-cited. However, the compensatory role of RoxS (C88) is speculative ('it is possible that'), and the down-regulation of maeN during fermentation (C87) doesn't directly demonstrate that RoxS-yflS regulation serves this compensatory function. This is a reasonable hypothesis but lacks direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    },
+    {
+      "id": "9c0b3144-ebd7-4ab6-b115-1eb5fc692b65",
+      "content_id": "6ed09d97-ea28-4f42-bca7-6797be222e17",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The Rex-RoxS regulatory pathway is evolutionarily conserved in S. aureus, potentially linking NO stress, NADH levels, and virulence regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The conservation of the Rex binding site in S. aureus (C100, C65) and the proposed link to virulence (C99) are appropriately cited and presented as comparative observations. The evolutionary conservation strengthens the biological significance of the findings, though the functional implications in S. aureus remain to be tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T23:54:29.462592Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e48961ab-bd0a-4f67-90d3-dba75c412b03",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "f4301094-62f7-442b-aea0-91f02d646a0a",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "4e552620-567a-4f5d-892d-70ddadd772e3",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "fc1e8e64-01e0-4b25-b340-21318a44e09e",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "900279d0-fc2f-43ca-8a05-c80f330cc130",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "30cdd65d-24c8-464f-8392-05e4e8983ade",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "87ac3eab-8839-4fb5-a9f9-892505894951",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "3886ceec-d02a-4542-933d-3aa142da34c0",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "ddf775de-9db1-4d4c-a476-f0bdcc4ad09a",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "52d3a87f-1429-4f73-ac7b-04e8fd563411",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "a2d50372-28e1-4e2e-a028-0d09c0ae5fc7",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "9516af7b-af81-4438-b217-c77e33c1b509",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "f7aede9e-897f-4045-9854-6dbd32a618f7",
+      "result_id": "6be8f0f4-746e-4e03-a5b8-162bcc6f3cd6"
+    },
+    {
+      "claim_id": "4e557fd2-02bf-44a6-a5e8-6998e11381dc",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "1628ccf6-1928-4ad9-b5ae-ab8a94874345",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "763e7e16-5ec3-40f1-850c-05dfb397e585",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "b64194f9-6bc9-4228-91e6-fe822dc3959a",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "fe51d2a9-77ae-4187-9e93-46ea805230ef",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "0ca96dcd-e07d-404d-b2a4-bfedfb41c87f",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "fad263c4-7ca9-4d4b-bed2-fb19fb49ab05",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "7175c954-1d70-474b-ac6e-a952b8579c48",
+      "result_id": "a972602e-cb57-43db-9710-e5edab518bca"
+    },
+    {
+      "claim_id": "c3c47f28-696c-4c5b-b96c-2882c9e443ef",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "e576e0a6-11dc-443c-b01e-b316a3721fc5",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "c23d3021-edcc-4eb2-be32-fe749d0b348e",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "8714e896-66d7-4e0f-aaf6-3d402c9113e0",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "c4cc1a95-14c1-4d0f-9ac8-2e7c455dd1ec",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "ed9fdbc3-faee-4b8f-ab74-af55e58e3395",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "83e244ea-20d1-4e8b-be6c-e2ad587004e8",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "21a7b65f-e7c5-4e16-a961-0321464ec25e",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "68a37ca3-dfd2-497b-93f9-b06e3293b2fb",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "8f70aa8a-c5b2-40bd-94e1-9ab34f594d39",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "69eb5898-5705-4b41-9c03-f613df7d8310",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "7c4d2a69-3dde-4751-b6cd-2eb2a80a351e",
+      "result_id": "57c2721f-eda3-4fa3-a1f6-3ed0aa5a3960"
+    },
+    {
+      "claim_id": "2b2e2203-f5ec-45e2-b178-11aad968d5ba",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "ce9f0343-0e87-461e-9f86-d8fb15e94d0e",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "b209b5ca-54d0-4b5a-b575-881698ad03eb",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "43f423f0-d159-4447-867c-8e9038a67395",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "5bafd198-6c0b-42c6-b84a-c05122c54975",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "d8a0d1e0-55cb-45da-9dab-065a6713e444",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "b1275e52-7101-4be3-ba21-1e8ae8c2ceb5",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "3981a881-5128-4acf-983a-0d7dd5838ea4",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "debbffdf-92e5-4a5d-9daf-b3a3f8653c8f",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "925d0af4-77c6-4e7b-9e6c-db32c1c560da",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "b0009484-bf58-4bcc-bab9-602c247dcb30",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "13938323-ad5d-47d1-a1f4-56a7433d54aa",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "47c9b33c-956e-4933-bb8c-6121a94aa912",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "5f1f7b66-7005-42d4-aa89-98e1c8a2465b",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "43f8a0cb-f09a-49c6-924b-e255959148c3",
+      "result_id": "a149cd03-888f-41c4-a90a-4808615bcd1e"
+    },
+    {
+      "claim_id": "0ab40394-bf05-4938-b641-bfa9ad7ece1d",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "da183fe7-efd6-45a1-94a2-f541f361820f",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "30f8e6ed-362f-4279-aa43-6935c50666dc",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "a06e68bd-9d64-45cc-8b6a-150842a84b32",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "9e9bf9e9-ed74-4807-9630-15a0d45b738d",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "45174344-f4de-4905-b426-a2e71297fe7e",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "754ce857-5f52-4dfd-94cc-93da7a53ff97",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "5e702837-770d-48b1-8bf7-30fff8bb4e23",
+      "result_id": "9350e66f-9dd9-43e3-8d8d-bf53bf2a88b9"
+    },
+    {
+      "claim_id": "5fd0e4ca-e983-4ff7-8c00-ff94fb8198a5",
+      "result_id": "0a397382-6504-4664-842d-15a687d7f5ec"
+    },
+    {
+      "claim_id": "eb425aca-dc3b-418a-840f-fb8edc5ca673",
+      "result_id": "0a397382-6504-4664-842d-15a687d7f5ec"
+    },
+    {
+      "claim_id": "6bd1eb2a-b75b-4049-baca-fb2693493e51",
+      "result_id": "0a397382-6504-4664-842d-15a687d7f5ec"
+    },
+    {
+      "claim_id": "72fca010-b3a0-4bbe-97d9-eb306af95c8a",
+      "result_id": "0a397382-6504-4664-842d-15a687d7f5ec"
+    },
+    {
+      "claim_id": "c7a42103-a06e-4649-8aaa-82f555e16709",
+      "result_id": "82560637-625c-4bff-8986-7ba4c700b905"
+    },
+    {
+      "claim_id": "8af842a4-adfe-4a4c-80c0-db7613f1e292",
+      "result_id": "82560637-625c-4bff-8986-7ba4c700b905"
+    },
+    {
+      "claim_id": "934e32b2-911a-413c-8662-18adccdb8342",
+      "result_id": "82560637-625c-4bff-8986-7ba4c700b905"
+    },
+    {
+      "claim_id": "936cbdb2-449b-449e-ad5b-4c0f62a0cd29",
+      "result_id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada"
+    },
+    {
+      "claim_id": "a81bc6df-63fe-4ec2-aac6-7f775c3a2570",
+      "result_id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada"
+    },
+    {
+      "claim_id": "cb6a0f91-6a9f-4873-a4e4-a06f1321bd2f",
+      "result_id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada"
+    },
+    {
+      "claim_id": "9fdaa239-9add-4746-8e1b-1d3985bdaffb",
+      "result_id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada"
+    },
+    {
+      "claim_id": "3fc8837f-a586-4882-90e7-8cc213fc0c16",
+      "result_id": "0ba7f86e-8f76-40ee-aaf9-37c7d2a25ada"
+    },
+    {
+      "claim_id": "c3978727-5b85-48d0-b265-503837b90d26",
+      "result_id": "74b405b4-1e4b-4ee5-af14-1850ab44b2f7"
+    },
+    {
+      "claim_id": "e3bfb72a-8462-4657-928e-348878f9f1e1",
+      "result_id": "74b405b4-1e4b-4ee5-af14-1850ab44b2f7"
+    },
+    {
+      "claim_id": "815b50d8-6873-458b-815e-14749591e7dc",
+      "result_id": "bc52e1e4-42a3-4a6e-80f1-0cad45411cb5"
+    },
+    {
+      "claim_id": "e4abb855-c1db-4c40-bfaf-1b1242d59fc3",
+      "result_id": "bc52e1e4-42a3-4a6e-80f1-0cad45411cb5"
+    },
+    {
+      "claim_id": "5569f078-57a8-48a5-8b20-eb27c11e5de5",
+      "result_id": "bc52e1e4-42a3-4a6e-80f1-0cad45411cb5"
+    },
+    {
+      "claim_id": "31087746-4668-49cf-b704-176ac1ce46bc",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "24adfdf6-7270-4eb5-8112-c163824759db",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "2a0d8efc-0253-4e72-bc07-723165fd6930",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "1f03e455-beab-4604-b0e9-cefba6f0d2ea",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "eed84256-4e5e-4656-94cf-aa6c428104e3",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "07a6917e-0d50-4420-b946-d4a097481ec7",
+      "result_id": "cd9a7c5b-0886-4042-b780-4251940d6927"
+    },
+    {
+      "claim_id": "adcc15b3-875e-484c-aad4-17dfeebcc49d",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "ff14db93-dd58-444c-8305-0ef9813b69c9",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "8eac7a75-8d8c-4aa6-849d-9d1c7df9e899",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "74623061-6c70-4ce2-bd77-aa73f483b55d",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "ff3146ad-d68d-4513-83fd-291ec093c529",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "a68e6088-f490-4412-8f7f-d39adb212872",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "a8f4895e-39de-40d4-b7e0-56c2cee74aa1",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "c03a9b66-09f9-43b8-ac68-320f6373ed53",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "42051c1c-0fb8-4735-a70e-57f586354f30",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "f8ecc421-c67d-404c-af71-e4734348a629",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "3053571b-e1e9-4700-8f46-13139398e555",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "dd912b23-1f26-4159-8af5-dcd4b79fff0d",
+      "result_id": "160334df-9341-47d6-8429-ea0377c97d00"
+    },
+    {
+      "claim_id": "5092e727-175c-4550-9e97-6a65490d5454",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "4d85684f-9e08-4e3a-bece-29731a1bfbd3",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "3b006bef-a1a0-4d68-906d-bbdb0dd82d28",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "a43ca6b4-75ea-4cf9-9b42-10069451c74e",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "01b83fa8-b26f-4474-8f39-457a3e41847b",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "839d6a27-af80-4349-98e7-ea1460d94444",
+      "result_id": "756c4f7e-1bc4-43f3-a375-a4f84696148b"
+    },
+    {
+      "claim_id": "fc216e2f-78e1-4e88-bfd3-543593e476c5",
+      "result_id": "9c0b3144-ebd7-4ab6-b115-1eb5fc692b65"
+    },
+    {
+      "claim_id": "2ad011d5-85c1-4a4a-baf4-20114c4cc925",
+      "result_id": "9c0b3144-ebd7-4ab6-b115-1eb5fc692b65"
+    }
+  ],
+  "comparisons": []
+}
